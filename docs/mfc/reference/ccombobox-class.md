@@ -1,6 +1,7 @@
 ---
 title: CComboBox 클래스
-ms.date: 11/04/2016
+description: MFC Windows 콤보 상자 클래스에 대 한 API 참조 CComboBox
+ms.date: 08/27/2020
 f1_keywords:
 - CComboBox
 - AFXWIN/CComboBox
@@ -108,12 +109,12 @@ helpviewer_keywords:
 - CComboBox [MFC], SetTopIndex
 - CComboBox [MFC], ShowDropDown
 ms.assetid: 4e73b5df-0d2e-4658-9706-38133fb10513
-ms.openlocfilehash: 79bcb973046c418f0bea148084da239075414790
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 515a079ca4f6c3896733bbebec424f63455fb979
+ms.sourcegitcommit: c8f1605354724a13566bc3b0fac3c5d98265f1d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561676"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "89062187"
 ---
 # <a name="ccombobox-class"></a>CComboBox 클래스
 
@@ -129,13 +130,13 @@ class CComboBox : public CWnd
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CComboBox:: CComboBox](#ccombobox)|`CComboBox` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CComboBox::AddString](#addstring)|콤보 상자의 목록 상자 또는 CBS_SORT 스타일이 있는 목록 상자의 정렬 된 위치에 문자열을 추가 합니다.|
 |[CComboBox:: Clear](#clear)|편집 컨트롤에서 현재 선택 항목 (있는 경우)을 삭제 (선택 취소) 합니다.|
@@ -275,7 +276,7 @@ int AddString(LPCTSTR lpszString);
 *lpszString*<br/>
 추가 될 null로 끝나는 문자열을 가리킵니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 반환 값이 0 보다 크거나 같으면 목록 상자에 있는 문자열의 인덱스 (0부터 시작)입니다. 오류가 발생 하는 경우 반환 값은 CB_ERR입니다. 새 문자열을 저장 하는 데 사용할 수 있는 공간이 부족 한 경우 반환 값은 CB_ERRSPACE입니다.
 
@@ -333,7 +334,7 @@ virtual int CompareItem(LPCOMPAREITEMSTRUCT lpCompareItemStruct);
 *lpCompareItemStruct*<br/>
 [Compareitemstruct](/windows/win32/api/winuser/ns-winuser-compareitemstruct) 구조체에 대 한 긴 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 구조에 설명 된 두 항목의 상대 위치를 나타냅니다 `COMPAREITEMSTRUCT` . 다음 값 중 하나일 수 있습니다.
 
@@ -391,7 +392,7 @@ virtual BOOL Create(
 *nID*<br/>
 콤보 상자의 컨트롤 ID를 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -473,7 +474,7 @@ int DeleteString(UINT nIndex);
 *nIndex*<br/>
 삭제할 문자열의 인덱스를 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 반환 값이 0 보다 크거나 같으면 목록에 남아 있는 문자열의 수입니다. *Nindex* 가 목록의 항목 수보다 많은 인덱스를 지정 하는 경우 반환 값은 CB_ERR입니다.
 
@@ -519,7 +520,7 @@ int Dir(
 *lpszWildCard*<br/>
 는 파일 사양 문자열을 가리킵니다. 문자열은 와일드 카드를 포함할 수 있습니다 (예: *. \* ).
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 반환 값이 0 보다 크거나 같으면 목록에 추가 된 마지막 파일 이름의 0부터 시작 하는 인덱스입니다. 오류가 발생 하는 경우 반환 값은 CB_ERR입니다. 새 문자열을 저장 하는 데 사용할 수 있는 공간이 부족 한 경우 반환 값은 CB_ERRSPACE입니다.
 
@@ -572,7 +573,7 @@ int FindString(
 *lpszString*<br/>
 검색할 접두사를 포함 하는 null로 끝나는 문자열을 가리킵니다. 검색은 대/소문자를 구분 하지 않으므로이 문자열에는 대 문자와 소문자를 조합 하 여 사용할 수 있습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 반환 값이 0 보다 크거나 같은 경우 일치 하는 항목의 인덱스 (0부터 시작)입니다. 검색에 실패 한 경우 CB_ERR 됩니다.
 
@@ -602,7 +603,7 @@ int FindStringExact(
 *lpszFind*<br/>
 검색할 null로 끝나는 문자열을 가리킵니다. 이 문자열에는 확장명을 포함 하 여 전체 파일 이름이 포함 될 수 있습니다. 검색은 대/소문자를 구분 하지 않으므로이 문자열에는 대 문자와 소문자를 조합 하 여 사용할 수 있습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 일치 하는 항목의 인덱스 (0부터 시작) 이거나, 검색에 실패 한 경우 CB_ERR입니다.
 
@@ -627,7 +628,7 @@ BOOL GetComboBoxInfo(PCOMBOBOXINFO pcbi) const;
 *pcbi*<br/>
 [COMBOBOXINFO](/windows/win32/api/winuser/ns-winuser-comboboxinfo) 구조체에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 TRUE를 반환 하 고 실패 하면 FALSE를 반환 합니다.
 
@@ -643,7 +644,7 @@ BOOL GetComboBoxInfo(PCOMBOBOXINFO pcbi) const;
 int GetCount() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 항목의 수입니다. 반환 된 개수는 마지막 항목의 인덱스 값 보다 하나 큽니다 (인덱스는 0부터 시작). 오류가 발생 하는 경우 CB_ERR 됩니다.
 
@@ -671,7 +672,7 @@ BOOL GetCueBanner(
 *cchText*\
 진행 *LpszText* 매개 변수가 가리키는 버퍼의 크기입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 첫 번째 오버 로드에서 큐 배너 텍스트가 있으면이를 포함 하는 [CString](../../atl-mfc-shared/using-cstring.md) 개체이 고, 그렇지 않으면입니다. 그렇지 않으면 `CString` 길이가 0 인 개체입니다.
 
@@ -693,7 +694,7 @@ BOOL GetCueBanner(
 int GetCurSel() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 콤보 상자의 목록 상자에서 현재 선택 된 항목의 0부터 시작 하는 인덱스 이거나, 선택 된 항목이 없는 경우 CB_ERR입니다.
 
@@ -730,7 +731,7 @@ void GetDroppedControlRect(LPRECT lprect) const;
 BOOL GetDroppedState() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 목록 상자가 표시 되 면 0이 아닌 값입니다. 그렇지 않으면 0입니다.
 
@@ -746,7 +747,7 @@ BOOL GetDroppedState() const;
 int GetDroppedWidth() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하는 경우 허용 되는 최소 너비 (픽셀)입니다. 그렇지 않으면 CB_ERR 합니다.
 
@@ -768,7 +769,7 @@ int GetDroppedWidth() const;
 DWORD GetEditSel() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 하위 단어의 시작 위치를 포함 하는 32 비트 값 이며, 상위 단어에서 선택 영역 끝 다음의 첫 번째 nonselected 문자 위치입니다. 편집 컨트롤이 없는 콤보 상자에서이 함수를 사용 하면 CB_ERR 반환 됩니다.
 
@@ -784,7 +785,7 @@ DWORD GetEditSel() const;
 BOOL GetExtendedUI() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 콤보 상자에 확장 사용자 인터페이스가 있는 경우 0이 아닌 값입니다. 그렇지 않으면 0입니다.
 
@@ -810,7 +811,7 @@ BOOL GetExtendedUI() const;
 UINT GetHorizontalExtent() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 콤보 상자의 목록 상자 부분에 대 한 스크롤 가능한 너비 (픽셀)입니다.
 
@@ -835,7 +836,7 @@ DWORD_PTR GetItemData(int nIndex) const;
 *nIndex*<br/>
 콤보 상자의 목록 상자에 있는 항목의 0부터 시작 하는 인덱스를 포함 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 항목과 연결 된 32 비트 값 또는 오류가 발생 하는 경우 CB_ERR입니다.
 
@@ -860,7 +861,7 @@ void* GetItemDataPtr(int nIndex) const;
 *nIndex*<br/>
 콤보 상자의 목록 상자에 있는 항목의 0부터 시작 하는 인덱스를 포함 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 포인터를 검색 하거나, 오류가 발생 하면-1을 반환 합니다.
 
@@ -881,7 +882,7 @@ int GetItemHeight(int nIndex) const;
 *nIndex*<br/>
 높이를 검색할 콤보 상자의 구성 요소를 지정 합니다. *N index* 매개 변수가-1 이면 콤보 상자의 편집 컨트롤 (또는 정적 텍스트) 부분의 높이가 검색 됩니다. 콤보 상자에 [CBS_OWNERDRAWVARIABLE](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) 스타일이 있는 경우 *n 인덱스* 는 해당 높이를 검색할 목록 항목의 인덱스 (0부터 시작)를 지정 합니다. 그렇지 않으면 *n 인덱스* 를 0으로 설정 해야 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 콤보 상자에서 지정 된 항목의 높이 (픽셀)입니다. 오류가 발생할 경우 반환 값은 CB_ERR입니다.
 
@@ -914,13 +915,14 @@ void GetLBText(
 *rString*<br/>
 에 대 한 참조를 `CString`입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 종료 null 문자를 제외한 문자열의 길이 (바이트)입니다. *Nindex* 가 유효한 인덱스를 지정 하지 않는 경우 반환 값은 CB_ERR입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수의 두 번째 형태는 개체를 `CString` 항목의 텍스트로 채웁니다.
+이 멤버 함수의 두 번째 폼은 `CString` 항목의 텍스트를 사용 하 여 개체를 채웁니다.
+*Nindex* 가 잘못 된 경우이 함수는 예외를 throw `E_INVALIDARG` 합니다 (오류 코드: `-2147024809` , `0x80070057` ).
 
 ### <a name="example"></a>예제
 
@@ -939,7 +941,7 @@ int GetLBTextLen(int nIndex) const;
 *nIndex*<br/>
 목록 상자 문자열의 인덱스 (0부터 시작)를 포함 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 종료 null 문자를 제외 하 고 문자열의 길이 (바이트)입니다. *Nindex* 가 유효한 인덱스를 지정 하지 않는 경우 반환 값은 CB_ERR입니다.
 
@@ -955,7 +957,7 @@ int GetLBTextLen(int nIndex) const;
 LCID GetLocale() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 콤보 상자에 있는 문자열의 LCID (로캘 id) 값입니다.
 
@@ -975,7 +977,7 @@ LCID GetLocale() const;
 int GetMinVisible() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 드롭다운 목록에 표시 되는 최소 항목 수입니다.
 
@@ -991,7 +993,7 @@ int GetMinVisible() const;
 int GetTopIndex() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 콤보 상자의 목록 상자 부분에 표시 되는 첫 번째 항목의 0부터 시작 하는 인덱스이 고, 그렇지 않으면 CB_ERR입니다.
 
@@ -1021,7 +1023,7 @@ int InitStorage(
 *nBytes*<br/>
 항목 문자열에 할당할 메모리 크기 (바이트)를 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하는 경우 메모리 재할당이 필요 하기 전에 콤보 상자의 목록 상자 부분에서 저장할 수 있는 최대 항목 수이 고, 그렇지 않으면 CB_ERRSPACE 사용 가능한 메모리가 부족 하다는 것을 의미 합니다.
 
@@ -1055,7 +1057,7 @@ int InsertString(
 *lpszString*<br/>
 삽입할 null 종료 문자열을 가리킵니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 문자열이 삽입된 위치의 0부터 시작하는 인덱스입니다. 오류가 발생할 경우 반환 값은 CB_ERR입니다. 공간이 부족하여 새 문자열을 저장할 수 없는 경우 반환 값은 CB_ERRSPACE입니다.
 
@@ -1083,7 +1085,7 @@ BOOL LimitText(int nMaxChars);
 *nMaxChars*<br/>
 사용자가 입력할 수 있는 텍스트의 길이 (바이트)를 지정 합니다. 이 매개 변수가 0 이면 텍스트 길이가 65535 바이트로 설정 됩니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 0이 아닌 값입니다. 스타일 [CBS_DROPDOWNLIST](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) 또는 편집 컨트롤이 없는 콤보 상자의 콤보 상자에 대해 호출 하는 경우 반환 값은 CB_ERR 됩니다.
 
@@ -1168,7 +1170,7 @@ int SelectString(
 *lpszString*<br/>
 검색할 접두사를 포함 하는 null로 끝나는 문자열을 가리킵니다. 검색은 대/소문자를 구분 하지 않으므로이 문자열에는 대 문자와 소문자를 조합 하 여 사용할 수 있습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 문자열을 찾은 경우 선택한 항목의 인덱스 (0부터 시작)입니다. 검색에 실패 한 경우 반환 값은 CB_ERR 되며 현재 선택 항목은 변경 되지 않습니다.
 
@@ -1195,7 +1197,7 @@ BOOL SetCueBanner(LPCTSTR lpszText);
 *lpszText*\
 진행 큐 텍스트를 포함 하는 null로 끝나는 버퍼에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -1230,7 +1232,7 @@ int SetCurSel(int nSelect);
 *nSelect*<br/>
 선택할 문자열의 인덱스 (0부터 시작)를 지정 합니다. -1 인 경우 목록 상자에서 현재 선택한 내용이 제거 되 고 편집 컨트롤이 지워집니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 메시지에 성공 하면 선택 된 항목의 0부터 시작 하는 인덱스입니다. *내보내세요* 가 목록의 항목 수보다 크거나 *내보내세요* 이-1로 설정 된 경우 반환 값은 CB_ERR입니다 .이는 선택을 취소 합니다.
 
@@ -1255,7 +1257,7 @@ int SetDroppedWidth(UINT nWidth);
 *nWidth*<br/>
 콤보 상자의 목록 상자 부분에 허용 되는 최소 너비 (픽셀)입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 목록 상자의 새 너비이 고 CB_ERR 그렇지 않으면입니다.
 
@@ -1287,7 +1289,7 @@ BOOL SetEditSel(
 *nEndChar*<br/>
 끝 위치를 지정 합니다. 끝 위치가-1로 설정 된 경우 편집 컨트롤에서 시작 위치부터 마지막 문자 까지의 모든 텍스트가 선택 됩니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 멤버 함수가 성공 하면 0이 아닌 값입니다. 그렇지 않으면 0입니다. `CComboBox`이 [CBS_DROPDOWNLIST](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) 스타일이 있거나 목록 상자가 없는 경우 CB_ERR입니다.
 
@@ -1315,7 +1317,7 @@ int SetExtendedUI(BOOL bExtended = TRUE);
 *bExtended*<br/>
 콤보 상자에서 확장 된 사용자 인터페이스를 사용할지 아니면 기본 사용자 인터페이스를 사용할지를 지정 합니다. TRUE 값은 확장 사용자 인터페이스를 선택 합니다. FALSE 값은 표준 사용자 인터페이스를 선택 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 작업이 성공 하면 CB_OKAY이 고, 오류가 발생 하면 CB_ERR입니다.
 
@@ -1372,7 +1374,7 @@ int SetItemData(
 *dwItemData*<br/>
 항목에 연결할 새 값을 포함 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 오류가 발생 하면 CB_ERR 합니다.
 
@@ -1402,7 +1404,7 @@ int SetItemDataPtr(
 *pData*<br/>
 항목과 연결할 포인터를 포함 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 오류가 발생 하면 CB_ERR 합니다.
 
@@ -1436,7 +1438,7 @@ int SetItemHeight(
 *cyItemHeight*<br/>
 *Nindex*로 식별 되는 콤보 상자 구성 요소의 높이 (픽셀 단위)를 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 인덱스 또는 높이가 잘못 된 경우를 CB_ERR 합니다. 그렇지 않으면 0입니다.
 
@@ -1461,7 +1463,7 @@ LCID SetLocale(LCID nNewLocale);
 *nNewLocale*<br/>
 콤보 상자에 대해 설정할 새 LCID (로캘 id) 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 콤보 상자의 이전 로캘 식별자 (LCID) 값입니다.
 
@@ -1486,7 +1488,7 @@ BOOL SetMinVisibleItems(int iMinVisible);
 *iMinVisible 않음*\
 진행 표시 되는 최소 항목 수를 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -1519,7 +1521,7 @@ int SetTopIndex(int nIndex);
 *nIndex*<br/>
 목록 상자 항목의 인덱스 (0부터 시작)를 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 0이 고, 오류가 발생 하면 CB_ERR입니다.
 

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - redefining keywords
 - Microsoft-specific keywords
 ms.assetid: 2d932335-97bf-45cd-b367-4ae00db0ff42
-ms.openlocfilehash: 92704572c40812141911e151faf1a8d331a1ed38
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 1b49da349a6552022dfd9e8e66e85634f4694645
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520437"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88838778"
 ---
 # <a name="c-keywords"></a>C 키워드
 
@@ -19,44 +19,44 @@ ms.locfileid: "87520437"
 
 :::row:::
     :::column:::
-        **`auto`**<br/>
-        **`double`**<br/>
-        **`int`**<br/>
-        **`struct`**<br/>
-        **`break`**<br/>
-        **`else`**<br/>
-        **`long`**<br/>
-        **`switch`**<br/>
+        **`auto`**\
+        **`double`**\
+        **`int`**\
+        **`struct`**\
+        **`break`**\
+        **`else`**\
+        **`long`**\
+        **`switch`**
     :::column-end:::
     :::column:::
-        **`case`**<br/>
-        **`enum`**<br/>
-        **`register`**<br/>
-        **`typedef`**<br/>
-        **`char`**<br/>
-        **`extern`**<br/>
-        **`return`**<br/>
-        **`union`**<br/>
+        **`case`**\
+        **`enum`**\
+        **`register`**\
+        **`typedef`**\
+        **`char`**\
+        **`extern`**\
+        **`return`**\
+        **`union`**
     :::column-end:::
     :::column:::
-        **`const`**<br/>
-        **`float`**<br/>
-        **`short`**<br/>
-        **`unsigned`**<br/>
-        **`continue`**<br/>
-        **`for`**<br/>
-        **`signed`**<br/>
-        **`void`**<br/>
+        **`const`**\
+        **`float`**\
+        **`short`**\
+        **`unsigned`**\
+        **`continue`**\
+        **`for`**\
+        **`signed`**\
+        **`void`**
     :::column-end:::
     :::column:::
-        **`default`**<br/>
-        **`goto`**<br/>
-        **`sizeof`**<br/>
-        **`volatile`**<br/>
-        **`do`**<br/>
-        **`if`**<br/>
-        **`static`**<br/>
-        **`while`**<br/>
+        **`default`**\
+        **`goto`**\
+        **`sizeof`**\
+        **`volatile`**\
+        **`do`**\
+        **`if`**\
+        **`static`**\
+        **`while`**
     :::column-end:::
 :::row-end:::
 
@@ -70,31 +70,31 @@ Microsoft C 컴파일러에서 다음 키워드 및 특수 식별자가 인식�
 
 :::row:::
     :::column:::
-        **`__asm`** <sup>3</sup><br/>
-        **`dllimport`** <sup>2</sup><br/>
-        **`__int8`** <sup>3</sup><br/>
-        **`naked`** <sup>2</sup><br/>
-        **`__based`** <sup>1, 3</sup><br/>
+        **`__asm`** <sup>3</sup>\
+        **`dllimport`** <sup>2</sup>\
+        **`__int8`** <sup>3</sup>\
+        **`naked`** <sup>2</sup>\
+        **`__based`** <sup>1, 3</sup>
     :::column-end:::
     :::column:::
-        **`__except`** <sup>3</sup><br/>
-        **`__int16`** <sup>3</sup><br/>
-        **`__stdcall`** <sup>3</sup><br/>
-        **`__cdecl`** <sup>3</sup><br/>
-        **`__fastcall`**<br/>
+        **`__except`** <sup>3</sup>\
+        **`__int16`** <sup>3</sup>\
+        **`__stdcall`** <sup>3</sup>\
+        **`__cdecl`** <sup>3</sup>\
+        **`__fastcall`**
     :::column-end:::
     :::column:::
-        **`__int32`** <sup>3</sup><br/>
-        **`thread`** <sup>2</sup><br/>
-        **`__declspec`** <sup>3</sup><br/>
-        **`__finally`** <sup>3</sup><br/>
-        **`__int64`** <sup>3</sup><br/>
+        **`__int32`** <sup>3</sup>\
+        **`thread`** <sup>2</sup>\
+        **`__declspec`** <sup>3</sup>\
+        **`__finally`** <sup>3</sup>\
+        **`__int64`** <sup>3</sup>
     :::column-end:::
     :::column:::
-        **`__try`** <sup>3</sup><br/>
-        **`dllexport`** <sup>2</sup><br/>
-        **`__inline`** <sup>3</sup><br/>
-        **`__leave`** <sup>3</sup><br/>
+        **`__try`** <sup>3</sup>\
+        **`dllexport`** <sup>2</sup>\
+        **`__inline`** <sup>3</sup>\
+        **`__leave`** <sup>3</sup>
     :::column-end:::
 :::row-end:::
 

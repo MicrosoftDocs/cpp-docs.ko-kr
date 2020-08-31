@@ -1,6 +1,7 @@
 ---
 title: snprintf, _snprintf, _snprintf_l, _snwprintf, _snwprintf_l
-ms.date: 11/04/2016
+description: 문자열에 형식이 지정 된 데이터를 쓰는 snprintf, _snprintf, _snprintf_l, _snwprintf, _snwprintf_에 대 한 API 참조입니다.
+ms.date: 08/27/2020
 api_name:
 - _snwprintf
 - _snprintf
@@ -51,12 +52,12 @@ helpviewer_keywords:
 - sntprintf function
 - formatted text [C++]
 ms.assetid: 5976c9c8-876e-4ac9-a515-39f3f7fd0925
-ms.openlocfilehash: a1d11efebad57bdcf44ca959384f449640dad701
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: b4d8865d5297afe3d48f2bb48cc85a0d10535dfd
+ms.sourcegitcommit: c8f1605354724a13566bc3b0fac3c5d98265f1d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70947998"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "89062200"
 ---
 # <a name="snprintf-_snprintf-_snprintf_l-_snwprintf-_snwprintf_l"></a>snprintf, _snprintf, _snprintf_l, _snwprintf, _snwprintf_l
 
@@ -131,7 +132,7 @@ int _snwprintf_l(
 
 ### <a name="parameters"></a>매개 변수
 
-*buffer*<br/>
+*버퍼*<br/>
 출력을 위한 스토리지 위치입니다.
 
 *count*<br/>
@@ -150,13 +151,13 @@ int _snwprintf_l(
 
 ## <a name="return-value"></a>반환 값
 
-**Len** 은 종결 null을 포함 하지 않고 서식이 지정 된 데이터 문자열의 길이입니다. **Len** 및 *count* 는 모두 **snprintf** 및 **_snprintf**의 바이트 ( **_snwprintf**의 경우 와이드 문자)입니다.
+**Len** 은 종결 null을 포함 하지 않고 서식이 지정 된 데이터 문자열의 길이입니다. **Len** 및 **count** 는 모두 **snprintf** 와 **_snprintf**에 대 한 문자 수와 **_snwprintf**에 대 한 와이드 문자 수입니다.
 
-모든 **함수에서** **len** < *수가* *버퍼*에 저장 되는 경우 null 종결자가 추가 되 고 **len** 이 반환 됩니다.
+모든 함수에서 **len**  <  *수가* *버퍼*에 저장 **len** 되는 경우 null 종결자가 추가 되 고 **len** 이 반환 됩니다.
 
-**Snprintf** 함수는에 `buffer[count-1]`null 종결자를 배치 하 여 **len** 이 *count*보다 크거나 같은 경우 출력을 자릅니다. 반환 되는 값은 **len**, *개수가* 충분히 클 경우 출력 될 문자 수입니다. **Snprintf** 함수는 인코딩 오류가 발생 하는 경우 음수 값을 반환 합니다.
+**Snprintf** 함수는에 null 종결자를 배치 하 여 **len** 이 *count*보다 크거나 같은 경우 출력을 자릅니다 `buffer[count-1]` . 반환 되는 값은 **len**, *개수가* 충분히 클 경우 출력 될 문자 수입니다. **Snprintf** 함수는 인코딩 오류가 발생 하는 경우 음수 값을 반환 합니다.
 
-**Snprintf**이외의 모든 **함수에서,** **len** = *수가* *버퍼*에 저장 되는 경우 null 종결자가 추가 되지 않고 **len** 이 반환 됩니다. Len > *개수*, *count* 문자가 *버퍼*에 저장 되는 경우 null 종결자가 추가 되지 않고 음수 값이 반환 됩니다.
+**Snprintf**이외의 모든 함수에서, **len**  =  *수가* *버퍼*에 저장 **len** 되는 경우 null 종결자가 추가 되지 않고 **len** 이 반환 됩니다. **Len**  >  *개수*, *count* 문자가 *버퍼*에 저장 되는 경우 null 종결자가 추가 되지 않고 음수 값이 반환 됩니다.
 
 *Buffer* 가 null 포인터이 고 *개수가* 0 인 경우에는 종료 null을 포함 하지 않고 출력 형식을 지정 하는 데 필요한 문자 수로 **len** 이 반환 됩니다. 동일한 *인수* 및 *로캘* 매개 변수를 사용 하 여 성공적으로 호출 하려면 **len** + 1 자 이상을 보유 하는 버퍼를 할당 합니다.
 
@@ -166,20 +167,20 @@ int _snwprintf_l(
 
 ## <a name="remarks"></a>설명
 
-**Snprintf** 함수와 **_snprintf** 함수는 *버퍼*에서 *개수 또는 개수* 보다 많은 문자를 형식으로 지정 하 고 저장 합니다. **Snprintf** 함수는 항상 종료 null 문자를 저장 하 고, 필요한 경우 출력을 자릅니다. **_Snprintf** 함수는 형식이 지정 된 문자열 길이가 *개수* 문자 보다 엄격 하 게 작은 경우에만 종료 null 문자를 추가 합니다. 각 *인수* (있는 경우)는 변환 되며 *형식의*해당 형식 지정에 따라 출력 됩니다. 형식은 일반 문자로 구성 되며 [printf](printf-printf-l-wprintf-wprintf-l.md)의 *format* 인수와 동일한 폼 및 함수를 가집니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
+**Snprintf** 함수와 **_snprintf** 함수 패밀리는 *버퍼*의 *개수 또는 개수* 를 저장 합니다. **Snprintf** 함수는 항상 종료 null 문자를 저장 하 고, 필요한 경우 출력을 자릅니다. 형식이 지정 된 문자열 길이가 *개수* 문자 보다 엄격 하 게 작은 경우 **_snprintf** 함수 패밀리는 null 종결 문자만 추가 합니다. 각 *인수* (있는 경우)는 변환 되며 *형식의*해당 형식 지정에 따라 출력 됩니다. 형식은 일반 문자로 구성 되며 [printf](printf-printf-l-wprintf-wprintf-l.md)의 *format* 인수와 동일한 폼 및 함수를 가집니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
 
 > [!IMPORTANT]
 > *format*이 사용자 정의 문자열이 아닌지 확인하세요. **_Snprintf** 함수는 null 종료를 보장 하지 않습니다. 특히 반환 값이 *count*인 경우에는 null 종결자를 추가 하는 코드가 뒤에와 야 합니다. 자세한 내용은 [버퍼 오버런 방지](/windows/win32/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
-Visual Studio 2015 및 Windows 10의 데이 하 버전에서 **snprintf** 는 더 이상 **_snprintf**a s와 동일 하지 않습니다. **Snprintf** 함수 동작은 이제 C99 표준 규격을 준수 합니다.
+Visual Studio 2015 및 Windows 10의 버전에서 시작 하 여 **snprintf** 는 더 이상 **_snprintf**와 동일 하지 않습니다. **Snprintf** 함수 동작은 이제 C99 표준 규격을 준수 합니다.
 
-**_snwprintf** 는 **_snprintf**의 와이드 문자 버전입니다. **_snwprintf** 에 대 한 포인터 인수는 와이드 문자 문자열입니다. **_Snwprintf** 의 인코딩 오류 검색은 **_snprintf**의 인코딩 오류와 다를 수 있습니다. **swprintf**와 마찬가지로 **_snwprintf**는 **파일**형식의 대상이 아니라 문자열에 출력을 씁니다.
+**_snwprintf** 은 **_snprintf**의 와이드 문자 버전입니다. **_snwprintf** 에 대 한 포인터 인수는 와이드 문자 문자열입니다. **_Snwprintf** 인코딩 오류 검색은 **_snprintf**와 다를 수 있습니다. **swprintf**와 마찬가지로 **_Snwprintf**은 형식 **파일**의 대상이 아니라 문자열에 출력을 씁니다.
 
 **_L** 접미사가 있는 이러한 함수 버전은 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하 고는 동일 합니다.
 
-C++에서 이러한 함수는 보다 최신의 안전한 대응 함수를 호출하는 템플릿 오버로드를 갖고 있습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
+C++에서 이러한 함수는 보다 최신의 안전한 대응 함수를 호출하는 템플릿 오버로드를 갖고 있습니다. 자세한 내용은 [안전한 템플릿 오버로드](../../c-runtime-library/secure-template-overloads.md)를 참조하세요.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
 
 |Tchar.h 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -193,7 +194,7 @@ C++에서 이러한 함수는 보다 최신의 안전한 대응 함수를 호출
 |**snprintf**, **_snprintf**,  **_snprintf_l**|\<stdio.h>|
 |**_snwprintf**, **_snwprintf_l**|\<stdio.h> 또는 \<wchar.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
@@ -308,10 +309,10 @@ Output:
 character count = 69
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [스트림 I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \_ _swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>
 [scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>

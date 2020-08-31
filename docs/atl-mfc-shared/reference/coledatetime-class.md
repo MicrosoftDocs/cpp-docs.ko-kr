@@ -1,6 +1,7 @@
 ---
 title: COleDateTime 클래스
-ms.date: 03/27/2019
+description: OLE automation에서 사용 되는 데이터 형식을 캡슐화 하는 MFC COleDateTime 클래스에 대 한 API 참조 `DATE` 입니다.
+ms.date: 08/27/2020
 f1_keywords:
 - COleDateTime
 - ATLCOMTIME/ATL::COleDateTime
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - dates, handling in MFC
 - time, handling in MFC
 ms.assetid: e718f294-16ec-4649-88b6-a4dbae5178fb
-ms.openlocfilehash: 5cbc131a81afef1ee94069f39e79f22ce7addfcb
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 9ebbab02860daaeb57c24d3e0901666861adfc2b
+ms.sourcegitcommit: c8f1605354724a13566bc3b0fac3c5d98265f1d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562469"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "89062160"
 ---
 # <a name="coledatetime-class"></a>COleDateTime 클래스
 
@@ -55,13 +56,13 @@ class COleDateTime
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[COleDateTime:: COleDateTime](#coledatetime)|`COleDateTime` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[COleDateTime:: Format](#format)|개체의 형식이 지정 된 문자열 표현을 생성 `COleDateTime` 합니다.|
 |[COleDateTime:: GetAsDBTIMESTAMP](#getasdbtimestamp)|개체의 시간을 데이터 구조체로 가져오려면이 메서드를 호출 `COleDateTime` `DBTIMESTAMP` 합니다.|
@@ -85,7 +86,7 @@ class COleDateTime
 
 ### <a name="public-operators"></a>Public 연산자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
 |[COleDateTime:: operator = =, COleDateTime:: operator < 등](#coledatetime_relational_operators)|두 `COleDateTime` 값을 비교 합니다.|
 |[COleDateTime:: operator +, COleDateTime:: operator-](#operator_add_-)|값을 더하거나 뺍니다 `COleDateTime` .|
@@ -95,7 +96,7 @@ class COleDateTime
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
 |[COleDateTime:: m_dt](#m_dt)|`DATE`이 개체의 내부를 포함 `COleDateTime` 합니다.|
 |[COleDateTime:: m_status](#m_status)|이 개체의 상태를 포함 `COleDateTime` 합니다.|
@@ -313,7 +314,7 @@ CString Format(UINT nFormatID) const;
 *nFormatID*<br/>
 형식 컨트롤 문자열에 대 한 리소스 ID입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `CString`형식이 지정 된 날짜/시간 값을 포함 하는입니다.
 
@@ -349,7 +350,7 @@ bool GetAsDBTIMESTAMP(DBTIMESTAMP& timeStamp) const throw();
 *없으면*<br/>
 [Dbtimestamp](/dotnet/api/system.data.oledb.oledbtype) 구조체에 대 한 참조입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -374,7 +375,7 @@ bool GetAsSystemTime(SYSTEMTIME& sysTime) const throw();
 *sysTime*<br/>
 개체에서 변환 된 날짜/시간 값을 받는 [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) 구조체에 대 한 참조 `COleDateTime` 입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 TRUE를 반환 합니다. 변환이 실패 하는 경우 FALSE이 고, `COleDateTime` 개체가 NULL 이거나 잘못 된 경우입니다.
 
@@ -397,7 +398,7 @@ bool GetAsUDATE(UDATE& uDate) const throw();
 *uDate*<br/>
 `UDATE`개체에서 변환 된 날짜/시간 값을 받는 구조체에 대 한 참조 `COleDateTime` 입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 TRUE를 반환 합니다. 변환이 실패 하는 경우 FALSE이 고, `COleDateTime` 개체가 NULL 이거나 잘못 된 경우입니다.
 
@@ -425,7 +426,7 @@ static COleDateTime WINAPI GetCurrentTime() throw();
 int GetDay() const throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 개체의 값으로 표시 되는 월의 일 `COleDateTime` 이거나 `COleDateTime::error` 일을 가져올 수 없는 경우입니다.
 
@@ -455,13 +456,13 @@ int GetDay() const throw();
 
 ## <a name="coledatetimegetdayofweek"></a><a name="getdayofweek"></a> COleDateTime:: GetDayOfWeek
 
-이 날짜/시간 값으로 표시 되는 월의 일을 가져옵니다.
+이 날짜/시간 값이 나타내는 요일을 가져옵니다.
 
 ```
 int GetDayOfWeek() const throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 개체의 값으로 표시 되는 요일 이거나 요일을 `COleDateTime` 가져올 수 `COleDateTime::error` 없는 경우입니다.
 
@@ -497,7 +498,7 @@ int GetDayOfWeek() const throw();
 int GetDayOfYear() const throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 개체의 값으로 표시 되는 연도의 날짜 `COleDateTime` 이거나 `COleDateTime::error` 연도 일을 가져올 수 없는 경우입니다.
 
@@ -533,7 +534,7 @@ int GetDayOfYear() const throw();
 int GetHour() const throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 개체의 값이 나타내는 시간 `COleDateTime` 이거나, `COleDateTime::error` 시간을 가져올 수 없는 경우입니다.
 
@@ -569,7 +570,7 @@ int GetHour() const throw();
 int GetMinute() const throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 개체의 값이 나타내는 분 `COleDateTime` 이거나, `COleDateTime::error` 분을 가져올 수 없는 경우입니다.
 
@@ -605,7 +606,7 @@ int GetMinute() const throw();
 int GetMonth() const throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 개체의 값이 나타내는 월 `COleDateTime` 이거나, `COleDateTime::error` 월을 가져올 수 없는 경우입니다.
 
@@ -641,7 +642,7 @@ int GetMonth() const throw();
 int GetSecond() const throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 개체의 값으로 표시 되는 두 번째 이거나, 두 번째를 `COleDateTime` `COleDateTime::error` 가져올 수 없는 경우입니다.
 
@@ -682,7 +683,7 @@ int GetSecond() const throw();
 DateTimeStatus GetStatus() const throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 값의 상태를 반환 `COleDateTime` 합니다. `GetStatus`기본값을 사용 하 여 생성 된 개체에 대해를 호출 하는 경우 `COleDateTime` 유효한을 반환 합니다. `GetStatus` `COleDateTime` 생성자를 null로 설정 하 여 초기화 된 개체에서를 호출 하면에서 `GetStatus` null이 반환 됩니다.
 
@@ -748,7 +749,7 @@ enum DateTimeStatus
 int GetYear() const throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 개체의 값이 나타내는 연도 `COleDateTime` 이거나 `COleDateTime::error` 연도를 가져올 수 없는 경우입니다.
 
@@ -943,7 +944,7 @@ bool ParseDateTime(
 *lcid*<br/>
 변환에 사용할 로캘 ID를 나타냅니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 문자열이 날짜/시간 값으로 성공적으로 변환 되 면 TRUE를 반환 하 고, 그렇지 않으면 FALSE를 반환 합니다.
 
@@ -998,7 +999,7 @@ int SetDate(
 *nDay*\
 이 개체에 복사할 날짜를 나타냅니다 `COleDateTime` .
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 개체의 값이 `COleDateTime` 성공적으로 설정 되었으면 0이 고, 그렇지 않으면 1입니다. 이 반환 값은 `DateTimeStatus` 열거 형식을 기반으로 합니다. 자세한 내용은 [SetStatus](#setstatus) 구성원 함수를 참조 하세요.
 
@@ -1072,7 +1073,7 @@ int SetDateTime(
 *nYear*, *nMonth*, *nDay*, *nHour*, *nMin*, *nSec*<br/>
 이 개체에 복사할 날짜 및 시간 구성 요소를 지정 `COleDateTime` 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 개체의 값이 `COleDateTime` 성공적으로 설정 되었으면 0이 고, 그렇지 않으면 1입니다. 이 반환 값은 `DateTimeStatus` 열거 형식을 기반으로 합니다. 자세한 내용은 [SetStatus](#setstatus) 구성원 함수를 참조 하세요.
 
@@ -1177,7 +1178,7 @@ int SetTime(
 *Nhour*, *nhour*, *nSec*<br/>
 이 개체에 복사할 시간 구성 요소를 지정 `COleDateTime` 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 개체의 값이 `COleDateTime` 성공적으로 설정 되었으면 0이 고, 그렇지 않으면 1입니다. 이 반환 값은 `DateTimeStatus` 열거 형식을 기반으로 합니다. 자세한 내용은 [SetStatus](#setstatus) 구성원 함수를 참조 하세요.
 
