@@ -94,6 +94,15 @@
           href: ../standard-library/atomic-functions.md
         - name: <atomic> 열거형
           href: ../standard-library/atomic-enums.md
+    - name: <bit>
+      expanded: false
+      items:
+        - name: <bit>
+          href: ../standard-library/bit.md
+        - name: <bit> 함수
+          href: ../standard-library/bit-functions.md
+        - name: endian 열거형
+          href: ../standard-library/bit-enum.md
     - name: <bitset>
       expanded: false
       items:
