@@ -1,17 +1,17 @@
 ---
 title: /CETCOMPAT (CET 섀도 스택 호환)
-ms.date: 06/30/2020
+ms.date: 09/01/2020
 f1_keywords:
 - /CETCOMPAT
 helpviewer_keywords:
 - /CETCOMPAT linker option
 - /CETCOMPAT
-ms.openlocfilehash: 35078ac9e6177e34562db14b30f4ef8f987d98bc
-ms.sourcegitcommit: 83ea5df40917885e261089b103d5de3660314104
+ms.openlocfilehash: 7de7c2007c29769cb3ac8f89d07de8b00bf44c26
+ms.sourcegitcommit: e58918c45316d799c1952ca7797a85adbcd0c472
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85813565"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89281831"
 ---
 # <a name="cetcompat-cet-shadow-stack-compatible"></a>/CETCOMPAT (CET 섀도 스택 호환)
 
@@ -45,7 +45,7 @@ Visual Studio 2019 버전 16.7부터:
 
 1. **CET 섀도 스택 호환** 속성을 선택 합니다.
 
-1. 드롭다운 컨트롤에서 **`Yes (/CETCOMPAT)`** EH 연속 메타 데이터를 사용 하도록 설정 하거나 **`No (/CETCOMPAT:NO)`** 사용 하지 않도록 선택 합니다.
+1. 드롭다운 컨트롤에서 **`Yes (/CETCOMPAT)`** 이진 파일을 CET 섀도 스택으로 표시 하거나 호환 되지 않는 것으로 표시 하도록 선택 합니다 **`No (/CETCOMPAT:NO)`** .
 
 이전 버전의 Visual Studio 2019:
 
@@ -53,7 +53,7 @@ Visual Studio 2019 버전 16.7부터:
 
 1. **구성 속성**  >  **링커**  >  **명령줄** 속성 페이지를 선택 합니다.
 
-1. **추가 옵션** 편집 컨트롤에서 *`/CETCOMPAT`* EH 연속 메타 데이터를 사용 하도록 설정 하거나 *`/CETCOMPAT:NO`* 명시적으로 사용 하지 않도록 설정 하려면를 추가 합니다.
+1. **추가 옵션** 편집 컨트롤에서을 추가 *`/CETCOMPAT`* 하 여 이진 파일을 CET로 표시 하거나 호환 되지 않는 것으로 표시 *`/CETCOMPAT:NO`* 합니다.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>프로그래밍 방식으로 이 링커 옵션을 설정하려면
 

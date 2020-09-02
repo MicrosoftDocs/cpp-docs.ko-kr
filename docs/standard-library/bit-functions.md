@@ -28,12 +28,12 @@ helpviewer_keywords:
 - std::bit [C++], countr_zero
 - std::bit [C++], countr_one
 - std::bit [C++], popcount
-ms.openlocfilehash: 44ec7c4fb2f3fc303b9a96b2b6d5273279fcac12
-ms.sourcegitcommit: 3628707bc17c99aac7aac27eb126cc2eaa4d07b4
+ms.openlocfilehash: f06e181a4fe6683adb0cc63c016cbd879f2fc574
+ms.sourcegitcommit: e58918c45316d799c1952ca7797a85adbcd0c472
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "89194771"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89281811"
 ---
 # <a name="ltbitgt-functions"></a>&lt;비트 &gt; 함수
 
@@ -80,7 +80,7 @@ template <class To, class From>
 
 의 패딩 비트가 없는 경우 결과의 각 비트는의 해당 비트와 일치 `from` `To` 합니다 .이 경우 결과의 비트는 지정 되지 않습니다.
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 ```cpp
 #include <bit>
@@ -137,7 +137,7 @@ template<class T>
 
  보다 크거나 같은 2의 최소 거듭제곱입니다 `value` .
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 ```cpp
 #include <bit>
@@ -150,7 +150,7 @@ int main()
     {
         auto nextClosestPowerOf2 = std::bit_ceil(i);
         std::cout << "\nbit_ceil(0b" << std::bitset<4>(i) << ") = "
-            << "0b" << std::bitset<4>(nextClosestPowerOf2);
+                  << "0b" << std::bitset<4>(nextClosestPowerOf2);
     }
     return 0;
 }
@@ -188,7 +188,7 @@ template< class T >
 보다 크지 않은 2의 가장 큰 거듭제곱 `value`
 `value`가 0 이면는 0을 반환 합니다.
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 ```cpp
 #include <bit>
@@ -201,7 +201,7 @@ int main()
     {
         auto previousPowerOf2 = std::bit_floor(i);
         std::cout << "\nbit_floor(0b" << std::bitset<4>(i) << ") = 0b"
-            << std::bitset<4>(previousPowerOf2);
+                  << std::bitset<4>(previousPowerOf2);
     }
     return 0;
 }
@@ -241,7 +241,7 @@ template<class T>
 나타내는 데 필요한 비트 수 `value` 입니다.
 `value`가 0 이면는 0을 반환 합니다.
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 ```cpp
 #include <bit>
@@ -252,7 +252,7 @@ int main()
     for (unsigned i=0u; i <= 8u; ++i)
     {
         std::cout << "\nbit_width(" << i << ") = "
-                      << std::bit_width(i);
+                  << std::bit_width(i);
     }
     return 0;
 }
@@ -293,7 +293,7 @@ template<class T>
 가장 중요 한 비트부터 시작 하 여 연속 제로 비트 수입니다.
 `value`가 0 이면 형식의 비트 수입니다 `value` .
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 ```cpp
 #include <bit>
@@ -345,7 +345,7 @@ template<class T>
 
 가장 중요 한 비트에서 시작 하 여 1로 설정 된 연속 비트 수입니다.
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 ```cpp
 #include <bit>
@@ -355,11 +355,11 @@ template<class T>
 int main()
 {
     unsigned char value = 0;
-        for (unsigned char bit = 128; bit > 0; bit /= 2)
+    for (unsigned char bit = 128; bit > 0; bit /= 2)
     {
         value |= bit;
         std::cout << "\ncountl_one(0b" << std::bitset<8>(value) << ") = "
-            << std::countl_one(value);
+                  << std::countl_one(value);
     }
     return 0;
 }
@@ -399,7 +399,7 @@ template<class T>
 최하위 비트부터 시작 하 여 연속 제로 비트 수입니다.
 `value`가 0 이면 형식의 비트 수입니다 `value` .
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 ```cpp
 #include <bit>
@@ -411,7 +411,7 @@ int main()
     for (unsigned char result = 0, i = 0; i < 9; i++)
     {
         std::cout << "\ncountr_zero(0b" << std::bitset<8>(result) << ") = "
-            << std::countr_zero(result);
+                  << std::countr_zero(result);
         result = result == 0 ? 1 : result * 2;
     }
     return 0;
@@ -452,7 +452,7 @@ template<class T>
 
 최하위 비트에서 시작 하 여 1로 설정 된 연속 비트 수입니다.
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 ```cpp
 #include <bit>
@@ -466,7 +466,7 @@ int main()
     {
         value |= bit;
         std::cout << "\ncountr_one(0b" << std::bitset<8>(value) << ") = "
-                      << std::countr_one(value);
+                  << std::countr_one(value);
     }
     return 0;
 }
@@ -505,7 +505,7 @@ template <class T>
 
 `true``value`에 하나의 비트 집합만 있는 경우 `value` 가 2의 거듭제곱을 의미 합니다. 그렇지 않으면 `false`입니다.
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 ```cpp
 #include <bit>
@@ -518,7 +518,7 @@ int main()
     for (auto i = 0u; i < 10u; ++i)
     {
         std::cout << "has_single_bit(0b" << std::bitset<4>(i) << ") = "
-            << std::boolalpha << std::has_single_bit(i) << '\n';
+                  << std::boolalpha << std::has_single_bit(i) << '\n';
     }
     return 0;
 }
@@ -559,7 +559,7 @@ template<class T>
 
 에서 1로 설정 된 숫자 비트 `value` 입니다.
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 ```cpp
 #include <bit>
@@ -571,7 +571,7 @@ int main()
    for (unsigned char value = 0; value < 16; value++)
     {
         std::cout << "\npopcount(0b" << std::bitset<4>(value) << ") = "
-                      << std::popcount(value);
+                  << std::popcount(value);
     }
     return 0;
 }
@@ -623,7 +623,7 @@ template<class T>
 `s`가 0 이면를 반환 `value` 합니다.
 `s`가 음수 이면는를 수행 `rotr(value, -s)` 합니다. 가장 오른쪽 비트의 ' out ' 비트가 가장 왼쪽 비트로 회전 됩니다.
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 ```cpp
 #include <bit>
@@ -685,7 +685,7 @@ template<class T>
 `s`가 0 이면를 반환 `value` 합니다.
 `s`가 음수 이면는를 수행 `rotl(value, -s)` 합니다. 맨 왼쪽 비트의 ' 제어 ' 비트가 가장 오른쪽 비트로 회전 합니다.
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 ```cpp
 #include <bit>

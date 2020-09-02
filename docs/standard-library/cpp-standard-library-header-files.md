@@ -1,16 +1,17 @@
-﻿---
+---
 title: C + + 표준 라이브러리 헤더 파일
-ms.date: 07/23/2020
+description: C + + 표준 라이브러리 헤더 파일, 분류
+ms.date: 08/31/2020
 helpviewer_keywords:
 - header files, C++ Standard Library
 - C++ Standard Library, header files
 ms.assetid: e7bf497a-0f63-48d0-9b54-cb0eef4073c4
-ms.openlocfilehash: 845fda9e020727b71752f19c38bb8432d5cf7c25
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0bbd67468c1df8b9e7c078f498d19f01f848149c
+ms.sourcegitcommit: e58918c45316d799c1952ca7797a85adbcd0c472
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228299"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89281850"
 ---
 # <a name="c-standard-library-header-files"></a>C + + 표준 라이브러리 헤더 파일
 
@@ -20,7 +21,7 @@ C + + 표준 라이브러리 및 확장에 대 한 헤더 파일 (범주별).
 
 ::: moniker range=">=vs-2017"
 
-| 범주 | 헤더 |
+| 범주 | headers |
 | - | - |
 | [알고리즘](../cpp/algorithms-modern-cpp.md) | [\<algorithm>](algorithm.md), [\<cstdlib>](cstdlib.md), [\<numeric>](numeric.md) |
 | 원자 단위 연산 |  [\<atomic>](atomic.md)<sup>pt</sup> |
@@ -33,7 +34,7 @@ C + + 표준 라이브러리 및 확장에 대 한 헤더 파일 (범주별).
 | 컨테이너 어댑터 | [\<queue>](queue.md), [\<stack>](stack.md) |
 | 컨테이너 뷰 | [\<span>](span.md)<sup>720</sup> |
 | [오류 및 예외 처리](../cpp/errors-and-exception-handling-modern-cpp.md) | [\<cassert>](cassert.md), [\<exception>](exception.md) , [\<stdexcept>](stdexcept.md) , [\<system_error>](system-error.md) <sup>11</sup> |
-| 일반 유틸리티 | \<any><sup>17</sup>, [\<bitset>](bitset.md) , [\<cstdlib>](cstdlib.md) , \<execution> <sup>17</sup>, [\<functional>](functional.md) , [\<memory>](memory.md) , \<memory_resource> <sup>17</sup>, \<optional> <sup>17</sup>, [\<ratio>](ratio.md) <sup>11</sup>, [\<scoped_allocator>](scoped-allocator.md) <sup>11</sup>, [\<tuple>](tuple.md) <sup>11</sup>, [\<type_traits>](type-traits.md) <sup>11</sup>, [\<typeindex>](typeindex.md) <sup>11</sup>, [\<utility>](utility.md) , \<variant> <sup>17</sup> |
+| 일반 유틸리티 | \<any><sup>17</sup>, [\<bit>](bit.md) <sup>20</sup>, [\<bitset>](bitset.md) , [\<cstdlib>](cstdlib.md) , \<execution> <sup>17</sup>, [\<functional>](functional.md) , [\<memory>](memory.md) , \<memory_resource> <sup>17</sup>, \<optional> <sup>17</sup>, [\<ratio>](ratio.md) <sup>11</sup>, [\<scoped_allocator>](scoped-allocator.md) <sup>11</sup>, 11, [\<tuple>](tuple.md) <sup>11</sup> [\<type_traits>](type-traits.md) <sup>11</sup>, [\<typeindex>](typeindex.md) <sup>11</sup>, [\<utility>](utility.md) \<variant> <sup>17</sup> |
 | [I/o 및 서식 지정](../text/string-and-i-o-formatting-modern-cpp.md) | [\<cinttypes>](cinttypes.md)<sup>11</sup>, [\<cstdio>](cstdio.md) , [\<filesystem>](filesystem.md) <sup>17</sup>,,,,,,,,,, [\<fstream>](fstream.md) [\<iomanip>](iomanip.md) [\<ios>](ios.md) [\<iosfwd>](iosfwd.md) [\<iostream>](iostream.md) [\<istream>](istream.md) [\<ostream>](ostream.md) [\<sstream>](sstream.md) [\<streambuf>](streambuf.md) [\<strstream>](strstream.md) <sup>c</sup>, \<syncstream> <sup>20</sup> |
 | 반복기 | [\<iterator>](iterator.md) |
 | 언어 지원 | [\<cfloat>](cfloat.md), [\<climits>](climits.md) , [\<codecvt>](codecvt.md) <sup>11 a</sup>, \<compare> <sup>20</sup>, \<contract> <sup>20</sup>, \<coroutine> <sup>20</sup>,,,,, [\<csetjmp>](csetjmp.md) [\<csignal>](csignal.md) [\<cstdarg>](cstdarg.md) [\<cstddef>](cstddef.md) [\<cstdint>](cstdint.md) <sup>11</sup>, [\<cstdlib>](cstdlib.md) , [\<exception>](exception.md) , [\<initializer_list>](initializer-list.md) <sup>11</sup>, [\<limits>](limits.md) [\<new>](new.md) [\<typeinfo>](typeinfo.md) \<version> <sup>20</sup> ,,, 20 |
@@ -44,7 +45,7 @@ C + + 표준 라이브러리 및 확장에 대 한 헤더 파일 (범주별).
 | 범위 | \<ranges><sup>720</sup> |
 | 정규식 | [\<regex>](regex.md)<sup>pt</sup> |
 | 문자열 및 문자 데이터 | [\<charconv>](charconv.md)<sup>17</sup>, [\<cctype>](cctype.md) , [\<cstdlib>](cstdlib.md) , [\<cstring>](cstring.md) , [\<cuchar>](cuchar.md) <sup>11</sup>, [\<cwchar>](cwchar.md) , [\<cwctype>](cwctype.md) , [\<regex>](regex.md) <sup>11</sup>, [\<string>](string.md) , [\<string_view>](string-view.md) <sup>17</sup> |
-| Time | [\<chrono>](chrono.md)<sup>11</sup>,[\<ctime>](ctime.md) |
+| 시간 | [\<chrono>](chrono.md)<sup>11</sup>, [\<ctime>](ctime.md) |
 
 <sup>11</sup> c + + 11 표준에서 추가 되었습니다.
 <sup>14</sup> 는 c + + 14 표준에 추가 되었습니다.
@@ -58,7 +59,7 @@ C + + 표준 라이브러리 및 확장에 대 한 헤더 파일 (범주별).
 
 ::: moniker range="vs-2015"
 
-|범주|헤더|
+|범주|headers|
 |-|-|
 |[알고리즘](../cpp/algorithms-modern-cpp.md)|[\<algorithm>](algorithm.md)|
 |C 라이브러리 래퍼|[\<cassert>](cassert.md), [\<cctype>](cctype.md), [\<cerrno>](cerrno.md), [\<cfenv>](cfenv.md), [\<cfloat>](cfloat.md), [\<cinttypes>](cinttypes.md), [\<ciso646>](ciso646.md), [\<climits>](climits.md), [\<clocale>](clocale.md), [\<cmath>](cmath.md), [\<csetjmp>](csetjmp.md), [\<csignal>](csignal.md), [\<cstdarg>](cstdarg.md), [\<cstdbool>](cstdbool.md), [\<cstddef>](cstddef.md), [\<cstdint>](cstdint.md), [\<cstdio>](cstdio.md), [\<cstdlib>](cstdlib.md), [\<cstring>](cstring.md), [\<ctgmath>](ctgmath.md), [\<ctime>](ctime.md), [\<cwchar>](cwchar.md), [\<cwctype>](cwctype.md)|

@@ -1,7 +1,7 @@
 ---
 title: MSVC 링커 옵션
 description: Microsoft 링크 링커가 지 원하는 옵션의 목록입니다.
-ms.date: 02/09/2020
+ms.date: 09/01/2020
 f1_keywords:
 - link
 helpviewer_keywords:
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - libraries [C++], linking to COFF
 - LINK tool [C++], linker options
 ms.assetid: c1d51b8a-bd23-416d-81e4-900e02b2c129
-ms.openlocfilehash: 12710aff1cf833e277e48ab2f13abc702c7d6c14
-ms.sourcegitcommit: 8414cd91297dea88c480e208c7b5301db9972f19
+ms.openlocfilehash: 0d85361b8d4b5896d9ed7beae0d310fe28dc98e9
+ms.sourcegitcommit: e58918c45316d799c1952ca7797a85adbcd0c472
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77257548"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89281798"
 ---
 # <a name="linker-options"></a>링커 옵션
 
@@ -23,15 +23,15 @@ LINK.exe는 COFF(Common Object File Format) 개체 파일과 라이브러리를 
 
 다음 테이블에는 LINK.exe의 옵션이 나열됩니다. LINK에 대한 자세한 내용은 다음을 참조하세요.
 
-- [Compiler-Controlled LINK Options](compiler-controlled-link-options.md)
+- [컴파일러 제어 LINK 옵션](compiler-controlled-link-options.md)
 
-- [LINK 입력 파일](link-input-files.md)
+- [링크 입력 파일](link-input-files.md)
 
-- [LINK 출력](link-output.md)
+- [링크 출력](link-output.md)
 
 - [예약어](reserved-words.md)
 
-명령줄에서 링커 옵션은 대/소문자를 구분 하지 않습니다. 예를 들어 `/base`와 `/BASE`는 동일한 것을 의미 합니다. 명령줄 또는 Visual Studio에서 각 옵션을 지정하는 방법에 대한 자세한 내용은 해당 옵션에 대한 설명서를 참조하세요.
+명령줄에서 링커 옵션은 대/소문자를 구분 하지 않습니다. 예를 들어 `/base` 및 `/BASE` 는 같은 것을 의미 합니다. 명령줄 또는 Visual Studio에서 각 옵션을 지정하는 방법에 대한 자세한 내용은 해당 옵션에 대한 설명서를 참조하세요.
 
 [주석](../../preprocessor/comment-c-cpp.md) pragma를 사용하여 일부 링커 옵션을 지정할 수 있습니다.
 
@@ -49,6 +49,7 @@ LINK.exe는 COFF(Common Object File Format) 개체 파일과 라이브러리를 
 |[/ASSEMBLYMODULE](assemblymodule-add-a-msil-module-to-the-assembly.md)|MSIL(Microsoft Intermediate Language) 모듈을 어셈블리로 가져와야 하는지 여부를 지정합니다.|
 |[/ASSEMBLYRESOURCE](assemblyresource-embed-a-managed-resource.md)|관리되는 리소스 파일을 어셈블리에 포함합니다.|
 |[/BASE](base-base-address.md)|프로그램의 기준 주소를 설정합니다.|
+|[/CETCOMPAT](cetcompat.md)|CET 섀도 스택과 호환 되는 이진 파일을 표시 합니다.|
 |[/CGTHREADS](cgthreads-compiler-threads.md)|링크 타임 코드 생성을 지정할 때 최적화 및 코드 생성에 사용할 cl.exe 스레드 수를 설정합니다.|
 |[/CLRIMAGETYPE](clrimagetype-specify-type-of-clr-image.md)|CLR 이미지의 형식(IJW, 순수 또는 안전)을 설정합니다.|
 |[/CLRSUPPORTLASTERROR](clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls.md)|P/Invoke 메커니즘을 통해 호출된 함수의 마지막 오류 코드를 유지합니다.|
@@ -66,19 +67,19 @@ LINK.exe는 COFF(Common Object File Format) 개체 파일과 라이브러리를 
 |[/DRIVER](driver-windows-nt-kernel-mode-driver.md)|커널 모드 드라이버를 만듭니다.|
 |[/DYNAMICBASE](dynamicbase-use-address-space-layout-randomization.md)|ASLR (주소 공간 레이아웃 임의 지정) 기능을 사용 하 여 로드할 때 기준 주소가 지정 되는 실행 가능 이미지를 생성할지 여부를 지정 합니다.|
 |[/ENTRY](entry-entry-point-symbol.md)|시작 주소를 설정합니다.|
-|[/ERRORREPORT](errorreport-report-internal-linker-errors.md)| 사용되지 않음. 오류 보고는 [WER (Windows 오류 보고)](/windows/win32/wer/windows-error-reporting) 설정에 의해 제어 됩니다. |
+|[/ERRORREPORT](errorreport-report-internal-linker-errors.md)| 더 이상 사용되지 않습니다. 오류 보고는 [WER (Windows 오류 보고)](/windows/win32/wer/windows-error-reporting) 설정에 의해 제어 됩니다. |
 |[/EXPORT](export-exports-a-function.md)|함수를 내보냅니다.|
 |[/FILEALIGN](filealign.md)|지정 된 값의 배수로 출력 파일 내의 섹션을 맞춥니다.|
 |[/FIXED](fixed-fixed-base-address.md)|기본 설정 기준 주소에서만 로드할 수 있는 프로그램을 만듭니다.|
 |[/FORCE](force-force-file-output.md)|확인되지 않은 기호 또는 두 번 이상 정의된 기호를 사용해도 링크가 강제로 완료되도록 합니다.|
 |[/FUNCTIONPADMIN](functionpadmin-create-hotpatchable-image.md)|핫 패치할 수 있는 이미지를 만듭니다.|
-|[/GENPROFILE, /FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md)|이러한 두 옵션은 모두 PGO (프로필 기반 최적화)를 지원 하기 위해 링커가 *`.pgd`* 파일의 생성을 지정 합니다. /GENPROFILE 및 /FASTGENPROFILE은 서로 다른 기본 매개 변수를 사용합니다.|
+|[/GENPROFILE, /FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md)|이러한 두 옵션은 *`.pgd`* PGO (프로필 기반 최적화)를 지원 하기 위해 링커에서 파일 생성을 지정 합니다. /GENPROFILE 및 /FASTGENPROFILE은 서로 다른 기본 매개 변수를 사용합니다.|
 |[/GUARD](guard-enable-guard-checks.md)|제어 흐름 가드 보호를 사용하도록 설정합니다.|
 |[/HEAP](heap-set-heap-size.md)|힙 크기를 바이트 단위로 설정합니다.|
 |[/HIGHENTROPYVA](highentropyva-support-64-bit-aslr.md)|높은 엔트로피 64비트 ASLR(Address Space Layout Randomization)에 대한 지원을 지정합니다.|
 |[/IDLOUT](idlout-name-midl-output-files.md)|*`.idl`* 파일 및 기타 MIDL 출력 파일의 이름을 지정 합니다.|
 |[/IGNORE](ignore-ignore-specific-warnings.md)|지정된 링커 경고 출력을 표시하지 않습니다.|
-|[/IGNOREIDL](ignoreidl-don-t-process-attributes-into-midl.md)|*`.idl`* 파일에 대 한 특성 정보 처리를 방지 합니다.|
+|[/IGNOREIDL](ignoreidl-don-t-process-attributes-into-midl.md)|파일에 대 한 특성 정보 처리를 방지 합니다 *`.idl`* .|
 |[/IMPLIB](implib-name-import-library.md)|기존 가져오기 라이브러리 이름을 재정의합니다.|
 |[/INCLUDE](include-force-symbol-references.md)|기호 참조를 강제합니다.|
 |[/INCREMENTAL](incremental-link-incrementally.md)|증분 링크를 제어합니다.|
@@ -92,7 +93,7 @@ LINK.exe는 COFF(Common Object File Format) 개체 파일과 라이브러리를 
 |[/LTCG](ltcg-link-time-code-generation.md)|링크 타임 코드 생성을 지정합니다.|
 |[/MACHINE](machine-specify-target-platform.md)|대상 플랫폼을 지정합니다.|
 |[/MANIFEST](manifest-create-side-by-side-assembly-manifest.md)|side-by-side 매니페스트 파일을 만들고 선택적으로 이진에 포함합니다.|
-|[/MANIFESTDEPENDENCY](manifestdependency-specify-manifest-dependencies.md)|매니페스트 파일의 \<dependentAssembly > 섹션을 지정 합니다.|
+|[/MANIFESTDEPENDENCY](manifestdependency-specify-manifest-dependencies.md)|\<dependentAssembly>매니페스트 파일의 섹션을 지정 합니다.|
 |[/MANIFESTFILE](manifestfile-name-manifest-file.md)|매니페스트 파일의 기본 이름을 변경합니다.|
 |[/MANIFESTINPUT](manifestinput-specify-manifest-input.md)|처리할 링커의 매니페스트 입력 파일을 지정해서 이진에 포함합니다. 이 옵션을 여러 번 사용하여 매니페스트 입력 파일을 두 개 이상 지정합니다.|
 |[/MANIFESTUAC](manifestuac-embeds-uac-information-in-manifest.md)|UAC(사용자 계정 컨트롤) 정보를 program 매니페스트에 포함할지 여부를 지정합니다.|
@@ -112,16 +113,16 @@ LINK.exe는 COFF(Common Object File Format) 개체 파일과 라이브러리를 
 |[/PDB](pdb-use-program-database.md)|PDB 파일을 만듭니다.|
 |[/PDBALTPATH](pdbaltpath-use-alternate-pdb-path.md)|PDB 파일을 저장할 다른 위치를 사용합니다.|
 |[/PDBSTRIPPED](pdbstripped-strip-private-symbols.md)|전용 기호가 없는 PDB 파일을 만듭니다.|
-|[/PGD](pgd-specify-database-for-profile-guided-optimizations.md)|프로필 기반 최적화에 대 한 *`.pgd`* 파일을 지정 합니다.|
+|[/PGD](pgd-specify-database-for-profile-guided-optimizations.md)|*`.pgd`* 프로필 기반 최적화에 대 한 파일을 지정 합니다.|
 |[/POGOSAFEMODE](pogosafemode-linker-option.md)|**사용 되지 않음** 스레드로부터 안전한 PGO 계측 된 빌드를 만듭니다.|
 |[/PROFILE](profile-performance-tools-profiler.md)|성능 도구 프로파일러와 함께 사용할 수 있는 출력 파일을 생성합니다.|
-|[/RELEASE](release-set-the-checksum.md)|*`.exe`* 헤더에 체크섬을 설정 합니다.|
+|[/RELEASE](release-set-the-checksum.md)|헤더에 체크섬을 설정 합니다 *`.exe`* .|
 |[/SAFESEH](safeseh-image-has-safe-exception-handlers.md)|이미지에 안전한 예외 처리기 테이블을 포함하도록 지정합니다.|
 |[/SECTION](section-specify-section-attributes.md)|섹션의 특성을 재정의합니다.|
 |[/SOURCELINK](sourcelink.md)|PDB에 추가할 SourceLink 파일을 지정 합니다.|
 |[/STACK](stack-stack-allocations.md)|스택 크기를 바이트 단위로 설정합니다.|
 |[/STUB](stub-ms-dos-stub-file-name.md)|MS-DOS 스텁 프로그램을 Win32 프로그램에 첨부합니다.|
-|[/SUBSYSTEM](subsystem-specify-subsystem.md)|운영 체제에 *`.exe`* 파일을 실행 하는 방법을 알려 줍니다.|
+|[/SUBSYSTEM](subsystem-specify-subsystem.md)|운영 체제에서 파일을 실행 하는 방법을 알려 줍니다 *`.exe`* .|
 |[/SWAPRUN](swaprun-load-linker-output-to-swap-file.md)|실행 하기 전에 스왑 파일에 링커 출력을 복사 하도록 운영 체제에 지시 합니다.|
 |[/TLBID](tlbid-specify-resource-id-for-typelib.md)|링커 생성 형식 라이브러리의 리소스 ID를 지정합니다.|
 |[/TLBOUT](tlbout-name-dot-tlb-file.md)|*`.tlb`* 파일 및 기타 MIDL 출력 파일의 이름을 지정 합니다.|
@@ -141,5 +142,5 @@ LINK.exe는 COFF(Common Object File Format) 개체 파일과 라이브러리를 
 
 ## <a name="see-also"></a>참고 항목
 
-[C/C++ 빌드 참조](c-cpp-building-reference.md)\
+[C/c + + 빌드 참조](c-cpp-building-reference.md)\
 [MSVC 링커 참조](linking.md)
