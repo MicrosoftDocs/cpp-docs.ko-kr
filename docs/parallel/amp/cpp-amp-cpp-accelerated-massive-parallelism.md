@@ -5,12 +5,12 @@ helpviewer_keywords:
 - C++ AMP (see C++ Accelerated Massive Parallelism)
 - C++ Accelerated Massive Parallelism, getting started
 ms.assetid: e27824cb-3167-409b-8c3f-a0e476d8f349
-ms.openlocfilehash: 516b69a0371ceb9365e79d5465879711289076c0
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 243c476b6536278eb09b26b24becb65276d6e48a
+ms.sourcegitcommit: 093f49b8b69daf86661adc125b1d2d7b1f0e0650
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86404862"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89427636"
 ---
 # <a name="c-amp-c-accelerated-massive-parallelism"></a>C++ AMP(C++ Accelerated Massive Parallelism)
 
@@ -18,7 +18,7 @@ C++ AMP (C++ Accelerated Massive Parallelism)는 개별 그래픽 카드의 GPU 
 
 ## <a name="related-topics"></a>관련 항목
 
-|제목|Description|
+|제목|설명|
 |-----------|-----------------|
 |[C++ AMP 개요](../../parallel/amp/cpp-amp-overview.md)|C++ AMP 및 수학 라이브러리의 주요 기능에 대해 설명 합니다.|
 |[람다, 함수 개체 및 제한 함수 사용](../../parallel/amp/using-lambdas-function-objects-and-restricted-functions.md)|[Parallel_for_each](reference/concurrency-namespace-functions-amp.md#parallel_for_each) 메서드에 대 한 호출에서 람다 식, 함수 개체 및 제한 된 함수를 사용 하는 방법을 설명 합니다.|
@@ -29,7 +29,7 @@ C++ AMP (C++ Accelerated Massive Parallelism)는 개별 그래픽 카드의 GPU 
 |[연습: 행렬 곱하기](../../parallel/amp/walkthrough-matrix-multiplication.md)|C++ AMP 코드와 바둑판식 배열을 사용 하 여 행렬 곱셈을 보여 줍니다.|
 |[연습: C++ AMP 애플리케이션 디버깅](../../parallel/amp/walkthrough-debugging-a-cpp-amp-application.md)|병렬 감소를 사용 하 여 많은 정수 배열을 합산 하는 응용 프로그램을 만들고 디버그 하는 방법을 설명 합니다.|
 
-## <a name="reference"></a>참고
+## <a name="reference"></a>참조
 
 [참조(C++ AMP)](../../parallel/amp/reference/reference-cpp-amp.md)<br/>
 [tile_static 키워드](../../cpp/tile-static-keyword.md)<br/>
@@ -37,6 +37,6 @@ C++ AMP (C++ Accelerated Massive Parallelism)는 개별 그래픽 카드의 GPU 
 
 ## <a name="other-resources"></a>기타 리소스
 
-[네이티브 코드 블로그의 병렬 프로그래밍](https://go.microsoft.com/fwlink/p/?linkid=238472)<br/>
-[다운로드를 위한 C++ AMP 샘플 프로젝트](https://go.microsoft.com/fwlink/p/?linkid=248508)<br/>
+[네이티브 코드 블로그의 병렬 프로그래밍](/archive/blogs/nativeconcurrency/)<br/>
+[다운로드를 위한 C++ AMP 샘플 프로젝트](/archive/blogs/nativeconcurrency/c-amp-sample-projects-for-download)<br/>
 [동시성 시각화 도우미를 사용 하 여 C++ AMP 코드 분석](/archive/blogs/nativeconcurrency/analyzing-c-amp-code-with-the-concurrency-visualizer)

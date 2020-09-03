@@ -8,12 +8,12 @@ helpviewer_keywords:
 - C++ Accelerated Massive Parallelism, overview
 - C++ Accelerated Massive Parallelism
 ms.assetid: 9e593b06-6e3c-43e9-8bae-6d89efdd39fc
-ms.openlocfilehash: 249170e1e29d3ca8c488d15be8fa4ccd2b9070c1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2629f243f3db3b8fabbd87ee0a211380ac3d45a2
+ms.sourcegitcommit: 093f49b8b69daf86661adc125b1d2d7b1f0e0650
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222760"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89427727"
 ---
 # <a name="c-amp-overview"></a>C++ AMP 개요
 
@@ -229,7 +229,7 @@ for (int i = 0; i < 5; i++)
 |-----------------|-----------------|-----------------------|
 |Rank가 결정 된 경우|컴파일 시간에.|컴파일 시간에.|
 |범위가 결정 되 면|런타임에.|런타임에.|
-|셰이프|모양의.|모양의.|
+|도형|모양의.|모양의.|
 |데이터 스토리지|는 데이터 컨테이너입니다.|는 데이터 래퍼입니다.|
 |복사|정의의 명시적 및 전체 복사본입니다.|커널 함수에서 액세스할 때의 암시적 복사입니다.|
 |데이터 검색|CPU 스레드의 개체에 배열 데이터를 다시 복사 합니다.|개체에 대 한 직접 액세스 `array_view` 또는 [array_view:: synchronize 메서드](reference/array-view-class.md#synchronize) 를 호출 하 여 원래 컨테이너의 데이터에 계속 액세스 합니다.|
@@ -238,7 +238,7 @@ for (int i = 0; i < 5; i++)
 
 공유 메모리는 CPU와 가속기 모두에서 액세스할 수 있는 메모리입니다. 공유 메모리를 사용 하면 CPU와 가속기 간에 데이터를 복사 하는 오버 헤드가 감소 하거나 크게 줄어듭니다. 메모리가 공유 되더라도 CPU와 가속기 모두 동시에 액세스할 수 없으며, 이렇게 하면 정의 되지 않은 동작이 발생 합니다.
 
-`array`개체를 사용 하 여 연결 된 가속기가 지 원하는 경우 공유 메모리 사용에 대 한 세분화 된 제어를 지정할 수 있습니다. 액셀러레이터 키가 공유 메모리를 지원 하는지 여부는 [supports_cpu_shared_memory](reference/accelerator-class.md#supports_cpu_shared_memory) **`true`** 공유 메모리가 지원 될 때 반환 되는 액셀러레이터의 supports_cpu_shared_memory 속성에 의해 결정 됩니다. 공유 메모리가 지원 되는 경우 액셀러레이터에 대 한 메모리 할당에 대 한 기본 [Access_type 열거형](reference/concurrency-namespace-enums-amp.md#access_type) 은 속성에 의해 결정 됩니다 `default_cpu_access_type` . 기본적으로 `array` 및 `array_view` 개체는 연결 된 `access_type` 기본와 동일 하 게 사용 `accelerator` 됩니다.
+`array` 개체를 사용 하 여 연결 된 가속기가 지 원하는 경우 공유 메모리 사용에 대 한 세분화 된 제어를 지정할 수 있습니다. 액셀러레이터 키가 공유 메모리를 지원 하는지 여부는 [supports_cpu_shared_memory](reference/accelerator-class.md#supports_cpu_shared_memory) **`true`** 공유 메모리가 지원 될 때 반환 되는 액셀러레이터의 supports_cpu_shared_memory 속성에 의해 결정 됩니다. 공유 메모리가 지원 되는 경우 액셀러레이터에 대 한 메모리 할당에 대 한 기본 [Access_type 열거형](reference/concurrency-namespace-enums-amp.md#access_type) 은 속성에 의해 결정 됩니다 `default_cpu_access_type` . 기본적으로 `array` 및 `array_view` 개체는 연결 된 `access_type` 기본와 동일 하 게 사용 `accelerator` 됩니다.
 
 의 [array:: Cpu_access_type 데이터 멤버](reference/array-class.md#cpu_access_type) 속성을 `array` 명시적으로 설정 하면 공유 메모리가 사용 되는 방식에 대 한 세분화 된 제어를 실행 하 여 계산 커널의 메모리 액세스 패턴에 따라 하드웨어의 성능 특성에 맞게 앱을 최적화할 수 있습니다. 는 `array_view` 연결 된와 동일한를 반영 `cpu_access_type` `array` 하거나, array_view 데이터 소스 없이 생성 된 경우에는 `access_type` 먼저 저장소를 할당 하도록 하는 환경을 반영 합니다. 즉, 호스트 (CPU)에서 처음으로 액세스 하는 경우에는 CPU 데이터 소스에 대해 생성 된 것 처럼 동작 하 고 캡처와 연결 된의를 공유 합니다. 그러나에서 처음으로 액세스 하는 경우에는에서 `access_type` `accelerator_view` 만든에 `accelerator_view` 대해 만들어진 것 처럼 동작 하 `array` `accelerator_view` 고의를 공유 합니다 `array` `access_type` .
 
@@ -495,7 +495,7 @@ C++ AMP는 가속 그래픽 프로그래밍을 위해 디자인 된 그래픽 �
 
 - [GPU 작업(다른 프로세스)](/visualstudio/profiling/gpu-activity-other-processes)
 
-- [채널 (스레드 뷰)](/visualstudio/profiling/channels-threads-view)
+- [채널(스레드 뷰)](/visualstudio/profiling/channels-threads-view)
 
 - [동시성 시각화 도우미를 사용 하 여 C++ AMP 코드 분석](/archive/blogs/nativeconcurrency/analyzing-c-amp-code-with-the-concurrency-visualizer)
 
@@ -508,4 +508,4 @@ C++ AMP는 가속 그래픽 프로그래밍을 위해 디자인 된 그래픽 �
 [C++ AMP(C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)<br/>
 [람다 식 구문](../../cpp/lambda-expression-syntax.md)<br/>
 [참조(C++ AMP)](../../parallel/amp/reference/reference-cpp-amp.md)<br/>
-[네이티브 코드 블로그의 병렬 프로그래밍](https://go.microsoft.com/fwlink/p/?linkid=238472)
+[네이티브 코드 블로그의 병렬 프로그래밍](/archive/blogs/nativeconcurrency/)
