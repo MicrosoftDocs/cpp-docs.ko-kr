@@ -1,16 +1,17 @@
 ---
 title: x64 예외 처리
+description: x64 관련 Microsoft C++ 예외 처리 규칙 개요입니다.
 ms.date: 10/14/2019
 helpviewer_keywords:
 - C++ exception handling, x64
 - exception handling, x64
 ms.assetid: 41fecd2d-3717-4643-b21c-65dcd2f18c93
-ms.openlocfilehash: 3d973354f94ca8c9f2e0901e60f2a8009ac08cd6
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 1c55ecf8755e208b2f47acdfda185123ee0255e2
+ms.sourcegitcommit: efc8c32205c9d610f40597556273a64306dec15d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835053"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88898564"
 ---
 # <a name="x64-exception-handling"></a>x64 예외 처리
 
@@ -24,7 +25,7 @@ x64에서 구조화된 예외 처리 및 C++ 예외 처리 코딩 규칙 및 동
 
 테이블 기반 예외 처리에는 스택 공간을 할당하거나 다른 함수(예: 리프가 아닌 함수)를 호출하는 모든 함수에 대한 테이블 항목이 필요합니다. 함수 테이블 항목의 형식은 다음과 같습니다.
 
-|크기|값|
+|Size|값|
 |-|-|
 |ULONG|함수 시작 주소|
 |ULONG|함수 끝 주소|
@@ -36,7 +37,7 @@ RUNTIME_FUNCTION 구조체는 메모리에서 DWORD로 정렬되어야 합니다
 
 해제 데이터 정보 구조체는 함수에서 스택 포인터에 대한 효과를 기록하는 데 사용되며, 비휘발성 레지스터가 스택에 저장됩니다.
 
-|크기|값|
+|Size|값|
 |-|-|
 |UBYTE: 3|버전|
 |UBYTE: 5|플래그|
@@ -49,14 +50,14 @@ RUNTIME_FUNCTION 구조체는 메모리에서 DWORD로 정렬되어야 합니다
 
 (1) 예외 처리기
 
-|크기|값|
+|Size|값|
 |-|-|
 |ULONG|예외 처리기의 주소|
 |변수|언어별 처리기 데이터(선택 사항)|
 
 (2) 연결된 해제 정보
 
-|크기|값|
+|Size|값|
 |-|-|
 |ULONG|함수 시작 주소|
 |ULONG|함수 끝 주소|
@@ -114,7 +115,7 @@ UNWIND_INFO 구조체는 메모리에서 DWORD로 정렬되어야 합니다. 각
 
 해제 코드 배열은 비휘발성 레지스터 및 RSP에 영향을 주는 프롤로그의 작업 시퀀스를 기록하는 데 사용됩니다. 각 코드 항목의 형식은 다음과 같습니다.
 
-|크기|값|
+|Size|값|
 |-|-|
 |UBYTE|프롤로그의 오프셋|
 |UBYTE: 4|해제 연산 코드|
@@ -305,7 +306,7 @@ typedef struct _DISPATCHER_CONTEXT {
 } DISPATCHER_CONTEXT, *PDISPATCHER_CONTEXT;
 ```
 
-**ControlPc**는 이 함수 내의 RIP 값입니다. 이 값은 예외 주소이거나 제어가 설정 함수를 떠난 주소입니다. RIP는 컨트롤이 이 함수 내의 일부 보호된 구문 내에 있는지 확인하는 데 사용됩니다(예: `__try`/ **`__except`** 또는 `__try`/ **`__finally`** 에 대한 `__try` 블록).
+**ControlPc**는 이 함수 내의 RIP 값입니다. 이 값은 예외 주소이거나 제어가 설정 함수를 떠난 주소입니다. RIP는 컨트롤이 이 함수 내의 일부 보호된 구문 내에 있는지 확인하는 데 사용됩니다(예: **`__try`** / **`__except`** 또는 **`__try`** / **`__finally`** 에 대한 **`__try`** 블록).
 
 **ImageBase**는 이 함수에 포함된 모듈의 이미지 기반(로드 주소)으로서 함수 항목 및 해제 정보에 사용되는 32비트 오프셋에 추가되어 상대 주소를 기록합니다.
 

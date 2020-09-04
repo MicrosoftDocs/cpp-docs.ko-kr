@@ -1,12 +1,12 @@
 ---
 title: ARM64 ABI 규칙 개요
 ms.date: 03/27/2019
-ms.openlocfilehash: 07d58bbd64795235ad63a7b26b6f18fcffdcd1d2
-ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
+ms.openlocfilehash: bfe55513ffd24175dbe62efc6d5afcfd82f71e4c
+ms.sourcegitcommit: 7f378314c5692d897ead10b7f6c96d4cb2abd266
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74303264"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88972675"
 ---
 # <a name="overview-of-arm64-abi-conventions"></a>ARM64 ABI 규칙 개요
 
@@ -205,13 +205,13 @@ Variadic 함수가 아닌 경우 Windows ABI는 매개 변수 전달에 대해 A
 
 HFA 및 HVA 값은 적절하게 s0-s3, d0-d3 또는 v0-v3로 반환됩니다.
 
-값으로 반환되는 형식은 특정 속성이 있는지에 따라 다르게 처리됩니다. 해당 속성을 모두 포함하는 형식은 다음과 같습니다.
+값으로 반환되는 형식은 특정 속성이 있는지, 그리고 함수가 정적이 아닌 멤버 함수인지에 따라 다르게 처리됩니다. 해당 속성을 모두 포함하는 형식은 다음과 같습니다.
 
 - C++14 표준 정의에 의한 *aggregate*입니다. 즉, 사용자 제공 생성자가 없고, 프라이빗 또는 보호된 비정적 데이터 멤버가 없고, 기본 클래스가 없고, 가상 함수가 없는 배열 또는 클래스입니다.
 - 간단한 복사 대입 연산자가 있습니다.
 - 간단한 소멸자가 있습니다.
 
-다음 반환 스타일을 사용합니다.
+비멤버 함수 또는 정적 멤버 함수에서 반환하며, 다음 반환 스타일을 사용합니다.
 
 - 8바이트보다 작거나 같은 형식이 x0에 반환됩니다.
 - 16바이트보다 작거나 같은 형식은 x0 및 x1에서 반환되고 x0은 하위 8바이트를 포함합니다.
