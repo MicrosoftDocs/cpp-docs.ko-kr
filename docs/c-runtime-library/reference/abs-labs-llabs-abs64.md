@@ -1,5 +1,6 @@
 ---
 title: abs, labs, llabs, _abs64
+description: Abs, labs, llabs 및 _abs64에 대 한 API 참조 값의 절대값을 계산 하는입니다.
 ms.date: 04/05/2018
 api_name:
 - abs
@@ -39,12 +40,12 @@ helpviewer_keywords:
 - _abs64 function
 - calculating absolute values
 ms.assetid: 60f789d1-4a1e-49f5-9e4e-0bdb277ea26a
-ms.openlocfilehash: 96363f8d2139a5c75ee25a2c43b4c7ef55094f13
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4527950e4f5577b9285d12309742accb64b9a24a
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221993"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556751"
 ---
 # <a name="abs-labs-llabs-_abs64"></a>abs, labs, llabs, _abs64
 
@@ -69,12 +70,12 @@ float abs( float n );   // C++ only
 
 ### <a name="parameters"></a>매개 변수
 
-*n*<br/>
+*개의*\
 숫자 값입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-**Abs**, **labs**, **llabs** 및 **_abs64** 함수는 매개 변수 *n*의 절대값을 반환 합니다. 반환되는 오류가 없습니다.
+**Abs**, **labs**, **llabs**및 **_abs64** 함수는 매개 변수 *n*의 절대값을 반환 합니다. 오류가 반환 되지 않습니다.
 
 ## <a name="remarks"></a>설명
 

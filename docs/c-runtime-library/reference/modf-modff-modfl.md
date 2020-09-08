@@ -1,5 +1,6 @@
 ---
 title: modf, modff, modfl
+description: Modf, modf 및 modf에 대 한 API 참조 부동 소수점 값을 소수 부분과 정수 부분으로 분할 합니다.
 ms.date: 4/2/2020
 api_name:
 - modff
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - modff function
 - modfl function
 ms.assetid: b1c7abf5-d476-43ca-a03c-02072a86e32d
-ms.openlocfilehash: 644e50564f1b433921a6a0d8099ea5229db7ed93
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0d3522079acc8a9d2c8409b1cad78e7f50a7f788
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216871"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556764"
 ---
 # <a name="modf-modff-modfl"></a>modf, modff, modfl
 
@@ -68,9 +69,9 @@ long double modf( long double x, long double * intptr );  // C++ only
 *intptr*<br/>
 저장된 정수 부분에 대한 포인터입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-이 함수는 *x*의 부호 있는 소수 부분을 반환합니다. 반환되는 오류가 없습니다.
+이 함수는 *x*의 부호 있는 소수 부분을 반환합니다. 오류가 반환 되지 않습니다.
 
 ## <a name="remarks"></a>설명
 
@@ -86,7 +87,7 @@ C + +에서는 오버 로드를 허용 하므로 또는 매개 변수를 사용 
 
 |루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
-|**modf**, **modf**, **modf**|C\<math.h><br /><br /> C + +: \<cmath> 또는\<math.h>|
+|**modf**, **modf**, **modf**|C \<math.h><br /><br /> C + +: \<cmath> 또는 \<math.h>|
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
