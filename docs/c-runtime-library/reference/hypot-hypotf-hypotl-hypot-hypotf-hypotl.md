@@ -1,6 +1,7 @@
 ---
 title: hypot, hypotf, hypotl, _hypot, _hypotf, _hypotl
-ms.date: 4/2/2020
+description: Hypot, hypotf, hypotl, _hypot, _hypotf 및 _hypotl에 대 한 API 참조 빗변을 계산 합니다.
+ms.date: 9/1/2020
 api_name:
 - _hypotf
 - hypot
@@ -44,12 +45,12 @@ helpviewer_keywords:
 - calculating hypotenuses
 - _hypot function
 ms.assetid: 6a13887f-bd53-43fc-9d77-5b42d6e49925
-ms.openlocfilehash: 16db920d6e7d3836eb4a395b2029e2f9329f2681
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 199e330dcd78c372a0279cac9f0e96cb47c561e8
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919837"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556452"
 ---
 # <a name="hypot-hypotf-hypotl-_hypot-_hypotf-_hypotl"></a>hypot, hypotf, hypotl, _hypot, _hypotf, _hypotl
 
@@ -82,14 +83,15 @@ long double _hypotl(
    long double x,
    long double y
 );
+#define hypotf(X, Y) // Requires C11 or higher
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*x*, *y*<br/>
+*x*, *y*\
 부동 소수점 값입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 성공 하면 **hypot** 는 빗변의 길이를 반환 합니다. 오버플로 시 **hypot** 는 INF (infinity)를 반환 하 고 **Errno** 변수는 **ERANGE**로 설정 됩니다. **_Matherr** 를 사용 하 여 오류 처리를 수정할 수 있습니다.
 
@@ -97,9 +99,11 @@ long double _hypotl(
 
 ## <a name="remarks"></a>설명
 
-**Hypot** 함수는 두 변의 *x* 및 *y* (즉, *x*<sup>2</sup> + *y*<sup>2</sup>의 제곱근)를 고려 하 여 직각 삼각형의 빗변 길이를 계산 합니다.
+**Hypot** 함수는 두 변의 *x* 및 *y* (즉, *x*<sup>2</sup>  +  *y*<sup>2</sup>의 제곱근)를 고려 하 여 직각 삼각형의 빗변 길이를 계산 합니다.
 
 이전 표준과의 호환성을 위해 선행 밑줄이 있는 함수 버전이 제공됩니다. 해당 동작은 선행 밑줄이 없는 버전과 동일합니다. 새 코드에는 선행 밑줄이 없는 버전을 사용하는 것이 좋습니다.
+
+매크로를 사용 하는 경우 \<tgmath.h> `hypot()` 인수의 형식에 따라 선택 되는 함수 버전이 결정 됩니다. 자세한 내용은 [형식-제네릭](../../c-runtime-library/tgmath.md) 계산을 참조 하세요.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -108,6 +112,7 @@ long double _hypotl(
 |루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**hypot**, **hypotf**, **hypotl**, **_hypot**, **_hypotf**, **_hypotl**|\<math.h>|
+|**hypot** 매크로 | \<tgmath.h> |
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
@@ -133,7 +138,7 @@ int main( void )
 If a right triangle has sides 3.0 and 4.0, its hypotenuse is 5.0
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [부동 소수점 지원](../../c-runtime-library/floating-point-support.md)<br/>
 [_cabs](cabs.md)<br/>

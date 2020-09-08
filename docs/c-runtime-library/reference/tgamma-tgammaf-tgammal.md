@@ -1,6 +1,7 @@
 ---
 title: tgamma, tgammaf, tgammal
-ms.date: 4/2/2020
+description: Tgamma, tgammaf 및 tgammal에 대 한 API 참조 지정 된 값의 감마 함수를 결정 하는입니다.
+ms.date: 9/1/2020
 api_name:
 - tgamma
 - tgammaf
@@ -37,12 +38,12 @@ helpviewer_keywords:
 - tgammaf function
 - tgammal function
 ms.assetid: f1bd2681-8af2-48a9-919d-5358fd068acd
-ms.openlocfilehash: f38ae3f3ad38eeb9806803fd8dad1b8297393168
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b49020ca0697e920dccf188df4ad024820966571
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218522"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555178"
 ---
 # <a name="tgamma-tgammaf-tgammal"></a>tgamma, tgammaf, tgammal
 
@@ -55,14 +56,6 @@ double tgamma(
    double x
 );
 
-float tgamma(
-   float x
-); //C++ only
-
-long double tgamma(
-   long double x
-); //C++ only
-
 float tgammaf(
    float x
 );
@@ -70,14 +63,24 @@ float tgammaf(
 long double tgammal(
    long double x
 );
+
+#define tgamma(X) // Requires C11 or higher
+
+float tgamma(
+   float x
+); //C++ only
+
+long double tgamma(
+   long double x
+); //C++ only
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*x*<br/>
+*.x*\
 감마를 찾을 값입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 성공 하면 *x*의 감마를 반환 합니다.
 
@@ -99,7 +102,9 @@ long double tgammal(
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드를 허용 하므로 및 형식을 사용 하 고 반환 하는 **tgamma** 의 오버 로드를 호출할 수 있습니다 **`float`** **`long double`** . C 프로그램에서 **tgamma** 는 항상를 사용 하 고 반환 **`double`** 합니다.
+C + +에서는 오버 로드를 허용 하므로 및 형식을 사용 하 고 반환 하는 **tgamma** 의 오버 로드를 호출할 수 있습니다 **`float`** **`long double`** . C 프로그램에서 매크로를 사용 하 여이 함수를 호출 하지 않는 경우 \<tgmath.h> **tgamma** 는 항상를 사용 하 고 반환 **`double`** 합니다.
+
+매크로를 사용 하는 경우 \<tgmath.h> `tgamma()` 인수의 형식에 따라 선택 되는 함수 버전이 결정 됩니다. 자세한 내용은 [형식-제네릭](../../c-runtime-library/tgmath.md) 계산을 참조 하세요.
 
 X가 자연수인 경우 이 함수는 (x-1)의 계승을 반환합니다.
 
@@ -107,9 +112,10 @@ X가 자연수인 경우 이 함수는 (x-1)의 계승을 반환합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|C 헤더|C++ 헤더|
+|기능|C 헤더|C++ 헤더|
 |--------------|--------------|------------------|
-|**tgamma**, **tgammaf**, **tgammal**|\<math.h>|\<cmath>|
+|**tgamma**, **tgammaf**,  **tgammal**|\<math.h>|\<cmath>|
+|**tgamma** 매크로 | \<tgmath.h> ||
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 

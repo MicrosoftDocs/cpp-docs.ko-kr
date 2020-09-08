@@ -1,5 +1,6 @@
 ---
 title: _umask
+description: _Umask에 대 한 API 참조 기본 파일 사용 권한 마스크를 설정 합니다.
 ms.date: 4/2/2020
 api_name:
 - _umask
@@ -31,16 +32,16 @@ helpviewer_keywords:
 - file permissions [C++]
 - files [C++], permission settings for
 ms.assetid: 5e9a13ba-5321-4536-8721-6afb6f4c8483
-ms.openlocfilehash: 84735374a936e47691df82247f0202ecfcd86d9d
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 3735ecd7ba194009945d3717982d7828ecee3c1e
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913840"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89554931"
 ---
 # <a name="_umask"></a>_umask
 
-기본 파일 사용 권한 마스크를 설정합니다. 이 함수의 더 안전한 버전을 사용할 수 있습니다. [_umask_s](umask-s.md)를 참조하세요.
+기본 파일 사용 권한 마스크를 설정합니다. 이 함수의 더 안전한 버전은 [_umask_s](umask-s.md) 를 참조 하세요. "
 
 ## <a name="syntax"></a>구문
 
@@ -53,9 +54,9 @@ int _umask( int pmode );
 *pmode*<br/>
 기본 사용 권한 설정입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-**_umask** 은 *pmode*의 이전 값을 반환 합니다. 반환되는 오류가 없습니다.
+**_umask** 은 *pmode*의 이전 값을 반환 합니다. 오류가 반환 되지 않습니다.
 
 ## <a name="remarks"></a>설명
 
@@ -116,10 +117,10 @@ int main( void )
 Oldmask = 0x0000
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [파일 처리](../../c-runtime-library/file-handling.md)<br/>
-[하위 수준 I/O](../../c-runtime-library/low-level-i-o.md)<br/>
+[하위 수준 i/o](../../c-runtime-library/low-level-i-o.md)<br/>
 [_chmod, _wchmod](chmod-wchmod.md)<br/>
 [_creat, _wcreat](creat-wcreat.md)<br/>
 [_mkdir, _wmkdir](mkdir-wmkdir.md)<br/>

@@ -1,5 +1,6 @@
 ---
 title: _flushall
+description: _Flushall에 대 한 API 참조 모든 스트림을 플러시하고 모든 버퍼를 지웁니다.
 ms.date: 4/2/2020
 api_name:
 - _flushall
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - streams, flushing
 - _flushall function
 ms.assetid: 2cd73562-6d00-4ca2-b13c-80d0ae7870b5
-ms.openlocfilehash: 1a53eeedd5dfa0f9c01fa5883a9db33e26e3ea17
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: c93dddea50c182b86bd4d09ae9f214e87491e830
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911620"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556725"
 ---
 # <a name="_flushall"></a>_flushall
 
@@ -48,7 +49,7 @@ int _flushall( void );
 
 ## <a name="return-value"></a>Return Value
 
-**_flushall** 은 열려 있는 스트림 (입력 및 출력)의 수를 반환 합니다. 반환되는 오류가 없습니다.
+**_flushall** 은 열려 있는 스트림 (입력 및 출력)의 수를 반환 합니다. 오류가 반환 되지 않습니다.
 
 ## <a name="remarks"></a>설명
 
@@ -92,7 +93,7 @@ int main( void )
 There were 3 streams flushed
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [스트림 I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [_commit](commit.md)<br/>

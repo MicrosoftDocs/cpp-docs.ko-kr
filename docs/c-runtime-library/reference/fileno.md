@@ -1,5 +1,6 @@
 ---
 title: _fileno
+description: _Fileno에 대 한 API 참조 는 스트림과 연결 된 파일 설명자를 가져옵니다.
 ms.date: 4/2/2020
 api_name:
 - _fileno
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - _fileno function
 - streams, getting file handles
 ms.assetid: 86474174-2f17-4100-bcc4-352dd976c7b5
-ms.openlocfilehash: 0ac0a8d2cf4185dab0aa3d335c16cf89da58c7a6
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: c07f446cc3c5c29fb102a74b2b095957589eab46
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919470"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89554853"
 ---
 # <a name="_fileno"></a>_fileno
 
@@ -53,9 +54,9 @@ int _fileno(
 *스트림*<br/>
 **FILE** 구조체에 대한 포인터입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-**_fileno** 는 파일 설명자를 반환 합니다. 반환되는 오류가 없습니다. *스트림이* 열려 있는 파일을 지정 하지 않으면 결과가 정의 되지 않습니다. Stream이 **NULL**인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 **_fileno** 합니다. 계속해서 실행하도록 허용된 경우 이 함수는 -1을 반환하고 **errno**를 **EINVAL**로 설정합니다.
+**_fileno** 는 파일 설명자를 반환 합니다. 오류가 반환 되지 않습니다. *스트림이* 열려 있는 파일을 지정 하지 않으면 결과가 정의 되지 않습니다. Stream이 **NULL**인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 **_fileno** 합니다. 계속해서 실행하도록 허용된 경우 이 함수는 -1을 반환하고 **errno**를 **EINVAL**로 설정합니다.
 
 이 오류 및 다른 오류 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
@@ -100,7 +101,7 @@ The file descriptor for stdout is 1
 The file descriptor for stderr is 2
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [스트림 I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [_fdopen, _wfdopen](fdopen-wfdopen.md)<br/>

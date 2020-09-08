@@ -1,5 +1,6 @@
 ---
 title: _itoa, _itow 함수
+description: _Itoa 및 _itow에 대 한 API 참조 정수를 문자열로 변환 합니다.
 ms.date: 4/2/2020
 api_name:
 - itoa
@@ -113,16 +114,16 @@ helpviewer_keywords:
 - converting numbers, to strings
 - _itoa function
 ms.assetid: 46592a00-77bb-4e73-98c0-bf629d96cea6
-ms.openlocfilehash: 7fd776c860e8f3ba071d7fad10c99dfb7b3bf2d7
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: c8d64dcc1efdb9371feb98d8674a7a2c41c7ab3a
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843497"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555465"
 ---
 # <a name="itoa-_itoa-ltoa-_ltoa-ultoa-_ultoa-_i64toa-_ui64toa-_itow-_ltow-_ultow-_i64tow-_ui64tow"></a>itoa, _itoa, ltoa, _ltoa, ultoa, _ultoa, _i64toa, _ui64toa, _itow, _ltow, _ultow, _i64tow, _ui64tow
 
-정수를 문자열로 변환합니다. 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [_itoa_s, _itow_s 함수를](itoa-s-itow-s.md)참조 하세요.
+정수를 문자열로 변환합니다. 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [_itoa_s _itow_s 함수](itoa-s-itow-s.md)를 참조 하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -193,7 +194,7 @@ wchar_t * _ui64tow( unsigned long long value, wchar_t (&buffer)[size],
 
 ## <a name="return-value"></a>반환 값
 
-이러한 각 함수는 *버퍼*에 대 한 포인터를 반환 합니다. 반환되는 오류가 없습니다.
+이러한 각 함수는 *버퍼*에 대 한 포인터를 반환 합니다. 오류가 반환 되지 않습니다.
 
 ## <a name="remarks"></a>설명
 

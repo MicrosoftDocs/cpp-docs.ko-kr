@@ -1,6 +1,7 @@
 ---
 title: _InterlockedDecrement 내장 함수
-ms.date: 09/02/2019
+description: 연동 감소를 위한 Microsoft C/c + + 컴파일러 내장 함수입니다.
+ms.date: 09/03/2020
 f1_keywords:
 - _InterlockedDecrement16_rel_cpp
 - _InterlockedDecrement16_acq_cpp
@@ -44,64 +45,62 @@ helpviewer_keywords:
 - _InterlockedDecrement64_nf intrinsic
 - InterlockedDecrement_rel intrinsic
 ms.assetid: 5268fce3-86b5-4b2b-b96c-2e531a3fb9b5
-ms.openlocfilehash: f6b256ff1551eea4d0b362e78c9780fce29a8513
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: b3ca624ba54f70750ecc303fb44f4fa242b4edc2
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74857920"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556336"
 ---
-# <a name="_interlockeddecrement-intrinsic-functions"></a>_InterlockedDecrement 내장 함수
+# <a name="_interlockeddecrement-intrinsic-functions"></a>`_InterlockedDecrement` 내장 함수
 
-**Microsoft 전용**
-
-Win32 Windows SDK [InterlockedDecrement](/windows/win32/api/winnt/nf-winnt-interlockeddecrement) 함수에 대 한 컴파일러 내장 함수 지원을 제공 합니다.
+Win32 Windows SDK [InterlockedDecrement](/windows/win32/api/winnt/nf-winnt-interlockeddecrement) 함수에 대 한 컴파일러 내장 함수 지원을 제공 합니다. `_InterlockedDecrement`내장 함수는 **Microsoft**전용입니다.
 
 ## <a name="syntax"></a>구문
 
 ```C
 long _InterlockedDecrement(
-   long * lpAddend
+   long volatile * lpAddend
 );
 long _InterlockedDecrement_acq(
-   long * lpAddend
+   long volatile * lpAddend
 );
 long _InterlockedDecrement_rel(
-   long * lpAddend
+   long volatile * lpAddend
 );
 long _InterlockedDecrement_nf(
-   long * lpAddend
+   long volatile * lpAddend
 );
 short _InterlockedDecrement16(
-   short * lpAddend
+   short volatile * lpAddend
 );
 short _InterlockedDecrement16_acq(
-   short * lpAddend
+   short volatile * lpAddend
 );
 short _InterlockedDecrement16_rel(
-   short * lpAddend
+   short volatile * lpAddend
 );
 short _InterlockedDecrement16_nf(
-   short * lpAddend
+   short volatile * lpAddend
 );
 __int64 _InterlockedDecrement64(
-   __int64 * lpAddend
+   __int64 volatile * lpAddend
 );
 __int64 _InterlockedDecrement64_acq(
-   __int64 * lpAddend
+   __int64 volatile * lpAddend
 );
 __int64 _InterlockedDecrement64_rel(
-   __int64 * lpAddend
+   __int64 volatile * lpAddend
 );
 __int64 _InterlockedDecrement64_nf(
-   __int64 * lpAddend
+   __int64 volatile * lpAddend
 );
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*Lpaddend*\
-[in, out] 감소 시킬 변수에 대 한 포인터입니다.
+*lpAddend*\
+[in, out] 감소 시킬 변수에 대 한 휘발성 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -109,21 +108,21 @@ __int64 _InterlockedDecrement64_nf(
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`_InterlockedDecrement`, `_InterlockedDecrement16`|x86, ARM, x64, ARM64|
 |`_InterlockedDecrement64`|ARM, x64, ARM64|
 |`_InterlockedDecrement_acq`, `_InterlockedDecrement_rel`, `_InterlockedDecrement_nf`, `_InterlockedDecrement16_acq`, `_InterlockedDecrement16_rel`, `_InterlockedDecrement16_nf`, `_InterlockedDecrement64_acq`, `_InterlockedDecrement64_rel`, `_InterlockedDecrement64_nf`,|ARM, ARM64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 사용되는 데이터 형식과 프로세서별 획득 또는 해제 의미 체계에 따라 다른 `_InterlockedDecrement`의 여러 변형이 있습니다.
 
 `_InterlockedDecrement` 함수는 32비트 정수 값에 대해 작동하는 반면 `_InterlockedDecrement16`은 16비트 정수 값에 대해, `_InterlockedDecrement64`는 64비트 정수 값에 대해 작동합니다.
 
-ARM 플랫폼에서는 임계 영역의 시작 및 끝과 같은 위치에서 의미 체계를 획득하고 해제하려면 `_acq` 및 `_rel` 접미사가 포함된 내장 함수를 사용합니다. `_nf` ("no fence") 접미사가 포함 된 내장 함수는 메모리 장벽으로 작동 하지 않습니다.
+ARM 플랫폼에서는 임계 영역의 시작 및 끝과 같은 위치에서 의미 체계를 획득하고 해제하려면 `_acq` 및 `_rel` 접미사가 포함된 내장 함수를 사용합니다. `_nf`("No fence") 접미사가 포함 된 내장 함수는 메모리 장벽으로 작동 하지 않습니다.
 
 `lpAddend` 매개 변수가 가리키는 변수는 32비트 경계에 정렬되어야 합니다. 그렇지 않으면 다중 프로세서 x86 시스템과 x86이 아닌 시스템에서 이 함수가 실패합니다. 자세한 내용은 [align](../cpp/align-cpp.md)을 참조 하십시오.
 
@@ -197,10 +196,8 @@ void __cdecl SimpleThread(void* pParam) {
 }
 ```
 
-**Microsoft 전용 종료**
-
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)\
-[키워드](../cpp/keywords-cpp.md)\
-[x86 컴파일러와 충돌](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)
+[어](../cpp/keywords-cpp.md)\
+[X86 컴파일러와 충돌](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

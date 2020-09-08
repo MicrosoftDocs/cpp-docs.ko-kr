@@ -1,6 +1,7 @@
 ---
 title: fmin, fminf, fminl
-ms.date: 04/05/2018
+description: Fmin, fminf 및 fminl에 대 한 API 참조 두 값 중 더 작은 값을 결정 합니다.
+ms.date: 9/1/2020
 api_name:
 - fmin
 - fminf
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - fminf function
 - fminl function
 ms.assetid: 1916dfb5-99c1-4b0d-aefb-513525c3f2ac
-ms.openlocfilehash: d6cd16c298c3f4bedb8064d66efd2d4bbe20c22b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6a070835d809c6adcb5b7bfd57b5373886b348ca
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216988"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556712"
 ---
 # <a name="fmin-fminf-fminl"></a>fmin, fminf, fminl
 
@@ -71,23 +72,25 @@ long double fminl(
    long double x,
    long double y
 );
+
+#define fmin(x) // Requires C11 or higher
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*x*<br/>
+*.x*\
 비교할 첫 번째 값입니다.
 
-*x.y*<br/>
+*x.y*\
 비교할 두 번째 값입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 성공 하면 *x* 또는 *y*중 더 작은 값을 반환 합니다.
 
 |입력|결과|
 |-----------|------------|
-|*x* 는 NaN입니다.|*x.y*|
+|*x* 는 NaN입니다.|*y*|
 |*y* 는 NaN입니다.|*x*|
 |*x* 및 *y* 는 NaN입니다.|NaN|
 
@@ -95,13 +98,16 @@ long double fminl(
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드를 허용 하므로 및 형식을 사용 하 고 반환 하는 **fmin** 의 오버 로드를 호출할 수 있습니다 **`float`** **`long double`** . C 프로그램에서 **fmin** 은 항상를 사용 하 고 반환 **`double`** 합니다.
+C + +에서는 오버 로드를 허용 하므로 및 형식을 사용 하 고 반환 하는 **fmin** 의 오버 로드를 호출할 수 있습니다 **`float`** **`long double`** . C 프로그램에서 매크로를 사용 하 여이 함수를 호출 하지 않는 한 \<tgmath.h> **fmin** 은 항상를 사용 하 고 반환 **`double`** 합니다.
+
+매크로를 사용 하는 경우 \<tgmath.h> `fmin()` 인수의 형식에 따라 선택 되는 함수 버전이 결정 됩니다. 자세한 내용은 [형식-제네릭](../../c-runtime-library/tgmath.md) 계산을 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 
 |루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
-|**fmin**, **fminf**, **fminl**|C\<math.h><br />C + +: \<math.h> 또는\<cmath>|
+|**fmin**, **fminf**, **fminl**|C \<math.h><br />C + +: \<math.h> 또는 \<cmath>|
+|**fmin** 매크로 | \<tgmath.h> ||
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 

@@ -1,5 +1,6 @@
 ---
 title: _getche_nolock, _getwche_nolock
+description: _Getche_nolock 및 _getwche_nolock에 대 한 API 참조 콘솔에서 문자를 가져오고, 에코를 사용 하거나, 스레드를 잠그지 않고 사용 합니다.
 ms.date: 4/2/2020
 api_name:
 - _getche_nolock
@@ -40,12 +41,12 @@ helpviewer_keywords:
 - _getwche_nolock function
 - gettche_nolock function
 ms.assetid: 9e853ad4-4d8a-4442-9ae5-da4b434f0b8c
-ms.openlocfilehash: 901c823d2e6539d7c07e3521c5d372b7816eb9b8
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: faee0ea1e104367a113b5462cb8aa7541646976d
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910767"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556066"
 ---
 # <a name="_getche_nolock-_getwche_nolock"></a>_getche_nolock, _getwche_nolock
 
@@ -63,7 +64,7 @@ wint_t _getwche_nolock( void );
 
 ## <a name="return-value"></a>Return Value
 
-읽은 문자를 반환합니다. 반환되는 오류가 없습니다.
+읽은 문자를 반환합니다. 오류가 반환 되지 않습니다.
 
 ## <a name="remarks"></a>설명
 
@@ -122,9 +123,9 @@ abcdefy
 Type 'Y' when finished typing keys: abcdefyY
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[콘솔 및 포트 I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
+[콘솔 및 포트 i/o](../../c-runtime-library/console-and-port-i-o.md)<br/>
 [_cgets, _cgetws](../../c-runtime-library/cgets-cgetws.md)<br/>
 [getc, getwc](getc-getwc.md)<br/>
 [_ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock](ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)<br/>

@@ -1,6 +1,7 @@
 ---
 title: _InterlockedIncrement 내장 함수
-ms.date: 09/02/2019
+description: 연동 증분에 대 한 Microsoft C/c + + 컴파일러 내장 함수입니다.
+ms.date: 09/03/2020
 f1_keywords:
 - _InterlockedIncrement_acq
 - _InterlockedIncrement16_rel_cpp
@@ -44,57 +45,55 @@ helpviewer_keywords:
 - _InterlockedIncrement_acq intrinsic
 - InterlockedIncrement intrinsic
 ms.assetid: 37700615-f372-438b-bcef-d76e11839482
-ms.openlocfilehash: 4dd9ae9ba5454b0afefa332689d94fa3619a07a6
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 2148ae31f3eb03e398372db3bf15fc64e4857dd1
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70221991"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556323"
 ---
-# <a name="_interlockedincrement-intrinsic-functions"></a>_InterlockedIncrement 내장 함수
+# <a name="_interlockedincrement-intrinsic-functions"></a>`_InterlockedIncrement` 내장 함수
 
-**Microsoft 전용**
-
-Win32 Windows SDK [InterlockedIncrement](/windows/win32/api/winnt/nf-winnt-interlockedincrement) 함수에 대 한 컴파일러 내장 함수 지원을 제공 합니다.
+Win32 Windows SDK [InterlockedIncrement](/windows/win32/api/winnt/nf-winnt-interlockedincrement) 함수에 대 한 컴파일러 내장 함수 지원을 제공 합니다. `_InterlockedIncrement`내장 함수는 **Microsoft**전용입니다.
 
 ## <a name="syntax"></a>구문
 
 ```C
 long _InterlockedIncrement(
-   long * lpAddend
+   long volatile * lpAddend
 );
 long _InterlockedIncrement_acq(
-   long * lpAddend
+   long volatile * lpAddend
 );
 long _InterlockedIncrement_rel(
-   long * lpAddend
+   long volatile * lpAddend
 );
 long _InterlockedIncrement_nf(
-   long * lpAddend
+   long volatile * lpAddend
 );
 short _InterlockedIncrement16(
-   short * lpAddend
+   short volatile * lpAddend
 );
 short _InterlockedIncrement16_acq(
-   short * lpAddend
+   short volatile * lpAddend
 );
 short _InterlockedIncrement16_rel(
-   short * lpAddend
+   short volatile * lpAddend
 );
 short _InterlockedIncrement16_nf (
-   short * lpAddend
+   short volatile * lpAddend
 );
 __int64 _InterlockedIncrement64(
-   __int64 * lpAddend
+   __int64 volatile * lpAddend
 );
 __int64 _InterlockedIncrement64_acq(
-   __int64 * lpAddend
+   __int64 volatile * lpAddend
 );
 __int64 _InterlockedIncrement64_rel(
-   __int64 * lpAddend
+   __int64 volatile * lpAddend
 );
 __int64 _InterlockedIncrement64_nf(
-   __int64 * lpAddend
+   __int64 volatile * lpAddend
 );
 ```
 
@@ -109,7 +108,7 @@ __int64 _InterlockedIncrement64_nf(
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|헤더|
+|Intrinsic|Architecture|헤더|
 |---------------|------------------|------------|
 |`_InterlockedIncrement`, `_InterlockedIncrement16`|x86, ARM, x64, ARM64|\<intrin.h>|
 |`_InterlockedIncrement64`|ARM, x64, ARM64|\<intrin.h>|
@@ -121,7 +120,7 @@ __int64 _InterlockedIncrement64_nf(
 
 `_InterlockedIncrement` 함수는 32비트 정수 값에 대해 작동하는 반면 `_InterlockedIncrement16`은 16비트 정수 값에 대해, `_InterlockedIncrement64`는 64비트 정수 값에 대해 작동합니다.
 
-ARM 플랫폼에서는 임계 영역의 시작 및 끝과 같은 위치에서 의미 체계를 획득하고 해제하려면 `_acq` 및 `_rel` 접미사가 포함된 내장 함수를 사용합니다. `_nf` ("No fence") 접미사가 포함 된 내장 함수는 메모리 장벽으로 작동 하지 않습니다.
+ARM 플랫폼에서는 임계 영역의 시작 및 끝과 같은 위치에서 의미 체계를 획득하고 해제하려면 `_acq` 및 `_rel` 접미사가 포함된 내장 함수를 사용합니다. `_nf`("No fence") 접미사가 포함 된 내장 함수는 메모리 장벽으로 작동 하지 않습니다.
 
 `lpAddend` 매개 변수가 가리키는 변수는 32비트 경계에 정렬되어야 합니다. 그렇지 않으면 다중 프로세서 x86 시스템과 x86이 아닌 시스템에서 이 함수가 실패합니다. 자세한 내용은 [align](../cpp/align-cpp.md)을 참조 하십시오.
 
@@ -131,12 +130,10 @@ Win32 함수는 `Wdm.h` 또는 `Ntddk.h`에서 선언됩니다.
 
 ## <a name="example"></a>예제
 
-를 사용 `_InterlockedIncrement`하는 방법에 대 한 샘플은 [_InterlockedDecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md)를 참조 하세요.
+를 사용 하는 방법에 대 한 샘플은 `_InterlockedIncrement` [_InterlockedDecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md)를 참조 하세요.
 
-**Microsoft 전용 종료**
-
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)\
-[키워드](../cpp/keywords-cpp.md)\
-[x86 컴파일러와 충돌](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)
+[어](../cpp/keywords-cpp.md)\
+[X86 컴파일러와 충돌](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

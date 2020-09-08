@@ -1,6 +1,7 @@
 ---
 title: cimag, cimagf, cimagl
-ms.date: 11/04/2016
+description: Cimag, cimagf 및 cimagf;에 대 한 API 참조 복소수의 허수 부분을 검색 합니다.
+ms.date: 9/2/2020
 api_name:
 - cimag
 - cimagf
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - cimagf function
 - cimagl function
 ms.assetid: 0d8836f5-d61d-44cd-8731-6f75cb776def
-ms.openlocfilehash: af7d15ee1b5dfd863025565bf8827199f7492841
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 41631a161a47e247b12a39e312a3f40084c8f22f
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232549"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555842"
 ---
 # <a name="cimag-cimagf-cimagl"></a>cimag, cimagf, cimagl
 
@@ -50,31 +51,33 @@ ms.locfileid: "87232549"
 double cimag( _Dcomplex z );
 float cimagf( _Fcomplex z );
 long double cimagl( _Lcomplex z );
-```
+#define cimag(X) // Requires C11 or higher
 
-```cpp
-float cimag( _Fcomplex z );  // C++
-long double cimag( _Lcomplex z );  // C++
+float cimag( _Fcomplex z );  // C++ only
+long double cimag( _Lcomplex z );  // C++ only
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*-*<br/>
+*-*\
 복소수입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 *Z*의 허수 부분입니다.
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드를 허용 하므로 **_Fcomplex** 또는 **_Lcomplex** 값을 사용 하는 **cimag** 의 오버 로드를 호출 하 고 또는 값을 반환할 수 있습니다 **`float`** **`long double`** . C 프로그램에서 **cimag** 는 항상 **_Dcomplex** 값을 사용 하 고 값을 반환 **`double`** 합니다.
+C + +에서는 오버 로드를 허용 하므로 **_Fcomplex** 또는 **_Lcomplex** 값을 사용 하는 **cimag** 의 오버 로드를 호출 하 고 또는 값을 반환할 수 있습니다 **`float`** **`long double`** . C 프로그램에서 매크로를 사용 하 여이 함수를 호출 하지 않는 한 \<tgmath.h> **cimag** 는 항상 **_Dcomplex** 값을 사용 하 고 값을 반환 **`double`** 합니다.
+
+매크로를 사용 하는 경우 \<tgmath.h> `cimag()` 인수의 형식에 따라 선택 되는 함수 버전이 결정 됩니다. 자세한 내용은 [형식-제네릭](../../c-runtime-library/tgmath.md) 계산을 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 
 |루틴에서 반환된 값|C 헤더|C++ 헤더|
 |-------------|--------------|------------------|
 |**cimag**, **cimagf**, **cimagf**|\<complex.h>|\<ccomplex>|
+|**cimag** 매크로 | \<tgmath.h> ||
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 

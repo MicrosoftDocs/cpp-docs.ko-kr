@@ -1,6 +1,7 @@
 ---
 title: log1p, log1pf, log1pl2
-ms.date: 4/2/2020
+description: Log1p, log1pf, log1pl2에 대 한 API 참조 1의 자연 로그와 지정 된 값을 계산 하는입니다.
+ms.date: 9/1/2020
 api_name:
 - log1p
 - log1pf
@@ -37,12 +38,12 @@ helpviewer_keywords:
 - log1pf function
 - log1pl function
 ms.assetid: a40d965d-b4f6-42f4-ba27-2395546f7c12
-ms.openlocfilehash: d599567e38d216e78720a3d6b330310095acdd11
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8858d761428d4dad6e3fe836b82041ae92f1827a
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218587"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556232"
 ---
 # <a name="log1p-log1pf-log1pl"></a>log1p, log1pf, log1pl
 
@@ -54,6 +55,14 @@ ms.locfileid: "87218587"
 double log1p(
    double x
 );
+float log1pf(
+   float x
+);
+long double log1pl(
+   long double x
+);
+
+#define log1p(X) // Requires C11 or higher
 
 float log1p(
    float x
@@ -62,22 +71,14 @@ float log1p(
 long double log1p(
    long double x
 ); //C++ only
-
-float log1pf(
-   float x
-);
-
-long double log1pl(
-   long double x
-);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*x*<br/>
+*.x*\
 부동 소수점 인수입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 성공 하면 (*x* + 1)의 자연 (밑수-*e*) 로그를 반환 합니다.
 
@@ -100,7 +101,9 @@ long double log1pl(
 
 X가 0에 가까워지면 **log1p** 함수는를 사용 하는 것 보다 더 정확 하 게 사용할 수 있습니다 `log(x + 1)` . *x*
 
-C + +에서는 오버 로드를 허용 하므로 및 형식을 사용 하 고 반환 하는 **log1p** 의 오버 로드를 호출할 수 있습니다 **`float`** **`long double`** . C 프로그램에서 **log1p** 는 항상를 사용 하 고 반환 **`double`** 합니다.
+C + +에서는 오버 로드를 허용 하므로 및 형식을 사용 하 고 반환 하는 **log1p** 의 오버 로드를 호출할 수 있습니다 **`float`** **`long double`** . C 프로그램에서 매크로를 사용 하 여이 함수를 호출 하지 않는 한 \<tgmath.h> **log1p** 는 항상를 사용 하 고 반환 **`double`** 합니다.
+
+매크로를 사용 하는 경우 \<tgmath.h> `log1p()` 인수의 형식에 따라 선택 되는 함수 버전이 결정 됩니다. 자세한 내용은 [형식-제네릭](../../c-runtime-library/tgmath.md) 계산을 참조 하세요.
 
 *X* 가 자연 수 인 경우이 함수는 (*x* -1)의 계승값에 대 한 로그를 반환 합니다.
 
@@ -108,14 +111,15 @@ C + +에서는 오버 로드를 허용 하므로 및 형식을 사용 하 고 �
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|C 헤더|C++ 헤더|
+|기능|C 헤더|C++ 헤더|
 |--------------|--------------|------------------|
 |**log1p**, **log1pf**, **log1pl**|\<math.h>|\<cmath>|
+|**log1p** 매크로 | \<tgmath.h> ||
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
-[사전순 함수 참조](crt-alphabetical-function-reference.md)<br/>
-[log2, log2f, log2l](log2-log2f-log2l.md)<br/>
-[log, logf, log10, log10f](log-logf-log10-log10f.md)<br/>
+[사전순 함수 참조](crt-alphabetical-function-reference.md)\
+[log2, log2f, log2l](log2-log2f-log2l.md)\
+[log, logf, log10, log10f](log-logf-log10-log10f.md)

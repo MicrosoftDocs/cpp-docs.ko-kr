@@ -1,6 +1,7 @@
 ---
 title: exp, expf, expl
-ms.date: 4/2/2020
+description: Exp, ff 및 기타에 대 한 API 참조 지 수를 계산 합니다.
+ms.date: 08/31/2020
 api_name:
 - expf
 - expl
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - calculating exponentials
 - exp function
 ms.assetid: 7070016d-1143-407e-9e9a-6b059bb88867
-ms.openlocfilehash: 9872a83ba3ec5346b7aed5fb51ee837d3ed827aa
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 44652e5d06d842bd2eb2e280409a1e55fc66f582
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234174"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555893"
 ---
 # <a name="exp-expf-expl"></a>exp, expf, expl
 
@@ -64,14 +65,15 @@ float expf(
 long double expl(
    long double x
 );
+#define exp(z) // Requires C11 or higher
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*x*<br/>
+*.x*\
 자연 *로그 밑에 exponentiate 하는* 부동 소수점 값입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 **Exp** 함수는 성공 하면 부동 소수점 매개 변수 *x*의 지 수 값을 반환 합니다. 즉, 결과는 *e*<sup>*x*</sup>입니다. 여기서 *e* 는 자연 로그의 밑입니다. 오버플로 시 함수는 INF (infinity)를 반환 하 고 언더플로에서 **exp** 는 0을 반환 합니다.
 
@@ -86,15 +88,18 @@ long double expl(
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드를 허용 하므로 또는 인수를 사용 하는 **exp** 의 오버 로드를 호출할 수 있습니다 **`float`** **`long double`** . C 프로그램에서 **exp** 는 항상를 사용 하 고 반환 **`double`** 합니다.
+C + +에서는 오버 로드를 허용 하므로 또는 인수를 사용 하는 **exp** 의 오버 로드를 호출할 수 있습니다 **`float`** **`long double`** . C 프로그램에서 매크로를 사용 하 여이 함수를 호출 하지 않는 한 \<tgmath.h> **exp** 는 항상를 사용 하 고 반환 **`double`** 합니다.
+
+매크로를 사용 하는 경우 \<tgmath.h> `exp()` 인수의 형식에 따라 선택 되는 함수 버전이 결정 됩니다. 자세한 내용은 [형식-제네릭](../../c-runtime-library/tgmath.md) 계산을 참조 하세요.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 C 헤더|필수 C++ 헤더|
+|기능|필수 C 헤더|필수 C++ 헤더|
 |--------------|---------------------|---|
 |**exp**, **익** **식**|\<math.h>|\<cmath> 또는 \<math.h>|
+|**exp** 매크로| \<tgmath.h> || 
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 

@@ -1,6 +1,7 @@
 ---
 title: lround, lroundf, lroundl, llround, llroundf, llroundl
-ms.date: 4/2/2020
+description: Lround, lroundf, lroundl, llround, llroundf 및 llroundl에 대 한 API 참조 부동 소수점 값을 가장 가까운 정수로 반올림 합니다.
+ms.date: 9/1/2020
 api_name:
 - llround
 - llroundf
@@ -46,12 +47,12 @@ helpviewer_keywords:
 - llroundf function
 - lroundl function
 ms.assetid: cfb88a35-54c6-469f-85af-f7d695dcfdd8
-ms.openlocfilehash: 0be17ceb579bfc7da7b9f47ac1b6942383eebb91
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c5db62da7cdba58fdc58e8acbfe3aff0e2c386d6
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216897"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555321"
 ---
 # <a name="lround-lroundf-lroundl-llround-llroundf-llroundl"></a>lround, lroundf, lroundl, llround, llroundf, llroundl
 
@@ -90,16 +91,17 @@ long long llroundf(
 long long llroundl(
    long double x
 );
+#define lround(X) // Requires C11 or higher
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*x*<br/>
+*.x*\
 반올림할 부동 소수점 값입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-**Lround** 및 **llround** 함수는 가장 가까운 **`long`** 또는 정수를 **`long long`** *x*로 반환 합니다. 중간값은 부동 소수점 반올림 모드의 설정에 관계없이 0에서 멀어지는 쪽으로 반올림됩니다. 반환되는 오류가 없습니다.
+**Lround** 및 **llround** 함수는 가장 가까운 **`long`** 또는 정수를 **`long long`** *x*로 반환 합니다. 중간값은 부동 소수점 반올림 모드의 설정에 관계없이 0에서 멀어지는 쪽으로 반올림됩니다. 오류가 반환 되지 않습니다.
 
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|
@@ -107,7 +109,9 @@ long long llroundl(
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드를 허용 하므로 및 값을 사용 하 고 반환 하는 **lround** 또는 **llround** 의 오버 로드를 호출할 수 있습니다 **`float`** **`long double`** . C 프로그램에서 **lround** 및 **llround** 는 항상를 사용 하 고 반환 **`double`** 합니다.
+C + +에서는 오버 로드를 허용 하므로 및 값을 사용 하 고 반환 하는 **lround** 또는 **llround** 의 오버 로드를 호출할 수 있습니다 **`float`** **`long double`** . C 프로그램에서 매크로를 사용 하 여이 함수를 호출 하지 않는 한 \<tgmath.h> **lround** 및 **llround** 는 항상를 사용 하 고 반환 **`double`** 합니다.
+
+매크로를 사용 하는 경우 \<tgmath.h> `lround()` 인수의 형식에 따라 선택 되는 함수 버전이 결정 됩니다. 자세한 내용은 [형식-제네릭](../../c-runtime-library/tgmath.md) 계산을 참조 하세요.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -116,6 +120,7 @@ C + +에서는 오버 로드를 허용 하므로 및 값을 사용 하 고 반�
 |루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**lround**, **lroundf**, **lroundl**, **llround**, **llroundf**, **llroundl**|\<math.h>|
+|**lround** 매크로 | \<tgmath.h> ||
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 

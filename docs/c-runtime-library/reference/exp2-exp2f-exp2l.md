@@ -1,6 +1,7 @@
 ---
 title: exp2, exp2f, exp2l
-ms.date: 4/2/2020
+description: Exp2 (), exp2f () 및 exp2l ()에 대 한 API ref는 지정 된 값으로 2를 거듭제곱 합니다.
+ms.date: 9/1/2020
 api_name:
 - exp2
 - exp2f
@@ -37,12 +38,12 @@ helpviewer_keywords:
 - exp2f function
 - exp2l function
 ms.assetid: 526e3e10-201a-4610-a886-533f44ece344
-ms.openlocfilehash: d2eb3f6d27e943110c5e82968d4fee949644601f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 518525a38ef575583fde3b7732561f2fa553dd18
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234161"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556621"
 ---
 # <a name="exp2-exp2f-exp2l"></a>exp2, exp2f, exp2l
 
@@ -70,14 +71,15 @@ float exp2f(
 long double exp2l(
    long double x
 );
+#define exp2(X) // Requires C11 or higher
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*x*<br/>
+*.x*\
 지수 값입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 성공 하면 *x*의 밑이 2 인 지 수를 반환 합니다. 즉, 2<sup>x</sup>입니다. 그렇지 않으면 다음 값 중 하나를 반환 합니다.
 
@@ -94,7 +96,9 @@ long double exp2l(
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드를 허용 하므로 및 형식을 사용 하 고 반환 하는 **exp2** 의 오버 로드를 호출할 수 있습니다 **`float`** **`long double`** . C 프로그램에서 **exp2** 는 항상를 사용 하 고 반환 **`double`** 합니다.
+C + +에서는 오버 로드를 허용 하므로 및 형식을 사용 하 고 반환 하는 **exp2** 의 오버 로드를 호출할 수 있습니다 **`float`** **`long double`** . C 프로그램에서 매크로를 사용 하 여이 함수를 호출 하지 않는 한 \<tgmath.h> **exp2** 는 **`double`** <tgmath>에서 매크로를 사용 하지 않는 한 항상를 사용 하 고 반환 합니다.
+
+매크로를 사용 하는 경우 \<tgmath.h> `exp2()` 인수의 형식에 따라 선택 되는 함수 버전이 결정 됩니다. 자세한 내용은 [형식-제네릭](../../c-runtime-library/tgmath.md) 계산을 참조 하세요.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -102,7 +106,8 @@ C + +에서는 오버 로드를 허용 하므로 및 형식을 사용 하 고 �
 
 |루틴에서 반환된 값|C 헤더|C++ 헤더|
 |-------------|--------------|------------------|
-|**exp**, **익** **식**|\<math.h>|\<cmath>|
+|**exp2**, **expf2**, **expl2**|\<math.h>|\<cmath>|
+|**exp2** 매크로 | \<tgmath.h> ||
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 

@@ -1,6 +1,7 @@
 ---
 title: acos, acosf, acosl
-ms.date: 4/2/2020
+description: ', 및에 대 한 API 참조 `acos` 로, `acosf` `acosl` 부동 소수점 값의 아크코사인을 계산 합니다.'
+ms.date: 08/31/2020
 api_name:
 - acosf
 - acos
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - trigonometric functions
 - arccosine function
 ms.assetid: 00b89c48-8faf-4824-aa95-fa4349a4975d
-ms.openlocfilehash: b6188c585d2f3b7f2bce1a50569e6bae60ee4942
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: eeee51cea2a81882ee1ed8b014312ee9f9095dc6
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220771"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555100"
 ---
 # <a name="acos-acosf-acosl"></a>acos, acosf, acosl
 
@@ -53,19 +54,18 @@ ms.locfileid: "87220771"
 double acos( double x );
 float acosf( float x );
 long double acosl( long double x );
-```
+#define acos(X) // Requires C11 or higher
 
-```cpp
 float acos( float x );   // C++ only
 long double acos( long double x );   // C++ only
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*x*<br/>
+*.x*\
 아크코사인 (역 코사인)을 계산 하는-1과 1 사이의 값입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 **Acos** 함수는 0 ~ π 라디안 범위의 *x* 아크코사인을 반환 합니다.
 
@@ -79,7 +79,9 @@ long double acos( long double x );   // C++ only
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드를 허용 하므로 및 형식을 사용 하 고 반환 하는 **acos** 의 오버 로드를 호출할 수 있습니다 **`float`** **`long double`** . C 프로그램에서 **acos** 는 항상를 사용 하 고 반환 **`double`** 합니다.
+C + +에서는 오버 로드를 허용 하므로 및 형식을 사용 하 고 반환 하는 **acos** 의 오버 로드를 호출할 수 있습니다 **`float`** **`long double`** . C 프로그램에서 매크로를 사용 하 여이 함수를 호출 하지 않는 한 \<tgmath.h> **acos** 는 항상를 사용 하 고 반환 **`double`** 합니다.
+
+매크로를 사용 하는 경우 \<tgmath.h> `acos()` 인수의 형식에 따라 선택 되는 함수 버전이 결정 됩니다. 자세한 내용은 [형식-제네릭](../../c-runtime-library/tgmath.md) 계산을 참조 하세요.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -88,6 +90,7 @@ C + +에서는 오버 로드를 허용 하므로 및 형식을 사용 하 고 �
 |루틴에서 반환된 값|필수 헤더|선택적 헤더|
 |-------------|---------------------|----------------------|
 |**acos**, **acosf**, **acosf**|\<math.h>|\<errno.h>|
+|**acos ()** 매크로 | \<tgmath.h> ||
 
 ## <a name="example"></a>예제
 

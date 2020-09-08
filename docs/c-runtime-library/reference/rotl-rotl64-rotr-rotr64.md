@@ -1,5 +1,6 @@
 ---
 title: _rotl, _rotl64, _rotr, _rotr64
+description: _Rotl, _rotl64, _rotr 및 _rotr64에 대 한 API 참조 비트를 왼쪽 (_rotl) 또는 오른쪽 (_rotr)으로 회전 하는입니다.
 ms.date: 04/05/2018
 api_name:
 - _rotr64
@@ -43,16 +44,16 @@ helpviewer_keywords:
 - _rotr64 function
 - bits, rotating
 ms.assetid: cfce439b-366f-4584-8ab1-d527b13fcfc6
-ms.openlocfilehash: 0ae2df7d80778cd4c573192a13b1fd91fb358eef
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: d2fb6b2674ed7d50cff63ae45f22af63b0120597
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70949144"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556595"
 ---
 # <a name="_rotl-_rotl64-_rotr-_rotr64"></a>_rotl, _rotl64, _rotr, _rotr64
 
-비트를 왼쪽 ( **_rotl**) 또는 오른쪽 ( **_rotr**)으로 회전 합니다.
+비트를 왼쪽 (**_rotl**) 또는 오른쪽 (**_rotr**)으로 회전 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -86,11 +87,11 @@ unsigned __int64 _rotr64(
 
 ## <a name="return-value"></a>반환 값
 
-순환된 값입니다. 반환되는 오류가 없습니다.
+순환된 값입니다. 오류가 반환 되지 않습니다.
 
 ## <a name="remarks"></a>설명
 
-**_Rotl** 및 **_rotr** 함수는 부호 없는 *값* 을 *shift* 비트로 회전 합니다. **_rotl** 는 값을 왼쪽으로 회전 합니다. **_rotr** 는 값을 오른쪽으로 회전 합니다. 두 함수 모두 순환되어 *value*의 한쪽 끝에서 잘린 비트 부분을 다른 쪽 끝에 추가합니다.
+**_Rotl** 및 **_rotr** 함수는 부호 없는 *값* 을 *shift* 비트로 회전 합니다. **_rotl** 값을 왼쪽으로 회전 합니다. **_rotr** 값을 오른쪽으로 회전 합니다. 두 함수 모두 순환되어 *value*의 한쪽 끝에서 잘린 비트 부분을 다른 쪽 끝에 추가합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -99,7 +100,7 @@ unsigned __int64 _rotr64(
 |**_rotl**, **_rotl64**|\<stdlib.h>|
 |**_rotr**, **_rotr64**|\<stdlib.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="libraries"></a>라이브러리
 
@@ -141,7 +142,7 @@ int main( void )
 101010101010101 rotated right four times is 1010101010101010
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [부동 소수점 지원](../../c-runtime-library/floating-point-support.md)<br/>
 [_lrotl, _lrotr](lrotl-lrotr.md)<br/>

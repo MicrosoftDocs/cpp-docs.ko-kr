@@ -1,5 +1,6 @@
 ---
 title: ctanh, ctanhf, ctanhl
+description: Ctanh, ctanhf, ctanhl에 대 한 API 참조 복소수의 복합 하이퍼볼릭 탄젠트를 계산 합니다.
 ms.date: 11/04/2016
 api_name:
 - ctanh
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - ctanhl function
 - ctanhf function
 ms.assetid: 807f2cd1-8740-4988-afff-5911c346385b
-ms.openlocfilehash: dae59dcd4a71045b27c6ba9501580bf981b9828f
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 959d48853e3edac707a7daea615270b20dad37e7
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70941962"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555868"
 ---
 # <a name="ctanh-ctanhf-ctanhl"></a>ctanh, ctanhf, ctanhl
 
@@ -66,7 +67,7 @@ _Lcomplex ctanhl(
 
 ### <a name="parameters"></a>매개 변수
 
-*z*<br/>
+*-*\
 라디안으로 각도를 나타내는 복소수입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -80,7 +81,7 @@ _Lcomplex ctanhl(
 
 ## <a name="remarks"></a>설명
 
-는 C++ 오버 로드를 허용 하므로 **_Fcomplex** 및 **_fcomplex** 값을 사용 하 고 반환 하는 **ctanh** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **ctanh** 는 항상 **_dcomplex** 를 사용 하 고 반환 합니다.
+C + +에서는 오버 로드를 허용 하므로 **_Fcomplex** 및 **_Lcomplex** 값을 사용 하 고 반환 하는 **ctanh** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **ctanh** 는 항상 **_Dcomplex** 값을 사용 하 고 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -90,7 +91,7 @@ _Lcomplex ctanhl(
 
 호환성에 대한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [사전순 함수 참조](crt-alphabetical-function-reference.md)<br/>
 [catanh, catanhf, catanhl](catanh-catanhf-catanhl.md)<br/>

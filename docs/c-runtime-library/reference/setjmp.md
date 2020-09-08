@@ -1,5 +1,6 @@
 ---
 title: setjmp
+description: Setjmp에 대 한 API 참조 프로그램의 현재 상태를 저장 합니다.
 ms.date: 08/14/2018
 api_name:
 - setjmp
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - current state
 - setjmp function
 ms.assetid: 684a8b27-e8eb-455b-b4a8-733ca1cbd7d2
-ms.openlocfilehash: beaf56a03c1bd157257d604bfd0ebefb219d0225
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3ea08e5379433e313e08870f735322b7d985aa64
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226153"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555607"
 ---
 # <a name="setjmp"></a>setjmp
 
@@ -50,9 +51,9 @@ int setjmp(
 *env*<br/>
 환경이 저장되는 변수입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-스택 환경에 저장한 후 0을 반환합니다. **Setjmp** 가 호출의 결과로 반환 되는 경우 `longjmp` 의 *value* 인수를 반환 `longjmp` 하거나의 *값* 인수가 0 이면 `longjmp` **setjmp** 는 1을 반환 합니다. 반환되는 오류가 없습니다.
+스택 환경에 저장한 후 0을 반환합니다. **Setjmp** 가 호출의 결과로 반환 되는 경우 `longjmp` 의 *value* 인수를 반환 `longjmp` 하거나의 *값* 인수가 0 이면 `longjmp` **setjmp** 는 1을 반환 합니다. 오류가 반환 되지 않습니다.
 
 ## <a name="remarks"></a>설명
 

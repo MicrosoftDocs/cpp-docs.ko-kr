@@ -1,6 +1,7 @@
 ---
 title: ceil, ceilf, ceill
-ms.date: 6/5/2020
+description: Ceil ()을 사용 하 여 값의 최대값을 계산 하기 위한 API 참조입니다.
+ms.date: 9/1/2020
 api_name:
 - ceilf
 - ceil
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - ceil function
 - ceilf function
 ms.assetid: f4e5acab-5c8f-4b10-9ae2-9561e6453718
-ms.openlocfilehash: 2cacd0ad9fa08e903d2ab5cff5f73611c85fab3e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3079f52c79d6d888923025357bb21adc782aa5cd
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221954"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555245"
 ---
 # <a name="ceil-ceilf-ceill"></a>ceil, ceilf, ceill
 
@@ -64,16 +65,17 @@ float ceilf(
 long double ceill(
    long double x
 );
+#define ceil(X) // Requires C11 or higher
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*x*<br/>
+*.x*\
 부동 소수점 값입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-**Ceil** 함수는 *x*보다 크거나 같은 최소 정수를 나타내는 부동 소수점 값을 반환 합니다. 반환되는 오류가 없습니다.
+**Ceil** 함수는 *x*보다 크거나 같은 최소 정수를 나타내는 부동 소수점 값을 반환 합니다. 오류가 반환 되지 않습니다.
 
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|
@@ -83,7 +85,9 @@ long double ceill(
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드를 허용 하므로 또는 형식을 사용 하는 **ceil** 의 오버 로드를 호출할 수 있습니다 **`float`** **`long double`** . C 프로그램에서 **ceil** 은 항상를 사용 하 고 반환 **`double`** 합니다.
+C + +에서는 오버 로드를 허용 하므로 또는 형식을 사용 하는 **ceil** 의 오버 로드를 호출할 수 있습니다 **`float`** **`long double`** . C 프로그램에서 매크로를 사용 하 여이 함수를 호출 하지 않는 한 \<tgmath.h> **ceil** 은 항상를 사용 하 고 반환 **`double`** 합니다.
+
+<tgmath> `ceil()` 매크로를 사용 하면 인수의 형식에 따라 선택 되는 함수 버전이 결정 됩니다. 자세한 내용은 [형식-제네릭](../../c-runtime-library/tgmath.md) 계산을 참조 하세요.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -92,6 +96,7 @@ C + +에서는 오버 로드를 허용 하므로 또는 형식을 사용 하는 
 |루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**ceil**, **ceilf**, **ceil** 됨|\<math.h>|
+|**ceil** 매크로 | \<tgmath.h> ||
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 

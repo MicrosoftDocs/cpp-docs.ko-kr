@@ -1,6 +1,7 @@
 ---
 title: log2, log2f, log2l
-ms.date: 4/2/2020
+description: Log2, log2f 및 log2l에 대 한 API 참조 지정 된 값의 이진 (밑 2) 로그를 결정 하는입니다.
+ms.date: 9/1/2020
 api_name:
 - log2
 - log2l
@@ -26,12 +27,12 @@ api_type:
 topic_type:
 - apiref
 ms.assetid: 94d11b38-70b7-4d3a-94ac-523153c92b2e
-ms.openlocfilehash: 58da7790e6fbce915c16a02a1b0d972a6fe1049e
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 37319560891dbd64030495750aaf347d9dedd7e7
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911411"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555360"
 ---
 # <a name="log2-log2f-log2l"></a>log2, log2f, log2l
 
@@ -59,14 +60,16 @@ float log2f(
 long double log2l(
    long double x
 );
+
+#define log2(X) // Requires C11 or higher
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*x*<br/>
+*.x*\
 밑이 2인 로그를 확인할 값입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 성공할 경우 반환 log2 *x*를 반환 합니다.
 
@@ -86,7 +89,7 @@ long double log2l(
 
 ## <a name="remarks"></a>설명
 
-X가 정수 인 경우이 함수는 기본적으로 *x*의 가장 중요 한 1 비트의 인덱스 (0부터 시작)를 반환 합니다.
+*X* 가 정수 인 경우이 함수는 기본적으로 *x*의 가장 중요 한 1 비트의 인덱스 (0부터 시작)를 반환 합니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -95,10 +98,11 @@ X가 정수 인 경우이 함수는 기본적으로 *x*의 가장 중요 한 1 �
 |기능|C 헤더|C++ 헤더|
 |--------------|--------------|------------------|
 |**log2**, **log2f**, **log2l**|\<math.h>|\<cmath>|
+|**log2** 매크로 | \<tgmath.h> ||
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [사전순 함수 참조](crt-alphabetical-function-reference.md)<br/>
 [exp2, exp2f, exp2l](exp2-exp2f-exp2l.md)<br/>

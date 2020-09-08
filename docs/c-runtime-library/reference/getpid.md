@@ -1,5 +1,6 @@
 ---
 title: _getpid
+description: 프로세스 id를 가져오는 _getpid에 대 한 API 참조입니다.
 ms.date: 11/04/2016
 api_name:
 - _getpid
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - _getpid function
 - process identification numbers
 ms.assetid: d3e13bae-9a0c-4f33-86d3-ec9df9519285
-ms.openlocfilehash: b0848e5eb01f39c009fcdc650ea551f18e23c6fb
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: fc2de8e0b6e87d04bd9ae29ce3a945c048af00e2
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70954995"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556491"
 ---
 # <a name="_getpid"></a>_getpid
 
@@ -46,9 +47,9 @@ ms.locfileid: "70954995"
 int _getpid( void );
 ```
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 
-시스템에서 가져온 프로세스 ID를 반환합니다. 반환되는 오류가 없습니다.
+시스템에서 가져온 프로세스 ID를 반환합니다. 오류가 반환 되지 않습니다.
 
 ## <a name="remarks"></a>설명
 
@@ -60,7 +61,7 @@ int _getpid( void );
 |-------------|---------------------|
 |**_getpid**|\<process.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
@@ -85,7 +86,7 @@ int main( void )
 Process id: 3584
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [프로세스 및 환경 제어](../../c-runtime-library/process-and-environment-control.md)<br/>
 [_mktemp, _wmktemp](mktemp-wmktemp.md)<br/>

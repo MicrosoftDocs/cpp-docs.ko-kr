@@ -1,6 +1,7 @@
 ---
 title: log, logf, logl, log10, log10f, log10l
-ms.date: 6/5/2020
+description: Log, logf, logf, log10, log10f 및 log10l에 대 한 API 참조 =를 계산 합니다.
+ms.date: 9/1/2020
 api_name:
 - log10f
 - logf
@@ -48,12 +49,12 @@ helpviewer_keywords:
 - logf function
 - logarithms
 ms.assetid: 7adc77c2-04f7-4245-a980-21215563cfae
-ms.openlocfilehash: ddfe0198ab83f72868f383d6c35f040415893ad4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f308281705170308ec83e4a5efd9c7825ba47591
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218600"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556284"
 ---
 # <a name="log-logf-logl-log10-log10f-log10l"></a>log, logf, logl, log10, log10f, log10l
 
@@ -62,27 +63,27 @@ ms.locfileid: "87218600"
 ## <a name="syntax"></a>구문
 
 ```C
-double log( double x );
-float logf( float x );
-long double logl( double x );
-double log10( double x );
-float log10f ( float x );
-long double log10l( double x );
-```
+double log(double x);
+float logf(float x);
+long double logl(double x);
+double log10(double x);
+float log10f (float x);
+long double log10l(double x);
+#define log(X) // Requires C11 or higher
+#define log10(X) // Requires C11 or higher
 
-```cpp
-float log( float x );  // C++ only
-long double log( long double x );  // C++ only
-float log10( float x );  // C++ only
-long double log10( long double x );  // C++ only
+float log(float x);  // C++ only
+long double log(long double x);  // C++ only
+float log10(float x);  // C++ only
+long double log10(long double x);  // C++ only
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*x*<br/>
+*.x*\
 로그가 있는 값입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 성공 하는 경우 **로그** 함수는 *x* 의 자연 로그 (밑 *e*)를 반환 합니다. **Log10** 함수는 상용 로그를 반환 합니다. *X* 가 음수인 경우 이러한 함수는 기본적으로 무한 (IND)을 반환 합니다. *X* 가 0 이면 무한대 (INF)를 반환 합니다.
 
@@ -96,7 +97,9 @@ long double log10( long double x );  // C++ only
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드를 허용 하므로 또는 값을 사용 하 고 반환 하는 **로그** 및 **log10** 오버 로드를 호출할 수 있습니다 **`float`** **`long double`** . C 프로그램에서 **log** 및 **log10** 는 항상를 사용 하 고 반환 **`double`** 합니다.
+C + +에서는 오버 로드를 허용 하므로 또는 값을 사용 하 고 반환 하는 **로그** 및 **log10** 오버 로드를 호출할 수 있습니다 **`float`** **`long double`** . C 프로그램에서 매크로를 사용 하 여이 함수를 호출 하지 않는 한 \<tgmath.h> , **log** 및 **log10** 는 항상를 사용 하 고 반환 **`double`** 합니다.
+
+매크로를 사용 하는 경우 \<tgmath.h> `log()` 인수의 형식에 따라 선택 되는 함수 버전이 결정 됩니다. 자세한 내용은 [형식-제네릭](../../c-runtime-library/tgmath.md) 계산을 참조 하세요.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -105,6 +108,7 @@ C + +에서는 오버 로드를 허용 하므로 또는 값을 사용 하 고 �
 |루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**log**, **logf**, **logf**, **log10**, **log10f**, **log10l**|\<math.h>|
+|**log** 매크로 | \<tgmath.h> |
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 

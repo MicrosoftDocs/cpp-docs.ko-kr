@@ -1,6 +1,7 @@
 ---
 title: remquo, remquof, remquol
-ms.date: 4/2/2020
+description: Remquo, remquof 및 remquol에 대 한 API 참조 그러면 두 정수 값의 나머지를 계산 하 고, 몫의 부호와 대략적인 크기를 포함 하는 정수 값을 매개 변수에 지정 된 위치에 저장 합니다.
+ms.date: 9/1/2020
 api_name:
 - remquof
 - remquo
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - remquof function
 - remquo function
 ms.assetid: a1d3cb8b-8027-4cd3-8deb-04eb17f299fc
-ms.openlocfilehash: d1b5c60e2e6bd8ba4d5f3b4297dff4bd57c650f2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d99204ad9a80c6320869cbb72aee905981a5224d
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216793"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89554970"
 ---
 # <a name="remquo-remquof-remquol"></a>remquo, remquof, remquol
 
@@ -51,25 +52,24 @@ ms.locfileid: "87216793"
 double remquo( double numer, double denom, int* quo );
 float remquof( float numer, float denom, int* quo );
 long double remquol( long double numer, long double denom, int* quo );
-```
+#define remquo(X, Y, INT_PTR) // Requires C11 or higher
 
-```cpp
 float remquo( float numer, float denom, int* quo ); /* C++ only */
 long double remquo( long double numer, long double denom, int* quo ); /* C++ only */
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*숫자로*<br/>
+*숫자로*\
 분자입니다.
 
-*denom*<br/>
+*denom*\
 분모입니다.
 
-*현상*<br/>
+*현상*\
 몫의 대략적인 크기와 부호가 포함된 값을 저장하는 정수에 대한 포인터입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 **remquo** 는 *x*y의 부동 소수점 나머지를 반환 합니다  /  *y*. *Y* 값이 0.0 이면 **Remquo** 는 자동 NaN을 반환 합니다. **Printf** 패밀리의 자동 NaN 표현에 대 한 자세한 내용은 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)를 참조 하세요.
 
@@ -77,15 +77,18 @@ long double remquo( long double numer, long double denom, int* quo ); /* C++ onl
 
 **Remquo** 함수는 x i y f 인 x y의 *부동*소수점 나머지 *f* 를 계산 합니다  /  *y* *x*  =  *i* \* *y*  +  *f*. 여기서 *i* 는 정수이 고 *f* 는 *x*와 같으며 f의 절대값은 *y*의 절대값 보다 작은 *f* 값입니다.
 
-C + +에서는 오버 로드를 허용 하므로 또는 값을 사용 하 고 반환 하는 **remquo** 의 오버 로드를 호출할 수 있습니다 **`float`** **`long double`** . C 프로그램에서 **remquo** 은 항상 두 개의 인수를 사용 **`double`** 하 고를 반환 **`double`** 합니다.
+C + +에서는 오버 로드를 허용 하므로 또는 값을 사용 하 고 반환 하는 **remquo** 의 오버 로드를 호출할 수 있습니다 **`float`** **`long double`** . C 프로그램에서 매크로를 사용 하 여이 함수를 호출 하지 않는 한 \<tgmath.h> **remquo** 는 항상 두 개의 인수를 사용 **`double`** 하 고을 반환 **`double`** 합니다.
+
+매크로를 사용 하는 경우 \<tgmath.h> `remquo()` 인수의 형식에 따라 선택 되는 함수 버전이 결정 됩니다. 자세한 내용은 [형식-제네릭](../../c-runtime-library/tgmath.md) 계산을 참조 하세요.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 헤더(C)|필수 헤더(C++)|
+|기능|필수 헤더(C)|필수 헤더(C++)|
 |--------------|---------------------|-|
 |**remquo**, **remquof**, **remquol**|\<math.h>|\<cmath> 또는 \<math.h>|
+|**remquo** 매크로 | \<tgmath.h> ||
 
 호환성에 대한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

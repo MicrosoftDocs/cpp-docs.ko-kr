@@ -1,14 +1,15 @@
 ---
 title: CRT의 전역 상태
+description: 유니버설 C 런타임에서 공유 전역 상태를 처리 하는 방법을 설명 합니다.
 ms.date: 04/02/2020
 helpviewer_keywords:
 - CRT global state
-ms.openlocfilehash: a794f201184c10c11611138d30d14b36b00405a7
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d1c787147ea3df36ce120837ef5b2c68b1bf58b1
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845187"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89554671"
 ---
 # <a name="global-state-in-the-crt"></a>CRT의 전역 상태
 
@@ -18,7 +19,7 @@ CRT (유니버설 C 런타임)의 일부 함수는 전역 상태를 사용 합�
 
 ## <a name="os-specific-versions-of-crt-functions"></a>OS 특정 버전의 CRT 함수
 
-작업에서 전역 상태와 상호 작용 하는 함수에는 접두사가 인 "쌍" 함수가 있습니다 `_o_` . 예를 들어:
+작업에서 전역 상태와 상호 작용 하는 함수에는 접두사가 인 "쌍" 함수가 있습니다 `_o_` . 예를 들면 다음과 같습니다.
 
 - `setlocale()` 앱과 관련 된 전역 상태에 영향을 줍니다.
 - `_o_setlocale()` 앱이 아닌 모든 OS 구성 요소에서 공유 하는 전역 상태에 영향을 줍니다.

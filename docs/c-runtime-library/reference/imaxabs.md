@@ -1,5 +1,6 @@
 ---
 title: imaxabs
+description: 모든 크기의 정수의 절대 값을 계산 하는 imaxabs에 대 한 API 참조입니다.
 ms.date: 04/05/2018
 api_name:
 - imaxabs
@@ -24,12 +25,12 @@ f1_keywords:
 helpviewer_keywords:
 - imaxabs function
 ms.assetid: de2566a3-1415-4e9a-91b5-7ac3a49ebf5e
-ms.openlocfilehash: c1f20c4de2ff9070bae3bfaeb8ba2d97d87d2d4d
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 599e8a0cb20f24bda24201be40fa1acc0ade993c
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70954687"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555503"
 ---
 # <a name="imaxabs"></a>imaxabs
 
@@ -46,11 +47,11 @@ intmax_t imaxabs(
 ### <a name="parameters"></a>매개 변수
 
 *n*<br/>
-정수 값입니다.
+정수 값.
 
 ## <a name="return-value"></a>반환 값
 
-**Imaxabs** 함수는 인수의 절대값을 반환 합니다. 반환되는 오류가 없습니다.
+**Imaxabs** 함수는 인수의 절대값을 반환 합니다. 오류가 반환 되지 않습니다.
 
 > [!NOTE]
 > **Intmax_t** 를 사용 하 여 나타낼 수 있는 음의 정수 범위가 표현할 수 있는 양의 정수 범위 보다 크기 때문에 변환 될 수 없는 **imaxabs** 에 인수를 제공할 수 있습니다. 인수의 절대 값을 반환 형식으로 나타낼 수 없는 경우 **imaxabs** 의 동작이 정의 되지 않습니다.
@@ -61,7 +62,7 @@ intmax_t imaxabs(
 |-------------|---------------------|
 |**imaxabs**|\<inttypes.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="libraries"></a>라이브러리
 
@@ -91,7 +92,7 @@ int main(int argc, char *argv[])
 The absolute value of -9223372036854775806 is 9223372036854775806
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [데이터 변환](../../c-runtime-library/data-conversion.md)<br/>
 [부동 소수점 지원](../../c-runtime-library/floating-point-support.md)<br/>

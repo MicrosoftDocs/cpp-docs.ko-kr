@@ -36,16 +36,16 @@ helpviewer_keywords:
 - I/O [CRT], port
 - _inpw function
 ms.assetid: 5d9c2e38-fc85-4294-86d5-7282cc02d1b3
-ms.openlocfilehash: f7b822c4b694969407e32ba26026465fb39bd8d6
-ms.sourcegitcommit: 6b749db14b4cf3a2b8d581fda6fdd8cb98bc3207
+ms.openlocfilehash: aafcd633b2ee04c9ced1520d4ecd1520475d0fea
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82825831"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556478"
 ---
 # <a name="inp-_inp-inpw-_inpw-_inpd"></a>sct.inp, _inp, inpw, _inpw, _inpd
 
-포트,`inp`바이트 (, `_inp`), 단어 (`inpw`, `_inpw`) 또는 2 배 워드 (`_inpd`)를 입력 합니다.
+포트, 바이트 ( `inp` ,) `_inp` , 단어 ( `inpw` , `_inpw` ) 또는 2 배 워드 ()를 입력 `_inpd` 합니다.
 
 > [!IMPORTANT]
 > 이러한 함수는 사용되지 않습니다. Visual Studio 2015부터 CRT에서 사용할 수 없습니다.
@@ -70,9 +70,9 @@ unsigned long _inpd(
 *포트인*\
 I/O 포트 번호입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-함수가 `port`에서 바이트, 워드 또는 2배 워드를 반환합니다. 반환되는 오류가 없습니다.
+함수가 `port`에서 바이트, 워드 또는 2배 워드를 반환합니다. 오류가 반환 되지 않습니다.
 
 ## <a name="remarks"></a>설명
 
@@ -80,7 +80,7 @@ I/O 포트 번호입니다.
 
 이러한 함수는 I/O 포트에서 직접 읽기 때문에 사용자 코드에서 사용할 수 없습니다.
 
-`inp` 및 `inpw` 이름은 이전 버전의 `_inp` 및 `_inpw` 함수에 사용 되지 않는 이름입니다. 자세한 내용은 [POSIX 함수 이름](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#posix-function-names)을 참조 하세요.
+및 `inp` `inpw` 이름은 이전 버전의 및 함수에 사용 되지 않는 이름입니다 `_inp` `_inpw` . 자세한 내용은 [POSIX 함수 이름](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#posix-function-names)을 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 

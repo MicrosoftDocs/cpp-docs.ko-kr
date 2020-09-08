@@ -1,5 +1,6 @@
 ---
 title: _getch, _getwch
+description: _Getch 및 _getwch에 대 한 API 참조 콘솔에서 화면을 표시 하지 않고 문자를 가져옵니다.
 ms.date: 4/2/2020
 api_name:
 - _getch
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - _getch function
 - getwch function
 ms.assetid: cc116be7-cff2-4274-970f-5e7b18ccc05c
-ms.openlocfilehash: 1c62bd0793fef0683007fe21df0fc0c2acdf1357
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 39954cdbe507baad05055770df5db8859737b9d1
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919625"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555855"
 ---
 # <a name="_getch-_getwch"></a>_getch, _getwch
 
@@ -58,7 +59,7 @@ wint_t _getwch( void );
 
 ## <a name="return-value"></a>Return Value
 
-읽은 문자를 반환합니다. 반환되는 오류가 없습니다.
+읽은 문자를 반환합니다. 오류가 반환 되지 않습니다.
 
 ## <a name="remarks"></a>설명
 
@@ -119,9 +120,9 @@ abcdefy
 Type 'Y' when finished typing keys: Y
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[콘솔 및 포트 I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
+[콘솔 및 포트 i/o](../../c-runtime-library/console-and-port-i-o.md)<br/>
 [_getche, _getwche](getche-getwche.md)<br/>
 [_cgets, _cgetws](../../c-runtime-library/cgets-cgetws.md)<br/>
 [getc, getwc](getc-getwc.md)<br/>

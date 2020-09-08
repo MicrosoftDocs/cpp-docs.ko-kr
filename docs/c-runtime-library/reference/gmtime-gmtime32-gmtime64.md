@@ -1,5 +1,6 @@
 ---
 title: gmtime, _gmtime32, _gmtime64
+description: Gmtime, _gmtime32 및 _gmtime64에 대 한 API 참조 time_t 값을 tm 구조체로 변환 합니다.
 ms.date: 4/2/2020
 api_name:
 - _gmtime32
@@ -37,12 +38,12 @@ helpviewer_keywords:
 - gmtime64 function
 - time structure conversion
 ms.assetid: 315501f3-477e-475d-a414-ef100ee0db27
-ms.openlocfilehash: 86919e2ba6f5e301f1dffd87dfb4ecd22ce416e2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b3dd09e828b972f05a4c45c30ebc3e5edb68f551
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234109"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556465"
 ---
 # <a name="gmtime-_gmtime32-_gmtime64"></a>gmtime, _gmtime32, _gmtime64
 
@@ -61,11 +62,11 @@ struct tm *_gmtime64( const __time64_t *sourceTime );
 *sourceTime*<br/>
 저장된 시간에 대한 포인터입니다. 시간은 1970년 1월 1일 자정(00:00:00)(UTC(협정 세계시)) 이후 경과한 시간(초)으로 표현됩니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 [tm](../../c-runtime-library/standard-types.md) 형식의 구조체에 대한 포인터입니다. 반환 된 구조체의 필드는 현지 시간이 아닌 UTC로 *Sourcetime* 인수의 계산 된 값을 보유 합니다. 각 구조 필드는 다음과 같이 형식입니다 **`int`** .
 
-|필드|설명|
+|필드|Description|
 |-|-|
 |**tm_sec**|분 이후의 초 (0-59)입니다.|
 |**tm_min**|시간 이후 분 (0-59)|
@@ -77,7 +78,7 @@ struct tm *_gmtime64( const __time64_t *sourceTime );
 |**tm_yday**|연간 일자 (0-365; 1 월 1 일 = 0).|
 |**tm_isdst**|**Gmtime**의 경우 항상 0입니다.|
 
-**Gmtime**, [mktime](mktime-mktime32-mktime64.md), [mkgmtime](mkgmtime-mkgmtime32-mkgmtime64.md)및 [localtime](localtime-localtime32-localtime64.md) 의 32 비트 및 64 비트 버전은 모두 변환에 대해 스레드 당 하나의 공통 **tm** 구조를 사용 합니다. 이러한 함수 중 하나를 호출할 때마다 이전 호출의 결과가 삭제됩니다. *Sourcetime* 이 1970 년 1 월 1 일 자정 이전의 날짜를 나타내는 경우 **gmtime** 는 **NULL**을 반환 합니다. 반환되는 오류가 없습니다.
+**Gmtime**, [mktime](mktime-mktime32-mktime64.md), [mkgmtime](mkgmtime-mkgmtime32-mkgmtime64.md)및 [localtime](localtime-localtime32-localtime64.md) 의 32 비트 및 64 비트 버전은 모두 변환에 대해 스레드 당 하나의 공통 **tm** 구조를 사용 합니다. 이러한 함수 중 하나를 호출할 때마다 이전 호출의 결과가 삭제됩니다. *Sourcetime* 이 1970 년 1 월 1 일 자정 이전의 날짜를 나타내는 경우 **gmtime** 는 **NULL**을 반환 합니다. 오류가 반환 되지 않습니다.
 
 **__time64_t** 구조를 사용 하는 **_gmtime64**에 따라 날짜를 23:59:59 년 12 월 31 일까 지 3000, utc로 표현할 수 있으며, **_gmtime32** 23:59:59 1 월 2038 18 일를 사용 하는 경우에만 날짜를 표시 합니다. 1970년 1월 1일 자정은 두 함수 모두에 대한 날짜 범위의 하한입니다.
 
@@ -87,7 +88,7 @@ struct tm *_gmtime64( const __time64_t *sourceTime );
 
 ## <a name="remarks"></a>설명
 
-**_Gmtime32** 함수는 *sourcetime* 값을 분할 하 고 시간에 정의 된 **tm**형식의 정적으로 할당 된 구조에 저장 합니다. 넣기. *Sourcetime* 값은 일반적으로 [time](time-time32-time64.md) 함수 호출에서 가져옵니다.
+**_Gmtime32** 함수는 *sourcetime* 값을 분할 하 고, TIME. H에 정의 된 **tm**형식의 정적으로 할당 된 구조에 저장 합니다. *Sourcetime* 값은 일반적으로 [time](time-time32-time64.md) 함수 호출에서 가져옵니다.
 
 > [!NOTE]
 > 대부분의 경우 대상 환경에서는 일광 절약 시간이 적용되는지 확인하려고 합니다. C 런타임 라이브러리에서는 DST(일광 절약 시간) 계산 구현을 위한 미국 규칙이 사용된다고 가정합니다.
