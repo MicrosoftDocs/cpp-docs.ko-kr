@@ -1,21 +1,22 @@
 ---
 title: Partial 클래스(C++/CX)
+description: C + +/CX에서 partial 클래스를 선언 하 고 사용 하는 방법
 ms.date: 12/30/2016
 ms.assetid: 69d93575-636c-4564-8cca-6dfba0c7e328
-ms.openlocfilehash: 1f5583354481248e8df201be200fe99da61791dd
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 70225069c948a50b38ac3642113cf940c86cf8da
+ms.sourcegitcommit: 0df2b7ab4e81284c5248e4584767591dcc1950c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87185465"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89609072"
 ---
 # <a name="partial-classes-ccx"></a>Partial 클래스(C++/CX)
 
-partial 클래스는 사용자가 클래스 정의의 한 부분을 수정할 때 자동 코드 생성 소프트웨어(예: XAML 디자이너)도 동일한 클래스의 코드를 수정하는 시나리오를 지원하는 생성자입니다. partial 클래스를 사용하면 디자이너가 코드를 덮어쓰지 않게 할 수 있습니다. Visual Studio 프로젝트에서는 생성된 파일에 `partial` 한정자가 자동으로 적용됩니다.
+partial 클래스는 사용자가 클래스 정의의 한 부분을 수정할 때 자동 코드 생성 소프트웨어(예: XAML 디자이너)도 동일한 클래스의 코드를 수정하는 시나리오를 지원하는 생성자입니다. partial 클래스를 사용하면 디자이너가 코드를 덮어쓰지 않게 할 수 있습니다. Visual Studio 프로젝트에서 **`partial`** 한정자는 생성 된 파일에 자동으로 적용 됩니다.
 
 ## <a name="syntax"></a>구문
 
-partial 클래스를 정의하려면 클래스 키 바로 앞에 `partial` 키워드를 사용합니다. 그렇지 않으면 일반 클래스 정의가 됩니다. `partial ref class` 와 같은 키워드는 공백 문자를 포함하는 컨텍스트 키워드입니다. 부분 정의는 다음 생성자에서 지원됩니다.
+Partial 클래스를 정의 하려면 **`partial`** 클래스 키 바로 앞에 키워드를 사용 합니다. 그렇지 않으면 일반 클래스 정의가 됩니다. 와 같은 키워드는 **`partial ref class`** 공백 문자를 포함 하는 상황별 키워드입니다. 부분 정의는 다음 생성자에서 지원됩니다.
 
 - **`class`** 또는 **`struct`**
 
@@ -25,7 +26,7 @@ partial 클래스를 정의하려면 클래스 키 바로 앞에 `partial` 키�
 
 - **`enum`** 또는 **`enum class`**
 
-- `ref interface`, **`interface class`** , **`interface struct`** 또는 **' __interface**
+- **`ref interface`**, **`interface class`** , **`interface struct`** 또는 **`__interface`**
 
 - **`union`**
 
@@ -35,7 +36,7 @@ partial 클래스를 정의하려면 클래스 키 바로 앞에 `partial` 키�
 
 ## <a name="contents"></a>콘텐츠
 
-partial 클래스 정의에서 `partial` 키워드를 생략할 경우 전체 클래스 정의에 포함될 수 있는 모든 내용이 포함될 수 있습니다. 여기에는 한 가지 경우를 제외하고, 기본 클래스, 데이터 멤버, 멤버 함수, 열거형, friend 선언 및 특성과 같은 모든 유효한 생성자가 포함됩니다. 정적 데이터 멤버의 인라인 정의가 허용됩니다.
+Partial 클래스 정의는 키워드가 생략 된 경우 전체 클래스 정의에 포함 될 수 있는 모든 항목을 포함할 수 있습니다 **`partial`** . 여기에는 한 가지 경우를 제외하고, 기본 클래스, 데이터 멤버, 멤버 함수, 열거형, friend 선언 및 특성과 같은 모든 유효한 생성자가 포함됩니다. 정적 데이터 멤버의 인라인 정의가 허용됩니다.
 
 한 가지 예외는 클래스 액세스 가능성입니다. 예를 들어 `public partial class MyInvalidClass {/* ... */};` 구문은 오류입니다. MyInvalidClass의 partial 클래스 정의에 사용되는 액세스 지정자는 MyInvalidClass의 후속 부분 또는 전체 클래스 정의의 기본 액세스 가능성에 영향을 미치지 않습니다.
 
@@ -45,13 +46,13 @@ partial 클래스 정의에서 `partial` 키워드를 생략할 경우 전체 �
 
 ## <a name="declaration"></a>선언
 
-*MyClass* 와 같은 클래스의 부분 정의는 MyClass의 선언입니다. 즉, 이름 *MyClass*만 생성합니다. *MyClass* 는 클래스 정의가 필요한 방식으로 사용할 수 없습니다. 예를 들어, *MyClass* 의 크기를 알거나 *MyClass*의 기본 클래스 또는 멤버를 사용할 수 없습니다. *MyClass* 는 컴파일러가 *MyClass*의 부분 정의가 아닌 정의를 발견할 경우에만 정의된 것으로 간주합니다.
+와 같은 클래스의 부분 정의는 `MyClass` MyClass의 선언입니다. 즉, 이름만 소개 `MyClass` 합니다. `MyClass` 는 클래스 정의가 필요한 방식으로 사용할 수 없습니다. 예를 들어의 크기를 알고 `MyClass` 있거나의 기본 또는 멤버를 사용할 수 없습니다 `MyClass` . `MyClass` 는 컴파일러가의 부분 정의가 아닌 정의를 발견할 경우에만 정의 된 것으로 간주 됩니다 `MyClass` .
 
-다음 예제에서는 partial 클래스의 선언 동작을 보여 줍니다. Declaration #1 이후 *MyClass* 를 정방향 선언인 `ref class MyClass;`로 작성된 것처럼 사용할 수 있습니다. Declaration #2는 Declaration #1과 같습니다. Declaration #3은 클래스에 대한 정방향 선언이므로 유효합니다. 그러나 Declaration #4는
+다음 예제에서는 partial 클래스의 선언 동작을 보여 줍니다. #1 선언 후에 `MyClass` 는를 전방 선언으로 작성 된 것 처럼 사용할 수 있습니다 `ref class MyClass;` . Declaration #2는 Declaration #1과 같습니다. Declaration #3은 클래스에 대한 정방향 선언이므로 유효합니다. 그러나 Declaration #4는
 
-*MyClass* 가 완전히 정의되지 않았으므로 유효하지 않습니다.
+`MyClass`가 완전히 정의되지 않았으므로 유효하지 않습니다.
 
-Declaration #5는 `partial` 키워드를 사용하지 않으며 선언이 *MyClass*를 완전히 정의합니다. 따라서 Declaration #6은 유효합니다.
+선언 #5 키워드를 사용 하지 않으며 **`partial`** 선언이 완전히 정의 `MyClass` 됩니다. 따라서 Declaration #6은 유효합니다.
 
 [!code-cpp[Cx_partial#03](../cppcx/codesnippet/CPP/partialclassexample/class1.h#03)]
 
@@ -59,7 +60,7 @@ Declaration #5는 `partial` 키워드를 사용하지 않으며 선언이 *MyCla
 
 클래스의 모든 전체 정의에는 0개 이상의 부분 클래스 정의가 있을 수 있습니다.
 
-클래스의 모든 부분 클래스 정의는 어휘적으로 해당 클래스의 전체 정의보다 앞에 나와야 하지만 클래스의 정방향 선언보다 앞에 나올 필요는 없습니다. 클래스의 전체 정의가 없는 경우 부분 클래스 선언만 정방향 선언이 될 수 있습니다.
+클래스의 모든 부분 클래스 정의는 어휘 적으로 해당 클래스의 전체 정의 보다 앞에 나와야 하지만 클래스의 전방 선언 앞에 오지 않아도 됩니다. 클래스의 전체 정의가 없는 경우 부분 클래스 선언만 정방향 선언이 될 수 있습니다.
 
 및와 같은 모든 클래스 키 **`class`** 가 **`struct`** 일치 해야 합니다. 예를 들어, `partial class X {}; struct X {};`만 생성합니다.
 
@@ -81,15 +82,15 @@ Declaration #5는 `partial` 키워드를 사용하지 않으며 선언이 *MyCla
 
 partial 클래스는 템플릿이 될 수 없습니다.
 
-## <a name="restrictions"></a>제한
+## <a name="restrictions"></a>제한 사항
 
 partial 클래스는 번역 단위를 벗어날 수 없습니다.
 
-키워드는 `partial` **`ref class`** 키워드 또는 키워드와 함께 사용할 때만 지원 됩니다 **`value class`** .
+키워드는 **`partial`** **`ref class`** 키워드 또는 키워드와 함께 사용할 때만 지원 됩니다 **`value class`** .
 
 ### <a name="examples"></a>예제
 
-다음 예제는 두 코드 파일에 걸쳐 `Address` 클래스를 정의합니다. 디자이너가 `Address.details.h` 를 수정하고 사용자가 `Address.h`를 수정합니다. 첫 번째 파일의 클래스 정의만 `partial` 키워드를 사용합니다.
+다음 예제는 두 코드 파일에 걸쳐 `Address` 클래스를 정의합니다. 디자이너가 `Address.details.h` 를 수정하고 사용자가 `Address.h`를 수정합니다. 첫 번째 파일의 클래스 정의만 키워드를 사용 **`partial`** 합니다.
 
 [!code-cpp[cx_partial#07](../cppcx/codesnippet/CPP/partialclassexample/address.details.h#07)]
 

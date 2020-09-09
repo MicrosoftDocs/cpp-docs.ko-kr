@@ -5,12 +5,12 @@ ms.topic: reference
 f1_keywords:
 - event/Microsoft::WRL::Callback
 ms.assetid: afb15d25-3230-44f7-b321-e17c54872943
-ms.openlocfilehash: 138ad9d5d3bd4cf9e5263845f950dbbe7971fde6
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 8615b92f9b46dcfc6e36867c51eeefdb7a5f5e81
+ms.sourcegitcommit: 0df2b7ab4e81284c5248e4584767591dcc1950c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214138"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89609093"
 ---
 # <a name="callback-function-wrl"></a>콜백 함수 (WRL)
 
@@ -24,7 +24,7 @@ template<
    typename TCallback
 >
 ComPtr<TDelegateInterface> Callback(
-   TCallbackcallback
+   TCallback callback
 );
 template<
    typename TDelegateInterface,
@@ -227,22 +227,22 @@ ComPtr<TDelegateInterface> Callback(
 *TArg9*<br/>
 아홉 번째 콜백 메서드 인수의 형식을 지정하는 템플릿 매개 변수입니다.
 
-*콜백*<br/>
+*콜백(callback)*<br/>
 콜백 개체 및 해당 멤버 함수를 나타내는 개체입니다.
 
 *object*<br/>
 이벤트가 발생할 때 해당 멤버 함수를 호출하는 개체입니다.
 
-*method*<br/>
+*방법이*<br/>
 이벤트가 발생할 때 호출할 멤버 함수입니다.
 
 ## <a name="return-value"></a>반환 값
 
 멤버 함수가 지정된 콜백 메서드인 개체입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
-대리자 개체의 밑은 `IInspectable`가 아닌 `IUnknown`이어야 합니다.
+대리자 개체의 밑은 `IUnknown` 이 아니라 여야 합니다 `IInspectable` .
 
 ## <a name="requirements"></a>요구 사항
 
@@ -252,4 +252,4 @@ ComPtr<TDelegateInterface> Callback(
 
 ## <a name="see-also"></a>참고 항목
 
-[Microsoft::WRL 네임스페이스](microsoft-wrl-namespace.md)
+[Microsoft:: WRL 네임 스페이스](microsoft-wrl-namespace.md)

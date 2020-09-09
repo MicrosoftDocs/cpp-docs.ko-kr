@@ -1,15 +1,15 @@
 ---
 title: C/c + + 프로젝트 속성 (Visual Studio)
 description: Visual Studio Microsoft C/c + + 프로젝트 속성 페이지 속성에 대 한 참조 가이드입니다.
-ms.date: 07/08/2020
+ms.date: 09/03/2020
 ms.topic: article
 ms.assetid: 16375038-4917-4bd0-9a2a-26343c1708b7
-ms.openlocfilehash: d1ade2959351d6e60b1d80554bbfa34074dda725
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a96400e27b48b734d4002d9cef13fd52f9ccc7a5
+ms.sourcegitcommit: 0df2b7ab4e81284c5248e4584767591dcc1950c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229742"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89609167"
 ---
 # <a name="cc-property-pages"></a>C/c + + 속성 페이지
 
@@ -78,7 +78,7 @@ Windows 런타임 언어 확장을 사용 합니다. [`/ZW`](zw-windows-runtime-
 
 ### <a name="warning-version"></a>경고 버전
 
-특정 버전의 컴파일러 이후에 도입 된 경고를 숨깁니다. [`/Wv:xx`\[`.yy`\[`.zzzzz`\]\]](wx-treat-linker-warnings-as-errors.md)을 설정 합니다.
+특정 버전의 컴파일러 이후에 도입 된 경고를 숨깁니다. [`/Wv:xx[.yy[.zzzzz]]`](wx-treat-linker-warnings-as-errors.md)을 설정 합니다.
 
 ### <a name="diagnostics-format"></a>진단 형식
 
@@ -102,15 +102,15 @@ Windows 런타임 언어 확장을 사용 합니다. [`/ZW`](zw-windows-runtime-
 
 ### <a name="optimization"></a>Optimization
 
-코드 최적화를 위한 옵션을 선택 합니다. 특정 최적화 옵션을 사용 하려면 사용자 지정을 선택 합니다. [/Od](od-disable-debug.md), [/O1,/o1](o-options-optimize-code.md)를 설정 합니다.
+코드 최적화를 위한 옵션을 선택 합니다. 특정 최적화 옵션을 사용 하려면 사용자 지정을 선택 합니다. [`/Od`](od-disable-debug.md), [ `/O1` ,를 `/O2` ](o-options-optimize-code.md)설정 합니다.
 
 #### <a name="choices"></a>선택 사항
 
 - **사용자 지정** - 사용자 지정 최적화입니다.
 - **사용 안 함** - 최적화를 사용하지 않습니다.
-- **최대 최적화 (크기 우선)** -다음에 해당 합니다.**`/Os /Oy /Ob2 /Gs /GF /Gy`**
-- **최대 최적화 (속도 우선)** -다음에 해당 합니다.**`/Oi /Ot /Oy /Ob2 /Gs /GF /Gy`**
-- **최적화 (속도 우선)** -다음에 해당 합니다.**`/Oi /Ot /Oy /Ob2`**
+- **최대 최적화 (크기 우선)** -다음에 해당 합니다. **`/Os /Oy /Ob2 /Gs /GF /Gy`**
+- **최대 최적화 (속도 우선)** -다음에 해당 합니다. **`/Oi /Ot /Oy /Ob2 /Gs /GF /Gy`**
+- **최적화 (속도 우선)** -다음에 해당 합니다. **`/Oi /Ot /Oy /Ob2`**
 
 ### <a name="inline-function-expansion"></a>인라인 함수 확장
 
@@ -133,8 +133,8 @@ Windows 런타임 언어 확장을 사용 합니다. [`/ZW`](zw-windows-runtime-
 
 #### <a name="choices"></a>선택 사항
 
-- **작은** 코드에 우선 합니다. 는 속도 보다 크기를 우선 하도록 컴파일러에 지시 하 여 Exe 및 Dll의 크기를 최소화 합니다.
-- **빠른 코드** 를 선호 합니다. 크기 보다 빠른 속도를 선호 하도록 컴파일러에 지시 하 여 Exe 및 Dll의 속도를 최대화 합니다. 이 값은 기본값입니다.
+- **코드** 크기 우선 – 속도 보다 크기를 선호 하도록 컴파일러에 지시 하 여 Exe 및 dll의 크기를 최소화 합니다.
+- **빠른 코드 우선** – 크기 보다 빠른 속도를 선호 하도록 컴파일러에 지시 하 여 Exe 및 dll의 속도를 극대화 합니다. 이 값은 기본값입니다.
 - **둘 다** 크기 및 속도 최적화가 없습니다.
 
 ### <a name="omit-frame-pointers"></a>프레임 포인터 생략
@@ -147,7 +147,7 @@ Windows 런타임 언어 확장을 사용 합니다. [`/ZW`](zw-windows-runtime-
 
 ### <a name="whole-program-optimization"></a>전체 프로그램 최적화
 
-코드 생성을 링크 타임으로 지연 시켜 크로스 모듈 최적화를 사용 하도록 설정 합니다. 링커 옵션 ' 링크 타임 코드 생성 '이 필요 합니다. [`/GL`](gl-whole-program-optimization.md)을 설정 합니다.
+코드 생성을 링크 타임으로 지연 시켜 크로스 모듈 최적화를 사용 하도록 설정 합니다. 링커 옵션 **링크 타임 코드를 생성**해야 합니다. [`/GL`](gl-whole-program-optimization.md)을 설정 합니다.
 
 ## <a name="cc-preprocessor-properties"></a>C/c + + 전처리기 속성
 
@@ -177,7 +177,7 @@ C 및 c + + 소스 파일을 전처리 하 고 전처리 된 출력을 파일에
 
 ### <a name="keep-comments"></a>의견 유지
 
-소스 코드의 주석 스트립을 표시 하지 않습니다. ' 전처리 ' 옵션 중 하나를 설정 해야 합니다. [`/C`](c-preserve-comments-during-preprocessing.md)을 설정 합니다.
+소스 코드의 주석 스트립을 표시 하지 않습니다. **전처리** 옵션을 하나 이상 설정 해야 합니다. [`/C`](c-preserve-comments-during-preprocessing.md)을 설정 합니다.
 
 ## <a name="cc-code-generation-properties"></a>C/c + + 코드 생성 속성
 
@@ -212,7 +212,7 @@ C 및 c + + 소스 파일을 전처리 하 고 전처리 된 출력을 파일에
 
 - **스택 프레임** -스택 프레임 런타임 오류 검사를 사용 하도록 설정 합니다.
 - **초기화 되지 않은 변수** -초기화 되지 않은 변수를 사용 하는 경우를 보고 합니다.
-- **둘 다 (/RTC1, Http-equiv/RTCsu)** -/RTCsu.와 동일 합니다.
+- **둘 다 (/RTC1, Http-equiv/RTCsu)** -와 동일 **`/RTCsu`** 합니다.
 - **기본** -기본 런타임 검사입니다.
 
 ### <a name="runtime-library"></a>런타임 라이브러리
@@ -223,8 +223,8 @@ C 및 c + + 소스 파일을 전처리 하 고 전처리 된 출력을 파일에
 
 - **다중 스레드** -응용 프로그램이 런타임 라이브러리의 다중 스레드 정적 버전을 사용 하도록 합니다.
 - **다중 스레드 디버그** -_DEBUG 및 _MT을 정의 합니다. 이 옵션을 사용 하면 컴파일러가 *LIBCMTD.lib* *`.obj`* *libcmtd.lib* 를 사용 하 여 외부 기호를 확인할 수 있도록 libcmtd.lib 라이브러리 이름이 파일에 저장 됩니다.
-- **다중 스레드 dll** -응용 프로그램이 런타임 라이브러리의 다중 스레드 및 DLL 별 버전을 사용 하도록 합니다. _MT 및 _DLL을 정의 하 고 컴파일러가 라이브러리 이름 *msvcrt.lib* 를 파일에 저장 하도록 합니다. *`.obj`*
-- **다중 스레드 디버그 DLL** -_DEBUG, _MT 및 _DLL를 정의 하 고 응용 프로그램에서 런타임 라이브러리의 디버그 다중 스레드 및 DLL 별 버전을 사용 하도록 합니다. 또한 컴파일러가 라이브러리 이름 *msvcrtd.lib* 를 파일에 저장 합니다. *`.obj`*
+- **다중 스레드 dll** -응용 프로그램이 런타임 라이브러리의 다중 스레드 및 DLL 별 버전을 사용 하도록 합니다. `_MT`및를 정의 하 `_DLL` 고 컴파일러에서 라이브러리 이름 *msvcrt.lib* 를 파일에 저장 하도록 합니다 *`.obj`* .
+- **다중 스레드 디버그 DLL** -, 및를 정의 하 `_DEBUG` `_MT` `_DLL` 고 응용 프로그램에서 런타임 라이브러리의 디버그 다중 스레드 및 DLL 별 버전을 사용 하도록 합니다. 또한 컴파일러가 라이브러리 이름 *msvcrtd.lib* 를 파일에 저장 합니다. *`.obj`*
 
 ### <a name="struct-member-alignment"></a>구조체 멤버 맞춤
 
@@ -259,7 +259,7 @@ C 및 c + + 소스 파일을 전처리 하 고 전처리 된 출력을 파일에
 
 ### <a name="enable-function-level-linking"></a>함수 수준 링크 사용
 
-컴파일러가 개별 함수를 패키지된 함수(COMDAT)의 형태로 패키지할 수 있게 합니다. 편집에 필요하며 계속 작동합니다. [/Gy](gy-enable-function-level-linking.md)를 설정 합니다.
+컴파일러가 개별 함수를 패키지된 함수(COMDAT)의 형태로 패키지할 수 있게 합니다. 편집에 필요하며 계속 작동합니다. [`/Gy`](gy-enable-function-level-linking.md)을 설정 합니다.
 
 ### <a name="enable-parallel-code-generation"></a>병렬 코드 생성 사용
 
@@ -271,11 +271,11 @@ C 및 c + + 소스 파일을 전처리 하 고 전처리 된 출력을 파일에
 
 #### <a name="choices"></a>선택 사항
 
-- **스트리밍 Simd 확장** -스트리밍 simd 확장. 명령은**`/arch:SSE`**
-- **스트리밍 Simd 확장 2** -스트리밍 simd 확장 2 명령은**`/arch:SSE2`**
-- **고급 벡터 확장** -고급 벡터 확장. 명령은**`/arch:AVX`**
-- **고급 벡터 확장 2** -고급 벡터 확장 2 명령은**`/arch:AVX2`**
-- 향상 된 **지침이 없습니다** . 향상 된 지침은 없습니다. 명령은**`/arch:IA32`**
+- **스트리밍 Simd 확장** -스트리밍 simd 확장. 명령은  **`/arch:SSE`**
+- **스트리밍 Simd 확장 2** -스트리밍 simd 확장 2 명령은  **`/arch:SSE2`**
+- **고급 벡터 확장** -고급 벡터 확장. 명령은  **`/arch:AVX`**
+- **고급 벡터 확장 2** -고급 벡터 확장 2 명령은  **`/arch:AVX2`**
+- 향상 된 **지침이 없습니다** . 향상 된 지침은 없습니다. 명령은  **`/arch:IA32`**
 - **설정** 되지 않음-설정 되지 않음
 
 ### <a name="floating-point-model"></a>부동 소수점 모델
@@ -290,11 +290,11 @@ C 및 c + + 소스 파일을 전처리 하 고 전처리 된 출력을 파일에
 
 ### <a name="enable-floating-point-exceptions"></a>부동 소수점 예외 사용
 
-신뢰할 수 있는 부동 소수점 예외 모델입니다. 예외가 트리거되는 즉시 발생 합니다. [/Fp: except](fp-specify-floating-point-behavior.md)를 설정 합니다.
+신뢰할 수 있는 부동 소수점 예외 모델입니다. 예외가 트리거되는 즉시 발생 합니다. [`/fp:except`](fp-specify-floating-point-behavior.md)을 설정 합니다.
 
 ### <a name="create-hotpatchable-image"></a>핫 패치 가능 이미지 만들기
 
-핫 패치를 사용 하는 경우, 컴파일러는 핫 패치를 위해 필요에 따라 각 함수의 첫 번째 명령이 2 바이트 임을 확인 합니다. [/Hotpatch](hotpatch-create-hotpatchable-image.md)를 설정 합니다.
+핫 패치를 사용 하는 경우, 컴파일러는 핫 패치를 위해 필요에 따라 각 함수의 첫 번째 명령이 2 바이트 임을 확인 합니다. [`/hotpatch`](hotpatch-create-hotpatchable-image.md)을 설정 합니다.
 
 ### <a name="spectre-mitigation"></a>스펙터 완화
 
@@ -317,11 +317,11 @@ CVE 2017-5753에 대 한 스펙터 완화 [`/Qspectre`](qspectre.md)을 설정 �
 
 ### <a name="treat-wchar_t-as-built-in-type"></a>Wchar_t를 기본 제공 형식으로 처리
 
-지정 된 경우 형식은에 **`wchar_t`** **`__wchar_t`** 매핑되는 것과 같은 방식으로에 매핑되는 네이티브 형식이 됩니다 **`short`** **`__int16`** . [`/Zc:wchar_t`](zc-wchar-t-wchar-t-is-native-type.md)는 기본적으로 설정 되어 있습니다.
+지정 된 경우 형식은에 **`wchar_t`** **`__wchar_t`** 매핑되는 것과 같은 방식으로에 매핑되는 네이티브 형식이 됩니다 **`short`** **`__int16`** . [`/Zc:wchar_t`](zc-wchar-t-wchar-t-is-native-type.md) 는 기본적으로 설정 되어 있습니다.
 
 ### <a name="force-conformance-in-for-loop-scope"></a>For 루프 범위 강제 규칙
 
-Microsoft extensions를 사용 하 여 for 문 루프의 표준 c + + 동작을 구현 하는 데 사용 됩니다. 설정 [ `/Za` , `/Ze` (언어 확장 사용 안 함)](za-ze-disable-language-extensions.md) [`/Zc:forScope`](zc-forscope-force-conformance-in-for-loop-scope.md)는 기본적으로 설정 되어 있습니다.
+`for`Microsoft 확장을 사용 하 여 문 루프의 표준 c + + 동작을 구현 합니다. 설정 [ `/Za` , `/Ze` (언어 확장 사용 안 함)](za-ze-disable-language-extensions.md) [`/Zc:forScope`](zc-forscope-force-conformance-in-for-loop-scope.md) 는 기본적으로 설정 되어 있습니다.
 
 ### <a name="remove-unreferenced-code-and-data"></a>참조 되지 않은 코드 및 데이터 제거
 
@@ -333,7 +333,7 @@ C + + 11 표준에 따라 캐스트 연산 결과로 rvalue 참조 형식을 식
 
 ### <a name="enable-run-time-type-information"></a>런타임 형식 정보 사용
 
-런타임에 C++ 개체의 형식(런타임 형식 정보)을 검사하는 코드를 추가합니다. [ `/GR` 을 `/GR-` ](gr-enable-run-time-type-information.md)설정 합니다.
+런타임에 c + + 개체 형식 (*런타임 형식 정보*또는 RTTI)을 확인 하는 코드를 추가 합니다. [ `/GR` 을 `/GR-` ](gr-enable-run-time-type-information.md)설정 합니다.
 
 ### <a name="open-mp-support"></a>MP 지원 열기
 
@@ -362,8 +362,8 @@ C + + 모듈 TS 및 표준 라이브러리 모듈에 대 한 실험적 지원.
 
 #### <a name="choices"></a>선택 사항
 
-- **Create** -특정 지점에서 컴파일 상태를 나타내는 미리 컴파일된 헤더 (.pch) 파일을 만들도록 컴파일러에 지시 합니다.
-- **사용** -현재 컴파일에서 미리 컴파일된 헤더 (.pch) 파일을 사용 하도록 컴파일러에 지시 합니다.
+- **Create** - *`.pch`* 특정 지점에서 컴파일 상태를 나타내는 미리 컴파일된 헤더 () 파일을 만들도록 컴파일러에 지시 합니다.
+- **사용** -현재 컴파일에서 미리 컴파일된 헤더 () 파일을 사용 하도록 컴파일러에 지시 *`.pch`* 합니다.
 - 미리 컴파일된 헤더를 사용 **하지 않습니다.** 미리 컴파일된 헤더를 사용 하지 않습니다.
 
 ### <a name="precompiled-header-file"></a>미리 컴파일된 헤더 파일
@@ -387,10 +387,10 @@ C + + 모듈 TS 및 표준 라이브러리 모듈에 대 한 실험적 지원.
 #### <a name="choices"></a>선택 사항
 
 - **목록 없음-나열** 되지 않습니다.
-- **어셈블리 전용 목록** -어셈블리 코드*`.asm`*
+- **어셈블리 전용 목록** -어셈블리 코드 *`.asm`*
 - **컴퓨터 코드와 어셈블리 코드를 사용 하는 어셈블리***`.cod`*
 - 소스 코드 소스 및 어셈블리 코드 **를 포함 하는 어셈블리***`.asm`*
-- **어셈블리, 기계어 코드 및 소스** -어셈블리, 기계어 코드 및 소스 코드*`.cod`*
+- **어셈블리, 기계어 코드 및 소스** -어셈블리, 기계어 코드 및 소스 코드 *`.cod`*
 
 ### <a name="use-unicode-for-assembler-listing"></a>어셈블러 목록에 유니코드 사용
 
@@ -434,10 +434,10 @@ ASM 목록 파일의 상대 경로 또는 이름을 지정 합니다. 파일 또
 
 #### <a name="choices"></a>선택 사항
 
-- **`__cdecl`**- **`__cdecl`** C + + 멤버 함수 및 또는로 표시 된 함수를 제외한 모든 함수에 대해 호출 규칙을 지정 합니다 **`__stdcall`** **`__fastcall`** .
-- **`__fastcall`**- **`__fastcall`** C + + 멤버 함수 및 또는로 표시 된 함수를 제외한 모든 함수에 대해 호출 규칙을 지정 합니다 **`__cdecl`** **`__stdcall`** . 모든 **`__fastcall`** 함수에는 프로토타입이 있어야 합니다.
-- **`__stdcall`**- **`__stdcall`** C + + 멤버 함수 및 또는로 표시 된 함수를 제외한 모든 함수에 대해 호출 규칙을 지정 합니다 **`__cdecl`** **`__fastcall`** . 모든 **`__stdcall`** 함수에는 프로토타입이 있어야 합니다.
-- **`__vectorcall`**- **`__vectorcall`** C + + 멤버 함수 및, 또는로 표시 된 함수를 제외한 모든 함수에 대해 호출 규칙을 지정 합니다 **`__cdecl`** **`__fastcall`** **`__stdcall`** . 모든 **`__vectorcall`** 함수에는 프로토타입이 있어야 합니다.
+- **`__cdecl`** - **`__cdecl`** C + + 멤버 함수 및 또는로 표시 된 함수를 제외한 모든 함수에 대해 호출 규칙을 지정 합니다 **`__stdcall`** **`__fastcall`** .
+- **`__fastcall`** - **`__fastcall`** C + + 멤버 함수 및 또는로 표시 된 함수를 제외한 모든 함수에 대해 호출 규칙을 지정 합니다 **`__cdecl`** **`__stdcall`** . 모든 **`__fastcall`** 함수에는 프로토타입이 있어야 합니다.
+- **`__stdcall`** - **`__stdcall`** C + + 멤버 함수 및 또는로 표시 된 함수를 제외한 모든 함수에 대해 호출 규칙을 지정 합니다 **`__cdecl`** **`__fastcall`** . 모든 **`__stdcall`** 함수에는 프로토타입이 있어야 합니다.
+- **`__vectorcall`** - **`__vectorcall`** C + + 멤버 함수 및, 또는로 표시 된 함수를 제외한 모든 함수에 대해 호출 규칙을 지정 합니다 **`__cdecl`** **`__fastcall`** **`__stdcall`** . 모든 **`__vectorcall`** 함수에는 프로토타입이 있어야 합니다.
 
 ### <a name="compile-as"></a>다음으로 컴파일
 
