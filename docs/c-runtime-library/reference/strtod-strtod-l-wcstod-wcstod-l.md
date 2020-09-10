@@ -51,12 +51,12 @@ helpviewer_keywords:
 - _strtod_l function
 - string conversion, to floating point values
 ms.assetid: 0444f74a-ba2a-4973-b7f0-1d77ba88c6ed
-ms.openlocfilehash: aa6f40c91f9be906e3f51df5788483410f6077a3
-ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
+ms.openlocfilehash: 1e75fe39c8ab7020a088307421926327d4043ba8
+ms.sourcegitcommit: efed9ed109862c6c2a042f2663b680e8ca4e16a1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89554957"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89933829"
 ---
 # <a name="strtod-_strtod_l-wcstod-_wcstod_l"></a>strtod, _strtod_l, wcstod, _wcstod_l
 
@@ -120,7 +120,7 @@ double wcstod_l(
 |**_tcstod**|**strtod**|**strtod**|**wcstod**|
 |**_tcstod_l**|**_strtod_l**|**_strtod_l**|**_wcstod_l**|
 
-현재 로캘의 **LC_NUMERIC** 범주 설정은 *strsource*의 기 하 점 문자 인식 여부를 결정 합니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_L** 접미사가 없는 함수는 현재 로캘을 사용 합니다. **_strtod_l** 은 전달 된 *로캘을* 대신 사용 한다는 점을 제외 하 고 **_strtod_l** 와 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+현재 로캘의 **LC_NUMERIC** 범주 설정은 *strsource*의 기 하 점 문자 인식 여부를 결정 합니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_L** 접미사가 없는 함수는 현재 로캘을 사용 합니다. **_strtod_l** 은 이전에 전달 된 *로캘을* 대신 사용 한다는 점을 제외 하 고 **_strtod** 와 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 *Endptr* 이 **NULL**이 아닌 경우 검색을 중지 한 문자에 대 한 포인터는 *endptr*에서 가리키는 위치에 저장 됩니다. 올바른 숫자를 찾을 수 없거나 잘못 된 밑을 지정 하 여 변환을 수행할 수 없는 경우 *Strsource* 의 값은 *endptr*에서 가리키는 위치에 저장 됩니다.
 
