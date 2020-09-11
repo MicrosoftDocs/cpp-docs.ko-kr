@@ -64,6 +64,8 @@
       href: ../c-runtime-library/crt-initialization.md
     - name: CRT의 전역 상태
       href: ../c-runtime-library/global-state.md
+    - name: 형식-제네릭 수학
+      href: ../c-runtime-library/tgmath.md
 - name: 범주별 유버니설 C 런타임 루틴
   expanded: false
   items:
