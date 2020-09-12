@@ -1,5 +1,5 @@
 ---
-title: '&lt;memory_resource&gt; 함수'
+title: '&lt;memory_resource &gt; 함수'
 ms.date: 11/04/2016
 f1_keywords:
 - memory_resource/std::get_default_resource
@@ -13,34 +13,34 @@ helpviewer_keywords:
 - std::null_memory_resource [C++]
 - std::polymorphic_allocator [C++]
 - std::set_default_resource [C++]
-ms.openlocfilehash: 35b624d2e486d3888f7d40e847bb290a73310748
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 19d061b75a4f90a5779cad1a131e304623c4adf8
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79425486"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90040589"
 ---
-# <a name="ltnumericgt-functions"></a>&lt;numeric&gt; 함수
+# <a name="ltmemory_resourcegt-functions"></a>&lt;memory_resource &gt; 함수
 
-## <a name="get_default"></a>get_default_resource
+## <a name="get_default_resource"></a><a name="get_default"></a> get_default_resource
 
 ```cpp
 memory_resource* get_default_resource() noexcept;
 ```
 
-## <a name="new_delete"></a>new_delete_resource
+## <a name="new_delete_resource"></a><a name="new_delete"></a> new_delete_resource
 
 ```cpp
 memory_resource* new_delete_resource() noexcept;
 ```
 
-## <a name="null_memory"></a>null_memory_resource
+## <a name="null_memory_resource"></a><a name="null_memory"></a> null_memory_resource
 
 ```cpp
 memory_resource* null_memory_resource() noexcept;
 ```
 
-## <a name="poly_alloc"></a>polymorphic_allocator
+## <a name="polymorphic_allocator"></a><a name="poly_alloc"></a> polymorphic_allocator
 
 ```cpp
 template <class Tp>
@@ -80,7 +80,7 @@ class polymorphic_allocator {
 };
 ```
 
-## <a name="set_default"></a>set_default_resource
+## <a name="set_default_resource"></a><a name="set_default"></a> set_default_resource
 
 ```cpp
 memory_resource* set_default_resource(memory_resource* r) noexcept;

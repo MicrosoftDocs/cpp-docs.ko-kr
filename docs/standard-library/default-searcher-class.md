@@ -5,12 +5,12 @@ f1_keywords:
 - functional/std::default_searcher
 helpviewer_keywords:
 - std::default_searcher [C++]
-ms.openlocfilehash: 3b5b05dfa2613f9eeaaa18fa8066bcd44f57d1be
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 307fc6da3b383690e0b65bff2a72f386a37d6711
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87203730"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90039692"
 ---
 # <a name="default_searcher-class"></a>default_searcher 클래스
 
@@ -36,14 +36,14 @@ class default_searcher
 
 ## <a name="members"></a>멤버
 
-| | |
+| 멤버 | Description |
 | - | - |
 | **생성자** | |
-| [default_searcher](#default-searcher-constructor) | |
+| [default_searcher](#default-searcher-constructor) | 검색자 인스턴스를 생성 합니다. |
 | **연산자** | |
-| [연산자 ()](#operator-call) | |
+| [연산자 ()](#operator-call) | 시퀀스에서 작업을 호출 합니다. |
 
-## <a name="default_searcher-constructor"></a><a name="default-searcher-constructor"></a>default_searcher 생성자
+## <a name="default_searcher-constructor"></a><a name="default-searcher-constructor"></a> default_searcher 생성자
 
 `default_searcher`검색할 시퀀스와 같음 조건자를 사용 하 여 함수 개체를 생성 합니다.
 
@@ -76,7 +76,7 @@ constexpr default_searcher(         // C++20
 
 이 클래스는 c + + 17의 새로운 클래스입니다. C + + 20에서 생성자를 만들었습니다 **`constexpr`** .
 
-## <a name="operator"></a><a name="operator-call"></a>연산자 ()
+## <a name="operator"></a><a name="operator-call"></a> 연산자 ()
 
 함수 연산자의 호출 연산자입니다. 인수 시퀀스에서 `[first, last)` 생성자에 지정 된 시퀀스를 검색 합니다.
 

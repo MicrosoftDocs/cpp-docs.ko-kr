@@ -1,6 +1,7 @@
 ---
 title: unordered_set 클래스
-ms.date: 11/04/2016
+description: '`unordered_set`순서가 지정 되지 않은 컬렉션에서 데이터를 저장 하 고 검색 하는 데 사용 되는 c + + 표준 라이브러리 컨테이너 클래스에 대 한 API 참조입니다.'
+ms.date: 9/9/2020
 f1_keywords:
 - unordered_set/std::unordered_set
 - unordered_set/std::unordered_set::allocator_type
@@ -26,6 +27,7 @@ f1_keywords:
 - unordered_set/std::unordered_set::cend
 - unordered_set/std::unordered_set::clear
 - unordered_set/std::unordered_set::count
+- unordered_set/std::unordered_set::contains
 - unordered_set/std::unordered_set::emplace
 - unordered_set/std::unordered_set::emplace_hint
 - unordered_set/std::unordered_set::empty
@@ -71,6 +73,7 @@ helpviewer_keywords:
 - std::unordered_set::cbegin
 - std::unordered_set::cend
 - std::unordered_set::clear
+- std::unordered_set::contains
 - std::unordered_set::count
 - std::unordered_set::emplace
 - std::unordered_set::emplace_hint
@@ -134,16 +137,16 @@ helpviewer_keywords:
 - std::unordered_set::size
 - std::unordered_set::swap
 ms.assetid: ac08084e-05a7-48c0-9ae4-d40c529922dd
-ms.openlocfilehash: 5eb8a6902324ee069ff275e77b97703ba6ba3356
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 396465b24e9d7cf0facbe324c7b01479fe8e9b6b
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839519"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90040043"
 ---
 # <a name="unordered_set-class"></a>unordered_set 클래스
 
-클래스 템플릿은 형식의 다양 한 길이 요소 시퀀스를 제어 하는 개체를 설명 합니다 `const Key` . 시퀀스는 해시 함수로 약하게 정렬됩니다. 즉, 시퀀스를 버킷이라고 하는 하위 시퀀스의 정렬된 집합으로 분할합니다. 비교 함수는 각 버킷 내에서 요소 쌍이 동일하게 정렬되었는지 여부를 확인합니다. 각 요소는 정렬 키와 값으로 사용됩니다. 시퀀스는 최소한 모든 버킷이 대략 동일한 크기일 경우 시퀀스의 요소 수와 상관없이 작업 수를 사용하여 임의 요소를 조회, 삽입, 제거하는 방식으로 나타냅니다(일정 시간). 모든 요소가 하나의 버킷에 있는 최악의 경우에는 작업 수가 시퀀스의 요소 수에 비례합니다(선형 시간). 또한, 요소를 삽입할 경우 어떤 반복기도 무효화되지 않으며, 요소를 제거할 경우 제거된 요소를 가리키고 있는 반복기만 무효화됩니다.
+클래스 템플릿은 형식의 다양 한 길이 요소 시퀀스를 제어 하는 개체를 설명 합니다 `const Key` . 시퀀스는 해시 함수로 약하게 정렬됩니다. 즉, 시퀀스를 버킷이라고 하는 하위 시퀀스의 정렬된 집합으로 분할합니다. 각 버킷 내에서 비교 함수는 요소 쌍의 순서가 동일한 지 여부를 확인 합니다. 각 요소는 정렬 키와 값으로 사용됩니다. 시퀀스는 최소한 모든 버킷이 대략 동일한 크기일 경우 시퀀스의 요소 수와 상관없이 작업 수를 사용하여 임의 요소를 조회, 삽입, 제거하는 방식으로 나타냅니다(일정 시간). 모든 요소가 하나의 버킷에 있는 최악의 경우에는 작업 수가 시퀀스의 요소 수에 비례합니다(선형 시간). 요소를 삽입 하면 반복기가 무효화 되지 않으며, 요소를 제거 하면 제거 된 요소를 가리키는 반복기만 무효화 됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -174,7 +177,7 @@ class unordered_set;
 
 ### <a name="typedefs"></a>Typedefs
 
-|Name|설명|
+|Name|Description|
 |-|-|
 |[allocator_type](#allocator_type)|스토리지 관리를 위한 할당자의 형식입니다.|
 |[const_iterator](#const_iterator)|제어되는 시퀀스에 대한 상수 반복기의 형식입니다.|
@@ -194,7 +197,7 @@ class unordered_set;
 
 ### <a name="functions"></a>Functions
 
-|Name|설명|
+|Name|Description|
 |-|-|
 |[시작](#begin)|제어되는 시퀀스의 시작을 지정합니다.|
 |[버킷](#bucket)|키 값에 대한 버킷 개수를 가져옵니다.|
@@ -203,6 +206,7 @@ class unordered_set;
 |[cbegin](#cbegin)|제어되는 시퀀스의 시작을 지정합니다.|
 |[cend](#cend)|제어되는 시퀀스의 끝을 지정합니다.|
 |[해제](#clear)|모든 요소를 제거합니다.|
+|[contains](#contains)<sup>c + + 20</sup> 포함|에 지정 된 키를 가진 요소가 있는지 확인 `unordered_set` 합니다.|
 |[count](#count)|지정한 키와 일치하는 요소의 수를 찾습니다.|
 |[emplace](#emplace)|생성된 요소를 추가합니다.|
 |[emplace_hint](#emplace_hint)|힌트와 함께 생성된 요소를 추가합니다.|
@@ -226,7 +230,7 @@ class unordered_set;
 
 ### <a name="operators"></a>연산자
 
-|Name|설명|
+|Name|Description|
 |-|-|
 |[unordered_set:: operator =](#op_eq)|해시 테이블을 복사합니다.|
 
@@ -236,9 +240,9 @@ class unordered_set;
 
 개체는 또한 최대 로드 비율(버킷당 최대 평균 요소 수를 원하는 대로 지정)를 저장합니다. 요소를 삽입 하면 [unordered_set:: load_factor](#load_factor) `()` 가 최대 로드 비율을 초과 하면 컨테이너는 버킷 수를 늘리고 필요에 따라 해시 테이블을 다시 작성 합니다.
 
-제어된 시퀀스의 실제 요소 순서는 해시 함수, 비교 함수, 삽입 순서, 최대 로드 비율, 현재 버킷 수에 따라 달라집니다. 제어된 시퀀스의 요소 순서는 일반적으로 예측할 수 없습니다. 하지만 동일하게 정렬된 요소의 하위 집합은 제어된 시퀀스에서 항상 인접해 있습니다.
+제어된 시퀀스의 실제 요소 순서는 해시 함수, 비교 함수, 삽입 순서, 최대 로드 비율, 현재 버킷 수에 따라 달라집니다. 제어 되는 시퀀스의 요소 순서는 일반적으로 예측할 수 없습니다. 하지만 동일하게 정렬된 요소의 하위 집합은 제어된 시퀀스에서 항상 인접해 있습니다.
 
-개체는 [unordered_set:: allocator_type](#allocator_type)형식의 저장 된 할당자 개체를 통해 제어 하는 시퀀스에 대 한 저장소를 할당 하 고 해제 합니다. 이러한 할당자 개체에는 형식의 개체와 동일한 외부 인터페이스가 있어야 합니다 `allocator` . 컨테이너 개체를 할당하는 경우 저장된 할당자 개체는 복사되지 않습니다.
+개체는 [unordered_set:: allocator_type](#allocator_type)형식의 저장 된 할당자 개체를 통해 제어 하는 시퀀스에 대 한 저장소를 할당 하 고 해제 합니다. 이러한 할당자 개체에는 형식의 개체와 동일한 외부 인터페이스가 있어야 합니다 `allocator` . 저장 된 할당자 개체는 컨테이너 개체가 할당 될 때 복사 되지 않습니다.
 
 ## <a name="unordered_setallocator_type"></a><a name="allocator_type"></a> unordered_set:: allocator_type
 
@@ -566,7 +570,7 @@ const_iterator cbegin() const;
 
 ### <a name="remarks"></a>설명
 
-`cbegin` 반환 값을 사용하여 범위의 요소를 수정할 수 없습니다.
+의 반환 값을 사용 하 여 `cbegin` 범위의 요소를 수정할 수 없습니다.
 
 `begin()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 이 예제에서는 `Container` 및를 지 원하는 수정 가능 (비 **`const`** ) 컨테이너로 가정 `begin()` `cbegin()` 합니다.
 
@@ -604,7 +608,7 @@ auto i2 = Container.cend();
 // i2 isContainer<T>::const_iterator
 ```
 
-`cend`에서 반환한 값은 역참조되지 않아야 합니다.
+에서 반환 된 값은 `cend` 역참조 되지 않아야 합니다.
 
 ## <a name="clear"></a><a name="clear"></a> 해제
 
@@ -680,7 +684,7 @@ typedef T1 const_iterator;
 
 ### <a name="remarks"></a>설명
 
-이 형식은 제어되는 시퀀스의 상수 정방향 반복기로 사용될 수 있는 개체를 설명합니다. 여기서는 구현에서 정의된 형식 `T1`의 동의어로 설명됩니다.
+이 형식은 제어되는 시퀀스의 상수 정방향 반복기로 사용될 수 있는 개체를 설명합니다. 구현 정의 형식에 대 한 동의어로 여기에 설명 되어 `T1` 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -722,7 +726,7 @@ typedef T5 const_local_iterator;
 
 ### <a name="remarks"></a>설명
 
-형식은 버킷의 상수 정방향 반복기로 사용될 수 있는 개체를 설명합니다. 여기서는 구현에서 정의된 형식 `T5`의 동의어로 설명됩니다.
+형식은 버킷의 상수 정방향 반복기로 사용될 수 있는 개체를 설명합니다. 구현 정의 형식에 대 한 동의어로 여기에 설명 되어 `T5` 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -849,6 +853,57 @@ int main()
 [c] [b] [a]
 ```
 
+## <a name="contains"></a><a name="contains"></a> 에서는
+
+에 지정 된 키를 가진 요소가 있는지 여부를 확인 `unordered_set` 합니다.
+
+```cpp
+bool contains(const Key& key) const;
+template<class K> bool contains(const K& key) const;
+```
+
+### <a name="parameters"></a>매개 변수
+
+*시계의*\
+키의 형식입니다.
+
+*키인지*\
+찾을 요소의 키 값입니다.
+
+### <a name="return-value"></a>반환 값
+
+`true` 요소가 컨테이너에 있으면이 고, 그렇지 않으면입니다. `false` 그렇지 않으면입니다.
+
+### <a name="remarks"></a>설명
+
+`contains()` 는 c + + 20의 새로운 기능은입니다. 이를 사용 하려면 [/sd: c + + 최신](../build/reference/std-specify-language-standard-version.md) 컴파일러 옵션을 지정 합니다.
+
+`template<class K> bool contains(const K& key) const` 가 투명 한 경우에만 오버 로드 확인에 참여 `key_compare` 합니다.
+
+### <a name="example"></a>예제
+
+```cpp
+// Requires /std:c++latest
+#include <unordered_set>
+#include <iostream>
+
+int main()
+{
+    std::unordered_set<int> theUnorderedSet = { 1, 2 };
+
+    std::cout << std::boolalpha; // so booleans show as 'true' or 'false'
+    std::cout << theUnorderedSet.contains(2) << '\n';
+    std::cout << theUnorderedSet.contains(3) << '\n';
+    
+    return 0;
+}
+```
+
+```Output
+true
+false
+```
+
 ## <a name="count"></a><a name="count"></a> 수
 
 지정한 키와 일치하는 요소의 수를 찾습니다.
@@ -913,7 +968,7 @@ typedef T3 difference_type;
 
 ### <a name="remarks"></a>설명
 
-부호 있는 정수 형식은 제어되는 시퀀스에서 두 요소의 주소 간 차이점을 나타낼 수 있는 개체를 설명합니다. 여기서는 구현에서 정의된 형식 `T3`의 동의어로 설명됩니다.
+부호 있는 정수 형식은 제어되는 시퀀스에서 두 요소의 주소 간 차이점을 나타낼 수 있는 개체를 설명합니다. 구현 정의 형식에 대 한 동의어로 여기에 설명 되어 `T3` 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -985,7 +1040,7 @@ Args&&... args);
 
 이 함수는 반복기나 참조를 무효화 되지 않습니다.
 
-삽입 중에 예외가 throw되었으나 컨테이너의 해시 함수에서 발생하지 않은 경우에는 컨테이너가 수정되지 않습니다. 예외가 해시 함수에서 throw된 경우 결과는 정의되어 있지 않습니다.
+삽입 하는 동안 예외가 throw 되었지만 컨테이너의 해시 함수에서 발생 하지 않는 경우 컨테이너는 수정 되지 않습니다. 예외가 해시 함수에서 throw된 경우 결과는 정의되어 있지 않습니다.
 
 코드 예제를 보려면 [set:: emplace](../standard-library/set-class.md#emplace)를 참조 하세요.
 
@@ -1006,7 +1061,7 @@ Args&&... args);
 unordered_set가 해당 요소를 이미 포함하고 있지 않거나, 보다 일반적으로는 키가 동등하게 정렬된 요소를 이미 포함하고 있지 않을 경우 unordered_set에 삽입되는 요소를 생성하기 위해 전달되는 인수입니다.
 
 *위치*\
-올바른 삽입 지점 검색을 시작할 위치와 관련된 힌트입니다.
+올바른 삽입 지점 검색을 시작할 위치에 대 한 힌트입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1018,7 +1073,7 @@ unordered_set가 해당 요소를 이미 포함하고 있지 않거나, 보다 �
 
 이 함수는 반복기나 참조를 무효화 되지 않습니다.
 
-삽입 중에 예외가 throw되었으나 컨테이너의 해시 함수에서 발생하지 않은 경우에는 컨테이너가 수정되지 않습니다. 예외가 해시 함수에서 throw된 경우 결과는 정의되어 있지 않습니다.
+삽입 하는 동안 예외가 throw 되었지만 컨테이너의 해시 함수에서 발생 하지 않는 경우 컨테이너는 수정 되지 않습니다. 예외가 해시 함수에서 throw된 경우 결과는 정의되어 있지 않습니다.
 
 코드 예제를 보려면 [set::emplace_hint](../standard-library/set-class.md#emplace_hint)를 참조하세요.
 
@@ -1491,7 +1546,7 @@ Unordered_set에서 [value_type](../standard-library/map-class.md#value_type)요
 
 이 함수는 반복기, 포인터 또는 참조를 무효화하지 않습니다.
 
-요소를 하나만 삽입하는 중 예외가 throw되었으나 컨테이너의 해시 함수에서 발생하지 않은 경우에는 컨테이너의 상태가 수정되지 않습니다. 예외가 해시 함수에서 throw된 경우 결과는 정의되어 있지 않습니다. 여러 요소를 삽입하는 중 예외가 throw되면 컨테이너는 지정되지 않았으나 유효한 상태로 남아 있습니다.
+하나의 요소만 삽입 하는 동안 예외가 throw 되지만 컨테이너의 해시 함수에서 발생 하지 않는 경우 컨테이너의 상태가 수정 되지 않습니다. 예외가 해시 함수에서 throw된 경우 결과는 정의되어 있지 않습니다. 여러 요소를 삽입하는 중 예외가 throw되면 컨테이너는 지정되지 않았으나 유효한 상태로 남아 있습니다.
 
 `pair` `pr` 단일 요소 멤버 함수에서 반환 된의 반복기 구성 요소에 액세스 하려면를 사용 하 `pr.first` 고 반환 된 쌍 내에서 반복기를 역참조 하려면를 사용 하 여 `*pr.first` 요소를 제공 합니다. 구성 요소에 액세스 하려면를 **`bool`** 사용 `pr.second` 합니다. 예제는 이 문서 뒷부분에 있는 샘플 코드를 참조하세요.
 
@@ -1744,7 +1799,7 @@ typedef T4 local_iterator;
 
 ### <a name="remarks"></a>설명
 
-형식은 버킷의 정방향 반복기로 사용될 수 있는 개체를 설명합니다. 여기서는 구현에서 정의된 형식 `T4`의 동의어로 설명됩니다.
+형식은 버킷의 정방향 반복기로 사용될 수 있는 개체를 설명합니다. 구현 정의 형식에 대 한 동의어로 여기에 설명 되어 `T4` 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -2293,7 +2348,7 @@ typedef T2 size_type;
 
 ### <a name="remarks"></a>설명
 
-부호 없는 정수 형식은 제어되는 시퀀스의 길이를 나타낼 수 있는 개체를 설명합니다. 여기서는 구현에서 정의된 형식 `T2`의 동의어로 설명됩니다.
+부호 없는 정수 형식은 제어되는 시퀀스의 길이를 나타낼 수 있는 개체를 설명합니다. 구현 정의 형식에 대 한 동의어로 여기에 설명 되어 `T2` 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -2464,7 +2519,7 @@ unordered_set(
 
 모든 생성자는 또한 여러 개의 저장된 값을 초기화합니다. 복사 생성자의 경우 값은 *오른쪽*에서 가져옵니다. 그렇지 않은 경우:
 
-버킷 최소 수는 인수 *bucket_count*(있는 경우)입니다. 그렇지 않으면 여기에 구현 정의 값으로 설명 된 기본값입니다 `N0` .
+버킷 최소 수는 인수 *bucket_count*(있는 경우)입니다. 그렇지 않으면 여기에 구현 정의 값으로 설명 된 기본값 `N0` 입니다.
 
 해시 함수 개체는 인수 *해시*(있는 경우)입니다. 그렇지 않으면 `Hash()` 입니다.
 

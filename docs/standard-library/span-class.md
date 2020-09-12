@@ -1,5 +1,6 @@
 ---
 title: span 클래스 (c + + 표준 라이브러리) | Microsoft Docs
+description: 연속 하는 개체 시퀀스에 대 한 간단한 뷰를 제공 하는 STL (표준 템플릿 라이브러리) span 클래스에 대 한 API 참조입니다.
 ms.date: 05/28/2020
 f1_keywords:
 - span/std::span
@@ -51,12 +52,12 @@ helpviewer_keywords:
 - std::span [C++], rend
 - std::span [C++], size
 - std::span [C++], size_bytes
-ms.openlocfilehash: 4d5cf7f38d10814b3112a25a8da0e412f0d65093
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 297104820f5498e59397db9025aed1675984a060
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88560454"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90039966"
 ---
 # <a name="span-class-c-standard-library"></a>span 클래스 (c + + 표준 라이브러리)
 
@@ -133,7 +134,7 @@ class span;
 
 **네임스페이스:** std
 
-**컴파일러 옵션:** /std: c + + 최신
+**컴파일러 옵션:** [/std: c + + 최신](../build/reference/std-specify-language-standard-version.md)
 
 ## <a name="spanback"></a><a name="back"></a> `span::back`
 

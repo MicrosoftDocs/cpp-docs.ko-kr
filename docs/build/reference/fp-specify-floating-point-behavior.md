@@ -1,4 +1,4 @@
-﻿---
+---
 title: /fp(부동 소수점 동작 지정)
 ms.date: 11/09/2018
 f1_keywords:
@@ -11,12 +11,12 @@ helpviewer_keywords:
 - -fp compiler option [C++]
 - /fp compiler option [C++]
 ms.assetid: 10469d6b-e68b-4268-8075-d073f4f5d57e
-ms.openlocfilehash: f85f9b397ef3ab5bd070be1f4c81845405b14020
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7a8ae885bbbf00ae916505bf5df646b32268a17a
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234382"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90040914"
 ---
 # <a name="fp-specify-floating-point-behavior"></a>/fp(부동 소수점 동작 지정)
 
@@ -43,11 +43,11 @@ ms.locfileid: "87234382"
 
 #### <a name="strict"></a>strict
 
-`/fp:strict`는와 유사 `/fp:precise` 합니다. 즉, 컴파일러는 대상 컴퓨터에 대 한 개체 코드를 생성 하 고 최적화 하 고 특수 값을 처리할 때 표준을 관찰 하는 부동 소수점 코드의 소스 순서 및 반올림 속성을 유지 합니다. 또한 프로그램은 런타임에 부동 소수점 환경에 안전 하 게 액세스 하거나 수정할 수 있습니다.
+`/fp:strict` 는와 유사 `/fp:precise` 합니다. 즉, 컴파일러는 대상 컴퓨터에 대 한 개체 코드를 생성 하 고 최적화 하 고 특수 값을 처리할 때 표준을 관찰 하는 부동 소수점 코드의 소스 순서 및 반올림 속성을 유지 합니다. 또한 프로그램은 런타임에 부동 소수점 환경에 안전 하 게 액세스 하거나 수정할 수 있습니다.
 
 에서 `/fp:strict` 컴파일러는 프로그램에서 부동 소수점 예외를 안전 하 게 마스크 해제 하거나, 부동 소수점 상태 레지스터를 읽거나 쓰거나, 반올림 모드를 변경할 수 있도록 하는 코드를 생성 합니다. 식 계산 중에 대입문에서 부동 소수점 인수가 함수 호출에 전달 될 때 및 함수 호출에서 부동 소수점 값이 반환 될 때 식 계산 중 네 개의 특정 지점에서 소스 코드 전체 자릿수를 반올림 합니다. 중간 계산은 컴퓨터 전체 자릿수에서 수행할 수 있습니다. 대입문를 사용 하 여 중간 계산을 명시적으로 반올림할 수 있습니다. 변환이 비트 동일한 결과를 생성 하는 것이 보장 되지 않는 한, 컴파일러는 다시 연결 또는 대 수 같은 부동 소수점 식에 대 한 변환을 수행 하지 않습니다. 특수 값 (NaN, + infinity,-infinity,-0.0)을 포함 하는 식은 IEEE 754 사양에 따라 처리 됩니다. 예를 들어 `x != x` **`true`** 는 x가 NaN 인 경우로 평가 됩니다. 부동 소수점 축약은에서 생성 되지 않습니다 `/fp:strict` .
 
-`/fp:strict`는 `/fp:precise` 컴파일러에서 예외를 트래핑 하는 추가 명령을 삽입 해야 하 고 런타임에 프로그램에서 부동 소수점 환경에 액세스 하거나 수정할 수 있도록 하는 것 보다 계산 비용이 더 많이 듭니다. 코드에서이 기능을 사용 하지 않고 소스 코드 순서 지정 및 반올림이 필요 하거나 특수 값을 사용 하는 경우를 사용 `/fp:precise` 합니다. 그렇지 않으면 `/fp:fast` 더 빠르고 작은 코드를 생성할 수 있는를 사용 하는 것이 좋습니다.
+`/fp:strict` 는 `/fp:precise` 컴파일러에서 예외를 트래핑 하는 추가 명령을 삽입 해야 하 고 런타임에 프로그램에서 부동 소수점 환경에 액세스 하거나 수정할 수 있도록 하는 것 보다 계산 비용이 더 많이 듭니다. 코드에서이 기능을 사용 하지 않고 소스 코드 순서 지정 및 반올림이 필요 하거나 특수 값을 사용 하는 경우를 사용 `/fp:precise` 합니다. 그렇지 않으면 `/fp:fast` 더 빠르고 작은 코드를 생성할 수 있는를 사용 하는 것이 좋습니다.
 
 #### <a name="fast"></a>빠르지
 
@@ -55,7 +55,7 @@ ms.locfileid: "87234382"
 
 에서 `/fp:fast` 컴파일러는 기본 부동 소수점 환경에서 실행 하기 위한 코드를 생성 하 고 런타임에 부동 소수점 환경이 액세스 또는 수정 되지 않는다고 가정 합니다. 즉, 코드에서 부동 소수점 예외를 마스크 해제 하거나, 부동 소수점 상태 레지스터를 읽거나 쓰거나, 반올림 모드를 변경 하지 않는 것으로 가정 합니다.
 
-`/fp:fast`는 엄격한 소스 코드 순서 지정 및 부동 소수점 식의 반올림이 필요 하지 않으며 NaN과 같은 특수 한 값을 처리 하기 위한 표준 규칙을 사용 하지 않는 프로그램을 위한 것입니다. 부동 소수점 코드에서 소스 코드 순서 지정 및 반올림을 유지 해야 하거나 특수 값의 표준 동작에 의존 하는 경우에는 [/fp: precise](#precise)를 사용 합니다. 코드에서 부동 소수점 환경을 액세스 하거나 수정 하 여 반올림 모드를 변경 하거나 부동 소수점 예외의 마스크를 해제 하거나 부동 소수점 상태를 확인 하는 경우 [/fp: strict](#strict)를 사용 합니다.
+`/fp:fast` 는 엄격한 소스 코드 순서 지정 및 부동 소수점 식의 반올림이 필요 하지 않으며 NaN과 같은 특수 한 값을 처리 하기 위한 표준 규칙을 사용 하지 않는 프로그램을 위한 것입니다. 부동 소수점 코드에서 소스 코드 순서 지정 및 반올림을 유지 해야 하거나 특수 값의 표준 동작에 의존 하는 경우에는 [/fp: precise](#precise)를 사용 합니다. 코드에서 부동 소수점 환경을 액세스 하거나 수정 하 여 반올림 모드를 변경 하거나 부동 소수점 예외의 마스크를 해제 하거나 부동 소수점 상태를 확인 하는 경우 [/fp: strict](#strict)를 사용 합니다.
 
 #### <a name="except"></a>except
 
@@ -73,11 +73,11 @@ ms.locfileid: "87234382"
 
 컴파일러는 명령줄에 지정 된 부동 소수점 동작 [float_control](../../preprocessor/float-control.md), [fenv_access](../../preprocessor/fenv-access.md)및 [fp_contract](../../preprocessor/fp-contract.md)를 재정의 하는 세 가지 pragma 지시문을 제공 합니다. 이러한 지시문을 사용 하 여 함수 내에서가 아니라 함수 수준에서 부동 소수점 동작을 제어할 수 있습니다. 이러한 지시문은 옵션과 직접 일치 하지 않습니다 `/fp` . 다음 표에서는 `/fp` options 및 pragma 지시문이 서로 매핑되는 방법을 보여 줍니다. 자세한 내용은 개별 옵션 및 pragma 지시문에 대 한 설명서를 참조 하세요.
 
-||float_control (정확한)|float_control (제외)|fenv_access|fp_contract|
+| 옵션 | float_control (정확한) | float_control (제외) | fenv_access | fp_contract |
 |-|-|-|-|-|
-|`/fp:fast`|끄기|끄기|끄기|on|
-|`/fp:precise`|on|끄기|끄기|on|
-|`/fp:strict`|on|on|on|끄기|
+|`/fp:fast`|끄기|끄기|끄기|On|
+|`/fp:precise`|on|끄기|끄기|On|
+|`/fp:strict`|On|On|on|끄기|
 
 ### <a name="the-default-floating-point-environment"></a>기본 부동 소수점 환경
 

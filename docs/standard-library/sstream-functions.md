@@ -4,18 +4,16 @@ ms.date: 11/04/2016
 f1_keywords:
 - sstream/std::swap
 ms.assetid: bc9607e8-7c6b-44ef-949b-19e917b450ad
-ms.openlocfilehash: 722cba257b12bb753aaa61ac2f430df76c2ceb93
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 43fcffe12afe50a94f06a18e7ee06729bc85854e
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88560376"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90039900"
 ---
 # <a name="ltsstreamgt-functions"></a>&lt;sstream&gt; 함수
 
-||
-|-|
-|[스왑을](#sstream_swap)|
+[스왑을](#sstream_swap)
 
 ## <a name="swap"></a><a name="sstream_swap"></a> 스왑을
 

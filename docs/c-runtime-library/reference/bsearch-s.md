@@ -28,12 +28,12 @@ helpviewer_keywords:
 - arrays [CRT], binary search
 - bsearch_s function
 ms.assetid: d5690d5e-6be3-4f1d-aa0b-5ca6dbded276
-ms.openlocfilehash: 20b4c482210f480730f7da4c89549d207ea6ca7d
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 348638b2a6b5a97491d9929b22a983b43794da9a
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845174"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90041629"
 ---
 # <a name="bsearch_s"></a>bsearch_s
 
@@ -80,7 +80,7 @@ void *bsearch_s(
 
 ### <a name="error-conditions"></a>오류 조건
 
-|*key*|*base*|*과*|*number*|*width*|**`errno`**|
+|*key*|*base*|*과*|*number*|*width(너비)*|**`errno`** 기본값|
 |-|-|-|-|-|-|
 |**NULL**|any|any|any|any|**EINVAL**|
 |any|**NULL**|any|!= 0|any|**EINVAL**|
@@ -91,7 +91,7 @@ void *bsearch_s(
 
 **Bsearch_s** 함수는 각 *너비가* 바이트 인 *number* 요소의 정렬 된 배열에 대해 이진 검색을 수행 합니다. *기준* 값은 검색할 배열 기준에 대 한 포인터이 고 *key* 는 검색 중인 값입니다. *Compare* 매개 변수는 요청 된 키를 배열 요소와 비교 하 고 해당 관계를 지정 하는 다음 값 중 하나를 반환 하는 사용자 제공 루틴에 대 한 포인터입니다.
 
-|*비교* 루틴에서 반환 된 값|설명|
+|*비교* 루틴에서 반환 된 값|Description|
 |-----------------------------------------|-----------------|
 |\< 0|키가 배열 요소보다 작습니다.|
 |0|키가 배열 요소와 같습니다.|

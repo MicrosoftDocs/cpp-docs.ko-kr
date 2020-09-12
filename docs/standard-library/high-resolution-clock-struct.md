@@ -12,14 +12,14 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a79cb91a6b0e6ca633540fd37f7a0e1ece53b712
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 341cae04742d72fdcc7483e74977bf413854df82
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845788"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90039653"
 ---
-# <a name="steady_clock-struct"></a>steady_clock 구조체
+# <a name="high_resolution_clock-struct"></a>high_resolution_clock 구조체
 
 *High_resolution* clock을 나타냅니다.
 
@@ -33,7 +33,7 @@ class high_resolution_clock
 
 ### <a name="typedefs"></a>Typedefs
 
-|Name|설명|
+|Name|Description|
 |----------|-----------------|
 |`duration`|에 `nanoseconds` 정의 된의 동의어 \<chrono> 입니다.|
 |`period`|에 `nano` 정의 된의 동의어 \<ratio> 입니다.|
@@ -42,12 +42,12 @@ class high_resolution_clock
 
 ## <a name="functions"></a>Functions
 
-|Name|설명|
+|Name|Description|
 |-|-|
 |`now`|현재 시간을 값으로 반환 합니다 `time_point` .|
 
 ## <a name="constants"></a>상수
 
-|Name|설명|
+|Name|Description|
 |----------|-----------------|
 |`is_steady`|보유 **`true`** 합니다. `high_resolution_clock`은 *지속*입니다.|

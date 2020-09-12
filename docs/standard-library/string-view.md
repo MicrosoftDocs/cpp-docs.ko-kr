@@ -1,15 +1,16 @@
 ---
 title: '&lt;string_view&gt;'
-ms.date: 04/18/2019
+description: 의 개요는 `basic_string_view` char와 유사한 개체의 일정 한 연속 시퀀스를 참조 합니다.
+ms.date: 9/4/2020
 helpviewer_keywords:
 - string_view header
 ms.assetid: a2fb9d00-d7ae-4170-bfea-2dc337aa37cf
-ms.openlocfilehash: 13b6f5c63b9426fc4c31527f0d1ae8291d07807f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f74f6c5855f71b0df46f585e874002cdb4308e42
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222214"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90039913"
 ---
 # <a name="ltstring_viewgt"></a>&lt;string_view&gt;
 
@@ -23,7 +24,7 @@ ms.locfileid: "87222214"
 
 ## <a name="remarks"></a>설명
 
-템플릿 특수화의 string_view 패밀리는 위치 0에 있는 시퀀스의 첫 번째 요소를 사용 하 여 문자열 형식 개체의 문자 데이터에 대 한 읽기 전용, 예외 안전, 소유 하지 않은 핸들을 전달 하는 효율적인 방법을 제공 합니다. 형식의 함수 매개 변수 `string_view` (에 대 한 typedef)는로의 `basic_string_view<char>` `std::string` 암시적 변환이 정의 된, **char \* **또는 기타 모든 문자열 유사 문자 클래스와 같은 인수를 사용할 수 있습니다 `string_view` . 마찬가지로, 또는의 매개 변수는 `wstring_view` `u16string_view` `u32string_view` 암시적 변환이 정의 된 모든 문자열 형식을 허용할 수 있습니다. 자세한 내용은 [Basic_string_view 클래스](../standard-library/basic-string-view-class.md)를 참조 하세요.
+`string_view`템플릿 특수화의 패밀리는 위치 0에 있는 시퀀스의 첫 번째 요소를 사용 하 여 문자열 형식 개체의 문자 데이터에 대 한 읽기 전용, 예외 안전, 소유 하지 않는 핸들을 전달 하는 효율적인 방법을 제공 합니다. 형식의 함수 매개 변수 `string_view` (에 대 한 typedef)는 `basic_string_view<char>` `std::string` , `char*` 또는에 대 한 암시적 변환이 정의 되는 기타 모든 문자열 유사 문자 클래스와 같은 인수를 사용할 수 있습니다 `string_view` . 마찬가지로, 또는의 매개 변수는 `wstring_view` `u16string_view` `u32string_view` 암시적 변환이 정의 된 모든 문자열 형식을 허용할 수 있습니다. 자세한 내용은 [Basic_string_view 클래스](../standard-library/basic-string-view-class.md)를 참조 하세요.
 
 ### <a name="typedefs"></a>Typedefs
 
@@ -56,7 +57,7 @@ ms.locfileid: "87222214"
 
 ### <a name="classes"></a>클래스
 
-|클래스|설명|
+|클래스|Description|
 |-|-|
 |[basic_string_view 클래스](../standard-library/basic-string-view-class.md)|임의의 문자 형식 개체 시퀀스에 읽기 전용 뷰를 제공 하는 클래스 템플릿입니다.|
 |[hash](string-view-hash.md)|String_view에 대 한 해시 값을 생성 하는 함수 개체입니다.|
@@ -67,7 +68,7 @@ ms.locfileid: "87222214"
 
 - **네임스페이스:** std
 
-- **컴파일러 옵션:** std: c + + 17 이상
+- **컴파일러 옵션:** [std: c + + 17](../build/reference/std-specify-language-standard-version.md) 이상
 
 ## <a name="see-also"></a>참고 항목
 

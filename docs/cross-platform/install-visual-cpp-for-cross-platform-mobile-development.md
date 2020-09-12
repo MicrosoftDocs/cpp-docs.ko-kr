@@ -2,12 +2,12 @@
 title: C++를 사용하여 플랫폼 간 모바일 개발 설치
 ms.date: 10/17/2019
 ms.assetid: aaea6b8d-55eb-4427-8185-c050f855c257
-ms.openlocfilehash: 935e427710d55120055be476a5cfb5fbcf73641b
-ms.sourcegitcommit: 0df2b7ab4e81284c5248e4584767591dcc1950c3
+ms.openlocfilehash: 6a573b0f7ba261b97af9de24e67f733acac0532f
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89609180"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90041954"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>C++를 사용하여 플랫폼 간 모바일 개발 설치
 
@@ -60,7 +60,7 @@ Visual Studio 설치 관리자에는 **C++를 사용한 모바일 개발** 워�
 - iOS 플랫폼을 대상으로 하는 C++ 코드를 빌드하려면 C++ iOS 개발 도구가 필요합니다.
 
 > [!NOTE]
-> Visual Studio 2015를 사용하는 경우 [플랫폼 간 모바일 개발용 Visual C++ 설치(Visual Studio 2015)](install-visual-cpp-for-cross-platform-mobile-development.md?view=vs-2015)를 참조하세요.
+> Visual Studio 2015를 사용하는 경우 [플랫폼 간 모바일 개발용 Visual C++ 설치(Visual Studio 2015)](install-visual-cpp-for-cross-platform-mobile-development.md?view=vs-2015&preserve-view=true)를 참조하세요.
 
 ### <a name="install-the-mobile-development-with-c-workload"></a>C++를 사용한 모바일 개발 워크로드 설치
 

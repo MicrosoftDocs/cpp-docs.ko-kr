@@ -17,12 +17,12 @@ helpviewer_keywords:
 - optimization, linker
 - /OPT linker option
 ms.assetid: 8f229863-5f53-48a8-9478-243a647093ac
-ms.openlocfilehash: 874c4b974348d1bef8c8c3837f46c1c27d6d304b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7f576d971425a67fc533bb417583173617615e3b
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215194"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90040407"
 ---
 # <a name="opt-optimizations"></a>/OPT(최적화)
 
@@ -30,9 +30,9 @@ LINK가 빌드하는 동안 수행할 최적화를 제어합니다.
 
 ## <a name="syntax"></a>구문
 
-> **/OPT:**{**REF**  |  **NEF**} \
-> **/Opt:**{**ICF**[ **=** _반복_] | **Noicf**} \
-> **/OPT:**{**LBR**  |  **NOLBR**}
+> **/OPT:**{**REF** \| **NEF**} \
+> **/Opt:**{**ICF** \[ **=** _반복_] \| **noicf**} \
+> **/OPT:**{**LBR** \| **NOLBR**}
 
 ## <a name="arguments"></a>인수
 

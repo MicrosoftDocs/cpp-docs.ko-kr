@@ -21,12 +21,12 @@ helpviewer_keywords:
 - std::locale [C++], facet
 - std::locale [C++], id
 ms.assetid: 7dd6d271-472d-4750-8fb5-ea8f55fbef62
-ms.openlocfilehash: 94063b2c66d201da3b0e822a7118b3e48020ed3c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 55aeaf27b1c31ef0dba68d0ead3633590777cbdf
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833259"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90040603"
 ---
 # <a name="locale-class"></a>locale 클래스
 
@@ -159,14 +159,14 @@ cout.imbue(loc);
 
 ### <a name="static-functions"></a>정적 함수
 
-|Name|설명|
+|Name|Description|
 |-|-|
 |[기존](#classic)|정적 멤버 함수는 클래식 C 로캘을 나타내는 로캘 개체를 반환합니다.|
 |[global](#global)|프로그램에 대한 기본 로컬을 다시 설정합니다.|
 
 ### <a name="operators"></a>연산자
 
-|연산자|설명|
+|연산자|Description|
 |-|-|
 |[연산자 =](#op_eq)|로캘을 할당 합니다.|
 |[연산자! =](#op_neq)|두 로캘이 다른지 테스트합니다.|
@@ -175,7 +175,7 @@ cout.imbue(loc);
 
 ### <a name="classes"></a>클래스
 
-|클래스|설명|
+|클래스|Description|
 |-|-|
 |[패싯에](#facet_class)|모든 로캘 패싯에 대한 기본 클래스로 사용하는 클래스입니다.|
 |[`id`](#id_class)|멤버 클래스는 로캘의 패싯을 조회하기 위한 인덱스로 사용되는 고유한 패싯 ID를 제공합니다.|
@@ -622,7 +622,7 @@ loc3 (English_United States.1252) are not equal.
 
 ## <a name="localeoperator"></a><a name="op_call"></a> locale:: operator ()
 
-`basic_string`이 로캘의 std:: collate 패싯에 의해 정의 된 사전적 비교 규칙에 따라 두 개체를 비교 합니다 <charT> .
+`basic_string`이 로캘의 패싯에 의해 정의 된 사전적 비교 규칙에 따라 두 개체를 비교 `std::collate<charT>` 합니다.
 
 ```cpp
 template <class CharType, class Traits, class Allocator>

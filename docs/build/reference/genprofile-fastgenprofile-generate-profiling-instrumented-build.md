@@ -10,12 +10,12 @@ helpviewer_keywords:
 - GENPROFILE
 - FASTGENPROFILE
 ms.assetid: deff5ce7-46f5-448a-b9cd-a7a83a6864c6
-ms.openlocfilehash: 19ddf56d92cc2d8fbbfaf635c8e1602443e35b5b
-ms.sourcegitcommit: 6b749db14b4cf3a2b8d581fda6fdd8cb98bc3207
+ms.openlocfilehash: a0d1678cd400801f4cb809ec3e93d333fbc6416a
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82825790"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90041200"
 ---
 # <a name="genprofile-fastgenprofile-generate-profiling-instrumented-build"></a>/GENPROFILE, /FASTGENPROFILE(계측된 빌드 프로파일링 생성)
 
@@ -23,12 +23,12 @@ ms.locfileid: "82825790"
 
 ## <a name="syntax"></a>구문
 
-> **/GENPROFILE**[**:**{[**COUNTER32**|**COUNTER64**] | [ **정확한**|**NOEXACT**] | **MEMMAX =**_#_|**MEMMAX =**_#_| [**경로**|**NOPATH** ] | [**TRACKEH** |**NOTRACKEH** ] | **PGD =**_filename_}] \
-> **/FASTGENPROFILE**[**:**{[**COUNTER32**|**COUNTER64**] | [ **정확한**|**NOEXACT**] | **MEMMAX =**_#_|**MEMMAX =**_#_| [**경로**|**NOPATH** ] | [**TRACKEH** |**NOTRACKEH** ] | **PGD =**_filename_}]
+> **/GENPROFILE** \[ **:**{ \[ **COUNTER32** \| **COUNTER64**] \| \[ **정확한** \| **noexact**] \| **memmax =** _#_ \| **memmax =** _#_ \| \[ **PATH** \| **noexact**] \| \[ **TRACKEH** \| **NOTRACKEH** ] \| **PGD =**_filename_}] \
+> **/FASTGENPROFILE** \[ **:**{ \[ **COUNTER32** \| **COUNTER64**] \| \[ **정확한** \| **noexact**] \| **memmax =** _#_ \| **memmax =** _#_ \| [**PATH** \| **noexact** ] \| \[ **TRACKEH** \| **NOTRACKEH** ] \| **PGD =**_filename_}]
 
 ### <a name="arguments"></a>인수
 
-**/GENPROFILE** 또는 **/FASTGENPROFILE**에 다음 인수를 지정할 수 있습니다. 여기에서 파이프 (**|**) 문자로 구분 된 인수는 함께 사용할 수 없습니다. 옵션을 구분 하려면 쉼표 (**,**) 문자를 사용 합니다.
+**/GENPROFILE** 또는 **/FASTGENPROFILE**에 다음 인수를 지정할 수 있습니다. 여기에서 파이프 () 문자로 구분 된 인수 **|** 는 함께 사용할 수 없습니다. 옵션을 구분 하려면 쉼표 (**,**) 문자를 사용 합니다.
 
 **COUNTER32** &#124; **COUNTER64**<br/>
 **COUNTER32** 를 사용 하 여 32 비트 프로브 카운터를 사용 하도록 지정 하 고 **COUNTER64** 를 사용 하 여 64 비트 프로브 카운터를 지정 합니다. **/GENPROFILE**를 지정 하면 기본값은 **COUNTER64**입니다. **/FASTGENPROFILE**를 지정 하면 기본값은 **COUNTER32**입니다.
@@ -36,16 +36,16 @@ ms.locfileid: "82825790"
 **정확한** &#124; **noexact**<br/>
 프로브에 대해 스레드로부터 안전한 연동 증분을 지정 하려면 **EXACT** 를 사용 합니다. **Noexact** 는 프로브에 대해 보호 되지 않는 증분 작업을 지정 합니다. 기본값은 **Noexact**입니다.
 
-**Memmax**=*값*, **memmax**=*값*<br/>
+**Memmax** = *값*, **memmin** = *값*<br/>
 메모리의 학습 데이터에 대해 최대 및 최소 예약 크기를 지정 하려면 **Memmax** 및 **memmax** 을 사용 합니다. 값은 예약할 메모리의 크기(바이트)입니다. 기본적으로 이러한 값은 내부 추론에 의해 결정됩니다.
 
-**경로** &#124; **nopath** <br/>
+**경로**  &#124; **nopath** <br/>
 **Path** 를 사용 하 여 함수에 대 한 각 고유 경로에 대해 별도의 PGO 카운터 집합을 지정 합니다. **Nopath** 를 사용 하 여 각 함수에 대 한 카운터 집합을 하나만 지정할 수 있습니다. **/GENPROFILE**를 지정 하면 기본값은 **PATH** 입니다. **/FASTGENPROFILE**를 지정 하면 기본값은 **nopath** 입니다.
 
-**TRACKEH** &#124; **NOTRACKEH** <br/>
+**TRACKEH**  &#124; **NOTRACKEH** <br/>
 학습 중 예외가 throw되면 정확한 개수를 유지하기 위해 추가 카운터를 사용할지 여부를 지정합니다. **TRACKEH** 를 사용 하 여 정확한 개수에 대 한 추가 카운터를 지정 합니다. **NOTRACKEH** 를 사용 하 여 예외 처리를 사용 하지 않거나 학습 시나리오에서 예외가 발생 하지 않는 코드에 대해 단일 카운터를 지정 합니다.  **/GENPROFILE**를 지정 하면 기본값은 **TRACKEH** 입니다. **/FASTGENPROFILE**를 지정 하면 기본값은 **NOTRACKEH** 입니다.
 
-**PGD**=*파일 이름*<br/>
+**PGD** = *파일 이름*<br/>
 .pgd 파일의 기본 파일 이름을 지정합니다. 기본적으로 링커는.pgd 확장명을 가진 기본 실행 가능 이미지 파일 이름을 사용합니다.
 
 ## <a name="remarks"></a>설명
@@ -58,9 +58,9 @@ ms.locfileid: "82825790"
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. **구성 속성** > **링커** > **명령줄** 속성 페이지를 선택 합니다.
+1. **구성 속성**  >  **링커**  >  **명령줄** 속성 페이지를 선택 합니다.
 
 1. **/GENPROFILE** 또는 **/FASTGENPROFILE** 옵션과 인수를 **추가 옵션** 상자에 입력 합니다. **확인**을 선택하여 변경 내용을 저장합니다.
 
@@ -72,4 +72,4 @@ ms.locfileid: "82825790"
 
 [MSVC 링커 참조](linking.md)<br/>
 [MSVC 링커 옵션](linker-options.md)<br/>
-[/LTCG(링크 타임 코드 생성)](ltcg-link-time-code-generation.md)<br/>
+[/LTCG (링크 타임 코드 생성)](ltcg-link-time-code-generation.md)<br/>

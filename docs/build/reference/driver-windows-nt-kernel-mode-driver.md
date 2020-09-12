@@ -10,12 +10,12 @@ helpviewer_keywords:
 - DRIVER linker option
 - /DRIVER linker option
 ms.assetid: aeee8e28-5d97-40f5-ba16-9f370fe8a1b8
-ms.openlocfilehash: 5639344ede4007bd66a3d51043f4acb423426b94
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: c935c20d6c1c009cff64d48e0c0122c8b91bbba3
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842977"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90041161"
 ---
 # <a name="driver-windows-nt-kernel-mode-driver"></a>/DRIVER(Windows NT 커널 모드 드라이버)
 
@@ -33,9 +33,9 @@ ms.locfileid: "88842977"
 
 **/DRIVER** 가 지정 된 경우:
 
-- **/Fixed: NO** 가 적용 됩니다. 자세한 내용은 [/FIXED(고정 기준 주소)](fixed-fixed-base-address.md)를 참조하세요.
+- **/Fixed: NO** 가 적용 됩니다. 자세한 내용은 [/fixed (고정 기준 주소)](fixed-fixed-base-address.md)를 참조 하세요.
 
-- 출력 파일의 확장명은 .sys로 설정 됩니다. **/Out** 을 사용 하 여 기본 파일 이름 및 확장명을 변경 합니다. 자세한 내용은 [/OUT(출력 파일 이름)](out-output-file-name.md)을 참조하세요.
+- 출력 파일의 확장명은 .sys로 설정 됩니다. **/Out** 을 사용 하 여 기본 파일 이름 및 확장명을 변경 합니다. 자세한 내용은 [/out (출력 파일 이름)](out-output-file-name.md)을 참조 하세요.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
@@ -49,7 +49,7 @@ ms.locfileid: "88842977"
 
 ### <a name="to-set-this-linker-option-programmatically"></a>프로그래밍 방식으로 이 링커 옵션을 설정하려면
 
-- [VCLinkerTool 속성](/dotnet/api/microsoft.visualstudio.vcprojectengine.vclinkertool.driver?view=visualstudiosdk-2017#Microsoft_VisualStudio_VCProjectEngine_VCLinkerTool_driver)을 참조 하세요.
+- [VCLinkerTool 속성](/dotnet/api/microsoft.visualstudio.vcprojectengine.vclinkertool.driver)을 참조 하세요.
 
 ## <a name="see-also"></a>참고 항목
 

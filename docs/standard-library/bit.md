@@ -6,12 +6,12 @@ f1_keywords:
 - <bit>
 helpviewer_keywords:
 - bit header
-ms.openlocfilehash: 7a87071d30756714e19c971281f642ce16f09d61
-ms.sourcegitcommit: 3628707bc17c99aac7aac27eb126cc2eaa4d07b4
+ms.openlocfilehash: 5652d0af767520710ee08b1827e0df27c477ee6d
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "89194770"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90040056"
 ---
 # <a name="ltbitgt"></a>&lt;bit&gt;
 
@@ -25,13 +25,13 @@ ms.locfileid: "89194770"
 
 **네임스페이스:** std
 
-`/std:c++latest` 필수
+[/std: c + + 최신](../build/reference/std-specify-language-standard-version.md) 항목이 필요 합니다.
 
 ## <a name="members"></a>멤버
 
-### <a name="types"></a>형식
+### <a name="types"></a>유형
 
-| 유형 | Description |
+| Type | Description |
 |--------|----------|
 | [endian](bit-enum.md) | 스칼라 형식의 endian 지정 합니다. |
 

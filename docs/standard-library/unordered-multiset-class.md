@@ -1,6 +1,7 @@
 ---
 title: unordered_multiset 클래스
-ms.date: 11/04/2016
+description: '`unordered_multiset`포함 된 요소의 값이 고유할 필요가 없고 키 값으로 사용 되는 컬렉션에서 데이터를 저장 및 검색 하는 데 사용 되는 개체를 설명 하는 c + + 표준 라이브러리 컨테이너 클래스에 대 한 API 참조입니다. 데이터는 자동으로 정렬 되지 않습니다.'
+ms.date: 9/10/2020
 f1_keywords:
 - unordered_set/std::unordered_multiset
 - unordered_set/std::unordered_multiset::allocator_type
@@ -25,6 +26,7 @@ f1_keywords:
 - unordered_set/std::unordered_multiset::cbegin
 - unordered_set/std::unordered_multiset::cend
 - unordered_set/std::unordered_multiset::clear
+- unordered_set/std::unordered_multiset::contains
 - unordered_set/std::unordered_multiset::count
 - unordered_set/std::unordered_multiset::emplace
 - unordered_set/std::unordered_multiset::emplace_hint
@@ -71,6 +73,7 @@ helpviewer_keywords:
 - std::unordered_multiset::cbegin
 - std::unordered_multiset::cend
 - std::unordered_multiset::clear
+- std::unordered_multiset::contains
 - std::unordered_multiset::count
 - std::unordered_multiset::emplace
 - std::unordered_multiset::emplace_hint
@@ -134,12 +137,12 @@ helpviewer_keywords:
 - std::unordered_multiset::size
 - std::unordered_multiset::swap
 ms.assetid: 70c8dfc5-492a-4af2-84f5-1aa9cb04b71c
-ms.openlocfilehash: 83b2b1a97972fa63f7cf7d2b9a6a48b49dbeda8d
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 8252ecc7051c1bad2ca1e7683ea32206dd0f10f4
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562521"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90042032"
 ---
 # <a name="unordered_multiset-class"></a>unordered_multiset 클래스
 
@@ -171,7 +174,7 @@ class unordered_multiset;
 
 ## <a name="members"></a>멤버
 
-|형식 정의|Description|
+|형식 정의|설명|
 |-|-|
 |[allocator_type](#allocator_type)|스토리지 관리를 위한 할당자의 형식입니다.|
 |[const_iterator](#const_iterator)|제어되는 시퀀스에 대한 상수 반복기의 형식입니다.|
@@ -198,6 +201,7 @@ class unordered_multiset;
 |[cbegin](#cbegin)|제어되는 시퀀스의 시작을 지정합니다.|
 |[cend](#cend)|제어되는 시퀀스의 끝을 지정합니다.|
 |[해제](#clear)|모든 요소를 제거합니다.|
+|[contains](#contains)<sup>c + + 20</sup> 포함|지정 된 키를 가진 요소가 있는지 여부를 확인 합니다.|
 |[count](#count)|지정한 키와 일치하는 요소의 수를 찾습니다.|
 |[emplace](#emplace)|생성된 요소를 추가합니다.|
 |[emplace_hint](#emplace_hint)|힌트와 함께 생성된 요소를 추가합니다.|
@@ -549,7 +553,7 @@ bucket_size(7) == 1
 const_iterator cbegin() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`const`** 범위의 첫 번째 요소 또는 빈 범위의 끝 바로 다음 위치를 가리키는 전방 액세스 반복기입니다 (빈 범위의 경우 `cbegin() == cend()` ).
 
@@ -575,7 +579,7 @@ auto i2 = Container.cbegin();
 const_iterator cend() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`const`** 범위 끝의 바로 다음을 가리키는 전방 액세스 반복기입니다.
 
@@ -845,6 +849,57 @@ int main()
 [c] [b] [a]
 ```
 
+## <a name="unordered_multisetcontains"></a><a name="contains"></a> unordered_multiset:: contains
+
+에 지정 된 키를 가진 요소가 있는지 여부를 확인 `unordered_multiset` 합니다.
+
+```cpp
+bool contains(const Key& key) const;
+template<class K> bool contains(const K& key) const;
+```
+
+### <a name="parameters"></a>매개 변수
+
+*시계의*\
+키의 형식입니다.
+
+*키인지*\
+찾을 요소의 키 값입니다.
+
+### <a name="return-value"></a>반환 값
+
+`true` 요소가 컨테이너에 있으면이 고, 그렇지 않으면입니다. `false` 그렇지 않으면입니다.
+
+### <a name="remarks"></a>설명
+
+`contains()` 는 c + + 20의 새로운 기능은입니다. 이를 사용 하려면 [/sd: c + + 최신](../build/reference/std-specify-language-standard-version.md) 컴파일러 옵션을 지정 합니다.
+
+`template<class K> bool contains(const K& key) const` 가 투명 한 경우에만 오버 로드 확인에 참여 `key_compare` 합니다.
+
+### <a name="example"></a>예제
+
+```cpp
+// Requires /std:c++latest
+#include <unordered_set>
+#include <iostream>
+
+int main()
+{
+    std::unordered_multiset<int> theUnorderedMultiset = { 1, 2, 3 };
+
+    std::cout << std::boolalpha; // so booleans show as 'true' or 'false'
+    std::cout << theUnorderedMultiset.contains(1) << '\n';
+    std::cout << theUnorderedMultiset.contains(4) << '\n';
+
+    return 0;
+}
+```
+
+```Output
+true
+false
+```
+
 ## <a name="unordered_multisetcount"></a><a name="count"></a> unordered_multiset:: count
 
 지정한 키와 일치하는 요소의 수를 찾습니다.
@@ -973,7 +1028,7 @@ iterator emplace(Args&&... args);
 *args*\
 unordered_multiset에 삽입할 요소를 생성하기 위해 전달되는 인수입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 새로 삽입된 요소에 대한 반복기입니다.
 
@@ -1004,7 +1059,7 @@ unordered_multiset에 삽입할 요소를 생성하기 위해 전달되는 인�
 *위치*\
 올바른 삽입 지점 검색을 시작할 위치와 관련된 힌트입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 새로 삽입된 요소에 대한 반복기입니다.
 
@@ -1248,7 +1303,7 @@ size_type erase(
 *키인지*\
 제거할 요소의 키 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 처음 두 구성원 함수의 경우 제거된 요소 뒤에 남은 첫 번째 요소 또는 이러한 요소가 없을 경우 unordered_multiset의 끝에 있는 요소를 지정하는 양방향 반복기입니다.
 
@@ -1493,7 +1548,7 @@ Unordered_multiset에서 [value_type](../standard-library/map-class.md#value_typ
 *IList*\
 요소를 복사할 [initializer_list](../standard-library/initializer-list.md) 입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 단일 요소 삽입 멤버 함수 (1) 및 (2)는 unordered_multiset에 새 요소를 삽입한 위치로 반복기를 반환합니다.
 

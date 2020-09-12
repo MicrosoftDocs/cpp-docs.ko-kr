@@ -1,26 +1,26 @@
 ---
-title: 리소스 파일(C++)
+title: 프로젝트 리소스 파일 (c + +)
 ms.date: 05/14/2019
 helpviewer_keywords:
 - resource files
 - resources [C++]
 ms.assetid: 338a4a0f-0c62-4ef1-a34f-5d86262d93a4
-ms.openlocfilehash: 16759a242325b6a8e5f829f719ce3e505b03c2e3
-ms.sourcegitcommit: 7bea0420d0e476287641edeb33a9d5689a98cb98
+ms.openlocfilehash: d37c3602d8939db609fc8af42dd764655195b24b
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415853"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90041018"
 ---
-# <a name="resource-files-c"></a>리소스 파일(C++)
+# <a name="project-resource-files-c"></a>프로젝트 리소스 파일 (c + +)
 
 리소스는 사용자에게 정보를 제공하는 인터페이스 요소입니다. 비트맵, 아이콘, 도구 모음 및 커서는 모두 리소스입니다. 일부 리소스는 메뉴에서 선택하거나 대화 상자에 데이터를 입력하는 등의 작업을 수행할 수 있습니다.
 
 자세한 내용은 [리소스 사용](../../windows/working-with-resource-files.md)을 참조하세요.
 
-|파일 이름|디렉터리 위치|솔루션 탐색기 위치|설명|
+|파일 이름|디렉터리 위치|솔루션 탐색기 위치|Description|
 |---------------|------------------------|--------------------------------|-----------------|
-|*Projname*.rc|*Projname*|소스 파일|프로젝트의 리소스 스크립트 파일입니다. 리소스 스크립트 파일에는 프로젝트의 형식에 따라 프로젝트에 대해 선택된 지원(예: 도구 모음, 대화 상자 또는 HTML) 및 다음이 포함되어 있습니다.<br /><br />- 기본 메뉴 정의<br />- 가속기 및 문자열 테이블<br />- 기본 **정보** 대화 상자<br />- 기타 대화 상자<br />- 아이콘 파일(res\\*Projname*.ico)<br />- 버전 정보<br />- 비트맵<br />- 도구 모음<br />- HTML 파일<br /><br /> 리소스 파일에는 표준 Microsoft Foundation Class 리소스에 대한 Afxres.rc 파일이 포함됩니다.|
+|*Projname*.rc|*Projname*|소스 파일|프로젝트의 리소스 스크립트 파일입니다. 리소스 스크립트 파일에는 프로젝트의 형식에 따라 프로젝트에 대해 선택된 지원(예: 도구 모음, 대화 상자 또는 HTML) 및 다음이 포함되어 있습니다.<br /><br />- 기본 메뉴 정의<br />- 가속기 및 문자열 테이블<br />-기본 **정보** 대화 상자<br />- 기타 대화 상자<br />-아이콘 파일 (res \\ *Projname*.ico)<br />- 버전 정보<br />- 비트맵<br />- 도구 모음<br />- HTML 파일<br /><br /> 리소스 파일에는 표준 Microsoft Foundation Class 리소스에 대한 Afxres.rc 파일이 포함됩니다.|
 |Resource.h|*Projname*|헤더 파일|프로젝트에서 사용하는 리소스에 대한 정의를 포함하는 리소스 헤더 파일입니다.|
 |*Projname*.rc2|*Projname*\res|소스 파일|프로젝트에서 사용하는 추가 리소스를 포함하는 스크립트 파일입니다. 프로젝트의 .rc 파일 아래에 .rc2 파일을 포함할 수 있습니다.<br /><br /> .rc2 파일은 여러 가지 다른 프로젝트에서 사용하는 리소스를 포함하는 데 유용합니다. 다른 프로젝트에서 여러 번 동일한 리소스를 만드는 대신 .rc2 파일에 배치하고, .rc2 파일을 기본 .rc 파일에 포함할 수 있습니다.|
 |*Projname*.def|*Projname*|소스 파일|DLL 프로젝트의 모듈 정의 파일입니다. 컨트롤의 경우 런타임 힙의 크기뿐만 아니라 컨트롤의 이름 및 설명을 제공합니다.|

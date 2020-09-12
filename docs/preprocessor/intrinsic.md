@@ -9,12 +9,12 @@ helpviewer_keywords:
 - intrinsic pragma
 - pragmas, intrinsic
 ms.assetid: 25c86ac7-ef40-47b7-a2c0-fada9c5dc3c5
-ms.openlocfilehash: 31f4ebc2fdd4c5c984160d441b4e0a723c686a46
-ms.sourcegitcommit: 80c8a512b361bd84e38958beb1a1bf6db7434021
+ms.openlocfilehash: 45a5a13f3bda3657b93e1a89e7a842a4465b01d5
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86180957"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90041109"
 ---
 # <a name="intrinsic-pragma"></a>`intrinsic` pragma
 
@@ -32,14 +32,37 @@ pragma의 인수 목록에 지정된 함수에 대한 호출을 내장 함수로
 
 다음 함수에는 내장 형식이 있으며 다음을 지정할 때 내장 형식이 사용 됩니다 [`/Oi`](../build/reference/oi-generate-intrinsic-functions.md) .
 
-|  |  |  |  |
-|--|--|--|--|
-| [`_disable`](../intrinsics/disable.md) | [`_outp`](../c-runtime-library/outp-outpw-outpd.md) | [`fabs`](../c-runtime-library/reference/fabs-fabsf-fabsl.md) | [`strcmp`](../c-runtime-library/reference/strcmp-wcscmp-mbscmp.md) |
-| [`_enable`](../intrinsics/enable.md) | [`_outpw`](../c-runtime-library/outp-outpw-outpd.md) | [`labs`](../c-runtime-library/reference/abs-labs-llabs-abs64.md) | [`strcpy`](../c-runtime-library/reference/strcpy-wcscpy-mbscpy.md) |
-| [`_inp`](../c-runtime-library/inp-inpw-inpd.md) | [`_rotl`](../c-runtime-library/reference/rotl-rotl64-rotr-rotr64.md) | [`memcmp`](../c-runtime-library/reference/memcmp-wmemcmp.md) | [`strlen`](../c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md) |
-| [`_inpw`](../c-runtime-library/inp-inpw-inpd.md) | [`_rotr`](../c-runtime-library/reference/rotl-rotl64-rotr-rotr64.md) | [`memcpy`](../c-runtime-library/reference/memcpy-wmemcpy.md) |  |
-| [`_lrotl`](../c-runtime-library/reference/lrotl-lrotr.md) | [`_strset`](../c-runtime-library/reference/strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md) | [`memset`](../c-runtime-library/reference/memset-wmemset.md) |  |
-| [`_lrotr`](../c-runtime-library/reference/lrotl-lrotr.md) | [`abs`](../c-runtime-library/reference/abs-labs-llabs-abs64.md) | [`strcat`](../c-runtime-library/reference/strcat-wcscat-mbscat.md) |  |
+:::row:::
+   :::column span="":::
+      [`abs`](../c-runtime-library/reference/abs-labs-llabs-abs64.md)\
+      [`_disable`](../intrinsics/disable.md)\
+      [`_enable`](../intrinsics/enable.md)\
+      [`fabs`](../c-runtime-library/reference/fabs-fabsf-fabsl.md)\
+      [`_inp`](../c-runtime-library/inp-inpw-inpd.md)\
+      [`_inpw`](../c-runtime-library/inp-inpw-inpd.md)\
+   :::column-end:::
+   :::column span="":::
+      [`labs`](../c-runtime-library/reference/abs-labs-llabs-abs64.md)\
+      [`_lrotl`](../c-runtime-library/reference/lrotl-lrotr.md)\
+      [`_lrotr`](../c-runtime-library/reference/lrotl-lrotr.md)\
+      [`memcmp`](../c-runtime-library/reference/memcmp-wmemcmp.md)\
+      [`memcpy`](../c-runtime-library/reference/memcpy-wmemcpy.md)\
+   :::column-end:::
+   :::column span="":::
+      [`memset`](../c-runtime-library/reference/memset-wmemset.md)\
+      [`_outp`](../c-runtime-library/outp-outpw-outpd.md)\
+      [`_outpw`](../c-runtime-library/outp-outpw-outpd.md)\
+      [`_rotl`](../c-runtime-library/reference/rotl-rotl64-rotr-rotr64.md)\
+      [`_rotr`](../c-runtime-library/reference/rotl-rotl64-rotr-rotr64.md)\
+   :::column-end:::
+   :::column span="":::
+      [`strcat`](../c-runtime-library/reference/strcat-wcscat-mbscat.md)\
+      [`strcmp`](../c-runtime-library/reference/strcmp-wcscmp-mbscmp.md)\
+      [`strcpy`](../c-runtime-library/reference/strcpy-wcscpy-mbscpy.md)\
+      [`strlen`](../c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md)\
+      [`_strset`](../c-runtime-library/reference/strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)\
+   :::column-end:::
+:::row-end:::
 
 내장 함수를 사용 하는 프로그램은 함수 호출의 오버 헤드가 없기 때문에 더 빠릅니다. 그러나 생성 된 추가 코드로 인해 크기가 커질 수 있습니다.
 
@@ -68,18 +91,45 @@ int main() {
 
 이러한 부동 소수점 함수는 진정한 내장 형식이 아닙니다. 대신 스택에 인수를 푸시하는 대신 부동 소수점 칩에 직접 인수를 전달 하는 버전이 있습니다.
 
-|  |  |  |  |
-|--|--|--|--|
-| [`acos`](../c-runtime-library/reference/acos-acosf-acosl.md) | [`cosh`](../c-runtime-library/reference/cosh-coshf-coshl.md) | [`pow`](../c-runtime-library/reference/pow-powf-powl.md) | [`tanh`](../c-runtime-library/reference/tanh-tanhf-tanhl.md) |
-| [`asin`](../c-runtime-library/reference/asin-asinf-asinl.md) | [`fmod`](../c-runtime-library/reference/fmod-fmodf.md) | [`sinh`](../c-runtime-library/reference/sinh-sinhf-sinhl.md) |  |
+:::row:::
+   :::column span="":::
+      [`acos`](../c-runtime-library/reference/acos-acosf-acosl.md)\
+      [`asin`](../c-runtime-library/reference/asin-asinf-asinl.md)\
+   :::column-end:::
+   :::column span="":::
+      [`cosh`](../c-runtime-library/reference/cosh-coshf-coshl.md)\
+      [`fmod`](../c-runtime-library/reference/fmod-fmodf.md)\
+   :::column-end:::
+   :::column span="":::
+      [`pow`](../c-runtime-library/reference/pow-powf-powl.md)\
+      [`sinh`](../c-runtime-library/reference/sinh-sinhf-sinhl.md)\
+   :::column-end:::
+   :::column span="":::
+      [`tanh`](../c-runtime-library/reference/tanh-tanhf-tanhl.md)\
+   :::column-end:::
+:::row-end:::
 
 이러한 부동 소수점 함수는 [`/Oi`](../build/reference/oi-generate-intrinsic-functions.md) 및 [`/fp:fast`](../build/reference/fp-specify-floating-point-behavior.md) (또는에, 및를 포함 하는 모든 옵션)를 **`/Oi`** [`/Ox`](../build/reference/ox-full-optimization.md) [`/O1`](../build/reference/o1-o2-minimize-size-maximize-speed.md) 지정할 때 진정한 내장 형식이 있습니다 [`/O2`](../build/reference/o1-o2-minimize-size-maximize-speed.md) .
 
-|  |  |  |  |
-|--|--|--|--|
-| [`atan`](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md) | [`exp`](../c-runtime-library/reference/exp-expf.md) | [`log10`](../c-runtime-library/reference/log-logf-log10-log10f.md) | [`sqrt`](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md) |
-| [`atan2`](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md) | [`log`](../c-runtime-library/reference/log-logf-log10-log10f.md) | [`sin`](../c-runtime-library/reference/sin-sinf-sinl.md) | [`tan`](../c-runtime-library/reference/tan-tanf-tanl.md) |
-| [`cos`](../c-runtime-library/reference/cos-cosf-cosl.md) |  |  |  |
+:::row:::
+   :::column span="":::
+      [`atan`](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)\
+      [`atan2`](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)\
+      [`cos`](../c-runtime-library/reference/cos-cosf-cosl.md)\
+   :::column-end:::
+   :::column span="":::
+      [`exp`](../c-runtime-library/reference/exp-expf.md)\
+      [`log`](../c-runtime-library/reference/log-logf-log10-log10f.md)\
+   :::column-end:::
+   :::column span="":::
+      [`log10`](../c-runtime-library/reference/log-logf-log10-log10f.md)\
+      [`sin`](../c-runtime-library/reference/sin-sinf-sinl.md)\
+   :::column-end:::
+   :::column span="":::
+      [`sqrt`](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)\
+      [`tan`](../c-runtime-library/reference/tan-tanf-tanl.md)\
+   :::column-end:::
+:::row-end:::
 
 [`/fp:strict`](../build/reference/fp-specify-floating-point-behavior.md)또는 [`/Za`](../build/reference/za-ze-disable-language-extensions.md) 를 사용 하 여 실제 내장 부동 소수점 옵션의 생성을 재정의할 수 있습니다. 이 경우에는 함수가 인수를 프로그램 스택으로 푸시하는 대신 부동 소수점 칩으로 직접 전달하는 라이브러리 루틴으로 생성됩니다.
 

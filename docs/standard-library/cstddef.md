@@ -1,24 +1,25 @@
 ---
 title: '&lt;cstddef&gt;'
-ms.date: 11/04/2016
+description: C 표준 라이브러리 헤더의 외부 링크를 사용 하 여 선언한 이름이 네임 스페이스에 선언 되도록 하는 <stddef>에 대해 설명 합니다. `std`
+ms.date: 9/4/2020
 f1_keywords:
 - <cstddef>
 helpviewer_keywords:
 - cstddef header
 ms.assetid: be8d1e39-5974-41ee-b41d-eafa6c82ffce
-ms.openlocfilehash: f1582a4af1c26e1ef85cf0dce8406a4046a8fe8b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 186de0e893c413a25d31d4f1431c280d749e9541
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222526"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90040030"
 ---
 # <a name="ltcstddefgt"></a>&lt;cstddef&gt;
 
 C 표준 라이브러리 헤더를 포함 \<stddef.h> 하 고 네임 스페이스에 연결 된 이름을 추가 합니다 `std` . 이 헤더를 포함 하면 C 표준 라이브러리 헤더의 외부 링크를 사용 하 여 선언한 이름이 네임 스페이스에 선언 됩니다 `std` .
 
 > [!NOTE]
-> \<cstddef>에는 형식 **바이트가** 포함 되 고 형식은 포함 되지 않습니다 **`wchar_t`** .
+> \<cstddef> 에는 형식 **바이트가** 포함 되 고 형식은 포함 되지 않습니다 **`wchar_t`** .
 
 ## <a name="syntax"></a>구문
 

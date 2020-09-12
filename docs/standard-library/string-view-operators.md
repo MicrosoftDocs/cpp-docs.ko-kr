@@ -1,6 +1,7 @@
 ---
 title: '&lt;string_view &gt; 연산자'
-ms.date: 04/19/2019
+description: '`string_view`두 개체를 비교 하는 데 사용 되는 연산자에 대 한 API 참조 `string_view` 또는 `string_view` 및 기타 문자열 개체'
+ms.date: 9/4/2020
 f1_keywords:
 - xstring/basic_string_view::operator!=
 - xstring/basic_string_view::operator&gt;
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - std::basic_string_view::operator&lt;
 - std::basic_string_view::operator&lt;&lt;
 - std::basic_string_view::operator&lt;=, std::basic_string_view::operator==
-ms.openlocfilehash: b0761c1af7b2ed9f34917d2e4165561b357f0a30
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 832e49aaf01a4ea124b7a6881b93bd93b7337215
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833220"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90039887"
 ---
 # <a name="ltstring_viewgt-operators"></a>&lt;string_view &gt; 연산자
 
@@ -329,6 +330,10 @@ using namespace literals::string_view_literals;
     u16string_view sv16{ u"Hello"sv };
     u32string_view sv32{ U"Hello"sv };
 ```
+
+## <a name="requirements"></a>요구 사항
+
+[/std:c++17](../build/reference/std-specify-language-standard-version.md)
 
 ## <a name="see-also"></a>참고 항목
 

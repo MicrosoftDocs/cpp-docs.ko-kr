@@ -1,6 +1,7 @@
 ---
 title: unordered_multimap 클래스
-ms.date: 11/04/2016
+description: C + + 표준 라이브러리 컨테이너 클래스에 대 한 API 개요 `unordered_multimap` 입니다.
+ms.date: 9/9/2020
 f1_keywords:
 - unordered_map/std::unordered_multimap
 - unordered_map/std::unordered_multimap::allocator_type
@@ -26,6 +27,7 @@ f1_keywords:
 - unordered_map/std::unordered_multimap::cbegin
 - unordered_map/std::unordered_multimap::cend
 - unordered_map/std::unordered_multimap::clear
+- unordered_map/std::unordered_multimap::contains
 - unordered_map/std::unordered_multimap::count
 - unordered_map/std::unordered_multimap::emplace
 - unordered_map/std::unordered_multimap::emplace_hint
@@ -73,6 +75,7 @@ helpviewer_keywords:
 - std::unordered_multimap::cbegin
 - std::unordered_multimap::cend
 - std::unordered_multimap::clear
+- std::unordered_multimap::contains
 - std::unordered_multimap::count
 - std::unordered_multimap::emplace
 - std::unordered_multimap::emplace_hint
@@ -137,12 +140,12 @@ helpviewer_keywords:
 - std::unordered_multimap::size
 - std::unordered_multimap::swap
 ms.assetid: 4baead6c-5870-4b85-940f-a47d6b891c27
-ms.openlocfilehash: 3f30d7c8f322e053e91d9e14db0e7166a6031bd8
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 5ca739e4c10fbca6cfd85b182e0052bcad19bf21
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562508"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90042071"
 ---
 # <a name="unordered_multimap-class"></a>unordered_multimap 클래스
 
@@ -178,7 +181,7 @@ class unordered_multimap;
 
 ## <a name="members"></a>멤버
 
-|형식 정의|Description|
+|형식 정의|설명|
 |-|-|
 |[allocator_type](#allocator_type)|스토리지 관리를 위한 할당자의 형식입니다.|
 |[const_iterator](#const_iterator)|제어되는 시퀀스에 대한 상수 반복기의 형식입니다.|
@@ -206,6 +209,7 @@ class unordered_multimap;
 |[cbegin](#cbegin)|제어되는 시퀀스의 시작을 지정합니다.|
 |[cend](#cend)|제어되는 시퀀스의 끝을 지정합니다.|
 |[해제](#clear)|모든 요소를 제거합니다.|
+|[contains](#contains)<sup>c + + 20</sup> 포함|에 지정 된 키를 가진 요소가 있는지 여부를 확인 `unordered_multimap` 합니다.|
 |[count](#count)|지정한 키와 일치하는 요소의 수를 찾습니다.|
 |[emplace](#emplace)|생성된 요소를 추가합니다.|
 |[emplace_hint](#emplace_hint)|힌트와 함께 생성된 요소를 추가합니다.|
@@ -558,7 +562,7 @@ bucket_size(7) == 1
 const_iterator cbegin() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`const`** 범위의 첫 번째 요소 또는 빈 범위의 끝 바로 다음 위치를 가리키는 전방 액세스 반복기입니다 (빈 범위의 경우 `cbegin() == cend()` ).
 
@@ -584,7 +588,7 @@ auto i2 = Container.cbegin();
 const_iterator cend() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`const`** 범위 끝의 바로 다음을 가리키는 전방 액세스 반복기입니다.
 
@@ -854,6 +858,57 @@ int main()
 [c, 3] [b, 2] [a, 1]
 ```
 
+## <a name="unordered_multimapcontains"></a><a name="contains"></a> unordered_multimap:: contains
+
+에 지정 된 키를 가진 요소가 있는지 여부를 확인 `unordered_multimap` 합니다.
+
+```cpp
+bool contains(const Key& key) const;
+template<class K> bool contains(const K& key) const;
+```
+
+### <a name="parameters"></a>매개 변수
+
+*시계의*\
+키의 형식입니다.
+
+*키인지*\
+찾을 요소의 키 값입니다.
+
+### <a name="return-value"></a>반환 값
+
+`true` 요소가 컨테이너에 있으면이 고, 그렇지 않으면입니다. `false` 그렇지 않으면입니다.
+
+### <a name="remarks"></a>설명
+
+`contains()` 는 c + + 20의 새로운 기능은입니다. 이를 사용 하려면 [/sd: c + + 최신](../build/reference/std-specify-language-standard-version.md) 컴파일러 옵션을 지정 합니다.
+
+`template<class K> bool contains(const K& key) const` 가 투명 한 경우에만 오버 로드 확인에 참여 `key_compare` 합니다.
+
+### <a name="example"></a>예제
+
+```cpp
+// Requires /std:c++latest
+#include <unordered_map>
+#include <iostream>
+
+int main()
+{
+    std::unordered_multimap<int, bool> theUnorderedMultimap = {{0, false}, {1,true}};
+
+    std::cout << std::boolalpha; // so booleans show as 'true' or 'false'
+    std::cout << theUnorderedMultimap.contains(1) << '\n';
+    std::cout << theUnorderedMultimap.contains(2) << '\n';
+
+    return 0;
+}
+```
+
+```Output
+true
+false
+```
+
 ## <a name="unordered_multimapcount"></a><a name="count"></a> unordered_multimap:: count
 
 지정한 키와 일치하는 요소의 수를 찾습니다.
@@ -982,7 +1037,7 @@ iterator emplace(Args&&... args);
 *args*\
 에 삽입할 요소를 생성 하기 위해 전달 되는 인수 `unordered_multimap` 입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 새로 삽입된 요소에 대한 반복기입니다.
 
@@ -1015,7 +1070,7 @@ unordered에 삽입할 요소를 생성하기 위해 전달되는 인수입니�
 *위치*\
 올바른 삽입 지점 검색을 시작할 위치와 관련된 힌트입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 새로 삽입된 요소에 대한 반복기입니다.
 
@@ -1266,7 +1321,7 @@ size_type erase(
 *키인지*\
 제거할 요소의 키 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 처음 두 구성원 함수의 경우 제거된 요소 뒤에 남은 첫 번째 요소 또는 이러한 요소가 없을 경우 map의 끝에 있는 요소를 지정하는 양방향 반복기입니다.
 
@@ -1511,7 +1566,7 @@ Unordered_multimap에서 [value_type](../standard-library/map-class.md#value_typ
 *IList*\
 요소를 복사할 [initializer_list](../standard-library/initializer-list.md) 입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 단일 요소 삽입 멤버 함수 (1) 및 (2)는 unordered_multimap에 새 요소를 삽입한 위치로 반복기를 반환합니다.
 

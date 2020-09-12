@@ -2,12 +2,12 @@
 title: 그래픽(C++ AMP)
 ms.date: 11/04/2016
 ms.assetid: 190a98a4-5f7d-442e-866b-b374ca74c16f
-ms.openlocfilehash: e0ea4de44f5215f47fe8c1a5e018bd91a82708ac
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3f68766c2c38b74df6e57aaa52419baf5d1151a3
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87182813"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90041460"
 ---
 # <a name="graphics-c-amp"></a>그래픽(C++ AMP)
 
@@ -27,7 +27,7 @@ C++ AMP에는 [Concurrency:: graphics](../../parallel/amp/reference/concurrency-
 
 Short Vector 라이브러리는 HLSL에 정의 된 [Vector 형식의](https://go.microsoft.com/fwlink/p/?linkid=248500) 일부 기능을 제공 하며 일반적으로 텍셀를 정의 하는 데 사용 됩니다. short 벡터는 동일한 형식의 값을 1~4개 포함하는 데이터 구조입니다. 지원 되는 형식은 **`double`** , **`float`** , **`int`** , `norm` , `uint` 및 `unorm` 입니다. 다음 표에는 형식 이름이 나와 있습니다. 각 형식에 대해 **`typedef`** 이름에 밑줄이 없는 해당도 있습니다. 밑줄이 있는 형식은 [Concurrency:: Graphics 네임 스페이스](../../parallel/amp/reference/concurrency-graphics-namespace.md)에 있습니다. 밑줄이 없는 형식은 [동시성:: graphics::d Irect3d 네임 스페이스](../../parallel/amp/reference/concurrency-graphics-direct3d-namespace.md) 에 포함 되어 **`__int8`** 있으며,와 같은 유사한 이름의 기본 형식에서 명확 하 게 구분 **`__int16`** 됩니다.
 
-||길이 2|길이 3|길이 4|
+|Type|길이 2|길이 3|길이 4|
 |-|--------------|--------------|--------------|
 |double|double_2<br /><br /> double2|double_3<br /><br /> double3|double_4<br /><br /> double4|
 |float|float_2<br /><br /> float2|float_3<br /><br /> float3|float_4<br /><br /> float4|
@@ -49,7 +49,7 @@ Short Vector 라이브러리는 HLSL에 정의 된 [Vector 형식의](https://go
 |연산자 유형|유효한 유형|
 |-------------------|-----------------|
 |이항 연산자|모든 형식에 대해 유효함: +,-, \* ,/,<br /><br /> 정수 형식에 대해 유효함:%, ^, &#124;, &, <\<, >><br /><br /> 두 벡터의 크기가 동일해야 하고 결과는 동일한 크기의 벡터여야 합니다.|
-|관계 연산자|모든 형식에 대해 유효함: == 및 !=|
+|관계형 연산자|모든 형식에 대해 유효함: == 및 !=|
 |복합 할당 연산자|모든 형식에 대해 유효함: + =,-=, \* =,/=<br /><br /> 정수 형식에 대해 유효함:% =, ^ =, &#124;=, &=, <\<=, >>=|
 |증가 및 감소 연산자|모든 형식에 대해 유효함: ++, --<br /><br /> 전위와 후위가 모두 유효해야 합니다.|
 |비트 NOT 연산자(~)|정수 형식에 대해 유효함|

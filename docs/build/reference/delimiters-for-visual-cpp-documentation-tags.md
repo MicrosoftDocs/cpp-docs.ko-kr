@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - XML documentation, delimiters
 ms.assetid: debfbdd9-63fa-4c58-a18e-a4d203d241d7
-ms.openlocfilehash: a5a0534ba74cc9b125e94d4ece133c2449700a67
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
-ms.translationtype: HT
+ms.openlocfilehash: e8e312eacb46d82270d7ca1782b04d06012b207d
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65446534"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90041538"
 ---
 # <a name="delimiters-for-visual-c-documentation-tags"></a>Visual C++ 문서 태그의 구분 기호
 
@@ -17,9 +17,9 @@ ms.locfileid: "65446534"
 
 XML 문서 태그에 다음과 같은 종류의 구분 기호를 사용할 수 있습니다.
 
-| | |
+| 구분 기호 | Description |
 |-|-|
-| `///` | 이러한 형식은 문서 예제에 표시 되 고 Visual Studio를 사용 하는 C++ 프로젝트 템플릿.  |
+| `///` | 이는 설명서 예제에 표시 되 고 Visual Studio c + + 프로젝트 템플릿에 사용 되는 형식입니다.  |
 | `/** */`  | 여러 줄 구분 기호입니다.  |
 
 `/** */` 구분 기호를 사용할 때 몇 가지 서식 규칙이 있습니다.
@@ -30,7 +30,7 @@ XML 문서 태그에 다음과 같은 종류의 구분 기호를 사용할 수 �
 
 - `/**` 구분 기호로 시작하는 줄 다음의 줄의 경우, 컴파일러는 선택적 공백과 별표(`*`)로 구성된 각 줄의 시작 부분에서 더 많은 선택적 공백이 뒤에 오는 공통 패턴을 찾습니다. 컴파일러가 각 줄의 시작 부분에서 공통 문자 집합을 찾으면, `*/` 구분 기호가 있는 줄까지 포함하여 `/**` 구분 기호 뒤의 모든 줄의 패턴을 무시합니다.
 
-몇 가지 예:
+몇 가지 예는 다음과 같습니다.
 
 - 다음 주석에서 유일하게 처리되는 부분은 `<summary>`로 시작하는 줄입니다. 다음 두 태그 형식은 동일한 주석을 생성합니다.
 
@@ -68,6 +68,6 @@ XML 문서 태그에 다음과 같은 종류의 구분 기호를 사용할 수 �
     */
     ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [XML 문서](xml-documentation-visual-cpp.md)

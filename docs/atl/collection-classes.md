@@ -1,16 +1,16 @@
 ---
-title: ATL 컬렉션 클래스
+title: ATL의 컬렉션 클래스
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - collection classes
 ms.assetid: eff95de6-78ef-4212-9d7d-1dacbdd4cc58
-ms.openlocfilehash: 09c0a64ff34a86c5581fe552ce2dbf0d12ea8e96
-ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
+ms.openlocfilehash: a93810b91cefd897b55cae4760ade32374900eb3
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70739522"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90041421"
 ---
 # <a name="collection-classes"></a>컬렉션 클래스
 
@@ -78,7 +78,7 @@ ms.locfileid: "70739522"
 
 - [CSimpleMapEqualHelperFalse](../atl/reference/csimplemapequalhelperfalse-class.md) 이 클래스는 [Csimplemap](../atl/reference/csimplemap-class.md) 클래스에 대 한 도우미입니다.
 
-- [CStringElementTraits](../atl/reference/cstringelementtraits-class.md) 이 클래스는 개체를 저장 `CString` 하는 컬렉션 클래스에서 사용 하는 정적 함수를 제공 합니다.
+- [CStringElementTraits](../atl/reference/cstringelementtraits-class.md) 이 클래스는 개체를 저장 하는 컬렉션 클래스에서 사용 하는 정적 함수를 제공 `CString` 합니다.
 
 - [CStringElementTraitsI](../atl/reference/cstringelementtraitsi-class.md) 이 클래스는 컬렉션 클래스 개체에 저장 된 문자열과 관련 된 정적 함수를 제공 합니다. [CStringElementTraits](../atl/reference/cstringelementtraits-class.md)와 유사 하지만 대/소문자를 구분 하지 않는 비교를 수행 합니다.
 
@@ -86,9 +86,9 @@ ms.locfileid: "70739522"
 
 ## <a name="related-articles"></a>관련 문서
 
-[ATL 컬렉션 클래스](../atl/atl-collection-classes.md)
+[ATL 컬렉션 클래스 개요](../atl/atl-collection-classes.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [클래스 개요](../atl/atl-class-overview.md)<br/>
 [컬렉션 클래스](../atl/atl-collection-classes.md)

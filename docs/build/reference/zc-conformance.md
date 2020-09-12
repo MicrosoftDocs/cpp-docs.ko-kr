@@ -1,24 +1,25 @@
 ---
 title: /Zc(규칙)
-ms.date: 03/06/2018
+description: /Zc 규격 컴파일러 옵션은 규격 또는 이전 버전과 호환 되는 동작에 대 한 지원을 사용 하거나 사용 하지 않도록 설정 합니다.
+ms.date: 09/10/2020
 helpviewer_keywords:
 - /Zc compiler options [C++]
 - -Zc compiler options [C++]
 - Conformance compiler options
 - Zc compiler options [C++]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
-ms.openlocfilehash: 6d6d3b7736fd1775372a3b2093c53e177db5099e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 13e06cd75f1ee684c2ee1ad6239aeb77b805675e
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234356"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90041525"
 ---
-# <a name="zc-conformance"></a>`/Zc`규칙
+# <a name="zc-conformance"></a>`/Zc` 규칙
 
 **`/Zc`** 컴파일러 옵션을 사용 하 여 표준 또는 Microsoft 전용 컴파일러 동작을 지정할 수 있습니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 > **`/Zc:`**_옵션_{,_옵션_}
 
@@ -38,6 +39,7 @@ Visual Studio에서 표준과 호환 되지 않는 C 또는 c + +에 대 한 확
 | [`/ZcimplicitNoexcept`](zc-implicitnoexcept-implicit-exception-specifiers.md) | **`noexcept`** 필수 함수 (기본적으로 설정)에서 암시적으로 사용 하도록 설정 합니다. |
 | [`/Zc:inline`](zc-inline-remove-unreferenced-comdat.md) | 참조 되지 않은 함수 또는 데이터는 COMDAT 이거나 내부 링크만 있는 경우 (기본적으로 해제 됨) 제거 합니다. |
 | [`/Zc:noexceptTypes`](zc-noexcepttypes.md) | C + + 17 규칙을 적용 **`noexcept`** 합니다 (c + + 17 이상에서는 기본적으로 설정). |
+| [`/Zc:preprocessor`](zc-preprocessor.md) | 새로운 규격 전처리기 (C11/C17를 제외 하 고 기본적으로 해제)를 사용 합니다. |
 | [`/Zc:referenceBinding`](zc-referencebinding-enforce-reference-binding-rules.md) | UDT 임시는 비 const lvalue 참조에 바인딩되지 않습니다 (기본적으로 해제 됨). |
 | [`/Zc:rvalueCast`](zc-rvaluecast-enforce-type-conversion-rules.md) | 표준 c + + 명시적 형식 변환 규칙을 적용 합니다 (기본적으로 해제). |
 | [`/Zc:sizedDealloc`](zc-sizeddealloc-enable-global-sized-dealloc-functions.md) | C + + 14 전역 크기 할당 해제 함수를 사용 합니다 (기본적으로 설정). |
