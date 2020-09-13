@@ -18,7 +18,7 @@ Visual Studio를 **C++를 사용한 플랫폼 간 모바일 개발** 도구와 �
 
 iOS를 사용하여 빌드하는 도구를 설치한 경우 Visual Studio 및 Mac에서 iOS 개발용 원격 에이전트를 신속하게 구성 및 업데이트하는 방법은 이 문서를 참조하세요.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 원격 에이전트를 설치 및 사용하여 iOS용 코드를 개발하려면 다음 필수 조건이 있어야 합니다.
 

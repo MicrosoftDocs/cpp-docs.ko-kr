@@ -28,12 +28,12 @@ helpviewer_keywords:
 - std::bit [C++], countr_zero
 - std::bit [C++], countr_one
 - std::bit [C++], popcount
-ms.openlocfilehash: f06e181a4fe6683adb0cc63c016cbd879f2fc574
-ms.sourcegitcommit: e58918c45316d799c1952ca7797a85adbcd0c472
+ms.openlocfilehash: a2408df9aa13c6e714f615561871397be17fc4a3
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89281811"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90039816"
 ---
 # <a name="ltbitgt-functions"></a>&lt;비트 &gt; 함수
 
@@ -80,7 +80,7 @@ template <class To, class From>
 
 의 패딩 비트가 없는 경우 결과의 각 비트는의 해당 비트와 일치 `from` `To` 합니다 .이 경우 결과의 비트는 지정 되지 않습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 #include <bit>
@@ -111,7 +111,7 @@ std::bit_cat<int>(f) = 7f800000
 
 이 오버 로드는 다음과 같은 경우에만 오버 로드 확인에 참여 합니다.
 -  `sizeof(To) == sizeof(From)`
-- `To` 및 `From` 가 [is_trivially_copyable](https://docs.microsoft.com/cpp/standard-library/is-trivially-copyable-class?view=vs-2019`)됩니다.
+- `To` 및 `From` 가 [is_trivially_copyable](is-trivially-copyable-class.md)됩니다.
 
 이 함수 템플릿은 `constexpr` , 및 인 경우에만입니다 `To` `From` .
 - 공용 구조체 또는 포인터 형식이 아닙니다.
@@ -137,7 +137,7 @@ template<class T>
 
  보다 크거나 같은 2의 최소 거듭제곱입니다 `value` .
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 #include <bit>
@@ -188,7 +188,7 @@ template< class T >
 보다 크지 않은 2의 가장 큰 거듭제곱 `value`
 `value`가 0 이면는 0을 반환 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 #include <bit>
@@ -241,7 +241,7 @@ template<class T>
 나타내는 데 필요한 비트 수 `value` 입니다.
 `value`가 0 이면는 0을 반환 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 #include <bit>
@@ -293,7 +293,7 @@ template<class T>
 가장 중요 한 비트부터 시작 하 여 연속 제로 비트 수입니다.
 `value`가 0 이면 형식의 비트 수입니다 `value` .
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 #include <bit>
@@ -345,7 +345,7 @@ template<class T>
 
 가장 중요 한 비트에서 시작 하 여 1로 설정 된 연속 비트 수입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 #include <bit>
@@ -399,7 +399,7 @@ template<class T>
 최하위 비트부터 시작 하 여 연속 제로 비트 수입니다.
 `value`가 0 이면 형식의 비트 수입니다 `value` .
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 #include <bit>
@@ -452,7 +452,7 @@ template<class T>
 
 최하위 비트에서 시작 하 여 1로 설정 된 연속 비트 수입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 #include <bit>
@@ -505,7 +505,7 @@ template <class T>
 
 `true``value`에 하나의 비트 집합만 있는 경우 `value` 가 2의 거듭제곱을 의미 합니다. 그렇지 않으면 `false`입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 #include <bit>
@@ -559,7 +559,7 @@ template<class T>
 
 에서 1로 설정 된 숫자 비트 `value` 입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 #include <bit>
@@ -623,7 +623,7 @@ template<class T>
 `s`가 0 이면를 반환 `value` 합니다.
 `s`가 음수 이면는를 수행 `rotr(value, -s)` 합니다. 가장 오른쪽 비트의 ' out ' 비트가 가장 왼쪽 비트로 회전 됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 #include <bit>
@@ -685,7 +685,7 @@ template<class T>
 `s`가 0 이면를 반환 `value` 합니다.
 `s`가 음수 이면는를 수행 `rotl(value, -s)` 합니다. 맨 왼쪽 비트의 ' 제어 ' 비트가 가장 오른쪽 비트로 회전 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 #include <bit>
@@ -730,7 +730,7 @@ rotr(0b10000000,-1) = 0b00000001
 
 **네임스페이스:** std
 
-`/std:c++latest` 필수
+[/std: c + + 최신](../build/reference/std-specify-language-standard-version.md) 항목이 필요 합니다.
 
 ## <a name="see-also"></a>참고 항목
 
