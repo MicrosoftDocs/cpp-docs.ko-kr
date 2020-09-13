@@ -6,12 +6,12 @@ helpviewer_keywords:
 - objects [C++], creating
 - instance constructors
 ms.assetid: 3e9f7211-313a-4a92-9584-337452e061a9
-ms.openlocfilehash: f5340f2e56a367734293d661d9d89eb0db522fd2
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 3694dc72860892d778533de2e40898faf9cc287d
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842054"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90042162"
 ---
 # <a name="constructors-c"></a>생성자 (C++)
 
@@ -643,7 +643,7 @@ Derived d4 calls: Base()*/
 
 ::: moniker range=">=vs-2017"
 
-**Visual Studio 2017 이상**: **`using`** **/std: c + + 17** 모드의 문은 파생 클래스의 생성자와 동일한 시그니처가 있는 경우를 제외 하 고 기본 클래스의 모든 생성자 범위를 가져옵니다. 일반적으로 파생 클래스에서 새 데이터 멤버나 생성자를 선언하지 않는 경우 상속 생성자를 사용하는 것이 가장 좋습니다. [Visual Studio 2017 버전 15.7의 향상 된 기능을](../overview/cpp-conformance-improvements.md?view=vs-2017#improvements_157)참조 하세요.
+**Visual Studio 2017 이상**: **`using`** **/std: c + + 17** 모드의 문은 파생 클래스의 생성자와 동일한 시그니처가 있는 경우를 제외 하 고 기본 클래스의 모든 생성자 범위를 가져옵니다. 일반적으로 파생 클래스에서 새 데이터 멤버나 생성자를 선언하지 않는 경우 상속 생성자를 사용하는 것이 가장 좋습니다.
 
 ::: moniker-end
 

@@ -1,6 +1,7 @@
 ---
 title: unordered_map 클래스
-ms.date: 11/04/2016
+description: '`unordered_map`다양 한 길이의 요소 시퀀스를 제어 하는 c + + 표준 라이브러리 컨테이너 클래스에 대 한 API 참조입니다.'
+ms.date: 9/9/2020
 f1_keywords:
 - unordered_map/std::unordered_map
 - unordered_map/std::unordered_map::allocator_type
@@ -27,6 +28,7 @@ f1_keywords:
 - unordered_map/std::unordered_map::cbegin
 - unordered_map/std::unordered_map::cend
 - unordered_map/std::unordered_map::clear
+- unordered_map/std::unordered_map::contains
 - unordered_map/std::unordered_map::count
 - unordered_map/std::unordered_map::emplace
 - unordered_map/std::unordered_map::emplace_hint
@@ -74,6 +76,7 @@ helpviewer_keywords:
 - std::unordered_map::cbegin
 - std::unordered_map::cend
 - std::unordered_map::clear
+- std::unordered_map::contains
 - std::unordered_map::count
 - std::unordered_map::emplace
 - std::unordered_map::emplace_hint
@@ -138,12 +141,12 @@ helpviewer_keywords:
 - std::unordered_map::size
 - std::unordered_map::swap
 ms.assetid: 7cf7cfa1-16e7-461c-a9b2-3b8d8ec24e0d
-ms.openlocfilehash: bde29e2d6148dd5aa5c39ac6a923048694e3a32d
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 8fe2e153e3a7483d9c4698ef4a87e281ace653fc
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562449"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90042141"
 ---
 # <a name="unordered_map-class"></a>unordered_map 클래스
 
@@ -179,7 +182,7 @@ class unordered_map;
 
 ## <a name="members"></a>멤버
 
-|형식 정의|Description|
+|형식 정의|설명|
 |-|-|
 |[allocator_type](#allocator_type)|스토리지 관리를 위한 할당자의 형식입니다.|
 |[const_iterator](#const_iterator)|제어되는 시퀀스에 대한 상수 반복기의 형식입니다.|
@@ -209,6 +212,7 @@ class unordered_map;
 |[cend](#cend)|제어되는 시퀀스의 끝을 지정합니다.|
 |[해제](#clear)|모든 요소를 제거합니다.|
 |[count](#count)|지정한 키와 일치하는 요소의 수를 찾습니다.|
+|[contains](#contains)<sup>c + + 20</sup> 포함|에 지정 된 키를 가진 요소가 있는지 여부를 확인 `unordered_map` 합니다.|
 |[emplace](#emplace)|생성된 요소를 추가합니다.|
 |[emplace_hint](#emplace_hint)|힌트와 함께 생성된 요소를 추가합니다.|
 |[empty](#empty)|요소가 있는지 여부를 테스트합니다.|
@@ -302,7 +306,7 @@ const Ty& at(const Key& key) const;
 *키인지*\
 찾을 키 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 찾은 요소의 데이터 값에 대한 참조입니다.
 
@@ -607,7 +611,7 @@ bucket_size(7) == 1
 const_iterator cbegin() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`const`** 범위의 첫 번째 요소 또는 빈 범위의 끝 바로 다음 위치를 가리키는 전방 액세스 반복기입니다 (빈 범위의 경우 `cbegin() == cend()` ).
 
@@ -633,7 +637,7 @@ auto i2 = Container.cbegin();
 const_iterator cend() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`const`** 범위 끝의 바로 다음을 가리키는 전방 액세스 반복기입니다.
 
@@ -902,6 +906,58 @@ int main()
 [c, 3] [b, 2] [a, 1]
 ```
 
+## <a name="unordered_mapcontains"></a><a name="contains"></a> unordered_map:: contains
+
+에 지정 된 키가 있는 요소가 있는지 여부를 확인 `unordered_map` 합니다.
+C + + 20에서 도입 되었습니다.
+
+```cpp
+bool contains(const Key& key) const;
+<class K> bool contains(const K& key) const;
+```
+
+### <a name="parameters"></a>매개 변수
+
+*시계의*\
+키의 형식입니다.
+
+*키인지*\
+찾을 요소의 키 값입니다.
+
+### <a name="return-value"></a>반환 값
+
+`true` 요소가 컨테이너에 있으면이 고, 그렇지 않으면입니다. `false` 그렇지 않으면입니다. 
+
+### <a name="remarks"></a>설명
+
+`contains()` 는 c + + 20의 새로운 기능은입니다. 이를 사용 하려면 [/sd: c + + 최신](../build/reference/std-specify-language-standard-version.md) 컴파일러 옵션을 지정 합니다.
+
+`template<class K> bool contains(const K& key) const` 가 투명 한 경우에만 오버 로드 확인에 참여 `key_compare` 합니다.
+
+### <a name="example"></a>예제
+
+```cpp
+// Requires /std:c++latest
+#include <unordered_map>
+#include <iostream>
+
+int main()
+{
+    std::unordered_map<int, bool> theUnorderedMap = {{0, false}, {1,true}};
+
+    std::cout << std::boolalpha; // so booleans show as 'true' or 'false'
+    std::cout << theUnorderedMap.contains(1) << '\n';
+    std::cout << theUnorderedMap.contains(2) << '\n';
+    
+    return 0;
+}
+```
+
+```Output
+true
+false
+```
+
 ## <a name="unordered_mapcount"></a><a name="count"></a> unordered_map:: count
 
 지정한 키와 일치하는 요소의 수를 찾습니다.
@@ -1030,7 +1086,7 @@ pair<iterator, bool>  emplace( Args&&... args);
 *args*\
 값이 동등 하 게 `unordered_map` 정렬 된 요소를 이미 포함 하 고 있지 않은 경우에 삽입할 요소를 생성 하기 위해 전달 되는 인수입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `pair` **`bool`** 구성 요소가 삽입이 수행 된 경우 true를 반환 하 고,에 해당 키에 동일한 값이 있는 요소가 이미 포함 되어 있는 경우에는 false를 반환 `unordered_map` 하 고, 해당 반복기 구성 요소는 새 요소가 삽입 되었거나 요소가 이미 있었던 주소를 반환 하는입니다.
 
@@ -1061,7 +1117,7 @@ unordered_map이 해당 요소를 이미 포함하고 있지 않거나, 보다 �
 *위치*\
 올바른 삽입 지점 검색을 시작할 위치와 관련된 힌트입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 새로 삽입된 요소에 대한 반복기입니다.
 
@@ -1256,7 +1312,7 @@ size_type erase(const key_type& Key);
 *키인지*\
 제거할 요소의 키 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 처음 두 구성원 함수의 경우 제거된 요소 뒤에 남은 첫 번째 요소 또는 이러한 요소가 없을 경우 map의 끝에 있는 요소를 지정하는 양방향 반복기입니다.
 
@@ -1495,7 +1551,7 @@ Unordered_map에서 [value_type](../standard-library/map-class.md#value_type)요
 *IList*\
 요소를 복사할 [initializer_list](../standard-library/initializer-list.md) 입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 단일 요소 멤버 함수 (1) 및 (2)는 [pair](../standard-library/pair-structure.md) **`bool`** 구성 요소가 삽입 된 경우 true이 고 unordered_map에 이미 키에 동일한 값이 있는 요소가 이미 포함 되어 있는 경우 false 인 쌍을 반환 합니다. 반환 값 쌍의 반복기 구성 요소는 구성 요소가 true 인 경우 새로 삽입 된 요소를 가리키거나 **`bool`** 구성 요소가 false 인 경우에는 기존 요소를 가리킵니다 **`bool`** .
 
@@ -2115,7 +2171,7 @@ Ty& operator[](Key&& keyval);
 *Keyval*\
 찾거나 삽입할 키 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 삽입된 요소의 데이터 값에 대한 참조입니다.
 
