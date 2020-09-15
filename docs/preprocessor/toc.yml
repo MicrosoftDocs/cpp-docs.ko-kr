@@ -5,7 +5,7 @@
   items:
     - name: 전처리기
       href: ../preprocessor/preprocessor.md
-    - name: 실험적 전처리기 개요
+    - name: 새 전처리기 개요
       href: ../preprocessor/preprocessor-experimental-overview.md
     - name: 변환 단계
       href: ../preprocessor/phases-of-translation.md
@@ -35,7 +35,7 @@
               href: ../preprocessor/auto-search.md
             - name: embedded_idl
               href: ../preprocessor/embedded-idl.md
-            - name: 'exclude (#import)'
+            - name: exclude (#import)
               href: ../preprocessor/exclude-hash-import.md
             - name: high_method_prefix
               href: ../preprocessor/high-method-prefix.md
@@ -73,7 +73,7 @@
               href: ../preprocessor/raw-native-types.md
             - name: raw_property_prefixes
               href: ../preprocessor/raw-property-prefixes.md
-            - name: '이름 바꾸기 (#import)'
+            - name: 이름 바꾸기 (#import)
               href: ../preprocessor/rename-hash-import.md
             - name: 네임스페이스 이름 변경
               href: ../preprocessor/rename-namespace.md
@@ -96,11 +96,11 @@
       items:
         - name: 전처리기 연산자
           href: ../preprocessor/preprocessor-operators.md
-        - name: '문자열화 연산자(#)'
+        - name: 문자열화 연산자(#)
           href: ../preprocessor/stringizing-operator-hash.md
-        - name: 'Charizing 연산자(#@)'
+        - name: Charizing 연산자(#@)
           href: ../preprocessor/charizing-operator-hash-at.md
-        - name: '토큰 붙여넣기 연산자(##)'
+        - name: 토큰 붙여넣기 연산자(##)
           href: ../preprocessor/token-pasting-operator-hash-hash.md
     - name: 전처리기 매크로(C/C++)
       expanded: false

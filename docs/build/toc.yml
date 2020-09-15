@@ -744,6 +744,8 @@
                       href: ../build/reference/zc-inline-remove-unreferenced-comdat.md
                     - name: '/Zc:noexceptTypes(C++17 noexcept 규칙)'
                       href: ../build/reference/zc-noexcepttypes.md
+                    - name: '/Zc: 전처리기(전처리기 적합성 모드 사용)'
+                      href: ../build/reference/zc-preprocessor.md
                     - name: '/Zc:referenceBinding(참조 바인딩 규칙 적용)'
                       href: ../build/reference/zc-referencebinding-enforce-reference-binding-rules.md
                     - name: '/Zc:rvalueCast(형식 변환 규칙 적용)'
