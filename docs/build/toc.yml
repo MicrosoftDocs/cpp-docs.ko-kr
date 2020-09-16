@@ -583,6 +583,8 @@
                   href: ../build/reference/gz-enable-stack-frame-run-time-error-checking.md
                 - name: /H(외부 이름 길이 제한)
                   href: ../build/reference/h-restrict-length-of-external-names.md
+                - name: /headerUnit(헤더 단위 IFC 사용)
+                  href: ../build/reference/headerunit.md
                 - name: /HELP(컴파일러 명령줄 도움말)
                   href: ../build/reference/help-compiler-command-line-help.md
                 - name: /homeparams(스택에 레지스터 매개 변수 복사)
@@ -603,6 +605,10 @@
                   href: ../build/reference/ln-create-msil-module.md
                 - name: '/MD, /MT, /LD(런타임 라이브러리 사용)'
                   href: ../build/reference/md-mt-ld-use-run-time-library.md
+                - name: '/module:exportHeader(헤더 단위 만들기)'
+                  href: ../build/reference/module-exportheader.md
+                - name: '/module:reference(명명된 모듈 IFC 사용)'
+                  href: ../build/reference/module-reference.md
                 - name: /MP(여러 프로세스로 빌드)
                   href: ../build/reference/mp-build-with-multiple-processes.md
                 - name: /nologo(시작 배너 표시 안 함)(C/C++)
@@ -675,6 +681,8 @@
                   href: ../build/reference/std-specify-language-standard-version.md
                 - name: '/Tc, /Tp, /TC, /TP(소스 파일 형식 지정)'
                   href: ../build/reference/tc-tp-tc-tp-specify-source-file-type.md
+                - name: /translateInclude(include 지시문을 import 지시문으로 변환)
+                  href: ../build/reference/translateinclude.md
                 - name: '/U, /u(기호 정의 해제)'
                   href: ../build/reference/u-u-undefine-symbols.md
                 - name: /utf-8(소스 및 실행 파일 문자 집합을 UTF-8로 설정)
