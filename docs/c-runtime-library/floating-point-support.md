@@ -1,6 +1,7 @@
 ---
 title: 수학식 및 부동 소수점 지원
-ms.date: 01/31/2019
+description: Microsoft CRT (유니버설 C 런타임 라이브러리)의 부동 소수점 지원에 대해 설명 합니다.
+ms.date: 9/14/2020
 f1_keywords:
 - c.math
 helpviewer_keywords:
@@ -8,16 +9,18 @@ helpviewer_keywords:
 - math routines
 - floating-point numbers
 ms.assetid: e4fcaf69-5c8e-4854-a9bb-1f412042131e
-ms.openlocfilehash: ca1648719a4a98efc56ea3f543336b803c81c40f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 99a5de3ce816e64d4b477c8c1d3226da5f8f292e
+ms.sourcegitcommit: a6b97f5d78299ad93675de2fe0f0561f528d26c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226231"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90569598"
 ---
 # <a name="math-and-floating-point-support"></a>수학식 및 부동 소수점 지원
 
 UCRT(유버니설 C 런타임) 라이브러리는 ISO C99에 필요한 모든 함수를 포함하여 많은 정수 및 부동 소수점 수학 라이브러리 함수를 제공합니다. 부동 소수점 함수는 성능과 정확성을 균형 있게 유지하도록 구현됩니다. 올바르게 반올림된 결과를 생성하는 것은 막대한 비용이 들 수 있으므로 이러한 함수는 올바르게 반올림된 결과에 대한 근사치를 효율적으로 생성하도록 설계됩니다. 부정확성이 더 큰 경우도 있을 수 있지만 대부분은 생성된 결과가 올바르게 반올림된 결과의 +/-1 ulp 내에 있습니다.
+
+ISO C 표준 11 (C11) 이상의 경우 \<tgmath.h> 및를 포함 하 여 헤더는 \<math.h> \<complex.h> 매개 변수의 형식을 기반으로 해당 수학 함수를 호출 하는 매크로를 제공 합니다. 자세한 내용은 [형식-제네릭](tgmath.md) 계산을 참조 하세요.
 
 대부분의 부동 소수점 수학 라이브러리 함수에는 다양한 CPU 아키텍처에 대한 다양한 구현이 있습니다. 예를 들어 32비트 x86 CRT에는 64비트 x64 CRT와 다른 구현이 있을 수 있습니다. 또한 일부 함수에는 지정된 CPU 아키텍처에 대한 여러 구현이 있을 수 있습니다. 가장 효율적인 구현은 CPU에서 지원되는 명령 집합에 따라 런타임에 동적으로 선택됩니다. 예를 들어 32비트 x86 CRT에서 일부 함수에는 x87 구현 및 an SSE2 구현이 둘 다 있습니다. SSE2를 지원하는 CPU에서 실행될 경우 더 빠른 SSE2 구현이 사용됩니다. SSE2를 지원하지 않는 CPU에서 실행될 경우 더 느린 x87 구현이 사용됩니다. 수학 라이브러리 함수의 구현에 따라 다른 CPU 명령 및 다른 알고리즘을 사용하여 결과를 생성할 수 있으므로 CPU에 따라 함수에서 다른 결과가 생성될 수 있습니다. 대부분은 결과가 올바르게 반올림된 결과의 +/-1 ulp 내에 있지만 실제 결과는 CPU에 따라 달라질 수 있습니다.
 
@@ -34,8 +37,8 @@ UCRT(유버니설 C 런타임) 라이브러리는 ISO C99에 필요한 모든 �
 [asinh, asinhf, asinhl](../c-runtime-library/reference/asinh-asinhf-asinhl.md)|쌍곡선 아크사인을 계산합니다.
 [atan, atanf, atanl, atan2, atan2f, atan2l](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)|아크탄젠트를 계산합니다.
 [atanh, atanhf, atanhl](../c-runtime-library/reference/atanh-atanhf-atanhl.md)|쌍곡선 아크탄젠트를 계산합니다.
-[_atodbl, _atodbl_l](../c-runtime-library/reference/atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)|로캘별 문자열을으로 변환 합니다.**`double`**
-[atof, _atof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|문자열을로 변환 합니다.**`double`**
+[_atodbl, _atodbl_l](../c-runtime-library/reference/atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)|로캘별 문자열을으로 변환 합니다. **`double`**
+[atof, _atof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|문자열을로 변환 합니다. **`double`**
 [_atoflt, _atoflt_l, _atoldbl, _atoldbl_l](../c-runtime-library/reference/atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)|로캘별 문자열을 또는로 변환 합니다. **`float`****`long double`**
 [cbrt, cbrtf, cbrtl](../c-runtime-library/reference/cbrt-cbrtf-cbrtl.md)|세제곱근을 계산합니다.
 [ceil, ceilf, ceill](../c-runtime-library/reference/ceil-ceilf-ceill.md)|최곳값을 계산합니다.
@@ -126,16 +129,16 @@ UCRT(유버니설 C 런타임) 라이브러리는 ISO C99에 필요한 모든 �
 [sinh, sinhf, sinhl](../c-runtime-library/reference/sinh-sinhf-sinhl.md)|쌍곡선 사인을 계산합니다.
 [sqrt, sqrtf, sqrtl](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)|제곱근을 계산합니다.
 [_status87, _statusfp, _statusfp2](../c-runtime-library/reference/status87-statusfp-statusfp2.md)|부동 소수점 상태 단어를 가져옵니다.
-[strtof, _strtof_l](../c-runtime-library/reference/strtof-strtof-l-wcstof-wcstof-l.md)|문자열을로 변환 합니다.**`float`**
-[strtold, _strtold_l](../c-runtime-library/reference/strtold-strtold-l-wcstold-wcstold-l.md)|문자열을로 변환 합니다.**`long double`**
+[strtof, _strtof_l](../c-runtime-library/reference/strtof-strtof-l-wcstof-wcstof-l.md)|문자열을로 변환 합니다. **`float`**
+[strtold, _strtold_l](../c-runtime-library/reference/strtold-strtold-l-wcstold-wcstold-l.md)|문자열을로 변환 합니다. **`long double`**
 [tan, tanf, tanl](../c-runtime-library/reference/tan-tanf-tanl.md)|탄젠트를 계산합니다.
 [tanh, tanhf, tanhl](../c-runtime-library/reference/tanh-tanhf-tanhl.md)|쌍곡선 탄젠트를 계산합니다.
 [tgamma, tgammaf, tgammal](../c-runtime-library/reference/tgamma-tgammaf-tgammal.md)|감마 함수를 계산합니다.
 [trunc, truncf, truncl](../c-runtime-library/reference/trunc-truncf-truncl.md)|소수 부분을 자릅니다.
-[_wtof, _wtof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|와이드 문자열을으로 변환 합니다.**`double`**
+[_wtof, _wtof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|와이드 문자열을으로 변환 합니다. **`double`**
 [_y0, _y1, _yn](../c-runtime-library/reference/bessel-functions-j0-j1-jn-y0-y1-yn.md)|Bessel 함수를 계산합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[범주별 유버니설 C 런타임 루틴](../c-runtime-library/run-time-routines-by-category.md)<br/>
-[부동 소수점 기본 형식](../c-runtime-library/reference/floating-point-primitives.md)<br/>
+[범주별 유니버설 C 런타임 루틴](../c-runtime-library/run-time-routines-by-category.md)\
+[부동 소수점 기본 형식](../c-runtime-library/reference/floating-point-primitives.md)
