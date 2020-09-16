@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4364
 ms.assetid: 1477634c-d60f-4570-ad16-1aaeae24ac7f
-ms.openlocfilehash: 5423a5525f9bef4d949bfee2de058fe19d0ec181
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7f1c71cb3cd6a99d4ed9960032813e7cebca7591
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220043"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90685081"
 ---
 # <a name="compiler-warning-level-1-c4364"></a>컴파일러 경고(수준 1) C4364
 
@@ -21,7 +21,7 @@ ms.locfileid: "87220043"
 
 자세한 내용은 [Friend 어셈블리 (c + +)](../../dotnet/friend-assemblies-cpp.md)를 참조 하세요.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 샘플에서는 구성 요소를 만듭니다.
 
@@ -30,8 +30,6 @@ ms.locfileid: "87220043"
 // compile with: /clr /LD
 ref class A {};
 ```
-
-## <a name="example"></a>예제
 
 다음 샘플에서는 C4364를 생성 합니다.
 

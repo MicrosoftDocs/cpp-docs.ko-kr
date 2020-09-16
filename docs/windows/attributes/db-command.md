@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - db_command attribute
 ms.assetid: 714c3e15-85d7-408b-9a7c-88505c3e5d24
-ms.openlocfilehash: d9ee1ed1bede6a5deaeae0be3783d6abbd05a0d9
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 868ff862cc41543c8ebc7880a5d1a9a7e6b103f3
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831374"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684588"
 ---
 # <a name="db_command"></a>db_command
 
@@ -46,7 +46,7 @@ OLE DB 명령의 텍스트를 포함하는 명령 문자열입니다. 다음은 
 
 > **( \[ ** *bindtype* **]** *szVar1* \[ , *szVar2* \[ , *nVar3* \[ , ...]]] **)**
 
-다음은 각 문자에 대한 설명입니다.
+여기서
 
 - **(** 는 데이터 바인딩 블록의 시작을 표시합니다.
 
@@ -123,7 +123,7 @@ TCHAR m_state[3] = 'CA';
 
 소비자 특성 공급자가 클래스에 이 특성을 적용하는 경우 컴파일러는 클래스의 이름을 _\_*YourClassName*Accessor로 바꿉니다. 여기서 *YourClassName*은 클래스에 지정한 이름입니다. 컴파일러는 또한 \_*YourClassName*Accessor에서 파생되는 *YourClassName*이라는 클래스를 만듭니다.  클래스 뷰에 두 클래스 모두 표시됩니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 이 샘플에서는 상태 열이 'CA'와 일치하는 테이블에서 성과 이름을 선택하는 명령을 정의합니다. **db_command** 는 마법사에서 생성한 함수(예: [OpenAll 및 CloseAll](../../data/oledb/consumer-wizard-generated-methods.md)) 및 `CRowset` 멤버 함수(예: [MoveNext](../../data/oledb/crowset-movenext.md))를 호출할 수 있는 행 집합을 만들고 읽습니다.
 
@@ -163,8 +163,6 @@ struct CAuthors {
 };
 ```
 
-## <a name="example"></a>예제
-
 ```cpp
 // db_command.cpp
 // compile with: /c
@@ -192,8 +190,6 @@ int main(int argc, _TCHAR* argv[]) {
    CoUninitialize();
 }
 ```
-
-## <a name="example"></a>예제
 
 이 샘플에서는 데이터 소스 클래스 `db_source` 의 `CMySource`, 명령 클래스 `db_command` 및 `CCommand1` 의 `CCommand2`를 사용합니다.
 
@@ -241,13 +237,13 @@ int main() {
 | 특성 컨텍스트 | 값 |
 |-|-|
 |**적용 대상**|**`class`**, **`struct`** , 멤버, 메서드, 로컬|
-|**불가능**|아니요|
-|**필수 특성**|없음|
-|**잘못된 특성**|없음|
+|**불가능**|No|
+|**필수 특성**|None|
+|**잘못된 특성**|None|
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 [OLE DB 소비자 특성](ole-db-consumer-attributes.md)<br/>
 [독립형 특성](stand-alone-attributes.md)

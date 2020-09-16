@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4929
 ms.assetid: 95f8ab4f-4468-4caa-acd5-8f4592f03b3c
-ms.openlocfilehash: 8f8f5f9febf762ddff1d35baa2686162ff6653e2
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 7627acbd359058566a5d14d880f4efb2980a8a93
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80199305"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90683860"
 ---
 # <a name="compiler-warning-level-1-c4929"></a>컴파일러 경고(수준 1) C4929
 
@@ -19,7 +19,7 @@ ms.locfileid: "80199305"
 
 형식 라이브러리에 union이 있으므로 [#import](../../preprocessor/hash-import-directive-cpp.md) 의 embedded_idl 특성을 형식 라이브러리에 적용할 수 없습니다. 이 경고를 해결 하려면 embedded_idl를 사용 하지 마세요.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 샘플에서는 구성 요소를 정의 합니다.
 
@@ -52,8 +52,6 @@ struct C : I {
    HRESULT f(TD_TYPE*) { return 0; }
 };
 ```
-
-## <a name="example"></a>예제
 
 다음 샘플에서는 C4929를 생성 합니다.
 

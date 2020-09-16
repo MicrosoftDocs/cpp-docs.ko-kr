@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - C4378
 ms.assetid: d08e11ef-891a-4752-9a5e-360e7394acf7
-ms.openlocfilehash: be3cdaac79c60143648985c1782df76422a1fc98
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 20897ba27350835b4b896c5afd89790331c59220
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80162831"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90685608"
 ---
 # <a name="compiler-warning-level-1-c4378"></a>컴파일러 경고(수준 1) C4378
 
 이니셜라이저를 실행 하려면 함수 포인터를 가져와야 합니다. System:: ModuleHandle:: ResolveMethodHandle을 고려 합니다.
 
-**/Clr**에서 이니셜라이저 기호에는 함수 포인터가 아닌 함수 토큰이 포함 되어 있습니다.  <xref:System.ModuleHandle.ResolveMethodHandle%2A>를 사용 하 여 토큰을 포인터로 변환 해야 합니다.
+**/Clr**에서 이니셜라이저 기호에는 함수 포인터가 아닌 함수 토큰이 포함 되어 있습니다.  을 사용 하 여 토큰을 포인터로 변환 해야 <xref:System.ModuleHandle.ResolveMethodHandle%2A> 합니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 샘플에서는 C4378를 생성 합니다.
 
@@ -62,8 +62,6 @@ int main () {
    InitializeObjects();
 }
 ```
-
-## <a name="example"></a>예제
 
 다음 샘플에서는 C4378를 해결 하는 방법을 보여 줍니다.
 

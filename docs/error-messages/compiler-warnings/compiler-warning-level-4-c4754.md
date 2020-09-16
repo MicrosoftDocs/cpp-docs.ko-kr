@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4754
 ms.assetid: e0e4606a-754a-4f42-a274-21a34978d21d
-ms.openlocfilehash: f55d40044fef58275ad0e1fbd281b5f1af43c243
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 85c99feee72d94f50ec19394cf8aec7a3c9811bc
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80198135"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684982"
 ---
 # <a name="compiler-warning-level-4-c4754"></a>컴파일러 경고(수준 4) C4754
 
@@ -21,7 +21,7 @@ ms.locfileid: "80198135"
 
 정수 변환 규칙은 복잡하고 많은 미묘한 문제가 있습니다. 각 C4754 경고를 수정 하는 대신 [SafeInt 라이브러리](../../safeint/safeint-library.md)를 사용 하도록 코드를 업데이트할 수 있습니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 이 샘플에서는 C4754를 생성 합니다.
 
@@ -59,8 +59,6 @@ unsigned long long x =
    (unsigned long long)a + (unsigned long long)b;
 ```
 
-## <a name="example"></a>예제
-
 다음 샘플도 C4754를 생성합니다.
 
 ```cpp
@@ -96,7 +94,7 @@ Warning C4754: Conversion rules for arithmetic operations in the comparison at C
 if (a + (unsigned long)sizeof(unsigned long) < a)
 ```
 
-**참고** 컴파일러 경고에서 참조 되는 줄 번호는 문의 마지막 줄입니다. 여러 줄에 걸쳐 있는 복잡한 조건 문에 대한 경고 메시지에서, 코드 결함을 포함하는 줄은 보고된 줄 이전의 여러 줄일 수 있습니다. 예를 들면 다음과 같습니다.
+**참고** 컴파일러 경고에서 참조 되는 줄 번호는 문의 마지막 줄입니다. 여러 줄에 걸쳐 있는 복잡한 조건 문에 대한 경고 메시지에서, 코드 결함을 포함하는 줄은 보고된 줄 이전의 여러 줄일 수 있습니다. 예를 들어:
 
 ```cpp
 unsigned long a;

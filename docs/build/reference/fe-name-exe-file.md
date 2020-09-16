@@ -10,18 +10,18 @@ helpviewer_keywords:
 - /Fe compiler option [C++]
 - Fe compiler option [C++]
 ms.assetid: 49f594fd-5e94-45fe-a1bf-7c9f2abb6437
-ms.openlocfilehash: f0bd8f3a96555cc29d06f74fb44a73bbed32889b
-ms.sourcegitcommit: 6b749db14b4cf3a2b8d581fda6fdd8cb98bc3207
+ms.openlocfilehash: 72eada34c6a64a8b4591afbee03b686f3da3ee11
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82825580"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90685413"
 ---
 # <a name="fe-name-exe-file"></a>/Fe(EXE 파일 이름 지정)
 
 컴파일러에서 만든 .exe 파일 또는 DLL의 이름과 디렉터리를 지정 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **/Fe**[_경로 이름_] \
 > **/Fe:** _pathname_
@@ -41,9 +41,9 @@ ms.locfileid: "82825580"
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. **구성 속성** > **링커** > **일반** 속성 페이지를 엽니다.
+1. **구성 속성**  >  **링커**  >  **일반** 속성 페이지를 엽니다.
 
 1. **출력 파일** 속성을 수정 합니다. **확인**을 선택하여 변경 내용을 저장합니다.
 
@@ -51,25 +51,23 @@ ms.locfileid: "82825580"
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.OutputFile%2A>을 참조하세요.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
-다음 명령줄은 현재 디렉터리에 있는 모든 C 소스 파일을 컴파일하고 연결 합니다. 결과로 생성 되는 실행 파일의 이름은 "C:\Users\User Name\repos\My Project\bin" 디렉터리에 만들어집니다.
+다음 명령줄은 현재 디렉터리에 있는 모든 C 소스 파일을 컴파일하고 연결 합니다. 결과로 생성 되는 실행 파일의 이름은 PROCESS.exe "C:\Users\User Name\repos\My Project\bin" 디렉터리에 생성 됩니다.
 
 ```
 CL /Fe"C:\Users\User Name\repos\My Project\bin\PROCESS" *.C
 ```
 
-## <a name="example"></a>예제
-
-다음 명령줄은 현재 디렉터리의 첫 번째 원본 `C:\BIN` 파일과 동일한 기본 이름을 사용 하 여에 실행 파일을 만듭니다.
+다음 명령줄은 `C:\BIN` 현재 디렉터리의 첫 번째 원본 파일과 동일한 기본 이름을 사용 하 여에 실행 파일을 만듭니다.
 
 ```
 CL /FeC:\BIN\ *.C
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
-[출력 파일(/F) 옵션](output-file-f-options.md)<br/>
+[출력 파일 (/F) 옵션](output-file-f-options.md)<br/>
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
 [MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)<br/>
 [경로 이름 지정](specifying-the-pathname.md)<br/>

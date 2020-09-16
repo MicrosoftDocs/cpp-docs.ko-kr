@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4486
 ms.assetid: 2c0c59e3-d025-4d97-8da2-fa27df1402fc
-ms.openlocfilehash: 0ba3a8f9e60ab0b84266dd25b6b9ccfe10f75561
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 893dd9241f83895d253fc8b5513f56cab272e31c
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80186714"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684679"
 ---
 # <a name="compiler-warning-level-1-c4486"></a>컴파일러 경고(수준 1) C4486
 
@@ -19,7 +19,7 @@ ms.locfileid: "80186714"
 
 관리 되는 클래스 또는 구조체의 전용 가상 멤버 함수는 액세스 하거나 재정의할 수 없으므로 [sealed](../../extensions/sealed-cpp-component-extensions.md)로 표시 되어야 합니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 샘플에서는 C4486를 생성 합니다.
 
@@ -32,8 +32,6 @@ private:
    virtual void f1() sealed {}   // OK
 };
 ```
-
-## <a name="example"></a>예제
 
 다음 샘플에서는 전용 sealed 가상 함수를 사용 하는 한 가지 방법을 보여 줍니다.
 

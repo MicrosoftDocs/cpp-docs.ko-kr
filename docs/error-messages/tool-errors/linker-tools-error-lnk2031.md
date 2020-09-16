@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK2031
 ms.assetid: 18ed4b6e-3e75-443c-bbd8-2f6030dc89ee
-ms.openlocfilehash: 326886f8de8b59cce9df46eb7b0325b7cc9eb9f2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 73ca4a51737d1c073b3164f7e5aaa6deba369a38
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225204"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684185"
 ---
 # <a name="linker-tools-error-lnk2031"></a>링커 도구 오류 LNK2031
 
@@ -23,7 +23,7 @@ ms.locfileid: "87225204"
 
 **/Clr: pure** 컴파일러 옵션은 visual studio 2015에서는 더 이상 사용 되지 않으며 visual studio 2017에서는 지원 되지 않습니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 이 코드 샘플에서는 호출 규칙이 암시적으로 [__cdecl](../../cpp/cdecl.md)있는 내보낸 네이티브 함수를 사용 하 여 구성 요소를 생성 합니다.
 
@@ -34,8 +34,6 @@ extern "C" {
    __declspec(dllexport) int func() { return 3; }
 };
 ```
-
-## <a name="example"></a>예제
 
 다음 샘플에서는 네이티브 함수를 사용 하는 순수 클라이언트를 만듭니다. 그러나 **/clr: pure** 의 호출 규칙은 [__clrcall](../../cpp/clrcall.md)입니다. 다음 샘플에서는 LNK2031를 생성 합니다.
 
@@ -49,8 +47,6 @@ int main() {
    return func();
 }
 ```
-
-## <a name="example"></a>예제
 
 다음 샘플에서는 순수 이미지에서 네이티브 함수를 사용 하는 방법을 보여 줍니다. 명시적 **`__cdecl`** 호출 규칙 지정자를 확인 합니다.
 

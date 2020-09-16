@@ -9,18 +9,18 @@ helpviewer_keywords:
 - operators [C++], type of an expression
 - operators [C++], deduce expression type
 ms.assetid: 6dcf8888-8196-4f13-af50-51e3797255d4
-ms.openlocfilehash: 270500d2353c2d14a23ddad378521488cdec136f
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 9e769bbef66bd1b55b9d445874f00d37a736025e
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561390"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90683483"
 ---
 # <a name="decltype--c"></a>decltype(C++)
 
 **`decltype`** 형식 지정자는 지정 된 식의 형식을 생성 합니다. **`decltype`** 형식 지정자는 [ `auto` 키워드](../cpp/auto-cpp.md)와 함께 주로 템플릿 라이브러리를 작성 하는 개발자에 게 유용 합니다. **`auto`** 및 **`decltype`** 를 사용 하 여 반환 형식이 해당 템플릿 인수의 형식에 종속 되는 템플릿 함수를 선언 합니다. 또는 및를 **`auto`** 사용 **`decltype`** 하 여 다른 함수에 대 한 호출을 래핑하는 템플릿 함수를 선언한 다음 래핑된 함수의 반환 형식을 반환 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **`decltype(`***식***`)`**
 
@@ -29,7 +29,7 @@ ms.locfileid: "88561390"
 *식*\
 식입니다. 자세한 내용은 [식](../cpp/expressions-cpp.md)을 참조 하세요.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 *식* 매개 변수의 형식입니다.
 
@@ -56,7 +56,7 @@ const A* a = new A();
 
 다음으로 다음 표에 나와 있는 네 가지 문에 의해 반환 되는 형식을 검사 **`decltype`** 합니다.
 
-|인수를 제거합니다.|Type|메모|
+|문|형식|참고|
 |---------------|----------|-----------|
 |`decltype(fx());`|`const int&&`|에 대 한 [rvalue 참조](../cpp/rvalue-reference-declarator-amp-amp.md) **`const int`** 입니다.|
 |`decltype(var);`|**`int`**|`var` 변수의 형식입니다.|
@@ -100,7 +100,7 @@ decltype(auto) myFunc(T&& t, U&& u)
 
 이 시나리오에서는 형식 지정자 없이 적절 한 형식 식을 작성할 수 없습니다 **`decltype`** . **`decltype`** 형식 지정자는 함수가 참조 형식을 반환 하는지 여부에 대 한 필수 정보를 잃지 않기 때문에 제네릭 전달 함수를 사용 하도록 설정 합니다. 전달 함수의 코드 예제는 이전 `myFunc` 템플릿 함수 예제를 참조하세요.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 코드 예제는 템플릿 함수 `Plus()`의 컴파일하면 지정되는 반환 형식을 선언합니다. `Plus`함수는 오버 로드를 사용 하 여 두 피연산자를 처리 **`operator+`** 합니다. 따라서 더하기 연산자 ( **`+`** )와 함수의 반환 형식은 `Plus` 함수 인수의 형식에 따라 해석 됩니다.
 
@@ -173,8 +173,6 @@ Plus(dx, dy) = 13.5
 Hello, world!
 x3.Dump() = 42
 ```
-
-## <a name="example"></a>예제
 
 **Visual Studio 2017 이상:** 컴파일러는 **`decltype`** 템플릿이 인스턴스화되지 않고 선언 될 때 인수를 구문 분석 합니다. 따라서 인수에 종속 되지 않은 특수화가 있는 경우이 특수화는 **`decltype`** 인스턴스화 시간으로 지연 되지 않고 즉시 처리 되며 결과 오류가 해당 시간에 진단 됩니다.
 

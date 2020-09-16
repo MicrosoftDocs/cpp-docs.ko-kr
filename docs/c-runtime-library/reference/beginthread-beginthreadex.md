@@ -35,12 +35,12 @@ helpviewer_keywords:
 - _beginthreadex function
 - beginthread function
 ms.assetid: 0df64740-a978-4358-a88f-fb0702720091
-ms.openlocfilehash: 29458f2d752f1fe59778b752480e268f8243f15e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5060c4b34005c1cc066e002d20ca70cbfea0fbef
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234278"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684822"
 ---
 # <a name="_beginthread-_beginthreadex"></a>_beginthread, _beginthreadex
 
@@ -97,7 +97,7 @@ uintptr_t _beginthreadex( // MANAGED CODE
 *thrdaddr*<br/>
 스레드 식별자를 수신하는 32비트 변수를 가리킵니다. **NULL**인 경우에는 사용 되지 않습니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 성공 하는 경우 이러한 각 함수는 새로 만든 스레드에 대 한 핸들을 반환 합니다. 그러나 새로 만든 스레드가 너무 빨리 종료 되는 경우 **_beginthread** 올바른 핸들을 반환 하지 않을 수 있습니다. 설명 섹션의 설명을 참조 하세요. 오류가 발생 하면 **_beginthread** -1l을 반환 하 고, 너무 많은 스레드가 **있는 경우** EINVAL, 인수가 잘못 되었거나 스택 크기가 잘못 된 경우에는 **EINVAL** , 리소스 (예: 메모리)가 **부족 한 경우** 에는 **eagain** 로 설정 됩니다. 오류가 발생 하면 **_beginthreadex** 가 0을 반환 하 고 **errno** 및 **_doserrno** 가 설정 됩니다.
 
@@ -157,7 +157,7 @@ uintptr_t _beginthreadex( // MANAGED CODE
 
 **_Beginthread** 또는 **_beginthreadex**를 사용 하려면 응용 프로그램이 다중 스레드 C 런타임 라이브러리 중 하 나와 연결 해야 합니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 예에서는 **_beginthread** 와 **_endthread**를 사용 합니다.
 
@@ -277,8 +277,6 @@ void Bounce( void * parg )
 
 아무 키나 눌러 샘플 애플리케이션을 종료합니다.
 
-## <a name="example"></a>예제
-
 다음 샘플 코드는 동기화 API [WaitForSingleObject](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobject)를 사용 하 여 **_beginthreadex** 에서 반환 된 스레드 핸들을 사용할 수 있는 방법을 보여 줍니다. 주 스레드는 두 번째 스레드가 종료할 때까지 기다린 다음 계속합니다. 두 번째 스레드가 **_endthreadex**를 호출 하면 스레드 개체가 신호를 받은 상태로 전환 됩니다. 그러면 기본 스레드를 계속 실행할 수 있습니다. **_Endthread** 가 신호 된 상태로 설정 되기 전에 스레드 개체를 소멸 시키는 **CloseHandle**을 호출 하기 때문에이 작업은 **_beginthread** 및 **_endthread**에서 수행할 수 없습니다.
 
 ```cpp
@@ -327,7 +325,7 @@ In second thread...
 Counter should be 1000000; it is-> 1000000
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [프로세스 및 환경 제어](../../c-runtime-library/process-and-environment-control.md)
 - [_endthread, _endthreadex](endthread-endthreadex.md)

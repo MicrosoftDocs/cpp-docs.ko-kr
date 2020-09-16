@@ -10,12 +10,12 @@ helpviewer_keywords:
 - iterators, checked
 - checked iterators
 ms.assetid: cfc87df8-e3d9-403b-ab78-e9483247d940
-ms.openlocfilehash: 4918cd9df34e5c728c4aa2d90d4eb7f55784e4c2
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 2327638208f30908cd3429ae656ce569f5821195
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845694"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684905"
 ---
 # <a name="checked-iterators"></a>Checked Iterators
 
@@ -73,7 +73,7 @@ _ITERATOR_DEBUG_LEVEL는 0으로 정의 됩니다.
 
 확인된 반복기를 지원하는 반복기 어댑터는 [checked_array_iterator 클래스](../standard-library/checked-array-iterator-class.md)와 [unchecked_array_iterator 클래스](../standard-library/unchecked-array-iterator-class.md)입니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 1 또는 2로 설정 된 _ITERATOR_DEBUG_LEVEL를 사용 하 여 컴파일하면 특정 클래스의 인덱싱 연산자를 사용 하 여 컨테이너 경계 밖에 있는 요소에 액세스 하려고 하면 런타임 오류가 발생 합니다.
 
@@ -102,8 +102,6 @@ int main()
 
 이 프로그램은 "67"을 인쇄한 후 실패에 대한 자세한 정보가 들어 있는 어설션 실패 대화 상자를 팝업으로 표시합니다.
 
-## <a name="example"></a>예제
-
 마찬가지로, 1 또는 2로 설정 된 _ITERATOR_DEBUG_LEVEL를 사용 하 여 컴파일할 경우 `front` `back` 컨테이너가 비어 있을 때 컨테이너 클래스에서 또는를 사용 하 여 요소에 액세스 하려고 하면 런타임 오류가 발생 합니다.
 
 ```cpp
@@ -125,8 +123,6 @@ int main()
 ```
 
 이 프로그램은 실패에 대한 자세한 정보가 들어 있는 어설션 실패 대화 상자를 팝업으로 표시합니다.
-
-## <a name="example"></a>예제
 
 다음 코드에는 다양한 반복기 사용 사례 시나리오에 대한 설명과 각각에 대한 주석이 나와 있습니다. 기본적으로 _ITERATOR_DEBUG_LEVEL는 디버그 빌드에서 2로 설정 되 고 정품 빌드에서는 0으로 설정 됩니다.
 
@@ -232,7 +228,7 @@ a7: 0 7 14 21 28 35 42 49 56 63 70 77 84 91 98 105
 a8: 0 8 16 24 32 40 48 56 64 72 80 88 96 104 112 120
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 [C + + 표준 라이브러리 개요](../standard-library/cpp-standard-library-overview.md)\
 [디버그 반복기 지원](../standard-library/debug-iterator-support.md)

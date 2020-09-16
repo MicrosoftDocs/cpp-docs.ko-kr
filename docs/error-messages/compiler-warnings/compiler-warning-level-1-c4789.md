@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4789
 ms.assetid: 5800c301-5afb-4af0-85c1-ceb54d775234
-ms.openlocfilehash: 36278615631d017db1d1c2fc4eecf8c1612892de
-ms.sourcegitcommit: a930a9b47bd95599265d6ba83bb87e46ae748949
+ms.openlocfilehash: 1e089c45598a53ff337e389feb2a6983a2997041
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76518402"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684627"
 ---
 # <a name="compiler-warning-level-1-c4789"></a>컴파일러 경고(수준 1) C4789
 
 > 크기 *N* 바이트의 버퍼 '*identifier*'가 오버런 됩니다. *M* 바이트는 오프셋 *L* 에서 시작 하 여 씁니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 **C4789** 는 특정 CRT (C 런타임) 함수를 사용할 때 버퍼 오버런에 대해 경고 합니다. 매개 변수를 전달 하거나 할당 하는 경우에도 크기 불일치를 보고할 수 있습니다. 컴파일 시간에 데이터 크기를 알 수 있는 경우 경고가 발생 합니다. 이 경고는 일반적인 데이터 크기 불일치 검색을 방지할 수 있는 상황에 사용됩니다.
 
@@ -33,7 +33,7 @@ ms.locfileid: "76518402"
 
 이 경고는 매개 변수를 더 큰 데이터 형식으로 캐스팅 한 다음 lvalue 참조에서 복사 할당을 수행 하는 경우에도 나타납니다.
 
-시각적 C++ 개체는 실행 되지 않는 코드 경로에 대해이 경고를 생성할 수 있습니다. 다음 예제와 같이 `#pragma`를 사용하여 이 경고를 일시적으로 비활성화할 수 있습니다.
+실행 되지 않는 코드 경로에 대해이 경고를 생성할 수 Visual C++. 다음 예제와 같이 `#pragma`를 사용하여 이 경고를 일시적으로 비활성화할 수 있습니다.
 
 ```cpp
 #pragma warning( push )
@@ -42,9 +42,9 @@ ms.locfileid: "76518402"
 #pragma warning( pop )
 ```
 
-이 방법을 통해 시각적 C++ 개체는 특정 코드 블록에 대 한 경고를 생성 하지 않습니다. `#pragma warning(push)`는 `#pragma warning(disable: 4789)`에서 변경하기 전까지 기존 상태를 유지합니다. `#pragma warning(pop)`는 푸시된 상태를 복원하고 `#pragma warning(disable:4789)`의 효과를 제거합니다. `#pragma`C++ 전처리기 지시문에 대 한 자세한 내용은 [Warning](../../preprocessor/warning.md) and [Pragma 지시문 및 __Pragma 키워드](../../preprocessor/pragma-directives-and-the-pragma-keyword.md)를 참조 하세요.
+이 방법은 특정 코드 블록에 대 한 경고를 생성 하는 Visual C++을 유지 합니다. `#pragma warning(push)`는 `#pragma warning(disable: 4789)`에서 변경하기 전까지 기존 상태를 유지합니다. `#pragma warning(pop)`는 푸시된 상태를 복원하고 `#pragma warning(disable:4789)`의 효과를 제거합니다. C + + 전처리기 지시문에 대 한 자세한 내용은 `#pragma` [Warning](../../preprocessor/warning.md) and [Pragma 지시문 및 __Pragma 키워드](../../preprocessor/pragma-directives-and-the-pragma-keyword.md)를 참조 하세요.
 
-## <a name="example"></a>예
+## <a name="examples"></a>예제
 
 다음 샘플에서는 C4789를 생성합니다.
 
@@ -67,8 +67,6 @@ int main()
     memcpy(&c, &w, sizeof(wchar_t));
 }
 ```
-
-## <a name="example"></a>예
 
 또한 다음 샘플에서는 C4789를 생성합니다.
 

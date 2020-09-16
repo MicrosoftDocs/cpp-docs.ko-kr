@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3493
 ms.assetid: 734b4257-12a3-436f-8488-c8c55ec81634
-ms.openlocfilehash: 178d1221886dc62edd9785d211e2189fa50962f4
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: ea2c1a3d9a10fee455d20490f0408982f47ee0a7
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74738299"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684731"
 ---
 # <a name="compiler-error-c3493"></a>컴파일러 오류 C3493
 
@@ -25,7 +25,7 @@ ms.locfileid: "74738299"
 
 - 하나 이상의 변수를 명시적으로 캡처합니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 예제에서는 외부 변수를 수정하지만 빈 캡처 절을 지정하기 때문에 C3493을 생성합니다.
 
@@ -38,8 +38,6 @@ int main()
    [](int n) { m = n; }(99); // C3493
 }
 ```
-
-## <a name="example"></a>예제
 
 다음 예제에서는 참조 방식을 기본 캡처 모드로 지정하여 C3493을 해결합니다.
 

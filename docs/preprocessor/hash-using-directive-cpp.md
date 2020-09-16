@@ -12,18 +12,18 @@ helpviewer_keywords:
 - LIBPATH environment variable
 - preprocessor, directives
 ms.assetid: 870b15e5-f361-40a8-ba1c-c57d75c8809a
-ms.openlocfilehash: 0da255957e92a570750da2687bf1444df2e6ab13
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0245eb15219585421be83def0258415ab4b573b6
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219432"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684263"
 ---
 # <a name="using-directive-ccli"></a>#using 지시문 (c + +/CLI)
 
 [/Clr](../build/reference/clr-common-language-runtime-compilation.md)을 사용 하 여 컴파일된 프로그램으로 메타 데이터를 가져옵니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **`#using`***file* [ **`as_friend`** ]
 
@@ -72,7 +72,7 @@ LIBPATH 환경 변수는 컴파일러가에 전달 된 파일 이름을 확인 �
 
 - LIBPATH 환경 변수의 디렉터리
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다른 어셈블리를 참조 하는 두 번째 어셈블리를 참조 하는 어셈블리를 빌드할 수 있습니다. 해당 형식 중 하나를 명시적으로 사용 하는 경우 첫 번째 어셈블리에서 세 번째 어셈블리를 명시적으로 참조 하기만 하면 됩니다.
 
@@ -81,8 +81,6 @@ LIBPATH 환경 변수는 컴파일러가에 전달 된 파일 이름을 확인 �
 // compile with: /clr /LD
 public ref class A {};
 ```
-
-## <a name="example"></a>예제
 
 ```cpp
 // using_assembly_B.cpp
@@ -94,8 +92,6 @@ public:
    void Test() {}
 };
 ```
-
-## <a name="example"></a>예제
 
 다음 샘플에서는 프로그램에서 *using_assembly_A*에 정의 된 형식을 사용 하지 않기 때문에 *using_assembly_A.dll*참조에 대 한 오류를 보고 하지 않습니다.
 
@@ -109,6 +105,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 [전처리기 지시문](../preprocessor/preprocessor-directives.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4227
 ms.assetid: 941a0414-9964-4e02-8487-f9daa42ef7f9
-ms.openlocfilehash: 7b75cff4f03370951245bde1b485d538ffdb4007
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 7ac3ef2b6ad8f05a454dafe5e6a7ea0abc07a066
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80182944"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90685491"
 ---
 # <a name="linker-tools-warning-lnk4227"></a>링커 도구 경고 LNK4227
 
@@ -23,13 +23,13 @@ ms.locfileid: "80182944"
 
 - 컴파일에서 하나 이상의 소스 코드 파일입니다.
 
-예를 들어 이름이 같지만 매개 변수 정보를 다르게 선언 (즉, 모든 compilands에서 선언이 일치 하지 않는) 두 개의 전역 함수가 있는 경우 LNK4227이 발생할 수 있습니다. 각 .obj 파일에 ildasm.exe/TEXT/METADATA *object_file* 를 사용 하 여 형식이 어떻게 다른 지 확인 합니다.
+예를 들어 이름이 같지만 매개 변수 정보를 다르게 선언 (즉, 모든 compilands에서 선언이 일치 하지 않는) 두 개의 전역 함수가 있는 경우 LNK4227이 발생할 수 있습니다. 각 .obj 파일에서 ildasm.exe/TEXT/METADATA *object_file* 를 사용 하 여 형식이 어떻게 다른 지 확인 합니다.
 
 LNK4227는 다른 도구를 사용 하 여 발생 하는 문제를 보고 하는 데도 사용 됩니다. 자세한 내용은 경고 메시지를 검색 하십시오.
 
 경고를 해결 하려면 메타 데이터 문제를 수정 해야 합니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 LNK4227는 참조 된 어셈블리가 해당 어셈블리를 참조 하는 어셈블리와 다르게 서명 된 경우에 생성 됩니다.
 
@@ -62,9 +62,7 @@ ref class MyClass
 };
 ```
 
-## <a name="example"></a>예제
-
-잘못 된 형식의 버전 번호를 어셈블리 특성에 전달 하는 경우에도 LNK4227을 생성할 수 있습니다.  ' * ' 표기법은 `AssemblyVersionAttribute`에만 적용 됩니다.  이 경고를 해결 하려면 `AssemblyVersionAttribute`이외의 버전 특성에 숫자만 사용 합니다.
+잘못 된 형식의 버전 번호를 어셈블리 특성에 전달 하는 경우에도 LNK4227을 생성할 수 있습니다.  ' * ' 표기법은에만 적용 됩니다 `AssemblyVersionAttribute` .  이 경고를 해결 하려면 이외의 버전 특성에 숫자만 사용 `AssemblyVersionAttribute` 합니다.
 
 다음 샘플에서는 LNK4227를 생성 합니다.
 

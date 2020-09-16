@@ -9,12 +9,12 @@ helpviewer_keywords:
 - gcroot keyword [C++]
 - types [C++], declaring handles in
 ms.assetid: b8c0eead-17e5-4003-b21f-b673f997d79f
-ms.openlocfilehash: 1aca21402122a0c8641a7e57ace2a3477ff96f01
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: deba9804b9c5c278b3ffcef2923bc8f89fefa676
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221343"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684536"
 ---
 # <a name="how-to-declare-handles-in-native-types"></a>방법: 네이티브 형식으로 핸들 선언
 
@@ -24,7 +24,7 @@ ms.locfileid: "87221343"
 
 런타임은 핸들과 CLR 개체 간의 연결을 유지 관리 합니다 .이 개체는를 참조 합니다. CLR 개체가 가비지 수집 힙을 사용 하 여 이동 하면 핸들은 개체의 새 주소를 반환 합니다. 변수가 템플릿에 할당 되기 전에 고정 될 필요는 없습니다 `gcroot` .
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 이 샘플에서는 네이티브 스택에 개체를 만드는 방법을 보여 줍니다 `gcroot` .
 
@@ -50,8 +50,6 @@ int main() {
 ```Output
 hello
 ```
-
-## <a name="example"></a>예제
 
 이 샘플에서는 네이티브 힙에서 개체를 만드는 방법을 보여 줍니다 `gcroot` .
 
@@ -80,8 +78,6 @@ int main() {
 ```Output
 hello
 ```
-
-## <a name="example"></a>예제
 
 이 샘플에서는를 사용 하 여 boxed 형식에서를 사용 하 `gcroot` 여 네이티브 형식에 값 형식 (참조 형식 아님)에 대 한 참조를 유지 하는 방법을 보여 줍니다 `gcroot` .
 
@@ -113,6 +109,6 @@ int main() {
 String in V: Hello
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 [C + + Interop 사용 (암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

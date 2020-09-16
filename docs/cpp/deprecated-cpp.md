@@ -7,12 +7,12 @@ helpviewer_keywords:
 - __declspec keyword [C++], deprecated
 - deprecated __declspec keyword
 ms.assetid: beef1129-9434-4cb3-8392-f1eb29e04805
-ms.openlocfilehash: 243c75f4726927c54989c33c1738e38938aa5f64
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 44cb33bae43b32b12dda95423aec5484f61aa596
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221681"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90683418"
 ---
 # <a name="deprecated-c"></a>사용되지 않음 (C++)
 
@@ -28,7 +28,7 @@ ms.locfileid: "87221681"
 
 컴파일러가 사용 되지 않는 식별자 또는 표준 특성을 사용 하는 경우 [`[[deprecated]]`](attributes.md) [C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md) 경고가 throw 됩니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 샘플에서는 함수를 사용되지 않는 것으로 표시하는 방법과 사용되지 않는 함수가 사용되는 경우 컴파일 타임에 표시될 메시지를 지정하는 방법을 보여 줍니다.
 
@@ -49,8 +49,6 @@ int main() {
 }
 ```
 
-## <a name="example"></a>예제
-
 다음 샘플에서는 클래스를 사용되지 않는 것으로 표시하는 방법과 사용되지 않는 클래스가 사용되는 경우 컴파일 타임에 표시될 메시지를 지정하는 방법을 보여 줍니다.
 
 ```cpp
@@ -70,7 +68,7 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 [__declspec](../cpp/declspec.md)<br/>
 [C++ 키워드](../cpp/keywords-cpp.md)

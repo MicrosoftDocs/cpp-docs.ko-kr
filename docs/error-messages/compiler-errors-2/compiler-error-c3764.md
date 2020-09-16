@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3764
 ms.assetid: af5d254c-8d4a-4dda-aad9-3c5c1257c868
-ms.openlocfilehash: 657cb6598eedf8abd050b47c124c78c3a028509f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d8cfcae544d0948c21e093ba6457159b0214a583
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214505"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90685621"
 ---
 # <a name="compiler-error-c3764"></a>컴파일러 오류 C3764
 
@@ -19,7 +19,7 @@ ms.locfileid: "87214505"
 
 컴파일러가 잘못 된 형식의 재정의를 검색 했습니다. 예를 들어 기본 클래스 함수는이 아닙니다 **`virtual`** . 자세한 내용은 [override](../../extensions/override-cpp-component-extensions.md)를 참조 하세요.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 샘플에서는 C3764를 생성 합니다.
 
@@ -36,8 +36,6 @@ public ref struct B : A {
    virtual void h(int) override {}   // OK
 };
 ```
-
-## <a name="example"></a>예제
 
 C3764 기본 클래스 메서드가 명시적이 고 이름이 재정의 된 경우에도 발생할 수 있습니다. 다음 샘플에서는 C3764를 생성 합니다.
 

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4091
 ms.assetid: 3a404967-ab42-49b0-b324-fd7ba1859d78
-ms.openlocfilehash: 333f76c2f570832c9d08a7ad666f2540cca37f05
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1a9fef0a825f98ab3ce8d935c98eefe1866be6cf
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233342"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684692"
 ---
 # <a name="compiler-warning-level-1-c4091"></a>컴파일러 경고 (수준 1) C4091
 
@@ -19,7 +19,7 @@ ms.locfileid: "87233342"
 
 컴파일러에서 사용자가 변수를 선언 했지만 컴파일러가 변수를 선언할 수 없는 경우를 발견 했습니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 **`__declspec`** 사용자 정의 형식 선언의 시작 부분에 있는 특성은 해당 형식의 변수에 적용 됩니다. C4091는 변수가 선언 되지 않았음을 나타냅니다. 다음 샘플에서는 C4091를 생성 합니다.
 
@@ -35,8 +35,6 @@ __declspec(dllimport) class X2 {} varX;
 // applies to user defined type
 class __declspec(dllimport) X3 {};
 ```
-
-## <a name="example"></a>예제
 
 식별자가 typedef 인 경우 변수 이름일 수도 없습니다. 다음 샘플에서는 C4091를 생성 합니다.
 

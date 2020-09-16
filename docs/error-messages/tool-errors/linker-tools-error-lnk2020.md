@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK2020
 ms.assetid: 4dd017d0-5e83-471b-ac8a-538ac1ed6870
-ms.openlocfilehash: 9c6be2548e277af08f1069a70b26cd761db835bc
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 6fd4859e4f8cad657de57e8039bd647e5e2b99a9
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988768"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684640"
 ---
 # <a name="linker-tools-error-lnk2020"></a>링커 도구 오류 LNK2020
 
@@ -25,7 +25,7 @@ ms.locfileid: "74988768"
 
 - 누락 된 함수 또는 데이터가 이미 정의 된 개체 파일 또는 라이브러리를 포함 합니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 샘플에서는 LNK2020를 생성 합니다.
 
@@ -43,8 +43,6 @@ ref struct B {
    static int f() { return 0; }
 };
 ```
-
-## <a name="example"></a>예제
 
 또한 LNK2020는 관리 되는 템플릿 형식의 변수를 만들지만 형식을 인스턴스화하지 않는 경우에도 발생 합니다.
 
