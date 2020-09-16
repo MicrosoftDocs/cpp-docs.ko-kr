@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - db_column attribute
 ms.assetid: 58da4afc-f69c-4ae6-af9a-3f9515f56081
-ms.openlocfilehash: 98f546a243016fa85f6d71159ab2fc0a7963bae3
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 2828a33a31d806c04cfce76a3156674778efbe6e
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833117"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686485"
 ---
 # <a name="db_column"></a>db_column
 
@@ -25,7 +25,7 @@ ms.locfileid: "88833117"
 
 ### <a name="parameters"></a>매개 변수
 
-*ordinal*<br/>
+*순서로*<br/>
 `DBCOLUMNINFO`데이터를 바인딩할 행 집합의 필드에 해당 하는 서 수 열 번호 (서 수) 또는 열 이름 (ANSI 또는 유니코드 문자열)입니다. 숫자를 사용 하는 경우 연속 서 수를 건너뛸 수 있습니다 (예: 1, 2, 3, 5). 사용 하는 OLE DB 공급자가 지 원하는 경우 이름에 공백이 포함 될 수 있습니다. 예를 들어, 다음 형식 중 하나를 사용할 수 있습니다.
 
 ```cpp
@@ -58,7 +58,7 @@ ms.locfileid: "88833117"
 
 응용 프로그램에서 사용 되는이 특성의 예는 [Multiread](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer)를 참조 하세요.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 이 샘플은 테이블의 열을 **`long`** 데이터 멤버에 바인딩하고 상태 및 길이 필드를 지정 합니다.
 
@@ -77,8 +77,6 @@ class CProducts {
    [ db_column("1", status="m_dwProductIDStatus", length="m_dwProductIDLength") ] LONG m_ProductID;
 };
 ```
-
-## <a name="example"></a>예제
 
 이 샘플에서는 네 개의 열을 **`long`** , 문자열, 타임 스탬프 및 `DB_NUMERIC` 정수로 바인딩합니다.
 
@@ -103,13 +101,13 @@ class CProducts {
 | 특성 컨텍스트 | 값 |
 |-|-|
 |**적용 대상**|**`class`**, **`struct`** , 멤버, 메서드|
-|**불가능**|아니요|
-|**필수 특성**|없음|
-|**잘못된 특성**|없음|
+|**불가능**|No|
+|**필수 특성**|None|
+|**잘못된 특성**|None|
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 [OLE DB 소비자 특성](ole-db-consumer-attributes.md)<br/>
 [클래스 특성](class-attributes.md)

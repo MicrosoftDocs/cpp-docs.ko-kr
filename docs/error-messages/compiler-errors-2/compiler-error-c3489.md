@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3489
 ms.assetid: 47b58d69-459d-4499-abc7-5f0b9303d773
-ms.openlocfilehash: 67eaa9806dff96783f391c46c890b34e1ceef5a3
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 3b192a14a39b7c0c9d264bda8073c54f0f395924
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74738416"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90685768"
 ---
 # <a name="compiler-error-c3489"></a>컴파일러 오류 C3489
 
@@ -29,7 +29,7 @@ ms.locfileid: "74738416"
 
 - 변수를 캡처 절에 참조로 전달합니다. 이 경우 람다 식의 동작이 변경될 수 있습니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 예제에서는 기본 모드가 값 방식인 람다 식의 캡처 절에 `n` 변수가 값으로 나타나기 때문에 C3489를 생성합니다.
 
@@ -42,8 +42,6 @@ int main()
    [=, n]() { return n; } (); // C3489
 }
 ```
-
-## <a name="example"></a>예제
 
 다음 예제에서는 C3489에 대한 네 가지 해결 방법을 보여 줍니다.
 

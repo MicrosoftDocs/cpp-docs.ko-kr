@@ -6,22 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4250
 ms.assetid: d47f7249-6b5a-414b-b2d4-56e5d246a782
-ms.openlocfilehash: e0feb1cb7131b4388c87213a85ff1c921f636e1b
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 10064784e1124ac365475f00b3577d22f5e7f3f1
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80162038"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686524"
 ---
 # <a name="compiler-warning-level-2-c4250"></a>컴파일러 경고(수준 2) C4250
 
 ' class1 ': 우위를 통해 ' class2:: member '를 상속 합니다.
 
-두 개 이상의 멤버가 동일한 이름을 갖습니다. `class2`의 하나는이 멤버를 포함 하는 다른 클래스의 기본 클래스 이므로 상속 됩니다.
+두 개 이상의 멤버가 동일한 이름을 갖습니다. 의 하나는 `class2` 이 멤버를 포함 하는 다른 클래스의 기본 클래스 이므로 상속 됩니다.
 
 C4250를 표시 하지 않으려면 [warning](../../preprocessor/warning.md) pragma를 사용 합니다.
 
 가상 기본 클래스는 여러 파생 클래스 간에 공유 되므로 파생 클래스의 이름은 기본 클래스의 이름을 우위에 있습니다. 예를 들어, 다음과 같은 클래스 계층 구조에 있는 경우에는 다음 두 개의 func 정의가 해당 클래스를 통해 weak:: func () 인스턴스와 weak 클래스를 통한 기준:: func ()를 통해 다이아몬드 내에 상속 됩니다. 다이아몬드형 클래스 개체를 통해 func ()의 정규화 되지 않은 호출은 항상 우위:: func () 인스턴스를 호출 합니다.  Weak 클래스가 func ()의 인스턴스를 도입 하는 경우 두 정의 모두 우위를 가지 며 호출은 모호한 것으로 플래그가 지정 됩니다.
+
+## <a name="examples"></a>예제
 
 ```cpp
 // C4250.cpp
@@ -44,8 +46,6 @@ int main() {
    d.func();   // C4250
 }
 ```
-
-## <a name="example"></a>예제
 
 다음 샘플에서는 C4250를 생성 합니다.
 
@@ -77,8 +77,6 @@ int main() {
    cout << eObject.operator int() << endl;
 }
 ```
-
-## <a name="example"></a>예제
 
 이 샘플에서는 더 복잡 한 상황을 보여 줍니다. 다음 샘플에서는 C4250를 생성 합니다.
 

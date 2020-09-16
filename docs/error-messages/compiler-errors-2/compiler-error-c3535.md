@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3535
 ms.assetid: 24449c98-f681-484d-a00b-32533dca3a88
-ms.openlocfilehash: 60ffd5d8decd5c9065ca55cfed34383278359f3e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 673fe6a8b5eb6dfcd9caa841b18d5b47fb7858bf
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228793"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686092"
 ---
 # <a name="compiler-error-c3535"></a>컴파일러 오류 C3535
 
@@ -27,7 +27,7 @@ ms.locfileid: "87228793"
 
 1. 선언이 형식에 대 한 포인터인 경우 초기화 식이 포인터 형식 인지 확인 합니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 예에서는 초기화 식이로 계산 되기 때문에 C3535를 생성 합니다 **`void`** .
 
@@ -42,8 +42,6 @@ int main()
 }
 ```
 
-## <a name="example"></a>예제
-
 다음 예에서는 문이 변수를 `x` 추론 된 형식에 대 한 포인터로 선언 하지만 이니셜라이저 식의 형식이 double 이기 때문에 c3535를 생성 합니다. 따라서 컴파일러가 변수의 형식을 추론할 수 없습니다.
 
 ```cpp
@@ -55,8 +53,6 @@ int main()
    return 0;
 }
 ```
-
-## <a name="example"></a>예제
 
 다음 예제에서는 변수가 `p` 추론 된 형식에 대 한 포인터를 선언 하지만 초기화 식이 포인터 형식이 아니기 때문에 c3535를 생성 합니다.
 

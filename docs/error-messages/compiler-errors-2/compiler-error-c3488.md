@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3488
 ms.assetid: 0a6fcd76-dd3b-48d7-abb3-22eccda96034
-ms.openlocfilehash: 2b69ed4ac8b7e706096d107e9dfaa4447ca1bc79
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: a39c625e63936700661790023a983fa39eeda369
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74738429"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90685794"
 ---
 # <a name="compiler-error-c3488"></a>컴파일러 오류 C3488
 
@@ -29,7 +29,7 @@ ms.locfileid: "74738429"
 
 - 변수를 캡처 절에 값으로 전달합니다. 이 경우 람다 식의 동작이 변경될 수 있습니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 예제에서는 기본 모드가 참조 방식인 람다 식의 캡처 절에 `n` 변수에 대한 참조가 나타나기 때문에 C3488을 생성합니다.
 
@@ -42,8 +42,6 @@ int main()
    [&, &n]() { return n; } (); // C3488
 }
 ```
-
-## <a name="example"></a>예제
 
 다음 예제에서는 C3488에 대한 네 가지 해결 방법을 보여 줍니다.
 

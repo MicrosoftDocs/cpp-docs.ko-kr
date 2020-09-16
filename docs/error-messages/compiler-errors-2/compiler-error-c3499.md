@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3499
 ms.assetid: 6717de5c-ae0f-4024-bdf2-b5598009e7b6
-ms.openlocfilehash: 21d7424e727dab54ff507a8ec9a38db44df1806f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b49c868b696df75a5b5148d32fb286019c6293e4
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228845"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686139"
 ---
 # <a name="compiler-error-c3499"></a>컴파일러 오류 C3499
 
@@ -27,7 +27,7 @@ ms.locfileid: "87228845"
 
 - 람다 식의 본문을 구성하는 문을 단일 문으로 결합합니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 예제에서는 람다 식의 본문이 여러 문을 포함하고 값을 반환하지만 람다 식에서 반환 형식을 지정하지 않으므로 C3499를 생성합니다.
 
@@ -39,8 +39,6 @@ int main()
    [](int x) { int n = x * 2; return n; } (5); // C3499
 }
 ```
-
-## <a name="example"></a>예제
 
 다음 예제에서는 C3499에 대한 두 가지 해결 방법을 보여 줍니다. 첫 번째 해결 방법은 람다 식의 반환 형식을 제공하는 것입니다. 두 번째 해결 방법은 람다 식의 본문을 구성하는 문을 단일 문으로 결합하는 것입니다.
 
@@ -60,6 +58,6 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [람다 식](../../cpp/lambda-expressions-in-cpp.md)

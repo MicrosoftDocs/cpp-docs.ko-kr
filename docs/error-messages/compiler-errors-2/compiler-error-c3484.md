@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3484
 ms.assetid: 2fe847fa-f6ee-4978-bc1d-b6dc6ae906ac
-ms.openlocfilehash: c9895a3e5a8ae7e941fccde2da85fedfb3d2c6dd
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: ded4a183f69e4903afb4c9dfeae22f7751ef76ad
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74743122"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686282"
 ---
 # <a name="compiler-error-c3484"></a>컴파일러 오류 C3484
 
@@ -23,7 +23,7 @@ ms.locfileid: "74743122"
 
 - 반환 형식 앞에 `->` 를 제공합니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 예제에서는 C3484를 생성합니다.
 
@@ -35,8 +35,6 @@ int main()
    return []() . int { return 42; }(); // C3484
 }
 ```
-
-## <a name="example"></a>예제
 
 다음 예제에서는 람다 식의 반환 형식 앞에 `->` 를 제공하여 C3484를 해결합니다.
 

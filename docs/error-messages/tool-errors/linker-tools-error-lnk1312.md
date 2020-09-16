@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1312
 ms.assetid: 48284abb-d849-43fc-ab53-45aded14fd8a
-ms.openlocfilehash: e462d24f2eb54718ba73617146aab96bb14a66df
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 69af2bd2c22fdb1188cf0b7119791e451e80f966
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74990911"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686498"
 ---
 # <a name="linker-tools-error-lnk1312"></a>링커 도구 오류 LNK1312
 
@@ -19,7 +19,7 @@ ms.locfileid: "74990911"
 
 어셈블리를 빌드할 때 **/clr** 로 컴파일된 모듈이 나 어셈블리가 아닌 파일은 **/ASSEMBLYMODULE** 링커 옵션으로 전달 되었습니다.  **/ASSEMBLYMODULE**에 개체 파일을 전달한 경우 **/ASSEMBLYMODULE**대신 링커에 직접 개체를 전달 하면 됩니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 샘플에서는 .obj 파일을 만들었습니다.
 
@@ -31,8 +31,6 @@ public:
    int i;
 };
 ```
-
-## <a name="example"></a>예제
 
 다음 샘플에서는 LNK1312를 생성 합니다.
 

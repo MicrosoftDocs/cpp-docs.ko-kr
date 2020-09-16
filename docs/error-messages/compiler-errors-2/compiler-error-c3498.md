@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3498
 ms.assetid: 0a5a7817-0872-4119-83bf-980a19113374
-ms.openlocfilehash: 771e8c72ab4386bb45a11983318f412e784f5bc9
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: f1b978a585f3404cd3a881f25d6ef6a0f66b212d
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74738104"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686157"
 ---
 # <a name="compiler-error-c3498"></a>컴파일러 오류 C3498
 
@@ -23,7 +23,7 @@ ms.locfileid: "74738104"
 
 - 관리되는 또는 Windows 런타임 변수를 람다 식의 매개 변수 목록에 전달합니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 예제에서는 관리되는 형식이 있는 변수가 람다 식의 캡처 목록에 나타나므로 C3498을 생성합니다.
 
@@ -39,8 +39,6 @@ int main()
       { return String::Concat(s, r); } (", World!"); // C3498
 }
 ```
-
-## <a name="example"></a>예제
 
 다음 예제에서는 관리되는 변수`s`를 람다 식의 매개 변수 목록에 전달하여 C3498을 해결합니다.
 

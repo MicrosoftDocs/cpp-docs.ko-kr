@@ -6,12 +6,12 @@ helpviewer_keywords:
 - generic delegates
 - delegates, generic [C++]
 ms.assetid: 09d430b2-1aef-4fbc-87f9-9d7b8185d798
-ms.openlocfilehash: 527f2837f0c29299727a22df8d4f3d807be0e25b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 980beb21325e78baa9c6f3691f7b814c5266b79a
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228715"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686615"
 ---
 # <a name="generic-delegates-ccli"></a>제네릭 대리자(C++/CLI)
 
@@ -50,7 +50,7 @@ generic < [class | typename] type-parameter-identifiers>
 *formal-parameters*<br/>
 (선택 사항) 대리자의 매개 변수 목록입니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 대리자 형식 매개 변수는 대리자 개체가 만들어진 위치에 지정됩니다. 대리자 및 연결된 메서드의 시그니처는 둘 다 같아야 합니다. 다음 예제는 제네릭 대리자 선언을 보여 줍니다.
 
@@ -60,8 +60,6 @@ generic < [class | typename] type-parameter-identifiers>
 generic <class ItemType>
 delegate ItemType GenDelegate(ItemType p1, ItemType% p2);
 ```
-
-## <a name="example"></a>예제
 
 다음 샘플은 다음을 보여 줍니다.
 
@@ -104,8 +102,6 @@ int main() {
       gcnew GenDelegate<int>(&MyClass::MyStaticMethod<int>);
 }
 ```
-
-## <a name="example"></a>예제
 
 다음 예제에서는 제네릭 대리자 `GenDelegate<ItemType>`를 선언한 다음, `MyMethod` 형식 매개 변수를 사용하는 `ItemType` 메서드를 연결하여 인스턴스화합니다. 대리자의 두 인스턴스(정수 및 double)를 만들고 호출합니다.
 

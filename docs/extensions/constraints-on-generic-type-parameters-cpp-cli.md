@@ -8,12 +8,12 @@ helpviewer_keywords:
 - where keyword [C++]
 - constraints, C++
 ms.assetid: eb828cc9-684f-48a3-a898-b327700c0a63
-ms.openlocfilehash: d001cab897323d86d284958f322d155120a726a5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 829f11c9f0c3935f9a415cae381cfc12d88df18a
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219756"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686758"
 ---
 # <a name="constraints-on-generic-type-parameters-ccli"></a>제네릭 형식 매개 변수에 대한 제약 조건(C++/CLI)
 
@@ -100,7 +100,7 @@ ref class Dictionary {};
 
 - 제약 조건은 추상 기본 클래스와 같은 클래스 형식일 수도 있습니다. 그러나 제약 조건은 값 형식 또는 sealed 클래스일 수 없습니다.
 
-- 제약 조건 자체가 형식 매개 변수가 될 수 없지만, 개방형 생성 형식에 형식 매개 변수를 포함할 수 있습니다. 예를 들어:
+- 제약 조건 자체가 형식 매개 변수가 될 수 없지만, 개방형 생성 형식에 형식 매개 변수를 포함할 수 있습니다. 다음은 그 예입니다.
 
     ```cpp
     // generics_constraints_4.cpp
@@ -113,7 +113,7 @@ ref class Dictionary {};
     ref class G2{};
     ```
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예
 
 다음 예제에서는 제약 조건을 사용하여 형식 매개 변수에서 인스턴스 메서드를 호출하는 방법을 보여 줍니다.
 
@@ -174,8 +174,6 @@ int main() {
 "parent" is not a senior
 "grandfather" is a senior
 ```
-
-## <a name="example"></a>예제
 
 제네릭 형식 매개 변수를 제약 조건으로 사용하면 naked 형식 제약이라고 합니다. 고유한 형식 매개 변수가 있는 멤버 함수가 포함 형식의 형식 매개 변수에 해당 매개 변수를 제한할 필요가 있을 때 naked 형식 제약 조건이 유용합니다.
 

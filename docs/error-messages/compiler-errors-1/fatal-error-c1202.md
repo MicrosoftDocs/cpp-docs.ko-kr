@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1202
 ms.assetid: c859adb8-17a7-4fa1-a1f3-5820b7bf3849
-ms.openlocfilehash: 08694e8df4e72d730f19e08db7370f7bd866266e
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 64e0ee6a98d7005bb2b15833f88c31d593b5b5c2
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74747217"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686563"
 ---
 # <a name="fatal-error-c1202"></a>심각한 오류 C1202
 
@@ -19,7 +19,7 @@ ms.locfileid: "74747217"
 
 템플릿 정의가 재귀적이거나 복잡성 제한을 초과했습니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 샘플에서는 C1202를 생성합니다.
 
@@ -35,8 +35,6 @@ public:
 };
 Factorial<7> facSeven;
 ```
-
-## <a name="example"></a>예제
 
 해결 방법:
 

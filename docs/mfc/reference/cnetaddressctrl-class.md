@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CNetAddressCtrl [MFC], GetAllowType
 - CNetAddressCtrl [MFC], SetAllowType
 ms.assetid: cb4c6aca-3f49-4b52-b76c-65f57096155b
-ms.openlocfilehash: 30fc510272afc90ae37b583e807d10c3374df052
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: e92ea79727248afd84dd08058ea8f23cc8d14f44
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562131"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686589"
 ---
 # <a name="cnetaddressctrl-class"></a>CNetAddressCtrl 클래스
 
@@ -66,13 +66,11 @@ class CNetAddressCtrl : public CEdit
 
 ![네트워크 주소 컨트롤 및 정보 팁이 있는 대화 상자](../../mfc/reference/media/cnetaddctrl.png "네트워크 주소 컨트롤 및 정보 팁이 있는 대화 상자")
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 코드 예제는 네트워크 주소의 유효성을 검사 하는 대화의 일부입니다. 세 개의 라디오 단추에 대 한 이벤트 처리기는 네트워크 주소가 세 가지 주소 유형 중 하나일 수 있도록 지정 합니다. 사용자가 네트워크 컨트롤의 텍스트 상자에 주소를 입력 한 다음 단추를 눌러 주소의 유효성을 검사 합니다. 주소가 올바르면 성공 메시지가 표시 됩니다. 그렇지 않으면 미리 정의 된 정보 팁 오류 메시지가 표시 됩니다.
 
 [!code-cpp[NVC_MFC_CNetAddressCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cnetaddressctrl-class_1.cpp)]
-
-## <a name="example"></a>예제
 
 대화 상자 헤더 파일의 다음 코드 예제는 [CNetAddressCtrl:: GetAddress](#getaddress) 메서드에 필요한 [NC_ADDRESS](/windows/win32/api/shellapi/ns-shellapi-nc_address) 및 [NET_ADDRESS_INFO](/windows/win32/shell/hkey-type) 변수를 정의 합니다.
 
@@ -136,7 +134,7 @@ virtual BOOL Create(
 *nID*\
 진행 컨트롤의 ID입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -170,7 +168,7 @@ virtual BOOL CreateEx(
 *nID*\
 진행 컨트롤의 ID입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -182,7 +180,7 @@ virtual BOOL CreateEx(
 HRESULT DisplayErrorTip();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `S_OK`이 메서드가 성공 하면 값이 고, 그렇지 않으면 오류 코드입니다.
 
@@ -205,7 +203,7 @@ HRESULT GetAddress(PNC_ADDRESS pAddress) const;
 *pAddress*<br/>
 [in, out] [NC_ADDRESS](/windows/win32/api/shellapi/ns-shellapi-nc_address) 구조체에 대 한 포인터입니다.  GetAddress 메서드를 호출 하기 전에이 구조체의 *pAddrInfo* 멤버를 [NET_ADDRESS_INFO](/windows/win32/shell/hkey-type) 구조의 주소로 설정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하면 S_OK 값이 고, 그렇지 않으면입니다. 그렇지 않으면 COM 오류 코드입니다. 가능한 오류 코드에 대 한 자세한 내용은 [NetAddr_GetAddress](/windows/win32/api/shellapi/nf-shellapi-netaddr_getaddress) 매크로의 반환 값 섹션을 참조 하십시오.
 
@@ -225,7 +223,7 @@ HRESULT GetAddress(PNC_ADDRESS pAddress) const;
 DWORD GetAllowType() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 네트워크 주소 컨트롤에서 지원할 수 있는 주소 형식을 지정 하는 플래그의 비트 조합 (OR)입니다. 자세한 내용은 [NET_STRING](/windows/win32/shell/net-string)를 참조 하세요.
 
@@ -246,7 +244,7 @@ HRESULT SetAllowType(DWORD dwAddrMask);
 *dwAddrMask*\
 진행 네트워크 주소 컨트롤에서 지원할 수 있는 주소 형식을 지정 하는 플래그의 비트 조합 (OR)입니다. 자세한 내용은 [NET_STRING](/windows/win32/shell/net-string)를 참조 하세요.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공적으로 수행 되 면이 고, 그렇지 않으면 S_OK입니다. 그렇지 않으면 COM 오류 코드입니다.
 
@@ -256,7 +254,7 @@ HRESULT SetAllowType(DWORD dwAddrMask);
 
 이 메시지는 Windows SDK에 설명 된 [NetAddr_SetAllowType](/windows/win32/api/shellapi/nf-shellapi-netaddr_setallowtype) 매크로를 호출 합니다. 해당 매크로는 NCM_SETALLOWTYPE 메시지를 보냅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 [CNetAddressCtrl 클래스](../../mfc/reference/cnetaddressctrl-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

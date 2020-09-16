@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3867
 ms.assetid: bc5de03f-e01a-4407-88c3-2c63f0016a1e
-ms.openlocfilehash: 7e3f52b2b69058549cb8aa3e14d2a4b4048fc4e4
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 40825bf92a892917f815c955ee4ba1fb6fa906c3
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756853"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686420"
 ---
 # <a name="compiler-error-c3867"></a>컴파일러 오류 C3867
 
-' func ': 함수 호출에 인수 목록이 없습니다. ' & func '를 사용 하 여 멤버에 대 한 포인터 만들기
+' func ': 함수 호출에 인수 목록이 없습니다. ' &func '를 사용 하 여 멤버에 대 한 포인터 만들기
 
 멤버 함수를 클래스 이름 및 address-of 연산자로 한정하지 않고 멤버 함수의 이름을 사용하려고 했습니다.
 
 이 오류는 Visual Studio 2005에 대해 수행한 컴파일러 규칙 작업의 결과로 생성 될 수도 있습니다. 향상 된 멤버 포인터 규칙입니다. Visual Studio 2005 이전에 컴파일된 코드는 이제 C3867을 생성 합니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 잘못 제안된 해결 방법을 통해 컴파일러에서 C3867 오류가 발생할 수 있습니다. 가능하면 항상 최다 파생 클래스를 사용하세요.
 
@@ -44,8 +44,6 @@ void Derived::Bar() {
    &Derived::Test;   // OK
 }
 ```
-
-## <a name="example"></a>예제
 
 다음 샘플에서는 C3867 오류가 발생하는 경우 및 이를 해결하는 방법을 보여 줍니다.
 
@@ -77,8 +75,6 @@ int main() {
 }
 ```
 
-## <a name="example"></a>예제
-
 다음 샘플에서는 C3867 오류가 발생하는 경우 및 이를 해결하는 방법을 보여 줍니다.
 
 ```cpp
@@ -95,8 +91,6 @@ int main() {
    void (X::*pmf2)() = &X::mf;
 }
 ```
-
-## <a name="example"></a>예제
 
 다음 샘플에서는 C3867 오류가 발생하는 경우를 보여 줍니다.
 
@@ -119,8 +113,6 @@ public:
    }
 };
 ```
-
-## <a name="example"></a>예제
 
 다음 샘플에서는 C3867 오류가 발생하는 경우를 보여 줍니다.
 

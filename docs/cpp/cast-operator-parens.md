@@ -5,12 +5,12 @@ helpviewer_keywords:
 - cast operators [C++]
 - () cast operator
 ms.assetid: 4c99eb92-1b19-4a5d-9840-5d8c29b8453e
-ms.openlocfilehash: 491e8ea3bc3ff81e88825700de6a549324a0d5af
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6b1abfc4e2798f973951a24ea27f35b2dcf6cca7
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80190159"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686321"
 ---
 # <a name="cast-operator-"></a>캐스팅 연산자: ()
 
@@ -22,13 +22,13 @@ ms.locfileid: "80190159"
 unary-expression ( type-name ) cast-expression
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 모든 단항 식은 캐스트 식으로 간주됩니다.
 
 형식 캐스팅이 만들어지면 컴파일러에서 *cast-expression*을 *type-name* 형식으로 처리합니다. 모든 스칼라 형식의 개체로 또는 다른 모든 스칼라 형식에서 변환하는 데 캐스트를 사용할 수 있습니다. 명시적 형식 캐스트는 암시적 변환 결과를 확인하는 동일한 규칙으로 제한됩니다. 캐스팅에 대한 추가 제한은 특정 형식의 실제 크기 또는 표현에서 발생할 수 있습니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예
 
 ```cpp
 // expre_CastOperator.cpp
@@ -47,8 +47,6 @@ int main()
     cout << "i = " << i << endl;
 }
 ```
-
-## <a name="example"></a>예제
 
 ```cpp
 // expre_CastOperator2.cpp
@@ -118,7 +116,7 @@ Note that the cast changed the raw internal string
 Raw Bytes after cast:   Exciting
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [단항 연산자가 있는 식](../cpp/expressions-with-unary-operators.md)<br/>
 [C++ 기본 제공 연산자, 우선 순위 및 결합성](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>

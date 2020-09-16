@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - literal keyword [C++]
 ms.assetid: 6b1a1f36-2e1d-4a23-8eb6-172f4f3c477f
-ms.openlocfilehash: 2470d5680f7538af2db7bda3611abad11b827970
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2687352c02bed609ffaa60ee8b1df40b51126d21
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214258"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686732"
 ---
 # <a name="literal-ccli-and-ccx"></a>literal(C++/CLI 및 C++/CX)
 
@@ -49,7 +49,7 @@ ms.locfileid: "87214258"
 
 **literal**은 상황에 맞는 키워드입니다. 자세한 내용은 [상황에 맞는 키워드](context-sensitive-keywords-cpp-component-extensions.md)를 참조하세요.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 이 예에서는 **리터럴** 변수가를 의미 **`static`** 합니다.
 
@@ -64,8 +64,6 @@ int main() {
    int value = X::i;
 }
 ```
-
-## <a name="example"></a>예제
 
 다음 샘플에서는 메타데이터에서 리터럴의 영향을 보여 줍니다.
 
@@ -87,8 +85,6 @@ public ref struct A {
 ```
 .field public static literal int32 lit = int32(0x0000000A)
 ```
-
-## <a name="example"></a>예제
 
 C#으로 작성된 다음 샘플은 이전 샘플에서 만든 메타데이터를 참조하고 **literal** 및 **static const** 변수의 영향을 보여 줍니다.
 
@@ -125,6 +121,6 @@ class B {
 
 컴파일러 옵션: `/clr`
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 [.NET 및 UWP 용 구성 요소 확장](component-extensions-for-runtime-platforms.md)

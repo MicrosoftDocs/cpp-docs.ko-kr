@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3532
 ms.assetid: 51067853-eda8-4f59-86e8-8924e16d3a95
-ms.openlocfilehash: e2329111e916df9eac99d156bcf58a58e148cb08
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f9339797f42967ef1de0253b1e51092e6d98df5d
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228819"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686784"
 ---
 # <a name="compiler-error-c3532"></a>컴파일러 오류 C3532
 
@@ -25,7 +25,7 @@ ms.locfileid: "87228819"
 
 1. 배열 또는 메서드 반환 형식을 선언 하지 않도록 합니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 예제에서는 **`auto`** 키워드가 메서드 반환 형식을 선언할 수 없기 때문에 C3532를 생성 합니다.
 
@@ -34,8 +34,6 @@ ms.locfileid: "87228819"
 // Compile with /Zc:auto
 auto f(){}   // C3532
 ```
-
-## <a name="example"></a>예제
 
 다음 예제에서는 **`auto`** 키워드가 배열을 선언할 수 없기 때문에 C3532를 생성 합니다.
 

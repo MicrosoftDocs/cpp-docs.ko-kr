@@ -7,12 +7,12 @@ helpviewer_keywords:
 - /CLRSUPPORTLASTERROR linker option
 - -CLRSUPPORTLASTERROR linker option
 ms.assetid: b7057990-4154-4b1d-9fc9-6236f7be7575
-ms.openlocfilehash: 071846e18dfef6cad0b7c5fb983dac3f6c85a689
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: ccf13971bf77fb8e960b781e4a1aa2a0e06a5d61
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839168"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686105"
 ---
 # <a name="clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls"></a>/CLRSUPPORTLASTERROR(PInvoke 호출의 마지막 오류 코드 유지)
 
@@ -49,7 +49,7 @@ ms.locfileid: "88839168"
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>을 참조하세요.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 샘플에서는 마지막 오류를 수정 하는 하나의 내보낸 함수를 사용 하 여 네이티브 DLL을 정의 합니다.
 
@@ -65,8 +65,6 @@ __declspec(dllexport) double MySqrt(__int64 n) {
    return sqrt(double(n));
 }
 ```
-
-## <a name="example"></a>예제
 
 다음 샘플에서는 **/CLRSUPPORTLASTERROR**를 사용 하는 방법을 보여 주는 DLL을 사용 합니다.
 
@@ -119,7 +117,7 @@ GetLastError for application call failed (127).
 GetLastError for system call succeeded (183).
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 [MSVC 링커 참조](linking.md)<br/>
 [MSVC 링커 옵션](linker-options.md)

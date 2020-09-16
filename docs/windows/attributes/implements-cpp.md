@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - implements attribute
 ms.assetid: 9cf0858b-cb7d-4d3c-81a6-97d87ed00d25
-ms.openlocfilehash: e18e874473925c0198b8645162546c9abe13b3ef
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 946972a9a7c3041c75e82865acb35feb4a97254a
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842353"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686745"
 ---
 # <a name="implements-c"></a>implements(C++)
 
@@ -41,13 +41,13 @@ IDL coclass의 멤버가 되는 쉼표로 구분 된의 목록입니다. 단일�
 | 특성 컨텍스트 | 값 |
 |-|-|
 |**적용 대상**|**`class`**, **`struct`**|
-|**불가능**|예|
-|**필수 특성**|없음|
-|**잘못된 특성**|없음|
+|**불가능**|Yes|
+|**필수 특성**|None|
+|**잘못된 특성**|None|
 
 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 예제는 세 부분으로 구성 됩니다. .idl 파일 및 관련 .h 파일과 c + + 파일입니다.
 
@@ -96,8 +96,6 @@ library odod
    };
 }
 ```
-
-## <a name="example"></a>예제
 
 또한 컴파일러에서 사용할 수 있어야 하는 다음 .h 파일을 사용할 수 있습니다.
 
@@ -377,8 +375,6 @@ CBar;
 #endif
 ```
 
-## <a name="example"></a>예제
-
 다음 프로그램에서를 구현 하지 않고, `IBar1` , `IBar2` 및는 `ISna` `coclass` 생성 된 IDL에 있지 않습니다.
 
 ```cpp
@@ -482,7 +478,7 @@ public:
 };
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 [컴파일러 특성](compiler-attributes.md)<br/>
 [클래스 특성](class-attributes.md)
