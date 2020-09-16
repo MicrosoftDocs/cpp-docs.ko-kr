@@ -1,4 +1,4 @@
-﻿---
+---
 title: '연습: 자체 동적 연결 라이브러리 만들기 및 사용(C++)'
 description: C++를 사용하여 Visual Studio에서 Windows DLL(동적 연결 라이브러리)을 만듭니다.
 ms.custom: conceptual
@@ -7,12 +7,12 @@ helpviewer_keywords:
 - libraries [C++], DLLs
 - DLLs [C++], walkthroughs
 ms.assetid: 3ae94848-44e7-4955-bbad-7d40f493e941
-ms.openlocfilehash: 37dc59dfb77af9fff240c0d44b21de84b17d073b
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: adca441a1b1b4e5e7b7efa44c4a292a8f1ddec35
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77127844"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90042201"
 ---
 # <a name="walkthrough-create-and-use-your-own-dynamic-link-library-c"></a>연습: 자체 동적 연결 라이브러리 만들기 및 사용(C++)
 
@@ -54,7 +54,7 @@ DLL에 대한 자세한 내용의 링크는 [Visual Studio에서 C/C++ DLL 만�
 
 ::: moniker range="vs-2015"
 
-- Visual Studio. Visual Studio 2015를 다운로드 및 설치하는 방법에 대한 자세한 내용은 [Visual Studio 2015 설치](/visualstudio/install/install-visual-studio-2015?view=vs-2015)를 참조하세요. 기본적으로 설치되지 않으므로 **사용자 지정** C++ 설치를 사용하여 컴파일러 및 도구를 설치합니다.
+- Visual Studio. Visual Studio 2015를 다운로드 및 설치하는 방법에 대한 자세한 내용은 [Visual Studio 2015 설치](/visualstudio/install/install-visual-studio-2015?view=vs-2015&preserve-view=true)를 참조하세요. 기본적으로 설치되지 않으므로 **사용자 지정** C++ 설치를 사용하여 컴파일러 및 도구를 설치합니다.
 
 ::: moniker-end
 

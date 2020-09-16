@@ -3,12 +3,12 @@ title: Visual Studio에서 C++ Linux 워크로드 설치
 description: Visual Studio에서 C++에 대한 Linux 워크로드를 다운로드하고, 설치하고, 설정하는 방법입니다.
 ms.date: 05/03/2020
 ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
-ms.openlocfilehash: bc75610aaefe2a3bdd919cbc4dd81413202794c6
-ms.sourcegitcommit: 8a01ae145bc65f5bc90d6e47b4a1bdf47b073ee7
+ms.openlocfilehash: 3f8e6eb8285652078e5f26ca58601bc6ccfa80d1
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "82765749"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90040979"
 ---
 # <a name="download-install-and-set-up-the-linux-workload"></a>Linux 워크로드 다운로드, 설치 및 설정
 
@@ -56,7 +56,7 @@ Windows 10에서 WSL(Linux용 Windows 하위 시스템)에 선호하는 Linux �
 
 Visual Studio의 Linux 프로젝트는 원격 Linux 시스템 또는 WSL에 다음 종속성이 설치되어야 합니다.
 
-- **컴파일러** - Visual Studio 2019는 GCC 및 [Clang](/cpp/build/clang-support-cmake?view=vs-2019)을 완벽하게 지원합니다.
+- **컴파일러** - Visual Studio 2019는 GCC 및 [Clang](../build/clang-support-cmake.md)을 완벽하게 지원합니다.
 - **gdb** - Visual Studio는 Linux 시스템에서 gdb를 자동으로 시작하고, Visual Studio 디버거의 프런트 엔드를 사용하여 Linux에서 완전히 신뢰할 수 있는 디버깅 환경을 제공합니다.
 - **rsync** 및 **zip** - rsync 및 zip 포함으로 Visual Studio는 IntelliSense에서 사용하기 위해 Linux 시스템의 헤더 파일을 Windows 파일 시스템으로 추출할 수 있습니다.
 - **make**

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - classes [C++], adding members
 - add member function wizard [C++]
 ms.assetid: 55b25ddb-541d-44ed-957c-974ef91cfc85
-ms.openlocfilehash: c5423cfb8e2ea1b39001ec512c9c7f460d6a1a19
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0e63771e3e01c3829e20d2fe62fa2caf0f8b26f5
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228689"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90040784"
 ---
 # <a name="add-a-member-function"></a>멤버 함수 추가
 
@@ -44,12 +44,25 @@ ms.locfileid: "87228689"
 
   추가하는 멤버 함수의 반환 형식을 설정합니다. 반환 형식을 직접 제공하거나 사용 가능한 형식 목록에서 선택할 수 있습니다. 형식에 대한 자세한 내용은 [기본 형식](../cpp/fundamental-types-cpp.md)을 참조하세요.
 
-  | | | |
-  |---|---|---|
-  | **`char`** | **`int`** | **`unsigned int`** |
-  | **`double`** | **`long`** | **`unsigned long`** |
-  | **`float`** | **`short`** | **`void`** |
-  | `HRESULT` | **`unsigned char`** | |
+:::row:::
+   :::column span="":::
+      **`char`**\
+      **`double`**\
+      **`float`**\
+      **`int`**
+   :::column-end:::
+   :::column span="":::
+      **`long`**\
+      **`short`**\
+      **`unsigned char`**\
+      **`unsigned int`**
+   :::column-end:::
+   :::column span="":::
+      **`unsigned long`**\
+      **`void`**\
+      `HRESULT`
+   :::column-end:::
+:::row-end:::
 
 - **함수 이름**
 
@@ -59,11 +72,23 @@ ms.locfileid: "87228689"
 
   멤버 함수에 매개 변수가 있는 경우 멤버 함수에 대해 추가하는 매개 변수의 형식을 설정합니다. 매개 변수 형식을 직접 제공하거나 사용 가능한 형식 목록에서 선택할 수 있습니다.
 
-  | | | |
-  |---|---|---|
-  | **`char`** | **`int`** | **`unsigned char`** |
-  | **`double`** | **`long`** | **`unsigned int`** |
-  | **`float`** | **`short`** | **`unsigned long`** |
+:::row:::
+   :::column span="":::
+      **`char`**\
+      **`double`**\
+      **`float`**
+   :::column-end:::
+   :::column span="":::
+      **`int`**\
+      **`long`**\
+      **`short`**
+   :::column-end:::
+   :::column span="":::
+      **`unsigned char`**\
+      **`unsigned int`**\
+      **`unsigned long`**
+   :::column-end:::
+:::row-end:::
 
 - **매개 변수 이름**
 

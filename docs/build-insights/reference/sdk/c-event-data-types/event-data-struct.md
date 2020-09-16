@@ -9,12 +9,12 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: ccba320a8bb9279b874fae2484c71af913253148
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 468fc30d337e5cfc5ab90f7558904fc90588c3df
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229924"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90041824"
 ---
 # <a name="event_data-structure"></a>EVENT_DATA 구조체
 
@@ -58,7 +58,7 @@ typedef struct EVENT_DATA_TAG
 
 ## <a name="members"></a>멤버
 
-|  |  |
+| Name | Description |
 |--|--|
 | `EventId` | 이벤트를 식별하는 번호입니다. 이벤트 식별자 목록은 [EVENT_ID](event-id-enum.md)를 참조하세요. |
 | `EventInstanceId` | 추적 내에서 현재 이벤트를 고유하게 식별하는 번호입니다. 동일한 추적을 여러 번 분석하거나 다시 로깅하는 경우 이 값이 변경되지 않습니다. 이 필드를 사용하여 동일한 추적을 통해 여러 분석 또는 재로깅 패스에서 동일한 이벤트를 식별할 수 있습니다. |

@@ -3,12 +3,12 @@ title: C++ 규칙 향상
 ms.date: 08/04/2020
 description: Visual Studio의 Microsoft C++는 C++20 언어 표준을 완전하게 준수하기 위해 점점 향상되고 있습니다.
 ms.technology: cpp-language
-ms.openlocfilehash: a28281eb7b47dcfc633467c96e520c7e97e26777
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 3a0e21bf08fcf7861feedd3fd43666bd3768deee
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841391"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90042123"
 ---
 # <a name="c-conformance-improvements-in-visual-studio"></a>Visual Studio의 C++ 규칙 향상
 
@@ -744,7 +744,7 @@ int main() {
 
 ### <a name="preprocessor-output-preserves-newlines"></a>전처리기 출력에서 줄 바꿈이 보존됨
 
-이제 실험적 전처리기는 **`/experimental:preprocessor`** 와 함께 **`/P`** 또는 **`/E`** 를 사용할 경우 줄 바꿈과 공백을 보존합니다. 이 변경 내용은 **`/d1experimental:preprocessor:oldWhitespace`** 를 사용하여 비활성화할 수 있습니다.
+이제 실험적 전처리기는 **`/experimental:preprocessor`** 와 함께 **`/P`** 또는 **`/E`** 를 사용할 경우 줄 바꿈과 공백을 보존합니다.
 
 다음 예제 소스가 주어진 경우
 

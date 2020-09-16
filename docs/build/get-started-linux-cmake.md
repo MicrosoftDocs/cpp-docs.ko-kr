@@ -3,12 +3,12 @@ title: Visual Studio에서 C++ 플랫폼 간 프로젝트 만들기
 description: Linux 및 Windows를 대상으로 하는 Visual Studio에서 C++ 오픈 소스 CMake 프로젝트를 설정하고, 컴파일하고, 디버그하는 방법.
 ms.topic: tutorial
 ms.date: 01/08/2020
-ms.openlocfilehash: aac536f488cf22adf5aa835c9fe5b884fc5d7298
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 3fdd9b1dfb5075f3a71f62bc4f1e2f3c646f9e6b
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81328751"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90040485"
 ---
 # <a name="tutorial-create-c-cross-platform-projects-in-visual-studio"></a>자습서: Visual Studio에서 C++ 플랫폼 간 프로젝트 만들기
 
@@ -155,7 +155,7 @@ Visual Studio는 Windows에 대한 기본 **x64-Debug** 구성을 만듭니다. 
 
    원격 연결을 이미 추가한 경우 **도구 > 옵션 > 플랫폼 간 > 연결 관리자**로 이동하여 이 창을 열 수 있습니다.
 
-1. [Linux 컴퓨터에 연결 정보](/cpp/linux/connect-to-your-remote-linux-computer)를 제공하고 **연결**을 선택합니다. Visual Studio는 이 컴퓨터를 CMakeSettings.json처럼 **Linux-Debug**에 대한 기본 연결로 추가합니다. 또한 원격 컴퓨터에서 헤더를 가져오므로 [이 원격 연결에 고유한 IntelliSense](/cpp/linux/configure-a-linux-project?view=vs-2019#remote_intellisense)를 얻게 됩니다. 그런 다음, Visual Studio는 원격 컴퓨터에 파일을 보내고 원격 시스템에 CMake 캐시를 생성합니다. 이러한 단계는 네트워크 속도와 원격 컴퓨터의 기능에 따라 다소 시간이 걸릴 수 있습니다. CMake 출력 창에 "대상 정보 추출 완료" 메시지가 나타나면 이 작업이 완료되었음을 알 수 있습니다.
+1. [Linux 컴퓨터에 연결 정보](../linux/connect-to-your-remote-linux-computer.md)를 제공하고 **연결**을 선택합니다. Visual Studio는 이 컴퓨터를 CMakeSettings.json처럼 **Linux-Debug**에 대한 기본 연결로 추가합니다. 또한 원격 컴퓨터에서 헤더를 가져오므로 [이 원격 연결에 고유한 IntelliSense](../linux/configure-a-linux-project.md#remote_intellisense)를 얻게 됩니다. 그런 다음, Visual Studio는 원격 컴퓨터에 파일을 보내고 원격 시스템에 CMake 캐시를 생성합니다. 이러한 단계는 네트워크 속도와 원격 컴퓨터의 기능에 따라 다소 시간이 걸릴 수 있습니다. CMake 출력 창에 "대상 정보 추출 완료" 메시지가 나타나면 이 작업이 완료되었음을 알 수 있습니다.
 
 ## <a name="set-a-breakpoint-build-and-run-on-linux"></a>Linux에서 중단점, 빌드 및 실행 설정
 

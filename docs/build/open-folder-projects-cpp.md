@@ -4,12 +4,12 @@ ms.date: 12/02/2019
 helpviewer_keywords:
 - Open Folder Projects in Visual Studio
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
-ms.openlocfilehash: 73d6ff9fb9411b146082989d581ed35298b911ad
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9d9f59817a499f4d529363c88adc57154268c0bc
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229807"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90039588"
 ---
 # <a name="open-folder-support-for-c-build-systems-in-visual-studio"></a>Visual Studio에서 C++ 빌드 시스템에 대해 폴더 열기 지원
 
@@ -31,7 +31,7 @@ CMake는 C++ 데스크톱 워크로드의 구성 요소로 Visual Studio IDE에 
 
 주 메뉴에서 직접 지원되지 않는 빌드 시스템 또는 컴파일러 도구 집함과 함께 Visual Studio IDE를 사용하려면 **파일 | 열기 | 폴더**를 선택하거나 **Ctrl + Shift + Alt + O**를 누릅니다. 소스 코드 파일이 포함된 폴더로 이동합니다. 프로젝트를 빌드하고 IntelliSense를 구성하고 디버깅 매개 변수를 설정하려면 다음 세 가지 JSON 파일을 추가합니다.
 
-| | |
+| 파일 | Description |
 |-|-|
 |CppProperties.json|검색에 대한 사용자 지정 구성 정보를 지정합니다. 필요한 경우 이 파일을 루트 프로젝트 폴더에 만듭니다. (CMake 프로젝트에서 사용되지 않습니다.)|
 |tasks.vs.json|사용자 지정 빌드 명령을 지정합니다. **솔루션 탐색기**의 상황에 맞는 메뉴 항목 **작업 구성**을 통해 액세스합니다.|
@@ -119,7 +119,7 @@ MinGW-W64 구성을 추가하는 경우 JSON은 다음과 비슷합니다.
 
 ## <a name="enable-intellisense-diagnostics"></a>IntelliSense 진단 사용
 
-기대하는 IntelliSense가 표시되지 않는 경우 **도구** > **옵션** > **텍스트 편집기** > **C/C++**  > **고급**으로 이동하고 **로깅 사용**을 **`true`** 로 설정하여 문제를 해결할 수 있습니다. 먼저 **로깅 수준**을 5로 설정하고 **로깅 필터**를 8로 설정해 봅니다.
+기대하는 IntelliSense가 표시되지 않는 경우 **도구** > **옵션** > **텍스트 편집기** > **C/C++**  > **고급**으로 이동하고 **로깅 사용**을 **`true`** 로 설정하여 문제를 해결할 수 있습니다. 먼저 **로깅 수준**은 5로, **로깅 필터**는 8로 설정해 보세요.
 
 ![진단 로깅](media/diagnostic-logging.png)
 
