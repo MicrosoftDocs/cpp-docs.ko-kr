@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2660
 ms.assetid: 2e01a1db-4f00-4df6-a04d-cb6f70a6922b
-ms.openlocfilehash: febeb75cbde6738bd9079b7bd86f88c521c29e40
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 179cdc6379fd26f5acd436d5ca6cacc08df8dce3
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756060"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90743245"
 ---
 # <a name="compiler-error-c2660"></a>컴파일러 오류 C2660
 
@@ -23,9 +23,9 @@ C2660는 동일한 이름의 MFC 멤버 함수가 아닌 Windows API 함수를 �
 
 - 멤버 함수 호출의 형식을 따르도록 함수 호출을 조정 합니다.
 
-- 범위 확인 연산자 (`::`)를 사용 하 여 컴파일러가 전역 이름 공간에서 함수 이름을 검색 하도록 지시할 수 있습니다.
+- 범위 확인 연산자 ()를 사용 `::` 하 여 컴파일러가 전역 이름 공간에서 함수 이름을 검색 하도록 지시할 수 있습니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 샘플에서는 C2660를 생성 합니다.
 
@@ -38,8 +38,6 @@ int main() {
    func( 1, 0 );   // OK
 }
 ```
-
-## <a name="example"></a>예제
 
 C2660는 관리 되는 형식의 Dispose 메서드를 직접 호출 하려고 하는 경우에도 발생할 수 있습니다. 자세한 내용은 [소멸자 및 종료자](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers)를 참조 하세요. 다음 샘플에서는 C2660를 생성 합니다.
 
@@ -60,8 +58,6 @@ int main() {
    stateTimer->~Timer();   // OK
 }
 ```
-
-## <a name="example"></a>예제
 
 파생 클래스가 함수를 숨기면 C2660이 발생 합니다.
 
@@ -92,8 +88,6 @@ int main() {
 }
 ```
 
-## <a name="example"></a>예제
-
 인덱싱된 속성을 잘못 호출 하는 경우 C2660이 발생할 수 있습니다.
 
 ```cpp
@@ -117,8 +111,6 @@ int main() {
 }
 ```
 
-## <a name="example"></a>예제
-
 인덱싱된 속성을 잘못 호출 하는 경우 C2660이 발생할 수 있습니다.
 
 ```cpp
@@ -139,8 +131,6 @@ int main() {
    int x2 = a[3,5];   // OK
 }
 ```
-
-## <a name="example"></a>예제
 
 템플릿 클래스에서 new 연산자를 정의 하는 경우 C2660이 발생할 수 있지만 new 연산자는 바깥쪽 형식이 아닌 다른 형식의 개체를 만듭니다.
 

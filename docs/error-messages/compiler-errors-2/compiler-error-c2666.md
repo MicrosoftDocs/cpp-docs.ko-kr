@@ -6,18 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - C2666
 ms.assetid: 78364d15-c6eb-439a-9088-e04a0176692b
-ms.openlocfilehash: ca779269d573e3e5d270fccad6afe6220083fa42
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: ebe41a4c4aa090e609d3352635d4e1fc06e22454
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74755995"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90743219"
 ---
 # <a name="compiler-error-c2666"></a>컴파일러 오류 C2666
 
 ' identifier ': 숫자 오버 로드에 비슷한 변환이 있습니다.
 
 오버 로드 된 함수 또는 연산자가 모호 합니다.   컴파일러가 모호성을 해결 하기 위해 정식 매개 변수 목록이 너무 유사할 수 있습니다.  이 오류를 해결 하려면 하나 이상의 실제 매개 변수를 명시적으로 캐스팅 합니다.
+
+## <a name="examples"></a>예제
 
 다음 샘플에서는 C2666를 생성 합니다.
 
@@ -41,11 +43,9 @@ int main() {
 
 - 자격 변환이 항등 변환과 동일 하지 않습니다.
 
-이항 연산자 \<, >, \<, > = 인 경우 전달 된 매개 변수는 이제 피연산자의 형식으로 변환할 사용자 정의 변환 연산자를 정의 하는 경우 해당 피연산자의 형식으로 암시적으로 변환 됩니다. 이제 모호성이 발생할 수 있습니다.
+이항 연산자 \<, > , =의 경우 \<=, and > 전달 된 매개 변수는 이제 피연산자의 형식으로 변환 하기 위해 사용자 정의 변환 연산자를 정의 하는 경우 피연산자의 형식으로 암시적으로 변환 됩니다. 이제 모호성이 발생할 수 있습니다.
 
-Visual Studio .NET 2003 및 visual Studio .NET 버전 C++의 visual studio 모두에서 유효한 코드의 경우 함수 구문을 사용 하 여 클래스 연산자를 명시적으로 호출 합니다.
-
-## <a name="example"></a>예제
+Visual Studio .NET 2003 및 Visual Studio .NET 버전 Visual C++ 모두에서 유효한 코드의 경우 함수 구문을 사용 하 여 클래스 연산자를 명시적으로 호출 합니다.
 
 ```cpp
 // C2666b.cpp
@@ -101,8 +101,6 @@ int main()
         printf_s("str1.operator char*() < str2\n");
 }
 ```
-
-## <a name="example"></a>예제
 
 다음 샘플에서는 C2666를 생성 합니다.
 

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3467
 ms.assetid: e2b844d0-4920-412f-99fd-cd8051c4aa41
-ms.openlocfilehash: bba505b01df8eb1b253fbecb0db93d94ae62d5ac
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: dd7046fcf87a6b8f095092ef0de4b94326151e87
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756372"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90742829"
 ---
 # <a name="compiler-error-c3467"></a>컴파일러 오류 C3467
 
@@ -19,9 +19,9 @@ ms.locfileid: "74756372"
 
 컴파일러가 동일한 형식에 대한 2개 이상의 전달 형식 선언을 찾았습니다. 형식마다 선언은 하나씩만 허용됩니다.
 
-자세한 내용은 [형식 전달 (C++/cli)](../../extensions/type-forwarding-cpp-cli.md)을 참조 하세요.
+자세한 내용은 [형식 전달 (c + +/cli)](../../extensions/type-forwarding-cpp-cli.md)을 참조 하세요.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 샘플에서는 구성 요소를 만듭니다.
 
@@ -30,8 +30,6 @@ ms.locfileid: "74756372"
 // compile with: /LD /clr
 public ref class R {};
 ```
-
-## <a name="example"></a>예제
 
 다음 샘플에서는 C3467을 생성합니다.
 

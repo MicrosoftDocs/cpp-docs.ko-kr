@@ -5,12 +5,12 @@ f1_keywords:
 - unordered_map/std::operator!=
 - unordered_map/std::operator==
 ms.assetid: 9d5add0b-84bd-4a79-bd82-3f58b55145ed
-ms.openlocfilehash: 0ecedcfa8444b5cbae8fbe64b528a593ed3498b4
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 2c09fa0070151f7cdd502e8f5583645110e91c5b
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844251"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90741959"
 ---
 # <a name="ltunordered_mapgt-operators"></a>&lt;unordered_map&gt; 연산자
 
@@ -143,7 +143,7 @@ um2 == um3: false
 */
 ```
 
-## <a name="operator"></a><a name="op_neq_multimap"></a> 연산자! =
+## <a name="operator-multimap"></a><a name="op_neq_multimap"></a> operator! = (multimap)
 
 연산자의 좌변에 있는 [unordered_multimap](../standard-library/unordered-multimap-class.md) 개체가 우변에 있는 unordered_multimap 개체와 같지 않은지 테스트합니다.
 
@@ -206,7 +206,7 @@ um2 != um3: true
 */
 ```
 
-## <a name="operator"></a><a name="op_eq_eq_multimap"></a> 연산자 = =
+## <a name="operator-multimap"></a><a name="op_eq_eq_multimap"></a> operator = = (multimap)
 
 연산자의 좌변에 있는 [unordered_multimap](../standard-library/unordered-multimap-class.md) 개체가 우변에 있는 unordered_multimap 개체와 같은지 테스트합니다.
 
@@ -269,6 +269,6 @@ um2 == um3: false
 */
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [<unordered_map>](../standard-library/unordered-map.md)

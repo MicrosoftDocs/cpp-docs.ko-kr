@@ -95,12 +95,12 @@ helpviewer_keywords:
 - value_compare member [STL/CLR]
 - value_type member [STL/CLR]
 ms.assetid: d110e356-ba3e-4e52-9e2d-d997bf975c96
-ms.openlocfilehash: a2f7dafc99c8632f420bcd8119fe489353cf4b28
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a7db6367ae7d5096c47666a1ea930720f061c9dd
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221382"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90743128"
 ---
 # <a name="hash_set-stlclr"></a>hash_set(STL/CLR)
 
@@ -157,7 +157,7 @@ template<typename Key>
 |[hash_set::value_compare(STL/CLR)](#value_compare)|두 요소 값에 대 한 순서 지정 대리자입니다.|
 |[hash_set::value_type(STL/CLR)](#value_type)|요소의 형식입니다.|
 
-|멤버 함수|설명|
+|멤버 함수|Description|
 |---------------------|-----------------|
 |[hash_set::begin(STL/CLR)](#begin)|제어되는 시퀀스의 시작을 지정합니다.|
 |[hash_set::bucket_count(STL/CLR)](#bucket_count)|버킷 수를 계산 합니다.|
@@ -185,13 +185,13 @@ template<typename Key>
 |[hash_set::upper_bound(STL/CLR)](#upper_bound)|지정 된 키와 일치 하는 범위의 끝을 찾습니다.|
 |[hash_set::value_comp(STL/CLR)](#value_comp)|두 요소 값에 대 한 순서 지정 대리자를 복사 합니다.|
 
-|연산자|설명|
+|연산자|Description|
 |--------------|-----------------|
 |[hash_set::operator=(STL/CLR)](#op)|제어되는 시퀀스를 바꿉니다.|
 
 ## <a name="interfaces"></a>인터페이스
 
-|인터페이스|설명|
+|인터페이스|Description|
 |---------------|-----------------|
 |<xref:System.ICloneable>|개체를 복제 합니다.|
 |<xref:System.Collections.IEnumerable>|요소를 순서 대로 이동 합니다.|
@@ -208,7 +208,7 @@ template<typename Key>
 
 [Hash_set:: key_comp (STL/CLR)](../dotnet/hash-set-key-comp-stl-clr.md)멤버 함수를 호출 하 여 저장 된 대리자 개체에 액세스 `()` 합니다. 이러한 대리자 개체는 [hash_set:: key_type (STL/CLR)](../dotnet/hash-set-key-type-stl-clr.md)형식의 키 사이에 동일한 순서를 정의 해야 합니다. 즉, 다음과 같은 두 가지 키 `X` 가 `Y` 있습니다.
 
-`key_comp()(X, Y)`모든 호출에 대해 동일한 부울 결과를 반환 합니다.
+`key_comp()(X, Y)` 모든 호출에 대해 동일한 부울 결과를 반환 합니다.
 
 `key_comp()(X, Y) && key_comp()(Y, X)`가 true 이면 `X` 및 `Y` 는 동일한 순서를 갖는 것으로 간주 됩니다.
 
@@ -218,7 +218,7 @@ template<typename Key>
 
 개체는 [hash_set:: hasher (STL/CLR)](../dotnet/hash-set-hasher-stl-clr.md)형식의 저장 된 대리자 개체를 호출 하 여 지정 된 순서 지정 키를 포함할 버킷을 결정 합니다. 이 저장 된 개체는 멤버 함수 [hash_set:: hash_delegate (STL/CLR)](../dotnet/hash-set-hash-delegate-stl-clr.md) 를 호출 `()` 하 여 키 값에 따라 달라 지는 정수 값을 가져오는 방식으로 액세스 합니다. Hash_set를 생성할 때 저장 된 대리자 개체를 지정할 수 있습니다. 대리자 개체를 지정 하지 않으면 기본값은 함수 `System::Object::hash_value(key_type)` 입니다. 즉, 모든 키 및에 `X` 대해 `Y` 다음을 수행 합니다.
 
-`hash_delegate()(X)`모든 호출에서 동일한 정수 결과를 반환 합니다.
+`hash_delegate()(X)` 모든 호출에서 동일한 정수 결과를 반환 합니다.
 
 `X`및의 순서가 동일한 경우는 `Y` `hash_delegate()(X)` 와 동일한 정수 결과를 반환 해야 합니다 `hash_delegate()(Y)` .
 
@@ -236,7 +236,7 @@ Hash_set 반복기는 연결 된 hash_set 노드에 대 한 핸들을 저장 합
 
 ## <a name="members"></a>멤버
 
-## <a name="hash_setbegin-stlclr"></a><a name="begin"></a>hash_set:: begin (STL/CLR)
+## <a name="hash_setbegin-stlclr"></a><a name="begin"></a> hash_set:: begin (STL/CLR)
 
 제어되는 시퀀스의 시작을 지정합니다.
 
@@ -278,7 +278,7 @@ int main()
     }
 ```
 
-## <a name="hash_setbucket_count-stlclr"></a><a name="bucket_count"></a>hash_set:: bucket_count (STL/CLR)
+## <a name="hash_setbucket_count-stlclr"></a><a name="bucket_count"></a> hash_set:: bucket_count (STL/CLR)
 
 버킷 수를 계산 합니다.
 
@@ -352,7 +352,7 @@ load_factor() = 0.0234375
 max_load_factor() = 0.25
 ```
 
-## <a name="hash_setclear-stlclr"></a><a name="clear"></a>hash_set:: clear (STL/CLR)
+## <a name="hash_setclear-stlclr"></a><a name="clear"></a> hash_set:: clear (STL/CLR)
 
 모든 요소를 제거합니다.
 
@@ -410,7 +410,7 @@ a b
 size() = 0
 ```
 
-## <a name="hash_setconst_iterator-stlclr"></a><a name="const_iterator"></a>hash_set:: const_iterator (STL/CLR)
+## <a name="hash_setconst_iterator-stlclr"></a><a name="const_iterator"></a> hash_set:: const_iterator (STL/CLR)
 
 제어되는 시퀀스에 대한 상수 반복기의 형식입니다.
 
@@ -452,7 +452,7 @@ int main()
 a b c
 ```
 
-## <a name="hash_setconst_reference-stlclr"></a><a name="const_reference"></a>hash_set:: const_reference (STL/CLR)
+## <a name="hash_setconst_reference-stlclr"></a><a name="const_reference"></a> hash_set:: const_reference (STL/CLR)
 
 요소에 대한 상수 참조의 형식입니다.
 
@@ -497,7 +497,7 @@ int main()
 a b c
 ```
 
-## <a name="hash_setconst_reverse_iterator-stlclr"></a><a name="const_reverse_iterator"></a>hash_set:: const_reverse_iterator (STL/CLR)
+## <a name="hash_setconst_reverse_iterator-stlclr"></a><a name="const_reverse_iterator"></a> hash_set:: const_reverse_iterator (STL/CLR)
 
 제어 되는 시퀀스에 대 한 상수 역방향 반복기의 형식입니다.
 
@@ -539,7 +539,7 @@ int main()
 c b a
 ```
 
-## <a name="hash_setcount-stlclr"></a><a name="count"></a>hash_set:: count (STL/CLR)
+## <a name="hash_setcount-stlclr"></a><a name="count"></a> hash_set:: count (STL/CLR)
 
 지정한 키와 일치하는 요소의 수를 찾습니다.
 
@@ -592,7 +592,7 @@ count(L'b') = 1
 count(L'C') = 0
 ```
 
-## <a name="hash_setdifference_type-stlclr"></a><a name="difference_type"></a>hash_set::d ifference_type (STL/CLR)
+## <a name="hash_setdifference_type-stlclr"></a><a name="difference_type"></a> hash_set::d ifference_type (STL/CLR)
 
 두 요소 사이의 부호가 있는 거리의 형식입니다.
 
@@ -647,7 +647,7 @@ end()-begin() = 3
 begin()-end() = -3
 ```
 
-## <a name="hash_setempty-stlclr"></a><a name="empty"></a>hash_set:: empty (STL/CLR)
+## <a name="hash_setempty-stlclr"></a><a name="empty"></a> hash_set:: empty (STL/CLR)
 
 요소가 있는지 여부를 테스트합니다.
 
@@ -699,7 +699,7 @@ size() = 0
 empty() = True
 ```
 
-## <a name="hash_setend-stlclr"></a><a name="end"></a>hash_set:: end (STL/CLR)
+## <a name="hash_setend-stlclr"></a><a name="end"></a> hash_set:: end (STL/CLR)
 
 제어되는 시퀀스의 끝을 지정합니다.
 
@@ -748,7 +748,7 @@ a b c
 *--end() = c
 ```
 
-## <a name="hash_setequal_range-stlclr"></a><a name="equal_range"></a>hash_set:: equal_range (STL/CLR)
+## <a name="hash_setequal_range-stlclr"></a><a name="equal_range"></a> hash_set:: equal_range (STL/CLR)
 
 지정된 키와 일치하는 범위를 찾습니다.
 
@@ -808,7 +808,7 @@ equal_range(L'x') empty = True
 b
 ```
 
-## <a name="hash_seterase-stlclr"></a><a name="erase"></a>hash_set:: erase (STL/CLR)
+## <a name="hash_seterase-stlclr"></a><a name="erase"></a> hash_set:: erase (STL/CLR)
 
 지정된 위치에 있는 요소를 제거합니다.
 
@@ -892,7 +892,7 @@ erase(begin(), end()-1) = e
 size() = 1
 ```
 
-## <a name="hash_setfind-stlclr"></a><a name="find"></a>hash_set:: find (STL/CLR)
+## <a name="hash_setfind-stlclr"></a><a name="find"></a> hash_set:: find (STL/CLR)
 
 지정된 키와 일치하는 요소를 찾습니다.
 
@@ -948,7 +948,7 @@ find b = b
 find C = False
 ```
 
-## <a name="hash_setgeneric_container-stlclr"></a><a name="generic_container"></a>hash_set:: generic_container (STL/CLR)
+## <a name="hash_setgeneric_container-stlclr"></a><a name="generic_container"></a> hash_set:: generic_container (STL/CLR)
 
 컨테이너에 대 한 제네릭 인터페이스의 형식입니다.
 
@@ -1012,7 +1012,7 @@ a b c d
 a b c d e
 ```
 
-## <a name="hash_setgeneric_iterator-stlclr"></a><a name="generic_iterator"></a>hash_set:: generic_iterator (STL/CLR)
+## <a name="hash_setgeneric_iterator-stlclr"></a><a name="generic_iterator"></a> hash_set:: generic_iterator (STL/CLR)
 
 컨테이너의 제네릭 인터페이스와 함께 사용할 반복기의 형식입니다.
 
@@ -1068,7 +1068,7 @@ a b c
 a
 ```
 
-## <a name="hash_setgeneric_reverse_iterator-stlclr"></a><a name="generic_reverse_iterator"></a>hash_set:: generic_reverse_iterator (STL/CLR)
+## <a name="hash_setgeneric_reverse_iterator-stlclr"></a><a name="generic_reverse_iterator"></a> hash_set:: generic_reverse_iterator (STL/CLR)
 
 컨테이너의 제네릭 인터페이스와 함께 사용할 역방향 반복기의 형식입니다.
 
@@ -1124,7 +1124,7 @@ a b c
 c
 ```
 
-## <a name="hash_setgeneric_value-stlclr"></a><a name="generic_value"></a>hash_set:: generic_value (STL/CLR)
+## <a name="hash_setgeneric_value-stlclr"></a><a name="generic_value"></a> hash_set:: generic_value (STL/CLR)
 
 컨테이너의 제네릭 인터페이스와 함께 사용할 요소의 형식입니다.
 
@@ -1178,7 +1178,7 @@ a b c
 a
 ```
 
-## <a name="hash_sethash_delegate-stlclr"></a><a name="hash_delegate"></a>hash_set:: hash_delegate (STL/CLR)
+## <a name="hash_sethash_delegate-stlclr"></a><a name="hash_delegate"></a> hash_set:: hash_delegate (STL/CLR)
 
 지정된 키와 일치하는 요소를 찾습니다.
 
@@ -1216,7 +1216,7 @@ hash(L'a') = 1616896120
 hash(L'b') = 570892832
 ```
 
-## <a name="hash_sethash_set-stlclr"></a><a name="hash_set"></a>hash_set:: hash_set (STL/CLR)
+## <a name="hash_sethash_set-stlclr"></a><a name="hash_set"></a> hash_set:: hash_set (STL/CLR)
 
 컨테이너 개체를 만듭니다.
 
@@ -1456,7 +1456,7 @@ a b c
 a b c
 ```
 
-## <a name="hash_sethasher-stlclr"></a><a name="hasher"></a>hash_set:: hasher (STL/CLR)
+## <a name="hash_sethasher-stlclr"></a><a name="hasher"></a> hash_set:: hasher (STL/CLR)
 
 키에 대 한 해싱 대리자입니다.
 
@@ -1495,7 +1495,7 @@ hash(L'a') = 1616896120
 hash(L'b') = 570892832
 ```
 
-## <a name="hash_setinsert-stlclr"></a><a name="insert"></a>hash_set:: insert (STL/CLR)
+## <a name="hash_setinsert-stlclr"></a><a name="insert"></a> hash_set:: insert (STL/CLR)
 
 요소를 추가합니다.
 
@@ -1611,7 +1611,7 @@ a b c x
 a b c x y
 ```
 
-## <a name="hash_setiterator-stlclr"></a><a name="iterator"></a>hash_set:: iterator (STL/CLR)
+## <a name="hash_setiterator-stlclr"></a><a name="iterator"></a> hash_set:: iterator (STL/CLR)
 
 제어되는 시퀀스에 대한 반복기의 형식입니다.
 
@@ -1653,7 +1653,7 @@ int main()
 a b c
 ```
 
-## <a name="hash_setkey_comp-stlclr"></a><a name="key_comp"></a>hash_set:: key_comp (STL/CLR)
+## <a name="hash_setkey_comp-stlclr"></a><a name="key_comp"></a> hash_set:: key_comp (STL/CLR)
 
 두 키에 대 한 순서 지정 대리자를 복사 합니다.
 
@@ -1712,66 +1712,7 @@ compare(L'a', L'b') = False
 compare(L'b', L'a') = True
 ```
 
-## <a name="hash_setkey_comp-stlclr"></a><a name="key_comp"></a>hash_set:: key_comp (STL/CLR)
-
-두 키에 대 한 순서 지정 대리자를 복사 합니다.
-
-### <a name="syntax"></a>구문
-
-```cpp
-key_compare^key_comp();
-```
-
-### <a name="remarks"></a>설명
-
-멤버 함수는 제어 되는 시퀀스를 정렬 하는 데 사용 되는 순서 지정 대리자를 반환 합니다. 이를 통해 두 키를 비교할 수 있습니다.
-
-### <a name="example"></a>예제
-
-```cpp
-// cliext_hash_set_key_comp.cpp
-// compile with: /clr
-#include <cliext/hash_set>
-
-typedef cliext::hash_set<wchar_t> Myhash_set;
-int main()
-    {
-    Myhash_set c1;
-    Myhash_set::key_compare^ kcomp = c1.key_comp();
-
-    System::Console::WriteLine("compare(L'a', L'a') = {0}",
-        kcomp(L'a', L'a'));
-    System::Console::WriteLine("compare(L'a', L'b') = {0}",
-        kcomp(L'a', L'b'));
-    System::Console::WriteLine("compare(L'b', L'a') = {0}",
-        kcomp(L'b', L'a'));
-    System::Console::WriteLine();
-
-    // test a different ordering rule
-    Myhash_set c2 = cliext::greater<wchar_t>();
-    kcomp = c2.key_comp();
-
-    System::Console::WriteLine("compare(L'a', L'a') = {0}",
-        kcomp(L'a', L'a'));
-    System::Console::WriteLine("compare(L'a', L'b') = {0}",
-        kcomp(L'a', L'b'));
-    System::Console::WriteLine("compare(L'b', L'a') = {0}",
-        kcomp(L'b', L'a'));
-    return (0);
-    }
-```
-
-```Output
-compare(L'a', L'a') = True
-compare(L'a', L'b') = True
-compare(L'b', L'a') = False
-
-compare(L'a', L'a') = False
-compare(L'a', L'b') = False
-compare(L'b', L'a') = True
-```
-
-## <a name="hash_setkey_compare-stlclr"></a><a name="key_compare"></a>hash_set:: key_compare (STL/CLR)
+## <a name="hash_setkey_compare-stlclr"></a><a name="key_compare"></a> hash_set:: key_compare (STL/CLR)
 
 두 키에 대 한 순서 지정 대리자입니다.
 
@@ -1831,7 +1772,7 @@ compare(L'a', L'b') = False
 compare(L'b', L'a') = True
 ```
 
-## <a name="hash_setkey_type-stlclr"></a><a name="key_type"></a>hash_set:: key_type (STL/CLR)
+## <a name="hash_setkey_type-stlclr"></a><a name="key_type"></a> hash_set:: key_type (STL/CLR)
 
 정렬 키의 형식입니다.
 
@@ -1876,7 +1817,7 @@ int main()
 a b c
 ```
 
-## <a name="hash_setload_factor-stlclr"></a><a name="load_factor"></a>hash_set:: load_factor (STL/CLR)
+## <a name="hash_setload_factor-stlclr"></a><a name="load_factor"></a> hash_set:: load_factor (STL/CLR)
 
 버킷당 평균 요소 수를 계산합니다.
 
@@ -1950,7 +1891,7 @@ load_factor() = 0.0234375
 max_load_factor() = 0.25
 ```
 
-## <a name="hash_setlower_bound-stlclr"></a><a name="lower_bound"></a>hash_set:: lower_bound (STL/CLR)
+## <a name="hash_setlower_bound-stlclr"></a><a name="lower_bound"></a> hash_set:: lower_bound (STL/CLR)
 
 지정 된 키와 일치 하는 범위의 시작 부분을 찾습니다.
 
@@ -2007,7 +1948,7 @@ lower_bound(L'x')==end() = True
 *lower_bound(L'b') = b
 ```
 
-## <a name="hash_setmake_value-stlclr"></a><a name="make_value"></a>hash_set:: make_value (STL/CLR)
+## <a name="hash_setmake_value-stlclr"></a><a name="make_value"></a> hash_set:: make_value (STL/CLR)
 
 값 개체를 생성 합니다.
 
@@ -2053,7 +1994,7 @@ int main()
 a b c
 ```
 
-## <a name="hash_setmax_load_factor-stlclr"></a><a name="max_load_factor"></a>hash_set:: max_load_factor (STL/CLR)
+## <a name="hash_setmax_load_factor-stlclr"></a><a name="max_load_factor"></a> hash_set:: max_load_factor (STL/CLR)
 
 버킷당 최대 요소 수를 가져오거나 설정합니다.
 
@@ -2120,7 +2061,7 @@ int main()
     }
 ```
 
-## <a name="hash_setoperator-stlclr"></a><a name="op"></a>hash_set:: operator = (STL/CLR)
+## <a name="hash_setoperator-stlclr"></a><a name="op"></a> hash_set:: operator = (STL/CLR)
 
 제어되는 시퀀스를 바꿉니다.
 
@@ -2175,7 +2116,7 @@ a b c
 a b c
 ```
 
-## <a name="hash_setrbegin-stlclr"></a><a name="rbegin"></a>hash_set:: rbegin (STL/CLR)
+## <a name="hash_setrbegin-stlclr"></a><a name="rbegin"></a> hash_set:: rbegin (STL/CLR)
 
 제어되는 역방향 시퀀스의 시작을 지정합니다.
 
@@ -2223,7 +2164,7 @@ a b c
 *++rbegin() = b
 ```
 
-## <a name="hash_setreference-stlclr"></a><a name="reference"></a>hash_set:: reference (STL/CLR)
+## <a name="hash_setreference-stlclr"></a><a name="reference"></a> hash_set:: reference (STL/CLR)
 
 요소에 대한 참조의 형식입니다.
 
@@ -2268,7 +2209,7 @@ int main()
 a b c
 ```
 
-## <a name="hash_setrehash-stlclr"></a><a name="rehash"></a>hash_set:: rehash (STL/CLR)
+## <a name="hash_setrehash-stlclr"></a><a name="rehash"></a> hash_set:: rehash (STL/CLR)
 
 해시 테이블을 다시 빌드합니다.
 
@@ -2342,7 +2283,7 @@ load_factor() = 0.0234375
 max_load_factor() = 0.25
 ```
 
-## <a name="hash_setrend-stlclr"></a><a name="rend"></a>hash_set:: rend (STL/CLR)
+## <a name="hash_setrend-stlclr"></a><a name="rend"></a> hash_set:: rend (STL/CLR)
 
 제어되는 역방향 시퀀스의 끝을 지정합니다.
 
@@ -2391,7 +2332,7 @@ a b c
 *--rend() = a
 ```
 
-## <a name="hash_setreverse_iterator-stlclr"></a><a name="reverse_iterator"></a>hash_set:: reverse_iterator (STL/CLR)
+## <a name="hash_setreverse_iterator-stlclr"></a><a name="reverse_iterator"></a> hash_set:: reverse_iterator (STL/CLR)
 
 제어되는 시퀀스에 대한 반대 반복기의 형식입니다.
 
@@ -2433,7 +2374,7 @@ int main()
 c b a
 ```
 
-## <a name="hash_setsize-stlclr"></a><a name="size"></a>hash_set:: size (STL/CLR)
+## <a name="hash_setsize-stlclr"></a><a name="size"></a> hash_set:: size (STL/CLR)
 
 요소 수를 계산합니다.
 
@@ -2487,7 +2428,7 @@ size() = 0 after clearing
 size() = 2 after adding 2
 ```
 
-## <a name="hash_setsize_type-stlclr"></a><a name="size_type"></a>hash_set:: size_type (STL/CLR)
+## <a name="hash_setsize_type-stlclr"></a><a name="size_type"></a> hash_set:: size_type (STL/CLR)
 
 두 요소 사이의 부호가 있는 거리의 형식입니다.
 
@@ -2535,7 +2476,7 @@ a b c
 end()-begin() = 3
 ```
 
-## <a name="hash_setswap-stlclr"></a><a name="swap"></a>hash_set:: swap (STL/CLR)
+## <a name="hash_setswap-stlclr"></a><a name="swap"></a> hash_set:: swap (STL/CLR)
 
 두 컨테이너의 내용을 바꿉니다.
 
@@ -2603,7 +2544,7 @@ d e f
 a b c
 ```
 
-## <a name="hash_setto_array-stlclr"></a><a name="to_array"></a>hash_set:: to_array (STL/CLR)
+## <a name="hash_setto_array-stlclr"></a><a name="to_array"></a> hash_set:: to_array (STL/CLR)
 
 제어 되는 시퀀스를 새 배열에 복사 합니다.
 
@@ -2653,7 +2594,7 @@ a b c d
 a b c
 ```
 
-## <a name="hash_setupper_bound-stlclr"></a><a name="upper_bound"></a>hash_set:: upper_bound (STL/CLR)
+## <a name="hash_setupper_bound-stlclr"></a><a name="upper_bound"></a> hash_set:: upper_bound (STL/CLR)
 
 지정 된 키와 일치 하는 범위의 끝을 찾습니다.
 
@@ -2710,7 +2651,7 @@ upper_bound(L'x')==end() = True
 *upper_bound(L'b') = c
 ```
 
-## <a name="hash_setvalue_comp-stlclr"></a><a name="value_comp"></a>hash_set:: value_comp (STL/CLR)
+## <a name="hash_setvalue_comp-stlclr"></a><a name="value_comp"></a> hash_set:: value_comp (STL/CLR)
 
 두 요소 값에 대 한 순서 지정 대리자를 복사 합니다.
 
@@ -2754,7 +2695,7 @@ compare(L'a', L'b') = True
 compare(L'b', L'a') = False
 ```
 
-## <a name="hash_setvalue_compare-stlclr"></a><a name="value_compare"></a>hash_set:: value_compare (STL/CLR)
+## <a name="hash_setvalue_compare-stlclr"></a><a name="value_compare"></a> hash_set:: value_compare (STL/CLR)
 
 두 요소 값에 대 한 순서 지정 대리자입니다.
 
@@ -2799,7 +2740,7 @@ compare(L'a', L'b') = True
 compare(L'b', L'a') = False
 ```
 
-## <a name="hash_setvalue_type-stlclr"></a><a name="value_type"></a>hash_set:: value_type (STL/CLR)
+## <a name="hash_setvalue_type-stlclr"></a><a name="value_type"></a> hash_set:: value_type (STL/CLR)
 
 요소의 형식입니다.
 

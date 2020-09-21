@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2804
 ms.assetid: b066e563-cca4-450c-8ba7-3b0d7a89f3ea
-ms.openlocfilehash: 62af8cca5131a5cb21df45f09c55ee5beb3fc718
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: bdd1b4155d30dd2513d87ac217ca20ca7baabd8a
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74760649"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90743167"
 ---
 # <a name="compiler-error-c2804"></a>컴파일러 오류 C2804
 
@@ -19,7 +19,7 @@ ms.locfileid: "74760649"
 
 오버로드된 이항 연산자 멤버 함수는 둘 이상의 매개 변수를 사용하여 선언됩니다. 형식이 연산자의 바깥쪽 형식인 이항 연산자 멤버 함수의 첫 번째 피연산자 매개 변수가 적용됩니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 샘플에서는 C2804 오류가 발생하는 경우 및 이를 해결하는 방법을 보여 줍니다.
 
@@ -37,8 +37,6 @@ int main() {
    x += y;   // equivalent to x.operator+=(y)
 }
 ```
-
-## <a name="example"></a>예제
 
 다음 샘플에서는 C2804 오류가 발생하는 경우 및 이를 해결하는 방법을 보여 줍니다.
 

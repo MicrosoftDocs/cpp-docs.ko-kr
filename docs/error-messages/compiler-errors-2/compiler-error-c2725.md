@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2725
 ms.assetid: 13cd5b1b-e906-4cd8-9b2b-510d587c665a
-ms.openlocfilehash: 5df5a94e32e3cb365166fc38c5df10c248138277
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: b2e8c6a2d3368e2f7fc1277e3bf727848da50881
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756411"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90741399"
 ---
 # <a name="compiler-error-c2725"></a>컴파일러 오류 C2725
 
@@ -19,7 +19,7 @@ ms.locfileid: "74756411"
 
 관리되는 또는 WinRT 예외의 형식이 올바르지 않습니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 샘플에서는 C2725를 생성하고 해결 방법을 보여 줍니다.
 
@@ -39,8 +39,6 @@ int main() {
    throw r2;   // OK
 }
 ```
-
-## <a name="example"></a>예제
 
 다음 샘플에서는 C2725를 생성하고 해결 방법을 보여 줍니다.
 

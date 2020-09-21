@@ -7,12 +7,12 @@ helpviewer_keywords:
 - assertions [C++], static_assert
 - static_assert
 ms.assetid: 28dd3668-e78c-4de8-ba68-552084743426
-ms.openlocfilehash: 55181193e0364c1c6b758365c674f8e2c8a3f4c7
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: b30af5fcf5d4f58143e657d84e743ef09a34e268
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88560636"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90742972"
 ---
 # <a name="static_assert"></a>static_assert
 
@@ -44,21 +44,21 @@ static_assert( constant-expression ); // C++17 (Visual Studio 2017 and later)
 
 **`static_assert`** 네임 스페이스, 클래스 또는 블록 범위에서 키워드를 사용할 수 있습니다. 키워드는 **`static_assert`** 네임 스페이스 범위에서 사용할 수 있으므로 프로그램에 새 이름을 도입 하지 않더라도 기술적으로 선언 됩니다.
 
-## <a name="description"></a>Description
+## <a name="description-of-static_assert-with-namespace-scope"></a>네임 스페이스 범위가 있는 static_assert에 대 한 설명
 
 다음 예제에서 선언에는 **`static_assert`** 네임 스페이스 범위가 있습니다. 컴파일러가 `void *` 형식의 크기를 알고 있기 때문에 식이 즉시 계산됩니다.
 
-## <a name="example"></a>예제
+## <a name="example-of-static_assert-with-namespace-scope"></a>네임 스페이스 범위를 사용 하는 static_assert의 예
 
 ```cpp
 static_assert(sizeof(void *) == 4, "64-bit code generation is not supported.");
 ```
 
-## <a name="description"></a>Description
+## <a name="description-of-static_assert-with-class-scope"></a>클래스 범위 static_assert 설명
 
 다음 예제에서 **`static_assert`** 선언은 클래스 범위를 갖습니다. 는 **`static_assert`** 템플릿 매개 변수가 POD ( *일반 이전 데이터* ) 형식 인지 확인 합니다. 컴파일러는 **`static_assert`** 선언 될 때 선언을 검사 하지만 클래스 템플릿이에서 인스턴스화될 때까지 *상수 식* 매개 변수를 평가 하지 않습니다 `basic_string` `main()` .
 
-## <a name="example"></a>예제
+## <a name="example-of-static_assert-with-class-scope"></a>클래스 범위를 사용 하는 static_assert의 예
 
 ```cpp
 #include <type_traits>
@@ -104,7 +104,7 @@ public:
 };
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [어설션 및 사용자 제공 메시지(C++)](../cpp/assertion-and-user-supplied-messages-cpp.md)<br/>
 [#error 지시문 (C/c + +)](../preprocessor/hash-error-directive-c-cpp.md)<br/>

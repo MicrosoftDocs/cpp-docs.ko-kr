@@ -1,6 +1,6 @@
 ---
 title: x86 내장 목록
-description: Visual Studio의 Microsoft c + + 컴파일러에서 지 원하는 x64 (AMD64) 내장 함수 목록입니다.
+description: Visual Studio의 Microsoft c + + 컴파일러에서 지 원하는 x86 내장 함수 목록입니다.
 ms.date: 02/28/2020
 f1_keywords:
 - intrin/_addcarry_u16
@@ -2309,12 +2309,12 @@ helpviewer_keywords:
 - _xsaveopt x86 intrinsic
 - _xsetbv x86 intrinsic
 - _xtest x86 intrinsic
-ms.openlocfilehash: f13be5ddaa79382e3d58e96b2f4aaa0d7f9d6566
-ms.sourcegitcommit: 65fead53d56d531d71be42216056aca5f44def11
+ms.openlocfilehash: a5892b809e74e04806f27f06437b9fbedae68754
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88610922"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90741880"
 ---
 # <a name="x86-intrinsics-list"></a>x86 내장 목록
 
@@ -2338,7 +2338,7 @@ ms.locfileid: "88610922"
 
 다음 테이블에서는 x86 프로세서에서 사용할 수 있는 내장 함수를 나열합니다. 기술 열에서 필요한 명령 집합 지원을 나열합니다. [__cpuid](cpuid-cpuidex.md) 내장 함수를 사용하여 런타임에서 명령 집합 지원을 확인합니다. 두 항목이 하나의 행에 있는 경우 동일한 내장 함수에 대한 다른 진입점을 나타냅니다. A [1]은 내장 함수를 AMD 프로세서에서만 사용할 수 있음을 나타냅니다. A [2]는 내장 함수를 Intel 프로세서에서만 사용할 수 있음을 나타냅니다. [3]은 프로토타입이 매크로임을 나타냅니다. 함수 프로토타입에 필요한 헤더는 Header 열에 나열됩니다. 간단히 나타내기 위해 intrin.h 헤더에는 immintrin.h 및 ammintrin.h가 모두 포함됩니다.
 
-|내장 함수 이름|기술|header|함수 프로토타입|
+|내장 함수 이름|기술|헤더|함수 프로토타입|
 |--------------------|----------------|------------|------------------------|
 |_addcarry_u16||intrin.h|unsigned char _addcarry_u16 (부호 없는 문자, 부호 없는 short, 부호 없는 short, 부호 없는 short \* )|
 |[_addcarry_u32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_addcarry_u32)||intrin.h|unsigned char _addcarry_u32 (부호 없는 문자, 부호 없는 정수, 부호 없는 int, 부호 없는 정수 \* )|
@@ -3627,7 +3627,7 @@ ms.locfileid: "88610922"
 |[_xsetbv](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_xsetbv)|XSAVE [2]|immintrin.h|void _xsetbv (unsigned int, unsigned \_ _int64)|
 |[_xtest](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_xtest)|XTEST [2]|immintrin.h|unsigned char _xtest(void)|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 [컴파일러 내장 함수](compiler-intrinsics.md)\
 [ARM 내장 함수](arm-intrinsics.md)\

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2216
 ms.assetid: 250f6bdc-a5e1-495f-a1e8-6e8e7021ad9d
-ms.openlocfilehash: 78426722a4d23f8cf0b94c0b1989002e6a23f90b
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 7da1816fbd8196501b043f09c6bf7da201b3de18
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74741315"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90742647"
 ---
 # <a name="compiler-error-c2216"></a>컴파일러 오류 C2216
 
@@ -19,7 +19,7 @@ ms.locfileid: "74741315"
 
 함께 사용할 수 없는 두 키워드를 함께 사용했습니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 샘플에서는 C2216을 생성합니다.
 
@@ -32,8 +32,6 @@ ref struct Y1 {
 };
 ```
 
-## <a name="example"></a>예제
-
 다음 샘플에서는 C2216을 생성합니다.
 
 ```cpp
@@ -44,8 +42,6 @@ public ref class X {
    typedef property int i2;   // C2216 typedef not allowed on property
 };
 ```
-
-## <a name="example"></a>예제
 
 다음 샘플에서는 C2216을 생성합니다.
 

@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Array Class
 ms.assetid: 7815ab40-88c5-42b0-83b8-081cef0cda31
-ms.openlocfilehash: 00b73b9fb113066c6948c49ec7d2039748284800
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 4903c18f981c87c418a6ab08595816ce22a7413c
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837762"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90742946"
 ---
 # <a name="platformarray-class"></a>Platform::Array 클래스
 
@@ -34,7 +34,7 @@ Platform:: Array는 platform:: [WriteOnlyArray 클래스](../cppcx/platform-writ
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[Array 생성자](#ctor)|클래스 템플릿 매개 변수 *T*로 지정 된, 수정 가능한 1 차원 형식 배열을 초기화 합니다.|
 
@@ -44,7 +44,7 @@ Platform:: Array는 platform:: [WriteOnlyArray 클래스](../cppcx/platform-writ
 
 ### <a name="properties"></a>속성
 
-| 이름 | 설명 |
+| 속성 | Description |
 |--|--|
 | [Array:: Value](#value) | 현재 배열에 대한 핸들을 검색합니다. |
 
@@ -66,7 +66,7 @@ Platform:: Array를 사용 하는 시기 및 방법에 대 한 자세한 내용�
 
 클래스 템플릿 매개 변수 *T*로 지정 된, 수정 가능한 1 차원 형식 배열을 초기화 합니다.
 
-## <a name="syntax"></a>구문
+### <a name="syntax"></a>구문
 
 ```cpp
 Array(unsigned int size);
@@ -92,7 +92,7 @@ Platform:: Array 인스턴스를 만드는 방법에 대 한 자세한 내용은
 
 지정된 인덱스 위치에서 배열 요소에 대한 참조를 검색합니다.
 
-## <a name="syntax"></a>구문
+### <a name="syntax"></a>구문
 
 ```cpp
 T& get(unsigned int index)  const;
@@ -111,7 +111,7 @@ T& get(unsigned int index)  const;
 
 현재 배열에 대한 핸들을 검색합니다.
 
-## <a name="syntax"></a>구문
+### <a name="syntax"></a>구문
 
 ```cpp
 property Array^ Value;
@@ -121,7 +121,7 @@ property Array^ Value;
 
 현재 배열에 대한 핸들입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 [Platform 네임스페이스](../cppcx/platform-namespace-c-cx.md)<br/>
 [Array 및 WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md)

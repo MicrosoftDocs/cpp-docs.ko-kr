@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3468
 ms.assetid: cfd320db-2f6e-4e0d-ba02-e79ece87e1e0
-ms.openlocfilehash: e4a507dad1d795e703e8db7f8704aad959c95b6f
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: f22a01c5c26a55a5908c20f3b123971fadd43544
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757309"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90742816"
 ---
 # <a name="compiler-error-c3468"></a>컴파일러 오류 C3468
 
@@ -21,9 +21,9 @@ ms.locfileid: "74757309"
 
 어셈블리의 형식만 전달할 수 있습니다.
 
-자세한 내용은 [형식 전달 (C++/cli)](../../extensions/type-forwarding-cpp-cli.md)을 참조 하세요.
+자세한 내용은 [형식 전달 (c + +/cli)](../../extensions/type-forwarding-cpp-cli.md)을 참조 하세요.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 샘플에서는 모듈을 만듭니다.
 
@@ -32,8 +32,6 @@ ms.locfileid: "74757309"
 // compile with: /LN /clr
 public ref class R {};
 ```
-
-## <a name="example"></a>예제
 
 다음 샘플에서는 C3468을 생성합니다.
 

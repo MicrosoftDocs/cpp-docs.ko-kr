@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2897
 ms.assetid: a88349e2-823f-42a0-8660-0653b677afa4
-ms.openlocfilehash: 1433faade0a41ad8b63a3b40cb5d02f724bde658
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 22e63ce92a6d526f08e68bedb35de104be339dc3
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74760776"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90743375"
 ---
 # <a name="compiler-error-c2897"></a>컴파일러 오류 C2897
 
@@ -19,9 +19,7 @@ ms.locfileid: "74760776"
 
 소멸자 또는 종료자는 오버 로드 될 수 없으므로 소멸자를 템플릿으로 선언 하는 것은 허용 되지 않습니다.
 
-다음 샘플에서는 C2897를 생성 합니다.
-
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 샘플에서는 C2897를 생성 합니다.
 
@@ -33,8 +31,6 @@ public:
    template<typename T> ~X() {}   // C2897
 };
 ```
-
-## <a name="example"></a>예제
 
 다음 샘플에서는 C2897를 생성 합니다.
 

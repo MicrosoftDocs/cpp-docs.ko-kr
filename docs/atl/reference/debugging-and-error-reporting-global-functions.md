@@ -8,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - functions [ATL], error reporting
 ms.assetid: 11339c02-98cd-428d-b3b9-7deeb155a6a3
-ms.openlocfilehash: b4af5dd3839672152c53c902b73c1ea51b7feb6b
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 10aca6862f6989c126981a9f6437c61f1c07bdae
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835470"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90742790"
 ---
 # <a name="debugging-and-error-reporting-global-functions"></a>디버깅 및 오류 보고 전역 함수
 
 이러한 함수는 유용한 디버깅 및 추적 기능을 제공 합니다.
 
-|Name|설명|
+|속성|Description|
 |-|-|
 |[AtlHresultFromLastError](debugging-and-error-reporting-global-functions.md#atlhresultfromlasterror)|`GetLastError`HRESULT 형식의 오류 코드를 반환 합니다.|
 |[AtlHresultFromWin32](debugging-and-error-reporting-global-functions.md#atlhresultfromwin32)|Win32 오류 코드 HRESULT로 변환합니다.|
@@ -195,7 +195,7 @@ ATL 프로젝트의 경우 오류가 발생 하는 경우 ATL에서 사용할이
 
 [!code-cpp[NVC_ATL_Windowing#95](../../atl/codesnippet/cpp/debugging-and-error-reporting-global-functions_2.h)]
 
-## <a name="requirements"></a>요구 사항
+### <a name="requirements"></a>요구 사항
 
 **헤더:**
 
@@ -217,7 +217,7 @@ _ATL_NO_EXCEPTIONS이 ATL 프로젝트에 정의 되어 있지 않은 경우 함
 
 _ATL_NO_EXCEPTIONS 정의 된 경우 함수는 예외를 throw 하는 대신 어설션 오류를 발생 시킵니다.
 
-## <a name="requirements"></a>요구 사항
+### <a name="requirements"></a>요구 사항
 
 **헤더:**
 

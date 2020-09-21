@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2039
 ms.assetid: f9dfd521-9b36-4454-a69c-d63f45b606bb
-ms.openlocfilehash: 67c64de676c624369fb5a8bc07b9b5de4833fe7f
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 6dc79db11f08ce00cdb86e930173c052cd5187ed
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757685"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90742686"
 ---
 # <a name="compiler-error-c2039"></a>컴파일러 오류 C2039
 
@@ -19,7 +19,7 @@ ms.locfileid: "74757685"
 
 코드에서를 잘못 호출 하거나 구조체, 클래스 또는 공용 구조체의 멤버를 참조 하는 경우
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 샘플에서는 C2039를 생성 합니다.
 
@@ -35,8 +35,6 @@ int main() {
 }
 ```
 
-## <a name="example"></a>예제
-
 다음 샘플에서는 C2039를 생성 합니다.
 
 ```cpp
@@ -49,8 +47,6 @@ int main() {
    Console::WriteLine( "{0}", DateTime::Now::get());   // OK
 }
 ```
-
-## <a name="example"></a>예제
 
 다음 샘플에서는 C2039를 생성 합니다.
 
@@ -68,9 +64,7 @@ int S::get_Count() { return 0; }   // C2039
 int S::Count::get() { return 0; }   // OK
 ```
 
-## <a name="example"></a>예제
-
-C2039는 기본 인덱서에 잘못 액세스 하려고 시도 하는 경우에도 발생할 수 있습니다. 다음 샘플에서는에서 C#작성 된 구성 요소를 정의 합니다.
+C2039는 기본 인덱서에 잘못 액세스 하려고 시도 하는 경우에도 발생할 수 있습니다. 다음 샘플에서는 c #으로 작성 된 구성 요소를 정의 합니다.
 
 ```
 // C2039_d.cs
@@ -84,8 +78,6 @@ public class B {
    }
 };
 ```
-
-## <a name="example"></a>예제
 
 다음 샘플에서는 C2039를 생성 합니다.
 
@@ -103,8 +95,6 @@ int main() {
    Console::WriteLine(n);
 }
 ```
-
-## <a name="example"></a>예제
 
 제네릭을 사용 하는 경우에도 C2039이 발생할 수 있습니다. 다음 샘플에서는 C2039를 생성 합니다.
 
@@ -128,8 +118,6 @@ int main() {
    f(gcnew R());
 }
 ```
-
-## <a name="example"></a>예제
 
 C2039는 관리 되거나 관리 되지 않는 리소스를 해제 하려고 할 때 발생할 수 있습니다. 자세한 내용은 [소멸자 및 종료자](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers)를 참조 하세요.
 

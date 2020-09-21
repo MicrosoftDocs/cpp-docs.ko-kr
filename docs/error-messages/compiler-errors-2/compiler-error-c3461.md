@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3461
 ms.assetid: bd66833a-545d-445a-bdfe-dee771a450a4
-ms.openlocfilehash: d1bf4af63bac2aaee1da4bb98f23c3b15e98c671
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: c5195e0a9bba1bc9e5962f3d3ae1795bb098be3d
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756632"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90742881"
 ---
 # <a name="compiler-error-c3461"></a>컴파일러 오류 C3461
 
@@ -19,9 +19,9 @@ ms.locfileid: "74756632"
 
 형식 전달은 CLR 형식에서만 발생할 수 있습니다.  자세한 내용은 [클래스 및 구조체](../../extensions/classes-and-structs-cpp-component-extensions.md) 를 참조 하세요.
 
-자세한 내용은 [형식 전달 (C++/cli)](../../extensions/type-forwarding-cpp-cli.md)을 참조 하세요.
+자세한 내용은 [형식 전달 (c + +/cli)](../../extensions/type-forwarding-cpp-cli.md)을 참조 하세요.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 샘플에서는 구성 요소를 만듭니다.
 
@@ -30,8 +30,6 @@ ms.locfileid: "74756632"
 // compile with: /clr /LD
 public ref class R {};
 ```
-
-## <a name="example"></a>예제
 
 다음 샘플에서는 C3461을 생성합니다.
 

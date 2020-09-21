@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Agile
 ms.assetid: e34459a9-c429-4c79-97fd-030c43ca4155
-ms.openlocfilehash: 839002a614b54990fdc9180fa06737ff43039a4a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d39270b7bf05e820ea376a40310abeb8add2c5ad
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226941"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90742959"
 ---
 # <a name="platformagile-class"></a>Platform::Agile 클래스
 
@@ -45,14 +45,14 @@ Windows 런타임의 대부분 클래스는 agile입니다. Agile 개체는 같�
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|Description|
 |----------|-----------------|
 |[Agile:: Agile](#ctor)|Agile 클래스의 새 인스턴스를 초기화합니다.|
 |[Agile::~Agile 소멸자](#dtor)|Agile 클래스의 현재 인스턴스를 제거합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[Agile::Get](#get)|현재 Agile 개체가 나타내는 개체에 대한 핸들을 반환합니다.|
 |[Agile::GetAddressOf](#getaddressof)|현재 Agile 개체를 다시 초기화하고 핸들 주소를 `T`형식 개체에 반환합니다.|
@@ -61,7 +61,7 @@ Windows 런타임의 대부분 클래스는 agile입니다. Agile 개체는 같�
 
 ### <a name="public-operators"></a>Public 연산자
 
-|Name|설명|
+|속성|Description|
 |----------|-----------------|
 |[Agile:: operator->](#operator-arrow)|현재 Agile 개체가 나타내는 개체에 대한 핸들을 검색합니다.|
 |[Agile::operator=](#operator-assign)|지정한 값을 현재 Agile 개체에 할당합니다.|
@@ -82,11 +82,11 @@ Windows 런타임의 대부분 클래스는 agile입니다. Agile 개체는 같�
 
 **헤더:** agile.h
 
-## <a name="agileagile-constructor"></a><a name="ctor"></a>Agile:: Agile 생성자
+## <a name="agileagile-constructor"></a><a name="ctor"></a> Agile:: Agile 생성자
 
 Agile 클래스의 새 인스턴스를 초기화합니다.
 
-## <a name="syntax"></a>구문
+### <a name="syntax"></a>구문
 
 ```cpp
 Agile();
@@ -107,11 +107,11 @@ Agile(Agile<T>&& object);
 
 이 생성자의 첫 번째 버전은 기본 생성자입니다. 두 번째 버전은 `object` 매개 변수로 지정된 개체에서 새 Agile 인스턴스 클래스를 초기화합니다. 세 번째 버전은 복사 생성자입니다. 네 번째 버전은 이동 생성자입니다. 이 생성자는 예외를 throw할 수 없습니다.
 
-## <a name="agileagile-destructor"></a><a name="dtor"></a>Agile:: ~ Agile 소멸자
+## <a name="agileagile-destructor"></a><a name="dtor"></a> Agile:: ~ Agile 소멸자
 
 Agile 클래스의 현재 인스턴스를 제거합니다.
 
-## <a name="syntax"></a>구문
+### <a name="syntax"></a>구문
 
 ```cpp
 ~Agile();
@@ -121,11 +121,11 @@ Agile 클래스의 현재 인스턴스를 제거합니다.
 
 이 소멸자는 현재 Agile 개체가 나타내는 개체도 해제합니다.
 
-## <a name="agileget-method"></a><a name="get"></a>Agile:: Get 메서드
+## <a name="agileget-method"></a><a name="get"></a> Agile:: Get 메서드
 
 현재 Agile 개체가 나타내는 개체에 대한 핸들을 반환합니다.
 
-## <a name="syntax"></a>구문
+### <a name="syntax"></a>구문
 
 ```cpp
 T^ Get() const;
@@ -137,11 +137,11 @@ T^ Get() const;
 
 반환 값의 형식은 실제로 알려지지 않은 내부 형식입니다. 반환 값을 보유 하는 편리한 방법은 형식 추론 키워드를 사용 하 여 선언 된 변수에 할당 하는 것입니다 **`auto`** . 예들 들어 `auto x = myAgileTvariable->Get();`입니다.
 
-## <a name="agilegetaddressof-method"></a><a name="getaddressof"></a>Agile:: GetAddressOf 메서드
+## <a name="agilegetaddressof-method"></a><a name="getaddressof"></a> Agile:: GetAddressOf 메서드
 
 현재 Agile 개체를 다시 초기화하고 핸들 주소를 `T`형식 개체에 반환합니다.
 
-## <a name="syntax"></a>구문
+### <a name="syntax"></a>구문
 
 ```cpp
 T^* GetAddressOf() throw();
@@ -152,7 +152,7 @@ T^* GetAddressOf() throw();
 *T*<br/>
 템플릿 형식 이름 매개 변수로 지정된 형식입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `T` 형식의 개체에 대한 핸들의 주소입니다.
 
@@ -160,11 +160,11 @@ T^* GetAddressOf() throw();
 
 이 작업은 `T` 형식의 개체에 대한 현재 표시를 해제하고(있는 경우), Agile 개체의 데이터 멤버를 다시 초기화하고, 현재 스레딩 컨텍스트를 가져오고 나서, agile이 아닌 개체를 나타낼 수 있는 개체 핸들 변수의 주소를 반환합니다. Agile 클래스 인스턴스가 개체를 나타내도록 하려면 할당 연산자 ([agile:: operator =](#operator-assign))를 사용 하 여 개체를 agile 클래스 인스턴스에 할당 합니다.
 
-## <a name="agilegetaddressofforinout-method"></a><a name="getaddressofforinout"></a>Agile:: GetAddressOfForInOut 메서드
+## <a name="agilegetaddressofforinout-method"></a><a name="getaddressofforinout"></a> Agile:: GetAddressOfForInOut 메서드
 
 현재 Agile 개체가 나타내는 개체에 대한 핸들의 주소를 반환합니다.
 
-## <a name="syntax"></a>구문
+### <a name="syntax"></a>구문
 
 ```cpp
 T^* GetAddressOfForInOut()  throw();
@@ -175,7 +175,7 @@ T^* GetAddressOfForInOut()  throw();
 *T*<br/>
 템플릿 형식 이름 매개 변수로 지정된 형식입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 Agile 개체가 나타내는 개체에 대한 핸들의 주소입니다.
 
@@ -183,11 +183,11 @@ T^* GetAddressOfForInOut()  throw();
 
 이 작업은 현재 스레딩 컨텍스트를 가져온 다음 내부 개체에 대한 핸들의 주소를 반환합니다.
 
-## <a name="agilerelease-method"></a><a name="release"></a>Agile:: Release 메서드
+## <a name="agilerelease-method"></a><a name="release"></a> Agile:: Release 메서드
 
 현재 Agile 개체의 기본 개체 및 컨텍스트를 삭제합니다.
 
-## <a name="syntax"></a>구문
+### <a name="syntax"></a>구문
 
 ```cpp
 void Release() throw();
@@ -197,11 +197,11 @@ void Release() throw();
 
 현재 Agile 개체의 기본 개체 및 컨텍스트가 삭제(있는 경우)된 다음 Agile 개체 값이 null로 설정됩니다.
 
-## <a name="agileoperator-gt-operator"></a><a name="operator-arrow"></a>Agile:: operator- &gt; 연산자
+## <a name="agileoperator-gt-operator"></a><a name="operator-arrow"></a> Agile:: operator- &gt; 연산자
 
 현재 Agile 개체가 나타내는 개체에 대한 핸들을 검색합니다.
 
-## <a name="syntax"></a>구문
+### <a name="syntax"></a>구문
 
 ```cpp
 T^ operator->() const throw();
@@ -213,11 +213,11 @@ T^ operator->() const throw();
 
 이 연산자는 실제로 알려지지 않은 내부 형식을 반환합니다. 반환 값을 보유 하는 편리한 방법은 형식 추론 키워드를 사용 하 여 선언 된 변수에 할당 하는 것입니다 **`auto`** .
 
-## <a name="agileoperator-operator"></a><a name="operator-assign"></a>Agile:: operator = 연산자
+## <a name="agileoperator-operator"></a><a name="operator-assign"></a> Agile:: operator = 연산자
 
 지정한 개체를 현재 Agile 개체에 할당합니다.
 
-## <a name="syntax"></a>구문
+### <a name="syntax"></a>구문
 
 ```cpp
 Agile<T> operator=( T^ object ) throw();
@@ -237,7 +237,7 @@ T^ operator=( IUnknown* lp ) throw();
 *lp*<br/>
 개체의 IUnknown 인터페이스 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `T` 형식의 개체에 대한 핸들입니다.
 
@@ -247,6 +247,6 @@ T^ operator=( IUnknown* lp ) throw();
 
 할당 연산은 현재 Agile 개체의 컨텍스트를 자동으로 유지합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 [Platform 네임 스페이스](platform-namespace-c-cx.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2298
 ms.assetid: eb0120ad-c850-4bdd-911d-0361229cc859
-ms.openlocfilehash: b53ba11de7ecbb8e3d7f664ceaf8d99e395fac28
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 831136d05b4ec0edf156f446612c1825f07c29d9
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74759063"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90743362"
 ---
 # <a name="compiler-error-c2298"></a>컴파일러 오류 C2298
 
@@ -19,7 +19,7 @@ ms.locfileid: "74759063"
 
 멤버 함수 식에 대 한 포인터는 멤버 함수를 호출 해야 합니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 샘플에서는 C2298를 생성 합니다.
 
@@ -54,8 +54,6 @@ int main() {
    (x.*pmf)();   // uses X::mf
 }
 ```
-
-## <a name="example"></a>예제
 
 다음 샘플에서는 C2298를 생성 합니다.
 

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3469
 ms.assetid: e23b0e5c-c704-4e67-a868-bf02c2055d85
-ms.openlocfilehash: 546de5a65f6e4c2fd370ba781d01945df2bbfce5
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 32d61e022de47b95ce3e84f1575cc090c74d70e3
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74760545"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90742803"
 ---
 # <a name="compiler-error-c3469"></a>컴파일러 오류 C3469
 
@@ -19,9 +19,9 @@ ms.locfileid: "74760545"
 
 제네릭 클래스에서 형식 전달을 사용할 수 없습니다.
 
-자세한 내용은 [형식 전달 (C++/cli)](../../extensions/type-forwarding-cpp-cli.md)을 참조 하세요.
+자세한 내용은 [형식 전달 (c + +/cli)](../../extensions/type-forwarding-cpp-cli.md)을 참조 하세요.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 샘플에서는 구성 요소를 만듭니다.
 
@@ -33,8 +33,6 @@ public ref class GR {};
 
 public ref class GR2 {};
 ```
-
-## <a name="example"></a>예제
 
 다음 샘플에서는 C3466를 생성합니다.
 

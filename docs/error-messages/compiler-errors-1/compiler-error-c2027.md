@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2027
 ms.assetid: a39150c0-ec04-45ec-934c-a838bfe76627
-ms.openlocfilehash: 62cf208d9d0025afba06d32a15b9a1e50777c473
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 59d0e5d5a5f0957f2d73cdb863ccee9a2dd2a026
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74751003"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90743258"
 ---
 # <a name="compiler-error-c2027"></a>컴파일러 오류 C2027
 
@@ -19,7 +19,7 @@ ms.locfileid: "74751003"
 
 형식은 정의 될 때까지 사용할 수 없습니다. 오류를 해결 하려면 형식을 참조 하기 전에 형식이 완전히 정의 되어 있어야 합니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 샘플에서는 C2027를 생성 합니다.
 
@@ -41,9 +41,7 @@ int main() {
 }
 ```
 
-## <a name="example"></a>예제
-
-선언 되었지만 정의 되지 않은 형식에 대 한 포인터를 선언할 수 있습니다. 그러나 C++ 는 정의 되지 않은 형식에 대 한 참조를 허용 하지 않습니다.
+선언 되었지만 정의 되지 않은 형식에 대 한 포인터를 선언할 수 있습니다. 그러나 c + +에서는 정의 되지 않은 형식에 대 한 참조를 허용 하지 않습니다.
 
 다음 샘플에서는 C2027를 생성 합니다.
 

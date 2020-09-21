@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2676
 ms.assetid: 838a5e34-c92f-4f65-a597-e150bf8cf737
-ms.openlocfilehash: 1b999875aa1c7ef34065c0a36046c634308075f5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 94e56581f6583fa69e46d4deb3d82663a65cd1d1
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218197"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90743193"
 ---
 # <a name="compiler-error-c2676"></a>컴파일러 오류 C2676
 
@@ -19,7 +19,7 @@ ms.locfileid: "87218197"
 
 연산자를 사용하려면 지정된 형식에 대해 오버로드하거나 연산자가 정의된 형식으로의 변환을 정의해야 합니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 샘플에서는 C2676를 생성 합니다.
 
@@ -50,8 +50,6 @@ int main() {
                // and then the builtin-operator==(int, int)
 }
 ```
-
-## <a name="example"></a>예제
 
 참조 형식의 포인터에 대 한 포인터 산술 연산을 시도 하는 경우에도 C2676이 발생할 수 있습니다 **`this`** .
 

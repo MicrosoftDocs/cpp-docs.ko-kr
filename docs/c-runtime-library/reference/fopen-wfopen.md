@@ -38,12 +38,12 @@ helpviewer_keywords:
 - files [C++], opening
 - fopen function
 ms.assetid: e868993f-738c-4920-b5e4-d8f2f41f933d
-ms.openlocfilehash: 2bf1a1001f661b1ba972e7a5e699276591dda08a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b7889009fe2de3c5256d6caf6cb5afa8792919c4
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216962"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90743063"
 ---
 # <a name="fopen-_wfopen"></a>fopen, _wfopen
 
@@ -70,7 +70,7 @@ FILE *_wfopen(
 *mode*<br/>
 사용할 수 있는 액세스 종류입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 각 함수는 열린 파일에 대한 포인터를 반환합니다. null 포인터 값은 오류를 나타냅니다. *파일 이름* 또는 *모드가* **NULL** 이거나 빈 문자열인 경우 이러한 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 트리거합니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **NULL** 을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
 
@@ -123,7 +123,7 @@ FILE *_wfopen(
 
 문자열 *모드* 는 다음과 같이 파일에 대해 요청 되는 액세스의 종류를 지정 합니다.
 
-|*mode*|액세스 권한|
+|*mode*|Access|
 |-|-|
 | **&** | 읽기 위해 엽니다. 파일이 없거나 찾을 수 없는 경우 **fopen** 호출이 실패 합니다. |
 | **w** | 쓰기 위해 빈 파일을 엽니다. 지정한 파일이 있으면 이 파일의 내용은 삭제됩니다. |
@@ -142,7 +142,7 @@ FILE *_wfopen(
 
 |*모드* 한정자|변환 모드|
 |-|-|
-| **트** | 텍스트(변환됨) 모드에서 엽니다. |
+| **t** | 텍스트(변환됨) 모드에서 엽니다. |
 | **b** | 이진 (변환 되지 않음) 모드에서 열기 캐리지 리턴 및 줄 바꿈 문자를 포함 하는 변환은 표시 되지 않습니다. |
 
 텍스트 모드에서 CTRL + Z는 입력에서 EOF 문자로 해석 됩니다. **"A +"** 를 사용 하 여 읽기/쓰기용으로 열려 있는 파일에서 **fopen** 은 파일 끝에 CTRL + Z가 있는지 확인 하 고 가능한 경우이를 제거 합니다. 이 작업은 [fseek](fseek-fseeki64.md) 및 **fseek** 를 사용 하 여 CTRL + Z로 끝나는 파일 내에서 이동 하면 파일의 끝 부분에서 [fseek](fseek-fseeki64.md) 가 제대로 동작 하지 않을 수 있기 때문입니다.
@@ -157,6 +157,7 @@ FILE *_wfopen(
 
 |*모드* 한정자|동작|
 |-|-|
+| **x** | *Filename* 이 이미 있는 경우 함수를 강제로 실행 하지 않습니다. 는 "w" 또는 "w +" 지정자와만 사용할 수 있습니다. |
 | **c** | **Fflush** 또는 **_flushall** 가 호출 되는 경우 파일 버퍼의 내용이 디스크에 직접 기록 되도록 연결 된 *파일 이름* 에 대 한 커밋 플래그를 사용 하도록 설정 합니다. |
 | **n** | 관련 *파일 이름* 에 대 한 커밋 플래그를 "커밋 안 함"으로 다시 설정 합니다. 이것이 기본값입니다. 또한 프로그램을 COMMODE.OBJ와 연결할 경우 전역 커밋 플래그를 재정의합니다. 프로그램을 COMMODE.OBJ와 명시적으로 연결하지 않을 경우 전역 커밋 플래그 기본값은 "커밋 안 함"입니다( [Link Options](../../c-runtime-library/link-options.md)참조). |
 | **N** | 자식 프로세스에서 파일을 상속하지 않도록 지정합니다. |
@@ -177,7 +178,8 @@ FILE *_wfopen(
 |**w**|** \_ O \_ WRONLY** (일반적으로 ** \_ o \_ WRONLY** &#124; ** \_ o \_ ** &#124; o ** \_ \_ TRUNC**)|
 |**w +**|** \_ O \_ rdwr** (일반적으로 ** \_ o \_ rdwr** &#124; ** \_ o \_ ** &#124; o ** \_ \_ TRUNC**)|
 |**b**|**\_O \_ 이진**|
-|**트**|**\_O \_ 텍스트**|
+|**t**|**\_O \_ 텍스트**|
+|**x**|**\_O \_ EXCL**|
 |**c**|없음|
 |**n**|없음|
 |**S**|**\_O \_ 순차**|
@@ -192,7 +194,7 @@ FILE *_wfopen(
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 헤더|
+|기능|필수 헤더|
 |--------------|---------------------|
 |**fopen**|\<stdio.h>|
 |**_wfopen**|\<stdio.h> 또는 \<wchar.h>|
@@ -201,7 +203,7 @@ FILE *_wfopen(
 
 **C**, **n**, **t**, **S**, **R**, **t**및 **D** *모드* 옵션은 **fopen** 및 **_fdopen** 에 대 한 Microsoft 확장 이며 ANSI 이식성이 필요한 곳에서 사용 하면 안 됩니다.
 
-## <a name="example-1"></a>예제 1
+## <a name="example-1"></a>예 1
 
 다음 프로그램은 두 파일을 엽니다.  **Fclose** 를 사용 하 여 첫 번째 파일을 닫고 **_fcloseall** 하 여 나머지 파일을 모두 닫습니다.
 
@@ -312,7 +314,7 @@ int main(int argc, char** argv)
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 [스트림 I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [멀티 바이트 문자 시퀀스 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>

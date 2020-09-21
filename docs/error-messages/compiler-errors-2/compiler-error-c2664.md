@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2664
 ms.assetid: 3595d66e-cf87-4fda-a896-c0cd81f95db4
-ms.openlocfilehash: 8bb9ecef2e08e1f65a817e1a6496a421e727eb13
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d4368358b88e5334a4aa70d1dd51450ce3dbb27e
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221122"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90743232"
 ---
 # <a name="compiler-error-c2664"></a>컴파일러 오류 C 2664
 
@@ -33,7 +33,7 @@ C2664는 클래스에서 기본 클래스 중 하나의 멤버를 숨기는 경�
 
 자세한 내용은 [방법: System:: String을 wchar_t * 또는 char \* 로 변환](../../dotnet/how-to-convert-system-string-to-wchar-t-star-or-char-star.md)을 참조 하세요.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 샘플에서는 C2664를 생성하고 해결 방법을 보여 줍니다.
 
@@ -57,8 +57,6 @@ int main() {
 }
 ```
 
-## <a name="example"></a>예제
-
 다음 샘플에서도 C2664를 생성하고 해결 방법을 보여 줍니다.
 
 ```cpp
@@ -75,8 +73,6 @@ int main() {
    func( 1, 1 );   // No conversion from int to A.
 }
 ```
-
-## <a name="example"></a>예제
 
 다음 샘플에서는 문자열 리터럴로 `Test`를 호출하여 C2664를 보여 주고 해결 방법을 보여 줍니다. 매개 변수가 `szString` 참조이므로 적절한 생성자를 사용하여 개체를 생성해야 합니다. 결과 개체는 임시 개체이므로 참조를 초기화하는 데 사용할 수 없습니다.
 
@@ -117,8 +113,6 @@ int main() {
 }
 ```
 
-## <a name="example"></a>예제
-
 컴파일러는를 적용 하기 위한 c + + 표준 요구 사항을 적용 합니다 **`const`** . 이 샘플은 C2664를 생성합니다.
 
 ```cpp
@@ -141,8 +135,6 @@ int main()
    return 0;
 }
 ```
-
-## <a name="example"></a>예제
 
 다음은 C2664가 생성되는 더 복잡한 상황이며, 해결 방법에 대한 지침을 포함합니다.
 
@@ -187,8 +179,6 @@ int main( ) {
 }
 ```
 
-## <a name="example"></a>예제
-
 열거형 변수는 함수 호출을 충족하기 위한 해당 내부 형식으로 변환되지 않습니다. 자세한 내용은 [enum 클래스](../../extensions/enum-class-cpp-component-extensions.md)를 참조 하세요. 다음 샘플에서는 C2664를 생성하고 해결 방법을 보여 줍니다.
 
 ```cpp
@@ -208,8 +198,6 @@ int main() {
    Test(Char(aa));   // OK - fix by using a conversion cast
 }
 ```
-
-## <a name="example"></a>예제
 
 midl 컴파일러에 있는 버그로 인해 wchar_t 형식이 형식 라이브러리에서 부호 없는 short로 생성됩니다. 이 오류를 해결하려면 C++ 소스 코드에서 형식을 캐스팅하거나 idl 파일에서 형식을 문자열로 정의해야 합니다.
 
@@ -234,8 +222,6 @@ library myproj1 {
 
 C 2664는 **`wchar_t`** Visual C++ 6.0에서 이후 버전으로 코드를 이식할 때를 사용 하는 경우에도 발생 합니다. Visual C++ 6.0 이전 버전에서는가 **`wchar_t`** **`typedef`** 에 대 한 **`unsigned short`** 이므로 해당 형식으로 암시적으로 변환할 수 있었습니다. Visual C++ 6.0 후에 **`wchar_t`** 는 c + + 표준에 지정 된 대로 자체 기본 제공 형식이 며는 더 이상로 암시적으로 변환할 수 없습니다 **`unsigned short`** . [/Zc: wchar_t (Wchar_t 네이티브 형식)을](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md)참조 하세요.
 
-## <a name="example"></a>예제
-
 다음 샘플에서는 C2664를 생성하고 해결 방법을 보여 줍니다.
 
 ```cpp
@@ -255,8 +241,6 @@ int main() {
    ptr->testarr((unsigned short *)mybuff, len);   // OK - Fix by using a cast
 }
 ```
-
-## <a name="example"></a>예제
 
 C2664는 컴파일러가 템플릿 인수를 추론할 수 없는 경우에도 발생합니다.
 

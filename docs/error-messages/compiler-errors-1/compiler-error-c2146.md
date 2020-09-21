@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2146
 ms.assetid: 6bfb7de6-6723-4486-9350-c66ef88d7a64
-ms.openlocfilehash: c1a790902af92d72eb73be7fc2321762ab01fd8c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ff9dc9861643afa364db4b6364fa5e7bb33e8c8c
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214765"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90742621"
 ---
 # <a name="compiler-error-c2146"></a>컴파일러 오류 C2146
 
@@ -25,7 +25,7 @@ ms.locfileid: "87214765"
 
 이 오류는 철자 오류로 인해 발생할 수 있습니다. 오류 [C2065](../../error-messages/compiler-errors-1/compiler-error-c2065.md) 일반적으로이 오류 이전에 발생 합니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 샘플에서는 C2146를 생성 합니다.
 
@@ -43,8 +43,6 @@ int main() {
    int t x;   // C2146 : missing semicolon before 'x'
 }
 ```
-
-## <a name="example"></a>예제
 
 이 오류는 Visual Studio .NET 2003: missing 키워드에 대해 수행한 컴파일러 규칙 작업의 결과로도 생성 될 수 있습니다. **`typename`**
 
@@ -68,8 +66,6 @@ X<T>::Y func() { }   // C2146
 template <typename T>
 typename X<T>::Y func() { }
 ```
-
-## <a name="example"></a>예제
 
 또한이 오류는 Visual Studio .NET 2003에 대해 수행 된 컴파일러 규칙 작업의 결과로 표시 됩니다. 명시적 특수화는 더 이상 기본 템플릿에서 템플릿 매개 변수를 찾을 수 없습니다.
 

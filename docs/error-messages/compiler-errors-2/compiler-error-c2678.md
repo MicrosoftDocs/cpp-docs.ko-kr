@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2678
 ms.assetid: 1f0a4e26-b429-44f5-9f94-cb66441220c8
-ms.openlocfilehash: 390752d5d34685afc8b5fc5401fd75585bb48dd0
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: c8f5b06e6c2f9966d714f4a360525617dbff400f
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74760337"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90743180"
 ---
 # <a name="compiler-error-c2678"></a>컴파일러 오류 C 2678
 
@@ -19,9 +19,9 @@ ms.locfileid: "74760337"
 
 연산자를 사용하려면 지정된 형식에 대해 오버로드하거나 연산자가 정의된 형식으로의 변환을 정의해야 합니다.
 
-## <a name="example"></a>예제
-
 C2678은 왼쪽 피연산자가 const로 한정되었지만 연산자가 비const 인수를 사용하도록 정의된 경우 발생할 수 있습니다.
+
+## <a name="examples"></a>예제
 
 다음 샘플에서는 C2678을 생성하고 해결 방법을 보여 줍니다.
 
@@ -46,8 +46,6 @@ int main() {
    combo2 += 9; // OK - operator+= matches non-const Combo
 }
 ```
-
-## <a name="example"></a>예제
 
 C2678은 멤버 함수를 호출하기 전에 네이티브 멤버를 고정하지 않은 경우에도 발생합니다.
 

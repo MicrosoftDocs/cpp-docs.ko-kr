@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3462
 ms.assetid: 56b75f35-9fad-42d9-a969-eeca5d709bec
-ms.openlocfilehash: 56227f124d49630d8776f291ada302bd6cd6e983
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: f267d195ba851a9d585961848062fa271168aeb8
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756606"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90743336"
 ---
 # <a name="compiler-error-c3462"></a>컴파일러 오류 C3462
 
@@ -19,9 +19,9 @@ ms.locfileid: "74756606"
 
 TypeForwardedTo 특성이 참조된 메타데이터의 형식에 적용되어야 합니다.
 
-자세한 내용은 [형식 전달 (C++/cli)](../../extensions/type-forwarding-cpp-cli.md)을 참조 하세요.
+자세한 내용은 [형식 전달 (c + +/cli)](../../extensions/type-forwarding-cpp-cli.md)을 참조 하세요.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 샘플에서는 구성 요소를 만듭니다.
 
@@ -30,8 +30,6 @@ TypeForwardedTo 특성이 참조된 메타데이터의 형식에 적용되어야
 // compile with: /clr /LD
 public ref class R {};
 ```
-
-## <a name="example"></a>예제
 
 다음 샘플에서는 C3462를 생성합니다.
 

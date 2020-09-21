@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3409
 ms.assetid: e372d9fa-230c-4b28-b6d3-6ad81ccf9dbb
-ms.openlocfilehash: 0bf8b918f254c05bfe57034e25611c8dc17a783a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 360fedc6cadf275704a790c257c42ac8bde7873d
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231964"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90742062"
 ---
 # <a name="compiler-error-c3409"></a>컴파일러 오류 C3409
 
@@ -35,7 +35,7 @@ ms.locfileid: "87231964"
 
    람다 식 구문에 대 한 자세한 내용은 [람다 식 구문](../../cpp/lambda-expression-syntax.md)을 참조 하세요.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 예제에서는 C3409를 생성 합니다.
 
@@ -54,8 +54,6 @@ __interface x {};
 class b : public x {};
 ```
 
-## <a name="example"></a>예제
-
 다음 예제에서는 람다 식에서 **`mutable`** 사양을 사용 하지만 매개 변수 목록을 제공 하지 않기 때문에 C3409를 생성 합니다. 컴파일러가 대괄호가 람다 식 또는 특성 블록의 정의에 포함 되는지 여부를 확인할 수 없습니다.
 
 ```cpp
@@ -67,7 +65,7 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 [특성도](../../windows/attributes-alphabetical-reference.md)<br/>
 [람다 식](../../cpp/lambda-expressions-in-cpp.md)<br/>

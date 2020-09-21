@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2249
 ms.assetid: bdd6697c-e04b-49b9-8e40-d9eb6d74f2b6
-ms.openlocfilehash: f50cb27a239e794b87a15920a36e96529bd6a466
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ac396fe5fa3505311f5a45ebb49dae283e35248c
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212802"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90741418"
 ---
 # <a name="compiler-error-c2249"></a>컴파일러 오류 C2249
 
@@ -19,7 +19,7 @@ ms.locfileid: "87212802"
 
 는 `member` public이 아닌 **`virtual`** 기본 클래스 또는 구조체에서 상속 됩니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 샘플에서는 C2249를 생성 합니다.
 
@@ -39,8 +39,6 @@ int main() {
    b.pubFunc();    // OK
 }
 ```
-
-## <a name="example"></a>예제
 
 C2249는 c + + 표준 라이브러리에서 다른 스트림으로 스트림을 할당 하려고 하는 경우에도 발생할 수 있습니다.  다음 샘플에서는 C2249를 생성 합니다.
 
