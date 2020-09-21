@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2440
 ms.assetid: 36e6676c-f04f-4715-8ba1-f096c4bf3b44
-ms.openlocfilehash: 75b2ba62182a33137b433c836b4acf7c9e1fc231
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 74c5032338b3f4cf30bdb75bdf070cee7b67ce58
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87207981"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90742114"
 ---
 # <a name="compiler-error-c2440"></a>컴파일러 오류 C2440
 
@@ -19,9 +19,11 @@ ms.locfileid: "87207981"
 
 컴파일러가에서로 캐스팅할 수 `type1` 없습니다 `type2` .
 
-## <a name="example"></a>예제
+C2440은 **`char*`** `wchar_t*` 컴파일러 규칙 옵션 [/zc: strictStrings](../../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md) 가 설정 된 경우 c + + 코드에서 문자열 리터럴을 사용 하 여 비 const (또는)를 초기화 하려고 하면 발생할 수 있습니다. C에서 문자열 리터럴의 형식은의 배열 **`char`** 이지만 c + +에서는의 배열입니다 `const char` .
 
-C2440은 **`char*`** `wchar_t*` 컴파일러 규칙 옵션 [/zc: strictStrings](../../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md) 가 설정 된 경우 c + + 코드에서 문자열 리터럴을 사용 하 여 비 const (또는)를 초기화 하려고 하면 발생할 수 있습니다. C에서 문자열 리터럴의 형식은의 배열 **`char`** 이지만 c + +에서는의 배열입니다 `const char` . 이 샘플에서는 C2440을 생성 합니다.
+## <a name="examples"></a>예제
+
+이 샘플에서는 C2440을 생성 합니다.
 
 ```cpp
 // C2440s.cpp
@@ -37,8 +39,6 @@ int main() {
    const char* s2 = "tests"; // OK
 }
 ```
-
-## <a name="example"></a>예제
 
 멤버에 대 한 포인터를 void *로 변환 하려고 하는 경우에도 C2440이 발생할 수 있습니다. 다음 샘플에서는 C2440을 생성 합니다.
 
@@ -61,8 +61,6 @@ public:
 };
 ```
 
-## <a name="example"></a>예제
-
 지정 된 앞에만 선언 되었지만 정의 되지 않은 형식에서 캐스팅 하려고 시도 하는 경우에도 C2440이 발생할 수 있습니다. 이 샘플에서는 C2440을 생성 합니다.
 
 ```cpp
@@ -75,8 +73,6 @@ Base * func(Derived * d) {
     return static_cast<Base *>(d); // error C2440: 'static_cast' : cannot convert from 'Derived *' to 'Base *'
 }
 ```
-
-## <a name="example"></a>예제
 
 다음 샘플의 줄 15 및 16에 있는 C2440 오류는 메시지를 사용 하 여 정규화 됩니다 `Incompatible calling conventions for UDT return value` . *UDT* 는 클래스, 구조체 또는 공용 구조체와 같은 사용자 정의 형식입니다. 이러한 종류의 비호환 오류는 전방 선언의 반환 형식에 지정 된 UDT의 호출 규칙이 UDT의 실제 호출 규칙과 충돌 하 고 함수 포인터가 포함 될 때 발생 합니다.
 
@@ -126,8 +122,6 @@ int main() {
 }
 ```
 
-## <a name="example"></a>예제
-
 C2440은 내부 포인터에 0을 할당 하는 경우에도 발생할 수 있습니다.
 
 ```cpp
@@ -140,8 +134,6 @@ int main() {
    ipi = nullptr;   // OK
 }
 ```
-
-## <a name="example"></a>예제
 
 C2440은 사용자 정의 변환을 잘못 사용 하는 경우에도 발생할 수 있습니다. 예를 들어 변환 연산자가로 정의 된 경우 **`explicit`** 컴파일러는 암시적 변환에 사용할 수 없습니다. 사용자 정의 변환에 대 한 자세한 내용은 [사용자 정의 변환 (c + +/cli)](../../dotnet/user-defined-conversions-cpp-cli.md)을 참조 하세요. 이 샘플에서는 C2440을 생성 합니다.
 
@@ -165,8 +157,6 @@ int main() {
 }
 ```
 
-## <a name="example"></a>예제
-
 C2440은 형식이 인 Visual C++ 배열의 인스턴스를 만들려고 하는 경우에도 발생할 수 있습니다 <xref:System.Array> .  자세한 내용은 [배열](../../extensions/arrays-cpp-component-extensions.md)을 참조하세요.  다음 샘플에서는 C2440을 생성 합니다.
 
 ```cpp
@@ -180,8 +170,6 @@ int main() {
 }
 ```
 
-## <a name="example"></a>예제
-
 C2440은 특성 기능의 변경 내용으로 인해 발생할 수도 있습니다.  다음 샘플에서는 C2440을 생성 합니다.
 
 ```cpp
@@ -191,8 +179,6 @@ C2440은 특성 기능의 변경 내용으로 인해 발생할 수도 있습니�
 // try the following line instead
 // [ module(name="PropDemoLib", version="1.0") ];
 ```
-
-## <a name="example"></a>예제
 
 **/Clr** 프로그래밍을 사용 하는 소스 코드가 컴파일되면 Microsoft c + + 컴파일러에서 더 이상 [const_cast 연산자](../../cpp/const-cast-operator.md) 를 사용할 수 없습니다.
 
@@ -212,8 +198,6 @@ int main() {
    d = dynamic_cast<Derived^>(b);   // OK
 }
 ```
-
-## <a name="example"></a>예제
 
 C2440은 Visual Studio 2015 업데이트 3의 컴파일러에 대 한 규칙 변경으로 인해 발생할 수 있습니다. 이전에는 컴파일러에서 작업에 대 한 템플릿 일치를 식별할 때 특정 고유 식을 동일한 형식으로 잘못 처리 **`static_cast`** 했습니다. 이제 컴파일러는 형식을 올바르게 구분 하 고 이전 동작에 의존 하는 코드는 **`static_cast`** 중단 됩니다. 이 문제를 해결 하려면 템플릿 매개 변수 형식과 일치 하도록 템플릿 인수를 변경 하거나 **`reinterpret_cast`** 또는 C 스타일 캐스트를 사용 합니다.
 
@@ -239,8 +223,6 @@ int main()
 
 This error can appear in ATL code that uses the SINK_ENTRY_INFO macro defined in <atlcom.h>.
 ```
-
-## <a name="example"></a>예제
 
 ### <a name="copy-list-initialization"></a>Copy-list-initialization
 
@@ -278,8 +260,6 @@ int main()
     const A& a2{ 1 };
 }
 ```
-
-## <a name="example"></a>예제
 
 ### <a name="cv-qualifiers-in-class-construction"></a>클래스 생성의 cv 한정자
 

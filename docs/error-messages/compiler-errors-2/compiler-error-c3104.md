@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3104
 ms.assetid: b5648d47-e5d3-4b45-a3c0-f46e04eae731
-ms.openlocfilehash: b92a6eade137a1d319ec286afa08f8477ff029d8
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 5f72af3d7149db7362df9fa23ac5ad6c058c552b
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74755870"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90743466"
 ---
 # <a name="compiler-error-c3104"></a>컴파일러 오류 C3104
 
@@ -23,7 +23,7 @@ ms.locfileid: "74755870"
 
 이 오류는 Visual Studio 2005에 대해 수행 된 컴파일러 규칙 작업의 결과로 생성 될 수 있습니다. 관리 되는 배열을 사용자 지정 특성에 전달할 때 배열의 형식이 더 이상 집계 초기화 목록에서 추론 되지 않습니다. 이제 컴파일러에서 이니셜라이저 목록 뿐만 아니라 배열의 형식을 지정 해야 합니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 샘플에서는 C3104를 생성 합니다.
 
@@ -43,8 +43,6 @@ public ref struct ABC : public Attribute {
 // [ABC( gcnew array<int> {1,2,3}, param = gcnew array<double>{2.71, 3.14})]
 ref struct AStruct{};
 ```
-
-## <a name="example"></a>예제
 
 다음 샘플에서는 C3104를 생성 합니다.
 

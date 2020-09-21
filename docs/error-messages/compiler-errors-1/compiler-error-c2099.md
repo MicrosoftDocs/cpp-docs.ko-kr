@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2099
 ms.assetid: 30e151ee-d458-4901-b0c0-d45054a913f5
-ms.openlocfilehash: e9fb7739111d13a585579455ed97cecaca3266e4
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 84070b36506a657dde5d2e7bd5594c2b7434d81d
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75301940"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90743414"
 ---
 # <a name="compiler-error-c2099"></a>컴파일러 오류 C2099
 
@@ -19,7 +19,7 @@ ms.locfileid: "75301940"
 
 이 오류는 C 컴파일러에서만 나타나며, 자동이 아닌 변수에 대해서만 발생합니다.  컴파일러는 프로그램의 시작 부분에서 자동이 아닌 변수를 초기화하며 초기화된 값은 상수여야 합니다.
 
-## <a name="example"></a>예
+## <a name="examples"></a>예제
 
 다음 샘플에서는 C2099를 생성합니다.
 
@@ -29,8 +29,6 @@ int j;
 int *p;
 j = *p;   // C2099 *p is not a constant
 ```
-
-## <a name="example"></a>예
 
 부동 소수점 정밀도 환경 설정(자세한 내용은 **_controlfp_s** 참조)은 런타임 컴파일과는 다를 수 있기 때문에 컴파일러는 [/fp:strict](../../c-runtime-library/reference/controlfp-s.md) 의 식에서 상수 폴딩을 수행할 수 없으므로 C2099가 발생할 수도 있습니다.
 

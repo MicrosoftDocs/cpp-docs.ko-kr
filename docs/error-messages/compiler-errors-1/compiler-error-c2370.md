@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2370
 ms.assetid: 03403e8f-f393-47c4-bd25-5c1c7ea7d5cd
-ms.openlocfilehash: ab7b19799925f9aa02f67ffdbec181628391e495
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: fe48dff881bb478a6d00fa3fe6f9446a68cbd787
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74745657"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90743479"
 ---
 # <a name="compiler-error-c2370"></a>컴파일러 오류 C2370
 
@@ -19,7 +19,7 @@ ms.locfileid: "74745657"
 
 식별자를 다른 스토리지 클래스로 이미 선언했습니다.
 
-## <a name="example"></a>예제
+## <a name="examples"></a>예제
 
 다음 샘플에서는 C2370을 생성합니다.
 
@@ -30,8 +30,6 @@ extern int i;
 static int i;   // C2370
 int i;   // OK
 ```
-
-## <a name="example"></a>예제
 
 다음 샘플에서는 C2370을 생성합니다.
 
