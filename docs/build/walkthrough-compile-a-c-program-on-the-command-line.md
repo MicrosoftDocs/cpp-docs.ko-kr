@@ -1,19 +1,20 @@
 ---
 title: '연습: 명령줄에서 C 프로그램 컴파일'
+description: 간단한 Hello World 스타일 C 프로그램을 만드는 방법을 보여 주는 연습입니다.
 ms.custom: conceptual
-ms.date: 04/25/2019
+ms.date: 9/10/2020
 helpviewer_keywords:
 - command-line applications [C++], C programs
 - Visual C, compiling
 - compiling programs [C++]
 - C program compiling [C++]
 ms.assetid: 7e74cc2d-54b1-49de-b7ad-d3ae6b39ab8d
-ms.openlocfilehash: d807fa75b32b515c2222fec9ea9d070266303e33
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 57276f61ca8ff848db0313935bc1841de50f9874
+ms.sourcegitcommit: b492516cc65120250b9ea23f96f7f63f37f99fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81335258"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075610"
 ---
 # <a name="walkthrough-compile-a-c-program-on-the-command-line"></a>연습: 명령줄에서 C 프로그램 컴파일
 
@@ -178,9 +179,9 @@ usage: cl [ option... ] filename... [ /link linkoption... ]
 
 NMAKE 및 메이크파일 또는 MSBuild 및 프로젝트 파일을 사용하여 명령줄에서 더 복잡한 프로젝트를 구성하고 빌드할 수 있습니다. 이러한 도구를 사용하는 방법에 대한 자세한 내용은 [NMAKE 참조](reference/nmake-reference.md) 및 [MSBuild](msbuild-visual-cpp.md)를 참조하세요.
 
-C 언어와 C++ 언어는 비슷하지만 동일하지는 않습니다. Microsoft C/C++ 컴파일러(MSVC)는 간단한 규칙을 사용하여 코드를 컴파일할 때 사용할 언어를 결정합니다. 기본적으로 MSVC 컴파일러는 .c로 끝나는 파일은 모두 C 소스 코드로, .cpp로 끝나는 파일은 모두 C++ 소스 코드로 처리합니다. 컴파일러가 파일 이름 확장명에 관계없이 모든 파일을 C로 처리하도록 하려면 [/Tc](reference/tc-tp-tc-tp-specify-source-file-type.md) 컴파일러 옵션을 사용합니다.
+C 언어와 C++ 언어는 비슷하지만 동일하지는 않습니다. Microsoft C/C++ 컴파일러(MSVC)는 간단한 규칙을 사용하여 코드를 컴파일할 때 사용할 언어를 결정합니다. 기본적으로 MSVC 컴파일러는 .c로 끝나는 파일은 모두 C 소스 코드로, .cpp로 끝나는 파일은 모두 C++ 소스 코드로 처리합니다. 컴파일러가 파일 이름 확장명에 관계없이 모든 파일을 C로 처리하도록 하려면 [/TC](reference/tc-tp-tc-tp-specify-source-file-type.md) 컴파일러 옵션을 사용합니다.
 
-MSVC는 ISO C99 표준과 호환되지만 엄격하게 준수하지는 않습니다. 대부분의 경우 이식 가능 C 코드는 정상적으로 컴파일되고 실행됩니다. Visual C++ 개체는 ISO C11 변경 내용을 대부분 지원하지 않습니다. 일부 라이브러리 함수 및 POSIX 함수 이름은 MSVC에서 더 이상 사용되지 않습니다. 함수는 지원되지만 기본 설정 이름이 변경되었습니다. 자세한 내용은 [CRT의 보안 기능](../c-runtime-library/security-features-in-the-crt.md) 및 [컴파일러 경고(수준 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)를 참조하세요.
+MSVC는 ISO C99 표준과 호환되지만 엄격하게 준수하지는 않습니다. 대부분의 경우 이식 가능 C 코드는 정상적으로 컴파일되고 실행됩니다. Visual C++는 ISO C11/C17 변경 내용을 지원합니다. C11/C17 지원을 사용하여 컴파일하려면 컴파일러 플래그 `/std:c11` 또는 `/std:c17`를 사용합니다. 일부 라이브러리 함수 및 POSIX 함수 이름은 MSVC에서 더 이상 사용되지 않습니다. 함수는 지원되지만 기본 설정 이름이 변경되었습니다. 자세한 내용은 [CRT의 보안 기능](../c-runtime-library/security-features-in-the-crt.md) 및 [컴파일러 경고(수준 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)를 참조하세요.
 
 ## <a name="see-also"></a>참조
 

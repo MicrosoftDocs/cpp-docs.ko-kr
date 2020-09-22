@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Visual C++ projects, properties
 - projects [C++], properties
 ms.assetid: 9b0d6f8b-7d4e-4e61-aa75-7d14944816cd
-ms.openlocfilehash: 6c05dd00324113819dd145e46bf10dfeb96a66a3
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 17b54311670f78cda78403c273cfbf57d43e84da
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80078232"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90042188"
 ---
 # <a name="set-compiler-and-build-properties"></a>컴파일러 및 빌드 속성 설정
 
@@ -90,13 +90,13 @@ MSBuild는 디렉터리 및 경로를 포함한 특정 문자열 값에 대해 "
 
 ## <a name=""></a><a name="property_editor">속성 편집기</a>
 
-속성 편집기를 사용하여 특정 문자열 속성을 수정하고 값으로 매크로를 선택할 수 있습니다. 속성 편집기에 액세스하려면 속성 페이지에서 속성을 선택한 후 오른쪽에 있는 아래쪽 화살표 단추를 선택합니다. 드롭다운 목록에 **\<편집>** 이 포함된 경우 이를 선택하여 해당 속성에 대한 속성 편집기를 표시할 수 있습니다.
+속성 편집기를 사용하여 특정 문자열 속성을 수정하고 값으로 매크로를 선택할 수 있습니다. 속성 편집기에 액세스하려면 속성 페이지에서 속성을 선택한 후 오른쪽에 있는 아래쪽 화살표 단추를 선택합니다. 드롭다운 목록에 **\<Edit>** 이 포함된 경우 이를 선택하여 해당 속성에 대한 속성 편집기를 표시할 수 있습니다.
 
-![속성&#95;편집기&#95;드롭다운](media/property_editor_dropdown.png "Property_Editor_Dropdown")
+![속성 편집기에 액세스하는 데 속성 드롭다운 컨트롤이 사용됩니다.](media/property_editor_dropdown.png "속성 편집기 드롭다운")
 
 속성 편집기에서 **매크로** 단추를 선택하여 사용 가능한 매크로와 해당 현재 값을 볼 수 있습니다. 다음 그림에서는 **매크로** 단추 선택 후 **추가 포함 디렉터리** 속성에 대한 속성 편집기를 보여 줍니다. **부모 또는 프로젝트 기본값에서 상속** 확인란이 선택되어 있고 새 값을 추가하면 현재 상속되는 모든 값에 새 값이 추가됩니다. 확인란의 선택을 취소하면 새 값이 상속된 값을 대체합니다. 대부분의 경우 확인란을 선택한 상태로 둡니다.
 
-![속성 편집기, Visual C&#43;&#43;](media/propertyeditorvc.png "PropertyEditorVC")
+![포함 디렉터리 속성에 대한 속성 편집기 대화 상자](media/propertyeditorvc.png "PropertyEditorVC")
 
 ## <a name="add-an-include-directory-to-the-set-of-default-directories"></a>기본 디렉터리 집합에 포함 디렉터리 추가
 

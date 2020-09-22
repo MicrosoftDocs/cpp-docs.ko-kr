@@ -6,12 +6,12 @@ ms.technology: cpp-language
 ms.assetid: 475da6e9-0d78-4b4e-bd23-f41c406c4efe
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 84572d44cd994da07d44e736983270a1e7acd1ec
-ms.sourcegitcommit: b51703a96ee35ee2376d5f0775b70f03ccbe6d9a
+ms.openlocfilehash: d9fbbc4f0eddba0ae6a7dbc3250a26d36155506e
+ms.sourcegitcommit: b492516cc65120250b9ea23f96f7f63f37f99fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88086983"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075792"
 ---
 # <a name="microsoft-c-language-conformance-table"></a>Microsoft C++ 언어 규칙 테이블
 
@@ -432,7 +432,7 @@ __VS 2019 16.7__은 Visual Studio 2019 버전 16.7에서 지원되는 기능을 
 
 <a name="note_B"></a> __B__ Visual Studio 2017 버전 15.7의 [`/permissive-`](../build/reference/permissive-standards-conformance.md) 모드에서 지원됩니다. 자세한 내용은 [2단계 이름 조회 지원이 MSVC에 제공](https://devblogs.microsoft.com/cppblog/two-phase-name-lookup-support-comes-to-msvc/)을 참조하세요.
 
-<a name="note_C"></a> __C__ Visual Studio 2017에서 C99 전처리기 규칙에 대한 컴파일러의 지원이 완전하지 않습니다. Microsoft에서는 전처리기를 점검하고 있으며 [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) 컴파일러 스위치를 포함하여 Visual Studio 2017 버전 15.8에 해당 변경 내용 전달을 시작했습니다.
+<a name="note_C"></a> __C__ Visual Studio 2017 버전 15.8부터 컴파일러는 [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) 컴파일러 스위치를 통해 C99 전처리기에 대한 지원을 제공합니다. Visual Studio 2019 버전 16.6부터 컴파일러가 [`/Zc:preprocessor`](../build/reference/zc-conformance.md) 스위치를 통해 C99 전처리기를 완전히 구현합니다. 컴파일러 스위치 `/std:c11` 또는 `/std:c17`가 지정된 경우 이 스위치가 기본적으로 설정됩니다.
 
 <a name="note_D"></a> __D__ [`/std:c++14`](../build/reference/std-specify-language-standard-version.md) 아래에서 표시하지 않을 수 있는 경고 [`C4984`](../error-messages/compiler-warnings/compiler-warning-c4984.md)로 지원됩니다.
 
@@ -450,7 +450,7 @@ __VS 2019 16.7__은 Visual Studio 2019 버전 16.7에서 지원되는 기능을 
 
 <a name="note_byte"></a> __byte__ `std::byte`는 [`/std:c++17`](../build/reference/std-specify-language-standard-version.md)(또는 [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md))로 활성화되지만 경우에 따라 Windows SDK 헤더와 충돌할 수 있으므로 세분화된 옵트아웃 매크로가 있습니다. `_HAS_STD_BYTE`를 `0`으로 정의하여 비활성화할 수 있습니다.
 
-<a name="note_C11"></a> __C11__ 유니버셜 CRT에서는 C99 `strftime()` E/O 대체 변환 지정자, C11 `fopen()` 단독 모드 및 C11 `aligned_alloc()`을 제외하고는 C++17에 필요한 C11 표준 라이브러리의 일부를 구현했습니다. 후자는 C11에서 `free()`의 Microsoft 구현과 호환되지 않는 방식, 즉 `free()`에서 고도로 정렬된 할당을 처리할 수 있어야 하는 `aligned_alloc()`을 지정했기 때문에 구현되지 않을 것입니다.
+<a name="note_C11"></a> __C11__ C11에 대한 컴파일러 지원에는 Visual Studio 버전 16.8 이상이 필요합니다. C11 라이브러리 지원에는 Windows SDK 버전 20211 이상이 필요합니다. 유니버셜 CRT에서는 C99 `strftime()` E/O 대체 변환 지정자 및 C11 `aligned_alloc()`을 제외하고는 C++17에 필요한 C11 표준 라이브러리의 일부를 구현했습니다. 후자는 Windows 운영 체제에서 관련 할당을 지원하지 않기 때문에 구현될 가능성이 낮습니다.
 
 <a name="note_rem"></a> __rem__ [`/std:c++17`](../build/reference/std-specify-language-standard-version.md)(또는 [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md)) 컴파일러 옵션이 지정되면 기능이 제거됩니다. 이 기능을 다시 사용하도록 설정하면 `_HAS_AUTO_PTR_ETC`, `_HAS_FUNCTION_ALLOCATOR_SUPPORT`, `_HAS_OLD_IOSTREAMS_MEMBERS` 및 `_HAS_UNEXPECTED` 매크로를 사용하여 최신 언어 모드로 쉽게 전환할 수 있습니다.
 

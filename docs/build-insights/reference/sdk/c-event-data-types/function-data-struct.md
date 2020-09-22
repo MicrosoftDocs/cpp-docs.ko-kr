@@ -1,6 +1,6 @@
 ---
-title: FUNCTION_DATA 구조
-description: C++ 빌드 인사이트 SDK FUNCTION_DATA 구조 참조.
+title: FUNCTION_DATA 구조체
+description: C++ Build Insights SDK FUNCTION_DATA 구조체 참조입니다.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: ec715192e3480932d351cdb4be1443c329a4868b
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
-ms.translationtype: MT
+ms.openlocfilehash: 1034ce01bba6422d0c47fc34b308cafcc113e32b
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81325535"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90041746"
 ---
-# <a name="function_data-structure"></a>FUNCTION_DATA 구조
+# <a name="function_data-structure"></a>FUNCTION_DATA 구조체
 
 ::: moniker range="<=vs-2015"
 
-C++ 빌드 인사이트 SDK는 Visual Studio 2017 이상과 호환됩니다. 이러한 버전에 대한 설명서를 보려면 이 문서의 Visual Studio **버전** 선택기 컨트롤을 Visual Studio 2017 또는 Visual Studio 2019로 설정합니다. 이 페이지의 목조 테이블 맨 위에 있습니다.
+C++ Build Insights SDK는 Visual Studio 2017 이상 버전과 호환됩니다. 이러한 버전에 대한 설명서를 보려면 이 문서에 대한 Visual Studio **버전** 선택기 컨트롤을 Visual Studio 2017 또는 Visual Studio 2019로 설정하세요. 이 페이지의 목차 맨 위에 있습니다.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-구조는 `FUNCTION_DATA` 함수를 설명합니다.
+`FUNCTION_DATA` 구조체는 함수에 대해 설명합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -39,8 +39,8 @@ typedef struct FUNCTION_DATA_TAG
 
 ## <a name="members"></a>멤버
 
-|  |  |
+| Name | Description |
 |--|--|
-| `Name` | UTF-8로 인코딩된 함수의 이름입니다. |
+| `Name` | UTF-8로 인코딩된 함수 이름입니다. |
 
 ::: moniker-end
