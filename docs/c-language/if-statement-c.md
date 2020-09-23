@@ -11,12 +11,12 @@ helpviewer_keywords:
 - if keyword [C], if statement syntax
 - nested statements
 ms.assetid: d7fc16a0-fdbc-4f39-b596-76e1ca4ad4a5
-ms.openlocfilehash: 67cdae033c3c8669c8bc7ae1d2e3584ef68498f0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6fe92d3f2927cd6c5b3df16850e2925fc42055d0
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227844"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684146"
 ---
 # <a name="if-statement-c"></a>if 문 (C)
 
@@ -34,7 +34,7 @@ ms.locfileid: "87227844"
 
 다음은 **`if`** 문의 예제입니다.
 
-```
+```C
 if ( i > 0 )
     y = x / i;
 else
@@ -48,7 +48,7 @@ else
 
 **`if`** 문과 **`else`** 절을 중첩하는 경우, 중괄호를 사용하여 의도를 명확히 나타내는 복합 문으로 문과 절을 그룹화합니다. 중괄호가 없는 경우 컴파일러는 각 **`else`** 를 **`else`** 가 없는 가장 가까운 **`if`** 와 연결하여 모호성을 해결합니다.
 
-```
+```C
 if ( i > 0 )           /* Without braces */
     if ( j > i )
         x = j;
@@ -58,7 +58,7 @@ if ( i > 0 )           /* Without braces */
 
 이 예제에서 **`else`** 절은 내부 **`if`** 문과 연결되어 있습니다. `i`가 0보다 작거나 같으면 `x`에 값이 할당되지 않습니다.
 
-```
+```C
 if ( i > 0 )
 {                      /* With braces */
     if ( j > i )

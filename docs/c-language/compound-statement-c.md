@@ -5,12 +5,12 @@ helpviewer_keywords:
 - compound statements
 - statements, compound
 ms.assetid: 32d1bf86-cbbc-42a9-ba3a-1be1c6c7754c
-ms.openlocfilehash: 93f7fd24049c744874fb0ab3bda37eedef3a139a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 473a4acfa9f6fa2c9089f242a24962570cae4f1c
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87200584"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686472"
 ---
 # <a name="compound-statement-c"></a>복합 문 (C)
 
@@ -39,7 +39,7 @@ ms.locfileid: "87200584"
 
 다음 예제는 복합 문에 대해 설명합니다.
 
-```
+```C
 if ( i > 0 )
 {
     line[i] = x;
