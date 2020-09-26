@@ -4,12 +4,12 @@ description: 최신 C++의 새로운 프로그래밍 관용구와 그 근거를 
 ms.date: 05/17/2020
 ms.topic: conceptual
 ms.assetid: 1cb1b849-ed9c-4721-a972-fd8f3dab42e2
-ms.openlocfilehash: f2b9159e74ba7ce37c7eab1513826da939a3be49
-ms.sourcegitcommit: f1752bf90b4f869633a859ace85439ca19e208b2
+ms.openlocfilehash: 05c1fe80086e5b98d3f8a9c66c6759fddab39fa0
+ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "87232198"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91353053"
 ---
 # <a name="welcome-back-to-c---modern-c"></a>C++ 시작하기 - 최신 C++
 
@@ -75,7 +75,7 @@ apple_color["Granny Smith"] = "Green";
 
 - [`unordered_map`](../standard-library/unordered-map-class.md)과 같이 순서가 지정되지 않은 연관 컨테이너. 이 컨테이너에는 보다 낮은 요소당 오버헤드와 상수 시간 조회가 있지만 올바르고 효율적으로 사용하기는 더 어렵습니다.
 
-- 정렬 `vector`. 자세한 내용은 [알고리즘](../cpp/algorithms-modern-cpp.md)을 참조하세요.
+- 정렬 `vector`. 자세한 내용은 [알고리즘](../standard-library/algorithms.md)을 참조하세요.
 
 C 스타일 배열을 사용하지 마세요. 직접 데이터 액세스가 필요한 이전 API의 경우 `f(vec.data(), vec.size());`와 같은 접근자 메서드를 대신 사용합니다. 컨테이너에 대한 자세한 내용은 [C++ 표준 라이브러리 컨테이너](../standard-library/stl-containers.md)를 참조하세요.
 

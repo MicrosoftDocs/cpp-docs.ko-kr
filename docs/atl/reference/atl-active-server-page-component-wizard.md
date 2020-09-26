@@ -4,12 +4,12 @@ ms.date: 05/09/2019
 helpviewer_keywords:
 - ASP components, creating in ATL
 ms.assetid: 5a5cb904-dbbf-44ea-ad3d-2ddd14c1d3c5
-ms.openlocfilehash: a78beeab663ef1b467cdec32ca51132e8134a9b2
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
-ms.translationtype: HT
+ms.openlocfilehash: 3e29d049c50f0410daf16b4bd1322676fd499fd2
+ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65707047"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352676"
 ---
 # <a name="atl-active-server-page-component-wizard"></a>ATL Active Server Page 구성 요소 마법사
 
@@ -25,7 +25,7 @@ Visual Studio 2019 이상에서는 이 마법사를 사용할 수 없습니다.
 
 이 마법사를 사용하여 구성 요소의 스레딩 모델 및 집계 지원을 지정할 수 있습니다. 오류 정보 인터페이스, 연결 지점 및 자유 스레드 마샬링 지원을 나타낼 수도 있습니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 Visual Studio 2008부터, 이 마법사에서 생성된 등록 스크립트는 해당 COM 구성 요소를 **HKEY_LOCAL_MACHINE** 대신 **HKEY_CURRENT_USER** 아래에 등록합니다. 이 동작을 수정하려면 ATL 마법사의 **모든 사용자에 대해 구성 요소 등록** 옵션을 설정합니다.
 
@@ -67,7 +67,7 @@ COM 섹션의 **Coclass** 이름을 변경하면, **형식** 및 **ProgID** 상�
 
    기본적으로, 특성을 사용하지 않는 프로젝트에서 이 옵션을 설정한 후에 추가한 모든 개체는 특성 사용으로 지정됩니다(확인란이 선택됨). 이 확인란 선택을 취소하면 특성을 사용하지 않는 개체를 추가할 수 있습니다.
 
-   자세한 내용은 [애플리케이션 설정, ATL 프로젝트 마법사](../../atl/reference/application-settings-atl-project-wizard.md) 및 [특성의 기본 메커니즘](../../windows/basic-mechanics-of-attributes.md)을 참조하세요.
+   자세한 내용은 [응용 프로그램 설정, ATL 프로젝트 마법사](../../atl/reference/application-settings-atl-project-wizard.md) 및 [특성의 기본 메커니즘](../../windows/attributes/cpp-attributes-com-net.md#basic-mechanics-of-attributes) 을 참조 하세요.
 
 ### <a name="com"></a>COM
 
@@ -77,11 +77,11 @@ COM 섹션의 **Coclass** 이름을 변경하면, **형식** 및 **ProgID** 상�
 
    개체에서 지원하는 인터페이스 목록이 포함된 구성 요소 클래스의 이름을 설정합니다. 프로젝트 또는 이 개체에서 특성을 사용하는 경우, ATL에는 **coclass** 특성이 없기 때문에 이 옵션을 변경할 수 없습니다.
 
-- **Type**
+- **유형**
 
    coclass의 레지스트리에 표시되는 개체 설명을 설정합니다.
 
-- **Interface**
+- **인터페이스**
 
    개체에 대해 만드는 인터페이스를 설정합니다. 이 인터페이스에는 사용자 지정 메서드가 포함됩니다.
 

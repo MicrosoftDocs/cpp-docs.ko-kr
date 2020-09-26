@@ -91,12 +91,12 @@ helpviewer_keywords:
 - std::map [C++], upper_bound
 - std::map [C++], value_comp
 ms.assetid: 7876f4c9-ebb4-4878-af1e-09364c43af0a
-ms.openlocfilehash: 7ebbccb688ffcd6f2354e5f3ec243cf56303c124
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: ee98c7e694912d27585755f0ff29eafd0cdbdbca
+ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040511"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91353105"
 ---
 # <a name="map-class"></a>map 클래스
 
@@ -195,7 +195,7 @@ map은 [key_compare](#key_compare) 형식의 저장된 함수 개체를 호출�
 |[시작](#begin)|`map`의 첫 번째 요소를 가리키는 반복기를 반환합니다.|
 |[cbegin](#cbegin)|의 첫 번째 요소를 가리키는 상수 반복기를 반환 합니다 `map` .|
 |[cend](#cend)|마지막 요소 바로 다음의 상수 반복기를 반환합니다.|
-|[해제](#clear)|`map`의 모든 요소를 지웁니다.|
+|[clear](#clear)|`map`의 모든 요소를 지웁니다.|
 |[contains](#contains)<sup>c + + 20</sup> 포함|에 지정 된 키를 가진 요소가 있는지 확인 `map` 합니다.|
 |[count](#count)|키가 매개 변수에서 지정한 키와 일치하는 map의 요소 수를 반환합니다.|
 |[crbegin](#crbegin)|역방향의 첫 번째 요소를 가리키는 상수 반복기를 반환 합니다 `map` .|
@@ -203,7 +203,7 @@ map은 [key_compare](#key_compare) 형식의 저장된 함수 개체를 호출�
 |[emplace](#emplace)|생성 된 요소를에 삽입 `map` 합니다.|
 |[emplace_hint](#emplace_hint)|배치 힌트를 사용 하 여에 생성 된 요소를에 삽입 합니다 `map` .|
 |[empty](#empty)|**`true`** 이 비어 있으면를 반환 `map` 합니다.|
-|[종단](#end)|마지막 바로 다음 반복기를 반환합니다.|
+|[end](#end)|마지막 바로 다음 반복기를 반환합니다.|
 |[equal_range](#equal_range)|반복기 쌍을 반환합니다. `map`에서 지정된 키보다 큰 키가 있는 첫 번째 요소를 가리키는 쌍의 첫 번째 반복기 `map`에서 키보다 크거나 같은 키가 있는 첫 번째 요소를 가리키는 쌍의 두 번째 반복기|
 |[erase](#erase)|지정된 위치의 map에서 요소 또는 요소 범위를 제거합니다.|
 |[find](#find)|에서 `map` 지정 된 키와 같은 키를 가진 요소의 위치를 가리키는 반복기를 반환 합니다.|
@@ -253,7 +253,7 @@ const Type& at(const Key& key) const;
 키 * \
 찾을 키 값입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 찾은 요소의 데이터 값에 대한 참조입니다.
 
@@ -297,7 +297,7 @@ const_iterator begin() const;
 iterator begin();
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 의 첫 번째 요소 또는 빈 맵 다음의 위치 주소를 지정 하는 양방향 반복기 `map` 입니다.
 
@@ -350,7 +350,7 @@ The first element of m1 is now 1
 const_iterator cbegin() const;
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 **`const`** 범위의 첫 번째 요소 또는 빈 범위의 끝 바로 다음 위치를 주소 지정 하는 양방향 반복기입니다 (빈 범위의 경우 `cbegin() == cend()` ).
 
@@ -376,7 +376,7 @@ auto i2 = Container.cbegin();
 const_iterator cend() const;
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 **`const`** 범위 끝의 바로 다음을 가리키는 양방향 액세스 반복기입니다.
 
@@ -565,7 +565,7 @@ size_type count(const Key& key) const;
 *키인지*\
 map에서 일치시킬 요소의 키 값입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 map에 정렬 키가 매개 변수 키와 일치하는 요소가 있는 경우 1이고, map에 일치하는 키가 포함된 요소가 없는 경우 0입니다.
 
@@ -637,7 +637,7 @@ template<class K> bool contains(const K& key) const;
 *키인지*\
 찾을 요소의 키 값입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 `true` 요소가 컨테이너에 있으면이 고, 그렇지 않으면입니다. `false` 그렇지 않으면입니다.
 
@@ -686,7 +686,7 @@ true
 const_reverse_iterator crbegin() const;
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 역방향 [map](../standard-library/map-class.md)에서 첫 번째 요소 또는 역방향이 해제된 `map`에서 마지막 요소의 주소를 지정하는 const 역방향 양방향 반복기입니다.
 
@@ -736,7 +736,7 @@ The first element of the reversed map m1 is 3.
 const_reverse_iterator crend() const;
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 역방향 [map](../standard-library/map-class.md)에서 마지막 요소 다음 위치(역방향이 해제된 `map`의 첫 번째 요소 앞 위치)의 주소를 지정하는 const 역방향 양방향 반복기입니다.
 
@@ -853,7 +853,7 @@ emplace(
 *args*\
 값이 동등 하 게 정렬 된 요소가 이미 포함 되어 있지 않으면 map에 삽입할 요소를 생성 하기 위해 전달 되는 인수입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 [pair](../standard-library/pair-structure.md) **`bool`** 구성 요소가 삽입 된 경우 true이 고 맵에 이미 동일한 값의 요소가 순서 대로 포함 된 경우 false 인 쌍입니다. 반환 값 쌍의 반복기 구성 요소는 구성 요소가 true 인 경우 새로 삽입 된 요소를 가리키거나 **`bool`** 구성 요소가 false 인 경우에는 기존 요소를 가리킵니다 **`bool`** .
 
@@ -942,7 +942,7 @@ iterator emplace_hint(
 *위치*\
 올바른 삽입 지점 검색을 시작할 위치입니다. *이 지점이 바로 앞에*오면 로그 시간 대신 분할 상환 상수 시간에 삽입이 발생할 수 있습니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 새로 삽입된 요소에 대한 반복기입니다.
 
@@ -1008,7 +1008,7 @@ map이 비어 있는지 테스트합니다.
 bool empty() const;
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 **`true`** 맵이 비어 있으면이 고, 그렇지 않으면입니다. **`false`** 맵이 비어 있지 않으면입니다.
 
@@ -1055,7 +1055,7 @@ const_iterator end() const;
 iterator end();
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 마지막 바로 다음 반복기입니다. 맵이 비어 있으면 `map::end() == map::begin()`입니다.
 
@@ -1082,7 +1082,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 *키인지*\
 검색 중인 map에서 요소의 정렬 키와 비교할 인수 키 값입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 멤버 함수가 반환하는 `pr` 쌍의 첫 번째 반복기에 액세스하려면 `pr`. **먼저**, 하위 바운드 반복기를 역참조 하려면 \* ( `pr` . **첫 번째**). 구성원 함수가 반환하는 `pr` 쌍의 두 번째 반복기에 액세스하려면 `pr`. **둘째**, 상한 반복기를 역참조 하려면 ()를 사용 \* `pr` 합니다. **second**).
 
@@ -1176,7 +1176,7 @@ size_type erase(
 *키인지*\
 제거할 요소의 키 값입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 처음 두 구성원 함수의 경우 제거된 요소 뒤에 남은 첫 번째 요소 또는 이러한 요소가 없을 경우 map의 끝에 있는 요소를 지정하는 양방향 반복기입니다.
 
@@ -1277,7 +1277,7 @@ const_iterator find(const Key& key) const;
 *키인지*\
 검색 중인 맵에서 요소의 정렬 키와 일치 여부를 확인할 키 값입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 지정 된 키가 있는 요소의 위치 또는 해당 `map` `map::end()` 키와 일치 하는 항목이 없는 경우 ()에서 마지막 요소 다음의 위치를 참조 하는 반복기입니다.
 
@@ -1357,7 +1357,7 @@ map를 생성하는 데 사용되는 할당자 개체의 복사본을 반환합�
 allocator_type get_allocator() const;
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 map에서 사용되는 할당자입니다.
 
@@ -1480,7 +1480,7 @@ Map에서 [value_type](#value_type)의 요소를 생성 하는 데 사용할 수
 *IList*\
 요소를 복사할 [initializer_list](../standard-library/initializer-list.md) 입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 단일 요소 멤버 함수 (1) 및 (2)는 [pair](../standard-library/pair-structure.md) **`bool`** 구성 요소가 삽입 된 경우 true이 고 맵에 해당 키에 동일한 값이 있는 요소가 이미 포함 되어 있는 경우 false 인 쌍을 반환 합니다. 반환 값 쌍의 반복기 구성 요소는 구성 요소가 true 인 경우 새로 삽입 된 요소를 가리키거나 **`bool`** 구성 요소가 false 인 경우에는 기존 요소를 가리킵니다 **`bool`** .
 
@@ -1628,7 +1628,7 @@ map에서 키를 정렬하기 위해 사용하는 비교 개체의 복사본을 
 key_compare key_comp() const;
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 map이 요소의 순서를 지정하는 데 사용하는 함수 개체를 반환합니다.
 
@@ -1742,7 +1742,7 @@ const_iterator lower_bound(const Key& key) const;
 *키인지*\
 검색 중인 map에서 요소의 정렬 키와 비교할 인수 키 값입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 `iterator` `const_iterator` 인수 키 보다 크거나 같은 키를 사용 하 여 map에서 요소 위치의 주소를 가져오거나, `map` 키와 일치 하는 항목이 없는 경우에서 마지막 요소 다음 위치의 주소를 나타내는 또는입니다.
 
@@ -2029,7 +2029,7 @@ map의 최대 길이를 반환합니다.
 size_type max_size() const;
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 map의 최대 허용 길이입니다.
 
@@ -2069,7 +2069,7 @@ Type& operator[](Key&& key);
 *키인지*\
 삽입할 요소의 키 값입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 삽입된 요소의 데이터 값에 대한 참조입니다.
 
@@ -2231,7 +2231,7 @@ const_reverse_iterator rbegin() const;
 reverse_iterator rbegin();
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 역방향 map에서 첫 번째 요소 또는 역방향이 해제된 map에서 마지막 요소의 주소를 지정하는 역방향 양방향 반복기입니다.
 
@@ -2368,7 +2368,7 @@ const_reverse_iterator rend() const;
 reverse_iterator rend();
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 역방향 map에서 마지막 요소 다음 위치(역방향이 해제된 map의 첫 번째 요소 앞의 위치)의 주소를 지정하는 역방향 양방향 반복기입니다.
 
@@ -2472,7 +2472,7 @@ typedef std::reverse_iterator<iterator> reverse_iterator;
 size_type size() const;
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 map의 현재 길이입니다.
 
@@ -2605,7 +2605,7 @@ const_iterator upper_bound(const Key& key) const;
 *키인지*\
 검색 중인 map에서 요소의 정렬 키와 비교할 인수 키 값입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 `iterator` `const_iterator` 인수 키 보다 큰 키를 사용 하 여 map에서 요소 위치의 주소를 가져오거나, 해당 `map` 키와 일치 하는 항목이 없는 경우에서 마지막 요소 다음 위치의 주소를 나타내는 또는입니다.
 
@@ -2670,7 +2670,7 @@ that of the initial element of m1 is: 20.
 value_compare value_comp() const;
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 map이 요소의 순서를 지정하는 데 사용하는 비교 함수 개체를 반환합니다.
 
@@ -2792,6 +2792,6 @@ int main( )
 
 ## <a name="see-also"></a>참고 항목
 
-[컨테이너가](../cpp/containers-modern-cpp.md)\
+[컨테이너가](./stl-containers.md)\
 [C + + 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
 [C + + 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

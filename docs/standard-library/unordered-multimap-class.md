@@ -140,12 +140,12 @@ helpviewer_keywords:
 - std::unordered_multimap::size
 - std::unordered_multimap::swap
 ms.assetid: 4baead6c-5870-4b85-940f-a47d6b891c27
-ms.openlocfilehash: 5ca739e4c10fbca6cfd85b182e0052bcad19bf21
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: a22e247bc683bac25e609b6c88a17cf622540352
+ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90042071"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352650"
 ---
 # <a name="unordered_multimap-class"></a>unordered_multimap 클래스
 
@@ -208,13 +208,13 @@ class unordered_multimap;
 |[bucket_size](#bucket_size)|버킷의 크기를 가져옵니다.|
 |[cbegin](#cbegin)|제어되는 시퀀스의 시작을 지정합니다.|
 |[cend](#cend)|제어되는 시퀀스의 끝을 지정합니다.|
-|[해제](#clear)|모든 요소를 제거합니다.|
+|[clear](#clear)|모든 요소를 제거합니다.|
 |[contains](#contains)<sup>c + + 20</sup> 포함|에 지정 된 키를 가진 요소가 있는지 여부를 확인 `unordered_multimap` 합니다.|
 |[count](#count)|지정한 키와 일치하는 요소의 수를 찾습니다.|
 |[emplace](#emplace)|생성된 요소를 추가합니다.|
 |[emplace_hint](#emplace_hint)|힌트와 함께 생성된 요소를 추가합니다.|
 |[empty](#empty)|요소가 있는지 여부를 테스트합니다.|
-|[종단](#end)|제어되는 시퀀스의 끝을 지정합니다.|
+|[end](#end)|제어되는 시퀀스의 끝을 지정합니다.|
 |[equal_range](#equal_range)|지정된 키와 일치하는 범위를 찾습니다.|
 |[erase](#erase)|지정된 위치에 있는 요소를 제거합니다.|
 |[find](#find)|지정된 키와 일치하는 요소를 찾습니다.|
@@ -562,7 +562,7 @@ bucket_size(7) == 1
 const_iterator cbegin() const;
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 **`const`** 범위의 첫 번째 요소 또는 빈 범위의 끝 바로 다음 위치를 가리키는 전방 액세스 반복기입니다 (빈 범위의 경우 `cbegin() == cend()` ).
 
@@ -588,7 +588,7 @@ auto i2 = Container.cbegin();
 const_iterator cend() const;
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 **`const`** 범위 끝의 바로 다음을 가리키는 전방 액세스 반복기입니다.
 
@@ -875,7 +875,7 @@ template<class K> bool contains(const K& key) const;
 *키인지*\
 찾을 요소의 키 값입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 `true` 요소가 컨테이너에 있으면이 고, 그렇지 않으면입니다. `false` 그렇지 않으면입니다.
 
@@ -1037,7 +1037,7 @@ iterator emplace(Args&&... args);
 *args*\
 에 삽입할 요소를 생성 하기 위해 전달 되는 인수 `unordered_multimap` 입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 새로 삽입된 요소에 대한 반복기입니다.
 
@@ -1070,7 +1070,7 @@ unordered에 삽입할 요소를 생성하기 위해 전달되는 인수입니�
 *위치*\
 올바른 삽입 지점 검색을 시작할 위치와 관련된 힌트입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 새로 삽입된 요소에 대한 반복기입니다.
 
@@ -1321,7 +1321,7 @@ size_type erase(
 *키인지*\
 제거할 요소의 키 값입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 처음 두 구성원 함수의 경우 제거된 요소 뒤에 남은 첫 번째 요소 또는 이러한 요소가 없을 경우 map의 끝에 있는 요소를 지정하는 양방향 반복기입니다.
 
@@ -1566,7 +1566,7 @@ Unordered_multimap에서 [value_type](../standard-library/map-class.md#value_typ
 *IList*\
 요소를 복사할 [initializer_list](../standard-library/initializer-list.md) 입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 단일 요소 삽입 멤버 함수 (1) 및 (2)는 unordered_multimap에 새 요소를 삽입한 위치로 반복기를 반환합니다.
 
@@ -2822,6 +2822,6 @@ int main()
 ## <a name="see-also"></a>참고 항목
 
 [<unordered_map>](../standard-library/unordered-map.md)\
-[컨테이너가](../cpp/containers-modern-cpp.md)\
+[컨테이너가](./stl-containers.md)\
 [C + + 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
 [C + + 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

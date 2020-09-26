@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - auto keyword [C++]
 ms.assetid: e9d495d7-601c-4547-b897-998389a311f4
-ms.openlocfilehash: 675f6919b6804cfb1d2c5395d046cb5fa39e625d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: be268635e61005efbdb01ed8c4eec79c7cb9b800
+ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229196"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91353040"
 ---
 # <a name="auto-c"></a>`auto`(C++)
 
@@ -65,7 +65,7 @@ ms.locfileid: "87229196"
 
 ## <a name="references-and-cv-qualifiers"></a>참조 및 cv 한정자
 
-를 사용 하면 **`auto`** 참조, **`const`** 한정자 및 한정자가 삭제 **`volatile`** 됩니다. 다음과 같은 예제를 참조하세요.
+를 사용 하면 **`auto`** 참조, **`const`** 한정자 및 한정자가 삭제 **`volatile`** 됩니다. 다음 예제를 참조하세요.
 
 ```cpp
 // cl.exe /analyze /EHsc /W4
@@ -122,7 +122,7 @@ int main()
 
 다음 표에서는 키워드 사용에 대 **`auto`** 한 제한 사항과 컴파일러가 내보내는 해당 진단 오류 메시지를 나열 합니다.
 
-|오류 번호|설명|
+|오류 번호|Description|
 |------------------|-----------------|
 |[C3530](../error-messages/compiler-errors-2/compiler-error-c3530.md)|**`auto`** 키워드는 다른 형식 지정자와 함께 사용할 수 없습니다.|
 |[C3531](../error-messages/compiler-errors-2/compiler-error-c3531.md)|키워드를 사용 하 여 선언 된 기호에는 **`auto`** 이니셜라이저가 있어야 합니다.|
@@ -220,10 +220,9 @@ int main()
 
 ## <a name="see-also"></a>참고 항목
 
-[`auto`키워드로](../cpp/auto-keyword.md)<br/>
-[C++ 키워드](../cpp/keywords-cpp.md)<br/>
-[`/Zc:auto`(변수 형식 추론)](../build/reference/zc-auto-deduce-variable-type.md)<br/>
-[`sizeof`연산자](../cpp/sizeof-operator.md)<br/>
+[키워드](../cpp/keywords-cpp.md)<br/>
+[`/Zc:auto` (변수 형식 추론)](../build/reference/zc-auto-deduce-variable-type.md)<br/>
+[`sizeof` 연산자](../cpp/sizeof-operator.md)<br/>
 [`typeid`](../extensions/typeid-cpp-component-extensions.md)<br/>
 [`operator new`](new-operator-cpp.md)<br/>
 [선언 및 정의](declarations-and-definitions-cpp.md)<br/>

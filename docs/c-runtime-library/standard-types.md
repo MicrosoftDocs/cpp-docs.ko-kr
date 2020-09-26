@@ -160,12 +160,12 @@ helpviewer_keywords:
 - CRT_REPORT_HOOK type
 - _finddata_t type
 ms.assetid: 23312dd2-4a6a-4d70-9b48-2a5d0d8c9f28
-ms.openlocfilehash: 38906579a449941d6dad767afa97a32d63fe3445
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bf90adbdbc739a2dd26d8e59ab38e56aef3bd312
+ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231275"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352936"
 ---
 # <a name="standard-types"></a>표준 형식
 
@@ -189,7 +189,7 @@ Microsoft 런타임 라이브러리는 다음과 같은 표준 형식 및 typede
 |int_fast64_t, uint_fast64_t|long long, unsigned long long|
 |intmax_t, uintmax_t|long long, unsigned long long|
 
-|Type|설명|선언됨|
+|형식|Description|선언됨|
 |----------|-----------------|-----------------|
 |`clock_t`(long)|시간 값을 저장합니다. [clock](../c-runtime-library/reference/clock.md)에 의해 사용됩니다.|TIME.H|
 |`_complex` 구조체|복소수의 실수와 허수 부분을 저장합니다. [_cabs](../c-runtime-library/reference/cabs.md)에 의해 사용됩니다.|MATH.H|
@@ -199,21 +199,21 @@ Microsoft 런타임 라이브러리는 다음과 같은 표준 형식 및 typede
 |`_CRT_REPORT_HOOK`,<br /><br /> `_CRT_REPORT_HOOKW`,<br /><br /> `_CRT_REPORT_HOOKW_M`|[_CrtDbgReport](../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md)에서 호출되는 콜백 함수에 대한 형식이 정의됩니다.<br /><br /> 이 함수에 대한 매개 변수는 보고서 유형, 출력 메시지 및 콜백 함수의 반환 값입니다.|CRTDBG.H|
 |`dev_t`, `_dev_t` short 또는 부호 없는 정수|디바이스 핸들을 나타냅니다.|SYS\TYPES.H|
 |`_diskfree_t` 구조체|디스크 드라이브에 대한 정보가 들어 있습니다. [_getdiskfree](../c-runtime-library/reference/getdiskfree.md)**.** 에 의해 사용됩니다.|DOS.H 및 DIRECT.H|
-|`div_t`, `ldiv_t` 및 `lldiv_t` 구조|[div](../c-runtime-library/reference/div.md), [ldiv](../c-runtime-library/reference/ldiv-lldiv.md) 및 [lldiv](../c-runtime-library/reference/ldiv-lldiv.md)에 의해 반환된 값을 각각 저장합니다.|STDLIB.H|
+|`div_t`, `ldiv_t` 및 `lldiv_t` 구조|[div](reference/div.md), [ldiv](../c-runtime-library/reference/ldiv-lldiv.md) 및 [lldiv](../c-runtime-library/reference/ldiv-lldiv.md)에 의해 반환된 값을 각각 저장합니다.|STDLIB.H|
 |`errno_t` 정수|`errno`의 오류 코드를 처리하는 매개 변수 또는 함수 반환 형식에 사용됩니다.|STDDEF.H,<br /><br /> CRTDEFS.H|
 |`_exception` 구조체|[_matherr](../c-runtime-library/reference/matherr.md)에 대한 오류 정보를 저장합니다.|MATH.H|
 |`_EXCEPTION_POINTERS`|예외 레코드를 포함합니다. 자세한 내용은 [예외 포인터](/windows/win32/api/winnt/ns-winnt-exception_pointers)를 참조하세요.|FPIEEE.H|
 |`FILE` 구조체|스트림의 현재 상태에 대한 정보를 저장합니다. 모든 스트림 I/O 작업에 사용됩니다.|STDIO.H|
 |`_finddata_t`, `_wfinddata_t`, `_finddata32_t`, `_wfinddata32_t`, `_finddatai64_t`, `_wfinddatai64_t`, `__finddata64_t`, `__wfinddata64_t`, `__finddata32i64_t`, `__wfinddata32i64_t`, `__finddata64i32_t`, `__wfinddata64i32_t` 구조|[_findfirst, _wfindfirst 및 관련 함수](../c-runtime-library/reference/findfirst-functions.md)와 [_findnext, _wfindnext 및 관련 함수](../c-runtime-library/reference/findnext-functions.md)에 의해 반환되는 file-attribute 정보를 저장합니다. 구조체 멤버에 대한 자세한 내용은 [파일 이름 검색 함수](../c-runtime-library/filename-search-functions.md)를 참조하세요.|IO.H, WCHAR.H|
 |`_FPIEEE_RECORD` 구조체|IEEE 부동 소수점 예외에 대한 정보를 포함합니다. [_fpieee_flt](../c-runtime-library/reference/fpieee-flt.md)로 사용자 정의 트랩 처리기에 전달됩니다.|FPIEEE.H|
-|`fpos_t`( **`__int64`** 대상 플랫폼에 따라 long 정수, 또는 구조체)|[fgetpos](../c-runtime-library/reference/fgetpos.md) 및 [fsetpos](../c-runtime-library/reference/fsetpos.md)에서 파일 내의 모든 위치를 고유하게 지정하기 위한 정보를 기록하는 데 사용됩니다.|STDIO.H|
+|`fpos_t` ( **`__int64`** 대상 플랫폼에 따라 long 정수, 또는 구조체)|[fgetpos](../c-runtime-library/reference/fgetpos.md) 및 [fsetpos](../c-runtime-library/reference/fsetpos.md)에서 파일 내의 모든 위치를 고유하게 지정하기 위한 정보를 기록하는 데 사용됩니다.|STDIO.H|
 |`_fsize_t`(부호 없는 long 정수)|파일의 크기를 나타내는 데 사용됩니다.|IO.H,<br /><br /> WCHAR.H|
 |`_HEAPINFO` 구조체|[_heapwalk](../c-runtime-library/reference/heapwalk.md)의 다음 힙 항목에 대한 정보가 포함됩니다.|MALLOC.H|
 |`_HFILE`(void \*)|운영 체제 파일 핸들입니다.|CRTDBG.H|
 |`imaxdiv_t`|몫과 나머지를 모두 포함하여 [imaxdiv](../c-runtime-library/reference/imaxdiv.md) 함수에서 반환되는 값의 형식입니다.|inttypes.h|
 |`ino_t`, `_ino_t`(부호 없는 short)|상태 정보를 반환하기 위해 사용됩니다.|WCHAR.H|
 |`intmax_t`|부호 있는 정수 형식 값을 표시할 수 있는 부호 있는 정수 형식입니다.|stdint.h|
-|`intptr_t`( **`__int64`** 대상 플랫폼에 따라 long 정수 또는)|Win32와 Win64 플랫폼에서 포인터 또는 핸들을 저장합니다.|STDDEF.H 및 기타 포함 파일|
+|`intptr_t` ( **`__int64`** 대상 플랫폼에 따라 long 정수 또는)|Win32와 Win64 플랫폼에서 포인터 또는 핸들을 저장합니다.|STDDEF.H 및 기타 포함 파일|
 |`jmp_buf` 배열|[setjmp](../c-runtime-library/reference/setjmp.md) 및 [longjmp](../c-runtime-library/reference/longjmp.md)에서 프로그램 환경을 저장하고 복원하는 데 사용됩니다.|SETJMP.H|
 |`lconv` 구조체|다른 국가/지역의 숫자 값에 대한 서식 규칙을 포함합니다. [localeconv](../c-runtime-library/reference/localeconv.md)에서 사용됩니다.|LOCALE.H|
 |`_LDOUBLE`,<br /><br /> `_LONGDOUBLE`,<br /><br /> `_LDBL12`(long double 또는 부호 없는 문자 배열)|long double 값을 나타내는 데 사용합니다.|STDLIB.H|
@@ -222,7 +222,7 @@ Microsoft 런타임 라이브러리는 다음과 같은 표준 형식 및 typede
 |`off_t`, `_off_t` long 정수|파일 오프셋 값을 나타냅니다.|WCHAR.H, SYS\TYPES.H|
 |`_onexit_t`,<br /><br /> `_onexit_m_t` 포인터|[_onexit, _onexit_m](../c-runtime-library/reference/onexit-onexit-m.md)에서 반환됩니다.|STDLIB.H|
 |`_PNH` 함수 포인터|[_set_new_handler](../c-runtime-library/reference/set-new-handler.md)에 대한 인수의 형식입니다.|NEW.H|
-|`ptrdiff_t`( **`__int64`** 대상 플랫폼에 따라 long 정수 또는)|두 개의 포인터 구독 결과입니다.|CRTDEFS.H|
+|`ptrdiff_t` ( **`__int64`** 대상 플랫폼에 따라 long 정수 또는)|두 개의 포인터 구독 결과입니다.|CRTDEFS.H|
 |`_purecall_handler`,<br /><br /> `_purecall_handler_m`|순수 가상 함수를 호출할 때 호출되는 콜백 함수에 대한 형식을 정의합니다. [_get_purecall_handler, _set_purecall_handler](../c-runtime-library/reference/get-purecall-handler-set-purecall-handler.md)에서 사용됩니다. `_purecall_handler` 함수에 void 반환 형식이 있어야 합니다.|STDLIB.H|
 |`_RTC_error_fn` 형식 정의|런타임 오류 검사를 처리하는 함수에 대한 형식을 정의합니다. [_RTC_SetErrorFunc](../c-runtime-library/reference/rtc-seterrorfunc.md)에서 사용됩니다.|RTCAPI.H|
 |`_RTC_error_fnW` 형식 정의|런타임 오류 검사를 처리하는 함수에 대한 형식을 정의합니다. [_RTC_SetErrorFuncW](../c-runtime-library/reference/rtc-seterrorfuncw.md)에서 사용됩니다.|RTCAPI.H|
@@ -242,7 +242,7 @@ Microsoft 런타임 라이브러리는 다음과 같은 표준 형식 및 typede
 |`__timeb64` 구조체|[_ftime64](../c-runtime-library/reference/ftime-ftime32-ftime64.md) 및 [_ftime_s, _ftime32_s, _ftime64_s](../c-runtime-library/reference/ftime-s-ftime32-s-ftime64-s.md)에서 현재 시스템 시간을 저장하는 데 사용됩니다.|SYS\TIMEB.H|
 |`tm` 구조체|[asctime, _wasctime](../c-runtime-library/reference/asctime-wasctime.md), [asctime_s, _wasctime_s](../c-runtime-library/reference/asctime-s-wasctime-s.md), [gmtime, _gmtime32, _gmtime64](../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md), [gmtime_s, _gmtime32_s, _gmtime64_s](../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md), [localtime, _localtime32, _localtime64](../c-runtime-library/reference/localtime-localtime32-localtime64.md), [localtime_s, _localtime32_s, _localtime64_s](../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md), [mktime, _mktime32, _mktime64](../c-runtime-library/reference/mktime-mktime32-mktime64.md) 및 [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)에서 시간 정보를 저장하고 검색하는 데 사용됩니다.|TIME.H|
 |`uintmax_t`|부호 없는 정수 계열 형식 값을 표시할 수 있는 부호 없는 정수 형식입니다.|stdint.h|
-|`uintptr_t`( **`__int64`** 대상 플랫폼에 따라 long 정수 또는)|`intptr_t`의 부호 없는 정수 또는 부호 없는 __int64 버전입니다.|STDDEF.H 및 기타 포함 파일|
+|`uintptr_t` ( **`__int64`** 대상 플랫폼에 따라 long 정수 또는)|`intptr_t`의 부호 없는 정수 또는 부호 없는 __int64 버전입니다.|STDDEF.H 및 기타 포함 파일|
 |`unexpected_function`|[unexpected](../c-runtime-library/reference/unexpected-crt.md)가 호출될 때 호출되는 콜백 함수에 대한 형식을 정의합니다. [set_unexpected](../c-runtime-library/reference/set-unexpected-crt.md)에 의해 사용됩니다.|EH.H|
 |`_utimbuf` 구조체|[_utime, _wutime](../c-runtime-library/reference/utime-utime32-utime64-wutime-wutime32-wutime64.md) 및 [_futime, _futime32, _futime64](../c-runtime-library/reference/futime-futime32-futime64.md)에서 파일 수정 날짜를 변경하는 데 사용되는 파일 액세스 및 수정 시간을 저장합니다.|SYS\UTIME.H|
 |`_utimbuf32` 구조체|[_utime, _utime32, _utime64, _wutime, _wutime32, _wutime64](../c-runtime-library/reference/utime-utime32-utime64-wutime-wutime32-wutime64.md) 및 [_futime, _futime32, _futime64](../c-runtime-library/reference/futime-futime32-futime64.md)에서 파일 수정 날짜를 변경하는 데 사용되는 파일 액세스 및 수정 시간을 저장합니다.|SYS\UTIME.H|

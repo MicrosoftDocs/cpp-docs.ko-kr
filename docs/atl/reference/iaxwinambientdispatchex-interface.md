@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - IAxWinAmbientDispatchEx interface
 ms.assetid: 2c25e079-6128-4278-bc72-b2c6195ba7ef
-ms.openlocfilehash: f052c39424fc2ee6f43f249e3034be7c464d016c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 3359c17996eb78c3249abc83ff2d439381f209fe
+ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833389"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352988"
 ---
 # <a name="iaxwinambientdispatchex-interface"></a>IAxWinAmbientDispatchEx 인터페이스
 
@@ -32,7 +32,7 @@ MIDL_INTERFACE("B2D0778B - AC99 - 4c58 - A5C8 - E7724E5316B5") IAxWinAmbientDisp
 
 ### <a name="methods"></a>메서드
 
-|속성|설명|
+|속성|Description|
 |-|-|
 |[SetAmbientDispatch](#setambientdispatch)|이 메서드는 사용자 정의 인터페이스를 사용 하 여 기본 앰비언트 속성 인터페이스를 보완 하기 위해 호출 됩니다.|
 
@@ -46,7 +46,7 @@ ATL에 정적으로 링크 되 고 ActiveX 컨트롤, 특히 앰비언트 속성
 
 ATL90.dll에 연결 하는 경우 **Axhost** 는 DLL의 형식 라이브러리에서 형식 정보를 로드 합니다.
 
-자세한 내용은 [ATL AXHost를 사용 하 여 ActiveX 컨트롤 호스팅](../../atl/hosting-activex-controls-using-atl-axhost.md) 을 참조 하세요.
+자세한 내용은 [ATL AXHost를 사용 하 여 ActiveX 컨트롤 호스팅](../../atl/atl-control-containment-faq.md#hosting-activex-controls-using-atl-axhost) 을 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -71,7 +71,7 @@ virtual HRESULT STDMETHODCALLTYPE SetAmbientDispatch(IDispatch* pDispatch) = 0;
 *pDispatch*<br/>
 새 인터페이스에 대 한 포인터입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 성공 시 S_OK 또는 실패 시 오류 HRESULT를 반환 합니다.
 

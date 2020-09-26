@@ -6,16 +6,16 @@ helpviewer_keywords:
 - multidimensional arrays [C++]
 - arrays [C++]
 ms.assetid: 3f5986aa-485c-4ba4-9502-67e2ef924238
-ms.openlocfilehash: cb949f9a17a6b751dae40202bf82e6cb321b526b
-ms.sourcegitcommit: 4eda68a0b3c23d8cefa56b7ba11583412459b32f
+ms.openlocfilehash: 6d002f2baa6657c13ffc603e74828ab60585d3a9
+ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87565965"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352793"
 ---
 # <a name="arrays-c"></a>배열 (C++)
 
-배열은 인접 한 메모리 영역을 차지 하는 동일한 형식의 개체 시퀀스입니다. 기존의 C 스타일 배열은 많은 버그의 소스 이지만 특히 이전 코드 베이스에서는 여전히 일반적입니다. 최신 c + +에서는이 섹션에 설명 된 C 스타일 배열 대신 [std:: vector](../standard-library/vector-class.md) 또는 [std:: array](../standard-library/array-class-stl.md) 를 사용 하는 것이 좋습니다. 이러한 표준 라이브러리 형식은 모두 인접 한 메모리 블록으로 해당 요소를 저장 합니다. 그러나 이러한 형식은 훨씬 더 큰 형식 안전성을 제공 하며 시퀀스 내에서 유효한 위치를 가리키도록 보장 되는 반복기를 지원 합니다. 자세한 내용은 [컨테이너 (최신 c + +)](containers-modern-cpp.md)를 참조 하세요.
+배열은 인접 한 메모리 영역을 차지 하는 동일한 형식의 개체 시퀀스입니다. 기존의 C 스타일 배열은 많은 버그의 소스 이지만 특히 이전 코드 베이스에서는 여전히 일반적입니다. 최신 c + +에서는이 섹션에 설명 된 C 스타일 배열 대신 [std:: vector](../standard-library/vector-class.md) 또는 [std:: array](../standard-library/array-class-stl.md) 를 사용 하는 것이 좋습니다. 이러한 표준 라이브러리 형식은 모두 인접 한 메모리 블록으로 해당 요소를 저장 합니다. 그러나 이러한 형식은 훨씬 더 큰 형식 안전성을 제공 하며 시퀀스 내에서 유효한 위치를 가리키도록 보장 되는 반복기를 지원 합니다. 자세한 내용은 [컨테이너](../standard-library/stl-containers.md)를 참조 하세요.
 
 ## <a name="stack-declarations"></a>스택 선언
 

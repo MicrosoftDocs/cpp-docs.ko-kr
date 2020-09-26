@@ -4,12 +4,12 @@ ms.date: 05/07/2019
 helpviewer_keywords:
 - lambda expressions [C++], syntax
 ms.assetid: 5d6154a4-f34d-4a15-970d-7e7de45f54e9
-ms.openlocfilehash: 9ac2fdea1a8fc8dcf2b03059455c3141daf86aa8
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 8db094dd14e63c08fbe8514f245c1777922224cf
+ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80179655"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352715"
 ---
 # <a name="lambda-expression-syntax"></a>람다 식 구문
 
@@ -17,7 +17,7 @@ ms.locfileid: "80179655"
 
 ## <a name="function-objects-vs-lambdas"></a>함수 개체와 람다
 
-코드를 작성할 때 함수 포인터 및 함수 개체를 사용 하 여 문제를 해결 하 고 계산을 수행할 수 있습니다. 특히 [ C++ 표준 라이브러리 알고리즘](../cpp/algorithms-modern-cpp.md)을 사용 하는 경우입니다. 함수 포인터와 함수 개체는 각각 장단점이 있습니다. 예를 들어 함수 포인터는 최소한의 구문 오버헤드가 있지만 범위 내에 상태를 유지하지 않으며 함수 개체는 상태를 유지할 수 있지만 클래스 정의의 구문 오버헤드가 필요합니다.
+코드를 작성할 때 함수 포인터 및 함수 개체를 사용 하 여 문제를 해결 하 고 계산을 수행할 수 있습니다. 특히 [c + + 표준 라이브러리 알고리즘](../standard-library/algorithms.md)을 사용 하는 경우입니다. 함수 포인터와 함수 개체는 각각 장단점이 있습니다. 예를 들어 함수 포인터는 최소한의 구문 오버헤드가 있지만 범위 내에 상태를 유지하지 않으며 함수 개체는 상태를 유지할 수 있지만 클래스 정의의 구문 오버헤드가 필요합니다.
 
 람다는 함수 포인터와 함수 개체의 이점을 결합하여 단점을 방지합니다. 람다는 함수 개체와 마찬가지로 유연하고 상태를 유지할 수 있지만 함수 개체와 다르게 간단한 구문은 명시적인 클래스 정의가 필요하지 않습니다. 람다를 사용하면 코드를 더 쉽게 작성할 수 있고 해당 함수 개체에 대한 코드보다 오류 발생 가능성이 적습니다.
 
@@ -83,7 +83,7 @@ There are 4 even numbers in the vector.
 
 ## <a name="example-2-using-a-function-object"></a>예제 2: 함수 개체 사용하기
 
-때로는 람다가 너무 비대해져서 이전 예제보다 훨씬 더 확장할 수 없습니다. 다음 예제에서는 람다 대신 함수 개체를 **for_each** 함수와 함께 사용 하 여 예제 1과 동일한 결과를 생성 합니다. 두 예제 모두 `vector` 개체에 짝수의 수를 저장합니다. 연산의 상태를 유지하기 위해 `FunctorClass` 클래스는 `m_evenCount` 변수를 멤버 변수로 참조하면서 저장합니다. 작업을 수행 하기 위해 `FunctorClass`는 함수 호출 연산자, **연산자 ()** 를 구현 합니다. Microsoft C++ 컴파일러는 예제 1의 람다 코드와 크기 및 성능이 비슷한 코드를 생성 합니다. 이 문서의 문제와 같은 기본적인 문제의 경우 함수 개체 디자인보다 간단한 람다 디자인이 더 좋습니다. 그러나 이 기능에 나중에 중요한 확장이 필요할 수 있다면 코드 유지 관리를 더 수월하게 할 수 있도록 함수 개체 디자인을 사용합니다.
+때로는 람다가 너무 비대해져서 이전 예제보다 훨씬 더 확장할 수 없습니다. 다음 예제에서는 람다 대신 함수 개체를 **for_each** 함수와 함께 사용 하 여 예제 1과 동일한 결과를 생성 합니다. 두 예제 모두 `vector` 개체에 짝수의 수를 저장합니다. 연산의 상태를 유지하기 위해 `FunctorClass` 클래스는 `m_evenCount` 변수를 멤버 변수로 참조하면서 저장합니다. 작업을 수행 하려면에서 `FunctorClass` 함수 호출 연산자 **()** 를 구현 합니다. Microsoft c + + 컴파일러는 예제 1의 람다 코드와 크기 및 성능이 비슷한 코드를 생성 합니다. 이 문서의 문제와 같은 기본적인 문제의 경우 함수 개체 디자인보다 간단한 람다 디자인이 더 좋습니다. 그러나 이 기능에 나중에 중요한 확장이 필요할 수 있다면 코드 유지 관리를 더 수월하게 할 수 있도록 함수 개체 디자인을 사용합니다.
 
 **연산자 ()** 에 대 한 자세한 내용은 [함수 호출](../cpp/function-call-cpp.md)을 참조 하세요. **For_each** 함수에 대 한 자세한 내용은 [for_each](../standard-library/algorithm-functions.md#for_each)을 참조 하세요.
 
@@ -157,13 +157,13 @@ int main()
 There are 4 even numbers in the vector.
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [람다 식](../cpp/lambda-expressions-in-cpp.md)<br/>
 [람다 식의 예](../cpp/examples-of-lambda-expressions.md)<br/>
-[generate](../standard-library/algorithm-functions.md#generate)<br/>
+[만드는](../standard-library/algorithm-functions.md#generate)<br/>
 [generate_n](../standard-library/algorithm-functions.md#generate_n)<br/>
 [for_each](../standard-library/algorithm-functions.md#for_each)<br/>
-[예외 사양(throw)](../cpp/exception-specifications-throw-cpp.md)<br/>
-[컴파일러 경고(수준 1) C4297](../error-messages/compiler-warnings/compiler-warning-level-1-c4297.md)<br/>
+[예외 사양 (throw)](../cpp/exception-specifications-throw-cpp.md)<br/>
+[컴파일러 경고 (수준 1) C4297](../error-messages/compiler-warnings/compiler-warning-level-1-c4297.md)<br/>
 [Microsoft 전용 한정자](../cpp/microsoft-specific-modifiers.md)

@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CAxWindow class
 - ATL, hosting ActiveX controls
 ms.assetid: 85e79261-43e4-4770-bde0-1ff87f222b0f
-ms.openlocfilehash: 1301baef874ac4e482a1b2a7f0a2ee6b1b63396f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b74ecb9af2decf92f873cef8d016907b6c9474cf
+ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833831"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91353079"
 ---
 # <a name="caxwindow-class"></a>CAxWindow 클래스
 
@@ -40,7 +40,7 @@ class CAxWindow : public CWindow
 
 ### <a name="methods"></a>메서드
 
-|기능|설명|
+|함수|Description|
 |-|-|
 |[AttachControl](#attachcontrol)|기존 ActiveX 컨트롤을 개체에 연결 `CAxWindow` 합니다.|
 |[CAxWindow](#caxwindow)|`CAxWindow` 개체를 생성합니다.|
@@ -54,7 +54,7 @@ class CAxWindow : public CWindow
 
 ### <a name="operators"></a>연산자
 
-|연산자|설명|
+|연산자|Description|
 |-|-|
 |[연산자 =](#operator_eq)|기존 개체에 HWND를 할당 `CAxWindow` 합니다.|
 
@@ -90,7 +90,7 @@ HRESULT AttachControl(
 *ppUnkContainer*<br/>
 제한이 호스트의에 대 한 포인터 `IUnknown` `AxWin` 입니다 (개체).
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -154,7 +154,7 @@ HRESULT CreateControl(
 *dwResID*<br/>
 HTML 리소스의 리소스 ID입니다. 지정 된 리소스를 사용 하 여 WebBrowser 컨트롤이 만들어지고 로드 됩니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -170,7 +170,7 @@ HTML 리소스의 리소스 ID입니다. 지정 된 리소스를 사용 하 여 
 
 ### <a name="example"></a>예제
 
-을 사용 하는 샘플은 [ATL AXHost를 사용 하 여 ActiveX 컨트롤 호스팅](../../atl/hosting-activex-controls-using-atl-axhost.md) 을 참조 하세요 `CreateControl` .
+을 사용 하는 샘플은 [ATL AXHost를 사용 하 여 ActiveX 컨트롤 호스팅](../../atl/atl-control-containment-faq.md#hosting-activex-controls-using-atl-axhost) 을 참조 하세요 `CreateControl` .
 
 ## <a name="caxwindowcreatecontrolex"></a><a name="createcontrolex"></a> CAxWindow:: CreateControlEx
 
@@ -230,7 +230,7 @@ HRESULT CreateControlEx(
 *dwResID*<br/>
 진행 HTML 리소스의 리소스 ID입니다. 지정 된 리소스를 사용 하 여 WebBrowser 컨트롤이 만들어지고 로드 됩니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -242,7 +242,7 @@ HRESULT CreateControlEx(
 
 ### <a name="example"></a>예제
 
-을 사용 하는 샘플은 [ATL AXHost를 사용 하 여 ActiveX 컨트롤 호스팅](../../atl/hosting-activex-controls-using-atl-axhost.md) 을 참조 하세요 `CreateControlEx` .
+을 사용 하는 샘플은 [ATL AXHost를 사용 하 여 ActiveX 컨트롤 호스팅](../../atl/atl-control-containment-faq.md#hosting-activex-controls-using-atl-axhost) 을 참조 하세요 `CreateControlEx` .
 
 ## <a name="caxwindowgetwndclassname"></a><a name="getwndclassname"></a> CAxWindow:: GetWndClassName
 
@@ -252,7 +252,7 @@ HRESULT CreateControlEx(
 static LPCTSTR GetWndClassName();
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 사용이 허가 되지 않은 ActiveX 컨트롤을 호스팅할 수 있는 창 클래스의 이름을 포함 하는 문자열에 대 한 포인터입니다.
 
@@ -269,7 +269,7 @@ CAxWindow<TBase>& operator=(HWND hWnd);
 *hWnd*<br/>
 기존 창에 대 한 핸들입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 현재 개체에 대 한 참조를 반환 합니다 `CAxWindow` .
 
@@ -294,7 +294,7 @@ HRESULT QueryControl(Q** ppUnk);
 *대답*<br/>
 진행 쿼리 되는 인터페이스입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -319,7 +319,7 @@ HRESULT QueryHost(Q** ppUnk);
 *대답*<br/>
 진행 쿼리 되는 인터페이스입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -340,7 +340,7 @@ HRESULT SetExternalDispatch(IDispatch* pDisp);
 *pDisp*<br/>
 진행 인터페이스에 대 한 포인터 `IDispatch` 입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -357,7 +357,7 @@ HRESULT SetExternalUIHandler(IDocHostUIHandlerDispatch* pUIHandler);
 *pUIHandler*<br/>
 진행 인터페이스에 대 한 포인터 `IDocHostUIHandlerDispatch` 입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 

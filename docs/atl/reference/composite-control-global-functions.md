@@ -18,12 +18,12 @@ f1_keywords:
 helpviewer_keywords:
 - composite controls, global functions
 ms.assetid: 536884cd-e863-4c7a-ab0a-604dc60a0bbe
-ms.openlocfilehash: 467925baf59598d743650d4f98d210f789f2b179
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: fe9d9a3a0538e2e5744987adcd64e67562711ea8
+ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833558"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91353118"
 ---
 # <a name="composite-control-global-functions"></a>복합 컨트롤 전역 함수
 
@@ -32,7 +32,7 @@ ms.locfileid: "88833558"
 > [!IMPORTANT]
 > 다음 표에 나열 된 함수는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.
 
-|기능|설명|
+|함수|Description|
 |-|-|
 |[AtlAxDialogBox](#atlaxdialogbox)|사용자가 제공한 대화 상자 템플릿에서 모달 대화 상자를 만듭니다. 결과 대화 상자에는 ActiveX 컨트롤이 포함 될 수 있습니다.|
 |[AtlAxCreateDialog](#atlaxcreatedialog)|사용자가 제공한 대화 상자 템플릿에서 모덜리스 대화 상자를 만듭니다. 결과 대화 상자에는 ActiveX 컨트롤이 포함 될 수 있습니다.|
@@ -82,7 +82,7 @@ ATLAPI_(int) AtlAxDialogBox(
 *dwInitParam*<br/>
 진행 WM_INITDIALOG 메시지의 *lParam* 매개 변수에서 대화 상자에 전달할 값을 지정 합니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값 중 하나입니다.
 
@@ -95,7 +95,7 @@ CONTROL    "{04FE35E9-ADBC-4f1d-83FE-8FA4D1F71C7F}", IDC_TEST,
     "AtlAxWin80", WS_GROUP | WS_TABSTOP, 0, 0, 100, 100
 ```
 
-리소스 스크립트를 편집 하는 방법에 대 한 자세한 내용은 [방법: 리소스 스크립트 파일을 텍스트 형식으로 열기](../../windows/how-to-open-a-resource-script-file-in-text-format.md)를 참조 하세요. 컨트롤 리소스 정의 문에 대 한 자세한 내용은 Windows SDK에서 [공용 컨트롤 매개 변수](/windows/win32/menurc/common-control-parameters) SDK Tools를 참조 하세요.
+리소스 스크립트를 편집 하는 방법에 대 한 자세한 내용은 [방법: 리소스 만들기](../../windows/how-to-create-a-resource-script-file.md)를 참조 하세요. 컨트롤 리소스 정의 문에 대 한 자세한 내용은 Windows SDK에서 [공용 컨트롤 매개 변수](/windows/win32/menurc/common-control-parameters) SDK Tools를 참조 하세요.
 
 일반 대화 상자에 대 한 자세한 내용은 Windows SDK의 [DialogBox](/windows/win32/api/winuser/nf-winuser-dialogboxw) 및 [createdialogparam](/windows/win32/api/winuser/nf-winuser-createdialogparamw) 을 참조 하십시오.
 
@@ -129,7 +129,7 @@ ATLAPI_(HWND) AtlAxCreateDialog(
 *dwInitParam*<br/>
 진행 WM_INITDIALOG 메시지의 *lParam* 매개 변수에서 대화 상자에 전달할 값을 지정 합니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값 중 하나입니다.
 
@@ -178,7 +178,7 @@ ATLAPI AtlAxCreateControl(
 *ppUnkContainer*<br/>
 제한이 컨테이너의를 받는 포인터의 주소입니다 `IUnknown` . NULL일 수 있습니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값 중 하나입니다.
 
@@ -239,7 +239,7 @@ ATLAPI AtlAxCreateControlEx(
 *punkSink*<br/>
 `IUnknown`포함 된 개체가 성공적으로 생성 된 후 포함 된 개체에서 *iidsink* 로 지정 된 연결 지점에 연결할 싱크 개체의 인터페이스에 대 한 포인터입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값 중 하나입니다.
 
@@ -292,13 +292,13 @@ ATLAPI AtlAxCreateControlLic(
 *bstrLic*<br/>
 컨트롤의 라이선스를 포함 하는 BSTR입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값 중 하나입니다.
 
 ### <a name="example"></a>예제
 
-를 사용 하는 방법에 대 한 샘플은 [ATL AXHost를 사용 하 여 ActiveX 컨트롤 호스팅](../../atl/hosting-activex-controls-using-atl-axhost.md) 을 참조 하세요 `AtlAxCreateControlLic` .
+를 사용 하는 방법에 대 한 샘플은 [ATL AXHost를 사용 하 여 ActiveX 컨트롤 호스팅](../../atl/atl-control-containment-faq.md#hosting-activex-controls-using-atl-axhost) 을 참조 하세요 `AtlAxCreateControlLic` .
 
 ## <a name="atlaxcreatecontrollicex"></a><a name="atlaxcreatecontrollicex"></a> AtlAxCreateControlLicEx
 
@@ -355,7 +355,7 @@ ATLAPI AtlAxCreateControlLicEx(
 *bstrLic*<br/>
 컨트롤의 라이선스를 포함 하는 BSTR입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값 중 하나입니다.
 
@@ -365,7 +365,7 @@ ATLAPI AtlAxCreateControlLicEx(
 
 ### <a name="example"></a>예제
 
-를 사용 하는 방법에 대 한 샘플은 [ATL AXHost를 사용 하 여 ActiveX 컨트롤 호스팅](../../atl/hosting-activex-controls-using-atl-axhost.md) 을 참조 하세요 `AtlAxCreateControlLicEx` .
+를 사용 하는 방법에 대 한 샘플은 [ATL AXHost를 사용 하 여 ActiveX 컨트롤 호스팅](../../atl/atl-control-containment-faq.md#hosting-activex-controls-using-atl-axhost) 을 참조 하세요 `AtlAxCreateControlLicEx` .
 
 ## <a name="atlaxattachcontrol"></a><a name="atlaxattachcontrol"></a> AtlAxAttachControl
 
@@ -389,7 +389,7 @@ ATLAPI AtlAxAttachControl(
 *ppUnkContainer*<br/>
 제한이 컨테이너 개체의에 대 한 포인터에 대 한 포인터입니다 `IUnknown` .
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값 중 하나입니다.
 
@@ -416,7 +416,7 @@ ATLAPI AtlAxGetHost(HWND h, IUnknown** pp);
 *페이지*<br/>
 제한이 `IUnknown` 컨트롤의 컨테이너에 대 한입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값 중 하나입니다.
 
@@ -436,7 +436,7 @@ ATLAPI AtlAxGetControl(HWND h, IUnknown** pp);
 *페이지*<br/>
 제한이 `IUnknown` 호스트 되는 컨트롤의입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값 중 하나입니다.
 
@@ -456,7 +456,7 @@ HRESULT AtlSetChildSite(IUnknown* punkChild, IUnknown* punkParent);
 *punkParent*<br/>
 진행 부모의 인터페이스에 대 한 포인터입니다 `IUnknown` .
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -468,7 +468,7 @@ HRESULT AtlSetChildSite(IUnknown* punkChild, IUnknown* punkParent);
 ATLAPI_(BOOL) AtlAxWinInit();
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 컨트롤 호스팅 코드의 초기화가 성공 하면 0이 아닌 값입니다. 그렇지 않으면 FALSE입니다.
 
@@ -484,7 +484,7 @@ ATL 컨트롤 호스팅 API를 사용 하기 전에이 함수를 호출 해야 �
 inline BOOL AtlAxWinTerm();
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 항상 TRUE를 반환 합니다.
 
@@ -524,7 +524,7 @@ ATLAPI AtlGetObjectSourceInterface(
 *pdwMinor*<br/>
 제한이 원본 인터페이스의 정의를 포함 하는 형식 라이브러리의 부 버전 번호에 대 한 포인터입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 

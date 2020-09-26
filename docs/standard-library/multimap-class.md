@@ -89,12 +89,12 @@ helpviewer_keywords:
 - std::multimap [C++], upper_bound
 - std::multimap [C++], value_comp
 ms.assetid: 8796ae05-37c4-475a-9e61-75fde9d4a463
-ms.openlocfilehash: e2d0236a0e643ac92bb771b90a1f021807f03fda
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 446c1af793b885646dbb5658242e75482ebb92de
+ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040680"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91353196"
 ---
 # <a name="multimap-class"></a>multimap 클래스
 
@@ -187,7 +187,7 @@ C++14에서는 형식 매개 변수가 없는 `std::less<>` 또는 `std::greater
 |[시작](#begin)|`multimap`의 첫 번째 요소를 주소 지정하는 반복기를 반환합니다.|
 |[cbegin](#cbegin)|`multimap`의 첫 번째 요소를 주소 지정하는 상수 반복기를 반환합니다.|
 |[cend](#cend)|`multimap`에서 마지막 요소 다음에 나오는 위치를 주소 지정하는 상수 반복기를 반환합니다.|
-|[해제](#clear)|`multimap`의 모든 요소를 지웁니다.|
+|[clear](#clear)|`multimap`의 모든 요소를 지웁니다.|
 |[contains](#contains)<sup>c + + 20</sup> 포함|에 지정 된 키를 가진 요소가 있는지 여부를 확인 `multimap` 합니다.|
 |[count](#count)|키가 매개 변수로 지정된 키와 일치하는 `multimap`의 요소 수를 반환합니다.|
 |[crbegin](#crbegin)|역순 `multimap`에서 첫 번째 요소를 주소 지정하는 상수 반복기를 반환합니다.|
@@ -195,7 +195,7 @@ C++14에서는 형식 매개 변수가 없는 `std::less<>` 또는 `std::greater
 |[emplace](#emplace)|생성된 요소를 `multimap`에 삽입합니다.|
 |[emplace_hint](#emplace_hint)|배치 힌트를 사용하여 생성된 요소를 `multimap`에 삽입합니다.|
 |[empty](#empty)|`multimap`가 비어 있는지 여부를 테스트합니다.|
-|[종단](#end)|`multimap`에서 마지막 요소 다음에 나오는 위치를 주소 지정하는 반복기를 반환합니다.|
+|[end](#end)|`multimap`에서 마지막 요소 다음에 나오는 위치를 주소 지정하는 반복기를 반환합니다.|
 |[equal_range](#equal_range)|요소의 키가 지정된 값과 일치하는 요소 범위를 찾습니다.|
 |[erase](#erase)|지정된 위치에서 `multimap`의 요소 또는 요소의 범위를 제거하거나 지정된 키와 일치하는 요소를 제거합니다.|
 |[find](#find)|지정된 키와 같은 키를 가진 `multimap` 내 요소의 첫 번째 위치를 가리키는 반복기를 반환합니다.|
@@ -245,7 +245,7 @@ const_iterator begin() const;
 iterator begin();
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 multimap의 첫 번째 요소 또는 빈 multimap 다음의 위치 주소를 지정하는 양방향 반복기입니다.
 
@@ -298,7 +298,7 @@ First element of m1 is now 1
 const_iterator cbegin() const;
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 **`const`** 범위의 첫 번째 요소 또는 빈 범위의 끝 바로 다음 위치를 가리키는 양방향 액세스 반복기입니다 (빈 범위의 경우 `cbegin() == cend()` ).
 
@@ -324,7 +324,7 @@ auto i2 = Container.cbegin();
 const_iterator cend() const;
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 **`const`** 범위 끝의 바로 다음을 가리키는 양방향 액세스 반복기입니다.
 
@@ -513,7 +513,7 @@ template<class K> bool contains(const K& key) const;
 *키인지*\
 찾을 요소의 키 값입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 `true` 요소가 컨테이너에 있으면이 고, 그렇지 않으면입니다. `false` 그렇지 않으면입니다.
 
@@ -567,7 +567,7 @@ size_type count(const Key& key) const;
 *키인지*\
 multimap에서 일치하는지 확인할 요소의 키입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 정렬 키가 매개 변수 키와 일치하는 요소가 있는 경우 해당 요소 수이고, multimap에 일치하는 키가 포함된 요소가 없는 경우 0입니다.
 
@@ -631,7 +631,7 @@ The number of elements in m1 with a sort key of 3 is: 0.
 const_reverse_iterator crbegin() const;
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 역방향 [multimap](../standard-library/multimap-class.md)에서 첫 번째 요소 또는 정방향 `multimap`에서 마지막 요소의 주소를 지정하는 상수 역방향 양방향 반복기입니다.
 
@@ -681,7 +681,7 @@ The first element of the reversed multimap m1 is 3.
 const_reverse_iterator crend() const;
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 역방향 [multimap](../standard-library/multimap-class.md)에서 마지막 요소 다음의 위치(정방향 `multimap`의 첫 번째 요소 앞의 위치) 주소를 지정하는 상수 역방향 양방향 반복기입니다.
 
@@ -798,7 +798,7 @@ iterator emplace(Args&&... args);
 *args*\
 multimap에 삽입할 요소를 생성하기 위해 전달되는 인수입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 새로 삽입된 요소에 대한 반복기입니다.
 
@@ -870,7 +870,7 @@ multimap에 삽입할 요소를 생성하기 위해 전달되는 인수입니다
 *위치*\
 올바른 삽입 지점 검색을 시작할 위치입니다. *이 지점이 바로 앞에*오면 로그 시간 대신 분할 상환 상수 시간에 삽입이 발생할 수 있습니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 새로 삽입된 요소에 대한 반복기입니다.
 
@@ -892,7 +892,7 @@ multimap이 비어 있는지 테스트합니다.
 bool empty() const;
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 **`true`** multimap이 비어 있으면이 고, 그렇지 않으면입니다. **`false`** multimap이 비어 있으면입니다.
 
@@ -939,7 +939,7 @@ const_iterator end() const;
 iterator end();
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 마지막 바로 다음 반복기입니다. multimap이 비어 있으면 `multimap::end() == multimap::begin()`입니다.
 
@@ -966,7 +966,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 *키인지*\
 검색 중인 multimap에서 요소의 정렬 키와 비교할 인수 키입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 반복기 쌍. 여기서 첫 번째 반복기는 키의 [lower_bound](#lower_bound)이고 두 번째 반복기는 키의 [upper_bound](#upper_bound)입니다.
 
@@ -1062,7 +1062,7 @@ size_type erase(
 *키인지*\
 제거할 요소의 키입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 처음 두 구성원 함수의 경우 제거된 요소 뒤에 남은 첫 번째 요소 또는 이러한 요소가 없을 경우 map의 끝에 있는 요소를 지정하는 양방향 반복기입니다.
 
@@ -1087,7 +1087,7 @@ const_iterator find(const Key& key) const;
 *키인지*\
 검색 중인 multimap에서 요소의 정렬 키와 일치 여부를 확인할 키 값입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 지정된 키를 포함하는 요소의 위치 또는 해당 키와 일치하는 항목이 없는 경우 multimap의 마지막 요소(`multimap::end()`) 다음 위치를 가리키는 반복기입니다.
 
@@ -1167,7 +1167,7 @@ multimap을 생성하는 데 사용되는 할당자 개체의 복사본을 반�
 allocator_type get_allocator() const;
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 multimap에서 사용되는 할당자입니다.
 
@@ -1292,7 +1292,7 @@ Map에서 [value_type](../standard-library/map-class.md#value_type)의 요소를
 *IList*\
 요소를 복사할 [initializer_list](../standard-library/initializer-list.md) 입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 단일 요소 삽입 멤버 함수 (1) 및 (2)는 multimap에 새 요소를 삽입한 위치로 반복기를 반환합니다.
 
@@ -1432,7 +1432,7 @@ multimap에서 키를 정렬하기 위해 사용하는 비교 개체의 복사�
 key_compare key_comp() const;
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 multimap이 요소의 순서를 지정하는 데 사용하는 함수 개체를 반환합니다.
 
@@ -1546,7 +1546,7 @@ const_iterator lower_bound(const Key& key) const;
 *키인지*\
 검색 중인 multimap에서 요소의 정렬 키와 비교할 인수 키입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 인수 키보다 크거나 같은 키가 들어 있는 multimap 내 요소의 위치 주소를 지정하거나, 키와 일치하는 항목이 없는 경우 multimap에서 마지막 요소 다음 위치의 주소를 지정하는 반복기 또는 `const_iterator`입니다.
 
@@ -1645,7 +1645,7 @@ multimap의 최대 길이를 반환합니다.
 size_type max_size() const;
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 multimap의 최대 허용 길이입니다.
 
@@ -1946,7 +1946,7 @@ const_reverse_iterator rbegin() const;
 reverse_iterator rbegin();
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 역방향 multimap에서 첫 번째 요소 또는 정방향 multimap에서 마지막 요소의 주소를 지정하는 역방향 양방향 반복기입니다.
 
@@ -2083,7 +2083,7 @@ const_reverse_iterator rend() const;
 reverse_iterator rend();
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 역방향 multimap에서 마지막 요소 다음의 위치(정방향 multimap의 첫 번째 요소 앞의 위치) 주소를 지정하는 역방향 양방향 반복기입니다.
 
@@ -2187,7 +2187,7 @@ multimap에 있는 요소 수를 반환합니다.
 size_type size() const;
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 multimap의 현재 길이입니다.
 
@@ -2319,7 +2319,7 @@ const_iterator upper_bound(const Key& key) const;
 *키인지*\
 검색 중인 multimap에서 요소의 정렬 키와 비교할 인수 키입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 인수 키보다 큰 키가 들어 있는 multimap 내 요소의 위치 주소를 지정하거나, 키와 일치하는 항목이 없는 경우 multimap에서 마지막 요소 다음 위치의 주소를 지정하는 반복기 또는 `const_iterator`입니다.
 
@@ -2391,7 +2391,7 @@ that of the initial element of m1 is: 20.
 value_compare value_comp() const;
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 multimap이 요소의 순서를 지정하는 데 사용하는 비교 함수 개체를 반환합니다.
 
@@ -2517,6 +2517,6 @@ The values of the mapped elements are: 10 20.
 
 ## <a name="see-also"></a>참고 항목
 
-[컨테이너가](../cpp/containers-modern-cpp.md)\
+[컨테이너가](./stl-containers.md)\
 [C + + 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
 [C + + 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

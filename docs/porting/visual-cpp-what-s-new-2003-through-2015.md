@@ -2,12 +2,12 @@
 title: Visual C++ 2003 ~ 2015의 새로운 기능
 ms.date: 07/02/2019
 ms.assetid: c4afde6f-3d75-40bf-986f-be57e3818e26
-ms.openlocfilehash: 8c73cf5fbd35c747f648ad2475a9ad49162a58d9
-ms.sourcegitcommit: 6e55aeb538b1c39af754f82d6f7738a18f5aa031
+ms.openlocfilehash: eb76e5455f053717859d0ac571b9d1110d11c33b
+ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87389937"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352637"
 ---
 # <a name="visual-c-what39s-new-2003-through-2015"></a>Visual C++ 2003 ~ 2015의 새로운 기능
 
@@ -510,7 +510,7 @@ Visual Studio 2015 이상 버전에서 컴파일러 규칙이 지속적으로 �
 
    Visual Studio 2013 및 Visual Studio 2015에서 클래스에 사용자 정의 이동 생성자가 있지만 사용자 정의 복사 생성자가 없는 경우 컴파일러는 해당 클래스에 대한 복사 생성자를 생성합니다. Dev14에서는 생성된 복사 생성자가 "= delete"로 표시됩니다.
 
-### <a name="conformance-improvements-in-visual-studio-2015-update-1"></a><a name="VS_Update1"></a>Visual Studio 2015 업데이트 1의 규칙 향상
+### <a name="conformance-improvements-in-visual-studio-2015-update-1"></a><a name="VS_Update1"></a> Visual Studio 2015 업데이트 1의 규칙 향상
 
 - **개인 가상 기본 클래스 및 간접 상속**
 
@@ -1273,7 +1273,7 @@ Visual Studio 2015 이상 버전에서 컴파일러 규칙이 지속적으로 �
 
    이러한 방식으로 작성된 코드를 수정하려면 연산자 정의를 헤더 파일에서 해당하는 소스 파일로 이동해야 합니다.
 
-### <a name="conformance-improvements-in-visual-studio-2015-update-3"></a><a name="VS_Update3"></a>Visual Studio 2015 업데이트 3의 규칙 향상
+### <a name="conformance-improvements-in-visual-studio-2015-update-3"></a><a name="VS_Update3"></a> Visual Studio 2015 업데이트 3의 규칙 향상
 
 - **std::is_convertable에서 자체 할당을 검색함**(표준 라이브러리) 복사 생성자가 삭제되거나 private인 경우 이전 버전의 `std::is_convertable` 형식 특성에서 class 형식의 자체 할당을 올바르게 검색하지 못했습니다. 이제 `std::is_convertable<>::value` 는 **`false`** 삭제 된 또는 전용 복사 생성자를 사용 하 여 클래스 형식에 적용 될 때로 올바르게 설정 됩니다.
 
@@ -1552,8 +1552,8 @@ C++11 명시적 변환 연산자, 이니셜라이저 목록, 범위가 지정된
 - 투명 연산자 구조 함수(less<>, greater<>, plus<>, multiplies<> 등)
 - make_unique\<T>(args...) 및 make_unique<T[]>(n)
 - cbegin()/cend(), rbegin()/rend(), 및 crbegin()/crend() 비멤버 함수
-- \<atomic>다양 한 성능 향상을 받았습니다.
-- \<type_traits>주요 안정화 및 코드 수정을 받았습니다.
+- \<atomic> 다양 한 성능 향상을 받았습니다.
+- \<type_traits> 주요 안정화 및 코드 수정을 받았습니다.
 
 ### <a name="breaking-changes"></a>주요 변경 내용
 
@@ -1790,7 +1790,7 @@ Visual Studio에서 새로운 C++ 단위 테스트 프레임워크를 사용하�
 **nullptr 및 __nullptr 키워드** MSVC를 사용 하면 **`nullptr`** 네이티브 코드 또는 관리 코드와 함께 키워드를 사용할 수 있습니다. **`nullptr`** 키워드는 개체 핸들, 내부 포인터 또는 네이티브 포인터 형식이 개체를 가리키지 않음을 나타냅니다. 컴파일러 **`nullptr`** 옵션을 사용 하는 경우 컴파일러는 관리 코드로 해석 하 `/clr` 고, 옵션을 사용 하지 않는 경우 네이티브 코드를 해석 합니다 `/clr` .
 Microsoft 관련 **__nullptr** 키워드는와 동일한 의미를 **`nullptr`** 갖지만 네이티브 코드에만 적용 됩니다. 컴파일러 옵션을 사용 하 여 네이티브 C/c + + 코드를 컴파일하는 경우 `/clr` 컴파일러는 **`nullptr`** 키워드가 네이티브 또는 관리 용어 인지 여부를 확인할 수 없습니다. 컴파일러에 대한 의도를 명확히 하려면, nullptr 키워드를 사용하여 관리되는 용어를 지정하고, **__nullptr**을 사용하여 네이티브 용어를 지정합니다.
 
-**`/Zc:trigraphs`컴파일러 옵션입니다.** 삼중자는 기본적으로 지원되지 않습니다. **`/Zc:trigraphs`** 삼중 자 지원을 사용 하려면 컴파일러 옵션을 사용 합니다.
+**`/Zc:trigraphs` 컴파일러 옵션입니다.** 삼중자는 기본적으로 지원되지 않습니다. **`/Zc:trigraphs`** 삼중 자 지원을 사용 하려면 컴파일러 옵션을 사용 합니다.
 삼중자는 두 개의 연속 물음표(??) 뒤에 고유한 세 번째 문자로 구성됩니다. 컴파일러는 삼중자를 해당 문장 부호 문자로 바꿉니다. 예를 들어 컴파일러는 ??= 삼중자를 #(숫자 기호) 문자로 바꿉니다. 특정 문장 부호 문자가 포함되지 않은 문자 집합을 사용하는 C 소스 파일에서 삼중자를 사용합니다.
 
 **새 프로필 기반 최적화 옵션** PogoSafeMode는 애플리케이션을 최적화할 때 안전 모드 또는 고속 모드를 사용할지 여부를 지정할 수 있는 새로운 프로필 기반 최적화 옵션입니다. 안전 모드는 스레드로부터 안전하지만 고속 모드보다 더 느립니다. 고속 모드가 기본 동작입니다.
@@ -1838,7 +1838,7 @@ Microsoft 관련 **__nullptr** 키워드는와 동일한 의미를 **`nullptr`**
 
 **다시 시작 관리자** 예기치 않게 닫히거나 다시 시작되는 경우 다시 시작 관리자에서 자동으로 문서를 저장하고 애플리케이션을 다시 시작합니다. 예를 들어 자동 업데이트로 인해 애플리케이션이 닫히면 다시 시작 관리자를 사용하여 해당 애플리케이션을 시작할 수 있습니다. 다시 시작 관리자를 사용하도록 애플리케이션을 구성하는 방법에 대한 자세한 내용은 **방법: 다시 시작 관리자 지원 추가**를 참조하세요.
 
-**CTaskDialog** `CTaskDialog` 클래스는 표준 `AfxMessageBox` 메시지 상자 대신 사용할 수 있습니다. `CTaskDialog` 클래스는 표준 메시지 상자보다 자세한 정보를 표시하고 수집합니다.
+**CTaskDialog.** `CTaskDialog` 클래스는 표준 `AfxMessageBox` 메시지 상자 대신 사용할 수 있습니다. `CTaskDialog` 클래스는 표준 메시지 상자보다 자세한 정보를 표시하고 수집합니다.
 
 #### <a name="safeint-library"></a>SafeInt 라이브러리
 
@@ -1878,7 +1878,7 @@ IntelliSense는 현재 필요한 정보만 처리하므로 IDE의 응답성이 �
 
 **MFC 클래스 마법사.** Visual C++ 2010에서는 잘 알려진 MFC 클래스 마법사 도구를 다시 가져옵니다. MFC 클래스 마법사는 소스 파일 집합을 수동으로 수정하지 않고도 클래스, 메시지 및 변수를 프로젝트에 추가할 수 있는 편리한 방법입니다.
 
-**ATL 컨트롤 마법사.** ATL 컨트롤 마법사는 더 이상 `ProgID` 필드를 자동으로 채우지 않습니다. ATL 컨트롤에 `ProgID`가 없으면 다른 도구가 이 도구와 작동하지 않을 수 있습니다. 컨트롤에 `ProgID`가 있어야 하는 도구의 한 예로 **활성 컨트롤 삽입** 대화 상자가 있습니다. 대화 상자에 대한 자세한 내용은 **ActiveX 컨트롤 삽입 대화 상자**를 참조하세요.
+**ATL 컨트롤 마법사.** ATL 컨트롤 마법사는 더 이상 `ProgID` 필드를 자동으로 채우지 않습니다. ATL 컨트롤에 `ProgID`가 없으면 다른 도구가 이 도구와 작동하지 않을 수 있습니다. 컨트롤에 `ProgID`가 있어야 하는 도구의 한 예로 **활성 컨트롤 삽입** 대화 상자가 있습니다. 대화 상자에 대 한 자세한 내용은 [ActiveX 컨트롤 삽입](../windows/adding-editing-or-deleting-controls.md#insert-activex-controls)을 참조 하세요.
 
 ### <a name="microsoft-macro-assembler-reference"></a>Microsoft 매크로 어셈블러 참조
 
@@ -2052,7 +2052,7 @@ __sptr, __uptr
 - `restrictdeclspec` 한정자가 추가되었습니다.
 - **`__thiscall`** 는 이제 키워드입니다.
 - **`__unaligned`** 이제 키워드가 문서화 되었습니다.
-- **`volatile`**(C + +)는 최적화와 관련 하 여 동작을 업데이트 했습니다.
+- **`volatile`** (C + +)는 최적화와 관련 하 여 동작을 업데이트 했습니다.
 
 ### <a name="new-preprocessor-features"></a>새 전처리기 기능
 
@@ -2185,7 +2185,7 @@ __sptr, __uptr
 - 각 함수 항목에서 .NET Framework에 해당하는 섹션이 추가되었습니다.
 - 몇 가지 문자열 함수에는 출력 버퍼가 너무 작을 때 실패하지 않고 문자열을 자르는 옵션이 있습니다. **_TRUNCATE**를 참조하세요.
 - `_set_se_translator`에서는 이제 `/EHa` 컴파일러 옵션을 사용해야 합니다.
-- `fpos_t`는 현재 **`__int64`** `/Za` (c 코드의 경우)이 고 __STDC__ 가 수동으로 설정 된 경우 (c + + 코드의 경우) 로 사용 됩니다 **`struct`** .
+- `fpos_t` 는 현재 **`__int64`** `/Za` (c 코드의 경우)이 고 __STDC__ 가 수동으로 설정 된 경우 (c + + 코드의 경우) 로 사용 됩니다 **`struct`** .
 - _CRT_DISABLE_PERFCRIT_LOCKS는 단일 스레드 프로그램의 I/O 성능을 향상시킬 수 있습니다.
 - POSIX 이름은 ISO C++ 호환 이름을 따르므로 더 이상 사용되지 않습니다(예: `getch` 대신 `_getch` 사용).
 - 새 링크 옵션인 .obj 파일은 pure 모드에서 사용할 수 있습니다.

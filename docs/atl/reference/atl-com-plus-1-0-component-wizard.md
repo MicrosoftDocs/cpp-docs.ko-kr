@@ -4,12 +4,12 @@ ms.date: 05/08/2019
 helpviewer_keywords:
 - ATL projects, adding components
 ms.assetid: 11670681-8671-4122-96a4-2e52f8dadce0
-ms.openlocfilehash: d5c0c0c8edb6b698d3d8f50736121d987af98492
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 6b1fea925c5f6d657e398933b5fb26cf09c28055
+ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81321685"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91353157"
 ---
 # <a name="atl-com-10-component-wizard"></a>ATL COM+ 1.0 구성 요소 마법사
 
@@ -61,7 +61,7 @@ Visual Studio 2008부터, 이 마법사에서 생성된 등록 스크립트는 �
 
    이 옵션을 설정한 후에 추가한 모든 개체는 기본적으로 특성 사용으로 지정됩니다(확인란이 선택됨). 이 확인란 선택을 취소하면 특성을 사용하지 않는 개체를 추가할 수 있습니다.
 
-   자세한 내용은 [애플리케이션 설정, ATL 프로젝트 마법사](../../atl/reference/application-settings-atl-project-wizard.md) 및 [특성의 기본 메커니즘](../../windows/basic-mechanics-of-attributes.md)을 참조하세요.
+   자세한 내용은 [응용 프로그램 설정, ATL 프로젝트 마법사](../../atl/reference/application-settings-atl-project-wizard.md) 및 [특성의 기본 메커니즘](../../windows/attributes/cpp-attributes-com-net.md#basic-mechanics-of-attributes) 을 참조 하세요.
 
 ### <a name="com"></a>COM
 
@@ -74,7 +74,7 @@ Visual Studio 2008부터, 이 마법사에서 생성된 등록 스크립트는 �
 > [!NOTE]
 > 특성을 사용하여 프로젝트를 만들거나 이 마법사 페이지에서 COM+ 1.0 구성 요소에 특성이 사용된다고 지정한 경우, ATL에는 `coclass` 특성이 없기 때문에 이 옵션을 변경할 수 없습니다.
 
-- **Type**
+- **유형**
 
    레지스트리에 표시되는 개체 설명을 설정합니다.
 
@@ -82,7 +82,7 @@ Visual Studio 2008부터, 이 마법사에서 생성된 등록 스크립트는 �
 
    개체에 대해 만드는 인터페이스를 설정합니다. 이 인터페이스에는 사용자 지정 메서드가 포함됩니다.
 
-- **Progid**
+- **ProgID**
 
    컨테이너에서 개체의 CLSID 대신 사용할 수 있는 이름을 설정합니다.
 

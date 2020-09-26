@@ -42,12 +42,12 @@ helpviewer_keywords:
 - RichEdit 1.0 control
 - rich edit controls [C++], RichEdit 1.0
 ms.assetid: 73cef03f-5c8c-456a-87d1-1458dff185cf
-ms.openlocfilehash: 90e4eb659de6d1d5ed1488365f6637de2d537e57
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 79ea16e2d1737063040302a1ce111d275ae28e27
+ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831686"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352754"
 ---
 # <a name="how-to-add-edit-or-delete-controls-c"></a>방법: 컨트롤 추가, 편집 또는 삭제 (c + +)
 
@@ -148,7 +148,7 @@ ms.locfileid: "88831686"
 
 ### <a name="troubleshooting"></a>문제 해결
 
-대화 상자에 공용 컨트롤이 나 rich edit 컨트롤을 추가한 후에는 대화 상자를 테스트할 때 표시 되지 않습니다. 또는 대화 자체가 나타나지 않습니다. 예를 들어:
+대화 상자에 공용 컨트롤이 나 rich edit 컨트롤을 추가한 후에는 대화 상자를 테스트할 때 표시 되지 않습니다. 또는 대화 자체가 나타나지 않습니다. 예를 들면 다음과 같습니다.
 
 1. Win32 프로젝트를 만들고 응용 프로그램 설정을 수정 하 여 콘솔 앱이 아닌 Windows 응용 프로그램을 만듭니다.
 
@@ -201,13 +201,13 @@ RichEdit 컨트롤을 사용 하려면를 호출 해야 `LoadLibrary` 합니다.
 >
 > 이전 RichEdit 1.0 컨트롤과 함께 현재 [CRichEditCtrl](../mfc/reference/cricheditctrl-class.md) 클래스를 사용할 수 있지만 `CRichEditCtrl` RichEdit 2.0 컨트롤을 지원 하도록 설계 되었습니다. RichEdit 1.0 및 RichEdit 2.0는 유사 하기 때문에 대부분의 메서드는 작동 합니다. 그러나 1.0 컨트롤과 2.0 컨트롤 간에는 몇 가지 차이점이 있으므로 일부 메서드가 제대로 작동 하지 않거나 작동 하지 않을 수 있습니다.
 
-### <a name="activex-controls"></a>ActiveX 컨트롤
+## <a name="insert-activex-controls"></a>ActiveX 컨트롤 삽입
 
 Visual Studio에서는 ActiveX 컨트롤을 대화 상자에 삽입할 수 있습니다. 자세한 내용은 [MFC Activex 컨트롤](../mfc/mfc-activex-controls.md) 및 [activex 컨트롤 컨테이너](../mfc/activex-control-containers.md)를 참조 하세요.
 
 **Activex 컨트롤 삽입** 대화 상자를 사용 하면 대화 상자 [편집기](dialog-editor.md)를 사용 하는 동안 activex 컨트롤을 대화 상자에 삽입할 수 있습니다. 이 대화 상자에는 다음과 같은 속성이 있습니다.
 
-|속성|설명|
+|속성|Description|
 |---|---|
 |**ActiveX 컨트롤**|ActiveX 컨트롤 목록을 표시 합니다.<br/><br/>이 대화 상자에서 컨트롤을 삽입 해도 래퍼 클래스는 생성 되지 않습니다. 래퍼 클래스가 필요한 경우 [클래스 뷰](/visualstudio/ide/viewing-the-structure-of-code) 를 사용 하 여 래퍼 클래스를 만듭니다. [클래스 추가](../ide/adding-a-class-visual-cpp.md)를 참조 하세요.<br/><br/>이 대화 상자에 ActiveX 컨트롤이 표시 되지 않는 경우 공급 업체의 지침에 따라 컨트롤을 설치 해 보십시오.|
 |**Path**|ActiveX 컨트롤을 찾은 파일을 표시 합니다.|
@@ -215,7 +215,7 @@ Visual Studio에서는 ActiveX 컨트롤을 대화 상자에 삽입할 수 있�
 > [!CAUTION]
 > 시스템에 일부 ActiveX 컨트롤을 배포하지 못할 수 있습니다. 컨트롤을 설치한 소프트웨어에 대 한 사용권 계약을 참조 하거나 소프트웨어 회사에 문의 하십시오.
 
-#### <a name="to-add-an-activex-control"></a>ActiveX 컨트롤을 추가 하려면
+### <a name="to-add-an-activex-control"></a>ActiveX 컨트롤을 추가 하려면
 
 1. **대화 상자 편집기**에서 대화 상자를 엽니다.
 
@@ -230,7 +230,7 @@ Visual Studio에서는 ActiveX 컨트롤을 대화 상자에 삽입할 수 있�
 > [!TIP]
 > **대화 상자 편집기** 의 바로 가기 메뉴를 사용 하 여 등록 된 activex 컨트롤을 대화 상자에 빠르게 추가 하거나 쉽게 액세스할 수 있도록 **도구 상자** 창에 activex 컨트롤을 추가 해 볼 수 있습니다.
 
-#### <a name="to-edit-properties-for-an-activex-control"></a>ActiveX 컨트롤에 대 한 속성을 편집 하려면
+### <a name="to-edit-properties-for-an-activex-control"></a>ActiveX 컨트롤에 대 한 속성을 편집 하려면
 
 독립 공급 업체에서 제공 하는 ActiveX 컨트롤은 고유한 속성 및 특성을 제공 합니다. 이러한 속성은 **속성** 창에 표시 됩니다. ActiveX 컨트롤의 작성기에서 만든 속성 페이지는 **속성 페이지** 대화 상자에 표시 됩니다. 특정 ActiveX 컨트롤에 대 한 **속성 페이지** 를 보려면 [속성 창](/visualstudio/ide/reference/properties-window))에서 **속성 페이지** 단추를 선택 합니다.
 

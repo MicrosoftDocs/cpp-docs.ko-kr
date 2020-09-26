@@ -35,12 +35,12 @@ f1_keywords:
 helpviewer_keywords:
 - IAxWinAmbientDispatch interface
 ms.assetid: 55ba6f7b-7a3c-4792-ae47-c8a84b683ca9
-ms.openlocfilehash: a53481a57676b5b4a253a3501d3536e5115907a7
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: dbd682451ca5499aef4b16b3b51feba8411bdd12
+ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833415"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352962"
 ---
 # <a name="iaxwinambientdispatch-interface"></a>IAxWinAmbientDispatch 인터페이스
 
@@ -59,7 +59,7 @@ interface IAxWinAmbientDispatch : IDispatch
 
 ### <a name="methods"></a>메서드
 
-|속성|설명|
+|속성|Description|
 |-|-|
 |[get_AllowContextMenu](#get_allowcontextmenu)|`AllowContextMenu`속성은 호스팅된 컨트롤이 자체 상황에 맞는 메뉴를 표시할 수 있는지 여부를 지정 합니다.|
 |[get_AllowShowUI](#get_allowshowui)|`AllowShowUI`속성은 호스팅된 컨트롤이 자체 사용자 인터페이스를 표시할 수 있는지 여부를 지정 합니다.|
@@ -98,7 +98,7 @@ interface IAxWinAmbientDispatch : IDispatch
 
 ATL90.dll에 연결 하는 경우 **Axhost** 는 DLL의 typelib에서 형식 정보를 로드 합니다.
 
-자세한 내용은 [ATL AXHost를 사용 하 여 ActiveX 컨트롤 호스팅](../../atl/hosting-activex-controls-using-atl-axhost.md) 을 참조 하세요.
+자세한 내용은 [ATL AXHost를 사용 하 여 ActiveX 컨트롤 호스팅](../../atl/atl-control-containment-faq.md#hosting-activex-controls-using-atl-axhost) 을 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -123,7 +123,7 @@ STDMETHOD(get_AllowContextMenu)(VARIANT_BOOL* pbAllowContextMenu);
 *pbAllowContextMenu*<br/>
 제한이 이 속성의 현재 값을 받을 변수의 주소입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -144,7 +144,7 @@ STDMETHOD(get_AllowShowUI)(VARIANT_BOOL* pbAllowShowUI);
 *pbAllowShowUI*<br/>
 제한이 이 속성의 현재 값을 받을 변수의 주소입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -165,7 +165,7 @@ STDMETHOD(get_AllowWindowlessActivation)(VARIANT_BOOL* pbAllowWindowless);
 *pbAllowWindowless 없음*<br/>
 제한이 이 속성의 현재 값을 받을 변수의 주소입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -186,7 +186,7 @@ STDMETHOD(get_BackColor)(OLE_COLOR* pclrBackground);
 *pclrBackground*<br/>
 제한이 이 속성의 현재 값을 받을 변수의 주소입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -207,7 +207,7 @@ STDMETHOD(get_DisplayAsDefault)(VARIANT_BOOL* pbDisplayAsDefault);
 *pbDisplayAsDefault*<br/>
 제한이 이 속성의 현재 값을 받을 변수의 주소입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -228,7 +228,7 @@ STDMETHOD(get_DocHostDoubleClickFlags)(DWORD* pdwDocHostDoubleClickFlags);
 *pdwDocHostDoubleClickFlags*<br/>
 제한이 이 속성의 현재 값을 받을 변수의 주소입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -249,7 +249,7 @@ STDMETHOD(get_DocHostFlags)(DWORD* pdwDocHostFlags);
 *pdwDocHostFlags*<br/>
 제한이 이 속성의 현재 값을 받을 변수의 주소입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -270,7 +270,7 @@ STDMETHOD(get_Font)(IFontDisp** pFont);
 *pFont*<br/>
 제한이 `IFontDisp` 이 속성의 현재 값을 받는 데 사용 되는 인터페이스 포인터의 주소입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -291,7 +291,7 @@ STDMETHOD(get_ForeColor)(OLE_COLOR* pclrForeground);
 *pclrForeground*<br/>
 제한이 이 속성의 현재 값을 받을 변수의 주소입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -312,7 +312,7 @@ STDMETHOD(get_LocaleID)(LCID* plcidLocaleID);
 *plcidLocaleID*<br/>
 제한이 이 속성의 현재 값을 받을 변수의 주소입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -335,7 +335,7 @@ STDMETHOD(get_MessageReflect)(VARIANT_BOOL* pbMessageReflect);
 *pbMessageReflect*<br/>
 제한이 이 속성의 현재 값을 받을 변수의 주소입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -356,7 +356,7 @@ STDMETHOD(get_OptionKeyPath)(BSTR* pbstrOptionKeyPath);
 *pbstrOptionKeyPath*<br/>
 제한이 이 속성의 현재 값을 받을 변수의 주소입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -373,7 +373,7 @@ STDMETHOD(get_ShowGrabHandles)(VARIANT_BOOL* pbShowGrabHandles);
 *pbShowGrabHandles*<br/>
 제한이 이 속성의 현재 값을 받을 변수의 주소입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -394,7 +394,7 @@ STDMETHOD(get_ShowHatching)(VARIANT_BOOL* pbShowHatching);
 *pbShowHatching*<br/>
 제한이 이 속성의 현재 값을 받을 변수의 주소입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -415,7 +415,7 @@ STDMETHOD(get_UserMode)(VARIANT_BOOL* pbUserMode);
 *pbUserMode*<br/>
 제한이 이 속성의 현재 값을 받을 변수의 주소입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -436,7 +436,7 @@ STDMETHOD(put_AllowContextMenu)(VARIANT_BOOL bAllowContextMenu);
 *bAllowContextMenu*<br/>
 진행 이 속성의 새 값입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -457,7 +457,7 @@ STDMETHOD(put_AllowShowUI)(VARIANT_BOOL bAllowShowUI);
 *bAllowShowUI*<br/>
 진행 이 속성의 새 값입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -478,7 +478,7 @@ STDMETHOD(put_AllowWindowlessActivation)(VARIANT_BOOL bAllowWindowless);
 *bAllowWindowless 없는*<br/>
 진행 이 속성의 새 값입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -499,7 +499,7 @@ STDMETHOD(put_BackColor)(OLE_COLOR clrBackground);
 *clrBackground*<br/>
 진행 이 속성의 새 값입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -520,7 +520,7 @@ STDMETHOD(put_DisplayAsDefault)(VARIANT_BOOL bDisplayAsDefault);
 *bDisplayAsDefault*<br/>
 진행 이 속성의 새 값입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -541,7 +541,7 @@ STDMETHOD(put_DocHostDoubleClickFlags)(DWORD dwDocHostDoubleClickFlags);
 *dwDocHostDoubleClickFlags*<br/>
 진행 이 속성의 새 값입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -562,7 +562,7 @@ STDMETHOD(put_DocHostFlags)(DWORD dwDocHostFlags);
 *dwDocHostFlags*<br/>
 진행 이 속성의 새 값입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -583,7 +583,7 @@ STDMETHOD(put_Font)(IFontDisp* pFont);
 *pFont*<br/>
 진행 이 속성의 새 값입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -604,7 +604,7 @@ STDMETHOD(put_ForeColor)(OLE_COLOR clrForeground);
 *clrForeground*<br/>
 진행 이 속성의 새 값입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -625,7 +625,7 @@ STDMETHOD(put_LocaleID)(LCID lcidLocaleID);
 *lcidLocaleID*<br/>
 진행 이 속성의 새 값입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -646,7 +646,7 @@ STDMETHOD(put_MessageReflect)(VARIANT_BOOL bMessageReflect);
 *bMessageReflect*<br/>
 진행 이 속성의 새 값입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -667,7 +667,7 @@ STDMETHOD(put_OptionKeyPath)(BSTR bstrOptionKeyPath);
 *bstrOptionKeyPath*<br/>
 진행 이 속성의 새 값입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
@@ -684,7 +684,7 @@ STDMETHOD(put_UserMode)(VARIANT_BOOL bUserMode);
 *bUserMode*<br/>
 진행 이 속성의 새 값입니다.
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 표준 HRESULT 값입니다.
 
