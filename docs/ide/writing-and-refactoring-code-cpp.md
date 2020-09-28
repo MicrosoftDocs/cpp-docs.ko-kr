@@ -4,12 +4,12 @@ description: Visual Studio의 C++ 코드 편집기를 사용하여 코드를 서
 ms.date: 05/31/2019
 ms.assetid: 56ffb9e9-514f-41f4-a3cf-fd9ce2daf3b6
 ms.topic: overview
-ms.openlocfilehash: 43c4529ae0c5ac5a8c4fae2ae402ed3c6e222c37
-ms.sourcegitcommit: 426e327c9f7c3a3b02300e3f924f9786d62958e9
+ms.openlocfilehash: bf34bf39bc41841be72c9400ec63c501d7aa56a3
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84206221"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686334"
 ---
 # <a name="edit-and-refactor-c-code-in-visual-studio"></a>Visual Studio에서 C++ 코드 편집 및 리팩터링
 
@@ -98,11 +98,11 @@ Visual Studio 2017에서는 IntelliCode가 Visual Studio Marketplace에 확장�
 
 다음 예제에서는 `vector`가 선언되었지만 정의를 찾을 수 없으므로 편집기는 다음과 같은 필요한 헤더 파일을 포함할 것을 제안합니다.
 
-![C&#43;&#43; 빠른 수정](../ide/media/quick-fix-for-header-cpp.png "C++ 빠른 수정")
+![오류 표시선과 편집기가 제공하는 빠른 수정을 보여 주는 스크린샷](../ide/media/quick-fix-for-header-cpp.png "C++ 빠른 수정")
 
 또한 편집기는 일부 리팩터링 기회에 빠른 픽스를 제공합니다. 예를 들어 헤더 파일에서 클래스를 선언하면 Visual Studio는 별도의 .cpp 파일에 해당 클래스에 대한 정의를 만들 것을 제안합니다.
 
-![C&#43;&#43; 빠른 수정](../ide/media/quick-fix.png "C++ 빠른 수정")
+![channel.cpp 옵션에서 채널의 채널 경로 반복기 정의 만들기가 강조 표시된 빠른 수정을 보여 주는 스크린샷](../ide/media/quick-fix.png "C++ 빠른 수정")
 
 ## <a name="change-tracking"></a>Change tracking
 

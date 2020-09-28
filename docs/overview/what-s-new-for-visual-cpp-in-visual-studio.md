@@ -4,12 +4,12 @@ description: Visual Studio의 Microsoft C/C++ 컴파일러 및 도구에 있는 
 ms.date: 05/19/2020
 ms.technology: cpp-ide
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
-ms.openlocfilehash: 1a0fc228b6c91b1e529db6676c1a1193f5db99e1
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: a21bb8f8c629b3d9c8c765958d6a52891c90898a
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041681"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684747"
 ---
 # <a name="whats-new-for-c-in-visual-studio"></a>Visual Studio의 새로운 C++ 기능
 
@@ -649,7 +649,7 @@ Windows SDK Insider Preview의 빌드 17025부터 C++/WinRT가 Windows SDK에 �
 
 [C++ Core 지침](https://github.com/isocpp/CppCoreGuidelines)을 적용하기 위한 C++ Core Checkers가 이제는 Visual Studio와 함께 배포됩니다. 프로젝트의 속성 페이지에 있는 **코드 분석 확장** 페이지에서 검사기를 사용하도록 설정합니다. 그러면 코드 분석을 실행할 때 확장이 포함됩니다. 자세한 내용은 [C++ 핵심 지침 검사기 사용](/cpp/code-quality/using-the-cpp-core-guidelines-checkers)을 참조하세요.
 
-![Code Analysis 속성 페이지를 사용하여 C++ Core Check 규칙 집합을 선택하는 방법을 보여 줍니다.](media/CppCoreCheck.png "CppCoreCheck 속성 페이지")
+![구성 속성 > 코드 분석 > 일반이 선택되고 이 규칙 집합 실행 섹션에 여러 Core Check가 나열된 속성 페이지 스크린샷](media/CppCoreCheck.png "CppCoreCheck 속성 페이지")
 
 ##### <a name="visual-studio-2017-version-153"></a>Visual Studio 2017 15.3 버전
 
@@ -697,7 +697,7 @@ Visual Studio 그래픽 진단 도구: 이 도구를 사용하여 Direct3D 앱�
 
 - **개체 테이블에서 검색 및 필터링:** 찾으려는 리소스를 빠르고 쉽게 찾는 방법을 제공합니다.
 
-  ![개체 테이블 창에서 필터 및 검색 컨트롤의 위치를 표시합니다.](media/search.png)
+  ![형식 드롭다운 및 검색 텍스트 상자가 호출된 개체 테이블 섹션의 스크린샷](media/search.png)
 
 - **리소스 기록:** 이 새로운 보기는 캡처된 프레임 렌더링하는 동안 사용된 리소스의 전체 수정 기록을 간단하게 볼 수 있는 방법을 제공합니다. 리소스에 대한 기록을 호출하려면 리소스 하이퍼링크 옆에 있는 시계 아이콘을 클릭하세요.
 

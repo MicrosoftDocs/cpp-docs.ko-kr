@@ -5,12 +5,12 @@ ms.date: 01/08/2020
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: 49ba53eaa8ac075ab6d3b2a66f33160c5c3ec410
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a4eea2b321bc07fc40c9a42b3ce515435e808ee4
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81329167"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90685034"
 ---
 # <a name="cmake-projects-in-visual-studio"></a>Visual Studio의 CMake 프로젝트
 
@@ -27,7 +27,7 @@ CMake는 여러 플랫폼에서 실행되는 빌드 프로세스를 정의하는
 
 **Windows용 C++ CMake 도구**는 **C++를 사용한 데스크톱 개발** 워크로드 및 **C++를 사용한 Linux 개발 워크로드**의 일부로 설치됩니다. 자세한 내용은 [플랫폼 간 CMake 프로젝트](../linux/cmake-linux-project.md)를 참조하세요.
 
-![C++ 데스크톱 워크로드의 CMake 구성 요소](media/cmake-install-2019.png)
+![C++ 드롭다운이 선택되고 Windows용 C++ CMake 도구 옵션이 호출된 데스크톱 개발의 스크린샷](media/cmake-install-2019.png)
 
 자세한 내용은 [Visual Studio에서 C++ Linux 워크로드 설치](../linux/download-install-and-setup-the-linux-development-workload.md)를 참조하세요.
 
@@ -160,7 +160,7 @@ Visual Studio 2017에서는 [플랫폼 간 CMake 프로젝트](../linux/cmake-li
 
 **CMake용 Visual C++ 도구**는 **C++를 사용한 데스크톱 개발** 워크로드 및 **C++를 사용한 Linux 개발 워크로드**의 일부로 설치됩니다.
 
-![C++ 데스크톱 워크로드의 CMake 구성 요소](media/cmake-install.png)
+![CMake용 Visual C++ 도구 옵션이 호출된 개별 구성 요소 탭의 스크린샷](media/cmake-install.png)
 
 자세한 내용은 [Visual Studio에서 C++ Linux 워크로드 설치](../linux/download-install-and-setup-the-linux-development-workload.md)를 참조하세요.
 

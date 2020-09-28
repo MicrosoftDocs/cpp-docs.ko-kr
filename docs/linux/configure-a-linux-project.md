@@ -3,12 +3,12 @@ title: Visual Studio에서 Linux MSBuild C++ 프로젝트 구성
 ms.date: 08/06/2020
 description: Visual Studio에서 MSBuild 기반 Linux 프로젝트를 구성하여 빌드할 수 있습니다.
 ms.assetid: 4d7c6adf-54b9-4b23-bd23-5de0c825b768
-ms.openlocfilehash: 7f4664dfc364cbd9a3b499e02de4cf0e7f44fe78
-ms.sourcegitcommit: 2034f8e744a8b36cff8b15e9a5cfe684afebadfb
+ms.openlocfilehash: 4e99645eea89682b4beac5452da01755ea555ec4
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88043865"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90685958"
 ---
 # <a name="configure-a-linux-msbuild-c-project-in-visual-studio"></a>Visual Studio에서 Linux MSBuild C++ 프로젝트 구성
 
@@ -110,13 +110,13 @@ sudo apt install zip
 
 ::: moniker range="vs-2017"
 
-![원격 헤더 IntelliSense](media/remote-header-intellisense.png)
+![플랫폼 간 > 연결 관리자 > 원격 헤더 IntelliSense 관리자가 선택된 옵션 대화 상자를 보여 주는 스크린샷](media/remote-header-intellisense.png)
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-![원격 헤더 IntelliSense](media/connection-manager-vs2019.png)
+![플랫폼 간 > 연결 관리자가 선택된 옵션 대화 상자를 보여 주는 스크린샷](media/connection-manager-vs2019.png)
 
 로깅을 활성화하여 문제를 해결할 수 있습니다.
 

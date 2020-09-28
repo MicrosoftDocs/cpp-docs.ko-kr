@@ -4,12 +4,12 @@ ms.date: 07/01/2019
 ms.description: Configure a CMake project in Visual Studio to use the Clang/LLVM toolchain.
 helpviewer_keywords:
 - Clang support for C++ CMake projects
-ms.openlocfilehash: 46bfe788c13df3a37dd9cba654d16cfe4c3fe177
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a23526cf5216e4cc37c3131a0d1ba94a6e923f56
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81323188"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686433"
 ---
 # <a name="clangllvm-support-in-visual-studio-cmake-projects"></a>Visual Studio CMake 프로젝트의 Clang/LLVM 지원
 
@@ -57,7 +57,7 @@ Clang를 사용하도록 기존 구성을 수정하려면 다음 단계를 따�
 
 1. **일반**에서 **도구 집합** 드롭다운을 선택하고 원하는 Clang 도구 집합을 선택합니다.
 
-   ![CMake Clang 도구 집합](media/cmake-clang-toolset.png)
+   ![도구 집합이 선택되고 clang cl x86이 강조 표시된 일반 대화 상자의 스크린샷](media/cmake-clang-toolset.png)
 
 ## <a name="custom-clang-locations"></a>사용자 지정 Clang 위치
 
@@ -68,7 +68,7 @@ Clang를 사용하도록 기존 구성을 수정하려면 다음 단계를 따�
 
 다음과 같이 **CMake 설정**에서 **CMAKE_C_COMPILER** 및 **CMAKE_CXX_COMPILER** CMake 변수를 설정하여 다른 위치를 지정할 수 있습니다.
 
-![CMake Clang 도구 집합](media/clang-location-cmake.png)
+![CMake CXX Compiler가 강조 표시된 CMake 설정 대화 상자의 스크린샷](media/clang-location-cmake.png)
 
 ## <a name="clang-compatibility-modes"></a>Clang 호환성 모드
 

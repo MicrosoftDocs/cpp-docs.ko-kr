@@ -2,12 +2,12 @@
 title: Address Sanitizer를 사용하도록 Linux 프로젝트 구성
 description: Visual Studio에서 Address Sanitizer를 사용하도록 C++ Linux 프로젝트를 구성하는 방법을 설명합니다.
 ms.date: 06/07/2019
-ms.openlocfilehash: 80e9ab46c948f2062391ae723c3425c435bd4507
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 0e862e09d8178ce35fe26f2be138d7f6843b5ef1
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81364305"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686667"
 ---
 # <a name="configure-linux-projects-to-use-address-sanitizer"></a>Address Sanitizer를 사용하도록 Linux 프로젝트 구성
 
@@ -49,11 +49,11 @@ CMake에 ASan을 사용하려면 **솔루션 탐색기**에서 CMakeLists.txt �
 
 대화 상자의 왼쪽 창에서 Linux 구성(예: **Linux-Debug**)이 선택되어 있는지 확인합니다.
 
-![Linux 디버그 구성](media/linux-debug-configuration.png)
+![Linux 디버그가 구성 옵션 중 하나로 나열된 왼쪽 창의 스크린샷](media/linux-debug-configuration.png)
 
 ASan 옵션은 **일반** 아래에 있습니다. 세미콜론으로 구분된 "플래그=값" 양식으로 ASan 런타임 플래그를 입력합니다.
 
-![Linux 디버그 구성](media/cmake-settings-asan-options.png)
+![일부 주소 삭제기 런타임 플래그가 표시된 주소 삭제기 사용 옵션의 스크린샷](media/cmake-settings-asan-options.png)
 
 ## <a name="install-the-asan-debug-symbols"></a>ASan 디버그 기호 설치
 
