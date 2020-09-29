@@ -124,12 +124,12 @@ helpviewer_keywords:
 - SetStatus method
 - SetValue method
 ms.assetid: 374b13b7-1f09-457d-9e6b-df260ff4d178
-ms.openlocfilehash: ecbc332fcdb7fee8f748a02b2f111d4d1abf3c0b
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 31cc996b8beedadf9cba5a46b3b4da20e19268b0
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838206"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91498681"
 ---
 # <a name="cdynamicaccessor-class"></a>CDynamicAccessor 클래스
 
@@ -176,7 +176,7 @@ class CDynamicAccessor : public CAccessorBase
 
 메서드를 사용 하 여 열 `CDynamicAccessor` 이름, 열 수, 데이터 형식 등의 열 정보를 가져올 수 있습니다. 그런 다음이 열 정보를 사용 하 여 런타임에 동적으로 접근자를 만듭니다.
 
-열 정보는이 클래스로 만들고 관리 하는 버퍼에 저장 됩니다. [GetValue](../../data/oledb/cdynamicaccessor-getvalue.md)를 사용 하 여 버퍼에서 데이터를 가져옵니다.
+열 정보는이 클래스로 만들고 관리 하는 버퍼에 저장 됩니다. [GetValue](#getvalue)를 사용 하 여 버퍼에서 데이터를 가져옵니다.
 
 동적 접근자 클래스 사용에 대 한 설명 및 예제는 [동적 접근자 사용](../../data/oledb/using-dynamic-accessors.md)을 참조 하세요.
 
@@ -217,10 +217,10 @@ CDynamicAccessor(DBBLOBHANDLINGENUM eBlobHandling = DBBLOBHANDLING_DEFAULT,
 #### <a name="parameters"></a>매개 변수
 
 *Eblob 처리*<br/>
-BLOB (binary large object) 데이터를 처리 하는 방법을 지정 합니다. 기본값은 DBBLOBHANDLING_DEFAULT입니다. DBBLOBHANDLINGENUM 값에 대 한 설명은 [Setblobhandling](../../data/oledb/cdynamicaccessor-setblobhandling.md) 를 참조 하세요.
+BLOB (binary large object) 데이터를 처리 하는 방법을 지정 합니다. 기본값은 DBBLOBHANDLING_DEFAULT입니다. DBBLOBHANDLINGENUM 값에 대 한 설명은 [Setblobhandling](#setblobhandling) 를 참조 하세요.
 
 *nBlobSize*<br/>
-최대 BLOB 크기 (바이트)입니다. 이 값에 대 한 열 데이터는 BLOB으로 처리 됩니다. 기본값은 8000입니다. 자세한 내용은 [Setblobsizelimit](../../data/oledb/cdynamicaccessor-setblobsizelimit.md) 를 참조 하세요.
+최대 BLOB 크기 (바이트)입니다. 이 값에 대 한 열 데이터는 BLOB으로 처리 됩니다. 기본값은 8000입니다. 자세한 내용은 [Setblobsizelimit](#setblobsizelimit) 를 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
@@ -250,7 +250,7 @@ const DBBLOBHANDLINGENUM GetBlobHandling() const;
 
 ### <a name="remarks"></a>설명
 
-[Setblobhandling](../../data/oledb/cdynamicaccessor-setblobhandling.md)에 의해 설정 된 대로 BLOB 처리 값 *eblob* 처리를 반환 합니다.
+[Setblobhandling](#setblobhandling)에 의해 설정 된 대로 BLOB 처리 값 *eblob* 처리를 반환 합니다.
 
 ## <a name="cdynamicaccessorgetblobsizelimit"></a><a name="getblobsizelimit"></a> CDynamicAccessor:: GetBlobSizeLimit
 
@@ -264,7 +264,7 @@ const DBLENGTH GetBlobSizeLimit() const;
 
 ### <a name="remarks"></a>설명
 
-[Setblobsizelimit](../../data/oledb/cdynamicaccessor-setblobsizelimit.md)로 설정 된 대로 BLOB 처리 값 *nBlobSize* 를 반환 합니다.
+[Setblobsizelimit](#setblobsizelimit)로 설정 된 대로 BLOB 처리 값 *nBlobSize* 를 반환 합니다.
 
 ## <a name="cdynamicaccessorgetbookmark"></a><a name="getbookmark"></a> CDynamicAccessor:: GetBookmark
 

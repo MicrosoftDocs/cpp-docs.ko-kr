@@ -39,12 +39,12 @@ helpviewer_keywords:
 - operator<= member [STL/CLR]
 - operator< member [STL/CLR]
 ms.assetid: fb48cb75-d5ef-47ce-b526-bf60dc86c552
-ms.openlocfilehash: b21f9ec2ace54281f30f8f32134c7fb3466a1faa
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 271bc01f5c8fd9dd07bfa03035ae3d0204ebd8e7
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214856"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91500597"
 ---
 # <a name="utility-stlclr"></a>utility(STL/CLR)
 
@@ -68,7 +68,7 @@ STL/CLR 헤더를 포함 `<cliext/utility>` 하 여 템플릿 클래스 `pair` �
 |-----------|-----------------|
 |[pair(STL/CLR)](#pair)|요소 쌍을 래핑합니다.|
 
-|연산자|Description|
+|연산자|설명|
 |--------------|-----------------|
 |[operator== (pair)(STL/CLR)](#op_eq)|쌍 같음 비교입니다.|
 |[operator! = (pair) (STL/CLR)](#op_neq)|쌍이 비교와 같지 않습니다.|
@@ -83,7 +83,7 @@ STL/CLR 헤더를 포함 `<cliext/utility>` 하 여 템플릿 클래스 `pair` �
 
 ## <a name="members"></a>멤버
 
-## <a name="pair-stlclr"></a><a name="pair"></a>pair (STL/CLR)
+## <a name="pair-stlclr"></a><a name="pair"></a> pair (STL/CLR)
 
 템플릿 클래스는 값 쌍을 래핑하는 개체를 설명 합니다.
 
@@ -120,7 +120,7 @@ template<typename Value1,
 |[pair::pair(STL/CLR)](#pair_pair)|Pair 개체를 생성 합니다.|
 |[pair::swap(STL/CLR)](#swap)|두 쌍의 내용을 바꿉니다.|
 
-|연산자|Description|
+|연산자|설명|
 |--------------|-----------------|
 |[pair::operator=(STL/CLR)](#op_as)|저장 된 값 쌍을 바꿉니다.|
 
@@ -128,7 +128,7 @@ template<typename Value1,
 
 개체는 값의 쌍을 저장 합니다. 이 템플릿 클래스를 사용 하 여 두 값을 단일 개체로 결합 합니다. 또한 여기에 설명 된 개체는 `cliext::pair` 관리 되는 형식만 저장 하 고 관리 되지 않는 형식 쌍을 저장 하려면에 선언 된를 사용 `std::pair` `<utility>` 합니다.
 
-## <a name="pairfirst-stlclr"></a><a name="first"></a>pair:: first (STL/CLR)
+## <a name="pairfirst-stlclr"></a><a name="first"></a> pair:: first (STL/CLR)
 
 래핑된 첫 번째 값입니다.
 
@@ -165,7 +165,7 @@ int main()
 [x, 3]
 ```
 
-## <a name="pairfirst_type-stlclr"></a><a name="first_type"></a>pair:: first_type (STL/CLR)
+## <a name="pairfirst_type-stlclr"></a><a name="first_type"></a> pair:: first_type (STL/CLR)
 
 래핑된 첫 번째 값의 형식입니다.
 
@@ -202,7 +202,7 @@ int main()
 [x, 3]
 ```
 
-## <a name="pairoperator-stlclr"></a><a name="op_as"></a>pair:: operator = (STL/CLR)
+## <a name="pairoperator-stlclr"></a><a name="op_as"></a> pair:: operator = (STL/CLR)
 
 저장 된 값 쌍을 바꿉니다.
 
@@ -246,7 +246,7 @@ int main()
 [x, 3]
 ```
 
-## <a name="pairpair-stlclr"></a><a name="pair_pair"></a>pair::p air (STL/CLR)
+## <a name="pairpair-stlclr"></a><a name="pair_pair"></a> pair::p air (STL/CLR)
 
 Pair 개체를 생성 합니다.
 
@@ -282,11 +282,11 @@ pair(Value1 val1, Value2 val2);
 
 `pair(pair<Value1, Value2>% right);`
 
-`right.` [pair:: FIRST (STL/clr)](../dotnet/pair-first-stl-clr.md) 및 `right.` [PAIR:: second (stl/clr)](../dotnet/pair-second-stl-clr.md)를 사용 하 여 저장 된 쌍을 초기화 합니다.
+`right.` [pair:: FIRST (STL/clr)](#first) 및 `right.` [PAIR:: second (stl/clr)](#second)를 사용 하 여 저장 된 쌍을 초기화 합니다.
 
 `pair(pair<Value1, Value2>^ right);`
 
-`right->` [pair:: FIRST (STL/clr)](../dotnet/pair-first-stl-clr.md) 및 `right>` [PAIR:: second (stl/clr)](../dotnet/pair-second-stl-clr.md)를 사용 하 여 저장 된 쌍을 초기화 합니다.
+`right->` [pair:: FIRST (STL/clr)](#first) 및 `right>` [PAIR:: second (stl/clr)](#second)를 사용 하 여 저장 된 쌍을 초기화 합니다.
 
 생성자는 다음과 같습니다.
 
@@ -331,7 +331,7 @@ int main()
 [x, 3]
 ```
 
-## <a name="pairsecond-stlclr"></a><a name="second"></a>pair:: second (STL/CLR)
+## <a name="pairsecond-stlclr"></a><a name="second"></a> pair:: second (STL/CLR)
 
 래핑된 두 번째 값입니다.
 
@@ -368,7 +368,7 @@ int main()
 [x, 3]
 ```
 
-## <a name="pairsecond_type-stlclr"></a><a name="second_type"></a>pair:: second_type (STL/CLR)
+## <a name="pairsecond_type-stlclr"></a><a name="second_type"></a> pair:: second_type (STL/CLR)
 
 래핑된 두 번째 값의 형식입니다.
 
@@ -405,7 +405,7 @@ int main()
 [x, 3]
 ```
 
-## <a name="pairswap-stlclr"></a><a name="swap"></a>pair:: swap (STL/CLR)
+## <a name="pairswap-stlclr"></a><a name="swap"></a> pair:: swap (STL/CLR)
 
 두 쌍의 내용을 바꿉니다.
 
@@ -474,7 +474,7 @@ x x x x x
 a b c
 ```
 
-## <a name="make_pair-stlclr"></a><a name="make_pair"></a>make_pair (STL/CLR)
+## <a name="make_pair-stlclr"></a><a name="make_pair"></a> make_pair (STL/CLR)
 
 `pair`값 쌍에서을 만듭니다.
 
@@ -527,7 +527,7 @@ int main()
 [y, 4]
 ```
 
-## <a name="operator-pair-stlclr"></a><a name="op_neq"></a>operator! = (pair) (STL/CLR)
+## <a name="operator-pair-stlclr"></a><a name="op_neq"></a> operator! = (pair) (STL/CLR)
 
 쌍이 비교와 같지 않습니다.
 
@@ -581,7 +581,7 @@ int main()
 [x 3] != [x 4] is True
 ```
 
-## <a name="operatorlt-pair-stlclr"></a><a name="op_lt"></a>연산자 &lt; (쌍) (STL/CLR)
+## <a name="operatorlt-pair-stlclr"></a><a name="op_lt"></a> 연산자 &lt; (쌍) (STL/CLR)
 
 쌍이 비교 보다 작음
 
@@ -635,7 +635,7 @@ int main()
 [x 3] < [x 4] is True
 ```
 
-## <a name="operatorlt-pair-stlclr"></a><a name="op_lteq"></a>operator &lt; = (쌍) (STL/CLR)
+## <a name="operatorlt-pair-stlclr"></a><a name="op_lteq"></a> operator &lt; = (쌍) (STL/CLR)
 
 보다 작거나 같음 비교입니다.
 
@@ -689,7 +689,7 @@ int main()
 [x 4] <= [x 3] is False
 ```
 
-## <a name="operator-pair-stlclr"></a><a name="op_eq"></a>operator = = (페어링) (STL/CLR)
+## <a name="operator-pair-stlclr"></a><a name="op_eq"></a> operator = = (페어링) (STL/CLR)
 
 쌍 같음 비교입니다.
 
@@ -743,7 +743,7 @@ int main()
 [x 3] == [x 4] is False
 ```
 
-## <a name="operatorgt-pair-stlclr"></a><a name="op_gt"></a>연산자 &gt; (쌍) (STL/CLR)
+## <a name="operatorgt-pair-stlclr"></a><a name="op_gt"></a> 연산자 &gt; (쌍) (STL/CLR)
 
 페어링 보다 큼 비교입니다.
 
@@ -797,7 +797,7 @@ int main()
 [x 4] > [x 3] is True
 ```
 
-## <a name="operatorgt-pair-stlclr"></a><a name="op_gteq"></a>operator &gt; = (쌍) (STL/CLR)
+## <a name="operatorgt-pair-stlclr"></a><a name="op_gteq"></a> operator &gt; = (쌍) (STL/CLR)
 
 쌍 보다 크거나 같음 비교입니다.
 

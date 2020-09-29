@@ -1,29 +1,29 @@
 ---
-title: UCRT 사전순 함수 참조
+title: 'C # RT 사전순 함수 참조'
 ms.date: 01/31/2019
 f1_keywords:
 - vc.tables.runtime
 ms.assetid: c2169b0e-cd86-489a-a2fa-2ee15c03b5c2
-ms.openlocfilehash: 855af5b7518ba36418d58f1dc2ac5f0bb6e54208
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 73fd08ffa58aabfd9a40e0296b21d4a5baea8750
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62340341"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91499392"
 ---
-# <a name="ucrt-alphabetical-function-reference"></a>UCRT 사전순 함수 참조
+# <a name="ucrt-alphabetical-function-reference"></a>C # RT 사전순 함수 참조
 
-(UCRT, 종종 CRT) 유니버설 C 런타임 라이브러리 참조 설명서는 루틴에서 사전순으로 정렬 됩니다. 기능에 따라 CRT 루틴을 참조 하세요 [범주별으로 유니버설 C 런타임 루틴](../../c-runtime-library/run-time-routines-by-category.md)합니다.
+유니버설 C 런타임 (주로 CRT) 라이브러리 참조 문서는 루틴을 기준으로 사전순으로 정렬 됩니다. 기능을 기반으로 하는 CRT 루틴을 찾으려면 [범주별 유니버설 C 런타임 루틴](../../c-runtime-library/run-time-routines-by-category.md)을 참조 하세요.
 
 ## <a name="a"></a>A
 
-[abort](abort.md)
+[중단이](abort.md)
 
 [abs](abs-labs-llabs-abs64.md)
 
 [_abs64](abs-labs-llabs-abs64.md)
 
-[access](access-crt.md)
+[액세스](access-crt.md)
 
 [_access](access-waccess.md)
 
@@ -77,7 +77,7 @@ ms.locfileid: "62340341"
 
 [_amsg_exit](amsg-exit.md)
 
-[및](and.md)
+[and](and.md)
 
 [and_eq](and-eq.md)
 
@@ -97,7 +97,7 @@ ms.locfileid: "62340341"
 
 [asinl](asin-asinf-asinl.md)
 
-[assert](assert-macro-assert-wassert.md)
+[어설션하](assert-macro-assert-wassert.md)
 
 [_assert](assert-macro-assert-wassert.md)
 
@@ -159,7 +159,7 @@ ms.locfileid: "62340341"
 
 [_atoll_l](atoll-atoll-l-wtoll-wtoll-l.md)
 
-## <a name="b"></a>B
+## <a name="b"></a>b
 
 [_beginthread](beginthread-beginthreadex.md)
 
@@ -191,7 +191,7 @@ ms.locfileid: "62340341"
 
 [_cabs](cabs.md)
 
-[cabs](cabs-cabsf-cabsl.md)
+[cab](cabs-cabsf-cabsl.md)
 
 [cabsf](cabs-cabsf-cabsl.md)
 
@@ -571,7 +571,7 @@ ms.locfileid: "62340341"
 
 [_dup](dup-dup2.md)
 
-[dup](posix-dup-dup2.md)
+[중복](posix-dup-dup2.md)
 
 [_dup2](dup-dup2.md)
 
@@ -593,7 +593,7 @@ ms.locfileid: "62340341"
 
 [_endthreadex](endthread-endthreadex.md)
 
-[eof](posix-eof.md)
+[객체](posix-eof.md)
 
 [_eof](eof.md)
 
@@ -787,7 +787,7 @@ ms.locfileid: "62340341"
 
 [_finitef](finite-finitef.md)
 
-[floor](floor-floorf-floorl.md)
+[평면](floor-floorf-floorl.md)
 
 [floorf](floor-floorf-floorl.md)
 
@@ -1369,7 +1369,7 @@ ms.locfileid: "62340341"
 
 [_isspace_l](isspace-iswspace-isspace-l-iswspace-l.md)
 
-[isunordered](floating-point-ordering.md)
+[isunordered 지정 되지 않은](floating-point-ordering.md)
 
 [isupper](isupper-isupper-l-iswupper-iswupper-l.md)
 
@@ -1477,7 +1477,7 @@ ms.locfileid: "62340341"
 
 [ldexp](ldexp.md)
 
-[ldiv](ldiv-lldiv.md)
+[ldiv](./div.md)
 
 [_lfind](lfind.md)
 
@@ -1493,7 +1493,7 @@ ms.locfileid: "62340341"
 
 [llabs](abs-labs-llabs-abs64.md)
 
-[lldiv](ldiv-lldiv.md)
+[lldiv](./div.md)
 
 [llrint](lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)
 
@@ -1523,11 +1523,11 @@ ms.locfileid: "62340341"
 
 [_lock_file](lock-file.md)
 
-[locking](posix-locking.md)
+[중지](posix-locking.md)
 
 [_locking](locking.md)
 
-[log](log-logf-log10-log10f.md)
+[로깅할](log-logf-log10-log10f.md)
 
 [log10](log-logf-log10-log10f.md)
 
@@ -1967,7 +1967,7 @@ ms.locfileid: "62340341"
 
 ## <a name="n"></a>N
 
-[nan](nan-nanf-nanl.md)
+[n](nan-nanf-nanl.md)
 
 [nanf](nan-nanf-nanl.md)
 
@@ -2013,13 +2013,13 @@ ms.locfileid: "62340341"
 
 [_onexit_m](onexit-onexit-m.md)
 
-[open](open.md)
+[열기](open.md)
 
 [_open](open-wopen.md)
 
 [_open_osfhandle](open-osfhandle.md)
 
-[또는](or.md)
+[or](or.md)
 
 [or_eq](or-eq.md)
 
@@ -2113,7 +2113,7 @@ ms.locfileid: "62340341"
 
 [rand_s](rand-s.md)
 
-[read](posix-read.md)
+[읽음](posix-read.md)
 
 [_read](read.md)
 
@@ -2125,7 +2125,7 @@ ms.locfileid: "62340341"
 
 [_recalloc_dbg](recalloc-dbg.md)
 
-[remainder](remainder-remainderf-remainderl.md)
+[남은](remainder-remainderf-remainderl.md)
 
 [remainderf](remainder-remainderf-remainderl.md)
 
@@ -2143,7 +2143,7 @@ ms.locfileid: "62340341"
 
 [_resetstkoflw](resetstkoflw.md)
 
-[rewind](rewind.md)
+[되감습니다](rewind.md)
 
 [rint](rint-rintf-rintl.md)
 
@@ -2167,7 +2167,7 @@ ms.locfileid: "62340341"
 
 [_rotr64](rotl-rotl64-rotr-rotr64.md)
 
-[round](round-roundf-roundl.md)
+[둥근](round-roundf-roundl.md)
 
 [roundf](round-roundf-roundl.md)
 
@@ -2295,7 +2295,7 @@ ms.locfileid: "62340341"
 
 [signbit](signbit.md)
 
-[sin](sin-sinf-sinl.md)
+[사인](sin-sinf-sinl.md)
 
 [sinf](sin-sinf-sinl.md)
 
@@ -2671,7 +2671,7 @@ ms.locfileid: "62340341"
 
 [_swscanf_s_l](sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md)
 
-[system](system-wsystem.md)
+[시스템](system-wsystem.md)
 
 ## <a name="t"></a>T
 
@@ -2699,7 +2699,7 @@ ms.locfileid: "62340341"
 
 [_tempnam_dbg](tempnam-dbg-wtempnam-dbg.md)
 
-[terminate](terminate-crt.md)
+[끝나야](terminate-crt.md)
 
 [tgamma](tgamma-tgammaf-tgammal.md)
 
@@ -2791,7 +2791,7 @@ ms.locfileid: "62340341"
 
 [__uncaught_exception](uncaught-exception.md)
 
-[unexpected](unexpected-crt.md)
+[없는](unexpected-crt.md)
 
 [ungetc](ungetc-ungetwc.md)
 
@@ -3385,7 +3385,7 @@ ms.locfileid: "62340341"
 
 [_write](write.md)
 
-[write](posix-write.md)
+[기록](posix-write.md)
 
 [_wrmdir](rmdir-wrmdir.md)
 
@@ -3505,6 +3505,6 @@ ms.locfileid: "62340341"
 
 [yn](y0-y1-yn.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [C 런타임 라이브러리 참조](../../c-runtime-library/c-run-time-library-reference.md)<br/>

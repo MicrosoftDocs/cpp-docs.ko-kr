@@ -2,12 +2,12 @@
 title: ATL Active Server Page 구성 요소 추가
 ms.date: 05/09/2019
 ms.assetid: 7be2204c-6e58-4099-8892-001b848c8987
-ms.openlocfilehash: a84eeb20f047097e3dbb3c7f3bb5f5a12b069bcb
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 0180077de7ab96cb75736d34e112731e47b9589b
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80075293"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91499360"
 ---
 # <a name="adding-an-atl-active-server-page-component"></a>ATL Active Server Page 구성 요소 추가
 
@@ -19,7 +19,7 @@ Visual Studio 2019 이상에서는 ATL Active Server Pages 구성 요소 마법�
 
 ::: moniker range="<=vs-2017"
 
-ATL(액티브 템플릿 라이브러리) 개체를 프로젝트에 추가하려면 프로젝트가 COM ATL 애플리케이션 또는 ATL 지원이 포함된 MFC 애플리케이션으로 만든 것이어야 합니다. [ATL 프로젝트 마법사](../../atl/reference/atl-project-wizard.md)를 사용하여 ATL 애플리케이션을 만들 수 있으며 **클래스 대화 상자 추가** 대화 상자에서 [MFC에 ATL 지원 추가](../../ide/add-class-dialog-box.md)를 선택하거나 [MFC 애플리케이션에 ATL 개체를 추가](../../mfc/reference/adding-atl-support-to-your-mfc-project.md)하여 MFC 애플리케이션용 ATL 지원을 구현할 수 있습니다.
+ATL(액티브 템플릿 라이브러리) 개체를 프로젝트에 추가하려면 프로젝트가 COM ATL 애플리케이션 또는 ATL 지원이 포함된 MFC 애플리케이션으로 만든 것이어야 합니다. [ATL 프로젝트 마법사](../../atl/reference/atl-project-wizard.md)를 사용하여 ATL 애플리케이션을 만들 수 있으며 [클래스 대화 상자 추가](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) 대화 상자에서 **MFC에 ATL 지원 추가**를 선택하거나 [MFC 애플리케이션에 ATL 개체를 추가](../../mfc/reference/adding-atl-support-to-your-mfc-project.md)하여 MFC 애플리케이션용 ATL 지원을 구현할 수 있습니다.
 
 Active Server Pages 구성 요소는 다음과 같은 고급 웹 개발 기능을 제공하는 인터넷 정보 서비스 아키텍처의 일부입니다.
 
@@ -35,7 +35,7 @@ Active Server Pages 구성 요소는 다음과 같은 고급 웹 개발 기능�
 
 1. 바로 가기 메뉴에서 **추가**를 클릭한 다음, **클래스 추가**를 클릭합니다.
 
-1. [클래스 추가](../../ide/add-class-dialog-box.md) 대화 상자의 **템플릿** 창에서 **Active Server Page 구성 요소**를 클릭한 다음, **열기**를 클릭하여 [ATL Active Server Page 구성 요소 마법사](../../atl/reference/atl-active-server-page-component-wizard.md)를 표시합니다.
+1. [클래스 추가](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) 대화 상자의 **템플릿** 창에서 **Active Server Page 구성 요소**를 클릭한 다음, **열기**를 클릭하여 [ATL Active Server Page 구성 요소 마법사](../../atl/reference/atl-active-server-page-component-wizard.md)를 표시합니다.
 
 ::: moniker-end
 
@@ -43,7 +43,7 @@ Active Server Pages 구성 요소는 다음과 같은 고급 웹 개발 기능�
 
 [클래스 추가](../../ide/adding-a-class-visual-cpp.md)<br/>
 [ATL 프로젝트에 새 인터페이스 추가](../../atl/reference/adding-a-new-interface-in-an-atl-project.md)<br/>
-[개체에 연결 지점 추가](../../atl/adding-connection-points-to-an-object.md)<br/>
+[개체에 연결 요소 추가](../../atl/adding-connection-points-to-an-object.md)<br/>
 [메서드 추가](../../ide/adding-a-method-visual-cpp.md)<br/>
 [MFC 클래스](../../mfc/reference/adding-an-mfc-class.md)<br/>
 [일반 C++ 클래스 추가](../../ide/adding-a-generic-cpp-class.md)

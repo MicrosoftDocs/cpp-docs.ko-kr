@@ -5,16 +5,16 @@ ms.topic: reference
 helpviewer_keywords:
 - swap function
 ms.assetid: 7dd91b5c-f0de-4634-a2e2-642626706e27
-ms.openlocfilehash: 9e6cde103eefb6e14fdf2a3fc7e3299070afbc25
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: ed0e4ab7bce52d4dee54e7f9149edae535445d65
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79545944"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91498574"
 ---
 # <a name="swap-function-auto_handle"></a>swap 함수(auto_handle)
 
-개체를 한 `auto_handle`에서 다른 개체와 교환 합니다.
+개체를 서로 교환 `auto_handle` 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -63,11 +63,11 @@ s1 = 'string two', s2 = 'string one'
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더 파일** \<msclr \ auto_handle >
+**헤더 파일** \<msclr\auto_handle.h>
 
 Msclr **네임 스페이스**
 
 ## <a name="see-also"></a>참고 항목
 
 [auto_handle](../dotnet/auto-handle.md)<br/>
-[auto_handle::swap](../dotnet/auto-handle-swap.md)
+[auto_handle::swap](./auto-handle-class.md#swap)

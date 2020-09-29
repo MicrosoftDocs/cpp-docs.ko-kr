@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3739
 ms.assetid: acffe894-08b8-4bf2-9249-9501e6e2bad3
-ms.openlocfilehash: 48d0fef86908f3ba5a547417d0625febc5226454
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 7235d86ed00663b81aaddb87fdeae957c0f73053
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74752706"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91500426"
 ---
 # <a name="compiler-error-c3739"></a>컴파일러 오류 C3739
 
 ' class ': event_receiver의 ' layout_dependent ' 매개 변수가 true 인 경우에만 구문이 지원 됩니다.
 
-전체 이벤트 인터페이스를 후크 하려고 했지만 [event_receiver](../../windows/event-receiver.md) 특성이 true가 `layout_dependent`. 단일 이벤트를 한 번에 후크 해야 합니다.
+전체 이벤트 인터페이스를 후크 하려고 했지만 `layout_dependent` [event_receiver](../../windows/attributes/event-receiver.md) 특성이 true가 아닙니다. 단일 이벤트를 한 번에 후크 해야 합니다.
 
 다음 샘플에서는 C3739를 생성 합니다.
 

@@ -5,16 +5,16 @@ helpviewer_keywords:
 - converting from OpenMP to the Concurrency Runtime, reduction variables
 - reduction variables, converting from OpenMP to the Concurrency Runtime
 ms.assetid: 96623f36-5e57-4d3f-8c13-669e6cd535b1
-ms.openlocfilehash: 15ec81fb4fafd7850162a1feab28e72d469aff91
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 06418bc1a331a5c77653087434a5cc621f92e7d7
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87206005"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91498557"
 ---
 # <a name="how-to-convert-an-openmp-loop-that-uses-a-reduction-variable-to-use-the-concurrency-runtime"></a>방법: 동시성 런타임을 사용하기 위해 환산 변수를 사용하는 OpenMP 루프 변환
 
-이 예에서는 [reduction](../../parallel/openmp/reference/reduction.md) 절을 사용 하 여 동시성 런타임를 사용 하는 OpenMP [parallel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[for](../../parallel/openmp/reference/for-openmp.md) 루프를 변환 하는 방법을 보여 줍니다.
+이 예에서는 [reduction](../openmp/reference/openmp-clauses.md#reduction) 절을 사용 하 여 동시성 런타임를 사용 하는 OpenMP [parallel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[for](../openmp/reference/openmp-directives.md#for-openmp) 루프를 변환 하는 방법을 보여 줍니다.
 
 OpenMP `reduction` 절을 사용 하면 병렬 영역 끝에 감소 작업을 적용 하는 스레드 전용 변수를 하나 이상 지정할 수 있습니다. OpenMP는 축소 연산자 집합을 기본값으로 설정 합니다. 각 감소 변수는 스칼라 여야 합니다 (예: **`int`** , **`long`** 및 **`float`** ). OpenMP는 병렬 지역에서 감소 변수가 사용 되는 방법에 대 한 몇 가지 제한 사항도 정의 합니다.
 

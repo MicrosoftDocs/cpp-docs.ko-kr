@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3463
 ms.assetid: 153efcc0-085c-4615-84ea-d22942618bdf
-ms.openlocfilehash: e4aa8405d9baac61b8d3addead6ac19bbf6fd3b0
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 29b30f5d518b6b6df768693666ea1af1c515c540
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756593"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91500470"
 ---
 # <a name="compiler-error-c3463"></a>컴파일러 오류 C3463
 
 'type': 형식을 'implements' 특성에 사용할 수 없습니다.
 
-[implements](../../windows/implements-cpp.md) 특성에 잘못된 형식이 전달되었습니다. 예를 들어 `implements`에 인터페이스를 전달할 수 있지만 포인터를 인터페이스에 전달할 수는 없습니다.
+[implements](../../windows/attributes/implements-cpp.md) 특성에 잘못된 형식이 전달되었습니다. 예를 들어 `implements`에 인터페이스를 전달할 수 있지만 포인터를 인터페이스에 전달할 수는 없습니다.
 
 ## <a name="example"></a>예제
 

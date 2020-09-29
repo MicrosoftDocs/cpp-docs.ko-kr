@@ -1,4 +1,4 @@
-﻿---
+---
 title: /analyze(코드 분석)
 description: Microsoft c + + 컴파일러/analyze 옵션 구문 및 사용법입니다.
 ms.date: 07/27/2020
@@ -12,18 +12,18 @@ helpviewer_keywords:
 - -analyze compiler option [C++]
 - analyze compiler option [C++]
 ms.assetid: 81da536a-e030-4bd4-be18-383927597d08
-ms.openlocfilehash: 643d8428e3760926832429db5a4425e078ed776b
-ms.sourcegitcommit: 6e55aeb538b1c39af754f82d6f7738a18f5aa031
+ms.openlocfilehash: e970872e89132aed52190b8688f2cdaccab5ea6f
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87389794"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91500087"
 ---
-# <a name="analyze-code-analysis"></a>`/analyze`(코드 분석)
+# <a name="analyze-code-analysis"></a>`/analyze` (코드 분석)
 
 코드 분석 및 제어 옵션을 사용합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ::: moniker range=">=vs-2017"
 
@@ -84,14 +84,14 @@ ms.locfileid: "87389794"
 
 ::: moniker range="<=vs-2017"
 
-LocalEspC.dll는 C261XX 경고 범위에서 동시성 관련 코드 분석 검사를 구현 하는 플러그 인입니다. 예: [26100](/cpp/code-quality/c26100), [C26101](/cpp/code-quality/c26101), ..., [C26167](/cpp/code-quality/c26167).
+LocalEspC.dll는 C261XX 경고 범위에서 동시성 관련 코드 분석 검사를 구현 하는 플러그 인입니다. 예: [26100](../../code-quality/c26100.md), [C26101](../../code-quality/c26101.md), ...,  [C26167](../../code-quality/c26167.md).
 
-LocalEspC.dll를 실행 하려면 다음 컴파일러 옵션을 사용 합니다.**`/analyze:plugin LocalEspC.dll`**
+LocalEspC.dll를 실행 하려면 다음 컴파일러 옵션을 사용 합니다. **`/analyze:plugin LocalEspC.dll`**
 
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 
-ConcurrencyCheck.dll는 C261XX 경고 범위에서 동시성 관련 코드 분석 검사를 구현 합니다. 예: [26100](/cpp/code-quality/c26100), [C26101](/cpp/code-quality/c26101), ..., [C26167](/cpp/code-quality/c26167).
+ConcurrencyCheck.dll는 C261XX 경고 범위에서 동시성 관련 코드 분석 검사를 구현 합니다. 예: [26100](../../code-quality/c26100.md), [C26101](../../code-quality/c26101.md), ...,  [C26167](../../code-quality/c26167.md).
 
 ConcurrencyCheck.dll를 실행 하려면 먼저 개발자 명령 프롬프트에서 다음 명령을 실행 합니다.
 
@@ -136,14 +136,14 @@ Visual Studio와 함께 제공 되는 규칙 집합은에 있습니다 *`%VSINST
 ::: moniker-end
 
 **`/analyze:stacksize`***number*\
-이 옵션에 사용 되는 *숫자* 매개 변수는 경고 [C6262](/cpp/code-quality/c6262) 생성 되는 스택 프레임의 크기 (바이트)를 지정 합니다. *Number* 앞의 공백은 선택 사항입니다. 이 매개 변수를 지정 하지 않으면 기본적으로 스택 프레임 크기가 16KB 됩니다.
+이 옵션에 사용 되는 *숫자* 매개 변수는 경고 [C6262](../../code-quality/c6262.md) 생성 되는 스택 프레임의 크기 (바이트)를 지정 합니다. *Number* 앞의 공백은 선택 사항입니다. 이 매개 변수를 지정 하지 않으면 기본적으로 스택 프레임 크기가 16KB 됩니다.
 
 **`/analyze:WX-`**\
 코드 분석 경고는를 사용 하 여 컴파일할 때 오류로 처리 되지 않습니다 **`/WX`** . 자세한 내용은 [ `/WX` (경고 수준)](compiler-option-warning-level.md)를 참조 하세요.
 
 ## <a name="remarks"></a>설명
 
-자세한 내용은 c/c [+ + 용 코드 분석 개요](/cpp/code-quality/code-analysis-for-c-cpp-overview) 및 [c/c + + 경고에 대 한 코드 분석](/cpp/code-quality/code-analysis-for-c-cpp-warnings)을 참조 하세요.
+자세한 내용은 c/c [+ + 용 코드 분석 개요](../../code-quality/code-analysis-for-c-cpp-overview.md) 및 [c/c + + 경고에 대 한 코드 분석](../../code-quality/code-analysis-for-c-cpp-warnings.md)을 참조 하세요.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 

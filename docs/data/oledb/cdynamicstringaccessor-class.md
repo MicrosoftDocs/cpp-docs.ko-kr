@@ -12,12 +12,12 @@ helpviewer_keywords:
 - GetString method
 - SetString method
 ms.assetid: 138dc4de-c7c3-478c-863e-431e48249027
-ms.openlocfilehash: 927ea5ceef9ac74ae3cc1e06a47969b537209002
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 891c80a7c21fd046fba393b494ed6d84f731db6f
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838167"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91498669"
 ---
 # <a name="cdynamicstringaccessor-class"></a>CDynamicStringAccessor 클래스
 
@@ -51,7 +51,7 @@ class CDynamicStringAccessorT : public CDynamicAccessor
 
 `CDynamicStringAccessor`메서드를 사용 하 여 열 정보를 가져올 수 있습니다. 이 열 정보를 사용 하 여 런타임에 동적으로 접근자를 만들 수 있습니다.
 
-열 정보는이 클래스에서 만들고 관리 하는 버퍼에 저장 됩니다. [GetString](../../data/oledb/cdynamicstringaccessor-getstring.md)를 사용 하 여 버퍼에서 데이터를 가져오거나 [setstring](../../data/oledb/cdynamicstringaccessor-setstring.md)을 사용 하 여 버퍼에 저장 합니다.
+열 정보는이 클래스에서 만들고 관리 하는 버퍼에 저장 됩니다. [GetString](#getstring)를 사용 하 여 버퍼에서 데이터를 가져오거나 [setstring](#setstring)을 사용 하 여 버퍼에 저장 합니다.
 
 동적 접근자 클래스 사용에 대 한 설명 및 예제는 [동적 접근자 사용](../../data/oledb/using-dynamic-accessors.md)을 참조 하세요.
 

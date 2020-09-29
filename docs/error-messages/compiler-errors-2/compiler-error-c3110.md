@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3110
 ms.assetid: 821dc71f-896e-4b2d-af0e-aa9932934b7b
-ms.openlocfilehash: 21f1308c8dff0409d927fed5d5817f63015c709f
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 9eb3e54b8bd9b296ad9cd7e0b6ea2943c74d1dff
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74746294"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91498488"
 ---
 # <a name="compiler-error-c3110"></a>컴파일러 오류 C3110
 
@@ -19,15 +19,15 @@ ms.locfileid: "74746294"
 
 인터페이스 특성 (예:)이 앞에 오는 인터페이스입니다.
 
-- [custom](../../windows/custom-cpp.md)
+- [재구성](../../windows/attributes/custom-cpp.md)
 
-- [dispinterface](../../windows/dispinterface.md)
+- [dispinterface](../../windows/attributes/dispinterface.md)
 
-- [dual](../../windows/dual.md)
+- [dual](../../windows/attributes/dual.md)
 
-- [object](../../windows/object-cpp.md)
+- [object](../../windows/attributes/object-cpp.md)
 
-를 오버 로드할 수 없습니다. 예를 들면 다음과 같습니다.:
+를 오버 로드할 수 없습니다. 다음은 그 예입니다.
 
 ```cpp
 // C3110.cpp

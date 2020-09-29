@@ -1,4 +1,4 @@
-﻿---
+---
 title: /Fx(삽입된 코드 병합)
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +12,12 @@ helpviewer_keywords:
 - merging injected code
 - /Fx compiler option [C++]
 ms.assetid: 14f0e301-3bab-45a3-bbdf-e7ce66f20560
-ms.openlocfilehash: f1a266eee4edc524fbbe49bdef31a8235f62bd3c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b928ca63171f0f6d28859d049a1ed5008b908686
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62292304"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91500098"
 ---
 # <a name="fx-merge-injected-code"></a>/Fx(삽입된 코드 병합)
 
@@ -31,7 +31,7 @@ ms.locfileid: "62292304"
 
 ## <a name="remarks"></a>설명
 
-병합된 소스 파일과 원본 소스 파일을 구분하기 위해 **/Fx**는 파일 이름과 확장명 사이에 .mrg 확장명을 추가합니다. 예를 들어 특성 사용 코드를 포함하며 **/Fx**를 사용하여 빌드한 MyCode.cpp 파일은 MyCode.mrg.cpp 파일을 만들고 다음 코드가 포함됩니다.
+병합된 소스 파일과 원본 소스 파일을 구분하기 위해 **/Fx** 에서 파일 이름과 확장명 사이에 .mrg 확장명을 추가합니다. 예를 들어 특성 사용 코드를 포함하며 **/Fx** 을 사용하여 빌드한 MyCode.cpp 파일은 다음 코드를 포함하는 MyCode.mrg.cpp라는 파일을 만듭니다.
 
 ```
 //+++ Start Injected Code
@@ -52,13 +52,13 @@ ms.locfileid: "62292304"
 //--- End Injected Code
 ```
 
-[no_injected_text](../../windows/no-injected-text.md) 특성이 .mrg 파일에 포함되므로 텍스트를 다시 삽입하지 않고 .mrg 파일을 컴파일할 수 있습니다.
+[no_injected_text](../../windows/attributes/no-injected-text.md) 특성이 .mrg 파일에 포함되므로 텍스트를 다시 삽입하지 않고 .mrg 파일을 컴파일할 수 있습니다.
 
 .mrg 소스 파일은 컴파일러에 의해 삽입된 소스 코드를 나타내기 위한 것입니다. .mrg 파일이 원본 소스 파일과 동일하게 컴파일되거나 실행되지 않을 수도 있습니다.
 
 .mrg 파일에서는 매크로가 확장되지 않습니다.
 
-프로그램이 삽입된 코드를 사용하는 헤더 파일을 포함하는 경우 **/Fx**는 해당 헤더에 대한 .mrg.h 파일을 생성합니다. **/Fx**는 삽입된 코드를 사용하지 않는 include 파일을 병합하지 않습니다.
+프로그램이 삽입된 코드를 사용하는 헤더 파일을 포함하는 경우 **/Fx** 에서 해당 헤더에 대한 .mrg.h 파일을 생성합니다. **/Fx** 은 삽입된 코드를 사용하지 않는 include 파일을 병합하지 않습니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
@@ -74,8 +74,8 @@ ms.locfileid: "62292304"
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ExpandAttributedSource%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[출력 파일(/F) 옵션](output-file-f-options.md)<br/>
+[출력 파일 (/F) 옵션](output-file-f-options.md)<br/>
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
 [MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

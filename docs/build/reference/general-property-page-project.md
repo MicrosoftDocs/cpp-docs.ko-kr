@@ -25,18 +25,18 @@ helpviewer_keywords:
 - Clean Build option
 - output files, setting directory
 - Unicode, creating C++ build configuration
-ms.openlocfilehash: eb172e7bd76816458a0efff7b053d136f52076ab
-ms.sourcegitcommit: a673f6a54cc97e3d4cd032b10aa8dce7f0539d39
+ms.openlocfilehash: bb301f63bfd1e6839d7893cdc03d61e021409666
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78166760"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91500070"
 ---
 # <a name="general-property-page-project"></a>일반 속성 페이지(프로젝트)
 
 ::: moniker range=">=vs-2019"
 
-이 항목은 Windows 용 Visual Studio 프로젝트에 적용 됩니다. Linux 프로젝트의 경우 [linux C++ 속성 페이지 참조](../../linux/prop-pages-linux.md)를 참조 하세요. Cmake 프로젝트의 경우 [Visual Studio의 cmake 프로젝트](../cmake-projects-in-visual-studio.md)를 참조 하세요. Android 프로젝트의 경우 [일반 프로젝트 속성 ( C++android)](/cpp/cross-platform/general-android-prop-page)을 참조 하세요. Android 메이크파일 프로젝트의 경우 [일반 프로젝트 속성 ( C++ android 메이크파일)](/cpp/cross-platform/general-makefile-android-prop-page) 을 참조 하세요.
+이 항목은 Windows 용 Visual Studio 프로젝트에 적용 됩니다. Linux 프로젝트의 경우 [Linux c + + 속성 페이지 참조](../../linux/prop-pages-linux.md)를 참조 하세요. Cmake 프로젝트의 경우 [Visual Studio의 cmake 프로젝트](../cmake-projects-in-visual-studio.md)를 참조 하세요. Android 프로젝트의 경우 [일반 프로젝트 속성 (Android c + +)](../../cross-platform/general-android-prop-page.md)을 참조 하세요. Android 메이크파일 프로젝트의 경우 [일반 프로젝트 속성 (Android c + + 메이크파일)](../../cross-platform/general-makefile-android-prop-page.md) 을 참조 하세요.
 
 솔루션 탐색기에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 하면 왼쪽 창의 **구성 속성** 노드 아래에 있는 **일반** 속성 페이지에 다음 속성이 표시 됩니다.
 
@@ -92,9 +92,9 @@ ms.locfileid: "78166760"
 
 - **플랫폼 도구 집합**
 
-   프로젝트가 다른 버전의 Visual C++ 라이브러리 및 컴파일러를 대상으로 할 수 있도록 허용합니다. Visual Studio C++ 프로젝트는 visual studio에 의해 설치 된 기본 도구 집합을 대상으로 하거나, Windows XP에서 실행 될 수 있는 실행 파일을 만드는 도구 집합을 포함 하 여 여러 이전 버전의 visual studio에서 설치한 도구 집합 중 하나를 대상으로 할 수 플랫폼 도구 집합을 변경하는 방법에 대한 자세한 내용은 [방법: 대상 프레임워크 및 플랫폼 도구 집합 수정](../how-to-modify-the-target-framework-and-platform-toolset.md)을 참조하세요.
+   프로젝트가 다른 버전의 Visual C++ 라이브러리 및 컴파일러를 대상으로 할 수 있도록 허용합니다. Visual Studio c + + 프로젝트는 Visual Studio에 의해 설치 된 기본 도구 집합을 대상으로 하거나, Windows XP에서 실행 될 수 있는 실행 파일을 만드는 도구 집합을 포함 하 여 여러 이전 버전의 Visual Studio에서 설치 된 도구 집합 중 하나를 대상으로 플랫폼 도구 집합을 변경하는 방법에 대한 자세한 내용은 [방법: 대상 프레임워크 및 플랫폼 도구 집합 수정](../how-to-modify-the-target-framework-and-platform-toolset.md)을 참조하세요.
 
-- **C++언어 표준**
+- **C++ 언어 표준**
 
    사용할 언어 표준을 지정 합니다. 기본값은/std: c + + 14입니다. C + + 17 기능을 사용 하려면/sd: c + + 17을 지정 하 고 c + + 20 또는 기타 실험적 기능을 사용 하려면/c + +를 지정 합니다. 자세한 내용은 [/std (언어 표준 버전 지정)](std-specify-language-standard-version.md) 를 참조 하세요.
 
@@ -118,7 +118,7 @@ Visual Studio 2015 및 Visual Studio 2017에서 **솔루션 탐색기**의 프�
 
    프로젝트를 실행할 수 있는 가장 낮은 플랫폼 버전을 지정합니다. 이 속성은 프로젝트 형식에서 지 원하는 경우에만 표시 됩니다. 앱이 최신 Windows SDK 버전의 기능을 활용할 수 있지만 해당 기능이 없는 이전 버전에서도 일부 기능은 손실되지만 실행될 수 있는 경우 이러한 두 속성의 값이 다를 수 있습니다. 이 경우 코드에서 런타임에 실행 중인 플랫폼의 버전을 확인해야 하며, 이전 플랫폼 버전에서 사용할 수 없는 기능은 사용하지 않도록 해야 합니다.
 
-   프로젝트 C++ 시스템은이 옵션을 적용 하지 않습니다. C# 및 JavaScript와 같은 다른 언어와의 일관성을 위해 및 프로젝트 사용자를 위한 지침으로 포함되었습니다. Visual C++는 최소 버전에서 사용할 수 없는 기능을 사용하는 경우 오류를 생성하지 않습니다.
+   C + + 프로젝트 시스템은이 옵션을 적용 하지 않습니다. C# 및 JavaScript와 같은 다른 언어와의 일관성을 위해 및 프로젝트 사용자를 위한 지침으로 포함되었습니다. Visual C++는 최소 버전에서 사용할 수 없는 기능을 사용하는 경우 오류를 생성하지 않습니다.
 
 - **Windows SDK 버전 (Visual Studio 2017)**
 
@@ -162,7 +162,7 @@ Visual Studio 2015 및 Visual Studio 2017에서 **솔루션 탐색기**의 프�
 
 - **플랫폼 도구 집합**
 
-   프로젝트가 다른 버전의 Visual C++ 라이브러리 및 컴파일러를 대상으로 할 수 있도록 허용합니다. Visual Studio C++ 프로젝트는 visual studio에 의해 설치 된 기본 도구 집합을 대상으로 하거나, Windows XP에서 실행 될 수 있는 실행 파일을 만드는 도구 집합을 포함 하 여 여러 이전 버전의 visual studio에서 설치한 도구 집합 중 하나를 대상으로 할 수 플랫폼 도구 집합을 변경하는 방법에 대한 자세한 내용은 [방법: 대상 프레임워크 및 플랫폼 도구 집합 수정](../how-to-modify-the-target-framework-and-platform-toolset.md)을 참조하세요.
+   프로젝트가 다른 버전의 Visual C++ 라이브러리 및 컴파일러를 대상으로 할 수 있도록 허용합니다. Visual Studio c + + 프로젝트는 Visual Studio에 의해 설치 된 기본 도구 집합을 대상으로 하거나, Windows XP에서 실행 될 수 있는 실행 파일을 만드는 도구 집합을 포함 하 여 여러 이전 버전의 Visual Studio에서 설치 된 도구 집합 중 하나를 대상으로 플랫폼 도구 집합을 변경하는 방법에 대한 자세한 내용은 [방법: 대상 프레임워크 및 플랫폼 도구 집합 수정](../how-to-modify-the-target-framework-and-platform-toolset.md)을 참조하세요.
 
 - **관리 증분 빌드 사용**
 
@@ -230,6 +230,6 @@ Visual Studio 2015 및 Visual Studio 2017에서 **솔루션 탐색기**의 프�
 
 ::: moniker-end
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[C++프로젝트 속성 페이지 참조](property-pages-visual-cpp.md)
+[C++ 프로젝트 속성 페이지 참조](property-pages-visual-cpp.md)

@@ -63,18 +63,18 @@ helpviewer_keywords:
 - unary_delegate_noreturn function [STL/CLR]
 - unary_negate function [STL/CLR]
 ms.assetid: 88738b8c-5d37-4375-970e-a4442bf5efde
-ms.openlocfilehash: 5cfec19ad8a25d3b44647e490b2c328a5639e675
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 00d719df2fdba892d1d9362da2b2172bac9ca16f
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90743310"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91499704"
 ---
 # <a name="functional-stlclr"></a>functional(STL/CLR)
 
 STL/CLR 헤더를 포함 `<cliext/functional>` 하 여 많은 템플릿 클래스와 관련 된 템플릿 대리자 및 함수를 정의 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 #include <functional>
@@ -88,14 +88,14 @@ STL/CLR 헤더를 포함 `<cliext/functional>` 하 여 많은 템플릿 클래�
 
 ## <a name="declarations"></a>선언
 
-|대리자|Description|
+|대리자|설명|
 |--------------|-----------------|
 |[binary_delegate(STL/CLR)](#binary_delegate)|두 인수 대리자입니다.|
 |[binary_delegate_noreturn(STL/CLR)](#binary_delegate_noreturn)|을 반환 하는 두 인수 대리자 **`void`** 입니다.|
 |[unary_delegate(STL/CLR)](#unary_delegate)|단일 인수 대리자입니다.|
 |[unary_delegate_noreturn(STL/CLR)](#unary_delegate_noreturn)|을 반환 하는 1 인수 대리자 **`void`** 입니다.|
 
-|클래스|Description|
+|클래스|설명|
 |-----------|-----------------|
 |[binary_negate(STL/CLR)](#binary_negate)|두 인수 함수를 부정 하는 함수입니다.|
 |[binder1st(STL/CLR)](#binder1st)|첫 번째 인수를 두 인수 함수에 바인딩하는 함수입니다.|
@@ -117,7 +117,7 @@ STL/CLR 헤더를 포함 `<cliext/functional>` 하 여 많은 템플릿 클래�
 |[plus(STL/CLR)](#plus)|함수를 추가 합니다.|
 |[unary_negate(STL/CLR)](#unary_negate)|단일 인수 함수를 부정 하는 함수입니다.|
 
-|기능|Description|
+|함수|설명|
 |--------------|-----------------|
 |[bind1st(STL/CLR)](#bind1st)|인수 및 함수에 대 한 binder1st를 생성 합니다.|
 |[bind2nd(STL/CLR)](#bind2nd)|인수 및 함수에 대 한 binder2nd를 생성 합니다.|
@@ -315,11 +315,11 @@ public:
 |second_argument_type|함수 두 번째 인수의 형식입니다.|
 |stored_function_type|함수 유형입니다.|
 
-|멤버|Description|
+|멤버|설명|
 |------------|-----------------|
 |binary_negate|함수를 생성 합니다.|
 
-|연산자|Description|
+|연산자|설명|
 |--------------|-----------------|
 |operator()|원하는 함수를 계산 합니다.|
 |연산자 delegate_type ^ ()|함수를 대리자로 캐스팅 합니다.|
@@ -390,7 +390,7 @@ int main()
 
 `binder1st`인수 및 함수에 대 한를 생성 합니다.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>구문
 
 ```cpp
 template<typename Fun,
@@ -412,12 +412,12 @@ template<typename Fun,
 *함수*<br/>
 래핑할 함수입니다.
 
-*left*<br/>
+*비어*<br/>
 래핑할 첫 번째 인수입니다.
 
 ### <a name="remarks"></a>설명
 
-템플릿 함수는 [binder1st (STL/CLR)](../dotnet/binder1st-stl-clr.md)를 반환 합니다 `<Fun>(functor, left)` . 두 인수 함수를 래핑하는 편리한 방법으로 사용 하 고 두 번째 인수를 사용 하 여 호출 하는 단일 인수 함수에서 첫 번째 인수를 사용 합니다.
+템플릿 함수는 [binder1st (STL/CLR)](#binder1st)를 반환 합니다 `<Fun>(functor, left)` . 두 인수 함수를 래핑하는 편리한 방법으로 사용 하 고 두 번째 인수를 사용 하 여 호출 하는 단일 인수 함수에서 첫 번째 인수를 사용 합니다.
 
 ### <a name="example"></a>예제
 
@@ -471,7 +471,7 @@ int main()
 
 `binder2nd`인수 및 함수에 대 한를 생성 합니다.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>구문
 
 ```cpp
 template<typename Fun,
@@ -498,7 +498,7 @@ template<typename Fun,
 
 ### <a name="remarks"></a>설명
 
-템플릿 함수는 [binder2nd (STL/CLR)](../dotnet/binder2nd-stl-clr.md)를 반환 합니다 `<Fun>(functor, right)` . 이 함수를 사용 하 여 두 인수 함수 및 두 번째 인수를 첫 번째 인수를 사용 하 여 호출 하는 단일 인수 함수에서 래핑하는 편리한 방법으로 사용할 수 있습니다.
+템플릿 함수는 [binder2nd (STL/CLR)](#binder2nd)를 반환 합니다 `<Fun>(functor, right)` . 이 함수를 사용 하 여 두 인수 함수 및 두 번째 인수를 첫 번째 인수를 사용 하 여 호출 하는 단일 인수 함수에서 래핑하는 편리한 방법으로 사용할 수 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -590,11 +590,11 @@ public:
 |second_argument_type|함수 두 번째 인수의 형식입니다.|
 |stored_function_type|함수 유형입니다.|
 
-|멤버|Description|
+|멤버|설명|
 |------------|-----------------|
 |binder1st|함수를 생성 합니다.|
 
-|연산자|Description|
+|연산자|설명|
 |--------------|-----------------|
 |operator()|원하는 함수를 계산 합니다.|
 |연산자 delegate_type ^ ()|함수를 대리자로 캐스팅 합니다.|
@@ -695,11 +695,11 @@ public:
 |second_argument_type|함수 두 번째 인수의 형식입니다.|
 |stored_function_type|함수 유형입니다.|
 
-|멤버|Description|
+|멤버|설명|
 |------------|-----------------|
 |binder2nd|함수를 생성 합니다.|
 
-|연산자|Description|
+|연산자|설명|
 |--------------|-----------------|
 |operator()|원하는 함수를 계산 합니다.|
 |연산자 delegate_type ^ ()|함수를 대리자로 캐스팅 합니다.|
@@ -799,11 +799,11 @@ public:
 |result_type|함수 결과의 형식입니다.|
 |second_argument_type|함수 두 번째 인수의 형식입니다.|
 
-|멤버|Description|
+|멤버|설명|
 |------------|-----------------|
 |divides|함수를 생성 합니다.|
 
-|연산자|Description|
+|연산자|설명|
 |--------------|-----------------|
 |operator()|원하는 함수를 계산 합니다.|
 |연산자 delegate_type ^ ()|함수를 대리자로 캐스팅 합니다.|
@@ -900,11 +900,11 @@ public:
 |result_type|함수 결과의 형식입니다.|
 |second_argument_type|함수 두 번째 인수의 형식입니다.|
 
-|멤버|Description|
+|멤버|설명|
 |------------|-----------------|
 |equal_to|함수를 생성 합니다.|
 
-|연산자|Description|
+|연산자|설명|
 |--------------|-----------------|
 |operator()|원하는 함수를 계산 합니다.|
 |연산자 delegate_type ^ ()|함수를 대리자로 캐스팅 합니다.|
@@ -1001,11 +1001,11 @@ public:
 |result_type|함수 결과의 형식입니다.|
 |second_argument_type|함수 두 번째 인수의 형식입니다.|
 
-|멤버|Description|
+|멤버|설명|
 |------------|-----------------|
 |greater|함수를 생성 합니다.|
 
-|연산자|Description|
+|연산자|설명|
 |--------------|-----------------|
 |operator()|원하는 함수를 계산 합니다.|
 |연산자 delegate_type ^|함수를 대리자로 캐스팅 합니다.|
@@ -1102,11 +1102,11 @@ public:
 |result_type|함수 결과의 형식입니다.|
 |second_argument_type|함수 두 번째 인수의 형식입니다.|
 
-|멤버|Description|
+|멤버|설명|
 |------------|-----------------|
 |greater_equal|함수를 생성 합니다.|
 
-|연산자|Description|
+|연산자|설명|
 |--------------|-----------------|
 |operator()|원하는 함수를 계산 합니다.|
 |연산자 delegate_type ^|함수를 대리자로 캐스팅 합니다.|
@@ -1203,11 +1203,11 @@ public:
 |result_type|함수 결과의 형식입니다.|
 |second_argument_type|함수 두 번째 인수의 형식입니다.|
 
-|멤버|Description|
+|멤버|설명|
 |------------|-----------------|
 |less|함수를 생성 합니다.|
 
-|연산자|Description|
+|연산자|설명|
 |--------------|-----------------|
 |operator()|원하는 함수를 계산 합니다.|
 |연산자 delegate_type ^|함수를 대리자로 캐스팅 합니다.|
@@ -1304,11 +1304,11 @@ public:
 |result_type|함수 결과의 형식입니다.|
 |second_argument_type|함수 두 번째 인수의 형식입니다.|
 
-|멤버|Description|
+|멤버|설명|
 |------------|-----------------|
 |less_equal|함수를 생성 합니다.|
 
-|연산자|Description|
+|연산자|설명|
 |--------------|-----------------|
 |operator()|원하는 함수를 계산 합니다.|
 |연산자 delegate_type ^|함수를 대리자로 캐스팅 합니다.|
@@ -1405,11 +1405,11 @@ public:
 |result_type|함수 결과의 형식입니다.|
 |second_argument_type|함수 두 번째 인수의 형식입니다.|
 
-|멤버|Description|
+|멤버|설명|
 |------------|-----------------|
 |logical_and|함수를 생성 합니다.|
 
-|연산자|Description|
+|연산자|설명|
 |--------------|-----------------|
 |operator()|원하는 함수를 계산 합니다.|
 |연산자 delegate_type ^|함수를 대리자로 캐스팅 합니다.|
@@ -1503,11 +1503,11 @@ public:
 |delegate_type|제네릭 대리자의 형식입니다.|
 |result_type|함수 결과의 형식입니다.|
 
-|멤버|Description|
+|멤버|설명|
 |------------|-----------------|
 |logical_not|함수를 생성 합니다.|
 
-|연산자|Description|
+|연산자|설명|
 |--------------|-----------------|
 |operator()|원하는 함수를 계산 합니다.|
 |연산자 delegate_type ^|함수를 대리자로 캐스팅 합니다.|
@@ -1596,11 +1596,11 @@ public:
 |result_type|함수 결과의 형식입니다.|
 |second_argument_type|함수 두 번째 인수의 형식입니다.|
 
-|멤버|Description|
+|멤버|설명|
 |------------|-----------------|
 |logical_or|함수를 생성 합니다.|
 
-|연산자|Description|
+|연산자|설명|
 |--------------|-----------------|
 |operator()|원하는 함수를 계산 합니다.|
 |연산자 delegate_type ^|함수를 대리자로 캐스팅 합니다.|
@@ -1697,11 +1697,11 @@ public:
 |result_type|함수 결과의 형식입니다.|
 |second_argument_type|함수 두 번째 인수의 형식입니다.|
 
-|멤버|Description|
+|멤버|설명|
 |------------|-----------------|
 |minus|함수를 생성 합니다.|
 
-|연산자|Description|
+|연산자|설명|
 |--------------|-----------------|
 |operator()|원하는 함수를 계산 합니다.|
 |연산자 delegate_type ^|함수를 대리자로 캐스팅 합니다.|
@@ -1798,11 +1798,11 @@ public:
 |result_type|함수 결과의 형식입니다.|
 |second_argument_type|함수 두 번째 인수의 형식입니다.|
 
-|멤버|Description|
+|멤버|설명|
 |------------|-----------------|
 |T:System.Security.Cryptography.RSA|함수를 생성 합니다.|
 
-|연산자|Description|
+|연산자|설명|
 |--------------|-----------------|
 |operator()|원하는 함수를 계산 합니다.|
 |연산자 delegate_type ^|함수를 대리자로 캐스팅 합니다.|
@@ -1899,11 +1899,11 @@ public:
 |result_type|함수 결과의 형식입니다.|
 |second_argument_type|함수 두 번째 인수의 형식입니다.|
 
-|멤버|Description|
+|멤버|설명|
 |------------|-----------------|
 |multiplies|함수를 생성 합니다.|
 
-|연산자|Description|
+|연산자|설명|
 |--------------|-----------------|
 |operator()|원하는 함수를 계산 합니다.|
 |연산자 delegate_type ^|함수를 대리자로 캐스팅 합니다.|
@@ -1997,11 +1997,11 @@ public:
 |delegate_type|제네릭 대리자의 형식입니다.|
 |result_type|함수 결과의 형식입니다.|
 
-|멤버|Description|
+|멤버|설명|
 |------------|-----------------|
 |negate|함수를 생성 합니다.|
 
-|연산자|Description|
+|연산자|설명|
 |--------------|-----------------|
 |operator()|원하는 함수를 계산 합니다.|
 |연산자 delegate_type ^|함수를 대리자로 캐스팅 합니다.|
@@ -2090,11 +2090,11 @@ public:
 |result_type|함수 결과의 형식입니다.|
 |second_argument_type|함수 두 번째 인수의 형식입니다.|
 
-|멤버|Description|
+|멤버|설명|
 |------------|-----------------|
 |not_equal_to|함수를 생성 합니다.|
 
-|연산자|Description|
+|연산자|설명|
 |--------------|-----------------|
 |operator()|원하는 함수를 계산 합니다.|
 |연산자 delegate_type ^|함수를 대리자로 캐스팅 합니다.|
@@ -2154,7 +2154,7 @@ int main()
 
 `unary_negate`함수에 대해를 생성 합니다.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>구문
 
 ```cpp
 template<typename Fun>
@@ -2173,7 +2173,7 @@ template<typename Fun>
 
 ### <a name="remarks"></a>설명
 
-템플릿 함수는 [unary_negate (STL/CLR)](../dotnet/unary-negate-stl-clr.md)를 반환 합니다 `<Fun>(functor)` . 논리 NOT을 전달 하는 함수에서 단일 인수 함수를 래핑하는 편리한 방법으로 사용 합니다.
+템플릿 함수는 [unary_negate (STL/CLR)](#unary_negate)를 반환 합니다 `<Fun>(functor)` . 논리 NOT을 전달 하는 함수에서 단일 인수 함수를 래핑하는 편리한 방법으로 사용 합니다.
 
 ### <a name="example"></a>예제
 
@@ -2226,7 +2226,7 @@ int main()
 
 `binary_negate`함수에 대해를 생성 합니다.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>구문
 
 ```cpp
 template<typename Fun>
@@ -2245,7 +2245,7 @@ template<typename Fun>
 
 ### <a name="remarks"></a>설명
 
-템플릿 함수는 [binary_negate (STL/CLR)](../dotnet/binary-negate-stl-clr.md)를 반환 합니다 `<Fun>(functor)` . 논리적 NOT을 전달 하는 함수에서 두 인수 함수를 래핑하는 편리한 방법으로 사용 합니다.
+템플릿 함수는 [binary_negate (STL/CLR)](#negate)를 반환 합니다 `<Fun>(functor)` . 논리적 NOT을 전달 하는 함수에서 두 인수 함수를 래핑하는 편리한 방법으로 사용 합니다.
 
 ### <a name="example"></a>예제
 
@@ -2344,11 +2344,11 @@ public:
 |result_type|함수 결과의 형식입니다.|
 |second_argument_type|함수 두 번째 인수의 형식입니다.|
 
-|멤버|Description|
+|멤버|설명|
 |------------|-----------------|
 |plus|함수를 생성 합니다.|
 
-|연산자|Description|
+|연산자|설명|
 |--------------|-----------------|
 |operator()|원하는 함수를 계산 합니다.|
 |연산자 delegate_type ^|함수를 대리자로 캐스팅 합니다.|
@@ -2572,11 +2572,11 @@ public:
 |delegate_type|제네릭 대리자의 형식입니다.|
 |result_type|함수 결과의 형식입니다.|
 
-|멤버|Description|
+|멤버|설명|
 |------------|-----------------|
 |unary_negate|함수를 생성 합니다.|
 
-|연산자|Description|
+|연산자|설명|
 |--------------|-----------------|
 |operator()|원하는 함수를 계산 합니다.|
 |delegate_type ^|함수를 대리자로 캐스팅 합니다.|

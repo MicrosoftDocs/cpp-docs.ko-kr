@@ -8,12 +8,12 @@ helpviewer_keywords:
 - __event keyword [C++]
 - events [C++], __event
 ms.assetid: d3019b3e-722e-48df-8536-c05878461f9e
-ms.openlocfilehash: 2adbadecacb41a8e92cd36f55da9b376b4e1b006
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c1c9fa5a6df4cbb1c18e5d5406bdde0197d155b2
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227519"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91498823"
 ---
 # <a name="__event"></a>__event
 
@@ -35,7 +35,7 @@ __event member-declarator;
 
 |네이티브 C++|COM|관리됨(.NET Framework)|
 |------------------|---------|--------------------------------|
-|메서드|—|method|
+|메서드|—|메서드|
 |—|interface(인터페이스)|—|
 |—|—|데이터 멤버(data member)|
 
@@ -77,7 +77,7 @@ __event __interface IEvent1;
 
 새 구문의 이벤트 코딩에 대 한 자세한 내용은 [이벤트](../extensions/event-cpp-component-extensions.md)를 참조 하세요.
 
-관리되는 이벤트는 데이터 멤버 또는 메서드입니다. 이벤트와 함께 사용 하는 경우 대리자의 반환 형식은 [공용 언어 사양과](/dotnet/standard/language-independence-and-language-independent-components)호환 되어야 합니다. 이벤트 처리기의 반환 형식은 대리자의 반환 형식과 일치해야 합니다. 대리자에 대 한 자세한 내용은 [대리자 및 이벤트](../dotnet/delegates-and-events.md)를 참조 하세요. 관리되는 이벤트가 데이터 멤버인 경우 그 형식은 대리자에 대한 포인터여야 합니다.
+관리되는 이벤트는 데이터 멤버 또는 메서드입니다. 이벤트와 함께 사용 하는 경우 대리자의 반환 형식은 [공용 언어 사양과](/dotnet/standard/language-independence-and-language-independent-components)호환 되어야 합니다. 이벤트 처리기의 반환 형식은 대리자의 반환 형식과 일치해야 합니다. 대리자에 대 한 자세한 내용은 [대리자 및 이벤트](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)를 참조 하세요. 관리되는 이벤트가 데이터 멤버인 경우 그 형식은 대리자에 대한 포인터여야 합니다.
 
 .NET Framework에서 데이터 멤버를 메서드(즉, 해당 대리자의 `Invoke` 메서드) 자체인 것처럼 취급할 수 있습니다. 관리되는 이벤트 데이터 멤버를 선언하기 위한 대리자 형식을 미리 정의해야 합니다. 반면에 관리되는 이벤트 메서드는 해당 관리되는 대리자(이미 정의되지 않은 경우)를 암시적으로 정의합니다. 예를 들어 `OnClick`과 같은 이벤트 값을 다음과 같이 이벤트로 선언할 수 있습니다.
 
@@ -129,7 +129,7 @@ public:
 
 ## <a name="see-also"></a>참고 항목
 
-[C++ 키워드](../cpp/keywords-cpp.md)<br/>
+[키워드](../cpp/keywords-cpp.md)<br/>
 [이벤트 처리](../cpp/event-handling.md)<br/>
 [event_source](../windows/attributes/event-source.md)<br/>
 [event_receiver](../windows/attributes/event-receiver.md)<br/>

@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3743
 ms.assetid: 7ca9a76e-7b60-46d1-ab8b-18600cf1a306
-ms.openlocfilehash: c0e2082dc87c6236aa11dd3094d056b0024dfc2f
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: b4bb198ae883e53e7947ce7f123bb0d3f092aaf3
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74752472"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91500402"
 ---
 # <a name="compiler-error-c3743"></a>컴파일러 오류 C3743
 
 event_receiver의 ' layout_dependent ' 매개 변수가 true 인 경우에만 전체 인터페이스를 후크/언 후크 할 수 있습니다.
 
-[__Unhook](../../cpp/unhook.md) 함수는 [event_receiver](../../windows/event-receiver.md) 클래스의 `layout_dependent` 매개 변수에 전달 된 값을 기준으로 사용 하는 매개 변수의 수에 따라 달라 집니다.
+[__Unhook](../../cpp/unhook.md) 함수는 `layout_dependent` [event_receiver](../../windows/attributes/event-receiver.md) 클래스의 매개 변수에 전달 된 값에 따라 소요 되는 매개 변수의 수에 따라 달라 집니다.
 
 다음 샘플에서는 C3743를 생성 합니다.
 

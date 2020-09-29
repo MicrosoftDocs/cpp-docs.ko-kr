@@ -53,12 +53,12 @@ helpviewer_keywords:
 - top_item member [STL/CLR]
 - value_type member [STL/CLR]
 ms.assetid: 6ee96b9f-8a33-4cf7-b7e0-6535c24bdefb
-ms.openlocfilehash: 5f5cfbb4f6125c1c72550018735b377e1507ab08
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 316899aae024fbc8d9e568d6b5684ec4cfb11558
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214891"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91499660"
 ---
 # <a name="stack-stlclr"></a>stack(STL/CLR)
 
@@ -144,7 +144,7 @@ template<typename Value,
 
 ## <a name="members"></a>멤버
 
-## <a name="stackassign-stlclr"></a><a name="assign"></a>stack:: assign (STL/CLR)
+## <a name="stackassign-stlclr"></a><a name="assign"></a> stack:: assign (STL/CLR)
 
 모든 요소를 바꿉니다.
 
@@ -198,7 +198,7 @@ a b c
 a b c
 ```
 
-## <a name="stackconst_reference-stlclr"></a><a name="const_reference"></a>stack:: const_reference (STL/CLR)
+## <a name="stackconst_reference-stlclr"></a><a name="const_reference"></a> stack:: const_reference (STL/CLR)
 
 요소에 대한 상수 참조의 형식입니다.
 
@@ -242,7 +242,7 @@ int main()
 c b a
 ```
 
-## <a name="stackcontainer_type-stlclr"></a><a name="container_type"></a>stack:: container_type (STL/CLR)
+## <a name="stackcontainer_type-stlclr"></a><a name="container_type"></a> stack:: container_type (STL/CLR)
 
 기본 컨테이너의 형식입니다.
 
@@ -284,7 +284,7 @@ int main()
 a b c
 ```
 
-## <a name="stackdifference_type-stlclr"></a><a name="difference_type"></a>stack::d ifference_type (STL/CLR)
+## <a name="stackdifference_type-stlclr"></a><a name="difference_type"></a> stack::d ifference_type (STL/CLR)
 
 두 요소 사이의 부호가 있는 거리의 형식입니다.
 
@@ -342,7 +342,7 @@ pushing 2 = -2
 popping 3 = 3
 ```
 
-## <a name="stackempty-stlclr"></a><a name="empty"></a>stack:: empty (STL/CLR)
+## <a name="stackempty-stlclr"></a><a name="empty"></a> stack:: empty (STL/CLR)
 
 요소가 있는지 여부를 테스트합니다.
 
@@ -354,7 +354,7 @@ bool empty();
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 빈 제어되는 시퀀스에 대해 true를 반환합니다. [Stack:: size (STL/CLR)](../dotnet/stack-size-stl-clr.md)와 동일 `() == 0` 합니다. 스택이 비어 있는지 여부를 테스트 하는 데 사용 합니다.
+멤버 함수는 빈 제어되는 시퀀스에 대해 true를 반환합니다. [Stack:: size (STL/CLR)](#size)와 동일 `() == 0` 합니다. 스택이 비어 있는지 여부를 테스트 하는 데 사용 합니다.
 
 ### <a name="example"></a>예제
 
@@ -396,7 +396,7 @@ size() = 0
 empty() = True
 ```
 
-## <a name="stackgeneric_container-stlclr"></a><a name="generic_container"></a>stack:: generic_container (STL/CLR)
+## <a name="stackgeneric_container-stlclr"></a><a name="generic_container"></a> stack:: generic_container (STL/CLR)
 
 컨테이너 어댑터에 대 한 제네릭 인터페이스의 형식입니다.
 
@@ -459,7 +459,7 @@ a b c d
 a b c d e
 ```
 
-## <a name="stackgeneric_value-stlclr"></a><a name="generic_value"></a>stack:: generic_value (STL/CLR)
+## <a name="stackgeneric_value-stlclr"></a><a name="generic_value"></a> stack:: generic_value (STL/CLR)
 
 컨테이너의 제네릭 인터페이스와 함께 사용할 요소의 형식입니다.
 
@@ -517,7 +517,7 @@ a b c
 c b a
 ```
 
-## <a name="stackget_container-stlclr"></a><a name="get_container"></a>stack:: get_container (STL/CLR)
+## <a name="stackget_container-stlclr"></a><a name="get_container"></a> stack:: get_container (STL/CLR)
 
 기본 컨테이너에 액세스합니다.
 
@@ -559,7 +559,7 @@ int main()
 a b c
 ```
 
-## <a name="stackoperator-stlclr"></a><a name="op_as"></a>stack:: operator = (STL/CLR)
+## <a name="stackoperator-stlclr"></a><a name="op_as"></a> stack:: operator = (STL/CLR)
 
 제어되는 시퀀스를 바꿉니다.
 
@@ -613,7 +613,7 @@ a b c
 a b c
 ```
 
-## <a name="stackpop-stlclr"></a><a name="pop"></a>stack::p op (STL/CLR)
+## <a name="stackpop-stlclr"></a><a name="pop"></a> stack::p op (STL/CLR)
 
 마지막 요소를 제거 합니다.
 
@@ -661,7 +661,7 @@ a b c
 a b
 ```
 
-## <a name="stackpush-stlclr"></a><a name="push"></a>stack::p 밀어넣기 (STL/CLR)
+## <a name="stackpush-stlclr"></a><a name="push"></a> stack::p 밀어넣기 (STL/CLR)
 
 새 마지막 요소를 추가 합니다.
 
@@ -702,7 +702,7 @@ int main()
 a b c
 ```
 
-## <a name="stackreference-stlclr"></a><a name="reference"></a>stack:: reference (STL/CLR)
+## <a name="stackreference-stlclr"></a><a name="reference"></a> stack:: reference (STL/CLR)
 
 요소에 대한 참조의 형식입니다.
 
@@ -751,7 +751,7 @@ a b c
 a b x
 ```
 
-## <a name="stacksize-stlclr"></a><a name="size"></a>stack:: size (STL/CLR)
+## <a name="stacksize-stlclr"></a><a name="size"></a> stack:: size (STL/CLR)
 
 요소 수를 계산합니다.
 
@@ -763,7 +763,7 @@ size_type size();
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 제어되는 시퀀스의 길이를 반환합니다. 이를 사용 하 여 현재 제어 되는 시퀀스에 있는 요소 수를 확인 합니다. 시퀀스의 크기가 0이 아니면 [stack:: empty (STL/CLR)](../dotnet/stack-empty-stl-clr.md)를 참조 하세요 `()` .
+멤버 함수는 제어되는 시퀀스의 길이를 반환합니다. 이를 사용 하 여 현재 제어 되는 시퀀스에 있는 요소 수를 확인 합니다. 시퀀스의 크기가 0이 아니면 [stack:: empty (STL/CLR)](#empty)를 참조 하세요 `()` .
 
 ### <a name="example"></a>예제
 
@@ -805,7 +805,7 @@ size() = 2 after popping
 size() = 4 after adding 2
 ```
 
-## <a name="stacksize_type-stlclr"></a><a name="size_type"></a>stack:: size_type (STL/CLR)
+## <a name="stacksize_type-stlclr"></a><a name="size_type"></a> stack:: size_type (STL/CLR)
 
 두 요소 사이의 부호가 있는 거리의 형식입니다.
 
@@ -854,7 +854,7 @@ a b c
 size difference = 2
 ```
 
-## <a name="stackstack-stlclr"></a><a name="stack"></a>stack:: stack (STL/CLR)
+## <a name="stackstack-stlclr"></a><a name="stack"></a> stack:: stack (STL/CLR)
 
 컨테이너 어댑터 개체를 생성 합니다.
 
@@ -947,7 +947,7 @@ x x x x x
 x x x x x
 ```
 
-## <a name="stackto_array-stlclr"></a><a name="to_array"></a>stack:: to_array (STL/CLR)
+## <a name="stackto_array-stlclr"></a><a name="to_array"></a> stack:: to_array (STL/CLR)
 
 제어 되는 시퀀스를 새 배열에 복사 합니다.
 
@@ -997,7 +997,7 @@ a b c d
 a b c
 ```
 
-## <a name="stacktop-stlclr"></a><a name="top"></a>stack:: top (STL/CLR)
+## <a name="stacktop-stlclr"></a><a name="top"></a> stack:: top (STL/CLR)
 
 마지막 요소에 액세스합니다.
 
@@ -1049,7 +1049,7 @@ top() = c
 a b x
 ```
 
-## <a name="stacktop_item-stlclr"></a><a name="top_item"></a>stack:: top_item (STL/CLR)
+## <a name="stacktop_item-stlclr"></a><a name="top_item"></a> stack:: top_item (STL/CLR)
 
 마지막 요소에 액세스합니다.
 
@@ -1101,7 +1101,7 @@ top_item = c
 a b x
 ```
 
-## <a name="stackvalue_type-stlclr"></a><a name="value_type"></a>stack:: value_type (STL/CLR)
+## <a name="stackvalue_type-stlclr"></a><a name="value_type"></a> stack:: value_type (STL/CLR)
 
 요소의 형식입니다.
 
@@ -1146,7 +1146,7 @@ int main()
 c b a
 ```
 
-## <a name="operator-stack-stlclr"></a><a name="op_neq"></a>operator! = (stack) (STL/CLR)
+## <a name="operator-stack-stlclr"></a><a name="op_neq"></a> operator! = (stack) (STL/CLR)
 
 스택이 비교와 일치 하지 않습니다.
 
@@ -1217,7 +1217,7 @@ a b d
 [a b c] != [a b d] is True
 ```
 
-## <a name="operatorlt-stack-stlclr"></a><a name="op_lt"></a>연산자 &lt; (stack) (STL/CLR)
+## <a name="operatorlt-stack-stlclr"></a><a name="op_lt"></a> 연산자 &lt; (stack) (STL/CLR)
 
 스택이 비교 보다 낮습니다.
 
@@ -1240,7 +1240,7 @@ template<typename Value,
 
 ### <a name="remarks"></a>설명
 
-연산자 함수는 해당 하는 가장 낮은 위치에 대해서도 true를 반환 합니다 `i` `!(right[i] < left[i])` `left[i] < right[i]` . 그렇지 않으면 `left->` [stack:: size (STL/CLR)](../dotnet/stack-size-stl-clr.md) 를 반환 합니다 `() <` `right->size()` .이 메서드를 사용 하 여 두 스택이 요소에 의해 비교 될 때 *왼쪽* 이 *오른쪽* 에 정렬 되었는지 여부를 테스트 합니다.
+연산자 함수는 해당 하는 가장 낮은 위치에 대해서도 true를 반환 합니다 `i` `!(right[i] < left[i])` `left[i] < right[i]` . 그렇지 않으면 `left->` [stack:: size (STL/CLR)](#size) 를 반환 합니다 `() <` `right->size()` .이 메서드를 사용 하 여 두 스택이 요소에 의해 비교 될 때 *왼쪽* 이 *오른쪽* 에 정렬 되었는지 여부를 테스트 합니다.
 
 ### <a name="example"></a>예제
 
@@ -1288,7 +1288,7 @@ a b d
 [a b c] < [a b d] is True
 ```
 
-## <a name="operatorlt-stack-stlclr"></a><a name="op_lteq"></a>operator &lt; = (stack) (STL/CLR)
+## <a name="operatorlt-stack-stlclr"></a><a name="op_lteq"></a> operator &lt; = (stack) (STL/CLR)
 
 스택 보다 작거나 같음 비교입니다.
 
@@ -1359,7 +1359,7 @@ a b d
 [a b d] <= [a b c] is False
 ```
 
-## <a name="operator-stack-stlclr"></a><a name="op_eq"></a>operator = = (stack) (STL/CLR)
+## <a name="operator-stack-stlclr"></a><a name="op_eq"></a> operator = = (stack) (STL/CLR)
 
 스택에서 동일한 비교가 있습니다.
 
@@ -1430,7 +1430,7 @@ a b d
 [a b c] == [a b d] is False
 ```
 
-## <a name="operatorgt-stack-stlclr"></a><a name="op_gt"></a>연산자 &gt; (stack) (STL/CLR)
+## <a name="operatorgt-stack-stlclr"></a><a name="op_gt"></a> 연산자 &gt; (stack) (STL/CLR)
 
 스택이 비교 보다 큽니다.
 
@@ -1501,7 +1501,7 @@ a b d
 [a b d] > [a b c] is True
 ```
 
-## <a name="operatorgt-stack-stlclr"></a><a name="op_gteq"></a>operator &gt; = (stack) (STL/CLR)
+## <a name="operatorgt-stack-stlclr"></a><a name="op_gteq"></a> operator &gt; = (stack) (STL/CLR)
 
 스택이 크거나 같음 비교입니다.
 

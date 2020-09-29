@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2530
 ms.assetid: b790a312-48df-4a6a-9e27-be2c5f32f16c
-ms.openlocfilehash: 0816fcb4d9e2a3e6588dfcf937383fed7ab11395
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 4eca5579f6bf132452a813d8dd99193df5f76b92
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74737129"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91500546"
 ---
 # <a name="compiler-error-c2530"></a>컴파일러 오류 C2530
 
@@ -19,7 +19,7 @@ ms.locfileid: "74737129"
 
 이미 선언 되지 않은 경우 참조를 선언할 때 초기화 해야 합니다.
 
-- [Extern](../../cpp/using-extern-to-specify-linkage.md)키워드를 사용 합니다.
+- [Extern](../../cpp/extern-cpp.md)키워드를 사용 합니다.
 
 - 클래스, 구조체 또는 공용 구조체의 멤버 (및 생성자에서 초기화 됨)
 

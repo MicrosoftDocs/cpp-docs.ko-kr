@@ -5,12 +5,12 @@ helpviewer_keywords:
 - simple properties
 - properties [C++], simple
 ms.assetid: f5d82547-e214-4f05-9e1b-ddb6d0dc5e4c
-ms.openlocfilehash: 2b5543e9a9ff70e827778adf2aee89cbc96f0c1d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c786c7746cd40a970af3a5ae4436119def4c805b
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225672"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91499678"
 ---
 # <a name="how-to-use-properties-in-ccli"></a>방법: C++/CLI에서 속성 사용
 
@@ -88,7 +88,7 @@ int main() {
 
 인덱싱된 기본 속성을 사용 하는 경우 클래스 이름을 참조 하 여 데이터 구조에 액세스할 수 있지만 사용자 정의 인덱싱된 속성을 사용 하는 경우 속성 이름을 지정 하 여 데이터 구조에 액세스 해야 합니다.
 
-C #으로 작성 된 인덱서를 사용 하는 방법에 대 한 자세한 내용은 [방법: c # 인덱서 사용 (c + +/cli)](../dotnet/how-to-consume-a-csharp-indexer-cpp-cli.md)을 참조 하세요.
+C #으로 작성 된 인덱서를 사용 하는 방법에 대 한 자세한 내용은 [방법: c # 인덱서 사용 (c + +/cli)](./interoperability-with-other-dotnet-languages-cpp-cli.md#consume_indexer)을 참조 하세요.
 
 이 코드 예제에서는 기본 및 사용자 정의 인덱싱된 속성을 사용 하는 방법을 보여 줍니다.
 

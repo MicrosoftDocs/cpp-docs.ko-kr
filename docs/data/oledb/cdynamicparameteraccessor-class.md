@@ -90,12 +90,12 @@ helpviewer_keywords:
 - SetParamStatus method
 - SetParamString method
 ms.assetid: 5f22626e-e80d-491f-8b3b-cedc50331960
-ms.openlocfilehash: de9aafe5b04b949112c44be09ac36bede7e7f660
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 4596f5181dd197b16786ee4d4d16cf06721b13b6
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838180"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91498658"
 ---
 # <a name="cdynamicparameteraccessor-class"></a>CDynamicParameterAccessor 클래스
 
@@ -135,7 +135,7 @@ class CDynamicParameterAccessor : public CDynamicAccessor
 
 공급자는 이 클래스를 사용할 소비자에 대해 `ICommandWithParameters` 를 지원해야 합니다.
 
-매개 변수 정보는 이 클래스로 만들고 관리하는 버퍼에 저장됩니다. [GetParam](../../data/oledb/cdynamicparameteraccessor-getparam.md) 및 [GetParamType](../../data/oledb/cdynamicparameteraccessor-getparamtype.md)을 사용하여 버퍼에서 매개 변수 데이터를 가져옵니다.
+매개 변수 정보는 이 클래스로 만들고 관리하는 버퍼에 저장됩니다. [GetParam](#getparam) 및 [GetParamType](#getparamtype)을 사용하여 버퍼에서 매개 변수 데이터를 가져옵니다.
 
 이 클래스를 사용 하 여 SQL Server 저장 프로시저를 실행 하 고 출력 매개 변수 값을 가져오는 방법을 보여 주는 예제는 GitHub의 [Microsoft VCSamples](https://github.com/Microsoft/VCSamples) 리포지토리에서 [dynamicconsumer](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/DynamicConsumer) 샘플 코드를 참조 하세요.
 
@@ -156,14 +156,14 @@ CDynamicParameterAccessor(
 #### <a name="parameters"></a>매개 변수
 
 *Eblob 처리*<br/>
-BLOB 데이터를 처리 하는 방법을 지정 합니다. 기본값은 DBBLOBHANDLING_DEFAULT입니다. DBBLOBHANDLINGENUM 값에 대 한 설명은 [Cdynamicaccessor:: SetBlobHandling](../../data/oledb/cdynamicaccessor-setblobhandling.md) 를 참조 하세요.
+BLOB 데이터를 처리 하는 방법을 지정 합니다. 기본값은 DBBLOBHANDLING_DEFAULT입니다. DBBLOBHANDLINGENUM 값에 대 한 설명은 [Cdynamicaccessor:: SetBlobHandling](./cdynamicaccessor-class.md#setblobhandling) 를 참조 하세요.
 
 *nBlobSize*<br/>
-최대 BLOB 크기 (바이트)입니다. 이 값에 대 한 열 데이터는 BLOB으로 처리 됩니다. 기본값은 8000입니다. 자세한 내용은 [Cdynamicaccessor:: SetBlobSizeLimit](../../data/oledb/cdynamicaccessor-setblobsizelimit.md) 를 참조 하세요.
+최대 BLOB 크기 (바이트)입니다. 이 값에 대 한 열 데이터는 BLOB으로 처리 됩니다. 기본값은 8000입니다. 자세한 내용은 [Cdynamicaccessor:: SetBlobSizeLimit](./cdynamicaccessor-class.md#setblobsizelimit) 를 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
-BLOB 처리에 대 한 자세한 내용은 [cdynamicaccessor:: cdynamicaccessor](../../data/oledb/cdynamicaccessor-cdynamicaccessor.md) 생성자를 참조 하세요.
+BLOB 처리에 대 한 자세한 내용은 [cdynamicaccessor:: cdynamicaccessor](./cdynamicaccessor-class.md#cdynamicaccessor) 생성자를 참조 하세요.
 
 ## <a name="cdynamicparameteraccessorgetparam"></a><a name="getparam"></a> CDynamicParameterAccessor:: GetParam
 
@@ -189,7 +189,7 @@ void* GetParam(TCHAR* pParamName) const throw();
 데이터 형식인 템플릿 매개 변수입니다.
 
 *nParam*<br/>
-[in] 매개 변수 번호입니다(1에서 오프셋). 매개 변수 0은 반환 값으로 예약됩니다. 매개 변수 번호는 SQL 또는 저장 프로시저 호출에서 해당 순서를 기준으로 하는 매개 변수의 인덱스입니다. 예는 [Setparam](../../data/oledb/cdynamicparameteraccessor-setparam.md) 을 참조 하세요.
+[in] 매개 변수 번호입니다(1에서 오프셋). 매개 변수 0은 반환 값으로 예약됩니다. 매개 변수 번호는 SQL 또는 저장 프로시저 호출에서 해당 순서를 기준으로 하는 매개 변수의 인덱스입니다. 예는 [Setparam](#setparam) 을 참조 하세요.
 
 *pParamName*<br/>
 진행 매개 변수 이름입니다.
@@ -201,7 +201,7 @@ void* GetParam(TCHAR* pParamName) const throw();
 
 템플릿이 아닌 버전의 경우는 버퍼에서 검색 된 데이터를 포함 하는 메모리를 가리킵니다. 템플릿 기반 버전의 경우 **`true`** 성공 시 또는 실패 시를 반환 **`false`** 합니다.
 
-`GetParam`를 사용 하 여 버퍼에서 문자열이 아닌 매개 변수 데이터를 검색 합니다. [Getparamstring](../../data/oledb/cdynamicparameteraccessor-getparamstring.md) 을 사용 하 여 버퍼에서 문자열 매개 변수 데이터를 검색 합니다.
+`GetParam`를 사용 하 여 버퍼에서 문자열이 아닌 매개 변수 데이터를 검색 합니다. [Getparamstring](#getparamstring) 을 사용 하 여 버퍼에서 문자열 매개 변수 데이터를 검색 합니다.
 
 ## <a name="cdynamicparameteraccessorgetparamcount"></a><a name="getparamcount"></a> CDynamicParameterAccessor:: GetParamCount
 
@@ -231,7 +231,7 @@ bool GetParamIO(DBORDINAL nParam,
 #### <a name="parameters"></a>매개 변수
 
 *nParam*<br/>
-[in] 매개 변수 번호입니다(1에서 오프셋). 매개 변수 0은 반환 값으로 예약됩니다. 매개 변수 번호는 SQL 또는 저장 프로시저 호출에서 해당 순서를 기준으로 하는 매개 변수의 인덱스입니다. 예는 [Setparam](../../data/oledb/cdynamicparameteraccessor-setparam.md) 을 참조 하세요.
+[in] 매개 변수 번호입니다(1에서 오프셋). 매개 변수 0은 반환 값으로 예약됩니다. 매개 변수 번호는 SQL 또는 저장 프로시저 호출에서 해당 순서를 기준으로 하는 매개 변수의 인덱스입니다. 예는 [Setparam](#setparam) 을 참조 하세요.
 
 *pParamIO*<br/>
 `DBPARAMIO`지정 된 매개 변수의 형식 (입력 또는 출력)을 포함 하는 변수에 대 한 포인터입니다. 아래와 같이 정의됩니다.
@@ -266,7 +266,7 @@ DBLENGTH* GetParamLength(DBORDINAL nParam) const throw();
 #### <a name="parameters"></a>매개 변수
 
 *nParam*<br/>
-[in] 매개 변수 번호입니다(1에서 오프셋). 매개 변수 0은 반환 값으로 예약됩니다. 매개 변수 번호는 SQL 또는 저장 프로시저 호출에서 해당 순서를 기준으로 하는 매개 변수의 인덱스입니다. 예는 [Setparam](../../data/oledb/cdynamicparameteraccessor-setparam.md) 을 참조 하세요.
+[in] 매개 변수 번호입니다(1에서 오프셋). 매개 변수 0은 반환 값으로 예약됩니다. 매개 변수 번호는 SQL 또는 저장 프로시저 호출에서 해당 순서를 기준으로 하는 매개 변수의 인덱스입니다. 예는 [Setparam](#setparam) 을 참조 하세요.
 
 *pLength*<br/>
 [out] 지정된 매개 변수의 길이(바이트)를 포함하는 변수에 대한 포인터입니다.
@@ -288,7 +288,7 @@ LPOLESTR GetParamName(DBORDINAL nParam) const throw();
 #### <a name="parameters"></a>매개 변수
 
 *nParam*<br/>
-[in] 매개 변수 번호입니다(1에서 오프셋). 매개 변수 0은 반환 값으로 예약됩니다. 매개 변수 번호는 SQL 또는 저장 프로시저 호출에서 해당 순서를 기준으로 하는 매개 변수의 인덱스입니다. 예는 [Setparam](../../data/oledb/cdynamicparameteraccessor-setparam.md) 을 참조 하세요.
+[in] 매개 변수 번호입니다(1에서 오프셋). 매개 변수 0은 반환 값으로 예약됩니다. 매개 변수 번호는 SQL 또는 저장 프로시저 호출에서 해당 순서를 기준으로 하는 매개 변수의 인덱스입니다. 예는 [Setparam](#setparam) 을 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -310,7 +310,7 @@ DBSTATUS* GetParamStatus(DBORDINAL nParam) const throw();
 #### <a name="parameters"></a>매개 변수
 
 *nParam*<br/>
-[in] 매개 변수 번호입니다(1에서 오프셋). 매개 변수 0은 반환 값으로 예약됩니다. 매개 변수 번호는 SQL 또는 저장 프로시저 호출에서 해당 순서를 기준으로 하는 매개 변수의 인덱스입니다. 예는 [Setparam](../../data/oledb/cdynamicparameteraccessor-setparam.md) 을 참조 하세요.
+[in] 매개 변수 번호입니다(1에서 오프셋). 매개 변수 0은 반환 값으로 예약됩니다. 매개 변수 번호는 SQL 또는 저장 프로시저 호출에서 해당 순서를 기준으로 하는 매개 변수의 인덱스입니다. 예는 [Setparam](#setparam) 을 참조 하세요.
 
 *pStatus*<br/>
 제한이 지정 된 매개 변수의 DBSTATUS 상태를 포함 하는 변수에 대 한 포인터입니다. DBSTATUS 값에 대 한 자세한 내용은 *OLE DB 프로그래머 참조*의 [상태](/previous-versions/windows/desktop/ms722617(v=vs.85)) 를 참조 하거나 oledb에서 dbstatus를 검색 하십시오.
@@ -344,7 +344,7 @@ bool GetParamString(DBORDINAL nParam,
 #### <a name="parameters"></a>매개 변수
 
 *nParam*<br/>
-[in] 매개 변수 번호입니다(1에서 오프셋). 매개 변수 0은 반환 값으로 예약됩니다. 매개 변수 번호는 SQL 또는 저장 프로시저 호출에서 해당 순서를 기준으로 하는 매개 변수의 인덱스입니다. 예는 [Setparam](../../data/oledb/cdynamicparameteraccessor-setparam.md) 을 참조 하세요.
+[in] 매개 변수 번호입니다(1에서 오프셋). 매개 변수 0은 반환 값으로 예약됩니다. 매개 변수 번호는 SQL 또는 저장 프로시저 호출에서 해당 순서를 기준으로 하는 매개 변수의 인덱스입니다. 예는 [Setparam](#setparam) 을 참조 하세요.
 
 *strOutput*<br/>
 제한이 `CSimpleStringA`지정 된 매개 변수의 ANSI () 또는 유니코드 ( `CSimpleStringW` ) 문자열 데이터입니다. 형식의 매개 변수를 전달 해야 합니다 `CString` . 예를 들면 다음과 같습니다.
@@ -365,7 +365,7 @@ bool GetParamString(DBORDINAL nParam,
 
 버퍼 *pbuffer* 가 전체 문자열을 포함 하기에 충분히 크지 않은 경우이 메서드는 실패 합니다.
 
-`GetParamString`를 사용 하 여 버퍼에서 문자열 매개 변수 데이터를 검색 합니다. [Getparam](../../data/oledb/cdynamicparameteraccessor-getparam.md) 을 사용 하 여 버퍼에서 문자열이 아닌 매개 변수 데이터를 검색 합니다.
+`GetParamString`를 사용 하 여 버퍼에서 문자열 매개 변수 데이터를 검색 합니다. [Getparam](#getparam) 을 사용 하 여 버퍼에서 문자열이 아닌 매개 변수 데이터를 검색 합니다.
 
 ## <a name="cdynamicparameteraccessorgetparamtype"></a><a name="getparamtype"></a> CDynamicParameterAccessor:: GetParamType
 
@@ -381,7 +381,7 @@ bool GetParamType(DBORDINAL nParam,
 #### <a name="parameters"></a>매개 변수
 
 *nParam*<br/>
-[in] 매개 변수 번호입니다(1에서 오프셋). 매개 변수 0은 반환 값으로 예약됩니다. 매개 변수 번호는 SQL 또는 저장 프로시저 호출에서 해당 순서를 기준으로 하는 매개 변수의 인덱스입니다. 예는 [Setparam](../../data/oledb/cdynamicparameteraccessor-setparam.md) 을 참조 하세요.
+[in] 매개 변수 번호입니다(1에서 오프셋). 매개 변수 0은 반환 값으로 예약됩니다. 매개 변수 번호는 SQL 또는 저장 프로시저 호출에서 해당 순서를 기준으로 하는 매개 변수의 인덱스입니다. 예는 [Setparam](#setparam) 을 참조 하세요.
 
 *pType*<br/>
 제한이 지정 된 매개 변수의 데이터 형식을 포함 하는 변수에 대 한 포인터입니다.
@@ -414,7 +414,7 @@ bool SetParam(TCHAR* pParamName,
 데이터 형식인 템플릿 매개 변수입니다.
 
 *nParam*<br/>
-[in] 매개 변수 번호입니다(1에서 오프셋). 매개 변수 0은 반환 값으로 예약됩니다. 매개 변수 번호는 SQL 또는 저장 프로시저 호출에서 해당 순서를 기준으로 하는 매개 변수의 인덱스입니다. 예를 들어:
+[in] 매개 변수 번호입니다(1에서 오프셋). 매개 변수 0은 반환 값으로 예약됩니다. 매개 변수 번호는 SQL 또는 저장 프로시저 호출에서 해당 순서를 기준으로 하는 매개 변수의 인덱스입니다. 다음은 그 예입니다.
 
 [!code-cpp[NVC_OLEDB_Consumer#8](../../data/oledb/codesnippet/cpp/cdynamicparameteraccessor-setparam_1.cpp)]
 
@@ -431,7 +431,7 @@ bool SetParam(TCHAR* pParamName,
 
 **`true`** 성공 시 또는 실패 시 반환 **`false`** 됩니다.
 
-`SetParam`를 사용 하 여 버퍼에서 문자열이 아닌 매개 변수 데이터를 설정 합니다. [Setparamstring](../../data/oledb/cdynamicparameteraccessor-setparamstring.md) 을 사용 하 여 버퍼에 문자열 매개 변수 데이터를 설정 합니다.
+`SetParam`를 사용 하 여 버퍼에서 문자열이 아닌 매개 변수 데이터를 설정 합니다. [Setparamstring](#setparamstring) 을 사용 하 여 버퍼에 문자열 매개 변수 데이터를 설정 합니다.
 
 ## <a name="cdynamicparameteraccessorsetparamlength"></a><a name="setparamlength"></a> CDynamicParameterAccessor:: SetParamLength
 
@@ -447,7 +447,7 @@ bool SetParamLength(DBORDINAL nParam,
 #### <a name="parameters"></a>매개 변수
 
 *nParam*<br/>
-[in] 매개 변수 번호입니다(1에서 오프셋). 매개 변수 0은 반환 값으로 예약됩니다. 매개 변수 번호는 SQL 또는 저장 프로시저 호출에서 해당 순서를 기준으로 하는 매개 변수의 인덱스입니다. 예는 [Setparam](../../data/oledb/cdynamicparameteraccessor-setparam.md) 을 참조 하세요.
+[in] 매개 변수 번호입니다(1에서 오프셋). 매개 변수 0은 반환 값으로 예약됩니다. 매개 변수 번호는 SQL 또는 저장 프로시저 호출에서 해당 순서를 기준으로 하는 매개 변수의 인덱스입니다. 예는 [Setparam](#setparam) 을 참조 하세요.
 
 *length*<br/>
 진행 지정 된 매개 변수의 길이 (바이트)입니다.
@@ -470,7 +470,7 @@ bool SetParamStatus(DBORDINAL nParam,
 #### <a name="parameters"></a>매개 변수
 
 *nParam*<br/>
-[in] 매개 변수 번호입니다(1에서 오프셋). 매개 변수 0은 반환 값으로 예약됩니다. 매개 변수 번호는 SQL 또는 저장 프로시저 호출에서 해당 순서를 기준으로 하는 매개 변수의 인덱스입니다. 예는 [Setparam](../../data/oledb/cdynamicparameteraccessor-setparam.md) 을 참조 하세요.
+[in] 매개 변수 번호입니다(1에서 오프셋). 매개 변수 0은 반환 값으로 예약됩니다. 매개 변수 번호는 SQL 또는 저장 프로시저 호출에서 해당 순서를 기준으로 하는 매개 변수의 인덱스입니다. 예는 [Setparam](#setparam) 을 참조 하세요.
 
 *status*<br/>
 진행 지정 된 매개 변수의 DBSTATUS 상태입니다. DBSTATUS 값에 대 한 자세한 내용은 *OLE DB 프로그래머 참조*의 [상태](/previous-versions/windows/desktop/ms722617(v=vs.85)) 를 참조 하거나 oledb에서 dbstatus를 검색 하십시오.
@@ -496,7 +496,7 @@ bool SetParamString(DBORDINAL nParam,
 #### <a name="parameters"></a>매개 변수
 
 *nParam*<br/>
-[in] 매개 변수 번호입니다(1에서 오프셋). 매개 변수 0은 반환 값으로 예약됩니다. 매개 변수 번호는 SQL 또는 저장 프로시저 호출에서 해당 순서를 기준으로 하는 매개 변수의 인덱스입니다. 예는 [Setparam](../../data/oledb/cdynamicparameteraccessor-setparam.md) 을 참조 하세요.
+[in] 매개 변수 번호입니다(1에서 오프셋). 매개 변수 0은 반환 값으로 예약됩니다. 매개 변수 번호는 SQL 또는 저장 프로시저 호출에서 해당 순서를 기준으로 하는 매개 변수의 인덱스입니다. 예는 [Setparam](#setparam) 을 참조 하세요.
 
 *pString*<br/>
 진행 지정 된 매개 변수의 ANSI (**CHAR**) 또는 유니코드 (**WCHAR**) 문자열 데이터에 대 한 포인터입니다. Oledb의 DBSTATUS를 참조 하세요.
@@ -510,7 +510,7 @@ bool SetParamString(DBORDINAL nParam,
 
 `SetParamString`*pstring*에 대해 지정 된 최대 크기 보다 큰 문자열을 설정 하려고 하면가 실패 합니다.
 
-`SetParamString`를 사용 하 여 버퍼에 문자열 매개 변수 데이터를 설정 합니다. [Setparam](../../data/oledb/cdynamicparameteraccessor-setparam.md) 을 사용 하 여 버퍼에서 문자열이 아닌 매개 변수 데이터를 설정 합니다.
+`SetParamString`를 사용 하 여 버퍼에 문자열 매개 변수 데이터를 설정 합니다. [Setparam](#setparam) 을 사용 하 여 버퍼에서 문자열이 아닌 매개 변수 데이터를 설정 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

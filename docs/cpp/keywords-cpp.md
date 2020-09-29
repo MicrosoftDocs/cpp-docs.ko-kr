@@ -6,12 +6,12 @@ ms.date: 07/25/2020
 helpviewer_keywords:
 - keywords [C++]
 ms.assetid: d7ca94a8-f785-41ce-9f73-d3c4fd508489
-ms.openlocfilehash: 96fb4e6a51630f3b5297c6428297980b5c51ca36
-ms.sourcegitcommit: 0df2b7ab4e81284c5248e4584767591dcc1950c3
+ms.openlocfilehash: b875b4df797985dc21f54f48ceeaa86574f31ac6
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89609144"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91498759"
 ---
 # <a name="keywords-c"></a>키워드(C++)
 
@@ -26,7 +26,7 @@ ms.locfileid: "89609144"
         [`and`](bitwise-and-operator-amp.md)<sup>b</sup>\
         [`and_eq`](assignment-operators.md)<sup>b</sup>\
         [`asm`](../assembler/inline/asm.md)<sup>a</sup>\
-        [`auto`](auto-keyword.md)\
+        [`auto`](./auto-cpp.md)\
         [`bitand`](bitwise-and-operator-amp.md)<sup>b</sup>\
         [`bitor`](bitwise-inclusive-or-operator-pipe.md)<sup>b</sup>\
         [`bool`](bool-cpp.md)\
@@ -61,7 +61,7 @@ ms.locfileid: "89609144"
         [`enum`](enumerations-cpp.md)\
         [`explicit`](user-defined-type-conversions-cpp.md)\
         **`export`**<sup>c</sup>\
-        [`extern`](using-extern-to-specify-linkage.md)\
+        [`extern`](./extern-cpp.md)\
         [`false`](false-cpp.md)\
         [`float`](fundamental-types-cpp.md)\
         [`for`](for-statement-cpp.md)\
@@ -130,7 +130,7 @@ ms.locfileid: "89609144"
 
 ## <a name="microsoft-specific-c-keywords"></a>Microsoft 전용 c + + 키워드
 
-C + +에서 두 개의 연속 된 밑줄이 포함 된 식별자는 컴파일러 구현을 위해 예약 됩니다. Microsoft 규칙은 Microsoft 전용 키워드 앞에 이중 밑줄을 사용 하는 것입니다. 이러한 단어는 식별자 이름으로 사용할 수 없습니다.
+C + +에서 두 개의 연속 된 밑줄이 포함 된 식별자는 컴파일러 구현을 위해 예약 됩니다. Microsoft 규칙은 Microsoft 전용 키워드 앞에 이중 밑줄을 사용 하는 것입니다. 이들 단어는 식별자 이름으로 사용할 수 없습니다.
 
 Microsoft 확장은 기본적으로 사용하도록 설정됩니다. 프로그램이 완전히 이식 가능한 지 확인 하려면 [`/permissive-`](../build/reference/permissive-standards-conformance.md) 컴파일하는 동안 언어 확장을 지정 하거나 [ `/Za` \( 사용 하지 않도록 설정](../build/reference/za-ze-disable-language-extensions.md) 하 여 Microsoft 확장을 사용 하지 않도록 설정할 수 있습니다. 이러한 옵션은 일부 Microsoft 관련 키워드를 사용 하지 않도록 설정 합니다.
 
@@ -240,20 +240,20 @@ Microsoft 확장을 사용하도록 설정한 경우 Microsoft 관련 키워드�
 
 :::row:::
     :::column:::
-        [`__abstract`](../dotnet/declaration-of-a-managed-class-type.md)<sup>f</sup>\
-        [`__box`](../dotnet/value-type-semantics.md)<sup>f</sup>\
-        [`__delegate`](../dotnet/delegates-and-events.md)<sup>f</sup>\
-        [`__gc`](../dotnet/declaration-of-a-clr-reference-class-object.md)<sup>f</sup>\
+        [`__abstract`](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<sup>f</sup>\
+        [`__box`](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<sup>f</sup>\
+        [`__delegate`](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<sup>f</sup>\
+        [`__gc`](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<sup>f</sup>\
         [`__identifier`](../extensions/identifier-cpp-cli.md)\
-        [`__nogc`](../dotnet/declaration-of-a-clr-reference-class-object.md)<sup>f</sup>\
+        [`__nogc`](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<sup>f</sup>\
         [`__noop`](../intrinsics/noop.md)\
         **`__pin`**<sup>f</sup>\
         **`__property`**<sup>f</sup>\
         **`__sealed`**<sup>f</sup>
     :::column-end:::
     :::column:::
-        [`__try_cast`](../dotnet/cast-notation-and-introduction-of-safe-cast-angles.md)<sup>f</sup>\
-        [`__value`](../dotnet/value-type-semantics.md)<sup>f</sup>\
+        [`__try_cast`](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<sup>f</sup>\
+        [`__value`](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<sup>f</sup>\
         [`abstract`](../extensions/abstract-cpp-component-extensions.md)<sup>g</sup>\
         [`array`](../extensions/arrays-cpp-component-extensions.md)<sup>g</sup>\
         [`as_friend`](../preprocessor/hash-using-directive-cpp.md)\

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - CAxDialogImpl class, implementing dialog boxes in ATL
 - ATL, dialog boxes
 ms.assetid: 478525f2-aa6a-435a-b162-68fc8aa98a8e
-ms.openlocfilehash: 7866afd26c901181f2b4193a87daf5dca2b0c67f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: fa7b4122b513d48194dedeb39daecd1dfd7223eb
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226687"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91499579"
 ---
 # <a name="implementing-a-dialog-box"></a>대화 상자 구현
 
@@ -20,7 +20,7 @@ Atl 프로젝트에 대화 상자를 추가 하는 방법에는 다음 두 가�
 
 ## <a name="adding-a-dialog-box-with-the-atl-dialog-wizard"></a>ATL 대화 상자 마법사를 사용 하 여 대화 상자 추가
 
-[클래스 추가 대화 상자](../ide/add-class-dialog-box.md)에서 atl 대화 상자 개체를 선택 하 여 atl 프로젝트에 대화 상자를 추가 합니다. ATL 대화 상자 마법사를 적절 하 게 입력 하 고 **마침**을 클릭 합니다. 마법사는 [Caxdialogimpl](../atl/reference/caxdialogimpl-class.md) 파생 된 클래스를 프로젝트에 추가 합니다. **보기** 메뉴에서 **리소스 뷰** 를 열고 대화 상자를 찾은 다음 두 번 클릭 하 여 리소스 편집기에서 엽니다.
+[클래스 추가 대화 상자](../ide/adding-a-class-visual-cpp.md#add-class-dialog-box)에서 atl 대화 상자 개체를 선택 하 여 atl 프로젝트에 대화 상자를 추가 합니다. ATL 대화 상자 마법사를 적절 하 게 입력 하 고 **마침**을 클릭 합니다. 마법사는 [Caxdialogimpl](../atl/reference/caxdialogimpl-class.md) 파생 된 클래스를 프로젝트에 추가 합니다. **보기** 메뉴에서 **리소스 뷰** 를 열고 대화 상자를 찾은 다음 두 번 클릭 하 여 리소스 편집기에서 엽니다.
 
 > [!NOTE]
 > 에서 파생 된 대화 상자는 `CAxDialogImpl` ActiveX 컨트롤과 Windows 컨트롤을 모두 호스팅할 수 있습니다. 대화 상자 클래스에서 ActiveX 컨트롤 지원의 오버 헤드를 원하지 않는 경우 대신 [CSimpleDialog](../atl/reference/csimpledialog-class.md) 또는 [cdialogimpl](../atl/reference/cdialogimpl-class.md) 사용 됩니다.
@@ -34,7 +34,7 @@ Atl 프로젝트에 대화 상자를 추가 하는 방법에는 다음 두 가�
 > [!NOTE]
 > ATL 대화 상자 마법사를 사용 하 여 대화 상자를 만들면 마법사에서 자동으로 `IDD` 멤버를 형식으로 추가 합니다 **`enum`** .
 
-`CDialogImpl`Windows 컨트롤을 호스트 하는 모달 또는 모덜리스 대화 상자를 구현할 수 있습니다. `CAxDialogImpl`ActiveX 및 Windows 컨트롤을 모두 호스팅하는 모달 또는 모덜리스 대화 상자를 구현할 수 있습니다.
+`CDialogImpl` Windows 컨트롤을 호스트 하는 모달 또는 모덜리스 대화 상자를 구현할 수 있습니다. `CAxDialogImpl` ActiveX 및 Windows 컨트롤을 모두 호스팅하는 모달 또는 모덜리스 대화 상자를 구현할 수 있습니다.
 
 모달 대화 상자를 만들려면 `CDialogImpl` 파생 된 (또는 파생) 클래스의 인스턴스를 만든 `CAxDialogImpl` 다음 [DoModal](../atl/reference/cdialogimpl-class.md#domodal) 메서드를 호출 합니다. 모달 대화 상자를 닫으려면 메시지 처리기에서 [EndDialog](../atl/reference/cdialogimpl-class.md#enddialog) 메서드를 호출 합니다. 모덜리스 대화 상자를 만들려면 대신 [create](../atl/reference/cdialogimpl-class.md#create) 메서드를 호출 `DoModal` 합니다. 모덜리스 대화 상자를 제거 하려면 [DestroyWindow](../atl/reference/cdialogimpl-class.md#destroywindow)를 호출 합니다.
 

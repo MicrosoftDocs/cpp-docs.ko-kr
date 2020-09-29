@@ -2,12 +2,12 @@
 title: ATL COM+ 1.0 구성 요소 추가
 ms.date: 05/09/2019
 ms.assetid: c6c95e64-9ee4-4a6e-8804-5930202ce1b9
-ms.openlocfilehash: 843563e324e5e01af3c38896f268efc06c9a6222
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 0d25c4d1a68d553025f015644304f3a888be3882
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80075316"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91499331"
 ---
 # <a name="adding-an-atl-com-10-component"></a>ATL COM+ 1.0 구성 요소 추가
 
@@ -25,9 +25,9 @@ Visual Studio 2019 이상에서는 ATL COM+ 1.0 구성 요소 마법사를 사�
 
 1. **솔루션 탐색기** 또는 [클래스 뷰](/visualstudio/ide/viewing-the-structure-of-code)에서 ATL COM+ 1.0 구성 요소를 추가할 프로젝트의 이름을 마우스 오른쪽 단추로 클릭합니다.
 
-1. 바로 가기 메뉴에서 **추가**를 클릭한 다음, **클래스 추가**를 클릭합니다.
+1. 바로 가기 메뉴에서 **추가**를 클릭 한 다음 **클래스 추가**를 클릭 합니다.
 
-1. [클래스 추가](../../ide/add-class-dialog-box.md) 대화 상자의 **템플릿** 창에서 **ATL COM+ 1.0 구성 요소**를 클릭한 다음, **열기**를 클릭하여 [ATL COM+ 1.0 구성 요소 마법사](../../atl/reference/atl-com-plus-1-0-component-wizard.md)를 표시합니다.
+1. [클래스 추가](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) 대화 상자의 **템플릿** 창에서 **ATL COM+ 1.0 구성 요소**를 클릭한 다음, **열기**를 클릭하여 [ATL COM+ 1.0 구성 요소 마법사](../../atl/reference/atl-com-plus-1-0-component-wizard.md)를 표시합니다.
 
 ## <a name="see-also"></a>참고 항목
 

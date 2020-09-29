@@ -26,12 +26,12 @@ helpviewer_keywords:
 - Date data type, MFC encapsulation of
 - COleDateTimeSpan class
 ms.assetid: 7441526d-a30a-4019-8fb3-3fee6f897cbe
-ms.openlocfilehash: 746cfdce3265dff7e5b20a5135aa026aca9facdf
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5934a456b519d14def14018f966c7bff8206c3c4
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832102"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91500139"
 ---
 # <a name="coledatetimespan-class"></a>COleDateTimeSpan 클래스
 
@@ -70,7 +70,7 @@ class COleDateTimeSpan
 
 ### <a name="public-operators"></a>Public 연산자
 
-|Name|설명|
+|속성|설명|
 |-|-|
 |[연산자 +,-](#operator_add_-)|값의 부호를 추가, 빼기 및 변경 `COleDateTimeSpan` 합니다.|
 |[operator + =,-=](#operator_add_eq_-_eq)|`COleDateTimeSpan`이 값에서 값을 더하거나 뺍니다 `COleDateTimeSpan` .|
@@ -80,7 +80,7 @@ class COleDateTimeSpan
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|Name|설명|
+|속성|설명|
 |----------|-----------------|
 |[COleDateTimeSpan:: m_span](#m_span)|**`double`** 이 개체의 내부를 포함 `COleDateTimeSpan` 합니다.|
 |[COleDateTimeSpan:: m_status](#m_status)|이 개체의 상태를 포함 `COleDateTimeSpan` 합니다.|
@@ -93,7 +93,7 @@ class COleDateTimeSpan
 
 `COleDateTimeSpan` 는 동반 클래스 [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md)와 함께 사용 됩니다. `COleDateTime``DATE`OLE 자동화의 데이터 형식을 캡슐화 합니다. `COleDateTime` 절대 시간 값을 나타냅니다. 모든 `COleDateTime` 계산에는 값이 포함 `COleDateTimeSpan` 됩니다. 이러한 클래스 간의 관계는 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 과 [ctimespan](../../atl-mfc-shared/reference/ctimespan-class.md)간의 관계와 유사 합니다.
 
-및 클래스에 대 한 자세한 내용은 `COleDateTime` `COleDateTimeSpan` [날짜 및 시간: 자동화 지원](../../atl-mfc-shared/date-and-time-automation-support.md)문서를 참조 하세요.
+및 클래스에 대 한 자세한 내용은 `COleDateTime` `COleDateTimeSpan` [날짜 및 시간: 자동화 지원](../date-and-time.md)문서를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -162,7 +162,7 @@ COleDateTimeSpan(LONG lDays, int nHours, int nMins, int nSecs) throw();
 
 새 개체의 상태가 `COleDateTimeSpan` valid로 설정 됩니다.
 
-값의 범위에 대 한 자세한 내용은 `COleDateTimeSpan` [날짜 및 시간: 자동화 지원](../../atl-mfc-shared/date-and-time-automation-support.md)문서를 참조 하세요.
+값의 범위에 대 한 자세한 내용은 `COleDateTimeSpan` [날짜 및 시간: 자동화 지원](../date-and-time.md)문서를 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -403,7 +403,7 @@ enum DateTimeSpanStatus{
 
 상태를 잘못 된 것으로 설정할 수 있는 작업에 대 한 자세한 내용은 [COleDateTimeSpan:: operator +,-](../../atl-mfc-shared/reference/coledatetime-class.md#operator_add_-) and [COleDateTimeSpan:: operator + =,-=를](../../atl-mfc-shared/reference/coledatetime-class.md#operator_add_eq_-_eq)참조 하세요.
 
-값의 범위에 대 한 자세한 내용은 `COleDateTimeSpan` [날짜 및 시간: 자동화 지원](../../atl-mfc-shared/date-and-time-automation-support.md)문서를 참조 하세요.
+값의 범위에 대 한 자세한 내용은 `COleDateTimeSpan` [날짜 및 시간: 자동화 지원](../date-and-time.md)문서를 참조 하세요.
 
 ## <a name="coledatetimespangettotaldays"></a><a name="gettotaldays"></a> COleDateTimeSpan:: GetTotalDays
 
@@ -603,7 +603,7 @@ enum DateTimeSpanStatus{
 > [!CAUTION]
 > 이 데이터 멤버는 고급 프로그래밍 상황을 위한 것입니다. 인라인 멤버 함수 [GetStatus](#getstatus) 및 [SetStatus](#setstatus)를 사용 해야 합니다. `SetStatus`이 데이터 멤버를 명시적으로 설정 하는 방법에 대 한 자세한 내용은을 참조 하십시오.
 
-값의 범위에 대 한 자세한 내용은 `COleDateTimeSpan` [날짜 및 시간: 자동화 지원](../../atl-mfc-shared/date-and-time-automation-support.md)문서를 참조 하세요.
+값의 범위에 대 한 자세한 내용은 `COleDateTimeSpan` [날짜 및 시간: 자동화 지원](../date-and-time.md)문서를 참조 하세요.
 
 ## <a name="coledatetimespanoperator-"></a><a name="operator_eq"></a> COleDateTimeSpan:: operator =
 

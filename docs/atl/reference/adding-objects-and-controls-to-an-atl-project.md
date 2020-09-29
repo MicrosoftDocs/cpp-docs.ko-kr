@@ -11,12 +11,12 @@ helpviewer_keywords:
 - objects [C++], adding to ATL projects
 - ATL Control Wizard
 ms.assetid: c0adcbd0-07fe-4c55-a8fd-8c2c65ecdaad
-ms.openlocfilehash: b1bf4f85ccf7a0bb2d77bfb96c512349f581f193
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 6acd60d430f13906d11e9a9b3e7c5655ee94badb
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832453"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91499307"
 ---
 # <a name="adding-objects-and-controls-to-an-atl-project"></a>ATL 프로젝트에 개체 및 컨트롤 추가
 
@@ -42,7 +42,7 @@ ATL 코드 마법사 중 하나를 사용하여 ATL 또는 MFC 기반 프로젝�
 
 1. **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 바로 가기 메뉴에서 **추가**를 클릭합니다. **클래스 추가**를 클릭합니다.
 
-   [클래스 추가](../../ide/add-class-dialog-box.md) 대화 상자가 나타납니다.
+   [클래스 추가](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) 대화 상자가 나타납니다.
 
 1. **범주** 창에서 **ATL** 폴더를 선택한 상태에서 **템플릿** 창에서 삽입할 개체를 선택합니다. **열기**를 클릭합니다. 선택한 개체에 대한 코드 마법사가 나타납니다.
 

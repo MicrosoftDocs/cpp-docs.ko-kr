@@ -5,12 +5,12 @@ ms.topic: reference
 helpviewer_keywords:
 - typeid keyword [C++]
 ms.assetid: e9706cae-e7c4-4d6d-b474-646d73df3e70
-ms.openlocfilehash: 56319fb773b8398f85f5fd82c812f0efdb7dde15
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bfb226bc11f0fd7d3feddfb2c50ffe1aa6311d3d
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225113"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91500378"
 ---
 # <a name="typeid--ccli-and-ccx"></a>typeid(C++/CLI 및 C++/CX)
 
@@ -74,7 +74,7 @@ type::typeid
 
 **`typeid`** 는 컴파일 시간에 형식 이름 (형식)을 계산할 수 있어야 하는 반면 GetType은 런타임에 반환 될 형식을 평가 합니다.
 
-**`typeid`** 네이티브 형식 이름에 대해 네이티브 형식 이름 또는 공용 언어 런타임 별칭을 사용할 수 있습니다. 자세한 내용은 [c + + 네이티브 형식에 해당 하는 .NET Framework (c + +/cli)를](../dotnet/dotnet-framework-equivalents-to-cpp-native-types-cpp-cli.md) 참조 하세요.
+**`typeid`** 네이티브 형식 이름에 대해 네이티브 형식 이름 또는 공용 언어 런타임 별칭을 사용할 수 있습니다. 자세한 내용은 [c + + 네이티브 형식에 해당 하는 .NET Framework (c + +/cli)를](../dotnet/managed-types-cpp-cli.md#dotnet) 참조 하세요.
 
 **`typeid`** 는 여전히을 반환 하지만 네이티브 형식 에서도 작동 `System::Type` 합니다.  Type_info 구조체를 가져오려면 [ `typeid` Operator](../cpp/typeid-operator.md)를 사용 합니다.
 
@@ -82,7 +82,7 @@ type::typeid
 
 컴파일러 옵션: `/clr`
 
-### <a name="examples"></a>예제
+### <a name="examples"></a>예
 
 다음 예제에서는 typeid 키워드와 `GetType()` 멤버를 비교합니다.
 

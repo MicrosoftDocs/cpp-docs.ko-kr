@@ -27,12 +27,12 @@ helpviewer_keywords:
 - FreeRecordMemory method
 - GetColumnInfo method
 ms.assetid: bd4f58ed-cebf-4d43-8985-1e5fcbf06953
-ms.openlocfilehash: 9ad4292b69d0219aa1732638ae250758e4456f4b
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d9dd2eec3948896487b5b977d1107db1f4a1046b
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843289"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91498722"
 ---
 # <a name="caccessorrowset-class"></a>CAccessorRowset 클래스
 
@@ -64,7 +64,7 @@ class CAccessorRowset : public TAccessor, public TRowset<TAccessor>
 
 | 속성 | 설명 |
 |--|--|
-| [바인딩하며](#bind) | 바인딩을 만듭니다 ( `bBind` **`false`** [CCommand:: Open](../../data/oledb/ccommand-open.md)에서로 지정 된 경우에 사용 됨). |
+| [바인딩하며](#bind) | 바인딩을 만듭니다 ( `bBind` **`false`** [CCommand:: Open](./ccommand-class.md#open)에서로 지정 된 경우에 사용 됨). |
 | [CAccessorRowset](#caccessorrowset) | 생성자입니다. |
 | [닫기](#close) | 행 집합 및 접근자를 닫습니다. |
 | [FreeRecordMemory](#freerecordmemory) | 현재 레코드에서 해제 해야 하는 모든 열을 해제 합니다. |
@@ -76,7 +76,7 @@ class CAccessorRowset : public TAccessor, public TRowset<TAccessor>
 
 ## <a name="caccessorrowsetbind"></a><a name="bind"></a> CAccessorRowset:: Bind
 
-`bBind` **`false`** [CCommand:: Open](../../data/oledb/ccommand-open.md)에서로 지정한 경우 바인딩을 만듭니다.
+`bBind` **`false`** [CCommand:: Open](./ccommand-class.md#open)에서로 지정한 경우 바인딩을 만듭니다.
 
 ### <a name="syntax"></a>구문
 

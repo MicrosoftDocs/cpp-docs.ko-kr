@@ -35,12 +35,12 @@ helpviewer_keywords:
 - dates, handling in MFC
 - time, handling in MFC
 ms.assetid: e718f294-16ec-4649-88b6-a4dbae5178fb
-ms.openlocfilehash: 9ebbab02860daaeb57c24d3e0901666861adfc2b
-ms.sourcegitcommit: c8f1605354724a13566bc3b0fac3c5d98265f1d0
+ms.openlocfilehash: 38c98793e7e1b22d166de8a869c57f510de7b284
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "89062160"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91500172"
 ---
 # <a name="coledatetime-class"></a>COleDateTime 클래스
 
@@ -86,7 +86,7 @@ class COleDateTime
 
 ### <a name="public-operators"></a>Public 연산자
 
-|이름|설명|
+|속성|설명|
 |----------|-----------------|
 |[COleDateTime:: operator = =, COleDateTime:: operator < 등](#coledatetime_relational_operators)|두 `COleDateTime` 값을 비교 합니다.|
 |[COleDateTime:: operator +, COleDateTime:: operator-](#operator_add_-)|값을 더하거나 뺍니다 `COleDateTime` .|
@@ -96,7 +96,7 @@ class COleDateTime
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|이름|설명|
+|속성|설명|
 |----------|-----------------|
 |[COleDateTime:: m_dt](#m_dt)|`DATE`이 개체의 내부를 포함 `COleDateTime` 합니다.|
 |[COleDateTime:: m_status](#m_status)|이 개체의 상태를 포함 `COleDateTime` 합니다.|
@@ -120,7 +120,7 @@ class COleDateTime
 > [!CAUTION]
 > 위의 표에서 day 값은 1899 년 12 월 30 일 자정 이전에 음수 이지만 시간 값은 그렇지 않습니다. 예를 들어, 6:00 AM은 해당 일을 나타내는 정수가 양수인 지 (12 월 1899 30 일 이후) 또는 음수 (1899 12 월 30 일까 지)에 관계 없이 항상 소수 값 0.25로 표시 됩니다. 즉, 단순한 부동 소수점 비교가 `COleDateTime` 7:00 am을 나타내는 6:00 오전 12/29/1899을 나타내는을 잘못 정렬 **later** 합니다.
 
-클래스는 100 년 1 `COleDateTime` 월 1 일부 터 9999 년 12 월 31 일까 지 날짜를 처리 합니다. 이 `COleDateTime` 클래스는 그레고리오 력 달력을 사용 하며, 율리우스 날짜를 지원 하지 않습니다. `COleDateTime` 일광 절약 시간을 무시 합니다. ( [날짜 및 시간: 자동화 지원](../../atl-mfc-shared/date-and-time-automation-support.md)을 참조 하세요.)
+클래스는 100 년 1 `COleDateTime` 월 1 일부 터 9999 년 12 월 31 일까 지 날짜를 처리 합니다. 이 `COleDateTime` 클래스는 그레고리오 력 달력을 사용 하며, 율리우스 날짜를 지원 하지 않습니다. `COleDateTime` 일광 절약 시간을 무시 합니다. ( [날짜 및 시간: 자동화 지원](../date-and-time.md)을 참조 하세요.)
 
 > [!NOTE]
 > `%y`1900에서 시작 하는 날짜에 대해서만 형식을 사용 하 여 두 자리 연도를 검색할 수 있습니다. `%y`1900 이전 날짜에 형식을 사용 하는 경우 코드에서 어설션 오류를 생성 합니다.
@@ -129,13 +129,13 @@ class COleDateTime
 
 `COleDateTime`100 보다 작은 날짜를 사용 하 여 개체를 만드는 경우에는 날짜가 수락 되지만,,,, 및에 대 한 후속 호출에 `GetYear` `GetMonth` `GetDay` `GetHour` `GetMinute` `GetSecond` 실패 하 고-1이 반환 됩니다. 이전에는 두 자리 날짜를 사용할 수 있지만 MFC 4.2 이상에서는 날짜가 100 이상 이어야 합니다.
 
-문제를 방지 하려면 네 자리 날짜를 지정 합니다. 예를 들면 다음과 같습니다.
+문제를 방지 하려면 네 자리 날짜를 지정 합니다. 다음은 그 예입니다.
 
 [!code-cpp[NVC_ATLMFC_Utilities#1](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_1.cpp)]
 
 값에 대 한 기본 산술 연산은 `COleDateTime` 동반 클래스 [COleDateTimeSpan](../../atl-mfc-shared/reference/coledatetimespan-class.md)를 사용 합니다. `COleDateTimeSpan` 값은 시간 간격을 정의 합니다. 이러한 클래스 간의 관계는 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 과 [ctimespan](../../atl-mfc-shared/reference/ctimespan-class.md)간의 관계와 비슷합니다.
 
-및 클래스에 대 한 자세한 내용은 `COleDateTime` `COleDateTimeSpan` [날짜 및 시간: 자동화 지원](../../atl-mfc-shared/date-and-time-automation-support.md)문서를 참조 하세요.
+및 클래스에 대 한 자세한 내용은 `COleDateTime` `COleDateTimeSpan` [날짜 및 시간: 자동화 지원](../date-and-time.md)문서를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -234,7 +234,7 @@ COleDateTime(const DBTIMESTAMP& timeStamp) throw();
 
 |날짜/시간 구성 요소|유효 범위|
 |--------------------------|-----------------|
-|year|100-9999|
+|연도|100-9999|
 |month|0 - 12|
 |일|0 - 31|
 |hour|0 - 23|
@@ -267,7 +267,7 @@ COleDateTime(const DBTIMESTAMP& timeStamp) throw();
 
 자세한 내용은 Windows SDK [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) 및 [FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime) 구조를 참조 하세요.
 
-값의 범위에 대 한 자세한 내용은 `COleDateTime` [날짜 및 시간: 자동화 지원](../../atl-mfc-shared/date-and-time-automation-support.md)문서를 참조 하세요.
+값의 범위에 대 한 자세한 내용은 `COleDateTime` [날짜 및 시간: 자동화 지원](../date-and-time.md)문서를 참조 하세요.
 
 > [!NOTE]
 > 매개 변수를 사용 하는 생성자는 `DBTIMESTAMP` OLEDB가 포함 된 경우에만 사용할 수 있습니다.
@@ -653,7 +653,7 @@ int GetSecond() const throw();
 > [!NOTE]
 > `COleDateTime`클래스는 윤 초를 지원 하지 않습니다.
 
-의 구현에 대 한 자세한 내용은 `COleDateTime` [날짜 및 시간: 자동화 지원](../../atl-mfc-shared/date-and-time-automation-support.md)문서를 참조 하세요.
+의 구현에 대 한 자세한 내용은 `COleDateTime` [날짜 및 시간: 자동화 지원](../date-and-time.md)문서를 참조 하세요.
 
 이 개체의 값을 쿼리 하는 다른 멤버 함수에 대 한 자세한 내용은 `COleDateTime` 다음 멤버 함수를 참조 하세요.
 
@@ -735,7 +735,7 @@ enum DateTimeStatus
 
 - [operator + =,-=](#operator_add_eq_-_eq)
 
-값의 범위에 대 한 자세한 내용은 `COleDateTime` [날짜 및 시간: 자동화 지원](../../atl-mfc-shared/date-and-time-automation-support.md)문서를 참조 하세요.
+값의 범위에 대 한 자세한 내용은 `COleDateTime` [날짜 및 시간: 자동화 지원](../date-and-time.md)문서를 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -773,7 +773,7 @@ int GetYear() const throw();
 
 - [GetDayOfYear](#getdayofyear)
 
-값의 범위에 대 한 자세한 내용은 `COleDateTime` [날짜 및 시간: 자동화 지원](../../atl-mfc-shared/date-and-time-automation-support.md)문서를 참조 하세요.
+값의 범위에 대 한 자세한 내용은 `COleDateTime` [날짜 및 시간: 자동화 지원](../date-and-time.md)문서를 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -792,7 +792,7 @@ DATE m_dt;
 > [!CAUTION]
 > 이 함수에서 반환 하는 포인터에 의해 액세스 되는 개체의 값을 변경 `DATE` 하면이 개체의 값이 변경 됩니다 `COleDateTime` . 이 개체의 상태는 변경 되지 않습니다 `COleDateTime` .
 
-개체의 구현에 대 한 자세한 내용은 `DATE` [날짜 및 시간: 자동화 지원](../../atl-mfc-shared/date-and-time-automation-support.md)문서를 참조 하세요.
+개체의 구현에 대 한 자세한 내용은 `DATE` [날짜 및 시간: 자동화 지원](../date-and-time.md)문서를 참조 하세요.
 
 ## <a name="coledatetimem_status"></a><a name="m_status"></a> COleDateTime:: m_status
 
@@ -847,7 +847,7 @@ COleDateTime& operator=(const UDATE& uDate) throw();
 
 자세한 내용은 Windows SDK [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) 및 [FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime) 구조를 참조 하세요.
 
-값의 범위에 대 한 자세한 내용은 `COleDateTime` [날짜 및 시간: 자동화 지원](../../atl-mfc-shared/date-and-time-automation-support.md)문서를 참조 하세요.
+값의 범위에 대 한 자세한 내용은 `COleDateTime` [날짜 및 시간: 자동화 지원](../date-and-time.md)문서를 참조 하세요.
 
 ## <a name="coledatetimeoperator---"></a><a name="operator_add_-"></a> COleDateTime:: operator +,-
 
@@ -873,7 +873,7 @@ COleDateTimeSpan operator-(const COleDateTime& date) const throw();
 
 유효한, 유효 하지 않음 및 null 상태 값에 대 한 자세한 내용은 [m_status](#m_status) 멤버 변수를 참조 하십시오.
 
-값의 범위에 대 한 자세한 내용은 `COleDateTime` [날짜 및 시간: 자동화 지원](../../atl-mfc-shared/date-and-time-automation-support.md)문서를 참조 하세요.
+값의 범위에 대 한 자세한 내용은 `COleDateTime` [날짜 및 시간: 자동화 지원](../date-and-time.md)문서를 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -900,7 +900,7 @@ COleDateTime& operator-=(COleDateTimeSpan dateSpan) throw();
 
 **+=** 및 **-=** 연산자는 `COleDateTime` 개체가 null로 설정 된 경우를 어설션 합니다. 예는 [COleDateTime 관계형 연산자](#coledatetime_relational_operators) 를 참조 하세요.
 
-값의 범위에 대 한 자세한 내용은 `COleDateTime` [날짜 및 시간: 자동화 지원](../../atl-mfc-shared/date-and-time-automation-support.md)문서를 참조 하세요.
+값의 범위에 대 한 자세한 내용은 `COleDateTime` [날짜 및 시간: 자동화 지원](../date-and-time.md)문서를 참조 하세요.
 
 ## <a name="coledatetimeoperator-date"></a><a name="operator_date"></a> COleDateTime:: operator DATE
 
@@ -912,7 +912,7 @@ operator DATE() const throw();
 
 ### <a name="remarks"></a>설명
 
-이 연산자는 `DATE` 이 개체에서 값이 복사 되는 개체를 반환 `COleDateTime` 합니다. 개체의 구현에 대 한 자세한 내용은 `DATE` [날짜 및 시간: 자동화 지원](../../atl-mfc-shared/date-and-time-automation-support.md)문서를 참조 하세요.
+이 연산자는 `DATE` 이 개체에서 값이 복사 되는 개체를 반환 `COleDateTime` 합니다. 개체의 구현에 대 한 자세한 내용은 `DATE` [날짜 및 시간: 자동화 지원](../date-and-time.md)문서를 참조 하세요.
 
 `DATE`연산자는 `COleDateTime` 개체가 null로 설정 된 경우를 어설션 합니다. 예는 [COleDateTime 관계형 연산자](#coledatetime_relational_operators) 를 참조 하세요.
 
@@ -975,7 +975,7 @@ VAR_DATEVALUEONLY 경우 시간 값은 시간 0 또는 자정으로 설정 됩�
 
 문자열을 날짜/시간 값으로 변환할 수 없거나 숫자 오버플로가 발생 한 경우에는이 개체의 상태가 잘못 된 것입니다 `COleDateTime` .
 
-값의 범위 및 구현에 대 한 자세한 내용은 `COleDateTime` [날짜 및 시간: 자동화 지원](../../atl-mfc-shared/date-and-time-automation-support.md)문서를 참조 하세요.
+값의 범위 및 구현에 대 한 자세한 내용은 `COleDateTime` [날짜 및 시간: 자동화 지원](../date-and-time.md)문서를 참조 하세요.
 
 ## <a name="coledatetimesetdate"></a><a name="setdate"></a> COleDateTime:: SetDate
 
@@ -1048,7 +1048,7 @@ int SetDate(
 
 - [GetDayOfYear](#getdayofyear)
 
-값의 범위에 대 한 자세한 내용은 `COleDateTime` [날짜 및 시간: 자동화 지원](../../atl-mfc-shared/date-and-time-automation-support.md)문서를 참조 하세요.
+값의 범위에 대 한 자세한 내용은 `COleDateTime` [날짜 및 시간: 자동화 지원](../date-and-time.md)문서를 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -1132,7 +1132,7 @@ int SetDateTime(
 
 - [GetDayOfYear](#getdayofyear)
 
-값의 범위에 대 한 자세한 내용은 `COleDateTime` [날짜 및 시간: 자동화 지원](../../atl-mfc-shared/date-and-time-automation-support.md)문서를 참조 하세요.
+값의 범위에 대 한 자세한 내용은 `COleDateTime` [날짜 및 시간: 자동화 지원](../date-and-time.md)문서를 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -1225,7 +1225,7 @@ int SetTime(
 
 - [GetDayOfYear](#getdayofyear)
 
-값의 범위에 대 한 자세한 내용은 `COleDateTime` [날짜 및 시간: 자동화 지원](../../atl-mfc-shared/date-and-time-automation-support.md)문서를 참조 하세요.
+값의 범위에 대 한 자세한 내용은 `COleDateTime` [날짜 및 시간: 자동화 지원](../date-and-time.md)문서를 참조 하세요.
 
 ### <a name="example"></a>예제
 
