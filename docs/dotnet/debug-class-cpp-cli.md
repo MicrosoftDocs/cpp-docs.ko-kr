@@ -6,26 +6,26 @@ helpviewer_keywords:
 - .NET Framework [C++], Debug class
 - Debug class
 ms.assetid: 076bd528-1b6f-4e8a-a372-eb5849cf969a
-ms.openlocfilehash: 3a262a0d2ef429cb94f4648eb7c7180e7b130279
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 47e1b949cb6e998508a3bd362b1c74961cf4cc23
+ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62393781"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91414154"
 ---
 # <a name="debug-class-ccli"></a>Debug 클래스(C++/CLI)
 
-Visual C++ 어플리케이션에서 <xref:System.Diagnostics.Debug> 클래스를 사용하더라도, 디버그 빌드와 릴리스 빌드 모두 똑같이 동작합니다.
+Visual C++ 응용 프로그램에서를 사용 하는 경우 <xref:System.Diagnostics.Debug> 디버그와 릴리스 빌드 간에 동작이 변경 되지 않습니다.
 
 ## <a name="remarks"></a>설명
 
-<xref:System.Diagnostics.Trace> 클래스가 수행하는 기능은 Debug 클래스가 수행하는 기능과 동일합니다. 하지만, `#ifdef` 클래스는 TRACE 심볼의 정의 여부에 의존적입니다.
+의 동작은 <xref:System.Diagnostics.Trace> Debug 클래스의 동작과 동일 하지만 정의 되는 기호 추적에 종속 됩니다. 즉, `#ifdef` 릴리스 빌드에서 디버그 동작을 방지 하기 위해 추적 관련 코드를 사용 해야 합니다.
 
-## <a name="example"></a>예제
+## <a name="example-always-executes-output-statements"></a>예: 항상 output 문 실행
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
 
-아래의 샘플은 **/DDEBUG** 또는 **/DTRACE** 옵션을 사용하여 컴파일하더라도, 항상 출력문을 수행한다는것을 보여줍니다.
+다음 샘플에서는 **/DDEBUG** 또는 **/DTRACE**를 사용 하 여 컴파일 하는지 여부에 관계 없이 항상 output 문을 실행 합니다.
 
 ### <a name="code"></a>코드
 
@@ -58,11 +58,11 @@ Hello World.
 test
 ```
 
-## <a name="example"></a>예제
+## <a name="example-use-ifdef-and-endif-directives"></a>예: #ifdef 및 #endif 지시문 사용
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
 
-예상했던 동작을 얻고 싶은 경우(즉, 릴리스 빌드에서 "test" 라는 결과가 출력되지 않게 하려면), `#ifdef` 지시문이나 `#endif` 지시문을 사용해야 합니다. 바로 이전의 샘플 코드가 바로 아래 예제의 해결 방법을 보여주는 예제였습니다.
+예상 되는 동작을 가져오려면 (즉, 릴리스 빌드에 대해 "테스트" 출력이 인쇄 되지 않음) 및 지시문을 사용 해야 합니다 `#ifdef` `#endif` . 위의 코드 샘플은이 수정 사항을 보여 주기 위해 아래에서 수정 되었습니다.
 
 ### <a name="code"></a>코드
 
@@ -91,6 +91,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[C++/CLI를 사용한 .NET 프로그래밍(Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+[C + +/CLI를 사용한 .NET 프로그래밍 (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

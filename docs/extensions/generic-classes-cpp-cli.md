@@ -9,12 +9,12 @@ helpviewer_keywords:
 - generic classes
 - generics [C++], declaring generic classes
 ms.assetid: 0beb99e1-1ec4-4fee-9836-ce9657d67a3a
-ms.openlocfilehash: 894bbffcc73693e5d0976831d65df54b09c853d2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: fd287d8e9fe08ccd42436569eafee3f6935700e2
+ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216026"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91414128"
 ---
 # <a name="generic-classes-ccli"></a>제네릭 클래스(C++/CLI)
 
@@ -157,7 +157,7 @@ ref class MyClass : IInterface<ItemType> {};
 
 제네릭 클래스의 인스턴스 변수에 바깥쪽 클래스의 형식 매개 변수가 포함된 형식 및 변수 이니셜라이저를 사용할 수 있습니다.
 
-## <a name="example"></a>예제
+## <a name="example-different-generic-classes"></a>예: 다른 제네릭 클래스
 
 다음 예제에서는 \<ItemType> 적절 한 형식 인수 ( **`int`** , **`double`** 및 **문자열**)를 사용 하 여 제네릭 클래스 MyClass의 세 가지 인스턴스를 만듭니다.
 
@@ -205,7 +205,7 @@ String field = ABC
 
 정적 변수는 바깥쪽 클래스의 형식 매개 변수를 모두 사용할 수 있습니다.
 
-## <a name="example"></a>예제
+## <a name="example-use-static-variables"></a>예: 정적 변수 사용
 
 다음 예제에서는 제네릭 클래스 내에서 정적 필드 및 정적 생성자를 사용하는 방법을 보여 줍니다.
 
@@ -282,7 +282,7 @@ Test1
 
 해당 메서드의 본문에서도 이러한 형식 매개 변수를 사용할 수 있습니다.
 
-## <a name="example"></a>예제
+## <a name="example-declare-non-generic-method"></a>예제: 제네릭이 아닌 메서드 선언
 
 다음 예제에서는 제네릭 클래스 `MyClass<ItemType>` 내에서 제네릭이 아닌 메서드 `ProtectData`를 선언합니다. 이 메서드는 생성된 개방형 형식을 통해 시그니처에 클래스 형식 매개 변수 `ItemType`을 사용합니다.
 
@@ -341,9 +341,9 @@ Amount: $123.00**
 
 ## <a name="generic-methods-in-generic-classes"></a>제네릭 클래스의 제네릭 메서드
 
-제네릭 클래스와 제네릭이 아닌 클래스 둘 다에서 제네릭 메서드를 선언할 수 있습니다. 예를 들어:
+제네릭 클래스와 제네릭이 아닌 클래스 둘 다에서 제네릭 메서드를 선언할 수 있습니다. 예를 들면 다음과 같습니다.
 
-## <a name="example"></a>예제
+## <a name="example-declare-generic-and-non-generic-methods"></a>예제: 제네릭 및 제네릭이 아닌 메서드 선언
 
 ```cpp
 // generics_method2.cpp
@@ -369,7 +369,7 @@ public:
 
 정적, 인스턴스, 가상 메서드 등 제네릭 클래스의 모든 메서드 유형이 제네릭일 수 있습니다.
 
-## <a name="example"></a>예제
+## <a name="example-declare-and-use-generic-methods"></a>예제: 제네릭 메서드 선언 및 사용
 
 다음 예제에서는 제네릭 클래스 내에서 제네릭 메서드를 선언하고 사용하는 방법을 보여 줍니다.
 
@@ -453,9 +453,9 @@ ref class Outer {
 
 생성된 중첩 제네릭 형식을 명명하는 경우, 내부 형식이 외부 형식의 형식 매개 변수에 의해 암시적으로 매개 변수화되었더라도 내부 형식의 형식 매개 변수 목록에 외부 형식의 형식 매개 변수가 포함되지 않습니다. 위의 경우에서 생성된 형식의 이름은 `Outer<int>::Inner<string>`가 됩니다.
 
-다음 예제에서는 제네릭 클래스에 중첩 형식을 사용하여 연결된 목록을 작성하고 읽는 방법을 보여 줍니다.
+## <a name="example-build-and-read-linked-list"></a>예: 빌드 및 링크 된 목록 읽기
 
-## <a name="example"></a>예제
+다음 예제에서는 제네릭 클래스에 중첩 형식을 사용하여 연결된 목록을 작성하고 읽는 방법을 보여 줍니다.
 
 ```cpp
 // generics_linked_list.cpp
@@ -556,7 +556,7 @@ Reading nodes:
 
 - 속성, 이벤트, 인덱서 및 연산자 자체는 매개 변수화할 수 없습니다.
 
-## <a name="example"></a>예제
+## <a name="example-declare-instance-property"></a>예: instance 속성 선언
 
 이 예제에서는 제네릭 클래스 내의 인스턴스 속성 선언을 보여 줍니다.
 
@@ -596,7 +596,7 @@ int main() {
 John, 234
 ```
 
-## <a name="example"></a>예제
+## <a name="example-generic-class-with-event"></a>예: 이벤트를 포함 하는 제네릭 클래스
 
 다음 예제에서는 이벤트가 포함된 제네릭 클래스를 보여 줍니다.
 
@@ -663,7 +663,7 @@ int main() {
 
 Visual C++ 언어 참조에 명시된 차이점을 제외하고, 제네릭 구조체 선언 및 사용 규칙은 제네릭 클래스와 같습니다.
 
-## <a name="example"></a>예제
+## <a name="example-declare-generic-struct"></a>예제: 제네릭 구조체 선언
 
 다음 예제에서는 하나의 필드인를 사용 하 여 제네릭 구조체를 선언 `MyGenStruct` `myField` 하 고 다른 형식 ( **`int`** ,,)의 값을 **`double`** `String^` 이 필드에 할당 합니다.
 

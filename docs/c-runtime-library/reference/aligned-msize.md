@@ -28,12 +28,12 @@ helpviewer_keywords:
 - aligned_msize function
 - _aligned_msize function
 ms.assetid: 10995edc-2110-4212-9ca9-5e0220a464f4
-ms.openlocfilehash: e3ff243ba9a135cf660d09fc5b3690f531702aab
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 1037c63af17a844959bc72e42da2c33267b43004
+ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912907"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91414037"
 ---
 # <a name="_aligned_msize"></a>_aligned_msize
 
@@ -42,7 +42,7 @@ ms.locfileid: "82912907"
 ## <a name="syntax"></a>구문
 
 ```C
-size_t _msize(
+size_t _aligned_msize(
    void *memblock,
    size_t alignment,
    size_t offset
@@ -54,13 +54,13 @@ size_t _msize(
 *memblock*<br/>
 메모리 블록에 대한 포인터입니다.
 
-*정렬(alignment)*<br/>
+*할당*<br/>
 맞춤 값으로 2의 정수 거듭제곱이어야 합니다.
 
 *offset*<br/>
 맞춤을 강제하는 메모리 할당으로의 오프셋입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 크기(바이트)를 부호 없는 정수로 반환합니다.
 
@@ -70,7 +70,7 @@ size_t _msize(
 
 응용 프로그램이 C 런타임 라이브러리의 디버그 버전에 연결 된 경우 **_aligned_msize** 은 [_aligned_msize_dbg](aligned-msize-dbg.md)으로 확인 됩니다. 디버깅 프로세스 동안 힙을 관리하는 방법에 대한 자세한 내용은 [CRT 디버그 힙](/visualstudio/debugger/crt-debug-heap-details)을 참조하세요.
 
-이 함수는 해당 매개 변수의 유효성을 검사합니다. *Memblock* 이 null 포인터 이거나 *맞춤이* 2의 거듭제곱이 아닌 경우 **_Msize** 는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 오류가 처리 되 면 함수는 **errno** 를 **EINVAL** 로 설정 하 고-1을 반환 합니다.
+이 함수는 해당 매개 변수의 유효성을 검사합니다. *Memblock* 이 null 포인터 이거나 *맞춤이* 2의 거듭제곱이 아닌 경우 **_Aligned_msize** 는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 오류가 처리 되 면 함수는 **errno** 를 **EINVAL** 로 설정 하 고-1을 반환 합니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -78,7 +78,7 @@ size_t _msize(
 
 |루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
-|**_msize**|\<malloc.h>|
+|**_aligned_msize**|\<malloc.h>|
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
@@ -86,6 +86,6 @@ size_t _msize(
 
 모든 버전의 [C 런타임 라이브러리](../../c-runtime-library/crt-library-features.md)입니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [메모리 할당](../../c-runtime-library/memory-allocation.md)<br/>

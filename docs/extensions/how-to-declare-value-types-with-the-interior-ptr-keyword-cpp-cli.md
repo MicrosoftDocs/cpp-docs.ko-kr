@@ -6,12 +6,12 @@ helpviewer_keywords:
 - _ptr keyword
 - value types, declaring
 ms.assetid: 49eea66e-eeba-49bd-95b0-ba297be436e3
-ms.openlocfilehash: 46f8c39affe5a3c0ad8648162f0fde5371eb30ca
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b5d17f3621271faa03e30e24f259d8d7cebbb491
+ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87195579"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91414492"
 ---
 # <a name="how-to-declare-value-types-with-the-interior_ptr-keyword-ccli"></a>방법: interior_ptr 키워드를 사용하여 값 형식 선언(C++/CLI)
 
@@ -20,9 +20,9 @@ ms.locfileid: "87195579"
 > [!IMPORTANT]
 > 이 언어 기능은 `/clr` 컴파일러 옵션에서 지원하지만 `/ZW` 컴파일러 옵션에서는 지원하지 않습니다.
 
-## <a name="example"></a>예제
+## <a name="example-interior_ptr-with-value-type"></a>예: 값 형식의 interior_ptr
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
 
 다음 C++/CLI 샘플에서는 값 형식에 **interior_ptr**을 사용하는 방법을 보여 줍니다.
 
@@ -65,9 +65,9 @@ int main() {
 3
 ```
 
-## <a name="example"></a>예제
+## <a name="example-this-pointer"></a>예: this 포인터
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
 
 값 형식에서 **`this`** 포인터는 interior_ptr로 평가 됩니다.
 
@@ -87,9 +87,9 @@ value struct V {
 };
 ```
 
-## <a name="example"></a>예제
+## <a name="example-address-of-operator"></a>예: 주소 연산자
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
 
 다음 샘플은 정적 멤버에 주소 연산자를 사용하는 방법을 보여 줍니다.
 
@@ -127,6 +127,6 @@ int main() {
 hello
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [interior_ptr (c + +/CLI)](interior-ptr-cpp-cli.md)

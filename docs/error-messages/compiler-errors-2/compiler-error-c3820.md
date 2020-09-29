@@ -1,29 +1,28 @@
 ---
 title: 컴파일러 오류 C3820
-ms.date: 11/04/2016
+description: Microsoft C/c + + 컴파일러 오류가 발생 하면 C3820이 발생 합니다.
+ms.date: 09/26/2020
 f1_keywords:
 - C3820
 helpviewer_keywords:
 - C3820
 ms.assetid: 98638838-068f-4a62-b8d5-1068368a0ff1
-ms.openlocfilehash: 2b6af6b665f3b9bc7d5aa12e7aa2096e17a158be
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 2c98605c11e43bbeb46d2ce011a1b998f1755fe9
+ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80165602"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91414505"
 ---
 # <a name="compiler-error-c3820"></a>컴파일러 오류 C3820
 
-'name': 이니셜라이저는 관리되어야 합니다.
+> '*name*': 이니셜라이저는 관리 되어야 합니다.
 
-관리되는 형식에 대한 *name* 이니셜라이저도 관리해야 합니다.
+## <a name="remarks"></a>설명
 
-### <a name="to-correct-this-error"></a>이 오류를 해결하려면
-
-1. 관리되는 이니셜라이저 메서드를 지정합니다.
+관리되는 형식에 대한 *name* 이니셜라이저도 관리해야 합니다. 이 오류를 해결 하려면 관리 되는 이니셜라이저 메서드를 지정 합니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[이니셜라이저](../../cpp/initializers.md)<br/>
-[추가 시작 고려 사항](../../cpp/additional-startup-considerations.md)
+[이니셜라이저에서](../../cpp/initializers.md)\
+[`main` 함수 및 명령줄 인수](../../cpp/main-function-command-line-args.md)

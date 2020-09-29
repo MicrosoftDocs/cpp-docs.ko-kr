@@ -6,12 +6,12 @@ helpviewer_keywords:
 - using the transformer class [Concurrency Runtime]
 - using the call class [Concurrency Runtime]
 ms.assetid: df715ce4-8507-41ca-b204-636d11707a73
-ms.openlocfilehash: cecb8b2e6ab3f3ac8b010007018b76e6f58e0ed8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b629d0e0e11388e212c56b8e1f6bea290368c884
+ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87205888"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91414349"
 ---
 # <a name="how-to-provide-work-functions-to-the-call-and-transformer-classes"></a>방법: call 및 transformer 클래스에 작업 함수 제공
 
@@ -21,7 +21,7 @@ ms.locfileid: "87205888"
 
 예시를 위해이 항목의 모든 예제에서는 클래스를 사용 `call` 합니다. 클래스를 사용 하는 예제는 `transformer` [방법: 데이터 파이프라인에서 변환기 사용](../../parallel/concrt/how-to-use-transformer-in-a-data-pipeline.md)을 참조 하세요.
 
-## <a name="example"></a>예제
+## <a name="example-call-class"></a>예: call 클래스
 
 다음 예제에서는 클래스를 사용 하는 일반적인 방법을 보여 줍니다 `call` . 이 예제에서는 람다 함수를 생성자에 전달 `call` 합니다.
 
@@ -33,13 +33,13 @@ ms.locfileid: "87205888"
 13 squared is 169.
 ```
 
-## <a name="example"></a>예제
+## <a name="example-call-class-with-function-object"></a>예제: 함수 개체를 사용 하 여 클래스 호출
 
 다음 예제는 `call` 함수 개체 (함수)와 함께 클래스를 사용 한다는 점을 제외 하 고는 이전 예제와 유사 합니다.
 
 [!code-cpp[concrt-call-functor#1](../../parallel/concrt/codesnippet/cpp/how-to-provide-work-functions-to-the-call-and-transformer-classes_2.cpp)]
 
-## <a name="example"></a>예제
+## <a name="example-functions-to-bind-call-object"></a>예: call 개체를 바인딩하는 함수
 
 다음 예제는 [std:: bind1st](../../standard-library/functional-functions.md#bind1st) 및 [std:: mem_fun](../../standard-library/functional-functions.md#mem_fun) 함수를 사용 하 여 개체를 클래스 메서드에 바인딩하는 점을 제외 하 고는 이전 예제와 유사 합니다 `call` .
 

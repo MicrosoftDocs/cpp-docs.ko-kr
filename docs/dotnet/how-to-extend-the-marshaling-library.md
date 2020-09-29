@@ -5,12 +5,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - Marshaling Library, extending
 ms.assetid: 4c4a56d7-1d44-4118-b85f-f9686515e6e9
-ms.openlocfilehash: 2a3dccd33b7ad2caee64e31e0f79180dda4649be
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 071ea72a2aa03dcf16eb0f09e121eba4514e5828
+ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216390"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91414609"
 ---
 # <a name="how-to-extend-the-marshaling-library"></a>방법: 마샬링 라이브러리 확장명
 
@@ -102,7 +102,7 @@ namespace msclr {
 }
 ```
 
-## <a name="example"></a>예제
+## <a name="example-extend-marshaling-library"></a>예: 마샬링 라이브러리 확장
 
 다음 예제에서는 컨텍스트가 필요 하지 않은 변환으로 마샬링 라이브러리를 확장 합니다. 이 예제에서 코드는 직원 정보를 네이티브 데이터 형식에서 관리 되는 데이터 형식으로 변환 합니다.
 
@@ -164,7 +164,7 @@ Managed address: 123 Main Street
 Managed zip code: 98111
 ```
 
-## <a name="example"></a>예제
+## <a name="example-convert-employee-information"></a>예: 직원 정보 변환
 
 다음 예에서는 employee 정보를 관리 되는 데이터 형식에서 네이티브 데이터 형식으로 변환 합니다. 이 변환에는 마샬링 컨텍스트가 필요 합니다.
 

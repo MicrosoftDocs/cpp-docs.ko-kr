@@ -5,18 +5,18 @@ ms.topic: reference
 helpviewer_keywords:
 - generics [C++], consuming from .NET languages
 ms.assetid: e6330ef5-e907-432e-b527-7a22f5899639
-ms.openlocfilehash: 303fa73f09220b2139d681bf3109fd843299a900
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: bea22a0d9fdc5c1ddbd9da2af7078228a6315e80
+ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80172414"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91414141"
 ---
 # <a name="consuming-generics-ccli"></a>제네릭 사용(C++/CLI)
 
 한 .NET(또는 UWP) 언어로 작성된 제네릭을 다른 언어에서 사용할 수도 있습니다. 템플릿과는 달리, 컴파일된 어셈블리의 제네릭은 여전히 제네릭으로 남아있습니다. 따라서 제네릭 형식이 정의된 어셈블리보다 다른 어셈블리 및 다른 언어로 제네릭 형식을 인스턴스화할 수 있습니다.
 
-## <a name="example"></a>예제
+## <a name="example-generic-class-defined-in-c"></a>예: C에 정의 된 제네릭 클래스 #
 
 ### <a name="description"></a>Description
 
@@ -80,7 +80,7 @@ public class CircularList<ItemType> {
 }
 ```
 
-## <a name="example"></a>예제
+## <a name="example-consume-assembly-authored-in-c"></a>예제: C에서 작성 한 어셈블리 사용 #
 
 ### <a name="description"></a>Description
 
@@ -118,6 +118,6 @@ int main() {
 10
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [제네릭](generics-cpp-component-extensions.md)

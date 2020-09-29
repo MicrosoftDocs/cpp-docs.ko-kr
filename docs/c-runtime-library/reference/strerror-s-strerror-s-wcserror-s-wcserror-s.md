@@ -1,6 +1,7 @@
 ---
 title: strerror_s, _strerror_s, _wcserror_s, __wcserror_s
-ms.date: 06/09/2020
+description: 시스템 오류 메시지를 얻거나 사용자 제공 오류 메시지를 인쇄 하기 위해 향상 된 보안 기능을 제공 합니다.
+ms.date: 09/25/2020
 api_name:
 - __wcserror_s
 - _strerror_s
@@ -46,12 +47,12 @@ helpviewer_keywords:
 - wcserror_s function
 - error messages, getting
 ms.assetid: 9e5b15a0-efe1-4586-b7e3-e1d7c31a03d6
-ms.openlocfilehash: 91be8803a0695670e7afe673b25b54fccde40a9c
-ms.sourcegitcommit: 8167c67d76de58a7c2df3b4dcbf3d53e3b151b77
+ms.openlocfilehash: 4e594a37425714ef521c083785120e2262225b19
+ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84664328"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91414622"
 ---
 # <a name="strerror_s-_strerror_s-_wcserror_s-__wcserror_s"></a>strerror_s, _strerror_s, _wcserror_s, __wcserror_s
 
@@ -80,6 +81,9 @@ errno_t __wcserror_s(
    size_t sizeInWords,
    const wchar_t *strErrMsg
 );
+```
+
+```cpp
 template <size_t size>
 errno_t strerror_s(
    char (&buffer)[size],
@@ -104,26 +108,26 @@ errno_t __wcserror_s(
 
 ### <a name="parameters"></a>매개 변수
 
-*버퍼*<br/>
+*버퍼*\
 오류 문자열을 저장할 버퍼입니다.
 
-*sizeInBytes*<br/>
+*sizeInBytes*\
 버퍼의 바이트 수입니다.
 
-*sizeInWords*<br/>
+*sizeInWords*\
 버퍼의 단어 수입니다.
 
-*errnum*<br/>
+*errnum*\
 오류 번호입니다.
 
-*strErrMsg*<br/>
+*strErrMsg*\
 사용자 제공 메시지
 
 ## <a name="return-value"></a>반환 값
 
 성공시 0, 실패시 오류 코드.
 
-### <a name="error-condtions"></a>오류 조건
+### <a name="error-conditions"></a>오류 조건
 
 |*버퍼*|*sizeInBytes/Sizeinbytes*|*strErrMsg*|*버퍼* 의 내용|
 |--------------|------------------------|-----------------|--------------------------|
@@ -131,6 +135,8 @@ errno_t __wcserror_s(
 |any|0|any|수정 안 됨|
 
 ## <a name="remarks"></a>설명
+
+**Strerror_s** 함수는 스레드로부터 안전 합니다.
 
 **Strerror_s** 함수는 *errnum* 을 오류 메시지 문자열로 매핑하여 *버퍼*에 문자열을 반환 합니다. **_strerror_s** 는 오류 번호를 사용 하지 않습니다. **errno** 의 현재 값을 사용 하 여 적절 한 메시지를 확인 합니다. 실제로는 **strerror_s** 또는 **_strerror_s** 모두 메시지를 인쇄 하지 않습니다. 즉, [fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md)와 같은 출력 함수를 호출 해야 합니다.
 
@@ -142,7 +148,7 @@ if (( _access( "datafile",2 )) == -1 )
 }
 ```
 
-*StrErrMsg* 가 **NULL**인 경우 **_strerror_s** 는 오류를 생성 한 마지막 라이브러리 호출에 대 한 시스템 오류 메시지를 포함 하는 *버퍼* 의 문자열을 반환 합니다. 오류 메시지 문자열은 줄 바꿈 문자('\n')로 종료됩니다. *StrErrMsg* 가 **NULL**과 같지 않은 경우 **_strerror_s** 는 문자열 메시지, 콜론, 공백, 오류가 발생 한 마지막 라이브러리 호출에 대 한 시스템 오류 메시지 및 줄 바꿈 문자를 순서 대로 포함 하는 *버퍼* 에 문자열을 반환 합니다. 문자열 메시지는 94자 이하여야 합니다.
+*StrErrMsg* 가 **NULL**인 경우 **_strerror_s** 는 오류를 생성 한 마지막 라이브러리 호출에 대 한 시스템 오류 메시지를 포함 하는 문자열을 *버퍼* 에 반환 합니다. 오류 메시지 문자열은 줄 바꿈 문자('\n')로 종료됩니다. *StrErrMsg* 가 **NULL**이 아닌 경우 **_strerror_s** 는 문자열 메시지, 콜론, 공백, 오류를 생성 한 마지막 라이브러리 호출에 대 한 시스템 오류 메시지 및 줄 바꿈 문자를 순서 대로 포함 하는 문자열을 *버퍼* 에 반환 합니다. 문자열 메시지는 94자 이하여야 합니다.
 
 이러한 함수는 길이가 버퍼 1의 크기를 초과 하는 경우 오류 메시지를 자릅니다. *버퍼* 의 결과 문자열은 항상 null로 종료 됩니다.
 
@@ -152,7 +158,7 @@ if (( _access( "datafile",2 )) == -1 )
 
 이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. 버퍼가 **NULL** 이거나 size 매개 변수가 0 이면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 함수는 **EINVAL** 를 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
 
-**_strerror_s**, **_WCSERROR_S**및 **__wcserror_s** ANSI 정의의 일부가 아니지만 대신 Microsoft 확장입니다. 이식성이 필요한 경우에는 사용 하지 마십시오. ANSI 호환성을 위해 **strerror_s** 를 대신 사용 합니다.
+**_strerror_s**, **_WCSERROR_S**및 **__wcserror_s** ANSI 정의의 일부가 아니지만 대신 Microsoft 확장입니다. 이식성이 필요한 경우에는 사용 하지 마세요. ANSI 호환성을 위해 **strerror_s** 를 대신 사용 합니다.
 
 C++에서는 템플릿 오버로드를 통해 이러한 함수를 사용하는 것이 더욱 간단해집니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으므로 크기 인수를 지정할 필요가 없습니다. 자세한 내용은 [안전한 템플릿 오버로드](../../c-runtime-library/secure-template-overloads.md)를 참조하세요.
 
@@ -181,7 +187,7 @@ C++에서는 템플릿 오버로드를 통해 이러한 함수를 사용하는 �
 
 ## <a name="see-also"></a>참고 항목
 
-[문자열 조작](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[clearerr](clearerr.md)<br/>
-[ferror](ferror.md)<br/>
-[perror, _wperror](perror-wperror.md)<br/>
+[문자열 조작](../../c-runtime-library/string-manipulation-crt.md)\
+[clearerr](clearerr.md)\
+[ferror](ferror.md)\
+[perror, _wperror](perror-wperror.md)

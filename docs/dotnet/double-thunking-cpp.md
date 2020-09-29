@@ -8,12 +8,12 @@ helpviewer_keywords:
 - /clr compiler option [C++], double thunking
 - interoperability [C++], double thunking
 ms.assetid: a85090b2-dc3c-498a-b40c-340db229dd6f
-ms.openlocfilehash: 6b2d3b4415b81dc5a9b7d0e36c154d9ee74b98ee
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3f0fc5567baaa0c4f3fea410770963adf51e8366
+ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221486"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91414011"
 ---
 # <a name="double-thunking-c"></a>이중 썽킹(C++)
 
@@ -29,9 +29,9 @@ ms.locfileid: "87221486"
 
 컴파일러는 불필요 한 이중 썽킹을 줄이기 위해 업데이트 되었습니다. 예를 들어, 시그니처에 관리 되는 형식이 있는 모든 함수 (반환 형식 포함)는 암시적으로로 표시 됩니다 `__clrcall` .
 
-## <a name="example"></a>예제
+## <a name="example-double-thunking"></a>예: 이중 썽킹
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
 
 다음 샘플에서는 이중 썽킹을 보여 줍니다. 네이티브 ( **/clr**을 사용 하지 않음)를 컴파일할 때의 가상 함수 호출은 `main` 의 복사 생성자에 대 한 호출을 생성 하 `T` 고 소멸자에 대 한 호출을 하나씩 생성 합니다. 가상 함수가 **/clr** 및로 선언 된 경우에도 비슷한 동작이 수행 됩니다 `__clrcall` . 그러나 **/clr**을 사용 하 여 컴파일한 경우 함수 호출은 복사 생성자에 대 한 호출을 생성 하지만 네이티브에서 관리 되는 썽크 때문에 복사 생성자에 대 한 다른 호출은 있습니다.
 
@@ -87,9 +87,9 @@ after calling struct S
 __thiscall T::~T(void)
 ```
 
-## <a name="example"></a>예제
+## <a name="example-effect-of-double-thunking"></a>예: 이중 썽킹의 효과
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
 
 이전 샘플에서는 이중 썽킹이 있음을 보여 주었습니다. 이 샘플은 해당 효과를 보여 줍니다. **`for`** 루프는 가상 함수를 호출 하 고 프로그램은 실행 시간을 보고 합니다. 프로그램이 **/clr**로 컴파일될 때 가장 느린 시간이 보고 됩니다. **/Clr** 을 사용 하지 않고 컴파일할 때 또는 가상 함수가로 선언 된 경우 가장 빠른 시간이 보고 됩니다 `__clrcall` .
 

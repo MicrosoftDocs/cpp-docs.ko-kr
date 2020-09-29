@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - override specifiers in native compilation, overriding
 ms.assetid: d0551836-9ac7-41eb-a6e9-a4b3ef60767d
-ms.openlocfilehash: c5ed413f403fb12f116633c0e39f9e7b32b2e9f8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 92bdc41cf9ebe2389f2d22dab211029899283266
+ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221330"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91414596"
 ---
 # <a name="how-to-declare-override-specifiers-in-native-compilations-ccli"></a>방법: 네이티브 컴파일에 override 지정자 선언(C++/CLI)
 
@@ -18,9 +18,9 @@ ms.locfileid: "87221330"
 > [!NOTE]
 > ISO c + + 11 표준 언어에는 [재정의](../cpp/override-specifier.md) 식별자와 [최종](../cpp/final-specifier.md) 식별자가 있으며, 둘 다 `final` 네이티브 전용 **`sealed`** 으로 컴파일되는 코드에서 대신 Visual Studio 사용에서 지원 됩니다.
 
-## <a name="example"></a>예제
+## <a name="example-sealed-is-valid"></a>예: sealed가 올바릅니다.
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
 
 다음 예제에서는 **`sealed`** 이 네이티브 컴파일에서 유효함을 보여 줍니다.
 
@@ -47,9 +47,9 @@ public:
 };
 ```
 
-## <a name="example"></a>예제
+## <a name="example-override-is-valid"></a>예: override가 올바릅니다.
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
 
 다음 예제에서는 `override` 가 네이티브 컴파일에서 유효함을 보여 줍니다.
 
@@ -69,9 +69,9 @@ public:
 };
 ```
 
-## <a name="example"></a>예제
+## <a name="example-abstract-is-valid"></a>예: abstract가 올바릅니다.
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
 
 이 예제에서는 **`abstract`** 가 네이티브 컴파일에서 유효함을 보여 줍니다.
 
@@ -86,6 +86,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [Override 지정자](../extensions/override-specifiers-cpp-component-extensions.md)

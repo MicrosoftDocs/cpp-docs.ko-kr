@@ -1,5 +1,5 @@
 ---
-title: '방법: 제네릭을 사용 하 여 성능 향상C++(/cli)'
+title: '방법: 제네릭을 사용하여 성능 개선(C++/CLI)'
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - C++, generics
 - generics [C++], performance
 ms.assetid: f14a175b-301f-46cc-86e4-c82d35f9aa3e
-ms.openlocfilehash: a460456a383fcb3eb81e17c1ad5817f790f3c399
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 039c5b069351249e51d961d9d1757ed6b09ef99c
+ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80181943"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91414167"
 ---
-# <a name="how-to-improve-performance-with-generics-ccli"></a>방법: 제네릭을 사용 하 여 성능 향상C++(/cli)
+# <a name="how-to-improve-performance-with-generics-ccli"></a>방법: 제네릭을 사용하여 성능 개선(C++/CLI)
 
 제네릭을 사용하여 형식 매개 변수를 기반으로 재사용 가능한 코드를 만들 수 있습니다. 형식 매개 변수의 실제 형식은 클라이언트 코드에서 호출할 때까지 지연됩니다. 제네릭에 대한 자세한 내용은 [Generics](generics-cpp-component-extensions.md)을 참조하세요.
 
 이 문서에서는 제네릭으로 컬렉션을 사용하는 애플리케이션의 성능을 향상시키는 방법을 설명합니다.
 
-## <a name="example"></a>예제
+## <a name="example-two-main-drawbacks-of-net-framework-collections"></a>예: .NET Framework 컬렉션의 두 가지 주요 단점
 
 .NET Framework에는 <xref:System.Collections?displayProperty=fullName> 네임스페이스의 여러 컬렉션 클래스가 제공됩니다. 이러한 컬렉션의 대부분은 <xref:System.Object?displayProperty=fullName> 형식의 개체에서 동작합니다. 그러면 값 형식까지 포함한 .NET Framework의 모든 형식이 <xref:System.Object?displayProperty=fullName>에서 파생되기 때문에 컬렉션에서 모든 형식을 저장할 수 있습니다. 그러나 이 방법에는 두 가지 단점이 있습니다.
 
@@ -78,7 +78,7 @@ Popped a String: Seven
 Popped an int: 7
 ```
 
-## <a name="example"></a>예제
+## <a name="example-benefit-of-using-generic-collection"></a>예: 제네릭 컬렉션 사용의 장점
 
 새 <xref:System.Collections.Generic?displayProperty=fullName> 네임스페이스는 <xref:System.Collections?displayProperty=fullName> 네임스페이스에서 찾을 수 있는 여러 개의 동일한 컬렉션을 포함하고 있지만, 제네릭 형식 매개 변수를 받기 위해 수정되었습니다. 이렇게 하면 제네릭이 아닌 컬렉션의 두 가지 단점이 사라집니다. 값 형식의 boxing 및 unboxing과 컬렉션에 저장할 형식을 지정할 수 없는 것이 그 단점입니다. 두 컬렉션에 대한 작업은 동일합니다. 인스턴스화되는 방법만 다릅니다.
 
@@ -124,6 +124,6 @@ int main()
 14
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [제네릭](generics-cpp-component-extensions.md)
