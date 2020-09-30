@@ -4,12 +4,12 @@ ms.date: 05/09/2019
 helpviewer_keywords:
 - user record classes in OLE DB consumer
 ms.assetid: dba0538f-2afe-4354-8cbb-f202ea8ade5a
-ms.openlocfilehash: 86da5081fbe63728b062879838ac3ffe78504ccc
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 80a43446f0367acb89a04fdaa8198b5cff5a6697
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80211486"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91500970"
 ---
 # <a name="consumer-wizard-generated-classes"></a>소비자 마법사 생성 클래스
 
@@ -21,13 +21,13 @@ Visual Studio 2019 이상에서는 ATL OLE DB 소비자 마법사를 사용할 �
 
 ::: moniker range="<=vs-2017"
 
-**ATL OLE DB 소비자 마법사**를 사용하여 소비자를 생성하는 경우 OLE DB 템플릿 또는 OLE DB 특성을 사용하도록 선택할 수 있습니다. 두 경우 모두 마법사에서 명령 클래스 및 사용자 레코드 클래스를 생성합니다. 명령 클래스는 마법사에서 지정한 데이터 원본 및 행 집합을 여는 코드를 포함합니다. 사용자 레코드 클래스는 선택한 데이터베이스 테이블에 대한 열 맵을 포함합니다. 그러나 생성된 코드는 각각의 경우마다 다릅니다.
+**ATL OLE DB 소비자 마법사** 를 사용 하 여 소비자를 생성 하는 경우 OLE DB 템플릿 또는 OLE DB 특성을 사용 하도록 선택할 수 있습니다. 두 경우 모두 마법사에서 명령 클래스 및 사용자 레코드 클래스를 생성합니다. 명령 클래스는 마법사에서 지정한 데이터 원본 및 행 집합을 여는 코드를 포함합니다. 사용자 레코드 클래스는 선택한 데이터베이스 테이블에 대한 열 맵을 포함합니다. 그러나 생성된 코드는 각각의 경우마다 다릅니다.
 
-- 템플릿 기반 소비자를 선택할 경우 마법사에서 명령 클래스 및 사용자 레코드 클래스를 생성합니다. 명령 클래스에는 마법사의 **Class** 상자에 입력한 이름이 지정되고(예: `CProducts`), 사용자 레코드 클래스에는 “*ClassName*Accessor” 형식의 이름이 지정됩니다(예: `CProductsAccessor`). 두 클래스 모두 소비자의 헤더 파일에 배치됩니다.
+- 템플릿 기반 소비자를 선택할 경우 마법사에서 명령 클래스 및 사용자 레코드 클래스를 생성합니다. 명령 클래스는 마법사의 **클래스** 상자에 입력 한 이름을 갖고 (예: `CProducts` ), 사용자 레코드 클래스는 "*ClassName*Accessor" 형식의 이름을 갖습니다 (예: `CProductsAccessor` ). 두 클래스 모두 소비자의 헤더 파일에 배치됩니다.
 
 - 특성 사용 소비자를 선택할 경우 "_*ClassName*Accessor" 형식의 이름을 가진 사용자 레코드 클래스가 삽입됩니다. 즉, 명령 클래스만 텍스트 편집기에서 볼 수 있고 사용자 레코드 클래스는 삽입된 코드로만 볼 수 있습니다. 삽입된 코드를 보는 방법에 대한 자세한 내용은 [삽입된 코드 디버그](/visualstudio/debugger/how-to-debug-injected-code)를 참조하세요.
 
-다음 예제에서는 `Products` 데이터베이스의 `Northwind` 테이블에 생성된 명령 클래스를 사용하여 명령 클래스 및 사용자 레코드 클래스에 대한 마법사 생성 소비자 코드를 보여 줍니다.
+다음 예제에서는 `Northwind` 데이터베이스의 `Products` 테이블에 생성된 명령 클래스를 사용하여 명령 클래스 및 사용자 레코드 클래스에 대한 마법사 생성 소비자 코드를 보여 줍니다.
 
 ## <a name="templated-user-record-classes"></a>템플릿 기반 사용자 레코드 클래스
 
@@ -150,7 +150,7 @@ class CProducts : public CCommand<CAccessor<CProductsAccessor>>
 
 ## <a name="attribute-injected-user-record-classes"></a>특성 삽입 사용자 레코드 클래스
 
-데이터베이스 특성([db_command](../../windows/db-command.md) 또는 [db_table](../../windows/db-table.md))을 사용하여 OLE DB 소비자를 만드는 경우 특성은 "_*ClassName*Accessor" 형식의 이름으로 사용자 레코드 클래스를 삽입합니다. 예를 들어 명령 클래스의 이름을 `COrders`로 지정한 경우 사용자 레코드 클래스는 `_COrdersAccessor`가 됩니다. 사용자 레코드 클래스는 **클래스 뷰**에 표시되지만, 사용자 레코드 클래스를 두 번 클릭하면 헤더 파일의 명령 또는 테이블 클래스로 이동합니다. 이 경우 특성 삽입 코드를 통해서만 사용자 레코드 클래스의 실제 선언을 볼 수 있습니다.
+데이터베이스 특성([db_command](../../windows/attributes/db-command.md) 또는 [db_table](../../windows/attributes/db-table.md))을 사용하여 OLE DB 소비자를 만드는 경우 특성은 "_*ClassName*Accessor" 형식의 이름으로 사용자 레코드 클래스를 삽입합니다. 예를 들어 명령 클래스의 이름을 `COrders`로 지정한 경우 사용자 레코드 클래스는 `_COrdersAccessor`가 됩니다. 사용자 레코드 클래스가 **클래스 뷰**에 표시 되기는 하지만 두 번 클릭 하면 헤더 파일의 명령 또는 테이블 클래스로 이동 합니다. 이 경우 특성 삽입 코드를 통해서만 사용자 레코드 클래스의 실제 선언을 볼 수 있습니다.
 
 특성 사용 소비자에서 메서드를 추가하거나 재정의하는 경우 문제가 발생할 수 있습니다. 예를 들어 `_COrdersAccessor` 선언에 `COrders` 생성자를 추가할 수 있지만 실제로는 삽입된 `COrdersAccessor` 클래스에 생성자가 추가됩니다. 이러한 생성자는 열/매개 변수를 초기화할 수 있지만 `COrdersAccessor` 개체를 직접 인스턴스화할 수 없기 때문에 이런 방식으로 복사 생성자를 만들 수 없습니다. `COrders` 클래스에 직접 생성자(또는 다른 메서드)가 필요한 경우 `COrders`에서 파생되는 새 클래스를 정의하고 여기에 필요한 메서드를 추가하는 것이 좋습니다.
 
@@ -190,4 +190,4 @@ class CProducts : public CCommand<CAccessor<_CProductsAccessor>>
 
 ## <a name="see-also"></a>참고 항목
 
-[마법사를 사용하여 OLE DB 소비자 만들기](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)
+[마법사를 사용 하 여 OLE DB 소비자 만들기](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)

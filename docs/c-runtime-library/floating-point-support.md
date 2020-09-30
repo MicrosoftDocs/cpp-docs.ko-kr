@@ -9,12 +9,12 @@ helpviewer_keywords:
 - math routines
 - floating-point numbers
 ms.assetid: e4fcaf69-5c8e-4854-a9bb-1f412042131e
-ms.openlocfilehash: 99a5de3ce816e64d4b477c8c1d3226da5f8f292e
-ms.sourcegitcommit: a6b97f5d78299ad93675de2fe0f0561f528d26c7
+ms.openlocfilehash: d1caaf5c9c0cfc7a3b6650bcb72a66b4c0028e28
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90569598"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91502115"
 ---
 # <a name="math-and-floating-point-support"></a>수학식 및 부동 소수점 지원
 
@@ -28,7 +28,7 @@ ISO C 표준 11 (C11) 이상의 경우 \<tgmath.h> 및를 포함 하 여 헤더�
 
 ## <a name="supported-math-and-floating-point-routines"></a>지원되는 수학식 및 부동 소수점 루틴
 
-|루틴에서 반환된 값|Windows Server Update Services와 함께|
+|루틴에서 반환된 값|기능|
 |-|-|
 [abs, labs, llabs, _abs64](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|정수 형식의 절대값을 계산합니다.
 [acos, acosf, acosl](../c-runtime-library/reference/acos-acosf-acosl.md)|아크코사인을 계산합니다.
@@ -138,7 +138,7 @@ ISO C 표준 11 (C11) 이상의 경우 \<tgmath.h> 및를 포함 하 여 헤더�
 [_wtof, _wtof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|와이드 문자열을으로 변환 합니다. **`double`**
 [_y0, _y1, _yn](../c-runtime-library/reference/bessel-functions-j0-j1-jn-y0-y1-yn.md)|Bessel 함수를 계산합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [범주별 유니버설 C 런타임 루틴](../c-runtime-library/run-time-routines-by-category.md)\
 [부동 소수점 기본 형식](../c-runtime-library/reference/floating-point-primitives.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - complex numbers, math routines
 - math routines
 - complex numbers
-ms.openlocfilehash: 0616f846030e5d5260b5d781884387614e12051d
-ms.sourcegitcommit: a6b97f5d78299ad93675de2fe0f0561f528d26c7
+ms.openlocfilehash: 60f5254a2378ed38d931f304bd5e1ebe833a3332
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90569552"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91502120"
 ---
 # <a name="c-complex-math-support"></a>C 복합 수학식 지원
 
@@ -41,7 +41,7 @@ math.h 헤더는 [_cabs](../c-runtime-library/reference/cabs.md) 함수에 사�
 
 ## <a name="trigonometric-functions"></a>삼각 함수
 
-|기능|Description|
+|함수|설명|
 |-|-|
 |[cacos, cacosf, cacosl](../c-runtime-library/reference/cacos-cacosf-cacosl.md)|복소수의 복합 아크코사인 컴퓨팅|
 |[casin, casinf, casinl](../c-runtime-library/reference/casin-casinf-casinl.md)|복소수의 복합 아크사인 컴퓨팅|
@@ -52,7 +52,7 @@ math.h 헤더는 [_cabs](../c-runtime-library/reference/cabs.md) 함수에 사�
 
 ## <a name="hyperbolic-functions"></a>쌍곡선 함수
 
-|기능|Description|
+|함수|설명|
 |-|-|
 |[cacosh, cacoshf, cacoshl](../c-runtime-library/reference/cacosh-cacoshf-cacoshl.md)|복소수의 복합 쌍곡선 아크코사인 컴퓨팅|
 |[casinh, casinhf, casinhl](../c-runtime-library/reference/casinh-casinhf-casinhl.md)|복소수의 복합 쌍곡선 아크사인 컴퓨팅|
@@ -63,7 +63,7 @@ math.h 헤더는 [_cabs](../c-runtime-library/reference/cabs.md) 함수에 사�
 
 ## <a name="exponential-and-logarithmic-functions"></a>지수 및 로그 함수
 
-|기능|Description|
+|함수|설명|
 |-|-|
 |[cexp, cexpf, cexpl](../c-runtime-library/reference/cexp-cexpf-cexpl.md)|복소수의 밑이 *e*인 복합 지수 컴퓨팅|
 |[clog, clogf, clogl](../c-runtime-library/reference/clog-clogf-clogl.md)|복소수의 복합 자연 로그 컴퓨팅(밑이 *e*)|
@@ -71,7 +71,7 @@ math.h 헤더는 [_cabs](../c-runtime-library/reference/cabs.md) 함수에 사�
 
 ## <a name="power-and-absolute-value-functions"></a>거듭제곱 및 절대값 함수
 
-|기능|Description|
+|함수|설명|
 |-|-|
 |[cabs, cabsf, cabsl](../c-runtime-library/reference/cabs-cabsf-cabsl.md)|복소수의 복합 절대값(기준, 계수 또는 자릿수라고도 함) 컴퓨팅|
 |[cpow, cpowf, cpowl](../c-runtime-library/reference/cpow-cpowf-cpowl.md)|복합 거듭제곱 함수 x<sup>y</sup> 컴퓨팅|
@@ -79,7 +79,7 @@ math.h 헤더는 [_cabs](../c-runtime-library/reference/cabs.md) 함수에 사�
 
 ## <a name="manipulation-functions"></a>조작 함수
 
-|기능|Description|
+|함수|설명|
 |-|-|
 |[_Cbuild, _FCbuild, _LCbuild](../c-runtime-library/reference/cbuild-fcbuild-lcbuild.md)|실수 및 허수부에서 복소수 생성|
 |[carg, cargf, cargl](../c-runtime-library/reference/carg-cargf-cargl.md)|복소수의 인수(위상각이라고도 함) 컴퓨팅|
@@ -93,12 +93,12 @@ math.h 헤더는 [_cabs](../c-runtime-library/reference/cabs.md) 함수에 사�
 
 복소수가 Microsoft 컴파일러에서 네이티브 형식이 아니기 때문에 표준 산술 연산자는 복합 형식에 정의되지 않습니다. 편의상 이러한 복합 수학식 라이브러리 함수를 제공하여 사용자 코드에서 복소수의 제한된 조작을 가능하게 합니다.
 
-|기능|Description|
+|함수|설명|
 |-|-|
 |[_Cmulcc, _FCmulcc, _LCmulcc](../c-runtime-library/reference/cmulcc-fcmulcc-lcmulcc.md)|두 복소수 곱셈|
 |[_Cmulcr, _FCmulcr, _LCmulcr](../c-runtime-library/reference/cmulcr-fcmulcr-lcmulcr.md)|복합 및 부동 소수점 숫자 곱셈|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [형식-제네릭 수학](tgmath.md)\
 [범주별 유버니설 C 런타임 루틴](../c-runtime-library/run-time-routines-by-category.md)

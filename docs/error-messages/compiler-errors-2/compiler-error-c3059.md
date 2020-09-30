@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3059
 ms.assetid: 57220324-8286-4cab-a1ab-45385eb1eae0
-ms.openlocfilehash: 897ed2beb7634cec787f0776616d9a60596a979f
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 9b1efc0969373b6a91b0800ae71477b2371814bb
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756463"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91501435"
 ---
 # <a name="compiler-error-c3059"></a>컴파일러 오류 C3059
 
 'var': 'threadprivate' 기호는 'clause' 절에서 사용할 수 없습니다.
 
-[threadprivate](../../parallel/openmp/reference/threadprivate.md) 기호가 절에서 사용되었습니다.
+[threadprivate](../../parallel/openmp/reference/openmp-directives.md#threadprivate) 기호가 절에서 사용되었습니다.
 
 다음 샘플에서는 C3059를 생성합니다.
 
@@ -36,7 +36,7 @@ int main() {
 }
 ```
 
-가능한 해결 방법:
+해결 방법:
 
 ```cpp
 // C3059b.cpp

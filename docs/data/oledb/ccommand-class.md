@@ -49,12 +49,12 @@ helpviewer_keywords:
 - SetParameterInfo method
 - Unprepare method
 ms.assetid: 0760bfc5-b9ee-4aee-8e54-31bd78714d3a
-ms.openlocfilehash: beabe73ff4ce0e6be8aaccfcdc636adc1ba04d5c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 109998dd742828b3c41672fa2afa8716e4687f6a
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838440"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91501003"
 ---
 # <a name="ccommand-class"></a>CCommand 클래스
 
@@ -99,12 +99,12 @@ class CCommand :
 
 ### <a name="inherited-methods"></a>상속된 메서드
 
-| Name | Description |
+| 속성 | Description |
 |-|-|
 |[만들기](#create)|지정 된 세션에 대 한 새 명령을 만든 다음 명령 텍스트를 설정 합니다.|
 |[CreateCommand](#createcommand)|새 명령을 만듭니다.|
 |[GetParameterInfo](#getparameterinfo)|명령의 매개 변수, 이름 및 형식에 대 한 목록을 가져옵니다.|
-|[준비해](#prepare)|현재 명령의 유효성을 검사 하 고 최적화 합니다.|
+|[준비](#prepare)|현재 명령의 유효성을 검사 하 고 최적화 합니다.|
 |[ReleaseCommand](#releasecommand)|필요한 경우 매개 변수 접근자를 해제 한 다음 명령을 해제 합니다.|
 |[SetParameterInfo](#setparameterinfo)|각 명령 매개 변수의 네이티브 형식을 지정 합니다.|
 |[Unprepare](#unprepare)|현재 명령 실행 계획을 삭제 합니다.|
@@ -131,7 +131,7 @@ void Close();
 
 명령은 행 집합, 결과 집합 접근자 및 (선택 사항) 매개 변수 접근자를 사용 합니다. 테이블은 매개 변수를 지원 하지 않으며 매개 변수 접근자가 필요 하지 않습니다.
 
-명령을 실행 하는 경우 `Close` 명령 후와 [ReleaseCommand](../../data/oledb/ccommand-releasecommand.md) 를 모두 호출 해야 합니다.
+명령을 실행 하는 경우 `Close` 명령 후와 [ReleaseCommand](#releasecommand) 를 모두 호출 해야 합니다.
 
 동일한 명령을 반복적으로 실행 하려면를 호출 하기 전에를 호출 하 여 각 결과 집합 접근자를 해제 해야 `Close` `Execute` 합니다. 시리즈의 끝에서를 호출 하 여 매개 변수 접근자를 해제 해야 합니다 `ReleaseCommand` . 또 다른 일반적인 시나리오는 출력 매개 변수가 있는 저장 프로시저를 호출 하는 것입니다. 많은 공급자 (예: SQL Server에 대 한 OLE DB 공급자)에서는 결과 집합 접근자를 닫을 때까지 출력 매개 변수 값에 액세스할 수 없습니다. `Close`를 호출 하 여 반환 된 행 집합 및 결과 집합 접근자를 닫을 수 있지만 매개 변수 접근자는 닫지 않으므로 출력 매개 변수 값을 검색할 수 있습니다.
 
@@ -213,7 +213,7 @@ HRESULT Open(DBPROPSET *pPropSet = NULL,
 진행 명령을 실행할 세션입니다.
 
 *wszCommand*<br/>
-진행 유니코드 문자열로 전달 되는 실행할 명령입니다. 를 사용 하는 경우 NULL 일 수 있습니다 `CAccessor` .이 경우 [DEFINE_COMMAND](../../data/oledb/define-command.md) 매크로에 전달 된 값에서 명령이 검색 됩니다. 자세한 내용은 *OLE DB 프로그래머 참조* 에서 [ICommand:: Execute](/previous-versions/windows/desktop/ms718095(v=vs.85)) 를 참조 하세요.
+진행 유니코드 문자열로 전달 되는 실행할 명령입니다. 를 사용 하는 경우 NULL 일 수 있습니다 `CAccessor` .이 경우 [DEFINE_COMMAND](./macros-and-global-functions-for-ole-db-consumer-templates.md#define_command) 매크로에 전달 된 값에서 명령이 검색 됩니다. 자세한 내용은 *OLE DB 프로그래머 참조* 에서 [ICommand:: Execute](/previous-versions/windows/desktop/ms718095(v=vs.85)) 를 참조 하세요.
 
 *szCommand*<br/>
 진행 이 매개 변수가 ANSI 명령 문자열을 사용 한다는 점을 제외 하 고 *wszCommand* 와 동일 합니다. 이 메서드의 네 번째 형태는 NULL 값을 사용할 수 있습니다. 자세한 내용은이 항목의 뒷부분에 나오는 "주의"를 참조 하십시오.
@@ -253,14 +253,14 @@ HRESULT Open(DBPROPSET *pPropSet = NULL,
 
 의 세 번째 형식은 `Open` 형식 때문에 명령 문자열이 null이 될 수 있도록 합니다 **`int`** . 기본값은 null입니다. `Open(session, NULL);` `Open(session);` NULL은 형식 이므로 또는를 호출 하기 위해 제공 됩니다 **`int`** . 이 버전에는 매개 변수가 NULL 임을 어설션하는 및가 필요 **`int`** 합니다.
 
-`Open`명령을 이미 만들었고 단일 [준비](../../data/oledb/ccommand-prepare.md) 및 다중 실행을 수행 하려는 경우의 네 번째 형태를 사용 합니다.
+`Open`명령을 이미 만들었고 단일 [준비](#prepare) 및 다중 실행을 수행 하려는 경우의 네 번째 형태를 사용 합니다.
 
 > [!NOTE]
 > `Open``Execute`는를 호출 하 여을 호출 `GetNextResult` 합니다.
 
 ## <a name="ccommandcreate"></a><a name="create"></a> CCommand:: Create
 
-[CCommand:: CreateCommand](../../data/oledb/ccommand-createcommand.md) 를 호출 하 여 지정 된 세션에 대 한 명령을 만든 다음 [ICommandText:: setcommandtext](/previous-versions/windows/desktop/ms709825(v=vs.85)) 를 호출 하 여 명령 텍스트를 지정 합니다.
+[CCommand:: CreateCommand](#createcommand) 를 호출 하 여 지정 된 세션에 대 한 명령을 만든 다음 [ICommandText:: setcommandtext](/previous-versions/windows/desktop/ms709825(v=vs.85)) 를 호출 하 여 명령 텍스트를 지정 합니다.
 
 ### <a name="syntax"></a>구문
 
@@ -374,7 +374,7 @@ void CCommandBase::ReleaseCommand() throw();
 
 ### <a name="remarks"></a>설명
 
-`ReleaseCommand` 는와 함께 사용 됩니다 `Close` . 사용법 정보는 [닫기](../../data/oledb/ccommand-close.md) 를 참조 하세요.
+`ReleaseCommand` 는와 함께 사용 됩니다 `Close` . 사용법 정보는 [닫기](#close) 를 참조 하세요.
 
 ## <a name="ccommandsetparameterinfo"></a><a name="setparameterinfo"></a> CCommand:: SetParameterInfo
 

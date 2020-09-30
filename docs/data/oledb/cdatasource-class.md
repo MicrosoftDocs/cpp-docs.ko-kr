@@ -56,12 +56,12 @@ helpviewer_keywords:
 - OpenWithPromptFileName method
 - OpenWithServiceComponents method
 ms.assetid: 99bf862c-9d5c-4117-9501-aa0e2672085c
-ms.openlocfilehash: 2ce5090d7e1c74607a82ddbb79afebe185a1dca7
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f94cd631f1c6febdc07d53f84803b1203f4116bc
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838349"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91502538"
 ---
 # <a name="cdatasource-class"></a>CDataSource 클래스
 
@@ -95,7 +95,7 @@ class CDataSource
 
 ## <a name="remarks"></a>설명
 
-단일 연결에 대해 하나 이상의 데이터베이스 세션을 만들 수 있습니다. 이러한 세션은로 표시 됩니다 `CSession` . 를 사용 하 여 세션을 만들기 전에 연결을 열려면 [Cdatasource:: Open](../../data/oledb/cdatasource-open.md) 을 호출 해야 합니다 `CSession::Open` .
+단일 연결에 대해 하나 이상의 데이터베이스 세션을 만들 수 있습니다. 이러한 세션은로 표시 됩니다 `CSession` . 를 사용 하 여 세션을 만들기 전에 연결을 열려면 [Cdatasource:: Open](#open) 을 호출 해야 합니다 `CSession::Open` .
 
 를 사용 하는 방법에 대 한 예제는 `CDataSource` [CatDB](../../overview/visual-cpp-samples.md) 샘플을 참조 하세요.
 
@@ -159,7 +159,7 @@ Windows SDK *OLE DB 프로그래머 참조* 에서 [IDBProperties:: GetPropertie
 
 ### <a name="remarks"></a>설명
 
-단일 속성을 가져오려면 [GetProperty](../../data/oledb/cdatasource-getproperty.md)를 사용 합니다.
+단일 속성을 가져오려면 [GetProperty](#getproperty)를 사용 합니다.
 
 ## <a name="cdatasourcegetproperty"></a><a name="getproperty"></a> CDataSource:: GetProperty
 
@@ -190,7 +190,7 @@ HRESULT GetProperty(const GUID& guid,
 
 ### <a name="remarks"></a>설명
 
-여러 속성을 얻으려면 [GetProperties](../../data/oledb/cdatasource-getproperties.md)를 사용 합니다.
+여러 속성을 얻으려면 [GetProperties](#getproperties)를 사용 합니다.
 
 ## <a name="cdatasourceopen"></a><a name="open"></a> CDataSource:: Open
 

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - DDV (dialog data validation) [MFC]
 - data validation [MFC], message boxes
 ms.assetid: f070c309-2044-4ff2-8c92-1ec1ea84af58
-ms.openlocfilehash: 99540214d1b903c66d350145c08ab657d12ef8f7
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 9de2db002d7f06e797531c09af0a021c402eec7d
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616751"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91502274"
 ---
 # <a name="dialog-data-validation"></a>대화 상자 데이터 유효성 검사
 
@@ -22,7 +22,7 @@ ms.locfileid: "84616751"
 
 사용자 고유의 사용자 지정 DDX 및 DDV 루틴을 정의할 수도 있습니다. 이에 대 한 자세한 내용과 DDX 및 DDV의 다른 측면에 대 한 자세한 내용은 [MFC 기술 참고 26](tn026-ddx-and-ddv-routines.md)을 참조 하십시오.
 
-[멤버 변수 추가 마법사](../ide/add-member-variable-wizard.md) 는 데이터 맵에 모든 DDX 및 DDV 호출을 기록 합니다.
+[멤버 변수 추가 마법사](../ide/adding-a-member-variable-visual-cpp.md#add-member-variable-wizard) 는 데이터 맵에 모든 DDX 및 DDV 호출을 기록 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

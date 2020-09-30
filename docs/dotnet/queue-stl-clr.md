@@ -57,12 +57,12 @@ helpviewer_keywords:
 - to_array member [STL/CLR]
 - value_type member [STL/CLR]
 ms.assetid: 9ea7dec3-ea98-48ff-87d0-a5afc924aaf2
-ms.openlocfilehash: ce4b3ca37fc5e13ace3058cb9ec9e9daad073b47
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2d5c1d30704838cdb69516d68d328c90a094a08e
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87210932"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91502382"
 ---
 # <a name="queue-stlclr"></a>queue(STL/CLR)
 
@@ -150,7 +150,7 @@ template<typename Value,
 
 ## <a name="members"></a>멤버
 
-## <a name="queueassign-stlclr"></a><a name="assign"></a>queue:: assign (STL/CLR)
+## <a name="queueassign-stlclr"></a><a name="assign"></a> queue:: assign (STL/CLR)
 
 모든 요소를 바꿉니다.
 
@@ -204,7 +204,7 @@ a b c
 a b c
 ```
 
-## <a name="queueback-stlclr"></a><a name="back"></a>queue:: back (STL/CLR)
+## <a name="queueback-stlclr"></a><a name="back"></a> queue:: back (STL/CLR)
 
 마지막 요소에 액세스합니다.
 
@@ -256,7 +256,7 @@ back() = c
 a b x
 ```
 
-## <a name="queueback_item-stlclr"></a><a name="back_item"></a>queue:: back_item (STL/CLR)
+## <a name="queueback_item-stlclr"></a><a name="back_item"></a> queue:: back_item (STL/CLR)
 
 마지막 요소에 액세스합니다.
 
@@ -308,7 +308,7 @@ back_item = c
 a b x
 ```
 
-## <a name="queueconst_reference-stlclr"></a><a name="const_reference"></a>queue:: const_reference (STL/CLR)
+## <a name="queueconst_reference-stlclr"></a><a name="const_reference"></a> queue:: const_reference (STL/CLR)
 
 요소에 대한 상수 참조의 형식입니다.
 
@@ -352,7 +352,7 @@ int main()
 a b c
 ```
 
-## <a name="queuecontainer_type-stlclr"></a><a name="container_type"></a>queue:: container_type (STL/CLR)
+## <a name="queuecontainer_type-stlclr"></a><a name="container_type"></a> queue:: container_type (STL/CLR)
 
 기본 컨테이너의 형식입니다.
 
@@ -394,7 +394,7 @@ int main()
 a b c
 ```
 
-## <a name="queuedifference_type-stlclr"></a><a name="difference_type"></a>queue::d ifference_type (STL/CLR)
+## <a name="queuedifference_type-stlclr"></a><a name="difference_type"></a> queue::d ifference_type (STL/CLR)
 
 두 요소 사이의 부호가 있는 거리의 형식입니다.
 
@@ -452,7 +452,7 @@ pushing 2 = -2
 popping 3 = 3
 ```
 
-## <a name="queueempty-stlclr"></a><a name="empty"></a>queue:: empty (STL/CLR)
+## <a name="queueempty-stlclr"></a><a name="empty"></a> queue:: empty (STL/CLR)
 
 요소가 있는지 여부를 테스트합니다.
 
@@ -464,7 +464,7 @@ bool empty();
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 빈 제어되는 시퀀스에 대해 true를 반환합니다. [Queue:: size (STL/CLR)](../dotnet/queue-size-stl-clr.md)와 동일 `() == 0` 합니다. 큐가 비어 있는지 여부를 테스트 하는 데 사용 합니다.
+멤버 함수는 빈 제어되는 시퀀스에 대해 true를 반환합니다. [Queue:: size (STL/CLR)](#size)와 동일 `() == 0` 합니다. 큐가 비어 있는지 여부를 테스트 하는 데 사용 합니다.
 
 ### <a name="example"></a>예제
 
@@ -506,7 +506,7 @@ size() = 0
 empty() = True
 ```
 
-## <a name="queuefront-stlclr"></a><a name="front"></a>queue:: front (STL/CLR)
+## <a name="queuefront-stlclr"></a><a name="front"></a> queue:: front (STL/CLR)
 
 첫 번째 요소에 액세스합니다.
 
@@ -558,7 +558,7 @@ front() = a
 x b c
 ```
 
-## <a name="queuefront_item-stlclr"></a><a name="front_item"></a>queue:: front_item (STL/CLR)
+## <a name="queuefront_item-stlclr"></a><a name="front_item"></a> queue:: front_item (STL/CLR)
 
 첫 번째 요소에 액세스합니다.
 
@@ -610,7 +610,7 @@ front_item = a
 x b c
 ```
 
-## <a name="queuegeneric_container-stlclr"></a><a name="generic_container"></a>queue:: generic_container (STL/CLR)
+## <a name="queuegeneric_container-stlclr"></a><a name="generic_container"></a> queue:: generic_container (STL/CLR)
 
 컨테이너 어댑터에 대 한 제네릭 인터페이스의 형식입니다.
 
@@ -673,7 +673,7 @@ a b c d
 a b c d e
 ```
 
-## <a name="queuegeneric_value-stlclr"></a><a name="generic_value"></a>queue:: generic_value (STL/CLR)
+## <a name="queuegeneric_value-stlclr"></a><a name="generic_value"></a> queue:: generic_value (STL/CLR)
 
 컨테이너의 제네릭 인터페이스와 함께 사용할 요소의 형식입니다.
 
@@ -731,7 +731,7 @@ a b c
 a b c
 ```
 
-## <a name="queueget_container-stlclr"></a><a name="get_container"></a>queue:: get_container (STL/CLR)
+## <a name="queueget_container-stlclr"></a><a name="get_container"></a> queue:: get_container (STL/CLR)
 
 기본 컨테이너에 액세스합니다.
 
@@ -772,7 +772,7 @@ int main()
 a b c
 ```
 
-## <a name="queueoperator-stlclr"></a><a name="op_as"></a>queue:: operator = (STL/CLR)
+## <a name="queueoperator-stlclr"></a><a name="op_as"></a> queue:: operator = (STL/CLR)
 
 제어되는 시퀀스를 바꿉니다.
 
@@ -826,7 +826,7 @@ a b c
 a b c
 ```
 
-## <a name="queuepop-stlclr"></a><a name="pop"></a>queue::p op (STL/CLR)
+## <a name="queuepop-stlclr"></a><a name="pop"></a> queue::p op (STL/CLR)
 
 마지막 요소를 제거 합니다.
 
@@ -874,7 +874,7 @@ a b c
 b c
 ```
 
-## <a name="queuepush-stlclr"></a><a name="push"></a>queue::p 밀어넣기 (STL/CLR)
+## <a name="queuepush-stlclr"></a><a name="push"></a> queue::p 밀어넣기 (STL/CLR)
 
 새 마지막 요소를 추가 합니다.
 
@@ -915,7 +915,7 @@ int main()
 a b c
 ```
 
-## <a name="queuequeue-stlclr"></a><a name="queue"></a>queue:: queue (STL/CLR)
+## <a name="queuequeue-stlclr"></a><a name="queue"></a> queue:: queue (STL/CLR)
 
 컨테이너 어댑터 개체를 생성 합니다.
 
@@ -1008,7 +1008,7 @@ x x x x x
 x x x x x
 ```
 
-## <a name="queuereference-stlclr"></a><a name="reference"></a>queue:: reference (STL/CLR)
+## <a name="queuereference-stlclr"></a><a name="reference"></a> queue:: reference (STL/CLR)
 
 요소에 대한 참조의 형식입니다.
 
@@ -1057,7 +1057,7 @@ a b c
 a b x
 ```
 
-## <a name="queuesize-stlclr"></a><a name="size"></a>queue:: size (STL/CLR)
+## <a name="queuesize-stlclr"></a><a name="size"></a> queue:: size (STL/CLR)
 
 요소 수를 계산합니다.
 
@@ -1069,7 +1069,7 @@ size_type size();
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 제어되는 시퀀스의 길이를 반환합니다. 이를 사용 하 여 현재 제어 되는 시퀀스에 있는 요소 수를 확인 합니다. 시퀀스의 크기가 0이 아니면 [queue:: empty (STL/CLR)](../dotnet/queue-empty-stl-clr.md)를 참조 하세요 `()` .
+멤버 함수는 제어되는 시퀀스의 길이를 반환합니다. 이를 사용 하 여 현재 제어 되는 시퀀스에 있는 요소 수를 확인 합니다. 시퀀스의 크기가 0이 아니면 [queue:: empty (STL/CLR)](#empty)를 참조 하세요 `()` .
 
 ### <a name="example"></a>예제
 
@@ -1111,7 +1111,7 @@ size() = 2 after popping
 size() = 4 after adding 2
 ```
 
-## <a name="queuesize_type-stlclr"></a><a name="size_type"></a>queue:: size_type (STL/CLR)
+## <a name="queuesize_type-stlclr"></a><a name="size_type"></a> queue:: size_type (STL/CLR)
 
 두 요소 사이의 부호가 있는 거리의 형식입니다.
 
@@ -1160,7 +1160,7 @@ a b c
 size difference = 2
 ```
 
-## <a name="queueto_array-stlclr"></a><a name="to_array"></a>queue:: to_array (STL/CLR)
+## <a name="queueto_array-stlclr"></a><a name="to_array"></a> queue:: to_array (STL/CLR)
 
 제어 되는 시퀀스를 새 배열에 복사 합니다.
 
@@ -1210,7 +1210,7 @@ a b c d
 a b c
 ```
 
-## <a name="queuevalue_type-stlclr"></a><a name="value_type"></a>queue:: value_type (STL/CLR)
+## <a name="queuevalue_type-stlclr"></a><a name="value_type"></a> queue:: value_type (STL/CLR)
 
 요소의 형식입니다.
 
@@ -1255,7 +1255,7 @@ int main()
 a b c
 ```
 
-## <a name="operator-queue-stlclr"></a><a name="op_neq"></a>operator! = (queue) (STL/CLR)
+## <a name="operator-queue-stlclr"></a><a name="op_neq"></a> operator! = (queue) (STL/CLR)
 
 큐가 같지 않음 비교.
 
@@ -1326,7 +1326,7 @@ a b d
 [a b c] != [a b d] is True
 ```
 
-## <a name="operatorlt-queue-stlclr"></a><a name="op_lt"></a>연산자 &lt; (큐) (STL/CLR)
+## <a name="operatorlt-queue-stlclr"></a><a name="op_lt"></a> 연산자 &lt; (큐) (STL/CLR)
 
 큐가 비교 보다 작음
 
@@ -1349,7 +1349,7 @@ template<typename Value,
 
 ### <a name="remarks"></a>설명
 
-연산자 함수는 해당 하는 가장 낮은 위치에 대해서도 true를 반환 합니다 `i` `!(right[i] < left[i])` `left[i] < right[i]` . 그렇지 않으면 `left->` [queue:: size (STL/CLR)](../dotnet/queue-size-stl-clr.md) 를 반환 합니다 `() <` `right->size()` .이 메서드를 사용 하 여 두 큐를 요소 별로 비교할 때 *왼쪽* 이 *오른쪽* 에 정렬 되었는지 여부를 테스트 합니다.
+연산자 함수는 해당 하는 가장 낮은 위치에 대해서도 true를 반환 합니다 `i` `!(right[i] < left[i])` `left[i] < right[i]` . 그렇지 않으면 `left->` [queue:: size (STL/CLR)](#size) 를 반환 합니다 `() <` `right->size()` .이 메서드를 사용 하 여 두 큐를 요소 별로 비교할 때 *왼쪽* 이 *오른쪽* 에 정렬 되었는지 여부를 테스트 합니다.
 
 ### <a name="example"></a>예제
 
@@ -1397,7 +1397,7 @@ a b d
 [a b c] < [a b d] is True
 ```
 
-## <a name="operatorlt-queue-stlclr"></a><a name="op_lteq"></a>operator &lt; = (큐) (STL/CLR)
+## <a name="operatorlt-queue-stlclr"></a><a name="op_lteq"></a> operator &lt; = (큐) (STL/CLR)
 
 큐가 작거나 같음 비교입니다.
 
@@ -1468,7 +1468,7 @@ a b d
 [a b d] <= [a b c] is False
 ```
 
-## <a name="operator-queue-stlclr"></a><a name="op_eq"></a>operator = = (큐) (STL/CLR)
+## <a name="operator-queue-stlclr"></a><a name="op_eq"></a> operator = = (큐) (STL/CLR)
 
 큐가 같은지 비교 합니다.
 
@@ -1539,7 +1539,7 @@ a b d
 [a b c] == [a b d] is False
 ```
 
-## <a name="operatorgt-queue-stlclr"></a><a name="op_gt"></a>연산자 &gt; (큐) (STL/CLR)
+## <a name="operatorgt-queue-stlclr"></a><a name="op_gt"></a> 연산자 &gt; (큐) (STL/CLR)
 
 큐가 비교 보다 큽니다.
 
@@ -1610,7 +1610,7 @@ a b d
 [a b d] > [a b c] is True
 ```
 
-## <a name="operatorgt-queue-stlclr"></a><a name="op_gteq"></a>operator &gt; = (큐) (STL/CLR)
+## <a name="operatorgt-queue-stlclr"></a><a name="op_gteq"></a> operator &gt; = (큐) (STL/CLR)
 
 큐가 보다 크거나 같음 비교입니다.
 

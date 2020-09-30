@@ -5,12 +5,12 @@ helpviewer_keywords:
 - event handlers [MFC], adding
 - ribbon controls [MFC], adding
 ms.assetid: b31f25bc-ede7-49c3-9e3c-dffe4e174a69
-ms.openlocfilehash: 560524c36dbf57faec3b4b6372cade047f9fe7de
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: d6382c8ebf73fe7a26b3950cc1965b229c22dbb7
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618479"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91501232"
 ---
 # <a name="how-to-add-ribbon-controls-and-event-handlers"></a>방법: 리본 컨트롤 및 이벤트 처리기 추가
 
@@ -30,7 +30,7 @@ ms.locfileid: "84618479"
 
 1. 단추를 마우스 오른쪽 단추로 클릭 하 고 **이벤트 처리기 추가**를 클릭 합니다.
 
-1. **이벤트 처리기 마법사**에서 기본 설정을 확인 하 고 **추가 및 편집**을 클릭 합니다. 자세한 내용은 [이벤트 처리기 마법사](../ide/event-handler-wizard.md)를 참조 하십시오.
+1. **이벤트 처리기 마법사**에서 기본 설정을 확인 하 고 **추가 및 편집**을 클릭 합니다. 자세한 내용은 [이벤트 처리기 마법사](../ide/adding-an-event-handler-visual-cpp.md#event-handler-wizard)를 참조 하십시오.
 
 1. 코드 편집기에서 다음 코드를 처리기 함수에 추가 합니다.
 
@@ -41,4 +41,4 @@ ms.locfileid: "84618479"
 ## <a name="see-also"></a>참고 항목
 
 [보려면 ribbongadgets 샘플: 리본 가젯 응용 프로그램](../overview/visual-cpp-samples.md)<br/>
-[리본 디자이너(MFC)](ribbon-designer-mfc.md)
+[리본 디자이너 (MFC)](ribbon-designer-mfc.md)

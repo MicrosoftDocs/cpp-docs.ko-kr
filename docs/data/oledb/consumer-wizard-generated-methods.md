@@ -4,12 +4,12 @@ ms.date: 05/09/2019
 helpviewer_keywords:
 - OLE DB consumers, wizard-generated classes and methods
 ms.assetid: d80ee51c-8bb3-4dca-8760-5808e0fb47b4
-ms.openlocfilehash: ce2442909fd318187a1508300a75ff4f634b3410
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f3bcc799f2a9591cfe7b2fc364b03161b5c0da33
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80211512"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91500691"
 ---
 # <a name="consumer-wizard-generated-methods"></a>소비자 마법사 생성 메서드
 
@@ -43,7 +43,7 @@ HRESULT OpenAll();
 void CloseAll();
 ```
 
-다음 예제에서는 동일한 명령을 반복해서 실행할 때 `OpenAll` 및 `CloseAll`을 호출할 수 있는 방법을 보여 줍니다. [ 대신 ](../../data/oledb/ccommand-close.md) 및 `Close`를 호출하는 변형을 보여 주는 `ReleaseCommand`CCommand::Close`CloseAll`의 코드 예제와 비교합니다.
+다음 예제에서는 동일한 명령을 반복해서 실행할 때 `OpenAll` 및 `CloseAll`을 호출할 수 있는 방법을 보여 줍니다. `CloseAll` 대신 `Close` 및 `ReleaseCommand`를 호출하는 변형을 보여 주는 [CCommand::Close](./ccommand-class.md#close)의 코드 예제와 비교합니다.
 
 ```cpp
 int main(int argc, char* argv[])
@@ -76,7 +76,7 @@ int main(int argc, char* argv[])
 }
 ```
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
 `HasBookmark` 메서드를 정의하는 경우 `OpenAll` 코드에서 `DBPROP_IRowsetLocate` 속성을 설정합니다. 공급자가 해당 속성을 지원하는 경우에만 이 작업을 수행합니다.
 
@@ -141,7 +141,7 @@ void GetRowsetProperties(CDBPropSet* pPropSet)
 }
 ```
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
 전역 `GetRowsetProperties` 메서드는 마법사에서 정의된 메서드와 충돌할 수 있으므로 정의하면 안 됩니다. 템플릿 및 특성 사용 프로젝트에서 제공되는 메서드는 마법사 생성 메서드입니다. 특성은 이 코드를 삽입하지 않습니다.
 
@@ -153,12 +153,12 @@ HRESULT OpenDataSource();
 void CloseDataSource();
 ```
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
-마법사에서는 `OpenDataSource` 및 `CloseDataSource` 메서드를 정의합니다. `OpenDataSource`는 [CDataSource::OpenFromInitializationString](../../data/oledb/cdatasource-openfrominitializationstring.md)을 호출합니다.
+마법사에서는 `OpenDataSource` 및 `CloseDataSource` 메서드를 정의합니다. `OpenDataSource`는 [CDataSource::OpenFromInitializationString](./cdatasource-class.md#openfrominitializationstring)을 호출합니다.
 
 ::: moniker-end
 
 ## <a name="see-also"></a>참고 항목
 
-[마법사를 사용하여 OLE DB 소비자 만들기](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)
+[마법사를 사용 하 여 OLE DB 소비자 만들기](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)

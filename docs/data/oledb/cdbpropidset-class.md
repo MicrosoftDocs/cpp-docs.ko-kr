@@ -31,16 +31,16 @@ helpviewer_keywords:
 - operator=, property sets
 - SetGUID method
 ms.assetid: 52bb806c-9581-494d-9af7-50d8a4834805
-ms.openlocfilehash: 24cc621e522ed1939fe3127d97e8d54b75fa1618
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 4de218188326dad434c5b0d355a3a15d39bb576c
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838297"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91502505"
 ---
 # <a name="cdbpropidset-class"></a>CDBPropIDSet 클래스
 
-구조체에서 상속 `DBPROPIDSET` 하 고 키 필드와 [AddPropertyID](../../data/oledb/cdbpropidset-addpropertyid.md) access 메서드를 초기화 하는 생성자를 추가 합니다.
+구조체에서 상속 `DBPROPIDSET` 하 고 키 필드와 [AddPropertyID](#addpropertyid) access 메서드를 초기화 하는 생성자를 추가 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -64,7 +64,7 @@ class CDBPropIDSet : public tagDBPROPIDSET
 
 ### <a name="operators"></a>연산자
 
-| Name | 설명 |
+| 속성 | 설명 |
 |-|-|
 |[연산자 =](#op_equal)|다른 속성 ID로 설정 된 하나의 속성을 할당 합니다.|
 
@@ -126,7 +126,7 @@ void SetGUID(const GUID& guid) throw();
 
 ### <a name="remarks"></a>설명
 
-이 필드는 [생성자](../../data/oledb/cdbpropidset-cdbpropidset.md) 로도 설정할 수 있습니다. 이 클래스의 기본 생성자를 사용 하는 경우이 함수를 호출 합니다.
+이 필드는 [생성자](#cdbpropidset) 로도 설정할 수 있습니다. 이 클래스의 기본 생성자를 사용 하는 경우이 함수를 호출 합니다.
 
 ## <a name="cdbpropidsetoperator-"></a><a name="op_equal"></a> CDBPropIDSet:: operator =
 

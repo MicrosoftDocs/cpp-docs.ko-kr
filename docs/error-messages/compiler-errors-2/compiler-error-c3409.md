@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3409
 ms.assetid: e372d9fa-230c-4b28-b6d3-6ad81ccf9dbb
-ms.openlocfilehash: 360fedc6cadf275704a790c257c42ac8bde7873d
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: d3800998ded1758ab1de92af689d9d4613c2c61e
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90742062"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91502329"
 ---
 # <a name="compiler-error-c3409"></a>컴파일러 오류 C3409
 
@@ -19,7 +19,7 @@ ms.locfileid: "90742062"
 
 ## <a name="remarks"></a>설명
 
-대괄호가 컴파일러에서 [특성](../../windows/attributes-alphabetical-reference.md) 블록으로 해석 되었지만 특성이 없습니다.
+대괄호가 컴파일러에서 [특성](../../windows/attributes/attributes-alphabetical-reference.md) 블록으로 해석 되었지만 특성이 없습니다.
 
 람다 식 정의의 일부로 대괄호를 사용 하는 경우 컴파일러에서이 오류를 생성할 수 있습니다. 컴파일러가 대괄호가 람다 식 또는 특성 블록의 정의에 포함 되어 있는지 여부를 컴파일러에서 확인할 수 없는 경우이 오류가 발생 합니다. 람다 식에 대 한 자세한 내용은 [람다 식](../../cpp/lambda-expressions-in-cpp.md)을 참조 하세요.
 
@@ -35,7 +35,7 @@ ms.locfileid: "90742062"
 
    람다 식 구문에 대 한 자세한 내용은 [람다 식 구문](../../cpp/lambda-expression-syntax.md)을 참조 하세요.
 
-## <a name="examples"></a>예제
+## <a name="examples"></a>예
 
 다음 예제에서는 C3409를 생성 합니다.
 
@@ -65,8 +65,8 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
-[특성도](../../windows/attributes-alphabetical-reference.md)<br/>
+[특성도](../../windows/attributes/attributes-alphabetical-reference.md)<br/>
 [람다 식](../../cpp/lambda-expressions-in-cpp.md)<br/>
 [람다 식 구문](../../cpp/lambda-expression-syntax.md)

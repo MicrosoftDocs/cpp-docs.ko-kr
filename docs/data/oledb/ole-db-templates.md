@@ -1,19 +1,19 @@
 ---
-title: OLE DB 템플릿(영문)
+title: OLE DB 템플릿
 ms.date: 05/09/2019
 f1_keywords:
 - vc.templates.ole
 helpviewer_keywords:
 - OLE DB templates
 ms.assetid: 73918f6f-1fd7-4fa2-a0ff-7f9d792fce7e
-ms.openlocfilehash: 00a54a65b6f23df358d1e140eeb1c3f9174a6ace
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d3b709bbebdf040ac818d2d2d44576cf49aafdd4
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80209874"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91500903"
 ---
-# <a name="ole-db-templates"></a>OLE DB 템플릿(영문)
+# <a name="ole-db-templates"></a>OLE DB 템플릿
 
 OLE DB 템플릿을 사용하면 OLE DB 데이터에 더 쉽게 액세스할 수 있습니다. Visual C++에서는 자주 사용되는 여러 OLE DB 인터페이스를 구현하는 템플릿 클래스를 제공합니다. Visual C++ 소비자 템플릿을 사용하여 OLE DB 클라이언트(소비자) 애플리케이션을 작성하고, 공급자 템플릿을 사용하여 서버(공급자) 애플리케이션을 작성할 수 있습니다.
 
@@ -51,7 +51,7 @@ OLE DB 템플릿 소비자를 만드는 방법을 설명합니다.
 [업데이트 가능 공급자 만들기](../../data/oledb/creating-an-updatable-provider.md)<br/>
 데이터 저장소에 쓸 수 있는 공급자를 만드는 방법을 설명합니다.
 
-[OLE DB 소비자 특성](../../windows/ole-db-consumer-attributes.md)<br/>
+[OLE DB 소비자 특성](../../windows/attributes/ole-db-consumer-attributes.md)<br/>
 작동하는 OLE DB 소비자를 만들기 위해 OLE DB 소비자 템플릿을 기반으로 하여 코드를 삽입하는 간소화된 인터페이스에 대해 설명합니다.
 
 [ATL(액티브 템플릿 라이브러리) 참조](../../atl/atl-com-desktop-components.md)<br/>

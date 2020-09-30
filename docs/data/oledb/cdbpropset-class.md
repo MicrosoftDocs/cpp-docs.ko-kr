@@ -32,12 +32,12 @@ helpviewer_keywords:
 - SetGUID method
 - AddProperty method
 ms.assetid: 54190149-c277-4679-b81a-ef484d4d1c00
-ms.openlocfilehash: 48aa2e3e26bed7c9306ca3005231e464d7b7555b
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 45772896cac520eba35ec475f8b6ae7bd2993045
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838259"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91502464"
 ---
 # <a name="cdbpropset-class"></a>CDBPropSet 클래스
 
@@ -65,7 +65,7 @@ class CDBPropSet : public tagDBPROPSET
 
 ### <a name="operators"></a>연산자
 
-| Name | 설명 |
+| 속성 | 설명 |
 |-|-|
 |[연산자 =](#op_equal)|한 속성 집합의 내용을 다른 속성에 할당 합니다.|
 
@@ -163,7 +163,7 @@ void SetGUID(const GUID& guid) throw();
 
 ### <a name="remarks"></a>설명
 
-이 필드는 [생성자](../../data/oledb/cdbpropset-cdbpropset.md) 로도 설정할 수 있습니다.
+이 필드는 [생성자](#cdbpropset) 로도 설정할 수 있습니다.
 
 ## <a name="cdbpropsetoperator-"></a><a name="op_equal"></a> CDBPropSet:: operator =
 

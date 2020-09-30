@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3247
 ms.assetid: f9a2bbb5-3fce-40bf-9fd3-835a5f164dbb
-ms.openlocfilehash: 81dc5d5e54551aff49adad2ada2eb25f57a37ec2
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: c1b8aaddac32af4e0936ce7d45fbc59c3835dda2
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74754383"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91501391"
 ---
 # <a name="compiler-error-c3247"></a>컴파일러 오류 C3247
 
 'class1': coclass는 다른 coclass 'class2'에서 상속할 수 없습니다.
 
-[coclass](../../windows/coclass.md) 특성으로 표시된 클래스는 `coclass` 특성으로 표시된 다른 클래스에서 상속할 수 없습니다.
+[coclass](../../windows/attributes/coclass.md) 특성으로 표시된 클래스는 `coclass` 특성으로 표시된 다른 클래스에서 상속할 수 없습니다.
 
 다음 샘플에서는 C3247을 생성합니다.
 

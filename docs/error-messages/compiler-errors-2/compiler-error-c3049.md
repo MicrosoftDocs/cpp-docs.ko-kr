@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3049
 ms.assetid: 6ddf54f6-2c30-4d04-b637-98c6c922c533
-ms.openlocfilehash: 994940b8d8b8cf7905ec635aef95c7d8069592d2
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 21ff04e76c5a58f2ac673d1c4cace16cda388669
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74761301"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91501611"
 ---
 # <a name="compiler-error-c3049"></a>컴파일러 오류 C3049
 
 'arg': OpenMP 'default' 절의 인수가 잘못되었습니다.
 
-잘못된 값이 [default](../../parallel/openmp/reference/default-openmp.md) 절에 전달되었습니다.
+잘못된 값이 [default](../../parallel/openmp/reference/openmp-clauses.md#default-openmp) 절에 전달되었습니다.
 
 다음 샘플에서는 C3049를 생성합니다.
 

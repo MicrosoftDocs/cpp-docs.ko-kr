@@ -91,12 +91,12 @@ helpviewer_keywords:
 - value_type member [STL/CLR]
 - vector member [STL/CLR]
 ms.assetid: f90060d5-097a-4e9d-9a26-a634b5b9c6c2
-ms.openlocfilehash: a01025732699e755a624d7f67071f575ac52ec96
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9abecfa6e0bbdf74514e2b7162d1d22a84fa01b2
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214843"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91502412"
 ---
 # <a name="vector-stlclr"></a>vector(STL/CLR)
 
@@ -215,7 +215,7 @@ template<typename Value>
 
 ## <a name="members"></a>멤버
 
-## <a name="vectorassign-stlclr"></a><a name="assign"></a>vector:: assign (STL/CLR)
+## <a name="vectorassign-stlclr"></a><a name="assign"></a> vector:: assign (STL/CLR)
 
 모든 요소를 바꿉니다.
 
@@ -296,7 +296,7 @@ a b
 a b c
 ```
 
-## <a name="vectorat-stlclr"></a><a name="at"></a>vector:: at (STL/CLR)
+## <a name="vectorat-stlclr"></a><a name="at"></a> vector:: at (STL/CLR)
 
 지정된 위치에 있는 요소에 액세스합니다.
 
@@ -348,7 +348,7 @@ a b c
 a x c
 ```
 
-## <a name="vectorback-stlclr"></a><a name="back"></a>vector:: back (STL/CLR)
+## <a name="vectorback-stlclr"></a><a name="back"></a> vector:: back (STL/CLR)
 
 마지막 요소에 액세스합니다.
 
@@ -399,7 +399,7 @@ back() = c
 a b x
 ```
 
-## <a name="vectorback_item-stlclr"></a><a name="back_item"></a>vector:: back_item (STL/CLR)
+## <a name="vectorback_item-stlclr"></a><a name="back_item"></a> vector:: back_item (STL/CLR)
 
 마지막 요소에 액세스합니다.
 
@@ -450,7 +450,7 @@ back_item = c
 a b x
 ```
 
-## <a name="vectorbegin-stlclr"></a><a name="begin"></a>vector:: begin (STL/CLR)
+## <a name="vectorbegin-stlclr"></a><a name="begin"></a> vector:: begin (STL/CLR)
 
 제어되는 시퀀스의 시작을 지정합니다.
 
@@ -505,7 +505,7 @@ a b c
 x y c
 ```
 
-## <a name="vectorcapacity-stlclr"></a><a name="capacity"></a>vector:: capacity (STL/CLR)
+## <a name="vectorcapacity-stlclr"></a><a name="capacity"></a> vector:: capacity (STL/CLR)
 
 컨테이너에 할당된 스토리지의 크기를 보고합니다.
 
@@ -517,7 +517,7 @@ size_type capacity();
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 제어 되는 시퀀스를 보유 하기 위해 현재 할당 된 저장소를 반환 합니다 .이 값은 적어도 [vector:: size (STL/CLR)](../dotnet/vector-size-stl-clr.md)보다 큰 값 `()` 입니다. 컨테이너를 사용 하 여 제어 되는 시퀀스에 대 한 저장소를 다시 할당 해야 하기 전에 컨테이너 크기를 결정할 수 있습니다.
+멤버 함수는 제어 되는 시퀀스를 보유 하기 위해 현재 할당 된 저장소를 반환 합니다 .이 값은 적어도 [vector:: size (STL/CLR)](#size)보다 큰 값 `()` 입니다. 컨테이너를 사용 하 여 제어 되는 시퀀스에 대 한 저장소를 다시 할당 해야 하기 전에 컨테이너 크기를 결정할 수 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -555,7 +555,7 @@ capacity() = 4, ok = True
 capacity() = 9, ok = True
 ```
 
-## <a name="vectorclear-stlclr"></a><a name="clear"></a>vector:: clear (STL/CLR)
+## <a name="vectorclear-stlclr"></a><a name="clear"></a> vector:: clear (STL/CLR)
 
 모든 요소를 제거합니다.
 
@@ -567,7 +567,7 @@ void clear();
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 vector: [: erase (stl/clr](../dotnet/vector-erase-stl-clr.md) ) vector: `(` [: begin (stl/clr)](../dotnet/vector-begin-stl-clr.md) `(),` [vector:: end (stl/clr)](../dotnet/vector-end-stl-clr.md)를 효과적으로 호출 합니다 `())` . 이를 사용 하 여 제어 되는 시퀀스가 비어 있는지 확인 합니다.
+멤버 함수는 vector: [: erase (stl/clr](#erase) ) vector: `(` [: begin (stl/clr)](#begin) `(),` [vector:: end (stl/clr)](#end)를 효과적으로 호출 합니다 `())` . 이를 사용 하 여 제어 되는 시퀀스가 비어 있는지 확인 합니다.
 
 ### <a name="example"></a>예제
 
@@ -612,7 +612,7 @@ a b
 size() = 0
 ```
 
-## <a name="vectorconst_iterator-stlclr"></a><a name="const_iterator"></a>vector:: const_iterator (STL/CLR)
+## <a name="vectorconst_iterator-stlclr"></a><a name="const_iterator"></a> vector:: const_iterator (STL/CLR)
 
 제어되는 시퀀스에 대한 상수 반복기의 형식입니다.
 
@@ -653,7 +653,7 @@ int main()
 a b c
 ```
 
-## <a name="vectorconst_reference-stlclr"></a><a name="const_reference"></a>vector:: const_reference (STL/CLR)
+## <a name="vectorconst_reference-stlclr"></a><a name="const_reference"></a> vector:: const_reference (STL/CLR)
 
 요소에 대한 상수 참조의 형식입니다.
 
@@ -697,7 +697,7 @@ int main()
 a b c
 ```
 
-## <a name="vectorconst_reverse_iterator-stlclr"></a><a name="const_reverse_iterator"></a>vector:: const_reverse_iterator (STL/CLR)
+## <a name="vectorconst_reverse_iterator-stlclr"></a><a name="const_reverse_iterator"></a> vector:: const_reverse_iterator (STL/CLR)
 
 제어 되는 시퀀스에 대 한 상수 역방향 반복기의 형식입니다.
 
@@ -739,7 +739,7 @@ int main()
 c b a
 ```
 
-## <a name="vectordifference_type-stlclr"></a><a name="difference_type"></a>vector::d ifference_type (STL/CLR)
+## <a name="vectordifference_type-stlclr"></a><a name="difference_type"></a> vector::d ifference_type (STL/CLR)
 
 두 요소 사이의 부호가 있는 거리의 형식입니다.
 
@@ -793,7 +793,7 @@ end()-begin() = 3
 begin()-end() = -3
 ```
 
-## <a name="vectorempty-stlclr"></a><a name="empty"></a>vector:: empty (STL/CLR)
+## <a name="vectorempty-stlclr"></a><a name="empty"></a> vector:: empty (STL/CLR)
 
 요소가 있는지 여부를 테스트합니다.
 
@@ -805,7 +805,7 @@ bool empty();
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 빈 제어되는 시퀀스에 대해 true를 반환합니다. [Vector:: size (STL/CLR)](../dotnet/vector-size-stl-clr.md)와 동일 `() == 0` 합니다. 이를 사용 하 여 벡터가 비어 있는지 여부를 테스트 합니다.
+멤버 함수는 빈 제어되는 시퀀스에 대해 true를 반환합니다. [Vector:: size (STL/CLR)](#size)와 동일 `() == 0` 합니다. 이를 사용 하 여 벡터가 비어 있는지 여부를 테스트 합니다.
 
 ### <a name="example"></a>예제
 
@@ -844,7 +844,7 @@ size() = 0
 empty() = True
 ```
 
-## <a name="vectorend-stlclr"></a><a name="end"></a>vector:: end (STL/CLR)
+## <a name="vectorend-stlclr"></a><a name="end"></a> vector:: end (STL/CLR)
 
 제어되는 시퀀스의 끝을 지정합니다.
 
@@ -900,7 +900,7 @@ a b c
 a x y
 ```
 
-## <a name="vectorerase-stlclr"></a><a name="erase"></a>vector:: erase (STL/CLR)
+## <a name="vectorerase-stlclr"></a><a name="erase"></a> vector:: erase (STL/CLR)
 
 지정된 위치에 있는 요소를 제거합니다.
 
@@ -928,7 +928,7 @@ iterator erase(iterator first, iterator last);
 
 두 번째 멤버 함수는 [`first`, `last`]의 범위에서 제어되는 시퀀스의 요소를 제거합니다. 연속 된 요소를 0 개 이상 제거 하는 데 사용 합니다.
 
-두 멤버 함수는 제거 된 요소 뒤에 남은 첫 번째 요소를 지정 하는 반복기를 반환 하거나, 이러한 요소가 없는 경우 [vector:: end (STL/CLR)](../dotnet/vector-end-stl-clr.md) 를 반환 `()` 합니다.
+두 멤버 함수는 제거 된 요소 뒤에 남은 첫 번째 요소를 지정 하는 반복기를 반환 하거나, 이러한 요소가 없는 경우 [vector:: end (STL/CLR)](#end) 를 반환 `()` 합니다.
 
 요소를 지울 때 요소 복사본의 수는 삭제의 끝과 시퀀스의 가까운 끝 사이에 있는 요소 수의 선형입니다. 시퀀스의 한쪽 끝에서 하나 이상의 요소를 지우면 요소 복사는 발생 하지 않습니다.
 
@@ -979,7 +979,7 @@ erase(begin(), end()-1) = e
 size() = 1
 ```
 
-## <a name="vectorfront-stlclr"></a><a name="front"></a>vector:: front (STL/CLR)
+## <a name="vectorfront-stlclr"></a><a name="front"></a> vector:: front (STL/CLR)
 
 첫 번째 요소에 액세스합니다.
 
@@ -1030,7 +1030,7 @@ front() = a
 x b c
 ```
 
-## <a name="vectorfront_item-stlclr"></a><a name="front_item"></a>vector:: front_item (STL/CLR)
+## <a name="vectorfront_item-stlclr"></a><a name="front_item"></a> vector:: front_item (STL/CLR)
 
 첫 번째 요소에 액세스합니다.
 
@@ -1081,7 +1081,7 @@ front_item = a
 x b c
 ```
 
-## <a name="vectorgeneric_container-stlclr"></a><a name="generic_container"></a>vector:: generic_container (STL/CLR)
+## <a name="vectorgeneric_container-stlclr"></a><a name="generic_container"></a> vector:: generic_container (STL/CLR)
 
 컨테이너에 대 한 제네릭 인터페이스의 형식입니다.
 
@@ -1147,7 +1147,7 @@ a b c d
 a b c d e
 ```
 
-## <a name="vectorgeneric_iterator-stlclr"></a><a name="generic_iterator"></a>vector:: generic_iterator (STL/CLR)
+## <a name="vectorgeneric_iterator-stlclr"></a><a name="generic_iterator"></a> vector:: generic_iterator (STL/CLR)
 
 컨테이너의 제네릭 인터페이스와 함께 사용할 반복기의 형식입니다.
 
@@ -1205,7 +1205,7 @@ a b c
 a a c
 ```
 
-## <a name="vectorgeneric_reverse_iterator-stlclr"></a><a name="generic_reverse_iterator"></a>vector:: generic_reverse_iterator (STL/CLR)
+## <a name="vectorgeneric_reverse_iterator-stlclr"></a><a name="generic_reverse_iterator"></a> vector:: generic_reverse_iterator (STL/CLR)
 
 컨테이너의 제네릭 인터페이스와 함께 사용할 역방향 반복기의 형식입니다.
 
@@ -1262,7 +1262,7 @@ a b c
 a c c
 ```
 
-## <a name="vectorgeneric_value-stlclr"></a><a name="generic_value"></a>vector:: generic_value (STL/CLR)
+## <a name="vectorgeneric_value-stlclr"></a><a name="generic_value"></a> vector:: generic_value (STL/CLR)
 
 컨테이너의 제네릭 인터페이스와 함께 사용할 요소의 형식입니다.
 
@@ -1318,7 +1318,7 @@ a b c
 a a c
 ```
 
-## <a name="vectorinsert-stlclr"></a><a name="insert"></a>vector:: insert (STL/CLR)
+## <a name="vectorinsert-stlclr"></a><a name="insert"></a> vector:: insert (STL/CLR)
 
 지정 된 위치에 요소를 추가 합니다.
 
@@ -1365,7 +1365,7 @@ void insert(iterator where,
 
 네 번째 멤버 함수는 *오른쪽*에 지정 된 시퀀스를 삽입 합니다. 이를 사용 하 여 열거자에서 설명 하는 시퀀스를 삽입 합니다.
 
-단일 요소를 삽입할 때 요소 복사본의 수는 삽입 지점과 시퀀스의 가까운 끝 사이에 있는 요소 수의 선형입니다. 시퀀스의 한쪽 끝에 하나 이상의 요소를 삽입 하는 경우 요소 복사는 발생 하지 않습니다. `InIt`가 입력 반복기 인 경우 세 번째 멤버 함수는 시퀀스의 각 요소에 대 한 단일 삽입을 효과적으로 수행 합니다. 그렇지 않은 경우 `N` 요소를 삽입할 때 요소 복사본의 수는 선형이 `N` 고 삽입 지점과 시퀀스의 끝 부분 사이에 있는 요소 수를 더한 값입니다.
+단일 요소를 삽입할 때 요소 복사본의 수는 삽입 지점과 시퀀스의 가까운 끝 사이에 있는 요소 수의 선형입니다. 시퀀스의 한쪽 끝에 하나 이상의 요소를 삽입 하는 경우 요소 복사는 발생 하지 않습니다. `InIt` 가 입력 반복기 인 경우 세 번째 멤버 함수는 시퀀스의 각 요소에 대 한 단일 삽입을 효과적으로 수행 합니다. 그렇지 않은 경우 `N` 요소를 삽입할 때 요소 복사본의 수는 선형이 `N` 고 삽입 지점과 시퀀스의 끝 부분 사이에 있는 요소 수를 더한 값입니다.
 
 ### <a name="example"></a>예제
 
@@ -1427,7 +1427,7 @@ y y a x b
 a x b c y y a x b
 ```
 
-## <a name="vectoriterator-stlclr"></a><a name="iterator"></a>vector:: iterator (STL/CLR)
+## <a name="vectoriterator-stlclr"></a><a name="iterator"></a> vector:: iterator (STL/CLR)
 
 제어되는 시퀀스에 대한 반복기의 형식입니다.
 
@@ -1476,7 +1476,7 @@ a b c
 x b c
 ```
 
-## <a name="vectoroperator-stlclr"></a><a name="op_as"></a>vector:: operator = (STL/CLR)
+## <a name="vectoroperator-stlclr"></a><a name="op_as"></a> vector:: operator = (STL/CLR)
 
 제어되는 시퀀스를 바꿉니다.
 
@@ -1529,7 +1529,7 @@ a b c
 a b c
 ```
 
-## <a name="vectoroperatorstlclr"></a><a name="op"></a>vector:: operator (STL/CLR)
+## <a name="vectoroperatorstlclr"></a><a name="op"></a> vector:: operator (STL/CLR)
 
 지정된 위치에 있는 요소에 액세스합니다.
 
@@ -1581,7 +1581,7 @@ a b c
 a x c
 ```
 
-## <a name="vectorpop_back-stlclr"></a><a name="pop_back"></a>vector::p op_back (STL/CLR)
+## <a name="vectorpop_back-stlclr"></a><a name="pop_back"></a> vector::p op_back (STL/CLR)
 
 마지막 요소를 제거 합니다.
 
@@ -1628,7 +1628,7 @@ a b c
 a b
 ```
 
-## <a name="vectorpush_back-stlclr"></a><a name="push_back"></a>vector::p ush_back (STL/CLR)
+## <a name="vectorpush_back-stlclr"></a><a name="push_back"></a> vector::p ush_back (STL/CLR)
 
 새 마지막 요소를 추가 합니다.
 
@@ -1668,7 +1668,7 @@ int main()
 a b c
 ```
 
-## <a name="vectorrbegin-stlclr"></a><a name="rbegin"></a>vector:: rbegin (STL/CLR)
+## <a name="vectorrbegin-stlclr"></a><a name="rbegin"></a> vector:: rbegin (STL/CLR)
 
 제어되는 역방향 시퀀스의 시작을 지정합니다.
 
@@ -1723,7 +1723,7 @@ a b c
 a y x
 ```
 
-## <a name="vectorreference-stlclr"></a><a name="reference"></a>vector:: reference (STL/CLR)
+## <a name="vectorreference-stlclr"></a><a name="reference"></a> vector:: reference (STL/CLR)
 
 요소에 대한 참조의 형식입니다.
 
@@ -1778,7 +1778,7 @@ a b c
 A B C
 ```
 
-## <a name="vectorrend-stlclr"></a><a name="rend"></a>vector:: rend (STL/CLR)
+## <a name="vectorrend-stlclr"></a><a name="rend"></a> vector:: rend (STL/CLR)
 
 제어되는 역방향 시퀀스의 끝을 지정합니다.
 
@@ -1834,7 +1834,7 @@ a b c
 y x c
 ```
 
-## <a name="vectorreserve-stlclr"></a><a name="reserve"></a>vector:: reserve (STL/CLR)
+## <a name="vectorreserve-stlclr"></a><a name="reserve"></a> vector:: reserve (STL/CLR)
 
 컨테이너의 최소 증가 용량을 확인 합니다.
 
@@ -1889,7 +1889,7 @@ capacity() = 4, ok = True
 capacity() = 9, ok = True
 ```
 
-## <a name="vectorresize-stlclr"></a><a name="resize"></a>vector:: resize (STL/CLR)
+## <a name="vectorresize-stlclr"></a><a name="resize"></a> vector:: resize (STL/CLR)
 
 요소 수를 변경합니다.
 
@@ -1910,7 +1910,7 @@ void resize(size_type new_size, value_type val);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 [vector:: size (STL/CLR)](../dotnet/vector-size-stl-clr.md) `()` 예측이가 *new_size*를 반환 하는지 확인 합니다. 제어 되는 시퀀스를 더 길게 만들어야 하는 경우 첫 번째 멤버 함수는 값 `value_type()` 이 인 요소를 추가 하는 반면 두 번째 멤버 함수는 값 *val*을 사용 하 여 요소를 추가 합니다. 제어 되는 시퀀스를 더 짧게 만들기 위해 두 멤버 함수는 마지막 요소 [vector:: size (STL/CLR)](../dotnet/vector-size-stl-clr.md) 시간을 효과적으로 지웁니다 `() -` `new_size` . 이를 사용 하 여 제어 되는 시퀀스의 크기 *new_size*현재 제어 되는 시퀀스를 트리밍 또는 패딩 하 여 확인 합니다.
+멤버 함수는 [vector:: size (STL/CLR)](#size) `()` 예측이가 *new_size*를 반환 하는지 확인 합니다. 제어 되는 시퀀스를 더 길게 만들어야 하는 경우 첫 번째 멤버 함수는 값 `value_type()` 이 인 요소를 추가 하는 반면 두 번째 멤버 함수는 값 *val*을 사용 하 여 요소를 추가 합니다. 제어 되는 시퀀스를 더 짧게 만들기 위해 두 멤버 함수는 마지막 요소 [vector:: size (STL/CLR)](#size) 시간을 효과적으로 지웁니다 `() -` `new_size` . 이를 사용 하 여 제어 되는 시퀀스의 크기 *new_size*현재 제어 되는 시퀀스를 트리밍 또는 패딩 하 여 확인 합니다.
 
 ### <a name="example"></a>예제
 
@@ -1949,7 +1949,7 @@ size() = 0
 x x x x x
 ```
 
-## <a name="vectorreverse_iterator-stlclr"></a><a name="reverse_iterator"></a>vector:: reverse_iterator (STL/CLR)
+## <a name="vectorreverse_iterator-stlclr"></a><a name="reverse_iterator"></a> vector:: reverse_iterator (STL/CLR)
 
 제어되는 시퀀스에 대한 반대 반복기의 형식입니다.
 
@@ -1998,7 +1998,7 @@ c b a
 x b a
 ```
 
-## <a name="vectorsize-stlclr"></a><a name="size"></a>vector:: size (STL/CLR)
+## <a name="vectorsize-stlclr"></a><a name="size"></a> vector:: size (STL/CLR)
 
 요소 수를 계산합니다.
 
@@ -2010,7 +2010,7 @@ size_type size();
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 제어되는 시퀀스의 길이를 반환합니다. 이를 사용 하 여 현재 제어 되는 시퀀스에 있는 요소 수를 확인 합니다. 시퀀스의 크기가 0이 아니면 [벡터:: empty (STL/CLR)](../dotnet/vector-empty-stl-clr.md)를 참조 하세요 `()` .
+멤버 함수는 제어되는 시퀀스의 길이를 반환합니다. 이를 사용 하 여 현재 제어 되는 시퀀스에 있는 요소 수를 확인 합니다. 시퀀스의 크기가 0이 아니면 [벡터:: empty (STL/CLR)](#empty)를 참조 하세요 `()` .
 
 ### <a name="example"></a>예제
 
@@ -2051,7 +2051,7 @@ size() = 0 after clearing
 size() = 2 after adding 2
 ```
 
-## <a name="vectorsize_type-stlclr"></a><a name="size_type"></a>vector:: size_type (STL/CLR)
+## <a name="vectorsize_type-stlclr"></a><a name="size_type"></a> vector:: size_type (STL/CLR)
 
 두 요소 사이의 부호가 있는 거리의 형식입니다.
 
@@ -2096,7 +2096,7 @@ a b c
 end()-begin() = 3
 ```
 
-## <a name="vectorswap-stlclr"></a><a name="swap"></a>vector:: swap (STL/CLR)
+## <a name="vectorswap-stlclr"></a><a name="swap"></a> vector:: swap (STL/CLR)
 
 두 컨테이너의 내용을 바꿉니다.
 
@@ -2160,7 +2160,7 @@ x x x x x
 a b c
 ```
 
-## <a name="vectorto_array-stlclr"></a><a name="to_array"></a>vector:: to_array (STL/CLR)
+## <a name="vectorto_array-stlclr"></a><a name="to_array"></a> vector:: to_array (STL/CLR)
 
 제어 되는 시퀀스를 새 배열에 복사 합니다.
 
@@ -2209,7 +2209,7 @@ a b c d
 a b c
 ```
 
-## <a name="vectorvalue_type-stlclr"></a><a name="value_type"></a>vector:: value_type (STL/CLR)
+## <a name="vectorvalue_type-stlclr"></a><a name="value_type"></a> vector:: value_type (STL/CLR)
 
 요소의 형식입니다.
 
@@ -2254,7 +2254,7 @@ int main()
 a b c
 ```
 
-## <a name="vectorvector-stlclr"></a><a name="vector"></a>vector:: vector (STL/CLR)
+## <a name="vectorvector-stlclr"></a><a name="vector"></a> vector:: vector (STL/CLR)
 
 컨테이너 개체를 만듭니다.
 
@@ -2399,7 +2399,7 @@ x x x x x x
 x x x x x x
 ```
 
-## <a name="operator-vector-stlclr"></a><a name="op_neq"></a>operator! = (vector) (STL/CLR)
+## <a name="operator-vector-stlclr"></a><a name="op_neq"></a> operator! = (vector) (STL/CLR)
 
 벡터가 같지 않음 비교입니다.
 
@@ -2468,7 +2468,7 @@ a b d
 [a b c] != [a b d] is True
 ```
 
-## <a name="operatorlt-vector-stlclr"></a><a name="op_lt"></a>연산자 &lt; (vector) (STL/CLR)
+## <a name="operatorlt-vector-stlclr"></a><a name="op_lt"></a> 연산자 &lt; (vector) (STL/CLR)
 
 벡터가 비교 보다 작음
 
@@ -2537,7 +2537,7 @@ a b d
 [a b c] < [a b d] is True
 ```
 
-## <a name="operatorlt-vector-stlclr"></a><a name="op_lteq"></a>operator &lt; = (vector) (STL/CLR)
+## <a name="operatorlt-vector-stlclr"></a><a name="op_lteq"></a> operator &lt; = (vector) (STL/CLR)
 
 벡터 보다 작거나 같음 비교입니다.
 
@@ -2606,7 +2606,7 @@ a b d
 [a b d] <= [a b c] is False
 ```
 
-## <a name="operator-vector-stlclr"></a><a name="op_eq"></a>operator = = (vector) (STL/CLR)
+## <a name="operator-vector-stlclr"></a><a name="op_eq"></a> operator = = (vector) (STL/CLR)
 
 벡터와 비교 합니다.
 
@@ -2675,7 +2675,7 @@ a b d
 [a b c] == [a b d] is False
 ```
 
-## <a name="operatorgt-vector-stlclr"></a><a name="op_gt"></a>연산자 &gt; (vector) (STL/CLR)
+## <a name="operatorgt-vector-stlclr"></a><a name="op_gt"></a> 연산자 &gt; (vector) (STL/CLR)
 
 벡터가 비교 보다 큽니다.
 
@@ -2744,7 +2744,7 @@ a b d
 [a b d] > [a b c] is True
 ```
 
-## <a name="operatorgt-vector-stlclr"></a><a name="op_gteq"></a>operator &gt; = (vector) (STL/CLR)
+## <a name="operatorgt-vector-stlclr"></a><a name="op_gteq"></a> operator &gt; = (vector) (STL/CLR)
 
 벡터 보다 크거나 같음 비교입니다.
 

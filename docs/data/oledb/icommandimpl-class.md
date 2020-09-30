@@ -51,12 +51,12 @@ helpviewer_keywords:
 - m_bCancelWhenExecuting
 - m_bIsExecuting
 ms.assetid: ef285fef-0d66-45e6-a762-b03357098e3b
-ms.openlocfilehash: c88554d717888719ad6d805a2871489ce4b0df32
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 2f2d3938d63e5e67fc501d52d269c06f6b144ac8
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845590"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91501833"
 ---
 # <a name="icommandimpl-class"></a>ICommandImpl 클래스
 
@@ -96,7 +96,7 @@ class ATL_NO_VTABLE ICommandImpl : public CommandBase
 
 ### <a name="data-members"></a>데이터 멤버
 
-| Name | 설명 |
+| 속성 | 설명 |
 |-|-|
 |[m_bCancel](#bcancel)|명령을 취소할지 여부를 나타냅니다.|
 |[m_bCancelWhenExecuting](#bcancelwhenexecuting)|명령을 실행할 때 취소할 것인지 여부를 나타냅니다.|
@@ -132,7 +132,7 @@ HRESULT CancelExecution();
 
 ## <a name="icommandimplcreaterowset"></a><a name="createrowset"></a> ICommandImpl:: CreateRowset
 
-단일 행 집합을 만들기 위해 [Execute](../../data/oledb/icommandimpl-execute.md) 에 의해 호출 됩니다.
+단일 행 집합을 만들기 위해 [Execute](#execute) 에 의해 호출 됩니다.
 
 ### <a name="syntax"></a>구문
 
@@ -201,7 +201,7 @@ HRESULT Execute(IUnknown* pUnkOuter,
 
 요청 된 송신 인터페이스는이 함수가 만드는 행 집합 개체에서 가져온 인터페이스입니다.
 
-`Execute`[CreateRowset](../../data/oledb/icommandimpl-createrowset.md)를 호출 합니다. 기본 구현을 재정의 하 여 두 개 이상의 행 집합을 만들거나 다른 행 집합을 만들기 위한 고유한 조건을 제공 합니다.
+`Execute`[CreateRowset](#createrowset)를 호출 합니다. 기본 구현을 재정의 하 여 두 개 이상의 행 집합을 만들거나 다른 행 집합을 만들기 위한 고유한 조건을 제공 합니다.
 
 ## <a name="icommandimplgetdbsession"></a><a name="getdbsession"></a> ICommandImpl:: GetDBSession
 

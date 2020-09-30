@@ -12,12 +12,12 @@ helpviewer_keywords:
 - multidimensional arrays
 - arrays [C++]
 ms.assetid: 49445812-d775-4db1-a231-869598dbb955
-ms.openlocfilehash: ecd8425bf7bcc9772d7b1327add79b89aea629a7
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 814be57caafed117a1403105d46326ac53682578
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80182242"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91500886"
 ---
 # <a name="arrays-ccli-and-ccx"></a>배열(C++/CLI 및 C++/CX)
 
@@ -32,9 +32,9 @@ C++/CX의 `Platform::Array<T>` 형식이나 C++/CLI의 **array** 키워드는 �
 
 배열에 대한 자세한 내용은 다음을 참조하세요.
 
-- [방법: C++/CLI에서 배열 사용](../dotnet/how-to-use-arrays-in-cpp-cli.md)
+- [방법: c + +/CLI에서 배열 사용](../dotnet/how-to-use-arrays-in-cpp-cli.md)
 
-- [가변 인수 목록(...)(C++/CLI)](variable-argument-lists-dot-dot-dot-cpp-cli.md)
+- [가변 인수 목록 (...) (C + +/CLI)](variable-argument-lists-dot-dot-dot-cpp-cli.md)
 
 ## <a name="windows-runtime"></a>Windows 런타임
 
@@ -52,13 +52,13 @@ C++/CX의 `Platform::Array<T>` 형식이나 C++/CLI의 **array** 키워드는 �
     {initialization-list [,...]}
 ```
 
-*qualifiers*<br/>
-(선택 사항) [mutable](../cpp/mutable-data-members-cpp.md), [volatile](../cpp/volatile-cpp.md), [const](../cpp/const-cpp.md), [extern](../cpp/using-extern-to-specify-linkage.md), [static](../cpp/static-members-cpp.md) 스토리지 클래스 지정자 중 하나 이상입니다.
+*한정자*<br/>
+(선택 사항) [mutable](../cpp/mutable-data-members-cpp.md), [volatile](../cpp/volatile-cpp.md), [const](../cpp/const-cpp.md), [extern](../cpp/extern-cpp.md), [static](../cpp/static-members-cpp.md) 스토리지 클래스 지정자 중 하나 이상입니다.
 
-*array-type*<br/>
+*배열 형식*<br/>
 배열 변수의 형식입니다. 유효한 형식은 Windows 런타임 클래스 및 기본 형식, ref 클래스 및 구조체, 값 클래스 및 구조체, 네이티브 포인터(`type*`)입니다.
 
-*rank*<br/>
+*배열*<br/>
 (선택 사항) 배열의 차원 수입니다. 1이어야 합니다.
 
 *identifier*<br/>
@@ -108,13 +108,13 @@ int main() {
     {initialization-list [,...]}
 ```
 
-*qualifiers*<br/>
-(선택 사항) [mutable](../cpp/mutable-data-members-cpp.md), [volatile](../cpp/volatile-cpp.md), [const](../cpp/const-cpp.md), [extern](../cpp/using-extern-to-specify-linkage.md), [static](../cpp/static-members-cpp.md) 스토리지 클래스 지정자 중 하나 이상입니다.
+*한정자*<br/>
+(선택 사항) [mutable](../cpp/mutable-data-members-cpp.md), [volatile](../cpp/volatile-cpp.md), [const](../cpp/const-cpp.md), [extern](../cpp/extern-cpp.md), [static](../cpp/static-members-cpp.md) 스토리지 클래스 지정자 중 하나 이상입니다.
 
-*array-type*<br/>
+*배열 형식*<br/>
 배열 변수의 형식입니다. 유효한 형식은 Windows 런타임 클래스 및 기본 형식, ref 클래스 및 구조체, 값 클래스 및 구조체, 네이티브 포인터(`type*`), 네이티브 POD(Plain Old Data) 형식입니다.
 
-*rank*<br/>
+*배열*<br/>
 (선택 사항) 배열의 차원 수입니다. 기본값은 1이고, 최댓값은 32입니다. 배열의 각 차원 자체도 배열입니다.
 
 *identifier*<br/>
@@ -141,7 +141,7 @@ int main() {
 
 요소 형식이-관리형 클래스에 대한 포인터인 배열을 할당하면 요소가 0으로 초기화됩니다.
 
-요소 형식이 값 형식 `V`인 배열을 할당하면 `V`의 기본 생성자가 각 배열 요소에 적용됩니다. 자세한 내용은 [C++ 네이티브 형식에 해당하는 .NET Framework 형식(C++/CLI)](../dotnet/dotnet-framework-equivalents-to-cpp-native-types-cpp-cli.md)을 참조하세요.
+요소 형식이 값 형식 `V`인 배열을 할당하면 `V`의 기본 생성자가 각 배열 요소에 적용됩니다. 자세한 내용은 [C++ 네이티브 형식에 해당하는 .NET Framework 형식(C++/CLI)](../dotnet/managed-types-cpp-cli.md#dotnet)을 참조하세요.
 
 컴파일 시간에 `__is_ref_array(type)`를 사용하여 형식이 CLR(공용 언어 런타임) 배열인지 여부를 검색할 수 있습니다. 자세한 내용은 [형식 특성에 대한 컴파일러 지원](compiler-support-for-type-traits-cpp-component-extensions.md)을 참조하세요.
 
@@ -170,4 +170,4 @@ int main() {
 
 ## <a name="see-also"></a>참고 항목
 
-[.NET 및 UWP용 구성 요소 확장](component-extensions-for-runtime-platforms.md)
+[.NET 및 UWP 용 구성 요소 확장](component-extensions-for-runtime-platforms.md)

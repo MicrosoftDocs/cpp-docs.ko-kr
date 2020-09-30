@@ -22,12 +22,12 @@ helpviewer_keywords:
 - m_strCommandText
 - SetCommandText method
 ms.assetid: 9c2715cc-1e55-4468-8327-85341617ed46
-ms.openlocfilehash: 8d435cd8c5c8723d008be98482631f081c967058
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 7d31933b162a74db31bdd3c65dc68e396a3896c4
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845122"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91501722"
 ---
 # <a name="icommandtextimpl-class"></a>ICommandTextImpl 클래스
 
@@ -54,14 +54,14 @@ class ATL_NO_VTABLE ICommandTextImpl
 
 ### <a name="interface-methods"></a>인터페이스 메서드
 
-| Name | 설명 |
+| 속성 | 설명 |
 |-|-|
-|[GetCommandText](#getcommandtext)|[Setcommandtext](../../data/oledb/icommandtextimpl-setcommandtext.md)에 대 한 마지막 호출로 설정 된 텍스트 명령을 반환 합니다.|
+|[GetCommandText](#getcommandtext)|[Setcommandtext](#setcommandtext)에 대 한 마지막 호출로 설정 된 텍스트 명령을 반환 합니다.|
 |[SetCommandText](#setcommandtext)|명령 텍스트를 설정 하 여 기존 명령 텍스트를 바꿉니다.|
 
 ### <a name="data-members"></a>데이터 멤버
 
-| Name | 설명 |
+| 속성 | 설명 |
 |-|-|
 |[m_strCommandText](#strcommandtext)|명령 텍스트를 저장 합니다.|
 
@@ -71,7 +71,7 @@ class ATL_NO_VTABLE ICommandTextImpl
 
 ## <a name="icommandtextimplgetcommandtext"></a><a name="getcommandtext"></a> ICommandTextImpl:: GetCommandText
 
-[Setcommandtext](../../data/oledb/icommandtextimpl-setcommandtext.md)에 대 한 마지막 호출로 설정 된 텍스트 명령을 반환 합니다.
+[Setcommandtext](#setcommandtext)에 대 한 마지막 호출로 설정 된 텍스트 명령을 반환 합니다.
 
 ### <a name="syntax"></a>구문
 

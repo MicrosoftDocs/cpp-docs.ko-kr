@@ -7,12 +7,12 @@ helpviewer_keywords:
 - -PROFILE linker option
 - /PROFILE linker option
 ms.assetid: e676baa1-5063-47a3-a357-ba0d1f0d1699
-ms.openlocfilehash: cf07154c6b681e2ad30a85a62a0db996c3f3d911
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 07952c979fd66291b1744521d83e4556f010d297
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80078317"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91500790"
 ---
 # <a name="profile-performance-tools-profiler"></a>/PROFILE(성능 도구 프로파일러)
 
@@ -24,7 +24,7 @@ ms.locfileid: "80078317"
 /PROFILE
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 /PROFILE는 다음과 같은 링커 옵션을 의미 합니다.
 
@@ -38,7 +38,7 @@ ms.locfileid: "80078317"
 
 /PROFILE를 설정 하면 링커가 프로그램 이미지에서 재배치 섹션을 생성 합니다.  재배치 섹션을 사용 하면 프로파일러가 프로그램 이미지를 변환 하 여 프로필 데이터를 가져올 수 있습니다.
 
-**/PROFILE** 는 Enterprise (team development) 버전 에서만 사용할 수 있습니다.  PREfast에 대 한 자세한 내용은 [C/C++ 개요에 대 한 코드 분석](/cpp/code-quality/code-analysis-for-c-cpp-overview)을 참조 하세요.
+**/PROFILE** 는 Enterprise (team development) 버전 에서만 사용할 수 있습니다.  PREfast에 대 한 자세한 내용은 [c/c + + 용 코드 분석 개요](../../code-quality/code-analysis-for-c-cpp-overview.md)를 참조 하세요.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
@@ -58,9 +58,9 @@ ms.locfileid: "80078317"
 
 ### <a name="to-set-this-linker-option-within-visual-studio-cmake-project"></a>Visual Studio CMake에서이 링커 옵션을 설정 하려면 다음을 수행 하십시오.
 
-**Cmake** 프로젝트에는 **속성 페이지가**없으므로 modifing를 사용 하 여 링커 옵션을 설정할 수 있습니다.
+**Cmake** 프로젝트에는 **속성 페이지가**없으므로 링커 옵션 CMakeLists.txt modifing를 사용 하 여 설정할 수 있습니다.
 
-1. 프로젝트 루트 디렉터리에서 CMakeLists .txt를 엽니다.
+1. 프로젝트 루트 디렉터리에서 CMakeLists.txt를 엽니다.
 
 1. 아래 코드를 추가 합니다. 자세한 내용은 [Cmake 참조](https://cmake.org/cmake/help/v3.0/command/set_target_properties.html) 를 참조 하세요.
 

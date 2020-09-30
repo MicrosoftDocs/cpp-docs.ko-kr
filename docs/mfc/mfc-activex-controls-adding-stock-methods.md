@@ -6,12 +6,12 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], methods
 - DoClick method [MFC]
 ms.assetid: bc4fad78-cabd-4cc0-a798-464b1a682f0b
-ms.openlocfilehash: 42d8dfecd32b4aecd0daa4034497ec9abff6d11a
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: b4b01e4fb202cfd7a923d22cb57ce5ec6988e11d
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619935"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91502285"
 ---
 # <a name="mfc-activex-controls-adding-stock-methods"></a>MFC ActiveX 컨트롤: 스톡 메서드 추가
 
@@ -20,16 +20,16 @@ ms.locfileid: "84619935"
 >[!IMPORTANT]
 > ActiveX는 새로운 개발에 사용 하지 않아야 하는 레거시 기술입니다. ActiveX를 대체 하는 최신 기술에 대 한 자세한 내용은 [Activex Controls](activex-controls.md)을 참조 하세요.
 
-`COleControl`에서는 두 가지 스톡 메서드인 DoClick 및 새로 고침을 지원 합니다. 컨트롤의 모양을 즉시 업데이트 하기 위해 컨트롤의 사용자가 새로 고침을 호출 합니다. DoClick을 호출 하 여 컨트롤의 Click 이벤트를 발생 시킵니다.
+`COleControl` 에서는 두 가지 스톡 메서드인 DoClick 및 새로 고침을 지원 합니다. 컨트롤의 모양을 즉시 업데이트 하기 위해 컨트롤의 사용자가 새로 고침을 호출 합니다. DoClick을 호출 하 여 컨트롤의 Click 이벤트를 발생 시킵니다.
 
-|방법|디스패치 맵 항목|의견|
+|메서드|디스패치 맵 항목|설명|
 |------------|------------------------|-------------|
 |`DoClick`|**DISP_STOCKPROP_DOCLICK ()**|Click 이벤트를 발생 시킵니다.|
 |`Refresh`|**DISP_STOCKPROP_REFRESH ()**|컨트롤의 모양을 즉시 업데이트 합니다.|
 
-## <a name="adding-a-stock-method-using-the-add-method-wizard"></a><a name="_core_adding_a_stock_method_using_classwizard"></a>메서드 추가 마법사를 사용 하 여 스톡 메서드 추가
+## <a name="adding-a-stock-method-using-the-add-method-wizard"></a><a name="_core_adding_a_stock_method_using_classwizard"></a> 메서드 추가 마법사를 사용 하 여 스톡 메서드 추가
 
-[메서드 추가 마법사](../ide/add-method-wizard.md)를 사용 하 여 스톡 메서드를 간단히 추가할 수 있습니다. 다음 절차에서는 MFC ActiveX 컨트롤 마법사를 사용 하 여 만든 컨트롤에 Refresh 메서드를 추가 하는 방법을 보여 줍니다.
+[메서드 추가 마법사](../ide/adding-a-method-visual-cpp.md#add-method-wizard)를 사용 하 여 스톡 메서드를 간단히 추가할 수 있습니다. 다음 절차에서는 MFC ActiveX 컨트롤 마법사를 사용 하 여 만든 컨트롤에 Refresh 메서드를 추가 하는 방법을 보여 줍니다.
 
 #### <a name="to-add-the-stock-refresh-method-using-the-add-method-wizard"></a>메서드 추가 마법사를 사용 하 여 스톡 Refresh 메서드를 추가 하려면
 
@@ -47,7 +47,7 @@ ms.locfileid: "84619935"
 
 1. **Finish**를 클릭합니다.
 
-## <a name="add-method-wizard-changes-for-stock-methods"></a><a name="_core_classwizard_changes_for_stock_methods"></a>스톡 메서드에 대 한 메서드 추가 마법사 변경 내용
+## <a name="add-method-wizard-changes-for-stock-methods"></a><a name="_core_classwizard_changes_for_stock_methods"></a> 스톡 메서드에 대 한 메서드 추가 마법사 변경 내용
 
 스톡 Refresh 메서드는 컨트롤의 기본 클래스에서 지원 되기 때문에 **메서드 추가 마법사** 는 컨트롤의 클래스 선언을 어떤 식으로든 변경 하지 않습니다. 컨트롤의 디스패치 맵과에 메서드에 대 한 항목을 추가 합니다. IDL 파일. 다음 줄은 해당 구현 ()에 있는 컨트롤의 디스패치 맵에 추가 됩니다. CPP) 파일:
 

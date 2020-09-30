@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Visual C++, managed code
 - managed code [C++]
 ms.assetid: 339f89df-a5d2-4040-831a-ddbe25b5dce4
-ms.openlocfilehash: 63996af56f03890c9a78e95743367d47416d5d48
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2fceb57e062b9179245ba235fb497ff526a6660e
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214830"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91501682"
 ---
 # <a name="walkthrough-compile-a-ccli-program-that-targets-the-clr-in-visual-studio"></a>연습: Visual Studio에서 CLR을 대상으로 하는 c + +/CLI 프로그램 컴파일
 
@@ -84,7 +84,7 @@ C + +/CLI를 사용 하 여 .NET 클래스 및 네이티브 c + + 형식을 사�
 
 1. Visual Studio에서 새로 만든 탭을 클릭하고, 유효한 Visual C++ 프로그램을 입력하거나 샘플 프로그램 중 하나를 복사하고 붙여넣습니다.
 
-   예를 들어 프로그래밍 가이드의 **파일 처리 및 I/O** 노드에서 [방법: 텍스트 파일 쓰기(C++/CLI)](how-to-write-a-text-file-cpp-cli.md) 샘플 프로그램을 사용할 수 있습니다.
+   예를 들어 프로그래밍 가이드의 **파일 처리 및 I/O** 노드에서 [방법: 텍스트 파일 쓰기(C++/CLI)](./file-handling-and-i-o-cpp-cli.md#write_text) 샘플 프로그램을 사용할 수 있습니다.
 
    샘플 프로그램을 사용 하는 경우 **`gcnew`** .net 개체를 만들 때 대신 키워드를 사용 하 **`new`** 고 **`gcnew`** `^` 포인터 () 대신 handle ()을 반환 합니다 `*` .
 

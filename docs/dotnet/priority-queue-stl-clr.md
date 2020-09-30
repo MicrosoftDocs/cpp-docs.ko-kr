@@ -51,12 +51,12 @@ helpviewer_keywords:
 - value_compare member [STL/CLR]
 - value_type member [STL/CLR]
 ms.assetid: 4d0000d3-68ff-4c4b-8157-7060540136f5
-ms.openlocfilehash: 6c5a37cc76f6ac3a3f92cf54b440960d7476daa9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: fd87c39db279fb70d5c5b5f20e583251dc519755
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211038"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91502399"
 ---
 # <a name="priority_queue-stlclr"></a>priority_queue(STL/CLR)
 
@@ -135,11 +135,11 @@ template<typename Value,
 
 개체는 `Container` 요소를 저장 하 고 요청 시 증가 하는 형식의 기본 컨테이너를 통해 제어 하는 시퀀스에 대 한 저장소를 할당 하 고 해제 `Value` 합니다. 시퀀스를 힙으로 정렬 된 상태로 유지 합니다 .이는 우선 순위가 가장 높은 요소 (최상위 요소)를 쉽게 액세스 하 고 제거할 수 있습니다. 개체는 새 요소를 푸시하는 데 대 한 액세스를 제한 하 고 우선 순위가 가장 높은 요소만 팝 하 여 우선 순위 큐를 구현 합니다.
 
-개체는 [priority_queue:: value_compare (STL/CLR)](../dotnet/priority-queue-value-compare-stl-clr.md)형식의 저장 된 대리자 개체를 호출 하 여 제어 하는 시퀀스를 정렬 합니다. Priority_queue를 생성할 때 저장 된 대리자 개체를 지정할 수 있습니다. 대리자 개체를 지정 하지 않으면 기본값은 비교입니다 `operator<(value_type, value_type)` . 멤버 함수 [priority_queue:: value_comp (STL/CLR)](../dotnet/priority-queue-value-comp-stl-clr.md)를 호출 하 여이 저장 된 개체에 액세스 `()` 합니다.
+개체는 [priority_queue:: value_compare (STL/CLR)](#value_compare)형식의 저장 된 대리자 개체를 호출 하 여 제어 하는 시퀀스를 정렬 합니다. Priority_queue를 생성할 때 저장 된 대리자 개체를 지정할 수 있습니다. 대리자 개체를 지정 하지 않으면 기본값은 비교입니다 `operator<(value_type, value_type)` . 멤버 함수 [priority_queue:: value_comp (STL/CLR)](#value_comp)를 호출 하 여이 저장 된 개체에 액세스 `()` 합니다.
 
-이러한 대리자 개체는 [priority_queue:: value_type (STL/CLR)](../dotnet/priority-queue-value-type-stl-clr.md)형식의 값에 대해 엄격 하 고 약한 순서를 적용 해야 합니다. 즉, 다음과 같은 두 가지 키 `X` 가 `Y` 있습니다.
+이러한 대리자 개체는 [priority_queue:: value_type (STL/CLR)](#value_type)형식의 값에 대해 엄격 하 고 약한 순서를 적용 해야 합니다. 즉, 다음과 같은 두 가지 키 `X` 가 `Y` 있습니다.
 
-`value_comp()(X, Y)`모든 호출에 대해 동일한 부울 결과를 반환 합니다.
+`value_comp()(X, Y)` 모든 호출에 대해 동일한 부울 결과를 반환 합니다.
 
 `value_comp()(X, Y)`이 true 이면은 false 여야 합니다 `value_comp()(Y, X)` .
 
@@ -161,7 +161,7 @@ template<typename Value,
 
 ## <a name="members"></a>멤버
 
-## <a name="priority_queueassign-stlclr"></a><a name="assign"></a>priority_queue:: assign (STL/CLR)
+## <a name="priority_queueassign-stlclr"></a><a name="assign"></a> priority_queue:: assign (STL/CLR)
 
 모든 요소를 바꿉니다.
 
@@ -215,7 +215,7 @@ c a b
 c a b
 ```
 
-## <a name="priority_queueconst_reference-stlclr"></a><a name="const_reference"></a>priority_queue:: const_reference (STL/CLR)
+## <a name="priority_queueconst_reference-stlclr"></a><a name="const_reference"></a> priority_queue:: const_reference (STL/CLR)
 
 요소에 대한 상수 참조의 형식입니다.
 
@@ -259,7 +259,7 @@ int main()
 c b a
 ```
 
-## <a name="priority_queuecontainer_type-stlclr"></a><a name="container_type"></a>priority_queue:: container_type (STL/CLR)
+## <a name="priority_queuecontainer_type-stlclr"></a><a name="container_type"></a> priority_queue:: container_type (STL/CLR)
 
 기본 컨테이너의 형식입니다.
 
@@ -301,7 +301,7 @@ int main()
 c a b
 ```
 
-## <a name="priority_queuedifference_type-stlclr"></a><a name="difference_type"></a>priority_queue::d ifference_type (STL/CLR)
+## <a name="priority_queuedifference_type-stlclr"></a><a name="difference_type"></a> priority_queue::d ifference_type (STL/CLR)
 
 두 요소 사이의 부호가 있는 거리의 형식입니다.
 
@@ -359,7 +359,7 @@ pushing 2 = -2
 popping 3 = 3
 ```
 
-## <a name="priority_queueempty-stlclr"></a><a name="empty"></a>priority_queue:: empty (STL/CLR)
+## <a name="priority_queueempty-stlclr"></a><a name="empty"></a> priority_queue:: empty (STL/CLR)
 
 요소가 있는지 여부를 테스트합니다.
 
@@ -371,7 +371,7 @@ bool empty();
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 빈 제어되는 시퀀스에 대해 true를 반환합니다. [Priority_queue:: size (STL/CLR)](../dotnet/priority-queue-size-stl-clr.md)와 동일 `() == 0` 합니다. 이를 사용 하 여 priority_queue 비어 있는지 여부를 테스트 합니다.
+멤버 함수는 빈 제어되는 시퀀스에 대해 true를 반환합니다. [Priority_queue:: size (STL/CLR)](#size)와 동일 `() == 0` 합니다. 이를 사용 하 여 priority_queue 비어 있는지 여부를 테스트 합니다.
 
 ### <a name="example"></a>예제
 
@@ -413,7 +413,7 @@ size() = 0
 empty() = True
 ```
 
-## <a name="priority_queuegeneric_container-stlclr"></a><a name="generic_container"></a>priority_queue:: generic_container (STL/CLR)
+## <a name="priority_queuegeneric_container-stlclr"></a><a name="generic_container"></a> priority_queue:: generic_container (STL/CLR)
 
 컨테이너에 대 한 제네릭 인터페이스의 형식입니다.
 
@@ -476,7 +476,7 @@ d c b a
 e d b a c
 ```
 
-## <a name="priority_queuegeneric_value-stlclr"></a><a name="generic_value"></a>priority_queue:: generic_value (STL/CLR)
+## <a name="priority_queuegeneric_value-stlclr"></a><a name="generic_value"></a> priority_queue:: generic_value (STL/CLR)
 
 컨테이너의 제네릭 인터페이스와 함께 사용할 요소의 형식입니다.
 
@@ -534,7 +534,7 @@ c a b
 c b a
 ```
 
-## <a name="priority_queueget_container-stlclr"></a><a name="get_container"></a>priority_queue:: get_container (STL/CLR)
+## <a name="priority_queueget_container-stlclr"></a><a name="get_container"></a> priority_queue:: get_container (STL/CLR)
 
 기본 컨테이너에 액세스합니다.
 
@@ -575,7 +575,7 @@ int main()
 c a b
 ```
 
-## <a name="priority_queueoperator-stlclr"></a><a name="op_as"></a>priority_queue:: operator = (STL/CLR)
+## <a name="priority_queueoperator-stlclr"></a><a name="op_as"></a> priority_queue:: operator = (STL/CLR)
 
 제어되는 시퀀스를 바꿉니다.
 
@@ -629,7 +629,7 @@ c a b
 c a b
 ```
 
-## <a name="priority_queuepop-stlclr"></a><a name="pop"></a>priority_queue::p op (STL/CLR)
+## <a name="priority_queuepop-stlclr"></a><a name="pop"></a> priority_queue::p op (STL/CLR)
 
 가장 높은 proirity 요소를 제거 합니다.
 
@@ -677,7 +677,7 @@ c a b
 b a
 ```
 
-## <a name="priority_queuepriority_queue-stlclr"></a><a name="priority_queue"></a>priority_queue::p riority_queue (STL/CLR)
+## <a name="priority_queuepriority_queue-stlclr"></a><a name="priority_queue"></a> priority_queue::p riority_queue (STL/CLR)
 
 컨테이너 어댑터 개체를 생성 합니다.
 
@@ -864,7 +864,7 @@ c a b
 a c b
 ```
 
-## <a name="priority_queuepush-stlclr"></a><a name="push"></a>priority_queue::p 밀어넣기 (STL/CLR)
+## <a name="priority_queuepush-stlclr"></a><a name="push"></a> priority_queue::p 밀어넣기 (STL/CLR)
 
 새 요소를 추가 합니다.
 
@@ -905,7 +905,7 @@ int main()
 c a b
 ```
 
-## <a name="priority_queuereference-stlclr"></a><a name="reference"></a>priority_queue:: reference (STL/CLR)
+## <a name="priority_queuereference-stlclr"></a><a name="reference"></a> priority_queue:: reference (STL/CLR)
 
 요소에 대한 참조의 형식입니다.
 
@@ -954,7 +954,7 @@ c a b
 x a b
 ```
 
-## <a name="priority_queuesize-stlclr"></a><a name="size"></a>priority_queue:: size (STL/CLR)
+## <a name="priority_queuesize-stlclr"></a><a name="size"></a> priority_queue:: size (STL/CLR)
 
 요소 수를 계산합니다.
 
@@ -966,7 +966,7 @@ size_type size();
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 제어되는 시퀀스의 길이를 반환합니다. 이를 사용 하 여 현재 제어 되는 시퀀스에 있는 요소 수를 확인 합니다. 시퀀스의 크기가 0이 아니면 [priority_queue:: empty (STL/CLR)](../dotnet/priority-queue-empty-stl-clr.md)를 참조 하세요 `()` .
+멤버 함수는 제어되는 시퀀스의 길이를 반환합니다. 이를 사용 하 여 현재 제어 되는 시퀀스에 있는 요소 수를 확인 합니다. 시퀀스의 크기가 0이 아니면 [priority_queue:: empty (STL/CLR)](#empty)를 참조 하세요 `()` .
 
 ### <a name="example"></a>예제
 
@@ -1008,7 +1008,7 @@ size() = 2 after popping
 size() = 4 after adding 2
 ```
 
-## <a name="priority_queuesize_type-stlclr"></a><a name="size_type"></a>priority_queue:: size_type (STL/CLR)
+## <a name="priority_queuesize_type-stlclr"></a><a name="size_type"></a> priority_queue:: size_type (STL/CLR)
 
 두 요소 사이의 부호가 있는 거리의 형식입니다.
 
@@ -1057,7 +1057,7 @@ c a b
 size difference = 2
 ```
 
-## <a name="priority_queueto_array-stlclr"></a><a name="to_array"></a>priority_queue:: to_array (STL/CLR)
+## <a name="priority_queueto_array-stlclr"></a><a name="to_array"></a> priority_queue:: to_array (STL/CLR)
 
 제어 되는 시퀀스를 새 배열에 복사 합니다.
 
@@ -1107,7 +1107,7 @@ d c b a
 c a b
 ```
 
-## <a name="priority_queuetop-stlclr"></a><a name="top"></a>priority_queue:: top (STL/CLR)
+## <a name="priority_queuetop-stlclr"></a><a name="top"></a> priority_queue:: top (STL/CLR)
 
 우선 순위가 가장 높은 요소에 액세스 합니다.
 
@@ -1153,7 +1153,7 @@ int main()
     }
 ```
 
-## <a name="priority_queuetop_item-stlclr"></a><a name="top_item"></a>priority_queue:: top_item (STL/CLR)
+## <a name="priority_queuetop_item-stlclr"></a><a name="top_item"></a> priority_queue:: top_item (STL/CLR)
 
 우선 순위가 가장 높은 요소에 액세스 합니다.
 
@@ -1205,7 +1205,7 @@ top_item = c
 x a b
 ```
 
-## <a name="priority_queuevalue_comp-stlclr"></a><a name="value_comp"></a>priority_queue:: value_comp (STL/CLR)
+## <a name="priority_queuevalue_comp-stlclr"></a><a name="value_comp"></a> priority_queue:: value_comp (STL/CLR)
 
 두 요소의 순서 지정 대리자를 복사합니다.
 
@@ -1264,7 +1264,7 @@ compare(L'a', L'b') = False
 compare(L'b', L'a') = True
 ```
 
-## <a name="priority_queuevalue_compare-stlclr"></a><a name="value_compare"></a>priority_queue:: value_compare (STL/CLR)
+## <a name="priority_queuevalue_compare-stlclr"></a><a name="value_compare"></a> priority_queue:: value_compare (STL/CLR)
 
 두 값에 대 한 순서 지정 대리자입니다.
 
@@ -1323,7 +1323,7 @@ compare(L'a', L'b') = False
 compare(L'b', L'a') = True
 ```
 
-## <a name="priority_queuevalue_type-stlclr"></a><a name="value_type"></a>priority_queue:: value_type (STL/CLR)
+## <a name="priority_queuevalue_type-stlclr"></a><a name="value_type"></a> priority_queue:: value_type (STL/CLR)
 
 요소의 형식입니다.
 

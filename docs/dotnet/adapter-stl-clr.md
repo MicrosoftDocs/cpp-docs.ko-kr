@@ -48,12 +48,12 @@ helpviewer_keywords:
 - operator= member [STL/CLR]
 - range_adapter member [STL/CLR]
 ms.assetid: 71ce7e51-42b6-4f70-9595-303791a97677
-ms.openlocfilehash: 7730b5a8dbb8c92d85b4c8c5732657d28bf5b229
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3278371cc7afb08f0d461c77cde9578e1f2840c6
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216442"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91502424"
 ---
 # <a name="adapter-stlclr"></a>adapter(STL/CLR)
 
@@ -84,7 +84,7 @@ STL/CLR 헤더는 `<cliext/adapter>` 두 개의 템플릿 클래스 ( `collectio
 
 ## <a name="members"></a>멤버
 
-## <a name="collection_adapter-stlclr"></a><a name="collection_adapter"></a>collection_adapter (STL/CLR)
+## <a name="collection_adapter-stlclr"></a><a name="collection_adapter"></a> collection_adapter (STL/CLR)
 
 STL/CLR 컨테이너로 사용할 .NET 컬렉션을 래핑합니다. 는 `collection_adapter` 간단한 STL/CLR 컨테이너 개체를 설명 하는 템플릿 클래스입니다. BCL (기본 클래스 라이브러리) 인터페이스를 래핑하고 제어 되는 시퀀스를 조작 하는 데 사용 하는 반복기 쌍을 반환 합니다.
 
@@ -160,7 +160,7 @@ template<typename Key,
 |[collection_adapter::size(STL/CLR)](#size)|요소 수를 계산합니다.|
 |[collection_adapter::swap(STL/CLR)](#swap)|두 컨테이너의 내용을 바꿉니다.|
 
-|연산자|Description|
+|연산자|설명|
 |--------------|-----------------|
 |[collection_adapter::operator=(STL/CLR)](#op_eq)|저장 된 BCL 핸들을 바꿉니다.|
 
@@ -168,7 +168,7 @@ template<typename Key,
 
 이 템플릿 클래스를 사용 하 여 BCL/CLR 컨테이너로 BCL 컨테이너를 조작 합니다. 은 `collection_adapter` BCL 인터페이스에 대 한 핸들을 저장 하며,이를 통해 요소의 시퀀스를 제어 합니다. `collection_adapter`개체는 `X` `X.begin()` `X.end()` 요소를 순서 대로 방문 하는 데 사용 하는 입력 반복기 쌍을 반환 합니다. 일부 특수화를 사용 하 여 제어 되는 `X.size()` 시퀀스의 길이를 결정할 수도 있습니다.
 
-## <a name="collection_adapterbase-stlclr"></a><a name="base"></a>collection_adapter:: base (STL/CLR)
+## <a name="collection_adapterbase-stlclr"></a><a name="base"></a> collection_adapter:: base (STL/CLR)
 
 래핑된 BCL 인터페이스를 지정 합니다.
 
@@ -212,7 +212,7 @@ x x x x x x
 base() same = True
 ```
 
-## <a name="collection_adapterbegin-stlclr"></a><a name="begin"></a>collection_adapter:: begin (STL/CLR)
+## <a name="collection_adapterbegin-stlclr"></a><a name="begin"></a> collection_adapter:: begin (STL/CLR)
 
 제어되는 시퀀스의 시작을 지정합니다.
 
@@ -263,7 +263,7 @@ a b c
 *++begin() = b
 ```
 
-## <a name="collection_adaptercollection_adapter-stlclr"></a><a name="collection_adapter_collection_adapter"></a>collection_adapter:: collection_adapter (STL/CLR)
+## <a name="collection_adaptercollection_adapter-stlclr"></a><a name="collection_adapter_collection_adapter"></a> collection_adapter:: collection_adapter (STL/CLR)
 
 어댑터 개체를 생성 합니다.
 
@@ -296,13 +296,13 @@ collection_adapter(Coll^ collection);
 
 `collection_adapter(collection_adapter<Coll>% right);`
 
-`right.` [collection_adapter:: BASE (STL/CLR)](../dotnet/collection-adapter-base-stl-clr.md)를 사용 하 여 저장 된 핸들을 초기화 `()` 합니다.
+`right.` [collection_adapter:: BASE (STL/CLR)](#base)를 사용 하 여 저장 된 핸들을 초기화 `()` 합니다.
 
 생성자는 다음과 같습니다.
 
 `collection_adapter(collection_adapter<Coll>^ right);`
 
-`right->` [collection_adapter:: BASE (STL/CLR)](../dotnet/collection-adapter-base-stl-clr.md)를 사용 하 여 저장 된 핸들을 초기화 `()` 합니다.
+`right->` [collection_adapter:: BASE (STL/CLR)](#base)를 사용 하 여 저장 된 핸들을 초기화 `()` 합니다.
 
 생성자는 다음과 같습니다.
 
@@ -357,7 +357,7 @@ x x x x x x
 x x x x x x
 ```
 
-## <a name="collection_adapterdifference_type-stlclr"></a><a name="difference_type"></a>collection_adapter::d ifference_type (STL/CLR)
+## <a name="collection_adapterdifference_type-stlclr"></a><a name="difference_type"></a> collection_adapter::d ifference_type (STL/CLR)
 
 두 요소 사이의 부호가 있는 거리의 형식입니다.
 
@@ -409,7 +409,7 @@ a b c
 end()-begin() = 3
 ```
 
-## <a name="collection_adapterend-stlclr"></a><a name="end"></a>collection_adapter:: end (STL/CLR)
+## <a name="collection_adapterend-stlclr"></a><a name="end"></a> collection_adapter:: end (STL/CLR)
 
 제어되는 시퀀스의 끝을 지정합니다.
 
@@ -454,7 +454,7 @@ int main()
 a b c
 ```
 
-## <a name="collection_adapteriterator-stlclr"></a><a name="iterator"></a>collection_adapter:: iterator (STL/CLR)
+## <a name="collection_adapteriterator-stlclr"></a><a name="iterator"></a> collection_adapter:: iterator (STL/CLR)
 
 제어되는 시퀀스에 대한 반복기의 형식입니다.
 
@@ -499,7 +499,7 @@ int main()
 a b c
 ```
 
-## <a name="collection_adapterkey_type-stlclr"></a><a name="key_type"></a>collection_adapter:: key_type (STL/CLR)
+## <a name="collection_adapterkey_type-stlclr"></a><a name="key_type"></a> collection_adapter:: key_type (STL/CLR)
 
 사전 키의 형식입니다.
 
@@ -549,7 +549,7 @@ int main()
 [a 1] [b 2] [c 3]
 ```
 
-## <a name="collection_adaptermapped_type-stlclr"></a><a name="mapped_type"></a>collection_adapter:: mapped_type (STL/CLR)
+## <a name="collection_adaptermapped_type-stlclr"></a><a name="mapped_type"></a> collection_adapter:: mapped_type (STL/CLR)
 
 사전 값의 형식입니다.
 
@@ -599,7 +599,7 @@ int main()
 [a 1] [b 2] [c 3]
 ```
 
-## <a name="collection_adapteroperator-stlclr"></a><a name="op_eq"></a>collection_adapter:: operator = (STL/CLR)
+## <a name="collection_adapteroperator-stlclr"></a><a name="op_eq"></a> collection_adapter:: operator = (STL/CLR)
 
 저장 된 BCL 핸들을 바꿉니다.
 
@@ -656,7 +656,7 @@ a b c
 a b c
 ```
 
-## <a name="collection_adapterreference-stlclr"></a><a name="reference"></a>collection_adapter:: reference (STL/CLR)
+## <a name="collection_adapterreference-stlclr"></a><a name="reference"></a> collection_adapter:: reference (STL/CLR)
 
 요소에 대한 참조의 형식입니다.
 
@@ -704,7 +704,7 @@ int main()
 a b c
 ```
 
-## <a name="collection_adaptersize-stlclr"></a><a name="size"></a>collection_adapter:: size (STL/CLR)
+## <a name="collection_adaptersize-stlclr"></a><a name="size"></a> collection_adapter:: size (STL/CLR)
 
 요소 수를 계산합니다.
 
@@ -747,7 +747,7 @@ x x x x x x
 size() = 6
 ```
 
-## <a name="collection_adaptersize_type-stlclr"></a><a name="size_type"></a>collection_adapter:: size_type (STL/CLR)
+## <a name="collection_adaptersize_type-stlclr"></a><a name="size_type"></a> collection_adapter:: size_type (STL/CLR)
 
 두 요소 사이의 부호가 있는 거리의 형식입니다.
 
@@ -792,7 +792,7 @@ x x x x x x
 size() = 6
 ```
 
-## <a name="collection_adapterswap-stlclr"></a><a name="swap"></a>collection_adapter:: swap (STL/CLR)
+## <a name="collection_adapterswap-stlclr"></a><a name="swap"></a> collection_adapter:: swap (STL/CLR)
 
 두 컨테이너의 내용을 바꿉니다.
 
@@ -861,7 +861,7 @@ x x x x x
 a b c
 ```
 
-## <a name="collection_adaptervalue_type-stlclr"></a><a name="value_type"></a>collection_adapter:: value_type (STL/CLR)
+## <a name="collection_adaptervalue_type-stlclr"></a><a name="value_type"></a> collection_adapter:: value_type (STL/CLR)
 
 요소의 형식입니다.
 
@@ -910,7 +910,7 @@ int main()
 a b c
 ```
 
-## <a name="make_collection-stlclr"></a><a name="make_collection"></a>make_collection (STL/CLR)
+## <a name="make_collection-stlclr"></a><a name="make_collection"></a> make_collection (STL/CLR)
 
 `range_adapter`반복기 쌍에서을 만듭니다.
 
@@ -988,7 +988,7 @@ SyncRoot not nullptr = True
 | a b c |
 ```
 
-## <a name="range_adapter-stlclr"></a><a name="range_adapter"></a>range_adapter (STL/CLR)
+## <a name="range_adapter-stlclr"></a><a name="range_adapter"></a> range_adapter (STL/CLR)
 
 여러 BCL (기본 클래스 라이브러리) 인터페이스를 구현 하는 데 사용 되는 반복기 쌍을 래핑하는 템플릿 클래스입니다. Range_adapter를 사용 하 여 BCL/CLR 범위를 BCL 컬렉션과 같이 조작할 수 있습니다.
 
@@ -1033,7 +1033,7 @@ template<typename Iter>
 
 Range_adapter는 일련의 요소를 구분 하는 반복기 쌍을 저장 합니다. 개체는 요소를 순서 대로 반복할 수 있도록 하는 네 가지 BCL 인터페이스를 구현 합니다. 이 템플릿 클래스를 사용 하 여 BCL 컨테이너와 마찬가지로 STL/CLR 범위를 조작할 수 있습니다.
 
-## <a name="range_adapteroperator-stlclr"></a><a name="range_adapter_op_eq"></a>range_adapter:: operator = (STL/CLR)
+## <a name="range_adapteroperator-stlclr"></a><a name="range_adapter_op_eq"></a> range_adapter:: operator = (STL/CLR)
 
 저장 된 반복기 쌍을 바꿉니다.
 
@@ -1090,7 +1090,7 @@ a b c
 a b c
 ```
 
-## <a name="range_adapterrange_adapter-stlclr"></a><a name="range_adapter_range_adapter"></a>range_adapter:: range_adapter (STL/CLR)
+## <a name="range_adapterrange_adapter-stlclr"></a><a name="range_adapter_range_adapter"></a> range_adapter:: range_adapter (STL/CLR)
 
 어댑터 개체를 생성 합니다.
 
