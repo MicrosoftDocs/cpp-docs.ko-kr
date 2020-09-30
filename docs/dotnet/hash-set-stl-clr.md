@@ -95,12 +95,12 @@ helpviewer_keywords:
 - value_compare member [STL/CLR]
 - value_type member [STL/CLR]
 ms.assetid: d110e356-ba3e-4e52-9e2d-d997bf975c96
-ms.openlocfilehash: a7db6367ae7d5096c47666a1ea930720f061c9dd
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: c6df41836433b952d7d2e0e7d744270174c5768a
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90743128"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91508746"
 ---
 # <a name="hash_set-stlclr"></a>hash_set(STL/CLR)
 
@@ -157,7 +157,7 @@ template<typename Key>
 |[hash_set::value_compare(STL/CLR)](#value_compare)|두 요소 값에 대 한 순서 지정 대리자입니다.|
 |[hash_set::value_type(STL/CLR)](#value_type)|요소의 형식입니다.|
 
-|멤버 함수|Description|
+|멤버 함수|설명|
 |---------------------|-----------------|
 |[hash_set::begin(STL/CLR)](#begin)|제어되는 시퀀스의 시작을 지정합니다.|
 |[hash_set::bucket_count(STL/CLR)](#bucket_count)|버킷 수를 계산 합니다.|
@@ -185,13 +185,13 @@ template<typename Key>
 |[hash_set::upper_bound(STL/CLR)](#upper_bound)|지정 된 키와 일치 하는 범위의 끝을 찾습니다.|
 |[hash_set::value_comp(STL/CLR)](#value_comp)|두 요소 값에 대 한 순서 지정 대리자를 복사 합니다.|
 
-|연산자|Description|
+|연산자|설명|
 |--------------|-----------------|
 |[hash_set::operator=(STL/CLR)](#op)|제어되는 시퀀스를 바꿉니다.|
 
 ## <a name="interfaces"></a>인터페이스
 
-|인터페이스|Description|
+|인터페이스|설명|
 |---------------|-----------------|
 |<xref:System.ICloneable>|개체를 복제 합니다.|
 |<xref:System.Collections.IEnumerable>|요소를 순서 대로 이동 합니다.|
@@ -204,9 +204,9 @@ template<typename Key>
 
 개체는 양방향 연결 목록에서 개별 노드로 제어 되는 시퀀스에 대 한 저장소를 할당 하 고 해제 합니다. 액세스 속도를 높이기 위해 개체는 목록 (해시 테이블)에 다양 한 길이의 포인터 배열을 유지 관리 하므로 전체 목록을 sublists의 시퀀스로 효과적으로 관리할 수 있습니다. 노드 간에 링크를 변경 하 여 유지 하는 버킷에 요소를 삽입 합니다. 즉, 노드 내용을 다른 노드로 복사 하지 않습니다. 즉, 나머지 요소를 방해 하지 않고 요소를 자유롭게 삽입 하 고 제거할 수 있습니다.
 
-개체는 [hash_set:: key_compare (STL/CLR)](../dotnet/hash-set-key-compare-stl-clr.md)형식의 저장 된 대리자 개체를 호출 하 여 제어 하는 각 버킷을 정렬 합니다. Hash_set를 생성할 때 저장 된 대리자 개체를 지정할 수 있습니다. 대리자 개체를 지정 하지 않으면 기본값은 비교입니다 `operator<=(key_type, key_type)` .
+개체는 [hash_set:: key_compare (STL/CLR)](#key_compare)형식의 저장 된 대리자 개체를 호출 하 여 제어 하는 각 버킷을 정렬 합니다. Hash_set를 생성할 때 저장 된 대리자 개체를 지정할 수 있습니다. 대리자 개체를 지정 하지 않으면 기본값은 비교입니다 `operator<=(key_type, key_type)` .
 
-[Hash_set:: key_comp (STL/CLR)](../dotnet/hash-set-key-comp-stl-clr.md)멤버 함수를 호출 하 여 저장 된 대리자 개체에 액세스 `()` 합니다. 이러한 대리자 개체는 [hash_set:: key_type (STL/CLR)](../dotnet/hash-set-key-type-stl-clr.md)형식의 키 사이에 동일한 순서를 정의 해야 합니다. 즉, 다음과 같은 두 가지 키 `X` 가 `Y` 있습니다.
+[Hash_set:: key_comp (STL/CLR)](#key_comp)멤버 함수를 호출 하 여 저장 된 대리자 개체에 액세스 `()` 합니다. 이러한 대리자 개체는 [hash_set:: key_type (STL/CLR)](#key_type)형식의 키 사이에 동일한 순서를 정의 해야 합니다. 즉, 다음과 같은 두 가지 키 `X` 가 `Y` 있습니다.
 
 `key_comp()(X, Y)` 모든 호출에 대해 동일한 부울 결과를 반환 합니다.
 
@@ -216,7 +216,7 @@ template<typename Key>
 
 컨테이너는 키의 순서를 지정 하는 요소 (및 동일한 정수 값에 대 한 해시)가 버킷 내에 인접해 있는지 확인 합니다. 템플릿 클래스 [hash_multiset (STL/CLR)](../dotnet/hash-multiset-stl-clr.md)와 달리 템플릿 클래스의 개체는 `hash_set` 모든 요소에 대 한 키가 고유한 지 확인 합니다. 두 키의 순서는 동일 하지 않습니다.
 
-개체는 [hash_set:: hasher (STL/CLR)](../dotnet/hash-set-hasher-stl-clr.md)형식의 저장 된 대리자 개체를 호출 하 여 지정 된 순서 지정 키를 포함할 버킷을 결정 합니다. 이 저장 된 개체는 멤버 함수 [hash_set:: hash_delegate (STL/CLR)](../dotnet/hash-set-hash-delegate-stl-clr.md) 를 호출 `()` 하 여 키 값에 따라 달라 지는 정수 값을 가져오는 방식으로 액세스 합니다. Hash_set를 생성할 때 저장 된 대리자 개체를 지정할 수 있습니다. 대리자 개체를 지정 하지 않으면 기본값은 함수 `System::Object::hash_value(key_type)` 입니다. 즉, 모든 키 및에 `X` 대해 `Y` 다음을 수행 합니다.
+개체는 [hash_set:: hasher (STL/CLR)](#hasher)형식의 저장 된 대리자 개체를 호출 하 여 지정 된 순서 지정 키를 포함할 버킷을 결정 합니다. 이 저장 된 개체는 멤버 함수 [hash_set:: hash_delegate (STL/CLR)](#hash_delegate) 를 호출 `()` 하 여 키 값에 따라 달라 지는 정수 값을 가져오는 방식으로 액세스 합니다. Hash_set를 생성할 때 저장 된 대리자 개체를 지정할 수 있습니다. 대리자 개체를 지정 하지 않으면 기본값은 함수 `System::Object::hash_value(key_type)` 입니다. 즉, 모든 키 및에 `X` 대해 `Y` 다음을 수행 합니다.
 
 `hash_delegate()(X)` 모든 호출에서 동일한 정수 결과를 반환 합니다.
 
@@ -224,9 +224,9 @@ template<typename Key>
 
 각 요소는 키와 값으로 사용 됩니다. 시퀀스는 시퀀스의 요소 수 (일정 한 시간)에 관계 없이 대부분의 작업을 사용 하 여 임의 요소를 조회, 삽입 및 제거할 수 있도록 하는 방식으로 표현 됩니다. 또한, 요소를 삽입할 경우 어떤 반복기도 무효화되지 않으며, 요소를 제거할 경우 제거된 요소를 가리키고 있는 반복기만 무효화됩니다.
 
-그러나 해시 된 값이 균일 하 게 분산 되지 않은 경우 해시 테이블이 중복 제거 될 수 있습니다. 극단적인 경우--항상 동일한 값을 반환 하는 해시 함수의 경우 (조회, 삽입 및 제거) 시퀀스의 요소 수에 비례 합니다 (선형 시간). 컨테이너는 적절 한 해시 함수, 평균 버킷 크기 및 해시 테이블 크기 (총 버킷 수)를 선택 하는 것을 시도한 이러한 선택 항목의 일부 또는 전부를 재정의할 수 있습니다. 예를 들어 [hash_set:: max_load_factor (stl/clr)](../dotnet/hash-set-max-load-factor-stl-clr.md) 및 [hash_set:: rehash (stl/clr)](../dotnet/hash-set-rehash-stl-clr.md)함수를 참조 하세요.
+그러나 해시 된 값이 균일 하 게 분산 되지 않은 경우 해시 테이블이 중복 제거 될 수 있습니다. 극단적인 경우--항상 동일한 값을 반환 하는 해시 함수의 경우 (조회, 삽입 및 제거) 시퀀스의 요소 수에 비례 합니다 (선형 시간). 컨테이너는 적절 한 해시 함수, 평균 버킷 크기 및 해시 테이블 크기 (총 버킷 수)를 선택 하는 것을 시도한 이러한 선택 항목의 일부 또는 전부를 재정의할 수 있습니다. 예를 들어 [hash_set:: max_load_factor (stl/clr)](#max_load_factor) 및 [hash_set:: rehash (stl/clr)](#rehash)함수를 참조 하세요.
 
-Hash_set은 양방향 반복기를 지원 합니다. 즉, 제어 되는 시퀀스에서 요소를 지정 하는 반복기를 사용 하 여 인접 한 요소를 한 단계씩 실행 할 수 있습니다. 특수 헤드 노드는 [hash_set:: end (STL/CLR)](../dotnet/hash-set-end-stl-clr.md)에서 반환 된 반복기에 해당 `()` 합니다. 제어 되는 시퀀스의 마지막 요소 (있는 경우)에 도달할 때까지이 반복기를 줄일 수 있습니다. Hash_set iterator를 증가 시켜 헤드 노드에 도달할 수 있습니다. 그런 다음와 비교 `end()` 합니다. 그러나에서 반환 된 반복기는 역 참조할 수 없습니다 `end()` .
+Hash_set은 양방향 반복기를 지원 합니다. 즉, 제어 되는 시퀀스에서 요소를 지정 하는 반복기를 사용 하 여 인접 한 요소를 한 단계씩 실행 할 수 있습니다. 특수 헤드 노드는 [hash_set:: end (STL/CLR)](#end)에서 반환 된 반복기에 해당 `()` 합니다. 제어 되는 시퀀스의 마지막 요소 (있는 경우)에 도달할 때까지이 반복기를 줄일 수 있습니다. Hash_set iterator를 증가 시켜 헤드 노드에 도달할 수 있습니다. 그런 다음와 비교 `end()` 합니다. 그러나에서 반환 된 반복기는 역 참조할 수 없습니다 `end()` .
 
 임의 액세스 반복기를 필요로 하는 숫자 위치를 지정 하 여 hash_set 요소를 직접 참조할 수 없습니다.
 
@@ -364,7 +364,7 @@ void clear();
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 [hash_set:: erase (stl/clr)](../dotnet/hash-set-erase-stl-clr.md) `(` [hash_set:: begin (stl/clr)](../dotnet/hash-set-begin-stl-clr.md) `(),` [hash_set:: end (stl/clr)](../dotnet/hash-set-end-stl-clr.md)를 효과적으로 호출 합니다 `())` . 이를 사용 하 여 제어 되는 시퀀스가 비어 있는지 확인 합니다.
+멤버 함수는 [hash_set:: erase (stl/clr)](#erase) `(` [hash_set:: begin (stl/clr)](#begin) `(),` [hash_set:: end (stl/clr)](#end)를 효과적으로 호출 합니다 `())` . 이를 사용 하 여 제어 되는 시퀀스가 비어 있는지 확인 합니다.
 
 ### <a name="example"></a>예제
 
@@ -659,7 +659,7 @@ bool empty();
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 빈 제어되는 시퀀스에 대해 true를 반환합니다. [Hash_set:: size (STL/CLR)](../dotnet/hash-set-size-stl-clr.md)와 동일 `() == 0` 합니다. 이를 사용 하 여 hash_set 비어 있는지 여부를 테스트 합니다.
+멤버 함수는 빈 제어되는 시퀀스에 대해 true를 반환합니다. [Hash_set:: size (STL/CLR)](#size)와 동일 `() == 0` 합니다. 이를 사용 하 여 hash_set 비어 있는지 여부를 테스트 합니다.
 
 ### <a name="example"></a>예제
 
@@ -765,7 +765,7 @@ cliext::pair<iterator, iterator> equal_range(key_type key);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수 `cliext::pair<iterator, iterator>(` [hash_set:: lower_bound (stl/clr)](../dotnet/hash-set-lower-bound-stl-clr.md) `(key),` [hash_set:: upper_bound (stl/clr)](../dotnet/hash-set-upper-bound-stl-clr.md)쌍의 반복기를 반환 합니다 `(key))` . 이를 사용 하 여 제어 되는 시퀀스에서 현재 지정 된 키와 일치 하는 요소의 범위를 확인 합니다.
+멤버 함수 `cliext::pair<iterator, iterator>(` [hash_set:: lower_bound (stl/clr)](#lower_bound) `(key),` [hash_set:: upper_bound (stl/clr)](#upper_bound)쌍의 반복기를 반환 합니다 `(key))` . 이를 사용 하 여 제어 되는 시퀀스에서 현재 지정 된 키와 일치 하는 요소의 범위를 확인 합니다.
 
 ### <a name="example"></a>예제
 
@@ -836,7 +836,7 @@ bool erase(key_type key)
 
 ### <a name="remarks"></a>설명
 
-첫 번째 멤버 함수는 where가 가리키는 제어 *되*는 시퀀스의 요소를 제거 하 고, 요소가 제거 된 요소 뒤에 남은 첫 번째 요소를 지정 하는 반복기를 반환 하거나, 이러한 요소가 없는 경우 [hash_set:: end (STL/CLR)](../dotnet/hash-set-end-stl-clr.md) 를 반환 합니다 `()` . 단일 요소를 제거 하는 데 사용 합니다.
+첫 번째 멤버 함수는 where가 가리키는 제어 *되*는 시퀀스의 요소를 제거 하 고, 요소가 제거 된 요소 뒤에 남은 첫 번째 요소를 지정 하는 반복기를 반환 하거나, 이러한 요소가 없는 경우 [hash_set:: end (STL/CLR)](#end) 를 반환 합니다 `()` . 단일 요소를 제거 하는 데 사용 합니다.
 
 두 번째 멤버 함수는 [,) 범위에서 제어 되는 시퀀스의 요소를 제거 `first` `last` 하 고, 제거 된 요소 뒤에 남은 첫 번째 요소를 지정 하는 반복기를 반환 하거나, `end()` 이러한 요소가 없는 경우을 반환 합니다. 연속 된 요소를 0 개 이상 제거 하는 데 사용 합니다.
 
@@ -909,7 +909,7 @@ iterator find(key_type key);
 
 ### <a name="remarks"></a>설명
 
-제어 되는 시퀀스의 요소 중 하나 이상이 *key*와 동일한 정렬을 사용 하는 경우 멤버 함수는 이러한 요소 중 하나를 지정 하는 반복기를 반환 합니다. 그렇지 않으면 [hash_set:: end (STL/CLR)](../dotnet/hash-set-end-stl-clr.md)를 반환 `()` 합니다. 이를 사용 하 여 제어 되는 시퀀스에서 현재 지정 된 키와 일치 하는 요소를 찾을 수 있습니다.
+제어 되는 시퀀스의 요소 중 하나 이상이 *key*와 동일한 정렬을 사용 하는 경우 멤버 함수는 이러한 요소 중 하나를 지정 하는 반복기를 반환 합니다. 그렇지 않으면 [hash_set:: end (STL/CLR)](#end)를 반환 `()` 합니다. 이를 사용 하 여 제어 되는 시퀀스에서 현재 지정 된 키와 일치 하는 요소를 찾을 수 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -1829,7 +1829,7 @@ float load_factor();
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 `(float)` [hash_set:: size (stl/clr)](../dotnet/hash-set-size-stl-clr.md) `() /` [hash_set:: bucket_count (stl/clr)](../dotnet/hash-set-bucket-count-stl-clr.md)을 반환 합니다 `()` . 이를 사용 하 여 평균 버킷 크기를 결정 합니다.
+멤버 함수는 `(float)` [hash_set:: size (stl/clr)](#size) `() /` [hash_set:: bucket_count (stl/clr)](#bucket_count)을 반환 합니다 `()` . 이를 사용 하 여 평균 버킷 크기를 결정 합니다.
 
 ### <a name="example"></a>예제
 
@@ -1908,7 +1908,7 @@ iterator lower_bound(key_type key);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 `X` 제어 되는 시퀀스에서 *키* 로 동일한 버킷으로 해시 하 고 *키*와 동일한 순서를 갖는 첫 번째 요소를 확인 합니다. 이러한 요소가 없는 경우 [hash_set:: end (STL/CLR)](../dotnet/hash-set-end-stl-clr.md)를 반환 하 `()` 고, 그렇지 않으면를 지정 하는 반복기를 반환 `X` 합니다. 이를 사용 하 여 제어 되는 시퀀스에서 현재 지정 된 키와 일치 하는 요소 시퀀스의 시작 부분을 찾을 수 있습니다.
+멤버 함수는 `X` 제어 되는 시퀀스에서 *키* 로 동일한 버킷으로 해시 하 고 *키*와 동일한 순서를 갖는 첫 번째 요소를 확인 합니다. 이러한 요소가 없는 경우 [hash_set:: end (STL/CLR)](#end)를 반환 하 `()` 고, 그렇지 않으면를 지정 하는 반복기를 반환 `X` 합니다. 이를 사용 하 여 제어 되는 시퀀스에서 현재 지정 된 키와 일치 하는 요소 시퀀스의 시작 부분을 찾을 수 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -2221,7 +2221,7 @@ void rehash();
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 해시 테이블을 다시 작성 하 여 [hash_set:: load_factor (stl/clr)](../dotnet/hash-set-load-factor-stl-clr.md) `() <=` [hash_set:: max_load_factor (stl/clr)](../dotnet/hash-set-max-load-factor-stl-clr.md)를 확인 합니다. 그렇지 않으면 해시 테이블의 크기는 삽입 후 필요에 따라 커집니다. (크기가 자동으로 감소 하지 않습니다.) 이를 사용 하 여 해시 테이블의 크기를 조정 합니다.
+멤버 함수는 해시 테이블을 다시 작성 하 여 [hash_set:: load_factor (stl/clr)](#load_factor) `() <=` [hash_set:: max_load_factor (stl/clr)](#max_load_factor)를 확인 합니다. 그렇지 않으면 해시 테이블의 크기는 삽입 후 필요에 따라 커집니다. (크기가 자동으로 감소 하지 않습니다.) 이를 사용 하 여 해시 테이블의 크기를 조정 합니다.
 
 ### <a name="example"></a>예제
 
@@ -2386,7 +2386,7 @@ size_type size();
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 제어되는 시퀀스의 길이를 반환합니다. 이를 사용 하 여 현재 제어 되는 시퀀스에 있는 요소 수를 확인 합니다. 시퀀스의 크기가 0이 아니면 [hash_set:: empty (STL/CLR)](../dotnet/hash-set-empty-stl-clr.md)를 참조 하세요 `()` .
+멤버 함수는 제어되는 시퀀스의 길이를 반환합니다. 이를 사용 하 여 현재 제어 되는 시퀀스에 있는 요소 수를 확인 합니다. 시퀀스의 크기가 0이 아니면 [hash_set:: empty (STL/CLR)](#empty)를 참조 하세요 `()` .
 
 ### <a name="example"></a>예제
 
@@ -2611,7 +2611,7 @@ iterator upper_bound(key_type key);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 `X` 제어 되는 시퀀스에서 *키* 로 동일한 버킷으로 해시 하 고 *키*와 동일한 순서를 갖는 마지막 요소를 확인 합니다. 이러한 요소가 없거나 `X` 가 제어 되는 시퀀스의 마지막 요소인 경우 [hash_set:: END (STL/CLR)](../dotnet/hash-set-end-stl-clr.md)를 반환 하 `()` 고, 그렇지 않은 경우에는 첫 번째 요소를 지정 하는 반복기를 반환 합니다 `X` . 이를 사용 하 여 제어 되는 시퀀스에서 현재 지정 된 키와 일치 하는 요소 시퀀스의 끝을 찾을 수 있습니다.
+멤버 함수는 `X` 제어 되는 시퀀스에서 *키* 로 동일한 버킷으로 해시 하 고 *키*와 동일한 순서를 갖는 마지막 요소를 확인 합니다. 이러한 요소가 없거나 `X` 가 제어 되는 시퀀스의 마지막 요소인 경우 [hash_set:: END (STL/CLR)](#end)를 반환 하 `()` 고, 그렇지 않은 경우에는 첫 번째 요소를 지정 하는 반복기를 반환 합니다 `X` . 이를 사용 하 여 제어 되는 시퀀스에서 현재 지정 된 키와 일치 하는 요소 시퀀스의 끝을 찾을 수 있습니다.
 
 ### <a name="example"></a>예제
 

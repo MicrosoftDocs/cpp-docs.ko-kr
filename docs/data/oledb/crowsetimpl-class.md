@@ -33,12 +33,12 @@ helpviewer_keywords:
 - m_strCommandText
 - m_strIndexText
 ms.assetid: e97614b3-b11d-4806-a0d3-b9401331473f
-ms.openlocfilehash: dbd1629070b78f43d94efd06155f2f12c2a9e76e
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: cca74504c80b964b14742e7405953ad68764aa62
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841118"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91507271"
 ---
 # <a name="crowsetimpl-class"></a>CRowsetImpl 클래스
 
@@ -86,19 +86,19 @@ class CRowsetImpl :
 | 속성 | 설명 |
 |-|-|
 |[NameFromDBID](#namefromdbid)|에서 문자열을 추출 하 여 `DBID` 전달 된 *bstr* 에 복사 합니다.|
-|[SetCommandText](#setcommandtext)|의 유효성을 검사 하 고 `DBID` 두 문자열에 저장 합니다 ([m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) 및 [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md)).|
+|[SetCommandText](#setcommandtext)|의 유효성을 검사 하 고 `DBID` 두 문자열에 저장 합니다 ([m_strCommandText](#strcommandtext) 및 [m_strIndexText](#strindextext)).|
 
 ### <a name="overridable-methods"></a>재정의 가능한 메서드
 
-| Name | 설명 |
+| 속성 | 설명 |
 |-|-|
 |[GetColumnInfo](#getcolumninfo)|특정 클라이언트 요청에 대 한 열 정보를 검색 합니다.|
-|[GetCommandFromID](#getcommandfromid)|두 매개 변수 중 하나에 문자열 값이 포함 되어 있는지 확인 하 고, 그럴 경우 문자열 값을 [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) 데이터 멤버에 복사 하 고 [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md)합니다.|
-|[ValidateCommandID](#validatecommandid)|둘 중 하나 또는 둘 다에 `DBID` 문자열 값이 포함 되어 있는지 확인 하 고, 그럴 경우 [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) 하 고 [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md)를 데이터 멤버에 복사 합니다.|
+|[GetCommandFromID](#getcommandfromid)|두 매개 변수 중 하나에 문자열 값이 포함 되어 있는지 확인 하 고, 그럴 경우 문자열 값을 [m_strCommandText](#strcommandtext) 데이터 멤버에 복사 하 고 [m_strIndexText](#strindextext)합니다.|
+|[ValidateCommandID](#validatecommandid)|둘 중 하나 또는 둘 다에 `DBID` 문자열 값이 포함 되어 있는지 확인 하 고, 그럴 경우 [m_strCommandText](#strcommandtext) 하 고 [m_strIndexText](#strindextext)를 데이터 멤버에 복사 합니다.|
 
 ### <a name="data-members"></a>데이터 멤버
 
-| Name | 설명 |
+| 속성 | 설명 |
 |-|-|
 |[m_rgRowData](#rgrowdata)|기본적으로에 대 한 `CAtlArray` 사용자 레코드 템플릿 인수에 templatizes 하는입니다 `CRowsetImpl` . 다른 배열 형식 클래스는 템플릿 인수를로 변경 하 여 사용할 수 있습니다 `ArrayType` `CRowsetImpl` .|
 |[m_strCommandText](#strcommandtext)|행 집합의 초기 명령을 포함 합니다.|
@@ -114,7 +114,7 @@ class CRowsetImpl :
 
 `HRESULT Execute(LONG* pcRows, DBPARAMS* pParams)`
 
-파생 메서드를 구현 하려면 `CRowsetImpl` `Execute` 내부 데이터 버퍼 ([m_rgRowData](../../data/oledb/crowsetimpl-m-rgrowdata.md))를 채워야 합니다.
+파생 메서드를 구현 하려면 `CRowsetImpl` `Execute` 내부 데이터 버퍼 ([m_rgRowData](#rgrowdata))를 채워야 합니다.
 
 ## <a name="crowsetimplnamefromdbid"></a><a name="namefromdbid"></a> CRowsetImpl:: NameFromDBID
 
@@ -145,11 +145,11 @@ HRESULT CRowsetBaseImpl::NameFromDBID(DBID* pDBID,
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 `CRowsetImpl` [Validatecom마나트](../../data/oledb/crowsetimpl-validatecommandid.md) 의 구현 및 [getcommandfromid](../../data/oledb/crowsetimpl-getcommandfromid.md)에서 호출 됩니다.
+이 메서드는 `CRowsetImpl` [Validatecom마나트](#validatecommandid) 의 구현 및 [getcommandfromid](#getcommandfromid)에서 호출 됩니다.
 
 ## <a name="crowsetimplsetcommandtext"></a><a name="setcommandtext"></a> CRowsetImpl:: SetCommandText
 
-의 유효성을 검사 하 고 `DBID` 두 문자열에 저장 합니다 ([m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) 및 [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md)).
+의 유효성을 검사 하 고 `DBID` 두 문자열에 저장 합니다 ([m_strCommandText](#strcommandtext) 및 [m_strIndexText](#strindextext)).
 
 ### <a name="syntax"></a>구문
 
@@ -174,7 +174,7 @@ HRESULT CRowsetBaseImpl::SetCommandText(DBID* pTableID,
 
 `SetCommentText`메서드는 `CreateRowset` 의 정적 템플릿 화 메서드인에 의해 호출 됩니다 `IOpenRowsetImpl` .
 
-이 메서드는 캐스팅 되지 않은 된 포인터를 통해 [validatecom마나트](../../data/oledb/crowsetimpl-validatecommandid.md) 및 [getcommandfromid](../../data/oledb/crowsetimpl-getcommandfromid.md) 를 호출 하 여 작업을 위임 합니다.
+이 메서드는 캐스팅 되지 않은 된 포인터를 통해 [validatecom마나트](#validatecommandid) 및 [getcommandfromid](#getcommandfromid) 를 호출 하 여 작업을 위임 합니다.
 
 ## <a name="crowsetimplgetcolumninfo"></a><a name="getcolumninfo"></a> CRowsetImpl:: GetColumnInfo
 
@@ -211,7 +211,7 @@ static ATLCOLUMNINFO* CRowsetBaseImpl::GetColumnInfo(T* pv,
 
 ## <a name="crowsetimplgetcommandfromid"></a><a name="getcommandfromid"></a> CRowsetImpl:: GetCommandFromID
 
-두 매개 변수 중 하나에 문자열 값이 포함 되어 있는지 확인 하 고, 그럴 경우 문자열 값을 [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) 데이터 멤버에 복사 하 고 [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md)합니다.
+두 매개 변수 중 하나에 문자열 값이 포함 되어 있는지 확인 하 고, 그럴 경우 문자열 값을 [m_strCommandText](#strcommandtext) 데이터 멤버에 복사 하 고 [m_strIndexText](#strindextext)합니다.
 
 ### <a name="syntax"></a>구문
 
@@ -234,11 +234,11 @@ HRESULT CRowsetBaseImpl::GetCommandFromID(DBID* pTableID,
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 `CRowsetImpl` [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) 및 [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md)데이터 멤버를 채우도록 정적 업 캐스트를 통해 호출 됩니다. 기본적으로이 메서드는 두 매개 변수 중 하나에 문자열 값이 포함 되어 있는지 여부를 확인 합니다. 문자열 값을 포함 하는 경우이 메서드는 문자열 값을 데이터 멤버에 복사 합니다. 파생 클래스에서이 시그니처에 메서드를 배치 하면 `CRowsetImpl` 기본 구현 대신 메서드가 호출 됩니다.
+이 메서드는 `CRowsetImpl` [m_strCommandText](#strcommandtext) 및 [m_strIndexText](#strindextext)데이터 멤버를 채우도록 정적 업 캐스트를 통해 호출 됩니다. 기본적으로이 메서드는 두 매개 변수 중 하나에 문자열 값이 포함 되어 있는지 여부를 확인 합니다. 문자열 값을 포함 하는 경우이 메서드는 문자열 값을 데이터 멤버에 복사 합니다. 파생 클래스에서이 시그니처에 메서드를 배치 하면 `CRowsetImpl` 기본 구현 대신 메서드가 호출 됩니다.
 
 ## <a name="crowsetimplvalidatecommandid"></a><a name="validatecommandid"></a> CRowsetImpl:: Validatecom마나트
 
-둘 중 하나 또는 둘 다에 `DBID` 문자열 값이 포함 되어 있는지 확인 하 고, 그럴 경우 [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) 하 고 [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md)를 데이터 멤버에 복사 합니다.
+둘 중 하나 또는 둘 다에 `DBID` 문자열 값이 포함 되어 있는지 확인 하 고, 그럴 경우 [m_strCommandText](#strcommandtext) 하 고 [m_strIndexText](#strindextext)를 데이터 멤버에 복사 합니다.
 
 ### <a name="syntax"></a>구문
 
@@ -261,7 +261,7 @@ HRESULT CRowsetBaseImpl::ValidateCommandID(DBID* pTableID,
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 `CRowsetImpl` [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) 및 [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md)데이터 멤버를 채우기 위해 정적 업 캐스트를 통해 호출 됩니다. 기본적으로이 메서드는 둘 중 하나 또는 둘 다에 `DBID` 문자열 값이 포함 되어 있는지 확인 하 고, 그럴 경우 데이터 멤버에 복사 합니다. 파생 클래스에서이 시그니처에 메서드를 배치 하면 `CRowsetImpl` 기본 구현 대신 메서드가 호출 됩니다.
+이 메서드는 `CRowsetImpl` [m_strCommandText](#strcommandtext) 및 [m_strIndexText](#strindextext)데이터 멤버를 채우기 위해 정적 업 캐스트를 통해 호출 됩니다. 기본적으로이 메서드는 둘 중 하나 또는 둘 다에 `DBID` 문자열 값이 포함 되어 있는지 확인 하 고, 그럴 경우 데이터 멤버에 복사 합니다. 파생 클래스에서이 시그니처에 메서드를 배치 하면 `CRowsetImpl` 기본 구현 대신 메서드가 호출 됩니다.
 
 ## <a name="crowsetimplm_rgrowdata"></a><a name="rgrowdata"></a> CRowsetImpl:: m_rgRowData
 

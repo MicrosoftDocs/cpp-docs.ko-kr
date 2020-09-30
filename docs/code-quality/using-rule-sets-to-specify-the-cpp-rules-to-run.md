@@ -4,18 +4,18 @@ ms.date: 07/27/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.rulesets.native
-ms.openlocfilehash: 2f2b11d060b2f02c5fc5874ef135e1ee3550b840
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f9876a2ce164d0a129ba21405ec61fdcbbd8de91
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845161"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91507478"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>규칙 집합을 사용하여 실행할 C++ 규칙 지정
 
 Visual Studio에서 코드 분석과 관련 된 특정 프로젝트 요구 사항을 충족 하도록 사용자 지정 *규칙 집합* 을 만들고 수정할 수 있습니다. 기본 규칙 집합은에 저장 됩니다 *`%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`* .
 
-**Visual Studio 2017 버전 15.7 이상:** 모든 텍스트 편집기를 사용 하 여 사용자 지정 규칙 집합을 만들고 사용 하는 빌드 시스템에 관계 없이 명령줄 빌드에서 적용할 수 있습니다. 자세한 내용은 [`/analyze:ruleset`](/cpp/build/reference/analyze-code-analysis)를 참조하세요.
+**Visual Studio 2017 버전 15.7 이상:** 모든 텍스트 편집기를 사용 하 여 사용자 지정 규칙 집합을 만들고 사용 하는 빌드 시스템에 관계 없이 명령줄 빌드에서 적용할 수 있습니다. 자세한 내용은 [`/analyze:ruleset`](../build/reference/analyze-code-analysis.md)를 참조하세요.
 
 Visual Studio에서 사용자 지정 c + + 규칙 집합을 만들려면 Visual Studio IDE에서 C/c + + 프로젝트를 열어야 합니다. 그런 다음 규칙 집합 편집기에서 표준 규칙 집합을 열고, 특정 규칙을 추가 또는 제거 하 고, 필요에 따라 코드 분석에서 규칙이 위반 된 것으로 확인 될 때 발생 하는 동작을 변경 합니다.
 
@@ -98,7 +98,7 @@ Visual Studio에서 사용자 지정 c + + 규칙 집합을 만들려면 Visual 
 
 ## <a name="to-create-a-rule-set-in-a-text-editor"></a>텍스트 편집기에서 규칙 집합을 만들려면
 
-텍스트 편집기에서 사용자 지정 규칙 집합을 만들고, 확장명을 사용 하 여 위치에 저장 하 *`.ruleset`* 고, 컴파일러 옵션을 사용 하 여에 적용할 수 있습니다 [`/analyze:ruleset`](/cpp/build/reference/analyze-code-analysis) .
+텍스트 편집기에서 사용자 지정 규칙 집합을 만들고, 확장명을 사용 하 여 위치에 저장 하 *`.ruleset`* 고, 컴파일러 옵션을 사용 하 여에 적용할 수 있습니다 [`/analyze:ruleset`](../build/reference/analyze-code-analysis.md) .
 
 다음 예제에서는 시작 지점으로 사용할 수 있는 기본 규칙 집합 파일을 보여 줍니다.
 

@@ -35,12 +35,12 @@ helpviewer_keywords:
 - remquof function
 - remquo function
 ms.assetid: a1d3cb8b-8027-4cd3-8deb-04eb17f299fc
-ms.openlocfilehash: d99204ad9a80c6320869cbb72aee905981a5224d
-ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
+ms.openlocfilehash: b80815ef9a92e6551b7866ccc2b589268642c095
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89554970"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91507548"
 ---
 # <a name="remquo-remquof-remquol"></a>remquo, remquof, remquol
 
@@ -85,7 +85,7 @@ C + +에서는 오버 로드를 허용 하므로 또는 값을 사용 하 고 �
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|필수 헤더(C)|필수 헤더(C++)|
+|함수|필수 헤더(C)|필수 헤더(C++)|
 |--------------|---------------------|-|
 |**remquo**, **remquof**, **remquol**|\<math.h>|\<cmath> 또는 \<math.h>|
 |**remquo** 매크로 | \<tgmath.h> ||
@@ -120,7 +120,7 @@ Approximate signed quotient is -3
 ## <a name="see-also"></a>참고 항목
 
 [부동 소수점 지원](../../c-runtime-library/floating-point-support.md)<br/>
-[ldiv, lldiv](ldiv-lldiv.md)<br/>
+[ldiv, lldiv](./div.md)<br/>
 [imaxdiv](imaxdiv.md)<br/>
 [fmod, fmodf](fmod-fmodf.md)<br/>
 [remainder, remainderf, remainderl](remainder-remainderf-remainderl.md)<br/>

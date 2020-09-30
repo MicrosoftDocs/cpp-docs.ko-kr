@@ -7,19 +7,20 @@ helpviewer_keywords:
 - compatibility, C runtime libraries
 - compatibility
 ms.assetid: 346709cb-edda-4909-9a19-3d253eddb6b7
-ms.openlocfilehash: d6562be0abde8e9d51260b2d230f225ed159c199
-ms.sourcegitcommit: b492516cc65120250b9ea23f96f7f63f37f99fae
+ms.openlocfilehash: 711d5b3c95269413a0d94f568d3e3cb7b7dff721
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075752"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91506872"
 ---
 # <a name="compatibility"></a>호환성
 
 CRT (유니버설 C 런타임 라이브러리)는 c + + 규칙에 필요한 C 표준 라이브러리의 대부분을 지원 합니다. 특정 예외와 함께 C99 (ISO/IEC 9899:1999) 라이브러리를 구현 합니다.
-- 에서 엄격한 형식 호환성 \<complex.h> . 
+
+- 에서 엄격한 형식 호환성 \<complex.h> .
 - `aligned_alloc`-Windows 운영 체제에서 정렬 된 할당을 지원 하지 않기 때문에 구현 되지 않을 것입니다. 비표준 `_aligned_malloc` 를 대신 사용 합니다.
--  `strerrorlen_s`
+- `strerrorlen_s`
 - 의 원자성 지원 \<stdatomic.h>
 - 의 스레딩 지원 \<threads.h>
 
@@ -35,11 +36,11 @@ C++ 표준은 구현에 대한 전역 네임스페이스에 밑줄로 시작하�
 
 ## <a name="related-articles"></a>관련 문서
 
-|제목|Description|
+|제목|설명|
 |-----------|-----------------|
 |[UWP 앱, Windows 런타임 및 C 런타임](../c-runtime-library/windows-store-apps-the-windows-runtime-and-the-c-run-time.md)|세계 RT 루틴이 유니버설 Windows 앱 또는 Microsoft Store 앱과 호환 되지 않는 경우를 설명 합니다.|
 |[ANSI C 규격](../c-runtime-library/ansi-c-compliance.md)|UCRT의 표준 규격 이름 지정을 설명합니다.|
-|[UNIX](../c-runtime-library/unix.md)|프로그램을 UNIX에 이식하는 작업에 대한 지침을 제공합니다.|
+|[완전](../c-runtime-library/unix.md)|프로그램을 UNIX에 이식하는 작업에 대한 지침을 제공합니다.|
 |[Windows 플랫폼 (CRT)](../c-runtime-library/windows-platforms-crt.md)|CRT가 지원되는 운영 체제를 나열합니다.|
 |[이전 버전과의 호환성](../c-runtime-library/backward-compatibility.md)|이전 CRT 이름을 새 CRT 이름에 매핑하는 방법을 설명합니다.|
 |[CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md)|CRT 라이브러리 파일(.lib) 및 관련된 컴파일러 옵션에 대한 개요를 제공합니다.|

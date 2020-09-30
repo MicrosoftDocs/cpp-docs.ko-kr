@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3539
 ms.assetid: 34a33a0f-d1b6-498f-b312-ffad2d4799b3
-ms.openlocfilehash: 813da5a2fd79c191df731937e58100d749f8690c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e30ea0713229bfd8da395baef710571f8dfd49e9
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223410"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91508151"
 ---
 # <a name="compiler-error-c3539"></a>컴파일러 오류 C3539
 
@@ -40,4 +40,4 @@ int main()
 
 ## <a name="see-also"></a>참조
 
-[auto 키워드](../../cpp/auto-keyword.md)
+[auto 키워드](../../cpp/auto-cpp.md)

@@ -24,12 +24,12 @@ helpviewer_keywords:
 - files [C++], editable types
 - resource editing
 ms.assetid: 4d2b6fcc-07cf-4289-be87-83a60f69533c
-ms.openlocfilehash: 087cd613fa0dfd9cb6e07ac47a6a38d63bba004e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 463c27959b049436e29f872c966bc276c6ef5f2d
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80167877"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91507023"
 ---
 # <a name="resource-files-c"></a>리소스 파일(C++)
 
@@ -46,7 +46,7 @@ ms.locfileid: "80167877"
 
 - 독립형 파일로 존재 하는 개별 리소스 이 형식에는 .rc 파일에서 참조 되는 비트맵, 아이콘 또는 커서 파일이 포함 됩니다.
 
-- 개발 환경에서 생성 된 헤더 파일입니다. 이 형식에는 .rc 파일에서 참조 되는 `Resource.h`포함 됩니다.
+- 개발 환경에서 생성 된 헤더 파일입니다. 이 형식에는 `Resource.h` .rc 파일에서 참조 되는이 포함 됩니다.
 
 .Exe, .dll 및 .res 파일과 같은 다른 파일 형식에서 발견 된 리소스를 *리소스*라고 합니다.
 
@@ -54,7 +54,7 @@ ms.locfileid: "80167877"
 
 - 중첩되어 조건부로 포함된 리소스 파일에 대한 작업
 
-- 기존 리소스를 업데이트 하거나 시각적 C++개체로 변환 합니다.
+- 기존 리소스를 업데이트 하거나 Visual C++로 변환 합니다.
 
 - 현재 리소스 파일에서 그래픽 리소스 가져오기 또는 내보내기
 
@@ -70,7 +70,7 @@ ms.locfileid: "80167877"
 
 포함 된 리소스를 편집 하기 위해 열 수 있는 파일 형식은 다음과 같습니다.
 
-| 파일 이름 | 설명 |
+| 파일 이름 | Description |
 |---|---|
 | .rc | 리소스 스크립트 파일 |
 | .rct | 리소스 템플릿 파일 |
@@ -82,7 +82,7 @@ ms.locfileid: "80167877"
 
 리소스를 편집할 때 Visual Studio 환경은와 함께 작동 하며 다음 파일에 영향을 줍니다.
 
-| 파일 이름 | 설명 |
+| 파일 이름 | Description |
 |---|---|
 | Resource.h | 기호 정의를 포함 하는 개발 환경에서 생성 된 헤더 파일입니다.<br/><br/>이 파일을 소스 제어에 포함 합니다. |
 | Filename.aps | 빠른 로드에 사용 되는 현재 리소스 스크립트 파일의 이진 버전입니다.<br /><br /> 리소스 편집기는 .rc 또는 resource.h 파일을 직접 읽을 필요가 없습니다. 리소스 컴파일러는 리소스 편집기에서 사용 하는. p a x 파일로 컴파일합니다. 이 파일은 컴파일 단계이며 기호화된 데이터만 저장합니다.<br/><br/>일반적인 컴파일 프로세스와 마찬가지로 주석 달기와 같이 기호화 되지 않은 정보는 컴파일 프로세스 중에 삭제 됩니다.<br/><br/>. P a c 파일이 .rc 파일과 동기화 되지 않을 때마다 .rc 파일이 다시 생성 됩니다. 예를 들어를 **저장**하면 리소스 편집기에서 .rc 파일 및 resource.h 파일을 덮어씁니다. 리소스 자체에 대 한 모든 변경 내용은 .rc 파일에 통합 된 상태로 유지 되지만, .rc 파일을 덮어쓰면 주석이 항상 손실 됩니다. 주석을 유지 하는 방법에 대 한 자세한 내용은 [컴파일 타임에 리소스 포함](../windows/how-to-include-resources-at-compile-time.md)을 참조 하세요.<br/><br/>일반적으로 소스 제어에는 aps 파일을 포함 하면 안 됩니다. |
@@ -90,7 +90,7 @@ ms.locfileid: "80167877"
 
 ## <a name="manifest-resources"></a>매니페스트 리소스
 
-데스크톱 C++ 프로젝트에서 매니페스트 리소스는 응용 프로그램에서 사용 하는 종속성을 설명 하는 XML 파일입니다. 예를 들어 Visual Studio에서이 MFC 마법사 생성 매니페스트 파일은 응용 프로그램에서 사용 해야 하는 Windows 공용 컨트롤 Dll 버전을 정의 합니다.
+C + + 데스크톱 프로젝트에서 매니페스트 리소스는 응용 프로그램에서 사용 하는 종속성을 설명 하는 XML 파일입니다. 예를 들어 Visual Studio에서이 MFC 마법사 생성 매니페스트 파일은 응용 프로그램에서 사용 해야 하는 Windows 공용 컨트롤 Dll 버전을 정의 합니다.
 
 ```xml
 <description>Your app description here</description>
@@ -108,12 +108,12 @@ ms.locfileid: "80167877"
 </dependency>
 ```
 
-Windows XP 또는 Windows Vista 응용 프로그램의 경우 매니페스트 리소스는 응용 프로그램에서 사용할 최신 버전의 Windows 공용 컨트롤을 지정 해야 합니다. 위의 예제에서는 [Syslink 컨트롤](/windows/win32/Controls/syslink-overview)을 지 원하는 버전 `6.0.0.0`을 사용 합니다.
+Windows XP 또는 Windows Vista 응용 프로그램의 경우 매니페스트 리소스는 응용 프로그램에서 사용할 최신 버전의 Windows 공용 컨트롤을 지정 해야 합니다. 위의 예제에서는 `6.0.0.0` [syslink 컨트롤](/windows/win32/Controls/syslink-overview)을 지 원하는 버전을 사용 합니다.
 
 > [!NOTE]
 > 모듈별로 매니페스트 리소스를 하나만 사용할 수 있습니다.
 
-매니페스트 리소스에 포함 된 버전 및 형식 정보를 보려면 XML 뷰어 또는 Visual Studio 텍스트 편집기에서 파일을 엽니다. [리소스 뷰](../windows/resource-view-window.md)에서 매니페스트 리소스를 열면 리소스가 이진 형식으로 열립니다.
+매니페스트 리소스에 포함 된 버전 및 형식 정보를 보려면 XML 뷰어 또는 Visual Studio 텍스트 편집기에서 파일을 엽니다. [리소스 뷰](./how-to-create-a-resource-script-file.md)에서 매니페스트 리소스를 열면 리소스가 이진 형식으로 열립니다.
 
 ### <a name="to-open-a-manifest-resource"></a>매니페스트 리소스를 열려면
 
@@ -132,5 +132,5 @@ Win32
 ## <a name="see-also"></a>참고 항목
 
 [리소스 파일 작업](../windows/working-with-resource-files.md)<br/>
-[리소스 식별자(기호)](../windows/symbols-resource-identifiers.md)<br/>
+[리소스 식별자 (기호)](../windows/symbols-resource-identifiers.md)<br/>
 [리소스 편집기](../windows/resource-editors.md)<br/>

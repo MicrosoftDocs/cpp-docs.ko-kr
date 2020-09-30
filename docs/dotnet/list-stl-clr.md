@@ -108,12 +108,12 @@ helpviewer_keywords:
 - operator>(list) member [STL/CLR]
 - operator>=(list) member [STL/CLR]
 ms.assetid: a70c45c8-a257-4f6b-8434-b27ff6685bac
-ms.openlocfilehash: 1c05aff71b16c3edf1348466df325caacb027554
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9ef9f68c6bef72bf251d270b3bc8142448016a11
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225633"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91508730"
 ---
 # <a name="list-stlclr"></a>list(STL/CLR)
 
@@ -225,7 +225,7 @@ template<typename Value>
 
 개체는 양방향 링크 목록에서 개별 노드로 제어 되는 시퀀스에 대 한 저장소를 할당 하 고 해제 합니다. 노드 간에 링크를 변경 하 여 요소를 다시 정렬 합니다. 즉, 노드 내용을 다른 노드로 복사 하지 않습니다. 즉, 나머지 요소를 방해 하지 않고 요소를 자유롭게 삽입 하 고 제거할 수 있습니다. 따라서 목록은 템플릿 클래스 [큐 (stl/clr)](../dotnet/queue-stl-clr.md) 또는 템플릿 클래스 [스택 (stl/clr)](../dotnet/stack-stl-clr.md)의 기본 컨테이너에 적합 한 후보입니다.
 
-`list`개체는 양방향 반복기를 지원 합니다. 즉, 제어 되는 시퀀스에서 요소를 지정 하는 반복기를 사용 하 여 인접 한 요소를 한 단계씩 실행 할 수 있습니다. 특수 헤드 노드는 [list:: end (STL/CLR)](../dotnet/list-end-stl-clr.md)에서 반환 된 반복기에 해당 `()` 합니다. 제어 되는 시퀀스의 마지막 요소 (있는 경우)에 도달할 때까지이 반복기를 줄일 수 있습니다. 목록 반복기를 증가 시켜 헤드 노드에 도달할 수 있습니다. 그런 다음와 비교 `end()` 합니다. 그러나에서 반환 된 반복기는 역 참조할 수 없습니다 `end()` .
+`list`개체는 양방향 반복기를 지원 합니다. 즉, 제어 되는 시퀀스에서 요소를 지정 하는 반복기를 사용 하 여 인접 한 요소를 한 단계씩 실행 할 수 있습니다. 특수 헤드 노드는 [list:: end (STL/CLR)](#end)에서 반환 된 반복기에 해당 `()` 합니다. 제어 되는 시퀀스의 마지막 요소 (있는 경우)에 도달할 때까지이 반복기를 줄일 수 있습니다. 목록 반복기를 증가 시켜 헤드 노드에 도달할 수 있습니다. 그런 다음와 비교 `end()` 합니다. 그러나에서 반환 된 반복기는 역 참조할 수 없습니다 `end()` .
 
 숫자 위치가 지정 된 경우에는 임의 액세스 반복기를 필요로 하는 목록 요소를 직접 참조할 수 없습니다. 따라서 목록은 템플릿 클래스 [priority_queue (STL/CLR)](../dotnet/priority-queue-stl-clr.md)의 기본 컨테이너로 사용할 *수 없습니다* .
 
@@ -235,7 +235,7 @@ template<typename Value>
 
 ## <a name="members"></a>멤버
 
-## <a name="listassign-stlclr"></a><a name="assign"></a>list:: assign (STL/CLR)
+## <a name="listassign-stlclr"></a><a name="assign"></a> list:: assign (STL/CLR)
 
 모든 요소를 바꿉니다.
 
@@ -317,7 +317,7 @@ a b
 a b c
 ```
 
-## <a name="listback-stlclr"></a><a name="back"></a>list:: back (STL/CLR)
+## <a name="listback-stlclr"></a><a name="back"></a> list:: back (STL/CLR)
 
 마지막 요소에 액세스합니다.
 
@@ -368,7 +368,7 @@ back() = c
 a b x
 ```
 
-## <a name="listback_item-stlclr"></a><a name="back_item"></a>list:: back_item (STL/CLR)
+## <a name="listback_item-stlclr"></a><a name="back_item"></a> list:: back_item (STL/CLR)
 
 마지막 요소에 액세스합니다.
 
@@ -419,7 +419,7 @@ back_item = c
 a b x
 ```
 
-## <a name="listbegin-stlclr"></a><a name="begin"></a>list:: begin (STL/CLR)
+## <a name="listbegin-stlclr"></a><a name="begin"></a> list:: begin (STL/CLR)
 
 제어되는 시퀀스의 시작을 지정합니다.
 
@@ -474,7 +474,7 @@ a b c
 x y c
 ```
 
-## <a name="listclear-stlclr"></a><a name="clear"></a>list:: clear (STL/CLR)
+## <a name="listclear-stlclr"></a><a name="clear"></a> list:: clear (STL/CLR)
 
 모든 요소를 제거합니다.
 
@@ -486,7 +486,7 @@ void clear();
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 [list:: erase (stl/clr)](../dotnet/list-erase-stl-clr.md) `(` [list:: begin (stl/clr)](../dotnet/list-begin-stl-clr.md) `(),` [list:: end (stl/clr)](../dotnet/list-end-stl-clr.md)를 효과적으로 호출 합니다 `())` . 이를 사용 하 여 제어 되는 시퀀스가 비어 있는지 확인 합니다.
+멤버 함수는 [list:: erase (stl/clr)](#erase) `(` [list:: begin (stl/clr)](#begin) `(),` [list:: end (stl/clr)](#end)를 효과적으로 호출 합니다 `())` . 이를 사용 하 여 제어 되는 시퀀스가 비어 있는지 확인 합니다.
 
 ### <a name="example"></a>예제
 
@@ -531,7 +531,7 @@ a b
 size() = 0
 ```
 
-## <a name="listconst_iterator-stlclr"></a><a name="const_iterator"></a>list:: const_iterator (STL/CLR)
+## <a name="listconst_iterator-stlclr"></a><a name="const_iterator"></a> list:: const_iterator (STL/CLR)
 
 제어되는 시퀀스에 대한 상수 반복기의 형식입니다.
 
@@ -572,7 +572,7 @@ int main()
 a b c
 ```
 
-## <a name="listconst_reference-stlclr"></a><a name="const_reference"></a>list:: const_reference (STL/CLR)
+## <a name="listconst_reference-stlclr"></a><a name="const_reference"></a> list:: const_reference (STL/CLR)
 
 요소에 대한 상수 참조의 형식입니다.
 
@@ -616,7 +616,7 @@ int main()
 a b c
 ```
 
-## <a name="listconst_reverse_iterator-stlclr"></a><a name="const_reverse_iterator"></a>list:: const_reverse_iterator (STL/CLR)
+## <a name="listconst_reverse_iterator-stlclr"></a><a name="const_reverse_iterator"></a> list:: const_reverse_iterator (STL/CLR)
 
 제어 되는 시퀀스에 대 한 상수 역방향 반복기의 형식입니다.
 
@@ -658,7 +658,7 @@ int main()
 c b a
 ```
 
-## <a name="listdifference_type-stlclr"></a><a name="difference_type"></a>목록::d ifference_type (STL/CLR)
+## <a name="listdifference_type-stlclr"></a><a name="difference_type"></a> 목록::d ifference_type (STL/CLR)
 
 두 요소 사이의 부호가 있는 거리의 형식입니다.
 
@@ -712,7 +712,7 @@ end()-begin() = 3
 begin()-end() = -3
 ```
 
-## <a name="listempty-stlclr"></a><a name="empty"></a>list:: empty (STL/CLR)
+## <a name="listempty-stlclr"></a><a name="empty"></a> list:: empty (STL/CLR)
 
 요소가 있는지 여부를 테스트합니다.
 
@@ -724,7 +724,7 @@ bool empty();
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 빈 제어되는 시퀀스에 대해 true를 반환합니다. [List:: size (STL/CLR)](../dotnet/list-size-stl-clr.md)와 동일 `() == 0` 합니다. 목록이 비어 있는지 여부를 테스트 하는 데 사용 합니다.
+멤버 함수는 빈 제어되는 시퀀스에 대해 true를 반환합니다. [List:: size (STL/CLR)](#size)와 동일 `() == 0` 합니다. 목록이 비어 있는지 여부를 테스트 하는 데 사용 합니다.
 
 ### <a name="example"></a>예제
 
@@ -763,7 +763,7 @@ size() = 0
 empty() = True
 ```
 
-## <a name="listend-stlclr"></a><a name="end"></a>list:: end (STL/CLR)
+## <a name="listend-stlclr"></a><a name="end"></a> list:: end (STL/CLR)
 
 제어되는 시퀀스의 끝을 지정합니다.
 
@@ -819,7 +819,7 @@ a b c
 a x y
 ```
 
-## <a name="listerase-stlclr"></a><a name="erase"></a>list:: erase (STL/CLR)
+## <a name="listerase-stlclr"></a><a name="erase"></a> list:: erase (STL/CLR)
 
 지정된 위치에 있는 요소를 제거합니다.
 
@@ -847,7 +847,7 @@ iterator erase(iterator first, iterator last);
 
 두 번째 멤버 함수는 [`first`, `last`]의 범위에서 제어되는 시퀀스의 요소를 제거합니다. 연속 된 요소를 0 개 이상 제거 하는 데 사용 합니다.
 
-두 멤버 함수는 제거 된 요소 뒤에 남은 첫 번째 요소를 지정 하는 반복기를 반환 하거나, 이러한 요소가 없는 경우 [list:: end (STL/CLR)](../dotnet/list-end-stl-clr.md) 를 반환 `()` 합니다.
+두 멤버 함수는 제거 된 요소 뒤에 남은 첫 번째 요소를 지정 하는 반복기를 반환 하거나, 이러한 요소가 없는 경우 [list:: end (STL/CLR)](#end) 를 반환 `()` 합니다.
 
 요소를 지울 때 요소 복사본의 수는 삭제의 끝과 시퀀스의 가까운 끝 사이에 있는 요소 수의 선형입니다. 시퀀스의 한쪽 끝에서 하나 이상의 요소를 지우면 요소 복사는 발생 하지 않습니다.
 
@@ -898,7 +898,7 @@ erase(begin(), end()-1) = e
 size() = 1
 ```
 
-## <a name="listfront-stlclr"></a><a name="front"></a>list:: front (STL/CLR)
+## <a name="listfront-stlclr"></a><a name="front"></a> list:: front (STL/CLR)
 
 첫 번째 요소에 액세스합니다.
 
@@ -949,7 +949,7 @@ front() = a
 x b c
 ```
 
-## <a name="listfront_item-stlclr"></a><a name="front_item"></a>list:: front_item (STL/CLR)
+## <a name="listfront_item-stlclr"></a><a name="front_item"></a> list:: front_item (STL/CLR)
 
 첫 번째 요소에 액세스합니다.
 
@@ -1000,7 +1000,7 @@ front_item = a
 x b c
 ```
 
-## <a name="listgeneric_container-stlclr"></a><a name="generic_container"></a>list:: generic_container (STL/CLR)
+## <a name="listgeneric_container-stlclr"></a><a name="generic_container"></a> list:: generic_container (STL/CLR)
 
 컨테이너에 대 한 제네릭 인터페이스의 형식입니다.
 
@@ -1066,7 +1066,7 @@ a b c d
 a b c d e
 ```
 
-## <a name="listgeneric_iterator-stlclr"></a><a name="generic_iterator"></a>list:: generic_iterator (STL/CLR)
+## <a name="listgeneric_iterator-stlclr"></a><a name="generic_iterator"></a> list:: generic_iterator (STL/CLR)
 
 컨테이너의 제네릭 인터페이스와 함께 사용할 반복기의 형식입니다.
 
@@ -1124,7 +1124,7 @@ a b c
 a a c
 ```
 
-## <a name="listgeneric_reverse_iterator-stlclr"></a><a name="generic_reverse_iterator"></a>list:: generic_reverse_iterator (STL/CLR)
+## <a name="listgeneric_reverse_iterator-stlclr"></a><a name="generic_reverse_iterator"></a> list:: generic_reverse_iterator (STL/CLR)
 
 컨테이너의 제네릭 인터페이스와 함께 사용할 역방향 반복기의 형식입니다.
 
@@ -1181,7 +1181,7 @@ a b c
 a c c
 ```
 
-## <a name="listgeneric_value-stlclr"></a><a name="generic_value"></a>list:: generic_value (STL/CLR)
+## <a name="listgeneric_value-stlclr"></a><a name="generic_value"></a> list:: generic_value (STL/CLR)
 
 컨테이너의 제네릭 인터페이스와 함께 사용할 요소의 형식입니다.
 
@@ -1237,7 +1237,7 @@ a b c
 a a c
 ```
 
-## <a name="listinsert-stlclr"></a><a name="insert"></a>list:: insert (STL/CLR)
+## <a name="listinsert-stlclr"></a><a name="insert"></a> list:: insert (STL/CLR)
 
 지정 된 위치에 요소를 추가 합니다.
 
@@ -1284,7 +1284,7 @@ void insert(iterator where,
 
 네 번째 멤버 함수는 *오른쪽*에 지정 된 시퀀스를 삽입 합니다. 이를 사용 하 여 열거자에서 설명 하는 시퀀스를 삽입 합니다.
 
-단일 요소를 삽입할 때 요소 복사본의 수는 삽입 지점과 시퀀스의 가까운 끝 사이에 있는 요소 수의 선형입니다. 시퀀스의 한쪽 끝에 하나 이상의 요소를 삽입 하는 경우 요소 복사는 발생 하지 않습니다. `InIt`가 입력 반복기 인 경우 세 번째 멤버 함수는 시퀀스의 각 요소에 대 한 단일 삽입을 효과적으로 수행 합니다. 그렇지 않은 경우 `N` 요소를 삽입할 때 요소 복사본의 수는 선형이 `N` 고 삽입 지점과 시퀀스의 끝 부분 사이에 있는 요소 수를 더한 값입니다.
+단일 요소를 삽입할 때 요소 복사본의 수는 삽입 지점과 시퀀스의 가까운 끝 사이에 있는 요소 수의 선형입니다. 시퀀스의 한쪽 끝에 하나 이상의 요소를 삽입 하는 경우 요소 복사는 발생 하지 않습니다. `InIt` 가 입력 반복기 인 경우 세 번째 멤버 함수는 시퀀스의 각 요소에 대 한 단일 삽입을 효과적으로 수행 합니다. 그렇지 않은 경우 `N` 요소를 삽입할 때 요소 복사본의 수는 선형이 `N` 고 삽입 지점과 시퀀스의 끝 부분 사이에 있는 요소 수를 더한 값입니다.
 
 ### <a name="example"></a>예제
 
@@ -1355,7 +1355,7 @@ y y a x b
 a x b c y y a x b
 ```
 
-## <a name="listiterator-stlclr"></a><a name="iterator"></a>list:: iterator (STL/CLR)
+## <a name="listiterator-stlclr"></a><a name="iterator"></a> list:: iterator (STL/CLR)
 
 제어되는 시퀀스에 대한 반복기의 형식입니다.
 
@@ -1404,7 +1404,7 @@ a b c
 x b c
 ```
 
-## <a name="listlist-stlclr"></a><a name="list"></a>list:: list (STL/CLR)
+## <a name="listlist-stlclr"></a><a name="list"></a> list:: list (STL/CLR)
 
 컨테이너 개체를 만듭니다.
 
@@ -1549,7 +1549,7 @@ x x x x x x
 x x x x x x
 ```
 
-## <a name="listmerge-stlclr"></a><a name="merge"></a>list:: merge (STL/CLR)
+## <a name="listmerge-stlclr"></a><a name="merge"></a> list:: merge (STL/CLR)
 
 순서가 지정된 두 개의 제어되는 시퀀스를 병합합니다.
 
@@ -1646,7 +1646,7 @@ f e e d c c b a a
 c1.size() = 0
 ```
 
-## <a name="listoperator-stlclr"></a><a name="op_as"></a>list:: operator = (STL/CLR)
+## <a name="listoperator-stlclr"></a><a name="op_as"></a> list:: operator = (STL/CLR)
 
 제어되는 시퀀스를 바꿉니다.
 
@@ -1699,7 +1699,7 @@ a b c
 a b c
 ```
 
-## <a name="listpop_back-stlclr"></a><a name="pop_back"></a>목록::p op_back (STL/CLR)
+## <a name="listpop_back-stlclr"></a><a name="pop_back"></a> 목록::p op_back (STL/CLR)
 
 마지막 요소를 제거 합니다.
 
@@ -1746,7 +1746,7 @@ a b c
 a b
 ```
 
-## <a name="listpop_front-stlclr"></a><a name="pop_front"></a>목록::p op_front (STL/CLR)
+## <a name="listpop_front-stlclr"></a><a name="pop_front"></a> 목록::p op_front (STL/CLR)
 
 첫 번째 요소를 제거 합니다.
 
@@ -1793,7 +1793,7 @@ a b c
 b c
 ```
 
-## <a name="listpush_back-stlclr"></a><a name="push_back"></a>목록::p ush_back (STL/CLR)
+## <a name="listpush_back-stlclr"></a><a name="push_back"></a> 목록::p ush_back (STL/CLR)
 
 새 마지막 요소를 추가 합니다.
 
@@ -1833,7 +1833,7 @@ int main()
 a b c
 ```
 
-## <a name="listpush_front-stlclr"></a><a name="push_front"></a>목록::p ush_front (STL/CLR)
+## <a name="listpush_front-stlclr"></a><a name="push_front"></a> 목록::p ush_front (STL/CLR)
 
 새 첫 번째 요소를 추가 합니다.
 
@@ -1873,7 +1873,7 @@ int main()
 c b a
 ```
 
-## <a name="listrbegin-stlclr"></a><a name="rbegin"></a>list:: rbegin (STL/CLR)
+## <a name="listrbegin-stlclr"></a><a name="rbegin"></a> list:: rbegin (STL/CLR)
 
 제어되는 역방향 시퀀스의 시작을 지정합니다.
 
@@ -1928,7 +1928,7 @@ a b c
 a y x
 ```
 
-## <a name="listreference-stlclr"></a><a name="reference"></a>list:: reference (STL/CLR)
+## <a name="listreference-stlclr"></a><a name="reference"></a> list:: reference (STL/CLR)
 
 요소에 대한 참조의 형식입니다.
 
@@ -1983,7 +1983,7 @@ a b c
 A B C
 ```
 
-## <a name="listremove-stlclr"></a><a name="remove"></a>list:: remove (STL/CLR)
+## <a name="listremove-stlclr"></a><a name="remove"></a> list:: remove (STL/CLR)
 
 지정 된 값을 가진 요소를 제거 합니다.
 
@@ -2042,7 +2042,7 @@ a b c
 a c
 ```
 
-## <a name="listremove_if-stlclr"></a><a name="remove_if"></a>list:: remove_if (STL/CLR)
+## <a name="listremove_if-stlclr"></a><a name="remove_if"></a> list:: remove_if (STL/CLR)
 
 지정 된 테스트를 통과 하는 요소를 제거 합니다.
 
@@ -2106,7 +2106,7 @@ a b b b c
 b b b
 ```
 
-## <a name="listrend-stlclr"></a><a name="rend"></a>list:: rend (STL/CLR)
+## <a name="listrend-stlclr"></a><a name="rend"></a> list:: rend (STL/CLR)
 
 제어되는 역방향 시퀀스의 끝을 지정합니다.
 
@@ -2162,7 +2162,7 @@ a b c
 y x c
 ```
 
-## <a name="listresize-stlclr"></a><a name="resize"></a>list:: resize (STL/CLR)
+## <a name="listresize-stlclr"></a><a name="resize"></a> list:: resize (STL/CLR)
 
 요소 수를 변경합니다.
 
@@ -2183,7 +2183,7 @@ void resize(size_type new_size, value_type val);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 [list:: size (STL/CLR)](../dotnet/list-size-stl-clr.md) `()` 예측이가 *new_size*를 반환 하는지 확인 합니다. 제어 되는 시퀀스를 더 길게 만들어야 하는 경우 첫 번째 멤버 함수는 값 `value_type()` 이 인 요소를 추가 하는 반면 두 번째 멤버 함수는 값 *val*을 사용 하 여 요소를 추가 합니다. 제어 되는 시퀀스를 더 짧게 만들기 위해 두 멤버 함수는 마지막 요소 [list:: size (STL/CLR)](../dotnet/list-size-stl-clr.md) 시간을 효과적으로 지웁니다 `() -` `new_size` . 이를 사용 하 여 제어 되는 시퀀스의 크기 *new_size*현재 제어 되는 시퀀스를 트리밍 또는 패딩 하 여 확인 합니다.
+멤버 함수는 [list:: size (STL/CLR)](#size) `()` 예측이가 *new_size*를 반환 하는지 확인 합니다. 제어 되는 시퀀스를 더 길게 만들어야 하는 경우 첫 번째 멤버 함수는 값 `value_type()` 이 인 요소를 추가 하는 반면 두 번째 멤버 함수는 값 *val*을 사용 하 여 요소를 추가 합니다. 제어 되는 시퀀스를 더 짧게 만들기 위해 두 멤버 함수는 마지막 요소 [list:: size (STL/CLR)](#size) 시간을 효과적으로 지웁니다 `() -` `new_size` . 이를 사용 하 여 제어 되는 시퀀스의 크기 *new_size*현재 제어 되는 시퀀스를 트리밍 또는 패딩 하 여 확인 합니다.
 
 ### <a name="example"></a>예제
 
@@ -2222,7 +2222,7 @@ size() = 0
 x x x x x
 ```
 
-## <a name="listreverse-stlclr"></a><a name="reverse"></a>list:: reverse (STL/CLR)
+## <a name="listreverse-stlclr"></a><a name="reverse"></a> list:: reverse (STL/CLR)
 
 제어 되는 시퀀스를 반대로 바꿉니다.
 
@@ -2269,7 +2269,7 @@ a b c
 c b a
 ```
 
-## <a name="listreverse_iterator-stlclr"></a><a name="reverse_iterator"></a>list:: reverse_iterator (STL/CLR)
+## <a name="listreverse_iterator-stlclr"></a><a name="reverse_iterator"></a> list:: reverse_iterator (STL/CLR)
 
 제어되는 시퀀스에 대한 반대 반복기의 형식입니다.
 
@@ -2318,7 +2318,7 @@ c b a
 x b a
 ```
 
-## <a name="listsize-stlclr"></a><a name="size"></a>list:: size (STL/CLR)
+## <a name="listsize-stlclr"></a><a name="size"></a> list:: size (STL/CLR)
 
 요소 수를 계산합니다.
 
@@ -2330,7 +2330,7 @@ size_type size();
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 제어되는 시퀀스의 길이를 반환합니다. 이를 사용 하 여 현재 제어 되는 시퀀스에 있는 요소 수를 확인 합니다. 시퀀스의 크기가 0이 아니면 [목록:: empty (STL/CLR)](../dotnet/list-empty-stl-clr.md)를 참조 하세요 `()` .
+멤버 함수는 제어되는 시퀀스의 길이를 반환합니다. 이를 사용 하 여 현재 제어 되는 시퀀스에 있는 요소 수를 확인 합니다. 시퀀스의 크기가 0이 아니면 [목록:: empty (STL/CLR)](#empty)를 참조 하세요 `()` .
 
 ### <a name="example"></a>예제
 
@@ -2371,7 +2371,7 @@ size() = 0 after clearing
 size() = 2 after adding 2
 ```
 
-## <a name="listsize_type-stlclr"></a><a name="size_type"></a>list:: size_type (STL/CLR)
+## <a name="listsize_type-stlclr"></a><a name="size_type"></a> list:: size_type (STL/CLR)
 
 두 요소 사이의 부호가 있는 거리의 형식입니다.
 
@@ -2419,7 +2419,7 @@ a b c
 end()-begin() = 3
 ```
 
-## <a name="listsort-stlclr"></a><a name="sort"></a>list:: sort (STL/CLR)
+## <a name="listsort-stlclr"></a><a name="sort"></a> list:: sort (STL/CLR)
 
 제어되는 시퀀스를 정렬합니다.
 
@@ -2484,7 +2484,7 @@ c b a
 a b c
 ```
 
-## <a name="listsplice-stlclr"></a><a name="splice"></a>list:: splice (STL/CLR)
+## <a name="listsplice-stlclr"></a><a name="splice"></a> list:: splice (STL/CLR)
 
 노드 간 링크 다시 연결
 
@@ -2577,7 +2577,7 @@ b c a
 c2.size() = 0
 ```
 
-## <a name="listswap-stlclr"></a><a name="swap"></a>list:: swap (STL/CLR)
+## <a name="listswap-stlclr"></a><a name="swap"></a> list:: swap (STL/CLR)
 
 두 컨테이너의 내용을 바꿉니다.
 
@@ -2641,7 +2641,7 @@ x x x x x
 a b c
 ```
 
-## <a name="listto_array-stlclr"></a><a name="to_array"></a>list:: to_array (STL/CLR)
+## <a name="listto_array-stlclr"></a><a name="to_array"></a> list:: to_array (STL/CLR)
 
 제어 되는 시퀀스를 새 배열에 복사 합니다.
 
@@ -2690,7 +2690,7 @@ a b c d
 a b c
 ```
 
-## <a name="listunique-stlclr"></a><a name="unique"></a>list:: unique (STL/CLR)
+## <a name="listunique-stlclr"></a><a name="unique"></a> list:: unique (STL/CLR)
 
 지정된 테스트를 통과하는 인접 요소를 제거합니다.
 
@@ -2709,7 +2709,7 @@ template<typename Pred2>
 
 ### <a name="remarks"></a>설명
 
-첫 번째 멤버 함수는 이전 요소와 같은 것으로 비교 되는 모든 요소를 제어 되는 시퀀스에서 제거 합니다 `X` . 요소가 요소와 앞에 오면 `Y` `X == Y` 멤버 함수는를 제거 `Y` 합니다. 이를 사용 하 여 동일 하 게 비교 되는 인접 요소의 모든 하위 시퀀스 복사본을 하나만 제거 합니다. [List:: sort (STL/CLR)](../dotnet/list-sort-stl-clr.md)를 호출 하는 것과 같이 제어 되는 시퀀스를 정렬 하는 경우 `()` 멤버 함수는 고유 값이 있는 요소만 남겨 둡니다. (그래서 이러한 이름을 갖습니다.)
+첫 번째 멤버 함수는 이전 요소와 같은 것으로 비교 되는 모든 요소를 제어 되는 시퀀스에서 제거 합니다 `X` . 요소가 요소와 앞에 오면 `Y` `X == Y` 멤버 함수는를 제거 `Y` 합니다. 이를 사용 하 여 동일 하 게 비교 되는 인접 요소의 모든 하위 시퀀스 복사본을 하나만 제거 합니다. [List:: sort (STL/CLR)](#sort)를 호출 하는 것과 같이 제어 되는 시퀀스를 정렬 하는 경우 `()` 멤버 함수는 고유 값이 있는 요소만 남겨 둡니다. (그래서 이러한 이름을 갖습니다.)
 
 두 번째 멤버 함수는 요소 다음에 나오는 각 요소를 제거 한다는 점을 제외 하 고 첫 번째 함수와 동일 하 게 동작 합니다 `Y` `X` `pred(X, Y)` . 이를 사용 하 여 사용자가 지정 하는 조건자 함수 또는 대리자를 만족 하는 인접 요소를 제외한 모든 하위 시퀀스의 복사본을 하나만 제거 합니다. 을 호출 하는 것과 같이 제어 되는 시퀀스를 정렬 하는 경우 `sort(pred)` 멤버 함수는 다른 요소와 동일한 순서를 갖지 않는 요소만 남겨 둡니다.
 
@@ -2756,7 +2756,7 @@ a b c
 a a
 ```
 
-## <a name="listvalue_type-stlclr"></a><a name="value_type"></a>list:: value_type (STL/CLR)
+## <a name="listvalue_type-stlclr"></a><a name="value_type"></a> list:: value_type (STL/CLR)
 
 요소의 형식입니다.
 
@@ -2801,7 +2801,7 @@ int main()
 a b c
 ```
 
-## <a name="operator-list-stlclr"></a><a name="op_neq"></a>operator! = (목록) (STL/CLR)
+## <a name="operator-list-stlclr"></a><a name="op_neq"></a> operator! = (목록) (STL/CLR)
 
 목록이 같지 않음 비교입니다.
 
@@ -2870,7 +2870,7 @@ a b d
 [a b c] != [a b d] is True
 ```
 
-## <a name="operatorlt-list-stlclr"></a><a name="op_lt"></a>연산자 &lt; (목록) (STL/CLR)
+## <a name="operatorlt-list-stlclr"></a><a name="op_lt"></a> 연산자 &lt; (목록) (STL/CLR)
 
 비교 보다 작음 목록입니다.
 
@@ -2939,7 +2939,7 @@ a b d
 [a b c] < [a b d] is True
 ```
 
-## <a name="operatorlt-list-stlclr"></a><a name="op_lteq"></a>operator &lt; = (목록) (STL/CLR)
+## <a name="operatorlt-list-stlclr"></a><a name="op_lteq"></a> operator &lt; = (목록) (STL/CLR)
 
 보다 작거나 같음 비교를 나열 합니다.
 
@@ -3008,7 +3008,7 @@ a b d
 [a b d] <= [a b c] is False
 ```
 
-## <a name="operator-list-stlclr"></a><a name="op_eq"></a>operator = = (목록) (STL/CLR)
+## <a name="operator-list-stlclr"></a><a name="op_eq"></a> operator = = (목록) (STL/CLR)
 
 동일한 비교를 나열 합니다.
 
@@ -3077,7 +3077,7 @@ a b d
 [a b c] == [a b d] is False
 ```
 
-## <a name="operatorgt-list-stlclr"></a><a name="op_gt"></a>연산자 &gt; (목록) (STL/CLR)
+## <a name="operatorgt-list-stlclr"></a><a name="op_gt"></a> 연산자 &gt; (목록) (STL/CLR)
 
 비교 보다 큼을 나열 합니다.
 
@@ -3146,7 +3146,7 @@ a b d
 [a b d] > [a b c] is True
 ```
 
-## <a name="operatorgt-list-stlclr"></a><a name="op_gteq"></a>operator &gt; = (목록) (STL/CLR)
+## <a name="operatorgt-list-stlclr"></a><a name="op_gteq"></a> operator &gt; = (목록) (STL/CLR)
 
 보다 크거나 같음 비교를 나열 합니다.
 

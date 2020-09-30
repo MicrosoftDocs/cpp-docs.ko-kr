@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3037
 ms.assetid: 9ba8a890-d3c7-4cce-93c5-d358e2bfad28
-ms.openlocfilehash: d11f1419fdaac5e2283d0ae53a1ed068214e437e
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: f7a2e4cfe40366db06e2418616825ef467a2271a
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74754994"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91508465"
 ---
 # <a name="compiler-error-c3037"></a>컴파일러 오류 C3037
 
 'var': 'reduction' 절의 변수는 바깥쪽 컨텍스트에서 shared여야 합니다.
 
-[reduction](../../parallel/openmp/reference/reduction.md) 절에 지정된 변수는 컨텍스트의 각 스레드에 private일 수 없습니다.
+[reduction](../../parallel/openmp/reference/openmp-clauses.md#reduction) 절에 지정된 변수는 컨텍스트의 각 스레드에 private일 수 없습니다.
 
 다음 샘플에서는 C3037을 생성합니다.
 

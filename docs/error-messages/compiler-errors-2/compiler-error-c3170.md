@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - C3170
 ms.assetid: ca9a59d6-7df3-42f0-b028-c09d0af3ac2a
-ms.openlocfilehash: e2d74a637e2902fcf636b49068882f32aa706f94
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: c4eb4a2551312791d05c8badb66af0070e74b630
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74761766"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91508323"
 ---
 # <a name="compiler-error-c3170"></a>컴파일러 오류 C3170
 
 프로젝트에 다른 모듈 식별자를 사용할 수 없습니다.
 
-컴파일할 때 파일 중 두 개에 다른 이름의 [모듈](../../windows/module-cpp.md) 특성이 있습니다. 컴파일 당 고유한 `module` 특성을 하나만 지정할 수 있습니다.
+컴파일할 때 파일 중 두 개에 다른 이름의 [모듈](../../windows/attributes/module-cpp.md) 특성이 있습니다. `module`컴파일 당 고유한 특성을 하나만 지정할 수 있습니다.
 
-둘 이상의 소스 코드 파일에 동일한 `module` 특성을 지정할 수 있습니다.
+둘 `module` 이상의 소스 코드 파일에 동일한 특성을 지정할 수 있습니다.
 
 예를 들어 다음 모듈 특성을 찾은 경우
 

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - MFC dialog boxes [MFC], modal
 - modal dialog boxes [MFC]
 ms.assetid: e83df336-5994-4b8f-8233-7942f997315b
-ms.openlocfilehash: 857bb3ea9e66ca0be155413faea23c0aba2abc9e
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: d3497a19ab14dcc9f14dc0419eb65ea033135b6e
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622214"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91508859"
 ---
 # <a name="modal-and-modeless-dialog-boxes"></a>모달 및 모덜리스 대화 상자
 
@@ -30,7 +30,7 @@ ms.locfileid: "84622214"
 
 1. 대화 상자 클래스를 만듭니다.
 
-1. 대화 상자 클래스의 [메시지 처리기에 대화 상자 리소스의 컨트롤을](../windows/adding-event-handlers-for-dialog-box-controls.md) 연결 합니다.
+1. 대화 상자 클래스의 [메시지 처리기에 대화 상자 리소스의 컨트롤을](../windows/adding-editing-or-deleting-controls.md) 연결 합니다.
 
 1. 대화 상자 컨트롤과 연결 된 데이터 멤버를 추가 하 고 컨트롤에 대 한 대화 상자 [데이터 교환](dialog-data-exchange.md) 및 [대화 상자 데이터 유효성 검사](dialog-data-validation.md) 를 지정 합니다.
 

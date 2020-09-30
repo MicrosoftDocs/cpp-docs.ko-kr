@@ -14,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - msclr::lock class
 ms.assetid: 5123edd9-6aed-497d-9a0b-f4b6d6c0d666
-ms.openlocfilehash: b06c293200bc85945e95996db3109c1f5fba8d8a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7b2f187ec940af95523d0bbfb9265d7d9d6f69e8
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225620"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91508652"
 ---
 # <a name="lock-class"></a>lock 클래스
 
@@ -33,7 +33,7 @@ ref class lock;
 
 ## <a name="remarks"></a>설명
 
-`lock`는 CLR 개체에만 사용할 수 있으며 CLR 코드 에서만 사용할 수 있습니다.
+`lock` 는 CLR 개체에만 사용할 수 있으며 CLR 코드 에서만 사용할 수 있습니다.
 
 내부적으로 lock 클래스는 <xref:System.Threading.Monitor> 를 사용 하 여 액세스를 동기화 합니다. 자세한 내용은 참조 된 문서를 참조 하세요.
 
@@ -41,14 +41,14 @@ ref class lock;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|속성|설명|
 |---------|-----------|
 |[lock::lock](#lock)|`lock`지정 된 시간 동안 또는 지정 된 시간 동안 잠금 상태를 영구적으로 얻기 위해 대기 하는 개체를 생성 합니다.|
 |[lock:: ~ lock](#tilde-lock)|개체를 Destructs `lock` 합니다.|
 
 ### <a name="public-methods"></a>public 메서드
 
-|Name|설명|
+|속성|설명|
 |---------|-----------|
 |[lock::acquire](#acquire)|개체에 대 한 잠금을 획득 하 고, 선택적으로 잠금을 획득 하기 위해 대기 하는 경우 지정 된 시간 동안 또는 전혀 발생 하지 않도록 대기 합니다.|
 |[lock::is_locked](#is-locked)|잠금을 보유 하 고 있는지 여부를 나타냅니다.|
@@ -57,7 +57,7 @@ ref class lock;
 
 ### <a name="public-operators"></a>Public 연산자
 
-|Name|설명|
+|속성|설명|
 |---------|-----------|
 |[lock:: operator &nbsp; bool](#operator-bool)|조건식에 사용 하기 위한 연산자 `lock` 입니다.|
 |[lock:: operator = =](#operator-equality)|같음 연산자입니다.|
@@ -69,7 +69,7 @@ ref class lock;
 
 Msclr **네임 스페이스**
 
-## <a name="locklock"></a><a name="lock"></a>lock:: lock
+## <a name="locklock"></a><a name="lock"></a> lock:: lock
 
 `lock`지정 된 시간 동안 또는 지정 된 시간 동안 잠금 상태를 영구적으로 얻기 위해 대기 하는 개체를 생성 합니다.
 
@@ -107,11 +107,11 @@ template<class T> lock(
 
 생성자의 처음 세 형태는 지정 된 시간 제한 기간 내에 잠금을 획득 하려고 시도 합니다 `_object` ( <xref:System.Threading.Timeout.Infinite> 지정 하지 않은 경우).
 
-생성자의 네 번째 형태는에 대 한 잠금을 획득 하지 않습니다 `_object` . `lock_later`는 [lock_when 열거형](../dotnet/lock-when-enum.md)의 멤버입니다. Lock [:: 얻으려고](../dotnet/lock-acquire.md) 또는 [lock:: try_acquire](../dotnet/lock-try-acquire.md) 을 사용 하 여이 경우 잠금을 가져옵니다.
+생성자의 네 번째 형태는에 대 한 잠금을 획득 하지 않습니다 `_object` . `lock_later` 는 [lock_when 열거형](../dotnet/lock-when-enum.md)의 멤버입니다. Lock [:: 얻으려고](#acquire) 또는 [lock:: try_acquire](#try-acquire) 을 사용 하 여이 경우 잠금을 가져옵니다.
 
 소멸자가 호출 되 면 잠금이 자동으로 해제 됩니다.
 
-`_object`일 수 없습니다 <xref:System.Threading.ReaderWriterLock> .  인 경우 컴파일러 오류가 발생 합니다.
+`_object` 일 수 없습니다 <xref:System.Threading.ReaderWriterLock> .  인 경우 컴파일러 오류가 발생 합니다.
 
 ### <a name="example"></a>예제
 
@@ -203,7 +203,7 @@ In thread 6, Counter = 10
 All threads completed.
 ```
 
-## <a name="locklock"></a><a name="tilde-lock"></a>lock:: ~ lock
+## <a name="locklock"></a><a name="tilde-lock"></a> lock:: ~ lock
 
 개체를 Destructs `lock` 합니다.
 
@@ -213,7 +213,7 @@ All threads completed.
 
 ### <a name="remarks"></a>설명
 
-소멸자는 [lock:: release](../dotnet/lock-release.md)를 호출 합니다.
+소멸자는 [lock:: release](#release)를 호출 합니다.
 
 ### <a name="example"></a>예제
 
@@ -305,7 +305,7 @@ In thread 6, Counter = 10
 All threads completed.
 ```
 
-## <a name="lockacquire"></a><a name="acquire"></a>lock:: 획득
+## <a name="lockacquire"></a><a name="acquire"></a> lock:: 획득
 
 개체에 대 한 잠금을 획득 하 고, 선택적으로 잠금을 획득 하기 위해 대기 하는 경우 지정 된 시간 동안 또는 전혀 발생 하지 않도록 대기 합니다.
 
@@ -424,7 +424,7 @@ In thread 6, Counter = 10
 All threads completed.
 ```
 
-## <a name="lockis_locked"></a><a name="is-locked"></a>lock:: is_locked
+## <a name="lockis_locked"></a><a name="is-locked"></a> lock:: is_locked
 
 잠금을 보유 하 고 있는지 여부를 나타냅니다.
 
@@ -527,7 +527,7 @@ In thread 6, Counter = 10
 All threads completed.
 ```
 
-## <a name="lockoperator-bool"></a><a name="operator-bool"></a>lock:: operator bool
+## <a name="lockoperator-bool"></a><a name="operator-bool"></a> lock:: operator bool
 
 조건식에 사용 하기 위한 연산자 `lock` 입니다.
 
@@ -634,7 +634,7 @@ In thread 6, Counter = 10
 All threads completed.
 ```
 
-## <a name="lockrelease"></a><a name="release"></a>lock:: release
+## <a name="lockrelease"></a><a name="release"></a> lock:: release
 
 잠금을 해제 합니다.
 
@@ -738,7 +738,7 @@ In thread 6, Counter = 10
 All threads completed.
 ```
 
-## <a name="locktry_acquire"></a><a name="try-acquire"></a>lock:: try_acquire
+## <a name="locktry_acquire"></a><a name="try-acquire"></a> lock:: try_acquire
 
 지정 된 시간 동안 대기 하 고를 반환 하 여 예외를 throw 하는 **`bool`** 대신 획득의 성공을 보고 하는 개체에 대 한 잠금을 가져옵니다.
 
@@ -854,7 +854,7 @@ In thread 6, Counter = 10
 All threads completed.
 ```
 
-## <a name="lockoperator"></a><a name="operator-equality"></a>lock:: operator = =
+## <a name="lockoperator"></a><a name="operator-equality"></a> lock:: operator = =
 
 같음 연산자입니다.
 
@@ -866,7 +866,7 @@ template<class T> bool operator==(
 
 ### <a name="parameters"></a>매개 변수
 
-*트*<br/>
+*t*<br/>
 같은지 비교할 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -897,7 +897,7 @@ int main () {
 Equal!
 ```
 
-## <a name="lockoperator"></a><a name="operator-inequality"></a>lock:: operator! =
+## <a name="lockoperator"></a><a name="operator-inequality"></a> lock:: operator! =
 
 같지 않음 연산자입니다.
 
@@ -909,7 +909,7 @@ template<class T> bool operator!=(
 
 ### <a name="parameters"></a>매개 변수
 
-*트*<br/>
+*t*<br/>
 같지 않은지 비교할 개체입니다.
 
 ### <a name="return-value"></a>반환 값

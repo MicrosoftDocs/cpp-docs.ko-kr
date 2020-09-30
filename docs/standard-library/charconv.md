@@ -5,12 +5,12 @@ f1_keywords:
 - <charconv>
 helpviewer_keywords:
 - charconv header
-ms.openlocfilehash: 59807749105512e0eb61acfdf60ef463febbc3a8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c9dfb8e18a8f7fd367ec4f6b52b1a0af74b3f939
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230192"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91507715"
 ---
 # <a name="ltcharconvgt"></a>&lt;charconv&gt;
 
@@ -39,7 +39,7 @@ ms.locfileid: "87230192"
 
 ### <a name="types"></a>유형
 
-| Type | 설명 |
+| 유형 | 설명 |
 |-|:-|
 | [chars_format](chars-format-class.md) | 과학적, hex 등의 형식 지정 형식을 지정 합니다. |
 | [from_chars_result](from-chars-result-structure.md) | 변환 결과를 포함 합니다 `from_chars` . |
@@ -55,4 +55,3 @@ ms.locfileid: "87230192"
 ## <a name="see-also"></a>참고 항목
 
 [헤더 파일 참조](cpp-standard-library-header-files.md)
-

@@ -40,12 +40,12 @@ helpviewer_keywords:
 - Open method
 - StartTransaction method
 ms.assetid: 83cd798f-b45d-4f11-a23c-29183390450c
-ms.openlocfilehash: 6858c26df5f5ee364717d089704117e650282278
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f507ed432e107f586d34bb6b08fa9d3f7dc509d8
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841105"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91507236"
 ---
 # <a name="csession-class"></a>CSession 클래스
 
@@ -76,7 +76,7 @@ class CSession
 
 ## <a name="remarks"></a>설명
 
-하나 이상의 세션을 각 공급자 연결 (데이터 원본)에 연결할 수 있으며,이는 [Cdatasource](../../data/oledb/cdatasource-class.md) 개체가 나타냅니다. 에 대해 새을 만들려면 `CSession` `CDataSource` [Csession:: Open](../../data/oledb/csession-open.md)을 호출 합니다. 데이터베이스 트랜잭션을 시작 하려면에서 `CSession` 메서드를 제공 합니다 `StartTransaction` . 트랜잭션을 시작한 후에는 메서드를 사용 하 여 트랜잭션을 커밋하거나 `Commit` 메서드를 사용 하 여 취소할 수 있습니다 `Abort` .
+하나 이상의 세션을 각 공급자 연결 (데이터 원본)에 연결할 수 있으며,이는 [Cdatasource](../../data/oledb/cdatasource-class.md) 개체가 나타냅니다. 에 대해 새을 만들려면 `CSession` `CDataSource` [Csession:: Open](#open)을 호출 합니다. 데이터베이스 트랜잭션을 시작 하려면에서 `CSession` 메서드를 제공 합니다 `StartTransaction` . 트랜잭션을 시작한 후에는 메서드를 사용 하 여 트랜잭션을 커밋하거나 `Commit` 메서드를 사용 하 여 취소할 수 있습니다 `Abort` .
 
 ## <a name="csessionabort"></a><a name="abort"></a> CSession:: Abort
 
@@ -100,7 +100,7 @@ HRESULT Abort(BOID* pboidReason = NULL,
 
 ## <a name="csessionclose"></a><a name="close"></a> CSession:: Close
 
-[Csession:: Open](../../data/oledb/csession-open.md)에서 연 세션을 닫습니다.
+[Csession:: Open](#open)에서 연 세션을 닫습니다.
 
 ### <a name="syntax"></a>구문
 
@@ -187,7 +187,7 @@ HRESULT Open(const CDataSource& ds,
 
 ### <a name="remarks"></a>설명
 
-로 전달 하기 전에 [Cdatasource:: open](../../data/oledb/cdatasource-open.md) 을 사용 하 여 데이터 원본 개체를 열어야 합니다 `CSession::Open` .
+로 전달 하기 전에 [Cdatasource:: open](./cdatasource-class.md#open) 을 사용 하 여 데이터 원본 개체를 열어야 합니다 `CSession::Open` .
 
 ## <a name="csessionstarttransaction"></a><a name="starttransaction"></a> CSession:: StartTransaction
 

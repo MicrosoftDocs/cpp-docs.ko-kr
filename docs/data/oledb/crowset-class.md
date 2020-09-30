@@ -228,12 +228,12 @@ helpviewer_keywords:
 - Update method
 - UpdateAll method
 ms.assetid: b0228a90-b8dd-47cc-b397-8d4c15c1e7f4
-ms.openlocfilehash: 8cacbd6d188b3453c0111cca6565b7def9e3aa1e
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b351530326e0dc4ed0b72db50d17717824eb6bb4
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831569"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91507274"
 ---
 # <a name="crowset-class"></a>CRowset 클래스
 
@@ -282,7 +282,7 @@ class CRowset
 |[MoveToRatio](#movetoratio)|행 집합의 소수 위치에서 시작 하 여 행을 인출 합니다.|
 |[ReleaseRows](#releaserows)|[IRowset:: ReleaseRows](/previous-versions/windows/desktop/ms719771(v=vs.85)) 를 호출 하 여 현재 행 핸들을 해제 합니다.|
 |[SetData](#setdata)|[IRowsetChange: SetData](/previous-versions/windows/desktop/ms721232(v=vs.85))를 사용 하 여 하나 이상의 행 열에 데이터 값을 설정 합니다.|
-|[실행 취소](#undo)|마지막 인출 또는 [업데이트](../../data/oledb/crowset-update.md)이후 행에 적용 된 변경 내용을 취소 합니다.|
+|[실행 취소](#undo)|마지막 인출 또는 [업데이트](#update)이후 행에 적용 된 변경 내용을 취소 합니다.|
 |[Update](#update)|마지막 인출 또는 업데이트 이후 현재 행에 대해 보류 중인 변경 내용을 모두 전송 합니다.|
 |[UpdateAll](#updateall)|마지막 인출 또는 업데이트 이후의 모든 행에 대 한 보류 중인 변경 내용을 모두 전송 합니다.|
 
@@ -308,7 +308,7 @@ HRESULT AddRefRows() throw();
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 현재 행 핸들의 참조 횟수를 증가 시킵니다. [ReleaseRows](../../data/oledb/crowset-releaserows.md) 를 호출 하 여 카운트를 감소 시킵니다. Move 메서드에 의해 반환 된 행의 참조 횟수는 1입니다.
+이 메서드는 현재 행 핸들의 참조 횟수를 증가 시킵니다. [ReleaseRows](#releaserows) 를 호출 하 여 카운트를 감소 시킵니다. Move 메서드에 의해 반환 된 행의 참조 횟수는 1입니다.
 
 ## <a name="crowsetclose"></a><a name="close"></a> CRowset:: Close
 
@@ -497,7 +497,7 @@ HRESULT GetData(int nAccessor) throw();
 
 ### <a name="remarks"></a>설명
 
-[BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md)에서 autoaccessor가 아닌 접근자를 지정 하는 경우이 메서드를 사용 하 여 접근자 번호를 전달 하 여 명시적으로 데이터를 가져옵니다.
+[BEGIN_ACCESSOR](./macros-and-global-functions-for-ole-db-consumer-templates.md#begin_accessor)에서 autoaccessor가 아닌 접근자를 지정 하는 경우이 메서드를 사용 하 여 접근자 번호를 전달 하 여 명시적으로 데이터를 가져옵니다.
 
 ## <a name="crowsetgetdatahere"></a><a name="getdatahere"></a> CRowset:: GetDataHere
 
@@ -820,7 +820,7 @@ HRESULT SetData(int nAccessor) const throw();
 
 ### <a name="remarks"></a>설명
 
-`SetData`인수를 허용 하지 않는 폼의 경우 모든 접근자가 업데이트에 사용 됩니다. 일반적으로 `SetData` 를 호출 하 여 행의 열에 있는 데이터 값을 설정한 다음 [Update](../../data/oledb/crowset-update.md) 를 호출 하 여 이러한 변경 내용을 전송 합니다.
+`SetData`인수를 허용 하지 않는 폼의 경우 모든 접근자가 업데이트에 사용 됩니다. 일반적으로 `SetData` 를 호출 하 여 행의 열에 있는 데이터 값을 설정한 다음 [Update](#update) 를 호출 하 여 이러한 변경 내용을 전송 합니다.
 
 이 메서드에는 `IRowsetChange` 모든 공급자에서 지원 되지 않을 수 있는 선택적 인터페이스가 필요 합니다 .이 경우 메서드는 E_NOINTERFACE를 반환 합니다. `DBPROP_IRowsetChange` `Open` 행 집합을 포함 하는 테이블이 나 명령에 대해를 호출 하기 전에 VARIANT_TRUE 설정 해야 합니다.
 
@@ -828,7 +828,7 @@ HRESULT SetData(int nAccessor) const throw();
 
 ## <a name="crowsetundo"></a><a name="undo"></a> CRowset:: Undo
 
-마지막 인출 또는 [업데이트](../../data/oledb/crowset-update.md)이후 행에 적용 된 변경 내용을 취소 합니다.
+마지막 인출 또는 [업데이트](#update)이후 행에 적용 된 변경 내용을 취소 합니다.
 
 ### <a name="syntax"></a>구문
 
@@ -886,7 +886,7 @@ HRESULT Update(DBCOUNTITEM* pcRows = NULL,
 
 ### <a name="remarks"></a>설명
 
-현재 행이 마지막으로 인출 되거나 업데이트 된 후 (또는 UpdateAll을 사용 하 여) 보류 중인 변경 내용을 모두 전송 `Update` 합니다. [UpdateAll](../../data/oledb/crowset-updateall.md) 일반적으로 [SetData](../../data/oledb/crowset-setdata.md) 를 호출 하 여 행의 열에 데이터 값을 설정 하 고 `Update` 를 호출 하 여 해당 변경 내용을 전송 합니다.
+현재 행이 마지막으로 인출 되거나 업데이트 된 후 (또는 UpdateAll을 사용 하 여) 보류 중인 변경 내용을 모두 전송 `Update` 합니다. [UpdateAll](#updateall) 일반적으로 [SetData](#setdata) 를 호출 하 여 행의 열에 데이터 값을 설정 하 고 `Update` 를 호출 하 여 해당 변경 내용을 전송 합니다.
 
 이 메서드에는 `IRowsetUpdate` 모든 공급자에서 지원 되지 않을 수 있는 선택적 인터페이스가 필요 합니다 .이 경우 메서드는 E_NOINTERFACE를 반환 합니다. `DBPROP_IRowsetUpdate` `Open` 행 집합을 포함 하는 테이블이 나 명령에 대해를 호출 하기 전에 VARIANT_TRUE 설정 해야 합니다.
 
@@ -915,7 +915,7 @@ HRESULT UpdateAll(DBCOUNTITEM* pcRows = NULL,
 
 ### <a name="remarks"></a>설명
 
-[업데이트](../../data/oledb/crowset-update.md) 또는을 사용 하 여 해당 행이 마지막으로 인출 되거나 업데이트 된 이후 모든 행에 대해 보류 중인 변경 내용을 전송 `UpdateAll` 합니다. `UpdateAll` 는 여전히 핸들 ( *Pphrow*참조)이 있는지 여부에 관계 없이 수정 된 모든 행을 업데이트 합니다.
+[업데이트](#update) 또는을 사용 하 여 해당 행이 마지막으로 인출 되거나 업데이트 된 이후 모든 행에 대해 보류 중인 변경 내용을 전송 `UpdateAll` 합니다. `UpdateAll` 는 여전히 핸들 ( *Pphrow*참조)이 있는지 여부에 관계 없이 수정 된 모든 행을 업데이트 합니다.
 
 예를 들어 행 집합에 5 개의 행을 삽입 하는 데를 사용 하는 경우를 `Insert` `Update` 5 번 호출 하거나 `UpdateAll` 한 번 호출 하 여 모두 업데이트할 수 있습니다.
 

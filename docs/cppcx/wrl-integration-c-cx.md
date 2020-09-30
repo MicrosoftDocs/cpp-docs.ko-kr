@@ -2,28 +2,28 @@
 title: WRL 통합(C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 3ad43894-c574-477c-ad3e-240301f381d4
-ms.openlocfilehash: a3c8b824d2cd932a7d284804f3f28781654045e0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3ea0f6aece985a2ee74916e737b9aab1bf0d1d96
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62304152"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91507412"
 ---
 # <a name="wrl-integration-ccx"></a>WRL 통합(C++/CX)
 
-자유롭게 Windows 런타임으로 WRL 코드를 혼합할 수 있습니다 C++ 템플릿 라이브러리 (WRL) 코드입니다. 동일한 번역 단위에 WRL 개체 핸들을 사용 하 여 선언 된 개체를 사용할 수 있습니다 (`^`) 표기법 및 WRL 스마트 포인터 (`ComPtr<T>`) 표기법입니다. 그러나 반환 값 및 WRL HRESULT 오류 코드 및 WRL 예외 처리 수동으로 해야 합니다.
+WRL 코드를 Windows 런타임 WRL (c + + 템플릿 라이브러리) 코드와 자유롭게 혼합할 수 있습니다. 동일한 변환 단위에서 WRL ( `^` ) 표기법 및 WRL 스마트 포인터 () 표기법으로 선언 된 개체를 사용할 수 있습니다 `ComPtr<T>` . 그러나 반환 값을 수동으로 처리 하 고 HRESULT 오류 코드 및 WRL 예외를 WRL 합니다.
 
 ## <a name="wrl-development"></a>WRL 개발
 
-작성 하 고 WRL 구성 요소를 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [Windows 런타임 C++ 템플릿 라이브러리 (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)합니다.
+WRL 구성 요소를 작성 하 고 사용 하는 방법에 대 한 자세한 내용은 [c + + 템플릿 라이브러리 Windows 런타임 (WRL)](./wrl/windows-runtime-cpp-template-library-wrl.md)를 참조 하세요.
 
 ### <a name="example"></a>예제
 
-다음 코드 조각은 WRL 및 WRL을 사용 하 여 Windows 런타임 클래스를 사용 하 고 메타 데이터 파일을 검사 하는 방법을 보여 줍니다.
+다음 코드 조각에서는 WRL 및 WRL를 사용 하 여 Windows 런타임 클래스를 사용 하 고 메타 데이터 파일을 검사 하는 방법을 보여 줍니다.
 
-이 예제에서는 구성 Microsoft Store 앱 포럼의 코드 조각에서 수행 됩니다. 이 코드 조각의 작성자가 제공한 고지 사항과 조건은 다음과 같습니다.
+예제는 빌드 Microsoft Store 앱 포럼의 코드 조각에서 가져옵니다. 이 코드 조각의 작성자가 제공한 고지 사항과 조건은 다음과 같습니다.
 
-1. C++특정 Api에 맞게 Windows 런타임 형식이 있지만 Windows 유형에 대 한 메타 데이터 파일 (.winmd)은 CLR 메타 데이터 파일과 완전히 호환 제공 하지 않습니다. Windows는 특정 형식에 대한 .winmd 파일을 가져오기 위한 새로운 메타데이터 검색 API(RoGetMetaDataFile)를 제공합니다. 그러나 이러한 API는 C++ 개발자만 사용할 수 있으므로 사용자가 클래스를 인스턴스화할 수 없습니다.
+1. C + +는 Windows 런타임 형식을 반영 하는 특정 Api를 제공 하지 않지만 형식에 대 한 Windows 메타 데이터 파일 (winmd)은 CLR 메타 데이터 파일을 완벽 하 게 준수 합니다. Windows는 특정 형식에 대한 .winmd 파일을 가져오기 위한 새로운 메타데이터 검색 API(RoGetMetaDataFile)를 제공합니다. 그러나 이러한 API는 C++ 개발자만 사용할 수 있으므로 사용자가 클래스를 인스턴스화할 수 없습니다.
 
 1. 또한 코드가 컴파일되면 Runtimeobject.lib 및 Rometadata.lib를 링커에 전달해야 합니다.
 
@@ -110,6 +110,6 @@ IVector<String^>^ GetTypeMethods(Object^ instance)
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [다른 언어와의 상호 운용](interoperating-with-other-languages-c-cx.md)

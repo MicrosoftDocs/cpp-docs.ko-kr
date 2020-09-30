@@ -2,21 +2,21 @@
 title: C + +/CX 언어 참조
 ms.date: 09/15/2017
 ms.assetid: 3f6abf92-4e5e-4ed8-8e11-f9252380d30a
-ms.openlocfilehash: 4f3816280630a6a061eb037a33367ef4e9d90375
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: f28270ace3965a3cf89e250a873af14e48390708
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86403857"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91507419"
 ---
 # <a name="ccx-language-reference"></a>C + +/CX 언어 참조
 
-C + +/CX는 최신 c + +와 가능한 가까운 방식으로 Windows 앱 및 Windows 런타임 구성 요소를 만들 수 있도록 하는 c + + 언어에 대 한 확장 집합입니다. C + +/CX를 사용 하 여 Visual c #, Visual Basic, JavaScript 및 Windows 런타임를 지 원하는 다른 언어와 쉽게 상호 작용 하는 네이티브 코드로 Windows 앱 및 구성 요소를 작성할 수 있습니다. 드물지만 원시 COM 인터페이스 또는 비 예외 코드에 직접 액세스 해야 하는 경우에는 [Windows 런타임 c + + 템플릿 라이브러리 (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)를 사용할 수 있습니다.
+C + +/CX는 최신 c + +와 가능한 가까운 방식으로 Windows 앱 및 Windows 런타임 구성 요소를 만들 수 있도록 하는 c + + 언어에 대 한 확장 집합입니다. C + +/CX를 사용 하 여 Visual c #, Visual Basic, JavaScript 및 Windows 런타임를 지 원하는 다른 언어와 쉽게 상호 작용 하는 네이티브 코드로 Windows 앱 및 구성 요소를 작성할 수 있습니다. 드물지만 원시 COM 인터페이스 또는 비 예외 코드에 직접 액세스 해야 하는 경우에는 [Windows 런타임 c + + 템플릿 라이브러리 (WRL)](./wrl/windows-runtime-cpp-template-library-wrl.md)를 사용할 수 있습니다.
 
 > [!NOTE]
 > **[/Winrt는 C++/cx의 권장 되는 대안입니다. C++](/windows/uwp/cpp-and-winrt-apis/index)** 최신 Windows 10 SDK 버전 1803부터 사용할 수 있는 Windows 런타임 Api에 대 한 새로운 표준 c + + 17 언어 프로젝션입니다. C + +/WinRT는 헤더 파일에 완전히 구현 되며 최신 Windows API에 대 한 최고 수준의 액세스를 제공 하도록 설계 되었습니다.
 >
-> C + +/WinRT를 사용 하면 표준 규격 c + + 17 컴파일러를 사용 하 여 Windows 런타임 Api를 사용 하 고 제작할 수 있습니다. 일반적으로 c + +/WinRT는 Windows 런타임에 대 한 다른 언어 옵션 보다 더 작은 이진 파일을 생성 합니다. C++/CX와 WRL도 계속 지원되지만, 새 애플리케이션에서는 C++/WinRT를 사용하는 것이 좋습니다. 자세한 내용은 [c + +/Winrt](/windows/uwp/cpp-and-winrt-apis/index)를 참조 하세요.
+> C + +/WinRT를 사용 하면 표준 규격 c + + 17 컴파일러를 사용 하 여 Windows 런타임 Api를 사용 하 고 제작할 수 있습니다. 일반적으로 c + +/WinRT는 Windows 런타임에 대 한 다른 언어 옵션 보다 더 작은 이진 파일을 생성 합니다. C++/CX와 WRL도 계속 지원되지만, 새 애플리케이션에서는 C++/WinRT를 사용하는 것이 좋습니다. 자세한 내용은 [C++/WinRT](/windows/uwp/cpp-and-winrt-apis/index) 참조하세요.
 
 C + +/CX를 사용 하 여 다음을 만들 수 있습니다.
 
@@ -28,7 +28,7 @@ C + +/CX를 사용 하 여 다음을 만들 수 있습니다.
 
 ## <a name="related-articles"></a>관련된 문서
 
-| 링크 | Description |
+| 링크 | 설명 |
 |--|--|
 | [빠른 참조](../cppcx/quick-reference-c-cx.md) | C + +/CX에 대 한 키워드 및 연산자 표 |
 | [유형 시스템](../cppcx/type-system-c-cx.md) | 기본적인 c + +/CX 형식 및 프로그래밍 구문에 대해 설명 하 고, c + +/CX를 활용 하 여 Windows 런타임 형식을 사용 하 고 만드는 방법을 설명 합니다 |

@@ -7,16 +7,16 @@ helpviewer_keywords:
 - dialog boxes [MFC], access to controls
 - dialog box controls [MFC], accessing
 ms.assetid: b8874393-ee48-4124-8d78-e3648a7e29b9
-ms.openlocfilehash: bfbc27dbcdeeb38c40f5d989bacd65a23198d4f5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ee7c49f75dcdc2b6c32f2b391ace7260b46d197b
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213972"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91507897"
 ---
 # <a name="type-safe-access-to-controls-with-code-wizards"></a>코드 마법사를 사용하여 컨트롤에 대한 형식이 안전한 액세스 수행
 
-DDX 기능에 대해 잘 알고 있는 경우 [멤버 변수 추가 마법사](../ide/add-member-variable-wizard.md) 에서 컨트롤 속성을 사용 하 여 형식이 안전한 액세스를 만들 수 있습니다. 이 방법은 코드 마법사 없이 컨트롤을 만드는 것 보다 쉽습니다.
+DDX 기능에 대해 잘 알고 있는 경우 [멤버 변수 추가 마법사](../ide/adding-a-member-variable-visual-cpp.md#add-member-variable-wizard) 에서 컨트롤 속성을 사용 하 여 형식이 안전한 액세스를 만들 수 있습니다. 이 방법은 코드 마법사 없이 컨트롤을 만드는 것 보다 쉽습니다.
 
 컨트롤의 값에 액세스 하려는 경우 DDX는이를 제공 합니다. 컨트롤의 값에 액세스 하는 것 보다 더 많은 작업을 수행 하려는 경우 멤버 변수 추가 마법사를 사용 하 여 해당 클래스의 멤버 변수를 대화 상자 클래스에 추가 합니다. 이 멤버 변수를 컨트롤 속성에 연결 합니다.
 

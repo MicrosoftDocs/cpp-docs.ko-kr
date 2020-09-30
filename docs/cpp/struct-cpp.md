@@ -1,4 +1,4 @@
-﻿---
+---
 title: struct (C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - struct constructors
 ms.assetid: 3c6ba273-e248-4ff1-8c69-d2abcf1263c6
-ms.openlocfilehash: 5f247a99d3f04a15ebd54718a46dae8512a580d6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d0092cf107159f4c84b431f5eeae130df64dc835
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231119"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91507457"
 ---
 # <a name="struct-c"></a>struct (C++)
 
@@ -48,7 +48,7 @@ ms.locfileid: "87231119"
 구조체 멤버 목록입니다. 자세한 내용은 [클래스 멤버 개요](../cpp/class-member-overview.md) 를 참조 하세요. 여기서는를 대신 사용 한다는 점만 다릅니다 **`struct`** **`class`** .
 
 *declarators*<br/>
-구조체의 이름을 지정 하는 선언 자 목록입니다. 선언자 목록은 구조체 형식의 하나 이상의 인스턴스를 선언합니다. 구조체의 모든 데이터 멤버가 인 경우 선언 자는 이니셜라이저 목록을 포함할 수 있습니다 **`public`** . 이니셜라이저 목록은 기본적으로 데이터 멤버가 이기 때문에 구조에서 일반적 **`public`** 입니다.  자세한 내용은 [선언 자 개요](../cpp/overview-of-declarators.md) 를 참조 하세요.
+구조체의 이름을 지정 하는 선언 자 목록입니다. 선언자 목록은 구조체 형식의 하나 이상의 인스턴스를 선언합니다. 구조체의 모든 데이터 멤버가 인 경우 선언 자는 이니셜라이저 목록을 포함할 수 있습니다 **`public`** . 이니셜라이저 목록은 기본적으로 데이터 멤버가 이기 때문에 구조에서 일반적 **`public`** 입니다.  자세한 내용은 [선언 자 개요](./declarations-and-definitions-cpp.md) 를 참조 하세요.
 
 ## <a name="remarks"></a>설명
 

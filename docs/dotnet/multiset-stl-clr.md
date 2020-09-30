@@ -97,12 +97,12 @@ helpviewer_keywords:
 - operator> member [STL/CLR]
 - operator>= member [STL/CLR]
 ms.assetid: 7c46e2b4-cd88-49b7-a9e6-63ad5ae7feb5
-ms.openlocfilehash: 4907665c25f65affab0fc2c0bbd37f70d6a3c352
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a6bb7a262df21a835f1e870f2bce29480467c543
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211048"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91508550"
 ---
 # <a name="multiset-stlclr"></a>multiset(STL/CLR)
 
@@ -206,11 +206,11 @@ template<typename Key>
 
 개체는 개별 노드로 제어 되는 시퀀스에 대 한 저장소를 할당 하 고 해제 합니다. 노드 간에 링크를 변경 하 여 계속 정렬 된 (거의) 분산 된 트리에 요소를 삽입 합니다. 즉, 나머지 요소를 방해 하지 않고 요소를 자유롭게 삽입 하 고 제거할 수 있습니다.
 
-개체는 multiset:: key_compare 형식의 저장 된 대리자 개체 [(STL/CLR)](../dotnet/multiset-key-compare-stl-clr.md)를 호출 하 여 제어 하는 시퀀스를 정렬 합니다. Multiset를 생성할 때 저장 된 대리자 개체를 지정할 수 있습니다. 대리자 개체를 지정 하지 않으면 기본값은 비교입니다 `operator<(key_type, key_type)` . 이 저장 된 개체는 멤버 함수 [multiset:: key_comp (STL/CLR)](../dotnet/multiset-key-comp-stl-clr.md)멤버 함수를 호출 하 여 액세스 `()` 합니다.
+개체는 multiset:: key_compare 형식의 저장 된 대리자 개체 [(STL/CLR)](#key_compare)를 호출 하 여 제어 하는 시퀀스를 정렬 합니다. Multiset를 생성할 때 저장 된 대리자 개체를 지정할 수 있습니다. 대리자 개체를 지정 하지 않으면 기본값은 비교입니다 `operator<(key_type, key_type)` . 이 저장 된 개체는 멤버 함수 [multiset:: key_comp (STL/CLR)](#key_comp)멤버 함수를 호출 하 여 액세스 `()` 합니다.
 
-이러한 대리자 개체는 [multiset:: key_type (STL/CLR)](../dotnet/multiset-key-type-stl-clr.md)형식의 키에 대해 엄격 하 고 약한 순서를 적용 해야 합니다. 즉, 다음과 같은 두 가지 키 `X` 가 `Y` 있습니다.
+이러한 대리자 개체는 [multiset:: key_type (STL/CLR)](#key_type)형식의 키에 대해 엄격 하 고 약한 순서를 적용 해야 합니다. 즉, 다음과 같은 두 가지 키 `X` 가 `Y` 있습니다.
 
-`key_comp()(X, Y)`모든 호출에 대해 동일한 부울 결과를 반환 합니다.
+`key_comp()(X, Y)` 모든 호출에 대해 동일한 부울 결과를 반환 합니다.
 
 `key_comp()(X, Y)`이 true 이면은 false 여야 합니다 `key_comp()(Y, X)` .
 
@@ -222,7 +222,7 @@ template<typename Key>
 
 각 요소는 e 및 값으로 사용 됩니다. 시퀀스는 시퀀스의 요소 수에 대 한 로그 (로그 시간)에 비례 하는 여러 연산이 있는 임의 요소를 조회, 삽입 및 제거할 수 있도록 하는 방식으로 표현 됩니다. 또한, 요소를 삽입할 경우 어떤 반복기도 무효화되지 않으며, 요소를 제거할 경우 제거된 요소를 가리키고 있는 반복기만 무효화됩니다.
 
-Multiset는 양방향 반복기를 지원 합니다. 즉, 제어 되는 시퀀스에서 요소를 지정 하는 반복기를 사용 하 여 인접 한 요소를 한 단계씩 실행 할 수 있습니다. 특수 헤드 노드는 [multiset:: end (STL/CLR)](../dotnet/multiset-end-stl-clr.md)에서 반환 된 반복기에 해당 `()` 합니다. 제어 되는 시퀀스의 마지막 요소 (있는 경우)에 도달할 때까지이 반복기를 줄일 수 있습니다. Multiset 반복기를 증가 시켜 헤드 노드에 도달할 수 있습니다. 그런 다음와 비교 `end()` 합니다. 그러나에서 반환 된 반복기는 역 참조할 수 없습니다 `end()` .
+Multiset는 양방향 반복기를 지원 합니다. 즉, 제어 되는 시퀀스에서 요소를 지정 하는 반복기를 사용 하 여 인접 한 요소를 한 단계씩 실행 할 수 있습니다. 특수 헤드 노드는 [multiset:: end (STL/CLR)](#end)에서 반환 된 반복기에 해당 `()` 합니다. 제어 되는 시퀀스의 마지막 요소 (있는 경우)에 도달할 때까지이 반복기를 줄일 수 있습니다. Multiset 반복기를 증가 시켜 헤드 노드에 도달할 수 있습니다. 그런 다음와 비교 `end()` 합니다. 그러나에서 반환 된 반복기는 역 참조할 수 없습니다 `end()` .
 
 임의 액세스 반복기를 필요로 하는 숫자 위치를 지정 하면 multiset 요소를 직접 참조할 수 없습니다.
 
@@ -232,7 +232,7 @@ Multiset 반복기는 연결 된 multiset 노드에 대 한 핸들을 저장 합
 
 ## <a name="members"></a>멤버
 
-## <a name="multisetbegin-stlclr"></a><a name="begin"></a>multiset:: begin (STL/CLR)
+## <a name="multisetbegin-stlclr"></a><a name="begin"></a> multiset:: begin (STL/CLR)
 
 제어되는 시퀀스의 시작을 지정합니다.
 
@@ -280,7 +280,7 @@ a b c
 *++begin() = b
 ```
 
-## <a name="multisetclear-stlclr"></a><a name="clear"></a>multiset:: clear (STL/CLR)
+## <a name="multisetclear-stlclr"></a><a name="clear"></a> multiset:: clear (STL/CLR)
 
 모든 요소를 제거합니다.
 
@@ -292,7 +292,7 @@ void clear();
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 [multiset:: erase (stl/clr)](../dotnet/multiset-erase-stl-clr.md) `(` [multiset:: begin (stl/clr)](../dotnet/multiset-begin-stl-clr.md) `(),` [multiset:: end (stl/clr)](../dotnet/multiset-end-stl-clr.md)를 효과적으로 호출 합니다 `())` . 이를 사용 하 여 제어 되는 시퀀스가 비어 있는지 확인 합니다.
+멤버 함수는 [multiset:: erase (stl/clr)](#erase) `(` [multiset:: begin (stl/clr)](#begin) `(),` [multiset:: end (stl/clr)](#end)를 효과적으로 호출 합니다 `())` . 이를 사용 하 여 제어 되는 시퀀스가 비어 있는지 확인 합니다.
 
 ### <a name="example"></a>예제
 
@@ -338,7 +338,7 @@ a b
 size() = 0
 ```
 
-## <a name="multisetconst_iterator-stlclr"></a><a name="const_iterator"></a>multiset:: const_iterator (STL/CLR)
+## <a name="multisetconst_iterator-stlclr"></a><a name="const_iterator"></a> multiset:: const_iterator (STL/CLR)
 
 제어되는 시퀀스에 대한 상수 반복기의 형식입니다.
 
@@ -380,7 +380,7 @@ int main()
 a b c
 ```
 
-## <a name="multisetconst_reference-stlclr"></a><a name="const_reference"></a>multiset:: const_reference (STL/CLR)
+## <a name="multisetconst_reference-stlclr"></a><a name="const_reference"></a> multiset:: const_reference (STL/CLR)
 
 요소에 대한 상수 참조의 형식입니다.
 
@@ -425,7 +425,7 @@ int main()
 a b c
 ```
 
-## <a name="multisetconst_reverse_iterator-stlclr"></a><a name="const_reverse_iterator"></a>multiset:: const_reverse_iterator (STL/CLR)
+## <a name="multisetconst_reverse_iterator-stlclr"></a><a name="const_reverse_iterator"></a> multiset:: const_reverse_iterator (STL/CLR)
 
 제어 되는 시퀀스에 대 한 상수 역방향 반복기의 형식입니다.
 
@@ -467,7 +467,7 @@ int main()
 c b a
 ```
 
-## <a name="multisetcount-stlclr"></a><a name="count"></a>multiset:: count (STL/CLR)
+## <a name="multisetcount-stlclr"></a><a name="count"></a> multiset:: count (STL/CLR)
 
 지정한 키와 일치하는 요소의 수를 찾습니다.
 
@@ -520,7 +520,7 @@ count(L'b') = 1
 count(L'C') = 0
 ```
 
-## <a name="multisetdifference_type-stlclr"></a><a name="difference_type"></a>multiset::d ifference_type (STL/CLR)
+## <a name="multisetdifference_type-stlclr"></a><a name="difference_type"></a> multiset::d ifference_type (STL/CLR)
 
 두 요소 사이의 부호가 있는 거리의 형식입니다.
 
@@ -575,7 +575,7 @@ end()-begin() = 3
 begin()-end() = -3
 ```
 
-## <a name="multisetempty-stlclr"></a><a name="empty"></a>multiset:: empty (STL/CLR)
+## <a name="multisetempty-stlclr"></a><a name="empty"></a> multiset:: empty (STL/CLR)
 
 요소가 있는지 여부를 테스트합니다.
 
@@ -587,7 +587,7 @@ bool empty();
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 빈 제어되는 시퀀스에 대해 true를 반환합니다. [Multiset:: size (STL/CLR)](../dotnet/multiset-size-stl-clr.md)와 동일 `() == 0` 합니다. Multiset이 비어 있는지 여부를 테스트 하는 데 사용 합니다.
+멤버 함수는 빈 제어되는 시퀀스에 대해 true를 반환합니다. [Multiset:: size (STL/CLR)](#size)와 동일 `() == 0` 합니다. Multiset이 비어 있는지 여부를 테스트 하는 데 사용 합니다.
 
 ### <a name="example"></a>예제
 
@@ -627,7 +627,7 @@ size() = 0
 empty() = True
 ```
 
-## <a name="multisetend-stlclr"></a><a name="end"></a>multiset:: end (STL/CLR)
+## <a name="multisetend-stlclr"></a><a name="end"></a> multiset:: end (STL/CLR)
 
 제어되는 시퀀스의 끝을 지정합니다.
 
@@ -676,7 +676,7 @@ a b c
 *--end() = c
 ```
 
-## <a name="multisetequal_range-stlclr"></a><a name="equal_range"></a>multiset:: equal_range (STL/CLR)
+## <a name="multisetequal_range-stlclr"></a><a name="equal_range"></a> multiset:: equal_range (STL/CLR)
 
 지정된 키와 일치하는 범위를 찾습니다.
 
@@ -693,7 +693,7 @@ cliext::pair<iterator, iterator> equal_range(key_type key);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 iterator: `cliext::pair<iterator, iterator>(` [: lower_bound (stl/clr)](../dotnet/multiset-lower-bound-stl-clr.md) `(key),` [multiset:: upper_bound (stl/clr)](../dotnet/multiset-upper-bound-stl-clr.md)쌍의 쌍을 반환 합니다 `(key))` . 이를 사용 하 여 제어 되는 시퀀스에서 현재 지정 된 키와 일치 하는 요소의 범위를 확인 합니다.
+멤버 함수는 iterator: `cliext::pair<iterator, iterator>(` [: lower_bound (stl/clr)](#lower_bound) `(key),` [multiset:: upper_bound (stl/clr)](#upper_bound)쌍의 쌍을 반환 합니다 `(key))` . 이를 사용 하 여 제어 되는 시퀀스에서 현재 지정 된 키와 일치 하는 요소의 범위를 확인 합니다.
 
 ### <a name="example"></a>예제
 
@@ -736,7 +736,7 @@ equal_range(L'x') empty = True
 b
 ```
 
-## <a name="multiseterase-stlclr"></a><a name="erase"></a>multiset:: erase (STL/CLR)
+## <a name="multiseterase-stlclr"></a><a name="erase"></a> multiset:: erase (STL/CLR)
 
 지정된 위치에 있는 요소를 제거합니다.
 
@@ -764,7 +764,7 @@ size_type erase(key_type key)
 
 ### <a name="remarks"></a>설명
 
-첫 번째 멤버 함수는 where가 가리키는 제어 *되*는 시퀀스의 요소를 제거 하 고, 요소를 제거 하 고 제거 된 요소 뒤에 남은 첫 번째 요소를 지정 하는 반복기를 반환 하거나, 이러한 요소가 존재 하지 않는 경우 [multiset:: end (STL/CLR)](../dotnet/multiset-end-stl-clr.md) 를 반환 합니다 `()` . 단일 요소를 제거 하는 데 사용 합니다.
+첫 번째 멤버 함수는 where가 가리키는 제어 *되*는 시퀀스의 요소를 제거 하 고, 요소를 제거 하 고 제거 된 요소 뒤에 남은 첫 번째 요소를 지정 하는 반복기를 반환 하거나, 이러한 요소가 존재 하지 않는 경우 [multiset:: end (STL/CLR)](#end) 를 반환 합니다 `()` . 단일 요소를 제거 하는 데 사용 합니다.
 
 두 번째 멤버 함수는 [,) 범위에서 제어 되는 시퀀스의 요소를 제거 `first` `last` 하 고, 제거 된 요소 뒤에 남은 첫 번째 요소를 지정 하는 반복기를 반환 하거나, `end()` 이러한 요소가 없는 경우을 반환 합니다. 연속 된 요소를 0 개 이상 제거 하는 데 사용 합니다.
 
@@ -820,7 +820,7 @@ erase(begin(), end()-1) = e
 size() = 1
 ```
 
-## <a name="multisetfind-stlclr"></a><a name="find"></a>multiset:: find (STL/CLR)
+## <a name="multisetfind-stlclr"></a><a name="find"></a> multiset:: find (STL/CLR)
 
 지정된 키와 일치하는 요소를 찾습니다.
 
@@ -837,7 +837,7 @@ iterator find(key_type key);
 
 ### <a name="remarks"></a>설명
 
-제어 되는 시퀀스의 요소 중 하나 이상이 *key*와 동일한 정렬을 사용 하는 경우 멤버 함수는 이러한 요소 중 하나를 지정 하는 반복기를 반환 합니다. 그렇지 않으면 [multiset:: end (STL/CLR)](../dotnet/multiset-end-stl-clr.md)를 반환 `()` 합니다. 이를 사용 하 여 제어 되는 시퀀스에서 현재 지정 된 키와 일치 하는 요소를 찾을 수 있습니다.
+제어 되는 시퀀스의 요소 중 하나 이상이 *key*와 동일한 정렬을 사용 하는 경우 멤버 함수는 이러한 요소 중 하나를 지정 하는 반복기를 반환 합니다. 그렇지 않으면 [multiset:: end (STL/CLR)](#end)를 반환 `()` 합니다. 이를 사용 하 여 제어 되는 시퀀스에서 현재 지정 된 키와 일치 하는 요소를 찾을 수 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -876,7 +876,7 @@ find b = b
 find C = False
 ```
 
-## <a name="multisetgeneric_container-stlclr"></a><a name="generic_container"></a>multiset:: generic_container (STL/CLR)
+## <a name="multisetgeneric_container-stlclr"></a><a name="generic_container"></a> multiset:: generic_container (STL/CLR)
 
 컨테이너에 대 한 제네릭 인터페이스의 형식입니다.
 
@@ -940,7 +940,7 @@ a b c d
 a b c d e
 ```
 
-## <a name="multisetgeneric_iterator-stlclr"></a><a name="generic_iterator"></a>multiset:: generic_iterator (STL/CLR)
+## <a name="multisetgeneric_iterator-stlclr"></a><a name="generic_iterator"></a> multiset:: generic_iterator (STL/CLR)
 
 컨테이너의 제네릭 인터페이스와 함께 사용할 반복기의 형식입니다.
 
@@ -996,7 +996,7 @@ a b c
 a
 ```
 
-## <a name="multisetgeneric_reverse_iterator-stlclr"></a><a name="generic_reverse_iterator"></a>multiset:: generic_reverse_iterator (STL/CLR)
+## <a name="multisetgeneric_reverse_iterator-stlclr"></a><a name="generic_reverse_iterator"></a> multiset:: generic_reverse_iterator (STL/CLR)
 
 컨테이너의 제네릭 인터페이스와 함께 사용할 역방향 반복기의 형식입니다.
 
@@ -1052,7 +1052,7 @@ a b c
 c
 ```
 
-## <a name="multisetgeneric_value-stlclr"></a><a name="generic_value"></a>multiset:: generic_value (STL/CLR)
+## <a name="multisetgeneric_value-stlclr"></a><a name="generic_value"></a> multiset:: generic_value (STL/CLR)
 
 컨테이너의 제네릭 인터페이스와 함께 사용할 요소의 형식입니다.
 
@@ -1106,7 +1106,7 @@ a b c
 a
 ```
 
-## <a name="multisetinsert-stlclr"></a><a name="insert"></a>multiset:: insert (STL/CLR)
+## <a name="multisetinsert-stlclr"></a><a name="insert"></a> multiset:: insert (STL/CLR)
 
 요소를 추가합니다.
 
@@ -1219,7 +1219,7 @@ a b b c x
 a b b c x y
 ```
 
-## <a name="multisetiterator-stlclr"></a><a name="iterator"></a>multiset:: iterator (STL/CLR)
+## <a name="multisetiterator-stlclr"></a><a name="iterator"></a> multiset:: iterator (STL/CLR)
 
 제어되는 시퀀스에 대한 반복기의 형식입니다.
 
@@ -1261,7 +1261,7 @@ int main()
 a b c
 ```
 
-## <a name="multisetkey_comp-stlclr"></a><a name="key_comp"></a>multiset:: key_comp (STL/CLR)
+## <a name="multisetkey_comp-stlclr"></a><a name="key_comp"></a> multiset:: key_comp (STL/CLR)
 
 두 키에 대 한 순서 지정 대리자를 복사 합니다.
 
@@ -1320,7 +1320,7 @@ compare(L'a', L'b') = False
 compare(L'b', L'a') = True
 ```
 
-## <a name="multisetkey_compare-stlclr"></a><a name="key_compare"></a>multiset:: key_compare (STL/CLR)
+## <a name="multisetkey_compare-stlclr"></a><a name="key_compare"></a> multiset:: key_compare (STL/CLR)
 
 두 키에 대 한 순서 지정 대리자입니다.
 
@@ -1380,7 +1380,7 @@ compare(L'a', L'b') = False
 compare(L'b', L'a') = True
 ```
 
-## <a name="multisetkey_type-stlclr"></a><a name="key_type"></a>multiset:: key_type (STL/CLR)
+## <a name="multisetkey_type-stlclr"></a><a name="key_type"></a> multiset:: key_type (STL/CLR)
 
 정렬 키의 형식입니다.
 
@@ -1425,7 +1425,7 @@ int main()
 a b c
 ```
 
-## <a name="multisetlower_bound-stlclr"></a><a name="lower_bound"></a>multiset:: lower_bound (STL/CLR)
+## <a name="multisetlower_bound-stlclr"></a><a name="lower_bound"></a> multiset:: lower_bound (STL/CLR)
 
 지정 된 키와 일치 하는 범위의 시작 부분을 찾습니다.
 
@@ -1442,7 +1442,7 @@ iterator lower_bound(key_type key);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 `X` 제어 되는 시퀀스에서 *키*와 동일한 순서가 지정 된 첫 번째 요소를 확인 합니다. 이러한 요소가 없으면 [multiset:: end (STL/CLR)](../dotnet/multiset-end-stl-clr.md)가 반환 `()` 되 고, 그렇지 않으면를 지정 하는 반복기를 반환 `X` 합니다. 이를 사용 하 여 제어 되는 시퀀스에서 현재 지정 된 키와 일치 하는 요소 시퀀스의 시작 부분을 찾을 수 있습니다.
+멤버 함수는 `X` 제어 되는 시퀀스에서 *키*와 동일한 순서가 지정 된 첫 번째 요소를 확인 합니다. 이러한 요소가 없으면 [multiset:: end (STL/CLR)](#end)가 반환 `()` 되 고, 그렇지 않으면를 지정 하는 반복기를 반환 `X` 합니다. 이를 사용 하 여 제어 되는 시퀀스에서 현재 지정 된 키와 일치 하는 요소 시퀀스의 시작 부분을 찾을 수 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -1482,7 +1482,7 @@ lower_bound(L'x')==end() = True
 *lower_bound(L'b') = b
 ```
 
-## <a name="multisetmake_value-stlclr"></a><a name="make_value"></a>multiset:: make_value (STL/CLR)
+## <a name="multisetmake_value-stlclr"></a><a name="make_value"></a> multiset:: make_value (STL/CLR)
 
 값 개체를 생성 합니다.
 
@@ -1528,7 +1528,7 @@ int main()
 a b c
 ```
 
-## <a name="multisetmultiset-stlclr"></a><a name="multiset"></a>multiset:: multiset (STL/CLR)
+## <a name="multisetmultiset-stlclr"></a><a name="multiset"></a> multiset:: multiset (STL/CLR)
 
 컨테이너 개체를 만듭니다.
 
@@ -1699,7 +1699,7 @@ c b a
 a b c
 ```
 
-## <a name="multisetoperator-stlclr"></a><a name="op_as"></a>multiset:: operator = (STL/CLR)
+## <a name="multisetoperator-stlclr"></a><a name="op_as"></a> multiset:: operator = (STL/CLR)
 
 제어되는 시퀀스를 바꿉니다.
 
@@ -1754,7 +1754,7 @@ a b c
 a b c
 ```
 
-## <a name="multisetrbegin-stlclr"></a><a name="rbegin"></a>multiset:: rbegin (STL/CLR)
+## <a name="multisetrbegin-stlclr"></a><a name="rbegin"></a> multiset:: rbegin (STL/CLR)
 
 제어되는 역방향 시퀀스의 시작을 지정합니다.
 
@@ -1802,7 +1802,7 @@ a b c
 *++rbegin() = b
 ```
 
-## <a name="multisetreference-stlclr"></a><a name="reference"></a>multiset:: reference (STL/CLR)
+## <a name="multisetreference-stlclr"></a><a name="reference"></a> multiset:: reference (STL/CLR)
 
 요소에 대한 참조의 형식입니다.
 
@@ -1847,7 +1847,7 @@ int main()
 a b c
 ```
 
-## <a name="multisetrend-stlclr"></a><a name="rend"></a>multiset:: rend (STL/CLR)
+## <a name="multisetrend-stlclr"></a><a name="rend"></a> multiset:: rend (STL/CLR)
 
 제어되는 역방향 시퀀스의 끝을 지정합니다.
 
@@ -1896,7 +1896,7 @@ a b c
 *--rend() = a
 ```
 
-## <a name="multisetreverse_iterator-stlclr"></a><a name="reverse_iterator"></a>multiset:: reverse_iterator (STL/CLR)
+## <a name="multisetreverse_iterator-stlclr"></a><a name="reverse_iterator"></a> multiset:: reverse_iterator (STL/CLR)
 
 제어되는 시퀀스에 대한 반대 반복기의 형식입니다.
 
@@ -1938,7 +1938,7 @@ int main()
 c b a
 ```
 
-## <a name="multisetsize-stlclr"></a><a name="size"></a>multiset:: size (STL/CLR)
+## <a name="multisetsize-stlclr"></a><a name="size"></a> multiset:: size (STL/CLR)
 
 요소 수를 계산합니다.
 
@@ -1950,7 +1950,7 @@ size_type size();
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 제어되는 시퀀스의 길이를 반환합니다. 이를 사용 하 여 현재 제어 되는 시퀀스에 있는 요소 수를 확인 합니다. 시퀀스의 크기가 0이 아니면 [multiset:: empty (STL/CLR)](../dotnet/multiset-empty-stl-clr.md)를 참조 하세요 `()` .
+멤버 함수는 제어되는 시퀀스의 길이를 반환합니다. 이를 사용 하 여 현재 제어 되는 시퀀스에 있는 요소 수를 확인 합니다. 시퀀스의 크기가 0이 아니면 [multiset:: empty (STL/CLR)](#empty)를 참조 하세요 `()` .
 
 ### <a name="example"></a>예제
 
@@ -1992,7 +1992,7 @@ size() = 0 after clearing
 size() = 2 after adding 2
 ```
 
-## <a name="multisetsize_type-stlclr"></a><a name="size_type"></a>multiset:: size_type (STL/CLR)
+## <a name="multisetsize_type-stlclr"></a><a name="size_type"></a> multiset:: size_type (STL/CLR)
 
 두 요소 사이의 부호가 있는 거리의 형식입니다.
 
@@ -2040,7 +2040,7 @@ a b c
 end()-begin() = 3
 ```
 
-## <a name="multisetswap-stlclr"></a><a name="swap"></a>multiset:: swap (STL/CLR)
+## <a name="multisetswap-stlclr"></a><a name="swap"></a> multiset:: swap (STL/CLR)
 
 두 컨테이너의 내용을 바꿉니다.
 
@@ -2108,7 +2108,7 @@ d e f
 a b c
 ```
 
-## <a name="multisetto_array-stlclr"></a><a name="to_array"></a>multiset:: to_array (STL/CLR)
+## <a name="multisetto_array-stlclr"></a><a name="to_array"></a> multiset:: to_array (STL/CLR)
 
 제어 되는 시퀀스를 새 배열에 복사 합니다.
 
@@ -2158,7 +2158,7 @@ a b c d
 a b c
 ```
 
-## <a name="multisetupper_bound-stlclr"></a><a name="upper_bound"></a>multiset:: upper_bound (STL/CLR)
+## <a name="multisetupper_bound-stlclr"></a><a name="upper_bound"></a> multiset:: upper_bound (STL/CLR)
 
 지정 된 키와 일치 하는 범위의 끝을 찾습니다.
 
@@ -2175,7 +2175,7 @@ iterator upper_bound(key_type key);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 `X` 제어 되는 시퀀스에서 *키*와 동일한 순서가 지정 된 마지막 요소를 확인 합니다. 이러한 요소가 없거나 `X` 가 제어 되는 시퀀스의 마지막 요소 이면 [multiset:: END (STL/CLR)](../dotnet/multiset-end-stl-clr.md)가 반환 되 고, `()` 그렇지 않은 경우에는에서 첫 번째 요소를 지정 하는 반복기를 반환 합니다 `X` . 이를 사용 하 여 제어 되는 시퀀스에서 현재 지정 된 키와 일치 하는 요소 시퀀스의 끝을 찾을 수 있습니다.
+멤버 함수는 `X` 제어 되는 시퀀스에서 *키*와 동일한 순서가 지정 된 마지막 요소를 확인 합니다. 이러한 요소가 없거나 `X` 가 제어 되는 시퀀스의 마지막 요소 이면 [multiset:: END (STL/CLR)](#end)가 반환 되 고, `()` 그렇지 않은 경우에는에서 첫 번째 요소를 지정 하는 반복기를 반환 합니다 `X` . 이를 사용 하 여 제어 되는 시퀀스에서 현재 지정 된 키와 일치 하는 요소 시퀀스의 끝을 찾을 수 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -2215,7 +2215,7 @@ upper_bound(L'x')==end() = True
 *upper_bound(L'b') = c
 ```
 
-## <a name="multisetvalue_comp-stlclr"></a><a name="value_comp"></a>multiset:: value_comp (STL/CLR)
+## <a name="multisetvalue_comp-stlclr"></a><a name="value_comp"></a> multiset:: value_comp (STL/CLR)
 
 두 요소 값에 대 한 순서 지정 대리자를 복사 합니다.
 
@@ -2259,7 +2259,7 @@ compare(L'a', L'b') = True
 compare(L'b', L'a') = False
 ```
 
-## <a name="multisetvalue_compare-stlclr"></a><a name="value_compare"></a>multiset:: value_compare (STL/CLR)
+## <a name="multisetvalue_compare-stlclr"></a><a name="value_compare"></a> multiset:: value_compare (STL/CLR)
 
 두 요소 값에 대 한 순서 지정 대리자입니다.
 
@@ -2304,7 +2304,7 @@ compare(L'a', L'b') = True
 compare(L'b', L'a') = False
 ```
 
-## <a name="multisetvalue_type-stlclr"></a><a name="value_type"></a>multiset:: value_type (STL/CLR)
+## <a name="multisetvalue_type-stlclr"></a><a name="value_type"></a> multiset:: value_type (STL/CLR)
 
 요소의 형식입니다.
 
@@ -2349,7 +2349,7 @@ int main()
 a b c
 ```
 
-## <a name="operator-multiset-stlclr"></a><a name="op_neq"></a>operator! = (multiset) (STL/CLR)
+## <a name="operator-multiset-stlclr"></a><a name="op_neq"></a> operator! = (multiset) (STL/CLR)
 
 목록이 같지 않음 비교입니다.
 
@@ -2419,7 +2419,7 @@ a b d
 [a b c] != [a b d] is True
 ```
 
-## <a name="operatorlt-multiset-stlclr"></a><a name="op_lt"></a>연산자 &lt; (multiset) (STL/CLR)
+## <a name="operatorlt-multiset-stlclr"></a><a name="op_lt"></a> 연산자 &lt; (multiset) (STL/CLR)
 
 비교 보다 작음 목록입니다.
 
@@ -2489,7 +2489,7 @@ a b d
 [a b c] < [a b d] is True
 ```
 
-## <a name="operatorlt-multiset-stlclr"></a><a name="op_lteq"></a>operator &lt; = (multiset) (STL/CLR)
+## <a name="operatorlt-multiset-stlclr"></a><a name="op_lteq"></a> operator &lt; = (multiset) (STL/CLR)
 
 보다 작거나 같음 비교를 나열 합니다.
 
@@ -2559,7 +2559,7 @@ a b d
 [a b d] <= [a b c] is False
 ```
 
-## <a name="operator-multiset-stlclr"></a><a name="op_eq"></a>operator = = (multiset) (STL/CLR)
+## <a name="operator-multiset-stlclr"></a><a name="op_eq"></a> operator = = (multiset) (STL/CLR)
 
 동일한 비교를 나열 합니다.
 
@@ -2629,7 +2629,7 @@ a b d
 [a b c] == [a b d] is False
 ```
 
-## <a name="operatorgt-multiset-stlclr"></a><a name="op_gt"></a>연산자 &gt; (multiset) (STL/CLR)
+## <a name="operatorgt-multiset-stlclr"></a><a name="op_gt"></a> 연산자 &gt; (multiset) (STL/CLR)
 
 비교 보다 큼을 나열 합니다.
 
@@ -2699,7 +2699,7 @@ a b d
 [a b d] > [a b c] is True
 ```
 
-## <a name="operatorgt-multiset-stlclr"></a><a name="op_gteq"></a>operator &gt; = (multiset) (STL/CLR)
+## <a name="operatorgt-multiset-stlclr"></a><a name="op_gteq"></a> operator &gt; = (multiset) (STL/CLR)
 
 보다 크거나 같음 비교를 나열 합니다.
 

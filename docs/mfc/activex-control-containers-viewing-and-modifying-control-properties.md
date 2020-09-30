@@ -8,12 +8,12 @@ helpviewer_keywords:
 - ActiveX controls [MFC], properties
 - controls [MFC], properties
 ms.assetid: 14ce5152-742b-4e0d-a9ab-c7b456e32918
-ms.openlocfilehash: b0ca43f59cf70dea1348f22a08cfb4e89b45c3dd
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 052da13619fae5004ee573bd4957266a545d8335
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84617365"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91507919"
 ---
 # <a name="activex-control-containers-viewing-and-modifying-control-properties"></a>ActiveX 컨트롤 컨테이너: 컨트롤 속성 보기 및 수정
 
@@ -31,7 +31,7 @@ ActiveX 컨트롤 컨테이너 애플리케이션에 포함된 컨트롤이 사�
 
 1. 기본 대화 상자 템플릿을 엽니다.
 
-1. **Activex 컨트롤 삽입** 대화 상자를 사용 하 여 activex 컨트롤을 삽입 합니다. 자세한 내용은 [ActiveX 컨트롤 보기 및 대화 상자에 추가](../windows/viewing-and-adding-activex-controls-to-a-dialog-box.md)를 참조 하세요.
+1. **Activex 컨트롤 삽입** 대화 상자를 사용 하 여 activex 컨트롤을 삽입 합니다. 자세한 내용은 [ActiveX 컨트롤 보기 및 대화 상자에 추가](../windows/adding-editing-or-deleting-controls.md)를 참조 하세요.
 
 1. 대화 상자에서 ActiveX 컨트롤을 선택합니다.
 

@@ -35,12 +35,12 @@ helpviewer_keywords:
 - remainderl
 - remainder
 ms.assetid: 5f721fb3-8b78-4597-9bc0-ca9bcd1f1d0e
-ms.openlocfilehash: ef2b326bef2288b52dba8988749e030ff0b46077
-ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
+ms.openlocfilehash: 288d6b0d373a5b318a139b030181c671e2c01048
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89556011"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91507577"
 ---
 # <a name="remainder-remainderf-remainderl"></a>remainder, remainderf, remainderl
 
@@ -82,7 +82,7 @@ C + +에서는 오버 로드를 허용 하므로 또는 값을 사용 하 고 �
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|필수 헤더(C)|필수 헤더(C++)|
+|함수|필수 헤더(C)|필수 헤더(C++)|
 |--------------|---------------------|-|
 |**나머지**, **remainderf**, **remainderl**|\<math.h>|\<cmath> 또는 \<math.h>|
 |**나머지** 매크로 | \<tgmath.h> ||
@@ -114,7 +114,7 @@ The remainder of -10.00 / 3.00 is -1.000000
 ## <a name="see-also"></a>참고 항목
 
 [부동 소수점 지원](../../c-runtime-library/floating-point-support.md)\
-[ldiv, lldiv](ldiv-lldiv.md)\
+[ldiv, lldiv](./div.md)\
 [imaxdiv](imaxdiv.md)\
 [fmod, fmodf](fmod-fmodf.md)\
 [remquo, remquof, remquol](remquo-remquof-remquol.md)

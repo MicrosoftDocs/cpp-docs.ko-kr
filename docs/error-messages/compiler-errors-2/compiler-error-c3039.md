@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3039
 ms.assetid: 02776f16-f57a-4ffd-b7f7-9c696b633e08
-ms.openlocfilehash: 344fd32e66881c2529ddb1f9185c25752f0a736c
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: ea6efbfa95992b04ade5496e8c7253ee87319a93
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74754981"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91508367"
 ---
 # <a name="compiler-error-c3039"></a>컴파일러 오류 C3039
 
 'var': OpenMP 'for' 문의 인덱스 변수는 환산(reduction) 변수가 될 수 없습니다.
 
-인덱스 변수는 암시적으로 전용 변수이므로 [환산(reduction)](../../parallel/openmp/reference/reduction.md) 절의 바깥쪽 [병렬](../../parallel/openmp/reference/parallel.md) 지시문에 사용할 수 없습니다.
+인덱스 변수는 암시적으로 전용 변수이므로 [환산(reduction)](../../parallel/openmp/reference/openmp-clauses.md#reduction) 절의 바깥쪽 [병렬](../../parallel/openmp/reference/openmp-directives.md#parallel) 지시문에 사용할 수 없습니다.
 
 ## <a name="example"></a>예제
 

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - ActiveX controls [MFC], property pages
 - MFC ActiveX controls [MFC], property pages
 ms.assetid: fcf7e119-9f29-41a9-908d-e9b1607e08af
-ms.openlocfilehash: 33fd297ee509b341d39d9db21af54a3988f6256e
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: a749c5d8d676ac85c3c2085eb041328aff599ab8
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618284"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91508871"
 ---
 # <a name="mfc-activex-controls-adding-another-custom-property-page"></a>MFC ActiveX 컨트롤: 다른 사용자 지정 속성 페이지 추가
 
@@ -55,7 +55,7 @@ ActiveX 컨트롤에서 속성 페이지를 사용 하는 방법에 대 한 자�
 
 1. 바로 가기 메뉴에서 **추가** 를 클릭 한 다음 **클래스 추가**를 클릭 합니다.
 
-   그러면 [클래스 추가](../ide/add-class-dialog-box.md) 대화 상자가 열립니다.
+   그러면 [클래스 추가](../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) 대화 상자가 열립니다.
 
 1. **MFC 클래스** 템플릿을 두 번 클릭 합니다.
 
