@@ -36,12 +36,12 @@ helpviewer_keywords:
 - GetRowset method
 - GetSchemas method
 ms.assetid: bd7bf0d7-a1c6-4afa-88e3-cfdbdf560703
-ms.openlocfilehash: eea0ebeaf83b9203cf57f7b35fe3dd1ec2d63d81
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d78aa23469cc0fa94498f93e9a6975e0a7c827e9
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844004"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509034"
 ---
 # <a name="idbschemarowsetimpl-class"></a>IDBSchemaRowsetImpl 클래스
 
@@ -75,16 +75,16 @@ class ATL_NO_VTABLE IDBSchemaRowsetImpl : public IDBSchemaRowset
 
 ### <a name="interface-methods"></a>인터페이스 메서드
 
-| Name | 설명 |
+| 속성 | 설명 |
 |-|-|
 |[GetRowset](#getrowset)|스키마 행 집합을 반환합니다.|
-|[GetSchemas](#getschemas)|[IDBSchemaRowsetImpl::GetRowset](../../data/oledb/idbschemarowsetimpl-getrowset.md)에서 액세스할 수 있는 스키마 행 집합 목록을 반환합니다.|
+|[GetSchemas](#getschemas)|[IDBSchemaRowsetImpl::GetRowset](#getrowset)에서 액세스할 수 있는 스키마 행 집합 목록을 반환합니다.|
 
 ## <a name="remarks"></a>설명
 
-이 클래스는 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) 인터페이스 및 템플릿화된 작성자 함수 [CreateSchemaRowset](../../data/oledb/idbschemarowsetimpl-createschemarowset.md)를 구현합니다.
+이 클래스는 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) 인터페이스 및 템플릿화된 작성자 함수 [CreateSchemaRowset](#createschemarowset)를 구현합니다.
 
-OLE DB는 스키마 행 집합을 사용하여 공급자의 데이터에 대한 데이터를 반환합니다. 이러한 데이터를 흔히 "메타데이터"라고 합니다. 기본적으로 공급자는 `DBSCHEMA_TABLES` `DBSCHEMA_COLUMNS` `DBSCHEMA_PROVIDER_TYPES` *OLE DB 프로그래머 참조*에서 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) 에 설명 된 대로 항상, 및를 지원 해야 합니다. 스키마 행 집합은 스키마 맵에 지정됩니다. 스키마 맵 항목에 대한 자세한 내용은 [SCHEMA_ENTRY](../../data/oledb/schema-entry.md)를 참조하세요.
+OLE DB는 스키마 행 집합을 사용하여 공급자의 데이터에 대한 데이터를 반환합니다. 이러한 데이터를 흔히 "메타데이터"라고 합니다. 기본적으로 공급자는 `DBSCHEMA_TABLES` `DBSCHEMA_COLUMNS` `DBSCHEMA_PROVIDER_TYPES` *OLE DB 프로그래머 참조*에서 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) 에 설명 된 대로 항상, 및를 지원 해야 합니다. 스키마 행 집합은 스키마 맵에 지정됩니다. 스키마 맵 항목에 대한 자세한 내용은 [SCHEMA_ENTRY](./macros-for-ole-db-provider-templates.md#schema_entry)를 참조하세요.
 
 ATL 개체 마법사의 OLE DB 공급자 마법사는 프로젝트의 스키마 행 집합에 대한 코드를 자동으로 생성합니다. 기본적으로 마법사는 앞에서 언급 한 필수 스키마 행 집합을 지원 합니다. ATL 개체 마법사를 사용 하 여 소비자를 만드는 경우 마법사는 스키마 행 집합을 사용 하 여 올바른 데이터를 공급자에 바인딩합니다. 올바른 메타데이터를 제공하는 스키마 행 집합을 구현하지 않은 경우 마법사는 올바른 데이터를 바인딩하지 않습니다.
 
@@ -112,13 +112,13 @@ HRESULT CheckRestrictions(REFGUID rguidSchema,
 [in] 스키마 행 집합에 대해 소비자가 전달한 제한 수입니다.
 
 *rgRestrictions*<br/>
-[in] 설정할 제한 값의 길이 *cRestrictions* 배열입니다. 자세한 내용은 [Setrestrictions](../../data/oledb/idbschemarowsetimpl-setrestrictions.md) *rgRestrictions* 매개 변수에 대 한 설명을 참조 하세요.
+[in] 설정할 제한 값의 길이 *cRestrictions* 배열입니다. 자세한 내용은 [Setrestrictions](#setrestrictions) *rgRestrictions* 매개 변수에 대 한 설명을 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
 `CheckRestrictions` 를 사용하여 스키마 행 집합에 대해 제한의 유효성을 검사할 수 있습니다. `DBSCHEMA_TABLES`, `DBSCHEMA_COLUMNS` 및 스키마 행 집합에 대 한 제한을 검사 `DBSCHEMA_PROVIDER_TYPES` 합니다. 이를 호출 하 여 소비자의 호출이 올바른지 확인 `IDBSchemaRowset::GetRowset` 합니다. 위에 나열된 것과 다른 스키마 행 집합을 지원하려면 이 작업을 수행할 사용자 고유의 함수를 만들어야 합니다.
 
-`CheckRestrictions` 소비자가 올바른 제한 및 공급자가 지 원하는 올바른 제한 유형 (예: 문자열의 VT_BSTR)을 사용 하 여 [Getrowset](../../data/oledb/idbschemarowsetimpl-getrowset.md) 을 호출 하 고 있는지 여부를 확인 합니다. 또한 올바른 개수의 제한이 지원되는지 확인합니다. 기본적으로 `CheckRestrictions` 는 [SetRestrictions](../../data/oledb/idbschemarowsetimpl-setrestrictions.md) 호출을 통해 지정된 행 집합에서 지원되는 제한을 공급자에 요청합니다. 그런 다음 공급자가 지원하는 제한과 소비자의 제한을 비교하여 성공 또는 실패를 반환합니다.
+`CheckRestrictions` 소비자가 올바른 제한 및 공급자가 지 원하는 올바른 제한 유형 (예: 문자열의 VT_BSTR)을 사용 하 여 [Getrowset](#getrowset) 을 호출 하 고 있는지 여부를 확인 합니다. 또한 올바른 개수의 제한이 지원되는지 확인합니다. 기본적으로 `CheckRestrictions` 는 [SetRestrictions](#setrestrictions) 호출을 통해 지정된 행 집합에서 지원되는 제한을 공급자에 요청합니다. 그런 다음 공급자가 지원하는 제한과 소비자의 제한을 비교하여 성공 또는 실패를 반환합니다.
 
 스키마 행 집합에 대 한 자세한 내용은 Windows SDK *OLE DB 프로그래머 참조* 에서 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) 를 참조 하세요.
 
@@ -199,7 +199,7 @@ void SetRestrictions(ULONG cRestrictions,
 
 ### <a name="remarks"></a>설명
 
-`IDBSchemaRowset`개체는 `SetRestrictions` 를 호출 하 여 특정 스키마 행 집합에서 지원 되는 제한 사항을 확인 합니다 .이는 캐스팅 되지 않은 된 포인터를 통해 [getschemas](../../data/oledb/idbschemarowsetimpl-getschemas.md) 에 의해 호출 됩니다. 제한을 통해 소비자는 일치하는 행만 페치할 수 있습니다. 예를 들어 "MyTable" 테이블의 모든 열을 찾을 수 있습니다. 제한은 선택 사항이므로 지원되는 제한이 없는 경우(기본값) 항상 모든 데이터가 반환됩니다.
+`IDBSchemaRowset`개체는 `SetRestrictions` 를 호출 하 여 특정 스키마 행 집합에서 지원 되는 제한 사항을 확인 합니다 .이는 캐스팅 되지 않은 된 포인터를 통해 [getschemas](#getschemas) 에 의해 호출 됩니다. 제한을 통해 소비자는 일치하는 행만 페치할 수 있습니다. 예를 들어 "MyTable" 테이블의 모든 열을 찾을 수 있습니다. 제한은 선택 사항이므로 지원되는 제한이 없는 경우(기본값) 항상 모든 데이터가 반환됩니다.
 
 이 메서드의 기본 구현에서는 *rgRestrictions* 배열 요소를 0으로 설정 합니다. 기본값 이외의 다른 제한을 설정하도록 세션 클래스의 기본값을 재정의합니다.
 
@@ -254,13 +254,13 @@ STDMETHOD (GetRowset)(IUnknown *pUnkOuter,
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 사용하려면 사용자에게 세션 클래스의 스키마 맵이 있어야 합니다. `GetRowset` *RguidSchema* 매개 변수가 맵 항목 guid 중 하 나와 같은 경우 스키마 맵 정보를 사용 하 여 지정 된 행 집합 개체를 만듭니다. 맵 항목에 대한 설명은 [SCHEMA_ENTRY](../../data/oledb/schema-entry.md) 를 참조하세요.
+이 메서드를 사용하려면 사용자에게 세션 클래스의 스키마 맵이 있어야 합니다. `GetRowset` *RguidSchema* 매개 변수가 맵 항목 guid 중 하 나와 같은 경우 스키마 맵 정보를 사용 하 여 지정 된 행 집합 개체를 만듭니다. 맵 항목에 대한 설명은 [SCHEMA_ENTRY](./macros-for-ole-db-provider-templates.md#schema_entry) 를 참조하세요.
 
 Windows SDK에서 [IDBSchemaRowset:: GetRowset](/previous-versions/windows/desktop/ms722634(v=vs.85)) 를 참조 하세요.
 
 ## <a name="idbschemarowsetimplgetschemas"></a><a name="getschemas"></a> IDBSchemaRowsetImpl:: GetSchemas
 
-[IDBSchemaRowsetImpl::GetRowset](../../data/oledb/idbschemarowsetimpl-getrowset.md)에서 액세스할 수 있는 스키마 행 집합 목록을 반환합니다.
+[IDBSchemaRowsetImpl::GetRowset](#getrowset)에서 액세스할 수 있는 스키마 행 집합 목록을 반환합니다.
 
 ### <a name="syntax"></a>구문
 
@@ -291,5 +291,5 @@ STDMETHOD (GetSchema s )(ULONG * pcSchemas,
 
 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md)<br/>
 [스키마 행 집합 지원](../../data/oledb/supporting-schema-rowsets.md)<br/>
-[SCHEMA_ENTRY](../../data/oledb/schema-entry.md)<br/>
+[SCHEMA_ENTRY](./macros-for-ole-db-provider-templates.md#schema_entry)<br/>
 [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider)

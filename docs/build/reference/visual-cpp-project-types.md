@@ -10,39 +10,39 @@ helpviewer_keywords:
 - applications [C++], projects
 - C++ projects, types
 ms.assetid: 7337987e-1e7b-4120-9a4b-94f0401f15e7
-ms.openlocfilehash: f322d16bbbe91d229fb8efdfb5f2d35cb0a686ae
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: e929142181ebd849c820ad50e5ce64c2d4f5ab44
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80079218"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509325"
 ---
 # <a name="c-project-templates"></a>C++ 프로젝트 템플릿
 
-Visual Studio 프로젝트 템플릿은 만들려는 프로젝트 종류에 적절 한 소스 코드 파일, 컴파일러 옵션, 메뉴, 도구 모음, 아이콘, 참조 및 `#include` 문을 생성 합니다. Visual Studio에는 여러 종류 C++ 의 프로젝트 템플릿이 포함 되어 있으며, 프로젝트를 만들 때 프로젝트를 사용자 지정할 수 있도록 다양 한 마법사를 제공 합니다. 프로젝트를 만든 직후에 애플리케이션을 빌드하고 실행할 수 있으므로, 애플리케이션을 개발하면서 간간이 빌드하는 것이 좋습니다.
+Visual Studio 프로젝트 템플릿은 만들려는 프로젝트 종류에 적절 한 소스 코드 파일, 컴파일러 옵션, 메뉴, 도구 모음, 아이콘, 참조 및 `#include` 문을 생성 합니다. Visual Studio에는 다양 한 종류의 c + + 프로젝트 템플릿이 포함 되어 있으며, 프로젝트를 만들 때 프로젝트를 사용자 지정할 수 있도록 다양 한 마법사를 제공 합니다. 프로젝트를 만든 직후에 애플리케이션을 빌드하고 실행할 수 있으므로, 애플리케이션을 개발하면서 간간이 빌드하는 것이 좋습니다.
 
 > [!NOTE]
 > C++ 프로젝트 템플릿을 사용하여 C 언어 프로젝트를 만들 수 있습니다. 생성된 프로젝트에서 파일 이름 확장명이 .cpp인 파일을 찾아 확장명을 .c로 변경합니다. 그런 다음 솔루션이 아닌 프로젝트의 **프로젝트 속성** 페이지에서 **구성 속성**, **C/C++** 를 차례로 확장하고 **고급**을 선택합니다. **컴파일 옵션** 설정을 **C 코드로 컴파일(/TC)** 로 변경합니다.
 
 ## <a name="project-templates"></a>프로젝트 템플릿
 
-Visual Studio에 포함된 프로젝트 템플릿은 설치한 제품 버전 및 워크로드에 따라 다릅니다. 워크 로드를 사용 하 여 C++ 데스크톱 개발을 설치한 경우 Visual Studio에 C++ 는 이러한 프로젝트 템플릿이 있습니다.
+Visual Studio에 포함된 프로젝트 템플릿은 설치한 제품 버전 및 워크로드에 따라 다릅니다. C + +를 사용한 데스크톱 개발 워크 로드를 설치한 경우 Visual Studio에는 이러한 c + + 프로젝트 템플릿이 있습니다.
 
-### <a name="windows-desktop"></a>Windows Desktop
+### <a name="windows-desktop"></a>Windows 데스크톱
 
 |프로젝트 템플릿|설명|
 |----------------------|-----------------------------|
-|[Windows 콘솔 애플리케이션](../../windows/creating-a-console-application.md)|Windows 콘솔 애플리케이션을 만드는 프로젝트입니다.|
+|[Windows 콘솔 애플리케이션](../../windows/overview-of-windows-programming-in-cpp.md)|Windows 콘솔 애플리케이션을 만드는 프로젝트입니다.|
 |[Windows 데스크톱 애플리케이션](../../windows/walkthrough-creating-windows-desktop-applications-cpp.md)|Windows 데스크톱(Win32) 애플리케이션을 만드는 프로젝트입니다.|
 |[동적 연결 라이브러리](../walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)|DLL(동적 연결 라이브러리)을 만드는 프로젝트입니다.|
-|[정적 라이브러리](../../windows/walkthrough-creating-and-using-a-static-library-cpp.md)|정적 라이브러리(LIB)를 만드는 프로젝트입니다.|
+|[정적 라이브러리](../walkthrough-creating-and-using-a-static-library-cpp.md)|정적 라이브러리(LIB)를 만드는 프로젝트입니다.|
 |[Windows 데스크톱 마법사](../../windows/windows-desktop-wizard.md)|추가 옵션을 사용하여 Windows 데스크톱 애플리케이션 및 라이브러리를 만드는 마법사입니다.|
 
 ### <a name="general"></a>일반
 
 |프로젝트 템플릿|설명|
 |----------------------|-----------------------------|
-|빈 프로젝트|애플리케이션, 라이브러리 또는 DLL을 만드는 빈 프로젝트입니다. 모든 코드 또는 필요한 리소스를 추가해야 합니다.|
+|빈 프로젝트|애플리케이션, 라이브러리 또는 DLL을 만드는 빈 프로젝트입니다. 필요한 모든 코드 또는 리소스를 추가해야 합니다.|
 |[메이크파일 프로젝트](creating-a-makefile-project.md)|Visual Studio 프로젝트에서 Windows 메이크파일을 래핑하는 프로젝트입니다. Visual Studio에서 메이크파일을 있는 그대로 열려면 [폴더 열기](../open-folder-projects-cpp.md)를 사용 합니다.|
 |공유 항목 프로젝트|여러 프로젝트 간에 코드 파일이 나 리소스 파일을 공유 하는 데 사용 되는 프로젝트입니다. 이 프로젝트 형식은 실행 파일을 생성 하지 않습니다.|
 
@@ -76,7 +76,7 @@ C++에서 Windows 유니버설 앱의 개요는 [유니버설 Windows 앱(C++)](
 
 |프로젝트 템플릿|설명|
 |----------------------|-----------------------------|
-|새 응용 프로그램|미리 정의된 컨트롤 또는 레이아웃이 없는 단일 페이지 UWP(유니버설 Windows 플랫폼) 앱용 프로젝트입니다.|
+|빈 앱|미리 정의된 컨트롤 또는 레이아웃이 없는 단일 페이지 UWP(유니버설 Windows 플랫폼) 앱용 프로젝트입니다.|
 |DirectX 11 앱|DirectX 11을 사용하는 유니버설 Windows 플랫폼 앱용 프로젝트입니다.|
 |DirectX 12 앱|DirectX 12를 사용하는 유니버설 Windows 플랫폼 앱용 프로젝트입니다.|
 |DirectX 11 및 XAML 앱|DirectX 11 및 XAML을 사용하는 유니버설 Windows 플랫폼 앱용 프로젝트입니다.|

@@ -7,28 +7,28 @@ helpviewer_keywords:
 - OLE DB providers, schema rowsets
 - OLE DB, schema rowsets
 ms.assetid: 71c5e14b-6e33-4502-a2d9-a1dc6d6e9ba0
-ms.openlocfilehash: 1ad1a91e8a79238eee773d92a756b0238e8901d5
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
-ms.translationtype: HT
+ms.openlocfilehash: f87e6cc0a307eed4f00f1fb90ac16a840a1759af
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65707499"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509461"
 ---
 # <a name="supporting-schema-rowsets"></a>스키마 행 집합 지원
 
-스키마 행 집합을 사용하면 소비자가 기본 구조 또는 스키마를 몰라도 데이터 저장소에 대한 정보를 가져올 수 있습니다. 예를 들어 데이터 저장소의 테이블이 사용자 정의 계층 구조로 구성되었을 수 있으므로 읽지 않으면 스키마를 알 수가 없습니다. 또 다른 예로, Visual C++ 마법사에서는 스키마 행 집합을 사용하여 소비자의 접근자를 생성합니다. 소비자가 이 작업을 수행할 수 있도록, 공급자의 세션 개체는 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) 인터페이스에 메서드를 공개합니다. Visual C++ 애플리케이션에서 [IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md) 클래스를 사용하여 `IDBSchemaRowset`를 구현합니다.
+스키마 행 집합을 사용하면 소비자가 기본 구조 또는 스키마를 몰라도 데이터 저장소에 대한 정보를 가져올 수 있습니다. 예를 들어 데이터 저장소의 테이블이 사용자 정의 계층 구조로 구성되었을 수 있으므로 읽지 않으면 스키마를 알 수가 없습니다. 또 다른 예로 Visual C++ 마법사는 스키마 행 집합을 사용 하 여 소비자에 대 한 접근자를 생성 합니다. 소비자가이 작업을 수행할 수 있도록 공급자의 세션 개체가 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) 인터페이스에 메서드를 노출 합니다. Visual C++ 애플리케이션에서 [IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md) 클래스를 사용하여 `IDBSchemaRowset`를 구현합니다.
 
 `IDBSchemaRowsetImpl`에서는 다음 메서드를 지원합니다.
 
-- [CheckRestrictions](../../data/oledb/idbschemarowsetimpl-checkrestrictions.md) - 스키마 행 집합에 대한 제한의 유효성을 검사합니다.
+- [CheckRestrictions](./idbschemarowsetimpl-class.md#checkrestrictions) - 스키마 행 집합에 대한 제한의 유효성을 검사합니다.
 
-- [CreateSchemaRowset](../../data/oledb/idbschemarowsetimpl-createschemarowset.md) - 템플릿 매개 변수에 지정된 개체의 COM 개체 작성자 함수를 구현합니다.
+- [CreateSchemaRowset](./idbschemarowsetimpl-class.md#createschemarowset) - 템플릿 매개 변수에 지정된 개체의 COM 개체 작성자 함수를 구현합니다.
 
-- [SetRestrictions](../../data/oledb/idbschemarowsetimpl-setrestrictions.md) - 특정 스키마 행 집합에서 지원되는 제한을 지정합니다.
+- [SetRestrictions](./idbschemarowsetimpl-class.md#setrestrictions) - 특정 스키마 행 집합에서 지원되는 제한을 지정합니다.
 
-- [IDBSchemaRowset::GetRowset](../../data/oledb/idbschemarowsetimpl-getrowset.md) - 스키마 행 집합을 반환합니다(인터페이스에서 상속됨).
+- [IDBSchemaRowset::GetRowset](./idbschemarowsetimpl-class.md#getrowset) - 스키마 행 집합을 반환합니다(인터페이스에서 상속됨).
 
-- [GetSchemas](../../data/oledb/idbschemarowsetimpl-getschemas.md) - `IDBSchemaRowsetImpl::GetRowset`에서 액세스할 수 있는 스키마 행 집합 목록을 반환합니다(인터페이스에서 상속됨).
+- [GetSchemas](./idbschemarowsetimpl-class.md#getschemas) - `IDBSchemaRowsetImpl::GetRowset`에서 액세스할 수 있는 스키마 행 집합 목록을 반환합니다(인터페이스에서 상속됨).
 
 ## <a name="atl-ole-db-provider-wizard-support"></a>ATL OLE DB 공급자 마법사 지원
 
@@ -94,7 +94,7 @@ class CUpdateSessionTRSchemaRowset :
                     ULONG cRestrictions, const VARIANT* rgRestrictions)
 ```
 
-`CUpdateSession`은 `IDBSchemaRowsetImpl`에서 상속받으므로 모든 제한 처리 메서드가 있습니다. `CSchemaRowsetImpl`을 사용하여 위의 스키마 맵에 나열된 세 개의 자식 클래스(`CUpdateSessionTRSchemaRowset`, `CUpdateSessionColSchemaRowset`, `CUpdateSessionPTSchemaRowset`)를 선언합니다. 각 자식 클래스에는 해당 제한 집합(검색 조건)을 처리하는 `Execute` 메서드가 있습니다. 각 `Execute` 메서드는 *cRestrictions* 및 *rgRestrictions* 매개 변수의 값을 비교합니다. 이러한 매개 변수에 대한 자세한 내용은 [SetRestrictions](../../data/oledb/idbschemarowsetimpl-setrestrictions.md)를 참조하세요.
+`CUpdateSession`은 `IDBSchemaRowsetImpl`에서 상속받으므로 모든 제한 처리 메서드가 있습니다. `CSchemaRowsetImpl`을 사용하여 위의 스키마 맵에 나열된 세 개의 자식 클래스(`CUpdateSessionTRSchemaRowset`, `CUpdateSessionColSchemaRowset`, `CUpdateSessionPTSchemaRowset`)를 선언합니다. 각 자식 클래스에는 해당 제한 집합(검색 조건)을 처리하는 `Execute` 메서드가 있습니다. 각 `Execute` 메서드는 *cRestrictions* 및 *rgRestrictions* 매개 변수의 값을 비교합니다. 이러한 매개 변수에 대한 자세한 내용은 [SetRestrictions](./idbschemarowsetimpl-class.md#setrestrictions)를 참조하세요.
 
 특정 스키마 행 집합에 해당하는 제한에 대한 자세한 내용은 Windows SDK의 **OLE DB 프로그래머 참조**에서 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85))의 스키마 행 집합 GUID 표를 참조하세요.
 
@@ -115,7 +115,7 @@ class CUpdateSessionTRSchemaRowset :
 
 ### <a name="example"></a>예제
 
-이 코드는 [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) 샘플에서 가져온 것입니다. `UpdatePv`에서는 세 가지 필수 스키마 행 집합인 DBSCHEMA_TABLES, DBSCHEMA_COLUMNS, DBSCHEMA_PROVIDER_TYPES를 지원합니다. 공급자에서 스키마 지원을 구현하는 방법의 예제로, 이 항목에서는 DBSCHEMA_TABLE 행 집합을 구현하는 과정을 안내합니다.
+이 코드는 [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) 샘플에서 가져온 것입니다. `UpdatePv` 에서는 DBSCHEMA_TABLES, DBSCHEMA_COLUMNS 및 DBSCHEMA_PROVIDER_TYPES의 세 가지 필수 스키마 행 집합을 지원 합니다. 공급자에서 스키마 지원을 구현하는 방법의 예제로, 이 항목에서는 DBSCHEMA_TABLE 행 집합을 구현하는 과정을 안내합니다.
 
 > [!NOTE]
 > 샘플 코드가 여기에 표시된 것과 다를 수도 있습니다. 샘플 코드가 더 최신 버전입니다.
@@ -224,7 +224,7 @@ wcspy_s(trData.m_szDesc, OLESTR("The Directory Table"), 19);
 wcsncpy_s(trData.m_szTable, T2OLE(szFile), _TRUNCATE());
 ```
 
-`UpdatePV`는 TABLE_NAME, TABLE_TYPE, DESCRIPTION 등 세 개의 열만 설정합니다. 정보를 반환하는 열을 적어둡니다. 이 정보는 `GetDBStatus`를 구현할 때 필요합니다.
+`UpdatePV` TABLE_NAME, TABLE_TYPE 및 설명의 3 개 열만 설정 합니다. 정보를 반환하는 열을 적어둡니다. 이 정보는 `GetDBStatus`를 구현할 때 필요합니다.
 
 ```cpp
     _ATLTRY

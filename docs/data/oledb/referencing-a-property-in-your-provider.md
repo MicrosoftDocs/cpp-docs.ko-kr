@@ -6,12 +6,12 @@ helpviewer_keywords:
 - references, to properties in providers
 - referencing properties in providers
 ms.assetid: bfbb3851-5eed-467a-a179-4a97a9515525
-ms.openlocfilehash: d70a1901c457d9fbdbe8712d84999e256a54d0c2
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ecb11c54d4c5926fbead0196c441ec23e8b0891f
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80209784"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509517"
 ---
 # <a name="referencing-a-property-in-your-provider"></a>공급자의 속성 참조
 
@@ -19,13 +19,13 @@ ms.locfileid: "80209784"
 
 다음 예에서는 행 집합에서 속성을 가져오려고 한다고 가정 합니다. Session 또는 command를 사용 하는 코드는 유사 하지만 다른 인터페이스를 사용 합니다.
 
-속성 그룹을 생성자에 대 한 매개 변수로 사용 하 여 [CDBPropSet](../../data/oledb/cdbpropset-class.md) 개체를 만듭니다. 예를 들면 다음과 같습니다.
+속성 그룹을 생성자에 대 한 매개 변수로 사용 하 여 [CDBPropSet](../../data/oledb/cdbpropset-class.md) 개체를 만듭니다. 다음은 그 예입니다.
 
 ```cpp
 CDBPropSet propset(DBPROPSET_ROWSET);
 ```
 
-속성에 할당할 속성 ID 및 값을 전달 하 여 [AddProperty](../../data/oledb/cdbpropset-addproperty.md)를 호출 합니다. 값의 형식은 사용 중인 속성에 따라 달라 집니다.
+속성에 할당할 속성 ID 및 값을 전달 하 여 [AddProperty](./cdbpropset-class.md#addproperty)를 호출 합니다. 값의 형식은 사용 중인 속성에 따라 달라 집니다.
 
 ```cpp
 CDBPropSet propset(DBPROPSET_ROWSET);
@@ -35,7 +35,7 @@ propset.AddProperty(DBPROP_IRowsetChange, true);
 propset.AddProperty(DBPROP_UPDATABILITY, DBPROPVAL_UP_INSERT | DBPROPVAL_UP_CHANGE | DBPROPVAL_UP_DELETE);
 ```
 
-`IRowset` 인터페이스를 사용 하 여 `GetProperties`를 호출 합니다. 속성 집합을 매개 변수로 전달 합니다. 최종 코드는 다음과 같습니다.
+인터페이스를 사용 `IRowset` 하 여를 호출 `GetProperties` 합니다. 속성 집합을 매개 변수로 전달 합니다. 최종 코드는 다음과 같습니다.
 
 ```cpp
 CAgentRowset<CCustomCommand>* pRowset = (CAgentRowset<CCustomCommand>*) pThis;
@@ -68,4 +68,4 @@ if (pPropSet)
 
 ## <a name="see-also"></a>참고 항목
 
-[OLE DB 공급자 템플릿을 사용하여 작업](../../data/oledb/working-with-ole-db-provider-templates.md)
+[OLE DB 공급자 템플릿 사용](../../data/oledb/working-with-ole-db-provider-templates.md)

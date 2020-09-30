@@ -29,12 +29,12 @@ helpviewer_keywords:
 - OnPropertyChanged method
 - SetPropValue method
 ms.assetid: bb525178-765c-4e23-a110-c0fd70c05437
-ms.openlocfilehash: 46fa266c5a8328bbcf7cfd1257ce1ff3e38ed2bb
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 1e9e636824ff67ee93587637c0e098e625229c06
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845668"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509087"
 ---
 # <a name="cutlprops-class"></a>CUtlProps 클래스
 
@@ -72,9 +72,9 @@ class ATL_NO_VTABLE CUtlProps : public CUtlPropsBase
 
 이 클래스의 대부분은 구현 세부 정보입니다.
 
-`CUtlProps` 내부적으로 속성을 설정 하기 위한 두 가지 멤버인 [getpropvalue](../../data/oledb/cutlprops-getpropvalue.md) 및 [setpropvalue](../../data/oledb/cutlprops-setpropvalue.md)가 포함 되어 있습니다.
+`CUtlProps` 내부적으로 속성을 설정 하기 위한 두 가지 멤버인 [getpropvalue](#getpropvalue) 및 [setpropvalue](#setpropvalue)가 포함 되어 있습니다.
 
-속성 집합 맵에서 사용 되는 매크로에 대 한 자세한 내용은 [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md) 및 [END_PROPSET_MAP](../../data/oledb/end-propset-map.md)를 참조 하세요.
+속성 집합 맵에서 사용 되는 매크로에 대 한 자세한 내용은 [BEGIN_PROPSET_MAP](./macros-for-ole-db-provider-templates.md#begin_propset_map) 및 [END_PROPSET_MAP](./macros-for-ole-db-provider-templates.md#end_propset_map)를 참조 하세요.
 
 ## <a name="cutlpropsgetpropvalue"></a><a name="getpropvalue"></a> 가공선 Lprops:: GetPropValue
 
@@ -163,7 +163,7 @@ virtual HRESULT CUtlPropsBase::OnInterfaceRequested(REFIID riid);
 
 - `IRowsetScroll`
 
-다른 인터페이스를 처리 하려면 데이터 원본, 세션, 명령 또는 행 집합 클래스에서 함수를 처리 하도록이 함수를 재정의 합니다. 재정의는 속성 설정으로 연결 된 속성도 설정 되도록 하기 위해 일반 set/get 속성 인터페이스를 통해 수행 해야 합니다 ( [OnPropertyChanged](../../data/oledb/cutlprops-onpropertychanged.md)참조).
+다른 인터페이스를 처리 하려면 데이터 원본, 세션, 명령 또는 행 집합 클래스에서 함수를 처리 하도록이 함수를 재정의 합니다. 재정의는 속성 설정으로 연결 된 속성도 설정 되도록 하기 위해 일반 set/get 속성 인터페이스를 통해 수행 해야 합니다 ( [OnPropertyChanged](#onpropertychanged)참조).
 
 ## <a name="cutlpropsonpropertychanged"></a><a name="onpropertychanged"></a> 가공선:: OnPropertyChanged
 

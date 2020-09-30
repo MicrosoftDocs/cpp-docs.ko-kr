@@ -89,12 +89,12 @@ helpviewer_keywords:
 - std::set [C++], upper_bound
 - std::set [C++], value_comp
 ms.assetid: 8991f9aa-5509-4440-adc1-371512d32018
-ms.openlocfilehash: cb19b0d9987ef4ff4624602426930c9f9920dbcd
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 2898c06d998653a25ce771c80086ef8aef27a60b
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040017"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509938"
 ---
 # <a name="set-class"></a>set 클래스
 
@@ -148,13 +148,13 @@ multiset 클래스에서 제공하는 반복기는 양방향 반복기이지만,
 
 ### <a name="constructors"></a>생성자
 
-|속성|Description|
+|속성|설명|
 |-|-|
 |[set](#set)|비어 있거나 모든 복사본이거나 또는 일부 다른 집합 부분인 집합을 생성합니다.|
 
 ### <a name="typedefs"></a>Typedefs
 
-|Name|Description|
+|속성|설명|
 |-|-|
 |[allocator_type](#allocator_type)|set 개체의 `allocator` 클래스를 나타내는 형식입니다.|
 |[const_iterator](#const_iterator)|집합의 요소를 읽을 수 있는 양방향 반복기를 제공 하는 형식입니다 **`const`** .|
@@ -174,12 +174,12 @@ multiset 클래스에서 제공하는 반복기는 양방향 반복기이지만,
 
 ### <a name="functions"></a>Functions
 
-|Name|Description|
+|속성|설명|
 |-|-|
 |[시작](#begin)|`set`의 첫 번째 요소를 주소 지정하는 반복기를 반환합니다.|
 |[cbegin](#cbegin)|`set`의 첫 번째 요소를 주소 지정하는 상수 반복기를 반환합니다.|
 |[cend](#cend)|`set`에서 마지막 요소 다음에 나오는 위치를 주소 지정하는 상수 반복기를 반환합니다.|
-|[해제](#clear)|`set`의 모든 요소를 지웁니다.|
+|[clear](#clear)|`set`의 모든 요소를 지웁니다.|
 |[contains](#contains)<sup>c + + 20</sup> 포함|에 지정 된 키를 가진 요소가 있는지 확인 `set` 합니다.|
 |[count](#count)|키가 매개 변수로 지정된 키와 일치하는 `set`의 요소 수를 반환합니다.|
 |[crbegin](#rbegin)|역순 `set`에서 첫 번째 요소를 주소 지정하는 상수 반복기를 반환합니다.|
@@ -187,7 +187,7 @@ multiset 클래스에서 제공하는 반복기는 양방향 반복기이지만,
 |[emplace](#emplace)|생성된 요소를 `set`에 삽입합니다.|
 |[emplace_hint](#emplace_hint)|배치 힌트를 사용하여 생성된 요소를 `set`에 삽입합니다.|
 |[empty](#empty)|`set`가 비어 있는지 여부를 테스트합니다.|
-|[종단](#end)|`set`에서 마지막 요소 다음에 나오는 위치를 주소 지정하는 반복기를 반환합니다.|
+|[end](#end)|`set`에서 마지막 요소 다음에 나오는 위치를 주소 지정하는 반복기를 반환합니다.|
 |[equal_range](#equal_range)|지정된 키보다 더 큰 키를 가진 `set`의 첫 번째 요소와 지정된 키보다 더 크거나 같은 키를 가진 `set`의 첫 번째 요소에 반복기의 쌍을 각각 반환합니다.|
 |[erase](#erase)|지정된 위치에서 set의 요소 또는 요소의 범위를 제거하거나 지정된 키와 일치하는 요소를 제거합니다.|
 |[find](#find)|지정된 키와 같은 키를 가진 `set` 내 요소의 위치를 가리키는 반복기를 반환합니다.|
@@ -205,7 +205,7 @@ multiset 클래스에서 제공하는 반복기는 양방향 반복기이지만,
 
 ### <a name="operators"></a>연산자
 
-|Name|Description|
+|속성|설명|
 |-|-|
 |[연산자 =](#op_eq)|set의 요소를 다른 set의 복사본으로 대체합니다.|
 
@@ -490,7 +490,7 @@ template<class K> bool contains(const K& key) const;
 
 `contains()` 는 c + + 20의 새로운 기능은입니다. 이를 사용 하려면 [/sd: c + + 최신](../build/reference/std-specify-language-standard-version.md) 컴파일러 옵션을 지정 합니다.
 
-`template<class K> bool contains(const K& key) const` 가 투명 한 경우에만 오버 로드 확인에 참여 `key_compare` 합니다. 자세한 내용은 [연관 컨테이너의 유형이 다른 조회](https://docs.microsoft.com/cpp/standard-library/stl-containers#heterogeneous-lookup-in-associative-containers-c14) 를 참조 하세요.
+`template<class K> bool contains(const K& key) const` 가 투명 한 경우에만 오버 로드 확인에 참여 `key_compare` 합니다. 자세한 내용은 [연관 컨테이너의 유형이 다른 조회](./stl-containers.md#heterogeneous-lookup-in-associative-containers-c14) 를 참조 하세요.
 
 ### <a name="example"></a>예제
 

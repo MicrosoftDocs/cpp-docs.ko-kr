@@ -20,12 +20,12 @@ helpviewer_keywords:
 - GetPropertyInfo method
 - SetProperties method
 ms.assetid: a7f15a8b-95b2-4316-b944-d5d03f8d74ab
-ms.openlocfilehash: 16f1a3f8ae9b50e43bfd67d9ac8c65507bf4f147
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d94c5d121386989d223a55b8ce7626444c3f8950
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834338"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509069"
 ---
 # <a name="idbpropertiesimpl-class"></a>IDBPropertiesImpl 클래스
 
@@ -52,7 +52,7 @@ class ATL_NO_VTABLE IDBPropertiesImpl
 
 ### <a name="interface-methods"></a>인터페이스 메서드
 
-| 이름 | Description |
+| 속성 | 설명 |
 |-|-|
 |[GetProperties](#getproperties)|데이터 원본 개체에 현재 설정 된 데이터 원본, 데이터 원본 정보 및 초기화 속성 그룹의 속성 값 또는 현재 열거자에 설정 된 초기화 속성 그룹의 속성 값을 반환 합니다.|
 |[GetPropertyInfo](#getpropertyinfo)|공급자가 지 원하는 모든 속성에 대 한 정보를 반환 합니다.|
@@ -60,7 +60,7 @@ class ATL_NO_VTABLE IDBPropertiesImpl
 
 ## <a name="remarks"></a>설명
 
-[IDBProperties](/previous-versions/windows/desktop/ms719607(v=vs.85)) 는 데이터 원본 개체에 대 한 필수 인터페이스 이며 열거자에 대 한 선택적 인터페이스입니다. 그러나 열거자가 [IDBInitialize](/previous-versions/windows/desktop/ms713706(v=vs.85))를 노출 하는 경우를 노출 해야 `IDBProperties` 합니다. `IDBPropertiesImpl``IDBProperties` [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md)에서 정의한 정적 함수를 사용 하 여를 구현 합니다.
+[IDBProperties](/previous-versions/windows/desktop/ms719607(v=vs.85)) 는 데이터 원본 개체에 대 한 필수 인터페이스 이며 열거자에 대 한 선택적 인터페이스입니다. 그러나 열거자가 [IDBInitialize](/previous-versions/windows/desktop/ms713706(v=vs.85))를 노출 하는 경우를 노출 해야 `IDBProperties` 합니다. `IDBPropertiesImpl``IDBProperties` [BEGIN_PROPSET_MAP](./macros-for-ole-db-provider-templates.md#begin_propset_map)에서 정의한 정적 함수를 사용 하 여를 구현 합니다.
 
 ## <a name="idbpropertiesimplgetproperties"></a><a name="getproperties"></a> IDBPropertiesImpl:: GetProperties
 
@@ -119,7 +119,7 @@ STDMETHOD(GetPropertyInfo)(ULONG cPropertySets,
 
 ### <a name="remarks"></a>설명
 
-[IDBInitializeImpl:: m_pCUtlPropInfo](../../data/oledb/idbinitializeimpl-m-pcutlpropinfo.md) 을 사용 하 여이 기능을 구현 합니다.
+[IDBInitializeImpl:: m_pCUtlPropInfo](./idbinitializeimpl-class.md#pcutlpropinfo) 을 사용 하 여이 기능을 구현 합니다.
 
 ## <a name="idbpropertiesimplsetproperties"></a><a name="setproperties"></a> IDBPropertiesImpl:: SetProperties
 

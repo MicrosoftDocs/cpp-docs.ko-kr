@@ -28,12 +28,12 @@ helpviewer_keywords:
 - std::bit [C++], countr_zero
 - std::bit [C++], countr_one
 - std::bit [C++], popcount
-ms.openlocfilehash: a2408df9aa13c6e714f615561871397be17fc4a3
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 94e44493b9356b3a0717c42aa1bed510ebe460dd
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90039816"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509981"
 ---
 # <a name="ltbitgt-functions"></a>&lt;비트 &gt; 함수
 
@@ -106,14 +106,17 @@ std::bit_cat<int>(f) = 7f800000
 하위 수준 코드는 한 형식의 개체를 다른 형식으로 해석 해야 하는 경우가 많습니다. 다시 해석 개체는 원래와 동일한 비트 표현을 갖지만 다른 형식입니다.
 
 대신 `reinterpret_cast` , 또는를 사용 하는 `memcpy()` 것이 `bit_cast()` 이러한 변환을 수행 하는 더 좋은 방법입니다. 다음 이유 때문에 더 좋습니다.
-- `bit_cast()`가 `constexpr`인 경우
+
+- `bit_cast()`은 `constexpr`입니다.
 - `bit_cast()` 형식은 일반적으로 복사할 수 및 동일한 크기 여야 합니다. 이렇게 하면를 사용 하 여 발생할 수 있는 잠재적인 문제를 방지 하 `reinterpret_cast` `memcpy` 고, 실수로 일반적으로 복사할 수 없는 형식을 변환 하는 데 사용할 수 있기 때문입니다. 또한 `memcpy()` 는 크기가 다른 형식 간에 실수로 복사 하는 데 사용할 수 있습니다. 예를 들어 부호 없는 int (4 바이트) 또는 그 밖의 다른 방법으로 double (8 바이트)을 사용할 수 있습니다.
 
 이 오버 로드는 다음과 같은 경우에만 오버 로드 확인에 참여 합니다.
--  `sizeof(To) == sizeof(From)`
+
+- `sizeof(To) == sizeof(From)`
 - `To` 및 `From` 가 [is_trivially_copyable](is-trivially-copyable-class.md)됩니다.
 
 이 함수 템플릿은 `constexpr` , 및 인 경우에만입니다 `To` `From` .
+
 - 공용 구조체 또는 포인터 형식이 아닙니다.
 - 멤버 형식에 대 한 포인터가 아닙니다.
 - volatile 한정 안 함
@@ -490,7 +493,7 @@ countr_one(0b11111111) = 8
 ## <a name="has_single_bit"></a>`has_single_bit`
 
 값에 한 비트만 설정 되었는지 확인 합니다. 이는 값이 2의 거듭제곱 인지 여부를 테스트 하는 것과 같습니다.
- 
+
 ```cpp
 template <class T>
 [[nodiscard]] constexpr bool has_single_bit(T value) noexcept;
@@ -544,7 +547,7 @@ has_single_bit(0b1001) = false
 ## <a name="popcount"></a>`popcount`
 
 부호 없는 정수 값에서 1로 설정 된 비트 수를 계산 합니다.
- 
+
 ```cpp
 template<class T>
 [[nodiscard]] constexpr int popcount(T value) noexcept;
@@ -603,7 +606,7 @@ popcount(0b1111) = 4
 ## <a name="rotl"></a>`rotl`
 
 부호 없는 정수 값의 비트를 지정 된 횟수 만큼 왼쪽으로 회전 합니다. 가장 왼쪽 비트의 "축소" 비트가 가장 오른쪽 비트로 회전 합니다.
- 
+
 ```cpp
 template<class T>
 [[nodiscard]] constexpr T rotl(T value, int s) noexcept;
@@ -665,7 +668,7 @@ rotl(0b00000001,-1) = 0b10000000
 ## <a name="rotr"></a>`rotr`
 
 오른쪽의 비트를 `value` 지정 된 횟수 만큼 회전 합니다. 가장 오른쪽 비트의 ' out ' 비트가 맨 왼쪽으로 다시 회전 됩니다.
- 
+
 ```cpp
 template<class T>
 [[nodiscard]] constexpr T rotr(T value, int s) noexcept;

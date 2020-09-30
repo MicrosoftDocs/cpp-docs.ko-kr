@@ -63,16 +63,16 @@ helpviewer_keywords:
 - GetRecordCount method
 - m_rgErrors
 ms.assetid: dea8e938-c5d8-45ab-86de-eb8fbf534ffb
-ms.openlocfilehash: 189f97e72f1cb87de7e4c4a388128c2a76c42961
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: cb0e236a31846e3465d76b6904a7b4c57a2b8cf4
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832440"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91508997"
 ---
 # <a name="ierrorrecordsimpl-class"></a>IErrorRecordsImpl 클래스
 
-**CAtlArray<** 형식의 데이터 멤버 ([m_rgErrors](../../data/oledb/ierrorrecordsimpl-m-rgerrors.md))에서 레코드를 추가 하 고 검색 하 OLE DB [ierrorrecords](/previous-versions/windows/desktop/ms718112(v=vs.85)) 인터페이스를 구현 합니다 `RecordClass` **>** .
+**CAtlArray<** 형식의 데이터 멤버 ([m_rgErrors](#rgerrors))에서 레코드를 추가 하 고 검색 하 OLE DB [ierrorrecords](/previous-versions/windows/desktop/ms718112(v=vs.85)) 인터페이스를 구현 합니다 `RecordClass` **>** .
 
 ## <a name="syntax"></a>구문
 
@@ -107,7 +107,7 @@ OLE DB 오류 개체를 나타내는 클래스입니다.
 
 ### <a name="interface-methods"></a>인터페이스 메서드
 
-| Name | 설명 |
+| 속성 | 설명 |
 |-|-|
 |[AddErrorRecord](#adderrorrecord)|OLE DB error 개체에 레코드를 추가 합니다.|
 |[GetBasicErrorInfo](#getbasicerrorinfo)|반환 코드 및 공급자별 오류 번호와 같은 오류에 대 한 기본 정보를 반환 합니다.|
@@ -118,7 +118,7 @@ OLE DB 오류 개체를 나타내는 클래스입니다.
 
 ### <a name="data-members"></a>데이터 멤버
 
-| Name | 설명 |
+| 속성 | 설명 |
 |-|-|
 |[m_rgErrors](#rgerrors)|오류 레코드의 배열입니다.|
 

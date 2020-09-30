@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1083
 ms.assetid: 97e52df3-e79c-4f85-8f1e-bbd1057d55e7
-ms.openlocfilehash: f51e93475f104f165895c9d7e2733d741af30502
-ms.sourcegitcommit: 6e55aeb538b1c39af754f82d6f7738a18f5aa031
+ms.openlocfilehash: 57ae8f2d0b7f02732032151f86617498e5201c61
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87389781"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509749"
 ---
 # <a name="fatal-error-c1083"></a>심각한 오류 C1083
 
@@ -63,7 +63,7 @@ ms.locfileid: "87389781"
 
 ## <a name="third-party-library-issues-and-vcpkg"></a>타사 라이브러리 문제 및 vcpkg
 
-빌드의 일부로 타사 라이브러리를 구성 하려고 할 때이 오류가 표시 되는 경우 [`vcpkg`](../../vcpkg.md) c + + 패키지 관리자를 사용 하 여 라이브러리를 설치 하 고 작성 하는 것이 좋습니다. vcpkg는 크고 증가 하는 [타사 라이브러리 목록을](https://github.com/Microsoft/vcpkg/tree/master/ports)지원 하 고 프로젝트의 일부로 성공한 빌드에 필요한 모든 구성 속성 및 종속성을 설정 합니다.
+빌드의 일부로 타사 라이브러리를 구성 하려고 할 때이 오류가 표시 되는 경우 [`vcpkg`](../../build/vcpkg.md) c + + 패키지 관리자를 사용 하 여 라이브러리를 설치 하 고 작성 하는 것이 좋습니다. vcpkg는 크고 증가 하는 [타사 라이브러리 목록을](https://github.com/Microsoft/vcpkg/tree/master/ports)지원 하 고 프로젝트의 일부로 성공한 빌드에 필요한 모든 구성 속성 및 종속성을 설정 합니다.
 
 ## <a name="the-file-is-in-your-project-but-not-the-include-search-path"></a>파일이 프로젝트에 있지만 포함 검색 경로는 아닙니다.
 

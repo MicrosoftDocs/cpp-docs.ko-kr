@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3531
 ms.assetid: 2bdb9fdc-9ddf-403e-8b92-02763d434487
-ms.openlocfilehash: 7da9da2daedc79db619f82848dc864d1cb7bd1f1
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 4537c6c76814f2aeb8f8d62579caec86785de252
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74750093"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91510140"
 ---
 # <a name="compiler-error-c3531"></a>컴파일러 오류 C3531
 
@@ -25,7 +25,7 @@ ms.locfileid: "74750093"
 
 ## <a name="example"></a>예제
 
-다음 예에서는 `x1`, `y1, y2, y3`및 `z2` 변수가 초기화 되지 않았기 때문에 C3531를 생성 합니다.
+다음 예에서는, 및 변수가 초기화 되지 않으므로 C3531을 생성 `x1` `y1, y2, y3` `z2` 합니다.
 
 ```cpp
 // C3531.cpp
@@ -41,4 +41,4 @@ int main()
 
 ## <a name="see-also"></a>참조
 
-[auto 키워드](../../cpp/auto-keyword.md)
+[auto 키워드](../../cpp/auto-cpp.md)

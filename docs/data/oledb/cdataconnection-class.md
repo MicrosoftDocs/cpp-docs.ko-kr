@@ -61,12 +61,12 @@ helpviewer_keywords:
 - operator CSession*
 - CSession* operator
 ms.assetid: 77432d85-4e20-49ec-a0b0-142137828471
-ms.openlocfilehash: 118b8d09b90899eca0f257e319aabbefd92f359f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: c456f4bf5891f550fcd9523fa376333d66e079a6
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838402"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509100"
 ---
 # <a name="cdataconnection-class"></a>CDataConnection 클래스
 
@@ -95,7 +95,7 @@ class CDataConnection
 
 ### <a name="operators"></a>연산자
 
-| Name | 설명 |
+| 속성 | 설명 |
 |-|-|
 |[연산자 BOOL](#op_bool)|현재 세션이 열려 있는지 여부를 확인 합니다.|
 |[연산자 bool](#op_bool_ole)|현재 세션이 열려 있는지 여부를 확인 합니다.|
@@ -108,12 +108,12 @@ class CDataConnection
 
 `CDataConnection` 는 필요한 개체 (데이터 소스 및 세션)와 데이터 소스에 연결할 때 수행 해야 하는 작업의 일부를 캡슐화 하기 때문에 클라이언트를 만드는 데 유용한 클래스입니다.
 
-를 사용 하지 않는 `CDataConnection` 경우 개체를 만들고 `CDataSource` [OpenFromInitializationString](../../data/oledb/cdatasource-openfrominitializationstring.md) 메서드를 호출한 다음, [Open](../../data/oledb/csession-open.md) 메서드를 호출한 다음 [CCommand](../../data/oledb/ccommand-class.md) 개체를 만들고 해당 * 메서드를 호출 해야 [CSession](../../data/oledb/csession-class.md) `Open` 합니다.
+를 사용 하지 않는 `CDataConnection` 경우 개체를 만들고 `CDataSource` [OpenFromInitializationString](./cdatasource-class.md#openfrominitializationstring) 메서드를 호출한 다음, [Open](./csession-class.md#open) 메서드를 호출한 다음 [CCommand](../../data/oledb/ccommand-class.md) 개체를 만들고 해당 * 메서드를 호출 해야 [CSession](../../data/oledb/csession-class.md) `Open` 합니다.
 
 `CDataConnection`에서는 연결 개체를 만들고 초기화 문자열을 전달한 다음 해당 연결을 사용 하 여 명령을 열어야 합니다. 데이터베이스에 대 한 연결을 반복 해 서 사용 하려는 경우에는 연결을 열어 두는 것이 좋습니다 .이 `CDataConnection` 작업을 수행 하는 편리한 방법을 제공 합니다.
 
 > [!NOTE]
-> 여러 세션을 처리 해야 하는 데이터베이스 응용 프로그램을 만드는 경우 [Opennewsession](../../data/oledb/cdataconnection-opennewsession.md)을 사용 해야 합니다.
+> 여러 세션을 처리 해야 하는 데이터베이스 응용 프로그램을 만드는 경우 [Opennewsession](#opennewsession)을 사용 해야 합니다.
 
 ## <a name="cdataconnectioncdataconnection"></a><a name="cdataconnection"></a> CDataConnection:: CDataConnection
 
@@ -258,7 +258,7 @@ operator const CDataSource*() throw();
 
 이 연산자는 `CDataSource` 포인터가 예상되는 위치에 `CDataConnection` 개체를 전달할 수 있게 해주는, 포함된 `CDataSource` 개체에 대한 포인터를 반환합니다.
 
-사용 예는 [Operator CDataSource&](../../data/oledb/cdataconnection-operator-cdatasource-amp.md) 를 참조 하세요.
+사용 예는 [Operator CDataSource&](#op_cdata_amp) 를 참조 하세요.
 
 ## <a name="cdataconnectionoperator-csessionamp"></a><a name="op_csession_amp"></a> CDataConnection:: operator CSession&amp;
 
@@ -298,7 +298,7 @@ operator const CSession*() throw();
 
 ### <a name="example"></a>예제
 
-사용 예는 [Operator CSession&](../../data/oledb/cdataconnection-operator-csession-amp.md) 를 참조 하세요.
+사용 예는 [Operator CSession&](#op_csession_amp) 를 참조 하세요.
 
 ## <a name="see-also"></a>참고 항목
 

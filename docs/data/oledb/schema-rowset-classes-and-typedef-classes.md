@@ -548,12 +548,12 @@ helpviewer_keywords:
 - TABLE_NAME
 - TABLE_SCHEMA
 ms.assetid: 4bd881b3-26ca-4bdb-9226-d67560864f29
-ms.openlocfilehash: 82401ae88ea95d0e05659fa662a3621a27ef4531
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 104f7a92cdb472fc889d44cff20982e51b955014
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80209705"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509494"
 ---
 # <a name="schema-rowset-classes-and-typedef-classes"></a>스키마 행 집합 클래스 및 Typedef 클래스
 
@@ -561,7 +561,7 @@ ms.locfileid: "80209705"
 
 스키마 행 집합은 메타 데이터를 나타내는 미리 정의 된 행 집합입니다. 스키마 행 집합은 일반적으로 동적 프로그래밍에 사용 되며,이 경우 데이터베이스 구조는 컴파일 시간에 알려지지 않습니다. 이러한 스키마 행 집합을 사용 하 여 런타임에 데이터베이스에 대 한 정보를 가져올 수 있습니다.
 
-Typedef 클래스를 사용 하 여 스키마 행 집합을 인스턴스화합니다. 해당 typedef 및 스키마 행 집합 클래스는 다음과 같습니다. 스키마 행 집합의 인스턴스를 만든 후에는 [CRestrictions:: Open](../../data/oledb/crestrictions-open.md) 을 호출 해야 합니다. 이 메서드는 지정 하는 제한 사항에 따라 결과 집합을 반환 합니다. 각 스키마 행 집합에 연결 된 제한 열에 대 한 자세한 내용은 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) 를 참조 하세요.
+Typedef 클래스를 사용 하 여 스키마 행 집합을 인스턴스화합니다. 해당 typedef 및 스키마 행 집합 클래스는 다음과 같습니다. 스키마 행 집합의 인스턴스를 만든 후에는 [CRestrictions:: Open](./crestrictions-class.md#open) 을 호출 해야 합니다. 이 메서드는 지정 하는 제한 사항에 따라 결과 집합을 반환 합니다. 각 스키마 행 집합에 연결 된 제한 열에 대 한 자세한 내용은 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) 를 참조 하세요.
 
 다음 표에서는 각 OLE DB 스키마 행 집합 및 해당 OLE DB Template typedef 클래스 및 info 클래스를 보여 줍니다.
 
@@ -588,7 +588,7 @@ Typedef 클래스를 사용 하 여 스키마 행 집합을 인스턴스화합�
 |[REFERENTIAL_CONSTRAINTS](/previous-versions/windows/desktop/ms719737(v=vs.85))|[CReferentialConstraints](#referentialconstraint)|[CReferentialConstraintInfo](#referentialconstraint)|
 |[SCHEMATA](/previous-versions/windows/desktop/ms716887(v=vs.85))|[CSchemata](#schemata)|[CSchemataInfo](#schemata)|
 |[SQL_LANGUAGES](/previous-versions/windows/desktop/ms714374(v=vs.85))|[CSQLLanguages](#sqllanguage)|[CSQLLanguageInfo](#sqllanguage)|
-|[STATISTICS](/previous-versions/windows/desktop/ms715957(v=vs.85))|[CStatistics](#statistic)|[CStatisticInfo](#statistic)|
+|[통계](/previous-versions/windows/desktop/ms715957(v=vs.85))|[CStatistics](#statistic)|[CStatisticInfo](#statistic)|
 |[TABLE_CONSTRAINTS](/previous-versions/windows/desktop/ms715921(v=vs.85))|[CTableConstraints](#tableconstraint)|[CTableConstraintInfo](#tableconstraint)|
 |[TABLES](/previous-versions/windows/desktop/ms716980(v=vs.85))|[CTables](#table)|[CTableInfo](#table)|
 |[TABLE_PRIVILEGES](/previous-versions/windows/desktop/ms725428(v=vs.85))|[CTablePrivileges](#tableprivilege)|[CTablePrivilegeInfo](#tableprivilege)|
@@ -598,17 +598,17 @@ Typedef 클래스를 사용 하 여 스키마 행 집합을 인스턴스화합�
 |[VIEWS](/previous-versions/windows/desktop/ms723122(v=vs.85))|[CViews](#view)|[CViewInfo](#view)|
 |[VIEW_TABLE_USAGE](/previous-versions/windows/desktop/ms719727(v=vs.85))|[CViewTableUsage](#viewtable)|[CViewTableInfo](#viewtable)|
 
-## <a name="cassertions-cassertioninfo"></a><a name="assertion"></a>CAssertions CAssertionInfo
+## <a name="cassertions-cassertioninfo"></a><a name="assertion"></a> CAssertions CAssertionInfo
 
-`CAssertionInfo``CAssertions` typedef 클래스를 호출 하 여 해당 매개 변수 클래스를 구현 합니다.
+Typedef 클래스를 호출 `CAssertions` 하 여 해당 매개 변수 클래스를 구현 `CAssertionInfo` 합니다.
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
 Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) 를 참조 하세요.
 
 이 클래스는 지정 된 사용자가 소유 하 고 있는 카탈로그에 정의 된 어설션을 식별 합니다.
 
-다음 표에서는 `CAssertionInfo`에 대 한 클래스 데이터 멤버와 해당 OLE DB 열을 나열 합니다. 스키마 및 열에 대 한 자세한 내용은 *OLE DB 프로그래머 참조* 에서 [어설션 행 집합](/previous-versions/windows/desktop/ms719776(v=vs.85)) 을 참조 하세요.
+다음 표에서는의 클래스 데이터 멤버와 해당 `CAssertionInfo` OLE DB 열을 나열 합니다. 스키마 및 열에 대 한 자세한 내용은 *OLE DB 프로그래머 참조* 에서 [어설션 행 집합](/previous-versions/windows/desktop/ms719776(v=vs.85)) 을 참조 하세요.
 
 |데이터 멤버|OLE DB 열|
 |------------------|--------------------|
@@ -619,11 +619,11 @@ Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 �
 |m_bInitiallyDeferred|INITIALLY_DEFERRED|
 |m_szDescription|설명|
 
-## <a name="ccatalogs-ccataloginfo"></a><a name="catalog"></a>CCatalogs, CCatalogInfo
+## <a name="ccatalogs-ccataloginfo"></a><a name="catalog"></a> CCatalogs, CCatalogInfo
 
-`CCatalogInfo``CCatalogs` typedef 클래스를 호출 하 여 해당 매개 변수 클래스를 구현 합니다.
+Typedef 클래스를 호출 `CCatalogs` 하 여 해당 매개 변수 클래스를 구현 `CCatalogInfo` 합니다.
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
 Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) 를 참조 하세요.
 
@@ -636,11 +636,11 @@ Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 �
 |m_szName|CATALOG_NAME|
 |m_szDescription|설명|
 
-## <a name="ccharactersets-ccharactersetinfo"></a><a name="characterset"></a>CCharacterSets, CCharacterSetInfo
+## <a name="ccharactersets-ccharactersetinfo"></a><a name="characterset"></a> CCharacterSets, CCharacterSetInfo
 
-`CCharacterSetInfo``CCharacterSets` typedef 클래스를 호출 하 여 해당 매개 변수 클래스를 구현 합니다.
+Typedef 클래스를 호출 `CCharacterSets` 하 여 해당 매개 변수 클래스를 구현 `CCharacterSetInfo` 합니다.
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
 Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) 를 참조 하세요.
 
@@ -659,11 +659,11 @@ Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 �
 |m_szCollateSchema|DEFAULT_COLLATE_SCHEMA|
 |m_szCollateName|DEFAULT_COLLATE_NAME|
 
-## <a name="ccheckconstraints-ccheckconstraintinfo"></a><a name="checkconstraint"></a>CCheckConstraints, CCheckConstraintInfo
+## <a name="ccheckconstraints-ccheckconstraintinfo"></a><a name="checkconstraint"></a> CCheckConstraints, CCheckConstraintInfo
 
-`CCheckConstraintInfo``CCheckConstraints` typedef 클래스를 호출 하 여 해당 매개 변수 클래스를 구현 합니다.
+Typedef 클래스를 호출 `CCheckConstraints` 하 여 해당 매개 변수 클래스를 구현 `CCheckConstraintInfo` 합니다.
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
 Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) 를 참조 하세요.
 
@@ -679,11 +679,11 @@ Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 �
 |m_szCheckClause|CHECK_CLAUSE|
 |m_szDescription|설명|
 
-## <a name="ccollations-ccollationinfo"></a><a name="collation"></a>CCollations 정렬, CCollationInfo
+## <a name="ccollations-ccollationinfo"></a><a name="collation"></a> CCollations 정렬, CCollationInfo
 
-`CCollationInfo``CCollations` typedef 클래스를 호출 하 여 해당 매개 변수 클래스를 구현 합니다.
+Typedef 클래스를 호출 `CCollations` 하 여 해당 매개 변수 클래스를 구현 `CCollationInfo` 합니다.
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
 Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) 를 참조 하세요.
 
@@ -701,11 +701,11 @@ Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 �
 |m_szCharSetName|CHARACTER_SET_NAME|
 |m_szPadAttribute|PAD_ATTRIBUTE|
 
-## <a name="ccolumndomainusage-ccolumndomainusageinfo"></a><a name="columndomainusage"></a>CColumnDomainUsage, CColumnDomainUsageInfo
+## <a name="ccolumndomainusage-ccolumndomainusageinfo"></a><a name="columndomainusage"></a> CColumnDomainUsage, CColumnDomainUsageInfo
 
-`CColumnDomainUsageInfo``CColumnDomainUsage` typedef 클래스를 호출 하 여 해당 매개 변수 클래스를 구현 합니다.
+Typedef 클래스를 호출 `CColumnDomainUsage` 하 여 해당 매개 변수 클래스를 구현 `CColumnDomainUsageInfo` 합니다.
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
 Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) 를 참조 하세요.
 
@@ -725,11 +725,11 @@ Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 �
 |m_guidColumn|COLUMN_GUID|
 |m_nColumnPropID|COLUMN_PROPID|
 
-## <a name="ccolumnprivileges-ccolumnprivilegeinfo"></a><a name="columnprivilege"></a>CColumnPrivileges, CColumnPrivilegeInfo
+## <a name="ccolumnprivileges-ccolumnprivilegeinfo"></a><a name="columnprivilege"></a> CColumnPrivileges, CColumnPrivilegeInfo
 
-`CColumnPrivilegeInfo``CColumnPrivileges` typedef 클래스를 호출 하 여 해당 매개 변수 클래스를 구현 합니다.
+Typedef 클래스를 호출 `CColumnPrivileges` 하 여 해당 매개 변수 클래스를 구현 `CColumnPrivilegeInfo` 합니다.
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
 Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) 를 참조 하세요.
 
@@ -750,11 +750,11 @@ Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 �
 |m_szPrivilegeType|PRIVILEGE_TYPE|
 |m_bIsGrantable|IS_GRANTABLE|
 
-## <a name="ccolumns-ccolumnsinfo"></a><a name="columns"></a>CColumns, Ccolumns 정보
+## <a name="ccolumns-ccolumnsinfo"></a><a name="columns"></a> CColumns, Ccolumns 정보
 
-`CColumnsInfo``CColumns` typedef 클래스를 호출 하 여 해당 매개 변수 클래스를 구현 합니다.
+Typedef 클래스를 호출 `CColumns` 하 여 해당 매개 변수 클래스를 구현 `CColumnsInfo` 합니다.
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
 Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) 를 참조 하세요.
 
@@ -793,11 +793,11 @@ Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 �
 |m_szDomainName|DOMAIN_NAME|
 |m_szDescription|설명|
 
-## <a name="cconstraintcolumnusage-cconstraintcolumnusageinfo"></a><a name="constraintcolumnusage"></a>CConstraintColumnUsage, CConstraintColumnUsageInfo
+## <a name="cconstraintcolumnusage-cconstraintcolumnusageinfo"></a><a name="constraintcolumnusage"></a> CConstraintColumnUsage, CConstraintColumnUsageInfo
 
-`CConstraintColumnUsageInfo``CConstraintColumnUsage` typedef 클래스를 호출 하 여 해당 매개 변수 클래스를 구현 합니다.
+Typedef 클래스를 호출 `CConstraintColumnUsage` 하 여 해당 매개 변수 클래스를 구현 `CConstraintColumnUsageInfo` 합니다.
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
 Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) 를 참조 하세요.
 
@@ -817,11 +817,11 @@ Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 �
 |m_szConstraintSchema|CONSTRAINT_SCHEMA|
 |m_szConstraintName|CONSTRAINT_NAME|
 
-## <a name="cconstrainttableusage-cconstrainttableusageinfo"></a><a name="constrainttableusage"></a>CConstraintTableUsage, CConstraintTableUsageInfo
+## <a name="cconstrainttableusage-cconstrainttableusageinfo"></a><a name="constrainttableusage"></a> CConstraintTableUsage, CConstraintTableUsageInfo
 
-`CConstraintTableUsageInfo``CConstraintTableUsage` typedef 클래스를 호출 하 여 해당 매개 변수 클래스를 구현 합니다.
+Typedef 클래스를 호출 `CConstraintTableUsage` 하 여 해당 매개 변수 클래스를 구현 `CConstraintTableUsageInfo` 합니다.
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
 Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) 를 참조 하세요.
 
@@ -838,11 +838,11 @@ Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 �
 |m_szConstraintSchema|CONSTRAINT_SCHEMA|
 |m_szConstraintName|CONSTRAINT_NAME|
 
-## <a name="cforeignkeys-cforeignkeysinfo"></a><a name="foreignkeys"></a>CForeignKeys, CForeignKeysInfo
+## <a name="cforeignkeys-cforeignkeysinfo"></a><a name="foreignkeys"></a> CForeignKeys, CForeignKeysInfo
 
-`CForeignKeysInfo``CForeignKeys` typedef 클래스를 호출 하 여 해당 매개 변수 클래스를 구현 합니다.
+Typedef 클래스를 호출 `CForeignKeys` 하 여 해당 매개 변수 클래스를 구현 `CForeignKeysInfo` 합니다.
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
 Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) 를 참조 하세요.
 
@@ -868,11 +868,11 @@ Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 �
 |m_szUpdateRule|UPDATE_RULE|
 |m_szDeleteRule|DELETE_RULE|
 
-## <a name="cindexes-cindexinfo"></a><a name="index"></a>CIndexes, CIndexInfo
+## <a name="cindexes-cindexinfo"></a><a name="index"></a> CIndexes, CIndexInfo
 
-`CIndexInfo``CIndexes` typedef 클래스를 호출 하 여 해당 매개 변수 클래스를 구현 합니다.
+Typedef 클래스를 호출 `CIndexes` 하 여 해당 매개 변수 클래스를 구현 `CIndexInfo` 합니다.
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
 Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) 를 참조 하세요.
 
@@ -891,7 +891,7 @@ Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 �
 |m_bPrimaryKey|PRIMARY_KEY|
 |m_bUnique|UNIQUE|
 |m_bClustered|CLUSTERED|
-|m_nType|유형|
+|m_nType|TYPE|
 |m_nFillFactor|FILL_FACTOR|
 |m_nInitialSize|INITIAL_SIZE|
 |m_nNulls|NULLS|
@@ -907,11 +907,11 @@ Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 �
 |m_nPages|PAGES|
 |m_szFilterCondition|FILTER_CONDITION|
 
-## <a name="ckeycolumns-ckeycolumninfo"></a><a name="keycolumn"></a>CKeyColumns, CKeyColumnInfo
+## <a name="ckeycolumns-ckeycolumninfo"></a><a name="keycolumn"></a> CKeyColumns, CKeyColumnInfo
 
-`CKeyColumnInfo``CKeyColumns` typedef 클래스를 호출 하 여 해당 매개 변수 클래스를 구현 합니다.
+Typedef 클래스를 호출 `CKeyColumns` 하 여 해당 매개 변수 클래스를 구현 `CKeyColumnInfo` 합니다.
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
 Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) 를 참조 하세요.
 
@@ -932,11 +932,11 @@ Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 �
 |m_nColumnPropID|COLUMN_PROPID|
 |m_nOrdinalPosition|ORDINAL_POSITION|
 
-## <a name="cprimarykeys-cprimarykeyinfo"></a><a name="primarykey"></a>CPrimaryKeys, Cprimarykeys
+## <a name="cprimarykeys-cprimarykeyinfo"></a><a name="primarykey"></a> CPrimaryKeys, Cprimarykeys
 
-`CPrimaryKeyInfo``CPrimaryKeys` typedef 클래스를 호출 하 여 해당 매개 변수 클래스를 구현 합니다.
+Typedef 클래스를 호출 `CPrimaryKeys` 하 여 해당 매개 변수 클래스를 구현 `CPrimaryKeyInfo` 합니다.
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
 Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) 를 참조 하세요.
 
@@ -954,11 +954,11 @@ Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 �
 |m_nColumnPropID|COLUMN_PROPID|
 |m_nOrdinal|순서로|
 
-## <a name="cprocedurecolumns-cprocedurecolumninfo"></a><a name="procedurecolumn"></a>CProcedureColumns, CProcedureColumnInfo
+## <a name="cprocedurecolumns-cprocedurecolumninfo"></a><a name="procedurecolumn"></a> CProcedureColumns, CProcedureColumnInfo
 
-`CProcedureColumnInfo``CProcedureColumns` typedef 클래스를 호출 하 여 해당 매개 변수 클래스를 구현 합니다.
+Typedef 클래스를 호출 `CProcedureColumns` 하 여 해당 매개 변수 클래스를 구현 `CProcedureColumnInfo` 합니다.
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
 Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) 를 참조 하세요.
 
@@ -985,11 +985,11 @@ Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 �
 |m_nScale|NUMERIC_SCALE|
 |m_szDescription|설명|
 
-## <a name="cprocedureparameters-cprocedureparaminfo"></a><a name="procedureparam"></a>CProcedureParameters CProcedureParamInfo
+## <a name="cprocedureparameters-cprocedureparaminfo"></a><a name="procedureparam"></a> CProcedureParameters CProcedureParamInfo
 
-`CProcedureParamInfo``CProcedureParameters` typedef 클래스를 호출 하 여 해당 매개 변수 클래스를 구현 합니다.
+Typedef 클래스를 호출 `CProcedureParameters` 하 여 해당 매개 변수 클래스를 구현 `CProcedureParamInfo` 합니다.
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
 Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) 를 참조 하세요.
 
@@ -1015,11 +1015,11 @@ Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 �
 |m_nScale|NUMERIC_SCALE|
 |m_szDescription|설명|
 
-## <a name="cprocedures-cprocedureinfo"></a><a name="procedure"></a>CProcedures, CProcedureInfo
+## <a name="cprocedures-cprocedureinfo"></a><a name="procedure"></a> CProcedures, CProcedureInfo
 
-`CProcedureInfo``CProcedures` typedef 클래스를 호출 하 여 해당 매개 변수 클래스를 구현 합니다.
+Typedef 클래스를 호출 `CProcedures` 하 여 해당 매개 변수 클래스를 구현 `CProcedureInfo` 합니다.
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
 Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) 를 참조 하세요.
 
@@ -1036,11 +1036,11 @@ Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 �
 |m_szDefinition|PROCEDURE_DEFINITION|
 |m_szDescription|설명|
 
-## <a name="cprovidertypes-cproviderinfo"></a><a name="provider"></a>CProviderTypes, CProviderInfo
+## <a name="cprovidertypes-cproviderinfo"></a><a name="provider"></a> CProviderTypes, CProviderInfo
 
-`CProviderInfo``CProviderTypes` typedef 클래스를 호출 하 여 해당 매개 변수 클래스를 구현 합니다.
+Typedef 클래스를 호출 `CProviderTypes` 하 여 해당 매개 변수 클래스를 구현 `CProviderInfo` 합니다.
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
 Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) 를 참조 하세요.
 
@@ -1071,11 +1071,11 @@ Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 �
 |m_bIsLong|IS_LONG|
 |m_bBestMatch|BEST_MATCH|
 
-## <a name="creferentialconstraints-creferentialconstraintinfo"></a><a name="referentialconstraint"></a>CReferentialConstraints, CReferentialConstraintInfo
+## <a name="creferentialconstraints-creferentialconstraintinfo"></a><a name="referentialconstraint"></a> CReferentialConstraints, CReferentialConstraintInfo
 
-`CReferentialConstraintInfo``CReferentialConstraints` typedef 클래스를 호출 하 여 해당 매개 변수 클래스를 구현 합니다.
+Typedef 클래스를 호출 `CReferentialConstraints` 하 여 해당 매개 변수 클래스를 구현 `CReferentialConstraintInfo` 합니다.
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
 Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) 를 참조 하세요.
 
@@ -1096,11 +1096,11 @@ Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 �
 |m_szDeleteRule|DELETE_RULE|
 |m_szDescription|설명|
 
-## <a name="cschemata-cschematainfo"></a><a name="schemata"></a>CSchemata, CSchemataInfo
+## <a name="cschemata-cschematainfo"></a><a name="schemata"></a> CSchemata, CSchemataInfo
 
-`CSchemataInfo``CSchemata` typedef 클래스를 호출 하 여 해당 매개 변수 클래스를 구현 합니다.
+Typedef 클래스를 호출 `CSchemata` 하 여 해당 매개 변수 클래스를 구현 `CSchemataInfo` 합니다.
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
 Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) 를 참조 하세요.
 
@@ -1117,11 +1117,11 @@ Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 �
 |m_szCharSchema|DEFAULT_CHARACTER_SET_SCHEMA|
 |m_szCharName|DEFAULT_CHARACTER_SET_NAME|
 
-## <a name="csqllanguages-csqllanguageinfo"></a><a name="sqllanguage"></a>CSQLLanguages, CSQLLanguageInfo
+## <a name="csqllanguages-csqllanguageinfo"></a><a name="sqllanguage"></a> CSQLLanguages, CSQLLanguageInfo
 
-`CSQLLanguageInfo``CSQLLanguages` typedef 클래스를 호출 하 여 해당 매개 변수 클래스를 구현 합니다.
+Typedef 클래스를 호출 `CSQLLanguages` 하 여 해당 매개 변수 클래스를 구현 `CSQLLanguageInfo` 합니다.
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
 Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) 를 참조 하세요.
 
@@ -1139,11 +1139,11 @@ Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 �
 |m_szBindingStyle|SQL_LANGUAGE_BINDING_STYLE|
 |m_szProgrammingLanguage|SQL_LANGUAGE_PROGRAMMING_LANGUAGE|
 
-## <a name="cstatistics-cstatisticinfo"></a><a name="statistic"></a>CStatistics, CStatisticInfo
+## <a name="cstatistics-cstatisticinfo"></a><a name="statistic"></a> CStatistics, CStatisticInfo
 
-`CStatisticInfo``CStatistics` typedef 클래스를 호출 하 여 해당 매개 변수 클래스를 구현 합니다.
+Typedef 클래스를 호출 `CStatistics` 하 여 해당 매개 변수 클래스를 구현 `CStatisticInfo` 합니다.
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
 Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) 를 참조 하세요.
 
@@ -1158,11 +1158,11 @@ Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 �
 |m_szTableName|TABLE_NAME|
 |m_nCardinality|CARDINALITY|
 
-## <a name="ctableconstraints-ctableconstraintinfo"></a><a name="tableconstraint"></a>CTableConstraints, CTableConstraintInfo
+## <a name="ctableconstraints-ctableconstraintinfo"></a><a name="tableconstraint"></a> CTableConstraints, CTableConstraintInfo
 
-`CTableConstraintInfo``CTableConstraints` typedef 클래스를 호출 하 여 해당 매개 변수 클래스를 구현 합니다.
+Typedef 클래스를 호출 `CTableConstraints` 하 여 해당 매개 변수 클래스를 구현 `CTableConstraintInfo` 합니다.
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
 Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) 를 참조 하세요.
 
@@ -1183,11 +1183,11 @@ Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 �
 |m_bInitiallyDeferred|INITIALLY_DEFERRED|
 |m_szDescription|설명|
 
-## <a name="ctableprivileges-ctableprivilegeinfo"></a><a name="tableprivilege"></a>CTablePrivileges, CTablePrivilegeInfo
+## <a name="ctableprivileges-ctableprivilegeinfo"></a><a name="tableprivilege"></a> CTablePrivileges, CTablePrivilegeInfo
 
-`CTablePrivilegeInfo``CTablePrivileges` typedef 클래스를 호출 하 여 해당 매개 변수 클래스를 구현 합니다.
+Typedef 클래스를 호출 `CTablePrivileges` 하 여 해당 매개 변수 클래스를 구현 `CTablePrivilegeInfo` 합니다.
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
 Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) 를 참조 하세요.
 
@@ -1205,11 +1205,11 @@ Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 �
 |m_szType|PRIVILEGE_TYPE|
 |m_bIsGrantable|IS_GRANTABLE|
 
-## <a name="ctables-ctableinfo"></a><a name="table"></a>CTables, CTableInfo
+## <a name="ctables-ctableinfo"></a><a name="table"></a> CTables, CTableInfo
 
-`CTableInfo``CTables` typedef 클래스를 호출 하 여 해당 매개 변수 클래스를 구현 합니다.
+Typedef 클래스를 호출 `CTables` 하 여 해당 매개 변수 클래스를 구현 `CTableInfo` 합니다.
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
 Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) 를 참조 하세요.
 
@@ -1226,11 +1226,11 @@ Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 �
 |m_guidTable|TABLE_GUID|
 |m_szDescription|설명|
 
-## <a name="ctranslations-ctranslationinfo"></a><a name="translation"></a>CTranslations, CTranslationInfo
+## <a name="ctranslations-ctranslationinfo"></a><a name="translation"></a> CTranslations, CTranslationInfo
 
-`CTranslationInfo``CTranslations` typedef 클래스를 호출 하 여 해당 매개 변수 클래스를 구현 합니다.
+Typedef 클래스를 호출 `CTranslations` 하 여 해당 매개 변수 클래스를 구현 `CTranslationInfo` 합니다.
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
 Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) 를 참조 하세요.
 
@@ -1250,11 +1250,11 @@ Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 �
 |m_szTargetSchema|TARGET_CHARACTER_SET_SCHEMA|
 |m_szTargetName|TARGET_CHARACTER_SET_NAME|
 
-## <a name="cusageprivileges-cusageprivilegeinfo"></a><a name="usageprivilege"></a>CUsagePrivileges, CUsagePrivilegeInfo
+## <a name="cusageprivileges-cusageprivilegeinfo"></a><a name="usageprivilege"></a> CUsagePrivileges, CUsagePrivilegeInfo
 
-`CUsagePrivilegeInfo``CUsagePrivileges` typedef 클래스를 호출 하 여 해당 매개 변수 클래스를 구현 합니다.
+Typedef 클래스를 호출 `CUsagePrivileges` 하 여 해당 매개 변수 클래스를 구현 `CUsagePrivilegeInfo` 합니다.
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
 Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) 를 참조 하세요.
 
@@ -1273,11 +1273,11 @@ Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 �
 |m_szPrivilegeType|PRIVILEGE_TYPE|
 |m_bIsGrantable|IS_GRANTABLE|
 
-## <a name="cviewcolumnusage-cviewcolumninfo"></a><a name="viewcolumn"></a>CViewColumnUsage, Cviewcolumnusage
+## <a name="cviewcolumnusage-cviewcolumninfo"></a><a name="viewcolumn"></a> CViewColumnUsage, Cviewcolumnusage
 
-`CViewColumnInfo``CViewColumnUsage` typedef 클래스를 호출 하 여 해당 매개 변수 클래스를 구현 합니다.
+Typedef 클래스를 호출 `CViewColumnUsage` 하 여 해당 매개 변수 클래스를 구현 `CViewColumnInfo` 합니다.
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
 Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) 를 참조 하세요.
 
@@ -1297,11 +1297,11 @@ Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 �
 |m_guidColumn|COLUMN_GUID|
 |m_nColumnPropID|COLUMN_PROPID|
 
-## <a name="cviews-cviewinfo"></a><a name="view"></a>CViews, Cviews
+## <a name="cviews-cviewinfo"></a><a name="view"></a> CViews, Cviews
 
-`CViewInfo``CViews` typedef 클래스를 호출 하 여 해당 매개 변수 클래스를 구현 합니다.
+Typedef 클래스를 호출 `CViews` 하 여 해당 매개 변수 클래스를 구현 `CViewInfo` 합니다.
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
 Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) 를 참조 하세요.
 
@@ -1319,11 +1319,11 @@ Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 �
 |m_bIsUpdatable|IS_UPDATABLE|
 |m_szDescription|설명|
 
-## <a name="cviewtableusage-cviewtableinfo"></a><a name="viewtable"></a>CViewTableUsage, Cviewtableusage
+## <a name="cviewtableusage-cviewtableinfo"></a><a name="viewtable"></a> CViewTableUsage, Cviewtableusage
 
-`CViewTableInfo``CViewTableUsage` typedef 클래스를 호출 하 여 해당 매개 변수 클래스를 구현 합니다.
+Typedef 클래스를 호출 `CViewTableUsage` 하 여 해당 매개 변수 클래스를 구현 `CViewTableInfo` 합니다.
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
 Typedef 클래스 사용에 대 한 자세한 내용은 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) 를 참조 하세요.
 

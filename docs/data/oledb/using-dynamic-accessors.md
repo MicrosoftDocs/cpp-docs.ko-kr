@@ -5,22 +5,22 @@ helpviewer_keywords:
 - accessors [C++], dynamic
 - dynamic accessors
 ms.assetid: e5d5bfa6-2b1d-49d0-8ced-914666422431
-ms.openlocfilehash: 4539247894c3980464e744c76cea450324372382
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: eea1c6199fed5a4e6e331c1c76f34b96090b709a
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62403063"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509420"
 ---
 # <a name="using-dynamic-accessors"></a>동적 접근자 사용
 
-동적 접근자를 사용 하면 데이터베이스 스키마 (내부 구조)에 대 한 지식이 없는 경우 데이터 소스에 액세스할 수 있습니다. OLE DB 템플릿 라이브러리 수 있도록 몇 가지 클래스를 제공 합니다.
+동적 접근자를 사용 하면 데이터베이스 스키마 (기본 구조)에 대 한 지식이 없을 때 데이터 원본에 액세스할 수 있습니다. OLE DB 템플릿 라이브러리는 도움이 되는 몇 가지 클래스를 제공 합니다.
 
-합니다 [DynamicConsumer](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/DynamicConsumer) 샘플 동적 접근자 클래스를 사용 하 여 열 정보를 가져올를 동적으로 접근자를 만드는 방법을 보여 줍니다.
+[Dynamicconsumer](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/DynamicConsumer) 샘플은 동적 접근자 클래스를 사용 하 여 열 정보를 가져오고 접근자를 동적으로 만드는 방법을 보여 줍니다.
 
-## <a name="using-cdynamicaccessor"></a>CDynamicAccessor를 사용 하 여
+## <a name="using-cdynamicaccessor"></a>CDynamicAccessor 사용
 
-[CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) 데이터베이스 스키마 (데이터베이스의 내부 구조)에 대 한 지식이 없는 경우 데이터 소스에 액세스할 수 있습니다. `CDynamicAccessor` 메서드는 열 이름, 수 및 데이터 형식이 같은 열 정보를 가져옵니다. 이 열 정보를 사용 하 여 접근자를 런타임에 동적으로 만듭니다. 열 정보를 만들고이 클래스에서 관리 하는 버퍼에 저장 됩니다. 사용 하 여 버퍼에서 데이터 가져오기는 [GetValue](../../data/oledb/cdynamicaccessor-getvalue.md) 메서드.
+[Cdynamicaccessor](../../data/oledb/cdynamicaccessor-class.md) 를 사용 하면 데이터베이스 스키마 (데이터베이스의 기본 구조)에 대 한 지식이 없을 때 데이터 원본에 액세스할 수 있습니다. `CDynamicAccessor` 메서드는 열 이름, 개수, 데이터 형식 등의 열 정보를 가져옵니다. 이 열 정보를 사용 하 여 런타임에 동적으로 접근자를 만들 수 있습니다. 열 정보는이 클래스로 만들고 관리 하는 버퍼에 저장 됩니다. [GetValue](./cdynamicaccessor-class.md#getvalue) 메서드를 사용 하 여 버퍼에서 데이터를 가져옵니다.
 
 ## <a name="example"></a>예제
 
@@ -88,11 +88,11 @@ int main(int argc, char* argv[] )
 }
 ```
 
-## <a name="using-cdynamicstringaccessor"></a>CDynamicStringAccessor를 사용 하 여
+## <a name="using-cdynamicstringaccessor"></a>CDynamicStringAccessor 사용
 
-[CDynamicStringAccessor](../../data/oledb/cdynamicstringaccessor-class.md) 처럼 작동 [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md), 중요 한 한 가지 제외 합니다. 하는 동안 `CDynamicAccessor` 공급자가 보고 한 원시 형식으로 데이터를 요청 `CDynamicStringAccessor` 는 공급자 문자열 데이터로 데이터 저장소에서 액세스 하는 모든 데이터를 인출 하는 요청입니다. 프로세스 표시 또는 데이터 저장소의 내용을 인쇄와 같은 데이터 저장소에 있는 값의 계산 되지 않아도 되는 간단한 작업에 특히 유용 합니다.
+[Cdynamicstringaccessor](../../data/oledb/cdynamicstringaccessor-class.md) 는 한 가지 중요 한 방법을 제외 하 고 [cdynamicaccessor](../../data/oledb/cdynamicaccessor-class.md)와 유사 하 게 작동 합니다. 는 `CDynamicAccessor` 공급자가 보고 하는 네이티브 형식으로 데이터를 요청 하 고는 `CDynamicStringAccessor` 공급자가 데이터 저장소에서 액세스 한 모든 데이터를 문자열 데이터로 가져오도록 요청 합니다. 이 프로세스는 데이터 저장소의 내용 표시 또는 인쇄와 같이 데이터 저장소의 값을 계산할 필요가 없는 간단한 작업에 특히 유용 합니다.
 
-사용 하 여 `CDynamicStringAccessor` 열 정보를 가져올 방법입니다. 이 열 정보를 사용 하 여 접근자를 런타임에 동적으로 만듭니다. 열 정보를 만들고이 클래스에 의해 관리 되는 버퍼에 저장 됩니다. 사용 하 여 버퍼에서 데이터 가져오기 [cdynamicstringaccessor:: Getstring](../../data/oledb/cdynamicstringaccessor-getstring.md) 아니면 사용 하 여 버퍼에 저장할 [cdynamicstringaccessor:: Setstring](../../data/oledb/cdynamicstringaccessor-setstring.md)합니다.
+`CDynamicStringAccessor`메서드를 사용 하 여 열 정보를 가져옵니다. 이 열 정보를 사용 하 여 런타임에 동적으로 접근자를 만들 수 있습니다. 열 정보는이 클래스에서 만들고 관리 하는 버퍼에 저장 됩니다. [Cdynamicstringaccessor](./cdynamicstringaccessor-class.md#getstring) :: GetString를 사용 하 여 버퍼에서 데이터를 가져오거나 [Cdynamicstringaccessor:: setstring](./cdynamicstringaccessor-class.md#setstring)을 사용 하 여 버퍼에 저장 합니다.
 
 ## <a name="example"></a>예제
 
@@ -148,18 +148,18 @@ int main(int argc, char* argv[] )
 }
 ```
 
-## <a name="using-cdynamicparameteraccessor"></a>CDynamicParameterAccessor를 사용 하 여
+## <a name="using-cdynamicparameteraccessor"></a>CDynamicParameterAccessor 사용
 
-[CDynamicParameterAccessor](../../data/oledb/cdynamicparameteraccessor-class.md) 비슷합니다 [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md)점을 제외 하 고 `CDynamicParameterAccessor` 호출 하 여 설정할 매개 변수 정보를 가져옵니다 합니다 [ICommandWithParameters](/sql/relational-databases/native-client-ole-db-interfaces/icommandwithparameters) 인터페이스입니다. 공급자는 이 클래스를 사용할 소비자에 대해 `ICommandWithParameters` 를 지원해야 합니다.
+[Cdynamicparameteraccessor](../../data/oledb/cdynamicparameteraccessor-class.md) 는 ICommandWithParameters 인터페이스를 호출 하 여 설정할 매개 변수 정보를 가져오는 점을 제외 하 고 [cdynamicaccessor](../../data/oledb/cdynamicaccessor-class.md)와 유사 `CDynamicParameterAccessor` 합니다. [ICommandWithParameters](/sql/relational-databases/native-client-ole-db-interfaces/icommandwithparameters) 공급자는 이 클래스를 사용할 소비자에 대해 `ICommandWithParameters` 를 지원해야 합니다.
 
-매개 변수 정보는 이 클래스로 만들고 관리하는 버퍼에 저장됩니다. 매개 변수 데이터를 사용 하 여 버퍼에서 가져오지 [cdynamicparameteraccessor:: Getparam](../../data/oledb/cdynamicparameteraccessor-getparam.md) 하 고 [cdynamicparameteraccessor:: Getparamtype](../../data/oledb/cdynamicparameteraccessor-getparamtype.md)합니다.
+매개 변수 정보는 이 클래스로 만들고 관리하는 버퍼에 저장됩니다. [Cdynamicparameteraccessor:: GetParam](./cdynamicparameteraccessor-class.md#getparam) 및 [Cdynamicparameteraccessor:: GetParamType](./cdynamicparameteraccessor-class.md#getparamtype)를 사용 하 여 버퍼에서 매개 변수 데이터를 가져옵니다.
 
-SQL Server 저장 프로시저를 실행 하 고 출력 매개 변수 값을 가져옵니다이 클래스를 사용 하는 방법을 보여주는 예제를 참조 하세요. 합니다 [DynamicConsumer](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/DynamicConsumer) 샘플에서 코드를 [Microsoft 사용자를 위해](https://github.com/Microsoft/VCSamples) GitHub의 리포지토리를 제공 합니다.
+이 클래스를 사용 하 여 SQL Server 저장 프로시저를 실행 하 고 출력 매개 변수 값을 가져오는 방법을 보여 주는 예제는 GitHub의 [Microsoft VCSamples](https://github.com/Microsoft/VCSamples) 리포지토리에서 [dynamicconsumer](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/DynamicConsumer) 샘플 코드를 참조 하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [접근자 사용](../../data/oledb/using-accessors.md)<br/>
 [CDynamicAccessor 클래스](../../data/oledb/cdynamicaccessor-class.md)<br/>
-[CDynamicStringAccessor Class](../../data/oledb/cdynamicstringaccessor-class.md)<br/>
+[CDynamicStringAccessor 클래스](../../data/oledb/cdynamicstringaccessor-class.md)<br/>
 [CDynamicParameterAccessor 클래스](../../data/oledb/cdynamicparameteraccessor-class.md)<br/>
 [DynamicConsumer 샘플](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/DynamicConsumer)

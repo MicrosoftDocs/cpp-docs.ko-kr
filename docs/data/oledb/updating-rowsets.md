@@ -7,12 +7,12 @@ helpviewer_keywords:
 - updating rowsets
 - rowsets
 ms.assetid: 39588758-5c72-4254-a10d-cc2b1f473357
-ms.openlocfilehash: 22e362170d645574b40070c6db39c2576d3ae9c8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 134ab73428b7535bb34094b7d5b1952fd61a3d69
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212945"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509447"
 ---
 # <a name="updating-rowsets"></a>행 집합 업데이트
 
@@ -20,11 +20,11 @@ ms.locfileid: "87212945"
 
 소비자는 행 내의 열 값 설정, 행 삽입, 행 삭제 등의 업데이트를 행 집합 데이터에서 완료할 수 있습니다. 이러한 작업을 완료하기 위해 OLE DB 템플릿 클래스 [CRowset](../../data/oledb/crowset-class.md)는 [IRowsetChange](/previous-versions/windows/desktop/ms715790(v=vs.85)) 인터페이스를 구현하고 다음 인터페이스 메서드를 재정의합니다.
 
-- [SetData](../../data/oledb/crowset-setdata.md)는 행 집합의 한 행에서 열 값을 변경하며, SQL UPDATE 명령과 같습니다.
+- [SetData](./crowset-class.md#setdata)는 행 집합의 한 행에서 열 값을 변경하며, SQL UPDATE 명령과 같습니다.
 
-- [Insert](../../data/oledb/crowset-insert.md)는 행 집합에 한 행을 삽입하며, SQL INSERT 명령과 같습니다.
+- [Insert](./crowset-class.md#insert)는 행 집합에 한 행을 삽입하며, SQL INSERT 명령과 같습니다.
 
-- [Delete](../../data/oledb/crowset-delete.md)는 행 집합에서 행을 삭제하며, SQL DELETE 명령과 같습니다.
+- [Delete](./crowset-class.md#delete)는 행 집합에서 행을 삭제하며, SQL DELETE 명령과 같습니다.
 
 ## <a name="supporting-update-operations"></a>업데이트 작업 지원
 
@@ -52,7 +52,7 @@ ps.AddProperty(DBPROP_UPDATABILITY, DBPROPVAL_UP_CHANGE | DBPROPVAL_UP_INSERT | 
 
 ## <a name="setting-data-in-rows"></a>행의 데이터 설정
 
-[Crowset:: Setdata](../../data/oledb/crowset-setdata.md) 는 현재 행의 하나 이상 열에 데이터 값을 설정합니다. 다음 코드에서는 `Products` 테이블의 `Name` 및 `Units in Stock` 열에 바인딩된 데이터 멤버의 값을 설정하고 `SetData`를 호출하여 행 집합의 100번째 행에 해당 값을 씁니다.
+[Crowset:: Setdata](./crowset-class.md#setdata) 는 현재 행의 하나 이상 열에 데이터 값을 설정합니다. 다음 코드에서는 `Products` 테이블의 `Name` 및 `Units in Stock` 열에 바인딩된 데이터 멤버의 값을 설정하고 `SetData`를 호출하여 행 집합의 100번째 행에 해당 값을 씁니다.
 
 ```cpp
 // Instantiate a rowset based on the user record class
@@ -74,7 +74,7 @@ HRESULT hr = product.SetData();
 
 ## <a name="inserting-rows-into-rowsets"></a>행 집합에 행 삽입
 
-[Crowset:: Insert](../../data/oledb/crowset-insert.md) 는 접근자의 데이터를 사용하여 새 행을 만들고 초기화합니다. `Insert`는 현재 행 뒤에 완전히 새로운 행을 만듭니다. 현재 행을 다음 행으로 증가할지 또는 변경하지 않고 그대로 유지할지를 지정해야 합니다. 이렇게 하려면 *bGetRow* 매개 변수를 설정합니다.
+[Crowset:: Insert](./crowset-class.md#insert) 는 접근자의 데이터를 사용하여 새 행을 만들고 초기화합니다. `Insert`는 현재 행 뒤에 완전히 새로운 행을 만듭니다. 현재 행을 다음 행으로 증가할지 또는 변경하지 않고 그대로 유지할지를 지정해야 합니다. 이렇게 하려면 *bGetRow* 매개 변수를 설정합니다.
 
 ```cpp
 HRESULT Insert(int nAccessor = 0, bool bGetRow = false)
@@ -131,13 +131,13 @@ m_dwQuantityPerUnitLength = 10;        // "Pack of 10" has 10 characters
 HRESULT hr = product.Insert();
 ```
 
-자세한 예제는 [CRowset::Insert](../../data/oledb/crowset-insert.md)를 참조하세요.
+자세한 예제는 [CRowset::Insert](./crowset-class.md#insert)를 참조하세요.
 
 상태 및 길이 데이터 멤버를 설정하는 방법에 대한 자세한 내용은 [마법사 생성 접근자의 필드 상태 데이터 멤버](../../data/oledb/field-status-data-members-in-wizard-generated-accessors.md)를 참조하세요.
 
 ## <a name="deleting-rows-from-rowsets"></a>행 집합에서 행 삭제
 
-[Crowset:: Delete](../../data/oledb/crowset-delete.md) 는 행 집합에서 현재 행을 삭제합니다. 다음 코드에서는 `Delete`를 호출하여 행 집합의 100번째 행을 제거합니다.
+[Crowset:: Delete](./crowset-class.md#delete) 는 행 집합에서 현재 행을 삭제합니다. 다음 코드에서는 `Delete`를 호출하여 행 집합의 100번째 행을 제거합니다.
 
 ```cpp
 // Instantiate a rowset based on the user record class
@@ -156,9 +156,9 @@ HRESULT hr = product.Delete();
 
 달리 지정하지 않은 경우 `SetData`, `Insert` 및 `Delete` 메서드를 호출하면 데이터 저장소가 즉시 업데이트됩니다. 그러나 소비자가 모든 변경 내용을 로컬 캐시에 저장한 후 다음 업데이트 메서드 중 하나가 호출될 때 데이터 저장소에 전송하도록 업데이트를 연기할 수 있습니다.
 
-- [Crowset::Update](../../data/oledb/crowset-update.md)는 마지막 페치 또는 `Update` 호출 이후 현재 행의 보류 중인 변경 내용을 모두 전송합니다.
+- [Crowset::Update](./crowset-class.md#update)는 마지막 페치 또는 `Update` 호출 이후 현재 행의 보류 중인 변경 내용을 모두 전송합니다.
 
-- [Crowset::UpdateAll](../../data/oledb/crowset-updateall.md)은 마지막 페치 또는 `Update` 호출 이후 모든 행의 보류 중인 변경 내용을 모두 전송합니다.
+- [Crowset::UpdateAll](./crowset-class.md#updateall)은 마지막 페치 또는 `Update` 호출 이후 모든 행의 보류 중인 변경 내용을 모두 전송합니다.
 
 update 메서드에서 사용되는 업데이트는 명령을 변경하는 특별한 의미가 있으며 SQL **UPDATE** 명령과 혼동해서는 안 됩니다(`SetData`가 SQL **UPDATE** 명령과 같음).
 
@@ -204,7 +204,7 @@ product.Update();                 // Update row 101 now
 
 예를 들어 위의 코드에서 첫 번째 `Update` 호출을 누락하면 100행은 변경되지 않지만 101행은 변경됩니다. 이후에 해당 행을 업데이트하려면 애플리케이션에서 `UpdateAll`을 호출하거나, 100행으로 돌아가서 `Update`를 호출해야 합니다.
 
-마지막으로, 변경 내용을 연기하는 주요 이유는 변경 내용을 취소할 수 있기 때문입니다. [CRowset::Undo](../../data/oledb/crowset-undo.md) 를 호출하면 로컬 변경 캐시의 상태가 보류 중인 변경 전의 데이터 저장소 상태로 롤백됩니다. `Undo`는 로컬 캐시의 상태를 한 단계(최신 변경 바로 이전 상태) 롤백하는 대신에 해당 행의 로컬 캐시를 지웁니다. 또한 `Undo`는 현재 행에만 영향을 줍니다.
+마지막으로, 변경 내용을 연기하는 주요 이유는 변경 내용을 취소할 수 있기 때문입니다. [CRowset::Undo](./crowset-class.md#undo) 를 호출하면 로컬 변경 캐시의 상태가 보류 중인 변경 전의 데이터 저장소 상태로 롤백됩니다. `Undo`는 로컬 캐시의 상태를 한 단계(최신 변경 바로 이전 상태) 롤백하는 대신에 해당 행의 로컬 캐시를 지웁니다. 또한 `Undo`는 현재 행에만 영향을 줍니다.
 
 ## <a name="see-also"></a>참고 항목
 

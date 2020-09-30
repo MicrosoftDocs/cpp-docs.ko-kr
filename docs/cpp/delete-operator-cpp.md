@@ -8,12 +8,12 @@ helpviewer_keywords:
 - delete keyword [C++], deallocating objects
 - delete keyword [C++]
 ms.assetid: de39c900-3f57-489c-9598-dcb73c4b3930
-ms.openlocfilehash: 19f92e2aa62adf1ede4c0e6ab1187fd9e4106e68
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8ce9b8e606d5bbc2051af76e6dc4ac1350ec81a6
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221694"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509145"
 ---
 # <a name="delete-operator-c"></a>delete 연산자 (C++)
 
@@ -26,7 +26,7 @@ ms.locfileid: "87221694"
 
 ## <a name="remarks"></a>설명
 
-*Cast 식* 인수는 [new 연산자](../cpp/new-operator-cpp.md)를 사용 하 여 만든 개체에 대해 이전에 할당 된 메모리 블록에 대 한 포인터 여야 합니다. **`delete`** 연산자의 결과는 형식 **`void`** 이므로 값을 반환 하지 않습니다. 예를 들면 다음과 같습니다.
+*Cast 식* 인수는 [new 연산자](../cpp/new-operator-cpp.md)를 사용 하 여 만든 개체에 대해 이전에 할당 된 메모리 블록에 대 한 포인터 여야 합니다. **`delete`** 연산자의 결과는 형식 **`void`** 이므로 값을 반환 하지 않습니다. 다음은 그 예입니다.
 
 ```cpp
 CDialog* MyDialog = new CDialog;
@@ -50,7 +50,7 @@ delete [] set;
 
 연산자에 대 한 피연산자 **`delete`** 가 수정 가능한 l-value 이면 개체가 삭제 된 후에는 해당 값이 정의 되지 않습니다.
 
-[/Sdl (추가 보안 검사 사용)](/cpp/build/reference/sdl-enable-additional-security-checks) 컴파일러 옵션을 지정 하면 **`delete`** 개체를 삭제 한 후 연산자에 대 한 피연산자가 잘못 된 값으로 설정 됩니다.
+[/Sdl (추가 보안 검사 사용)](../build/reference/sdl-enable-additional-security-checks.md) 컴파일러 옵션을 지정 하면 **`delete`** 개체를 삭제 한 후 연산자에 대 한 피연산자가 잘못 된 값으로 설정 됩니다.
 
 ## <a name="using-delete"></a>삭제 사용
 

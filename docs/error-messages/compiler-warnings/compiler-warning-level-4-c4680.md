@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4680
 ms.assetid: 6e043f4c-c601-4b77-8130-920cff1d912e
-ms.openlocfilehash: 21ea9bf54a493a72dc24c607812eaed69f9ef71b
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: ea9eb681d1696c77184a9999a94367a0bce8c454
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74990464"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91510046"
 ---
 # <a name="compiler-warning-level-4-c4680"></a>컴파일러 경고(수준 4) C4680
 
 ' class ': coclass가 기본 인터페이스를 지정 하지 않습니다.
 
-[Coclass](../../windows/coclass.md) 특성으로 표시 된 클래스에 대해 [기본](../../windows/default-cpp.md) 인터페이스를 지정 하지 않았습니다. 개체를 유용 하 게 적용 하려면 인터페이스를 구현 해야 합니다.
+[Coclass](../../windows/attributes/coclass.md) 특성으로 표시 된 클래스에 대해 [기본](../../windows/attributes/default-cpp.md) 인터페이스를 지정 하지 않았습니다. 개체를 유용 하 게 적용 하려면 인터페이스를 구현 해야 합니다.
 
 다음 샘플에서는 C4680를 생성 합니다.
 

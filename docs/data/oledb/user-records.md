@@ -15,12 +15,12 @@ helpviewer_keywords:
 - accessors [C++], static
 - BEGIN_ACCESSOR macro, example
 ms.assetid: 2de9e5eb-53ce-42b1-80fa-57d46600a80c
-ms.openlocfilehash: 94a70b48793d44eda4fd76d9b59460418cfbc032
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 2de4cc9227da9d4ad8a012dacd85500ab698c4ae
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80209445"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509423"
 ---
 # <a name="user-records"></a>사용자 레코드
 
@@ -64,7 +64,7 @@ END_PARAM_MAP()
 
 여러 접근자를 사용해야 하는 시나리오에 대한 자세한 내용은 [행 집합에서 여러 접근자 사용](../../data/oledb/using-multiple-accessors-on-a-rowset.md)을 참조하세요.
 
-다음 예제에서는 행 집합에서 여러 접근자를 지원하도록 수정된 사용자 레코드를 보여 줍니다. BEGIN_COLUMN_MAP 및 END_COLUMN_MAP 대신 [BEGIN_ACCESSOR_MAP](../../data/oledb/begin-accessor-map.md) 및 [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md)를 각 접근자에 사용합니다. BEGIN_ACCESSOR 매크로는 접근자 수(0에서의 오프셋) 및 접근자가 자동 접근자인지 여부를 지정합니다. 자동 접근자는 `GetData`를 호출하여 [MoveNext](../../data/oledb/crowset-movenext.md) 호출에서 자동으로 데이터를 검색합니다. 자동이 아닌 접근자를 사용하는 경우 명시적으로 데이터를 검색해야 합니다. 모든 레코드에 대해 검색하지 않으려는 대규모 데이터 필드(예: 비트맵 이미지)에 바인딩하는 경우 자동이 아닌 접근자를 사용합니다.
+다음 예제에서는 행 집합에서 여러 접근자를 지원하도록 수정된 사용자 레코드를 보여 줍니다. BEGIN_COLUMN_MAP 및 END_COLUMN_MAP 대신 [BEGIN_ACCESSOR_MAP](./macros-and-global-functions-for-ole-db-consumer-templates.md#begin_accessor_map) 및 [BEGIN_ACCESSOR](./macros-and-global-functions-for-ole-db-consumer-templates.md#begin_accessor)를 각 접근자에 사용합니다. BEGIN_ACCESSOR 매크로는 접근자 수(0에서의 오프셋) 및 접근자가 자동 접근자인지 여부를 지정합니다. 자동 접근자는 `GetData`를 호출하여 [MoveNext](./crowset-class.md#movenext) 호출에서 자동으로 데이터를 검색합니다. 자동이 아닌 접근자를 사용하는 경우 명시적으로 데이터를 검색해야 합니다. 모든 레코드에 대해 검색하지 않으려는 대규모 데이터 필드(예: 비트맵 이미지)에 바인딩하는 경우 자동이 아닌 접근자를 사용합니다.
 
 ```cpp
 class CMultiArtists

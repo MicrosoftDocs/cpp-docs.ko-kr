@@ -6,12 +6,12 @@ f1_keywords:
 - <bit>
 helpviewer_keywords:
 - bit header
-ms.openlocfilehash: 5652d0af767520710ee08b1827e0df27c477ee6d
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: f9742ce1e15a817923c144544eb3bb6325e76765
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040056"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509955"
 ---
 # <a name="ltbitgt"></a>&lt;bit&gt;
 
@@ -31,13 +31,13 @@ ms.locfileid: "90040056"
 
 ### <a name="types"></a>유형
 
-| Type | Description |
+| 유형 | 설명 |
 |--------|----------|
 | [endian](bit-enum.md) | 스칼라 형식의 endian 지정 합니다. |
 
 ### <a name="functions"></a>Functions
 
-| 함수 | Description |
+| 함수 | 설명 |
 |-----|-----|
 |[bit_cast](bit-functions.md#bit_cast) | 개체 표현을 한 형식에서 다른 형식으로 다시 해석 합니다. |
 |[bit_ceil](bit-functions.md#bit_ceil) | 값 보다 크거나 같은 2의 가장 작은 거듭제곱을 찾습니다. |

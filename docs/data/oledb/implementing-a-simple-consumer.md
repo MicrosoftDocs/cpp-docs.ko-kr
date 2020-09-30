@@ -4,12 +4,12 @@ ms.date: 08/19/2019
 helpviewer_keywords:
 - OLE DB consumers, implementing
 ms.assetid: 13828167-23a4-4e94-8b6c-878262fda464
-ms.openlocfilehash: 2f290f2a17c51682c75fbc09118757e5fd12c4f7
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.openlocfilehash: 9e93b40313a215dfe5872b33dc7d41641204a2f1
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "79544707"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91508973"
 ---
 # <a name="implementing-a-simple-consumer"></a>단순 소비자 구현
 
@@ -72,7 +72,7 @@ Visual Studio 2019 이상에서는 ATL OLE DB 소비자 마법사를 사용할 �
 
 - `DBPROP_IRowsetLocate` 속성을 설정하여 공급자의 책갈피 열을 요청합니다.
 
-- [BOOKMARK_ENTRY](../../data/oledb/bookmark-entry.md) 매크로를 사용하여 열 맵에 책갈피 항목을 추가합니다.
+- [BOOKMARK_ENTRY](./macros-and-global-functions-for-ole-db-consumer-templates.md#bookmark_entry) 매크로를 사용하여 열 맵에 책갈피 항목을 추가합니다.
 
 이전 단계에서는 책갈피 지원과 사용할 책갈피 개체를 제공합니다. 이 코드 예제에서는 다음과 같이 책갈피를 보여 줍니다.
 
@@ -80,7 +80,7 @@ Visual Studio 2019 이상에서는 ATL OLE DB 소비자 마법사를 사용할 �
 
 - 행 집합 데이터를 파일에 행 단위로 출력합니다.
 
-- [MoveToBookmark](../../data/oledb/crowset-movetobookmark.md)를 호출하여 행 집합 커서를 책갈피로 이동합니다.
+- [MoveToBookmark](./crowset-class.md#movetobookmark)를 호출하여 행 집합 커서를 책갈피로 이동합니다.
 
 - 책갈피가 지정된 행을 출력하고 파일의 끝에 추가합니다.
 
@@ -207,4 +207,4 @@ Visual Studio 2019 이상에서는 ATL OLE DB 소비자 마법사를 사용할 �
 
 ## <a name="see-also"></a>참고 항목
 
-[마법사를 사용하여 OLE DB 소비자 만들기](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)
+[마법사를 사용 하 여 OLE DB 소비자 만들기](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)

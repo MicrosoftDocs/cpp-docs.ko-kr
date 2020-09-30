@@ -3,12 +3,12 @@ title: Windows 런타임 C++ 템플릿 라이브러리(WRL)
 ms.date: 11/04/2016
 ms.topic: overview
 ms.assetid: b915afce-553b-44a7-b8dc-0ab601758eb0
-ms.openlocfilehash: 10e2303fa5498079fc1f9bb6f82aa909c9a6c3ee
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 12bda00d6687340fbddfb8f81bbb83b6c2bd98a6
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840540"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509802"
 ---
 # <a name="windows-runtime-c-template-library-wrl"></a>Windows 런타임 C++ 템플릿 라이브러리(WRL)
 
@@ -32,11 +32,11 @@ Windows 런타임 c + + 템플릿 라이브러리 및 c + +/CX는 서로 다른 
 - C + +/CX는 COM HRESULT 값을 예외로 나타냅니다. COM을 사용 하는 코드 베이스 나 예외를 사용 하지 않는 코드 베이스를 상속한 경우 예외를 사용할 필요가 없기 때문에 Windows 런타임 c + + 템플릿 라이브러리를 사용 하 여 Windows 런타임를 사용 하는 것이 보다 자연스럽 게 발생할 수 있습니다.
 
    > [!NOTE]
-   > Windows 런타임 c + + 템플릿 라이브러리는 HRESULT 값을 사용 하며 예외를 throw 하지 않습니다. 또한 Windows 런타임 c + + 템플릿 라이브러리는 스마트 포인터와 RAII 패턴을 사용 하 여 응용 프로그램 코드에서 예외를 throw 할 때 개체가 올바르게 제거 되도록 합니다. 스마트 포인터와 RAII에 대 한 자세한 내용은 [스마트 포인터](../../cpp/smart-pointers-modern-cpp.md) 및 [개체 자체 리소스 (RAII)](../../cpp/objects-own-resources-raii.md)를 참조 하세요.
+   > Windows 런타임 c + + 템플릿 라이브러리는 HRESULT 값을 사용 하며 예외를 throw 하지 않습니다. 또한 Windows 런타임 c + + 템플릿 라이브러리는 스마트 포인터와 RAII 패턴을 사용 하 여 응용 프로그램 코드에서 예외를 throw 할 때 개체가 올바르게 제거 되도록 합니다. 스마트 포인터와 RAII에 대 한 자세한 내용은 [스마트 포인터](../../cpp/smart-pointers-modern-cpp.md) 및 [개체 자체 리소스 (RAII)](../../cpp/object-lifetime-and-resource-management-modern-cpp.md)를 참조 하세요.
 
 - Windows 런타임 c + + 템플릿 라이브러리의 목적과 디자인은 COM 개체의 프로그래밍을 간소화 하는 템플릿 기반 c + + 클래스 집합인 ATL (액티브 템플릿 라이브러리)에 의해 결정 됩니다. Windows 런타임 c + + 템플릿 라이브러리는 표준 c + +를 사용 하 여 Windows 런타임 래핑할 수 있으므로 ATL로 작성 된 많은 기존 COM 구성 요소를 보다 쉽게 이식 하 고 Windows 런타임 수 있습니다. ATL을 이미 알고 있는 경우 Windows 런타임 c + + 템플릿 라이브러리를 프로그래밍 하는 것이 더 쉬울 수 있습니다.
 
-## <a name="getting-started"></a>시작하기
+## <a name="getting-started"></a>시작
 
 다음은 Windows 런타임 c + + 템플릿 라이브러리를 즉시 사용 하는 데 도움이 되는 몇 가지 리소스입니다.
 

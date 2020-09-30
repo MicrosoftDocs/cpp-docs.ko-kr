@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3719
 ms.assetid: d0d59d4e-babb-4480-9ef7-70cf1a28165c
-ms.openlocfilehash: 4fca5bfd944514bf2658a8af5cbbd58efe5b39fc
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 9dce5fad3b38b0b0b396ff036f437af90e3e6d38
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74753187"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91510092"
 ---
 # <a name="compiler-error-c3719"></a>컴파일러 오류 C3719
 
@@ -46,7 +46,7 @@ int main() {
 }
 ```
 
-이 오류를 해결 하려면 [object](../../windows/object-cpp.md), [coclass](../../windows/coclass.md), [event_source](../../windows/event-source.md)및 [event_receiver](../../windows/event-receiver.md) 특성을 적절 하 게 적용 하 여 인터페이스 COM 클래스를 사용 하는 클래스를 만듭니다. 예를 들면 다음과 같습니다.:
+이 오류를 해결 하려면 [object](../../windows/attributes/object-cpp.md), [coclass](../../windows/attributes/coclass.md), [event_source](../../windows/attributes/event-source.md)및 [event_receiver](../../windows/attributes/event-receiver.md) 특성을 적절 하 게 적용 하 여 인터페이스 COM 클래스를 사용 하는 클래스를 만듭니다. 다음은 그 예입니다.
 
 ```cpp
 // C3719b.cpp

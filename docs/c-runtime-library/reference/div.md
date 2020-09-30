@@ -28,12 +28,12 @@ helpviewer_keywords:
 - dividing integers
 - remainder computing
 ms.assetid: 8ae80d97-54fd-499e-b14c-e30993b58119
-ms.openlocfilehash: 24432ec1514f6cd2d569fd5752a8ed7118059d6a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e0c87ad44986363e871d68bccde757214f5e2c45
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234226"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509892"
 ---
 # <a name="div-ldiv-lldiv"></a>div, ldiv, lldiv
 
@@ -75,7 +75,7 @@ lldiv_t div(
 *denom*<br/>
 분모입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 형식의 인수를 사용 하 여 호출 된 **div** 는 **`int`** 몫과 나머지를 구성 하는 **div_t**형식의 구조체를 반환 합니다. 형식의 인수를 포함 하는 반환 값 **`long`** 이 **ldiv_t**되 고 형식의 인수를 포함 하는 반환 값이 **`long long`** **lldiv_t**됩니다. **div_t**, **ldiv_t**및 **lldiv_t** 는에 정의 되어 \<stdlib.h> 있습니다.
 
@@ -134,5 +134,5 @@ The quotient is 67, and the remainder is 5
 ## <a name="see-also"></a>참고 항목
 
 [부동 소수점 지원](../../c-runtime-library/floating-point-support.md)<br/>
-[ldiv, lldiv](ldiv-lldiv.md)<br/>
+[ldiv, lldiv]()<br/>
 [imaxdiv](imaxdiv.md)<br/>

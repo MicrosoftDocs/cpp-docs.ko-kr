@@ -121,12 +121,12 @@ helpviewer_keywords:
 - std::basic_string [C++], substr
 - std::basic_string [C++], swap
 ms.assetid: a9c3e0a2-39bf-4c8a-b093-9abe30839591
-ms.openlocfilehash: 9012fc8203bf8b54e87e2c21f47f2ef6ef764c2d
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 0016926ff82be9ef2b52cf55b16bde2a6099f237
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040315"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509990"
 ---
 # <a name="basic_string-class"></a>basic_string 클래스
 
@@ -188,7 +188,7 @@ Basic_string 특수화의 요소에 대 한 다양 한 중요 한 속성 `CharTy
 |[수용](#capacity)|문자열의 메모리 할당을 늘리지 않고도 문자열에 저장할 수 있는 요소의 최대 수를 반환합니다.|
 |[cbegin](#cbegin)|문자열의 첫 번째 요소 주소를 지정하는 const 반복기를 반환합니다.|
 |[cend](#cend)|문자열에서 마지막 요소 다음에 나오는 위치를 주소 지정하는 const 반복기를 반환합니다.|
-|[해제](#clear)|문자열의 모든 요소를 지웁니다.|
+|[clear](#clear)|문자열의 모든 요소를 지웁니다.|
 |[과](#compare)|문자열을 지정된 문자열과 비교하여 두 문자열이 같은지 아니면 한 문자열이 다른 문자열보다 사전순으로 더 작은지를 확인합니다.|
 |[copy](#copy)|소스 문자열의 인덱싱된 위치에서 지정한 수까지의 문자를 대상 문자 배열에 복사합니다. 더 이상 사용되지 않습니다. 대신 [basic_string::_Copy_s](#copy_s)를 사용합니다.|
 |[crbegin](#crbegin)|역방향 문자열에서 첫 번째 요소의 주소를 지정하는 const 반복기를 반환합니다.|
@@ -196,7 +196,7 @@ Basic_string 특수화의 요소에 대 한 다양 한 중요 한 속성 `CharTy
 |[_Copy_s](#copy_s)|소스 문자열의 인덱싱된 위치에서 지정한 수까지의 문자를 대상 문자 배열에 복사합니다.|
 |[data](#data)|문자열의 내용을 문자 배열로 변환합니다.|
 |[empty](#empty)|문자열에 문자가 있는지 테스트합니다.|
-|[종단](#end)|문자열에서 마지막 요소 다음에 나오는 위치의 주소를 지정하는 반복기를 반환합니다.|
+|[end](#end)|문자열에서 마지막 요소 다음에 나오는 위치의 주소를 지정하는 반복기를 반환합니다.|
 |[ends_with](#ends_with)<sup>c + + 20</sup>|문자열이 지정 된 접미사로 끝나는지 여부를 확인 합니다.|
 |[erase](#erase)|문자열에서 지정된 위치의 요소 또는 요소 범위를 제거합니다.|
 |[find](#find)|문자열에서 지정된 문자 시퀀스와 일치하는 첫 번째 하위 문자열을 정방향으로 검색합니다.|
@@ -225,7 +225,7 @@ Basic_string 특수화의 요소에 대 한 다양 한 중요 한 속성 `CharTy
 
 ### <a name="operators"></a>연산자
 
-|연산자|Description|
+|연산자|설명|
 |-|-|
 |[operator + =](#op_add_eq)|문자열에 문자를 추가합니다.|
 |[연산자 =](#op_eq)|문자열의 내용에 새 문자 값을 할당합니다.|
@@ -4765,7 +4765,7 @@ int main()
 {
     std::basic_string<char> str = "abcdefg";
 
-    std::cout << std::boolalpha; // so booleans show as 'true'/'false'     
+    std::cout << std::boolalpha; // so booleans show as 'true'/'false'
     std::cout << str.starts_with('b') << '\n';
     std::cout << str.starts_with("aBc") << '\n';
 

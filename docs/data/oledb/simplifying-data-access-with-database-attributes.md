@@ -11,12 +11,12 @@ helpviewer_keywords:
 - OLE DB consumers [C++], database attributes
 - attributes [C++], OLE DB consumer
 ms.assetid: 560d2456-e307-4cb7-ba7b-4d0ed674697f
-ms.openlocfilehash: d22f8a25bc7bb58f72346a15edb51f062c44e1b4
-ms.sourcegitcommit: 44eeb065c3148d0484de791080a3f963109744fc
+ms.openlocfilehash: faee3ea47a6d96b09729d9d4b5bfa21584096d31
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79546178"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509464"
 ---
 # <a name="simplifying-data-access-with-database-attributes"></a>데이터베이스 특성을 사용하여 데이터 액세스 단순화
 
@@ -28,26 +28,26 @@ ms.locfileid: "79546178"
 
 두 파일을 비교 하 여 특성을 사용 하는 것이 얼마나 간단한 지 확인할 수 있습니다. 차이점은 다음과 같습니다.
 
-- 특성을 사용 하 여 `CAuthors`클래스를 하나만 선언 하면 됩니다. 단, 템플릿을 사용 하는 경우에는 두 가지 `CAuthorsNoAttrAccessor` 및 `CAuthorsNoAttr`를 선언 해야 합니다.
+- 특성을 사용 하 여 하나의 클래스만 선언 하면 됩니다. 단 `CAuthors` , 템플릿을 사용 하는 경우 두 개의 및를 선언 해야 `CAuthorsNoAttrAccessor` `CAuthorsNoAttr` 합니다.
 
-- 특성을 사용 하는 버전의 `db_source` 호출은 템플릿 선언에서 `OpenDataSource()` 호출에 해당 합니다.
+- `db_source`특성을 사용 하는 버전의 호출은 `OpenDataSource()` 템플릿 선언에서 호출 하는 것과 같습니다.
 
-- 특성 사용 버전의 `db_table` 호출은 다음 템플릿 선언과 동일 합니다.
+- `db_table`특성 사용 버전의 호출은 다음 템플릿 선언과 동일 합니다.
 
     ```cpp
     class CAuthorsNoAttr : public CTable<CAccessor<CAuthorsNoAttrAccessor>>
     ```
 
-- 특성을 사용 하는 버전의 `db_column` 호출은 템플릿 선언에서 열 지도 (`BEGIN_COLUMN_MAP ... END_COLUMN_MAP`참조)와 동일 합니다.
+- 특성을 사용 하는 `db_column` 버전의 호출은 템플릿 선언의 열 맵 (참조)과 동일 합니다 `BEGIN_COLUMN_MAP ... END_COLUMN_MAP` .
 
-특성은 사용자 레코드 클래스 선언을 삽입 합니다. 사용자 레코드 클래스는 템플릿 선언에서 `CAuthorsNoAttrAccessor`와 같습니다. 테이블 클래스가 `CAuthors`경우 삽입 된 사용자 레코드 클래스의 이름은 `CAuthorsAccessor`이며 삽입 된 코드 에서만 해당 선언을 볼 수 있습니다. 자세한 내용은 [사용자 레코드](../../data/oledb/user-records.md)에서 "특성 삽입 사용자 레코드 클래스"를 참조 하십시오.
+특성은 사용자 레코드 클래스 선언을 삽입 합니다. 사용자 레코드 클래스는 `CAuthorsNoAttrAccessor` 템플릿 선언에서와 같습니다. 테이블 클래스가 인 경우 `CAuthors` 삽입 된 사용자 레코드 클래스의 이름은 이며 `CAuthorsAccessor` 삽입 된 코드 에서만 해당 선언을 볼 수 있습니다. 자세한 내용은 [사용자 레코드](../../data/oledb/user-records.md)에서 "특성 삽입 사용자 레코드 클래스"를 참조 하십시오.
 
-특성을 사용 하는 코드와 템플릿 기반 코드 모두 `CDBPropSet::AddProperty`를 사용 하 여 행 집합 속성을 설정 해야 합니다.
+특성 사용 및 템플릿 기반 코드 모두에서를 사용 하 여 행 집합 속성을 설정 해야 합니다 `CDBPropSet::AddProperty` .
 
-이 항목에서 설명 하는 특성에 대 한 자세한 내용은 [OLE DB Consumer attributes](../../windows/ole-db-consumer-attributes.md)를 참조 하십시오.
+이 항목에서 설명 하는 특성에 대 한 자세한 내용은 [OLE DB Consumer attributes](../../windows/attributes/ole-db-consumer-attributes.md)를 참조 하십시오.
 
 > [!NOTE]
-> 아래 예제를 컴파일하려면 다음 `include` 문이 필요 합니다.
+> `include`아래 예제를 컴파일하려면 다음 문이 필요 합니다.
 
 > ```cpp
 > #include <atlbase.h>
@@ -57,7 +57,7 @@ ms.locfileid: "79546178"
 
 ## <a name="table-and-accessor-declaration-using-attributes"></a>특성을 사용 하는 테이블 및 접근자 선언
 
-다음 코드는 테이블 클래스에 대 한 `db_source` 및 `db_table`를 호출 합니다. 사용할 데이터 원본 및 연결을 지정 하 `db_source`입니다. `db_table`는 테이블 클래스를 선언 하는 데 적합 한 템플릿 코드를 삽입 합니다. 열 맵을 지정 하 `db_column` 접근자 선언을 삽입 합니다. ATL을 지 원하는 모든 프로젝트에서 OLE DB 소비자 특성을 사용할 수 있습니다.
+다음 코드에서는 `db_source` `db_table` 테이블 클래스에 대해 및를 호출 합니다. `db_source` 사용할 데이터 원본 및 연결을 지정 합니다. `db_table` 테이블 클래스를 선언 하는 데 적합 한 템플릿 코드를 삽입 합니다. `db_column` 열 맵을 지정 하 고 접근자 선언을 삽입 합니다. ATL을 지 원하는 모든 프로젝트에서 OLE DB 소비자 특성을 사용할 수 있습니다.
 
 다음은 특성을 사용 하는 테이블 및 접근자 선언입니다.
 
@@ -202,4 +202,4 @@ HRESULT hr = Open(m_session, "Authors", pPropSet);
 
 ## <a name="see-also"></a>참고 항목
 
-[OLE DB 소비자 특성](../../windows/ole-db-consumer-attributes.md)
+[OLE DB 소비자 특성](../../windows/attributes/ole-db-consumer-attributes.md)
