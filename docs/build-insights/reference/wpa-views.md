@@ -7,12 +7,12 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 8bbcc43ef19adfd85a3679a2136d471333a74a10
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a5b13ee08becd472b3bc52319212b84a9c8ffc25
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224099"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91508805"
 ---
 # <a name="reference-windows-performance-analyzer-views"></a>참조: Windows Performance Analyzer 뷰
 
@@ -28,7 +28,7 @@ C++ Build Insights 도구는 Visual Studio 2019에서 사용할 수 있습니다
 - 데이터 열 설명
 - 각 뷰에서 사용 가능한 미리 설정(해당 용도 및 기본 설정 보기 모드 등)
 
-WPA를 처음 사용하는 경우에는 먼저 [C++ Build Insights용 WPA의 기본 사항](/cpp/build-insights/tutorials/wpa-basics)을 숙지하는 것이 좋습니다.
+WPA를 처음 사용하는 경우에는 먼저 [C++ Build Insights용 WPA의 기본 사항](../tutorials/wpa-basics.md)을 숙지하는 것이 좋습니다.
 
 ## <a name="build-explorer"></a>빌드 탐색기
 
@@ -130,9 +130,9 @@ WPA를 처음 사용하는 경우에는 먼저 [C++ Build Insights용 WPA의 기
 
 ## <a name="see-also"></a>참조
 
-[C++ Build Insights 활용 시작](/cpp/build-insights/get-started-with-cpp-build-insights)\
+[C++ Build Insights 활용 시작](../get-started-with-cpp-build-insights.md)\
 [참조: vcperf 명령](vcperf-commands.md)\
-[자습서: Windows Performance Analyzer 기본 사항](/cpp/build-insights/tutorials/wpa-basics)\
+[자습서: Windows Performance Analyzer 기본 사항](../tutorials/wpa-basics.md)\
 [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer)
 
 ::: moniker-end

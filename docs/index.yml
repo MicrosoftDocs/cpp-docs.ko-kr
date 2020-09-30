@@ -10,12 +10,12 @@ metadata:
   author: corob-msft
   ms.author: corob
   ms.date: 06/04/2020
-  ms.openlocfilehash: ac1e391207037bf88fd866181533662aa5856b69
-  ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+  ms.openlocfilehash: 6bfbf763e738a5c53f0b6df0b4790b762ab901f2
+  ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 08/25/2020
-  ms.locfileid: "88836973"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91509723"
 highlightedContent:
   items:
   - title: Visual Studio 설치 및 C++ 작업 선택
@@ -36,23 +36,23 @@ conceptualContent:
   - title: Visual Studio IDE 사용 방법 알아보기
     links:
     - text: Visual Studio 둘러보기 시작
-      url: https://docs.microsoft.com/visualstudio/ide/visual-studio-ide
+      url: /visualstudio/ide/visual-studio-ide
       itemType: overview
     - text: 리포지토리에서 코드 열기
-      url: https://docs.microsoft.com/visualstudio/get-started/tutorial-open-project-from-repo
+      url: /visualstudio/get-started/tutorial-open-project-from-repo
       itemType: tutorial
     - text: 코드 작성 및 편집
-      url: https://docs.microsoft.com/visualstudio/ide/index-writing-code
+      url: /visualstudio/ide/index-writing-code
       itemType: tutorial
     - text: 코드 빌드
-      url: https://docs.microsoft.com/visualstudio/ide/compiling-and-building-in-visual-studio
+      url: /visualstudio/ide/compiling-and-building-in-visual-studio
       itemType: tutorial
     - text: 코드 디버그
       itemType: tutorial
-      url: https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-with-cplusplus
+      url: /visualstudio/debugger/quickstart-debug-with-cplusplus
     - text: 코드 테스트
       itemType: tutorial
-      url: https://docs.microsoft.com/visualstudio/test/writing-unit-tests-for-c-cpp
+      url: /visualstudio/test/writing-unit-tests-for-c-cpp
   - title: Visual Studio에서 C++ 및 C 앱 작성
     links:
     - text: 콘솔 계산기 앱 만들기
@@ -147,7 +147,7 @@ additionalContent:
       - text: 유니버설 Windows 플랫폼 개발
         url: cppcx/universal-windows-apps-cpp.md
       - text: Windows 데스크톱 개발
-        url: windows/windows-desktop-applications-cpp.md
+        url: ./windows/desktop-applications-visual-cpp.md
       - text: Linux 개발
         url: linux/index.yml
       - text: 모바일 개발
@@ -161,11 +161,11 @@ additionalContent:
       - text: 코드 프로젝트 빌드
         url: build/projects-and-build-systems-cpp.md
       - text: 코드 디버그
-        url: https://docs.microsoft.com/visualstudio/debugger/debugging-native-code
+        url: /visualstudio/debugger/debugging-native-code
       - text: 코드 분석
         url: code-quality/index.yml
       - text: 앱 성능 향상
-        url: https://docs.microsoft.com/visualstudio/profiling
+        url: /visualstudio/profiling
       - text: 코드 포팅 및 업그레이드
         url: porting/visual-cpp-porting-and-upgrading-guide.md
     - title: 라이브러리

@@ -8,12 +8,12 @@ metadata:
   author: corob-msft
   ms.author: corob
   ms.date: 04/26/2020
-  ms.openlocfilehash: ac705ae3ae457d804ed2ca884143c8c6cb5a4758
-  ms.sourcegitcommit: f7ebdfc3a260778c2ef938747cba1376c70ced15
+  ms.openlocfilehash: 427d92e8f30c15a67e43e6d413bb406c2383adea
+  ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 05/27/2020
-  ms.locfileid: "84108643"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91507905"
 landingContent:
 - title: Visual Studio에서 Linux C++ 앱 만들기
   linkLists:
@@ -52,4 +52,4 @@ landingContent:
   - linkListType: tutorial
     links:
     - text: Visual Studio에서 C++ 플랫폼 간 프로젝트 만들기
-      url: /cpp/build/get-started-linux-cmake
+      url: ../build/get-started-linux-cmake.md

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - stock properties, about stock properties
 - stock properties
 ms.assetid: 37bd4db7-efd3-4faa-87ad-64902ed16a36
-ms.openlocfilehash: 125d7272b5b9fb0f656ba0621667885026e152fb
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 63985643973782ea2b4240a338d66cb5cc2195dc
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228676"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91504685"
 ---
 # <a name="add-a-property"></a>속성 추가
 
@@ -107,8 +107,8 @@ ms.locfileid: "87228676"
 
   |옵션|설명|
   |------------|-----------------|
-  |**PropPut**|[PropPut](../windows/propput.md) 함수는 개체의 복사본을 반환합니다. 속성을 쓰기 가능하도록 만드는 기본적이고 가장 일반적인 방법입니다.|
-  |**PropPutRef**|[PropPutRef](../windows/propputref.md) 함수는 개체 자체의 복사본을 반환하지 않고 개체에 대한 참조를 반환합니다. 큰 구조체 또는 배열과 같은 초기화 오버헤드가 있을 수 있는 개체에는 이 옵션을 사용하는 것이 좋습니다.|
+  |**PropPut**|[PropPut](../windows/attributes/propput.md) 함수는 개체의 복사본을 반환합니다. 속성을 쓰기 가능하도록 만드는 기본적이고 가장 일반적인 방법입니다.|
+  |**PropPutRef**|[PropPutRef](../windows/attributes/propputref.md) 함수는 개체 자체의 복사본을 반환하지 않고 개체에 대한 참조를 반환합니다. 큰 구조체 또는 배열과 같은 초기화 오버헤드가 있을 수 있는 개체에는 이 옵션을 사용하는 것이 좋습니다.|
 
 - **매개 변수 특성**
 
@@ -179,7 +179,7 @@ ms.locfileid: "87228676"
 
 ## <a name="stock-properties"></a>스톡 속성
 
-[속성 추가 마법사](#idl-attributes-add-property-wizard)를 사용하여 MFC dispinterface에 속성을 추가하는 경우 마법사의 [이름](../ide/names-add-property-wizard.md) 페이지에 있는 **속성 이름** 목록에서 스톡 속성을 선택할 수 있습니다. 속성은 다음과 같습니다.
+[속성 추가 마법사](#idl-attributes-add-property-wizard)를 사용하여 MFC dispinterface에 속성을 추가하는 경우 마법사의 [이름](#names-add-property-wizard) 페이지에 있는 **속성 이름** 목록에서 스톡 속성을 선택할 수 있습니다. 속성은 다음과 같습니다.
 
 |속성 이름|설명|
 |-------------------|-----------------|

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - generic classes
 - generic C++ class wizard [C++]
 ms.assetid: e95a5a14-dbed-4edc-8551-344fe48613cb
-ms.openlocfilehash: e81ea442578e69bdd28301eba8f70561f6aa76c6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d5c00a35e375d133fbd3a6ed7fe3591e4b0cd54b
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230547"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91503133"
 ---
 # <a name="add-a-generic-c-class"></a>일반 C++ 클래스 추가
 
@@ -25,7 +25,7 @@ ms.locfileid: "87230547"
 
 1. **클래스 뷰**에서 새 클래스를 추가할 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가**를 선택한 다음, **클래스**를 선택합니다.
 
-1. [클래스 추가](../ide/add-class-dialog-box.md) 대화 상자의 템플릿 창에서 **C++ 클래스**를 선택합니다. **추가**를 선택하여 [일반 C++ 클래스 마법사](#generic-c-class-wizard)를 표시합니다.
+1. [클래스 추가](./adding-a-class-visual-cpp.md#add-class-dialog-box) 대화 상자의 템플릿 창에서 **C++ 클래스**를 선택합니다. **추가**를 선택하여 [일반 C++ 클래스 마법사](#generic-c-class-wizard)를 표시합니다.
 
 1. 마법사에서 클래스 이름을 입력한 다음, 설정을 정의하거나 기본값을 사용합니다.
 

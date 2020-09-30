@@ -8,12 +8,12 @@ helpviewer_keywords:
 - exporting DLLs [C++], C functions in C++ executables
 - exporting functions [C++], C functions in C++ executables
 ms.assetid: b51d6e5e-37cf-4c1c-b0bf-fcf188c82f00
-ms.openlocfilehash: b7ba2ed30615efb3b05e71cecf0ea69898feb8ba
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4dcf46e6bdde66a303afc2c4ec94fc8aefdd5e5d
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62273575"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91506647"
 ---
 # <a name="exporting-c-functions-for-use-in-c-or-c-language-executables"></a>C 함수를 C 또는 C++ 언어 실행 파일에서 사용할 수 있도록 내보내기
 
@@ -62,7 +62,7 @@ extern "C" {
 
 - [데코레이트된 이름](reference/decorated-names.md)
 
-- [extern을 사용하여 링크 지정](../cpp/using-extern-to-specify-linkage.md)
+- [extern을 사용하여 링크 지정](../cpp/extern-cpp.md)
 
 ## <a name="see-also"></a>참조
 

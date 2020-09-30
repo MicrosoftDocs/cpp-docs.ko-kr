@@ -7,12 +7,12 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 449fc2ddabc2bcf5b9b9f130a5e6816cdf4bc98d
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 2d4473e3682a6e00e0eef61cb73d7450976bcc0c
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90685517"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91507734"
 ---
 # <a name="tutorial-windows-performance-analyzer-basics"></a>자습서: Windows Performance Analyzer 기본 사항
 
@@ -59,8 +59,8 @@ WPA는 추적을 탐색하는 데 사용할 수 있는
 ## <a name="see-also"></a>추가 정보
 
 [자습서: vcperf 및 Windows Performance Analyzer](vcperf-and-wpa.md)\
-[참조: vcperf 명령](/cpp/build-insights/reference/vcperf-commands)\
-[참조: Windows Performance Analyzer 보기](/cpp/build-insights/reference/wpa-views)\
+[참조: vcperf 명령](../reference/vcperf-commands.md)\
+[참조: Windows Performance Analyzer 보기](../reference/wpa-views.md)\
 [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer)
 
 ::: moniker-end

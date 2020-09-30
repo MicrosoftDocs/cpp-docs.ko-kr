@@ -7,12 +7,12 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: f3a0b4a9c57fd55c6788481adbf91c48e362444e
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b82c1f7105b3fd03d8c21dd79617dbc66f3e090c
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833402"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91507779"
 ---
 # <a name="tutorial-vcperf-and-windows-performance-analyzer"></a>자습서: vcperf 및 Windows Performance Analyzer
 
@@ -123,10 +123,10 @@ Graph 탐색기에서 다른 보기도 사용할 수 있습니다. 포함된 정
 [자습서: Windows Performance Analyzer 기본 사항](wpa-basics.md)\
 빌드 추적을 분석하는 데 도움이 되는 일반적인 WPA 작업에 대해 알아봅니다.
 
-[참조: vcperf 명령](/cpp/build-insights/reference/vcperf-commands)\
+[참조: vcperf 명령](../reference/vcperf-commands.md)\
 *vcperf.exe* 명령 참조는 사용 가능한 모든 명령 옵션을 나열합니다.
 
-[참조: Windows Performance Analyzer 보기](/cpp/build-insights/reference/wpa-views)\
+[참조: Windows Performance Analyzer 보기](../reference/wpa-views.md)\
 WPA의 C++ Build Insights 보기에 대한 자세한 내용은 이 문서를 참조하세요.
 
 [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer)\
