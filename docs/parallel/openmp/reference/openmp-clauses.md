@@ -32,45 +32,45 @@ helpviewer_keywords:
 - schedule OpenMP clause
 - shared OpenMP clause
 ms.assetid: 806e7d8f-b204-4e4c-a12c-273ab540a7ca
-ms.openlocfilehash: 1c4c7961a173eb47394d03e9aabdd14574e62b08
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 495f77003fa43922d49f2fc5203076cbf927f86f
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81363894"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91505931"
 ---
 # <a name="openmp-clauses"></a>OpenMP 절
 
-OpenMP API에 사용되는 절에 대한 링크를 제공합니다.
+OpenMP API에서 사용 되는 절에 대 한 링크를 제공 합니다.
 
-Visual C++는 다음 OpenMP 절을 지원합니다.
+Visual C++는 다음 OpenMP 절을 지원 합니다.
 
-일반적인 특성의 경우:
+일반 특성의 경우:
 
 |절|Description|
 |------|-----------|
-|[if](#if-openmp)|루프를 병렬 또는 직렬로 실행할지 여부를 지정합니다.|
-|[num_threads](#num-threads)|스레드 팀의 스레드 수를 설정합니다.|
-|[주문](#ordered-openmp-clauses)|[명령된](openmp-directives.md#ordered-openmp-directives) 지시문을 루프에서 사용할 경우 명령문에 [대해](openmp-directives.md#for-openmp) 병렬로 필요합니다.|
-|[schedule](#schedule)|[for](openmp-directives.md#for-openmp) 지시문에 적용됩니다.|
-|[Nowait](#nowait)|지시문에서 암시적 장벽을 재정의합니다.|
+|[if](#if-openmp)|루프를 병렬로 실행할지 또는 순차적으로 실행할지를 지정 합니다.|
+|[num_threads](#num-threads)|스레드 팀의 스레드 수를 설정 합니다.|
+|[설정이](#ordered-openmp-clauses)|[순서가 지정](openmp-directives.md#ordered-openmp-directives) 된 지시문을 루프에서 사용 하는 경우 parallel [for](openmp-directives.md#for-openmp) 문에 필요 합니다.|
+|[일정과](#schedule)|[For](openmp-directives.md#for-openmp) 지시문에 적용 됩니다.|
+|[nowait](#nowait)|지시문에서 장벽을 암시적으로 재정의 합니다.|
 
 데이터 공유 특성의 경우:
 
 |절|Description|
 |------|-----------|
-|[private](#private-openmp)|각 스레드에 변수의 자체 인스턴스가 있어야 합니다.|
-|[firstprivate](#firstprivate)|각 스레드에는 변수의 자체 인스턴스가 있어야 하며 병렬 구문 앞에 존재하기 때문에 변수를 변수 값으로 초기화해야 합니다.|
-|[lastprivate](#lastprivate)|둘러싸는 컨텍스트의 변수 버전이 최종 반복(for-loop 구문) 또는 마지막 섹션(#pragma 섹션)을 실행하는 스레드중의 개인 버전과 동일하게 설정되도록 지정합니다.|
-|[공유](#shared-openmp)|하나 이상의 변수를 모든 스레드 간에 공유해야 한다고 지정합니다.|
-|[default](#default-openmp)|병렬 영역에서 범위가 지정되지 않은 변수의 동작을 지정합니다.|
-|[reduction](#reduction)|각 스레드에 비공개인 하나 이상의 변수가 병렬 영역의 끝에서 축소 작업의 대상이 되도록 지정합니다.|
-|[copyin](#copyin)|스레드가 [스레드개인](openmp-directives.md#threadprivate) 변수에 대해 마스터 스레드의 값에 액세스할 수 있습니다.|
-|[copyprivate](#copyprivate)|하나 이상의 변수를 모든 스레드 간에 공유해야 한다고 지정합니다.|
+|[private](#private-openmp)|각 스레드가 변수의 고유한 인스턴스를 갖도록 지정 합니다.|
+|[firstprivate](#firstprivate)|각 스레드에 변수의 고유한 인스턴스가 있어야 하 고, 변수가 병렬 구문 앞에 있기 때문에 변수의 값을 사용 하 여 초기화 되어야 함을 지정 합니다.|
+|[lastprivate](#lastprivate)|바깥쪽 컨텍스트의 변수 버전이 최종 반복 (for 루프 구문) 또는 마지막 섹션 (#pragma 섹션)을 실행 하는 모든 스레드의 전용 버전과 같도록 지정 합니다.|
+|[공유할](#shared-openmp)|하나 이상의 변수를 모든 스레드 간에 공유 하도록 지정 합니다.|
+|[default](#default-openmp)|병렬 영역에서 범위가 지정 되지 않은 변수의 동작을 지정 합니다.|
+|[적](#reduction)|각 스레드에 대해 private 인 하나 이상의 변수가 병렬 영역의 끝에서 감소 작업의 대상이 되도록 지정 합니다.|
+|[copyin](#copyin)|스레드가 [threadprivate](openmp-directives.md#threadprivate) 변수에 대해 마스터 스레드의 값에 액세스할 수 있도록 허용 합니다.|
+|[copyprivate](#copyprivate)|하나 이상의 변수를 모든 스레드 간에 공유 하도록 지정 합니다.|
 
-## <a name="copyin"></a><a name="copyin"></a>카피인
+## <a name="copyin"></a><a name="copyin"></a> copyin
 
-스레드가 [스레드개인](openmp-directives.md#threadprivate) 변수에 대해 마스터 스레드의 값에 액세스할 수 있습니다.
+스레드가 [threadprivate](openmp-directives.md#threadprivate) 변수에 대해 마스터 스레드의 값에 액세스할 수 있도록 허용 합니다.
 
 ```cpp
 copyin(var)
@@ -78,26 +78,26 @@ copyin(var)
 
 ### <a name="parameters"></a>매개 변수
 
-*Var*<br/>
-`threadprivate` 병렬 구문 앞에 있는 것처럼 마스터 스레드에서 변수값으로 초기화될 변수입니다.
+*var*<br/>
+`threadprivate`병렬 구문 앞에 있는 것 처럼 마스터 스레드에서 변수 값을 사용 하 여 초기화 되는 변수입니다.
 
 ### <a name="remarks"></a>설명
 
-`copyin`다음 지시문에 적용됩니다.
+`copyin` 다음 지시문에 적용 됩니다.
 
-- [parallel](openmp-directives.md#parallel)
+- [평행선](openmp-directives.md#parallel)
 - [for](openmp-directives.md#for-openmp)
-- [sections](openmp-directives.md#sections-openmp)
+- [섹션이](openmp-directives.md#sections-openmp)
 
-자세한 내용은 [2.7.2.7 카피인을](../../../parallel/openmp/2-7-2-7-copyin.md)참조하십시오.
+자세한 내용은 [2.7.2.7 copyin](../2-directives.md#2727-copyin)을 참조 하세요.
 
 ### <a name="example"></a>예제
 
-사용의 예는 [스레드private을](openmp-directives.md#threadprivate) `copyin`참조하십시오.
+사용에 대 한 예제는 [threadprivate](openmp-directives.md#threadprivate) 를 참조 하세요 `copyin` .
 
-## <a name="copyprivate"></a><a name="copyprivate"></a>카피프라이빗
+## <a name="copyprivate"></a><a name="copyprivate"></a> copyprivate
 
-하나 이상의 변수를 모든 스레드 간에 공유해야 한다고 지정합니다.
+하나 이상의 변수를 모든 스레드 간에 공유 하도록 지정 합니다.
 
 ```cpp
 copyprivate(var)
@@ -105,14 +105,14 @@ copyprivate(var)
 
 ### <a name="parameters"></a>매개 변수
 
-*Var*<br/>
-공유할 하나 이상의 변수입니다. 두 개 이상의 변수를 지정하면 변수 이름을 쉼표로 구분합니다.
+*var*<br/>
+공유할 변수를 하나 이상입니다. 둘 이상의 변수를 지정 하는 경우 변수 이름을 쉼표로 구분 합니다.
 
 ### <a name="remarks"></a>설명
 
-`copyprivate`[는 단일](openmp-directives.md#single) 지시문에 적용됩니다.
+`copyprivate`[단일](openmp-directives.md#single) 지시문에 적용 됩니다.
 
-자세한 내용은 [2.7.2.8 copyprivate](../../../parallel/openmp/2-7-2-8-copyprivate.md)을 참조하십시오.
+자세한 내용은 [2.7.2.8 copyprivate](../2-directives.md#2728-copyprivate)를 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -180,9 +180,9 @@ Value = 1.008000, thread = 0
 Value = 1.008000, thread = 1
 ```
 
-## <a name="default"></a><a name="default-openmp"></a>기본
+## <a name="default"></a><a name="default-openmp"></a> 기본
 
-병렬 영역에서 범위가 지정되지 않은 변수의 동작을 지정합니다.
+병렬 영역에서 범위가 지정 되지 않은 변수의 동작을 지정 합니다.
 
 ```cpp
 default(shared | none)
@@ -190,23 +190,23 @@ default(shared | none)
 
 ### <a name="remarks"></a>설명
 
-`shared`이는 절이 `default` 지정되지 않은 경우 적용되며 병렬 영역의 모든 변수는 [공유](#shared-openmp) 절로 지정된 것처럼 처리됩니다. `none`즉, [개인,](#private-openmp) [공유,](#shared-openmp) [축소,](#reduction) [firstprivate](#firstprivate)또는 [lastprivate](#lastprivate) 절로 범위가 조정되지 않은 병렬 영역에서 사용되는 모든 변수는 컴파일러 오류를 발생시게 됩니다.
+`shared`는 절이 지정 되지 않은 경우에 적용 되는입니다 `default` .는 병렬 영역의 모든 변수가 [shared](#shared-openmp) 절로 지정 된 것 처럼 처리 됨을 의미 합니다. `none` 는 [private](#private-openmp), [shared](#shared-openmp), [reduction](#reduction), [firstprivate](#firstprivate)또는 [a.6 lastprivate](#lastprivate) 절로 범위가 지정 되지 않은 병렬 영역에서 사용 되는 모든 변수에 컴파일러 오류가 발생 함을 의미 합니다.
 
-`default`다음 지시문에 적용됩니다.
+`default` 다음 지시문에 적용 됩니다.
 
-- [parallel](openmp-directives.md#parallel)
+- [평행선](openmp-directives.md#parallel)
 - [for](openmp-directives.md#for-openmp)
-- [sections](openmp-directives.md#sections-openmp)
+- [섹션이](openmp-directives.md#sections-openmp)
 
-자세한 내용은 [2.7.2.5 기본값](../../../parallel/openmp/2-7-2-5-default.md)을 참조하십시오.
+자세한 내용은 [2.7.2.5 default](../2-directives.md#2725-default)를 참조 하세요.
 
 ### <a name="example"></a>예제
 
-을 사용하는 `default`예제는 [private을](#private-openmp) 참조하십시오.
+사용에 대 한 예제는 [private](#private-openmp) 을 참조 하십시오 `default` .
 
-## <a name="firstprivate"></a><a name="firstprivate"></a>첫 번째 개인
+## <a name="firstprivate"></a><a name="firstprivate"></a> firstprivate
 
-각 스레드에는 변수의 자체 인스턴스가 있어야 하며 병렬 구문 앞에 존재하기 때문에 변수를 변수 값으로 초기화해야 합니다.
+각 스레드에 변수의 고유한 인스턴스가 있어야 하 고, 변수가 병렬 구문 앞에 있기 때문에 변수의 값을 사용 하 여 초기화 되어야 함을 지정 합니다.
 
 ```cpp
 firstprivate(var)
@@ -214,27 +214,27 @@ firstprivate(var)
 
 ### <a name="parameters"></a>매개 변수
 
-*Var*<br/>
-각 스레드에 인스턴스가 있고 병렬 구문 앞에 존재하기 때문에 변수값으로 초기화되는 변수입니다. 두 개 이상의 변수를 지정하면 변수 이름을 쉼표로 구분합니다.
+*var*<br/>
+각 스레드에 인스턴스를 포함 하 고, 병렬 구문 앞에 있기 때문에 변수의 값으로 초기화 되는 변수입니다. 둘 이상의 변수를 지정 하는 경우 변수 이름을 쉼표로 구분 합니다.
 
 ### <a name="remarks"></a>설명
 
-`firstprivate`다음 지시문에 적용됩니다.
+`firstprivate` 다음 지시문에 적용 됩니다.
 
 - [for](openmp-directives.md#for-openmp)
-- [parallel](openmp-directives.md#parallel)
-- [sections](openmp-directives.md#sections-openmp)
+- [평행선](openmp-directives.md#parallel)
+- [섹션이](openmp-directives.md#sections-openmp)
 - [single](openmp-directives.md#single)
 
-자세한 내용은 [2.7.2.2 첫 번째 개인](../../../parallel/openmp/2-7-2-2-firstprivate.md)을 참조하십시오.
+자세한 내용은 [2.7.2.2 firstprivate](../2-directives.md#2722-firstprivate)를 참조 하세요.
 
 ### <a name="example"></a>예제
 
-을 사용하는 `firstprivate`예제는 개인 의 예제를 [참조하십시오.](#private-openmp)
+를 사용 하는 예제는 `firstprivate` [private](#private-openmp)의 예제를 참조 하세요.
 
-## <a name="if-openmp"></a><a name="if-openmp"></a>if(OpenMP)
+## <a name="if-openmp"></a><a name="if-openmp"></a> if (OpenMP)
 
-루프를 병렬 또는 직렬로 실행할지 여부를 지정합니다.
+루프를 병렬로 실행할지 또는 순차적으로 실행할지를 지정 합니다.
 
 ```cpp
 if(expression)
@@ -243,17 +243,17 @@ if(expression)
 ### <a name="parameters"></a>매개 변수
 
 *expression*<br/>
-true(비영도)로 평가되는 정수 식은 병렬 영역의 코드가 병렬로 실행되도록 합니다. 식이 false(0)로 평가되면 병렬 영역이 직렬로 실행됩니다(단일 스레드).
+True (0이 아님)로 평가 되는 경우 병렬 영역의 코드가 병렬로 실행 되도록 하는 정수 계열 식입니다. 식이 false (0)로 계산 되 면 병렬 지역은 단일 스레드를 통해 순차적으로 실행 됩니다.
 
 ### <a name="remarks"></a>설명
 
-`if`다음 지시문에 적용됩니다.
+`if` 다음 지시문에 적용 됩니다.
 
-- [parallel](openmp-directives.md#parallel)
+- [평행선](openmp-directives.md#parallel)
 - [for](openmp-directives.md#for-openmp)
-- [sections](openmp-directives.md#sections-openmp)
+- [섹션이](openmp-directives.md#sections-openmp)
 
-자세한 내용은 [2.3 병렬 구문](../../../parallel/openmp/2-3-parallel-construct.md)을 참조하십시오.
+자세한 내용은 [2.3 병렬 구문](../2-directives.md#23-parallel-construct)을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -291,9 +291,9 @@ val = 0, serialized
 val = 2, parallelized with 2 threads
 ```
 
-## <a name="lastprivate"></a><a name="lastprivate"></a>라스트 프라이빗
+## <a name="lastprivate"></a><a name="lastprivate"></a> a.6 lastprivate
 
-둘러싸는 컨텍스트의 변수 버전이 최종 반복(for-loop 구문) 또는 마지막 섹션(#pragma 섹션)을 실행하는 스레드중의 개인 버전과 동일하게 설정되도록 지정합니다.
+바깥쪽 컨텍스트의 변수 버전이 최종 반복 (for 루프 구문) 또는 마지막 섹션 (#pragma 섹션)을 실행 하는 모든 스레드의 전용 버전과 같도록 지정 합니다.
 
 ```cpp
 lastprivate(var)
@@ -301,25 +301,25 @@ lastprivate(var)
 
 ### <a name="parameters"></a>매개 변수
 
-*Var*<br/>
-스레드중 의 개인 버전과 동일하게 설정된 변수는 최종 반복(for-loop construct) 또는 마지막 섹션(#pragma 섹션)을 실행합니다.
+*var*<br/>
+모든 스레드의 전용 버전과 동일 하 게 설정 된 변수는 최종 반복 (for 루프 구문) 또는 마지막 섹션 (#pragma 섹션)을 실행 합니다.
 
 ### <a name="remarks"></a>설명
 
-`lastprivate`다음 지시문에 적용됩니다.
+`lastprivate` 다음 지시문에 적용 됩니다.
 
 - [for](openmp-directives.md#for-openmp)
-- [sections](openmp-directives.md#sections-openmp)
+- [섹션이](openmp-directives.md#sections-openmp)
 
-자세한 내용은 [2.7.2.3 lastprivate](../../../parallel/openmp/2-7-2-3-lastprivate.md)을 참조하십시오.
+자세한 내용은 [2.7.2.3 a.6 lastprivate](../2-directives.md#2723-lastprivate)를 참조 하세요.
 
 ### <a name="example"></a>예제
 
-절 [schedule](#schedule) 사용의 `lastprivate` 예는 일정을 참조하십시오.
+Using 절의 예는 [일정](#schedule) 을 참조 하세요 `lastprivate` .
 
-## <a name="nowait"></a><a name="nowait"></a>Nowait
+## <a name="nowait"></a><a name="nowait"></a> nowait
 
-지시문에서 암시적 장벽을 재정의합니다.
+지시문에서 장벽을 암시적으로 재정의 합니다.
 
 ```cpp
 nowait
@@ -327,13 +327,13 @@ nowait
 
 ### <a name="remarks"></a>설명
 
-`nowait`다음 지시문에 적용됩니다.
+`nowait` 다음 지시문에 적용 됩니다.
 
 - [for](openmp-directives.md#for-openmp)
-- [sections](openmp-directives.md#sections-openmp)
+- [섹션이](openmp-directives.md#sections-openmp)
 - [single](openmp-directives.md#single)
 
-자세한 내용은 [구문에 대한 2.4.1,](../../../parallel/openmp/2-4-1-for-construct.md) [2.4.2 섹션 생성](../../../parallel/openmp/2-4-2-sections-construct.md)및 [2.4.3 단일 구문 참조.](../../../parallel/openmp/2-4-3-single-construct.md)
+자세한 내용은 [2.4.1](../2-directives.md#241-for-construct), [2.4.2 sections sections](../2-directives.md#242-sections-construct)및 [2.4.3 single 구문을](../2-directives.md#243-single-construct)참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -382,9 +382,9 @@ int main( )
 4, 16, 2
 ```
 
-## <a name="num_threads"></a><a name="num-threads"></a>num_threads
+## <a name="num_threads"></a><a name="num-threads"></a> num_threads
 
-스레드 팀의 스레드 수를 설정합니다.
+스레드 팀의 스레드 수를 설정 합니다.
 
 ```cpp
 num_threads(num)
@@ -397,23 +397,23 @@ num_threads(num)
 
 ### <a name="remarks"></a>설명
 
-절은 `num_threads` [omp_set_num_threads](openmp-functions.md#omp-set-num-threads) 함수와 동일한 기능을 가합니다.
+절에는 `num_threads` [omp_set_num_threads](openmp-functions.md#omp-set-num-threads) 함수와 동일한 기능이 있습니다.
 
-`num_threads`다음 지시문에 적용됩니다.
+`num_threads` 다음 지시문에 적용 됩니다.
 
-- [parallel](openmp-directives.md#parallel)
+- [평행선](openmp-directives.md#parallel)
 - [for](openmp-directives.md#for-openmp)
-- [sections](openmp-directives.md#sections-openmp)
+- [섹션이](openmp-directives.md#sections-openmp)
 
-자세한 내용은 [2.3 병렬 구문](../../../parallel/openmp/2-3-parallel-construct.md)을 참조하십시오.
+자세한 내용은 [2.3 병렬 구문](../2-directives.md#23-parallel-construct)을 참조 하세요.
 
 ### <a name="example"></a>예제
 
-`num_threads` 절사용 의 예는 [평행을](openmp-directives.md#parallel) 참조하십시오.
+Using 절의 예는 [parallel](openmp-directives.md#parallel) 을 참조 하십시오 `num_threads` .
 
-## <a name="ordered"></a><a name="ordered-openmp-clauses"></a>주문
+## <a name="ordered"></a><a name="ordered-openmp-clauses"></a> 설정이
 
-[명령된](openmp-directives.md#ordered-openmp-directives) 지시문을 루프에서 사용할 경우 명령문에 [대해](openmp-directives.md#for-openmp) 병렬로 필요합니다.
+[순서가 지정](openmp-directives.md#ordered-openmp-directives) 된 지시문을 루프에서 사용 하는 경우 parallel [for](openmp-directives.md#for-openmp) 문에 필요 합니다.
 
 ```cpp
 ordered
@@ -421,17 +421,17 @@ ordered
 
 ### <a name="remarks"></a>설명
 
-`ordered`[for](openmp-directives.md#for-openmp) 지시문에 적용됩니다.
+`ordered`[for](openmp-directives.md#for-openmp) 지시문에 적용 됩니다.
 
-자세한 내용은 [구문에 대한 2.4.1을](../../../parallel/openmp/2-4-1-for-construct.md)참조하십시오.
+자세한 내용은 [2.4.1 for 구문](../2-directives.md#241-for-construct)을 참조 하세요.
 
 ### <a name="example"></a>예제
 
-`ordered` 절 사용의 예는 [정렬된](openmp-directives.md#ordered-openmp-directives) 참조를 참조하십시오.
+Using 절의 예는 [정렬](openmp-directives.md#ordered-openmp-directives) 된을 참조 하십시오 `ordered` .
 
-## <a name="private"></a><a name="private-openmp"></a>개인
+## <a name="private"></a><a name="private-openmp"></a> 문자
 
-각 스레드에 변수의 자체 인스턴스가 있어야 합니다.
+각 스레드가 변수의 고유한 인스턴스를 갖도록 지정 합니다.
 
 ```cpp
 private(var)
@@ -439,19 +439,19 @@ private(var)
 
 ### <a name="parameters"></a>매개 변수
 
-*Var*<br/>
-각 스레드에 인스턴스가 있는 변수입니다.
+*var*<br/>
+각 스레드에 대 한 인스턴스를 포함 하는 변수입니다.
 
 ### <a name="remarks"></a>설명
 
-`private`다음 지시문에 적용됩니다.
+`private` 다음 지시문에 적용 됩니다.
 
 - [for](openmp-directives.md#for-openmp)
-- [parallel](openmp-directives.md#parallel)
-- [sections](openmp-directives.md#sections-openmp)
+- [평행선](openmp-directives.md#parallel)
+- [섹션이](openmp-directives.md#sections-openmp)
 - [single](openmp-directives.md#single)
 
-자세한 내용은 [2.7.2.1 개인](../../../parallel/openmp/2-7-2-1-private.md)을 참조하십시오.
+자세한 내용은 [2.7.2.1 private](../2-directives.md#2721-private)를 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -631,9 +631,9 @@ nFirstPrivate = 4 (The value prior to entering parallel region)
        nShared = 1 (The value assigned, from the delayed thread, 1)
 ```
 
-## <a name="reduction"></a><a name="reduction"></a>감소
+## <a name="reduction"></a><a name="reduction"></a> 적
 
-각 스레드에 비공개인 하나 이상의 변수가 병렬 영역의 끝에서 축소 작업의 대상이 되도록 지정합니다.
+각 스레드에 대해 private 인 하나 이상의 변수가 병렬 영역의 끝에서 감소 작업의 대상이 되도록 지정 합니다.
 
 ```cpp
 reduction(operation:var)
@@ -641,21 +641,21 @@ reduction(operation:var)
 
 ### <a name="parameters"></a>매개 변수
 
-*작업*<br/>
-병렬 영역의 끝에 있는 변수 *var에서* 수행할 연산자입니다.
+*operation*<br/>
+병렬 영역의 끝에 있는 변수 *var* 에서 수행할 작업에 대 한 연산자입니다.
 
-*Var*<br/>
-스칼라 감소를 수행할 하나 이상의 변수. 두 개 이상의 변수를 지정하면 변수 이름을 쉼표로 구분합니다.
+*var*<br/>
+스칼라 감소를 수행 하는 하나 이상의 변수입니다. 둘 이상의 변수를 지정 하는 경우 변수 이름을 쉼표로 구분 합니다.
 
 ### <a name="remarks"></a>설명
 
-`reduction`다음 지시문에 적용됩니다.
+`reduction` 다음 지시문에 적용 됩니다.
 
-- [parallel](openmp-directives.md#parallel)
+- [평행선](openmp-directives.md#parallel)
 - [for](openmp-directives.md#for-openmp)
-- [sections](openmp-directives.md#sections-openmp)
+- [섹션이](openmp-directives.md#sections-openmp)
 
-자세한 내용은 [2.7.2.6 감소를](../../../parallel/openmp/2-7-2-6-reduction.md)참조하십시오.
+자세한 내용은 [2.7.2.6 reduction](../2-directives.md#2726-reduction)를 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -770,9 +770,9 @@ The sum of the consecutive integers from 1 to 10, is 55
 All of the functions, func1 through func5 succeeded!
 ```
 
-## <a name="schedule"></a><a name="schedule"></a>일정
+## <a name="schedule"></a><a name="schedule"></a> 일정과
 
-[for](openmp-directives.md#for-openmp) 지시문에 적용됩니다.
+[For](openmp-directives.md#for-openmp) 지시문에 적용 됩니다.
 
 ```cpp
 schedule(type[,size])
@@ -780,15 +780,15 @@ schedule(type[,size])
 
 ### <a name="parameters"></a>매개 변수
 
-*종류*<br/>
-일정의 `dynamic`종류(에 `guided`의한 `runtime`것) `static`
+*type*<br/>
+일정 유형 (,, `dynamic` 또는) `guided` 입니다 `runtime` `static` .
 
-*크기*<br/>
-(선택 사항) 반복 크기를 지정합니다. *크기는* 정수여야 합니다. *형식이* `runtime`.입니다.
+*size*<br/>
+필드 반복의 크기를 지정 합니다. *크기* 는 정수 여야 합니다. *형식이* 인 경우 유효 하지 않습니다 `runtime` .
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 [구문에 대한 2.4.1을](../../../parallel/openmp/2-4-1-for-construct.md)참조하십시오.
+자세한 내용은 [2.4.1 for 구문](../2-directives.md#241-for-construct)을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -904,9 +904,9 @@ int main( )
 ------------------------------------------------
 ```
 
-## <a name="shared"></a><a name="shared-openmp"></a>공유
+## <a name="shared"></a><a name="shared-openmp"></a> 공유할
 
-하나 이상의 변수를 모든 스레드 간에 공유해야 한다고 지정합니다.
+하나 이상의 변수를 모든 스레드 간에 공유 하도록 지정 합니다.
 
 ```cpp
 shared(var)
@@ -914,21 +914,21 @@ shared(var)
 
 ### <a name="parameters"></a>매개 변수
 
-*Var*<br/>
-공유할 하나 이상의 변수입니다. 두 개 이상의 변수를 지정하면 변수 이름을 쉼표로 구분합니다.
+*var*<br/>
+공유할 변수를 하나 이상입니다. 둘 이상의 변수를 지정 하는 경우 변수 이름을 쉼표로 구분 합니다.
 
 ### <a name="remarks"></a>설명
 
-스레드 간에 변수를 공유하는 또 다른 방법은 [copyprivate](#copyprivate) 절을 사용 하 여 입니다.
+스레드 간에 변수를 공유 하는 또 다른 방법은 [copyprivate](#copyprivate) 절을 사용 하는 것입니다.
 
-`shared`다음 지시문에 적용됩니다.
+`shared` 다음 지시문에 적용 됩니다.
 
-- [parallel](openmp-directives.md#parallel)
+- [평행선](openmp-directives.md#parallel)
 - [for](openmp-directives.md#for-openmp)
-- [sections](openmp-directives.md#sections-openmp)
+- [섹션이](openmp-directives.md#sections-openmp)
 
-자세한 내용은 [공유 2.7.2.4를](../../../parallel/openmp/2-7-2-4-shared.md)참조하십시오.
+자세한 내용은 [2.7.2.4 shared](../2-directives.md#2724-shared)를 참조 하세요.
 
 ### <a name="example"></a>예제
 
-을 사용하는 `shared`예제는 [private을](#private-openmp) 참조하십시오.
+사용에 대 한 예제는 [private](#private-openmp) 을 참조 하십시오 `shared` .

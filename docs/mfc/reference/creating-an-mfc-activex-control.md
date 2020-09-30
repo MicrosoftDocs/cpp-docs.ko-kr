@@ -7,12 +7,12 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], creating
 - ActiveX controls [MFC], creating
 ms.assetid: 8bd5a93c-d04d-414e-bb28-163fdc1c0dd5
-ms.openlocfilehash: 5e0a81d6a01632bcfadccd241f3a485e6d332627
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 19e9ca6f985423bb01a8dea38988c5dcf7285683
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80077453"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91505966"
 ---
 # <a name="creating-an-mfc-activex-control"></a>MFC ActiveX 컨트롤 만들기
 
@@ -36,9 +36,9 @@ Mfc ActiveX 컨트롤을 만드는 가장 쉬운 방법은 [Mfc Activex 컨트�
 
 프로젝트를 만든 후 **솔루션 탐색기**에서 생성 된 파일을 볼 수 있습니다. 마법사에서 프로젝트용으로 만드는 파일에 대한 자세한 내용은 프로젝트 생성 파일인 ReadMe.txt를 참조하세요. 파일 형식에 대한 자세한 내용은 [Visual Studio C++ 프로젝트용으로 만들어지는 파일 형식](../../build/reference/file-types-created-for-visual-cpp-projects.md)을 참조하세요.
 
-프로젝트를 만든 후에는 코드 마법사를 사용 하 여 [함수](../../ide/add-member-function-wizard.md), [변수](../../ide/add-member-variable-wizard.md), [이벤트](../../ide/add-event-wizard.md), [속성](../../ide/names-add-property-wizard.md)및 [메서드](../../ide/add-method-wizard.md)를 추가할 수 있습니다. ActiveX 컨트롤을 사용자 지정 하는 방법에 대 한 자세한 내용은 [MFC Activex 컨트롤](../../mfc/mfc-activex-controls.md)을 참조 하세요.
+프로젝트를 만든 후에는 코드 마법사를 사용 하 여 [함수](../../ide/adding-a-member-function-visual-cpp.md#add-member-function-wizard), [변수](../../ide/adding-a-member-variable-visual-cpp.md#add-member-variable-wizard), [이벤트](../../ide/adding-an-event-visual-cpp.md#add-event-wizard), [속성](../../ide/adding-a-property-visual-cpp.md#names-add-property-wizard)및 [메서드](../../ide/adding-a-method-visual-cpp.md#add-method-wizard)를 추가할 수 있습니다. ActiveX 컨트롤을 사용자 지정 하는 방법에 대 한 자세한 내용은 [MFC Activex 컨트롤](../../mfc/mfc-activex-controls.md)을 참조 하세요.
 
 ## <a name="see-also"></a>참고 항목
 
-[코드 마법사로 기능 추가](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
+[코드 마법사에서 기능 추가](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
 [속성 페이지](../../build/reference/property-pages-visual-cpp.md)

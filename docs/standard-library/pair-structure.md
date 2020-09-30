@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - pair class
 ms.assetid: 539d3d67-80a2-4170-b347-783495d42109
-ms.openlocfilehash: 6ccbea23835326d1e1840d8454f86c0eb72a5a7d
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 0a78d5074c37f4fbbfb736125626fa4b7fc7e275
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90042058"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91505753"
 ---
 # <a name="pair-structure"></a>pair 구조체
 
@@ -75,7 +75,6 @@ template<class T1, class T2>
 두 번째 생성자는 쌍의 첫 번째 요소를 *Val1* 로 초기화 하 고 두 번째 생성자를 Val2로 초기화 *합니다.*  두 형식이 모두 복사 생성 가능 경우 정의 됩니다.
 
 세 번째 (템플릿) 생성자는 쌍의 첫 번째 요소를로 초기화 합니다 `Right` . **첫** 번째 및 두 번째 `Right` 입니다. **초**.  이는 쌍의 두 형식이 제공 된 값 형식에서 생성 가능 때 정의 됩니다.
-
 
 네 번째 생성자는 쌍의 첫 번째 요소를 *Val1* 로 초기화 하 고, 두 번째 생성자는 [Rvalue 참조 선언 자:  &&](../cpp/rvalue-reference-declarator-amp-amp.md)을 사용 하 여 *Val2* 에 연결 합니다.  이는 쌍의 두 형식이 제공 된 값 형식에서 생성 가능 때 정의 됩니다.
 

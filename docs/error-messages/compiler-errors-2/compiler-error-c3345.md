@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3345
 ms.assetid: 1dda4c79-73bb-441b-b939-746154c3afba
-ms.openlocfilehash: e6962e5c127a92acc5dfdad580c7bc89fa134751
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 8682069fdf719f4e85d1d6f5107de1903e3ae071
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74753447"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91504841"
 ---
 # <a name="compiler-error-c3345"></a>컴파일러 오류 C3345
 
@@ -52,8 +52,8 @@ BOOL WINAPI DllMain(DWORD dwReason, LPVOID lpReserved) {
 };
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [__iscsym](../../c-runtime-library/reference/iscsym-functions.md)<br/>
 [문자 분류](../../c-runtime-library/character-classification.md)<br/>
-[module](../../windows/module-cpp.md)
+[모듈](../../windows/attributes/module-cpp.md)

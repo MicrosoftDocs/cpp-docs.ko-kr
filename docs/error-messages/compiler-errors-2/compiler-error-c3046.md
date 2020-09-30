@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3046
 ms.assetid: 2e53d835-faa1-4ec0-9807-41f3dc552635
-ms.openlocfilehash: d4af29ff6a5267dc80c52e8a3ea9d92cad8d8f7d
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: cd7c934babe37def934b644ff4657ad63eb7676d
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74761340"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91506225"
 ---
 # <a name="compiler-error-c3046"></a>컴파일러 오류 C3046
 
 OpenMP '#pragma omp sections' 영역에 구조화된 블록이 없습니다.
 
-[섹션](../../parallel/openmp/reference/sections-openmp.md) 지시문에 빈 코드 블록이 있습니다.
+[섹션](../../parallel/openmp/reference/openmp-directives.md#sections-openmp) 지시문에 빈 코드 블록이 있습니다.
 
 다음 샘플에서는 C3046을 생성합니다.
 

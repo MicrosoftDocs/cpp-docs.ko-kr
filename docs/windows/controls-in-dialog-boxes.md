@@ -1,5 +1,5 @@
 ---
-title: 대화 상자 컨트롤 (C++) | Microsoft Docs
+title: 대화 상자 컨트롤 (c + +) | Microsoft Docs
 ms.date: 02/15/2019
 f1_keywords:
 - Custom Control
@@ -13,14 +13,14 @@ helpviewer_keywords:
 - dialog box controls [C++], custom (user) controls
 - Dialog Editor [C++], custom controls
 ms.assetid: e216c4f9-2fd4-429d-889a-8ebce7bad177
-ms.openlocfilehash: c79021387de2c8bc8f7f106a93797b7efb07d6df
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 449e60e968916f7741422ca2766375ad29afd062
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80160413"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91505709"
 ---
-# <a name="dialog-box-controls-c"></a>대화 상자 컨트롤 (C++)
+# <a name="dialog-box-controls-c"></a>대화 상자 컨트롤 (c + +)
 
 [도구 상자 창의](/visualstudio/ide/reference/toolbox) **대화 상자 편집기** 탭을 사용 하 여 대화 상자에 컨트롤을 추가 하 여 원하는 컨트롤을 선택 하 고 대화 상자에 끌어 놓을 수 있습니다. 기본적으로 **도구 상자** 창은 자동 숨기기로 설정 됩니다. **대화 상자 편집기** 가 열릴 때 솔루션의 왼쪽 여백에 탭으로 나타납니다. 그러나 창의 오른쪽 위 모퉁이에 있는 **자동 숨기기** 단추를 선택 하 여 **도구 상자** 창을 위치에 고정할 수 있습니다. 이 창의 동작을 제어 하는 방법에 대 한 자세한 내용은 [창 관리](/visualstudio/ide/customizing-window-layouts-in-visual-studio)를 참조 하세요.
 
@@ -41,7 +41,7 @@ ms.locfileid: "80160413"
 |[Button 컨트롤](../mfc/reference/cbutton-class.md)|BN_CLICKED|
 |[확인란 컨트롤](../mfc/reference/styles-used-by-mfc.md#button-styles)|BN_CLICKED|
 |[콤보 상자 컨트롤](../mfc/reference/ccombobox-class.md)|CBN_SELCHANGE|
-|[컨트롤 편집](../mfc/reference/cedit-class.md)|EN_CHANGE|
+|[편집 컨트롤](../mfc/reference/cedit-class.md)|EN_CHANGE|
 |그룹 상자|(해당 사항 없음)|
 |[목록 상자 컨트롤](../mfc/reference/clistbox-class.md)|LBN_SELCHANGE|
 |[라디오 단추 컨트롤](../mfc/reference/styles-used-by-mfc.md#button-styles)|BN_CLICKED|
@@ -51,7 +51,7 @@ ms.locfileid: "80160413"
 |[스크롤 막대 컨트롤](../mfc/reference/cscrollbar-class.md)|NM_THEMECHANGED|
 
 > [!NOTE]
-> MFC에서 **RichEdit 1.0** 컨트롤을 사용 하는 방법에 대 한 자세한 내용은 Mfc 및 [Rich Edit 컨트롤 예제](../mfc/rich-edit-control-examples.md) [에 RichEdit 1.0 컨트롤 사용](../windows/using-the-richedit-1-0-control-with-mfc.md) 을 참조 하세요.
+> MFC에서 **RichEdit 1.0** 컨트롤을 사용 하는 방법에 대 한 자세한 내용은 Mfc 및 [Rich Edit 컨트롤 예제](../mfc/rich-edit-control-examples.md) [에 RichEdit 1.0 컨트롤 사용](./adding-editing-or-deleting-controls.md) 을 참조 하세요.
 
 향상 된 기능을 제공 하기 위해 **도구 상자** 에서 사용할 수 있는 [Windows 공용 컨트롤](../mfc/controls-mfc.md) 은 다음과 같습니다.
 
@@ -66,9 +66,9 @@ ms.locfileid: "80160413"
 |[탭 컨트롤](../mfc/tab-controls-and-property-sheets.md)|TCN_SELCHANGE|
 |[애니메이션 컨트롤](../mfc/using-an-animation-control.md)|ACN_START|
 |[날짜 시간 선택 컨트롤](../mfc/creating-the-date-and-time-picker-control.md)|DTN_DATETIMECHANGE|
-|[Month Calendar 컨트롤](../mfc/month-calendar-control-examples.md)|MCN_SELCHANGE|
+|[MonthCalendar 컨트롤](../mfc/month-calendar-control-examples.md)|MCN_SELCHANGE|
 |[IP 주소 제어](../mfc/reference/cipaddressctrl-class.md)|IPN_FIELDCHANGED|
-|[확장 된 콤보 상자 컨트롤](../mfc/creating-an-extended-combo-box-control.md)||
+|[확장된 콤보 상자 컨트롤](../mfc/creating-an-extended-combo-box-control.md)||
 |사용자 지정 컨트롤|TTN_GETDISPINFO|
 
 ## <a name="custom-controls"></a>사용자 지정 컨트롤
@@ -78,7 +78,7 @@ ms.locfileid: "80160413"
 > [!NOTE]
 > 이 의미의 사용자 지정 컨트롤은 ActiveX 컨트롤과 혼동 하지 않습니다. ActiveX 컨트롤을 OLE 사용자 지정 컨트롤 이라고 합니다. 또한 이러한 컨트롤을 Windows의 소유자가 그린 컨트롤과 혼동 하지 마세요.
 
-이 기능은 Windows에서 제공 하는 컨트롤 이외의 컨트롤을 사용할 수 있도록 하기 위한 것입니다. 런타임에 컨트롤이 창 클래스와 연결 됩니다 ( C++ 클래스와 동일 하지 않음). 동일한 작업을 수행 하는 일반적인 방법은 대화 상자에 정적 컨트롤과 같은 컨트롤을 설치 하는 것입니다. 그런 다음 런타임에 [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog) 함수에서 해당 컨트롤을 제거 하 고 사용자 지정 컨트롤로 바꿉니다.
+이 기능은 Windows에서 제공 하는 컨트롤 이외의 컨트롤을 사용할 수 있도록 하기 위한 것입니다. 런타임에 컨트롤이 창 클래스와 연결 됩니다 (c + + 클래스와 동일 하지 않음). 동일한 작업을 수행 하는 일반적인 방법은 대화 상자에 정적 컨트롤과 같은 컨트롤을 설치 하는 것입니다. 그런 다음 런타임에 [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog) 함수에서 해당 컨트롤을 제거 하 고 사용자 지정 컨트롤로 바꿉니다.
 
 > [!NOTE]
 > 이것은 이전 기술입니다. 현재 대부분의 경우 ActiveX 컨트롤을 작성 하거나 Windows 공용 컨트롤의 서브 클래스를 작성 하는 것이 좋습니다.
@@ -104,6 +104,6 @@ Win32
 [대화 상자 편집기](../windows/dialog-editor.md)
 
 <!--
-[Adding Event Handlers for Dialog Box Controls](../windows/adding-event-handlers-for-dialog-box-controls.md)<br/>
-[Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)<br/>
+[Adding Event Handlers for Dialog Box Controls](./adding-editing-or-deleting-controls.md)<br/>
+[Dialog Box Controls and Variable Types](../ide/adding-a-member-variable-visual-cpp.md#dialog-box-controls-and-variable-types)<br/>
 [Controls](../mfc/controls-mfc.md)<br/>-->

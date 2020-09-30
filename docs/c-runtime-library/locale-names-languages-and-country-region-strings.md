@@ -8,12 +8,12 @@ helpviewer_keywords:
 - setlocale function
 - language strings
 ms.assetid: a0e5a0c5-5602-4da0-b65f-de3d6c8530a2
-ms.openlocfilehash: 704da410ee6386027a7528c0c73a89ef31557a77
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: c7695b3e51eac44853dc89a0f2a683192562cea2
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842952"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91505622"
 ---
 # <a name="ucrt-locale-names-languages-and-countryregion-strings"></a>UCRT 로캘 이름, 언어 및 국가/지역 문자열
 
@@ -48,11 +48,9 @@ _wsetlocale(LC_ALL, L"de-DE");
 _wsetlocale(LC_ALL, L"LC_MONETARY=en-GB;LC_TIME=es-ES");
 ```
 
-
 ## <a name="utf-8-support"></a>UTF-8 지원
 
 로캘 문자열의 UTF-8 코드 페이지를 사용 하 여 UTF-8 지원을 사용 하도록 설정할 수 있습니다. 자세한 내용은 [의 `setlocale` utf-8 지원 섹션](../c-runtime-library/reference/setlocale-wsetlocale.md#utf-8-support) 을 참조 하세요.
-
 
 ## <a name="see-also"></a>참고 항목
 

@@ -35,12 +35,12 @@ helpviewer_keywords:
 - asinhl function
 - asinhf function
 ms.assetid: 4488babe-1a7e-44ca-8b7b-c2db0a70084f
-ms.openlocfilehash: 332e6bfc95bd297d703d879cdd468b450cfdc763
-ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
+ms.openlocfilehash: face2eb5f7c6220e1a4369ae0aa11514a918d21c
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89556790"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91505609"
 ---
 # <a name="asinh-asinhf-asinhl"></a>asinh, asinhf, asinhl
 
@@ -77,12 +77,11 @@ C + +를 사용 하는 경우 또는 값을 사용 하 고 반환 하는 **asinh
 
 매크로를 사용 하는 경우 \<tgmath.h> `asinh()` 인수의 형식에 따라 선택 되는 함수 버전이 결정 됩니다. 자세한 내용은 [형식-제네릭](../../c-runtime-library/tgmath.md) 계산을 참조 하세요.
 
-
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|필수 C 헤더|필수 C++ 헤더|
+|함수|필수 C 헤더|필수 C++ 헤더|
 |--------------|--------------|------------------|
 |**asinh**, **asinh**, **asinh**|\<math.h>|\<cmath> 또는 \<math.h>|
 |**asinh ()** 매크로 | \<tgmath.h> ||

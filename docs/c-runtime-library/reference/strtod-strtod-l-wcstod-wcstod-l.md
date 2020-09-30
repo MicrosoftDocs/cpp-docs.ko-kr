@@ -51,12 +51,12 @@ helpviewer_keywords:
 - _strtod_l function
 - string conversion, to floating point values
 ms.assetid: 0444f74a-ba2a-4973-b7f0-1d77ba88c6ed
-ms.openlocfilehash: 1e75fe39c8ab7020a088307421926327d4043ba8
-ms.sourcegitcommit: efed9ed109862c6c2a042f2663b680e8ca4e16a1
+ms.openlocfilehash: 5a791b5d0be218a49be28930c191de3eb4acf4be
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89933829"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91505539"
 ---
 # <a name="strtod-_strtod_l-wcstod-_wcstod_l"></a>strtod, _strtod_l, wcstod, _wcstod_l
 
@@ -135,9 +135,9 @@ double wcstod_l(
 *기* 수는 기 수 점 문자 (기본 "C" 로캘의 마침표 (.), 현재 로캘이 다른 경우 또는 *로캘이* 지정 된 경우 로캘별 값)입니다.
  *시퀀스* 는 영숫자 또는 밑줄 문자의 시퀀스입니다.
 
-10 진수 및 16 진수 형식 모두에서 기 수 지점 문자 앞에 숫자가 표시 되지 않으면 하나 이상이 기 수 점 문자 뒤에와 야 합니다. 
+10 진수 및 16 진수 형식 모두에서 기 수 지점 문자 앞에 숫자가 표시 되지 않으면 하나 이상이 기 수 점 문자 뒤에와 야 합니다.
 
-Decimal 형식에서 10 진수 뒤에는 기본 문자 (**e** 또는 **e**)와 선택적으로 부호 있는 정수로 구성 된 지수가 올 수 있습니다. 
+Decimal 형식에서 10 진수 뒤에는 기본 문자 (**e** 또는 **e**)와 선택적으로 부호 있는 정수로 구성 된 지수가 올 수 있습니다.
 
 16 진수 형식에서는 16 진수 뒤에 지수가 올 수 있습니다. 여기에는 소개 문자 (**p** 또는 **p**)와 지 수를 2의 거듭제곱으로 나타내는 선택적으로 부호 있는 10 진수 정수로 구성 됩니다.
 

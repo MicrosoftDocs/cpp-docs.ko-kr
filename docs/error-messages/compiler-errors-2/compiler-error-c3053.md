@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3053
 ms.assetid: ab9a25f3-e341-4f6e-8e69-069b4a963a64
-ms.openlocfilehash: 07514dfb931dcb5bf45bb8526cd19cf19103a56f
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 8889388dc07f871bb60de44d317f9c8882795b03
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74761206"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91506190"
 ---
 # <a name="compiler-error-c3053"></a>컴파일러 오류 C3053
 
 'symbol': 'threadprivate'는 글로벌 또는 정적 데이터 항목에만 사용할 수 있습니다.
 
-[threadprivate](../../parallel/openmp/reference/threadprivate.md) 에 전달된 기호는 전역 또는 정적이어야 합니다.
+[threadprivate](../../parallel/openmp/reference/openmp-directives.md#threadprivate) 에 전달된 기호는 전역 또는 정적이어야 합니다.
 
 다음 샘플에서는 C3053을 생성합니다.
 
@@ -34,7 +34,7 @@ void Test() {
 }
 ```
 
-가능한 해결 방법:
+해결 방법:
 
 ```cpp
 // C3053b.cpp

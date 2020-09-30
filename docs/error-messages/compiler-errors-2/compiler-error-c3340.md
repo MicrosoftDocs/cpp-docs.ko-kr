@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3340
 ms.assetid: 23b12298-b92a-4717-8380-f165c998cb8a
-ms.openlocfilehash: f4010870b84cbe2b8004eea24ab7735839b8c82b
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: aa52170f2f2a2e1fa8019a451c1322a4b1d8eac3
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74753590"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91506812"
 ---
 # <a name="compiler-error-c3340"></a>컴파일러 오류 C3340
 
 'interface': 인터페이스는 coclass 'class'에서 'restricted'이면서 'default'일 수 없습니다.
 
-[restricted](../../windows/restricted.md) 특성 및 [default](../../windows/default-cpp.md) 특성은 함께 사용할 수 없습니다.
+[restricted](../../windows/attributes/restricted.md) 특성 및 [default](../../windows/attributes/default-cpp.md) 특성은 함께 사용할 수 없습니다.
 
 다음 샘플에서는 C3340을 생성합니다.
 

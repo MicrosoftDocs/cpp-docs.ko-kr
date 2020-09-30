@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3347
 ms.assetid: e939ad29-0b78-4681-9618-9bdae5675cee
-ms.openlocfilehash: 9f62d66148aa75040f7bab5ea69931d2ef9c474a
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 105c34fff8b118682ae736683fae5f64a7323c81
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74755618"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91504833"
 ---
 # <a name="compiler-error-c3347"></a>컴파일러 오류 C3347
 
 'arg': idl_module 특성에 필수 인수를 지정하지 않았습니다.
 
-필수 인수가 [idl_module](../../windows/idl-module.md) 특성에 전달되지 않았습니다.
+필수 인수가 [idl_module](../../windows/attributes/idl-module.md) 특성에 전달되지 않았습니다.
 
 다음 샘플에서는 C3347을 생성합니다.
 

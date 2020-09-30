@@ -5,12 +5,12 @@ helpviewer_keywords:
 - STL/CLR, converting from .NET collections
 - STL/CLR Containers [STL/CLR]
 ms.assetid: bb927c48-78e8-4150-bd0b-787c651f4a87
-ms.openlocfilehash: a7b2ee94f02e663690287ecfa6bc8a7230830a95
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 4993571d479924edc71a277887a8bd95fc4fd463
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90686459"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91506440"
 ---
 # <a name="how-to-convert-from-a-net-collection-to-a-stlclr-container"></a>방법: .NET 컬렉션에서 STL/CLR 컨테이너로 변환
 
@@ -24,13 +24,13 @@ ms.locfileid: "90686459"
 
 또는
 
-1. [Collection_adapter](../dotnet/collection-adapter-stl-clr.md) 개체를 만들어 일반 STL/CLR 컨테이너를 만듭니다. 이 템플릿 클래스는 .NET 컬렉션 인터페이스를 인수로 사용 합니다. 지원 되는 인터페이스를 확인 하려면 [collection_adapter (STL/CLR)](../dotnet/collection-adapter-stl-clr.md)를 참조 하세요.
+1. [Collection_adapter](./adapter-stl-clr.md#collection_adapter) 개체를 만들어 일반 STL/CLR 컨테이너를 만듭니다. 이 템플릿 클래스는 .NET 컬렉션 인터페이스를 인수로 사용 합니다. 지원 되는 인터페이스를 확인 하려면 [collection_adapter (STL/CLR)](./adapter-stl-clr.md#collection_adapter)를 참조 하세요.
 
 1. .NET 컬렉션의 내용을 컨테이너에 복사 합니다. STL/CLR [알고리즘](../dotnet/algorithm-stl-clr.md)을 사용 하거나 .net 컬렉션을 반복 하 고 각 요소의 복사본을 STL/clr 컨테이너에 삽입 하 여이 작업을 수행할 수 있습니다.
 
    두 번째 예에서는이 절차를 보여 줍니다.
 
-## <a name="examples"></a>예제
+## <a name="examples"></a>예
 
 이 예제에서는 제네릭을 만들고 <xref:System.Collections.Generic.List%601> 5 개의 요소를 추가 합니다. 그런 다음를 `vector` 인수로 사용 하는 생성자를 사용 하 여를 만듭니다 <xref:System.Collections.Generic.IEnumerable%601> .
 
@@ -126,7 +126,7 @@ Key: 42.00 Value: 42
 Key: 74.00 Value: 74
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [STL/CLR 라이브러리 참조](../dotnet/stl-clr-library-reference.md)<br/>
 [adapter(STL/CLR)](../dotnet/adapter-stl-clr.md)<br/>

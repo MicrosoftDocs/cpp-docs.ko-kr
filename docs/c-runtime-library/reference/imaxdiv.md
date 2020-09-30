@@ -24,12 +24,12 @@ f1_keywords:
 helpviewer_keywords:
 - imaxdiv function
 ms.assetid: 7d90126f-fdc2-4986-9cdf-94e4c9123d26
-ms.openlocfilehash: 72bbb1198b79d79bb81acc35ce6c2a836fdd5f1d
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 298356da8e8e76c132b963ef4f71db6a3d0e74f7
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70954629"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91505635"
 ---
 # <a name="imaxdiv"></a>imaxdiv
 
@@ -46,7 +46,7 @@ imaxdiv_t imaxdiv(
 
 ### <a name="parameters"></a>매개 변수
 
-*numer*<br/>
+*숫자로*<br/>
 분자입니다.
 
 *denom*<br/>
@@ -58,7 +58,7 @@ imaxdiv_t imaxdiv(
 
 ## <a name="remarks"></a>설명
 
-**Imaxdiv** 함수는 *숫자로* 을 *denom* 로 나눈 다음 몫과 나머지를 계산 합니다. **Imaxdiv_t** 구조체에는 몫, **intmax_t** **q**및 나머지, **intmax_t** **rem**이 포함 됩니다. 몫의 부호는 수학적 몫의 부호와 같습니다. 몫의 절대 값은 수학적 몫의 절대 값보다 작은 가장 큰 정수입니다. 분모가 0이면 프로그램이 종료되고 오류 메시지가 표시됩니다.
+**Imaxdiv** 함수는 *숫자로* 을 *denom* 로 나눈 다음 몫과 나머지를 계산 합니다. **Imaxdiv_t** 구조체에는 몫, **intmax_t** **q**및 나머지 **intmax_t** **rem**이 포함 됩니다. 몫의 부호는 수학적 몫의 부호와 동일 합니다. 몫의 절대 값은 수학적 몫의 절대 값보다 작은 가장 큰 정수입니다. 분모가 0이면 프로그램이 종료되고 오류 메시지가 표시됩니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -66,7 +66,7 @@ imaxdiv_t imaxdiv(
 |-------------|---------------------|
 |**imaxdiv**|\<inttypes.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
@@ -103,8 +103,8 @@ The call to imaxdiv(9460730470000000, 8766)
 results in a quotient of 1079252848505, and a remainder of 5170
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [부동 소수점 지원](../../c-runtime-library/floating-point-support.md)<br/>
 [div](div.md)<br/>
-[ldiv, lldiv](ldiv-lldiv.md)<br/>
+[ldiv, lldiv](./div.md)<br/>

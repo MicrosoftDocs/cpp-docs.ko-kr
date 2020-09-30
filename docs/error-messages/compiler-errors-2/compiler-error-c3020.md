@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3020
 ms.assetid: f625c7a3-afaa-4bd8-9c1b-51891b832f36
-ms.openlocfilehash: 89b28ae396322859596b99ba56a28375e9c9d6d5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cb32ceaf71d0a1c121b6e01e4b49f1db79a84d79
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232029"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91506495"
 ---
 # <a name="compiler-error-c3020"></a>컴파일러 오류 C3020
 
@@ -38,7 +38,7 @@ int main() {
 }
 ```
 
-[A.6 lastprivate](../../parallel/openmp/reference/lastprivate.md) 로 선언 된 변수는 병렬화 된 루프 내에서 인덱스로 사용할 수 없습니다.
+[A.6 lastprivate](../../parallel/openmp/reference/openmp-clauses.md#lastprivate) 로 선언 된 변수는 병렬화 된 루프 내에서 인덱스로 사용할 수 없습니다.
 
 다음 샘플에서는 a.6 lastprivate이 가장 바깥쪽 for 루프 내에서 idx_a에 대 한 쓰기를 트리거하기 때문에 두 번째 a.6 lastprivate에 대해 C3020을 제공 합니다. A.6 lastprivate은 가장 바깥쪽 for 루프 외부의 idx_a에 대 한 쓰기를 트리거하기 때문에 첫 번째 a.6 lastprivate은 오류를 제공 하지 않습니다 (기술적으로 마지막 반복이 끝날 때). 다음 샘플에서는 C3020를 생성 합니다.
 

@@ -35,18 +35,18 @@ helpviewer_keywords:
 - calculated symbols
 - shared symbols
 ms.assetid: 26541832-8dba-4177-b642-e08f94502ea7
-ms.openlocfilehash: a6d2661a3467365482ea12bdfff53f730165faa0
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 67a5c801c13038e7215473edecc2d41a8f7086e0
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84623075"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91505722"
 ---
 # <a name="how-to-manage-symbols"></a>방법: 기호 관리
 
 새 리소스 또는 리소스 개체를 만들 때 개발 환경에서는 기본 기호 이름 (예:)을 할당 `IDD_DIALOG1` 합니다. [속성 창](/visualstudio/ide/reference/properties-window) 를 사용 하 여 기본 기호 이름을 변경 하거나 이미 리소스와 연결 된 기호의 이름을 변경할 수 있습니다.
 
-단일 리소스와 연결 된 기호의 경우 **속성** 창을 사용 하 여 기호 값을 변경할 수도 있습니다. [리소스 기호 대화 상자](../windows/resource-symbols-dialog-box.md) 를 사용 하 여 현재 리소스에 할당 되지 않은 기호의 값을 변경할 수 있습니다.
+단일 리소스와 연결 된 기호의 경우 **속성** 창을 사용 하 여 기호 값을 변경할 수도 있습니다. [리소스 기호 대화 상자](./creating-new-symbols.md) 를 사용 하 여 현재 리소스에 할당 되지 않은 기호의 값을 변경할 수 있습니다.
 
 일반적으로 모든 기호 정의는에 저장 됩니다 `Resource.h` . 그러나 예를 들어 같은 디렉터리에서 둘 이상의 리소스 파일을 사용할 수 있도록 이 포함 파일 이름을 변경해야 할 수 있습니다.
 
@@ -92,7 +92,7 @@ ms.locfileid: "84623075"
    새 기호 이름을 입력 하면 값이 자동으로 할당 됩니다.
 
 > [!NOTE]
-> [리소스 기호 대화 상자](../windows/resource-symbols-dialog-box.md) 를 사용 하 여 현재 리소스에 할당 되지 않은 기호의 이름을 변경할 수 있습니다.
+> [리소스 기호 대화 상자](./creating-new-symbols.md) 를 사용 하 여 현재 리소스에 할당 되지 않은 기호의 이름을 변경할 수 있습니다.
 
 ## <a name="symbol-value-restrictions"></a>기호 값 제한
 
@@ -141,7 +141,7 @@ ms.locfileid: "84623075"
 
 ## <a name="change-or-delete-symbols"></a>기호 변경 또는 삭제
 
-[리소스 기호 대화 상자](../windows/resource-symbols-dialog-box.md)에서 리소스 또는 개체에 아직 할당 되지 않은 기존 기호를 편집 하거나 삭제할 수 있습니다.
+[리소스 기호 대화 상자](./creating-new-symbols.md)에서 리소스 또는 개체에 아직 할당 되지 않은 기존 기호를 편집 하거나 삭제할 수 있습니다.
 
 ### <a name="to-change-an-unassigned-symbol"></a>할당되지 않은 기호를 변경하려면
 
@@ -161,11 +161,11 @@ ms.locfileid: "84623075"
 
 ## <a name="include-symbols"></a>기호 포함
 
-다른 애플리케이션에서 만든 리소스 파일을 처음으로 개발 환경에서 읽는 경우 포함된 헤더 파일을 모두 읽기 전용으로 표시합니다. 그러나 [리소스 내용 대화 상자](../windows/resource-includes-dialog-box.md) 를 사용 하 여 읽기 전용 기호 헤더 파일을 더 추가할 수 있습니다.
+다른 애플리케이션에서 만든 리소스 파일을 처음으로 개발 환경에서 읽는 경우 포함된 헤더 파일을 모두 읽기 전용으로 표시합니다. 그러나 [리소스 내용 대화 상자](./how-to-include-resources-at-compile-time.md) 를 사용 하 여 읽기 전용 기호 헤더 파일을 더 추가할 수 있습니다.
 
 읽기 전용 기호 정의를 사용하려는 한 가지 이유는 여러 프로젝트에서 공유하려고 하는 기호 파일 때문입니다.
 
-또한 단순 정수 대신 식을 사용하여 기호 값을 정의하는 기호 정의를 사용하는 기존 리소스가 있는 경우에 포함된 기호 파일을 사용할 수 있습니다. 예를 들면 다음과 같습니다.
+또한 단순 정수 대신 식을 사용하여 기호 값을 정의하는 기호 정의를 사용하는 기존 리소스가 있는 경우에 포함된 기호 파일을 사용할 수 있습니다. 다음은 그 예입니다.
 
 ```cpp
 #define   IDC_CONTROL1 2100
@@ -185,7 +185,7 @@ ms.locfileid: "84623075"
 
 ### <a name="to-include-shared-read-only-symbols-in-your-resource-file"></a>리소스 파일에 공유(읽기 전용) 기호를 포함하려면
 
-1. [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources)에서 *.rc* 파일을 마우스 오른쪽 단추로 클릭 하 고 [리소스 포함](../windows/resource-includes-dialog-box.md)을 선택 합니다.
+1. [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources)에서 *.rc* 파일을 마우스 오른쪽 단추로 클릭 하 고 [리소스 포함](./how-to-include-resources-at-compile-time.md)을 선택 합니다.
 
 1. 읽기 전용 **기호 지시문** 상자에서 `#include` 컴파일러 지시문을 사용 하 여 읽기 전용 기호를 보관할 파일을 지정 합니다.
 
@@ -204,7 +204,7 @@ ms.locfileid: "84623075"
 
 ### <a name="to-change-the-name-of-the-resource-symbol-header-file"></a>리소스 기호 헤더 파일의 이름을 변경하려면
 
-1. [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources)에서 *.rc* 파일을 마우스 오른쪽 단추로 클릭 하 고 [리소스 포함](../windows/resource-includes-dialog-box.md)을 선택 합니다.
+1. [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources)에서 *.rc* 파일을 마우스 오른쪽 단추로 클릭 하 고 [리소스 포함](./how-to-include-resources-at-compile-time.md)을 선택 합니다.
 
 1. **기호 헤더 파일** 상자에 포함 파일의 새 이름을 입력 합니다.
 

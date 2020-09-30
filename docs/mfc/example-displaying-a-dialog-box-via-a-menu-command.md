@@ -10,12 +10,12 @@ helpviewer_keywords:
 - examples [MFC], dialog boxes
 - menu items [MFC], examples
 ms.assetid: e8692549-acd7-478f-9c5e-ba310ce8cccd
-ms.openlocfilehash: 281fa77f4954691002268d1e597146a615264695
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 1cada8124cd7ea71a24367626508782b522cc746
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616031"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91506755"
 ---
 # <a name="example-displaying-a-dialog-box-via-a-menu-command"></a>예: 메뉴 명령을 통해 대화 상자 표시
 
@@ -38,7 +38,7 @@ ms.locfileid: "84616031"
 
 ### <a name="to-display-a-modal-dialog-box"></a>모달 대화 상자를 표시 하려면
 
-1. 메뉴 명령을 만듭니다. [메뉴 또는 메뉴 항목 만들기](../windows/creating-a-menu.md)를 참조 하세요.
+1. 메뉴 명령을 만듭니다. [메뉴 또는 메뉴 항목 만들기](../windows/menu-editor.md)를 참조 하세요.
 
 1. 대화 상자를 만듭니다. [대화 상자 편집기 시작을](../windows/creating-a-new-dialog-box.md)참조 하세요.
 
