@@ -141,12 +141,12 @@ helpviewer_keywords:
 - std::unordered_map::size
 - std::unordered_map::swap
 ms.assetid: 7cf7cfa1-16e7-461c-a9b2-3b8d8ec24e0d
-ms.openlocfilehash: 2f30b5683d8487830d596fc8185430c8a4c4c7b0
-ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
+ms.openlocfilehash: f8ffd7b3990f2d0ab40f8059e65f0aba4d4c8e0c
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352416"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91503579"
 ---
 # <a name="unordered_map-class"></a>unordered_map 클래스
 
@@ -201,7 +201,7 @@ class unordered_map;
 |[size_type](#size_type)|두 요소 사이의 부호가 없는 거리의 형식입니다.|
 |[value_type](#value_type)|요소의 형식입니다.|
 
-|멤버 함수|Description|
+|멤버 함수|설명|
 |-|-|
 |[at](#at)|지정된 키 값이 있는 요소를 찾습니다.|
 |[시작](#begin)|제어되는 시퀀스의 시작을 지정합니다.|
@@ -233,7 +233,7 @@ class unordered_map;
 |[스왑을](#swap)|두 컨테이너의 내용을 바꿉니다.|
 |[unordered_map](#unordered_map)|컨테이너 개체를 만듭니다.|
 
-|연산자|Description|
+|연산자|설명|
 |-|-|
 |[unordered_map::operator[]](#op_at)|지정된 키가 있는 요소를 찾거나 삽입합니다.|
 |[unordered_map:: operator =](#op_eq)|해시 테이블을 복사합니다.|
@@ -306,7 +306,7 @@ const Ty& at(const Key& key) const;
 *키인지*\
 찾을 키 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 찾은 요소의 데이터 값에 대한 참조입니다.
 
@@ -611,7 +611,7 @@ bucket_size(7) == 1
 const_iterator cbegin() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`const`** 범위의 첫 번째 요소 또는 빈 범위의 끝 바로 다음 위치를 가리키는 전방 액세스 반복기입니다 (빈 범위의 경우 `cbegin() == cend()` ).
 
@@ -637,7 +637,7 @@ auto i2 = Container.cbegin();
 const_iterator cend() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`const`** 범위 끝의 바로 다음을 가리키는 전방 액세스 반복기입니다.
 
@@ -924,9 +924,9 @@ bool contains(const Key& key) const;
 *키인지*\
 찾을 요소의 키 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-`true` 요소가 컨테이너에 있으면이 고, 그렇지 않으면입니다. `false` 그렇지 않으면입니다. 
+`true` 요소가 컨테이너에 있으면이 고, 그렇지 않으면입니다. `false` 그렇지 않으면입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -948,7 +948,7 @@ int main()
     std::cout << std::boolalpha; // so booleans show as 'true' or 'false'
     std::cout << theUnorderedMap.contains(1) << '\n';
     std::cout << theUnorderedMap.contains(2) << '\n';
-    
+
     return 0;
 }
 ```
@@ -1086,7 +1086,7 @@ pair<iterator, bool>  emplace( Args&&... args);
 *args*\
 값이 동등 하 게 `unordered_map` 정렬 된 요소를 이미 포함 하 고 있지 않은 경우에 삽입할 요소를 생성 하기 위해 전달 되는 인수입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `pair` **`bool`** 구성 요소가 삽입이 수행 된 경우 true를 반환 하 고,에 해당 키에 동일한 값이 있는 요소가 이미 포함 되어 있는 경우에는 false를 반환 `unordered_map` 하 고, 해당 반복기 구성 요소는 새 요소가 삽입 되었거나 요소가 이미 있었던 주소를 반환 하는입니다.
 
@@ -1117,7 +1117,7 @@ unordered_map이 해당 요소를 이미 포함하고 있지 않거나, 보다 �
 *위치*\
 올바른 삽입 지점 검색을 시작할 위치와 관련된 힌트입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 새로 삽입된 요소에 대한 반복기입니다.
 
@@ -1312,7 +1312,7 @@ size_type erase(const key_type& Key);
 *키인지*\
 제거할 요소의 키 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 처음 두 구성원 함수의 경우 제거된 요소 뒤에 남은 첫 번째 요소 또는 이러한 요소가 없을 경우 map의 끝에 있는 요소를 지정하는 양방향 반복기입니다.
 
@@ -1551,7 +1551,7 @@ Unordered_map에서 [value_type](../standard-library/map-class.md#value_type)요
 *IList*\
 요소를 복사할 [initializer_list](../standard-library/initializer-list.md) 입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 단일 요소 멤버 함수 (1) 및 (2)는 [pair](../standard-library/pair-structure.md) **`bool`** 구성 요소가 삽입 된 경우 true이 고 unordered_map에 이미 키에 동일한 값이 있는 요소가 이미 포함 되어 있는 경우 false 인 쌍을 반환 합니다. 반환 값 쌍의 반복기 구성 요소는 구성 요소가 true 인 경우 새로 삽입 된 요소를 가리키거나 **`bool`** 구성 요소가 false 인 경우에는 기존 요소를 가리킵니다 **`bool`** .
 
@@ -2171,7 +2171,7 @@ Ty& operator[](Key&& keyval);
 *Keyval*\
 찾거나 삽입할 키 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 삽입된 요소의 데이터 값에 대한 참조입니다.
 
@@ -2924,6 +2924,4 @@ int main()
 ## <a name="see-also"></a>참고 항목
 
 [<unordered_map>](../standard-library/unordered-map.md)\
-[컨테이너가](./stl-containers.md)\
 [C + + 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
-[C + + 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

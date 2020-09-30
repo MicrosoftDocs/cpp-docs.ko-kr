@@ -5,16 +5,16 @@ ms.topic: reference
 helpviewer_keywords:
 - code analysis, C++ core check
 ms.assetid: f1429463-136e-41ed-8a75-a8dbf0b4fd89
-ms.openlocfilehash: e85ce8baed9a1ef39e0ab759ab86a5b570a42fa6
-ms.sourcegitcommit: 6e55aeb538b1c39af754f82d6f7738a18f5aa031
+ms.openlocfilehash: a4dc50395a1da0eda68148123651123cf1607184
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87389950"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91503393"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>C++ Core Guidelines 검사기 참조
 
-이 섹션에는 C++ Core Guidelines 검사기 경고가 나열 됩니다. 코드 분석에 대 한 자세한 내용은 [ `/analyze` (코드 분석)](/cpp/build/reference/analyze-code-analysis) 및 [빠른 시작: c/c + +에 대 한 코드 분석](../code-quality/quick-start-code-analysis-for-c-cpp.md)을 참조 하세요.
+이 섹션에는 C++ Core Guidelines 검사기 경고가 나열 됩니다. 코드 분석에 대 한 자세한 내용은 [ `/analyze` (코드 분석)](../build/reference/analyze-code-analysis.md) 및 [빠른 시작: c/c + +에 대 한 코드 분석](../code-quality/quick-start-code-analysis-for-c-cpp.md)을 참조 하세요.
 
 > [!NOTE]
 > 일부 경고는 둘 이상의 그룹에 속하며 모든 경고에는 완전 한 참조 항목이 없습니다.
@@ -196,7 +196,7 @@ Malloc () 및 free ()를 사용 하지 않고 delete와 함께 new의 nothrow �
 조각화 하지 않습니다. C++ Core Guidelines를 참조 하세요 [.](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#es63-dont-slice)
 
 [C26465 NO_CONST_CAST_UNNECESSARY](c26465.md)\
-를 사용 `const_cast` 하 여 캐스팅 하지 마십시오 `const` . `const_cast`필요 하지 않습니다. 상수 또는 변동성가이 변환에 의해 제거 되지 않습니다. [C++ Core Guidelines 형식. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-constcast)을 참조 하세요.
+를 사용 `const_cast` 하 여 캐스팅 하지 마십시오 `const` . `const_cast` 필요 하지 않습니다. 상수 또는 변동성가이 변환에 의해 제거 되지 않습니다. [C++ Core Guidelines 형식. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-constcast)을 참조 하세요.
 
 [C26466 NO_STATIC_DOWNCAST_POLYMORPHIC](c26466.md)\
 `static_cast`다운 캐스트를 사용 하지 않습니다. 다형 형식의 캐스트는 dynamic_cast을 사용 해야 합니다. [C++ Core Guidelines 형식. 2](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-downcast)를 참조 하세요.
@@ -264,7 +264,7 @@ C 스타일 캐스트를 사용 하지 마세요. [C++ Core Guidelines 형식을
 `gsl::finally`최종 동작을 의도 한 경우 사용 하는 것이 좋습니다. [C++ Core Guidelines: GSL: 유틸리티](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities)를 참조 하세요.
 
 [C26449 NO_SPAN_FROM_TEMPORARY](c26449.md)\
-`gsl::span`또는 임시 `std::string_view` 가 무효화 되 면 임시에서 생성 됩니다. [C++ Core Guidelines: GSL. view: Views](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views)를 참조 하세요.
+`gsl::span` 또는 임시 `std::string_view` 가 무효화 되 면 임시에서 생성 됩니다. [C++ Core Guidelines: GSL. view: Views](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views)를 참조 하세요.
 
 ## <a name="deprecated-warnings"></a>사용 되지 않는 경고
 

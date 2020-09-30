@@ -5,16 +5,16 @@ ms.topic: reference
 helpviewer_keywords:
 - ^ handle to object [C++]
 ms.assetid: 70c411e6-be57-4468-a944-6ea7be89f392
-ms.openlocfilehash: f09fd5f112e3538fa2d7fb04c755031d413de9b8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c8927ef0e34f2c2b12722d453e0dde6f7357eb33
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225152"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91503145"
 ---
 # <a name="handle-to-object-operator---ccli-and-ccx"></a>개체 연산자에 대한 핸들(^)(C++/CLI 및 C++/CX)
 
-*핸들 선언 자* ( `^` "hat"로 발음)는 시스템에서 개체에 더 이상 액세스할 수 없는 것으로 확인 될 때 선언 된 개체가 자동으로 삭제 되도록 하는 형식 [지정자](../cpp/overview-of-declarators.md) 를 수정 합니다.
+*핸들 선언 자* ( `^` "hat"로 발음)는 시스템에서 개체에 더 이상 액세스할 수 없는 것으로 확인 될 때 선언 된 개체가 자동으로 삭제 되도록 하는 형식 [지정자](../cpp/declarations-and-definitions-cpp.md) 를 수정 합니다.
 
 ## <a name="accessing-the-declared-object"></a>선언된 개체 액세스
 
@@ -40,7 +40,7 @@ ms.locfileid: "87225152"
 
 자세한 내용은 [방법: 네이티브 형식으로 핸들 선언](../dotnet/how-to-declare-handles-in-native-types.md)을 참조 하세요.
 
-### <a name="examples"></a>예제
+### <a name="examples"></a>예
 
 이 샘플은 관리되는 힙에서 참조 형식의 인스턴스를 만드는 방법을 보여 줍니다.  이 샘플은 또한 한 가지 핸들을 다른 핸들로 초기화하여 관리되는 가비지-수집 힙의 동일한 개체에서 두 개의 참조를 만들 수 있다는 점을 보여 줍니다. 핸들 하나에 [nullptr](nullptr-cpp-component-extensions.md)을 할당할 경우 개체가 가비지 수집 대상으로 표시되지 않습니다.
 

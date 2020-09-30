@@ -3,12 +3,12 @@ title: C + + 코드를 업그레이드 하기 위한 Visual Studio IDE 도구
 description: Visual Studio의 c + + 코드 편집기 및 코드 분석 도구를 통해 c + + 코드 베이스를 현대화 수 있습니다.
 ms.date: 11/13/2019
 ms.topic: conceptual
-ms.openlocfilehash: 0d43da784e1e2f7789ac17ec01163ce29944e93d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d6368445d16232ff968b7116b0f0313e97aa144c
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87205732"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91503767"
 ---
 # <a name="visual-studio-ide-tools-for-upgrading-c-code"></a>C + + 코드를 업그레이드 하기 위한 Visual Studio IDE 도구
 
@@ -24,7 +24,7 @@ Visual Studio는 컴파일러 옵션, 코드 분석 경고 및 빠른 수정, �
 
 - 모든 버전의 표준을 준수 하지만 최신 c + +에서는 더 이상 모범 사례로 간주 되지 않는 코드입니다.
 
-   변경이 권장 되는 코드를 식별 하려면 [코드 분석](/cpp/code-quality/code-analysis-for-c-cpp-overview)을 실행 합니다.
+   변경이 권장 되는 코드를 식별 하려면 [코드 분석](../code-quality/code-analysis-for-c-cpp-overview.md)을 실행 합니다.
 
 ## <a name="open-and-convert-a-legacy-project"></a>레거시 프로젝트 열기 및 변환
 
@@ -74,7 +74,7 @@ Visual Studio는 컴파일러 옵션, 코드 분석 경고 및 빠른 수정, �
 
 ![오류 목록에서 코드 분석 경고](media/code-analysis-error-list.png "오류 목록에서 코드 분석 경고")
 
-활성 상태인 규칙을 변경 하 고 사용자 지정 규칙 집합을 만들 수 있습니다. 코드 분석을 사용 하는 방법에 대 한 자세한 내용은 [c/c + + 용 코드 분석 개요](/cpp/code-quality/code-analysis-for-c-cpp-overview)를 참조 하세요.
+활성 상태인 규칙을 변경 하 고 사용자 지정 규칙 집합을 만들 수 있습니다. 코드 분석을 사용 하는 방법에 대 한 자세한 내용은 [c/c + + 용 코드 분석 개요](../code-quality/code-analysis-for-c-cpp-overview.md)를 참조 하세요.
 
 ## <a name="use-quick-actions-to-modernize-code"></a>빠른 작업을 사용 하 여 코드 현대화
 

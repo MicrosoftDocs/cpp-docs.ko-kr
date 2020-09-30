@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - db_accessor attribute
 ms.assetid: ec407a9f-24d7-4822-96d4-7cc6a0301815
-ms.openlocfilehash: 559838201e3d1c425b6b1bf7f3650d9635c44c97
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 2a4c5475007cbc516f1a06c6bf858089ba24311f
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833142"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91503550"
 ---
 # <a name="db_accessor"></a>db_accessor
 
@@ -33,7 +33,7 @@ ms.locfileid: "88833142"
 
 ## <a name="remarks"></a>설명
 
-**db_accessor** 는 `db_column` `db_param` 동일한 클래스 또는 함수 내의 후속 및 특성에 대 한 기본 OLE DB 접근자를 정의 합니다. **db_accessor** 은 멤버 수준에서 사용할 수 있으며 `db_column` OLE DB 기반 바인딩에 참여 하는 특성을 그룹화 하는 데 사용 됩니다 `IAccessor` . 또는 특성과 함께 사용 됩니다 `db_table` `db_command` . 이 특성을 호출 하는 것은 [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) 및 [END_ACCESSOR](../../data/oledb/end-accessor.md) 매크로를 호출 하는 것과 비슷합니다.
+**db_accessor** 는 `db_column` `db_param` 동일한 클래스 또는 함수 내의 후속 및 특성에 대 한 기본 OLE DB 접근자를 정의 합니다. **db_accessor** 은 멤버 수준에서 사용할 수 있으며 `db_column` OLE DB 기반 바인딩에 참여 하는 특성을 그룹화 하는 데 사용 됩니다 `IAccessor` . 또는 특성과 함께 사용 됩니다 `db_table` `db_command` . 이 특성을 호출 하는 것은 [BEGIN_ACCESSOR](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md#begin_accessor) 및 [END_ACCESSOR](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md#end_accessor) 매크로를 호출 하는 것과 비슷합니다.
 
 **db_accessor** 는 행 집합을 생성 하 고 해당 접근자 맵에 바인딩합니다. **Db_accessor**를 호출 하지 않으면 접근자 0이 자동으로 생성 되 고 모든 열 바인딩이이 접근자 블록에 매핑됩니다.
 

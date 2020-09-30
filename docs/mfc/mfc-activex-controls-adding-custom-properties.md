@@ -5,12 +5,12 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], properties
 - properties [MFC], custom
 ms.assetid: 85af5167-74c7-427b-b8f3-e0d7b73942e5
-ms.openlocfilehash: 805fffcc6cafe92df91af6b01bb53240a0d70f51
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: af1ca2d63abcb112bfe1e7d7538dbf70fb817ae5
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230495"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91503883"
 ---
 # <a name="mfc-activex-controls-adding-custom-properties"></a>MFC ActiveX 컨트롤: 사용자 지정 속성 추가
 
@@ -40,7 +40,7 @@ ms.locfileid: "87230495"
 
    매개 변수가 있는 구현은 속성 추가 마법사에서 지원 됩니다. 매개 변수가 있는 속성 (속성 배열이 라고도 함)을 사용 하 여 컨트롤의 단일 속성을 통해 값 집합에 액세스할 수 있습니다. 이 구현에 대 한 디스패치 맵 항목 매크로가 DISP_PROPERTY_PARAM 되었습니다. 이 형식을 구현 하는 방법에 대 한 자세한 내용은 ActiveX 컨트롤: 고급 토픽 문서에서 [매개 변수화 된 속성 구현](mfc-activex-controls-advanced-topics.md) 을 참조 하세요.
 
-## <a name="using-the-add-property-wizard-to-add-a-custom-property"></a><a name="_core_using_classwizard_to_add_a_custom_property"></a>속성 추가 마법사를 사용 하 여 사용자 지정 속성 추가
+## <a name="using-the-add-property-wizard-to-add-a-custom-property"></a><a name="_core_using_classwizard_to_add_a_custom_property"></a> 속성 추가 마법사를 사용 하 여 사용자 지정 속성 추가
 
 다음 절차에서는 Get/Set 메서드 구현을 사용 하는 사용자 지정 속성인 CircleOffset를 추가 하는 방법을 보여 줍니다. CircleOffset 사용자 지정 속성을 사용 하면 컨트롤의 경계 사각형 중심에서 원을 오프셋할 수 있습니다. Get/Set 메서드 이외의 구현으로 사용자 지정 속성을 추가 하는 절차는 매우 유사 합니다.
 
@@ -56,7 +56,7 @@ ms.locfileid: "87230495"
 
 1. 바로 가기 메뉴에서 **추가** 를 클릭 한 다음 **속성 추가**를 클릭 합니다.
 
-   그러면 [속성 추가 마법사](../ide/names-add-property-wizard.md)가 열립니다.
+   그러면 [속성 추가 마법사](../ide/adding-a-property-visual-cpp.md#names-add-property-wizard)가 열립니다.
 
 1. **속성 이름** 상자에 *CircleOffset*을 입력 합니다.
 
@@ -66,9 +66,9 @@ ms.locfileid: "87230495"
 
 1. Get 및 Set 함수의 고유 이름을 입력 하거나 기본 이름을 적용 합니다.
 
-1. **마침**을 클릭합니다.
+1. **Finish**를 클릭합니다.
 
-## <a name="add-property-wizard-changes-for-custom-properties"></a><a name="_core_classwizard_changes_for_custom_properties"></a>사용자 지정 속성에 대 한 속성 추가 마법사 변경 내용
+## <a name="add-property-wizard-changes-for-custom-properties"></a><a name="_core_classwizard_changes_for_custom_properties"></a> 사용자 지정 속성에 대 한 속성 추가 마법사 변경 내용
 
 CircleOffset 사용자 지정 속성을 추가 하면 속성 추가 마법사에서 헤더를 변경 합니다. H) 및 구현 (. CPP) 파일을 관리 합니다.
 

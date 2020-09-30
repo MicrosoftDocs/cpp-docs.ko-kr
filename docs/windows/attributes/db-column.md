@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - db_column attribute
 ms.assetid: 58da4afc-f69c-4ae6-af9a-3f9515f56081
-ms.openlocfilehash: 2828a33a31d806c04cfce76a3156674778efbe6e
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 05f734a9b083d93f2501172d9455b7889c65a5a6
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90686485"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91503545"
 ---
 # <a name="db_column"></a>db_column
 
@@ -50,7 +50,7 @@ ms.locfileid: "90686485"
 
 ## <a name="remarks"></a>설명
 
-지정 된 테이블 열을 행 집합의 변수에 **db_column** 바인딩합니다. OLE DB 기반 바인딩에 참여할 수 있는 멤버 데이터를 구분 `IAccessor` 합니다. 이 특성은 OLE DB consumer 매크로 [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md), [END_COLUMN_MAP](../../data/oledb/end-column-map.md)및 [COLUMN_ENTRY](../../data/oledb/column-entry.md)를 사용 하 여 일반적으로 정의 된 열 맵을 설정 합니다. 이러한 OLE DB [DBBINDING 구조체](/previous-versions/windows/desktop/ms716845(v=vs.85)) 를 조작 하 여 지정 된 열을 바인딩합니다. **Db_column** 특성으로 표시 하는 각 멤버는 열 맵의 한 항목을 열 항목의 형식으로 사용 합니다. 따라서이 특성은 명령 또는 테이블 클래스에서 열 맵을 배치 하는 곳에 호출 합니다.
+지정 된 테이블 열을 행 집합의 변수에 **db_column** 바인딩합니다. OLE DB 기반 바인딩에 참여할 수 있는 멤버 데이터를 구분 `IAccessor` 합니다. 이 특성은 OLE DB consumer 매크로 [BEGIN_COLUMN_MAP](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md#begin_column_map), [END_COLUMN_MAP](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md#end_column_map)및 [COLUMN_ENTRY](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md#column_entry)를 사용 하 여 일반적으로 정의 된 열 맵을 설정 합니다. 이러한 OLE DB [DBBINDING 구조체](/previous-versions/windows/desktop/ms716845(v=vs.85)) 를 조작 하 여 지정 된 열을 바인딩합니다. **Db_column** 특성으로 표시 하는 각 멤버는 열 맵의 한 항목을 열 항목의 형식으로 사용 합니다. 따라서이 특성은 명령 또는 테이블 클래스에서 열 맵을 배치 하는 곳에 호출 합니다.
 
 [Db_table](db-table.md) 또는 [db_command](db-command.md) 특성과 함께 **db_column** 를 사용 합니다.
 
@@ -58,7 +58,7 @@ ms.locfileid: "90686485"
 
 응용 프로그램에서 사용 되는이 특성의 예는 [Multiread](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer)를 참조 하세요.
 
-## <a name="examples"></a>예제
+## <a name="examples"></a>예
 
 이 샘플은 테이블의 열을 **`long`** 데이터 멤버에 바인딩하고 상태 및 길이 필드를 지정 합니다.
 
@@ -101,13 +101,13 @@ class CProducts {
 | 특성 컨텍스트 | 값 |
 |-|-|
 |**적용 대상**|**`class`**, **`struct`** , 멤버, 메서드|
-|**불가능**|No|
-|**필수 특성**|None|
-|**잘못된 특성**|None|
+|**불가능**|아니요|
+|**필수 특성**|없음|
+|**잘못된 특성**|없음|
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [OLE DB 소비자 특성](ole-db-consumer-attributes.md)<br/>
 [클래스 특성](class-attributes.md)

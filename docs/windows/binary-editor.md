@@ -21,12 +21,12 @@ helpviewer_keywords:
 - data resources [C++]
 - resources [C++], creating
 ms.assetid: 2483c48b-1252-4dbc-826b-82e6c1a0e9cb
-ms.openlocfilehash: 955cce012ac30c3413d7d458e263643d0aefa711
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 078d702232cde49a4666551a8d9fcbb320173450
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615344"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91503531"
 ---
 # <a name="binary-editor-c"></a>바이너리 편집기 (c + +)
 
@@ -116,14 +116,14 @@ ASCII 문자열 또는 16 진수 바이트를 검색할 수 있습니다. 예를
 
 1. **확인** 을 선택 하 여 변경 내용을 기록 합니다.
 
-사용자 지정 리소스를 만드는 또 다른 방법은 사용자 지정 리소스와 같이 외부 파일을 가져오는 것입니다. [방법: 리소스 관리](../windows/how-to-import-and-export-resources.md)를 참조 하세요.
+사용자 지정 리소스를 만드는 또 다른 방법은 사용자 지정 리소스와 같이 외부 파일을 가져오는 것입니다. [방법: 리소스 관리](./how-to-copy-resources.md)를 참조 하세요.
 
 > [!NOTE]
 > 새 사용자 지정 또는 데이터 리소스를 만들려면 Win32가 필요 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-None
+없음
 
 ## <a name="see-also"></a>참고 항목
 

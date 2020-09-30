@@ -7,14 +7,14 @@ helpviewer_keywords:
 - -Zc:externConstexpr compiler option (C++)
 - extern constexpr variables (C++)
 ms.assetid: 4da5e33a-2e4d-4ed2-8616-bd8f43265c27
-ms.openlocfilehash: 7546ab6d81137a2abb053cd18f0d5d74913c3b00
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: db5a8892bcc11538c3ff883a0e9a3a27db0ee14f
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211907"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91502798"
 ---
-# <a name="zcexternconstexpr-enable-extern-constexpr-variables"></a>`/Zc:externConstexpr`(Extern constexpr 변수 사용)
+# <a name="zcexternconstexpr-enable-extern-constexpr-variables"></a>`/Zc:externConstexpr` (Extern constexpr 변수 사용)
 
 **`/Zc:externConstexpr`** 컴파일러 옵션은 c + + 표준을 준수 하 고 변수에 대 한 외부 링크를 허용 하도록 컴파일러에 지시 합니다 **`constexpr`** . 기본적으로 Visual Studio는 **`constexpr`** 키워드를 지정 하는 경우에도 항상 변수 내부 링크를 제공 **`extern`** 합니다.
 
@@ -38,5 +38,5 @@ ms.locfileid: "87211907"
 
 ## <a name="see-also"></a>참고 항목
 
-[`/Zc`규칙](zc-conformance.md)<br/>
-[`auto`키워드로](../../cpp/auto-keyword.md)
+[`/Zc` 규칙](zc-conformance.md)<br/>
+[`auto` 키워드](../../cpp/auto-cpp.md)

@@ -3,12 +3,12 @@ title: '방법: 유니버설 Windows 플랫폼 앱에서 기존 C++ 코드 사�
 description: 유니버설 Windows 플랫폼 apps에서 기존 코드 앱 및 라이브러리를 사용 하는 방법입니다.
 ms.date: 09/04/2020
 ms.assetid: 87e5818c-3081-42f3-a30d-3dca2cf0645c
-ms.openlocfilehash: 1e946d588f1a14018ebb11a60b319c2d54658f25
-ms.sourcegitcommit: 0df2b7ab4e81284c5248e4584767591dcc1950c3
+ms.openlocfilehash: fd23c875d67654e96a828f4dba412dd74652912a
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89609134"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91503668"
 ---
 # <a name="how-to-use-existing-c-code-in-a-universal-windows-platform-app"></a>방법: 유니버설 Windows 플랫폼 앱에서 기존 C++ 코드 사용
 
@@ -30,7 +30,7 @@ DLL 또는 정적 라이브러리의 소스 코드가 있는 경우 컴파일러
 
 위의 설명은 다르게 처리 되어야 하는 COM 구성 요소에 적용 되지 않습니다. EXE 또는 DLL에 COM 서버가 있는 경우 유니버설 Windows 프로젝트에서 사용할 수 있습니다. 등록 하지 않아도 되는 [COM 구성 요소로](/windows/win32/sbscs/creating-registration-free-com-objects)패키지를 추가 하 고 프로젝트에 콘텐츠 파일로 추가 하 고를 사용 하 여 인스턴스화합니다 [`CoCreateInstanceFromApp`](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstancefromapp) . 자세한 내용은 [Windows 스토어 C++ 프로젝트에서 Free-COM DLL 사용](/archive/blogs/win8devsupport/using-free-com-dll-in-windows-store-c-project)을 참조하세요.
 
-기존 COM 라이브러리를 UWP로 이식 하려는 경우에는이를 Windows 런타임 구성 요소로 변환할 수 있습니다. 이러한 포트에 대 한 c + +/WinRT 라이브러리를 사용 하는 것이 좋지만 [Windows 런타임 c + + 템플릿 라이브러리 (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)를 사용 하는 것도 가능 합니다. WRL는 더 이상 사용 되지 않으며 ATL 및 OLE의 모든 기능을 지원 하지 않습니다. 이러한 포트가 적합 한지 여부는 구성 요소에 필요한 COM, ATL 및 OLE의 기능에 따라 달라 집니다.
+기존 COM 라이브러리를 UWP로 이식 하려는 경우에는이를 Windows 런타임 구성 요소로 변환할 수 있습니다. 이러한 포트에 대 한 c + +/WinRT 라이브러리를 사용 하는 것이 좋지만 [Windows 런타임 c + + 템플릿 라이브러리 (WRL)](../cppcx/wrl/windows-runtime-cpp-template-library-wrl.md)를 사용 하는 것도 가능 합니다. WRL는 더 이상 사용 되지 않으며 ATL 및 OLE의 모든 기능을 지원 하지 않습니다. 이러한 포트가 적합 한지 여부는 구성 요소에 필요한 COM, ATL 및 OLE의 기능에 따라 달라 집니다.
 
 어떤 개발 시나리오를 선택 하 든 많은 매크로 정의를 알고 있어야 합니다. 코드에서 이러한 매크로를 사용 하 여 클래식 데스크톱 Win32 및 UWP에서 조건부로 코드를 컴파일할 수 있습니다.
 

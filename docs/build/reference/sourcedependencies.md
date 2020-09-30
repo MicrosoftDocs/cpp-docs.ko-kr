@@ -1,5 +1,5 @@
 ---
-title: /sourceDependencies (보고서 원본 수준 종속성)
+title: /sourceDependencies (소스 레벨 종속성 보고)
 description: Microsoft c + +의/sourceDependencies 컴파일러 옵션에 대 한 참조 가이드입니다.
 ms.date: 07/29/2020
 f1_keywords:
@@ -7,18 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - /sourceDependencies compiler option
 - /sourceDependencies
-ms.openlocfilehash: 3198353ea7569c426a556522d6b931fe23c7f12c
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 0c1866812435c777f6f1fd7ed7f9db788a8cf031
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520707"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91502842"
 ---
-# <a name="sourcedependencies-report-source-level-dependencies"></a>`/sourceDependencies`(보고서 원본 수준 종속성)
+# <a name="sourcedependencies-report-source-level-dependencies"></a>`/sourceDependencies` (보고서 원본 수준 종속성)
 
 컴파일하는 동안 사용 된 소스 수준 종속성을 자세히 설명 하는 JSON 파일을 생성 하도록 컴파일러에 지시 합니다.
 
 JSON 파일에는 다음을 포함 하는 소스 종속성 목록이 포함 되어 있습니다.
+
 - 헤더 파일 (전이적이 고 직접 포함 된 헤더).
 - 사용 되는 PCH **`/Yu`** 입니다 (가 지정 된 경우).
 - 가져온 모듈 및 가져온 헤더 단위 (전이적이 고 직접 가져온 모듈/헤더 단위).
@@ -46,7 +47,7 @@ JSON 파일에는 다음을 포함 하는 소스 종속성 목록이 포함 되�
 
 모든 파일 경로는 출력에서 절대 경로로 표시 됩니다.
 
-### <a name="examples"></a>예제
+### <a name="examples"></a>예
 
 다음 샘플 코드를 제공 합니다.
 
@@ -96,7 +97,7 @@ int main() { }
 
 - 이 옵션에는 프로그래밍 방식으로 해당 하는 항목이 없습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
 [MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)<br/>

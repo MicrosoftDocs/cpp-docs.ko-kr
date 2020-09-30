@@ -10,12 +10,12 @@ f1_keywords:
 - _Nullterm_length_
 - _Inexpressible_
 ms.assetid: adf29f8c-89fd-4a5e-9804-35ac83e1c457
-ms.openlocfilehash: 0aed625cfa17c75bbfb36506436e9e2c52a7a13b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d1a7bae43a6fcd875f2e713695969f0d88b0dfe5
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216676"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91504165"
 ---
 # <a name="intrinsic-functions"></a>내장 함수
 
@@ -29,7 +29,7 @@ SAL의 식은 파생 작업이 없는 식 인 경우 C/c + + 식일 수 있습�
 |----------------|-----------------|
 |`_Curr_`|현재 주석을 추가 중인 개체의 동의어입니다.  `_At_`주석이 사용 중인 경우 `_Curr_` 는에 대 한 첫 번째 매개 변수와 같습니다 `_At_` .  그렇지 않으면 주석이 어휘 적으로 연결 된 매개 변수 또는 전체 함수/반환 값입니다.|
 |`_Inexpressible_(expr)`|입력 데이터 집합을 검색 한 다음 선택한 멤버를 계산 하 여 계산 되는 경우 처럼 버퍼 크기가 너무 복잡해 서 주석 식을 사용 하 여 나타낼 수 없는 상황을 나타냅니다.|
-|`_Nullterm_length_(param)`|`param`는 버퍼의 요소 수 이며 null 종결자를 포함 하지 않습니다. 비 집합체, 비 void 형식의 모든 버퍼에 적용 될 수 있습니다.|
+|`_Nullterm_length_(param)`|`param` 는 버퍼의 요소 수 이며 null 종결자를 포함 하지 않습니다. 비 집합체, 비 void 형식의 모든 버퍼에 적용 될 수 있습니다.|
 |`_Old_(expr)`|사전 조건에서 평가 되는 경우 `_Old_` 입력 값을 반환 합니다 `expr` .  사후 조건에서 평가 되는 경우 `expr` 사전 조건에서 계산 된 값을 반환 합니다.|
 |`_Param_(n)`|`n`1에서로 계산 되는 함수에 대 한 번째 매개 변수는 `n` `n` 리터럴 정수 계열 상수입니다. 매개 변수의 이름이 이면이 주석은 이름으로 매개 변수에 액세스 하는 것과 같습니다. **참고:** `n` 는 줄임표로 정의 된 위치 매개 변수를 참조 하거나 이름이 사용 되지 않는 함수 프로토타입에 사용할 수 있습니다.  |
 |`return`|C/c + + 예약 키워드를 **`return`** SAL 식에 사용 하 여 함수의 반환 값을 나타낼 수 있습니다.  값은 post 상태 에서만 사용할 수 있습니다. 사전 상태에서 사용 하면 구문 오류가 발생 합니다.|
@@ -40,9 +40,9 @@ SAL의 식은 파생 작업이 없는 식 인 경우 C/c + + 식일 수 있습�
 
 |주석|설명|
 |----------------|-----------------|
-|`_String_length_(param)`|`param`null 종결자를 포함 하지 않고 최대 문자열에 있는 요소 수입니다. 이 주석은 문자 문자열 형식에 대해 예약 되어 있습니다.|
-|`strlen(param)`|`param`null 종결자를 포함 하지 않고 최대 문자열에 있는 요소 수입니다. 이 주석은 문자 배열에 사용 하도록 예약 되어 있으며 C 런타임 함수 [strlen ()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l)과 유사 합니다.|
-|`wcslen(param)`|`param`문자열에서 null 종결자 까지의 최대 요소 수 (포함 하지 않음)입니다. 이 주석은 와이드 문자 배열에 사용 하도록 예약 되어 있으며 C 런타임 함수 [wcslen ()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l)과 유사 합니다.|
+|`_String_length_(param)`|`param` null 종결자를 포함 하지 않고 최대 문자열에 있는 요소 수입니다. 이 주석은 문자 문자열 형식에 대해 예약 되어 있습니다.|
+|`strlen(param)`|`param` null 종결자를 포함 하지 않고 최대 문자열에 있는 요소 수입니다. 이 주석은 문자 배열에 사용 하도록 예약 되어 있으며 C 런타임 함수 [strlen ()](../c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md)과 유사 합니다.|
+|`wcslen(param)`|`param` 문자열에서 null 종결자 까지의 최대 요소 수 (포함 하지 않음)입니다. 이 주석은 와이드 문자 배열에 사용 하도록 예약 되어 있으며 C 런타임 함수 [wcslen ()](../c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md)과 유사 합니다.|
 
 ## <a name="see-also"></a>참고 항목
 

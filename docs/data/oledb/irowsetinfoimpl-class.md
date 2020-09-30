@@ -25,12 +25,12 @@ helpviewer_keywords:
 - GetReferencedRowset method
 - GetSpecification method
 ms.assetid: 9c654155-7727-464e-bd31-143e68391a47
-ms.openlocfilehash: dfa3873917d5215d0069e504e0556c31744f4334
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 7ceaf30318c176b13cb6f81c8401501863b988a4
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840390"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91504054"
 ---
 # <a name="irowsetinfoimpl-class"></a>IRowsetInfoImpl 클래스
 
@@ -61,7 +61,7 @@ class ATL_NO_VTABLE IRowsetInfoImpl :
 
 ### <a name="interface-methods"></a>인터페이스 메서드
 
-| Name | 설명 |
+| 속성 | 설명 |
 |-|-|
 |[GetProperties](#getproperties)|행 집합에서 지원하는 모든 속성의 현재 설정을 반환합니다.|
 |[GetReferencedRowset](#getreferencedrowset)|책갈피가 적용 되는 행 집합에 대 한 인터페이스 포인터를 반환 합니다.|
@@ -69,7 +69,7 @@ class ATL_NO_VTABLE IRowsetInfoImpl :
 
 ## <a name="remarks"></a>설명
 
-행 집합의 필수 인터페이스입니다. 이 클래스는 명령 클래스에 정의 된 [속성 집합 맵을](../../data/oledb/begin-propset-map.md) 사용 하 여 행 집합 속성을 구현 합니다. 행 집합 클래스는 command 클래스의 속성 집합을 사용 하는 것 처럼 보이지만 명령 또는 세션 개체에 의해 생성 될 때 해당 행 집합은 런타임 속성의 자체 복사본과 함께 제공 됩니다.
+행 집합의 필수 인터페이스입니다. 이 클래스는 명령 클래스에 정의 된 [속성 집합 맵을](./macros-for-ole-db-provider-templates.md#begin_propset_map) 사용 하 여 행 집합 속성을 구현 합니다. 행 집합 클래스는 command 클래스의 속성 집합을 사용 하는 것 처럼 보이지만 명령 또는 세션 개체에 의해 생성 될 때 해당 행 집합은 런타임 속성의 자체 복사본과 함께 제공 됩니다.
 
 ## <a name="irowsetinfoimplgetproperties"></a><a name="getproperties"></a> IRowsetInfoImpl:: GetProperties
 

@@ -137,12 +137,12 @@ helpviewer_keywords:
 - std::unordered_set::size
 - std::unordered_set::swap
 ms.assetid: ac08084e-05a7-48c0-9ae4-d40c529922dd
-ms.openlocfilehash: 396465b24e9d7cf0facbe324c7b01479fe8e9b6b
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 0feff4e595be7929fd0bc80eb53a0a65a9a61f43
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040043"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91502959"
 ---
 # <a name="unordered_set-class"></a>unordered_set 클래스
 
@@ -177,7 +177,7 @@ class unordered_set;
 
 ### <a name="typedefs"></a>Typedefs
 
-|Name|Description|
+|속성|설명|
 |-|-|
 |[allocator_type](#allocator_type)|스토리지 관리를 위한 할당자의 형식입니다.|
 |[const_iterator](#const_iterator)|제어되는 시퀀스에 대한 상수 반복기의 형식입니다.|
@@ -197,7 +197,7 @@ class unordered_set;
 
 ### <a name="functions"></a>Functions
 
-|Name|Description|
+|속성|설명|
 |-|-|
 |[시작](#begin)|제어되는 시퀀스의 시작을 지정합니다.|
 |[버킷](#bucket)|키 값에 대한 버킷 개수를 가져옵니다.|
@@ -205,13 +205,13 @@ class unordered_set;
 |[bucket_size](#bucket_size)|버킷의 크기를 가져옵니다.|
 |[cbegin](#cbegin)|제어되는 시퀀스의 시작을 지정합니다.|
 |[cend](#cend)|제어되는 시퀀스의 끝을 지정합니다.|
-|[해제](#clear)|모든 요소를 제거합니다.|
+|[clear](#clear)|모든 요소를 제거합니다.|
 |[contains](#contains)<sup>c + + 20</sup> 포함|에 지정 된 키를 가진 요소가 있는지 확인 `unordered_set` 합니다.|
 |[count](#count)|지정한 키와 일치하는 요소의 수를 찾습니다.|
 |[emplace](#emplace)|생성된 요소를 추가합니다.|
 |[emplace_hint](#emplace_hint)|힌트와 함께 생성된 요소를 추가합니다.|
 |[empty](#empty)|요소가 있는지 여부를 테스트합니다.|
-|[종단](#end)|제어되는 시퀀스의 끝을 지정합니다.|
+|[end](#end)|제어되는 시퀀스의 끝을 지정합니다.|
 |[equal_range](#equal_range)|지정된 키와 일치하는 범위를 찾습니다.|
 |[erase](#erase)|지정된 위치에 있는 요소를 제거합니다.|
 |[find](#find)|지정된 키와 일치하는 요소를 찾습니다.|
@@ -230,7 +230,7 @@ class unordered_set;
 
 ### <a name="operators"></a>연산자
 
-|Name|Description|
+|속성|설명|
 |-|-|
 |[unordered_set:: operator =](#op_eq)|해시 테이블을 복사합니다.|
 
@@ -894,7 +894,7 @@ int main()
     std::cout << std::boolalpha; // so booleans show as 'true' or 'false'
     std::cout << theUnorderedSet.contains(2) << '\n';
     std::cout << theUnorderedSet.contains(3) << '\n';
-    
+
     return 0;
 }
 ```

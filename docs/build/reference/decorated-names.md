@@ -6,12 +6,12 @@ helpviewer_keywords:
 - name decoration [C++]
 - names [C++], decorated
 ms.assetid: a4e9ae8e-b239-4454-b401-4102793cb344
-ms.openlocfilehash: 20e7f5855b771caf23217e5c17db50a890e28113
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0cda21b1650fa660175248c15560a7ab0b251d07
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223852"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91504242"
 ---
 # <a name="decorated-names"></a>데코레이팅된 이름
 
@@ -22,7 +22,7 @@ C 및 C++ 프로그램의 함수, 데이터 및 개체는 내부적으로 데코
 > [!NOTE]
 > Visual studio 2015로 빌드된 라이브러리는 visual Studio 2017 또는 Visual Studio 2019로 빌드된 응용 프로그램에서 사용 될 수 있습니다.
 
-## <a name="using-decorated-names"></a><a name="Using"></a>데코레이팅된 이름 사용
+## <a name="using-decorated-names"></a><a name="Using"></a> 데코레이팅된 이름 사용
 
 일반적으로 성공적으로 컴파일 및 연결되는 코드를 작성하기 위해 데코레이트된 이름을 알 필요가 없습니다. 데코레이트된 이름은 컴파일러 및 링커의 내부 구현 세부 정보입니다. 일반적으로 도구는 데코레이트되지 않은 형식으로 이름을 처리할 수 있습니다. 그러나 함수 이름을 링커 및 기타 도구로 지정할 때 데코레이트된 이름이 필요할 수 있습니다. 예를 들어 오버로드된 C++ 함수, 네임스페이스 멤버, 클래스 생성자, 소멸자 및 특수 멤버 함수와 일치하려면 데코레이트된 이름을 지정해야 합니다. 옵션 플래그 및 데코레이트된 이름이 필요한 기타 상황에 대한 자세한 내용은 사용 중인 도구 및 옵션에 대한 설명서를 참조하세요.
 
@@ -30,7 +30,7 @@ C 및 C++ 프로그램의 함수, 데이터 및 개체는 내부적으로 데코
 
 이름 장식은 다른 프로그래밍 언어 또는 다른 컴파일러를 사용하여 작성된 코드에 연결할 경우에도 중요합니다. 컴파일러에 따라 다른 이름 장식 규칙이 사용됩니다. 실행 파일이 다른 언어로 작성된 코드에 연결되면 내보낸 이름/가져온 이름이 호출 규칙과 일치하도록 주의해야 합니다. 어셈블리 언어 코드는 MSVC 데코레이팅된 이름 및 호출 규칙을 사용 하 여 MSVC를 사용 하 여 작성 된 소스 코드에 연결 해야 합니다.
 
-## <a name="format-of-a-c-decorated-name"></a><a name="Format"></a>C + + 데코레이팅된 이름 형식
+## <a name="format-of-a-c-decorated-name"></a><a name="Format"></a> C + + 데코레이팅된 이름 형식
 
 C++ 함수에 대한 데코레이트된 이름에는 다음 정보가 들어 있습니다.
 
@@ -53,7 +53,7 @@ C++ 함수에 대한 데코레이트된 이름에는 다음 정보가 들어 있
 |`int a(char){int i=3;return i;};`|`?a@@YAHD@Z`|
 |`void __stdcall b::c(float){};`|`?c@b@@AAGXM@Z`|
 
-## <a name="format-of-a-c-decorated-name"></a><a name="FormatC"></a>C 데코레이팅된 이름 형식
+## <a name="format-of-a-c-decorated-name"></a><a name="FormatC"></a> C 데코레이팅된 이름 형식
 
 C 함수에 대한 장식 형식은 다음 표와 같이 선언에 사용되는 호출 규칙에 따라 달라집니다. 또한 이 형식은 C++ 코드가 `extern "C"` 링크를 포함하도록 선언될 때 사용되는 장식 형식입니다. 기본 호출 규칙은 **`__cdecl`** 입니다. 64비트 환경에서는 함수가 데코레이트되지 않습니다.
 
@@ -64,7 +64,7 @@ C 함수에 대한 장식 형식은 다음 표와 같이 선언에 사용되는 
 |**`__fastcall`**|선행 및 후행 기호 ( **`@`** ) 뒤에 매개 변수 목록의 바이트 수를 나타내는 10 진수가 나옵니다.|
 |**`__vectorcall`**|두 개의 후행 기호 ( **`@@`** ) 뒤에 매개 변수 목록의 10 진수 바이트 수가 이어집니다.|
 
-## <a name="viewing-decorated-names"></a><a name="Viewing"></a>데코레이팅된 이름 보기
+## <a name="viewing-decorated-names"></a><a name="Viewing"></a> 데코레이팅된 이름 보기
 
 데이터, 개체 또는 함수 정의나 프로토타입이 포함된 소스 파일을 컴파일하고 나서 기호 이름의 데코레이트된 형식을 가져올 수 있습니다. 프로그램에서 데코레이트된 이름을 검사하려면 다음 방법의 하나를 사용합니다.
 
@@ -82,7 +82,7 @@ C 함수에 대한 장식 형식은 다음 표와 같이 선언에 사용되는 
 
 2. 데코레이트된 형식의 기호를 찾으려면 괄호 안에 있는 데코레이트되지 않은 이름을 찾습니다. 데코레이팅된 이름은 같은 줄에서 파이프 (&#124;) 문자 뒤와 데코레이팅되지 않은 이름 앞에 있습니다.
 
-## <a name="viewing-undecorated-names"></a><a name="Undecorated"></a>데코레이팅되지 않은 이름 보기
+## <a name="viewing-undecorated-names"></a><a name="Undecorated"></a> 데코레이팅되지 않은 이름 보기
 
 undname.exe를 사용하여 데코레이트된 이름을 데코레이트되지 않은 형식으로 변환할 수 있습니다. 이 예제에서는 어떻게 작동하는지 보여 줍니다.
 
@@ -98,4 +98,4 @@ is :- "private: void __thiscall a::func1(int)"
 ## <a name="see-also"></a>참고 항목
 
 [추가 MSVC 빌드 도구](c-cpp-build-tools.md)<br/>
-[extern을 사용하여 링크 지정](../../cpp/using-extern-to-specify-linkage.md)
+[extern을 사용하여 링크 지정](../../cpp/extern-cpp.md)

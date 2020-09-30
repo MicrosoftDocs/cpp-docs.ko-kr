@@ -88,12 +88,12 @@ helpviewer_keywords:
 - m_iRowset
 - m_rgRowHandles
 ms.assetid: 6a9189af-7556-45b1-adcb-9d62bb36704c
-ms.openlocfilehash: 470755744783272245ca3aa8e4b57e2943db5fae
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 27a07d10256147d3c3ed383744ba1ee5fdfd06a1
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840403"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91504076"
 ---
 # <a name="irowsetimpl-class"></a>IRowsetImpl 클래스
 
@@ -137,23 +137,23 @@ class ATL_NO_VTABLE IRowsetImpl : public RowsetInterface
 | 속성 | 설명 |
 |-|-|
 |[AddRefRows](#addrefrows)|기존 행 핸들에 참조 횟수를 추가합니다.|
-|[CreateRow](#createrow)|새를 할당 하기 위해 [GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md) 에서 호출 `HROW` 됩니다. 사용자가 직접 호출 하지 않습니다.|
+|[CreateRow](#createrow)|새를 할당 하기 위해 [GetNextRows](#getnextrows) 에서 호출 `HROW` 됩니다. 사용자가 직접 호출 하지 않습니다.|
 |[GetData](#getdata)|행 집합의 행 복사본에서 데이터를 검색합니다.|
 |[GetDBStatus](#getdbstatus)|지정 된 필드의 상태를 반환 합니다.|
 |[GetNextRows](#getnextrows)|이전 위치를 기억하여 행을 순서대로 페치합니다.|
 |[IRowsetImpl](#irowsetimpl)|생성자입니다. 사용자가 직접 호출 하지 않습니다.|
-|[RefRows](#refrows)|[Addrefrows](../../data/oledb/irowsetimpl-addrefrows.md) 및 [ReleaseRows](../../data/oledb/irowsetimpl-releaserows.md)에서 호출 됩니다. 사용자가 직접 호출 하지 않습니다.|
+|[RefRows](#refrows)|[Addrefrows](#addrefrows) 및 [ReleaseRows](#releaserows)에서 호출 됩니다. 사용자가 직접 호출 하지 않습니다.|
 |[ReleaseRows](#releaserows)|행을 해제합니다.|
 |[RestartPosition](#restartposition)|다음 인출 위치를 초기 위치로 위치를 다시 배치 합니다. 즉, 행 집합을 처음 만들 때의 위치입니다.|
 |[SetDBStatus](#setdbstatus)|지정 된 필드의 상태 플래그를 설정 합니다.|
 
 ### <a name="data-members"></a>데이터 멤버
 
-| Name | 설명 |
+| 속성 | 설명 |
 |-|-|
 |[m_bCanFetchBack](#bcanfetchback)|공급자가 뒤로 페치를 지원할지 여부를 나타냅니다.|
 |[m_bCanScrollBack](#bcanscrollback)|공급자가 커서를 뒤로 스크롤할 수 있는지 여부를 나타냅니다.|
-|[m_bReset](#breset)|공급자가 커서 위치를 다시 설정 했는지 여부를 나타냅니다. 이는 [GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md)에서 뒤로 스크롤 하거나 인출할 때 특별 한 의미가 있습니다.|
+|[m_bReset](#breset)|공급자가 커서 위치를 다시 설정 했는지 여부를 나타냅니다. 이는 [GetNextRows](#getnextrows)에서 뒤로 스크롤 하거나 인출할 때 특별 한 의미가 있습니다.|
 |[m_iRowset](#irowset)|커서를 나타내는 행 집합에 대 한 인덱스입니다.|
 |[m_rgRowHandles](#rgrowhandles)|행 핸들의 목록입니다.|
 
@@ -180,7 +180,7 @@ STDMETHOD(AddRefRows )(DBCOUNTITEM cRows,
 
 ## <a name="irowsetimplcreaterow"></a><a name="createrow"></a> IRowsetImpl:: CreateRow
 
-새를 할당 하기 위해 [GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md) 에서 호출 하는 도우미 메서드입니다 `HROW` .
+새를 할당 하기 위해 [GetNextRows](#getnextrows) 에서 호출 하는 도우미 메서드입니다 `HROW` .
 
 ### <a name="syntax"></a>구문
 
@@ -203,7 +203,7 @@ HRESULT CreateRow(DBROWOFFSET lRowsOffset,
 
 ### <a name="remarks"></a>설명
 
-행이 있으면이 메서드는 [Addrefrows](../../data/oledb/irowsetimpl-addrefrows.md) 를 호출 하 고를 반환 합니다. 그렇지 않으면 RowClass 템플릿 변수의 새 인스턴스를 할당 하 고 [m_rgRowHandles](../../data/oledb/irowsetimpl-m-rgrowhandles.md)에 추가 합니다.
+행이 있으면이 메서드는 [Addrefrows](#addrefrows) 를 호출 하 고를 반환 합니다. 그렇지 않으면 RowClass 템플릿 변수의 새 인스턴스를 할당 하 고 [m_rgRowHandles](#rgrowhandles)에 추가 합니다.
 
 ## <a name="irowsetimplgetdata"></a><a name="getdata"></a> IRowsetImpl:: GetData
 
@@ -288,7 +288,7 @@ IRowsetImpl();
 
 ## <a name="irowsetimplrefrows"></a><a name="refrows"></a> IRowsetImpl:: RefRows
 
-기존 행 핸들의 참조 횟수를 증가 시키거나 해제 하기 위해 [Addrefrows](../../data/oledb/irowsetimpl-addrefrows.md) 및 [ReleaseRows](../../data/oledb/irowsetimpl-releaserows.md) 에서 호출 됩니다.
+기존 행 핸들의 참조 횟수를 증가 시키거나 해제 하기 위해 [Addrefrows](#addrefrows) 및 [ReleaseRows](#releaserows) 에서 호출 됩니다.
 
 ### <a name="syntax"></a>구문
 
@@ -415,7 +415,7 @@ unsigned m_bReset:1;
 
 ### <a name="remarks"></a>설명
 
-소비자가 음수 또는 CRows를 사용 하 여 [GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md) 를 호출 `lOffset` 하 *cRows* 고 `m_bReset` 가 true 이면 `GetNextRows` 행 집합의 끝으로 이동 합니다. `m_bReset`가 false 이면 소비자는 OLE DB 사양을 준수 하 여 오류 코드를 수신 합니다. `m_bReset`플래그는 **`true`** 행 집합을 처음 만들 때와 소비자가 [IRowsetImpl:: RestartPosition](../../data/oledb/irowsetimpl-restartposition.md)를 호출 하는 경우로 설정 됩니다. 를 **`false`** 호출할 때로 설정 `GetNextRows` 됩니다.
+소비자가 음수 또는 CRows를 사용 하 여 [GetNextRows](#getnextrows) 를 호출 `lOffset` 하 *cRows* 고 `m_bReset` 가 true 이면 `GetNextRows` 행 집합의 끝으로 이동 합니다. `m_bReset`가 false 이면 소비자는 OLE DB 사양을 준수 하 여 오류 코드를 수신 합니다. `m_bReset`플래그는 **`true`** 행 집합을 처음 만들 때와 소비자가 [IRowsetImpl:: RestartPosition](#restartposition)를 호출 하는 경우로 설정 됩니다. 를 **`false`** 호출할 때로 설정 `GetNextRows` 됩니다.
 
 ## <a name="irowsetimplm_irowset"></a><a name="irowset"></a> IRowsetImpl:: m_iRowset
 

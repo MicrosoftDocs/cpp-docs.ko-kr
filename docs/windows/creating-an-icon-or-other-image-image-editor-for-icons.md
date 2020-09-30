@@ -79,16 +79,16 @@ helpviewer_keywords:
 - graphics [C++], converting formats
 - images [C++], converting formats
 ms.assetid: 66db3fb2-cfc1-48a2-9bdd-53f61eb7ee30
-ms.openlocfilehash: a331e310f031462c903546a2896317aae0c0d719
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: bbaa008d8dac74588fc15bfebbc7cb2611260349
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843367"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91504563"
 ---
 # <a name="how-to-create-an-icon-or-other-image"></a>방법: 아이콘 또는 다른 이미지 만들기
 
-새 이미지, 비트맵, 아이콘, 커서 또는 도구 모음을 만든 다음 **이미지 편집기** 를 사용 하 여 모양을 사용자 지정할 수 있습니다. [리소스 템플릿](../windows/how-to-use-resource-templates.md)뒤에 새 비트맵 패턴을 만들 수도 있습니다.
+새 이미지, 비트맵, 아이콘, 커서 또는 도구 모음을 만든 다음 **이미지 편집기** 를 사용 하 여 모양을 사용자 지정할 수 있습니다. [리소스 템플릿](./how-to-create-a-resource-script-file.md)뒤에 새 비트맵 패턴을 만들 수도 있습니다.
 
 ## <a name="icons-and-cursors-image-resources-for-display-devices"></a>아이콘과 커서: 디스플레이 장치용 이미지 리소스
 
@@ -98,7 +98,7 @@ ms.locfileid: "88843367"
 
 기본적으로 **이미지 편집기** 는 다음 표에 표시 된 장치에 대 한 추가 이미지 만들기를 지원 합니다. **사용자 지정 이미지** 대화 상자에 너비, 높이 및 색상 수 매개 변수를 입력 하 여 다른 장치용 이미지를 만들 수 있습니다.
 
-|색상|너비(픽셀)|높이(픽셀)|
+|색|너비(픽셀)|높이(픽셀)|
 |-----------|----------------------|-----------------------|
 |단색|16|16|
 |단색|32|32|
@@ -176,7 +176,7 @@ ms.locfileid: "88843367"
 
 1. [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources)에서 *.rc* 파일을 마우스 오른쪽 단추로 클릭 한 다음 **리소스 삽입**을 선택 합니다. *.Rc* 파일에 커서와 같은 기존 이미지 리소스가 이미 있는 경우 **커서** 폴더를 마우스 오른쪽 단추로 클릭 하 고 **커서 삽입**을 선택할 수 있습니다.
 
-1. [리소스 삽입 대화 상자](../windows/add-resource-dialog-box.md)에서 **아이콘** 또는 **커서** 를 선택 하 고 **새로 만들기**를 선택 합니다. 아이콘의 경우이 작업은 32 × 32, 16 색 아이콘을 사용 하 여 아이콘 리소스를 만듭니다. 커서의 경우 32 × 32, 단색 (2 색) 이미지가 만들어집니다.
+1. [리소스 삽입 대화 상자](./how-to-create-a-resource-script-file.md)에서 **아이콘** 또는 **커서** 를 선택 하 고 **새로 만들기**를 선택 합니다. 아이콘의 경우이 작업은 32 × 32, 16 색 아이콘을 사용 하 여 아이콘 리소스를 만듭니다. 커서의 경우 32 × 32, 단색 (2 색) 이미지가 만들어집니다.
 
    **+** **리소스 삽입** 대화 상자에서 이미지 리소스 형식 옆에 더하기 기호 ()가 표시 되 면 도구 모음 템플릿을 사용할 수 있음을 의미 합니다. 더하기 기호를 선택 하 여 템플릿 목록을 확장 하 고, 템플릿을 선택 하 고, **새로 만들기**를 선택 합니다.
 
@@ -205,12 +205,12 @@ ms.locfileid: "88843367"
 
 ### <a name="to-create-transparent-or-inverse-regions-in-device-images"></a>장치 이미지에서 투명 한 영역 또는 반전 영역을 만들려면
 
-[이미지 편집기](../windows/image-editor-for-icons.md)에서 초기 아이콘이 나 커서 이미지에는 투명 한 특성이 있습니다. 아이콘 및 커서 이미지는 사각형 이지만 이미지의 일부는 투명 하 고 화면의 기본 이미지는 아이콘이 나 커서를 통해 표시 되기 때문에 많은 부분이 나타나지 않습니다. 아이콘을 끌면 이미지 일부가 반전 된 색으로 나타날 수 있습니다. [색 창](../windows/colors-window-image-editor-for-icons.md)에서 화면 색과 반전색을 설정 하 여이 효과를 만듭니다.
+[이미지 편집기](../windows/image-editor-for-icons.md)에서 초기 아이콘이 나 커서 이미지에는 투명 한 특성이 있습니다. 아이콘 및 커서 이미지는 사각형 이지만 이미지의 일부는 투명 하 고 화면의 기본 이미지는 아이콘이 나 커서를 통해 표시 되기 때문에 많은 부분이 나타나지 않습니다. 아이콘을 끌면 이미지 일부가 반전 된 색으로 나타날 수 있습니다. [색 창](./image-editor-for-icons.md)에서 화면 색과 반전색을 설정 하 여이 효과를 만듭니다.
 
 아이콘 및 커서에 적용 하는 화면색 및 반전색은 파생 된 이미지를 모양 및 색으로 지정 하거나 역 영역을 할당 합니다. 색은 해당 특성이 있는 이미지의 일부를 표시 합니다. 편집에서 화면색 및 반전색 특성을 나타내는 색을 변경할 수 있습니다. 이러한 변경 내용은 응용 프로그램의 아이콘이 나 커서의 모양에 영향을 주지 않습니다.
 
 > [!NOTE]
-> 표시 되는 대화 상자와 메뉴 명령은 활성 설정이 나 버전에 따라 **도움말** 에 설명 된 것과 다를 수 있습니다. 설정을 변경 하려면 메뉴 **도구**  >  **설정 가져오기 및 내보내기**로 이동 합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](/visualstudio/ide/personalizing-the-visual-studio-ide)을 참조하세요.
+> 표시되는 대화 상자와 메뉴 명령은 활성 설정 또는 버전에 따라 **도움말**에 설명된 것과 다를 수 있습니다. 설정을 변경 하려면 메뉴 **도구**  >  **설정 가져오기 및 내보내기**로 이동 합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](/visualstudio/ide/personalizing-the-visual-studio-ide)을 참조하세요.
 
 #### <a name="to-create-transparent-or-inverse-regions"></a>투명 한 영역 또는 반전 영역을 만들려면
 
@@ -227,7 +227,7 @@ ms.locfileid: "88843367"
    다른 선택기에 대해 보충 색이 자동으로 할당 됩니다.
 
    > [!TIP]
-   > **화면색** 또는 **반전색** 선택기를 두 번 클릭 하면 [사용자 지정 색 선택 대화 상자가](../windows/custom-color-selector-dialog-box-image-editor-for-icons.md) 나타납니다.
+   > **화면색** 또는 **반전색** 선택기를 두 번 클릭 하면 [사용자 지정 색 선택 대화 상자가](./image-editor-for-icons.md) 나타납니다.
 
 ### <a name="use-the-256-color-palette"></a>256 색상표 사용
 
@@ -237,13 +237,13 @@ ms.locfileid: "88843367"
 
 1. [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources)에서 *.rc* 파일을 마우스 오른쪽 단추로 클릭 한 다음 **리소스 삽입**을 선택 합니다. *.Rc* 파일에 커서와 같은 기존 이미지 리소스가 이미 있는 경우 **커서** 폴더를 마우스 오른쪽 단추로 클릭 하 고 **커서 삽입**을 선택할 수 있습니다.
 
-1. [리소스 삽입 대화 상자](../windows/add-resource-dialog-box.md)에서 **아이콘** 또는 **커서** 를 선택 하 고 **새로 만들기**를 선택 합니다.
+1. [리소스 삽입 대화 상자](./how-to-create-a-resource-script-file.md)에서 **아이콘** 또는 **커서** 를 선택 하 고 **새로 만들기**를 선택 합니다.
 
 1. 메뉴 **이미지**  >  **새 장치 이미지** 로 이동 하 여 원하는 256 색 이미지 스타일을 선택 합니다.
 
 #### <a name="to-choose-a-color-from-the-256-color-palette-for-large-icons"></a>크게 아이콘의 256 색상표에서 색을 선택 하려면
 
-256 색상표에서 선택 항목을 그리려면 [색 창의](../windows/colors-window-image-editor-for-icons.md) **색 색상표에서 색을** 선택 해야 합니다.
+256 색상표에서 선택 항목을 그리려면 [색 창의](./image-editor-for-icons.md) **색 색상표에서 색을** 선택 해야 합니다.
 
 1. 크게 아이콘이 나 커서를 선택 하거나 새로운 크게 아이콘이 나 커서를 만듭니다.
 
@@ -258,7 +258,7 @@ ms.locfileid: "88843367"
 
 커서의 핫 스폿은 Windows에서 커서 위치를 추적 하는 지점입니다. 기본적으로 핫 스폿은 좌표를 사용 하 여 커서의 왼쪽 위 모퉁이로 설정 됩니다 `0,0` . [속성 창](/visualstudio/ide/reference/properties-window)의 **Hotspot** 속성은 핫 스폿 좌표를 표시합니다.
 
-1. [이미지 편집기 도구 모음](../windows/toolbar-image-editor-for-icons.md)에서 **핫스폿 설정** 도구를 선택 합니다.
+1. [이미지 편집기 도구 모음](./image-editor-for-icons.md)에서 **핫스폿 설정** 도구를 선택 합니다.
 
 1. 커서의 핫 스폿으로 할당할 픽셀을 선택 합니다.
 
@@ -284,13 +284,13 @@ ms.locfileid: "88843367"
 1. 다른 이름 **으로 파일 저장** 대화 상자에서 파일에 지정할 이름 및 파일 **이름** 상자에 원하는 파일 형식을 나타내는 확장명을 입력 합니다. 예를 들어 *myfile.gif*합니다.
 
    > [!NOTE]
-   > 다른 파일 형식으로 저장 하려면 프로젝트 외부에서 비트맵을 만들거나 열어야 합니다. 프로젝트 내에서 만들거나 여는 경우 **다른 이름으로 저장** 명령을 사용할 수 없습니다. 자세한 내용은 [프로젝트 외부에서 리소스 스크립트 파일의 리소스 보기 (독립 실행형)](../windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md)를 참조 하세요.
+   > 다른 파일 형식으로 저장 하려면 프로젝트 외부에서 비트맵을 만들거나 열어야 합니다. 프로젝트 내에서 만들거나 여는 경우 **다른 이름으로 저장** 명령을 사용할 수 없습니다. 자세한 내용은 [프로젝트 외부에서 리소스 스크립트 파일의 리소스 보기 (독립 실행형)](./how-to-create-a-resource-script-file.md)를 참조 하세요.
 
 1. **저장**을 선택합니다.
 
 ### <a name="to-convert-an-image-from-one-format-to-another"></a>이미지를 한 형식에서 다른 형식으로 변환 하려면
 
-**이미지 편집기** 에서 GIF 또는 JPEG 이미지를 열고 비트맵으로 저장할 수 있습니다. 또한 비트맵 파일을 열고 GIF 또는 JPEG로 저장할 수 있습니다. 작업 하는 이미지는 개발 환경에서 편집 하기 위해 프로젝트에 포함 되지 않아도 됩니다 ( [독립 실행형 이미지 편집](../windows/editing-an-image-outside-of-a-project-image-editor-for-icons.md)참조).
+**이미지 편집기** 에서 GIF 또는 JPEG 이미지를 열고 비트맵으로 저장할 수 있습니다. 또한 비트맵 파일을 열고 GIF 또는 JPEG로 저장할 수 있습니다. 작업 하는 이미지는 개발 환경에서 편집 하기 위해 프로젝트에 포함 되지 않아도 됩니다 ( [독립 실행형 이미지 편집](./selecting-an-area-of-an-image-image-editor-for-icons.md)참조).
 
 1. **이미지 편집기**에서 이미지를 엽니다.
 
@@ -304,7 +304,7 @@ ms.locfileid: "88843367"
 
 1. [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources)에서 *.rc* 파일을 마우스 오른쪽 단추로 클릭 한 다음 **리소스 삽입**을 선택 합니다. *.Rc* 파일에 커서와 같은 기존 이미지 리소스가 이미 있는 경우 **커서** 폴더를 마우스 오른쪽 단추로 클릭 하 고 **커서 삽입**을 선택할 수 있습니다.
 
-1. [리소스 삽입 대화 상자](../windows/add-resource-dialog-box.md)에서 만들려는 이미지 리소스의 유형 (예:**비트맵**)을 선택 하 고 **새로**만들기를 선택 합니다.
+1. [리소스 삽입 대화 상자](./how-to-create-a-resource-script-file.md)에서 만들려는 이미지 리소스의 유형 (예:**비트맵**)을 선택 하 고 **새로**만들기를 선택 합니다.
 
    **+** **리소스 삽입** 대화 상자에서 이미지 리소스 형식 옆에 더하기 기호 ()가 표시 되 면 도구 모음 템플릿을 사용할 수 있음을 의미 합니다. 더하기 기호를 선택 하 여 템플릿 목록을 확장 하 고, 템플릿을 선택 하 고, **새로 만들기**를 선택 합니다.
 
@@ -332,7 +332,7 @@ ms.locfileid: "88843367"
 [방법: 색 작업](../windows/working-with-color-image-editor-for-icons.md)<br/>
 [액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
 <!--
-[Converting Bitmaps to Toolbars](../windows/converting-bitmaps-to-toolbars.md)<br/>
-[Creating New Toolbars](../windows/creating-new-toolbars.md)<br/>
+[Converting Bitmaps to Toolbars](./toolbar-editor.md)<br/>
+[Creating New Toolbars](./toolbar-editor.md)<br/>
 [Icons](/windows/win32/menurc/icons)<br/>
 [Cursors](/windows/win32/menurc/cursors)<br/>-->

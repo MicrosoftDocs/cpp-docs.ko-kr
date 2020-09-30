@@ -6,12 +6,12 @@ helpviewer_keywords:
 - MFC, adding classes from type libraries
 - type libraries, adding MFC classes from
 ms.assetid: aba40476-3cfb-47af-990e-ae2e9e0d79cf
-ms.openlocfilehash: 4e8d0f74a73048f172a8030d4bfb081c803e7170
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 45bad00155cc1587980e6f3b25843a7a22e7e754
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86405119"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91503043"
 ---
 # <a name="adding-an-mfc-class-from-a-type-library"></a>형식 라이브러리에서 MFC 클래스 추가
 
@@ -28,11 +28,11 @@ ms.locfileid: "86405119"
 
 1. 바로 가기 메뉴에서 **추가**를 클릭한 다음, **클래스 추가**를 클릭합니다.
 
-1. [클래스 추가](../../ide/add-class-dialog-box.md) 대화 상자의 템플릿 창에서 **Typelib의 MFC 클래스**를 클릭 한 다음 **열기** 를 클릭 하 여 [typelib에서 클래스 추가 마법사](../../mfc/reference/add-class-from-typelib-wizard.md)를 표시 합니다.
+1. [클래스 추가](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) 대화 상자의 템플릿 창에서 **Typelib의 MFC 클래스**를 클릭 한 다음 **열기** 를 클릭 하 여 [typelib에서 클래스 추가 마법사](../../mfc/reference/add-class-from-typelib-wizard.md)를 표시 합니다.
 
 마법사에서 형식 라이브러리에 둘 이상의 클래스를 추가할 수 있습니다. 마찬가지로, 단일 마법사 세션에서 두 개 이상의 형식 라이브러리에 있는 클래스를 추가할 수 있습니다.
 
-마법사는 선택한 형식 라이브러리에서 추가 하는 각 인터페이스에 대해 [Coledispatchdriver](../../mfc/reference/coledispatchdriver-class.md)에서 파생 된 MFC 클래스를 만듭니다. `COleDispatchDriver`OLE 자동화의 클라이언트 쪽을 구현 합니다.
+마법사는 선택한 형식 라이브러리에서 추가 하는 각 인터페이스에 대해 [Coledispatchdriver](../../mfc/reference/coledispatchdriver-class.md)에서 파생 된 MFC 클래스를 만듭니다. `COleDispatchDriver` OLE 자동화의 클라이언트 쪽을 구현 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

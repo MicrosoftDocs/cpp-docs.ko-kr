@@ -99,12 +99,12 @@ helpviewer_keywords:
 - END_PARAM_MAP macro
 - SET_PARAM_TYPE macro
 ms.assetid: 8765eb7b-32dd-407c-bacf-8890ef959837
-ms.openlocfilehash: 07fbdf7dfcd82937721955c5ba08e2241df162e5
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 60f642366589bb13b15665331a81d440322eb13f
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846539"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91504036"
 ---
 # <a name="macros-and-global-functions-for-ole-db-consumer-templates"></a>OLE DB 소비자 템플릿에 대한 매크로 및 전역 함수
 
@@ -112,13 +112,13 @@ OLE DB Consumer 템플릿에는 다음과 같은 매크로 및 전역 함수가 
 
 ## <a name="global-functions"></a>전역 함수
 
-| Name | 설명 |
+| 속성 | 설명 |
 |-|-|
 |[AtlTraceErrorRecords](#atltraceerrorrecords)|오류가 반환 되 면 덤프 장치에 OLE DB 오류 레코드 정보를 덤프 합니다.|
 
 ## <a name="accessor-map-macros"></a>접근자 맵 매크로
 
-| Name | 설명 |
+| 속성 | 설명 |
 |-|-|
 |[BEGIN_ACCESSOR](#begin_accessor)|접근자 항목의 시작을 표시 합니다.|
 |[BEGIN_ACCESSOR_MAP](#begin_accessor_map)|접근자 맵 항목의 시작을 표시합니다.|
@@ -127,7 +127,7 @@ OLE DB Consumer 템플릿에는 다음과 같은 매크로 및 전역 함수가 
 
 ## <a name="column-map-macros"></a>열 맵 매크로
 
-| Name | 설명 |
+| 속성 | 설명 |
 |-|-|
 |[BEGIN_COLUMN_MAP](#begin_column_map)|사용자 레코드 클래스에서 열 맵 항목의 시작을 표시 합니다.|
 |[BLOB_ENTRY](#blob_entry)|BLOB (binary large object)를 바인딩하는 데 사용 됩니다.|
@@ -167,14 +167,14 @@ OLE DB Consumer 템플릿에는 다음과 같은 매크로 및 전역 함수가 
 
 ## <a name="command-macros"></a>명령 매크로
 
-| Name | 설명 |
+| 속성 | 설명 |
 |-|-|
-|[DEFINE_COMMAND](#define_command)|[CCommand](../../data/oledb/ccommand-class.md) 클래스를 사용 하는 경우 행 집합을 만드는 데 사용 되는 명령을 지정 합니다. 지정 된 응용 프로그램 유형과 일치 하는 문자열 유형 (ANSI 또는 유니코드)만 허용 합니다. DEFINE_COMMAND 대신 [DEFINE_COMMAND_EX](../../data/oledb/define-command-ex.md) 를 사용 하는 것이 좋습니다.|
+|[DEFINE_COMMAND](#define_command)|[CCommand](../../data/oledb/ccommand-class.md) 클래스를 사용 하는 경우 행 집합을 만드는 데 사용 되는 명령을 지정 합니다. 지정 된 응용 프로그램 유형과 일치 하는 문자열 유형 (ANSI 또는 유니코드)만 허용 합니다. DEFINE_COMMAND 대신 [DEFINE_COMMAND_EX](#define_command_ex) 를 사용 하는 것이 좋습니다.|
 |[DEFINE_COMMAND_EX](#define_command_ex)|[CCommand](../../data/oledb/ccommand-class.md) 클래스를 사용 하는 경우 행 집합을 만드는 데 사용 되는 명령을 지정 합니다. 는 ANSI 및 유니코드 응용 프로그램을 지원 합니다.|
 
 ## <a name="parameter-map-macros"></a>매개 변수 맵 매크로
 
-| Name | 설명 |
+| 속성 | 설명 |
 |-|-|
 |[BEGIN_PARAM_MAP](#begin_param_map)|사용자 레코드 클래스에서 매개 변수 맵 항목의 시작을 표시 합니다.|
 |[END_PARAM_MAP](#end_param_map)|매개 변수 맵 항목의 끝을 표시 합니다.|
@@ -223,7 +223,7 @@ BEGIN_ACCESSOR(num, bAuto)
 
 #### <a name="example"></a>예제
 
-[BEGIN_ACCESSOR_MAP](../../data/oledb/begin-accessor-map.md)를 참조 하세요.
+[BEGIN_ACCESSOR_MAP](#begin_accessor_map)를 참조 하세요.
 
 ### <a name="begin_accessor_map"></a><a name="begin_accessor_map"></a> BEGIN_ACCESSOR_MAP
 
@@ -247,7 +247,7 @@ BEGIN_ACCESSOR_MAP(x, num)
 
 행 집합에 여러 접근자가 있는 경우 처음에 BEGIN_ACCESSOR_MAP를 지정 하 고 각 개별 접근자에 대해 BEGIN_ACCESSOR 매크로를 사용 해야 합니다. BEGIN_ACCESSOR 매크로는 END_ACCESSOR 매크로를 사용 하 여 완료 됩니다. 접근자 맵은 END_ACCESSOR_MAP 매크로를 사용 하 여 완료 됩니다.
 
-사용자 레코드에 접근자가 하나만 있는 경우 [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md)매크로를 사용합니다.
+사용자 레코드에 접근자가 하나만 있는 경우 [BEGIN_COLUMN_MAP](#begin_column_map)매크로를 사용합니다.
 
 #### <a name="example"></a>예제
 
@@ -310,7 +310,7 @@ END_ACCESSOR()
 
 #### <a name="example"></a>예제
 
-[BEGIN_ACCESSOR_MAP](../../data/oledb/begin-accessor-map.md)를 참조 하세요.
+[BEGIN_ACCESSOR_MAP](#begin_accessor_map)를 참조 하세요.
 
 ### <a name="end_accessor_map"></a><a name="end_accessor_map"></a> END_ACCESSOR_MAP
 
@@ -328,7 +328,7 @@ END_ACCESSOR_MAP()
 
 #### <a name="example"></a>예제
 
-[BEGIN_ACCESSOR_MAP](../../data/oledb/begin-accessor-map.md)를 참조 하세요.
+[BEGIN_ACCESSOR_MAP](#begin_accessor_map)를 참조 하세요.
 
 ### <a name="begin_column_map"></a><a name="begin_column_map"></a> BEGIN_COLUMN_MAP
 
@@ -347,7 +347,7 @@ BEGIN_COLUMN_MAP(x)
 
 #### <a name="remarks"></a>설명
 
-이 매크로는 행 집합에 단일 접근자가 있는 경우에 사용됩니다. 행 집합에 여러 접근자가 있는 경우 [BEGIN_ACCESSOR_MAP](../../data/oledb/begin-accessor-map.md)을 사용합니다.
+이 매크로는 행 집합에 단일 접근자가 있는 경우에 사용됩니다. 행 집합에 여러 접근자가 있는 경우 [BEGIN_ACCESSOR_MAP](#begin_accessor_map)을 사용합니다.
 
 BEGIN_COLUMN_MAP 매크로는 END_COLUMN_MAP 매크로를 사용 하 여 완료 됩니다. 이 매크로는 사용자 레코드에 하나의 접근자만 필요한 경우에 사용됩니다.
 
@@ -389,7 +389,7 @@ BLOB_ENTRY(nOrdinal, IID, flags, data)
 
 ### <a name="blob_entry_length"></a><a name="blob_entry_length"></a> BLOB_ENTRY_LENGTH
 
-BEGIN_COLUMN_MAP 및 END_COLUMN_MAP와 함께 사용 되어[BLOB](/previous-versions/windows/desktop/ms711511(v=vs.85))(binary large object)을 바인딩합니다. [BLOB_ENTRY](../../data/oledb/blob-entry.md)와 유사 합니다. 단,이 매크로는 BLOB 열의 길이 (바이트)도 가져옵니다.
+BEGIN_COLUMN_MAP 및 END_COLUMN_MAP와 함께 사용 되어[BLOB](/previous-versions/windows/desktop/ms711511(v=vs.85))(binary large object)을 바인딩합니다. [BLOB_ENTRY](#blob_entry)와 유사 합니다. 단,이 매크로는 BLOB 열의 길이 (바이트)도 가져옵니다.
 
 #### <a name="syntax"></a>구문
 
@@ -420,7 +420,7 @@ BLOB_ENTRY_LENGTH(nOrdinal, IID, flags, data, length)
 
 ### <a name="blob_entry_length_status"></a><a name="blob_entry_length_status"></a> BLOB_ENTRY_LENGTH_STATUS
 
-BEGIN_COLUMN_MAP 및 END_COLUMN_MAP와 함께 사용 되어[BLOB](/previous-versions/windows/desktop/ms711511(v=vs.85))(binary large object)을 바인딩합니다. [BLOB_ENTRY](../../data/oledb/blob-entry.md)와 유사 합니다. 단,이 매크로는 BLOB 열의 길이와 상태를 가져옵니다.
+BEGIN_COLUMN_MAP 및 END_COLUMN_MAP와 함께 사용 되어[BLOB](/previous-versions/windows/desktop/ms711511(v=vs.85))(binary large object)을 바인딩합니다. [BLOB_ENTRY](#blob_entry)와 유사 합니다. 단,이 매크로는 BLOB 열의 길이와 상태를 가져옵니다.
 
 #### <a name="syntax"></a>구문
 
@@ -460,7 +460,7 @@ BLOB_ENTRY_LENGTH_STATUS(
 
 ### <a name="blob_entry_status"></a><a name="blob_entry_status"></a> BLOB_ENTRY_STATUS
 
-BEGIN_COLUMN_MAP 또는 BEGIN_ACCESSOR_MAP와 함께 사용 되어[BLOB](/previous-versions/windows/desktop/ms711511(v=vs.85))(binary large object)을 바인딩합니다. [BLOB_ENTRY](../../data/oledb/blob-entry.md)와 유사 합니다. 단,이 매크로는 BLOB 열의 상태도 가져옵니다.
+BEGIN_COLUMN_MAP 또는 BEGIN_ACCESSOR_MAP와 함께 사용 되어[BLOB](/previous-versions/windows/desktop/ms711511(v=vs.85))(binary large object)을 바인딩합니다. [BLOB_ENTRY](#blob_entry)와 유사 합니다. 단,이 매크로는 BLOB 열의 상태도 가져옵니다.
 
 #### <a name="syntax"></a>구문
 
@@ -491,7 +491,7 @@ BLOB_ENTRY_STATUS(nOrdinal, IID, flags, data, status)
 
 ### <a name="blob_name"></a><a name="blob_name"></a> BLOB_NAME
 
-BEGIN_COLUMN_MAP 및 END_COLUMN_MAP와 함께 사용 되어[BLOB](/previous-versions/windows/desktop/ms711511(v=vs.85))(binary large object)을 바인딩합니다. 이 매크로는 열 번호 대신 열 이름을 사용 한다는 점을 제외 하 고 [BLOB_ENTRY](../../data/oledb/blob-entry.md)와 유사 합니다.
+BEGIN_COLUMN_MAP 및 END_COLUMN_MAP와 함께 사용 되어[BLOB](/previous-versions/windows/desktop/ms711511(v=vs.85))(binary large object)을 바인딩합니다. 이 매크로는 열 번호 대신 열 이름을 사용 한다는 점을 제외 하 고 [BLOB_ENTRY](#blob_entry)와 유사 합니다.
 
 #### <a name="syntax"></a>구문
 
@@ -519,7 +519,7 @@ BLOB_NAME(pszName, IID, flags, data )
 
 ### <a name="blob_name_length"></a><a name="blob_name_length"></a> BLOB_NAME_LENGTH
 
-BEGIN_COLUMN_MAP 및 END_COLUMN_MAP와 함께 사용 되어[BLOB](/previous-versions/windows/desktop/ms711511(v=vs.85))(binary large object)을 바인딩합니다. [BLOB_NAME](../../data/oledb/blob-name.md)와 유사 합니다. 단,이 매크로는 BLOB 데이터 열의 길이 (바이트)도 가져옵니다.
+BEGIN_COLUMN_MAP 및 END_COLUMN_MAP와 함께 사용 되어[BLOB](/previous-versions/windows/desktop/ms711511(v=vs.85))(binary large object)을 바인딩합니다. [BLOB_NAME](#blob_name)와 유사 합니다. 단,이 매크로는 BLOB 데이터 열의 길이 (바이트)도 가져옵니다.
 
 #### <a name="syntax"></a>구문
 
@@ -546,7 +546,7 @@ BLOB_NAME_LENGTH(pszName, IID, flags, data, length )
 
 ### <a name="blob_name_length_status"></a><a name="blob_name_length_status"></a> BLOB_NAME_LENGTH_STATUS
 
-BEGIN_COLUMN_MAP 및 END_COLUMN_MAP와 함께 사용 되어[BLOB](/previous-versions/windows/desktop/ms711511(v=vs.85))(binary large object)을 바인딩합니다. [BLOB_NAME](../../data/oledb/blob-name.md)와 유사 합니다. 단,이 매크로는 BLOB 데이터 열의 길이와 상태도 가져옵니다.
+BEGIN_COLUMN_MAP 및 END_COLUMN_MAP와 함께 사용 되어[BLOB](/previous-versions/windows/desktop/ms711511(v=vs.85))(binary large object)을 바인딩합니다. [BLOB_NAME](#blob_name)와 유사 합니다. 단,이 매크로는 BLOB 데이터 열의 길이와 상태도 가져옵니다.
 
 #### <a name="syntax"></a>구문
 
@@ -576,7 +576,7 @@ BLOB_NAME_LENGTH_STATUS(pszName, IID, flags, data, length, status )
 
 ### <a name="blob_name_status"></a><a name="blob_name_status"></a> BLOB_NAME_STATUS
 
-BEGIN_COLUMN_MAP 및 END_COLUMN_MAP와 함께 사용 되어[BLOB](/previous-versions/windows/desktop/ms711511(v=vs.85))(binary large object)을 바인딩합니다. 이 매크로는 BLOB 데이터 열의 상태도 가져오는 점을 제외 하 고 [BLOB_NAME](../../data/oledb/blob-name.md)와 유사 합니다.
+BEGIN_COLUMN_MAP 및 END_COLUMN_MAP와 함께 사용 되어[BLOB](/previous-versions/windows/desktop/ms711511(v=vs.85))(binary large object)을 바인딩합니다. 이 매크로는 BLOB 데이터 열의 상태도 가져오는 점을 제외 하 고 [BLOB_NAME](#blob_name)와 유사 합니다.
 
 #### <a name="syntax"></a>구문
 
@@ -690,15 +690,15 @@ COLUMN_ENTRY(nOrdinal, data)
 
 COLUMN_ENTRY 매크로는 다음 위치에서 사용 됩니다.
 
-- [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) 와 [END_COLUMN_MAP](../../data/oledb/end-column-map.md) 매크로 사이.
+- [BEGIN_COLUMN_MAP](#begin_column_map) 와 [END_COLUMN_MAP](#end_column_map) 매크로 사이.
 
-- [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) 와 [END_ACCESSOR](../../data/oledb/end-accessor.md) 매크로 사이.
+- [BEGIN_ACCESSOR](#begin_accessor) 와 [END_ACCESSOR](#end_accessor) 매크로 사이.
 
-- [BEGIN_PARAM_MAP](../../data/oledb/begin-param-map.md) 와 [END_PARAM_MAP](../../data/oledb/end-param-map.md) 매크로 사이.
+- [BEGIN_PARAM_MAP](#begin_param_map) 와 [END_PARAM_MAP](#end_param_map) 매크로 사이.
 
 #### <a name="example"></a>예제
 
-[BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) 및 [BEGIN_ACCESSOR_MAP](../../data/oledb/begin-accessor-map.md)매크로 항목의 예제를 참조 하세요.
+[BEGIN_COLUMN_MAP](#begin_column_map) 및 [BEGIN_ACCESSOR_MAP](#begin_accessor_map)매크로 항목의 예제를 참조 하세요.
 
 ### <a name="column_entry_ex"></a><a name="column_entry_ex"></a> COLUMN_ENTRY_EX
 
@@ -742,15 +742,15 @@ COLUMN_ENTRY_EX(nOrdinal, wType, nLength, nPrecision, nScale, data, length, stat
 
 COLUMN_ENTRY_EX 매크로는 다음 위치에서 사용 됩니다.
 
-- [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) 와 [END_COLUMN_MAP](../../data/oledb/end-column-map.md) 매크로 사이.
+- [BEGIN_COLUMN_MAP](#begin_column_map) 와 [END_COLUMN_MAP](#end_column_map) 매크로 사이.
 
-- [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) 와 [END_ACCESSOR](../../data/oledb/end-accessor.md) 매크로 사이.
+- [BEGIN_ACCESSOR](#begin_accessor) 와 [END_ACCESSOR](#end_accessor) 매크로 사이.
 
-- [BEGIN_PARAM_MAP](../../data/oledb/begin-param-map.md) 와 [END_PARAM_MAP](../../data/oledb/end-param-map.md) 매크로 사이.
+- [BEGIN_PARAM_MAP](#begin_param_map) 와 [END_PARAM_MAP](#end_param_map) 매크로 사이.
 
 #### <a name="example"></a>예제
 
-[BOOKMARK_ENTRY](../../data/oledb/bookmark-entry.md)를 참조 하세요.
+[BOOKMARK_ENTRY](#bookmark_entry)를 참조 하세요.
 
 ### <a name="column_entry_length"></a><a name="column_entry_length"></a> COLUMN_ENTRY_LENGTH
 
@@ -779,11 +779,11 @@ COLUMN_ENTRY_LENGTH(nOrdinal, data, length)
 
 이 매크로는 *길이* 변수를 지원 합니다. 다음과 같은 위치에 사용됩니다.
 
-- [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) 와 [END_COLUMN_MAP](../../data/oledb/end-column-map.md) 매크로 사이.
+- [BEGIN_COLUMN_MAP](#begin_column_map) 와 [END_COLUMN_MAP](#end_column_map) 매크로 사이.
 
-- [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) 와 [END_ACCESSOR](../../data/oledb/end-accessor.md) 매크로 사이.
+- [BEGIN_ACCESSOR](#begin_accessor) 와 [END_ACCESSOR](#end_accessor) 매크로 사이.
 
-- [BEGIN_PARAM_MAP](../../data/oledb/begin-param-map.md) 와 [END_PARAM_MAP](../../data/oledb/end-param-map.md) 매크로 사이.
+- [BEGIN_PARAM_MAP](#begin_param_map) 와 [END_PARAM_MAP](#end_param_map) 매크로 사이.
 
 ### <a name="column_entry_length_status"></a><a name="column_entry_length_status"></a> COLUMN_ENTRY_LENGTH_STATUS
 
@@ -815,11 +815,11 @@ COLUMN_ENTRY_LENGTH_STATUS(nOrdinal, data, length, status)
 
 이 매크로는 길이 및 상태 변수를 지원하려는 경우에 사용합니다. 다음과 같은 위치에 사용됩니다.
 
-- [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) 와 [END_COLUMN_MAP](../../data/oledb/end-column-map.md) 매크로 사이.
+- [BEGIN_COLUMN_MAP](#begin_column_map) 와 [END_COLUMN_MAP](#end_column_map) 매크로 사이.
 
-- [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) 와 [END_ACCESSOR](../../data/oledb/end-accessor.md) 매크로 사이.
+- [BEGIN_ACCESSOR](#begin_accessor) 와 [END_ACCESSOR](#end_accessor) 매크로 사이.
 
-- [BEGIN_PARAM_MAP](../../data/oledb/begin-param-map.md) 와 [END_PARAM_MAP](../../data/oledb/end-param-map.md) 매크로 사이.
+- [BEGIN_PARAM_MAP](#begin_param_map) 와 [END_PARAM_MAP](#end_param_map) 매크로 사이.
 
 ### <a name="column_entry_ps"></a><a name="column_entry_ps"></a> COLUMN_ENTRY_PS
 
@@ -851,11 +851,11 @@ COLUMN_ENTRY_PS(nOrdinal, nPrecision, nScale, data)
 
 바인딩할 열의 정밀도 및 배율을 지정할 수 있습니다. 다음과 같은 위치에 사용됩니다.
 
-- [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) 와 [END_COLUMN_MAP](../../data/oledb/end-column-map.md) 매크로 사이.
+- [BEGIN_COLUMN_MAP](#begin_column_map) 와 [END_COLUMN_MAP](#end_column_map) 매크로 사이.
 
-- [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) 와 [END_ACCESSOR](../../data/oledb/end-accessor.md) 매크로 사이.
+- [BEGIN_ACCESSOR](#begin_accessor) 와 [END_ACCESSOR](#end_accessor) 매크로 사이.
 
-- [BEGIN_PARAM_MAP](../../data/oledb/begin-param-map.md) 와 [END_PARAM_MAP](../../data/oledb/end-param-map.md) 매크로 사이.
+- [BEGIN_PARAM_MAP](#begin_param_map) 와 [END_PARAM_MAP](#end_param_map) 매크로 사이.
 
 ### <a name="column_entry_ps_length"></a><a name="column_entry_ps_length"></a> COLUMN_ENTRY_PS_LENGTH
 
@@ -890,11 +890,11 @@ COLUMN_ENTRY_PS_LENGTH(nOrdinal, nPrecision, nScale, data, length)
 
 바인딩할 열의 정밀도 및 배율을 지정할 수 있습니다. 이 매크로는 *길이* 변수를 지원 합니다. 다음과 같은 위치에 사용됩니다.
 
-- [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) 와 [END_COLUMN_MAP](../../data/oledb/end-column-map.md) 매크로 사이.
+- [BEGIN_COLUMN_MAP](#begin_column_map) 와 [END_COLUMN_MAP](#end_column_map) 매크로 사이.
 
-- [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) 와 [END_ACCESSOR](../../data/oledb/end-accessor.md) 매크로 사이.
+- [BEGIN_ACCESSOR](#begin_accessor) 와 [END_ACCESSOR](#end_accessor) 매크로 사이.
 
-- [BEGIN_PARAM_MAP](../../data/oledb/begin-param-map.md) 와 [END_PARAM_MAP](../../data/oledb/end-param-map.md) 매크로 사이.
+- [BEGIN_PARAM_MAP](#begin_param_map) 와 [END_PARAM_MAP](#end_param_map) 매크로 사이.
 
 ### <a name="column_entry_ps_length_status"></a><a name="column_entry_ps_length_status"></a> COLUMN_ENTRY_PS_LENGTH_STATUS
 
@@ -932,11 +932,11 @@ COLUMN_ENTRY_PS_LENGTH_STATUS(nOrdinal, nPrecision, nScale, data, length, status
 
 바인딩할 열의 정밀도 및 배율을 지정할 수 있습니다. 이 매크로는 길이 및 상태 변수를 지원하려는 경우에 사용합니다. 다음과 같은 위치에 사용됩니다.
 
-- [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) 와 [END_COLUMN_MAP](../../data/oledb/end-column-map.md) 매크로 사이.
+- [BEGIN_COLUMN_MAP](#begin_column_map) 와 [END_COLUMN_MAP](#end_column_map) 매크로 사이.
 
-- [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) 와 [END_ACCESSOR](../../data/oledb/end-accessor.md) 매크로 사이.
+- [BEGIN_ACCESSOR](#begin_accessor) 와 [END_ACCESSOR](#end_accessor) 매크로 사이.
 
-- [BEGIN_PARAM_MAP](../../data/oledb/begin-param-map.md) 와 [END_PARAM_MAP](../../data/oledb/end-param-map.md) 매크로 사이.
+- [BEGIN_PARAM_MAP](#begin_param_map) 와 [END_PARAM_MAP](#end_param_map) 매크로 사이.
 
 ### <a name="column_entry_ps_status"></a><a name="column_entry_ps_status"></a> COLUMN_ENTRY_PS_STATUS
 
@@ -971,11 +971,11 @@ COLUMN_ENTRY_PS_STATUS(nOrdinal, nPrecision, nScale, data, status)
 
 바인딩할 열의 정밀도 및 배율을 지정할 수 있습니다. 이 매크로는 *상태* 변수를 지원 합니다. 다음과 같은 위치에 사용됩니다.
 
-- [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) 와 [END_COLUMN_MAP](../../data/oledb/end-column-map.md) 매크로 사이.
+- [BEGIN_COLUMN_MAP](#begin_column_map) 와 [END_COLUMN_MAP](#end_column_map) 매크로 사이.
 
-- [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) 와 [END_ACCESSOR](../../data/oledb/end-accessor.md) 매크로 사이.
+- [BEGIN_ACCESSOR](#begin_accessor) 와 [END_ACCESSOR](#end_accessor) 매크로 사이.
 
-- [BEGIN_PARAM_MAP](../../data/oledb/begin-param-map.md) 와 [END_PARAM_MAP](../../data/oledb/end-param-map.md) 매크로 사이.
+- [BEGIN_PARAM_MAP](#begin_param_map) 와 [END_PARAM_MAP](#end_param_map) 매크로 사이.
 
 ### <a name="column_entry_status"></a><a name="column_entry_status"></a> COLUMN_ENTRY_STATUS
 
@@ -1004,11 +1004,11 @@ COLUMN_ENTRY_STATUS(nOrdinal, data, status)
 
 이 매크로는 *상태* 변수를 지원 합니다. 다음과 같은 위치에 사용됩니다.
 
-- [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) 와 [END_COLUMN_MAP](../../data/oledb/end-column-map.md) 매크로 사이.
+- [BEGIN_COLUMN_MAP](#begin_column_map) 와 [END_COLUMN_MAP](#end_column_map) 매크로 사이.
 
-- [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) 와 [END_ACCESSOR](../../data/oledb/end-accessor.md) 매크로 사이.
+- [BEGIN_ACCESSOR](#begin_accessor) 와 [END_ACCESSOR](#end_accessor) 매크로 사이.
 
-- [BEGIN_PARAM_MAP](../../data/oledb/begin-param-map.md) 와 [END_PARAM_MAP](../../data/oledb/end-param-map.md) 매크로 사이.
+- [BEGIN_PARAM_MAP](#begin_param_map) 와 [END_PARAM_MAP](#end_param_map) 매크로 사이.
 
 ### <a name="column_entry_type"></a><a name="column_entry_type"></a> COLUMN_ENTRY_TYPE
 
@@ -1033,7 +1033,7 @@ COLUMN_ENTRY_TYPE (nOrdinal, wType, data)
 
 #### <a name="remarks"></a>설명
 
-이 매크로는 데이터 형식을 지정 하는 방법을 제공 하는 [COLUMN_ENTRY](../../data/oledb/column-entry.md) 매크로의 특수 한 변형입니다.
+이 매크로는 데이터 형식을 지정 하는 방법을 제공 하는 [COLUMN_ENTRY](#column_entry) 매크로의 특수 한 변형입니다.
 
 ### <a name="column_entry_type_size"></a><a name="column_entry_type_size"></a> COLUMN_ENTRY_TYPE_SIZE
 
@@ -1061,11 +1061,11 @@ COLUMN_ENTRY_TYPE_SIZE(nOrdinal, wType, nLength, data)
 
 #### <a name="remarks"></a>설명
 
-이 매크로는 데이터 크기와 형식을 지정 하는 방법을 제공 하는 [COLUMN_ENTRY](../../data/oledb/column-entry.md) 매크로의 특수 한 변형입니다.
+이 매크로는 데이터 크기와 형식을 지정 하는 방법을 제공 하는 [COLUMN_ENTRY](#column_entry) 매크로의 특수 한 변형입니다.
 
 ### <a name="column_name"></a><a name="column_name"></a> COLUMN_NAME
 
-행 집합에서 행 집합의 특정 열에 대 한 바인딩을 나타냅니다. 이 매크로는 열 번호 대신 열 이름을 사용 한다는 점을 제외 하 고 [COLUMN_ENTRY](../../data/oledb/column-entry.md)와 유사 합니다.
+행 집합에서 행 집합의 특정 열에 대 한 바인딩을 나타냅니다. 이 매크로는 열 번호 대신 열 이름을 사용 한다는 점을 제외 하 고 [COLUMN_ENTRY](#column_entry)와 유사 합니다.
 
 #### <a name="syntax"></a>구문
 
@@ -1083,17 +1083,17 @@ COLUMN_NAME(pszName, data)
 
 #### <a name="remarks"></a>설명
 
-COLUMN_NAME_ * 매크로는 [COLUMN_ENTRY](../../data/oledb/column-entry.md)와 동일한 위치에서 사용 됩니다.
+COLUMN_NAME_ * 매크로는 [COLUMN_ENTRY](#column_entry)와 동일한 위치에서 사용 됩니다.
 
-- [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) 와 [END_COLUMN_MAP](../../data/oledb/end-column-map.md) 매크로 사이.
+- [BEGIN_COLUMN_MAP](#begin_column_map) 와 [END_COLUMN_MAP](#end_column_map) 매크로 사이.
 
-- [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) 와 [END_ACCESSOR](../../data/oledb/end-accessor.md) 매크로 사이.
+- [BEGIN_ACCESSOR](#begin_accessor) 와 [END_ACCESSOR](#end_accessor) 매크로 사이.
 
-- [BEGIN_PARAM_MAP](../../data/oledb/begin-param-map.md) 와 [END_PARAM_MAP](../../data/oledb/end-param-map.md) 매크로 사이.
+- [BEGIN_PARAM_MAP](#begin_param_map) 와 [END_PARAM_MAP](#end_param_map) 매크로 사이.
 
 ### <a name="column_name_ex"></a><a name="column_name_ex"></a> COLUMN_NAME_EX
 
-행 집합에서 행 집합의 특정 열에 대 한 바인딩을 나타냅니다. 이 매크로 에서도 데이터 형식, 크기, 전체 자릿수, 소수 자릿수, 열 길이 및 열 상태를 사용 한다는 점을 제외 하 고 [COLUMN_NAME](../../data/oledb/column-name.md)와 유사 합니다.
+행 집합에서 행 집합의 특정 열에 대 한 바인딩을 나타냅니다. 이 매크로 에서도 데이터 형식, 크기, 전체 자릿수, 소수 자릿수, 열 길이 및 열 상태를 사용 한다는 점을 제외 하 고 [COLUMN_NAME](#column_name)와 유사 합니다.
 
 #### <a name="syntax"></a>구문
 
@@ -1129,11 +1129,11 @@ COLUMN_NAME_EX(pszName, wType, nLength, nPrecision, nScale, data, length, status
 
 #### <a name="remarks"></a>설명
 
-COLUMN_NAME_ * 매크로가 사용 되는 위치에 대 한 자세한 내용은 [COLUMN_NAME](../../data/oledb/column-name.md) 를 참조 하세요.
+COLUMN_NAME_ * 매크로가 사용 되는 위치에 대 한 자세한 내용은 [COLUMN_NAME](#column_name) 를 참조 하세요.
 
 ### <a name="column_name_length"></a><a name="column_name_length"></a> COLUMN_NAME_LENGTH
 
-행 집합에서 행 집합의 특정 열에 대 한 바인딩을 나타냅니다. 이 매크로 에서도 열 길이가 사용 된다는 점을 제외 하 고 [COLUMN_NAME](../../data/oledb/column-name.md)와 유사 합니다.
+행 집합에서 행 집합의 특정 열에 대 한 바인딩을 나타냅니다. 이 매크로 에서도 열 길이가 사용 된다는 점을 제외 하 고 [COLUMN_NAME](#column_name)와 유사 합니다.
 
 #### <a name="syntax"></a>구문
 
@@ -1154,11 +1154,11 @@ COLUMN_NAME_LENGTH(pszName, data, length)
 
 #### <a name="remarks"></a>설명
 
-COLUMN_NAME_ * 매크로가 사용 되는 위치에 대 한 자세한 내용은 [COLUMN_NAME](../../data/oledb/column-name.md) 를 참조 하세요.
+COLUMN_NAME_ * 매크로가 사용 되는 위치에 대 한 자세한 내용은 [COLUMN_NAME](#column_name) 를 참조 하세요.
 
 ### <a name="column_name_length_status"></a><a name="column_name_length_status"></a> COLUMN_NAME_LENGTH_STATUS
 
-행 집합에서 행 집합의 특정 열에 대 한 바인딩을 나타냅니다. 이 매크로 에서도 열 길이와 열 상태를 사용 한다는 점을 제외 하 고 [COLUMN_NAME](../../data/oledb/column-name.md)와 유사 합니다.
+행 집합에서 행 집합의 특정 열에 대 한 바인딩을 나타냅니다. 이 매크로 에서도 열 길이와 열 상태를 사용 한다는 점을 제외 하 고 [COLUMN_NAME](#column_name)와 유사 합니다.
 
 #### <a name="syntax"></a>구문
 
@@ -1182,11 +1182,11 @@ COLUMN_NAME_LENGTH_STATUS(pszName, data, length, status )
 
 #### <a name="remarks"></a>설명
 
-COLUMN_NAME_ * 매크로가 사용 되는 위치에 대 한 자세한 내용은 [COLUMN_NAME](../../data/oledb/column-name.md) 를 참조 하세요.
+COLUMN_NAME_ * 매크로가 사용 되는 위치에 대 한 자세한 내용은 [COLUMN_NAME](#column_name) 를 참조 하세요.
 
 ### <a name="column_name_ps"></a><a name="column_name_ps"></a> COLUMN_NAME_PS
 
-행 집합에서 행 집합의 특정 열에 대 한 바인딩을 나타냅니다. 이 매크로는 전체 자릿수와 소수 자릿수를 사용 한다는 점을 제외 하 고 [COLUMN_NAME](../../data/oledb/column-name.md)와 비슷합니다.
+행 집합에서 행 집합의 특정 열에 대 한 바인딩을 나타냅니다. 이 매크로는 전체 자릿수와 소수 자릿수를 사용 한다는 점을 제외 하 고 [COLUMN_NAME](#column_name)와 비슷합니다.
 
 #### <a name="syntax"></a>구문
 
@@ -1210,11 +1210,11 @@ COLUMN_NAME_PS(pszName, nPrecision, nScale, data )
 
 #### <a name="remarks"></a>설명
 
-COLUMN_NAME_ * 매크로가 사용 되는 위치에 대 한 자세한 내용은 [COLUMN_NAME](../../data/oledb/column-name.md) 를 참조 하세요.
+COLUMN_NAME_ * 매크로가 사용 되는 위치에 대 한 자세한 내용은 [COLUMN_NAME](#column_name) 를 참조 하세요.
 
 ### <a name="column_name_ps_length"></a><a name="column_name_ps_length"></a> COLUMN_NAME_PS_LENGTH
 
-행 집합에서 행 집합의 특정 열에 대 한 바인딩을 나타냅니다. 이 매크로 에서도 전체 자릿수, 소수 자릿수 및 열 길이를 사용 한다는 점을 제외 하 고 [COLUMN_NAME](../../data/oledb/column-name.md)와 유사 합니다.
+행 집합에서 행 집합의 특정 열에 대 한 바인딩을 나타냅니다. 이 매크로 에서도 전체 자릿수, 소수 자릿수 및 열 길이를 사용 한다는 점을 제외 하 고 [COLUMN_NAME](#column_name)와 유사 합니다.
 
 #### <a name="syntax"></a>구문
 
@@ -1241,11 +1241,11 @@ COLUMN_NAME_PS_LENGTH(pszName, nPrecision, nScale, data, length )
 
 #### <a name="remarks"></a>설명
 
-COLUMN_NAME_ * 매크로가 사용 되는 위치에 대 한 자세한 내용은 [COLUMN_NAME](../../data/oledb/column-name.md) 를 참조 하세요.
+COLUMN_NAME_ * 매크로가 사용 되는 위치에 대 한 자세한 내용은 [COLUMN_NAME](#column_name) 를 참조 하세요.
 
 ### <a name="column_name_ps_length_status"></a><a name="column_name_ps_length_status"></a> COLUMN_NAME_PS_LENGTH_STATUS
 
-행 집합에서 행 집합의 특정 열에 대 한 바인딩을 나타냅니다. 이 매크로 에서도 전체 자릿수, 소수 자릿수, 열 길이 및 열 상태를 사용 한다는 점을 제외 하 고 [COLUMN_NAME](../../data/oledb/column-name.md)와 유사 합니다.
+행 집합에서 행 집합의 특정 열에 대 한 바인딩을 나타냅니다. 이 매크로 에서도 전체 자릿수, 소수 자릿수, 열 길이 및 열 상태를 사용 한다는 점을 제외 하 고 [COLUMN_NAME](#column_name)와 유사 합니다.
 
 #### <a name="syntax"></a>구문
 
@@ -1275,11 +1275,11 @@ COLUMN_NAME_PS_LENGTH_STATUS(pszName, nPrecision, nScale, data, length, status )
 
 #### <a name="remarks"></a>설명
 
-COLUMN_NAME_ * 매크로가 사용 되는 위치에 대 한 자세한 내용은 [COLUMN_NAME](../../data/oledb/column-name.md) 를 참조 하세요.
+COLUMN_NAME_ * 매크로가 사용 되는 위치에 대 한 자세한 내용은 [COLUMN_NAME](#column_name) 를 참조 하세요.
 
 ### <a name="column_name_ps_status"></a><a name="column_name_ps_status"></a> COLUMN_NAME_PS_STATUS
 
-행 집합에서 행 집합의 특정 열에 대 한 바인딩을 나타냅니다. 이 매크로 에서도 전체 자릿수, 소수 자릿수 및 열 상태를 사용 한다는 점을 제외 하 고 [COLUMN_NAME](../../data/oledb/column-name.md)와 유사 합니다.
+행 집합에서 행 집합의 특정 열에 대 한 바인딩을 나타냅니다. 이 매크로 에서도 전체 자릿수, 소수 자릿수 및 열 상태를 사용 한다는 점을 제외 하 고 [COLUMN_NAME](#column_name)와 유사 합니다.
 
 #### <a name="syntax"></a>구문
 
@@ -1306,11 +1306,11 @@ COLUMN_NAME_PS_STATUS(pszName, nPrecision, nScale, data, status )
 
 #### <a name="remarks"></a>설명
 
-COLUMN_NAME_ * 매크로가 사용 되는 위치에 대 한 자세한 내용은 [COLUMN_NAME](../../data/oledb/column-name.md) 를 참조 하세요.
+COLUMN_NAME_ * 매크로가 사용 되는 위치에 대 한 자세한 내용은 [COLUMN_NAME](#column_name) 를 참조 하세요.
 
 ### <a name="column_name_status"></a><a name="column_name_status"></a> COLUMN_NAME_STATUS
 
-행 집합에서 행 집합의 특정 열에 대 한 바인딩을 나타냅니다. 이 매크로 에서도 열 상태를 사용 한다는 점을 제외 하 고 [COLUMN_NAME](../../data/oledb/column-name.md)와 유사 합니다.
+행 집합에서 행 집합의 특정 열에 대 한 바인딩을 나타냅니다. 이 매크로 에서도 열 상태를 사용 한다는 점을 제외 하 고 [COLUMN_NAME](#column_name)와 유사 합니다.
 
 #### <a name="syntax"></a>구문
 
@@ -1331,11 +1331,11 @@ COLUMN_NAME_STATUS(pszName, data, status )
 
 #### <a name="remarks"></a>설명
 
-COLUMN_NAME_ * 매크로가 사용 되는 위치에 대 한 자세한 내용은 [COLUMN_NAME](../../data/oledb/column-name.md) 를 참조 하세요.
+COLUMN_NAME_ * 매크로가 사용 되는 위치에 대 한 자세한 내용은 [COLUMN_NAME](#column_name) 를 참조 하세요.
 
 ### <a name="column_name_type"></a><a name="column_name_type"></a> COLUMN_NAME_TYPE
 
-행 집합에서 행 집합의 특정 열에 대 한 바인딩을 나타냅니다. 이 매크로 에서도 데이터 형식을 사용 한다는 점을 제외 하 고 [COLUMN_NAME](../../data/oledb/column-name.md)와 유사 합니다.
+행 집합에서 행 집합의 특정 열에 대 한 바인딩을 나타냅니다. 이 매크로 에서도 데이터 형식을 사용 한다는 점을 제외 하 고 [COLUMN_NAME](#column_name)와 유사 합니다.
 
 #### <a name="syntax"></a>구문
 
@@ -1356,11 +1356,11 @@ COLUMN_NAME_TYPE(pszName, wType, data)
 
 #### <a name="remarks"></a>설명
 
-COLUMN_NAME_ * 매크로가 사용 되는 위치에 대 한 자세한 내용은 [COLUMN_NAME](../../data/oledb/column-name.md) 를 참조 하세요.
+COLUMN_NAME_ * 매크로가 사용 되는 위치에 대 한 자세한 내용은 [COLUMN_NAME](#column_name) 를 참조 하세요.
 
 ### <a name="column_name_type_ps"></a><a name="column_name_type_ps"></a> COLUMN_NAME_TYPE_PS
 
-행 집합에서 행 집합의 특정 열에 대 한 바인딩을 나타냅니다. 이 매크로 에서도 데이터 형식, 전체 자릿수 및 소수 자릿수를 사용 한다는 점을 제외 하 고 [COLUMN_NAME](../../data/oledb/column-name.md)와 유사 합니다.
+행 집합에서 행 집합의 특정 열에 대 한 바인딩을 나타냅니다. 이 매크로 에서도 데이터 형식, 전체 자릿수 및 소수 자릿수를 사용 한다는 점을 제외 하 고 [COLUMN_NAME](#column_name)와 유사 합니다.
 
 #### <a name="syntax"></a>구문
 
@@ -1387,11 +1387,11 @@ COLUMN_NAME_TYPE_PS(pszName, wType, nPrecision, nScale, data)
 
 #### <a name="remarks"></a>설명
 
-COLUMN_NAME_ * 매크로가 사용 되는 위치에 대 한 자세한 내용은 [COLUMN_NAME](../../data/oledb/column-name.md) 를 참조 하세요.
+COLUMN_NAME_ * 매크로가 사용 되는 위치에 대 한 자세한 내용은 [COLUMN_NAME](#column_name) 를 참조 하세요.
 
 ### <a name="column_name_type_size"></a><a name="column_name_type_size"></a> COLUMN_NAME_TYPE_SIZE
 
-행 집합에서 행 집합의 특정 열에 대 한 바인딩을 나타냅니다. 이 매크로 에서도 데이터 형식과 크기를 사용 한다는 점을 제외 하 고 [COLUMN_NAME](../../data/oledb/column-name.md)와 유사 합니다.
+행 집합에서 행 집합의 특정 열에 대 한 바인딩을 나타냅니다. 이 매크로 에서도 데이터 형식과 크기를 사용 한다는 점을 제외 하 고 [COLUMN_NAME](#column_name)와 유사 합니다.
 
 #### <a name="syntax"></a>구문
 
@@ -1415,11 +1415,11 @@ COLUMN_NAME_TYPE_SIZE(pszName, wType, nLength, data)
 
 #### <a name="remarks"></a>설명
 
-COLUMN_NAME_ * 매크로가 사용 되는 위치에 대 한 자세한 내용은 [COLUMN_NAME](../../data/oledb/column-name.md) 를 참조 하세요.
+COLUMN_NAME_ * 매크로가 사용 되는 위치에 대 한 자세한 내용은 [COLUMN_NAME](#column_name) 를 참조 하세요.
 
 ### <a name="column_name_type_status"></a><a name="column_name_type_status"></a> COLUMN_NAME_TYPE_STATUS
 
-행 집합에서 행 집합의 특정 열에 대 한 바인딩을 나타냅니다. 이 매크로는 데이터 형식과 열 상태도 함께 사용 한다는 점을 제외 하 고 [COLUMN_NAME](../../data/oledb/column-name.md)와 유사 합니다.
+행 집합에서 행 집합의 특정 열에 대 한 바인딩을 나타냅니다. 이 매크로는 데이터 형식과 열 상태도 함께 사용 한다는 점을 제외 하 고 [COLUMN_NAME](#column_name)와 유사 합니다.
 
 #### <a name="syntax"></a>구문
 
@@ -1443,7 +1443,7 @@ COLUMN_NAME_TYPE_STATUS(pszName, wType, status, data)
 
 #### <a name="remarks"></a>설명
 
-COLUMN_NAME_ * 매크로가 사용 되는 위치에 대 한 자세한 내용은 [COLUMN_NAME](../../data/oledb/column-name.md) 를 참조 하세요.
+COLUMN_NAME_ * 매크로가 사용 되는 위치에 대 한 자세한 내용은 [COLUMN_NAME](#column_name) 를 참조 하세요.
 
 ### <a name="end_column_map"></a><a name="end_column_map"></a> END_COLUMN_MAP
 
@@ -1461,14 +1461,14 @@ END_COLUMN_MAP()
 
 #### <a name="example"></a>예제
 
-[BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md)를 참조 하세요.
+[BEGIN_COLUMN_MAP](#begin_column_map)를 참조 하세요.
 
 ### <a name="define_command"></a><a name="define_command"></a> DEFINE_COMMAND
 
 [CCommand](../../data/oledb/ccommand-class.md) 클래스를 사용 하는 경우 행 집합을 만드는 데 사용 되는 명령을 지정 합니다. 지정 된 응용 프로그램 유형과 일치 하는 문자열 유형 (ANSI 또는 유니코드)만 허용 합니다.
 
 > [!NOTE]
-> DEFINE_COMMAND 대신 [DEFINE_COMMAND_EX](../../data/oledb/define-command-ex.md) 를 사용 하는 것이 좋습니다.
+> DEFINE_COMMAND 대신 [DEFINE_COMMAND_EX](#define_command_ex) 를 사용 하는 것이 좋습니다.
 
 #### <a name="syntax"></a>구문
 
@@ -1486,13 +1486,13 @@ DEFINE_COMMAND(x, szCommand)
 
 #### <a name="remarks"></a>설명
 
-[CCommand:: Open](../../data/oledb/ccommand-open.md) 메서드에서 명령 텍스트를 지정 하지 않으면 지정 하는 명령 문자열이 기본값으로 사용 됩니다.
+[CCommand:: Open](./ccommand-class.md#open) 메서드에서 명령 텍스트를 지정 하지 않으면 지정 하는 명령 문자열이 기본값으로 사용 됩니다.
 
-응용 프로그램을 ANSI로 빌드하는 경우이 매크로는 ANSI 문자열을, 응용 프로그램을 유니코드로 빌드하는 경우에는 유니코드 문자열을 허용 합니다. ANSI 또는 유니코드 응용 프로그램 형식에 관계 없이 이전에 유니코드 문자열을 허용 하기 때문에 DEFINE_COMMAND 대신 [DEFINE_COMMAND_EX](../../data/oledb/define-command-ex.md) 를 사용 하는 것이 좋습니다.
+응용 프로그램을 ANSI로 빌드하는 경우이 매크로는 ANSI 문자열을, 응용 프로그램을 유니코드로 빌드하는 경우에는 유니코드 문자열을 허용 합니다. ANSI 또는 유니코드 응용 프로그램 형식에 관계 없이 이전에 유니코드 문자열을 허용 하기 때문에 DEFINE_COMMAND 대신 [DEFINE_COMMAND_EX](#define_command_ex) 를 사용 하는 것이 좋습니다.
 
 #### <a name="example"></a>예제
 
-[BOOKMARK_ENTRY](../../data/oledb/bookmark-entry.md)를 참조 하세요.
+[BOOKMARK_ENTRY](#bookmark_entry)를 참조 하세요.
 
 ### <a name="define_command_ex"></a><a name="define_command_ex"></a> DEFINE_COMMAND_EX
 
@@ -1514,13 +1514,13 @@ DEFINE_COMMAND_EX(x, wszCommand)
 
 #### <a name="remarks"></a>설명
 
-[CCommand:: Open](../../data/oledb/ccommand-open.md) 메서드에서 명령 텍스트를 지정 하지 않으면 지정 하는 명령 문자열이 기본값으로 사용 됩니다.
+[CCommand:: Open](./ccommand-class.md#open) 메서드에서 명령 텍스트를 지정 하지 않으면 지정 하는 명령 문자열이 기본값으로 사용 됩니다.
 
-이 매크로는 응용 프로그램 형식에 관계 없이 유니코드 문자열을 허용 합니다. 이 매크로는 ANSI 응용 프로그램 뿐만 아니라 유니코드를 지원 하기 때문에 [DEFINE_COMMAND](../../data/oledb/define-command.md) 보다 좋습니다.
+이 매크로는 응용 프로그램 형식에 관계 없이 유니코드 문자열을 허용 합니다. 이 매크로는 ANSI 응용 프로그램 뿐만 아니라 유니코드를 지원 하기 때문에 [DEFINE_COMMAND](#define_command) 보다 좋습니다.
 
 #### <a name="example"></a>예제
 
-[BOOKMARK_ENTRY](../../data/oledb/bookmark-entry.md)를 참조 하세요.
+[BOOKMARK_ENTRY](#bookmark_entry)를 참조 하세요.
 
 ### <a name="begin_param_map"></a><a name="begin_param_map"></a> BEGIN_PARAM_MAP
 
@@ -1543,7 +1543,7 @@ BEGIN_PARAM_MAP(x)
 
 #### <a name="example"></a>예제
 
-[BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) 매크로에 대 한 예제를 참조 하십시오.
+[BEGIN_COLUMN_MAP](#begin_column_map) 매크로에 대 한 예제를 참조 하십시오.
 
 ### <a name="end_param_map"></a><a name="end_param_map"></a> END_PARAM_MAP
 
@@ -1557,7 +1557,7 @@ END_PARAM_MAP()
 
 #### <a name="example"></a>예제
 
-[BEGIN_PARAM_MAP](../../data/oledb/begin-param-map.md) 매크로에 대 한 예제를 참조 하십시오.
+[BEGIN_PARAM_MAP](#begin_param_map) 매크로에 대 한 예제를 참조 하십시오.
 
 ### <a name="set_param_type"></a><a name="set_param_type"></a> SET_PARAM_TYPE
 

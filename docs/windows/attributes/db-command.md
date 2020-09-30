@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - db_command attribute
 ms.assetid: 714c3e15-85d7-408b-9a7c-88505c3e5d24
-ms.openlocfilehash: 868ff862cc41543c8ebc7880a5d1a9a7e6b103f3
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 5910e72b10d5b849d203d088564d79d0f80a7961
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90684588"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91504600"
 ---
 # <a name="db_command"></a>db_command
 
@@ -97,7 +97,7 @@ TCHAR m_state[3] = 'CA';
 *hresult*<br/>
 (선택 사항) 이 데이터베이스 명령의 HRESULT를 수신할 변수를 식별합니다. 변수가 없으면 특성에 의해 자동으로 삽입됩니다.
 
-*바인딩하*<br/>
+*bindings*<br/>
 (선택 사항) OLE DB 명령에서 바인딩 매개 변수를 구분할 수 있습니다.
 
 *bindings*에 대한 값을 지정하면, **db_command**는 관련된 값을 구문 분석하고 \[*bindtype*] 매개 변수는 구문 분석하지 않습니다. 이 방법에서는 OLE DB 공급자 구문을 사용할 수 있습니다. 구문 분석을 사용하지 않도록 설정하려면 바인딩 매개 변수 없이 `Bindings=""`를 지정합니다.
@@ -123,9 +123,9 @@ TCHAR m_state[3] = 'CA';
 
 소비자 특성 공급자가 클래스에 이 특성을 적용하는 경우 컴파일러는 클래스의 이름을 _\_*YourClassName*Accessor로 바꿉니다. 여기서 *YourClassName*은 클래스에 지정한 이름입니다. 컴파일러는 또한 \_*YourClassName*Accessor에서 파생되는 *YourClassName*이라는 클래스를 만듭니다.  클래스 뷰에 두 클래스 모두 표시됩니다.
 
-## <a name="examples"></a>예제
+## <a name="examples"></a>예
 
-이 샘플에서는 상태 열이 'CA'와 일치하는 테이블에서 성과 이름을 선택하는 명령을 정의합니다. **db_command** 는 마법사에서 생성한 함수(예: [OpenAll 및 CloseAll](../../data/oledb/consumer-wizard-generated-methods.md)) 및 `CRowset` 멤버 함수(예: [MoveNext](../../data/oledb/crowset-movenext.md))를 호출할 수 있는 행 집합을 만들고 읽습니다.
+이 샘플에서는 상태 열이 'CA'와 일치하는 테이블에서 성과 이름을 선택하는 명령을 정의합니다. **db_command** 는 마법사에서 생성한 함수(예: [OpenAll 및 CloseAll](../../data/oledb/consumer-wizard-generated-methods.md)) 및 `CRowset` 멤버 함수(예: [MoveNext](../../data/oledb/crowset-class.md#movenext))를 호출할 수 있는 행 집합을 만들고 읽습니다.
 
 이 코드를 사용하려면 pubs 데이터베이스에 연결되는 고유한 연결 문자열을 제공해야 합니다. 개발 환경에서 이를 수행하는 방법에 대한 자세한 내용은 [방법: 데이터베이스에 연결 및 기존 개체 찾아보기](/sql/ssdt/how-to-connect-to-a-database-and-browse-existing-objects) 및 [새 연결 추가](/visualstudio/data-tools/add-new-connections)를 참조하세요.
 
@@ -237,13 +237,13 @@ int main() {
 | 특성 컨텍스트 | 값 |
 |-|-|
 |**적용 대상**|**`class`**, **`struct`** , 멤버, 메서드, 로컬|
-|**불가능**|No|
-|**필수 특성**|None|
-|**잘못된 특성**|None|
+|**불가능**|아니요|
+|**필수 특성**|없음|
+|**잘못된 특성**|없음|
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [OLE DB 소비자 특성](ole-db-consumer-attributes.md)<br/>
 [독립형 특성](stand-alone-attributes.md)

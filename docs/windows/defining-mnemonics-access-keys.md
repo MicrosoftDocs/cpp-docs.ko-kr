@@ -20,12 +20,12 @@ helpviewer_keywords:
 - Data property
 - combo boxes [C++], testing values
 ms.assetid: 60a85435-aa30-4c5c-98b6-42fb045b9eb2
-ms.openlocfilehash: 91b6365334b977957ff6bd6c25278d4088961a2c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 59d81c0b835171132ebf29739a4e130191a87769
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222071"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91504454"
 ---
 # <a name="how-to-define-control-access-and-values-c"></a>방법: 컨트롤 액세스 및 값 정의 (c + +)
 
@@ -103,14 +103,14 @@ ms.locfileid: "87222071"
 
 1. 값 추가를 마쳤으면 **enter** 키를 누릅니다.
 
-콤보 상자의 드롭다운 부분을 확대 하는 방법에 대 한 자세한 내용은 [콤보 상자의 크기 설정 및 드롭다운 목록](setting-the-size-of-the-combo-box-and-its-drop-down-list.md)을 참조 하십시오.
+콤보 상자의 드롭다운 부분을 확대 하는 방법에 대 한 자세한 내용은 [콤보 상자의 크기 설정 및 드롭다운 목록](./arrangement-of-controls-on-dialog-boxes.md)을 참조 하십시오.
 
 > [!NOTE]
 > 이 절차를 사용 하 여 Win32 프로젝트에 값을 추가할 수 없습니다 ( **데이터** 속성은 win32 프로젝트에 대해 회색으로 표시 됨). Win32 프로젝트에는이 기능을 추가 하는 라이브러리가 없으므로 Win32 프로젝트를 사용 하 여 프로그래밍 방식으로 콤보 상자에 값을 추가 해야 합니다.
 
 ### <a name="to-test-the-appearance-of-values-in-a-combo-box"></a>콤보 상자에서 값의 모양을 테스트 하려면
 
-1. **데이터** 속성에 값을 입력 한 후 [대화 상자 편집기 도구 모음](../windows/showing-or-hiding-the-dialog-editor-toolbar.md)에서 **테스트** 단추를 선택 합니다.
+1. **데이터** 속성에 값을 입력 한 후 [대화 상자 편집기 도구 모음](./dialog-editor.md)에서 **테스트** 단추를 선택 합니다.
 
 1. 전체 값 목록을 아래로 스크롤합니다. 값은 **속성** 창의 **데이터** 속성에 입력 된 대로 정확 하 게 표시 됩니다. 철자 및 대/소문자 검사는 없습니다.
 
@@ -118,7 +118,7 @@ ms.locfileid: "87222071"
 
 ## <a name="radio-button-values"></a>라디오 단추 값
 
-대화 상자에 라디오 단추를 추가 하는 경우 그룹의 첫 번째 단추에 대 한 **속성** 창에서 **그룹** 속성을 설정 하 여 해당 단추를 그룹으로 처리 합니다. 그러면 해당 라디오 단추의 컨트롤 ID가 [멤버 변수 추가 마법사](../ide/add-member-variable-wizard.md)에 표시됩니다. 이 마법사를 통해 라디오 단추 그룹에 대한 멤버 변수를 추가할 수 있습니다.
+대화 상자에 라디오 단추를 추가 하는 경우 그룹의 첫 번째 단추에 대 한 **속성** 창에서 **그룹** 속성을 설정 하 여 해당 단추를 그룹으로 처리 합니다. 그러면 해당 라디오 단추의 컨트롤 ID가 [멤버 변수 추가 마법사](../ide/adding-a-member-variable-visual-cpp.md#add-member-variable-wizard)에 표시됩니다. 이 마법사를 통해 라디오 단추 그룹에 대한 멤버 변수를 추가할 수 있습니다.
 
 대화 상자에 라디오 단추 그룹을 여러 개 포함할 수 있습니다. 다음 절차를 사용 하 여 각 그룹을 추가 합니다.
 
@@ -139,7 +139,7 @@ ms.locfileid: "87222071"
 
 1. 탭 순서의 첫 번째 라디오 단추 컨트롤 (기준 컨트롤 및 **그룹** 속성이 **True**로 설정 된 컨트롤)을 마우스 오른쪽 단추로 클릭 하 고 **변수 추가**를 선택 합니다.
 
-1. [멤버 변수 추가 마법사](../ide/add-member-variable-wizard.md)에서 **제어 변수** 확인란을 선택한 후 **값** 라디오 단추를 선택합니다.
+1. [멤버 변수 추가 마법사](../ide/adding-a-member-variable-visual-cpp.md#add-member-variable-wizard)에서 **제어 변수** 확인란을 선택한 후 **값** 라디오 단추를 선택합니다.
 
    - **변수 이름** 상자에 새 멤버 변수 이름을 입력합니다.
 

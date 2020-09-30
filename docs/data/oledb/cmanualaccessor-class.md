@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CreateAccessor method
 - CreateParameterAccessor method
 ms.assetid: a0088074-7135-465c-b228-69097a50b8cc
-ms.openlocfilehash: 32ab31734b8c6e3f72053e1e4f2a8a9233b73995
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 24938812ea254fe0150cbabf58dd72bf45ebd0a1
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838102"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91504105"
 ---
 # <a name="cmanualaccessor-class"></a>CManualAccessor 클래스
 
@@ -104,7 +104,7 @@ void AddBindEntry(DBORDINAL nOrdinal,
 
 ### <a name="remarks"></a>설명
 
-이 함수를 사용 하려면 먼저 [Createaccessor](../../data/oledb/cmanualaccessor-createaccessor.md)를 호출 해야 합니다. 에 지정 된 열 개수 보다 많은 항목을 추가할 수 없습니다 `CreateAccessor` .
+이 함수를 사용 하려면 먼저 [Createaccessor](#createaccessor)를 호출 해야 합니다. 에 지정 된 열 개수 보다 많은 항목을 추가할 수 없습니다 `CreateAccessor` .
 
 ## <a name="cmanualaccessoraddparameterentry"></a><a name="addparameterentry"></a> CManualAccessor:: AddParameterEntry
 
@@ -148,7 +148,7 @@ void AddParameterEntry(DBORDINAL nOrdinal,
 
 ### <a name="remarks"></a>설명
 
-이 함수를 사용 하려면 먼저 [Createparameteraccessor](../../data/oledb/cmanualaccessor-createparameteraccessor.md)를 호출 해야 합니다.
+이 함수를 사용 하려면 먼저 [Createparameteraccessor](#createparameteraccessor)를 호출 해야 합니다.
 
 ## <a name="cmanualaccessorcreateaccessor"></a><a name="createaccessor"></a> CManualAccessor:: CreateAccessor
 
@@ -165,7 +165,7 @@ HRESULT CreateAccessor(int nBindEntries,
 #### <a name="parameters"></a>매개 변수
 
 *nBindEntries*<br/>
-진행 열 수입니다. 이 수는 [CManualAccessor:: AddBindEntry](../../data/oledb/cmanualaccessor-addbindentry.md) 함수에 대 한 호출 수와 일치 해야 합니다.
+진행 열 수입니다. 이 수는 [CManualAccessor:: AddBindEntry](#addbindentry) 함수에 대 한 호출 수와 일치 해야 합니다.
 
 *pBuffer*<br/>
 진행 출력 열이 저장 되는 버퍼에 대 한 포인터입니다.
@@ -210,7 +210,7 @@ HRESULT CreateParameterAccessor(int nBindEntries,
 
 ### <a name="remarks"></a>설명
 
-[Addparameterentry](../../data/oledb/cmanualaccessor-addparameterentry.md)를 호출 하기 전에이 함수를 호출 해야 합니다.
+[Addparameterentry](#addparameterentry)를 호출 하기 전에이 함수를 호출 해야 합니다.
 
 ## <a name="see-also"></a>참고 항목
 
