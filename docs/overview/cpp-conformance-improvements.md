@@ -3,12 +3,12 @@ title: C++ 규칙 향상
 ms.date: 08/04/2020
 description: Visual Studio의 Microsoft C++는 C++20 언어 표준을 완전하게 준수하기 위해 점점 향상되고 있습니다.
 ms.technology: cpp-language
-ms.openlocfilehash: 3a0e21bf08fcf7861feedd3fd43666bd3768deee
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 3cf06b092b79068b22e62dfdbbcfbd2c2cf5ad91
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90042123"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91500253"
 ---
 # <a name="c-conformance-improvements-in-visual-studio"></a>Visual Studio의 C++ 규칙 향상
 
@@ -1432,7 +1432,7 @@ int main()
 
 - rvalue 컨테이너를 수락하는 컨테이너 병합 및 추출 멤버 함수에 대한 오버 로드가 추가되었습니다. 자세한 내용은 [P0083 "맵 및 집합 스플라이스"](https://wg21.link/p0083r3)를 참조하세요.
 
-### <a name="stdbasic_istreamread-processing-of-rn--n"></a>`\r\n`` => `\n`의 `std::basic_istream::read` 처리
+### <a name="stdbasic_istreamread-processing-of-rn-n"></a>`\r\n`` =>`\n`의 `std::basic_istream::read` 처리
 
 `std::basic_istream::read`가 `\r\n` => `\n` 처리 과정에서 일시적으로 제공된 버퍼 파트에 쓰지 않도록 수정되었습니다. 이 변경으로 인해 Visual Studio 2017 15.8에서 4K보다 큰 읽기에 대해 얻은 성능 향상이 일부 손실됩니다. 하지만 문자당 3회의 가상 호출 방지를 통한 효율성 향상은 유지됩니다.
 
@@ -1621,7 +1621,7 @@ void f(E e) {
 
 ## <a name="conformance-improvements-in-visual-studio-2017-rtw-version-150"></a><a name="improvements_150"></a> Visual Studio 2017 RTW(버전 15.0)의 규칙 향상
 
-집계를 위한 일반화된 **`constexpr`** 및 NSDMI(비정적 데이터 멤버 초기화) 지원이 추가되면서, 이제 Visual Studio 2017의 Microsoft C++ 컴파일러는 C++14 표준에 추가된 기능을 완벽하게 갖췄습니다. 하지만 C++11 및 C++98 표준의 몇 가지 기능은 아직 컴파일러에 구현되지 않았습니다. 컴파일러의 현재 상태를 보여 주는 테이블은 [Microsoft C++ 언어 규칙 테이블](../visual-cpp-language-conformance.md)을 참조하세요.
+집계를 위한 일반화된 **`constexpr`** 및 NSDMI(비정적 데이터 멤버 초기화) 지원이 추가되면서, 이제 Visual Studio 2017의 Microsoft C++ 컴파일러는 C++14 표준에 추가된 기능을 완벽하게 갖췄습니다. 하지만 C++11 및 C++98 표준의 몇 가지 기능은 아직 컴파일러에 구현되지 않았습니다. 컴파일러의 현재 상태를 보여 주는 테이블은 [Microsoft C++ 언어 규칙 테이블](./visual-cpp-language-conformance.md)을 참조하세요.
 
 ### <a name="c11-expression-sfinae-support-in-more-libraries"></a>C++11: 더 많은 라이브러리의 SFINAE 식 지원
 
@@ -3647,7 +3647,7 @@ note: see usage of 'g'.
 
 ## <a name="c-conformance-improvements-in-visual-studio-2015"></a>Visual Studio 2015의 C++ 규칙 향상
 
-Visual Studio 2015 업데이트 3까지 규칙 향상의 전체 목록이 있습니다. 자세한 내용은 [Visual C++ 2003 ~ 2015의 새로운 기능](/cpp/porting/visual-cpp-what-s-new-2003-through-2015)을 참조하세요.
+Visual Studio 2015 업데이트 3까지 규칙 향상의 전체 목록이 있습니다. 자세한 내용은 [Visual C++ 2003 ~ 2015의 새로운 기능](../porting/visual-cpp-what-s-new-2003-through-2015.md)을 참조하세요.
 
 ::: moniker-end
 

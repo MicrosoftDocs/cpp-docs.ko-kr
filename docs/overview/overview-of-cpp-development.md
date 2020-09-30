@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Visual C++, development tools
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 02364f778cdab3416cbac7cc1462ce79287b1ad9
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 5a03590074d8de05153b2d9442da8b916e6eba82
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90684367"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91500280"
 ---
 # <a name="overview-of-c-development-in-visual-studio"></a>Visual Studio의 C++ 개발 개요
 
@@ -75,7 +75,7 @@ Azure의 리포지토리와의 Git 통합에 대한 자세한 내용은 [Visual 
 
 유니버설 Windows 플랫폼 앱의 사용자 인터페이스 디자인에 대한 자세한 내용은 [디자인 및 UI](https://developer.microsoft.com/windows/design)를 참조하세요.
 
-MFC 애플리케이션의 사용자 인터페이스 만들기에 대한 자세한 내용은 [MFC Desktop Applications](../mfc/mfc-desktop-applications.md)을 참조하세요. Win32 Windows 프로그램에 대한 자세한 내용은 [Windows 데스크톱 애플리케이션](../windows/windows-desktop-applications-cpp.md)을 참조하세요.
+MFC 애플리케이션의 사용자 인터페이스 만들기에 대한 자세한 내용은 [MFC Desktop Applications](../mfc/mfc-desktop-applications.md)을 참조하세요. Win32 Windows 프로그램에 대한 자세한 내용은 [Windows 데스크톱 애플리케이션](../windows/desktop-applications-visual-cpp.md)을 참조하세요.
 
 ## <a name="write-code"></a>코드 작성
 
@@ -117,7 +117,7 @@ Visual Studio에는 Boost.Test, Google Test 및 CTest에 대한 지원뿐만 아
 
 ## <a name="analyze"></a>분석
 
-Visual Studio에는 소스 코드에서 잠재적인 문제를 감지할 수 있는 정적 코드 분석 도구가 포함되어 있습니다. 이러한 도구에는 [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md) 규칙 검사기의 구현이 포함됩니다. 자세한 내용은 [C/C++용 코드 분석 개요](/cpp/code-quality/code-analysis-for-c-cpp-overview)를 참조하세요.
+Visual Studio에는 소스 코드에서 잠재적인 문제를 감지할 수 있는 정적 코드 분석 도구가 포함되어 있습니다. 이러한 도구에는 [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md) 규칙 검사기의 구현이 포함됩니다. 자세한 내용은 [C/C++용 코드 분석 개요](../code-quality/code-analysis-for-c-cpp-overview.md)를 참조하세요.
 
 ## <a name="deploy-completed-applications"></a>완성된 애플리케이션 배포
 

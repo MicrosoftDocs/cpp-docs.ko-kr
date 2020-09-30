@@ -9,12 +9,12 @@ helpviewer_keywords:
 - MSBuild, properties
 - event handler wizard [C++]
 ms.assetid: 050bebf0-a9e0-474b-905c-796fe5ac8fc3
-ms.openlocfilehash: 0d852991c29281a7ecf912bd3d764d9916ef10f7
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
-ms.translationtype: MT
+ms.openlocfilehash: b1928de1aacb9c66c9f784f4eee41ce2c444b820
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79447512"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91499642"
 ---
 # <a name="add-an-event-handler"></a>이벤트 처리기 추가
 
@@ -38,7 +38,7 @@ ms.locfileid: "79447512"
 
    선택한 메시지 유형에 선택한 클래스에 대한 이벤트 처리기가 이미 있는 경우, **추가 및 편집**을 사용할 수 없고 **코드 편집**을 사용할 수 있습니다. **코드 편집**을 선택하여 기존 함수에서 텍스트 편집기를 엽니다.
 
-또는 [속성 창](/visualstudio/ide/reference/properties-window)에서 이벤트 처리기를 추가할 수 있습니다. 자세한 내용은 [대화 상자 컨트롤에 대한 이벤트 처리기 추가](../windows/adding-event-handlers-for-dialog-box-controls.md)를 참조하세요.
+또는 [속성 창](/visualstudio/ide/reference/properties-window)에서 이벤트 처리기를 추가할 수 있습니다. 자세한 내용은 [대화 상자 컨트롤에 대한 이벤트 처리기 추가](../windows/adding-editing-or-deleting-controls.md)를 참조하세요.
 
 ## <a name="in-this-section"></a>섹션 내용
 
@@ -46,7 +46,7 @@ ms.locfileid: "79447512"
 
 ## <a name="event-handler-wizard"></a>이벤트 처리기 마법사
 
-이 마법사는 대화 상자 컨트롤에 대한 이벤트 처리기를 선택한 클래스에 추가합니다. [속성 창](/visualstudio/ide/reference/properties-window)에서 이벤트 처리기를 추가하는 경우 대화 상자를 구현하는 클래스에만 추가할 수 있습니다. 자세한 내용은 [대화 상자 컨트롤에 대한 이벤트 처리기 추가](../windows/adding-event-handlers-for-dialog-box-controls.md)를 참조하세요.
+이 마법사는 대화 상자 컨트롤에 대한 이벤트 처리기를 선택한 클래스에 추가합니다. [속성 창](/visualstudio/ide/reference/properties-window)에서 이벤트 처리기를 추가하는 경우 대화 상자를 구현하는 클래스에만 추가할 수 있습니다. 자세한 내용은 [대화 상자 컨트롤에 대한 이벤트 처리기 추가](../windows/adding-editing-or-deleting-controls.md)를 참조하세요.
 
 - **명령 이름**
 
