@@ -1,16 +1,18 @@
 ---
 title: 파일 및 스트림
+description: Microsoft C 런타임 라이브러리의 파일 및 스트림에 대 한 개요입니다.
 ms.date: 11/04/2016
+ms.topic: conceptual
 helpviewer_keywords:
 - files [C++]
 - streams
 ms.assetid: f61e712b-eac9-4c28-bb18-97c3786ef387
-ms.openlocfilehash: ea11ea76ade8a68c2d8a92e08d3652035c996d3d
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: 39133cfdb4784c42561a159d6d176bcbd23644af
+ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57750795"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91589967"
 ---
 # <a name="files-and-streams"></a>파일 및 스트림
 
@@ -26,7 +28,7 @@ ms.locfileid: "57750795"
 
 파일에 대해 작업을 수행하려면 많은 경우 먼저 파일을 열어야 합니다. 파일을 열면 해당 파일이 스트림과 연결됩니다. 스트림은 다양한 종류의 파일 간에 존재하는 많은 차이점에 주석을 다는 표준 C 라이브러리 내 데이터 구조입니다. 라이브러리는 FILE 형식의 개체에 각 스트림의 상태를 유지합니다.
 
-대상 환경은 프로그램을 시작하기 전에 세 가지 파일을 엽니다. 두 가지 인수를 사용하여 라이브러리 함수 [fopen, _wfopen](../c-runtime-library/reference/fopen-wfopen.md)을 호출하면 파일을 열 수 있습니다. `fopen` 함수는 사용되지 않습니다. 대신 [fopen_s, _wfopen_s](../c-runtime-library/reference/fopen-s-wfopen-s.md)를 사용하세요. 첫 번째 인수는 파일 이름이고, 두 번째 인수는 다음을 지정하는 C 문자열입니다.
+대상 환경은 프로그램을 시작하기 전에 세 가지 파일을 엽니다. 두 가지 인수를 사용하여 라이브러리 함수 [fopen, _wfopen](../c-runtime-library/reference/fopen-wfopen.md)을 호출하면 파일을 열 수 있습니다. 함수는 `fopen` 더 이상 사용 되지 않습니다. 대신 [fopen_s를 사용 _wfopen_s](../c-runtime-library/reference/fopen-s-wfopen-s.md) .) 첫 번째 인수는 파일 이름입니다. 두 번째 인수는 다음을 지정하는 C 문자열입니다.
 
 - 파일에서 데이터를 읽을 계획인지, 파일에 데이터를 쓸 계획인지, 아니면 두 작업을 모두 수행할 계획인지 여부
 

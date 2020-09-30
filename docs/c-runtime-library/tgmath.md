@@ -1,15 +1,16 @@
 ---
 title: 형식-제네릭 수학
 description: 인수 형식에 따라 올바른 수학 함수를 호출 하는 C 코드를 더 쉽게 작성할 수 있도록 하는 <tgmath>의 매크로에 대해 설명 합니다.
+ms.topic: conceptual
 ms.date: 9/3/2020
 helpviewer_keywords:
 - CRT tgmath.h
-ms.openlocfilehash: 8994edcaa05247a16d90b47bca8ec26fca27cda7
-ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
+ms.openlocfilehash: 98c786d91963973ad9384cea2fe6563d1e3174ac
+ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89557748"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91590227"
 ---
 # <a name="type-generic-math"></a>형식-제네릭 수학
 

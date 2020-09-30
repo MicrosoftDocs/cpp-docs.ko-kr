@@ -1,15 +1,17 @@
 ---
 title: 방향 플래그
+description: Microsoft C 런타임 함수에 대 한 CPU 방향 플래그의 효과를 설명 합니다.
 ms.date: 11/04/2016
+ms.topic: conceptual
 helpviewer_keywords:
 - direction flag
 ms.assetid: 0836b4af-dbbb-4ab8-a4b2-156f2e2099e2
-ms.openlocfilehash: 04e096c6a62f806f4c214745a8401b1730eda3a6
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: a8f06b3b8caf08e1d3db2159bfc730e25229733b
+ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79443386"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91589993"
 ---
 # <a name="direction-flag"></a>방향 플래그
 

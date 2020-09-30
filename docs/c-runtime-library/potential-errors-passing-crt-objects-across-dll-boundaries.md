@@ -1,41 +1,47 @@
 ---
 title: DLL 경계를 넘어 CRT 개체를 전달할 때 발생할 수 있는 오류
+description: DLL (동적 연결 라이브러리) 경계를 넘어 Microsoft C 런타임 개체를 전달할 때 발생할 수 있는 잠재적인 문제에 대 한 개요입니다.
 ms.date: 11/04/2016
+ms.topic: conceptual
 helpviewer_keywords:
 - DLL conflicts [C++]
 ms.assetid: c217ffd2-5d9a-4678-a1df-62a637a96460
-ms.openlocfilehash: 10fbb128698b6422779d09a15fe3c1d25e8de5b5
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
-ms.translationtype: HT
+ms.openlocfilehash: f6d831ac8b86be8a6669e8ee6c66da64507d129f
+ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65446660"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91590188"
 ---
 # <a name="potential-errors-passing-crt-objects-across-dll-boundaries"></a>DLL 경계를 넘어 CRT 개체를 전달할 때 발생할 수 있는 오류
 
-파일 핸들, 로캘 및 환경 변수와 같은 CRT(C 런타임) 개체를 DLL 내외로 전달하면(DLL 경계를 넘어선 함수 호출) DLL과 DLL로 호출되는 파일에 다른 CRT 라이브러리 복사본이 사용될 경우 예기치 않은 동작이 발생할 수 있습니다.
+파일 핸들, 로캘 및 환경 변수와 같은 CRT (C 런타임) 개체를 dll 경계를 넘어 함수 호출을 통해 DLL로 전달 하는 경우 dll 또는 DLL을 호출 하는 파일에서 다른 CRT 라이브러리 복사본을 사용 하는 경우 예기치 않은 동작이 발생할 수 있습니다.
 
-메모리를 할당(`new` 또는 `malloc`를 사용하여 명시적으로나 `strdup`, `strstreambuf::str` 등을 사용하여 암시적으로)한 다음 해제되도록 DLL 경계를 넘어 포인터를 전달하면 관련 문제가 발생할 수 있습니다. DLL 및 해당 사용자가 다른 CRT 라이브러리 복사본을 사용할 경우 이로 인해 메모리 액세스 위반 또는 힙 손상이 발생할 수 있습니다.
+메모리를 할당 (또는를 사용 하 여 명시적으로 또는, 등을 사용 하 여 `new` 암시적으로 `malloc` ) 한 `strdup` `strstreambuf::str` 다음 해제 된 DLL 경계를 넘어 포인터를 전달 하면 관련 문제가 발생할 수 있습니다. DLL 및 해당 소비자가 CRT 라이브러리의 다른 복사본을 사용 하는 경우이로 인해 메모리 액세스 위반 또는 힙 손상이 발생할 수 있습니다.
 
-또한 이 문제로 인해 디버깅 중 출력 창에 다음과 같은 오류가 발생할 수 있습니다.
-
-HEAP[]: RtlValidateHeap(#,#)에 잘못된 주소가 지정되었습니다.
+이 문제의 또 다른 증상은 다음과 같이 디버깅 중 출력 창에서 오류가 발생 하는 것입니다. `HEAP[]: Invalid Address specified to RtlValidateHeap(#,#)`
 
 ## <a name="causes"></a>원인
 
-CRT 라이브러리 복사본마다 별도의 고유한 상태가 앱 또는 DLL에 의해 스레드 로컬 스토리지에 유지됩니다. 따라서 파일 핸들, 환경 변수 및 로캘과 같은 CRT 개체가 이러한 개체가 할당 또는 설정된 앱 또는 DLL의 CRT 복사본에 대해서만 유효합니다. DLL 및 해당 앱 클라이언트가 다른 CRT 라이브러리 복사본을 사용하면 이러한 CRT 개체를 DLL 경계를 넘어 전달할 때 해당 개체가 반대쪽에서 올바르게 수신되지 않을 수 있습니다. Visual Studio 2015 이상의 유니버설 CRT 이전 버전에서 이러한 현상이 특히 두드러집니다. Visual Studio 2013 또는 이전 버전으로 빌드된 모든 버전의 Visual Studio에 대해 버전별 CRT 라이브러리가 있습니다. 해당 데이터 구조 및 명명 규칙과 같은 CRT의 내부 구현 세부 사항은 버전마다 다릅니다. 한 버전의 CRT에 대해 컴파일된 코드를 다른 버전의 CRT DLL로 동적으로 연결하는 방식은 절대 지원되지 않았습니다. 가끔씩 이러한 경우가 있더라도 우연에 의한 것이엇습니다.
+CRT 라이브러리 복사본마다 별도의 고유한 상태가 앱 또는 DLL에 의해 스레드 로컬 스토리지에 유지됩니다.
 
-또한 CRT 라이브러리 복사본마다 자체 힙 관리자가 있기 때문에 한 CRT 라이브러리에서 메모리를 할당한 다음 다른 CRT 라이브러리 복사본에 의해 해제되도록 DLL 경계를 넘어 포인터를 전달하는 것은 힙 손상의 잠재적 원인이 될 수 있습니다. DLL이 경계를 넘어 CRT 개체를 전달하거나 메모리를 할당한 다음 DLL 외부에서 해제되도록 DLL을 디자인하면 DLL과 동일한 CRT 라이브러리 복사본을 사용하도록 DLL의 앱 클라이언트를 제한하게 됩니다. DLL 및 해당 클라이언트는 일반적으로 로드 타임에 둘 다 동일한 버전의 CRT DLL에 연결된 경우에만 동일한 CRT 라이브러리 복사본을 사용합니다. Windows 10의 Visual Studio 2015 이상에서 사용되는 유니버설 CRT 라이브러리의 DLL 버전은 이제 중앙에서 배포된 Windows 구성 요소인 ucrtbase.dll이므로 Visual Studio 2015 및 이상 버전으로 빌드한 앱에 대해 동일합니다. 그러나 CRT 코드가 동일하더라도 한 힙에 할당된 메모리를 다른 힙을 사용하는 구성 요소로 전달할 수 없습니다.
+파일 핸들, 환경 변수 및 로캘과 같은 CRT 개체는 이러한 개체가 할당 또는 설정 된 응용 프로그램 또는 DLL의 CRT 복사본에만 유효 합니다. DLL 및 해당 클라이언트에서 다른 CRT 라이브러리 복사본을 사용 하는 경우 이러한 CRT 개체를 DLL 경계를 넘어 전달 하 고 다른 쪽에서는 올바르게 사용할 수 없습니다. Visual Studio 2015 이상에서 범용 CRT 이전의 CRT 버전에 적용 됩니다.
+
+Visual Studio 2013 또는 이전 버전으로 빌드된 모든 버전의 Visual Studio에 대해 버전별 CRT 라이브러리가 있습니다. 데이터 구조 및 명명 규칙과 같은 CRT의 내부 구현 세부 정보는 각 버전에서 다릅니다. 한 버전의 CRT에 대해 컴파일된 코드를 CRT DLL의 다른 버전에 동적으로 연결 하는 것은 지원 되지 않습니다. 경우에 따라 디자인이 아니라 동작 하기 때문입니다.
+
+Crt 라이브러리의 각 복사본에는 자체 힙 관리자가 있으므로 하나의 CRT 라이브러리에 메모리를 할당 하 고 DLL 경계를 넘어 포인터를 전달 하 여 다른 CRT 라이브러리 복사본에 의해 해제 되기 때문에 힙이 손상 될 수 있습니다. Dll 경계를 넘어 CRT 개체를 전달 하거나 메모리를 할당 하 고 DLL 외부에서 해제 될 것으로 예상 하도록 DLL을 디자인 하는 경우 DLL의 클라이언트는 DLL과 동일한 CRT 라이브러리 복사본을 사용 해야 합니다.
+
+DLL 및 해당 클라이언트는 일반적으로 로드 타임에 둘 다 동일한 버전의 CRT DLL에 연결된 경우에만 동일한 CRT 라이브러리 복사본을 사용합니다. Visual Studio 2015 및 나중에 Windows 10에서 사용 되는 유니버설 CRT 라이브러리의 DLL 버전은 이제 중앙에서 배포 된 Windows 구성 요소 (ucrtbase.dll) 이므로 Visual Studio 2015 이상 버전을 사용 하 여 빌드된 앱에서 동일 합니다. 그러나 CRT 코드가 동일한 경우에도 하나의 힙에 할당 된 메모리를 다른 힙을 사용 하는 구성 요소에 제공할 수 없습니다.
 
 ## <a name="example"></a>예제
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
 
 이 예제에서는 DLL 경계를 넘어 파일 핸들을 전달합니다.
 
-DLL 및 .exe 파일은 /MD를 사용하여 빌드되므로 단일 CRT 복사본을 공유합니다.
+DLL 및 .exe 파일은를 사용 하 여 빌드되기 `/MD` 때문에 CRT의 단일 복사본을 공유할 수 있습니다.
 
-서로 다른 CRT 복사본을 사용하도록 /MT를 사용하여 다시 빌드할 경우 초래되는 test1Main.exe 결과를 실행하면 액세스 위반이 발생합니다.
+를 사용 하 여를 다시 빌드하여 `/MT` CRT의 개별 복사본을 사용 하는 경우 결과 **test1Main.exe** 를 실행 하면 액세스 위반이 발생 합니다.
 
 ```cpp
 // test1Dll.cpp
@@ -71,7 +77,7 @@ this is a string
 
 ## <a name="example"></a>예제
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
 
 이 예제에서는 DLL 경계를 넘어 환경 변수를 전달합니다.
 
@@ -116,7 +122,7 @@ int main( void )
 MYLIB has not been set.
 ```
 
-CRT 복사본이 하나만 사용되도록 /MD를 사용하여 DLL과 .exe 파일을 모두 빌드하면 프로그램이 실행되고 다음과 같은 출력이 생성됩니다.
+CRT 복사본이 하나만 사용 되도록 DLL과 .exe 파일을 모두 빌드하면 `/MD` 프로그램이 성공적으로 실행 되 고 다음과 같은 출력이 생성 됩니다.
 
 ```
 New MYLIB variable is: c:\mylib;c:\yourlib

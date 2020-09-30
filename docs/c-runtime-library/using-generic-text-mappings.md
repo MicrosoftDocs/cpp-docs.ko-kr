@@ -1,5 +1,7 @@
 ---
 title: 일반 텍스트 매핑 사용
+description: C 런타임의 데이터 형식, 루틴 및 기타 개체에 대 한 Microsoft 관련 매핑을 소개 합니다.
+ms.topic: conceptual
 ms.date: 11/04/2016
 f1_keywords:
 - _UNICODE
@@ -27,12 +29,12 @@ helpviewer_keywords:
 - UNICODE constant
 - _T type
 ms.assetid: 2848121c-e51f-4b9b-a2e6-833ece4b0cb3
-ms.openlocfilehash: f8616e0ff660b299544ed3c2f0a12feb4dbfe66b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ea3b1eef413a0d9f52e81795c04424d533b83504
+ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221876"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91590110"
 ---
 # <a name="using-generic-text-mappings"></a>일반 텍스트 매핑 사용
 

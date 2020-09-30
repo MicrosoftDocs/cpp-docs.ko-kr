@@ -3,12 +3,12 @@ title: enum class(C++/CLI 및 C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 ms.assetid: 8010fa8c-bad6-45b4-8214-b4db64d7ffe1
-ms.openlocfilehash: a1b99cb2265c9a9bdb40a7239a21412123772570
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9acf93976b2f7751e85bf3ed0ddd2735c29e121c
+ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219718"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91590318"
 ---
 # <a name="enum-class--ccli-and-ccx"></a>enum class(C++/CLI 및 C++/CX)
 
@@ -59,7 +59,7 @@ accessenum structenumeration-identifier[:underlying-type] { enumerator-list } [v
 
 컴파일러는 열거자의 값을 정의하는 상수 식을 *underlying-type*으로 표현할 수 없는 경우 오류 메시지를 내보냅니다.  그러나 컴파일러는 내부 형식에 적합하지 않은 값에 대해 오류를 보고하지 않습니다. 예를 들면 다음과 같습니다.
 
-- *underlying-type* 이 숫자이고, 열거자가 해당 형식의 최대값을 지정하는 경우, 그 다음에 암시적으로 정의되는 열거형 값은 표현할 수 없습니다.
+- *기본 형식이* 숫자이 고 열거자가 해당 형식의 최대값을 지정 하는 경우 다음 암시적으로 정의 된 열거형의 값을 나타낼 수 없습니다.
 
 - *기본 형식이* 이 고 세 개 **`bool`** 이상의 열거자가 암시적으로 정의 되는 경우 처음 두 열거자 다음의 열거자는 표현할 수 없습니다.
 
@@ -178,7 +178,7 @@ CLR 열거형에 대한 자세한 내용은 다음을 참조하세요.
 
 컴파일러 옵션: `/clr`
 
-### <a name="examples"></a>예제
+### <a name="examples"></a>예
 
 ```cpp
 // mcppv2_enum_2.cpp

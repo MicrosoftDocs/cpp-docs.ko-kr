@@ -1,6 +1,8 @@
 ---
 title: SAL 주석
+description: Microsoft SAL (소스 코드 주석 언어)에 대 한 간단한 설명입니다.
 ms.date: 11/04/2016
+ms.topic: conceptual
 helpviewer_keywords:
 - __z annotation
 - ref annotation
@@ -47,12 +49,12 @@ helpviewer_keywords:
 - ecount annotation
 - bcount annotation
 ms.assetid: 81893638-010c-41a0-9cb3-666fe360f3e0
-ms.openlocfilehash: 64f1ef513f34f11f2569f0afb854a0e2762082b6
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 727c81ae1b141346bb47ff92b6af76d5c45aa106
+ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91503479"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91590266"
 ---
 # <a name="sal-annotations"></a>SAL 주석
 

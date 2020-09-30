@@ -1,7 +1,8 @@
 ---
 title: CRT 라이브러리 기능
-description: Microsoft C 런타임 라이브러리 및 관련 컴파일러 옵션과 전처리기 지시문을 포함 하는 파일입니다.
+description: Microsoft C 런타임 라이브러리 및 관련 컴파일러 옵션과 전처리기 지시문을 포함 하는 파일의 목록입니다.
 ms.date: 09/03/2020
+ms.topic: conceptual
 helpviewer_keywords:
 - MSVCR71.dll
 - libraries [C++], multithreaded
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - libraries [C++], run-time
 - linking [C++], libraries
 ms.assetid: a889fd39-807d-48f2-807f-81492612463f
-ms.openlocfilehash: 2f46577ba81c57c2050f0cae4ae2af73152ba2a4
-ms.sourcegitcommit: 0df2b7ab4e81284c5248e4584767591dcc1950c3
+ms.openlocfilehash: 0e0d34c1121f0bf4e2fdfabc521e0365084761eb
+ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89609105"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91589785"
 ---
 # <a name="crt-library-features"></a>CRT 라이브러리 기능
 
@@ -38,8 +39,8 @@ Visual Studio 2015부터 CRT는 새로운 이진 파일로 리팩터링되었습
 
 | 라이브러리 | 관련 DLL | 특징 | 옵션 | 전처리기 지시문 |
 |--|--|--|--|--|
-| *`libucrt.lib`* | 없음 | 코드에 UCRT를 정적으로 연결합니다. | **`/MT`** | `_MT` |
-| *`libucrtd.lib`* | 없음 | 정적 연결을 위한 UCRT의 디버그 버전입니다. 재배포할 수 없습니다. | **`/MTd`** | `_DEBUG`, `_MT` |
+| *`libucrt.lib`* | None | 코드에 UCRT를 정적으로 연결합니다. | **`/MT`** | `_MT` |
+| *`libucrtd.lib`* | None | 정적 연결을 위한 UCRT의 디버그 버전입니다. 재배포할 수 없습니다. | **`/MTd`** | `_DEBUG`, `_MT` |
 | *`ucrt.lib`* | *`ucrtbase.dll`* | UCRT에 대한 DLL 가져오기 라이브러리입니다. | **`/MD`** | `_MT`, `_DLL` |
 | *`ucrtd.lib`* | *`ucrtbased.dll`* | UCRT의 디버그 버전에 대한 DLL 가져오기 라이브러리입니다. 재배포할 수 없습니다. | **`/MDd`** | `_DEBUG`, `_MT`, `_DLL` |
 
@@ -49,8 +50,8 @@ vcruntime 라이브러리에는 예외 처리 및 디버깅 지원, 런타임 �
 
 | 라이브러리 | 관련 DLL | 특징 | 옵션 | 전처리기 지시문 |
 |--|--|--|--|--|
-| *`libvcruntime.lib`* | 없음 | 코드에 정적으로 연결합니다. | **`/MT`** | `_MT` |
-| *`libvcruntimed.lib`* | 없음 | 정적 연결에 대한 디버그 버전입니다. 재배포할 수 없습니다. | **`/MTd`** | `_MT`, `_DEBUG` |
+| *`libvcruntime.lib`* | None | 코드에 정적으로 연결합니다. | **`/MT`** | `_MT` |
+| *`libvcruntimed.lib`* | None | 정적 연결에 대한 디버그 버전입니다. 재배포할 수 없습니다. | **`/MTd`** | `_MT`, `_DEBUG` |
 | *`vcruntime.lib`* | *`vcruntime<version>.dll`* | vcruntime에 대한 DLL 가져오기 라이브러리입니다. | **`/MD`** | `_MT`, `_DLL` |
 | *`vcruntimed.lib`* | *`vcruntime<version>d.dll`* | 디버그 vcruntime에 대한 DLL 가져오기 라이브러리입니다. 재배포할 수 없습니다. | **`/MDd`** | `_DEBUG`, `_MT`, `_DLL` |
 

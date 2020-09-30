@@ -1,5 +1,7 @@
 ---
 title: 로캘 이름, 언어 및 국가-지역 문자열
+description: Microsoft 유니버설 CRT 로캘, 언어 및 국가/지역 문자열 사용에 대 한 개요입니다.
+ms.topic: conceptual
 ms.date: 12/10/2018
 helpviewer_keywords:
 - country/region strings
@@ -8,12 +10,12 @@ helpviewer_keywords:
 - setlocale function
 - language strings
 ms.assetid: a0e5a0c5-5602-4da0-b65f-de3d6c8530a2
-ms.openlocfilehash: c7695b3e51eac44853dc89a0f2a683192562cea2
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: fabb3cd584af6f6e19e2ac3444c76bede299dc8d
+ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91505622"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91589928"
 ---
 # <a name="ucrt-locale-names-languages-and-countryregion-strings"></a>UCRT 로캘 이름, 언어 및 국가/지역 문자열
 
