@@ -2,12 +2,12 @@
 title: 식별자 동작
 ms.date: 11/04/2016
 ms.assetid: 2ce0890f-9f04-47d8-9c77-187627576b94
-ms.openlocfilehash: 3441258dd57b332a406d1a2a1e1646a0a8b443ef
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 871abb937e229c9d5abf6b6b803e1b4d536cc7e3
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62313482"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509295"
 ---
 # <a name="behavior-of-identifiers"></a>식별자 동작
 
@@ -19,4 +19,4 @@ ms.locfileid: "62313482"
 
 ## <a name="see-also"></a>참조
 
-[extern을 사용하여 링크 지정](../cpp/using-extern-to-specify-linkage.md)
+[extern을 사용하여 링크 지정](../cpp/extern-cpp.md)

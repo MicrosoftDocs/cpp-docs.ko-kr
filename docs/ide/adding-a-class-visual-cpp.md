@@ -9,12 +9,12 @@ helpviewer_keywords:
 - classes [C++], adding
 - Add Class dialog box
 ms.assetid: c34b5f70-4e72-4faa-ba21-e2b05361c4d9
-ms.openlocfilehash: fa53c2af5cd3e81c2d4877ef255430eac9525aad
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: b1c64505a63b8720ed7aee855f2bbbbdb9134e28
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "66182683"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91505986"
 ---
 # <a name="add-a-class"></a>클래스 추가
 
@@ -24,7 +24,7 @@ Visual Studio C++ 프로젝트에서 클래스를 추가하려면 **솔루션 �
 
 프로젝트 명명 규칙에서 기존 이름을 사용해야 하는 경우 C++가 대/소문자를 구분하기 때문에 이름 중 하나 이상의 대/소문자를 변경할 수 있습니다. 예를 들어 클래스를 `CDocument`로 명명할 수 없지만 이름을 `cdocument`로 지정할 수 있습니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 
 - [어떤 종류의 클래스를 추가하시겠습니까?](#what-kind-of-class-do-you-want-to-add)
 - [클래스 추가 대화 상자](#add-class-dialog-box)
@@ -96,4 +96,4 @@ NET, ATL, MFC 및 제네릭이라는 네 가지 범주의 **클래스 추가** �
 
 |템플릿|마법사|
 |--------------|------------|
-|일반 C++ 클래스|[일반 C++ 클래스 마법사](../ide/generic-cpp-class-wizard.md)|
+|일반 C++ 클래스|[일반 C++ 클래스 마법사](./adding-a-generic-cpp-class.md#generic-c-class-wizard)|

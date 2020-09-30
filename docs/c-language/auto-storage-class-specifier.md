@@ -2,12 +2,12 @@
 title: 자동 스토리지 클래스 지정자
 ms.date: 11/04/2016
 ms.assetid: 8e73f57e-aa92-4e41-91ea-5c8ad2a2b332
-ms.openlocfilehash: e39b37e2dc91dce31b6871d721875c75b8ebd629
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7f70ee1944e07ebcbd32b8110eee27fa6631be63
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223761"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509308"
 ---
 # <a name="auto-storage-class-specifier"></a>`auto` 스토리지 클래스 지정자
 
@@ -17,4 +17,4 @@ ms.locfileid: "87223761"
 
 ## <a name="see-also"></a>참조
 
-[`auto` 키워드](../cpp/auto-keyword.md)
+[`auto` 키워드](../cpp/auto-cpp.md)
