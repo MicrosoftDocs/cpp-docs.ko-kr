@@ -1,15 +1,16 @@
 ---
 title: CRT의 전역 상태
-description: 유니버설 C 런타임에서 공유 전역 상태를 처리 하는 방법을 설명 합니다.
+description: Microsoft 유니버설 C 런타임에서 공유 전역 상태를 처리 하는 방법을 설명 합니다.
+ms.topic: conceptual
 ms.date: 04/02/2020
 helpviewer_keywords:
 - CRT global state
-ms.openlocfilehash: d1c787147ea3df36ce120837ef5b2c68b1bf58b1
-ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
+ms.openlocfilehash: 60532fbdb905bd8ea78b4ce705ec8ecc3e374d9d
+ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89554671"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91589733"
 ---
 # <a name="global-state-in-the-crt"></a>CRT의 전역 상태
 

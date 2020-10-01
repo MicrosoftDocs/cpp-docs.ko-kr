@@ -1,18 +1,20 @@
 ---
 title: Backward Compatibility
+description: Microsoft OLDNAMES를 사용 하는 방법입니다. 이전 버전과의 호환성을 위해 함수 이름을 매핑할 LIB 라이브러리.
 ms.date: 11/04/2016
+ms.topic: conceptual
 helpviewer_keywords:
 - CRT, compatibility
 - backward compatibility, C run-time libraries
 - compatibility, C run-time libraries
 - backward compatibility
 ms.assetid: cc3175cf-97fd-492f-b329-5791aea63090
-ms.openlocfilehash: 2c2b4570e5e3131911e7f424280f16e9977f047e
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: b09104a5cff4d8e4cc31f9cc4707e808988401d6
+ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79438568"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91590292"
 ---
 # <a name="backward-compatibility"></a>Backward Compatibility
 
