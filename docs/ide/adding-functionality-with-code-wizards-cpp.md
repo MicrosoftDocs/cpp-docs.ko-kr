@@ -4,12 +4,12 @@ ms.date: 05/14/2019
 helpviewer_keywords:
 - code wizards [C++]
 ms.assetid: 6afb7ef9-7056-423d-b244-91bb4236d1d7
-ms.openlocfilehash: ab0bf802221bcf3f93469f27f29f86c95877a407
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
-ms.translationtype: MT
+ms.openlocfilehash: 651eac8c630636455dd1ffa04fdd02b71fa3cf62
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81365337"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509704"
 ---
 # <a name="adding-functionality-with-code-wizards-c"></a>코드 마법사로 기능 추가(C++)
 
@@ -34,13 +34,13 @@ ms.locfileid: "81365337"
 
 C++ 코드 마법사에 액세스할 수 있는 세 가지 위치가 있습니다.
 
-- **프로젝트** 메뉴에서 **새 항목 추가** 명령을 사용하면 프로젝트에 새 파일을 추가하는 데 유용한 `Add New Item` 대화 상자를 표시할 수 있습니다. **클래스 추가** 명령은 프로젝트에 추가할 수 있는 각 클래스 유형에 대한 마법사를 여는 [클래스 추가](../ide/add-class-dialog-box.md) 대화 상자를 표시합니다. MFC 클래스의 경우 [MFC 클래스 마법사](../mfc/reference/mfc-class-wizard.md)를 사용합니다. **리소스 추가** 명령은 프로젝트에 추가할 리소스를 만들거나 선택할 수 있는 [리소스 추가](../windows/add-resource-dialog-box.md) 대화 상자를 표시합니다.
+- **프로젝트** 메뉴에서 **새 항목 추가** 명령을 사용하면 프로젝트에 새 파일을 추가하는 데 유용한 `Add New Item` 대화 상자를 표시할 수 있습니다. **클래스 추가** 명령은 프로젝트에 추가할 수 있는 각 클래스 유형에 대한 마법사를 여는 [클래스 추가](./adding-a-class-visual-cpp.md#add-class-dialog-box) 대화 상자를 표시합니다. MFC 클래스의 경우 [MFC 클래스 마법사](../mfc/reference/mfc-class-wizard.md)를 사용합니다. **리소스 추가** 명령은 프로젝트에 추가할 리소스를 만들거나 선택할 수 있는 [리소스 추가](../windows/how-to-create-a-resource-script-file.md) 대화 상자를 표시합니다.
 
    [클래스 뷰]에서 프로젝트의 클래스 또는 인터페이스를 강조 표시하는 경우 표시되는 **프로젝트** 메뉴의 명령은 다음과 같습니다.
 
   - **인터페이스 구현**(컨트롤 클래스에만 해당)
 
-  - **기능 추가**
+  - **함수 추가**
 
   - **변수 추가**
 
@@ -66,11 +66,11 @@ C++ 코드 마법사에 액세스할 수 있는 세 가지 위치가 있습니�
 
    자세한 내용은 [인터페이스 구현](../ide/implementing-an-interface-visual-cpp.md) 및 [ATL 프로젝트에 개체 및 컨트롤 추가](../atl/reference/adding-objects-and-controls-to-an-atl-project.md)를 참조하세요.
 
-   |코드 마법사에 액세스하는 위치|Description|
+   |코드 마법사에 액세스하는 위치|설명|
    |-----------------------------|-----------------|
    |새 항목 추가|새 항목 코드 추가 마법사는 소스 파일을 프로젝트에 추가합니다. 필요한 경우 프로젝트 빌드 엔진에서 찾아야 하는 파일이 포함되는 추가 디렉터리가 만들어집니다. [항목 추가] 아이콘에서 사용할 수 있는 코드 마법사는 다음과 같습니다.<br /><br />- C++ 소스 파일 추가(.cpp, .h, .idl, .rc, .srf, .def, .rgs)<br />- 웹 개발 파일 추가(.html, .asp, .css, .xml)<br />- 유틸리티 및 리소스 파일 추가(.bmp, .cur, .ico, .rct, .sql, .txt)<br /><br />이러한 코드 마법사는 일반적으로 정보를 요청하지 않고 개발 트리에 파일을 추가합니다. 속성 창에서 파일의 이름을 바꿀 수 있습니다.|
-   |솔루션 탐색기|솔루션 탐색기에서 사용할 수 있는 코드 마법사는 항목을 마우스 오른쪽 단추로 클릭할 때 커서 초점이 있는 위치에 따라 다릅니다. 항목을 마우스 오른쪽 단추로 클릭할 때 **추가** 옵션이 표시되지 않으면 개발 트리에서 커서를 한 수준 위로 이동하고 다시 시도합니다. 커서가 어디에 있든 코드 마법사는 항상 개발 트리의 적절한 위치에 추가 코드를 배치합니다. 솔루션 탐색기에서 사용할 수 있는 코드 마법사는 다음과 같습니다.<br /><br />- 클래스 추가 (새 코드 마법사를 포함하는 **클래스 추가** 대화 상자가 열립니다).<br />- 리소스 추가(새로 만들기, 가져오기 또는 사용자 지정)<br />- 웹 참조 추가|
-   |클래스 뷰|클래스 뷰에서 사용할 수 있는 코드 마법사는 항목을 마우스 오른쪽 단추로 클릭할 때 커서 초점이 있는 위치에 따라 다릅니다. 항목을 마우스 오른쪽 단추로 클릭할 때 **추가** 옵션이 표시되지 않으면 클래스 트리에서 커서를 한 수준 위로 이동하고 다시 시도합니다. 커서가 어디에 있든 코드 마법사는 항상 개발 트리의 적절한 위치에 추가 코드를 배치합니다. 클래스 뷰에서 사용할 수 있는 코드 마법사는 다음과 같습니다.<br /><br />- [멤버 함수 추가](../ide/adding-a-member-function-visual-cpp.md)<br />- [멤버 변수 추가](../ide/adding-a-member-variable-visual-cpp.md)<br />- [클래스 추가](../ide/adding-a-class-visual-cpp.md)<br />- [인터페이스 구현](../ide/implement-interface-wizard.md)(컨트롤 클래스에만 해당)<br />- [연결 점](../ide/implement-connection-point-wizard.md) 추가(ATL 클래스만)<br />- [메서드 추가](../ide/add-method-wizard.md)(인터페이스에만 해당)<br />- [속성 추가](../ide/names-add-property-wizard.md)(인터페이스에만 해당)<br />- [이벤트 추가](../ide/add-event-wizard.md)(컨트롤 클래스에만 해당)<br /><br />[클래스 추가]를 선택하면 모든 새 클래스 추가 코드 마법사에 액세스할 수 있는 **클래스 추가** 대화 상자를 엽니다.|
+   |솔루션 탐색기|솔루션 탐색기에서 사용할 수 있는 코드 마법사는 항목을 마우스 오른쪽 단추로 클릭할 때 커서 초점이 있는 위치에 따라 다릅니다. 항목을 마우스 오른쪽 단추로 클릭할 때 **추가** 옵션이 표시되지 않으면 개발 트리에서 커서를 한 수준 위로 이동하고 다시 시도합니다. 커서가 어디에 있든 코드 마법사는 항상 개발 트리의 적절한 위치에 추가 코드를 배치합니다. 솔루션 탐색기에서 사용할 수 있는 코드 마법사는 다음과 같습니다.<br /><br />- 클래스 추가(새 코드 마법사가 포함된 **클래스 추가** 대화 상자 열기)<br />- 리소스 추가(새로 만들기, 가져오기 또는 사용자 지정)<br />- 웹 참조 추가|
+   |클래스 뷰|클래스 뷰에서 사용할 수 있는 코드 마법사는 항목을 마우스 오른쪽 단추로 클릭할 때 커서 초점이 있는 위치에 따라 다릅니다. 항목을 마우스 오른쪽 단추로 클릭할 때 **추가** 옵션이 표시되지 않으면 클래스 트리에서 커서를 한 수준 위로 이동하고 다시 시도합니다. 커서가 어디에 있든 코드 마법사는 항상 개발 트리의 적절한 위치에 추가 코드를 배치합니다. 클래스 뷰에서 사용할 수 있는 코드 마법사는 다음과 같습니다.<br /><br />- [멤버 함수 추가](../ide/adding-a-member-function-visual-cpp.md)<br />- [멤버 변수 추가](../ide/adding-a-member-variable-visual-cpp.md)<br />- [클래스 추가](../ide/adding-a-class-visual-cpp.md)<br />- [인터페이스 구현](./implementing-an-interface-visual-cpp.md#implement-interface-wizard)(컨트롤 클래스에만 해당)<br />- [연결 지점 추가](./implementing-a-connection-point-visual-cpp.md#implement-connection-point-wizard)(ATL 클래스에만 해당)<br />- [메서드 추가](./adding-a-method-visual-cpp.md#add-method-wizard)(인터페이스에만 해당)<br />- [속성 추가](./adding-a-property-visual-cpp.md#names-add-property-wizard)(인터페이스에만 해당)<br />- [이벤트 추가](./adding-an-event-visual-cpp.md#add-event-wizard)(컨트롤 클래스에만 해당)<br /><br />[클래스 추가]를 선택하면 모든 새 클래스 추가 코드 마법사에 액세스할 수 있는 **클래스 추가** 대화 상자를 엽니다.|
 
 ## <a name="see-also"></a>참고 항목
 
