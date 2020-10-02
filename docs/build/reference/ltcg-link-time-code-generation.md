@@ -14,18 +14,18 @@ helpviewer_keywords:
 - -LTCG linker option
 - LTCG linker option
 ms.assetid: 788c6f52-fdb8-40c2-90af-4026ea2cf2e2
-ms.openlocfilehash: c954794d6d0fd087eee74ebb7e86d77b89a9a8fc
-ms.sourcegitcommit: 80c8a512b361bd84e38958beb1a1bf6db7434021
+ms.openlocfilehash: 6c0009e5236f33119ed411dc81ce6a4385f21a2a
+ms.sourcegitcommit: f7fbdc39d73e1fb3793c396fccf7a1602af7248b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86180801"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91662270"
 ---
-# <a name="ltcg-link-time-code-generation"></a>`/LTCG`(링크 타임 코드 생성)
+# <a name="ltcg-link-time-code-generation"></a>`/LTCG` (링크 타임 코드 생성)
 
 를 사용 **`/LTCG`** 하 여 전체 프로그램 최적화를 수행 하거나, PGO (프로필 기반 최적화) 계측을 만들고, 학습을 수행 하 고, 프로필 기반 최적화 빌드를 만듭니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **`/LTCG`**[**`:`**{**`INCREMENTAL`**|**`NOSTATUS`**|**`STATUS`**|**`OFF`**}]
 
@@ -38,20 +38,20 @@ ms.locfileid: "86180801"
 **`INCREMENTAL`**<br/>
 필드 링커가 전체 프로젝트 대신 편집의 영향을 받는 파일에만 전체 프로그램 최적화 또는 LTCG (링크 타임 코드 생성)를 적용 하도록 지정 합니다. 기본적으로를 지정 하면이 플래그가 설정 되지 **`/LTCG`** 않으며 전체 프로그램 최적화를 사용 하 여 전체 프로젝트가 연결 됩니다.
 
-**`NOSTATUS`**&#124;**`STATUS`**<br/>
+**`NOSTATUS`** &#124; **`STATUS`**<br/>
 (선택 사항) 완료된 링크 비율을 표시하는 진행률 표시기가 링커에 표시되는지 여부를 지정합니다. 기본적으로이 상태 정보는 표시 되지 않습니다.
 
 **`OFF`**<br/>
 (선택 사항) 링크 시간 코드 생성을 사용하지 않습니다. 이 동작은 **`/LTCG`** 명령줄에서가 지정 되지 않은 경우와 동일 합니다.
 
 **`PGINSTRUMENT`**<br/>
-(선택 사항) 이 옵션은 Visual Studio 2015부터 더 이상 사용되지 않습니다. 대신 **`/LTCG`** 및 `[/GENPROFILE` 또는 `/FASTGENPROFILE` ] (genprofile-fastgenprofile-generate-profiling-instrumented-build.md)을 사용 하 여 프로필 기반 최적화에 대 한 계측 된 빌드를 생성 합니다. 계측된 실행으로부터 수집되는 데이터는 최적화된 이미지를 만드는 데 사용됩니다. 자세한 내용은 [프로필 기반 최적화](../profile-guided-optimizations.md)를 참조하세요. 이 옵션의 약식 형태는 **`/LTCG:PGI`** 입니다.
+(선택 사항) 이 옵션은 Visual Studio 2015부터 더 이상 사용되지 않습니다. 대신, **`/LTCG`** [ `/GENPROFILE` `/FASTGENPROFILE` 또는](genprofile-fastgenprofile-generate-profiling-instrumented-build.md) 를 사용 하 여 프로필 기반 최적화를 위해 계측 된 빌드를 생성 합니다. 계측된 실행으로부터 수집되는 데이터는 최적화된 이미지를 만드는 데 사용됩니다. 자세한 내용은 [프로필 기반 최적화](../profile-guided-optimizations.md)를 참조하세요. 이 옵션의 약식 형태는 **`/LTCG:PGI`** 입니다.
 
 **`PGOPTIMIZE`**<br/>
-(선택 사항) 이 옵션은 Visual Studio 2015부터 더 이상 사용되지 않습니다. 대신 및를 **`/LTCG`** 사용 [`/USEPROFILE`](useprofile.md) 하 여 최적화 된 이미지를 작성 합니다. 자세한 내용은 [프로필 기반 최적화](../profile-guided-optimizations.md)를 참조하세요. 이 옵션의 약식 형태는 **`/LTCG:PGO`** 입니다.
+(선택 사항) 이 옵션은 Visual Studio 2015부터 더 이상 사용되지 않습니다. 대신 및를 **`/LTCG`** 사용  [`/USEPROFILE`](useprofile.md) 하 여 최적화 된 이미지를 작성 합니다. 자세한 내용은 [프로필 기반 최적화](../profile-guided-optimizations.md)를 참조하세요. 이 옵션의 약식 형태는 **`/LTCG:PGO`** 입니다.
 
 **`PGUPDATE`**<br/>
-(선택 사항) 이 옵션은 Visual Studio 2015부터 더 이상 사용되지 않습니다. 대신 및를 **`/LTCG`** 사용 **`/USEPROFILE`** 하 여 최적화 된 이미지를 다시 빌드합니다. 자세한 내용은 [프로필 기반 최적화](../profile-guided-optimizations.md)를 참조하세요. 이 옵션의 약식 형태는 **`/LTCG:PGU`** 입니다.
+(선택 사항) 이 옵션은 Visual Studio 2015부터 더 이상 사용되지 않습니다. 대신 및를 **`/LTCG`** 사용  **`/USEPROFILE`** 하 여 최적화 된 이미지를 다시 빌드합니다. 자세한 내용은 [프로필 기반 최적화](../profile-guided-optimizations.md)를 참조하세요. 이 옵션의 약식 형태는 **`/LTCG:PGU`** 입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -129,7 +129,7 @@ ms.locfileid: "86180801"
 > [!NOTE]
 > 을 사용 하 **`/LTCG`** 고를 다시 정의 하는 경우 `mainCRTStartup` 응용 프로그램은 전역 개체를 초기화 하기 전에 실행 되는 사용자 코드와 관련 된 예기치 않은 동작을 수행할 수 있습니다. 이 문제를 해결 하는 방법에는 다음 세 가지가 있습니다. 즉 `mainCRTStartup` ,를 사용 하 여 포함 하는 파일을 다시 정의 하지 마십시오. `mainCRTStartup` **`/LTCG`** 또는 전역 변수와 개체를 정적으로 초기화 합니다.
 
-### <a name="ltcg-and-msil-modules"></a>`/LTCG`및 MSIL 모듈
+### <a name="ltcg-and-msil-modules"></a>`/LTCG` 및 MSIL 모듈
 
 및를 사용 하 여 컴파일된 [`/GL`](gl-whole-program-optimization.md) 모듈 [`/clr`](clr-common-language-runtime-compilation.md) **`/LTCG`** 은가 지정 된 경우 링커에 대 한 입력으로 사용할 수 있습니다.
 
@@ -151,7 +151,7 @@ ms.locfileid: "86180801"
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.LinkTimeCodeGeneration%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [MSVC 링커 참조](linking.md)\
 [MSVC 링커 옵션](linker-options.md)

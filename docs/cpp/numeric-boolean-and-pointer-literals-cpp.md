@@ -7,12 +7,12 @@ helpviewer_keywords:
 - constants, literals
 - literals [C++]
 ms.assetid: 17c09fc3-3ad7-47e2-8b48-ba8ae994edc8
-ms.openlocfilehash: def223682b58f3d0c8bd3dd88f6d54fc5aa8b8a4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 84fdac7010805fc4d0a429231a080ab11d5c595a
+ms.sourcegitcommit: f7fbdc39d73e1fb3793c396fccf7a1602af7248b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87186453"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91662258"
 ---
 # <a name="numeric-boolean-and-pointer-literals"></a>숫자, 부울 및 포인터 리터럴
 
@@ -31,7 +31,7 @@ MyClass* mc = nullptr;      // pointer literal
 
 ## <a name="integer-literals"></a>정수 리터럴
 
-정수 리터럴은 숫자로 시작하고 소수 부분이나 지수가 없습니다. 정수 리터럴은 10진수, 8진수 또는 16진수 형식으로 지정할 수 있습니다. Signed 또는 unsigned 형식, long 또는 short 형식을 지정할 수 있습니다.
+정수 리터럴은 숫자로 시작하고 소수 부분이나 지수가 없습니다. 정수 리터럴은 10 진수, 이진, 8 진수 또는 16 진수 형식으로 지정할 수 있습니다. 필요에 따라 접미사를 사용 하 여 부호 없는 정수 리터럴을 long 또는 long long 형식으로 지정할 수 있습니다.
 
 접두사 또는 접미사가 없으면 컴파일러가 정수 리터럴 값 형식 **`int`** (32 비트)을 지정 합니다. 값이 적합 하면이 고, 그렇지 않으면 형식 **`long long`** (64 비트)을 지정 합니다.
 
@@ -103,7 +103,7 @@ long long i = 24'847'458'121
 void func( double );
 ```
 
-그리고
+및
 
 ```cpp
 void func( long double );
@@ -137,7 +137,7 @@ if (num < 100)
 
 이전 예제에서는 명확한 의미를 전달 하는 명명 된 상수 (예: "MAXIMUM_ERROR_THRESHOLD")를 사용 하는 것이 더 좋습니다. 또한 최종 사용자에 게 반환 값 "Success"가 표시 되는 경우 명명 된 문자열 상수를 사용 하는 것이 더 좋을 수 있습니다. 다른 언어로 지역화할 수 있는 파일의 단일 위치에 문자열 상수를 유지할 수 있습니다. 명명 된 상수를 사용 하면 자신과 다른 사용자가 코드의 의도를 이해할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [어휘 규칙](../cpp/lexical-conventions.md)<br/>
 [C + + 문자열 리터럴](../cpp/string-and-character-literals-cpp.md)<br/>
