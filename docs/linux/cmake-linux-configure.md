@@ -2,12 +2,12 @@
 title: Visual Studio에서 Linux CMake 프로젝트 구성
 description: Visual Studio에서 Linux CMake 설정을 구성하는 방법
 ms.date: 08/08/2020
-ms.openlocfilehash: 4bc6d5d82a0f1cd21e8f989eb92b431d38b2bf5c
-ms.sourcegitcommit: 111ee74772d7f308d3414b5d42cbc1e90287f081
+ms.openlocfilehash: 32c851791402b59c941ae088fa637d3d9953dd1b
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88659346"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91504727"
 ---
 # <a name="configure-a-linux-cmake-project-in-visual-studio"></a>Visual Studio에서 Linux CMake 프로젝트 구성
 
@@ -53,6 +53,7 @@ Visual Studio 2017(및 Visual Studio 2019 버전 16.0)의 Linux-Debug에 대한 
       "inheritEnvironments": [ "linux-x64" ]
 }
 ```
+
 ::: moniker-end
 
 ::: moniker range="vs-2019"
@@ -97,12 +98,13 @@ Visual Studio 2019 버전 16.6 이상에서 Ninja는 원격 시스템 또는 WSL
 이러한 설정에 대한 자세한 내용은 [CMakeSettings.json 참조](../build/cmakesettings-reference.md)를 참조하세요.
 
 빌드를 수행할 때
+
 - 원격 시스템을 대상으로 지정하는 경우 Visual Studio는 기본적으로 **도구** > **옵션** > **플랫폼 간** > **연결 관리자** 아래의 목록에서 첫 번째 원격 시스템을 원격 대상으로 선택합니다.
 - 원격 연결이 발견되지 않으면 만들라는 메시지가 표시됩니다. 자세한 내용은 [원격 Linux 컴퓨터에 연결](connect-to-your-remote-linux-computer.md)을 참조하세요.
 
 ## <a name="choose-a-linux-target"></a>Linux 대상 선택
 
-CMake 프로젝트 폴더를 열면 Visual Studio가 *CMakeLists.txt* 파일을 구문 분석하고 **x86-Debug**의 Windows 대상을 지정합니다. 원격 Linux 시스템을 대상으로 지정하려면 프로젝트 설정을 **Linux-Debug** 또는 **Linux-Release**로 변경합니다.
+CMake 프로젝트 폴더를 열면 Visual Studio가 *CMakeLists.txt* 파일을 구문 분석하고 **x86-Debug**의 Windows 대상을 지정합니다. 원격 Linux 시스템을 대상으로 지정하려면 Linux 컴파일러를 기반으로 프로젝트 설정을 변경합니다. 예를 들어 Linux에서 GCC를 사용하고 디버그 정보를 사용하여 컴파일하는 경우 다음을 선택합니다.  **Linux-GCC-Debug** 또는 **Linux-GCC-Release**.
 
 원격 Linux 대상을 지정하면 원격 시스템에 원본이 복사됩니다.
 
@@ -117,7 +119,15 @@ CMake 프로젝트 폴더를 열면 Visual Studio가 *CMakeLists.txt* 파일을 
 
 WSL(Linux용 Windows 하위 시스템)을 대상으로 지정하는 경우 원격 연결을 추가할 필요가 없습니다.
 
-WSL을 대상으로 지정하려면 주 도구 모음의 구성 드롭다운에서 **구성 관리**를 선택합니다. 그런 다음 **구성 추가** 단추를 누르고, GCC를 사용하는 경우 **WSL-Debug** 또는 **WSL-Release**를 선택합니다. Clang/LLVM 도구 집합을 사용하는 경우 Clang 변형을 사용합니다.
+WSL을 대상으로 지정하려면 주 도구 모음의 구성 드롭다운에서 **구성 관리**를 선택합니다.
+
+![CMake 구성 관리](../build/media/vs2019-cmake-manage-configurations.png "CMake 구성 드롭다운")
+
+**CMakeSettings.json** 창이 표시됩니다.
+
+![구성 추가](media/cmake-linux-configurations.png "CMake 설정에 구성 추가")
+
+**구성 추가**(녹색 '+' 단추)를 누른 다음, GCC를 사용하는 경우 **Linux-GCC-Debug** 또는 **Linux-GCC-Release**를 선택합니다. Clang/LLVM 도구 집합을 사용하는 경우 Clang 변형을 사용합니다.  **선택**을 누른 다음, **Ctrl+S**를 눌러 구성을 저장합니다.
 
 **Visual Studio 2019 버전 16.1** WSL을 대상으로 지정하는 경우 Linux의 컴파일러가 탑재된 Windows 파일 시스템의 소스 파일에 직접 액세스할 수 있기 때문에 Visual Studio는 소스 파일을 복사하고 두 개의 빌드 트리 동기 복사본을 유지 관리하지 않아도 됩니다.
 ::: moniker-end

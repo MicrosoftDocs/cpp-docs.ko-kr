@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Visual C++ projects, properties
 - projects [C++], properties
 ms.assetid: 9b0d6f8b-7d4e-4e61-aa75-7d14944816cd
-ms.openlocfilehash: 17b54311670f78cda78403c273cfbf57d43e84da
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 3ee6b21cc1bcb8e33bc76d2efab58808bfc0aa2b
+ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90042188"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91589876"
 ---
 # <a name="set-compiler-and-build-properties"></a>컴파일러 및 빌드 속성 설정
 
@@ -117,7 +117,7 @@ v:<br/>
 
 ## <a name="set-environment-variables-for-a-build"></a>빌드에 대한 환경 변수 설정
 
-MSVC 컴파일러(cl.exe)는 특정 환경 변수, 특히 LIB, LIBPATH, PATH 및 INCLUDE를 인식합니다. IDE로 빌드하면 [VC++ Directories Property Page](reference/vcpp-directories-property-page.md) 속성 페이지에 설정된 속성이 환경 변수를 설정하는 데 사용됩니다. 개발자 명령 프롬프트가 LIB, LIBPATH 및 INCLUDE 값을 설정하는 경우 해당 값을 MSBuild 속성 값으로 대체합니다. 그러면 빌드에서 VC++ 디렉터리 실행 가능 디렉터리 속성 값을 PATH에 추가합니다. 사용자 정의 매크로를 생성한 다음 **이 매크로를 빌드 환경의 환경 변수로 설정**상자를 선택하여 사용자 정의 환경 변수를 설정할 수 있습니다.
+MSVC 컴파일러(cl.exe)는 특정 환경 변수, 특히 LIB, LIBPATH, PATH 및 INCLUDE를 인식합니다. IDE로 빌드하면 [VC++ Directories Property Page](reference/vcpp-directories-property-page.md) 속성 페이지에 설정된 속성이 환경 변수를 설정하는 데 사용됩니다. 개발자 명령 프롬프트가 LIB, LIBPATH 및 INCLUDE 값을 설정하는 경우 해당 값을 MSBuild 속성 값으로 대체합니다. 그러면 빌드에서 VC++ 디렉터리 실행 가능 디렉터리 속성 값을 PATH에 추가합니다. 사용자 정의 매크로를 만든 다음, **이 매크로를 빌드 환경의 환경 변수로 설정** 상자를 선택하여 사용자 정의 환경 변수를 설정할 수 있습니다.
 
 ## <a name="set-environment-variables-for-a-debugging-session"></a>디버깅 세션에 대한 환경 변수 설정
 

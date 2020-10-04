@@ -9,16 +9,16 @@ helpviewer_keywords:
 - ActiveX Control Wizard
 - add class from ActiveX control wizard [C++]
 ms.assetid: 729fcb37-54b8-44d5-9b4e-50bb16e0eea4
-ms.openlocfilehash: 1d91d98082a5c5d6d45bfa31e81c59e8925aa2c2
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: d63f73e17e47f2cabb8f1a55c71325ec7068a2c8
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694220"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91500376"
 ---
 # <a name="add-a-class-from-an-activex-control"></a>ActiveX 컨트롤의 클래스 추가
 
-이 마법사를 사용하여 사용 가능한 ActiveX 컨트롤의 인터페이스에서 MFC 클래스를 만듭니다. MFC 클래스를 [MFC 응용 프로그램](../mfc/reference/creating-an-mfc-application.md), [MFC DLL](../mfc/reference/creating-an-mfc-dll-project.md) 또는 [MFC ActiveX 컨트롤](../mfc/reference/creating-an-mfc-activex-control.md)에 추가할 수 있습니다.
+이 마법사를 사용하여 사용 가능한 ActiveX 컨트롤의 인터페이스에서 MFC 클래스를 만듭니다. MFC 클래스를 [MFC 애플리케이션](../mfc/reference/creating-an-mfc-application.md), [MFC DLL](../mfc/reference/creating-an-mfc-dll-project.md) 또는 [MFC ActiveX 컨트롤](../mfc/reference/creating-an-mfc-activex-control.md)에 추가할 수 있습니다.
 
 > [!WARNING]
 > Microsoft는 Visual Studio 2017 버전 15.9에서 이 코드 마법사를 사용하지 않으므로 Visual Studio의 이후 버전에서 제거할 예정입니다. 이 마법사는 거의 사용되지 않습니다. 이 마법사가 제거되더라도 ATL 및 MFC에 대한 일반 지원은 그대로 유지됩니다. 이 지원 중단에 대한 피드백을 공유하려면 [이 설문 조사](https://www.surveymonkey.com/r/QDWKKCN)를 완료하세요. 여러분의 의견은 소중합니다.
@@ -34,7 +34,7 @@ ActiveX 컨트롤은 다양한 OLE 기능을 지원하는 COM(구성 요소 개�
 
 1. 바로 가기 메뉴에서 **추가**를 선택한 다음, **클래스 추가**를 선택합니다.
 
-1. [클래스 추가](../ide/add-class-dialog-box.md) 대화 상자의 **템플릿** 창에서 **ActiveX 컨트롤의 MFC 클래스**를 클릭한 다음, **열기**를 클릭하여 [ActiveX 컨트롤에서 클래스 추가 마법사](#add-class-from-activex-control-wizard)를 표시합니다.
+1. [클래스 추가](./adding-a-class-visual-cpp.md#add-class-dialog-box) 대화 상자의 **템플릿** 창에서 **ActiveX 컨트롤의 MFC 클래스**를 클릭한 다음, **열기**를 클릭하여 [ActiveX 컨트롤에서 클래스 추가 마법사](#add-class-from-activex-control-wizard)를 표시합니다.
 
 이 마법사에서 ActiveX 컨트롤의 인터페이스 여러 개를 추가할 수 있습니다. 단일 마법사 세션에 있는 둘 이상의 ActiveX 컨트롤에서 클래스를 만들 수도 있습니다.
 
@@ -42,7 +42,7 @@ ActiveX 컨트롤은 다양한 OLE 기능을 지원하는 COM(구성 요소 개�
 
 마법사는 선택한 ActiveX 컨트롤에서 추가한 각 인터페이스에 대해 [CWnd](../mfc/reference/cwnd-class.md) 또는 [COleDispatchDriver](../mfc/reference/coledispatchdriver-class.md)에서 파생된 MFC 클래스를 만듭니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 
 - [ActiveX 컨트롤의 클래스 추가 마법사](#add-class-from-activex-control-wizard)
 
@@ -56,12 +56,12 @@ ActiveX 컨트롤은 다양한 OLE 기능을 지원하는 COM(구성 요소 개�
 
   |옵션|설명|
   |------------|-----------------|
-  |**Registry**|형식 라이브러리가 시스템에 등록됩니다. 등록된 형식 라이브러리는 **사용 가능한 ActiveX 컨트롤**에 나열됩니다.|
-  |**파일**|형식 라이브러리가 반드시 시스템에 등록되지는 않지만 파일에는 저장됩니다. **위치**에 파일 위치를 입력합니다.|
+  |**레지스트리**|형식 라이브러리가 시스템에 등록되어 있습니다. 등록된 형식 라이브러리는 **사용 가능한 ActiveX 컨트롤**에 나열됩니다.|
+  |**최근에 사용한 파일**|형식 라이브러리가 반드시 시스템에 등록되지는 않지만 파일에는 저장됩니다. **위치**에 파일 위치를 입력합니다.|
 
 - **사용 가능한 ActiveX 컨트롤**
 
-  현재 시스템에 등록된 ActiveX 컨트롤을 지정합니다. 이 목록에서 ActiveX 컨트롤을 선택하여 **인터페이스** 목록에 해당 인터페이스를 표시합니다. ActiveX 컨트롤을 등록하는 방법에 대한 자세한 내용은 [MFC ActiveX 컨트롤: ActiveX 컨트롤 배포](../mfc/mfc-activex-controls-distributing-activex-controls.md)를 참조하세요.
+  현재 시스템에 등록된 ActiveX 컨트롤을 지정합니다. 이 목록에서 ActiveX 컨트롤을 선택하여 **인터페이스** 목록에 해당 인터페이스를 표시합니다. ActiveX 컨트롤 등록에 대한 자세한 내용은 [MFC ActiveX 컨트롤: ActiveX 컨트롤 배포](../mfc/mfc-activex-controls-distributing-activex-controls.md)를 참조하세요.
 
   **추가할 클래스 위치** 아래에서 **파일**을 선택하면 이 상자를 변경할 수 없습니다.
 
