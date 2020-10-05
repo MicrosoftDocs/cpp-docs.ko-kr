@@ -2,21 +2,21 @@
 title: CRT의 전역 상태
 description: Microsoft 유니버설 C 런타임에서 공유 전역 상태를 처리 하는 방법을 설명 합니다.
 ms.topic: conceptual
-ms.date: 04/02/2020
+ms.date: 10/02/2020
 helpviewer_keywords:
 - CRT global state
-ms.openlocfilehash: 60532fbdb905bd8ea78b4ce705ec8ecc3e374d9d
-ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
+ms.openlocfilehash: 6c8b97e2bd6fa71891aedacb1fbfec2bbe382d84
+ms.sourcegitcommit: faedcc3be78b29c78e5d51e3c7c7c2f448c745bf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91589733"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "91717517"
 ---
 # <a name="global-state-in-the-crt"></a>CRT의 전역 상태
 
 CRT (유니버설 C 런타임)의 일부 함수는 전역 상태를 사용 합니다. 예를 들어은 `setlocale()` 숫자 구분 기호, 텍스트 코드 페이지 등에 영향을 주는 전체 프로그램에 대 한 로캘을 설정 합니다.
 
-응용 프로그램 및 OS 간에는 응용 프로그램의 전역 상태가 공유 되지 않습니다. 예를 들어, 응용 프로그램에서 `setlocale()` 를 호출 하는 경우 C 런타임 또는 그 반대로를 사용 하는 모든 OS 구성 요소의 로캘에는 영향을 주지 않습니다.
+응용 프로그램 및 OS 간에는 응용 프로그램의 전역 상태가 공유 되지 않습니다. 예를 들어 응용 프로그램에서를 호출 하 `setlocale()` 는 경우 C 런타임 또는 그 밖의 다른 방법을 사용 하는 모든 OS 구성 요소의 로캘에는 영향을 주지 않습니다.
 
 ## <a name="os-specific-versions-of-crt-functions"></a>OS 특정 버전의 CRT 함수
 
@@ -31,8 +31,8 @@ CRT (유니버설 C 런타임)의 일부 함수는 전역 상태를 사용 합�
 
 앱의 CRT 상태에서 구성 요소의 CRT 상태를 격리 하는 방법에는 두 가지가 있습니다.
 
-- 컴파일러 옵션/MT (release) 또는 MTd (디버그)를 사용 하 여 구성 요소를 정적으로 연결 합니다. 자세한 내용은 [/md,/mt,/LD](../build/reference/md-mt-ld-use-run-time-library.md)을 참조 하세요. 정적 링크는 이진 크기를 크게 늘릴 수 있습니다.
-- Windows 10 20H2부터 CRT에 동적으로 연결 하 여 CRT 상태 격리를 가져오고 OS 모드 내보내기 ( _o_로 시작 되는 함수)를 호출 합니다. OS 모드 내보내기를 호출 하려면 이전 처럼 정적으로 링크 되지만 링커 옵션 (릴리스) 또는 (디버그)를 사용 하 여 정적 다중 항목 RT를 무시 합니다 `/NODEFAULTLIB:libucrt.lib` `/NODEFAULTLIB:libucrtd.lib` . 자세한 내용은 [/Nodefaultlib (라이브러리 무시)](../build/reference/nodefaultlib-ignore-libraries.md) 를 참조 하세요. 및 `ucrt.osmode.lib` 를 링커 입력에 추가 합니다.
+- 컴파일러 옵션 `/MT` (릴리스) 또는 (디버그)를 사용 하 여 구성 요소를 정적으로 연결 `/MTd` 합니다. 자세한 내용은 [/md,/mt,/LD](../build/reference/md-mt-ld-use-run-time-library.md)을 참조 하세요. 정적 링크를 통해 이진 크기가 크게 증가할 수 있습니다.
+- Windows 10 버전 2004부터 CRT에 동적으로 연결 되지만 OS 모드 내보내기 ( _o_로 시작 하는 함수)를 호출 합니다. OS 모드 내보내기를 호출 하려면 정적으로 이전 처럼 링크 하지만 링커 옵션 `/NODEFAULTLIB:libucrt.lib` (릴리스) 또는 `/NODEFAULTLIB:libucrtd.lib` (디버그)를 사용 하 여 정적 다중 경로를 무시 합니다. 및 `ucrt.osmode.lib` 를 링커 입력에 추가 합니다. 자세한 내용은 [/nodefaultlib (라이브러리 무시)](../build/reference/nodefaultlib-ignore-libraries.md) 를 참조 하세요.
 
 > [!Note]
 > 소스 코드에서를 쓰지 `setlocale()` 않고 작성 `_o_setlocale()` 합니다. 에 연결 하면 `ucrt.osmode.lib` 링커가 함수의 OS 특정 버전으로 자동으로 대체 됩니다. 즉,는 `setlocale()` 로 대체 됩니다 `_o_setlocale()` .
@@ -52,7 +52,7 @@ CRT (유니버설 C 런타임)의 일부 함수는 전역 상태를 사용 합�
 - [_Putch에서](reference/putch-putwch.md) 사용 하는 버퍼 _putwch
 - [_set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler](reference/set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md)
 - [_set_new_handler](reference/set-new-handler.md) 및 [_set_new_mode](reference/set-new-mode.md)
-- [fmode] (text-and-binary-mode-file-i-o.md)
+- [fmode](text-and-binary-mode-file-i-o.md)
 - [표준 시간대 정보](time-management.md)
 
 ## <a name="see-also"></a>참고 항목
