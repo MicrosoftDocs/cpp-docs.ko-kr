@@ -369,6 +369,8 @@
               href: ../build/reference/property-page-xml-files.md
             - name: .vcxproj 및 .props 파일 구조
               href: ../build/reference/vcxproj-file-structure.md
+            - name: .vcxproj 파일 및 와일드카드
+              href: ../build/reference/vcxproj-files-and-wildcards.md
             - name: 예제 프로젝트 파일
               href: ../build/reference/project-files.md
             - name: .vcxproj가 파일 구조를 필터링합니다.
