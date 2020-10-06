@@ -1,5 +1,6 @@
 ---
 title: /RTC(런타임 오류 검사)
+description: 런타임 오류 검사에 대 한 Microsoft C/c + + 컴파일러/RTC 옵션입니다.
 ms.date: 07/31/2020
 f1_keywords:
 - /rtc
@@ -25,14 +26,14 @@ helpviewer_keywords:
 - RTCc compiler option
 - -RTCc compiler option [C++]
 ms.assetid: 9702c558-412c-4004-acd5-80761f589368
-ms.openlocfilehash: eefec0956bebe9f72324f3cbc61fccbc5e2e24d7
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 888a81d0d5c21b0b85420a43d534c5b2742aa082
+ms.sourcegitcommit: 30792632548d1c71894f9fecbe2f554294b86020
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520540"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91765239"
 ---
-# <a name="rtc-run-time-error-checks"></a>`/RTC`(런타임 오류 검사)
+# <a name="rtc-run-time-error-checks"></a>`/RTC` (런타임 오류 검사)
 
 [Runtime_checks](../../preprocessor/runtime-checks.md) pragma와 함께 런타임 오류 검사 기능을 사용 하거나 사용 하지 않도록 설정 하는 데 사용 됩니다.
 
@@ -109,7 +110,7 @@ c = a;  // No run-time error with /RTCu
 
 1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. **구성 속성**  >  **C/c + +****코드 생성** 속성 페이지를 선택 합니다.  
+1. **구성 속성**  >  **C/c + +**  >  **코드 생성** 속성 페이지를 선택 합니다.
 
 1. **기본 런타임 검사** 또는 **더 작은 형식 검사**속성 중 하나 또는 둘 다를 수정 합니다.
 

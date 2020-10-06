@@ -11,12 +11,12 @@ helpviewer_keywords:
 - POSIX file names
 - UNIX, compatibility
 ms.assetid: 40792414-7a5b-415d-bfa8-2bfb1ebb3731
-ms.openlocfilehash: 07f5ffeec8696ded5880c45ed2ea1a5107bee48c
-ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
+ms.openlocfilehash: 3975db2407943b329fa7eded0d72d63524428210
+ms.sourcegitcommit: 30792632548d1c71894f9fecbe2f554294b86020
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91590149"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91765217"
 ---
 # <a name="unix"></a>UNIX
 
@@ -29,8 +29,8 @@ ms.locfileid: "91590149"
 - UNIX에서 제대로 작동 하는 경로 및 파일 이름을 사용 합니다 .이는 대/소문자를 구분 합니다. Win32 운영 체제의 FAT (파일 할당 테이블) 파일 시스템은 대/소문자를 구분 하지 않습니다. NTFS 파일 시스템은 디렉터리 목록에 대 한 대/소문자를 유지 하지만 파일 검색 및 기타 시스템 작업에서 대/소문자를 무시 합니다.
 
 > [!NOTE]
->  이 버전의 Visual C++에서는 UNIX 호환성 정보가 함수 설명에서 제외되었습니다.
+> 이 버전의 Visual C++에서는 UNIX 호환성 정보가 함수 설명에서 제외되었습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [호환성](../c-runtime-library/compatibility.md)

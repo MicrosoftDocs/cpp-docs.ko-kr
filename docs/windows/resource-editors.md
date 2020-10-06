@@ -21,12 +21,12 @@ helpviewer_keywords:
 - properties [C++], resources
 - resources [C++], properties
 ms.assetid: e20a29ec-d6fb-4ead-98f3-431a0e23aaaf
-ms.openlocfilehash: 2552f9eea79aa0a3545d9746d85cacfbd9a3f25d
-ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
+ms.openlocfilehash: f854f3cc6e61e3022e784befc738bf28c1adeb6c
+ms.sourcegitcommit: 30792632548d1c71894f9fecbe2f554294b86020
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91353170"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91765248"
 ---
 # <a name="resource-editors-c"></a>리소스 편집기 (c + +)
 
@@ -58,7 +58,7 @@ ms.locfileid: "91353170"
 
 일부 리소스 종류는 다양 한 방법으로 가져오고 사용할 수 있는 개별 파일입니다. 여기에는 비트맵, 아이콘, 커서, 도구 모음 및 html 파일이 포함 됩니다. 이러한 리소스에는 파일 이름과 [리소스 식별자](../windows/symbols-resource-identifiers.md)가 있습니다. Win32 프로젝트의 대화 상자, 메뉴 및 문자열 테이블과 같은 다른 항목은 리소스 스크립트 (.rc) 파일 또는 리소스 템플릿 (.rct) 파일의 일부로만 존재 합니다.
 
-프로젝트를 열지 않고 프로젝트 외부에서 리소스를 편집할 수도 있습니다. 자세한 내용은 [방법: 리소스 만들기](../windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md)를 참조 하세요.
+프로젝트를 열지 않고 프로젝트 외부에서 리소스를 편집할 수도 있습니다. 자세한 내용은 [방법: 리소스 만들기](./how-to-create-a-resource-script-file.md)를 참조 하세요.
 
 > [!NOTE]
 > **속성** 창을 사용 하 여 리소스의 속성을 수정할 수 있습니다.
@@ -126,7 +126,7 @@ ms.locfileid: "91353170"
 
 없음
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [리소스 파일 작업](../windows/working-with-resource-files.md)<br/>
 [리소스 파일](../windows/resource-files-visual-studio.md)<br/>

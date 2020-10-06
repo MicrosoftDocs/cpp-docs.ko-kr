@@ -160,12 +160,12 @@ helpviewer_keywords:
 - CRT_REPORT_HOOK type
 - _finddata_t type
 ms.assetid: 23312dd2-4a6a-4d70-9b48-2a5d0d8c9f28
-ms.openlocfilehash: bf90adbdbc739a2dd26d8e59ab38e56aef3bd312
-ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
+ms.openlocfilehash: 376c29371fb9213ed46435b41bea1666058c7b4e
+ms.sourcegitcommit: 30792632548d1c71894f9fecbe2f554294b86020
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352936"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91765307"
 ---
 # <a name="standard-types"></a>표준 형식
 
@@ -173,7 +173,7 @@ Microsoft 런타임 라이브러리는 다음과 같은 표준 형식 및 typede
 
 ### <a name="fixed-width-integral-types-stdinth"></a>고정 너비 정수 계열 형식(stdint.h)
 
-|Name|해당하는 기본 제공 형식|
+|속성|해당하는 기본 제공 형식|
 |----------|-------------------------------|
 |int8\_t, uint8\_t|signed char, unsigned char|
 |int16\_t, uint16\_t|short, unsigned short|
@@ -189,7 +189,7 @@ Microsoft 런타임 라이브러리는 다음과 같은 표준 형식 및 typede
 |int_fast64_t, uint_fast64_t|long long, unsigned long long|
 |intmax_t, uintmax_t|long long, unsigned long long|
 
-|형식|Description|선언됨|
+|Type|Description|선언됨|
 |----------|-----------------|-----------------|
 |`clock_t`(long)|시간 값을 저장합니다. [clock](../c-runtime-library/reference/clock.md)에 의해 사용됩니다.|TIME.H|
 |`_complex` 구조체|복소수의 실수와 허수 부분을 저장합니다. [_cabs](../c-runtime-library/reference/cabs.md)에 의해 사용됩니다.|MATH.H|
@@ -199,7 +199,7 @@ Microsoft 런타임 라이브러리는 다음과 같은 표준 형식 및 typede
 |`_CRT_REPORT_HOOK`,<br /><br /> `_CRT_REPORT_HOOKW`,<br /><br /> `_CRT_REPORT_HOOKW_M`|[_CrtDbgReport](../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md)에서 호출되는 콜백 함수에 대한 형식이 정의됩니다.<br /><br /> 이 함수에 대한 매개 변수는 보고서 유형, 출력 메시지 및 콜백 함수의 반환 값입니다.|CRTDBG.H|
 |`dev_t`, `_dev_t` short 또는 부호 없는 정수|디바이스 핸들을 나타냅니다.|SYS\TYPES.H|
 |`_diskfree_t` 구조체|디스크 드라이브에 대한 정보가 들어 있습니다. [_getdiskfree](../c-runtime-library/reference/getdiskfree.md)**.** 에 의해 사용됩니다.|DOS.H 및 DIRECT.H|
-|`div_t`, `ldiv_t` 및 `lldiv_t` 구조|[div](reference/div.md), [ldiv](../c-runtime-library/reference/ldiv-lldiv.md) 및 [lldiv](../c-runtime-library/reference/ldiv-lldiv.md)에 의해 반환된 값을 각각 저장합니다.|STDLIB.H|
+|`div_t`, `ldiv_t` 및 `lldiv_t` 구조|[div](reference/div.md), [ldiv](./reference/div.md) 및 [lldiv](./reference/div.md)에 의해 반환된 값을 각각 저장합니다.|STDLIB.H|
 |`errno_t` 정수|`errno`의 오류 코드를 처리하는 매개 변수 또는 함수 반환 형식에 사용됩니다.|STDDEF.H,<br /><br /> CRTDEFS.H|
 |`_exception` 구조체|[_matherr](../c-runtime-library/reference/matherr.md)에 대한 오류 정보를 저장합니다.|MATH.H|
 |`_EXCEPTION_POINTERS`|예외 레코드를 포함합니다. 자세한 내용은 [예외 포인터](/windows/win32/api/winnt/ns-winnt-exception_pointers)를 참조하세요.|FPIEEE.H|
@@ -253,6 +253,6 @@ Microsoft 런타임 라이브러리는 다음과 같은 표준 형식 및 typede
 |`wctype_t` 정수|모든 언어 문자 집합의 모든 문자를 나타낼 수 있습니다.|WCHAR.H,<br /><br /> CRTDEFS.H|
 |`wint_t` 정수|모든 와이드 문자 또는 넓은 끝-파일의 값을 보유할 수 있는 데이터 개체의 형식입니다.|WCHAR.H,<br /><br /> CRTDEFS.H|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [C 런타임 라이브러리 참조](../c-runtime-library/c-run-time-library-reference.md)
