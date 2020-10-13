@@ -7,12 +7,12 @@ helpviewer_keywords:
 - __declspec keyword [C++], selectany
 - selectany __declspec keyword
 ms.assetid: 9c353017-5a42-4f50-b741-bd13da1ce84d
-ms.openlocfilehash: e279184322c239e7768eb8fd4321ee451b2cb94c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6cd2ec4e22d94c42432a1fc3e39afd5540302d22
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213231"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008214"
 ---
 # `selectany`
 
@@ -37,7 +37,7 @@ ms.locfileid: "87213231"
 > [!NOTE]
 > **`selectany`** 외부에 표시 되는 글로벌 데이터 항목의 실제 초기화에만 적용할 수 있습니다.
 
-## <a name="example"></a>예제
+## <a name="example-selectany-attribute"></a>예: `selectany` 특성
 
 이 코드에서는 특성을 사용 하는 방법을 보여 줍니다 **`selectany`** .
 
@@ -71,7 +71,7 @@ int i;
 __declspec(selectany) X x(1);
 ```
 
-## <a name="example"></a>예제
+## <a name="example-use-selectany-attribute-to-ensure-data-comdat-folding"></a>예: `selectany` 특성을 사용 하 여 데이터 COMDAT 정리 확인
 
 이 코드에서는 **`selectany`** 링커 옵션도 사용할 때 특성을 사용 하 여 데이터 COMDAT 정리를 확인 하는 방법을 보여 줍니다 [`/OPT:ICF`](../build/reference/opt-optimizations.md) . 데이터는로 표시 되 **`selectany`** 고 **`const`** (읽기 전용) 섹션에 배치 되어야 합니다. 읽기 전용 섹션을 명시적으로 지정해야 합니다.
 
@@ -91,4 +91,4 @@ int main() {
 ## <a name="see-also"></a>참조
 
 [`__declspec`](../cpp/declspec.md)<br/>
-[C++ 키워드](../cpp/keywords-cpp.md)
+[키워드](../cpp/keywords-cpp.md)

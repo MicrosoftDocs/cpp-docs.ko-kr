@@ -5,18 +5,18 @@ helpviewer_keywords:
 - function body
 - variables, missing
 ms.assetid: 1a88d809-b14f-46a4-97c4-3e48beb418f2
-ms.openlocfilehash: 6d2ef22b90009d320485fb6fe3f7e308ae05c442
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 835bd968035b355ded9636d446d44d4ce069c248
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80173623"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008891"
 ---
 # <a name="missing-function-body-or-variable"></a>함수 본문 또는 변수 누락
 
 함수 프로토타입을 사용 하는 경우 컴파일러는 오류 없이 계속 될 수 있지만 함수 코드 또는 예약 된 가변 공간이 없기 때문에 링커에서 주소에 대 한 호출을 확인할 수 없습니다. 링커가 확인 해야 하는 함수에 대 한 호출을 만들 때까지이 오류가 표시 되지 않습니다.
 
-## <a name="example"></a>예제
+## <a name="example-call-to-an-undefined-function"></a>예제: 정의 되지 않은 함수 호출
 
 프로토타입이 있으면 컴파일러가 함수를 사용할 수 있다고 생각할 수 있으므로 main의 함수 호출은 LNK2019를 발생 시킵니다.  링커가이를 찾지 못합니다.
 
@@ -29,9 +29,9 @@ int main() {
 }
 ```
 
-## <a name="example"></a>예제
+## <a name="example-call-to-an-implemented-function"></a>예: 구현 된 함수 호출
 
-에서는 C++클래스 정의의 프로토타입이 아니라 클래스에 대 한 특정 함수 구현을 포함 해야 합니다. 헤더 파일 외부에 클래스를 정의 하는 경우에는 함수 앞에 클래스 이름을 포함 해야 합니다 (`Classname::memberfunction`).
+C + +에서는 클래스 정의의 프로토타입이 아니라 클래스에 대 한 특정 함수 구현을 포함 하는지 확인 합니다. 헤더 파일 외부에 클래스를 정의 하는 경우에는 함수 () 앞에 클래스 이름을 포함 해야 `Classname::memberfunction` 합니다.
 
 ```cpp
 // LNK2019_MFBV_2.cpp
@@ -49,6 +49,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [링커 도구 오류 LNK2019](../../error-messages/tool-errors/linker-tools-error-lnk2019.md)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - namespaces [C++], unqualified names in
 - using keyword [C++]
 ms.assetid: 4184e2b1-3adc-408e-b5f3-0b3f8b554723
-ms.openlocfilehash: 3aa0c7c4615aaf5eae9f4eae534e52167bf79ff0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 072ecd325a76e80dbd710c241e39fdf7b969e537
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227025"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008254"
 ---
 # <a name="using-declaration"></a>선언 사용
 
@@ -37,7 +37,7 @@ using declarator-list ;
 
 Using 선언은 다른 곳에서 선언 된 엔터티의 동의어로 정규화 되지 않은 이름을 도입 합니다. 이를 통해 특정 네임 스페이스의 단일 이름이 표시 되는 선언 영역에서 명시적인 자격 없이 사용 될 수 있습니다. 이는 네임 스페이스의 *모든* 이름을 한정자 없이 사용할 수 있도록 [하는 using 지시문](../cpp/namespaces-cpp.md#using_directives)과는 대조적입니다. **`using`** 키워드는 [형식 별칭](../cpp/aliases-and-typedefs-cpp.md)에도 사용 됩니다.
 
-## <a name="example"></a>예제
+## <a name="example-using-declaration-in-class-field"></a>예: `using` 클래스 필드의 선언
 
 Using 선언은 클래스 정의에서 사용할 수 있습니다.
 
@@ -83,7 +83,7 @@ In B::f()
 In B::g()
 ```
 
-## <a name="example"></a>예제
+## <a name="example-using-declaration-to-declare-a-member"></a>예: `using` 멤버를 선언 하는 선언
 
 멤버를 선언 하는 데 사용 하는 경우 using 선언은 기본 클래스의 멤버를 참조 해야 합니다.
 
@@ -123,7 +123,7 @@ int main() {
 In B::f()
 ```
 
-## <a name="example"></a>예제
+## <a name="example-using-declaration-with-explicit-qualification"></a>예: `using` 명시적 한정자를 사용한 선언
 
 Using 선언을 사용 하 여 선언 된 멤버는 명시적 한정자를 사용 하 여 참조할 수 있습니다. `::`접두사는 전역 네임 스페이스를 참조 합니다.
 
@@ -163,7 +163,7 @@ In f
 In A::g
 ```
 
-## <a name="example"></a>예제
+## <a name="example-using-declaration-synonyms-and-aliases"></a>예: `using` 선언 동의어 및 별칭
 
 Using 선언이 생성 되 면 선언에 의해 생성 된 동의어가 using 선언 지점에서 유효한 정의만 참조 합니다. Using 선언 후에 네임 스페이스에 추가 된 정의는 유효한 동의어가 아닙니다.
 
@@ -192,7 +192,7 @@ void b() {
 }
 ```
 
-## <a name="example"></a>예제
+## <a name="example-local-declarations-and-using-declarations"></a>예: 로컬 선언 및 `using` 선언
 
 네임 스페이스의 함수와 관련 하 여 단일 이름에 대 한 로컬 선언 집합 및 선언 사용이 선언적 영역에 제공 되는 경우 모두 동일한 엔터티를 참조 하거나 모두 함수를 참조 해야 합니다.
 
@@ -215,9 +215,9 @@ void g() {
 
 위의 예제에서 `using B::i` 문은 두 번째가 `int i` 함수에 선언 되도록 `g()` 합니다. `using B::f` `f(char)` 에서 제공 하는 함수 이름에 `B::f` 다른 매개 변수 형식이 있으므로 문이 함수와 충돌 하지 않습니다.
 
-## <a name="example"></a>예제
+## <a name="example-local-function-declarations-and-using-declarations"></a>예: 로컬 함수 선언 및 `using` 선언
 
-로컬 함수 선언은 선언을 사용 하 여 도입 된 함수와 동일한 이름과 형식을 가질 수 없습니다. 예를 들어:
+로컬 함수 선언은 선언을 사용 하 여 도입 된 함수와 동일한 이름과 형식을 가질 수 없습니다. 예를 들면 다음과 같습니다.
 
 ```cpp
 // functions_in_namespaces2.cpp
@@ -242,7 +242,7 @@ void h() {
 }
 ```
 
-## <a name="example"></a>예제
+## <a name="example-using-declaration-and-inheritance"></a>예: `using` 선언 및 상속
 
 상속과 관련 하 여, using 선언으로 기본 클래스에서 파생 클래스 범위로 이름이 제공 되는 경우 파생 클래스의 멤버 함수는 기본 클래스에서 동일한 이름 및 인수 형식을 사용 하 여 가상 멤버 함수를 재정의 합니다.
 
@@ -300,7 +300,7 @@ In B::g
 In D::g(char)
 ```
 
-## <a name="example"></a>예제
+## <a name="example-using-declaration-accessibility"></a>예: `using` 선언 액세스 가능성
 
 Using 선언에서 언급 한 이름의 모든 인스턴스에 액세스할 수 있어야 합니다. 특히 파생 클래스에서 using 선언을 사용 하 여 기본 클래스의 멤버에 액세스 하는 경우 멤버 이름에 액세스할 수 있어야 합니다. 오버 로드 된 멤버 함수의 이름이 면 명명 된 모든 함수에 액세스할 수 있어야 합니다.
 
@@ -325,7 +325,7 @@ public:
 };
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [네임스페이스](../cpp/namespaces-cpp.md)<br/>
-[C++ 키워드](../cpp/keywords-cpp.md)
+[키워드](../cpp/keywords-cpp.md)

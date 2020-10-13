@@ -7,35 +7,35 @@ helpviewer_keywords:
 - threading [C++], locales
 - per-thread locale
 ms.assetid: d6fb159a-eaca-4130-a51a-f95d62f71485
-ms.openlocfilehash: c12a3fa1922db7a1ec0a7bcd43ddf09000d97961
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 82b410c592e5b68737514dda5a864c7bd15f6dc3
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62213253"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008591"
 ---
 # <a name="multithreading-and-locales"></a>다중 스레딩 및 로캘
 
-두 C 런타임 라이브러리 및 C++ 표준 라이브러리는 프로그램의 로캘 변경을 대 한 지원을 제공 합니다. 이 항목에서는 다중 스레드 응용 프로그램에서 두 라이브러리의 로캘 기능을 사용 하는 경우 발생 하는 문제를 설명 합니다.
+C 런타임 라이브러리와 c + + 표준 라이브러리 모두 프로그램의 로캘 변경에 대 한 지원을 제공 합니다. 이 항목에서는 다중 스레드 응용 프로그램에서 두 라이브러리의 로캘 기능을 사용할 때 발생 하는 문제에 대해 설명 합니다.
 
 ## <a name="remarks"></a>설명
 
-C 런타임 라이브러리를 사용 하 여 다중 스레드 응용 프로그램을 만들 수 있습니다 합니다 `_beginthread` 및 `_beginthreadex` 함수입니다. 이 항목에서는 이러한 함수를 사용 하 여 생성 하는 다중 스레드 응용 프로그램에 대해서만 설명 합니다. 자세한 내용은 [_beginthread, _beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md)합니다.
+C 런타임 라이브러리를 사용 하면 및 함수를 사용 하 여 다중 스레드 응용 프로그램을 만들 수 있습니다 `_beginthread` `_beginthreadex` . 이 항목에서는 이러한 함수를 사용 하 여 만든 다중 스레드 응용 프로그램에 대해서만 다룹니다. 자세한 내용은 [_beginthread, _beginthreadex을](../c-runtime-library/reference/beginthread-beginthreadex.md)참조 하세요.
 
-C 런타임 라이브러리를 사용 하 여 로캘을 변경 하려면 사용 합니다 [setlocale](../preprocessor/setlocale.md) 함수입니다. 시각적 개체의 이전 버전의 C++를이 함수는 항상 전체 응용 프로그램에 걸쳐 로캘을 수정 합니다. 스레드 단위의 로캘 설정을 지원 방법이 있습니다. 이렇게 사용 하는 [_configthreadlocale](../c-runtime-library/reference/configthreadlocale.md) 함수입니다. 지정 하는 [setlocale](../preprocessor/setlocale.md) 만 현재 스레드의 호출에서 로캘을 변경 해야 `_configthreadlocale(_ENABLE_PER_THREAD_LOCALE)` 스레드에서 합니다. 반대로, 호출 `_configthreadlocale(_DISABLE_PER_THREAD_LOCALE)` 전역 로캘 사용 하는 스레드 및 호출 하면 [setlocale](../preprocessor/setlocale.md) 는 스레드에 스레드별 로캘을 명시적으로 사용 하지 않는 모든 스레드의 로캘을 변경 됩니다.
+C 런타임 라이브러리를 사용 하 여 로캘을 변경 하려면 [setlocale](../preprocessor/setlocale.md) 함수를 사용 합니다. 이전 버전의 Visual C++에서이 함수는 항상 전체 응용 프로그램 전체에서 로캘을 수정 합니다. 이제는 스레드 단위로 로캘을 설정 하는 기능이 지원 됩니다. [_Configthreadlocale](../c-runtime-library/reference/configthreadlocale.md) 함수를 사용 하 여이 작업을 수행 합니다. [Setlocale](../preprocessor/setlocale.md) 이 현재 스레드의 로캘을 변경 하도록 지정 하려면 해당 스레드에서를 호출 합니다 `_configthreadlocale(_ENABLE_PER_THREAD_LOCALE)` . 반대로를 호출 하면 `_configthreadlocale(_DISABLE_PER_THREAD_LOCALE)` 해당 스레드가 전역 로캘을 사용 하 고 해당 스레드에서 [setlocale](../preprocessor/setlocale.md) 을 호출 하면 스레드 단위 로캘을 명시적으로 사용 하도록 설정 하지 않은 모든 스레드의 로캘이 변경 됩니다.
 
-사용 하 여 로캘을 변경 하는 C++ 런타임 라이브러리를 사용 하 여는 [locale 클래스](../standard-library/locale-class.md)합니다. 호출 하 여 합니다 [locale:: global](../standard-library/locale-class.md#global) 메서드의 스레드 단위 로캘을 명시적으로 사용 하지 않는 모든 스레드의 로캘을 변경 합니다. 단일 스레드 또는 응용 프로그램 부분에서 로캘을 변경 하려면 만들면 인스턴스의 `locale` 개체는 스레드 또는 코드의 일부입니다.
+C + + 런타임 라이브러리를 사용 하 여 로캘을 변경 하려면 [로캘 클래스](../standard-library/locale-class.md)를 사용 합니다. [Locale:: global](../standard-library/locale-class.md#global) 메서드를 호출 하 여 스레드 단위 로캘을 명시적으로 사용 하도록 설정 하지 않은 모든 스레드에서 로캘을 변경 합니다. 단일 스레드나 응용 프로그램의 일부에서 로캘을 변경 하려면 `locale` 해당 스레드나 코드 부분에 개체의 인스턴스를 만들면 됩니다.
 
 > [!NOTE]
-> 호출 [locale:: global](../standard-library/locale-class.md#global) 둘 다에 대 한 로캘을 변경 된 C++ 표준 라이브러리 및 C 런타임 라이브러리입니다. 그러나 호출 [setlocale](../preprocessor/setlocale.md) , C 런타임 라이브러리에 대 한 로캘을 변경 된 C++ 표준 라이브러리에 영향을 받지 않습니다.
+> [Locale:: global](../standard-library/locale-class.md#global) 을 호출 하면 c + + 표준 라이브러리 및 c 런타임 라이브러리의 로캘이 모두 변경 됩니다. 그러나 [setlocale](../preprocessor/setlocale.md) 을 호출 하면 C 런타임 라이브러리에 대 한 로캘만 변경 됩니다. c + + 표준 라이브러리는 영향을 받지 않습니다.
 
-다음 예제에 사용 하는 방법을 보여 줍니다 합니다 [setlocale](../preprocessor/setlocale.md) 함수는 [locale 클래스](../standard-library/locale-class.md), 및 [_configthreadlocale](../c-runtime-library/reference/configthreadlocale.md) 함수 응용 프로그램의 로캘을 변경 하려면 여러 가지 시나리오입니다.
+다음 예제에서는 [setlocale](../preprocessor/setlocale.md) 함수, [로캘 클래스](../standard-library/locale-class.md)및 [_configthreadlocale](../c-runtime-library/reference/configthreadlocale.md) 함수를 사용 하 여 여러 가지 시나리오에서 응용 프로그램의 로캘을 변경 하는 방법을 보여 줍니다.
 
-## <a name="example"></a>예제
+## <a name="example-change-locale-with-per-thread-locale-enabled"></a>예: 스레드별 로캘로 설정 된 로캘 변경
 
-이 예제에서는 main 메서드가 두 자식 스레드를 생성 합니다. 첫 번째 스레드의 스레드 A 호출 하 여 스레드별 로캘을 사용 하면 `_configthreadlocale(_ENABLE_PER_THREAD_LOCALE)`합니다. 두 번째 스레드가, 스레드 B 뿐만 아니라 주 스레드에서 스레드별 로캘을 사용 하지 마십시오. 스레드 A는 다음을 사용 하 여 로캘 변경 진행 합니다 [setlocale](../preprocessor/setlocale.md) C 런타임 라이브러리의 함수입니다.
+이 예제에서 주 스레드는 두 개의 자식 스레드를 생성 합니다. 첫 번째 스레드인 스레드 A는를 호출 하 여 스레드별 로캘을 사용 하도록 설정 합니다 `_configthreadlocale(_ENABLE_PER_THREAD_LOCALE)` . 주 스레드는 물론 두 번째 스레드는 스레드 단위 로캘을 사용 하지 않습니다. 그런 다음 스레드 A는 C 런타임 라이브러리의 [setlocale](../preprocessor/setlocale.md) 함수를 사용 하 여 로캘을 변경 합니다.
 
-스레드 A에 스레드별 로캘을 사용 하 고, "프랑스어" 로캘을 사용 하는 스레드 시작에서 C 런타임 라이브러리 함수에만 합니다. 주 스레드 및 스레드 B에서 C 런타임 라이브러리 함수를 "C" 로캘에서 사용 하 여 계속 합니다. 또한 이후 [setlocale](../preprocessor/setlocale.md) 영향을 주지 않습니다는 C++ 표준 라이브러리 로캘 모든 C++ 표준 라이브러리 개체는 "C" 로캘에서 사용 하 여 계속 합니다.
+스레드 A에 스레드 단위 로캘을 사용 하도록 설정 되어 있으므로 스레드 A의 C 런타임 라이브러리 함수만 "프랑스어" 로캘을 사용 하 여 시작 합니다. 스레드 B 및 주 스레드의 C 런타임 라이브러리 함수는 계속 해 서 "C" 로캘을 사용 합니다. 또한 [setlocale](../preprocessor/setlocale.md) 은 c + + 표준 라이브러리 로캘에 영향을 주지 않으므로 모든 c + + 표준 라이브러리 개체는 계속 해 서 "c" 로캘을 사용 합니다.
 
 ```cpp
 // multithread_locale_1.cpp
@@ -130,11 +130,11 @@ unsigned __stdcall RunThreadB(void *params)
 [Thread main] locale::global is set to "C"
 ```
 
-## <a name="example"></a>예제
+## <a name="example-change-global-locale-with-per-thread-locale-enabled"></a>예: 스레드 단위 로캘을 사용 하도록 설정 된 전역 로캘 변경
 
-이 예제에서는 main 메서드가 두 자식 스레드를 생성 합니다. 첫 번째 스레드의 스레드 A 호출 하 여 스레드별 로캘을 사용 하면 `_configthreadlocale(_ENABLE_PER_THREAD_LOCALE)`합니다. 두 번째 스레드가, 스레드 B 뿐만 아니라 주 스레드에서 스레드별 로캘을 사용 하지 마십시오. 스레드 A는 다음을 사용 하 여 로캘 변경 진행 합니다 [locale:: global](../standard-library/locale-class.md#global) 메서드를 C++ 표준 라이브러리입니다.
+이 예제에서 주 스레드는 두 개의 자식 스레드를 생성 합니다. 첫 번째 스레드인 스레드 A는를 호출 하 여 스레드별 로캘을 사용 하도록 설정 합니다 `_configthreadlocale(_ENABLE_PER_THREAD_LOCALE)` . 주 스레드는 물론 두 번째 스레드는 스레드 단위 로캘을 사용 하지 않습니다. 그런 다음 스레드 A는 c + + 표준 라이브러리의 [locale:: global](../standard-library/locale-class.md#global) 메서드를 사용 하 여 로캘을 변경 합니다.
 
-스레드 A에 스레드별 로캘을 사용 하 고, "프랑스어" 로캘을 사용 하는 스레드 시작에서 C 런타임 라이브러리 함수에만 합니다. 주 스레드 및 스레드 B에서 C 런타임 라이브러리 함수를 "C" 로캘에서 사용 하 여 계속 합니다. 그러나 합니다 [locale:: global](../standard-library/locale-class.md#global) 메서드는 로캘을 "전역"으로 변경 모든 C++ 모든 스레드가의 표준 라이브러리 개체 "프랑스어" 로캘을 사용 하 여 시작 합니다.
+스레드 A에 스레드 단위 로캘을 사용 하도록 설정 되어 있으므로 스레드 A의 C 런타임 라이브러리 함수만 "프랑스어" 로캘을 사용 하 여 시작 합니다. 스레드 B 및 주 스레드의 C 런타임 라이브러리 함수는 계속 해 서 "C" 로캘을 사용 합니다. 그러나 [locale:: global](../standard-library/locale-class.md#global) 메서드가 로캘 "전역"을 변경 하므로 모든 스레드의 모든 c + + 표준 라이브러리 개체는 "프랑스어" 로캘을 사용 하기 시작 합니다.
 
 ```cpp
 // multithread_locale_2.cpp
@@ -229,11 +229,11 @@ unsigned __stdcall RunThreadB(void *params)
 [Thread main] locale::global is set to "French_France.1252"
 ```
 
-## <a name="example"></a>예제
+## <a name="example-change-locale-without-per-thread-locale-enabled"></a>예: 스레드 단위 로캘을 사용 하지 않고 로캘 변경
 
-이 예제에서는 main 메서드가 두 자식 스레드를 생성 합니다. 첫 번째 스레드의 스레드 A 호출 하 여 스레드별 로캘을 사용 하면 `_configthreadlocale(_ENABLE_PER_THREAD_LOCALE)`합니다. 두 번째 스레드가, 스레드 B 뿐만 아니라 주 스레드에서 스레드별 로캘을 사용 하지 마십시오. 스레드 B를 사용 하 여 로캘을 변경 합니다 [setlocale](../preprocessor/setlocale.md) C 런타임 라이브러리의 함수입니다.
+이 예제에서 주 스레드는 두 개의 자식 스레드를 생성 합니다. 첫 번째 스레드인 스레드 A는를 호출 하 여 스레드별 로캘을 사용 하도록 설정 합니다 `_configthreadlocale(_ENABLE_PER_THREAD_LOCALE)` . 주 스레드는 물론 두 번째 스레드는 스레드 단위 로캘을 사용 하지 않습니다. 그런 다음 스레드 B는 C 런타임 라이브러리의 [setlocale](../preprocessor/setlocale.md) 함수를 사용 하 여 로캘을 변경 합니다.
 
-스레드 B는 스레드별 로캘을 사용할 수 없으므로 "프랑스어" 로캘을 사용 하 여 주 스레드 및 스레드 B에서 C 런타임 라이브러리 함수를 시작 합니다. 스레드는 스레드 단위 로캘을 사용 하기 때문에 "C" 로캘에서 사용 하는 스레드가 계속의 C 런타임 라이브러리 함수입니다. 또한 이후 [setlocale](../preprocessor/setlocale.md) 영향을 주지 않습니다는 C++ 표준 라이브러리 로캘 모든 C++ 표준 라이브러리 개체는 "C" 로캘에서 사용 하 여 계속 합니다.
+스레드 B는 스레드 단위 로캘을 사용 하도록 설정 되어 있지 않으므로 스레드 B의 C 런타임 라이브러리와 주 스레드의 함수는 "프랑스어" 로캘을 사용 하 여 시작 합니다. 스레드 a에서 스레드 단위 로캘을 사용할 수 있으므로 스레드 A의 C 런타임 라이브러리 함수는 "C" 로캘을 계속 사용 합니다. 또한 [setlocale](../preprocessor/setlocale.md) 은 c + + 표준 라이브러리 로캘에 영향을 주지 않으므로 모든 c + + 표준 라이브러리 개체는 계속 해 서 "c" 로캘을 사용 합니다.
 
 ```cpp
 // multithread_locale_3.cpp
@@ -332,11 +332,11 @@ unsigned __stdcall RunThreadB(void *params)
 [Thread main] locale::global is set to "C"
 ```
 
-## <a name="example"></a>예제
+## <a name="example-change-global-locale-without-per-thread-locale-enabled"></a>예: 스레드 단위 로캘을 사용 하지 않는 전역 로캘 변경
 
-이 예제에서는 main 메서드가 두 자식 스레드를 생성 합니다. 첫 번째 스레드의 스레드 A 호출 하 여 스레드별 로캘을 사용 하면 `_configthreadlocale(_ENABLE_PER_THREAD_LOCALE)`합니다. 두 번째 스레드가, 스레드 B 뿐만 아니라 주 스레드에서 스레드별 로캘을 사용 하지 마십시오. 스레드 B를 사용 하 여 로캘을 변경 합니다 [locale:: global](../standard-library/locale-class.md#global) 메서드를 C++ 표준 라이브러리.
+이 예제에서 주 스레드는 두 개의 자식 스레드를 생성 합니다. 첫 번째 스레드인 스레드 A는를 호출 하 여 스레드별 로캘을 사용 하도록 설정 합니다 `_configthreadlocale(_ENABLE_PER_THREAD_LOCALE)` . 주 스레드는 물론 두 번째 스레드는 스레드 단위 로캘을 사용 하지 않습니다. 그런 다음 스레드 B는 c + + 표준 라이브러리의 [locale:: global](../standard-library/locale-class.md#global) 메서드를 사용 하 여 로캘을 변경 합니다.
 
-스레드 B는 스레드별 로캘을 사용할 수 없으므로 "프랑스어" 로캘을 사용 하 여 주 스레드 및 스레드 B에서 C 런타임 라이브러리 함수를 시작 합니다. 스레드는 스레드 단위 로캘을 사용 하기 때문에 "C" 로캘에서 사용 하는 스레드가 계속의 C 런타임 라이브러리 함수입니다. 그러나 합니다 [locale:: global](../standard-library/locale-class.md#global) 메서드는 로캘을 "전역"으로 변경 모든 C++ 모든 스레드가의 표준 라이브러리 개체 "프랑스어" 로캘을 사용 하 여 시작 합니다.
+스레드 B는 스레드 단위 로캘을 사용 하도록 설정 되어 있지 않으므로 스레드 B의 C 런타임 라이브러리와 주 스레드의 함수는 "프랑스어" 로캘을 사용 하 여 시작 합니다. 스레드 a에서 스레드 단위 로캘을 사용할 수 있으므로 스레드 A의 C 런타임 라이브러리 함수는 "C" 로캘을 계속 사용 합니다. 그러나 [locale:: global](../standard-library/locale-class.md#global) 메서드가 로캘 "전역"을 변경 하므로 모든 스레드의 모든 c + + 표준 라이브러리 개체는 "프랑스어" 로캘을 사용 하기 시작 합니다.
 
 ```cpp
 // multithread_locale_4.cpp
@@ -435,9 +435,9 @@ unsigned __stdcall RunThreadB(void *params)
 [Thread main] locale::global is set to "French_France.1252"
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[레거시 코드에서의 다중 스레드 지원(Visual C++)](multithreading-support-for-older-code-visual-cpp.md)<br/>
+[이전 코드에 대 한 다중 스레딩 지원 (Visual C++)](multithreading-support-for-older-code-visual-cpp.md)<br/>
 [_beginthread, _beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md)<br/>
 [_configthreadlocale](../c-runtime-library/reference/configthreadlocale.md)<br/>
 [setlocale](../preprocessor/setlocale.md)<br/>

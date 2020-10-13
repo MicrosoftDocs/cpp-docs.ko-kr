@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - new keyword [C++]
 ms.assetid: 69fee812-1c28-4882-8fda-d1ad17860004
-ms.openlocfilehash: 81dd7483c49a699ac53ea53d33481fa6539d484c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0c3ed59262ec5ad061572d23c1166b2153cb16ca
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223657"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008575"
 ---
 # <a name="new-operator-c"></a>new 연산자 (C++)
 
@@ -70,7 +70,7 @@ delete *p;
 *initializer*<br/>
 초기화된 개체의 값을 제공합니다. 배열에 대한 이니셜라이저는 지정할 수 없습니다. 이 **`new`** 연산자는 클래스에 기본 생성자가 있는 경우에만 개체의 배열을 만듭니다.
 
-## <a name="example"></a>예제
+## <a name="example-allocate-and-free-a-character-array"></a>예: 문자 배열 할당 및 해제
 
 다음 코드 예제는 문자 배열 및 `CName` 클래스 개체를 할당한 다음 해제합니다.
 
@@ -115,7 +115,7 @@ int main() {
 }
 ```
 
-## <a name="example"></a>예제
+## <a name="example-new-operator"></a>예: `new` 연산자
 
 연산자의 배치 새로운 형태를 사용 하는 경우 **`new`** 할당 크기 외에 인수를 포함 하는 폼에는 생성자가 예외를 throw 하는 경우 컴파일러에서 연산자의 배치 형태를 지원 하지 않습니다 **`delete`** . 예를 들면 다음과 같습니다.
 
@@ -255,5 +255,5 @@ T *TObject =::new TObject;
 ## <a name="see-also"></a>참조
 
 [단항 연산자가 있는 식](../cpp/expressions-with-unary-operators.md)<br/>
-[C++ 키워드](../cpp/keywords-cpp.md)<br/>
+[키워드](../cpp/keywords-cpp.md)<br/>
 [new 및 delete 연산자](../cpp/new-and-delete-operators.md)

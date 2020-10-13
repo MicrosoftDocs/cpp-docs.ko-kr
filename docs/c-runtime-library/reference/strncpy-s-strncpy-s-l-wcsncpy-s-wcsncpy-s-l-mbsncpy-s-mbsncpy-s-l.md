@@ -54,12 +54,12 @@ helpviewer_keywords:
 - _tcsncpy_s function
 - wcsncpy_s_l function
 ms.assetid: a971c800-94d1-4d88-92f3-a2fe236a4546
-ms.openlocfilehash: 1fa2cc24f4ec610e1cc892ddd8d3bf8971ddf687
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 08921ff44d2d69ab77eb210b2123016ea61c4f67
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919287"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008281"
 ---
 # <a name="strncpy_s-_strncpy_s_l-wcsncpy_s-_wcsncpy_s_l-_mbsncpy_s-_mbsncpy_s_l"></a>strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l
 
@@ -168,7 +168,7 @@ errno_t _mbsncpy_s_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 성공 하면 0이 고, 잘림이 발생 하면 **STRUNCATE** , 그렇지 않으면 오류 코드입니다.
 
@@ -176,8 +176,8 @@ errno_t _mbsncpy_s_l(
 
 |*strDest*|*이면 numberofelements 이벤트가*|*strSource*|반환 값|*Strdest* 의 내용|
 |---------------|------------------------|-----------------|------------------|---------------------------|
-|**N**|any|any|**EINVAL**|수정 안 됨|
-|any|any|**N**|**EINVAL**|*Strdest*[0]을 0으로 설정 합니다.|
+|**NULL**|any|any|**EINVAL**|수정 안 됨|
+|any|any|**NULL**|**EINVAL**|*Strdest*[0]을 0으로 설정 합니다.|
 |any|0|any|**EINVAL**|수정 안 됨|
 |**NULL** 이 아님|너무 작음|any|**ERANGE**|*Strdest*[0]을 0으로 설정 합니다.|
 
@@ -187,7 +187,7 @@ errno_t _mbsncpy_s_l(
 
 위 단락의 설명에는 예외가 적용됩니다. *Count* 가 **_TRUNCATE**이면 *strsource* 에 맞는 만큼의 *strsource* 는 항상 추가 되는 종료 null에 대 한 공간을 유지 하면서 복사 됩니다.
 
-예를 들면 다음과 같습니다.
+예를 들면
 
 ```C
 char dst[5];
@@ -239,7 +239,7 @@ C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 �
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="example"></a>예제
+## <a name="example-copy-chars-to-a-buffer"></a>예: 문자를 버퍼에 복사 합니다.
 
 ```cpp
 // crt_strncpy_s_1.cpp
@@ -366,7 +366,7 @@ Invalid parameter handler invoked: (L"Buffer is too small" && 0)
     new contents of dest: ''
 ```
 
-## <a name="example"></a>예제
+## <a name="example-strncpy-and-strncpy_s"></a>예: strncpy 및 strncpy_s
 
 ```C
 // crt_strncpy_s_2.c
@@ -413,8 +413,8 @@ After strncpy_s (with null-termination):
 ## <a name="see-also"></a>참조
 
 [문자열 조작](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[멀티 바이트 문자 시퀀스 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[로캘](../../c-runtime-library/locale.md)<br/>
+[Multibyte-Character 시퀀스의 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbsnbcpy, _mbsnbcpy_l](mbsnbcpy-mbsnbcpy-l.md)<br/>
 [strcat_s, wcscat_s, _mbscat_s](strcat-s-wcscat-s-mbscat-s.md)<br/>
 [strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - concurrent_queue class, examples
 - concurrent_vector class, examples
 ms.assetid: bd00046d-e9b6-4ae1-b661-3995f671b867
-ms.openlocfilehash: cd120d1fbe0f73ed0974efda5a1aa643a1afde9d
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 361e0e32efb45468ba108ee975879f990ac98395
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77143002"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008334"
 ---
 # <a name="how-to-use-parallel-containers-to-increase-efficiency"></a>방법: 병렬 컨테이너를 사용하여 효율성 향상
 
@@ -19,37 +19,37 @@ ms.locfileid: "77143002"
 
 예제 코드는 소수 및 Carmichael 숫자 집합을 병렬로 계산 합니다. 그런 다음, 각 Carmichael 수에 대해 코드는 해당 숫자의 소수 부분을 계산 합니다.
 
-## <a name="example"></a>예제
+## <a name="example-determine-if-an-input-value-is-a-prime-number"></a>예: 입력 값이 소수 인지 확인
 
-다음 예에서는 입력 값이 소수 인지 여부를 확인 하는 `is_prime` 함수와 입력 값이 Carmichael number 인지 여부를 결정 하는 `is_carmichael` 함수를 보여 줍니다.
+다음 예에서는 `is_prime` 입력 값이 소수 인지 여부를 확인 하는 함수 및 `is_carmichael` 입력 값이 Carmichael number 인지 여부를 결정 하는 함수를 보여 줍니다.
 
 [!code-cpp[concrt-carmichael-primes#1](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-containers-to-increase-efficiency_1.cpp)]
 
-## <a name="example"></a>예제
+## <a name="example-compute-prime-and-carmichael-numbers"></a>예: Compute 소수 및 Carmichael 번호
 
-다음 예에서는 `is_prime` 및 `is_carmichael` 함수를 사용 하 여 소수 및 Carmichael 숫자 집합을 계산 합니다. 이 예제에서는 [동시성::p arallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) 및 [동시성::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for) 알고리즘을 사용 하 여 각 집합을 병렬로 계산 합니다. 병렬 알고리즘에 대 한 자세한 내용은 [병렬 알고리즘](../../parallel/concrt/parallel-algorithms.md)을 참조 하세요.
+다음 예에서는 및 함수를 사용 하 여 `is_prime` `is_carmichael` 소수 및 Carmichael 숫자 집합을 계산 합니다. 이 예제에서는 [동시성::p arallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) 및 [동시성::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for) 알고리즘을 사용 하 여 각 집합을 병렬로 계산 합니다. 병렬 알고리즘에 대 한 자세한 내용은 [병렬 알고리즘](../../parallel/concrt/parallel-algorithms.md)을 참조 하세요.
 
 이 예제에서는 [concurrency:: concurrent_queue](../../parallel/concrt/reference/concurrent-queue-class.md) 개체를 사용 하 여 Carmichael 번호 집합을 저장 합니다 .이는 나중에 해당 개체를 작업 큐로 사용 하기 때문입니다. 이는 나중에이 집합을 반복 하 여 프라임 요인을 찾기 때문에 [concurrency:: concurrent_vector](../../parallel/concrt/reference/concurrent-vector-class.md) 개체를 사용 하 여 소수 집합을 저장 합니다.
 
 [!code-cpp[concrt-carmichael-primes#2](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-containers-to-increase-efficiency_2.cpp)]
 
-## <a name="example"></a>예제
+## <a name="example-find-all-prime-factors-of-a-given-value"></a>예: 지정 된 값의 모든 소수 요소 찾기
 
-다음 예에서는 체험 나누기를 사용 하 여 지정 된 값의 모든 소수 요소를 찾는 `prime_factors_of` 함수를 보여 줍니다.
+다음 예에서는 `prime_factors_of` 체험 나누기를 사용 하 여 지정 된 값의 모든 소수 요소를 찾는 함수를 보여 줍니다.
 
-이 함수는 [concurrency::p arallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) 알고리즘을 사용 하 여 소수 컬렉션을 반복 합니다. 병렬 루프는 `concurrent_vector` 개체를 사용 하 여 결과에 소수 요소를 동시에 추가할 수 있습니다.
+이 함수는 [concurrency::p arallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) 알고리즘을 사용 하 여 소수 컬렉션을 반복 합니다. `concurrent_vector`개체를 사용 하면 병렬 루프에서 결과에 소수 요소를 동시에 추가할 수 있습니다.
 
 [!code-cpp[concrt-carmichael-primes#3](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-containers-to-increase-efficiency_3.cpp)]
 
-## <a name="example"></a>예제
+## <a name="example-processes-each-element-in-the-queue-of-carmichael-numbers"></a>예: Carmichael 번호의 큐에 있는 각 요소를 처리 합니다.
 
-이 예제에서는 `prime_factors_of` 함수를 호출 하 여 해당 소수 계수를 계산 함으로써 Carmichael 번호의 큐에 있는 각 요소를 처리 합니다. 작업 그룹을 사용 하 여이 작업을 병렬로 수행 합니다. 작업 그룹에 대 한 자세한 내용은 [작업 병렬 처리](../../parallel/concrt/task-parallelism-concurrency-runtime.md)를 참조 하세요.
+이 예제에서는 함수를 호출 하 여 Carmichael 수의 큐에 있는 각 요소를 처리 `prime_factors_of` 하 여 해당 소수 요소를 계산 합니다. 작업 그룹을 사용 하 여이 작업을 병렬로 수행 합니다. 작업 그룹에 대 한 자세한 내용은 [작업 병렬 처리](../../parallel/concrt/task-parallelism-concurrency-runtime.md)를 참조 하세요.
 
 이 예에서는 각 Carmichael number의 소수 요소가 4 개를 초과 하는 경우 각 숫자의 소수 요소를 인쇄 합니다.
 
 [!code-cpp[concrt-carmichael-primes#4](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-containers-to-increase-efficiency_4.cpp)]
 
-## <a name="example"></a>예제
+## <a name="example-finished-parallel-container-code-sample"></a>예: 완료 된 병렬 컨테이너 코드 샘플
 
 다음 코드에서는 병렬 컨테이너를 사용 하 여 Carmichael 숫자의 소수 부분을 계산 하는 전체 예제를 보여 줍니다.
 
@@ -65,11 +65,11 @@ Prime factors of 1050985 are: 5 13 19 23 37.
 
 ## <a name="compiling-the-code"></a>코드 컴파일
 
-예제 코드를 복사 하 여 Visual Studio 프로젝트에 붙여넣거나, `carmichael-primes.cpp` 이름이 지정 된 파일에 붙여 넣은 후 Visual Studio 명령 프롬프트 창에서 다음 명령을 실행 합니다.
+예제 코드를 복사 하 여 Visual Studio 프로젝트에 붙여넣거나 라는 파일에 붙여 넣은 `carmichael-primes.cpp` 후 Visual Studio 명령 프롬프트 창에서 다음 명령을 실행 합니다.
 
 > **cl.exe/EHsc carmichael-primes**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [병렬 컨테이너 및 개체](../../parallel/concrt/parallel-containers-and-objects.md)<br/>
 [작업 병렬 처리](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>

@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - partial specialization of class templates
 ms.assetid: f3c67c0b-3875-434a-b8d8-bb47e99cf4f0
-ms.openlocfilehash: 17f1f15a5356d760119123214e939a7dd2d1fbaf
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7f71c2c3862bd015ba3edcd17aeac85472eb2562
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223579"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008911"
 ---
 # <a name="template-specialization-c"></a>템플릿 특수화(C++)
 
@@ -19,7 +19,7 @@ ms.locfileid: "87223579"
 
 - 템플릿에 형식이 하나만 있지만 포인터, 참조, 멤버에 대한 포인터 또는 함수 포인터 형식에 대한 특수화가 필요한 경우. 특수화 자체는 여전히 가리켜지거나 참조된 형식에 대한 템플릿입니다.
 
-## <a name="example"></a>예제
+## <a name="example-partial-specialization-of-class-templates"></a>예제: 클래스 템플릿의 부분 특수화
 
 ```cpp
 // partial_specialization_of_class_templates.cpp
@@ -66,7 +66,7 @@ PTS<S*>::IsPointer == 1 PTS<S*>::IsPointerToDataMember ==0
 PTS<int S::*>::IsPointer == 0 PTS<int S::*>::IsPointerToDataMember == 1
 ```
 
-## <a name="example"></a>예제
+## <a name="example-partial-specialization-for-pointer-types"></a>예제: 포인터 형식에 대 한 부분 특수화
 
 형식을 사용 하는 템플릿 컬렉션 클래스가 있는 경우 `T` 포인터 형식을 사용 하는 부분 특수화를 만들 수 있습니다 `T*` . 다음 코드에서는 컬렉션 클래스 템플릿 `Bag`와 컬렉션이 포인터 형식을 배열에 복사하기 전에 역참조하는 포인터 형식에 대한 부분 특수화를 보여 줍니다. 그런 다음 컬렉션은 가리켜진 값을 저장합니다. 원래 템플릿을 사용했다면 포인터 자체만 컬렉션에 저장되고 데이터는 삭제나 수정에 취약한 상태가 되었을 것입니다. 이 컬렉션의 특수 포인터 버전에서는 `add` 메서드에서 null 포인터를 검사하는 코드가 추가되었습니다.
 
@@ -178,7 +178,7 @@ Null pointer!
 3 87 8 100
 ```
 
-## <a name="example"></a>예제
+## <a name="example-define-partial-specialization-so-one-type-is-int"></a>예: 부분 특수화를 정의 하 여 한 형식이 `int`
 
 다음 예제에서는 두 형식의 쌍을 사용 하는 템플릿 클래스를 정의한 다음 형식 중 하나를 사용 하도록 특수화 된 해당 템플릿 클래스의 부분 특수화를 정의 합니다 **`int`** . 특수화에서는 정수 기반의 간단한 거품 정렬을 구현하는 추가 정렬 메서드를 정의합니다.
 

@@ -39,12 +39,12 @@ helpviewer_keywords:
 - operator<= member [STL/CLR]
 - operator< member [STL/CLR]
 ms.assetid: fb48cb75-d5ef-47ce-b526-bf60dc86c552
-ms.openlocfilehash: 271bc01f5c8fd9dd07bfa03035ae3d0204ebd8e7
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: faf7f607f9433fa3e4813957b24220a5e66e1e49
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500597"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008619"
 ---
 # <a name="utility-stlclr"></a>utility(STL/CLR)
 
@@ -77,11 +77,9 @@ STL/CLR 헤더를 포함 `<cliext/utility>` 하 여 템플릿 클래스 `pair` �
 |[연산자> (쌍) (STL/CLR)](#op_gt)|페어링 보다 큼 비교입니다.|
 |[연산자>= (쌍) (STL/CLR)](#op_gteq)|쌍 보다 크거나 같음 비교입니다.|
 
-|함수|설명|
+|기능|설명|
 |--------------|-----------------|
 |[make_pair(STL/CLR)](#make_pair)|값 쌍의 쌍을 만듭니다.|
-
-## <a name="members"></a>멤버
 
 ## <a name="pair-stlclr"></a><a name="pair"></a> pair (STL/CLR)
 
@@ -103,7 +101,7 @@ template<typename Value1,
 *Value2*<br/>
 래핑된 두 번째 값의 형식입니다.
 
-## <a name="members"></a>멤버
+## <a name="members"></a>구성원
 
 |형식 정의|설명|
 |---------------------|-----------------|

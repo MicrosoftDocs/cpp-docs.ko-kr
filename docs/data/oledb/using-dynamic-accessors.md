@@ -5,12 +5,12 @@ helpviewer_keywords:
 - accessors [C++], dynamic
 - dynamic accessors
 ms.assetid: e5d5bfa6-2b1d-49d0-8ced-914666422431
-ms.openlocfilehash: eea1c6199fed5a4e6e331c1c76f34b96090b709a
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 4f42d6f20da819cf325cad06a04878b46e52352a
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509420"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008685"
 ---
 # <a name="using-dynamic-accessors"></a>동적 접근자 사용
 
@@ -22,7 +22,7 @@ ms.locfileid: "91509420"
 
 [Cdynamicaccessor](../../data/oledb/cdynamicaccessor-class.md) 를 사용 하면 데이터베이스 스키마 (데이터베이스의 기본 구조)에 대 한 지식이 없을 때 데이터 원본에 액세스할 수 있습니다. `CDynamicAccessor` 메서드는 열 이름, 개수, 데이터 형식 등의 열 정보를 가져옵니다. 이 열 정보를 사용 하 여 런타임에 동적으로 접근자를 만들 수 있습니다. 열 정보는이 클래스로 만들고 관리 하는 버퍼에 저장 됩니다. [GetValue](./cdynamicaccessor-class.md#getvalue) 메서드를 사용 하 여 버퍼에서 데이터를 가져옵니다.
 
-## <a name="example"></a>예제
+## <a name="example-cdynamic-accessors"></a>예: CDynamic 접근자
 
 ```cpp
 // Using_Dynamic_Accessors.cpp
@@ -94,7 +94,7 @@ int main(int argc, char* argv[] )
 
 `CDynamicStringAccessor`메서드를 사용 하 여 열 정보를 가져옵니다. 이 열 정보를 사용 하 여 런타임에 동적으로 접근자를 만들 수 있습니다. 열 정보는이 클래스에서 만들고 관리 하는 버퍼에 저장 됩니다. [Cdynamicstringaccessor](./cdynamicstringaccessor-class.md#getstring) :: GetString를 사용 하 여 버퍼에서 데이터를 가져오거나 [Cdynamicstringaccessor:: setstring](./cdynamicstringaccessor-class.md#setstring)을 사용 하 여 버퍼에 저장 합니다.
 
-## <a name="example"></a>예제
+## <a name="example-cdynamicstringaccessor"></a>예: CDynamicStringAccessor
 
 ```cpp
 // Using_Dynamic_Accessors_b.cpp
@@ -156,7 +156,7 @@ int main(int argc, char* argv[] )
 
 이 클래스를 사용 하 여 SQL Server 저장 프로시저를 실행 하 고 출력 매개 변수 값을 가져오는 방법을 보여 주는 예제는 GitHub의 [Microsoft VCSamples](https://github.com/Microsoft/VCSamples) 리포지토리에서 [dynamicconsumer](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/DynamicConsumer) 샘플 코드를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [접근자 사용](../../data/oledb/using-accessors.md)<br/>
 [CDynamicAccessor 클래스](../../data/oledb/cdynamicaccessor-class.md)<br/>

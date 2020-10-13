@@ -4,12 +4,12 @@ ms.date: 03/05/2018
 helpviewer_keywords:
 - move constructor [C++]
 ms.assetid: e75efe0e-4b74-47a9-96ed-4e83cfc4378d
-ms.openlocfilehash: 2c8fed15787ec4b347694d8c4e40bf7912f3421d
-ms.sourcegitcommit: d4da3693f83a24f840e320e35c24a4a07cae68e2
+ms.openlocfilehash: e57f67eeca93572b26ee03033cbe4dcf90431f78
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "83550773"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008880"
 ---
 # <a name="move-constructors-and-move-assignment-operators-c"></a>이동 생성자 및 이동 할당 연산자(C++)
 
@@ -168,7 +168,7 @@ private:
     return *this;
     ```
 
-## <a name="example"></a>예제
+## <a name="example-complete-move-constructor-and-assignment-operator"></a>예: 전체 이동 생성자 및 대입 연산자
 
 다음 예제에서는 `MemoryBlock` 클래스에 대한 완전한 이동 생성자와 이동 할당 연산자를 보여 줍니다.
 
@@ -217,7 +217,7 @@ MemoryBlock& operator=(MemoryBlock&& other) noexcept
 }
 ```
 
-## <a name="example"></a>예제
+## <a name="example-use-move-semantics-to-improve-performance"></a>예를 들어 이동 의미 체계를 사용 하 여 성능 향상
 
 다음 예제에서는 이동 의미 체계를 통해 애플리케이션의 성능을 향상시키는 방법을 보여 줍니다. 이 예제에서는 벡터 개체에 두 요소를 추가한 다음 기존의 두 요소 사이에 새 요소를 삽입합니다. `vector`클래스는 이동 의미 체계를 사용 하 여 벡터의 요소를 복사 하는 대신 이동 하 여 삽입 작업을 효율적으로 수행 합니다.
 
@@ -309,7 +309,7 @@ MemoryBlock(MemoryBlock&& other) noexcept
 
 [Std:: move](../standard-library/utility-functions.md#move) 함수는 lvalue `other` 를 rvalue로 변환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [Rvalue 참조 선언자: &&](../cpp/rvalue-reference-declarator-amp-amp.md)<br/>
 [std:: move](../standard-library/utility-functions.md#move)

@@ -2,18 +2,18 @@
 title: 로컬로 선언된 이름에 대한 이름 확인
 ms.date: 11/04/2016
 ms.assetid: 743b88f3-de11-48f4-ae83-931449ea3886
-ms.openlocfilehash: 2c75c09308f6ba07039de4d2811b9bedaba71e44
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 0216154b55e9742c2c4f3f5df7e6d612e16ec9b1
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80177900"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008924"
 ---
 # <a name="name-resolution-for-locally-declared-names"></a>로컬로 선언된 이름에 대한 이름 확인
 
 템플릿 인수를 사용하거나 사용하지 않고 템플릿 이름 자체를 참조할 수 있습니다. 클래스 템플릿의 범위에서 이름 자체는 템플릿을 나타냅니다. 템플릿 특수화 또는 부분 특수화의 범위에서 이름만 특수화 또는 부분 특수화를 참조합니다. 템플릿의 다른 특수화나 부분 특수화도 해당 템플릿 인수와 함께 참조될 수 있습니다.
 
-## <a name="example"></a>예제
+## <a name="example-specialization-versus-partial-specialization"></a>예: 특수화 및 부분 특수화
 
 다음 코드는 클래스 템플릿의 이름 A가 특수화 또는 부분 특수화의 범위에서 다르게 해석된다는 것을 보여 줍니다.
 
@@ -35,7 +35,7 @@ template<> class A<int> {
 };
 ```
 
-## <a name="example"></a>예제
+## <a name="example-name-conflict-between-template-parameter-and-object"></a>예: 템플릿 매개 변수와 개체 간 이름 충돌
 
 템플릿 매개 변수와 다른 개체 사이에 이름이 충돌할 경우 템플릿 매개 변수를 숨길 수도 있고 숨기지 않을 수도 있습니다. 다음 규칙은 우선 순위를 결정하는 데 도움이 됩니다.
 
@@ -55,7 +55,7 @@ int main() {
 }
 ```
 
-## <a name="example"></a>예제
+## <a name="example-define-member-function-outside-class-template"></a>예제: 클래스 템플릿 외부에서 멤버 함수 정의
 
 템플릿의 멤버 함수를 클래스 템플릿 외부에서 정의할 때 다른 템플릿 매개 변수 이름을 사용할 수 있습니다. 템플릿 멤버 함수 정의가 선언이 템플릿 매개 변수에 대해 사용하는 이름과 다른 이름을 사용하고 정의에 사용된 이름이 선언의 다른 멤버와 충돌하는 경우 템플릿 선언의 멤버가 우선합니다.
 
@@ -90,7 +90,7 @@ int main() {
 Z::Z()
 ```
 
-## <a name="example"></a>예제
+## <a name="example-define-template-or-member-function-outside-namespace"></a>예: 네임 스페이스 외부에서 템플릿 또는 멤버 함수 정의
 
 템플릿 함수 또는 멤버 함수를 템플릿을 선언한 네임스페이스 외부에서 정의할 때 템플릿 인수는 네임스페이스의 다른 멤버 이름보다 우선합니다.
 
@@ -124,7 +124,7 @@ int main() {
 C<T>::g
 ```
 
-## <a name="example"></a>예제
+## <a name="example-base-class-or-member-name-hides-template-argument"></a>예: 기본 클래스 또는 멤버 이름이 템플릿 인수를 숨깁니다.
 
 템플릿 클래스 선언 외부 정의에서 템플릿 클래스에 템플릿 인수에 종속되지 않는 기본 클래스가 있고 기본 클래스 또는 해당 멤버 중 하나가 템플릿 인수와 같은 이름을 가진 경우 기본 클래스 또는 멤버 이름은 템플릿 인수를 숨깁니다.
 
@@ -162,6 +162,6 @@ Base
 1
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [이름 확인](../cpp/templates-and-name-resolution.md)

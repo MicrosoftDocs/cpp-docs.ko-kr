@@ -6,12 +6,12 @@ helpviewer_keywords:
 - __nullptr keyword (C++)
 - nullptr keyword [C++]
 ms.assetid: 594cfbf7-06cb-4366-9ede-c0b703e1d095
-ms.openlocfilehash: 5e7a5d3f9a42968dee35f82d3f19d0fdb6da5d0c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7e9cf88fdc0444f736f1cfac0d06dfc675a162cc
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214232"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008352"
 ---
 # <a name="nullptr--ccli-and-ccx"></a>nullptr(C++/CLI 및 C++/CX)
 
@@ -51,7 +51,7 @@ ms.locfileid: "87214232"
 
 핸들을 0으로 초기화할 수 없습니다. 만 **`nullptr`** 사용할 수 있습니다. 개체 핸들에 상수 0을 할당하면 boxed `Int32` 및 `Object^`로의 캐스트가 생성됩니다.
 
-## <a name="example"></a>예제
+## <a name="example-nullptr-keyword"></a>예: `nullptr` 키워드
 
 다음 코드 예제에서는 **`nullptr`** 핸들, 네이티브 포인터 또는 함수 인수를 사용할 수 있는 모든 위치에 키워드를 사용할 수 있는 방법을 보여 줍니다. 이 예에서는 키워드를 사용 하 여 참조를 확인 하는 방법을 보여 줍니다 **`nullptr`** .
 
@@ -80,7 +80,7 @@ int main() {
 }
 ```
 
-## <a name="example"></a>예제
+## <a name="example-use-nullptr-and-zero-interchangeably"></a>예: `nullptr` 및 0을 교대로 사용
 
 다음 코드 예제에서는 **`nullptr`** 및 0을 네이티브 포인터에서 교대로 사용할 수 있음을 보여 줍니다.
 
@@ -119,7 +119,7 @@ pMyClass == nullptr
 pMyClass == 0
 ```
 
-## <a name="example"></a>예제
+## <a name="example-interpret-nullptr-as-a-handle"></a>예: `nullptr` 핸들로 해석
 
 다음 코드 예제에서는가 모든 형식에 **`nullptr`** 대 한 핸들 또는 임의의 형식에 대 한 네이티브 포인터로 해석 됨을 보여 줍니다. 여러 형식에 대한 핸들이 있는 함수 오버로드의 경우 모호성 오류가 생성됩니다. 는 **`nullptr`** 형식으로 명시적으로 캐스팅 되어야 합니다.
 
@@ -137,7 +137,7 @@ void f_null() {
 }
 ```
 
-## <a name="example"></a>예제
+## <a name="example-cast-nullptr"></a>예: Cast `nullptr`
 
 다음 코드 예제에서는 캐스팅이 허용 되 **`nullptr`** 고 값을 포함 하는 캐스트 형식에 대 한 포인터 또는 핸들을 반환 하는 방법을 보여 줍니다 **`nullptr`** .
 
@@ -158,7 +158,7 @@ int main() {
 }
 ```
 
-## <a name="example"></a>예제
+## <a name="example-pass-nullptr-as-a-function-parameter"></a>예: `nullptr` 함수 매개 변수로 전달
 
 다음 코드 예제에서는를 **`nullptr`** 함수 매개 변수로 사용할 수 있음을 보여 줍니다.
 
@@ -179,7 +179,7 @@ int main() {
 test
 ```
 
-## <a name="example"></a>예제
+## <a name="example-default-initialization"></a>예: 기본 초기화
 
 다음 코드 예제에서는 핸들이 선언 되 고 명시적으로 초기화 되지 않은 경우 기본적으로로 초기화 됨을 보여 줍니다 **`nullptr`** .
 
@@ -206,7 +206,7 @@ int main() {
 NULL
 ```
 
-## <a name="example"></a>예제
+## <a name="example-assign-nullptr-to-a-native-pointer"></a>예: `nullptr` 네이티브 포인터에 할당
 
 다음 코드 예제에서는를 사용 하 여 **`nullptr`** 컴파일할 때를 네이티브 포인터에 할당할 수 있음을 보여 줍니다 `/clr` .
 
@@ -223,7 +223,7 @@ int main() {
 
 컴파일러 옵션: (필수 아님, 및를 비롯 한 모든 코드 생성 옵션에서 지원 됨 `/ZW` `/clr` )
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [.NET 및 UWP 용 구성 요소 확장](component-extensions-for-runtime-platforms.md)<br/>
 [nullptr](../cpp/nullptr.md)

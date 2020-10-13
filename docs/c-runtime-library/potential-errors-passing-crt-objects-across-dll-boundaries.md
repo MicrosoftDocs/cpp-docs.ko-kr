@@ -6,12 +6,12 @@ ms.topic: conceptual
 helpviewer_keywords:
 - DLL conflicts [C++]
 ms.assetid: c217ffd2-5d9a-4678-a1df-62a637a96460
-ms.openlocfilehash: f6d831ac8b86be8a6669e8ee6c66da64507d129f
-ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
+ms.openlocfilehash: 2d42803b5eca7a43f122d209b7d9e2d4e45c38de
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91590188"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008934"
 ---
 # <a name="potential-errors-passing-crt-objects-across-dll-boundaries"></a>DLL 경계를 넘어 CRT 개체를 전달할 때 발생할 수 있는 오류
 
@@ -33,9 +33,9 @@ Crt 라이브러리의 각 복사본에는 자체 힙 관리자가 있으므로 
 
 DLL 및 해당 클라이언트는 일반적으로 로드 타임에 둘 다 동일한 버전의 CRT DLL에 연결된 경우에만 동일한 CRT 라이브러리 복사본을 사용합니다. Visual Studio 2015 및 나중에 Windows 10에서 사용 되는 유니버설 CRT 라이브러리의 DLL 버전은 이제 중앙에서 배포 된 Windows 구성 요소 (ucrtbase.dll) 이므로 Visual Studio 2015 이상 버전을 사용 하 여 빌드된 앱에서 동일 합니다. 그러나 CRT 코드가 동일한 경우에도 하나의 힙에 할당 된 메모리를 다른 힙을 사용 하는 구성 요소에 제공할 수 없습니다.
 
-## <a name="example"></a>예제
+## <a name="example-pass-file-handle-across-dll-boundary"></a>예: DLL 경계를 넘어 파일 핸들을 전달 합니다.
 
-### <a name="description"></a>Description
+### <a name="description"></a>설명
 
 이 예제에서는 DLL 경계를 넘어 파일 핸들을 전달합니다.
 
@@ -75,9 +75,9 @@ int main(void)
 this is a string
 ```
 
-## <a name="example"></a>예제
+## <a name="example-pass-environment-variables-across-dll-boundary"></a>예: DLL 경계를 넘어 환경 변수 전달
 
-### <a name="description"></a>Description
+### <a name="description"></a>설명
 
 이 예제에서는 DLL 경계를 넘어 환경 변수를 전달합니다.
 
@@ -128,6 +128,6 @@ CRT 복사본이 하나만 사용 되도록 DLL과 .exe 파일을 모두 빌드�
 New MYLIB variable is: c:\mylib;c:\yourlib
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md)

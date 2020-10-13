@@ -26,12 +26,12 @@ helpviewer_keywords:
 - exception handling, changing
 - _set_se_translator function
 ms.assetid: 280842bc-d72a-468b-a565-2d3db893ae0f
-ms.openlocfilehash: f1c9446f9c3f0d637ea53d54584258959677b339
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9de0c62b9e9a0bca0753d31ef64396e00c379253
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232419"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008622"
 ---
 # <a name="_set_se_translator"></a>_set_se_translator
 
@@ -50,7 +50,7 @@ _se_translator_function _set_se_translator(
 *seTransFunction*<br/>
 작성하는 C 구조적 예외 변환기 함수에 대한 포인터입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 이전 함수를 나중에 복원할 수 있도록 **_set_se_translator**에서 등록 한 이전 변환기 함수에 대 한 포인터를 반환 합니다. 이전 함수를 설정 하지 않은 경우 반환 값을 사용 하 여 기본 동작을 복원할 수 있습니다. 이 값은 일 수 있습니다 **`nullptr`** .
 
@@ -84,7 +84,7 @@ typedef void (__cdecl *_se_translator_function)(unsigned int, struct _EXCEPTION_
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="example"></a>예제
+## <a name="example-catch-__try-exception-error"></a>예: Catch __try 예외 오류
 
 이 샘플은 호출을 래핑하여 구조화 된 예외 변환기를 설정 하 고 RAII 클래스에서 이전 항목을 복원 `Scoped_SE_Translator` 합니다. 이 클래스를 사용 하 여 범위 고유의 번역기를 단일 선언으로 도입할 수 있습니다. 클래스 소멸자는 컨트롤이 범위를 벗어날 때 원래 변환기를 복원 합니다.
 
@@ -157,7 +157,7 @@ In __finally
 Caught a __try exception, error c0000094.
 ```
 
-## <a name="example"></a>예제
+## <a name="example-catch-se_exception-error"></a>예: Catch SE_Exception 오류
 
 **_Set_se_translator** 에서 제공 하는 기능을 관리 코드에서 사용할 수는 없지만 네이티브 코드가를 사용 하 여 표시 되는 한 **/clr** 스위치를 사용 하 여 컴파일하는 경우에도 네이티브 코드에서이 매핑을 사용할 수 있습니다 `#pragma unmanaged` . 매핑될 관리 코드에서 구조적 예외가 throw 되는 경우 예외를 생성 하 고 처리 하는 코드를로 표시 해야 합니다 `#pragma unmanaged` . 다음 코드에서는 가능한 사용법을 보여 줍니다. 자세한 내용은 [Pragma 지시문 및 __Pragma 키워드](../../preprocessor/pragma-directives-and-the-pragma-keyword.md)를 참조하세요.
 
@@ -230,7 +230,7 @@ int main() {
 Caught SE_Exception, error c0000094
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [예외 처리 루틴](../../c-runtime-library/exception-handling-routines.md)<br/>
 [set_terminate](set-terminate-crt.md)<br/>

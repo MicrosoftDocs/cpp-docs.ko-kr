@@ -5,12 +5,12 @@ ms.topic: reference
 helpviewer_keywords:
 - custom attributes, parameter types
 ms.assetid: d9f127a3-7f08-456f-acc6-256805632712
-ms.openlocfilehash: c7b219ddad939aab7d6093787dc2fe4131ccced5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cf33014c455bef145f7b7ec7ee353f27d1157f24
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225165"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008598"
 ---
 # <a name="attribute-parameter-types--ccli-and-ccx"></a>특성 매개 변수 형식(C++/CLI 및 C++/CX)
 
@@ -32,7 +32,7 @@ ms.locfileid: "87225165"
 
 - **`wchar_t`**
 
-- **`char*`** 또는 `wchar_t*` 또는`System::String*`
+- **`char*`** 또는 `wchar_t*` 또는 `System::String*`
 
 - `System::Type ^`
 
@@ -40,7 +40,7 @@ ms.locfileid: "87225165"
 
 - **`enum`**
 
-## <a name="example"></a>예제
+## <a name="example-attribute-parameter-types"></a>예: 특성 매개 변수 형식
 
 ### <a name="code"></a>코드
 
@@ -65,7 +65,7 @@ ref struct MyStruct {
 };
 ```
 
-## <a name="example"></a>예제
+## <a name="example-unnamed-arguments-precede-named-arguments"></a>예: 명명 되지 않은 인수는 명명 된 인수 앞에 옵니다.
 
 ### <a name="description"></a>설명
 
@@ -99,7 +99,7 @@ ref class ClassC {};   // Positional argument
 ref class ClassD {};   // Positional and named
 ```
 
-## <a name="example"></a>예제
+## <a name="example-one-dimensional-array-attribute-parameter"></a>예: 1 차원 배열 특성 매개 변수
 
 ### <a name="description"></a>설명
 
@@ -122,6 +122,6 @@ public ref struct ABC : public Attribute {
 ref struct AStruct{};
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [사용자 정의 특성](user-defined-attributes-cpp-component-extensions.md)

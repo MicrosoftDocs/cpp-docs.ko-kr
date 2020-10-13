@@ -31,12 +31,12 @@ helpviewer_keywords:
 - files [C++], translation
 - setmode function
 ms.assetid: 996ff7cb-11d1-43f4-9810-f6097182642a
-ms.openlocfilehash: 1995d54e972f99543773fff374e56c0dd7cf4988
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: abedba6f1d414191732859e3e44b54cc16acc4e9
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915803"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008415"
 ---
 # <a name="_setmode"></a>_setmode
 
@@ -59,7 +59,7 @@ int _setmode (
 *mode*<br/>
 새 변환 모드입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 성공하면 이전 변환 모드를 반환합니다.
 
@@ -74,7 +74,7 @@ int _setmode (
 이 문서의 뒷부분에 나오는 두 번째 예제에서 설명한 대로 **_O_U16TEXT**, **_O_U8TEXT**또는 **_O_WTEXT** 를 전달 하 여 유니코드 모드를 사용 하도록 설정할 수도 있습니다.
 
 > [!CAUTION]
-> 유니코드 모드는 와이드 인쇄 기능 (예: `wprintf`)을 위한 것 이며 좁은 인쇄 함수에는 지원 되지 않습니다. 유니코드 모드 스트림에서 좁은 인쇄 함수를 사용 하면 어설션이 트리거됩니다.
+> 유니코드 모드는 와이드 인쇄 기능 (예:)을 위한 것 `wprintf` 이며 좁은 인쇄 함수에는 지원 되지 않습니다. 유니코드 모드 스트림에서 좁은 인쇄 함수를 사용 하면 어설션이 트리거됩니다.
 
 **_setmode** 은 일반적으로 **stdin** 및 **stdout**의 기본 변환 모드를 수정 하는 데 사용 되지만 모든 파일에서 사용할 수 있습니다. 스트림의 파일 설명자에 **_setmode** 를 적용 하는 경우 스트림에 대 한 입력 또는 출력 작업을 수행 하기 전에 **_setmode** 를 호출 합니다.
 
@@ -91,7 +91,7 @@ int _setmode (
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="example"></a>예제
+## <a name="example-use-_setmode-to-change-stdin"></a>예: _setmode을 사용 하 여 stdin 변경
 
 ```C
 // crt_setmode.c
@@ -119,7 +119,7 @@ int main( void )
 'stdin' successfully changed to binary mode
 ```
 
-## <a name="example"></a>예제
+## <a name="example-use-_setmode-to-change-stdout"></a>예: _setmode을 사용 하 여 stdout 변경
 
 ```C
 // crt_setmodeunicode.c

@@ -26,12 +26,12 @@ helpviewer_keywords:
 - malloca function
 - _malloca function
 ms.assetid: 293992df-cfca-4bc9-b313-0a733a6bb936
-ms.openlocfilehash: d4604a6e2dfb00502e3c942c9735a077e1632843
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 64bed4dac2bbaeb60c7b04a600af38f455caf08d
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232497"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008269"
 ---
 # <a name="_malloca"></a>_malloca
 
@@ -50,7 +50,7 @@ void *_malloca(
 *size*<br/>
 스택에서 할당할 바이트입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 **_Malloca** 루틴은 할당 된 **`void`** 공간에 대 한 포인터를 반환 합니다 .이는 모든 형식의 개체 저장소에 적절 하 게 정렬 됩니다. *Size* 가 0 인 경우 **_malloca** 길이가 0 인 항목을 할당 하 고 해당 항목에 대 한 유효한 포인터를 반환 합니다.
 
@@ -81,7 +81,7 @@ EH (예외 처리기)에서 **_malloca** 를 명시적으로 호출 하는 데 �
 |-------------|---------------------|
 |**_malloca**|\<malloc.h>|
 
-## <a name="example"></a>예제
+## <a name="example-malloca"></a>예: malloca
 
 ```C
 // crt_malloca_simple.c
@@ -101,7 +101,7 @@ int main()
 }
 ```
 
-## <a name="example"></a>예제
+## <a name="example-malloca-exception"></a>예: malloca exception
 
 ```C
 // crt_malloca_exception.c
@@ -173,7 +173,7 @@ int main()
 Enter the number of bytes to allocate using _malloca: 1000
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [메모리 할당](../../c-runtime-library/memory-allocation.md)<br/>
 [calloc](calloc.md)<br/>
