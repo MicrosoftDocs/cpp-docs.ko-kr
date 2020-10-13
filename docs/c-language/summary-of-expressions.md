@@ -74,7 +74,7 @@ ms.locfileid: "87220836"
 
 *shift-expression*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*additive-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*shift-expression*  **\<\<**  *additive-expression*<br/> &nbsp;&nbsp;&nbsp;&nbsp;* shift-expression*  **>>**  *additive-expression*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*shift-expression*  **\<\<**  *additive-expression*<br/> &nbsp;&nbsp;&nbsp;&nbsp;* shift-expression*  **>>**  *additive-expression*
 
 *relational-expression*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*shift-expression*<br/>
