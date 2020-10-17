@@ -6,12 +6,12 @@ helpviewer_keywords:
 - generic interfaces
 - interfaces, generic [C++}
 ms.assetid: f3da788a-ba83-4db7-9dcf-9b95a8fb9d1a
-ms.openlocfilehash: f5a74eaafa7ff348079ec367a7c2318f86081f15
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 61ab514d244c8b41d467d382fa97e30556ccbb32
+ms.sourcegitcommit: ced5ff1431ffbd25b20d106901955532723bd188
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218028"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92135530"
 ---
 # <a name="generic-interfaces-ccli"></a>제네릭 인터페이스(C++/CLI)
 
@@ -59,7 +59,7 @@ ms.locfileid: "87218028"
 *declarators*<br/>
 (선택 사항) 이 형식을 기반으로 하는 변수 선언입니다.
 
-## <a name="example"></a>예제
+## <a name="example-how-to-declare-and-instantiate-a-generic-interface"></a>예: 제네릭 인터페이스를 선언 하 고 인스턴스화하는 방법
 
 다음 예제에서는 제네릭 인터페이스를 선언하고 인스턴스화하는 방법을 보여 줍니다. 예제에서는 제네릭 인터페이스 `IList<ItemType>`을 선언합니다. 그런 다음, 두 제네릭 클래스 `List1<ItemType>` 및 `List2<ItemType>`에서 서로 다른 구현을 사용하여 구현합니다.
 
@@ -236,7 +236,7 @@ Array List
 List2
 ```
 
-## <a name="example"></a>예제
+## <a name="example-declare-a-generic-interface"></a>예: 제네릭 인터페이스 선언
 
 이 예제에서는 제네릭 인터페이스 `IMyGenIface`와 `IMyGenIface`를 특수화하는, 제네릭이 아닌 두 인터페이스 `IMySpecializedInt` 및 `ImySpecializedString`을 선언합니다. 그런 다음, 두 클래스 `MyIntClass` 및 `MyStringClass`에서 특수화된 두 인터페이스를 구현합니다. 예제에서는 제네릭 인터페이스를 특수화하고, 제네릭 인터페이스와 제네릭이 아닌 인터페이스를 인스턴스화하고, 인터페이스에서 명시적으로 구현된 멤버를 호출하는 방법을 보여 줍니다.
 

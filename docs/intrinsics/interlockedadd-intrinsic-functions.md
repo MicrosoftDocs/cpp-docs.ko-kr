@@ -26,12 +26,12 @@ helpviewer_keywords:
 - _InterlockedAdd_acq intrinsic
 - _InterlockedAdd64_rel intrinsic
 ms.assetid: 3d319603-ea9c-4fdd-ae61-e52430ccc3b1
-ms.openlocfilehash: efe1444273f17c8f0544d2c51b98923169032e61
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: c611a22e696b9dda0c6910cd4aac84399cc7d20a
+ms.sourcegitcommit: ced5ff1431ffbd25b20d106901955532723bd188
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90683899"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92135556"
 ---
 # <a name="_interlockedadd-intrinsic-functions"></a>_InterlockedAdd 내장 함수
 
@@ -90,7 +90,7 @@ __int64 _InterlockedAdd64_rel(
 
 ## <a name="requirements"></a>요구 사항
 
-|Intrinsic|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`_InterlockedAdd`|ARM, ARM64|
 |`_InterlockedAdd_acq`|ARM, ARM64|
@@ -109,7 +109,7 @@ __int64 _InterlockedAdd64_rel(
 
 이러한 루틴은 내장 함수로만 사용할 수 있습니다.
 
-## <a name="examples"></a>예제
+## <a name="example-_interlockedadd"></a>예: `_InterlockedAdd`
 
 ```cpp
 // interlockedadd.cpp
@@ -130,11 +130,13 @@ int main()
 }
 ```
 
-## <a name="output"></a>출력
+## <a name="output-_interlockedadd"></a>출력 `_InterlockedAdd`
 
 ```Output
 0xffffff00 0xff0000 0xffffff00
 ```
+
+## <a name="example-_interlockedadd64"></a>예: `_InterlockedAdd64`
 
 ```cpp
 // interlockedadd64.cpp
@@ -158,7 +160,7 @@ int main()
 }
 ```
 
-## <a name="output"></a>출력
+## <a name="output-_interlockedadd64"></a>출력 `_InterlockedAdd64`
 
 ```Output
 ff0000000000 + ff0000ffffffff = ffff00ffffffff
