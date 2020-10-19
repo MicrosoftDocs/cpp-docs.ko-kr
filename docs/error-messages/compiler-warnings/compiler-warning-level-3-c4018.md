@@ -1,39 +1,52 @@
 ---
 title: 컴파일러 경고 (수준 3) C4018
-ms.date: 11/04/2016
+description: Microsoft C/c + + 컴파일러 경고 C4018, 해당 원인 및 해결 방법
+ms.date: 10/16/2020
 f1_keywords:
 - C4018
 helpviewer_keywords:
 - C4018
-ms.assetid: 6e8cbb04-d914-4319-b431-cbc2fbe40eb1
-ms.openlocfilehash: f5708a9f52b6fc8206094454c352710199437f27
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: b9d01f6b733c2ca18880aa6f4b6fca9771f8123f
+ms.sourcegitcommit: f19f02f217b80804ab321d463c76ce6f681abcc6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80161700"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92176180"
 ---
 # <a name="compiler-warning-level-3-c4018"></a>컴파일러 경고 (수준 3) C4018
 
-' expression ': signed/unsigned가 일치 하지 않습니다.
+> '*token*': signed/unsigned가 일치 하지 않습니다.
 
-부호 있는 숫자와 부호 없는 숫자를 비교 하려면 컴파일러가 부호 있는 값을 unsigned로 변환 해야 합니다.
+*토큰* 연산자를 사용 하 여 **`signed`** 및 숫자를 비교 하 고 **`unsigned`** 컴파일러에서 값을로 변환 해야 합니다 **`signed`** **`unsigned`** .
 
-서명 및 서명 되지 않은 형식을 테스트할 때 두 가지 형식 중 하나를 캐스팅 하는 경우이 경고를 해결할 수 있습니다.
+## <a name="remarks"></a>설명
 
-다음 샘플에서는 C4018를 생성 합니다.
+이 경고를 해결 하는 한 가지 방법은 및 형식을 비교할 때 두 가지 형식 중 하나를 캐스팅 하는 것입니다 **`signed`** **`unsigned`** .
+
+## <a name="example"></a>예제
+
+이 샘플에서는 C4018를 생성 하 고 해결 방법을 보여 줍니다.
 
 ```cpp
 // C4018.cpp
-// compile with: /W3
+// compile with: cl /EHsc /W4 C4018.cpp
 int main() {
-   unsigned int uc = 0;
-   int c = 0;
-   unsigned int c2 = 0;
+    unsigned int uc = 0;
+    int c = 0;
+    unsigned int c2 = c; // implicit conversion
 
-   if (uc < c) uc = 0;   // C4018
+    if (uc < c)           // C4018
+        uc = 0;
 
-   // OK
-   if (uc == c2) uc = 0;
+    if (uc < unsigned(c)) // OK
+        uc = 0;
+
+    if (uc < c2)          // Also OK
+       uc = 0;
 }
 ```
+
+## <a name="see-also"></a>참고 항목
+
+[컴파일러 경고 (수준 4) C4388](c4388.md)\
+[컴파일러 경고 (수준 4) C4389](compiler-warning-level-4-c4389.md)
