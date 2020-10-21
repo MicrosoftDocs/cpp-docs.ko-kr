@@ -434,6 +434,8 @@
                   href: ../c-language/inline-functions.md
                 - name: 인라인 어셈블러 (C)
                   href: ../c-language/inline-assembler-c.md
+                - name: _Noreturn(C)
+                  href: ../c-language/noreturn.md
             - name: DLL 가져오기 및 내보내기 함수
               items:
                 - name: DLL 가져오기 및 내보내기 함수
