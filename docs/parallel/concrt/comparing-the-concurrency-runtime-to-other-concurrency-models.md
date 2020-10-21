@@ -5,11 +5,11 @@ helpviewer_keywords:
 - Concurrency Runtime, compared to other models
 ms.assetid: d8b9a1f4-f15f-43c3-a5b4-c0991edf9c86
 ms.openlocfilehash: 5bc6691f6d0b166bb3084091ee6af70474937568
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.sourcegitcommit: 19016630f9d35f365e9ba249e0f3617515d7ca33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79427472"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92274697"
 ---
 # <a name="comparing-the-concurrency-runtime-to-other-concurrency-models"></a>동시성 런타임과 기타 동시성 모델 비교
 
@@ -19,7 +19,7 @@ ms.locfileid: "79427472"
 
 다른 동시성 모델을 사용하는 기존 애플리케이션을 보완하기 위해 동시성 런타임의 기능 및 생산성 이점을 사용할 수 있습니다. 여러 작업 스케줄러가 같은 컴퓨팅 리소스에 대해 경쟁하는 경우 동시성 런타임에서 부하 분산을 보장할 수 없습니다. 그러나 작업이 겹치지 않을 경우 이 효과는 최소화됩니다.
 
-## <a name="top"></a> 섹션
+## <a name="sections"></a><a name="top"></a> 섹션이
 
 - [선점형 일정을 협조적 일정과 비교](#models)
 
@@ -27,7 +27,7 @@ ms.locfileid: "79427472"
 
 - [동시성 런타임을 OpenMP와 비교](#openmp)
 
-## <a name="models"></a> 선점형 일정을 협조적 일정과 비교
+## <a name="comparing-preemptive-scheduling-to-cooperative-scheduling"></a><a name="models"></a> 선점형 일정을 협조적 일정과 비교
 
 선점형 일정 모델과 협조적 일정 모델은 여러 작업이 프로세서나 하드웨어 스레드 같은 컴퓨팅 리소스를 공유하도록 해주는 두 가지 일반적인 방법입니다.
 
@@ -49,9 +49,9 @@ ms.locfileid: "79427472"
 
 협조적 일정이 모든 일정 문제를 해결하지는 못합니다. 예를 들어 다른 작업에 공정하게 양보하지 않는 작업은 사용 가능한 컴퓨팅 리소스를 모두 소비함으로써 다른 작업이 진행되는 것을 방해할 수 있습니다. 동시성 런타임은 협조적 일정의 효율성 이점을 사용하여 선점형 일정의 공정성 보장을 보완합니다. 기본적으로 동시성 런타임은 작업 가로채기 알고리즘을 사용하는 협조적 스케줄러를 제공하여 컴퓨팅 리소스 간에 작업을 효율적으로 배포합니다. 하지만 동시성 런타임 스케줄러는 또한 운영 체제의 선점형 스케줄러를 사용하여 애플리케이션 간에 리소스를 공정하게 배포합니다. 스레드 실행을 세부적으로 제어하기 위해 애플리케이션에서 사용자 지정 스케줄러 및 스케줄러 정책을 만들 수 있습니다.
 
-[[맨 위로 이동](#top)]
+[[맨 위로](#top)이동]
 
-## <a name="winapi"></a> 동시성 런타임을 Windows API와 비교
+## <a name="comparing-the-concurrency-runtime-to-the-windows-api"></a><a name="winapi"></a> Windows API와 동시성 런타임 비교
 
 Windows API(이전의 Win32)라고도 하는 Microsoft Windows 애플리케이션 프로그래밍 인터페이스는 애플리케이션에서 동시성을 가능하게 하는 프로그래밍 모델을 제공합니다. 동시성 런타임은 Windows API를 기반으로 구축되어 기본 운영 체제에서 사용할 수 없는 추가 프로그래밍 모델을 제공합니다.
 
@@ -79,9 +79,9 @@ Windows 7 및 Windows Server 2008 R2에서는 운영 체제가 동시성 및 확
 
 [base.user-mode_scheduling](/windows/win32/procthread/user-mode-scheduling)
 
-[[맨 위로 이동](#top)]
+[[맨 위로](#top)이동]
 
-## <a name="openmp"></a> 동시성 런타임을 OpenMP와 비교
+## <a name="comparing-the-concurrency-runtime-to-openmp"></a><a name="openmp"></a> OpenMP와 동시성 런타임 비교
 
 동시성 런타임은 다양한 프로그래밍 모델을 사용합니다. 이러한 모델은 중복되거나 다른 라이브러리의 모델을 보완할 수 있습니다. 이 섹션에서는 동시성 런타임을 [OpenMP](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md#openmp)와 비교합니다.
 
@@ -93,9 +93,9 @@ OpenMP 프로그래밍 모델은 공개 표준에 의해 정의되며, Fortran �
 
 동시성 런타임을 OpenMP와 비교하는 방법 및 동시성 런타임을 사용하도록 기존 OpenMP 코드를 마이그레이션하는 방법에 대한 자세한 내용은 [Migrating from OpenMP to the Concurrency Runtime](../../parallel/concrt/migrating-from-openmp-to-the-concurrency-runtime.md)을 참조하세요.
 
-[[맨 위로 이동](#top)]
+[[맨 위로](#top)이동]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [동시성 런타임](../../parallel/concrt/concurrency-runtime.md)<br/>
 [개요](../../parallel/concrt/asynchronous-message-blocks.md)<br/>
