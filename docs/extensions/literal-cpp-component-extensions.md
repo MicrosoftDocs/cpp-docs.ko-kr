@@ -1,23 +1,23 @@
 ---
-title: literal(C++/CLI 및 C++/CX)
-ms.date: 10/12/2018
+title: literal (c + +/CLI)
+description: Literal 키워드는 컴파일 시간 상수에 대 한 Microsoft c + +/CLI 상황에 맞는 키워드입니다.
+ms.date: 10/20/2020
 ms.topic: reference
 f1_keywords:
 - literal
 - literal_cpp
 helpviewer_keywords:
 - literal keyword [C++]
-ms.assetid: 6b1a1f36-2e1d-4a23-8eb6-172f4f3c477f
-ms.openlocfilehash: 2687352c02bed609ffaa60ee8b1df40b51126d21
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 2d71a535252ba51f89407670b474a34b407eaffc
+ms.sourcegitcommit: 59b7c18703d1ffd66827db0e2eeece490d3d8789
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90686732"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92337215"
 ---
-# <a name="literal-ccli-and-ccx"></a>literal(C++/CLI 및 C++/CX)
+# <a name="literal-ccli"></a>`literal` (C + +/CLI)
 
-**/clr** 컴파일에서 **literal**로 표시된 변수(데이터 멤버)는 **static const** 변수의 네이티브와 동일합니다.
+컴파일에서로 표시 된 변수 (데이터 멤버)는 **`literal`** **`/clr`** 컴파일 타임 상수입니다. C # 변수에 해당 하는 네이티브 항목입니다 [`const`](/dotnet/csharp/language-reference/keywords/const) .
 
 ## <a name="all-platforms"></a>모든 플랫폼
 
@@ -31,27 +31,21 @@ ms.locfileid: "90686732"
 
 (이 언어 기능에는 Windows 런타임에만 적용되는 설명이 없습니다.)
 
-### <a name="requirements"></a>요구 사항
-
-컴파일러 옵션: `/ZW`
-
 ## <a name="common-language-runtime"></a>공용 언어 런타임
 
 ## <a name="remarks"></a>설명
 
-**literal**로 표시된 데이터 멤버는 선언할 때 초기화해야 하며, 값이 상수 정수, 열거형 또는 문자열 형식이어야 합니다. 초기화 식의 형식에서 정적 const 데이터 멤버의 형식으로 변환하는 데 사용자 정의 변환이 필요 없어야 합니다.
+로 표시 된 데이터 멤버는 **`literal`** 선언 될 때 초기화 되어야 합니다. 및 값은 상수 정수 계열, 열거형 또는 문자열 형식 이어야 합니다. 초기화 식의 형식에서 데이터 멤버의 형식으로 변환 하려면 **`literal`** 사용자 정의 변환이 필요 하지 않습니다.
 
-메모리는 런타임에 리터럴 필드에 대해 할당되지 않습니다. 컴파일러는 클래스에 대한 메타데이터에 해당 값을 삽입하기만 합니다.
+런타임에 필드에 대해 메모리가 할당 되지 않습니다. **`literal`** 컴파일러는 클래스에 대 한 메타 데이터에 해당 값을 삽입 합니다. **`literal`** 값은 컴파일 시간 상수로 취급 됩니다. 표준 c + +에서 가장 유사한 것은 **`constexpr`** 이지만 데이터 멤버는 **`constexpr`** c + +/cli 일 수 없습니다.
 
-**static const**로 표시된 변수는 메타데이터를 통해 다른 컴파일러에서 사용할 수 없습니다.
+로 표시 된 변수가 표시 되는 변수와 **`literal`** 다릅니다 **`static const`** . **`static const`** 데이터 멤버는 다른 컴파일러에 대 한 메타 데이터에서 사용할 수 없습니다. 자세한 내용은 [`static`](../cpp/storage-classes-cpp.md) 및 [`const`](../cpp/const-cpp.md)을 참조하세요.
 
-자세한 내용은 [Static](../cpp/storage-classes-cpp.md) 및 [const](../cpp/const-cpp.md)를 참조하세요.
+**`literal`** 는 상황에 맞는 키워드입니다. 자세한 내용은 상황에 맞는 [키워드](context-sensitive-keywords-cpp-component-extensions.md)를 참조 하세요.
 
-**literal**은 상황에 맞는 키워드입니다. 자세한 내용은 [상황에 맞는 키워드](context-sensitive-keywords-cpp-component-extensions.md)를 참조하세요.
+## <a name="examples"></a>예
 
-## <a name="examples"></a>예제
-
-이 예에서는 **리터럴** 변수가를 의미 **`static`** 합니다.
+이 예에서는 변수가를 의미 함을 보여 줍니다 **`literal`** **`static`** .
 
 ```cpp
 // mcppv2_literal.cpp
@@ -65,7 +59,7 @@ int main() {
 }
 ```
 
-다음 샘플에서는 메타데이터에서 리터럴의 영향을 보여 줍니다.
+다음 샘플에서는 메타 데이터의 효과를 보여 줍니다 **`literal`** .
 
 ```cpp
 // mcppv2_literal2.cpp
@@ -78,15 +72,15 @@ public ref struct A {
 
 `sc` 및 `lit`에 대한 메타데이터에서의 차이점을 확인할 수 있습니다. `modopt` 지시문은 `sc`에 적용되어, 다른 컴파일러에서 무시될 수 있습니다.
 
-```
-.field public static int32 modopt([mscorlib]System.Runtime.CompilerServices.IsConst) sc = int32(0x0000000A)
-```
-
-```
-.field public static literal int32 lit = int32(0x0000000A)
+```MSIL
+.field public static int32 modopt([mscorlib]System.Runtime.CompilerServices.IsConst) sc = int32(0x00000001)
 ```
 
-C#으로 작성된 다음 샘플은 이전 샘플에서 만든 메타데이터를 참조하고 **literal** 및 **static const** 변수의 영향을 보여 줍니다.
+```MSIL
+.field public static literal int32 lit = int32(0x00000000)
+```
+
+C #으로 작성 된 다음 샘플은 이전 샘플에서 만든 메타 데이터를 참조 하 고 및 변수의 효과를 보여 줍니다 **`literal`** **`static const`** .
 
 ```csharp
 // mcppv2_literal3.cs
@@ -121,6 +115,6 @@ class B {
 
 컴파일러 옵션: `/clr`
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [.NET 및 UWP 용 구성 요소 확장](component-extensions-for-runtime-platforms.md)
