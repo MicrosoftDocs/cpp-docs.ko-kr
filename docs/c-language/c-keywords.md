@@ -1,18 +1,18 @@
 ---
 title: C 키워드
 description: 표준 C 및 Microsoft C 컴파일러 확장의 키워드입니다.
-ms.date: 09/12/2020
+ms.date: 10/15/2020
 helpviewer_keywords:
 - keywords [C]
 - redefining keywords
 - Microsoft-specific keywords
 ms.assetid: 2d932335-97bf-45cd-b367-4ae00db0ff42
-ms.openlocfilehash: f459b81c2b3f314218108f3f367eec0c1bf17f26
-ms.sourcegitcommit: b492516cc65120250b9ea23f96f7f63f37f99fae
+ms.openlocfilehash: 24981c8d70cb56b4578fd905a30ccc57eaa83d45
+ms.sourcegitcommit: f19f02f217b80804ab321d463c76ce6f681abcc6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075740"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92176231"
 ---
 # <a name="c-keywords"></a>C 키워드
 
@@ -119,7 +119,8 @@ Microsoft C 컴파일러에서 다음 키워드 및 특수 식별자가 인식�
         **`__try`** <sup>5</sup>\
         **`dllexport`** <sup>4</sup>\
         **`__inline`** <sup>5</sup>\
-        **`__leave`** <sup>5</sup>
+        **`__leave`** <sup>5</sup>\
+        **`static_assert`** <sup>6</sup>
     :::column-end:::
 :::row-end:::
 
@@ -128,6 +129,8 @@ Microsoft C 컴파일러에서 다음 키워드 및 특수 식별자가 인식�
 <sup>4</sup> 이들은 **`__declspec`** 과 함께 사용되는 특수 식별자이며 다른 컨텍스트에서는 사용이 제한되지 않습니다.
 
 <sup>5</sup> 이전 버전과의 호환성을 위해 이러한 키워드는 Microsoft 확장이 사용하도록 설정된 경우 두 개의 선행 밑줄과 단일 선행 밑줄 둘 다와 함께 사용할 수 있습니다.
+
+<sup>6</sup> <assert.h>를 포함하지 않는 경우 Microsoft Visual C 컴파일러는 **`static_assert`** 를 C11 **`_Static_assert`** 키워드에 매핑합니다.
 
 Microsoft 확장은 기본적으로 사용하도록 설정됩니다. 이식 가능한 코드 작성을 지원하려면 [/Za\(언어 확장 사용 안 함)](../build/reference/za-ze-disable-language-extensions.md) 옵션을 지정하여 Microsoft 확장을 사용하지 않을 수 있습니다. 이 옵션을 사용하면 몇 가지 Microsoft 관련 키워드를 사용할 수 없습니다.
 

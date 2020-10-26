@@ -4,12 +4,12 @@ description: 원시(MSBuild) Visual Studio C++ 프로젝트에서 속성 상속�
 ms.date: 02/21/2020
 helpviewer_keywords:
 - C++ projects, property inheritance
-ms.openlocfilehash: 4740c479c6cc7c877fd72b7828a8e4811826de6c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 00afe982156597aa166c2c5de98f3027e3f84bdb
+ms.sourcegitcommit: 6e5429e076e552b32e8bdc49480c51498d7924c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81328470"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099708"
 ---
 # <a name="property-inheritance-in-visual-studio-projects"></a>Visual Studio 프로젝트의 속성 상속
 
@@ -17,17 +17,35 @@ Visual Studio 원시 프로젝트 시스템은 MSBuild에 기반을 두고 있�
 
 ## <a name="the-vcxproj-file-props-files-and-targets-files"></a>.Vcxproj 파일,.props 파일 및.targets 파일
 
-프로젝트 속성은 프로젝트 파일( *`.vcxproj`* )에 직접 저장되거나 다른 *`.targets`* 또는 프로젝트 파일이 가져오는, 그리고 기본값을 제공하는 *`.props`* 파일에 저장됩니다. Visual Studio 2015의 경우 이러한 파일은 *`\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140`* 에 있습니다. Visual Studio 2017의 경우 이러한 파일은 *`\Program Files (x86)\Microsoft Visual Studio\2017\<edition>\Common7\IDE\VC\VCTargets`* 에 있으며, 여기에서 *`<edition>`* 은 설치된 Visual Studio 버전입니다. Visual Studio 2019의 경우 이러한 파일은 *`\Program Files (x86)\Microsoft Visual Studio\2019\<edition>\MSBuild\Microsoft\VC\v160`* 에 있습니다. 속성은 사용자 고유의 프로젝트에 추가할 수 있는 모든 사용자 지정 *`.props`* 파일에도 저장됩니다. 이러한 파일은 수동으로 편집하지 않는 것이 가장 좋습니다. MSBuild에 대한 이해가 깊지 않은 경우 모든 속성, 특히 상속에 참여하는 속성을 수정하려면 대신에 IDE에서 속성 페이지를 사용하세요.
+::: moniker range="vs-2015"
 
-앞에 설명한 것처럼 다른 파일에서 다른 값이 동일한 구성에 대한 동일한 속성에 할당될 수 있습니다. 프로젝트를 빌드하면 MSBuild 엔진은 올바로 정의된 순서대로(아래 설명 참조) 프로젝트 파일 및 가져온 모든 파일을 평가합니다. 각 파일을 평가하기 때문에 해당 파일에서 정의된 모든 속성 값이 기존 값을 재정의합니다. 지정되지 않은 모든 값은 이전에 평가된 파일에서 상속됩니다. 속성 페이지를 사용하여 속성을 설정할 때 설정하는 위치에도 주의해야 합니다. *`.props`* 파일에서 속성을 "X"로 설정했으나 프로젝트 파일에서 속성이 "Y"로 설정되어 있는 경우 해당 프로젝트는 속성을 "Y"로 설정하여 빌드합니다. *`.cpp`* 파일처럼 프로젝트 항목에서 동일한 속성이 "Z"로 설정되어 있는 경우 MSBuild 엔진은 "Z" 값을 사용합니다.
+프로젝트 속성은 여러 파일에 저장됩니다. 일부는 *`.vcxproj`* 프로젝트 파일에 직접 저장됩니다. 다른 일부는 프로젝트 파일이 가져오고 기본값을 제공하는 다른 *`.targets`* 파일이나 *`.props`* 파일에서 옵니다. 기본 디렉터리 아래의 로캘별 폴더에 Visual Studio 2015 프로젝트 파일 *`%ProgramFiles(x86)%\MSBuild\Microsoft.Cpp\v4.0\v140`* 이 있습니다.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+프로젝트 속성은 여러 파일에 저장됩니다. 일부는 *`.vcxproj`* 프로젝트 파일에 직접 저장됩니다. 다른 일부는 프로젝트 파일이 가져오고 기본값을 제공하는 다른 *`.targets`* 파일이나 *`.props`* 파일에서 옵니다. 기본 디렉터리 아래의 로캘별 폴더에 Visual Studio 2017 프로젝트 파일 *`%VSINSTALLDIR%Common7\IDE\VC\VCTargets\`* 이 있습니다.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+프로젝트 속성은 여러 파일에 저장됩니다. 일부는 *`.vcxproj`* 프로젝트 파일에 직접 저장됩니다. 다른 일부는 프로젝트 파일이 가져오고 기본값을 제공하는 다른 *`.targets`* 파일이나 *`.props`* 파일에서 옵니다. 기본 디렉터리 아래의 로캘별 폴더에 Visual Studio 프로젝트 파일 *`%VSINSTALLDIR%MSBuild\Microsoft\VC\<version>`* 이 있습니다. `<version>`은 Visual Studio 버전에 해당됩니다. Visual Studio 2019의 경우 *`v160`* 입니다.
+
+::: moniker-end
+
+속성은 사용자 고유의 프로젝트에 추가할 수 있는 모든 사용자 지정 *`.props`* 파일에도 저장됩니다. 이러한 파일은 수동으로 편집하지 ‘않는’ 것이 가장 좋습니다. MSBuild 및 *`.vcxproj`* 파일에 대한 이해가 깊지 않은 경우 모든 속성, 특히 상속에 참여하는 속성을 수정하려면 대신에 IDE에서 속성 페이지를 사용하세요.
+
+앞에 설명한 것처럼 다른 파일에서 다른 값이 동일한 구성에 대한 동일한 속성에 할당될 수 있습니다. 프로젝트를 빌드하면 MSBuild 엔진은 올바로 정의된 순서대로(이후 설명 참조) 프로젝트 파일 및 가져온 모든 파일을 평가합니다. 각 파일을 평가하기 때문에 해당 파일에서 정의된 모든 속성 값이 기존 값을 재정의합니다. 지정되지 않은 모든 값은 이전에 평가된 파일에서 상속됩니다. 속성 페이지를 사용하여 속성을 설정할 때 설정하는 위치에도 주의해야 합니다. *`.props`* 파일에서 속성을 "X"로 설정했으나 프로젝트 파일에서 속성이 "Y"로 설정되어 있는 경우 해당 프로젝트는 속성을 "Y"로 설정하여 빌드합니다. *`.cpp`* 파일처럼 프로젝트 항목에서 동일한 속성이 "Z"로 설정되어 있는 경우 MSBuild 엔진은 "Z" 값을 사용합니다.
 
 다음은 기본 상속 트리입니다.
 
-1. MSBuild CPP 도구 집합의 기본 설정( *`.vcxproj`* 파일에서 가져온 ..\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.Cpp.Default.props)
+1. MSBuild CPP 도구 집합의 기본 설정(기본 디렉터리의 *`Microsoft.Cpp.Default.props`* 파일로, *`.vcxproj`* 파일이 가져옴)입니다.
 
 1. 속성 시트
 
-1. *`.vcxproj`* 파일. 기본 및 속성 시트 설정을 재정의할 수 있습니다.
+1. *`.vcxproj`* 파일. 이 파일은 기본 및 속성 시트 설정을 재정의할 수 있습니다.
 
 1. 항목 메타데이터
 
@@ -60,13 +78,13 @@ Visual Studio 원시 프로젝트 시스템은 MSBuild에 기반을 두고 있�
 
 ## <a name="build-configurations"></a>빌드 구성
 
-구성은 이름이 지정된 속성의 임의의 그룹입니다. Visual Studio는 디버그 및 릴리스 구성을 제공합니다. 각 구성은 디버그 빌드 또는 릴리스 빌드에 대해 다양한 속성을 적절히 설정합니다. **구성 관리자**를 사용하여 사용자 지정 구성을 정의할 수 있습니다. 이를 통해 빌드의 특정 버전에 대한 속성을 편리하게 그룹화할 수 있습니다.
+구성은 이름이 지정된 속성의 임의의 그룹입니다. Visual Studio는 디버그 및 릴리스 구성을 제공합니다. 각 구성은 디버그 빌드 또는 릴리스 빌드에 대해 다양한 속성을 적절히 설정합니다. **구성 관리자** 를 사용하여 사용자 지정 구성을 정의할 수 있습니다. 이를 통해 빌드의 특정 버전에 대한 속성을 편리하게 그룹화할 수 있습니다.
 
-빌드 구성에 대해 더 잘 이해하려면 **속성 관리자**를 엽니다. 설정에 따라 **보기 > 속성 관리자** 또는 **보기 > 다른 Windows > 속성 관리자**를 선택하여 열 수 있습니다. **속성 관리자**는 프로젝트에 각 구성 및 플랫폼 쌍에 대한 노드가 있습니다. 이러한 노드 각각에 해당 구성에 대한 일부 특정 속성을 설정하는 속성 시트( *`.props`* 파일)에 대한 노드가 있습니다.
+빌드 구성에 대해 더 잘 이해하려면 **속성 관리자** 를 엽니다. 설정에 따라 **보기 > 속성 관리자** 또는 **보기 > 다른 Windows > 속성 관리자** 를 선택하여 열 수 있습니다. **속성 관리자** 는 프로젝트에 각 구성 및 플랫폼 쌍에 대한 노드가 있습니다. 이러한 노드 각각에 해당 구성에 대한 일부 특정 속성을 설정하는 속성 시트( *`.props`* 파일)에 대한 노드가 있습니다.
 
 ![속성 관리자](media/property-manager.png "속성 관리자")
 
-예를 들어 속성 페이지에서 일반 창으로 이동할 수 있습니다. 문자 집합 속성을 "유니코드 사용" 대신 "설정되지 않음"으로 변경한 다음, **확인**을 클릭합니다. 이제 속성 관리자는 **유니코드 지원** 속성 시트를 표시하지 않습니다. 현재 구성에 대해서는 제거되지만 다른 구성에 대해서는 여전히 남아 있습니다.
+예를 들어 속성 페이지에서 일반 창으로 이동할 수 있습니다. 문자 집합 속성을 "유니코드 사용" 대신 "설정되지 않음"으로 변경한 다음, **확인** 을 클릭합니다. 이제 속성 관리자는 **유니코드 지원** 속성 시트를 표시하지 않습니다. 현재 구성에 대해서는 제거되지만 다른 구성에 대해서는 여전히 남아 있습니다.
 
 속성 관리자 및 속성 시트에 대한 자세한 정보는 [Visual Studio C++ 프로젝트 설정 공유 또는 다시 사용](create-reusable-property-configurations.md)을 참조하세요.
 

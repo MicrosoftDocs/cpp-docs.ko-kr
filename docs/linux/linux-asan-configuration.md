@@ -1,13 +1,13 @@
 ---
 title: Address Sanitizer를 사용하도록 Linux 프로젝트 구성
 description: Visual Studio에서 Address Sanitizer를 사용하도록 C++ Linux 프로젝트를 구성하는 방법을 설명합니다.
-ms.date: 09/25/2020
-ms.openlocfilehash: 7e68d0af4d2ab27820f894bafc58bed444f141d9
-ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
+ms.date: 10/7/2020
+ms.openlocfilehash: 3c2f78346e4a2049e3482ba4093d8a6212f54e9a
+ms.sourcegitcommit: 611e903f222ec794ef14195796b332851ab98904
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91414202"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91847153"
 ---
 # <a name="configure-linux-projects-to-use-address-sanitizer"></a>Address Sanitizer를 사용하도록 Linux 프로젝트 구성
 
@@ -33,21 +33,21 @@ ASan에서 오류를 감지하면 실행이 즉시 중지됩니다. 디버거에
 ## <a name="enable-asan-for-msbuild-based-linux-projects"></a>MSBuild 기반 Linux 프로젝트에 ASan 사용
 
 > [!NOTE]
-> Visual Studio 2019 버전 16.4부터 Linux 프로젝트용 AddressSanitizer는 **프로젝트 속성** > **구성 속성** > **C/C++**  > **Address Sanitizer 사용**을 통해 사용하도록 설정됩니다.
+> Visual Studio 2019 버전 16.4부터 Linux 프로젝트용 AddressSanitizer는 **프로젝트 속성** > **구성 속성** > **C/C++**  > **Address Sanitizer 사용** 을 통해 사용하도록 설정됩니다.
 
-MSBuild 기반 Linux 프로젝트에 ASan을 사용하려면 **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다. 다음으로 **구성 속성** > **C/C++**  > **Sanitizers**로 이동합니다. ASan은 컴파일러 및 링커 플래그를 통해 활성화되며, 작동하려면 프로젝트를 다시 컴파일해야 합니다.
+MSBuild 기반 Linux 프로젝트에 ASan을 사용하려면 **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성** 을 선택합니다. 다음으로 **구성 속성** > **C/C++**  > **Sanitizers** 로 이동합니다. ASan은 컴파일러 및 링커 플래그를 통해 활성화되며, 작동하려면 프로젝트를 다시 컴파일해야 합니다.
 
 ![MSBuild 프로젝트에 ASan 사용](media/msbuild-asan-prop-page.png)
 
-**구성 속성** > **디버깅** > **AddressSanitizer 런타임 플래그**로 이동하여 옵션 ASan 런타임 플래그를 전달할 수 있습니다. 아래쪽 화살표를 클릭하여 플래그를 추가하거나 제거합니다.
+**구성 속성** > **디버깅** > **AddressSanitizer 런타임 플래그** 로 이동하여 옵션 ASan 런타임 플래그를 전달할 수 있습니다. 아래쪽 화살표를 클릭하여 플래그를 추가하거나 제거합니다.
 
 ![ASan 런타임 플래그 구성](media/msbuild-asan-runtime-flags.png)
 
 ## <a name="enable-asan-for-visual-studio-cmake-projects"></a>Visual Studio CMake 프로젝트에 ASan 사용
 
-CMake에 ASan을 사용하려면 **솔루션 탐색기**에서 CMakeLists.txt 파일을 마우스 오른쪽 단추로 클릭하고 **프로젝트에 대한 CMake 설정**을 선택합니다.
+CMake에 ASan을 사용하려면 **솔루션 탐색기** 에서 CMakeLists.txt 파일을 마우스 오른쪽 단추로 클릭하고 **프로젝트에 대한 CMake 설정** 을 선택합니다.
 
-대화 상자의 왼쪽 창에서 Linux 구성(예: **Linux-Debug**)이 선택되어 있는지 확인합니다.
+대화 상자의 왼쪽 창에서 Linux 구성(예: **Linux-Debug** )이 선택되어 있는지 확인합니다.
 
 ![Linux 디버그가 구성 옵션 중 하나로 나열된 왼쪽 창의 스크린샷](media/linux-debug-configuration.png)
 
@@ -84,5 +84,7 @@ Loaded '/usr/lib/x86_64-linux-gnu/libasan.so.4'. Symbols loaded.
 ```bash
 sudo apt-get install libasan4-dbg
 ```
+
+Ubuntu에 디버그 기호 패키지를 설치하는 방법에 대한 전체 지침은 [디버그 기호 패키지](https://wiki.ubuntu.com/Debug%20Symbol%20Packages)에 있습니다.
 
 ASan을 사용하는 경우 Visual Studio는 **출력** 창의 **디버그** 창의 맨 위에 ASan 디버그 기호 설치를 묻는 메시지를 표시합니다.
