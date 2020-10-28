@@ -1,7 +1,7 @@
 ---
 title: /clr(공용 언어 런타임 컴파일)
 description: Microsoft c + + 컴파일러 옵션/clr을 사용 하 여 c + +/CLI 및 c + + 코드를 관리 코드로 컴파일합니다.
-ms.date: 10/25/2020
+ms.date: 10/27/2020
 f1_keywords:
 - /CLR
 - VC.Project.VCNMakeTool.CompileAsManaged
@@ -14,18 +14,18 @@ helpviewer_keywords:
 - Managed Extensions for C++, compiling
 - common language runtime, /clr compiler option
 ms.assetid: fec5a8c0-40ec-484c-a213-8dec918c1d6c
-ms.openlocfilehash: b4634b63e58344893d99e2217e57693a2c169f66
-ms.sourcegitcommit: faecabcdd12ff53eb79dc0df193fc3567f2f037c
+ms.openlocfilehash: 9d27d9fb6226f84c4ea67a8f9387a595ba65468b
+ms.sourcegitcommit: 9c801a43ee0d4d84956b03fd387716c818705e0d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92639096"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92907599"
 ---
 # <a name="clr-common-language-runtime-compilation"></a>`/clr` (공용 언어 런타임 컴파일)
 
-애플리케이션 및 구성 요소가 CLR(공용 언어 런타임)의 기능을 사용할 수 있게 합니다.
+응용 프로그램 및 구성 요소가 CLR (공용 언어 런타임)의 기능을 사용 하 고 c + +/CLI 컴파일을 사용 하도록 설정 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **`/clr`**\[**`:`**_옵션_ ]
 
@@ -36,7 +36,15 @@ ms.locfileid: "92639096"
 
 - 없음
 
-   옵션을 사용 하지 않으면에서 **`/clr`** 응용 프로그램에 대 한 메타 데이터를 만듭니다. 메타데이터는 다른 CLR 애플리케이션에서 사용될 수 있으며 애플리케이션이 다른 CLR 구성 요소의 메타데이터에 있는 형식과 데이터를 사용할 수 있게 합니다. 자세한 정보는 [혼합형(네이티브 및 관리) 어셈블리](../../dotnet/mixed-native-and-managed-assemblies.md)를 참조하세요.
+   옵션을 사용 하지 않으면에서 **`/clr`** 구성 요소에 대 한 메타 데이터를 만듭니다. 메타 데이터는 다른 CLR 응용 프로그램에서 사용 될 수 있으며, 구성 요소가 다른 CLR 구성 요소의 메타 데이터에 있는 형식과 데이터를 사용할 수 있도록 합니다. 자세한 정보는 [혼합형(네이티브 및 관리) 어셈블리](../../dotnet/mixed-native-and-managed-assemblies.md)를 참조하세요.
+
+- **`NetCore`**
+
+   **`/clr:NetCore`** .NET Core 라고도 하는 최신 플랫폼 간 .NET framework를 사용 하 여 구성 요소에 대 한 메타 데이터 및 코드를 만듭니다. 메타 데이터는 다른 .NET Core 응용 프로그램에서 사용 될 수 있습니다. 및 옵션을 사용 하면 구성 요소가 다른 .NET Core 구성 요소의 메타 데이터에 있는 형식과 데이터를 사용할 수 있습니다.
+
+- **`nostdlib`**
+
+   기본 디렉터리를 무시 하도록 컴파일러에 지시 합니다 *`\clr`* . System.dll와 같이 여러 버전의 DLL을 포함 하는 경우 컴파일러에서 오류를 생성 합니다. 이 옵션을 사용 하면 컴파일하는 동안 사용할 특정 프레임 워크를 지정할 수 있습니다.
 
 - **`pure`**
 
@@ -58,15 +66,11 @@ ms.locfileid: "92639096"
 
 - **`initialAppDomain`**
 
-   CLR 버전 1에서 c + +/CLI 응용 프로그램을 실행할 수 있도록 합니다.  를 사용 하 여 컴파일된 응용 프로그램은 **`initialAppDomain`** CLR 버전 1에서 지원 되지 않으므로 ASP.NET를 사용 하는 응용 프로그램에서 사용 하면 안 됩니다.
-
-- **`nostdlib`**
-
-   기본 디렉터리를 무시 하도록 컴파일러에 지시 합니다 *`\clr`* . System.dll와 같이 여러 버전의 DLL을 포함 하는 경우 컴파일러에서 오류를 생성 합니다. 이 옵션을 사용 하면 컴파일하는 동안 사용할 특정 프레임 워크를 지정할 수 있습니다.
+   **`initialAppDomain` 는 사용 되지 않습니다** . CLR 버전 1에서 c + +/CLI 응용 프로그램을 실행할 수 있도록 합니다.  를 사용 하 여 컴파일된 응용 프로그램은 **`initialAppDomain`** CLR 버전 1에서 지원 되지 않으므로 ASP.NET를 사용 하는 응용 프로그램에서 사용 하면 안 됩니다.
 
 ## <a name="remarks"></a>설명
 
-관리 코드는 CLR에서 검사 및 관리할 수 있는 코드입니다. 관리 코드는 관리되는 개체에 액세스할 수 있습니다. 자세한 내용은 [ `/clr ` 제한 사항](clr-restrictions.md)을 참조 하세요.
+*관리 코드* 는 CLR에서 검사 하 고 관리할 수 있는 코드입니다. 관리 코드는 관리되는 개체에 액세스할 수 있습니다. 자세한 내용은 [ `/clr` 제한 사항](clr-restrictions.md)을 참조 하세요.
 
 C + +에서 관리 되는 형식을 정의 및 사용 하는 응용 프로그램을 개발 하는 방법에 대 한 자세한 내용은 [런타임 플랫폼용 구성 요소 확장](../../extensions/component-extensions-for-runtime-platforms.md)을 참조 하세요.
 
@@ -110,15 +114,18 @@ class {} x;
 
 1. **구성** 드롭다운을 **모든 구성** 으로 설정 하 고 **플랫폼** 드롭다운을 **모든 플랫폼** 으로 설정 합니다.
 
-1. **구성 속성**  >  **고급** 페이지를 선택 합니다.
+1. **구성 속성**  >  **C/c + +**  >  **일반** 페이지를 선택 합니다.
 
 1. **공용 언어 런타임 지원** 속성을 수정 합니다. **확인** 을 선택하여 변경 내용을 저장합니다.
+
+> [!NOTE]
+> Visual Studio IDE에서 **`/clr`** 컴파일러 옵션은 속성 페이지 대화 상자의 **구성 속성**  >  **C/c + +**  >  **일반** 페이지에서 개별적으로 설정할 수 있습니다. 그러나 CLR 템플릿을 사용 하 여 프로젝트를 만드는 것이 좋습니다. CLR 구성 요소를 성공적으로 만드는 데 필요한 모든 속성을 설정 합니다. 이러한 속성을 설정 하는 또 다른 방법은 속성 페이지 대화 상자의 **구성 속성** 고급 페이지에서 **공용 언어 런타임 지원** 속성을 사용 하는 것입니다  >  **Advanced** . 이 속성은 다른 모든 CLR 관련 도구 옵션을 한 번에 설정 합니다.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.CompileAsManaged>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 [MSVC 컴파일러 옵션](compiler-options.md)\
 [MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)
