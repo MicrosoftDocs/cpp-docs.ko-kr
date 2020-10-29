@@ -9,12 +9,12 @@ helpviewer_keywords:
 - file redistribution [C++]
 - redistributing applications [C++], about redistributing applications
 ms.assetid: d201b2ce-36f1-44e5-a96c-0db81a1ba652
-ms.openlocfilehash: 7a639f7ad7deb76cade47b0162012dcb70cb0d69
-ms.sourcegitcommit: e15b46ea7888dbdd7e0bb47da76aeed680c3c1f3
+ms.openlocfilehash: a660e67b2664417438ea9fa7acddbde4c20c307a
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86446755"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924139"
 ---
 # <a name="redistributing-visual-c-files"></a>Visual C++ 파일 재배포
 
@@ -25,19 +25,19 @@ ms.locfileid: "86446755"
 
 애플리케이션을 배포할 때 이 애플리케이션을 지원하는 데 필요한 파일도 배포해야 합니다. Microsoft에서 이러한 파일을 제공 하는 경우 재배포할 수 있는지 여부를 확인 합니다. IDE에서 Visual Studio 사용 조건에 대 한 링크를 찾을 수 있습니다. 정보 Microsoft Visual Studio 대화 상자의 사용 조건 링크를 사용 합니다. 또는 Visual Studio [라이선스 디렉터리](https://visualstudio.microsoft.com/license-terms/)에서 관련 eula 및 라이선스를 다운로드 합니다.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 Visual Studio 2019 Microsoft 소프트웨어 사용 조건의 "배포 가능 코드" 섹션에서 참조 하는 "REDIST 목록"을 보려면 [Microsoft Visual Studio 2019 용 배포 가능 코드 파일](/visualstudio/releases/2019/redistribution#-distributable-code-files-for-visual-studio-2019) 을 참조 하세요.
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 Visual Studio 2017 Microsoft 소프트웨어 사용 조건의 "배포 가능 코드" 섹션에서 참조 하는 "REDIST 목록"을 보려면 [Microsoft Visual Studio 2017 용 배포 가능 코드 파일](/visualstudio/productinfo/2017-redistribution-vs#-distributable-code-files-for-visual-studio-2017)을 참조 하세요.
 
 ::: moniker-end
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 Visual Studio 2015 Microsoft 소프트웨어 사용 조건의 "배포 가능 코드" 섹션에서 참조 하는 "REDIST 목록"을 보려면 [Microsoft Visual Studio 2015 용 배포 가능 코드 파일](/visualstudio/productinfo/2015-redistribution-vs#-distributable-code-files-for-visual-studio-2015)을 참조 하세요.
 
@@ -65,15 +65,15 @@ Visual C++ 재배포 가능 패키지는 모든 Visual C++ 라이브러리를 �
 
 ## <a name="install-individual-redistributable-files"></a>개별 재배포 가능 파일 설치
 
-재배포 가능 Dll을 *응용 프로그램 로컬 폴더*에 직접 설치할 수도 있습니다. 실행 응용 프로그램 파일이 포함 된 폴더입니다. 서비스 상의 이유로이 설치 위치를 사용 하지 않는 것이 좋습니다.
+재배포 가능 Dll을 *응용 프로그램 로컬 폴더* 에 직접 설치할 수도 있습니다. 실행 응용 프로그램 파일이 포함 된 폴더입니다. 서비스 상의 이유로이 설치 위치를 사용 하지 않는 것이 좋습니다.
 
 ## <a name="potential-run-time-errors"></a>잠재적 런타임 오류
 
-Windows에서 응용 프로그램에 필요한 재배포 가능 라이브러리 Dll 중 하나를 찾을 수 없는 경우 다음과 유사한 메시지가 표시 될 수 있습니다. " *라이브러리*.dll을 찾을 수 없기 때문에이 응용 프로그램을 시작 하지 못했습니다. 응용 프로그램을 다시 설치 하면이 문제가 해결 될 수 있습니다. "
+Windows에서 응용 프로그램에 필요한 재배포 가능 라이브러리 Dll 중 하나를 찾을 수 없는 경우 다음과 유사한 메시지가 표시 될 수 있습니다. " *라이브러리* .dll을 찾을 수 없기 때문에이 응용 프로그램을 시작 하지 못했습니다. 응용 프로그램을 다시 설치 하면이 문제가 해결 될 수 있습니다. "
 
 이러한 종류의 오류를 해결 하려면 응용 프로그램 설치 관리자가 올바르게 빌드되는지 확인 합니다. 재배포 가능 라이브러리가 대상 시스템에 올바르게 배포 되었는지 확인 합니다. 자세한 내용은 [Visual C++ 애플리케이션의 종속성 이해](understanding-the-dependencies-of-a-visual-cpp-application.md)를 참조하세요.
 
-## <a name="related-articles"></a>관련된 문서
+## <a name="related-articles"></a>관련 문서
 
 [병합 모듈을 사용 하 여 재배포](redistributing-components-by-using-merge-modules.md)\
 Visual C++ 재배포 가능 병합 모듈을 사용 하 여 Visual C++ 런타임 라이브러리를 폴더에 공유 Dll로 설치 하는 방법을 설명 합니다 *`%windir%\system32\`* .

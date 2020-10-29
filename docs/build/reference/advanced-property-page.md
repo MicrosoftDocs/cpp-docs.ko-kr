@@ -4,22 +4,22 @@ ms.date: 08/10/2020
 f1_keywords:
 - VC.Project.VCConfiguration.VCToolsVersion
 ms.description: Use the Advanced property page in Visual Studio 2019 to set various properties for C++ projects.
-ms.openlocfilehash: 3d6694e44d3da4023998a0335cd06c85b353b2b1
-ms.sourcegitcommit: 8140647370017b885432349ce89f187c3068b46a
+ms.openlocfilehash: 3b1e45f984cd40d6ea42ead25b045fc8688ad0a7
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88144167"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924043"
 ---
 # <a name="advanced-property-page"></a>고급 속성 페이지
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 고급 속성 페이지는 Visual Studio 2019 이상에서 사용할 수 있습니다. 이 버전에 대한 설명서를 보려면 이 문서의 Visual Studio **버전** 선택기 컨트롤을 Visual Studio 2019로 설정하세요. 이 페이지의 목차 맨 위에 있습니다.
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 고급 속성 페이지는 Visual Studio 2019 이상에서 사용할 수 있습니다.
 
@@ -31,7 +31,7 @@ ms.locfileid: "88144167"
 
 - **정리할 때 삭제할 확장명**
 
-   **정리** 옵션(**빌드** 메뉴)은 프로젝트 구성이 빌드되는 중간 디렉터리에서 파일을 삭제합니다. 이 속성에 지정 된 확장명을 가진 파일은 **정리가** 실행 되거나 다시 작성 될 때 삭제 됩니다. 빌드 시스템은 중간 디렉터리에 이러한 확장명이 있는 모든 파일을 삭제 합니다. 또한 위치에 관계 없이 모든 알려진 빌드 출력을 삭제 합니다. (파일 등의 중간 출력을 포함 하는 *`.obj`* ) 이 속성에서 와일드 카드 문자를 지정할 수 있습니다.
+   **정리** 옵션( **빌드** 메뉴)은 프로젝트 구성이 빌드되는 중간 디렉터리에서 파일을 삭제합니다. 이 속성에 지정 된 확장명을 가진 파일은 **정리가** 실행 되거나 다시 작성 될 때 삭제 됩니다. 빌드 시스템은 중간 디렉터리에 이러한 확장명이 있는 모든 파일을 삭제 합니다. 또한 위치에 관계 없이 모든 알려진 빌드 출력을 삭제 합니다. (파일 등의 중간 출력을 포함 하는 *`.obj`* ) 이 속성에서 와일드 카드 문자를 지정할 수 있습니다.
 
    프로그래밍 방식으로 이 속성에 액세스하려면 <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.DeleteExtensionsOnClean%2A>을 참조하세요.
 

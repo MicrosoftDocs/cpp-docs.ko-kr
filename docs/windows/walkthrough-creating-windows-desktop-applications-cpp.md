@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Windows applications [C++], Win32
 - Windows Desktop applications [C++]
 - Windows API [C++]
-ms.openlocfilehash: c729fa183a03860de012e64d110f3b3ac7e7e8d0
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 36991cf98867e7da218f7414d1ea02aab55301a3
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91503657"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924234"
 ---
 # <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>연습: 기존 Windows 데스크톱 응용 프로그램 만들기 (c + +)
 
@@ -39,25 +39,25 @@ Windows API (Win32 API, Windows Desktop API 및 Windows Classic API 라고도 �
 
 다음 단계를 수행 하 여 첫 번째 Windows 데스크톱 프로젝트를 만듭니다. 작업 중인 Windows 데스크톱 응용 프로그램에 대 한 코드를 입력 합니다. 기본 설정된 버전의 Visual Studio에 대한 설명서를 보려면 **버전** 선택기 컨트롤을 사용하세요. 이 페이지의 목차 맨 위에 있습니다.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ### <a name="to-create-a-windows-desktop-project-in-visual-studio-2019"></a>Visual Studio 2019에서 Windows 데스크톱 프로젝트를 만들려면
 
-1. 주 메뉴에서 **파일** > **새로 만들기** > **프로젝트**를 선택하여 **새 프로젝트 만들기** 대화 상자를 엽니다.
+1. 주 메뉴에서 **파일** > **새로 만들기** > **프로젝트** 를 선택하여 **새 프로젝트 만들기** 대화 상자를 엽니다.
 
-1. 대화 상자 위쪽에서 **언어** 를 **c + +** 로 설정 하 고, **플랫폼** 을 **Windows**로 설정 하 고, **프로젝트 형식** 을 **Desktop**으로 설정 합니다.
+1. 대화 상자 위쪽에서 **언어** 를 **c + +** 로 설정 하 고, **플랫폼** 을 **Windows** 로 설정 하 고, **프로젝트 형식** 을 **Desktop** 으로 설정 합니다.
 
-1. 필터링 된 프로젝트 형식 목록에서 **Windows 데스크톱 마법사** 를 선택한 후 **다음**을 선택 합니다. 다음 페이지에서 프로젝트 이름 (예: *Desktopapp*)을 입력 합니다.
+1. 필터링 된 프로젝트 형식 목록에서 **Windows 데스크톱 마법사** 를 선택한 후 **다음** 을 선택 합니다. 다음 페이지에서 프로젝트 이름 (예: *Desktopapp* )을 입력 합니다.
 
 1. **만들기** 단추를 선택하여 프로젝트를 만듭니다.
 
-1. 이제 **Windows 데스크톱 프로젝트** 대화 상자가 나타납니다. **응용 프로그램 종류**아래에서 **데스크톱 응용 프로그램 (.exe)** 을 선택 합니다. **추가 옵션**에서 **빈 프로젝트**를 선택합니다. **확인**을 선택하여 프로젝트를 만듭니다.
+1. 이제 **Windows 데스크톱 프로젝트** 대화 상자가 나타납니다. **응용 프로그램 종류** 아래에서 **데스크톱 응용 프로그램 (.exe)** 을 선택 합니다. **추가 옵션** 에서 **빈 프로젝트** 를 선택합니다. **확인** 을 선택하여 프로젝트를 만듭니다.
 
-1. **솔루션 탐색기**에서 **desktopapp** 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **추가**를 선택한 다음 **새 항목**을 선택 합니다.
+1. **솔루션 탐색기** 에서 **desktopapp** 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **추가** 를 선택한 다음 **새 항목** 을 선택 합니다.
 
    ![Visual Studio 2019의 DesktopApp 프로젝트에 새 항목을 추가 하는 사용자를 보여 주는 짧은 비디오입니다.](../build/media/desktop-app-project-add-new-item-153.gif "DesktopApp 프로젝트에 새 항목 추가")
 
-1. **새 항목 추가** 대화 상자에서 **C++ 파일(.cpp)** 을 선택합니다. **이름** 상자에 파일 이름을 입력 합니다 (예: *HelloWindowsDesktop*). **추가**를 선택합니다.
+1. **새 항목 추가** 대화 상자에서 **C++ 파일(.cpp)** 을 선택합니다. **이름** 상자에 파일 이름을 입력 합니다 (예: *HelloWindowsDesktop* ). **추가** 를 선택합니다.
 
    ![Visual Studio 2019의 새 항목 추가 대화 상자 및 Visual C + +가 설치 되 고 C + + 파일 옵션이 강조 표시 된 >의 스크린샷](../build/media/desktop-app-add-cpp-file-153.png "DesktopApp 프로젝트에 .cpp 파일 추가")
 
@@ -65,25 +65,25 @@ Windows API (Win32 API, Windows Desktop API 및 Windows Classic API 라고도 �
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 ### <a name="to-create-a-windows-desktop-project-in-visual-studio-2017"></a>Visual Studio 2017에서 Windows 데스크톱 프로젝트를 만들려면
 
-1. **파일** 메뉴에서 **새로 만들기**, **프로젝트**를 차례로 선택합니다.
+1. **파일** 메뉴에서 **새로 만들기** , **프로젝트** 를 차례로 선택합니다.
 
-1. **새 프로젝트** 대화 상자의 왼쪽 창에서 **설치 됨**  >  **Visual C++** 를 확장 한 다음 **Windows 데스크톱**을 선택 합니다. 가운데 창에서 **Windows 바탕 화면 마법사**를 선택 합니다.
+1. **새 프로젝트** 대화 상자의 왼쪽 창에서 **설치 됨**  >  **Visual C++** 를 확장 한 다음 **Windows 데스크톱** 을 선택 합니다. 가운데 창에서 **Windows 바탕 화면 마법사** 를 선택 합니다.
 
-   **이름** 상자에 프로젝트의 이름 (예: *desktopapp*)을 입력 합니다. **확인**을 선택합니다.
+   **이름** 상자에 프로젝트의 이름 (예: *desktopapp* )을 입력 합니다. **확인** 을 선택합니다.
 
    ![Visual Studio 2017에서 설치 된 > Visual C + + > Windows Desktop이 설치 된 새 프로젝트 대화 상자의 스크린샷, Windows 데스크톱 마법사 옵션이 강조 표시 되 고, 이름 텍스트 상자에 DesktopApp이 입력 됩니다.](../build/media/desktop-app-new-project-name-153.png "DesktopApp 프로젝트 이름")
 
-1. **Windows 데스크톱 프로젝트** 대화 상자의 **응용 프로그램 종류**아래에서 **windows 응용 프로그램 (.exe)** 을 선택 합니다. **추가 옵션**에서 **빈 프로젝트**를 선택합니다. **미리 컴파일된 헤더** 를 선택 하지 않았는지 확인 합니다. **확인**을 선택하여 프로젝트를 만듭니다.
+1. **Windows 데스크톱 프로젝트** 대화 상자의 **응용 프로그램 종류** 아래에서 **windows 응용 프로그램 (.exe)** 을 선택 합니다. **추가 옵션** 에서 **빈 프로젝트** 를 선택합니다. **미리 컴파일된 헤더** 를 선택 하지 않았는지 확인 합니다. **확인** 을 선택하여 프로젝트를 만듭니다.
 
-1. **솔루션 탐색기**에서 **desktopapp** 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **추가**를 선택한 다음 **새 항목**을 선택 합니다.
+1. **솔루션 탐색기** 에서 **desktopapp** 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **추가** 를 선택한 다음 **새 항목** 을 선택 합니다.
 
    ![Visual Studio 2017의 DesktopApp 프로젝트에 새 항목을 추가 하는 사용자를 보여 주는 짧은 비디오입니다.](../build/media/desktop-app-project-add-new-item-153.gif "DesktopApp 프로젝트에 새 항목 추가")
 
-1. **새 항목 추가** 대화 상자에서 **C++ 파일(.cpp)** 을 선택합니다. **이름** 상자에 파일 이름을 입력 합니다 (예: *HelloWindowsDesktop*). **추가**를 선택합니다.
+1. **새 항목 추가** 대화 상자에서 **C++ 파일(.cpp)** 을 선택합니다. **이름** 상자에 파일 이름을 입력 합니다 (예: *HelloWindowsDesktop* ). **추가** 를 선택합니다.
 
    ![Visual Studio 2017의 새 항목 추가 대화 상자 및 Visual C + +가 설치 되 고 C + + 파일 옵션이 강조 표시 된 >의 스크린샷](../build/media/desktop-app-add-cpp-file-153.png "DesktopApp 프로젝트에 .cpp 파일 추가")
 
@@ -91,29 +91,29 @@ Windows API (Win32 API, Windows Desktop API 및 Windows Classic API 라고도 �
 
 ::: moniker-end
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 ### <a name="to-create-a-windows-desktop-project-in-visual-studio-2015"></a>Visual Studio 2015에서 Windows 데스크톱 프로젝트를 만들려면
 
-1. **파일** 메뉴에서 **새로 만들기**, **프로젝트**를 차례로 선택합니다.
+1. **파일** 메뉴에서 **새로 만들기** , **프로젝트** 를 차례로 선택합니다.
 
-1. **새 프로젝트** 대화 상자의 왼쪽 창에서 **설치 된**  >  **템플릿**  >  **Visual C++** 을 확장 하 고 **Win32**를 선택 합니다. 가운데 창에서 **Win32 프로젝트**를 선택합니다.
+1. **새 프로젝트** 대화 상자의 왼쪽 창에서 **설치 된**  >  **템플릿**  >  **Visual C++** 을 확장 하 고 **Win32** 를 선택 합니다. 가운데 창에서 **Win32 프로젝트** 를 선택합니다.
 
-   **이름** 상자에 프로젝트의 이름 (예: *desktopapp*)을 입력 합니다. **확인**을 선택합니다.
+   **이름** 상자에 프로젝트의 이름 (예: *desktopapp* )을 입력 합니다. **확인** 을 선택합니다.
 
    ![Visual Studio 2015에서 설치 된 > 템플릿이 있는 새 프로젝트 대화 상자의 스크린샷 > Visual C plus + > Win32가 선택 되 고, Win32 프로젝트 옵션이 강조 표시 되 고, 이름 텍스트 상자에 DesktopApp이 입력 됩니다.](../build/media/desktop-app-new-project-name-150.png "DesktopApp 프로젝트 이름")
 
-1. **Win32 응용 프로그램 마법사**의 **개요** 페이지에서 **다음**을 선택 합니다.
+1. **Win32 응용 프로그램 마법사** 의 **개요** 페이지에서 **다음** 을 선택 합니다.
 
    ![Win32 응용 프로그램에서 DesktopApp 만들기 마법사 개요](../build/media/desktop-app-win32-wizard-overview-150.png "Win32 응용 프로그램에서 DesktopApp 만들기 마법사 개요")
 
-1. 응용 프로그램 **설정** 페이지의 **응용 프로그램 종류**아래에서 **Windows 응용 프로그램**을 선택 합니다. **추가 옵션**에서 **미리 컴파일된 헤더**를 선택 취소 하 고 **빈 프로젝트**를 선택 합니다. **마침**을 선택하여 프로젝트를 만듭니다.
+1. 응용 프로그램 **설정** 페이지의 **응용 프로그램 종류** 아래에서 **Windows 응용 프로그램** 을 선택 합니다. **추가 옵션** 에서 **미리 컴파일된 헤더** 를 선택 취소 하 고 **빈 프로젝트** 를 선택 합니다. **마침** 을 선택하여 프로젝트를 만듭니다.
 
-1. **솔루션 탐색기**에서 desktopapp 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **추가**를 선택한 다음 **새 항목**을 선택 합니다.
+1. **솔루션 탐색기** 에서 desktopapp 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **추가** 를 선택한 다음 **새 항목** 을 선택 합니다.
 
    ![Visual Studio 2015의 DesktopApp 프로젝트에 새 항목을 추가 하는 사용자를 보여 주는 짧은 비디오입니다.](../build/media/desktop-app-project-add-new-item-150.gif "DesktopApp 프로젝트에 새 항목 추가")
 
-1. **새 항목 추가** 대화 상자에서 **C++ 파일(.cpp)** 을 선택합니다. **이름** 상자에 파일 이름을 입력 합니다 (예: *HelloWindowsDesktop*). **추가**를 선택합니다.
+1. **새 항목 추가** 대화 상자에서 **C++ 파일(.cpp)** 을 선택합니다. **이름** 상자에 파일 이름을 입력 합니다 (예: *HelloWindowsDesktop* ). **추가** 를 선택합니다.
 
    ![Visual Studio 2015의 새 항목 추가 대화 상자 및 Visual C + +가 설치 되 고 C + + 파일 옵션이 강조 표시 된 >의 스크린샷](../build/media/desktop-app-add-cpp-file-150.png "DesktopApp 프로젝트에 .cpp 파일 추가")
 
@@ -141,7 +141,7 @@ Windows API (Win32 API, Windows Desktop API 및 Windows Classic API 라고도 �
    이 함수의 매개 변수 및 반환 값에 대 한 자세한 내용은 [WinMain 진입점](/windows/win32/api/winbase/nf-winbase-winmain)을 참조 하십시오.
 
    > [!NOTE]
-   > 이러한 추가 단어 (예:, 또는)는 무엇 인가요 `CALLBACK` `HINSTANCE` `_In_` ? 기존 Windows API는 typedef 및 전처리기 매크로를 광범위 하 게 사용 하 여 형식 및 플랫폼별 코드 (예: 호출 규칙, 선언, 컴파일러 pragma)의 일부 세부 정보를 추상화 **`__declspec`** 합니다. Visual Studio에서는 IntelliSense [요약 정보](/visualstudio/ide/using-intellisense#quick-info) 기능을 사용 하 여 이러한 형식 정의 및 매크로가 정의 하는 내용을 확인할 수 있습니다. 마우스를 관심 있는 단어 위에 가리키거나, 선택 하 고 **ctrl** + **K**, **ctrl** + **I** 를 눌러 정의가 포함 된 작은 팝업 창으로 이동 합니다. 자세한 내용은 [Using IntelliSense](/visualstudio/ide/using-intellisense)을 참조하세요. 매개 변수 및 반환 형식은 종종 *SAL 주석을* 사용 하 여 프로그래밍 오류를 파악 하는 데 도움이 됩니다. 자세한 내용은 [SAL 주석을 사용 하 여 c/c + + 코드 오류 줄이기](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)를 참조 하세요.
+   > 이러한 추가 단어 (예:, 또는)는 무엇 인가요 `CALLBACK` `HINSTANCE` `_In_` ? 기존 Windows API는 typedef 및 전처리기 매크로를 광범위 하 게 사용 하 여 형식 및 플랫폼별 코드 (예: 호출 규칙, 선언, 컴파일러 pragma)의 일부 세부 정보를 추상화 **`__declspec`** 합니다. Visual Studio에서는 IntelliSense [요약 정보](/visualstudio/ide/using-intellisense#quick-info) 기능을 사용 하 여 이러한 형식 정의 및 매크로가 정의 하는 내용을 확인할 수 있습니다. 마우스를 관심 있는 단어 위에 가리키거나, 선택 하 고 **ctrl** + **K** , **ctrl** + **I** 를 눌러 정의가 포함 된 작은 팝업 창으로 이동 합니다. 자세한 내용은 [Using IntelliSense](/visualstudio/ide/using-intellisense)을 참조하세요. 매개 변수 및 반환 형식은 종종 *SAL 주석을* 사용 하 여 프로그래밍 오류를 파악 하는 데 도움이 됩니다. 자세한 내용은 [SAL 주석을 사용 하 여 c/c + + 코드 오류 줄이기](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)를 참조 하세요.
 
 1. Windows 데스크톱 프로그램 &lt; 에는 windows> 필요 합니다. &lt;tchar.h>는 매크로를 정의 `TCHAR` 합니다 .이 매크로는 **`wchar_t`** 유니코드 기호가 프로젝트에 정의 되어 있으면로 확인 되 고, 그렇지 않으면로 확인 **`char`** 됩니다.  항상 유니코드를 사용 하 여 빌드하는 경우에는 TCHAR.H가 필요 하지 않으며 직접만 사용할 수 있습니다 **`wchar_t`** .
 
@@ -432,7 +432,7 @@ Windows API (Win32 API, Windows Desktop API 및 Windows Classic API 라고도 �
 
 ### <a name="to-build-this-example"></a>이 예제를 빌드하려면
 
-1. 편집기에서 *HelloWindowsDesktop* 에 입력 한 코드를 삭제 합니다. 이 예제 코드를 복사 하 여 *HelloWindowsDesktop*에 붙여넣습니다.
+1. 편집기에서 *HelloWindowsDesktop* 에 입력 한 코드를 삭제 합니다. 이 예제 코드를 복사 하 여 *HelloWindowsDesktop* 에 붙여넣습니다.
 
    ```cpp
    // HelloWindowsDesktop.cpp
@@ -580,7 +580,7 @@ Windows API (Win32 API, Windows Desktop API 및 Windows Classic API 라고도 �
    }
    ```
 
-1. **빌드** 메뉴에서 **솔루션 빌드**를 선택합니다. 컴파일 결과는 Visual Studio의 **출력** 창에 표시 됩니다.
+1. **빌드** 메뉴에서 **솔루션 빌드** 를 선택합니다. 컴파일 결과는 Visual Studio의 **출력** 창에 표시 됩니다.
 
    ![DesktopApp 프로젝트 빌드](../build/media/desktop-app-project-build-150.gif "DesktopApp 프로젝트 빌드")
 

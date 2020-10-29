@@ -7,12 +7,12 @@ helpviewer_keywords:
 - OLE DB providers, schema rowsets
 - OLE DB, schema rowsets
 ms.assetid: 71c5e14b-6e33-4502-a2d9-a1dc6d6e9ba0
-ms.openlocfilehash: f87e6cc0a307eed4f00f1fb90ac16a840a1759af
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 156fe9c7a2b15f7254fb0c83f8b25982aa5ad09a
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509461"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924312"
 ---
 # <a name="supporting-schema-rowsets"></a>스키마 행 집합 지원
 
@@ -32,15 +32,15 @@ ms.locfileid: "91509461"
 
 ## <a name="atl-ole-db-provider-wizard-support"></a>ATL OLE DB 공급자 마법사 지원
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 Visual Studio 2019 이상에서는 ATL OLE DB 공급자 마법사를 사용할 수 없습니다.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
-**ATL OLE DB 공급자 마법사**에서는 세션 헤더 파일에 다음 세 개의 스키마 클래스를 만듭니다.
+**ATL OLE DB 공급자 마법사** 에서는 세션 헤더 파일에 다음 세 개의 스키마 클래스를 만듭니다.
 
 - **C**<em>ShortName</em>**SessionTRSchemaRowset**
 
@@ -58,9 +58,9 @@ Visual Studio 2019 이상에서는 ATL OLE DB 공급자 마법사를 사용할 �
 
 이러한 클래스를 사용자 지정하여 해당 공급자에 적합한 스키마 정보를 처리할 수 있습니다.
 
-- **C**<em>ShortName</em>**SessionTRSchemaRowset**에서 카탈로그, 테이블 및 설명 필드(`trData.m_szType`, `trData.m_szTable` 및 `trData.m_szDesc`)에 정보를 입력해야 합니다. 마법사 생성 예제에서는 하나의 행(테이블)만 사용합니다. 다른 공급자는 둘 이상의 테이블을 반환할 수 있습니다.
+- **C**<em>ShortName</em>**SessionTRSchemaRowset** 에서 카탈로그, 테이블 및 설명 필드(`trData.m_szType`, `trData.m_szTable` 및 `trData.m_szDesc`)에 정보를 입력해야 합니다. 마법사 생성 예제에서는 하나의 행(테이블)만 사용합니다. 다른 공급자는 둘 이상의 테이블을 반환할 수 있습니다.
 
-- **C**<em>ShortName</em>**SessionColSchemaRowset**에서 테이블 이름을 `DBID`로 전달합니다.
+- **C**<em>ShortName</em>**SessionColSchemaRowset** 에서 테이블 이름을 `DBID`로 전달합니다.
 
 ::: moniker-end
 
@@ -96,7 +96,7 @@ class CUpdateSessionTRSchemaRowset :
 
 `CUpdateSession`은 `IDBSchemaRowsetImpl`에서 상속받으므로 모든 제한 처리 메서드가 있습니다. `CSchemaRowsetImpl`을 사용하여 위의 스키마 맵에 나열된 세 개의 자식 클래스(`CUpdateSessionTRSchemaRowset`, `CUpdateSessionColSchemaRowset`, `CUpdateSessionPTSchemaRowset`)를 선언합니다. 각 자식 클래스에는 해당 제한 집합(검색 조건)을 처리하는 `Execute` 메서드가 있습니다. 각 `Execute` 메서드는 *cRestrictions* 및 *rgRestrictions* 매개 변수의 값을 비교합니다. 이러한 매개 변수에 대한 자세한 내용은 [SetRestrictions](./idbschemarowsetimpl-class.md#setrestrictions)를 참조하세요.
 
-특정 스키마 행 집합에 해당하는 제한에 대한 자세한 내용은 Windows SDK의 **OLE DB 프로그래머 참조**에서 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85))의 스키마 행 집합 GUID 표를 참조하세요.
+특정 스키마 행 집합에 해당하는 제한에 대한 자세한 내용은 Windows SDK의 **OLE DB 프로그래머 참조** 에서 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85))의 스키마 행 집합 GUID 표를 참조하세요.
 
 예를 들어 DBSCHEMA_TABLES의 TABLE_NAME 제한을 지원하는 경우 다음을 수행합니다.
 
@@ -146,7 +146,7 @@ if (InlineIsEqualGUID(rguidSchema[l], DBSCHEMA_TABLES))
     rgRestrictions[l] = 0x0C;
 ```
 
-다음 `Execute` 함수는 일반 행 집합의 함수와 비슷합니다. *pcRowsAffected*, *cRestrictions*, *rgRestrictions* 등 세 개의 인수가 있습니다. *pcRowsAffected* 변수는 공급자가 스키마 행 집합의 행 수를 반환할 수 있는 출력 매개 변수입니다. *cRestrictions* 매개 변수는 소비자가 공급자에 전달하는 제한 수를 보유하는 입력 매개 변수입니다. *rgRestrictions* 매개 변수는 제한 값을 보유하는 VARIANT 값 배열입니다.
+다음 `Execute` 함수는 일반 행 집합의 함수와 비슷합니다. *pcRowsAffected* , *cRestrictions* , *rgRestrictions* 등 세 개의 인수가 있습니다. *pcRowsAffected* 변수는 공급자가 스키마 행 집합의 행 수를 반환할 수 있는 출력 매개 변수입니다. *cRestrictions* 매개 변수는 소비자가 공급자에 전달하는 제한 수를 보유하는 입력 매개 변수입니다. *rgRestrictions* 매개 변수는 제한 값을 보유하는 VARIANT 값 배열입니다.
 
 ```cpp
 HRESULT Execute(DBROWCOUNT* pcRowsAffected, ULONG cRestrictions,
@@ -194,7 +194,7 @@ if (cRestrictions >= 3 && rgRestrictions[2].vt != VT_EMPTY)
 }
 ```
 
-네 번째 제한(TABLE_TYPE) 지원은 세 번째 제한과 비슷합니다. 값이 VT_EMPTY가 아님을 확인합니다. 이 제한은 테이블 형식인 TABLE만 반환합니다. DBSCHEMA_TABLES에 유효한 값을 확인하려면 **OLE DB 프로그래머 참조**의 **부록 B**에서 TABLES 행 집합 섹션을 살펴봅니다.
+네 번째 제한(TABLE_TYPE) 지원은 세 번째 제한과 비슷합니다. 값이 VT_EMPTY가 아님을 확인합니다. 이 제한은 테이블 형식인 TABLE만 반환합니다. DBSCHEMA_TABLES에 유효한 값을 확인하려면 **OLE DB 프로그래머 참조** 의 **부록 B** 에서 TABLES 행 집합 섹션을 살펴봅니다.
 
 ```cpp
 // TABLE_TYPE restriction:
@@ -213,7 +213,7 @@ if (cRestrictions >=4 && rgRestrictions[3].vt != VT_EMPTY)
 }
 ```
 
-여기서 실제로 행 집합의 행 항목을 만듭니다. `trData` 변수는 OLE DB 공급자 템플릿에 정의된 구조체인 `CTABLESRow`에 해당합니다. `CTABLESRow`는 OLE DB 사양의 **부록 B**에 있는 TABLES 행 집합 정의에 해당합니다. 한 번에 하나의 테이블만 지원할 수 있기 때문에 추가할 행은 하나뿐입니다.
+여기서 실제로 행 집합의 행 항목을 만듭니다. `trData` 변수는 OLE DB 공급자 템플릿에 정의된 구조체인 `CTABLESRow`에 해당합니다. `CTABLESRow`는 OLE DB 사양의 **부록 B** 에 있는 TABLES 행 집합 정의에 해당합니다. 한 번에 하나의 테이블만 지원할 수 있기 때문에 추가할 행은 하나뿐입니다.
 
 ```cpp
 // Bring over the data:
@@ -263,9 +263,9 @@ virtual DBSTATUS GetDBStatus(CSimpleRow* , ATLCOLUMNINFO* pColInfo)
 }
 ```
 
-`Execute` 함수는 TABLES 행 집합에서 TABLE_NAME, TABLE_TYPE 및 DESCRIPTION 필드의 데이터를 반환하기 때문에 OLE DB 사양의 **부록 B**를 살펴보고 위에서 아래로 개수를 계산하여 서수 3, 4, 6인지 확인할 수 있습니다. 해당 열에 대해 각각 DBSTATUS_S_OK를 반환합니다. 다른 모든 열에 대해서는 DBSTATUS_S_ISNULL을 반환합니다. 소비자가 반환된 값이 NULL 또는 다른 값인지 이해하지 못할 수 있기 때문에 이 상태를 반환하는 것이 중요합니다. 다시 강조하지만, NULL은 빈 값이 아닙니다.
+`Execute` 함수는 TABLES 행 집합에서 TABLE_NAME, TABLE_TYPE 및 DESCRIPTION 필드의 데이터를 반환하기 때문에 OLE DB 사양의 **부록 B** 를 살펴보고 위에서 아래로 개수를 계산하여 서수 3, 4, 6인지 확인할 수 있습니다. 해당 열에 대해 각각 DBSTATUS_S_OK를 반환합니다. 다른 모든 열에 대해서는 DBSTATUS_S_ISNULL을 반환합니다. 소비자가 반환된 값이 NULL 또는 다른 값인지 이해하지 못할 수 있기 때문에 이 상태를 반환하는 것이 중요합니다. 다시 강조하지만, NULL은 빈 값이 아닙니다.
 
-OLE DB 스키마 행 집합 인터페이스에 대한 자세한 내용은 **OLE DB 프로그래머 참조**에서 [IDBSchemaRowset](../../data/oledb/idbschemarowsetimpl-class.md) 인터페이스를 참조하세요.
+OLE DB 스키마 행 집합 인터페이스에 대한 자세한 내용은 **OLE DB 프로그래머 참조** 에서 [IDBSchemaRowset](../../data/oledb/idbschemarowsetimpl-class.md) 인터페이스를 참조하세요.
 
 소비자가 `IDBSchemaRowset` 메서드를 사용할 수 있는 방법에 대한 자세한 내용은 [스키마 행 집합을 사용하여 메타데이터 구하기](../../data/oledb/obtaining-metadata-with-schema-rowsets.md)를 참조하세요.
 

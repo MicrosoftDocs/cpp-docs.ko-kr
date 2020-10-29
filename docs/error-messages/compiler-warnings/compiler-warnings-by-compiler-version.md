@@ -5,12 +5,12 @@ ms.date: 10/18/2020
 helpviewer_keywords:
 - warnings, by compiler version
 - cl.exe compiler, setting warning options
-ms.openlocfilehash: b470663e3cea8ec62a1737fb19e9ec5a277d27cc
-ms.sourcegitcommit: f19f02f217b80804ab321d463c76ce6f681abcc6
+ms.openlocfilehash: 5718642f6a7f714dd0a38ec34211ddc0be4e8fd2
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92176319"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924707"
 ---
 # <a name="compiler-warnings-by-compiler-version"></a>컴파일러 버전 별 컴파일러 경고
 
@@ -51,7 +51,7 @@ ms.locfileid: "92176319"
 
 다음 섹션에서는 컴파일러 옵션을 사용 하 여 표시 하지 않을 수 있는 Visual C++의 각 버전에서 발생 하는 경고를 나열 합니다 **`/Wv`** . 옵션은 지정 된 버전의 컴파일러를 predate 하는 **`/Wv`** 나열 되지 않은 경고를 표시 하지 않습니다.
 
-::: moniker range=">= vs-2019"
+::: moniker range=">= msvc-160"
 
 ## <a name="warnings-introduced-in-visual-studio-2019-version-167-compiler-version-1927291120"></a>Visual Studio 2019 버전 16.7에 도입 된 경고 (컴파일러 버전 19.27.29112.0)
 
@@ -151,7 +151,7 @@ ms.locfileid: "92176319"
 | C5051 | `attribute 'attribute-name' requires at least 'standard-level'; ignored` |
 
 ::: moniker-end
-::: moniker range=">= vs-2017"
+::: moniker range=">= msvc-150"
 
 ## <a name="warnings-introduced-in-visual-studio-2017-version-158-compiler-version-1915267260"></a>Visual Studio 2017 버전 15.8에 도입 된 경고 (컴파일러 버전 19.15.26726.0)
 

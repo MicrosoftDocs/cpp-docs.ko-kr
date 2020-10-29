@@ -2,12 +2,12 @@
 title: Android Native Activity 앱 만들기
 ms.date: 10/17/2019
 ms.assetid: 884014b1-5208-45ec-b0da-ad0070d2c24d
-ms.openlocfilehash: f588c56acfd5c559e6b0bf1b8635e8b36c69548a
-ms.sourcegitcommit: a673f6a54cc97e3d4cd032b10aa8dce7f0539d39
+ms.openlocfilehash: 664729a920076839f5f9b4440768fe3adb846803
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "79469940"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924196"
 ---
 # <a name="create-an-android-native-activity-app"></a>Android Native Activity 앱 만들기
 
@@ -21,13 +21,13 @@ Android Native Activity 앱을 만들기 전에 모든 시스템 요구 사항�
 
 이 자습서에서는 먼저 새 Android Native Activity 프로젝트를 만든 후 Android 에뮬레이터에서 기본 앱을 빌드 및 실행합니다.
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
-1. Visual Studio에서 **파일** > **새** > **프로젝트**를 선택 합니다.
+1. Visual Studio에서 **파일** > **새로 만들기** > **프로젝트** 를 선택합니다.
 
-1. **새 프로젝트** 대화 상자의 **템플릿**에서  **C++ Visual** > **플랫폼 간**을 선택 하 고 **네이티브 작업 응용 프로그램 (Android)** 템플릿을 선택 합니다.
+1. **새 프로젝트** 대화 상자의 **템플릿** 에서 **Visual C++** > **플랫폼 간** 을 차례로 선택한 후 **Native-Activity 애플리케이션(Android)** 템플릿을 선택합니다.
 
-1. 앱의 이름을 *MyAndroidApp*과 같이 지정하고 **확인**을 선택합니다.
+1. 앱의 이름을 *MyAndroidApp* 과 같이 지정하고 **확인** 을 선택합니다.
 
    ![Native Activity 프로젝트 만들기](../cross-platform/media/cppmdd-newproject.png "기본 활동 프로젝트 만들기")
 
@@ -37,13 +37,13 @@ Android Native Activity 앱을 만들기 전에 모든 시스템 요구 사항�
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
-1. Visual Studio에서 **파일** > **새** > **프로젝트**를 선택 합니다.
+1. Visual Studio에서 **파일** > **새로 만들기** > **프로젝트** 를 선택합니다.
 
-1. **새 프로젝트 만들기** 대화 상자에서 **Native-Activity 애플리케이션(Android)** 템플릿을 선택한 후 **다음**을 선택합니다.
+1. **새 프로젝트 만들기** 대화 상자에서 **Native-Activity 애플리케이션(Android)** 템플릿을 선택한 후 **다음** 을 선택합니다.
 
-1. **새 프로젝트 구성** 대화 상자의 *프로젝트 이름*에 **MyAndroidApp**과 같은 이름을 입력한 후 **만들기**를 선택합니다.
+1. **새 프로젝트 구성** 대화 상자의 **프로젝트 이름** 에 *MyAndroidApp* 과 같은 이름을 입력한 후 **만들기** 를 선택합니다.
 
    새 솔루션이 만들어지고 솔루션 탐색기가 열립니다.
 
@@ -51,9 +51,9 @@ Android Native Activity 앱을 만들기 전에 모든 시스템 요구 사항�
 
 새 Android Native Activity 앱 솔루션에는 다음 두 프로젝트가 포함되어 있습니다.
 
-- `MyAndroidApp.NativeActivity`에는 앱을 Android에서 Native Activity로 실행하기 위한 참조 및 글루 코드가 포함되어 있습니다. 글루 코드의 진입점 구현은 *main.cpp*에 있습니다. 미리 컴파일된 헤더는 *pch.h*에 있습니다. 이 Native Activity 앱 프로젝트는 공유 라이브러리 *.so* 파일로 컴파일되며 패키징 프로젝트에서 이 라이브러리를 선택합니다.
+- `MyAndroidApp.NativeActivity`에는 앱을 Android에서 Native Activity로 실행하기 위한 참조 및 글루 코드가 포함되어 있습니다. 글루 코드의 진입점 구현은 *main.cpp* 에 있습니다. 미리 컴파일된 헤더는 *.pch. h* 에 있습니다. 이 Native Activity 앱 프로젝트는 공유 라이브러리 *.so* 파일로 컴파일되며 패키징 프로젝트에서 이 라이브러리를 선택합니다.
 
-- `MyAndroidApp.Packaging`은 Android 디바이스 또는 에뮬레이터에서 배포하기 위한 *.apk* 파일을 만듭니다. 이 프로젝트에는 리소스와 매니페스트 속성을 설정하는 *AndroidManifest.xml* 파일이 포함되어 있습니다. Ant 빌드 프로세스를 제어하는 *build.xml* 파일도 포함되어 있습니다. 이 프로젝트는 기본적으로 시작 프로젝트로 설정되므로 Visual Studio에서 직접 배포 및 실행할 수 있습니다.
+- `MyAndroidApp.Packaging`은 Android 디바이스 또는 에뮬레이터에서 배포하기 위한 *.apk* 파일을 만듭니다. 이 프로젝트에는 리소스와 매니페스트 속성을 설정하는 *AndroidManifest.xml* 파일이 포함되어 있습니다. 또한 Ant 빌드 프로세스를 제어 하는 *build.xml* 파일도 포함 되어 있습니다. 이 프로젝트는 기본적으로 시작 프로젝트로 설정되므로 Visual Studio에서 직접 배포 및 실행할 수 있습니다.
 
 ## <a name="build-and-run-the-default-android-native-activity-app"></a>기본 Android Native Activity 앱 빌드 및 실행
 
@@ -61,13 +61,13 @@ Android Native Activity 앱을 만들기 전에 모든 시스템 요구 사항�
 
 ## <a name="to-build-and-run-the-default-native-activity-app"></a>기본 NativeActivity 앱을 빌드하고 실행하려면
 
-1. 아직 선택하지 않은 경우 **솔루션 플랫폼** 드롭다운 목록에서 **x86** 을 선택합니다.
+1. 아직 선택 하지 않은 경우 **솔루션 플랫폼** 드롭다운 목록에서 **x86** 을 선택 합니다.
 
      ![솔루션 플랫폼 드롭다운 x86 선택](../cross-platform/media/cppmdd-rc-na-solution-x86.png "솔루션 플랫폼 드롭다운 x86 선택")
 
-     **솔루션 플랫폼** 목록이 표시되지 않으면 **단추 추가/제거** 목록에서 **솔루션 플랫폼**을 선택한 후 플랫폼을 선택합니다.
+     **솔루션 플랫폼** 목록이 표시되지 않으면 **단추 추가/제거** 목록에서 **솔루션 플랫폼** 을 선택한 후 플랫폼을 선택합니다.
 
-1. 메뉴 모음에서 **빌드** > **솔루션 빌드**를 선택합니다.
+1. 메뉴 모음에서 **빌드** > **솔루션 빌드** 를 선택합니다.
 
      출력 창에 솔루션의 두 프로젝트에 대한 빌드 프로세스 출력이 표시됩니다.
 
@@ -75,7 +75,7 @@ Android Native Activity 앱을 만들기 전에 모든 시스템 요구 사항�
 
      다른 에뮬레이터를 설치했거나 Android 디바이스를 연결한 경우 배포 대상 드롭다운 목록에서 선택할 수 있습니다.
 
-1. **F5** 키를 눌러 디버깅을 시작하거나 **Shift**+**F5**를 눌러 디버깅하지 않고 시작합니다.
+1. **F5** 키를 눌러 디버깅을 시작 **하거나** + **f5** 키를 눌러 디버깅 하지 않고 시작 합니다.
 
    Android 에뮬레이터에서 기본 앱은 다음과 같이 표시됩니다.
 
@@ -83,6 +83,6 @@ Android Native Activity 앱을 만들기 전에 모든 시스템 요구 사항�
 
    에뮬레이터가 시작됩니다. 코드를 로드하고 배포하는 데 몇 초 정도 걸릴 수 있습니다. 앱이 시작되면 중단점을 설정하고 디버거를 사용하여 코드를 단계별로 실행하고 지역을 검토하고 값을 조사할 수 있습니다.
 
-1. **Shift**+**F5**를 눌러 디버깅을 중지합니다.
+1. **Shift** + **f5** 를 눌러 디버깅을 중지 합니다.
 
    에뮬레이터는 별도의 프로세스로 계속 실행됩니다. 코드를 편집 및 컴파일하여 동일한 에뮬레이터에 여러 번 배포할 수 있습니다.

@@ -6,16 +6,16 @@ helpviewer_keywords:
 - objects [C++], creating
 - instance constructors
 ms.assetid: 3e9f7211-313a-4a92-9584-337452e061a9
-ms.openlocfilehash: 3694dc72860892d778533de2e40898faf9cc287d
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: b8373eda52967db881d7d58477fcd2a9181ac3ee
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90042162"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924727"
 ---
 # <a name="constructors-c"></a>생성자 (C++)
 
-클래스 멤버를 초기화 하는 방법을 사용자 지정 하거나 클래스의 개체를 만들 때 함수를 호출 하려면 *생성자*를 정의 합니다. 생성자는 클래스와 같은 이름을 사용하며 반환 값이 없습니다. 여러 가지 방법으로 초기화를 사용자 지정 하기 위해 필요한 만큼 오버 로드 된 생성자를 정의할 수 있습니다. 일반적으로 생성자는 클래스 정의 또는 상속 계층 구조 외부의 코드에서 클래스의 개체를 만들 수 있도록 공용 액세스 가능성을 갖습니다. 그러나 생성자를 또는로 선언할 수도 있습니다 **`protected`** **`private`** .
+클래스 멤버를 초기화 하는 방법을 사용자 지정 하거나 클래스의 개체를 만들 때 함수를 호출 하려면 *생성자* 를 정의 합니다. 생성자는 클래스와 같은 이름을 사용하며 반환 값이 없습니다. 여러 가지 방법으로 초기화를 사용자 지정 하기 위해 필요한 만큼 오버 로드 된 생성자를 정의할 수 있습니다. 일반적으로 생성자는 클래스 정의 또는 상속 계층 구조 외부의 코드에서 클래스의 개체를 만들 수 있도록 공용 액세스 가능성을 갖습니다. 그러나 생성자를 또는로 선언할 수도 있습니다 **`protected`** **`private`** .
 
 생성자는 필요에 따라 멤버 init 목록을 사용할 수 있습니다. 이는 생성자 본문에서 값을 할당 하는 것 보다 더 효율적으로 클래스 멤버를 초기화 하는 방법입니다. 다음 예제에서는 `Box` 세 개의 오버 로드 된 생성자가 있는 클래스를 보여 줍니다. 마지막 두 가지 사용 멤버 init 목록은 다음과 같습니다.
 
@@ -68,7 +68,7 @@ int main()
 
 ## <a name="member-initializer-lists"></a><a name="member_init_list"></a> 멤버 이니셜라이저 목록
 
-생성자는 필요에 따라 생성자 본문을 실행 하기 전에 클래스 멤버를 초기화 하는 멤버 이니셜라이저 목록을 포함할 수 있습니다. 멤버 이니셜라이저 목록은 [std:: initializer_list \<T> ](../standard-library/initializer-list-class.md)형식의 *이니셜라이저 목록과* 동일 하지 않습니다.
+생성자는 필요에 따라 생성자 본문을 실행 하기 전에 클래스 멤버를 초기화 하는 멤버 이니셜라이저 목록을 포함할 수 있습니다. 멤버 이니셜라이저 목록은 [std:: initializer_list \<T>](../standard-library/initializer-list-class.md)형식의 *이니셜라이저 목록과* 동일 하지 않습니다.
 
 멤버 이니셜라이저 목록 사용은 멤버를 직접 초기화 하기 때문에 생성자의 본문에 값을 할당 하는 것 보다 좋습니다. 다음 예제에서는 멤버 이니셜라이저 목록이 콜론 뒤의 모든 **식별자 (인수)** 식으로 구성 된 것을 보여 줍니다.
 
@@ -202,7 +202,7 @@ Box boxes[3]{ { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
     Box (const Box& other) = delete;
 ```
 
-개체를 복사 하려고 하면 오류 *C2280: 삭제 된 함수를 참조*하려고 합니다.
+개체를 복사 하려고 하면 오류 *C2280: 삭제 된 함수를 참조* 하려고 합니다.
 
 ## <a name="move-constructors"></a><a name="move_constructors"></a> 이동 생성자
 
@@ -641,9 +641,9 @@ Derived d3 = d2 calls: Base(Base&)
 Derived d4 calls: Base()*/
 ```
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-**Visual Studio 2017 이상**: **`using`** **/std: c + + 17** 모드의 문은 파생 클래스의 생성자와 동일한 시그니처가 있는 경우를 제외 하 고 기본 클래스의 모든 생성자 범위를 가져옵니다. 일반적으로 파생 클래스에서 새 데이터 멤버나 생성자를 선언하지 않는 경우 상속 생성자를 사용하는 것이 가장 좋습니다.
+**Visual Studio 2017 이상** : **`using`** **/std: c + + 17** 모드의 문은 파생 클래스의 생성자와 동일한 시그니처가 있는 경우를 제외 하 고 기본 클래스의 모든 생성자 범위를 가져옵니다. 일반적으로 파생 클래스에서 새 데이터 멤버나 생성자를 선언하지 않는 경우 상속 생성자를 사용하는 것이 가장 좋습니다.
 
 ::: moniker-end
 
@@ -661,7 +661,7 @@ class Derived : T {
 
 ## <a name="constructors-and-composite-classes"></a><a name="constructors_in_composite_classes"></a> 생성자 및 복합 클래스
 
-클래스 형식 멤버를 포함 하는 클래스를 *복합 클래스*라고 합니다. 복합 클래스의 클래스 형식 멤버를 만들 때 생성자가 클래스의 자체 생성자보다 먼저 호출됩니다. 포함된 클래스에 기본 생성자가 없는 경우 복합 클래스의 생성자에서 초기화 목록을 사용해야 합니다. 이전 `StorageBox` 예제에서 `m_label` 멤버 변수의 형식을 새 `Label` 클래스로 변경할 경우 기본 클래스 생성자를 호출하고 `m_label` 생성자에서 `StorageBox` 변수를 초기화해야 합니다.
+클래스 형식 멤버를 포함 하는 클래스를 *복합 클래스* 라고 합니다. 복합 클래스의 클래스 형식 멤버를 만들 때 생성자가 클래스의 자체 생성자보다 먼저 호출됩니다. 포함된 클래스에 기본 생성자가 없는 경우 복합 클래스의 생성자에서 초기화 목록을 사용해야 합니다. 이전 `StorageBox` 예제에서 `m_label` 멤버 변수의 형식을 새 `Label` 클래스로 변경할 경우 기본 클래스 생성자를 호출하고 `m_label` 생성자에서 `StorageBox` 변수를 초기화해야 합니다.
 
 ```cpp
 class Label {

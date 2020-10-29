@@ -25,20 +25,20 @@ helpviewer_keywords:
 - Clean Build option
 - output files, setting directory
 - Unicode, creating C++ build configuration
-ms.openlocfilehash: bb301f63bfd1e6839d7893cdc03d61e021409666
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: eaaa2c7428809c05532642b0f9ac53146c6f01a9
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500070"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924286"
 ---
 # <a name="general-property-page-project"></a>일반 속성 페이지(프로젝트)
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 이 항목은 Windows 용 Visual Studio 프로젝트에 적용 됩니다. Linux 프로젝트의 경우 [Linux c + + 속성 페이지 참조](../../linux/prop-pages-linux.md)를 참조 하세요. Cmake 프로젝트의 경우 [Visual Studio의 cmake 프로젝트](../cmake-projects-in-visual-studio.md)를 참조 하세요. Android 프로젝트의 경우 [일반 프로젝트 속성 (Android c + +)](../../cross-platform/general-android-prop-page.md)을 참조 하세요. Android 메이크파일 프로젝트의 경우 [일반 프로젝트 속성 (Android c + + 메이크파일)](../../cross-platform/general-makefile-android-prop-page.md) 을 참조 하세요.
 
-솔루션 탐색기에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 하면 왼쪽 창의 **구성 속성** 노드 아래에 있는 **일반** 속성 페이지에 다음 속성이 표시 됩니다.
+솔루션 탐색기에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **속성** 을 선택 하면 왼쪽 창의 **구성 속성** 노드 아래에 있는 **일반** 속성 페이지에 다음 속성이 표시 됩니다.
 
 - **출력 디렉터리**
 
@@ -86,7 +86,7 @@ ms.locfileid: "91500070"
 
    Windows 대상 플랫폼의 경우 프로젝트에 필요한 Windows SDK의 버전을 지정합니다. Visual Studio 설치 관리자를 사용하여 C++ 워크로드를 설치할 경우 Windows SDK의 필수 부분도 설치됩니다. 컴퓨터에서 다른 Windows SDK 버전을 설치한 경우 설치된 각 버전의 SDK 도구가 드롭다운에 표시됩니다.
 
-   Windows 7 또는 Windows Vista를 대상으로 하려면 해당 플랫폼에 대해 Windows SDK 8.1이 이전 버전과 호환되므로 **8.1** 값을 사용합니다. 또한 targetver.h에서 **_WIN32_WINNT**에 대한 적절한 값을 정의해야 합니다. Windows 7의 경우 0x0601입니다. [WINVER 및 _WIN32_WINNT 수정](../../porting/modifying-winver-and-win32-winnt.md)을 참조하세요.
+   Windows 7 또는 Windows Vista를 대상으로 하려면 해당 플랫폼에 대해 Windows SDK 8.1이 이전 버전과 호환되므로 **8.1** 값을 사용합니다. 또한 targetver.h에서 **_WIN32_WINNT** 에 대한 적절한 값을 정의해야 합니다. Windows 7의 경우 0x0601입니다. [WINVER 및 _WIN32_WINNT 수정](../../porting/modifying-winver-and-win32-winnt.md)을 참조하세요.
 
    Visual Studio에 포함된 Windows XP 플랫폼 도구 집합을 설치하여 Windows XP 및 Windows 2003 Server 프로젝트를 빌드하는 현재 버전의 라이브러리를 사용할 수 있습니다. 이 플랫폼 도구 집합을 다운로드하고 사용하는 방법에 대한 자세한 내용은 [Windows XP용 프로그램 구성](../configuring-programs-for-windows-xp.md)을 참조하세요. 플랫폼 도구 집합을 변경하는 방법에 대한 자세한 내용은 [방법: 대상 프레임워크 및 플랫폼 도구 집합 수정](../how-to-modify-the-target-framework-and-platform-toolset.md)을 참조하세요.
 
@@ -100,9 +100,9 @@ ms.locfileid: "91500070"
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
-Visual Studio 2015 및 Visual Studio 2017에서 **솔루션 탐색기**의 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 하면 왼쪽 창의 **구성 속성** 노드 아래에 있는 **일반** 속성 페이지에 속성의 두 섹션이 표시 됩니다.
+Visual Studio 2015 및 Visual Studio 2017에서 **솔루션 탐색기** 의 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **속성** 을 선택 하면 왼쪽 창의 **구성 속성** 노드 아래에 있는 **일반** 속성 페이지에 속성의 두 섹션이 표시 됩니다.
 
 - 일반
 
@@ -112,7 +112,7 @@ Visual Studio 2015 및 Visual Studio 2017에서 **솔루션 탐색기**의 프�
 
 - **대상 플랫폼**
 
-   프로젝트를 실행할 플랫폼을 지정합니다. 예를 들어 Windows, Android 또는 iOS입니다. 값이 **Windows 10**이면 프로젝트가 유니버설 Windows 플랫폼을 대상으로 합니다. 이전 버전의 Windows를 대상으로 하는 경우 버전이 표시되지 않고 이 필드의 값이 단순히 **Windows**로 표시됩니다. 이 필드는 프로젝트를 만들 때 설정되는 읽기 전용 필드입니다.
+   프로젝트를 실행할 플랫폼을 지정합니다. 예를 들어 Windows, Android 또는 iOS입니다. 값이 **Windows 10** 이면 프로젝트가 유니버설 Windows 플랫폼을 대상으로 합니다. 이전 버전의 Windows를 대상으로 하는 경우 버전이 표시되지 않고 이 필드의 값이 단순히 **Windows** 로 표시됩니다. 이 필드는 프로젝트를 만들 때 설정되는 읽기 전용 필드입니다.
 
 - **대상 플랫폼 버전 (Visual Studio 2015)**
 
@@ -124,7 +124,7 @@ Visual Studio 2015 및 Visual Studio 2017에서 **솔루션 탐색기**의 프�
 
    Windows 대상 플랫폼의 경우 프로젝트에 필요한 Windows SDK의 버전을 지정합니다. Visual Studio 설치 관리자를 사용하여 C++ 워크로드를 설치할 경우 Windows SDK의 필수 부분도 설치됩니다. 컴퓨터에서 다른 Windows SDK 버전을 설치한 경우 설치된 각 버전의 SDK 도구가 드롭다운에 표시됩니다.
 
-   Windows 7 또는 Windows Vista를 대상으로 하려면 해당 플랫폼에 대해 Windows SDK 8.1이 이전 버전과 호환되므로 **8.1** 값을 사용합니다. 또한 targetver.h에서 **_WIN32_WINNT**에 대한 적절한 값을 정의해야 합니다. Windows 7의 경우 0x0601입니다. [WINVER 및 _WIN32_WINNT 수정](../../porting/modifying-winver-and-win32-winnt.md)을 참조하세요.
+   Windows 7 또는 Windows Vista를 대상으로 하려면 해당 플랫폼에 대해 Windows SDK 8.1이 이전 버전과 호환되므로 **8.1** 값을 사용합니다. 또한 targetver.h에서 **_WIN32_WINNT** 에 대한 적절한 값을 정의해야 합니다. Windows 7의 경우 0x0601입니다. [WINVER 및 _WIN32_WINNT 수정](../../porting/modifying-winver-and-win32-winnt.md)을 참조하세요.
 
    Visual Studio에 포함된 Windows XP 플랫폼 도구 집합을 설치하여 Windows XP 및 Windows 2003 Server 프로젝트를 빌드하는 현재 버전의 라이브러리를 사용할 수 있습니다. 이 플랫폼 도구 집합을 다운로드하고 사용하는 방법에 대한 자세한 내용은 [Windows XP용 프로그램 구성](../configuring-programs-for-windows-xp.md)을 참조하세요. 플랫폼 도구 집합을 변경하는 방법에 대한 자세한 내용은 [방법: 대상 프레임워크 및 플랫폼 도구 집합 수정](../how-to-modify-the-target-framework-and-platform-toolset.md)을 참조하세요.
 
@@ -150,7 +150,7 @@ Visual Studio 2015 및 Visual Studio 2017에서 **솔루션 탐색기**의 프�
 
 - **정리할 때 삭제할 확장명**
 
-   **정리** 옵션(**빌드** 메뉴)은 프로젝트 구성이 빌드되는 중간 디렉터리에서 파일을 삭제합니다. 이 속성을 통해 지정된 확장명을 가진 파일은 **정리**를 실행하거나 다시 빌드를 수행할 경우 삭제됩니다. 중간 디렉터리에 있는 이러한 확장명의 파일뿐 아니라 빌드 시스템은 위치에 관계없이 알려진 빌드 출력(.obj 파일과 같은 중간 출력 포함)도 삭제합니다. 와일드카드 문자를 지정할 수 있습니다.
+   **정리** 옵션( **빌드** 메뉴)은 프로젝트 구성이 빌드되는 중간 디렉터리에서 파일을 삭제합니다. 이 속성을 통해 지정된 확장명을 가진 파일은 **정리** 를 실행하거나 다시 빌드를 수행할 경우 삭제됩니다. 중간 디렉터리에 있는 이러한 확장명의 파일뿐 아니라 빌드 시스템은 위치에 관계없이 알려진 빌드 출력(.obj 파일과 같은 중간 출력 포함)도 삭제합니다. 와일드카드 문자를 지정할 수 있습니다.
 
    프로그래밍 방식으로 이 속성에 액세스하려면 <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.DeleteExtensionsOnClean%2A>을 참조하세요.
 
@@ -170,7 +170,7 @@ Visual Studio 2015 및 Visual Studio 2017에서 **솔루션 탐색기**의 프�
 
 ## <a name="project-defaults"></a>프로젝트 기본값
 
-프로젝트 기본값 섹션의 속성은 수정할 수 있는 기본 속성을 나타냅니다. 이러한 속성에 대한 정의는 *설치 디렉터리*\VC\VCProjectDefaults의 .props 파일에서 확인할 수 있습니다.
+프로젝트 기본값 섹션의 속성은 수정할 수 있는 기본 속성을 나타냅니다. 이러한 속성에 대한 정의는 *설치 디렉터리* \VC\VCProjectDefaults의 .props 파일에서 확인할 수 있습니다.
 
 - **구성 유형**
 
@@ -200,7 +200,7 @@ Visual Studio 2015 및 Visual Studio 2017에서 **솔루션 탐색기**의 프�
 
 - **MFC 사용**
 
-   MFC 프로젝트가 MFC DLL에 정적 또는 동적으로 연결하는지를 지정합니다. 비 MFC 프로젝트는 **표준 Windows 라이브러리 사용**을 선택하여 MFC를 사용할 때 포함되는 다양한 Win32 라이브러리에 연결할 수 있습니다.
+   MFC 프로젝트가 MFC DLL에 정적 또는 동적으로 연결하는지를 지정합니다. 비 MFC 프로젝트는 **표준 Windows 라이브러리 사용** 을 선택하여 MFC를 사용할 때 포함되는 다양한 Win32 라이브러리에 연결할 수 있습니다.
 
    프로그래밍 방식으로 이 속성에 액세스하려면 <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.useOfMfc%2A>을 참조하세요.
 

@@ -4,24 +4,24 @@ ms.date: 08/19/2019
 helpviewer_keywords:
 - OLE DB consumers, implementing
 ms.assetid: 13828167-23a4-4e94-8b6c-878262fda464
-ms.openlocfilehash: 9e93b40313a215dfe5872b33dc7d41641204a2f1
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 2d59989f8afd180b39153eed1ad0a20435aad9d4
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91508973"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92923908"
 ---
 # <a name="implementing-a-simple-consumer"></a>단순 소비자 구현
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 Visual Studio 2019 이상에서는 ATL OLE DB 소비자 마법사를 사용할 수 없습니다. 수동으로 기능을 추가할 수는 있습니다. 자세한 내용은 [마법사를 사용하지 않고 소비자 만들기](creating-a-consumer-without-using-a-wizard.md)를 참조하세요.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
-다음 항목에서는 **MFC 애플리케이션 마법사** 및 **ATL OLE DB 소비자 마법사**를 통해 만든 파일을 편집하여 간단한 소비자를 만드는 방법을 보여 줍니다. 이 예제는 다음 부분으로 이루어져 있습니다.
+다음 항목에서는 **MFC 애플리케이션 마법사** 및 **ATL OLE DB 소비자 마법사** 를 통해 만든 파일을 편집하여 간단한 소비자를 만드는 방법을 보여 줍니다. 이 예제는 다음 부분으로 이루어져 있습니다.
 
 - [소비자를 사용하여 데이터 검색](#retrieve)에서는 데이터베이스 테이블의 모든 데이터를 행 단위로 읽는 코드를 소비자에 구현하는 방법을 보여 줍니다.
 

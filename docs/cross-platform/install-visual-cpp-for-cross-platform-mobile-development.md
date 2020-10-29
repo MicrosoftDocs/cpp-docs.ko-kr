@@ -2,12 +2,12 @@
 title: C++를 사용하여 플랫폼 간 모바일 개발 설치
 ms.date: 10/17/2019
 ms.assetid: aaea6b8d-55eb-4427-8185-c050f855c257
-ms.openlocfilehash: 6a573b0f7ba261b97af9de24e67f733acac0532f
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: b9a6b78450969f5228ccf16cc7b0cff02a4d3b1e
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041954"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92923999"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>C++를 사용하여 플랫폼 간 모바일 개발 설치
 
@@ -17,7 +17,7 @@ Visual Studio에서 c + +를 사용 하 여 Windows 데스크톱 앱, 유니버�
 
 ## <a name="requirements"></a>요구 사항
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 - 설치 요구 사항은 [Visual Studio 제품군 시스템 요구 사항](/visualstudio/productinfo/vs2017-system-requirements-vs)을 참조 하세요.
 
@@ -25,7 +25,7 @@ Visual Studio에서 c + +를 사용 하 여 Windows 데스크톱 앱, 유니버�
    > Windows 7 또는 Windows Server 2008 R2를 사용하는 경우 Windows 데스크톱 애플리케이션용 코드, Android Native Activity 앱 및 라이브러리, iOS용 앱 및 코드 라이브러리를 개발할 수 있지만 Windows 스토어 또는 UWP 앱은 개발할 수 없습니다.
 
 ::: moniker-end
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 - 설치 요구 사항은 [Visual Studio 제품군 시스템 요구 사항](/visualstudio/releases/2019/system-requirements)을 참조 하세요.
 
@@ -60,17 +60,17 @@ Visual Studio 설치 관리자에는 **C++를 사용한 모바일 개발** 워�
 - iOS 플랫폼을 대상으로 하는 C++ 코드를 빌드하려면 C++ iOS 개발 도구가 필요합니다.
 
 > [!NOTE]
-> Visual Studio 2015를 사용하는 경우 [플랫폼 간 모바일 개발용 Visual C++ 설치(Visual Studio 2015)](install-visual-cpp-for-cross-platform-mobile-development.md?view=vs-2015&preserve-view=true)를 참조하세요.
+> Visual Studio 2015를 사용하는 경우 [플랫폼 간 모바일 개발용 Visual C++ 설치(Visual Studio 2015)](install-visual-cpp-for-cross-platform-mobile-development.md?view=msvc-140&preserve-view=true)를 참조하세요.
 
 ### <a name="install-the-mobile-development-with-c-workload"></a>C++를 사용한 모바일 개발 워크로드 설치
 
-1. **시작** 메뉴에서 **Visual Studio 설치 관리자**를 실행합니다.
+1. **시작** 메뉴에서 **Visual Studio 설치 관리자** 를 실행합니다.
 
-1. Visual Studio를 이미 설치한 경우 수정하려는 설치된 Visual Studio 버전의 **수정** 단추를 선택합니다. 또는 **설치**를 선택하여 Visual Studio를 설치합니다.
+1. Visual Studio를 이미 설치한 경우 수정하려는 설치된 Visual Studio 버전의 **수정** 단추를 선택합니다. 또는 **설치** 를 선택하여 Visual Studio를 설치합니다.
 
-1. **워크로드** 탭을 선택한 상태에서 아래로 스크롤하여 Visual Studio 설치 관리자에서 **C++를 사용한 모바일 개발**을 선택합니다. 이 워크로드를 선택하면 C++ 개발에 필요한 다른 구성 요소도 선택됩니다. 동시에 설치할 다른 워크로드와 개별 구성 요소를 선택할 수도 있습니다. UWP를 대상으로 하는 플랫폼 간 코드를 빌드하려면 **유니버설 Windows 플랫폼 개발** 워크로드를 선택합니다.
+1. **워크로드** 탭을 선택한 상태에서 아래로 스크롤하여 Visual Studio 설치 관리자에서 **C++를 사용한 모바일 개발** 을 선택합니다. 이 워크로드를 선택하면 C++ 개발에 필요한 다른 구성 요소도 선택됩니다. 동시에 설치할 다른 워크로드와 개별 구성 요소를 선택할 수도 있습니다. UWP를 대상으로 하는 플랫폼 간 코드를 빌드하려면 **유니버설 Windows 플랫폼 개발** 워크로드를 선택합니다.
 
-1. **설치 세부 정보** 창에서 **C++를 사용한 모바일 개발**을 확장합니다. **선택 사항** 섹션에서 NDK의 추가 버전, Google Android Emulator, Intel Hardware Accelerated Execution Manager 및 IncrediBuild 빌드 가속화 도구를 선택할 수 있습니다.
+1. **설치 세부 정보** 창에서 **C++를 사용한 모바일 개발** 을 확장합니다. **선택 사항** 섹션에서 NDK의 추가 버전, Google Android Emulator, Intel Hardware Accelerated Execution Manager 및 IncrediBuild 빌드 가속화 도구를 선택할 수 있습니다.
 
 1. 기본적으로 워크로드에는 하나 이상의 Android SDK 설정 구성 요소가 포함됩니다. Android SDK의 추가 버전을 사용할 수 있습니다. 설치에 다른 버전을 추가하려면 **개별 구성 요소** 탭을 선택한 다음, **SDK, 라이브러리 및 프레임워크** 섹션으로 아래로 스크롤하여 선택합니다.
 
@@ -99,13 +99,13 @@ Android SDK 에뮬레이터 중 일부를 사용 하려면 하드웨어 가속�
 
 ### <a name="to-set-the-paths-for-third-party-tools"></a>타사 도구에 대한 경로를 설정하려면
 
-1. Visual Studio 메뉴 모음에서 **도구**  >  **옵션**을 선택 합니다.
+1. Visual Studio 메뉴 모음에서 **도구**  >  **옵션** 을 선택 합니다.
 
-1. **옵션** 대화 상자에서 **플랫폼 간** > **C++** > **Android**를 선택합니다.
+1. **옵션** 대화 상자에서 **플랫폼 간** > **C++** > **Android** 를 선택합니다.
 
    ![Android 도구 경로 옵션](../cross-platform/media/cppmdd-options-android.png "Android 도구 경로 옵션")
 
-1. 도구에서 사용되는 경로를 변경하려면 경로 옆에 있는 확인란을 선택하고 텍스트 상자에서 폴더 경로를 편집합니다. 찾아보기 단추(**...**)를 사용하여 **위치 선택** 대화 상자를 열고 폴더를 선택할 수도 있습니다.
+1. 도구에서 사용되는 경로를 변경하려면 경로 옆에 있는 확인란을 선택하고 텍스트 상자에서 폴더 경로를 편집합니다. 찾아보기 단추( **...** )를 사용하여 **위치 선택** 대화 상자를 열고 폴더를 선택할 수도 있습니다.
 
 1. **확인** 을 선택하여 사용자 지정 도구 폴더 위치를 저장합니다.
 

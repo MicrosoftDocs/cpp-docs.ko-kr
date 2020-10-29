@@ -5,22 +5,22 @@ ms.date: 09/10/2020
 helpviewer_keywords:
 - preprocessor, experimental
 - preprocessor, new
-ms.openlocfilehash: c95f923d8c38250958e26431b61a71a1e6a7fdda
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 5327a8148f78a07e222fae7fb92e6ed741d12011
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041369"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924586"
 ---
 # <a name="msvc-new-preprocessor-overview"></a>MSVC 새 전처리기 개요
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 Visual Studio 2015에서는 표준 c + + 또는 C99를 따르지 않는 기존 전처리기를 사용 합니다. Visual Studio 2019 버전 16.5부터 c + + 20 표준에 대 한 새로운 전처리기 지원은 기능 완료입니다. [/Zc: 전처리기](../build/reference/zc-preprocessor.md) 컴파일러 스위치를 사용 하 여 이러한 변경 내용을 사용할 수 있습니다. 새 전처리기의 실험적 버전은 Visual Studio 2017 버전 15.8 이상에서 [/sb: 전처리기](../build/reference/experimental-preprocessor.md) 컴파일러 스위치를 사용 하 여 사용할 수 있습니다. Visual Studio 2017 및 Visual Studio 2019에서 새로운 전처리기를 사용 하는 방법에 대 한 자세한 내용을 확인할 수 있습니다. 기본 설정된 버전의 Visual Studio에 대한 설명서를 보려면 **버전** 선택기 컨트롤을 사용하세요. 이 페이지의 목차 맨 위에 있습니다.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 Microsoft c + + 전처리기를 업데이트 하 여 표준 준수를 개선 하 고, 위해 노력해 왔으며 버그를 수정 하 고, 공식적으로 정의 되지 않은 일부 동작을 변경 하 고 있습니다. 매크로 정의의 오류에 대해 경고 하는 새 진단도 추가 했습니다.
 

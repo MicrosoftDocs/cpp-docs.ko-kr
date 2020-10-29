@@ -1,47 +1,47 @@
-﻿---
-title: 다중 스레드 C 프로그램 샘플
+---
+title: 샘플 다중 스레드 C 프로그램
 ms.date: 08/09/2019
 ms.assetid: 4706f6cd-ff9c-4dbf-99a2-1c999b568f17
-ms.openlocfilehash: eb1a07558dd9446e167c27ad08891f88c37fb4ec
-ms.sourcegitcommit: b3d19b5f59f3a5d90c24f9f16c73bad4c5eb6944
+ms.openlocfilehash: 355024b995dc638b89a335983bd2e0f2cb0d96ce
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71195809"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924770"
 ---
-# <a name="sample-multithread-c-program"></a>다중 스레드 C 프로그램 샘플
+# <a name="sample-multithread-c-program"></a>샘플 다중 스레드 C 프로그램
 
-Bounce.c는 문자 `a` 또는 `A`가 입력될 때마다 새 스레드를 만드는 다중 스레드 프로그램 샘플입니다. 각 스레드는 화면 주위에 다른 색의 문자를 바운스합니다. 최대 32개의 스레드를 만들 수 있습니다. `q` 또는 `Q`를 입력하면 프로그램이 정상적으로 종료됩니다.
+바운스. c는 문자 `a` 또는 형식이 지정 될 때마다 새 스레드를 만드는 샘플 다중 스레드 프로그램입니다. `A` 각 스레드는 화면 주위에 다른 색의 문자를 바운스 합니다. 최대 32 스레드를 만들 수 있습니다. 프로그램의 정상적인 종료는 `q` 또는가 입력 될 때 발생 합니다 `Q` .
 
 ## <a name="compile-and-link-a-multithread-program"></a>다중 스레드 프로그램 컴파일 및 연결
 
 프로그램은 기본적으로 다중 스레드로 컴파일됩니다.
 
-### <a name="to-compile-and-link-the-multithread-program-bouncec-from-within-the-development-environment"></a>개발 환경 내에서 다중 스레드 프로그램 Bounce.c를 컴파일하고 링크하려면
+### <a name="to-compile-and-link-the-multithread-program-bouncec-from-within-the-development-environment"></a>개발 환경 내에서 다중 스레드 프로그램을 컴파일 및 연결 하려면
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
-1. **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 차례로 선택합니다.
+1. **파일** 메뉴에서 **새로 만들기** > **프로젝트** 를 선택합니다.
 
-1. **새 프로젝트 만들기** 대화 상자에서, **C++**, **Windows** 및 **콘솔** 태그를 포함하는 **콘솔 앱** 템플릿을 선택합니다. **다음**을 선택하여 계속 진행합니다.
+1. **새 프로젝트 만들기** 대화 상자에서 **c + +** , **Windows** 및 **콘솔** 태그를 포함 하는 **콘솔 응용 프로그램** 템플릿을 선택 합니다. 계속 진행하려면 **다음** 을 선택합니다.
 
-1. **새 프로젝트 구성** 대화 상자에서 프로젝트 이름 (예:"Bounce")을 입력합니다. **만들기**를 선택하여 계속합니다.
+1. **새 프로젝트 구성** 대화 상자에서 프로젝트 이름 (예: "바운스")을 입력 합니다. **만들기** 를 선택 하 여 계속 합니다.
 
-1. **솔루션 탐색기** 창에서 프로젝트 아래의 **소스 파일** 폴더를 열고 확장명이 .c인 소스 파일의 이름을 변경합니다.
+1. **솔루션 탐색기** 창에서 프로젝트 아래의 **소스 파일** 폴더를 열고 확장명이 .c 인 소스 파일의 이름을 변경 합니다.
 
-1. 편집 창에서 기존 소스 코드를 삭제하고 샘플 코드로 바꿉니다.
+1. 편집 창에서 기존 소스 코드를 삭제 하 고 샘플 코드로 바꿉니다.
 
-1. **빌드** 메뉴에서 **솔루션 빌드**를 선택합니다.
+1. **빌드** 메뉴에서 **솔루션 빌드** 를 선택합니다.
 
 1. **F5** 키를 눌러 디버거에서 프로그램을 시작 합니다.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
-1. **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 차례로 선택합니다.
+1. **파일** 메뉴에서 **새로 만들기** > **프로젝트** 를 선택합니다.
 
-1. **새 프로젝트** 대화 상자의 왼쪽 창에서 **시각적 C++ 개체** 를 선택한 다음 가운데 창에서 **빈 프로젝트** 를 선택 합니다.
+1. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C++** 을 선택한 다음 가운데 창에서 **빈 프로젝트** 를 선택 합니다.
 
 1. **이름** 입력란에 프로젝트 이름 (예: "바운스")을 입력 합니다. **확인** 을 선택 하 여 빈 프로젝트를 만듭니다.
 
@@ -53,9 +53,9 @@ Bounce.c는 문자 `a` 또는 `A`가 입력될 때마다 새 스레드를 만드
 
 ::: moniker-end
 
-### <a name="to-compile-and-link-the-multithread-program-bouncec-from-the-command-line"></a>명령줄에서 Bounce.c 다중 스레드 프로그램을 컴파일하고 링크하려면
+### <a name="to-compile-and-link-the-multithread-program-bouncec-from-the-command-line"></a>명령줄에서 다중 스레드 프로그램을 컴파일 및 연결 하려면
 
-1. 다음 명령을 사용하여 프로그램을 컴파일하고 링크합니다.
+1. 프로그램을 컴파일하고 연결 합니다.
 
     ```cmd
     cl bounce.c
@@ -63,7 +63,7 @@ Bounce.c는 문자 `a` 또는 `A`가 입력될 때마다 새 스레드를 만드
 
 ## <a name="example"></a>예제
 
-명령줄에서 빌드하려면 샘플을 복사하여 확장자가 .c인 소스 파일에 저장합니다. IDE에서 템플릿으로 만든 소스 코드를 이 샘플로 바꿉니다.
+명령줄에서 빌드하려면 확장명이 .c 인 소스 파일에이 샘플을 복사 하 여 저장 합니다. IDE에서 템플릿에서 만든 소스 코드를이 샘플로 바꿉니다.
 
 ```C
 // sample_multithread_c_program.c
@@ -266,4 +266,4 @@ void ClearScreen(void)
 
 ## <a name="see-also"></a>참고 항목
 
-[C 및 Win32를 사용한 다중 스레딩](multithreading-with-c-and-win32.md)
+[C 및 Wind32를 사용한 다중 스레딩](multithreading-with-c-and-win32.md)
