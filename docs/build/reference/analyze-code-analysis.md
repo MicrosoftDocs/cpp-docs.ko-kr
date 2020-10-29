@@ -12,12 +12,12 @@ helpviewer_keywords:
 - -analyze compiler option [C++]
 - analyze compiler option [C++]
 ms.assetid: 81da536a-e030-4bd4-be18-383927597d08
-ms.openlocfilehash: e970872e89132aed52190b8688f2cdaccab5ea6f
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: dcf44f1d282a9dd39205aecb4e75b59a6e8481f9
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500087"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92919100"
 ---
 # <a name="analyze-code-analysis"></a>`/analyze` (코드 분석)
 
@@ -25,7 +25,7 @@ ms.locfileid: "91500087"
 
 ## <a name="syntax"></a>구문
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 > **`/analyze`**\
 > **`/analyze-`**\
@@ -42,7 +42,7 @@ ms.locfileid: "91500087"
 > **`/analyze:WX-`**
 
 ::: moniker-end
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 > **`/analyze`**\
 > **`/analyze-`**\
@@ -68,10 +68,10 @@ ms.locfileid: "91500087"
 자세한 분석기 결과는 원본 파일과 동일한 기본 이름 및 확장명을 가진 파일에 XML로 작성 됩니다 *`.pftlog`* . **`/analyze:autolog-`** 이 로그 파일을 사용 하지 않도록 설정 합니다.
 
 **`/analyze:autolog:ext`***확장*\
-자세한 분석기 결과는 원본 파일과 동일한 기본 이름 및 *확장명*확장명을 가진 파일에 XML로 작성 됩니다.
+자세한 분석기 결과는 원본 파일과 동일한 기본 이름 및 *확장명* 확장명을 가진 파일에 XML로 작성 됩니다.
 
 **`/analyze:log`***파일 이름*\
-자세한 분석기 결과는 파일 *이름*으로 지정 된 파일에 XML로 기록 됩니다.
+자세한 분석기 결과는 파일 *이름* 으로 지정 된 파일에 XML로 기록 됩니다.
 
 **`/analyze:max_paths`***number*\
 이 옵션에 사용 되는 *숫자* 매개 변수는 분석할 코드 경로의 최대 수를 지정 합니다. 이 매개 변수를 지정 하지 않으면 기본적으로 256이 표시 됩니다. 값이 클수록 더 철저 하 게 확인할 수 있지만 분석에 시간이 더 오래 걸릴 수 있습니다.
@@ -82,14 +82,14 @@ ms.locfileid: "91500087"
 **`/analyze:plugin`***플러그 인-dll*\
 코드 분석 실행의 일부로 지정 된 PREfast 플러그 인을 사용 하도록 설정 합니다.
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 LocalEspC.dll는 C261XX 경고 범위에서 동시성 관련 코드 분석 검사를 구현 하는 플러그 인입니다. 예: [26100](../../code-quality/c26100.md), [C26101](../../code-quality/c26101.md), ...,  [C26167](../../code-quality/c26167.md).
 
 LocalEspC.dll를 실행 하려면 다음 컴파일러 옵션을 사용 합니다. **`/analyze:plugin LocalEspC.dll`**
 
 ::: moniker-end
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 ConcurrencyCheck.dll는 C261XX 경고 범위에서 동시성 관련 코드 분석 검사를 구현 합니다. 예: [26100](../../code-quality/c26100.md), [C26101](../../code-quality/c26101.md), ...,  [C26167](../../code-quality/c26167.md).
 
@@ -114,7 +114,7 @@ set Esp.Extensions=CppCoreCheck.dll
 **`/analyze:quiet`**\
 콘솔 또는 Visual Studio **출력** 창에 대 한 분석기 출력을 끕니다.
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 **`/analyze:ruleset`***file_path. 규칙 집합*\
 사용자가 직접 만들 수 있는 사용자 지정 규칙 집합을 포함 하 여 분석할 규칙 집합을 지정할 수 있습니다. 이 스위치가 설정 되 면 규칙 엔진이 실행 되기 전에 지정 된 규칙 집합의 멤버가 아닌 멤버를 제외 하기 때문에 더 효율적입니다. 그렇지 않으면 엔진이 모든 규칙을 검사 합니다.
@@ -160,4 +160,4 @@ Visual Studio와 함께 제공 되는 규칙 집합은에 있습니다 *`%VSINST
 ## <a name="see-also"></a>참고 항목
 
 [MSVC 컴파일러 옵션](compiler-options.md)\
-[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)
+[MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)

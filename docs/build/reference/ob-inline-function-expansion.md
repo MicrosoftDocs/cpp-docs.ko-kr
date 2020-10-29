@@ -1,4 +1,4 @@
-﻿---
+---
 title: /Ob(인라인 함수 확장)
 ms.date: 08/08/2019
 f1_keywords:
@@ -24,28 +24,28 @@ helpviewer_keywords:
 - Ob0 compiler option [C++]
 - inline expansion, compiler option
 ms.assetid: f134e6df-e939-4980-a01d-47425dbc562a
-ms.openlocfilehash: 238e5533c062678c59b61ebeba71eee3231fb5fb
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 56a755de69b4f2ce6b659959eca5b25a6d75bfdc
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215220"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92921193"
 ---
 # <a name="ob-inline-function-expansion"></a>/Ob(인라인 함수 확장)
 
-함수의 인라인 확장을 제어합니다. 기본적으로 최적화할 때 확장은 컴파일러의 판단에 따라 *자동 인라이닝*이라고 하는 모든 함수에서 발생 합니다.
+함수의 인라인 확장을 제어합니다. 기본적으로 최적화할 때 확장은 컴파일러의 판단에 따라 *자동 인라이닝* 이라고 하는 모든 함수에서 발생 합니다.
 
 ## <a name="syntax"></a>구문
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
-> **/Ob**{**0** | **1** | **2** | **3**}
+> **/Ob** { **0** | **1** | **2** | **3** }
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
-> **/Ob**{**0** | **1** | **2**}
+> **/Ob** { **0** | **1** | **2** }
 
 ::: moniker-end
 
@@ -60,10 +60,10 @@ ms.locfileid: "87215220"
 **2**\
 [/O1](o1-o2-minimize-size-maximize-speed.md) 과 [/o1](o1-o2-minimize-size-maximize-speed.md)의 기본값입니다. 컴파일러가 인라이닝 되지 않도록 명시적으로 표시 되지 않은 모든 함수를 확장할 수 있습니다.
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 **3**\
-이 옵션은 **/Ob2**보다 더 적극적인 인라인 인라인을 지정 하지만 동일한 제한 사항이 있습니다. **/Ob3** 옵션은 Visual Studio 2019부터 사용할 수 있습니다.
+이 옵션은 **/Ob2** 보다 더 적극적인 인라인 인라인을 지정 하지만 동일한 제한 사항이 있습니다. **/Ob3** 옵션은 Visual Studio 2019부터 사용할 수 있습니다.
 
 ::: moniker-end
 
@@ -74,7 +74,7 @@ ms.locfileid: "87215220"
 인라인 확장의 후보로 고려 하지 않도록 함수를 제외 하려면 [__declspec (noinline)](../../cpp/noinline.md)를 사용 하거나 [#pragma auto_inline (off)](../../preprocessor/auto-inline.md) 지시문으로 표시 된 영역을 사용 하거나 [auto_inline (on)](../../preprocessor/auto-inline.md) 지시문을 #pragma 수 있습니다. 컴파일러에 인라인 힌트를 제공 하는 다른 방법에 대 한 자세한 내용은 [#pragma 내장](../../preprocessor/intrinsic.md) 지시문을 참조 하십시오.
 
 > [!NOTE]
-> 프로 파일링 테스트 실행에서 수집 되는 정보는 **/Ob**, **/os**또는 **/ot**를 지정 했기 때문에 다르게 적용 되는 최적화를 재정의 합니다. 자세한 내용은 [프로필 기반 최적화](../profile-guided-optimizations.md)를 참조하세요.
+> 프로 파일링 테스트 실행에서 수집 되는 정보는 **/Ob** , **/os** 또는 **/ot** 를 지정 했기 때문에 다르게 적용 되는 최적화를 재정의 합니다. 자세한 내용은 [프로필 기반 최적화](../profile-guided-optimizations.md)를 참조하세요.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
@@ -84,15 +84,15 @@ ms.locfileid: "87215220"
 
 1. **인라인 함수 확장** 속성을 수정 합니다.
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
-**/Ob3** 옵션은 **인라인 함수 확장** 속성에서 사용할 수 없습니다. **/Sv3**을 설정 하려면:
+**/Ob3** 옵션은 **인라인 함수 확장** 속성에서 사용할 수 없습니다. **/Sv3** 을 설정 하려면:
 
 1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. **구성 속성** > **C/C++** > **명령줄** 속성 페이지를 선택합니다.
 
-1. **추가 옵션**에서 **/ob3** 을 입력 합니다.
+1. **추가 옵션** 에서 **/ob3** 을 입력 합니다.
 
 ::: moniker-end
 
@@ -104,4 +104,4 @@ ms.locfileid: "87215220"
 
 [/O 옵션 (코드 최적화)](o-options-optimize-code.md)\
 [MSVC 컴파일러 옵션](compiler-options.md)\
-[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)
+[MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)

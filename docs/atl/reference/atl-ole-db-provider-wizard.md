@@ -4,24 +4,24 @@ ms.date: 05/09/2019
 helpviewer_keywords:
 - ATL projects, adding ATL OLE DB providers
 ms.assetid: cf91ba78-01d1-4d12-b673-e95d96bfbebe
-ms.openlocfilehash: 91384d6c61368ee56ed303622e5c1bdfad09bd8a
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
-ms.translationtype: HT
+ms.openlocfilehash: 43b8ed4507b004f1e78bc1b9dda64c44ff56e1d7
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65706972"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92921141"
 ---
 # <a name="atl-ole-db-provider-wizard"></a>ATL OLE DB 공급자 마법사
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 Visual Studio 2019 이상에서는 이 마법사를 사용할 수 없습니다.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 Visual Studio 2008부터, 이 마법사에서 생성된 등록 스크립트는 해당 COM 구성 요소를 **HKEY_LOCAL_MACHINE** 대신 **HKEY_CURRENT_USER** 아래에 등록합니다. 이 동작을 수정하려면 ATL 마법사의 **모든 사용자에 대해 구성 요소 등록** 옵션을 설정합니다.
 
@@ -45,13 +45,13 @@ Visual Studio 2008부터, 이 마법사에서 생성된 등록 스크립트는 �
 
    ProgID(프로그래밍 ID)는 애플리케이션에서 GUID 대신 사용할 수 있는 텍스트 문자열입니다. ProgID 이름은 *Projectname.Coclassname* 형식을 사용합니다.
 
-- **Version**
+- **버전**
 
    공급자의 버전 번호입니다. 기본값은 1입니다.
 
 - **DataSource 클래스**
 
-   C*Shortname*Source 형식의 데이터 소스 클래스 이름입니다.
+   C *Shortname* Source 형식의 데이터 소스 클래스 이름입니다.
 
 - **DataSource .h 파일**
 
@@ -59,7 +59,7 @@ Visual Studio 2008부터, 이 마법사에서 생성된 등록 스크립트는 �
 
 - **세션 클래스**
 
-   C*Shortname*Session 형식의 세션 클래스 이름입니다.
+   C *Shortname* Session 형식의 세션 클래스 이름입니다.
 
 - **세션 .h 파일**
 
@@ -67,7 +67,7 @@ Visual Studio 2008부터, 이 마법사에서 생성된 등록 스크립트는 �
 
 - **명령 클래스**
 
-   C*Shortname*Command 형식의 명령 클래스 이름입니다.
+   C *Shortname* Command 형식의 명령 클래스 이름입니다.
 
 - **명령 .h 파일**
 
@@ -75,7 +75,7 @@ Visual Studio 2008부터, 이 마법사에서 생성된 등록 스크립트는 �
 
 - **행 집합 클래스**
 
-   C*Shortname*Rowset 형식의 행 집합 클래스 이름입니다.
+   C *Shortname* Rowset 형식의 행 집합 클래스 이름입니다.
 
 - **행 집합 .h 파일**
 

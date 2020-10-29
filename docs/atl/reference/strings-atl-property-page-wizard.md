@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - ATL Property Page Wizard, strings
 ms.assetid: 00547db6-911f-49eb-92e1-2ba67079d4df
-ms.openlocfilehash: 04178c435bbd0ca80e412efc39a1b736062d95e7
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
-ms.translationtype: HT
+ms.openlocfilehash: 61378e0aa2cee94420849195a94203be078418ff
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65706772"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92921115"
 ---
 # <a name="strings-atl-property-page-wizard"></a>문자열, ATL 속성 페이지 마법사
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 Visual Studio 2019 이상에서는 ATL 속성 페이지 마법사를 사용할 수 없습니다.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 속성 페이지와 관련된 텍스트를 제공합니다.
 
@@ -35,7 +35,7 @@ Visual Studio 2019 이상에서는 ATL 속성 페이지 마법사를 사용할 �
 
 - **도움말 파일**
 
-   속성 페이지를 사용하는 방법을 설명하는 도움말 파일의 이름을 설정합니다. 이 이름에 경로를 포함하면 안 됩니다. 사용자가 **도움말**을 누르면 속성 페이지 레지스트리 항목에서 해당 CLSID 아래에 있는 HelpDir 키 값에 명명된 디렉터리의 도움말 파일이 프레임에서 열립니다.
+   속성 페이지를 사용하는 방법을 설명하는 도움말 파일의 이름을 설정합니다. 이 이름에 경로를 포함하면 안 됩니다. 사용자가 **도움말** 을 누르면 속성 페이지 레지스트리 항목에서 해당 CLSID 아래에 있는 HelpDir 키 값에 명명된 디렉터리의 도움말 파일이 프레임에서 열립니다.
 
 ::: moniker-end
 

@@ -4,24 +4,24 @@ ms.date: 05/09/2019
 helpviewer_keywords:
 - OLE DB consumers, wizard-generated classes and methods
 ms.assetid: d80ee51c-8bb3-4dca-8760-5808e0fb47b4
-ms.openlocfilehash: f3bcc799f2a9591cfe7b2fc364b03161b5c0da33
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 15d41aabee174a409ad11e4422292bcea5f10bbf
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500691"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92919126"
 ---
 # <a name="consumer-wizard-generated-methods"></a>소비자 마법사 생성 메서드
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 Visual Studio 2019 이상에서는 ATL OLE DB 소비자 마법사를 사용할 수 없습니다. 수동으로 기능을 추가할 수는 있습니다.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
-**ATL OLE DB 소비자 마법사** 및 **MFC 애플리케이션 마법사**는 특정 함수를 생성하며, 이러한 함수에 대해 알고 있어야 합니다. 일부 메서드는 특성 사용 프로젝트에서 다르게 구현되므로 몇 가지 주의할 사항이 있습니다. 아래에서 각각의 경우에 대해 설명합니다. 삽입된 코드를 보는 방법에 대한 자세한 내용은 [삽입된 코드 디버그](/visualstudio/debugger/how-to-debug-injected-code)를 참조하세요.
+**ATL OLE DB 소비자 마법사** 및 **MFC 애플리케이션 마법사** 는 특정 함수를 생성하며, 이러한 함수에 대해 알고 있어야 합니다. 일부 메서드는 특성 사용 프로젝트에서 다르게 구현되므로 몇 가지 주의할 사항이 있습니다. 아래에서 각각의 경우에 대해 설명합니다. 삽입된 코드를 보는 방법에 대한 자세한 내용은 [삽입된 코드 디버그](/visualstudio/debugger/how-to-debug-injected-code)를 참조하세요.
 
 - `OpenAll` - 데이터 소스와 행 집합을 열고, 사용 가능한 경우 책갈피를 켭니다.
 
