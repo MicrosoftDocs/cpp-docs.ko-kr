@@ -5,12 +5,12 @@ helpviewer_keywords:
 - asynchronous agents, creating
 - agent class, example
 ms.assetid: 730f42ce-6d58-4753-b948-fd9c9ef2ce6c
-ms.openlocfilehash: 4e67b3fc3363955ae02973847912c021eca95ded
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9d9fdd3ddface01f84f6426dd334600cf88b84e7
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219484"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924833"
 ---
 # <a name="walkthrough-creating-an-agent-based-application"></a>연습: 에이전트 기반 애플리케이션 만들기
 
@@ -28,7 +28,7 @@ ms.locfileid: "87219484"
 
 - [동기화 데이터 구조](../../parallel/concrt/synchronization-data-structures.md)
 
-## <a name="sections"></a><a name="top"></a>섹션이
+## <a name="sections"></a><a name="top"></a> 섹션이
 
 이 연습에서는 다음 작업을 수행 하는 방법을 보여 줍니다.
 
@@ -38,55 +38,55 @@ ms.locfileid: "87219484"
 
 - [응용 프로그램에서 file_reader 클래스 사용](#useagentclass)
 
-## <a name="creating-the-console-application"></a><a name="createapplication"></a>콘솔 응용 프로그램 만들기
+## <a name="creating-the-console-application"></a><a name="createapplication"></a> 콘솔 응용 프로그램 만들기
 
 이 섹션에서는 프로그램에서 사용 되는 헤더 파일을 참조 하는 c + + 콘솔 응용 프로그램을 만드는 방법을 보여 줍니다. 초기 단계는 사용 중인 Visual Studio 버전에 따라 달라 집니다. 기본 설정된 버전의 Visual Studio에 대한 설명서를 보려면 **버전** 선택기 컨트롤을 사용하세요. 이 페이지의 목차 맨 위에 있습니다.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ### <a name="to-create-a-c-console-application-in-visual-studio-2019"></a>Visual Studio 2019에서 c + + 콘솔 응용 프로그램을 만들려면
 
-1. 주 메뉴에서 **파일** > **새로 만들기** > **프로젝트**를 선택하여 **새 프로젝트 만들기** 대화 상자를 엽니다.
+1. 주 메뉴에서 **파일** > **새로 만들기** > **프로젝트** 를 선택하여 **새 프로젝트 만들기** 대화 상자를 엽니다.
 
-1. 대화 상자 맨 위에서 **언어**를 **C++** 로 설정하고 **플랫폼**을 **Windows**로 설정하고 **프로젝트 형식**을 **콘솔**로 설정합니다.
+1. 대화 상자 맨 위에서 **언어** 를 **C++** 로 설정하고 **플랫폼** 을 **Windows** 로 설정하고 **프로젝트 형식** 을 **콘솔** 로 설정합니다.
 
-1. 필터링된 프로젝트 형식 목록에서 **콘솔 앱**을 선택한 후 **다음**을 선택합니다. 다음 페이지에서 `BasicAgent` 프로젝트의 이름으로를 입력 하 고 원하는 경우 프로젝트 위치를 지정 합니다.
+1. 필터링된 프로젝트 형식 목록에서 **콘솔 앱** 을 선택한 후 **다음** 을 선택합니다. 다음 페이지에서 `BasicAgent` 프로젝트의 이름으로를 입력 하 고 원하는 경우 프로젝트 위치를 지정 합니다.
 
 1. **만들기** 단추를 선택하여 프로젝트를 만듭니다.
 
-1. **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 합니다. **구성 속성**  >  **C/c + +**  >  **미리 컴파일된**헤더  >  **미리 컴파일된 헤더** 에서 **만들기**를 선택 합니다.
+1. **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **속성** 을 선택 합니다. **구성 속성**  >  **C/c + +**  >  **미리 컴파일된** 헤더  >  **미리 컴파일된 헤더** 에서 **만들기** 를 선택 합니다.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 ### <a name="to-create-a-c-console-application-in-visual-studio-2017-and-earlier"></a>Visual Studio 2017 및 이전 버전에서 c + + 콘솔 응용 프로그램을 만들려면
 
-1. **파일** 메뉴에서 **새로 만들기**를 클릭 한 다음 **프로젝트** 를 클릭 하 여 **새 프로젝트** 대화 상자를 표시 합니다.
+1. **파일** 메뉴에서 **새로 만들기** 를 클릭 한 다음 **프로젝트** 를 클릭 하 여 **새 프로젝트** 대화 상자를 표시 합니다.
 
-1. **새 프로젝트** 대화 상자의 **프로젝트 형식** 창에서 **Visual C++** 노드를 선택 하 고 **템플릿** 창에서 **Win32 콘솔 응용 프로그램** 을 선택 합니다. 프로젝트 이름 (예:)을 입력 한 `BasicAgent` 다음 **확인** 을 클릭 하 여 **Win32 콘솔 응용 프로그램 마법사**를 표시 합니다.
+1. **새 프로젝트** 대화 상자의 **프로젝트 형식** 창에서 **Visual C++** 노드를 선택 하 고 **템플릿** 창에서 **Win32 콘솔 응용 프로그램** 을 선택 합니다. 프로젝트 이름 (예:)을 입력 한 `BasicAgent` 다음 **확인** 을 클릭 하 여 **Win32 콘솔 응용 프로그램 마법사** 를 표시 합니다.
 
-1. **Win32 콘솔 응용 프로그램 마법사** 대화 상자에서 **마침**을 클릭 합니다.
+1. **Win32 콘솔 응용 프로그램 마법사** 대화 상자에서 **마침** 을 클릭 합니다.
 
 ::: moniker-end
 
-1. *Pch .h* (Visual Studio 2017 및 이전 버전의*stdafx.h* )에서 다음 코드를 추가 합니다.
+1. *Pch .h* (Visual Studio 2017 및 이전 버전의 *stdafx.h* )에서 다음 코드를 추가 합니다.
 
 [!code-cpp[concrt-basic-agent#1](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_1.h)]
 
    헤더 파일 에이전트에는 [concurrency:: agent](../../parallel/concrt/reference/agent-class.md) 클래스의 기능이 포함 되어 있습니다.
 
-1. 응용 프로그램을 빌드하고 실행 하 여 성공적으로 만들어졌는지 확인 합니다. 응용 프로그램을 빌드하려면 **빌드** 메뉴에서 **솔루션 빌드**를 클릭 합니다. 응용 프로그램이 성공적으로 빌드되면 **디버그** 메뉴에서 **디버깅 시작** 을 클릭 하 여 응용 프로그램을 실행 합니다.
+1. 응용 프로그램을 빌드하고 실행 하 여 성공적으로 만들어졌는지 확인 합니다. 응용 프로그램을 빌드하려면 **빌드** 메뉴에서 **솔루션 빌드** 를 클릭 합니다. 응용 프로그램이 성공적으로 빌드되면 **디버그** 메뉴에서 **디버깅 시작** 을 클릭 하 여 응용 프로그램을 실행 합니다.
 
 [[맨 위로](#top)이동]
 
-## <a name="creating-the-file_reader-class"></a><a name="createagentclass"></a>File_reader 클래스 만들기
+## <a name="creating-the-file_reader-class"></a><a name="createagentclass"></a> File_reader 클래스 만들기
 
 이 섹션에서는 클래스를 만드는 방법을 보여 줍니다 `file_reader` . 런타임은 각 에이전트가 자체 컨텍스트에서 작업을 수행 하도록 예약 합니다. 따라서 동기적으로 작업을 수행 하는 에이전트를 만들 수 있지만 다른 구성 요소와 비동기적으로 상호 작용 합니다. `file_reader`클래스는 지정 된 입력 파일에서 데이터를 읽고 해당 파일의 데이터를 지정 된 대상 구성 요소에 보냅니다.
 
 #### <a name="to-create-the-file_reader-class"></a>File_reader 클래스를 만들려면
 
-1. 프로젝트에 새 c + + 헤더 파일을 추가 합니다. 이렇게 하려면 **솔루션 탐색기**의 **헤더 파일** 노드를 마우스 오른쪽 단추로 클릭 하 고 **추가**를 클릭 한 다음 **새 항목**을 클릭 합니다. **템플릿** 창에서 **헤더 파일 (.h)** 을 선택 합니다. **새 항목 추가** 대화 상자에서 `file_reader.h` **이름** 상자에를 입력 한 다음 **추가**를 클릭 합니다.
+1. 프로젝트에 새 c + + 헤더 파일을 추가 합니다. 이렇게 하려면 **솔루션 탐색기** 의 **헤더 파일** 노드를 마우스 오른쪽 단추로 클릭 하 고 **추가** 를 클릭 한 다음 **새 항목** 을 클릭 합니다. **템플릿** 창에서 **헤더 파일 (.h)** 을 선택 합니다. **새 항목 추가** 대화 상자에서 `file_reader.h` **이름** 상자에를 입력 한 다음 **추가** 를 클릭 합니다.
 
 1. File_reader에서 다음 코드를 추가 합니다.
 
@@ -128,7 +128,7 @@ ms.locfileid: "87219484"
 
 [[맨 위로](#top)이동]
 
-## <a name="using-the-file_reader-class-in-the-application"></a><a name="useagentclass"></a>응용 프로그램에서 file_reader 클래스 사용
+## <a name="using-the-file_reader-class-in-the-application"></a><a name="useagentclass"></a> 응용 프로그램에서 file_reader 클래스 사용
 
 이 섹션에서는 클래스를 사용 하 여 `file_reader` 텍스트 파일의 내용을 읽는 방법을 보여 줍니다. 또한이 파일 데이터를 수신 하 고 Adler-32 체크섬을 계산 하는 [concurrency:: call](../../parallel/concrt/reference/call-class.md) 개체를 만드는 방법을 보여 줍니다.
 
