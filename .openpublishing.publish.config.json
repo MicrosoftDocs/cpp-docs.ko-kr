@@ -8,7 +8,7 @@
       "locale": "ko-kr",
       "monikers": [],
       "moniker_ranges": [
-        ">= vs-2015"
+        ">= msvc-140"
       ],
       "xref_query_tags": [
         "/dotnet",
@@ -24,8 +24,12 @@
       "version": 0
     }
   ],
-  "notification_subscribers": [],
+  "notification_subscribers": [
+    "CnE_Content_Brno@moravia.com",
+    "CnE_UE_Bugfixing_ENG@moravia.com"
+  ],
   "branches_to_filter": [
+    "master",
     "live"
   ],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/cpp-docs.ko-kr",
@@ -34,9 +38,6 @@
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
   "enable_incremental_build": true,
-  "contribution_branch_mappings": {
-    "live-sxs": "live"
-  },
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
@@ -52,24 +53,20 @@
     },
     {
       "path_to_root": "_repo.en-us",
-      "url": "https://github.com/dotnet/docs",
+      "url": "https://github.com/MicrosoftDocs/cpp-docs-pr",
       "branch": "live",
       "branch_mapping": {
-        "master": "master",
-        "live": "live"
+        "live": "live",
+        "master": "master"
       }
     }
   ],
   "branch_target_mapping": {
-    "live": [
-      "Publish",
-      "Pdf"
-    ],
     "live-sxs": [
       "Publish",
       "Pdf"
     ],
-    "master": [
+    "live": [
       "Publish",
       "Pdf"
     ]
