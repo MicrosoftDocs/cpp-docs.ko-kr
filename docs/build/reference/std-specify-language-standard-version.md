@@ -1,7 +1,7 @@
 ---
 title: /std(언어 표준 버전 지정)
 description: MSVC 컴파일러 옵션/hstd는 컴파일러에서 지 원하는 C 또는 c + + 언어 표준을 지정 합니다.
-ms.date: 09/11/2020
+ms.date: 10/29/2020
 f1_keywords:
 - /std
 - -std
@@ -11,12 +11,12 @@ f1_keywords:
 - /std:c17
 - VC.Project.VCCLCompilerTool.CppLanguageStandard
 ms.assetid: 0acb74ba-1aa8-4c05-b96c-682988dc19bd
-ms.openlocfilehash: 82f37377dc223bfe3f5e578e1c7f390da91752a1
-ms.sourcegitcommit: b492516cc65120250b9ea23f96f7f63f37f99fae
+ms.openlocfilehash: 208789071ff028107d3c7311c3b5c6cf3eea7c1d
+ms.sourcegitcommit: 4abc6c4c9694f91685cfd77940987e29a51e3143
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075831"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93238475"
 ---
 # <a name="std-specify-language-standard-version"></a>`/std` (언어 표준 버전 지정)
 
@@ -77,13 +77,13 @@ Visual Studio 2019 버전 16.8부터 **`/std:c11`** **`/std:c17`** C로 컴파�
 
 또는를 지정 하는 경우 **`/std:c11`** **`/std:c17`** MSVC는 C11 및 C17의 모든 필수 기능을 지원 합니다. 컴파일러 옵션을 사용 하면 다음과 같은 기능을 지원할 수 있습니다.
 
-- **`_Pragma`**
+- [`_Pragma`](../../preprocessor/pragma-directives-and-the-pragma-keyword.md#the-_pragma-preprocessing-operator-c99-c11)
 
 - **`restrict`**
 
 - **`_Noreturn`** 하거나 \<stdnoreturn.h>
 
-- **`_Alignas`**, **`_Alignof`** 및 \<stdalign.h>
+- **`_Alignas`** , **`_Alignof`** 및 \<stdalign.h>
 
 - **`_Generic`** 하거나 \<tgmath.h>
 
@@ -107,11 +107,11 @@ C17는 주로 ISO C11의 버그 수정 릴리스가 기 때문에 C11에 대 한
 
 1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. **구성 속성**, **C/C++**, **언어**를 차례로 선택합니다.
+1. **구성 속성** , **C/C++** , **언어** 를 차례로 선택합니다.
 
-1. C **+ + 언어 표준** (또는 c, **c 언어 표준**)에서 드롭다운 컨트롤에서 지원할 언어 표준을 선택한 다음 **확인** 또는 **적용** 을 선택 하 여 변경 내용을 저장 합니다.
+1. C **+ + 언어 표준** (또는 c, **c 언어 표준** )에서 드롭다운 컨트롤에서 지원할 언어 표준을 선택한 다음 **확인** 또는 **적용** 을 선택 하 여 변경 내용을 저장 합니다.
 
 ## <a name="see-also"></a>참고 항목
 
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
-[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)
+[MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)

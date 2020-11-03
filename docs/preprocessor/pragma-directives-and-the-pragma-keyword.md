@@ -1,6 +1,7 @@
 ---
 title: Pragma 지시문 및 __pragma 키워드
-ms.date: 08/29/2019
+description: Microsoft Visual C 및 c + + (MSVC)에서 사용할 수 있는 pragma 지시문에 대해 설명 합니다.
+ms.date: 10/30/2020
 f1_keywords:
 - '#pragma'
 helpviewer_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - preprocessor, pragmas
 - pragma directives (#pragma)
 ms.assetid: 9867b438-ac64-4e10-973f-c3955209873f
-ms.openlocfilehash: 786f76d9f7fd2eee73c6b1d009186bf93ea0c667
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: bf4bbdcf74808edd8ef54149f8258f47bd94c600
+ms.sourcegitcommit: 4abc6c4c9694f91685cfd77940987e29a51e3143
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842691"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93238410"
 ---
 # <a name="pragma-directives-and-the-__pragma-keyword"></a>Pragma 지시문 및 __pragma 키워드
 
@@ -26,8 +27,8 @@ Pragma 지시문은 컴퓨터 또는 운영 체제별 컴파일러 기능을 지
 
 ## <a name="syntax"></a>구문
 
-> **#pragma** *토큰-문자열*\
-> **__pragma (** *토큰 문자열* **)**
+> **#`pragma`***토큰 문자열*\
+> **`__pragma(`***토큰 문자열* **`)`** 두 개의 선행 밑줄-Microsoft 전용 확장 **`_Pragma(`** *문자열-literal* **`)`** //C99
 
 ## <a name="remarks"></a>설명
 
@@ -35,7 +36,9 @@ C 및 C++의 각 구현은 호스트 컴퓨터나 운영 체제에 고유한 기
 
 Pragma는 정의에 따라 컴퓨터 또는 운영 체제에 따라 다르며 일반적으로 모든 컴파일러 마다 다릅니다. Pragma는 조건부 지시문에서 사용 하거나, 새 전처리기 기능을 제공 하거나, 컴파일러에 구현 정의 정보를 제공 하는 데 사용할 수 있습니다.
 
-*토큰 문자열* 은 특정 컴파일러 명령 및 인수 (있는 경우)를 제공 하는 일련의 문자입니다. 숫자 기호 ( **#** )는 pragma를 포함 하는 줄에서 공백이 아닌 첫 번째 문자 여야 합니다. 공백 문자는 숫자 기호와 단어 "pragma"를 구분할 수 있습니다. **#Pragma**다음에는 변환기가 전처리 토큰으로 구문 분석할 수 있는 텍스트를 씁니다. **#Pragma** 인수는 매크로 확장의 영향을 받습니다.
+*토큰 문자열* 은 특정 컴파일러 명령 및 인수 (있는 경우)를 나타내는 일련의 문자입니다. 숫자 기호 ( **#** )는 pragma를 포함 하는 줄에서 공백이 아닌 첫 번째 문자 여야 합니다. 공백 문자는 숫자 기호와 단어 "pragma"를 구분할 수 있습니다. **#Pragma** 다음에는 변환기가 전처리 토큰으로 구문 분석할 수 있는 텍스트를 씁니다. **#Pragma** 인수는 매크로 확장의 영향을 받습니다.
+
+*문자열 리터럴* 은에 대 한 입력입니다 `_Pragma` . 외부 따옴표와 선행/후행 공백이 제거 됩니다. `\"` 는로 바뀌고 `"` `\\` 로 바뀝니다 `\` .
 
 컴파일러가 인식할 수 없는 pragma를 찾으면 경고를 발생 하 고 컴파일을 계속 합니다.
 
@@ -114,9 +117,9 @@ cl /Zp8 some_file.cpp
 
 ## <a name="the-__pragma-keyword"></a>__Pragma () 키워드
 
-또한 컴파일러는 **#pragma** 지시문과 동일한 기능을 포함 하는 Microsoft 관련 **__pragma** 키워드를 지원 합니다. 차이점은 **__pragma** 키워드는 매크로 정의에서 인라인으로 사용할 수 있습니다. 컴파일러는 지시문의 숫자 기호 문자 (' # ')를 [문자열 화 연산자 (#)](../preprocessor/stringizing-operator-hash.md)로 해석 하기 때문에 **#pragma** 지시어는 매크로 정의에서 사용할 수 없습니다.
+또한 컴파일러는 **`__pragma`** 지시문과 동일한 기능을 포함 하는 Microsoft 전용 키워드를 지원 합니다 **`#pragma`** . 차이점은 **`__pragma`** 키워드는 매크로 정의에서 인라인으로 사용할 수 있습니다. **`#pragma`** 컴파일러는 지시문의 숫자 기호 문자 (' # ')를 [문자열 화 연산자 (#)](../preprocessor/stringizing-operator-hash.md)로 해석 하기 때문에 매크로 정의에서 지시어를 사용할 수 없습니다.
 
-다음 코드 예제에서는 매크로에 **__pragma** 키워드를 사용할 수 있는 방법을 보여 줍니다. 이 코드는 "컴파일러 COM 지원 샘플"의 ACDUAL 샘플에 있는 mfcdual.h 헤더에서 발췌되었습니다.
+다음 코드 예제에서는 **`__pragma`** 키워드를 매크로에서 사용할 수 있는 방법을 보여 줍니다. 이 코드는 "컴파일러 COM 지원 샘플"의 ACDUAL 샘플에 있는 *있는 mfcdual.h* 헤더에서 발췌 한 것 됩니다.
 
 ```cpp
 #define CATCH_ALL_DUAL \
@@ -136,8 +139,50 @@ END_CATCH_ALL \
 return _hr; \
 ```
 
+## <a name="the-_pragma-preprocessing-operator-c99-c11"></a>`_Pragma`전처리 연산자 (C99, c + + 11)
+
+`_Pragma` 는 [`__pragma`](#the-__pragma-keyword) 표준의 일부를 제외 하 고 Microsoft 관련 키워드와 유사 합니다. C99에서 C에 대해 도입 되었습니다. C + +의 경우 c + + 11에서 도입 되었습니다.
+
+ 이를 통해 매크로 정의에 pragma를 넣을 수 있습니다. `_`Microsoft 전용 키워드에는 두 개의 선행 밑줄 대신 선행 밑줄이 하나 있고 `__` 첫 글자는 대문자입니다.
+
+문자열 리터럴은 문 뒤에 배치 하는 것이 좋습니다 *`#pragma`* . 다음은 그 예입니다. 
+
+```c
+#pragma message("--the #pragma way")
+_Pragma ("message( \"the _Pragma way\")") 
+```
+
+위와 같이 따옴표와 백슬래시를 이스케이프 해야 합니다. 인식할 수 없는 pragma 문자열은 무시 됩니다.
+
+다음 코드 예제에서는 **`_Pragma`** 조건 식이 상수 일 때 경고를 표시 하지 않으려는 경우 assert와 같은 매크로에서 키워드를 사용 하는 방법을 보여 줍니다. 
+
+매크로 정의는 문 처럼 사용할 수 있도록 다중 문 매크로에 do/while (0)을 사용 합니다. 자세한 내용은 Stack Overflow의 [C 여러 줄 매크로](https://stackoverflow.com/questions/1067226/c-multi-line-macro-do-while0-vs-scope-block) 를 참조 하세요. _Pragma 문은 뒤에 오는 코드 줄에만 적용 됩니다.
+
+```C
+// Compile with /W4
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#define MY_ASSERT(BOOL_EXPRESSION) \
+    do { \
+        _Pragma("warning(suppress: 4127)") /* C4127 conditional expression is constant */  \
+        if (!(BOOL_EXPRESSION)) {   \
+            printf("MY_ASSERT FAILED: \"" #BOOL_EXPRESSION "\" on %s(%d)", __FILE__, __LINE__); \
+            exit(-1); \
+        } \
+    } while (0)
+
+int main()
+{
+    MY_ASSERT(0 && "Note that there is no warning: C4127 conditional expression is constant");
+
+    return 0;
+}
+```
+
 ## <a name="see-also"></a>참고 항목
 
 [C/c + + 전처리기 참조](../preprocessor/c-cpp-preprocessor-reference.md)\
 [C pragma](../c-language/c-pragmas.md)\
-[C++ 키워드](../cpp/keywords-cpp.md)
+[키워드](../cpp/keywords-cpp.md)
