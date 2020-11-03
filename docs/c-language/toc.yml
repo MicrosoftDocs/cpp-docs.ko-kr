@@ -481,23 +481,7 @@
         - name: 정의 및 규칙
           href: ../c-language/definitions-and-conventions.md
         - name: 어휘 문법
-          items:
-            - name: 어휘 문법
-              href: ../c-language/lexical-grammar.md
-            - name: 토큰 요약
-              href: ../c-language/summary-of-tokens.md
-            - name: 키워드 요약
-              href: ../c-language/summary-of-keywords.md
-            - name: 식별자 요약
-              href: ../c-language/summary-of-identifiers.md
-            - name: 상수 요약
-              href: ../c-language/summary-of-constants.md
-            - name: 문자열 리터럴 요약
-              href: ../c-language/summary-of-string-literals.md
-            - name: 연산자 (C)
-              href: ../c-language/operators-c.md
-            - name: 문장 부호
-              href: ../c-language/punctuators.md
+          href: ../c-language/lexical-grammar.md
         - name: 구 구조 문법
           items:
             - name: 구 구조 문법
