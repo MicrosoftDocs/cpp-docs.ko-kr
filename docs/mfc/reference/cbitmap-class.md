@@ -34,12 +34,12 @@ helpviewer_keywords:
 - CBitmap [MFC], SetBitmapBits
 - CBitmap [MFC], SetBitmapDimension
 ms.assetid: 3980616a-c59d-495a-86e6-62bd3889c84c
-ms.openlocfilehash: adb2a461de5e82fa76ce0ed9961d970f46dbe26a
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 8c19a54584390312cfd1657e88898cdb044179d0
+ms.sourcegitcommit: d77159732a8e782b2a1b7abea552065f2b6f61c1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834988"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344581"
 ---
 # <a name="cbitmap-class"></a>CBitmap 클래스
 
@@ -55,13 +55,13 @@ class CBitmap : public CGdiObject
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CBitmap:: CBitmap](#cbitmap)|`CBitmap` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CBitmap:: CreateBitmap](#createbitmap)|지정 된 너비, 높이 및 비트 패턴이 있는 장치 종속 메모리 비트맵을 사용 하 여 개체를 초기화 합니다.|
 |[CBitmap:: CreateBitmapIndirect](#createbitmapindirect)|구조체에 지정 된 너비, 높이 및 비트 패턴의 비트맵 (지정 된 경우)을 사용 하 여 개체를 초기화 `BITMAP` 합니다.|
@@ -79,7 +79,7 @@ class CBitmap : public CGdiObject
 
 ### <a name="public-operators"></a>Public 연산자
 
-|Name|설명|
+|이름|Description|
 |----------|-----------------|
 |[CBitmap:: operator HBITMAP](#operator_hbitmap)|개체에 연결 된 Windows 핸들을 반환 합니다 `CBitmap` .|
 
@@ -159,7 +159,7 @@ BOOL CreateBitmap(
 
 ## <a name="cbitmapcreatebitmapindirect"></a><a name="createbitmapindirect"></a> CBitmap:: CreateBitmapIndirect
 
-*Lpbitmap*에서 가리키는 구조에 지정 된 너비, 높이 및 비트 패턴 (지정 된 경우)이 있는 비트맵을 초기화 합니다.
+*Lpbitmap* 에서 가리키는 구조에 지정 된 너비, 높이 및 비트 패턴 (지정 된 경우)이 있는 비트맵을 초기화 합니다.
 
 ```
 BOOL CreateBitmapIndirect(LPBITMAP lpBitmap);
@@ -184,7 +184,7 @@ BOOL CreateBitmapIndirect(LPBITMAP lpBitmap);
 
 ## <a name="cbitmapcreatecompatiblebitmap"></a><a name="createcompatiblebitmap"></a> CBitmap:: CreateCompatibleBitmap
 
-*PDC*로 지정 된 장치와 호환 되는 비트맵을 초기화 합니다.
+*PDC* 로 지정 된 장치와 호환 되는 비트맵을 초기화 합니다.
 
 ```
 BOOL CreateCompatibleBitmap(
@@ -210,7 +210,7 @@ BOOL CreateCompatibleBitmap(
 
 ### <a name="remarks"></a>설명
 
-비트맵에 지정 된 장치 컨텍스트와 동일한 수의 색 평면 또는 픽셀 당 비트 형식이 있습니다. *PDC*에서 지정한 것과 호환 되는 모든 메모리 장치에 대 한 현재 비트맵으로 선택할 수 있습니다.
+비트맵에 지정 된 장치 컨텍스트와 동일한 수의 색 평면 또는 픽셀 당 비트 형식이 있습니다. *PDC* 에서 지정한 것과 호환 되는 모든 메모리 장치에 대 한 현재 비트맵으로 선택할 수 있습니다.
 
 *PDC* 가 메모리 장치 컨텍스트인 경우 반환 된 비트맵은 해당 장치 컨텍스트에서 현재 선택 된 비트맵과 동일한 형식입니다. "메모리 장치 컨텍스트"는 표시 표면을 나타내는 메모리 블록입니다. 이를 사용 하 여 메모리에서 이미지를 준비 하 고 호환 장치의 실제 표시 화면에 복사할 수 있습니다.
 
@@ -222,7 +222,7 @@ BOOL CreateCompatibleBitmap(
 
 ## <a name="cbitmapcreatediscardablebitmap"></a><a name="creatediscardablebitmap"></a> CBitmap:: CreateDiscardableBitmap
 
-*PDC*로 식별 되는 장치 컨텍스트와 호환 되는 삭제 가능한 비트맵을 초기화 합니다.
+*PDC* 로 식별 되는 장치 컨텍스트와 호환 되는 삭제 가능한 비트맵을 초기화 합니다.
 
 ```
 BOOL CreateDiscardableBitmap(
@@ -248,7 +248,7 @@ BOOL CreateDiscardableBitmap(
 
 ### <a name="remarks"></a>설명
 
-비트맵에 지정 된 장치 컨텍스트와 동일한 수의 색 평면 또는 픽셀 당 비트 형식이 있습니다. 응용 프로그램은이 비트맵을 *pDC*에서 지정한 것과 호환 되는 메모리 장치에 대 한 현재 비트맵으로 선택할 수 있습니다.
+비트맵에 지정 된 장치 컨텍스트와 동일한 수의 색 평면 또는 픽셀 당 비트 형식이 있습니다. 응용 프로그램은이 비트맵을 *pDC* 에서 지정한 것과 호환 되는 메모리 장치에 대 한 현재 비트맵으로 선택할 수 있습니다.
 
 응용 프로그램에서이 함수를 통해 생성 된 비트맵이 표시 컨텍스트로 선택 되지 않은 경우에만이 비트맵을 삭제할 수 있습니다. 선택 하지 않은 경우 Windows에서 비트맵을 삭제 하 고 나중에 응용 프로그램에서 선택 하려고 하면 [CDC:: SelectObject](../../mfc/reference/cdc-class.md#selectobject) 함수는 NULL을 반환 합니다.
 
@@ -398,7 +398,7 @@ BOOL LoadMappedBitmap(
 비트맵을 매핑하는 데 `COLORMAP` 필요한 색 정보를 포함 하는 구조체에 대 한 포인터입니다. 이 매개 변수가 NULL 이면 함수는 기본 색 맵을 사용 합니다.
 
 *nMapSize*<br/>
-*Lpcolormap*에서 가리키는 색 맵의 수입니다.
+*Lpcolormap* 에서 가리키는 색 맵의 수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -408,7 +408,7 @@ BOOL LoadMappedBitmap(
 
 기본적으로에서는 `LoadMappedBitmap` 단추 문자 모양에 일반적으로 사용 되는 색을 매핑합니다.
 
-매핑된 비트맵을 만드는 방법에 대 한 자세한 내용은 Windows SDK Windows 함수 [CreateMappedBitmap](https://go.microsoft.com/fwlink/p/?linkid=230562) 및 [colormap](/windows/win32/api/commctrl/ns-commctrl-colormap) 구조를 참조 하세요.
+매핑된 비트맵을 만드는 방법에 대 한 자세한 내용은 Windows SDK Windows 함수 [CreateMappedBitmap](/windows/win32/api/commctrl/nf-commctrl-createmappedbitmap) 및 [colormap](/windows/win32/api/commctrl/ns-commctrl-colormap) 구조를 참조 하세요.
 
 ## <a name="cbitmaploadoembitmap"></a><a name="loadoembitmap"></a> CBitmap:: LoadOEMBitmap
 
@@ -496,7 +496,7 @@ operator HBITMAP() const;
 
 ## <a name="cbitmapsetbitmapbits"></a><a name="setbitmapbits"></a> CBitmap:: SetBitmapBits
 
-비트맵의 비트를 *lpbits*에서 제공 하는 비트 값으로 설정 합니다.
+비트맵의 비트를 *lpbits* 에서 제공 하는 비트 값으로 설정 합니다.
 
 ```
 DWORD SetBitmapBits(
@@ -507,7 +507,7 @@ DWORD SetBitmapBits(
 ### <a name="parameters"></a>매개 변수
 
 *dwCount*<br/>
-*Lpbits*가리키는 바이트 수를 지정 합니다.
+*Lpbits* 가리키는 바이트 수를 지정 합니다.
 
 *lpBits*<br/>
 개체에 복사할 픽셀 값을 포함 하는 바이트 배열을 가리킵니다 `CBitmap` . 비트맵이 이미지를 올바르게 렌더링 하려면 CBitmap 인스턴스를 만들 때 지정 된 높이, 너비 및 색 농도 값에 맞게 값의 서식을 지정 해야 합니다. 자세한 내용은 [Cbitmap:: createbitmap](#createbitmap)을 참조 하세요.

@@ -2,12 +2,12 @@
 title: 그래픽(C++ AMP)
 ms.date: 11/04/2016
 ms.assetid: 190a98a4-5f7d-442e-866b-b374ca74c16f
-ms.openlocfilehash: 3f68766c2c38b74df6e57aaa52419baf5d1151a3
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 97fd433387aac809053ea6dd8ac59a56207a4fc8
+ms.sourcegitcommit: d77159732a8e782b2a1b7abea552065f2b6f61c1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041460"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344724"
 ---
 # <a name="graphics-c-amp"></a>그래픽(C++ AMP)
 
@@ -21,17 +21,17 @@ C++ AMP에는 [Concurrency:: graphics](../../parallel/amp/reference/concurrency-
 
 ## <a name="the-norm-and-unorm-types"></a>norm 및 unorm 형식
 
-`norm`및 `unorm` 형식은 값의 범위를 제한 하는 스칼라 형식 **`float`** 입니다 .이를 *고정*라고 합니다. 이러한 형식은 다른 스칼라 형식에서 명시적으로 생성될 수 있습니다. 캐스팅에서 값은 먼저로 캐스팅 된 **`float`** 다음 일반 [-1.0, 1.0] 또는 unorm [0.0, 1.0]에서 허용 하는 해당 지역으로 고정 됩니다. +/- 무한대에서 캐스팅하는 경우 +/-1이 반환됩니다. NaN에서의 캐스팅은 정의되지 않았습니다. norm은 unorm에서 암시적으로 생성될 수 있으며 데이터는 손실되지 않습니다. 이러한 형식에는 float로의 암시적 변환 연산자가 정의되어 있습니다. 이항 연산자는 이러한 형식과 및와 같은 기타 기본 제공 스칼라 형식 ( **`float`** **`int`** +,-, \* ,/, = =,! =, >, \<, > =, <=) 사이에 정의 됩니다. 복합 할당 연산자 (+ =,-=, \* =,/=)도 지원 됩니다. norm 형식에 대해서는 단항 부정 연산자(-)가 정의되어 있습니다.
+`norm`및 `unorm` 형식은 값의 범위를 제한 하는 스칼라 형식 **`float`** 입니다 .이를 *고정* 라고 합니다. 이러한 형식은 다른 스칼라 형식에서 명시적으로 생성될 수 있습니다. 캐스팅에서 값은 먼저로 캐스팅 된 **`float`** 다음 일반 [-1.0, 1.0] 또는 unorm [0.0, 1.0]에서 허용 하는 해당 지역으로 고정 됩니다. +/- 무한대에서 캐스팅하는 경우 +/-1이 반환됩니다. NaN에서의 캐스팅은 정의되지 않았습니다. norm은 unorm에서 암시적으로 생성될 수 있으며 데이터는 손실되지 않습니다. 이러한 형식에는 float로의 암시적 변환 연산자가 정의되어 있습니다. 이항 연산자는 이러한 형식과 및와 같은 기타 기본 제공 스칼라 형식 ( **`float`** **`int`** +,-, \* ,/, = =,! =, >, \<, > =, <=) 사이에 정의 됩니다. 복합 할당 연산자 (+ =,-=, \* =,/=)도 지원 됩니다. norm 형식에 대해서는 단항 부정 연산자(-)가 정의되어 있습니다.
 
 ## <a name="short-vector-library"></a>short 벡터 라이브러리
 
-Short Vector 라이브러리는 HLSL에 정의 된 [Vector 형식의](https://go.microsoft.com/fwlink/p/?linkid=248500) 일부 기능을 제공 하며 일반적으로 텍셀를 정의 하는 데 사용 됩니다. short 벡터는 동일한 형식의 값을 1~4개 포함하는 데이터 구조입니다. 지원 되는 형식은 **`double`** , **`float`** , **`int`** , `norm` , `uint` 및 `unorm` 입니다. 다음 표에는 형식 이름이 나와 있습니다. 각 형식에 대해 **`typedef`** 이름에 밑줄이 없는 해당도 있습니다. 밑줄이 있는 형식은 [Concurrency:: Graphics 네임 스페이스](../../parallel/amp/reference/concurrency-graphics-namespace.md)에 있습니다. 밑줄이 없는 형식은 [동시성:: graphics::d Irect3d 네임 스페이스](../../parallel/amp/reference/concurrency-graphics-direct3d-namespace.md) 에 포함 되어 **`__int8`** 있으며,와 같은 유사한 이름의 기본 형식에서 명확 하 게 구분 **`__int16`** 됩니다.
+Short Vector 라이브러리는 HLSL에 정의 된 [Vector 형식의](/windows/win32/direct3dhlsl/dx-graphics-hlsl-vector) 일부 기능을 제공 하며 일반적으로 텍셀를 정의 하는 데 사용 됩니다. short 벡터는 동일한 형식의 값을 1~4개 포함하는 데이터 구조입니다. 지원 되는 형식은 **`double`** , **`float`** , **`int`** , `norm` , `uint` 및 `unorm` 입니다. 다음 표에는 형식 이름이 나와 있습니다. 각 형식에 대해 **`typedef`** 이름에 밑줄이 없는 해당도 있습니다. 밑줄이 있는 형식은 [Concurrency:: Graphics 네임 스페이스](../../parallel/amp/reference/concurrency-graphics-namespace.md)에 있습니다. 밑줄이 없는 형식은 [동시성:: graphics::d Irect3d 네임 스페이스](../../parallel/amp/reference/concurrency-graphics-direct3d-namespace.md) 에 포함 되어 **`__int8`** 있으며,와 같은 유사한 이름의 기본 형식에서 명확 하 게 구분 **`__int16`** 됩니다.
 
-|Type|길이 2|길이 3|길이 4|
+|유형|길이 2|길이 3|길이 4|
 |-|--------------|--------------|--------------|
 |double|double_2<br /><br /> double2|double_3<br /><br /> double3|double_4<br /><br /> double4|
 |float|float_2<br /><br /> float2|float_3<br /><br /> float3|float_4<br /><br /> float4|
-|int|int_2<br /><br /> int2|int_3<br /><br /> int3|int_4<br /><br /> int4|
+|Int|int_2<br /><br /> int2|int_3<br /><br /> int3|int_4<br /><br /> int4|
 |norm|norm_2<br /><br /> norm2|norm_3<br /><br /> norm3|norm_4<br /><br /> norm4|
 |uint|uint_2<br /><br /> uint2|uint_3<br /><br /> uint3|uint_4<br /><br /> uint4|
 |unorm|unorm_2<br /><br /> unorm2|unorm_3<br /><br /> unorm3|unorm_4<br /><br /> unorm4|
@@ -57,17 +57,17 @@ Short Vector 라이브러리는 HLSL에 정의 된 [Vector 형식의](https://go
 
 ### <a name="swizzling-expressions"></a>재구성 식
 
-short 벡터 라이브러리는 short 벡터의 구성 요소에 액세스할 수 있도록 `vector_type.identifier` 접근자 구문을 지원합니다. `identifier` *재구성 식*이라고 하는는 벡터의 구성 요소를 지정 합니다. 식은 l-value 또는 r-value일 수 있습니다. 식별자의 개별 문자는 x, y, z 및 w 일 수 있습니다. 또는 r, g, b 및 a입니다. "x"와 "r"은 0 번째 구성 요소를 의미 하 고, "y"와 "g"는 첫 번째 구성 요소를 의미 합니다. ("X"와 "r"은 동일한 식별자에 사용할 수 없습니다.) 따라서 "rgba" 및 "xyzw"는 동일한 결과를 반환 합니다. "x" 및 "y"와 같은 단일 구성 요소 접근자는 스칼라 값 형식입니다. 다중 구성 요소 접근자는 short 벡터 형식입니다. 예를 들어 2, 4, 6, 8 값을 가진 `int_4`라는 `fourInts` 벡터를 생성한 경우 `fourInts.y`는 정수 4를 반환하고 `fourInts.rg`는 2와 4 값을 가진 `int_2` 개체를 반환합니다.
+short 벡터 라이브러리는 short 벡터의 구성 요소에 액세스할 수 있도록 `vector_type.identifier` 접근자 구문을 지원합니다. `identifier` *재구성 식* 이라고 하는는 벡터의 구성 요소를 지정 합니다. 식은 l-value 또는 r-value일 수 있습니다. 식별자의 개별 문자는 x, y, z 및 w 일 수 있습니다. 또는 r, g, b 및 a입니다. "x"와 "r"은 0 번째 구성 요소를 의미 하 고, "y"와 "g"는 첫 번째 구성 요소를 의미 합니다. ("X"와 "r"은 동일한 식별자에 사용할 수 없습니다.) 따라서 "rgba" 및 "xyzw"는 동일한 결과를 반환 합니다. "x" 및 "y"와 같은 단일 구성 요소 접근자는 스칼라 값 형식입니다. 다중 구성 요소 접근자는 short 벡터 형식입니다. 예를 들어 2, 4, 6, 8 값을 가진 `int_4`라는 `fourInts` 벡터를 생성한 경우 `fourInts.y`는 정수 4를 반환하고 `fourInts.rg`는 2와 4 값을 가진 `int_2` 개체를 반환합니다.
 
 ## <a name="texture-classes"></a>Texture 클래스
 
 대부분의 GPU에는 픽셀과 텍셀을 가져오고 이미지와 텍스처를 렌더링하는 데 최적화된 하드웨어 및 캐시가 있습니다. 텍셀 개체에 대 한 컨테이너 클래스인 [질감 \<T,N> ](../../parallel/amp/reference/texture-class.md) 클래스는 이러한 gpu의 질감 기능을 노출 합니다. 텍셀은 다음 형식일 수 있습니다.
 
-- **`int`**,, `uint` , **`float`** , **`double`** `norm` 또는 `unorm` 스칼라입니다.
+- **`int`** ,, `uint` , **`float`** , **`double`** `norm` 또는 `unorm` 스칼라입니다.
 
 - 구성 요소가 두 개 또는 네 개인 short 벡터. 유일한 예외는 `double_4`이며 이 형식은 허용되지 않습니다.
 
-`texture` 개체의 차수는 1, 2 또는 3일 수 있습니다. `texture` 개체는 `parallel_for_each` 호출의 람다에 있는 참조를 통해서만 캡처될 수 있습니다. 텍스처는 Direct3D 텍스처 개체로 GPU에 저장됩니다. Direct3D의 질감 및 텍셀에 대 한 자세한 내용은 [direct3d 11의 질감 소개](https://go.microsoft.com/fwlink/p/?linkid=248502)를 참조 하세요.
+`texture` 개체의 차수는 1, 2 또는 3일 수 있습니다. `texture` 개체는 `parallel_for_each` 호출의 람다에 있는 참조를 통해서만 캡처될 수 있습니다. 텍스처는 Direct3D 텍스처 개체로 GPU에 저장됩니다. Direct3D의 질감 및 텍셀에 대 한 자세한 내용은 [direct3d 11의 질감 소개](/windows/win32/direct3d11/overviews-direct3d-11-resources-textures-intro)를 참조 하세요.
 
 사용하는 텍셀 형식은 그래픽 프로그래밍에 사용되는 다양한 텍스처 형식 중 하나일 수 있습니다. 예를 들어 RGBA 형식은 R, G, B, A 스칼라 요소 각각에 8비트씩 총 32비트를 사용할 수 있습니다. 그래픽 카드의 텍스처 하드웨어는 형식에 따라 개별 요소에 액세스할 수 있습니다. 예를 들어 RGBA 형식을 사용하는 경우 텍스처 하드웨어는 각 8비트 요소를 32비트 형식으로 추출할 수 있습니다. C++ AMP에서는 텍셀의 스칼라 요소당 비트 수를 설정하여 비트 시프트를 사용하지 않고 코드의 개별 스칼라 요소에 자동으로 액세스할 수 있습니다.
 
@@ -342,7 +342,7 @@ void declareTextureViews()
 
 `texture_view`의 요소 형식 즉, 텍스처 보기의 상수성과 함께 텍스처 보기의 구성 요소 수는 보기에서 텍스처 샘플링을 지원하는지 여부 및 Mip 맵 수준에 액세스하는 방법을 결정하는 데도 영향을 줍니다.
 
-|Type|구성 요소|읽기|쓰기|샘플링|Mip 맵 액세스|
+|유형|구성 요소|읽기|쓰기|샘플링|Mip 맵 액세스|
 |----------|----------------|----------|-----------|--------------|-------------------|
 |texture_view\<const T, N>|1, 2, 4|예|아니요(1)|예|예, 인덱싱 가능. 인스턴스화할 때 범위가 결정됩니다.|
 |Texture_view\<T, N>|1<br /><br /> 2, 4|예<br /><br /> 아니요 (2)|예<br /><br /> 예|아니요(1)<br /><br /> 아니요(1)|예, 한 수준. 인스턴스화할 때 수준이 결정됩니다.<br /><br /> 예, 한 수준. 인스턴스화할 때 수준이 결정됩니다.|
@@ -404,7 +404,7 @@ parallel_for_each(w_view.extent, [=](index<2> idx) restrict(amp)
 
 ## <a name="interoperability"></a>상호 운용성
 
-C++ AMP 런타임은와 `texture<T,1>` [ID3D11Texture1D 인터페이스](https://go.microsoft.com/fwlink/p/?linkId=248503)간의 상호 운용성, `texture<T,2>` 와 [ID3D11Texture2D 인터페이스](https://go.microsoft.com/fwlink/p/?linkId=255317)사이, 및 `texture<T,3>` [ID3D11Texture3D 인터페이스](https://go.microsoft.com/fwlink/p/?linkId=255377)간의 상호 운용성을 지원 합니다. [Get_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#get_texture) 메서드는 개체를 사용 `texture` 하 여 인터페이스를 반환 합니다 `IUnknown` . [Make_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#make_texture) 메서드는 `IUnknown` 인터페이스와 개체를 사용 `accelerator_view` 하 고 개체를 반환 합니다 `texture` .
+C++ AMP 런타임은와 `texture<T,1>` [ID3D11Texture1D 인터페이스](/windows/win32/api/d3d11/nn-d3d11-id3d11texture1d)간의 상호 운용성, `texture<T,2>` 와 [ID3D11Texture2D 인터페이스](/windows/win32/api/d3d11/nn-d3d11-id3d11texture2d)사이, 및 `texture<T,3>` [ID3D11Texture3D 인터페이스](/windows/win32/api/d3d11/nn-d3d11-id3d11texture3d)간의 상호 운용성을 지원 합니다. [Get_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#get_texture) 메서드는 개체를 사용 `texture` 하 여 인터페이스를 반환 합니다 `IUnknown` . [Make_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#make_texture) 메서드는 `IUnknown` 인터페이스와 개체를 사용 `accelerator_view` 하 고 개체를 반환 합니다 `texture` .
 
 ## <a name="see-also"></a>참고 항목
 

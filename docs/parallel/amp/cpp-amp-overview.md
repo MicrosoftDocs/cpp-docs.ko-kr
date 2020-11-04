@@ -8,12 +8,12 @@ helpviewer_keywords:
 - C++ Accelerated Massive Parallelism, overview
 - C++ Accelerated Massive Parallelism
 ms.assetid: 9e593b06-6e3c-43e9-8bae-6d89efdd39fc
-ms.openlocfilehash: 2629f243f3db3b8fabbd87ee0a211380ac3d45a2
-ms.sourcegitcommit: 093f49b8b69daf86661adc125b1d2d7b1f0e0650
+ms.openlocfilehash: 0eeda43a279be74ea71669b55356603e980cab40
+ms.sourcegitcommit: d77159732a8e782b2a1b7abea552065f2b6f61c1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89427727"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344750"
 ---
 # <a name="c-amp-overview"></a>C++ AMP 개요
 
@@ -104,7 +104,7 @@ void CppAmpMethod() {
 
 - 데이터: c + + 배열을 사용 하 여 세 개의 C++ AMP [array_view](../../parallel/amp/reference/array-view-class.md) 개체를 생성 합니다. 개체를 생성 하는 네 가지 값을 제공 합니다 `array_view` . 데이터 값, 순위, 요소 형식 및 `array_view` 각 차원에 있는 개체의 길이입니다. Rank 및 형식은 형식 매개 변수로 전달 됩니다. 데이터 및 길이는 생성자 매개 변수로 전달 됩니다. 이 예제에서 생성자에 전달 되는 c + + 배열은 1 차원입니다. 차수와 길이는 개체에서 데이터의 사각형 모양을 생성 하는 데 사용 되 `array_view` 고 데이터 값은 배열을 채우는 데 사용 됩니다. 런타임 라이브러리에는 클래스와 유사한 인터페이스가 있고이 문서의 뒷부분에서 설명 하는 [배열 클래스](../../parallel/amp/reference/array-class.md)도 포함 되어 있습니다 `array_view` .
 
-- 반복: [Parallel_for_each 함수 (C++ AMP)](reference/concurrency-namespace-functions-amp.md#parallel_for_each) 는 데이터 요소 또는 *계산 도메인*을 반복 하는 메커니즘을 제공 합니다. 이 예제에서 계산 도메인은에 의해 지정 됩니다 `sum.extent` . 실행 하려는 코드는 람다 식 또는 *커널 함수*에 포함 되어 있습니다. 는 `restrict(amp)` C++ AMP 가속화 될 수 있는 c + + 언어의 하위 집합만 사용 됨을 나타냅니다.
+- 반복: [Parallel_for_each 함수 (C++ AMP)](reference/concurrency-namespace-functions-amp.md#parallel_for_each) 는 데이터 요소 또는 *계산 도메인* 을 반복 하는 메커니즘을 제공 합니다. 이 예제에서 계산 도메인은에 의해 지정 됩니다 `sum.extent` . 실행 하려는 코드는 람다 식 또는 *커널 함수* 에 포함 되어 있습니다. 는 `restrict(amp)` C++ AMP 가속화 될 수 있는 c + + 언어의 하위 집합만 사용 됨을 나타냅니다.
 
 - 인덱스: [인덱스 클래스](../../parallel/amp/reference/index-class.md) 변수는 `idx` 개체의 순위와 일치 하는 순위 1로 선언 됩니다 `array_view` . 인덱스를 사용 하 여 개체의 개별 요소에 액세스할 수 있습니다 `array_view` .
 
@@ -225,11 +225,11 @@ for (int i = 0; i < 5; i++)
 
 다음 표에서는 및 클래스 간의 유사점과 차이점을 요약 하 여 보여 줍니다 `array` `array_view` .
 
-|설명|array 클래스|array_view 클래스|
+|Description|array 클래스|array_view 클래스|
 |-----------------|-----------------|-----------------------|
 |Rank가 결정 된 경우|컴파일 시간에.|컴파일 시간에.|
 |범위가 결정 되 면|런타임에.|런타임에.|
-|도형|모양의.|모양의.|
+|셰이프|모양의.|모양의.|
 |데이터 스토리지|는 데이터 컨테이너입니다.|는 데이터 래퍼입니다.|
 |복사|정의의 명시적 및 전체 복사본입니다.|커널 함수에서 액세스할 때의 암시적 복사입니다.|
 |데이터 검색|CPU 스레드의 개체에 배열 데이터를 다시 복사 합니다.|개체에 대 한 직접 액세스 `array_view` 또는 [array_view:: synchronize 메서드](reference/array-view-class.md#synchronize) 를 호출 하 여 원래 컨테이너의 데이터에 계속 액세스 합니다.|
@@ -360,7 +360,7 @@ void AddArraysWithFunction() {
 
 ## <a name="accelerating-code-tiles-and-barriers"></a>가속 코드: 타일 및 장벽
 
-바둑판식 배열을 사용 하 여 추가 가속을 얻을 수 있습니다. 바둑판식 배열은 스레드를 동일한 사각형 하위 집합 또는 *타일로*나눕니다. 코딩 하는 알고리즘 및 데이터 집합에 따라 적절 한 타일 크기를 결정 합니다. 각 스레드에 대해 전체를 기준으로 하는 데이터 요소의 *전역* 위치에 액세스 하 `array` `array_view` 고 타일을 기준으로 *로컬* 위치에 액세스할 수 있습니다. 로컬 인덱스 값을 사용 하면 인덱스 값을 전역에서 로컬으로 변환 하는 코드를 작성할 필요가 없기 때문에 코드가 간단해 집니다. 바둑판식 배열을 사용 하려면 메서드에서 compute 도메인에 대해 [익스텐트:: Tile 메서드](reference/extent-class.md#tile) 를 호출 하 `parallel_for_each` 고 람다 식에 [tiled_index](../../parallel/amp/reference/tiled-index-class.md) 개체를 사용 합니다.
+바둑판식 배열을 사용 하 여 추가 가속을 얻을 수 있습니다. 바둑판식 배열은 스레드를 동일한 사각형 하위 집합 또는 *타일로* 나눕니다. 코딩 하는 알고리즘 및 데이터 집합에 따라 적절 한 타일 크기를 결정 합니다. 각 스레드에 대해 전체를 기준으로 하는 데이터 요소의 *전역* 위치에 액세스 하 `array` `array_view` 고 타일을 기준으로 *로컬* 위치에 액세스할 수 있습니다. 로컬 인덱스 값을 사용 하면 인덱스 값을 전역에서 로컬으로 변환 하는 코드를 작성할 필요가 없기 때문에 코드가 간단해 집니다. 바둑판식 배열을 사용 하려면 메서드에서 compute 도메인에 대해 [익스텐트:: Tile 메서드](reference/extent-class.md#tile) 를 호출 하 `parallel_for_each` 고 람다 식에 [tiled_index](../../parallel/amp/reference/tiled-index-class.md) 개체를 사용 합니다.
 
 일반적인 응용 프로그램에서 타일의 요소는 어떤 방식으로든 관련 되며, 코드는 타일 전체에서 값을 액세스 하 고 추적 해야 합니다. [Tile_static 키워드](../../cpp/tile-static-keyword.md) 키워드 및 [tile_barrier:: wait 메서드](reference/tile-barrier-class.md#wait) 를 사용 하 여이 작업을 수행 합니다. **Tile_static** 키워드를 포함 하는 변수는 전체 타일에서 범위를 가지 며 각 타일에 대해 변수의 인스턴스가 생성 됩니다. 변수에 대 한 타일 스레드 액세스의 동기화를 처리 해야 합니다. [Tile_barrier:: Wait 메서드](reference/tile-barrier-class.md#wait) 는 타일의 모든 스레드가에 대 한 호출에 도달할 때까지 현재 스레드의 실행을 중지 합니다 `tile_barrier::wait` . 따라서 **tile_static** 변수를 사용 하 여 타일에서 값을 누적 시킬 수 있습니다. 그런 다음 모든 값에 액세스 해야 하는 모든 계산을 완료할 수 있습니다.
 
@@ -473,9 +473,9 @@ C++ AMP는 가속 그래픽 프로그래밍을 위해 디자인 된 그래픽 �
 
 - [UWP 앱에서 C++ AMP 사용](../../parallel/amp/using-cpp-amp-in-windows-store-apps.md)
 
-- [연습: c + +에서 기본 Windows 런타임 구성 요소 만들기 및 JavaScript에서 호출](https://go.microsoft.com/fwlink/p/?linkid=249077)
+- [연습: c + +에서 기본 Windows 런타임 구성 요소 만들기 및 JavaScript에서 호출](/previous-versions/windows/apps/hh755833(v=vs.140))
 
-- [JavaScript 및 c + +의 Window 스토어 앱 인 Bing 지도 여행 최적화 프로그램](https://go.microsoft.com/fwlink/p/?linkid=249078)
+- [JavaScript 및 c + +의 Window 스토어 앱 인 Bing 지도 여행 최적화 프로그램](/previous-versions/windows/apps/hh699893(v=vs.140))
 
 - [Windows 런타임를 사용 하 여 c #에서 C++ AMP를 사용 하는 방법](https://devblogs.microsoft.com/pfxteam/how-to-use-c-amp-from-c-using-winrt/)
 
