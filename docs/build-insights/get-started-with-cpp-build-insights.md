@@ -7,21 +7,21 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 28d7e0758ea521af424129c546297fc97e3d6659
-ms.sourcegitcommit: 8c8ed02a6f3bcb5ee008e3fe30ba7595d7c4c922
+ms.openlocfilehash: c4ebbb280a5cccaa35b5efc7f90e9b570600c47b
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83759227"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92923641"
 ---
 # <a name="get-started-with-c-build-insights"></a>C++ Build Insights 활용 시작
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 C++ Build Insights 도구는 Visual Studio 2019에서 사용할 수 있습니다. 이 버전에 대한 설명서를 보려면 이 문서의 Visual Studio **버전** 선택기 컨트롤을 Visual Studio 2019로 설정하세요. 이 페이지의 목차 맨 위에 있습니다.
 
 ::: moniker-end
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 C++ Build Insights는 MSVC(Microsoft Visual C++) 도구 체인에 대한 향상된 가시성을 제공하는 도구 모음입니다. 이 도구는 C++ 빌드에 대한 데이터를 수집하여 다음과 같은 일반적인 질문에 답하는 데 도움이 되는 형식으로 표시합니다.
 

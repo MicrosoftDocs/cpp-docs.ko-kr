@@ -9,21 +9,21 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: c0d1348be8878e686aeba4a58c407264264c5bc4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6bfa5bfbe8a61148f925ba185fccc035fd44d02d
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224190"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92920270"
 ---
 # <a name="makedynamicreloggergroup"></a>MakeDynamicReloggerGroup
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
 C++ Build Insights SDK는 Visual Studio 2017 이상 버전과 호환됩니다. 이러한 버전에 대한 설명서를 보려면 이 문서에 대한 Visual Studio **버전** 선택기 컨트롤을 Visual Studio 2017 또는 Visual Studio 2019로 설정하세요. 이 페이지의 목차 맨 위에 있습니다.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 `MakeDynamicReloggerGroup` 함수는 동적 재로거 그룹을 만드는 데 사용됩니다. 재로거 그룹의 멤버는 추적의 모든 이벤트가 처리될 때까지 왼쪽에서 오른쪽으로 하나씩 이벤트를 수신합니다.
 

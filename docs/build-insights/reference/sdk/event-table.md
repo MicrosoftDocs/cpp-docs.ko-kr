@@ -9,21 +9,21 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 6b1cf6871329fcce3166495e173360a88ac38ee0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2a6270e8e166bb38754314fcb308b86232dbb68b
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224216"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92922904"
 ---
 # <a name="c-build-insights-sdk-event-table"></a>C++ Build Insights SDK: 이벤트 테이블
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
 C++ Build Insights SDK는 Visual Studio 2017 이상 버전과 호환됩니다. 이러한 버전에 대한 설명서를 보려면 이 문서에 대한 Visual Studio **버전** 선택기 컨트롤을 Visual Studio 2017 또는 Visual Studio 2019로 설정하세요. 이 페이지의 목차 맨 위에 있습니다.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 ## <a name="compiler-events"></a>컴파일러 이벤트
 
@@ -92,13 +92,13 @@ C++ Build Insights SDK는 Visual Studio 2017 이상 버전과 호환됩니다. �
 |  | Children | [FRONT_END_FILE](#front-end-file)<br/>[SYMBOL_NAME](#symbol-name)<br/>[TEMPLATE_INSTANTIATION](#template-instantiation) |
 |  | 속성 | 없음 |
 |  | 캡처 클래스 | [작업](cpp-event-data-types/activity.md)<br/>[C1DLL](cpp-event-data-types/c1-dll.md) |
-|  | 설명 | *c1.dll* 또는 *c1xx.dll* 호출을 시작 및 중지할 때 발생합니다. 이러한 DLL은 컴파일러의 C 및 C++ 프런트 엔드입니다. 컴파일러 드라이버(*cl.exe*)를 통해서만 호출됩니다. |
+|  | 설명 | *c1.dll* 또는 *c1xx.dll* 호출을 시작 및 중지할 때 발생합니다. 이러한 DLL은 컴파일러의 C 및 C++ 프런트 엔드입니다. 컴파일러 드라이버( *cl.exe* )를 통해서만 호출됩니다. |
 | <a name="c2-dll"></a> C2_DLL | 형식 | 활동 |
 |  | 부모 항목 | [BACK_END_PASS](#back-end-pass)<br/>[LTCG](#ltcg) |
 |  | Children | [CODE_GENERATION](#code-generation)<br/>[WHOLE_PROGRAM_ANALYSIS](#whole-program-analysis) |
 |  | 속성 | 없음 |
 |  | 캡처 클래스 | [작업](cpp-event-data-types/activity.md)<br/>[C2DLL](cpp-event-data-types/c2-dll.md) |
-|  | 설명 | *c2.dll*을 시작 및 중지할 때 발생합니다. 이 DLL은 컴파일러의 백 엔드입니다. 컴파일러 드라이버(*cl.exe*)를 통해 호출됩니다. 링크 타임 코드 생성을 사용하는 경우 링커(*link.exe*)를 통해서도 호출됩니다. |
+|  | 설명 | *c2.dll* 을 시작 및 중지할 때 발생합니다. 이 DLL은 컴파일러의 백 엔드입니다. 컴파일러 드라이버( *cl.exe* )를 통해 호출됩니다. 링크 타임 코드 생성을 사용하는 경우 링커( *link.exe* )를 통해서도 호출됩니다. |
 | <a name="code-generation"></a> CODE_GENERATION | 형식 | 활동 |
 |  | 부모 항목 | [C2_DLL](#c2-dll) |
 |  | Children | [FUNCTION](#function)<br/>[THREAD](#thread) |
@@ -108,13 +108,13 @@ C++ Build Insights SDK는 Visual Studio 2017 이상 버전과 호환됩니다. �
 | <a name="command-line"></a> COMMAND_LINE | 형식 | 단순 이벤트 |
 |  | 부모 항목 | [COMPILER](#compiler)<br/>[LINKER](#linker) |
 |  | Children | 없음 |
-|  | 속성 | - *cl.exe* 또는 *link.exe*를 호출하는 데 사용된 명령줄 |
+|  | 속성 | - *cl.exe* 또는 *link.exe* 를 호출하는 데 사용된 명령줄 |
 |  | 캡처 클래스 | [SimpleEvent](cpp-event-data-types/simple-event.md)<br/>[CommandLine](cpp-event-data-types/command-line.md) |
 |  | 설명 | 컴파일러 및 링커가 명령줄 평가를 완료하면 발생합니다. 평가된 명령줄에는 지시 파일을 통해 전달된 모든 *cl.exe* 및 *link.exe* 매개 변수가 포함됩니다. 또한 CL, \_CL\_, LINK, \_LINK\_ 같은 환경 변수를 통해 전달된 *cl.exe* 및 *link.exe* 매개 변수도 포함됩니다. |
 | <a name="compiler"></a> COMPILER | 형식 | 활동 |
 |  | 부모 항목 | 없음 |
 |  | Children | [BACK_END_PASS](#back-end-pass)<br/>[COMMAND_LINE](#command-line)<br/>[ENVIRONMENT_VARIABLE](#environment-variable)<br/>[FILE_INPUT](#file-input)<br/>[OBJ_OUTPUT](#obj-output)<br/>[FRONT_END_PASS](#front-end-pass) |
-|  | 속성 | - 컴파일러 버전<br/>- 작업 디렉터리<br/>- 호출된 *cl.exe*의 절대 경로 |
+|  | 속성 | - 컴파일러 버전<br/>- 작업 디렉터리<br/>- 호출된 *cl.exe* 의 절대 경로 |
 |  | 캡처 클래스 | [작업](cpp-event-data-types/activity.md)<br/>[호출](cpp-event-data-types/invocation.md)<br/>[컴파일러](cpp-event-data-types/compiler.md) |
 |  | 설명 | *cl.exe* 호출을 시작 및 중지할 때 발생합니다. |
 | <a name="environment-variable"></a> ENVIRONMENT_VARIABLE | 형식 | 단순 이벤트 |
@@ -122,7 +122,7 @@ C++ Build Insights SDK는 Visual Studio 2017 이상 버전과 호환됩니다. �
 |  | Children | 없음 |
 |  | 속성 | - 환경 변수의 이름<br/>- 환경 변수의 값 |
 |  | 캡처 클래스 | [SimpleEvent](cpp-event-data-types/simple-event.md)<br/>[EnvironmentVariable](cpp-event-data-types/environment-variable.md) |
-|  | 설명 | *cl.exe* 또는 *link.exe*가 호출될 때 모든 기존 환경 변수에 대해 한 번 발생합니다. |
+|  | 설명 | *cl.exe* 또는 *link.exe* 가 호출될 때 모든 기존 환경 변수에 대해 한 번 발생합니다. |
 | <a name="executable-image-output"></a> EXECUTABLE_IMAGE_OUTPUT | 형식 | 단순 이벤트 |
 |  | 부모 항목 | [LINKER](#linker) |
 |  | Children | 없음 |
@@ -180,7 +180,7 @@ C++ Build Insights SDK는 Visual Studio 2017 이상 버전과 호환됩니다. �
 | <a name="linker"></a> LINKER | 형식 | 활동 |
 |  | 부모 항목 | 없음 |
 |  | Children | [COMMAND_LINE](#command-line)<br/>[ENVIRONMENT_VARIABLE](#environment-variable)<br/>[EXECUTABLE_IMAGE_OUTPUT](#executable-image-output)<br/>[EXP_OUTPUT](#exp-output)<br/>[FILE_INPUT](#file-input)<br/>[IMP_LIB_OUTPUT](#imp-lib-output)<br/>[LIB_OUTPUT](#lib-output)<br/>[PASS1](#pass1)<br/>[PASS2](#pass2) |
-|  | 속성 | - 링커 버전<br/>- 작업 디렉터리<br/>- 호출된 *link.exe*의 절대 경로 |
+|  | 속성 | - 링커 버전<br/>- 작업 디렉터리<br/>- 호출된 *link.exe* 의 절대 경로 |
 |  | 캡처 클래스 | [작업](cpp-event-data-types/activity.md)<br/>[호출](cpp-event-data-types/invocation.md)<br/>[링커](cpp-event-data-types/linker.md) |
 |  | 설명 | *link.exe* 호출을 시작 및 중지할 때 발생합니다. |
 | <a name="ltcg"></a> LTCG | 형식 | 활동 |
@@ -194,7 +194,7 @@ C++ Build Insights SDK는 Visual Studio 2017 이상 버전과 호환됩니다. �
 |  | Children | 없음 |
 |  | 속성 | - *.obj* 출력 파일의 절대 경로 |
 |  | 캡처 클래스 | [SimpleEvent](cpp-event-data-types/simple-event.md)<br/>[FileOutput](cpp-event-data-types/file-output.md)<br/>[ObjOutput](cpp-event-data-types/obj-output.md) |
-|  | 설명 | *cl.exe*에 의해 생성된 모든 *.obj* 출력에 대해 한 번 발생합니다. |
+|  | 설명 | *cl.exe* 에 의해 생성된 모든 *.obj* 출력에 대해 한 번 발생합니다. |
 | <a name="opt-icf"></a> OPT_ICF | 형식 | 활동 |
 |  | 부모 항목 | [PASS1](#pass1) |
 |  | Children | 없음 |

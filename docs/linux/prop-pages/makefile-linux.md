@@ -2,22 +2,22 @@
 title: 일반 속성(Linux C++ 메이크파일 프로젝트)| Microsoft Docs
 ms.date: 06/07/2019
 ms.assetid: 3dec6853-43f6-412b-9806-9bfad333a204
-ms.openlocfilehash: 72a7919bc94be80acdbf7a2cef5b4a9875595545
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: dd92d77069024456020a09b22de3596b8192c5af
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "79446155"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924664"
 ---
 # <a name="makefile-project-properties-linux-c"></a>메이크파일 프로젝트 속성(Linux C++)
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 Linux 지원은 Visual Studio 2017 이상에서 사용할 수 있습니다.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 Linux 메이크파일 프로젝트에서 사용할 수 있는 속성의 부분 목록입니다. 많은 메이크파일 프로젝트 속성은 Linux C++ 콘솔 애플리케이션 프로젝트 속성과 동일합니다.
 

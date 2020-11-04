@@ -4,26 +4,26 @@ ms.date: 11/22/2019
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: 55327d53f3f9e8439ba6e008f1b5a6b384722d54
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 61da0fd70ad68928872a2212b70377ab8a83a76a
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229872"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92919399"
 ---
 # <a name="cmakesettingsjson-schema-reference"></a>CMakeSettings.json 스키마 참조
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 CMake 프로젝트는 Visual Studio 2017 이상에서 지원됩니다.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-**CMakeSettings.json** 파일에는 Visual Studio가 IntelliSense에 사용하는 정보가 포함되어 있으며, Visual Studio는 이 정보를 사용하여 지정된 *구성* 및 컴파일러 *환경*에 대해 cmake.exe로 전달하는 명령줄 인수를 생성합니다. 구성에서는 특정 플랫폼 및 빌드 형식(예: `x86-Debug` 또는 `Linux-Release`)에 적용되는 속성을 지정합니다. 각 구성은 컴파일러 도구 집합에 대한 정보(예: MSVC, GCC 또는 Clang)를 캡슐화하는 환경을 지정합니다. CMake는 명령줄 인수를 사용하여 프로젝트에 대한 루트 *CMakeCache.txt* 파일 및 기타 프로젝트 파일을 다시 생성합니다. *CMakeLists.txt* 파일에서 값을 재정의할 수 있습니다.
+**CMakeSettings.json** 파일에는 Visual Studio가 IntelliSense에 사용하는 정보가 포함되어 있으며, Visual Studio는 이 정보를 사용하여 지정된 *구성* 및 컴파일러 *환경* 에 대해 cmake.exe로 전달하는 명령줄 인수를 생성합니다. 구성에서는 특정 플랫폼 및 빌드 형식(예: `x86-Debug` 또는 `Linux-Release`)에 적용되는 속성을 지정합니다. 각 구성은 컴파일러 도구 집합에 대한 정보(예: MSVC, GCC 또는 Clang)를 캡슐화하는 환경을 지정합니다. CMake는 명령줄 인수를 사용하여 프로젝트에 대한 루트 *CMakeCache.txt* 파일 및 기타 프로젝트 파일을 다시 생성합니다. *CMakeLists.txt* 파일에서 값을 재정의할 수 있습니다.
 
-IDE에서 구성을 추가하거나 제거한 다음, JSON 파일에서 직접 편집하거나 **CMake 설정 편집기**(Visual Studio 2019 이상)를 사용할 수 있습니다. IDE에서 손쉬운 구성 간 전환을 통해 다양한 프로젝트 파일을 생성할 수 있습니다. 자세한 내용은 [Visual Studio에서 CMake 빌드 설정 사용자 지정](customize-cmake-settings.md)을 참조하세요.
+IDE에서 구성을 추가하거나 제거한 다음, JSON 파일에서 직접 편집하거나 **CMake 설정 편집기** (Visual Studio 2019 이상)를 사용할 수 있습니다. IDE에서 손쉬운 구성 간 전환을 통해 다양한 프로젝트 파일을 생성할 수 있습니다. 자세한 내용은 [Visual Studio에서 CMake 빌드 설정 사용자 지정](customize-cmake-settings.md)을 참조하세요.
 
 ## <a name="configurations"></a>구성
 
@@ -34,8 +34,8 @@ IDE에서 구성을 추가하거나 제거한 다음, JSON 파일에서 직접 �
 - `addressSanitizerEnabled`: **`true`** 인 경우 주소 삭제기(Windows에서는 실험적)를 사용하여 프로그램을 컴파일합니다. Linux의 경우 최상의 결과를 얻으려면 -fno-omit-frame-pointer 및 컴파일러 최적화 수준 –Os 또는 -Oo를 사용하여 컴파일합니다.
 - `addressSanitizerRuntimeFlags`: ASAN_OPTIONS 환경 변수를 통해 AddressSanitizer에 전달되는 런타임 플래그입니다. 형식: flag1=value:flag2=value2.
 - `buildCommandArgs`: --빌드 -- 후 CMake로 전달되는 네이티브 빌드 스위치를 지정합니다. 예를 들어 Ninja 생성기를 사용하는 경우 -v를 전달하면 Ninja에서 명령줄을 출력하도록 강제합니다. Ninja 명령에 대한 자세한 정보는 [Ninja 명령줄 인수](#ninja)를 참조하세요.
-- `buildRoot`: CMake가 선택한 생성기에 대한 빌드 스크립트를 생성하는 디렉터리를 지정합니다.  **-DCMAKE_BINARY_DIR** 스위치에 매핑되고 *CMakeCache.txt*가 만들어질 위치를 지정합니다. 폴더가 없으면 해당 폴더가 만들어집니다. 지원되는 매크로에는 `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, `${env.VARIABLE}`이 포함됩니다.
-- `cacheGenerationCommand`: 명령줄 도구 및 인수(예: *gencache.bat debug*)를 지정하여 캐시를 생성합니다. 사용자가 다시 생성을 명시적으로 요청하는 경우 구성에 대해 지정된 환경의 셸에서 명령이 실행되거나 CMakeLists.txt 또는 CMakeSettings.json 파일이 수정됩니다.
+- `buildRoot`: CMake가 선택한 생성기에 대한 빌드 스크립트를 생성하는 디렉터리를 지정합니다.  **-DCMAKE_BINARY_DIR** 스위치에 매핑되고 *CMakeCache.txt* 가 만들어질 위치를 지정합니다. 폴더가 없으면 해당 폴더가 만들어집니다. 지원되는 매크로에는 `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, `${env.VARIABLE}`이 포함됩니다.
+- `cacheGenerationCommand`: 명령줄 도구 및 인수(예: *gencache.bat debug* )를 지정하여 캐시를 생성합니다. 사용자가 다시 생성을 명시적으로 요청하는 경우 구성에 대해 지정된 환경의 셸에서 명령이 실행되거나 CMakeLists.txt 또는 CMakeSettings.json 파일이 수정됩니다.
 - `cacheRoot`: CMake 캐시의 경로를 지정합니다. 이 디렉터리에는 기존 *CMakeCache.txt* 파일이 포함되어야 합니다.
 - `clangTidyChecks`: clang-tidy로 전달될 쉼표로 구분된 경고 목록입니다. 와일드카드가 허용되고 '-' 접두사가 검사를 제거합니다.
 - `cmakeCommandArgs`: 프로젝트 파일을 생성하기 위해 호출될 때 CMake로 전달되는 추가 명령줄 옵션을 지정합니다.
@@ -59,7 +59,7 @@ IDE에서 구성을 추가하거나 제거한 다음, JSON 파일에서 직접 �
   - Visual Studio 16 2019 Win64
   - Visual Studio 16 2019 ARM
 
-  **Visual Studio 2017 이상**:
+  **Visual Studio 2017 이상** :
   - Visual Studio 15 2017
   - Visual Studio 15 2017 Win64
   - Visual Studio 15 2017 ARM
@@ -71,9 +71,9 @@ IDE에서 구성을 추가하거나 제거한 다음, JSON 파일에서 직접 �
 
 Ninja는 유연성과 기능 대신 빠른 속도로 빌드하도록 설계되었으므로 기본값으로 설정됩니다. 그러나 일부 CMake 프로젝트는 Ninja를 사용하여 올바르게 빌드하지 못할 수도 있습니다. 이 경우 CMake에서 Visual Studio 프로젝트를 대신 생성하도록 지시할 수 있습니다.
 
-Visual Studio 2017에서 Visual Studio 생성기를 지정하려면 주 메뉴에서 **CMake | CMake 설정 변경**을 선택하여 설정 편집기를 엽니다. "Ninja"를 삭제하고 "V"를 입력합니다. 이렇게 하면 원하는 생성기를 선택할 수 있도록 IntelliSense가 활성화됩니다.
+Visual Studio 2017에서 Visual Studio 생성기를 지정하려면 주 메뉴에서 **CMake | CMake 설정 변경** 을 선택하여 설정 편집기를 엽니다. "Ninja"를 삭제하고 "V"를 입력합니다. 이렇게 하면 원하는 생성기를 선택할 수 있도록 IntelliSense가 활성화됩니다.
 
-Visual Studio 2019에서 Visual Studio 생성기를 지정하려면 **솔루션 탐색기**에서 *CMakeLists.txt* 파일을 마우스 오른쪽 단추로 클릭하고 **프로젝트에 대한 CMake 설정** > **고급 설정 표시** > **CMake 생성기**를 선택합니다.
+Visual Studio 2019에서 Visual Studio 생성기를 지정하려면 **솔루션 탐색기** 에서 *CMakeLists.txt* 파일을 마우스 오른쪽 단추로 클릭하고 **프로젝트에 대한 CMake 설정** > **고급 설정 표시** > **CMake 생성기** 를 선택합니다.
 
 활성 구성에서 Visual Studio 생성기를 지정하면 기본적으로 `-m -v:minimal` 인수를 사용하여 MSBuild.exe가 호출됩니다. *CMakeSettings.json* 파일 내에서 빌드를 사용자 지정하려면 다음과 같이 `buildCommandArgs` 속성을 통해 빌드 시스템에 전달할 추가 [MSBuild 명령줄 인수](../build/reference/msbuild-visual-cpp-overview.md)를 지정할 수 있습니다.
 
@@ -151,7 +151,7 @@ Visual Studio 2019에서 Visual Studio 생성기를 지정하려면 **솔루션 
 
 ## <a name="environments"></a><a name="environments"></a> 환경
 
-*환경*은 Visual Studio에서 cmake.exe를 호출하는 데 사용하는 프로세스에 설정된 환경 변수를 캡슐화합니다. MSVC 프로젝트의 경우 변수는 특정 플랫폼에 대한 [개발자 명령 프롬프트](building-on-the-command-line.md)에 설정된 것입니다. 예를 들어 `msvc_x64_x64` 환경은 **VS 2017용 개발자 명령 프롬프트** 또는 **VS 2019용 개발자 명령 프롬프트**를 **-arch=amd64 -host_arch=amd64** 인수를 사용하여 실행하는 것과 같습니다. *CMakeSettings.json*에서 `env.{<variable_name>}` 구문을 사용하여 개별 환경 변수를 참조할 수 있습니다(예: 폴더에 대한 경로 생성).  다음과 같이 미리 정의된 환경이 제공됩니다.
+*환경* 은 Visual Studio에서 cmake.exe를 호출하는 데 사용하는 프로세스에 설정된 환경 변수를 캡슐화합니다. MSVC 프로젝트의 경우 변수는 특정 플랫폼에 대한 [개발자 명령 프롬프트](building-on-the-command-line.md)에 설정된 것입니다. 예를 들어 `msvc_x64_x64` 환경은 **VS 2017용 개발자 명령 프롬프트** 또는 **VS 2019용 개발자 명령 프롬프트** 를 **-arch=amd64 -host_arch=amd64** 인수를 사용하여 실행하는 것과 같습니다. *CMakeSettings.json* 에서 `env.{<variable_name>}` 구문을 사용하여 개별 환경 변수를 참조할 수 있습니다(예: 폴더에 대한 경로 생성).  다음과 같이 미리 정의된 환경이 제공됩니다.
 
 - linux_arm: 원격으로 ARM Linux를 대상으로 지정합니다.
 - linux_x64: 원격으로 x64 Linux를 대상으로 지정합니다.
@@ -178,7 +178,7 @@ CMakeLists.txt 파일에서 모든 환경 변수는 `$ENV{variable_name}` 구문
 - `groupPriority`: 이러한 변수를 평가할 때 우선순위를 지정하는 정수입니다. 숫자가 높은 항목이 먼저 계산됩니다.
 - `inheritEnvironments`: 이 그룹에 상속되는 환경 세트를 지정하는 값의 배열입니다. 이 기능을 사용하면 기본 환경을 상속하고, 실행될 때 CMake.exe에 전달되는 사용자 지정 환경 변수를 만들 수 있습니다.
 
-**Visual Studio 2019 버전 16.4 이상:** 디버그 대상은 *CMakeSettings.json*에서 지정하는 환경과 함께 자동으로 시작됩니다. [launch.vs.json](launch-vs-schema-reference-cpp.md) 및 [tasks.vs.json](tasks-vs-json-schema-reference-cpp.md)에서 대상별 또는 작업별로 환경 변수를 재정의하거나 추가할 수 있습니다.
+**Visual Studio 2019 버전 16.4 이상:** 디버그 대상은 *CMakeSettings.json* 에서 지정하는 환경과 함께 자동으로 시작됩니다. [launch.vs.json](launch-vs-schema-reference-cpp.md) 및 [tasks.vs.json](tasks-vs-json-schema-reference-cpp.md)에서 대상별 또는 작업별로 환경 변수를 재정의하거나 추가할 수 있습니다.
 
 다음 예제에서는 x86-Debug 및 x64-Debug 구성 모두에서 상속된 하나의 **BuildDir** 전역 변수를 정의합니다. 각 구성에서 변수를 사용하여 해당 구성에 대한 **buildRoot** 속성 값을 지정합니다. 또한 각 구성에서 **inheritEnvironments** 속성을 사용하여 해당 구성에만 적용되는 변수를 지정하는 방법도 참조하세요.
 
@@ -212,7 +212,7 @@ CMakeLists.txt 파일에서 모든 환경 변수는 `$ENV{variable_name}` 구문
 }
 ```
 
-다음 예제에서 x86 디버그 구성은 **BuildDir** 속성에 대한 자체 값을 정의합니다. 이 값은 **BuildRoot**가 `D:\custom-builddir\x86-Debug`로 평가하도록 글로벌 **BuildDir** 속성이 설정한 값을 재정의합니다.
+다음 예제에서 x86 디버그 구성은 **BuildDir** 속성에 대한 자체 값을 정의합니다. 이 값은 **BuildRoot** 가 `D:\custom-builddir\x86-Debug`로 평가하도록 글로벌 **BuildDir** 속성이 설정한 값을 재정의합니다.
 
 ```json
 {
@@ -258,7 +258,7 @@ CMakeLists.txt 파일에서 모든 환경 변수는 `$ENV{variable_name}` 구문
 
 ## <a name="macros"></a>매크로
 
-*CMakeSettings.json*에서 다음 매크로를 사용할 수 있습니다.
+*CMakeSettings.json* 에서 다음 매크로를 사용할 수 있습니다.
 
 - `${workspaceRoot}` – 작업 영역 폴더의 전체 경로
 - `${workspaceHash}` - 작업 영역 위치의 해시입니다. 현재 작업 영역에 대한 고유 식별자를 만드는 데 유용합니다(예: 폴더 경로에서 사용).
@@ -268,7 +268,7 @@ CMakeLists.txt 파일에서 모든 환경 변수는 `$ENV{variable_name}` 구문
 - `${name}` - 구성의 이름
 - `${generator}` - 이 구성에 사용된 CMake 생성기의 이름
 
-*CMakeSettings.json*의 매크로 및 환경 변수에 대한 모든 참조는 cmage.exe 명령줄로 전달되기 전에 확장됩니다.
+*CMakeSettings.json* 의 매크로 및 환경 변수에 대한 모든 참조는 cmage.exe 명령줄로 전달되기 전에 확장됩니다.
 
 ## <a name="ninja-command-line-arguments"></a><a name="ninja"></a> Ninja 명령줄 인수
 

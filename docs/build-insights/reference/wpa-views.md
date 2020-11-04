@@ -7,21 +7,21 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: a5b13ee08becd472b3bc52319212b84a9c8ffc25
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 2ad5d2153fdf434461e1af982e9d9f343e9957a9
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91508805"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92919503"
 ---
 # <a name="reference-windows-performance-analyzer-views"></a>참조: Windows Performance Analyzer 뷰
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 C++ Build Insights 도구는 Visual Studio 2019에서 사용할 수 있습니다. 이 버전에 대한 설명서를 보려면 이 문서의 Visual Studio **버전** 선택기 컨트롤을 Visual Studio 2019로 설정하세요. 이 페이지의 목차 맨 위에 있습니다.
 
 ::: moniker-end
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 이 문서에서는 WPA(Windows Performance Analyzer)에서 사용할 수 있는 각 C++ Build Insights 뷰에 대한 세부 정보를 제공합니다. 이 페이지를 사용하여 다음 항목을 찾을 수 있습니다.
 
@@ -50,7 +50,7 @@ WPA를 처음 사용하는 경우에는 먼저 [C++ Build Insights용 WPA의 기
 | ExclusiveDuration        | 작업의 기간(밀리초)입니다. 자식 활동의 기간은 이 크기에 포함되지 않습니다. |
 | InclusiveCPUTime         | 이 작업 및 모든 자식 작업에서 사용한 CPU 시간(밀리초)입니다. |
 | InclusiveDuration        | 이 활동 및 모든 자식 활동의 기간(밀리초)입니다. |
-| InvocationDescription    | 이 이벤트가 발생한 호출에 대한 텍스트 설명입니다. 설명에는 *cl.exe* 또는 *link.exe*인지 여부와 고유한 숫자 호출 식별자가 포함됩니다. 해당하는 경우 호출 중에 컴파일 또는 연결된 구성 요소의 전체 경로를 포함합니다. 구성 요소를 빌드하지 않는 호출 또는 여러 구성 요소를 빌드하는 호출의 경우 경로는 비어 있습니다. 호출 식별자는 InvocationId 열에 있는 식별자와 동일합니다. |
+| InvocationDescription    | 이 이벤트가 발생한 호출에 대한 텍스트 설명입니다. 설명에는 *cl.exe* 또는 *link.exe* 인지 여부와 고유한 숫자 호출 식별자가 포함됩니다. 해당하는 경우 호출 중에 컴파일 또는 연결된 구성 요소의 전체 경로를 포함합니다. 구성 요소를 빌드하지 않는 호출 또는 여러 구성 요소를 빌드하는 호출의 경우 경로는 비어 있습니다. 호출 식별자는 InvocationId 열에 있는 식별자와 동일합니다. |
 | InvocationId             | 이 이벤트가 발생한 호출의 고유한 숫자 식별자입니다. |
 | 이름                     | 이 이벤트가 나타내는 작업 또는 속성의 이름입니다. |
 | Time                     | 이벤트가 발생한 시점을 식별하는 타임스탬프입니다. |
@@ -78,7 +78,7 @@ WPA를 처음 사용하는 경우에는 먼저 [C++ Build Insights용 WPA의 기
 
 | 열 이름              | 설명 |
 |--------------------------|-------------|
-| ActivityName             | 이 파일 이벤트가 발생했을 때 진행 중인 작업입니다. 현재 이 값은 항상 *Parsing*입니다. |
+| ActivityName             | 이 파일 이벤트가 발생했을 때 진행 중인 작업입니다. 현재 이 값은 항상 *Parsing* 입니다. |
 | BuildTimelineDescription | * |
 | BuildTimelineId          | * |
 | 구성 요소                | * |
@@ -108,7 +108,7 @@ WPA를 처음 사용하는 경우에는 먼저 [C++ Build Insights용 WPA의 기
 
 | 열 이름              | 설명 |
 |--------------------------|-------------|
-| ActivityName             | 이 함수 이벤트가 발생했을 때 진행 중인 작업입니다. 현재 이 값은 항상 *CodeGeneration*입니다. |
+| ActivityName             | 이 함수 이벤트가 발생했을 때 진행 중인 작업입니다. 현재 이 값은 항상 *CodeGeneration* 입니다. |
 | BuildTimelineDescription | * |
 | BuildTimelineId          | * |
 | 구성 요소                | * |

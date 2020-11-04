@@ -2,22 +2,22 @@
 title: 원격 빌드 이벤트(Linux C++)
 ms.date: 06/07/2019
 ms.assetid: 165d3690-5bd8-4b0b-bc66-8b699d85a61b
-ms.openlocfilehash: 4a3e9019d4dacc3d494feb5d6de8f5c2247e4d12
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a337c1e83976f06ebb09ac92fd077c18cc8543fd
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "79441505"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924570"
 ---
 # <a name="build-event-properties-linux-c"></a>빌드 이벤트 속성(Linux C++)
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 Linux 지원은 Visual Studio 2017 이상에서 사용할 수 있습니다.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 ## <a name="pre-build-event"></a>빌드 전 이벤트
 

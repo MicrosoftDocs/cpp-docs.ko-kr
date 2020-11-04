@@ -3,22 +3,22 @@ title: 일반 속성(Linux C++ 프로젝트)
 description: Visual Studio의 일반 속성 페이지에서 설정할 수 있는 Linux 프로젝트 속성에 대해 설명합니다.
 ms.date: 10/14/2020
 ms.assetid: 56c800a9-3df9-4196-87b2-81adb00e4767
-ms.openlocfilehash: 9d6cb4ca51eff799788776c2641364939d438d63
-ms.sourcegitcommit: f19f02f217b80804ab321d463c76ce6f681abcc6
+ms.openlocfilehash: 188e73f20eccc0e61278e154dd26e34e8613e1e9
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92176190"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924494"
 ---
 # <a name="general-properties-linux-c"></a>일반 속성(Linux C++)
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 Linux 지원은 Visual Studio 2017 이상에서 사용할 수 있습니다.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 | 속성 | 설명 |
 |--|--|

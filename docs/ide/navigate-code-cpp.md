@@ -3,10 +3,10 @@ title: Visual Studio에서 C++ 코드 탐색
 description: Visual Studio의 다양한 도구를 사용하여 C++ 코드 베이스를 탐색할 수 있습니다.
 ms.date: 05/28/2019
 ms.openlocfilehash: cc13326dee14e952c78e521344a6244249179cb8
-ms.sourcegitcommit: 59b7c18703d1ffd66827db0e2eeece490d3d8789
+ms.sourcegitcommit: 868838273eda35eb72c78dccf4121940dcc04706
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "90683496"
 ---
 # <a name="navigate-c-code-in-visual-studio"></a>Visual Studio에서 C++ 코드 탐색

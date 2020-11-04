@@ -9,21 +9,21 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: d3fdc015b0744cb5d0f98a1c9025343b93489ed9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 62a7bf6bde62dee7fdf5b1d2ce9044491a123f94
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224151"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92920192"
 ---
 # <a name="matcheventinmemberfunction"></a>MatchEventInMemberFunction
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
 C++ Build Insights SDK는 Visual Studio 2017 이상 버전과 호환됩니다. 이러한 버전에 대한 설명서를 보려면 이 문서에 대한 Visual Studio **버전** 선택기 컨트롤을 Visual Studio 2017 또는 Visual Studio 2019로 설정하세요. 이 페이지의 목차 맨 위에 있습니다.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 `MatchEventInMemberFunction` 함수를 사용하여 이벤트를 멤버 함수의 첫 번째 매개 변수에 설명된 유형과 일치하는지 비교할 수 있습니다. 일치하는 이벤트는 추가 처리를 위해 멤버 함수로 전달됩니다.
 
@@ -61,16 +61,16 @@ bool MatchEventInMemberFunction(
 `MatchEventInMemberFunction`에 전달된 추가 인수의 형식입니다.
 
 *event*\
-*TEvent*에 설명된 이벤트 유형과 일치하는지 비교할 이벤트입니다.
+*TEvent* 에 설명된 이벤트 유형과 일치하는지 비교할 이벤트입니다.
 
 *objectPtr*\
-*memberFunc*가 호출되는 개체에 대한 포인터입니다.
+*memberFunc* 가 호출되는 개체에 대한 포인터입니다.
 
 *memberFunc*\
 일치하는지 비교할 이벤트 유형을 설명하는 멤버 함수입니다.
 
 *extraArgs*\
-이벤트 유형 매개 변수와 함께 *memberFunc*로 완벽하게 전달되는 인수입니다.
+이벤트 유형 매개 변수와 함께 *memberFunc* 로 완벽하게 전달되는 인수입니다.
 
 ### <a name="return-value"></a>반환 값
 

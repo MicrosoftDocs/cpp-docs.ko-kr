@@ -4,24 +4,24 @@ ms.description: Visual Studio provides several predefined build configurations f
 ms.date: 06/12/2019
 helpviewer_keywords:
 - CMake redefined configurations
-ms.openlocfilehash: a88b5ebbf05e11dc05e012c5bfbcc718d3742fb3
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: aa8c39d8322408e08eb35859c7b0d8ed798a6f84
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81322994"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92919438"
 ---
 # <a name="cmake-predefined-build-configurations"></a>CMake 미리 정의된 빌드 구성
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 CMake 프로젝트는 Visual Studio 2017 이상에서 지원됩니다.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-CMake 프로젝트에서 빌드 구성은 CMakeSettings.json 파일에 저장됩니다. 주 도구 모임의 빌드 구성 드롭다운에서 **구성 관리**를 선택하면 Visual Studio에서 사용할 수 있는 기본 CMake 구성을 보여주는 대화 상자가 나타납니다.
+CMake 프로젝트에서 빌드 구성은 CMakeSettings.json 파일에 저장됩니다. 주 도구 모임의 빌드 구성 드롭다운에서 **구성 관리** 를 선택하면 Visual Studio에서 사용할 수 있는 기본 CMake 구성을 보여주는 대화 상자가 나타납니다.
 
 - x86 디버그
 - x86 릴리스
@@ -354,9 +354,9 @@ You can use these optional settings for more control:
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
-CMake 프로젝트에서 빌드 구성은 CMakeSettings.json 파일에 저장됩니다. 주 도구 모임의 빌드 구성 드롭다운에서 **구성 관리**를 선택하면 Visual Studio에서 사용할 수 있는 기본 CMake 구성을 보여주는 대화 상자가 나타납니다.
+CMake 프로젝트에서 빌드 구성은 CMakeSettings.json 파일에 저장됩니다. 주 도구 모임의 빌드 구성 드롭다운에서 **구성 관리** 를 선택하면 Visual Studio에서 사용할 수 있는 기본 CMake 구성을 보여주는 대화 상자가 나타납니다.
 
 - x86 디버그
 - x86 Clang 디버그

@@ -7,23 +7,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: b82c1f7105b3fd03d8c21dd79617dbc66f3e090c
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: d5c613a7cd8ee2d7dc158050dae9529bba2a8f71
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91507779"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92919568"
 ---
 # <a name="tutorial-vcperf-and-windows-performance-analyzer"></a>자습서: vcperf 및 Windows Performance Analyzer
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 C++ Build Insights 도구는 Visual Studio 2019에서 사용할 수 있습니다. 이 버전에 대한 설명서를 보려면 이 문서의 Visual Studio **버전** 선택기 컨트롤을 Visual Studio 2019로 설정하세요. 이 페이지의 목차 맨 위에 있습니다.
 
 ::: moniker-end
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
-이 자습서에서는 *vcperf.exe*를 사용하여 C++ 빌드의 추적을 수집하는 방법을 알아봅니다. Windows Performance Analyzer에서 이 추적을 보는 방법도 알아봅니다.
+이 자습서에서는 *vcperf.exe* 를 사용하여 C++ 빌드의 추적을 수집하는 방법을 알아봅니다. Windows Performance Analyzer에서 이 추적을 보는 방법도 알아봅니다.
 
 ## <a name="step-1-install-and-configure-windows-performance-analyzer"></a>1단계: Windows Performance Analyzer 설치 및 구성
 
@@ -39,7 +39,7 @@ C++ Build Insights를 지원하는 WPA 버전은 현재 Windows ADK Insider Prev
 
 1. 최신 버전의 Windows ADK를 다운로드하고 설치합니다.
 
-1. 설치하려는 기능에 대한 메시지가 표시되면 **Windows Performance Toolkit**를 선택합니다. 원하는 경우 다른 기능을 선택할 수 있지만 WPA 설치에는 필요하지 않습니다.
+1. 설치하려는 기능에 대한 메시지가 표시되면 **Windows Performance Toolkit** 를 선택합니다. 원하는 경우 다른 기능을 선택할 수 있지만 WPA 설치에는 필요하지 않습니다.
 
    ![Windows Performance Analyzer 설치 관리자의 기능 선택 화면](media/wpa-installation.png)
 
@@ -66,14 +66,14 @@ WPA에서 C++ Build Insights 추적을 보려면 특수한 추가 기능이 필�
 
 C++ Build Insights 데이터를 보려면 먼저 다음 단계에 따라 추적 파일에 수집합니다.
 
-1. 관리자 모드에서 VS 2019 **x64** 또는 **x86 Native Tools 명령 프롬프트**를 엽니다. (시작 메뉴 항목을 마우스 오른쪽 단추로 클릭하고 **더 보기** > **관리자 권한으로 실행**을 선택합니다.)
-    1. 64비트 버전의 Windows가 있는 경우 **x64**를 선택합니다. 그렇지 않은 경우 **x86**을 선택합니다.
+1. 관리자 모드에서 VS 2019 **x64** 또는 **x86 Native Tools 명령 프롬프트** 를 엽니다. (시작 메뉴 항목을 마우스 오른쪽 단추로 클릭하고 **더 보기** > **관리자 권한으로 실행** 을 선택합니다.)
+    1. 64비트 버전의 Windows가 있는 경우 **x64** 를 선택합니다. 그렇지 않은 경우 **x86** 을 선택합니다.
 
 1. 명령 프롬프트 창에 다음 명령을 입력합니다.
 
    **vcperf.exe /start _SessionName_**
 
-   *SessionName*으로 기억할 세션 이름을 선택합니다.
+   *SessionName* 으로 기억할 세션 이름을 선택합니다.
 
 1. 일반적인 방법으로 프로젝트를 빌드합니다. 동일한 명령 프롬프트 창을 사용하여 빌드할 필요는 없습니다.
 
@@ -81,7 +81,7 @@ C++ Build Insights 데이터를 보려면 먼저 다음 단계에 따라 추적 
 
    **vcperf.exe /stop _SessionName_ _traceFile.etl_**
 
-   이전에 *SessionName*으로 선택한 것과 동일한 세션 이름을 사용합니다. *traceFile.etl* 추적 파일로 적절한 이름을 선택합니다.
+   이전에 *SessionName* 으로 선택한 것과 동일한 세션 이름을 사용합니다. *traceFile.etl* 추적 파일로 적절한 이름을 선택합니다.
 
 개발자 명령 프롬프트 창에서 일반적인 *vcperf.exe* 명령 시퀀스는 다음과 같습니다.
 
@@ -89,19 +89,19 @@ C++ Build Insights 데이터를 보려면 먼저 다음 단계에 따라 추적 
 
 ### <a name="important-notes-about-vcperfexe"></a>vcperf.exe에 대한 중요 참고 사항
 
-- *vcperf.exe* 추적을 시작하거나 중지하려면 관리자 권한이 필요합니다. **관리자 권한으로 실행**을 사용해서 연 개발자 명령 프롬프트 창을 사용하세요.
+- *vcperf.exe* 추적을 시작하거나 중지하려면 관리자 권한이 필요합니다. **관리자 권한으로 실행** 을 사용해서 연 개발자 명령 프롬프트 창을 사용하세요.
 
 - 한 번에 하나의 추적 세션만 컴퓨터에서 실행할 수 있습니다.
 
 - 추적을 시작하는 데 사용한 세션 이름을 기억해야 합니다. 이름을 모르면 실행 중인 세션을 중지할 때 문제가 생길 수 있습니다.
 
-- *cl.exe* 및 *link.exe*와 마찬가지로 명령줄 유틸리티 *vcperf.exe*는 MSVC 설치에 포함되어 있습니다. 이 구성 요소를 얻는 데 필요한 추가 단계는 없습니다.
+- *cl.exe* 및 *link.exe* 와 마찬가지로 명령줄 유틸리티 *vcperf.exe* 는 MSVC 설치에 포함되어 있습니다. 이 구성 요소를 얻는 데 필요한 추가 단계는 없습니다.
 
-- *vcperf.exe*는 시스템에서 실행되는 모든 MSVC 도구에 대한 정보를 수집합니다. 따라서 추적을 수집하는 데 사용한 것과 동일한 명령 프롬프트에서 빌드를 시작할 필요가 없습니다. 다른 명령 프롬프트 또는 Visual Studio에서도 프로젝트를 빌드할 수 있습니다.
+- *vcperf.exe* 는 시스템에서 실행되는 모든 MSVC 도구에 대한 정보를 수집합니다. 따라서 추적을 수집하는 데 사용한 것과 동일한 명령 프롬프트에서 빌드를 시작할 필요가 없습니다. 다른 명령 프롬프트 또는 Visual Studio에서도 프로젝트를 빌드할 수 있습니다.
 
 ### <a name="vcperfexe-is-open-source"></a>vcperf.exe는 오픈 소스
 
-자체 버전의 *vcperf.exe*를 빌드하고 실행하려면 [vcperf GitHub 리포지토리](https://github.com/microsoft/vcperf)에서 얼마든지 복제할 수 있습니다.
+자체 버전의 *vcperf.exe* 를 빌드하고 실행하려면 [vcperf GitHub 리포지토리](https://github.com/microsoft/vcperf)에서 얼마든지 복제할 수 있습니다.
 
 ## <a name="step-3-view-your-trace-in-windows-performance-analyzer"></a>3단계: Windows Performance Analyzer에서 추적 보기
 

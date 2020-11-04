@@ -9,21 +9,21 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: a7b7fc0ce404f414b3ec07449bdc110d578fa101
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 0f4887d626c5e80a0afaa393e255f8ffedbd6b1f
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90042019"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92922620"
 ---
 # <a name="analysiscontrol-enum-class"></a>AnalysisControl 열거형 클래스
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
 C++ Build Insights SDK는 Visual Studio 2017 이상 버전과 호환됩니다. 이러한 버전에 대한 설명서를 보려면 이 문서에 대한 Visual Studio **버전** 선택기 컨트롤을 Visual Studio 2017 또는 Visual Studio 2019로 설정하세요. 이 페이지의 목차 맨 위에 있습니다.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 `AnalysisControl` 열거형 클래스는 분석 또는 다시 로깅 세션의 흐름을 제어하는 데 사용됩니다. [IAnalyzer](ianalyzer-class.md) 또는 [IRelogger](irelogger-class.md) 멤버 함수에서 `AnalysisControl` 코드를 반환하여 다음에 수행할 작업을 제어합니다.
 

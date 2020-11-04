@@ -2,22 +2,22 @@
 title: FIPS 규격 보안 원격 Linux 개발 설정
 description: 원격 개발을 위해 Visual Studio와 Linux 머신 간에 FIPS 규격 암호화 연결을 설정하는 방법입니다.
 ms.date: 01/17/2020
-ms.openlocfilehash: 9a0e87f4ddf69bf489b52d4f83934d3279f2d085
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: b7eb6bfd32d362415eda057bfa78afe80fb9e2f4
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "76520464"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924690"
 ---
 # <a name="set-up-fips-compliant-secure-remote-linux-development"></a>FIPS 규격 보안 원격 Linux 개발 설정
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 Linux 지원은 Visual Studio 2017 이상에서 사용할 수 있습니다. FIPS 규격 보안 원격 Linux 개발은 Visual Studio 2019 버전 16.5 이상에서 사용할 수 있습니다.
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 FIPS(Federal Information Processing Standard) 게시 140-2는 암호화 모듈에 대한 미국 정부 표준입니다. 표준 구현은 NIST에서 유효성을 검사합니다. Windows에서 [FIPS 규격 암호화 모듈에 대한 지원의 유효성](/windows/security/threat-protection/fips-140-validation)을 검사했습니다. Visual Studio 2019 버전 16.5 이상에서는 원격 개발을 위해 Linux 시스템에 대한 보안 FIPS 규격 암호화 연결을 사용할 수 있습니다.
 
@@ -44,7 +44,7 @@ Visual Studio와 원격 Linux 시스템 간의 FIPS 규격 암호화 보안 SSH 
    sudo systemctl enable ssh
    ```
 
-1. 루트로 */etc/ssh/sshd_config*를 엽니다. 다음 줄을 편집(또는 없는 경우, 추가)합니다.
+1. 루트로 */etc/ssh/sshd_config* 를 엽니다. 다음 줄을 편집(또는 없는 경우, 추가)합니다.
 
    ```config
    Ciphers aes256-cbc,aes192-cbc,aes128-cbc,3des-cbc
@@ -74,7 +74,7 @@ Visual Studio와 원격 Linux 시스템 간의 FIPS 규격 암호화 보안 SSH 
    ssh-keygen -t rsa -b 4096
    ```
 
-   이 명령은 퍼블릭 키와 프라이빗 키를 만듭니다. 기본적으로 키는 *%USERPROFILE%\\.ssh\\id_rsa* 및 *%USERPROFILE%\\.ssh\\id_rsa.pub*에 저장됩니다. (Powershell에서는 cmd 매크로 `$env:USERPROFILE` 대신 `%USERPROFILE%`을 사용) 키 이름을 변경하는 경우 이어지는 다음 단계에서 변경된 이름을 사용합니다.  보안 강화를 위해 암호를 사용하는 것이 좋습니다.
+   이 명령은 퍼블릭 키와 프라이빗 키를 만듭니다. 기본적으로 키는 *%USERPROFILE%\\.ssh\\id_rsa* 및 *%USERPROFILE%\\.ssh\\id_rsa.pub* 에 저장됩니다. (Powershell에서는 cmd 매크로 `$env:USERPROFILE` 대신 `%USERPROFILE%`을 사용) 키 이름을 변경하는 경우 이어지는 다음 단계에서 변경된 이름을 사용합니다.  보안 강화를 위해 암호를 사용하는 것이 좋습니다.
 
 1. Windows에서 Linux 머신으로 퍼블릭 키를 복사합니다.
 
@@ -99,7 +99,7 @@ SSH를 성공적으로 설정하고, 암호화 키를 생성 및 배포하고, �
 
 ## <a name="connect-to-the-remote-system-in-visual-studio"></a>Visual Studio에서 원격 시스템에 연결
 
-1. Visual Studio의 메뉴 모음에서 **도구 > 옵션**을 선택하여 **옵션** 대화 상자를 엽니다. 그런 다음 **플랫폼 간 > 연결 관리자**를 선택하여 연결 관리자 대화 상자를 엽니다.
+1. Visual Studio의 메뉴 모음에서 **도구 > 옵션** 을 선택하여 **옵션** 대화 상자를 엽니다. 그런 다음 **플랫폼 간 > 연결 관리자** 를 선택하여 연결 관리자 대화 상자를 엽니다.
 
    이전에 Visual Studio에서 연결을 설정하지 않은 경우 프로젝트를 처음 빌드할 때 Visual Studio에서 연결 관리자 대화 상자를 엽니다.
 
@@ -122,7 +122,7 @@ SSH를 성공적으로 설정하고, 암호화 키를 생성 및 배포하고, �
    | **프라이빗 키 파일**    | SSH 연결을 위해 생성된 프라이빗 키 파일
    | **암호**          | 위에서 선택한 프라이빗 키와 함께 사용된 암호
 
-   인증 유형을 **프라이빗 키**로 변경합니다. 프라이빗 키의 경로를 **프라이빗 키 파일** 필드에 입력합니다. **찾아보기** 단추를 사용하여 대신 프라이빗 키 파일로 이동할 수 있습니다. 그런 다음 **암호** 필드에서 프라이빗 키 파일을 암호화하는 데 사용되는 암호를 입력합니다.
+   인증 유형을 **프라이빗 키** 로 변경합니다. 프라이빗 키의 경로를 **프라이빗 키 파일** 필드에 입력합니다. **찾아보기** 단추를 사용하여 대신 프라이빗 키 파일로 이동할 수 있습니다. 그런 다음 **암호** 필드에서 프라이빗 키 파일을 암호화하는 데 사용되는 암호를 입력합니다.
 
 1. **연결** 단추를 선택하여 원격 컴퓨터에 대한 연결을 시도합니다.
 
@@ -136,19 +136,19 @@ SSH를 성공적으로 설정하고, 암호화 키를 생성 및 배포하고, �
 
 ## <a name="command-line-utility-for-the-connection-manager"></a>연결 관리자에 대한 명령줄 유틸리티  
 
-**Visual Studio 2019 버전 16.5 이상**: ConnectionManager.exe는 Visual Studio 외부에서 원격 개발 연결을 관리하는 명령줄 유틸리티입니다. 새 개발 컴퓨터를 프로비저닝하는 등의 작업에 유용합니다. 또는 연속 통합을 위해 Visual Studio를 설정하는 데 사용할 수 있습니다. ConnectionManager 명령에 대한 예제 및 전체 참조는 [ConnectionManager 참조](connectionmanager-reference.md)를 참조하세요.  
+**Visual Studio 2019 버전 16.5 이상** : ConnectionManager.exe는 Visual Studio 외부에서 원격 개발 연결을 관리하는 명령줄 유틸리티입니다. 새 개발 컴퓨터를 프로비저닝하는 등의 작업에 유용합니다. 또는 연속 통합을 위해 Visual Studio를 설정하는 데 사용할 수 있습니다. ConnectionManager 명령에 대한 예제 및 전체 참조는 [ConnectionManager 참조](connectionmanager-reference.md)를 참조하세요.  
 
 ## <a name="optional-enable-or-disable-fips-mode"></a>선택 사항: FIPS 모드 사용 또는 사용 안 함
 
 Windows에서 FIPS 모드를 전역적으로 사용하도록 설정할 수 있습니다.
 
-1. FIPS 모드를 사용하도록 설정하려면 **Windows+R**을 눌러 실행 대화 상자를 연 다음 gpedit.msc를 실행합니다.
+1. FIPS 모드를 사용하도록 설정하려면 **Windows+R** 을 눌러 실행 대화 상자를 연 다음 gpedit.msc를 실행합니다.
 
-1. **로컬 컴퓨터 정책 > 컴퓨터 구성 > Windows 설정 > 보안 설정 > 로컬 정책**을 확장하고 **보안 옵션**을 선택합니다.
+1. **로컬 컴퓨터 정책 > 컴퓨터 구성 > Windows 설정 > 보안 설정 > 로컬 정책** 을 확장하고 **보안 옵션** 을 선택합니다.
 
-1. **정책**에서 **시스템 암호화: 암호화, 해시 및 서명에 FIPS 규격 알고리즘을 사용**을 선택한 다음, **엔터** 키를 눌러 해당 대화 상자를 엽니다.
+1. **정책** 에서 **시스템 암호화: 암호화, 해시 및 서명에 FIPS 규격 알고리즘을 사용** 을 선택한 다음, **엔터** 키를 눌러 해당 대화 상자를 엽니다.
 
-1. **로컬 보안 설정** 탭에서 **사용** 또는 **사용 안 함**을 선택하고 **확인**을 선택하여 변경 내용을 저장합니다.
+1. **로컬 보안 설정** 탭에서 **사용** 또는 **사용 안 함** 을 선택하고 **확인** 을 선택하여 변경 내용을 저장합니다.
 
 > [!WARNING]
 > FIPS 모드를 사용하도록 설정하면 일부 애플리케이션이 예기치 않게 중단되거나 동작하지 않을 수 있습니다. 자세한 내용은 블로그 게시물 [“FIPS 모드”를 더 이상 권장하지 않는 이유](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/why-we-8217-re-not-recommending-8220-fips-mode-8221-anymore/ba-p/701037)를 참조하세요.

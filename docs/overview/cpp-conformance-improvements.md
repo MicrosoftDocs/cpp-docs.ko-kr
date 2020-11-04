@@ -3,18 +3,18 @@ title: C++ 규칙 향상
 ms.date: 08/04/2020
 description: Visual Studio의 Microsoft C++는 C++20 언어 표준을 완전하게 준수하기 위해 점점 향상되고 있습니다.
 ms.technology: cpp-language
-ms.openlocfilehash: 3cf06b092b79068b22e62dfdbbcfbd2c2cf5ad91
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: fc88406a3d2e291d06e01c3e92261b8dfc624ced
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500253"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92921427"
 ---
 # <a name="c-conformance-improvements-in-visual-studio"></a>Visual Studio의 C++ 규칙 향상
 
 Microsoft C++는 모든 릴리스에서 규칙 및 버그 수정을 향상합니다. 이 문서에는 주 릴리스와 버전별 개선 사항이 나와 있습니다. 버전별로 주요 버그 수정도 나와 있습니다. 특정 버전의 변경 내용으로 바로 이동하려면 **이 문서의 내용** 목록을 사용합니다.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ## <a name="conformance-improvements-in-visual-studio-2019-rtw-version-160"></a><a name="improvements_160"></a> Visual Studio 2019 RTW(버전 16.0)의 규칙 향상
 
@@ -341,7 +341,7 @@ std::equal(std::begin(a), std::end(a), std::begin(b), std::end(b));
 
 ### <a name="effect-of-defining-spaceship-operator-on--and-"></a>우주선 연산자 정의가 `==` 및 `!=`에 미치는 영향
 
-우주선 연산자가 **`= default`** 로 표시되지 않는 한 우주선 연산자 정의( **`<=>`** )만으로는 더 이상 **`==`** 또는 **`!=`** 을 포함하는 식을 다시 생성하지 않습니다([P1185R2](https://wg21.link/p1185r2)). 다음 예제는 Visual Studio 2019 RTW 및 버전 16.1에서 컴파일되지만 Visual Studio 2019 버전 16.2에서 C2678을 생성합니다.
+우주선 연산자가 **`= default`** 로 표시되지 않는 한 우주선 연산자 정의( **`<=>`** )만으로는 더 이상 **`==`** 또는 **`!=`** 을 포함하는 식을 다시 생성하지 않습니다( [P1185R2](https://wg21.link/p1185r2)). 다음 예제는 Visual Studio 2019 RTW 및 버전 16.1에서 컴파일되지만 Visual Studio 2019 버전 16.2에서 C2678을 생성합니다.
 
 ```cpp
 #include <compare>
@@ -1617,7 +1617,7 @@ void f(E e) {
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 ## <a name="conformance-improvements-in-visual-studio-2017-rtw-version-150"></a><a name="improvements_150"></a> Visual Studio 2017 RTW(버전 15.0)의 규칙 향상
 
@@ -2440,7 +2440,7 @@ T A<T>::f(T t, bool b = false) // C5034
 
 ### <a name="use-of-offsetof-with-compound-member-designator"></a>복합 멤버 지정자와 함께 `offsetof` 사용
 
-Visual Studio 2017 버전 15.3에서 *m*이 "복합 멤버 지정자"인 `offsetof(T, m)`를 사용하면 **`/Wall`** 옵션으로 컴파일할 때 경고가 발생합니다. 다음 코드는 형식이 잘못되었고 런타임에 크래시가 발생할 수 있습니다. Visual Studio 2017 버전 15.3은 경고 C4841: `non-standard extension used: compound member designator in offsetof`를 생성합니다.
+Visual Studio 2017 버전 15.3에서 *m* 이 "복합 멤버 지정자"인 `offsetof(T, m)`를 사용하면 **`/Wall`** 옵션으로 컴파일할 때 경고가 발생합니다. 다음 코드는 형식이 잘못되었고 런타임에 크래시가 발생할 수 있습니다. Visual Studio 2017 버전 15.3은 경고 C4841: `non-standard extension used: compound member designator in offsetof`를 생성합니다.
 
 ```cpp
 struct A {
@@ -2462,7 +2462,7 @@ constexpr auto off = offsetof(A, arr[2]);
 
 ### <a name="using-offsetof-with-static-data-member-or-member-function"></a>정적 데이터 멤버 또는 멤버 함수와 함께 `offsetof` 사용
 
-Visual Studio 2017 버전 15.3에서 *m*이 정적 데이터 멤버 또는 멤버 함수를 참조하는 `offsetof(T, m)`를 사용하면 오류가 발생합니다. 다음 코드는 오류 C4597: `undefined behavior: offsetof applied to member function 'example'` 및 오류 C4597: `undefined behavior: offsetof applied to static data member 'sample'`을 생성합니다.
+Visual Studio 2017 버전 15.3에서 *m* 이 정적 데이터 멤버 또는 멤버 함수를 참조하는 `offsetof(T, m)`를 사용하면 오류가 발생합니다. 다음 코드는 오류 C4597: `undefined behavior: offsetof applied to member function 'example'` 및 오류 C4597: `undefined behavior: offsetof applied to static data member 'sample'`을 생성합니다.
 
 ```cpp
 #include <cstddef>
@@ -3357,7 +3357,7 @@ public:
 
 ### <a name="offsetof-with-constant-expressions"></a>상수 식을 사용한 `offsetof`
 
-지금까지 [offsetof](../c-runtime-library/reference/offsetof-macro.md)는 [reinterpret_cast](../cpp/reinterpret-cast-operator.md)가 필요한 매크로를 사용하여 구현되었습니다. 이 사용법은 상수 식을 필요로 하는 컨텍스트에서 올바르지 않지만, Microsoft C++ 컴파일러에서는 일반적으로 허용되었습니다. 표준 라이브러리의 일부로 제공되는 `offsetof` 매크로는 컴파일러 내장 함수( **__builtin_offsetof**)를 올바르게 사용하지만, 매크로 트릭을 사용하여 고유한 `offsetof`를 정의하는 사람이 많았습니다.
+지금까지 [offsetof](../c-runtime-library/reference/offsetof-macro.md)는 [reinterpret_cast](../cpp/reinterpret-cast-operator.md)가 필요한 매크로를 사용하여 구현되었습니다. 이 사용법은 상수 식을 필요로 하는 컨텍스트에서 올바르지 않지만, Microsoft C++ 컴파일러에서는 일반적으로 허용되었습니다. 표준 라이브러리의 일부로 제공되는 `offsetof` 매크로는 컴파일러 내장 함수( **__builtin_offsetof** )를 올바르게 사용하지만, 매크로 트릭을 사용하여 고유한 `offsetof`를 정의하는 사람이 많았습니다.
 
 Visual Studio 2017 버전 15.8에서 컴파일러는 **`reinterpret_cast`** 연산자가 기본 모드로 표시될 수 있는 영역을 제한하여 코드가 표준 C++ 동작을 준수하도록 합니다. [`/permissive-`](../build/reference/permissive-standards-conformance.md)에서는 제약 조건이 훨씬 더 엄격합니다. 상수 식이 필요한 `offsetof`의 결과를 사용하면 경고 C4644 `usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead` 또는 C2975 `invalid template argument, expected compile-time constant expression`을 보내는 코드가 생성될 수 있습니다.
 
@@ -3643,7 +3643,7 @@ note: see usage of 'g'.
 
 ::: moniker-end
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 ## <a name="c-conformance-improvements-in-visual-studio-2015"></a>Visual Studio 2015의 C++ 규칙 향상
 

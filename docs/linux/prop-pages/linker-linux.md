@@ -2,22 +2,22 @@
 title: 링커 속성(Linux C++)
 ms.date: 06/07/2019
 ms.assetid: a0243a94-8164-425b-b2fe-b84ff363d546
-ms.openlocfilehash: 934e639199d663cba391c9913b067f32e5e32165
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: d6c6bc44a4d681f442a5a85ca9d5865c4590f884
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "79441278"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92921492"
 ---
 # <a name="linker-properties-linux-c"></a>링커 속성(Linux C++)
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 Linux 지원은 Visual Studio 2017 이상에서 사용할 수 있습니다.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 ## <a name="general"></a>일반
 

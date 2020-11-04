@@ -1,20 +1,20 @@
-﻿---
+---
 title: Windows XP용 프로그램 구성
 description: Visual Studio에서 C++ Windows XP 도구 집합을 설치하고 사용하는 방법입니다.
 ms.date: 03/16/2020
 ms.assetid: 1e4487b3-d815-4123-878b-5718b22f0fd5
-ms.openlocfilehash: 92364d7fd25ac617baacc125b279fb0ee9c92f62
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 09fe1a511c92f999e02646b9e606a3631a175215
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79440472"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92919373"
 ---
 # <a name="configuring-programs-for-windows-xp"></a>Windows XP용 프로그램 구성
 
 Visual Studio는 여러 플랫폼 도구 집합을 지원합니다. 즉, 기본 도구 집합에서 지원하지 않는 운영 체제 및 런타임 라이브러리를 대상으로 지정할 수 있습니다. 예를 들어 플랫폼 도구 집합을 전환하면 Visual Studio 2017 C++ 컴파일러를 사용하여 Windows XP 및 Windows Server 2003을 대상으로 하는 앱을 만들 수 있습니다. 또한 이전 플랫폼 도구 집합을 사용하여 이진 호환 레거시 코드를 유지하면서도 Visual Studio IDE의 최신 기능을 활용할 수 있습니다.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 Visual Studio 2019의 v142 도구 집합에는 Windows XP용 코드를 만들기 위한 지원이 포함되어 있지 않습니다. Visual Studio 2017 v141_xp 도구 집합을 사용한 Windows XP 개발에 대한 지원은 Visual Studio 설치 관리자의 개별 구성 요소 옵션으로 제공됩니다.
 
@@ -22,15 +22,15 @@ Visual Studio 2019의 v142 도구 집합에는 Windows XP용 코드를 만들기
 
 ## <a name="install-the-windows-xp-platform-toolset"></a>Windows XP 플랫폼 도구 집합 설치
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
-Windows XP 및 Windows Server 2003을 대상으로 하는 Visual Studio 2017 플랫폼 도구 집합과 구성 요소를 얻으려면 Visual Studio 설치 관리자를 실행합니다. Visual Studio를 처음 설치할 때 또는 기존 설치를 수정할 때 **C++를 사용한 데스크톱 개발** 워크로드를 선택해야 합니다. 이 워크로드에 대한 선택적 구성 요소 목록에서 **C++용 Windows XP 지원**을 선택한 다음, **설치** 또는 **수정**을 선택합니다.
+Windows XP 및 Windows Server 2003을 대상으로 하는 Visual Studio 2017 플랫폼 도구 집합과 구성 요소를 얻으려면 Visual Studio 설치 관리자를 실행합니다. Visual Studio를 처음 설치할 때 또는 기존 설치를 수정할 때 **C++를 사용한 데스크톱 개발** 워크로드를 선택해야 합니다. 이 워크로드에 대한 선택적 구성 요소 목록에서 **C++용 Windows XP 지원** 을 선택한 다음, **설치** 또는 **수정** 을 선택합니다.
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
-Windows XP 및 Windows Server 2003을 대상으로 하는 v141_xp 플랫폼 도구 집합과 구성 요소를 얻으려면 Visual Studio 설치 관리자를 실행합니다. Visual Studio를 처음 설치할 때 또는 기존 설치를 수정할 때 **C++를 사용한 데스크톱 개발** 워크로드를 선택해야 합니다. **개별 구성 요소** 탭의 **컴파일러, 빌드 도구 및 런타임**에서 **VS 2017(v141) 도구용 C++ Windows XP 지원\[사용되지 않음]** 를 선택한 후 **설치** 또는 **수정**을 선택합니다.
+Windows XP 및 Windows Server 2003을 대상으로 하는 v141_xp 플랫폼 도구 집합과 구성 요소를 얻으려면 Visual Studio 설치 관리자를 실행합니다. Visual Studio를 처음 설치할 때 또는 기존 설치를 수정할 때 **C++를 사용한 데스크톱 개발** 워크로드를 선택해야 합니다. **개별 구성 요소** 탭의 **컴파일러, 빌드 도구 및 런타임** 에서 **VS 2017(v141) 도구용 C++ Windows XP 지원\[사용되지 않음]** 를 선택한 후 **설치** 또는 **수정** 을 선택합니다.
 
 ::: moniker-end
 
@@ -40,9 +40,9 @@ Visual Studio에 포함되어 있는 Windows XP 플랫폼 도구 집합은 Windo
 
 ### <a name="to-target-windows-xp"></a>Windows XP를 대상으로 지정하려면
 
-1. **솔루션 탐색기**에서 프로젝트의 바로 가기 메뉴를 열고 **속성**을 선택합니다.
+1. **솔루션 탐색기** 에서 프로젝트의 바로 가기 메뉴를 열고 **속성** 을 선택합니다.
 
-1. 프로젝트의 **속성 페이지** 대화 상자에서 **구성 속성** > **일반**을 선택합니다. **플랫폼 도구 집합** 속성을 원하는 Windows XP 도구 집합으로 설정합니다. 예를 들어 Visual Studio 2017에서 Microsoft C++ 컴파일러를 사용하여 Windows XP 및 Windows Server 2003에 대한 코드를 작성하려면 **Visual Studio 2017 - Windows XP(v141_xp)** 를 선택합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자에서 **구성 속성** > **일반** 을 선택합니다. **플랫폼 도구 집합** 속성을 원하는 Windows XP 도구 집합으로 설정합니다. 예를 들어 Visual Studio 2017에서 Microsoft C++ 컴파일러를 사용하여 Windows XP 및 Windows Server 2003에 대한 코드를 작성하려면 **Visual Studio 2017 - Windows XP(v141_xp)** 를 선택합니다.
 
 ### <a name="c-runtime-support"></a>C++ 런타임 지원
 

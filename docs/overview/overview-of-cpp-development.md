@@ -6,34 +6,34 @@ helpviewer_keywords:
 - Visual C++, development tools
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 5a03590074d8de05153b2d9442da8b916e6eba82
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: db0a4ccbab142d01f0506b77237dbb09d43a1cf0
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500280"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924358"
 ---
 # <a name="overview-of-c-development-in-visual-studio"></a>Visual Studio의 C++ 개발 개요
 
-Visual Studio IDE(통합 개발 환경)의 일부인 Microsoft C++(MSVC)는 다른 언어와 공통된 다양한 창과 도구를 공유합니다. **솔루션 탐색기**, 코드 편집기 및 디버거를 비롯한 이러한 창과 도구에 대해서는 [Visual Studio IDE](/visualstudio/get-started/visual-studio-ide)에서 설명합니다. 흔히 공유 도구 또는 창은 다른 언어와는 약간 다른 C++용 기능 세트를 가지고 있습니다. 일부 창이나 도구는 Visual Studio Professional 또는 Visual Studio Enterprise 버전에서만 사용할 수 있습니다.
+Visual Studio IDE(통합 개발 환경)의 일부인 Microsoft C++(MSVC)는 다른 언어와 공통된 다양한 창과 도구를 공유합니다. **솔루션 탐색기** , 코드 편집기 및 디버거를 비롯한 이러한 창과 도구에 대해서는 [Visual Studio IDE](/visualstudio/get-started/visual-studio-ide)에서 설명합니다. 흔히 공유 도구 또는 창은 다른 언어와는 약간 다른 C++용 기능 세트를 가지고 있습니다. 일부 창이나 도구는 Visual Studio Professional 또는 Visual Studio Enterprise 버전에서만 사용할 수 있습니다.
 
 Visual Studio IDE에 있는 공유 도구 외에도, MSVC에는 네이티브 코드 개발 전용으로 사용되는 여러 도구가 있습니다. 이러한 도구의 목록도 이 문서에서 제공합니다. Visual Studio의 각 버전에서 사용할 수 있는 도구 목록은 [Visual Studio 버전의 C++ 도구 및 기능](visual-cpp-tools-and-features-in-visual-studio-editions.md)을 참조하세요.
 
 ## <a name="create-projects"></a>프로젝트 만들기
 
-*프로젝트*는 기본적으로 실행 가능한 프로그램이나 라이브러리에 빌드된 이미지 또는 데이터 파일과 같은 소스 코드 파일 및 리소스 집합입니다.
+*프로젝트* 는 기본적으로 실행 가능한 프로그램이나 라이브러리에 빌드된 이미지 또는 데이터 파일과 같은 소스 코드 파일 및 리소스 집합입니다.
 
 Visual Studio는 IntelliSense, 검색 및 디버깅을 완벽하게 지원하여 사용하려는 모든 프로젝트 시스템 또는 사용자 지정 빌드 도구를 지원합니다.
 
-- **MSBuild**는 Visual Studio용 네이티브 프로젝트 시스템입니다. 주 메뉴에서 **파일** > **새로 만들기** > **프로젝트**를 선택하면 다양한 종류의 C++ 애플리케이션 개발을 빠르게 시작하기 위한 많은 유형의 MSBuild ‘프로젝트 템플릿’이 표시됩니다. 
+- **MSBuild** 는 Visual Studio용 네이티브 프로젝트 시스템입니다. 주 메뉴에서 **파일** > **새로 만들기** > **프로젝트** 를 선택하면 다양한 종류의 C++ 애플리케이션 개발을 빠르게 시작하기 위한 많은 유형의 MSBuild ‘프로젝트 템플릿’이 표시됩니다. 
 
-   ::: moniker range="vs-2019"
+   ::: moniker range="msvc-160"
 
    ![새 프로젝트 템플릿](../build/media/mathclient-project-name-2019.png "Visual Studio 2019 새 프로젝트 대화 상자")
 
    ::: moniker-end
 
-   ::: moniker range="<=vs-2017"
+   ::: moniker range="<=msvc-150"
 
    ![프로젝트 템플릿](media/vs2017-new-project.png "Visual Studio 2017 새 프로젝트 대화 상자")
 
@@ -41,7 +41,7 @@ Visual Studio는 IntelliSense, 검색 및 디버깅을 완벽하게 지원하여
 
    일반적으로 기존 CMake 프로젝트를 사용하거나 다른 프로젝트 시스템을 사용하지 않는 한 이러한 템플릿을 새 프로젝트에 사용해야 합니다. 자세한 내용은 [MSBuild 기반 프로젝트 만들기 및 관리](../build/creating-and-managing-visual-cpp-projects.md)를 참조하세요.
 
-- **CMake**는 C++ 워크로드로 데스크톱 개발을 설치할 때, Visual Studio IDE에 통합되는 플랫폼 간 빌드 시스템입니다. 새 프로젝트에 대한 CMake 프로젝트 템플릿을 사용하거나 CMakeLists.txt 파일이 있는 폴더를 열면 됩니다. 자세한 내용은 [Visual Studio의 CMake 프로젝트](../build/cmake-projects-in-visual-studio.md)를 참조하세요.
+- **CMake** 는 C++ 워크로드로 데스크톱 개발을 설치할 때, Visual Studio IDE에 통합되는 플랫폼 간 빌드 시스템입니다. 새 프로젝트에 대한 CMake 프로젝트 템플릿을 사용하거나 CMakeLists.txt 파일이 있는 폴더를 열면 됩니다. 자세한 내용은 [Visual Studio의 CMake 프로젝트](../build/cmake-projects-in-visual-studio.md)를 참조하세요.
 
 - 느슨한 파일 컬렉션을 포함한 다른 모든 C++ 빌드 시스템은 **폴더 열기** 기능을 통해 지원됩니다. 간단한 JSON 파일을 생성하여 빌드 프로그램을 호출하고 디버깅 세션을 구성합니다. 자세한 내용은 [C++용 폴더 열기 프로젝트](../build/open-folder-projects-cpp.md)를 참조하세요.
 
@@ -49,13 +49,13 @@ Visual Studio는 IntelliSense, 검색 및 디버깅을 완벽하게 지원하여
 
 소스 제어를 사용하면 여러 개발자 간 작업을 조정하고, 진행 중인 작업을 프로덕션 코드에서 분리하고, 소스 코드를 백업할 수 있습니다. Visual Studio에서는 해당 **팀 탐색기** 창을 통해 Git 및 [TFVC\(Team Foundation 버전 제어\)](/azure/devops/repos/tfvc/)를 지원합니다.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ![Visual Studio 2019 팀 탐색기 창의 스크린샷](media/vs2019-team-explorer.png "Visual Studio 2017 팀 탐색기")
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 ![Visual Studio 2017 팀 탐색기 창의 스크린샷](media/vs2017-team-explorer.png "Visual Studio 2017 팀 탐색기")
 
@@ -79,7 +79,7 @@ MFC 애플리케이션의 사용자 인터페이스 만들기에 대한 자세�
 
 ## <a name="write-code"></a>코드 작성
 
-프로젝트를 만든 후에는 모든 프로젝트 파일이 **솔루션 탐색기** 창에 표시됩니다. (*솔루션*은 하나 이상의 관련 프로젝트의 논리적 컨테이너입니다.) **솔루션 탐색기**에서 .h 또는 .cpp 파일을 클릭하면 파일이 코드 편집기에서 열립니다.
+프로젝트를 만든 후에는 모든 프로젝트 파일이 **솔루션 탐색기** 창에 표시됩니다. ( *솔루션* 은 하나 이상의 관련 프로젝트의 논리적 컨테이너입니다.) **솔루션 탐색기** 에서 .h 또는 .cpp 파일을 클릭하면 파일이 코드 편집기에서 열립니다.
 
 ![솔루션 탐색기 및 코드 편집기](media/vs2017-solution-explorer-code-editor.png "Visual Studio 2017 솔루션 탐색기 및 코드 편집기")
 
@@ -87,11 +87,11 @@ MFC 애플리케이션의 사용자 인터페이스 만들기에 대한 자세�
 
 ## <a name="add-and-edit-resources"></a>리소스 추가 및 편집
 
-Windows 프로그램 또는 DLL에는 일반적으로 대화 상자, 아이콘, 이미지, 지역화 가능 문자열, 시작 화면, 데이터베이스 연결 문자열 또는 임의 데이터와 같은 일부 *리소스*가 포함되어 있습니다. Visual Studio에는 리소스를 추가하고 편집하기 위한 도구가 포함되어 있습니다. 자세한 내용은 [리소스 파일을 사용하여 작업](../windows/working-with-resource-files.md)을 참조하세요.
+Windows 프로그램 또는 DLL에는 일반적으로 대화 상자, 아이콘, 이미지, 지역화 가능 문자열, 시작 화면, 데이터베이스 연결 문자열 또는 임의 데이터와 같은 일부 *리소스* 가 포함되어 있습니다. Visual Studio에는 리소스를 추가하고 편집하기 위한 도구가 포함되어 있습니다. 자세한 내용은 [리소스 파일을 사용하여 작업](../windows/working-with-resource-files.md)을 참조하세요.
 
 ## <a name="build-compile-and-link"></a>빌드(컴파일 및 연결)
 
-메뉴 모음에서 **빌드** > **솔루션 빌드**를 선택하거나 **Ctrl+Shift+B** 키 조합을 입력하여 프로젝트를 컴파일하고 연결합니다. 빌드 오류 및 경고는 오류 목록에 보고됩니다(**Ctrl+\\, E**). **출력** 창(**Alt+2**)에는 빌드 프로세스에 대한 정보가 표시됩니다.
+메뉴 모음에서 **빌드** > **솔루션 빌드** 를 선택하거나 **Ctrl+Shift+B** 키 조합을 입력하여 프로젝트를 컴파일하고 연결합니다. 빌드 오류 및 경고는 오류 목록에 보고됩니다( **Ctrl+\\, E** ). **출력** 창( **Alt+2** )에는 빌드 프로세스에 대한 정보가 표시됩니다.
 
 ![출력 창 및 오류 목록](media/vs2017-output-error-list.png "Visual Studio 2017 출력 창 및 오류 목록")
 
@@ -101,7 +101,7 @@ Windows 프로그램 또는 DLL에는 일반적으로 대화 상자, 아이콘, 
 
 ## <a name="debug"></a>디버그
 
-**F5** 키를 눌러 디버깅을 시작할 수 있습니다. 설정한 모든 중단점에서 실행이 일시 중지됩니다(**F9**를 누를 경우). 한 번에 한 줄씩 코드를 단계별로 진행하며(**F10**) 변수 또는 레지스터의 값을 확인할 수 있고, 일부 사례에서는 코드 변경 후 다시 컴파일하지 않고 디버깅을 계속할 수도 있습니다. 다음 그림에서는 중단점에서 실행이 중지되는 디버깅 세션을 보여 줍니다. 데이터 구조 멤버의 값은 **조사식 창**에 표시됩니다.
+**F5** 키를 눌러 디버깅을 시작할 수 있습니다. 설정한 모든 중단점에서 실행이 일시 중지됩니다( **F9** 를 누를 경우). 한 번에 한 줄씩 코드를 단계별로 진행하며( **F10** ) 변수 또는 레지스터의 값을 확인할 수 있고, 일부 사례에서는 코드 변경 후 다시 컴파일하지 않고 디버깅을 계속할 수도 있습니다. 다음 그림에서는 중단점에서 실행이 중지되는 디버깅 세션을 보여 줍니다. 데이터 구조 멤버의 값은 **조사식 창** 에 표시됩니다.
 
 ![디버깅 세션](media/vs2017-debug-watch.png "Visual Studio 2017 디버깅 세션")
 

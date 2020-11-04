@@ -3,16 +3,16 @@ title: Visual Studio에서 Linux MSBuild C++ 프로젝트 구성
 ms.date: 10/16/2020
 description: Visual Studio에서 MSBuild 기반 Linux 프로젝트를 구성하여 빌드할 수 있습니다.
 ms.assetid: 4d7c6adf-54b9-4b23-bd23-5de0c825b768
-ms.openlocfilehash: 51837dc86d041b9120f984cc01f8db06d696b292
-ms.sourcegitcommit: f19f02f217b80804ab321d463c76ce6f681abcc6
+ms.openlocfilehash: 451f34c257c210463ce11b11f27bc218d41b45c8
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92176343"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92921817"
 ---
 # <a name="configure-a-linux-msbuild-c-project-in-visual-studio"></a>Visual Studio에서 Linux MSBuild C++ 프로젝트 구성
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 Linux 지원은 Visual Studio 2017 이상에서 사용할 수 있습니다.
 
@@ -22,7 +22,7 @@ Linux 지원은 Visual Studio 2017 이상에서 사용할 수 있습니다.
 
 물리적 Linux 머신, 가상 머신 또는 [Linux용 Windows 하위 시스템](/windows/wsl/about)(WSL)을 대상으로 지정하도록 Linux 프로젝트를 구성할 수 있습니다.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 **Visual Studio 2019 버전 16.1** :
 
@@ -54,7 +54,7 @@ WSL(Linux용 Windows 하위 시스템)용으로 빌드하는 경우 WSL 버전 1
 
    ![빌드 머신](media/remote-build-machine-vs2019.png)
 
-   ::: moniker range="vs-2019"
+   ::: moniker range="msvc-160"
 
    **Visual Studio 2019 버전 16.7** : WSL(Linux용 Windows 하위 시스템)을 대상으로 하려면 **플랫폼 도구 집합** 드롭다운을 **GCC for Windows Subsystem for Linux** (Linux용 Windows 하위 시스템의 GCC)로 설정합니다. 다른 원격 옵션이 사라지고 기본 WSL 셸에 대한 경로가 해당 자리에 나타납니다.
 
@@ -75,7 +75,7 @@ WSL(Linux용 Windows 하위 시스템)용으로 빌드하는 경우 WSL 버전 1
 
 ## <a name="copy-sources-remote-systems-only"></a>소스 복사(원격 시스템에만 해당)
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 이 섹션은 WSL을 대상으로 하는 경우에는 적용되지 않습니다.
 
@@ -112,13 +112,13 @@ sudo apt install zip
 
 헤더 캐시를 관리하려면 **도구 > 옵션, 플랫폼 간 > 연결 관리자> 원격 헤더 IntelliSense 관리자** 로 이동합니다. Linux 컴퓨터에서 변경한 후 헤더 캐시를 업데이트하려면 원격 연결을 선택한 후 **업데이트** 를 선택합니다. 연결 자체를 삭제하지 않고 헤더를 제거하려면 **삭제** 를 선택합니다. **탐색** 을 선택하여 **파일 탐색기** 에서 로컬 디렉터리를 엽니다. 이 폴더를 읽기 전용으로 취급합니다. Visual Studio 2017 15.3 이전 버전에서 작성된 기존 연결의 헤더를 다운로드하려면 연결을 선택한 다음, **다운로드** 를 선택합니다.
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 ![플랫폼 간 > 연결 관리자 > 원격 헤더 IntelliSense 관리자가 선택된 옵션 대화 상자를 보여 주는 스크린샷](media/remote-header-intellisense.png)
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ![플랫폼 간 > 연결 관리자가 선택된 옵션 대화 상자를 보여 주는 스크린샷](media/connection-manager-vs2019.png)
 

@@ -4,12 +4,12 @@ description: 명령줄 MSBuild C++ .vcxproj 프로젝트를 처음부터 만드�
 ms.date: 10/08/2020
 helpviewer_keywords:
 - 'MSBuild (C++), walkthrough: create a project'
-ms.openlocfilehash: 4f17cd8c4f5f48d8be5cd7cb25940db87029e111
-ms.sourcegitcommit: 6e5429e076e552b32e8bdc49480c51498d7924c1
+ms.openlocfilehash: b3d4e8881f926e80e95832a27f7a5106ce876265
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099734"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924332"
 ---
 # <a name="walkthrough-using-msbuild-to-create-a-visual-c-project"></a>연습: MSBuild를 사용하여 Visual C++ 프로젝트 만들기
 
@@ -36,21 +36,21 @@ ms.locfileid: "92099734"
 
 - MSBuild 시스템에 대해 전반적으로 이해합니다.
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 > [!NOTE]
 > 대부분의 하위 수준 빌드 지침은 기본 대상 폴더에 정의된 *`.targets`* 및 *`.props`* 파일에 포함되어 있습니다(`$(VCTargetsPath)` 속성에 저장되어 있음). 이 위치에 *`Microsoft.Cpp.Common.props`* 와 같은 파일이 있습니다. Visual Studio 2015 이전 버전의 경우 이 파일의 기본 경로는 *`%ProgramFiles(x86)%\MSBuild\Microsoft.Cpp\v4.0\<version>\`* 입니다.
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 > [!NOTE]
 > 대부분의 하위 수준 빌드 지침은 기본 대상 폴더에 정의된 *`.targets`* 및 *`.props`* 파일에 포함되어 있습니다(`$(VCTargetsPath)` 속성에 저장되어 있음). 이 위치에 *`Microsoft.Cpp.Common.props`* 와 같은 파일이 있습니다. Visual Studio 2017의 경우 이 파일의 기본 경로는 *`%VSINSTALLDIR%Common7\IDE\VC\VCTargets\`* 입니다. Visual Studio 2015 이전 버전에서는 *`%ProgramFiles(x86)%\MSBuild\Microsoft.Cpp\v4.0\<version>\`* 에 저장됩니다.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 > [!NOTE]
 > 대부분의 하위 수준 빌드 지침은 기본 대상 폴더에 정의된 *`.targets`* 및 *`.props`* 파일에 포함되어 있습니다(`$(VCTargetsPath)` 속성에 저장되어 있음). 이 위치에 *`Microsoft.Cpp.Common.props`* 와 같은 파일이 있습니다. 이 파일의 기본 경로는 *`%VSINSTALLDIR%MSBuild\Microsoft\VC\<version>\`* 입니다. `<version>` 경로 요소는 Visual Studio 버전에 해당됩니다. Visual Studio 2019의 경우 *`v160`* 입니다. Visual Studio 2017의 경우 이 파일은 *`%VSINSTALLDIR%Common7\IDE\VC\VCTargets\`* 에 저장됩니다. Visual Studio 2015 이전 버전에서는 *`%ProgramFiles(x86)%\MSBuild\Microsoft.Cpp\v4.0\<version>\`* 에 저장됩니다.

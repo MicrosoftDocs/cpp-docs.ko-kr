@@ -4,12 +4,12 @@ description: Visual Studio C++ 프로젝트에서 사용자 지정 도구를 프
 ms.date: 10/08/2020
 helpviewer_keywords:
 - 'MSBuild (C++), howto: integrate custom tools'
-ms.openlocfilehash: 4b88bf94a92efaf5046fd83e5c6358f3fdf80895
-ms.sourcegitcommit: 6e5429e076e552b32e8bdc49480c51498d7924c1
+ms.openlocfilehash: 58626101d54c5b1f9749174e5f3e8938c431d025
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099669"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92922155"
 ---
 # <a name="how-to-integrate-custom-tools-into-the-project-properties"></a>방법: 사용자 지정 도구를 프로젝트 속성에 통합
 
@@ -19,19 +19,19 @@ XML 파일을 만들어 Visual Studio **속성 페이지** 창에 사용자 지�
 
 Visual Studio가 시작될 때 속성이 로드되도록 사용자 지정 도구의 속성이 포함된 규칙 파일을 만듭니다. 파일을 수정하는 방법에 대한 자세한 내용은 Visual Studio Project Team 블로그에서 [플랫폼 확장성 2부](/archive/blogs/vsproject/platform-extensibility-part-2)를 참조하세요.
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 규칙 파일을 저장할 폴더는 사용 중인 Visual Studio의 로캘 및 버전에 따라 다릅니다. Visual Studio 2015 이전 버전의 개발자 명령 프롬프트에서 규칙 폴더는 *`%ProgramFiles(x86)%\MSBuild\Microsoft.Cpp\v4.0\<version>\<locale>`* 입니다. Visual Studio 2015에서 `<version>` 값은 *`v140`* 입니다. `<locale>`은 LCID(예: 영어의 경우 `1033`)입니다. 설치된 각 Visual Studio 버전과 각각의 언어에 대해 다른 경로를 사용합니다. 예를 들어, Visual Studio 2015 Community 영어 버전의 기본 규칙 폴더 경로는 *`C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\v140\1033\`* 입니다.
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 규칙 파일을 저장할 폴더는 사용 중인 Visual Studio의 로캘 및 버전에 따라 다릅니다. Visual Studio 2017 버전의 개발자 명령 프롬프트에서 규칙 폴더는 *`%VSINSTALLDIR%Common7\IDE\VC\VCTargets\<locale>\`* 입니다. `<locale>`은 LCID(예: 영어의 경우 `1033`)입니다. Visual Studio 2015 이전 버전의 개발자 명령 프롬프트에서 규칙 폴더는 *`%ProgramFiles(x86)%\MSBuild\Microsoft.Cpp\v4.0\<version>\<locale>\`* 입니다. 여기서 `<version>` 값은 Visual Studio 2015의 경우 *`v140`* 입니다. 설치된 각 Visual Studio 버전과 각각의 언어에 대해 다른 경로를 사용합니다. 예를 들어, Visual Studio 2017 Community 영어 버전의 기본 규칙 폴더 경로는 *`C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\1033\`* 입니다.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 규칙 파일을 저장할 폴더는 사용 중인 Visual Studio의 로캘 및 버전에 따라 다릅니다. Visual Studio 2019 이상 버전의 개발자 명령 프롬프트에서 규칙 폴더는 *`%VSINSTALLDIR%MSBuild\Microsoft\VC\<version>\<locale>\`* 입니다. 여기서 `<version>` 값은 Visual Studio 2019의 경우 *`v160`* 입니다. `<locale>`은 LCID(예: 영어의 경우 `1033`)입니다. Visual Studio 2017에서 규칙 폴더는 *`%VSINSTALLDIR%Common7\IDE\VC\VCTargets\<locale>\`* 입니다. Visual Studio 2015 이전 버전의 개발자 명령 프롬프트에서 규칙 폴더는 *`%ProgramFiles(x86)%\MSBuild\Microsoft.Cpp\v4.0\<version>\<locale>\`* 입니다. 설치된 각 Visual Studio 버전과 각각의 언어에 대해 다른 경로를 사용합니다. 예를 들어, Visual Studio 2019 Community 영어 버전의 기본 규칙 폴더 경로는 *`C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\1033\`* 입니다.
 

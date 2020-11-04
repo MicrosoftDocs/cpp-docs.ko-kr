@@ -3,22 +3,22 @@ title: Visual Studio에서 C++ Linux 워크로드 설치
 description: Visual Studio에서 C++에 대한 Linux 워크로드를 다운로드하고, 설치하고, 설정하는 방법입니다.
 ms.date: 05/03/2020
 ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
-ms.openlocfilehash: 1a1b42927d440d1cde847fd1c1b6593e87a3824a
-ms.sourcegitcommit: f19f02f217b80804ab321d463c76ce6f681abcc6
+ms.openlocfilehash: 9d0c832ec383286b5f89b8ed1474e69d72b5cb98
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92176281"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92921609"
 ---
 # <a name="download-install-and-set-up-the-linux-workload"></a>Linux 워크로드 다운로드, 설치 및 설정
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 Linux 프로젝트는 Visual Studio 2017 이상에서 지원됩니다. 이러한 버전에 대한 설명서를 보려면 이 문서에 대한 Visual Studio **버전** 선택기 컨트롤을 Visual Studio 2017 또는 Visual Studio 2019로 설정하세요. 이 페이지의 목차 맨 위에 있습니다.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 Windows에서 Visual Studio IDE를 사용하여 원격 Linux 시스템, 가상 머신 또는 [Linux용 Windows 하위 시스템](/windows/wsl/about)에서 실행되는 C++ 프로젝트를 작성, 편집 및 디버그할 수 있습니다.
 
@@ -28,7 +28,7 @@ CMake를 Visual Studio 프로젝트로 변환할 필요 없이 CMake를 사용�
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 ## <a name="visual-studio-setup"></a>Visual Studio 설치
 
@@ -52,7 +52,7 @@ Windows 10에서 WSL(Linux용 Windows 하위 시스템)에 선호하는 Linux �
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 Visual Studio의 Linux 프로젝트는 원격 Linux 시스템 또는 WSL에 다음 종속성이 설치되어야 합니다.
 
@@ -68,7 +68,7 @@ Visual Studio의 Linux 프로젝트는 원격 Linux 시스템 또는 WSL에 다�
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 Visual Studio의 Linux 프로젝트는 원격 Linux 시스템 또는 WSL에 다음 종속성이 설치되어야 합니다.
 
@@ -81,7 +81,7 @@ Visual Studio의 Linux 프로젝트는 원격 Linux 시스템 또는 WSL에 다�
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ## <a name="linux-setup-ubuntu-on-wsl"></a>Linux 설정: WSL에서 Ubuntu
 
@@ -93,7 +93,7 @@ sudo apt-get install g++ gdb make ninja-build rsync zip
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 ## <a name="ubuntu-on-remote-linux-systems"></a>원격 Linux 시스템에서 Ubuntu
 
@@ -117,7 +117,7 @@ sudo apt-get install g++ gdb make ninja-build rsync zip
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ## <a name="fedora-on-wsl"></a>WSL에서 Fedora
 
@@ -131,7 +131,7 @@ Intellisense 지원을 위해 Visual Studio를 사용하는 Linux 헤더의 자�
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 ## <a name="fedora-on-remote-linux-systems"></a>원격 Linux 시스템에서 Fedora
 

@@ -7,21 +7,21 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 2d4473e3682a6e00e0eef61cb73d7450976bcc0c
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 75f45244b9e9b38b7dc65b604940199acafa0ede
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91507734"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92922220"
 ---
 # <a name="tutorial-windows-performance-analyzer-basics"></a>자습서: Windows Performance Analyzer 기본 사항
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 C++ Build Insights 도구는 Visual Studio 2019에서 사용할 수 있습니다. 이 버전에 대한 설명서를 보려면 이 문서의 Visual Studio **버전** 선택기 컨트롤을 Visual Studio 2019로 설정하세요. 이 페이지의 목차 맨 위에 있습니다.
 
 ::: moniker-end
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 C++ Build Insights를 효과적으로 사용하려면 Windows Performance Analyzer(WPA)에 대한 몇 가지 지식이 필요합니다. 이 문서는 일반적인 WPA 작업을 익히는 데 도움이 됩니다. WPA를 사용하는 방법에 대한 자세한 내용은 [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer) 설명서를 참조하세요.
 
@@ -44,7 +44,7 @@ WPA는 추적을 탐색하는 데 사용할 수 있는
 
 ## <a name="zoom-in-and-out"></a>확대/축소
 
-일부 빌드 추적은 매우 커서 세부 정보를 확인하기 어렵습니다. 관심 있는 영역을 확대하려면 그래프를 마우스 오른쪽 단추로 클릭하고 **확대/축소**를 선택합니다. **확대/축소 실행 취소**를 선택하여 언제든지 이전 설정으로 돌아갈 수 있습니다. 이 이미지는 선택 항목과 **확대/축소** 명령을 사용하여 그래프의 일부를 확대하는 예를 보여 줍니다.
+일부 빌드 추적은 매우 커서 세부 정보를 확인하기 어렵습니다. 관심 있는 영역을 확대하려면 그래프를 마우스 오른쪽 단추로 클릭하고 **확대/축소** 를 선택합니다. **확대/축소 실행 취소** 를 선택하여 언제든지 이전 설정으로 돌아갈 수 있습니다. 이 이미지는 선택 항목과 **확대/축소** 명령을 사용하여 그래프의 일부를 확대하는 예를 보여 줍니다.
 
 ![그래프 확대를 보여 주는 짧은 동영상.](media/wpa-zooming.gif)
 

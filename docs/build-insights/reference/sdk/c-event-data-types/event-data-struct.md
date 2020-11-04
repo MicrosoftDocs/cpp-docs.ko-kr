@@ -9,21 +9,21 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 468fc30d337e5cfc5ab90f7558904fc90588c3df
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 617a82055f406c130d74a2823c2cf00aa1beef36
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041824"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92923610"
 ---
 # <a name="event_data-structure"></a>EVENT_DATA 구조체
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
 C++ Build Insights SDK는 Visual Studio 2017 이상 버전과 호환됩니다. 이러한 버전에 대한 설명서를 보려면 이 문서에 대한 Visual Studio **버전** 선택기 컨트롤을 Visual Studio 2017 또는 Visual Studio 2019로 설정하세요. 이 페이지의 목차 맨 위에 있습니다.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 `EVENT_DATA` 구조체는 분석 또는 재로깅 세션에서 수신되는 이벤트를 설명합니다. 이러한 세션은 [Analyze](../functions/analyze.md), [AnalyzeA](../functions/analyze-a.md), [AnalyzeW](../functions/analyze-w.md), [Relog](../functions/relog.md), [RelogA](../functions/relog-a.md) 또는 [RelogW](../functions/relog-w.md) 함수를 호출하여 시작됩니다.
 
@@ -86,7 +86,7 @@ typedef struct EVENT_DATA_TAG
 | `EventId` 값 | `Data`가 가리키는 형식 |
 |--|--|
 | `EVENT_ID_BACK_END_PASS` | [CL_PASS_DATA](cl-pass-data-struct.md) |
-| `EVENT_ID_COMMAND_LINE` | `const wchar_t` |
+| `EVENT_ID_COMMAND_LINE` | `const wchar_t` |
 | `EVENT_ID_COMPILER` | [INVOCATION_DATA](invocation-data-struct.md) |
 | `EVENT_ID_ENVIRONMENT_VARIABLE` | [NAME_VALUE_PAIR_DATA](name-value-pair-data-struct.md) |
 | `EVENT_ID_EXECUTABLE_IMAGE_OUTPUT` | [FILE_DATA](file-data-struct.md) |

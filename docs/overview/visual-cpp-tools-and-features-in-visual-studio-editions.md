@@ -4,16 +4,16 @@ ms.date: 05/21/2019
 helpviewer_keywords:
 - tools and platforms [C++]
 ms.assetid: 3d88607b-9cc4-490a-8d4c-31ee7610a26f
-ms.openlocfilehash: 00c096203ae056c96c87d67a491d3c84b3d1fb3a
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: c2ef6c539d5845beee044a963e0056d3287ba679
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845356"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924807"
 ---
 # <a name="c-tools-and-features-in-visual-studio-editions"></a>Visual Studio 버전의 C++ 도구 및 기능
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 다음 C++ 기능은 Visual Studio 2019에서 사용할 수 있습니다. 별도로 명시되지 않는 한 모든 기능은 모든 버전에서 사용할 수 있습니다. Visual Studio Community, Visual Studio Professional 및 Visual Studio Enterprise. 일부 기능에는 Visual Studio 설치 관리자를 사용하여 설치할 수 있는 특정 워크로드 또는 선택적 구성 요소가 필요합니다.
 
@@ -309,7 +309,7 @@ Linux:
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 다음 표에는 Visual Studio 2017에서 사용할 수 있는 Visual C++ 기능이 나와 있습니다. 셀에 X가 있으면 해당 기능을 사용할 수 있음을 나타내고, 셀이 비어 있으면 해당 기능을 사용할 수 없음을 나타냅니다. 괄호 안의 참고 사항은 해당 기능을 사용할 수 있지만 제한됨을 나타냅니다.
 

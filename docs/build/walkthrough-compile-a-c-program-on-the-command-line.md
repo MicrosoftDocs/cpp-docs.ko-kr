@@ -9,12 +9,12 @@ helpviewer_keywords:
 - compiling programs [C++]
 - C program compiling [C++]
 ms.assetid: 7e74cc2d-54b1-49de-b7ad-d3ae6b39ab8d
-ms.openlocfilehash: 57276f61ca8ff848db0313935bc1841de50f9874
-ms.sourcegitcommit: b492516cc65120250b9ea23f96f7f63f37f99fae
+ms.openlocfilehash: 1090bf98332a51773e53bfcda51e944dc09c5221
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075610"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924739"
 ---
 # <a name="walkthrough-compile-a-c-program-on-the-command-line"></a>연습: 명령줄에서 C 프로그램 컴파일
 
@@ -28,7 +28,7 @@ Visual C++에는 기본적인 콘솔 프로그램에서 전체 Windows 데스크
 
 Visual Studio는 다양한 언어 및 플랫폼에 대한 완전한 기능을 갖춘 편집기, 리소스 관리자, 디버거 및 컴파일러를 지원하는 강력한 통합 개발 환경입니다. 이러한 기능에 대한 자세한 내용과 무료 Visual Studio Community 버전을 비롯해 Visual Studio를 다운로드하고 설치하는 방법에 대한 자세한 내용은 [Visual Studio설치](/visualstudio/install/install-visual-studio)를 참조하세요.
 
-Visual Studio의 Visual Studio용 Build Tools 버전은 C 및 C++ 프로그램을 빌드하는 데 필요한 명령줄 도구 집합, 컴파일러, 도구 및 라이브러리만 설치합니다. 빌드 랩 또는 강의실 연습에 매우 적합하며 비교적 빠르게 설치됩니다. 명령줄 도구 집합만 설치하려면 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019) 페이지에서 Visual Studio용 Build Tools를 다운로드하고 설치 관리자를 실행합니다. Visual Studio 설치 관리자에서 **C++ 빌드 도구** 워크로드를 선택하고 **설치**를 선택합니다.
+Visual Studio의 Visual Studio용 Build Tools 버전은 C 및 C++ 프로그램을 빌드하는 데 필요한 명령줄 도구 집합, 컴파일러, 도구 및 라이브러리만 설치합니다. 빌드 랩 또는 강의실 연습에 매우 적합하며 비교적 빠르게 설치됩니다. 명령줄 도구 집합만 설치하려면 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019) 페이지에서 Visual Studio용 Build Tools를 다운로드하고 설치 관리자를 실행합니다. Visual Studio 설치 관리자에서 **C++ 빌드 도구** 워크로드를 선택하고 **설치** 를 선택합니다.
 
 명령줄에서 C 또는 C++ 프로그램을 빌드하려면 먼저 도구가 설치되어 있는지 확인하고 명령줄에서 액세스할 수 있는지 확인해야 합니다. Visual C++에는 명령줄 환경이 사용하는 도구, 헤더 및 라이브러리를 찾는 복잡한 요구 사항이 있습니다. 일부 준비 작업 없이는 **일반 명령 프롬프트 창에서 Visual C++를 사용할 수 없습니다**. 모든 필수 환경 변수를 설정하는 일반 명령 프롬프트 창인 *개발자 명령 프롬프트* 창이 필요합니다. 다행히 Visual C++는 명령줄 빌드에 대한 환경이 설정된 개발자 명령 프롬프트를 시작할 수 있는 바로 가기를 설치합니다. 아쉽게도 개발자 명령 프롬프트 바로 가기의 이름 및 위치는 거의 모든 버전의 Visual C++와 다양한 버전의 Windows에서 서로 다릅니다. 첫 번째 연습은 사용할 올바른 바로 가기를 찾는 것입니다.
 
@@ -37,31 +37,31 @@ Visual Studio의 Visual Studio용 Build Tools 버전은 C 및 C++ 프로그램�
 
 사용하는 Visual Studio 버전에 따라 지침이 약간 다릅니다. 기본 설정된 버전의 Visual Studio에 대한 설명서를 보려면 **버전** 선택기 컨트롤을 사용하세요. 이 페이지의 목차 맨 위에 있습니다.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ## <a name="open-a-developer-command-prompt-in-visual-studio-2019"></a>Visual Studio 2019에서 개발자 명령 프롬프트 열기
 
-Windows 10에 Visual Studio 2019를 설치한 경우 시작 메뉴를 연 다음 아래로 스크롤하여 **Visual Studio 2019** 폴더(Visual Studio 2019 앱이 아님)를 엽니다. **VS 2019용 개발자 명령 프롬프트**를 선택하여 명령 프롬프트 창을 엽니다.
+Windows 10에 Visual Studio 2019를 설치한 경우 시작 메뉴를 연 다음 아래로 스크롤하여 **Visual Studio 2019** 폴더(Visual Studio 2019 앱이 아님)를 엽니다. **VS 2019용 개발자 명령 프롬프트** 를 선택하여 명령 프롬프트 창을 엽니다.
 
 다른 버전의 Windows를 사용하는 경우 시작 메뉴 또는 시작 페이지에서 개발자 명령 프롬프트 바로 가기를 포함하는 Visual Studio tools 폴더를 찾습니다. Windows 검색 기능을 사용하여 "개발자 명령 프롬프트"를 검색하고 설치된 버전의 Visual Studio와 일치하는 항목을 선택할 수도 있습니다. 바로 가기를 사용하여 명령 프롬프트 창을 엽니다.
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 ## <a name="open-a-developer-command-prompt-in-visual-studio-2017"></a>Visual Studio 2017에서 개발자 명령 프롬프트 열기
 
-Windows 10에 Visual Studio 2017을 설치한 경우 시작 메뉴를 연 다음 아래로 스크롤하여 **Visual Studio 2017** 폴더(Visual Studio 2017 앱이 아님)를 엽니다. **VS 2017용 개발자 명령 프롬프트**를 선택하여 명령 프롬프트 창을 엽니다.
+Windows 10에 Visual Studio 2017을 설치한 경우 시작 메뉴를 연 다음 아래로 스크롤하여 **Visual Studio 2017** 폴더(Visual Studio 2017 앱이 아님)를 엽니다. **VS 2017용 개발자 명령 프롬프트** 를 선택하여 명령 프롬프트 창을 엽니다.
 
 다른 버전의 Windows를 실행하는 경우 시작 메뉴 또는 시작 페이지에서 개발자 명령 프롬프트 바로 가기를 포함하는 Visual Studio tools 폴더를 찾습니다. Windows 검색 기능을 사용하여 "개발자 명령 프롬프트"를 검색하고 설치된 버전의 Visual Studio와 일치하는 항목을 선택할 수도 있습니다. 바로 가기를 사용하여 명령 프롬프트 창을 엽니다.
 
 ::: moniker-end
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 ## <a name="open-a-developer-command-prompt-in-visual-studio-2015"></a>Visual Studio 2015에서 개발자 명령 프롬프트 열기
 
-Windows 10에 Microsoft Visual C++ Build Tools 2015를 설치한 경우 **시작** 메뉴를 열고 아래로 스크롤하여 **Visual C++ Build tools** 폴더를 엽니다. **Visual C++ 2015 x86 Native Tools 명령 프롬프트**를 선택하여 명령 프롬프트 창을 엽니다.
+Windows 10에 Microsoft Visual C++ Build Tools 2015를 설치한 경우 **시작** 메뉴를 열고 아래로 스크롤하여 **Visual C++ Build tools** 폴더를 엽니다. **Visual C++ 2015 x86 Native Tools 명령 프롬프트** 를 선택하여 명령 프롬프트 창을 엽니다.
 
 다른 버전의 Windows를 실행하는 경우 시작 메뉴 또는 시작 페이지에서 개발자 명령 프롬프트 바로 가기를 포함하는 Visual Studio tools 폴더를 찾습니다. Windows 검색 기능을 사용하여 "개발자 명령 프롬프트"를 검색하고 설치된 버전의 Visual Studio와 일치하는 항목을 선택할 수도 있습니다. 바로 가기를 사용하여 명령 프롬프트 창을 엽니다.
 
@@ -85,13 +85,13 @@ usage: cl [ option... ] filename... [ /link linkoption... ]
 개발자 명령 프롬프트 바로 가기를 찾을 수 없거나 `cl`을 입력할 때 오류 메시지가 표시되는 경우 Visual C++ 설치에 문제가 있을 수 있습니다. Visual Studio 2017 이상 버전을 사용하는 경우 Visual Studio 설치 관리자에서 **C++를 사용한 데스크톱 개발** 워크로드를 다시 설치해 보세요. 자세한 내용은 [Visual Studio에서 C++ 지원 설치](vscpp-step-0-installation.md)를 참조하세요. 또는 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/) 페이지에서 Build Tools를 다시 설치합니다. 이렇게 해서 문제가 해결되기 전에는 다음 섹션으로 이동하지 마세요. Visual Studio 설치 및 문제 해결에 대한 자세한 내용은 [Visual Studio 설치](/visualstudio/install/install-visual-studio)를 참조하세요.
 
 > [!NOTE]
-> 컴퓨터의 Windows 버전 및 시스템 보안 구성에 따라, 이 연습을 수행하여 만드는 프로그램을 빌드하고 실행하려면 마우스 오른쪽 단추를 클릭하여 개발자 명령 프롬프트의 바로 가기 메뉴를 열고 **관리자 권한으로 실행**을 선택해야 할 수도 있습니다.
+> 컴퓨터의 Windows 버전 및 시스템 보안 구성에 따라, 이 연습을 수행하여 만드는 프로그램을 빌드하고 실행하려면 마우스 오른쪽 단추를 클릭하여 개발자 명령 프롬프트의 바로 가기 메뉴를 열고 **관리자 권한으로 실행** 을 선택해야 할 수도 있습니다.
 
 ## <a name="create-a-c-source-file-and-compile-it-on-the-command-line"></a>C 소스 파일을 만들고 명령줄에서 컴파일
 
 1. 개발자 명령 프롬프트 창에서 `cd c:\`를 입력하여 현재 작업 디렉터리를 C: 드라이브의 루트로 변경합니다. 그런 다음 `md c:\simple`을 입력하여 디렉터리를 만든 다음 `cd c:\simple`을 입력하여 해당 디렉터리로 변경합니다. 이 디렉터리에는 소스 파일 및 컴파일된 프로그램이 보관됩니다.
 
-1. 개발자 명령 프롬프트에 `notepad simple.c`를 입력합니다. 표시되는 메모장 경고 대화 상자에서 **예**를 선택하여 작업 디렉터리에 새 simple.c 파일을 만듭니다.
+1. 개발자 명령 프롬프트에 `notepad simple.c`를 입력합니다. 표시되는 메모장 경고 대화 상자에서 **예** 를 선택하여 작업 디렉터리에 새 simple.c 파일을 만듭니다.
 
 1. 메모장에 다음 코드 줄을 입력합니다.
 
@@ -105,7 +105,7 @@ usage: cl [ option... ] filename... [ /link linkoption... ]
     }
     ```
 
-1. 메모장 메뉴 모음에서 **파일** > **저장**을 선택하여 작업 디렉터리에 simple.c 파일을 저장합니다.
+1. 메모장 메뉴 모음에서 **파일** > **저장** 을 선택하여 작업 디렉터리에 simple.c 파일을 저장합니다.
 
 1. 개발자 명령 프롬프트 창으로 다시 전환합니다. 명령 프롬프트에 `dir`를 입력하여 c:\simple 디렉터리의 내용을 나열합니다. 다음과 비슷한 디렉터리 목록에 소스 파일 simple.c가 표시되어야 합니다.
 

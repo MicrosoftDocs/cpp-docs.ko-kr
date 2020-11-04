@@ -4,12 +4,12 @@ description: 원시(MSBuild) Visual Studio C++ 프로젝트에서 속성 상속�
 ms.date: 02/21/2020
 helpviewer_keywords:
 - C++ projects, property inheritance
-ms.openlocfilehash: 00afe982156597aa166c2c5de98f3027e3f84bdb
-ms.sourcegitcommit: 6e5429e076e552b32e8bdc49480c51498d7924c1
+ms.openlocfilehash: 17b23426f70bb2d306491e538d30cffc0f202362
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099708"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92919217"
 ---
 # <a name="property-inheritance-in-visual-studio-projects"></a>Visual Studio 프로젝트의 속성 상속
 
@@ -17,19 +17,19 @@ Visual Studio 원시 프로젝트 시스템은 MSBuild에 기반을 두고 있�
 
 ## <a name="the-vcxproj-file-props-files-and-targets-files"></a>.Vcxproj 파일,.props 파일 및.targets 파일
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 프로젝트 속성은 여러 파일에 저장됩니다. 일부는 *`.vcxproj`* 프로젝트 파일에 직접 저장됩니다. 다른 일부는 프로젝트 파일이 가져오고 기본값을 제공하는 다른 *`.targets`* 파일이나 *`.props`* 파일에서 옵니다. 기본 디렉터리 아래의 로캘별 폴더에 Visual Studio 2015 프로젝트 파일 *`%ProgramFiles(x86)%\MSBuild\Microsoft.Cpp\v4.0\v140`* 이 있습니다.
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 프로젝트 속성은 여러 파일에 저장됩니다. 일부는 *`.vcxproj`* 프로젝트 파일에 직접 저장됩니다. 다른 일부는 프로젝트 파일이 가져오고 기본값을 제공하는 다른 *`.targets`* 파일이나 *`.props`* 파일에서 옵니다. 기본 디렉터리 아래의 로캘별 폴더에 Visual Studio 2017 프로젝트 파일 *`%VSINSTALLDIR%Common7\IDE\VC\VCTargets\`* 이 있습니다.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 프로젝트 속성은 여러 파일에 저장됩니다. 일부는 *`.vcxproj`* 프로젝트 파일에 직접 저장됩니다. 다른 일부는 프로젝트 파일이 가져오고 기본값을 제공하는 다른 *`.targets`* 파일이나 *`.props`* 파일에서 옵니다. 기본 디렉터리 아래의 로캘별 폴더에 Visual Studio 프로젝트 파일 *`%VSINSTALLDIR%MSBuild\Microsoft\VC\<version>`* 이 있습니다. `<version>`은 Visual Studio 버전에 해당됩니다. Visual Studio 2019의 경우 *`v160`* 입니다.
 

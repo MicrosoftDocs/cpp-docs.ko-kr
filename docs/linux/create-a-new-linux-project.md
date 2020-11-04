@@ -3,22 +3,22 @@ title: Visual Studio에서 Linux MSBuild C++ 프로젝트 만들기
 ms.date: 10/15/2020
 description: Visual Studio에서 새로운 MSBuild 기반 Linux 프로젝트를 만듭니다.
 ms.assetid: 5d7c1d67-bc31-4f96-8622-2b4cf91372fd
-ms.openlocfilehash: dddb9dbdee4cefc58a2bd5ccefa493b25e1c9f24
-ms.sourcegitcommit: f19f02f217b80804ab321d463c76ce6f681abcc6
+ms.openlocfilehash: 458a26408bfd29b714150e5259fd23807c9b2908
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92176308"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92921635"
 ---
 # <a name="create-a-linux-msbuild-c-project-in-visual-studio"></a>Visual Studio에서 Linux MSBuild C++ 프로젝트 만들기
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 Linux 프로젝트는 Visual Studio 2017 이상에서 사용할 수 있습니다.
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 먼저 Visual Studio용 **Linux 개발 작업 워크로드** 가 설치되어 있는지 확인합니다. 자세한 내용은 [Linux 워크로드 다운로드, 설치, 설정](download-install-and-setup-the-linux-development-workload.md)을 참조하세요.
 
@@ -46,7 +46,7 @@ Visual Studio 2017에서 새 Linux 프로젝트를 만들려면 다음 단계를
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 먼저 Visual Studio용 **Linux 개발 작업 워크로드** 가 설치되어 있는지 확인합니다. 자세한 내용은 [Linux 작업 다운로드, 설치, 설정](download-install-and-setup-the-linux-development-workload.md)을 참조하세요.
 

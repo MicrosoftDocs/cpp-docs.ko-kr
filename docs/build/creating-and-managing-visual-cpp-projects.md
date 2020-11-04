@@ -1,4 +1,4 @@
-﻿---
+---
 title: Visual Studio 프로젝트 - C++
 ms.date: 10/25/2019
 helpviewer_keywords:
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Visual Studio C++ projects
 - ATL projects
 ms.assetid: 11003cd8-9046-4630-a189-a32bf3b88047
-ms.openlocfilehash: 3694478e22bfd2a3c58a72ba0c3ad2d15351bc9f
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: a8e23a3c384ce9b5ac7e73d18958246b52eb95b5
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80078689"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92919386"
 ---
 # <a name="visual-studio-projects---c"></a>Visual Studio 프로젝트 - C++
 
@@ -21,17 +21,17 @@ ms.locfileid: "80078689"
 
 ## <a name="create-a-project"></a>프로젝트 만들기
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
-**파일** > **새로 만들기** > **프로젝트**를 선택한 다음, **언어**를 C++로 설정하여 C++ 프로젝트를 만들 수 있습니다. 결과 목록에는 **플랫폼** 또는 **프로젝트 형식**을 설정하고 검색 상자에 키워드를 입력하여 필터링할 수 있는 프로젝트 템플릿 목록이 표시됩니다.
+**파일** > **새로 만들기** > **프로젝트** 를 선택한 다음, **언어** 를 C++로 설정하여 C++ 프로젝트를 만들 수 있습니다. 결과 목록에는 **플랫폼** 또는 **프로젝트 형식** 을 설정하고 검색 상자에 키워드를 입력하여 필터링할 수 있는 프로젝트 템플릿 목록이 표시됩니다.
 
    ![Visual Studio 2019 프로젝트 템플릿](../build/media/vs2019-choose-console-app.png "Visual Studio 2019 새 프로젝트 대화 상자")
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
-**파일** > **새로 만들기** > **프로젝트**를 선택한 다음, 왼쪽 창에서 Visual C++를 선택하여 C++ 프로젝트를 만들 수 있습니다. 가운데 창에 프로젝트 템플릿 목록이 표시됩니다.
+**파일** > **새로 만들기** > **프로젝트** 를 선택한 다음, 왼쪽 창에서 Visual C++를 선택하여 C++ 프로젝트를 만들 수 있습니다. 가운데 창에 프로젝트 템플릿 목록이 표시됩니다.
 
    ![프로젝트 템플릿](../overview/media/vs2017-new-project.png "Visual Studio 2017 새 프로젝트 대화 상자")
 
@@ -47,7 +47,7 @@ Visual Studio에 포함된 모든 기본 프로젝트 템플릿에 대한 자세
 
 ## <a name="add-items"></a>항목 추가
 
-**솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가 > 새로 만들기** 또는 **추가 > 기존**을 선택하여 원본 코드 파일, 아이콘 또는 기타 항목을 프로젝트에 추가합니다.
+**솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가 > 새로 만들기** 또는 **추가 > 기존** 을 선택하여 원본 코드 파일, 아이콘 또는 기타 항목을 프로젝트에 추가합니다.
 
 ## <a name="add-third-party-libraries"></a>타사 라이브러리 추가
 
@@ -55,17 +55,17 @@ Visual Studio에 포함된 모든 기본 프로젝트 템플릿에 대한 자세
 
 ## <a name="set-compiler-options-and-other-build-properties"></a>컴파일러 옵션 및 기타 빌드 속성 설정
 
-프로젝트에 대한 빌드 속성을 구성하려면 **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다. 자세한 정보는 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](working-with-project-properties.md)을 참조하세요.
+프로젝트에 대한 빌드 속성을 구성하려면 **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성** 을 선택합니다. 자세한 정보는 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](working-with-project-properties.md)을 참조하세요.
 
 ## <a name="compile-and-run"></a>컴파일 및 실행
 
-새 프로젝트를 컴파일하여 실행하려면 **F5**를 누르거나 기본 도구 모음에 녹색 화살표가 있는 *디버그 드롭다운*을 클릭합니다. *구성 드롭다운*에서는 빌드 *디버그* 또는 *릴리스*를 수행할지 선택합니다(또는 기타 사용자 지정 구성).
+새 프로젝트를 컴파일하여 실행하려면 **F5** 를 누르거나 기본 도구 모음에 녹색 화살표가 있는 *디버그 드롭다운* 을 클릭합니다. *구성 드롭다운* 에서는 빌드 *디버그* 또는 *릴리스* 를 수행할지 선택합니다(또는 기타 사용자 지정 구성).
 
 새 프로젝트가 오류 없이 컴파일됩니다. 자체 코드를 추가할 때 경우에 따라 오류가 발생하거나 경고가 트리거될 수 있습니다. 오류가 발생하면 빌드가 완료되지 않으나 경고는 그렇지 않습니다. 모든 오류 및 경고는 프로젝트를 빌드할 때 출력 창과 오류 목록에 모두 표시됩니다.
 
    ![출력 창과 오류 목록](../overview/media/vs2017-output-error-list.png)
 
-오류 목록에 강조 표시된 오류에서 **F1**을 눌러 해당 설명서 항목으로 이동할 수 있습니다.
+오류 목록에 강조 표시된 오류에서 **F1** 을 눌러 해당 설명서 항목으로 이동할 수 있습니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 

@@ -10,21 +10,21 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 6f53a9b6c682a0af7d8a01f6378ed0574d8fa4ca
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: a6ecff81a9f3d2b22107a8fa7fc26fad85d4f579
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041174"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92919516"
 ---
 # <a name="c-build-insights-sdk"></a>C++ Build Insights SDK
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
 C++ Build Insights SDK는 Visual Studio 2017 이상 버전과 호환됩니다. 이러한 버전에 대한 설명서를 보려면 이 문서에 대한 Visual Studio **버전** 선택기 컨트롤을 Visual Studio 2017 또는 Visual Studio 2019로 설정하세요. 이 페이지의 목차 맨 위에 있습니다.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 C++ Build Insights SDK는 C++ Build Insights 플랫폼에서 개인 설정된 도구를 만들 수 있는 API 컬렉션입니다. 이 페이지에서는 시작하는 데 도움이 되는 대략적인 개요를 제공합니다.
 
@@ -34,10 +34,10 @@ C++ Build Insights SDK는 C++ Build Insights 플랫폼에서 개인 설정된 �
 
 1. Visual Studio 2017 이상에서 새 C++ 프로젝트를 만듭니다.
 1. **솔루션 탐색기** 창에서 프로젝트를 마우스 오른쪽 단추로 클릭합니다.
-1. 상황에 맞는 메뉴에서 **NuGet 패키지 관리**를 선택합니다.
+1. 상황에 맞는 메뉴에서 **NuGet 패키지 관리** 를 선택합니다.
 1. 오른쪽 위에서 **nuget.org** 패키지 원본을 선택합니다.
 1. 최신 버전의 Microsoft.Cpp.BuildInsights 패키지를 검색합니다.
-1. **설치**를 선택합니다.
+1. **설치** 를 선택합니다.
 1. 라이선스에 동의합니다.
 
 SDK와 관련된 일반 개념을 자세히 알아보려면 계속 읽으세요. 공식 [C++ Build Insights 샘플 GitHub 리포지토리](https://github.com/microsoft/cpp-build-insights-samples)에 액세스하여 SDK를 사용하는 실제 C++ 애플리케이션의 예제를 볼 수도 있습니다.
@@ -216,7 +216,7 @@ C++ Build Insights SDK는 추적의 모든 이벤트를 제공하지만 하위 �
 |--|--|
 | Exact | 이러한 캡처 클래스는 특정 이벤트 유형을 일치시키는 데 사용됩니다. 예를 들어 [COMPILER](event-table.md#compiler) 이벤트를 일치시키는 [컴파일러](cpp-event-data-types/compiler.md) 클래스가 있습니다. |
 | 와일드카드 | 이러한 캡처 클래스를 사용하여 지원되는 이벤트 목록의 모든 이벤트를 일치시킬 수 있습니다. 예를 들어 [작업](cpp-event-data-types/activity.md) 와일드카드는 모든 작업 이벤트를 일치시킵니다. 또 다른 예는 [FRONT_END_PASS](event-table.md#front-end-pass) 또는 [BACK_END_PASS](event-table.md#back-end-pass) 이벤트를 일치시키는 [CompilerPass](cpp-event-data-types/compiler-pass.md) 와일드카드입니다. |
-| 그룹 | 그룹 캡처 클래스의 이름은 *Group*으로 끝납니다. 이러한 클래스는 간격을 무시하고 한 행에 있는 동일한 형식의 여러 이벤트를 일치시키는 데 사용됩니다. 이벤트 스택에 있는 이벤트 수를 알 수 없으므로 재귀 이벤트를 일치시킬 때만 의미가 있습니다. 예를 들어 [FRONT_END_FILE](event-table.md#front-end-file) 작업은 컴파일러가 파일을 구문 분석할 때마다 발생합니다. 컴파일러가 파일을 구문 분석하는 동안 include 지시문을 찾을 수 있기 때문에 이 작업은 재귀적입니다. [FrontEndFile](cpp-event-data-types/front-end-file.md) 클래스는 스택에서 하나의 FRONT_END_FILE 이벤트만 일치시킵니다. 전체 include 계층 구조를 일치시키려면 [FrontEndFileGroup](cpp-event-data-types/front-end-file-group.md) 클래스를 사용합니다. |
+| 그룹 | 그룹 캡처 클래스의 이름은 *Group* 으로 끝납니다. 이러한 클래스는 간격을 무시하고 한 행에 있는 동일한 형식의 여러 이벤트를 일치시키는 데 사용됩니다. 이벤트 스택에 있는 이벤트 수를 알 수 없으므로 재귀 이벤트를 일치시킬 때만 의미가 있습니다. 예를 들어 [FRONT_END_FILE](event-table.md#front-end-file) 작업은 컴파일러가 파일을 구문 분석할 때마다 발생합니다. 컴파일러가 파일을 구문 분석하는 동안 include 지시문을 찾을 수 있기 때문에 이 작업은 재귀적입니다. [FrontEndFile](cpp-event-data-types/front-end-file.md) 클래스는 스택에서 하나의 FRONT_END_FILE 이벤트만 일치시킵니다. 전체 include 계층 구조를 일치시키려면 [FrontEndFileGroup](cpp-event-data-types/front-end-file-group.md) 클래스를 사용합니다. |
 | 와일드카드 그룹 | 와일드카드 그룹은 와일드카드 및 그룹의 속성이 결합되어 있습니다. 이 범주의 유일한 클래스는 단일 이벤트 스택의 모든 [LINKER](event-table.md#linker) 및 [COMPILER](event-table.md#compiler) 이벤트를 일치시키고 캡처하는 [InvocationGroup](cpp-event-data-types/invocation-group.md)입니다. |
 
 각 이벤트를 일치시키는 데 사용할 수 있는 캡처 클래스는 [이벤트 테이블](event-table.md)을 참조하세요.

@@ -9,21 +9,21 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 8ec2c6bfcacf28998058dc66b5f363fbf1ea5d70
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1486a76aab7b9a4f3b4da209f4f163b4c65b0ac4
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224112"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92920101"
 ---
 # <a name="matchevent"></a>MatchEvent
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
 C++ Build Insights SDK는 Visual Studio 2017 이상 버전과 호환됩니다. 이러한 버전에 대한 설명서를 보려면 이 문서에 대한 Visual Studio **버전** 선택기 컨트롤을 Visual Studio 2017 또는 Visual Studio 2019로 설정하세요. 이 페이지의 목차 맨 위에 있습니다.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 `MatchEvent` 함수는 이벤트를 이벤트 유형 목록과 일치하는지 비교하는 데 사용됩니다. 이벤트가 목록의 형식과 일치하면 추가 처리를 위해 처리기에 전달됩니다.
 
@@ -56,13 +56,13 @@ bool MatchEvent(
 `MatchEvent`에 전달된 추가 인수의 형식입니다.
 
 *event*\
-*TEvent* 및 *TEvents*에 설명된 이벤트 유형과 일치하는지 비교할 이벤트입니다.
+*TEvent* 및 *TEvents* 에 설명된 이벤트 유형과 일치하는지 비교할 이벤트입니다.
 
 *callable*\
-`MatchEvent`는 *TEvent* 및 *TEvents*에 설명된 이벤트 유형과 이벤트가 일치하면 *callable*을 호출합니다. *callable*에 전달되는 첫 번째 인수는 일치하는 이벤트 유형의 r-value입니다. *extraArgs* 매개 변수 팩은 *callable*의 나머지 매개 변수에서 완벽하게 전달됩니다.  
+`MatchEvent`는 *TEvent* 및 *TEvents* 에 설명된 이벤트 유형과 이벤트가 일치하면 *callable* 을 호출합니다. *callable* 에 전달되는 첫 번째 인수는 일치하는 이벤트 유형의 r-value입니다. *extraArgs* 매개 변수 팩은 *callable* 의 나머지 매개 변수에서 완벽하게 전달됩니다.  
 
 *extraArgs*\
-일치하는 이벤트 유형과 함께 *callable*로 완벽하게 전달되는 인수입니다.
+일치하는 이벤트 유형과 함께 *callable* 로 완벽하게 전달되는 인수입니다.
 
 ### <a name="return-value"></a>반환 값
 
