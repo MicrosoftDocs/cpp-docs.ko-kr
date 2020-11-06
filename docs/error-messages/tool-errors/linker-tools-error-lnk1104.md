@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1104
 ms.assetid: 9ca6f929-0efc-4055-8354-3cf5b4e636dc
-ms.openlocfilehash: aa7bcf34cddfa24956d807131b3c484e7d580e73
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 2eea6885537037db496a2f42e0fff0ffa69127e3
+ms.sourcegitcommit: 12eb6a824dd7187a065d44fceca4c410f58e121e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91506035"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "94334210"
 ---
 # <a name="linker-tools-error-lnk1104"></a>링커 도구 오류 LNK1104
 
-> '*filename*' 파일을 열 수 없습니다.
+> ' *filename* ' 파일을 열 수 없습니다.
 
 이 오류는 링커에서 파일을 읽거나 쓰기 위해 파일을 열지 못할 때 보고 됩니다. 문제의 가장 일반적인 두 가지 원인은 다음과 같습니다.
 
@@ -40,11 +40,11 @@ ms.locfileid: "91506035"
 
 ### <a name="windows-libraries-such-as-kernel32lib"></a>Kernel32.dll와 같은 Windows 라이브러리
 
-열 수 없는 파일이 Microsoft에서 제공 하는 표준 라이브러리 파일 (예: *kernel32.dll*) 중 하나인 경우 프로젝트 구성 오류 또는 설치 오류가 있을 수 있습니다. Windows SDK 설치 되어 있는지 확인 합니다. 프로젝트에서 MFC와 같은 다른 Microsoft 라이브러리를 필요로 하는 경우 Visual Studio 설치 관리자를 통해서도 MFC 구성 요소를 설치 했는지 확인 합니다. 설치 관리자를 다시 실행 하 여 언제 든 지 선택적 구성 요소를 추가할 수 있습니다. 자세한 내용은 [Visual Studio 수정](/visualstudio/install/modify-visual-studio)을 참조 하세요. 설치 관리자의 **개별 구성 요소** 탭을 사용 하 여 특정 라이브러리 및 sdk를 선택할 수 있습니다.
+열 수 없는 파일이 Microsoft에서 제공 하는 표준 라이브러리 파일 (예: *kernel32.dll* ) 중 하나인 경우 프로젝트 구성 오류 또는 설치 오류가 있을 수 있습니다. Windows SDK 설치 되어 있는지 확인 합니다. 프로젝트에서 MFC와 같은 다른 Microsoft 라이브러리를 필요로 하는 경우 Visual Studio 설치 관리자를 통해서도 MFC 구성 요소를 설치 했는지 확인 합니다. 설치 관리자를 다시 실행 하 여 언제 든 지 선택적 구성 요소를 추가할 수 있습니다. 자세한 내용은 [Visual Studio 수정](/visualstudio/install/modify-visual-studio)을 참조 하세요. 설치 관리자의 **개별 구성 요소** 탭을 사용 하 여 특정 라이브러리 및 sdk를 선택할 수 있습니다.
 
 ### <a name="versioned-vcruntime-libraries"></a>버전이 지정 된 vcruntime 라이브러리
 
-오류 메시지에 *msvcr120.dll*와 같은 버전의 Microsoft 라이브러리가 있는 경우 해당 컴파일러 버전에 대 한 플랫폼 도구 집합이 설치 되지 않을 수 있습니다. 이 문제를 해결 하려면 두 가지 옵션이 있습니다. 현재 플랫폼 도구 집합을 사용 하도록 프로젝트를 업그레이드 하거나 이전 도구 집합을 설치 하 고 변경 되지 않은 상태로 프로젝트를 빌드합니다. 자세한 내용은 [이전 버전의 Visual C++에서 프로젝트 업그레이드](../../porting/upgrading-projects-from-earlier-versions-of-visual-cpp.md) 및 [Visual Studio에서 네이티브 다중 대상 지정을 사용 하 여 이전 프로젝트 빌드](../../porting/use-native-multi-targeting.md)를 참조 하세요.
+오류 메시지에 *msvcr120.dll* 와 같은 버전의 Microsoft 라이브러리가 있는 경우 해당 컴파일러 버전에 대 한 플랫폼 도구 집합이 설치 되지 않을 수 있습니다. 이 문제를 해결 하려면 두 가지 옵션이 있습니다. 현재 플랫폼 도구 집합을 사용 하도록 프로젝트를 업그레이드 하거나 이전 도구 집합을 설치 하 고 변경 되지 않은 상태로 프로젝트를 빌드합니다. 자세한 내용은 [이전 버전의 Visual C++에서 프로젝트 업그레이드](../../porting/upgrading-projects-from-earlier-versions-of-visual-cpp.md) 및 [Visual Studio에서 네이티브 다중 대상 지정을 사용 하 여 이전 프로젝트 빌드](../../porting/use-native-multi-targeting.md)를 참조 하세요.
 
 ### <a name="retail-debug-or-platform-specific-libraries"></a>정품, 디버그 또는 플랫폼별 라이브러리
 
@@ -52,11 +52,11 @@ ms.locfileid: "91506035"
 
 ### <a name="the-vccorliblib-library"></a>Vccorlib .lib 라이브러리
 
-UWP (유니버설 Windows) 앱 또는 구성 요소에 대 한 스펙터 완화 된 라이브러리가 없습니다. 오류 메시지에 *vccorlib. lib*가 포함 된 경우 UWP 프로젝트에서 [/Qspectre](../../build/reference/qspectre.md) 를 사용 하도록 설정 했을 수 있습니다. 이 문제를 해결 하려면 **/Qspectre** 컴파일러 옵션을 사용 하지 않도록 설정 합니다. Visual Studio에서 **스펙터 완화** 속성을 변경 합니다. 프로젝트 속성 페이지 대화 상자의 **C/c + +**  >  **코드 생성** 페이지에 **Property Pages** 있습니다.
+UWP (유니버설 Windows) 앱 또는 구성 요소에 대 한 스펙터 완화 된 라이브러리가 없습니다. 오류 메시지에 *vccorlib. lib* 가 포함 된 경우 UWP 프로젝트에서 [/Qspectre](../../build/reference/qspectre.md) 를 사용 하도록 설정 했을 수 있습니다. 이 문제를 해결 하려면 **/Qspectre** 컴파일러 옵션을 사용 하지 않도록 설정 합니다. Visual Studio에서 **스펙터 완화** 속성을 변경 합니다. 프로젝트 속성 페이지 대화 상자의 **C/c + +**  >  **코드 생성** 페이지에 **Property Pages** 있습니다.
 
 ### <a name="libraries-in-projects-from-online-or-other-sources"></a>온라인 또는 다른 원본에서 프로젝트의 라이브러리
 
-다른 컴퓨터에서 복사한 프로젝트를 빌드하는 경우 라이브러리 설치 위치는 다를 수 있습니다. 명령줄 빌드의 경우 빌드에 대해 LIB 환경 변수 및 라이브러리 경로가 올바르게 설정 되었는지 확인 합니다. Visual Studio에서 프로젝트에 대 한 속성 페이지에 설정 된 현재 라이브러리 경로를 보고 편집할 수 있습니다. **VC + + 디렉터리** 페이지에서 **라이브러리 디렉터리** 속성의 드롭다운 컨트롤을 선택한 다음 **편집**을 선택 합니다. **라이브러리 디렉터리** 대화 상자의 **계산 된 값** 섹션에 라이브러리 파일에 대해 검색 된 현재 경로가 나열 됩니다. 로컬 라이브러리를 가리키도록 이러한 경로를 업데이트 합니다.
+다른 컴퓨터에서 복사한 프로젝트를 빌드하는 경우 라이브러리 설치 위치는 다를 수 있습니다. 명령줄 빌드의 경우 빌드에 대해 LIB 환경 변수 및 라이브러리 경로가 올바르게 설정 되었는지 확인 합니다. Visual Studio에서 프로젝트에 대 한 속성 페이지에 설정 된 현재 라이브러리 경로를 보고 편집할 수 있습니다. **VC + + 디렉터리** 페이지에서 **라이브러리 디렉터리** 속성의 드롭다운 컨트롤을 선택한 다음 **편집** 을 선택 합니다. **라이브러리 디렉터리** 대화 상자의 **계산 된 값** 섹션에 라이브러리 파일에 대해 검색 된 현재 경로가 나열 됩니다. 로컬 라이브러리를 가리키도록 이러한 경로를 업데이트 합니다.
 
 ### <a name="updated-windows-sdk-libraries"></a>업데이트 된 Windows SDK 라이브러리
 
@@ -82,7 +82,7 @@ UWP (유니버설 Windows) 앱 또는 구성 요소에 대 한 스펙터 완화 
 
 링커가이 파일에 액세스 하려고 할 때 *filename* 이 아직 없는 경우이 오류가 표시 될 수 있습니다. 한 프로젝트가 솔루션의 다른 프로젝트에 종속 된 경우에 발생할 수 있지만 프로젝트는 잘못 된 순서로 빌드됩니다. 이 문제를 해결 하려면 파일을 사용 하는 프로젝트에서 프로젝트 참조가 설정 되어 있는지 확인 합니다. 그런 다음 필요에 앞서 누락 된 파일을 작성 합니다. 자세한 내용은 [Visual Studio c + + 프로젝트에서 참조 추가](../../build/adding-references-in-visual-cpp-projects.md) 및 [프로젝트에서 참조 관리](/visualstudio/ide/managing-references-in-a-project)를 참조 하세요.
 
-## <a name="cannot-open-file-cprogramobj"></a>' C: \\ Program .obj ' 파일을 열 수 없습니다.
+## <a name="cant-open-file-cprogramobj"></a>' C: \\ Program .obj ' 파일을 열 수 없습니다.
 
 오류 메시지에 파일 이름 *C: \\ 프로그램인* 가 표시 되 면 라이브러리 경로를 큰따옴표로 래핑합니다. 이 오류는 *C: \\ Program Files* 로 시작 하는 래핑 되지 않은 경로가 링커에 전달 될 때 발생 합니다. 래핑 되지 않은 경로 에서도 비슷한 오류가 발생할 수 있습니다. 일반적으로 드라이브의 루트에 예기치 않은 .obj 파일이 표시 됩니다.
 
@@ -120,7 +120,7 @@ IDE에서이 문제를 해결 하려면 필요한 경우 프로젝트의 다음 
 
 ### <a name="incorrect-file-permissions"></a>파일 사용 권한이 잘못 되었습니다.
 
-파일 *이름*에 액세스할 수 있는 충분 한 파일 권한이 없는 경우이 오류가 발생할 수 있습니다. 일반 사용자 계정을 사용 하 여 보호 된 시스템 디렉터리의 라이브러리 파일에 액세스 하는 경우에 발생할 수 있습니다. 또는 원래 권한이 설정 된 다른 사용자의 파일을 복사 하는 경우에는를 사용 합니다. 이 문제를 해결 하려면 파일을 쓰기 가능한 프로젝트 디렉터리로 이동 합니다. 이동한 파일에 액세스할 수 있는 권한이 없는 경우 관리자 명령 창에서 takeown.exe 명령을 실행 하 여 파일의 소유권을 가져옵니다.
+파일 *이름* 에 액세스할 수 있는 충분 한 파일 권한이 없는 경우이 오류가 발생할 수 있습니다. 일반 사용자 계정을 사용 하 여 보호 된 시스템 디렉터리의 라이브러리 파일에 액세스 하는 경우에 발생할 수 있습니다. 또는 원래 권한이 설정 된 다른 사용자의 파일을 복사 하는 경우에는를 사용 합니다. 이 문제를 해결 하려면 파일을 쓰기 가능한 프로젝트 디렉터리로 이동 합니다. 이동한 파일에 액세스할 수 있는 권한이 없는 경우 관리자 명령 창에서 takeown.exe 명령을 실행 하 여 파일의 소유권을 가져옵니다.
 
 ### <a name="insufficient-disk-space"></a>디스크 공간 부족
 
@@ -128,10 +128,10 @@ IDE에서이 문제를 해결 하려면 필요한 경우 프로젝트의 다음 
 
 ### <a name="problems-in-the-tmp-environment-variable"></a>TMP 환경 변수의 문제
 
-*파일 이름* 이름이 .lnk*nnn*인 경우 링커에서 임시 파일에 대해 생성 된 파일 이름입니다. TMP 환경 변수에 지정 된 디렉터리가 없을 수 있습니다. 또는 TMP 환경 변수에 둘 이상의 디렉터리를 지정할 수 있습니다. TMP 환경 변수에는 디렉터리 경로를 하나만 지정 해야 합니다.
+*파일 이름* 이름이 .lnk *nnn* 인 경우 링커에서 임시 파일에 대해 생성 된 파일 이름입니다. TMP 환경 변수에 지정 된 디렉터리가 없을 수 있습니다. 또는 TMP 환경 변수에 둘 이상의 디렉터리를 지정할 수 있습니다. TMP 환경 변수에는 디렉터리 경로를 하나만 지정 해야 합니다.
 
 ## <a name="help-my-issue-isnt-listed-here"></a>도움말은 여기에 나열 되지 않습니다.
 
-여기에 나열 된 문제가 적용 되지 않는 경우 Visual Studio의 사용자 의견 도구를 사용 하 여 도움을 확인할 수 있습니다. IDE에서 메뉴 모음으로 이동 하 여 **도움말 > 사용자 의견 보내기 > 문제 보고**를 선택 합니다. 또는 도움말 > 사용 하 여 제안을 제출 하 **> 제안을**보냅니다. Visual Studio c + + [개발자 커뮤니티](https://developercommunity.visualstudio.com/spaces/62/index.html)) 웹 사이트를 사용할 수도 있습니다. 질문에 대 한 답변을 검색 하 고 도움을 요청 하는 데 사용 합니다. 자세한 내용은 [Visual C++ 도구 집합 또는 설명서를 사용 하 여 문제를 보고 하는 방법](../../overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md)을 참조 하세요.
+여기에 나열 된 문제가 적용 되지 않는 경우 Visual Studio의 사용자 의견 도구를 사용 하 여 도움을 확인할 수 있습니다. IDE에서 메뉴 모음으로 이동 하 여 **도움말 > 사용자 의견 보내기 > 문제 보고** 를 선택 합니다. 또는 도움말 > 사용 하 여 제안을 제출 하 **> 제안을** 보냅니다. 질문 및 Visual Studio c + + [개발자 커뮤니티](https://aka.ms/vsfeedback/browsecpp) 웹 사이트에 대 한 [Microsoft Docs Q&사이트를](/answers/topics/c%2B%2B.html) 사용할 수도 있습니다. 이러한 사이트를 사용 하 여 질문에 대 한 답변을 검색 하 고 도움을 요청할 수 있습니다. 자세한 내용은 [Visual C++ 도구 집합 또는 설명서를 사용 하 여 문제를 보고 하는 방법](../../overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md)을 참조 하세요.
 
-이 문서에 추가 해야 하는이 문제를 해결 하는 새로운 방법을 발견 했다면 알려주세요. 아래 단추를 사용 하 여 **이 페이지**에 대 한 피드백을 보낼 수 있습니다. 이를 사용 하 여 [c + + 설명서 GitHub](https://github.com/MicrosoftDocs/cpp-docs/issues)리포지토리에서 새 문제를 만듭니다. 감사합니다.
+이 문서에 추가 해야 하는이 문제를 해결 하는 새로운 방법을 발견 했다면 알려주세요. 아래 단추를 사용 하 여 **이 페이지** 에 대 한 피드백을 보낼 수 있습니다. 이를 사용 하 여 [c + + 설명서 GitHub](https://github.com/MicrosoftDocs/cpp-docs/issues)리포지토리에서 새 문제를 만듭니다. 감사합니다.

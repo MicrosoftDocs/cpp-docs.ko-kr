@@ -5,12 +5,12 @@ ms.date: 07/27/2020
 ms.topic: conceptual
 dev_langs:
 - CPP
-ms.openlocfilehash: a041ecd4053360ebfc0da198efe9a3decb73ffd2
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 4fb06b0f78c93e6b76e0b8d64d7dfbdc541cf299
+ms.sourcegitcommit: 12eb6a824dd7187a065d44fceca4c410f58e121e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924798"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "94334145"
 ---
 # <a name="use-the-c-core-guidelines-checkers"></a>C++ Core Guidelines 검사기 사용
 
@@ -130,7 +130,7 @@ C++ Core Guidelines 검사기에 새 규칙을 추가 하면 기존 코드에 �
 
 - **열거형 규칙** : 이러한 규칙 [은 C++ Core Guidelines에서 열거형 관련 검사를](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-enum)적용 합니다. <sup>16.3</sup>
 
-- **실험적 규칙** 이러한 규칙은 유용 하지만 일상적으로 사용할 준비가 되지 않은 실험적 C++ Core Check 규칙입니다. 사용해 보고 피드백을 [제공](https://developercommunity.visualstudio.com/content/idea/post.html?space=62)하세요. <sup>16.0</sup>
+- **실험적 규칙** 이러한 규칙은 유용 하지만 일상적으로 사용할 준비가 되지 않은 실험적 C++ Core Check 규칙입니다. 사용해 보고 피드백을 [제공](https://aka.ms/feedback/suggest?space=62)하세요. <sup>16.0</sup>
 
 - **함수 규칙** : 지정자를 도입 하는 데 도움이 되는 두 가지 검사입니다 **`noexcept`** . [Clear 함수 디자인 및 구현](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-functions)에 대 한 지침의 일부입니다. <sup>15.5</sup>
 
@@ -334,6 +334,6 @@ Visual Studio 2015 내에서 코드 분석 규칙이 로드 되는 방식 때문
 
 ::: moniker-end
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio C++ Core Check 참조](code-analysis-for-cpp-corecheck.md)
