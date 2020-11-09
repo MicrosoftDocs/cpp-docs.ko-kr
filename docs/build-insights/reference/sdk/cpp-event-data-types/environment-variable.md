@@ -1,6 +1,6 @@
 ---
-title: 환경변수 클래스
-description: C++ 빌드 인사이트 SDK 환경변수 클래스 참조.
+title: EnvironmentVariable 클래스
+description: C++ Build Insights SDK EnvironmentVariable 클래스 참조입니다.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 963c52e0ea9e048448c6f2b3ac62d9938817467e
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
-ms.translationtype: MT
+ms.openlocfilehash: f707ab744aaf6097975ba9e189815df3c9f32266
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81325012"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92920765"
 ---
-# <a name="environmentvariable-class"></a>환경변수 클래스
+# <a name="environmentvariable-class"></a>EnvironmentVariable 클래스
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
-C++ 빌드 인사이트 SDK는 Visual Studio 2017 이상과 호환됩니다. 이러한 버전에 대한 설명서를 보려면 이 문서의 Visual Studio **버전** 선택기 컨트롤을 Visual Studio 2017 또는 Visual Studio 2019로 설정합니다. 이 페이지의 목조 테이블 맨 위에 있습니다.
+C++ Build Insights SDK는 Visual Studio 2017 이상 버전과 호환됩니다. 이러한 버전에 대한 설명서를 보려면 이 문서에 대한 Visual Studio **버전** 선택기 컨트롤을 Visual Studio 2017 또는 Visual Studio 2019로 설정하세요. 이 페이지의 목차 맨 위에 있습니다.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-클래스는 `EnvironmentVariable` [매치 이벤트,](../functions/match-event.md) [매치 이벤트인멤버기능,](../functions/match-event-in-member-function.md) [매치이벤트스택](../functions/match-event-stack.md)및 [매치이벤트스택](../functions/match-event-stack-in-member-function.md) 기능과 함께 사용된다. [ENVIRONMENT_VARIABLE](../event-table.md#environment-variable) 이벤트를 일치시키기 위해 사용합니다.
+`EnvironmentVariable` 클래스는 [MatchEvent](../functions/match-event.md), [MatchEventInMemberFunction](../functions/match-event-in-member-function.md), [MatchEventStack](../functions/match-event-stack.md) 및 [MatchEventStackInMemberFunction](../functions/match-event-stack-in-member-function.md) 함수와 함께 사용 됩니다. 이를 사용하여 [ENVIRONMENT_VARIABLE](../event-table.md#environment-variable) 이벤트를 일치시켜야 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -42,7 +42,7 @@ public:
 
 ## <a name="members"></a>멤버
 
-[SimpleEvent](simple-event.md) 기본 클래스에서 상속된 멤버와 `EnvironmentVariable` 함께 클래스에는 다음 멤버가 포함됩니다.
+해당하는 [SimpleEvent](simple-event.md) 기본 클래스에서 상속된 멤버와 함께 `EnvironmentVariable` 클래스에는 다음 멤버가 포함됩니다.
 
 ### <a name="constructors"></a>생성자
 
@@ -53,7 +53,7 @@ public:
 [이름](#name)
 [값](#value)
 
-## <a name="environmentvariable"></a><a name="environment-variable"></a>환경 변수
+## <a name="environmentvariable"></a><a name="environment-variable"></a> EnvironmentVariable
 
 ```cpp
 EnvironmentVariable(const RawEvent& event);
@@ -61,16 +61,16 @@ EnvironmentVariable(const RawEvent& event);
 
 ### <a name="parameters"></a>매개 변수
 
-*이벤트*\
+*event*\
 [ENVIRONMENT_VARIABLE](../event-table.md#environment-variable) 이벤트입니다.
 
-## <a name="name"></a><a name="name"></a>이름
+## <a name="name"></a><a name="name"></a> Name
 
 ```cpp
 const wchar_t Name() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 환경 변수의 이름입니다.
 
@@ -80,7 +80,7 @@ const wchar_t Name() const;
 const wchar_t Value() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 환경 변수의 값입니다.
 

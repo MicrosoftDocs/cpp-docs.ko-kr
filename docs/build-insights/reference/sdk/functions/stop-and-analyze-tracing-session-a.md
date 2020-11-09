@@ -1,6 +1,6 @@
 ---
-title: 스톱앤분석트레이싱세션A
-description: C ++ 빌드 인사이트 SDK StopAndanalyzeTracingSessionA 함수 참조.
+title: StopAndAnalyzeTracingSessionA
+description: C++ Build Insights SDK StopAndAnalyzeTracingSessionA 함수 참조입니다.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 51a979b68cd87c5e7fd07b28acec80c2d7b81cf6
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
-ms.translationtype: MT
+ms.openlocfilehash: fa5adfca2c5e4d3d4bd17abae4e78c2ac6464773
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81323727"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92922721"
 ---
-# <a name="stopandanalyzetracingsessiona"></a>스톱앤분석트레이싱세션A
+# <a name="stopandanalyzetracingsessiona"></a>StopAndAnalyzeTracingSessionA
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
-C++ 빌드 인사이트 SDK는 Visual Studio 2017 이상과 호환됩니다. 이러한 버전에 대한 설명서를 보려면 이 문서의 Visual Studio **버전** 선택기 컨트롤을 Visual Studio 2017 또는 Visual Studio 2019로 설정합니다. 이 페이지의 목조 테이블 맨 위에 있습니다.
+C++ Build Insights SDK는 Visual Studio 2017 이상 버전과 호환됩니다. 이러한 버전에 대한 설명서를 보려면 이 문서에 대한 Visual Studio **버전** 선택기 컨트롤을 Visual Studio 2017 또는 Visual Studio 2019로 설정하세요. 이 페이지의 목차 맨 위에 있습니다.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-이 `StopAndAnalyzeTracingSessionA` 함수는 진행 중인 추적 세션을 중지하고 임시 파일에 결과 추적을 저장합니다. 그런 다음 분석 세션이 임시 파일을 입력으로 사용하여 즉시 시작됩니다. 이 함수를 호출하는 실행 에는 관리자 권한이 있어야 합니다.
+`StopAndAnalyzeTracingSessionA` 함수는 진행 중인 추적 세션을 중지하고 결과 추적을 임시 파일에 저장합니다. 그러면 분석 세션이 임시 파일을 입력으로 사용하여 즉시 시작됩니다. 이 함수를 호출하는 실행 파일에는 관리자 권한이 있어야 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -38,16 +38,16 @@ enum RESULT_CODE StopAndAnalyzeTracingSessionA(
 
 ### <a name="parameters"></a>매개 변수
 
-*세션 이름*\
-중지할 추적 세션의 이름입니다. [StartTracingSession,](start-tracing-session.md) [StartTracingSessionA](start-tracing-session-a.md)또는 [StartTracingSessionW에](start-tracing-session-w.md)전달된 세션 이름과 동일한 세션 이름을 사용합니다.
+*sessionName*\
+중지할 추적 세션의 이름입니다. [StartTracingSession](start-tracing-session.md), [StartTracingSessionA](start-tracing-session-a.md) 또는 [StartTracingSessionW](start-tracing-session-w.md)에 전달된 것과 동일한 세션 이름을 사용해야 합니다.
 
-*통계*\
-[TRACING_SESSION_STATISTICS](../other-types/tracing-session-statistics-struct.md) 개체에 대한 포인터입니다. `StopAndAnalyzeTracingSessionA`반환하기 전에 이 개체에 추적 수집 통계를 씁니다.
+*statistics*\
+[TRACING_SESSION_STATISTICS](../other-types/tracing-session-statistics-struct.md) 개체에 대한 포인터입니다. `StopAndAnalyzeTracingSessionA`는 반환하기 전에 이 개체에 추적 컬렉션 통계를 씁니다.
 
-*분석설명자*\
-[ANALYSIS_DESCRIPTOR](../other-types/analysis-descriptor-struct.md) 개체에 대한 포인터입니다. 이 개체를 사용하여 에서 시작하는 분석 `StopAndAnalyzeTracingSessionA`세션을 구성합니다.
+*analysisDescriptor*\
+[ANALYSIS_DESCRIPTOR](../other-types/analysis-descriptor-struct.md) 개체에 대한 포인터입니다. 이 개체를 사용하여 `StopAndAnalyzeTracingSessionA`로 시작되는 분석 세션을 구성해야 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 [RESULT_CODE](../other-types/result-code-enum.md) 열거형의 결과 코드입니다.
 

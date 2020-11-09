@@ -1,6 +1,6 @@
 ---
-title: 온트레이스인포푼크 타입데프
-description: C++ 빌드 인사이트 SDK OnTraceInfoFunc 유형 def 참조.
+title: OnTraceInfoFunc typedef
+description: C++ Build Insights SDK OnTraceInfoFunc typedef 참조입니다.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: b987d4db9852c2e52c148bb91015ad414c04d41b
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
-ms.translationtype: MT
+ms.openlocfilehash: 4aaa865fd0f907a67179e7ee967f23a9827b0026
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81329015"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92922461"
 ---
-# <a name="ontraceinfofunc-typedef"></a>온트레이스인포푼크 타입데프
+# <a name="ontraceinfofunc-typedef"></a>OnTraceInfoFunc typedef
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
-C++ 빌드 인사이트 SDK는 Visual Studio 2017 이상과 호환됩니다. 이러한 버전에 대한 설명서를 보려면 이 문서의 Visual Studio **버전** 선택기 컨트롤을 Visual Studio 2017 또는 Visual Studio 2019로 설정합니다. 이 페이지의 목조 테이블 맨 위에 있습니다.
+C++ Build Insights SDK는 Visual Studio 2017 이상 버전과 호환됩니다. 이러한 버전에 대한 설명서를 보려면 이 문서에 대한 Visual Studio **버전** 선택기 컨트롤을 Visual Studio 2017 또는 Visual Studio 2019로 설정하세요. 이 페이지의 목차 맨 위에 있습니다.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-`OnTraceInfoFunc` typedef는 [ANALYSIS_CALLBACKS](analysis-callbacks-struct.md) 및 [RELOG_CALLBACKS](relog-callbacks-struct.md) 구조에 사용되는 함수 시그니처 중 하나입니다.
+`OnTraceInfoFunc` 형식 정의는 [ANALYSIS_CALLBACKS](analysis-callbacks-struct.md) 및 [RELOG_CALLBACKS](relog-callbacks-struct.md) 구조체에서 사용되는 함수 서명 중 하나입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -37,14 +37,14 @@ typedef enum CALLBACK_CODE (BUILD_INSIGHTS_API *OnTraceInfoFunc)(
 
 ### <a name="parameters"></a>매개 변수
 
-*추적 정보*\
-현재 분석되거나 다시 기록중인 추적에 대한 정보가 포함된 [TRACE_INFO_DATA](../c-event-data-types/trace-info-data-struct.md) 개체입니다.
+*traceInfo*\
+현재 분석 중이거나 다시 로깅 중인 추적 관련 정보를 포함하는 [TRACE_INFO_DATA](../c-event-data-types/trace-info-data-struct.md) 개체입니다.
 
-*콜백컨텍스트*\
-[ANALYSIS_DESCRIPTOR](analysis-descriptor-struct.md) 또는 [RELOG_DESCRIPTOR](relog-descriptor-struct.md)이 콜백에 대해 설정된 컨텍스트 값입니다.
+*callbackContext*\
+[ANALYSIS_DESCRIPTOR](analysis-descriptor-struct.md) 또는 [RELOG_DESCRIPTOR](relog-descriptor-struct.md)에서 이 콜백에 설정된 컨텍스트 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-다음에 발생할 CALLBACK_CODE [값을](callback-code-enum.md) 제어합니다.
+다음에 해야 하는 작업을 제어하는 [CALLBACK_CODE](callback-code-enum.md) 값입니다.
 
 ::: moniker-end

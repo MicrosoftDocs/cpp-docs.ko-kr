@@ -1,6 +1,6 @@
 ---
-title: 옵티피CF 클래스
-description: C++ 빌드 인사이트 SDK OptICF 클래스 참조.
+title: OptICF 클래스
+description: C++ Build Insights SDK OptICF 클래스 참조입니다.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: f63fea61f9defc216390fa377b2d1eeace01371b
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
-ms.translationtype: MT
+ms.openlocfilehash: b816b53e1054c4492320bdb71f2f0c7726907cf4
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81324470"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92920530"
 ---
-# <a name="opticf-class"></a>옵티피CF 클래스
+# <a name="opticf-class"></a>OptICF 클래스
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
-C++ 빌드 인사이트 SDK는 Visual Studio 2017 이상과 호환됩니다. 이러한 버전에 대한 설명서를 보려면 이 문서의 Visual Studio **버전** 선택기 컨트롤을 Visual Studio 2017 또는 Visual Studio 2019로 설정합니다. 이 페이지의 목조 테이블 맨 위에 있습니다.
+C++ Build Insights SDK는 Visual Studio 2017 이상 버전과 호환됩니다. 이러한 버전에 대한 설명서를 보려면 이 문서에 대한 Visual Studio **버전** 선택기 컨트롤을 Visual Studio 2017 또는 Visual Studio 2019로 설정하세요. 이 페이지의 목차 맨 위에 있습니다.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-클래스는 `OptICF` [매치 이벤트,](../functions/match-event.md) [매치 이벤트인멤버기능,](../functions/match-event-in-member-function.md) [매치이벤트스택](../functions/match-event-stack.md)및 [매치이벤트스택](../functions/match-event-stack-in-member-function.md) 기능과 함께 사용된다. [OPT_ICF](../event-table.md#opt-icf) 이벤트와 일치하는 데 사용합니다.
+`OptICF` 클래스는 [MatchEvent](../functions/match-event.md), [MatchEventInMemberFunction](../functions/match-event-in-member-function.md), [MatchEventStack](../functions/match-event-stack.md) 및 [MatchEventStackInMemberFunction](../functions/match-event-stack-in-member-function.md) 함수와 함께 사용 됩니다. 이를 사용하여 [OPT_ICF](../event-table.md#opt-icf) 이벤트를 일치시켜야 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -39,13 +39,13 @@ public:
 
 ## <a name="members"></a>멤버
 
-[활동](activity.md) 기본 클래스의 상속된 멤버와 `OptICF` 함께 클래스에는 다음 멤버가 포함됩니다.
+해당하는 [활동](activity.md) 기본 클래스에서 상속된 멤버와 함께 `OptICF` 클래스에는 다음 멤버가 포함됩니다.
 
 ### <a name="constructors"></a>생성자
 
-[옵티피피그](#opt-icf)
+[OptICF](#opt-icf)
 
-## <a name="opticf"></a><a name="opt-icf"></a>옵티피피그
+## <a name="opticf"></a><a name="opt-icf"></a> OptICF
 
 ```cpp
 OptICF(const RawEvent& event);
@@ -53,7 +53,7 @@ OptICF(const RawEvent& event);
 
 ### <a name="parameters"></a>매개 변수
 
-*이벤트*\
-[OPT_ICF](../event-table.md#opt-icf) 이벤트.
+*event*\
+[OPT_ICF](../event-table.md#opt-icf) 이벤트입니다.
 
 ::: moniker-end

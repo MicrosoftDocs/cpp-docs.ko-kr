@@ -1,6 +1,6 @@
 ---
-title: 패스2 클래스
-description: C++ 빌드 인사이트 SDK Pass2 클래스 참조.
+title: Pass2 클래스
+description: C++ Build Insights SDK Pass2 클래스 참조입니다.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 89b775c60b1d136c33dbaf2c4e39f247be7bb0bc
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
-ms.translationtype: MT
+ms.openlocfilehash: 17f915371f70a6f4398d91251680c460aa231feb
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81324410"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92920504"
 ---
-# <a name="pass2-class"></a>패스2 클래스
+# <a name="pass2-class"></a>Pass2 클래스
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
-C++ 빌드 인사이트 SDK는 Visual Studio 2017 이상과 호환됩니다. 이러한 버전에 대한 설명서를 보려면 이 문서의 Visual Studio **버전** 선택기 컨트롤을 Visual Studio 2017 또는 Visual Studio 2019로 설정합니다. 이 페이지의 목조 테이블 맨 위에 있습니다.
+C++ Build Insights SDK는 Visual Studio 2017 이상 버전과 호환됩니다. 이러한 버전에 대한 설명서를 보려면 이 문서에 대한 Visual Studio **버전** 선택기 컨트롤을 Visual Studio 2017 또는 Visual Studio 2019로 설정하세요. 이 페이지의 목차 맨 위에 있습니다.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-클래스는 `Pass2` [매치 이벤트,](../functions/match-event.md) [매치 이벤트인멤버기능,](../functions/match-event-in-member-function.md) [매치이벤트스택](../functions/match-event-stack.md)및 [매치이벤트스택](../functions/match-event-stack-in-member-function.md) 기능과 함께 사용된다. [PASS2](../event-table.md#pass2) 이벤트와 일치하는 데 사용합니다.
+`Pass2` 클래스는 [MatchEvent](../functions/match-event.md), [MatchEventInMemberFunction](../functions/match-event-in-member-function.md), [MatchEventStack](../functions/match-event-stack.md) 및 [MatchEventStackInMemberFunction](../functions/match-event-stack-in-member-function.md) 함수와 함께 사용 됩니다. 이를 사용하여 [PASS2](../event-table.md#pass2) 이벤트를 일치시켜야 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -39,13 +39,13 @@ public:
 
 ## <a name="members"></a>멤버
 
-[LinkerPass](linker-pass.md) 기본 클래스의 상속된 멤버와 `Pass2` 함께 클래스에는 다음 멤버가 포함됩니다.
+해당하는 [LinkerPass](linker-pass.md) 기본 클래스에서 상속된 멤버와 함께 `Pass2` 클래스에는 다음 멤버가 포함됩니다.
 
 ### <a name="constructors"></a>생성자
 
-[패스 2](#pass2)
+[Pass2](#pass2)
 
-## <a name="pass2"></a><a name="pass2"></a>패스 2
+## <a name="pass2"></a><a name="pass2"></a> Pass2
 
 ```cpp
 Pass2(const RawEvent& event);
@@ -53,7 +53,7 @@ Pass2(const RawEvent& event);
 
 ### <a name="parameters"></a>매개 변수
 
-*이벤트*\
-[PASS2](../event-table.md#pass2) 이벤트.
+*event*\
+[PASS2](../event-table.md#pass2) 이벤트입니다.
 
 ::: moniker-end

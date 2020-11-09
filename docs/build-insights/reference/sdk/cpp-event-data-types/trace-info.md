@@ -1,6 +1,6 @@
 ---
-title: 트레이스인정보 클래스
-description: C++ 빌드 인사이트 SDK TraceInfo 클래스 참조.
+title: TraceInfo 클래스
+description: C++ Build Insights SDK TraceInfo 클래스 참조입니다.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 75d53937e3999f5692dee0ecf419e0ce5f49a274
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
-ms.translationtype: MT
+ms.openlocfilehash: b772cc13981720c73238e56a561ca92144775cb4
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81324169"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92922922"
 ---
-# <a name="traceinfo-class"></a>트레이스인정보 클래스
+# <a name="traceinfo-class"></a>TraceInfo 클래스
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
-C++ 빌드 인사이트 SDK는 Visual Studio 2017 이상과 호환됩니다. 이러한 버전에 대한 설명서를 보려면 이 문서의 Visual Studio **버전** 선택기 컨트롤을 Visual Studio 2017 또는 Visual Studio 2019로 설정합니다. 이 페이지의 목조 테이블 맨 위에 있습니다.
+C++ Build Insights SDK는 Visual Studio 2017 이상 버전과 호환됩니다. 이러한 버전에 대한 설명서를 보려면 이 문서에 대한 Visual Studio **버전** 선택기 컨트롤을 Visual Studio 2017 또는 Visual Studio 2019로 설정하세요. 이 페이지의 목차 맨 위에 있습니다.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-클래스는 `TraceInfo` 분석 되 거나 다시 기록 되는 추적에 대 한 유용한 속성에 액세스 하는 데 사용 됩니다.
+`TraceInfo` 클래스는 분석 중이거나 다시 로깅 중인 추적에 관한 유용한 속성에 액세스하는 용도로 사용합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -47,75 +47,75 @@ public:
 
 ## <a name="remarks"></a>설명
 
-전체 추적 `StartTimestamp` `StopTimestamp` 중에 경과된 틱 수를 얻기 위해 에서 빼기합니다. 결과 `TickFrequency` 값을 시간 단위로 변환하는 데 사용합니다. 눈금을 시간으로 변환하는 예제는 [EVENT_DATA](../c-event-data-types/event-data-struct.md)를 참조하십시오.
+`StopTimestamp`에서 `StartTimestamp`를 차감하여 전체 추적 중에 경과된 틱 수를 구합니다. `TickFrequency`를 사용하여 결과 값을 시간 단위로 변환합니다. [EVENT_DATA](../c-event-data-types/event-data-struct.md)에서 틱을 시간으로 변환하는 예를 확인할 수 있습니다.
 
-눈금을 직접 변환하지 않으려면 `TraceInfo` 클래스는 나노초 단위로 추적 기간을 반환하는 멤버 함수를 제공합니다. 표준 C++ `chrono` 라이브러리를 사용하여 이 값을 다른 시간 단위로 변환합니다.
+틱을 직접 변환하지 않고 싶다면 `TraceInfo` 클래스에서 제공하는 추적 기간을 나노초 단위로 반환하는 멤버 함수를 사용하세요. 표준 C++ `chrono` 라이브러리를 사용하여 이 값을 다른 시간 단위로 변환해야 합니다.
 
 ## <a name="members"></a>멤버
 
 ### <a name="constructors"></a>생성자
 
-[트레이스정보](#trace-info)
+[TraceInfo](#trace-info)
 
 ### <a name="functions"></a>Functions
 
-[기간](#duration)
-[논리 프로세서카운트](#logical-processor-count)
-[시작 타임스탬프](#start-timestamp)
-[중지 타임스탬프](#stop-timestamp)
-[틱 빈도](#tick-frequency)
+[Duration](#duration)
+[LogicalProcessorCount](#logical-processor-count)
+[StartTimestamp](#start-timestamp)
+[StopTimestamp](#stop-timestamp)
+[TickFrequency](#tick-frequency)
 
-## <a name="duration"></a><a name="duration"></a>기간
+## <a name="duration"></a><a name="duration"></a> Duration
 
 ```cpp
 std::chrono::nanoseconds Duration() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-나노초 단위로 활동하는 기간입니다.
+작업 기간(나노초)입니다.
 
-## <a name="logicalprocessorcount"></a><a name="logical-processor-count"></a>논리 프로세서 카운트
+## <a name="logicalprocessorcount"></a><a name="logical-processor-count"></a> LogicalProcessorCount
 
 ```cpp
 const unsigned long& LogicalProcessorCount() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 추적이 수집된 컴퓨터의 논리 프로세서 수입니다.
 
-## <a name="starttimestamp"></a><a name="start-timestamp"></a>스타트타임스탬프
+## <a name="starttimestamp"></a><a name="start-timestamp"></a> StartTimestamp
 
 ```cpp
 const long long& StartTimestamp() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-추적이 시작될 때 캡처된 틱 값입니다.
+추적을 시작할 때 캡처한 틱 값입니다.
 
-## <a name="stoptimestamp"></a><a name="stop-timestamp"></a>스톱타임스탬프
+## <a name="stoptimestamp"></a><a name="stop-timestamp"></a> StopTimestamp
 
 ```cpp
 const long long& StopTimestamp() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-추적이 중지될 때 캡처된 틱 값입니다.
+추적이 중단되었을 때 캡처한 틱 값입니다.
 
-## <a name="tickfrequency"></a><a name="tick-frequency"></a>틱 주파수
+## <a name="tickfrequency"></a><a name="tick-frequency"></a> TickFrequency
 
 ```cpp
 const long long& TickFrequency() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-틱으로 측정된 기간을 평가할 때 사용할 초당 틱 수입니다.
+틱 단위로 기간을 평가할 때 사용할 초당 틱 수입니다.
 
-## <a name="traceinfo"></a><a name="trace-info"></a>트레이스정보
+## <a name="traceinfo"></a><a name="trace-info"></a> TraceInfo
 
 ```cpp
 TraceInfo(const TRACE_INFO_DATA& data);
@@ -123,7 +123,7 @@ TraceInfo(const TRACE_INFO_DATA& data);
 
 ### <a name="parameters"></a>매개 변수
 
-*데이터*\
-추적에 대한 정보를 포함하는 데이터입니다.
+*data*\
+추적 관련 정보를 포함하는 데이터입니다.
 
 ::: moniker-end

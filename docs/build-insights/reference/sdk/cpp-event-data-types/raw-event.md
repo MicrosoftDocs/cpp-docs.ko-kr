@@ -1,6 +1,6 @@
 ---
 title: RawEvent 클래스
-description: C++ 빌드 인사이트 SDK RawEvent 클래스 참조.
+description: C++ Build Insights SDK RawEvent 클래스 참조입니다.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 83629457ac3a0d1f991f6b084af2f3400612b2ac
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
-ms.translationtype: MT
+ms.openlocfilehash: 1cf96e1b8eadaf1de9fe2cf565a993f3bcafe358
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81324377"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92920465"
 ---
 # <a name="rawevent-class"></a>RawEvent 클래스
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
-C++ 빌드 인사이트 SDK는 Visual Studio 2017 이상과 호환됩니다. 이러한 버전에 대한 설명서를 보려면 이 문서의 Visual Studio **버전** 선택기 컨트롤을 Visual Studio 2017 또는 Visual Studio 2019로 설정합니다. 이 페이지의 목조 테이블 맨 위에 있습니다.
+C++ Build Insights SDK는 Visual Studio 2017 이상 버전과 호환됩니다. 이러한 버전에 대한 설명서를 보려면 이 문서에 대한 Visual Studio **버전** 선택기 컨트롤을 Visual Studio 2017 또는 Visual Studio 2019로 설정하세요. 이 페이지의 목차 맨 위에 있습니다.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-클래스는 `RawEvent` [EventStack](event-stack.md)에서 일반 이벤트를 나타내는 데 사용됩니다.
+`RawEvent` 클래스는 [EventStack](event-stack.md)에 있는 일반 이벤트를 나타내는 용도로 사용합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -63,42 +63,42 @@ public:
 
 ## <a name="remarks"></a>설명
 
-클래스의 여러 멤버 `RawEvent` 함수는 틱 수를 반환합니다. C++ 빌드 인사이트는 Windows의 성능 카운터를 눈금의 소스로 사용합니다. 눈금 개수는 눈금 빈도와 함께 사용하여 초와 같은 시간 단위로 변환해야 합니다. 상기 `TickFrequency` 부재 함수는 진드기 주파수를 얻기 위해 호출될 수 있다. 눈금은 시간 단위로 변환하는 방법에 대한 예제는 [EVENT_DATA](../c-event-data-types/event-data-struct.md#tick-conversion-example) 페이지를 참조하십시오.
+`RawEvent` 클래스의 여러 멤버 함수는 틱 수를 반환합니다. C++ Build Insights는 Windows의 성능 카운터를 틱의 소스로 사용합니다. 틱 수를 시간 단위(예: 초)로 변환하려면 틱 빈도와 함께 사용해야 합니다. 빈 빈도를 가져오려면 `TickFrequency` 멤버 함수를 호출해야 할 수 있습니다. [EVENT_DATA](../c-event-data-types/event-data-struct.md#tick-conversion-example) 페이지에 틱을 시간 단위로 변환하는 예제가 나와 있습니다.
 
-눈금을 직접 변환하지 않으려면 클래스는 `RawEvent` 시간 값을 나노초 단위로 반환하는 멤버 함수를 제공합니다. 표준 C++ `chrono` 라이브러리를 사용하여 나노초를 다른 시간 단위로 변환합니다.
+틱을 직접 변환하지 않고 싶다면 `RawEvent` 클래스에서 제공하는 시간 값을 나노초 단위로 반환하는 멤버 함수를 사용하세요. 표준 C++ `chrono` 라이브러리를 사용하여 나노초를 다른 시간 단위로 변환해야 합니다.
 
 ## <a name="members"></a>멤버
 
 ### <a name="constructor"></a>생성자
 
-[원시 이벤트](#raw-event)
+[RawEvent](#raw-event)
 
 ### <a name="functions"></a>Functions
 
-[CPU틱](#cpu-ticks)\
-[CPU 시간](#cpu-time)\
+[CPUTicks](#cpu-ticks)\
+[CPUTime](#cpu-time)\
 [데이터](#data)\
-[기간](#duration)\
+[Duration](#duration)\
 [EventId](#event-id)
-[이벤트인스턴스Id](#event-instance-id)
-[이벤트 이름](#event-name)\
-[이벤트와이드 네임](#event-wide-name)\
-[익스클루시브CPU틱](#exclusive-cpu-ticks)\
-[익스클루시브CPU타임](#exclusive-cpu-time)\
-[독점 기간](#exclusive-duration)\
-[배타적 지속 시간틱](#exclusive-duration-ticks)\
-[익스클루시브월클럭타임책임](#exclusive-wall-clock-time-responsibility)\
-[익스클루시브월클럭타임책임틱스](#exclusive-wall-clock-time-responsibility-ticks)\
-[프로세스 ID](#process-id)\
-[프로세서 인덱스](#processor-index)\
-[스타트타임스탬프](#start-timestamp)\
-[스톱타임스탬프](#stop-timestamp)\
-[스레드 ID](#thread-id)\
-[틱 주파수](#tick-frequency)\
-[월클럭타임책임](#wall-clock-time-responsibility)\
-[월시계시간책임틱스](#wall-clock-time-responsibility-ticks)
+[EventInstanceId](#event-instance-id)
+[EventName](#event-name)\
+[EventWideName](#event-wide-name)\
+[ExclusiveCPUTicks](#exclusive-cpu-ticks)\
+[ExclusiveCPUTime](#exclusive-cpu-time)\
+[ExclusiveDuration](#exclusive-duration)\
+[ExclusiveDurationTicks](#exclusive-duration-ticks)\
+[ExclusiveWallClockTimeResponsibility](#exclusive-wall-clock-time-responsibility)\
+[ExclusiveWallClockTimeResponsibilityTicks](#exclusive-wall-clock-time-responsibility-ticks)\
+[ProcessId](#process-id)\
+[ProcessorIndex](#processor-index)\
+[StartTimestamp](#start-timestamp)\
+[StopTimestamp](#stop-timestamp)\
+[ThreadId](#thread-id)\
+[TickFrequency](#tick-frequency)\
+[WallClockTimeResponsibility](#wall-clock-time-responsibility)\
+[WallClockTimeResponsibilityTicks](#wall-clock-time-responsibility-ticks)
 
-## <a name="rawevent"></a><a name="raw-event"></a>원시 이벤트
+## <a name="rawevent"></a><a name="raw-event"></a> RawEvent
 
 ```cpp
 RawEvent(const EVENT_DATA& data);
@@ -106,227 +106,227 @@ RawEvent(const EVENT_DATA& data);
 
 ### <a name="parameters"></a>매개 변수
 
-*이벤트*\
+*event*\
 이벤트 데이터입니다.
 
-## <a name="cputicks"></a><a name="cpu-ticks"></a>CPU틱
+## <a name="cputicks"></a><a name="cpu-ticks"></a> CPUTicks
 
 ```cpp
 const long long& CPUTicks() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-이 작업 중에 발생한 CPU 틱 수입니다. CPU 틱은 일반 틱과 다릅니다. CPU 틱은 CPU가 활동에서 코드를 실행하는 경우에만 계산됩니다. 활동과 연결된 스레드가 절전 모드일 때 CPU 체크는 계산되지 않습니다.
+이 작업에서 발생한 CPU틱 수입니다. CPU 틱은 일반 틱과 다릅니다. CPU 틱은 작업에서 CPU가 코드를 실행하는 경우에만 계산됩니다. 작업과 연결된 스레드가 절전 모드이면 CPU 틱이 계산되지 않습니다.
 
-## <a name="cputime"></a><a name="cpu-time"></a>CPU 시간
+## <a name="cputime"></a><a name="cpu-time"></a> CPUTime
 
 ```cpp
 std::chrono::nanoseconds CPUTime()() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-CPU가 이 활동 내에서 코드를 실행하는 시간입니다. 이 값은 자식 활동이 별도의 스레드에서 실행되는 경우 활동 기간보다 높을 수 있습니다. 값은 나노초 단위로 반환됩니다.
+이 작업에서 CPU가 코드를 실행한 시간입니다. 자식 작업이 별도의 스레드에서 실행된다면 이 값이 작업 기간보다 클 수 있습니다. 값은 나노초 단위로 반환됩니다.
 
-## <a name="data"></a><a name="data"></a>데이터
+## <a name="data"></a><a name="data"></a> Data
 
 ```cpp
 const void* Data() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-이 이벤트에 포함된 추가 데이터에 대한 포인터입니다. 이 필드를 해석하는 방법에 대한 자세한 내용은 [EVENT_DATA](../c-event-data-types/event-data-struct.md)을 참조하십시오.
+이 이벤트에 포함된 추가 데이터에 대한 포인터입니다. 이 필드를 해석하는 자세한 방법은 [EVENT_DATA](../c-event-data-types/event-data-struct.md)를 참조하세요.
 
-## <a name="duration"></a><a name="duration"></a>기간
+## <a name="duration"></a><a name="duration"></a> Duration
 
 ```cpp
 std::chrono::nanoseconds Duration() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-나노초 단위로 활동하는 기간입니다.
+작업 기간(나노초)입니다.
 
-## <a name="eventid"></a><a name="event-id"></a>Eventid
+## <a name="eventid"></a><a name="event-id"></a> EventId
 
 ```cpp
 const unsigned short& EventId() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-이벤트 유형을 식별하는 숫자입니다. 이벤트 식별자 목록은 [EVENT_ID](../c-event-data-types/event-id-enum.md)를 참조하십시오.
+이벤트 형식을 식별하는 번호입니다. 이벤트 식별자 목록은 [EVENT_ID](../c-event-data-types/event-id-enum.md)를 참조하세요.
 
-## <a name="eventinstanceid"></a><a name="event-instance-id"></a>이벤트 인스턴스 ID
+## <a name="eventinstanceid"></a><a name="event-instance-id"></a> EventInstanceId
 
 ```cpp
 const unsigned long long& EventInstanceId() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-추적 내부의 이벤트를 고유하게 식별하는 숫자입니다. 이 값은 동일한 추적을 여러 번 분석하거나 다시 작업할 때 변경되지 않습니다. 이 값을 사용하여 여러 분석에서 동일한 이벤트를 식별하거나 동일한 추적을 통해 다시 로깅합니다.
+추적 내에서 이벤트를 식별하는 번호입니다. 동일한 추적을 여러 번 분석하거나 다시 로깅하는 경우 이 값이 변경되지 않습니다. 이 값을 사용하면 동일한 추적을 통해 여러 분석 또는 다시 로깅 패스에서 동일한 이벤트를 식별할 수 있습니다.
 
-## <a name="eventname"></a><a name="event-name"></a>Eventname
+## <a name="eventname"></a><a name="event-name"></a> EventName
 
 ```cpp
 const char* EventName() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-[EventId로](#event-id)식별된 이벤트 형식의 이름을 포함하는 ANSI 문자열입니다.
+[EventId](#event-id)로 식별하는 이벤트 형식의 이름을 포함하는 ANSI 문자열입니다.
 
-## <a name="eventwidename"></a><a name="event-wide-name"></a>이벤트와이드 네임
+## <a name="eventwidename"></a><a name="event-wide-name"></a> EventWideName
 
 ```cpp
 const wchar_t* EventWideName() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-[EventId로](#event-id)식별된 이벤트 형식의 이름을 포함하는 넓은 문자열입니다.
+[EventId](#event-id)로 식별하는 이벤트 형식의 이름을 포함하는 와이드 문자열입니다.
 
-## <a name="exclusivecputicks"></a><a name="exclusive-cpu-ticks"></a>익스클루시브CPU틱
+## <a name="exclusivecputicks"></a><a name="exclusive-cpu-ticks"></a> ExclusiveCPUTicks
 
 ```cpp
 const long long& ExclusiveCPUTicks() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-[CPUTicks와](#cpu-ticks)동일하지만 자식 활동에서 발생한 CPU 틱은 포함하지 않습니다.
+[CPUTicks](#cpu-ticks)와 동일하지만 자식 작업에서 발생한 CPU 틱은 포함하지 않습니다.
 
-## <a name="exclusivecputime"></a><a name="exclusive-cpu-time"></a>익스클루시브CPU타임
+## <a name="exclusivecputime"></a><a name="exclusive-cpu-time"></a> ExclusiveCPUTime
 
 ```cpp
 std::chrono::nanoseconds ExclusiveCPUTime() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-[CPUTime과](#cpu-time)동일합니다.
+[CPUTime](#cpu-time)과 동일하지만 자식 작업의 CPU 시간이 포함되지 않습니다.
 
-## <a name="exclusiveduration"></a><a name="exclusive-duration"></a>독점 기간
+## <a name="exclusiveduration"></a><a name="exclusive-duration"></a> ExclusiveDuration
 
 ```cpp
 std::chrono::nanoseconds ExclusiveDuration() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-하위 활동에 소요된 시간을 포함하지 않는 나노초의 활동 기간입니다.
+작업 기간(나노초)으로, 자식 작업에서 소비한 시간은 포함하지 않습니다.
 
-## <a name="exclusivedurationticks"></a><a name="exclusive-duration-ticks"></a>배타적 지속 시간틱
+## <a name="exclusivedurationticks"></a><a name="exclusive-duration-ticks"></a> ExclusiveDurationTicks
 
 ```cpp
 const long long& ExclusiveDurationTicks() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-자식 활동에서 발생한 틱 수를 제외한 이 활동에서 발생한 틱 수입니다.
+이 작업에서 발생한 틱 수로, 자식 작업에서 발생한 틱 수는 제외됩니다.
 
-## <a name="exclusivewallclocktimeresponsibility"></a><a name="exclusive-wall-clock-time-responsibility"></a>익스클루시브월클럭타임책임
+## <a name="exclusivewallclocktimeresponsibility"></a><a name="exclusive-wall-clock-time-responsibility"></a> ExclusiveWallClockTimeResponsibility
 
 ```cpp
 std::chrono::nanoseconds ExclusiveWallClockTimeResponsibility() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-[WallClockTime책임과](#wall-clock-time-responsibility)동일하지만, 아동 활동의 월 시계 시간 책임을 포함하지 않습니다.
+[WallClockTimeResponsibility](#wall-clock-time-responsibility)와 동일하지만 자식 작업의 벽시계 시간 책임은 제외됩니다.
 
-## <a name="exclusivewallclocktimeresponsibilityticks"></a><a name="exclusive-wall-clock-time-responsibility-ticks"></a>익스클루시브월클럭타임책임틱스
+## <a name="exclusivewallclocktimeresponsibilityticks"></a><a name="exclusive-wall-clock-time-responsibility-ticks"></a> ExclusiveWallClockTimeResponsibilityTicks
 
 ```cpp
 const long long& ExclusiveWallClockTimeResponsibilityTicks() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-[WallClockTimeResponsibilityTicks와](#wall-clock-time-responsibility-ticks)동일하지만, 자식 활동의 벽 시계 시간 책임 틱을 포함하지 않습니다.
+[WallClockTimeResponsibilityTicks](#wall-clock-time-responsibility-ticks)와 동일하지만 자식 작업의 벽시계 시간 책임 틱은 제외됩니다.
 
-## <a name="processid"></a><a name="process-id"></a>프로세스 ID
+## <a name="processid"></a><a name="process-id"></a> ProcessId
 
 ```cpp
 const unsigned long& ProcessId() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이벤트가 발생한 프로세스의 식별자입니다.
 
-## <a name="processorindex"></a><a name="processor-index"></a>프로세서 인덱스
+## <a name="processorindex"></a><a name="processor-index"></a> ProcessorIndex
 
 ```cpp
 const unsigned short& ProcessorIndex() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-이벤트가 발생한 논리 프로세서에 대한 0기반 인덱스입니다.
+이벤트가 발생한 논리 프로세서의 인덱스(0부터 시작)입니다.
 
-## <a name="starttimestamp"></a><a name="start-timestamp"></a>스타트타임스탬프
+## <a name="starttimestamp"></a><a name="start-timestamp"></a> StartTimestamp
 
 ```cpp
 const long long& StartTimestamp() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-활동이 시작될 때 캡처된 눈금 값입니다.
+작업을 시작했을 때 캡처한 틱 값입니다.
 
-## <a name="stoptimestamp"></a><a name="stop-timestamp"></a>스톱타임스탬프
+## <a name="stoptimestamp"></a><a name="stop-timestamp"></a> StopTimestamp
 
 ```cpp
 const long long& StopTimestamp() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-활동이 중지될 때 캡처된 틱 값입니다.
+작업이 중단되었을 때 캡처한 틱 값입니다.
 
-## <a name="threadid"></a><a name="thread-id"></a>스레드 ID
+## <a name="threadid"></a><a name="thread-id"></a> ThreadId
 
 ```cpp
 const unsigned long& ThreadId() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이벤트가 발생한 스레드의 식별자입니다.
 
-## <a name="tickfrequency"></a><a name="tick-frequency"></a>틱 주파수
+## <a name="tickfrequency"></a><a name="tick-frequency"></a> TickFrequency
 
 ```cpp
 const long long& TickFrequency() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-이 이벤트의 틱으로 측정된 기간을 평가할 때 사용할 초당 틱 수입니다.
+이 이벤트에서 틱 단위로 기간을 평가할 때 사용할 초당 틱 수입니다.
 
-## <a name="wallclocktimeresponsibility"></a><a name="wall-clock-time-responsibility"></a>월클럭타임책임
+## <a name="wallclocktimeresponsibility"></a><a name="wall-clock-time-responsibility"></a> WallClockTimeResponsibility
 
 ```cpp
 std::chrono::nanoseconds WallClockTimeResponsibility() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-이 활동의 벽 시계 시간 책임은 나노초단위로 이루어집니다. 월 시계 시간 책임이 무엇을 의미하는지에 대한 자세한 내용은 [월 클럭타임책임 체크를](#wall-clock-time-responsibility-ticks)참조하십시오.
+이 작업의 벽시계 시간 책임(나노초)입니다. 벽시계 시간 책임에 대한 자세한 내용은 [WallClockTimeResponsibilityTicks](#wall-clock-time-responsibility-ticks)를 참조하세요.
 
-## <a name="wallclocktimeresponsibilityticks"></a><a name="wall-clock-time-responsibility-ticks"></a>월시계시간책임틱스
+## <a name="wallclocktimeresponsibilityticks"></a><a name="wall-clock-time-responsibility-ticks"></a> WallClockTimeResponsibilityTicks
 
 ```cpp
 const long long& WallClockTimeResponsibilityTicks() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-전체 월 시계 시간에 대한 이 활동의 기여도를 나타내는 틱 수입니다. 벽 시계 시간 책임 진드기는 일반 진드기와 다릅니다. 월 시계 시간 책임 틱은 활동 간의 병렬성을 고려합니다. 두 개의 병렬 활동은 50틱의 지속 시간과 동일한 시작 및 중지 시간을 가질 수 있습니다. 이 경우 둘 다 25틱의 월 클럭 시간 책임이 할당됩니다.
+전체 벽시계 시간에 대한 이 작업의 기여를 나타내는 틱 수입니다. 벽시계 시간 책임 틱은 일반 틱과 다릅니다. 벽시계 시간 책임 틱은 작업 간의 병렬 처리를 고려합니다. 두 병렬 작업의 기간이 50 틱이고 시작 및 중지 시간이 동일할 수 있습니다. 이 경우 두 작업 모두 벽시계 시간 책임이 25틱으로 할당됩니다.
 
 ::: moniker-end

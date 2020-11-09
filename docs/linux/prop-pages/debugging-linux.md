@@ -2,26 +2,26 @@
 title: 디버거 속성(Linux C++) | Microsoft Docs
 ms.date: 06/07/2019
 ms.assetid: 0c1c0fcc-a49b-451c-a5cb-ce9711fac064
-ms.openlocfilehash: bebee7a2b3bcfd880a538acae35c9616b3b1bd46
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 2b55a0db001c98be72ac88c17c62b21e98ec4888
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "79446182"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924516"
 ---
 # <a name="c-debugging-properties-linux-c"></a>C++ 디버깅 속성(Linux C++)
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 Linux 지원은 Visual Studio 2017 이상에서 사용할 수 있습니다.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 | 속성 | 설명 | 선택 항목 |
 |--|--|--|
-| 원격 디버깅 머신 | **Visual Studio 2019 버전 16.1**: 프로그램을 디버깅하려면 머신을 지정합니다. [일반](general-linux.md) 페이지에서 지정된 원격 빌드 머신과 다를 수 있습니다. **도구** > **옵션** > **플랫폼 간** > **연결 관리자**를 사용하여 대상 머신 연결을 추가하거나 편집할 수 있습니다. |
+| 원격 디버깅 머신 | **Visual Studio 2019 버전 16.1** : 프로그램을 디버깅하려면 머신을 지정합니다. [일반](general-linux.md) 페이지에서 지정된 원격 빌드 머신과 다를 수 있습니다. **도구** > **옵션** > **플랫폼 간** > **연결 관리자** 를 사용하여 대상 머신 연결을 추가하거나 편집할 수 있습니다. |
 | 사전 실행 명령 | 디버거 실행 전에 셸에서 실행되는 명령이며 디버깅 환경에 영향을 주기 위해 사용할 수 있습니다. |
 | 프로그램 | 디버그할 프로그램에 대한 원격 시스템의 전체 경로입니다. 비워 두거나 변경하지 않으면 현재 프로젝트 출력이 기본값으로 설정됩니다. |
 | 프로그램 인수 | 디버그 중인 프로그램에 전달할 명령줄 인수입니다. |
@@ -29,7 +29,7 @@ Linux 지원은 Visual Studio 2017 이상에서 사용할 수 있습니다.
 | 추가 디버거 명령 | 디버깅 시작 전에 디버거가 실행할 추가 `gdb` 명령입니다. |
 | 디버거 포트 번호 | 원격 디버거와의 디버거 통신을 위한 포트 번호입니다. 포트는 로컬에서 사용 중이지 않아야 합니다. 이 값은 양수이며, 1에서 65535 사이여야 합니다. 입력하지 않을 경우 사용 가능한 포트 번호가 사용됩니다. |
 | 원격 디버거 포트 번호 | 원격 디버거 서버 `gdbserver`가 원격 시스템에서 수신 대기 중인 포트 번호입니다. 포트는 원격 시스템에서 사용 중이지 않아야 합니다. 이 값은 양수이며, 1에서 65535 사이여야 합니다. 입력하지 않을 경우 4444 이상의 사용 가능한 포트 번호가 사용됩니다. |
-| 디버깅 모드 | 디버거가 `gdb`와 상호 작용하는 방법을 지정합니다. *gdb 모드*에서 디버거는 원격 시스템의 셸을 통해 `gdb`를 구동합니다. *gdbserver 모드*에서 `gdb`는 로컬로 실행되며 원격으로 실행 중인 `gdbserver`에 연결합니다. | **gdbserver**<br/>**gdb** |
+| 디버깅 모드 | 디버거가 `gdb`와 상호 작용하는 방법을 지정합니다. *gdb 모드* 에서 디버거는 원격 시스템의 셸을 통해 `gdb`를 구동합니다. *gdbserver 모드* 에서 `gdb`는 로컬로 실행되며 원격으로 실행 중인 `gdbserver`에 연결합니다. | **gdbserver**<br/>**gdb** |
 | 추가 기호 검색 경로 | 디버그 기호에 대한 추가 검색 경로(solib-search-path)입니다. |
 | 자식 프로세스 디버그 | 자식 프로세스 디버그 사용 여부를 지정합니다. |
 | Python 보기 쉽게 인쇄 사용 | 식 값을 보기 쉽게 인쇄하는 기능을 사용합니다. gdb 디버깅 모드에서만 지원됩니다. |
