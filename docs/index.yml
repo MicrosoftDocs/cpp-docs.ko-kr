@@ -10,12 +10,12 @@ metadata:
   author: corob-msft
   ms.author: corob
   ms.date: 06/04/2020
-  ms.openlocfilehash: 6bfbf763e738a5c53f0b6df0b4790b762ab901f2
-  ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+  ms.openlocfilehash: 487556549e382e6ce8b763229b1c037749263dc7
+  ms.sourcegitcommit: 12eb6a824dd7187a065d44fceca4c410f58e121e
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 09/29/2020
-  ms.locfileid: "91509723"
+  ms.lasthandoff: 11/06/2020
+  ms.locfileid: "94334134"
 highlightedContent:
   items:
   - title: Visual Studio 설치 및 C++ 작업 선택
@@ -182,4 +182,4 @@ additionalContent:
         url: cloud/cloud-and-web-programming-in-visual-cpp.md
       - text: 유니버설 Windows 플랫폼 라이브러리
         url: cppcx/namespaces-reference-c-cx.md
-  footer: '[블로그](https://devblogs.microsoft.com/cppblog/) - [트위터](https://twitter.com/visualc) - [스택 오버플로](https://stackoverflow.com/questions/tagged/visual-c++) - [문제 보고](overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md) - [개발자 커뮤니티](https://developercommunity.visualstudio.com/spaces/62/index.html) - C++ 문서에 참여: [기여자 가이드](/contribute/)를 참조하세요.'
+  footer: '[Microsoft Docs Q&A](/answers/topics/c%2B%2B.html) - [C++ 팀 블로그](https://devblogs.microsoft.com/cppblog/) - [Twitter](https://twitter.com/visualc) - [Developer Community](https://aka.ms/vsfeedback/browsecpp) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-c++) - [문제를 신고하는 방법](overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md) - [기능 제안](https://aka.ms/feedback/suggest?space=62) - C++ 문서에 기여: [기여자 가이드](/contribute/)를 참조하세요.'
