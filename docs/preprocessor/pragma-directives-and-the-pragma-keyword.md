@@ -14,12 +14,12 @@ helpviewer_keywords:
 - preprocessor, pragmas
 - pragma directives (#pragma)
 ms.assetid: 9867b438-ac64-4e10-973f-c3955209873f
-ms.openlocfilehash: bf4bbdcf74808edd8ef54149f8258f47bd94c600
-ms.sourcegitcommit: 4abc6c4c9694f91685cfd77940987e29a51e3143
+ms.openlocfilehash: 784cd413b6b81033c9e49b22d979ece72e5ee101
+ms.sourcegitcommit: 3f0c1dcdcce25865d1a1022bcc5b9eec79f69025
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93238410"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94381547"
 ---
 # <a name="pragma-directives-and-the-__pragma-keyword"></a>Pragma 지시문 및 __pragma 키워드
 
@@ -145,10 +145,10 @@ return _hr; \
 
  이를 통해 매크로 정의에 pragma를 넣을 수 있습니다. `_`Microsoft 전용 키워드에는 두 개의 선행 밑줄 대신 선행 밑줄이 하나 있고 `__` 첫 글자는 대문자입니다.
 
-문자열 리터럴은 문 뒤에 배치 하는 것이 좋습니다 *`#pragma`* . 예를 들면 다음과 같습니다.
+문자열 리터럴은 문 뒤에 배치 하는 것이 좋습니다 *`#pragma`* . 예를 들어:
 
 ```c
-#pragma message("--the #pragma way")
+#pragma message("the #pragma way")
 _Pragma ("message( \"the _Pragma way\")") 
 ```
 
@@ -181,7 +181,7 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [C/c + + 전처리기 참조](../preprocessor/c-cpp-preprocessor-reference.md)\
 [C pragma](../c-language/c-pragmas.md)\

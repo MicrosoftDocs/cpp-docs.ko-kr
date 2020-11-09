@@ -5,12 +5,12 @@ helpviewer_keywords:
 - value struct
 - value class
 ms.assetid: 262a0992-9721-4c02-8297-efc07d90e5a4
-ms.openlocfilehash: 3350af722993d6b23efa3dc9dbd5a7c33ee5165b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 15d54d139f086ce5bb025aaeab145c71d33903c0
+ms.sourcegitcommit: 3f0c1dcdcce25865d1a1022bcc5b9eec79f69025
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214947"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94381599"
 ---
 # <a name="value-classes-and-structs-ccx"></a>값 클래스 및 구조체(C++/CX)
 
@@ -52,7 +52,7 @@ ms.locfileid: "87214947"
 
 *값 클래스* 는 **`value struct`** 필드에 public 액세스 가능성이 명시적으로 부여 되어야 한다는 점을 제외 하 고와 동일 합니다. 키워드를 사용 하 여 선언 **`value class`** 됩니다.
 
-값 구조체 또는 값 클래스는 기본 숫자 형식, 열거형 클래스, `Platform::String^` 또는 [Platform: \<T> ^ : ibox](../cppcx/platform-ibox-interface.md) 만 필드로 포함할 수 있습니다. 여기서 T는 숫자 형식 또는 열거형 클래스 또는 값 클래스 또는 구조체입니다. `IBox<T>^`필드는 값을 가질 수 있습니다 **`nullptr`** .이는 c + +에서 *nullable 값 형식의*개념을 구현 하는 방법입니다.
+값 구조체 또는 값 클래스는 기본 숫자 형식, 열거형 클래스, `Platform::String^` 또는 [Platform: \<T> ^ : ibox](../cppcx/platform-ibox-interface.md) 만 필드로 포함할 수 있습니다. 여기서 T는 숫자 형식 또는 열거형 클래스 또는 값 클래스 또는 구조체입니다. `IBox<T>^`필드는 값을 가질 수 있습니다 **`nullptr`** .이는 c + +에서 *nullable 값 형식의* 개념을 구현 하는 방법입니다.
 
 `Platform::String^` 또는 `IBox<T>^` 형식을 멤버로 포함하는 값 클래스 또는 값 구조체는 `memcpy`할 수 없습니다.
 
@@ -64,7 +64,7 @@ ms.locfileid: "87214947"
 
 ## <a name="parameter-passing-for-value-types"></a>값 형식에 대해 전달되는 매개 변수
 
-값 형식을 함수 또는 메서드 매개 변수로 사용하는 경우 일반적으로 값으로 전달됩니다. 따라서 개체가 큰 경우 성능 문제가 발생할 수 있습니다. Visual Studio2013 이하 버전에서는 C++/CX의 값 형식이 항상 값으로 전달되었습니다. Visual Studio 2015 이상 버전에서는 값 형식을 참조 또는 값으로 전달할 수 있습니다.
+값 형식을 함수 또는 메서드 매개 변수로 사용하는 경우 일반적으로 값으로 전달됩니다. 따라서 개체가 큰 경우 성능 문제가 발생할 수 있습니다. Visual Studio 2013 및 이전 버전에서 c + +/CX의 값 형식은 항상 value로 전달 되었습니다. Visual Studio 2015 이상 버전에서는 값 형식을 참조 또는 값으로 전달할 수 있습니다.
 
 값 형식을 값으로 전달하는 매개 변수를 선언하려면 다음과 같은 코드를 사용하세요.
 
@@ -147,7 +147,7 @@ public:
 };
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [형식 시스템 (c + +/CX)](../cppcx/type-system-c-cx.md)<br/>
 [C + +/CX 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)<br/>
