@@ -9,12 +9,12 @@ f1_keywords:
 - iosfwd/std::streamsize
 - iosfwd/std::wios
 - iosfwd/std::wstreampos
-ms.openlocfilehash: 4af9636ab3317e7b81eb73dc74aef065b1287e21
-ms.sourcegitcommit: 3f0c1dcdcce25865d1a1022bcc5b9eec79f69025
+ms.openlocfilehash: b9dbed64c88a00f5ca065e23c4af2f3922634ece
+ms.sourcegitcommit: b38485bb3a9d479e0c5d64ffc3d841fa2c2b366f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94381638"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94441270"
 ---
 # <a name="ios-typedefs"></a>`<ios>` 형식 정의
 
@@ -58,7 +58,7 @@ typedef fpos<mbstate_t> streampos;
 
 형식은>의 동의어입니다 [`fpos`](../standard-library/fpos-class.md) <  `mbstate_t` .
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ios_streampos.cpp
@@ -73,7 +73,7 @@ int main( )
    ofstream x( "iostream.txt" );
    x << "testing";
    streampos y = x.tellp( );
-   cout << streamoff(y) << '\n';
+   cout << streamoff( y ) << '\n';
 }
 ```
 
@@ -97,7 +97,7 @@ int main( )
 
 이 형식은 다양한 스트림 작업과 관련된 요소의 개수를 저장할 수 있는 개체를 설명하는 부호 있는 정수입니다. 해당 표현에는 16개 이상의 비트가 있습니다. 스트림 내에서 임의 바이트 위치를 나타낼 만큼 충분히 크지는 않습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 다음 프로그램을 컴파일하고 실행 한 후 파일을 확인 하 여 `test.txt` 설정의 효과를 확인 `streamsize` 합니다.
 
@@ -155,7 +155,7 @@ int main( )
    wofstream xw( "wiostream.txt" );
    xw << L"testing";
    wstreampos y = xw.tellp( );
-   cout << y << endl;
+   cout << streamoff( y ) << '\n';
 }
 ```
 
