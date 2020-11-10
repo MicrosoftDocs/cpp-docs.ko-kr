@@ -3,30 +3,30 @@ title: Visual Studio에서 CMake 빌드 설정 사용자 지정
 ms.date: 08/20/2019
 helpviewer_keywords:
 - CMake build settings
-ms.openlocfilehash: c6bd1404799ccc9ad6b689646cd066849d48fca8
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 9fa1a21b26088482fb64441d0ccf0ad968bd480f
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81328687"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92919269"
 ---
 # <a name="customize-cmake-build-settings"></a>CMake 빌드 설정 사용자 지정
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
-Visual Studio 2019 이상에서는 **CMake 설정 편집기**를 사용하여 구성을 추가하고 설정을 사용자 지정할 수 있습니다. 이 편집기는 *CMakeSettings.json* 파일을 수동으로 편집할 필요가 없도록 도와주기 위해 개발된 대안이지만, 파일을 직접 편집하는 것을 선호하는 경우 편집기의 오른쪽 위에 있는 **JSON 편집** 링크를 클릭하면 됩니다.
+Visual Studio 2019 이상에서는 **CMake 설정 편집기** 를 사용하여 구성을 추가하고 설정을 사용자 지정할 수 있습니다. 이 편집기는 *CMakeSettings.json* 파일을 수동으로 편집할 필요가 없도록 도와주기 위해 개발된 대안이지만, 파일을 직접 편집하는 것을 선호하는 경우 편집기의 오른쪽 위에 있는 **JSON 편집** 링크를 클릭하면 됩니다.
 
-편집기를 열려면 주 도구 모음에서 **구성** 드롭다운을 클릭하고 **구성 관리**를 선택합니다.
+편집기를 열려면 주 도구 모음에서 **구성** 드롭다운을 클릭하고 **구성 관리** 를 선택합니다.
 
 ![CMake 구성 드롭다운](media/vs2019-cmake-manage-configurations.png)
 
-이제 왼쪽에 설치된 구성과 함께 **설정 편집기**가 보입니다.
+이제 왼쪽에 설치된 구성과 함께 **설정 편집기** 가 보입니다.
 
 ![CMake 설정 편집기](media/cmake-settings-editor.png)
 
 Visual Studio는 기본적으로 하나의 `x64-Debug` 구성을 제공합니다. 녹색 더하기 기호를 클릭하여 다른 구성을 추가할 수 있습니다. 편집기에 표시되는 설정은 선택한 구성에 따라 달라질 수 있습니다.
 
-편집기에서 선택하는 옵션은 *CMakeSettings.json*이라는 파일에 기록됩니다. 이 파일은 프로젝트를 빌드할 때 CMake로 전달되는 환경 변수 및 명령줄 인수를 제공합니다. Visual Studio는 절대로 *CMakeLists.txt* 파일을 자동으로 구성하지 않습니다. *CMakeSettings.json*을 사용하면 CMake 프로젝트 파일을 건들지 않고 Visual Studio를 통해 빌드를 사용자 지정할 수 있으므로 다른 팀원들이 각자 사용하는 도구로 이 파일을 사용할 수 있습니다.
+편집기에서 선택하는 옵션은 *CMakeSettings.json* 이라는 파일에 기록됩니다. 이 파일은 프로젝트를 빌드할 때 CMake로 전달되는 환경 변수 및 명령줄 인수를 제공합니다. Visual Studio는 절대로 *CMakeLists.txt* 파일을 자동으로 구성하지 않습니다. *CMakeSettings.json* 을 사용하면 CMake 프로젝트 파일을 건들지 않고 Visual Studio를 통해 빌드를 사용자 지정할 수 있으므로 다른 팀원들이 각자 사용하는 도구로 이 파일을 사용할 수 있습니다.
 
 ## <a name="cmake-general-settings"></a>CMake 일반 설정
 
@@ -42,7 +42,7 @@ Visual Studio는 기본적으로 하나의 `x64-Debug` 구성을 제공합니다
 
 ### <a name="toolset"></a>도구 집합
 
-**inheritedEnvironments** 설정에 해당합니다. 선택한 구성을 빌드하는 데 사용하는 컴파일러 환경을 정의합니다. 지원되는 값은 구성 형식에 따라 다릅니다. 사용자 지정 환경을 만들려면 설정 편집기의 오른쪽 위 모서리에서 **JSON 편집**을 선택하여 *CMakeSettings.json* 파일을 직접 편집합니다.
+**inheritedEnvironments** 설정에 해당합니다. 선택한 구성을 빌드하는 데 사용하는 컴파일러 환경을 정의합니다. 지원되는 값은 구성 형식에 따라 다릅니다. 사용자 지정 환경을 만들려면 설정 편집기의 오른쪽 위 모서리에서 **JSON 편집** 을 선택하여 *CMakeSettings.json* 파일을 직접 편집합니다.
 
 ### <a name="cmake-toolchain-file"></a>CMake 도구 체인 파일
 
@@ -50,7 +50,7 @@ Visual Studio는 기본적으로 하나의 `x64-Debug` 구성을 제공합니다
 
 ### <a name="build-root"></a>빌드 루트
 
-**buildRoot**에 해당합니다. [CMAKE_BINARY_DIR](https://cmake.org/cmake/help/v3.15/variable/CMAKE_BINARY_DIR.html)에 매핑되고 CMake 캐시를 만들 위치를 지정합니다. 지정된 폴더가 없으면 만들어집니다.
+**buildRoot** 에 해당합니다. [CMAKE_BINARY_DIR](https://cmake.org/cmake/help/v3.15/variable/CMAKE_BINARY_DIR.html)에 매핑되고 CMake 캐시를 만들 위치를 지정합니다. 지정된 폴더가 없으면 만들어집니다.
 
 ## <a name="command-arguments"></a>명령 인수
 
@@ -58,15 +58,15 @@ Visual Studio는 기본적으로 하나의 `x64-Debug` 구성을 제공합니다
 
 ### <a name="cmake-command-arguments"></a>CMake 명령 인수
 
-**cmakeCommandArgs**에 해당합니다. CMake.exe에 전달되는 추가 [명령줄 옵션](https://cmake.org/cmake/help/latest/manual/cmake.1.html)을 지정합니다.
+**cmakeCommandArgs** 에 해당합니다. CMake.exe에 전달되는 추가 [명령줄 옵션](https://cmake.org/cmake/help/latest/manual/cmake.1.html)을 지정합니다.
 
 ### <a name="build-command-arguments"></a>빌드 명령 인수
 
-**buildCommandArgs**에 해당합니다. 기본 빌드 시스템에 전달할 추가 스위치를 지정합니다. 예를 들어 Ninja 생성기를 사용하는 경우 `-v`를 전달하면 Ninja에서 명령줄을 출력하도록 강제합니다.
+**buildCommandArgs** 에 해당합니다. 기본 빌드 시스템에 전달할 추가 스위치를 지정합니다. 예를 들어 Ninja 생성기를 사용하는 경우 `-v`를 전달하면 Ninja에서 명령줄을 출력하도록 강제합니다.
 
 ### <a name="ctest-command-arguments"></a>CTest 명령 인수
 
-**ctestCommandArgs**에 해당합니다. 테스트 실행 시 CTest에 전달되는 추가 [명령줄 옵션](https://cmake.org/cmake/help/v3.15/manual/ctest.1.html)을 지정합니다.
+**ctestCommandArgs** 에 해당합니다. 테스트 실행 시 CTest에 전달되는 추가 [명령줄 옵션](https://cmake.org/cmake/help/v3.15/manual/ctest.1.html)을 지정합니다.
 
 ## <a name="general-settings-for-remote-builds"></a>원격 빌드의 일반 설정
 
@@ -78,15 +78,15 @@ Visual Studio는 기본적으로 하나의 `x64-Debug` 구성을 제공합니다
 
 ## <a name="cmake-variables-and-cache"></a>CMake 변수 및 캐시
 
-이러한 설정을 통해 CMake 변수를 설정하고 *CMakeSettings.json*에 저장할 수 있습니다. 빌드 시 CMake에 전달되고 *CMakeLists.txt* 파일에 있는 모든 값을 재정의합니다. CMakeGUI를 사용할 때와 똑같은 방식으로 이 섹션을 사용하여 편집에 사용 가능한 모든 CMake 변수 목록을 볼 수 있습니다. 고급 변수(CMakeGUI당)를 포함하여 편집에 사용 가능한 모든 CMake 변수 목록을 보려면 **저장하고 캐시 생성** 단추를 클릭합니다. 목록을 변수 이름으로 필터링할 수 있습니다.
+이러한 설정을 통해 CMake 변수를 설정하고 *CMakeSettings.json* 에 저장할 수 있습니다. 빌드 시 CMake에 전달되고 *CMakeLists.txt* 파일에 있는 모든 값을 재정의합니다. CMakeGUI를 사용할 때와 똑같은 방식으로 이 섹션을 사용하여 편집에 사용 가능한 모든 CMake 변수 목록을 볼 수 있습니다. 고급 변수(CMakeGUI당)를 포함하여 편집에 사용 가능한 모든 CMake 변수 목록을 보려면 **저장하고 캐시 생성** 단추를 클릭합니다. 목록을 변수 이름으로 필터링할 수 있습니다.
 
-**변수**에 해당합니다. **-D** *_이름_=_값_* 으로 CMake에 전달된 CMake 변수의 이름-값 쌍을 포함합니다. CMake 프로젝트 빌드 지침에서 CMake 캐시 파일에 변수를 직접 추가하도록 지정하는 경우 여기에 대신 추가하는 것이 좋습니다.
+**변수** 에 해당합니다. **-D** *_이름_=_값_* 으로 CMake에 전달된 CMake 변수의 이름-값 쌍을 포함합니다. CMake 프로젝트 빌드 지침에서 CMake 캐시 파일에 변수를 직접 추가하도록 지정하는 경우 여기에 대신 추가하는 것이 좋습니다.
 
 ## <a name="advanced-settings"></a>고급 설정
 
 ### <a name="cmake-generator"></a>CMake 생성기
 
-**생성기**에 해당합니다. CMake **-G** 스위치에 매핑되고 사용할 [CMake 생성기](https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html)를 지정합니다. 이 속성은 다른 속성 값을 구성할 때 매크로(`${generator}`)로 사용할 수도 있습니다. Visual Studio에서 현재 지원하는 CMake 생성기는 다음과 같습니다.
+**생성기** 에 해당합니다. CMake **-G** 스위치에 매핑되고 사용할 [CMake 생성기](https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html)를 지정합니다. 이 속성은 다른 속성 값을 구성할 때 매크로(`${generator}`)로 사용할 수도 있습니다. Visual Studio에서 현재 지원하는 CMake 생성기는 다음과 같습니다.
 
 - "Ninja"
 - "Unix 메이크파일"
@@ -130,7 +130,7 @@ CMake가 대상을 설치하는 원격 머신의 디렉터리입니다. [CMAKE_I
 
 ## <a name="directly-edit-cmakesettingsjson"></a>CMakeSettings.json 직접 편집
 
-*CMakeSettings.json*을 직접 편집하여 사용자 지정 구성을 만들 수도 있습니다. **설정 편집기**의 오른쪽 위에는 편집할 파일을 여는 **JSON 편집** 단추가 있습니다.
+*CMakeSettings.json* 을 직접 편집하여 사용자 지정 구성을 만들 수도 있습니다. **설정 편집기** 의 오른쪽 위에는 편집할 파일을 여는 **JSON 편집** 단추가 있습니다.
 
 다음 예제는 시작점으로 사용할 수 있는 샘플 구성을 보여줍니다.
 
@@ -158,9 +158,9 @@ JSON IntelliSense를 사용하면 *CMakeSettings.json* 파일을 편집할 수 �
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
-Visual Studio 2017은 CMake.exe를 호출하여 지정된 프로젝트에 대한 CMake 캐시를 만드는 방법을 정의하는 몇 가지 CMake 구성을 제공합니다. 새 구성을 추가하려면 도구 모음에서 구성 드롭다운을 클릭하고 **구성 관리**를 선택합니다.
+Visual Studio 2017은 CMake.exe를 호출하여 지정된 프로젝트에 대한 CMake 캐시를 만드는 방법을 정의하는 몇 가지 CMake 구성을 제공합니다. 새 구성을 추가하려면 도구 모음에서 구성 드롭다운을 클릭하고 **구성 관리** 를 선택합니다.
 
    ![CMake 구성 관리](media/cmake-manage-configurations.png)
 
@@ -170,13 +170,13 @@ Visual Studio 2017은 CMake.exe를 호출하여 지정된 프로젝트에 대한
 
 처음 구성을 선택하면 Visual Studio가 프로젝트의 루트 폴더에 *CMakeSettings.json* 파일을 만듭니다. 이 파일은 예를 들어 **정리** 작업 후에 CMake 캐시 파일을 다시 만드는 데 사용됩니다.
 
-추가 구성을 추가하려면 *CMakeSettings.json*을 마우스 오른쪽 단추로 클릭하고 **구성 추가**를 선택합니다.
+추가 구성을 추가하려면 *CMakeSettings.json* 을 마우스 오른쪽 단추로 클릭하고 **구성 추가** 를 선택합니다.
 
    ![CMake 구성 추가](media/cmake-add-configuration.png "CMake 구성 추가")
 
-**CMake 설정 편집기**를 사용하여 파일을 편집할 수도 있습니다. **솔루션 탐색기**에서 *CMakeSettings.json*을 마우스 오른쪽 단추로 클릭하고 **CMake 설정 편집**을 선택합니다. 또는 편집기 창 상단의 구성 드롭다운에서 **구성 관리**를 선택합니다.
+**CMake 설정 편집기** 를 사용하여 파일을 편집할 수도 있습니다. **솔루션 탐색기** 에서 *CMakeSettings.json* 을 마우스 오른쪽 단추로 클릭하고 **CMake 설정 편집** 을 선택합니다. 또는 편집기 창 상단의 구성 드롭다운에서 **구성 관리** 를 선택합니다.
 
-*CMakeSettings.json*을 직접 편집하여 사용자 지정 구성을 만들 수도 있습니다. 다음 예제는 시작점으로 사용할 수 있는 샘플 구성을 보여줍니다.
+*CMakeSettings.json* 을 직접 편집하여 사용자 지정 구성을 만들 수도 있습니다. 다음 예제는 시작점으로 사용할 수 있는 샘플 구성을 보여줍니다.
 
 ```json
     {

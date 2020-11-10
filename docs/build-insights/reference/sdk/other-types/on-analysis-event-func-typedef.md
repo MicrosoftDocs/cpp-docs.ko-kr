@@ -1,6 +1,6 @@
 ---
-title: 온분석이벤트펀크 타입데프
-description: C++ 빌드 인사이트 SDK OnAnalysisEventFunc 유형 def 참조.
+title: OnAnalysisEventFunc typedef
+description: C++ Build Insights SDK OnAnalysisEventFunc typedef 참조입니다.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: eacd174279caff0db22586d5e40d3a866afc4459
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
-ms.translationtype: MT
+ms.openlocfilehash: 069c89a01fa466e86986a821e5dd9d0b09f5c81a
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81329121"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92919789"
 ---
-# <a name="onanalysiseventfunc-typedef"></a>온분석이벤트펀크 타입데프
+# <a name="onanalysiseventfunc-typedef"></a>OnAnalysisEventFunc typedef
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
-C++ 빌드 인사이트 SDK는 Visual Studio 2017 이상과 호환됩니다. 이러한 버전에 대한 설명서를 보려면 이 문서의 Visual Studio **버전** 선택기 컨트롤을 Visual Studio 2017 또는 Visual Studio 2019로 설정합니다. 이 페이지의 목조 테이블 맨 위에 있습니다.
+C++ Build Insights SDK는 Visual Studio 2017 이상 버전과 호환됩니다. 이러한 버전에 대한 설명서를 보려면 이 문서에 대한 Visual Studio **버전** 선택기 컨트롤을 Visual Studio 2017 또는 Visual Studio 2019로 설정하세요. 이 페이지의 목차 맨 위에 있습니다.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-`OnAnalysisEventFunc` typedef는 [ANALYSIS_CALLBACKS](analysis-callbacks-struct.md) 구조에 사용되는 함수 시그니처 중 하나입니다.
+`OnAnalysisEventFunc` typedef는 [ANALYSIS_CALLBACKS](analysis-callbacks-struct.md) 구조체에서 사용되는 함수 서명 중 하나입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -37,14 +37,14 @@ typedef enum CALLBACK_CODE (BUILD_INSIGHTS_API *OnAnalysisEventFunc)(
 
 ### <a name="parameters"></a>매개 변수
 
-*이벤트 스택*\
-현재 이벤트의 이벤트 스택입니다. 이벤트 스택에 대한 자세한 내용은 [이벤트](../event-table.md)를 참조하십시오.
+*eventStack*\
+현재 이벤트의 이벤트 스택입니다. 이벤트 스택에 대한 자세한 내용은 [이벤트](../event-table.md)를 참조하세요.
 
-*콜백컨텍스트*\
-[ANALYSIS_DESCRIPTOR](analysis-descriptor-struct.md) 또는 [RELOG_DESCRIPTOR](relog-descriptor-struct.md)이 콜백에 대해 설정된 컨텍스트 값입니다.
+*callbackContext*\
+[ANALYSIS_DESCRIPTOR](analysis-descriptor-struct.md) 또는 [RELOG_DESCRIPTOR](relog-descriptor-struct.md)에서 이 콜백에 설정된 컨텍스트 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-다음에 발생할 CALLBACK_CODE [값을](callback-code-enum.md) 제어합니다.
+다음에 해야 하는 작업을 제어하는 [CALLBACK_CODE](callback-code-enum.md) 값입니다.
 
 ::: moniker-end

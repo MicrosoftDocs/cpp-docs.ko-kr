@@ -1,6 +1,6 @@
 ---
-title: 스톱트레이싱세션W
-description: C ++ 빌드 인사이트 SDK StopTracingSessionW 함수 참조.
+title: StopTracingSessionW
+description: C++ Build Insights SDK StopTracingSessionW 함수 참조입니다.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 6582e477ac6b13319ab5ab0f77295517548f7068
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
-ms.translationtype: MT
+ms.openlocfilehash: 116d76b83f93e126bcb5dfc0d3f9b76d45df89fe
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81323528"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92919945"
 ---
-# <a name="stoptracingsessionw"></a>스톱트레이싱세션W
+# <a name="stoptracingsessionw"></a>StopTracingSessionW
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
-C++ 빌드 인사이트 SDK는 Visual Studio 2017 이상과 호환됩니다. 이러한 버전에 대한 설명서를 보려면 이 문서의 Visual Studio **버전** 선택기 컨트롤을 Visual Studio 2017 또는 Visual Studio 2019로 설정합니다. 이 페이지의 목조 테이블 맨 위에 있습니다.
+C++ Build Insights SDK는 Visual Studio 2017 이상 버전과 호환됩니다. 이러한 버전에 대한 설명서를 보려면 이 문서에 대한 Visual Studio **버전** 선택기 컨트롤을 Visual Studio 2017 또는 Visual Studio 2019로 설정하세요. 이 페이지의 목차 맨 위에 있습니다.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-이 `StopTracingSessionW` 함수는 진행 중인 추적 세션을 중지하고 원시 추적 파일을 생성합니다. 원시 추적 파일은 [분석,](analyze.md) [AnalzeA](analyze-a.md)및 [AnalyzeW](analyze-w.md) 함수로 전달되어 분석 세션을 시작할 수 있습니다. 원시 추적 파일은 [Relog,](relog.md) [RelogA](relog-a.md)및 [RelogW](relog-w.md) 함수로 전달되어 세션 재로깅을 시작할 수도 있습니다. 실행 하기 호출 `StopTracingSessionW` 관리자 권한이 있어야 합니다.
+`StopTracingSessionW` 함수는 진행 중인 추적 세션을 중지하고 원시 추적 파일을 생성합니다. 원시 추적 파일을 [Analyze](analyze.md), [AnalzeA](analyze-a.md), [AnalyzeW](analyze-w.md) 함수에 전달하여 분석 세션을 시작할 수 있습니다. 원시 추적 파일을 [Relog](relog.md), [RelogA](relog-a.md), [RelogW](relog-w.md) 함수에 전달하여 다시 로깅 세션을 시작할 수도 있습니다. `StopTracingSessionW`를 호출하는 실행 파일에는 관리자 권한이 있어야 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -38,16 +38,16 @@ enum RESULT_CODE StopTracingSessionW(
 
 ### <a name="parameters"></a>매개 변수
 
-*세션 이름*\
-중지할 추적 세션의 이름입니다. [StartTracingSession,](start-tracing-session.md) [StartTracingSessionA](start-tracing-session-a.md)또는 [StartTracingSessionW에](start-tracing-session-w.md)전달된 세션 이름과 동일한 세션 이름을 사용합니다.
+*sessionName*\
+중지할 추적 세션의 이름입니다. [StartTracingSession](start-tracing-session.md), [StartTracingSessionA](start-tracing-session-a.md) 또는 [StartTracingSessionW](start-tracing-session-w.md)에 전달된 것과 동일한 세션 이름을 사용해야 합니다.
 
-*출력로그파일*\
-원시 추적을 저장해야 하는 최종 출력 로그 파일에 대한 경로입니다.
+*outputLogFile*\
+원시 추적을 저장해야 하는 최종 출력 로그 파일의 경로입니다.
 
-*통계*\
-[TRACING_SESSION_STATISTICS](../other-types/tracing-session-statistics-struct.md) 개체에 대한 포인터입니다. `StopTracingSessionW`반환하기 전에 이 개체에 추적 수집 통계를 씁니다.
+*statistics*\
+[TRACING_SESSION_STATISTICS](../other-types/tracing-session-statistics-struct.md) 개체에 대한 포인터입니다. `StopTracingSessionW`는 반환하기 전에 이 개체에 추적 컬렉션 통계를 씁니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 [RESULT_CODE](../other-types/result-code-enum.md) 열거형의 결과 코드입니다.
 
