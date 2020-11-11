@@ -1,7 +1,7 @@
 ---
 title: /permissive-(표준 준수)
 description: Microsoft c + +/permissive-(표준 준수) 컴파일러 옵션에 대 한 참조 가이드입니다.
-ms.date: 06/04/2020
+ms.date: 10/28/2020
 f1_keywords:
 - /permissive
 - VC.Project.VCCLCompilerTool.ConformanceMode
@@ -11,12 +11,12 @@ helpviewer_keywords:
 - Standards conformance compiler options
 - permissive compiler options [C++]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
-ms.openlocfilehash: 36861705acf0328af5c1207c3bf33a098fc3b348
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: ae4ab62f6027d984217d750294f16138a6969f16
+ms.sourcegitcommit: 25f6d52eb9e5d84bd0218c46372db85572af81da
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520553"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94448479"
 ---
 # <a name="permissive--standards-conformance"></a>/permissive-(표준 준수)
 
@@ -24,25 +24,28 @@ ms.locfileid: "87520553"
 
 ## <a name="syntax"></a>구문
 
-> **`/permissive-`**
+> **`/permissive-`**\
+> **`/permissive`**
 
 ## <a name="remarks"></a>설명
 
-이 옵션은 Visual Studio 2017 이상에서 지원 됩니다.
+**`/permissive-`** 이 옵션은 Visual Studio 2017 이상에서 지원 됩니다. **`/permissive`** 는 Visual Studio 2019 버전 16.8 이상에서 지원 됩니다.
 
-**`/permissive-`** 컴파일러 옵션을 사용 하 여 표준을 준수 하는 컴파일러 동작을 지정할 수 있습니다. 이 옵션은 관대 한 동작을 사용 하지 않도록 설정 하 고 [**`/Zc`**](zc-conformance.md) 엄격한 규칙에 대 한 컴파일러 옵션을 설정 합니다. IDE에서이 옵션을 사용 하면 IntelliSense 엔진에서 순응 하지 않는 코드에 밑줄이 표시 됩니다.
+**`/permissive-`** 컴파일러 옵션을 사용 하 여 표준을 준수 하는 컴파일러 동작을 지정할 수 있습니다. 이 옵션은 관대 한 동작을 사용 하지 않도록 설정 하 고 [`/Zc`](zc-conformance.md) 엄격한 규칙에 대 한 컴파일러 옵션을 설정 합니다. IDE에서이 옵션을 사용 하면 IntelliSense 엔진에서 순응 하지 않는 코드에 밑줄이 표시 됩니다.
+
+**`/permissive-`** 이 옵션은 현재 컴파일러 버전의 규칙 지원 기능을 사용 하 여 일치 하지 않는 언어 구문을 확인 합니다. 옵션은 코드가 특정 버전의 c + + 표준에 맞는지 확인 하지 않습니다. 최신 초안 표준에 대해 구현 된 모든 컴파일러 지원을 사용 하도록 설정 하려면 [`/std:c++latest`](std-specify-language-standard-version.md) 옵션을 사용 합니다. 현재 구현 된 c + + 17 표준에 대 한 컴파일러 지원을 제한 하려면 [`/std:c++17`](std-specify-language-standard-version.md) 옵션을 사용 합니다. 컴파일러 지원이 c + + 14 표준에 더 가깝게 일치 하도록 제한 하려면 [`/std:c++14`](std-specify-language-standard-version.md) 기본값 인 옵션을 사용 합니다.
+
+Visual Studio 2019 버전 16.8부터 **`/std:c++latest`** 옵션은 옵션을 암시적으로 설정 합니다 **`/permissive-`** . C + + 20 모듈 지원에 필요 합니다. 코드에 모듈 지원이 필요 하지는 않지만에서 사용 하도록 설정 된 다른 기능이 필요 **`/std:c++latest`** 합니다. 후행 대시가 없는 옵션을 사용 하 여 Microsoft 확장 지원을 명시적으로 사용 하도록 설정할 수 있습니다 **`/permissive`** .
 
 기본적으로 **`/permissive-`** 이 옵션은 Visual Studio 2017 버전 15.5 이상 버전에서 만든 새 프로젝트에 설정 되어 있습니다. 이전 버전에서는 기본적으로 설정 되어 있지 않습니다. 옵션이 설정 되 면 코드에서 비표준 언어 구문이 검색 될 때 컴파일러에서 진단 오류 또는 경고를 생성 합니다. 이러한 구문에는 C + + 11 이전 코드의 몇 가지 일반적인 버그가 포함 됩니다.
 
 **`/permissive-`** 이 옵션은 windows에서 10.0.16299.0 (소프트웨어 개발 키트) 또는 WDK (Windows 드라이버 키트)와 같은 최신 Windows 키트의 거의 모든 헤더 파일과 호환 됩니다. 이전 버전의 SDK는 **`/permissive-`** 다양 한 소스 코드 규칙의 이유로에서 컴파일되지 않을 수 있습니다. 컴파일러와 Sdk는 서로 다른 릴리스 타임 라인에서 제공 되므로 몇 가지 문제가 남아 있습니다. 특정 헤더 파일 문제에 대 한 자세한 내용은 아래의 [Windows 헤더 문제](#windows-header-issues) 를 참조 하세요.
 
-**`/permissive-`** 옵션은 [**`/Zc:referenceBinding`**](zc-referencebinding-enforce-reference-binding-rules.md) , [**`/Zc:strictStrings`**](zc-strictstrings-disable-string-literal-type-conversion.md) 및 옵션을 [**`/Zc:rvalueCast`**](zc-rvaluecast-enforce-type-conversion-rules.md) 준수 하는 동작으로 설정 합니다. 이러한 옵션은 기본적으로 순응 하지 않는 동작으로 설정 됩니다. **`/Zc`** 명령줄에서 특정 옵션을 전달 **`/permissive-`** 하 여이 동작을 재정의할 수 있습니다.
+**`/permissive-`** 옵션은 [`/Zc:referenceBinding`](zc-referencebinding-enforce-reference-binding-rules.md) , [`/Zc:strictStrings`](zc-strictstrings-disable-string-literal-type-conversion.md) 및 옵션을 [`/Zc:rvalueCast`](zc-rvaluecast-enforce-type-conversion-rules.md) 준수 하는 동작으로 설정 합니다. 이러한 옵션은 기본적으로 순응 하지 않는 동작으로 설정 됩니다. **`/Zc`** 명령줄에서 특정 옵션을 전달 **`/permissive-`** 하 여이 동작을 재정의할 수 있습니다.
 
-Visual Studio 2017 버전 15.3에서 시작 하는 컴파일러 버전에서는 옵션을 **`/permissive-`** 설정 합니다 [**`/Zc:ternary`**](zc-ternary.md) . 또한 컴파일러는 2 단계 이름 조회에 대 한 요구 사항을 추가로 구현 합니다. **`/permissive-`** 옵션이 설정 되 면 컴파일러는 함수와 클래스 템플릿 정의를 구문 분석 하 고 템플릿에 사용 되는 종속 및 종속 되지 않은 이름을 식별 합니다. 이 릴리스에서는 이름 종속성 분석만 수행 됩니다.
+Visual Studio 2017 버전 15.3에서 시작 하는 컴파일러 버전에서는 옵션을 **`/permissive-`** 설정 합니다 [`/Zc:ternary`](zc-ternary.md) . 또한 컴파일러는 2 단계 이름 조회에 대 한 요구 사항을 추가로 구현 합니다. **`/permissive-`** 옵션이 설정 되 면 컴파일러는 함수와 클래스 템플릿 정의를 구문 분석 하 고 템플릿에 사용 되는 종속 및 종속 되지 않은 이름을 식별 합니다. 이 릴리스에서는 이름 종속성 분석만 수행 됩니다.
 
 표준에서 구현까지 유지 하는 환경 관련 확장 및 언어 영역은의 영향을 받지 않습니다 **`/permissive-`** . 예를 들어 Microsoft 전용 **`__declspec`** 호출 규칙 및 구조적 예외 처리 키워드, 컴파일러 관련 pragma 지시문 또는 특성은 컴파일러가 모드에서 플래그 지정 되지 않습니다 **`/permissive-`** .
-
-**`/permissive-`** 이 옵션은 현재 컴파일러 버전의 규칙 지원 기능을 사용 하 여 일치 하지 않는 언어 구문을 확인 합니다. 옵션은 코드가 특정 버전의 c + + 표준에 맞는지 확인 하지 않습니다. 최신 초안 표준에 대해 구현 된 모든 컴파일러 지원을 사용 하도록 설정 하려면 [**`/std:c++latest`**](std-specify-language-standard-version.md) 옵션을 사용 합니다. 현재 구현 된 c + + 17 표준에 대 한 컴파일러 지원을 제한 하려면 [**`/std:c++17`**](std-specify-language-standard-version.md) 옵션을 사용 합니다. 컴파일러 지원이 c + + 14 표준에 더 가깝게 일치 하도록 제한 하려면 [**`/std:c++14`**](std-specify-language-standard-version.md) 기본값 인 옵션을 사용 합니다.
 
 모든 버전의 Visual Studio 2017에서 MSVC 컴파일러가 c + + 11, c + + 14 또는 c + + 17 표준을 준수 하는 코드를 지원 하지는 않습니다. Visual Studio의 버전에 따라 **`/permissive-`** 옵션은 2 단계 이름 조회의 일부 측면에서 문제를 검색 하지 못할 수 있습니다. 즉, 임시에 대 한 비 const 참조를 바인딩 하거나, 복사 init를 직접 init로 처리 하거나, 초기화에서 여러 사용자 정의 변환을 허용 하거나, 논리 연산자에 대 한 대체 토큰 및 기타 지원 되지 않는 규칙 영역을 지원 합니다. Visual C++의 규칙과 관련된 문제에 대한 자세한 내용은 [Nonstandard Behavior](../../cpp/nonstandard-behavior.md)을 참조하세요. 을 최대한 활용 하려면 **`/permissive-`** Visual Studio를 최신 버전으로 업데이트 하세요.
 
@@ -420,13 +423,13 @@ Windows 4 월 2018 업데이트 SDK (10.0.17134.0)에서 릴리스된 이러한 
 
 - Um/cellularapi_oem에 문제가 있습니다.
 
-   컴파일러 스위치를 사용 하는 경우 **`/permissive-`** 의 전방 선언으로 `enum UICCDATASTOREACCESSMODE` 인해 경고가 발생 합니다.
+   컴파일러 스위치를 사용 하는 경우 **`/permissive-`**  의 전방 선언으로 `enum UICCDATASTOREACCESSMODE` 인해 경고가 발생 합니다.
 
    ```cpp
    typedef enum UICCDATASTOREACCESSMODE UICCDATASTOREACCESSMODE; // C4471
    ```
 
-   범위가 없는 열거형의 전방 선언은 Microsoft 확장입니다. 이 문제를 해결 하려면 옵션 없이 cellularapi_oem를 포함 하는 파일을 컴파일하거나, 옵션을 사용 하 여 **`/permissive-`** [**`/wd`**](compiler-option-warning-level.md) 경고 C4471 합니다.
+   범위가 없는 열거형의 전방 선언은 Microsoft 확장입니다. 이 문제를 해결 하려면 옵션 없이 cellularapi_oem를 포함 하는 파일을 컴파일하거나, 옵션을 사용 하 여 **`/permissive-`** [`/wd`](compiler-option-warning-level.md) 경고 C4471 합니다.
 
 - Um/omscript .h의 문제
 
@@ -466,4 +469,4 @@ Visual Studio 2017 버전 15.5 이전 버전에서 다음 절차를 사용 합�
 ## <a name="see-also"></a>참조
 
 [MSVC 컴파일러 옵션](compiler-options.md)\
-[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)
+[MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)
