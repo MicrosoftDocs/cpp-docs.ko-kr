@@ -4,18 +4,18 @@ description: Visual Studio의 Microsoft C/C++ 컴파일러 및 도구에 있는 
 ms.date: 05/19/2020
 ms.technology: cpp-ide
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
-ms.openlocfilehash: c5e1f368060b650781c413a03e1bc2f9e368941a
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: db328a5806ecb3e48a934d65854c14d424e018f1
+ms.sourcegitcommit: 12eb6a824dd7187a065d44fceca4c410f58e121e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924841"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "94334171"
 ---
 # <a name="whats-new-for-c-in-visual-studio"></a>Visual Studio의 새로운 C++ 기능
 
 ::: moniker range=">=msvc-160"
 
-Visual Studio 2019에는 Microsoft C++ 환경에 대한 많은 업데이트와 수정이 포함되었습니다. 컴파일러 및 도구에서 많은 버그와 문제가 해결되었습니다. 이러한 문제는 대부분, 고객이 **피드백 보내기** 아래의 [문제 보고](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019&preserve-view=true) 및 [제안하기](https://developercommunity.visualstudio.com/spaces/62/index.html) 옵션을 통해 제출한 것입니다. 버그를 알려 주셔서 감사합니다. 모든 Visual Studio의 새로운 기능에 대한 자세한 내용은 [Visual Studio 2019의 새로운 기능](/visualstudio/ide/whats-new-visual-studio-2019)을 참조하세요. Visual Studio 2017의 새로운 C++ 기능에 대한 자세한 내용은 [Visual Studio 2017의 새로운 C++ 기능](?preserve-view=true&view=msvc-150)을 참조하세요. Visual Studio 2015 및 이전 버전의 새로운 C++ 기능에 대한 자세한 내용은 [Visual C++ 2003~2015의 새로운 기능](../porting/visual-cpp-what-s-new-2003-through-2015.md)을 참조하세요.
+Visual Studio 2019에는 Microsoft C++ 환경에 대한 많은 업데이트와 수정이 포함되었습니다. 컴파일러 및 도구에서 많은 버그와 문제가 해결되었습니다. 이러한 문제는 대부분, 고객이 **피드백 보내기** 아래의 [문제 보고](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019&preserve-view=true) 및 [제안하기](https://aka.ms/feedback/suggest?space=62) 옵션을 통해 제출한 것입니다. 버그를 알려 주셔서 감사합니다. 모든 Visual Studio의 새로운 기능에 대한 자세한 내용은 [Visual Studio 2019의 새로운 기능](/visualstudio/ide/whats-new-visual-studio-2019)을 참조하세요. Visual Studio 2017의 새로운 C++ 기능에 대한 자세한 내용은 [Visual Studio 2017의 새로운 C++ 기능](?preserve-view=true&view=msvc-150)을 참조하세요. Visual Studio 2015 및 이전 버전의 새로운 C++ 기능에 대한 자세한 내용은 [Visual C++ 2003~2015의 새로운 기능](../porting/visual-cpp-what-s-new-2003-through-2015.md)을 참조하세요.
 
 ## <a name="c-compiler"></a>C++ 컴파일러
 
