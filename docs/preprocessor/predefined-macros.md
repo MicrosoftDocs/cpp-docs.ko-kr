@@ -240,12 +240,12 @@ no-loc:
 - _WIN64
 - _WINRT_DLL
 - __func__
-ms.openlocfilehash: 85b467a0ac3db67b2715a849966618697437658b
-ms.sourcegitcommit: b492516cc65120250b9ea23f96f7f63f37f99fae
+ms.openlocfilehash: b5e2b34357456c4937d8ed17dee5661d36b7b0c0
+ms.sourcegitcommit: 25f6d52eb9e5d84bd0218c46372db85572af81da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075701"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94448466"
 ---
 # <a name="predefined-macros"></a>미리 정의된 매크로
 
@@ -271,25 +271,25 @@ MSVC는 ANSI/ISO C99, C11, C17 표준과 ISO C++14 및 C++17 표준에 필요한
 
 - `__cplusplus` 변환 단위가 C++로 컴파일되는 경우 정수 리터럴 값으로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
-- `__DATE__` 현재 소스 파일의 컴파일 날짜입니다. 날짜는 *Mmm dd yyyy* 형식의 상수 길이 문자열 리터럴입니다. 월 이름 *Mmm*은 CRT(C 런타임 라이브러리) [asctime](../c-runtime-library/reference/asctime-wasctime.md) 함수에서 생성된 약식 월 이름과 동일합니다. 값이 10 미만인 경우 날짜 *dd*의 첫 문자는 공백입니다. 이 매크로는 항상 정의됩니다.
+- `__DATE__` 현재 소스 파일의 컴파일 날짜입니다. 날짜는 *Mmm dd yyyy* 형식의 상수 길이 문자열 리터럴입니다. 월 이름 *Mmm* 은 CRT(C 런타임 라이브러리) [asctime](../c-runtime-library/reference/asctime-wasctime.md) 함수에서 생성된 약식 월 이름과 동일합니다. 값이 10 미만인 경우 날짜 *dd* 의 첫 문자는 공백입니다. 이 매크로는 항상 정의됩니다.
 
 - `__FILE__` 현재 소스 파일의 이름입니다. `__FILE__`는 문자열 리터럴로 확장됩니다. 파일의 전체 경로를 표시하려면 [ **`/FC`** (진단 소스 코드 파일의 전체 경로)](../build/reference/fc-full-path-of-source-code-file-in-diagnostics.md)를 사용합니다. 이 매크로는 항상 정의됩니다.
 
 - `__LINE__` 현재 소스 파일의 정수 줄 번호로 정의됩니다. `__LINE__` 매크로의 값은 `#line` 지시문을 사용하여 변경할 수 있습니다. 이 매크로는 항상 정의됩니다.
 
-- `__STDC__` C로 컴파일되고 [ **`/Za`** ](../build/reference/za-ze-disable-language-extensions.md) 컴파일러 옵션이 지정된 경우에만 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
+- `__STDC__` C로 컴파일되고  [`/Za`](../build/reference/za-ze-disable-language-extensions.md)  컴파일러 옵션이 지정된 경우에만 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
 - `__STDC_HOSTED__` 구현이 전체 필수 표준 라이브러리를 지원하는 ‘호스트된 구현’인 경우 1로 정의됩니다. 그 이외의 경우에는 0으로 정의됩니다.
 
-- `__STDC_NO_ATOMICS__` 구현이 선택적 표준 원자성을 지원하지 않는 경우 1로 정의됩니다. MSVC 구현은 C로 컴파일되고 [ **`/std`** ](../build/reference/std-specify-language-standard-version.md) C11 또는 C17 옵션 중 하나가 지정되는 경우 1로 정의됩니다.
+- `__STDC_NO_ATOMICS__` 구현이 선택적 표준 원자성을 지원하지 않는 경우 1로 정의됩니다. MSVC 구현은 C로 컴파일되고  [`/std`](../build/reference/std-specify-language-standard-version.md)  C11 또는 C17 옵션 중 하나가 지정되는 경우 1로 정의됩니다.
 
-- `__STDC_NO_COMPLEX__` 구현이 선택적 표준 복소수를 지원하지 않는 경우 1로 정의됩니다. MSVC 구현은 C로 컴파일되고 [ **`/std`** ](../build/reference/std-specify-language-standard-version.md) C11 또는 C17 옵션 중 하나가 지정되는 경우 1로 정의됩니다.
+- `__STDC_NO_COMPLEX__` 구현이 선택적 표준 복소수를 지원하지 않는 경우 1로 정의됩니다. MSVC 구현은 C로 컴파일되고  [`/std`](../build/reference/std-specify-language-standard-version.md)  C11 또는 C17 옵션 중 하나가 지정되는 경우 1로 정의됩니다.
 
-- `__STDC_NO_THREADS__` 구현이 선택적 표준 스레드를 지원하지 않는 경우 1로 정의됩니다. MSVC 구현은 C로 컴파일되고 [ **`/std`** ](../build/reference/std-specify-language-standard-version.md) C11 또는 C17 옵션 중 하나가 지정되는 경우 1로 정의됩니다.
+- `__STDC_NO_THREADS__` 구현이 선택적 표준 스레드를 지원하지 않는 경우 1로 정의됩니다. MSVC 구현은 C로 컴파일되고  [`/std`](../build/reference/std-specify-language-standard-version.md)  C11 또는 C17 옵션 중 하나가 지정되는 경우 1로 정의됩니다.
 
-- `__STDC_NO_VLA__` 구현이 표준 가변 길이 배열을 지원하지 않는 경우 1로 정의됩니다. MSVC 구현은 C로 컴파일되고 [ **`/std`** ](../build/reference/std-specify-language-standard-version.md) C11 또는 C17 옵션 중 하나가 지정되는 경우 1로 정의됩니다.
+- `__STDC_NO_VLA__` 구현이 표준 가변 길이 배열을 지원하지 않는 경우 1로 정의됩니다. MSVC 구현은 C로 컴파일되고  [`/std`](../build/reference/std-specify-language-standard-version.md)  C11 또는 C17 옵션 중 하나가 지정되는 경우 1로 정의됩니다.
 
-- `__STDC_VERSION__` C로 컴파일되고 **`/std`** C11 또는 C17 옵션 중 하나가 지정되는 경우 정의됩니다. `201112L`로 확장([ **`/std:c11`** ](../build/reference/std-specify-language-standard-version.md)의 경우)되거나 `201710L`로 확장([ **`/std:c17`** ](../build/reference/std-specify-language-standard-version.md)의 경우)됩니다.
+- `__STDC_VERSION__` C로 컴파일되고 **`/std`** C11 또는 C17 옵션 중 하나가 지정되는 경우 정의됩니다. `201112L`로 확장( [`/std:c11`](../build/reference/std-specify-language-standard-version.md) 의 경우)되거나 `201710L`로 확장( [`/std:c17` ](../build/reference/std-specify-language-standard-version.md)의 경우)됩니다.
 
 - `__STDCPP_THREADS__` 프로그램에 실행 스레드가 두 개 이상 포함될 수 있으며 C++로 컴파일되는 경우에만 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
@@ -299,25 +299,25 @@ MSVC는 ANSI/ISO C99, C11, C17 표준과 ISO C++14 및 C++17 표준에 필요한
 
 MSVC는 아래의 미리 정의된 매크로도 추가로 지원합니다.
 
-- `__ATOM__` [ **`/favor:ATOM`** ](../build/reference/favor-optimize-for-architecture-specifics.md) 컴파일러 옵션이 설정되고 컴파일러 대상이 x86 또는 x64인 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
+- `__ATOM__`  [`/favor:ATOM`](../build/reference/favor-optimize-for-architecture-specifics.md)  컴파일러 옵션이 설정되고 컴파일러 대상이 x86 또는 x64인 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
-- `__AVX__` [ **`/arch:AVX`** ](../build/reference/arch-x86.md), [ **`/arch:AVX2`** ](../build/reference/arch-x86.md) 또는 [ **`/arch:AVX512`** ](../build/reference/arch-x86.md) 컴파일러 옵션이 설정되고 컴파일러 대상이 x86 또는 x 64인 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
+- `__AVX__` [`/arch:AVX`](../build/reference/arch-x86.md), [`/arch:AVX2`](../build/reference/arch-x86.md) 또는 [`/arch:AVX512`](../build/reference/arch-x86.md) 컴파일러 옵션이 설정되고 컴파일러 대상이 x86 또는 x64인 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
-- `__AVX2__` [ **`/arch:AVX2`** ](../build/reference/arch-x86.md) 또는 [ **`/arch:AVX512`** ](../build/reference/arch-x86.md) 컴파일러 옵션이 설정되고 컴파일러 대상이 x86 또는 x64인 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
+- `__AVX2__`  [`/arch:AVX2`](../build/reference/arch-x86.md)  또는  [`/arch:AVX512` ](../build/reference/arch-x86.md) 컴파일러 옵션이 설정되고 컴파일러 대상이 x86 또는 x64인 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
-- `__AVX512BW__` [ **`/arch:AVX512`** ](../build/reference/arch-x86.md) 컴파일러 옵션이 설정되고 컴파일러 대상이 x86 또는 x64인 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
+- `__AVX512BW__`  [`/arch:AVX512`](../build/reference/arch-x86.md)  컴파일러 옵션이 설정되고 컴파일러 대상이 x86 또는 x64인 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
-- `__AVX512CD__` [ **`/arch:AVX512`** ](../build/reference/arch-x86.md) 컴파일러 옵션이 설정되고 컴파일러 대상이 x86 또는 x64인 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
+- `__AVX512CD__`  [`/arch:AVX512`](../build/reference/arch-x86.md)  컴파일러 옵션이 설정되고 컴파일러 대상이 x86 또는 x64인 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
-- `__AVX512DQ__` [ **`/arch:AVX512`** ](../build/reference/arch-x86.md) 컴파일러 옵션이 설정되고 컴파일러 대상이 x86 또는 x64인 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
+- `__AVX512DQ__`  [`/arch:AVX512`](../build/reference/arch-x86.md)  컴파일러 옵션이 설정되고 컴파일러 대상이 x86 또는 x64인 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
-- `__AVX512F__` [ **`/arch:AVX512`** ](../build/reference/arch-x86.md) 컴파일러 옵션이 설정되고 컴파일러 대상이 x86 또는 x64인 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
+- `__AVX512F__`  [`/arch:AVX512`](../build/reference/arch-x86.md)  컴파일러 옵션이 설정되고 컴파일러 대상이 x86 또는 x64인 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
-- `__AVX512VL__` [ **`/arch:AVX512`** ](../build/reference/arch-x86.md) 컴파일러 옵션이 설정되고 컴파일러 대상이 x86 또는 x64인 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
+- `__AVX512VL__`  [`/arch:AVX512`](../build/reference/arch-x86.md)  컴파일러 옵션이 설정되고 컴파일러 대상이 x86 또는 x64인 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
 - `_CHAR_UNSIGNED` 기본 **`char`** 형식이 부호 없는 형식인 경우 1로 정의됩니다. 이 값은 [ **`/J`** (부호 없는 기본 문자 형식)](../build/reference/j-default-char-type-is-unsigned.md) 컴파일러 옵션이 설정된 경우 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
-- `__CLR_VER` 앱을 컴파일하는 데 사용되는 CLR(공용 언어 런타임)의 버전을 나타내는 정수 리터럴로 정의됩니다. 값은 `Mmmbbbbb` 형식으로 인코딩됩니다. 여기서 `M`은 런타임의 주 버전이고, `mm`은 런타임의 부 버전이며, `bbbbb`는 빌드 번호입니다. `__CLR_VER`은 [ **`/clr`** ](../build/reference/clr-common-language-runtime-compilation.md) 컴파일러 옵션이 설정된 경우 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
+- `__CLR_VER` 앱을 컴파일하는 데 사용되는 CLR(공용 언어 런타임)의 버전을 나타내는 정수 리터럴로 정의됩니다. 값은 `Mmmbbbbb` 형식으로 인코딩됩니다. 여기서 `M`은 런타임의 주 버전이고, `mm`은 런타임의 부 버전이며, `bbbbb`는 빌드 번호입니다. `__CLR_VER`은  [`/clr`](../build/reference/clr-common-language-runtime-compilation.md)  컴파일러 옵션이 설정된 경우 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
     ```cpp
     // clr_ver.cpp
@@ -374,7 +374,7 @@ MSVC는 아래의 미리 정의된 매크로도 추가로 지원합니다.
     }
     ```
 
-- `__cplusplus_cli` C++로 컴파일되고 [ **`/clr`** ](../build/reference/clr-common-language-runtime-compilation.md) 컴파일러 옵션이 설정된 경우 정수 리터럴 값 200406으로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다. 정의되는 경우 `__cplusplus_cli`는 변환 단위 전체에 적용됩니다.
+- `__cplusplus_cli` C++로 컴파일되고  [`/clr`](../build/reference/clr-common-language-runtime-compilation.md)  컴파일러 옵션이 설정된 경우 정수 리터럴 값 200406으로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다. 정의되는 경우 `__cplusplus_cli`는 변환 단위 전체에 적용됩니다.
 
     ```cpp
     // cplusplus_cli.cpp
@@ -395,19 +395,19 @@ MSVC는 아래의 미리 정의된 매크로도 추가로 지원합니다.
 
 - `_CPPUNWIND` [ **`/GX`** (예외 처리 사용)](../build/reference/gx-enable-exception-handling.md), [ **`/clr`** (공용 언어 런타임 컴파일)](../build/reference/clr-common-language-runtime-compilation.md) 또는 [ **`/EH`** (예외 처리 모델)](../build/reference/eh-exception-handling-model.md) 컴파일러 옵션 중 하나 이상이 설정된 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
-- `_DEBUG` [ **`/LDd`** ](../build/reference/md-mt-ld-use-run-time-library.md), [ **`/MDd`** ](../build/reference/md-mt-ld-use-run-time-library.md), 또는 [ **`/MTd`** ](../build/reference/md-mt-ld-use-run-time-library.md) 컴파일러 옵션이 설정된 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
+- `_DEBUG` [`/LDd`](../build/reference/md-mt-ld-use-run-time-library.md), [`/MDd`](../build/reference/md-mt-ld-use-run-time-library.md) 또는 [`/MTd`](../build/reference/md-mt-ld-use-run-time-library.md) 컴파일러 옵션이 설정된 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
-- `_DLL` [ **`/MD`** ](../build/reference/md-mt-ld-use-run-time-library.md) 또는 [ **`/MDd`** ](../build/reference/md-mt-ld-use-run-time-library.md)(다중 스레드 DLL) 컴파일러 옵션이 설정된 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
+- `_DLL`  [`/MD`](../build/reference/md-mt-ld-use-run-time-library.md)  또는  [`/MDd` ](../build/reference/md-mt-ld-use-run-time-library.md)(다중 스레드 DLL) 컴파일러 옵션이 설정된 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
-- `__FUNCDNAME__` 바깥쪽 함수의 [데코레이팅된 이름](../build/reference/decorated-names.md)이 포함된 문자열 리터럴로 정의됩니다. 이 매크로는 함수 내에서만 정의됩니다. [ **`/EP`** ](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) 또는 [ **`/P`** ](../build/reference/p-preprocess-to-a-file.md) 컴파일러 옵션을 사용하는 경우 `__FUNCDNAME__` 매크로가 확장되지 않습니다.
+- `__FUNCDNAME__` 바깥쪽 함수의 [데코레이팅된 이름](../build/reference/decorated-names.md)이 포함된 문자열 리터럴로 정의됩니다. 이 매크로는 함수 내에서만 정의됩니다.  [`/EP`](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md)  또는  [`/P` ](../build/reference/p-preprocess-to-a-file.md) 컴파일러 옵션을 사용하는 경우 `__FUNCDNAME__` 매크로가 확장되지 않습니다.
 
    다음 예제에서는 `__FUNCDNAME__`, `__FUNCSIG__` 및 `__FUNCTION__` 매크로를 사용하여 함수 정보를 표시합니다.
 
    [!code-cpp[NVC_Predefined_Macros_Examples#1](../preprocessor/codesnippet/CPP/predefined-macros_1.cpp)]
 
-- `__FUNCSIG__` 바깥쪽 함수의 시그니처가 포함된 문자열 리터럴로 정의됩니다. 이 매크로는 함수 내에서만 정의됩니다. [ **`/EP`** ](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) 또는 [ **`/P`** ](../build/reference/p-preprocess-to-a-file.md) 컴파일러 옵션을 사용하는 경우 `__FUNCSIG__` 매크로가 확장되지 않습니다. 64비트 대상에 대해 컴파일되는 경우 호출 규칙은 기본적으로 **`__cdecl`** 입니다. 사용 예제는 `__FUNCDNAME__` 매크로를 참조하세요.
+- `__FUNCSIG__` 바깥쪽 함수의 시그니처가 포함된 문자열 리터럴로 정의됩니다. 이 매크로는 함수 내에서만 정의됩니다.  [`/EP`](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md)  또는  [`/P` ](../build/reference/p-preprocess-to-a-file.md) 컴파일러 옵션을 사용하는 경우 `__FUNCSIG__` 매크로가 확장되지 않습니다. 64비트 대상에 대해 컴파일되는 경우 호출 규칙은 기본적으로 **`__cdecl`** 입니다. 사용 예제는 `__FUNCDNAME__` 매크로를 참조하세요.
 
-- `__FUNCTION__` 바깥쪽 함수의 데코레이트되지 않은 이름이 포함된 문자열 리터럴로 정의됩니다. 이 매크로는 함수 내에서만 정의됩니다. [ **`/EP`** ](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) 또는 [ **`/P`** ](../build/reference/p-preprocess-to-a-file.md) 컴파일러 옵션을 사용하는 경우 `__FUNCTION__` 매크로가 확장되지 않습니다. 사용 예제는 `__FUNCDNAME__` 매크로를 참조하세요.
+- `__FUNCTION__` 바깥쪽 함수의 데코레이트되지 않은 이름이 포함된 문자열 리터럴로 정의됩니다. 이 매크로는 함수 내에서만 정의됩니다.  [`/EP`](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md)  또는  [`/P` ](../build/reference/p-preprocess-to-a-file.md) 컴파일러 옵션을 사용하는 경우 `__FUNCTION__` 매크로가 확장되지 않습니다. 사용 예제는 `__FUNCDNAME__` 매크로를 참조하세요.
 
 - `_INTEGRAL_MAX_BITS` 벡터가 아닌 정수 형식의 최대 크기(비트 단위)인 정수 리터럴 값 64로 정의됩니다. 이 매크로는 항상 정의됩니다.
 
@@ -421,7 +421,7 @@ MSVC는 아래의 미리 정의된 매크로도 추가로 지원합니다.
 
 - `__INTELLISENSE__` Visual Studio IDE에서 IntelliSense 컴파일러가 전달하는 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다. 이 매크로는 IntelliSense 컴파일러가 이해하지 못하는 코드를 보호하는 데 사용하거나 해당 빌드와 IntelliSense 컴파일러 간에 전환하는 데 사용할 수 있습니다. 자세한 내용은 [Troubleshooting Tips for IntelliSense Slowness](https://devblogs.microsoft.com/cppblog/troubleshooting-tips-for-intellisense-slowness/)(IntelliSense 속도 저하 문제 해결 팁)를 참조하세요.
 
-- `_ISO_VOLATILE` [ **`/volatile:iso`** ](../build/reference/volatile-volatile-keyword-interpretation.md) 컴파일러 옵션이 설정된 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
+- `_ISO_VOLATILE`  [`/volatile:iso`](../build/reference/volatile-volatile-keyword-interpretation.md)  컴파일러 옵션이 설정된 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
 - `_KERNEL_MODE` [ **`/kernel`** (커널 모드 이진 만들기)](../build/reference/kernel-create-kernel-mode-binary.md) 컴파일러 옵션이 설정된 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
@@ -429,9 +429,9 @@ MSVC는 아래의 미리 정의된 매크로도 추가로 지원합니다.
 
 - `_M_ARM` ARM 프로세서를 대상으로 하는 컴파일의 경우 정수 리터럴 값 7로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
-- `_M_ARM_ARMV7VE` ARM 프로세서를 대상으로 하는 컴파일에 대해 [ **`/arch:ARMv7VE`** ](../build/reference/arch-arm.md) 컴파일러 옵션이 설정된 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
+- `_M_ARM_ARMV7VE` ARM 프로세서를 대상으로 하는 컴파일에 대해  [`/arch:ARMv7VE`](../build/reference/arch-arm.md)  컴파일러 옵션이 설정된 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
-- `_M_ARM_FP` ARM 프로세서 대상의 경우 설정된 [ **`/arch`** ](../build/reference/arch-arm.md) 컴파일러 옵션을 나타내는 정수 리터럴 값으로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
+- `_M_ARM_FP` ARM 프로세서 대상의 경우 설정된  [`/arch`](../build/reference/arch-arm.md)  컴파일러 옵션을 나타내는 정수 리터럴 값으로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
   - **`/arch`** ARM 옵션이 지정되지 않아 ARM의 기본 아키텍처(`VFPv3`)가 설정되었음을 나타내는 경우 30~39 범위의 값입니다.
 
@@ -443,21 +443,21 @@ MSVC는 아래의 미리 정의된 매크로도 추가로 지원합니다.
 
 - `_M_CEE` [ **`/clr`** (공용 언어 런타임 컴파일)](../build/reference/clr-common-language-runtime-compilation.md) 컴파일러 옵션이 설정된 경우 001로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
-- `_M_CEE_PURE` Visual Studio 2015부터는 사용되지 않습니다. [ **`/clr:pure`** ](../build/reference/clr-common-language-runtime-compilation.md) 컴파일러 옵션이 설정된 경우 001로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
+- `_M_CEE_PURE` Visual Studio 2015부터는 사용되지 않습니다.  [`/clr:pure`](../build/reference/clr-common-language-runtime-compilation.md)  컴파일러 옵션이 설정된 경우 001로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
-- `_M_CEE_SAFE` Visual Studio 2015부터는 사용되지 않습니다. [ **`/clr:safe`** ](../build/reference/clr-common-language-runtime-compilation.md) 컴파일러 옵션이 설정된 경우 001로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
+- `_M_CEE_SAFE` Visual Studio 2015부터는 사용되지 않습니다.  [`/clr:safe`](../build/reference/clr-common-language-runtime-compilation.md)  컴파일러 옵션이 설정된 경우 001로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
-- `_M_FP_EXCEPT` [ **`/fp:except`** ](../build/reference/fp-specify-floating-point-behavior.md) 또는 [ **`/fp:strict`** ](../build/reference/fp-specify-floating-point-behavior.md) 컴파일러 옵션이 설정된 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
+- `_M_FP_EXCEPT`  [`/fp:except`](../build/reference/fp-specify-floating-point-behavior.md)  또는  [`/fp:strict` ](../build/reference/fp-specify-floating-point-behavior.md) 컴파일러 옵션이 설정된 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
-- `_M_FP_FAST` [ **`/fp:fast`** ](../build/reference/fp-specify-floating-point-behavior.md) 컴파일러 옵션이 설정된 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
+- `_M_FP_FAST`  [`/fp:fast`](../build/reference/fp-specify-floating-point-behavior.md)  컴파일러 옵션이 설정된 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
-- `_M_FP_PRECISE` [ **`/fp:precise`** ](../build/reference/fp-specify-floating-point-behavior.md) 컴파일러 옵션이 설정된 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
+- `_M_FP_PRECISE`  [`/fp:precise`](../build/reference/fp-specify-floating-point-behavior.md)  컴파일러 옵션이 설정된 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
-- `_M_FP_STRICT` [ **`/fp:strict`** ](../build/reference/fp-specify-floating-point-behavior.md) 컴파일러 옵션이 설정된 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
+- `_M_FP_STRICT`  [`/fp:strict`](../build/reference/fp-specify-floating-point-behavior.md)  컴파일러 옵션이 설정된 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
 - `_M_IX86` x86 프로세서를 대상으로 하는 컴파일의 경우 정수 리터럴 값 600으로 정의됩니다. x64 또는 ARM 컴파일 대상의 경우 이 매크로가 정의되지 않습니다.
 
-- `_M_IX86_FP` 설정된 [ **`/arch`** ](../build/reference/arch-arm.md) 컴파일러 옵션 또는 기본값을 나타내는 정수 리터럴 값으로 정의됩니다. 컴파일 대상이 x86 프로세서인 경우 이 매크로는 항상 정의됩니다. 그 이외의 경우에는 정의되지 않습니다. 정의되는 경우 값은 다음과 같습니다.
+- `_M_IX86_FP` 설정된  [`/arch`](../build/reference/arch-arm.md)  컴파일러 옵션 또는 기본값을 나타내는 정수 리터럴 값으로 정의됩니다. 컴파일 대상이 x86 프로세서인 경우 이 매크로는 항상 정의됩니다. 그 이외의 경우에는 정의되지 않습니다. 정의되는 경우 값은 다음과 같습니다.
 
   - `/arch:IA32` 컴파일러 옵션이 설정된 경우 0입니다.
 
@@ -469,7 +469,7 @@ MSVC는 아래의 미리 정의된 매크로도 추가로 지원합니다.
 
 - `_M_X64` x64 프로세서를 대상으로 하는 컴파일의 경우 정수 리터럴 값 100으로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
-- `_MANAGED` [ **`/clr`** ](../build/reference/clr-common-language-runtime-compilation.md) 컴파일러 옵션이 설정된 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
+- `_MANAGED`  [`/clr`](../build/reference/clr-common-language-runtime-compilation.md)  컴파일러 옵션이 설정된 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
 - `_MSC_BUILD` 컴파일러 버전 번호의 수정 번호 요소가 포함된 정수 리터럴로 정의됩니다. 수정 번호는 마침표로 구분된 버전 번호의 네 번째 요소입니다. 예를 들어 Microsoft C/C++ 컴파일러의 버전 번호가 15.00.20706.01인 경우 `_MSC_BUILD` 매크로를 실행하면 1이 나옵니다. 이 매크로는 항상 정의됩니다.
 
@@ -521,11 +521,11 @@ MSVC는 아래의 미리 정의된 매크로도 추가로 지원합니다.
 
    자세한 내용은 Microsoft C++ 팀 블로그의 [Visual C++ Compiler Version](https://devblogs.microsoft.com/cppblog/visual-c-compiler-version/)(Visual C++ 컴파일러 버전)을 참조하세요.
 
-- `_MSVC_LANG` 컴파일러가 대상으로 하는 C++ 언어 표준을 지정하는 정수 리터럴로 정의됩니다. C++로 컴파일되는 코드에서만 설정됩니다. 기본적으로 또는 [ **`/std:c++14`** ](../build/reference/std-specify-language-standard-version.md) 컴파일러 옵션이 지정된 경우 이 매크로는 정수 리터럴 값 201402L입니다. [ **`/std:c++17`** ](../build/reference/std-specify-language-standard-version.md) 컴파일러 옵션이 지정된 경우 매크로가 201703L로 설정됩니다. [ **`/std:c++latest`** ](../build/reference/std-specify-language-standard-version.md) 옵션이 지정된 경우 지정되지 않은 더 높은 값으로 설정됩니다. 그 이외의 경우에는 매크로가 정의되지 않습니다. Visual Studio 2015 업데이트 3부터 `_MSVC_LANG` 매크로 및 [ **`/std`** (언어 표준 버전 지정)](../build/reference/std-specify-language-standard-version.md) 컴파일러 옵션을 사용할 수 있습니다.
+- `_MSVC_LANG` 컴파일러가 대상으로 하는 C++ 언어 표준을 지정하는 정수 리터럴로 정의됩니다. C++로 컴파일되는 코드에서만 설정됩니다. 기본적으로 또는  [`/std:c++14`](../build/reference/std-specify-language-standard-version.md)  컴파일러 옵션이 지정된 경우 이 매크로는 정수 리터럴 값 201402L입니다.  [`/std:c++17`](../build/reference/std-specify-language-standard-version.md)  컴파일러 옵션이 지정된 경우 매크로가 201703L로 설정됩니다.  [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md)  옵션이 지정된 경우 지정되지 않은 더 높은 값으로 설정됩니다. 그 이외의 경우에는 매크로가 정의되지 않습니다. Visual Studio 2015 업데이트 3부터 `_MSVC_LANG` 매크로 및 [ **`/std`** (언어 표준 버전 지정)](../build/reference/std-specify-language-standard-version.md) 컴파일러 옵션을 사용할 수 있습니다.
 
-- `__MSVC_RUNTIME_CHECKS` [ **`/RTC`** ](../build/reference/rtc-run-time-error-checks.md) 컴파일러 옵션 중 하나가 설정된 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
+- `__MSVC_RUNTIME_CHECKS`  [`/RTC`](../build/reference/rtc-run-time-error-checks.md)  컴파일러 옵션 중 하나가 설정된 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
-- `_MSVC_TRADITIONAL` 전처리기 규칙 모드 [ **`/experimental:preprocessor`** ](../build/reference/experimental-preprocessor.md) 컴파일러 옵션이 설정된 경우 0으로 정의됩니다. 기본적으로 또는 [ **`/experimental:preprocessor-`** ](../build/reference/experimental-preprocessor.md) 컴파일러 옵션이 설정된 경우 기존 전처리기가 사용 중임을 나타내도록 1로 정의됩니다. `_MSVC_TRADITIONAL` 매크로 및 [ **`/experimental:preprocessor`** (전처리기 적합성 모드 사용)](../build/reference/experimental-preprocessor.md) 컴파일러 옵션은 Visual Studio 2017 버전 15.8부터 사용할 수 있습니다.
+- `_MSVC_TRADITIONAL` 전처리기 규칙 모드  [`/experimental:preprocessor`](../build/reference/experimental-preprocessor.md)  컴파일러 옵션이 설정된 경우 0으로 정의됩니다. 기본적으로 또는  [`/experimental:preprocessor-`](../build/reference/experimental-preprocessor.md)  컴파일러 옵션이 설정된 경우 기존 전처리기가 사용 중임을 나타내도록 1로 정의됩니다. `_MSVC_TRADITIONAL` 매크로 및 [ **`/experimental:preprocessor`** (전처리기 적합성 모드 사용)](../build/reference/experimental-preprocessor.md) 컴파일러 옵션은 Visual Studio 2017 버전 15.8부터 사용할 수 있습니다.
 
    ```cpp
    #if defined(_MSVC_TRADITIONAL) && _MSVC_TRADITIONAL
@@ -537,7 +537,7 @@ MSVC는 아래의 미리 정의된 매크로도 추가로 지원합니다.
 
 - `_MT` [ **`/MD`** 또는 **`/MDd`** (다중 스레드 DLL)](../build/reference/md-mt-ld-use-run-time-library.md) 또는 [ **`/MT`** 또는 **`/MTd`** (다중 스레드)](../build/reference/md-mt-ld-use-run-time-library.md)가 지정된 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
-- `_NATIVE_WCHAR_T_DEFINED` [ **`/Zc:wchar_t`** ](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) 컴파일러 옵션이 설정된 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
+- `_NATIVE_WCHAR_T_DEFINED`  [`/Zc:wchar_t`](../build/reference/zc-wchar-t-wchar-t-is-native-type.md)  컴파일러 옵션이 설정된 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
 - `_OPENMP` [ **`/openmp`** (OpenMP 2.0 지원 활성화)](../build/reference/openmp-enable-openmp-2-0-support.md) 컴파일러 옵션이 설정된 경우 정수 리터럴 200203으로 정의됩니다. 이 값은 MSVC에 의해 구현된 OpenMP 사양의 날짜를 나타냅니다. 그 이외의 경우에는 정의되지 않습니다.
 
@@ -550,19 +550,19 @@ MSVC는 아래의 미리 정의된 매크로도 추가로 지원합니다.
    }
    ```
 
-- `_PREFAST_` [ **`/analyze`** ](../build/reference/analyze-code-analysis.md) 컴파일러 옵션이 설정된 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
+- `_PREFAST_`  [`/analyze`](../build/reference/analyze-code-analysis.md)  컴파일러 옵션이 설정된 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
 - `__TIMESTAMP__` 현재 소스 파일의 마지막 수정 날짜 및 시간이 포함되어 있으며 CRT [`asctime`](../c-runtime-library/reference/asctime-wasctime.md) 함수에서 반환하는 약식 상수 길이 형식의 문자열 리터럴(예: `Fri 19 Aug 13:32:58 2016`)로 정의됩니다. 이 매크로는 항상 정의됩니다.
 
 - `_VC_NODEFAULTLIB` [ **`/Zl`** (기본 라이브러리 이름 생략)](../build/reference/zl-omit-default-library-name.md) 컴파일러 옵션이 설정된 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
-- `_WCHAR_T_DEFINED` 기본 [ **`/Zc:wchar_t`** ](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) 컴파일러 옵션이 설정된 경우 1로 정의됩니다. `_WCHAR_T_DEFINED` 매크로가 정의되어 있어도 **`/Zc:wchar_t-`** 컴파일러 옵션이 설정된 경우 값을 포함하지 않으므로 **`wchar_t`** 는 프로젝트에 포함된 시스템 헤더 파일에 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
+- `_WCHAR_T_DEFINED` 기본  [`/Zc:wchar_t`](../build/reference/zc-wchar-t-wchar-t-is-native-type.md)  컴파일러 옵션이 설정된 경우 1로 정의됩니다. `_WCHAR_T_DEFINED` 매크로가 정의되어 있어도 **`/Zc:wchar_t-`** 컴파일러 옵션이 설정된 경우 값을 포함하지 않으므로 **`wchar_t`** 는 프로젝트에 포함된 시스템 헤더 파일에 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
 - `_WIN32` 컴파일 대상이 32비트 ARM, 64비트 ARM, x86 또는 x64인 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
 - `_WIN64` 컴파일 대상이 64비트 ARM 또는 x64인 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
-- `_WINRT_DLL` C++로 컴파일되고 [ **`/ZW`** (Windows 런타임 컴파일)](../build/reference/zw-windows-runtime-compilation.md) 컴파일러 옵션과 [ **`/LD`** 또는 **`/LDd`** ](../build/reference/md-mt-ld-use-run-time-library.md) 컴파일러 옵션이 둘 다 설정된 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
+- `_WINRT_DLL` C++로 컴파일되고 [ **`/ZW`** (Windows 런타임 컴파일)](../build/reference/zw-windows-runtime-compilation.md) 컴파일러 옵션과 [ **`/LD`** 또는 **`/LDd`**](../build/reference/md-mt-ld-use-run-time-library.md) 컴파일러 옵션이 둘 다 설정된 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
 ATL 또는 MFC 라이브러리 버전을 식별하는 전처리기 매크로는 컴파일러에 미리 정의되어 있지 않습니다. ATL 및 MFC 라이브러리 헤더는 내부적으로 이러한 버전 매크로를 정의합니다. 필요한 헤더가 포함되기 전에 만들어진 전처리기 지시문에서는 해당 매크로가 정의되지 않습니다.
 
