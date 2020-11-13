@@ -59,7 +59,7 @@
       ],
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/cpp-docs.ko-kr",
-      "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/62/index.html",
+      "feedback_product_url": "https://aka.ms/feedback/report?space=62",
       "disable_contribution_on_translation_quality": [
         "MT",
         "MTE75",
