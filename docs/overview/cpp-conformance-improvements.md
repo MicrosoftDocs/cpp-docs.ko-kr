@@ -1,14 +1,14 @@
 ---
 title: C++ 규칙 향상
-ms.date: 08/04/2020
 description: Visual Studio의 Microsoft C++는 C++20 언어 표준을 완전하게 준수하기 위해 점점 향상되고 있습니다.
+ms.date: 11/10/2020
 ms.technology: cpp-language
-ms.openlocfilehash: fc88406a3d2e291d06e01c3e92261b8dfc624ced
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: ff4d75626b75c55e001601ef7005bc23be60869d
+ms.sourcegitcommit: 25f6d52eb9e5d84bd0218c46372db85572af81da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92921427"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94448492"
 ---
 # <a name="c-conformance-improvements-in-visual-studio"></a>Visual Studio의 C++ 규칙 향상
 
@@ -341,7 +341,7 @@ std::equal(std::begin(a), std::end(a), std::begin(b), std::end(b));
 
 ### <a name="effect-of-defining-spaceship-operator-on--and-"></a>우주선 연산자 정의가 `==` 및 `!=`에 미치는 영향
 
-우주선 연산자가 **`= default`** 로 표시되지 않는 한 우주선 연산자 정의( **`<=>`** )만으로는 더 이상 **`==`** 또는 **`!=`** 을 포함하는 식을 다시 생성하지 않습니다( [P1185R2](https://wg21.link/p1185r2)). 다음 예제는 Visual Studio 2019 RTW 및 버전 16.1에서 컴파일되지만 Visual Studio 2019 버전 16.2에서 C2678을 생성합니다.
+우주선 연산자가 **`= default`** 로 표시되지 않는 한 우주선 연산자 정의( **`<=>`** )만으로는 더 이상 **`==`** 또는 **`!=`** 을 포함하는 식을 다시 생성하지 않습니다([P1185R2](https://wg21.link/p1185r2)). 다음 예제는 Visual Studio 2019 RTW 및 버전 16.1에서 컴파일되지만 Visual Studio 2019 버전 16.2에서 C2678을 생성합니다.
 
 ```cpp
 #include <compare>
@@ -1154,6 +1154,338 @@ void f() {
     B b2[1]; // OK: calls default ctor for each array element
 }
 ```
+
+## <a name="conformance-improvements-in-visual-studio-2019-version-168"></a><a name="improvements_168"></a> Visual Studio 2019 버전 16.8의 규칙 개선
+
+### <a name="class-rvalue-used-as-lvalue-extension"></a>'rvalue 클래스를 lvalue로 사용' 확장
+
+MSVC에는 rvalue 클래스를 lvalue로 사용할 수 있도록 하는 확장이 있습니다. 확장은 클래스 rvalue의 수명을 연장하지 않으며, 런타임에 정의되지 않은 동작이 발생할 수 있습니다. 이제는 표준 규칙을 적용하고 **`/permissive-`** 에서 이 확장을 허용하지 않습니다.
+**`/permissive-`** 를 아직 사용할 수 없는 경우 **`/we4238`** 을 사용하여 확장을 명시적으로 허용하지 않을 수 있습니다. 예를 들면 다음과 같습니다.
+
+```cpp
+// Compiling with /permissive- now gives:
+// error C2102: '&' requires l-value
+struct S {};
+
+S f();
+
+void g()
+{
+    auto p1 = &(f()); // The temporary returned by 'f' is destructed after this statement. So 'p1' points to an invalid object.
+
+    const auto &r = f(); // This extends the lifetime of the temporary returned by 'f'
+    auto p2 = &r; // 'p2' points to a valid object
+}
+```
+
+### <a name="explicit-specialization-in-non-namespace-scope-extension"></a>'비네임스페이스 범위에서 명시적 특수화' 확장
+
+MSVC에는 비네임스페이스 범위에서 명시적 특수화를 허용하는 확장이 있었습니다. 이제 이 확장은 CWG 727 해결 후 표준의 일부입니다. 하지만 동작의 차이가 있습니다. 표준에 맞게 컴파일러의 동작을 조정했습니다.
+
+```cpp
+// Compiling with 'cl a.cpp b.cpp /permissive-' now gives:
+//   error LNK2005: "public: void __thiscall S::f<int>(int)" (??$f@H@S@@QAEXH@Z) already defined in a.obj
+// To fix the linker error,
+// 1. Mark the explicit specialization with 'inline' explicitly. Or,
+// 2. Move its definition to a source file.
+
+// common.h
+struct S {
+    template<typename T> void f(T);
+    template<> void f(int);
+};
+
+// This explicit specialization is implicitly inline in the default mode.
+template<> void S::f(int) {}
+
+// a.cpp
+#include "common.h"
+
+int main() {}
+
+// b.cpp
+#include "common.h"
+```
+
+### <a name="checking-for-abstract-class-types"></a>추상 클래스 형식 확인
+
+C++20 표준은 추상 클래스 형식을 함수 매개 변수로 사용하는 것을 컴파일러가 검색하는 프로세스를 변경했습니다. 구체적으로 이것은 더 이상 SFINAE 오류가 아닙니다. 이전에는 함수 템플릿의 특수화에 형식이 추상 클래스 형식 인스턴스인 함수 매개 변수가 포함되는 것을 컴파일러가 검색한 경우, 해당 특수화가 잘못된 형식으로 간주되어 실행 가능한 함수 집합에 추가되지 않았습니다. C++20에서는 함수가 호출될 때까지 추상 클래스 형식의 매개 변수에 대한 검사를 수행하지 않습니다. 즉, 컴파일하는 데 사용되는 코드에서 오류가 발생하지 않습니다. 예를 들면 다음과 같습니다.
+
+```cpp
+class Node {
+public:
+    int index() const;
+};
+
+class String : public Node {
+public:
+    virtual int size() const = 0;
+};
+
+class Identifier : public Node {
+public:
+    const String& string() const;
+};
+
+template<typename T>
+int compare(T x, T y)
+{
+    return x < y ? -1 : (x > y ? 1 : 0);
+}
+
+int compare(const Node& x, const Node& y)
+{
+    return compare(x.index(), y.index());
+}
+
+int f(const Identifier& x, const String& y)
+{
+    return compare(x.string(), y);
+}
+```
+
+이전에는 `compare`를 호출하면 `T`의 템플릿 인수가 `String`인 `compare` 함수 템플릿을 특수화하려 시도했습니다. `String`이 추상 클래스 이므로 유효한 특수화가 생성되지 않습니다. 실행 가능한 후보는 `compare(const Node&, const Node&)`뿐이었습니다. 하지만 C++20에서는 함수가 호출될 때까지 추상 클래스 형식의 매개 변수에 대한 검사를 수행하지 않습니다. 따라서 `compare(String, String)` 특수화가 실행 가능한 후보 집합에 추가되고, `const String&`에서 `String`으로의 변환이 `const String&`에서 `const Node&`로의 변환보다 나은 변환 시퀀스이므로 최상의 후보로 선택됩니다.
+
+C++20에서 이 예제의 가능한 해결 방법 중 하나는 개념을 사용하는 것입니다. 즉, `compare`의 정의를 다음과 같이 변경합니다.
+
+```cpp
+template<typename T>
+int compare(T x, T y) requires !std::is_abstract_v<T>
+{
+    return x < y ? -1 : (x > y ? 1 : 0);
+}
+```
+
+또는 C++ 개념을 사용할 수 없는 경우 SFINAE로 대체할 수 있습니다.
+
+```cpp
+template<typename T, std::enable_if_t<!std::is_abstract_v<T>, int> = 0>
+int compare(T x, T y)
+{
+    return x < y ? -1 : (x > y ? 1 : 0);
+}
+```
+
+### <a name="support-for-p0960r3---allow-initializing-aggregates-from-a-parenthesized-list-of-values"></a>P0960R3 지원 - 괄호로 묶인 값 목록에서 집계 초기화 허용
+
+C++20은 괄호로 묶은 이니셜라이저 목록을 사용하여 집계를 초기화하는 지원을 추가합니다. 예를 들어 다음 코드는 C++20에서 유효합니다.
+
+```cpp
+struct S {
+    int i;
+    int j;
+};
+
+S s(1, 2);
+```
+
+이 기능의 대부분은 가산적입니다. 즉, 코드는 이제 이전에 컴파일하지 않은 컴파일을 수행합니다. 하지만 `std::is_constructible` 동작이 변경됩니다. 이 **`static_assert`** 는 C++17 모드에서는 실패하지만 C++20 모드에서는 성공합니다.
+
+`static_assert(std::is_constructible_v<S, int, int>, "Assertion failed!");`
+
+이 형식 특성을 사용하여 오버로드 확인을 제어하는 경우 C++17과 C++20 간 동작 변경이 있을 수 있습니다.
+
+### <a name="overload-resolution-involving-function-templates"></a>함수 템플릿을 포함하는 오버로드 확인
+
+이전에는 컴파일러에서 컴파일하면 안 되는 일부 코드의 컴파일을 **`/permissive-`** 에서 허용했습니다. 이로 인해 컴파일러가 잘못된 함수를 호출하여 런타임 동작이 변경되었습니다.
+
+```cpp
+int f(int);
+
+namespace N
+{
+    using ::f;
+    template<typename T>
+    T f(T);
+}
+
+template<typename T>
+void g(T&& t)
+{
+}
+
+void h()
+{
+    using namespace N;
+    g(f);
+}
+```
+
+`g`에 대한 호출은 `::f`와 `N::f`라는 두 개의 함수를 포함하는 오버로드 집합을 사용합니다. `N::f`가 함수 템플릿이므로 컴파일러는 함수 인수를 추론되지 않은 컨텍스트로 처리해야 합니다. 즉, 이 경우 컴파일러가 템플릿 매개 변수 `T`의 형식을 추론할 수 없으므로 `g`에 대한 호출이 실패합니다. 불행히도 컴파일러는 `::f`가 함수 호출과 잘 일치한다고 이미 결정했다는 사실을 취소하지 못했습니다. 컴파일러는 오류를 내보내는 대신 인수로 `::f`를 사용하여 `g`를 호출하는 코드를 생성합니다.
+
+대부분의 경우 사용자는 함수 인수로 `::f`를 사용하는 것을 예상하기 때문에 **`/permissive-`** 를 사용하여 코드가 컴파일되는 경우에만 오류를 내보냅니다.
+
+### <a name="migrating-from-await-to-c20-coroutines"></a>`/await`에서 C++ 20 코루틴으로 마이그레이션
+
+표준 C++20 코루틴은 이제 **`/std:c++latest`** 에서 기본적으로 설정되어 있습니다. 이 코루틴은 코루틴 TS 및 **`/await`** 스위치에서의 지원과는 다릅니다. **`/await`** 에서 표준 코루틴으로 마이그레이션하려면 일부 원본 변경이 필요할 수 있습니다.
+
+#### <a name="non-standard-keywords"></a>비표준 키워드
+
+이전 **`await`** 및 **`yield`** 키워드는 C++20 모드에서 지원되지 않습니다. 코드에서 **`co_await`** 및 **`co_yield`** 를 대신 사용해야 합니다. 표준 모드는 코루틴에서 `return` 사용도 허용하지 않습니다. 코루틴의 모든 **`return`** 은 **`co_return`** 을 사용해야 합니다.
+
+```cpp
+// /await
+task f_legacy() {
+    ...
+    await g();
+    return n;
+}
+// /std:c++latest
+task f() {
+    ...
+    co_await g();
+    co_return n;
+}
+```
+
+#### <a name="types-of-initial_suspendfinal_suspend"></a>initial_suspend/final_suspend 형식
+
+**`/await`** 에서 프라미스 initial 및 suspend 함수는 **`bool`** 을 반환하는 것으로 선언될 수 있습니다. 이 동작은 표준이 아닙니다. C++20에서 이러한 함수는 대기 가능 클래스 형식을 반환해야 합니다. 이 형식은 함수가 이전에 **`true`** 를 반환한 경우에는 일반적으로 대기 가능한 `std::suspend_always` 중 하나, 함수가 **`false`** 를 반환한 경우에는 `std::suspend_never`입니다.
+
+```cpp
+// /await
+struct promise_type_legacy {
+    bool initial_suspend() noexcept { return false; }
+    bool final_suspend() noexcept { return true; }
+    ...
+};
+
+// /std:c++latest
+struct promise_type {
+    auto initial_susepend() noexcept { return std::suspend_never{}; }
+    auto final_suspend() noexcept { return std::suspend_always{}; }
+    ...
+};
+```
+
+#### <a name="type-of-yield_value"></a>`yield_value`의 형식
+
+C++20에서 프라미스 `yield_value` 함수는 대기 가능을 반환해야 합니다. **`/await`** 모드에서 `yield_value` 함수는 **`void`** 를 반환할 수 있으며, 항상 일시 중단됩니다. 이러한 함수는 `std::suspend_always`를 반환하는 함수로 바꿀 수 있습니다.
+
+```cpp
+// /await
+struct promise_type_legacy {
+    ...
+    void yield_value(int x) { next = x; };
+};
+
+// /std:c++latest
+struct promise_type {
+    ...
+    auto yield_value(int x) { next = x; return std::suspend_always{}; }
+};
+```
+
+#### <a name="exception-handling-function"></a>예외 처리 함수
+
+**`/await`** 는 예외 처리 함수나 `std::exception_ptr`을 사용하는 `set_exception`이라는 예외 처리 함수를 사용하여 프라미스 형식을 지원합니다. C++20에서 프라미스 형식에는 인수를 사용하지 않는 `unhandled_exception`이라는 함수가 있어야 합니다. 필요한 경우 `std::current_exception`에서 예외 개체를 가져올 수 있습니다.
+
+```cpp
+// /await
+struct promise_type_legacy {
+    void set_exception(std::exception_ptr e) { saved_exception = e; }
+    ...
+};
+// /std:c++latest
+struct promise_type {
+    void unhandled_exception() { saved_exception = std::current_exception(); }
+    ...
+};
+```
+
+#### <a name="deduced-return-types-of-coroutines-not-supported"></a>코루틴의 추론된 반환 형식은 지원되지 않음
+
+C++20은 **`auto`** 와 같은 자리 표시자 형식을 포함하는 반환 형식이 있는 코루틴을 지원하지 않습니다. 코루틴의 반환 형식은 명시적으로 선언되어야 합니다. **`/await`** 에서 추론된 형식에는 항상 실험적 형식이 포함되며, 필요한 형식을 정의하는 헤더를 포함해야 합니다. `std::experimental::task<T>`, `std::experimental::generator<T>` 또는 `std::experimental::async_stream<T>` 중 하나입니다.
+
+```cpp
+// /await
+auto my_generator() {
+    ...
+    co_yield next;
+};
+
+// /std:c++latest
+#include <experimental/generator>
+std::experimental::generator<int> my_generator() {
+    ...
+    co_yield next;
+};
+```
+
+#### <a name="return-type-of-return_value"></a>`return_value`의 반환 형식
+
+프라미스 `return_value` 함수의 반환 형식은 **`void`** 여야 합니다. **`/await`** 모드에서 반환 형식은 무엇이든 무방하며, 무시됩니다. 이 진단은 작성자가 `return_value`의 반환 값이 호출자에게 반환되는 것으로 잘못 가정하는 미묘한 오류를 검색하는 데 도움이 됩니다.
+
+```cpp
+// /await
+struct promise_type_legacy {
+    ...
+    int return_value(int x) { return x; } // incorrect, the return value of this function is unused and the value is lost.
+};
+
+// /std:c++latest
+struct promise_type {
+    ...
+    void return_value(int x) { value = x; }; // save return value
+};
+```
+
+#### <a name="return-object-conversion-behavior"></a>반환 개체 변환 동작
+
+코루틴의 선언된 반환 형식이 프라미스 `get_return_object` 함수의 반환 형식과 일치하지 않는 경우 `get_return_object`에서 반환된 개체가 코루틴의 반환 형식으로 변환됩니다. **`/await`** 에서 이 변환은 코루틴 본문을 실행하기 전에 조기에 수행됩니다. **`/std:c++latest`** 에서 이 변환은 값이 실제로 호출자에게 반환되는 경우에만 수행됩니다. 이를 통해 초기 일시 중단 지점에서 일시 중단되지 않는 코루틴이 코루틴 본문 내에서 `get_return_object`가 반환하는 개체를 사용할 수 있습니다.
+
+#### <a name="coroutine-promise-parameters"></a>코루틴 프라미스 매개 변수
+
+C++20에서 컴파일러는 코루틴 매개 변수(있는 경우)를 프라미스 형식의 생성자에 전달하려 시도합니다. 실패하면 기본 생성자를 사용하여 다시 시도합니다. **`/await`** 모드에서는 기본 생성자만 사용되었습니다. 이러한 변경으로 인해 프라미스에 여러 생성자가 있거나 코루틴 매개 변수에서 프라미스 형식으로 변환하는 경우 동작이 달라질 수 있습니다.
+
+```cpp
+struct coro {
+    struct promise_type {
+        promise_type() { ... }
+        promise_type(int x) { ... }
+        ...
+    };
+};
+
+coro f1(int x);
+
+// Under /await the promise gets constructed using the default constructor.
+// Under /std:c++latest the promise gets constructed using the 1-argument constructor.
+f1(0);
+
+struct Object {
+template <typename T> operator T() { ... } // Converts to anything!
+};
+
+coro f2(Object o);
+
+// Under /await the promise gets constructed using the default constructor
+// Under /std:c++latest the promise gets copy- or move-constructed from the result of
+// Object::operator coro::promise_type().
+f2(Object{});
+```
+
+### <a name="permissive--and-c20-modules-are-on-by-default-under-stdclatest"></a>`/std:c++latest`에서 기본적으로 설정된 `/permissive-` 및 C++20 모듈
+
+C++20 모듈 지원은 **`/std:c++latest`** 에서 기본적으로 설정되어 있습니다. 이러한 변경에 대한 자세한 내용과 **`module`** 및 **`import`** 이 키워드로 조건부 처리되는 시나리오는 [Visual Studio 2019 버전 16.8에서 MSVC로 표준 C++20 모듈 지원](https://devblogs.microsoft.com/cppblog/standard-c20-modules-support-with-msvc-in-visual-studio-2019-version-16-8/)을 참조하세요.
+
+이제 **`/std:c++latest`** 가 지정되면 모듈 지원의 필수 구성 요소로 **`permissive-`** 가 사용됩니다. 자세한 내용은 [`/permissive-`](../build/reference/permissive-standards-conformance.md)을(를) 참조하세요.
+
+이전에 **`/std:c++latest`** 에서 컴파일하고 비준수 컴파일러 동작 **`permissive`** 가 필요한 코드의 경우 컴파일러에서 엄격한 규칙 모드를 해제하도록 지정할 수 있습니다. 컴파일러 옵션은 명령줄 인수 목록에서 **`/std:c++latest`** 뒤에 나타나야 합니다. 그러나 모듈 사용에 다음 오류가 발생하는 경우 **`permissive`** 로 인해 오류가 발생합니다.
+
+> 오류 C1214: 모듈이 '옵션'을 통해 요청된 비표준 동작과 충돌합니다.
+
+옵션의 가장 일반적인 값은 다음과 같습니다.
+
+| 옵션 | 설명 |
+|--|--|
+| **`/Zc:twoPhase-`** | 2단계 이름 조회는 C++20 모듈에 필요하며, **`permissive-`** 에 포함됩니다. |
+| **`/Zc:hiddenFriend-`** | 표준 숨겨진 friend 이름 조회 규칙을 사용하도록 설정합니다. C++20 모듈에 필요하며, **`permissive-`** 에 포함됩니다. |
+| **`/Zc:preprocessor-`** | 규격 전처리기는 C++20 헤더 단위 사용 및 생성에만 필요합니다. 명명된 모듈에는 이 옵션이 필요하지 않습니다. |
+
+아직 표준화되지 않았기 때문에 Visual Studio와 함께 제공되는 *`std.*`* 모듈을 사용하려면 [`/experimental:module`](../build/reference/experimental-module.md) 옵션이 여전히 필요합니다.
+
+**`/experimental:module`** 옵션은 **`/Zc:twoPhase`** 및 **`/Zc:hiddenFriend`** 도 포함합니다. 이전에는 모듈로 컴파일된 코드는 모듈만 사용된 경우 때때로 **`/Zc:twoPhase-`** 로 컴파일할 수 있었습니다. 이 동작은 더 이상 지원되지 않습니다.
 
 ## <a name="bug-fixes-and-behavior-changes-in-visual-studio-2019"></a><a name="update_160"></a> Visual Studio 2019의 버그 수정 및 동작 변경
 
@@ -3357,7 +3689,7 @@ public:
 
 ### <a name="offsetof-with-constant-expressions"></a>상수 식을 사용한 `offsetof`
 
-지금까지 [offsetof](../c-runtime-library/reference/offsetof-macro.md)는 [reinterpret_cast](../cpp/reinterpret-cast-operator.md)가 필요한 매크로를 사용하여 구현되었습니다. 이 사용법은 상수 식을 필요로 하는 컨텍스트에서 올바르지 않지만, Microsoft C++ 컴파일러에서는 일반적으로 허용되었습니다. 표준 라이브러리의 일부로 제공되는 `offsetof` 매크로는 컴파일러 내장 함수( **__builtin_offsetof** )를 올바르게 사용하지만, 매크로 트릭을 사용하여 고유한 `offsetof`를 정의하는 사람이 많았습니다.
+지금까지 [offsetof](../c-runtime-library/reference/offsetof-macro.md)는 [reinterpret_cast](../cpp/reinterpret-cast-operator.md)가 필요한 매크로를 사용하여 구현되었습니다. 이 사용법은 상수 식을 필요로 하는 컨텍스트에서 올바르지 않지만, Microsoft C++ 컴파일러에서는 일반적으로 허용되었습니다. 표준 라이브러리의 일부로 제공되는 `offsetof` 매크로는 컴파일러 내장 함수( **__builtin_offsetof**)를 올바르게 사용하지만, 매크로 트릭을 사용하여 고유한 `offsetof`를 정의하는 사람이 많았습니다.
 
 Visual Studio 2017 버전 15.8에서 컴파일러는 **`reinterpret_cast`** 연산자가 기본 모드로 표시될 수 있는 영역을 제한하여 코드가 표준 C++ 동작을 준수하도록 합니다. [`/permissive-`](../build/reference/permissive-standards-conformance.md)에서는 제약 조건이 훨씬 더 엄격합니다. 상수 식이 필요한 `offsetof`의 결과를 사용하면 경고 C4644 `usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead` 또는 C2975 `invalid template argument, expected compile-time constant expression`을 보내는 코드가 생성될 수 있습니다.
 

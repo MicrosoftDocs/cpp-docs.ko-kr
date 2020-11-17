@@ -1,17 +1,17 @@
 ---
 title: Visual Studio에 C 및 C++ 지원 설치
-description: Visual C++에 대한 Visual Studio 지원 설치
+description: Microsoft C/C++ 및 관련 워크로드에 대한 지원을 포함하여 Visual Studio를 설치하는 방법을 알아봅니다.
 ms.custom: mvc
-ms.date: 04/02/2019
+ms.date: 11/05/2020
 ms.topic: tutorial
 ms.devlang: cpp
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
-ms.openlocfilehash: 6f547b7e50d39b073232e913e660bf3ab96789cb
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 3f2d2ade54cb4db2cd692f044a5cd648600bc7f6
+ms.sourcegitcommit: 12eb6a824dd7187a065d44fceca4c410f58e121e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92922129"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "94334184"
 ---
 # <a name="install-c-and-c-support-in-visual-studio"></a>Visual Studio에 C 및 C++ 지원 설치
 
@@ -46,14 +46,14 @@ Visual Studio 2019와 함께 이전 버전의 Visual Studio를 실행하는 방�
 
 ### <a name="step-2---download-visual-studio"></a>2단계 - Visual Studio 다운로드
 
-다음으로 Visual Studio 부트스트래퍼 파일을 다운로드합니다. 이렇게 하려면 다음 단추를 선택하고, 원하는 Visual Studio 버전을 선택하고, **저장** 을 선택한 다음, **폴더 열기** 를 선택합니다.
+다음으로 Visual Studio 부트스트래퍼 파일을 다운로드합니다. 그러려면 다음 단추를 선택하여 Visual Studio 다운로드 페이지로 이동합니다. 원하는 Visual Studio 버전을 선택하고 **무료 평가판** 또는 **무료로 다운로드** 단추를 선택합니다.
 
  > [!div class="button"]
  > [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+rc)
 
 ### <a name="step-3---install-the-visual-studio-installer"></a>3단계 - Visual Studio 설치 관리자 설치
 
-Visual Studio 설치 관리자를 설치하려면 부트스트래퍼 파일을 실행합니다. 이 새로운 경량 설치 관리자는 Visual Studio를 설치하고 사용자 지정하는 데 필요한 모든 항목을 포함합니다.
+다운로드한 부트스트래퍼 파일을 실행하여 Visual Studio 설치 관리자를 설치합니다. 이 새로운 경량 설치 관리자는 Visual Studio를 설치하고 사용자 지정하는 데 필요한 모든 항목을 포함합니다.
 
 1. **다운로드** 폴더에서 다음 파일 중 하나와 일치하거나 비슷한 부트스트래퍼 파일을 두 번 클릭합니다.
 
@@ -61,7 +61,7 @@ Visual Studio 설치 관리자를 설치하려면 부트스트래퍼 파일을 �
    - Visual Studio Professional용 **vs_professional.exe**
    - Visual Studio Enterprise용 **vs_enterprise.exe**
 
-   사용자 계정 컨트롤 알림을 받으면 **예** 를 선택합니다.
+   사용자 계정 컨트롤 알림이 표시되면 **예** 를 선택하여 부트스트래퍼 실행을 허용합니다.
 
 1. Microsoft [사용 약관](https://visualstudio.microsoft.com/license-terms/) 및 Microsoft [개인정보처리방침](https://privacy.microsoft.com/privacystatement)에 동의하도록 요청하는 메시지가 표시됩니다. **계속** 을 선택합니다.
 
@@ -143,15 +143,12 @@ Visual Studio 2017에서는 필요한 기능만 선택하여 쉽게 설치할 �
 
 ### <a name="download-and-install"></a>다운로드 및 설치
 
-1. 최신 Windows용 Visual Studio 2017 설치 관리자를 다운로드합니다.
-
-   > [!div class="nextstepaction"]
-   > [Visual Studio 2017 Community 설치](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+1. Windows용 최신 Visual Studio 2017 설치 관리자를 다운로드하려면 Microsoft Visual Studio [이전 버전 다운로드](https://www.visualstudio.com/vs/older-downloads/) 페이지로 이동합니다. **2017** 섹션을 펼치고 **다운로드** 단추를 선택합니다.
 
    >[!Tip]
-   > 커뮤니티 에디션은 개인 개발자, 교실 학습, 학술 연구 및 오픈 소스 개발용입니다. 다른 용도의 경우 [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 또는 [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)를 설치합니다.
+   > 커뮤니티 에디션은 개인 개발자, 교실 학습, 학술 연구 및 오픈 소스 개발용입니다. 다른 용도의 경우 Visual Studio 2017 Professional 또는 Visual Studio 2017 Enterprise를 설치합니다.
 
-1. 다운로드한 설치 관리자 파일을 찾아서 실행합니다. 브라우저에 표시되거나 다운로드 폴더에서 찾을 수 있습니다. 설치 관리자를 실행하려면 관리자 권한이 필요합니다. 설치 관리자가 시스템을 변경할 수 있는 권한을 부여하라는 **사용자 계정 컨트롤** 대화 상자가 표시될 수 있습니다. **예** 를 선택합니다. 문제가 발생하는 경우 파일 탐색기에서 다운로드한 파일을 찾아 설치 관리자 아이콘을 마우스 오른쪽 단추로 클릭한 다음 바로 가기 메뉴에서 **관리자 권한으로 실행** 을 선택합니다.
+1. 다운로드한 설치 관리자 파일을 찾아서 실행합니다. 다운로드한 파일은 브라우저에 표시되거나 다운로드 폴더에서 찾을 수 있습니다. 설치 관리자를 실행하려면 관리자 권한이 필요합니다. 설치 관리자가 시스템을 변경할 수 있는 권한을 부여하라는 **사용자 계정 컨트롤** 대화 상자가 표시될 수 있습니다. **예** 를 선택합니다. 문제가 발생하는 경우 파일 탐색기에서 다운로드한 파일을 찾아 설치 관리자 아이콘을 마우스 오른쪽 단추로 클릭한 다음 바로 가기 메뉴에서 **관리자 권한으로 실행** 을 선택합니다.
 
    ![Visual Studio 설치 관리자 다운로드 및 설치](media/vscpp-concierge-run-installer.gif "Visual Studio 설치 관리자 다운로드 및 설치")
 
@@ -185,7 +182,7 @@ Visual Studio 2017에서는 필요한 기능만 선택하여 쉽게 설치할 �
 
 ## <a name="visual-studio-2015-installation"></a>Visual Studio 2015 설치
 
-Visual Studio 2015를 설치하려면 [이전 버전의 Visual Studio 다운로드](https://www.visualstudio.com/vs/older-downloads/)로 이동합니다. 설치 프로그램을 실행하고 **사용자 지정 설치** 를 선택한 다음, C++ 구성 요소를 선택합니다. 기존 Visual Studio 2015 설치에 C 및 C++ 지원을 추가하려면 Windows 시작 단추를 클릭하고 **프로그램 추가/제거** 를 입력합니다. 결과 목록에서 프로그램을 열고 설치된 프로그램 목록에서 Visual Studio 2015 설치를 찾습니다. 이를 두 번 클릭한 다음 **수정** 을 선택하고 설치할 Visual C++ 구성 요소를 선택합니다.
+Visual Studio 2015를 설치하려면 Microsoft Visual Studio [이전 버전 다운로드](https://www.visualstudio.com/vs/older-downloads/) 페이지로 이동합니다. **2015** 섹션을 펼치고 **다운로드** 단추를 선택합니다. 다운로드한 설치 프로그램을 실행하고 **사용자 지정 설치** 를 선택한 다음 C++ 구성 요소를 선택합니다. 기존 Visual Studio 2015 설치에 C 및 C++ 지원을 추가하려면 Windows 시작 단추를 클릭하고 **프로그램 추가/제거** 를 입력합니다. 결과 목록에서 프로그램을 열고 설치된 프로그램 목록에서 Visual Studio 2015 설치를 찾습니다. 이를 두 번 클릭한 다음 **수정** 을 선택하고 설치할 Visual C++ 구성 요소를 선택합니다.
 
 일반적으로 Visual Studio 2015 컴파일러를 사용하여 코드를 컴파일해야 하는 경우에도 최신 버전의 Visual Studio를 사용하는 것이 좋습니다. 자세한 내용은 [Visual Studio의 네이티브 멀티 타기팅을 사용하여 이전 프로젝트 빌드](../porting/use-native-multi-targeting.md)를 참조하세요.
 

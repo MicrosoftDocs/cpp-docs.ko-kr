@@ -1,13 +1,14 @@
 ---
 title: 디버거 속성(Linux C++) | Microsoft Docs
+description: Microsoft Visual Studio Linux C++ 디버거 속성을 설명합니다.
 ms.date: 06/07/2019
 ms.assetid: 0c1c0fcc-a49b-451c-a5cb-ce9711fac064
-ms.openlocfilehash: 2b55a0db001c98be72ac88c17c62b21e98ec4888
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 0d43877df817f40cfd97a03c4f66730ab17138d8
+ms.sourcegitcommit: 12eb6a824dd7187a065d44fceca4c410f58e121e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924516"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "94334223"
 ---
 # <a name="c-debugging-properties-linux-c"></a>C++ 디버깅 속성(Linux C++)
 
@@ -21,7 +22,7 @@ Linux 지원은 Visual Studio 2017 이상에서 사용할 수 있습니다.
 
 | 속성 | 설명 | 선택 항목 |
 |--|--|--|
-| 원격 디버깅 머신 | **Visual Studio 2019 버전 16.1** : 프로그램을 디버깅하려면 머신을 지정합니다. [일반](general-linux.md) 페이지에서 지정된 원격 빌드 머신과 다를 수 있습니다. **도구** > **옵션** > **플랫폼 간** > **연결 관리자** 를 사용하여 대상 머신 연결을 추가하거나 편집할 수 있습니다. |
+| 원격 디버깅 머신 | **Visual Studio 2019 버전 16.1**: 프로그램을 디버깅하려면 머신을 지정합니다. [일반](general-linux.md) 페이지에서 지정된 원격 빌드 머신과 다를 수 있습니다. **도구** > **옵션** > **플랫폼 간** > **연결 관리자** 를 사용하여 대상 머신 연결을 추가하거나 편집할 수 있습니다. |
 | 사전 실행 명령 | 디버거 실행 전에 셸에서 실행되는 명령이며 디버깅 환경에 영향을 주기 위해 사용할 수 있습니다. |
 | 프로그램 | 디버그할 프로그램에 대한 원격 시스템의 전체 경로입니다. 비워 두거나 변경하지 않으면 현재 프로젝트 출력이 기본값으로 설정됩니다. |
 | 프로그램 인수 | 디버그 중인 프로그램에 전달할 명령줄 인수입니다. |
@@ -35,5 +36,6 @@ Linux 지원은 Visual Studio 2017 이상에서 사용할 수 있습니다.
 | Python 보기 쉽게 인쇄 사용 | 식 값을 보기 쉽게 인쇄하는 기능을 사용합니다. gdb 디버깅 모드에서만 지원됩니다. |
 | 시각화 파일 | SLT 형식에 대한 시각화 지시문이 들어 있는 기본 네이티브 시각화 파일(.natvis)입니다. 현재 솔루션에 속하는 다른 .natvis 파일이 자동으로 로드됩니다. |
 | 추가 소스 파일 경로 맵 | 디버거에서 Windows 소스 파일 이름을 Linux 소스 파일 이름에 매핑하는 데 사용하는 추가 동등 경로입니다. 형식은 "\<windows-path>=\<linux-path>;..."입니다. Windows 경로에 있는 소스 파일 이름은 Linux 경로에 있는 동일한 상대적 위치에 있는 것처럼 참조됩니다. 로컬 프로젝트에 있는 파일은 추가 매핑이 필요하지 않습니다. |
+| GDB 경로 | **Visual Studio 2019 버전 16.9**: Visual Studio에서 사용될 GDB 실행 파일의 경로를 지정합니다. |
 
 ::: moniker-end
