@@ -99,7 +99,7 @@ DLL에 대한 자세한 내용의 링크는 [Visual Studio에서 C/C++ DLL 만�
 
 ### <a name="to-create-a-dll-project-in-visual-studio-2017"></a>Visual Studio 2017에서 DLL 프로젝트를 만들려면
 
-1. 메뉴 모음에서 **파일** , >**새로 만들기**>, **프로젝트** 를 선택하여 **새 프로젝트** 대화 상자를 엽니다.
+1. 메뉴 모음에서 **파일**, >**새로 만들기**>, **프로젝트** 를 선택하여 **새 프로젝트** 대화 상자를 엽니다.
 
 1. **새 프로젝트** 대화 상자의 왼쪽 창에서 **설치된** > **Visual C++**  > **Windows 데스크톱** 을 선택합니다. 가운데 창에서 **DLL(동적 연결 라이브러리)** 을 선택합니다. **이름** 상자에 *MathLibrary* 를 입력하여 프로젝트 이름을 지정합니다. 기본 **위치** 및 **솔루션 이름** 값은 그대로 둡니다. **솔루션** 을 **새 솔루션 만들기** 로 설정합니다. 선택하지 않은 경우 **솔루션에 대한 디렉터리 만들기** 를 선택합니다.
 
@@ -194,7 +194,7 @@ DLL에 대한 자세한 내용의 링크는 [Visual Studio에서 C/C++ DLL 만�
 
 이 헤더 파일은 두 개의 초기 값이 지정된 일반화된 피보나치 시퀀스를 생성하는 몇 가지 함수를 선언합니다. `fibonacci_init(1, 1)` 호출은 친숙한 피보나치 수열을 생성합니다.
 
-파일 맨 위의 전처리기 문을 확인합니다. DLL 프로젝트용 새 프로젝트 템플릿은 정의된 전처리기 매크로에 **_PROJECTNAME_ &#95;EXPORTS** 를 추가합니다. 이 예에서 Visual Studio는 MathLibrary DLL 프로젝트가 빌드될 때 **MATHLIBRARY&#95;EXPORTS** 를 정의합니다.
+파일 맨 위의 전처리기 문을 확인합니다. DLL 프로젝트용 새 프로젝트 템플릿은 정의된 전처리기 매크로에 **_PROJECTNAME_&#95;EXPORTS** 를 추가합니다. 이 예에서 Visual Studio는 MathLibrary DLL 프로젝트가 빌드될 때 **MATHLIBRARY&#95;EXPORTS** 를 정의합니다.
 
 **MATHLIBRARY&#95;EXPORTS** 매크로가 정의되면 **MATHLIBRARY&#95;API** 매크로는 함수 선언에서 `__declspec(dllexport)` 한정자를 설정합니다. 이 한정자는 DLL에서 함수 또는 변수를 내보내도록 컴파일러 및 링커에 알려 다른 애플리케이션에서 사용할 수 있도록 합니다. **MATHLIBRARY&#95;EXPORTS** 가 정의되지 않은 경우(예: 헤더 파일이 클라이언트 애플리케이션에 의해 포함되는 경우) **MATHLIBRARY&#95;API** 는 선언에 `__declspec(dllimport)` 한정자를 적용합니다. 이 한정자는 애플리케이션에서 함수 또는 변수의 가져오기를 최적화합니다. 자세한 내용은 [dllexport, dllimport](../cpp/dllexport-dllimport.md)를 참조하세요.
 
