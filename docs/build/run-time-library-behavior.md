@@ -15,12 +15,12 @@ helpviewer_keywords:
 - run-time [C++], DLL startup sequence
 - DLLs [C++], startup sequence
 ms.assetid: e06f24ab-6ca5-44ef-9857-aed0c6f049f2
-ms.openlocfilehash: 2f2ffb13e6a80b144298bbf8cd76b5666a10b4dd
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 5af3efd733a5d682e33863b330b6a558e824c9b3
+ms.sourcegitcommit: 6284bca6549e7b4f199d4560c30df6c1278bd4a0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81335657"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95782981"
 ---
 # <a name="dlls-and-visual-c-run-time-library-behavior"></a>DLL 및 Visual C++ 런타임 라이브러리 동작
 
@@ -108,13 +108,13 @@ extern "C" BOOL WINAPI DllMain (
 
 일반 MFC DLL은 `InitInstance` 함수에서 [TlsAlloc](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsalloc) 및 [TlsGetValue](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)를 호출하여 여러 스레드를 추적할 수 있습니다. 이러한 함수를 사용하면 DLL이 스레드별 데이터를 추적할 수 있습니다.
 
-MFC에 동적으로 연결되는 일반 MFC DLL에서 MFC OLE, MFC 데이터베이스(또는 DAO) 또는 MFC 소켓 지원을 각각 사용하는 경우 디버그 MFC 확장 DLL인 MFCO*version*D.dll, MFCD*version*D.dll 및 MFCN*version*D.dll(여기서 *version*은 버전 번호)가 자동으로 연결됩니다. 일반 MFC DLL의 `CWinApp::InitInstance`에서 사용하는 각 DLL에 대해 다음과 같은 미리 정의된 초기화 함수 중 하나를 호출해야 합니다.
+MFC에 동적으로 연결되는 일반 MFC DLL에서 MFC OLE, MFC 데이터베이스(또는 DAO) 또는 MFC 소켓 지원을 각각 사용하는 경우 디버그 MFC 확장 DLL인 MFCO *version* D.dll, MFCD *version* D.dll 및 MFCN *version* D.dll(여기서 *version* 은 버전 번호)가 자동으로 연결됩니다. 일반 MFC DLL의 `CWinApp::InitInstance`에서 사용하는 각 DLL에 대해 다음과 같은 미리 정의된 초기화 함수 중 하나를 호출해야 합니다.
 
 |MFC 형식 지원|호출할 초기화 함수|
 |-------------------------|-------------------------------------|
-|MFC OLE(MFCO*version*D.dll)|`AfxOleInitModule`|
-|MFC 데이터베이스(MFCD*version*D.dll)|`AfxDbInitModule`|
-|MFC 소켓(MFCN*version*D.dll)|`AfxNetInitModule`|
+|MFC OLE(MFCO *version* D.dll)|`AfxOleInitModule`|
+|MFC 데이터베이스(MFCD *version* D.dll)|`AfxDbInitModule`|
+|MFC 소켓(MFCN *version* D.dll)|`AfxNetInitModule`|
 
 <a name="initializing-extension-dlls"></a>
 
@@ -133,7 +133,7 @@ MFC 확장 DLL에는 일반 MFC DLL과 같은 `CWinApp` 파생 개체가 없으�
 #undef THIS_FILE
 static char THIS_FILE[] = __FILE__;
 #endif
-static AFX_EXTENSION_MODULE PROJNAMEDLL = { NULL, NULL };
+static AFX_EXTENSION_MODULE PROJNAMEDLL;
 
 extern "C" int APIENTRY
 DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
@@ -174,7 +174,7 @@ MFCx0.dll은 `DllMain`이 호출될 때 완전히 초기화되기 때문에 `Dll
 헤더 파일 Afxdllx.h에는 `AFX_EXTENSION_MODULE` 및 `CDynLinkLibrary` 정의와 같은 MFC 확장 DLL에서 사용되는 구조체에 대한 특수 정의가 포함되어 있습니다. MFC 확장 DLL에 이 헤더 파일을 포함해야 합니다.
 
 > [!NOTE]
-> *pch.h*(Visual Studio 2017 및 이전 버전의*stdafx.h*)의 `_AFX_NO_XXX` 매크로는 정의하거나 정의 해제하지 않는 것이 중요합니다. 이러한 매크로는 특정 대상 플랫폼이 해당 기능을 지원하는지 여부를 확인하기 위한 목적으로만 존재합니다. 프로그램을 작성하여 이러한 매크로를 확인할 수 있지만(예: `#ifndef _AFX_NO_OLE_SUPPORT`) 프로그램이 이러한 매크로를 정의하거나 정의 해제해서는 안됩니다.
+> *pch.h*(Visual Studio 2017 및 이전 버전의 *stdafx.h*)의 `_AFX_NO_XXX` 매크로는 정의하거나 정의 해제하지 않는 것이 중요합니다. 이러한 매크로는 특정 대상 플랫폼이 해당 기능을 지원하는지 여부를 확인하기 위한 목적으로만 존재합니다. 프로그램을 작성하여 이러한 매크로를 확인할 수 있지만(예: `#ifndef _AFX_NO_OLE_SUPPORT`) 프로그램이 이러한 매크로를 정의하거나 정의 해제해서는 안됩니다.
 
 다중 스레딩을 처리하는 샘플 초기화 함수는 Windows SDK의 [동적 연결 라이브러리에서 스레드 로컬 스토리지 사용](/windows/win32/Dlls/using-thread-local-storage-in-a-dynamic-link-library)에 포함되어 있습니다. 이 샘플은 `LibMain`이라는 진입점 함수를 포함하지만 MFC 및 C 런타임 라이브러리와 함께 작동하도록 이 함수의 이름을 `DllMain`으로 지정해야 합니다.
 
