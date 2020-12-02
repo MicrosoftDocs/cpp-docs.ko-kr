@@ -3,11 +3,11 @@ title: Visual Studio에서 C++ 코드 읽기 및 이해
 description: Visual Studio의 C++ 코드 편집기를 사용하여 코드를 서식 지정하고, 이해합니다.
 ms.date: 05/28/2019
 ms.openlocfilehash: cd152ffbbd106c6a31a21da35d08b53555047209
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.sourcegitcommit: 6284bca6549e7b4f199d4560c30df6c1278bd4a0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924651"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96188902"
 ---
 # <a name="read-and-understand-c-code-in-visual-studio"></a>Visual Studio에서 C++ 코드 읽기 및 이해
 

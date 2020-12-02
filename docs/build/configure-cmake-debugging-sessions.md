@@ -4,12 +4,12 @@ description: Visual Studio를 사용하여 CMake 디버거 설정을 구성하�
 ms.date: 04/02/2020
 helpviewer_keywords:
 - CMake debugging
-ms.openlocfilehash: a790e26e5bf3980ffb81a3ba778577afacff95b4
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 74be1f07b838cd77f4ee87f5e9d245410fe716de
+ms.sourcegitcommit: 432c24dde31c400437c4320e8432b1ddb232f844
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92922233"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96440298"
 ---
 # <a name="configure-cmake-debugging-sessions"></a>CMake 디버깅 세션 구성
 
@@ -56,7 +56,6 @@ ms.locfileid: "92922233"
 ```json
 {
   "version": "0.2.1",
-  "defaults": {},
   "configurations": [
     {
       "type": "default",

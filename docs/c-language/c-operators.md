@@ -10,11 +10,11 @@ helpviewer_keywords:
 - binary data, binary expressions
 ms.assetid: 13bc4c8e-2dc9-4b23-9f3a-25064e8777ed
 ms.openlocfilehash: 7868073f4932e4b77329e6df4a3de374bcf41ec9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.sourcegitcommit: 6284bca6549e7b4f199d4560c30df6c1278bd4a0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227974"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96035237"
 ---
 # <a name="c-operators"></a>C 연산자
 

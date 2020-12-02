@@ -8,11 +8,11 @@ helpviewer_keywords:
 - properties [C++], adding to COM interfaces
 ms.assetid: 1be84d3c-6886-4d1e-8493-56c4d38a96d4
 ms.openlocfilehash: 6ad8d50049d34a711937f3d1f73157ce26f69808
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.sourcegitcommit: 6284bca6549e7b4f199d4560c30df6c1278bd4a0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509691"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96188824"
 ---
 # <a name="create-a-com-interface"></a>COM 인터페이스 만들기
 
@@ -32,7 +32,7 @@ Visual Studio는 COM 개체 및 자동화 클래스에 대한 COM 정의 인터�
 
   [ATL 프로젝트 마법사](../atl/reference/atl-project-wizard.md) 및 [ATL 컨트롤 마법사](../atl/reference/atl-control-wizard.md)의 조합을 사용하여 ATL ActiveX 컨트롤을 만듭니다.
 
-  위에서 설명한 것처럼 ATL 지원을 추가한 MFC 프로젝트에 ATL 컨트롤을 추가할 수도 있습니다. 또한 **클래스 추가** 대화 상자에서 **ATL 컨트롤**을 선택하고 MFC 프로젝트에 ATL 지원을 추가하지 않은 경우 Visual Studio는 MFC 프로젝트에 ATL 지원 추가를 확인하는 대화 상자를 표시합니다.
+  위에서 설명한 것처럼 ATL 지원을 추가한 MFC 프로젝트에 ATL 컨트롤을 추가할 수도 있습니다. 또한 **클래스 추가** 대화 상자에서 **ATL 컨트롤** 을 선택하고 MFC 프로젝트에 ATL 지원을 추가하지 않은 경우 Visual Studio는 MFC 프로젝트에 ATL 지원 추가를 확인하는 대화 상자를 표시합니다.
 
   이 마법사는 프로젝트 클래스에 IDL 소스 및 COM 맵을 생성합니다.
 
