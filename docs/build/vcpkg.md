@@ -4,12 +4,12 @@ description: vcpkg는 Windows, macOS 및 Linux에서 오픈 소스 C++ 라이브
 ms.date: 07/06/2020
 ms.technology: cpp-ide
 ms.assetid: f50d459a-e18f-4b4e-814b-913e444cedd6
-ms.openlocfilehash: 7131f301a22b2834b04ef932f3cee426b04dc7e5
-ms.sourcegitcommit: 31a443c9998cf5cfbaff00fcf815b133f55b2426
+ms.openlocfilehash: ec908824c19099ad6eaa46a4d85c0187ef12b3fd
+ms.sourcegitcommit: 102bd6f7a878d85c8ceab8f28d0359f562850ea0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373634"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862557"
 ---
 # <a name="vcpkg-a-c-package-manager-for-windows-linux-and-macos"></a>vcpkg: Windows, Linux 및 macOS용 C++ 패키지 관리자
 
@@ -226,6 +226,8 @@ vcpkg 패키지 관리자는 GitHub에서 정기적으로 업데이트됩니다.
 ## <a name="uninstall-vcpkg"></a>vcpkg 제거
 
 vcpkg를 제거하려면 vcpkg 디렉터리를 삭제하면 됩니다. 이 디렉터리를 삭제하면 vcpkg 배포 및 vcpkg에 의해 설치된 모든 라이브러리가 제거됩니다.
+
+그러나 **`vcpkg integrate install`** 을 실행한 경우 폴더가 제거되기 전에 **`vcpkg integrate remove`** 를 실행하여 통합이 정리되었는지 확인해야 합니다.
 
 ## <a name="send-feedback-about-vcpkg"></a>vcpkg에 대한 사용자 의견 보내기
 

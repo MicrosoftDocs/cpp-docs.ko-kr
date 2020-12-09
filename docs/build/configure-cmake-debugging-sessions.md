@@ -1,15 +1,15 @@
 ---
 title: Visual Studio에서 CMake 디버깅 세션 구성
 description: Visual Studio를 사용하여 CMake 디버거 설정을 구성하는 방법을 설명합니다.
-ms.date: 04/02/2020
+ms.date: 12/07/2020
 helpviewer_keywords:
 - CMake debugging
-ms.openlocfilehash: 74be1f07b838cd77f4ee87f5e9d245410fe716de
-ms.sourcegitcommit: 432c24dde31c400437c4320e8432b1ddb232f844
+ms.openlocfilehash: b289acf8d0aa89cef1d2a72c988b41d99914f828
+ms.sourcegitcommit: 102bd6f7a878d85c8ceab8f28d0359f562850ea0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96440298"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862570"
 ---
 # <a name="configure-cmake-debugging-sessions"></a>CMake 디버깅 세션 구성
 
@@ -112,6 +112,8 @@ Visual Studio 2019 버전 16.6에서는 원격 시스템 및 WSL에서의 디버
 #### <a name="additional-options-allowed-with-the-gdbserver-configuration-167-or-later"></a>`gdbserver` 구성에서 허용되는 추가 옵션(16.7 이상)
 
 - `program`: 기본값은 `"${debugInfo.fullTargetPath}"`입니다. 디버그할 애플리케이션의 Unix 경로입니다. 빌드 또는 배포 위치의 대상 실행 파일과 다른 경우에만 필요합니다.
+> [!TIP]
+> 로컬 크로스 컴파일 시나리오에는 아직 배포가 지원되지 않습니다. Windows에서 크로스 컴파일하는 경우(예: Windows에서 크로스 컴파일러를 사용하여 Linux ARM 실행 파일을 빌드함), 디버그하기 전에 원격 ARM 머신에서 `program`으로 지정된 위치에 이진을 수동으로 복사해야 합니다.
 - `remoteMachineName`:  기본값은 `"${debugInfo.remoteMachineName}"`입니다. 디버그할 프로그램을 호스팅하는 원격 시스템의 이름입니다. 빌드 시스템과 다른 경우에만 필요합니다. [연결 관리자](../linux/connect-to-your-remote-linux-computer.md)에 기존 항목이 있어야 합니다. **Ctrl+Space** 를 눌러 모든 기존 원격 연결의 목록을 표시합니다.
 - `cwd`: 기본값은 `"${debugInfo.defaultWorkingDirectory}"`입니다. `program`이 실행되는 원격 시스템의 디렉터리에 대한 전체 Unix 경로입니다. 디렉터리가 있어야 합니다.
 - `gdbPath`: 기본값은 `${debugInfo.vsInstalledGdb}`입니다. 디버그하는 데 사용되는 `gdb`의 전체 Windows 경로입니다. C/C++ 워크로드를 사용하여 Linux 개발과 함께 설치된 `gdb`가 기본값입니다.
