@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: ATL 단순 개체 추가'
 title: ATL 단순 개체 추가
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - objects [ATL]
 - ATL, simple objects
 ms.assetid: 9c57d2ef-0447-4c84-8982-3304b8e49847
-ms.openlocfilehash: 85c19c483ff27bd34431ec163e3baadac1855236
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 9e354f7d361c64f20657190bc53696f9878fa134
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91499350"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97158937"
 ---
 # <a name="adding-an-atl-simple-object"></a>ATL 단순 개체 추가
 
@@ -25,9 +26,9 @@ ATL (액티브 템플릿 라이브러리) 개체를 프로젝트에 추가 하�
 
 1. **솔루션 탐색기** 또는 [클래스 뷰](/visualstudio/ide/viewing-the-structure-of-code)에서 ATL 단순 개체를 추가 하려는 프로젝트의 이름을 마우스 오른쪽 단추로 클릭 합니다.
 
-1. 바로 가기 메뉴에서 **추가**를 클릭한 다음, **클래스 추가**를 클릭합니다.
+1. 바로 가기 메뉴에서 **추가** 를 클릭한 다음, **클래스 추가** 를 클릭합니다.
 
-1. [클래스 추가](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) 대화 상자의 **템플릿** 창에서 **atl simple Object**를 클릭 한 다음 **열기** 를 클릭 하 여 [atl 단순 개체 마법사](../../atl/reference/atl-simple-object-wizard.md)를 표시 합니다.
+1. [클래스 추가](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) 대화 상자의 **템플릿** 창에서 **atl simple Object** 를 클릭 한 다음 **열기** 를 클릭 하 여 [atl 단순 개체 마법사](../../atl/reference/atl-simple-object-wizard.md)를 표시 합니다.
 
 1. **ATL 단순 개체** 마법사의 [옵션](../../atl/reference/options-atl-simple-object-wizard.md) 페이지에서 프로젝트에 대 한 추가 옵션을 설정 합니다.
 

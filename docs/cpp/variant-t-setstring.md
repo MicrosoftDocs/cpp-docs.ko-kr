@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: _variant_t:: SetString'
 title: _variant_t::SetString
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - SetString method [C++]
 ms.assetid: 816b08e5-6830-46ca-b3d7-7689308b3be3
-ms.openlocfilehash: 60ad1c1bd95eb35f2a4f2800f79d0326c68a1176
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: a36bab9189b6046325bb275469dc9dbdb495fc7a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81745855"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97161418"
 ---
 # <a name="_variant_tsetstring"></a>_variant_t::SetString
 
-**마이크로소프트 특정**
+**Microsoft 전용**
 
 이 `_variant_t` 개체에 문자열을 할당합니다.
 
@@ -27,7 +28,7 @@ void SetString(const char* pSrc);
 
 #### <a name="parameters"></a>매개 변수
 
-*pSrc*<br/>
+*.Psrc*<br/>
 문자열에 대한 포인터입니다.
 
 ## <a name="remarks"></a>설명

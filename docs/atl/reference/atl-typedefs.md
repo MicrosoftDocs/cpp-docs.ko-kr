@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: ATL 형식 정의'
 title: ATL 형식 정의
 ms.date: 11/04/2016
 f1_keywords:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - typedefs
 - ATL, typedefs
 ms.assetid: 7dd05baa-3efb-4e3b-af23-793c610f4560
-ms.openlocfilehash: 10d11b2b6e78220c1c562d100ee7886026a94b22
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: cb243ef3d16689a1a0ddeb81d3de0bb4ec234a9c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833870"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97158649"
 ---
 # <a name="atl-typedefs"></a>ATL 형식 정의
 

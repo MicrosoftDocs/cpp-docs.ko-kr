@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _ATL_FUNC_INFO 구조체'
 title: _ATL_FUNC_INFO 구조체
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - _ATL_FUNC_INFO structure
 - ATL_FUNC_INFO structure
 ms.assetid: 441ebe2c-f971-47de-9f52-a258e8d6f88e
-ms.openlocfilehash: b1c740cf1a1ed344dbceb028bd1f39a87fc09363
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: 6368440347672524bb7d1e3aa3068ef91a2c6f09
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82168594"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97158857"
 ---
 # <a name="_atl_func_info-structure"></a>_ATL_FUNC_INFO 구조체
 
@@ -34,7 +35,7 @@ struct _ATL_FUNC_INFO {
 ## <a name="members"></a>멤버
 
 `cc`<br/>
-호출 규칙. [IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md) 클래스와 함께이 구조체를 사용 하는 경우이 멤버를 CC_STDCALL 해야 합니다. `CC_CDECL`는 `CALLCONV` `_ATL_FUNC_INFO` 구조체의 필드에 대해 Windows CE에서 유일 하 게 지원 되는 옵션입니다. 다른 모든 값은 지원 되지 않으므로 동작이 정의 되지 않습니다.
+호출 규칙. [IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md) 클래스와 함께이 구조체를 사용 하는 경우이 멤버를 CC_STDCALL 해야 합니다. `CC_CDECL` 는 구조체의 필드에 대해 Windows CE에서 유일 하 게 지원 되는 옵션입니다 `CALLCONV` `_ATL_FUNC_INFO` . 다른 모든 값은 지원 되지 않으므로 동작이 정의 되지 않습니다.
 
 `vtReturn`<br/>
 함수 반환 값의 변형 유형입니다.

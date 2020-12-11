@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4042'
 title: 컴파일러 경고 (수준 1) C4042
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4042
 ms.assetid: e4bd861b-1194-426b-bf79-68c5b021eb0a
-ms.openlocfilehash: cd8d8addb8441bd32d242c4f4858104048f7a62e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 458d8460b71ac1b0d002b0127e3637cdfd6766ff
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87197074"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97160638"
 ---
 # <a name="compiler-warning-level-1-c4042"></a>컴파일러 경고 (수준 1) C4042
 

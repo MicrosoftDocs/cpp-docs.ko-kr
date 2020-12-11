@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 식 계산기 오류 CXX0034'
 title: 식 계산기 오류 CXX0034
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - CAN0034
 - CXX0034
 ms.assetid: afcee5f1-beff-489f-aea6-04f55e76364f
-ms.openlocfilehash: d764ce8b243c7004f95650f93e7a44a36962cef4
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a396a76b2697eb731bfeb03baa91fc6a2852de42
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80195489"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97160313"
 ---
 # <a name="expression-evaluator-error-cxx0034"></a>식 계산기 오류 CXX0034
 

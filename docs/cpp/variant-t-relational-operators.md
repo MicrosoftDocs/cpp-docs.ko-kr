@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _variant_t 관계형 연산자'
 title: _variant_t 관계형 연산자
 ms.date: 11/04/2016
 f1_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - operator != [C++], relational operators
 - == operator [C++], with specific Visual C++ objects
 ms.assetid: 141bacb8-41a2-44dd-b3c0-4ad1f884f4ea
-ms.openlocfilehash: 6e0296a2bf4ce97e41fdf6208c3dd1c6b91215dc
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0a9c339bc67527e258c0d1f69060cde251c8adb9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226945"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97161431"
 ---
 # <a name="_variant_t-relational-operators"></a>_variant_t 관계형 연산자
 
@@ -49,7 +50,7 @@ bool operator!=(
 *.Psrc*<br/>
 개체와 비교할에 대 한 포인터 `VARIANT` `_variant_t` 입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 **`true`** 비교가 포함 되 면를 반환 하 고, 그렇지 않으면를 반환 **`false`** 합니다.
 

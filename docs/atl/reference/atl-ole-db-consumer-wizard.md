@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: ATL OLE DB 소비자 마법사'
 title: ATL OLE DB 소비자 마법사
 ms.date: 07/02/2019
 helpviewer_keywords:
 - ATL projects, adding ATL OLE DB consumers
 ms.assetid: dcb68ed1-2224-422f-9f7b-108a74864204
-ms.openlocfilehash: 490335f1f61987fc6e5b0b3806ee8e39c82f336f
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 5d5fb0e6d5ec08ba75aa84a501169544598d8843
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92923752"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97158701"
 ---
 # <a name="atl-ole-db-consumer-wizard"></a>ATL OLE DB 소비자 마법사
 
@@ -157,7 +158,7 @@ Visual Studio 2019 이상에서는 이 마법사를 사용할 수 없습니다.
 
      자세한 내용은 [특성의 기본 메커니즘](../../windows/attributes/cpp-attributes-com-net.md#basic-mechanics-of-attributes) 을 참조 하세요.
 
-- **형식**
+- **유형**
 
    이러한 라디오 단추 중 하나를 선택하여 소비자 클래스를 `CTable`에서 파생할지 또는 `CCommand`(기본값)에서 파생할지를 지정합니다.
 

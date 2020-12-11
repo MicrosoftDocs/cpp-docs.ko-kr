@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 연습: 응용 프로그램에 CTaskDialog 추가'
 title: '연습: 애플리케이션에 CTaskDialog 추가'
 ms.date: 04/25/2019
 helpviewer_keywords:
 - CTaskDialog, adding
 - walkthroughs [MFC], dialogs
 ms.assetid: 3a62abb8-2d86-4bec-bdb8-5784d5f9a9f8
-ms.openlocfilehash: 3a970df4911fed643045a1c6b59fcda1a853dbcf
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f7462551af785b85156f3f0b0f83b2ff3ddbf4c7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222773"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97159897"
 ---
 # <a name="walkthrough-adding-a-ctaskdialog-to-an-application"></a>연습: 애플리케이션에 CTaskDialog 추가
 
@@ -23,7 +24,7 @@ ms.locfileid: "87222773"
 
 `CTaskDialog` 는 정보를 수집하고 표시할 수 있도록 여러 선택적 요소를 지원합니다. 예를 들어 `CTaskDialog` 는 명령 링크, 사용자 지정 단추, 사용자 지정 아이콘 및 바닥글을 표시할 수 있습니다. 또한 `CTaskDialog` 에는 사용자가 선택한 선택적 요소를 확인하기 위해 작업 대화 상자를 쿼리하는 데 사용할 수 있는 여러 메서드가 있습니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
 
 이 연습을 완료하려면 다음과 같은 구성 요소가 필요합니다.
 
@@ -39,7 +40,7 @@ ms.locfileid: "87222773"
 
 1. **Mfc 응용 프로그램 마법사** 를 사용 하 여 모든 기본 설정을 사용 하 여 mfc 응용 프로그램을 만듭니다. 사용 중인 Visual Studio 버전에 대 한 마법사를 여는 방법에 대 한 지침은 [연습: 새 MFC 셸 컨트롤 사용](walkthrough-using-the-new-mfc-shell-controls.md) 을 참조 하세요.
 
-1. *MyProject*를 호출 합니다.
+1. *MyProject* 를 호출 합니다.
 
 1. **솔루션 탐색기** 를 사용하여 MyProject.cpp 파일을 엽니다.
 
@@ -94,13 +95,13 @@ ms.locfileid: "87222773"
 
 ### <a name="to-add-functionality-to-the-ctaskdialog"></a>CTaskDialog에 기능을 추가하려면
 
-1. **리소스 뷰**로 이동합니다. **리소스 뷰**표시 되지 않으면 **보기** 메뉴에서 열 수 있습니다.
+1. **리소스 뷰** 로 이동합니다. **리소스 뷰** 표시 되지 않으면 **보기** 메뉴에서 열 수 있습니다.
 
 1. **문자열 테이블** 폴더를 선택할 수 있을 때까지 **리소스 뷰** 를 확장합니다. 폴더를 확장하고 **문자열 테이블** 항목을 두 번 클릭합니다.
 
-1. 문자열 테이블의 아래쪽으로 스크롤한 다음 새 항목을 추가합니다. ID를 `TEMP_LINE1`로 변경합니다. 캡션을 **Command Line 1**로 설정합니다.
+1. 문자열 테이블의 아래쪽으로 스크롤한 다음 새 항목을 추가합니다. ID를 `TEMP_LINE1`로 변경합니다. 캡션을 **Command Line 1** 로 설정합니다.
 
-1. 다른 새 항목을 추가합니다. ID를 `TEMP_LINE2`로 변경합니다. 캡션을 **Command Line 2**로 설정합니다.
+1. 다른 새 항목을 추가합니다. ID를 `TEMP_LINE2`로 변경합니다. 캡션을 **Command Line 2** 로 설정합니다.
 
 1. MyProject.cpp로 다시 이동합니다.
 

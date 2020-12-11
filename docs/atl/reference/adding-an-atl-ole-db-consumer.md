@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: ATL OLE DB 소비자 추가'
 title: ATL OLE DB 소비자 추가
 ms.date: 05/09/2019
 helpviewer_keywords:
 - ATL OLE DB consumers
 ms.assetid: f940a513-4e42-4148-b521-dd0d7dc89fa2
-ms.openlocfilehash: c298a841bf0d37f90bcd6b53bc0c6cdf501f4dd3
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: cfd88524e369781b239bb0246ab59fcf0080a144
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92921154"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97159104"
 ---
 # <a name="adding-an-atl-ole-db-consumer"></a>ATL OLE DB 소비자 추가
 

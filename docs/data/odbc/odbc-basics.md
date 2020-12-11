@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: ODBC 기본 사항'
 title: ODBC 기초
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - ODBC, about ODBC
 - ODBC, components
 ms.assetid: ec529702-0fb2-4754-b8de-d1efa8eca18f
-ms.openlocfilehash: 042b1ce6d12e4f4a2be57c0e2e8e01d9750f5357
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 94482abd046645e445ffae7f85f192514f4fff78
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213215"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97161184"
 ---
 # <a name="odbc-basics"></a>ODBC 기초
 
@@ -28,7 +29,7 @@ ms.locfileid: "80213215"
 관련 항목 [odbc: Odbc 커서 라이브러리](../../data/odbc/odbc-the-odbc-cursor-library.md)를 읽으려고 할 수도 있습니다.
 
 > [!NOTE]
-> ODBC 데이터 소스는 이 항목에서 설명하는 MFC ODBC 클래스뿐 아니라 MFC Data Access Object(DAO) 클래스를 통해서도 액세스할 수 있습니다.
+> ODBC 데이터 원본은이 항목에서 설명 하는 MFC ODBC 클래스 또는 MFC DAO (Data Access Object) 클래스를 통해 액세스할 수 있습니다.
 
 > [!NOTE]
 > MFC ODBC 클래스는 유니코드 및 다중 스레딩을 지원 합니다. 다중 스레딩 지원에 대 한 자세한 내용은 [ODBC 클래스 및 스레드](../../data/odbc/odbc-classes-and-threads.md) 를 참조 하세요.
@@ -45,7 +46,7 @@ ODBC의 구성 요소는 다음과 같습니다.
 
 - ODBC 드라이버 관리자
 
-   응용 프로그램을 대신 하 여 ODBC 데이터베이스 드라이버를 로드 하는 동적 연결 라이브러리 (위한 odbc32.dll)입니다. 이 DLL은 응용 프로그램에 투명 합니다.
+   응용 프로그램을 대신 하 여 ODBC 데이터베이스 드라이버를 로드 하는 Odbc32.dll (동적 연결 라이브러리)입니다. 이 DLL은 응용 프로그램에 투명 합니다.
 
 - ODBC 데이터베이스 드라이버
 
@@ -53,7 +54,7 @@ ODBC의 구성 요소는 다음과 같습니다.
 
 - [ODBC 커서 라이브러리](../../data/odbc/odbc-the-odbc-cursor-library.md)
 
-   ODBC 드라이버 관리자와 드라이버 사이에 상주 하는 동적 연결 라이브러리 (Odbccr32)로, 데이터 스크롤을 처리 합니다.
+   ODBC 드라이버 관리자와 드라이버 사이에 상주 하는 Odbccr32.dll (동적 연결 라이브러리) 및 데이터 스크롤을 처리 합니다.
 
 - [ODBC 관리자](../../data/odbc/odbc-administrator.md)
 
@@ -67,4 +68,4 @@ ODBC의 구성 요소는 다음과 같습니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[ODBC(Open Database Connectivity)](../../data/odbc/open-database-connectivity-odbc.md)
+[ODBC (Open Database Connectivity)](../../data/odbc/open-database-connectivity-odbc.md)

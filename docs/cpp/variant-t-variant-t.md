@@ -1,4 +1,5 @@
 ---
+description: '자세한 내용은 _variant_t:: _variant_t을 (를) 확인 하세요.'
 title: _variant_t::_variant_t
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - _variant_t class [C++], constructor
 - _variant_t method [C++]
 ms.assetid: a50e5b33-d4c6-4a26-8e7e-a0a25fd9895b
-ms.openlocfilehash: 50c10eb4ff617f4bcdc69d2e1781a9920b9eb0e5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e49f2cf42ce1d73cb18d280d335ed267cb11df3e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233563"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97161366"
 ---
 # <a name="_variant_t_variant_t"></a>_variant_t::_variant_t
 
@@ -216,7 +217,7 @@ _variant_t(
 
 - **_variant_t (double** `dblSrc` **, VARTYPE** `vtSrc` **= VT_R8)** 는 `_variant_t` VT_R8 형식의 개체 또는 숫자 값에서 VT_DATE를 생성 **`double`** 합니다.       다른 모든 `VARTYPE` E_INVALIDARG 오류가 발생 합니다.
 
-- **CY&(_variant_t ** `cySrc` **)** 는 `_variant_t` 개체에서 VT_CY 형식의 개체를 생성 `CY` 합니다.    
+- **CY&(_variant_t** `cySrc` **)** 는 `_variant_t` 개체에서 VT_CY 형식의 개체를 생성 `CY` 합니다.    
 
 - **_variant_t (_bstr_t&** `bstrSrc` **)** 는 `_variant_t` 개체에서 VT_BSTR 형식의 개체를 생성 `_bstr_t` 합니다.     새 `BSTR`이 할당됩니다.
 

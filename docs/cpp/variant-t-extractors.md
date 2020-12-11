@@ -1,4 +1,5 @@
 ---
+description: 자세한 내용은 _variant_t 추출기을 (를) 확인 하세요.
 title: _variant_t Extractors
 ms.date: 11/04/2016
 f1_keywords:
@@ -48,12 +49,12 @@ helpviewer_keywords:
 - operator BYTE
 - operator IUnknown
 ms.assetid: 33c1782f-045a-4673-9619-1d750efc83a9
-ms.openlocfilehash: a1b7c713b5d82ff54250b622f2d4afe17abac468
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 55a02fdf422388b0e44a9aad77e86f7a76e80e3b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87185608"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97161600"
 ---
 # <a name="_variant_t-extractors"></a>_variant_t Extractors
 
@@ -107,9 +108,9 @@ operator unsigned __int64() const;
 
 - **연산자 _bstr_t ()** 개체에 캡슐화 된 문자열을 추출 `_bstr_t` 합니다.
 
-- **Operator IDispatch \* ()** 는 캡슐화 된에서 포인터를 추출 `VARIANT` 합니다. `AddRef`결과 포인터에서가 호출 되므로 사용자는를 사용 하 여 사용자가 호출 하는 것이 좋습니다 `Release` .
+- **Operator IDispatch \* ()** 는 캡슐화 된에서 포인터를 추출 `VARIANT` 합니다. `AddRef` 결과 포인터에서가 호출 되므로 사용자는를 사용 하 여 사용자가 호출 하는 것이 좋습니다 `Release` .
 
-- **연산자 IUnknown \* ()** 은 캡슐화 된에서 COM 인터페이스 포인터를 추출 `VARIANT` 합니다. `AddRef`결과 포인터에서가 호출 되므로 사용자는를 사용 하 여 사용자가 호출 하는 것이 좋습니다 `Release` .
+- **연산자 IUnknown \* ()** 은 캡슐화 된에서 COM 인터페이스 포인터를 추출 `VARIANT` 합니다. `AddRef` 결과 포인터에서가 호출 되므로 사용자는를 사용 하 여 사용자가 호출 하는 것이 좋습니다 `Release` .
 
 **Microsoft 전용 종료**
 

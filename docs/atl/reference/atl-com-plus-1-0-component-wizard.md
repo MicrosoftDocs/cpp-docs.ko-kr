@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: ATL COM + 1.0 구성 요소 마법사'
 title: ATL COM+ 1.0 구성 요소 마법사
 ms.date: 05/08/2019
 helpviewer_keywords:
 - ATL projects, adding components
 ms.assetid: 11670681-8671-4122-96a4-2e52f8dadce0
-ms.openlocfilehash: c4e77c7f3c17a90ddd09661b5fea5bad984d3245
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 774accfac1d3481270c70b39d8ec96260a790663
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92923802"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97158909"
 ---
 # <a name="atl-com-10-component-wizard"></a>ATL COM+ 1.0 구성 요소 마법사
 
@@ -74,7 +75,7 @@ Visual Studio 2008부터, 이 마법사에서 생성된 등록 스크립트는 �
 > [!NOTE]
 > 특성을 사용하여 프로젝트를 만들거나 이 마법사 페이지에서 COM+ 1.0 구성 요소에 특성이 사용된다고 지정한 경우, ATL에는 `coclass` 특성이 없기 때문에 이 옵션을 변경할 수 없습니다.
 
-- **형식**
+- **유형**
 
    레지스트리에 표시되는 개체 설명을 설정합니다.
 

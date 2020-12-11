@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 집계 및 클래스 팩터리 매크로'
 title: 집계 및 클래스 팩터리 매크로
 ms.date: 08/12/2020
 f1_keywords:
@@ -72,12 +73,12 @@ helpviewer_keywords:
 - ATL::DECLARE_PROTECT_FINAL_CONSTRUCT
 - ATL::DECLARE_VIEW_STATUS
 ms.assetid: d99d379a-0eec-481f-8daa-252dac18f163
-ms.openlocfilehash: 5fdf330cfc69ea68720666eae5952be356cad314
-ms.sourcegitcommit: 50db6d0a0d640155c9347c1914bc8859efaadd90
+ms.openlocfilehash: 7aa62bfe8e87b9e7923dfe1de1f28b6acdba595e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88197340"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97158961"
 ---
 # <a name="aggregation-and-class-factory-macros"></a>집계 및 클래스 팩터리 매크로
 
@@ -152,7 +153,7 @@ public CComObjectRootEx<CComGlobalsThreadModel>
 
 `CComClassFactory` 특정 CLSID의 개체를 만드는 메서드를 포함 하는 [IClassFactory](/windows/win32/api/unknwnbase/nn-unknwnbase-iclassfactory) 인터페이스를 구현 하 고, 새 개체를 보다 신속 하 게 만들 수 있도록 메모리의 클래스 팩터리를 잠그는 방법을 포함 합니다. `IClassFactory` 는 시스템 레지스트리에 등록 하 고 CLSID를 할당 하는 모든 클래스에 대해 구현 되어야 합니다.
 
-ATL 개체는 일반적으로 [CComCoClass](../../atl/reference/ccomcoclass-class.md)에서 파생 하 여 클래스 팩터리를 가져옵니다. 이 클래스에는 `CComClassFactory`를 기본 클래스 팩터리로 선언하는 매크로 [DECLARE_CLASSFACTORY](#declare_classfactory) 포함되어 있습니다. 이 기본값을 재정의 하려면 클래스 정의에서 DECLARE_CLASSFACTORY*XXX* 매크로 중 하나를 지정 합니다. 예를 들어 [DECLARE_CLASSFACTORY_EX](#declare_classfactory_ex) 매크로는 클래스 팩터리에 대해 지정 된 클래스를 사용 합니다.
+ATL 개체는 일반적으로 [CComCoClass](../../atl/reference/ccomcoclass-class.md)에서 파생 하 여 클래스 팩터리를 가져옵니다. 이 클래스에는 `CComClassFactory`를 기본 클래스 팩터리로 선언하는 매크로 [DECLARE_CLASSFACTORY](#declare_classfactory) 포함되어 있습니다. 이 기본값을 재정의 하려면 클래스 정의에서 DECLARE_CLASSFACTORY *XXX* 매크로 중 하나를 지정 합니다. 예를 들어 [DECLARE_CLASSFACTORY_EX](#declare_classfactory_ex) 매크로는 클래스 팩터리에 대해 지정 된 클래스를 사용 합니다.
 
 [!code-cpp[NVC_ATL_COM#8](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_3.h)]
 
@@ -244,7 +245,7 @@ ATL 개체는 일반적으로 [CComCoClass](../../atl/reference/ccomcoclass-clas
 
 [!code-cpp[NVC_ATL_COM#3](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_5.h)]
 
-`CComClassFactory2``CComClassFactory2Base`및 *라이선스*모두에서 파생 됩니다. `CComClassFactory2Base`그러면는 `IClassFactory2` 및 **CComObjectRootEx \< CComGlobalsThreadModel > **에서 파생 됩니다.
+`CComClassFactory2``CComClassFactory2Base`및 *라이선스* 모두에서 파생 됩니다. `CComClassFactory2Base`그러면는 `IClassFactory2` 및 **CComObjectRootEx \< CComGlobalsThreadModel >** 에서 파생 됩니다.
 
 ## <a name="declare_classfactory_auto_thread"></a><a name="declare_classfactory_auto_thread"></a> DECLARE_CLASSFACTORY_AUTO_THREAD
 
@@ -390,7 +391,7 @@ DECLARE_ONLY_AGGREGATABLE( x )
 
 ## <a name="declare_poly_aggregatable"></a><a name="declare_poly_aggregatable"></a> DECLARE_POLY_AGGREGATABLE
 
-개체를 만들 때 **Ccompolyobject \<** *x* **> ** 의 인스턴스를 만들도록 지정 합니다.
+개체를 만들 때 **Ccompolyobject \<** *x* **>** 의 인스턴스를 만들도록 지정 합니다.
 
 ```cpp
 DECLARE_POLY_AGGREGATABLE( x )
@@ -434,6 +435,6 @@ DECLARE_VIEW_STATUS( statusFlags )
 
 [!code-cpp[NVC_ATL_Windowing#126](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_9.h)]
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [매크로](../../atl/reference/atl-macros.md)

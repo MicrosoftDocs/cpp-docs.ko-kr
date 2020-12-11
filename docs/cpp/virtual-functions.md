@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 가상 함수'
 title: 가상 함수
 ms.date: 09/10/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - derived classes [C++], virtual functions
 - virtual functions
 ms.assetid: b3e1ed88-2a90-4af8-960a-16f47deb3452
-ms.openlocfilehash: 4296d66af8f8bb9aed4946d6dc57871f447108d2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a8e253f8debd594b1918fdcb2aed75b559b07ca8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231041"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97161341"
 ---
 # <a name="virtual-functions"></a>가상 함수
 
@@ -144,7 +145,7 @@ Invoked by Derived
 
 **`virtual`** 키워드는 파생 클래스에서 재정의 함수를 선언 하는 경우에 사용할 수 있지만 필요 하지 않습니다. 가상 함수의 재정의는 항상 가상입니다.
 
-기본 클래스의 가상 함수는 *순수 지정자*를 사용 하 여 선언 된 경우를 제외 하 고 정의 해야 합니다. 순수 가상 함수에 대 한 자세한 내용은 [추상 클래스](../cpp/abstract-classes-cpp.md)를 참조 하세요.
+기본 클래스의 가상 함수는 *순수 지정자* 를 사용 하 여 선언 된 경우를 제외 하 고 정의 해야 합니다. 순수 가상 함수에 대 한 자세한 내용은 [추상 클래스](../cpp/abstract-classes-cpp.md)를 참조 하세요.
 
 범위 결정 연산자(`::`)를 사용하여 함수 이름을 명시적으로 정규화하여 가상 함수 호출 메커니즘을 억제할 수 있습니다. `Account` 클래스가 포함된 이전의 예제를 생각해 보십시오. 기본 클래스에서 `PrintBalance`를 호출하려면 다음과 같은 코드를 사용하세요.
 

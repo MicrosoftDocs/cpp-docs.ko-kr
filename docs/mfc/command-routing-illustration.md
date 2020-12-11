@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 명령 라우팅 그림'
 title: 명령 라우팅 설명
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - command handling [MFC], routing commands
 - command routing [MFC], OnCmdMsg handler
 ms.assetid: 4b7b4741-565f-4878-b076-fd85c670f87f
-ms.openlocfilehash: d362cfe54a9b5a562237c7bb9632edae6e58228b
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 51c5182eb1fa2a8b9666e265526e9220a9f3d4a0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622919"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97159962"
 ---
 # <a name="command-routing-illustration"></a>명령 라우팅 설명
 
@@ -31,4 +32,4 @@ ms.locfileid: "84622919"
 
 ## <a name="see-also"></a>참고 항목
 
-[프레임워크가 처리기를 호출하는 방법](how-the-framework-calls-a-handler.md)
+[프레임 워크가 처리기를 호출 하는 방법](how-the-framework-calls-a-handler.md)

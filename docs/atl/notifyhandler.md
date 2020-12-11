@@ -1,16 +1,17 @@
 ---
+description: '자세히 알아보기: NotifyHandler'
 title: NotifyHandler
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - NotifyHandler function
 ms.assetid: 5ff953ec-de35-42bc-8b3c-d384d636c139
-ms.openlocfilehash: 16fb330d2da83ddfd013e33a2d4b688b2711103b
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 1c08eaa91962fa9f6acf330de89334ad1224e582
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69492298"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97159377"
 ---
 # <a name="notifyhandler"></a>NotifyHandler
 
@@ -42,9 +43,9 @@ LRESULT NotifyHandler(
 
 ## <a name="remarks"></a>설명
 
-메시지 맵에서이 메시지 처리기를 사용 하는 방법에 대 한 예제는 [NOTIFY_HANDLER](reference/message-map-macros-atl.md#notify_handler)를 참조 하세요.
+메시지 맵에서이 메시지 처리기를 사용 하는 예제는 [NOTIFY_HANDLER](reference/message-map-macros-atl.md#notify_handler))를 참조 하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [창 구현](../atl/implementing-a-window.md)<br/>
 [메시지 맵](../atl/message-maps-atl.md)<br/>

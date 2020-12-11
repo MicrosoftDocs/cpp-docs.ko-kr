@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: ATL 속성 페이지 추가'
 title: ATL 속성 페이지 추가
 ms.date: 05/09/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - ATL projects, adding property pages
 - controls [ATL], property pages
 ms.assetid: ddf92b49-42a2-46d2-b6b8-d37baedebeca
-ms.openlocfilehash: 4cd7444d18d26124f8c3c642bba55fb7592f5c8b
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 7b2798cca257f0ab80c27a6e18a23b173f1d93a9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91499319"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97159039"
 ---
 # <a name="adding-an-atl-property-page"></a>ATL 속성 페이지 추가
 
@@ -29,9 +30,9 @@ ATL(액티브 템플릿 라이브러리) 속성 페이지를 프로젝트에 추
 
 1. **솔루션 탐색기** 또는 [클래스 뷰](/visualstudio/ide/viewing-the-structure-of-code)에서 ATL 속성 페이지를 추가할 프로젝트의 이름을 마우스 오른쪽 단추로 클릭합니다.
 
-1. 바로 가기 메뉴에서 **추가** 를 클릭 한 다음 **클래스 추가**를 클릭 합니다.
+1. 바로 가기 메뉴에서 **추가** 를 클릭 한 다음 **클래스 추가** 를 클릭 합니다.
 
-1. [클래스 추가](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) 대화 상자의 **템플릿** 창에서 **ATL 속성 페이지**를 클릭한 다음, **열기**를 클릭하여 [ATL 속성 페이지 마법사](../../atl/reference/atl-property-page-wizard.md)를 표시합니다.
+1. [클래스 추가](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) 대화 상자의 **템플릿** 창에서 **ATL 속성 페이지** 를 클릭한 다음, **열기** 를 클릭하여 [ATL 속성 페이지 마법사](../../atl/reference/atl-property-page-wizard.md)를 표시합니다.
 
 컨트롤의 속성 페이지를 만든 후에 컨트롤의 속성 맵에 [PROP_PAGE](property-map-macros.md#prop_page) 항목을 제공해야 합니다.
 

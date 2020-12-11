@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: ATL Active Server 페이지 구성 요소 마법사'
 title: ATL Active Server Page 구성 요소 마법사
 ms.date: 05/09/2019
 helpviewer_keywords:
 - ASP components, creating in ATL
 ms.assetid: 5a5cb904-dbbf-44ea-ad3d-2ddd14c1d3c5
-ms.openlocfilehash: 191b739354827dc1b7f0fd22e5ba2fd57f7b14d0
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 1edfa3262e311b2042c4e8acc7332f6d1b70f06a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92923765"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97158922"
 ---
 # <a name="atl-active-server-page-component-wizard"></a>ATL Active Server Page 구성 요소 마법사
 
@@ -77,7 +78,7 @@ COM 섹션의 **Coclass** 이름을 변경하면, **형식** 및 **ProgID** 상�
 
    개체에서 지원하는 인터페이스 목록이 포함된 구성 요소 클래스의 이름을 설정합니다. 프로젝트 또는 이 개체에서 특성을 사용하는 경우, ATL에는 **coclass** 특성이 없기 때문에 이 옵션을 변경할 수 없습니다.
 
-- **형식**
+- **유형**
 
    coclass의 레지스트리에 표시되는 개체 설명을 설정합니다.
 

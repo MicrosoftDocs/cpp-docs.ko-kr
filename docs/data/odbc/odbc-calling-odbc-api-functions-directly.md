@@ -1,4 +1,5 @@
 ---
+description: 'Odbc: ODBC API 함수 직접 호출에 대해 자세히 알아보세요.'
 title: 'ODBC: ODBC API 함수 직접 호출'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - catalog functions (ODBC), calling
 - ODBC [C++], API functions
 ms.assetid: 4295f1d9-4528-4d2e-bd6a-c7569953c7fa
-ms.openlocfilehash: e1cb5df4a93fc642ccf4d500a5eb93690b0b3d75
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 3b82e0270242d59767e9d67e6eb7491a4607990f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86403827"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97161119"
 ---
 # <a name="odbc-calling-odbc-api-functions-directly"></a>ODBC: ODBC API 함수 직접 호출
 

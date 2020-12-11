@@ -1,23 +1,24 @@
 ---
+description: '자세한 정보: ATL 매크로'
 title: ATL 매크로
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ATL, macros
 - macros, ATL
 ms.assetid: 788bd803-e7dc-4dc5-9e8d-31649471415b
-ms.openlocfilehash: 2331f100f627dcd79ba2976b44da30474d93dd3a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 669e1b6b37d6181a633f396ab8a85598ef8cdc51
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62260885"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97158792"
 ---
 # <a name="atl-macros"></a>ATL 매크로
 
-ATL 매크로 범주별으로를 찾으려면 다음 항목을 참조 합니다.
+범주별로 ATL 매크로를 찾으려면 다음 항목을 참조 하세요.
 
 [집계 및 클래스 팩터리 매크로](../../atl/reference/aggregation-and-class-factory-macros.md)<br/>
-집계를 제어 및 클래스 팩터리를 선언 하는 방법을 제공 합니다.
+집계를 제어 하 고 클래스 팩터리를 선언 하는 방법을 제공 합니다.
 
 [범주 매크로](../../atl/reference/category-macros.md)<br/>
 범주 맵을 정의 합니다.
@@ -41,7 +42,7 @@ COM 인터페이스 맵을 정의 합니다.
 예외 처리에 대 한 지원을 제공 합니다.
 
 [메시지 맵 매크로](../../atl/reference/message-map-macros-atl.md)<br/>
-메시지 맵 및 항목을 정의 합니다.
+메시지 맵과 항목을 정의 합니다.
 
 [개체 맵 매크로](../../atl/reference/object-map-macros.md)<br/>
 개체 맵 및 항목을 정의 합니다.
@@ -50,7 +51,7 @@ COM 인터페이스 맵을 정의 합니다.
 ActiveX 컨트롤에 속하는 플래그를 설정 합니다.
 
 [속성 맵 매크로](../../atl/reference/property-map-macros.md)<br/>
-속성 맵 및 항목을 정의 합니다.
+속성 맵과 항목을 정의 합니다.
 
 [레지스트리 데이터 교환 매크로](../../atl/reference/registry-data-exchange-macros.md)<br/>
 레지스트리 데이터 교환 작업을 수행 합니다.
@@ -73,7 +74,7 @@ ActiveX 컨트롤에 속하는 플래그를 설정 합니다.
 [Windows 메시지 매크로](../../atl/reference/windows-messages-macros.md)<br/>
 창 메시지를 전달 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [ATL COM 데스크톱 구성 요소](../../atl/atl-com-desktop-components.md)<br/>
 [함수](../../atl/reference/atl-functions.md)<br/>

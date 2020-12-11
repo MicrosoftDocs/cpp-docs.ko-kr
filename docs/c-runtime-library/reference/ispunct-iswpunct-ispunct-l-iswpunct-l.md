@@ -1,4 +1,5 @@
 ---
+description: Ispunct, iswpunct, _ispunct_l, _iswpunct_l에 대해 자세히 알아보세요.
 title: ispunct, iswpunct, _ispunct_l, _iswpunct_l
 ms.date: 4/2/2020
 api_name:
@@ -39,12 +40,12 @@ helpviewer_keywords:
 - _iswpunct_l function
 - iswpunct_l function
 ms.assetid: 94403240-85c8-40a4-9c2b-e3e95c729c76
-ms.openlocfilehash: d0585e9a80919c63dd9aa650dc1544e95569bc8b
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 84de5978d85d87d8e4d83263652c0d4bf2ce1648
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916673"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97162341"
 ---
 # <a name="ispunct-iswpunct-_ispunct_l-_iswpunct_l"></a>ispunct, iswpunct, _ispunct_l, _iswpunct_l
 
@@ -77,7 +78,7 @@ int _iswpunct_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 *C* 가 문장 부호 문자의 특정 표현인 경우 이러한 각 루틴은 0이 아닌 값을 반환 합니다. **ispunct** 는 공백 문자가 아니거나 **isalnum** 가 0이 아닌 문자가 아닌 인쇄 가능한 문자에 대해 0이 아닌 값을 반환 합니다. **iswpunct** 는 공백 와이드 문자 또는 **iswalnum** 가 0이 아닌 와이드 문자가 아닌 인쇄 가능한 와이드 문자에 대해 0이 아닌 값을 반환 합니다. *C* 가 테스트 조건을 충족 하지 않는 경우 이러한 루틴은 각각 0을 반환 합니다.
 
@@ -106,8 +107,8 @@ int _iswpunct_l(
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [문자 분류](../../c-runtime-library/character-classification.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
+[로캘](../../c-runtime-library/locale.md)<br/>
 [is, isw 루틴](../../c-runtime-library/is-isw-routines.md)<br/>

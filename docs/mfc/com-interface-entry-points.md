@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: COM 인터페이스 진입점'
 title: COM 인터페이스 진입점
 ms.date: 03/27/2019
 helpviewer_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - MFC, managing state data
 - COM interfaces, entry points
 ms.assetid: 9e7421dc-0731-4748-9e1b-90acbaf26d77
-ms.openlocfilehash: 132dd7394119081dcaeb098c2088782ff5d40ae4
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 805ac906c3ccca246d1af71c689aaf768f789999
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619338"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97160014"
 ---
 # <a name="com-interface-entry-points"></a>COM 인터페이스 진입점
 
 COM 인터페이스의 멤버 함수에 대해, 매크로를 사용 `METHOD_PROLOGUE` 하 여 내보낸 인터페이스의 메서드를 호출할 때 적절 한 전역 상태를 유지 합니다.
 
-일반적으로 파생 개체에서 구현 하는 인터페이스의 멤버 함수는 `CCmdTarget` 이미이 매크로를 사용 하 여 포인터의 자동 초기화를 제공 `pThis` 합니다. 예를 들면 다음과 같습니다.
+일반적으로 파생 개체에서 구현 하는 인터페이스의 멤버 함수는 `CCmdTarget` 이미이 매크로를 사용 하 여 포인터의 자동 초기화를 제공 `pThis` 합니다. 예를 들어:
 
 [!code-cpp[NVC_MFCConnectionPoints#5](codesnippet/cpp/com-interface-entry-points_1.cpp)]
 

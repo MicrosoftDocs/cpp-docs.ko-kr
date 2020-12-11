@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: _cprintf, _cprintf_l, _cwprintf, _cwprintf_l'
 title: _cprintf, _cprintf_l, _cwprintf, _cwprintf_l
 ms.date: 11/04/2016
 api_name:
@@ -48,12 +49,12 @@ helpviewer_keywords:
 - cwprintf_l function
 - _cprintf function
 ms.assetid: 67ffefd4-45b3-4be0-9833-d8d26ac7c4e2
-ms.openlocfilehash: aa0dfe22312f5a4736a6bc1b7a52e90dfa425a14
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: a935f43c00fab31a582012e938db16e3aa1a5f6e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70942656"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97162380"
 ---
 # <a name="_cprintf-_cprintf_l-_cwprintf-_cwprintf_l"></a>_cprintf, _cprintf_l, _cwprintf, _cwprintf_l
 
@@ -98,18 +99,18 @@ int _cwprintf_l(
 
 ## <a name="remarks"></a>설명
 
-이 함수는 **_putch** 함수 ( **_putwch** for **_cwprintf**)를 사용 하 여 문자를 출력 하는 일련의 문자 및 값을 콘솔에 직접 포맷 하 고 인쇄 합니다. *Argument_list* 의 각 인수 (있는 경우)는 *형식*의 해당 형식 사양에 따라 변환 되 고 출력 됩니다. *Format* 인수는 [printf 및 wprintf 함수에 대 한 형식 지정 구문을](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)사용 합니다. **Fprintf**, **printf**및 **sprintf** 함수와 달리 출력 시 **_cprintf** 및 **_cwprintf** 는 줄 바꿈 문자를 캐리지 리턴-줄 바꿈 (CR-LF) 조합으로 변환 하지 않습니다.
+이러한 함수는 **_putch** 함수 ( **_cwprintf** 의 **_putwch** )를 사용 하 여 문자를 출력 하는 일련의 문자 및 값을 콘솔에 직접 포맷 하 고 인쇄 합니다. *Argument_list* 의 각 인수 (있는 경우)는 *형식의* 해당 형식 지정에 따라 변환 되 고 출력 됩니다. *Format* 인수는 [printf 및 wprintf 함수에 대 한 형식 지정 구문을](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)사용 합니다. **Fprintf**, **printf** 및 **sprintf** 함수와 달리 줄 바꿈 문자를 출력 시 캐리지 리턴-줄 바꿈 (CR-LF) 조합으로 변환 하거나 **_cwprintf** 하지 **_cprintf** 않습니다.
 
-중요 한 차이점은 **_cwprintf** 는 Windows에서 사용 될 때 유니코드 문자를 표시 한다는 것입니다. **_Cprintf**와 달리 **_cwprintf** 는 현재 콘솔 로캘 설정을 사용 합니다.
+중요 한 차이점은 **_Cwprintf** Windows에서 사용 될 때 유니코드 문자를 표시 한다는 것입니다. **_Cprintf** 와 달리 **_cwprintf** 는 현재 콘솔 로캘 설정을 사용 합니다.
 
 **_L** 접미사가 있는 이러한 함수 버전은 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하 고는 동일 합니다.
 
-**_cprintf** 는 *format* 매개 변수의 유효성을 검사 합니다. *Format* 이 null 포인터인 경우 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 함수는-1을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
+**_cprintf** *형식* 매개 변수의 유효성을 검사 합니다. *Format* 이 null 포인터인 경우 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 함수는-1을 반환 하 고 **errno** 를 **EINVAL** 로 설정 합니다.
 
 > [!IMPORTANT]
-> *format*이 사용자 정의 문자열이 아닌지 확인하세요.
+> *format* 이 사용자 정의 문자열이 아닌지 확인하세요.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
 
 |Tchar.h 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -123,7 +124,7 @@ int _cwprintf_l(
 |**_cprintf**, **_cprintf_l**|\<conio.h>|
 |**_cwprintf**, **_cwprintf_l**|\<conio.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
@@ -153,13 +154,13 @@ int main( void )
 -16  001d  62511  A Test
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[콘솔 및 포트 I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
+[콘솔 및 포트 i/o](../../c-runtime-library/console-and-port-i-o.md)<br/>
 [_cscanf, _cscanf_l, _cwscanf, _cwscanf_l](cscanf-cscanf-l-cwscanf-cwscanf-l.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \_ _swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
 [vfprintf, _vfprintf_l, vfwprintf, _vfwprintf_l](vfprintf-vfprintf-l-vfwprintf-vfwprintf-l.md)<br/>
 [_cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l](cprintf-s-cprintf-s-l-cwprintf-s-cwprintf-s-l.md)<br/>
 [_cprintf_p, _cprintf_p_l, _cwprintf_p, _cwprintf_p_l](cprintf-p-cprintf-p-l-cwprintf-p-cwprintf-p-l.md)<br/>

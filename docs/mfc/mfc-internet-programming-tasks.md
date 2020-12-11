@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: MFC 인터넷 프로그래밍 작업'
 title: MFC 인터넷 프로그래밍 작업
 ms.date: 09/12/2018
 helpviewer_keywords:
 - Internet applications [MFC], getting started
 - Internet applications [MFC], first steps
 ms.assetid: 6377e9b8-07c4-4380-b63b-05f5a9061313
-ms.openlocfilehash: 6d8a542ada94bc52ee2000bc92ae0457ec87609c
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 26823dbd85222998ebf20947ac2af30a6b11e987
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84617957"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97159936"
 ---
 # <a name="mfc-internet-programming-tasks"></a>MFC 인터넷 프로그래밍 작업
 
@@ -32,9 +33,9 @@ ms.locfileid: "84617957"
 
 시작 하는 방법에 대 한 자세한 내용은 다음 항목을 참조 하십시오.
 
-- [애플리케이션 디자인 선택](application-design-choices.md)
+- [응용 프로그램 디자인 선택](application-design-choices.md)
 
-- [MFC 애플리케이션 작성](writing-mfc-applications.md)
+- [MFC 응용 프로그램 작성](writing-mfc-applications.md)
 
 - [인터넷의 ActiveX 컨트롤](activex-controls-on-the-internet.md)
 
@@ -42,7 +43,7 @@ ms.locfileid: "84617957"
 
 - [인터넷의 비동기 모니커](asynchronous-monikers-on-the-internet.md)
 
-- [인터넷 애플리케이션 테스트](testing-internet-applications.md)
+- [인터넷 응용 프로그램 테스트](testing-internet-applications.md)
 
 - [인터넷 보안](internet-security-cpp.md)
 

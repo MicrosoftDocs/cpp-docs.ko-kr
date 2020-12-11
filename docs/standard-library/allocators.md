@@ -1,16 +1,17 @@
 ---
+description: '다음에 대 한 자세한 정보: 할당자'
 title: Allocators
 ms.date: 11/04/2016
 helpviewer_keywords:
 - allocators
 - C++ Standard Library, allocators
 ms.assetid: ac95023b-9e7d-49f5-861a-bf7a9a340746
-ms.openlocfilehash: fdad5cc8417740f7736bcf34cbc941a4e66de87d
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 4001ba007037e50ca3c5d2bea079f313b1c52bc3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844758"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163433"
 ---
 # <a name="allocators"></a>Allocators
 
@@ -24,11 +25,11 @@ template <
 class vector
 ```
 
-C++ 표준 라이브러리에서는 할당자에 대한 기본 구현을 제공합니다. C++11 이상에서 기본 할당자는 더 작은 인터페이스를 표시하도록 업데이트되고 새 할당자를 *최소 할당자*라고 합니다. 특히 최소 할당자의 `construct()` 멤버는 성능을 크게 향상할 수 있는 이동 의미 체계를 지원합니다. 대부분 이 기본 할당자로 충분해야 합니다. C++ 11에서 할당자 형식 매개 변수를 사용하는 모든 표준 라이브러리 형식 및 함수는 `std::function`, `shared_ptr, allocate_shared()` 및 `basic_string`을 포함한 최소 할당자 인터페이스를 지원합니다.  기본 할당자에 대한 자세한 내용은 [allocator 클래스](allocator-class.md)를 참조하세요.
+C++ 표준 라이브러리에서는 할당자에 대한 기본 구현을 제공합니다. C++11 이상에서 기본 할당자는 더 작은 인터페이스를 표시하도록 업데이트되고 새 할당자를 *최소 할당자* 라고 합니다. 특히 최소 할당자의 `construct()` 멤버는 성능을 크게 향상할 수 있는 이동 의미 체계를 지원합니다. 대부분 이 기본 할당자로 충분해야 합니다. C++ 11에서 할당자 형식 매개 변수를 사용하는 모든 표준 라이브러리 형식 및 함수는 `std::function`, `shared_ptr, allocate_shared()` 및 `basic_string`을 포함한 최소 할당자 인터페이스를 지원합니다.  기본 할당자에 대한 자세한 내용은 [allocator 클래스](allocator-class.md)를 참조하세요.
 
 ## <a name="writing-your-own-allocator-c11"></a>고유한 할당자 작성(C++11)
 
-기본 할당자는 및를 사용 하 여 **`new`** **`delete`** 메모리를 할당 및 할당 취소 합니다. 공유 메모리를 사용하는 등의 다른 메모리 할당 방법을 사용하려면 고유한 할당자를 만들어야 합니다. C++11을 대상으로 지정하고 새 사용자 지정 할당자를 작성해야 할 경우 가능하면 최소 할당자로 설정하세요. 이전 스타일 할당자를 이미 구현했더라도 자동으로 제공되는 더 효율적인 `construct()` 메서드를 사용하기 위해 이전 스타일 할당자를 *최소 할당자*로 수정하는 것이 좋습니다.
+기본 할당자는 및를 사용 하 여 **`new`** **`delete`** 메모리를 할당 및 할당 취소 합니다. 공유 메모리를 사용하는 등의 다른 메모리 할당 방법을 사용하려면 고유한 할당자를 만들어야 합니다. C++11을 대상으로 지정하고 새 사용자 지정 할당자를 작성해야 할 경우 가능하면 최소 할당자로 설정하세요. 이전 스타일 할당자를 이미 구현했더라도 자동으로 제공되는 더 효율적인 `construct()` 메서드를 사용하기 위해 이전 스타일 할당자를 *최소 할당자* 로 수정하는 것이 좋습니다.
 
 최소 할당자에는 훨씬 더 적은 상용구가 필요하고 최소 할당자를 사용하여 모든 작업을 수행하는 `allocate` 및 `deallocate` 멤버 함수에 포커스를 지정할 수 있습니다. 최소 할당자를 만들 때 아래 예제에 표시된 멤버를 제외한 멤버를 구현하지 마세요.
 

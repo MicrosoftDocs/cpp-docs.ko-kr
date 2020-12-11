@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: _variant_t:: operator ='
 title: _variant_t::operator =
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - operator = [C++], variant
 - = operator [C++], with specific Visual C++ objects
 ms.assetid: 77622723-6e49-4dec-9e0f-fa74028f1a3c
-ms.openlocfilehash: 2db26a378526cd5f48992cb32ea46e9677125e66
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a304f0904f697ade7d04c6d12f375571a156e989
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226960"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97161470"
 ---
 # <a name="_variant_toperator-"></a>_variant_t::operator =
 
@@ -119,9 +120,9 @@ _variant_t& operator=(
 
 다음 연산자는 `_variant_t` 개체에 새 값을 할당합니다.
 
-- **operator = (**  *varsrc*  **)** `VARIANT`개체에 기존을 할당 `_variant_t` 합니다.
+- **operator = (**  *varsrc*  **)** `VARIANT` 개체에 기존을 할당 `_variant_t` 합니다.
 
-- **operator = (**  *pvarsrc*  **)** `VARIANT`개체에 기존을 할당 `_variant_t` 합니다.
+- **operator = (**  *pvarsrc*  **)** `VARIANT` 개체에 기존을 할당 `_variant_t` 합니다.
 
 - **연산자 = (**  *var_t_Src*  **)** 기존 `_variant_t` 개체를 개체에 할당 `_variant_t` 합니다.
 
@@ -147,7 +148,7 @@ _variant_t& operator=(
 
 - **연산자 = (**  *pIUnknownSrc*  **)** 개체 `VT_UNKNOWN` 에 개체를 할당 `_variant_t` 합니다.
 
-- **operator = (**  *src*  **)** `DECIMAL`개체에 값을 할당 `_variant_t` 합니다.
+- **operator = (**  *src*  **)** `DECIMAL` 개체에 값을 할당 `_variant_t` 합니다.
 
 - **operator = (** `bSrc` **)** `BYTE` 개체에 값을 할당 `_variant_t` 합니다.  
 

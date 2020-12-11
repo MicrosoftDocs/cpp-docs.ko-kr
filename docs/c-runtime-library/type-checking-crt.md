@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 형식 검사 (CRT)'
 title: 형식 검사(CRT)
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - variable argument functions
 - type checking
 ms.assetid: 1ba7590b-d1c0-4636-b6a0-e231395abdad
-ms.openlocfilehash: bb5aecc2b47aa8e88666f42d8022395bf99fd85e
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: cf27847bf2aeef278fb4699cea5a0cf74a961086
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57747685"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97162355"
 ---
 # <a name="type-checking-crt"></a>형식 검사(CRT)
 
 컴파일러는 아래와 같이 다양한 수의 인수를 사용할 수 있는 함수에서 제한된 형식 검사를 수행합니다.
 
-|함수 호출 |형식이 검사된 인수|
+|함수 호출|형식이 검사된 인수|
 |-------------------|-----------------------------|
 |`_cprintf_s`, `_cscanf_s`, `printf_s`, `scanf_s`|첫 번째 인수(형식 문자열)|
 |`fprintf_s`, `fscanf_s`, `sprintf_s`, `sscanf_s`|처음 두 개의 인수(파일 또는 버퍼 및 형식 문자열)|

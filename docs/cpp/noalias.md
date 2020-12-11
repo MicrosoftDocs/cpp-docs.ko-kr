@@ -1,4 +1,5 @@
 ---
+description: 다음에 대해 자세히 알아보세요. `noalias`
 title: noalias
 ms.date: 07/07/2020
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - noalias __declspec keyword
 - __declspec keyword [C++], noalias
 ms.assetid: efafa8b0-7f39-4edc-a81e-d287ae882c9b
-ms.openlocfilehash: 70c1f4e8bfa426e858014a78febc424b473a89ae
-ms.sourcegitcommit: e17cc8a478b51739d67304d7d82422967b35f716
+ms.openlocfilehash: 56306404fc79ea851835ae5913bbdb0b297ba880
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86127873"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97161653"
 ---
 # `noalias`
 
@@ -101,5 +102,5 @@ int main()
 ## <a name="see-also"></a>참고 항목
 
 [`__declspec`](../cpp/declspec.md)<br/>
-[C++ 키워드](../cpp/keywords-cpp.md)<br/>
+[키워드](../cpp/keywords-cpp.md)<br/>
 [`__declspec(restrict)`](../cpp/restrict.md)

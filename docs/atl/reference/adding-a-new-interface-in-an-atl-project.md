@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: ATL 프로젝트에 새 인터페이스 추가'
 title: ATL 프로젝트에 새 인터페이스 추가
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - controls [ATL], interfaces
 - ATL projects, adding interfaces
 ms.assetid: 7d34b023-2c6b-4155-aca3-d47a40968063
-ms.openlocfilehash: 8bf0138f85929e06b67e9a2e294eda8a2f385e1a
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 7db5cd5f613985caf22253736ae691f3af9240ad
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91499383"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97159143"
 ---
 # <a name="adding-a-new-interface-in-an-atl-project"></a>ATL 프로젝트에 새 인터페이스 추가
 
@@ -26,7 +27,7 @@ ms.locfileid: "91499383"
 
 1. [클래스 뷰](/visualstudio/ide/viewing-the-structure-of-code)에서 컨트롤의 클래스 이름을 마우스 오른쪽 단추로 클릭 합니다. 예를 들어, 모든 컨트롤 또는 복합 컨트롤 또는 헤더 파일에서 BEGIN_COM_MAP 매크로를 구현 하는 기타 컨트롤 클래스입니다.
 
-1. 바로 가기 메뉴에서 **추가**를 클릭 하 고 **인터페이스 구현**을 클릭 합니다.
+1. 바로 가기 메뉴에서 **추가** 를 클릭 하 고 **인터페이스 구현** 을 클릭 합니다.
 
 1. [인터페이스 구현 마법사](../../ide/implementing-an-interface-visual-cpp.md#implement-interface-wizard)에서 구현할 인터페이스를 선택 합니다. 사용 가능한 typelib에 인터페이스가 없으면 .idl 파일에 수동으로 추가 해야 합니다.
 
@@ -44,6 +45,6 @@ ms.locfileid: "91499383"
 
 [ATL 프로젝트 마법사](../../atl/reference/atl-project-wizard.md)<br/>
 [Visual Studio의 C++ 프로젝트 형식](../../build/reference/visual-cpp-project-types.md)<br/>
-[ATL 및 C 런타임 코드를 사용한 프로그래밍](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
+[ATL 및 C Run-Time 코드를 사용한 프로그래밍](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [ATL COM 개체의 기본 사항](../../atl/fundamentals-of-atl-com-objects.md)<br/>
 [기본 ATL 프로젝트 구성](../../atl/reference/default-atl-project-configurations.md)

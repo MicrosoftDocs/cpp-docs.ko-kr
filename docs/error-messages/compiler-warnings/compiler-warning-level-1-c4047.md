@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4047'
 title: 컴파일러 경고 (수준 1) C4047
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4047
 ms.assetid: b75ad6fb-5c93-4434-a85f-c4083051a5de
-ms.openlocfilehash: be2f755793de53aa8ba88ac0a77c5031c7112226
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 45a628f0ef84d634ee301d5980394a1cec503aeb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90686407"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97160625"
 ---
 # <a name="compiler-warning-level-1-c4047"></a>컴파일러 경고 (수준 1) C4047
 
