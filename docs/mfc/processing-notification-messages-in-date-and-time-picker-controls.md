@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 날짜 및 시간 선택 컨트롤에서 알림 메시지 처리'
 title: 날짜 및 시간 선택 컨트롤의 알림 메시지 처리
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - DTN_FORMAT notification [MFC]
 - DateTimePicker control [MFC]
 ms.assetid: ffbe29ab-ff80-4609-89f7-260b404439c4
-ms.openlocfilehash: 3c568d231cc02b2529a4d97ab7faed51c1737b19
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 07ac9c4c8ba58c833591409b1f5ab405cd05ebc3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84620998"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97154827"
 ---
 # <a name="processing-notification-messages-in-date-and-time-picker-controls"></a>날짜 및 시간 선택 컨트롤의 알림 메시지 처리
 

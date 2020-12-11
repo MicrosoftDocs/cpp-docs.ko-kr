@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: `/Zc:externConstexpr` (extern constexpr 변수 사용)'
 title: /Zc:externConstexpr(extern constexpr 변수 사용)
 ms.date: 02/28/2018
 f1_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - -Zc:externConstexpr compiler option (C++)
 - extern constexpr variables (C++)
 ms.assetid: 4da5e33a-2e4d-4ed2-8616-bd8f43265c27
-ms.openlocfilehash: db5a8892bcc11538c3ff883a0e9a3a27db0ee14f
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 5f3120ba467c70cde2d0deb6932e408a2cd688c8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502798"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156127"
 ---
 # <a name="zcexternconstexpr-enable-extern-constexpr-variables"></a>`/Zc:externConstexpr` (Extern constexpr 변수 사용)
 
 **`/Zc:externConstexpr`** 컴파일러 옵션은 c + + 표준을 준수 하 고 변수에 대 한 외부 링크를 허용 하도록 컴파일러에 지시 합니다 **`constexpr`** . 기본적으로 Visual Studio는 **`constexpr`** 키워드를 지정 하는 경우에도 항상 변수 내부 링크를 제공 **`extern`** 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **`/Zc:externConstexpr`**[**`-`**]
 

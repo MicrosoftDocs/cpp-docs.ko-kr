@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4628'
 title: 컴파일러 경고(수준 1) C4628
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4628
 ms.assetid: 20fdc6f8-5f6a-40cc-aff8-c7ccf3d8ec26
-ms.openlocfilehash: affb2b5231d3745d4826e92657e355ec99570e7e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: b5dd017afb5b8bb0d882700cb047643d6d118685
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80199669"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97112377"
 ---
 # <a name="compiler-warning-level-1-c4628"></a>컴파일러 경고(수준 1) C4628
 

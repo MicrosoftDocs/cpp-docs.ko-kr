@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: _cprintf_p, _cprintf_p_l, _cwprintf_p, _cwprintf_p_l'
 title: _cprintf_p, _cprintf_p_l, _cwprintf_p, _cwprintf_p_l
 ms.date: 11/04/2016
 api_name:
@@ -46,12 +47,12 @@ helpviewer_keywords:
 - tcprintf_p function
 - cprintf_p function
 ms.assetid: 1f82fd7d-13c8-4c4a-a3e4-db0df3873564
-ms.openlocfilehash: a02de28a61812147c192495c4794830f85567a10
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 63b02da66c3eb8856e735eb8445bd688fc1636aa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70942644"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97155999"
 ---
 # <a name="_cprintf_p-_cprintf_p_l-_cwprintf_p-_cwprintf_p_l"></a>_cprintf_p, _cprintf_p_l, _cwprintf_p, _cwprintf_p_l
 
@@ -100,18 +101,18 @@ int _cwprintf_p_l(
 
 ## <a name="remarks"></a>설명
 
-이러한 함수는 문자를 출력 하는 **_putch** 및 **_putwch** 함수를 사용 하 여 일련의 문자 및 값의 서식을 지정 하 고 콘솔에 직접 출력 합니다. 각 *인수* (있는 경우)는 *형식*의 해당 형식 사양에 따라 변환 되 고 출력 됩니다. 형식은 [printf_p](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) 함수의 *format* 매개 변수와 동일한 양식 및 함수를 포함 합니다. **_Cprintf_p** 와 **cprintf_s** 의 차이점은 **_cprintf_p** 는 위치 매개 변수를 지원 한다는 것입니다 .이를 통해 형식 문자열에서 인수가 사용 되는 순서를 지정할 수 있습니다. 자세한 내용은 [printf_p 위치 매개 변수](../../c-runtime-library/printf-p-positional-parameters.md)를 참조하세요.
+이러한 함수는 문자를 출력 하는 **_putch** 및 **_putwch** 함수를 사용 하 여 일련의 문자 및 값의 서식을 지정 하 고 콘솔에 직접 출력 합니다. 각 *인수* (있는 경우)는 *형식* 의 해당 형식 사양에 따라 변환 되 고 출력 됩니다. 형식은 [printf_p](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) 함수에 대 한 *형식* 매개 변수와 동일한 형식 및 기능을 포함 합니다. **_Cprintf_p** 와 **cprintf_s** 의 차이점은 **_cprintf_p** 에서 위치 매개 변수를 지원 한다는 것입니다 .이를 통해 형식 문자열에서 인수가 사용 되는 순서를 지정할 수 있습니다. 자세한 내용은 [printf_p 위치 매개 변수](../../c-runtime-library/printf-p-positional-parameters.md)를 참조하세요.
 
-**Fprintf_p**, **printf_p**및 **sprintf_p** 함수와 달리 **_cprintf_p** 및 **_cwprintf_p** 는 출력 시 줄 바꿈 문자를 캐리지 리턴-줄 바꿈 (CR-LF) 조합으로 변환 하지 않습니다. 중요 한 차이점은 **_cwprintf_p** 는 Windows NT에서 사용 될 때 유니코드 문자를 표시 한다는 것입니다. **_Cprintf_p**와 달리 **_cwprintf_p** 는 현재 콘솔 로캘 설정을 사용 합니다.
+**Fprintf_p**, **printf_p** 및 **sprintf_p** 함수와 달리 줄 바꿈 문자는 출력할 때 줄 바꿈 문자를 캐리지 리턴-줄 바꿈 (CR-LF) 조합으로 변환 하지 **_cwprintf_p** **_cprintf_p** 않습니다. 중요 한 차이점은 **_Cwprintf_p** Windows NT에서 사용 될 때 유니코드 문자를 표시 한다는 것입니다. **_Cprintf_p** 와 달리 **_cwprintf_p** 는 현재 콘솔 로캘 설정을 사용 합니다.
 
 **_L** 접미사가 있는 이러한 함수 버전은 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하 고는 동일 합니다.
 
 > [!IMPORTANT]
-> *format*이 사용자 정의 문자열이 아닌지 확인하세요.
+> *format* 이 사용자 정의 문자열이 아닌지 확인하세요.
 
-또한 **_cprintf_s** 및 **_cwprintf_s**와 같이 입력 포인터 및 형식 문자열의 유효성을 검사 합니다. *Format* 또는 *인수가* **NULL**이거나 형식 문자열에 잘못 된 형식 지정 문자가 포함 되어 있는 경우 이러한 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는-1을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
+또한 **_cprintf_s** 및 **_cwprintf_s** 와 같이 입력 포인터 및 형식 문자열의 유효성을 검사 합니다. *Format* 또는 *인수가* **NULL** 이거나 형식 문자열에 잘못 된 형식 지정 문자가 포함 되어 있는 경우 이러한 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는-1을 반환 하 고 **errno** 를 **EINVAL** 로 설정 합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
 
 |Tchar.h 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -125,7 +126,7 @@ int _cwprintf_p_l(
 |**_cprintf_p**, **_cprintf_p_l**|\<conio.h>|
 |**_cwprintf_p**, **_cwprintf_p_l**|\<conio.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
@@ -155,9 +156,9 @@ int main( void )
 -16  001d  62511  A Test
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[콘솔 및 포트 I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
+[콘솔 및 포트 i/o](../../c-runtime-library/console-and-port-i-o.md)<br/>
 [_cscanf, _cscanf_l, _cwscanf, _cwscanf_l](cscanf-cscanf-l-cwscanf-cwscanf-l.md)<br/>
 [_cscanf_s, _cscanf_s_l, _cwscanf_s, _cwscanf_s_l](cscanf-s-cscanf-s-l-cwscanf-s-cwscanf-s-l.md)<br/>
 [_fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l](fprintf-p-fprintf-p-l-fwprintf-p-fwprintf-p-l.md)<br/>

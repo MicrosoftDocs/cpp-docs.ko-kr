@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: &lt; 반복기&gt;'
 title: '&lt;iterator&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - iterator header
 ms.assetid: c61a3962-f3ed-411a-b5a3-e8b3c2b500bd
-ms.openlocfilehash: 08e2051db70ee1891c7b60860c7ea0b423855be5
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9c40d46c5cde45baa66c8173d2b6d8f0186d1bc9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841924"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97112065"
 ---
 # <a name="ltiteratorgt"></a>&lt;iterator&gt;
 
@@ -57,7 +58,7 @@ Visual Studio는 확인 및 확인되지 않은 반복기에 대한 다양한 �
 |[crend](../standard-library/iterator-functions.md#crend)||
 |[data](../standard-library/iterator-functions.md#data)||
 |[distance](../standard-library/iterator-functions.md#distance)|두 반복기에 의해 주소가 지정된 위치 사이의 간격의 수를 결정합니다.|
-|[종단](../standard-library/iterator-functions.md#end)|지정된 컨테이너에서 마지막 요소 다음의 요소에 대한 반복기를 검색합니다.|
+|[end](../standard-library/iterator-functions.md#end)|지정된 컨테이너에서 마지막 요소 다음의 요소에 대한 반복기를 검색합니다.|
 |[empty](../standard-library/iterator-functions.md#empty)||
 |[front_inserter](../standard-library/iterator-functions.md#front_inserter)|지정된 컨테이너 앞에 요소를 삽입할 수 있는 반복기를 만듭니다.|
 |[삽입기](../standard-library/iterator-functions.md#inserter)|지정된 삽입 지점에서 컨테이너에 새 요소를 추가하는 반복기 어댑터입니다.|
@@ -96,7 +97,7 @@ Visual Studio는 확인 및 확인되지 않은 반복기에 대한 다양한 �
 |[insert_iterator](../standard-library/insert-iterator-class.md)|클래스 템플릿은 출력 반복기 개체를 설명 합니다. `Container`컨테이너 라고 하는 보호 된 개체를 통해 액세스 하는 형식의 컨테이너에 요소를 삽입 `pointer` 합니다. 또한 `iterator` 이라는 클래스의 보호 된 개체를 저장 `Container::iterator` `iter` 합니다.|
 |[istream_iterator](../standard-library/istream-iterator-class.md)|클래스 템플릿은 입력 반복기 개체를 설명 합니다. 이 클래스는 저장 하는 `Ty` 개체를 통해 액세스 하는 입력 스트림에서 클래스의 개체를 추출 하 여에 대 한 형식 포인터입니다 `basic_istream` \<**Elem**, **Tr**> .|
 |[istreambuf_iterator](../standard-library/istreambuf-iterator-class.md)|클래스 템플릿은 입력 반복기 개체를 설명 합니다. 클래스의 요소를 `Elem` 에 저장 하는 개체를 통해 액세스 하는 출력 스트림 버퍼에 형식 `pointer` 으로 삽입 `basic_streambuf` \<**Elem**, **Tr**> 합니다.|
-|[반복](../standard-library/iterator-struct.md)|클래스 템플릿은 모든 반복기에 대해 기본 형식으로 사용 됩니다.|
+|[iterator](../standard-library/iterator-struct.md)|클래스 템플릿은 모든 반복기에 대해 기본 형식으로 사용 됩니다.|
 |[iterator_traits](../standard-library/iterator-traits-struct.md)|다른 반복기 형식과 관련이 되어 같은 방식으로 참조되는 중요한 형식을 제공하는 템플릿 도우미 클래스입니다.|
 |[move_iterator](../standard-library/move-iterator-class.md)|다음 `move_iterator` 개체는 `RandomIterator` 형식의 임의 액세스 반복기를 저장합니다. 역참조 되는 경우를 제외하고 임의 액세스 반복기처럼 동작합니다. 다음 `operator*` 결과는 `value_type&&:`을 만들기 위해 암시적으로 `rvalue reference`로 캐스팅됩니다.|
 |[ostream_iterator](../standard-library/ostream-iterator-class.md)|클래스 템플릿은 출력 반복기 개체를 설명 합니다. 클래스의 개체를에 대 한 `Type` 형식의를 저장 하는 개체를 통해 액세스 하는 출력 스트림에 `pointer` 삽입 `basic_ostream` \<**Elem**, **Tr**> 합니다.|

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 서버 등록 전역 함수'
 title: 서버 등록 전역 함수
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 - atlbase/ATL::AtlComModuleRevokeClassObjects
 - atlbase/ATL::AtlComModuleGetClassObject
 ms.assetid: c2f0a35d-857c-4538-a44d-c4ea0db63b06
-ms.openlocfilehash: 4a84c311e34f1bc37b2f51e2152b6fcf2e46e2a3
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 7841c162c2c7c0c93cd8edcd8fd6d78ae4bb2b1e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835222"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97157739"
 ---
 # <a name="server-registration-global-functions"></a>서버 등록 전역 함수
 
@@ -173,7 +174,7 @@ COM 모듈에 대 한 포인터입니다.
 요청 된 인터페이스의 IID입니다.
 
 *ppv*<br/>
-*Riid*로 식별 되는 인터페이스 포인터에 대 한 포인터입니다. 개체가이 인터페이스를 지원 하지 않는 경우 *ppv* 가 NULL로 설정 됩니다.
+*Riid* 로 식별 되는 인터페이스 포인터에 대 한 포인터입니다. 개체가이 인터페이스를 지원 하지 않는 경우 *ppv* 가 NULL로 설정 됩니다.
 
 ### <a name="return-value"></a>반환 값
 

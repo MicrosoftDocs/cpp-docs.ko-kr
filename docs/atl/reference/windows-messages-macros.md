@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: Windows 메시지 매크로'
 title: Windows 메시지 매크로
 ms.date: 11/04/2016
 f1_keywords:
 - atlbase/ATL::WM_FORWARDMSG
 ms.assetid: 63abd22c-372d-4148-bb04-c605950ae64f
-ms.openlocfilehash: b4cd3c2eea24449eb17050b147d9c59560d8358f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: be5913c5eaa88ca0020a978f2b3f6686a6756715
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834442"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97157583"
 ---
 # <a name="windows-messages-macros"></a>Windows 메시지 매크로
 
@@ -39,7 +40,7 @@ WM_FORWARDMSG
 
 WM_FORWARDMSG를 사용 하 여 창에서 받은 메시지를 처리 하기 위해 다른 창으로 전달 합니다. LPARAM 및 WPARAM 매개 변수는 다음과 같이 사용 됩니다.
 
-|매개 변수|사용량|
+|매개 변수|사용|
 |---------------|-----------|
 |WPARAM|사용자가 정의한 데이터|
 |LPARAM|`MSG`메시지에 대 한 정보를 포함 하는 구조체에 대 한 포인터입니다.|

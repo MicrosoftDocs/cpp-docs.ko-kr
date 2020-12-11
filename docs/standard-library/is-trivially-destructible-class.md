@@ -1,4 +1,5 @@
 ---
+description: Is_trivially_destructible 클래스에 대해 자세히 알아보세요.
 title: is_trivially_destructible 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - is_trivially_destructible
 ms.assetid: 3f7a787d-2448-40c5-ac51-a228318e02ce
-ms.openlocfilehash: 6a978b7cc32e6de3d4b1d811b9aa6f52cf0370d7
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 41f36c027175cbf67049eed986b9188ba1532048
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68459635"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97154359"
 ---
-# <a name="istriviallydestructible-class"></a>is_trivially_destructible 클래스
+# <a name="is_trivially_destructible-class"></a>is_trivially_destructible 클래스
 
 형식이 일반적으로 소멸 가능한지 테스트합니다.
 
@@ -35,10 +36,10 @@ struct is_trivially_destructible;
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<type_traits>
+**헤더:**\<type_traits>
 
 **네임스페이스:** std
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [<type_traits>](../standard-library/type-traits.md)

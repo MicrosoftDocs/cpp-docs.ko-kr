@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CAtlAutoThreadModuleT 클래스'
 title: CAtlAutoThreadModuleT 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlAutoThreadModuleT class
 ms.assetid: ae1667c6-3fb8-47bc-b35d-9ea5e9896d7f
-ms.openlocfilehash: 7308e3a51c531fbe942e2df326c03273eeb326e2
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: ad55c78488567c12477c427b99a527b8154ddd22
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82168725"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97158415"
 ---
 # <a name="catlautothreadmodulet-class"></a>CAtlAutoThreadModuleT 클래스
 
@@ -46,13 +47,13 @@ COM 서버를 구현 하는 클래스입니다.
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
 |[CAtlAutoThreadModuleT:: GetDefaultThreads](#getdefaultthreads)|이 정적 함수는 프로세서 수에 따라 EXE 모듈의 최대 스레드 수를 동적으로 계산 하 고 반환 합니다.|
 
 ## <a name="remarks"></a>설명
 
-[Catlautothreadmodule](../../atl/reference/catlautothreadmodule-class.md) 클래스는 스레드 풀 `CAtlAutoThreadModuleT` 의 아파트 모델 COM 서버를 구현 하기 위해에서 파생 됩니다. 사용 되지 않는 클래스 [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md)을 대체 합니다.
+[Catlautothreadmodule](../../atl/reference/catlautothreadmodule-class.md) 클래스는 `CAtlAutoThreadModuleT` 스레드 풀의 아파트 모델 COM 서버를 구현 하기 위해에서 파생 됩니다. 사용 되지 않는 클래스 [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md)을 대체 합니다.
 
 > [!NOTE]
 > 이 클래스는 dll에서 사용 하면 안 됩니다. 기본 *Dwwait* 값 무한은 dll이 언로드될 때 교착 상태가 발생 하기 때문입니다.
@@ -67,7 +68,7 @@ COM 서버를 구현 하는 클래스입니다.
 
 **헤더:** 서 기. h
 
-## <a name="catlautothreadmoduletgetdefaultthreads"></a><a name="getdefaultthreads"></a>CAtlAutoThreadModuleT:: GetDefaultThreads
+## <a name="catlautothreadmoduletgetdefaultthreads"></a><a name="getdefaultthreads"></a> CAtlAutoThreadModuleT:: GetDefaultThreads
 
 이 정적 함수는 프로세서 수에 따라 EXE 모듈의 최대 스레드 수를 동적으로 계산 하 고 반환 합니다.
 
@@ -75,7 +76,7 @@ COM 서버를 구현 하는 클래스입니다.
 static int GetDefaultThreads();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 EXE 모듈에서 만들 스레드 수입니다.
 

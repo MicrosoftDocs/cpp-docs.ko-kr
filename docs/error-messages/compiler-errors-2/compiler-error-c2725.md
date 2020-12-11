@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2725'
 title: 컴파일러 오류 C2725
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2725
 ms.assetid: 13cd5b1b-e906-4cd8-9b2b-510d587c665a
-ms.openlocfilehash: b2e8c6a2d3368e2f7fc1277e3bf727848da50881
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 92594737bf06095ffb230cac6bb6d233fc6f9307
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90741399"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97155490"
 ---
 # <a name="compiler-error-c2725"></a>컴파일러 오류 C2725
 

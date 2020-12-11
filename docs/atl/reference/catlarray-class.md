@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CAtlArray 클래스'
 title: CAtlArray 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -25,12 +26,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlArray class
 ms.assetid: 0b503aa8-2357-40af-a326-6654bf1da098
-ms.openlocfilehash: c4a4cd509a5d3078c6587ba7b29179a68912a258
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 0ae3f5aef84cac64adba20ef438f5063abda098e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833844"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97158428"
 ---
 # <a name="catlarray-class"></a>CAtlArray 클래스
 
@@ -45,7 +46,7 @@ class CAtlArray
 
 ### <a name="parameters"></a>매개 변수
 
-*우표*<br/>
+*E*<br/>
 배열에 저장할 데이터의 형식입니다.
 
 *ETraits*<br/>
@@ -55,7 +56,7 @@ class CAtlArray
 
 ### <a name="methods"></a>메서드
 
-|기능|설명|
+|함수|설명|
 |-|-|
 |[추가](#add)|배열 개체에 요소를 추가 하려면이 메서드를 호출 합니다.|
 |[Append](#append)|한 배열의 내용을 다른 배열의 끝에 추가 하려면이 메서드를 호출 합니다.|
@@ -264,7 +265,7 @@ E& GetAt(size_t iElement) throw();
 
 ### <a name="remarks"></a>설명
 
-IElement가 배열에 있는 요소 수를 초과 하는 경우 디버그 빌드에서 *iElement* 어설션이 발생 합니다. 릴리스 빌드에서 잘못 된 인수로 인해 예기치 않은 동작이 발생할 수 있습니다.
+IElement가 배열에 있는 요소 수를 초과 하는 경우 디버그 빌드에서  어설션이 발생 합니다. 릴리스 빌드에서 잘못 된 인수로 인해 예기치 않은 동작이 발생할 수 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -333,7 +334,7 @@ void InsertArrayAt(size_t iStart, const CAtlArray<E, ETraits>* paNew);
 
 ### <a name="remarks"></a>설명
 
-*PaNew* 배열의 요소는 *istart*요소에서 시작 하 여 배열 개체로 복사 됩니다. 기존 배열 요소를 덮어쓰지 않도록 이동 합니다.
+*PaNew* 배열의 요소는 *istart* 요소에서 시작 하 여 배열 개체로 복사 됩니다. 기존 배열 요소를 덮어쓰지 않도록 이동 합니다.
 
 디버그 빌드에서는 `CAtlArray` 개체가 유효 하지 않거나 *PANEW* 포인터가 NULL 이거나 잘못 된 경우에는가 없는 어설션이 발생 합니다.
 
@@ -365,7 +366,7 @@ void InsertAt(size_t iElement, INARGTYPE element, size_t nCount = 1);
 
 ### <a name="remarks"></a>설명
 
-인덱스 *iElement*에서 시작 하 여 배열에 하나 이상의 요소를 삽입 합니다. 기존 요소를 덮어쓰지 않도록 이동 합니다.
+인덱스 *iElement* 에서 시작 하 여 배열에 하나 이상의 요소를 삽입 합니다. 기존 요소를 덮어쓰지 않도록 이동 합니다.
 
 디버그 빌드에서는 `CAtlArray` 개체가 유효 하지 않거나, 추가할 요소의 수가 0 이거나, 결합 된 요소의 수가 너무 커서 배열에 포함 될 수 없는 경우이 이벤트가 발생 합니다. 정품 빌드에서 잘못 된 매개 변수를 전달 하면 예기치 않은 결과가 발생할 수 있습니다.
 
@@ -415,7 +416,7 @@ const E& operator[](size_t ielement) const throw();
 
 [CAtlArray:: GetAt](#getat)와 유사한 함수를 수행 합니다. MFC 클래스 [CArray](../../mfc/reference/carray-class.md)와 달리이 연산자는 [CAtlArray:: setat](#setat)의 대체로 사용할 수 없습니다.
 
-IElement가 배열에 있는 요소의 총 수를 초과 하는 경우 디버그 빌드에서 *iElement* 어설션이 발생 합니다. 일반 정품 빌드에서는 잘못 된 매개 변수로 인해 예기치 않은 결과가 발생할 수 있습니다.
+IElement가 배열에 있는 요소의 총 수를 초과 하는 경우 디버그 빌드에서  어설션이 발생 합니다. 일반 정품 빌드에서는 잘못 된 매개 변수로 인해 예기치 않은 결과가 발생할 수 있습니다.
 
 ## <a name="catlarrayoutargtype"></a><a name="outargtype"></a> CAtlArray:: OUTARGTYPE
 
@@ -487,7 +488,7 @@ void SetAt(size_t iElement, INARGTYPE element);
 
 ### <a name="remarks"></a>설명
 
-IElement가 배열에 있는 요소 수를 초과 하는 경우 디버그 빌드에서 *iElement* 어설션이 발생 합니다. 정품 빌드에서 잘못 된 매개 변수를 통해 예기치 않은 결과가 발생할 수 있습니다.
+IElement가 배열에 있는 요소 수를 초과 하는 경우 디버그 빌드에서  어설션이 발생 합니다. 정품 빌드에서 잘못 된 매개 변수를 통해 예기치 않은 결과가 발생할 수 있습니다.
 
 ### <a name="example"></a>예제
 

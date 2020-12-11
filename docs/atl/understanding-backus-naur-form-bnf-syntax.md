@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: BNF (Backus-Naur 양식 이해) 구문'
 title: ATL 등록자 및 BNF(Backus-Naur 양식) 구문
 ms.date: 05/14/2019
 helpviewer_keywords:
 - BNF notation
 - Backus-Naur form (BNF) syntax
 ms.assetid: 994bbef0-9077-4aa8-bdfe-b7e830af9acc
-ms.openlocfilehash: 0f07a39863b586d524d060dc3df7117e2c930b3e
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: 7f392d442c4d43865faf9e788f8bf69288673398
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82168711"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97157349"
 ---
 # <a name="understanding-backus-naur-form-bnf-syntax"></a>BNF(Backus-Naur 양식) 구문 이해
 
@@ -32,10 +33,10 @@ ATL 등록자가 사용하는 스크립트는 다음 표에 나와 있는 표기
 |**ForceRemove**|다음 키(있는 경우)를 완전히 제거한 다음, 다시 만듭니다.|
 |**NoRemove**|등록 취소 중에는 다음 키를 제거하지 마세요.|
 |**짧은**|`<Key Name>`이 실제로 명명된 값임을 지정합니다.|
-|**Delete**|등록 중에 다음 키를 삭제합니다.|
-|**삭제**|다음 값이 문자열(REG_SZ)임을 지정합니다.|
-|**2**|다음 값이 DWORD(REG_DWORD)임을 지정합니다.|
-|**매**|다음 값이 다중 문자열(REG_MULTI_SZ) 임을 지정합니다.|
+|**삭제**|등록 중에 다음 키를 삭제합니다.|
+|**s**|다음 값이 문자열(REG_SZ)임을 지정합니다.|
+|**d**|다음 값이 DWORD(REG_DWORD)임을 지정합니다.|
+|**m**|다음 값이 다중 문자열(REG_MULTI_SZ) 임을 지정합니다.|
 |**b**|다음 값이 이진값(REG_BINARY)임을 지정합니다.|
 
 ## <a name="bnf-syntax-examples"></a>BNF 구문 예제
@@ -44,31 +45,31 @@ ATL 등록자 스크립트에서 표기법과 문자열 리터럴이 작동하�
 
 ### <a name="syntax-example-1"></a>구문 예제 1
 
-> \<레지스트리 식>:: = \<추가 키>
+> \<registry expression> ::= \<Add Key>
 
 `registry expression`이 `Add Key`와 같음을 지정합니다.
 
 ### <a name="syntax-example-2"></a>구문 예제 2
 
-> \<레지스트리 식>:: = \<Add Key> | \<키> 삭제
+> \<registry expression> ::= \<Add Key> | \<Delete Key>
 
 `registry expression`이 `Add Key` 또는 `Delete Key`와 같음을 지정합니다.
 
 ### <a name="syntax-example-3"></a>구문 예제 3
 
-> \<키 이름>:: = '\<영숫자>+ '
+> \<Key Name> ::= '\<AlphaNumeric>+'
 
-가 하나 `Key Name` 이상의 `AlphaNumeric` 값과 동일한 지 여부를 지정 합니다.
+`Key Name`가 하나 이상의 값과 동일한 지 여부를 지정 합니다 `AlphaNumeric` .
 
 ### <a name="syntax-example-4"></a>구문 예제 4
 
-> \<키>:: = [**ForceRemove** | **NoRemove** | **val**]\<키 이름 추가>
+> \<Add Key>:: = [**ForceRemove**  |  **NoRemove**  |  **val**]\<Key Name>
 
 `Add Key`는 `Key Name`과 같고, 문자열 리터럴 `ForceRemove`, `NoRemove` 및 `val`은 선택 사항임을 지정합니다.
 
 ### <a name="syntax-example-5"></a>구문 예제 5
 
-> \<영숫자>:: = *NULL이 아닌 문자, 즉 ASCII 0입니다* .
+> \<AlphaNumeric>:: = *NULL이 아닌 모든 문자 즉, ASCII 0입니다* .
 
 `AlphaNumeric`이 모든 비 NULL 문자와 같음을 나타냅니다.
 
@@ -90,4 +91,4 @@ val 'testhex' = d '&H55'
 
 ## <a name="see-also"></a>참고 항목
 
-[Creating Registrar Scripts](../atl/creating-registrar-scripts.md)
+[등록자 스크립트 만들기](../atl/creating-registrar-scripts.md)

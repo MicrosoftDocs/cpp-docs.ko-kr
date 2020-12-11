@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: OnIdle 멤버 함수'
 title: OnIdle 멤버 함수
 ms.date: 11/19/2018
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - CWinApp class [MFC], OnIdle method [MFC]
 - message handling [MFC], OnIdle method [MFC]
 ms.assetid: 51adc874-0075-4f76-be1c-79283f46c10b
-ms.openlocfilehash: 17595713f942c7fe7784fa2a12adbcc583cad418
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: a094b72f78db75d9f0f93ffa840d1d90cc96294c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619841"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97112260"
 ---
 # <a name="onidle-member-function"></a>OnIdle 멤버 함수
 
@@ -30,4 +31,4 @@ Windows 메시지를 처리 하 고 있지 않은 경우 프레임 워크는 [CW
 
 ## <a name="see-also"></a>참고 항목
 
-[CWinApp: 애플리케이션 클래스](cwinapp-the-application-class.md)
+[CWinApp: 응용 프로그램 클래스](cwinapp-the-application-class.md)

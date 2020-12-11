@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3538'
 title: 컴파일러 오류 C3538
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3538
 ms.assetid: ef3698a5-7356-4c62-b9af-5d3a4baed958
-ms.openlocfilehash: 1e1f131d551440e44e1a2ed9ed9b9c18c71eb22d
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 6fbfbc59bb52d4603fc734e69f2f7ccc88942f7e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91508161"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97112468"
 ---
 # <a name="compiler-error-c3538"></a>컴파일러 오류 C3538
 

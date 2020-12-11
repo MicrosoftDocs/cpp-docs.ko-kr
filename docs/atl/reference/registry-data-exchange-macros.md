@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 레지스트리 데이터 교환 매크로'
 title: 레지스트리 데이터 교환 매크로
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - RegistryDataExchange function, macros
 ms.assetid: c1bc5e79-2307-43d2-9d10-3a62ffadf473
-ms.openlocfilehash: 507db77b525c526fe1cd47c7d75c34e15a6a0628
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: ecfc5617922fe0a1ec7b134f61093a4ed3962a54
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834546"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97157778"
 ---
 # <a name="registry-data-exchange-macros"></a>레지스트리 데이터 교환 매크로
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CA2CAEX 클래스'
 title: CA2CAEX 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - CA2CAEX class
 ms.assetid: 388e7c1d-a144-474c-a182-b15f69a74bd8
-ms.openlocfilehash: 505c1e369bc5949fea291a2172c16d5e52c75567
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: 89709280e94e07c549d179dc9a9863bd4bf2cbaa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82168516"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97158597"
 ---
 # <a name="ca2caex-class"></a>CA2CAEX 클래스
 
@@ -39,20 +40,20 @@ class CA2CAEX
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
 |[CA2CAEX::CA2CAEX](#ca2caex)|생성자입니다.|
 |[CA2CAEX:: ~ CA2CAEX](#dtor)|소멸자입니다.|
 
 ### <a name="public-operators"></a>Public 연산자
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |[CA2CAEX:: operator LPCSTR](#operator_lpcstr)|변환 연산자입니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |[CA2CAEX:: m_psz](#m_psz)|원본 문자열을 저장 하는 데이터 멤버입니다.|
 
@@ -82,7 +83,7 @@ class CA2CAEX
 
 **헤더:**
 
-## <a name="ca2caexca2caex"></a><a name="ca2caex"></a>CA2CAEX::CA2CAEX
+## <a name="ca2caexca2caex"></a><a name="ca2caex"></a> CA2CAEX::CA2CAEX
 
 생성자입니다.
 
@@ -103,7 +104,7 @@ CA2CAEX(LPCSTR psz) throw(...);
 
 변환에 필요한 버퍼를 만듭니다.
 
-## <a name="ca2caexca2caex"></a><a name="dtor"></a>CA2CAEX:: ~ CA2CAEX
+## <a name="ca2caexca2caex"></a><a name="dtor"></a> CA2CAEX:: ~ CA2CAEX
 
 소멸자입니다.
 
@@ -115,7 +116,7 @@ CA2CAEX(LPCSTR psz) throw(...);
 
 할당 된 버퍼를 해제 합니다.
 
-## <a name="ca2caexm_psz"></a><a name="m_psz"></a>CA2CAEX:: m_psz
+## <a name="ca2caexm_psz"></a><a name="m_psz"></a> CA2CAEX:: m_psz
 
 원본 문자열을 저장 하는 데이터 멤버입니다.
 
@@ -123,7 +124,7 @@ CA2CAEX(LPCSTR psz) throw(...);
 LPCSTR m_psz;
 ```
 
-## <a name="ca2caexoperator-lpcstr"></a><a name="operator_lpcstr"></a>CA2CAEX:: operator LPCSTR
+## <a name="ca2caexoperator-lpcstr"></a><a name="operator_lpcstr"></a> CA2CAEX:: operator LPCSTR
 
 변환 연산자입니다.
 
@@ -131,7 +132,7 @@ LPCSTR m_psz;
 operator LPCSTR() const throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 텍스트 문자열을 LPCSTR 형식으로 반환 합니다.
 

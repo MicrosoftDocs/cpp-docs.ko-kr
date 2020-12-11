@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 보안 전역 함수'
 title: 보안 전역 함수
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - ACL object global functions
 - security IDs [C++]
 ms.assetid: 6a584bfe-16b7-47f4-8439-9c789c41567a
-ms.openlocfilehash: 0b42fe10ef1de517677b35a9fe54d0c6a04ff748
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 10a3a3f358eba3aa1715bd375221f6ec35a56fcf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834494"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97157791"
 ---
 # <a name="security-global-functions"></a>보안 전역 함수
 

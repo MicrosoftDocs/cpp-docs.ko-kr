@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: MFC의 파일'
 title: MFC의 파일
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - files [MFC], manipulating
 - binary access [MFC]
 ms.assetid: ae25e2c5-2859-4679-ab97-438824e93ce1
-ms.openlocfilehash: 8b8859e188e42f4419ca7ee7f683cc31de0c75b3
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 47fab5876efd7d06ec4364721a09b7ed09da9744
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84625885"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97155048"
 ---
 # <a name="files-in-mfc"></a>MFC의 파일
 
@@ -30,7 +31,7 @@ MFC 라이브러리 (MFC)에서 클래스 [CFile](reference/cfile-class.md) 은 
 
 클래스는 범용 `CFile` 이진 파일 작업에 대 한 인터페이스를 제공 합니다. `CStdioFile` `CMemFile` 에서 파생 된 및 클래스 `CFile` 와 `CSharedFile` 에서 파생 된 클래스는 `CMemFile` 보다 특수화 된 파일 서비스를 제공 합니다.
 
-MFC 파일 처리의 대체 방법에 대 한 자세한 내용은 *런타임 라이브러리 참조*에서 [파일 처리](../c-runtime-library/file-handling.md) 를 참조 하세요.
+MFC 파일 처리의 대체 방법에 대 한 자세한 내용은 *런타임 라이브러리 참조* 에서 [파일 처리](../c-runtime-library/file-handling.md) 를 참조 하세요.
 
 파생 클래스에 대 한 자세한 내용은 `CFile` [MFC 계층 구조 차트](hierarchy-chart.md)를 참조 하세요.
 

@@ -1,4 +1,5 @@
 ---
+description: Frame-Window 클래스에 대해 자세히 알아보세요.
 title: 프레임 창 클래스
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - MDI [MFC], frame windows
 - classes [MFC], window
 ms.assetid: c27e43a7-8ad0-4759-b1b7-43f4725f4132
-ms.openlocfilehash: ffa5b966ee042120213896dc7ad9d81c048ef928
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 888fae71bef2dd2e30e10c645e78ab981a30c6af
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84625805"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97154957"
 ---
 # <a name="frame-window-classes"></a>프레임 창 클래스
 
@@ -27,7 +28,7 @@ ms.locfileid: "84625805"
 
 SDI 응용 프로그램의 경우 [CFrameWnd](reference/cframewnd-class.md)클래스에서 파생 된 하나의 프레임 창이 있습니다. 이 창은 주 프레임 창과 문서 프레임 창입니다. MDI 응용 프로그램의 경우 주 프레임 창은 [CMDIFrameWnd](reference/cmdiframewnd-class.md)클래스에서 파생 되 고 문서 프레임 창 (mdi 자식 창)은 [CMDIChildWnd](reference/cmdichildwnd-class.md)클래스에서 파생 됩니다.
 
-## <a name="use-the-frame-window-class-or-derive-from-it"></a>프레임 창 클래스를 사용 하거나 클래스에서 파생 합니다.
+## <a name="use-the-frame-window-class-or-derive-from-it"></a>Frame-Window 클래스를 사용 하거나 클래스에서 파생 합니다.
 
 이러한 클래스는 응용 프로그램에 필요한 대부분의 프레임 창 기능을 제공 합니다. 정상적인 경우에는 제공 하는 기본 동작 및 모양이 요구에 맞게 표시 됩니다. 추가 기능이 필요한 경우 이러한 클래스에서 파생 합니다.
 

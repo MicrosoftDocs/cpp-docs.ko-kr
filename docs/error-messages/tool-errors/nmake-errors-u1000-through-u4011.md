@@ -1,25 +1,26 @@
 ---
+description: '자세한 정보: NMAKE 오류 및 경고 (Uxxxx)'
 title: NMAKE 오류 및 경고
 ms.date: 04/16/2019
 f1_keywords:
 - nmake
 ms.assetid: 9dbe2e12-88ca-4df4-b935-17756112bb79
-ms.openlocfilehash: 230389215525871578cad1a1a676995588bdd5ca
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: b3e79f13832b2861be31c6229f48aa1282500a96
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64856976"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97155152"
 ---
 # <a name="nmake-errors-and-warnings-uxxxx"></a>NMAKE 오류 및 경고(Uxxxx)
 
-이 섹션은 오류에 대 한 참조 및 NMAKE에 의해 생성 된 경고가 빌드 도구입니다. NMAKE 오류 및 경고에 폼 U*xxxx*, 여기서 *xxxx* 는 4 자리 숫자입니다.
+이 섹션은 NMAKE 빌드 도구에서 생성 된 오류 및 경고에 대 한 참조입니다. NMAKE 오류 및 경고에는 U *xxxx* 형식이 있습니다. 여기서 *xxxx* 는 네 자리 숫자입니다.
 
 [!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
 ## <a name="nmake-fatal-errors"></a>NMAKE 심각한 오류
 
-[NMAKE 심각한 오류 U1000](nmake-fatal-error-u1000.md) \
+[NMAKE 심각한 오류 (U1000 ~](nmake-fatal-error-u1000.md) \
 [NMAKE 심각한 오류 U1001](nmake-fatal-error-u1001.md) \
 [NMAKE 심각한 오류 U1007](nmake-fatal-error-u1007.md) \
 [NMAKE 심각한 오류 U1023](nmake-fatal-error-u1023.md) \
@@ -60,7 +61,7 @@ ms.locfileid: "64856976"
 [NMAKE 경고 U4010](nmake-warning-u4010.md) \
 [NMAKE 경고 U4011](nmake-warning-u4011.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[C /C++ 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md) \
+[C/c + + 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md) \
 [NMAKE 참조](../../build/reference/nmake-reference.md)

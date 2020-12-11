@@ -1,16 +1,17 @@
 ---
+description: '자세히 알아보기: 목록 컨트롤에서 알림 메시지 처리'
 title: 목록 컨트롤에서 알림 메시지 처리
 ms.date: 11/04/2016
 helpviewer_keywords:
 - processing notifications [MFC]
 - CListCtrl class [MFC], processing notifications
 ms.assetid: 1f0e296e-d2a3-48fc-ae38-51d7fb096f51
-ms.openlocfilehash: 92111e3e0a4869ca06b89d2d18d38aab9f10ab7d
-ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
+ms.openlocfilehash: b761f5213a73ce31484a7a252b9b441da2fe154d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70908090"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97154801"
 ---
 # <a name="processing-notification-messages-in-list-controls"></a>목록 컨트롤에서 알림 메시지 처리
 
@@ -20,7 +21,7 @@ ms.locfileid: "70908090"
 
 목록 컨트롤이 부모 창에 보낼 수 있는 알림 목록은 Windows SDK의 [목록 뷰 컨트롤 참조](/windows/win32/Controls/list-view-control-reference) 를 참조 하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [CListCtrl 사용](../mfc/using-clistctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)

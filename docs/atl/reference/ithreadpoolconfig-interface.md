@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: IThreadPoolConfig 인터페이스'
 title: IThreadPoolConfig 인터페이스
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - IThreadPoolConfig interface
 ms.assetid: 69e642bf-6925-46e6-9a37-cce52231b1cc
-ms.openlocfilehash: cba82055c292fc966dc2328773cce4aa64d45a64
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 143b456b08f7c5a14f99739cfe6bf424a3ee4baf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835430"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97158012"
 ---
 # <a name="ithreadpoolconfig-interface"></a>IThreadPoolConfig 인터페이스
 

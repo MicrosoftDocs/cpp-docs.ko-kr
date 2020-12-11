@@ -1,4 +1,5 @@
 ---
+description: Is_union 클래스에 대해 자세히 알아보세요.
 title: is_union 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - is_union class
 - is_union
 ms.assetid: 80eda256-40b8-4db5-9ac1-d58bb8032a3e
-ms.openlocfilehash: 3b4383fd96c359661d225433dbe9e7dd8b7f939f
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: be095053523a0348632d2c81c3a3a7eafe8593d0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68458893"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97154307"
 ---
-# <a name="isunion-class"></a>is_union 클래스
+# <a name="is_union-class"></a>is_union 클래스
 
 형식이 공용 구조체인지 여부를 테스트합니다.
 
@@ -74,11 +75,11 @@ is_union<ints> == true
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<type_traits>
+**헤더:**\<type_traits>
 
 **네임스페이스:** std
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [<type_traits>](../standard-library/type-traits.md)\
 [is_class 클래스](../standard-library/is-class-class.md)

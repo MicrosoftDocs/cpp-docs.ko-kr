@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3540'
 title: 컴파일러 오류 C3540
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3540
 ms.assetid: 3c0c959c-e3b7-40eb-b922-ccac44bd9d85
-ms.openlocfilehash: 897defd5643a90234c2ae3b7bb4f58904864e858
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 85106061b2631d3a392b05a50c49f24566cdd4cb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91508080"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97112455"
 ---
 # <a name="compiler-error-c3540"></a>컴파일러 오류 C3540
 

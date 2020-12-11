@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 인쇄'
 title: 인쇄
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - printing [MFC], from framework
 - printing [MFC]
 ms.assetid: be465e8d-b0c9-4fc5-9fa8-d10486064f76
-ms.openlocfilehash: 3d2ef494be66171cbcbf2b8b9e19c29c8bdc5c2f
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 0cb4455b2de27d7b609226099b00a37dc8175db6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619810"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97154866"
 ---
 # <a name="printing"></a>인쇄
 
 Microsoft Windows는 장치 독립적 디스플레이를 구현 합니다. 즉, MFC에서 `OnDraw` 뷰 클래스의 멤버 함수에 있는 동일한 그리기 호출은 프린터와 같은 다른 장치 및 디스플레이에서 그리기를 담당 합니다. 인쇄 미리 보기의 경우 대상 장치는 디스플레이에 시뮬레이트된 프린터 출력입니다.
 
-## <a name="your-role-in-printing-vs-the-frameworks-role"></a><a name="_core_your_role_in_printing_vs.._the_framework.92.s_role"></a>인쇄의 역할 및 프레임 워크의 역할
+## <a name="your-role-in-printing-vs-the-frameworks-role"></a><a name="_core_your_role_in_printing_vs.._the_framework.92.s_role"></a> 인쇄의 역할 및 프레임 워크의 역할
 
 뷰 클래스의 책임은 다음과 같습니다.
 
@@ -46,7 +47,7 @@ Microsoft Windows는 장치 독립적 디스플레이를 구현 합니다. 즉, 
 
 ### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아야 할 내용
 
-- [기본 인쇄를 수행 하는 방법](how-default-printing-is-done.md)
+- [기본 인쇄가 수행되는 방법](how-default-printing-is-done.md)
 
 - [다중 페이지 문서](multipage-documents.md)
 

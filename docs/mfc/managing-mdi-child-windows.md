@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: MDI 자식 창 관리'
 title: MDI 자식 창 관리
 ms.date: 11/19/2018
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - child windows [MFC]
 - MDI [MFC], frame windows
 ms.assetid: 1828d96e-a561-48ae-a661-ba9701de6bee
-ms.openlocfilehash: 6e8e3d0aa51eeea112597485a9221dcba4feda87
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 1207e6a8fa174c36b09352796521bcb860ee665f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618367"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97112091"
 ---
 # <a name="managing-mdi-child-windows"></a>MDI 자식 창 관리
 

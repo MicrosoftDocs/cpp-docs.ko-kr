@@ -1,5 +1,6 @@
 ---
-title: 스냅인 개체 매크로
+description: '다음에 대 한 자세한 정보: 개체 매크로 Snap-In'
+title: Snap-In 개체 매크로
 ms.date: 11/04/2016
 f1_keywords:
 - atlsnap/ATL::BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP
@@ -11,27 +12,27 @@ f1_keywords:
 - atlsnap/ATL::SNAPINMENUID
 - atlsnap/ATL::SNAPINTOOLBARID_ENTRY
 ms.assetid: 4e9850c0-e395-4929-86c9-584a81828053
-ms.openlocfilehash: 7e006a17ad480ea79f6aeec224278815c8c3f164
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d775c1d5f66f16fb63b9a7adeda2bc8e74046acf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835196"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97157687"
 ---
-# <a name="snap-in-object-macros"></a>스냅인 개체 매크로
+# <a name="snap-in-object-macros"></a>Snap-In 개체 매크로
 
 이러한 매크로는 스냅인 확장에 대 한 지원을 제공 합니다.
 
 |Name|설명|
 |-|-|
-|[BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP](#begin_extension_snapin_nodeinfo_map)|스냅인 개체에 대 한 스냅인 확장 데이터 클래스 맵의 시작을 표시 합니다.|
-|[BEGIN_SNAPINTOOLBARID_MAP](#begin_snapintoolbarid_map)|스냅인 개체에 대 한 도구 모음 맵의 시작을 표시 합니다.|
-|[END_EXTENSION_SNAPIN_NODEINFO_MAP](#end_extension_snapin_nodeinfo_map)|스냅인 개체에 대 한 스냅인 확장 데이터 클래스 맵의 끝을 표시 합니다.|
-|[END_SNAPINTOOLBARID_MAP](#end_snapintoolbarid_map)|도구 모음 맵의 끝에 스냅인 개체를 표시 합니다.|
+|[BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP](#begin_extension_snapin_nodeinfo_map)|Snap-In 개체에 대 한 스냅인 확장 데이터 클래스 맵의 시작을 표시 합니다.|
+|[BEGIN_SNAPINTOOLBARID_MAP](#begin_snapintoolbarid_map)|Snap-In 개체에 대 한 도구 모음 맵의 시작을 표시 합니다.|
+|[END_EXTENSION_SNAPIN_NODEINFO_MAP](#end_extension_snapin_nodeinfo_map)|Snap-In 개체에 대 한 스냅인 확장 데이터 클래스 맵의 끝을 표시 합니다.|
+|[END_SNAPINTOOLBARID_MAP](#end_snapintoolbarid_map)|Snap-In 개체에 대 한 도구 모음 맵의 끝을 표시 합니다.|
 |[EXTENSION_SNAPIN_DATACLASS](#extension_snapin_dataclass)|스냅인 확장의 데이터 클래스에 대 한 데이터 멤버를 만듭니다.|
-|[EXTENSION_SNAPIN_NODEINFO_ENTRY](#extension_snapin_nodeinfo_entry)|스냅인 확장 데이터 클래스를 스냅인 개체의 스냅인 확장 데이터 클래스 맵에 입력 합니다.|
-|[SNAPINMENUID](#snapinmenuid)|스냅인 개체에서 사용 하는 상황에 맞는 메뉴의 ID를 선언 합니다.|
-|[SNAPINTOOLBARID_ENTRY](#snapintoolbarid_entry)|스냅인 개체의 도구 모음 맵에 도구 모음을 입력 합니다.|
+|[EXTENSION_SNAPIN_NODEINFO_ENTRY](#extension_snapin_nodeinfo_entry)|Snap-In 개체의 스냅인 확장 데이터 클래스 맵에 스냅인 확장 데이터 클래스를 입력 합니다.|
+|[SNAPINMENUID](#snapinmenuid)|Snap-In 개체에서 사용 하는 상황에 맞는 메뉴의 ID를 선언 합니다.|
+|[SNAPINTOOLBARID_ENTRY](#snapintoolbarid_entry)|Snap-In 개체의 도구 모음 맵에 도구 모음을 입력 합니다.|
 
 ## <a name="requirements"></a>요구 사항
 
@@ -60,7 +61,7 @@ BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP 매크로를 사용 하 여 스냅인 확장
 
 ## <a name="begin_snapintoolbarid_map"></a><a name="begin_snapintoolbarid_map"></a> BEGIN_SNAPINTOOLBARID_MAP
 
-스냅인 개체에 대 한 도구 모음 ID 맵의 시작을 선언 합니다.
+Snap-In 개체에 대 한 도구 모음 ID 맵의 시작을 선언 합니다.
 
 ```
 BEGIN_SNAPINTOOLBARID_MAP(_class)
@@ -69,7 +70,7 @@ BEGIN_SNAPINTOOLBARID_MAP(_class)
 ### <a name="parameters"></a>매개 변수
 
 *_class*<br/>
-진행 스냅인 개체 클래스를 지정 합니다.
+진행 Snap-In 개체 클래스를 지정 합니다.
 
 ### <a name="example"></a>예제
 
@@ -93,7 +94,7 @@ END_EXTENSION_SNAPIN_NODEINFO_MAP()
 
 ## <a name="end_snapintoolbarid_map"></a><a name="end_snapintoolbarid_map"></a> END_SNAPINTOOLBARID_MAP
 
-스냅인 개체에 대 한 도구 모음 ID 맵의 끝을 선언 합니다.
+Snap-In 개체에 대 한 도구 모음 ID 맵의 끝을 선언 합니다.
 
 ```
 END_SNAPINTOOLBARID_MAP( _class )
@@ -102,7 +103,7 @@ END_SNAPINTOOLBARID_MAP( _class )
 ### <a name="parameters"></a>매개 변수
 
 *_class*<br/>
-진행 스냅인 개체 클래스를 지정 합니다.
+진행 Snap-In 개체 클래스를 지정 합니다.
 
 ### <a name="example"></a>예제
 
@@ -110,7 +111,7 @@ END_SNAPINTOOLBARID_MAP( _class )
 
 ## <a name="extension_snapin_dataclass"></a><a name="extension_snapin_dataclass"></a> EXTENSION_SNAPIN_DATACLASS
 
-**ISnapInItemImpl**파생 클래스에 대 한 데이터 멤버를 스냅인 확장 데이터 클래스에 추가 합니다.
+**ISnapInItemImpl** 파생 클래스에 대 한 데이터 멤버를 스냅인 확장 데이터 클래스에 추가 합니다.
 
 ```
 EXTENSION_SNAPIN_DATACLASS(dataClass )
@@ -152,7 +153,7 @@ EXTENSION_SNAPIN_NODEINFO_ENTRY( dataClass )
 
 ## <a name="snapinmenuid"></a><a name="snapinmenuid"></a> SNAPINMENUID
 
-이 매크로를 사용 하 여 스냅인 개체의 상황에 맞는 메뉴 리소스를 선언 합니다.
+이 매크로를 사용 하 여 Snap-In 개체의 상황에 맞는 메뉴 리소스를 선언 합니다.
 
 ```
 SNAPINMENUID( id )
@@ -161,11 +162,11 @@ SNAPINMENUID( id )
 ### <a name="parameters"></a>매개 변수
 
 *id*<br/>
-진행 스냅인 개체의 상황에 맞는 메뉴를 식별 합니다.
+진행 Snap-In 개체의 상황에 맞는 메뉴를 식별 합니다.
 
 ## <a name="snapintoolbarid_entry"></a><a name="snapintoolbarid_entry"></a> SNAPINTOOLBARID_ENTRY
 
-이 매크로를 사용 하 여 도구 모음 ID를 스냅인 개체의 도구 모음 ID 맵에 입력할 수 있습니다.
+이 매크로를 사용 하 여 Snap-In 개체의 도구 모음 ID 맵에 도구 모음 ID를 입력할 수 있습니다.
 
 ```
 SNAPINTOOLBARID_ENTRY( id )

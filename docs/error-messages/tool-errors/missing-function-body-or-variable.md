@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 함수 본문 또는 변수 누락'
 title: 함수 본문 또는 변수 누락
 ms.date: 11/04/2016
 helpviewer_keywords:
 - function body
 - variables, missing
 ms.assetid: 1a88d809-b14f-46a4-97c4-3e48beb418f2
-ms.openlocfilehash: 835bd968035b355ded9636d446d44d4ce069c248
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: 6a4349c380fc0f573adc8e372f9e4d2fc3f83873
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008891"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97155165"
 ---
 # <a name="missing-function-body-or-variable"></a>함수 본문 또는 변수 누락
 
@@ -49,6 +50,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [링커 도구 오류 LNK2019](../../error-messages/tool-errors/linker-tools-error-lnk2019.md)
