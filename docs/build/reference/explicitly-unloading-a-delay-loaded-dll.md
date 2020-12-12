@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 명시적으로 Delay-Loaded DLL 언로드'
 title: 지연 로드된 DLL의 명시적 언로드
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - __FUnloadDelayLoadedDLL2
 - delayed loading of DLLs, unloading
 ms.assetid: 1c4c5172-fd06-45d3-9e4f-f12343176b3c
-ms.openlocfilehash: 9909a3e179aa6c0af3a622c7bf1b545326f90bbd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 03df08487acc1be05226021d6b7c1593eb0f031b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62293461"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97192384"
 ---
 # <a name="explicitly-unloading-a-delay-loaded-dll"></a>지연 로드된 DLL의 명시적 언로드
 
-합니다 [/delay](delay-delay-load-import-settings.md): unload 링커 옵션을 사용 하면 지연 로드 된 DLL을 언로드할 수 있습니다. 기본적으로 코드 DLL을 언로드할 때 (/delay: unload를 사용 하 여 및 **__FUnloadDelayLoadedDLL2**)를 지연 로드 가져오기 (IAT) 가져오기 주소 테이블을 유지 합니다. 그러나 /delay: unload를 사용 하 여 링커 명령줄에는 도우미 함수가 지원 됩니다 원래 형태로; IAT를 다시 설정 하는 DLL의 명시적 언로드 이제 잘못 된 포인터를 덮어쓰게 됩니다. IAT는 필드를 [ImgDelayDescr](calling-conventions-parameters-and-return-type.md) 포함 하는 원래 IAT 복사본의 주소 (있는 경우).
+[/Delay](delay-delay-load-import-settings.md): unload 링커 옵션을 사용 하면 지연 로드 된 DLL을 언로드할 수 있습니다. 기본적으로 코드에서 DLL을 언로드할 때 (/delay: unload 및 **__FUnloadDelayLoadedDLL2** 사용) 지연 로드 된 가져오기는 IAT (가져오기 주소 테이블)에 남아 있습니다. 그러나 링커 명령줄에서/delay: unload를 사용 하는 경우 도우미 함수는 DLL의 명시적 언로드를 지원 하 여 IAT를 원래 형식으로 다시 설정 합니다. 지금은 잘못 된 포인터를 덮어씁니다. IAT는 원래 IAT의 복사본 주소 (있는 경우)를 포함 하는 [ImgDelayDescr](calling-conventions-parameters-and-return-type.md) 의 필드입니다.
 
 ## <a name="example"></a>예제
 
@@ -47,16 +48,16 @@ int main()
 }
 ```
 
-### <a name="comments"></a>설명
+### <a name="comments"></a>주석
 
-지연 로드 된 DLL 언로드에 중요 한 참고 사항:
+지연 로드 된 DLL 언로드에 대 한 중요 정보:
 
-- 구현을 찾을 수 있습니다 합니다 **__FUnloadDelayLoadedDLL2** 파일에서 함수 \VC7\INCLUDE\DELAYHLP 합니다. CPP 합니다.
+- \VC7\INCLUDE\DELAYHLP. 파일에서 **__FUnloadDelayLoadedDLL2** 함수의 구현을 찾을 수 있습니다. .CPP.
 
-- name 매개 변수를 **__FUnloadDelayLoadedDLL2** 함수 정확히 일치 해야 합니다 (대/소문자) 포함 내용 가져오기 라이브러리에 포함 된 (문자열에에서 있는 이미지에서 가져오기 테이블). 사용 하 여 가져오기 라이브러리의 내용을 볼 수 있습니다 [/DEPENDENTS DUMPBIN](dependents.md)합니다. 원하는 것이 대/소문자 구분 문자열 일치를 사용 하는 경우 업데이트할 수 있습니다 **__FUnloadDelayLoadedDLL2** CRT 문자열 함수 또는 Windows API 호출 중 하나를 사용 합니다.
+- **__FUnloadDelayLoadedDLL2** 함수의 name 매개 변수는 가져오기 라이브러리에 포함 된 내용 (대/소문자 포함)을 정확히 일치 해야 합니다 (해당 문자열은 이미지의 가져오기 테이블에도 해당). [DUMPBIN/종속](dependents.md)항목을 사용 하 여 가져오기 라이브러리의 콘텐츠를 볼 수 있습니다. 대/소문자를 구분 하지 않는 문자열 일치가 필요한 경우 CRT 문자열 함수 또는 Windows API 호출 중 하나를 사용 하도록 **__FUnloadDelayLoadedDLL2** 를 업데이트할 수 있습니다.
 
-참조 [지연 로드 된 DLL 언로드](unloading-a-delay-loaded-dll.md) 자세한 내용은 합니다.
+자세한 내용은 [Delay-Loaded DLL 언로드를](unloading-a-delay-loaded-dll.md) 참조 하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[링커의 지연 로드된 DLL 지원](linker-support-for-delay-loaded-dlls.md)
+[Delay-Loaded Dll에 대 한 링커 지원](linker-support-for-delay-loaded-dlls.md)

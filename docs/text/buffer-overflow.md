@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 버퍼 오버플로'
 title: 버퍼 오버플로
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - buffer overflows [C++]
 - MBCS [C++], buffer overflow
 ms.assetid: f2b7e40a-f02b-46d8-a449-51d26fc0c663
-ms.openlocfilehash: 71877ed770384190cb7f856567d9e7e845e3da19
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 17da102b9a48a34d9879c08f0470ced3852ed0ae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217326"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97187600"
 ---
 # <a name="buffer-overflow"></a>버퍼 오버플로
 
@@ -47,7 +48,7 @@ while( (cb + _mbclen( sz )) <= sizeof( rgch ) )
 }
 ```
 
-이 코드는를 사용 하 여 `_mbclen` 가 가리키는 현재 문자의 크기를 테스트 하는 루프 테스트에서 가능한 버퍼 오버플로를 테스트 `sz` 합니다. 함수를 호출 하 여 `_mbsnbcpy` 루프의 코드를 **`while`** 한 줄의 코드로 바꿀 수 있습니다. 예를 들면 다음과 같습니다.
+이 코드는를 사용 하 여 `_mbclen` 가 가리키는 현재 문자의 크기를 테스트 하는 루프 테스트에서 가능한 버퍼 오버플로를 테스트 `sz` 합니다. 함수를 호출 하 여 `_mbsnbcpy` 루프의 코드를 **`while`** 한 줄의 코드로 바꿀 수 있습니다. 예를 들어:
 
 ```cpp
 _mbsnbcpy( rgch, sz, sizeof( rgch ) );

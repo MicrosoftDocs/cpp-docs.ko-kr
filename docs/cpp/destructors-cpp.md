@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 소멸자 (c + +)'
 title: 소멸자 (C++)
 ms.date: 07/20/2019
 helpviewer_keywords:
 - objects [C++], destroying
 - destructors, C++
 ms.assetid: afa859b0-f3bc-4c4d-b250-c68b335b6004
-ms.openlocfilehash: 5da7659d2d45bca9efba21be2cd0bf581d539780
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 121df368fc79f7dbabe4ccac6fe93c36788c5e51
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221668"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97195569"
 ---
 # <a name="destructors-c"></a>소멸자 (C++)
 

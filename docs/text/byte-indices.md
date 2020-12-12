@@ -1,40 +1,41 @@
 ---
+description: '자세한 정보: 바이트 인덱스'
 title: 바이트 인덱스
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MBCS [C++], byte indices
 - byte indices [C++]
 ms.assetid: f6e7774a-86c6-41c2-89e3-74fd46432e47
-ms.openlocfilehash: 5305a977c23d7a978a89c84809cc6fab8c5731eb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5ee4b2cb8611893c71f5c6597e619cc73e2848ef
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410724"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97187561"
 ---
 # <a name="byte-indices"></a>바이트 인덱스
 
-문자의 바이트 길이를 알고 싶다면 다음의 내용을 참고하세요.
+다음 팁을 사용 합니다.
 
-- 포인터 조작에서 나타나는 것과 유사한 문제를 표시하는 문자열로 바이트 단위 인덱스를 사용합니다. 백슬래시 문자에 대한 문자열을 검사하는 다음 예제를 살펴보세요.
+- 문자열에 bytewise 인덱스를 사용 하면 포인터 조작에 의해 발생 하는 것과 유사한 문제가 발생 합니다. 문자열에서 백슬래시 문자를 검색 하는 다음 예제를 살펴보십시오.
 
     ```cpp
     while ( rgch[ i ] != '\\' )
         i++;
     ```
 
-   이렇게 인덱싱한다면 선행 바이트가 아닌 후행 바이트를 인덱싱할 수 있으므로 올바른 `character`를 얻지 못할 수 있습니다.
+   이는 선행 바이트가 아닌 후행 바이트를 인덱싱할 수 있으므로를 가리키지 않을 수 있습니다 `character` .
 
-- 이런 문제를 해결하려면 [_mbclen](../c-runtime-library/reference/mbclen-mblen-mblen-l.md)함수를 사용하세요.
+- [_Mbclen](../c-runtime-library/reference/mbclen-mblen-mblen-l.md) 함수를 사용 하 여 위의 문제를 해결 합니다.
 
     ```cpp
     while ( rgch[ i ] != '\\' )
         i += _mbclen ( rgch + i );
     ```
 
-   이렇게 하면 선행 바이트를 인덱싱하여 올바른 `character`를 얻을 수 있습니다. `_mbclen` 함수는 1바이트인지 2 바이트인지에 대한 크기를 판단하여 처리합니다.
+   따라서 선행 바이트를 올바르게 인덱싱합니다 `character` . `_mbclen`함수는 문자 크기 (1 바이트 또는 2 바이트)를 결정 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[멀티바이트 문자 집합(MBCS) 프로그래밍 팁](../text/mbcs-programming-tips.md)<br/>
+[MBCS 프로그래밍 팁](../text/mbcs-programming-tips.md)<br/>
 [문자열의 마지막 문자](../text/last-character-in-a-string.md)

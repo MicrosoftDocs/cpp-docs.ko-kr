@@ -1,15 +1,16 @@
 ---
+description: 에 대해 자세히 알아보세요. Xml 파일 처리
 title: .Xml 파일 처리
 ms.date: 11/04/2016
 helpviewer_keywords:
 - XML documentation, processing XML file
 ms.assetid: e70fdeae-80ac-4872-ab24-771c5635cfbf
-ms.openlocfilehash: 1a0d231a066209307041681232cc3410210d4d02
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ded4551adcc4bec4aef27fe38f47470065ea9ef4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62293565"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97192696"
 ---
 # <a name="xml-file-processing"></a>.Xml 파일 처리
 
@@ -31,8 +32,8 @@ ms.locfileid: "62293565"
   | F | 필드(field) |
   | P | 속성(인덱서 또는 기타 인덱싱된 속성 포함) |
   | M | 메서드(생성자, 연산자 등의 특수 메서드 포함) |
-  | E | 이벤트(event) |
-  | ! | 오류 문자열<br /><br /> 문자열의 나머지 부분은 오류에 대한 정보를 제공합니다. MSVC 컴파일러를 확인할 수 없는 링크에 대 한 오류 정보를 생성 합니다. |
+  | E | event |
+  | ! | 오류 문자열<br /><br /> 문자열의 나머지 부분은 오류에 대한 정보를 제공합니다. MSVC 컴파일러는 확인할 수 없는 링크에 대 한 오류 정보를 생성 합니다. |
 
 - 문자열의 두 번째 부분은 네임스페이스의 루트부터 시작되는 항목의 정규화된 이름입니다. 항목의 이름과 바깥쪽 형식 또는 형식들 및 네임스페이스는 마침표로 구분됩니다. 항목 자체의 이름에 마침표가 있으면 이러한 요소를 구분하는 마침표가 해시 기호('#')로 바뀝니다. 항목 이름에는 해시 기호가 직접적으로 포함되지 않는다고 가정합니다. 예를 들어 `String` 생성자의 정규화된 이름은 "System.String.#ctor"일 수 있습니다.
 
@@ -42,23 +43,23 @@ ms.locfileid: "62293565"
 
   - 내장 형식(ELEMENT_TYPE_I4, ELEMENT_TYPE_OBJECT, ELEMENT_TYPE_STRING, ELEMENT_TYPE_TYPEDBYREF, ELEMENT_TYPE_VOID)은 해당하는 전체 형식의 정규화된 이름으로 표시됩니다(예: **System.Int32** 또는 **System.TypedReference**).
 
-  - ELEMENT_TYPE_PTR은 수정된 형식 뒤에 '\*'로 표시됩니다.
+  - ELEMENT_TYPE_PTR은 수정된 형식 뒤에 '*'로 표시됩니다.
 
   - ELEMENT_TYPE_BYREF는 수정된 형식 뒤에 ‘\@’으로 표시됩니다.
 
-  - ELEMENT_TYPE_PINNED는 수정된 형식 뒤에 '^'로 표시됩니다. MSVC 컴파일러를이 생성 하지 않습니다.
+  - ELEMENT_TYPE_PINNED는 수정된 형식 뒤에 '^'로 표시됩니다. MSVC 컴파일러는이를 생성 하지 않습니다.
 
-  - ELEMENT_TYPE_CMOD_REQ는 수정된 형식 뒤에 '&#124;' 및 한정자 클래스의 정규화된 이름으로 표시됩니다. MSVC 컴파일러를이 생성 하지 않습니다.
+  - ELEMENT_TYPE_CMOD_REQ는 수정된 형식 뒤에 '&#124;' 및 한정자 클래스의 정규화된 이름으로 표시됩니다. MSVC 컴파일러는이를 생성 하지 않습니다.
 
   - ELEMENT_TYPE_CMOD_OPT는 수정된 형식 뒤에 '!' 및 한정자 클래스의 정규화된 이름으로 표시됩니다.
 
   - ELEMENT_TYPE_SZARRAY는 배열의 요소 형식 뒤에 "[]"로 표시됩니다.
 
-  - ELEMENT_TYPE_GENERICARRAY는 배열의 요소 형식 뒤에 "[?]"로 표시됩니다. MSVC 컴파일러를이 생성 하지 않습니다.
+  - ELEMENT_TYPE_GENERICARRAY는 배열의 요소 형식 뒤에 "[?]"로 표시됩니다. MSVC 컴파일러는이를 생성 하지 않습니다.
 
   - ELEMENT_TYPE_ARRAY는 [*lowerbound*:`size`,*lowerbound*:`size`]로 표시됩니다. 여기서 쉼표 수는 순위 - 1에 해당하는 값이고, 각 차원의 하한과 크기(확인된 경우)는 10진수로 표시됩니다. 하한이나 크기가 지정되지 않은 경우에는 생략됩니다. 특정 차원의 하한과 크기를 생략하면 ':'도 생략됩니다. 예를 들어 하한이 1이고 크기가 지정되지 않은 2차원 배열은 [1:,1:]로 표시됩니다.
 
-  - ELEMENT_TYPE_FNPTR은 "=FUNC:`type`(*signature*)"로 표시됩니다. 여기서 `type`은 반환 형식이고 *signature*는 메서드의 인수입니다. 인수가 없으면 괄호는 생략됩니다. MSVC 컴파일러를이 생성 하지 않습니다.
+  - ELEMENT_TYPE_FNPTR은 "=FUNC:`type`(*signature*)"로 표시됩니다. 여기서 `type`은 반환 형식이고 *signature* 는 메서드의 인수입니다. 인수가 없으면 괄호는 생략됩니다. MSVC 컴파일러는이를 생성 하지 않습니다.
 
   다음 서명 구성 요소는 오버로드된 메서드를 구분하는 데 사용되지 않으므로 표시되지 않습니다.
 
@@ -178,6 +179,6 @@ namespace N {
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [XML 문서](xml-documentation-visual-cpp.md)

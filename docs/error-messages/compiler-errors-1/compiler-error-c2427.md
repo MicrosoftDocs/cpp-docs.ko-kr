@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2427'
 title: 컴파일러 오류 C2427
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2427
 ms.assetid: a7d421af-6180-40b4-b7a6-9f3bc7dfaaf9
-ms.openlocfilehash: d92f3bce54a4558702d2a6d3870323eb0edd5d4d
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: ae1131eb511d9d3f1affad56b576cebd19cb5213
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74744617"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97190174"
 ---
 # <a name="compiler-error-c2427"></a>컴파일러 오류 C2427
 

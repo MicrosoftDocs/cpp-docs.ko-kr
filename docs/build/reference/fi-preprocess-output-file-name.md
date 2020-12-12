@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: `/Fi` (출력 파일 이름 전처리)'
 title: /Fi (출력 파일 이름 전처리)
 ms.date: 08/12/2020
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - /Fi compiler option (C++)
 - preprocessing output files, file name
 ms.assetid: 6d0ba983-a8b7-41ec-84f5-b4688ef8efee
-ms.openlocfilehash: 82bf09a8f01f656f90ad9971530b05f108fc95a4
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: c598730b19b843aa312df71d745ed363d082cc43
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561091"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97192228"
 ---
 # <a name="fi-preprocess-output-file-name"></a>`/Fi` (출력 파일 이름 전처리)
 
@@ -55,7 +56,7 @@ CL /P /Fi".\\preprocessed\\" main.cpp helper.cpp
 
 1. **구성 속성**  >  **C/c + +**  >  **전처리기** 속성 페이지를 선택 합니다.
 
-1. **파일 전처리** 속성을 **예**로 설정 합니다.
+1. **파일 전처리** 속성을 **예** 로 설정 합니다.
 
 1. **구성 속성**  >  **C/c + +**  >  **명령줄** 속성 페이지를 선택 합니다.
 

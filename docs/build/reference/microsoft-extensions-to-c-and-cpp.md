@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: C 및 c + +에 대 한 Microsoft 확장'
 title: C 및 C++에 대한 Microsoft 확장
 ms.date: 06/14/2018
 helpviewer_keywords:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - extensions
 - compl method
 ms.assetid: e811a74a-45ba-4c00-b206-2f2321b8689a
-ms.openlocfilehash: 77f2ed64a0c816d84e67f66b664141581a9fad51
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: fac6edbdfd559f3cebd18dcdc3b8cfca2a9336dd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231509"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97190694"
 ---
 # <a name="microsoft-extensions-to-c-and-c"></a>C 및 C++에 대한 Microsoft 확장
 
@@ -57,9 +58,9 @@ class CMyClass  {
 const int CMyClass::max;   // out of class definition
 ```
 
-**/Ze**에서 클래스 외부 정의는 static, const 정수 및 const 열거형 데이터 멤버의 경우 선택 사항입니다. static 및 const인 열거형 및 정수만 클래스에서 이니셜라이저를 포함할 수 있습니다. 초기화 식은 const 식이어야 합니다.
+**/Ze** 에서 클래스 외부 정의는 static, const 정수 및 const 열거형 데이터 멤버의 경우 선택 사항입니다. static 및 const인 열거형 및 정수만 클래스에서 이니셜라이저를 포함할 수 있습니다. 초기화 식은 const 식이어야 합니다.
 
-헤더 파일에 클래스 외부 정의가 제공 되 고 헤더 파일이 여러 소스 파일에 포함 된 경우 오류를 방지 하려면 [selectany](../../cpp/selectany.md)을 사용 합니다. 예를 들면 다음과 같습니다.
+헤더 파일에 클래스 외부 정의가 제공 되 고 헤더 파일이 여러 소스 파일에 포함 된 경우 오류를 방지 하려면 [selectany](../../cpp/selectany.md)을 사용 합니다. 예를 들어:
 
 ```cpp
 __declspec(selectany) const int CMyClass::max = 5;
@@ -69,7 +70,7 @@ __declspec(selectany) const int CMyClass::max = 5;
 
 C++ 컴파일러 및 C 컴파일러는 모두 이러한 종류의 비ANSI 캐스트를 지원합니다.
 
-- l-value를 생성하기 위한 비ANSI 캐스트. 예를 들면 다음과 같습니다.
+- l-value를 생성하기 위한 비ANSI 캐스트. 예를 들어:
 
    ```C
    char *p;
@@ -85,7 +86,7 @@ C++ 컴파일러 및 C 컴파일러는 모두 이러한 종류의 비ANSI 캐스
    p = ( char * )(( int * )p + 1 );
    ```
 
-- 데이터 포인터에 대한 함수 포인터의 비ANSI 캐스트. 예를 들면 다음과 같습니다.
+- 데이터 포인터에 대한 함수 포인터의 비ANSI 캐스트. 예를 들어:
 
    ```C
    int ( * pfunc ) ();
@@ -236,7 +237,7 @@ C + + 컴파일러 및 c 컴파일러는 모두 `atan` `atan2` `cos` `exp` `log`
 
 ## <a name="passing-a-non-const-pointer-parameter-to-a-function-that-expects-a-reference-to-a-const-pointer-parameter"></a>Const 포인터 매개 변수에 대 한 참조가 필요한 함수에 const가 아닌 포인터 매개 변수 전달
 
-C + +에 대 한 확장입니다. 이 코드는 **/ze**를 사용 하 여 컴파일합니다.
+C + +에 대 한 확장입니다. 이 코드는 **/ze** 를 사용 하 여 컴파일합니다.
 
 ```cpp
 typedef   int   T;
@@ -260,7 +261,7 @@ void func ()
 
 ## <a name="iso646h-not-enabled"></a>ISO646. H 사용 안 함
 
-다음 연산자의 텍스트 형식을 사용 하려면 **/ze**에서 iso646를 포함 해야 합니다.
+다음 연산자의 텍스트 형식을 사용 하려면 **/ze** 에서 iso646를 포함 해야 합니다.
 
 - &&(및)
 
@@ -286,7 +287,7 @@ void func ()
 
 ## <a name="address-of-string-literal-has-type-const-char--not-const-char--"></a>문자열 리터럴의 주소에 const char [], const char (*) []가 아닌 형식이 있습니다.
 
-다음 예제는 `char const (*)[4]` **/za**아래에 있지만/ze에서 출력 됩니다 `char const [4]` . **/Ze**
+다음 예제는 `char const (*)[4]` **/za** 아래에 있지만/ze에서 출력 됩니다 `char const [4]` . 
 
 ```cpp
 #include <stdio.h>
@@ -302,4 +303,4 @@ int main()
 
 - [/Za,/Ze (언어 확장 사용 안 함)](za-ze-disable-language-extensions.md)
 - [MSVC 컴파일러 옵션](compiler-options.md)
-- [MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)
+- [MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)

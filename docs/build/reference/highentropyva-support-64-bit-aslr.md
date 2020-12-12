@@ -1,19 +1,20 @@
 ---
+description: 자세히 알아보기:/HIGHENTROPYVA (64 비트 ASLR 지원)
 title: /HIGHENTROPYVA(64비트 ASLR 지원)
 ms.date: 06/12/2018
 ms.assetid: fe35f9f7-d28e-4694-9aeb-a79db06168e0
-ms.openlocfilehash: ead296b1bd31171fb1a187685f407f6a0cf8a74c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: aed5d5eea2d3351d4eff88a58818a953563ba0e5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835027"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97191552"
 ---
 # <a name="highentropyva-support-64-bit-aslr"></a>/HIGHENTROPYVA(64비트 ASLR 지원)
 
 실행 가능 이미지가 높은 엔트로피 64비트 ASLR(주소 공간 레이아웃 불규칙화)을 지원하는지 여부를 지정합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **`/HIGHENTROPYVA`**[**`:NO`**]
 
@@ -29,9 +30,9 @@ ms.locfileid: "88835027"
 
 1. 프로젝트 **속성 페이지** 대화 상자를 엽니다. 자세한 정보는 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조하세요.
 
-1. **구성 속성**  >  **링커**  >  **명령줄** 속성 페이지를 선택 합니다.
+1. **구성 속성** > **링커** > **명령줄** 속성 페이지를 선택합니다.
 
-1. **추가 옵션**에서 또는를 `/HIGHENTROPYVA` 입력 `/HIGHENTROPYVA:NO` 합니다.
+1. **추가 옵션** 에서 또는를 `/HIGHENTROPYVA` 입력 `/HIGHENTROPYVA:NO` 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

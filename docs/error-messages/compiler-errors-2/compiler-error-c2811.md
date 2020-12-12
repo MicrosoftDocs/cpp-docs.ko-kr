@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2811'
 title: 컴파일러 오류 C2811
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2811
 ms.assetid: 6a44b18e-44c1-49d8-9b99-e0545b9a6e7d
-ms.openlocfilehash: 95d6385cea95f22bbb9bbb9197dace22bd1a3adf
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 02b4770b08bdfc9ee15386874ebba2265716536d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74755254"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97194854"
 ---
 # <a name="compiler-error-c2811"></a>컴파일러 오류 C2811
 

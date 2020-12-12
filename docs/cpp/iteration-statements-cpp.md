@@ -1,16 +1,17 @@
 ---
+description: '다음에 대 한 자세한 정보: 반복 문 (c + +)'
 title: 반복 문 (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - iteration statements
 - loop structures, iteration statements
 ms.assetid: bf6d75f7-ead2-426a-9c47-33847f59b8c7
-ms.openlocfilehash: b4176e8265759ae569275bdae5304b0b10c29fc1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 71edf526ed641a5bcd7944c546486cf3d2fb5059
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227389"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97190291"
 ---
 # <a name="iteration-statements-c"></a>반복 문 (C++)
 
@@ -20,7 +21,7 @@ C + +에서는 네 개의 반복 문 ( [while](../cpp/while-statement-cpp.md), [
 
 ### <a name="iteration-statements"></a>반복 문
 
-|인수를 제거합니다.|평가 위치|초기화|ID 증가값|
+|문|평가 위치|초기화|ID 증가값|
 |---------------|------------------|--------------------|---------------|
 |**`while`**|루프의 맨 위|아니요|아니요|
 |**`do`**|루프의 맨 아래|아니요|아니요|

@@ -1,5 +1,6 @@
 ---
-title: CMFC데스크탑경고디아로그 클래스
+description: '자세한 정보: CMFCDesktopAlertDialog 클래스'
+title: CMFCDesktopAlertDialog 클래스
 ms.date: 10/18/2018
 f1_keywords:
 - CMFCDesktopAlertDialog
@@ -14,18 +15,18 @@ helpviewer_keywords:
 - CMFCDesktopAlertDialog [MFC], HasFocus
 - CMFCDesktopAlertDialog [MFC], PreTranslateMessage
 ms.assetid: a53c60aa-9607-485b-b826-ec64962075f6
-ms.openlocfilehash: 479959e9b021255e309caf6fee02588a8cd8f1d1
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 327ec72b1e58d90e768f51c083ff9545f24f6f0b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81367650"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97193190"
 ---
-# <a name="cmfcdesktopalertdialog-class"></a>CMFC데스크탑경고디아로그 클래스
+# <a name="cmfcdesktopalertdialog-class"></a>CMFCDesktopAlertDialog 클래스
 
-이 `CMFCDesktopAlertDialog` 클래스는 [CMFCDesktopAlertWnd 클래스와](../../mfc/reference/cmfcdesktopalertwnd-class.md) 함께 사용되어 팝업 창에 사용자 지정 대화 상자를 표시합니다.
+`CMFCDesktopAlertDialog`클래스는 [CMFCDesktopAlertWnd 클래스](../../mfc/reference/cmfcdesktopalertwnd-class.md) 와 함께 사용 되어 팝업 창에 사용자 지정 대화 상자를 표시 합니다.
 
-자세한 내용은 Visual Studio 설치의 **\\VC\\atlmfc\\src mfc** 폴더에 있는 소스 코드를 참조하십시오.
+자세한 내용은 Visual Studio 설치의 **VC \\ s\mfc \\ src \\ mfc** 폴더에 있는 소스 코드를 참조 하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -37,7 +38,7 @@ class CMFCDesktopAlertDialog : public CDialogEx
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
 |[CMFCDesktopAlertDialog::CreateFromParams](#createfromparams)||
 |[CMFCDesktopAlertDialog::GetDlgSize](#getdlgsize)||
@@ -52,7 +53,7 @@ class CMFCDesktopAlertDialog : public CDialogEx
 
 1. 프로젝트 리소스에서 자식 대화 상자 템플릿을 만듭니다.
 
-1. [CMFCDesktopAlertWnd:::대화](../../mfc/reference/cmfcdesktopalertwnd-class.md#create) 상자 템플릿의 리소스 ID와 파생된 클래스의 런타임 클래스 정보를 매개 변수로 포인터로 만듭니다.
+1. 대화 상자 템플릿의 리소스 ID와 파생 클래스의 런타임 클래스 정보에 대 한 포인터를 매개 변수로 사용 하 여 [CMFCDesktopAlertWnd:: Create](../../mfc/reference/cmfcdesktopalertwnd-class.md#create) 를 호출 합니다.
 
 1. 호스트된 컨트롤에서 생성되는 모든 알림을 처리하는 사용자 지정 대화 상자를 프로그래밍하거나 이러한 알림을 직접 처리하는 호스트된 컨트롤을 프로그래밍합니다.
 
@@ -72,9 +73,9 @@ class CMFCDesktopAlertDialog : public CDialogEx
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxDesktopAlertDialog.h
+**헤더:** afxDesktopAlertDialog
 
-## <a name="cmfcdesktopalertdialogcreatefromparams"></a><a name="createfromparams"></a>CMFC데스크톱경고디아로그::창조로부터파라임
+## <a name="cmfcdesktopalertdialogcreatefromparams"></a><a name="createfromparams"></a> CMFCDesktopAlertDialog:: CreateFromParams
 
 ```
 BOOL CreateFromParams(
@@ -84,35 +85,35 @@ BOOL CreateFromParams(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *매개 변수*<br/>
+진행 *params*<br/>
 
-【인】 *pParent*<br/>
+진행 *Pparent*<br/>
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcdesktopalertdialoggetdlgsize"></a><a name="getdlgsize"></a>CMFC데스크톱 경고디아로그::GetDlgSize
+## <a name="cmfcdesktopalertdialoggetdlgsize"></a><a name="getdlgsize"></a> CMFCDesktopAlertDialog:: GetDlgSize
 
 ```
 CSize GetDlgSize();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcdesktopalertdialoghasfocus"></a><a name="hasfocus"></a>CMFC데스크톱 경고디아로그::하스포커스
+## <a name="cmfcdesktopalertdialoghasfocus"></a><a name="hasfocus"></a> CMFCDesktopAlertDialog:: HasFocus
 
 ```
 BOOL HasFocus() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcdesktopalertdialogpretranslatemessage"></a><a name="pretranslatemessage"></a>CMFC데스크톱경고디아로그::P다시번역메시지
+## <a name="cmfcdesktopalertdialogpretranslatemessage"></a><a name="pretranslatemessage"></a> CMFCDesktopAlertDialog::P reTranslateMessage
 
 ```
 virtual BOOL PreTranslateMessage(MSG* pMsg);
@@ -122,7 +123,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 
 [in] *pMsg*<br/>
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
@@ -131,5 +132,5 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
 [CMFCDesktopAlertWnd 클래스](../../mfc/reference/cmfcdesktopalertwnd-class.md)<br/>
-[CMFC데스크탑경고폰드정보 클래스](../../mfc/reference/cmfcdesktopalertwndinfo-class.md)<br/>
-[클리클로덱스 클래스](../../mfc/reference/cdialogex-class.md)
+[CMFCDesktopAlertWndInfo 클래스](../../mfc/reference/cmfcdesktopalertwndinfo-class.md)<br/>
+[CDialogEx 클래스](../../mfc/reference/cdialogex-class.md)

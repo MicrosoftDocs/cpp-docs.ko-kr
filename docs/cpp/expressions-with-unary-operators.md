@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 단항 연산자가 있는 식'
 title: 단항 연산자가 있는 식
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - unary operators [C++], expressions with
 - expressions [C++], operators
 ms.assetid: 1217685b-b85d-4b48-9ff4-d90f56a26c1b
-ms.openlocfilehash: 032ebd99041de9308d16710b2a27e0db3cddd4df
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6714727d0a4b2c386c37550151df21062534376e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233758"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97186508"
 ---
 # <a name="expressions-with-unary-operators"></a>단항 연산자가 있는 식
 
@@ -35,15 +36,15 @@ ms.locfileid: "87233758"
 
 - [캐스트 연산자 ()](../cpp/cast-operator-parens.md)
 
-- [`sizeof`연산자](../cpp/sizeof-operator.md)
+- [`sizeof` 연산자](../cpp/sizeof-operator.md)
 
-- [`__uuidof`연산자](../cpp/uuidof-operator.md)
+- [`__uuidof` 연산자](../cpp/uuidof-operator.md)
 
-- [`alignof`연산자](../cpp/alignof-operator.md)
+- [`alignof` 연산자](../cpp/alignof-operator.md)
 
-- [`new`연산자](../cpp/new-operator-cpp.md)
+- [`new` 연산자](../cpp/new-operator-cpp.md)
 
-- [`delete`연산자](../cpp/delete-operator-cpp.md)
+- [`delete` 연산자](../cpp/delete-operator-cpp.md)
 
 이러한 연산자는 오른쪽에서 왼쪽으로 결합됩니다. 단항 식은 일반적으로 후위 식 또는 주 식 앞에 오는 구문을 포함합니다.
 
@@ -67,7 +68,7 @@ ms.locfileid: "87233758"
 
 - *할당 취소 식*
 
-*후 위 식은* *단항 식*으로 간주 되며, 기본 식은 *후 위 식*으로 간주 되기 때문에 모든 기본 식은 *단항 식* 으로 간주 됩니다. 자세한 내용은 [후 위 식](../cpp/postfix-expressions.md) 및 [기본 식](../cpp/primary-expressions.md)을 참조 하세요.
+*후 위 식은* *단항 식* 으로 간주 되며, 기본 식은 *후 위 식* 으로 간주 되기 때문에 모든 기본 식은 *단항 식* 으로 간주 됩니다. 자세한 내용은 [후 위 식](../cpp/postfix-expressions.md) 및 [기본 식](../cpp/primary-expressions.md)을 참조 하세요.
 
 *단항 연산자* 는 다음 기호 중 하나 이상으로 구성 됩니다.`* & + - ! ~`
 

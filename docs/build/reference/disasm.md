@@ -1,4 +1,5 @@
 ---
+description: 자세히 알아보기:/DISASM
 title: /DISASM
 ms.date: 01/17/2018
 f1_keywords:
@@ -7,25 +8,25 @@ helpviewer_keywords:
 - -DISASM dumpbin option
 - DISASM dumpbin option
 - /DISASM dumpbin option
-ms.openlocfilehash: fb394b2266470e77c50ce5398aea961c37ac34fb
-ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
+ms.openlocfilehash: 764754e017958a57afd53236b7fc1ffb6217d850
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70927719"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97192904"
 ---
 # <a name="disasm"></a>/DISASM
 
 DUMPBIN 출력의 코드 섹션 디스어셈블리를 인쇄 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
-> **/DISASM**{ **:** \[**BYTES**|**NOBYTES**]}
+> **/DISASM**{**:** \[ **BYTES** | **NOBYTES**]}
 
 ### <a name="arguments"></a>인수
 
-**BYTES**<br/>
-디스어셈블리 출력에 해석 된 opcode 및 인수와 함께 명령 바이트를 포함 합니다. 이 옵션이 기본 옵션입니다.
+**바이트**<br/>
+디스어셈블리 출력에 해석 된 opcode 및 인수와 함께 명령 바이트를 포함 합니다. 기본 옵션입니다.
 
 **NOBYTES**<br/>
 디스어셈블리 출력에는 명령 바이트를 포함 하지 않습니다.
@@ -38,6 +39,6 @@ DUMPBIN 출력의 코드 섹션 디스어셈블리를 인쇄 합니다.
 
 [/Gl (전체 프로그램 최적화)](gl-whole-program-optimization.md) 컴파일러 옵션을 사용 하 여 생성 된 파일에는 [/svvvvvhhonly](headers.md) 옵션을 사용할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [DUMPBIN 옵션](dumpbin-options.md)

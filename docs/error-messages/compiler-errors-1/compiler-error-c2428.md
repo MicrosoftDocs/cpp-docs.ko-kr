@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2428'
 title: 컴파일러 오류 C2428
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2428
 ms.assetid: 74aa5714-e930-4f9e-9061-68ccce7f0d38
-ms.openlocfilehash: 2a85e1874a03882ca8497eeff379d377a585fe06
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a91819591251e1c291ef8a3291525c0493af20ad
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216234"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97190148"
 ---
 # <a name="compiler-error-c2428"></a>컴파일러 오류 C2428
 

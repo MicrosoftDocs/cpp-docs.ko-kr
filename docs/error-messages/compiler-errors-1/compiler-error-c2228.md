@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2228'
 title: 컴파일러 오류 C2228
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2228
 ms.assetid: 901cadb1-ce90-4ae0-a360-547a9ba2ca18
-ms.openlocfilehash: 56eed6aeff5a955253a440d5931d66118f4604e0
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 8bf5c4af88f77237699baae5e7a458fca971f126
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74759284"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97195062"
 ---
 # <a name="compiler-error-c2228"></a>컴파일러 오류 C2228
 

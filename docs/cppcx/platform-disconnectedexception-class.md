@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Platform::D isconnectedException 클래스'
 title: Platform::DisconnectedException 클래스
 ms.date: 12/30/2016
 ms.topic: reference
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::DisconnectedException
 ms.assetid: c25e0d64-5bff-4c21-88e5-c4ec2776fa7f
-ms.openlocfilehash: 56276a7d09cc82e05886c2c67a4784993083adb5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6ccfedc143d0245582c7c1f95110207d583949fd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387619"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97195322"
 ---
 # <a name="platformdisconnectedexception-class"></a>Platform::DisconnectedException 클래스
 
@@ -37,10 +38,10 @@ public ref class DisconnectedException : COMException,    IException,    IPrinta
 
 **지원 되는 최소 서버:** Windows Server 2012
 
-**네임스페이스:** 플랫폼
+**네임스페이스:** Platform
 
-**메타데이터:** platform.winmd
+**메타 데이터:** platform.object
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[Platform::COMException 클래스](../cppcx/platform-comexception-class.md)
+[Platform:: COMException 클래스](../cppcx/platform-comexception-class.md)

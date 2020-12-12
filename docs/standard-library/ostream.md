@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: &lt; ostream&gt;'
 title: '&lt;ostream&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - ostream header
 ms.assetid: 90c3b6fb-57cd-4ae7-99b8-8512f24a67d2
-ms.openlocfilehash: ffcb6c7b2f95b0b62659f6080c9ed0d1f111237c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 3b17ff221e08b9fc709f1d2c32c5862f6075e451
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846396"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97193034"
 ---
 # <a name="ltostreamgt"></a>&lt;ostream&gt;
 
 Iostreams에 대 한 삽입을 중재 클래스 템플릿 [basic_ostream](../standard-library/basic-ostream-class.md)를 정의 합니다. 헤더에서 여러 관련 조작자도 정의합니다. 이 헤더는 일반적으로 다른 iostreams 헤더에 의해 포함되며, 직접 포함해야 하는 경우는 거의 없습니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 #include <ostream>

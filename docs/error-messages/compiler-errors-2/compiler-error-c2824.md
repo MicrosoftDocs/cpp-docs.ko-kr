@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2824'
 title: 컴파일러 오류 C2824
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2824
 ms.assetid: 5bd865f7-e0af-404e-80fe-e2b798b44a59
-ms.openlocfilehash: ee012d7244079fd881210eb969f4844a2c6e85d8
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: cb6f7f86647a465cb0b525bc0da8f2d452661af8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74750639"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97194685"
 ---
 # <a name="compiler-error-c2824"></a>컴파일러 오류 C2824
 
 ' operator n e w '의 반환 형식은 ' void * ' 여야 합니다.
 
-기반이 아닌 포인터를 사용 하는 경우 `new` 연산자의 오버 로드는 `void *`을 반환 해야 합니다.
+기반이 아닌 포인터를 사용 하는 경우 연산자의 오버 로드는를 `new` 반환 해야 `void *` 합니다.
 
 다음 샘플에서는 C2824를 생성 합니다.
 

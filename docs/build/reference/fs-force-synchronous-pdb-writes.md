@@ -1,5 +1,6 @@
 ---
-title: /FS(동기 PDB 쓰기 적용)
+description: 자세히 알아보기:/FS (동기 PDB 쓰기 적용)
+title: /F(동기 PDB 쓰기 적용)
 ms.date: 11/04/2016
 f1_keywords:
 - /FS
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - -FS compiler option [C++]
 - /FS compiler option [C++]
 ms.assetid: b2caaffe-f6e1-4963-b068-648f06b105e0
-ms.openlocfilehash: 97ffb9529087329cf327ba704523b93d5d9b99b1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2dcddd046cc7232f40be5a54d73e659ed099e85d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62270981"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97192033"
 ---
-# <a name="fs-force-synchronous-pdb-writes"></a>/FS(동기 PDB 쓰기 적용)
+# <a name="fs-force-synchronous-pdb-writes"></a>/F(동기 PDB 쓰기 적용)
 
-[/Zi](z7-zi-zi-debug-information-format.md)나 [/ZI](z7-zi-zi-debug-information-format.md)를 통해 생성된 프로그램 데이터베이스(PDB) 파일에 쓰기를 강제 실행하여 MSPDBSRV.EXE를 통해 직렬화합니다.
+[/Zi](z7-zi-zi-debug-information-format.md) 또는 [/zi](z7-zi-zi-debug-information-format.md)에 의해 생성 되는 프로그램 데이터베이스 (PDB) 파일에 대 한 쓰기를 강제로 MSPDBSRV.EXE를 통해 serialize 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -26,25 +27,25 @@ ms.locfileid: "62270981"
 
 ## <a name="remarks"></a>설명
 
-기본적으로 **/Zi**나 **/ZI**를 지정하면 컴파일러는 형식 정보와 기호 디버깅 정보를 쓰도록 PDB 파일을 잠급니다. 이렇게 하면 형식 수가 많더라도 컴파일러가 형식 정보를 생성하는데 걸리는 시간을 크게 단축할 수 있습니다. 다른 프로세스(예: 바이러스 백신 프로그램)로 인해 PDB 파일이 일시적으로 잠기는 경우, 컴파일러에 의한 쓰기가 실패하고 치명적인 오류가 발생할 수 있습니다. 이 문제는 또한 여러 cl.exe 복사본이 동일한 PDB 파일에 액세스하는 경우에도 발생할 수 있습니다. 예를 들어 솔루션에 동일한 중간 디렉터리 또는 출력 디렉터리를 사용하는 독립 프로젝트가 포함되고 병렬 빌드가 사용 설정된 경우도 이 문제가 발생할 수 있습니다. **/FS** 컴파일러 옵션은 컴파일러가 PDB 파일을 잠그지 못하도록 하고 MSPDBSRV.EXE의 직렬화를 통한 강제 쓰기를 적용합니다. 이렇게 하면 빌드 시간이 크게 길어질 수 있으며, 여러 cl.exe 인스턴스가 동시에 PDB 파일에 액세스할 때 발생할 수 있는 모든 오류를 방지하지는 못합니다. 독립 프로젝트가 별도의 개별 중간 및 출력 위치에 쓰거나 직렬화된 프로젝트 빌드를 강제로 실행하도록 프로젝트 중 하나를 다른 프로젝트에 종속되도록 솔루션을 변경하는 것이 좋습니다.
+기본적으로 **/zi** 또는 **/zi** 를 지정 하면 컴파일러가 PDB 파일을 잠가 형식 정보 및 기호화 된 디버깅 정보를 씁니다. 이렇게 하면 형식 수가 많을 경우 컴파일러가 형식 정보를 생성하는 데 걸리는 시간을 크게 줄일 수 있습니다. 다른 프로세서(예: 바이러스 백신 프로그램)가 PDB 파일을 일시적으로 잠그는 경우, 컴파일러에 의한 쓰기가 실패하고 치명적인 오류가 발생할 수 있습니다. 이 문제는 또한 여러 cl.exe 복사본이 동일한 PDB 파일에 액세스하는 경우에도 발생할 수 있습니다. 이에 대한 예로는 솔루션에 동일한 중간 디렉터리 또는 출력 디렉터리를 사용하는 독립 프로젝트가 포함되었고 병렬 빌드가 사용하도록 설정된 경우를 예로 들 수 있습니다. **/Fs** 컴파일러 옵션을 사용 하면 컴파일러가 PDB 파일을 잠그지 않고 쓰기를 강제로 수행 하 여 액세스를 serialize 하는 MSPDBSRV.EXE를 통해 수행 됩니다. 이렇게 하면 빌드가 더 길어질 수 있으며, 여러 cl.exe 인스턴스가 동시에 PDB 파일에 액세스할 때 발생할 수 있는 모든 오류를 방지합니다. 독립 프로젝트가 개별 중간 및 출력 위치에 쓰기를 수행하거나 serialize된 프로젝트 빌드를 강제로 적용하기 위해 프로젝트 중 하나가 서로 종속되도록 솔루션을 변경하는 것이 좋습니다.
 
-[/MP](mp-build-with-multiple-processes.md) 옵션을 사용하면 **/FS**가 기본적으로 설정됩니다.
+[/Mp](mp-build-with-multiple-processes.md) 옵션은 기본적으로 **/fs** 를 사용 하도록 설정 합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
 1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. **C/C++** 폴더를 선택합니다.
+1. **C/c + +** 폴더를 선택 합니다.
 
-1. **명령줄** 속성 페이지를 선택합니다.
+1. **명령줄** 속성 페이지를 선택 합니다.
 
-1. **추가 옵션**에 `/FS`가 포함되도록 수정한 다음 **확인**을 선택합니다.
+1. 포함 하도록 **추가 옵션** 속성을 수정한 `/FS` 다음 **확인** 을 선택 합니다.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
-[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)
+[MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)

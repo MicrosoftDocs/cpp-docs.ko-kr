@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3252'
 title: 컴파일러 오류 C3252
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3252
 ms.assetid: aa9ad096-e9ac-41c7-8ad9-b966751c7c75
-ms.openlocfilehash: fbfe3ffaca66cad4922b5771ee8c9003acba7571
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 59b5a0073d3dc8147b2e89d637fd98ba7339f6b8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74754331"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97194308"
 ---
 # <a name="compiler-error-c3252"></a>컴파일러 오류 C3252
 

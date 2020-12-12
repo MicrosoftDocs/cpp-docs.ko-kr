@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 일반 속성 페이지 (프로젝트)'
 title: 일반 속성 페이지(프로젝트)
 ms.date: 07/17/2019
 f1_keywords:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - Clean Build option
 - output files, setting directory
 - Unicode, creating C++ build configuration
-ms.openlocfilehash: eaaa2c7428809c05532642b0f9ac53146c6f01a9
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 3bcfcca492ca1b228658c49699e41f31135d0974
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924286"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97191955"
 ---
 # <a name="general-property-page-project"></a>일반 속성 페이지(프로젝트)
 
@@ -150,7 +151,7 @@ Visual Studio 2015 및 Visual Studio 2017에서 **솔루션 탐색기** 의 프�
 
 - **정리할 때 삭제할 확장명**
 
-   **정리** 옵션( **빌드** 메뉴)은 프로젝트 구성이 빌드되는 중간 디렉터리에서 파일을 삭제합니다. 이 속성을 통해 지정된 확장명을 가진 파일은 **정리** 를 실행하거나 다시 빌드를 수행할 경우 삭제됩니다. 중간 디렉터리에 있는 이러한 확장명의 파일뿐 아니라 빌드 시스템은 위치에 관계없이 알려진 빌드 출력(.obj 파일과 같은 중간 출력 포함)도 삭제합니다. 와일드카드 문자를 지정할 수 있습니다.
+   **정리** 옵션(**빌드** 메뉴)은 프로젝트 구성이 빌드되는 중간 디렉터리에서 파일을 삭제합니다. 이 속성을 통해 지정된 확장명을 가진 파일은 **정리** 를 실행하거나 다시 빌드를 수행할 경우 삭제됩니다. 중간 디렉터리에 있는 이러한 확장명의 파일뿐 아니라 빌드 시스템은 위치에 관계없이 알려진 빌드 출력(.obj 파일과 같은 중간 출력 포함)도 삭제합니다. 와일드카드 문자를 지정할 수 있습니다.
 
    프로그래밍 방식으로 이 속성에 액세스하려면 <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.DeleteExtensionsOnClean%2A>을 참조하세요.
 
@@ -170,7 +171,7 @@ Visual Studio 2015 및 Visual Studio 2017에서 **솔루션 탐색기** 의 프�
 
 ## <a name="project-defaults"></a>프로젝트 기본값
 
-프로젝트 기본값 섹션의 속성은 수정할 수 있는 기본 속성을 나타냅니다. 이러한 속성에 대한 정의는 *설치 디렉터리* \VC\VCProjectDefaults의 .props 파일에서 확인할 수 있습니다.
+프로젝트 기본값 섹션의 속성은 수정할 수 있는 기본 속성을 나타냅니다. 이러한 속성에 대한 정의는 *설치 디렉터리*\VC\VCProjectDefaults의 .props 파일에서 확인할 수 있습니다.
 
 - **구성 유형**
 

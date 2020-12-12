@@ -1,4 +1,5 @@
 ---
+description: 자세히 알아보기:/GZ (스택 프레임 Run-Time 오류 검사를 사용 하도록 설정)
 title: /GZ(스택 프레임 런타임 오류 검사 사용)
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,16 +11,16 @@ helpviewer_keywords:
 - GZ compiler option [C++]
 - debug builds, catch release-build errors
 ms.assetid: b3efeeff-d5e3-4057-91c9-f6fc73d0270c
-ms.openlocfilehash: 3e6ffce487cc8183e45f3a911e7060ea22b28216
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0b0936037c265bf57413c458ffc0a831184cb074
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62292059"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97191695"
 ---
 # <a name="gz-enable-stack-frame-run-time-error-checking"></a>/GZ(스택 프레임 런타임 오류 검사 사용)
 
-[/RTC(런타임 오류 검사)](rtc-run-time-error-checks.md) 옵션과 동일한 작업을 수행합니다. 더 이상 사용되지 않습니다.
+[/Rtc (런타임 오류 검사)](rtc-run-time-error-checks.md) 옵션과 동일한 작업을 수행 합니다. 더 이상 사용되지 않습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -29,9 +30,9 @@ ms.locfileid: "62292059"
 
 ## <a name="remarks"></a>설명
 
-**/GZ**는 최적화되지 않은([/Od(비활성화(디버그))](od-disable-debug.md)) 빌드에서만 사용됩니다.
+**/GZ** 는 최적화 되지 않은 ([/od (Debug)](od-disable-debug.md)) 빌드 에서만 사용 됩니다.
 
-**/GZ**는 Visual Studio 2005부터 사용되지 않습니다. 대신 [/RTC(런타임 오류 검사)](rtc-run-time-error-checks.md)를 사용합니다. 사용되지 않는 컴파일러 옵션은 [범주별 컴파일러 옵션 목록](compiler-options-listed-by-category.md)의 **사용되지 않는 컴파일러 옵션**을 참조합니다.
+**/GZ** 는 Visual Studio 2005 이후부터 사용 되지 않습니다. 대신 [/rtc (런타임 오류 검사)를](rtc-run-time-error-checks.md) 사용 합니다. 사용 되지 않는 컴파일러 옵션의 목록은 [컴파일러 옵션 범주별](compiler-options-listed-by-category.md)목록에서 **사용 되지 않는 컴파일러 옵션** 을 참조 하세요.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
@@ -47,7 +48,7 @@ ms.locfileid: "62292059"
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
-[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)
+[MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)

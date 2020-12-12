@@ -1,4 +1,5 @@
 ---
+description: 자세히 알아보기:/IGNORE (특정 경고 무시)
 title: /IGNORE(특정 경고 무시)
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - /IGNORE linker option
 ms.assetid: 37e77387-8838-4697-898f-d376ac641124
-ms.openlocfilehash: 4ed87a1a12bea189f56545cf5256351a29977643
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 7098515a65981ffcdf60b5b517d2434d20e7c015
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040264"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97191331"
 ---
 # <a name="ignore-ignore-specific-warnings"></a>/IGNORE(특정 경고 무시)
 
@@ -28,7 +29,7 @@ ms.locfileid: "90040264"
 
 기본적으로 LINK는 모든 경고를 보고합니다. **/IGNORE** 를 지정 하 여 `warning` 특정 경고 번호를 표시 하지 않도록 링커에 지시 합니다. 여러 경고를 무시하려면 경고 번호를 쉼표로 구분합니다.
 
-일부 경고는 링커에서 무시할 수 없습니다. 다음 표에서는 **/IGNORE**에 의해 표시 되지 않는 경고를 나열 합니다.
+일부 경고는 링커에서 무시할 수 없습니다. 다음 표에서는 **/IGNORE** 에 의해 표시 되지 않는 경고를 나열 합니다.
 
 | 링커 경고 | 메시지 |
 |--------------------|-|

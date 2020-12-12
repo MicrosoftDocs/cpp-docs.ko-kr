@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 함수 호출 (c + +)'
 title: 함수 호출 (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - operator overloading [C++], examples
 - function call operator ()
 ms.assetid: 5094254a-045b-46f7-8653-69bc91e80dce
-ms.openlocfilehash: 6c7326b0f9c9592cb2b3be973a5ba1747a2015a0
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 5fc33e11dbc4c9d88cc81eb41378cb6f10e00dc4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80179811"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97195413"
 ---
 # <a name="function-call-c"></a>함수 호출 (C++)
 

@@ -1,4 +1,5 @@
 ---
+description: 자세히 알아보기:/MIDL (MIDL 명령줄 옵션 지정)
 title: /MIDL(MIDL 명령줄 옵션 지정)
 ms.date: 09/05/2018
 f1_keywords:
@@ -11,20 +12,20 @@ helpviewer_keywords:
 - MIDL linker option
 - MIDL, command line options
 ms.assetid: 22dc259e-b34c-4ed3-a380-4beb734482c1
-ms.openlocfilehash: 3f1b6526f51e5aaa48008792361d3e63249d9f16
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 7c3a095e687ebe58db25cc8313569df3ee3a5886
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502849"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97190642"
 ---
 # <a name="midl-specify-midl-command-line-options"></a>/MIDL(MIDL 명령줄 옵션 지정)
 
 MIDL 명령줄 옵션에 대 한 지시 파일을 지정 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
-> **/MIDL: \@ ** <em>파일</em>
+> **/MIDL: \@** <em>파일</em>
 
 ## <a name="arguments"></a>인수
 
@@ -33,7 +34,7 @@ MIDL 명령줄 옵션에 대 한 지시 파일을 지정 합니다.
 
 ## <a name="remarks"></a>설명
 
-IDL 파일을 TLB 파일로 변환 하는 모든 옵션을 *파일*에 지정 해야 합니다. MIDL 명령줄 옵션은 링커에 대 한 명령줄에서 지정할 수 없습니다. /MIDL를 지정 하지 않으면 MIDL 컴파일러는 IDL 파일 이름 으로만 호출 되며 다른 옵션은 호출 되지 않습니다.
+IDL 파일을 TLB 파일로 변환 하는 모든 옵션을 *파일* 에 지정 해야 합니다. MIDL 명령줄 옵션은 링커에 대 한 명령줄에서 지정할 수 없습니다. /MIDL를 지정 하지 않으면 MIDL 컴파일러는 IDL 파일 이름 으로만 호출 되며 다른 옵션은 호출 되지 않습니다.
 
 파일은 한 줄에 하나의 MIDL 명령줄 옵션을 포함 해야 합니다.
 

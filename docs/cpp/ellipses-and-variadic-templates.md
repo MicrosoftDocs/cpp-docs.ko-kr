@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: 줄임표 및 Variadic 템플릿'
 title: 줄임표 및 Variadic 템플릿
 ms.date: 11/04/2016
 ms.assetid: f20967d9-c967-4fd2-b902-2bb1d5ed87e3
-ms.openlocfilehash: e916dac40355f4397ef4846c0edf568c60b7d3dd
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 37cb2e02f818cc5d4db8954a348fc749a477b7d4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221629"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97195466"
 ---
 # <a name="ellipsis-and-variadic-templates"></a>줄임표 및 Variadic 템플릿
 
@@ -15,9 +16,9 @@ ms.locfileid: "87221629"
 
 *Variadic 템플릿* 은 임의 개수의 인수를 지 원하는 클래스 또는 함수 템플릿입니다. 이 메커니즘은 클래스 템플릿과 함수 템플릿에 모두 적용할 수 있으므로 다양 한 형식의 안전 하 고 특수 기능 및 유연성을 제공 하므로 c + + 라이브러리 개발자에 게 특히 유용 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
-Variadic 템플릿을 사용 하 여 두 가지 방법으로 줄임표를 사용 합니다. 매개 변수 이름의 왼쪽은 매개 변수 *팩*을 나타내고 매개 변수 이름 오른쪽은 매개 변수 팩을 별도의 이름으로 확장 합니다.
+Variadic 템플릿을 사용 하 여 두 가지 방법으로 줄임표를 사용 합니다. 매개 변수 이름의 왼쪽은 매개 변수 *팩* 을 나타내고 매개 변수 이름 오른쪽은 매개 변수 팩을 별도의 이름으로 확장 합니다.
 
 *Variadic 템플릿 클래스* 정의 구문의 기본 예는 다음과 같습니다.
 
@@ -62,7 +63,7 @@ template <typename First, typename... Rest> class classname;
 template <typename... Arguments> returntype functionname(Arguments... args);
 ```
 
-다음 섹션인 **variadic 템플릿 이해**에 나와 있는 것 처럼 *Arguments* 매개 변수 팩은 사용 하도록 확장 됩니다.
+다음 섹션인 **variadic 템플릿 이해** 에 나와 있는 것 처럼 *Arguments* 매개 변수 팩은 사용 하도록 확장 됩니다.
 
 이러한 예제를 비롯 하 여 다른 형태의 variadic 템플릿 함수 구문을 사용할 수 있습니다.
 

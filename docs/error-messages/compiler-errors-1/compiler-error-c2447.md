@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2447'
 title: 컴파일러 오류 C2447
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2447
 ms.assetid: d1bd6e9a-ee42-4510-ae5e-6b0378f7b931
-ms.openlocfilehash: 14fec374927fc798956a249773d9bec814e7a823
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: c27846b002b3b58e3ed2e1dd89c06565b32d49b8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74744188"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97189654"
 ---
 # <a name="compiler-error-c2447"></a>컴파일러 오류 C2447
 

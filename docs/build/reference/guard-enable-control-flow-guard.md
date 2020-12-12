@@ -1,16 +1,17 @@
 ---
+description: 자세히 알아보기:/s가드 (제어 흐름 보호 사용)
 title: /guard(제어 흐름 보호 사용)
 ms.date: 11/04/2016
 f1_keywords:
 - /guard
 - VC.Project.VCCLCompilerTool.ControlFlowGuard
 ms.assetid: be495323-f59f-4cf3-a6b6-8ee69e6a19dd
-ms.openlocfilehash: 8661f94e0ee35f8d5e2c8caba1fc01bbf4072876
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 65a027a845ab7ea53fbe2ef1a6ba6bcd4a3dde87
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87190691"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97191773"
 ---
 # <a name="guard-enable-control-flow-guard"></a>/guard(제어 흐름 보호 사용)
 
@@ -42,7 +43,7 @@ CFG 익스플로잇 완화 방법을 사용하는 코드를 빌드하려면 **/g
 
 1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. **구성 속성**, **C/C++**, **코드 생성**을 차례로 선택합니다.
+1. **구성 속성**, **C/C++**, **코드 생성** 을 차례로 선택합니다.
 
 1. **제어 흐름 보호** 속성을 선택합니다.
 
@@ -51,4 +52,4 @@ CFG 익스플로잇 완화 방법을 사용하는 코드를 빌드하려면 **/g
 ## <a name="see-also"></a>참고 항목
 
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
-[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)
+[MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)

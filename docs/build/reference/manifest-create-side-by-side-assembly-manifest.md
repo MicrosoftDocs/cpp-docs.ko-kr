@@ -1,4 +1,5 @@
 ---
+description: 다음에 대 한 자세한 정보:/SMANIFEST (Side-by-side 어셈블리 매니페스트 만들기)
 title: /MANIFEST(side-by-side 어셈블리 매니페스트 만들기)
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - /MANIFEST linker option
 - MANIFEST linker option
 ms.assetid: 98c52e1e-712c-4f49-b149-4d0a3501b600
-ms.openlocfilehash: ea58b43accdd854665fad3b70d7aecbc9eaa0f9e
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 6ab5dd0c0ae04a6ac5377c1c9ee0015f8c64ad54
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69492786"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97190707"
 ---
 # <a name="manifest-create-side-by-side-assembly-manifest"></a>/MANIFEST(side-by-side 어셈블리 매니페스트 만들기)
 
@@ -39,11 +40,11 @@ UAC에 대해 기본 동작을 변경하려면 다음 중 하나를 수행합니
 
 /매니페스트를 지정 하지 않고 [/MANIFESTDEPENDENCY](manifestdependency-specify-manifest-dependencies.md) comments를 지정 하는 경우 매니페스트 파일이 생성 됩니다. /MANIFEST:NO를 지정하면 매니페스트 파일이 생성되지 않습니다.
 
-/MANIFEST를 지정할 경우, 매니페스트 파일의 이름이 출력 파일의 이름과 동일하지만 파일 이름에 .manifest가 추가됩니다. 예를 들어 출력 파일 이름이 MyFile.exe이면, 매니페스트 파일 이름은 MyFile.exe.manifest입니다.  /MANIFESTFILE:*name*을 지정 하는 경우 *이름*에 지정 하는 매니페스트의 이름을 지정 합니다.
+/MANIFEST를 지정할 경우, 매니페스트 파일의 이름이 출력 파일의 이름과 동일하지만 파일 이름에 .manifest가 추가됩니다. 예를 들어 출력 파일 이름이 MyFile.exe이면, 매니페스트 파일 이름은 MyFile.exe.manifest입니다.  /MANIFESTFILE:*name* 을 지정 하는 경우 *이름* 에 지정 하는 매니페스트의 이름을 지정 합니다.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. **구성 속성** 노드를 확장합니다.
 
@@ -57,7 +58,7 @@ UAC에 대해 기본 동작을 변경하려면 다음 중 하나를 수행합니
 
 1. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.GenerateManifest%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [MSVC 링커 참조](linking.md)<br/>
 [MSVC 링커 옵션](linker-options.md)

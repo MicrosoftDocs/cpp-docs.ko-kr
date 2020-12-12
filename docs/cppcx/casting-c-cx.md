@@ -1,17 +1,18 @@
 ---
+description: '자세한 정보: 캐스팅 (c + +/CX)'
 title: 캐스팅(C++/CX)
 ms.date: 06/19/2018
 ms.assetid: 5247f6c7-6a0a-4021-97c9-21c868bd9455
-ms.openlocfilehash: 5e51f9e100be2096494e10aca38232dbd1576f40
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 90b9e90833acc14bcf76287b44f70fb914c7604a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843484"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97190278"
 ---
 # <a name="casting-ccx"></a>캐스팅(C++/CX)
 
-Windows 런타임 형식에는 [Static_cast 연산자](../cpp/static-cast-operator.md), [dynamic_cast 연산자](../cpp/dynamic-cast-operator.md), **safe_cast 연산자**및 [reinterpret_cast 연산자](../cpp/reinterpret-cast-operator.md)의 네 가지 캐스트 연산자가 적용 됩니다. **safe_cast** **`static_cast`** 변환을 수행할 수 없는 경우 safe_cast 하 고 예외를 throw 합니다. 또한 [Static_cast 연산자](../cpp/static-cast-operator.md) 는 컴파일 시간 형식 검사를 수행 합니다. **`dynamic_cast`****`nullptr`** 는 형식을 변환 하지 못할 경우을 반환 합니다. **`reinterpret_cast`** 는 null이 아닌 값을 반환 하지만 유효 하지 않을 수 있습니다. 이러한 이유로 **`reinterpret_cast`** 캐스팅이 성공 하는 경우를 제외 하 고는를 사용 하지 않는 것이 좋습니다. 또한 c + +/CX 코드는와 같기 때문에 C 스타일 캐스트를 사용 하지 않는 것이 좋습니다 **`reinterpret_cast`** .
+Windows 런타임 형식에는 [Static_cast 연산자](../cpp/static-cast-operator.md), [dynamic_cast 연산자](../cpp/dynamic-cast-operator.md), **safe_cast 연산자** 및 [reinterpret_cast 연산자](../cpp/reinterpret-cast-operator.md)의 네 가지 캐스트 연산자가 적용 됩니다.  **`static_cast`** 변환을 수행할 수 없는 경우 safe_cast 하 고 예외를 throw 합니다. 또한 [Static_cast 연산자](../cpp/static-cast-operator.md) 는 컴파일 시간 형식 검사를 수행 합니다. **`dynamic_cast`****`nullptr`** 는 형식을 변환 하지 못할 경우을 반환 합니다. **`reinterpret_cast`** 는 null이 아닌 값을 반환 하지만 유효 하지 않을 수 있습니다. 이러한 이유로 **`reinterpret_cast`** 캐스팅이 성공 하는 경우를 제외 하 고는를 사용 하지 않는 것이 좋습니다. 또한 c + +/CX 코드는와 같기 때문에 C 스타일 캐스트를 사용 하지 않는 것이 좋습니다 **`reinterpret_cast`** .
 
 또한 컴파일러와 런타임은 암시적 캐스트를 수행합니다. 예를 들어, 매개 변수 형식이 `Object^`인 메서드에 값 형식 또는 기본 제공 형식이 인수로 전달될 때 boxing 연산에서 암시적 캐스트를 수행합니다. 이론적으로 런타임에는 암시적 캐스트로 인해 예외가 발생하지 않습니다. 컴파일러가 암시적 변환을 수행할 수 없는 경우 컴파일 시 오류가 발생합니다.
 
@@ -78,7 +79,7 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 
 ## <a name="dynamic_cast-and-tracking-references-"></a>dynamic_cast 및 추적 참조(%)
 
-**`dynamic_cast`** 추적 참조에를 적용할 수도 있지만이 경우 캐스트는 **safe_cast**처럼 동작 합니다. `Platform::InvalidCastException`추적 참조는 값을 가질 수 없으므로 실패 시이 throw 됩니다 **`nullptr`** .
+**`dynamic_cast`** 추적 참조에를 적용할 수도 있지만이 경우 캐스트는 **safe_cast** 처럼 동작 합니다. `Platform::InvalidCastException`추적 참조는 값을 가질 수 없으므로 실패 시이 throw 됩니다 **`nullptr`** .
 
 ## <a name="reinterpret_cast"></a>reinterpret_cast
 

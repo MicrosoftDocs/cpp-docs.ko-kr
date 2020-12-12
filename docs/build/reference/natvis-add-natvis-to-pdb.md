@@ -1,4 +1,5 @@
 ---
+description: 자세히 알아보기:/NATVIS (PDB에 Natvis 추가)
 title: /NATVIS(PDB에 Natvis 추가)
 ms.date: 08/10/2017
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - -NATVIS linker option
 - Add Natvis file to PDB
 ms.assetid: 8747fc0c-701a-4796-bb4d-818ab4465cca
-ms.openlocfilehash: a16e320a2f8f946912fef6a354f27f6514a67e29
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 7703915591a59a558c8580dd64b9be22d281d784
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79439282"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97190525"
 ---
 # <a name="natvis-add-natvis-to-pdb"></a>/NATVIS(PDB에 Natvis 추가)
 

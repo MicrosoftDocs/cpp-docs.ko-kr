@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Platform:: Exception 클래스'
 title: Platform::Exception 클래스
 ms.date: 12/30/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Exception Class
 ms.assetid: ca1d5a67-3a5a-48fe-8099-f9c38a2d2dce
-ms.openlocfilehash: bfdd8b3df720073e6b4a19cdb5b34db23e659fd0
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 1b6ad35e04ae239d90dbfceecaaf72223ae6a7ce
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90741972"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97195218"
 ---
 # <a name="platformexception-class"></a>Platform::Exception 클래스
 
@@ -35,7 +36,7 @@ public ref class Exception : Object,    IException,    IPrintable,    IEquatable
 
 ### <a name="constructors"></a>생성자
 
-|멤버|Description|
+|멤버|설명|
 |------------|-----------------|
 |[예외:: Exception](#ctor)|`Exception` 클래스의 새 인스턴스를 초기화합니다.|
 
@@ -43,7 +44,7 @@ public ref class Exception : Object,    IException,    IPrintable,    IEquatable
 
 `Exception`클래스는 `Equals()` `Finalize()` `GetHashCode()` `GetType()` `MemberwiseClose()` `ToString()` [Platform:: Object 클래스](../cppcx/platform-object-class.md)에서,,,, 및 메서드를 상속 합니다. `Exception` 클래스에는 다음 메서드도 있습니다.
 
-|멤버|Description|
+|멤버|설명|
 |------------|-----------------|
 |[예외:: CreateException](#createexception)|지정된 HRESULT 값을 나타내는 예외를 만듭니다.|
 
@@ -51,7 +52,7 @@ public ref class Exception : Object,    IException,    IPrintable,    IEquatable
 
 Exception 클래스에는 다음과 같은 속성도 있습니다.
 
-|멤버|Description|
+|멤버|설명|
 |------------|-----------------|
 |[예외:: HResult](#hresult)|예외에 해당하는 HRESULT입니다.|
 |[예외:: Message](#message)|예외를 설명하는 메시지입니다. 이 값은 읽기 전용이며 `Exception` 이 생성된 후 수정될 수 없습니다.|
@@ -151,6 +152,6 @@ Windows 런타임에서 발생하는 예외의 경우, 이것은 오류에 대�
 
 Windows 8에서이 속성은 해당 버전의 Windows 런타임에 대 한 예외가 ABI에서 HRESULT로만 전송 되기 때문에 읽기 전용입니다. Windows 8.1에서는 다양한 예외 정보가 ABI 전체에 전송되며 다른 구성 요소에서 프로그래밍 방식으로 액세스할 수 있는 사용자 지정 메시지를 제공할 수 있습니다. 자세한 내용은 [예외 (c + +/cx)](../cppcx/exceptions-c-cx.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [Platform 네임스페이스](../cppcx/platform-namespace-c-cx.md)

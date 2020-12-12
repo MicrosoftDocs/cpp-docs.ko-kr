@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: noreturn'
 title: noreturn
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - __declspec keyword [C++], noreturn
 - noreturn __declspec keyword
 ms.assetid: 9c6517e5-22d7-4051-9974-3d2200ae4d1d
-ms.openlocfilehash: f0b5b17a6d64375f49a6d55021c72ba7119eb976
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 829f8cc2d81ae1b9f55024442f1a38b495d54896
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213309"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97195361"
 ---
 # <a name="noreturn"></a>noreturn
 
@@ -48,4 +49,4 @@ int main() {
 ## <a name="see-also"></a>참조
 
 [__declspec](../cpp/declspec.md)<br/>
-[C++ 키워드](../cpp/keywords-cpp.md)
+[키워드](../cpp/keywords-cpp.md)

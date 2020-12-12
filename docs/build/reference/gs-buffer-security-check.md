@@ -1,4 +1,5 @@
-﻿---
+---
+description: 자세히 알아보기:/GS (버퍼 보안 검사)
 title: /GS(버퍼 보안 검사)
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,16 +14,16 @@ helpviewer_keywords:
 - -GS compiler option [C++]
 - buffers [C++], avoiding overruns
 ms.assetid: 8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e
-ms.openlocfilehash: 92d296e8079a9ecd8d366c46bbdad8b2ee5dc313
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 4d7fa3c2220260914c9ff931c2f2e7c76bf12ea1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79439568"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97191877"
 ---
 # <a name="gs-buffer-security-check"></a>/GS(버퍼 보안 검사)
 
-함수의 반환 주소, 예외 처리기 주소 혹은 특정 유형의 매개 변수를 덮어쓰는 버퍼 오버런을 검색합니다. 버퍼 오버런은 해커가 버퍼 크기 제한을 적용하지 않는 코드를 사용하여 공격하는 기술입니다.
+는 함수의 반환 주소, 예외 처리기 주소 또는 특정 형식의 매개 변수를 덮어쓰는 일부 버퍼 오버런을 검색 합니다. 버퍼 오버런은 해커가 버퍼 크기 제한을 적용 하지 않는 코드를 악용 하는 데 사용 하는 기술입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -40,7 +41,7 @@ ms.locfileid: "79439568"
 
 ## <a name="gs-buffers"></a>GS 버퍼
 
-버퍼 오버런 보안 검사는 *GS 버퍼*에 대해 수행 됩니다. GS 버퍼는 다음 중 하나일 수 있습니다.
+버퍼 오버런 보안 검사는 *GS 버퍼* 에 대해 수행 됩니다. GS 버퍼는 다음 중 하나일 수 있습니다.
 
 - 4 바이트 보다 큰 배열에는 세 개 이상의 요소가 있으며 포인터 형식이 아닌 요소 형식이 있습니다.
 
@@ -87,7 +88,7 @@ struct { int a; int b; };
 
 X 86에서 함수에 예외 처리기가 사용 되는 경우 컴파일러는 예외 처리기의 주소를 보호 하기 위해 보안 쿠키를 삽입 합니다. 쿠키는 프레임 해제 중에 검사 됩니다.
 
-**/Gs** 는 함수에 전달 되는 *취약 한 매개 변수* 를 보호 합니다. 이러한 매개 변수는 포인터를 C 구조체 (C++ POD 형식)는 포인터 또는 GS 버퍼를 포함 하는 C++ 참조.
+**/Gs** 는 함수에 전달 되는 *취약 한 매개 변수* 를 보호 합니다. 취약 한 매개 변수는 포인터, c + + 참조, 포인터 또는 GS 버퍼를 포함 하는 C 구조체 (c + + POD 형식)입니다.
 
 취약 한 매개 변수는 쿠키 및 지역 변수 앞에 할당 됩니다. 버퍼 오버런은 이러한 매개 변수를 덮어쓸 수 있습니다. 이러한 매개 변수를 사용 하는 함수의 코드는 함수를 반환 하 고 보안 검사를 수행 하기 전에 공격을 일으킬 수 있습니다. 이러한 위험을 최소화 하기 위해 컴파일러는 함수 프롤로그 중에 취약 한 매개 변수의 복사본을 만들어 모든 버퍼의 저장소 영역 아래에 배치 합니다.
 
@@ -109,15 +110,15 @@ X 86에서 함수에 예외 처리기가 사용 되는 경우 컴파일러는 �
 
 **/Gs** 컴파일러 옵션은 모든 버퍼 오버런 보안 공격 으로부터 보호 하지 않습니다. 예를 들어 개체에 버퍼와 vtable이 있으면 버퍼 오버런이 발생 하 여 vtable이 손상 될 수 있습니다.
 
-**/Gs**를 사용 하는 경우에도 항상 버퍼 오버런이 없는 보안 코드를 작성 하려고 합니다.
+**/Gs** 를 사용 하는 경우에도 항상 버퍼 오버런이 없는 보안 코드를 작성 하려고 합니다.
 
 ### <a name="to-set-this-compiler-option-in-visual-studio"></a>Visual Studio에서 이 컴파일러 옵션을 설정하려면
 
-1. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 클릭 합니다.
+1. **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 **속성** 을 클릭 합니다.
 
-   자세한 내용은 [Visual Studio에서 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
+   자세한 정보는 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조하세요.
 
-1. **속성 페이지** 대화 상자에서 **C/C++**  폴더를 클릭 합니다.
+1. **속성 페이지** 대화 상자에서 **C/c + +** 폴더를 클릭 합니다.
 
 1. **코드 생성** 속성 페이지를 클릭 합니다.
 
@@ -157,4 +158,4 @@ int main() {
 ## <a name="see-also"></a>참고 항목
 
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
-[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)
+[MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)
