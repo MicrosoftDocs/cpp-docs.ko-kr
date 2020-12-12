@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: &lt; iostream&gt;'
 title: '&lt;iostream&gt;'
 ms.date: 09/20/2017
 f1_keywords:
@@ -14,18 +15,18 @@ f1_keywords:
 helpviewer_keywords:
 - iostream header
 ms.assetid: de5d39e1-7e77-4b55-bcd1-7c77b41515c8
-ms.openlocfilehash: 5805d441b4fc2fc2927b57f4d94ba8b8ccecb22a
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 882b7de8add9339a0580efeac18740205cc175aa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845473"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323903"
 ---
 # <a name="ltiostreamgt"></a>&lt;iostream&gt;
 
 표준 스트림에서 읽기 및 쓰기를 제어하는 개체를 선언합니다. 이러한 경우는 대개 c + + 프로그램에서 입력 및 출력을 수행 하는 데 필요한 유일한 헤더입니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 #include <iostream>

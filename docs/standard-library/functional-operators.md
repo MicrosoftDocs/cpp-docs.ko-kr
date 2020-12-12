@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: &lt; 함수 &gt; 연산자'
 title: '&lt;functional&gt; 연산자'
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - functional operators
 ms.assetid: d4b3c760-f3e2-4b65-bdaa-d42e8dd6f5e1
-ms.openlocfilehash: b396e5c692129821c0deb9aef9469a5c54e600b0
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: a22e9203e89c041d5ed1925d55d1cd3aa6d61ba3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79424766"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324241"
 ---
 # <a name="ltfunctionalgt-operators"></a>&lt;functional&gt; 연산자
 
-## <a name="op_eq_eq"></a>연산자 = =
+## <a name="operator"></a><a name="op_eq_eq"></a> 연산자 = =
 
 호출 가능 개체가 비어 있는지 테스트합니다.
 
@@ -33,7 +34,7 @@ template <class Fty>
 *Fty*\
 래핑할 함수 형식입니다.
 
-*f*\
+*350*\
 함수 개체입니다.
 
 *npc*\
@@ -75,7 +76,7 @@ empty == true
 empty == false
 ```
 
-## <a name="op_neq"></a> operator!=
+## <a name="operator"></a><a name="op_neq"></a> 연산자! =
 
 호출 가능 개체가 비어 있지 않은지 테스트합니다.
 
@@ -92,7 +93,7 @@ template <class Fty>
 *Fty*\
 래핑할 함수 형식입니다.
 
-*f*\
+*350*\
 함수 개체입니다.
 
 *npc*\

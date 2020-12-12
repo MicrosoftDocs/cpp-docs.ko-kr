@@ -1,4 +1,5 @@
 ---
+description: Geometric_distribution 클래스에 대해 자세히 알아보세요.
 title: geometric_distribution 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - std::geometric_distribution [C++], param_type
 - std::geometric_distribution [C++], param_type
 ms.assetid: 38f933af-3b49-492e-9d26-b6b272a60013
-ms.openlocfilehash: 98ecbc96d104a900d222c660de7f16563f566a9c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: c5d4d2e3a00043506e1870095768647d19c81c92
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837881"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324189"
 ---
 # <a name="geometric_distribution-class"></a>geometric_distribution 클래스
 
@@ -230,7 +231,7 @@ explicit geometric_distribution(const param_type& parm);
 
 첫 번째 생성자는 저장된 `p` 값이 *p* 값을 보유하는 개체를 생성합니다.
 
-두 번째 생성자는 저장된 매개 변수가 *parm*에서 초기화되는 개체를 생성합니다. `param()` 멤버 함수를 호출하여 기존 분포의 현재 매개 변수를 가져와 설정할 수 있습니다.
+두 번째 생성자는 저장된 매개 변수가 *parm* 에서 초기화되는 개체를 생성합니다. `param()` 멤버 함수를 호출하여 기존 분포의 현재 매개 변수를 가져와 설정할 수 있습니다.
 
 ## <a name="geometric_distributionparam_type"></a><a name="param_type"></a> geometric_distribution::p aram_type
 

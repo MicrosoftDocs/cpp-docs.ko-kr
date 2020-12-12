@@ -1,21 +1,22 @@
 ---
+description: '자세한 정보: 마법사를 사용 하지 않고 소비자 만들기'
 title: 마법사를 사용하지 않고 소비자 만들기
 ms.date: 05/09/2019
 helpviewer_keywords:
 - OLE DB consumers, creating
 ms.assetid: e8241cfe-5faf-48f8-9de3-241203de020b
-ms.openlocfilehash: 65add1fe0d47253cd8d7ae7a273286d712ce9db2
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 4c642e0b346bd9825d590f54c3de3f6536722d01
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500655"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323263"
 ---
 # <a name="creating-a-consumer-without-using-a-wizard"></a>마법사를 사용하지 않고 소비자 만들기
 
-다음 예제에서는 기존 ATL 프로젝트에 OLE DB 소비자 지원을 추가한다고 가정합니다. MFC 애플리케이션에 OLE DB 소비자 지원을 추가하려는 경우 **MFC 애플리케이션 마법사**를 실행해야 합니다. 이 마법사는 필요한 모든 지원을 만들고, 애플리케이션을 실행하는 데 필요한 MFC 루틴을 호출합니다.
+다음 예제에서는 기존 ATL 프로젝트에 OLE DB 소비자 지원을 추가한다고 가정합니다. MFC 애플리케이션에 OLE DB 소비자 지원을 추가하려는 경우 **MFC 애플리케이션 마법사** 를 실행해야 합니다. 이 마법사는 필요한 모든 지원을 만들고, 애플리케이션을 실행하는 데 필요한 MFC 루틴을 호출합니다.
 
-**ATL OLE DB 소비자 마법사**를 사용하지 않고 OLE DB 소비자 지원을 추가하려면 다음을 수행합니다.
+**ATL OLE DB 소비자 마법사** 를 사용하지 않고 OLE DB 소비자 지원을 추가하려면 다음을 수행합니다.
 
 - *.Pch .h* 파일에서 다음 문을 추가 합니다 `#include` .
 
@@ -40,7 +41,7 @@ ms.locfileid: "91500655"
     class CMyTableName : public CCommand<CAccessor<CMyTableNameAccessor>>
     ```
 
-- `CoInitialize`를 호출하여 COM을 초기화합니다. 주 코드에서 호출됩니다. 다음은 그 예입니다.
+- `CoInitialize`를 호출하여 COM을 초기화합니다. 주 코드에서 호출됩니다. 예를 들어:
 
     ```cpp
     HRESULT hr = CoInitialize(NULL);

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: feof'
 title: feof
 ms.date: 4/2/2020
 api_name:
@@ -27,12 +28,12 @@ helpviewer_keywords:
 - end of file, testing for
 - feof function
 ms.assetid: 09081eee-7c4b-4189-861f-2fad95d3ec6d
-ms.openlocfilehash: 2b3a8d35491272409ecf911fe2f98ca60b2b2b38
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 6bfa0382878cef2843f3a6a6e2ba6e6d8c5bed8a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920164"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322539"
 ---
 # <a name="feof"></a>feof
 
@@ -51,9 +52,9 @@ int feof(
 *스트림*<br/>
 **FILE** 구조체에 대한 포인터입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-파일의 끝을 지나서 읽기 작업을 읽으려고 시도 하는 경우 **feof** 함수는 0이 아닌 값을 반환 합니다. 그렇지 않으면 0을 반환 합니다. 스트림 포인터가 **NULL**인 경우이 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용 된 경우 **errno** 가 **EINVAL** 로 설정 되 고 **feof** 0을 반환 합니다.
+파일의 끝을 지나서 읽기 작업을 읽으려고 시도 하는 경우 **feof** 함수는 0이 아닌 값을 반환 합니다. 그렇지 않으면 0을 반환 합니다. 스트림 포인터가 **NULL** 인 경우이 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용 된 경우 **errno** 가 **EINVAL** 로 설정 되 고 **feof** 0을 반환 합니다.
 
 이러한 오류 코드 및 기타 오류 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
@@ -67,7 +68,7 @@ int feof(
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|필수 헤더|
+|함수|필수 헤더|
 |--------------|---------------------|
 |**feof**|\<stdio.h>|
 

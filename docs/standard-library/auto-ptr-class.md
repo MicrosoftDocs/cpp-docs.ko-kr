@@ -1,4 +1,5 @@
 ---
+description: Auto_ptr 클래스에 대해 자세히 알아보세요.
 title: auto_ptr 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - std::auto_ptr [C++], release
 - std::auto_ptr [C++], reset
 ms.assetid: 7f9108b6-9eb3-4634-b615-cf7aa814f23b
-ms.openlocfilehash: 7e652b18b723e2a58c1f4673baf180a14db93477
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: e656da9f5ffdaf4dfe85b1cbd75ef79ba41adb64
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834780"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321668"
 ---
 # <a name="auto_ptr-class"></a>auto_ptr 클래스
 
@@ -81,13 +82,13 @@ class auto_ptr {
 |-|-|
 |[element_type](#element_type)|이 형식은 템플릿 매개 변수 `Type`의 동의어입니다.|
 
-### <a name="functions"></a>Functions
+### <a name="functions"></a>함수
 
 |Name|설명|
 |-|-|
 |[get](#get)|이 멤버 함수는 저장된 포인터 `myptr`을 반환합니다.|
 |[릴리스](#release)|이 멤버는 저장된 포인터 `myptr`을 null 포인터로 대체하고 이전에 저장된 포인터를 반환합니다.|
-|[reset](#reset)|이 멤버 함수는 저장된 포인터 값 `myptr`이 함수 호출의 결과로 변경되는 경우에만 `delete myptr` 식을 계산합니다. 그런 다음 저장된 포인터를 *ptr*로 바꿉니다.|
+|[reset](#reset)|이 멤버 함수는 저장된 포인터 값 `myptr`이 함수 호출의 결과로 변경되는 경우에만 `delete myptr` 식을 계산합니다. 그런 다음 저장된 포인터를 *ptr* 로 바꿉니다.|
 
 ### <a name="operators"></a>연산자
 
@@ -124,7 +125,7 @@ auto _ptr(auto _ptr<Other>& right) throw();
 
 #### <a name="remarks"></a>설명
 
-첫 번째 생성자는 *ptr* 할당 된 `myptr` 개체에 대 한 저장 된 포인터인 ptr를 저장 합니다. 두 번째 생성자 *는 right를*저장 하 여 *오른쪽*에 저장 된 포인터의 소유권을 전송 합니다. `myptr`에서 [릴리스](#release).
+첫 번째 생성자는  할당 된 `myptr` 개체에 대 한 저장 된 포인터인 ptr를 저장 합니다. 두 번째 생성자 *는 right를* 저장 하 여 *오른쪽* 에 저장 된 포인터의 소유권을 전송 합니다. `myptr`에서 [릴리스](#release).
 
 세 번째 생성자는를 저장 한다는 점을 제외 하 고 두 번째 생성자와 동일 하 게 동작 합니다 `right` . `ref`. `release` 에서 `myptr` `ref` 는에 저장 된 참조입니다 `right` .
 
@@ -278,7 +279,7 @@ auto_ptr<Type>& operator=(auto_ptr_ref<Type> right) throw();
 
 #### <a name="remarks"></a>설명
 
-할당은 식을 평가 `delete myptr` 하지만 저장 된 포인터가 `myptr` 할당의 결과로 변경 되는 경우에만 적용 됩니다. 그런 다음 *right*를 저장하여 *오른쪽*에 저장된 포인터의 소유권을 전송합니다. `myptr`에서 [릴리스](#release). 함수는 __ \* this__를 반환 합니다.
+할당은 식을 평가 `delete myptr` 하지만 저장 된 포인터가 `myptr` 할당의 결과로 변경 되는 경우에만 적용 됩니다. 그런 다음 *right* 를 저장하여 *오른쪽* 에 저장된 포인터의 소유권을 전송합니다. `myptr`에서 [릴리스](#release). 함수는 __\* this__ 를 반환 합니다.
 
 #### <a name="example"></a>예제
 
@@ -318,7 +319,7 @@ Type * operator->() const throw();
 
 #### <a name="remarks"></a>설명
 
-선택 연산자는 [get](#get) `( )` 을 반환 하므로 식 *ap* ->  **멤버** 는 *ap*와 동일 하 게 동작 합니다. **get**())-> **멤버**. 여기서 *ap* 는 클래스의 개체 `auto_ptr` \< **Type**> 입니다. 따라서 저장 된 포인터는 null이 아니어야 하며 멤버를 `Type` 포함 하는 클래스, 구조체 또는 공용 구조체 형식 이어야 합니다 `member` .
+선택 연산자는 [get](#get) `( )` 을 반환 하므로 식 *ap* ->  **멤버** 는 *ap* 와 동일 하 게 동작 합니다. **get**())-> **멤버**. 여기서 *ap* 는 클래스의 개체 `auto_ptr` \< **Type**> 입니다. 따라서 저장 된 포인터는 null이 아니어야 하며 멤버를 `Type` 포함 하는 클래스, 구조체 또는 공용 구조체 형식 이어야 합니다 `member` .
 
 #### <a name="example"></a>예제
 
@@ -335,7 +336,7 @@ operator auto _ptr<Other>() throw();
 
 #### <a name="return-value"></a>반환 값
 
-형식 캐스트 연산자는 `auto_ptr` \< **Other**> ( ** \* this**)를 반환 합니다.
+형식 캐스트 연산자는 `auto_ptr` \< **Other**> ( **\* this**)를 반환 합니다.
 
 #### <a name="example"></a>예제
 
@@ -365,7 +366,7 @@ operator auto _ptr  _ref<Other>() throw();
 
 #### <a name="return-value"></a>반환 값
 
-형식 캐스트 연산자는 **auto_ptr_ref** \< **Other**> ( ** \* this**)를 반환 합니다.
+형식 캐스트 연산자는 **auto_ptr_ref** \< **Other**> ( **\* this**)를 반환 합니다.
 
 #### <a name="example"></a>예제
 

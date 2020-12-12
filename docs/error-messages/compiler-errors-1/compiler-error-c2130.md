@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2130'
 title: 컴파일러 오류 C2130
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2130
 ms.assetid: c6fd5a7e-8f28-4f67-99d1-95a13b0dff90
-ms.openlocfilehash: 591ff7bae42c43621d9c5bea1ae42da46d341b48
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 78e7b756d5902562c6093e3f26f9934e87e732ff
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74755163"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323183"
 ---
 # <a name="compiler-error-c2130"></a>컴파일러 오류 C2130
 

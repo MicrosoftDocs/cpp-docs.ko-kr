@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: include (c + +)'
 title: include (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - include attribute
 ms.assetid: d23f8b91-fe5b-48fa-9371-8bd73af7b8e3
-ms.openlocfilehash: 6b75df74ee69ee4f89eb7bf18fb6bcd77d8a6284
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: c6d12b9d8826ce84de0c01aaf055f5a4176fea10
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842197"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321365"
 ---
 # <a name="include-c"></a>include(C++)
 
@@ -36,7 +37,7 @@ ms.locfileid: "88842197"
 
 ## <a name="example"></a>예제
 
-다음 코드에서는 **include**를 사용 하는 방법의 예를 보여 줍니다. 이 예에서 파일에는 문만 포함 되어 있습니다. `#include`
+다음 코드에서는 **include** 를 사용 하는 방법의 예를 보여 줍니다. 이 예에서 파일에는 문만 포함 되어 있습니다. `#include`
 
 ```cpp
 // cpp_attr_ref_include.cpp

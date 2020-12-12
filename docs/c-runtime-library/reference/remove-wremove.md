@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 제거, _wremove'
 title: remove, _wremove
 ms.date: 4/2/2020
 api_name:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - wremove function
 - remove function
 ms.assetid: b6345ec3-3289-4645-93a4-28b9e478cc19
-ms.openlocfilehash: bf3eedaa9c24e7385686e2343857e69171e43090
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: c17215803e03e1e59df86b6049249a824d5615c9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917830"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322513"
 ---
 # <a name="remove-_wremove"></a>remove, _wremove
 
@@ -63,7 +64,7 @@ int _wremove(
 *path*<br/>
 제거할 파일의 경로입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 파일이 삭제되면 이러한 함수 각각이 0을 반환합니다. 그렇지 않으면-1을 반환 하 고 **errno** 를 **eacces** 로 설정 하 여 경로가 읽기 전용 파일을 지정 하거나, 디렉터리를 지정 하거나, 파일이 열려 있거나, **enoent (** 를 지정 하 여 파일 이름 또는 경로를 찾을 수 없음을 나타냅니다.
 
@@ -71,7 +72,7 @@ int _wremove(
 
 ## <a name="remarks"></a>설명
 
-**remove** 함수는 *path*로 지정된 파일을 삭제합니다. **_wremove** 은 **_remove**의 와이드 문자 버전입니다. **_wremove** 에 대 한 *경로* 인수는 와이드 문자 문자열입니다. **_wremove** 와 **_remove** 는 동일 하 게 동작 합니다. 삭제하기 전에 파일에 대한 모든 핸들을 닫아야 합니다.
+**remove** 함수는 *path* 로 지정된 파일을 삭제합니다. **_wremove** 은 **_remove** 의 와이드 문자 버전입니다. **_wremove** 에 대 한 *경로* 인수는 와이드 문자 문자열입니다. **_wremove** 와 **_remove** 는 동일 하 게 동작 합니다. 삭제하기 전에 파일에 대한 모든 핸들을 닫아야 합니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -123,7 +124,7 @@ This file will be deleted.
 Deleted 'CRT_REMOVE.TXT'
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [파일 처리](../../c-runtime-library/file-handling.md)<br/>
 [_unlink, _wunlink](unlink-wunlink.md)<br/>

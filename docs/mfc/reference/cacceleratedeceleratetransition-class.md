@@ -1,5 +1,6 @@
 ---
-title: CAccelerateDecerate전환 클래스
+description: '자세히 알아보기: CAccelerateDecelerateTransition 클래스'
+title: CAccelerateDecelerateTransition 클래스
 ms.date: 11/04/2016
 f1_keywords:
 - CAccelerateDecelerateTransition
@@ -7,14 +8,14 @@ f1_keywords:
 helpviewer_keywords:
 - CAccelerateDecelerateTransition class [MFC]
 ms.assetid: b1f31ee8-bb11-4ccc-b124-365fb02b025c
-ms.openlocfilehash: 356ba30e6d9a638672d2c356676735ebfaed8f3e
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 5981c6f57acaf2507410acbb6c792f77b96f75c0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81371143"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322761"
 ---
-# <a name="cacceleratedeceleratetransition-class"></a>CAccelerateDecerate전환 클래스
+# <a name="cacceleratedeceleratetransition-class"></a>CAccelerateDecelerateTransition 클래스
 
 가속-감속 전환을 구현합니다.
 
@@ -28,34 +29,34 @@ class CAccelerateDecelerateTransition : public CBaseTransition;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[CAccelerateDecerate전환::CAccelerateDecelerate전환](#cacceleratedeceleratetransition)|전환 개체를 생성합니다.|
+|[CAccelerateDecelerateTransition::CAccelerateDecelerateTransition](#cacceleratedeceleratetransition)|전환 개체를 생성 합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[CAccelerateDecerate전환::만들기](#create)|전환 라이브러리를 호출하여 캡슐화된 전환 COM 개체를 만듭니다. [(재정의 CBaseTransition::만들기.)](../../mfc/reference/cbasetransition-class.md#create)|
+|[CAccelerateDecelerateTransition:: Create](#create)|는 전환 라이브러리를 호출 하 여 캡슐화 된 전환 COM 개체를 만듭니다. [Cbasetransition:: Create](../../mfc/reference/cbasetransition-class.md#create)를 재정의 합니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|[CAccelerateDecerate전환::m_accelerationRatio](#m_accelerationratio)|지속 시간까지 가속화하는 데 소요된 시간의 비율입니다.|
-|[CAccelerateDecerate전환::m_decelerationRatio](#m_decelerationratio)|지속 시간으로 감속하는 데 소요된 시간의 비율입니다.|
-|[CAccelerateDecerate전환::m_duration](#m_duration)|전환 기간입니다.|
-|[CAccelerateDecerate전환::m_finalValue](#m_finalvalue)|전환이 끝날 때의 애니메이션 변수의 값입니다.|
+|[CAccelerateDecelerateTransition:: m_accelerationRatio](#m_accelerationratio)|기간을 단축 하는 데 걸린 시간의 비율입니다.|
+|[CAccelerateDecelerateTransition:: m_decelerationRatio](#m_decelerationratio)|기간에 감속 하는 데 소요 된 시간의 비율입니다.|
+|[CAccelerateDecelerateTransition:: m_duration](#m_duration)|전환 기간입니다.|
+|[CAccelerateDecelerateTransition:: m_finalValue](#m_finalvalue)|전환의 끝에 있는 애니메이션 변수의 값입니다.|
 
 ## <a name="remarks"></a>설명
 
-가속 감속 전환 중에 애니메이션 변수의 속도가 빨라지고 전환 기간 동안 속도가 느려지며 지정된 값으로 끝납니다. 다양한 가속 및 감속 비율을 지정하여 변수가 독립적으로 가속 및 감속하는 속도를 제어할 수 있습니다. 초기 속도가 0이면 가속 비는 변수가 가속을 소비하는 기간의 일부입니다. 감속 비율도 마찬가지입니다. 초기 속도가 0이 아닌 경우 속도가 0에 도달하는 속도와 전환 종료 사이의 시간의 일부입니다. 가속도와 감속비는 최대 1.0으로 합산되어야 합니다. 모든 전환이 자동으로 지워지므로 운영자 new를 사용하여 할당하는 것이 좋습니다. 캡슐화된 IUIAnimationTransition COM 개체는 CAnimationController::AnimateGroup에 의해 만들어지며, 그때까지는 NULL이 됩니다. 이 COM 개체를 만든 후 멤버 변수를 변경하면 아무런 효과가 없습니다.
+가속 감속 전환을 수행 하는 동안 애니메이션 변수는 지정 된 값에서 종료 되 고 전환 기간 동안 속도가 빨라집니다. 서로 다른 가속 및 감속 비율을 지정 하 여 변수를 독립적으로 가속 하 고 감속 하는 속도를 제어할 수 있습니다. 초기 속도가 0 인 경우 가속 비율은 변수에 소요 되는 기간에 대 한 비율입니다. 감속 비율을 사용 하는 경우에도 마찬가지입니다. 초기 속도가 0이 아닌 경우 속도는 0에 도달 하 고 전환의 끝에 도달 하는 시간의 비율입니다. 가속 비율과 감속/가속 비율은 최대 1.0입니다. 모든 전환은 자동으로 지워지므로 operator new를 사용 하 여 할당 하는 것이 좋습니다. 캡슐화 된 IuiAnimateGroup 전환 COM 개체는 NULL 일 때까지 CAnimationController::에 의해 생성 됩니다. 이 COM 개체를 만든 후 멤버 변수를 변경 해도 아무런 영향을 주지 않습니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
-[C베이스 트랜지션](../../mfc/reference/cbasetransition-class.md)
+[CBaseTransition](../../mfc/reference/cbasetransition-class.md)
 
 `CAccelerateDecelerateTransition`
 
@@ -63,9 +64,9 @@ class CAccelerateDecelerateTransition : public CBaseTransition;
 
 **헤더:** afxanimationcontroller.h
 
-## <a name="cacceleratedeceleratetransitioncacceleratedeceleratetransition"></a><a name="cacceleratedeceleratetransition"></a>CAccelerateDecerate전환::CAccelerateDecelerate전환
+## <a name="cacceleratedeceleratetransitioncacceleratedeceleratetransition"></a><a name="cacceleratedeceleratetransition"></a> CAccelerateDecelerateTransition::CAccelerateDecelerateTransition
 
-전환 개체를 생성합니다.
+전환 개체를 생성 합니다.
 
 ```
 CAccelerateDecelerateTransition(
@@ -77,21 +78,21 @@ CAccelerateDecelerateTransition(
 
 ### <a name="parameters"></a>매개 변수
 
-*기간*<br/>
+*duration*<br/>
 전환 기간입니다.
 
-*finalValue*<br/>
-전환이 끝날 때의 애니메이션 변수의 값입니다.
+*가이 값*<br/>
+전환의 끝에 있는 애니메이션 변수의 값입니다.
 
-*가속도*<br/>
-지속 시간까지 가속화하는 데 소요된 시간의 비율입니다.
+*accelerationRatio*<br/>
+기간을 단축 하는 데 걸린 시간의 비율입니다.
 
-*감속비율*<br/>
-지속 시간으로 감속하는 데 소요된 시간의 비율입니다.
+*Decelerationratio가*<br/>
+기간에 감속 하는 데 소요 된 시간의 비율입니다.
 
-## <a name="cacceleratedeceleratetransitioncreate"></a><a name="create"></a>CAccelerateDecerate전환::만들기
+## <a name="cacceleratedeceleratetransitioncreate"></a><a name="create"></a> CAccelerateDecelerateTransition:: Create
 
-전환 라이브러리를 호출하여 캡슐화된 전환 COM 개체를 만듭니다.
+는 전환 라이브러리를 호출 하 여 캡슐화 된 전환 COM 개체를 만듭니다.
 
 ```
 virtual BOOL Create(
@@ -101,30 +102,30 @@ virtual BOOL Create(
 
 ### <a name="parameters"></a>매개 변수
 
-*p라이브러리*<br/>
-표준 전환 라이브러리를 정의하는 [IUIAnimationTransitionLibrary 인터페이스에](/windows/win32/api/uianimation/nn-uianimation-iuianimationtransitionlibrary)대한 포인터입니다.
+*pLibrary*<br/>
+표준 전환 라이브러리를 정의 하는 [IUIAnimationTransitionLibrary 인터페이스](/windows/win32/api/uianimation/nn-uianimation-iuianimationtransitionlibrary)에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-TRUE 전환이 성공적으로 만들어지면 그렇지 않으면 거짓.
+전환이 성공적으로 생성 되 면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
-## <a name="cacceleratedeceleratetransitionm_accelerationratio"></a><a name="m_accelerationratio"></a>CAccelerateDecerate전환::m_accelerationRatio
+## <a name="cacceleratedeceleratetransitionm_accelerationratio"></a><a name="m_accelerationratio"></a> CAccelerateDecelerateTransition:: m_accelerationRatio
 
-지속 시간까지 가속화하는 데 소요된 시간의 비율입니다.
+기간을 단축 하는 데 걸린 시간의 비율입니다.
 
 ```
 DOUBLE m_accelerationRatio;
 ```
 
-## <a name="cacceleratedeceleratetransitionm_decelerationratio"></a><a name="m_decelerationratio"></a>CAccelerateDecerate전환::m_decelerationRatio
+## <a name="cacceleratedeceleratetransitionm_decelerationratio"></a><a name="m_decelerationratio"></a> CAccelerateDecelerateTransition:: m_decelerationRatio
 
-지속 시간으로 감속하는 데 소요된 시간의 비율입니다.
+기간에 감속 하는 데 소요 된 시간의 비율입니다.
 
 ```
 DOUBLE m_decelerationRatio;
 ```
 
-## <a name="cacceleratedeceleratetransitionm_duration"></a><a name="m_duration"></a>CAccelerateDecerate전환::m_duration
+## <a name="cacceleratedeceleratetransitionm_duration"></a><a name="m_duration"></a> CAccelerateDecelerateTransition:: m_duration
 
 전환 기간입니다.
 
@@ -132,9 +133,9 @@ DOUBLE m_decelerationRatio;
 UI_ANIMATION_SECONDS m_duration;
 ```
 
-## <a name="cacceleratedeceleratetransitionm_finalvalue"></a><a name="m_finalvalue"></a>CAccelerateDecerate전환::m_finalValue
+## <a name="cacceleratedeceleratetransitionm_finalvalue"></a><a name="m_finalvalue"></a> CAccelerateDecelerateTransition:: m_finalValue
 
-전환이 끝날 때의 애니메이션 변수의 값입니다.
+전환의 끝에 있는 애니메이션 변수의 값입니다.
 
 ```
 DOUBLE m_finalValue;

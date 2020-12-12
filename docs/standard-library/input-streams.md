@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 입력 스트림'
 title: Input Streams
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - input streams
 - input stream objects
 ms.assetid: f14d8954-8f8c-4c3c-8b99-14ddb3683f94
-ms.openlocfilehash: 5dc3fa0af76f73897fe1181d944eb34c8d05bc64
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: f7e6d41b904b2d28893637681e3c751d24aef441
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68449322"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323964"
 ---
 # <a name="input-streams"></a>Input Streams
 
@@ -34,10 +35,10 @@ ms.locfileid: "68449322"
 
 [입력 스트림 조작자](../standard-library/input-stream-manipulators.md)
 
-[입력 스트림 구성원 함수](../standard-library/input-stream-member-functions.md)
+[입력 스트림 멤버 함수](../standard-library/input-stream-member-functions.md)
 
 [고유 클래스에 대해 >> 연산자 오버로드](../standard-library/overloading-the-input-operator-for-your-own-classes.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [iostream 프로그래밍](../standard-library/iostream-programming.md)

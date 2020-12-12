@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2071'
 title: 컴파일러 오류 C2071
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2071
 ms.assetid: f8c09255-a5c4-47e3-8089-3d875ae43cc5
-ms.openlocfilehash: 7619d968379bfc35e98bd87071b75296d10c382c
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: ec5a08150b322ca5ce3a973a4e65d71ed410e25b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90743284"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323196"
 ---
 # <a name="compiler-error-c2071"></a>컴파일러 오류 C2071
 

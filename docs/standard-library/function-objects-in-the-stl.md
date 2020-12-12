@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: c + + 표준 라이브러리의 함수 개체'
 title: C++ 표준 라이브러리의 함수 개체
 ms.date: 03/15/2019
 helpviewer_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - C++ Standard Library, function objects
 - function objects
 ms.assetid: 85f8a735-2c7b-4f10-9c4d-95c666ec4192
-ms.openlocfilehash: ed413b2bcdcda8f65794b10c792b10358564420a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b87db43fbaabf1e9be18c56185ee190e3b2cbcac
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215740"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324254"
 ---
 # <a name="function-objects-in-the-c-standard-library"></a>C++ 표준 라이브러리의 함수 개체
 
-*함수 개체*또는 *함수*는 operator()를 구현하는 형식입니다. 이 연산자는 *호출 연산자* 또는 경우에 따라 *애플리케이션 연산자*라고 합니다. C++ 표준 라이브러리는 기본적으로 함수 개체를 컨테이너의 정렬 기준 및 알고리즘에서 사용합니다.
+*함수 개체* 또는 *함수* 는 operator()를 구현하는 형식입니다. 이 연산자는 *호출 연산자* 또는 경우에 따라 *애플리케이션 연산자* 라고 합니다. C++ 표준 라이브러리는 기본적으로 함수 개체를 컨테이너의 정렬 기준 및 알고리즘에서 사용합니다.
 
 함수 개체는 직접적인 함수 호출에 비해 두 가지 주요 장점을 제공합니다. 첫 번째는 함수 개체에 상태를 포함할 수 있다는 점입니다. 두 번째는 함수 개체가 형식이므로 템플릿 매개 변수로 사용할 수 있다는 점입니다.
 

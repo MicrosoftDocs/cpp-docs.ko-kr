@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: equal_to 구조체'
 title: equal_to 구조체
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - equal_to function
 - equal_to struct
 ms.assetid: 8e4f2b50-b2db-48e3-b4cc-6cc03362c2a6
-ms.openlocfilehash: ac7c5a3ed8d85e6ea3ad46ec61c7968bc19cd15e
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: cae0531c31396d16d447e3b0123dc679bbfd5aa6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68245842"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324438"
 ---
-# <a name="equalto-struct"></a>equal_to 구조체
+# <a name="equal_to-struct"></a>equal_to 구조체
 
-같음 연산을 수행 하는 이진 조건자 (`operator==`) 인수에 대해 합니다.
+인수에 대해 같음 연산 ()을 수행 하는 이진 조건자입니다 `operator==` .
 
 ## <a name="syntax"></a>구문
 
@@ -39,14 +40,14 @@ struct equal_to<void>
 
 ### <a name="parameters"></a>매개 변수
 
-*형식*하십시오 *T*, *U*\
+*형식*, *T*, *U*\
 지정되었거나 유추된 형식의 피연산자를 가져오는 `operator==`를 지원하는 모든 형식입니다.
 
-*왼쪽*\
-같음 연산의 왼쪽 피연산자입니다. 형식의 lvalue 참조 인수를 사용 하는 특수화 되지 않은 템플릿은 *형식*합니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *T*합니다.
+*비어*\
+같음 연산의 왼쪽 피연산자입니다. 특수화 되지 않은 *템플릿은 형식의 lvalue* 참조 인수를 사용 합니다. 특수화 된 템플릿은 유추 형식 *T* 의 lvalue 및 rvalue 참조 인수를 완벽 하 게 전달 합니다.
 
 *오른쪽*\
-같음 연산의 오른쪽 피연산자입니다. 형식의 lvalue 참조 인수를 사용 하는 특수화 되지 않은 템플릿은 *형식*합니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *U*합니다.
+같음 연산의 오른쪽 피연산자입니다. 특수화 되지 않은 *템플릿은 형식의 lvalue* 참조 인수를 사용 합니다. 특수화 된 템플릿은 유추 형식 *U* 의 lvalue 및 rvalue 참조 인수를 완벽 하 게 전달 합니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -54,7 +55,7 @@ struct equal_to<void>
 
 ## <a name="remarks"></a>설명
 
-형식의 개체 *형식* 같은지 비교할 수 있어야 합니다. 이를 위해서는 개체 집합에서 정의된 `operator==`가 동등 관계의 수학적 속성을 충족해야 합니다. 기본 제공되는 숫자 및 포인터 형식은 모두 이 요구 사항을 충족합니다.
+형식 형식의 개체는 같음 비교할 *수 있어야 합니다* . 이를 위해서는 개체 집합에서 정의된 `operator==`가 동등 관계의 수학적 속성을 충족해야 합니다. 기본 제공되는 숫자 및 포인터 형식은 모두 이 요구 사항을 충족합니다.
 
 ## <a name="example"></a>예제
 

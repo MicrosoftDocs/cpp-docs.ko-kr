@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: 포팅 가이드: MFC Scribble'
 title: '포팅 가이드: MFC Scribble'
 ms.date: 10/23/2019
 ms.assetid: 8ddb517d-89ba-41a1-ab0d-4d2c6d9047e8
-ms.openlocfilehash: 789d29effeea76045a4a10fbca19f20d06778f7c
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 46fac5ceaeadd803ff30f2fa3f8e7723d7d6f6f2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80076962"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322701"
 ---
 # <a name="porting-guide-mfc-scribble"></a>포팅 가이드: MFC Scribble
 
@@ -19,7 +20,7 @@ ms.locfileid: "80076962"
 
 MFC Scribble은 다양한 버전의 Visual C++에 포함된 잘 알려진 샘플입니다. MFC의 기본 기능 중 일부를 보여 주는 간단한 그리기 애플리케이션입니다. 관리 코드 및 네이티브 코드 버전을 포함하여 다양한 버전으로 제공됩니다. 이 예제에서는 Visual Studio 2005에서 네이티브 코드로 작성된 이전 버전의 Scribble을 찾아 Visual Studio 2017에서 열었습니다.
 
-업그레이드하기 전에 Windows 데스크톱 작업이 설치되어 있는지 확인합니다. Visual Studio 설치 관리자(vs_installer.exe)를 엽니다. 설치 관리자를 여는 한 가지 방법은 **파일** > **새 프로젝트**를 선택하고 **Visual Studio 설치 관리자 열기**가 보일 때까지 설치된 템플릿 목록의 아래쪽으로 스크롤하는 것입니다. 설치 관리자를 열면 사용 가능한 작업이 모두 표시됩니다. **Windows 데스크톱** 워크로드의 확인란이 선택되어 있지 않으면 확인란을 선택하고 창의 맨 아래에 있는 **수정** 단추를 클릭합니다.
+업그레이드하기 전에 Windows 데스크톱 작업이 설치되어 있는지 확인합니다. Visual Studio 설치 관리자(vs_installer.exe)를 엽니다. 설치 관리자를 여는 한 가지 방법은 **파일**  >  **새로 만들기 프로젝트** 를 선택 하 고 **열려 있는 Visual Studio 설치 관리자** 표시 될 때까지 설치 된 템플릿 목록의 맨 아래로 스크롤합니다. 설치 관리자를 열면 사용 가능한 작업이 모두 표시됩니다. **Windows 데스크톱** 워크 로드에 대 한 상자를 선택 하지 않은 경우 선택 하 고 창 맨 아래에 있는 **수정** 단추를 클릭 합니다.
 
 다음으로, 전체 솔루션과 해당 콘텐츠를 모두 백업합니다.
 
@@ -43,7 +44,7 @@ Platform 'Itanium' is missing from this project. All the configurations and thei
 
 그런 다음 visual Studio에서 이전 프로젝트 파일의 모든 문제를 나열하는 마이그레이션 보고서를 표시했습니다.
 
-![업그레이드 보고서](../porting/media/scribblemigrationreport.PNG "보고서 업그레이드")
+![보고서 업그레이드](../porting/media/scribblemigrationreport.PNG "보고서 업그레이드")
 
 이 경우 문제는 모두 경고였으며, Visual Studio에서 프로젝트 파일을 적절하게 변경했습니다. 프로젝트와 관련해서 가장 큰 차이점은 빌드 도구가 vcbuild에서 msbuild로 변경된 것입니다. 이 변경 내용은 Visual Studio 2010에서 처음 도입되었습니다. 기타 변경 내용에는 프로젝트 파일 자체의 요소 시퀀스 다시 정렬이 포함됩니다. 이 간단한 프로젝트에서 추가로 주의해야 할 문제는 없었습니다.
 
@@ -51,7 +52,7 @@ Platform 'Itanium' is missing from this project. All the configurations and thei
 
 빌드하기 전에 프로젝트 시스템에서 사용 중인 컴파일러 버전을 알 수 있도록 플랫폼 도구 집합을 확인합니다. 프로젝트 속성 대화 상자의 **구성 속성** 아래, **일반** 범주에서 **플랫폼 도구 집합** 속성을 확인합니다. Visual Studio 버전 및 플랫폼 도구 버전 번호(이 경우 Visual Studio 2017 버전의 도구에 해당하는 v141)이 포함되어 있습니다. 처음에 Visual Studio 2010, 2012, 2013 또는 2015로 컴파일된 프로젝트를 변환 하는 경우 도구 집합이 최신 도구 집합으로 자동으로 업데이트 되지 않습니다.
 
-유니코드로 전환하려면 프로젝트의 속성을 열고 **구성 속성** 아래에서 **일반** 섹션을 선택한 다음 **문자 집합** 속성을 찾습니다. 이 속성을 **멀티바이트 문자 집합 사용**에서 **유니코드 문자 집합 사용**으로 변경합니다. 이렇게 변경하면 _UNICODE 및 UNICODE 매크로가 정의되고 _MBCS는 정의되지 않습니다. 이는 속성 대화 상자의 **C/C++** 범주 아래, **명령줄** 속성에서 확인할 수 있습니다.
+유니코드로 전환하려면 프로젝트의 속성을 열고 **구성 속성** 아래에서 **일반** 섹션을 선택한 다음 **문자 집합** 속성을 찾습니다. 이 속성을 **멀티바이트 문자 집합 사용** 에서 **유니코드 문자 집합 사용** 으로 변경합니다. 이렇게 변경하면 _UNICODE 및 UNICODE 매크로가 정의되고 _MBCS는 정의되지 않습니다. 이는 속성 대화 상자의 **C/C++** 범주 아래, **명령줄** 속성에서 확인할 수 있습니다.
 
 ```Output
 /GS /analyze- /W4 /Zc:wchar_t /Zi /Gm- /Od /Fd".\Debug\vc141.pdb" /Zc:inline /fp:precise /D "_AFXDLL" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_UNICODE" /D "UNICODE" /errorReport:prompt /WX /Zc:forScope /Gd /Oy- /MDd /Fa".\Debug\" /EHsc /nologo /Fo".\Debug\" /Fp".\Debug\Scribble.pch" /diagnostics:classic

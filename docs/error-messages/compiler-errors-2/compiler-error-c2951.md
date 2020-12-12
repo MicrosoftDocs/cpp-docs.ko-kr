@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2951'
 title: 컴파일러 오류 C2951
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2951
 ms.assetid: c6f95aa2-c894-425b-a51c-d40d70c8daa1
-ms.openlocfilehash: fdb837f8e9a9b769d470b70b962ce63d144161e1
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 7f3030764cdd36d40fbd78a8c3768c7dc1085c21
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74755982"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322109"
 ---
 # <a name="compiler-error-c2951"></a>컴파일러 오류 C2951
 

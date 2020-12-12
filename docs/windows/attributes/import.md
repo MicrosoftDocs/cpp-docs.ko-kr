@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 가져오기'
 title: import (c + + COM 특성)
 ms.date: 10/03/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - import attribute
 ms.assetid: ebf07cae-39fb-4047-8b57-54af0a9a83de
-ms.openlocfilehash: 6b146bdad7d870b534c371a4396993202cc83a4b
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: a3ebb7aa625c0a422197662973985275647a049f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842314"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321404"
 ---
 # <a name="import"></a>import
 
@@ -32,9 +33,9 @@ ms.locfileid: "88842314"
 
 ## <a name="remarks"></a>설명
 
-C **import** + + 특성을 가져오면 `#import` `import "docobj.idl"` 생성 된 .idl 파일의 문 아래에 문이 배치 됩니다. **가져오기** 특성은 [가져오기](/windows/win32/Midl/import) MIDL 특성과 동일한 기능을 포함 합니다.
+C  + + 특성을 가져오면 `#import` `import "docobj.idl"` 생성 된 .idl 파일의 문 아래에 문이 배치 됩니다. **가져오기** 특성은 [가져오기](/windows/win32/Midl/import) MIDL 특성과 동일한 기능을 포함 합니다.
 
-**가져오기** 특성은 지정 된 파일을 프로젝트에 의해 생성 되는 .idl 파일에만 배치 합니다. **가져오기** 특성을 사용 하면 프로젝트의 소스 코드에서 지정 된 파일의 구문을 호출할 수 없습니다.  프로젝트의 소스 코드에서 지정 된 파일의 구문을 호출 하려면 [#import](../../preprocessor/hash-import-directive-cpp.md) 및 특성을 사용 `embedded_idl` 하거나 .h 파일이 있는 경우 *idl_file*에 대 한 .h 파일을 포함할 수 있습니다.
+**가져오기** 특성은 지정 된 파일을 프로젝트에 의해 생성 되는 .idl 파일에만 배치 합니다. **가져오기** 특성을 사용 하면 프로젝트의 소스 코드에서 지정 된 파일의 구문을 호출할 수 없습니다.  프로젝트의 소스 코드에서 지정 된 파일의 구문을 호출 하려면 [#import](../../preprocessor/hash-import-directive-cpp.md) 및 특성을 사용 `embedded_idl` 하거나 .h 파일이 있는 경우 *idl_file* 에 대 한 .h 파일을 포함할 수 있습니다.
 
 ## <a name="example"></a>예제
 

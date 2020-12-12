@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 응용 프로그램에서 속성 시트 사용'
 title: 애플리케이션에서 속성 시트 사용
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - Create method [MFC], property sheets
 - CPropertyPage class [MFC], styles
 ms.assetid: 240654d4-152b-4e3f-af7b-44234339206e
-ms.openlocfilehash: 789764c9af988135219bd710d4f8aec1cda9143a
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 3bc1e21d99eb4a1688247524749b44028762892d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504649"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322688"
 ---
 # <a name="using-property-sheets-in-your-application"></a>애플리케이션에서 속성 시트 사용
 
@@ -30,9 +31,9 @@ ms.locfileid: "91504649"
 
    - **일반** 페이지의 **캡션** 편집 상자를이 페이지의 탭에 표시할 텍스트로 설정 합니다.
 
-   - **스타일 페이지의** **스타일** 목록 상자를 **자식**으로 설정 합니다.
+   - **스타일 페이지의** **스타일** 목록 상자를 **자식** 으로 설정 합니다.
 
-   - **스타일** 페이지에서 **테두리** 목록 상자를 **가늘게**로 설정 합니다.
+   - **스타일** 페이지에서 **테두리** 목록 상자를 **가늘게** 로 설정 합니다.
 
    - **스타일** 페이지에서 **Titlebar** 확인란을 선택 했는지 확인 합니다.
 
@@ -52,7 +53,7 @@ ms.locfileid: "91504649"
 
    일반적으로를 만드는 개체 `CPropertySheet` 도 `CPropertyPage` 이 단계에서 개체를 만듭니다. 그러나 파생 클래스를 구현 하는 경우 `CPropertySheet` 개체에 개체를 포함 `CPropertyPage` `CPropertySheet` 하 고 `AddPage` 파생 클래스 생성자에서 각 페이지에 대해를 호출할 수 있습니다 `CPropertySheet` . `AddPage` 개체를 `CPropertyPage` 속성 시트의 페이지 목록에 추가 하지만 실제로 해당 페이지에 대 한 창을 만들지는 않습니다. 따라서 호출할 속성 시트 창을 만들 때까지 기다릴 필요가 없습니다. `AddPage` `AddPage` 속성 시트의 생성자에서를 호출할 수 있습니다.
 
-   기본적으로 속성 시트의 탭 수가 속성 시트의 단일 행에 맞는 것 보다 많은 경우 탭은 여러 행에 쌓입니다. 스태킹를 사용 하지 않으려면 매개 변수를 **FALSE**로 설정 하 여 [CPropertySheet:: EnableStackedTabs](../mfc/reference/cpropertysheet-class.md#enablestackedtabs) 를 호출 합니다. `EnableStackedTabs`속성 시트를 만들 때를 호출 해야 합니다.
+   기본적으로 속성 시트의 탭 수가 속성 시트의 단일 행에 맞는 것 보다 많은 경우 탭은 여러 행에 쌓입니다. 스태킹를 사용 하지 않으려면 매개 변수를 **FALSE** 로 설정 하 여 [CPropertySheet:: EnableStackedTabs](../mfc/reference/cpropertysheet-class.md#enablestackedtabs) 를 호출 합니다. `EnableStackedTabs`속성 시트를 만들 때를 호출 해야 합니다.
 
 1. [CPropertySheet::D oModal](../mfc/reference/cpropertysheet-class.md#domodal) 또는 [Create](../mfc/reference/cpropertysheet-class.md#create) 를 호출 하 여 속성 시트를 표시 합니다. `DoModal`을 호출 하 여 속성 시트를 모달 대화 상자로 만듭니다. **Create** 를 호출 하 여 속성 시트를 모덜리스 대화 상자로 만듭니다.
 

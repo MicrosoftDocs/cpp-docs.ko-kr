@@ -1,19 +1,20 @@
 ---
-title: 입력 출력 대체 항목
+description: '자세히 알아보기: 입력/출력 대체'
+title: Input-Output 대안
 ms.date: 05/07/2019
 helpviewer_keywords:
 - I/O [C++], alternatives
 ms.assetid: 9f8401c7-d90d-4285-8918-63573df74a80
-ms.openlocfilehash: b46ff242fc263be5069eb691dd0ea9e8fb00b0f9
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: a6df022dd38bc23eaaaad49620067aca408b2df2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68455298"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324004"
 ---
 # <a name="inputoutput-alternatives"></a>입력/출력 대체
 
-Microsoft C++ 컴파일러는 I/O 프로그래밍에 대한 여러 가지 대안을 제공합니다.
+Microsoft c + + 컴파일러는 i/o 프로그래밍에 대 한 여러 가지 대안을 제공 합니다.
 
 - C 런타임 라이브러리 버퍼링되지 않은 직접 I/O
 
@@ -29,6 +30,6 @@ iostream 클래스는 버퍼링된 서식 있는 텍스트 I/O에 유용합니�
 
 iostream 클래스는 Microsoft Windows 운영 체제에서 사용할 수 있습니다. 문자열 및 파일 스트림은 제한 없이 작동하지만 문자 모드 스트림 개체 `cin`, `cout`, `cerr` 및 `clog`는 Windows 그래픽 사용자 인터페이스와 일치하지 않습니다. 또한 Windows 환경과 직접 상호 작용하는 사용자 지정 스트림 클래스를 파생시킬 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[스트림이란](../standard-library/what-a-stream-is.md)
+[스트림 정의](../standard-library/what-a-stream-is.md)

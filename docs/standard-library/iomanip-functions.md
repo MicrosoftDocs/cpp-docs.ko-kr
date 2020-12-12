@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: &lt; io마나트 ip &gt; 함수'
 title: '&lt;iomanip&gt; 함수'
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - std::setiosflags [C++]
 - std::setprecision [C++]
 - std::setw [C++]
-ms.openlocfilehash: f540b311cafd59935a9cf1e521d3dbd558f59673
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d9ddcea6b524c0413bc1c68c2b75ec910b529d22
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845759"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323930"
 ---
 # <a name="ltiomanipgt-functions"></a>&lt;iomanip&gt; 함수
 
@@ -435,7 +436,7 @@ T6 setw(streamsize Wide);
 
 ### <a name="return-value"></a>반환 값
 
-조작자는 스트림에서 추출 하거나 스트림에 삽입 하는 경우 너비를 호출 하 고를 반환 하는 개체를 반환 `str` `str.` [width](../standard-library/ios-base-class.md#width) `(Wide)` `str` 합니다.
+조작자는 스트림에서 추출 하거나 스트림에 삽입 하는 경우 너비를 호출 하 고를 반환 하는 개체를 반환 `str` `str.` [](../standard-library/ios-base-class.md#width) `(Wide)` `str` 합니다.
 
 ### <a name="remarks"></a>설명
 

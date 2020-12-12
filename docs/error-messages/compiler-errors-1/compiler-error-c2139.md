@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2139'
 title: 컴파일러 오류 C2139
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2139
 ms.assetid: 31e047c0-5bf9-46c2-b6de-b627ea6a5768
-ms.openlocfilehash: 38e2fd090f3a2b2222658c5fd491c84dd70fd5ea
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 240d1cdd4144e77a31063985a8a1fffb6992196c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756424"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323066"
 ---
 # <a name="compiler-error-c2139"></a>컴파일러 오류 C2139
 

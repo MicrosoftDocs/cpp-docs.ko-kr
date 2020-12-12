@@ -1,4 +1,5 @@
 ---
+description: Hash_multimap 클래스에 대해 자세히 알아보세요.
 title: hash_multimap 클래스
 ms.date: 10/18/2018
 f1_keywords:
@@ -86,12 +87,12 @@ helpviewer_keywords:
 - stdext::hash_multimap::upper_bound
 - stdext::hash_multimap::value_comp
 ms.assetid: f41a6db9-67aa-43a3-a3c5-dbfe9ec3ae7d
-ms.openlocfilehash: 089204ac77403923d38f198d53b3ff711e6a4963
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: b8cbf11bf633940140fb9a90b58ee1128b9efca6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88560827"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324111"
 ---
 # <a name="hash_multimap-class"></a>hash_multimap 클래스
 
@@ -170,7 +171,7 @@ hash_multimap 클래스에서 제공하는 반복기는 양방향 반복기이�
 |[const_reference](#const_reference)|**`const`** `hash_multimap` 작업을 읽고 수행 하기 위해에 저장 된 요소에 대 한 참조를 제공 하는 형식입니다 **`const`** .|
 |[const_reverse_iterator](#const_reverse_iterator)|의 모든 요소를 읽을 수 있는 양방향 반복기를 제공 하는 형식입니다 **`const`** `hash_multimap` .|
 |[difference_type](#difference_type)|부호 있는 정수 형식은 반복기가 가리키는 요소 사이의 범위에 있는 `hash_multimap`의 요소의 개수를 표현하는 데 사용할 수 있습니다.|
-|[반복](#iterator)|`hash_multimap`에 있는 모든 요소를 읽거나 수정할 수 있는 양방향 반복기를 제공하는 형식입니다.|
+|[iterator](#iterator)|`hash_multimap`에 있는 모든 요소를 읽거나 수정할 수 있는 양방향 반복기를 제공하는 형식입니다.|
 |[key_compare](#key_compare)|`hash_multimap`의 두 요소간 상대적 순서를 결정하는 두 정렬 키를 비교할 수 있는 함수 개체를 제공하는 형식입니다.|
 |[key_type](#key_type)|`hash_multimap`의 각 요소를 구성하는 정렬 키 개체를 설명하는 형식입니다.|
 |[mapped_type](#mapped_type)|`hash_multimap` 내에 저장된 데이터 형식을 나타내는 형식입니다.|
@@ -187,14 +188,14 @@ hash_multimap 클래스에서 제공하는 반복기는 양방향 반복기이�
 |[시작](#begin)|`hash_multimap`의 첫 번째 요소를 주소 지정하는 반복기를 반환합니다.|
 |[cbegin](#cbegin)|`hash_multimap`의 첫 번째 요소를 주소 지정하는 상수 반복기를 반환합니다.|
 |[cend](#cend)|`hash_multimap`에서 마지막 요소 다음에 나오는 위치를 주소 지정하는 상수 반복기를 반환합니다.|
-|[해제](#clear)|`hash_multimap`의 모든 요소를 지웁니다.|
+|[clear](#clear)|`hash_multimap`의 모든 요소를 지웁니다.|
 |[count](#count)|키가 매개 변수로 지정된 키와 일치하는 `hash_multimap`의 요소 수를 반환합니다.|
 |[crbegin](#crbegin)|역순 `hash_multimap`에서 첫 번째 요소를 주소 지정하는 상수 반복기를 반환합니다.|
 |[crend](#crend)|역순 `hash_multimap`에서 마지막 요소 다음에 나오는 위치를 주소 지정하는 상수 반복기를 반환합니다.|
 |[emplace](#emplace)|생성된 요소를 `hash_multimap`에 삽입합니다.|
 |[emplace_hint](#emplace_hint)|배치 힌트를 사용하여 생성된 요소를 `hash_multimap`에 삽입합니다.|
 |[empty](#empty)|`hash_multimap`가 비어 있는지 여부를 테스트합니다.|
-|[종단](#end)|`hash_multimap`에서 마지막 요소 다음에 나오는 위치를 주소 지정하는 반복기를 반환합니다.|
+|[end](#end)|`hash_multimap`에서 마지막 요소 다음에 나오는 위치를 주소 지정하는 반복기를 반환합니다.|
 |[equal_range](#equal_range)|`hash_multimap`에서 마지막 요소 다음에 나오는 위치를 주소 지정하는 반복기를 반환합니다.|
 |[erase](#erase)|`hash_multimap`의 지정된 위치에서 요소 또는 요소 범위를 제거합니다.|
 |[find](#find)|지정된 키와 같은 키를 가진 `hash_multimap` 내 요소의 위치를 가리키는 반복기를 반환합니다.|
@@ -212,7 +213,7 @@ hash_multimap 클래스에서 제공하는 반복기는 양방향 반복기이�
 
 ### <a name="operators"></a>연산자
 
-|연산자|Description|
+|연산자|설명|
 |-|-|
 |[hash_multimap::operator=](#op_eq)|`hash_multimap`의 요소를 다른 `hash_multimap`의 복사본으로 대체합니다.|
 
@@ -256,7 +257,7 @@ const_iterator begin() const;
 iterator begin();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 hash_multimap의 첫 번째 요소 또는 빈 hash_multimap 다음의 위치 주소를 지정하는 양방향 반복기입니다.
 
@@ -319,7 +320,7 @@ hash_multimap의 첫 번째 요소 주소를 지정하는 상수 반복기를 �
 const_iterator cbegin() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 [hash_multimap](../standard-library/hash-multimap-class.md)의 첫 번째 요소 또는 빈 `hash_multimap` 다음의 위치 주소를 지정하는 상수 양방향 반복기입니다.
 
@@ -363,7 +364,7 @@ hash_multimap에서 마지막 요소 다음에 나오는 위치를 주소 지정
 const_iterator cend() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 [hash_multimap](../standard-library/hash-multimap-class.md)에서 마지막 요소 다음에 나오는 위치의 주소를 지정하는 상수 양방향 반복기입니다. `hash_multimap`이 비어 있으면 `hash_multimap::cend == hash_multimap::begin`입니다.
 
@@ -592,7 +593,7 @@ size_type count(const Key& key) const;
 *키인지*\
 hash_multimap에서 일치하는지 확인할 요소의 키입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 hash_multimap에 정렬 키가 매개 변수 키와 일치하는 요소가 있는 경우 1이고, hash_multimap에 일치하는 키가 포함된 요소가 없는 경우 0입니다.
 
@@ -602,7 +603,7 @@ hash_multimap에 정렬 키가 매개 변수 키와 일치하는 요소가 있�
 
 **[lower_bound (** `key` **), upper_bound (** `key` **) )**
 
-키 값 *키*가 있는입니다.
+키 값 *키* 가 있는입니다.
 
 ### <a name="example"></a>예제
 
@@ -660,7 +661,7 @@ The number of elements in hm1 with a sort key of 3 is: 0.
 const_reverse_iterator crbegin() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 역방향 [hash_multimap](../standard-library/hash-multimap-class.md)에서 첫 번째 요소 또는 정방향 `hash_multimap`에서 마지막 요소의 주소를 지정하는 상수 역방향 양방향 반복기입니다.
 
@@ -712,7 +713,7 @@ The first element of the reversed hash_multimap hm1 is 3.
 const_reverse_iterator crend() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 역방향 [hash_multimap](../standard-library/hash-multimap-class.md)에서 마지막 요소 다음의 위치(정방향 `hash_multimap`의 첫 번째 요소 앞의 위치) 주소를 지정하는 상수 역방향 양방향 반복기입니다.
 
@@ -850,7 +851,7 @@ iterator emplace(ValTy&& val);
 *짧은*\
 [hash_multimap](../standard-library/hash-multimap-class.md)에 삽입할 요소를 이동 생성하는 데 사용되는 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `emplace` 멤버 함수는 새 요소가 삽입된 위치를 가리키는 반복기를 반환합니다.
 
@@ -909,7 +910,7 @@ iterator emplace_hint(
 *_Where*\
 올바른 삽입 지점 검색을 시작할 위치와 관련된 힌트입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 [hash_multimap::emplace](#emplace) 멤버 함수는 새 요소를 `hash_multimap`에 삽입한 위치를 가리키는 반복기를 반환합니다.
 
@@ -917,7 +918,7 @@ iterator emplace_hint(
 
 요소의 [hash_multimap::value_type](#value_type)은 쌍으로, 요소의 값은 첫 번째 구성 요소가 키 값과 동일하고 두 번째 구성 요소가 요소의 데이터 값과 동일한 정렬된 쌍입니다.
 
-삽입 지점이 *_Where*바로 다음에 오는 경우에는 로그 시간 대신 분할 상환 일정 시간에 삽입이 발생할 수 있습니다.
+삽입 지점이 *_Where* 바로 다음에 오는 경우에는 로그 시간 대신 분할 상환 일정 시간에 삽입이 발생할 수 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -959,7 +960,7 @@ hash_multimap이 비어 있는지 테스트합니다.
 bool empty() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** hash_multimap 비어 있으면이 고, 그렇지 않으면입니다. **`false`** hash_multimap 비어 있지 않으면입니다.
 
@@ -1012,7 +1013,7 @@ const_iterator end() const;
 iterator end();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 hash_multimap에서 마지막 요소 다음에 나오는 위치의 주소를 지정하는 양방향 반복기입니다. hash_multimap이 비어 있으면 hash_multimap::end == hash_multimap::begin입니다.
 
@@ -1088,7 +1089,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 *키인지*\
 검색 중인 hash_multimap에서 요소의 정렬 키와 비교할 인수 키입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 반복기 쌍. 여기서 첫 번째 반복기는 키의 [lower_bound](#lower_bound)이고 두 번째 반복기는 키의 [upper_bound](#upper_bound)입니다.
 
@@ -1188,7 +1189,7 @@ hash_multimap에서 제거된 마지막 요소 바로 뒤의 위치입니다.
 *키인지*\
 hash_multimap에서 제거할 요소의 키입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 처음 두 멤버 함수의 경우 제거된 요소 뒤에 남은 첫 번째 요소를 지정하는 양방향 반복기이거나 이러한 요소가 없을 경우 hash_multimap의 끝에 대한 포인터입니다.
 
@@ -1303,7 +1304,7 @@ const_iterator find(const Key& key) const;
 *키인지*\
 검색 중인 hash_multimap에서 요소의 정렬 키와 일치 여부를 확인할 키입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 지정된 키를 포함하는 요소의 첫 번째 위치 또는 해당 키와 일치하는 항목이 없는 경우 hash_multimap의 마지막 요소 다음 위치에 대한 주소를 지정하는 반복기입니다.
 
@@ -1392,7 +1393,7 @@ hash_multimap을 생성하는 데 사용되는 할당자 개체의 복사본을 
 Allocator get_allocator() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 hash_multimap에서 사용되는 할당자입니다.
 
@@ -1594,7 +1595,7 @@ iterator insert(
 *최신*\
 맵에서 복사할 마지막 요소 바로 다음 위치입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 처음 두 `insert` 멤버 함수는 새 요소가 삽입된 위치를 가리키는 반복기를 반환합니다.
 
@@ -1608,7 +1609,7 @@ iterator insert(
 
 요소의 [value_type](#value_type) 은 쌍으로, 요소의 값은 첫 번째 구성 요소가 키 값과 동일하고 두 번째 구성 요소가 요소의 데이터 값과 동일한 정렬된 쌍입니다.
 
-삽입 `insert` 지점이 바로 뒤에 오면 로그 시간 대신의 힌트 버전에 대 한 분할 상환 상수 시간에 삽입이 발생할 수 있습니다 *Where*.
+삽입 `insert` 지점이 바로 뒤에 오면 로그 시간 대신의 힌트 버전에 대 한 분할 상환 상수 시간에 삽입이 발생할 수 있습니다 .
 
 ## <a name="hash_multimapiterator"></a><a name="iterator"></a> hash_multimap:: iterator
 
@@ -1646,7 +1647,7 @@ hash_multimap에서 키를 정렬하기 위해 사용하는 비교 개체의 복
 key_compare key_comp() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 hash_multimap이 요소의 순서를 지정하는 데 사용하는 함수 개체를 반환합니다.
 
@@ -1720,7 +1721,7 @@ typedef Traits key_compare;
 
 ### <a name="remarks"></a>설명
 
-`key_compare` 는 템플릿 매개 변수 *특성*의 동의어입니다.
+`key_compare` 는 템플릿 매개 변수 *특성* 의 동의어입니다.
 
 *특성* 에 대 한 자세한 내용은 [hash_multimap 클래스](../standard-library/hash-multimap-class.md) 항목을 참조 하세요.
 
@@ -1741,9 +1742,9 @@ typedef Key key_type;
 
 ### <a name="remarks"></a>설명
 
-`key_type` 는 템플릿 매개 변수 *키*의 동의어입니다.
+`key_type` 는 템플릿 매개 변수 *키* 의 동의어입니다.
 
-*키*에 대 한 자세한 내용은 [hash_multimap 클래스](../standard-library/hash-multimap-class.md) 항목의 설명 섹션을 참조 하세요.
+*키* 에 대 한 자세한 내용은 [hash_multimap 클래스](../standard-library/hash-multimap-class.md) 항목의 설명 섹션을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -1767,7 +1768,7 @@ const_iterator lower_bound(const Key& key) const;
 *키인지*\
 검색 중인 hash_multimap에서 요소의 정렬 키와 비교할 인수 키입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 인수 키보다 크거나 같은 키가 들어 있는 hash_multimap 내 요소의 위치 주소를 지정하거나, 키와 일치하는 항목이 없는 경우 hash_multimap에서 마지막 요소 다음 위치의 주소를 지정하는 [iterator](#iterator) 또는 [const_iterator](#const_iterator)입니다.
 
@@ -1857,7 +1858,7 @@ typedef Type mapped_type;
 
 ### <a name="remarks"></a>설명
 
-`mapped_type`은 템플릿 매개 변수 *Type*의 동의어입니다.
+`mapped_type`은 템플릿 매개 변수 *Type* 의 동의어입니다.
 
 *형식* 에 대 한 자세한 내용은 [hash_multimap 클래스](../standard-library/hash-multimap-class.md) 항목을 참조 하세요.
 
@@ -1876,7 +1877,7 @@ hash_multimap의 최대 길이를 반환합니다.
 size_type max_size() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 hash_multimap의 최대 허용 길이입니다.
 
@@ -1923,7 +1924,7 @@ hash_multimap& operator=(hash_multimap&& right);
 
 ### <a name="remarks"></a>설명
 
-에서 기존 요소를 지운 후에 `hash_multimap` 는 `operator=` 의 내용을로 복사 하거나 이동 *right* `hash_multimap` 합니다.
+에서 기존 요소를 지운 후에 `hash_multimap` 는 `operator=` 의 내용을로 복사 하거나 이동  `hash_multimap` 합니다.
 
 ### <a name="example"></a>예제
 
@@ -1993,7 +1994,7 @@ const_reverse_iterator rbegin() const;
 reverse_iterator rbegin();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 역방향 hash_multimap에서 첫 번째 요소 또는 정방향 hash_multimap에서 마지막 요소의 주소를 지정하는 역방향 양방향 반복기입니다.
 
@@ -2141,7 +2142,7 @@ const_reverse_iterator rend() const;
 reverse_iterator rend();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 역방향 hash_multimap에서 마지막 요소 다음의 위치(정방향 hash_multimap의 첫 번째 요소 앞의 위치) 주소를 지정하는 역방향 양방향 반복기입니다.
 
@@ -2248,7 +2249,7 @@ hash_multimap에 있는 요소 수를 반환합니다.
 size_type size() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 hash_multimap의 현재 길이입니다.
 
@@ -2394,7 +2395,7 @@ const_iterator upper_bound(const Key& key) const;
 *키인지*\
 검색 중인 hash_multimap에서 요소의 정렬 키와 비교할 인수 키입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 인수 키보다 더 큰 키가 들어 있는 hash_multimap 내 요소의 위치 주소를 지정하거나, 키와 일치하는 항목이 없는 경우 hash_multimap에서 마지막 요소 다음 위치의 주소를 지정하는 [iterator](#iterator) 또는 [const_iterator](#const_iterator)입니다.
 
@@ -2473,13 +2474,13 @@ that of the initial element of hm1 is: 20.
 value_compare value_comp() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 hash_multimap이 요소의 순서를 지정하는 데 사용하는 비교 함수 개체를 반환합니다.
 
 ### <a name="remarks"></a>설명
 
-Hash_multimap *m*의 경우 두 요소인 *e1* (*k1*, *d1*) 및 *e2*(*k2*, *d2*)는 [value_type](#value_type)형식의 개체이 고, 여기서 *k1* 와 *k2* 는 [key_type](#key_type) 형식의 키이 고 *d1* 및 *d2* 는 [mapped_type](#mapped_type)형식의 데이터입니다. 그런 다음는와 `m.value_comp()(e1, e2)` 동일 `m.key_comp()(k1, k2)` 합니다. 저장된 개체는 멤버 함수
+Hash_multimap *m* 의 경우 두 요소인 *e1* (*k1*, *d1*) 및 *e2*(*k2*, *d2*)는 [value_type](#value_type)형식의 개체이 고, 여기서 *k1* 와 *k2* 는 [key_type](#key_type) 형식의 키이 고 *d1* 및 *d2* 는 [mapped_type](#mapped_type)형식의 데이터입니다. 그런 다음는와 `m.value_comp()(e1, e2)` 동일 `m.key_comp()(k1, k2)` 합니다. 저장된 개체는 멤버 함수
 
 `bool operator( value_type& left, value_type& right);`
 

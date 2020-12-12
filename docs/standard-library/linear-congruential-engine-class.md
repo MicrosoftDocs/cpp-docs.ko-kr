@@ -1,4 +1,5 @@
 ---
+description: Linear_congruential_engine 클래스에 대해 자세히 알아보세요.
 title: linear_congruential_engine 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - linear_congruential_engine class
 ms.assetid: 30e00ca6-1933-4701-9561-54f3e810a5a1
-ms.openlocfilehash: 8701570787275e853543e723f6461b8ad460f96f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b2171623190180cabc46dd760debabdefb9afd77
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845447"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323540"
 ---
 # <a name="linear_congruential_engine-class"></a>linear_congruential_engine 클래스
 
@@ -52,7 +53,7 @@ class linear_congruential_engine{
 **승수**. **사전 조건**: 설명 섹션을 참조하세요.
 
 *C*\
-**증가값**입니다. **사전 조건**: 설명 섹션을 참조하세요.
+**증가값** 입니다. **사전 조건**: 설명 섹션을 참조하세요.
 
 *매*\
 **모듈러스**. **사전 조건**: 설명을 참조하세요.
@@ -78,7 +79,7 @@ class linear_congruential_engine{
 
 *M* 이 0 이면이 모듈러스 연산에 사용 되는 값은 `numeric_limits<result_type>::max() + 1` 입니다. 엔진의 상태는 반환되는 마지막 값이거나 `operator()`를 호출하지 않은 경우에는 시드 값입니다.
 
-*M* 이 0이 아니면 템플릿 인수 *A* 와 *C* 의 값은 *m*보다 작아야 합니다.
+*M* 이 0이 아니면 템플릿 인수 *A* 와 *C* 의 값은 *m* 보다 작아야 합니다.
 
 이 엔진에서 직접 생성기를 생성할 수 있더라도 다음의 미리 정의된 형식 정의 중 하나를 사용할 수 있습니다.
 

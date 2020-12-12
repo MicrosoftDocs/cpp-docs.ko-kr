@@ -1,15 +1,16 @@
 ---
+description: '자세히 알아보기: 응용 프로그램 제어'
 title: 애플리케이션 컨트롤
 ms.date: 11/04/2016
 helpviewer_keywords:
 - application control [MFC]
 ms.assetid: c1f69f15-e0fe-4515-9f36-d63d31869deb
-ms.openlocfilehash: 40ac3b6871d13420797279629a2661b22545d1d8
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 20a777f5b7bb20870e9156ee090ff24ec4690f14
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832375"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322826"
 ---
 # <a name="application-control"></a>애플리케이션 컨트롤
 

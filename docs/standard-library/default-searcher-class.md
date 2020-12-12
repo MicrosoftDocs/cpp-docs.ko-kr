@@ -1,16 +1,17 @@
 ---
+description: Default_searcher 클래스에 대해 자세히 알아보세요.
 title: default_searcher 클래스
 ms.date: 08/03/2019
 f1_keywords:
 - functional/std::default_searcher
 helpviewer_keywords:
 - std::default_searcher [C++]
-ms.openlocfilehash: 307fc6da3b383690e0b65bff2a72f386a37d6711
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 0eb47d3f4c49c9bb6c9c4e68ab2164b87ea9834d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90039692"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324590"
 ---
 # <a name="default_searcher-class"></a>default_searcher 클래스
 
@@ -36,7 +37,7 @@ class default_searcher
 
 ## <a name="members"></a>멤버
 
-| 멤버 | Description |
+| 멤버 | 설명 |
 | - | - |
 | **생성자** | |
 | [default_searcher](#default-searcher-constructor) | 검색자 인스턴스를 생성 합니다. |
@@ -106,7 +107,7 @@ constexpr pair<ForwardIterator2, ForwardIterator2> operator()(
 
 `std::search( first, last, pat_first, pat_last, pred )`.
 
-*I**가 *last*인 경우 쌍의 두 번째 반복기는 *마지막* 입니다. 그렇지 않으면 다음의 효과적인 결과입니다.
+*I**가 *last* 인 경우 쌍의 두 번째 반복기는 *마지막* 입니다. 그렇지 않으면 다음의 효과적인 결과입니다.
 
 `std::next( i, std::distance( pat_first, pat_last ))`.
 

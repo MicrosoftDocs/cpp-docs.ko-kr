@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2318'
 title: 컴파일러 오류 C2318
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2318
 ms.assetid: 169e30b9-df78-46cb-90bf-576ad3c32fd4
-ms.openlocfilehash: 5f608d0407c24bd01ed7b80dbef873dd30662661
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3cec8dbb46b10b4889a9cd026144bea228a28f15
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221252"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322151"
 ---
 # <a name="compiler-error-c2318"></a>컴파일러 오류 C2318
 

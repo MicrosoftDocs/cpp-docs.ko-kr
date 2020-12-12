@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: ___mb_cur_max_func, ___mb_cur_max_l_func, __p___mb_cur_max, __mb_cur_max'
 title: ___mb_cur_max_func, ___mb_cur_max_l_func, __p___mb_cur_max, __mb_cur_max
 ms.date: 4/2/2020
 api_name:
@@ -32,12 +33,12 @@ helpviewer_keywords:
 - ___mb_cur_max_l_func
 - __p___mb_cur_max
 ms.assetid: 60d36108-1ca7-45a6-8ce7-68a91f13e3a1
-ms.openlocfilehash: 8287e2e7cab8880d35fef170287713adcc103c7e
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 1308dbe969f8b6638835f52ec1e7a2cdcd63bb7f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912965"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321164"
 ---
 # <a name="___mb_cur_max_func-___mb_cur_max_l_func-__p___mb_cur_max-__mb_cur_max"></a>___mb_cur_max_func, ___mb_cur_max_l_func, __p___mb_cur_max, __mb_cur_max
 
@@ -56,7 +57,7 @@ int * __p___mb_cur_max(void);
 
 locale 결과를 검색할 로캘 구조입니다. 이 값이 null이면 현재 스레드 로컬이 사용됩니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 현재 스레드 로컬 또는 지정된 로컬에 대한 멀티바이트 문자의 최대 바이트 수입니다.
 
@@ -76,6 +77,6 @@ CRT가 스레드 로컬 스토리지에서 [MB_CUR_MAX](../c-runtime-library/mb-
 |-------------|---------------------|
 |`___mb_cur_max_func`, `___mb_cur_max_l_func`, `__p___mb_cur_max`|\<ctype.h>, \<stdlib.h>|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [MB_CUR_MAX](../c-runtime-library/mb-cur-max.md)

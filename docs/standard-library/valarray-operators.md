@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: &lt; valarray &gt; 연산자'
 title: '&lt;valarray&gt; 연산자'
 ms.date: 03/27/2019
 f1_keywords:
@@ -30,16 +31,16 @@ helpviewer_keywords:
 - std::operator&lt; (valarray)
 - std::operator&lt;&lt; (valarray)
 - std::operator&lt;= (valarray), std::operator== (valarray)
-ms.openlocfilehash: 76eb3553090cd88cf0798b2b17bbd49906852e40
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 574d0b67910b79941431f3ee8c1f9e3118de35a4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212011"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321467"
 ---
 # <a name="ltvalarraygt-operators"></a>&lt;valarray&gt; 연산자
 
-## <a name="operator"></a><a name="op_neq"></a>연산자! =
+## <a name="operator"></a><a name="op_neq"></a> 연산자! =
 
 크기가 같은 두 valarray의 해당 요소가 서로 같지 않은지 또는 valarray의 모든 요소가 지정된 값과 같지 않은지 테스트합니다.
 
@@ -71,7 +72,7 @@ operator!=(
 *오른쪽*\
 해당 요소가 같지 않은지 테스트할 두 valarray 중 두 번째 valarray입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 부울 값의 valarray. 각 valarray은 다음을 반환합니다.
 
@@ -136,7 +137,7 @@ The element-by-element result of the not equal comparison test is the
 valarray: ( 0 0 1 0 1 0 1 0 1 0 ).
 ```
 
-## <a name="operator"></a><a name="op_mod"></a>연산자
+## <a name="operator"></a><a name="op_mod"></a> 연산자
 
 크기가 같은 두 valarray의 해당 요소를 나눈 나머지 또는 valarray를 지정된 값으로 나누거나 지정된 값을 valarray로 나눈 나머지를 가져옵니다.
 
@@ -168,9 +169,9 @@ operator%(
 *오른쪽*\
 다른 값이나 valarray를 나누는 제수로 사용되는 값 또는 valarray입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-해당 요소를 *왼쪽* 에서 *오른쪽*으로 나눈 요소가 있는 valarray입니다.
+해당 요소를 *왼쪽* 에서 *오른쪽* 으로 나눈 요소가 있는 valarray입니다.
 
 ### <a name="example"></a>예제
 
@@ -221,9 +222,9 @@ The remainders from the element-by-element division is the
 valarray: ( 0 -3 4 -7 1 -3 ).
 ```
 
-## <a name="operatoramp"></a><a name="op_amp"></a>연산자&amp;
+## <a name="operatoramp"></a><a name="op_amp"></a> 연산자&amp;
 
-크기가 같은 두 valarray의 해당 요소 간이나 valarray와 요소 형식의 지정된 값 간에 비트 **AND**를 가져옵니다.
+크기가 같은 두 valarray의 해당 요소 간이나 valarray와 요소 형식의 지정된 값 간에 비트 **AND** 를 가져옵니다.
 
 ```cpp
 template <class Type>
@@ -253,13 +254,13 @@ operator&(
 *오른쪽*\
 개별 요소를 비트 `AND`로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 비트 결합할 두 valarray 중 두 번째 valarray입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-해당 요소가 *left* 및 *RIGHT*의 비트 and 연산의 요소 전체 조합인 valarray입니다.
+해당 요소가 *left* 및 *RIGHT* 의 비트 and 연산의 요소 전체 조합인 valarray입니다.
 
 ### <a name="remarks"></a>설명
 
-비트 연산은 및 데이터 형식과 variant의 비트를 조작 하는 데만 사용할 수 있으며,,,,,, **`char`** **`int`** **`float`** **`double`** **longdouble** **`void`** **`bool`** 또는 기타 복잡 한 데이터 형식은 사용할 수 없습니다.
+비트 연산은 및 데이터 형식과 variant의 비트를 조작 하는 데만 사용할 수 있으며,,,,,, **`char`** **`int`** **`float`** **`double`**  **`void`** **`bool`** 또는 기타 복잡 한 데이터 형식은 사용할 수 없습니다.
 
 비트 `AND`은 논리적 `AND`과 같은 진리표를 포함하지만 개별 비트 수준에서 데이터 형식에 적용됩니다. [operator&&](#op_amp_amp)는 요소 수준에서 적용되어 0이 아닌 모든 값을 true로 계산하며, 결과는 부울 값의 valarray입니다. 이와 대조적으로 비트 `AND` [연산자&](#op_amp)는 비트 연산의 결과에 따라 0 또는 1이 아닌 값의 valarray를 발생 시킬 수 있습니다.
 
@@ -312,9 +313,9 @@ The element-by-element result of the bitwise operator & is the
 valarray: ( 0 0 0 0 0 4 0 0 0 8 ).
 ```
 
-## <a name="operatorampamp"></a><a name="op_amp_amp"></a>연산자&amp;&amp;
+## <a name="operatorampamp"></a><a name="op_amp_amp"></a> 연산자&amp;&amp;
 
-크기가 같은 두 valarray의 해당 요소 간이나 valarray와 valarray 요소 형식의 지정된 값 간에 논리적 **AND**를 가져옵니다.
+크기가 같은 두 valarray의 해당 요소 간이나 valarray와 valarray 요소 형식의 지정된 값 간에 논리적 **AND** 를 가져옵니다.
 
 ```cpp
 template <class Type>
@@ -344,9 +345,9 @@ operator&&(
 *오른쪽*\
 개별 요소를 논리적 `AND`로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 결합할 두 valarray 중 두 번째 valarray입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-해당 요소가 bool 형식이 고 `AND` *왼쪽과* *오른쪽*의 논리적 연산의 요소 전체 조합인 valarray
+해당 요소가 bool 형식이 고 `AND` *왼쪽과* *오른쪽* 의 논리적 연산의 요소 전체 조합인 valarray
 
 ### <a name="remarks"></a>설명
 
@@ -401,7 +402,7 @@ The element-by-element result of the logical AND operator&& is the
 valarray: ( 0 0 0 1 0 1 0 1 0 1 ).
 ```
 
-## <a name="operatorgt"></a><a name="op_gt"></a>연산자&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a> 연산자&gt;
 
 한 valarray의 요소가 크기가 같은 valarray의 요소보다 큰지 또는 valarray의 모든 요소가 지정된 값보다 크거나 작은지 테스트합니다.
 
@@ -433,7 +434,7 @@ operator>(
 *오른쪽*\
 해당 요소를 비교하거나 지정된 값을 valarray의 각 요소와 비교할 두 valarray 중 두 번째 valarray입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 부울 값의 valarray. 각 valarray은 다음을 반환합니다.
 
@@ -494,7 +495,7 @@ The element-by-element result of the greater than comparison test is the
 valarray: ( 1 1 0 1 0 1 0 1 0 1 ).
 ```
 
-## <a name="operatorgt"></a><a name="op_gt_eq"></a>연산자&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a> 연산자&gt;=
 
 한 valarray의 요소가 크기가 같은 valarray의 요소보다 크거나 같은지 또는 valarray의 모든 요소가 지정된 값보다 크거나 같거나 작거나 같은지 테스트합니다.
 
@@ -526,7 +527,7 @@ operator>=(
 *오른쪽*\
 해당 요소를 비교하거나 지정된 값을 valarray의 각 요소와 비교할 두 valarray 중 두 번째 valarray입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 부울 값의 valarray. 각 valarray은 다음을 반환합니다.
 
@@ -587,7 +588,7 @@ The element-by-element result of the greater than or equal test is the
 valarray: ( 1 1 0 1 0 1 0 1 0 1 ).
 ```
 
-## <a name="operatorgtgt"></a><a name="op_gt_gt"></a>연산자&gt;&gt;
+## <a name="operatorgtgt"></a><a name="op_gt_gt"></a> 연산자&gt;&gt;
 
 valarray의 각 요소에 대한 비트를 지정된 위치 수 또는 두 번째 valarray에 지정된 요소 양만큼 오른쪽으로 이동합니다.
 
@@ -619,7 +620,7 @@ operator>>(
 *오른쪽*\
 오른쪽으로 이동할 크기를 나타내는 값 또는 해당 요소가 요소 전체 오른쪽 이동 크기를 나타내는 valarray
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 해당 요소가 지정한 크기만큼 오른쪽으로 이동된 valarray
 
@@ -676,7 +677,7 @@ The element-by-element result of the right shift is the
 valarray: ( 64 -32 16 -8 4 -2 1 -1 ).
 ```
 
-## <a name="operatorlt"></a><a name="op_lt"></a>연산자&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a> 연산자&lt;
 
 한 valarray의 요소가 크기가 같은 valarray의 요소보다 작은지 또는 valarray의 모든 요소가 지정된 값보다 크거나 작은지 테스트합니다.
 
@@ -708,7 +709,7 @@ operator<(
 *오른쪽*\
 해당 요소를 비교하거나 지정된 값을 valarray의 각 요소와 비교할 두 valarray 중 두 번째 valarray입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 부울 값의 valarray. 각 valarray은 다음을 반환합니다.
 
@@ -769,7 +770,7 @@ The element-by-element result of the less-than comparson test is the
 valarray: ( 0 0 1 0 1 0 1 0 1 0 ).
 ```
 
-## <a name="operatorlt"></a><a name="op_lt_eq"></a>연산자&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a> 연산자&lt;=
 
 한 valarray의 요소가 크기가 같은 valarray의 요소보다 작거나 같은지 또는 valarray의 모든 요소가 지정된 값보다 크거나 같거나 작거나 같은지 테스트합니다.
 
@@ -801,7 +802,7 @@ operator<=(
 *오른쪽*\
 해당 요소를 비교하거나 지정된 값을 valarray의 각 요소와 비교할 두 valarray 중 두 번째 valarray입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 부울 값의 valarray. 각 valarray은 다음을 반환합니다.
 
@@ -862,7 +863,7 @@ The element-by-element result of the less than or equal test is the
 valarray: ( 0 0 1 0 1 0 1 0 1 0 ).
 ```
 
-## <a name="operatorltlt"></a><a name="op_lt_lt"></a>연산자&lt;&lt;
+## <a name="operatorltlt"></a><a name="op_lt_lt"></a> 연산자&lt;&lt;
 
 valarray의 각 요소에 대한 비트를 지정된 위치 수 또는 두 번째 valarray에 지정된 요소 양만큼 왼쪽으로 이동합니다.
 
@@ -894,7 +895,7 @@ operator<<(
 *오른쪽*\
 왼쪽으로 이동할 크기를 나타내는 값 또는 해당 요소가 요소 전체 왼쪽 이동 크기를 나타내는 valarray
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 해당 요소가 지정한 크기만큼 왼쪽으로 이동된 valarray
 
@@ -951,7 +952,7 @@ The element-by-element result of the left shift is the
 valarray: ( 1 -2 4 -8 16 -32 64 -128 ).
 ```
 
-## <a name="operator"></a><a name="op_star"></a>연산자
+## <a name="operator"></a><a name="op_star"></a> 연산자
 
 크기가 같은 두 valarray의 해당 요소 간이나 valarray와 지정된 값 간에 요소 전체 곱을 가져옵니다.
 
@@ -983,9 +984,9 @@ operator*(
 *오른쪽*\
 해당 요소를 곱하거나 지정된 값을 valarray의 각 요소와 곱할 두 valarray 중 두 번째 valarray입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-요소가 *왼쪽과* *오른쪽*의 요소 전체 곱 인 valarray
+요소가 *왼쪽과* *오른쪽* 의 요소 전체 곱 인 valarray
 
 ### <a name="example"></a>예제
 
@@ -1036,7 +1037,7 @@ The element-by-element result of the multiplication is the
 valarray: ( 0 -1 4 -3 8 -5 12 -7 ).
 ```
 
-## <a name="operator"></a><a name="op_add"></a>연산자 +
+## <a name="operator"></a><a name="op_add"></a> 연산자 +
 
 크기가 같은 두 valarray의 해당 요소 간이나 valarray와 지정된 값 간에 요소 전체 합을 가져옵니다.
 
@@ -1068,9 +1069,9 @@ operator+(
 *오른쪽*\
 해당 요소를 더하거나 지정된 값을 valarray의 각 요소와 더할 두 valarray 중 두 번째 valarray입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-해당 요소가 *왼쪽과* *오른쪽*의 요소 전체 합계인 valarray
+해당 요소가 *왼쪽과* *오른쪽* 의 요소 전체 합계인 valarray
 
 ### <a name="example"></a>예제
 
@@ -1121,7 +1122,7 @@ The element-by-element result of the sum is the
 valarray: ( 2 0 4 2 6 4 8 6 ).
 ```
 
-## <a name="operator-"></a><a name="operator-"></a>연산자
+## <a name="operator-"></a><a name="operator-"></a> 연산자
 
 크기가 같은 두 valarray의 해당 요소 간이나 valarray와 지정된 값 간에 요소 전체 차를 가져옵니다.
 
@@ -1153,9 +1154,9 @@ operator-(
 *오른쪽*\
 차를 구하기 위해 다른 값이나 valarray에서 뺄 감수로 사용되는 값 또는 valarray
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-요소가 *왼쪽과* *오른쪽*의 요소 전체 차 인 valarray
+요소가 *왼쪽과* *오른쪽* 의 요소 전체 차 인 valarray
 
 ### <a name="remarks"></a>설명
 
@@ -1212,7 +1213,7 @@ The element-by-element result of the difference is the
 valarray: ( 10 -1 8 -3 6 -5 4 -7 ).
 ```
 
-## <a name="operator"></a><a name="op_div"></a>연산자
+## <a name="operator"></a><a name="op_div"></a> 연산자
 
 크기가 같은 두 valarray의 해당 요소 간이나 valarray와 지정된 값 간에 요소 전체 몫을 가져옵니다.
 
@@ -1244,9 +1245,9 @@ operator/(
 *오른쪽*\
 몫을 구하기 위해 다른 값이나 valarray를 나누는 제수로 사용되는 값 또는 valarray입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-해당 요소를 *왼쪽* 에서 *오른쪽*으로 나눈 요소가 포함 된 valarray
+해당 요소를 *왼쪽* 에서 *오른쪽* 으로 나눈 요소가 포함 된 valarray
 
 ### <a name="remarks"></a>설명
 
@@ -1303,7 +1304,7 @@ The element-by-element result of the quotient is the
 valarray: ( inf -50 25 -16.6667 12.5 -10 ).
 ```
 
-## <a name="operator"></a><a name="op_eq_eq"></a>연산자 = =
+## <a name="operator"></a><a name="op_eq_eq"></a> 연산자 = =
 
 크기가 같은 두 valarray의 해당 요소가 서로 같은지 또는 valarray의 모든 요소가 지정된 값과 같은지 테스트합니다.
 
@@ -1335,7 +1336,7 @@ operator==(
 *오른쪽*\
 해당 요소가 같은지 테스트할 두 valarray 중 두 번째 valarray입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 부울 값의 valarray. 각 valarray은 다음을 반환합니다.
 
@@ -1396,7 +1397,7 @@ The element-by-element result of the equality comparison test is the
 valarray: ( 1 1 0 1 0 1 0 1 0 1 ).
 ```
 
-## <a name="operator"></a><a name="op_xor"></a>operator ^
+## <a name="operator"></a><a name="op_xor"></a> operator ^
 
 크기가 같은 두 valarray의 해당 요소 간이나 valarray와 요소 형식의 지정된 값 간에 비트 배타적 `OR`(**XOR**)을 가져옵니다.
 
@@ -1423,20 +1424,20 @@ operator^(
 ### <a name="parameters"></a>매개 변수
 
 *비어*\
-개별 요소를 비트 **XOR**로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 비트 결합할 두 valarray 중 첫 번째 valarray입니다.
+개별 요소를 비트 **XOR** 로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 비트 결합할 두 valarray 중 첫 번째 valarray입니다.
 
 *오른쪽*\
-개별 요소를 비트 **XOR**로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 비트 결합할 두 valarray 중 두 번째 valarray입니다.
+개별 요소를 비트 **XOR** 로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 비트 결합할 두 valarray 중 두 번째 valarray입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-해당 요소가 *left* 및 *Right*의 비트 **XOR** 연산의 요소 전체 조합인 valarray입니다.
+해당 요소가 *left* 및 *Right* 의 비트 **XOR** 연산의 요소 전체 조합인 valarray입니다.
 
 ### <a name="remarks"></a>설명
 
 비트 연산은 및 데이터 형식과 variant의 비트를 조작 하는 데만 사용할 수 있으며,,, **`char`** **`int`** **`float`** **`double`** **`long double`** **`void`** **`bool`** 또는 기타 복잡 한 데이터 형식은 사용할 수 없습니다.
 
-배타적 비트 `OR` ( **XOR**)의 의미 체계는 다음과 같습니다. 지정 된 비트 *b*1 및 *b*2, *b*1 **XOR** *b*2는 **`true`** 정확히 비트 중 하나가 true 이면이 고, 두 비트가 모두 false 이면이 고, **`false`** 두 비트가 모두 true 이면입니다.
+배타적 비트 `OR` ( **XOR**)의 의미 체계는 다음과 같습니다. 지정 된 비트 *b* 1 및 *b* 2, *b* 1 **XOR** *b* 2는 **`true`** 정확히 비트 중 하나가 true 이면이 고, 두 비트가 모두 false 이면이 고, **`false`** 두 비트가 모두 true 이면입니다.
 
 ### <a name="example"></a>예제
 
@@ -1491,7 +1492,7 @@ The element-by-element result of the bitwise XOR operator^ is the
 valarray: ( 1 0 0 3 2 4 7 6 6 9 ).
 ```
 
-## <a name="operator124"></a><a name="op_or"></a>연산자&#124;
+## <a name="operator124"></a><a name="op_or"></a> 연산자&#124;
 
 크기가 같은 두 valarray의 해당 요소 간이나 valarray와 요소 형식의 지정된 값 간에 비트 `OR`을 가져옵니다.
 
@@ -1523,15 +1524,15 @@ operator|(
 *오른쪽*\
 개별 요소를 비트 `OR`로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 비트 결합할 두 valarray 중 두 번째 valarray입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-해당 요소가 `OR` *left* 및 *right*비트 연산의 요소 전체 조합인 valarray입니다.
+해당 요소가 `OR` *left* 및 *right* 비트 연산의 요소 전체 조합인 valarray입니다.
 
 ### <a name="remarks"></a>설명
 
-비트 연산은 및 데이터 형식과 variant의 비트를 조작 하는 데만 사용할 수 있으며,,,,,, **`char`** **`int`** **`float`** **`double`** **longdouble** **`void`** **`bool`** 또는 기타 복잡 한 데이터 형식은 사용할 수 없습니다.
+비트 연산은 및 데이터 형식과 variant의 비트를 조작 하는 데만 사용할 수 있으며,,,,,, **`char`** **`int`** **`float`** **`double`**  **`void`** **`bool`** 또는 기타 복잡 한 데이터 형식은 사용할 수 없습니다.
 
-비트 OR은 논리적 `OR`와 같은 진리표를 포함하지만 개별 비트 수준에서 데이터 형식에 적용됩니다. B 1 *및* *b*2가 지정 된 경우 *b*1 `OR` *b*2는 **`true`** 비트 중 하나 이상이 true 이거나 **`false`** 두 비트가 모두 false 인 경우입니다. 논리 `OR` [연산자&#124;&#124;](../standard-library/valarray-operators.md#op_lor) 요소 수준에서 적용 되 고 0이 아닌 모든 값을로 계산 **`true`** 하며, 결과는 부울 값의 valarray입니다. 반면 비트 OR `operator|`를 사용하는 경우에는 비트 연산의 결과에 따라 0이나 1이 아닌 값의 valarray가 생성될 수 있습니다.
+비트 OR은 논리적 `OR`와 같은 진리표를 포함하지만 개별 비트 수준에서 데이터 형식에 적용됩니다. B 1 *및* *b* 2가 지정 된 경우 *b* 1 `OR` *b* 2는 **`true`** 비트 중 하나 이상이 true 이거나 **`false`** 두 비트가 모두 false 인 경우입니다. 논리 `OR` [연산자&#124;&#124;](../standard-library/valarray-operators.md#op_lor) 요소 수준에서 적용 되 고 0이 아닌 모든 값을로 계산 **`true`** 하며, 결과는 부울 값의 valarray입니다. 반면 비트 OR `operator|`를 사용하는 경우에는 비트 연산의 결과에 따라 0이나 1이 아닌 값의 valarray가 생성될 수 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -1586,7 +1587,7 @@ The element-by-element result of the bitwise OR operator| is the
 valarray: ( 1 0 1 3 3 4 7 6 7 9 ).
 ```
 
-## <a name="operator124124"></a><a name="op_lor"></a>연산자&#124;&#124;
+## <a name="operator124124"></a><a name="op_lor"></a> 연산자&#124;&#124;
 
 크기가 같은 두 valarray의 해당 요소 간이나 valarray와 valarray 요소 형식의 지정된 값 간에 논리적 `OR`을 가져옵니다.
 
@@ -1618,9 +1619,9 @@ operator||(
 *오른쪽*\
 개별 요소를 논리적 `OR`로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 결합할 두 valarray 중 두 번째 valarray입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-요소가 형식이 **`bool`** 고 *왼쪽과* *오른쪽*의 논리적 OR 연산의 요소 전체 조합인 valarray입니다.
+요소가 형식이 **`bool`** 고 *왼쪽과* *오른쪽* 의 논리적 OR 연산의 요소 전체 조합인 valarray입니다.
 
 ### <a name="remarks"></a>설명
 

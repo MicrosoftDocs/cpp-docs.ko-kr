@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 디스크에 커밋 상수'
 title: 디스크에 커밋 상수
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - commit-to-disk constants
 ms.assetid: 0b903b23-b4fa-431e-a937-51d95f695ecf
-ms.openlocfilehash: c02b18e5a4a731957a7c74cc45e6e181fe23fad8
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: 416729f4b3b7bfdfdcb0ba11193f6c2a52691e6e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57750613"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322648"
 ---
 # <a name="commit-to-disk-constants"></a>디스크에 커밋 상수
 
@@ -23,7 +24,7 @@ ms.locfileid: "57750613"
 #include <stdio.h>
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 이러한 Microsoft 전용 상수는 열려 있는 파일과 연결된 버퍼가 운영 체제 버퍼 또는 디스크에 플러시되는지 여부를 지정합니다. 모드는 읽기/쓰기 액세스 형식을 지정하는 문자열에 포함됩니다(**"r"**, **"w"**, **"a"**, **"r+"**, **"w+"**, **"a+"**).
 
@@ -48,7 +49,7 @@ ms.locfileid: "57750613"
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [스트림 I/O](../c-runtime-library/stream-i-o.md)<br/>
 [_fdopen, _wfdopen](../c-runtime-library/reference/fdopen-wfdopen.md)<br/>

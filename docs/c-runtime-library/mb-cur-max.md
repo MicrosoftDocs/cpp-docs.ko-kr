@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: MB_CUR_MAX'
 title: MB_CUR_MAX
 ms.date: 10/18/2017
 f1_keywords:
@@ -6,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - MB_CUR_MAX constant
 ms.assetid: fab22609-c14d-4c19-991c-bd09ff30e604
-ms.openlocfilehash: 8f89d06f11d5da14389c849814e06b56586b3c69
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: 539b1bd658c1aac0c8998351b2676513c8cf5607
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57746450"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321151"
 ---
-# <a name="mbcurmax"></a>MB_CUR_MAX
+# <a name="mb_cur_max"></a>MB_CUR_MAX
 
 현재 로캘에 대한 멀티바이트 문자의 최대 바이트 수를 나타내는 매크로입니다.
 
@@ -23,7 +24,7 @@ ms.locfileid: "57746450"
 #include <stdlib.h>
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 컨텍스트: ANSI 멀티바이트 및 와이드 문자 변환 함수
 

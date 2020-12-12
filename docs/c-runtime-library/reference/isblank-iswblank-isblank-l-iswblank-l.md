@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: isblank, iswblank, _isblank_l, _iswblank_l'
 title: isblank, iswblank, _isblank_l, _iswblank_l
 ms.date: 4/2/2020
 api_name:
@@ -33,12 +34,12 @@ f1_keywords:
 - _isblank_l
 - iswblank
 ms.assetid: 33ce96c0-f387-411a-8283-c3d2a69e56bd
-ms.openlocfilehash: 1c45319d7da48fad21af5375b0c310330d0f575a
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: a2731468cda3a2d3bf059133f116b22fa2b019f0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918478"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321115"
 ---
 # <a name="isblank-iswblank-_isblank_l-_iswblank_l"></a>isblank, iswblank, _isblank_l, _iswblank_l
 
@@ -71,7 +72,7 @@ int _iswblank_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 *C* 가 공백 또는 가로 탭 문자의 특정 표현인 경우 이러한 각 루틴은 0이 아닌 값을 반환 하 고, 텍스트 줄 내에서 단어를 구분 하는 데 사용 되는 로캘별 문자 집합 중 하나입니다. **isblank** 는 *c* 가 공백 문자 (0x20) 또는 가로 탭 문자 (0x09) 인 경우 0이 아닌 값을 반환 합니다. **Isblank** 함수의 테스트 조건 결과는 로캘의 **LC_CTYPE** 범주 설정에 따라 달라 집니다. 자세한 내용은 [setlocale, _wsetlocale](setlocale-wsetlocale.md)를 참조 하세요. **_L** 접미사가 없는 이러한 함수 버전은 로캘 종속 동작에 현재 로캘을 사용 합니다. **_l** 접미사가 있는 버전은 전달 된 로캘을 대신 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
@@ -101,8 +102,8 @@ int _iswblank_l(
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [문자 분류](../../c-runtime-library/character-classification.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
+[로캘](../../c-runtime-library/locale.md)<br/>
 [is, isw 루틴](../../c-runtime-library/is-isw-routines.md)<br/>

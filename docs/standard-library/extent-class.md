@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 익스텐트 클래스'
 title: extent 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - extent class
 - extent
 ms.assetid: 6d16263d-90b2-4330-9ec7-b59ed898792d
-ms.openlocfilehash: 0cd53ba8537e706a68ffdcf08df998108266ad20
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: d3db49db99d2cb7a241ca3b69c48fa6bcf2cb490
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68457783"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324388"
 ---
 # <a name="extent-class"></a>extent 클래스
 
@@ -35,7 +36,7 @@ struct extent;
 
 ## <a name="remarks"></a>설명
 
-*Ty* 가 적어도 하나 *이상의 차원을 가진* 배열 형식인 경우 형식 쿼리는 *i*에 지정 된 차원의 요소 수를 포함 합니다. *Ty* 가 배열 형식이 아니거나 순위가 *i*인 경우 또는 *i* 가 0이 고 *Ty* 가 "알 수 없는 바인딩된 배열 `U`" 형식인 경우 형식 쿼리는 값 0을 보유 합니다.
+*Ty* 가 적어도 하나 *이상의 차원을 가진* 배열 형식인 경우 형식 쿼리는 *i* 에 지정 된 차원의 요소 수를 포함 합니다. *Ty* 가 배열 형식이 아니거나 순위가 *i* 인 경우 또는 *i* 가 0이 고 *Ty* 가 "알 수 없는 바인딩된 배열" 형식인 경우 `U` 형식 쿼리는 값 0을 보유 합니다.
 
 ## <a name="example"></a>예제
 
@@ -63,11 +64,11 @@ extent 1 == 10
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<type_traits>
+**헤더:**\<type_traits>
 
 **네임스페이스:** std
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [<type_traits>](../standard-library/type-traits.md)\
 [remove_all_extents 클래스](../standard-library/remove-all-extents-class.md)\

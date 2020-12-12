@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: AFX 메시지'
 title: AFX 메시지
 ms.date: 11/04/2016
 f1_keywords:
@@ -64,12 +65,12 @@ f1_keywords:
 helpviewer_keywords:
 - AFX messages [MFC]
 ms.assetid: 3d601f3c-af6d-47d3-8553-34f1318fa74f
-ms.openlocfilehash: 409760eff6ba6b31413c11fb45ea91a6d07b9485
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: edda0bffd7077a9898a83ff1a530145a008d2d94
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832401"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322839"
 ---
 # <a name="afx-messages"></a>AFX 메시지
 

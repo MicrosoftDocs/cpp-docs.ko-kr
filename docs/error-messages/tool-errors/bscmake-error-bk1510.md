@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: BSCMAKE 오류 BK1510'
 title: BSCMAKE 오류 BK1510
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BK1510
 ms.assetid: e67290c0-58cf-44da-ad01-f8dffc34ea2d
-ms.openlocfilehash: d42ab014a2f7ffb0ad96a99db629215461bb93b0
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d4b4793a1c91216feb5b5548a34fe7099c21a128
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80197667"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322910"
 ---
 # <a name="bscmake-error-bk1510"></a>BSCMAKE 오류 BK1510
 

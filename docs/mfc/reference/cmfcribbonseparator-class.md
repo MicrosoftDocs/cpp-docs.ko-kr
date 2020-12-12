@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Cmfc리본 구분 기호 클래스'
 title: Cmfc리본 구분 기호 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - CMFCRibbonSeparator [MFC], OnDraw
 - CMFCRibbonSeparator [MFC], OnDrawOnList
 ms.assetid: bedb1a53-cb07-4c3c-be12-698c5409e7cf
-ms.openlocfilehash: f435dc5ae8821a6d5626af2f93710a1672fd374c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: db8e7f92089d1e6332fdb2ad057398c465c72f97
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831803"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321750"
 ---
 # <a name="cmfcribbonseparator-class"></a>Cmfc리본 구분 기호 클래스
 
@@ -115,7 +116,7 @@ virtual int AddToListBox(
 
 ### <a name="return-value"></a>반환 값
 
-*PWndListBox*에 의해 지정 된 목록 상자의 문자열에 대 한 0부터 시작 하는 인덱스입니다.
+*PWndListBox* 에 의해 지정 된 목록 상자의 문자열에 대 한 0부터 시작 하는 인덱스입니다.
 
 ## <a name="cmfcribbonseparatorcmfcribbonseparator"></a><a name="cmfcribbonseparator"></a> Cmfc리본 구분 기호:: Cmfc리본 구분 기호
 

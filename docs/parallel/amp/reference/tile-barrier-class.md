@@ -1,4 +1,5 @@
 ---
+description: Tile_barrier 클래스에 대해 자세히 알아보세요.
 title: tile_barrier 클래스
 ms.date: 03/27/2019
 f1_keywords:
@@ -12,16 +13,16 @@ f1_keywords:
 helpviewer_keywords:
 - tile_barrier class
 ms.assetid: b4ccdccb-0032-4e11-b7bd-dc9d43445dee
-ms.openlocfilehash: c00f1e41e70e723be185959eeff176390def7647
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: b4fd1758f9786f4cbb78556daadb0801795ca9c3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81374720"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321710"
 ---
 # <a name="tile_barrier-class"></a>tile_barrier 클래스
 
-메서드를 사용 하 여 `wait` 스레드 그룹 (타일)에서 실행 되는 스레드의 실행을 동기화 합니다. 런타임만 이 클래스를 인스턴스화할 수 있습니다.
+메서드를 사용 하 여 스레드 그룹 (타일)에서 실행 중인 스레드의 실행을 동기화 합니다 `wait` . 런타임에만이 클래스를 인스턴스화할 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,18 +34,18 @@ class tile_barrier;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
 |[tile_barrier 생성자](#ctor)|`tile_barrier` 클래스의 새 인스턴스를 초기화합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[기다릴](#wait)|타일의 모든 스레드가 대기가 완료될 때까지 스레드 그룹(타일)의 모든 스레드에 실행중지를 지시합니다.|
-|[wait_with_all_memory_fence](#wait_with_all_memory_fence)|모든 메모리 액세스가 완료되고 타일의 모든 스레드가 이 호출에 도달할 때까지 타일의 모든 스레드 실행을 차단합니다.|
-|[wait_with_global_memory_fence](#wait_with_global_memory_fence)|모든 전역 메모리 액세스가 완료되고 타일의 모든 스레드가 이 호출에 도달할 때까지 타일의 모든 스레드 실행을 차단합니다.|
-|[wait_with_tile_static_memory_fence](#wait_with_tile_static_memory_fence)|모든 `tile_static` 메모리 액세스가 완료되고 타일의 모든 스레드가 이 호출에 도달할 때까지 타일의 모든 스레드 실행을 차단합니다.|
+|[대기한](#wait)|타일의 모든 스레드가 대기를 완료할 때까지 스레드 그룹 (타일)에 있는 모든 스레드의 실행을 중지 하도록 지시 합니다.|
+|[wait_with_all_memory_fence](#wait_with_all_memory_fence)|모든 메모리 액세스가 완료 되 고 타일의 모든 스레드가이 호출에 도달할 때까지 타일에 있는 모든 스레드의 실행을 차단 합니다.|
+|[wait_with_global_memory_fence](#wait_with_global_memory_fence)|모든 전역 메모리 액세스가 완료 되 고 타일의 모든 스레드가이 호출에 도달할 때까지 타일에 있는 모든 스레드의 실행을 차단 합니다.|
+|[wait_with_tile_static_memory_fence](#wait_with_tile_static_memory_fence)|모든 `tile_static` 메모리 액세스가 완료 되 고 타일의 모든 스레드가이 호출에 도달할 때까지 타일에 있는 모든 스레드의 실행을 차단 합니다.|
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -56,9 +57,9 @@ class tile_barrier;
 
 **네임스페이스:** 동시성
 
-## <a name="tile_barrier-constructor"></a><a name="ctor"></a>tile_barrier 생성자
+## <a name="tile_barrier-constructor"></a><a name="ctor"></a> tile_barrier 생성자
 
-기존 인스턴스를 복사하여 클래스의 새 인스턴스를 초기화합니다.
+기존 항목을 복사 하 여 클래스의 새 인스턴스를 초기화 합니다.
 
 ### <a name="syntax"></a>구문
 
@@ -76,35 +77,35 @@ tile_barrier(
 
 타일에 있는 모든 스레드가 대기를 완료할 때까지 스레드 그룹(타일)에 있는 모든 스레드의 실행을 중지하도록 지시합니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void wait() const restrict(amp);
 ```
 
-## <a name="wait_with_all_memory_fence"></a><a name="wait_with_all_memory_fence"></a>wait_with_all_memory_fence
+## <a name="wait_with_all_memory_fence"></a><a name="wait_with_all_memory_fence"></a> wait_with_all_memory_fence
 
-타일의 모든 스레드가 이 호출에 도달할 때까지 타일의 모든 스레드 실행을 차단합니다. 이렇게 하면 모든 메모리 액세스가 스레드 타일의 다른 스레드에 표시되고 프로그램 순서대로 실행됩니다.
+타일의 모든 스레드가이 호출에 도달할 때까지 타일에 있는 모든 스레드의 실행을 차단 합니다. 이렇게 하면 모든 메모리 액세스가 스레드 타일의 다른 스레드에 표시 되 고 프로그램 순서로 실행 됩니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void wait_with_all_memory_fence() const restrict(amp);
 ```
 
-## <a name="a-namewait_with_global_memory_fence-wait_with_global_memory_fence"></a><a name="wait_with_global_memory_fence">wait_with_global_memory_fence
+## <a name="a-namewait_with_global_memory_fence-wait_with_global_memory_fence"></a><a name="wait_with_global_memory_fence"> wait_with_global_memory_fence
 
-타일의 모든 스레드가 이 호출에 도달할 때까지 타일의 모든 스레드 실행을 차단합니다. 이렇게 하면 모든 전역 메모리 액세스가 스레드 타일의 다른 스레드에 표시되고 프로그램 순서대로 실행됩니다.
+타일의 모든 스레드가이 호출에 도달할 때까지 타일에 있는 모든 스레드의 실행을 차단 합니다. 이렇게 하면 모든 전역 메모리 액세스가 스레드 타일의 다른 스레드에 표시 되 고 프로그램 순서로 실행 됩니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void wait_with_global_memory_fence() const  restrict(amp);
 ```
 
-## <a name="a-namewait_with_tile_static_memory_fence-wait_with_tile_static_memory_fence"></a><a name="wait_with_tile_static_memory_fence">wait_with_tile_static_memory_fence
+## <a name="a-namewait_with_tile_static_memory_fence-wait_with_tile_static_memory_fence"></a><a name="wait_with_tile_static_memory_fence"> wait_with_tile_static_memory_fence
 
-타일의 모든 스레드가 이 호출에 도달할 때까지 타일의 모든 스레드 실행을 차단합니다. 이렇게 하면 `tile_static` 메모리 액세스가 스레드 타일의 다른 스레드에 표시되고 프로그램 순서대로 실행됩니다.
+타일의 모든 스레드가이 호출에 도달할 때까지 타일에 있는 모든 스레드의 실행을 차단 합니다. 이렇게 하면 `tile_static` 메모리 액세스가 스레드 타일의 다른 스레드에 표시 되 고 프로그램 순서로 실행 됩니다.
 
 ### <a name="syntax"></a>구문
 
@@ -114,4 +115,4 @@ void wait_with_tile_static_memory_fence() const restrict(amp);
 
 ## <a name="see-also"></a>참고 항목
 
-[동시성 네임스페이스(C++ AMP)](concurrency-namespace-cpp-amp.md)
+[동시성 네임 스페이스 (C++ AMP)](concurrency-namespace-cpp-amp.md)

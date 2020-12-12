@@ -1,4 +1,5 @@
 ---
+description: Invalid_argument 클래스에 대해 자세히 알아보세요.
 title: invalid_argument 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - invalid_argument class
 ms.assetid: af6c227d-ad7c-4e63-9dee-67af81d83506
-ms.openlocfilehash: 4fb15785cbff18daa1bfa9a1198a64d018383764
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 58eee3a5e56932bcd045a7e66e59e105b8921813
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87521202"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323945"
 ---
 # <a name="invalid_argument-class"></a>invalid_argument 클래스
 
@@ -67,7 +68,7 @@ Type class std::invalid_argument
 
 **네임스페이스:** std
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [logic_error 클래스](../standard-library/logic-error-class.md)\
 [C + + 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

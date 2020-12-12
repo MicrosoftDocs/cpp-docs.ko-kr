@@ -1,4 +1,5 @@
 ---
+description: Bad_exception 클래스에 대해 자세히 알아보세요.
 title: bad_exception 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - bad_exception class
 ms.assetid: 5ae2c4ef-c7ad-4469-8a9e-a773e86bb000
-ms.openlocfilehash: 1795a44d2d31cfbad964b41ef03e4bf65b401352
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 6b47facc751e1f16e033f26be284db1287e79ea8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68246203"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321614"
 ---
-# <a name="badexception-class"></a>bad_exception 클래스
+# <a name="bad_exception-class"></a>bad_exception 클래스
 
 이 클래스는 예기치 않은 처리기에서 throw할 수 있는 예외를 설명합니다.
 
@@ -32,7 +33,7 @@ const char* what() const override;
 
 [unexpected](../standard-library/exception-functions.md#unexpected)는 함수의 throw 목록에 `bad_exception`이 포함된 경우 [set_unexpected](../standard-library/exception-functions.md#set_unexpected)로 지정된 또 다른 함수를 종료하거나 호출하는 대신 `bad_exception`을 throw합니다.
 
-반환한 값 `what` 은 구현 시 정의 된 C 문자열입니다. 멤버 함수는 예외를 발생시키지 않습니다.
+에서 반환 하는 값은 `what` 구현 시 정의 된 C 문자열입니다. 멤버 함수는 예외를 발생시키지 않습니다.
 
 `bad_exception` 클래스에 의해 상속된 멤버 목록은 [exception 클래스](../standard-library/exception-class.md)를 참조하세요.
 

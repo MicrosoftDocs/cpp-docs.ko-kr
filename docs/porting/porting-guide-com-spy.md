@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: 포팅 가이드: COM Spy'
 title: '포팅 가이드: COM Spy'
 ms.date: 11/04/2016
 ms.assetid: 24aa0d52-4014-4acb-8052-f4e2e4bbc3bb
-ms.openlocfilehash: c21049a2faa8bb34ecd1ba75a5beda1db119f0fc
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 69a97a04d255e64fdde0d863e637d72dfb238967
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230287"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322637"
 ---
 # <a name="porting-guide-com-spy"></a>포팅 가이드: COM Spy
 
@@ -76,7 +77,7 @@ error MSB3073: The command "regsvr32 /s /c "C:\Users\username\Desktop\spy\spy\Co
 warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
 ```
 
-`/SAFESEH` 컴파일러 옵션은 디버그 모드에서 유용하지 않습니다. 디버그 모드에서는 `/EDITANDCONTINUE`가 유용하므로 여기서 해결 방법은 **디버그** 구성에 대해서만 `/SAFESEH`를 사용하지 않도록 설정하는 것입니다. 속성 대화 상자에서 이 작업을 수행하려면 이 오류를 생성하는 프로젝트에 대한 속성 대화 상자를 열고, 먼저 **구성**을 **디버그**(실제로는 **디버그 유니코드**)로 설정한 다음, **링커 고급** 섹션에서 **이미지에 안전한 예외 처리기가 있음** 속성을 **아니요**(`/SAFESEH:NO`)로 다시 설정합니다.
+`/SAFESEH` 컴파일러 옵션은 디버그 모드에서 유용하지 않습니다. 디버그 모드에서는 `/EDITANDCONTINUE`가 유용하므로 여기서 해결 방법은 **디버그** 구성에 대해서만 `/SAFESEH`를 사용하지 않도록 설정하는 것입니다. 속성 대화 상자에서 이 작업을 수행하려면 이 오류를 생성하는 프로젝트에 대한 속성 대화 상자를 열고, 먼저 **구성** 을 **디버그**(실제로는 **디버그 유니코드**)로 설정한 다음, **링커 고급** 섹션에서 **이미지에 안전한 예외 처리기가 있음** 속성을 **아니요**(`/SAFESEH:NO`)로 다시 설정합니다.
 
 컴파일러에서 `PROP_ENTRY_EX`가 사용되지 않는다고 경고합니다. 보안되지 않으므로 `PROP_ENTRY_TYPE_EX`를 대신 사용하는 것이 좋습니다.
 
@@ -124,7 +125,7 @@ for (i=0;i<static_cast<UINT>(lCount);i++)
 
 이러한 경고는 동일한 이름의 매개 변수가 있는 함수에서 변수가 선언되어 잠재적으로 코드가 모호해질 수 있는 경우입니다. 지역 변수의 이름을 변경하여 이 문제를 해결했습니다.
 
-### <a name="step-3-testing-and-debugging"></a>3단계: 테스트 및 디버깅
+### <a name="step-3-testing-and-debugging"></a>3단계. 테스트 및 디버깅
 
 먼저 다양한 메뉴 및 명령을 실행한 후 애플리케이션을 닫아 앱을 테스트했습니다. 발견된 문제는 앱을 닫을 때 발생하는 디버그 어설션뿐이었습니다. 이 문제는 애플리케이션의 기본 COM 구성 요소인 `CSpyCon` 개체의 기본 클래스인 `CWindowImpl`의 소멸자에서 나타났습니다. atlwin.h의 다음 코드에서 어설션 오류가 발생했습니다.
 
@@ -143,7 +144,7 @@ virtual ~CWindowImplRoot()
 
 `hWnd`는 일반적으로 `WindowProc` 함수에서 0으로 설정되지만 창을 닫는 Windows 메시지(WM_SYSCOMMAND)에 대해 기본 `WindowProc` 대신 사용자 지정 처리기가 호출되었기 때문에 0으로 설정되지 않았습니다. 사용자 지정 처리기에서 `hWnd`를 0으로 설정하지 않았습니다. MFC의 `CWnd` 클래스에서 유사한 코드를 살펴보면 창을 삭제할 때 `OnNcDestroy`가 호출되고, MFC의 설명서에서 `CWnd::OnNcDestroy`를 재정의할 때 창에서 창 핸들을 분리하는 작업, 즉 `hWnd`를 0으로 설정하는 작업을 포함하여 올바른 정리 작업이 수행되도록 기본 `NcDestroy`를 호출해야 한다고 조언합니다. 동일한 어설션 코드가 이전 버전의 atlwin.h에 있었기 때문에 원래 버전의 샘플에서도 이 어설션이 트리거되었을 수 있습니다.
 
-앱의 기능을 테스트하기 위해 ATL 프로젝트 템플릿을 사용하여 **서비스 구성 요소**를 만들고 ATL 프로젝트 마법사에서 COM+ 지원을 추가하도록 선택했습니다. 이전에 서비스 구성 요소를 사용 하지 않은 경우에는이를 만들고 다른 앱이 사용할 수 있도록 시스템 또는 네트워크에서 등록 하 고 사용할 수 있는 것은 어려울 수 있습니다. COM Spy 앱은 진단 보조 기능으로 서비스 구성 요소의 활동을 모니터링하도록 설계되었습니다.
+앱의 기능을 테스트하기 위해 ATL 프로젝트 템플릿을 사용하여 **서비스 구성 요소** 를 만들고 ATL 프로젝트 마법사에서 COM+ 지원을 추가하도록 선택했습니다. 이전에 서비스 구성 요소를 사용 하지 않은 경우에는이를 만들고 다른 앱이 사용할 수 있도록 시스템 또는 네트워크에서 등록 하 고 사용할 수 있는 것은 어려울 수 있습니다. COM Spy 앱은 진단 보조 기능으로 서비스 구성 요소의 활동을 모니터링하도록 설계되었습니다.
 
 그런 다음, 클래스를 추가하고, ATL 개체를 선택하고, `Dog`라는 개체 이름을 지정했습니다. 그런 다음 dog.h 및 dog.cpp에서 구현을 추가했습니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2138'
 title: 컴파일러 오류 C2138
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2138
 ms.assetid: 59fd1a58-3605-45dd-b9c1-0981e8aab26d
-ms.openlocfilehash: 242bbf8386025a1c608fa07b33c66f4a3368acd3
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d9ef82ff85529b25a0378b9aab9a523cb24338f6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80207261"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323092"
 ---
 # <a name="compiler-error-c2138"></a>컴파일러 오류 C2138
 

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: &lt; 실행&gt;'
 title: '&lt;문제점&gt;'
 ms.date: 04/18/2019
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 - std::<execution>
 helpviewer_keywords:
 - execution header
-ms.openlocfilehash: f37458fdc0b58968e095a7c59de797eac295bde7
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: ea444ab2f4fcf3211e85837701a8ea6a0c3ec81f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835938"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324411"
 ---
 # <a name="ltexecutiongt"></a>&lt;문제점&gt;
 
 병렬 알고리즘에 대 한 실행 정책에 대해 설명 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 namespace std {

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: fegetround, fesetround'
 title: fegetround, fesetround
 ms.date: 04/05/2018
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - fegetround function
 - fesetround function
 ms.assetid: 596af00b-be2f-4f57-b2f5-460485f9ff0b
-ms.openlocfilehash: b210dbce3104820f667d4ad0b4421277567b279f
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: f3c112efc1c380ac4ce4495f4365e2a47a1d8fd2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70941205"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322552"
 ---
 # <a name="fegetround-fesetround"></a>fegetround, fesetround
 
@@ -63,9 +64,9 @@ int fesetround(
 
 ## <a name="remarks"></a>설명
 
-부동 소수점 연산에는 몇 가지 반올림 모드 중 하나를 사용할 수 있습니다. 이러한 모드에 따라 결과가 저장될 때 부동 소수점 연산의 결과가 반올림되는 방향이 제어됩니다. 다음은 \<fenv.h>에 정의된 부동 소수점 반올림 매크로의 이름 및 동작입니다.
+부동 소수점 연산에는 몇 가지 반올림 모드 중 하나를 사용할 수 있습니다. 이러한 모드에 따라 결과가 저장될 때 부동 소수점 연산의 결과가 반올림되는 방향이 제어됩니다. 다음은에 정의 된 부동 소수점 반올림 매크로의 이름 및 동작입니다 \<fenv.h> .
 
-|매크로|Description|
+|매크로|설명|
 |-----------|-----------------|
 |FE_DOWNWARD|음의 무한대로 반올림합니다.|
 |FE_TONEAREST|가장 가까운 값으로 반올림합니다.|
@@ -80,29 +81,29 @@ FE_TONEAREST의 기본 동작은 표현 가능한 값의 중간 결과를 짝수
 
 - 상수 식 외부의 부동 소수점 산술 연산자 결과
 
-- **Rint** 및 **nearbyint**와 같은 라이브러리 반올림 함수입니다.
+- **Rint** 및 **nearbyint** 와 같은 라이브러리 반올림 함수입니다.
 
 - 표준 라이브러리 수학 함수의 값을 반환합니다.
 
 현재 반올림 모드는 다음 작업에 영향을 주지 않습니다.
 
-- **Trunc**, **ceil**, **floor**및 **lround** 라이브러리 함수
+- **Trunc**, **ceil**, **floor** 및 **lround** 라이브러리 함수
 
 - 항상 0으로 반올림되는 부동 소수점-정수 암시적 캐스팅 및 변환
 
 - 항상 가장 가까운 값으로 반올림되는 상수 식의 부동 소수점 산술 연산자 결과
 
-이러한 함수를 사용하려면 호출 전에 `#pragma fenv_access(on)` 지시문을 사용하여 액세스를 방지할 수 있는 부동 소수점 최적화를 꺼야 합니다. 자세한 내용은 [fenv_access](../../preprocessor/fenv-access.md)를 참조하세요.
+이러한 함수를 사용하려면 호출 전에 `#pragma fenv_access(on)` 지시문을 사용하여 액세스를 방지할 수 있는 부동 소수점 최적화를 꺼야 합니다. 자세한 내용은 [fenv_access](../../preprocessor/fenv-access.md)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|C 헤더|C++ 헤더|
+|함수|C 헤더|C++ 헤더|
 |--------------|--------------|------------------|
 |**fegetround**, **fesetround**|\<fenv.h>|\<cfenv>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [사전순 함수 참조](crt-alphabetical-function-reference.md)<br/>
 [nearbyint, nearbyintf, nearbyintl](nearbyint-nearbyintf-nearbyintl1.md)<br/>

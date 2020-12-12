@@ -1,16 +1,17 @@
 ---
+description: '다음에 대 한 자세한 정보: _DEBUG'
 title: _DEBUG
 ms.date: 11/04/2016
 helpviewer_keywords:
 - DEBUG macro
 - _DEBUG macro
 ms.assetid: a9901568-4846-4731-a404-399d947e2e7a
-ms.openlocfilehash: 7b2599637d13641554b1410aacf0f0c43b89e979
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 5882fa0e768ee3d3ea7e9f251ea05aa8ae174e1f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79443393"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321273"
 ---
 # <a name="_debug"></a>_DEBUG
 
@@ -20,4 +21,4 @@ ms.locfileid: "79443393"
 
 ## <a name="see-also"></a>참고 항목
 
-[제어 플래그](../c-runtime-library/control-flags.md)
+[컨트롤 플래그](../c-runtime-library/control-flags.md)

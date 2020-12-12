@@ -1,4 +1,5 @@
 ---
+description: Front_insert_iterator 클래스에 대해 자세히 알아보세요.
 title: front_insert_iterator 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - std::front_insert_iterator [C++], container_type
 - std::front_insert_iterator [C++], reference
 ms.assetid: a9a9c075-136a-4419-928b-c4871afa033c
-ms.openlocfilehash: 8f60b2e5e21b559edb630be2aee377341d4480f6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 79690f51ce108357a6131c6ab811cee23c6c4529
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87203275"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324280"
 ---
 # <a name="front_insert_iterator-class"></a>front_insert_iterator 클래스
 
@@ -39,7 +40,7 @@ class front_insert_iterator;
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[front_insert_iterator](#front_insert_iterator)|지정된 컨테이너 개체 앞에 요소를 삽입할 수 있는 반복기를 만듭니다.|
 
@@ -52,7 +53,7 @@ class front_insert_iterator;
 
 ### <a name="operators"></a>연산자
 
-|연산자|Description|
+|연산자|설명|
 |-|-|
 |[연산자](#op_star)|전면 삽입을 위해 출력 반복기 식을 구현 하는 데 사용 되는 역참조 연산자 \* `i`  =  `x` 입니다.|
 |[operator + +](#op_add_add)|값을 저장할 다음 위치에 `front_insert_iterator`를 증가시킵니다.|
@@ -60,11 +61,11 @@ class front_insert_iterator;
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더**:\<iterator>
+**헤더**: \<iterator>
 
 **네임스페이스:** std
 
-## <a name="front_insert_iteratorcontainer_type"></a><a name="container_type"></a>front_insert_iterator:: container_type
+## <a name="front_insert_iteratorcontainer_type"></a><a name="container_type"></a> front_insert_iterator:: container_type
 
 전면 삽입 대상인 컨테이너를 나타내는 형식입니다.
 
@@ -74,7 +75,7 @@ typedef Container container_type;
 
 ### <a name="remarks"></a>설명
 
-이 형식은 템플릿 매개 변수 *Container*의 동의어입니다.
+이 형식은 템플릿 매개 변수 *Container* 의 동의어입니다.
 
 ### <a name="example"></a>예제
 
@@ -106,7 +107,7 @@ The list L2 is: ( 40 10 20 ).
 */
 ```
 
-## <a name="front_insert_iteratorfront_insert_iterator"></a><a name="front_insert_iterator"></a>front_insert_iterator:: front_insert_iterator
+## <a name="front_insert_iteratorfront_insert_iterator"></a><a name="front_insert_iterator"></a> front_insert_iterator:: front_insert_iterator
 
 지정된 컨테이너 개체 앞에 요소를 삽입할 수 있는 반복기를 만듭니다.
 
@@ -119,7 +120,7 @@ explicit front_insert_iterator(Container& _Cont);
 *_Cont*\
 `front_insert_iterator`에서 요소를 삽입할 대상 컨테이너 개체입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 매개 변수 컨테이너 개체에 대한 `front_insert_iterator`입니다.
 
@@ -169,7 +170,7 @@ After the front insertions, the list L is:
 */
 ```
 
-## <a name="front_insert_iteratoroperator"></a><a name="op_star"></a>front_insert_iterator:: operator\*
+## <a name="front_insert_iteratoroperator"></a><a name="op_star"></a> front_insert_iterator:: operator\*
 
 주소가 지정된 요소를 반환하는 삽입 반복기를 역참조합니다.
 
@@ -177,13 +178,13 @@ After the front insertions, the list L is:
 front_insert_iterator<Container>& operator*();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 멤버 함수는 주소가 지정된 요소의 값을 반환합니다.
 
 ### <a name="remarks"></a>설명
 
-출력 반복기 식 ** \* Iter**value를 구현 하는 데 사용  =  **value**됩니다. `Iter`가 시퀀스의 요소에 주소를 지정한 반복기 인 경우 ** \* Iter**  =  **value** 는 해당 요소를 value로 바꾸고 시퀀스의 총 요소 수를 변경 하지 않습니다.
+출력 반복기 식 **\* Iter** value를 구현 하는 데 사용  =  됩니다. `Iter`가 시퀀스의 요소에 주소를 지정한 반복기 인 경우 **\* Iter**  =  **value** 는 해당 요소를 value로 바꾸고 시퀀스의 총 요소 수를 변경 하지 않습니다.
 
 ### <a name="example"></a>예제
 
@@ -230,7 +231,7 @@ After the front insertions, the list L is:
 */
 ```
 
-## <a name="front_insert_iteratoroperator"></a><a name="op_add_add"></a>front_insert_iterator:: operator + +
+## <a name="front_insert_iteratoroperator"></a><a name="op_add_add"></a> front_insert_iterator:: operator + +
 
 값을 저장할 다음 위치에 `back_insert_iterator`를 증가시킵니다.
 
@@ -240,7 +241,7 @@ front_insert_iterator<Container>& operator++();
 front_insert_iterator<Container> operator++(int);
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 값을 저장할 수 있는 다음 위치의 주소를 지정하는 `front_insert_iterator`입니다.
 
@@ -281,7 +282,7 @@ The list L1 is: ( 30 20 10 ).
 */
 ```
 
-## <a name="front_insert_iteratoroperator"></a><a name="op_eq"></a>front_insert_iterator:: operator =
+## <a name="front_insert_iteratoroperator"></a><a name="op_eq"></a> front_insert_iterator:: operator =
 
 컨테이너의 앞에 값을 추가(푸시)합니다.
 
@@ -296,7 +297,7 @@ front_insert_iterator<Container>& operator=(typename Container::value_type&& val
 *짧은*\
 컨테이너에 할당할 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 컨테이너의 앞에 삽입된 마지막 요소에 대한 참조입니다.
 
@@ -343,7 +344,7 @@ The list L1 is: ( 30 20 10 ).
 */
 ```
 
-## <a name="front_insert_iteratorreference"></a><a name="reference"></a>front_insert_iterator:: reference
+## <a name="front_insert_iteratorreference"></a><a name="reference"></a> front_insert_iterator:: reference
 
 연관 컨테이너에서 제어하는 시퀀스의 요소에 대한 참조를 제공하는 형식입니다.
 

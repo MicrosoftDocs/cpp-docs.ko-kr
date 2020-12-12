@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3149'
 title: 컴파일러 오류 C3149
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3149
 ms.assetid: cf6e2616-2f06-46da-8a8a-d449cb481c51
-ms.openlocfilehash: 263eb03b7a9f45458f8d8b586adc6f1cfc5805be
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 596a8d2728e7598a737da4aa5a1650df669db969
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74745982"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322092"
 ---
 # <a name="compiler-error-c3149"></a>컴파일러 오류 C3149
 

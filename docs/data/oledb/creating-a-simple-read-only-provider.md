@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 간단한 Read-Only 공급자 만들기'
 title: 단순한 읽기 전용 공급자 만들기
 ms.date: 05/09/2019
 helpviewer_keywords:
 - OLE DB providers, creating
 - OLE DB provider templates, creating providers
 ms.assetid: ade8ccdd-9ea4-4e46-a964-18460c2a2401
-ms.openlocfilehash: c7c6c5bb2691a110a6368decd875f5a5a06b11b5
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 1904e850bc6a681e13e4799a2822963932ad9dfc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92919191"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323222"
 ---
 # <a name="creating-a-simple-read-only-provider"></a>단순한 읽기 전용 공급자 만들기
 

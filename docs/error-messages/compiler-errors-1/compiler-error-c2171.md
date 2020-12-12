@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2171'
 title: 컴파일러 오류 C2171
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2171
 ms.assetid: a80343b5-ab3f-4413-b6f1-3ce9d7e519e5
-ms.openlocfilehash: da9e24b6b5857ca61a7eefc00a5ae455c59e8e44
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 8e2749d3af9a7fafa38b1f1bdcb99874e45f4531
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90743401"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322237"
 ---
 # <a name="compiler-error-c2171"></a>컴파일러 오류 C2171
 

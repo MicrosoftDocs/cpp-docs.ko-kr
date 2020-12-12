@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: &lt; 파일 시스템 &gt; 열거형'
 title: '&lt;filesystem&gt; 열거형'
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ f1_keywords:
 - filesystem/std::filesystem::perms
 - filesystem/std::experimental::filesystem::perms
 ms.assetid: 0096c046-d101-464c-8259-b878a48280b0
-ms.openlocfilehash: 3c94ec899f0ea7abf71530f6aca44638fdb216c9
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 8d8320dd18f017f97442e2b88dff2775d96d3d44
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041941"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324336"
 ---
 # <a name="ltfilesystemgt-enumerations"></a>&lt;filesystem&gt; 열거형
 
@@ -32,7 +33,7 @@ ms.locfileid: "90041941"
 
 동작을 지정하기 위해 [copy](filesystem-functions.md#copy) 및 [copy_file](filesystem-functions.md#copy_file) 함수와 함께 사용되는 비트 마스크 값의 열거형입니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 enum class copy_options {
@@ -51,7 +52,7 @@ enum class copy_options {
 
 ### <a name="values"></a>값
 
-| Name | Description |
+| 이름 | 설명 |
 |------------|-----------------|
 |`none`|작업의 기본 동작을 수행합니다.|
 |`skip_existing`|파일이 이미 있는 경우 복사하지 않고 오류를 보고하지 않습니다.|
@@ -68,7 +69,7 @@ enum class copy_options {
 
 디렉터리에 대한 기호화된 링크를 따를지, 아니면 무시할지 지정합니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 enum class directory_options {
@@ -79,7 +80,7 @@ enum class directory_options {
 
 ### <a name="values"></a>값
 
-|Name|Description|
+|이름|설명|
 |----------|-----------------|
 |`none`|기본 동작: 디렉터리에 대한 기호 링크를 무시합니다. 사용 권한이 거부됨은 오류입니다.|
 |`follow_directory_symlink`|디렉터리에 대한 기호화된 링크를 실제 디렉터리로 처리합니다.|
@@ -88,7 +89,7 @@ enum class directory_options {
 
 파일 형식에 대한 열거형입니다. 지원 되는 값은 regular, directory, not_found 및 unknown입니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 enum class file_type {
@@ -107,7 +108,7 @@ enum class file_type {
 
 ### <a name="values"></a>값
 
-|Name|값|Description|
+|이름|값|설명|
 |----------|-----------|-----------------|
 |`not_found`|-1|존재하지 않는 파일을 나타냅니다.|
 |`none`|0|형식 특성이 없는 파일을 나타냅니다. (지원 안 됨)|

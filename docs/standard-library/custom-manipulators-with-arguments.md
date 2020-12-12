@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 인수를 사용 하는 사용자 지정 조작자'
 title: 인수 포함 사용자 지정 조작자
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - streams, custom stream manipulators
 - output streams, custom stream manipulators
 ms.assetid: fa4655a7-d68f-4fea-a26e-73c3ad5c90a5
-ms.openlocfilehash: c688ab752415309c0c3d29c6ab93c27babc65f80
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 95adfe49851f69d95c4d6607ddff4724820458a9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222500"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324642"
 ---
 # <a name="custom-manipulators-with-arguments"></a>인수 포함 사용자 지정 조작자
 
@@ -21,7 +22,7 @@ ms.locfileid: "87222500"
 
 [단일 인수 (또는)를 사용 하는 출력 스트림 조작자](../standard-library/output-stream-manipulators-with-one-argument-int-or-long.md) **`int`** **`long`**
 
-[다른 단일 인수 출력 스트림 조작자](../standard-library/other-one-argument-output-stream-manipulators.md)
+[기타 One-Argument 출력 스트림 조작자](../standard-library/other-one-argument-output-stream-manipulators.md)
 
 ## <a name="see-also"></a>참고 항목
 

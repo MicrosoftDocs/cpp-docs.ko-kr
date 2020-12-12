@@ -1,16 +1,17 @@
 ---
+description: '&lt;Hash_map 연산자에 대 한 자세한 정보 &gt;'
 title: '&lt;hash_map&gt; 연산자'
 ms.date: 11/04/2016
 f1_keywords:
 - hash_map/std::operator!=
 - hash_map/std::operator==
 ms.assetid: 24b9bb9e-e983-4060-bce5-2c7c8161ee61
-ms.openlocfilehash: b0884cacb11299f96d539c8c83a1fc9fa2840d16
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f3374ee86a989a90add86e85d6a9bf15959e26b4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844394"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324124"
 ---
 # <a name="lthash_mapgt-operators"></a>&lt;hash_map&gt; 연산자
 

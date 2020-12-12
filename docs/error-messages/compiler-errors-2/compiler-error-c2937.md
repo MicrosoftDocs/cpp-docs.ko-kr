@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2937'
 title: 컴파일러 오류 C2937
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2937
 ms.assetid: 95671ca3-79f7-4b56-a5f2-a92296da1629
-ms.openlocfilehash: 615b4fbb639249179d34f0d92b4891aadc0ff3a8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: af73e4564293fdcd5b69cc2f1890cb3e5364c618
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233407"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323053"
 ---
 # <a name="compiler-error-c2937"></a>컴파일러 오류 C2937
 

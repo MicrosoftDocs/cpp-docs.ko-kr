@@ -1,4 +1,5 @@
 ---
+description: Error_code 클래스에 대해 자세히 알아보세요.
 title: error_code 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - std::error_code::default_error_condition
 - std::error_code::message
 ms.assetid: c09b4a96-cb14-4281-a319-63543f9b2b4a
-ms.openlocfilehash: 5bbd67d2967a1a6d070ece54ea464a2a5a2deac9
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 0fb084a7d33cc6c1b7d0d4a821a770e0e49a923e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844459"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324425"
 ---
 # <a name="error_code-class"></a>error_code 클래스
 
@@ -44,29 +45,29 @@ class error_code;
 
 ### <a name="constructors"></a>생성자
 
-|속성|Description|
+|속성|설명|
 |-|-|
 |[error_code](#error_code)|`error_code` 형식의 개체를 생성합니다.|
 
 ### <a name="typedefs"></a>Typedefs
 
-|이름|Description|
+|Name|설명|
 |-|-|
 |[value_type](#value_type)|저장된 오류 코드 값을 나타내는 형식입니다.|
 
-### <a name="functions"></a>Functions
+### <a name="functions"></a>함수
 
-|이름|Description|
+|Name|설명|
 |-|-|
 |[assign](#assign)|오류 코드 값과 범주를 오류 코드에 할당합니다.|
 |[category](#category)|오류 범주를 반환합니다.|
-|[해제](#clear)|오류 코드 값과 범주를 지웁니다.|
+|[clear](#clear)|오류 코드 값과 범주를 지웁니다.|
 |[default_error_condition](#default_error_condition)|기본 오류 조건을 반환합니다.|
 |[message](#message)|오류 코드의 이름을 반환합니다.|
 
 ### <a name="operators"></a>연산자
 
-|이름|Description|
+|Name|설명|
 |-|-|
 |[연산자 = =](#op_eq_eq)|`error_code` 개체가 같은지 테스트합니다.|
 |[연산자! =](#op_neq)|`error_code` 개체가 같지 않은지 테스트합니다.|
@@ -92,7 +93,7 @@ void assign(value_type val, const error_category& _Cat);
 
 #### <a name="remarks"></a>설명
 
-멤버 함수는 *val* 을 오류 코드 값으로 저장 하 고 *_Cat*에 대 한 포인터를 저장 합니다.
+멤버 함수는 *val* 을 오류 코드 값으로 저장 하 고 *_Cat* 에 대 한 포인터를 저장 합니다.
 
 ### <a name="category"></a><a name="category"></a> 범주
 
@@ -218,7 +219,7 @@ bool operator!=(const error_code& right) const;
 
 #### <a name="return-value"></a>반환 값
 
-**`true`**`error_code`개체가 `error_code` *오른쪽*에 전달 된 개체와 같지 않으면이 고, 그렇지 않으면 **`false`** 입니다.
+**`true`**`error_code`개체가 `error_code` *오른쪽* 에 전달 된 개체와 같지 않으면이 고, 그렇지 않으면 **`false`** 입니다.
 
 #### <a name="remarks"></a>설명
 

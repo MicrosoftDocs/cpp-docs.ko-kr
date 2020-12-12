@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: freelist 클래스'
 title: freelist 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - stdext::freelist [C++], pop
 - stdext::freelist [C++], push
 ms.assetid: 8ad7e35c-4c80-4479-8ede-1a2497b06d71
-ms.openlocfilehash: bf88e33f5d00b9b6b90d2712a0bbabaa3e571340
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: de0803aac13138dc25116084f52e7a5bea694b41
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561208"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324365"
 ---
 # <a name="freelist-class"></a>freelist 클래스
 
@@ -38,7 +39,7 @@ class freelist : public Max
 
 ## <a name="remarks"></a>설명
 
-이 클래스 템플릿은 *max*로 전달 된 최대 클래스에 의해 결정 되는 목록의 최대 길이를 사용 하 여 *Sz* 크기의 메모리 블록 목록을 관리 합니다.
+이 클래스 템플릿은 *max* 로 전달 된 최대 클래스에 의해 결정 되는 목록의 최대 길이를 사용 하 여 *Sz* 크기의 메모리 블록 목록을 관리 합니다.
 
 ### <a name="constructors"></a>생성자
 
@@ -77,7 +78,7 @@ freelist();
 void *pop();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 목록에서 제거된 메모리 블록의 포인터를 반환합니다.
 
@@ -98,7 +99,7 @@ bool push(void* ptr);
 *ptr*\
 사용 가능 목록에 추가할 메모리 블록의 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`**`full`max 클래스의 함수가를 반환 하면 **`false`** 이 고, 그렇지 않으면 `push` 함수는을 반환 **`false`** 합니다.
 

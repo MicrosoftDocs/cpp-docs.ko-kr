@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 레코드 집합: 대량 레코드 페치 (ODBC)'
 title: '레코드 집합: 대량 레코드 페치(ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - rowsets, bulk row fetching
 - RFX (ODBC), bulk row fetching
 ms.assetid: 20d10fe9-c58a-414a-b675-cdf9aa283e4f
-ms.openlocfilehash: ccdc4668f0c19f63ec86ee9a6d788532eb4d9d38
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 6f77186a640971e6763160dde397f5aeb0b97f3a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86403714"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322353"
 ---
 # <a name="recordset-fetching-records-in-bulk-odbc"></a>레코드 집합: 대량 레코드 페치(ODBC)
 
@@ -35,7 +36,7 @@ ms.locfileid: "86403714"
 
 - [대량 레코드 필드 교환을 구현 하는 방법](#_core_how_to_implement_bulk_record_field_exchange)입니다.
 
-## <a name="how-crecordset-supports-bulk-row-fetching"></a><a name="_core_how_crecordset_supports_bulk_row_fetching"></a>CRecordset에서 대량 행 페치를 지 원하는 방법
+## <a name="how-crecordset-supports-bulk-row-fetching"></a><a name="_core_how_crecordset_supports_bulk_row_fetching"></a> CRecordset에서 대량 행 페치를 지 원하는 방법
 
 레코드 집합 개체를 열기 전에 멤버 함수를 사용 하 여 행 집합 크기를 정의할 수 있습니다 `SetRowsetSize` . 행 집합 크기는 단일 인출 중에 검색 해야 하는 레코드 수를 지정 합니다. 대량 행 페치를 구현 하는 경우 기본 행 집합 크기는 25입니다. 대량 행 페치를 구현 하지 않는 경우 행 집합 크기는 1에서 고정 된 상태로 유지 됩니다.
 
@@ -54,7 +55,7 @@ ms.locfileid: "86403714"
 |[SetRowsetCursorPosition](../../mfc/reference/crecordset-class.md#setrowsetcursorposition)|커서를 행 집합 내의 특정 행으로 이동 합니다.|
 |[SetRowsetSize](../../mfc/reference/crecordset-class.md#setrowsetsize)|행 집합 크기 설정을 지정 된 값으로 변경 하는 가상 함수입니다.|
 
-## <a name="special-considerations"></a><a name="_core_special_considerations"></a>특별 고려 사항
+## <a name="special-considerations"></a><a name="_core_special_considerations"></a> 특별 고려 사항
 
 대량 행 페치는 성능 향상 이지만 특정 기능은 다르게 작동 합니다. 대량 행 페치를 구현 하도록 결정 하기 전에 다음을 고려 하십시오.
 
@@ -62,11 +63,11 @@ ms.locfileid: "86403714"
 
 - `IsDeleted` `IsFieldDirty` `IsFieldNull` `IsFieldNullable` `SetFieldDirty` `SetFieldNull` 대량 행 페치를 구현 하는 레코드 집합에서는 멤버 함수,,,, 및를 사용할 수 없습니다. 그러나 대신 및 대신를 호출할 수 있습니다 `GetRowStatus` `IsDeleted` `GetODBCFieldInfo` `IsFieldNullable` .
 
-- 작업은 행 집합을 `Move` 기준으로 레코드 집합의 위치를 합니다. 예를 들어 초기 행 집합 크기가 10 인 100 레코드가 있는 레코드 집합을 열려고 한다고 가정 합니다. `Open`1부터 10 까지의 행을 인출 하 고 현재 레코드를 행 1에 배치 합니다. 다음 `MoveNext` 행이 아닌 다음 행 집합을 인출 하는를 호출 합니다. 이 행 집합은 행 11부터 20 까지의 행으로 구성 되며 현재 레코드는 11 행에 배치 됩니다. `MoveNext` `Move( 1 )` 대량 행 페치를 구현 하는 경우 및는 동일 하지 않습니다. `Move( 1 )`현재 레코드에서 1 개의 행이 시작 되는 행 집합을 인출 합니다. 이 예제에서를 호출한 후를 호출 하면 `Move( 1 )` `Open` 행 2에서 11 행으로 구성 된 행 집합이 인출 되 고 현재 레코드는 2 행에 배치 됩니다. 자세한 내용은 [Move](../../mfc/reference/crecordset-class.md#move) member 함수를 참조 하세요.
+- 작업은 행 집합을 `Move` 기준으로 레코드 집합의 위치를 합니다. 예를 들어 초기 행 집합 크기가 10 인 100 레코드가 있는 레코드 집합을 열려고 한다고 가정 합니다. `Open` 1부터 10 까지의 행을 인출 하 고 현재 레코드를 행 1에 배치 합니다. 다음 `MoveNext` 행이 아닌 다음 행 집합을 인출 하는를 호출 합니다. 이 행 집합은 행 11부터 20 까지의 행으로 구성 되며 현재 레코드는 11 행에 배치 됩니다. `MoveNext` `Move( 1 )` 대량 행 페치를 구현 하는 경우 및는 동일 하지 않습니다. `Move( 1 )` 현재 레코드에서 1 개의 행이 시작 되는 행 집합을 인출 합니다. 이 예제에서를 호출한 후를 호출 하면 `Move( 1 )` `Open` 행 2에서 11 행으로 구성 된 행 집합이 인출 되 고 현재 레코드는 2 행에 배치 됩니다. 자세한 내용은 [Move](../../mfc/reference/crecordset-class.md#move) member 함수를 참조 하세요.
 
-- 레코드 필드 교환과 달리 마법사는 대량 레코드 필드 교환을 지원 하지 않습니다. 즉, 수동으로 필드 데이터 멤버를 선언 하 고 `DoBulkFieldExchange` 대량 RFX 함수에 대 한 호출을 작성 하 여 수동으로 재정의 해야 합니다. 자세한 내용은 *클래스 라이브러리 참조*에서 [레코드 필드 교환 함수](../../mfc/reference/record-field-exchange-functions.md) 를 참조 하세요.
+- 레코드 필드 교환과 달리 마법사는 대량 레코드 필드 교환을 지원 하지 않습니다. 즉, 수동으로 필드 데이터 멤버를 선언 하 고 `DoBulkFieldExchange` 대량 RFX 함수에 대 한 호출을 작성 하 여 수동으로 재정의 해야 합니다. 자세한 내용은 *클래스 라이브러리 참조* 에서 [레코드 필드 교환 함수](../../mfc/reference/record-field-exchange-functions.md) 를 참조 하세요.
 
-## <a name="how-to-implement-bulk-record-field-exchange"></a><a name="_core_how_to_implement_bulk_record_field_exchange"></a>대량 레코드 필드 교환을 구현 하는 방법
+## <a name="how-to-implement-bulk-record-field-exchange"></a><a name="_core_how_to_implement_bulk_record_field_exchange"></a> 대량 레코드 필드 교환을 구현 하는 방법
 
 대량 레코드 필드 교환은 데이터 행 집합을 데이터 원본에서 레코드 집합 개체로 전송 합니다. 대량 RFX 함수는 배열을 사용 하 여이 데이터를 저장 하 고 배열을 사용 하 여 행 집합의 각 데이터 항목의 길이를 저장 합니다. 클래스 정의에서 필드 데이터 멤버를 포인터로 정의 하 여 데이터 배열에 액세스 해야 합니다. 또한 길이 배열에 액세스 하는 포인터 집합을 정의 해야 합니다. 모든 매개 변수 데이터 멤버를 포인터로 선언 하면 안 됩니다. 대량 레코드 필드 교환을 사용할 때 매개 변수 데이터 멤버를 선언 하는 것은 레코드 필드 교환을 사용할 때 선언 하는 것과 같습니다. 다음 코드에서는 간단한 예를 보여 줍니다.
 

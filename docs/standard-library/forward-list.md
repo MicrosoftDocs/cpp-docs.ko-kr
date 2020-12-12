@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: &lt; forward_list&gt;'
 title: '&lt;forward_list&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - <forward_list>
 ms.assetid: 8b4ab09e-1475-434a-b4e0-fdbc07a08b5b
-ms.openlocfilehash: 6966d8513d78b6bbe3831709f52daa04c67b4572
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: a43f07f9371c8de785fa9c2fe2aedef5f378c2b1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835742"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324309"
 ---
 # <a name="ltforward_listgt"></a>&lt;forward_list&gt;
 
@@ -39,7 +40,7 @@ ms.locfileid: "88835742"
 |[연산자>](../standard-library/forward-list-operators.md#op_gt)|연산자의 좌변에 있는 정방향 목록 개체가 우변에 있는 정방향 목록 개체보다 큰지 테스트합니다.|
 |[연산자>=](../standard-library/forward-list-operators.md#op_lt_eq)|연산자의 좌변에 있는 정방향 목록 개체가 우변에 있는 정방향 목록 개체보다 크거나 같은지 테스트합니다.|
 
-### <a name="functions"></a>Functions
+### <a name="functions"></a>함수
 
 |Name|설명|
 |-|-|

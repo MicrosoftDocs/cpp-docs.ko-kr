@@ -1,4 +1,5 @@
 ---
+description: Is_compound 클래스에 대해 자세히 알아보세요.
 title: is_compound 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - is_compound class
 - is_compound
 ms.assetid: bdad1167-cf3f-4f37-8321-62a5df159ead
-ms.openlocfilehash: ae2e3c66b3abf22bbefbcb0fcd3292f0a3dbdbe2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0bdd1b2f8c7ab827d9bed1025e30140244381c3a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215714"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323832"
 ---
 # <a name="is_compound-class"></a>is_compound 클래스
 

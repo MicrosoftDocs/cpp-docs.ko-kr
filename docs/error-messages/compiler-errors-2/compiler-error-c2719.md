@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2719'
 title: 컴파일러 오류 C2719
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2719
 ms.assetid: ea6236d3-8286-45cc-9478-c84ad3dd3c8e
-ms.openlocfilehash: a0a993069a0bd232154cf6c1b365c0828d9bede8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 61e01107d5681c4bab39b06b00293ecdbeb9fc9a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220251"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97320724"
 ---
 # <a name="compiler-error-c2719"></a>컴파일러 오류 C2719
 

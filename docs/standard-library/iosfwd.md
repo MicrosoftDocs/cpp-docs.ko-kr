@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: &lt; iosfwd&gt;'
 title: '&lt;iosfwd&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - iosfwd header
 ms.assetid: 964442eb-17f1-43ef-a0e0-c5bb77f9c187
-ms.openlocfilehash: e9999d43226cb5daf22ef70af636efd616d41d47
-ms.sourcegitcommit: 13f42c339fb7af935e3a93ac80e350d5e784c9f1
+ms.openlocfilehash: a622cf0350a59cd3cf070ed7524925f6293590dd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87470955"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323916"
 ---
 # <a name="ltiosfwdgt"></a>&lt;iosfwd&gt;
 
 Iostreams 전체에서 사용 되는 여러 클래스 템플릿에 대 한 전방 참조를 선언 합니다. 이러한 모든 클래스 템플릿은 다른 표준 헤더에 정의 됩니다. 이 헤더는 해당 정의가 아니라 해당 선언 중 하나가 필요한 경우에만 명시적으로 포함합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 #include <iosfwd>

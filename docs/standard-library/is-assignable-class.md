@@ -1,4 +1,5 @@
 ---
+description: Is_assignable 클래스에 대해 자세히 알아보세요.
 title: is_assignable 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - is_assignable
 ms.assetid: 53444287-c8be-4ad2-9487-a85c066a4f84
-ms.openlocfilehash: 2137f6bfb63e93da2c1367a21f608c113e80d196
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4165e69de99b7fdb8ae1524d1755e738c846d7c0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215727"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323862"
 ---
 # <a name="is_assignable-class"></a>is_assignable 클래스
 

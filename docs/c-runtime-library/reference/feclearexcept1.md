@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: feclearexcept'
 title: feclearexcept1
 ms.date: 04/05/2018
 api_name:
@@ -25,12 +26,12 @@ f1_keywords:
 helpviewer_keywords:
 - feclearexcept function
 ms.assetid: ef419da3-c248-4432-b53c-8e7a475d9533
-ms.openlocfilehash: 9899d7068a289e7d5f71cb42a8373869d60c3070
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 09eb34ddb781a40418152ec8cc6893074c58a617
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70941265"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322591"
 ---
 # <a name="feclearexcept"></a>feclearexcept
 
@@ -46,7 +47,7 @@ int feclearexcept(
 
 ### <a name="parameters"></a>매개 변수
 
-*excepts*<br/>
+*제외한*<br/>
 지울 예외 상태 플래그입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -55,9 +56,9 @@ int feclearexcept(
 
 ## <a name="remarks"></a>설명
 
-**Feclearexcept** 함수는 *제외한*에 의해 지정 된 부동 소수점 예외 상태 플래그를 지우도록 시도 합니다. 이 함수는 fenv.h에 정의된 다음 예외 매크로를 지원합니다.
+**Feclearexcept** 함수는 *제외한* 에 의해 지정 된 부동 소수점 예외 상태 플래그를 지우도록 시도 합니다. 이 함수는 fenv.h에 정의된 다음 예외 매크로를 지원합니다.
 
-|예외 매크로|Description|
+|예외 매크로|설명|
 |---------------------|-----------------|
 |FE_DIVBYZERO|초기 부동 소수점 작업에서 특이성 또는 극 오류가 발생했습니다. 무한대 값이 생성되었습니다.|
 |FE_INEXACT|함수가 초기 부동 소수점 작업의 저장된 결과를 강제로 반올림했습니다.|
@@ -70,13 +71,13 @@ int feclearexcept(
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|C 헤더|C++ 헤더|
+|함수|C 헤더|C++ 헤더|
 |--------------|--------------|------------------|
 |**feclearexcept**|\<fenv.h>|\<cfenv>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [사전순 함수 참조](crt-alphabetical-function-reference.md)<br/>
 [fetestexcept](fetestexcept1.md)<br/>

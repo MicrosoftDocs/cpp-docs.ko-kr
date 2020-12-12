@@ -1,4 +1,5 @@
 ---
+description: Is_bind_expression 클래스에 대해 자세히 알아보세요.
 title: is_bind_expression 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - is_bind_expression class
 ms.assetid: 0715f9e9-2239-4778-a1cf-2c21f49dfd47
-ms.openlocfilehash: 9d83ff978ccbaec5e66509ac94f22cf29bc20866
-ms.sourcegitcommit: 8414cd91297dea88c480e208c7b5301db9972f19
+ms.openlocfilehash: 1430beefd1c046b2910c562385f26d2788c88865
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77258084"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323848"
 ---
 # <a name="is_bind_expression-class"></a>is_bind_expression 클래스
 
@@ -26,9 +27,9 @@ struct is_bind_expression {
 };
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
-`value` 형식이 `Ty`를 호출하여 반환된 형식인 경우에는 상수 멤버 `bind`가 true이고, 그렇지 않으면 false입니다.
+`Ty` 형식이 `bind`를 호출하여 반환된 형식인 경우에는 상수 멤버 `value`가 true이고, 그렇지 않으면 false입니다.
 
 ## <a name="example"></a>예제
 

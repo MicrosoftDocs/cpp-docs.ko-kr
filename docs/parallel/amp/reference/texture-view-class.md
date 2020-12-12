@@ -1,4 +1,5 @@
 ---
+description: Texture_view 클래스에 대해 자세히 알아보세요.
 title: texture_view 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,16 +15,16 @@ f1_keywords:
 - AMP_GRAPHICS/Concurrency::graphics::texture_view::set
 - AMP_GRAPHICS/Concurrency::graphics::texture_view::value_type
 ms.assetid: 6ec2e289-1626-4727-9592-07981cf1d27d
-ms.openlocfilehash: 1fa21f2a5a5c1d004fc23d70b686d7e45bbcac81
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e2c96f2fbddb5d2dc39a1e2e39fe5a0af656176a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215909"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321723"
 ---
 # <a name="texture_view-class"></a>texture_view 클래스
 
-질감에 대 한 읽기 권한 및 쓰기 권한을 제공 합니다. `texture_view`는 값 형식이 **`int`** , **`unsigned int`** 또는 이며 **`float`** 기본 32 비트 bpse가 있는 질감을 읽는 데만 사용할 수 있습니다. 다른 질감 형식을 읽으려면를 사용 `texture_view<const value_type, _Rank>` 합니다.
+질감에 대 한 읽기 권한 및 쓰기 권한을 제공 합니다. `texture_view` 는 값 형식이 **`int`** , **`unsigned int`** 또는 이며 **`float`** 기본 32 비트 bpse가 있는 질감을 읽는 데만 사용할 수 있습니다. 다른 질감 형식을 읽으려면를 사용 `texture_view<const value_type, _Rank>` 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -60,30 +61,30 @@ class texture_view<const value_type, _Rank>
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
-|[texture_view 생성자](#ctor)|오버로드되었습니다. 인스턴스를 생성 `texture_view` 합니다.|
+|[texture_view 생성자](#ctor)|오버로드됨. 인스턴스를 생성 `texture_view` 합니다.|
 |[~ texture_view 소멸자](#ctor)|인스턴스를 소멸 시킵니다 `texture_view` .|
 
 ### <a name="public-methods"></a>Public 메서드
 
 |이름|설명|
 |----------|-----------------|
-|[gather_alpha](#gather_alpha)|오버로드되었습니다. 지정 된 샘플링 구성을 사용 하 여 지정 된 좌표에 질감을 샘플링 하 고 4 개의 샘플링 된 텍셀의 알파 (w) 구성 요소를 반환 합니다.|
-|[gather_blue](#gather_blue)|오버로드되었습니다. 지정 된 샘플링 구성을 사용 하 여 지정 된 좌표에 질감을 샘플링 하 고 4 개의 샘플링 된 텍셀의 파란색 (z) 구성 요소를 반환 합니다.|
-|[gather_green](#gather_green)|오버로드되었습니다. 지정 된 샘플링 구성을 사용 하 여 지정 된 좌표에 질감을 샘플링 하 고 4 개의 샘플링 된 텍셀의 녹색 (y) 구성 요소를 반환 합니다.|
-|[gather_red](#gather_red)|오버로드되었습니다. 지정 된 샘플링 구성을 사용 하 여 지정 된 좌표에 질감을 샘플링 하 고 4 개의 샘플링 된 텍셀의 빨간색 (x) 구성 요소를 반환 합니다.|
-|[get](#get)|오버로드되었습니다. 인덱스를 기준으로 요소 값을 가져옵니다.|
-|[샘플이](#sample)|오버로드되었습니다. 지정 된 샘플링 구성을 사용 하 여 지정 된 좌표와 세부 수준에서 질감을 샘플링 합니다.|
+|[gather_alpha](#gather_alpha)|오버로드됨. 지정 된 샘플링 구성을 사용 하 여 지정 된 좌표에 질감을 샘플링 하 고 4 개의 샘플링 된 텍셀의 알파 (w) 구성 요소를 반환 합니다.|
+|[gather_blue](#gather_blue)|오버로드됨. 지정 된 샘플링 구성을 사용 하 여 지정 된 좌표에 질감을 샘플링 하 고 4 개의 샘플링 된 텍셀의 파란색 (z) 구성 요소를 반환 합니다.|
+|[gather_green](#gather_green)|오버로드됨. 지정 된 샘플링 구성을 사용 하 여 지정 된 좌표에 질감을 샘플링 하 고 4 개의 샘플링 된 텍셀의 녹색 (y) 구성 요소를 반환 합니다.|
+|[gather_red](#gather_red)|오버로드됨. 지정 된 샘플링 구성을 사용 하 여 지정 된 좌표에 질감을 샘플링 하 고 4 개의 샘플링 된 텍셀의 빨간색 (x) 구성 요소를 반환 합니다.|
+|[get](#get)|오버로드됨. 인덱스를 기준으로 요소 값을 가져옵니다.|
+|[샘플이](#sample)|오버로드됨. 지정 된 샘플링 구성을 사용 하 여 지정 된 좌표와 세부 수준에서 질감을 샘플링 합니다.|
 |[set](#set)|인덱스를 기준으로 요소의 값을 설정 합니다.|
 
 ### <a name="public-operators"></a>Public 연산자
 
 |Name|설명|
 |----------|-----------------|
-|[연산자 ()](#operator_call)|오버로드되었습니다. 인덱스를 기준으로 요소 값을 가져옵니다.|
-|[연산자\[\]](#operator_at)|오버로드되었습니다. 인덱스를 기준으로 요소 값을 가져옵니다.|
-|[연산자 =](#operator_eq)|오버로드되었습니다. 대입 연산자입니다.|
+|[연산자 ()](#operator_call)|오버로드됨. 인덱스를 기준으로 요소 값을 가져옵니다.|
+|[연산자\[\]](#operator_at)|오버로드됨. 인덱스를 기준으로 요소 값을 가져옵니다.|
+|[연산자 =](#operator_eq)|오버로드됨. 대입 연산자입니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
@@ -103,7 +104,7 @@ class texture_view<const value_type, _Rank>
 
 **네임 스페이스:** concurrency:: graphics
 
-## <a name="texture_view"></a><a name="dtor"></a>~ texture_view
+## <a name="texture_view"></a><a name="dtor"></a> ~ texture_view
 
 인스턴스를 소멸 시킵니다 `texture_view` .
 
@@ -111,7 +112,7 @@ class texture_view<const value_type, _Rank>
 ~texture_view() restrict(amp, cpu);
 ```
 
-## <a name="texture_view"></a><a name="ctor"></a>texture_view
+## <a name="texture_view"></a><a name="ctor"></a> texture_view
 
 인스턴스를 생성 `texture_view` 합니다.
 
@@ -146,7 +147,7 @@ texture_view(// [7] copy constructor
 ### <a name="parameters"></a>매개 변수
 
 *_Src*<br/>
-[1, 2] `texture`쓰기 가능한을 만드는 생성자입니다 `texture_view` .
+[1, 2] `texture` 쓰기 가능한을 만드는 생성자입니다 `texture_view` .
 
 [3, 4] 쓰기 불가능 한을 만드는 생성자입니다 `texture` `texture_view` .
 
@@ -164,7 +165,7 @@ texture_view(// [7] copy constructor
 *_Mip_levels*<br/>
 를 통해 액세스할 수 있는 밉 맵 수준 수입니다 `texture_view` .
 
-## <a name="gather_red"></a><a name="gather_red"></a>gather_red
+## <a name="gather_red"></a><a name="gather_red"></a> gather_red
 
 지정 된 샘플링 구성을 사용 하 여 지정 된 좌표에 질감을 샘플링 하 고 4 개의 샘플링 된 텍셀의 빨간색 (x) 구성 요소를 반환 합니다.
 
@@ -191,11 +192,11 @@ const gather_return_type gather_red(
 *_Coord*<br/>
 샘플을 가져올 좌표입니다. 소수 좌표 값은 샘플 텍셀 사이를 보간 하는 데 사용 됩니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 샘플링 된 텍셀 값 4 개의 빨강 (x) 구성 요소를 포함 하는 차수 4 short 벡터입니다.
 
-## <a name="gather_green"></a><a name="gather_green"></a>gather_green
+## <a name="gather_green"></a><a name="gather_green"></a> gather_green
 
 지정 된 샘플링 구성을 사용 하 여 지정 된 좌표에 질감을 샘플링 하 고 4 개의 샘플링 된 텍셀의 녹색 (y) 구성 요소를 반환 합니다.
 
@@ -222,11 +223,11 @@ const gather_return_type gather_green(
 *_Coord*<br/>
 샘플을 가져올 좌표입니다. 소수 좌표 값은 샘플 텍셀 사이를 보간 하는 데 사용 됩니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 샘플링 된 4 개의 텍셀 값의 녹색 (y) 구성 요소를 포함 하는 차수 4 short 벡터입니다.
 
-## <a name="gather_blue"></a><a name="gather_blue"></a>gather_blue
+## <a name="gather_blue"></a><a name="gather_blue"></a> gather_blue
 
 지정 된 샘플링 구성을 사용 하 여 지정 된 좌표에 질감을 샘플링 하 고 4 개의 샘플링 된 텍셀의 파란색 (z) 구성 요소를 반환 합니다.
 
@@ -253,11 +254,11 @@ const gather_return_type gather_blue(
 *_Coord*<br/>
 샘플을 가져올 좌표입니다. 소수 좌표 값은 샘플 텍셀 사이를 보간 하는 데 사용 됩니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 샘플링 된 텍셀 값 4 개의 빨강 (x) 구성 요소를 포함 하는 차수 4 short 벡터입니다.
 
-## <a name="gather_alpha"></a><a name="gather_alpha"></a>gather_alpha
+## <a name="gather_alpha"></a><a name="gather_alpha"></a> gather_alpha
 
 지정 된 샘플링 구성을 사용 하 여 지정 된 좌표에 질감을 샘플링 하 고 4 개의 샘플링 된 텍셀의 알파 (w) 구성 요소를 반환 합니다.
 
@@ -284,11 +285,11 @@ const gather_return_type gather_alpha(
 *_Coord*<br/>
 샘플을 가져올 좌표입니다. 소수 좌표 값은 샘플 텍셀 사이를 보간 하는 데 사용 됩니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 샘플링 된 텍셀 값 4 개의 알파 (w) 구성 요소를 포함 하는 차수 4 short 벡터입니다.
 
-## <a name="get"></a><a name="get"></a>가져오기
+## <a name="get"></a><a name="get"></a> 가져오기
 
 지정 된 인덱스에 있는 요소의 값을 가져옵니다.
 
@@ -309,11 +310,11 @@ value_type get(
 *_Mip_level*<br/>
 값을 가져와야 하는 밉 맵 수준입니다. 기본값 0은 가장 자세한 밉 맵 수준을 나타냅니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 요소의 값입니다.
 
-## <a name="operator"></a><a name="operator_eq"></a>연산자 =
+## <a name="operator"></a><a name="operator_eq"></a> 연산자 =
 
 지정 된와 동일한 질감의 뷰를 `texture_view` 이 인스턴스에 할당 합니다 `texture_view` .
 
@@ -335,11 +336,11 @@ texture_view<const value_type, _Rank>& operator= (// [3] copy constructor
 
 [3] 쓰기 불가능 한 개체를 복사 하는 생성자 `texture_view` 입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 인스턴스에 대 한 참조 `texture_view` 입니다.
 
-## <a name="operator"></a><a name="operator_at"></a>연산자 []
+## <a name="operator"></a><a name="operator_at"></a> operator[]
 
 인덱스를 기준으로 요소 값을 반환 합니다.
 
@@ -361,11 +362,11 @@ value_type operator[] (int _I0) const restrict(amp);
 *_I0*<br/>
 1 차원 인덱스입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 로 인덱싱된 요소 값 `_Index` 입니다.
 
-## <a name="operator"></a><a name="operator_call"></a>연산자 ()
+## <a name="operator"></a><a name="operator_call"></a> 연산자 ()
 
 인덱스를 기준으로 요소 값을 반환 합니다.
 
@@ -414,11 +415,11 @@ value_type operator() (
 *_I2*<br/>
 인덱스의 가장 중요 하지 않은 구성 요소입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 로 인덱싱된 요소 값 `_Index` 입니다.
 
-## <a name="sample"></a><a name="sample"></a>샘플이
+## <a name="sample"></a><a name="sample"></a> 샘플이
 
 지정 된 샘플링 구성을 사용 하 여 지정 된 좌표와 세부 수준에서 질감을 샘플링 합니다.
 
@@ -454,11 +455,11 @@ Texture_view를 샘플링 하는 데 사용할 샘플러 구성입니다.
 *_Level_of_detail*<br/>
 값은 샘플링할 밉 맵 수준을 지정 합니다. 소수 값은 두 개의 밉 맵 수준 간을 보간 하는 데 사용 됩니다. 기본 수준의 세부 정보는 0 이며 가장 자세한 밉 수준을 나타냅니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 보간된 샘플 값입니다.
 
-## <a name="set"></a><a name="set"></a>설정
+## <a name="set"></a><a name="set"></a> 설정
 
 지정 된 인덱스에 있는 요소의 값을 지정 된 값으로 설정 합니다.
 
@@ -476,7 +477,7 @@ void set(
 *value*<br/>
 요소를 설정할 값입니다.
 
-## <a name="value_type"></a><a name="value_type"></a>value_type
+## <a name="value_type"></a><a name="value_type"></a> value_type
 
 Texture_view의 요소에 대 한 값 형식입니다.
 

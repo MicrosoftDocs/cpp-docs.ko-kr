@@ -1,4 +1,5 @@
 ---
+description: Is_empty 클래스에 대해 자세히 알아보세요.
 title: is_empty 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - is_empty class
 - is_empty
 ms.assetid: 44a6fc92-7e55-4fbe-9a24-2a0ce2dccba0
-ms.openlocfilehash: 6300107ecf9c4ea1e237a60bf18f26b6416f7fba
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 130f1919e3553bb2757a5c1e71c829586b63c8aa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68452706"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323771"
 ---
-# <a name="isempty-class"></a>is_empty 클래스
+# <a name="is_empty-class"></a>is_empty 클래스
 
 형식이 빈 클래스인지 테스트합니다.
 
@@ -72,10 +73,10 @@ is_empty<int> == false
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<type_traits>
+**헤더:**\<type_traits>
 
 **네임스페이스:** std
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [<type_traits>](../standard-library/type-traits.md)

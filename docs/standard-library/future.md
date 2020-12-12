@@ -1,15 +1,16 @@
 ---
+description: '자세히 알아보기: &lt; 미래&gt;'
 title: '&lt;future&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <future>
 ms.assetid: 2f5830fc-455d-44f9-9e3d-94ea051596a2
-ms.openlocfilehash: b5f18de772ea2221ecbd4098b94e0b4f14c0484c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 67c204f636ee9249e9c714df87a02ff6c6ff3149
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220927"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324202"
 ---
 # <a name="ltfuturegt"></a>&lt;future&gt;
 
@@ -26,15 +27,15 @@ ms.locfileid: "87220927"
 ## <a name="remarks"></a>설명
 
 > [!NOTE]
-> **/Clr**을 사용 하 여 컴파일된 코드에서이 헤더는 차단 됩니다.
+> **/Clr** 을 사용 하 여 컴파일된 코드에서이 헤더는 차단 됩니다.
 
-*비동기 공급자*는 함수 호출의 결과를 저장합니다. *비동기 반환 개체*는 함수 호출 결과를 검색하는 데 사용됩니다. *연결된 비동기 상태*를 통해 비동기 공급자와 비동기 반환 개체 하나 이상 사이에서 통신할 수 있습니다.
+*비동기 공급자* 는 함수 호출의 결과를 저장합니다. *비동기 반환 개체* 는 함수 호출 결과를 검색하는 데 사용됩니다. *연결된 비동기 상태* 를 통해 비동기 공급자와 비동기 반환 개체 하나 이상 사이에서 통신할 수 있습니다.
 
 프로그램에서는 연결된 비동기 상태 개체를 직접 만들지 않습니다. 프로그램에서는 필요할 때마다 비동기 공급자를 만들고 이를 기반으로 연결된 비동기 상태를 공급자와 공유하는 비동기 반환 개체를 만듭니다. 비동기 공급자와 비동기 반환 개체는 공유된 연결된 비동기 상태를 포함하는 개체를 관리합니다. 연결된 비동기 상태를 참조하는 마지막 개체가 해당 상태를 해제하면 연결된 비동기 상태를 포함하는 개체가 삭제됩니다.
 
 연결된 비동기 상태가 없는 비동기 공급자 또는 비동기 반환 개체는 *비어 있습니다*.
 
-연결된 비동기 상태는 해당 비동기 공급자가 반환 값을 저장했거나 예외를 저장한 경우에만 *준비*입니다.
+연결된 비동기 상태는 해당 비동기 공급자가 반환 값을 저장했거나 예외를 저장한 경우에만 *준비* 입니다.
 
 템플릿 함수와 `async` 클래스 템플릿 `promise` 및는 `packaged_task` 비동기 공급자입니다. 클래스 템플릿과 `future` `shared_future` 비동기 반환 개체에 대해 설명 합니다.
 
@@ -61,7 +62,7 @@ ms.locfileid: "87220927"
 |[is_error_code_enum 구조체](../standard-library/is-error-code-enum-structure.md)|`future_errc`가 `error_code`를 저장하는 데 적합함을 나타내는 특수화입니다.|
 |[uses_allocator 구조체](../standard-library/uses-allocator-structure.md)|항상 true인 특수화입니다.|
 
-### <a name="functions"></a>Functions
+### <a name="functions"></a>함수
 
 |Name|설명|
 |----------|-----------------|
@@ -77,7 +78,7 @@ ms.locfileid: "87220927"
 |----------|-----------------|
 |[future_errc](../standard-library/future-enums.md#future_errc)|`future_error` 클래스에서 보고한 오류에 대해 기호화된 이름을 제공합니다.|
 |[future_status](../standard-library/future-enums.md#future_status)|timed wait 함수가 반환할 수 있는 이유에 대해 기호화된 이름을 제공합니다.|
-|[시작한](../standard-library/future-enums.md#launch)|템플릿 함수 `async`에 가능한 모드를 설명하는 비트 마스크 형식을 나타냅니다.|
+|[시작](../standard-library/future-enums.md#launch)|템플릿 함수 `async`에 가능한 모드를 설명하는 비트 마스크 형식을 나타냅니다.|
 
 ## <a name="see-also"></a>참고 항목
 

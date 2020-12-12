@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: implements (c + +)'
 title: implements (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - implements attribute
 ms.assetid: 9cf0858b-cb7d-4d3c-81a6-97d87ed00d25
-ms.openlocfilehash: 946972a9a7c3041c75e82865acb35feb4a97254a
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 601d1c99a9f59af8354d98e930a3e21c45255401
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90686745"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321391"
 ---
 # <a name="implements-c"></a>implements(C++)
 
@@ -41,9 +42,9 @@ IDL coclass의 멤버가 되는 쉼표로 구분 된의 목록입니다. 단일�
 | 특성 컨텍스트 | 값 |
 |-|-|
 |**적용 대상**|**`class`**, **`struct`**|
-|**불가능**|Yes|
-|**필수 특성**|None|
-|**잘못된 특성**|None|
+|**불가능**|예|
+|**필수 특성**|없음|
+|**잘못된 특성**|없음|
 
 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
@@ -478,7 +479,7 @@ public:
 };
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [컴파일러 특성](compiler-attributes.md)<br/>
 [클래스 특성](class-attributes.md)

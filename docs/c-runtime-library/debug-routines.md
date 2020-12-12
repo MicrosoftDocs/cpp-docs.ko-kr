@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 디버그 루틴'
 title: 디버그 루틴
 ms.date: 04/10/2018
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - debug macros
 - debugging [CRT], runtime routines
 ms.assetid: cb4d2664-10f3-42f7-a516-595558075471
-ms.openlocfilehash: 59e705947856ba9fe9477e88328b1fb2344abb7c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 60857549cbbb0871da208708e9acd812444b3274
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842496"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321286"
 ---
 # <a name="debug-routines"></a>디버그 루틴
 
@@ -33,7 +34,7 @@ C 런타임 라이브러리의 디버그 버전은 디버깅 프로그램을 더
 
 이러한 루틴을 사용하려면 [_DEBUG](../c-runtime-library/debug.md) 플래그를 정의해야 합니다. 이러한 루틴은 모두 애플리케이션의 정품 빌드에서 아무 작업도 하지 않습니다. 새 디버그 루틴을 사용하는 방법에 대한 자세한 내용은 [CRT 디버깅 기술](/visualstudio/debugger/crt-debugging-techniques)을 참조하세요.
 
-| 루틴에서 반환된 값 | Windows Server Update Services와 함께 |
+| 루틴에서 반환된 값 | 기능 |
 |--|--|
 | [`_ASSERT`](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) | 식을 계산하고 결과가 FALSE인 경우 디버그 보고서를 생성합니다. |
 | [`_ASSERTE`](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) | 와 비슷하지만 **`_ASSERT`** 생성 된 보고서에 실패 한 식을 포함 합니다. |

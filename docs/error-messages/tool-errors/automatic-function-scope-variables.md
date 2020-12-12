@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 자동 (함수 범위) 변수'
 title: 자동 (함수 범위) 변수
 ms.date: 04/22/2019
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - functions [C++], scope
 - scope, declared within functions
 ms.assetid: 6e1a14c2-1fb0-4937-8628-8d963cc35ed4
-ms.openlocfilehash: ec01f280c9de314ce670cae590c9a6917e9c0f07
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 666a59ce6ebb9e8d011216f87ca45b49eabbc766
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80197881"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323014"
 ---
 # <a name="automatic-function-scope-variables"></a>자동 (함수 범위) 변수
 

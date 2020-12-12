@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: duration_values 구조체'
 title: duration_values 구조체
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 - chrono/std::chrono::duration_values::min
 - chrono/std::chrono::duration_values::zero
 ms.assetid: 7f66d2e3-1faf-47c3-b47e-08f2a87f20e8
-ms.openlocfilehash: e2c03b4540ea5f89843562d1310b71635b3bc259
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 9bf784b0976a06c6d395498084508251d9ebd4bb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368739"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324477"
 ---
 # <a name="duration_values-structure"></a>duration_values 구조체
 
@@ -29,19 +30,19 @@ struct duration_values;
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[최대](#max)|정적. `Rep` 형식 값의 상한을 지정합니다.|
-|[분](#min)|정적. `Rep` 형식 값의 하한을 지정합니다.|
-|[0](#zero)|정적. `Rep(0)`를 반환합니다.|
+|[max](#max)|정적. `Rep` 형식 값의 상한을 지정합니다.|
+|[min](#min)|정적. `Rep` 형식 값의 하한을 지정합니다.|
+|[반환](#zero)|정적. `Rep(0)`를 반환합니다.|
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<크로노>
+**헤더:**\<chrono>
 
 **네임스페이스:** std::chrono
 
-## <a name="duration_valuesmax"></a><a name="max"></a>duration_values:최대
+## <a name="duration_valuesmax"></a><a name="max"></a> duration_values:: max
 
 형식 `Ref`의 값에 대한 상한을 반환하는 정적 메서드입니다.
 
@@ -49,7 +50,7 @@ struct duration_values;
 static constexpr Rep max();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 실제로 `numeric_limits<Rep>::max()`를 반환합니다.
 
@@ -57,7 +58,7 @@ static constexpr Rep max();
 
 `Rep`가 사용자 정의 형식인 경우 반환 값은 [duration_values::zero](#zero)보다 커야 합니다.
 
-## <a name="duration_valuesmin"></a><a name="min"></a>duration_values::분
+## <a name="duration_valuesmin"></a><a name="min"></a> duration_values:: min
 
 `Ref` 형식의 값에 대한 하한값을 반환하는 정적 메서드입니다.
 
@@ -65,7 +66,7 @@ static constexpr Rep max();
 static constexpr Rep min();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 실제로 `numeric_limits<Rep>::lowest()`를 반환합니다.
 
@@ -73,7 +74,7 @@ static constexpr Rep min();
 
 `Rep`가 사용자 정의 형식인 경우 반환 값은 [duration_values:: zero](#zero)보다 작아야 합니다.
 
-## <a name="duration_valueszero"></a><a name="zero"></a>duration_values:0
+## <a name="duration_valueszero"></a><a name="zero"></a> duration_values:: 0
 
 `Rep(0)`를 반환합니다.
 
@@ -88,4 +89,4 @@ static constexpr Rep zero();
 ## <a name="see-also"></a>참고 항목
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
-[\<크로노>](../standard-library/chrono.md)
+[\<chrono>](../standard-library/chrono.md)

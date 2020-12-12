@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 접근자 사용'
 title: 접근자 사용
 ms.date: 10/24/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - OLE DB consumer templates, accessors
 - rowsets [C++], accessors
 ms.assetid: 6ce484a6-fbbe-40de-8ff9-5cddcd78d283
-ms.openlocfilehash: 5e35318fd1b5a245eaed982674d69484e34f9dac
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 66d7c7d26da0d808e533bee438fec1283a89e839
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80209341"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322313"
 ---
 # <a name="using-accessors"></a>접근자 사용
 
@@ -29,4 +30,4 @@ ms.locfileid: "80209341"
 
 ## <a name="see-also"></a>참고 항목
 
-[OLE DB 소비자 템플릿 작업](../../data/oledb/working-with-ole-db-consumer-templates.md)
+[OLE DB 소비자 템플릿 사용](../../data/oledb/working-with-ole-db-consumer-templates.md)

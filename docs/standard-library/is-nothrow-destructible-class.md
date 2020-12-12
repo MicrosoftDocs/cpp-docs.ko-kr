@@ -1,4 +1,5 @@
 ---
+description: Is_nothrow_destructible 클래스에 대해 자세히 알아보세요.
 title: is_nothrow_destructible 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - is_nothrow_destructible
 ms.assetid: 0bbd8a28-e312-4d72-bd28-aac027f974d3
-ms.openlocfilehash: 44de1f1fae1ea542aa247c0b39f04ee6bbd6308a
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 017cc6de7ce5c618fcc3f47540efd34b5fdc40a4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68455901"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323620"
 ---
-# <a name="isnothrowdestructible-class"></a>is_nothrow_destructible 클래스
+# <a name="is_nothrow_destructible-class"></a>is_nothrow_destructible 클래스
 
 형식이 소멸 가능하며 소멸자가 throw되지 않는 것으로 컴파일러에 알려져 있는지 테스트합니다.
 
@@ -35,10 +36,10 @@ struct is_nothrow_destructible;
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<type_traits>
+**헤더:**\<type_traits>
 
 **네임스페이스:** std
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [<type_traits>](../standard-library/type-traits.md)

@@ -1,4 +1,5 @@
 ---
+description: Enable_if 클래스에 대해 자세히 알아보세요.
 title: enable_if 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - enable_if class
 - enable_if
 ms.assetid: c6b8d41c-a18f-4e30-a39e-b3aa0e8fd926
-ms.openlocfilehash: 1017fc315a4440350a0190cf4b40e644cda16876
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 89bd78113a9f6ea9d94a69decccd58c7953e4a8f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230041"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324464"
 ---
 # <a name="enable_if-class"></a>enable_if 클래스
 
@@ -35,7 +36,7 @@ struct enable_if;
 
 ## <a name="remarks"></a>설명
 
-*B* 가 true 인 경우에는 `enable_if<B, T>` *T*의 동의어 인 "type" 이라는 중첩 된 typedef가 있습니다.
+*B* 가 true 인 경우에는 `enable_if<B, T>` *T* 의 동의어 인 "type" 이라는 중첩 된 typedef가 있습니다.
 
 *B* 가 false 이면에는 `enable_if<B, T>` 중첩 typedef "type"이 없습니다.
 
@@ -129,7 +130,7 @@ func(make_pair("foo", "bar"));
 
 이 예제에서 `make_pair("foo", "bar")`는 `pair<const char *, const char *>`을 반환합니다. 오버로드 확인은 사용자가 원하는 `func()`를 확인해야 합니다. `pair<A, B>`에는 `pair<X, Y>`에서 암시적으로 변환된 생성자가 있습니다.  이는 새로운 기능이 아니라 C++98에 있던 기능입니다. 그러나 C++98/03에서는 `pair<int, int>(const pair<const char *, const char *>&)`인 경우라도 암시적 변환 생성자의 서명이 항상 존재했습니다.  오버 로드 확인은로 암시적으로 변환할 수 없기 때문에 끔찍하게 전개 개의치 않고 생성자를 인스턴스화하 려는 것을 고려 하지 않습니다. `const char *` **`int`** 함수 정의가 인스턴스화되기 전에 서명만 확인 합니다.  따라서 서명은 `pair<const char *, const char *>`을 `pair<int, int>` 및 `pair<string, string>` 둘 다로 변환하기 위해 존재하므로 예제 코드가 모호합니다.
 
-C++11에서는 `enable_if`를 사용하여 `const X&`가 `A`로 암시적으로 변환 가능하고 `const Y&`가 로 암시적으로 `B`로 변환 가능한 경우**에만**`pair<A, B>(const pair<X, Y>&)`가 존재하도록 보장하여 이러한 모호성을 해결했습니다.  따라서 오버로드 확인을 통해 `pair<const char *, const char *>`을 `pair<int, int>`로 변환할 수 없는지 그리고 `pair<string, string>`을 사용하는 오버로드가 실행 가능한지 확인할 수 있습니다.
+C++11에서는 `enable_if`를 사용하여 `const X&`가 `A`로 암시적으로 변환 가능하고 `const Y&`가 로 암시적으로 `B`로 변환 가능한 경우 **에만**`pair<A, B>(const pair<X, Y>&)`가 존재하도록 보장하여 이러한 모호성을 해결했습니다.  따라서 오버로드 확인을 통해 `pair<const char *, const char *>`을 `pair<int, int>`로 변환할 수 없는지 그리고 `pair<string, string>`을 사용하는 오버로드가 실행 가능한지 확인할 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 

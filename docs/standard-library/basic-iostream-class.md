@@ -1,4 +1,5 @@
 ---
+description: Basic_iostream 클래스에 대해 자세히 알아보세요.
 title: basic_iostream 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - basic_iostream class
 ms.assetid: 294b680b-eb49-4066-8db2-6d52dac9d6e3
-ms.openlocfilehash: e2a892525afbbad6d5b42d0b836fee096a70c297
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: c9b605c5eb36a0bc725ce21e2c89617357078d40
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81376813"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321516"
 ---
 # <a name="basic_iostream-class"></a>basic_iostream 클래스
 
@@ -35,7 +36,7 @@ public:
 
 ## <a name="remarks"></a>설명
 
-클래스 템플릿은 기본 클래스 [basic_ostream,](../standard-library/basic-ostream-class.md)< `Elem` `Tr`> 및 추출을 통해 기본 클래스 [basic_istream](../standard-library/basic-istream-class.md)< `Elem`> `Tr` 삽입을 제어하는 개체에 대해 설명합니다. 두 개체는 공통 가상 [basic_ios](../standard-library/basic-ios-class.md)< `Elem`기본 `Tr` 클래스 basic_ios> 공유합니다. 또한 문자 특성이 `Tr` 클래스에 의해 결정되는 `Elem` 형식의 요소가 포함된 공통 스트림 버퍼를 관리합니다. 이 생성자는 `basic_istream`( **strbuf**) 및 `basic_ostream`( **strbuf**)을 통해 해당 기본 클래스를 초기화합니다.
+클래스 템플릿은 기본 클래스 [](../standard-library/basic-ostream-class.md) <  `Elem` `Tr` [basic_istream](../standard-library/basic-istream-class.md) <  `Elem` ,>를 통해 기본 클래스 basic_ostream,> 및 추출을 통해 삽입을 제어 하는 개체를 설명 합니다 `Tr` . 두 개체는> [basic_ios](../standard-library/basic-ios-class.md)공통 가상 기본 클래스를 공유 합니다 <  `Elem` `Tr` . 또한 문자 특성이 `Tr` 클래스에 의해 결정되는 `Elem` 형식의 요소가 포함된 공통 스트림 버퍼를 관리합니다. 이 생성자는 `basic_istream`( **strbuf**) 및 `basic_ostream`( **strbuf**)을 통해 해당 기본 클래스를 초기화합니다.
 
 ### <a name="constructors"></a>생성자
 
@@ -47,21 +48,21 @@ public:
 
 |멤버 함수|Description|
 |-|-|
-|[스왑](#swap)|제공된 `basic_iostream` 개체의 내용을 이 개체의 내용으로 교환합니다.|
+|[스왑을](#swap)|제공된 `basic_iostream` 개체의 내용을 이 개체의 내용으로 교환합니다.|
 
 ### <a name="operators"></a>연산자
 
-|연산자|Description|
+|연산자|설명|
 |-|-|
 |[연산자 =](#op_eq)|지정된 `basic_iostream` 개체의 값을 이 개체에 할당합니다. 복사본을 남기지 않는 `rvalue`와 관련된 이동 할당입니다.|
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<istream>
+**헤더:**\<istream>
 
 **네임스페이스:** std
 
-## <a name="basic_iostreambasic_iostream"></a><a name="basic_iostream"></a>basic_iostream:basic_iostream
+## <a name="basic_iostreambasic_iostream"></a><a name="basic_iostream"></a> basic_iostream:: basic_iostream
 
 `basic_iostream` 개체를 만듭니다.
 
@@ -75,7 +76,7 @@ basic_iostream();
 
 ### <a name="parameters"></a>매개 변수
 
-*스트루프 (동부)는*\
+*strbuf*\
 기존 `basic_streambuf` 개체입니다.
 
 *오른쪽*\
@@ -85,9 +86,9 @@ basic_iostream();
 
 첫 번째 생성자는 `basic_istream(strbuf)` 및 `basic_ostream(strbuf)`의 방식으로 기본 개체를 초기화합니다.
 
-두 번째 생성자는 을 호출하여 `move(right)`기본 개체를 초기화합니다.
+두 번째 생성자는를 호출 하 여 기본 개체를 초기화 합니다 `move(right)` .
 
-## <a name="basic_iostreamoperator"></a><a name="op_eq"></a>basic_iostream::연산자=
+## <a name="basic_iostreamoperator"></a><a name="op_eq"></a> basic_iostream:: operator =
 
 지정된 `basic_iostream` 개체의 값을 이 개체에 할당합니다. 복사본을 남기지 않는 rvalue와 관련된 이동 할당입니다.
 
@@ -102,9 +103,9 @@ basic_iostream& operator=(basic_iostream&& right);
 
 ### <a name="remarks"></a>설명
 
-멤버 연산자가 를 호출합니다. `swap(right)`
+멤버 연산자는를 호출 합니다 `swap(right)` .
 
-## <a name="basic_iostreamswap"></a><a name="swap"></a>basic_iostream::스왑
+## <a name="basic_iostreamswap"></a><a name="swap"></a> basic_iostream:: swap
 
 제공된 `basic_iostream` 개체의 내용을 이 개체의 내용으로 교환합니다.
 
@@ -119,10 +120,10 @@ void swap(basic_iostream& right);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 `swap(right)`을 호출합니다.
+멤버 함수는를 호출 합니다 `swap(right)` .
 
 ## <a name="see-also"></a>참고 항목
 
-[C++ 표준 라이브러리의 나사 안전](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C + + 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
 [iostream 프로그래밍](../standard-library/iostream-programming.md)\
 [iostreams 규칙](../standard-library/iostreams-conventions.md)

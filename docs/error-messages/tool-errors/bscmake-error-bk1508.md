@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: BSCMAKE 오류 BK1508'
 title: BSCMAKE 오류 BK1508
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BK1508
 ms.assetid: 03ea22b8-c7b4-4e73-8553-35b41112e066
-ms.openlocfilehash: 0195973e7d23baf2f2853bdb00bedcbc841c3549
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ef702cb31ee1a3be95b18dfea7f5f780a68b183c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80197695"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322936"
 ---
 # <a name="bscmake-error-bk1508"></a>BSCMAKE 오류 BK1508
 

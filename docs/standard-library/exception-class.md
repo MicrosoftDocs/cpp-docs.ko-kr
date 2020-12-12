@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: exception 클래스'
 title: exception 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - exception class
 ms.assetid: 4f181f67-5888-4b50-89a6-745091ffb2fe
-ms.openlocfilehash: fd3fb3c48e9501b7aaf90bca14ea98530b245ec0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a2061a2609017872145b12b4863e939788a123cf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228273"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324451"
 ---
 # <a name="exception-class"></a>exception 클래스
 

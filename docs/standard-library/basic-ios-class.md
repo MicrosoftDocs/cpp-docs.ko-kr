@@ -1,4 +1,5 @@
 ---
+description: Basic_ios 클래스에 대해 자세히 알아보세요.
 title: basic_ios 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -55,16 +56,16 @@ helpviewer_keywords:
 - std::basic_ios [C++], tie
 - std::basic_ios [C++], widen
 ms.assetid: 4fdcd8e1-62d2-4611-8a70-1e4f58434007
-ms.openlocfilehash: ab8e9e0243a298f5ef39b38b3fd345572cafa587
-ms.sourcegitcommit: 8caaf5e00aeb727741a273aecafa15de293426cf
+ms.openlocfilehash: 54b70092860002b85b2a603ad5d4dc5a611007ba
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91806564"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321549"
 ---
 # <a name="basic_ios-class"></a>basic_ios 클래스
 
-클래스 템플릿은 템플릿 매개 변수에 따라 달라 지는 입력 스트림 (클래스 템플릿 [basic_istream](../standard-library/basic-istream-class.md)의 경우) 및 출력 스트림 (클래스 템플릿 [basic_ostream](../standard-library/basic-ostream-class.md))에 공통 된 저장소 및 멤버 함수를 설명 합니다. (클래스 [ios_base](../standard-library/ios-base-class.md) 는 일반적 이며 템플릿 매개 변수에 종속 되지 않는 것을 설명 합니다.) 클래스 **basic_ios \<class Elem, class Traits> ** 의 개체는 `Elem` 문자 특성이 클래스에 의해 결정 되는 형식의 요소가 포함 된 스트림을 제어 하는 데 도움이 됩니다 `Traits` .
+클래스 템플릿은 템플릿 매개 변수에 따라 달라 지는 입력 스트림 (클래스 템플릿 [basic_istream](../standard-library/basic-istream-class.md)의 경우) 및 출력 스트림 (클래스 템플릿 [basic_ostream](../standard-library/basic-ostream-class.md))에 공통 된 저장소 및 멤버 함수를 설명 합니다. (클래스 [ios_base](../standard-library/ios-base-class.md) 는 일반적 이며 템플릿 매개 변수에 종속 되지 않는 것을 설명 합니다.) 클래스 **basic_ios \<class Elem, class Traits>** 의 개체는 `Elem` 문자 특성이 클래스에 의해 결정 되는 형식의 요소가 포함 된 스트림을 제어 하는 데 도움이 됩니다 `Traits` .
 
 ## <a name="syntax"></a>구문
 
@@ -84,11 +85,11 @@ class basic_ios : public ios_base
 
 ## <a name="remarks"></a>설명
 
-**Basic_ios \<class Elem, class Traits> ** 저장소 클래스의 개체:
+**Basic_ios \<class Elem, class Traits>** 저장소 클래스의 개체:
 
-- Basic_istream 형식의 개체에 대 한 동률 포인터 [basic_istream](../standard-library/basic-istream-class.md) **\<Elem, Traits>** 입니다.
+- Basic_istream 형식의 개체에 대 한 동률 포인터 [](../standard-library/basic-istream-class.md) **\<Elem, Traits>** 입니다.
 
-- Basic_streambuf 형식의 개체에 대 한 스트림 버퍼 포인터 [basic_streambuf](../standard-library/basic-streambuf-class.md) **\<Elem, Traits >** 입니다.
+- Basic_streambuf 형식의 개체에 대 한 스트림 버퍼 포인터 [](../standard-library/basic-streambuf-class.md) **\<Elem, Traits >** 입니다.
 
 - [서식 정보](../standard-library/ios-base-class.md)
 
@@ -116,7 +117,7 @@ class basic_ios : public ios_base
 
 |멤버 함수|Description|
 |-|-|
-|[불량](#bad)|스트림 버퍼의 무결성 손실을 나타냅니다.|
+|[올바르지](#bad)|스트림 버퍼의 무결성 손실을 나타냅니다.|
 |[clear](#clear)|오류 플래그를 모두 지웁니다.|
 |[copyfmt](#copyfmt)|스트림 간에 플래그를 복사합니다.|
 |[객체](#eof)|스트림의 끝에 도달했는지 여부를 나타냅니다.|
@@ -260,7 +261,7 @@ const basic_ios<Elem, Traits>& right);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 콜백 이벤트 **지우기 \_ 이벤트**를 보고 합니다. 그런 다음 *오른쪽* 에서 채우기 문자, 타이 포인터 및 서식 지정 ** \* 정보로 복사 합니다.** 예외 마스크를 변경 하기 전에 콜백 이벤트를 보고 합니다 `copyfmt_event` . 복사가 완료되고 **state &**[exceptions](#exceptions)가 0이 아니면, 함수는 실제로 [rdstate](#rdstate) 인수와 함께 [clear](#clear)를 호출합니다. ** \* 이**를 반환 합니다.
+멤버 함수는 콜백 이벤트 **지우기 \_ 이벤트** 를 보고 합니다. 그런 다음 *오른쪽* 에서 채우기 문자, 타이 포인터 및 서식 지정 **\* 정보로 복사 합니다.** 예외 마스크를 변경 하기 전에 콜백 이벤트를 보고 합니다 `copyfmt_event` . 복사가 완료되고 **state &**[exceptions](#exceptions)가 0이 아니면, 함수는 실제로 [rdstate](#rdstate) 인수와 함께 [clear](#clear)를 호출합니다. **\* 이** 를 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -342,7 +343,7 @@ void exceptions(io_state Newexcept);
 
 ### <a name="remarks"></a>설명
 
-첫 번째 멤버 함수는 저장된 예외 마스크를 반환합니다. 두 번째 멤버 함수는 예외 마스크에 *_Except*를 저장하고 전에 저장된 값을 반환합니다. 새 예외 마스크를 저장하면 [clear](#clear)( [rdstate](#rdstate) )와 같은 예외가 throw될 수 있습니다.
+첫 번째 멤버 함수는 저장된 예외 마스크를 반환합니다. 두 번째 멤버 함수는 예외 마스크에 *_Except* 를 저장하고 전에 저장된 값을 반환합니다. 새 예외 마스크를 저장하면 [clear](#clear)( [rdstate](#rdstate) )와 같은 예외가 throw될 수 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -538,7 +539,7 @@ void init(basic_streambuf<Elem,Traits>* _Sb, bool _Isstd = false);
 
 멤버 함수는 모든 멤버 개체에 값을 저장하므로:
 
-- [rdbuf](#rdbuf)는 *_Sb*를 반환합니다.
+- [rdbuf](#rdbuf)는 *_Sb* 를 반환합니다.
 
 - [tie](#tie)는 null 포인터를 반환합니다.
 
@@ -581,7 +582,7 @@ void move(basic_ios&& right);
 
 ### <a name="remarks"></a>설명
 
-Protected 멤버 함수 *는 오른쪽에* 있는 저장 된를 제외 하 고에 저장 된 모든 값을 오른쪽으로 이동 하 여 **`*this`** `stream buffer pointer` 의 null 포인터로 설정 합니다 *right* **`*this`** . 저장 된 `tie pointer` 가 *오른쪽*의 null 포인터로 설정 된 경우
+Protected 멤버 함수 *는 오른쪽에* 있는 저장 된를 제외 하 고에 저장 된 모든 값을 오른쪽으로 이동 하 여 **`*this`** `stream buffer pointer` 의 null 포인터로 설정 합니다  **`*this`** . 저장 된 `tie pointer` 가 *오른쪽* 의 null 포인터로 설정 된 경우
 
 ## <a name="basic_iosnarrow"></a><a name="narrow"></a> basic_ios:: 좁게
 

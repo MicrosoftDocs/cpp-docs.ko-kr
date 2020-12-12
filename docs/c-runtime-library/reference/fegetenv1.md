@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: fegetenv'
 title: fegetenv
 ms.date: 04/05/2018
 api_name:
@@ -25,12 +26,12 @@ f1_keywords:
 helpviewer_keywords:
 - fetegenv function
 ms.assetid: 68962421-6978-4b27-8e4c-ad1577830cf6
-ms.openlocfilehash: b2e3566eb96174d0f0ccd6beb401824cc052c995
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: f4d6ab3de440d2d8d7e145111339577f04699f8b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70941239"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322578"
 ---
 # <a name="fegetenv"></a>fegetenv
 
@@ -51,23 +52,23 @@ int fegetenv(
 
 ## <a name="return-value"></a>반환 값
 
-부동 소수점 환경이 *penv*에 성공적으로 저장 된 경우 0을 반환 합니다. 그렇지 않으면 0이 아닌 값을 반환합니다.
+부동 소수점 환경이 *penv* 에 성공적으로 저장 된 경우 0을 반환 합니다. 그렇지 않으면 0이 아닌 값을 반환합니다.
 
 ## <a name="remarks"></a>설명
 
-**Fegetenv** 함수는 *penv*가 가리키는 개체에 현재 부동 소수점 환경을 저장 합니다. 부동 소수점 환경은 부동 소수점 계산에 영향을 미치는 상태 플래그 및 제어 모드의 집합입니다. 여기에는 부동 소수점 예외에 대한 상태 플래그와 반올림 방향 모드가 포함됩니다.  *Penv* 가 유효한 **fenv_t** 개체를 가리키지 않으면 후속 동작이 정의 되지 않습니다.
+**Fegetenv** 함수는 *penv* 가 가리키는 개체에 현재 부동 소수점 환경을 저장 합니다. 부동 소수점 환경은 부동 소수점 계산에 영향을 미치는 상태 플래그 및 제어 모드의 집합입니다. 여기에는 부동 소수점 예외에 대한 상태 플래그와 반올림 방향 모드가 포함됩니다.  *Penv* 가 유효한 **fenv_t** 개체를 가리키지 않으면 후속 동작이 정의 되지 않습니다.
 
 이 함수를 사용하려면 호출 전에 `#pragma fenv_access(on)` 지시문을 사용하여 액세스를 방지할 수 있는 부동 소수점 최적화를 꺼야 합니다. 자세한 내용은 [fenv_access](../../preprocessor/fenv-access.md)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|C 헤더|C++ 헤더|
+|함수|C 헤더|C++ 헤더|
 |--------------|--------------|------------------|
 |**fegetenv**|\<fenv.h>|\<cfenv>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [사전순 함수 참조](crt-alphabetical-function-reference.md)<br/>
 [fesetenv](fesetenv1.md)<br/>

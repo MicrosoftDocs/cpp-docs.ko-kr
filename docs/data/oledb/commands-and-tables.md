@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 명령 및 테이블'
 title: 명령 및 테이블
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - tables [C++], OLE DB Consumer Templates
 - OLE DB consumer templates, command support
 ms.assetid: 4bd3787b-6d26-40a9-be0c-083080537c12
-ms.openlocfilehash: f65bd0f90832039d453d84ab9765781c30750318
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 767077af7b44b4727272fefc1c2af2f717baddd8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91507367"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323342"
 ---
 # <a name="commands-and-tables"></a>명령 및 테이블
 
@@ -25,7 +26,7 @@ ms.locfileid: "91507367"
 ![CCommand 및 CTable](../../data/oledb/media/vccommandstables.gif "CCommand 및 CTable")<br/>
 명령 및 테이블 클래스
 
-위의 표에서는 접근자 형식 `TAccessor` 에 나열 된 모든 접근자 형식일 수 [Accessor Types](../../data/oledb/accessors-and-rowsets.md)있습니다. `TRowset`[행 집합](../../data/oledb/accessors-and-rowsets.md)형식에 나열 된 모든 행 집합 형식일 수 있습니다. `TMultiple` 결과 유형 (단일 또는 여러 결과 집합)을 지정 합니다.
+위의 표에서는 접근자 형식 `TAccessor` 에 나열 된 모든 접근자 형식일 수 [](../../data/oledb/accessors-and-rowsets.md)있습니다. `TRowset`[행 집합](../../data/oledb/accessors-and-rowsets.md)형식에 나열 된 모든 행 집합 형식일 수 있습니다. `TMultiple` 결과 유형 (단일 또는 여러 결과 집합)을 지정 합니다.
 
 [ATL OLE DB 소비자 마법사](../../atl/reference/atl-ole-db-consumer-wizard.md) 를 사용 하 여 명령 또는 테이블 개체를 사용할지 여부를 지정할 수 있습니다.
 

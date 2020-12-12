@@ -1,4 +1,5 @@
 ---
+description: '&lt;Unordered_map 함수에 대해 자세히 알아보세요. &gt;'
 title: '&lt;unordered_map&gt; 함수'
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 ms.assetid: cf2e4115-f205-4a0e-90be-a143ffcc1f44
 helpviewer_keywords:
 - std::swap (unordered_map/multimap)
-ms.openlocfilehash: 9e572e4ba8cb4c6cb15329342a7947c35ece7270
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 2a1374935fa8116a3cb7e5447a659235acc0ebaf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844264"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321503"
 ---
 # <a name="ltunordered_mapgt-functions"></a>&lt;unordered_map&gt; 함수
 

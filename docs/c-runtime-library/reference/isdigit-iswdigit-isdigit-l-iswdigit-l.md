@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: isdigit, iswdigit, _isdigit_l, _iswdigit_l'
 title: isdigit, iswdigit, _isdigit_l, _iswdigit_l
 ms.date: 4/2/2020
 api_name:
@@ -45,12 +46,12 @@ helpviewer_keywords:
 - _ismbcdigit_l function
 - _isdigit_l function
 ms.assetid: 350b0093-843a-47b0-954e-c1776e8a3853
-ms.openlocfilehash: 70a370068ca05c430845a8eba83a73498384b067
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 3c0b2695f76a9dff1a4502e51938c428dc971fb8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917593"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321102"
 ---
 # <a name="isdigit-iswdigit-_isdigit_l-_iswdigit_l"></a>isdigit, iswdigit, _isdigit_l, _iswdigit_l
 
@@ -83,7 +84,7 @@ int _iswdigit_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 *C* 가 10 진수 문자의 특정 표현인 경우 이러한 각 루틴은 0이 아닌 값을 반환 합니다. **isdigit** 는 *c* 가 10 진수 (0-9) 인 경우 0이 아닌 값을 반환 합니다. **iswdigit** 는 *c* 가 10 진수 문자에 해당 하는 와이드 문자인 경우 0이 아닌 값을 반환 합니다. *C* 가 테스트 조건을 충족 하지 않는 경우 이러한 루틴은 각각 0을 반환 합니다.
 
@@ -113,8 +114,8 @@ int _iswdigit_l(
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [문자 분류](../../c-runtime-library/character-classification.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
+[로캘](../../c-runtime-library/locale.md)<br/>
 [is, isw 루틴](../../c-runtime-library/is-isw-routines.md)<br/>

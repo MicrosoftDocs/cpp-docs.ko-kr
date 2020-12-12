@@ -1,4 +1,5 @@
 ---
+description: Basic_fstream 클래스에 대해 자세히 알아보세요.
 title: basic_fstream 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,16 +17,16 @@ helpviewer_keywords:
 - std::basic_fstream [C++], rdbuf
 - std::basic_fstream [C++], swap
 ms.assetid: 8473817e-42a4-430b-82b8-b476c86bcf8a
-ms.openlocfilehash: a2b62b85953a5f4ec829053c8af93582eec76618
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: df8ad83696422737b5b368b39bf21c82506e8b65
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219302"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321575"
 ---
 # <a name="basic_fstream-class"></a>basic_fstream 클래스
 
-[basic_filebuf](../standard-library/basic-filebuf-class.md) <  `Elem` `Tr` `Elem` 문자 특성이 클래스에 의해 결정 되는 형식의 요소가 있는 클래스 basic_filebuf,>의 스트림 버퍼를 사용 하 여 요소 및 인코드된 개체의 삽입 및 추출을 제어 하는 개체에 대해 설명 합니다 `Tr` .
+[](../standard-library/basic-filebuf-class.md) <  `Elem` `Tr` `Elem` 문자 특성이 클래스에 의해 결정 되는 형식의 요소가 있는 클래스 basic_filebuf,>의 스트림 버퍼를 사용 하 여 요소 및 인코드된 개체의 삽입 및 추출을 제어 하는 개체에 대해 설명 합니다 `Tr` .
 
 ## <a name="syntax"></a>구문
 
@@ -85,7 +86,7 @@ Writing to a basic_fstream object...
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[basic_fstream](#basic_fstream)|`basic_fstream` 형식의 개체를 생성합니다.|
 
@@ -93,7 +94,7 @@ Writing to a basic_fstream object...
 
 |멤버 함수|Description|
 |-|-|
-|[닫습니다](#close)|파일을 닫습니다.|
+|[close](#close)|파일을 닫습니다.|
 |[is_open](#is_open)|파일이 열려 있는지 확인합니다.|
 |[열기](#open)|파일을 엽니다.|
 |[rdbuf](#rdbuf)|> [basic_filebuf](../standard-library/basic-filebuf-class.md)에 대 한 형식 포인터의 저장 된 스트림 버퍼 주소를 반환 <  `Elem` `Tr` 합니다.|
@@ -105,7 +106,7 @@ Writing to a basic_fstream object...
 
 **네임스페이스:** std
 
-## <a name="basic_fstreambasic_fstream"></a><a name="basic_fstream"></a>basic_fstream:: basic_fstream
+## <a name="basic_fstreambasic_fstream"></a><a name="basic_fstream"></a> basic_fstream:: basic_fstream
 
 `basic_fstream` 형식의 개체를 생성합니다.
 
@@ -148,7 +149,7 @@ _Fsopen의 *shflag* 매개 변수에 해당 하는 기본 파일 열기 보호�
 
 `basic_fstream`을 사용하는 예는 [streampos](../standard-library/ios-typedefs.md#streampos)를 참조하세요.
 
-## <a name="basic_fstreamclose"></a><a name="close"></a>basic_fstream:: close
+## <a name="basic_fstreamclose"></a><a name="close"></a> basic_fstream:: close
 
 파일을 닫습니다.
 
@@ -164,7 +165,7 @@ void close();
 
 `close`를 사용하는 방법의 예는 [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close)를 참조하세요.
 
-## <a name="basic_fstreamis_open"></a><a name="is_open"></a>basic_fstream:: is_open
+## <a name="basic_fstreamis_open"></a><a name="is_open"></a> basic_fstream:: is_open
 
 파일이 열려 있는지 확인합니다.
 
@@ -172,7 +173,7 @@ void close();
 bool is_open() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 파일이 열려 있으면이 고, **`false`** 그렇지 않으면입니다.
 
@@ -184,7 +185,7 @@ bool is_open() const;
 
 `is_open`을 사용하는 방법의 예는 [basic_filebuf::is_open](../standard-library/basic-filebuf-class.md#is_open)을 참조하세요.
 
-## <a name="basic_fstreamopen"></a><a name="open"></a>basic_fstream:: open
+## <a name="basic_fstreamopen"></a><a name="open"></a> basic_fstream:: open
 
 파일을 엽니다.
 
@@ -227,7 +228,7 @@ _Fsopen의 *shflag* 매개 변수에 해당 하는 기본 파일 열기 보호�
 
 을 사용 하는 방법에 대 한 예제는 [basic_filebuf:: open](../standard-library/basic-filebuf-class.md#open) 을 참조 하세요 `open` .
 
-## <a name="basic_fstreamoperator"></a><a name="op_eq"></a>basic_fstream:: operator =
+## <a name="basic_fstreamoperator"></a><a name="op_eq"></a> basic_fstream:: operator =
 
 지정된 스트림 개체의 내용을 이 개체에 할당합니다. 복사본을 남기지 않는 rvalue와 관련된 이동 할당입니다.
 
@@ -240,15 +241,15 @@ basic_fstream& operator=(basic_fstream&& right);
 *오른쪽*\
 `basic_fstream` 개체에 대한 lvalue 참조입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`*this`** 을 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 연산자는 rvalue 참조로 처리 되는 *오른쪽*의 내용을 사용 하 여 개체의 내용을 바꿉니다.
+멤버 연산자는 rvalue 참조로 처리 되는 *오른쪽* 의 내용을 사용 하 여 개체의 내용을 바꿉니다.
 
-## <a name="basic_fstreamrdbuf"></a><a name="rdbuf"></a>basic_fstream:: rdbuf
+## <a name="basic_fstreamrdbuf"></a><a name="rdbuf"></a> basic_fstream:: rdbuf
 
 [Basic_filebuf](../standard-library/basic-filebuf-class.md)에 대 한 형식 포인터의 저장 된 스트림 버퍼 주소를 반환 \< **Elem**, **Tr**> 합니다.
 
@@ -256,7 +257,7 @@ basic_fstream& operator=(basic_fstream&& right);
 basic_filebuf<Elem, Tr> *rdbuf() const
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 저장된 스트림 버퍼의 주소입니다.
 
@@ -264,7 +265,7 @@ basic_filebuf<Elem, Tr> *rdbuf() const
 
 `rdbuf`를 사용하는 방법의 예는 [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close)를 참조하세요.
 
-## <a name="basic_fstreamswap"></a><a name="swap"></a>basic_fstream:: swap
+## <a name="basic_fstreamswap"></a><a name="swap"></a> basic_fstream:: swap
 
 두 `basic_fstream` 개체의 내용을 교환합니다.
 
@@ -279,7 +280,7 @@ void swap(basic_fstream& right);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는이 개체의 내용과 *오른쪽*의 내용을 교환 합니다.
+멤버 함수는이 개체의 내용과 *오른쪽* 의 내용을 교환 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

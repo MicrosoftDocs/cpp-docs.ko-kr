@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: fegetexceptflag'
 title: fegetexceptflag
 ms.date: 04/05/2018
 api_name:
@@ -25,12 +26,12 @@ f1_keywords:
 helpviewer_keywords:
 - fegetexceptflag function
 ms.assetid: 2d28f0ca-70c9-4cff-be8b-3d876eacde71
-ms.openlocfilehash: b840408ce704ad5519fbf233de41c8d5422006ad
-ms.sourcegitcommit: ba4180a2d79d7e391f2f705797505d4aedbc2a5e
+ms.openlocfilehash: 9690263168c9eef46b5a8b684fa00dfd9d6f8715
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76972183"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322565"
 ---
 # <a name="fegetexceptflag"></a>fegetexceptflag
 
@@ -48,18 +49,18 @@ int fegetexceptflag(
 ### <a name="parameters"></a>매개 변수
 
 *pstatus*<br/>
-*제외한*에 지정 된 예외 플래그의 현재 값을 포함 하는 **fexcept_t** 개체에 대 한 포인터입니다.
+*제외한* 에 지정 된 예외 플래그의 현재 값을 포함 하는 **fexcept_t** 개체에 대 한 포인터입니다.
 
-*excepts*<br/>
-*Pstatus*에 저장할 부동 소수점 예외 플래그입니다.
+*제외한*<br/>
+*Pstatus* 에 저장할 부동 소수점 예외 플래그입니다.
 
 ## <a name="return-value"></a>반환 값
 
 성공 시 0을 반환합니다. 그렇지 않으면 0이 아닌 값을 반환합니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
-**Fegetexceptflag** 함수는 *제외한* 에 의해 지정 된 부동 소수점 예외 상태 플래그의 현재 상태를 *pstatus*가 가리키는 **fexcept_t** 개체에 저장 합니다.  *pstatus* 는 유효한 **fexcept_t** 개체를 가리켜야 합니다. 그렇지 않으면 후속 동작이 정의 되지 않습니다. **Fegetexceptflag** 함수는 \<fenv. h >에 정의 된 다음 예외 매크로를 지원 합니다.
+**Fegetexceptflag** 함수는 *제외한* 에 의해 지정 된 부동 소수점 예외 상태 플래그의 현재 상태를 *pstatus* 가 가리키는 **fexcept_t** 개체에 저장 합니다.  *pstatus* 는 유효한 **fexcept_t** 개체를 가리켜야 합니다. 그렇지 않으면 후속 동작이 정의 되지 않습니다. **Fegetexceptflag** 함수는에 정의 된 다음 예외 매크로를 지원 합니다 \<fenv.h> .
 
 |예외 매크로|설명|
 |---------------------|-----------------|
@@ -76,13 +77,13 @@ int fegetexceptflag(
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|C 헤더|C++ 헤더|
+|함수|C 헤더|C++ 헤더|
 |--------------|--------------|------------------|
 |**fegetexceptflag**|\<fenv.h>|\<cfenv>|
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [사전순 함수 참조](crt-alphabetical-function-reference.md)<br/>
 [fesetexceptflag](fesetexceptflag2.md)<br/>

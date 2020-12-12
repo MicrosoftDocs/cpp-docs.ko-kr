@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2134'
 title: 컴파일러 오류 C2134
 ms.date: 11/04/2016
 f1_keywords:
 - C2134
 ms.assetid: d45cb3e8-0be4-4bd6-8be9-5f8d2384363f
-ms.openlocfilehash: a50a94e195c823176e8463f9d0471530b81734c4
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 16149c3b3f28720670c26f0fae2a89d1b7b6f8b4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757503"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323113"
 ---
 # <a name="compiler-error-c2134"></a>컴파일러 오류 C2134
 
@@ -31,7 +32,7 @@ constexpr int B() {
 }
 ```
 
-가능한 해결 방법:
+해결 방법:
 
 ```cpp
 // C2134b.cpp

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 더 큰 구조체'
 title: greater 구조체
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - greater struct
 - greater function
 ms.assetid: ebc348e1-edcd-466b-b21a-db95bd8f9079
-ms.openlocfilehash: aca47223810bdae31e7711492d107fbfa2814391
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: fabee76d20d201f63b9f5397c20409ad62125657
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68243725"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324176"
 ---
 # <a name="greater-struct"></a>greater 구조체
 
-큼 수행 하는 이진 조건자-작업 보다 (`operator>`) 인수에 대해 합니다.
+인수에 대해 보다 큼 연산 ()을 수행 하는 이진 조건자입니다 `operator>` .
 
 ## <a name="syntax"></a>구문
 
@@ -42,14 +43,14 @@ struct greater<void>
 
 ### <a name="parameters"></a>매개 변수
 
-*형식*하십시오 *T*, *U*\
+*형식*, *T*, *U*\
 지정되었거나 유추된 형식의 피연산자를 가져오는 `operator>`를 지원하는 모든 형식입니다.
 
-*왼쪽*\
-큼 연산의 왼쪽 피연산자입니다. 형식의 lvalue 참조 인수를 사용 하는 특수화 되지 않은 템플릿은 *형식*합니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *T*합니다.
+*비어*\
+큼 연산의 왼쪽 피연산자입니다. 특수화 되지 않은 *템플릿은 형식의 lvalue* 참조 인수를 사용 합니다. 특수화 된 템플릿은 유추 형식 *T* 의 lvalue 및 rvalue 참조 인수를 완벽 하 게 전달 합니다.
 
 *오른쪽*\
-큼 연산의 오른쪽 피연산자입니다. 형식의 lvalue 참조 인수를 사용 하는 특수화 되지 않은 템플릿은 *형식*합니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *U*합니다.
+큼 연산의 오른쪽 피연산자입니다. 특수화 되지 않은 *템플릿은 형식의 lvalue* 참조 인수를 사용 합니다. 특수화 된 템플릿은 유추 형식 *U* 의 lvalue 및 rvalue 참조 인수를 완벽 하 게 전달 합니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -57,7 +58,7 @@ struct greater<void>
 
 ## <a name="remarks"></a>설명
 
-이진 조건자 `greater` < `Type`> 형식의 요소 값의 집합이 엄밀히 약한 정렬을 제공 *형식* 동등 클래스에이 이와 같은 수치는 표준 충족 하는 경우에 하 여 그렇게 정렬에 대 한 요구 사항입니다. 고유한 값의 모든 요소가 서로를 기준으로 정렬된다는 점에서 모든 포인터 형식에 대한 특수화는 요소의 전체 순서 지정을 생성합니다.
+`greater` < `Type` 이 형식이 정렬 되기 위한 표준 수학적 요구 사항을 충족 하는 경우에만 이진 조건자> *형식 형식의* 요소 값 집합을 동등 클래스에 대 한 엄격한 약한 순서로 제공 합니다. 고유한 값의 모든 요소가 서로를 기준으로 정렬된다는 점에서 모든 포인터 형식에 대한 특수화는 요소의 전체 순서 지정을 생성합니다.
 
 ## <a name="example"></a>예제
 

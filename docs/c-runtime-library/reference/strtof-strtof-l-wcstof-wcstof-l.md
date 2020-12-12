@@ -1,4 +1,5 @@
 ---
+description: Strtof, _strtof_l, wcstof, _wcstof_l에 대해 자세히 알아보세요.
 title: strtof, _strtof_l, wcstof, _wcstof_l
 ms.date: 4/2/2020
 api_name:
@@ -46,12 +47,12 @@ helpviewer_keywords:
 - _tcstof_l function
 - strtof function
 ms.assetid: 52221b46-876d-4fcc-afb1-97512c17a43b
-ms.openlocfilehash: d99b895076025aa50028bb4cd21df9e13c98197f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7a73df80fefb8d86431027650be2ecd236135dfd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233966"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322422"
 ---
 # <a name="strtof-_strtof_l-wcstof-_wcstof_l"></a>strtof, _strtof_l, wcstof, _wcstof_l
 
@@ -91,17 +92,17 @@ float wcstof_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-**strtof** 는 부동 소수점 숫자의 값을 반환 합니다. 단,이로 인해 오버플로가 발생 하는 경우를 제외 하 고 함수는 +/-**HUGE_VALF**을 반환 합니다. **HUGE_VALF** 부호는 표현할 수 없는 값의 부호와 일치 합니다. **strtof** 는 변환을 수행할 수 없거나 언더플로가 발생 하는 경우 0을 반환 합니다.
+**strtof** 는 부동 소수점 숫자의 값을 반환 합니다. 단,이로 인해 오버플로가 발생 하는 경우를 제외 하 고 함수는 +/-**HUGE_VALF** 을 반환 합니다. **HUGE_VALF** 부호는 표현할 수 없는 값의 부호와 일치 합니다. **strtof** 는 변환을 수행할 수 없거나 언더플로가 발생 하는 경우 0을 반환 합니다.
 
-**wcstof** 는와 유사 값을 **strtof**로 반환 합니다. 두 함수 모두 오버플로 또는 언더플로가 발생 하면 **errno** 가 **ERANGE** 로 설정 되 고 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다.
+**wcstof** 는와 유사 값을 **strtof** 로 반환 합니다. 두 함수 모두 오버플로 또는 언더플로가 발생 하면 **errno** 가 **ERANGE** 로 설정 되 고 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다.
 
 반환 코드에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-각 함수는 입력 문자열 *Strsource* 를로 변환 **`float`** 합니다. **Strtof** 함수는 *strsource* 를 단 정밀도 값으로 변환 합니다. **strtof** 는 숫자의 일부분으로 인식할 수 없는 첫 번째 문자에서 문자열 *strsource* 읽기를 중지 합니다. 이 문자는 종료 null 문자일 수 있습니다. **wcstof** 는 **strtof**의 와이드 문자 버전입니다. *Strsource* 인수는 와이드 문자 문자열입니다. 그 외의 경우에는 이들 함수가 동일하게 동작합니다.
+각 함수는 입력 문자열 *Strsource* 를로 변환 **`float`** 합니다. **Strtof** 함수는 *strsource* 를 단 정밀도 값으로 변환 합니다. **strtof** 는 숫자의 일부분으로 인식할 수 없는 첫 번째 문자에서 문자열 *strsource* 읽기를 중지 합니다. 이 문자는 종료 null 문자일 수 있습니다. **wcstof** 는 **strtof** 의 와이드 문자 버전입니다. *Strsource* 인수는 와이드 문자 문자열입니다. 그 외의 경우에는 이들 함수가 동일하게 동작합니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -112,9 +113,9 @@ float wcstof_l(
 |**_tcstof**|**strtof**|**strtof**|**wcstof**|
 |**_tcstof_l**|**_strtof_l**|**_strtof_l**|**_wcstof_l**|
 
-현재 로캘의 **LC_NUMERIC** 범주 설정은 *strsource*의 기 하 문자 인식 여부를 결정 합니다. 자세한 내용은 [setlocale, _wsetlocale](setlocale-wsetlocale.md)를 참조 하세요. **_L** 접미사가 없는 함수는 현재 로캘을 사용 합니다. 접미사가 있는 항목은 전달 된 로캘을 대신 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+현재 로캘의 **LC_NUMERIC** 범주 설정은 *strsource* 의 기 하 문자 인식 여부를 결정 합니다. 자세한 내용은 [setlocale, _wsetlocale](setlocale-wsetlocale.md)를 참조 하세요. **_L** 접미사가 없는 함수는 현재 로캘을 사용 합니다. 접미사가 있는 항목은 전달 된 로캘을 대신 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-*Endptr* 이 **NULL**이 아닌 경우 검색을 중지 한 문자에 대 한 포인터는 *endptr*에서 가리키는 위치에 저장 됩니다. 올바른 숫자를 찾을 수 없거나 잘못 된 밑수를 지정 하 여 변환을 수행할 수 없는 경우 *Strsource* 의 값은 *endptr*에서 가리키는 위치에 저장 됩니다.
+*Endptr* 이 **NULL** 이 아닌 경우 검색을 중지 한 문자에 대 한 포인터는 *endptr* 에서 가리키는 위치에 저장 됩니다. 올바른 숫자를 찾을 수 없거나 잘못 된 밑수를 지정 하 여 변환을 수행할 수 없는 경우 *Strsource* 의 값은 *endptr* 에서 가리키는 위치에 저장 됩니다.
 
 **strtof** 는 다음과 같은 형식의 문자열을 가리키는 *strsource* 가 필요 합니다.
 
@@ -128,8 +129,8 @@ float wcstof_l(
 
 |루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
-|**strtof**, **_strtof_l**|C: \<stdlib.h> c + +: &lt; b> 또는\<stdlib.h>|
-|**wcstof**, **_wcstof_l**|C: \<stdlib.h> 또는 \<wchar.h> c + +: &lt; b> \<stdlib.h> 또는\<wchar.h>|
+|**strtof**, **_strtof_l**|C: \<stdlib.h> c + +: &lt; b> 또는 \<stdlib.h>|
+|**wcstof**, **_wcstof_l**|C: \<stdlib.h> 또는 \<wchar.h> c + +: &lt; b> \<stdlib.h> 또는 \<wchar.h>|
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
@@ -167,7 +168,7 @@ string = 3.14159This stopped it
 
 [데이터 변환](../../c-runtime-library/data-conversion.md)<br/>
 [부동 소수점 지원](../../c-runtime-library/floating-point-support.md)<br/>
-[멀티 바이트 문자 시퀀스 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Multibyte-Character 시퀀스의 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [로캘](../../c-runtime-library/locale.md)<br/>
 [문자열-숫자 값 함수](../../c-runtime-library/string-to-numeric-value-functions.md)<br/>
 [strtod, _strtod_l, wcstod, _wcstod_l](strtod-strtod-l-wcstod-wcstod-l.md)<br/>

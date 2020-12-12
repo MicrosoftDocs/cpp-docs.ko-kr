@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 레코드 집합: 데이터 열 동적 바인딩 (ODBC)'
 title: '레코드 집합: 데이터 열 동적 바인딩(ODBC)'
 ms.date: 05/09/2019
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - data binding [C++], columns in recordsets
 - columns [C++], binding to recordsets
 ms.assetid: bff67254-d953-4ae4-9716-91c348cb840b
-ms.openlocfilehash: 8bc9ba8a143234bec7927c9578a69a95a511bb9f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: cb141874fa39b06e8e000c03e538021650facf91
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837790"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322381"
 ---
 # <a name="recordset-dynamically-binding-data-columns-odbc"></a>레코드 집합: 데이터 열 동적 바인딩(ODBC)
 
@@ -33,7 +34,7 @@ ms.locfileid: "88837790"
 > [!NOTE]
 > Visual Studio 2019 이상에서는 MFC ODBC 소비자 마법사를 사용할 수 없습니다. 여전히 수동으로 소비자를 만들 수 있습니다.
 
-디자인 타임에 MFC 애플리케이션 마법사 또는 [MFC ODBC 소비자 마법사](../../mfc/reference/adding-an-mfc-odbc-consumer.md)(**클래스 추가**에서 나온)는 데이터 원본의 알려진 테이블 및 열을 기반으로 레코드 집합 클래스를 만듭니다. 해당 테이블 및 열을 디자인할 때와 나중에 애플리케이션이 런타임에 이들을 사용할 때의 사이에 데이터베이스를 변경할 수 있습니다. 개발자 또는 다른 사용자가 애플리케이션의 레코드 집합이 의존하는 테이블에서 테이블을 추가 또는 삭제하거나 열을 추가 또는 삭제할 수 있습니다. 아마도 모든 데이터 액세스 애플리케이션의 경우 이 상황은 문제가 없지만, 데이터베이스 스키마가 변경된 경우 다시 디자인하고 다시 컴파일하는 방법 외에 다른 해결 방법이 있을까요? 이 토픽의 목적은 바로 이 질문에 답하는 것입니다.
+디자인 타임에 MFC 애플리케이션 마법사 또는 [MFC ODBC 소비자 마법사](../../mfc/reference/adding-an-mfc-odbc-consumer.md)(**클래스 추가** 에서 나온)는 데이터 원본의 알려진 테이블 및 열을 기반으로 레코드 집합 클래스를 만듭니다. 해당 테이블 및 열을 디자인할 때와 나중에 애플리케이션이 런타임에 이들을 사용할 때의 사이에 데이터베이스를 변경할 수 있습니다. 개발자 또는 다른 사용자가 애플리케이션의 레코드 집합이 의존하는 테이블에서 테이블을 추가 또는 삭제하거나 열을 추가 또는 삭제할 수 있습니다. 아마도 모든 데이터 액세스 애플리케이션의 경우 이 상황은 문제가 없지만, 데이터베이스 스키마가 변경된 경우 다시 디자인하고 다시 컴파일하는 방법 외에 다른 해결 방법이 있을까요? 이 토픽의 목적은 바로 이 질문에 답하는 것입니다.
 
 이 토픽에서는 동적으로 열을 바인딩할 수 있는 가장 일반적인 상황을 설명합니다. 먼저, 알려진 데이터베이스 스키마를 기반으로 하는 레코드 집합으로 시작하고 런타임에 추가 열을 처리하려고 합니다. 또한 이 토픽에서는 추가 열이 `CString` 데이터 멤버에 매핑된다고 가정하지만(가장 일반적인 경우), 다른 데이터 형식을 관리하는 데 도움이 되는 추천도 제공합니다.
 
@@ -147,7 +148,7 @@ Columns-to-Bind-Dynamically와 병렬로 만듭니다.
 위의 절차 결과는 두 가지 주요 목록입니다. 열-바인딩-열 이름과 현재 레코드의 열 값을 포함 하는 동적 열 값을 동적으로 포함 합니다.
 
 > [!TIP]
-> 새 열 중 일부의 데이터 형식이 다른 경우 열 목록에서 각 해당 요소의 형식을 어떻게든 정의하는 항목을 포함하는 추가 병렬 목록을 원할 수 있습니다. (원한다면 이를 위해 AFX_RFX_BOOL, AFX_RFX_BYTE 등의 값을 사용할 수 있습니다. 이러한 상수는 AFXDB에 정의 되어 있습니다. H.) 열 데이터 형식을 표시 하는 방법에 따라 목록 유형을 선택 합니다.
+> 새 열 중 일부의 데이터 형식이 다른 경우 열 목록에서 각 해당 요소의 형식을 어떻게든 정의하는 항목을 포함하는 추가 병렬 목록을 원할 수 있습니다. (원한다면 이를 위해 AFX_RFX_BOOL, AFX_RFX_BYTE 등의 값을 사용할 수 있습니다. 이러한 상수는 AFXDB에 정의 되어 있습니다. 열 데이터 형식을 표시 하는 방법에 따라 목록 유형을 선택 합니다.
 
 ### <a name="adding-rfx-calls-to-bind-the-columns"></a><a name="_core_adding_rfx_calls_to_bind_the_columns"></a> RFX 호출을 추가하여 열 바인딩
 
@@ -165,7 +166,7 @@ RFX_Text( pFX,
             m_listValue.GetNext( posValue ));
 ```
 
-RFX 함수에 대한 자세한 내용은 *클래스 라이브러리 참조*의 [매크로 및 전역 요소](../../mfc/reference/mfc-macros-and-globals.md)를 참조하세요.
+RFX 함수에 대한 자세한 내용은 *클래스 라이브러리 참조* 의 [매크로 및 전역 요소](../../mfc/reference/mfc-macros-and-globals.md)를 참조하세요.
 
 > [!TIP]
 > 새 열의 데이터 형식이 다른 경우 루프에 switch 문을 사용하여 각 형식에 적절한 RFX 함수를 호출합니다.
