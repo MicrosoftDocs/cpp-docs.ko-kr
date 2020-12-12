@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 방법: 메시지 블록 필터 사용'
 title: '방법: 메시지 블록 필터 사용'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - message-block filters, using [Concurrency Runtime]
 - using message-block filters [Concurrency Runtime]
 ms.assetid: db6b99fb-288d-4477-96dc-b9751772ebb2
-ms.openlocfilehash: ac58ef2240d2ea6ba34b334106c08595e70b02e8
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: 3c07aa7f12ed952d5256ba8fc7f53b619edefb7e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008637"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97172593"
 ---
 # <a name="how-to-use-a-message-block-filter"></a>방법: 메시지 블록 필터 사용
 
@@ -18,7 +19,7 @@ ms.locfileid: "92008637"
 
 Concurrency: [: unbounded_buffer](reference/unbounded-buffer-class.md), [concurrency:: call](../../parallel/concrt/reference/call-class.md)또는 [concurrency:: 변환기](../../parallel/concrt/reference/transformer-class.md)와 같은 메시지 블록 개체를 만들 때 메시지 블록이 메시지를 수락 하거나 거부 하는지 여부를 결정 하는 *필터 함수* 를 제공할 수 있습니다. 필터 함수는 메시지 블록이 특정 값만 받도록 보장 하는 유용한 방법입니다.
 
-필터 함수는 메시지 블록을 연결 하 여 *데이터 흐름 네트워크*를 구성할 수 있으므로 중요 합니다. 데이터 흐름 네트워크에서 메시지 블록은 특정 조건을 충족 하는 메시지만 처리 하 여 데이터 흐름을 제어 합니다. 조건문, 루프 등의 제어 구조를 사용 하 여 데이터 흐름이 규제 되는 제어 흐름 모델과 비교 합니다.
+필터 함수는 메시지 블록을 연결 하 여 *데이터 흐름 네트워크* 를 구성할 수 있으므로 중요 합니다. 데이터 흐름 네트워크에서 메시지 블록은 특정 조건을 충족 하는 메시지만 처리 하 여 데이터 흐름을 제어 합니다. 조건문, 루프 등의 제어 구조를 사용 하 여 데이터 흐름이 규제 되는 제어 흐름 모델과 비교 합니다.
 
 이 문서에서는 메시지 필터를 사용 하는 방법에 대 한 기본 예를 제공 합니다. 메시지 필터 및 데이터 흐름 모델을 사용 하 여 메시지 블록을 연결 하는 추가 예제는 [연습: 데이터 흐름 에이전트 만들기](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md) 및 [연습: Image-Processing 네트워크 만들기](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)를 참조 하세요.
 
@@ -63,7 +64,7 @@ bool (T const &)
 
 불필요 한 데이터 복사를 제거 하려면 값으로 전송 되는 집계 형식이 있는 경우 두 번째 형식을 사용 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md)<br/>
 [연습: 데이터 흐름 에이전트 만들기](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md)<br/>

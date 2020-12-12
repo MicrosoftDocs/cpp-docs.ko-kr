@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: agent 클래스'
 title: 에이전트 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -17,12 +18,12 @@ f1_keywords:
 helpviewer_keywords:
 - agent class
 ms.assetid: 1b09e3d2-5e37-4966-b016-907ef1512456
-ms.openlocfilehash: f1d98cdc6237f182e0240a85f2fdce3410232195
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 74be31ad13eab6a026a11dbcc2b20719e98ee868
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213894"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97172273"
 ---
 # <a name="agent-class"></a>에이전트 클래스
 
@@ -38,9 +39,9 @@ class agent;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
-|[에이전트](#ctor)|오버로드되었습니다. 에이전트를 생성 합니다.|
+|[에이전트](#ctor)|오버로드됨. 에이전트를 생성 합니다.|
 |[~ 에이전트 소멸자](#dtor)|에이전트를 소멸 시킵니다.|
 
 ### <a name="public-methods"></a>Public 메서드
@@ -60,7 +61,7 @@ class agent;
 |Name|설명|
 |----------|-----------------|
 |[완료](#done)|에이전트가 완료 되었음을 나타내는 상태로 에이전트를 이동 `agent_done` 합니다.|
-|[실행할지](#run)|에이전트의 주 작업을 나타냅니다. `run`파생 클래스에서 재정의 되 고 에이전트가 시작 된 후 수행 해야 하는 작업을 지정 합니다.|
+|[실행할지](#run)|에이전트의 주 작업을 나타냅니다. `run` 파생 클래스에서 재정의 되 고 에이전트가 시작 된 후 수행 해야 하는 작업을 지정 합니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -76,7 +77,7 @@ class agent;
 
 **네임 스페이스:** 동시성
 
-## <a name="agent"></a><a name="ctor"></a>에이전트
+## <a name="agent"></a><a name="ctor"></a> 에이전트
 
 에이전트를 생성 합니다.
 
@@ -100,7 +101,7 @@ agent(ScheduleGroup& _PGroup);
 
 런타임은 `_PScheduler` 또는 `_PGroup` 매개 변수를 지정하지 않는 경우 기본 스케줄러를 사용합니다.
 
-## <a name="agent"></a><a name="dtor"></a>~ 에이전트
+## <a name="agent"></a><a name="dtor"></a> ~ 에이전트
 
 에이전트를 소멸 시킵니다.
 
@@ -112,7 +113,7 @@ virtual ~agent();
 
 터미널 상태가 아닌 에이전트 (또는)를 삭제 하는 것은 오류입니다 `agent_done` `agent_canceled` . 이는 클래스가 클래스에서 상속 되는 클래스의 소멸자에서 터미널 상태에 도달할 때까지 대기 하 여 방지할 수 있습니다 `agent` .
 
-## <a name="cancel"></a><a name="cancel"></a>취소
+## <a name="cancel"></a><a name="cancel"></a> 취소
 
 또는 상태에서 상태로 에이전트를 `agent_created` 이동 `agent_runnable` `agent_canceled` 합니다.
 
@@ -120,11 +121,11 @@ virtual ~agent();
 bool cancel();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 에이전트가 취소 되었으면이 고, **`false`** 그렇지 않으면입니다. 에이전트의 실행이 이미 시작 되었거나 이미 완료 된 경우에는 에이전트를 취소할 수 없습니다.
 
-## <a name="done"></a><a name="done"></a>끝났습니다
+## <a name="done"></a><a name="done"></a> 끝났습니다
 
 에이전트가 완료 되었음을 나타내는 상태로 에이전트를 이동 `agent_done` 합니다.
 
@@ -132,7 +133,7 @@ bool cancel();
 bool done();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 에이전트가 상태로 이동 하면이 고 `agent_done` , 그렇지 않으면 **`false`** 입니다. 취소 된 에이전트는 상태로 이동할 수 없습니다 `agent_done` .
 
@@ -140,9 +141,9 @@ bool done();
 
 에이전트의 실행이 완료 된 것을 알고 있는 경우이 메서드는 메서드의 끝에서 호출 해야 합니다 `run` .
 
-## <a name="run"></a><a name="run"></a>실행할지
+## <a name="run"></a><a name="run"></a> 실행할지
 
-에이전트의 주 작업을 나타냅니다. `run`파생 클래스에서 재정의 되 고 에이전트가 시작 된 후 수행 해야 하는 작업을 지정 합니다.
+에이전트의 주 작업을 나타냅니다. `run` 파생 클래스에서 재정의 되 고 에이전트가 시작 된 후 수행 해야 하는 작업을 지정 합니다.
 
 ```cpp
 virtual void run() = 0;
@@ -152,7 +153,7 @@ virtual void run() = 0;
 
 에이전트 상태는 `agent_started` 이 메서드가 호출 되기 전에 오른쪽으로 변경 됩니다. 메서드는 `done` 를 반환 하기 전에 적절 한 상태를 사용 하 여 에이전트에서를 호출 하 고 예외를 throw 하지 않을 수 있습니다.
 
-## <a name="start"></a><a name="start"></a>시작
+## <a name="start"></a><a name="start"></a> 시작
 
 에이전트를 상태에서 상태로 이동 하 `agent_created` `agent_runnable` 고 실행을 예약 합니다.
 
@@ -160,11 +161,11 @@ virtual void run() = 0;
 bool start();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 에이전트가 올바르게 시작 되었으면이 고, **`false`** 그렇지 않으면입니다. 취소 된 에이전트는 시작할 수 없습니다.
 
-## <a name="status"></a><a name="status"></a>업무
+## <a name="status"></a><a name="status"></a> 업무
 
 에이전트의 상태 정보에 대 한 동기 원본입니다.
 
@@ -172,11 +173,11 @@ bool start();
 agent_status status();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 에이전트의 현재 상태를 반환 합니다. 반환 된 상태는 반환 된 후 즉시 변경 될 수 있습니다.
 
-## <a name="status_port"></a><a name="status_port"></a>status_port
+## <a name="status_port"></a><a name="status_port"></a> status_port
 
 에이전트의 상태 정보에 대 한 비동기 원본입니다.
 
@@ -184,11 +185,11 @@ agent_status status();
 ISource<agent_status>* status_port();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 에이전트의 현재 상태에 대 한 메시지를 보낼 수 있는 메시지 원본을 반환 합니다.
 
-## <a name="wait"></a><a name="wait"></a>대기한
+## <a name="wait"></a><a name="wait"></a> 대기한
 
 에이전트가 작업을 완료할 때까지 기다립니다.
 
@@ -206,7 +207,7 @@ static agent_status __cdecl wait(
 *_Timeout*<br/>
 대기할 최대 시간 (밀리초)입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `agent_status`대기가 완료 된 에이전트의입니다. 또는 일 수 있습니다 `agent_canceled` `agent_done` .
 
@@ -216,7 +217,7 @@ static agent_status __cdecl wait(
 
 매개 변수에 `_Timeout` 상수가 아닌 값이 있는 경우 `COOPERATIVE_TIMEOUT_INFINITE` 에이전트가 해당 태스크를 완료 하기 전에 지정 된 시간이 만료 되 면 예외 [operation_timed_out](operation-timed-out-class.md) throw 됩니다.
 
-## <a name="wait_for_all"></a><a name="wait_for_all"></a>wait_for_all
+## <a name="wait_for_all"></a><a name="wait_for_all"></a> wait_for_all
 
 지정 된 모든 에이전트가 작업을 완료할 때까지 기다립니다.
 
@@ -248,7 +249,7 @@ static void __cdecl wait_for_all(
 
 매개 변수에 `_Timeout` 상수가 아닌 값이 있는 경우 `COOPERATIVE_TIMEOUT_INFINITE` 에이전트가 해당 태스크를 완료 하기 전에 지정 된 시간이 만료 되 면 예외 [operation_timed_out](operation-timed-out-class.md) throw 됩니다.
 
-## <a name="wait_for_one"></a><a name="wait_for_one"></a>wait_for_one
+## <a name="wait_for_one"></a><a name="wait_for_one"></a> wait_for_one
 
 지정 된 에이전트 중 하나가 해당 작업을 완료할 때까지 기다립니다.
 

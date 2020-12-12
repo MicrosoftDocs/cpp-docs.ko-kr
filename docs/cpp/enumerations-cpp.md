@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 열거형 (c + +)'
 title: 열거형(C++)
 ms.date: 06/01/2018
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - named constants, enumeration declarations
 - declaring enumerations
 ms.assetid: 081829db-5dca-411e-a53c-bffef315bcb3
-ms.openlocfilehash: d4511ed7d09ff280d01214a2a177148956580ee5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c612628b141e60c02ac4d6d80506e77f7ef35761
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221616"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171064"
 ---
 # <a name="enumerations-c"></a>열거형(C++)
 
@@ -143,7 +144,7 @@ namespace ScopedEnumConversions
 
 선 `hand = account_num;`은 앞에서 보았듯이 범위가 지정되지 않은 열거형에 발생하는 오류를 초래합니다. 명시적 캐스트로 허용됩니다. 그러나 범위가 지정된 열거형을 사용하여 다음 문 `account_num = Suit::Hearts;`에서 시도된 변환은 명시적 캐스트 없이는 더 이상 허용되지 않습니다.
 
-## <a name="enums-with-no-enumerators"></a><a name="no_enumerators"></a>열거자가 없는 열거형
+## <a name="enums-with-no-enumerators"></a><a name="no_enumerators"></a> 열거자가 없는 열거형
 
 **Visual Studio 2017 버전 15.3** 이상 ( [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)과 함께 사용 가능): 명시적 기본 형식으로 열거형 (regular 또는 범위)을 정의 하 고 열거자를 사용 하지 않으면 다른 형식으로 암시적으로 변환 되지 않는 새 정수 계열 형식을 적용할 수 있습니다. 기본 제공 형식 대신이 형식을 사용 하 여 실수로 인 한 암시적 변환으로 인해 발생 하는 미묘한 오류의 가능성을 없앨 수 있습니다.
 
@@ -184,4 +185,4 @@ int main()
 ## <a name="see-also"></a>참고 항목
 
 [C 열거형 선언](../c-language/c-enumeration-declarations.md)<br/>
-[C++ 키워드](../cpp/keywords-cpp.md)
+[키워드](../cpp/keywords-cpp.md)

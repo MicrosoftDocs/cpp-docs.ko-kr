@@ -1,15 +1,16 @@
 ---
+description: '자세히 알아보기: 병렬 진단 도구 (동시성 런타임)'
 title: 병렬 진단 도구(동시성 런타임)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Parallel Diagnostic Tools [Concurrency Runtime]
 ms.assetid: b1a3f1d2-f5df-4f29-852e-906b3d8341fc
-ms.openlocfilehash: 34b2421dfc53deeb35dcc659a8d555983e583737
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 44d885e8e6c7529bd15fa0aa2e7930773400361f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69510503"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97172429"
 ---
 # <a name="parallel-diagnostic-tools-concurrency-runtime"></a>병렬 진단 도구(동시성 런타임)
 
@@ -17,11 +18,11 @@ Visual Studio는 다중 스레드 애플리케이션 디버깅 및 프로파일�
 
 ## <a name="debugging"></a>디버깅
 
-Visual Studio 디버거에는 병렬 **스택** 창, **병렬 작업** 창 및 **병렬 조사식** 창이 포함 되어 있습니다. 자세한 내용은 [연습: 병렬 응용 프로그램](/visualstudio/debugger/walkthrough-debugging-a-parallel-application) 디버깅 및 [방법: 병렬 조사식 창](/visualstudio/debugger/how-to-use-the-parallel-watch-window)을 사용 합니다.
+Visual Studio 디버거에는 병렬 **스택** 창, **병렬 작업** 창 및 **병렬 조사식** 창이 포함 되어 있습니다. 자세한 내용은 [연습: 병렬 응용 프로그램 디버깅](/visualstudio/debugger/walkthrough-debugging-a-parallel-application) 및 [방법: 병렬 조사식 창 사용](/visualstudio/debugger/how-to-use-the-parallel-watch-window)을 참조 하세요.
 
 ## <a name="profiling"></a>프로파일링
 
-프로 파일링 도구는 다중 스레드 응용 프로그램이 자신 및 다른 프로그램과 상호 작용 하는 방식에 대 한 그래픽, 테이블 형식 및 숫자 정보를 표시 하는 세 가지 데이터 뷰를 제공 합니다. 뷰를 사용 하면 중요 한 영역을 신속 하 게 식별 하 고 그래픽 디스플레이의 점에서 호출 스택, 호출 사이트 및 소스 코드로 이동할 수 있습니다. 자세한 내용은 [동시성 시각화 도우미](/visualstudio/profiling/concurrency-visualizer)를 참조하세요.
+프로파일링 도구는 다중 스레드 응용 프로그램이 자신 및 다른 프로그램과 상호 작용하는 방식에 대한 그래픽, 표 형식 및 숫자 정보를 표시하는 세 가지 데이터 뷰를 제공합니다. 뷰를 사용 하면 중요 한 영역을 신속 하 게 식별 하 고 그래픽 디스플레이의 점에서 호출 스택, 호출 사이트 및 소스 코드로 이동할 수 있습니다. 자세한 내용은 [동시성 시각화 도우미](/visualstudio/profiling/concurrency-visualizer)를 참조하세요.
 
 ## <a name="event-tracing"></a>이벤트 추적
 
@@ -33,7 +34,7 @@ Visual Studio 디버거에는 병렬 **스택** 창, **병렬 작업** 창 및 *
 
 다음 표에서는 이벤트 추적을 사용 하는 경우 런타임에서 발생 하는 이벤트에 대해 설명 합니다.
 
-|이벤트(event)|설명|값|
+|이벤트|설명|값|
 |-----------|-----------------|-----------|
 |[concurrency::ConcRT_ProviderGuid](reference/concurrency-namespace-constants1.md#concrt_providerguid)|동시성 런타임에 대 한 ETW 공급자 식별자입니다.|`f7b697a3-4db5-4d3b-be71-c4d284e6592f`|
 |[concurrency::ContextEventGuid](reference/concurrency-namespace-constants1.md#contexteventguid)|컨텍스트와 관련 된 이벤트를 표시 합니다.|`5727a00f-50be-4519-8256-f7699871fecb`|
@@ -55,14 +56,14 @@ Visual Studio 디버거에는 병렬 **스택** 창, **병렬 작업** 창 및 *
 
 - [concurrency::ResourceManagerEventGuid](reference/concurrency-namespace-constants1.md#resourcemanagereventguid)
 
-[Concurrency:: ConcRT_EventType](reference/concurrency-namespace-enums.md#concrt_eventtype) 열거형은 이벤트에서 추적할 수 있는 작업을 지정 합니다. 예를 들어 `parallel_for` 알고리즘의 입구에서 런타임은 이벤트를 `PPLParallelForEventGuid` 발생 시키고를 작업으로 제공 `CONCRT_EVENT_START` 합니다. 알고리즘이 반환 되기 전에 런타임은 이벤트를 `PPLParallelForEventGuid` 다시 발생 시키고를 작업으로 `CONCRT_EVENT_END` 제공 합니다. `parallel_for`
+[Concurrency:: ConcRT_EventType](reference/concurrency-namespace-enums.md#concrt_eventtype) 열거형은 이벤트에서 추적할 수 있는 작업을 지정 합니다. 예를 들어 알고리즘의 입구에서 `parallel_for` 런타임은 이벤트를 발생 시키고를 `PPLParallelForEventGuid` `CONCRT_EVENT_START` 작업으로 제공 합니다. `parallel_for`알고리즘이 반환 되기 전에 런타임은 이벤트를 다시 발생 시키고를 `PPLParallelForEventGuid` `CONCRT_EVENT_END` 작업으로 제공 합니다.
 
-다음 예제에서는에 `parallel_for`대 한 호출에 대해 추적을 사용 하도록 설정 하는 방법을 보여 줍니다. 는 추적을 `parallel_for` 사용할 수 없기 때문에 런타임에서 첫 번째 호출을 추적 하지 않습니다. 를 `EnableTracing` 호출 하면 런타임에서에 대 한 `parallel_for`두 번째 호출을 추적할 수 있습니다.
+다음 예제에서는에 대 한 호출에 대해 추적을 사용 하도록 설정 하는 방법을 보여 줍니다 `parallel_for` . 는 추적을 사용할 수 없기 때문에 런타임에서 첫 번째 호출을 추적 하지 않습니다 `parallel_for` . 를 호출 하면 `EnableTracing` 런타임에서에 대 한 두 번째 호출을 추적할 수 있습니다 `parallel_for` .
 
 [!code-cpp[concrt-etw#1](../../parallel/concrt/codesnippet/cpp/parallel-diagnostic-tools-concurrency-runtime_1.cpp)]
 
-런타임은 및 `EnableTracing` `DisableTracing`를 호출 하는 횟수를 추적 합니다. 따라서를 여러 번 호출 `EnableTracing` 하는 경우 추적을 사용 `DisableTracing` 하지 않도록 설정 하기 위해 동일한 횟수의 횟수를 호출 해야 합니다.
+런타임은 및를 호출 하는 횟수를 추적 합니다 `EnableTracing` `DisableTracing` . 따라서를 여러 번 호출 하는 경우 `EnableTracing` `DisableTracing` 추적을 사용 하지 않도록 설정 하기 위해 동일한 횟수의 횟수를 호출 해야 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [동시성 런타임](../../parallel/concrt/concurrency-runtime.md)

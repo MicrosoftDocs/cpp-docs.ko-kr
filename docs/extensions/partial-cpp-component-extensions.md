@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 부분 (c + +/CLI 및 c + +/CX)'
 title: partial(C++/CLI 및 C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - partial
 - C++/CX, partial
 ms.assetid: 43adf1f5-10c5-44aa-a66f-7507e2bdabf8
-ms.openlocfilehash: 0f9de5dda1b0838a624431e579e6bc6b328d9013
-ms.sourcegitcommit: d77159732a8e782b2a1b7abea552065f2b6f61c1
+ms.openlocfilehash: 8e6506e0ae5af40f1783241b5783228cfc919862
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93344698"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97173105"
 ---
 # <a name="partial--ccli-and-ccx"></a>partial(C++/CLI 및 C++/CX)
 
@@ -44,7 +45,7 @@ class-key identifier {
 ### <a name="parameters"></a>매개 변수
 
 *class-key*<br/>
-Windows 런타임에서 지원되는 클래스 또는 구조체를 선언하는 키워드입니다. **ref class** , **value class** , **ref struct** 또는 **value struct** 입니다.
+Windows 런타임에서 지원되는 클래스 또는 구조체를 선언하는 키워드입니다. **ref class**, **value class**, **ref struct** 또는 **value struct** 입니다.
 
 *identifier*<br/>
 정의된 형식의 이름입니다.

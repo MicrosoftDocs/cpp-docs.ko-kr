@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: strcat_s, wcscat_s, _mbscat_s, _mbscat_s_l'
 title: strcat_s, wcscat_s, _mbscat_s, _mbscat_s_l
 ms.date: 4/2/2020
 api_name:
@@ -43,12 +44,12 @@ helpviewer_keywords:
 - _mbscat_s_l function
 - appending strings
 ms.assetid: 0f2f9901-c5c5-480b-98bc-f8f690792fc0
-ms.openlocfilehash: f7d890a753638112c4a1bb56cf6093a9510dbee2
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: c0ac9643593b509d4eeae1aca2d60aaa8269aa73
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910657"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171129"
 ---
 # <a name="strcat_s-wcscat_s-_mbscat_s-_mbscat_s_l"></a>strcat_s, wcscat_s, _mbscat_s, _mbscat_s_l
 
@@ -118,7 +119,7 @@ null 종료 소스 문자열 버퍼입니다.
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 성공 시 0이고, 실패 시 오류 코드입니다.
 
@@ -127,12 +128,12 @@ null 종료 소스 문자열 버퍼입니다.
 |*strDestination*|*이면 numberofelements 이벤트가*|*strSource*|반환 값|*Strdestination* 의 내용|
 |----------------------|------------------------|-----------------|------------------|----------------------------------|
 |**NULL** 또는 종결 되지 않음|any|any|**EINVAL**|수정 안 됨|
-|any|any|**N**|**EINVAL**|*Strdestination*[0]을 0으로 설정 합니다.|
+|any|any|**NULL**|**EINVAL**|*Strdestination*[0]을 0으로 설정 합니다.|
 |any|0 또는 너무 작음|any|**ERANGE**|*Strdestination*[0]을 0으로 설정 합니다.|
 
 ## <a name="remarks"></a>설명
 
-**Strcat_s** 함수는 *Strsource* 를 *strsource* 에 추가 하 고 결과 문자열을 null 문자를 사용 하 여 종료 합니다. *Strsource* 의 초기 문자는 *strsource*의 종료 null 문자를 덮어씁니다. 원본 및 대상 문자열이 겹치면 **strcat_s** 의 동작이 정의 되지 않습니다.
+**Strcat_s** 함수는 *Strsource* 를 *strsource* 에 추가 하 고 결과 문자열을 null 문자를 사용 하 여 종료 합니다. *Strsource* 의 초기 문자는 *strsource* 의 종료 null 문자를 덮어씁니다. 원본 및 대상 문자열이 겹치면 **strcat_s** 의 동작이 정의 되지 않습니다.
 
 두 번째 매개 변수는 버퍼의 나머지 크기가 아닌 전체 크기입니다.
 
@@ -143,9 +144,9 @@ strcat_s(buf, 16, " End");               // Correct
 strcat_s(buf, 16 - strlen(buf), " End"); // Incorrect
 ```
 
-**wcscat_s** 및 **_mbscat_s** 는 **strcat_s**의 와이드 문자 및 멀티 바이트 문자 버전입니다. **Wcscat_s** 의 인수 및 반환 값은 와이드 문자 문자열입니다. **_mbscat_s** 의 이러한 문자열은 멀티 바이트 문자열입니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
+**wcscat_s** 및 **_mbscat_s** 는 **strcat_s** 의 와이드 문자 및 멀티 바이트 문자 버전입니다. **Wcscat_s** 의 인수 및 반환 값은 와이드 문자 문자열입니다. **_mbscat_s** 의 이러한 문자열은 멀티 바이트 문자열입니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
 
-*Strdestination* 이 null 포인터 이거나 null로 종료 되지 않거나 *strdestination* 가 **null** 포인터 이거나 대상 문자열이 너무 작은 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **EINVAL** 를 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
+*Strdestination* 이 null 포인터 이거나 null로 종료 되지 않거나 *strdestination* 가 **null** 포인터 이거나 대상 문자열이 너무 작은 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **EINVAL** 를 반환 하 고 **errno** 를 **EINVAL** 로 설정 합니다.
 
 **_L** 접미사가 있는 함수 버전의 동작은 같지만 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
@@ -175,7 +176,7 @@ C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 �
 
 [strcpy_s, wcscpy_s, _mbscpy_s](strcpy-s-wcscpy-s-mbscpy-s.md)의 코드 예제를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [문자열 조작](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)<br/>

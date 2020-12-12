@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 명령이 아닌 메시지가 해당 처리기에 도달 하는 방법'
 title: 명령이 아닌 메시지가 해당 처리기에 도달하는 방법
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - Windows messages [MFC], routing
 - message handling [MFC], noncommand messages
 ms.assetid: e7df8aef-9fae-41f4-9c11-881d8465f602
-ms.openlocfilehash: c7b2bf819c5305da4039fae172578298d3b4e609
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: e337a62a731e7ed0832b6cd28d1f56024247c176
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618504"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97172819"
 ---
 # <a name="how-noncommand-messages-reach-their-handlers"></a>명령이 아닌 메시지가 해당 처리기에 도달하는 방법
 
@@ -22,4 +23,4 @@ ms.locfileid: "84618504"
 
 ## <a name="see-also"></a>참고 항목
 
-[프레임워크가 처리기를 호출하는 방법](how-the-framework-calls-a-handler.md)
+[프레임 워크가 처리기를 호출 하는 방법](how-the-framework-calls-a-handler.md)

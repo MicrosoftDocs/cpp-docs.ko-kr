@@ -1,4 +1,5 @@
 ---
+description: Cancellation_token_registration 클래스에 대해 자세히 알아보세요.
 title: cancellation_token_registration 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - cancellation_token_registration class
 ms.assetid: 823d63f4-7233-4d65-8976-6152ccf12d0e
-ms.openlocfilehash: 9342841e207c93b66521c2fc742c1b1114682f78
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 1901e5132a9bad6849b1b00a6be63caf9afc9170
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142246"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97172143"
 ---
 # <a name="cancellation_token_registration-class"></a>cancellation_token_registration 클래스
 
@@ -25,24 +26,24 @@ ms.locfileid: "77142246"
 class cancellation_token_registration;
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
 |[cancellation_token_registration](#ctor)||
 |[~ cancellation_token_registration 소멸자](#dtor)||
 
 ### <a name="public-operators"></a>Public 연산자
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|[operator!=](#operator_neq)||
-|[operator=](#operator_eq)||
-|[연산자==](#operator_eq_eq)||
+|[연산자! =](#operator_neq)||
+|[연산자 =](#operator_eq)||
+|[연산자 = =](#operator_eq_eq)||
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `cancellation_token_registration`
 
@@ -50,15 +51,15 @@ class cancellation_token_registration;
 
 **헤더:** pplcancellation_token. h
 
-**네임스페이스:** 동시성
+**네임 스페이스:** 동시성
 
-## <a name="dtor"></a>~ cancellation_token_registration
+## <a name="cancellation_token_registration"></a><a name="dtor"></a> ~ cancellation_token_registration
 
 ```cpp
 ~cancellation_token_registration();
 ```
 
-## <a name="ctor"></a>cancellation_token_registration
+## <a name="cancellation_token_registration"></a><a name="ctor"></a> cancellation_token_registration
 
 ```cpp
 cancellation_token_registration();
@@ -71,9 +72,9 @@ cancellation_token_registration(cancellation_token_registration&& _Src);
 ### <a name="parameters"></a>매개 변수
 
 *_Src*<br/>
-복사 하거나 이동할 `cancellation_token_registration`입니다.
+`cancellation_token_registration`복사 하거나 이동할입니다.
 
-## <a name="operator_neq"></a> operator!=
+## <a name="operator"></a><a name="operator_neq"></a> 연산자! =
 
 ```cpp
 bool operator!= (const cancellation_token_registration& _Rhs) const;
@@ -84,9 +85,9 @@ bool operator!= (const cancellation_token_registration& _Rhs) const;
 *_Rhs*<br/>
 비교할 `cancellation_token_registration`입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-## <a name="operator_eq"></a>연산자 =
+## <a name="operator"></a><a name="operator_eq"></a> 연산자 =
 
 ```cpp
 cancellation_token_registration& operator= (const cancellation_token_registration& _Src);
@@ -97,11 +98,11 @@ cancellation_token_registration& operator= (cancellation_token_registration&& _S
 ### <a name="parameters"></a>매개 변수
 
 *_Src*<br/>
-할당할 `cancellation_token_registration`입니다.
+`cancellation_token_registration`할당할입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-## <a name="operator_eq_eq"></a>연산자 = =
+## <a name="operator"></a><a name="operator_eq_eq"></a> 연산자 = =
 
 ```cpp
 bool operator== (const cancellation_token_registration& _Rhs) const;
@@ -112,8 +113,8 @@ bool operator== (const cancellation_token_registration& _Rhs) const;
 *_Rhs*<br/>
 비교할 `cancellation_token_registration`입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ## <a name="see-also"></a>참고 항목
 
-[concurrency 네임스페이스](concurrency-namespace.md)
+[concurrency 네임 스페이스](concurrency-namespace.md)

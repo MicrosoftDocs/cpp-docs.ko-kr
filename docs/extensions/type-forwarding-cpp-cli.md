@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 형식 전달 (c + +/CLI)'
 title: 형식 전달(C++/CLI)
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - type forwarding, C++
 ms.assetid: ae730b69-0c27-41cc-84e1-3132783866ea
-ms.openlocfilehash: 0803ecc2ffb2da2748b1ef063481aa2571f27f50
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 360ca624103c8021c17300f897b1091c13e898a3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80171933"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97172884"
 ---
 # <a name="type-forwarding-ccli"></a>형식 전달(C++/CLI)
 
@@ -33,7 +34,7 @@ Windows 런타임에서는 이 기능이 지원되지 않습니다.
 
 ### <a name="parameters"></a>매개 변수
 
-*신규*<br/>
+*new*<br/>
 형식 정의를 이동하는 대상 어셈블리입니다.
 
 *type*<br/>
@@ -59,7 +60,7 @@ Windows 런타임에서는 이 기능이 지원되지 않습니다.
 
 - 열거형
 
-- 인터페이스
+- interfaces
 
 다음 형식은 전달할 수 없습니다.
 

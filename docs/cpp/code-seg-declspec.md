@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: code_seg (__declspec)'
 title: code_seg (__declspec)
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - code_seg __declspec keyword
 ms.assetid: ad3c1105-15d3-4e08-b7b9-e4bd9d7b6aa0
-ms.openlocfilehash: 22703e92b1a127378c965ce12bcc4e5475b3e452
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: b382e0a758c28ffab297badda7670c1de3b08d32
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80180838"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171097"
 ---
 # <a name="code_seg-__declspec"></a>code_seg (__declspec)
 
@@ -25,13 +26,13 @@ ms.locfileid: "80180838"
 __declspec(code_seg("segname")) declarator
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 `__declspec(code_seg(...))` 특성을 사용하면 메모리에 개별적으로 페이징 또는 잠글 수 있는 별도의 명명된 세그먼트에 코드를 배치할 수 있습니다. 이 특성을 사용하여 인스턴스화한 템플릿과 컴파일러에서 생성된 코드의 배치를 제어할 수 있습니다.
 
 *세그먼트* 는 메모리에 하나의 단위로 로드 되는 .obj 파일의 명명 된 데이터 블록입니다. *텍스트 세그먼트* 는 실행 코드를 포함 하는 세그먼트입니다. 용어 *섹션* 은 세그먼트와 같은 의미로 사용 되는 경우가 많습니다.
 
-`declarator`가 지정될 때 생성되는 개체 코드는 좁은 문자열 리터럴인 `segname`에서 지정한 텍스트 세그먼트에 배치됩니다. 이름 `segname` 선언에서 사용 하기 전에 [section](../preprocessor/section.md) pragma에 지정할 필요가 없습니다. 기본적으로 `code_seg`가 지정되지 않으면 개체 코드가 .text라는 세그먼트에 배치됩니다. **Code_seg** 특성은 모든 기존 [#pragma code_seg](../preprocessor/code-seg.md) 지시어를 재정의 합니다. 멤버 함수에 적용 된 **code_seg** 특성은 바깥쪽 클래스에 적용 된 모든 **code_seg** 특성을 재정의 합니다.
+`declarator`가 지정될 때 생성되는 개체 코드는 좁은 문자열 리터럴인 `segname`에서 지정한 텍스트 세그먼트에 배치됩니다. 이 이름은 `segname` 선언에서 사용할 수 있기 전에 [section](../preprocessor/section.md) pragma에 지정할 필요가 없습니다. 기본적으로 `code_seg`가 지정되지 않으면 개체 코드가 .text라는 세그먼트에 배치됩니다. **Code_seg** 특성은 모든 기존 [#pragma code_seg](../preprocessor/code-seg.md) 지시어를 재정의 합니다. 멤버 함수에 적용 된 **code_seg** 특성은 바깥쪽 클래스에 적용 된 모든 **code_seg** 특성을 재정의 합니다.
 
 엔터티에 **code_seg** 특성이 있는 경우 동일한 엔터티의 모든 선언 및 정의에 동일한 **code_seg** 특성이 있어야 합니다. 기본 클래스에 **code_seg** 특성이 있는 경우 파생 클래스에는 동일한 특성이 있어야 합니다.
 
@@ -105,7 +106,7 @@ int main()
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [__declspec](../cpp/declspec.md)<br/>
 [키워드](../cpp/keywords-cpp.md)

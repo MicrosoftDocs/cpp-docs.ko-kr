@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: cab, cabsf, cabsf'
 title: cabs, cabsf, cabsl
 ms.date: 11/04/2016
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - cabsf function
 - cabsl function
 ms.assetid: 6b8eb453-cc8f-4972-bebf-351cbdfdfc15
-ms.openlocfilehash: ac31df51490880cdd831a34c8adeed9223aafc21
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2ae24a0b7c158c2a13a595e946ee79b0760d75ec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220745"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171662"
 ---
 # <a name="cabs-cabsf-cabsl"></a>cabs, cabsf, cabsl
 
@@ -66,12 +67,12 @@ long double cabsl(
 
 ### <a name="parameters"></a>매개 변수
 
-*-*<br/>
+*z*<br/>
 복소수입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-*Z*의 절대값입니다.
+*Z* 의 절대값입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -81,7 +82,7 @@ C + +에서는 오버 로드를 허용 하므로 **_Fcomplex** 또는 **_Lcomple
 
 |루틴에서 반환된 값|C 헤더|C++ 헤더|
 |-------------|--------------|------------------|
-|**cab**, **cabsf**, **cabsf**|\<complex.h>|\<ccomplex>|
+|**cab**,               **cabsf**, **cabsf**|\<complex.h>|\<ccomplex>|
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 

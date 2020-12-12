@@ -1,15 +1,16 @@
 ---
+description: '자세히 알아보기: 병렬 알고리즘'
 title: 병렬 알고리즘
 ms.date: 11/19/2018
 helpviewer_keywords:
 - parallel algorithms [Concurrency Runtime]
 ms.assetid: 045dca7b-4d73-4558-a44c-383b88a28473
-ms.openlocfilehash: 2c9fd5bd51bfeeaa17ac6f1118798f51b93938d6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9e1762167277654334b3dcb4e26d3a5c8fbe1a5c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87194500"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97172481"
 ---
 # <a name="parallel-algorithms"></a>병렬 알고리즘
 
@@ -17,7 +18,7 @@ PPL (병렬 패턴 라이브러리)은 데이터 컬렉션에 대해 동시에 �
 
 병렬 알고리즘은 동시성 런타임의 기존 기능으로 구성 됩니다. 예를 들어 [concurrency::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for) 알고리즘은 [concurrency:: structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) 개체를 사용 하 여 병렬 루프 반복을 수행 합니다. `parallel_for`사용 가능한 컴퓨팅 리소스 수를 고려 하 여 알고리즘 파티션이 최적의 방식으로 작동 합니다.
 
-## <a name="sections"></a><a name="top"></a>섹션이
+## <a name="sections"></a><a name="top"></a> 섹션이
 
 - [parallel_for 알고리즘](#parallel_for)
 
@@ -39,11 +40,11 @@ PPL (병렬 패턴 라이브러리)은 데이터 컬렉션에 대해 동시에 �
 
   - [정렬 알고리즘 선택](#choose_sort)
 
-## <a name="the-parallel_for-algorithm"></a><a name="parallel_for"></a>Parallel_for 알고리즘
+## <a name="the-parallel_for-algorithm"></a><a name="parallel_for"></a> Parallel_for 알고리즘
 
 [동시성::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for) 알고리즘은 반복적으로 동일한 작업을 반복적으로 수행 합니다. 이러한 각 작업은 반복 값에 의해 매개 변수화 됩니다. 이 알고리즘은 해당 루프의 반복 간에 리소스를 공유 하지 않는 루프 본문이 있는 경우에 유용 합니다.
 
-`parallel_for`알고리즘은 병렬 실행을 위한 최적의 방법으로 작업을 분할 합니다. 작업 부하가 분산되지 않은 경우 작업 가로채기 알고리즘과 범위 도용을 사용하여 이러한 파티션을 분산시킵니다. 한 루프 반복이 협조적으로 차단 되 면 런타임은 현재 스레드에 할당 된 반복 범위를 다른 스레드나 프로세서에 재분배 합니다. 마찬가지로 스레드가 반복 범위를 완료 하면 런타임은 다른 스레드의 작업을 해당 스레드로 재배포 합니다. 이 `parallel_for` 알고리즘은 *중첩 된 병렬 처리*도 지원 합니다. 하나의 병렬 루프가 다른 병렬 루프를 포함 하는 경우 런타임은 병렬 실행을 위한 효율적인 방법으로 루프 본문 간의 처리 리소스를 조정 합니다.
+`parallel_for`알고리즘은 병렬 실행을 위한 최적의 방법으로 작업을 분할 합니다. 작업 부하가 분산되지 않은 경우 작업 가로채기 알고리즘과 범위 도용을 사용하여 이러한 파티션을 분산시킵니다. 한 루프 반복이 협조적으로 차단 되 면 런타임은 현재 스레드에 할당 된 반복 범위를 다른 스레드나 프로세서에 재분배 합니다. 마찬가지로 스레드가 반복 범위를 완료 하면 런타임은 다른 스레드의 작업을 해당 스레드로 재배포 합니다. 이 `parallel_for` 알고리즘은 *중첩 된 병렬 처리* 도 지원 합니다. 하나의 병렬 루프가 다른 병렬 루프를 포함 하는 경우 런타임은 병렬 실행을 위한 효율적인 방법으로 루프 본문 간의 처리 리소스를 조정 합니다.
 
 `parallel_for` 알고리즘에는 여러 개의 오버로드된 버전이 있습니다. 첫 번째 버전은 시작 값, 끝 값 및 작업 함수 (람다 식, 함수 개체 또는 함수 포인터)를 사용 합니다. 두 번째 버전은 시작 값, 끝 값, 단계별로 실행 되는 값 및 작업 함수를 사용 합니다. 이 함수의 첫 번째 버전은 단계 값으로 1을 사용 합니다. 나머지 버전은 `parallel_for`가 여러 스레드 간에 범위를 분할하는 방법을 지정하는 파티셔너 개체를 사용합니다. 파티 셔 너는이 문서의 [분할 작업](#partitions) 섹션에 자세히 설명 되어 있습니다.
 
@@ -82,7 +83,7 @@ PPL (병렬 패턴 라이브러리)은 데이터 컬렉션에 대해 동시에 �
 
 [[맨 위로](#top)이동]
 
-## <a name="the-parallel_for_each-algorithm"></a><a name="parallel_for_each"></a>Parallel_for_each 알고리즘
+## <a name="the-parallel_for_each-algorithm"></a><a name="parallel_for_each"></a> Parallel_for_each 알고리즘
 
 [Concurrency::p arallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) 알고리즘은 c + + 표준 라이브러리에서 제공 하는 것과 같은 반복적인 컨테이너에서 작업을 병렬로 수행 합니다. 알고리즘에서 사용 하는 것과 동일한 분할 논리를 사용 `parallel_for` 합니다.
 
@@ -108,7 +109,7 @@ PPL (병렬 패턴 라이브러리)은 데이터 컬렉션에 대해 동시에 �
 
 [[맨 위로](#top)이동]
 
-## <a name="the-parallel_invoke-algorithm"></a><a name="parallel_invoke"></a>Parallel_invoke 알고리즘
+## <a name="the-parallel_invoke-algorithm"></a><a name="parallel_invoke"></a> Parallel_invoke 알고리즘
 
 [Concurrency::p arallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) 알고리즘은 작업 집합을 병렬로 실행 합니다. 각 작업이 완료 될 때까지 반환 되지 않습니다. 이 알고리즘은 동시에 실행 하려는 독립적인 태스크가 여러 개 있는 경우에 유용 합니다.
 
@@ -132,16 +133,16 @@ PPL (병렬 패턴 라이브러리)은 데이터 컬렉션에 대해 동시에 �
 
 [[맨 위로](#top)이동]
 
-## <a name="the-parallel_transform-and-parallel_reduce-algorithms"></a><a name="parallel_transform_reduce"></a>Parallel_transform 및 parallel_reduce 알고리즘
+## <a name="the-parallel_transform-and-parallel_reduce-algorithms"></a><a name="parallel_transform_reduce"></a> Parallel_transform 및 parallel_reduce 알고리즘
 
 [동시성::p arallel_transform](reference/concurrency-namespace-functions.md#parallel_transform) 및 [동시성::p Arallel_reduce](reference/concurrency-namespace-functions.md#parallel_reduce) 알고리즘은 c + + 표준 라이브러리 알고리즘 [std:: transform](../../standard-library/algorithm-functions.md#transform) 및 [std:: 누적](../../standard-library/numeric-functions.md#accumulate)의 병렬 버전입니다. 동시성 런타임 버전은 작업 순서가 병렬로 실행 되기 때문에 확인 되지 않는다는 점을 제외 하 고 c + + 표준 라이브러리 버전과 동일 하 게 동작 합니다. 병렬 처리에 따른 성능 및 확장성 효과를 볼만큼 큰 집합으로 작업할 때 이 알고리즘을 사용합니다.
 
 > [!IMPORTANT]
 > `parallel_transform` 및 `parallel_reduce` 알고리즘은 임의 액세스, 양방향 및 정방향 반복기만 지원합니다. 이들 반복기는 안정적인 메모리 주소를 생성하기 때문입니다. 또한 이러한 반복기는 l-value가 아닌 값을 생성 해야 합니다 **`const`** .
 
-### <a name="the-parallel_transform-algorithm"></a><a name="parallel_transform"></a>Parallel_transform 알고리즘
+### <a name="the-parallel_transform-algorithm"></a><a name="parallel_transform"></a> Parallel_transform 알고리즘
 
-`parallel transform` 알고리즘을 사용하여 많은 데이터 병렬화 작업을 수행할 수 있습니다. 예를 들어 다음을 수행할 수 있습니다.
+`parallel transform` 알고리즘을 사용하여 많은 데이터 병렬화 작업을 수행할 수 있습니다. 예를 들어, 다음을 수행할 수 있습니다.
 
 - 이미지 밝기를 조정하고 기타 이미지 처리 작업을 수행합니다.
 
@@ -163,7 +164,7 @@ PPL (병렬 패턴 라이브러리)은 데이터 컬렉션에 대해 동시에 �
 > [!IMPORTANT]
 > `parallel_transform`의 출력에 제공하는 반복기는 입력 반복기와 완전히 겹치거나 아예 겹치지 않아야 합니다. 입력 및 출력 반복기가 부분적으로 겹치는 경우 이 알고리즘의 동작은 지정되지 않습니다.
 
-### <a name="the-parallel_reduce-algorithm"></a><a name="parallel_reduce"></a>Parallel_reduce 알고리즘
+### <a name="the-parallel_reduce-algorithm"></a><a name="parallel_reduce"></a> Parallel_reduce 알고리즘
 
 `parallel_reduce` 알고리즘은 결합형 속성을 만족하는 작업 시퀀스가 있을 경우 유용합니다. 이 알고리즘에는 교환 속성이 필요 하지 않습니다. 다음은에서 수행할 수 있는 몇 가지 작업입니다 `parallel_reduce` .
 
@@ -181,7 +182,7 @@ PPL (병렬 패턴 라이브러리)은 데이터 컬렉션에 대해 동시에 �
 
 대부분의 경우 `parallel_reduce` `parallel_for_each` 알고리즘을 [concurrency:: 결합할](../../parallel/concrt/reference/combinable-class.md) 수 있는 클래스와 함께 사용 하는 것에 대 한 축약형 이라고 생각할 수 있습니다.
 
-### <a name="example-performing-map-and-reduce-in-parallel"></a><a name="map_reduce_example"></a>예: 매핑 수행 및 병렬 축소
+### <a name="example-performing-map-and-reduce-in-parallel"></a><a name="map_reduce_example"></a> 예: 매핑 수행 및 병렬 축소
 
 *Map* 연산은 시퀀스의 각 값에 함수를 적용 합니다. *감소* 연산은 시퀀스의 요소를 하나의 값으로 결합 합니다. C + + 표준 라이브러리 [std:: transform](../../standard-library/algorithm-functions.md#transform) 및 [std:: 누적](../../standard-library/numeric-functions.md#accumulate) 함수를 사용 하 여 맵 및 감소 작업을 수행할 수 있습니다. 그러나 많은 문제에 대해 `parallel_transform` 알고리즘을 사용하여 매핑 작업을 병렬로 수행하고, `parallel_reduce` 알고리즘을 사용하여 줄이기 작업을 병렬로 수행할 수 있습니다.
 
@@ -193,7 +194,7 @@ PPL (병렬 패턴 라이브러리)은 데이터 컬렉션에 대해 동시에 �
 
 [[맨 위로](#top)이동]
 
-## <a name="partitioning-work"></a><a name="partitions"></a>분할 작업
+## <a name="partitioning-work"></a><a name="partitions"></a> 분할 작업
 
 데이터 원본에 대 한 작업을 병렬화 하기 위한 필수 단계는 여러 스레드에서 동시에 액세스할 수 있는 여러 섹션으로 소스를 *분할* 하는 것입니다. 파티셔너는 병렬 알고리즘이 여러 스레드로 범위를 분할하는 방법을 지정합니다. 이 문서의 앞부분에서 설명한 바와 같이 PPL은 초기 작업 부하를 만든 다음 작업 부하가 분산되지 않은 경우 작업 가로채기 알고리즘과 범위 도용을 사용하여 이러한 파티션을 분산시키는 기본 분할 메커니즘을 사용합니다. 예를 들어, 하나의 루프 반복이 반복 범위를 마치면 런타임에서 스레드 간에 작업을 재배포합니다. 그러나 시나리오에 따라 문제에 더 적합한 다른 분할 메커니즘을 지정할 수 있습니다.
 
@@ -229,7 +230,7 @@ PPL (병렬 패턴 라이브러리)은 데이터 컬렉션에 대해 동시에 �
 
 [[맨 위로](#top)이동]
 
-## <a name="parallel-sorting"></a><a name="parallel_sorting"></a>병렬 정렬
+## <a name="parallel-sorting"></a><a name="parallel_sorting"></a> 병렬 정렬
 
 PPL은 [동시성::p arallel_sort](reference/concurrency-namespace-functions.md#parallel_sort), [동시성::p arallel_buffered_sort](reference/concurrency-namespace-functions.md#parallel_buffered_sort)및 [동시성::p arallel_radixsort](reference/concurrency-namespace-functions.md#parallel_radixsort)의 세 가지 정렬 알고리즘을 제공 합니다. 이러한 정렬 알고리즘은 병렬로 정렬의 효과를 볼 수 있는 데이터 집합이 있는 경우 유용합니다. 특히 병렬로 정렬은 큰 데이터 세트이 있거나 많은 계산이 필요한 비교 작업을 사용하여 데이터를 정렬할 때 유용합니다. 각 알고리즘은 요소를 정렬합니다.
 
@@ -276,7 +277,7 @@ PPL은 [동시성::p arallel_sort](reference/concurrency-namespace-functions.md#
 
 해시 함수는 정수 계열 형식을 반환 해야 합니다 ([std:: is_integral:: value](../../standard-library/is-integral-class.md) 는 이어야 함 **`true`** ). 이 정수 계열 형식을 `size_t` 형식으로 변환할 수 있어야 합니다.
 
-### <a name="choosing-a-sorting-algorithm"></a><a name="choose_sort"></a>정렬 알고리즘 선택
+### <a name="choosing-a-sorting-algorithm"></a><a name="choose_sort"></a> 정렬 알고리즘 선택
 
 대부분의 경우 `parallel_sort`는 적절한 속도와 메모리 성능을 제공합니다. 그러나 데이터 집합 크기, 사용 가능한 프로세서 수 또는 비교 함수의 복잡성을 늘리면 `parallel_buffered_sort` 또는 `parallel_radixsort` 성능이 향상될 수 있습니다. 주어진 시나리오에서 정렬 알고리즘을 사용할지 여부를 결정하려면 대표적인 컴퓨터 구성에서 일반적인 데이터를 정렬하는데 걸리는 시간을 실제로 측정하는 것이 가장 좋습니다. 정렬 전략을 선택할 때 다음 지침을 염두에 두십시오.
 
@@ -292,7 +293,7 @@ PPL은 [동시성::p arallel_sort](reference/concurrency-namespace-functions.md#
 
 사용 가능한 컴퓨팅 리소스가 많거나 비교 함수나 해시 함수가 비교적 많은 양의 작업을 수행할 때도 작은 데이터 세트을 병렬로 정렬하는 것은 가치가 없습니다. [Std:: sort](../../standard-library/algorithm-functions.md#sort) 함수를 사용 하 여 작은 데이터 집합을 정렬할 수 있습니다. ( `parallel_sort` 및 `parallel_buffered_sort` `sort` 는 데이터 집합 보다 큰 청크 크기를 지정할 때를 호출 하지만는 `parallel_buffered_sort` O (N) 공간을 할당 해야 하므로 잠금 경합 또는 메모리 할당으로 인해 추가 시간이 소요 될 수 있습니다.)
 
-메모리를 보존해야 하거나 메모리 할당자가 잠금 경합을 따르는 경우 `parallel_sort`를 사용하여 중간 크기의 데이터 세트을 정렬하십시오. `parallel_sort`추가 공간이 필요 하지 않습니다. 다른 알고리즘에는 O (N) 공간이 필요 합니다.
+메모리를 보존해야 하거나 메모리 할당자가 잠금 경합을 따르는 경우 `parallel_sort`를 사용하여 중간 크기의 데이터 세트을 정렬하십시오. `parallel_sort` 추가 공간이 필요 하지 않습니다. 다른 알고리즘에는 O (N) 공간이 필요 합니다.
 
 `parallel_buffered_sort`를 사용 하 여 중간 크기의 데이터 집합을 정렬 하 고 응용 프로그램이 추가 O (N) 공간 요구 사항을 충족 하는 경우를 사용 합니다. `parallel_buffered_sort`는 많은 계산이 필요한 비교 함수 또는 해시 함수나 많은 컴퓨팅 리소스가 있을 경우 특히 유용합니다.
 

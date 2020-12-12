@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: Bessel 함수: _j0, _j1, _jn, _y0, _y1, _yn'
 title: 'Bessel 함수: _j0, _j1, _jn, _y0, _y1, _yn'
 ms.date: 4/2/2020
 api_name:
@@ -48,12 +49,12 @@ helpviewer_keywords:
 - _y1 function
 - _yn function
 ms.assetid: a21a8bf1-df9d-4ba0-a8c2-e7ef71921d96
-ms.openlocfilehash: ef914d542d058898cf9b16478fd40ef4b0725674
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 8ada869b615e26d004e10ccc3355e83c9772888f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913469"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171870"
 ---
 # <a name="bessel-functions-_j0-_j1-_jn-_y0-_y1-_yn"></a>Bessel 함수: _j0, _j1, _jn, _y0, _y1, _yn
 
@@ -92,19 +93,19 @@ double _yn(
 *n*<br/>
 Bessel 함수의 정수 순서입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-이러한 각 루틴은 *x*의 Bessel 함수를 반환 합니다. **_Y0**, **_y1**또는 **_yn** 함수에서 *x* 가 음수 이면 루틴은 **errno** 를 **edom**으로 설정 하 고, **_DOMAIN** 오류 메시지를 **stderr**에 출력 하 고, **_HUGE_VAL**를 반환 합니다. **_Matherr**를 사용 하 여 오류 처리를 수정할 수 있습니다.
+이러한 각 루틴은 *x* 의 Bessel 함수를 반환 합니다. **_Y0**, **_y1** 또는 **_yn** 함수에서 *x* 가 음수 이면 루틴은 **errno** 를 **edom** 으로 설정 하 고, **_DOMAIN** 오류 메시지를 **stderr** 에 출력 하 고, **_HUGE_VAL** 를 반환 합니다. **_Matherr** 를 사용 하 여 오류 처리를 수정할 수 있습니다.
 
 ## <a name="remarks"></a>설명
 
-**_J0**, **_j1**및 **_jn** 루틴은 첫 번째 종류의 Bessel 함수를 각각 0, 1, n 순서로 반환 합니다.
+**_J0**, **_j1** 및 **_jn** 루틴은 첫 번째 종류의 Bessel 함수를 각각 0, 1, n 순서로 반환 합니다.
 
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|
 |± **QNAN**, **IND**|**올바르지 않음**|**_DOMAIN**|
 
-**_Y0**, **_y1**및 **_yn** 루틴은 두 번째 종류의 Bessel 함수를 각각 0, 1, n 순서로 반환 합니다.
+**_Y0**, **_y1** 및 **_yn** 루틴은 두 번째 종류의 Bessel 함수를 각각 0, 1, n 순서로 반환 합니다.
 
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|
@@ -118,7 +119,7 @@ Bessel 함수의 정수 순서입니다.
 
 |루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
-|**_j0**, **_j1**, **_jn**, **_y0**, **_y1**, **_yn**|\<cmath> (C++), \<math.h> (C, C++)|
+|**_j0**, **_j1**, **_jn**, **_y0**, **_y1**, **_yn**|\<cmath> (C + +), \<math.h> (C, C + +)|
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
@@ -163,7 +164,7 @@ Bessel functions for x = 2.387000:
    Second 4      _yn( 4, x )  -1.626833
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [부동 소수점 지원](../../c-runtime-library/floating-point-support.md)<br/>
 [_matherr](matherr.md)<br/>

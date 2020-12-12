@@ -1,4 +1,5 @@
 ---
+description: Affinity_partitioner 클래스에 대해 자세히 알아보세요.
 title: affinity_partitioner 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - affinity_partitioner class
 ms.assetid: 31bf7bb1-bd01-491c-9760-d9d60edfccad
-ms.openlocfilehash: 0ae6bbee49d1b8873190a7054e55f65b40b31b13
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 44aa693d5007507e33f062a673713d1ddbda3172
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142884"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97172325"
 ---
 # <a name="affinity_partitioner-class"></a>affinity_partitioner 클래스
 
@@ -29,12 +30,12 @@ class affinity_partitioner;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
 |[affinity_partitioner](#ctor)|`affinity_partitioner` 개체를 생성합니다.|
-|[~ affinity_partitioner 소멸자](#dtor)|`affinity_partitioner` 개체를 소멸 시킵니다.|
+|[~ affinity_partitioner 소멸자](#dtor)|개체를 소멸 시킵니다 `affinity_partitioner` .|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `affinity_partitioner`
 
@@ -42,17 +43,17 @@ class affinity_partitioner;
 
 **헤더:** ppl. h
 
-**네임스페이스:** 동시성
+**네임 스페이스:** 동시성
 
-## <a name="dtor"></a>~ affinity_partitioner
+## <a name="affinity_partitioner"></a><a name="dtor"></a> ~ affinity_partitioner
 
-`affinity_partitioner` 개체를 소멸 시킵니다.
+개체를 소멸 시킵니다 `affinity_partitioner` .
 
 ```cpp
 ~affinity_partitioner();
 ```
 
-## <a name="ctor"></a>affinity_partitioner
+## <a name="affinity_partitioner"></a><a name="ctor"></a> affinity_partitioner
 
 `affinity_partitioner` 개체를 생성합니다.
 
@@ -62,4 +63,4 @@ affinity_partitioner();
 
 ## <a name="see-also"></a>참고 항목
 
-[concurrency 네임스페이스](concurrency-namespace.md)
+[concurrency 네임 스페이스](concurrency-namespace.md)

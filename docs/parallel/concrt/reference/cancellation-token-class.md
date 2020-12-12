@@ -1,4 +1,5 @@
 ---
+description: Cancellation_token 클래스에 대해 자세히 알아보세요.
 title: cancellation_token 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - cancellation_token class
 ms.assetid: 2787df2b-e9d3-440e-bfd0-841a46a9835f
-ms.openlocfilehash: 6f1e204c87a6bc940227416696e3cee233271e64
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3f97d0f6e55f06b4b75b22cc1ae6eefa05b50f85
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213868"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97172195"
 ---
 # <a name="cancellation_token-class"></a>cancellation_token 클래스
 
@@ -34,7 +35,7 @@ class cancellation_token;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[cancellation_token](#ctor)||
 |[~ cancellation_token 소멸자](#dtor)||
@@ -67,13 +68,13 @@ class cancellation_token;
 
 **네임 스페이스:** 동시성
 
-## <a name="cancellation_token"></a><a name="dtor"></a>~ cancellation_token
+## <a name="cancellation_token"></a><a name="dtor"></a> ~ cancellation_token
 
 ```cpp
 ~cancellation_token();
 ```
 
-## <a name="cancellation_token"></a><a name="ctor"></a>cancellation_token
+## <a name="cancellation_token"></a><a name="ctor"></a> cancellation_token
 
 ```cpp
 cancellation_token(const cancellation_token& _Src);
@@ -86,7 +87,7 @@ cancellation_token(cancellation_token&& _Src);
 *_Src*<br/>
 복사 하거나 이동할 cancellation_token입니다.
 
-## <a name="deregister_callback"></a><a name="deregister_callback"></a>deregister_callback
+## <a name="deregister_callback"></a><a name="deregister_callback"></a> deregister_callback
 
 등록 시 반환된 `register` 개체를 기반으로 `cancellation_token_registration` 메서드를 통해 이전에 등록한 콜백을 제거합니다.
 
@@ -99,7 +100,7 @@ void deregister_callback(const cancellation_token_registration& _Registration) c
 *_Registration*<br/>
 `cancellation_token_registration` 개체는 등록을 취소할 콜백에 해당합니다. `register` 메서드에 대한 호출에서 이 토큰이 이전에 반환됐어야 합니다.
 
-## <a name="is_cancelable"></a><a name="is_cancelable"></a>is_cancelable
+## <a name="is_cancelable"></a><a name="is_cancelable"></a> is_cancelable
 
 이 토큰을 취소할 수 있는지 여부를 나타내는 값을 반환합니다.
 
@@ -107,11 +108,11 @@ void deregister_callback(const cancellation_token_registration& _Registration) c
 bool is_cancelable() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 토큰을 취소할 수 있는지 여부를 나타냅니다.
 
-## <a name="is_canceled"></a><a name="is_canceled"></a>is_canceled
+## <a name="is_canceled"></a><a name="is_canceled"></a> is_canceled
 
 **`true`** 토큰이 취소 된 경우를 반환 합니다.
 
@@ -119,11 +120,11 @@ bool is_cancelable() const;
 bool is_canceled() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 토큰이 취소 되었으면 값이 고, 그렇지 않으면 값 **`false`** 입니다.
 
-## <a name="none"></a><a name="none"></a>없음을
+## <a name="none"></a><a name="none"></a> 없음을
 
 취소에 영향을 받을 수 없는 취소 토큰을 반환합니다.
 
@@ -131,11 +132,11 @@ bool is_canceled() const;
 static cancellation_token none();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 취소할 수 없는 취소 토큰입니다.
 
-## <a name="operator"></a><a name="operator_neq"></a>연산자! =
+## <a name="operator"></a><a name="operator_neq"></a> 연산자! =
 
 ```cpp
 bool operator!= (const cancellation_token& _Src) const;
@@ -146,9 +147,9 @@ bool operator!= (const cancellation_token& _Src) const;
 *_Src*<br/>
 비교할 `cancellation_token`입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-## <a name="operator"></a><a name="operator_eq"></a>연산자 =
+## <a name="operator"></a><a name="operator_eq"></a> 연산자 =
 
 ```cpp
 cancellation_token& operator= (const cancellation_token& _Src);
@@ -161,9 +162,9 @@ cancellation_token& operator= (cancellation_token&& _Src);
 *_Src*<br/>
 `cancellation_token`할당할입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-## <a name="operator"></a><a name="operator_eq_eq"></a>연산자 = =
+## <a name="operator"></a><a name="operator_eq_eq"></a> 연산자 = =
 
 ```cpp
 bool operator== (const cancellation_token& _Src) const;
@@ -174,9 +175,9 @@ bool operator== (const cancellation_token& _Src) const;
 *_Src*<br/>
 비교할 `cancellation_token`입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-## <a name="register_callback"></a><a name="register_callback"></a>register_callback
+## <a name="register_callback"></a><a name="register_callback"></a> register_callback
 
 토큰에 콜백 함수를 등록합니다. 만약 토큰이 취소되면 콜백이 만들어집니다. 이 메서드가 호출된 시점에 토큰이 이미 취소된 경우, 동기적으로 즉시 콜백이 만들어집니다.
 
@@ -193,9 +194,9 @@ template<typename _Function>
 *_Func*<br/>
 이 `cancellation_token`이 취소되었을 때 콜백되는 함수 개체입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-이전에 등록된 콜백의 등록을 해제하고 콜백이 이루어지지 않도록 하기 위해 `cancellation_token_registration` 메서드에서 이용할 수 있는 `deregister` 개체입니다. 메서드는 [invalid_operation](invalid-operation-class.md) `cancellation_token` [cancellation_token:: none](#none) 메서드를 사용 하 여 만든 개체에서 호출 되는 경우 invalid_operation 예외를 throw 합니다.
+이전에 등록된 콜백의 등록을 해제하고 콜백이 이루어지지 않도록 하기 위해 `cancellation_token_registration` 메서드에서 이용할 수 있는 `deregister` 개체입니다. 메서드는 [](invalid-operation-class.md) `cancellation_token` [cancellation_token:: none](#none) 메서드를 사용 하 여 만든 개체에서 호출 되는 경우 invalid_operation 예외를 throw 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

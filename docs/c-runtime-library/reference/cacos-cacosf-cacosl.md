@@ -1,4 +1,5 @@
 ---
+description: Cacos, cacosf, cacosf에 대해 자세히 알아보세요.
 title: cacos, cacosf, cacosl
 ms.date: 11/04/2016
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - cacosf function
 - cacosl function
 ms.assetid: 78118c00-0a07-49c1-8a13-4bf19ce3aea8
-ms.openlocfilehash: 5b0751703b9b9cdcdb50e265a6b5d3c929d89ae1
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 5d7a4fcc10da68d170d0cf3b2d9cce0d486b4318
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70939396"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171598"
 ---
 # <a name="cacos-cacosf-cacosl"></a>cacos, cacosf, cacosl
 
@@ -64,21 +65,21 @@ _Lcomplex cacos( _Lcomplex z );  // C++ only
 
 ## <a name="return-value"></a>반환 값
 
-*Z*의 아크코사인 (라디안)입니다. 결과는 허수 축에서는 제한이 없으며, 실수 축에서는 [0, π] 간격 내에 있습니다. *Z* 가 [-1, + 1] 간격을 벗어날 경우 도메인 오류가 발생 합니다.
+*Z* 의 아크코사인 (라디안)입니다. 결과는 허수 축에서는 제한이 없으며, 실수 축에서는 [0, π] 간격 내에 있습니다. *Z* 가 [-1, + 1] 간격을 벗어날 경우 도메인 오류가 발생 합니다.
 
 ## <a name="remarks"></a>설명
 
-는 C++ 오버 로드를 허용 하므로 **_Fcomplex** 및 **_fcomplex** 값을 사용 하 고 반환 하는 **cacos** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **cacos** 는 항상 **_dcomplex** 를 사용 하 고 반환 합니다.
+C + +에서는 오버 로드를 허용 하므로 **_Fcomplex** 및 **_Lcomplex** 값을 사용 하 고 반환 하는 **cacos** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **cacos** 는 항상 **_Dcomplex** 값을 사용 하 고 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |루틴에서 반환된 값|C 헤더|C++ 헤더|
 |-------------|--------------|------------------|
-|**cacos**,               **cacosf**, **cacosl**|\<complex.h>|\<ccomplex>|
+|**cacos**,               **cacosf**, **cacosf**|\<complex.h>|\<ccomplex>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [사전순 함수 참조](crt-alphabetical-function-reference.md)<br/>
 [catanh, catanhf, catanhl](catanh-catanhf-catanhl.md)<br/>

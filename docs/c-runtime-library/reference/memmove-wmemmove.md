@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: memmove, wmemmove'
 title: memmove, wmemmove
 ms.date: 11/04/2016
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - wmemmove function
 - memmove function
 ms.assetid: 3a906114-9cf3-40d7-bd99-ee452004f218
-ms.openlocfilehash: bca0badb13dbbc754b6546f62cdd865eacd14fbc
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 15dee8eab2a1b7eedd3891d8673647a711c0e499
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70951770"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171389"
 ---
 # <a name="memmove-wmemmove"></a>memmove, wmemmove
 
@@ -67,22 +68,22 @@ wchar_t *wmemmove(
 
 ## <a name="return-value"></a>반환 값
 
-*Dest*의 값입니다.
+*Dest* 의 값입니다.
 
 ## <a name="remarks"></a>설명
 
-*Src* 에서 *dest*로 바이트 *수* (**memmove**) 또는 문자 (**wmemmove**)를 복사 합니다. 소스 영역과 대상의 일부 영역이 겹치는 경우 두 함수는 모두 겹치는 영역에서 원래 소스 바이트가 덮어쓰기 전에 복사되도록 합니다.
+*Src* 에서 *dest* 로 바이트 *수* (**memmove**) 또는 문자 (**wmemmove**)를 복사 합니다. 소스 영역과 대상의 일부 영역이 겹치는 경우 두 함수는 모두 겹치는 영역에서 원래 소스 바이트가 덮어쓰기 전에 복사되도록 합니다.
 
 **보안 정보** 대상 버퍼의 크기가 소스 버퍼의 크기보다 크거나 같아야 합니다. 자세한 내용은 [버퍼 오버런 방지](/windows/win32/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
-다음 예제와 같이 함수가 더 이상 사용 되지 않도록 하기 위해 포함 문 이전에 상수 **_CRT_SECURE_DEPRECATE_MEMORY** 가 정의 된 경우에는 **memmove** 및 **wmemmove** 함수도 사용 되지 않습니다.
+**Memmove** 및 **wmemmove** 함수는 함수를 사용 하지 않기 위해 포함 문 이전에 상수 **_CRT_SECURE_DEPRECATE_MEMORY** 정의 된 경우에만 사용 되지 않습니다. 예를 들면 다음과 같습니다.
 
 ```C
 #define _CRT_SECURE_DEPRECATE_MEMORY
 #include <string.h>
 ```
 
-로 구분하거나 여러
+또는
 
 ```C
 #define _CRT_SECURE_DEPRECATE_MEMORY
@@ -96,7 +97,7 @@ wchar_t *wmemmove(
 |**memmove**|\<string.h>|
 |**wmemmove**|\<wchar.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
@@ -134,7 +135,7 @@ The string: aabbcc
 New string: aaaabb
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [버퍼 조작](../../c-runtime-library/buffer-manipulation.md)<br/>
 [_memccpy](memccpy.md)<br/>

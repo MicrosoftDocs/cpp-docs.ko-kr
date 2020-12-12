@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 기본 인쇄를 수행 하는 방법'
 title: 기본 인쇄가 수행되는 방법
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - printing [MFC], default
 - defaults, printing
 ms.assetid: 0f698459-0fc9-4d43-97da-29cf0f65daa2
-ms.openlocfilehash: 9ca79ec69037b960e7c455f6ab8abd8833b9a8a0
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: cd2be6cea4e038775f2134dfde434580839d0280
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618583"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97172871"
 ---
 # <a name="how-default-printing-is-done"></a>기본 인쇄가 수행되는 방법
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: memmove_s, wmemmove_s'
 title: memmove_s, wmemmove_s
 ms.date: 4/2/2020
 api_name:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - wmemmove_s function
 - memmove_s function
 ms.assetid: a17619e4-1307-4bb0-98c6-77f8c68dab2d
-ms.openlocfilehash: 04f920543c4f6a3d433e6426a96d617a3608a270
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: faa68f073949c9c1bcd3d96bb48472484adc312c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914090"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171402"
 ---
 # <a name="memmove_s-wmemmove_s"></a>memmove_s, wmemmove_s
 
@@ -72,7 +73,7 @@ errno_t wmemmove_s(
 *count*<br/>
 복사할 바이트 수 (**memmove_s**) 또는 문자 수 (**wmemmove_s**)입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 성공 시 0이고, 실패 시 오류 코드입니다.
 
@@ -80,15 +81,15 @@ errno_t wmemmove_s(
 
 |*dest*|*이면 numberofelements 이벤트가*|*src*|반환 값|*대상* 의 내용|
 |------------|------------------------|-----------|------------------|------------------------|
-|**N**|any|any|**EINVAL**|수정 안 됨|
-|any|any|**N**|**EINVAL**|수정 안 됨|
+|**NULL**|any|any|**EINVAL**|수정 안 됨|
+|any|any|**NULL**|**EINVAL**|수정 안 됨|
 |any|< *수*|any|**ERANGE**|수정 안 됨|
 
 ## <a name="remarks"></a>설명
 
-Src의 문자 *수* 를 *src* 에서 *dest*로 복사 합니다. 원본 영역 및 대상의 일부 영역이 겹치면 **memmove_s** 겹쳐쓰기 지역에서 원래 원본 바이트가 복사 되기 전에 복사 되도록 합니다.
+Src의 문자 *수* 를 *src* 에서 *dest* 로 복사 합니다. 원본 영역 및 대상의 일부 영역이 겹치면 **memmove_s** 겹쳐쓰기 지역에서 원래 원본 바이트가 복사 되기 전에 복사 되도록 합니다.
 
-*Dest* 또는 *src* 가 null 포인터 이거나 대상 문자열이 너무 작은 경우 이러한 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **EINVAL** 를 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
+*Dest* 또는 *src* 가 null 포인터 이거나 대상 문자열이 너무 작은 경우 이러한 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **EINVAL** 를 반환 하 고 **errno** 를 **EINVAL** 로 설정 합니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 

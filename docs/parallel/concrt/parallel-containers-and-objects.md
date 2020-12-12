@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 병렬 컨테이너 및 개체'
 title: 병렬 컨테이너 및 개체
 ms.date: 03/27/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - parallel containers
 - concurrent containers
 ms.assetid: 90ab715c-29cd-48eb-8e76-528619aab466
-ms.openlocfilehash: 7387173378e79a4707008a11846eab19d7ae4341
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 2d0b6b491fbe41ea74ad0e6c138cb270558f6e73
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831790"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97172442"
 ---
 # <a name="parallel-containers-and-objects"></a>병렬 컨테이너 및 개체
 
@@ -61,7 +62,7 @@ PPL (병렬 패턴 라이브러리)에는 해당 요소에 스레드로부터 �
 
   - [메서드 및 기능](#combinable-features)
 
-  - [예](#combinable-examples)
+  - [예제](#combinable-examples)
 
 ## <a name="concurrent_vector-class"></a><a name="vector"></a> concurrent_vector 클래스
 
@@ -87,7 +88,7 @@ PPL (병렬 패턴 라이브러리)에는 해당 요소에 스레드로부터 �
 
 - 런타임은 형식에 대해의 특수화 된 버전을 정의 하지 않습니다 `concurrent_vector` **`bool`** .
 
-### <a name="concurrency-safe-operations"></a><a name="vector-safety"></a> 동시성이 안전 하 게 작동 하는 작업
+### <a name="concurrency-safe-operations"></a><a name="vector-safety"></a> Concurrency-Safe 작업
 
 개체의 크기를 추가 하거나 늘리거나 개체의 요소에 액세스 하는 모든 메서드는 `concurrent_vector` `concurrent_vector` 동시성이 안전 합니다. 여기서는 동시성이 안전 함을 의미 하는 포인터가 나 반복기는 항상 유효 합니다. 요소 초기화 나 특정 트래버스 주문의 보장은 아닙니다. 이 규칙의 예외는 `resize` 메서드입니다.
 
@@ -176,7 +177,7 @@ PPL (병렬 패턴 라이브러리)에는 해당 요소에 스레드로부터 �
 
 - `concurrent_queue`클래스는 메서드 대신 [unsafe_size](reference/concurrent-queue-class.md#unsafe_size) 메서드를 제공 합니다 `size` . `unsafe_size`메서드는 동시성이 보장 되지 않습니다.
 
-### <a name="concurrency-safe-operations"></a><a name="queue-safety"></a> 동시성이 안전 하 게 작동 하는 작업
+### <a name="concurrency-safe-operations"></a><a name="queue-safety"></a> Concurrency-Safe 작업
 
 개체에서 큐에 넣기 또는 큐에서 제거 하는 모든 메서드 `concurrent_queue` 는 동시성이 보장 됩니다. 여기서는 동시성이 안전 함을 의미 하는 포인터가 나 반복기는 항상 유효 합니다. 요소 초기화 나 특정 트래버스 주문의 보장은 아닙니다.
 
@@ -254,7 +255,7 @@ PPL (병렬 패턴 라이브러리)에는 해당 요소에 스레드로부터 �
 
 교착 상태를 방지 하기 위해의 메서드는 `concurrent_unordered_map` 메모리 할당자, 해시 함수 또는 기타 사용자 정의 코드를 호출할 때 잠금을 보유 하지 않습니다. 또한 해시 함수는 항상 동일한 키를 동일한 값으로 평가 하는지 확인 해야 합니다. 최상의 해시 함수는 해시 코드 공간에서 키를 균일 하 게 분산 합니다.
 
-### <a name="concurrency-safe-operations"></a><a name="map-safety"></a> 동시성이 안전 하 게 작동 하는 작업
+### <a name="concurrency-safe-operations"></a><a name="map-safety"></a> Concurrency-Safe 작업
 
 클래스는 동시성이 보장 되는 `concurrent_unordered_map` 삽입 및 요소 액세스 작업을 가능 하 게 합니다. 삽입 작업은 기존 포인터 또는 반복기를 무효화 하지 않습니다. 반복기 액세스 및 트래버스 작업도 동시성이 안전 합니다. 여기서는 동시성이 안전 함을 의미 하는 포인터가 나 반복기는 항상 유효 합니다. 요소 초기화 나 특정 트래버스 주문의 보장은 아닙니다. 다음 표에서는 동시성이 보장 되는 일반적으로 사용 되는 `concurrent_unordered_map` 메서드 및 연산자를 보여 줍니다.
 
@@ -360,7 +361,7 @@ PPL (병렬 패턴 라이브러리)에는 해당 요소에 스레드로부터 �
 |메서드|설명|
 |------------|-----------------|
 |[로컬](reference/combinable-class.md#local)|현재 스레드 컨텍스트와 연결 된 지역 변수에 대 한 참조를 검색 합니다.|
-|[해제](reference/combinable-class.md#clear)|개체에서 모든 스레드 지역 변수를 제거 합니다 `combinable` .|
+|[clear](reference/combinable-class.md#clear)|개체에서 모든 스레드 지역 변수를 제거 합니다 `combinable` .|
 |[결합](reference/combinable-class.md#combine)<br /><br /> [combine_each](reference/combinable-class.md#combine_each)|제공 된 combine 함수를 사용 하 여 모든 스레드 로컬 계산 집합에서 최종 값을 생성 합니다.|
 
 `combinable`클래스는 병합 된 최종 결과에 매개 변수화 된 템플릿 클래스입니다. 기본 생성자를 호출 하는 경우 `T` 템플릿 매개 변수 형식에는 기본 생성자와 복사 생성자가 있어야 합니다. `T`템플릿 매개 변수 형식에 기본 생성자가 없는 경우 초기화 함수를 매개 변수로 사용 하는 생성자의 오버 로드 된 버전을 호출 합니다.

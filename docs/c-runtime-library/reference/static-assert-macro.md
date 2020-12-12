@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 매크로 _STATIC_ASSERT'
 title: _STATIC_ASSERT 매크로
 ms.date: 11/04/2016
 api_location:
@@ -21,16 +22,16 @@ f1_keywords:
 helpviewer_keywords:
 - _STATIC_ASSERT macro
 ms.assetid: 89b0350c-2c2f-4be6-9786-8b1f0780a5da
-ms.openlocfilehash: 78544424b727797158109fa3000ee2ebf8066cf7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bbdb615cccfb245868d4c282acf86c9228ea574b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229326"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171201"
 ---
 # <a name="_static_assert-macro"></a>_STATIC_ASSERT 매크로
 
-컴파일 시간에 식을 계산 하 고 결과가 **FALSE**인 경우 오류를 생성 합니다.
+컴파일 시간에 식을 계산 하 고 결과가 **FALSE** 인 경우 오류를 생성 합니다.
 
 ## <a name="syntax"></a>구문
 

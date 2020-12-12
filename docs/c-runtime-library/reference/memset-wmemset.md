@@ -1,4 +1,5 @@
 ---
+description: Memset, wmemset에 대해 자세히 알아보세요.
 title: memset, wmemset
 ms.date: 11/04/2016
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - wmemset function
 - memset function
 ms.assetid: e7ceb01b-df69-49c2-b294-a39358ad4699
-ms.openlocfilehash: 6e1db021da70f0af7b045e2a3100dbaaa81e5a50
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 547cbbcab4966291ab540b6e57f68d4057995ff8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70951745"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171350"
 ---
 # <a name="memset-wmemset"></a>memset, wmemset
 
@@ -68,11 +69,11 @@ wchar_t *wmemset(
 
 ## <a name="return-value"></a>반환 값
 
-*Dest*의 값입니다.
+*Dest* 의 값입니다.
 
 ## <a name="remarks"></a>설명
 
-*대상* 의 첫 번째 *카운트* 문자를 문자 *c*로 설정 합니다.
+*대상* 의 첫 번째 *카운트* 문자를 문자 *c* 로 설정 합니다.
 
 **보안 정보** 대상 버퍼에 최소 *개수* 문자를 위한 공간이 충분 한지 확인 합니다. 자세한 내용은 [버퍼 오버런 방지](/windows/win32/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
@@ -83,7 +84,7 @@ wchar_t *wmemset(
 |**memset**|\<memory.h> 또는 \<string.h>|
 |**wmemset**|\<wchar.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="libraries"></a>라이브러리
 
@@ -145,7 +146,7 @@ Before: This is a test of the wmemset function
 After:  **** is a test of the wmemset function
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [버퍼 조작](../../c-runtime-library/buffer-manipulation.md)<br/>
 [_memccpy](memccpy.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: _mbctohira, _mbctohira_l, _mbctokata, _mbctokata_l'
 title: _mbctohira, _mbctohira_l, _mbctokata, _mbctokata_l
 ms.date: 4/2/2020
 api_name:
@@ -46,12 +47,12 @@ helpviewer_keywords:
 - _mbctohira function
 - mbctokata function
 ms.assetid: f949afd7-44d4-4f08-ac8f-1fef2c915a1c
-ms.openlocfilehash: b5af94932fc90e6bcaee584e16f3056ee36dab51
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: aca32a81f1a7c74241be5d4574307a39731b1b6a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914373"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171493"
 ---
 # <a name="_mbctohira-_mbctohira_l-_mbctokata-_mbctokata_l"></a>_mbctohira, _mbctohira_l, _mbctokata, _mbctokata_l
 
@@ -87,9 +88,9 @@ unsigned int _mbctokata_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-이러한 각 함수는 변환 된 문자 *c*를 반환 합니다 (가능한 경우). 그렇지 않으면 *c* 문자를 변경 하지 않고 반환 합니다.
+이러한 각 함수는 변환 된 문자 *c* 를 반환 합니다 (가능한 경우). 그렇지 않으면 *c* 문자를 변경 하지 않고 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
@@ -102,7 +103,7 @@ unsigned int _mbctokata_l(
 
 출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_L** 접미사가 없는 함수는이 로캘 종속 동작에 현재 로캘을 사용 하 고 **_l** 접미사가 있는 함수는 전달 된 로캘 매개 변수를 대신 사용 한다는 점을 제외 하 고 이러한 함수의 버전은 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-이전 버전에서는 **_mbctohira** 이름이 **jtoto ra** 이 고 **_mbctokata** 이름이 **jtokata**입니다. 새 코드에서는 새 이름을 사용하세요.
+이전 버전에서는 **_mbctohira** 이름이 **jtoto ra** 이 고 **_mbctokata** 이름이 **jtokata** 입니다. 새 코드에서는 새 이름을 사용하세요.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -117,7 +118,7 @@ unsigned int _mbctokata_l(
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [데이터 변환](../../c-runtime-library/data-conversion.md)<br/>
 [_mbcjistojms, _mbcjistojms_l, _mbcjmstojis, _mbcjmstojis_l](mbcjistojms-mbcjistojms-l-mbcjmstojis-mbcjmstojis-l.md)<br/>

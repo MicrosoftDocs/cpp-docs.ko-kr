@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _memicmp, _memicmp_l'
 title: _memicmp, _memicmp_l
 ms.date: 4/2/2020
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - memicmp_l function
 - _memicmp_l function
 ms.assetid: 0a6eb945-4077-4f84-935d-1aaebe8db8cb
-ms.openlocfilehash: 365b57dc300da5686895d66fa642e3870612c2ed
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 261c7b64cc7da58c201515697addc587c575a9ba
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915390"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171415"
 ---
 # <a name="_memicmp-_memicmp_l"></a>_memicmp, _memicmp_l
 
@@ -74,22 +75,22 @@ int _memicmp_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 반환 값은 부분 문자열 간의 관계를 나타냅니다.
 
 |반환 값|buf1 및 buf2의 첫 번째 count 바이트의 관계|
 |------------------|--------------------------------------------------------|
 |< 0|*buffer1* 보다 작음 *buffer2*.|
-|0|*buffer1* 는 *buffer2*와 동일 합니다.|
-|> 0|*buffer1* *buffer2*보다 큽니다.|
+|0|*buffer1* 는 *buffer2* 와 동일 합니다.|
+|> 0|*buffer1* *buffer2* 보다 큽니다.|
 |**_NLSCMPERROR**|오류가 발생했습니다.|
 
 ## <a name="remarks"></a>설명
 
 **_Memicmp** 함수는 두 버퍼 *buffer1* 및 *buffer2* 바이트의 첫 번째 *count* 문자를 바이트 단위로 비교 합니다. 대/소문자를 구분하지 않고 비교합니다.
 
-*Buffer1* 또는 *buffer2* 가 null 포인터인 경우이 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 함수는 **_NLSCMPERROR** 을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
+*Buffer1* 또는 *buffer2* 가 null 포인터인 경우이 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 함수는 **_NLSCMPERROR** 을 반환 하 고 **errno** 를 **EINVAL** 로 설정 합니다.
 
 **_memicmp** 은 로캘 종속 동작에 현재 로캘을 사용 합니다. **_memicmp_l** 은 전달 된 로캘을 대신 사용 한다는 점을 제외 하 고 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
@@ -139,7 +140,7 @@ Compare 'Those Who Will Not Learn from' to 'THOSE WHO WILL NOT LEARN FROM'
 First is equal to second.
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [버퍼 조작](../../c-runtime-library/buffer-manipulation.md)<br/>
 [_memccpy](memccpy.md)<br/>
