@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CA2WEX 클래스'
 title: CA2WEX 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - CA2WEX class
 ms.assetid: 317d9ffb-e84f-47e8-beda-57e28fb19124
-ms.openlocfilehash: a710034c5d94a8fb093a2b6a2a52373e2bab2d6d
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: 59d0624176f01ee266b8162060b281202ef977c6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82168503"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165097"
 ---
 # <a name="ca2wex-class"></a>CA2WEX 클래스
 
@@ -40,20 +41,20 @@ class CA2WEX
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
 |[CA2WEX::CA2WEX](#ca2wex)|생성자입니다.|
 |[CA2WEX:: ~ CA2WEX](#dtor)|소멸자입니다.|
 
 ### <a name="public-operators"></a>Public 연산자
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |[CA2WEX:: operator LPWSTR](#operator_lpwstr)|변환 연산자입니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |[CA2WEX:: m_psz](#m_psz)|원본 문자열을 저장 하는 데이터 멤버입니다.|
 |[CA2WEX:: m_szBuffer](#m_szbuffer)|변환 된 문자열을 저장 하는 데 사용 되는 정적 버퍼입니다.|
@@ -62,9 +63,9 @@ class CA2WEX
 
 추가 기능이 필요 하지 않는 한 코드에서 CA2TEX, CA2CTEX, CT2WEX, CT2CWEX 또는 CA2W를 사용 합니다.
 
-이 클래스는 변환 결과를 저장 하는 데 사용 되는 고정 크기 정적 버퍼를 포함 합니다. 결과가 너무 커서 정적 버퍼에 맞지 않는 경우 클래스는 **malloc**를 사용 하 여 메모리를 할당 하 고 개체가 범위를 벗어나면 메모리를 비웁니다. 이렇게 하면 이전 버전의 ATL에서 사용할 수 있는 텍스트 변환 매크로와 달리이 클래스는 루프에서 사용 하 고 스택을 오버플로 하지 않습니다.
+이 클래스는 변환 결과를 저장 하는 데 사용 되는 고정 크기 정적 버퍼를 포함 합니다. 결과가 너무 커서 정적 버퍼에 맞지 않는 경우 클래스는 **malloc** 를 사용 하 여 메모리를 할당 하 고 개체가 범위를 벗어나면 메모리를 비웁니다. 이렇게 하면 이전 버전의 ATL에서 사용할 수 있는 텍스트 변환 매크로와 달리이 클래스는 루프에서 사용 하 고 스택을 오버플로 하지 않습니다.
 
-클래스가 힙에서 메모리를 할당 하려고 시도 하 고 실패 하는 경우 E_OUTOFMEMORY의 인수 `AtlThrow` 를 사용 하 여를 호출 합니다.
+클래스가 힙에서 메모리를 할당 하려고 시도 하 고 실패 하는 경우 `AtlThrow` E_OUTOFMEMORY의 인수를 사용 하 여를 호출 합니다.
 
 기본적으로 ATL 변환 클래스 및 매크로는 현재 스레드의 ANSI 코드 페이지를 사용 하 여 변환 합니다. 특정 변환에 대해이 동작을 재정의 하려면 코드 페이지를 클래스의 생성자에 대 한 두 번째 매개 변수로 지정 합니다.
 
@@ -92,7 +93,7 @@ class CA2WEX
 
 **헤더:**
 
-## <a name="ca2wexca2wex"></a><a name="ca2wex"></a>CA2WEX::CA2WEX
+## <a name="ca2wexca2wex"></a><a name="ca2wex"></a> CA2WEX::CA2WEX
 
 생성자입니다.
 
@@ -113,7 +114,7 @@ CA2WEX(LPCSTR psz) throw(...);
 
 변환 프로세스에 사용 되는 버퍼를 할당 합니다.
 
-## <a name="ca2wexca2wex"></a><a name="dtor"></a>CA2WEX:: ~ CA2WEX
+## <a name="ca2wexca2wex"></a><a name="dtor"></a> CA2WEX:: ~ CA2WEX
 
 소멸자입니다.
 
@@ -125,7 +126,7 @@ CA2WEX(LPCSTR psz) throw(...);
 
 할당 된 버퍼를 해제 합니다.
 
-## <a name="ca2wexm_psz"></a><a name="m_psz"></a>CA2WEX:: m_psz
+## <a name="ca2wexm_psz"></a><a name="m_psz"></a> CA2WEX:: m_psz
 
 원본 문자열을 저장 하는 데이터 멤버입니다.
 
@@ -133,7 +134,7 @@ CA2WEX(LPCSTR psz) throw(...);
 LPWSTR m_psz;
 ```
 
-## <a name="ca2wexm_szbuffer"></a><a name="m_szbuffer"></a>CA2WEX:: m_szBuffer
+## <a name="ca2wexm_szbuffer"></a><a name="m_szbuffer"></a> CA2WEX:: m_szBuffer
 
 변환 된 문자열을 저장 하는 데 사용 되는 정적 버퍼입니다.
 
@@ -141,7 +142,7 @@ LPWSTR m_psz;
 wchar_t m_szBuffer[t_nBufferLength];
 ```
 
-## <a name="ca2wexoperator-lpwstr"></a><a name="operator_lpwstr"></a>CA2WEX:: operator LPWSTR
+## <a name="ca2wexoperator-lpwstr"></a><a name="operator_lpwstr"></a> CA2WEX:: operator LPWSTR
 
 변환 연산자입니다.
 
@@ -149,7 +150,7 @@ wchar_t m_szBuffer[t_nBufferLength];
 operator LPWSTR() const throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 텍스트 문자열을 LPWSTR 형식으로 반환 합니다.
 

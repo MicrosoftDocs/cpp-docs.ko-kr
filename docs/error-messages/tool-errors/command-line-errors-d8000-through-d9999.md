@@ -1,17 +1,18 @@
 ---
+description: '자세한 내용: 명령줄 오류 및 경고'
 title: 명령줄 오류 및 경고
 ms.date: 04/17/2019
 ms.assetid: d02ec7df-26a5-4198-ac92-87b29ec9d5c8
-ms.openlocfilehash: d5cd53a23c4f043715fa7e2372fb5c256337da20
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: 6a0f467bfcb67e02352ccba9db8d892d6b929e43
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64857354"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97115627"
 ---
 # <a name="command-line-errors-and-warnings"></a>명령줄 오류 및 경고
 
-이 섹션의에서 문서에서는 명령줄 오류 및 빌드 도구에 의해 생성 된 경고에 대 한 참조를 제공 합니다. 이러한 메시지에 폼 `Dxxxx`, 여기서 *xxxx* 는 4 자리 숫자입니다.
+이 단원의 문서에서는 빌드 도구에서 생성 된 명령줄 오류 및 경고에 대 한 참조를 제공 합니다. 이러한 메시지의 형식은입니다 `Dxxxx` . 여기서 *xxxx* 는 네 자리 숫자입니다.
 
 [!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
@@ -38,6 +39,6 @@ ms.locfileid: "64857354"
 [명령줄 경고 D9041](../../error-messages/tool-errors/command-line-warning-d9041.md) \
 [명령줄 경고 D9043](../../error-messages/tool-errors/command-line-warning-d9043.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[C /C++ 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md)
+[C/C++ 컴파일러와 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md)

@@ -1,4 +1,5 @@
 ---
+description: 자세한 내용은 Command-Line Warning D9026을 (를) 확인 하세요.
 title: 명령줄 경고 D9026
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - D9026
 ms.assetid: 149fe5e3-5329-4be8-b871-49dfd423aaba
-ms.openlocfilehash: 59dfcdc97fb9caf60a018cb20583ee6fca3dcb27
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 910471215d350f266319f5e14b7bb1a62f641028
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80196705"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97115484"
 ---
 # <a name="command-line-warning-d9026"></a>명령줄 경고 D9026
 

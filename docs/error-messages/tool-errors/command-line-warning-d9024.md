@@ -1,4 +1,5 @@
 ---
+description: 자세한 내용은 Command-Line Warning D9024을 (를) 확인 하세요.
 title: 명령줄 경고 D9024
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - D9024
 ms.assetid: daf4896d-223d-4af0-9b6d-89109cf3d1bb
-ms.openlocfilehash: 5de051b9ca5c09af74b94be4b75616bce6fadf2c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f31144d1c27e348679115095980f0809831609fc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80196762"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97115523"
 ---
 # <a name="command-line-warning-d9024"></a>명령줄 경고 D9024
 
@@ -23,9 +24,9 @@ ms.locfileid: "80196762"
 
 - .c (C 소스 파일)
 
-- . .cxx (C++ 소스 파일)
+- .cxx (c + + 소스 파일)
 
-- .cpp (C++ 소스 파일)
+- .cpp (c + + 소스 파일)
 
 - .obj (개체 파일)
 

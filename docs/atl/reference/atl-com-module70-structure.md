@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _ATL_COM_MODULE70 구조체'
 title: _ATL_COM_MODULE70 구조체
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - _ATL_COM_MODULE70 structure
 - ATL_COM_MODULE70 structure
 ms.assetid: 5b0b2fd0-bdeb-4c7e-8870-78fa69ace6e6
-ms.openlocfilehash: c2e9e3d6695a7fbbcc87c489edf2e96fcdffb835
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: db2139d1c816c13e6da104f6a6d785ef35a07721
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82168633"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165410"
 ---
 # <a name="_atl_com_module70-structure"></a>_ATL_COM_MODULE70 구조체
 

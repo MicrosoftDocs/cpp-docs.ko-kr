@@ -1,21 +1,22 @@
 ---
+description: '자세한 정보: 방법: 예외 코드와 비 예외 코드 간 인터페이스'
 title: '방법: 예외 코드와 비 예외 코드 간 인터페이스'
 ms.custom: how-to
 ms.date: 11/19/2019
 ms.topic: conceptual
 ms.assetid: fd5bb4af-5665-46a1-a321-614b48d4061e
-ms.openlocfilehash: 88dacda9b20f351eb67dde24a8335bdcbba27dd3
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 34a0966d496e5e22099de051a74f3458d1cc05d0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87187701"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114028"
 ---
 # <a name="how-to-interface-between-exceptional-and-non-exceptional-code"></a>방법: 예외 코드와 비 예외 코드 간 인터페이스
 
 이 문서에서는 C++ 모듈에서 일관된 예외 처리를 구현하는 방법 및 예외 경계에서 이러한 예외를 오류 코드에서 및 오류 코드로 변환하는 방법을 설명합니다.
 
-경우에 따라 C++ 모듈은 예외를 사용하지 않는 코드(비예외 코드)와 인터페이스로 연결해야 합니다. 이러한 인터페이스를 *예외 경계*라고 합니다. 예를 들어 C++ 프로그램에서 `CreateFile` Wind32 함수를 호출할 수 있습니다. `CreateFile`은 예외를 throw하지 않습니다. 대신 `GetLastError` 함수로 검색할 수 있는 오류 코드를 설정합니다. C++ 프로그램이 특수한 경우라면 일관된 예외 기반의 오류 처리 정책을 지키는 것이 좋습니다. 비예외 코드와 인터페이스로 연결하므로 예외의 중단을 원하지 않을 것이며 C++ 모듈에서 예외 및 비예외 기반 오류 정책의 혼합을 원하지도 않을 것입니다.
+경우에 따라 C++ 모듈은 예외를 사용하지 않는 코드(비예외 코드)와 인터페이스로 연결해야 합니다. 이러한 인터페이스를 *예외 경계* 라고 합니다. 예를 들어 C++ 프로그램에서 `CreateFile` Wind32 함수를 호출할 수 있습니다. `CreateFile`은 예외를 throw하지 않습니다. 대신 `GetLastError` 함수로 검색할 수 있는 오류 코드를 설정합니다. C++ 프로그램이 특수한 경우라면 일관된 예외 기반의 오류 처리 정책을 지키는 것이 좋습니다. 비예외 코드와 인터페이스로 연결하므로 예외의 중단을 원하지 않을 것이며 C++ 모듈에서 예외 및 비예외 기반 오류 정책의 혼합을 원하지도 않을 것입니다.
 
 ## <a name="calling-non-exceptional-functions-from-c"></a>C + +에서 비 예외 함수 호출
 
@@ -237,4 +238,4 @@ bool DiffFiles3(const string& file1, const string& file2)
 ## <a name="see-also"></a>참고 항목
 
 [예외 및 오류 처리에 대 한 최신 c + + 모범 사례](errors-and-exception-handling-modern-cpp.md)<br/>
-[방법: 예외 안전성을 위한 디자인](how-to-design-for-exception-safety.md)<br/>
+[방법: 예외 안전을 위한 디자인](how-to-design-for-exception-safety.md)<br/>

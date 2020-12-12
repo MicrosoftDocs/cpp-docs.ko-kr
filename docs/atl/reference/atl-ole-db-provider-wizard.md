@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: ATL OLE DB 공급자 마법사'
 title: ATL OLE DB 공급자 마법사
 ms.date: 05/09/2019
 helpviewer_keywords:
 - ATL projects, adding ATL OLE DB providers
 ms.assetid: cf91ba78-01d1-4d12-b673-e95d96bfbebe
-ms.openlocfilehash: 43b8ed4507b004f1e78bc1b9dda64c44ff56e1d7
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 068670205c45c559e8b312d633d715f51a78190d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92921141"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165344"
 ---
 # <a name="atl-ole-db-provider-wizard"></a>ATL OLE DB 공급자 마법사
 
@@ -45,7 +46,7 @@ Visual Studio 2008부터, 이 마법사에서 생성된 등록 스크립트는 �
 
    ProgID(프로그래밍 ID)는 애플리케이션에서 GUID 대신 사용할 수 있는 텍스트 문자열입니다. ProgID 이름은 *Projectname.Coclassname* 형식을 사용합니다.
 
-- **버전**
+- **Version**
 
    공급자의 버전 번호입니다. 기본값은 1입니다.
 

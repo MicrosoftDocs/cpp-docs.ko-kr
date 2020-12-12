@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: ATL 텍스트 인코딩 함수'
 title: ATL 텍스트 인코딩 함수
 ms.date: 11/04/2016
 f1_keywords:
@@ -25,18 +26,18 @@ f1_keywords:
 - atlenc/ATL::UUEncode
 - atlenc/ATL::UUEncodeGetRequiredLength
 ms.assetid: 2ae1648b-2b87-4112-92aa-0069fcfd23da
-ms.openlocfilehash: 330a73e0d41bf384a799635d5f2e6f09f7e3dd03
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 1cc0848fed5832d0d91752c4c52d1e7310df0932
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833857"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165253"
 ---
 # <a name="atl-text-encoding-functions"></a>ATL 텍스트 인코딩 함수
 
 이러한 함수는 텍스트 인코딩 및 디코딩을 지원 합니다.
 
-|기능|설명|
+|함수|설명|
 |-|-|
 |[AtlGetHexValue](#atlgethexvalue)|16진수의 숫자 값을 가져오려면 이 함수를 호출합니다.|
 |[가 나 Getversion](#atlgetversion)|사용 중인 ATL 라이브러리의 버전을 가져오려면이 함수를 호출 합니다.  |
@@ -128,13 +129,13 @@ inline BOOL AtlHexDecode(
 디코딩할 데이터를 포함 하는 문자열입니다.
 
 *nSrcLen*<br/>
-*Psrcdata*의 문자 길이입니다.
+*Psrcdata* 의 문자 길이입니다.
 
 *Pdest*<br/>
 디코딩된 데이터를 받기 위해 호출자가 할당 한 버퍼입니다.
 
 *pnDestLen*<br/>
-*Pdest*의 길이 (바이트)를 포함 하는 변수에 대 한 포인터입니다. 함수가 성공 하면 변수가 버퍼에 쓴 바이트 수를 받습니다. 함수가 실패 하면 변수는 버퍼의 필요한 길이 (바이트)를 받습니다.
+*Pdest* 의 길이 (바이트)를 포함 하는 변수에 대 한 포인터입니다. 함수가 성공 하면 변수가 버퍼에 쓴 바이트 수를 받습니다. 함수가 실패 하면 변수는 버퍼의 필요한 길이 (바이트)를 받습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -181,7 +182,7 @@ int * pnDestLen) throw();
 인코딩된 데이터를 받기 위해 호출자가 할당 한 버퍼입니다.
 
 *pnDestLen*<br/>
-*Szdest*의 문자 길이를 포함 하는 변수에 대 한 포인터입니다. 함수가 성공 하면 변수가 버퍼에 쓴 문자 수를 받습니다. 함수가 실패 하면 변수는 버퍼의 문자에 필요한 길이를 받습니다.
+*Szdest* 의 문자 길이를 포함 하는 변수에 대 한 포인터입니다. 함수가 성공 하면 변수가 버퍼에 쓴 문자 수를 받습니다. 함수가 실패 하면 변수는 버퍼의 문자에 필요한 길이를 받습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -257,7 +258,7 @@ ATL_NOINLINE inline int AtlUnicodeToUTF8(
 
 ### <a name="remarks"></a>설명
 
-변환 된 문자열에 필요한 버퍼 크기를 확인 하려면 *Szdest* 및 *ndest*에 대해 0을 전달 하는이 함수를 호출 합니다.
+변환 된 문자열에 필요한 버퍼 크기를 확인 하려면 *Szdest* 및 *ndest* 에 대해 0을 전달 하는이 함수를 호출 합니다.
 
 ## <a name="bencode"></a><a name="bencode"></a> 코드 코드
 
@@ -284,7 +285,7 @@ inline BOOL BEncode(
 인코딩된 데이터를 받기 위해 호출자가 할당 한 버퍼입니다.
 
 *pnDestLen*<br/>
-*Szdest*의 문자 길이를 포함 하는 변수에 대 한 포인터입니다. 함수가 성공 하면 변수가 버퍼에 쓴 문자 수를 받습니다. 함수가 실패 하면 변수는 버퍼의 문자에 필요한 길이를 받습니다.
+*Szdest* 의 문자 길이를 포함 하는 변수에 대 한 포인터입니다. 함수가 성공 하면 변수가 버퍼에 쓴 문자 수를 받습니다. 함수가 실패 하면 변수는 버퍼의 문자에 필요한 길이를 받습니다.
 
 *pszCharSet*<br/>
 변환에 사용할 문자 집합입니다.
@@ -433,7 +434,7 @@ inline BOOL QEncode(
 인코딩된 데이터를 받기 위해 호출자가 할당 한 버퍼입니다.
 
 *pnDestLen*<br/>
-*Szdest*의 문자 길이를 포함 하는 변수에 대 한 포인터입니다. 함수가 성공 하면 변수가 버퍼에 쓴 문자 수를 받습니다. 함수가 실패 하면 변수는 버퍼의 문자에 필요한 길이를 받습니다.
+*Szdest* 의 문자 길이를 포함 하는 변수에 대 한 포인터입니다. 함수가 성공 하면 변수가 버퍼에 쓴 문자 수를 받습니다. 함수가 실패 하면 변수는 버퍼의 문자에 필요한 길이를 받습니다.
 
 *pszCharSet*<br/>
 변환에 사용할 문자 집합입니다.
@@ -492,13 +493,13 @@ inline BOOL QPDecode(
 진행 디코딩할 데이터를 포함 하는 버퍼입니다.
 
 *nSrcLen*<br/>
-진행 *Pbsrcdata*의 길이 (바이트)입니다.
+진행 *Pbsrcdata* 의 길이 (바이트)입니다.
 
 *szDest*<br/>
 제한이 디코딩된 데이터를 받기 위해 호출자가 할당 한 버퍼입니다.
 
 *pnDestLen*<br/>
-제한이 *Szdest*의 길이 (바이트)를 포함 하는 변수에 대 한 포인터입니다. 함수가 성공 하면 변수가 버퍼에 쓴 바이트 수를 받습니다. 함수가 실패 하면 변수는 버퍼의 필요한 길이 (바이트)를 받습니다.
+제한이 *Szdest* 의 길이 (바이트)를 포함 하는 변수에 대 한 포인터입니다. 함수가 성공 하면 변수가 버퍼에 쓴 바이트 수를 받습니다. 함수가 실패 하면 변수는 버퍼의 필요한 길이 (바이트)를 받습니다.
 
 *dwFlags*<br/>
 진행 변환을 수행 하는 방법을 설명 하는 ATLSMTP_QPENCODE 플래그입니다.
@@ -557,7 +558,7 @@ inline BOOL QPEncode(
 인코딩된 데이터를 받기 위해 호출자가 할당 한 버퍼입니다.
 
 *pnDestLen*<br/>
-*Szdest*의 문자 길이를 포함 하는 변수에 대 한 포인터입니다. 함수가 성공 하면 변수가 버퍼에 쓴 문자 수를 받습니다. 함수가 실패 하면 변수는 버퍼의 문자에 필요한 길이를 받습니다.
+*Szdest* 의 문자 길이를 포함 하는 변수에 대 한 포인터입니다. 함수가 성공 하면 변수가 버퍼에 쓴 문자 수를 받습니다. 함수가 실패 하면 변수는 버퍼의 문자에 필요한 길이를 받습니다.
 
 *dwFlags*<br/>
 변환을 수행 하는 방법을 설명 하는 ATLSMTP_QPENCODE 플래그입니다.
@@ -615,13 +616,13 @@ inline BOOL UUDecode(
 디코딩할 데이터를 포함 하는 문자열입니다.
 
 *nSrcLen*<br/>
-*Pbsrcdata*의 길이 (바이트)입니다.
+*Pbsrcdata* 의 길이 (바이트)입니다.
 
 *Pdest*<br/>
 디코딩된 데이터를 받기 위해 호출자가 할당 한 버퍼입니다.
 
 *pnDestLen*<br/>
-*Pdest*의 길이 (바이트)를 포함 하는 변수에 대 한 포인터입니다. 함수가 성공 하면 변수가 버퍼에 쓴 바이트 수를 받습니다. 함수가 실패 하면 변수는 버퍼의 필요한 길이 (바이트)를 받습니다.
+*Pdest* 의 길이 (바이트)를 포함 하는 변수에 대 한 포인터입니다. 함수가 성공 하면 변수가 버퍼에 쓴 바이트 수를 받습니다. 함수가 실패 하면 변수는 버퍼의 필요한 길이 (바이트)를 받습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -678,10 +679,10 @@ inline BOOL UUEncode(
 인코딩된 데이터를 받기 위해 호출자가 할당 한 버퍼입니다.
 
 *pnDestLen*<br/>
-*Szdest*의 문자 길이를 포함 하는 변수에 대 한 포인터입니다. 함수가 성공 하면 변수가 버퍼에 쓴 문자 수를 받습니다. 함수가 실패 하면 변수는 버퍼의 문자에 필요한 길이를 받습니다.
+*Szdest* 의 문자 길이를 포함 하는 변수에 대 한 포인터입니다. 함수가 성공 하면 변수가 버퍼에 쓴 문자 수를 받습니다. 함수가 실패 하면 변수는 버퍼의 문자에 필요한 길이를 받습니다.
 
 *lpszFile*<br/>
-ATLSMTP_UUENCODE_HEADER이 *dwFlags*에 지정 된 경우 헤더에 추가할 파일입니다.
+ATLSMTP_UUENCODE_HEADER이 *dwFlags* 에 지정 된 경우 헤더에 추가할 파일입니다.
 
 *dwFlags*<br/>
 이 함수의 동작을 제어 하는 플래그입니다.

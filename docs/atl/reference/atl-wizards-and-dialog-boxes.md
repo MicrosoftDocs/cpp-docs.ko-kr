@@ -1,19 +1,20 @@
 ---
+description: '자세한 정보: ATL 마법사 및 대화 상자'
 title: ATL 마법사 및 대화 상자
 ms.date: 06/26/2020
 helpviewer_keywords:
 - ATL, class wizards
 ms.assetid: 51cf002a-83bc-41ba-aeb8-364ea2331375
-ms.openlocfilehash: f2ba981c771572f93e9a452db83c722c817b6428
-ms.sourcegitcommit: 8fd49f8ac20457710ceb5403ca46fc73cb3f95f8
+ms.openlocfilehash: 531758560ef5d639112a1f15ef591b3b3ca7ed65
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85737463"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165123"
 ---
 # <a name="atl-wizards-and-dialog-boxes"></a>ATL 마법사 및 대화 상자
 
-ATL (액티브 템플릿 라이브러리) 마법사는 다양 한 종류의 COM 개체에 대 한 상용구 코드를 생성 합니다. **솔루션 탐색기** 에서 프로젝트에 대 한 바로 가기 메뉴를 열고 **추가**, **클래스**를 선택 하 여 마법사를 실행할 수 있습니다.
+ATL (액티브 템플릿 라이브러리) 마법사는 다양 한 종류의 COM 개체에 대 한 상용구 코드를 생성 합니다. **솔루션 탐색기** 에서 프로젝트에 대 한 바로 가기 메뉴를 열고 **추가**, **클래스** 를 선택 하 여 마법사를 실행할 수 있습니다.
 
 ## <a name="related-articles"></a>관련 문서
 

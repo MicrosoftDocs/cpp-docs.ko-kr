@@ -1,4 +1,5 @@
 ---
+description: 자세한 내용은 Command-Line Warning D9025을 (를) 확인 하세요.
 title: 명령줄 경고 D9025
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - D9025
 ms.assetid: 6edff72c-1508-46c2-99f4-0e4b3c5e60c9
-ms.openlocfilehash: 4afd4d4dc07ffaae6038c025ee371278ebbebea6
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 8cec7bdb5f3816c33d395e8ae93a861a29e94c64
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80196718"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97115497"
 ---
 # <a name="command-line-warning-d9025"></a>명령줄 경고 D9025
 
 ' 옵션 1 마이그레이션 '를 ' 옵션 2 마이그레이션 '로 재정의 합니다.
 
-*옵션 1 마이그레이션* 옵션이 지정 되었지만 *옵션 2 마이그레이션*에 의해 재정의 되었습니다. *옵션 2 마이그레이션* 옵션이 사용 되었습니다.
+*옵션 1 마이그레이션* 옵션이 지정 되었지만 *옵션 2 마이그레이션* 에 의해 재정의 되었습니다. *옵션 2 마이그레이션* 옵션이 사용 되었습니다.
 
 두 옵션에서 모순 또는 호환 되지 않는 지시문을 지정 하는 경우 명령줄에서 가장 오른쪽에 있는 옵션에 지정 되거나 암시 된 지시문이 사용 됩니다.
 

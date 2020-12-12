@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: 프로토콜'
 title: PROTO
 ms.date: 12/06/2019
 f1_keywords:
@@ -6,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - PROTO directive
 ms.assetid: 0487ee16-9dc7-43d1-9445-cd1601f5a080
-ms.openlocfilehash: 3963fa29050653d1706222d33734c4b5f2a17919
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: 34dbf9d877dbbc52484e45c5f94212108aeacb42
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75318646"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97126011"
 ---
 # <a name="proto"></a>PROTO
 
 함수 또는 프로시저를 프로토타입 합니다. [INVOKE](invoke.md) 지시어를 사용 하 여 PROTO 지시문에 의해 프로토타입화 된 함수를 호출할 수 있습니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
-> *label* **PROTO** ⟦*distance* *⟧ ⟦ ⟧* ⟦ __,__ ⟦*parameter*⟧ __:__ *tag* ... ⟧
+> *label* **PROTO** ⟦*distance**⟧ ⟦ ⟧*⟦__,__ ⟦*parameter*⟧__:__*tag* ... ⟧
 
 ### <a name="parameters"></a>매개 변수
 
@@ -36,23 +37,23 @@ ms.locfileid: "75318646"
 
 - 16 비트 모델: **C**, **BASIC**, **포트란**, **파스칼**, **SYSCALL**, **STDCALL**
 
-*매개 변수*\
+*변수에*\
 함수 매개 변수의 선택적 이름입니다.
 
-*태그*\
+*태그가*\
 함수 매개 변수의 형식입니다.
 
 *매개 변수* 및 *태그* 매개 변수는 전달 된 각 인수에 대해 한 번씩 여러 번 나타날 수 있습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
-이 샘플에서는 **NEAR** 호출을 사용 하 여 프로시저 호출에 대 한 16 비트 모델 기본값을 재정의 하 고 스택 매개 변수 및 반환 값에 대해 **C** 호출 규칙을 사용 하는 `addup3` 라는 함수의 **프로토콜** 선언을 보여 줍니다. **단어** 와 **VARARG**라는 두 개의 인수를 사용 합니다.
+이 샘플에서는  `addup3` **NEAR** 호출을 사용 하 여 프로시저 호출에 대 한 16 비트 모델 기본값을 재정의 하 고 스택 매개 변수 및 반환 값에 대해 **C** 호출 규칙을 사용 하는 라는 함수의 프로토콜 선언을 보여 줍니다. **단어** 와 **VARARG** 라는 두 개의 인수를 사용 합니다.
 
 ```MASM
 addup3 PROTO NEAR C, argcount:WORD, arg1:VARARG
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [지시문 참조](directives-reference.md)\
 [. 모델 참조](dot-model.md)\

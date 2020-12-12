@@ -1,4 +1,5 @@
 ---
+description: 자세한 내용은 Command-Line Error D8036을 (를) 확인 하세요.
 title: 명령줄 오류 D8036
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - D8036
 ms.assetid: 420a8daf-1873-49cd-95ea-a603d77b9410
-ms.openlocfilehash: 209d0ea3f9fa3fd2e311506d3e03162c639f4a6e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 441f7cd24673cc3b486aa2004b60548946f7e9eb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80196874"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97115588"
 ---
 # <a name="command-line-error-d8036"></a>명령줄 오류 D8036
 

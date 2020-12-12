@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _ATL_BASE_MODULE70 구조체'
 title: _ATL_BASE_MODULE70 구조체
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - ATL_BASE_MODULE70 structure
 - _ATL_BASE_MODULE70 structure
 ms.assetid: 4539282f-15b8-4d7c-aafa-a85dc56f4980
-ms.openlocfilehash: 3893e4ce4fcd24f48d9e981ad24505f82dc98833
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: 5bcf2083f9c8991871c05535fd3e20a39bfeb822
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82168646"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165513"
 ---
 # <a name="_atl_base_module70-structure"></a>_ATL_BASE_MODULE70 구조체
 
@@ -41,7 +42,7 @@ struct _ATL_BASE_MODULE70 {
 버전 관리에 사용 되는 구조의 크기입니다.
 
 `m_hInst`<br/>
-이 `hInstance` 모듈에 대 한입니다 (exe 또는 dll).
+`hInstance`이 모듈에 대 한입니다 (exe 또는 dll).
 
 `m_hInstResource`<br/>
 기본 인스턴스 리소스 핸들입니다.
@@ -56,7 +57,7 @@ ATL의 버전을 저장 합니다. 현재 0x0700입니다.
 ATL의 내부 GUID입니다.
 
 `m_csResource`<br/>
-`m_rgResourceInstance` 배열에 대 한 액세스를 동기화 하는 데 사용 됩니다. ATL에서 내부적으로 사용 됩니다.
+배열에 대 한 액세스를 동기화 하는 데 사용 `m_rgResourceInstance` 됩니다. ATL에서 내부적으로 사용 됩니다.
 
 `m_rgResourceInstance`<br/>
 ATL에서 인식 하는 모든 리소스 인스턴스에서 리소스를 검색 하는 데 사용 되는 배열입니다. ATL에서 내부적으로 사용 됩니다.

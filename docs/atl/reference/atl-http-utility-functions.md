@@ -1,19 +1,20 @@
 ---
+description: '자세한 정보: ATL HTTP 유틸리티 함수'
 title: ATL HTTP 유틸리티 함수
 ms.date: 11/04/2016
 ms.assetid: 4db57ef2-31fa-4696-bbeb-79a9035033ed
-ms.openlocfilehash: d2e30f940ded0bf355000cd42ff46a67662b54f5
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: fb8cc8789db45095f969dd9513dcf70a9bd0d05c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833987"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165370"
 ---
 # <a name="atl-http-utility-functions"></a>ATL HTTP 유틸리티 함수
 
 이러한 함수는 Url 조작을 지원 합니다.
 
-|기능|설명|
+|함수|설명|
 |-|-|
 |[AtlCanonicalizeUrl](#atlcanonicalizeurl)|Canonicalizes 안전 하지 않은 문자 및 공백을 이스케이프 시퀀스로 변환 하는 것을 포함 하는 URL입니다.|
 |[AtlCombineUrl](#atlcombineurl)|기준 URL과 상대 URL을 단일 정식 URL로 결합 합니다.|
@@ -49,7 +50,7 @@ inline BOOL AtlCanonicalizeUrl(
 정규화 된 URL을 받기 위해 호출자가 할당 한 버퍼입니다.
 
 *pdwMaxLength*<br/>
-*Szcanonicalized*의 문자 길이를 포함 하는 변수에 대 한 포인터입니다. 함수가 성공 하면 변수는 종료 null 문자를 포함 하 여 버퍼에 쓴 문자 수를 받습니다. 함수가 실패 하면 변수는 종료 null 문자에 대 한 공간을 포함 하 여 버퍼의 필요한 길이 (바이트)를 받습니다.
+*Szcanonicalized* 의 문자 길이를 포함 하는 변수에 대 한 포인터입니다. 함수가 성공 하면 변수는 종료 null 문자를 포함 하 여 버퍼에 쓴 문자 수를 받습니다. 함수가 실패 하면 변수는 종료 null 문자에 대 한 공간을 포함 하 여 버퍼의 필요한 길이 (바이트)를 받습니다.
 
 *dwFlags*<br/>
 이 함수의 동작을 제어 하 ATL_URL 플래그입니다.
@@ -101,7 +102,7 @@ inline BOOL AtlCombineUrl(
 정규화 된 URL을 받기 위해 호출자가 할당 한 버퍼입니다.
 
 *pdwMaxLength*<br/>
-*Szbuffer*의 문자 길이를 포함 하는 변수에 대 한 포인터입니다. 함수가 성공 하면 변수는 종료 null 문자를 포함 하 여 버퍼에 쓴 문자 수를 받습니다. 함수가 실패 하면 변수는 종료 null 문자에 대 한 공간을 포함 하 여 버퍼의 필요한 길이 (바이트)를 받습니다.
+*Szbuffer* 의 문자 길이를 포함 하는 변수에 대 한 포인터입니다. 함수가 성공 하면 변수는 종료 null 문자를 포함 하 여 버퍼에 쓴 문자 수를 받습니다. 함수가 실패 하면 변수는 종료 null 문자에 대 한 공간을 포함 하 여 버퍼의 필요한 길이 (바이트)를 받습니다.
 
 *dwFlags*<br/>
 이 함수의 동작을 제어 하는 플래그입니다. [AtlCanonicalizeUrl](#atlcanonicalizeurl)를 참조 하세요.
@@ -146,7 +147,7 @@ inline BOOL AtlEscapeUrl(
 DWORD 변수에 대 한 포인터입니다. 함수가 성공 하면 *pdwStrLen* 는 종료 null 문자를 포함 하 여 버퍼에 쓴 문자 수를 수신 합니다. 함수가 실패 하면 변수는 종료 null 문자에 대 한 공간을 포함 하 여 버퍼의 필요한 길이 (바이트)를 받습니다. 이 메서드의 와이드 문자 버전을 사용 하는 경우 *pdwStrLen* 는 바이트 수가 아니라 필요한 문자 수를 수신 합니다.
 
 *dwMaxLength*<br/>
-*LpszStringOut*버퍼의 크기입니다.
+*LpszStringOut* 버퍼의 크기입니다.
 
 *dwFlags*<br/>
 이 함수의 동작을 제어 하 ATL_URL 플래그입니다. 가능한 값에 대해서는 [ATLCanonicalizeUrl](#atlcanonicalizeurl) 을 참조 하세요.
@@ -223,7 +224,7 @@ inline BOOL AtlUnescapeUrl(
 DWORD 변수에 대 한 포인터입니다. 함수가 성공 하면 변수는 종료 null 문자를 포함 하 여 버퍼에 쓴 문자 수를 받습니다. 함수가 실패 하면 변수는 종료 null 문자에 대 한 공간을 포함 하 여 버퍼의 필요한 길이 (바이트)를 받습니다.
 
 *dwMaxLength*<br/>
-*LpszStringOut*버퍼의 크기입니다.
+*LpszStringOut* 버퍼의 크기입니다.
 
 ### <a name="return-value"></a>반환 값
 
