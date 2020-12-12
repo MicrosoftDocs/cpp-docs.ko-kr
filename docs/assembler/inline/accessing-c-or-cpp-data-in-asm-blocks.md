@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: __asm 블록에서 C 또는 c + + 데이터 액세스'
 title: __asm 블록에서 C 또는 C++ 데이터 액세스
 ms.date: 08/30/2018
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - __asm keyword [C++], data members
 - structure types in __asm blocks
 ms.assetid: e99f5a28-0381-4090-8ece-6af8f2436a49
-ms.openlocfilehash: 8fbe855c2f5de96d81e6c8a27c4bfcee0864f12c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b24d25b5687dd309c400b17c1e0eb6b35ef986f2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87193044"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97118084"
 ---
 # <a name="accessing-c-or-c-data-in-__asm-blocks"></a>__asm 블록에서 C 또는 C++ 데이터 액세스
 

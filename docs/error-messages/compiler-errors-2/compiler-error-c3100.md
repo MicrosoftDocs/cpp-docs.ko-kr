@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3100'
 title: 컴파일러 오류 C3100
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3100
 ms.assetid: 7a9c9eaf-08ef-442d-94a0-e457beee8549
-ms.openlocfilehash: 4a0e0995b1a4dcbc92f02de03920893f884c2c7c
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 9aac311ee7a3ca9addb8acb0b1d329deccdd90f2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74750041"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97116186"
 ---
 # <a name="compiler-error-c3100"></a>컴파일러 오류 C3100
 

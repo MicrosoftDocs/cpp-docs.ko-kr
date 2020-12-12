@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: #using 지시문 (c + +/CLI)'
 title: '#using 지시문(C++/CLI)'
 ms.date: 08/29/2019
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - LIBPATH environment variable
 - preprocessor, directives
 ms.assetid: 870b15e5-f361-40a8-ba1c-c57d75c8809a
-ms.openlocfilehash: 0245eb15219585421be83def0258415ab4b573b6
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 5903e3b5af4cd6ee40e0b087d52d1bd0115b1c6f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90684263"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167528"
 ---
 # <a name="using-directive-ccli"></a>#using 지시문 (c + +/CLI)
 
@@ -93,7 +94,7 @@ public:
 };
 ```
 
-다음 샘플에서는 프로그램에서 *using_assembly_A*에 정의 된 형식을 사용 하지 않기 때문에 *using_assembly_A.dll*참조에 대 한 오류를 보고 하지 않습니다.
+다음 샘플에서는 프로그램에서 *using_assembly_A* 에 정의 된 형식을 사용 하지 않기 때문에 *using_assembly_A.dll* 참조에 대 한 오류를 보고 하지 않습니다.
 
 ```cpp
 // using_assembly_C.cpp
@@ -105,6 +106,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [전처리기 지시문](../preprocessor/preprocessor-directives.md)

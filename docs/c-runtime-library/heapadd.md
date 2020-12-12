@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _heapadd'
 title: _heapadd
 ms.date: 11/04/2016
 api_name:
@@ -24,12 +25,12 @@ helpviewer_keywords:
 - heaps, adding memory
 - heapadd function
 ms.assetid: 4d691fe2-2763-49f4-afb1-62738b7cd3ff
-ms.openlocfilehash: c5eeb66ff0e6fb05063ec395e12cd97106ad724d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 0270f84de2c543e37f089418b833011c2d83230d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81351326"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97120684"
 ---
 # <a name="_heapadd"></a>_heapadd
 
@@ -52,10 +53,10 @@ int _heapadd(
 *memblock*<br/>
 힙 메모리에 대한 포인터입니다.
 
-*크기*<br/>
+*size*<br/>
 추가할 메모리 크기(바이트)입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 성공하면 `_heapadd`에서 0을 반환합니다. 그렇지 않으면 함수에서 –1을 반환하고 `errno`를 `ENOSYS`로 설정합니다.
 
@@ -76,7 +77,7 @@ Visual C++ 버전 4.0부터 새 디버깅 기능을 지원하기 위해 기본 �
 ## <a name="see-also"></a>참고 항목
 
 [메모리 할당](../c-runtime-library/memory-allocation.md)<br/>
-[무료](../c-runtime-library/reference/free.md)<br/>
+[free](../c-runtime-library/reference/free.md)<br/>
 [_heapchk](../c-runtime-library/reference/heapchk.md)<br/>
 [_heapmin](../c-runtime-library/reference/heapmin.md)<br/>
 [_heapset](../c-runtime-library/heapset.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 지역, endregion pragma'
 title: region, endregion pragma
 ms.date: 08/29/2019
 f1_keywords:
@@ -12,21 +13,21 @@ helpviewer_keywords:
 - endregion pragma
 - region pragma
 ms.assetid: c697f807-622f-4796-851b-68a42bbecd84
-ms.openlocfilehash: 4a01e04582ac81d678aa0702945c62ee974a4428
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: a12305240f0c05913d16c5f26fb64661fc08e736
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222382"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167424"
 ---
 # <a name="region-endregion-pragmas"></a>region, endregion pragma
 
-`#pragma region`Visual Studio Code 편집기의 [개요 기능](/visualstudio/ide/outlining) 을 사용할 때 확장 하거나 축소할 수 있는 코드 블록을 지정할 수 있습니다.
+`#pragma region` Visual Studio Code 편집기의 [개요 기능](/visualstudio/ide/outlining) 을 사용할 때 확장 하거나 축소할 수 있는 코드 블록을 지정할 수 있습니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
-> **#pragma 지역** *이름*\
-> **#pragma endregion** *설명*
+> **#pragma 영역** *이름*\
+> **#pragma endregion** *주석*
 
 ### <a name="parameters"></a>매개 변수
 
@@ -38,9 +39,9 @@ ms.locfileid: "70222382"
 
 ## <a name="remarks"></a>설명
 
-`#pragma endregion``#pragma region` 블록의 끝을 표시 합니다.
+`#pragma endregion` 블록의 끝을 표시 `#pragma region` 합니다.
 
-블록 `#region` 은 `#pragma endregion` 지시문으로 종료 해야 합니다.
+`#region`블록은 지시문으로 종료 해야 합니다 `#pragma endregion` .
 
 ## <a name="example"></a>예제
 
@@ -55,6 +56,6 @@ void Test3() {}
 int main() {}
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [Pragma 지시문 및 __pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

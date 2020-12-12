@@ -1,22 +1,23 @@
 ---
+description: '자세한 정보: loop pragma'
 title: loop pragma
 ms.date: 08/29/2019
 f1_keywords:
 - loop_CPP
 - vc-pragma.loop
 ms.assetid: 6d5bb428-cead-47e7-941d-7513bbb162c7
-ms.openlocfilehash: 83dc8753392f9177f810746fce641437ed0ffec8
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: b54d62a6c9a29a4688453992ad9647d9bc21afd1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520631"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167463"
 ---
 # <a name="loop-pragma"></a>loop pragma
 
 자동 평행 화 도우미에서 루프 코드를 고려 하는 방법을 제어 하거나 자동 벡터화의 고려 사항에서 루프를 제외 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **#pragma 루프 (hint_parallel (** *n* **))**\
 > **#pragma 루프 (no_vector)**\
@@ -39,7 +40,7 @@ ms.locfileid: "87520631"
 
 **Loop** pragma를 사용 하려면 루프 정의가 아닌 바로 앞에 놓습니다. 그러면 pragma가 뒤에 오는 루프의 범위에 적용됩니다. 순서에 상관없이 루프에 여러 pragma를 적용할 수 있지만 각 pragma를 별도의 pragma 문에 지정해야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [자동 병렬화 및 자동 벡터화](../parallel/auto-parallelization-and-auto-vectorization.md)\
 [Pragma 지시문 및 __pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

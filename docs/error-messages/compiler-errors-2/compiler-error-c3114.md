@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3114'
 title: 컴파일러 오류 C3114
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3114
 ms.assetid: b5d2df4f-87d0-4292-9981-25c6a6013c05
-ms.openlocfilehash: 481e0ac5a395b38bc9d1874959b010ecd71f9fb5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 18d14ae01c0ae101ff0b66d837edd0699312af9c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233381"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97115952"
 ---
 # <a name="compiler-error-c3114"></a>컴파일러 오류 C3114
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: GetActivationFactory 함수'
 title: GetActivationFactory 함수
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - GetActivationFactory function
 ms.assetid: 5736d285-6beb-42aa-8788-e261c0010afe
-ms.openlocfilehash: 430b4ed3f6a02fd3db2bcab05fbb7f21f5367b5c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ae2384e0620282723c6f10090a0028347408b271
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213982"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97124633"
 ---
 # <a name="getactivationfactory-function"></a>GetActivationFactory 함수
 
@@ -38,8 +39,8 @@ inline HRESULT GetActivationFactory(
 *activatableClassId*<br/>
 활성화 팩터리에서 생성할 수 있는 클래스의 이름입니다.
 
-*팩토리에서*<br/>
-이 작업이 완료 되 면 *T*형식의 활성화 팩터리에 대 한 참조입니다.
+*공장*<br/>
+이 작업이 완료 되 면 *T* 형식의 활성화 팩터리에 대 한 참조입니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -53,4 +54,4 @@ inline HRESULT GetActivationFactory(
 
 ## <a name="see-also"></a>참고 항목
 
-[Windows::Foundation 네임스페이스](windows-foundation-namespace.md)
+[Windows:: Foundation 네임 스페이스](windows-foundation-namespace.md)

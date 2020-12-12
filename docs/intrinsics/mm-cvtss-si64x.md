@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _mm_cvtss_si64x'
 title: _mm_cvtss_si64x
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - cvtss2si intrinsic
 - _mm_cvtss_si64x intrinsic
 ms.assetid: c279aff2-ee29-4271-8829-3ec691bf7718
-ms.openlocfilehash: bc6e33da5ac7b25727f6e24c3af6e6a926b29847
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5b62b373305899920d5206b16c19f9b557f30bba
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230508"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167697"
 ---
 # <a name="_mm_cvtss_si64x"></a>_mm_cvtss_si64x
 

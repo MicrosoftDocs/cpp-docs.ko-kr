@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 연습: 작업 및 XML HTTP 요청을 사용 하 여 연결'
 title: '연습: 작업 및 XML HTTP 요청을 사용하여 연결'
 ms.date: 04/25/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - IXMLHTTPRequest2 and tasks, example
 - IXHR2 and tasks, example
 ms.assetid: e8e12d46-604c-42a7-abfd-b1d1bb2ed6b3
-ms.openlocfilehash: cdcdd4747e7f32d1d4c0e91959f4b49a45721269
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 88f58639b09c1b996922261c889c4844f1da4963
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224905"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167567"
 ---
 # <a name="walkthrough-connecting-using-tasks-and-xml-http-requests"></a>연습: 작업 및 XML HTTP 요청을 사용하여 연결
 
@@ -27,9 +28,9 @@ ms.locfileid: "87224905"
 를 사용 `IXMLHTTPRequest2` 하지만 작업을 사용 하지 않는 예제는 빠른 시작 [: XML HTTP 요청을 사용 하 여 연결 (IXMLHTTPRequest2)](/previous-versions/windows/apps/hh770550\(v=win.10\))을 참조 하세요.
 
 > [!TIP]
-> `IXMLHTTPRequest2`및 `IXMLHTTPRequest2Callback` 는 UWP 앱에서 사용 하기 위해 권장 되는 인터페이스입니다. 데스크톱 응용 프로그램에서 사용할 수 있도록 이 예제를 조정할 수도 있습니다.
+> `IXMLHTTPRequest2` 및 `IXMLHTTPRequest2Callback` 는 UWP 앱에서 사용 하기 위해 권장 되는 인터페이스입니다. 데스크톱 응용 프로그램에서 사용할 수 있도록 이 예제를 조정할 수도 있습니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 UWP 지원은 Visual Studio 2017 이상에서 선택 사항입니다. 설치 하려면 Windows 시작 메뉴에서 Visual Studio 설치 관리자 열고 사용 중인 Visual Studio 버전을 선택 합니다. **수정** 단추를 클릭 하 고 **UWP 개발** 타일이 선택 되어 있는지 확인 합니다. **선택적 구성 요소** 에서 **c + + UWP 도구** 가 선택 되어 있는지 확인 합니다. Visual studio 2017 용 v141 또는 Visual Studio 2019 용 v142를 사용 합니다.
 
@@ -45,7 +46,7 @@ UWP 지원은 Visual Studio 2017 이상에서 선택 사항입니다. 설치 하
 
 ### <a name="to-define-the-httprequest-class"></a>HttpRequest 클래스를 정의하려면
 
-1. 주 메뉴에서 **파일**  >  **새로 만들기**  >  **프로젝트**를 선택 합니다.
+1. 주 메뉴에서 **파일**  >  **새로 만들기**  >  **프로젝트** 를 선택 합니다.
 
 1. C + + **비어 있는 앱 (유니버설 Windows)** 템플릿을 사용 하 여 빈 XAML 앱 프로젝트를 만듭니다. 이 예에서는 프로젝트 이름을 `UsingIXMLHTTPRequest2`로 지정합니다.
 
@@ -100,7 +101,7 @@ UWP 지원은 Visual Studio 2017 이상에서 선택 사항입니다. 설치 하
 
    [!code-cpp[concrt-using-ixhr2#A7](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_10.cpp)]
 
-1. 프로젝트 속성의 **링커**, **입력**에서 및를 지정 `shcore.lib` `msxml6.lib` 합니다.
+1. 프로젝트 속성의 **링커**, **입력** 에서 및를 지정 `shcore.lib` `msxml6.lib` 합니다.
 
 다음은 실행 중인 응용 프로그램입니다.
 

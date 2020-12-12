@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CBitmap 클래스'
 title: CBitmap 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - CBitmap [MFC], SetBitmapBits
 - CBitmap [MFC], SetBitmapDimension
 ms.assetid: 3980616a-c59d-495a-86e6-62bd3889c84c
-ms.openlocfilehash: 8c19a54584390312cfd1657e88898cdb044179d0
-ms.sourcegitcommit: d77159732a8e782b2a1b7abea552065f2b6f61c1
+ms.openlocfilehash: e3d54a87cb53757f4751558b77e9c0c187484410
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93344581"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97122722"
 ---
 # <a name="cbitmap-class"></a>CBitmap 클래스
 
@@ -55,13 +56,13 @@ class CBitmap : public CGdiObject
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CBitmap:: CBitmap](#cbitmap)|`CBitmap` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CBitmap:: CreateBitmap](#createbitmap)|지정 된 너비, 높이 및 비트 패턴이 있는 장치 종속 메모리 비트맵을 사용 하 여 개체를 초기화 합니다.|
 |[CBitmap:: CreateBitmapIndirect](#createbitmapindirect)|구조체에 지정 된 너비, 높이 및 비트 패턴의 비트맵 (지정 된 경우)을 사용 하 여 개체를 초기화 `BITMAP` 합니다.|
@@ -79,7 +80,7 @@ class CBitmap : public CGdiObject
 
 ### <a name="public-operators"></a>Public 연산자
 
-|이름|Description|
+|Name|설명|
 |----------|-----------------|
 |[CBitmap:: operator HBITMAP](#operator_hbitmap)|개체에 연결 된 Windows 핸들을 반환 합니다 `CBitmap` .|
 

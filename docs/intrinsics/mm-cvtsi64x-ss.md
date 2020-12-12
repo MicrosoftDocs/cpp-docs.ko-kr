@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _mm_cvtsi64x_ss'
 title: _mm_cvtsi64x_ss
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - cvtsi2ss instruction
 - _mm_cvtsi64x_ss intrinsic
 ms.assetid: 01e5d321-c18a-46fd-a6f6-324364514e1f
-ms.openlocfilehash: a8227fcb482267946ea7ba08ee352c43e1ac6f6e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 81a1af04d4c66cefd9815471baeb3a6095403ddf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218002"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167723"
 ---
 # <a name="_mm_cvtsi64x_ss"></a>_mm_cvtsi64x_ss
 
 **Microsoft 전용**
 
-64 비트 정수 변환의 x64 확장 버전을 스칼라 단 정밀도 부동 소수점 값 () 명령으로 생성 합니다 `cvtsi2ss` .
+Single-Precision Floating-Point Value () 명령으로 변환 64 비트 정수의 x64 확장 버전을 생성 합니다 `cvtsi2ss` .
 
 ## <a name="syntax"></a>구문
 
@@ -39,7 +40,7 @@ __m128 _mm_cvtsi64x_ss(
 
 ## <a name="return-value"></a>반환 값
 
-**`__m128`** 변환 결과에 해당 하는 첫 번째 부동 소수점 값을 갖는 구조체입니다. 다른 세 값 *은에서 변경*되지 않은 상태로 복사 됩니다.
+**`__m128`** 변환 결과에 해당 하는 첫 번째 부동 소수점 값을 갖는 구조체입니다. 다른 세 값 *은에서 변경* 되지 않은 상태로 복사 됩니다.
 
 ## <a name="requirements"></a>요구 사항
 

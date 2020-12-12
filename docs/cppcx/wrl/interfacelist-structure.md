@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 인터페이스 목록 구조'
 title: InterfaceList 구조체
 ms.date: 10/03/2018
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - InterfaceList structure
 ms.assetid: 6ec3228d-eb3e-4b7e-aef1-7dcf17bdf61a
-ms.openlocfilehash: 7fd06f71bc4d8097366dc0e87d7ff92c5a12a790
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 660ae5137b7ff41129ce3866f0d289045f7dee9c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213865"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97124581"
 ---
 # <a name="interfacelist-structure"></a>InterfaceList 구조체
 
@@ -33,20 +34,20 @@ struct InterfaceList;
 *U*<br/>
 인터페이스 이름입니다. 재귀 목록의 나머지 인터페이스입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 재귀 인터페이스 목록을 만드는 데 사용 됩니다.
 
 ## <a name="members"></a>멤버
 
-### <a name="public-typedefs"></a>공용 형식 정의
+### <a name="public-typedefs"></a>공용 Typedefs
 
-|이름|설명|
+|Name|설명|
 |----------|-----------------|
-|`FirstT`|템플릿 매개 변수 *T*의 동의어입니다.|
-|`RestT`|템플릿 매개 변수 *U*의 동의어입니다.|
+|`FirstT`|템플릿 매개 변수 *T* 의 동의어입니다.|
+|`RestT`|템플릿 매개 변수 *U* 의 동의어입니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `InterfaceList`
 
@@ -58,4 +59,4 @@ struct InterfaceList;
 
 ## <a name="see-also"></a>참고 항목
 
-[Microsoft::WRL::Details 네임스페이스](microsoft-wrl-details-namespace.md)
+[Microsoft:: WRL::D etails 네임 스페이스](microsoft-wrl-details-namespace.md)

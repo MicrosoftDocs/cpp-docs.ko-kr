@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3087'
 title: 컴파일러 오류 C3087
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3087
 ms.assetid: 4f5bdd52-a853-4f02-b160-6868e9190b9d
-ms.openlocfilehash: 6b9ae71ebfbcfcd5936a2fc3ca666aa51e59bfb5
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 0700f10711610e09a797c647e0e107a3ef41f115
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74751419"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97116368"
 ---
 # <a name="compiler-error-c3087"></a>컴파일러 오류 C3087
 

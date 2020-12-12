@@ -1,4 +1,5 @@
 ---
+description: 다음에 대해 자세히 알아보세요. `__asm`
 title: __asm
 ms.date: 10/09/2018
 f1_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - __asm keyword [C++], vs. asm blocks
 - __asm keyword [C++]
 ms.assetid: 77ff3bc9-a492-4b5e-85e1-fa4e414e79cd
-ms.openlocfilehash: 14a40bef5b2edba76fc130604414c45eee589bcd
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5fa4e64bdb9ae4fc01e6e379de3e8a6771959e80
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87193005"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97118058"
 ---
 # `__asm`
 
 **Microsoft 전용**
 
-**`__asm`** 키워드는 인라인 어셈블러를 호출 하 고 c 또는 c + + 문이 유효한 모든 위치에 나타날 수 있습니다. 이 키워드는 자체적으로 표시할 수 없습니다. 이 키워드 다음에는 어셈블리 명령, 중괄호로 묶은 명령 그룹 또는 최소한 빈 괄호의 쌍이 와야 합니다. 여기서 "블록" 이라는 용어는 **`__asm`** 중괄호에 상관 없이 명령 또는 명령 그룹을 참조 합니다.
+**`__asm`** 키워드는 인라인 어셈블러를 호출 하 고 c 또는 c + + 문이 유효한 모든 위치에 나타날 수 있습니다. 이 키워드는 자체적으로 표시할 수 없습니다. 이 키워드 다음에는 어셈블리 명령, 중괄호로 묶은 명령 그룹 또는 최소한 빈 괄호의 쌍이 와야 합니다. 여기서 " **`__asm`** 블록" 항은 중괄호에 상관없이 명령 또는 명령 그룹을 참조합니다.
 
 > [!NOTE]
 > 표준 c + + 키워드에 대 한 Visual C++ 지원은 **`asm`** 컴파일러가 키워드에서 오류를 생성 하지 않도록 제한 됩니다. 그러나 블록은 **`asm`** 의미 있는 코드를 생성 하지 않습니다. **`__asm`** 대신를 사용 **`asm`** 합니다.
@@ -47,7 +48,7 @@ Visual Studio 2005 이전에는 명령
 __asm int 3
 ```
 
-**/clr**을 사용 하 여 컴파일할 때 네이티브 코드가 생성 되지 않았습니다. 컴파일러가 명령을 CLR break 명령으로 변환 했습니다.
+**/clr** 을 사용 하 여 컴파일할 때 네이티브 코드가 생성 되지 않았습니다. 컴파일러가 명령을 CLR break 명령으로 변환 했습니다.
 
 이제 `__asm int 3`을 사용하면 함수의 네이티브 코드가 생성됩니다. 함수를 사용 하 여 코드에서 중단점을 발생 시 키 려 고 하는 함수를 MSIL로 컴파일하려면 [__debugbreak](../../intrinsics/debugbreak.md)를 사용 합니다.
 
@@ -65,7 +66,7 @@ __asm {
 }
 ```
 
-또는 **`__asm`** 각 어셈블리 명령 앞에를 배치할 수 있습니다.
+또는 **`__asm`** 을 각 어셈블리 명령 앞에 배치할 수 있습니다.
 
 ```cpp
 __asm mov al, 2
@@ -87,5 +88,5 @@ C 및 c + +의 중괄호와 달리 블록을 묶는 중괄호는 **`__asm`** 변
 
 ## <a name="see-also"></a>참조
 
-[C++ 키워드](../../cpp/keywords-cpp.md)<br/>
+[키워드](../../cpp/keywords-cpp.md)<br/>
 [인라인 어셈블러](../../assembler/inline/inline-assembler.md)<br/>

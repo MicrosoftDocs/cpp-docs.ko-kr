@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: interface 클래스 (c + +/CLI 및 c + +/CX)'
 title: 인터페이스 클래스(C++/CLI 및 C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - interface class keyword
 - interface struct keyword
 ms.assetid: 3ccea701-f50b-4da7-ad6b-f0ee1203e2b9
-ms.openlocfilehash: 8a637332110fa18a7a5803d7512c643e29d66eab
-ms.sourcegitcommit: 68ae6f9ea17f32734b32bb06ffeec12d8d33f0fe
+ms.openlocfilehash: 8d6fd1eda0ddaaf6ab995e09ad1d84f78fcc91be
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87807747"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97119022"
 ---
 # <a name="interface-class--ccli-and-ccx"></a>인터페이스 클래스(C++/CLI 및 C++/CX)
 
@@ -37,20 +38,20 @@ interface_access interface struct name : inherit_access base_interface {};
 인터페이스의 이름입니다.
 
 *inherit_access*<br/>
-*base_interface*의 접근성입니다.  기본 인터페이스에 대해 유일 하 게 허용 되는 액세스 가능성은 **`public`** (기본값)입니다.
+*base_interface* 의 접근성입니다.  기본 인터페이스에 대해 유일 하 게 허용 되는 액세스 가능성은 **`public`** (기본값)입니다.
 
 *base_interface*<br/>
-(선택 사항) 인터페이스 ‘이름’의 기본 인터페이스입니다.**
+(선택 사항) 인터페이스 ‘이름’의 기본 인터페이스입니다.
 
 ### <a name="remarks"></a>설명
 
-**인터페이스 구조체**는 **인터페이스 클래스**와 동일합니다.
+**인터페이스 구조체** 는 **인터페이스 클래스** 와 동일합니다.
 
 인터페이스에는 함수, 이벤트 및 속성에 대한 선언을 포함할 수 있습니다.  모든 인터페이스 멤버는 public 접근성을 갖습니다. 인터페이스에 정적 데이터 멤버, 함수, 이벤트 및 속성을 포함할 수도 있으며, 이러한 정적 멤버는 인터페이스에서 정의해야 합니다.
 
 인터페이스는 클래스를 구현할 수 있는 방법을 정의합니다. 인터페이스는 클래스가 아니며, 클래스는 인터페이스를 구현할 수만 있습니다. 클래스가 인터페이스에서 선언된 함수를 정의하는 경우 함수가 재정의되지 않고 구현됩니다. 따라서 이름 조회는 인터페이스 멤버를 포함하지 않습니다.
 
-인터페이스에서 파생된 클래스 또는 구조체는 인터페이스의 모든 멤버를 구현해야 합니다. 인터페이스 ‘이름’을 구현하는 경우 `base_interface` 목록의 인터페이스도 구현해야 합니다.**
+인터페이스에서 파생된 클래스 또는 구조체는 인터페이스의 모든 멤버를 구현해야 합니다. 인터페이스 ‘이름’을 구현하는 경우 `base_interface` 목록의 인터페이스도 구현해야 합니다.
 
 자세한 내용은 다음을 참조하세요.
 
@@ -84,7 +85,7 @@ interface_access interface struct name : inherit_access base_interface {};
 
 컴파일러 옵션: `/clr`
 
-### <a name="examples"></a>예
+### <a name="examples"></a>예제
 
 다음 코드 예제에서는 인터페이스를 통해 클록 함수의 동작을 정의할 수 있는 방법을 보여 줍니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 식의 의미 체계'
 title: 식의 의미
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -7,20 +8,20 @@ helpviewer_keywords:
 - expression evaluation
 - expression evaluation, about expression evaluation
 ms.assetid: 4a792154-533b-48b9-8709-31bfc170f0a7
-ms.openlocfilehash: 43bcd98e0dbf14dada2643c0b731d3f6bae863e6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f5e038d8ea6de55463a60d7b21104c2e71accec1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223605"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97116992"
 ---
 # <a name="semantics-of-expressions"></a>식의 의미
 
 식은 해당 연산자의 그룹화 및 우선 순위에 따라 계산됩니다. ([연산자 우선 순위 및](../cpp/cpp-built-in-operators-precedence-and-associativity.md) [어휘 규칙](../cpp/lexical-conventions.md)의 결합성은 c + + 연산자가 식에 적용 하는 관계를 보여 줍니다.)
 
-## <a name="order-of-evaluation"></a>평가 순서
+## <a name="order-of-evaluation"></a>계산 순서
 
-다음 예를 살펴보세요.
+다음 예제를 고려해 보세요.
 
 ```cpp
 // Order_of_Evaluation.cpp
@@ -78,7 +79,7 @@ C++ 언어는 피연산자를 지정할 때 특정 호환성을 지정합니다.
 
 ## <a name="ambiguous-expressions"></a>모호한 식
 
-특정 식의 의미가 모호합니다. 이러한 식은 개체의 값이 동일한 식에서 두 번 이상 변경될 때 가장 자주 발생합니다. 이러한 식은 언어에서 하나로 정의되지 않는 특정 계산 순서에 의존합니다. 다음과 같은 예제를 참조하세요.
+특정 식의 의미가 모호합니다. 이러한 식은 개체의 값이 동일한 식에서 두 번 이상 변경될 때 가장 자주 발생합니다. 이러한 식은 언어에서 하나로 정의되지 않는 특정 계산 순서에 의존합니다. 다음 예제를 참조하세요.
 
 ```
 int i = 7;

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: 전역 상수'
 title: 전역 상수
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - global constants
 ms.assetid: 778d86fd-3ca6-4d2b-b4c5-aee6dc1efe6b
-ms.openlocfilehash: 406cdb46e3a6263559f3f3d0869f1b198b466630
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 1727be8670208f4caa3be5ef4b47ce488c86553d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839714"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97120733"
 ---
 # <a name="global-constants"></a>전역 상수
 
@@ -72,6 +73,6 @@ Microsoft 런타임 라이브러리에는 라이브러리 루틴에서 사용하
 
 ## <a name="see-also"></a>참고 항목
 
-[C 런타임 라이브러리 참조](../c-runtime-library/c-run-time-library-reference.md)<br/>
+[C Run-Time 라이브러리 참조](../c-runtime-library/c-run-time-library-reference.md)<br/>
 [전역 변수](../c-runtime-library/global-variables.md)<br/>
 [프롤로그/에필로그 코드 작성 시 고려 사항](../cpp/considerations-for-writing-prolog-epilog-code.md)

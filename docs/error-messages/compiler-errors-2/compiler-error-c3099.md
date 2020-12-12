@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3099'
 title: 컴파일러 오류 C3099
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3099
 ms.assetid: b3dded0f-76c9-42c1-991b-532eb8619661
-ms.openlocfilehash: 81f508c47c678d86f8f95303861b42f8a70daa57
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: d065edd58df1e9196dc6aa31cfd4fb263f062f1d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74750054"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97116225"
 ---
 # <a name="compiler-error-c3099"></a>컴파일러 오류 C3099
 

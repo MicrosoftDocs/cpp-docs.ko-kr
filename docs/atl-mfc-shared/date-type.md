@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 날짜 형식'
 title: 날짜 형식
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - MFC, date and time
 - hour values representation
 ms.assetid: 695853ed-b614-4575-b793-b8c287372038
-ms.openlocfilehash: 5a6c1e1cca5b2cb978d6af4208377db1a2926357
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 6a0fd8f02abe5fd3ecb3695fd2715bfb3a573028
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502179"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167021"
 ---
 # <a name="date-type"></a>날짜 형식
 
