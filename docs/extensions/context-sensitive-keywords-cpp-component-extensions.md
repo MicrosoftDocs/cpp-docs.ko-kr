@@ -1,4 +1,5 @@
 ---
+description: 자세한 내용은 Context-Sensitive 키워드 (c + +/CLI 및 c + +/CX)를 확인 하세요.
 title: 상황에 맞는 키워드(C++/CLI 및 C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -7,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - context-sensitive keywords
 ms.assetid: e33da089-f434-44e9-8cce-4668d05a8939
-ms.openlocfilehash: 82bf4c3f0deed788b7b1e50f1d8d82e63dc27f6f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7c005b1a6149f010b9729db5459fa3951bc50521
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219744"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176862"
 ---
 # <a name="context-sensitive-keywords--ccli-and-ccx"></a>상황에 맞는 키워드(C++/CLI 및 C++/CX)
 
-*상황에 맞는 키워드*는 특정 컨텍스트에서만 인식되는 언어 요소입니다. 특정 컨텍스트가 아닐 경우 상황에 맞는 키워드는 사용자 정의 기호일 수 있습니다.
+*상황에 맞는 키워드* 는 특정 컨텍스트에서만 인식되는 언어 요소입니다. 특정 컨텍스트가 아닐 경우 상황에 맞는 키워드는 사용자 정의 기호일 수 있습니다.
 
 ## <a name="all-runtimes"></a>모든 런타임
 
@@ -38,7 +39,7 @@ ms.locfileid: "87219744"
 
 - `internal`
 
-- [리터럴](literal-cpp-component-extensions.md)
+- [literal](literal-cpp-component-extensions.md)
 
 - [override](override-cpp-component-extensions.md)
 

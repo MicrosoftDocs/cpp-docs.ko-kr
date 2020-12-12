@@ -1,4 +1,5 @@
 ---
+description: 다음에 대해 자세히 알아보세요. `__super`
 title: __super
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - __super keyword [C++]
 ms.assetid: f0957c31-9256-405b-b402-cad182404b5f
-ms.openlocfilehash: 3afc2e8049cfcca40db389bed84baa6f42dae126
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 30f2733abbd4599deabfa989d72b099c929cb050
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213153"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97178136"
 ---
 # `__super`
 
@@ -62,4 +63,4 @@ struct D : B1, B2 {
 
 ## <a name="see-also"></a>참조
 
-[C++ 키워드](../cpp/keywords-cpp.md)
+[키워드](../cpp/keywords-cpp.md)

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: 링크 옵션 Compiler-Controlled'
 title: Compiler-Controlled LINK Options
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - cl.exe compiler [C++], features that affect linking
 - cl.exe compiler [C++], controlling linker
 ms.assetid: e4c03896-c99c-4599-8502-e0f4bebe69d0
-ms.openlocfilehash: f631d0ebbbd9e60fe5d54aac6fb158461d3f4d38
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 86f03f53fe19f6788528dca421fb6030289fca99
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79440103"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97178981"
 ---
 # <a name="compiler-controlled-link-options"></a>Compiler-Controlled LINK Options
 
@@ -23,10 +24,10 @@ ms.locfileid: "79440103"
 |----------------------|---------------------------------|
 |.C,. .cxx, .cpp 또는 .def 이외의 모든 파일 이름 확장명|연결에 대 한 입력으로 파일 이름을 전달 합니다.|
 |*파일 이름*.def|/DEF:*filename*.def를 전달 합니다.|
-|/F*번호*|Pass/STACK:*number*|
-|/Fd*파일 이름*|/PDB:*filename* 을 전달 합니다.|
-|/Fe*파일 이름*|/OUT:*filename*|
-|/Fm*파일 이름*|통과/MAP:*filename*|
+|/F *번호*|Pass/STACK:*number*|
+|/Fd *파일 이름*|/PDB:*filename* 을 전달 합니다.|
+|/Fe *파일 이름*|/OUT:*filename*|
+|/Fm *파일 이름*|통과/MAP:*filename*|
 |/Gy|패키지 함수 (Comdat)를 만듭니다. 함수 수준 링크를 사용 합니다.|
 |/LD|/DLL 전달|
 |/LDd|/DLL 전달|

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: AsyncStatusInternal 열거형'
 title: AsyncStatusInternal 열거형
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - AsyncStatusInternal enumeration
 ms.assetid: b783923f-3f1c-4487-9384-be572cbc62d7
-ms.openlocfilehash: 0eadd1e3a287feecd36b00b231b42c31218352c1
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3227699a0e7b8933dc5839e65fb3489328d3b1f5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214151"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97175796"
 ---
 # <a name="asyncstatusinternal-enumeration"></a>AsyncStatusInternal 열거형
 
@@ -24,9 +25,9 @@ WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습
 enum AsyncStatusInternal;
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
-비동기 작업의 상태에 대 한 내부 열거와 `Windows::Foundation::AsyncStatus` 열거형 사이의 매핑을 지정 합니다.
+비동기 작업의 상태와 열거형의 내부 열거형 간 매핑을 지정 합니다 `Windows::Foundation::AsyncStatus` .
 
 ## <a name="members"></a>멤버
 
@@ -53,4 +54,4 @@ enum AsyncStatusInternal;
 
 ## <a name="see-also"></a>참고 항목
 
-[Microsoft::WRL::Details 네임스페이스](microsoft-wrl-details-namespace.md)
+[Microsoft:: WRL::D etails 네임 스페이스](microsoft-wrl-details-namespace.md)

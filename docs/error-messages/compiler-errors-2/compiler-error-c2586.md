@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2586'
 title: 컴파일러 오류 C2586
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2586
 ms.assetid: dae703c7-5c38-4db6-8411-4d1b22713eb5
-ms.openlocfilehash: be98f475bdcfb4dfdd7f7f37d78f4977d71c52b1
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: bcf0c374936c994773f0c2d2afa56924d6ca9f4b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74755423"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97177616"
 ---
 # <a name="compiler-error-c2586"></a>컴파일러 오류 C2586
 

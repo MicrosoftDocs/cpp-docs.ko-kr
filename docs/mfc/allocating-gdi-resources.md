@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: GDI 리소스 할당'
 title: GDI 리소스 할당
 ms.date: 06/03/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - GDI objects [MFC], allocating during printing
 - printing [MFC], allocating GDI resources
 ms.assetid: cef7e94d-5a27-4aea-a9ee-8369fc895d3a
-ms.openlocfilehash: f0cadac5320a8c6e91eb3b1989d1fb3c0c701eb0
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 348f1ca1eadc22dfc8ca6faa6c31bb2f8d81e51e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84623244"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176810"
 ---
 # <a name="allocating-gdi-resources"></a>GDI 리소스 할당
 
@@ -31,4 +32,4 @@ ms.locfileid: "84623244"
 ## <a name="see-also"></a>참고 항목
 
 [인쇄](printing.md)<br/>
-[기본 인쇄가 수행되는 방법](how-default-printing-is-done.md)
+[기본 인쇄를 수행 하는 방법](how-default-printing-is-done.md)

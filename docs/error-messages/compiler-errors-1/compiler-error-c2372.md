@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2372'
 title: 컴파일러 오류 C2372
 ms.date: 03/23/2020
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2372
 ms.assetid: 406bea63-c8d3-4231-9d26-c70af6980840
-ms.openlocfilehash: 4d60f93def9bfe8359496803c8aede1ec698b465
-ms.sourcegitcommit: eff68e4e82be292a5664616b16a526df3e9d1cda
+ms.openlocfilehash: 9cf94e63e673ca226f3f9c3f1b4c3aa0a6bf8016
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80150942"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97174912"
 ---
 # <a name="compiler-error-c2372"></a>컴파일러 오류 C2372
 

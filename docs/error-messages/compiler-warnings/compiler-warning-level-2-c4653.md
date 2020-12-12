@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 2) C4653'
 title: 컴파일러 경고(수준 2) C4653
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4653
 ms.assetid: 90ec3317-3d39-4b4c-bcd1-97e7c799e1b6
-ms.openlocfilehash: 994e9a4963e7e10af2313b3dcea5bb8b2b93426e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: bf7b2e453d4f9ea90f8b0c187fa834938de15f5a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80161739"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97173495"
 ---
 # <a name="compiler-warning-level-2-c4653"></a>컴파일러 경고(수준 2) C4653
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3022'
 title: 컴파일러 오류 C3022
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3022
 ms.assetid: 9f1d444c-6c6e-48d9-9346-69128390aa33
-ms.openlocfilehash: 114236acdfe65dbff7033bc29579866fec8c14d5
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 66d9fa5e4eec93a1fcb4182c8c4e8672c586aa76
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74742069"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97174366"
 ---
 # <a name="compiler-error-c3022"></a>컴파일러 오류 C3022
 

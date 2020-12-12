@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: .NET 및 UWP 용 구성 요소 확장'
 title: .NET 및 UWP용 구성 요소 확장
 ms.date: 10/12/2018
 ms.topic: overview
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - keywords [C++]
 - Managed Extensions for C++, replacement syntax
 ms.assetid: 1e400ee6-3ac9-4910-a608-9d3d5993e423
-ms.openlocfilehash: 887fa14153e728735937604d531782a9ae7535bb
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 5ba82479db4229db5f6b962955641f75e3b42e00
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509719"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176914"
 ---
 # <a name="component-extensions-for-net-and-uwp"></a>.NET 및 UWP용 구성 요소 확장
 
@@ -31,13 +32,13 @@ C++/CX 확장은 C++/CLI의 하위 집합입니다. 확장 구문은 대부분�
 
 ## <a name="data-type-keywords"></a>데이터 형식 키워드
 
-언어 확장에는 ‘집계 키워드’가 포함됩니다. 이 키워드는 공백으로 구분된 두 개의 토큰으로 구성됩니다.** 토큰은 별도로 사용될 때의 의미와 함께 사용될 때의 의미가 있을 수 있습니다. 예를 들어 "ref"라는 단어는 일반 식별자이고 "class"라는 단어는 네이티브 클래스를 선언하는 키워드입니다. 그러나 이러한 단어가 결합되어 **ref class**를 구성하는 경우 결과 집계 키워드는 ‘런타임 클래스’로 알려진 엔터티를 선언합니다.**
+언어 확장에는 ‘집계 키워드’가 포함됩니다. 이 키워드는 공백으로 구분된 두 개의 토큰으로 구성됩니다. 토큰은 별도로 사용될 때의 의미와 함께 사용될 때의 의미가 있을 수 있습니다. 예를 들어 "ref"라는 단어는 일반 식별자이고 "class"라는 단어는 네이티브 클래스를 선언하는 키워드입니다. 그러나 이러한 단어가 결합되어 **ref class** 를 구성하는 경우 결과 집계 키워드는 ‘런타임 클래스’로 알려진 엔터티를 선언합니다.
 
-확장에는 ‘상황에 맞는’ 키워드도 포함됩니다.** 키워드는 해당 키워드를 포함하는 문의 종류 및 해당 문에서의 배치에 따라 상황에 맞는 것으로 처리됩니다. 예를 들어 토큰 "property"는 식별자이거나 특별한 종류의 public 클래스 멤버를 선언할 수 있습니다.
+확장에는 ‘상황에 맞는’ 키워드도 포함됩니다. 키워드는 해당 키워드를 포함하는 문의 종류 및 해당 문에서의 배치에 따라 상황에 맞는 것으로 처리됩니다. 예를 들어 토큰 "property"는 식별자이거나 특별한 종류의 public 클래스 멤버를 선언할 수 있습니다.
 
 다음 표에는 C++ 언어 확장의 키워드가 나열되어 있습니다.
 
-|키워드|상황에 맞는지 여부|용도|참조|
+|키워드|상황에 맞는지 여부|목적|참조|
 |-------------|-----------------------|-------------|---------------|
 |**ref class**<br /><br /> **ref struct**|아니요|클래스를 선언합니다.|[클래스 및 구조체](classes-and-structs-cpp-component-extensions.md)|
 |**value class**<br /><br /> **value struct**|아니요|값 클래스를 선언합니다.|[클래스 및 구조체](classes-and-structs-cpp-component-extensions.md)|
@@ -51,7 +52,7 @@ C++/CX 확장은 C++/CLI의 하위 집합입니다. 확장 구문은 대부분�
 
 다음 키워드를 사용하여 파생의 재정의 동작을 정규화할 수 있습니다. 키워드는 **`new`** c + +의 확장이 아니지만 추가 컨텍스트에서 사용할 수 있기 때문에 여기에 나열 됩니다. 일부 지정자는 네이티브 프로그래밍에도 사용할 수 있습니다. 자세한 내용은 [방법: 네이티브 컴파일에 Override 지정자 선언 (c + +/cli)](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md)을 참조 하세요.
 
-|키워드|상황에 맞는지 여부|용도|참조|
+|키워드|상황에 맞는지 여부|목적|참조|
 |-------------|-----------------------|-------------|---------------|
 |**abstract**|예|함수 또는 클래스가 추상임을 나타냅니다.|[abstract](abstract-cpp-component-extensions.md)|
 |**`new`**|아니요|함수가 기본 클래스 버전의 재정의가 아님을 나타냅니다.|[new(vtable의 new 슬롯)](new-new-slot-in-vtable-cpp-component-extensions.md)|
@@ -62,7 +63,7 @@ C++/CX 확장은 C++/CLI의 하위 집합입니다. 확장 구문은 대부분�
 
 다음은 제네릭 형식을 지원하도록 추가된 키워드입니다. 자세한 내용은 [제네릭](generics-cpp-component-extensions.md)을 참조하세요.
 
-|키워드|상황에 맞는지 여부|용도|
+|키워드|상황에 맞는지 여부|목적|
 |-------------|-----------------------|-------------|
 |**범용**|아니요|제네릭 형식을 선언합니다.|
 |**where**|예|제네릭 형식 매개 변수에 적용되는 제약 조건을 지정합니다.|
@@ -71,7 +72,7 @@ C++/CX 확장은 C++/CLI의 하위 집합입니다. 확장 구문은 대부분�
 
 다음은 C++ 확장에 추가된 키워드입니다.
 
-|키워드|상황에 맞는지 여부|용도|참조|
+|키워드|상황에 맞는지 여부|목적|참조|
 |-------------|-----------------------|-------------|---------------|
 |**finally**|예|기본 예외 처리 동작을 나타냅니다.|[예외 처리](exception-handling-cpp-component-extensions.md)|
 |**for each, in**|아니요|컬렉션의 요소를 열거합니다.|[for each, in](../dotnet/for-each-in.md)|
@@ -85,7 +86,7 @@ C++/CX 확장은 C++/CLI의 하위 집합입니다. 확장 구문은 대부분�
 
 다음 언어 구문은 키워드 대신 템플릿으로 구현됩니다. `/ZW` 컴파일러 옵션을 지정하는 경우 `lang` 네임스페이스에 정의됩니다. `/clr` 컴파일러 옵션을 지정하는 경우 `cli` 네임스페이스에 정의됩니다.
 
-|키워드|용도|참조|
+|키워드|목적|참조|
 |-------------|-------------|---------------|
 |**array**|배열을 선언합니다.|[배열](arrays-cpp-component-extensions.md)|
 |**interior_ptr**|(CLR에만 해당) 참조 형식의 데이터를 가리킵니다.|[interior_ptr (c + +/CLI)](interior-ptr-cpp-cli.md)|

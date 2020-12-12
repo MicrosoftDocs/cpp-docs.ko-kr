@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Platform::D etails:: Console 클래스'
 title: Platform::Details::Console 클래스
 ms.date: 12/30/2016
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Details::Console Class
 ms.assetid: e8d01367-d8c8-4211-9b9e-3f93c8115dae
-ms.openlocfilehash: 42d5d79fd93d5cf148432371641496bfa5be55c2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: da7556e6c90339b44faf691d5bfe490d92ea7f61
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62258015"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176056"
 ---
 # <a name="platformdetailsconsole-class"></a>Platform::Details::Console 클래스
 
@@ -34,10 +35,10 @@ ref class Console sealed;
 
 ### <a name="requirements"></a>요구 사항
 
-**메타데이터:** platform.winmd
+**메타 데이터:** platform.object
 
 **네임스페이스:** Platform::Details
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[플랫폼 Namespace](platform-namespace-c-cx.md)
+[Platform 네임 스페이스](platform-namespace-c-cx.md)

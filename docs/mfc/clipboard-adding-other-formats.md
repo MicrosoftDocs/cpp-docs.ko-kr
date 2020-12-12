@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 클립보드: 다른 형식 추가'
 title: '클립보드: 기타 서식 추가'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,22 +10,22 @@ helpviewer_keywords:
 - registering custom Clipboard data formats
 - custom Clipboard data formats
 ms.assetid: aea58159-65ed-4385-aeaa-3d9d5281903b
-ms.openlocfilehash: 52089364a6be423c69a7031cd0d99e1924de1444
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 3259660725f324436cc606574eb36499f74e7054
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626071"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176641"
 ---
 # <a name="clipboard-adding-other-formats"></a>클립보드: 기타 서식 추가
 
-이 항목에서는 특히 OLE 지원의 지원 되는 형식 목록을 확장 하는 방법에 대해 설명 합니다. 클립보드 항목 [: 데이터 복사 및 붙여넣기](clipboard-copying-and-pasting-data.md) 는 클립보드에서 복사 및 붙여넣기를 지 원하는 데 필요한 최소 구현에 대해 설명 합니다. 이를 구현 하는 모든 경우에는 클립보드에 배치 된 형식만 **CF_METAFILEPICT**, **CF_EMBEDSOURCE** **CF_OBJECTDESCRIPTOR**및 **CF_LINKSOURCE**수 있습니다. 대부분의 응용 프로그램은 이러한 세 가지 보다 클립보드에 더 많은 형식이 필요 합니다.
+이 항목에서는 특히 OLE 지원의 지원 되는 형식 목록을 확장 하는 방법에 대해 설명 합니다. 클립보드 항목 [: 데이터 복사 및 붙여넣기](clipboard-copying-and-pasting-data.md) 는 클립보드에서 복사 및 붙여넣기를 지 원하는 데 필요한 최소 구현에 대해 설명 합니다. 이를 구현 하는 모든 경우에는 클립보드에 배치 된 형식만 **CF_METAFILEPICT**, **CF_EMBEDSOURCE** **CF_OBJECTDESCRIPTOR** 및 **CF_LINKSOURCE** 수 있습니다. 대부분의 응용 프로그램은 이러한 세 가지 보다 클립보드에 더 많은 형식이 필요 합니다.
 
-## <a name="registering-custom-formats"></a><a name="_core_registering_custom_formats"></a>사용자 지정 형식 등록
+## <a name="registering-custom-formats"></a><a name="_core_registering_custom_formats"></a> 사용자 지정 형식 등록
 
 사용자 지정 형식을 직접 만들려면 사용자 지정 클립보드 형식을 등록할 때 사용 하는 것과 동일한 절차를 따르세요. 형식의 이름을 **RegisterClipboardFormat** 함수에 전달 하 고 반환 값을 형식 ID로 사용 합니다.
 
-## <a name="placing-formats-on-the-clipboard"></a><a name="_core_placing_formats_on_the_clipboard"></a>클립보드에 형식 배치
+## <a name="placing-formats-on-the-clipboard"></a><a name="_core_placing_formats_on_the_clipboard"></a> 클립보드에 형식 배치
 
 클립보드에 배치 된 형식에 더 많은 형식을 추가 하려면 `OnGetClipboardData` `COleClientItem` `COleServerItem` 복사할 데이터가 네이티브 인지 여부에 따라 또는에서 파생 된 클래스의 함수를 재정의 해야 합니다. 이 함수에서 다음 절차를 사용 해야 합니다.
 

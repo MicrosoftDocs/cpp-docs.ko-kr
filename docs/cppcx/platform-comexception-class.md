@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Platform:: COMException 클래스'
 title: Platform::COMException 클래스
 ms.date: 12/30/2016
 ms.topic: reference
@@ -9,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::COMException Class
 ms.assetid: 44fda4e5-574f-4d12-ab5f-4ff3f277448d
-ms.openlocfilehash: 1d0d36ec16303d6bdaa5f2344cd5d48fba03c8bf
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 71f6c3fa6d29a884627f2bf5aae07fbc0349ec9b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79444301"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176121"
 ---
 # <a name="platformcomexception-class"></a>Platform::COMException 클래스
 
@@ -26,7 +27,7 @@ ms.locfileid: "79444301"
 public ref class COMException : Exception,    IException,    IPrintable,    IEquatable
 ```
 
-### <a name="members"></a>구성원
+### <a name="members"></a>멤버
 
 COMException 클래스는 Object 클래스 및 IException, IPrintable 및 IEquatable 인터페이스에서 상속합니다.
 
@@ -34,7 +35,7 @@ COMException에는 다음 형식의 멤버도 있습니다.
 
 **생성자**
 
-|멤버|Description|
+|멤버|설명|
 |------------|-----------------|
 |[COMException](#ctor)|COMException 클래스의 새 인스턴스를 초기화합니다.|
 
@@ -46,7 +47,7 @@ COMException 클래스는 [Platform::Object Class](../cppcx/platform-object-clas
 
 COMException 클래스에는 다음과 같은 속성이 있습니다.
 
-|멤버|Description|
+|멤버|설명|
 |------------|-----------------|
 |[예외:: HResult](#hresult)|예외에 해당하는 HRESULT입니다.|
 |[예외:: Message](#message)|예외를 설명하는 메시지입니다.|
@@ -55,7 +56,7 @@ COMException 클래스에는 다음과 같은 속성이 있습니다.
 
 다음과 같은 미리 정의된 예외는 COMException에서 파생됩니다. COMException과 이름, 생성자 이름 및 내부 HRESULT 값만 다릅니다.
 
-|속성|내부 HRESULT|Description|
+|Name|내부 HRESULT|설명|
 |----------|------------------------|-----------------|
 |COMException|*사용자 정의 hresult*|COM 메서드 호출에서 인식할 수 없는 HRESULT가 반환되는 경우에 throw됩니다.|
 |AccessDeniedException|E_ACCESSDENIED|리소스 또는 기능에 대한 액세스가 거부된 경우 throw됩니다.|
@@ -79,9 +80,9 @@ COMException 클래스에는 다음과 같은 속성이 있습니다.
 
 **네임스페이스:** Platform
 
-**메타데이터:** platform.winmd
+**메타 데이터:** platform.object
 
-## <a name="ctor"></a>COMException:: COMException 생성자
+## <a name="comexceptioncomexception-constructor"></a><a name="ctor"></a> COMException:: COMException 생성자
 
 COMException 클래스의 새 인스턴스를 초기화합니다.
 
@@ -96,11 +97,11 @@ COMException( int hresult )
 *hresult*<br/>
 예외로 표시되는 오류 HRESULT입니다.
 
-## <a name="hresult"></a>COMException:: HResult 속성
+## <a name="comexceptionhresult-property"></a><a name="hresult"></a> COMException:: HResult 속성
 
 예외에 해당하는 HRESULT입니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 public:
@@ -115,11 +116,11 @@ public:
 
 HRESULT 값을 해석 하는 방법에 대 한 자세한 내용은 [COM 오류 코드 구조](/windows/win32/com/structure-of-com-error-codes)를 참조 하세요.
 
-## <a name="message"></a>COMException:: Message 속성
+## <a name="comexceptionmessage-property"></a><a name="message"></a> COMException:: Message 속성
 
 예외를 설명하는 메시지입니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 public:property String^ Message {    String^ get();}

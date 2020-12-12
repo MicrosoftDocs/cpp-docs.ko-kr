@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Platform::D etails:: HeapAllocationTrackingLevel 열거형'
 title: Platform::Details::HeapAllocationTrackingLevel 열거형
 ms.date: 12/30/2016
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Details::HeapAllocationTrackingLevel Enumeration
 ms.assetid: dc341bc0-b47b-4eb2-9445-fbaf788e7b1a
-ms.openlocfilehash: 2f79d823771410cc3d32a9f758442f2c98656419
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1aecd6646b37a0bc876e6e32c5c4940f8047ae89
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388205"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97175926"
 ---
 # <a name="platformdetailsheapallocationtrackinglevel-enumeration"></a>Platform::Details::HeapAllocationTrackingLevel 열거형
 
@@ -34,10 +35,10 @@ enumm class HeapAllocationTrackingLevel;
 
 ### <a name="requirements"></a>요구 사항
 
-**메타데이터:** platform.winmd
+**메타 데이터:** platform.object
 
 **네임스페이스:** Platform::Details
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[플랫폼 Namespace](platform-namespace-c-cx.md)
+[Platform 네임 스페이스](platform-namespace-c-cx.md)

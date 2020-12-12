@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2048'
 title: 컴파일러 오류 C2048
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2048
 ms.assetid: 44704726-85fc-42f0-afb9-194df8c4ca7c
-ms.openlocfilehash: 483e4d706a1c08899e6cd6e1ec561a21ed805014
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cc87d0ca1670daa4cb137f4c3053030d188884e4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87210438"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97175081"
 ---
 # <a name="compiler-error-c2048"></a>컴파일러 오류 C2048
 

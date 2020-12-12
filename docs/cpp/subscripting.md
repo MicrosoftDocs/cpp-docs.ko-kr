@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 첨자'
 title: 첨자
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - operator overloading [C++], examples
 - subscript operator
 ms.assetid: eb151281-6733-401d-9787-39ab6754c62c
-ms.openlocfilehash: 2573f30b2dfee20d12afea2a1072bbdcef46228b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 77230045e66336e9989f49dd54557fa92d2ab001
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231080"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97178201"
 ---
 # <a name="subscripting"></a>첨자
 
@@ -89,7 +90,7 @@ Array bounds violation.
 Element: [10] = 10
 ```
 
-## <a name="comments"></a>주석
+## <a name="comments"></a>의견
 
 `i`이전 프로그램에서 10에 도달 하면 **operator []** 는 범위를 벗어난 첨자가 사용 중임을 감지 하 고 오류 메시지를 발행 합니다.
 
@@ -97,4 +98,4 @@ Element: [10] = 10
 
 ## <a name="see-also"></a>참고 항목
 
-[연산자 오버 로드](../cpp/operator-overloading.md)
+[연산자 오버로드](../cpp/operator-overloading.md)

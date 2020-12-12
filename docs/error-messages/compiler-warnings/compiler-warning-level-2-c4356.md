@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 2) C4356'
 title: 컴파일러 경고(수준 2) C4356
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4356
 ms.assetid: 3af3defe-de33-43b6-bd6c-2c2e09e34f3f
-ms.openlocfilehash: ffcf0098799b893f83e331b3b4cc602e1b538b1c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 328f177c90b34f17f8f8c5ec480cb829a22f2f14
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80161830"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97173573"
 ---
 # <a name="compiler-warning-level-2-c4356"></a>컴파일러 경고(수준 2) C4356
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4189'
 title: 컴파일러 경고(수준 4) C4189
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4189
 ms.assetid: 7ad9242c-228e-4054-8244-5e914b618ef3
-ms.openlocfilehash: d403373fe200f10cb2f2c210b8cd8f58b7429198
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: c5791325e0dc35ec501e1f4ff8593d620189ad89
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991501"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97173365"
 ---
 # <a name="compiler-warning-level-4-c4189"></a>컴파일러 경고(수준 4) C4189
 

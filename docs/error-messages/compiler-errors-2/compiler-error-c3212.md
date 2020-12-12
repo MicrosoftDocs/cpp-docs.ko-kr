@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3212'
 title: 컴파일러 오류 C3212
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3212
 ms.assetid: 9e271bb6-a51f-4b96-b26b-9f4ca28fca0a
-ms.openlocfilehash: 4881100cd76473f87b597989010376e8809ef7ff
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: f78234f1176319739be74841e0a982afa591045d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74736739"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97173846"
 ---
 # <a name="compiler-error-c3212"></a>컴파일러 오류 C3212
 

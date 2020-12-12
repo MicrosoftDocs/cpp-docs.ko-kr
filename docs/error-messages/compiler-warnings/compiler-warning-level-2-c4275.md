@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 2) C4275'
 title: 컴파일러 경고(수준 2) C4275
 ms.date: 02/08/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4275
 ms.assetid: 18de967a-0a44-4dbc-a2e8-fc4c067ba909
-ms.openlocfilehash: ad12c1c27006a57c8339e9dad82e4d8e1a239a6e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 0dd212d7439b73c28a5426574b72ff8150abe93c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80161999"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97173651"
 ---
 # <a name="compiler-warning-level-2-c4275"></a>컴파일러 경고(수준 2) C4275
 
@@ -33,7 +34,7 @@ ms.locfileid: "80161999"
 
 가상 함수를 사용 하 여 클래스를 정의 하는 DLL을 정의 하 고 해당 형식의 개체를 인스턴스화하고 삭제 하기 위해 호출할 수 있는 함수를 정의 하 여 클래스를 내보내지 않을 수 있습니다.  그런 다음 해당 형식에 대 한 가상 함수를 호출 하면 됩니다.
 
-표준 라이브러리의 형식에서 파생 C++ 하는 경우 디버그 릴리스 (/MTd)를 컴파일하고 컴파일러 오류 메시지가 `_Container_base`를 참조 하는 경우 Visual에서 C4275를 무시할 수 있습니다. **/MTd** C++
+C4275는 c + + 표준 라이브러리의 형식에서 파생 하 고, 디버그 릴리스 (**/MTd**)를 컴파일하고, 컴파일러 오류 메시지가 참조 하는 경우 Visual C++에서 무시 될 수 있습니다 `_Container_base` .
 
 ```cpp
 // C4275.cpp

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Platform::D etails:: __GUID Struct'
 title: Platform::Details::__GUID 구조체
 ms.date: 12/30/2016
 ms.topic: reference
@@ -7,14 +8,14 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Details::__GUID Struct
 ms.assetid: 507cc577-b34d-4952-b1a9-ff4ae98bb6dd
-ms.openlocfilehash: 39b661dcc658ffb01b636f659a5e77fbaa2bd2b9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8ddaa04f0aa2e4fa4fc9d856e07cdb795ccb1d0f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396069"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176030"
 ---
-# <a name="platformdetailsguid-struct"></a>Platform::Details::__GUID 구조체
+# <a name="platformdetails__guid-struct"></a>Platform::Details::__GUID 구조체
 
 이 구조체는 내부 전용이며 개발용으로 사용되지 않아야 합니다.
 
@@ -34,10 +35,10 @@ ref struct __GUID;
 
 ### <a name="requirements"></a>요구 사항
 
-**메타데이터:** platform.winmd
+**메타 데이터:** platform.object
 
 **네임스페이스:** Platform::Details
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[플랫폼 Namespace](platform-namespace-c-cx.md)
+[Platform 네임 스페이스](platform-namespace-c-cx.md)

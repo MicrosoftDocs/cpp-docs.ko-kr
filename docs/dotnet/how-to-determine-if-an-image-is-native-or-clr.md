@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 방법: 이미지가 네이티브 인지 CLR 인지 확인'
 title: '방법: 이미지가 네이티브인지 CLR인지 확인'
 ms.custom: get-started-article
 ms.date: 11/04/2016
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - /clr compiler option [C++], detecting use in compilation
 - common language runtime, /clr compiler option
 ms.assetid: 5a854822-6172-4b22-b236-320165412568
-ms.openlocfilehash: 5149440e172b764278c5ee816827c2d13e2b4c0e
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 894e83d279ffba68063e08dd3f449c352b40df8e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "79545290"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97175666"
 ---
 # <a name="how-to-determine-if-an-image-is-native-or-clr"></a>방법: 이미지가 네이티브인지 CLR인지 확인
 
@@ -83,4 +84,4 @@ int main() {
 
 ## <a name="see-also"></a>참고 항목
 
-[C++ Interop 사용(암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+[C + + Interop 사용 (암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

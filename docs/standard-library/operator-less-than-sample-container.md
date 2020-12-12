@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 연산자 &lt; ( &lt; 샘플 컨테이너 &gt; )'
 title: operator&lt;(&lt;sample container&gt;)
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,17 +15,17 @@ helpviewer_keywords:
 - < operator
 - operator <, valarrays
 ms.assetid: 31027dd6-53be-428b-b950-1dcb25393597
-ms.openlocfilehash: 6ef43fb762c4da71062fc846048f21c0112bfafc
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e7bba9be33a2dc4dea6257b159966c867bb33929
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80215269"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176485"
 ---
 # <a name="operatorlt-ltsample-containergt"></a>operator&lt;(&lt;sample container&gt;)
 
 > [!NOTE]
-> Microsoft C++ 설명서의 이 항목은 C++ 표준 라이브러리에서 사용되는 컨테이너의 비기능적 예제입니다. 자세한 내용은 [C++ 표준 라이브러리 컨테이너](../standard-library/stl-containers.md)를 참조하세요.
+> 이 항목은 c + + 표준 라이브러리에서 사용 되는 컨테이너의 작동 하지 않는 예제로 Microsoft c + + 설명서에 있습니다. 자세한 내용은 [C++ 표준 라이브러리 컨테이너](../standard-library/stl-containers.md)를 참조하세요.
 
 오버 로드 연산자는 클래스 템플릿 [컨테이너](../standard-library/sample-container-class.md)의 두 개체를 비교 하는 **<** 합니다.
 
@@ -37,7 +38,7 @@ bool operator<(
     const Container <Ty>& right);
 ```
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 
 `lexicographical_compare(left.begin, left.end, right.begin, right.end)`를 반환합니다.
 

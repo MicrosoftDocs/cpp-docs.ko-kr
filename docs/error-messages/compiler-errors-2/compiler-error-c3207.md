@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3207'
 title: 컴파일러 오류 C3207
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3207
 ms.assetid: 4a28b976-142a-4cff-aa2f-480b892c50ca
-ms.openlocfilehash: 718c731985e6578787d190c70cb8041bd85ab8e7
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 744dbee62e6247b07ca07354c44d4ebb7a438766
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74751080"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97173989"
 ---
 # <a name="compiler-error-c3207"></a>컴파일러 오류 C3207
 

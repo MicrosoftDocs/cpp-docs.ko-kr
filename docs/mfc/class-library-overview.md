@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 클래스 라이브러리 개요'
 title: 클래스 라이브러리 개요
 ms.date: 09/17/2019
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - class libraries, MFC
 - class libraries
 ms.assetid: 9b0e3152-ac39-4f52-91b4-f20aa3a674aa
-ms.openlocfilehash: bf30f1b0aa83ef002337b76601f04c7103963441
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 458fc06aa8e13a2f2f7024c11a822496bccefbea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84620739"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176693"
 ---
 # <a name="class-library-overview"></a>클래스 라이브러리 개요
 
@@ -25,9 +26,9 @@ ms.locfileid: "84620739"
 
 - [루트 클래스: CObject](root-class-cobject.md)
 
-- [MFC 애플리케이션 아키텍처 클래스](mfc-application-architecture-classes.md)
+- [MFC 응용 프로그램 아키텍처 클래스](mfc-application-architecture-classes.md)
 
-  - [애플리케이션 및 스레드 지원 클래스](application-and-thread-support-classes.md)
+  - [응용 프로그램 및 스레드 지원 클래스](application-and-thread-support-classes.md)
 
   - [명령 라우팅 클래스](command-routing-classes.md)
 
@@ -35,7 +36,7 @@ ms.locfileid: "84620739"
 
   - [뷰 클래스 (아키텍처)](view-classes-architecture.md)
 
-  - [프레임 창 클래스(아키텍처)](frame-window-classes-architecture.md)
+  - [프레임 창 클래스 (아키텍처)](frame-window-classes-architecture.md)
 
   - [문서 템플릿 클래스](document-template-classes.md)
 
@@ -43,7 +44,7 @@ ms.locfileid: "84620739"
 
   - [프레임 창 클래스 (Windows)](frame-window-classes-windows.md)
 
-  - [뷰 클래스(Windows)](view-classes-windows.md)
+  - [뷰 클래스 (Windows)](view-classes-windows.md)
 
   - [대화 상자 클래스](dialog-box-classes.md)
 
@@ -53,7 +54,7 @@ ms.locfileid: "84620739"
 
 - [클래스 그리기 및 인쇄](drawing-and-printing-classes.md)
 
-  - [출력(디바이스 컨텍스트) 클래스](output-device-context-classes.md)
+  - [출력 (장치 컨텍스트) 클래스](output-device-context-classes.md)
 
   - [그리기 도구 클래스](drawing-tool-classes.md)
 
@@ -61,7 +62,7 @@ ms.locfileid: "84620739"
 
 - [배열, 목록 및 맵 클래스](array-list-and-map-classes.md)
 
-  - [배열, 목록 및 맵에 대한 템플릿 클래스](template-classes-for-arrays-lists-and-maps.md)
+  - [배열, 목록 및 맵에 대 한 템플릿 클래스](template-classes-for-arrays-lists-and-maps.md)
 
   - [바로 사용할 수 있는 배열 클래스](ready-to-use-array-classes.md)
 
@@ -71,7 +72,7 @@ ms.locfileid: "84620739"
 
 - [파일 및 데이터베이스 클래스](file-and-database-classes.md)
 
-  - [파일 I/O 클래스](file-i-o-classes.md)
+  - [파일 i/o 클래스](file-i-o-classes.md)
 
   - [DAO 클래스](dao-classes.md)
 
@@ -119,4 +120,4 @@ ms.locfileid: "84620739"
 
 ## <a name="see-also"></a>참고 항목
 
-[MFC 데스크톱 애플리케이션](mfc-desktop-applications.md)
+[MFC 데스크톱 응용 프로그램](mfc-desktop-applications.md)

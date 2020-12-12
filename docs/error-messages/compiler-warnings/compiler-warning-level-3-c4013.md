@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 3) C4013'
 title: 컴파일러 경고 (수준 3) C4013
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4013
 ms.assetid: 9f9afc71-6e78-463d-9d66-3012d6a3cd5d
-ms.openlocfilehash: 1326e1781c044d5c17d0a6531d735b9f246dfede
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: fe0da0d4a3f1b57b88cbfe148f1955d5d2fad366
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214440"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97173417"
 ---
 # <a name="compiler-warning-level-3-c4013"></a>컴파일러 경고 (수준 3) C4013
 
@@ -23,4 +24,4 @@ ms.locfileid: "87214440"
 
 1. 함수 이름의 맞춤법이 잘못 되었습니다.
 
-1. 외부 함수는로 프로토타입화 되지 않습니다.**`extern`**
+1. 외부 함수는로 프로토타입화 되지 않습니다. **`extern`**

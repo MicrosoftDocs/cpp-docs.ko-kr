@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2377'
 title: 컴파일러 오류 C2377
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2377
 ms.assetid: f7660965-bf4c-4cd9-8307-1bd7016678a1
-ms.openlocfilehash: 2bf73aa9aee2a45e5271570b4c45c8fecaa4a4bf
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 727472410bea0db9f837388956e8af5c9a8433d2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225542"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97174743"
 ---
 # <a name="compiler-error-c2377"></a>컴파일러 오류 C2377
 

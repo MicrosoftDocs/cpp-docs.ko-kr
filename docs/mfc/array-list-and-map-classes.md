@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 배열, 목록 및 맵 클래스'
 title: 배열, 목록 및 맵 클래스
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - map classes [MFC]
 - collection classes [MFC], lists
 ms.assetid: 81a13a7f-0c2c-4efd-b6bb-b4e624a0743d
-ms.openlocfilehash: 9583d8263901c4a135a3ba1f560856b2a8915168
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 4b35aa879aa7f73f34c35232356cbc9e049f4ced
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626099"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176706"
 ---
 # <a name="array-list-and-map-classes"></a>배열, 목록 및 맵 클래스
 

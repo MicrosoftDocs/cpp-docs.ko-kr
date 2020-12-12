@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 방법: Windows Forms를 사용 하 여 DDX/DDV 데이터 바인딩 수행'
 title: '방법: Windows Forms에서 DDX-DDV 데이터 바인딩 수행'
 ms.custom: get-started-article
 ms.date: 11/04/2016
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - MFC [C++], hosting a Windows Forms Control
 - Windows Forms [C++], MFC support
 ms.assetid: b2957370-cf1f-4779-94ac-228cd393686c
-ms.openlocfilehash: a0759eba1c55e72f2c0a99964b0b2d254df82a25
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: 55dfdaac595b6de0369d7db555c40b8cd38d6c01
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008312"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97175653"
 ---
 # <a name="how-to-do-ddxddv-data-binding-with-windows-forms"></a>방법: Windows Forms에서 DDX/DDV 데이터 바인딩 수행
 
@@ -82,7 +83,7 @@ m_MyControl.GetControl()->textBox1->Text = "hello";
 
 이제 애플리케이션을 빌드 및 실행할 수 있습니다. 응용 프로그램을 닫을 때 텍스트 상자의 텍스트가 팝업 메시지 상자에 표시 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [CWinFormsControl 클래스](../mfc/reference/cwinformscontrol-class.md)<br/>
 [DDX_ManagedControl](../mfc/reference/standard-dialog-data-exchange-routines.md#ddx_managedcontrol)<br/>

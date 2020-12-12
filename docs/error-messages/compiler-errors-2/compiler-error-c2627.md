@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2627'
 title: 컴파일러 오류 C2627
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2627
 ms.assetid: 7fc6c5ac-c7c9-4f0b-ad52-f52252526458
-ms.openlocfilehash: 6b0471aaead1b56f51e4393784306aa6ed928eec
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 4f09e2b76376871dab93e0736c8a0ca6dbb2b5a6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74754734"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97174574"
 ---
 # <a name="compiler-error-c2627"></a>컴파일러 오류 C2627
 

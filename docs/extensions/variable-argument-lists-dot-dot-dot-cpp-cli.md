@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 가변 인수 목록 (...) (C + +/CLI)'
 title: 가변 인수 목록(...)(C++/CLI)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -6,19 +7,19 @@ helpviewer_keywords:
 - variable argument lists
 - parameter arrays
 ms.assetid: db1a27f4-02a8-4318-8690-1f2893f52b38
-ms.openlocfilehash: 8ea4d71bf9a22fc96c794a92ba43bed6548cf5d1
-ms.sourcegitcommit: 89d9e1cb08fa872483d1cde98bc2a7c870e505e9
+ms.openlocfilehash: fec05a2ce397a0991a4bfd0a5aeb6a8b16d986ef
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "82032306"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176849"
 ---
 # <a name="variable-argument-lists--ccli"></a>가변 인수 목록(...)(C++/CLI)
 
 이 예제에서는 C++/CLI의 `...` 구문을 사용하여 인수 개수가 가변적인 함수를 구현하는 방법을 보여 줍니다.
 
 > [!NOTE]
-> 이 항목은 C++/CLI에 적용됩니다. ISO 표준 `...` C++에서 사용에 대한 자세한 내용은 [Postfix 식에서](../cpp/postfix-expressions.md) [타원 및 다발성 템플릿](../cpp/ellipses-and-variadic-templates.md) 및 타원 및 기본 인수를 참조하십시오.
+> 이 항목은 C++/CLI에 적용됩니다. ISO 표준 c + +에서를 사용 하는 방법에 대 한 자세한 내용은 `...` 생략 [식](../cpp/postfix-expressions.md)의 [줄임표 및 variadic 템플릿](../cpp/ellipses-and-variadic-templates.md) 및 줄임표 및 기본 인수를 참조 하세요.
 
 `...`를 사용하는 매개 변수는 매개 변수 목록의 마지막 매개 변수여야 합니다.
 
@@ -49,7 +50,7 @@ int main() {
 3
 ```
 
-## <a name="code-example"></a>코드 예
+## <a name="code-example"></a>코드 예제
 
 다음 예제에서는 가변 개수의 인수를 사용하는 Visual C++ 함수를 C#에서 호출하는 방법을 보여 줍니다.
 

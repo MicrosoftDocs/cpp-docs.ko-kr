@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2624'
 title: 컴파일러 오류 C2624
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2624
 ms.assetid: 32f2ec15-a7cd-4049-a64b-131746d3152b
-ms.openlocfilehash: d97722306e5c995a4921c6eb9577d623b21c9517
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4fa52e5192bd71c9fcdd3608b4161d1e5da57bdf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216169"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97174678"
 ---
 # <a name="compiler-error-c2624"></a>컴파일러 오류 C2624
 

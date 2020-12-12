@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: strcpy_s, wcscpy_s, _mbscpy_s, _mbscpy_s_l'
 title: strcpy_s, wcscpy_s, _mbscpy_s, _mbscpy_s_l
 ms.date: 5/28/2020
 api_name:
@@ -45,12 +46,12 @@ helpviewer_keywords:
 - tcscpy_s function
 - wcscpy_s function
 ms.assetid: 611326f3-7929-4a5d-a465-a4683af3b053
-ms.openlocfilehash: b2957490dbf045b9a3258a72b6bda0aaf1a38c0f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a20f16971ccc7d1f85fe92c5d2d14386e7e55022
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229300"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176199"
 ---
 # <a name="strcpy_s-wcscpy_s-_mbscpy_s-_mbscpy_s_l"></a>strcpy_s, wcscpy_s, _mbscpy_s, _mbscpy_s_l
 
@@ -116,7 +117,7 @@ errno_t _mbscpy_s_l(
 대상 문자열 버퍼의 위치입니다.
 
 *dest_size*<br/>
-좁은/멀티 바이트 함수의 경우 대상 문자열 버퍼의 크기 **`char`** 이 고, **`wchar_t`** 넓은 함수의 경우 단위입니다. 이 값은 0 보다 크고 **RSIZE_MAX**보다 크지 않아야 합니다. 문자열 뒤의 종료에 대해이 크기의 계정을 확인 합니다 `NULL` .
+좁은/멀티 바이트 함수의 경우 대상 문자열 버퍼의 크기 **`char`** 이 고, **`wchar_t`** 넓은 함수의 경우 단위입니다. 이 값은 0 보다 크고 **RSIZE_MAX** 보다 크지 않아야 합니다. 문자열 뒤의 종료에 대해이 크기의 계정을 확인 합니다 `NULL` .
 
 *src*<br/>
 null 종료 소스 문자열 버퍼입니다.
@@ -124,7 +125,7 @@ null 종료 소스 문자열 버퍼입니다.
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 성공하면 0이고, 실패하면 오류입니다.
 
@@ -138,9 +139,9 @@ null 종료 소스 문자열 버퍼입니다.
 
 ## <a name="remarks"></a>설명
 
-**Strcpy_s** 함수는 null 종결 문자를 포함 하 여 *src*주소의 내용을 *dest*로 지정 된 위치에 복사 합니다. 대상 문자열은 소스 문자열 및 이 문자열의 null 종결 문자를 포함할 만큼 충분히 커야 합니다. 원본 및 대상 문자열이 겹치면 **strcpy_s** 의 동작이 정의 되지 않습니다.
+**Strcpy_s** 함수는 null 종결 문자를 포함 하 여 *src* 주소의 내용을 *dest* 로 지정 된 위치에 복사 합니다. 대상 문자열은 소스 문자열 및 이 문자열의 null 종결 문자를 포함할 만큼 충분히 커야 합니다. 원본 및 대상 문자열이 겹치면 **strcpy_s** 의 동작이 정의 되지 않습니다.
 
-**wcscpy_s** 은 **strcpy_s**와이드 문자 버전 이며, **_mbscpy_s** 는 멀티 바이트 문자 버전입니다. **Wcscpy_s** 의 인수는 와이드 문자 문자열입니다. **_mbscpy_s** 및 **_mbscpy_s_l** 는 멀티 바이트 문자열입니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다. **_mbscpy_s_l** 은 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하 고 **_mbscpy_s** 와 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**wcscpy_s** 은 **strcpy_s** 와이드 문자 버전 이며, **_mbscpy_s** 는 멀티 바이트 문자 버전입니다. **Wcscpy_s** 의 인수는 와이드 문자 문자열입니다. **_mbscpy_s** 및 **_mbscpy_s_l** 는 멀티 바이트 문자열입니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다. **_mbscpy_s_l** 은 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하 고 **_mbscpy_s** 와 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 *Dest* 또는 *src* 가 null 포인터 이거나 대상 문자열 *Dest_size* 크기가 너무 작은 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **EINVAL** 를 반환 하 고, *dest* 또는 *src* 가 null 포인터인 경우 **errno** 를 **EINVAL** 로 설정 하 고, 대상 문자열이 너무 작은 경우 **ERANGE** 을 반환 하 고 **errno** 를 **ERANGE** 로 설정 합니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3208'
 title: 컴파일러 오류 C3208
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3208
 ms.assetid: 6d060bfe-52cf-4599-8f70-bdeb5a670df3
-ms.openlocfilehash: 61577ac4f28b8432a4425a76002ed5ad83186419
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: bd76a209fa3736449e8816473d0dee12daa93a61
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74761896"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97173950"
 ---
 # <a name="compiler-error-c3208"></a>컴파일러 오류 C3208
 

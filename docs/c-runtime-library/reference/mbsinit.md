@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: mbsinit'
 title: mbsinit
 ms.date: 11/04/2016
 api_name:
@@ -23,12 +24,12 @@ f1_keywords:
 helpviewer_keywords:
 - mbsinit function
 ms.assetid: 4618555b-baaa-4d04-93fa-36abae411034
-ms.openlocfilehash: e3b1eecc252a2bee83997aa6f2f6f47a96d3321a
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 48edb74e47549cb9e1a97757d4922bc0bd8b6c24
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70952377"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97178604"
 ---
 # <a name="mbsinit"></a>mbsinit
 
@@ -53,7 +54,7 @@ int mbsinit(
 
 ## <a name="remarks"></a>설명
 
-**Mbstate_t** 포인터를 사용 하는 ANSI 함수 중 하나를 사용 하는 경우 **mbstate_t** 의 주소를 전달 하면 버퍼의 마지막 바이트가 변환 되었는지 여부에 대 한 정보가 반환 됩니다.
+**Mbstate_t** 포인터를 사용 하는 ANSI 함수 중 하나를 사용 하는 경우 **mbstate_t** 주소를 전달 하면 버퍼의 마지막 바이트가 변환 되었는지 여부에 대 한 정보가 반환 됩니다.
 
 멀티바이트 문자를 지원하려면 적절한 코드 페이지를 설치해야 합니다.
 
@@ -163,6 +164,6 @@ MB String: AaBbCcxXyYzZ
 WC String: AaBbCcxXyYzZ
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [바이트 분류](../../c-runtime-library/byte-classification.md)<br/>

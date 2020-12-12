@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2021'
 title: 컴파일러 오류 C2021
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2021
 ms.assetid: 064f32e2-3794-48d5-9767-991003dcb36a
-ms.openlocfilehash: 97d1776bb3b29b3691ae31bb060410a83d581e2d
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 823d9c3d42f1df7bc6f6f398dafd804daef76110
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90743297"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97175640"
 ---
 # <a name="compiler-error-c2021"></a>컴파일러 오류 C2021
 

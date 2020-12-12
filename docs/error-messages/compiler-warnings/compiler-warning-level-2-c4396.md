@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 2) C4396'
 title: 컴파일러 경고(수준 2) C4396
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4396
 ms.assetid: 7cd6b283-db17-4574-b299-03e0b913ad70
-ms.openlocfilehash: fec6875fdb2e8a60e71fe08da1ed4e8fa82e4641
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ab8743c748044456fa1826c805f8d652d76c403d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87206044"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97173521"
 ---
 # <a name="compiler-warning-level-2-c4396"></a>컴파일러 경고(수준 2) C4396
 

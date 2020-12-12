@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2584'
 title: 컴파일러 오류 C2584
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2584
 ms.assetid: 836e2c0a-86c0-4742-b432-beb0191ad20e
-ms.openlocfilehash: 2c3b10ecd6808ccd864ecf877fe9f1d0e9f30a3a
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 7820019c3ec49928f59980adbd9ec814d67c3499
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74748634"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97177681"
 ---
 # <a name="compiler-error-c2584"></a>컴파일러 오류 C2584
 
 ' Class ': 직접 기본 ' Base2 '에 액세스할 수 없습니다. 이미 ' Base1 '의 기본입니다.
 
-`Class`는 이미 `Base1`에서 직접 파생 됩니다. `Base2`도 `Base1`에서 파생 됩니다. `Class`는 `Base1` 다시 상속 (간접적)을 의미 하기 때문에 `Base2`에서 파생 될 수 없습니다. `Base1`는 이미 직접 기본 클래스 이므로 유효 하지 않습니다.
+`Class` 는 이미에서 직접 파생 `Base1` 됩니다. `Base2` 도에서 파생 `Base1` 됩니다. `Class``Base2`은 (는)를 다시 상속 (간접적으로) 한다는 것을 의미 하므로는에서 파생 될 수 없습니다 `Base1` `Base1` .이는 이미 직접 기본 클래스 이므로 유효 하지 않습니다.
 
 ## <a name="example"></a>예제
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3194'
 title: 컴파일러 오류 C3194
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3194
 ms.assetid: 49d3ffc6-eff6-4b46-865b-18811692a8bb
-ms.openlocfilehash: 83c07da5383740ca14c9b9de6224f47cf844d5fa
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 7513b9d4964b6eb0024c3b51480f188243bf2637
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757646"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97174041"
 ---
 # <a name="compiler-error-c3194"></a>컴파일러 오류 C3194
 

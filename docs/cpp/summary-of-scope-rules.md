@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 범위 규칙 요약'
 title: 범위 규칙의 요약
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - names [C++], class
 - scope [C++], class names
 ms.assetid: 47e26482-0111-466f-b857-598c15d05105
-ms.openlocfilehash: 024a61419129f669485944a427379dd41c385404
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cbb5fdc448039e2e7ac998fa8dc5754ef7026d8c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231067"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97178162"
 ---
 # <a name="summary-of-scope-rules"></a>범위 규칙의 요약
 
@@ -71,6 +72,6 @@ ms.locfileid: "87231067"
 
 앞의 두 단락에서 설명한 대로 기본 매개 변수는 해당 매개 변수가 기본값으로 지정된 매개 변수의 범위에 있습니다. 그러나 이러한 인수는 지역 변수 또는 비정적 클래스 멤버에 액세스할 수 없습니다. 기본 매개 변수는 함수 호출 시 계산되지만 함수 선언의 원래 범위에서 계산됩니다. 따라서 멤버 함수에 대한 기본 매개 변수는 항상 클래스 범위에서 계산됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 [상속](../cpp/inheritance-cpp.md)

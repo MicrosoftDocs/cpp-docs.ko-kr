@@ -1,23 +1,24 @@
 ---
+description: '자세한 정보: 가져오기 특성 이름 바꾸기'
 title: 가져오기 특성 이름 바꾸기
 ms.date: 08/29/2019
 helpviewer_keywords:
 - rename attribute
 ms.assetid: 5c5c6153-1087-4b7b-87fb-fc59b90b9975
-ms.openlocfilehash: 520369f0308078fead2947e27a512f25a3ad3fab
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 3003300887dadbab5cf05396ff3fa38b6dd29026
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79447490"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176602"
 ---
 # <a name="rename-import-attribute"></a>가져오기 특성 이름 바꾸기
 
-**C++컴퓨터별**
+**C++ 전용**
 
 이름 충돌 문제 해결 작업
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **#import** *형식 라이브러리* **이름 바꾸기 (** "*OldName*" **,** "*NewName*" **)**
 
@@ -26,7 +27,7 @@ ms.locfileid: "79447490"
 *OldName*\
 형식 라이브러리에 있는 이전 이름입니다.
 
-*NewName*\
+*이름*\
 이전 이름 대신 사용할 이름입니다.
 
 ## <a name="remarks"></a>설명
@@ -38,7 +39,7 @@ ms.locfileid: "79447490"
 > [!NOTE]
 > 결과 헤더 파일에 사용된 이름이 아니라 형식 라이브러리에 사용된 이름이 바뀝니다.
 
-예를 들어, 이름이 `MyParent`인 속성이 형식 라이브러리에 있고 `GetMyParent` 매크로가 헤더 파일에 정의되어 `#import` 앞에 사용된다고 가정해 보겠습니다. `GetMyParent`는 오류 처리 `get` 속성에 대 한 래퍼 함수의 기본 이름이 기 때문에 이름 충돌이 발생 합니다. 이 문제를 해결하려면 `#import` 문에 다음 특성을 사용합니다.
+예를 들어, 이름이 `MyParent`인 속성이 형식 라이브러리에 있고 `GetMyParent` 매크로가 헤더 파일에 정의되어 `#import` 앞에 사용된다고 가정해 보겠습니다. `GetMyParent`가 오류 처리 속성에 대 한 래퍼 함수의 기본 이름이 기 때문에 `get` 이름 충돌이 발생 합니다. 이 문제를 해결하려면 `#import` 문에 다음 특성을 사용합니다.
 
 ```cpp
 #import MyTypeLib.tlb rename("MyParent","MyParentX")
@@ -50,9 +51,9 @@ ms.locfileid: "79447490"
 #import MyTypeLib.tlb rename("GetMyParent","GetMyParentX")
 ```
 
-이름 `GetMyParent` 결과 형식 라이브러리 헤더 파일 에서만 발생 하기 때문입니다.
+그 이유는 이름이 `GetMyParent` 결과 형식 라이브러리 헤더 파일 에서만 발생 하기 때문입니다.
 
-**끝 C++ 특정**
+**C++ 전용 종료**
 
 ## <a name="see-also"></a>참고 항목
 

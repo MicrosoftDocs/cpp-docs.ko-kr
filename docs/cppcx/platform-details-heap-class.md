@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Platform::D etails:: Heap 클래스'
 title: Platform::Details::Heap 클래스
 ms.date: 12/30/2016
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Details::Heap Class
 ms.assetid: d6dcf9c0-8036-433f-9eb8-c53ec49b0993
-ms.openlocfilehash: 26d576bfb2c079c383f7951a362c69f1cef0f6f1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bf347ca19092b69604b4e0a9035543374b2f6cb7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62330429"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97175952"
 ---
 # <a name="platformdetailsheap-class"></a>Platform::Details::Heap 클래스
 
@@ -34,10 +35,10 @@ ref class Heap sealed;
 
 ### <a name="requirements"></a>요구 사항
 
-**메타데이터:** platform.winmd
+**메타 데이터:** platform.object
 
 **네임스페이스:** Platform::Details
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[플랫폼 Namespace](platform-namespace-c-cx.md)
+[Platform 네임 스페이스](platform-namespace-c-cx.md)

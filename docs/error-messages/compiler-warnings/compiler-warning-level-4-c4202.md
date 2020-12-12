@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4202'
 title: 컴파일러 경고(수준 4) C4202
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4202
 ms.assetid: 253293aa-97a3-4878-a2e8-c6cc9e20b1cb
-ms.openlocfilehash: 8a449ee7650196d34d30df646ebdc333c1333af2
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 56abe76d623605460d76bfacb69a128c05762931
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80161428"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97173261"
 ---
 # <a name="compiler-warning-level-4-c4202"></a>컴파일러 경고(수준 4) C4202
 

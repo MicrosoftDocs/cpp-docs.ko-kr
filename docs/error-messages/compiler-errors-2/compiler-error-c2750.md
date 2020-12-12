@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2750'
 title: 컴파일러 오류 C2750
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2750
 ms.assetid: 30450034-feb5-448c-9655-b8c5f3639695
-ms.openlocfilehash: 56f4e6e1d6c392fc377fe5fdf11643ae8a2e503a
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 727bf085e1377de8725f6537a33917283d51d839
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74759609"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97174496"
 ---
 # <a name="compiler-error-c2750"></a>컴파일러 오류 C2750
 

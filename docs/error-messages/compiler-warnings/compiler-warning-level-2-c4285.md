@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 2) C4285'
 title: 컴파일러 경고(수준 2) C4285
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4285
 ms.assetid: fa14de1f-fc19-4eec-8bea-81003636e12f
-ms.openlocfilehash: c75d2d776537307fd34fa3a55807d303630dbeb5
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 2eafb9bb17c5e6ea782ff00900c410727b3b39f9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80161974"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97173586"
 ---
 # <a name="compiler-warning-level-2-c4285"></a>컴파일러 경고(수준 2) C4285
 

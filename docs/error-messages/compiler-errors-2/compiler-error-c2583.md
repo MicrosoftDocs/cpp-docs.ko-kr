@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2583'
 title: 컴파일러 오류 C2583
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2583
 ms.assetid: b1c952dc-872c-47e4-9fc8-4dd72bcee6f9
-ms.openlocfilehash: 0cb021dcba4d050afb943c03ba6b4dca053bcbb8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 067e65f6085d033ca8d7372ee5e4d169e1b411dd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87206850"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97177694"
 ---
 # <a name="compiler-error-c2583"></a>컴파일러 오류 C2583
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2682'
 title: 컴파일러 오류 C2682
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2682
 ms.assetid: 30c6a7c4-f5f7-4fe8-81a8-c48938521ab4
-ms.openlocfilehash: 2697ce5a790fffe762d97ca3380853514de6d437
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 962debb0227347abe97e290db724fdb227212914
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220264"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97177434"
 ---
 # <a name="compiler-error-c2682"></a>컴파일러 오류 C2682
 

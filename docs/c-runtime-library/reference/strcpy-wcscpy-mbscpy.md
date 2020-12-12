@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: strcpy, wcscpy, _mbscpy'
 title: strcpy, wcscpy, _mbscpy
 ms.date: 4/2/2020
 api_name:
@@ -43,12 +44,12 @@ helpviewer_keywords:
 - _ftcscpy function
 - _mbscpy function
 ms.assetid: f97a4f81-e9ee-4f15-888a-0fa5d7094c5a
-ms.openlocfilehash: cb63dfc9ee817458393b7b544d04683b0d17918e
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 8417fa8cf473552dcc509272a2ce660b4be7a68d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915261"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176186"
 ---
 # <a name="strcpy-wcscpy-_mbscpy"></a>strcpy, wcscpy, _mbscpy
 
@@ -97,18 +98,18 @@ unsigned char *_mbscpy(
 *strSource*<br/>
 Null 종료 소스 문자열입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 이러한 각 함수는 대상 문자열을 반환합니다. 반환 값 없음은 오류를 나타내는 데 예약되어 있습니다.
 
 ## <a name="remarks"></a>설명
 
-**Strcpy** 함수는 null 종결 문자를 포함 하 여 *Strsource*를 *strsource*에서 지정한 위치로 복사 합니다. 원본 및 대상 문자열이 겹치면 **strcpy** 의 동작이 정의 되지 않습니다.
+**Strcpy** 함수는 null 종결 문자를 포함 하 여 *Strsource* 를 *strsource* 에서 지정한 위치로 복사 합니다. 원본 및 대상 문자열이 겹치면 **strcpy** 의 동작이 정의 되지 않습니다.
 
 > [!IMPORTANT]
-> **Strcpy** 는 *strdestination*를 복사 하기 전에 *strdestination* 에 충분 한 공간을 확인 하지 않으므로 버퍼 오버런이 발생할 수 있습니다. 따라서 [strcpy_s](strcpy-s-wcscpy-s-mbscpy-s.md)를 대신 사용하는 것이 좋습니다.
+> **Strcpy** 는 *strdestination* 를 복사 하기 전에 *strdestination* 에 충분 한 공간을 확인 하지 않으므로 버퍼 오버런이 발생할 수 있습니다. 따라서 [strcpy_s](strcpy-s-wcscpy-s-mbscpy-s.md)를 대신 사용하는 것이 좋습니다.
 
-**wcscpy** 및 **_mbscpy** 는 각각 **strcpy**의 와이드 문자 및 멀티 바이트 문자 버전입니다. **Wcscpy** 의 인수와 반환 값은 와이드 문자 문자열입니다. **_mbscpy** 의 이러한 문자열은 멀티 바이트 문자열입니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
+**wcscpy** 및 **_mbscpy** 는 각각 **strcpy** 의 와이드 문자 및 멀티 바이트 문자 버전입니다. **Wcscpy** 의 인수와 반환 값은 와이드 문자 문자열입니다. **_mbscpy** 의 이러한 문자열은 멀티 바이트 문자열입니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
 
 C++에서 이러한 함수는 보다 최신의 보안 대응 함수를 호출하는 템플릿 오버로드를 갖고 있습니다. 자세한 내용은 [안전한 템플릿 오버로드](../../c-runtime-library/secure-template-overloads.md)를 참조하세요.
 
@@ -165,7 +166,7 @@ int main( void )
 String = Hello world from strcpy and strcat!
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [문자열 조작](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)<br/>

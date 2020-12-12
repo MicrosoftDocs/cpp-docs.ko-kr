@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2375'
 title: 컴파일러 오류 C2375
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2375
 ms.assetid: 193c5e8b-1b20-4928-8a02-8c1cddaf2a26
-ms.openlocfilehash: 926af13420ce80caf84876a12995946377366fd0
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 187188caa851191c44280e24d9321ea3cb24f9f7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74745527"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97174769"
 ---
 # <a name="compiler-error-c2375"></a>컴파일러 오류 C2375
 
