@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _mbsbtype, _mbsbtype_l'
 title: _mbsbtype, _mbsbtype_l
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - _mbsbtype_l function
 - mbsbtype_l function
 ms.assetid: 0d5dd91a-d32d-4f98-ac57-98dfc9e98eac
-ms.openlocfilehash: c1431a2d0886ffd3d16b43abf82b7342c166273a
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: a1d17a947d830281b05291601c74ee944cebdb10
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82909468"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271059"
 ---
 # <a name="_mbsbtype-_mbsbtype_l"></a>_mbsbtype, _mbsbtype_l
 
@@ -73,7 +74,7 @@ int _mbsbtype_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 **_mbsbtype** 및 **_mbsbtype_l** 는 지정 된 바이트에 대 한 테스트 결과를 나타내는 정수 값을 반환 합니다. 다음 표의 매니페스트 상수는 Mbctype.h에 정의됩니다.
 
@@ -82,15 +83,15 @@ int _mbsbtype_l(
 |**_MBC_SINGLE** (0)|싱글바이트 문자입니다. 예를 들어 코드 페이지 932에서 **_mbsbtype** 지정 된 바이트가 0X20-0X7e 또는 0Xa1-0xa1 범위 내에 있는 경우 0을 반환 합니다.|
 |**_MBC_LEAD** (1)|멀티바이트 문자의 선행 바이트입니다. 예를 들어 코드 페이지 932에서는 지정 된 바이트가 0x81-0x9F 또는 0xE0-0xFC 범위 내에 있는 경우 **_mbsbtype** 1을 반환 합니다.|
 |**_MBC_TRAIL** (2)|멀티바이트 문자의 후행 바이트입니다. 예를 들어 코드 페이지 932에서 지정 된 바이트가 0x40-0x7E 또는 0x80-0xFC 범위 내에 있는 경우 **_mbsbtype** 는 2를 반환 합니다.|
-|**_MBC_ILLEGAL** (-1)|*Mbstr*의 오프셋 *개수* 에서 바이트 앞에 **null** 문자열, 잘못 된 문자 또는 null 바이트가 있습니다.|
+|**_MBC_ILLEGAL** (-1)|*Mbstr* 의 오프셋 *개수* 에서 바이트 앞에 **null** 문자열, 잘못 된 문자 또는 null 바이트가 있습니다.|
 
 ## <a name="remarks"></a>설명
 
-**_Mbsbtype** 함수는 멀티 바이트 문자열의 바이트 형식을 결정 합니다. 함수는 *mbstr*의 오프셋 *개수* 에서 바이트를 검사 하 여 지정 된 바이트 앞에 잘못 된 문자를 무시 합니다.
+**_Mbsbtype** 함수는 멀티 바이트 문자열의 바이트 형식을 결정 합니다. 함수는 *mbstr* 의 오프셋 *개수* 에서 바이트를 검사 하 여 지정 된 바이트 앞에 잘못 된 문자를 무시 합니다.
 
 출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_L** 접미사가 없는이 함수 버전은이 로캘 종속 동작에 현재 로캘을 사용 합니다. **_l** 접미사가 있는 버전은 전달 된 로캘 매개 변수를 대신 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-입력 문자열이 **NULL**인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 은 **EINVAL** 로 설정 되 고 함수는 **_MBC_ILLEGAL**를 반환 합니다.
+입력 문자열이 **NULL** 인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 은 **EINVAL** 로 설정 되 고 함수는 **_MBC_ILLEGAL** 를 반환 합니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -105,6 +106,6 @@ int _mbsbtype_l(
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [바이트 분류](../../c-runtime-library/byte-classification.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3036'
 title: 컴파일러 오류 C3036
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3036
 ms.assetid: 10c6993e-bc42-4a07-85c7-cdc34ac30906
-ms.openlocfilehash: 6b723285ea1e2c58448ec9b461e655f25f95112d
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 812d57ca405cafc25037a5fd933d5e3ea260e24d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91508489"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97270110"
 ---
 # <a name="compiler-error-c3036"></a>컴파일러 오류 C3036
 

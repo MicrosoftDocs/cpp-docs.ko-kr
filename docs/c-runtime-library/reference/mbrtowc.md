@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: mbrtowc'
 title: mbrtowc
 ms.date: 4/2/2020
 api_name:
@@ -26,12 +27,12 @@ f1_keywords:
 helpviewer_keywords:
 - mbrtowc function
 ms.assetid: a1e87fcc-6de0-4ca1-bf26-508d28490286
-ms.openlocfilehash: 55d866e6f0e372c148de36bf259954bed11a953c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f00c9fd01826a80cb729bfe10af242db8dec2414
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229430"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271163"
 ---
 # <a name="mbrtowc"></a>mbrtowc
 
@@ -62,17 +63,17 @@ size_t mbrtowc(
 *mbstate*<br/>
 변환 상태 개체에 대한 포인터입니다. 이 값이 null 포인터이면 함수는 정적 내부 변환 상태 개체를 사용합니다. 내부 **mbstate_t** 개체는 스레드로부터 안전 하지 않으므로 항상 고유한 *mbstate* 인수를 전달 하는 것이 좋습니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 다음 값 중 하나입니다.
 
-0 다음 *개수* 이하의 바이트가 null 와이드 문자를 나타내는 멀티 바이트 문자를 완성 합니다 .이 문자는 wchar로 저장 되며 wchar *는 null* 포인터가 아닌 *경우에 저장*됩니다.
+0 다음 *개수* 이하의 바이트가 null 와이드 문자를 나타내는 멀티 바이트 문자를 완성 합니다 .이 문자는 wchar로 저장 되며 wchar *는 null* 포인터가 아닌 *경우에 저장* 됩니다.
 
-1- *개수*, 포함 하는 다음 *개수* 이하의 바이트가 올바른 멀티 바이트 문자를 완성 합니다. 반환되는 값은 멀티바이트 문자를 완성하는 바이트 수입니다. 해당 하는 와이드 문자는 wchar이 null 포인터가 *아닌 경우* *wchar*에 저장 됩니다.
+1- *개수*, 포함 하는 다음 *개수* 이하의 바이트가 올바른 멀티 바이트 문자를 완성 합니다. 반환되는 값은 멀티바이트 문자를 완성하는 바이트 수입니다. 해당 하는 와이드 문자는 wchar이 null 포인터가 *아닌 경우* *wchar* 에 저장 됩니다.
 
 (size_t) (-1) 인코딩 오류가 발생 했습니다. 다음 *개수* 이하의 바이트는 완전 하 고 유효한 멀티 바이트 문자에 영향을 주지 않습니다. 이 경우 **errno** 가 EILSEQ로 설정 되 고 *mbstate* 의 변환 이동 상태가 지정 되지 않습니다.
 
-(size_t) (-2) 다음 *카운트* 바이트는 불완전 하지만 잠재적으로 유효한 멀티 바이트 문자에 영향을 주지만 모든 바이트 *수* 를 처리 했습니다. *Wchar*에는 값이 저장 되지 않지만 함수를 다시 시작 하도록 *mbstate* 가 업데이트 됩니다.
+(size_t) (-2) 다음 *카운트* 바이트는 불완전 하지만 잠재적으로 유효한 멀티 바이트 문자에 영향을 주지만 모든 바이트 *수* 를 처리 했습니다. *Wchar* 에는 값이 저장 되지 않지만 함수를 다시 시작 하도록 *mbstate* 가 업데이트 됩니다.
 
 ## <a name="remarks"></a>설명
 
@@ -84,7 +85,7 @@ size_t mbrtowc(
 
 *Mbchar* 가 null 포인터가 아닌 경우 함수는 *mbchar* 의 *count* 바이트를 검사 하 여 다음 멀티 바이트 문자를 완료 하는 데 필요한 바이트 수를 확인 합니다. 다음 문자가 올바르면 해당 하는 멀티 바이트 문자는 null 포인터가 아닌 경우 *wchar* 에 저장 됩니다. 문자가 해당 하는 와이드 null 문자인 경우 *mbstate* 의 결과 상태는 초기 변환 상태입니다.
 
-**Mbrtowc** 함수는 다시 시작할에 의해 [_mbtowc_l mbtowc](mbtowc-mbtowc-l.md) 와 다릅니다. 동일 하거나 다른 다시 시작 가능 함수에 대 한 후속 호출의 경우 변환 상태가 *mbstate* 에 저장 됩니다. 다시 시작할 수 있는 함수와 다시 시작할 수 없는 함수를 함께 사용할 때는 결과가 정의되지 않습니다.  예를 들어 **wcstombs**대신 **wcsrtombs** 에 대 한 후속 호출을 사용 하는 경우 응용 프로그램은 **wcslen** 대신 **wcsrlen** 을 사용 해야 합니다.
+**Mbrtowc** 함수는 다시 시작할에 의해 [_mbtowc_l mbtowc](mbtowc-mbtowc-l.md) 와 다릅니다. 동일 하거나 다른 다시 시작 가능 함수에 대 한 후속 호출의 경우 변환 상태가 *mbstate* 에 저장 됩니다. 다시 시작할 수 있는 함수와 다시 시작할 수 없는 함수를 함께 사용할 때는 결과가 정의되지 않습니다.  예를 들어 **wcstombs** 대신 **wcsrtombs** 에 대 한 후속 호출을 사용 하는 경우 응용 프로그램은 **wcslen** 대신 **wcsrlen** 을 사용 해야 합니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -217,4 +218,4 @@ WC String: AaBbCcÜïα∩≡xXyYzZ
 
 [데이터 변환](../../c-runtime-library/data-conversion.md)<br/>
 [로캘](../../c-runtime-library/locale.md)<br/>
-[멀티 바이트 문자 시퀀스 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Multibyte-Character 시퀀스의 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2894'
 title: 컴파일러 오류 C2894
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2894
 ms.assetid: 4e250579-2b59-4993-a6f4-49273e7ecf06
-ms.openlocfilehash: 6909843539747b285a5390a66a7a323e4e9c5d00
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: dcb5f04cd7cd1ad9d2e6f0d645cabd512ed91c42
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223462"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97270922"
 ---
 # <a name="compiler-error-c2894"></a>컴파일러 오류 C2894
 

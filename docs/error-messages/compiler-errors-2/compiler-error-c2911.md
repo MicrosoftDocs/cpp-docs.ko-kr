@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2911'
 title: 컴파일러 오류 C2911
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2911
 ms.assetid: 83c7c01a-ab6a-4179-9fb0-289a9ec8d44e
-ms.openlocfilehash: 59061ab8126e3ba45c0b456bb4428652cab8a7e9
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: c3890a6017e96b4b5f2f9dc7b5711fd98f29b947
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74761103"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97270540"
 ---
 # <a name="compiler-error-c2911"></a>컴파일러 오류 C2911
 

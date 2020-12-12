@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3033'
 title: 컴파일러 오류 C3033
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3033
 ms.assetid: 8628b6bb-a650-4ed2-af13-57acd2f7ddbb
-ms.openlocfilehash: df3e3f8472d1c274049e686de93488d556ff6f1f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 999cedd270470bde27a57be0159eedda61297092
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232016"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97270240"
 ---
 # <a name="compiler-error-c3033"></a>컴파일러 오류 C3033
 

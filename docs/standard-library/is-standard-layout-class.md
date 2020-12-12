@@ -1,4 +1,5 @@
 ---
+description: Is_standard_layout 클래스에 대해 자세히 알아보세요.
 title: is_standard_layout 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - is_standard_layout class
 - is_standard_layout
 ms.assetid: 15ccf111-f537-45ef-b552-59152a7ba312
-ms.openlocfilehash: fba77be22796f3cb5495543d262dd270ac13d598
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 8f1f24fcb29e862dff10c2a51d1c9d0b2b28541f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88560597"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271254"
 ---
 # <a name="is_standard_layout-class"></a>is_standard_layout 클래스
 

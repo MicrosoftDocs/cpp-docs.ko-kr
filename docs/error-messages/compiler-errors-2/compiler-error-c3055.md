@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3055'
 title: 컴파일러 오류 C3055
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3055
 ms.assetid: 60446ee0-18dd-48fc-9059-f0a14229dce8
-ms.openlocfilehash: ed0f031fcd0ff0c621556bf73572d720fc2c1352
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 6c75d476abf7535499c74705e4a0ec77d80dc772
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91501619"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97269577"
 ---
 # <a name="compiler-error-c3055"></a>컴파일러 오류 C3055
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3054'
 title: 컴파일러 오류 C3054
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3054
 ms.assetid: 6f4b7ac5-0d12-474b-b611-76ff26ee41ac
-ms.openlocfilehash: 7a35f72be07799f61587c77b511395223ae72939
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 1fb72f1aa04efb39c007bcbe9b738a1ee3f39bea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74761191"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97269616"
 ---
 # <a name="compiler-error-c3054"></a>컴파일러 오류 C3054
 

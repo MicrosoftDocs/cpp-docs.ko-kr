@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3056'
 title: 컴파일러 오류 C3056
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3056
 ms.assetid: 9500173d-870b-49b3-8e88-0ee93586d19a
-ms.openlocfilehash: dd000e56d5fc24929e4d06e1bf0100ad9647610a
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: d934221c4501256eb4bfd604bcc04534268de3fa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91501599"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97269538"
 ---
 # <a name="compiler-error-c3056"></a>컴파일러 오류 C3056
 

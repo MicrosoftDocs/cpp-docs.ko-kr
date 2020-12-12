@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3038'
 title: 컴파일러 오류 C3038
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3038
 ms.assetid: 140ada3e-5636-43ef-a4ee-22a9f66a771f
-ms.openlocfilehash: 7da7dcf1f03c05511ba4bb970e898bc06b9ae3bd
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: bcc038ac21807b7d98ec98fa76004d658ef0216d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91508415"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97270071"
 ---
 # <a name="compiler-error-c3038"></a>컴파일러 오류 C3038
 
