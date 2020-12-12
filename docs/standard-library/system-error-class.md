@@ -1,4 +1,5 @@
 ---
+description: System_error 클래스에 대해 자세히 알아보세요.
 title: system_error 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - system_error class
 ms.assetid: 2eeaacbb-8a4a-4ad7-943a-997901a77f32
-ms.openlocfilehash: 7a18d2f9f229a62a539be072870e38a990677636
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 51e629e9fffca6ec82e06521d1d81174da5ff1f3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80076369"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183167"
 ---
 # <a name="system_error-class"></a>system_error 클래스
 
@@ -31,8 +32,8 @@ class system_error : public runtime_error {
 };
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
-클래스 `what`exception[에서 ](../standard-library/exception-class.md)에 의해 반환되는 값은 `_Message` 및 [error_code](../standard-library/error-code-class.md) 형식의 저장된 개체(`code` 또는 `error_code(_Errval, _Errcat)`)에서 생성됩니다.
+클래스 [exception](../standard-library/exception-class.md)에서 `what`에 의해 반환되는 값은 `_Message` 및 [error_code](../standard-library/error-code-class.md) 형식의 저장된 개체(`code` 또는 `error_code(_Errval, _Errcat)`)에서 생성됩니다.
 
 구성원 함수 `code`는 저장된 [error_code](../standard-library/error-code-class.md) 개체를 반환합니다.

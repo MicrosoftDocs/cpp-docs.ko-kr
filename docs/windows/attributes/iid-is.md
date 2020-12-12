@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: iid_is'
 title: iid_is (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - iid_is attribute
 ms.assetid: 2f9b42a9-7130-4b08-9b1e-0d5d360e10ff
-ms.openlocfilehash: 6a8fe8c7481cd251baff65293607733573f46ea6
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9de6d636fbb189ece9aedec95cb9460c2ccbb5a1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832219"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183102"
 ---
 # <a name="iid_is"></a>iid_is
 
@@ -34,7 +35,7 @@ ms.locfileid: "88832219"
 
 ## <a name="example"></a>예제
 
-다음 코드에서는 **iid_is**를 사용 하는 방법을 보여 줍니다.
+다음 코드에서는 **iid_is** 를 사용 하는 방법을 보여 줍니다.
 
 ```cpp
 // cpp_attr_ref_iid_is.cpp

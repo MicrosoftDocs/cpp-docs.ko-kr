@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: system_clock 구조체'
 title: system_clock 구조체
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,16 +10,16 @@ f1_keywords:
 - chrono/std::chrono::system_clock::is_monotonic Constant
 - chrono/std::chrono::system_clock::is_steady Constant
 ms.assetid: a97bd46e-267a-4836-9f7d-af1f664e99ae
-ms.openlocfilehash: 4e530887e7c8cf26e8969a839702286913da9b67
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 54d15f5e5ccc75e056cbdcc1d56d05e0a343c76b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224580"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183206"
 ---
 # <a name="system_clock-structure"></a>system_clock 구조체
 
-시스템의 실시간 시계를 기반으로 하는 *시계 형식*을 나타냅니다.
+시스템의 실시간 시계를 기반으로 하는 *시계 형식* 을 나타냅니다.
 
 ## <a name="syntax"></a>구문
 
@@ -28,11 +29,11 @@ struct system_clock;
 
 ## <a name="remarks"></a>설명
 
-*시간 형식*은 현재 시간을 UTC로 가져오는 데 사용됩니다. 이 형식은 [duration](../standard-library/duration-class.md) 및 클래스 템플릿 [time_point](../standard-library/time-point-class.md)의 인스턴스화를 구현하고 시간을 반환하는 정적 구성원 함수 `now()`를 정의합니다.
+*시간 형식* 은 현재 시간을 UTC로 가져오는 데 사용됩니다. 이 형식은 [duration](../standard-library/duration-class.md) 및 클래스 템플릿 [time_point](../standard-library/time-point-class.md)의 인스턴스화를 구현하고 시간을 반환하는 정적 구성원 함수 `now()`를 정의합니다.
 
-`now()`에 대한 첫 번째 호출에서 반환되는 값이 항상 `now()`에 대한 순차적 호출에서 반환되는 값보다 작거나 같을 경우 클록은 *단조*입니다.
+`now()`에 대한 첫 번째 호출에서 반환되는 값이 항상 `now()`에 대한 순차적 호출에서 반환되는 값보다 작거나 같을 경우 클록은 *단조* 입니다.
 
-클록이 *단조*이고 클록 틱 간 시간이 지속적이면 해당 클록은 *지속*입니다.
+클록이 *단조* 이고 클록 틱 간 시간이 지속적이면 해당 클록은 *지속* 입니다.
 
 ## <a name="members"></a>멤버
 
@@ -66,9 +67,9 @@ struct system_clock;
 
 **네임스페이스:** std::chrono
 
-## <a name="system_clockfrom_time_t"></a><a name="from_time_t"></a>system_clock:: from_time_t
+## <a name="system_clockfrom_time_t"></a><a name="from_time_t"></a> system_clock:: from_time_t
 
-*Tm*에 표시 되는 시간과 가장 근접 한 [time_point](../standard-library/time-point-class.md) 를 반환 하는 정적 메서드입니다.
+*Tm* 에 표시 되는 시간과 가장 근접 한 [time_point](../standard-library/time-point-class.md) 를 반환 하는 정적 메서드입니다.
 
 ```cpp
 static time_point from_time_t(time_t Tm) noexcept;
@@ -79,7 +80,7 @@ static time_point from_time_t(time_t Tm) noexcept;
 *Tm*\
 [time_t](../c-runtime-library/standard-types.md) 개체
 
-## <a name="system_clockis_monotonic-constant"></a><a name="is_monotonic_constant"></a>system_clock:: is_monotonic 상수
+## <a name="system_clockis_monotonic-constant"></a><a name="is_monotonic_constant"></a> system_clock:: is_monotonic 상수
 
 시간 형식이 단조인지를 지정하는 정적 값입니다.
 
@@ -87,31 +88,31 @@ static time_point from_time_t(time_t Tm) noexcept;
 static const bool is_monotonic = false;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 구현에서는 `system_clock::is_monotonic` 항상를 반환 **`false`** 합니다.
 
 ### <a name="remarks"></a>설명
 
-`now()`에 대한 첫 번째 호출에서 반환되는 값이 항상 `now()`에 대한 순차적 호출에서 반환되는 값보다 작거나 같을 경우 클록은 *단조*입니다.
+`now()`에 대한 첫 번째 호출에서 반환되는 값이 항상 `now()`에 대한 순차적 호출에서 반환되는 값보다 작거나 같을 경우 클록은 *단조* 입니다.
 
-## <a name="system_clockis_steady-constant"></a><a name="is_steady_constant"></a>system_clock:: is_steady 상수
+## <a name="system_clockis_steady-constant"></a><a name="is_steady_constant"></a> system_clock:: is_steady 상수
 
-시간 형식이 *지속*인지를 지정하는 정적 값입니다.
+시간 형식이 *지속* 인지를 지정하는 정적 값입니다.
 
 ```cpp
 static const bool is_steady = false;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 구현에서는 `system_clock::is_steady` 항상를 반환 **`false`** 합니다.
 
 ### <a name="remarks"></a>설명
 
-클록이 [단조](#is_monotonic_constant)이고 클록 틱 간 시간이 지속적이면 해당 클록은 *지속*입니다.
+클록이 [단조](#is_monotonic_constant)이고 클록 틱 간 시간이 지속적이면 해당 클록은 *지속* 입니다.
 
-## <a name="system_clocknow"></a><a name="now"></a>system_clock:: now
+## <a name="system_clocknow"></a><a name="now"></a> system_clock:: now
 
 현재 시간을 반환하는 정적 메서드입니다.
 
@@ -119,13 +120,13 @@ static const bool is_steady = false;
 static time_point now() noexcept;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 시간을 나타내는 [time_point](../standard-library/time-point-class.md) 개체입니다.
 
-## <a name="system_clockto_time_t"></a><a name="to_time_t"></a>system_clock:: to_time_t
+## <a name="system_clockto_time_t"></a><a name="to_time_t"></a> system_clock:: to_time_t
 
-*Time*으로 표현 되는 시간과 가장 근접 한 [time_t](../c-runtime-library/standard-types.md) 를 반환 하는 정적 메서드입니다.
+*Time* 으로 표현 되는 시간과 가장 근접 한 [time_t](../c-runtime-library/standard-types.md) 를 반환 하는 정적 메서드입니다.
 
 ```cpp
 static time_t to_time_t(const time_point& Time) noexcept;

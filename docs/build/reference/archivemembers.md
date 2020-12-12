@@ -1,4 +1,5 @@
 ---
+description: 자세히 알아보기:/ARCHIVEMEMBERS
 title: /ARCHIVEMEMBERS
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - /ARCHIVEMEMBERS dumpbin option
 - -ARCHIVEMEMBERS dumpbin option
 ms.assetid: 47056a7a-a1ba-42bc-9f2e-0599195ef79a
-ms.openlocfilehash: 880e36219b45367ff96e0d292b9728bf797c308a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2fd032f740bb890047185098efe1ca708e34c0a8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62295120"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183024"
 ---
 # <a name="archivemembers"></a>/ARCHIVEMEMBERS
 
@@ -23,10 +24,10 @@ ms.locfileid: "62295120"
 
 ## <a name="remarks"></a>설명
 
-이 옵션을 라이브러리에서 멤버 개체에 대 한 최소한의 정보를 표시합니다.
+이 옵션은 라이브러리의 멤버 개체에 대 한 최소 정보를 표시 합니다.
 
-[/HEADERS](headers.md) DUMPBIN 옵션은 [/GL](gl-whole-program-optimization.md) 컴파일러 옵션으로 만든 파일에만 사용할 수 있습니다.
+[/GL](gl-whole-program-optimization.md) 컴파일러 옵션으로 생성된 파일에서는 [/HEADERS](headers.md) DUMPBIN옵션만 사용할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [DUMPBIN 옵션](dumpbin-options.md)

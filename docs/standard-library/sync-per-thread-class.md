@@ -1,4 +1,5 @@
 ---
+description: Sync_per_thread 클래스에 대해 자세히 알아보세요.
 title: sync_per_thread 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - stdext::sync_per_thread [C++], deallocate
 - stdext::sync_per_thread [C++], equals
 ms.assetid: 47bf75f8-5b02-4760-b1d3-3099d08fe14c
-ms.openlocfilehash: 24c5463dc9fb80703361e374efb99fae9e103e7c
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: dbce0441e32c97907bdf2cc5831a94c9af125453
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562092"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183297"
 ---
 # <a name="sync_per_thread-class"></a>sync_per_thread 클래스
 
@@ -106,7 +107,7 @@ bool equals(const sync<Cache>& Other) const;
 *다른*\
 같은지 비교할 캐시 개체입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`false`** 이 개체 또는 현재 스레드의 *다른* 에 대해 캐시 개체가 할당 되지 않은 경우입니다. 그렇지 않으면 두 캐시 개체에 `operator==`를 적용한 결과가 반환됩니다.
 
