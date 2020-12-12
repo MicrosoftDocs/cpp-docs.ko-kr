@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4232'
 title: 컴파일러 경고(수준 4) C4232
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4232
 ms.assetid: f92028a5-4ddd-43c1-97f5-4f724e5e14af
-ms.openlocfilehash: 6081acc4a64394c9122650da8b7f4147f724e5de
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 272fdcbc856ef5e86a8ff043b5aeab98a36413a8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219926"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97291417"
 ---
 # <a name="compiler-warning-level-4-c4232"></a>컴파일러 경고(수준 4) C4232
 

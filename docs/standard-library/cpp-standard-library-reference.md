@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: c + + 표준 라이브러리 참조'
 title: C++ 표준 라이브러리 참조
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - template libraries
 - libraries, Standard C++
 ms.assetid: a37d3ba3-58af-47c7-9ee2-441ccd7b77ee
-ms.openlocfilehash: 60bfed322985b1345f4b3842a21f836953813657
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 04539045c20f83ce4509b305f8717831e0a38fed
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68452437"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97233268"
 ---
 # <a name="c-standard-library-reference"></a>C++ 표준 라이브러리 참조
 
@@ -22,7 +23,7 @@ Visual C++ 런타임 라이브러리에 대한 자세한 내용은 [CRT 라이�
 
 ## <a name="in-this-section"></a>섹션 내용
 
-[C++ 표준 라이브러리 개요](../standard-library/cpp-standard-library-overview.md)\
+[C + + 표준 라이브러리 개요](../standard-library/cpp-standard-library-overview.md)\
 C++ 표준 라이브러리의 Microsoft 구현에 대한 개요를 제공합니다.
 
 [iostream 프로그래밍](../standard-library/iostream-programming.md)\

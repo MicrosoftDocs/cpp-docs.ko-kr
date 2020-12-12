@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Dll 지연 로드의 제약 조건'
 title: DLL 지연 로드의 제약 조건
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - delayed loading of DLLs, constraints
 - DLLs [C++], constraints
 ms.assetid: 0097ff65-550f-4a4e-8ac3-39bf6404f926
-ms.openlocfilehash: be5e5eb360f80e0b2ea9682f38f6787044cd3c63
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 45f54ca57b57bc689752a8aa80f4c03bbe096817
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69493064"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97197012"
 ---
 # <a name="constraints-of-delay-loading-dlls"></a>DLL 지연 로드의 제약 조건
 
@@ -23,7 +24,7 @@ ms.locfileid: "69493064"
 
 - 전달 되는 진입점의 [바인딩은](binding-imports.md) 지원 되지 않습니다.
 
-- 지연 로드된 DLL의 진입점에서 프로세스별 초기화가 발생하는 경우 DLL 지연 로드로 인해 동일한 동작의 프로세스가 발생하지 않을 수 있습니다. 다른 경우에는를 통해 `LoadLibrary`DLL이 로드 될 때 처리 되지 않는 [__declspec (thread)](../../cpp/thread.md)를 사용 하 여 선언 된 정적 TLS (스레드 로컬 저장소)가 포함 됩니다. `TlsAlloc`, `TlsFree`, `TlsGetValue` 및 `TlsSetValue`를 사용하는 동적 TLS는 정적 또는 지연 로드된 DLL에 계속해서 사용할 수 있습니다.
+- 지연 로드된 DLL의 진입점에서 프로세스별 초기화가 발생하는 경우 DLL 지연 로드로 인해 동일한 동작의 프로세스가 발생하지 않을 수 있습니다. 다른 경우에는를 통해 DLL이 로드 될 때 처리 되지 않는 [__declspec (스레드)](../../cpp/thread.md)를 사용 하 여 선언 된 정적 TLS (스레드 로컬 저장소)가 포함 됩니다 `LoadLibrary` . `TlsAlloc`, `TlsFree`, `TlsGetValue` 및 `TlsSetValue`를 사용하는 동적 TLS는 정적 또는 지연 로드된 DLL에 계속해서 사용할 수 있습니다.
 
 - 정적(전역) 함수 포인터는 첫 번째 함수 호출 후 가져온 함수로 다시 초기화해야 합니다. 이는 함수 포인터의 첫 번째 사용이 썽크를 가리키기 때문입니다.
 
@@ -31,9 +32,9 @@ ms.locfileid: "69493064"
 
 - 사용자 지정 호출 규칙(예: x86 아키텍처에 조건 코드 사용)은 지원되지 않습니다. 또한 어떤 플랫폼에서도 부동 소수점 레지스터는 저장되지 않습니다. 사용자 지정 도우미 루틴 또는 후크 루틴이 부동 소수점 형식을 사용하는 경우 이러한 루틴은 부동 소수점 매개 변수와 함께 레지스터 호출 규칙을 사용하여 컴퓨터에서 부동 소수점 상태를 완벽하게 저장 및 복원해야 합니다. 도움말 함수의 NDP(수치 데이터 프로세서) 스택에 부동 소수점 매개 변수를 사용하는 CRT 함수를 호출하는 경우 CRT DLL 지연 로드에 주의하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[링커의 지연 로드된 DLL 지원](linker-support-for-delay-loaded-dlls.md)<br/>
+[Delay-Loaded Dll에 대 한 링커 지원](linker-support-for-delay-loaded-dlls.md)<br/>
 [LoadLibrary 함수](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryw)<br/>
 [GetModuleHandle 함수](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulehandlew)<br/>
 [GetProcAddress 함수](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)<br/>

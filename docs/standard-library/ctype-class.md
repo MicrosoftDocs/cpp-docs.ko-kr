@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: ctype 클래스'
 title: ctype 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - std::ctype [C++], toupper
 - std::ctype [C++], widen
 ms.assetid: 3627154c-49d9-47b5-b28f-5bbedee38e3b
-ms.openlocfilehash: a0e3aad99c335f1a907189ee84e55a38e41b62e1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9ef23707aa08e0fb3ad7edcff07bd2c6a4ae3814
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222513"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97233086"
 ---
 # <a name="ctype-class"></a>ctype 클래스
 
@@ -79,7 +80,7 @@ C + + 표준 라이브러리는이 클래스 템플릿에 대 한 두 가지 명
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[ctype](#ctype)|문자의 로캘 패싯으로 사용할 수 있는 `ctype` 클래스의 개체에 대한 생성자입니다.|
 
@@ -114,7 +115,7 @@ C + + 표준 라이브러리는이 클래스 템플릿에 대 한 두 가지 명
 
 **네임스페이스:** std
 
-## <a name="ctypechar_type"></a><a name="char_type"></a>ctype:: char_type
+## <a name="ctypechar_type"></a><a name="char_type"></a> ctype:: char_type
 
 로캘에서 사용하는 문자를 설명하는 형식
 
@@ -124,13 +125,13 @@ typedef CharType char_type;
 
 ### <a name="remarks"></a>설명
 
-이 형식은 템플릿 매개 변수 *Chartype*의 동의어입니다.
+이 형식은 템플릿 매개 변수 *Chartype* 의 동의어입니다.
 
 ### <a name="example"></a>예제
 
 `char_type`을 반환 값으로 사용하는 예제는 멤버 함수 [widen](#widen)을 참조하세요.
 
-## <a name="ctypectype"></a><a name="ctype"></a>ctype:: ctype
+## <a name="ctypectype"></a><a name="ctype"></a> ctype:: ctype
 
 문자의 로캘 패싯으로 사용할 수 있는 ctype 클래스의 개체에 대한 생성자입니다.
 
@@ -151,13 +152,13 @@ explicit ctype(size_t _Refs = 0);
 
 - 1: 개체의 수명을 수동으로 관리해야 합니다.
 
-- \>1: 이러한 값은 정의 되지 않습니다.
+- \> 1: 이러한 값은 정의 되지 않습니다.
 
 소멸자는 보호되므로 직접적인 예제는 확인할 수 없습니다.
 
 생성자는 **locale::**[facet](../standard-library/locale-class.md#facet_class)( `_Refs`)를 통해 해당 `locale::facet` 기본 개체를 초기화합니다.
 
-## <a name="ctypedo_is"></a><a name="do_is"></a>ctype::d o_is
+## <a name="ctypedo_is"></a><a name="do_is"></a> ctype::d o_is
 
 단일 문자에 특정 특성이 있는지 여부를 테스트하거나 범위에 있는 각 문자의 특성을 분류하고 배열에 저장하기 위해 호출하는 가상 함수입니다.
 
@@ -189,7 +190,7 @@ virtual const CharType *do_is(
 *dest*\
 각 문자의 특성에 대한 특징을 지정하는 마스크 값을 저장할 배열의 시작 부분에 대한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 첫 번째 멤버 함수는 **`true`** 테스트 한 문자가 마스크 값에서 설명한 특성을 포함 하는 경우 인 부울 값을 반환 하 고, 특성을 포함 하지 않으면 인 부울 값을 반환 합니다 **`false`** .
 
@@ -203,7 +204,7 @@ virtual const CharType *do_is(
 
 `do_is`를 호출하는 [is](#is)에 대한 예제를 참조하세요.
 
-## <a name="ctypedo_narrow"></a><a name="do_narrow"></a>ctype::d o_narrow
+## <a name="ctypedo_narrow"></a><a name="do_narrow"></a> ctype::d o_narrow
 
 로캘에서 사용 하는 형식의 문자를 `CharType` **`char`** 네이티브 문자 집합에 있는 형식의 해당 문자로 변환 하기 위해 호출 하는 가상 함수입니다.
 
@@ -236,7 +237,7 @@ virtual const CharType* do_narrow(
 *dest*\
 **`char`** 변환 된 문자 범위를 저장 하는 대상 범위 내 형식의 첫 번째 문자에 대 한 const 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 첫 번째 보호 된 멤버 함수는 형식의 매개 변수 문자에 해당 하는 char 형식의 네이티브 문자를 반환 하 고 `CharType` , 해당 항목이 정의 되지 않은 경우 *기본값* 을 반환 합니다.
 
@@ -250,7 +251,7 @@ virtual const CharType* do_narrow(
 
 `do_narrow`를 호출하는 [narrow](#narrow)에 대한 예제를 참조하세요.
 
-## <a name="ctypedo_scan_is"></a><a name="do_scan_is"></a>ctype::d o_scan_is
+## <a name="ctypedo_scan_is"></a><a name="do_scan_is"></a> ctype::d o_scan_is
 
 범위에서 지정된 마스크와 일치하는 첫 번째 문자를 찾기 위해 호출하는 가상 함수입니다.
 
@@ -272,9 +273,9 @@ virtual const CharType *do_scan_is(
 *최신*\
 검색할 범위의 마지막 문자 바로 다음에 있는 문자에 대한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-지정된 마스크와 일치하는 범위의 첫 번째 문자에 대한 포인터입니다. 이러한 값이 없으면 함수는 *last*를 반환 합니다.
+지정된 마스크와 일치하는 범위의 첫 번째 문자에 대한 포인터입니다. 이러한 값이 없으면 함수는 *last* 를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -284,7 +285,7 @@ Protected 멤버 함수는 `ptr` `first` `last` [do_is](#do_is)( `maskVal` , \* 
 
 `do_scan_is`를 호출하는 [scan_is](#scan_is)에 대한 예제를 참조하세요.
 
-## <a name="ctypedo_scan_not"></a><a name="do_scan_not"></a>ctype::d o_scan_not
+## <a name="ctypedo_scan_not"></a><a name="do_scan_not"></a> ctype::d o_scan_not
 
 범위에서 지정된 마스크와 일치하지 않는 첫 번째 문자를 찾기 위해 호출하는 가상 함수입니다.
 
@@ -306,9 +307,9 @@ virtual const CharType *do_scan_not(
 *최신*\
 검색할 범위의 마지막 문자 바로 다음에 있는 문자에 대한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-지정된 마스크와 일치하지 않은 범위의 첫 번째 문자에 대한 포인터입니다. 이러한 값이 없으면 함수는 *last*를 반환 합니다.
+지정된 마스크와 일치하지 않은 범위의 첫 번째 문자에 대한 포인터입니다. 이러한 값이 없으면 함수는 *last* 를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -318,7 +319,7 @@ Protected 멤버 함수는 `ptr` `first` `last` [do_is](#do_is)( `maskVal` , \* 
 
 `do_scan_not`을 호출하는 [scan_not](#scan_not)에 대한 예제를 참조하세요.
 
-## <a name="ctypedo_tolower"></a><a name="do_tolower"></a>ctype::d o_tolower
+## <a name="ctypedo_tolower"></a><a name="do_tolower"></a> ctype::d o_tolower
 
 문자 또는 문자 범위를 소문자로 변환하기 위해 호출하는 가상 함수입니다.
 
@@ -341,9 +342,9 @@ virtual const CharType *do_tolower(
 *최신*\
 대/소문자를 변환할 문자 범위의 마지막 문자 바로 다음에 있는 문자에 대한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-첫 번째 보호 된 멤버 함수는 *ch*매개 변수의 소문자 형태를 반환 합니다. 소문자 형태가 없는 경우 *ch*를 반환 합니다. 두 번째 보호 된 멤버 함수는 *last*를 반환 합니다.
+첫 번째 보호 된 멤버 함수는 *ch* 매개 변수의 소문자 형태를 반환 합니다. 소문자 형태가 없는 경우 *ch* 를 반환 합니다. 두 번째 보호 된 멤버 함수는 *last* 를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -353,7 +354,7 @@ virtual const CharType *do_tolower(
 
 `do_tolower`를 호출하는 [tolower](#tolower)에 대한 예제를 참조하세요.
 
-## <a name="ctypedo_toupper"></a><a name="do_toupper"></a>ctype::d o_toupper
+## <a name="ctypedo_toupper"></a><a name="do_toupper"></a> ctype::d o_toupper
 
 문자 또는 문자 범위를 대문자로 변환하기 위해 호출하는 함수입니다.
 
@@ -376,9 +377,9 @@ virtual const CharType *do_toupper(
 *최신*\
 대/소문자를 변환할 문자 범위의 마지막 문자 바로 다음에 있는 문자에 대한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-첫 번째 보호 된 멤버 함수는 *ch*매개 변수의 대문자 형태를 반환 합니다. 대문자 양식이 없는 경우 *ch*를 반환 합니다. 두 번째 보호 된 멤버 함수는 *last*를 반환 합니다.
+첫 번째 보호 된 멤버 함수는 *ch* 매개 변수의 대문자 형태를 반환 합니다. 대문자 양식이 없는 경우 *ch* 를 반환 합니다. 두 번째 보호 된 멤버 함수는 *last* 를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -388,7 +389,7 @@ virtual const CharType *do_toupper(
 
 `do_toupper`를 호출하는 [toupper](#toupper)에 대한 예제를 참조하세요.
 
-## <a name="ctypedo_widen"></a><a name="do_widen"></a>ctype::d o_widen
+## <a name="ctypedo_widen"></a><a name="do_widen"></a> ctype::d o_widen
 
 **`char`** 네이티브 문자 집합에서 형식의 문자를 로캘에서 사용 하는 형식의 해당 문자로 변환 하기 위해 호출 하는 가상 함수입니다 `CharType` .
 
@@ -415,7 +416,7 @@ virtual const char *do_widen(
 *dest*\
 변환한 문자 범위를 저장하는 대상 범위 내 `CharType` 형식의 첫 번째 문자에 대한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 첫 번째 보호 된 멤버 함수는 `CharType` 네이티브 형식의 매개 변수 문자에 해당 하는 형식의 문자를 반환 합니다 **`char`** .
 
@@ -429,7 +430,7 @@ virtual const char *do_widen(
 
 `do_widen`을 호출하는 [widen](#widen)에 대한 예제를 참조하세요.
 
-## <a name="ctypeis"></a><a name="is"></a>ctype:: is
+## <a name="ctypeis"></a><a name="is"></a> ctype:: is
 
 단일 문자에 특정 특성이 있는지 여부를 테스트하거나 범위에 있는 각 문자의 특성을 분류하고 배열에 저장합니다.
 
@@ -459,7 +460,7 @@ const CharType *is(
 *dest*\
 각 문자의 특성에 대한 특징을 지정하는 마스크 값을 저장할 배열의 시작 부분에 대한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 첫 번째 멤버 함수는 **`true`** 테스트 한 문자가 마스크 값에서 설명한 특성을 포함 하는 경우를 반환 하 고, 특성이 없으면를 반환 합니다 **`false`** .
 
@@ -508,7 +509,7 @@ int main() {
 }
 ```
 
-## <a name="ctypenarrow"></a><a name="narrow"></a>ctype:: 좁게
+## <a name="ctypenarrow"></a><a name="narrow"></a> ctype:: 좁게
 
 `CharType`로캘에서 사용 하는 형식의 문자를 **`char`** 네이티브 문자 집합에 있는 형식의 해당 문자로 변환 합니다.
 
@@ -539,7 +540,7 @@ const CharType* narrow(
 *dest*\
 **`char`** 변환 된 문자 범위를 저장 하는 대상 범위 내 형식의 첫 번째 문자에 대 한 const 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 첫 번째 멤버 함수는 형식이 **`char`** `CharType default` 지정 되지 않은 경우 형식의 매개 변수 문자에 해당 하는 형식의 네이티브 문자를 반환 합니다.
 
@@ -547,7 +548,7 @@ const CharType* narrow(
 
 ### <a name="remarks"></a>설명
 
-첫 번째 멤버 함수는 [do_narrow](#do_narrow)( `ch` ,)를 반환 합니다 `default` . 두 번째 멤버 함수는 [do_narrow](#do_narrow) ( `first` , `last` , `default` ,)를 반환 합니다 `dest` . 기본 소스 문자만 `narrow` 아래에 고유 역 이미지 `CharType`을 포함하는 것이 보장됩니다. 이러한 기본 소스 문자의 경우 `narrow` ( [widen](#widen) ( **c** ), 0 ) == **c**와 같이 고정 값을 유지합니다.
+첫 번째 멤버 함수는 [do_narrow](#do_narrow)( `ch` ,)를 반환 합니다 `default` . 두 번째 멤버 함수는 [do_narrow](#do_narrow) ( `first` , `last` , `default` ,)를 반환 합니다 `dest` . 기본 소스 문자만 `narrow` 아래에 고유 역 이미지 `CharType`을 포함하는 것이 보장됩니다. 이러한 기본 소스 문자의 경우 `narrow` ( [widen](#widen) ( **c** ), 0 ) == **c** 와 같이 고정 값을 유지합니다.
 
 ### <a name="example"></a>예제
 
@@ -575,7 +576,7 @@ int main( )
 Xhello everyone
 ```
 
-## <a name="ctypescan_is"></a><a name="scan_is"></a>ctype:: scan_is
+## <a name="ctypescan_is"></a><a name="scan_is"></a> ctype:: scan_is
 
 범위에서 지정된 마스크와 일치하는 첫 번째 문자를 찾습니다.
 
@@ -597,9 +598,9 @@ const CharType *scan_is(
 *최신*\
 검색할 범위의 마지막 문자 바로 다음에 있는 문자에 대한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-지정된 마스크와 일치하는 범위의 첫 번째 문자에 대한 포인터입니다. 이러한 값이 없으면 함수는 *last*를 반환 합니다.
+지정된 마스크와 일치하는 범위의 첫 번째 문자에 대한 포인터입니다. 이러한 값이 없으면 함수는 *last* 를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -631,7 +632,7 @@ int main( )
 The first punctuation is "," at position: 5
 ```
 
-## <a name="ctypescan_not"></a><a name="scan_not"></a>ctype:: scan_not
+## <a name="ctypescan_not"></a><a name="scan_not"></a> ctype:: scan_not
 
 범위에서 지정된 마스크와 일치하지 않는 첫 번째 문자를 찾습니다.
 
@@ -653,9 +654,9 @@ const CharType *scan_not(
 *최신*\
 검색할 범위의 마지막 문자 바로 다음에 있는 문자에 대한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-지정된 마스크와 일치하지 않은 범위의 첫 번째 문자에 대한 포인터입니다. 이러한 값이 없으면 함수는 *last*를 반환 합니다.
+지정된 마스크와 일치하지 않은 범위의 첫 번째 문자에 대한 포인터입니다. 이러한 값이 없으면 함수는 *last* 를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -687,7 +688,7 @@ int main( )
 First nonalpha character is "," at position: 5
 ```
 
-## <a name="ctypetolower"></a><a name="tolower"></a>ctype:: tolower
+## <a name="ctypetolower"></a><a name="tolower"></a> ctype:: tolower
 
 문자 또는 문자 범위를 소문자로 변환합니다.
 
@@ -708,11 +709,11 @@ const CharType *tolower(CharType* first, const CharType* last) const;
 *최신*\
 대/소문자를 변환할 문자 범위의 마지막 문자 바로 다음에 있는 문자에 대한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-첫 번째 멤버 함수는 *ch*매개 변수의 소문자 형태를 반환 합니다. 소문자 형태가 없는 경우 *ch*를 반환 합니다.
+첫 번째 멤버 함수는 *ch* 매개 변수의 소문자 형태를 반환 합니다. 소문자 형태가 없는 경우 *ch* 를 반환 합니다.
 
-두 번째 멤버 함수는 *last*를 반환 합니다.
+두 번째 멤버 함수는 *last* 를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -743,7 +744,7 @@ int main( )
 The lowercase string is: hello, my name is john
 ```
 
-## <a name="ctypetoupper"></a><a name="toupper"></a>ctype:: toupper
+## <a name="ctypetoupper"></a><a name="toupper"></a> ctype:: toupper
 
 문자 또는 문자 범위를 대문자로 변환합니다.
 
@@ -763,11 +764,11 @@ const CharType *toupper(CharType* first, const CharType* last) const;
 *최신*\
 대/소문자를 변환할 문자 범위의 마지막 문자 바로 다음에 있는 문자에 대한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-첫 번째 멤버 함수는 *ch*매개 변수의 대문자 형태를 반환 합니다. 대문자 양식이 없는 경우 *ch*를 반환 합니다.
+첫 번째 멤버 함수는 *ch* 매개 변수의 대문자 형태를 반환 합니다. 대문자 양식이 없는 경우 *ch* 를 반환 합니다.
 
-두 번째 멤버 함수는 *last*를 반환 합니다.
+두 번째 멤버 함수는 *last* 를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -798,7 +799,7 @@ int main( )
 The uppercase string is: HELLO, MY NAME IS JOHN
 ```
 
-## <a name="ctypewiden"></a><a name="widen"></a>ctype:: 넓히기
+## <a name="ctypewiden"></a><a name="widen"></a> ctype:: 넓히기
 
 **`char`** 네이티브 문자 집합에서 형식의 문자를 로캘에서 사용 하는 형식의 해당 문자로 변환 합니다 `CharType` .
 
@@ -821,7 +822,7 @@ const char *widen(const char* first, const char* last, CharType* dest) const;
 *dest*\
 변환한 문자 범위를 저장하는 대상 범위 내 `CharType` 형식의 첫 번째 문자에 대한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 첫 번째 멤버 함수는 `CharType` 네이티브 형식의 매개 변수 문자에 해당 하는 형식의 문자를 반환 합니다 **`char`** .
 

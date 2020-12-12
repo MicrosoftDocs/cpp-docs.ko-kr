@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 프로젝트 빌드 오류 PRJ0027'
 title: 프로젝트 빌드 오류 PRJ0027
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0027
 ms.assetid: 85d73a78-4b9e-4553-9f5d-2d76c48a790a
-ms.openlocfilehash: bc69f34dd291f2af241edae51bda9f09aeb9916d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d171d8ee253738f0d13921269ff0e28a5663bcb6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80192252"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97291326"
 ---
 # <a name="project-build-error-prj0027"></a>프로젝트 빌드 오류 PRJ0027
 
