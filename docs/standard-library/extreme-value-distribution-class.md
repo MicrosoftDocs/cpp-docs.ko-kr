@@ -1,4 +1,5 @@
 ---
+description: Extreme_value_distribution 클래스에 대해 자세히 알아보세요.
 title: extreme_value_distribution 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - std::extreme_value_distribution [C++], param_type
 - std::extreme_value_distribution [C++], param_type
 ms.assetid: a0cd8370-0a54-4e26-9388-8b9678fb57da
-ms.openlocfilehash: b086638d02afb929d18daad76716a12704585108
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d4abd89ae7fee6ab170f5d827281146d703a6f97
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835898"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232488"
 ---
 # <a name="extreme_value_distribution-class"></a>extreme_value_distribution 클래스
 
@@ -205,7 +206,7 @@ explicit extreme_value_distribution(const param_type& parm);
 
 첫 번째 생성자는 저장된 `a` 값이 *a_value* 값을 보유하고 저장된 `b` 값이 *b_value* 값을 보유하고 있는 개체를 생성합니다.
 
-두 번째 생성자는 저장된 매개 변수가 *parm*에서 초기화되는 개체를 생성합니다. `param()` 멤버 함수를 호출하여 기존 분포의 현재 매개 변수를 가져와 설정할 수 있습니다.
+두 번째 생성자는 저장된 매개 변수가 *parm* 에서 초기화되는 개체를 생성합니다. `param()` 멤버 함수를 호출하여 기존 분포의 현재 매개 변수를 가져와 설정할 수 있습니다.
 
 ## <a name="extreme_value_distributionparam_type"></a><a name="param_type"></a> extreme_value_distribution::p aram_type
 

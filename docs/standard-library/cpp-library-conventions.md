@@ -1,4 +1,5 @@
-﻿---
+---
+description: '자세한 정보: c + + 라이브러리 규칙'
 title: C++ 라이브러리 규칙
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - coding conventions, C++ Standard Library
 - naming conventions [C++], C++ library
 ms.assetid: bf41b79a-2d53-4f46-8d05-779358335146
-ms.openlocfilehash: d92636a7ed63e09396ff68749560cde9d1f8639c
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 4426996b7420c056a964378655c72c43b99fcf97
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74755709"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97233372"
 ---
 # <a name="c-library-conventions"></a>C++ 라이브러리 규칙
 
@@ -24,7 +25,7 @@ C++ 라이브러리는 표준 C 라이브러리와 동일한 규칙 외에도 �
 
 구현 시에는 C++ 라이브러리의 형식 및 함수를 선언하는 방법과 관련하여 다음과 같은 약간의 자유재량도 있습니다.
 
-- 표준 C 라이브러리의 함수 이름에는 extern "C++" 또는 Extern "C" 링크가 있을 수 있습니다. 라이브러리 엔터티 인라인을 선언하지 않고 적절한 표준 C 헤더를 포함합니다.
+- 표준 C 라이브러리의 함수 이름에는 extern "c + +" 또는 extern "C" 링크가 있을 수 있습니다. 라이브러리 엔터티 인라인을 선언하지 않고 적절한 표준 C 헤더를 포함합니다.
 
 - 이 문서에 나열된 함수 시그니처 이상의 추가 함수 시그니처가 라이브러리 클래스의 멤버 함수 이름에 있을 수 있습니다. 여기에 설명된 함수 호출이 예상대로 동작할 것을 확신할 수 있지만, 라이브러리 멤버 함수의 주소를 안정적으로 가져올 수는 없습니다. 형식이 예상과 다를 수 있습니다.
 
@@ -48,7 +49,7 @@ C++ 라이브러리는 표준 C 라이브러리와 동일한 규칙 외에도 �
 
 - 대체 가능한 함수의 기본 버전을 비롯하여 라이브러리에서 제공한 함수는 *최대한* 모든 예외 사양에 나열된 해당 예외를 throw할 수 있습니다. 라이브러리에서 제공한 소멸자는 예외를 throw하지 않습니다. 표준 C 라이브러리의 함수는 `qsort`에서 예외를 throw하는 비교 함수를 호출할 때와 같이 예외를 전파할 수 있지만, 예외를 throw하지는 않습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[C++ 표준 라이브러리 개요](../standard-library/cpp-standard-library-overview.md)\
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[C + + 표준 라이브러리 개요](../standard-library/cpp-standard-library-overview.md)\
+[C + + 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

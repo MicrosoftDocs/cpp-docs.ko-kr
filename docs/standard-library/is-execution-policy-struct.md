@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: is_execution_policy 구조체'
 title: is_execution_policy 구조체
 ms.date: 04/18/2019
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - is_execution_policy class
 - is_execution_policy struct
-ms.openlocfilehash: 899e14dcbae4f734867260af934ce0c8724ecaa6
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 531005379c4a6307a2ba5d7f14770c67175d47d5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81371624"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97231045"
 ---
 # <a name="is_execution_policy-struct"></a>is_execution_policy 구조체
 
-그렇지 않으면 모호한 오버로드 해결 참여에서 함수 서명을 제외하기 위한 실행 정책을 검색합니다.
+모호한 오버 로드 확인 참여의 함수 시그니처를 제외 하기 위해 실행 정책을 검색 합니다.
 
 ## <a name="syntax"></a>구문
 

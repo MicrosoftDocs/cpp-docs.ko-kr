@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3765'
 title: 컴파일러 오류 C3765
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3765
 ms.assetid: feadee7a-fcfb-402c-af2f-0e656f814a13
-ms.openlocfilehash: 5bb2dba57c680882bb4bf8e4026f5720276b47b4
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 29de872030143ab33e1349f07ac3b81cb841e113
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509372"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97234620"
 ---
 # <a name="compiler-error-c3765"></a>컴파일러 오류 C3765
 

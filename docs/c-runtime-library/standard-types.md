@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 표준 형식'
 title: 표준 형식
 ms.date: 11/04/2016
 f1_keywords:
@@ -160,12 +161,12 @@ helpviewer_keywords:
 - CRT_REPORT_HOOK type
 - _finddata_t type
 ms.assetid: 23312dd2-4a6a-4d70-9b48-2a5d0d8c9f28
-ms.openlocfilehash: 376c29371fb9213ed46435b41bea1666058c7b4e
-ms.sourcegitcommit: 30792632548d1c71894f9fecbe2f554294b86020
+ms.openlocfilehash: 49a8e877987af97e961bb32f47bd857b4eceddfc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91765307"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97235751"
 ---
 # <a name="standard-types"></a>표준 형식
 
@@ -173,7 +174,7 @@ Microsoft 런타임 라이브러리는 다음과 같은 표준 형식 및 typede
 
 ### <a name="fixed-width-integral-types-stdinth"></a>고정 너비 정수 계열 형식(stdint.h)
 
-|속성|해당하는 기본 제공 형식|
+|Name|해당하는 기본 제공 형식|
 |----------|-------------------------------|
 |int8\_t, uint8\_t|signed char, unsigned char|
 |int16\_t, uint16\_t|short, unsigned short|
@@ -189,7 +190,7 @@ Microsoft 런타임 라이브러리는 다음과 같은 표준 형식 및 typede
 |int_fast64_t, uint_fast64_t|long long, unsigned long long|
 |intmax_t, uintmax_t|long long, unsigned long long|
 
-|Type|Description|선언됨|
+|형식|설명|선언됨|
 |----------|-----------------|-----------------|
 |`clock_t`(long)|시간 값을 저장합니다. [clock](../c-runtime-library/reference/clock.md)에 의해 사용됩니다.|TIME.H|
 |`_complex` 구조체|복소수의 실수와 허수 부분을 저장합니다. [_cabs](../c-runtime-library/reference/cabs.md)에 의해 사용됩니다.|MATH.H|
@@ -253,6 +254,6 @@ Microsoft 런타임 라이브러리는 다음과 같은 표준 형식 및 typede
 |`wctype_t` 정수|모든 언어 문자 집합의 모든 문자를 나타낼 수 있습니다.|WCHAR.H,<br /><br /> CRTDEFS.H|
 |`wint_t` 정수|모든 와이드 문자 또는 넓은 끝-파일의 값을 보유할 수 있는 데이터 개체의 형식입니다.|WCHAR.H,<br /><br /> CRTDEFS.H|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[C 런타임 라이브러리 참조](../c-runtime-library/c-run-time-library-reference.md)
+[C Run-Time 라이브러리 참조](../c-runtime-library/c-run-time-library-reference.md)

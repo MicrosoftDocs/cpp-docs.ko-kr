@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: iostream 프로그래밍'
 title: iostream 프로그래밍
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - programming [C++], iostream programming
 - text input [C++]
 ms.assetid: 1aa0a0be-4dd8-4dac-ac1f-d2afdaeab769
-ms.openlocfilehash: 883050c8ad838d642156dc6dac4c779d2dd3420a
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 4b9c4e889a8c63512a4df8891116ee8d99bbe50f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68449062"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97231383"
 ---
 # <a name="iostream-programming"></a>iostream 프로그래밍
 
@@ -32,7 +33,7 @@ ms.locfileid: "68449062"
 
 ## <a name="in-this-section"></a>섹션 내용
 
-[스트림이란](../standard-library/what-a-stream-is.md)
+[스트림 정의](../standard-library/what-a-stream-is.md)
 
 [출력 스트림](../standard-library/output-streams.md)
 
@@ -40,9 +41,9 @@ ms.locfileid: "68449062"
 
 [입력/출력 스트림](../standard-library/input-output-streams.md)
 
-[인수 포함 사용자 지정 조작자](../standard-library/custom-manipulators-with-arguments.md)
+[인수가 있는 사용자 지정 조작자](../standard-library/custom-manipulators-with-arguments.md)
 
-## <a name="see-also"></a>참고 
+## <a name="see-also"></a>참고 항목
 
 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)\
 [iostreams 규칙](../standard-library/iostreams-conventions.md)

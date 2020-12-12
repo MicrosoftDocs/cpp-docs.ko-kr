@@ -1,4 +1,5 @@
 ---
+description: Exponential_distribution 클래스에 대해 자세히 알아보세요.
 title: exponential_distribution 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - std::exponential_distribution [C++], param_type
 - std::exponential_distribution [C++], param_type
 ms.assetid: d54f3126-a09b-45f9-a30b-0d94d03bcdc9
-ms.openlocfilehash: dbb8425047d9076343922dfbcf5c6162b6054c3b
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f89976cf4da829f5778070079691b20371b0cd67
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835911"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232451"
 ---
 # <a name="exponential_distribution-class"></a>exponential_distribution 클래스
 
@@ -180,7 +181,7 @@ explicit exponential_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>매개 변수
 
-*lambda*\
+\
 `lambda` 분포 매개 변수입니다.
 
 *parm*\
@@ -192,7 +193,7 @@ explicit exponential_distribution(const param_type& parm);
 
 첫 번째 생성자는 저장된 `lambda` 값이 *lambda* 값을 보유하는 개체를 생성합니다.
 
-두 번째 생성자는 저장된 매개 변수가 *parm*에서 초기화되는 개체를 생성합니다. `param()` 멤버 함수를 호출하여 기존 분포의 현재 매개 변수를 가져와 설정할 수 있습니다.
+두 번째 생성자는 저장된 매개 변수가 *parm* 에서 초기화되는 개체를 생성합니다. `param()` 멤버 함수를 호출하여 기존 분포의 현재 매개 변수를 가져와 설정할 수 있습니다.
 
 ## <a name="exponential_distributionparam_type"></a><a name="param_type"></a> exponential_distribution::p aram_type
 
@@ -211,7 +212,7 @@ struct param_type {
 
 ### <a name="parameters"></a>매개 변수
 
-*lambda*\
+\
 `lambda` 분포 매개 변수입니다.
 
 *오른쪽*\

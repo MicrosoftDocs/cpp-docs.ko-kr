@@ -1,4 +1,5 @@
 ---
+description: Insert_iterator 클래스에 대해 자세히 알아보세요.
 title: insert_iterator 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - std::insert_iterator [C++], container_type
 - std::insert_iterator [C++], reference
 ms.assetid: d5d86405-872e-4e3b-9e68-c69a2b7e8221
-ms.openlocfilehash: 530168f5e259934f7d614b305e6ac1092ba68f4d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d9089e0ab592ed6c8289570cc422aa6183444d55
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233160"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97231578"
 ---
 # <a name="insert_iterator-class"></a>insert_iterator 클래스
 
@@ -39,7 +40,7 @@ class insert_iterator;
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[insert_iterator](#insert_iterator)|컨테이너의 지정된 위치에 요소를 삽입하는 `insert_iterator`를 만듭니다.|
 
@@ -52,7 +53,7 @@ class insert_iterator;
 
 ### <a name="operators"></a>연산자
 
-|연산자|Description|
+|연산자|설명|
 |-|-|
 |[연산자](#op_star)|일반 삽입을 위해 출력 반복기 식 * `i` = `x`를 구현하는 데 사용된 역참조 연산자입니다.|
 |[operator + +](#op_add_add)|값을 저장할 다음 위치에 `insert_iterator`를 증가시킵니다.|
@@ -60,11 +61,11 @@ class insert_iterator;
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더**:\<iterator>
+**헤더**: \<iterator>
 
 **네임스페이스:** std
 
-## <a name="insert_iteratorcontainer_type"></a><a name="container_type"></a>insert_iterator:: container_type
+## <a name="insert_iteratorcontainer_type"></a><a name="container_type"></a> insert_iterator:: container_type
 
 일반 삽입 대상인 컨테이너를 나타내는 형식입니다.
 
@@ -74,7 +75,7 @@ typedef Container container_type;
 
 ### <a name="remarks"></a>설명
 
-이 형식은 템플릿 매개 변수 *Container*의 동의어입니다.
+이 형식은 템플릿 매개 변수 *Container* 의 동의어입니다.
 
 ### <a name="example"></a>예제
 
@@ -106,7 +107,7 @@ The list L2 is: ( 40 20 10 ).
 */
 ```
 
-## <a name="insert_iteratorinsert_iterator"></a><a name="insert_iterator"></a>insert_iterator:: insert_iterator
+## <a name="insert_iteratorinsert_iterator"></a><a name="insert_iterator"></a> insert_iterator:: insert_iterator
 
 컨테이너의 지정된 위치에 요소를 삽입하는 `insert_iterator`를 만듭니다.
 
@@ -172,7 +173,7 @@ After the insertions, the list L is:
 */
 ```
 
-## <a name="insert_iteratoroperator"></a><a name="op_star"></a>insert_iterator:: operator *
+## <a name="insert_iteratoroperator"></a><a name="op_star"></a> insert_iterator:: operator *
 
 주소가 지정된 요소를 반환하는 삽입 반복기를 역참조합니다.
 
@@ -180,13 +181,13 @@ After the insertions, the list L is:
 insert_iterator<Container>& operator*();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 멤버 함수는 주소가 지정된 요소의 값을 반환합니다.
 
 ### <a name="remarks"></a>설명
 
-출력 반복기 식 ** \* Iter**value를 구현 하는 데 사용  =  **value**됩니다. `Iter`가 시퀀스의 요소에 주소를 지정한 반복기 인 경우 ** \* Iter**  =  **value** 는 해당 요소를 value로 바꾸고 시퀀스의 총 요소 수를 변경 하지 않습니다.
+출력 반복기 식 **\* Iter** value를 구현 하는 데 사용  =  됩니다. `Iter`가 시퀀스의 요소에 주소를 지정한 반복기 인 경우 **\* Iter**  =  **value** 는 해당 요소를 value로 바꾸고 시퀀스의 총 요소 수를 변경 하지 않습니다.
 
 ### <a name="example"></a>예제
 
@@ -232,7 +233,7 @@ After the insertions, the list L is:
 */
 ```
 
-## <a name="insert_iteratoroperator"></a><a name="op_add_add"></a>insert_iterator:: operator + +
+## <a name="insert_iteratoroperator"></a><a name="op_add_add"></a> insert_iterator:: operator + +
 
 값을 저장할 다음 위치에 `insert_iterator`를 증가시킵니다.
 
@@ -296,7 +297,7 @@ After the insertions, the vector vec becomes:
 */
 ```
 
-## <a name="insert_iteratoroperator"></a><a name="op_eq"></a>insert_iterator:: operator =
+## <a name="insert_iteratoroperator"></a><a name="op_eq"></a> insert_iterator:: operator =
 
 컨테이너에 값을 삽입하고 새 요소를 가리키도록 업데이트된 반복기를 반환합니다.
 
@@ -313,7 +314,7 @@ insert_iterator<Container>& operator=(
 *짧은*\
 컨테이너에 할당할 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 컨테이너에 삽입된 요소에 대한 참조입니다.
 
@@ -379,7 +380,7 @@ After the insertions, the list L is:
 */
 ```
 
-## <a name="insert_iteratorreference"></a><a name="reference"></a>insert_iterator:: reference
+## <a name="insert_iteratorreference"></a><a name="reference"></a> insert_iterator:: reference
 
 연관 컨테이너에서 제어하는 시퀀스의 요소에 대한 참조를 제공하는 형식입니다.
 

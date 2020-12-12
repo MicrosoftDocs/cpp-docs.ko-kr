@@ -1,4 +1,5 @@
 ---
+description: Fisher_f_distribution 클래스에 대해 자세히 알아보세요.
 title: fisher_f_distribution 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - std::fisher_f_distribution [C++], param_type
 - std::fisher_f_distribution [C++], param_type
 ms.assetid: 9513b6ce-3309-4be1-829b-f504bca35bbf
-ms.openlocfilehash: 6f8c60b5f4523caf19e432ff853d49ad57fd277a
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 3020faef2ada6254fde940c89a60630816109863
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835807"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232470"
 ---
 # <a name="fisher_f_distribution-class"></a>fisher_f_distribution 클래스
 
@@ -261,7 +262,7 @@ explicit fisher_f_distribution(const param_type& parm);
 
 첫 번째 생성자는 저장된 `m` 값이 *m* 값을 보유하고 저장된 `n` 값이 *n* 값을 보유하고 있는 개체를 생성합니다.
 
-두 번째 생성자는 저장된 매개 변수가 *parm*에서 초기화되는 개체를 생성합니다. `param()` 멤버 함수를 호출하여 기존 분포의 현재 매개 변수를 가져와 설정할 수 있습니다.
+두 번째 생성자는 저장된 매개 변수가 *parm* 에서 초기화되는 개체를 생성합니다. `param()` 멤버 함수를 호출하여 기존 분포의 현재 매개 변수를 가져와 설정할 수 있습니다.
 
 ## <a name="fisher_f_distributionparam_type"></a><a name="param_type"></a> fisher_f_distribution::p aram_type
 

@@ -1,4 +1,5 @@
 ---
+description: Error_condition 클래스에 대해 자세히 알아보세요.
 title: error_condition 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - std::error_condition::clear
 - std::error_condition::message
 ms.assetid: 6690f481-97c9-4554-a0ff-851dc96b7a06
-ms.openlocfilehash: 1708a3f560f60fe3933406a904d95b4d29890a7f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 6567a4406271147eadfdc9e9443ba333d931afba
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88830776"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232683"
 ---
 # <a name="error_condition-class"></a>error_condition 클래스
 
@@ -52,13 +53,13 @@ class error_condition;
 |-|-|
 |[value_type](#value_type)|저장된 오류 코드 값을 나타내는 형식입니다.|
 
-### <a name="functions"></a>Functions
+### <a name="functions"></a>함수
 
 |Name|설명|
 |-|-|
 |[assign](#assign)|오류 코드 값과 범주를 오류 조건에 할당합니다.|
 |[category](#category)|오류 범주를 반환합니다.|
-|[해제](#clear)|오류 코드 값과 범주를 지웁니다.|
+|[clear](#clear)|오류 코드 값과 범주를 지웁니다.|
 |[message](#message)|오류 코드의 이름을 반환합니다.|
 
 ### <a name="operators"></a>연산자
@@ -89,7 +90,7 @@ void assign(value_type val, const error_category& _Cat);
 
 #### <a name="remarks"></a>설명
 
-멤버 함수는 *val* 을 오류 코드 값으로 저장 하 고 *_Cat*에 대 한 포인터를 저장 합니다.
+멤버 함수는 *val* 을 오류 코드 값으로 저장 하 고 *_Cat* 에 대 한 포인터를 저장 합니다.
 
 ### <a name="category"></a><a name="category"></a> 범주
 
@@ -203,7 +204,7 @@ bool operator!=(const error_condition& right) const;
 
 #### <a name="return-value"></a>반환 값
 
-**`true`**`error_condition`개체가 `error_condition` *오른쪽*에 전달 된 개체와 같지 않으면이 고, 그렇지 않으면 **`false`** 입니다.
+**`true`**`error_condition`개체가 `error_condition` *오른쪽* 에 전달 된 개체와 같지 않으면이 고, 그렇지 않으면 **`false`** 입니다.
 
 #### <a name="remarks"></a>설명
 

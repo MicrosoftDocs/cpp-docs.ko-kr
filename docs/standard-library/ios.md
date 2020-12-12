@@ -1,4 +1,5 @@
 ---
+description: 'Ios에 대 한 자세한 정보: &lt; ios&gt;'
 title: '&lt;ios&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - ios header
 ms.assetid: d3d4c161-2f37-4f04-93cc-0a2a89984a9c
-ms.openlocfilehash: 8ba03e5ab5dd90a6f29e08b01576803a00f0bd24
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d9ea336c3dc36b6f9afa76d00496965bb860d1be
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845486"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97231409"
 ---
 # <a name="ltiosgt"></a>&lt;ios&gt;
 
@@ -60,7 +61,7 @@ istr>> noskipws;
 |[dec](../standard-library/ios-functions.md#dec)|정수 변수가 밑수 10 표기법으로 표시되도록 지정합니다.|
 |[defaultfloat](../standard-library/ios-functions.md#ios_defaultfloat)|부동 소수점 값에 기본 표시 형식을 사용하도록 `ios_base` 개체의 플래그를 구성합니다.|
 |[fixed](../standard-library/ios-functions.md#fixed)|부동 소수점 숫자가 고정 Decimal 표기법으로 표시되도록 지정합니다.|
-|[hex](../standard-library/ios-functions.md#hex)|정수 변수가 밑수 16 표기법으로 표시되도록 지정합니다.|
+|[16 진수](../standard-library/ios-functions.md#hex)|정수 변수가 밑수 16 표기법으로 표시되도록 지정합니다.|
 |[hexfloat](../standard-library/ios-functions.md#hexfloat)|
 |[internal](../standard-library/ios-functions.md#internal)|숫자의 부호를 왼쪽에 맞추고 숫자를 오른쪽에 맞춥니다.|
 |[비어](../standard-library/ios-functions.md#left)|너비가 출력 너비보다 작은 텍스트를 왼쪽에 여백을 두고 스트림 플러시에 표시합니다.|

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2152'
 title: 컴파일러 오류 C2152
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2152
 ms.assetid: a9ea2b0c-d55d-41c7-ba9f-dd75592ffc8a
-ms.openlocfilehash: f2949aba53ba7a2e977405cf2e03c22f3aeac646
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 22144fc0f534b51733d912c8f868607cd07c87a6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87210035"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97235270"
 ---
 # <a name="compiler-error-c2152"></a>컴파일러 오류 C2152
 

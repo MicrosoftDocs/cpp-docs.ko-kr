@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2144'
 title: 컴파일러 오류 C2144
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2144
 ms.assetid: 49f3959b-324f-4c06-9588-c0ecef5dc5b3
-ms.openlocfilehash: b917c0a2c15aeb70222c948bce9a6fb275c91068
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 172ccb897937008aa305616eea19f234dfc6a3bd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80207248"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97235504"
 ---
 # <a name="compiler-error-c2144"></a>컴파일러 오류 C2144
 
@@ -23,9 +24,9 @@ ms.locfileid: "80207248"
 
 C2144는 공백 문자가 포함 된 CLR 키워드에서 매크로를 만들려고 할 때에도 발생할 수 있습니다.
 
-형식 전달을 수행 하려는 경우 C2144이 표시 될 수도 있습니다. 자세한 내용은 [형식 전달C++(/cli)](../../extensions/type-forwarding-cpp-cli.md) 을 참조 하세요.
+형식 전달을 수행 하려는 경우 C2144이 표시 될 수도 있습니다. 자세한 내용은 [형식 전달 (c + +/cli)](../../extensions/type-forwarding-cpp-cli.md) 을 참조 하세요.
 
-## <a name="examples"></a>예
+## <a name="examples"></a>예제
 
 다음 샘플에서는 C2144를 생성 하 고 수정 하는 방법을 보여 줍니다.
 

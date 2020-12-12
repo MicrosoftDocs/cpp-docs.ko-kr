@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: _stat Structure st_mode 필드 상수'
 title: _stat 구조체 st_mode 필드 상수
 ms.date: 11/04/2016
 f1_keywords:
@@ -35,14 +36,14 @@ helpviewer_keywords:
 - _S_IREAD constant
 - _S_IFCHR constant
 ms.assetid: fd462004-7563-4766-8443-30b0a86174b6
-ms.openlocfilehash: ff2b6ac806b774ae3fe80f9b3cf4b3d2e82a2a9c
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: bd304119c705196981342caf5a257cc113fed923
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57744697"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97235738"
 ---
-# <a name="stat-structure-stmode-field-constants"></a>_stat 구조체 st_mode 필드 상수
+# <a name="_stat-structure-st_mode-field-constants"></a>_stat 구조체 st_mode 필드 상수
 
 ## <a name="syntax"></a>구문
 
@@ -50,7 +51,7 @@ ms.locfileid: "57744697"
 #include <sys/stat.h>
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 이러한 상수는 [_stat 구조](../c-runtime-library/standard-types.md)의 **st_mode** 필드에 있는 파일 형식을 나타내는 데 사용됩니다.
 
@@ -61,7 +62,7 @@ ms.locfileid: "57744697"
 |`_S_IFMT`|파일 형식 마스크|
 |`_S_IFDIR`|디렉터리|
 |`_S_IFCHR`|특수 문자(설정된 경우 디바이스를 나타냄)|
-|`_S_IFREG`|기본|
+|`_S_IFREG`|Regular|
 |`_S_IREAD`|읽기 권한, 소유자|
 |`_S_IWRITE`|쓰기 권한, 소유자|
 |`_S_IEXEC`|실행/검색 권한, 소유자|

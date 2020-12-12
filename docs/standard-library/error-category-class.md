@@ -1,4 +1,5 @@
 ---
+description: Error_category 클래스에 대해 자세히 알아보세요.
 title: error_category 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - std::error_category::message
 - std::error_category::name
 ms.assetid: e0a71e14-852d-4905-acd6-5f8ed426706d
-ms.openlocfilehash: 218596ff5b81e99f4787efe2582fdc2752533cec
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 25ad7f6acfe50cdcc0c4b9df44fb3b8b6244f569
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840169"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232657"
 ---
 # <a name="error_category-class"></a>error_category 클래스
 
@@ -49,7 +50,7 @@ error_category(const error_category&) = delete
 |-|-|
 |[value_type](#value_type)|저장된 오류 코드 값을 나타내는 형식입니다.|
 
-### <a name="functions"></a>Functions
+### <a name="functions"></a>함수
 
 |Name|설명|
 |-|-|
@@ -200,7 +201,7 @@ bool operator!=(const error_category& right) const;
 
 #### <a name="return-value"></a>반환 값
 
-**`true`**`error_category`개체가 `error_category` *오른쪽*에 전달 된 개체와 같지 않으면이 고, 그렇지 않으면 **`false`** 입니다.
+**`true`**`error_category`개체가 `error_category` *오른쪽* 에 전달 된 개체와 같지 않으면이 고, 그렇지 않으면 **`false`** 입니다.
 
 #### <a name="remarks"></a>설명
 

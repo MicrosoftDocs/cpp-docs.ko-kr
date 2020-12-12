@@ -1,4 +1,5 @@
-﻿---
+---
+description: '자세한 정보: 일반 MFC 항목'
 title: 일반 MFC 항목
 ms.date: 09/17/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - class libraries [MFC], MFC
 - MFC, application development
 ms.assetid: 617e9945-9bb3-471d-a3ba-e235fcfb55d1
-ms.openlocfilehash: effab556277b3cd9ca072798bea3a77dbde58620
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: a0e19a205e29297bf6808d6d979b9e27366b3e4d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618772"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97234360"
 ---
 # <a name="general-mfc-topics"></a>일반 MFC 항목
 
@@ -29,11 +30,11 @@ MFC 프레임워크는 Windows 전문 프로그래머가 작업 시 만들 수 �
 
 [MFC 라이브러리 버전](mfc-library-versions.md)
 
-[클래스를 사용하여 Windows 애플리케이션 작성](using-the-classes-to-write-applications-for-windows.md)
+[클래스를 사용 하 여 Windows 용 응용 프로그램 작성](using-the-classes-to-write-applications-for-windows.md)
 
 [프레임 워크를 기반으로 빌드](building-on-the-framework.md)
 
-[CWinApp: 애플리케이션 클래스](cwinapp-the-application-class.md)
+[CWinApp: 응용 프로그램 클래스](cwinapp-the-application-class.md)
 
 [문서 템플릿 및 문서/뷰 만들기 프로세스](document-templates-and-the-document-view-creation-process.md)
 

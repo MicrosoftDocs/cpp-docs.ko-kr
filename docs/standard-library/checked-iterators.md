@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 확인 된 반복기'
 title: Checked Iterators
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - iterators, checked
 - checked iterators
 ms.assetid: cfc87df8-e3d9-403b-ab78-e9483247d940
-ms.openlocfilehash: 2327638208f30908cd3429ae656ce569f5821195
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: affa280bf967727a08449cc4f488c3a984e32b0c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90684905"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97234282"
 ---
 # <a name="checked-iterators"></a>Checked Iterators
 
@@ -228,7 +229,7 @@ a7: 0 7 14 21 28 35 42 49 56 63 70 77 84 91 98 105
 a8: 0 8 16 24 32 40 48 56 64 72 80 88 96 104 112 120
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [C + + 표준 라이브러리 개요](../standard-library/cpp-standard-library-overview.md)\
 [디버그 반복기 지원](../standard-library/debug-iterator-support.md)

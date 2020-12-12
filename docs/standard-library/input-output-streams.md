@@ -1,16 +1,17 @@
 ---
-title: 입력-출력 스트림
+description: '자세히 알아보기: 입력/출력 스트림'
+title: Input-Output 스트림
 ms.date: 11/04/2016
 helpviewer_keywords:
 - I/O [C++], stream
 - stream I/O
 ms.assetid: 21a97566-91a7-42d6-b2f8-a4c16bc926f1
-ms.openlocfilehash: 54b53f96d487e466106fe92a01affa7bd3e55c16
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: fd261bfdac5b9ce95b04430e9d77c6bd1df56c7d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228260"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97231643"
 ---
 # <a name="inputoutput-streams"></a>입력/출력 스트림
 
@@ -35,4 +36,4 @@ ms.locfileid: "87228260"
 [basic_stringstream 클래스](../standard-library/basic-stringstream-class.md)\
 [\<sstream>](../standard-library/sstream.md)\
 [iostream 프로그래밍](../standard-library/iostream-programming.md)\
-[C + + 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)
+[C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)

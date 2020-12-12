@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: &lt; io마나트 ip&gt;'
 title: '&lt;iomanip&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - iomanip header
 ms.assetid: 3681c346-4763-4037-bba4-cf0dc3447974
-ms.openlocfilehash: f3f6c4886d22c7cd12b29950c114fbcde8905c28
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 7419900d4cd852ab260a6eeb92ee51623f8f71ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845746"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97231488"
 ---
 # <a name="ltiomanipgt"></a>&lt;iomanip&gt;
 

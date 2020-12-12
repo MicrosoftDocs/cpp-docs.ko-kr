@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2341'
 title: 컴파일러 오류 C2341
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2341
 ms.assetid: aa2a7da5-e1c8-4225-9939-5bdc50158f31
-ms.openlocfilehash: 6147ce954c6d21d86f76d1fd8ec6b8a1a5070a12
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 47869b6534664358fa80a3ace89fc44fdceefb08
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74760051"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97234789"
 ---
 # <a name="compiler-error-c2341"></a>컴파일러 오류 C2341
 
@@ -28,7 +29,7 @@ __declspec(allocate(".test"))   // C2341
 int j = 1;
 ```
 
-가능한 해결 방법:
+해결 방법:
 
 ```cpp
 // C2341b.cpp
