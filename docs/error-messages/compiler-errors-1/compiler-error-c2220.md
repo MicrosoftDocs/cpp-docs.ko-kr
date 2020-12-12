@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2220'
 title: 컴파일러 오류 C2220
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2220
 ms.assetid: d610802c-64d7-40ad-a2a6-0ed0b6815a6c
-ms.openlocfilehash: c4fdac833e69e748dd29b9cf772c167fc1dbbd00
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f45a34d0cdaa5e82c3f5e6c051126c6df4eb2005
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80206663"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97245436"
 ---
 # <a name="compiler-error-c2220"></a>컴파일러 오류 C2220
 
@@ -25,7 +26,7 @@ ms.locfileid: "80206663"
 
 - 프로젝트에서 경고를 일으키는 문제를 해결합니다.
 
-- 낮은 경고 수준에서 컴파일합니다 (예: **/W4**대신 **/W3** 사용).
+- 낮은 경고 수준에서 컴파일합니다 (예: **/W4** 대신 **/W3** 사용).
 
 - [경고](../../preprocessor/warning.md) pragma를 사용 하 여 특정 경고를 사용 하지 않도록 설정 하거나 표시 하지 않습니다.
 

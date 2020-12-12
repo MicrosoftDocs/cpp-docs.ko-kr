@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CDBVariant 클래스'
 title: CDBVariant 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - CDBVariant [MFC], m_pstringA
 - CDBVariant [MFC], m_pstringW
 ms.assetid: de23609c-c560-4b24-bd6b-9d8903fd5b49
-ms.openlocfilehash: 45a478a5ca6cfb4d9b976a29eae2ae7d98fdd6ee
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 54fc432998a15d79ab51165b280e4cc4ced94455
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223085"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97247944"
 ---
 # <a name="cdbvariant-class"></a>CDBVariant 클래스
 
@@ -55,7 +56,7 @@ class CDBVariant
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[CDBVariant:: CDBVariant](#cdbvariant)|`CDBVariant` 개체를 생성합니다.|
 
@@ -75,23 +76,23 @@ class CDBVariant
 
 |Name|설명|
 |----------|-----------------|
-|[CDBVariant:: m_boolVal](#m_boolval)|**BOOL**형식의 값을 포함 합니다.|
+|[CDBVariant:: m_boolVal](#m_boolval)|**BOOL** 형식의 값을 포함 합니다.|
 |[CDBVariant:: m_chVal](#m_chval)|형식의 값을 포함 **`unsigned char`** 합니다.|
 |[CDBVariant:: m_dblVal](#m_dblval)|형식의 값을 포함 **`double`** 합니다.|
 |[CDBVariant:: m_fltVal](#m_fltval)|형식의 값을 포함 **`float`** 합니다.|
 |[CDBVariant:: m_iVal](#m_ival)|형식의 값을 포함 **`short`** 합니다.|
 |[CDBVariant:: m_lVal](#m_lval)|형식의 값을 포함 **`long`** 합니다.|
 |[CDBVariant:: m_pbinary](#m_pbinary)|형식의 개체에 대 한 포인터를 포함 `CLongBinary` 합니다.|
-|[CDBVariant:: m_pdate](#m_pdate)|**TIMESTAMP_STRUCT**형식의 개체에 대 한 포인터를 포함 합니다.|
+|[CDBVariant:: m_pdate](#m_pdate)|**TIMESTAMP_STRUCT** 형식의 개체에 대 한 포인터를 포함 합니다.|
 |[CDBVariant:: m_pstring](#m_pstring)|형식의 개체에 대 한 포인터를 포함 `CString` 합니다.|
 |[CDBVariant:: m_pstringA](#m_pstringa)|ASCII [CString](../../atl-mfc-shared/reference/cstringt-class.md) 개체에 대 한 포인터를 저장 합니다.|
 |[CDBVariant:: m_pstringW](#m_pstringw)|와이드 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 개체에 대 한 포인터를 저장 합니다.|
 
 ## <a name="remarks"></a>설명
 
-`CDBVariant`에 기본 클래스가 없습니다.
+`CDBVariant` 에 기본 클래스가 없습니다.
 
-`CDBVariant`[COleVariant](../../mfc/reference/colevariant-class.md)와 비슷합니다. 그러나 `CDBVariant` 는 OLE를 사용 하지 않습니다. `CDBVariant`값의 데이터 형식에 대해 걱정 하지 않고 값을 저장할 수 있습니다. `CDBVariant`공용 구조체에 저장 된 현재 값의 데이터 형식을 추적 합니다.
+`CDBVariant`[COleVariant](../../mfc/reference/colevariant-class.md)와 비슷합니다. 그러나 `CDBVariant` 는 OLE를 사용 하지 않습니다. `CDBVariant` 값의 데이터 형식에 대해 걱정 하지 않고 값을 저장할 수 있습니다. `CDBVariant` 공용 구조체에 저장 된 현재 값의 데이터 형식을 추적 합니다.
 
 [CRecordset](../../mfc/reference/crecordset-class.md) 클래스 `CDBVariant` 는 세 개의 멤버 함수, 및에서 개체를 활용 `GetFieldValue` `GetBookmark` `SetBookmark` 합니다. 예를 들어를 사용 하 여 `GetFieldValue` 열의 데이터를 동적으로 가져올 수 있습니다. 열의 데이터 형식은 런타임에 알려지지 않을 수 있기 때문에에서는 개체를 사용 하 여 `GetFieldValue` `CDBVariant` 열의 데이터를 저장 합니다.
 
@@ -103,7 +104,7 @@ class CDBVariant
 
 **헤더:** afxdb
 
-## <a name="cdbvariantcdbvariant"></a><a name="cdbvariant"></a>CDBVariant:: CDBVariant
+## <a name="cdbvariantcdbvariant"></a><a name="cdbvariant"></a> CDBVariant:: CDBVariant
 
 NULL 개체를 만듭니다 `CDBVariant` .
 
@@ -115,7 +116,7 @@ CDBVariant();
 
 DBVT_NULL [m_dwType](#m_dwtype) 데이터 멤버를 설정 합니다.
 
-## <a name="cdbvariantclear"></a><a name="clear"></a>CDBVariant:: Clear
+## <a name="cdbvariantclear"></a><a name="clear"></a> CDBVariant:: Clear
 
 개체를 지우려면이 멤버 함수를 호출 `CDBVariant` 합니다.
 
@@ -129,7 +130,7 @@ void Clear();
 
 소멸자는를 `CDBVariant` 호출 `Clear` 합니다.
 
-## <a name="cdbvariantm_boolval"></a><a name="m_boolval"></a>CDBVariant:: m_boolVal
+## <a name="cdbvariantm_boolval"></a><a name="m_boolval"></a> CDBVariant:: m_boolVal
 
 BOOL 형식의 값을 저장 합니다.
 
@@ -137,7 +138,7 @@ BOOL 형식의 값을 저장 합니다.
 
 `m_boolVal`데이터 멤버가 공용 구조체에 속합니다. 액세스 하기 전에 `m_boolVal` 먼저 [Cdbvariant:: m_dwType](#m_dwtype)의 값을 확인 합니다. `m_dwType`가 DBVT_BOOL로 설정 된 경우에는 `m_boolVal` 유효한 값이 포함 됩니다. 그렇지 않으면에 액세스 하면 신뢰할 수 없는 `m_boolVal` 결과가 생성 됩니다.
 
-## <a name="cdbvariantm_chval"></a><a name="m_chval"></a>CDBVariant:: m_chVal
+## <a name="cdbvariantm_chval"></a><a name="m_chval"></a> CDBVariant:: m_chVal
 
 형식의 값을 저장 **`unsigned char`** 합니다.
 
@@ -145,7 +146,7 @@ BOOL 형식의 값을 저장 합니다.
 
 `m_chVal`데이터 멤버가 공용 구조체에 속합니다. 액세스 하기 전에 `m_chVal` 먼저 [Cdbvariant:: m_dwType](#m_dwtype)의 값을 확인 합니다. `m_dwType`가 DBVT_UCHAR로 설정 된 경우에는 `m_chVal` 유효한 값이 포함 되 고, 그렇지 않으면에 액세스 하면 신뢰할 수 없는 `m_chVal` 결과가 생성 됩니다.
 
-## <a name="cdbvariantm_dblval"></a><a name="m_dblval"></a>CDBVariant:: m_dblVal
+## <a name="cdbvariantm_dblval"></a><a name="m_dblval"></a> CDBVariant:: m_dblVal
 
 형식의 값을 저장 **`double`** 합니다.
 
@@ -153,7 +154,7 @@ BOOL 형식의 값을 저장 합니다.
 
 `m_dblVal`데이터 멤버가 공용 구조체에 속합니다. 액세스 하기 전에 `m_dblVal` 먼저 [Cdbvariant:: m_dwType](#m_dwtype)의 값을 확인 합니다. `m_dwType`가 DBVT_DOUBLE로 설정 된 경우에는 `m_dblVal` 유효한 값이 포함 되 고, 그렇지 않으면에 액세스 하면 신뢰할 수 없는 `m_dblVal` 결과가 생성 됩니다.
 
-## <a name="cdbvariantm_dwtype"></a><a name="m_dwtype"></a>CDBVariant:: m_dwType
+## <a name="cdbvariantm_dwtype"></a><a name="m_dwtype"></a> CDBVariant:: m_dwType
 
 이 데이터 멤버는 `CDBVariant` 개체의 union 데이터 멤버에 현재 저장 된 값의 데이터 형식을 포함 합니다.
 
@@ -176,7 +177,7 @@ BOOL 형식의 값을 저장 합니다.
 |DBVT_ASTRING|[m_pstringA](#m_pstringa)|
 |DBVT_WSTRING|[m_pstringW](#m_pstringw)|
 
-## <a name="cdbvariantm_fltval"></a><a name="m_fltval"></a>CDBVariant:: m_fltVal
+## <a name="cdbvariantm_fltval"></a><a name="m_fltval"></a> CDBVariant:: m_fltVal
 
 형식의 값을 저장 **`float`** 합니다.
 
@@ -184,7 +185,7 @@ BOOL 형식의 값을 저장 합니다.
 
 `m_fltVal`데이터 멤버가 공용 구조체에 속합니다. 액세스 하기 전에 `m_fltVal` 먼저 [Cdbvariant:: m_dwType](#m_dwtype)의 값을 확인 합니다. `m_dwType`가 DBVT_SINGLE로 설정 된 경우에는 `m_fltVal` 유효한 값이 포함 되 고, 그렇지 않으면에 액세스 하면 신뢰할 수 없는 `m_fltVal` 결과가 생성 됩니다.
 
-## <a name="cdbvariantm_ival"></a><a name="m_ival"></a>CDBVariant:: m_iVal
+## <a name="cdbvariantm_ival"></a><a name="m_ival"></a> CDBVariant:: m_iVal
 
 형식의 값을 저장 **`short`** 합니다.
 
@@ -192,7 +193,7 @@ BOOL 형식의 값을 저장 합니다.
 
 `m_iVal`데이터 멤버가 공용 구조체에 속합니다. 액세스 하기 전에 `m_iVal` 먼저 [Cdbvariant:: m_dwType](#m_dwtype)의 값을 확인 합니다. `m_dwType`가 DBVT_SHORT로 설정 된 경우에는 `m_iVal` 유효한 값이 포함 되 고, 그렇지 않으면에 액세스 하면 신뢰할 수 없는 `m_iVal` 결과가 생성 됩니다.
 
-## <a name="cdbvariantm_lval"></a><a name="m_lval"></a>CDBVariant:: m_lVal
+## <a name="cdbvariantm_lval"></a><a name="m_lval"></a> CDBVariant:: m_lVal
 
 형식의 값을 저장 **`long`** 합니다.
 
@@ -200,7 +201,7 @@ BOOL 형식의 값을 저장 합니다.
 
 `m_lVal`데이터 멤버가 공용 구조체에 속합니다. 액세스 하기 전에 `m_lVal` 먼저 [Cdbvariant:: m_dwType](#m_dwtype)의 값을 확인 합니다. `m_dwType`가 DBVT_LONG로 설정 된 경우에는 `m_lVal` 유효한 값이 포함 되 고, 그렇지 않으면에 액세스 하면 신뢰할 수 없는 `m_lVal` 결과가 생성 됩니다.
 
-## <a name="cdbvariantm_pbinary"></a><a name="m_pbinary"></a>CDBVariant:: m_pbinary
+## <a name="cdbvariantm_pbinary"></a><a name="m_pbinary"></a> CDBVariant:: m_pbinary
 
 [CLongBinary](../../mfc/reference/clongbinary-class.md)형식의 개체에 대 한 포인터를 저장 합니다.
 
@@ -208,7 +209,7 @@ BOOL 형식의 값을 저장 합니다.
 
 `m_pbinary`데이터 멤버가 공용 구조체에 속합니다. 액세스 하기 전에 `m_pbinary` 먼저 [Cdbvariant:: m_dwType](#m_dwtype)의 값을 확인 합니다. `m_dwType`가 DBVT_BINARY로 설정 된 경우에는 `m_pbinary` 유효한 포인터가 포함 되 고, 그렇지 않으면에 액세스 하면 신뢰할 수 없는 `m_pbinary` 결과가 생성 됩니다.
 
-## <a name="cdbvariantm_pdate"></a><a name="m_pdate"></a>CDBVariant:: m_pdate
+## <a name="cdbvariantm_pdate"></a><a name="m_pdate"></a> CDBVariant:: m_pdate
 
 TIMESTAMP_STRUCT 형식의 개체에 대 한 포인터를 저장 합니다.
 
@@ -218,7 +219,7 @@ TIMESTAMP_STRUCT 형식의 개체에 대 한 포인터를 저장 합니다.
 
 TIMESTAMP_STRUCT 데이터 형식에 대 한 자세한 내용은 Windows SDK의 *ODBC 프로그래머 참조* 에서 부록 D의 [C 데이터 형식](/sql/odbc/reference/appendixes/c-data-types) 항목을 참조 하세요.
 
-## <a name="cdbvariantm_pstring"></a><a name="m_pstring"></a>CDBVariant:: m_pstring
+## <a name="cdbvariantm_pstring"></a><a name="m_pstring"></a> CDBVariant:: m_pstring
 
 [CString](../../atl-mfc-shared/reference/cstringt-class.md)형식의 개체에 대 한 포인터를 저장 합니다.
 
@@ -226,7 +227,7 @@ TIMESTAMP_STRUCT 데이터 형식에 대 한 자세한 내용은 Windows SDK의 
 
 `m_pstring`데이터 멤버가 공용 구조체에 속합니다. 액세스 하기 전에 `m_pstring` 먼저 [Cdbvariant:: m_dwType](#m_dwtype)의 값을 확인 합니다. `m_dwType`가 DBVT_STRING로 설정 된 경우에는 `m_pstring` 유효한 포인터가 포함 되 고, 그렇지 않으면에 액세스 하면 신뢰할 수 없는 `m_pstring` 결과가 생성 됩니다.
 
-## <a name="cdbvariantm_pstringa"></a><a name="m_pstringa"></a>CDBVariant:: m_pstringA
+## <a name="cdbvariantm_pstringa"></a><a name="m_pstringa"></a> CDBVariant:: m_pstringA
 
 ASCII [CString](../../atl-mfc-shared/reference/cstringt-class.md) 개체에 대 한 포인터를 저장 합니다.
 
@@ -234,7 +235,7 @@ ASCII [CString](../../atl-mfc-shared/reference/cstringt-class.md) 개체에 대 
 
 `m_pstringA`데이터 멤버가 공용 구조체에 속합니다. 액세스 하기 전에 `m_pstringA` 먼저 [Cdbvariant:: m_dwType](#m_dwtype)의 값을 확인 합니다. `m_dwType`가 DBVT_ASTRING로 설정 된 경우에는 `m_pstringA` 유효한 포인터가 포함 되 고, 그렇지 않으면에 액세스 하면 신뢰할 수 없는 `m_pstringA` 결과가 생성 됩니다.
 
-## <a name="cdbvariantm_pstringw"></a><a name="m_pstringw"></a>CDBVariant:: m_pstringW
+## <a name="cdbvariantm_pstringw"></a><a name="m_pstringw"></a> CDBVariant:: m_pstringW
 
 와이드 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 개체에 대 한 포인터를 저장 합니다.
 

@@ -1,27 +1,28 @@
 ---
+description: '자세한 정보: 고급 공급자 기술'
 title: 고급 공급자 기술
 ms.date: 10/29/2018
 helpviewer_keywords:
 - OLE DB providers, using
 ms.assetid: 002a9731-7e06-49ac-be50-3cc26aa43759
-ms.openlocfilehash: e9a3a9b7cf9a7c7cadeec956a118737038807140
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: c81ca6221c0b7b1dd16e6d10e70aea390902edac
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80212320"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246034"
 ---
 # <a name="advanced-provider-techniques"></a>고급 공급자 기술
 
-고급 공급자 기술에 대한 자세한 내용은 다음 항목을 참조하세요.
+고급 공급자 기술에 대 한 자세한 내용은 다음 항목을 참조 하십시오.
 
-- [알림 지원](../../data/oledb/supporting-notifications.md)
+- [지원 알림](../../data/oledb/supporting-notifications.md)
 
 - [스키마 행 집합 지원](../../data/oledb/supporting-schema-rowsets.md)
 
-- [공급자의 책갈피 지원](../../data/oledb/provider-support-for-bookmarks.md)
+- [책갈피에 대 한 공급자 지원](../../data/oledb/provider-support-for-bookmarks.md)
 
-- [OLE DB 적합성 테스트 통과](../../data/oledb/passing-ole-db-conformance-tests.md)
+- [OLE DB 규칙 테스트 전달](../../data/oledb/passing-ole-db-conformance-tests.md)
 
 - [OLE DB 리소스 풀링 및 서비스](../../data/oledb/ole-db-resource-pooling-and-services.md)
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CDateTimeCtrl 클래스'
 title: CDateTimeCtrl 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -40,12 +41,12 @@ helpviewer_keywords:
 - CDateTimeCtrl [MFC], SetRange
 - CDateTimeCtrl [MFC], SetTime
 ms.assetid: 7113993b-5d37-4148-939f-500a190c5bdc
-ms.openlocfilehash: f04cce93aa6a86d11c2d9ec953992a0f90f635c5
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: cfed57d74e16f8433a5199ca912379b90a4f48cb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561949"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97247933"
 ---
 # <a name="cdatetimectrl-class"></a>CDateTimeCtrl 클래스
 
@@ -61,13 +62,13 @@ class CDateTimeCtrl : public CWnd
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CDateTimeCtrl:: CDateTimeCtrl](#cdatetimectrl)|`CDateTimeCtrl` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CDateTimeCtrl:: CloseMonthCal](#closemonthcal)|현재 날짜 및 시간 선택 컨트롤을 닫습니다.|
 |[CDateTimeCtrl:: Create](#create)|날짜 및 시간 선택 컨트롤을 만들고이를 개체에 연결 `CDateTimeCtrl` 합니다.|
@@ -130,7 +131,7 @@ void CloseMonthCal() const;
 
 ### <a name="example"></a>예제
 
-다음 코드 예제에서는 날짜 및 시간 선택 컨트롤에 프로그래밍 방식으로 액세스 하는 데 사용 되는 변수 *m_dateTimeCtrl*를 정의 합니다. 이 변수는 다음 예제에서 사용됩니다.
+다음 코드 예제에서는 날짜 및 시간 선택 컨트롤에 프로그래밍 방식으로 액세스 하는 데 사용 되는 변수 *m_dateTimeCtrl* 를 정의 합니다. 이 변수는 다음 예제에서 사용됩니다.
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_1.h)]
 
@@ -166,7 +167,7 @@ virtual BOOL Create(
 *nID*<br/>
 날짜 및 시간 선택 컨트롤의 컨트롤 ID를 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 생성에 성공 하면 0이 아닌 값입니다. 그렇지 않으면 0입니다.
 
@@ -197,7 +198,7 @@ BOOL GetDateTimePickerInfo(LPDATETIMEPICKERINFO pDateTimePickerInfo) const;
 *pDateTimePickerInfo*\
 제한이 현재 날짜 및 시간 선택 컨트롤에 대 한 설명을 수신 하는 [DATETIMEPICKERINFO](/windows/win32/api/commctrl/ns-commctrl-datetimepickerinfo) 구조체에 대 한 포인터입니다. 호출자는이 구조체를 할당 해야 합니다. 그러나이 메서드는 구조체의 *Cbsize* 멤버를 초기화 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -207,7 +208,7 @@ BOOL GetDateTimePickerInfo(LPDATETIMEPICKERINFO pDateTimePickerInfo) const;
 
 ### <a name="example"></a>예제
 
-다음 코드 예제에서는 날짜 및 시간 선택 컨트롤에 프로그래밍 방식으로 액세스 하는 데 사용 되는 변수 *m_dateTimeCtrl*를 정의 합니다. 이 변수는 다음 예제에서 사용됩니다.
+다음 코드 예제에서는 날짜 및 시간 선택 컨트롤에 프로그래밍 방식으로 액세스 하는 데 사용 되는 변수 *m_dateTimeCtrl* 를 정의 합니다. 이 변수는 다음 예제에서 사용됩니다.
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_1.h)]
 
@@ -230,7 +231,7 @@ COLORREF GetMonthCalColor(int iColor) const;
 *iColor*<br/>
 **`int`** 검색할 월 달력의 색 영역을 지정 하는 값입니다. 값 목록은 [Setmonthcalcolor](#setmonthcalcolor)에 대 한 *iColor* 매개 변수를 참조 하세요.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 month calendar 컨트롤의 지정 된 부분에 대 한 색 설정을 나타내는 COLORREF 값입니다. 실패 한 경우 함수는-1을 반환 합니다.
 
@@ -250,7 +251,7 @@ COLORREF GetMonthCalColor(int iColor) const;
 CMonthCalCtrl* GetMonthCalCtrl() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 [Cmonthcalctrl](../../mfc/reference/cmonthcalctrl-class.md) 개체에 대 한 포인터 또는 실패 한 경우 NULL 이거나 창이 표시 되지 않는 경우 NULL입니다.
 
@@ -270,7 +271,7 @@ CMonthCalCtrl* GetMonthCalCtrl() const;
 CFont* GetMonthCalFont() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 [Cfont](../../mfc/reference/cfont-class.md) 개체에 대 한 포인터 이거나, 실패 한 경우 NULL입니다.
 
@@ -286,7 +287,7 @@ CFont* GetMonthCalFont() const;
 DWORD GetMonthCalStyle() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 날짜 및 시간 선택 컨트롤 스타일의 비트 조합 (또는) 인 드롭다운 월 달력 컨트롤의 스타일입니다. 자세한 내용은 [Month Calendar 컨트롤 스타일](/windows/win32/Controls/month-calendar-control-styles)을 참조 하세요.
 
@@ -316,7 +317,7 @@ DWORD GetRange(
 *pMaxRange*<br/>
 개체 `COleDateTime` 또는 개체 `CTime` 에 허용 된 최근 시간을 포함 하는 개체에 대 한 포인터 `CDateTimeCtrl` 입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 설정 되는 범위를 나타내는 플래그를 포함 하는 DWORD 값입니다. 조건
 
@@ -354,7 +355,7 @@ DWORD GetTime(LPSYSTEMTIME pTimeDest) const;
 *pTimeDest*<br/>
 시스템 시간 정보를 수신 하는 [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) 구조체에 대 한 포인터입니다. NULL이 아니어야 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 첫 번째 버전에서는 시간이 개체에 성공적으로 기록 되 면 0이 아닌 `COleDateTime` 값이 고, 그렇지 않으면 0입니다. 두 번째 및 세 번째 버전에서 DWORD 값은 [NMDATETIMECHANGE](/windows/win32/api/commctrl/ns-commctrl-nmdatetimechange) 구조체에 설정 된 *dwflag* 멤버와 동일 합니다. 자세한 내용은 아래 **설명** 부분을 참조 하세요.
 
@@ -362,7 +363,7 @@ DWORD GetTime(LPSYSTEMTIME pTimeDest) const;
 
 이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [DTM_GETSYSTEMTIME](/windows/win32/Controls/dtm-getsystemtime)의 동작을 구현 합니다. 의 MFC 구현에서 `GetTime` `COleDateTime` 또는 `CTime` 클래스를 사용 하거나 구조체를 사용 `SYSTEMTIME` 하 여 시간 정보를 저장할 수 있습니다.
 
-위의 두 번째 및 세 번째 버전에서 반환 값 DWORD는 [NMDATETIMECHANGE](/windows/win32/api/commctrl/ns-commctrl-nmdatetimechange) Structure 멤버 *dwFlags*에 표시 된 대로 날짜 및 시간 선택 컨트롤이 "날짜 없음" 상태로 설정 되어 있는지 여부를 나타냅니다. 반환 된 값이 GDT_NONE와 같으면 컨트롤이 "날짜 없음" 상태로 설정 되 고 DTS_SHOWNONE 스타일이 사용 됩니다. 반환 된 값이 GDT_VALID와 같으면 시스템 시간이 대상 위치에 저장 됩니다.
+위의 두 번째 및 세 번째 버전에서 반환 값 DWORD는 [NMDATETIMECHANGE](/windows/win32/api/commctrl/ns-commctrl-nmdatetimechange) Structure 멤버 *dwFlags* 에 표시 된 대로 날짜 및 시간 선택 컨트롤이 "날짜 없음" 상태로 설정 되어 있는지 여부를 나타냅니다. 반환 된 값이 GDT_NONE와 같으면 컨트롤이 "날짜 없음" 상태로 설정 되 고 DTS_SHOWNONE 스타일이 사용 됩니다. 반환 된 값이 GDT_VALID와 같으면 시스템 시간이 대상 위치에 저장 됩니다.
 
 ### <a name="example"></a>예제
 
@@ -381,7 +382,7 @@ BOOL GetIdealSize(LPSIZE psize) const;
 *psize*\
 제한이 컨트롤의 이상적인 크기를 포함 하는 [크기](/windows/win32/api/windef/ns-windef-size) 구조체에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 반환 값은 항상 TRUE입니다.
 
@@ -391,7 +392,7 @@ BOOL GetIdealSize(LPSIZE psize) const;
 
 ### <a name="example"></a>예제
 
-다음 코드 예제에서는 날짜 및 시간 선택 컨트롤에 프로그래밍 방식으로 액세스 하는 데 사용 되는 변수 *m_dateTimeCtrl*를 정의 합니다. 이 변수는 다음 예제에서 사용됩니다.
+다음 코드 예제에서는 날짜 및 시간 선택 컨트롤에 프로그래밍 방식으로 액세스 하는 데 사용 되는 변수 *m_dateTimeCtrl* 를 정의 합니다. 이 변수는 다음 예제에서 사용됩니다.
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_1.h)]
 
@@ -414,7 +415,7 @@ BOOL SetFormat(LPCTSTR pstrFormat);
 *pstrFormat*<br/>
 원하는 표시를 정의 하는 0으로 끝나는 형식 문자열에 대 한 포인터입니다. 이 매개 변수를 NULL로 설정 하면 컨트롤이 현재 스타일의 기본 형식 문자열로 다시 설정 됩니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -456,7 +457,7 @@ COLORREF SetMonthCalColor(
 *ref*<br/>
 월 달력의 지정 된 영역에 대해 설정 되는 색을 나타내는 COLORREF 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 month calendar 컨트롤의 지정 된 부분에 대 한 이전 색 설정을 나타내는 COLORREF 값입니다. 그렇지 않으면-1이 반환 됩니다.
 
@@ -510,7 +511,7 @@ DWORD SetMonthCalStyle(DWORD dwStyle);
 *dwStyle*\
 진행 월 달력 컨트롤 스타일의 비트 조합 (또는) 인 새 month calendar 컨트롤 스타일입니다. 자세한 내용은 [Month Calendar 컨트롤 스타일](/windows/win32/Controls/month-calendar-control-styles)을 참조 하세요.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 드롭다운 월 달력 컨트롤의 이전 스타일입니다.
 
@@ -520,7 +521,7 @@ DWORD SetMonthCalStyle(DWORD dwStyle);
 
 ### <a name="example"></a>예제
 
-다음 코드 예제에서는 날짜 및 시간 선택 컨트롤에 프로그래밍 방식으로 액세스 하는 데 사용 되는 변수 *m_dateTimeCtrl*를 정의 합니다. 이 변수는 다음 예제에서 사용됩니다.
+다음 코드 예제에서는 날짜 및 시간 선택 컨트롤에 프로그래밍 방식으로 액세스 하는 데 사용 되는 변수 *m_dateTimeCtrl* 를 정의 합니다. 이 변수는 다음 예제에서 사용됩니다.
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_1.h)]
 
@@ -552,7 +553,7 @@ BOOL SetRange(
 *pMaxRange*<br/>
 개체 `COleDateTime` 또는 개체 `CTime` 에 허용 된 최근 시간을 포함 하는 개체에 대 한 포인터 `CDateTimeCtrl` 입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -582,7 +583,7 @@ BOOL SetTime(LPSYSTEMTIME pTimeNew = NULL);
 *Ptia*<br/>
 위의 두 번째 버전에서 컨트롤이 설정 될 시간을 포함 하는 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 개체에 대 한 포인터입니다. 위의 세 번째 버전에서 컨트롤이 설정 될 시간을 포함 하는 [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) 구조체에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 

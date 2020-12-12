@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 식 계산기 오류 CXX0046'
 title: 식 계산기 오류 CXX0046
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - CXX0046
 - CAN0046
 ms.assetid: a76e657b-c018-415b-b426-ce9e72eb645d
-ms.openlocfilehash: 2e63def8388a5cfdef195fb31911abafe83f9c09
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ebe501484e17f97c1103f52e6bba4208b9e219ed
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80184946"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97244578"
 ---
 # <a name="expression-evaluator-error-cxx0046"></a>식 계산기 오류 CXX0046
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: queue (STL/CLR)'
 title: queue(STL/CLR)
 ms.date: 11/04/2016
 ms.topic: reference
@@ -57,12 +58,12 @@ helpviewer_keywords:
 - to_array member [STL/CLR]
 - value_type member [STL/CLR]
 ms.assetid: 9ea7dec3-ea98-48ff-87d0-a5afc924aaf2
-ms.openlocfilehash: 2d5c1d30704838cdb69516d68d328c90a094a08e
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 1cbe30dff567c81840f2b78498b04648954399dc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502382"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97245878"
 ---
 # <a name="queue-stlclr"></a>queue(STL/CLR)
 
@@ -789,7 +790,7 @@ queue <Value, Container>% operator=(queue <Value, Container>% right);
 
 ### <a name="remarks"></a>설명
 
-멤버 연산자는 개체에 대해 *를 복사 하 고를 반환* **`*this`** 합니다. 이를 사용 하 여 제어 되는 시퀀스를 *오른쪽*에 있는 제어 되는 시퀀스의 복사본으로 바꿉니다.
+멤버 연산자는 개체에 대해 *를 복사 하 고를 반환* **`*this`** 합니다. 이를 사용 하 여 제어 되는 시퀀스를 *오른쪽* 에 있는 제어 되는 시퀀스의 복사본으로 바꿉니다.
 
 ### <a name="example"></a>예제
 
@@ -948,7 +949,7 @@ explicit queue(container_type% wrapped);
 
 `queue(queue<Value, Container>% right);`
 
-의 복사본 인 래핑된 컨테이너를 만듭니다 `right.get_container()` . 이를 사용 하 여 큐 개체 *오른쪽*에 의해 제어 되는 시퀀스의 복사본 인 초기 제어 되는 시퀀스를 지정 합니다.
+의 복사본 인 래핑된 컨테이너를 만듭니다 `right.get_container()` . 이를 사용 하 여 큐 개체 *오른쪽* 에 의해 제어 되는 시퀀스의 복사본 인 초기 제어 되는 시퀀스를 지정 합니다.
 
 생성자는 다음과 같습니다.
 
@@ -1222,7 +1223,7 @@ typedef Value value_type;
 
 ### <a name="remarks"></a>설명
 
-형식은 템플릿 매개 변수 *값*의 동의어입니다.
+형식은 템플릿 매개 변수 *값* 의 동의어입니다.
 
 ### <a name="example"></a>예제
 

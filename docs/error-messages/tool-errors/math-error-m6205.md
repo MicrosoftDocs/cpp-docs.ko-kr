@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 수학 오류 M6205'
 title: 수학 오류 M6205
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - M6205
 ms.assetid: fd28e7c9-a463-4a9c-a863-cc9e75315550
-ms.openlocfilehash: eb9c646329a4db224b853bea91e69576bee04be6
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 75bd824f8a76f96cbf88465fcdd2ffcf3bb66cda
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80173636"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97244279"
 ---
 # <a name="math-error-m6205"></a>수학 오류 M6205
 

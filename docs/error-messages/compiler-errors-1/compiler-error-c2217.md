@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2217'
 title: 컴파일러 오류 C2217
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2217
 ms.assetid: 1ce1e3f5-4171-4376-804d-967f7e612935
-ms.openlocfilehash: b033d95b127a45451a776cdc336ea7d2649d3716
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4cd67cb56cb988aa005725435f1829312ee57a31
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87209749"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97245540"
 ---
 # <a name="compiler-error-c2217"></a>컴파일러 오류 C2217
 

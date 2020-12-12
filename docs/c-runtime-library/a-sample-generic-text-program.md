@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 샘플 Generic-Text 프로그램'
 title: 샘플 일반 텍스트 프로그램
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - TCHAR type
 - TCHAR.H data types, mapping
 ms.assetid: a03de0db-8118-4bd9-a03f-640e8dfc5ed3
-ms.openlocfilehash: bc339bb11d0910eea2ef115a8f9013fa5c0270a7
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: 0c8b9e0d201cf4891f74e54a1f5ee929d864f6b4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57738103"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97242784"
 ---
 # <a name="a-sample-generic-text-program"></a>샘플 일반 텍스트 프로그램
 
@@ -97,7 +98,7 @@ int __cdecl main(int argc, char **argv, char **envp)
 }
 ```
 
-`_UNICODE`가 정의된 경우 GENTEXT.C는 프로그램의 다음 유니코드 버전에 매핑됩니다. `main` 대신 유니코드 프로그램의 `wmain`을 사용하는 방법에 대한 자세한 내용은 *C 언어 참조*의 [wmain 사용](../c-language/using-wmain.md)을 참조하세요.
+`_UNICODE`가 정의된 경우 GENTEXT.C는 프로그램의 다음 유니코드 버전에 매핑됩니다. `main` 대신 유니코드 프로그램의 `wmain`을 사용하는 방법에 대한 자세한 내용은 *C 언어 참조* 의 [wmain 사용](../c-language/using-wmain.md)을 참조하세요.
 
 ```C
 // crt_unicgtxt.c
@@ -174,10 +175,10 @@ int __cdecl main(int argc, char **argv, char **envp)
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [일반 텍스트 매핑](../c-runtime-library/generic-text-mappings.md)<br/>
 [데이터 형식 매핑](../c-runtime-library/data-type-mappings.md)<br/>
 [상수 및 전역 변수 매핑](../c-runtime-library/constant-and-global-variable-mappings.md)<br/>
 [루틴 매핑](../c-runtime-library/routine-mappings.md)<br/>
-[일반 텍스트 매핑 사용](../c-runtime-library/using-generic-text-mappings.md)
+[Generic-Text 매핑 사용](../c-runtime-library/using-generic-text-mappings.md)

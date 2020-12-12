@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 방법: 네이티브 컴파일에서 Override 지정자 선언 (c + +/CLI)'
 title: '방법: Override 지정자 선언 (c + +/CLI)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - override specifiers in native compilation, overriding
 ms.assetid: d0551836-9ac7-41eb-a6e9-a4b3ef60767d
-ms.openlocfilehash: 92bdc41cf9ebe2389f2d22dab211029899283266
-ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
+ms.openlocfilehash: 75e925e26dc62d87e40d56b05e3be6d2dbda3e4a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91414596"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246398"
 ---
 # <a name="how-to-declare-override-specifiers-in-native-compilations-ccli"></a>방법: 네이티브 컴파일에 override 지정자 선언(C++/CLI)
 
@@ -20,7 +21,7 @@ ms.locfileid: "91414596"
 
 ## <a name="example-sealed-is-valid"></a>예: sealed가 올바릅니다.
 
-### <a name="description"></a>Description
+### <a name="description"></a>설명
 
 다음 예제에서는 **`sealed`** 이 네이티브 컴파일에서 유효함을 보여 줍니다.
 
@@ -49,7 +50,7 @@ public:
 
 ## <a name="example-override-is-valid"></a>예: override가 올바릅니다.
 
-### <a name="description"></a>Description
+### <a name="description"></a>설명
 
 다음 예제에서는 `override` 가 네이티브 컴파일에서 유효함을 보여 줍니다.
 
@@ -71,7 +72,7 @@ public:
 
 ## <a name="example-abstract-is-valid"></a>예: abstract가 올바릅니다.
 
-### <a name="description"></a>Description
+### <a name="description"></a>설명
 
 이 예제에서는 **`abstract`** 가 네이티브 컴파일에서 유효함을 보여 줍니다.
 

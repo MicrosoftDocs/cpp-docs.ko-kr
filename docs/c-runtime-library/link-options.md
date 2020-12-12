@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 링크 옵션'
 title: 링크 옵션
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - threadlocale.obj
 - pnoarg.obj
 ms.assetid: 05b5a77b-9dd1-494b-ae46-314598c770bb
-ms.openlocfilehash: 146722fb0dd3a4fc774ede692808b1e6bfb1e5c7
-ms.sourcegitcommit: fe146adb3a02872538637196bb3c45aeeeaaf5c2
+ms.openlocfilehash: affb5d95af176ba49aa2aeafff5ac84653df2ad8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84506860"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246528"
 ---
 # <a name="link-options"></a>링크 옵션
 

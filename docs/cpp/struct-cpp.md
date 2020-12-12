@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 구조체 (c + +)'
 title: struct (C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - struct constructors
 ms.assetid: 3c6ba273-e248-4ff1-8c69-d2abcf1263c6
-ms.openlocfilehash: d0092cf107159f4c84b431f5eeae130df64dc835
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 4c7f8ab04bec2f161e303c3fed93414332fddeb6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91507457"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246255"
 ---
 # <a name="struct-c"></a>struct (C++)
 
@@ -38,7 +39,7 @@ ms.locfileid: "91507457"
 *ms decl-사양*<br/>
 선택적 스토리지 클래스 지정입니다. 자세한 내용은 [__declspec](../cpp/declspec.md) 키워드를 참조 하세요.
 
-*태그가*<br/>
+*태그*<br/>
 구조체에 지정된 형식 이름입니다. 태그는 구조체의 범위 내에서 예약어가 됩니다. 태그는 선택 사항입니다. 생략할 경우 익명 구조체가 정의됩니다. 자세한 내용은 [익명 클래스 형식](../cpp/anonymous-class-types.md)을 참조 하세요.
 
 *base-list*<br/>

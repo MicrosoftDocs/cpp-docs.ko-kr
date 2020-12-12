@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3162'
 title: 컴파일러 오류 C3162
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3162
 ms.assetid: 0d4c4a24-1456-4191-b7d8-c38cb7b17c32
-ms.openlocfilehash: 95cd2c4af614906da7ba2d1c4c5dd488059f970a
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: ca44b27607a34a469a5fd6fc1371e1510452247a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74761805"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97242316"
 ---
 # <a name="compiler-error-c3162"></a>컴파일러 오류 C3162
 

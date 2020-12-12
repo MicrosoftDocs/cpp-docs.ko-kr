@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3166'
 title: 컴파일러 오류 C3166
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3166
 ms.assetid: ec3e330d-c15d-4158-8268-09101486c566
-ms.openlocfilehash: 1915d58f73ce8d16135951b359c3f0fd48aea3ac
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c92883fec3fd68b969a6d357f8c3fab2f5a3aea1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230872"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97242290"
 ---
 # <a name="compiler-error-c3166"></a>컴파일러 오류 C3166
 

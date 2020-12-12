@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 식 계산기 오류 CXX0047'
 title: 식 계산기 오류 CXX0047
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - CAN0047
 - CXX0047
 ms.assetid: db23d0db-fce2-4d86-b391-6e1d6ad13fd4
-ms.openlocfilehash: 3b5a8ebaaac351833970b10336f4f71940082114
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 012a841860ae69ee50b4c7bd552dcbf3b8d2e5fb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80184907"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97244552"
 ---
 # <a name="expression-evaluator-error-cxx0047"></a>식 계산기 오류 CXX0047
 
