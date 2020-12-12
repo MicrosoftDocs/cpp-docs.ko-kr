@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CLinkCtrl 클래스'
 title: CLinkCtrl 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - CLinkCtrl [MFC], SetItemState
 - CLinkCtrl [MFC], SetItemUrl
 ms.assetid: d1cd876a-ecca-42db-8ac4-9cd327df0cd4
-ms.openlocfilehash: 80548015ff9f24127280ee94421c8fbda7a647ea
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: a9a106d7511757fac0abfd19194081729a7d4977
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561416"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97236760"
 ---
 # <a name="clinkctrl-class"></a>CLinkCtrl 클래스
 
@@ -55,13 +56,13 @@ class CLinkCtrl : public CWnd
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CLinkCtrl:: CLinkCtrl](#clinkctrl)|`CLinkCtrl` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CLinkCtrl:: Create](#create)|링크 컨트롤을 만들고이를 개체에 연결 `CLinkCtrl` 합니다.|
 |[CLinkCtrl:: CreateEx](#createex)|확장 스타일을 사용 하 여 링크 컨트롤을 만들고이를 `CLinkCtrl` 개체에 연결 합니다.|
@@ -142,7 +143,7 @@ virtual BOOL Create(DWORD dwStyle,
 *nID*<br/>
 링크 컨트롤의 ID를 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 초기화에 성공 하면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
@@ -204,7 +205,7 @@ virtual BOOL CreateEx(DWORD  dwExStyle,
 *nID*<br/>
 링크 컨트롤의 ID를 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 초기화에 성공 하면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
@@ -222,7 +223,7 @@ virtual BOOL CreateEx(DWORD  dwExStyle,
 int GetIdealHeight() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 컨트롤의 이상적인 높이 (픽셀)입니다.
 
@@ -246,9 +247,9 @@ int GetIdealSize(
 진행 링크의 최대 너비 (픽셀)입니다.
 
 *pSize*\
-제한이 Windows [크기](/windows/win32/api/windef/ns-windef-size) 구조체에 대 한 포인터입니다. 이 메서드가 반환 될 때 구조체의 *cy* 멤버는 `SIZE` *cxmaxwidth*로 지정 된 링크 텍스트 너비에 이상적인 링크 텍스트 높이를 포함 합니다. 구조체의 *cx* 멤버는 실제로 필요한 링크 텍스트 너비를 포함 합니다.
+제한이 Windows [크기](/windows/win32/api/windef/ns-windef-size) 구조체에 대 한 포인터입니다. 이 메서드가 반환 될 때 구조체의 *cy* 멤버는 `SIZE` *cxmaxwidth* 로 지정 된 링크 텍스트 너비에 이상적인 링크 텍스트 높이를 포함 합니다. 구조체의 *cx* 멤버는 실제로 필요한 링크 텍스트 너비를 포함 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 링크 텍스트의 기본 설정 높이 (픽셀)입니다. 반환 값은 구조체의 *cy* 멤버 값과 동일 합니다 `SIZE` .
 
@@ -271,7 +272,7 @@ BOOL GetItem(PLITEM pItem) const;
 *pItem*<br/>
 항목 정보를 받을 [litem](/windows/win32/api/commctrl/ns-commctrl-litem) 구조에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 TRUE를 반환 하 고 실패 하면 FALSE를 반환 합니다.
 
@@ -308,7 +309,7 @@ BOOL GetItemID(
 *cchID*<br/>
 *Szid* 버퍼의 문자 크기입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 TRUE를 반환 하 고 실패 하면 FALSE를 반환 합니다.
 
@@ -341,7 +342,7 @@ BOOL GetItemState(
 *stateMask*<br/>
 가져올 상태 항목을 설명 하는 플래그의 조합입니다. 값 목록은 `state` [litem](/windows/win32/api/commctrl/ns-commctrl-litem) 구조에서 멤버에 대 한 설명을 참조 하세요. 허용 되는 항목은에서 허용 하는 항목과 동일 `state` 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 TRUE를 반환 하 고 실패 하면 FALSE를 반환 합니다.
 
@@ -378,7 +379,7 @@ BOOL GetItemUrl(
 *cchUrl*<br/>
 *Szurl* 버퍼의 문자 크기입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 TRUE를 반환 하 고 실패 하면 FALSE를 반환 합니다.
 
@@ -402,7 +403,7 @@ BOOL HitTest(PLHITTESTINFO phti) const;
 *phti*<br/>
 `LHITTESTINFO`사용자가 클릭 한 링크에 대 한 정보를 포함 하는 구조체에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 TRUE를 반환 하 고 실패 하면 FALSE를 반환 합니다.
 
@@ -423,7 +424,7 @@ BOOL SetItem(PLITEM pItem);
 *pItem*<br/>
 설정할 정보를 포함 하는 [Litem](/windows/win32/api/commctrl/ns-commctrl-litem) 구조체에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 TRUE를 반환 하 고 실패 하면 FALSE를 반환 합니다.
 
@@ -449,7 +450,7 @@ BOOL SetItemID(
 *szID*<br/>
 지정 된 항목의 ID를 포함 하는 null로 끝나는 문자열입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 TRUE를 반환 하 고 실패 하면 FALSE를 반환 합니다.
 
@@ -479,7 +480,7 @@ BOOL SetItemState(
 *stateMask*<br/>
 설정 되는 상태 항목을 설명 하는 플래그의 조합입니다. 값 목록은 `state` [litem](/windows/win32/api/commctrl/ns-commctrl-litem) 구조에서 멤버에 대 한 설명을 참조 하세요. 허용 되는 항목은에서 허용 하는 항목과 동일 `state` 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 TRUE를 반환 하 고 실패 하면 FALSE를 반환 합니다.
 
@@ -505,7 +506,7 @@ BOOL SetItemUrl(
 *szUrl*<br/>
 지정 된 항목으로 표시 되는 URL을 포함 하는 null로 끝나는 문자열입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 TRUE를 반환 하 고 실패 하면 FALSE를 반환 합니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CKeyboardManager 클래스'
 title: CKeyboardManager 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - CKeyboardManager [MFC], TranslateCharToUpper
 - CKeyboardManager [MFC], UpdateAccelTable
 ms.assetid: 4809ece6-89df-4479-8b53-9bf476ee107b
-ms.openlocfilehash: e67bbb18b6a87edfaa4bc4c410ec28eb613ed51d
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9296c1d81cc2d915fe8ba84bfeedb64ae546fdd5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841495"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97236895"
 ---
 # <a name="ckeyboardmanager-class"></a>CKeyboardManager 클래스
 
@@ -136,7 +137,7 @@ static BOOL FindDefaultAccelerator(
 *uiCmd*<br/>
 진행 명령 ID입니다.
 
-*문자열*<br/>
+*str*<br/>
 [out] `CString` 개체에 대한 참조입니다.
 
 *pWndFrame*<br/>
@@ -185,7 +186,7 @@ static BOOL __stdcall IsKeyHandled(
 
 ### <a name="remarks"></a>설명
 
-입력 매개 변수는 *pWndFrame*에서 바로 가기 키가 처리 되는지 여부를 확인 하기 위해 *Nkey* 및 *fVirt* 에 대 한 액셀러레이터 키 테이블의 항목과 일치 해야 합니다.
+입력 매개 변수는 *pWndFrame* 에서 바로 가기 키가 처리 되는지 여부를 확인 하기 위해 *Nkey* 및 *fVirt* 에 대 한 액셀러레이터 키 테이블의 항목과 일치 해야 합니다.
 
 ## <a name="ckeyboardmanageriskeyprintable"></a><a name="iskeyprintable"></a> CKeyboardManager:: IsKeyPrintable
 

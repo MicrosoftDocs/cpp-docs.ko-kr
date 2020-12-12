@@ -1,17 +1,18 @@
 ---
+description: '자세한 정보: BSCMAKE 오류 및 경고 (BKxxxx)'
 title: BSCMAKE 오류 및 경고
 ms.date: 04/16/2019
 ms.assetid: 3767baa6-e639-472e-99fd-7543fd945cd3
-ms.openlocfilehash: e6abc334d9ecf5df54d200ab242c91a7035ab226
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: 8273782f82102c81cf7f7dd5e93b7e1ec6d1703e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64856361"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97237909"
 ---
 # <a name="bscmake-errors-and-warnings-bkxxxx"></a>BSCMAKE 오류 및 경고(BKxxxx)
 
-이 섹션에서는 오류에 대 한 참조 이며 BSCMAKE에서 생성 된 경고 도구를 빌드합니다. BSCMAKE 오류 및 경고에 폼 BK*xxxx*, 여기서 *xxxx* 는 4 자리 숫자입니다.
+이 섹션은 BSCMAKE 빌드 도구에서 생성 된 오류 및 경고에 대 한 참조입니다. BSCMAKE 오류 및 경고 형식은 BK *xxxx* 입니다. 여기서 *xxxx* 는 네 자리 숫자입니다.
 
 [!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
@@ -38,7 +39,7 @@ ms.locfileid: "64856361"
 [BSCMAKE 경고 BK4503](bscmake-warning-bk4503.md) \
 [BSCMAKE 경고 BK4504](bscmake-warning-bk4504.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[C /C++ 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md) \
+[C/c + + 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md) \
 [BSCMake 참조](../../build/reference/bscmake-reference.md)

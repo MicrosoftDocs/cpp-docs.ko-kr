@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: appdomain'
 title: appdomain
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,24 +8,24 @@ helpviewer_keywords:
 - appdomain __declspec keyword
 - __declspec keyword [C++], appdomain
 ms.assetid: 29d843cb-cb6b-4d1b-a48d-d928a877234d
-ms.openlocfilehash: 7ac74e8774204b316712a15975f7af3fb8835a9e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d817c71058c37b032e2ed6581de3a0fa8c169132
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80181488"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97239807"
 ---
 # <a name="appdomain"></a>appdomain
 
-관리되는 애플리케이션의 각 애플리케이션 도메인에 특정 전역 변수 또는 정적 멤버 변수의 자체 복사본이 포함되어야 하도록 지정합니다. 자세한 내용은 [응용 프로그램 도메인 C++ 및 시각적 개체를](../dotnet/application-domains-and-visual-cpp.md) 참조 하세요.
+관리되는 애플리케이션의 각 애플리케이션 도메인에 특정 전역 변수 또는 정적 멤버 변수의 자체 복사본이 포함되어야 하도록 지정합니다. 자세한 내용은 [응용 프로그램 도메인 및 Visual C++](../dotnet/application-domains-and-visual-cpp.md) 을 참조 하세요.
 
 모든 애플리케이션 도메인에는 appdomain별 변수의 자체 복사본이 있습니다. 어셈블리를 애플리케이션 도메인으로 로드하면 appdomain 변수의 생성자가 실행되고 애플리케이션 도메인을 언로드하면 소멸자가 실행됩니다.
 
-공용 언어 런타임에서 프로세스 내의 모든 애플리케이션 도메인이 전역 변수를 공유하도록 하려면 `__declspec(process)` 한정자를 사용합니다. `__declspec(process)`은 기본적으로 [/clr](../build/reference/clr-common-language-runtime-compilation.md)에서 적용 됩니다. **/Clr: pure** 및 **/clr: safe** 컴파일러 옵션은 visual studio 2015에서 더 이상 사용 되지 않으며 visual studio 2017에서는 지원 되지 않습니다.
+공용 언어 런타임에서 프로세스 내의 모든 애플리케이션 도메인이 전역 변수를 공유하도록 하려면 `__declspec(process)` 한정자를 사용합니다. `__declspec(process)` 는 기본적으로 [/clr](../build/reference/clr-common-language-runtime-compilation.md)에서 적용 됩니다. **/Clr: pure** 및 **/clr: safe** 컴파일러 옵션은 visual studio 2015에서 더 이상 사용 되지 않으며 visual studio 2017에서는 지원 되지 않습니다.
 
-`__declspec(appdomain)`는 **/clr** 컴파일러 옵션 중 하나를 사용 하는 경우에만 유효 합니다. 전역 변수, 정적 멤버 변수 또는 정적 로컬 변수만 `__declspec(appdomain)`로 표시할 수 있습니다. 관리되는 형식의 정적 멤버는 항상 이 동작을 수행하므로 `__declspec(appdomain)`를 적용하면 오류가 발생합니다.
+`__declspec(appdomain)` 는 **/clr** 컴파일러 옵션 중 하나를 사용 하는 경우에만 유효 합니다. 전역 변수, 정적 멤버 변수 또는 정적 로컬 변수만 `__declspec(appdomain)`로 표시할 수 있습니다. 관리되는 형식의 정적 멤버는 항상 이 동작을 수행하므로 `__declspec(appdomain)`를 적용하면 오류가 발생합니다.
 
-`__declspec(appdomain)` 사용은 [TLS (스레드 로컬 저장소)](../parallel/thread-local-storage-tls.md)를 사용 하는 것과 비슷합니다. 스레드에는 애플리케이션 도메인과 마찬가지로 자체 스토리지가 있습니다. `__declspec(appdomain)`를 사용하면 전역 변수가 이 애플리케이션용으로 작성된 각 애플리케이션 도메인에 자체 스토리지를 포함할 수 있습니다.
+를 사용 하 `__declspec(appdomain)` 는 것은 [TLS (스레드 로컬 저장소)](../parallel/thread-local-storage-tls.md)를 사용 하는 것과 비슷합니다. 스레드에는 애플리케이션 도메인과 마찬가지로 자체 스토리지가 있습니다. `__declspec(appdomain)`를 사용하면 전역 변수가 이 애플리케이션용으로 작성된 각 애플리케이션 도메인에 자체 스토리지를 포함할 수 있습니다.
 
 프로세스 및 appdomain 별 변수의 사용을 혼합 하는 데는 제한이 있습니다. 자세한 내용은 [프로세스](../cpp/process.md) 를 참조 하세요.
 

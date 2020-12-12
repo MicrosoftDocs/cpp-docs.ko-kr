@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 리소스 컴파일러 심각한 오류 RW1023'
 title: 리소스 컴파일러 심각한 오류 RW1023
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - RW1023
 ms.assetid: 1fe0964a-a8cc-4ffa-a427-dbce39f23173
-ms.openlocfilehash: 60ac821a6b0dd3841f9d26a4441d8e00f83ae2cc
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: bb3593574a837ca74ea88dcba9ac6487d7764593
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80182372"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97237220"
 ---
 # <a name="resource-compiler-fatal-error-rw1023"></a>리소스 컴파일러 심각한 오류 RW1023
 

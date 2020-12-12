@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: BSCMAKE 오류 BK1513'
 title: BSCMAKE 오류 BK1513
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BK1513
 ms.assetid: 9ba87c09-8d82-4c80-b0cf-a8de63dcf9da
-ms.openlocfilehash: 3a16163f33814be18a67833995362ee9b13d8118
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: bdf26e3268f98e5ab41ef27bbeaa3734a001671a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80197641"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97238091"
 ---
 # <a name="bscmake-error-bk1513"></a>BSCMAKE 오류 BK1513
 
@@ -27,4 +28,4 @@ BSCMAKE는 잘린 .sbr 파일로 .bsc 파일을 업데이트할 수는 있지만
 
 - .bsc 파일이 손상된 경우
 
-이 문제를 해결하려면 잘린.sbr 파일을 삭제하고 다시 빌드하거나 솔루션을 정리하고 다시 빌드합니다. IDE에서 **빌드**, **솔루션 정리**를 선택한 다음 **빌드**, **솔루션 다시**빌드를 차례로 선택 합니다.
+이 문제를 해결하려면 잘린.sbr 파일을 삭제하고 다시 빌드하거나 솔루션을 정리하고 다시 빌드합니다. IDE에서 **빌드**, **솔루션 정리** 를 선택한 다음 **빌드**, **솔루션 다시** 빌드를 차례로 선택 합니다.

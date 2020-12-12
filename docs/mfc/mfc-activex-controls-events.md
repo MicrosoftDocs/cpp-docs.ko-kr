@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: MFC ActiveX 컨트롤: 이벤트'
 title: 'MFC ActiveX 컨트롤: 이벤트'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - events [MFC], ActiveX controls
 - OLE events [MFC]
 ms.assetid: e1e57e0c-206b-4923-a0b5-682c26564f74
-ms.openlocfilehash: 129b805379fa68cb4f50ee1f8e3ac7d1b725d9ec
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 8a360931287432e9f0ee0fc55e7e5120bcbd390f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622332"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240691"
 ---
 # <a name="mfc-activex-controls-events"></a>MFC ActiveX 컨트롤: 이벤트
 

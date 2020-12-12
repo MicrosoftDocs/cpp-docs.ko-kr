@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: BSCMAKE 오류 BK1517'
 title: BSCMAKE 오류 BK1517
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BK1517
 ms.assetid: 24391f42-0a3e-40a9-9991-c8b9a6a7b1c7
-ms.openlocfilehash: 47c99d21828512c063703edf541c017843708da5
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3979519cf481b9072557ef6371690d07c6fbf9e2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80197525"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97237987"
 ---
 # <a name="bscmake-error-bk1517"></a>BSCMAKE 오류 BK1517
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: displaybind'
 title: displaybind (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - displaybind attribute
 ms.assetid: b3d70396-78e4-43d9-9583-16ddb8c9bb1f
-ms.openlocfilehash: e5c870aefbc73893b5bf14edec384a93fe0b057b
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 98411ec7f07c3145216c536db3e1c19ef7043429
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841664"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97236323"
 ---
 # <a name="displaybind"></a>displaybind
 
@@ -29,7 +30,7 @@ ms.locfileid: "88841664"
 
 ## <a name="example"></a>예제
 
-**Displaybind**를 사용 하는 방법에 대 한 예제는 [바인딩](bindable.md) 가능의 예제를 참조 하세요.
+**Displaybind** 를 사용 하는 방법에 대 한 예제는 [바인딩](bindable.md) 가능의 예제를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 

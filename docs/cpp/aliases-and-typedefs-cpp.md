@@ -1,19 +1,20 @@
 ---
+description: '자세히 알아보기: 별칭 및 형식 정의 (c + +)'
 title: 별칭 및 typedef(C++)
 ms.date: 11/04/2016
 f1_keywords:
 - typedef_cpp
 ms.assetid: af1c24d2-4bfd-408a-acfc-482e264232f5
-ms.openlocfilehash: 6054b7119614d9325bd099dd39b8aa1365d97ed7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7b5924fd30fe1d22e6a82fb82e2d252409d782ef
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227675"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97239859"
 ---
 # <a name="aliases-and-typedefs-c"></a>별칭 및 typedef(C++)
 
-*별칭 선언을* 사용 하 여 이전에 선언 된 형식에 대 한 동의어로 사용할 이름을 선언할 수 있습니다. 이 메커니즘을 비공식적 *형식 별칭*이 라고도 합니다. 이 메커니즘을 사용 하 여 사용자 지정 할당자에 특히 유용할 수 있는 *별칭 템플릿을*만들 수도 있습니다.
+*별칭 선언을* 사용 하 여 이전에 선언 된 형식에 대 한 동의어로 사용할 이름을 선언할 수 있습니다. 이 메커니즘을 비공식적 *형식 별칭* 이 라고도 합니다. 이 메커니즘을 사용 하 여 사용자 지정 할당자에 특히 유용할 수 있는 *별칭 템플릿을* 만들 수도 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -147,7 +148,7 @@ typedef 선언을 사용하여 언어에서 이미 정의된 형식이나 사용
 
 **`class`**,, **`struct`** **`union`** 및 선언과 달리 **`enum`** **`typedef`** 선언은 새 형식을 도입 하지 않으며 기존 형식에 대 한 새 이름을 도입 합니다.
 
-를 사용 하 여 선언 **`typedef`** 된 이름은 다른 식별자 (문 레이블 제외)와 동일한 네임 스페이스를 차지 합니다. 따라서 클래스 형식으로 선언된 경우를 제외하고 이전에 선언된 이름과 동일한 식별자를 사용할 수 없습니다. 다음과 같은 예제를 참조하세요.
+를 사용 하 여 선언 **`typedef`** 된 이름은 다른 식별자 (문 레이블 제외)와 동일한 네임 스페이스를 차지 합니다. 따라서 클래스 형식으로 선언된 경우를 제외하고 이전에 선언된 이름과 동일한 식별자를 사용할 수 없습니다. 다음 예제를 참조하세요.
 
 ```cpp
 // typedef_names1.cpp
@@ -183,7 +184,7 @@ void myproc( int )
 }
 ```
 
-typedef와 동일한 이름의 로컬 범위 식별자를 선언하거나 같은 범위 또는 내부 범위에서 구조체 또는 공용 구조체의 멤버를 선언할 때 반드시 형식 지정자를 지정해야 합니다. 예를 들면 다음과 같습니다.
+typedef와 동일한 이름의 로컬 범위 식별자를 선언하거나 같은 범위 또는 내부 범위에서 구조체 또는 공용 구조체의 멤버를 선언할 때 반드시 형식 지정자를 지정해야 합니다. 예를 들어:
 
 ```cpp
 typedef char FlagType;
@@ -212,7 +213,7 @@ int;  // Illegal declaration
 
 ### <a name="examples"></a>예제
 
-**`typedef`** 선언을 사용 하는 한 가지 방법은 선언을 더 균일 하 고 압축 하는 것입니다. 예를 들면 다음과 같습니다.
+**`typedef`** 선언을 사용 하는 한 가지 방법은 선언을 더 균일 하 고 압축 하는 것입니다. 예를 들어:
 
 ```cpp
 typedef char CHAR;          // Character type.
@@ -222,7 +223,7 @@ typedef unsigned long ulong;
 ulong ul;     // Equivalent to "unsigned long ul;"
 ```
 
-를 사용 하 여 **`typedef`** 동일한 선언에서 기본 및 파생 형식을 지정 하려면 선언 자를 쉼표로 구분 하면 됩니다. 예를 들면 다음과 같습니다.
+를 사용 하 여 **`typedef`** 동일한 선언에서 기본 및 파생 형식을 지정 하려면 선언 자를 쉼표로 구분 하면 됩니다. 예를 들어:
 
 ```cpp
 typedef char CHAR, *PSTR;
@@ -273,7 +274,7 @@ int main()
 
 ### <a name="re-declaration-of-typedefs"></a>typedef 다시 선언
 
-선언을 사용 하 여 동일한 **`typedef`** 형식을 참조 하는 동일한 이름을 다시 선언할 수 있습니다. 예를 들면 다음과 같습니다.
+선언을 사용 하 여 동일한 **`typedef`** 형식을 참조 하는 동일한 이름을 다시 선언할 수 있습니다. 예를 들어:
 
 ```cpp
 // FILE1.H

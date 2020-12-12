@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: BSCMAKE 오류 BK1515'
 title: BSCMAKE 오류 BK1515
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BK1515
 ms.assetid: 4cf2aedb-10c4-4ae8-abe6-c681fd4d617d
-ms.openlocfilehash: 1c0b9ddd5598e8928003aa8265e29dd1460a2421
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: be7022a84e6174e89aadb5ff3473a8cc2265c80e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80197576"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97238000"
 ---
 # <a name="bscmake-error-bk1515"></a>BSCMAKE 오류 BK1515
 

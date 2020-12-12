@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: inline_depth pragma'
 title: inline_depth pragma
 ms.date: 08/29/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - pragmas, inline_depth
 - inline_depth pragma
 ms.assetid: 2bba60fe-43ea-4d09-90f7-aafaba3bad07
-ms.openlocfilehash: 73540ec19c4ecc18a740dace0d23a37ad43182c0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 10ac7f5543108018eb7b51e8916dfed149363899
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219419"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97236401"
 ---
 # <a name="inline_depth-pragma"></a>inline_depth pragma
 
 인라인 추론 검색 깊이를 지정 합니다. 호출 그래프에서 지정 된 값 보다 큰 깊이의 함수는 인라인되지 않습니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **#pragma inline_depth (** [ *n* ] **)**
 

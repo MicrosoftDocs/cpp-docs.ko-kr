@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 리소스 컴파일러 심각한 오류 RW1025'
 title: 리소스 컴파일러 심각한 오류 RW1025
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - RW1025
 ms.assetid: 561a02af-e7e0-442a-8ad3-a00b2ca1b62e
-ms.openlocfilehash: 9b6697dff0a445cc342f30d08bd79822b02df7b8
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 40404f8d6dc16b73f93255a18ce8c632cc1e014a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80172727"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97237194"
 ---
 # <a name="resource-compiler-fatal-error-rw1025"></a>리소스 컴파일러 심각한 오류 RW1025
 

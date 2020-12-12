@@ -1,15 +1,16 @@
 ---
+description: '자세히 알아보기: 클래스 팩터리 및 라이선스'
 title: 클래스 팩터리 및 라이선스
 ms.date: 11/04/2016
 helpviewer_keywords:
 - class factories [MFC], and licensing
 ms.assetid: 53c4856a-4062-46db-9f69-dd4339f746b3
-ms.openlocfilehash: 939d7156a9bd7bf0778d2ab4a40acb2afe10cf6e
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 7470a5828df358a28db5a30832f98314e09a133e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845928"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97236843"
 ---
 # <a name="class-factories-and-licensing"></a>클래스 팩터리 및 라이선스
 
@@ -156,11 +157,11 @@ BOOL AFXAPI AfxVerifyLicFile(
 라이선스 파일의 시작 부분에 있는 시퀀스와 일치 해야 하는 바이트 시퀀스를 가리킵니다.
 
 *cch*<br/>
-*PszLicFileContents*의 문자 수입니다.
+*PszLicFileContents* 의 문자 수입니다.
 
 ### <a name="return-value"></a>반환 값
 
-라이선스 파일이 있고 *pszLicFileContents*에서 문자 시퀀스로 시작 하는 경우 0이 아닙니다. 그렇지 않으면 0입니다.
+라이선스 파일이 있고 *pszLicFileContents* 에서 문자 시퀀스로 시작 하는 경우 0이 아닙니다. 그렇지 않으면 0입니다.
 
 ### <a name="remarks"></a>설명
 

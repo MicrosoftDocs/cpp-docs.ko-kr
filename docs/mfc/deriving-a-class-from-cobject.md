@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CObject에서 클래스 파생'
 title: CObject에서 클래스 파생시키기
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - CObject class [MFC], deriving serializable classes
 - CObject class [MFC], deriving from
 ms.assetid: 5ea4ea41-08b5-4bd8-b247-c5de8c152a27
-ms.openlocfilehash: f4c01538877d8517cf3394d9e0108ce3a9df2900
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: c6c2ea75354d783b234bc3f7cac7a08dac4f05da
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84621934"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240704"
 ---
 # <a name="deriving-a-class-from-cobject"></a>CObject에서 클래스 파생시키기
 
@@ -40,13 +41,13 @@ ms.locfileid: "84621934"
 
 다음 표에서는 serialization 및 런타임 정보를 지 원하는 데 사용 되는 매크로 간의 관계를 보여 줍니다.
 
-### <a name="macros-used-for-serialization-and-run-time-information"></a>Serialization 및 런타임 정보에 사용 되는 매크로
+### <a name="macros-used-for-serialization-and-run-time-information"></a>Serialization 및 Run-Time 정보에 사용 되는 매크로
 
 |매크로 사용 됨|CObject:: IsKindOf|CRuntimeClass::<br /><br /> CreateObject|CArchive:: operator>><br /><br /> CArchive:: operator<<|
 |----------------|-----------------------|--------------------------------------|-------------------------------------------------------|
-|기본 `CObject` 기능|아니요|아니요|예|
-|`DECLARE_DYNAMIC`|예|아니요|예|
-|`DECLARE_DYNCREATE`|예|예|예|
+|기본 `CObject` 기능|아니요|아니요|아니요|
+|`DECLARE_DYNAMIC`|예|아니요|아니요|
+|`DECLARE_DYNCREATE`|예|예|아니요|
 |`DECLARE_SERIAL`|예|예|예|
 
 #### <a name="to-use-basic-cobject-functionality"></a>기본 CObject 기능을 사용 하려면

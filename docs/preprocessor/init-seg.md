@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: init_seg pragma'
 title: init_seg pragma
 ms.date: 08/29/2019
 f1_keywords:
@@ -9,22 +10,22 @@ helpviewer_keywords:
 - init_seg pragma
 - data segment initializing [C++]
 ms.assetid: 40a5898a-5c85-4aa9-8d73-3d967eb13610
-ms.openlocfilehash: 5e57ea0eedfc1df6e196391c5edd3acfbad0a7c7
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: cab1c82acd3e06a0ace4d55be3ce82e8fd7aed1c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70221010"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97236466"
 ---
 # <a name="init_seg-pragma"></a>init_seg pragma
 
-**C++컴퓨터별**
+**C++ 전용**
 
 시작 코드가 실행되는 순서에 영향을 주는 키워드 또는 코드 섹션을 지정합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
-> **#pragma init_seg (** { **컴파일러** | **lib** | **사용자** | "*섹션 이름*" [ **,** *func-name* ]} **)**
+> **#pragma init_seg (** { **컴파일러**  |  **lib**  |  **사용자** | "*섹션 이름*" [ **,** *func-name* ]} **)**
 
 ## <a name="remarks"></a>설명
 
@@ -32,19 +33,19 @@ ms.locfileid: "70221010"
 
 코드는 때때로 전역 정적 개체를 초기화 해야 하므로 개체를 생성할 시기를 지정 해야 합니다. 특히 Dll (동적 연결 라이브러리) 또는 초기화가 필요한 라이브러리에서 **init_seg** pragma를 사용 하는 것이 중요 합니다.
 
-**Init_seg** pragma에 대 한 옵션은 다음과 같습니다.
+**Init_seg** pragma의 옵션은 다음과 같습니다.
 
 **컴파일러나**\
 Microsoft C 런타임 라이브러리 초기화용으로 예약되어 있습니다. 이 그룹의 개체는 처음 생성됩니다.
 
 **lib**\
-타사 클래스 라이브러리 공급업체의 초기화에 사용할 수 있습니다. 이 그룹의 개체는 **컴파일러**로 표시 된 후 다른 모든 개체 보다 먼저 생성 됩니다.
+타사 클래스 라이브러리 공급업체의 초기화에 사용할 수 있습니다. 이 그룹의 개체는 **컴파일러** 로 표시 된 후 다른 모든 개체 보다 먼저 생성 됩니다.
 
 **정의**\
 모든 사용자가 사용할 수 있습니다. 이 그룹의 개체는 마지막에 생성됩니다.
 
 *섹션-이름*\
-초기화 섹션의 명시적 지정을 허용합니다. 사용자 지정 *섹션 이름* 에 있는 개체는 암시적으로 생성 되지 않습니다. 그러나 해당 주소는 *섹션 이름*으로 명명 된 섹션에 배치 됩니다.
+초기화 섹션의 명시적 지정을 허용합니다. 사용자 지정 *섹션 이름* 에 있는 개체는 암시적으로 생성 되지 않습니다. 그러나 해당 주소는 *섹션 이름* 으로 명명 된 섹션에 배치 됩니다.
 
 사용자가 지정 하는 *섹션 이름* 에는 해당 모듈에서 pragma 뒤에 선언 된 전역 개체를 구성 하는 도우미 함수에 대 한 포인터가 포함 됩니다.
 
@@ -63,13 +64,13 @@ C 런타임 라이브러리의 `atexit` 대신 해당 함수가 호출됩니다.
 
 `atexit` 대체 식별자에는 따옴표가 없습니다.
 
-개체는 다른 `XXX_seg` pragma에 정의 된 섹션에 계속 배치 됩니다.
+개체는 다른 pragma에 정의 된 섹션에 계속 배치 됩니다 `XXX_seg` .
 
 모듈에 선언 된 개체는 C 런타임에 의해 자동으로 초기화 되지 않습니다. 코드에서 초기화를 수행 해야 합니다.
 
-기본적으로 `init_seg` 섹션은 읽기 전용입니다. 섹션 이름이 `.CRT`이면 컴파일러가 읽기, 쓰기로 표시 된 경우에도 특성을 읽기 전용으로 자동 변경 합니다.
+기본적으로 `init_seg` 섹션은 읽기 전용입니다. 섹션 이름이 이면 `.CRT` 컴파일러가 읽기, 쓰기로 표시 된 경우에도 특성을 읽기 전용으로 자동 변경 합니다.
 
-변환 단위에서 **init_seg** 를 두 번 이상 지정할 수 없습니다.
+변환 단위에 **init_seg** 를 두 번 이상 지정할 수 없습니다.
 
 개체에 코드에서 명시적으로 정의 된 사용자 정의 생성자가 없는 경우에도 컴파일러에서 사용자 정의 생성자를 생성할 수 있습니다. 예를 들어 v-table 포인터를 바인딩하기 위해 하나를 만들 수 있습니다. 필요한 경우 코드에서 컴파일러에서 생성 된 생성자를 호출 합니다.
 
@@ -154,6 +155,6 @@ A()
 ~A()
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [Pragma 지시문 및 __pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

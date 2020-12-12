@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CList 클래스'
 title: CList 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -50,12 +51,12 @@ helpviewer_keywords:
 - CList [MFC], RemoveTail
 - CList [MFC], SetAt
 ms.assetid: 6f6273c3-c8f6-47f5-ac2a-0a950379ae5d
-ms.openlocfilehash: 7ba85445e3aba1df853d7d3666c92fdabdfa3970
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e216bda53c37c325ffb8aeb943d4cefb223ac1d1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87182878"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97236687"
 ---
 # <a name="clist-class"></a>CList 클래스
 
@@ -72,7 +73,7 @@ class CList : public CObject
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[CList:: CList](#clist)|순서가 지정 된 빈 목록을 생성 합니다.|
 
@@ -112,7 +113,7 @@ class CList : public CObject
 
 ## <a name="remarks"></a>설명
 
-`CList`목록은 이중 연결 목록 처럼 동작 합니다.
+`CList` 목록은 이중 연결 목록 처럼 동작 합니다.
 
 POSITION 형식의 변수는 목록의 키입니다. 위치 변수를 반복기로 사용 하 여 목록을 순차적으로 이동 하 고 책갈피를 사용 하 여 위치를 유지할 수 있습니다. 그러나 위치는 인덱스와 동일 하지 않습니다.
 
@@ -138,7 +139,7 @@ POSITION 형식의 변수는 목록의 키입니다. 위치 변수를 반복기�
 
 **헤더:** afxtempl.h
 
-## <a name="clistaddhead"></a><a name="addhead"></a>CList:: AddHead
+## <a name="clistaddhead"></a><a name="addhead"></a> CList:: AddHead
 
 이 목록의 맨 위에 새 요소나 요소 목록을 추가 합니다.
 
@@ -158,7 +159,7 @@ void AddHead(CList* pNewList);
 *pNewList*<br/>
 다른 목록에 대 한 포인터 `CList` 입니다. *Pnewlist* 의 요소가이 목록에 추가 됩니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 첫 번째 버전은 새로 삽입 된 요소의 위치 값을 반환 합니다.
 
@@ -170,7 +171,7 @@ void AddHead(CList* pNewList);
 
 [!code-cpp[NVC_MFCCollections#36](../../mfc/codesnippet/cpp/clist-class_2.cpp)]
 
-## <a name="clistaddtail"></a><a name="addtail"></a>CList:: AddTail
+## <a name="clistaddtail"></a><a name="addtail"></a> CList:: AddTail
 
 이 목록의 꼬리에 새 요소 또는 요소 목록을 추가 합니다.
 
@@ -190,7 +191,7 @@ void AddTail(CList* pNewList);
 *pNewList*<br/>
 다른 목록에 대 한 포인터 `CList` 입니다. *Pnewlist* 의 요소가이 목록에 추가 됩니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 첫 번째 버전은 새로 삽입 된 요소의 위치 값을 반환 합니다.
 
@@ -202,7 +203,7 @@ void AddTail(CList* pNewList);
 
 [!code-cpp[NVC_MFCCollections#37](../../mfc/codesnippet/cpp/clist-class_3.cpp)]
 
-## <a name="clistclist"></a><a name="clist"></a>CList:: CList
+## <a name="clistclist"></a><a name="clist"></a> CList:: CList
 
 순서가 지정 된 빈 목록을 생성 합니다.
 
@@ -223,9 +224,9 @@ CList(INT_PTR nBlockSize = 10);
 
 [!code-cpp[NVC_MFCCollections#38](../../mfc/codesnippet/cpp/clist-class_4.cpp)]
 
-## <a name="clistfind"></a><a name="find"></a>CList:: Find
+## <a name="clistfind"></a><a name="find"></a> CList:: Find
 
-목록을 순차적으로 검색 하 여 지정 된 *Searchvalue*와 일치 하는 첫 번째 요소를 찾습니다.
+목록을 순차적으로 검색 하 여 지정 된 *Searchvalue* 와 일치 하는 첫 번째 요소를 찾습니다.
 
 ```
 POSITION Find(
@@ -244,7 +245,7 @@ POSITION Find(
 *startAfter*<br/>
 검색의 시작 위치입니다. 값을 지정 하지 않으면 검색은 head 요소로 시작 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 반복 또는 개체 포인터 검색에 사용할 수 있는 위치 값입니다. 개체를 찾을 수 없는 경우 NULL입니다.
 
@@ -252,7 +253,7 @@ POSITION Find(
 
 [!code-cpp[NVC_MFCCollections#39](../../mfc/codesnippet/cpp/clist-class_5.cpp)]
 
-## <a name="clistfindindex"></a><a name="findindex"></a>CList:: FindIndex
+## <a name="clistfindindex"></a><a name="findindex"></a> CList:: FindIndex
 
 *N 인덱스* 값을 목록에 인덱스로 사용 합니다.
 
@@ -265,19 +266,19 @@ POSITION FindIndex(INT_PTR nIndex) const;
 *nIndex*<br/>
 찾을 목록 요소의 인덱스 (0부터 시작)입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 반복 또는 개체 포인터 검색에 사용할 수 있는 위치 값입니다. *Nindex* 가 음수 이거나 너무 클 경우 NULL입니다.
 
 ### <a name="remarks"></a>설명
 
-목록의 헤드에서 순차적 검색을 시작 하 고 *n*번째 요소에서 중지 합니다.
+목록의 헤드에서 순차적 검색을 시작 하 고 *n* 번째 요소에서 중지 합니다.
 
 ### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCCollections#40](../../mfc/codesnippet/cpp/clist-class_6.cpp)]
 
-## <a name="clistgetat"></a><a name="getat"></a>CList:: GetAt
+## <a name="clistgetat"></a><a name="getat"></a> CList:: GetAt
 
 지정 된 위치에 있는 목록 요소를 가져옵니다.
 
@@ -291,16 +292,16 @@ const TYPE& GetAt(POSITION position) const;
 *TYPE*<br/>
 목록에 있는 개체의 유형을 지정 하는 템플릿 매개 변수입니다.
 
-*놓을*<br/>
+*position*<br/>
 가져올 요소의 목록 내 위치입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 에 대 한 반환 값 설명을 참조 하십시오 `GetHead` .
 
 ### <a name="remarks"></a>설명
 
-`GetAt`지정 된 위치와 연결 된 요소 또는 요소에 대 한 참조를 반환 합니다. 인덱스와 동일 하지 않으며 위치 값에 직접 작업할 수 없습니다. POSITION 형식의 변수는 목록의 키입니다.
+`GetAt` 지정 된 위치와 연결 된 요소 또는 요소에 대 한 참조를 반환 합니다. 인덱스와 동일 하지 않으며 위치 값에 직접 작업할 수 없습니다. POSITION 형식의 변수는 목록의 키입니다.
 
 위치 값이 목록에서 올바른 위치를 나타내는지 확인 해야 합니다. 잘못 된 경우 MFC 라이브러리의 디버그 버전에서 어설션 합니다.
 
@@ -308,7 +309,7 @@ const TYPE& GetAt(POSITION position) const;
 
   [CList:: Gethe Adposition](#getheadposition)의 예제를 참조 하세요.
 
-## <a name="clistgetcount"></a><a name="getcount"></a>CList:: GetCount
+## <a name="clistgetcount"></a><a name="getcount"></a> CList:: GetCount
 
 이 목록에 있는 요소의 수를 가져옵니다.
 
@@ -316,7 +317,7 @@ const TYPE& GetAt(POSITION position) const;
 INT_PTR GetCount() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 요소 수를 포함 하는 정수 값입니다.
 
@@ -328,7 +329,7 @@ INT_PTR GetCount() const;
 
   [CList:: RemoveHead](#removehead)의 예제를 참조 하세요.
 
-## <a name="clistgethead"></a><a name="gethead"></a>CList:: GetHead
+## <a name="clistgethead"></a><a name="gethead"></a> CList:: GetHead
 
 이 목록의 head 요소 또는 head 요소에 대 한 참조를 가져옵니다.
 
@@ -343,7 +344,7 @@ TYPE& GetHead();
 *TYPE*<br/>
 목록에 있는 개체의 유형을 지정 하는 템플릿 매개 변수입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 목록이 인 경우 **`const`** 목록의 맨 `GetHead` 위에 있는 요소의 복사본을 반환 합니다. 이를 통해 함수는 대입문의 오른쪽 에서만 사용 되 고 수정 되지 않도록 보호할 수 있습니다.
 
@@ -357,7 +358,7 @@ TYPE& GetHead();
 
 [!code-cpp[NVC_MFCCollections#41](../../mfc/codesnippet/cpp/clist-class_7.cpp)]
 
-## <a name="clistgetheadposition"></a><a name="getheadposition"></a>CList:: Geadposition
+## <a name="clistgetheadposition"></a><a name="getheadposition"></a> CList:: Geadposition
 
 이 목록에 있는 head 요소의 위치를 가져옵니다.
 
@@ -365,7 +366,7 @@ TYPE& GetHead();
 POSITION GetHeadPosition() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 반복 또는 개체 포인터 검색에 사용할 수 있는 위치 값입니다. 목록이 비어 있으면 NULL입니다.
 
@@ -373,9 +374,9 @@ POSITION GetHeadPosition() const;
 
 [!code-cpp[NVC_MFCCollections#42](../../mfc/codesnippet/cpp/clist-class_8.cpp)]
 
-## <a name="clistgetnext"></a><a name="getnext"></a>CList:: GetNext
+## <a name="clistgetnext"></a><a name="getnext"></a> CList:: GetNext
 
-*Rposition*으로 식별 되는 목록 요소를 가져온 다음이 목록에 있는 다음 항목의 위치 값을 *rposition* 으로 설정 합니다.
+*Rposition* 으로 식별 되는 목록 요소를 가져온 다음이 목록에 있는 다음 항목의 위치 값을 *rposition* 으로 설정 합니다.
 
 ```
 TYPE& GetNext(POSITION& rPosition);
@@ -390,7 +391,7 @@ const TYPE& GetNext(POSITION& rPosition) const;
 *rPosition*<br/>
 이전 `GetNext` , [geadposition](#getheadposition)또는 기타 멤버 함수 호출에서 반환 된 위치 값에 대 한 참조입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 목록이 인 경우 **`const`** `GetNext` 목록 요소의 복사본을 반환 합니다. 이를 통해 함수는 대입문의 오른쪽 에서만 사용 되 고 수정 되지 않도록 보호할 수 있습니다.
 
@@ -408,7 +409,7 @@ const TYPE& GetNext(POSITION& rPosition) const;
 
 [!code-cpp[NVC_MFCCollections#43](../../mfc/codesnippet/cpp/clist-class_9.cpp)]
 
-## <a name="clistgetprev"></a><a name="getprev"></a>CList:: GetPrev
+## <a name="clistgetprev"></a><a name="getprev"></a> CList:: GetPrev
 
 로 식별 되는 목록 요소를 가져온 `rPosition` 다음 `rPosition` 를 목록에서 이전 항목의 위치 값으로 설정 합니다.
 
@@ -425,7 +426,7 @@ const TYPE& GetPrev(POSITION& rPosition) const;
 *rPosition*<br/>
 이전 또는 다른 멤버 함수 호출에서 반환 된 위치 값에 대 한 참조 `GetPrev` 입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 목록이 인 경우 **`const`** 목록의 맨 `GetPrev` 위에 있는 요소의 복사본을 반환 합니다. 이를 통해 함수는 대입문의 오른쪽 에서만 사용 되 고 수정 되지 않도록 보호할 수 있습니다.
 
@@ -443,7 +444,7 @@ const TYPE& GetPrev(POSITION& rPosition) const;
 
 [!code-cpp[NVC_MFCCollections#44](../../mfc/codesnippet/cpp/clist-class_10.cpp)]
 
-## <a name="clistgetsize"></a><a name="getsize"></a>CList:: GetSize
+## <a name="clistgetsize"></a><a name="getsize"></a> CList:: GetSize
 
 목록 요소의 수를 반환 합니다.
 
@@ -451,7 +452,7 @@ const TYPE& GetPrev(POSITION& rPosition) const;
 INT_PTR GetSize() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 목록에 있는 항목의 수입니다.
 
@@ -463,7 +464,7 @@ INT_PTR GetSize() const;
 
 [!code-cpp[NVC_MFCCollections#45](../../mfc/codesnippet/cpp/clist-class_11.cpp)]
 
-## <a name="clistgettail"></a><a name="gettail"></a>CList:: GetTail
+## <a name="clistgettail"></a><a name="gettail"></a> CList:: GetTail
 
 `CObject`이 목록의 꼬리 요소를 나타내는 포인터를 가져옵니다.
 
@@ -477,7 +478,7 @@ const TYPE& GetTail() const;
 *TYPE*<br/>
 목록에 있는 요소의 형식을 지정 하는 템플릿 매개 변수입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 [GetHead](../../mfc/reference/coblist-class.md#gethead)에 대 한 반환 값 설명을 참조 하세요.
 
@@ -489,7 +490,7 @@ const TYPE& GetTail() const;
 
 [!code-cpp[NVC_MFCCollections#46](../../mfc/codesnippet/cpp/clist-class_12.cpp)]
 
-## <a name="clistgettailposition"></a><a name="gettailposition"></a>CList:: GetTailPosition
+## <a name="clistgettailposition"></a><a name="gettailposition"></a> CList:: GetTailPosition
 
 이 목록에 있는 tail 요소의 위치를 가져옵니다. 목록이 비어 있으면 NULL입니다.
 
@@ -497,7 +498,7 @@ const TYPE& GetTail() const;
 POSITION GetTailPosition() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 반복 또는 개체 포인터 검색에 사용할 수 있는 위치 값입니다. 목록이 비어 있으면 NULL입니다.
 
@@ -505,7 +506,7 @@ POSITION GetTailPosition() const;
 
 [!code-cpp[NVC_MFCCollections#47](../../mfc/codesnippet/cpp/clist-class_13.cpp)]
 
-## <a name="clistinsertafter"></a><a name="insertafter"></a>CList:: InsertAfter
+## <a name="clistinsertafter"></a><a name="insertafter"></a> CList:: InsertAfter
 
 이 목록에서 지정 된 위치에 있는 요소 뒤에 요소를 추가 합니다.
 
@@ -515,7 +516,7 @@ POSITION InsertAfter(POSITION position, ARG_TYPE newElement);
 
 ### <a name="parameters"></a>매개 변수
 
-*놓을*<br/>
+*position*<br/>
 이전 `GetNext` , `GetPrev` 또는 멤버 함수 호출에서 반환 되는 위치 값 `Find` 입니다.
 
 *ARG_TYPE*<br/>
@@ -524,7 +525,7 @@ POSITION InsertAfter(POSITION position, ARG_TYPE newElement);
 *newElement*<br/>
 이 목록에 추가할 요소입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 반복 또는 목록 요소 검색에 사용할 수 있는 POSITION 값입니다.
 
@@ -532,7 +533,7 @@ POSITION InsertAfter(POSITION position, ARG_TYPE newElement);
 
 [!code-cpp[NVC_MFCCollections#48](../../mfc/codesnippet/cpp/clist-class_14.cpp)]
 
-## <a name="clistinsertbefore"></a><a name="insertbefore"></a>CList:: InsertBefore
+## <a name="clistinsertbefore"></a><a name="insertbefore"></a> CList:: InsertBefore
 
 이 목록에서 지정된 위치의 요소 앞에 요소를 추가합니다.
 
@@ -542,7 +543,7 @@ POSITION InsertBefore(POSITION position, ARG_TYPE newElement);
 
 ### <a name="parameters"></a>매개 변수
 
-*놓을*<br/>
+*position*<br/>
 이전 `GetNext` , `GetPrev` 또는 멤버 함수 호출에서 반환 되는 위치 값 `Find` 입니다.
 
 *ARG_TYPE*<br/>
@@ -551,7 +552,7 @@ POSITION InsertBefore(POSITION position, ARG_TYPE newElement);
 *newElement*<br/>
 이 목록에 추가할 요소입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 반복 또는 목록 요소 검색에 사용할 수 있는 POSITION 값입니다.
 
@@ -563,7 +564,7 @@ POSITION InsertBefore(POSITION position, ARG_TYPE newElement);
 
 [!code-cpp[NVC_MFCCollections#49](../../mfc/codesnippet/cpp/clist-class_15.cpp)]
 
-## <a name="clistisempty"></a><a name="isempty"></a>CList:: IsEmpty
+## <a name="clistisempty"></a><a name="isempty"></a> CList:: IsEmpty
 
 이 목록에 요소가 없는지 여부를 나타냅니다.
 
@@ -571,7 +572,7 @@ POSITION InsertBefore(POSITION position, ARG_TYPE newElement);
 BOOL IsEmpty() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 목록이 비어 있으면 0이 아닌 값입니다. 그렇지 않으면 0입니다.
 
@@ -579,7 +580,7 @@ BOOL IsEmpty() const;
 
 [!code-cpp[NVC_MFCCollections#50](../../mfc/codesnippet/cpp/clist-class_16.cpp)]
 
-## <a name="clistremoveall"></a><a name="removeall"></a>CList:: RemoveAll
+## <a name="clistremoveall"></a><a name="removeall"></a> CList:: RemoveAll
 
 이 목록에서 모든 요소를 제거 하 고 연결 된 메모리를 해제 합니다.
 
@@ -595,7 +596,7 @@ void RemoveAll();
 
 [!code-cpp[NVC_MFCCollections#51](../../mfc/codesnippet/cpp/clist-class_17.cpp)]
 
-## <a name="clistremoveat"></a><a name="removeat"></a>CList:: RemoveAt
+## <a name="clistremoveat"></a><a name="removeat"></a> CList:: RemoveAt
 
 이 목록에서 지정 된 요소를 제거 합니다.
 
@@ -605,7 +606,7 @@ void RemoveAt(POSITION position);
 
 ### <a name="parameters"></a>매개 변수
 
-*놓을*<br/>
+*position*<br/>
 목록에서 제거할 요소의 위치입니다.
 
 ### <a name="remarks"></a>설명
@@ -616,7 +617,7 @@ void RemoveAt(POSITION position);
 
 [!code-cpp[NVC_MFCCollections#52](../../mfc/codesnippet/cpp/clist-class_18.cpp)]
 
-## <a name="clistremovehead"></a><a name="removehead"></a>CList:: RemoveHead
+## <a name="clistremovehead"></a><a name="removehead"></a> CList:: RemoveHead
 
 목록의 맨 위에 있는 요소를 제거 하 고 해당 요소에 대 한 포인터를 반환 합니다.
 
@@ -629,7 +630,7 @@ TYPE RemoveHead();
 *TYPE*<br/>
 목록에 있는 요소의 형식을 지정 하는 템플릿 매개 변수입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 목록의 맨 앞에 있는 요소입니다.
 
@@ -641,7 +642,7 @@ TYPE RemoveHead();
 
 [!code-cpp[NVC_MFCCollections#53](../../mfc/codesnippet/cpp/clist-class_19.cpp)]
 
-## <a name="clistremovetail"></a><a name="removetail"></a>CList:: RemoveTail
+## <a name="clistremovetail"></a><a name="removetail"></a> CList:: RemoveTail
 
 목록의 끝에서 요소를 제거 하 고 해당 요소에 대 한 포인터를 반환 합니다.
 
@@ -654,7 +655,7 @@ TYPE RemoveTail();
 *TYPE*<br/>
 목록에 있는 요소의 형식을 지정 하는 템플릿 매개 변수입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 목록의 끝에 있는 요소입니다.
 
@@ -666,7 +667,7 @@ TYPE RemoveTail();
 
 [!code-cpp[NVC_MFCCollections#54](../../mfc/codesnippet/cpp/clist-class_20.cpp)]
 
-## <a name="clistsetat"></a><a name="setat"></a>CList:: SetAt
+## <a name="clistsetat"></a><a name="setat"></a> CList:: SetAt
 
 POSITION 형식의 변수는 목록의 키입니다.
 
@@ -687,7 +688,7 @@ void SetAt(POSITION pos, ARG_TYPE newElement);
 
 ### <a name="remarks"></a>설명
 
-인덱스와 동일 하지 않으며 위치 값에 직접 작업할 수 없습니다. `SetAt`목록의 지정 된 위치에 요소를 씁니다.
+인덱스와 동일 하지 않으며 위치 값에 직접 작업할 수 없습니다. `SetAt` 목록의 지정 된 위치에 요소를 씁니다.
 
 위치 값이 목록에서 올바른 위치를 나타내는지 확인 해야 합니다. 잘못 된 경우 MFC 라이브러리의 디버그 버전에서 어설션 합니다.
 
