@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: ATL 대화 상자 추가'
 title: ATL 대화 상자 추가
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - MFC dialog boxes, ATL dialogs
 - dialog boxes, ATL
 ms.assetid: 152a378f-7b24-4f66-aeba-c740973f03a6
-ms.openlocfilehash: 71290cf0763ac6594985acc4cb11562efe7028e6
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 9d4abcafd5e12c6b8cffd636bf28a9e79f96e5ce
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91499368"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165721"
 ---
 # <a name="adding-an-atl-dialog-box"></a>ATL 대화 상자 추가
 
@@ -26,9 +27,9 @@ Atl 대화 상자를 프로젝트에 추가 하려면 프로젝트는 atl 프로
 
 1. [Atl 프로젝트 마법사](../../atl/reference/atl-project-wizard.md)를 사용 하 여 atl 프로젝트를 만듭니다.
 
-1. [클래스 뷰](/visualstudio/ide/viewing-the-structure-of-code)에서 프로젝트 이름을 마우스 오른쪽 단추로 클릭 하 고 바로 가기 메뉴에서 **추가** 를 클릭 합니다. **클래스 추가**를 클릭합니다.
+1. [클래스 뷰](/visualstudio/ide/viewing-the-structure-of-code)에서 프로젝트 이름을 마우스 오른쪽 단추로 클릭 하 고 바로 가기 메뉴에서 **추가** 를 클릭 합니다. **클래스 추가** 를 클릭합니다.
 
-1. [클래스 추가](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) 대화 상자의 **템플릿** 창에서 **ATL 대화**상자를 클릭 합니다. **열기** 를 클릭 하 여 [ATL 대화 상자 마법사](../../atl/reference/atl-dialog-wizard.md)를 표시 합니다.
+1. [클래스 추가](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) 대화 상자의 **템플릿** 창에서 **ATL 대화** 상자를 클릭 합니다. **열기** 를 클릭 하 여 [ATL 대화 상자 마법사](../../atl/reference/atl-dialog-wizard.md)를 표시 합니다.
 
 자세한 내용은 [대화 상자 구현](../../atl/implementing-a-dialog-box.md)을 참조 하세요.
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: ATL OLE DB 공급자 추가'
 title: ATL OLE DB 공급자 추가
 ms.date: 05/09/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - ATL projects, adding ATL OLE DB providers
 - ATL OLE DB providers
 ms.assetid: 26fba1e3-880f-4bc6-90e5-2096a48a3a6c
-ms.openlocfilehash: e593fdbd1c8c48a381cb2941971ebe4e0148965d
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: e60150e2d8dc57e16a55c75556d109583a95f054
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92923780"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165669"
 ---
 # <a name="adding-an-atl-ole-db-provider"></a>ATL OLE DB 공급자 추가
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2387'
 title: 컴파일러 오류 C2387
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2387
 ms.assetid: 6847b8e1-ffac-458d-ab88-0c92f72f2527
-ms.openlocfilehash: a884099c7407113d7ef7604f4eec28e0fa86d87e
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 70c876c999ec7d40b93ac94ffe111d105981ceeb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74745102"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97124009"
 ---
 # <a name="compiler-error-c2387"></a>컴파일러 오류 C2387
 

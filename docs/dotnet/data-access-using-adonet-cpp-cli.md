@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: ADO.NET를 사용 하 여 데이터 액세스 (c + +/CLI)'
 title: ADO.NET을 사용하여 데이터 액세스(C++/CLI)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - SAFEARRAY, marshaling
 - ADO.NET [C++], marshaling SAFEARRAY types
 ms.assetid: b0cd987d-1ea7-4f76-ba01-cbd52503d06d
-ms.openlocfilehash: 3f3980c98890382e77d9d89db2944bebf7b12319
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 93af8a8a2dc4ebc8d9fe6073b9f3a70f4868bee8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211062"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97124269"
 ---
 # <a name="data-access-using-adonet-ccli"></a>ADO.NET을 사용하여 데이터 액세스(C++/CLI)
 
@@ -35,7 +36,7 @@ ADO.NET은 데이터 액세스를 위한 .NET Framework API 이며 이전 데이
 
 ADO.NET은 CLR (공용 언어 런타임)에서 실행 됩니다. 따라서 ADO.NET와 상호 작용 하는 모든 응용 프로그램은 CLR도 대상으로 해야 합니다. 그러나 네이티브 응용 프로그램이 ADO.NET를 사용할 수 없다는 의미는 아닙니다. 이 예제에서는 네이티브 코드에서 ADO.NET 데이터베이스와 상호 작용 하는 방법을 보여 줍니다.
 
-## <a name="marshal-ansi-strings-for-adonet"></a><a name="marshal_ansi"></a>ADO.NET에 대 한 ANSI 문자열 마샬링
+## <a name="marshal-ansi-strings-for-adonet"></a><a name="marshal_ansi"></a> ADO.NET에 대 한 ANSI 문자열 마샬링
 
 네이티브 문자열 ()을 데이터베이스에 추가 하는 방법과를 `char *` <xref:System.String?displayProperty=fullName> 데이터베이스에서 네이티브 문자열로 마샬링하는 방법을 보여 줍니다.
 
@@ -161,7 +162,7 @@ StringCol: This is string 2.
     cl /clr /FU System.dll /FU System.Data.dll /FU System.Xml.dll adonet_marshal_string_native.cpp
     ```
 
-## <a name="marshal-bstr-strings-for-adonet"></a><a name="marshal_bstr"></a>ADO.NET에 대 한 BSTR 문자열 마샬링
+## <a name="marshal-bstr-strings-for-adonet"></a><a name="marshal_bstr"></a> ADO.NET에 대 한 BSTR 문자열 마샬링
 
 데이터베이스에 COM 문자열 ()을 추가 하는 방법과를 `BSTR` 데이터베이스에서로 마샬링하는 방법을 보여 줍니다 <xref:System.String?displayProperty=fullName> `BSTR` .
 
@@ -295,7 +296,7 @@ StringCol: This is string 2.
     cl /clr /FU System.dll /FU System.Data.dll /FU System.Xml.dll adonet_marshal_string_native.cpp
     ```
 
-## <a name="marshal-unicode-strings-for-adonet"></a><a name="marshal_unicode"></a>ADO.NET에 대 한 유니코드 문자열 마샬링
+## <a name="marshal-unicode-strings-for-adonet"></a><a name="marshal_unicode"></a> ADO.NET에 대 한 유니코드 문자열 마샬링
 
 네이티브 유니코드 문자열 ()을 데이터베이스에 추가 하는 방법과를 `wchar_t *` <xref:System.String?displayProperty=fullName> 데이터베이스에서 네이티브 유니코드 문자열로 마샬링하는 방법을 보여 줍니다.
 
@@ -421,7 +422,7 @@ StringCol: This is string 2.
     cl /clr /FU System.dll /FU System.Data.dll /FU System.Xml.dll adonet_marshal_string_wide.cpp
     ```
 
-## <a name="marshal-a-variant-for-adonet"></a><a name="marshal_variant"></a>ADO.NET에 대 한 변형 마샬링
+## <a name="marshal-a-variant-for-adonet"></a><a name="marshal_variant"></a> ADO.NET에 대 한 변형 마샬링
 
 데이터베이스에 네이티브를 추가 하는 방법과를 `VARIANT` <xref:System.Object?displayProperty=fullName> 데이터베이스에서 네이티브로 마샬링하는 방법을 보여 줍니다 `VARIANT` .
 
@@ -562,7 +563,7 @@ ObjectCol: 42
     cl /clr /FU System.dll /FU System.Data.dll /FU System.Xml.dll adonet_marshal_variant.cpp
     ```
 
-## <a name="marshal-a-safearray-for-adonet"></a><a name="marshal_safearray"></a>ADO.NET에 대 한 SAFEARRAY 마샬링
+## <a name="marshal-a-safearray-for-adonet"></a><a name="marshal_safearray"></a> ADO.NET에 대 한 SAFEARRAY 마샬링
 
 데이터베이스에 네이티브를 추가 하는 방법과 `SAFEARRAY` 데이터베이스에서 네이티브로 관리 되는 배열을 마샬링하는 방법을 보여 줍니다 `SAFEARRAY` .
 

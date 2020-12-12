@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2287'
 title: 컴파일러 오류 C2287
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2287
 ms.assetid: 64556299-4e1f-4437-88b7-2464fc0b95bb
-ms.openlocfilehash: 234d0e85d0d6772340797fb6880e0ef79d4191ef
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 00a99ee553b4afc86a49ce80c61f2733c70b716f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74759141"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97124048"
 ---
 # <a name="compiler-error-c2287"></a>컴파일러 오류 C2287
 

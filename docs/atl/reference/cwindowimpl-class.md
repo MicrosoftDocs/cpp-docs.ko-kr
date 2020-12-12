@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CWindowImpl 클래스'
 title: CWindowImpl 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - CWindowImpl class
 - subclassing windows, ATL
 ms.assetid: 02eefd45-a0a6-4d1b-99f6-dbf627e2cc2f
-ms.openlocfilehash: 56b503dfcfbe4fae215f61081446bd3a5070af3c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: c0736f0c963016fe5f65982c90903bfdce7c382e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835534"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97140116"
 ---
 # <a name="cwindowimpl-class"></a>CWindowImpl 클래스
 
@@ -102,7 +103,7 @@ class ATL_NO_VTABLE CWindowImpl : public CWindowImplBaseT<TBase, TWinTraits>
 
 기본 클래스 소멸자 (~ `CWindowImplRoot` )는 개체가 제거 되기 전에 창이 사라졌는지 확인 합니다.
 
-`CWindowImpl`에서 파생 되는에서 파생 되는에서 파생 `CWindowImplBaseT` `CWindowImplRoot` `TBase` 됩니다 [CMessageMap](../../atl/reference/cmessagemap-class.md).
+`CWindowImpl`에서 파생 되는에서 파생 되는에서 파생 `CWindowImplBaseT` `CWindowImplRoot` `TBase` 됩니다 [](../../atl/reference/cmessagemap-class.md).
 
 |항목|참조 항목|
 |--------------------------------|---------|
@@ -159,7 +160,7 @@ HWND Create(
 진행 확장 창 스타일입니다. 이 값은 창의 특성 클래스에서 제공 하는 스타일과 결합 됩니다. 기본값은 특성 클래스에 스타일에 대 한 모든 권한을 부여 합니다. 가능한 값 목록은 Windows SDK의 [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) 를 참조 하세요.
 
 *MenuOrID*<br/>
-진행 자식 창의 경우 창 식별자입니다. 최상위 창의 경우 창의 메뉴 핸들입니다. 기본값은 **0u**입니다.
+진행 자식 창의 경우 창 식별자입니다. 최상위 창의 경우 창의 메뉴 핸들입니다. 기본값은 **0u** 입니다.
 
 *lpCreateParam*<br/>
 진행 창 생성 데이터에 대 한 포인터입니다. 전체 설명은 [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw)에 대 한 final 매개 변수에 대 한 설명을 참조 하세요.

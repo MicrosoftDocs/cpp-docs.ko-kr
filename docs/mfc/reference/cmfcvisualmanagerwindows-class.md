@@ -1,5 +1,6 @@
 ---
-title: CMFC비주얼매니저윈도우 클래스
+description: '자세한 정보: CMFCVisualManagerWindows 클래스'
+title: CMFCVisualManagerWindows 클래스
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCVisualManagerWindows
@@ -140,18 +141,18 @@ helpviewer_keywords:
 - CMFCVisualManagerWindows [MFC], SetOfficeStyleMenus
 - CMFCVisualManagerWindows [MFC], m_b3DTabsXPTheme
 ms.assetid: 568b6e9e-8e67-4477-9a3d-2981cbd09861
-ms.openlocfilehash: 05b4d6129f5c398df7f3e1efc249cf51c2326914
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: b3b4a73b5e5a0e7b2d8280af2925a9268785d53d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81752829"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97143392"
 ---
-# <a name="cmfcvisualmanagerwindows-class"></a>CMFC비주얼매니저윈도우 클래스
+# <a name="cmfcvisualmanagerwindows-class"></a>CMFCVisualManagerWindows 클래스
 
-`CMFCVisualManagerWindows`사용자가 윈도우 XP 또는 비스타 테마를 선택할 때 마이크로 소프트 윈도우 XP 또는 마이크로 소프트 비스타의 모양을 모방.
+`CMFCVisualManagerWindows` 사용자가 Windows XP 또는 Vista 테마를 선택할 경우 Microsoft Windows XP 또는 Microsoft Vista의 모양을 모방 합니다.
 
-자세한 내용은 Visual Studio 설치의 **\\VC\\atlmfc\\src mfc** 폴더에 있는 소스 코드를 참조하십시오.
+자세한 내용은 Visual Studio 설치의 **VC \\ s\mfc \\ src \\ mfc** 폴더에 있는 소스 코드를 참조 하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -163,96 +164,96 @@ class CMFCVisualManagerWindows : public CMFCVisualManagerOfficeXP
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
 |`CMFCVisualManagerWindows::CMFCVisualManagerWindows`|기본 생성자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[CMFC비주얼매니저윈도우:항상하이라이트3DTabs](#alwayshighlight3dtabs)|프레임워크는 이 메서드를 호출하여 응용 프로그램에서 항상 3D 탭을 강조 표시해야 하는지 여부를 결정합니다. [(CMFC비주얼매니저 재정의:항상하이라이트3DTabs.)](../../mfc/reference/cmfcvisualmanager-class.md#alwayshighlight3dtabs)|
-|[CMFC비주얼매니저윈도우::D로콤보보보보보더윈XP](#drawcomboborderwinxp)|( `CMFCVisualManager::DrawComboBorderWinXP`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::D로컴보드롭버튼윈XP](#drawcombodropbuttonwinxp)|[(재정의 CMFC비주얼매니저::DrawComboDropButtonWinXP](../../mfc/reference/cmfcvisualmanager-class.md#drawcombodropbuttonwinxp).)|
-|[CMFC비주얼매니저윈도우::D로푸시버튼윈XP](#drawpushbuttonwinxp)|[(재정의 CMFC비주얼매니저::Draw푸시버튼윈XP](../../mfc/reference/cmfcvisualmanager-class.md#drawpushbuttonwinxp).)|
-|[CMFC비주얼매니저윈도우::겟버튼엑스트라보더](#getbuttonextraborder)|프레임워크는 도구 모음 단추를 그릴 때 이 메서드를 호출합니다. [(재정의 CMFC비주얼 매니저::GetButton엑스트라 보더 .)](../../mfc/reference/cmfcvisualmanager-class.md#getbuttonextraborder)|
-|[CMFC비주얼매니저윈도우::겟캡션버튼엑스트라보더](#getcaptionbuttonextraborder)|[(재정의 CMFC비주얼 매니저::GetCaptionButton엑스트라 보더 .)](../../mfc/reference/cmfcvisualmanager-class.md#getcaptionbuttonextraborder)|
-|[CMFC비주얼매니저윈도우::겟도킹파네캡션엑스트라하이트](#getdockingpanecaptionextraheight)|( `CMFCVisualManager::GetDockingPaneCaptionExtraHeight`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::겟하이라이트메뉴항목텍스트컬러](#gethighlightedmenuitemtextcolor)|( `CMFCVisualManagerOfficeXP::GetHighlightedMenuItemTextColor`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::겟팝메뉴갭](#getpopupmenugap)|( `CMFCVisualManagerOfficeXP::GetPopupMenuGap`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::겟툴바버튼텍스트컬러](#gettoolbarbuttontextcolor)|( `CMFCVisualManagerOfficeXP::GetToolbarButtonTextColor`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::디폴디지윈XP팝업버튼](#isdefaultwinxppopupbutton)|[(CMFC비주얼매니저 재정의::IsDefaultWinXPPopupButton](../../mfc/reference/cmfcvisualmanager-class.md#isdefaultwinxppopupbutton).)|
-|[CMFC비주얼매니저윈도우:이스하이라이트전체메뉴아이템](#ishighlightwholemenuitem)|( `CMFCVisualManagerOfficeXP::IsHighlightWholeMenuItem`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::이오피스스타일메뉴](#isofficestylemenus)||
-|[CMFC비주얼매니저윈도우::이오피스XP스타일메뉴](#isofficexpstylemenus)|시각적 관리자가 Office XP 스타일 메뉴를 구현하는지 여부를 나타냅니다. [(재정의 CMFC비주얼 매니저::IsOfficeXP스타일메뉴.)](../../mfc/reference/cmfcvisualmanager-class.md#isofficexpstylemenus)|
-|[CMFC비주얼매니저윈도우::IsWindows테마칭지원](#iswindowsthemingsupported)|( `CMFCVisualManager::IsWindowsThemingSupported`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::이스윈XP더메사용 가능](#iswinxpthemeavailable)|Windows 테마를 사용할 수 있는지 여부를 나타냅니다.|
-|[CMFC비주얼매니저윈도우::온드로우바그리퍼](#ondrawbargripper)|( `CMFCVisualManagerOfficeXP::OnDrawBarGripper`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::온드로우브라우지버튼](#ondrawbrowsebutton)|( `CMFCVisualManagerOfficeXP::OnDrawBrowseButton`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::온드로우버튼보더](#ondrawbuttonborder)|( `CMFCVisualManagerOfficeXP::OnDrawButtonBorder`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::온드로우버튼세퍼레이터](#ondrawbuttonseparator)|( `CMFCVisualManagerOfficeXP::OnDrawButtonSeparator`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::온드로우캡션버튼](#ondrawcaptionbutton)|( `CMFCVisualManagerOfficeXP::OnDrawCaptionButton`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::온드로우캡션버튼아이콘](#ondrawcaptionbuttonicon)|( `CMFCVisualManagerOfficeXP::OnDrawCaptionButtonIcon`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::온드로우체크박스엑스](#ondrawcheckboxex)|[(CMFC 비주얼 관리자 재정의::온드로우체크박스엑스.)](../../mfc/reference/cmfcvisualmanager-class.md#ondrawcheckboxex)|
-|[CMFC비주얼매니저윈도우::온드로우콤보보보보보보보](#ondrawcomboborder)|( `CMFCVisualManagerOfficeXP::OnDrawComboBorder`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::온드로우컴보드롭버튼](#ondrawcombodropbutton)|( `CMFCVisualManagerOfficeXP::OnDrawComboDropButton`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::온드로우컨트롤보더](#ondrawcontrolborder)|[(CMFC 비주얼 관리자 재정의::온드로우컨트롤보더.)](../../mfc/reference/cmfcvisualmanager-class.md#ondrawcontrolborder)|
-|[CMFC비주얼매니저윈도우::온드로데트테두리](#ondraweditborder)|( `CMFCVisualManagerOfficeXP::OnDrawEditBorder`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::온드로우 확장상자](#ondrawexpandingbox)|[(CMFC 비주얼 관리자 재정의::온드로우 확장 상자.)](../../mfc/reference/cmfcvisualmanager-class.md#ondrawexpandingbox)|
-|[CMFC비주얼매니저윈도우::온드로우딩툴바보더](#ondrawfloatingtoolbarborder)|( `CMFCVisualManagerOfficeXP::OnDrawFloatingToolbarBorder`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::온드로우헤더트툴보더](#ondrawheaderctrlborder)|프레임워크는 [CMFCHeaderCtrl 클래스의](../../mfc/reference/cmfcheaderctrl-class.md)인스턴스 주위에 테두리를 그릴 때 이 메서드를 호출합니다. [(CMFC 비주얼 관리자 재정의::온드로우헤더트툴보더.)](../../mfc/reference/cmfcvisualmanager-class.md#ondrawheaderctrlborder)|
-|[CMFC비주얼매니저윈도우::온드로헤더트러소트로우](#ondrawheaderctrlsortarrow)|프레임워크는 헤더 컨트롤의 정렬 화살표를 그릴 때 이 함수를 호출합니다. [(CMFC 비주얼 관리자 재정의::온드로우헤더트러소트로우.)](../../mfc/reference/cmfcvisualmanager-class.md#ondrawheaderctrlsortarrow)|
-|[CMFC비주얼매니저윈도우::온드로우메뉴보더](#ondrawmenuborder)|( `CMFCVisualManagerOfficeXP::OnDrawMenuBorder`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::온드로우메뉴시스템버튼](#ondrawmenusystembutton)|( `CMFCVisualManagerOfficeXP::OnDrawMenuSystemButton`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::온드로우미니프레임보더](#ondrawminiframeborder)|( `CMFCVisualManagerOfficeXP::OnDrawMiniFrameBorder`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::온드로우아웃아웃아웃페이지버튼보더](#ondrawoutlookpagebuttonborder)|Outlook 페이지 단추의 테두리를 그릴 때 프레임 워크에서 호출 됩니다. [(CMFC VisualManager 재정의::온드로우아웃아웃아웃아웃페이지버튼보더.)](../../mfc/reference/cmfcvisualmanager-class.md#ondrawoutlookpagebuttonborder)|
-|[CMFC비주얼매니저윈도우::온드로우파네보더](#ondrawpaneborder)|( `CMFCVisualManagerOfficeXP::OnDrawPaneBorder`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::온드로우파네캡션](#ondrawpanecaption)|( `CMFCVisualManagerOfficeXP::OnDrawPaneCaption`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::온드로우팝윈도우버튼보더](#ondrawpopupwindowbuttonborder)|( `CMFCVisualManagerOfficeXP::OnDrawPopupWindowButtonBorder`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::온드로우스크롤버튼](#ondrawscrollbuttons)|( `CMFCVisualManagerOfficeXP::OnDrawScrollButtons`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::온드로우세파레이터](#ondrawseparator)|( `CMFCVisualManagerOfficeXP::OnDrawSeparator`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::온드로우스핀버튼](#ondrawspinbuttons)|( `CMFCVisualManagerOfficeXP::OnDrawSpinButtons`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::온드로우스테이던트바파네보더](#ondrawstatusbarpaneborder)|( `CMFCVisualManagerOfficeXP::OnDrawStatusBarPaneBorder`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::온드로우상태바진행상황](#ondrawstatusbarprogress)|[프레임워크는 CMFCStatusBar](../../mfc/reference/cmfcstatusbar-class.md) 개체에서 진행률 표시기를 그릴 때 이 메서드를 호출합니다. [(CMFC 비주얼 관리자 재정의::온드로우 상태표시진행.)](../../mfc/reference/cmfcvisualmanager-class.md#ondrawstatusbarprogress)|
-|[CMFC비주얼매니저윈도우::온드로우스테이던스바사이즈박스](#ondrawstatusbarsizebox)|프레임워크는 [CMFCStatusBar에](../../mfc/reference/cmfcstatusbar-class.md)대한 크기 상자를 그릴 때 이 메서드를 호출합니다. [(재정의 CMFC비주얼 매니저::에그리기 상태바크기 상자.)](../../mfc/reference/cmfcvisualmanager-class.md#ondrawstatusbarsizebox)|
-|[CMFC비주얼매니저윈도우::온드로우탭](#ondrawtab)|( `CMFCVisualManagerOfficeXP::OnDrawTab`을 재정의합니다.)|
-|[CMFC 비주얼 매니저윈도우::온드로우탭클로즈버튼](#ondrawtabclosebutton)|( `CMFCVisualManagerOfficeXP::OnDrawTabCloseButton`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::온드로우탭스버튼보더](#ondrawtabsbuttonborder)|( `CMFCVisualManagerOfficeXP::OnDrawTabsButtonBorder`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::온드로우태스크](#ondrawtask)|( `CMFCVisualManagerOfficeXP::OnDrawTask`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::온드로우태스크그룹지역경계](#ondrawtasksgroupareaborder)|( `CMFCVisualManagerOfficeXP::OnDrawTasksGroupAreaBorder`을 재정의합니다.)|
-|[CMFC 비주얼 매니저윈도우::온드로우 태스크그룹캡션](#ondrawtasksgroupcaption)|( `CMFCVisualManagerOfficeXP::OnDrawTasksGroupCaption`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::온드로테어오프캡션](#ondrawtearoffcaption)|( `CMFCVisualManagerOfficeXP::OnDrawTearOffCaption`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::에라아제팝윈도우버튼](#onerasepopupwindowbutton)|( `CMFCVisualManagerOfficeXP::OnErasePopupWindowButton`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::에라아제탭스에어리어](#onerasetabsarea)|( `CMFCVisualManagerOfficeXP::OnEraseTabsArea`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::에라아제탭버튼](#onerasetabsbutton)|( `CMFCVisualManagerOfficeXP::OnEraseTabsButton`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::에라아제탭스프레임](#onerasetabsframe)|프레임워크는 [CMFCBaseTabCtrl 클래스의](../../mfc/reference/cmfcbasetabctrl-class.md)프레임을 지울 때 이 메서드를 호출합니다. [(CMFC 비주얼 관리자 재정의::OnEraseTabsFrame.)](../../mfc/reference/cmfcvisualmanager-class.md#onerasetabsframe)|
-|[CMFC비주얼매니저윈도우::온필바백](#onfillbarbackground)|( `CMFCVisualManagerOfficeXP::OnFillBarBackground`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::온필버튼인테리어](#onfillbuttoninterior)|( `CMFCVisualManagerOfficeXP::OnFillButtonInterior`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::온필커맨드리스트배경](#onfillcommandslistbackground)|( `CMFCVisualManagerOfficeXP::OnFillCommandsListBackground`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::온필미니프레임캡션](#onfillminiframecaption)|( `CMFCVisualManagerOfficeXP::OnFillMiniFrameCaption`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::온필아웃페이지버튼](#onfilloutlookpagebutton)|프레임워크는 Outlook 페이지 단추의 내부를 채울 때 이 메서드를 호출합니다. [(CMFC VisualManager 재정의::OnFillOutlookPageButton.)](../../mfc/reference/cmfcvisualmanager-class.md#onfilloutlookpagebutton)|
-|[CMFC비주얼매니저윈도우:온필태스크스그룹인테리어](#onfilltasksgroupinterior)|( `CMFCVisualManagerOfficeXP::OnFillTasksGroupInterior`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::온필태스크스페네배경](#onfilltaskspanebackground)|[프레임워크는 CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md) 컨트롤의 백그라운드를 채울 때 이 메서드를 호출합니다. [(CMFC비주얼매니저 재정의::온필태스크스페네배경.)](../../mfc/reference/cmfcvisualmanager-class.md#onfilltaskspanebackground)|
-|[CMFC비주얼매니저윈도우::온하이라이트메뉴항목](#onhighlightmenuitem)|( `CMFCVisualManagerOfficeXP::OnHighlightMenuItem`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::On하이라이트드물게사용메뉴항목](#onhighlightrarelyusedmenuitems)|( `CMFCVisualManagerOfficeXP::OnHighlightRarelyUsedMenuItems`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::온업데이트시스템색상](#onupdatesystemcolors)|( `CMFCVisualManagerOfficeXP::OnUpdateSystemColors`을 재정의합니다.)|
-|[CMFC비주얼매니저윈도우::셋오피스스타일메뉴](#setofficestylemenus)||
+|[CMFCVisualManagerWindows:: AlwaysHighlight3DTabs](#alwayshighlight3dtabs)|프레임 워크는이 메서드를 호출 하 여 응용 프로그램에서 3D 탭이 항상 강조 표시 되어야 하는지 여부를 확인 합니다. [Cmfcvisualmanager:: AlwaysHighlight3DTabs](../../mfc/reference/cmfcvisualmanager-class.md#alwayshighlight3dtabs)를 재정의 합니다.|
+|[CMFCVisualManagerWindows::D rawComboBorderWinXP](#drawcomboborderwinxp)|( `CMFCVisualManager::DrawComboBorderWinXP`을 재정의합니다.)|
+|[CMFCVisualManagerWindows::D rawComboDropButtonWinXP](#drawcombodropbuttonwinxp)|( [Cmfcvisualmanager를 재정의 합니다. rawcombodropbuttonwinxp:D](../../mfc/reference/cmfcvisualmanager-class.md#drawcombodropbuttonwinxp))|
+|[CMFCVisualManagerWindows::D rawPushButtonWinXP](#drawpushbuttonwinxp)|( [Cmfcvisualmanager를 재정의 합니다. rawpushbuttonwinxp:D](../../mfc/reference/cmfcvisualmanager-class.md#drawpushbuttonwinxp))|
+|[CMFCVisualManagerWindows:: GetButtonExtraBorder](#getbuttonextraborder)|프레임 워크는 도구 모음 단추를 그릴 때이 메서드를 호출 합니다. [Cmfcvisualmanager:: GetButtonExtraBorder](../../mfc/reference/cmfcvisualmanager-class.md#getbuttonextraborder)를 재정의 합니다.|
+|[CMFCVisualManagerWindows:: GetCaptionButtonExtraBorder](#getcaptionbuttonextraborder)|[Cmfcvisualmanager:: GetCaptionButtonExtraBorder](../../mfc/reference/cmfcvisualmanager-class.md#getcaptionbuttonextraborder)를 재정의 합니다.|
+|[CMFCVisualManagerWindows:: GetDockingPaneCaptionExtraHeight](#getdockingpanecaptionextraheight)|( `CMFCVisualManager::GetDockingPaneCaptionExtraHeight`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: GetHighlightedMenuItemTextColor](#gethighlightedmenuitemtextcolor)|( `CMFCVisualManagerOfficeXP::GetHighlightedMenuItemTextColor`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: GetPopupMenuGap](#getpopupmenugap)|( `CMFCVisualManagerOfficeXP::GetPopupMenuGap`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: GetToolbarButtonTextColor](#gettoolbarbuttontextcolor)|( `CMFCVisualManagerOfficeXP::GetToolbarButtonTextColor`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: IsDefaultWinXPPopupButton](#isdefaultwinxppopupbutton)|[Cmfcvisualmanager:: IsDefaultWinXPPopupButton](../../mfc/reference/cmfcvisualmanager-class.md#isdefaultwinxppopupbutton)를 재정의 합니다.|
+|[CMFCVisualManagerWindows:: IsHighlightWholeMenuItem](#ishighlightwholemenuitem)|( `CMFCVisualManagerOfficeXP::IsHighlightWholeMenuItem`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: IsOfficeStyleMenus](#isofficestylemenus)||
+|[CMFCVisualManagerWindows:: IsOfficeXPStyleMenus](#isofficexpstylemenus)|Visual manager에서 Office XP 스타일 메뉴를 구현 하는지 여부를 나타냅니다. [Cmfcvisualmanager:: IsOfficeXPStyleMenus](../../mfc/reference/cmfcvisualmanager-class.md#isofficexpstylemenus)를 재정의 합니다.|
+|[CMFCVisualManagerWindows:: Iswindowssupported Ingsupported](#iswindowsthemingsupported)|( `CMFCVisualManager::IsWindowsThemingSupported`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: IsWinXPThemeAvailable](#iswinxpthemeavailable)|Windows 테마를 사용할 수 있는지 여부를 나타냅니다.|
+|[CMFCVisualManagerWindows:: OnDrawBarGripper](#ondrawbargripper)|( `CMFCVisualManagerOfficeXP::OnDrawBarGripper`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnDrawBrowseButton](#ondrawbrowsebutton)|( `CMFCVisualManagerOfficeXP::OnDrawBrowseButton`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnDrawButtonBorder](#ondrawbuttonborder)|( `CMFCVisualManagerOfficeXP::OnDrawButtonBorder`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnDrawButtonSeparator](#ondrawbuttonseparator)|( `CMFCVisualManagerOfficeXP::OnDrawButtonSeparator`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnDrawCaptionButton](#ondrawcaptionbutton)|( `CMFCVisualManagerOfficeXP::OnDrawCaptionButton`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnDrawCaptionButtonIcon](#ondrawcaptionbuttonicon)|( `CMFCVisualManagerOfficeXP::OnDrawCaptionButtonIcon`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnDrawCheckBoxEx](#ondrawcheckboxex)|[Cmfcvisualmanager:: OnDrawCheckBoxEx](../../mfc/reference/cmfcvisualmanager-class.md#ondrawcheckboxex)를 재정의 합니다.|
+|[CMFCVisualManagerWindows:: OnDrawComboBorder](#ondrawcomboborder)|( `CMFCVisualManagerOfficeXP::OnDrawComboBorder`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnDrawComboDropButton](#ondrawcombodropbutton)|( `CMFCVisualManagerOfficeXP::OnDrawComboDropButton`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnDrawControlBorder](#ondrawcontrolborder)|[Cmfcvisualmanager:: OnDrawControlBorder](../../mfc/reference/cmfcvisualmanager-class.md#ondrawcontrolborder)를 재정의 합니다.|
+|[CMFCVisualManagerWindows:: OnDrawEditBorder](#ondraweditborder)|( `CMFCVisualManagerOfficeXP::OnDrawEditBorder`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnDrawExpandingBox](#ondrawexpandingbox)|[Cmfcvisualmanager:: OnDrawExpandingBox](../../mfc/reference/cmfcvisualmanager-class.md#ondrawexpandingbox)를 재정의 합니다.|
+|[CMFCVisualManagerWindows:: OnDrawFloatingToolbarBorder](#ondrawfloatingtoolbarborder)|( `CMFCVisualManagerOfficeXP::OnDrawFloatingToolbarBorder`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnDrawHeaderCtrlBorder](#ondrawheaderctrlborder)|프레임 워크는 [CMFCHeaderCtrl 클래스](../../mfc/reference/cmfcheaderctrl-class.md)의 인스턴스 주위에 테두리를 그릴 때이 메서드를 호출 합니다. [Cmfcvisualmanager:: OnDrawHeaderCtrlBorder](../../mfc/reference/cmfcvisualmanager-class.md#ondrawheaderctrlborder)를 재정의 합니다.|
+|[CMFCVisualManagerWindows:: OnDrawHeaderCtrlSortArrow](#ondrawheaderctrlsortarrow)|프레임 워크는 헤더 컨트롤의 정렬 화살표를 그릴 때이 함수를 호출 합니다. [Cmfcvisualmanager:: OnDrawHeaderCtrlSortArrow](../../mfc/reference/cmfcvisualmanager-class.md#ondrawheaderctrlsortarrow)를 재정의 합니다.|
+|[CMFCVisualManagerWindows:: OnDrawMenuBorder](#ondrawmenuborder)|( `CMFCVisualManagerOfficeXP::OnDrawMenuBorder`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnDrawMenuSystemButton](#ondrawmenusystembutton)|( `CMFCVisualManagerOfficeXP::OnDrawMenuSystemButton`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: Ondraw미니 프레임 테두리](#ondrawminiframeborder)|( `CMFCVisualManagerOfficeXP::OnDrawMiniFrameBorder`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnDrawOutlookPageButtonBorder](#ondrawoutlookpagebuttonborder)|Outlook 페이지 단추의 테두리를 그릴 때 프레임 워크에서 호출 됩니다. [Cmfcvisualmanager:: OnDrawOutlookPageButtonBorder](../../mfc/reference/cmfcvisualmanager-class.md#ondrawoutlookpagebuttonborder)를 재정의 합니다.|
+|[CMFCVisualManagerWindows:: OnDrawPaneBorder](#ondrawpaneborder)|( `CMFCVisualManagerOfficeXP::OnDrawPaneBorder`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnDrawPaneCaption](#ondrawpanecaption)|( `CMFCVisualManagerOfficeXP::OnDrawPaneCaption`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnDrawPopupWindowButtonBorder](#ondrawpopupwindowbuttonborder)|( `CMFCVisualManagerOfficeXP::OnDrawPopupWindowButtonBorder`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnDrawScrollButtons](#ondrawscrollbuttons)|( `CMFCVisualManagerOfficeXP::OnDrawScrollButtons`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnDrawSeparator](#ondrawseparator)|( `CMFCVisualManagerOfficeXP::OnDrawSeparator`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnDrawSpinButtons](#ondrawspinbuttons)|( `CMFCVisualManagerOfficeXP::OnDrawSpinButtons`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnDrawStatusBarPaneBorder](#ondrawstatusbarpaneborder)|( `CMFCVisualManagerOfficeXP::OnDrawStatusBarPaneBorder`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnDrawStatusBarProgress](#ondrawstatusbarprogress)|프레임 워크는 [Cmfcstatusbar](../../mfc/reference/cmfcstatusbar-class.md) 개체에 진행률 표시기를 그릴 때이 메서드를 호출 합니다. [Cmfcvisualmanager:: OnDrawStatusBarProgress](../../mfc/reference/cmfcvisualmanager-class.md#ondrawstatusbarprogress)를 재정의 합니다.|
+|[CMFCVisualManagerWindows:: OnDrawStatusBarSizeBox](#ondrawstatusbarsizebox)|프레임 워크는 [Cmfcstatusbar](../../mfc/reference/cmfcstatusbar-class.md)의 크기 상자를 그릴 때이 메서드를 호출 합니다. [Cmfcvisualmanager:: OnDrawStatusBarSizeBox](../../mfc/reference/cmfcvisualmanager-class.md#ondrawstatusbarsizebox)를 재정의 합니다.|
+|[CMFCVisualManagerWindows:: OnDrawTab](#ondrawtab)|( `CMFCVisualManagerOfficeXP::OnDrawTab`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnDrawTabCloseButton](#ondrawtabclosebutton)|( `CMFCVisualManagerOfficeXP::OnDrawTabCloseButton`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnDrawTabsButtonBorder](#ondrawtabsbuttonborder)|( `CMFCVisualManagerOfficeXP::OnDrawTabsButtonBorder`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnDrawTask](#ondrawtask)|( `CMFCVisualManagerOfficeXP::OnDrawTask`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnDrawTasksGroupAreaBorder](#ondrawtasksgroupareaborder)|( `CMFCVisualManagerOfficeXP::OnDrawTasksGroupAreaBorder`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: Ondraw작업 Groupcaption](#ondrawtasksgroupcaption)|( `CMFCVisualManagerOfficeXP::OnDrawTasksGroupCaption`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnDrawTearOffCaption](#ondrawtearoffcaption)|( `CMFCVisualManagerOfficeXP::OnDrawTearOffCaption`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnErasePopupWindowButton](#onerasepopupwindowbutton)|( `CMFCVisualManagerOfficeXP::OnErasePopupWindowButton`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnEraseTabsArea](#onerasetabsarea)|( `CMFCVisualManagerOfficeXP::OnEraseTabsArea`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnEraseTabsButton](#onerasetabsbutton)|( `CMFCVisualManagerOfficeXP::OnEraseTabsButton`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnEraseTabsFrame](#onerasetabsframe)|프레임 워크는 [CMFCBaseTabCtrl 클래스](../../mfc/reference/cmfcbasetabctrl-class.md)의 프레임을 지울 때이 메서드를 호출 합니다. [Cmfcvisualmanager:: OnEraseTabsFrame](../../mfc/reference/cmfcvisualmanager-class.md#onerasetabsframe)를 재정의 합니다.|
+|[CMFCVisualManagerWindows:: Onfill바 배경](#onfillbarbackground)|( `CMFCVisualManagerOfficeXP::OnFillBarBackground`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnFillButtonInterior](#onfillbuttoninterior)|( `CMFCVisualManagerOfficeXP::OnFillButtonInterior`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnFillCommandsListBackground](#onfillcommandslistbackground)|( `CMFCVisualManagerOfficeXP::OnFillCommandsListBackground`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnFillMiniFrameCaption](#onfillminiframecaption)|( `CMFCVisualManagerOfficeXP::OnFillMiniFrameCaption`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnFillOutlookPageButton](#onfilloutlookpagebutton)|프레임 워크는 Outlook 페이지 단추의 내부를 채울 때이 메서드를 호출 합니다. [Cmfcvisualmanager:: OnFillOutlookPageButton](../../mfc/reference/cmfcvisualmanager-class.md#onfilloutlookpagebutton)를 재정의 합니다.|
+|[CMFCVisualManagerWindows:: Onfill작업 Groupinterior](#onfilltasksgroupinterior)|( `CMFCVisualManagerOfficeXP::OnFillTasksGroupInterior`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnFillTasksPaneBackground](#onfilltaskspanebackground)|프레임 워크는 [CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md) 컨트롤의 배경을 채울 때이 메서드를 호출 합니다. [Cmfcvisualmanager:: OnFillTasksPaneBackground](../../mfc/reference/cmfcvisualmanager-class.md#onfilltaskspanebackground)를 재정의 합니다.|
+|[CMFCVisualManagerWindows:: OnHighlightMenuItem](#onhighlightmenuitem)|( `CMFCVisualManagerOfficeXP::OnHighlightMenuItem`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnHighlightRarelyUsedMenuItems](#onhighlightrarelyusedmenuitems)|( `CMFCVisualManagerOfficeXP::OnHighlightRarelyUsedMenuItems`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: OnUpdateSystemColors](#onupdatesystemcolors)|( `CMFCVisualManagerOfficeXP::OnUpdateSystemColors`을 재정의합니다.)|
+|[CMFCVisualManagerWindows:: SetOfficeStyleMenus](#setofficestylemenus)||
 
 ### <a name="data-members"></a>데이터 멤버
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|[CMFC비주얼매니저윈도우:m_b3DTabsXPTheme](#m_b3dtabsxptheme)|Windows XP 테마에 3D 탭이 표시되는지 여부를 지정합니다.|
+|[CMFCVisualManagerWindows:: m_b3DTabsXPTheme](#m_b3dtabsxptheme)|Windows XP 테마에서 3D 탭을 표시할지 여부를 지정 합니다.|
 
 ## <a name="remarks"></a>설명
 
-클래스를 `CMFCVisualManagerWindows` 사용하여 응용 프로그램이 실행되는 컴퓨터에서 현재 테마를 모방하도록 응용 프로그램의 모양을 변경합니다.
+응용 프로그램을 실행 하는 `CMFCVisualManagerWindows` 컴퓨터에서 현재 테마를 모방 하도록 응용 프로그램의 모양을 변경 하려면 클래스를 사용 합니다.
 
-그러나 응용 프로그램이 Windows XP보다 이전 Windows 버전에서 실행 중이거나 사용자가 **클래식** 보기를 사용하기 때문에 테마가 비활성화된 경우 Windows 테마를 사용하지 못할 수 있습니다. 사용할 수 있는 테마가 없는 경우 응용 프로그램은 [CMFCVisualManager](../../mfc/reference/cmfcvisualmanager-class.md)에 정의된 기본 시각적 관리자를 사용합니다.
+그러나 응용 프로그램이 Windows XP 이전 버전의 Windows에서 실행 되는 경우 또는 사용자가 **클래식** 보기를 사용 하 고 있어 테마를 사용 하지 않도록 설정한 경우에는 windows 테마를 사용할 수 없습니다. 테마를 사용할 수 없는 경우 응용 프로그램은 [Cmfcvisualmanager](../../mfc/reference/cmfcvisualmanager-class.md)에 정의 된 기본 visual manager를 사용 합니다.
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 을 사용하는 `CMFCVisualManagerWindows`방법을 보여 줍니다. 이 코드 조각은 데스크톱 [경고 데모 샘플의](../../overview/visual-cpp-samples.md)일부입니다.
+다음 예제에서는를 사용 하는 방법을 보여 줍니다 `CMFCVisualManagerWindows` . 이 코드 조각은 [데스크톱 경고 데모 샘플](../../overview/visual-cpp-samples.md)의 일부입니다.
 
 [!code-cpp[NVC_MFC_DesktopAlertDemo#10](../../mfc/reference/codesnippet/cpp/cmfcvisualmanagerwindows-class_1.cpp)]
 
@@ -260,29 +261,29 @@ class CMFCVisualManagerWindows : public CMFCVisualManagerOfficeXP
 
 [CObject](../../mfc/reference/cobject-class.md)
 
-[CMFC베이스비주얼매니저](../../mfc/reference/cmfcbasevisualmanager-class.md)
+[CMFCBaseVisualManager](../../mfc/reference/cmfcbasevisualmanager-class.md)
 
 [CMFCVisualManager](../../mfc/reference/cmfcvisualmanager-class.md)
 
-[CMFC비주얼매니저오피스XP](../../mfc/reference/cmfcvisualmanagerofficexp-class.md)
+[CMFCVisualManagerOfficeXP](../../mfc/reference/cmfcvisualmanagerofficexp-class.md)
 
 [CMFCVisualManagerWindows](../../mfc/reference/cmfcvisualmanagerwindows-class.md)
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxvisualmanagerwindows.h
+**헤더:** afxvisualmanagerwindows
 
-## <a name="cmfcvisualmanagerwindowsalwayshighlight3dtabs"></a><a name="alwayshighlight3dtabs"></a>CMFC비주얼매니저윈도우:항상하이라이트3DTabs
+## <a name="cmfcvisualmanagerwindowsalwayshighlight3dtabs"></a><a name="alwayshighlight3dtabs"></a> CMFCVisualManagerWindows:: AlwaysHighlight3DTabs
 
 ```
 virtual BOOL AlwaysHighlight3DTabs() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowscmfcvisualmanagerwindows"></a><a name="cmfcvisualmanagerwindows"></a>CMFC비주얼매니저윈도우::CMFC비주얼매니저윈도우
+## <a name="cmfcvisualmanagerwindowscmfcvisualmanagerwindows"></a><a name="cmfcvisualmanagerwindows"></a> CMFCVisualManagerWindows:: CMFCVisualManagerWindows
 
 ```
 CMFCVisualManagerWindows(BOOL bIsTemporary = FALSE);
@@ -290,11 +291,11 @@ CMFCVisualManagerWindows(BOOL bIsTemporary = FALSE);
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *비스임시*<br/>
+진행 *Bistemand 항*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsdrawcomboborderwinxp"></a><a name="drawcomboborderwinxp"></a>CMFC비주얼매니저윈도우::D로콤보보보보보더윈XP
+## <a name="cmfcvisualmanagerwindowsdrawcomboborderwinxp"></a><a name="drawcomboborderwinxp"></a> CMFCVisualManagerWindows::D rawComboBorderWinXP
 
 ```
 virtual BOOL DrawComboBorderWinXP(
@@ -307,17 +308,17 @@ virtual BOOL DrawComboBorderWinXP(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
+진행 *pDC*<br/>
 [in] *rect*<br/>
-【인】 *b 장애인*<br/>
-【인】 *비스드 드롭*<br/>
-【인】 *비스하이라이트*<br/>
+진행 *Bdisabled*<br/>
+진행 *bIsDropped*<br/>
+진행 *bIsHighlighted*<br/>
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsdrawcombodropbuttonwinxp"></a><a name="drawcombodropbuttonwinxp"></a>CMFC비주얼매니저윈도우::D로컴보드롭버튼윈XP
+## <a name="cmfcvisualmanagerwindowsdrawcombodropbuttonwinxp"></a><a name="drawcombodropbuttonwinxp"></a> CMFCVisualManagerWindows::D rawComboDropButtonWinXP
 
 ```
 virtual BOOL DrawComboDropButtonWinXP(
@@ -330,17 +331,17 @@ virtual BOOL DrawComboDropButtonWinXP(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
+진행 *pDC*<br/>
 [in] *rect*<br/>
-【인】 *b 장애인*<br/>
-【인】 *비스드 드롭*<br/>
-【인】 *비스하이라이트*<br/>
+진행 *Bdisabled*<br/>
+진행 *bIsDropped*<br/>
+진행 *bIsHighlighted*<br/>
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsdrawpushbuttonwinxp"></a><a name="drawpushbuttonwinxp"></a>CMFC비주얼매니저윈도우::D로푸시버튼윈XP
+## <a name="cmfcvisualmanagerwindowsdrawpushbuttonwinxp"></a><a name="drawpushbuttonwinxp"></a> CMFCVisualManagerWindows::D rawPushButtonWinXP
 
 ```
 virtual BOOL DrawPushButtonWinXP(
@@ -352,46 +353,46 @@ virtual BOOL DrawPushButtonWinXP(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
+진행 *pDC*<br/>
 [in] *rect*<br/>
-【인】 *p 버튼*<br/>
-【인】 *uiState*<br/>
+진행 *Pbutton*<br/>
+진행 *Uistate*<br/>
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsgetbuttonextraborder"></a><a name="getbuttonextraborder"></a>CMFC비주얼매니저윈도우::겟버튼엑스트라보더
+## <a name="cmfcvisualmanagerwindowsgetbuttonextraborder"></a><a name="getbuttonextraborder"></a> CMFCVisualManagerWindows:: GetButtonExtraBorder
 
 ```
 virtual CSize GetButtonExtraBorder() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsgetcaptionbuttonextraborder"></a><a name="getcaptionbuttonextraborder"></a>CMFC비주얼매니저윈도우::겟캡션버튼엑스트라보더
+## <a name="cmfcvisualmanagerwindowsgetcaptionbuttonextraborder"></a><a name="getcaptionbuttonextraborder"></a> CMFCVisualManagerWindows:: GetCaptionButtonExtraBorder
 
 ```
 virtual CSize GetCaptionButtonExtraBorder() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsgetdockingpanecaptionextraheight"></a><a name="getdockingpanecaptionextraheight"></a>CMFC비주얼매니저윈도우::겟도킹파네캡션엑스트라하이트
+## <a name="cmfcvisualmanagerwindowsgetdockingpanecaptionextraheight"></a><a name="getdockingpanecaptionextraheight"></a> CMFCVisualManagerWindows:: GetDockingPaneCaptionExtraHeight
 
 ```
 virtual int GetDockingPaneCaptionExtraHeight() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsgethighlightedmenuitemtextcolor"></a><a name="gethighlightedmenuitemtextcolor"></a>CMFC비주얼매니저윈도우::겟하이라이트메뉴항목텍스트컬러
+## <a name="cmfcvisualmanagerwindowsgethighlightedmenuitemtextcolor"></a><a name="gethighlightedmenuitemtextcolor"></a> CMFCVisualManagerWindows:: GetHighlightedMenuItemTextColor
 
 ```
 virtual COLORREF GetHighlightedMenuItemTextColor(CMFCToolBarMenuButton* pButton);
@@ -399,23 +400,23 @@ virtual COLORREF GetHighlightedMenuItemTextColor(CMFCToolBarMenuButton* pButton)
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *p 버튼*<br/>
+진행 *Pbutton*<br/>
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsgetpopupmenugap"></a><a name="getpopupmenugap"></a>CMFC비주얼매니저윈도우::겟팝메뉴갭
+## <a name="cmfcvisualmanagerwindowsgetpopupmenugap"></a><a name="getpopupmenugap"></a> CMFCVisualManagerWindows:: GetPopupMenuGap
 
 ```
 virtual int GetPopupMenuGap() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsgettoolbarbuttontextcolor"></a><a name="gettoolbarbuttontextcolor"></a>CMFC비주얼매니저윈도우::겟툴바버튼텍스트컬러
+## <a name="cmfcvisualmanagerwindowsgettoolbarbuttontextcolor"></a><a name="gettoolbarbuttontextcolor"></a> CMFCVisualManagerWindows:: GetToolbarButtonTextColor
 
 ```
 virtual COLORREF GetToolbarButtonTextColor(
@@ -425,14 +426,14 @@ virtual COLORREF GetToolbarButtonTextColor(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *p 버튼*<br/>
-【인】 *상태 상태*<br/>
+진행 *Pbutton*<br/>
+진행 *상태*<br/>
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsisdefaultwinxppopupbutton"></a><a name="isdefaultwinxppopupbutton"></a>CMFC비주얼매니저윈도우::디폴디지윈XP팝업버튼
+## <a name="cmfcvisualmanagerwindowsisdefaultwinxppopupbutton"></a><a name="isdefaultwinxppopupbutton"></a> CMFCVisualManagerWindows:: IsDefaultWinXPPopupButton
 
 ```
 virtual BOOL IsDefaultWinXPPopupButton(CMFCDesktopAlertWndButton* pButton) const;
@@ -440,81 +441,81 @@ virtual BOOL IsDefaultWinXPPopupButton(CMFCDesktopAlertWndButton* pButton) const
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *p 버튼*<br/>
+진행 *Pbutton*<br/>
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsishighlightwholemenuitem"></a><a name="ishighlightwholemenuitem"></a>CMFC비주얼매니저윈도우:이스하이라이트전체메뉴아이템
+## <a name="cmfcvisualmanagerwindowsishighlightwholemenuitem"></a><a name="ishighlightwholemenuitem"></a> CMFCVisualManagerWindows:: IsHighlightWholeMenuItem
 
 ```
 virtual BOOL IsHighlightWholeMenuItem();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsisofficestylemenus"></a><a name="isofficestylemenus"></a>CMFC비주얼매니저윈도우::이오피스스타일메뉴
+## <a name="cmfcvisualmanagerwindowsisofficestylemenus"></a><a name="isofficestylemenus"></a> CMFCVisualManagerWindows:: IsOfficeStyleMenus
 
 ```
 BOOL IsOfficeStyleMenus() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsisofficexpstylemenus"></a><a name="isofficexpstylemenus"></a>CMFC비주얼매니저윈도우::이오피스XP스타일메뉴
+## <a name="cmfcvisualmanagerwindowsisofficexpstylemenus"></a><a name="isofficexpstylemenus"></a> CMFCVisualManagerWindows:: IsOfficeXPStyleMenus
 
 ```
 virtual BOOL IsOfficeXPStyleMenus() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsiswindowsthemingsupported"></a><a name="iswindowsthemingsupported"></a>CMFC비주얼매니저윈도우::IsWindows테마칭지원
+## <a name="cmfcvisualmanagerwindowsiswindowsthemingsupported"></a><a name="iswindowsthemingsupported"></a> CMFCVisualManagerWindows:: Iswindowssupported Ingsupported
 
 ```
 virtual BOOL IsWindowsThemingSupported() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsiswinxpthemeavailable"></a><a name="iswinxpthemeavailable"></a>CMFC비주얼매니저윈도우::이스윈XP더메사용 가능
+## <a name="cmfcvisualmanagerwindowsiswinxpthemeavailable"></a><a name="iswinxpthemeavailable"></a> CMFCVisualManagerWindows:: IsWinXPThemeAvailable
 
-Windows 테마를 사용할 수 있는지 여부를 결정합니다.
+Windows 테마를 사용할 수 있는지 여부를 확인 합니다.
 
 ```
 static BOOL IsWinXPThemeAvailible();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-테마를 사용할 수 있는 경우 0이 아닙니다. 그렇지 않으면 0.
+테마를 사용할 수 있는 경우 0이 아닙니다. 그렇지 않으면 0입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 모든 Windows XP 및 이후 테마에 대 한 유효 합니다.
+이 메서드는 모든 Windows XP 이상 테마에 유효 합니다.
 
-`IsWinXPThemeAvailable`정적 `CMFCVisualManagerWindows::IsWindowsThemingAvailable` `IsWinXPThemeAvailable` 메서드를 제외하고는 동일합니다. 따라서 존재하지 않는 경우 임시 시각적 관리자를 만듭니다.
+`IsWinXPThemeAvailable` 는 `CMFCVisualManagerWindows::IsWindowsThemingAvailable` 정적 메서드를 제외 하 고와 동일 `IsWinXPThemeAvailable` 합니다. 따라서 임시 visual manager가 없는 경우 새로 만듭니다.
 
-`IsWinXPThemeAvailable`항상 Windows XP보다 일찍 Windows 버전에 대해 0을 반환합니다.
+`IsWinXPThemeAvailable` Windows XP 이전의 Windows 버전에 대해서는 항상 0을 반환 합니다.
 
-## <a name="cmfcvisualmanagerwindowsm_b3dtabsxptheme"></a><a name="m_b3dtabsxptheme"></a>CMFC비주얼매니저윈도우:m_b3DTabsXPTheme
+## <a name="cmfcvisualmanagerwindowsm_b3dtabsxptheme"></a><a name="m_b3dtabsxptheme"></a> CMFCVisualManagerWindows:: m_b3DTabsXPTheme
 
-시각적 관리자가 3D 탭을 표시할지 여부를 결정하는 부울 매개 변수입니다.
+비주얼 관리자에서 3D 탭을 표시할지 여부를 결정 하는 부울 매개 변수입니다.
 
 ```
 AFX_IMPORT_DATA static BOOL m_b3DTabsXPTheme;
 ```
 
-## <a name="cmfcvisualmanagerwindowsondrawbargripper"></a><a name="ondrawbargripper"></a>CMFC비주얼매니저윈도우::온드로우바그리퍼
+## <a name="cmfcvisualmanagerwindowsondrawbargripper"></a><a name="ondrawbargripper"></a> CMFCVisualManagerWindows:: OnDrawBarGripper
 
 ```
 virtual void OnDrawBarGripper(
@@ -526,14 +527,14 @@ virtual void OnDrawBarGripper(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
-【인】 *렉트그리퍼*<br/>
-【인】 *b호르츠 (주)*<br/>
-【인】 *pBar*<br/>
+진행 *pDC*<br/>
+진행 *rectGripper*<br/>
+진행 *Bhorz*<br/>
+진행 *Pbar*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondrawbrowsebutton"></a><a name="ondrawbrowsebutton"></a>CMFC비주얼매니저윈도우::온드로우브라우지버튼
+## <a name="cmfcvisualmanagerwindowsondrawbrowsebutton"></a><a name="ondrawbrowsebutton"></a> CMFCVisualManagerWindows:: OnDrawBrowseButton
 
 ```
 virtual BOOL OnDrawBrowseButton(
@@ -546,17 +547,17 @@ virtual BOOL OnDrawBrowseButton(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
+진행 *pDC*<br/>
 [in] *rect*<br/>
-【인】 *pEdit*<br/>
-【인】 *상태 상태*<br/>
-【인】 *clrText*<br/>
+진행 *Pedit*<br/>
+진행 *상태*<br/>
+진행 *Clrtext*<br/>
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondrawbuttonborder"></a><a name="ondrawbuttonborder"></a>CMFC비주얼매니저윈도우::온드로우버튼보더
+## <a name="cmfcvisualmanagerwindowsondrawbuttonborder"></a><a name="ondrawbuttonborder"></a> CMFCVisualManagerWindows:: OnDrawButtonBorder
 
 ```
 virtual void OnDrawButtonBorder(
@@ -568,14 +569,14 @@ virtual void OnDrawButtonBorder(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
-【인】 *p 버튼*<br/>
+진행 *pDC*<br/>
+진행 *Pbutton*<br/>
 [in] *rect*<br/>
-【인】 *상태 상태*<br/>
+진행 *상태*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondrawbuttonseparator"></a><a name="ondrawbuttonseparator"></a>CMFC비주얼매니저윈도우::온드로우버튼세퍼레이터
+## <a name="cmfcvisualmanagerwindowsondrawbuttonseparator"></a><a name="ondrawbuttonseparator"></a> CMFCVisualManagerWindows:: OnDrawButtonSeparator
 
 ```
 virtual void OnDrawButtonSeparator(
@@ -588,15 +589,15 @@ virtual void OnDrawButtonSeparator(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
-【인】 *p 버튼*<br/>
+진행 *pDC*<br/>
+진행 *Pbutton*<br/>
 [in] *rect*<br/>
-【인】 *상태 상태*<br/>
-【인】 *b호르츠 (주)*<br/>
+진행 *상태*<br/>
+진행 *Bhorz*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondrawcaptionbutton"></a><a name="ondrawcaptionbutton"></a>CMFC비주얼매니저윈도우::온드로우캡션버튼
+## <a name="cmfcvisualmanagerwindowsondrawcaptionbutton"></a><a name="ondrawcaptionbutton"></a> CMFCVisualManagerWindows:: OnDrawCaptionButton
 
 ```
 virtual void OnDrawCaptionButton(
@@ -611,17 +612,17 @@ virtual void OnDrawCaptionButton(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
-【인】 *p 버튼*<br/>
-【인】 *b활성*<br/>
-【인】 *b호르츠 (주)*<br/>
-【인】 *b최대화*<br/>
-【인】 *b 장애인*<br/>
-【인】 *n이미지 ID*<br/>
+진행 *pDC*<br/>
+진행 *Pbutton*<br/>
+진행 *Bactive*<br/>
+진행 *Bhorz*<br/>
+진행 *Bmaximized*<br/>
+진행 *Bdisabled*<br/>
+진행 *nImageID*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondrawcaptionbuttonicon"></a><a name="ondrawcaptionbuttonicon"></a>CMFC비주얼매니저윈도우::온드로우캡션버튼아이콘
+## <a name="cmfcvisualmanagerwindowsondrawcaptionbuttonicon"></a><a name="ondrawcaptionbuttonicon"></a> CMFCVisualManagerWindows:: OnDrawCaptionButtonIcon
 
 ```
 virtual void OnDrawCaptionButtonIcon(
@@ -635,16 +636,16 @@ virtual void OnDrawCaptionButtonIcon(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
-【인】 *p 버튼*<br/>
-【인】 *아이디*<br/>
-【인】 *b활성*<br/>
-【인】 *b 장애인*<br/>
-【인】 *ptImage*<br/>
+진행 *pDC*<br/>
+진행 *Pbutton*<br/>
+진행 *id*<br/>
+진행 *Bactive*<br/>
+진행 *Bdisabled*<br/>
+진행 *ptImage*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondrawcheckboxex"></a><a name="ondrawcheckboxex"></a>CMFC비주얼매니저윈도우::온드로우체크박스엑스
+## <a name="cmfcvisualmanagerwindowsondrawcheckboxex"></a><a name="ondrawcheckboxex"></a> CMFCVisualManagerWindows:: OnDrawCheckBoxEx
 
 ```
 virtual void OnDrawCheckBoxEx(
@@ -658,16 +659,16 @@ virtual void OnDrawCheckBoxEx(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
+진행 *pDC*<br/>
 [in] *rect*<br/>
-【인】 *n스테이트*<br/>
-【인】 *b 강조 표시*<br/>
-【인】 *bpressed*<br/>
-【인】 *b사용*<br/>
+진행 *Nstate*<br/>
+진행 *Bhighlighted 표시*<br/>
+진행 *Bpressed*<br/>
+진행 *Benabled*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondrawcomboborder"></a><a name="ondrawcomboborder"></a>CMFC비주얼매니저윈도우::온드로우콤보보보보보보보
+## <a name="cmfcvisualmanagerwindowsondrawcomboborder"></a><a name="ondrawcomboborder"></a> CMFCVisualManagerWindows:: OnDrawComboBorder
 
 ```
 virtual void OnDrawComboBorder(
@@ -681,16 +682,16 @@ virtual void OnDrawComboBorder(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
+진행 *pDC*<br/>
 [in] *rect*<br/>
-【인】 *b 장애인*<br/>
-【인】 *비스드 드롭*<br/>
-【인】 *비스하이라이트*<br/>
-【인】 *p 버튼*<br/>
+진행 *Bdisabled*<br/>
+진행 *bIsDropped*<br/>
+진행 *bIsHighlighted*<br/>
+진행 *Pbutton*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondrawcombodropbutton"></a><a name="ondrawcombodropbutton"></a>CMFC비주얼매니저윈도우::온드로우컴보드롭버튼
+## <a name="cmfcvisualmanagerwindowsondrawcombodropbutton"></a><a name="ondrawcombodropbutton"></a> CMFCVisualManagerWindows:: OnDrawComboDropButton
 
 ```
 virtual void OnDrawComboDropButton(
@@ -704,16 +705,16 @@ virtual void OnDrawComboDropButton(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
+진행 *pDC*<br/>
 [in] *rect*<br/>
-【인】 *b 장애인*<br/>
-【인】 *비스드 드롭*<br/>
-【인】 *비스하이라이트*<br/>
-【인】 *p 버튼*<br/>
+진행 *Bdisabled*<br/>
+진행 *bIsDropped*<br/>
+진행 *bIsHighlighted*<br/>
+진행 *Pbutton*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondrawcontrolborder"></a><a name="ondrawcontrolborder"></a>CMFC비주얼매니저윈도우::온드로우컨트롤보더
+## <a name="cmfcvisualmanagerwindowsondrawcontrolborder"></a><a name="ondrawcontrolborder"></a> CMFCVisualManagerWindows:: OnDrawControlBorder
 
 ```
 virtual void OnDrawControlBorder(CWnd* pWndCtrl);
@@ -721,11 +722,11 @@ virtual void OnDrawControlBorder(CWnd* pWndCtrl);
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pWndCtrl*<br/>
+진행 *pWndCtrl*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondraweditborder"></a><a name="ondraweditborder"></a>CMFC비주얼매니저윈도우::온드로데트테두리
+## <a name="cmfcvisualmanagerwindowsondraweditborder"></a><a name="ondraweditborder"></a> CMFCVisualManagerWindows:: OnDrawEditBorder
 
 ```
 virtual void OnDrawEditBorder(
@@ -738,15 +739,15 @@ virtual void OnDrawEditBorder(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
+진행 *pDC*<br/>
 [in] *rect*<br/>
-【인】 *b 장애인*<br/>
-【인】 *비스하이라이트*<br/>
-【인】 *p 버튼*<br/>
+진행 *Bdisabled*<br/>
+진행 *bIsHighlighted*<br/>
+진행 *Pbutton*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondrawexpandingbox"></a><a name="ondrawexpandingbox"></a>CMFC비주얼매니저윈도우::온드로우 확장상자
+## <a name="cmfcvisualmanagerwindowsondrawexpandingbox"></a><a name="ondrawexpandingbox"></a> CMFCVisualManagerWindows:: OnDrawExpandingBox
 
 ```
 virtual void OnDrawExpandingBox(
@@ -758,14 +759,14 @@ virtual void OnDrawExpandingBox(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
+진행 *pDC*<br/>
 [in] *rect*<br/>
-【인】 *비스오픈*<br/>
-【인】 *컬러박스*<br/>
+진행 *bIsOpened*<br/>
+진행 *Colorbox*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondrawfloatingtoolbarborder"></a><a name="ondrawfloatingtoolbarborder"></a>CMFC비주얼매니저윈도우::온드로우딩툴바보더
+## <a name="cmfcvisualmanagerwindowsondrawfloatingtoolbarborder"></a><a name="ondrawfloatingtoolbarborder"></a> CMFCVisualManagerWindows:: OnDrawFloatingToolbarBorder
 
 ```
 virtual void OnDrawFloatingToolbarBorder(
@@ -777,14 +778,14 @@ virtual void OnDrawFloatingToolbarBorder(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
-【인】 *pToolBar*<br/>
-【인】 *직류 국경*<br/>
-【인】 *직사각형 테두리크기*<br/>
+진행 *pDC*<br/>
+진행 *Ptoolbar*<br/>
+진행 *rectBorder*<br/>
+진행 *rectBorderSize*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondrawheaderctrlborder"></a><a name="ondrawheaderctrlborder"></a>CMFC비주얼매니저윈도우::온드로우헤더트툴보더
+## <a name="cmfcvisualmanagerwindowsondrawheaderctrlborder"></a><a name="ondrawheaderctrlborder"></a> CMFCVisualManagerWindows:: OnDrawHeaderCtrlBorder
 
 ```
 virtual void OnDrawHeaderCtrlBorder(
@@ -797,15 +798,15 @@ virtual void OnDrawHeaderCtrlBorder(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pCtrl*<br/>
-【인】 *pDC*<br/>
+진행 *pCtrl*<br/>
+진행 *pDC*<br/>
 [in] *rect*<br/>
-【인】 *비스누른*<br/>
-【인】 *비스하이라이트*<br/>
+진행 *bIsPressed*<br/>
+진행 *bIsHighlighted*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondrawheaderctrlsortarrow"></a><a name="ondrawheaderctrlsortarrow"></a>CMFC비주얼매니저윈도우::온드로헤더트러소트로우
+## <a name="cmfcvisualmanagerwindowsondrawheaderctrlsortarrow"></a><a name="ondrawheaderctrlsortarrow"></a> CMFCVisualManagerWindows:: OnDrawHeaderCtrlSortArrow
 
 ```
 virtual void OnDrawHeaderCtrlSortArrow(
@@ -817,14 +818,14 @@ virtual void OnDrawHeaderCtrlSortArrow(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pCtrl*<br/>
-【인】 *pDC*<br/>
+진행 *pCtrl*<br/>
+진행 *pDC*<br/>
 [in] *rect*<br/>
-【인】 *비스업*<br/>
+진행 *Bisup*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondrawmenuborder"></a><a name="ondrawmenuborder"></a>CMFC비주얼매니저윈도우::온드로우메뉴보더
+## <a name="cmfcvisualmanagerwindowsondrawmenuborder"></a><a name="ondrawmenuborder"></a> CMFCVisualManagerWindows:: OnDrawMenuBorder
 
 ```
 virtual void OnDrawMenuBorder(
@@ -835,13 +836,13 @@ virtual void OnDrawMenuBorder(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
-【인】 *p메뉴*<br/>
+진행 *pDC*<br/>
+진행 *Pmenu*<br/>
 [in] *rect*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondrawmenusystembutton"></a><a name="ondrawmenusystembutton"></a>CMFC비주얼매니저윈도우::온드로우메뉴시스템버튼
+## <a name="cmfcvisualmanagerwindowsondrawmenusystembutton"></a><a name="ondrawmenusystembutton"></a> CMFCVisualManagerWindows:: OnDrawMenuSystemButton
 
 ```
 virtual void OnDrawMenuSystemButton(
@@ -854,15 +855,15 @@ virtual void OnDrawMenuSystemButton(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
+진행 *pDC*<br/>
 [in] *rect*<br/>
-【인】 *uiSystemCommand*<br/>
-【인】 *n스타일*<br/>
-【인】 *b 강조 표시*<br/>
+진행 *Uisystemcommand*<br/>
+진행 *Nstyle*<br/>
+진행 *Bhighlight*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondrawminiframeborder"></a><a name="ondrawminiframeborder"></a>CMFC비주얼매니저윈도우::온드로우미니프레임보더
+## <a name="cmfcvisualmanagerwindowsondrawminiframeborder"></a><a name="ondrawminiframeborder"></a> CMFCVisualManagerWindows:: Ondraw미니 프레임 테두리
 
 ```
 virtual void OnDrawMiniFrameBorder(
@@ -874,14 +875,14 @@ virtual void OnDrawMiniFrameBorder(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
-【인】 *pFrameWnd*<br/>
-【인】 *직류 국경*<br/>
-【인】 *직사각형 테두리크기*<br/>
+진행 *pDC*<br/>
+진행 *pFrameWnd*<br/>
+진행 *rectBorder*<br/>
+진행 *rectBorderSize*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondrawoutlookpagebuttonborder"></a><a name="ondrawoutlookpagebuttonborder"></a>CMFC비주얼매니저윈도우::온드로우아웃아웃아웃페이지버튼보더
+## <a name="cmfcvisualmanagerwindowsondrawoutlookpagebuttonborder"></a><a name="ondrawoutlookpagebuttonborder"></a> CMFCVisualManagerWindows:: OnDrawOutlookPageButtonBorder
 
 ```
 virtual void OnDrawOutlookPageButtonBorder(
@@ -893,14 +894,14 @@ virtual void OnDrawOutlookPageButtonBorder(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
-【인】 *정류Btn*<br/>
-【인】 *비스하이라이트*<br/>
-【인】 *비스누른*<br/>
+진행 *pDC*<br/>
+진행 *rectBtn*<br/>
+진행 *bIsHighlighted*<br/>
+진행 *bIsPressed*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondrawpaneborder"></a><a name="ondrawpaneborder"></a>CMFC비주얼매니저윈도우::온드로우파네보더
+## <a name="cmfcvisualmanagerwindowsondrawpaneborder"></a><a name="ondrawpaneborder"></a> CMFCVisualManagerWindows:: OnDrawPaneBorder
 
 ```
 virtual void OnDrawPaneBorder(
@@ -911,13 +912,13 @@ virtual void OnDrawPaneBorder(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
-【인】 *pBar*<br/>
+진행 *pDC*<br/>
+진행 *Pbar*<br/>
 [in] *rect*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondrawpanecaption"></a><a name="ondrawpanecaption"></a>CMFC비주얼매니저윈도우::온드로우파네캡션
+## <a name="cmfcvisualmanagerwindowsondrawpanecaption"></a><a name="ondrawpanecaption"></a> CMFCVisualManagerWindows:: OnDrawPaneCaption
 
 ```
 virtual COLORREF OnDrawPaneCaption(
@@ -930,17 +931,17 @@ virtual COLORREF OnDrawPaneCaption(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
-【인】 *pBar*<br/>
-【인】 *b활성*<br/>
-【인】 *정류 캡션*<br/>
-【인】 *정사각형 버튼*<br/>
+진행 *pDC*<br/>
+진행 *Pbar*<br/>
+진행 *Bactive*<br/>
+진행 *rectCaption*<br/>
+진행 *rectButtons*<br/>
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondrawpopupwindowbuttonborder"></a><a name="ondrawpopupwindowbuttonborder"></a>CMFC비주얼매니저윈도우::온드로우팝윈도우버튼보더
+## <a name="cmfcvisualmanagerwindowsondrawpopupwindowbuttonborder"></a><a name="ondrawpopupwindowbuttonborder"></a> CMFCVisualManagerWindows:: OnDrawPopupWindowButtonBorder
 
 ```
 virtual void OnDrawPopupWindowButtonBorder(
@@ -951,13 +952,13 @@ virtual void OnDrawPopupWindowButtonBorder(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
-【인】 *정류 클라이언트*<br/>
-【인】 *p 버튼*<br/>
+진행 *pDC*<br/>
+진행 *rectClient*<br/>
+진행 *Pbutton*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondrawscrollbuttons"></a><a name="ondrawscrollbuttons"></a>CMFC비주얼매니저윈도우::온드로우스크롤버튼
+## <a name="cmfcvisualmanagerwindowsondrawscrollbuttons"></a><a name="ondrawscrollbuttons"></a> CMFCVisualManagerWindows:: OnDrawScrollButtons
 
 ```
 virtual void OnDrawScrollButtons(
@@ -970,15 +971,15 @@ virtual void OnDrawScrollButtons(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
+진행 *pDC*<br/>
 [in] *rect*<br/>
-【인】 *n보더사이즈*<br/>
-【인】 *아이 이미지*<br/>
-【인】 *bhilited*<br/>
+진행 *nBorderSize*<br/>
+진행 *Iimage*<br/>
+진행 *bHilited*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondrawseparator"></a><a name="ondrawseparator"></a>CMFC비주얼매니저윈도우::온드로우세파레이터
+## <a name="cmfcvisualmanagerwindowsondrawseparator"></a><a name="ondrawseparator"></a> CMFCVisualManagerWindows:: OnDrawSeparator
 
 ```
 virtual void OnDrawSeparator(
@@ -990,14 +991,14 @@ virtual void OnDrawSeparator(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
-【인】 *pBar*<br/>
+진행 *pDC*<br/>
+진행 *Pbar*<br/>
 [in] *rect*<br/>
-【인】 *비쇼리즈*<br/>
+진행 *bIsHoriz*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondrawspinbuttons"></a><a name="ondrawspinbuttons"></a>CMFC비주얼매니저윈도우::온드로우스핀버튼
+## <a name="cmfcvisualmanagerwindowsondrawspinbuttons"></a><a name="ondrawspinbuttons"></a> CMFCVisualManagerWindows:: OnDrawSpinButtons
 
 ```
 virtual void OnDrawSpinButtons(
@@ -1010,15 +1011,15 @@ virtual void OnDrawSpinButtons(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
-【인】 *직류 스핀*<br/>
-【인】 *n스테이트*<br/>
-【인】 *b방향 방향*<br/>
-【인】 *pSpinCtrl*<br/>
+진행 *pDC*<br/>
+진행 *rectSpin*<br/>
+진행 *Nstate*<br/>
+진행 *Borientation*<br/>
+진행 *pSpinCtrl*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondrawstatusbarpaneborder"></a><a name="ondrawstatusbarpaneborder"></a>CMFC비주얼매니저윈도우::온드로우스테이던트바파네보더
+## <a name="cmfcvisualmanagerwindowsondrawstatusbarpaneborder"></a><a name="ondrawstatusbarpaneborder"></a> CMFCVisualManagerWindows:: OnDrawStatusBarPaneBorder
 
 ```
 virtual void OnDrawStatusBarPaneBorder(
@@ -1031,15 +1032,15 @@ virtual void OnDrawStatusBarPaneBorder(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
-【인】 *pBar*<br/>
-【인】 *렉트파인*<br/>
-【인】 *UIID*<br/>
-【인】 *n스타일*<br/>
+진행 *pDC*<br/>
+진행 *Pbar*<br/>
+진행 *rectPane*<br/>
+진행 *Uiid*<br/>
+진행 *Nstyle*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondrawstatusbarprogress"></a><a name="ondrawstatusbarprogress"></a>CMFC비주얼매니저윈도우::온드로우상태바진행상황
+## <a name="cmfcvisualmanagerwindowsondrawstatusbarprogress"></a><a name="ondrawstatusbarprogress"></a> CMFCVisualManagerWindows:: OnDrawStatusBarProgress
 
 ```
 virtual void OnDrawStatusBarProgress(
@@ -1056,19 +1057,19 @@ virtual void OnDrawStatusBarProgress(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
-【인】 *pStatusBar*<br/>
-【인】 *직류 진행률*<br/>
-【인】 *n프로그레시브토탈*<br/>
-【인】 *nProgressCurr*<br/>
-【인】 *클러바*<br/>
-【인】 *클라프로그레시브바데스트*<br/>
-【인】 *clrProgressText*<br/>
-【인】 *bProgressText*<br/>
+진행 *pDC*<br/>
+진행 *Pstatusbar*<br/>
+진행 *rectProgress*<br/>
+진행 *nProgressTotal*<br/>
+진행 *nProgressCurr*<br/>
+진행 *Clrbar*<br/>
+진행 *clrProgressBarDest*<br/>
+진행 *clrProgressText*<br/>
+진행 *bProgressText*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondrawstatusbarsizebox"></a><a name="ondrawstatusbarsizebox"></a>CMFC비주얼매니저윈도우::온드로우스테이던스바사이즈박스
+## <a name="cmfcvisualmanagerwindowsondrawstatusbarsizebox"></a><a name="ondrawstatusbarsizebox"></a> CMFCVisualManagerWindows:: OnDrawStatusBarSizeBox
 
 ```
 virtual void OnDrawStatusBarSizeBox(
@@ -1079,13 +1080,13 @@ virtual void OnDrawStatusBarSizeBox(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
-【인】 *pStatBar*<br/>
-【인】 *정크사이즈박스*<br/>
+진행 *pDC*<br/>
+진행 *Pstatbar*<br/>
+진행 *rectSizeBox*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondrawtab"></a><a name="ondrawtab"></a>CMFC비주얼매니저윈도우::온드로우탭
+## <a name="cmfcvisualmanagerwindowsondrawtab"></a><a name="ondrawtab"></a> CMFCVisualManagerWindows:: OnDrawTab
 
 ```
 virtual void OnDrawTab(
@@ -1098,15 +1099,15 @@ virtual void OnDrawTab(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
-【인】 *정사각형 탭*<br/>
+진행 *pDC*<br/>
+진행 *rectTab*<br/>
 [in] *iTab*<br/>
-【인】 *비스액티브*<br/>
-【인】 *pTabWnd*<br/>
+진행 *bIsActive*<br/>
+진행 *pTabWnd*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondrawtabclosebutton"></a><a name="ondrawtabclosebutton"></a>CMFC 비주얼 매니저윈도우::온드로우탭클로즈버튼
+## <a name="cmfcvisualmanagerwindowsondrawtabclosebutton"></a><a name="ondrawtabclosebutton"></a> CMFCVisualManagerWindows:: OnDrawTabCloseButton
 
 ```
 virtual void OnDrawTabCloseButton(
@@ -1120,16 +1121,16 @@ virtual void OnDrawTabCloseButton(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
+진행 *pDC*<br/>
 [in] *rect*<br/>
-【인】 *pTabWnd*<br/>
-【인】 *비스하이라이트*<br/>
-【인】 *비스누른*<br/>
-【인】 *isdisabled*<br/>
+진행 *pTabWnd*<br/>
+진행 *bIsHighlighted*<br/>
+진행 *bIsPressed*<br/>
+진행 *bIsDisabled*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondrawtabsbuttonborder"></a><a name="ondrawtabsbuttonborder"></a>CMFC비주얼매니저윈도우::온드로우탭스버튼보더
+## <a name="cmfcvisualmanagerwindowsondrawtabsbuttonborder"></a><a name="ondrawtabsbuttonborder"></a> CMFCVisualManagerWindows:: OnDrawTabsButtonBorder
 
 ```
 virtual void OnDrawTabsButtonBorder(
@@ -1142,15 +1143,15 @@ virtual void OnDrawTabsButtonBorder(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
+진행 *pDC*<br/>
 [in] *rect*<br/>
-【인】 *p 버튼*<br/>
-【인】 *uiState*<br/>
-【인】 *pWndTab*<br/>
+진행 *Pbutton*<br/>
+진행 *Uistate*<br/>
+진행 *pWndTab*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondrawtask"></a><a name="ondrawtask"></a>CMFC비주얼매니저윈도우::온드로우태스크
+## <a name="cmfcvisualmanagerwindowsondrawtask"></a><a name="ondrawtask"></a> CMFCVisualManagerWindows:: OnDrawTask
 
 ```
 virtual void OnDrawTask(
@@ -1163,15 +1164,15 @@ virtual void OnDrawTask(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
-【인】 *pTask*<br/>
-【인】 *아이콘*<br/>
-【인】 *비스하이라이트*<br/>
-【인】 *선택된 항목*<br/>
+진행 *pDC*<br/>
+진행 *Ptask*<br/>
+진행 *기능*<br/>
+진행 *bIsHighlighted*<br/>
+진행 *bIsSelected*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondrawtasksgroupareaborder"></a><a name="ondrawtasksgroupareaborder"></a>CMFC비주얼매니저윈도우::온드로우태스크그룹지역경계
+## <a name="cmfcvisualmanagerwindowsondrawtasksgroupareaborder"></a><a name="ondrawtasksgroupareaborder"></a> CMFCVisualManagerWindows:: OnDrawTasksGroupAreaBorder
 
 ```
 virtual void OnDrawTasksGroupAreaBorder(
@@ -1183,14 +1184,14 @@ virtual void OnDrawTasksGroupAreaBorder(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
+진행 *pDC*<br/>
 [in] *rect*<br/>
-【인】 *b 스페셜*<br/>
-【인】 *b제목 없음*<br/>
+진행 *Bspecial*<br/>
+진행 *Bnotitle*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondrawtasksgroupcaption"></a><a name="ondrawtasksgroupcaption"></a>CMFC 비주얼 매니저윈도우::온드로우 태스크그룹캡션
+## <a name="cmfcvisualmanagerwindowsondrawtasksgroupcaption"></a><a name="ondrawtasksgroupcaption"></a> CMFCVisualManagerWindows:: Ondraw작업 Groupcaption
 
 ```
 virtual void OnDrawTasksGroupCaption(
@@ -1203,15 +1204,15 @@ virtual void OnDrawTasksGroupCaption(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
-【인】 *p그룹 (것)들*<br/>
-【인】 *비스하이라이트*<br/>
-【인】 *선택된 항목*<br/>
-【인】 *b스캔접지*<br/>
+진행 *pDC*<br/>
+진행 *Pgroup*<br/>
+진행 *bIsHighlighted*<br/>
+진행 *bIsSelected*<br/>
+진행 *Bcancollapse*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsondrawtearoffcaption"></a><a name="ondrawtearoffcaption"></a>CMFC비주얼매니저윈도우::온드로테어오프캡션
+## <a name="cmfcvisualmanagerwindowsondrawtearoffcaption"></a><a name="ondrawtearoffcaption"></a> CMFCVisualManagerWindows:: OnDrawTearOffCaption
 
 ```
 virtual void OnDrawTearOffCaption(
@@ -1222,13 +1223,13 @@ virtual void OnDrawTearOffCaption(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
+진행 *pDC*<br/>
 [in] *rect*<br/>
-【인】 *비스액티브*<br/>
+진행 *bIsActive*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsonerasepopupwindowbutton"></a><a name="onerasepopupwindowbutton"></a>CMFC비주얼매니저윈도우::에라아제팝윈도우버튼
+## <a name="cmfcvisualmanagerwindowsonerasepopupwindowbutton"></a><a name="onerasepopupwindowbutton"></a> CMFCVisualManagerWindows:: OnErasePopupWindowButton
 
 ```
 virtual void OnErasePopupWindowButton(
@@ -1239,13 +1240,13 @@ virtual void OnErasePopupWindowButton(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
-【인】 *정류 클라이언트*<br/>
-【인】 *p 버튼*<br/>
+진행 *pDC*<br/>
+진행 *rectClient*<br/>
+진행 *Pbutton*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsonerasetabsarea"></a><a name="onerasetabsarea"></a>CMFC비주얼매니저윈도우::에라아제탭스에어리어
+## <a name="cmfcvisualmanagerwindowsonerasetabsarea"></a><a name="onerasetabsarea"></a> CMFCVisualManagerWindows:: OnEraseTabsArea
 
 ```
 virtual void OnEraseTabsArea(
@@ -1256,13 +1257,13 @@ virtual void OnEraseTabsArea(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
+진행 *pDC*<br/>
 [in] *rect*<br/>
-【인】 *pTabWnd*<br/>
+진행 *pTabWnd*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsonerasetabsbutton"></a><a name="onerasetabsbutton"></a>CMFC비주얼매니저윈도우::에라아제탭버튼
+## <a name="cmfcvisualmanagerwindowsonerasetabsbutton"></a><a name="onerasetabsbutton"></a> CMFCVisualManagerWindows:: OnEraseTabsButton
 
 ```
 virtual void OnEraseTabsButton(
@@ -1274,14 +1275,14 @@ virtual void OnEraseTabsButton(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
+진행 *pDC*<br/>
 [in] *rect*<br/>
-【인】 *p 버튼*<br/>
-【인】 *pWndTab*<br/>
+진행 *Pbutton*<br/>
+진행 *pWndTab*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsonerasetabsframe"></a><a name="onerasetabsframe"></a>CMFC비주얼매니저윈도우::에라아제탭스프레임
+## <a name="cmfcvisualmanagerwindowsonerasetabsframe"></a><a name="onerasetabsframe"></a> CMFCVisualManagerWindows:: OnEraseTabsFrame
 
 ```
 virtual BOOL OnEraseTabsFrame(
@@ -1292,15 +1293,15 @@ virtual BOOL OnEraseTabsFrame(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
+진행 *pDC*<br/>
 [in] *rect*<br/>
-【인】 *pTabWnd*<br/>
+진행 *pTabWnd*<br/>
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsonfillbarbackground"></a><a name="onfillbarbackground"></a>CMFC비주얼매니저윈도우::온필바백
+## <a name="cmfcvisualmanagerwindowsonfillbarbackground"></a><a name="onfillbarbackground"></a> CMFCVisualManagerWindows:: Onfill바 배경
 
 ```
 virtual void OnFillBarBackground(
@@ -1313,15 +1314,15 @@ virtual void OnFillBarBackground(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
-【인】 *pBar*<br/>
-【인】 *정류 클라이언트*<br/>
-【인】 *렉클립*<br/>
-【인】 *bNC Area*<br/>
+진행 *pDC*<br/>
+진행 *Pbar*<br/>
+진행 *rectClient*<br/>
+진행 *rectClip*<br/>
+진행 *bNCArea*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsonfillbuttoninterior"></a><a name="onfillbuttoninterior"></a>CMFC비주얼매니저윈도우::온필버튼인테리어
+## <a name="cmfcvisualmanagerwindowsonfillbuttoninterior"></a><a name="onfillbuttoninterior"></a> CMFCVisualManagerWindows:: OnFillButtonInterior
 
 ```
 virtual void OnFillButtonInterior(
@@ -1333,14 +1334,14 @@ virtual void OnFillButtonInterior(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
-【인】 *p 버튼*<br/>
+진행 *pDC*<br/>
+진행 *Pbutton*<br/>
 [in] *rect*<br/>
-【인】 *상태 상태*<br/>
+진행 *상태*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsonfillcommandslistbackground"></a><a name="onfillcommandslistbackground"></a>CMFC비주얼매니저윈도우::온필커맨드리스트배경
+## <a name="cmfcvisualmanagerwindowsonfillcommandslistbackground"></a><a name="onfillcommandslistbackground"></a> CMFCVisualManagerWindows:: OnFillCommandsListBackground
 
 ```
 virtual COLORREF OnFillCommandsListBackground(
@@ -1351,15 +1352,15 @@ virtual COLORREF OnFillCommandsListBackground(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
+진행 *pDC*<br/>
 [in] *rect*<br/>
-【인】 *선택된 항목*<br/>
+진행 *bIsSelected*<br/>
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsonfillminiframecaption"></a><a name="onfillminiframecaption"></a>CMFC비주얼매니저윈도우::온필미니프레임캡션
+## <a name="cmfcvisualmanagerwindowsonfillminiframecaption"></a><a name="onfillminiframecaption"></a> CMFCVisualManagerWindows:: OnFillMiniFrameCaption
 
 ```
 virtual COLORREF OnFillMiniFrameCaption(
@@ -1371,16 +1372,16 @@ virtual COLORREF OnFillMiniFrameCaption(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
-【인】 *정류 캡션*<br/>
-【인】 *pFrameWnd*<br/>
-【인】 *b활성*<br/>
+진행 *pDC*<br/>
+진행 *rectCaption*<br/>
+진행 *pFrameWnd*<br/>
+진행 *Bactive*<br/>
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsonfilloutlookpagebutton"></a><a name="onfilloutlookpagebutton"></a>CMFC비주얼매니저윈도우::온필아웃페이지버튼
+## <a name="cmfcvisualmanagerwindowsonfilloutlookpagebutton"></a><a name="onfilloutlookpagebutton"></a> CMFCVisualManagerWindows:: OnFillOutlookPageButton
 
 ```
 virtual void OnFillOutlookPageButton(
@@ -1393,15 +1394,15 @@ virtual void OnFillOutlookPageButton(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
+진행 *pDC*<br/>
 [in] *rect*<br/>
-【인】 *비스하이라이트*<br/>
-【인】 *비스누른*<br/>
-【인】 *clrText*<br/>
+진행 *bIsHighlighted*<br/>
+진행 *bIsPressed*<br/>
+진행 *Clrtext*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsonfilltasksgroupinterior"></a><a name="onfilltasksgroupinterior"></a>CMFC비주얼매니저윈도우:온필태스크스그룹인테리어
+## <a name="cmfcvisualmanagerwindowsonfilltasksgroupinterior"></a><a name="onfilltasksgroupinterior"></a> CMFCVisualManagerWindows:: Onfill작업 Groupinterior
 
 ```
 virtual void OnFillTasksGroupInterior(
@@ -1412,13 +1413,13 @@ virtual void OnFillTasksGroupInterior(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
+진행 *pDC*<br/>
 [in] *rect*<br/>
-【인】 *b 스페셜*<br/>
+진행 *Bspecial*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsonfilltaskspanebackground"></a><a name="onfilltaskspanebackground"></a>CMFC비주얼매니저윈도우::온필태스크스페네배경
+## <a name="cmfcvisualmanagerwindowsonfilltaskspanebackground"></a><a name="onfilltaskspanebackground"></a> CMFCVisualManagerWindows:: OnFillTasksPaneBackground
 
 ```
 virtual void OnFillTasksPaneBackground(
@@ -1428,12 +1429,12 @@ virtual void OnFillTasksPaneBackground(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
-【인】 *정류 작업 영역*<br/>
+진행 *pDC*<br/>
+진행 *rectWorkArea*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsonhighlightmenuitem"></a><a name="onhighlightmenuitem"></a>CMFC비주얼매니저윈도우::온하이라이트메뉴항목
+## <a name="cmfcvisualmanagerwindowsonhighlightmenuitem"></a><a name="onhighlightmenuitem"></a> CMFCVisualManagerWindows:: OnHighlightMenuItem
 
 ```
 virtual void OnHighlightMenuItem(
@@ -1445,14 +1446,14 @@ virtual void OnHighlightMenuItem(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
-【인】 *p 버튼*<br/>
+진행 *pDC*<br/>
+진행 *Pbutton*<br/>
 [in] *rect*<br/>
-【인】 *clrText*<br/>
+진행 *Clrtext*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsonhighlightrarelyusedmenuitems"></a><a name="onhighlightrarelyusedmenuitems"></a>CMFC비주얼매니저윈도우::On하이라이트드물게사용메뉴항목
+## <a name="cmfcvisualmanagerwindowsonhighlightrarelyusedmenuitems"></a><a name="onhighlightrarelyusedmenuitems"></a> CMFCVisualManagerWindows:: OnHighlightRarelyUsedMenuItems
 
 ```
 virtual void OnHighlightRarelyUsedMenuItems(
@@ -1462,12 +1463,12 @@ virtual void OnHighlightRarelyUsedMenuItems(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pDC*<br/>
-【인】 *정류드물게 사용*<br/>
+진행 *pDC*<br/>
+진행 *rectRarelyUsed*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowsonupdatesystemcolors"></a><a name="onupdatesystemcolors"></a>CMFC비주얼매니저윈도우::온업데이트시스템색상
+## <a name="cmfcvisualmanagerwindowsonupdatesystemcolors"></a><a name="onupdatesystemcolors"></a> CMFCVisualManagerWindows:: OnUpdateSystemColors
 
 ```
 virtual void OnUpdateSystemColors();
@@ -1475,7 +1476,7 @@ virtual void OnUpdateSystemColors();
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcvisualmanagerwindowssetofficestylemenus"></a><a name="setofficestylemenus"></a>CMFC비주얼매니저윈도우::셋오피스스타일메뉴
+## <a name="cmfcvisualmanagerwindowssetofficestylemenus"></a><a name="setofficestylemenus"></a> CMFCVisualManagerWindows:: SetOfficeStyleMenus
 
 ```cpp
 void SetOfficeStyleMenus(BOOL bOn = TRUE);
@@ -1483,13 +1484,13 @@ void SetOfficeStyleMenus(BOOL bOn = TRUE);
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *bOn*<br/>
+진행  고가<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
-[CMFC비주얼매니저 클래스](../../mfc/reference/cmfcvisualmanager-class.md)<br/>
+[CMFCVisualManager 클래스](../../mfc/reference/cmfcvisualmanager-class.md)<br/>
 [CMFCVisualManagerOfficeXP 클래스](../../mfc/reference/cmfcvisualmanagerofficexp-class.md)

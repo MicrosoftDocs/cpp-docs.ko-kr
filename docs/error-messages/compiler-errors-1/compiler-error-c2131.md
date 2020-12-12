@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2131'
 title: 컴파일러 오류 C2131
 ms.date: 02/28/2019
 f1_keywords:
 - C2131
 helpviewer_keywords:
 - C2131
-ms.openlocfilehash: 9e5dc328375f720ad39ce57a3da500e0bedcb468
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3c1f4e783c9341acf9e41fff99bba784acd8bbec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220420"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97124178"
 ---
 # <a name="compiler-error-c2131"></a>컴파일러 오류 C2131
 
