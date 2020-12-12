@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: tmpfile'
 title: tmpfile
 ms.date: 11/04/2016
 api_name:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - tmpfile function
 - temporary files, creating
 ms.assetid: c4a4dc24-70da-438d-ae4e-98352d88e375
-ms.openlocfilehash: f58c23050fe89f84f283c3784a7c0cee72637bf2
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 27760a7d1369a0292c6719667b8cb182ce7df815
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70957549"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299516"
 ---
 # <a name="tmpfile"></a>tmpfile
 
@@ -43,7 +44,7 @@ ms.locfileid: "70957549"
 FILE *tmpfile( void );
 ```
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 
 성공 하면 **tmpfile** 는 스트림 포인터를 반환 합니다. 그렇지 않으면 **NULL** 포인터를 반환 합니다.
 
@@ -51,9 +52,9 @@ FILE *tmpfile( void );
 
 **Tmpfile** 함수는 임시 파일을 만들고 해당 스트림에 대 한 포인터를 반환 합니다. 임시 파일은 루트 디렉터리에 만들어집니다. 루트가 아닌 디렉터리에 임시 파일을 만들려면 [fopen](fopen-wfopen.md)과 함께 [tmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md) 또는 [tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md)을 사용합니다.
 
-파일을 열 수 없는 경우 **tmpfile** 는 **NULL** 포인터를 반환 합니다. 이 임시 파일은 파일을 닫을 때, 프로그램이 정상적으로 종료 될 때 또는 **_rmtmp** 가 호출 될 때 (현재 작업 디렉터리가 변경 되지 않는다고 가정) 자동으로 삭제 됩니다. 임시 파일은 **w + b** (이진 읽기/쓰기) 모드에서 열립니다.
+파일을 열 수 없는 경우 **tmpfile** 는 **NULL** 포인터를 반환 합니다. 이 임시 파일은 파일이 닫힐 때, 프로그램이 정상적으로 종료 될 때 또는 현재 작업 디렉터리가 변경 되지 않는다고 가정할 때 **_rmtmp** 가 호출 될 때 자동으로 삭제 됩니다. 임시 파일은 **w + b** (이진 읽기/쓰기) 모드에서 열립니다.
 
-TMP_MAX 이상을 시도 하면 오류가 발생할 수 있습니다 (STDIO.H 참조). H)를 사용 하 여 **tmpfile**를 호출 합니다.
+TMP_MAX 이상 시도 하면 오류가 발생할 수 있습니다 (STDIO.H 참조). H)를 사용 하 여 **tmpfile** 를 호출 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -61,7 +62,7 @@ TMP_MAX 이상을 시도 하면 오류가 발생할 수 있습니다 (STDIO.H �
 |-------------|---------------------|
 |**tmpfile**|\<stdio.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
@@ -102,7 +103,7 @@ Temporary file 3 was created
 3 temporary files deleted
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [스트림 I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [_rmtmp](rmtmp.md)<br/>

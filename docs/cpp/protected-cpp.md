@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: protected (c + +)'
 title: protected (C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - protected keyword [C++], member access
 - protected keyword [C++]
 ms.assetid: 863d299f-fc0d-45d5-a1a7-bd24b7778a93
-ms.openlocfilehash: 25b25447737a075bcf4f02f1c3049c996fb4c678
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 17b74db6ae257e757253c12fdfeb4fa9bac2a3db
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227168"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299113"
 ---
 # <a name="protected-c"></a>protected (C++)
 
@@ -26,7 +27,7 @@ protected base-class
 
 ## <a name="remarks"></a>설명
 
-**`protected`** 키워드는 다음 액세스 지정자 ( *member-list* **`public`** 또는 **`private`** ) 또는 클래스 정의의 끝까지 멤버 목록의 클래스 멤버에 대 한 액세스를 지정 합니다. 로 선언 된 클래스 멤버 **`protected`** 는 다음 에서만 사용할 수 있습니다.
+**`protected`** 키워드는 다음 액세스 지정자 (  **`public`** 또는 **`private`** ) 또는 클래스 정의의 끝까지 멤버 목록의 클래스 멤버에 대 한 액세스를 지정 합니다. 로 선언 된 클래스 멤버 **`protected`** 는 다음 에서만 사용할 수 있습니다.
 
 - 원래 이 멤버를 선언한 클래스의 멤버 함수
 
@@ -90,4 +91,4 @@ int main() {
 ## <a name="see-also"></a>참고 항목
 
 [클래스 멤버에 대한 액세스 제어](member-access-control-cpp.md)<br/>
-[C++ 키워드](../cpp/keywords-cpp.md)
+[키워드](../cpp/keywords-cpp.md)

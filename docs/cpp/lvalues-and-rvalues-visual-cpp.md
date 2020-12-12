@@ -1,20 +1,21 @@
 ---
+description: '자세한 정보: Lvalues 및 Rvalue (c + +)'
 title: '값 범주: Lvalues 및 Rvalue (c + +)'
 ms.date: 05/07/2019
 helpviewer_keywords:
 - R-values [C++]
 - L-values [C++]
 ms.assetid: a8843344-cccc-40be-b701-b71f7b5cdcaf
-ms.openlocfilehash: b4b3ba5fdbc11ec97870b0f06fd1aabd3b57f5ca
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b92ddc3aad62f1eaf7af6a6bc113c1a0fdd70769
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225971"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299243"
 ---
 # <a name="lvalues-and-rvalues-c"></a>Lvalue 및 Rvalue (C++)
 
-모든 c + + 식에는 형식이 있으며 *값 범주*에 속합니다. 값 범주는 식 평가 중에 임시 개체를 만들고 복사 하 고 이동할 때 컴파일러가 따라야 하는 규칙의 기본입니다.
+모든 c + + 식에는 형식이 있으며 *값 범주* 에 속합니다. 값 범주는 식 평가 중에 임시 개체를 만들고 복사 하 고 이동할 때 컴파일러가 따라야 하는 규칙의 기본입니다.
 
 C + + 17 표준은 식 값 범주를 다음과 같이 정의 합니다.
 

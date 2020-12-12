@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: va_arg, va_copy, va_end, va_start'
 title: va_arg, va_copy, va_end, va_start
 ms.date: 11/04/2016
 api_name:
@@ -40,12 +41,12 @@ helpviewer_keywords:
 - va_alist macro
 - va_copy macro
 ms.assetid: a700dbbd-bfe5-4077-87b6-3a07af74a907
-ms.openlocfilehash: d35cf3aea99b7e832afb7d2a8e0aaa9d008226fa
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 368a08e3ceb78d09d11a9f661772c6b0abef471f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231288"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299282"
 ---
 # <a name="va_arg-va_copy-va_end-va_start"></a>va_arg, va_copy, va_end, va_start
 
@@ -86,18 +87,18 @@ void va_start(
 *Src* 에서 초기화할 인수 목록에 대 한 포인터입니다.
 
 *src*<br/>
-*대상*에 복사할 초기화 된 인수 목록에 대 한 포인터입니다.
+*대상* 에 복사할 초기화 된 인수 목록에 대 한 포인터입니다.
 
 *prev_param*<br/>
 첫 번째 선택적 인수 앞에 오는 매개 변수입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 **va_arg** 현재 인수를 반환 합니다. **va_copy**, **va_start** 및 **va_end** 값을 반환 하지 않습니다.
 
 ## <a name="remarks"></a>설명
 
-**Va_arg**, **va_copy**, **va_end**및 **va_start** 매크로는 함수에서 가변 개수의 인수를 사용 하는 경우 함수에 대 한 인수에 액세스할 수 있는 이식 가능한 방법을 제공 합니다. 매크로에는 두 가지 버전이 있습니다. STDARG.H에서 정의되는 매크로는 ISO C99 표준을 준수합니다. VARARGS.H에서 정의되는 매크로는 더 이상 사용되지 않지만 ANSI C89 표준이 적용되기 전에 작성된 이전 버전 코드와의 호환성을 위해 유지됩니다.
+**Va_arg**, **va_copy**, **va_end** 및 **va_start** 매크로는 함수에서 가변 개수의 인수를 사용 하는 경우 함수에 대 한 인수에 액세스할 수 있는 이식 가능한 방법을 제공 합니다. 매크로에는 두 가지 버전이 있습니다. STDARG.H에서 정의되는 매크로는 ISO C99 표준을 준수합니다. VARARGS.H에서 정의되는 매크로는 더 이상 사용되지 않지만 ANSI C89 표준이 적용되기 전에 작성된 이전 버전 코드와의 호환성을 위해 유지됩니다.
 
 이러한 매크로는 함수가 고정된 수의 필수 인수에 가변 수의 선택적 인수가 붙은 형식을 사용한다고 가정합니다. 필수 인수는 함수에 대한 일반 매개 변수로 선언되며 매개 변수 이름을 통해 액세스할 수 있습니다. 선택적 인수의 경우 STDARG.H(ANSI C89 표준이 적용되기 전에 작성된 코드의 경우 VARARGS.H) 매크로를 통해 액세스합니다. 이 경우 인수 목록의 첫 번째 선택적 인수에 대한 포인터를 설정하고, 목록에서 인수를 검색한 다음 인수 처리가 완료되면 포인터를 다시 설정합니다.
 
@@ -105,11 +106,11 @@ STDARG.H로 정의되는 C 표준 매크로는 다음과 같이 사용됩니다.
 
 - **va_start** 는 함수에 전달 되는 인수 목록의 첫 번째 선택적 인수로 *arg_ptr* 를 설정 합니다. *Arg_ptr* 인수는 **va_list** 형식 이어야 합니다. 인수 *prev_param* 은 인수 목록의 첫 번째 선택적 인수 바로 앞에 오는 필수 매개 변수의 이름입니다. *Prev_param* register 저장소 클래스를 사용 하 여 선언 된 경우 매크로의 동작이 정의 되지 않습니다. **va_start** 를 사용 하려면 먼저 **va_arg** 를 사용 해야 합니다.
 
-- **va_arg** 은 *arg_ptr*에서 제공 하는 위치에서 *형식의* 값을 검색 하 고, *형식의* 크기를 사용 하 여 다음 인수를 시작할 위치를 결정 하 여 목록의 다음 인수를 가리키도록 *arg_ptr* 를 늘립니다. 함수에서 여러 번 **va_arg** 사용 하 여 목록에서 인수를 검색할 수 있습니다.
+- **va_arg** 은 *arg_ptr* 에서 제공 하는 위치에서 *형식의* 값을 검색 하 고, *형식의* 크기를 사용 하 여 다음 인수를 시작할 위치를 결정 하 여 목록의 다음 인수를 가리키도록 *arg_ptr* 를 늘립니다. 함수에서 여러 번 **va_arg** 사용 하 여 목록에서 인수를 검색할 수 있습니다.
 
-- **va_copy** 은 현재 상태의 인수 목록에 대 한 복사본을 만듭니다. *Src* 매개 변수는 이미 **va_start**를 사용 하 여 초기화 해야 합니다. **va_arg** 호출로 업데이트 되었지만 **va_end**를 사용 하 여 다시 설정 하지 않아야 합니다. *Dest* 에서 **va_arg** 에 의해 검색 되는 다음 인수는 *src*에서 검색 된 다음 인수와 동일 합니다.
+- **va_copy** 은 현재 상태의 인수 목록에 대 한 복사본을 만듭니다. *Src* 매개 변수는 이미 **va_start** 를 사용 하 여 초기화 해야 합니다. **va_arg** 호출로 업데이트 되었지만 **va_end** 를 사용 하 여 다시 설정 하지 않아야 합니다. *Dest* 에서 **va_arg** 에 의해 검색 되는 다음 인수는 *src* 에서 검색 된 다음 인수와 동일 합니다.
 
-- 모든 인수가 검색 된 후 **va_end** 는 포인터를 **NULL**로 다시 설정 합니다. 함수가 반환 되기 전에 **va_start** 또는 **va_copy** 를 사용 하 여 초기화 된 각 인수 목록에서 **va_end** 를 호출 해야 합니다.
+- 모든 인수가 검색 된 후 **va_end** 는 포인터를 **NULL** 로 다시 설정 합니다. 함수가 반환 되기 전에 **va_start** 또는 **va_copy** 를 사용 하 여 초기화 된 각 인수 목록에서 **va_end** 를 호출 해야 합니다.
 
 > [!NOTE]
 > VARARGS.H 형식의 매크로는 더 이상 사용되지 않으며 ANSI C89 표준이 적용되기 전에 작성된 이전 버전 코드와의 호환성을 위해서만 유지됩니다. 다른 모든 경우에는 STDARGS.H 형식의 매크로를 사용합니다.
@@ -156,7 +157,7 @@ int main()
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<stdio.h> 하거나\<stdarg.h>
+**헤더:** \<stdio.h> 하거나 \<stdarg.h>
 
 **사용 되지 않는 헤더:**\<varargs.h>
 

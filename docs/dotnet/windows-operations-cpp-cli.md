@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Windows 작업 (c + +/CLI)'
 title: Windows 작업(C++/CLI)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -43,12 +44,12 @@ helpviewer_keywords:
 - registry, writing to
 - Visual C++, writing to Windows Registry
 ms.assetid: b9a75cb4-0589-4d5b-92cb-5e8be42b4ac0
-ms.openlocfilehash: 3c4ef2a69c25313ff444e0fabaea6eef2feeeee2
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 95fff25cb5c921272972e343dd3a85d53f909c52
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91501658"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97298723"
 ---
 # <a name="windows-operations-ccli"></a>Windows 작업(C++/CLI)
 
@@ -505,7 +506,7 @@ int main()
 
 .NET Framework를 사용 하 여 <xref:Microsoft.Win32.Registry> <xref:Microsoft.Win32.RegistryKey> 네임 스페이스에 정의 된 및 클래스를 사용 하 여 레지스트리에 액세스할 수 있습니다 <xref:Microsoft.Win32> . **레지스트리** 클래스는 클래스의 정적 인스턴스에 대 한 컨테이너입니다 <xref:Microsoft.Win32.RegistryKey> . 각 인스턴스는 루트 레지스트리 노드를 나타냅니다. 인스턴스는 <xref:Microsoft.Win32.Registry.ClassesRoot> ,, <xref:Microsoft.Win32.Registry.CurrentConfig> <xref:Microsoft.Win32.Registry.CurrentUser> , <xref:Microsoft.Win32.Registry.LocalMachine> 및 <xref:Microsoft.Win32.Registry.Users> 입니다.
 
-## <a name="related-sections"></a>관련 섹션
+## <a name="related-sections"></a>관련 단원
 
 <xref:System.Environment>
 

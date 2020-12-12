@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 속성 (c + +)'
 title: 속성 (C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - property __declspec keyword
 - __declspec keyword [C++], property
 ms.assetid: f3b850ba-bf48-4df7-a1d6-8259d97309ce
-ms.openlocfilehash: 03f71739698fd20a01fd72567ce5b9babc176327
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ed996ecadd16837af1e28b71bbedd9b4e3c1abaa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80179304"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299165"
 ---
 # <a name="property-c"></a>속성 (C++)
 
@@ -30,9 +31,9 @@ ms.locfileid: "80179304"
 
 ## <a name="remarks"></a>설명
 
-컴파일러는 멤버 선택 연산자 (" **.** " 또는 " **->** ")의 오른쪽에이 특성을 사용 하 여 선언 된 데이터 멤버를 볼 때 해당 식이 l-value 인지 r 값 인지에 따라 연산을 `get` 또는 `put` 함수로 변환 합니다. "`+=`"와 같은 더 복잡 한 컨텍스트에서는 `get` 및 `put`를 모두 수행 하 여 재작성이 수행 됩니다.
+컴파일러는 멤버 선택 연산자 ("**.**" 또는 "") 오른쪽에이 특성을 사용 하 여 선언 된 데이터 멤버를 볼 때 **->** `get` `put` 이러한 식이 l-value 인지 r-값 인지에 따라 연산을 또는 함수로 변환 합니다. ""와 같은 더 복잡 한 컨텍스트에서는 및를 모두 수행 하 `+=` 여 재작성이 수행 됩니다 `get` `put` .
 
-이 특성은 클래스 또는 구조체 정의에 있는 빈 배열의 선언에서도 사용할 수 있습니다. 다음은 그 예입니다.
+이 특성은 클래스 또는 구조체 정의에 있는 빈 배열의 선언에서도 사용할 수 있습니다. 예를 들어:
 
 ```cpp
 __declspec(property(get=GetX, put=PutX)) int x[];

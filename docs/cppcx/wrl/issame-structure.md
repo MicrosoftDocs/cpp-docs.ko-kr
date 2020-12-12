@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: IsSame 구조'
 title: IsSame 구조체
 ms.date: 10/03/2018
 ms.topic: reference
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::IsSame structure
 - Microsoft::WRL::Details::IsSame::value constant
 ms.assetid: 1eddbc3f-3cc5-434f-8495-e4477e1f868e
-ms.openlocfilehash: 8c209d5a8d2a35f2643e90e5595d86f41519f30b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b00e85f55fc80af2dd00dc20f090a7b18678f579
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216559"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97298931"
 ---
 # <a name="issame-structure"></a>IsSame 구조체
 
@@ -60,7 +61,7 @@ Name                    | 설명
 
 **네임 스페이스:** Microsoft:: WRL::D etails
 
-## <a name="issamevalue"></a><a name="value"></a>IsSame:: value
+## <a name="issamevalue"></a><a name="value"></a> IsSame:: value
 
 WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: strftime, wcsftime, _strftime_l, _wcsftime_l'
 title: strftime, wcsftime, _strftime_l, _wcsftime_l
 ms.date: 4/2/2020
 api_name:
@@ -42,12 +43,12 @@ helpviewer_keywords:
 - _tcsftime function
 - time strings
 ms.assetid: 6330ff20-4729-4c4a-82af-932915d893ea
-ms.openlocfilehash: 36a84c5de41f3358adbcba42010ed8e6f3c83939
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f6297af6ad7c0f6f9a0280cc47ea7a0caa6440af
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846578"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299568"
 ---
 # <a name="strftime-wcsftime-_strftime_l-_wcsftime_l"></a>strftime, wcsftime, _strftime_l, _wcsftime_l
 
@@ -105,15 +106,15 @@ size_t _wcsftime_l(
 
 **strftime** 은 *strdest* 에 배치 된 문자 수를 반환 하 고 **wcsftime** 은 해당 하는 와이드 문자 수를 반환 합니다.
 
-종료 null을 포함 한 총 문자 수가 *maxsize*보다 많은 경우 **strftime** 및 **wcsftime** 은 모두 0을 반환 하 고 *strdest* 의 내용은 결정 되지 않습니다.
+종료 null을 포함 한 총 문자 수가 *maxsize* 보다 많은 경우 **strftime** 및 **wcsftime** 은 모두 0을 반환 하 고 *strdest* 의 내용은 결정 되지 않습니다.
 
 *Strdest* 의 문자 수는 형식 지정 코드를 통해 *형식* 에 추가 될 수 있는 문자 뿐만 아니라 *형식* 의 리터럴 문자 수와 같습니다. 문자열의 종료 null은 반환 값 계산에 포함되지 않습니다.
 
 ## <a name="remarks"></a>설명
 
-**Strftime** 및 **wcsftime** 함수는 제공 된 *형식* 인수에 따라 *timeptr* 의 **tm** 시간 값을 지정 하 고 그 결과를 버퍼 *strdest*에 저장 합니다. 최대 *maxsize* 문자는 문자열에 배치 됩니다. *Timeptr* 구조체의 필드에 대 한 설명은 [asctime](asctime-wasctime.md)를 참조 하세요. **wcsftime** 은 **strftime**에 해당 하는 와이드 문자입니다. 해당 문자열 포인터 인수는 와이드 문자열을 가리킵니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다.
+**Strftime** 및 **wcsftime** 함수는 제공 된 *형식* 인수에 따라 *timeptr* 의 **tm** 시간 값을 지정 하 고 그 결과를 버퍼 *strdest* 에 저장 합니다. 최대 *maxsize* 문자는 문자열에 배치 됩니다. *Timeptr* 구조체의 필드에 대 한 설명은 [asctime](asctime-wasctime.md)를 참조 하세요. **wcsftime** 은 **strftime** 에 해당 하는 와이드 문자입니다. 해당 문자열 포인터 인수는 와이드 문자열을 가리킵니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다.
 
-이 함수는 해당 매개 변수의 유효성을 검사합니다. *Strdest*, *format*또는 *timeptr* 이 null 포인터인 경우 또는 *timeptr* 에서 주소가 지정 **된 tm** 데이터 구조가 잘못 된 경우 (예: 시간 또는 날짜에 대 한 범위를 벗어난 값을 포함 하는 경우), *형식* 문자열에 잘못 된 형식 지정 코드가 포함 된 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 함수는 0을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
+이 함수는 해당 매개 변수의 유효성을 검사합니다. *Strdest*, *format* 또는 *timeptr* 이 null 포인터인 경우 또는 *timeptr* 에서 주소가 지정 **된 tm** 데이터 구조가 잘못 된 경우 (예: 시간 또는 날짜에 대 한 범위를 벗어난 값을 포함 하는 경우), *형식* 문자열에 잘못 된 형식 지정 코드가 포함 된 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 함수는 0을 반환 하 고 **errno** 를 **EINVAL** 로 설정 합니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -123,7 +124,7 @@ size_t _wcsftime_l(
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcsftime**|**strftime**|**strftime**|**wcsftime**|
 
-*Format* 인수는 하나 이상의 코드로 구성 됩니다. **printf**와 마찬가지로 형식 지정 코드 앞에 백분율 기호 ( **%** )가 있습니다. 로 시작 하지 않는 문자 **%** 는 변경 되지 않은 상태로 *strdest*로 복사 됩니다. 현재 로캘의 **LC_TIME** 범주는 **strftime**의 출력 형식에 영향을 줍니다. **LC_TIME**에 대 한 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조 하세요. **Strftime** 및 **wcsftime** 함수는 현재 설정 된 로캘을 사용 합니다. 이러한 함수의 **_strftime_l** 및 **_wcsftime_l** 버전은 로캘을 매개 변수로 사용 하 고 현재 설정 된 로캘 대신 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+*Format* 인수는 하나 이상의 코드로 구성 됩니다. **printf** 와 마찬가지로 형식 지정 코드 앞에 백분율 기호 ( **%** )가 있습니다. 로 시작 하지 않는 문자 **%** 는 변경 되지 않은 상태로 *strdest* 로 복사 됩니다. 현재 로캘의 **LC_TIME** 범주는 **strftime** 의 출력 형식에 영향을 줍니다. **LC_TIME** 에 대 한 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조 하세요. **Strftime** 및 **wcsftime** 함수는 현재 설정 된 로캘을 사용 합니다. 이러한 함수의 **_strftime_l** 및 **_wcsftime_l** 버전은 로캘을 매개 변수로 사용 하 고 현재 설정 된 로캘 대신 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 **Strftime** 함수는 다음과 같은 서식 지정 코드를 지원 합니다.
 
@@ -141,7 +142,7 @@ size_t _wcsftime_l(
 |**% F**|**% Y-% m-% d** 과 (와) 동일 합니다.|
 |**% g**|ISO 8601 주 기반 연도의 마지막 두 자리 (00-99)|
 |**% G**|ISO 8601 주 기반 연도 (10 진수)입니다.|
-|**% h**|약식 월 이름 ( **% b**에 해당)|
+|**% h**|약식 월 이름 ( **% b** 에 해당)|
 |**% H**|24 시간 형식의 시간 (00-23)|
 |**% I**|12 시간 형식의 시간 (01-12)|
 |**% j**|10 진수의 일자 (001-366)|
@@ -174,9 +175,9 @@ size_t _wcsftime_l(
 |**% #a**, **% #A**,% **#b**,% **#B**, **% #g**, **% #G**, **% #h**, **% #n**, **% #p**, **% #t**, **% #u**, **% #w**, **% #X**, **% #z**, **% #Z**, **%#%**|**#** 플래그는 무시 됩니다.|
 |**% #c**|로캘에 적합 한 긴 날짜 및 시간 표현입니다. 예를 들면 "1995년 3월 14일 화요일 12:41:29"와 같습니다.|
 |**% #x**|로캘에 적합 한 긴 날짜 표현입니다. 예를 들면 "1995년 3월 14일 화요일"과 같습니다.|
-|**% #d**, **% #D**,% **#e**,% **#F**, **% #H**, **% #I**, **% #j**,% **#m**, **% #M**, **% #r**, **% #R,%**#S,% #T,% **#U**, **% #V**, **% #W**, **% #y**, **% #Y** **%#S** **%#T**|앞에 오는 0 또는 공백을 제거 합니다 (있는 경우).|
+|**% #d**, **% #D**,% **#e**,% **#F**, **% #H**, **% #I**, **% #j**,% **#m**, **% #M**, **% #r**, **% #R,%**#S,% #T,% **#U**, **% #V**, **% #W**, **% #y**, **% #Y**  |앞에 오는 0 또는 공백을 제거 합니다 (있는 경우).|
 
-**% V**, **% g**, **% g**에 의해 생성 되는 ISO 8601 주 및 주 기반 연도는 월요일에 시작 하는 주를 사용 합니다. 여기서 week 1은 1 월 4 일을 포함 하는 주입니다. 여기서 1은 연도를 4 일 이상 포함 하는 첫 번째 주입니다. 해당 연도의 첫 번째 월요일이 두 번째, 세 번째 또는 네 번째 이면 이전 일은 작년의 마지막 주에 포함 됩니다. 이러한 일의 경우 **% V** 은 (는) 53로 바뀌고 **% g** 와 **% g** 는 모두 이전 연도의 숫자로 대체 됩니다.
+**% V**, **% g**, **% g** 에 의해 생성 되는 ISO 8601 주 및 주 기반 연도는 월요일에 시작 하는 주를 사용 합니다. 여기서 week 1은 1 월 4 일을 포함 하는 주입니다. 여기서 1은 연도를 4 일 이상 포함 하는 첫 번째 주입니다. 해당 연도의 첫 번째 월요일이 두 번째, 세 번째 또는 네 번째 이면 이전 일은 작년의 마지막 주에 포함 됩니다. 이러한 일의 경우 **% V** 은 (는) 53로 바뀌고 **% g** 와 **% g** 는 모두 이전 연도의 숫자로 대체 됩니다.
 
 > [!NOTE]
 > 에서 반환 된 포인터가 있는 함수 중 하나를 사용 하는 경우 `strftime` `tm` `gmtime` 및 지정자를 통해 인쇄 된 값 `%Z` `%z` 이 정확 하지 않습니다. 이는 `tm` C 표준에 지정 된 구조체에 표준 시간대 이름 또는 오프셋에 대 한 정보가 포함 되지 않기 때문입니다. 대신 표준 시간대 정보는 전역 변수 [ `_timezone` 및 `_dstbias` ](../../c-runtime-library/daylight-dstbias-timezone-and-tzname.md)를 통해 채워집니다.

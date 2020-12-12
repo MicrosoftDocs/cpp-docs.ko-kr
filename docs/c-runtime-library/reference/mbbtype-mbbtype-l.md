@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _mbbtype, _mbbtype_l'
 title: _mbbtype, _mbbtype_l
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - mbbtype function
 - mbbtype_l function
 ms.assetid: b8e34b40-842a-4298-aa39-0bd2d8e51c2a
-ms.openlocfilehash: dca59f2d31cc5ad843a48e9825ef6a617d46ae4a
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 6a646682144acb346827eaa78382915f026fa455
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919597"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299607"
 ---
 # <a name="_mbbtype-_mbbtype_l"></a>_mbbtype, _mbbtype_l
 
@@ -73,9 +74,9 @@ int _mbbtype_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-**_mbbtype** 는 문자열의 바이트 형식을 반환 합니다. 이 결정은 컨트롤 테스트 조건을 제공 하는 *형식의*값에 지정 된 대로 상황에 맞는 것입니다. *형식은* 문자열에서 이전 바이트의 형식입니다. 다음 표의 매니페스트 상수는 Mbctype.h에 정의됩니다.
+**_mbbtype** 는 문자열의 바이트 형식을 반환 합니다. 이 결정은 컨트롤 테스트 조건을 제공 하는 *형식의* 값에 지정 된 대로 상황에 맞는 것입니다. *형식은* 문자열에서 이전 바이트의 형식입니다. 다음 표의 매니페스트 상수는 Mbctype.h에 정의됩니다.
 
 |*형식의* 값|테스트 **_mbbtype**|반환 값|*c*|
 |---------------------|--------------------------|------------------|---------|
@@ -91,7 +92,7 @@ int _mbbtype_l(
 
 출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따라 영향을 받습니다. 자세한 내용은 [setlocale, _wsetlocale를](setlocale-wsetlocale.md) 참조 하세요. 이 함수의 **_mbbtype** 버전은이 로캘 종속 동작에 현재 로캘을 사용 합니다. **_mbbtype_l** 버전은 전달 된 로캘 매개 변수를 대신 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-이전 버전에서는 **_mbbtype** 이름이 **chkctype**입니다. 새 코드의 경우 대신 **_mbbtype** 를 사용 합니다.
+이전 버전에서는 **_mbbtype** 이름이 **chkctype** 입니다. 새 코드의 경우 대신 **_mbbtype** 를 사용 합니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -106,6 +107,6 @@ int _mbbtype_l(
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [바이트 분류](../../c-runtime-library/byte-classification.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: _utime, _utime32, _utime64, _wutime, _wutime32, _wutime64'
 title: _utime, _utime32, _utime64, _wutime, _wutime32, _wutime64
 ms.date: 4/2/2020
 api_name:
@@ -66,12 +67,12 @@ helpviewer_keywords:
 - tutime64 function
 - tutime32 function
 ms.assetid: 8d482d40-19b9-4591-bfee-5d7f601d1a9e
-ms.openlocfilehash: dbff557cd116eb1df44f015b17716408c8dc54c2
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 7ec25f60c508464abf8232419f8867bc3f0a20fb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912123"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299347"
 ---
 # <a name="_utime-_utime32-_utime64-_wutime-_wutime32-_wutime64"></a>_utime, _utime32, _utime64, _wutime, _wutime32, _wutime64
 
@@ -108,13 +109,13 @@ int _wutime64(
 
 ### <a name="parameters"></a>매개 변수
 
-*이름도*<br/>
+*filename*<br/>
 경로 또는 파일 이름을 포함하는 문자열에 대한 포인터입니다.
 
-*곱한*<br/>
+*times*<br/>
 저장된 시간 값에 대한 포인터입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 파일 수정 시간을 변경한 경우 이러한 각 함수는 0을 반환합니다. 반환 값-1은 오류를 나타냅니다. 잘못된 매개 변수를 전달하면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는-1을 반환 하 고 **errno** 는 다음 값 중 하나로 설정 됩니다.
 
@@ -131,9 +132,9 @@ int _wutime64(
 
 ## <a name="remarks"></a>설명
 
-**_Utime** 함수는 *filename*에 지정 된 파일의 수정 시간을 설정 합니다. 시간을 변경하려면 프로세스에 파일에 대한 쓰기 권한이 있어야 합니다. Windows 운영 체제에서 **_utimbuf** 구조의 액세스 시간 및 수정 시간을 변경할 수 있습니다. *Times* 가 **NULL** 포인터인 경우에는 수정 시간이 현재 현지 시간으로 설정 됩니다. 그렇지 않으면 *시간은* SYS\UTIME.에 정의 된 **_utimbuf**형식의 구조체를 가리켜야 합니다. 넣기.
+**_Utime** 함수는 *filename* 에 지정 된 파일의 수정 시간을 설정 합니다. 시간을 변경하려면 프로세스에 파일에 대한 쓰기 권한이 있어야 합니다. Windows 운영 체제에서 **_utimbuf** 구조의 액세스 시간 및 수정 시간을 변경할 수 있습니다. *Times* 가 **NULL** 포인터인 경우에는 수정 시간이 현재 현지 시간으로 설정 됩니다. 그렇지 않으면 *시간은* SYS\UTIME.H.에 정의 된 **_utimbuf** 형식의 구조체를 가리켜야 합니다.
 
-**_Utimbuf** 구조는 **_utime** 에서 파일 수정 날짜를 변경 하는 데 사용 되는 파일 액세스 및 수정 시간을 저장 합니다. 구조에는 다음과 같은 필드가 있습니다. 이러한 필드는 모두 **time_t**형식입니다.
+**_Utimbuf** 구조는 **_utime** 에서 파일 수정 날짜를 변경 하는 데 사용 되는 파일 액세스 및 수정 시간을 저장 합니다. 구조에는 다음과 같은 필드가 있습니다. 이러한 필드는 모두 **time_t** 형식입니다.
 
 | 필드 |   |
 |-------|---|
@@ -144,7 +145,7 @@ int _wutime64(
 
 **_utime** 은 **_futime** 와 동일 합니다. 단, **_utime** *의 파일 이름 인수는* 열려 있는 파일의 파일 설명자가 아니라 파일 이름 또는 파일 경로입니다.
 
-**_wutime** 은 **_utime**의 와이드 문자 버전입니다. **_wutime** 에 대 한 *파일 이름* 인수는 와이드 문자열입니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다.
+**_wutime** 은 **_utime** 의 와이드 문자 버전입니다. **_wutime** 에 대 한 *파일 이름* 인수는 와이드 문자열입니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -237,7 +238,7 @@ Directory of C:\test
                0 Dir(s)  20,742,955,008 bytes free
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [시간 관리](../../c-runtime-library/time-management.md)<br/>
 [asctime, _wasctime](asctime-wasctime.md)<br/>

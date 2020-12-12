@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: vector (STL/CLR)'
 title: vector(STL/CLR)
 ms.date: 11/04/2016
 ms.topic: reference
@@ -91,12 +92,12 @@ helpviewer_keywords:
 - value_type member [STL/CLR]
 - vector member [STL/CLR]
 ms.assetid: f90060d5-097a-4e9d-9a26-a634b5b9c6c2
-ms.openlocfilehash: 9abecfa6e0bbdf74514e2b7162d1d22a84fa01b2
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 5997a70fb6b6e37fd4b1ff19c34fdc15750bbe4d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502412"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97298736"
 ---
 # <a name="vector-stlclr"></a>vector(STL/CLR)
 
@@ -247,11 +248,11 @@ void assign(System::Collections::Generic::IEnumerable<Value>^ right);
 
 ### <a name="remarks"></a>설명
 
-첫 번째 멤버 함수는 제어 되는 시퀀스를 값 *val*의 *count* 요소 반복으로 바꿉니다. 이를 사용 하 여 동일한 값을 갖는 요소로 컨테이너를 채웁니다.
+첫 번째 멤버 함수는 제어 되는 시퀀스를 값 *val* 의 *count* 요소 반복으로 바꿉니다. 이를 사용 하 여 동일한 값을 갖는 요소로 컨테이너를 채웁니다.
 
 `InIt`가 정수 형식이 면 두 번째 멤버 함수는와 동일 하 게 동작 합니다 `assign((size_type)first, (value_type)last)` . 그렇지 않으면 제어 되는 시퀀스를 [ `first` ,) 시퀀스로 바꿉니다 `last` . 이를 사용 하 여 제어 되는 시퀀스를 다른 시퀀스로 복사 합니다.
 
-세 번째 멤버 함수는 제어 되는 시퀀스를 열거자 *오른쪽*으로 지정 된 시퀀스로 바꿉니다. 이를 사용 하 여 제어 되는 시퀀스를 열거자에서 설명 하는 시퀀스의 복사본으로 만듭니다.
+세 번째 멤버 함수는 제어 되는 시퀀스를 열거자 *오른쪽* 으로 지정 된 시퀀스로 바꿉니다. 이를 사용 하 여 제어 되는 시퀀스를 열거자에서 설명 하는 시퀀스의 복사본으로 만듭니다.
 
 ### <a name="example"></a>예제
 
@@ -313,7 +314,7 @@ reference at(size_type pos);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 위치 *pos*에서 제어 되는 시퀀스의 요소에 대 한 참조를 반환 합니다. 이를 사용 하 여 위치를 알고 있는 요소를 읽거나 쓸 수 있습니다.
+멤버 함수는 위치 *pos* 에서 제어 되는 시퀀스의 요소에 대 한 참조를 반환 합니다. 이를 사용 하 여 위치를 알고 있는 요소를 읽거나 쓸 수 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -924,7 +925,7 @@ iterator erase(iterator first, iterator last);
 
 ### <a name="remarks"></a>설명
 
-첫 번째 멤버 함수는 where가 가리키는 제어 *되*는 시퀀스의 요소를 제거 합니다. 단일 요소를 제거 하는 데 사용 합니다.
+첫 번째 멤버 함수는 where가 가리키는 제어 *되* 는 시퀀스의 요소를 제거 합니다. 단일 요소를 제거 하는 데 사용 합니다.
 
 두 번째 멤버 함수는 [`first`, `last`]의 범위에서 제어되는 시퀀스의 요소를 제거합니다. 연속 된 요소를 0 개 이상 제거 하는 데 사용 합니다.
 
@@ -1359,11 +1360,11 @@ void insert(iterator where,
 
 첫 번째 멤버 함수는 값 *val* 을 사용 하 여 요소를 삽입 하 고 새로 삽입 된 요소를 지정 하는 반복기를 반환 합니다. 이를 사용 하 여 반복기에서 지정 된 장소 앞에 단일 요소를 삽입 합니다.
 
-두 번째 멤버 함수는 값 *val*의 *count* 요소 반복을 삽입 합니다. 동일한 값의 모든 복사본 인 연속 요소를 0 개 이상 삽입 하는 데 사용 합니다.
+두 번째 멤버 함수는 값 *val* 의 *count* 요소 반복을 삽입 합니다. 동일한 값의 모든 복사본 인 연속 요소를 0 개 이상 삽입 하는 데 사용 합니다.
 
 `InIt`가 정수 형식이면 세 번째 멤버 함수는 `insert(where, (size_type)first, (value_type)last)`와 동일하게 동작합니다. 그렇지 않으면 [,) 시퀀스를 `first` 삽입 `last` 합니다. 이를 사용 하 여 다른 시퀀스에서 복사 된 0 개 이상의 연속 요소를 삽입 합니다.
 
-네 번째 멤버 함수는 *오른쪽*에 지정 된 시퀀스를 삽입 합니다. 이를 사용 하 여 열거자에서 설명 하는 시퀀스를 삽입 합니다.
+네 번째 멤버 함수는 *오른쪽* 에 지정 된 시퀀스를 삽입 합니다. 이를 사용 하 여 열거자에서 설명 하는 시퀀스를 삽입 합니다.
 
 단일 요소를 삽입할 때 요소 복사본의 수는 삽입 지점과 시퀀스의 가까운 끝 사이에 있는 요소 수의 선형입니다. 시퀀스의 한쪽 끝에 하나 이상의 요소를 삽입 하는 경우 요소 복사는 발생 하지 않습니다. `InIt` 가 입력 반복기 인 경우 세 번째 멤버 함수는 시퀀스의 각 요소에 대 한 단일 삽입을 효과적으로 수행 합니다. 그렇지 않은 경우 `N` 요소를 삽입할 때 요소 복사본의 수는 선형이 `N` 고 삽입 지점과 시퀀스의 끝 부분 사이에 있는 요소 수를 더한 값입니다.
 
@@ -1493,7 +1494,7 @@ vector<Value>% operator=(vector<Value>% right);
 
 ### <a name="remarks"></a>설명
 
-멤버 연산자는 개체에 대해 *를 복사 하 고를 반환* **`*this`** 합니다. 이를 사용 하 여 제어 되는 시퀀스를 *오른쪽*에 있는 제어 되는 시퀀스의 복사본으로 바꿉니다.
+멤버 연산자는 개체에 대해 *를 복사 하 고를 반환* **`*this`** 합니다. 이를 사용 하 여 제어 되는 시퀀스를 *오른쪽* 에 있는 제어 되는 시퀀스의 복사본으로 바꿉니다.
 
 ### <a name="example"></a>예제
 
@@ -1546,7 +1547,7 @@ reference operator[](size_type pos);
 
 ### <a name="remarks"></a>설명
 
-멤버 연산자는 위치 *pos*의 요소에 대 한 referene를 반환 합니다. 이를 사용 하 여 위치를 알고 있는 요소에 액세스 합니다.
+멤버 연산자는 위치 *pos* 의 요소에 대 한 referene를 반환 합니다. 이를 사용 하 여 위치를 알고 있는 요소에 액세스 합니다.
 
 ### <a name="example"></a>예제
 
@@ -1851,7 +1852,7 @@ void reserve(size_type count);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 예측이가 `capacity()` 최소 *개수*를 반환 하는지 확인 합니다. 이를 사용 하 여 컨테이너가 지정 된 크기로 증가 될 때까지 제어 되는 시퀀스에 대 한 저장소를 다시 할당할 필요가 없도록 할 수 있습니다.
+멤버 함수는 예측이가 `capacity()` 최소 *개수* 를 반환 하는지 확인 합니다. 이를 사용 하 여 컨테이너가 지정 된 크기로 증가 될 때까지 제어 되는 시퀀스에 대 한 저장소를 다시 할당할 필요가 없도록 할 수 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -1910,7 +1911,7 @@ void resize(size_type new_size, value_type val);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 [vector:: size (STL/CLR)](#size) `()` 예측이가 *new_size*를 반환 하는지 확인 합니다. 제어 되는 시퀀스를 더 길게 만들어야 하는 경우 첫 번째 멤버 함수는 값 `value_type()` 이 인 요소를 추가 하는 반면 두 번째 멤버 함수는 값 *val*을 사용 하 여 요소를 추가 합니다. 제어 되는 시퀀스를 더 짧게 만들기 위해 두 멤버 함수는 마지막 요소 [vector:: size (STL/CLR)](#size) 시간을 효과적으로 지웁니다 `() -` `new_size` . 이를 사용 하 여 제어 되는 시퀀스의 크기 *new_size*현재 제어 되는 시퀀스를 트리밍 또는 패딩 하 여 확인 합니다.
+멤버 함수는 [vector:: size (STL/CLR)](#size) `()` 예측이가 *new_size* 를 반환 하는지 확인 합니다. 제어 되는 시퀀스를 더 길게 만들어야 하는 경우 첫 번째 멤버 함수는 값 `value_type()` 이 인 요소를 추가 하는 반면 두 번째 멤버 함수는 값 *val* 을 사용 하 여 요소를 추가 합니다. 제어 되는 시퀀스를 더 짧게 만들기 위해 두 멤버 함수는 마지막 요소 [vector:: size (STL/CLR)](#size) 시간을 효과적으로 지웁니다 `() -` `new_size` . 이를 사용 하 여 제어 되는 시퀀스의 크기 *new_size* 현재 제어 되는 시퀀스를 트리밍 또는 패딩 하 여 확인 합니다.
 
 ### <a name="example"></a>예제
 
@@ -2113,7 +2114,7 @@ void swap(vector<Value>% right);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 제어 되는 시퀀스를 **`*this`** 과 *오른쪽*으로 바꿉니다. 일정 한 시간에이를 수행 하 고 예외를 throw 하지 않습니다. 이를 사용 하 여 두 컨테이너의 콘텐츠를 신속 하 게 교환할 수 있습니다.
+멤버 함수는 제어 되는 시퀀스를 **`*this`** 과 *오른쪽* 으로 바꿉니다. 일정 한 시간에이를 수행 하 고 예외를 throw 하지 않습니다. 이를 사용 하 여 두 컨테이너의 콘텐츠를 신속 하 게 교환할 수 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -2221,7 +2222,7 @@ typedef Value value_type;
 
 ### <a name="remarks"></a>설명
 
-형식은 템플릿 매개 변수 *값*의 동의어입니다.
+형식은 템플릿 매개 변수 *값* 의 동의어입니다.
 
 ### <a name="example"></a>예제
 
@@ -2300,13 +2301,13 @@ vector(System::Collections::Generic::IEnumerable<Value>^ right);
 
 `vector(vector<Value>% right);`
 
-시퀀스 [,)를 사용 하 여 제어 되는 시퀀스를 초기화 `right.begin()` `right.end()` 합니다. 이를 사용 하 여 벡터 개체 *오른쪽*에 의해 제어 되는 시퀀스의 복사본 인 초기 제어 되는 시퀀스를 지정 합니다.
+시퀀스 [,)를 사용 하 여 제어 되는 시퀀스를 초기화 `right.begin()` `right.end()` 합니다. 이를 사용 하 여 벡터 개체 *오른쪽* 에 의해 제어 되는 시퀀스의 복사본 인 초기 제어 되는 시퀀스를 지정 합니다.
 
 생성자는 다음과 같습니다.
 
 `vector(vector<Value>^ right);`
 
-시퀀스 [,)를 사용 하 여 제어 되는 시퀀스를 초기화 `right->begin()` `right->end()` 합니다. 이를 사용 하 여 핸들이 *오른쪽*에 있는 vector 개체에 의해 제어 되는 시퀀스의 복사본 인 초기 제어 되는 시퀀스를 지정 합니다.
+시퀀스 [,)를 사용 하 여 제어 되는 시퀀스를 초기화 `right->begin()` `right->end()` 합니다. 이를 사용 하 여 핸들이 *오른쪽* 에 있는 vector 개체에 의해 제어 되는 시퀀스의 복사본 인 초기 제어 되는 시퀀스를 지정 합니다.
 
 생성자는 다음과 같습니다.
 
@@ -2318,7 +2319,7 @@ vector(System::Collections::Generic::IEnumerable<Value>^ right);
 
 `vector(size_type count, value_type val);`
 
-각 값이 *val*인 *count* 요소를 사용 하 여 제어 되는 시퀀스를 초기화 합니다. 이를 사용 하 여 동일한 값을 갖는 요소로 컨테이너를 채웁니다.
+각 값이 *val* 인 *count* 요소를 사용 하 여 제어 되는 시퀀스를 초기화 합니다. 이를 사용 하 여 동일한 값을 갖는 요소로 컨테이너를 채웁니다.
 
 생성자는 다음과 같습니다.
 
@@ -2332,7 +2333,7 @@ vector(System::Collections::Generic::IEnumerable<Value>^ right);
 
 `vector(System::Collections::Generic::IEnumerable<Value>^ right);`
 
-열거자 *권한*으로 지정 된 시퀀스를 사용 하 여 제어 되는 시퀀스를 초기화 합니다. 이를 사용 하 여 제어 되는 시퀀스를 열거자에서 설명한 다른 시퀀스의 복사본으로 만듭니다.
+열거자 *권한* 으로 지정 된 시퀀스를 사용 하 여 제어 되는 시퀀스를 초기화 합니다. 이를 사용 하 여 제어 되는 시퀀스를 열거자에서 설명한 다른 시퀀스의 복사본으로 만듭니다.
 
 ### <a name="example"></a>예제
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _mbbtombc, _mbbtombc_l'
 title: _mbbtombc, _mbbtombc_l
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - _mbbtombc_l function
 - _mbbtombc function
 ms.assetid: 78593389-b0fc-43b6-8c1f-2a6bf702d64e
-ms.openlocfilehash: b2088ea83729a74a60e75d1710529480f34cd638
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 20aa3c9abdc9d4dad1f6da50abdb9977f2b22694
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919598"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299656"
 ---
 # <a name="_mbbtombc-_mbbtombc_l"></a>_mbbtombc, _mbbtombc_l
 
@@ -68,9 +69,9 @@ unsigned int _mbbtombc_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-**_Mbbtombc** *c*를 성공적으로 변환 하는 경우 멀티 바이트 문자를 반환 합니다. 그렇지 않으면 *c*를 반환 합니다.
+**_Mbbtombc** *c* 를 성공적으로 변환 하는 경우 멀티 바이트 문자를 반환 합니다. 그렇지 않으면 *c* 를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
@@ -78,7 +79,7 @@ unsigned int _mbbtombc_l(
 
 출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따라 영향을 받습니다. 자세한 내용은 [setlocale, _wsetlocale를](setlocale-wsetlocale.md) 참조 하세요. 이 함수의 버전은 **_mbbtombc** 이 로캘 종속 동작에 현재 로캘을 사용 하 **_mbbtombc_l** 고 대신 전달 된 로캘 매개 변수를 대신 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-이전 버전에서는 **_mbbtombc** 이름이 **hantozen**입니다. 새 코드의 경우 **_mbbtombc**를 사용 합니다.
+이전 버전에서는 **_mbbtombc** 이름이 **hantozen** 입니다. 새 코드의 경우 **_mbbtombc** 를 사용 합니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -91,7 +92,7 @@ unsigned int _mbbtombc_l(
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [데이터 변환](../../c-runtime-library/data-conversion.md)<br/>
 [_mbctombb, _mbctombb_l](mbctombb-mbctombb-l.md)<br/>

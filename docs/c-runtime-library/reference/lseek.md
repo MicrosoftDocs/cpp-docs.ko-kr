@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: lseek'
 title: lseek
 ms.date: 12/16/2019
 api_name:
@@ -23,15 +24,15 @@ f1_keywords:
 helpviewer_keywords:
 - lseek function
 ms.assetid: 137d7741-5c2e-443e-811a-6a01417fcae7
-ms.openlocfilehash: 1d497f8a7a379191b20262043299e6bcc9c5b3a0
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 9f81e26d55e3ccedfc65d88f3d9f7605fe8cc894
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75299132"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299932"
 ---
 # <a name="lseek"></a>lseek
 
-Microsoft에서 구현한 POSIX 함수 이름 `lseek`은 [_lseek](lseek-lseeki64.md) 함수에 사용 되지 않는 별칭입니다. 기본적으로 [컴파일러 경고 (수준 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)를 생성 합니다. 이름은 구현 관련 이름에 대해 표준 C 규칙을 따르지 않으므로 사용 되지 않습니다. 그러나 함수는 여전히 지원 됩니다.
+Microsoft에서 구현한 POSIX 함수 이름은 `lseek` [_lseek](lseek-lseeki64.md) 함수에 사용 되지 않는 별칭입니다. 기본적으로 [컴파일러 경고 (수준 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)를 생성 합니다. 이름은 구현 관련 이름에 대해 표준 C 규칙을 따르지 않으므로 사용 되지 않습니다. 그러나 함수는 여전히 지원 됩니다.
 
 대신 [_lseek](lseek-lseeki64.md) 를 사용 하는 것이 좋습니다. 또는이 함수 이름을 계속 사용 하 고 경고를 사용 하지 않도록 설정할 수 있습니다. 자세한 내용은 [경고](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#turn-off-the-warning) 및 [POSIX 함수 이름](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#posix-function-names)해제를 참조 하세요.

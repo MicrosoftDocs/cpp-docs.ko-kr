@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _mbccpy, _mbccpy_l'
 title: _mbccpy, _mbccpy_l
 ms.date: 4/2/2020
 api_name:
@@ -40,12 +41,12 @@ helpviewer_keywords:
 - _mbccpy function
 - mbccpy_l function
 ms.assetid: 13f4de6e-7792-41ac-b319-dd9b135433aa
-ms.openlocfilehash: a265a37ba4c16dd15e6b50035dcc65bc8afbe7c7
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: a5d63a2d4ccd623d035fdc423774d6a344d107f8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919574"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299594"
 ---
 # <a name="_mbccpy-_mbccpy_l"></a>_mbccpy, _mbccpy_l
 
@@ -81,9 +82,9 @@ void _mbccpy_l(
 
 ## <a name="remarks"></a>설명
 
-**_Mbccpy** 함수는 *src* 에서 *dest*로 하나의 멀티 바이트 문자를 복사 합니다.
+**_Mbccpy** 함수는 *src* 에서 *dest* 로 하나의 멀티 바이트 문자를 복사 합니다.
 
-이 함수는 해당 매개 변수의 유효성을 검사합니다. *대상* 또는 *src*에 대해 null 포인터가 **_Mbccpy** 에 전달 된 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 는 **EINVAL**로 설정 됩니다.
+이 함수는 해당 매개 변수의 유효성을 검사합니다. *대상* 또는 *src* 에 대해 null 포인터가 **_Mbccpy** 에 전달 된 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 는 **EINVAL** 로 설정 됩니다.
 
 **_mbccpy** 은 모든 로캘 종속 동작에 현재 로캘을 사용 합니다. **_mbccpy_l** 은 모든 로캘 종속 동작에 대해 전달 된 로캘을 사용 **_mbccpy_l** 한다는 점을 제외 하 고 **_mbccpy** 와 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
@@ -107,8 +108,8 @@ void _mbccpy_l(
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Locale](../../c-runtime-library/locale.md)<br/>
-[멀티 바이트 문자 시퀀스 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[로캘](../../c-runtime-library/locale.md)<br/>
+[Multibyte-Character 시퀀스의 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 함수 만들기'
 title: Make 함수
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - Make function
 ms.assetid: 66704143-df99-4a95-904d-ed99607e1034
-ms.openlocfilehash: 0f2e81e3cd757214805817af2a355a93c1cfd096
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bb83c6c163440f911bc625a8646d1758442b25f6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220472"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97298905"
 ---
 # <a name="make-function"></a>Make 함수
 
@@ -221,7 +222,7 @@ ComPtr<T> Make();
 *arg9*<br/>
 지정 된 런타임 클래스로 전달 되는 인수 9입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 `ComPtr<T>`성공 하면 개체이 고, 그렇지 않으면 **`nullptr`** 입니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _tell, _telli64'
 title: _tell, _telli64
 ms.date: 4/2/2020
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - telli64 function
 - _telli64 function
 ms.assetid: 1500e8f9-8fec-4253-9eec-ec66125dfc9b
-ms.openlocfilehash: 27653f7b65acd1681cc96a99576a416a211fcd19
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: d82b79a65edb7c88944336604ed329d67876094a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912252"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299555"
 ---
 # <a name="_tell-_telli64"></a>_tell, _telli64
 
@@ -62,7 +63,7 @@ __int64 _telli64(
 *처리*<br/>
 열려 있는 파일을 참조하는 파일 설명자입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 파일 포인터의 현재 위치입니다. 검색을 수행할 수 없는 디바이스에서는 반환 값이 정의되지 않습니다.
 
@@ -132,6 +133,6 @@ Current file position is: 20
 
 ## <a name="see-also"></a>참조
 
-[하위 수준 I/O](../../c-runtime-library/low-level-i-o.md)<br/>
+[하위 수준 i/o](../../c-runtime-library/low-level-i-o.md)<br/>
 [ftell, _ftelli64](ftell-ftelli64.md)<br/>
 [_lseek, _lseeki64](lseek-lseeki64.md)<br/>
