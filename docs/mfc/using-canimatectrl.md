@@ -1,4 +1,5 @@
 ---
+description: CAnimateCtrl 사용에 대 한 자세한 정보
 title: CAnimateCtrl 사용
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - controls [MFC], animation
 - CAnimateCtrl class [MFC], about CAnimateCtrl class [MFC]
 ms.assetid: 696c0805-bef0-4e2e-a9e7-b37b9215b7f0
-ms.openlocfilehash: 79c1a0111317514ef6fd68acd0c6a2ebdccc3ba4
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: bb13d23f45b3a19516a688fd9e9857f750196d56
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79447110"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271787"
 ---
 # <a name="using-canimatectrl"></a>CAnimateCtrl 사용
 
@@ -21,11 +22,11 @@ AVI 클립이 표시 되는 동안 스레드가 계속 실행 되므로 애니�
 
 애니메이션 컨트롤은 간단한 AVI 클립만 재생할 수 있으며 소리를 지원 하지 않습니다. (제한 사항에 대 한 전체 목록은 [CAnimateCtrl](../mfc/reference/canimatectrl-class.md)를 참조 하세요.) 애니메이션 컨트롤의 기능은 심각 하 게 제한 되며 변경 될 수 있으므로 멀티미디어 재생 및/또는 기록 기능을 제공 하는 컨트롤이 필요한 경우에는 MCIWnd 컨트롤과 같은 대안을 사용 해야 합니다. MCIWnd 컨트롤에 대 한 자세한 내용은 멀티미디어 설명서를 참조 하세요.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아야 할 내용
 
 - [애니메이션 컨트롤 사용](../mfc/using-an-animation-control.md)
 
-- [애니메이션 컨트롤이 보내는 알림](../mfc/notifications-sent-by-animation-controls.md)
+- [애니메이션 컨트롤에서 보내는 알림](../mfc/notifications-sent-by-animation-controls.md)
 
 ## <a name="see-also"></a>참고 항목
 

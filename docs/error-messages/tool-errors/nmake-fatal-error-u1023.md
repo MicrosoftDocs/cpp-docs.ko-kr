@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: NMAKE 심각한 오류 U1023'
 title: NMAKE 심각한 오류 U1023
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - U1023
 ms.assetid: 22d4c469-85da-43ee-86d1-171b1b99217d
-ms.openlocfilehash: bb25073cdb0a5fe2561d11d4fc6f86540e798049
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f1e57ee65f797c952104c71045648a645b22f8bd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80173415"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97272177"
 ---
 # <a name="nmake-fatal-error-u1023"></a>NMAKE 심각한 오류 U1023
 

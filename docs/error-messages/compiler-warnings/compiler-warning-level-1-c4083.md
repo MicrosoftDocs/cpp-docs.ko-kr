@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4083'
 title: 컴파일러 경고 (수준 1) C4083
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4083
 ms.assetid: e7d3344e-5645-4d56-8460-d1acc9145ada
-ms.openlocfilehash: 6376f6f67370b68f84cad1eadbf7f0ae40de7a16
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 2913e4a55b7c777ae4c910631b8fb10120dd3463
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80200293"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97272333"
 ---
 # <a name="compiler-warning-level-1-c4083"></a>컴파일러 경고 (수준 1) C4083
 

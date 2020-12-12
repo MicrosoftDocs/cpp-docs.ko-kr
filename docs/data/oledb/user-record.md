@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 사용자 레코드'
 title: 사용자 레코드
 ms.date: 05/09/2019
 helpviewer_keywords:
@@ -8,19 +9,19 @@ helpviewer_keywords:
 - user records, described
 - rowsets, user record
 ms.assetid: 9c0d2864-2738-4f62-a750-1016d9c3523f
-ms.openlocfilehash: 4a8fb6c9eeee3736501a04a095bdd763de16de7d
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: f858660800391eff45cb88115f8fb09afa26a77f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80078998"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97272502"
 ---
 # <a name="user-record"></a>사용자 레코드
 
 > [!NOTE]
 > Visual Studio 2019 이상에서는 ATL OLE DB 공급자 마법사를 사용할 수 없습니다.
 
-사용자 레코드는 행 집합의 열 데이터를 나타내는 코드 및 데이터 구조를 제공합니다. 컴파일 시간이나 런타임에 사용자 레코드를 만들 수 있습니다. **ATL OLE DB 공급자 마법사**를 사용하여 공급자를 만드는 경우, 마법사에서 다음과 같은 기본 사용자 레코드를 만듭니다(공급자 이름(짧은 이름)으로 *MyProvider*를 지정했다고 가정).
+사용자 레코드는 행 집합의 열 데이터를 나타내는 코드 및 데이터 구조를 제공합니다. 컴파일 시간이나 런타임에 사용자 레코드를 만들 수 있습니다. **ATL OLE DB 공급자 마법사** 를 사용하여 공급자를 만드는 경우, 마법사에서 다음과 같은 기본 사용자 레코드를 만듭니다(공급자 이름(짧은 이름)으로 *MyProvider* 를 지정했다고 가정).
 
 ```cpp
 class CWindowsFile:
@@ -71,4 +72,4 @@ PROVIDER_COLUMN_MAP 매크로는 `GetColumnInfo` 함수를 만드는 데 도움�
 
 ## <a name="see-also"></a>참고 항목
 
-[OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)<br/>
+[OLE DB 공급자 템플릿 아키텍처](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CHotKeyCtrl 사용'
 title: CHotKeyCtrl 사용
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - CHotKeyCtrl class [MFC], using
 - hot key controls
 ms.assetid: 9b207117-d848-4224-8888-c3d197bb0c95
-ms.openlocfilehash: e2002d96a1eba913e260fa92281f730355a83ca5
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 7f17063a4fb3732a9b121e2b93f5d55e51d5654a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79447247"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271683"
 ---
 # <a name="using-chotkeyctrl"></a>CHotKeyCtrl 사용
 
@@ -19,7 +20,7 @@ ms.locfileid: "79447247"
 
 핫 키 컨트롤을 사용 하 여 창 또는 스레드와 연결할 핫 키에 대 한 사용자의 입력을 가져옵니다. 핫 키 컨트롤은 사용자에 게 바로 가기 키를 할당 하도록 요청할 때 표시할 수 있는 대화 상자에서 자주 사용 됩니다. 핫 키 컨트롤에서 바로 가기 키를 설명 하는 값을 검색 하 고 적절 한 함수를 호출 하 여 창 또는 스레드에 핫 키를 연결 하는 것은 프로그램의 책임입니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아야 할 내용
 
 - [바로 가기 키 컨트롤 사용](../mfc/using-a-hot-key-control.md)
 

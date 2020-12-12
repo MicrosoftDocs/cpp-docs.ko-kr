@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: SafeInt 클래스'
 title: SafeInt 클래스
 ms.date: 10/22/2018
 ms.topic: reference
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - SafeInt class
 - SafeInt class, constructor
 ms.assetid: 27a8f087-2511-46f9-8d76-2aeb66ca272f
-ms.openlocfilehash: d61ce20a8644ca64d37c0eca605d52fb308c0863
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: b5ee9147347f2c01ff05fd93b8b22ea3ce30ee37
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88560963"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271332"
 ---
 # <a name="safeint-class"></a>SafeInt 클래스
 
@@ -55,7 +56,7 @@ class SafeInt;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-| 이름                          |  Description |
+| 이름                          |  설명 |
 |---------------------------|--------------------|
 | [SafeInt::SafeInt](#safeint)  |  기본 생성자입니다. |
 
@@ -281,13 +282,13 @@ SafeInt (const U& i)
 [in] 새로운 `SafeInt` 개체의 부울 값입니다.
 
 `u`<br/>
-[in] U 형식의 `SafeInt`입니다. 새로운 `SafeInt` 개체는 *u*와 동일한 값을 갖지만 T 형식입니다.
+[in] U 형식의 `SafeInt`입니다. 새로운 `SafeInt` 개체는 *u* 와 동일한 값을 갖지만 T 형식입니다.
 
 `U` 에 저장 된 데이터의 형식 `SafeInt` 입니다. 부울, 문자 또는 정수 형식일 수 있습니다. 정수 형식인 경우 signed 또는 unsigned가 될 수 있으며 8 비트에서 64 비트 사이 여야 합니다.
 
 ### <a name="remarks"></a>설명
 
-생성자 *i* 또는 *u*의 입력 매개 변수는 부울, 문자 또는 정수 형식이어야 합니다. 다른 형식의 매개 변수인 경우 `SafeInt` 클래스는 [static_assert](../cpp/static-assert.md) 를 호출 하 여 잘못 된 입력 매개 변수를 표시 합니다.
+생성자 *i* 또는 *u* 의 입력 매개 변수는 부울, 문자 또는 정수 형식이어야 합니다. 다른 형식의 매개 변수인 경우 `SafeInt` 클래스는 [static_assert](../cpp/static-assert.md) 를 호출 하 여 잘못 된 입력 매개 변수를 표시 합니다.
 
 템플릿 형식 `U`를 사용하는 생성자는 입력 매개 변수를 `T`에 지정된 형식으로 자동 변환합니다. `SafeInt` 클래스에서 데이터 손실 없이 데이터를 변환합니다. 데이터 `E` 손실 없이 데이터를 형식으로 변환할 수 없는 경우 오류 처리기에 보고 합니다 `T` .
 

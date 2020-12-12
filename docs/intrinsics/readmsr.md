@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __readmsr'
 title: __readmsr
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - rdmsr instruction
 - __readmsr intrinsic
 ms.assetid: 7ab1f8e8-72cb-4ce4-817d-3e728a3c9716
-ms.openlocfilehash: 029119bc47d0172c7e9cc5fbf8cd20c4ee23e0f0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1a8acae272a450cb4470744e434277576cc8b9c4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219653"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271917"
 ---
 # <a name="__readmsr"></a>__readmsr
 

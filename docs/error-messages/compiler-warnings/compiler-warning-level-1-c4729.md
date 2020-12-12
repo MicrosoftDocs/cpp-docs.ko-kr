@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4729'
 title: 컴파일러 경고(수준 1) C4729
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4729
 ms.assetid: 36a0151f-f258-48d9-9444-ae6d41ff70a4
-ms.openlocfilehash: e78606f117251fa8ab1f08f2cef280a266309c32
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: de4da8a56f4b8c6788b972a154e8670c14c07d68
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80185830"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97272216"
 ---
 # <a name="compiler-warning-level-1-c4729"></a>컴파일러 경고(수준 1) C4729
 

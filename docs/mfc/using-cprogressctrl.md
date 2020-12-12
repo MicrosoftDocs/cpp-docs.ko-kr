@@ -1,4 +1,5 @@
 ---
+description: CProgressCtrl 사용에 대 한 자세한 정보
 title: CProgressCtrl 사용
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - progress controls [MFC], CProgressCtrl
 - progress controls [MFC], using
 ms.assetid: 61473270-196b-41ab-bf2b-467f46673539
-ms.openlocfilehash: a575a766650a77b0908f0fa3016139239b23dc56
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 652349a62d62652db32fbe002cdc714ac7ca1420
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79441897"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271631"
 ---
 # <a name="using-cprogressctrl"></a>CProgressCtrl 사용
 
@@ -22,11 +23,11 @@ ms.locfileid: "79441897"
 
 진행률 컨트롤을 처음 만들 때 크기 및 위치, 부모 창 (일반적으로 대화 상자) 및 ID를 지정 합니다. *Dwstyle* 매개 변수를 사용 하 여 컨트롤에 대 한 다양 한 창 스타일을 지정 하 고 채우기 방법에 대 한 스타일을 지정할 수도 있습니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아야 할 내용
 
-- [진행률 컨트롤 스타일](../mfc/styles-for-the-progress-control.md)
+- [진행률 컨트롤에 대 한 스타일](../mfc/styles-for-the-progress-control.md)
 
-- [진행률 컨트롤에 대한 설정](../mfc/settings-for-the-progress-control.md)
+- [진행률 컨트롤에 대 한 설정](../mfc/settings-for-the-progress-control.md)
 
 - [진행률 컨트롤 조작](../mfc/manipulating-the-progress-control.md)
 

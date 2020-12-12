@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 연습: 간단한 작업을 사용 하기 위해 기존 코드 조정'
 title: '연습: 간단한 작업을 사용하기 위해 기존 코드 조정'
 ms.date: 04/25/2019
 helpviewer_keywords:
 - using lightweight tasks [Concurrency Runtime]
 - lightweight tasks, using [Concurrency Runtime]
 ms.assetid: 1edfe818-d274-46de-bdd3-e92967c9bbe0
-ms.openlocfilehash: 7ce18b54835b2380d3baee77b00a670351e3279f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1c3de0f49dc1edc3392a436bb911e005ef84bcf0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224918"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271410"
 ---
 # <a name="walkthrough-adapting-existing-code-to-use-lightweight-tasks"></a>연습: 간단한 작업을 사용하기 위해 기존 코드 조정
 
@@ -18,7 +19,7 @@ ms.locfileid: "87224918"
 
 *간단한 작업* 은 [Concurrency:: Scheduler](../../parallel/concrt/reference/scheduler-class.md) 또는 [concurrency:: ScheduleGroup](../../parallel/concrt/reference/schedulegroup-class.md) 개체에서 직접 예약 하는 작업입니다. 간단한 작업은 동시성 런타임의 일정 예약 기능을 사용하도록 기존 코드를 조정하는 경우에 유용합니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 이 연습을 시작 하기 전에 [작업 스케줄러](../../parallel/concrt/task-scheduler-concurrency-runtime.md)항목을 참조 하세요.
 
@@ -84,5 +85,5 @@ Parameters = 50, 100
 
 ## <a name="see-also"></a>참고 항목
 
-[작업 스케줄러](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
+[작업 Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 [Scheduler 클래스](../../parallel/concrt/reference/scheduler-class.md)

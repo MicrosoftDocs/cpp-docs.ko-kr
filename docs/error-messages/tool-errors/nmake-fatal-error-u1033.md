@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: NMAKE 심각한 오류 U1033'
 title: NMAKE 심각한 오류 U1033
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - U1033
 ms.assetid: c146f7b5-7d5c-4329-a522-28a648546016
-ms.openlocfilehash: 4511b15c84479c3531a3bea85964e2768de0181f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e616e98a21c92137fab4b167318a9305a2175bb2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80173389"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97272138"
 ---
 # <a name="nmake-fatal-error-u1033"></a>NMAKE 심각한 오류 U1033
 
@@ -27,13 +28,13 @@ ms.locfileid: "80173389"
     syntax error : 'EOF' unexpected
     ```
 
-1. 메이크파일의 매크로 정의에 앞의 이름 없이 등호 ( **=** )가 포함 되어 있거나 정의 되는 이름이 nothing으로 확장 되는 매크로 인 경우 다음 오류가 발생 합니다.
+1. 메이크파일의 매크로 정의에 앞의 이름 없이 등호 ()가 포함 되어 **=** 있거나 정의 되는 이름이 nothing으로 확장 되는 매크로 인 경우 다음 오류가 발생 합니다.
 
     ```
     syntax error : '=' unexpected
     ```
 
-1. 도구의 주석 줄에 세미콜론 ( **;** )이 있으면입니다. INI는 줄의 시작 부분에 있지 않으며 다음과 같은 오류가 발생 합니다.
+1. TOOLS.INI의 주석 줄에 있는 세미콜론 (**;**)이 줄의 시작 부분에 없으면 다음 오류가 발생 합니다.
 
     ```
     syntax error : ';' unexpected

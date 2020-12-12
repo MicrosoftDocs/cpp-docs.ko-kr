@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CObject 사용'
 title: CObject 사용
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,16 +9,16 @@ helpviewer_keywords:
 - MFC, base class
 - CObject class [MFC]
 ms.assetid: d0cd19bb-2856-4b41-abbc-620fd64cb223
-ms.openlocfilehash: b5399f02819407a529fd5ec66d4f5acbb16ca002
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 203e2a498f787f23de21db4469e5cdd7c5543761
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79441929"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271644"
 ---
 # <a name="using-cobject"></a>CObject 사용
 
-[CObject](../mfc/reference/cobject-class.md) 는 대부분의 MFC 라이브러리 (MFC)에 대 한 루트 기본 클래스입니다. `CObject` 클래스에는 serialization 지원, 런타임 클래스 정보 및 개체 진단 출력을 포함 하 여 고유한 프로그램 개체에 통합 하려는 많은 유용한 기능이 포함 되어 있습니다. `CObject`에서 클래스를 파생 하는 경우 클래스는 이러한 `CObject` 기능을 이용할 수 있습니다.
+[CObject](../mfc/reference/cobject-class.md) 는 대부분의 MFC 라이브러리 (MFC)에 대 한 루트 기본 클래스입니다. 클래스에는 `CObject` serialization 지원, 런타임 클래스 정보 및 개체 진단 출력을 포함 하 여 고유한 프로그램 개체에 통합 하려는 많은 유용한 기능이 포함 되어 있습니다. 에서 클래스를 파생 하는 경우 `CObject` 클래스에서 이러한 기능을 사용할 수 있습니다 `CObject` .
 
 ## <a name="what-do-you-want-to-do"></a>뭘 하고 싶으세요
 
@@ -43,4 +44,4 @@ ms.locfileid: "79441929"
 [일반 MFC 항목](../mfc/general-mfc-topics.md)<br/>
 [CRuntimeClass 구조체](../mfc/reference/cruntimeclass-structure.md)<br/>
 [파일](../mfc/files-in-mfc.md)<br/>
-[직렬화](../mfc/serialization-in-mfc.md)
+[serialization](../mfc/serialization-in-mfc.md)

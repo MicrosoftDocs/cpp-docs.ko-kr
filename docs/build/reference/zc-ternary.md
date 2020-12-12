@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: `/Zc:ternary` (조건부 연산자 규칙 적용)'
 title: /Zc:ternary(조건 연산자 규칙 적용)
 ms.date: 09/12/2019
 f1_keywords:
@@ -7,24 +8,24 @@ helpviewer_keywords:
 - /Zc:ternary
 - Zc:ternary
 - -Zc:ternary
-ms.openlocfilehash: 04bd0c49528d86ddd4d1e6c77804cf64278db188
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ea1cf57aa1633e08095dfd01964a2255cb0b3c70
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211881"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271319"
 ---
-# <a name="zcternary-enforce-conditional-operator-rules"></a>`/Zc:ternary`(조건부 연산자 규칙 적용)
+# <a name="zcternary-enforce-conditional-operator-rules"></a>`/Zc:ternary` (조건부 연산자 규칙 적용)
 
 조건 연산자 식에서 두 번째 및 세 번째 피연산자의 형식 및 const 또는 volatile (cv) 자격에 대 한 c + + 표준 규칙의 적용을 사용 하도록 설정 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **`/Zc:ternary`**[**`-`**]
 
 ## <a name="remarks"></a>설명
 
-Visual Studio 2017부터 컴파일러는 c + + 표준 *조건부 연산자* ( **`?:`** ) 동작을 지원 합니다. *삼항 연산자*라고도 합니다. C + + 표준에는 세 가지 조건 중 하나를 충족 해야 합니다. 피연산자는 동일한 형식 및 **`const`** 또는 **`volatile`** 정규화 (cv 한정자)를 사용 해야 합니다. 또는 하나의 피연산자만 다른 형식 및 cv 자격으로 명확 하 게 변환할 수 있어야 합니다. 또는 두 피연산자 중 하나 또는 둘 다 throw 식 이어야 합니다. Visual Studio 2017 버전 15.5 이전 버전에서 컴파일러는 표준에 의해 모호한 것으로 간주 되는 변환을 허용 했습니다.
+Visual Studio 2017부터 컴파일러는 c + + 표준 *조건부 연산자* ( **`?:`** ) 동작을 지원 합니다. *삼항 연산자* 라고도 합니다. C + + 표준에는 세 가지 조건 중 하나를 충족 해야 합니다. 피연산자는 동일한 형식 및 **`const`** 또는 **`volatile`** 정규화 (cv 한정자)를 사용 해야 합니다. 또는 하나의 피연산자만 다른 형식 및 cv 자격으로 명확 하 게 변환할 수 있어야 합니다. 또는 두 피연산자 중 하나 또는 둘 다 throw 식 이어야 합니다. Visual Studio 2017 버전 15.5 이전 버전에서 컴파일러는 표준에 의해 모호한 것으로 간주 되는 변환을 허용 했습니다.
 
 **`/Zc:ternary`** 옵션이 지정 된 경우 컴파일러는 표준에 부합 합니다. 일치 하는 형식에 대 한 규칙 및 두 번째와 세 번째 피연산자의 cv 한정자를 충족 하지 않는 코드를 거부 합니다.
 
@@ -157,8 +158,8 @@ Visual C++의 규칙과 관련된 문제에 대한 자세한 내용은 [Nonstand
 
 1. **구성 속성**  >  **C/c + +**  >  **명령줄** 속성 페이지를 선택 합니다.
 
-1. 또는를 포함 하도록 **추가 옵션** 속성을 수정한 **`/Zc:ternary`** **`/Zc:ternary-`** 다음 **확인**을 선택 합니다.
+1. 또는를 포함 하도록 **추가 옵션** 속성을 수정한 **`/Zc:ternary`** **`/Zc:ternary-`** 다음 **확인** 을 선택 합니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[`/Zc`규칙](zc-conformance.md)
+[`/Zc` 규칙](zc-conformance.md)
