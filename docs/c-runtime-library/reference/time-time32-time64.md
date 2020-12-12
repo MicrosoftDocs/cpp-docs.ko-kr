@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 시간, _time32, _time64'
 title: time, _time32, _time64
 ms.date: 11/06/2018
 api_name:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - system time
 - time64 function
 ms.assetid: 280e00f2-2b93-4ece-94cd-e048484c6cc7
-ms.openlocfilehash: 02dc7f250fe26d9ed7abfd89ca9a4c2163312e6d
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 8602e485c15b11b8f4e740ceead382aa88f8f5f7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70946096"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326156"
 ---
 # <a name="time-_time32-_time64"></a>time, _time32, _time64
 
@@ -66,17 +67,17 @@ __time64_t _time64( __time64_t *destTime );
 
 ## <a name="remarks"></a>설명
 
-**시간** 함수는 시스템 클록에 따라 자정 (00:00:00), 1970 년 1 월 1 일 Utc (협정 세계시) 이후 경과 된 시간 (초)을 반환 합니다. 반환 값은 *Desttime*에 지정 된 위치에 저장 됩니다. 이 매개 변수는 **NULL**일 수 있으며,이 경우 반환 값은 저장 되지 않습니다.
+**시간** 함수는 시스템 클록에 따라 자정 (00:00:00), 1970 년 1 월 1 일 Utc (협정 세계시) 이후 경과 된 시간 (초)을 반환 합니다. 반환 값은 *Desttime* 에 지정 된 위치에 저장 됩니다. 이 매개 변수는 **NULL** 일 수 있으며,이 경우 반환 값은 저장 되지 않습니다.
 
-**time** 은 **_time64** 에 대 한 래퍼입니다. **time_t** 는 기본적으로 **__time64_t**와 동일 합니다. 컴파일러가 **time_t** 를 이전 32 비트 **time_t**해석 하도록 강제 해야 하는 경우 **_USE_32BIT_TIME_T**를 정의할 수 있습니다. 2038년 1월 18일 후 애플리케이션이 실행되지 않을 수 있으므로 이 방법은 권장되지 않습니다. 이 매크로의 사용은 64비트 플랫폼에서 허용되지 않습니다.
+**time** 은 **_time64** 에 대 한 래퍼입니다. **time_t** 은 기본적으로 **__time64_t** 와 동일 합니다. 컴파일러가 **time_t** 이전 32 비트 **time_t** 으로 해석 해야 하는 경우 **_USE_32BIT_TIME_T** 를 정의할 수 있습니다. 2038년 1월 18일 후 애플리케이션이 실행되지 않을 수 있으므로 이 방법은 권장되지 않습니다. 이 매크로의 사용은 64비트 플랫폼에서 허용되지 않습니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |루틴에서 반환된 값|필수 C 헤더|필수 C++ 헤더|
 |-------|------|---------------------|
-|**time**, **\_time32**, **\_time64**|\<time.h>|\<ctime > 또는 \<시간 >|
+|**시간**, **\_ time32**, **\_ time64**|\<time.h>|\<ctime> 또는 \<time.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
@@ -230,7 +231,7 @@ Christmas            Sat Dec 25 12:00:00 1993
 Today is Friday, day 25 of April in the year 2003.
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [시간 관리](../../c-runtime-library/time-management.md)<br/>
 [asctime, _wasctime](asctime-wasctime.md)<br/>

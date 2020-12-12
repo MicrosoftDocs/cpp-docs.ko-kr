@@ -1,4 +1,5 @@
 ---
+description: Unorm_2 클래스에 대해 자세히 알아보세요.
 title: unorm_2 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -28,12 +29,12 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::unnorm_2::g
 - amp_short_vectors/Concurrency::graphics::unnorm_2::operator++
 ms.assetid: 62e88ea7-e29f-4f62-95ce-61a1f39f5e34
-ms.openlocfilehash: 325a1532a079c8eff9c8dcdc5410dcbfe58fb914
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 1a91c1c203466f6ece535d45d5c2c828c8150dbd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77126204"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326378"
 ---
 # <a name="unorm_2-class"></a>unorm_2 클래스
 
@@ -45,69 +46,69 @@ ms.locfileid: "77126204"
 class unorm_2;
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 
-### <a name="public-typedefs"></a>공용 형식 정의
+### <a name="public-typedefs"></a>공용 Typedefs
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |`value_type`||
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[unorm_2 생성자](#ctor)|오버로드되었습니다. 기본 생성자는 0으로 모든 요소를 초기화 합니다.|
+|[unorm_2 생성자](#ctor)|오버로드됨. 기본 생성자는 0으로 모든 요소를 초기화 합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|unorm_2::get_x||
-|unorm_2::get_xy||
-|unorm_2::get_y||
-|unorm_2::get_yx||
-|unorm_2::ref_g||
-|unorm_2::ref_r||
-|unorm_2::ref_x||
-|unorm_2::ref_y||
-|unorm_2::set_x||
-|unorm_2::set_xy||
-|unorm_2::set_y||
-|unorm_2::set_yx||
+|unorm_2:: get_x||
+|unorm_2:: get_xy||
+|unorm_2:: get_y||
+|unorm_2:: get_yx||
+|unorm_2:: ref_g||
+|unorm_2:: ref_r||
+|unorm_2:: ref_x||
+|unorm_2:: ref_y||
+|unorm_2:: set_x||
+|unorm_2:: set_xy||
+|unorm_2:: set_y||
+|unorm_2:: set_yx||
 
 ### <a name="public-operators"></a>Public 연산자
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|unorm_2::operator--||
-|unorm_2::operator*=||
-|unorm_2::operator/=||
-|unorm_2::operator++||
-|unorm_2::operator+=||
-|unorm_2::operator=||
-|unorm_2::operator-=||
+|unorm_2:: operator--||
+|unorm_2:: operator * =||
+|unorm_2:: operator/=||
+|unorm_2:: operator + +||
+|unorm_2:: operator + =||
+|unorm_2:: operator =||
+|unorm_2:: operator-=||
 
 ### <a name="public-constants"></a>공용 상수
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |unorm_2::size 상수||
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|unorm_2::g||
-|unorm_2::gr||
-|unorm_2::r||
-|unorm_2::rg||
-|unorm_2::x||
-|unorm_2::xy||
-|unorm_2::y||
-|unorm_2::yx||
+|unorm_2:: g||
+|unorm_2:: gr||
+|unorm_2:: r||
+|unorm_2:: rg||
+|unorm_2:: x||
+|unorm_2:: xy||
+|unorm_2:: y||
+|unorm_2:: yx||
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `unorm_2`
 
@@ -117,7 +118,7 @@ class unorm_2;
 
 **네임 스페이스:** Concurrency:: graphics
 
-## <a name="ctor"></a>unorm_2
+## <a name="unorm_2"></a><a name="ctor"></a> unorm_2
 
 기본 생성자는 0으로 모든 요소를 초기화 합니다.
 
@@ -182,7 +183,7 @@ explicit inline unorm_2(
 *_Other*<br/>
 을 초기화 하는 데 사용 되는 개체입니다.
 
-## <a name="unorm_2__size"></a>크기가
+## <a name="size"></a><a name="unorm_2__size"></a> 크기가
 
 ```cpp
 static const int size = 2;

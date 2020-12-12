@@ -1,16 +1,17 @@
 ---
+description: '자세히 알아보기: 일반 클래스'
 title: norm 클래스
 ms.date: 11/04/2016
 f1_keywords:
 - AMP_SHORT_VECTORS/norm
 - AMP_SHORT_VECTORS/Concurrency::graphics::norm Constructor
 ms.assetid: 73002f3d-c25e-4119-bcd3-4c46c9b6abf1
-ms.openlocfilehash: b5740f33dea6aad79770f77f179803023432248a
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 29e376e5e42212c87ae244c7a606a38d6a07ddf1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79447528"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327650"
 ---
 # <a name="norm-class"></a>norm 클래스
 
@@ -22,29 +23,29 @@ ms.locfileid: "79447528"
 class norm;
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[일반 생성자](#ctor)|오버로드되었습니다. 기본 생성자입니다. 0\.0f로 초기화합니다.|
+|[일반 생성자](#ctor)|오버로드됨. 기본 생성자입니다. 0.0f로 초기화합니다.|
 
 ### <a name="public-operators"></a>Public 연산자
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|norm::operator-||
-|norm::operator--||
+|일반:: operator-||
+|일반:: operator--||
 |일반:: operator float|변환 연산자입니다. 일반 숫자를 부동 소수점 값으로 변환 합니다.|
-|norm::operator*=||
-|norm::operator/=||
-|norm::operator++||
-|norm::operator+=||
-|norm::operator=||
-|norm::operator-=||
+|일반:: operator * =||
+|일반:: operator/=||
+|일반:: operator + +||
+|일반:: operator + =||
+|일반:: operator =||
+|일반:: operator-=||
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `norm`
 
@@ -54,9 +55,9 @@ class norm;
 
 **네임 스페이스:** Concurrency:: graphics
 
-## <a name="ctor"></a>늦지
+## <a name="norm"></a><a name="ctor"></a> 늦지
 
-기본 생성자입니다. 0\.0f로 초기화합니다.
+기본 생성자입니다. 0.0f로 초기화합니다.
 
 ```cpp
 norm(

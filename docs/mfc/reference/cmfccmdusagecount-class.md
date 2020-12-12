@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CMFCCmdUsageCount 클래스'
 title: CMFCCmdUsageCount 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - CMFCCmdUsageCount [MFC], Serialize
 - CMFCCmdUsageCount [MFC], SetOptions
 ms.assetid: 9c33b783-37c0-43ea-9f31-3c75e246c841
-ms.openlocfilehash: 95dca548856510cd8b06914932cc46435c28399d
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 40d09e96672cafb022baab98787fe10b1258048b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834279"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327726"
 ---
 # <a name="cmfccmdusagecount-class"></a>CMFCCmdUsageCount 클래스
 
@@ -221,7 +222,7 @@ static BOOL __stdcall SetOptions(
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 공유 `CMFCCmdUsageCount` 클래스 데이터 멤버 `m_nStartCount` 및 `m_nMinUsagePercentage` 를 각각 *Nstartcount* 및 *nMinUsagePercentage*로 설정 합니다. `m_nStartCount` 이 개체가 추적 데이터의 최소 양을 수집 했는지 여부를 확인 하기 위해 [Cmfccmdusagecount:: HasEnoughInformation](#hasenoughinformation) 메서드에 사용 됩니다. `m_nMinUsagePercentage` 는 [Cmfccmdusagecount:: IsFreqeuntlyUsedCmd](#isfreqeuntlyusedcmd) 메서드에서 지정 된 명령이 자주 사용 되는지 여부를 확인 하는 데 사용 됩니다.
+이 메서드는 공유 `CMFCCmdUsageCount` 클래스 데이터 멤버 `m_nStartCount` 및 `m_nMinUsagePercentage` 를 각각 *Nstartcount* 및 *nMinUsagePercentage* 로 설정 합니다. `m_nStartCount` 이 개체가 추적 데이터의 최소 양을 수집 했는지 여부를 확인 하기 위해 [Cmfccmdusagecount:: HasEnoughInformation](#hasenoughinformation) 메서드에 사용 됩니다. `m_nMinUsagePercentage` 는 [Cmfccmdusagecount:: IsFreqeuntlyUsedCmd](#isfreqeuntlyusedcmd) 메서드에서 지정 된 명령이 자주 사용 되는지 여부를 확인 하는 데 사용 됩니다.
 
 디버그 빌드에서 *nMinUsagePercentage* 매개 변수가 100 보다 크거나 같으면이 메서드는 어설션 오류를 생성 합니다.
 

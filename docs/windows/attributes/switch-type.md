@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: switch_type'
 title: switch_type (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - switch_type attribute
 ms.assetid: e24544dc-b3bc-48ae-b249-f967db49271e
-ms.openlocfilehash: 0c39aa442c9d4eaf3a482e411cda762fe0cc34b3
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: e291524d00afff89aa17634307426ef62cd40f4b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838531"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327263"
 ---
 # <a name="switch_type"></a>switch_type
 
@@ -55,7 +56,7 @@ struct SizedValue2 {
 
 ## <a name="example"></a>예제
 
-**Switch_type**의 샘플 사용에 대해서는 [사례](case-cpp.md) 예를 참조 하세요.
+**Switch_type** 의 샘플 사용에 대해서는 [사례](case-cpp.md) 예를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __CxxFrameHandler'
 title: __CxxFrameHandler
 ms.date: 11/04/2016
 api_name:
@@ -20,12 +21,12 @@ f1_keywords:
 helpviewer_keywords:
 - __CxxFrameHandler
 ms.assetid: b79ac97f-425a-42ae-9b91-8beaef935333
-ms.openlocfilehash: b6350568bdba41da90609dfd5e2e60269e7d729f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3ebd4cefb303661b4b0293f3b4b3d42a915ddd56
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217040"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326365"
 ---
 # <a name="__cxxframehandler"></a>__CxxFrameHandler
 
@@ -56,7 +57,7 @@ EXCEPTION_DISPOSITION __CxxFrameHandler(
 *컨트롤러가*<br/>
 함수 시작 및 스택 프레임에 대한 추가 정보입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 [try-except Statement](../cpp/try-except-statement.md)에서 사용하는 *필터 식* 값 중 하나입니다.
 

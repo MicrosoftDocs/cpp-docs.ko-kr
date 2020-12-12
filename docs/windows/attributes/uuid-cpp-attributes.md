@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: uuid (c + + 특성)'
 title: uuid(C++ 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - uuid attribute
 ms.assetid: 90562a94-5e28-451b-a4b0-cadda7f66efe
-ms.openlocfilehash: 9ff8888c26945d7f118e71002e3b3290217b463c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 25c84b435fe86af1e56b17568301752a4795a0ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843042"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327228"
 ---
 # <a name="uuid-c-attributes"></a>uuid(C++ 특성)
 

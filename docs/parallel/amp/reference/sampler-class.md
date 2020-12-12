@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 샘플러 클래스'
 title: sampler 클래스
 ms.date: 06/28/2018
 f1_keywords:
@@ -12,12 +13,12 @@ f1_keywords:
 - AMP_GRAPHICS/concurrency::sampler::graphics::border_color
 - AMP_GRAPHICS/concurrency::sampler::graphics::filter_mode
 ms.assetid: 9a6a9807-497d-402d-b092-8c4d86275b80
-ms.openlocfilehash: 8f47bf6e9b88dba1e94e9e2ed2b93c8d2d3f9b8c
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 61292cccb9e28ca76dc4ecaa1aaca849d9219ffc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77126357"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327614"
 ---
 # <a name="sampler-class"></a>sampler 클래스
 
@@ -33,33 +34,33 @@ class sampler;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
 |[샘플러 생성자](#ctor)|오버로드됨. 샘플러 인스턴스를 생성 합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
-|[get_address_mode](#get_address_mode)|샘플러 개체와 연결 된 `address_mode`를 반환 합니다.|
+|[get_address_mode](#get_address_mode)|`address_mode`샘플러 개체와 연결 된를 반환 합니다.|
 |[get_border_color](#get_border_color)|샘플러 개체와 연결 된 테두리 색을 반환 합니다.|
-|[get_filter_mode](#get_filter_mode)|샘플러 개체와 연결 된 `filter_mode`를 반환 합니다.|
+|[get_filter_mode](#get_filter_mode)|`filter_mode`샘플러 개체와 연결 된를 반환 합니다.|
 
 ### <a name="public-operators"></a>Public 연산자
 
-|name|설명|
+|Name|설명|
 |----------|-----------------|
-|[operator=](#operator_eq)|오버로드됨. 대입 연산자입니다.|
+|[연산자 =](#operator_eq)|오버로드됨. 대입 연산자입니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|name|설명|
+|Name|설명|
 |----------|-----------------|
-|[address_mode](#address_mode)|`sampler` 개체의 주소 모드를 가져옵니다.|
-|[border_color](#border_color)|`sampler` 개체의 테두리 색을 가져옵니다.|
-|[filter_mode](#filter_mode)|`sampler` 개체의 필터 모드를 가져옵니다.|
+|[address_mode](#address_mode)|개체의 주소 모드를 가져옵니다 `sampler` .|
+|[border_color](#border_color)|개체의 테두리 색을 가져옵니다 `sampler` .|
+|[filter_mode](#filter_mode)|개체의 필터 모드를 가져옵니다 `sampler` .|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `sampler`
 
@@ -69,7 +70,7 @@ class sampler;
 
 **네임 스페이스:** concurrency:: graphics
 
-## <a name="ctor"></a>샘플러
+## <a name="sampler"></a><a name="ctor"></a> 샘플러
 
 [샘플러 클래스](sampler-class.md)의 인스턴스를 생성 합니다.
 
@@ -115,71 +116,71 @@ sampler(                    // [6] move constructor
 주소 모드가 address_border 때 사용할 테두리 색입니다. 기본값은 `float_4(0.0f, 0.0f, 0.0f, 0.0f)`입니다.
 
 *_Other*<br/>
-[5] 새 `sampler` 인스턴스로 복사할 `sampler` 개체를 복사 하는 생성자입니다.
+[5] `sampler` 새 인스턴스에 복사할 개체를 복사 하는 생성자 `sampler` 입니다.
 
 [6] 생성자 이동 `sampler` 개체를 새 `sampler` 인스턴스로 이동 합니다.
 
-## <a name="address_mode"></a>address_mode
+## <a name="address_mode"></a><a name="address_mode"></a> address_mode
 
-`sampler` 개체의 주소 모드를 가져옵니다.
+개체의 주소 모드를 가져옵니다 `sampler` .
 
 ```cpp
 __declspec(property(get= get_address_mode)) Concurrency::graphics::address_mode address_mode;
 ```
 
-## <a name="border_color"></a>border_color
+## <a name="border_color"></a><a name="border_color"></a> border_color
 
-`sampler` 개체의 테두리 색을 가져옵니다.
+개체의 테두리 색을 가져옵니다 `sampler` .
 
 ```cpp
 __declspec(property(get= get_border_color)) Concurrency::graphics::float_4 border_color;
 ```
 
-## <a name="filter_mode"></a>filter_mode
+## <a name="filter_mode"></a><a name="filter_mode"></a> filter_mode
 
-`sampler` 개체의 필터 모드를 가져옵니다.
+개체의 필터 모드를 가져옵니다 `sampler` .
 
 ```cpp
 __declspec(property(get= get_filter_mode)) Concurrency::graphics::filter_mode filter_mode;
 ```
 
-## <a name="get_address_mode"></a>get_address_mode
+## <a name="get_address_mode"></a><a name="get_address_mode"></a> get_address_mode
 
-이 `sampler`에 대해 구성 된 필터 모드를 반환 합니다.
+이에 대해 구성 된 필터 모드를 반환 `sampler` 합니다.
 
 ```cpp
 Concurrency::graphics::address_mode get_address_mode() const __GPU;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 샘플러에 대해 구성 된 주소 모드입니다.
 
-## <a name="get_border_color"></a>get_border_color
+## <a name="get_border_color"></a><a name="get_border_color"></a> get_border_color
 
-이 `sampler`에 대해 구성 된 테두리 색을 반환 합니다.
+이에 대해 구성 된 테두리 색을 반환 합니다 `sampler` .
 
 ```cpp
 Concurrency::graphics::float_4 get_border_color() const restrict(amp, cpu);
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 테두리 색을 포함 하는 float_4입니다.
 
-## <a name="get_filter_mode"></a>get_filter_mode
+## <a name="get_filter_mode"></a><a name="get_filter_mode"></a> get_filter_mode
 
-이 `sampler`에 대해 구성 된 필터 모드를 반환 합니다.
+이에 대해 구성 된 필터 모드를 반환 `sampler` 합니다.
 
 ```cpp
 Concurrency::graphics::filter_mode get_filter_mode() const restrict(amp, cpu);
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 샘플러에 대해 구성 된 필터 모드입니다.
 
-## <a name="operator_eq"></a>연산자 =
+## <a name="operator"></a><a name="operator_eq"></a> 연산자 =
 
 다른 샘플러 개체의 값을 기존 샘플러에 할당 합니다.
 
@@ -194,11 +195,11 @@ sampler& operator= (    // [2] move assignment operator
 ### <a name="parameters"></a>매개 변수
 
 *_Other*<br/>
-[1]이 `sampler`에 복사할 `sampler` 개체에 대 한 복사 할당 연산자입니다.
+[1] `sampler` 이에 복사할 개체에 대 한 복사 할당 연산자 `sampler` 입니다.
 
-[2] `sampler` 개체가이 `sampler`이동 하도록 할당 연산자를 이동 합니다.
+[2] `sampler` 이로 이동 하는 개체를 이동 `sampler` 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 샘플러 인스턴스에 대 한 참조입니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 도구 설명에 대 한 TTN_NEEDTEXT 알림 처리'
 title: 도구 설명에 대한 TTN_NEEDTEXT 알림 처리
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - notifications [MFC], tool tips
 - tool tips [MFC], notifications
 ms.assetid: d0370a65-21ba-4676-bcc5-8cf851bbb15c
-ms.openlocfilehash: 75850dbf92587cf654d4f7a39ea54af1fd9dd5bd
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 793f6c42e0e43c341884b999e5e1aed0be448b00
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84620075"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326420"
 ---
 # <a name="handling-ttn_needtext-notification-for-tool-tips"></a>도구 설명에 대한 TTN_NEEDTEXT 알림 처리
 
@@ -51,4 +52,4 @@ ms.locfileid: "84620075"
 
 ## <a name="see-also"></a>참고 항목
 
-[CFrameWnd에서 파생되지 않은 창의 도구 설명](tool-tips-in-windows-not-derived-from-cframewnd.md)
+[CFrameWnd에서 파생 되지 않은 Windows의 도구 설명](tool-tips-in-windows-not-derived-from-cframewnd.md)

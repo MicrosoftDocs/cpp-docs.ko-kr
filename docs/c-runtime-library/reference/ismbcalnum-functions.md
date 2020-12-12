@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: _ismbcalnum, _ismbcalnum_l, _ismbcalpha, _ismbcalpha_l, _ismbcdigit, _ismbcdigit_l'
 title: _ismbcalnum, _ismbcalnum_l, _ismbcalpha, _ismbcalpha_l, _ismbcdigit, _ismbcdigit_l
 ms.date: 4/2/2020
 api_name:
@@ -56,12 +57,12 @@ helpviewer_keywords:
 - ismbcalnum_l function
 - ismbcalpha_l function
 ms.assetid: 12d57925-aebe-46e0-80b0-82b84c4c31ec
-ms.openlocfilehash: 6e650c15ca2b7d3b448d5480a6b1f09769100171
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 5a8a985224a1b54fb774cad8ba8848fda1c7e7ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918545"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326311"
 ---
 # <a name="_ismbcalnum-_ismbcalnum_l-_ismbcalpha-_ismbcalpha_l-_ismbcdigit-_ismbcdigit_l"></a>_ismbcalnum, _ismbcalnum_l, _ismbcalpha, _ismbcalpha_l, _ismbcdigit, _ismbcdigit_l
 
@@ -110,9 +111,9 @@ int _ismbcdigit_l
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-이러한 각 루틴은 이 문자가 테스트 조건을 만족하는 경우 0이 아닌 값을 반환하고, 그렇지 않으면 0을 반환합니다. *C*<= 255이 고 해당 **_ismbb** 루틴이 있는 경우 (예: **_ismbcalnum** **_ismbbalnum**에 해당 하는 경우) 결과는 해당 **_ismbb** 루틴의 반환 값입니다.
+이러한 각 루틴은 이 문자가 테스트 조건을 만족하는 경우 0이 아닌 값을 반환하고, 그렇지 않으면 0을 반환합니다. *C*<= 255이 고 해당 **_ismbb** 루틴이 있는 경우 (예: **_ismbcalnum** **_ismbbalnum** 에 해당 하는 경우) 결과는 해당 **_ismbb** 루틴의 반환 값입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -122,7 +123,7 @@ int _ismbcdigit_l
 
 |루틴에서 반환된 값|테스트 조건|932 코드 페이지 예제|
 |-------------|--------------------|---------------------------|
-|**_ismbcalnum**, **_ismbcalnum_l**|영숫자|*C* 가 ASCII 영어 문자의 싱글바이트 표현인 경우에만 0이 아닌 값을 반환 합니다. **_ismbcdigit** 및 **_ismbcalpha**에 대 한 예를 참조 하세요.|
+|**_ismbcalnum**, **_ismbcalnum_l**|영숫자|*C* 가 ASCII 영어 문자의 싱글바이트 표현인 경우에만 0이 아닌 값을 반환 합니다. **_ismbcdigit** 및 **_ismbcalpha** 에 대 한 예를 참조 하세요.|
 |**_ismbcalpha**, **_ismbcalpha_l**|사전순|*C* 가 ASCII 영어 문자의 싱글바이트 표현인 경우에만 0이 아닌 값을 반환 합니다. 0 x 41<=*c*<= 0x5a 또는 0x61<=*c*<= 0x7A; 또는 가타카나 문자: 0xA6<=*c*<= 0xdf.|
 |**_ismbcdigit**, **_ismbcdigit**|숫자|*C* 가 ASCII 숫자의 싱글바이트 표현인 경우에만 0이 아닌 값을 반환 합니다. 0x30<=*c*<= 0x39.|
 
@@ -138,7 +139,7 @@ int _ismbcdigit_l
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [문자 분류](../../c-runtime-library/character-classification.md)<br/>
 [_ismbc 루틴](../../c-runtime-library/ismbc-routines.md)<br/>

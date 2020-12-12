@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2689'
 title: 컴파일러 오류 C2689
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2689
 ms.assetid: b5216fba-524d-4194-9168-26e9dc5210ce
-ms.openlocfilehash: f3b35d8f68087c9f10d7f2a5d219800fc7a9084a
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 532db26a3c0da3191c9b15215d470618e561e76a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74760224"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326716"
 ---
 # <a name="compiler-error-c2689"></a>컴파일러 오류 C2689
 

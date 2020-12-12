@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: tmpfile_s'
 title: tmpfile_s
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - tmpfile_s function
 - temporary files, creating
 ms.assetid: 50879c69-215e-425a-a2a3-8b5467121eae
-ms.openlocfilehash: 48c599887a8a903d52c7dcd46b98046119c9d3ad
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 1b5830375644cdcdd3d0c400d00735319b3af671
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919925"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326142"
 ---
 # <a name="tmpfile_s"></a>tmpfile_s
 
@@ -52,17 +53,17 @@ errno_t tmpfile_s(
 *pFilePtr*<br/>
 생성된 스트림에 대한 포인터의 주소를 저장할 포인터의 주소입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 정상적으로 실행되는 경우 0을 반환하고 오류 시에는 오류 코드를 반환합니다.
 
 ### <a name="error-conditions"></a>오류 조건
 
-|*pFilePtr*|**Return Value**|*PFilePtr* **의 내용**  |
+|*pFilePtr*|**반환 값**|*PFilePtr* **의 내용**  |
 |----------------|----------------------|---------------------------------|
-|**N**|**EINVAL**|변경되지 않음|
+|**NULL**|**EINVAL**|변경되지 않음|
 
-위의 매개 변수 유효성 검사 오류가 발생하는 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 는 **EINVAL** 로 설정 되 고 반환 값은 **EINVAL**입니다.
+위의 매개 변수 유효성 검사 오류가 발생하는 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 는 **EINVAL** 로 설정 되 고 반환 값은 **EINVAL** 입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -70,7 +71,7 @@ errno_t tmpfile_s(
 
 파일을 열 수 없는 경우 **Tmpfile_s** *PFilePtr* 매개 변수에 **NULL** 을 씁니다. 이 임시 파일은 파일이 닫힐 때, 프로그램이 정상적으로 종료 될 때 또는 현재 작업 디렉터리가 변경 되지 않는다고 가정할 때 **_rmtmp** 가 호출 될 때 자동으로 삭제 됩니다. 임시 파일은 **w + b** (이진 읽기/쓰기) 모드에서 열립니다.
 
-**TMP_MAX_S** 이상 시도 하면 오류가 발생할 수 있습니다 (stdio.h 참조). H) **tmpfile_s**를 사용 하 여를 호출 합니다.
+**TMP_MAX_S** 이상 시도 하면 오류가 발생할 수 있습니다 (stdio.h 참조). H) **tmpfile_s** 를 사용 하 여를 호출 합니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -124,7 +125,7 @@ Temporary file 3 was created
 3 temporary files deleted
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [스트림 I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [_rmtmp](rmtmp.md)<br/>

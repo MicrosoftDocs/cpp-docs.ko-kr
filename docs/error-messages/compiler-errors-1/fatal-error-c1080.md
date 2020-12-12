@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 심각한 오류 C1080'
 title: 심각한 오류 C1080
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1080
 ms.assetid: 01e9e7c0-6a20-4539-b9d2-d27e7afcc8e6
-ms.openlocfilehash: 83a95e2ca5f943616bf1e97260ea8ba3ae999208
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 803572b0e55a78e5811a81713b2a5ec8a39dd3fb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80204128"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326744"
 ---
 # <a name="fatal-error-c1080"></a>심각한 오류 C1080
 

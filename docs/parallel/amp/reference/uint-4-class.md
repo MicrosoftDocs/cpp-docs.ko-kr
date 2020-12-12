@@ -1,4 +1,5 @@
 ---
+description: Uint_4 클래스에 대해 자세히 알아보세요.
 title: uint_4 클래스
 ms.date: 03/27/2019
 f1_keywords:
@@ -268,12 +269,12 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::uint_4::rba
 - amp_short_vectors/Concurrency::graphics::uint_4::set_yzx
 ms.assetid: 1cda9e2c-5970-4ced-ae54-d7ff3c6746f4
-ms.openlocfilehash: a795ed3c04f114b6e15d5d9161605988bab2778a
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 87641ce116d9817e669c7f6d7a0b7d8ac5748f15
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142408"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326405"
 ---
 # <a name="uint_4-class"></a>uint_4 클래스
 
@@ -285,314 +286,314 @@ ms.locfileid: "77142408"
 class uint_4;
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 
-### <a name="public-typedefs"></a>공용 형식 정의
+### <a name="public-typedefs"></a>공용 Typedefs
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |`value_type`||
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[uint_4 생성자](#uint_4__ctor) |오버로드되었습니다. 기본 생성자는 0으로 모든 요소를 초기화 합니다.|
+|[uint_4 생성자](#uint_4__ctor) |오버로드됨. 기본 생성자는 0으로 모든 요소를 초기화 합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|uint_4::get_w||
-|uint_4::get_wx||
-|uint_4::get_wxy||
-|uint_4::get_wxyz||
-|uint_4::get_wxz||
-|uint_4::get_wxzy||
-|uint_4::get_wy||
-|uint_4::get_wyx||
-|uint_4::get_wyxz||
-|uint_4::get_wyz||
-|uint_4::get_wyzx||
-|uint_4::get_wz||
-|uint_4::get_wzx||
-|uint_4::get_wzxy||
-|uint_4::get_wzy||
-|uint_4::get_wzyx||
-|uint_4::get_x||
-|uint_4::get_xw||
-|uint_4::get_xwy||
-|uint_4::get_xwyz||
-|uint_4::get_xwz||
-|uint_4::get_xwzy||
-|uint_4::get_xy||
-|uint_4::get_xyw||
-|uint_4::get_xywz||
-|uint_4::get_xyz||
-|uint_4::get_xyzw||
-|uint_4::get_xz||
-|uint_4::get_xzw||
-|uint_4::get_xzwy||
-|uint_4::get_xzy||
-|uint_4::get_xzyw||
-|uint_4::get_y||
-|uint_4::get_yw||
-|uint_4::get_ywx||
-|uint_4::get_ywxz||
-|uint_4::get_ywz||
-|uint_4::get_ywzx||
-|uint_4::get_yx||
-|uint_4::get_yxw||
-|uint_4::get_yxwz||
-|uint_4::get_yxz||
-|uint_4::get_yxzw||
-|uint_4::get_yz||
-|uint_4::get_yzw||
-|uint_4::get_yzwx||
-|uint_4::get_yzx||
-|uint_4::get_yzxw||
-|uint_4::get_z||
-|uint_4::get_zw||
-|uint_4::get_zwx||
-|uint_4::get_zwxy||
-|uint_4::get_zwy||
-|uint_4::get_zwyx||
-|uint_4::get_zx||
-|uint_4::get_zxw||
-|uint_4::get_zxwy||
-|uint_4::get_zxy||
-|uint_4::get_zxyw||
-|uint_4::get_zy||
-|uint_4::get_zyw||
-|uint_4::get_zywx||
-|uint_4::get_zyx||
-|uint_4::get_zyxw||
-|uint_4::ref_a||
-|uint_4::ref_b||
-|uint_4::ref_g||
-|uint_4::ref_r||
-|uint_4::ref_w||
-|uint_4::ref_x||
-|uint_4::ref_y||
-|uint_4::ref_z||
-|uint_4::set_w||
-|uint_4::set_wx||
-|uint_4::set_wxy||
-|uint_4::set_wxyz||
-|uint_4::set_wxz||
-|uint_4::set_wxzy||
-|uint_4::set_wy||
-|uint_4::set_wyx||
-|uint_4::set_wyxz||
-|uint_4::set_wyz||
-|uint_4::set_wyzx||
-|uint_4::set_wz||
-|uint_4::set_wzx||
-|uint_4::set_wzxy||
-|uint_4::set_wzy||
-|uint_4::set_wzyx||
-|uint_4::set_x||
-|uint_4::set_xw||
-|uint_4::set_xwy||
-|uint_4::set_xwyz||
-|uint_4::set_xwz||
-|uint_4::set_xwzy||
-|uint_4::set_xy||
-|uint_4::set_xyw||
-|uint_4::set_xywz||
-|uint_4::set_xyz||
-|uint_4::set_xyzw||
-|uint_4::set_xz||
-|uint_4::set_xzw||
-|uint_4::set_xzwy||
-|uint_4::set_xzy||
-|uint_4::set_xzyw||
-|uint_4::set_y||
-|uint_4::set_yw||
-|uint_4::set_ywx||
-|uint_4::set_ywxz||
-|uint_4::set_ywz||
-|uint_4::set_ywzx||
-|uint_4::set_yx||
-|uint_4::set_yxw||
-|uint_4::set_yxwz||
-|uint_4::set_yxz||
-|uint_4::set_yxzw||
-|uint_4::set_yz||
-|uint_4::set_yzw||
-|uint_4::set_yzwx||
-|uint_4::set_yzx||
-|uint_4::set_yzxw||
-|uint_4::set_z||
-|uint_4::set_zw||
-|uint_4::set_zwx||
-|uint_4::set_zwxy||
-|uint_4::set_zwy||
-|uint_4::set_zwyx||
-|uint_4::set_zx||
-|uint_4::set_zxw||
-|uint_4::set_zxwy||
-|uint_4::set_zxy||
-|uint_4::set_zxyw||
-|uint_4::set_zy||
-|uint_4::set_zyw||
-|uint_4::set_zywx||
-|uint_4::set_zyx||
-|uint_4::set_zyxw||
+|uint_4:: get_w||
+|uint_4:: get_wx||
+|uint_4:: get_wxy||
+|uint_4:: get_wxyz||
+|uint_4:: get_wxz||
+|uint_4:: get_wxzy||
+|uint_4:: get_wy||
+|uint_4:: get_wyx||
+|uint_4:: get_wyxz||
+|uint_4:: get_wyz||
+|uint_4:: get_wyzx||
+|uint_4:: get_wz||
+|uint_4:: get_wzx||
+|uint_4:: get_wzxy||
+|uint_4:: get_wzy||
+|uint_4:: get_wzyx||
+|uint_4:: get_x||
+|uint_4:: get_xw||
+|uint_4:: get_xwy||
+|uint_4:: get_xwyz||
+|uint_4:: get_xwz||
+|uint_4:: get_xwzy||
+|uint_4:: get_xy||
+|uint_4:: get_xyw||
+|uint_4:: get_xywz||
+|uint_4:: get_xyz||
+|uint_4:: get_xyzw||
+|uint_4:: get_xz||
+|uint_4:: get_xzw||
+|uint_4:: get_xzwy||
+|uint_4:: get_xzy||
+|uint_4:: get_xzyw||
+|uint_4:: get_y||
+|uint_4:: get_yw||
+|uint_4:: get_ywx||
+|uint_4:: get_ywxz||
+|uint_4:: get_ywz||
+|uint_4:: get_ywzx||
+|uint_4:: get_yx||
+|uint_4:: get_yxw||
+|uint_4:: get_yxwz||
+|uint_4:: get_yxz||
+|uint_4:: get_yxzw||
+|uint_4:: get_yz||
+|uint_4:: get_yzw||
+|uint_4:: get_yzwx||
+|uint_4:: get_yzx||
+|uint_4:: get_yzxw||
+|uint_4:: get_z||
+|uint_4:: get_zw||
+|uint_4:: get_zwx||
+|uint_4:: get_zwxy||
+|uint_4:: get_zwy||
+|uint_4:: get_zwyx||
+|uint_4:: get_zx||
+|uint_4:: get_zxw||
+|uint_4:: get_zxwy||
+|uint_4:: get_zxy||
+|uint_4:: get_zxyw||
+|uint_4:: get_zy||
+|uint_4:: get_zyw||
+|uint_4:: get_zywx||
+|uint_4:: get_zyx||
+|uint_4:: get_zyxw||
+|uint_4:: ref_a||
+|uint_4:: ref_b||
+|uint_4:: ref_g||
+|uint_4:: ref_r||
+|uint_4:: ref_w||
+|uint_4:: ref_x||
+|uint_4:: ref_y||
+|uint_4:: ref_z||
+|uint_4:: set_w||
+|uint_4:: set_wx||
+|uint_4:: set_wxy||
+|uint_4:: set_wxyz||
+|uint_4:: set_wxz||
+|uint_4:: set_wxzy||
+|uint_4:: set_wy||
+|uint_4:: set_wyx||
+|uint_4:: set_wyxz||
+|uint_4:: set_wyz||
+|uint_4:: set_wyzx||
+|uint_4:: set_wz||
+|uint_4:: set_wzx||
+|uint_4:: set_wzxy||
+|uint_4:: set_wzy||
+|uint_4:: set_wzyx||
+|uint_4:: set_x||
+|uint_4:: set_xw||
+|uint_4:: set_xwy||
+|uint_4:: set_xwyz||
+|uint_4:: set_xwz||
+|uint_4:: set_xwzy||
+|uint_4:: set_xy||
+|uint_4:: set_xyw||
+|uint_4:: set_xywz||
+|uint_4:: set_xyz||
+|uint_4:: set_xyzw||
+|uint_4:: set_xz||
+|uint_4:: set_xzw||
+|uint_4:: set_xzwy||
+|uint_4:: set_xzy||
+|uint_4:: set_xzyw||
+|uint_4:: set_y||
+|uint_4:: set_yw||
+|uint_4:: set_ywx||
+|uint_4:: set_ywxz||
+|uint_4:: set_ywz||
+|uint_4:: set_ywzx||
+|uint_4:: set_yx||
+|uint_4:: set_yxw||
+|uint_4:: set_yxwz||
+|uint_4:: set_yxz||
+|uint_4:: set_yxzw||
+|uint_4:: set_yz||
+|uint_4:: set_yzw||
+|uint_4:: set_yzwx||
+|uint_4:: set_yzx||
+|uint_4:: set_yzxw||
+|uint_4:: set_z||
+|uint_4:: set_zw||
+|uint_4:: set_zwx||
+|uint_4:: set_zwxy||
+|uint_4:: set_zwy||
+|uint_4:: set_zwyx||
+|uint_4:: set_zx||
+|uint_4:: set_zxw||
+|uint_4:: set_zxwy||
+|uint_4:: set_zxy||
+|uint_4:: set_zxyw||
+|uint_4:: set_zy||
+|uint_4:: set_zyw||
+|uint_4:: set_zywx||
+|uint_4:: set_zyx||
+|uint_4:: set_zyxw||
 
 ### <a name="public-operators"></a>Public 연산자
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|uint_4::operator-||
-|uint_4::operator--||
-|uint_4::operator*=||
-|uint_4::operator/=||
-|uint_4::operator++||
-|uint_4::operator+=||
-|uint_4::operator=||
-|uint_4::operator-=||
+|uint_4:: operator-||
+|uint_4:: operator--||
+|uint_4:: operator * =||
+|uint_4:: operator/=||
+|uint_4:: operator + +||
+|uint_4:: operator + =||
+|uint_4:: operator =||
+|uint_4:: operator-=||
 
 ### <a name="public-constants"></a>공용 상수
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |[크기 상수](#size)||
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|uint_4::a||
-|uint_4::ab||
-|uint_4::abg||
-|uint_4::abgr||
-|uint_4::abr||
-|uint_4::abrg||
-|uint_4::ag||
-|uint_4::agb||
-|uint_4::agbr||
-|uint_4::agr||
-|uint_4::agrb||
-|uint_4::ar||
-|uint_4::arb||
-|uint_4::arbg||
-|uint_4::arg||
-|uint_4::argb||
-|uint_4::b||
-|uint_4::ba||
-|uint_4::bag||
-|uint_4::bagr||
-|uint_4::bar||
-|uint_4::barg||
-|uint_4::bg||
-|uint_4::bga||
-|uint_4::bgar||
-|uint_4::bgr||
-|uint_4::bgra||
-|uint_4::br||
-|uint_4::bra||
-|uint_4::brag||
-|uint_4::brg||
-|uint_4::brga||
-|uint_4::g||
-|uint_4::ga||
-|uint_4::gab||
-|uint_4::gabr||
-|uint_4::gar||
-|uint_4::garb||
-|uint_4::gb||
-|uint_4::gba||
-|uint_4::gbar||
-|uint_4::gbr||
-|uint_4::gbra||
-|uint_4::gr||
-|uint_4::gra||
-|uint_4::grab||
-|uint_4::grb||
-|uint_4::grba||
-|uint_4::r||
-|uint_4::ra||
-|uint_4::rab||
-|uint_4::rabg||
-|uint_4::rag||
-|uint_4::ragb||
-|uint_4::rb||
-|uint_4::rba||
-|uint_4::rbag||
-|uint_4::rbg||
-|uint_4::rbga||
-|uint_4::rg||
-|uint_4::rga||
-|uint_4::rgab||
-|uint_4::rgb||
-|uint_4::rgba||
-|uint_4::w||
-|uint_4::wx||
-|uint_4::wxy||
-|uint_4::wxyz||
-|uint_4::wxz||
-|uint_4::wxzy||
-|uint_4::wy||
-|uint_4::wyx||
-|uint_4::wyxz||
-|uint_4::wyz||
-|uint_4::wyzx||
-|uint_4::wz||
-|uint_4::wzx||
-|uint_4::wzxy||
-|uint_4::wzy||
-|uint_4::wzyx||
-|uint_4::x||
-|uint_4::xw||
-|uint_4::xwy||
-|uint_4::xwyz||
-|uint_4::xwz||
-|uint_4::xwzy||
-|uint_4::xy||
-|uint_4::xyw||
-|uint_4::xywz||
-|uint_4::xyz||
-|uint_4::xyzw||
-|uint_4::xz||
-|uint_4::xzw||
-|uint_4::xzwy||
-|uint_4::xzy||
-|uint_4::xzyw||
-|uint_4::y||
-|uint_4::yw||
-|uint_4::ywx||
-|uint_4::ywxz||
-|uint_4::ywz||
-|uint_4::ywzx||
-|uint_4::yx||
-|uint_4::yxw||
-|uint_4::yxwz||
-|uint_4::yxz||
-|uint_4::yxzw||
-|uint_4::yz||
-|uint_4::yzw||
-|uint_4::yzwx||
-|uint_4::yzx||
-|uint_4::yzxw||
-|uint_4::z||
-|uint_4::zw||
-|uint_4::zwx||
-|uint_4::zwxy||
-|uint_4::zwy||
-|uint_4::zwyx||
-|uint_4::zx||
-|uint_4::zxw||
-|uint_4::zxwy||
-|uint_4::zxy||
-|uint_4::zxyw||
-|uint_4::zy||
-|uint_4::zyw||
-|uint_4::zywx||
-|uint_4::zyx||
-|uint_4::zyxw||
+|uint_4:: a||
+|uint_4:: ab||
+|uint_4:: abg||
+|uint_4:: abgr||
+|uint_4:: abr||
+|uint_4:: abrg||
+|uint_4:: ag||
+|uint_4:: agb||
+|uint_4:: agbr||
+|uint_4:: agr||
+|uint_4:: agrb||
+|uint_4:: ar||
+|uint_4:: arb||
+|uint_4:: arbg||
+|uint_4:: arg||
+|uint_4:: argb||
+|uint_4:: b||
+|uint_4:: ba||
+|uint_4:: 모음||
+|uint_4:: bagr||
+|uint_4:: bar||
+|uint_4:: 바 g||
+|uint_4:: bg||
+|uint_4:: bga||
+|uint_4:: bgar||
+|uint_4:: bgr로||
+|uint_4:: bgra||
+|uint_4:: br||
+|uint_4:: bra||
+|uint_4:: brag||
+|uint_4:: brg||
+|uint_4:: brga||
+|uint_4:: g||
+|uint_4:: ga||
+|uint_4:: gab||
+|uint_4:: gabr||
+|uint_4:: gar||
+|uint_4:: garb||
+|uint_4:: gb||
+|uint_4:: gba||
+|uint_4:: gbar||
+|uint_4:: gbr||
+|uint_4:: gbra||
+|uint_4:: gr||
+|uint_4:: gra||
+|uint_4:: 잡기||
+|uint_4:: grb||
+|uint_4:: grba||
+|uint_4:: r||
+|uint_4:: ra||
+|uint_4:: rab||
+|uint_4:: rabg||
+|uint_4:: 단편||
+|uint_4:: ragb||
+|uint_4:: rb||
+|uint_4:: rba||
+|uint_4:: rbag||
+|uint_4:: rbg||
+|uint_4:: rbga||
+|uint_4:: rg||
+|uint_4:: rga||
+|uint_4:: rgab||
+|uint_4:: rgb||
+|uint_4:: rgba||
+|uint_4:: w||
+|uint_4:: wx||
+|uint_4:: wxy||
+|uint_4:: wxyz||
+|uint_4:: wxz||
+|uint_4:: wxzy||
+|uint_4:: wy||
+|uint_4:: wyx||
+|uint_4:: wyxz||
+|uint_4:: wyz||
+|uint_4:: wyzx||
+|uint_4:: wz||
+|uint_4:: wzx||
+|uint_4:: wzxy||
+|uint_4:: wzy||
+|uint_4:: wzyx||
+|uint_4:: x||
+|uint_4:: xw||
+|uint_4:: xwy||
+|uint_4:: xwyz||
+|uint_4:: xwz||
+|uint_4:: xwzy||
+|uint_4:: xy||
+|uint_4:: xyw||
+|uint_4:: xywz||
+|uint_4:: xyz||
+|uint_4:: xyzw||
+|uint_4:: xz||
+|uint_4:: xzw||
+|uint_4:: xzwy||
+|uint_4:: xzy||
+|uint_4:: xzyw||
+|uint_4:: y||
+|uint_4:: yw||
+|uint_4:: ywx||
+|uint_4:: ywxz||
+|uint_4:: ywz||
+|uint_4:: ywzx||
+|uint_4:: yx||
+|uint_4:: yxw||
+|uint_4:: yxwz||
+|uint_4:: yxz||
+|uint_4:: yxzw||
+|uint_4:: yz||
+|uint_4:: yzw||
+|uint_4:: yzwx||
+|uint_4:: yzx||
+|uint_4:: yzxw||
+|uint_4:: z||
+|uint_4:: zw||
+|uint_4:: zwx||
+|uint_4:: zwxy||
+|uint_4:: zwy||
+|uint_4:: zwyx||
+|uint_4:: zx||
+|uint_4:: zxw||
+|uint_4:: zxwy||
+|uint_4:: zxy||
+|uint_4:: zxyw||
+|uint_4:: zy||
+|uint_4:: zyw||
+|uint_4:: zywx||
+|uint_4:: zyx||
+|uint_4:: zyxw||
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `uint_4`
 
@@ -602,7 +603,7 @@ class uint_4;
 
 **네임 스페이스:** Concurrency:: graphics
 
-## <a name="uint_4__ctor"></a>uint_4
+## <a name="uint_4"></a><a name="uint_4__ctor"></a> uint_4
 
 기본 생성자는 0으로 모든 요소를 초기화 합니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: registration_script'
 title: registration_script (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - registration_script attribute
 ms.assetid: 786f8072-9187-4163-a979-7a604dd4c888
-ms.openlocfilehash: 8a57f0b3d0925d1e1096a31734fa4c9d666c5743
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 3722a799818c8ad76d710e4c570bc5fdd6b2e10c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846084"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327347"
 ---
 # <a name="registration_script"></a>registration_script
 
@@ -30,7 +31,7 @@ ms.locfileid: "88846084"
 
 ## <a name="remarks"></a>설명
 
-**Registration_script** c + + 특성은 *스크립트로*지정 된 사용자 지정 등록 스크립트를 실행 합니다. 이 특성을 지정 하지 않으면 구성 요소 등록에 대 한 정보를 포함 하는 표준 .rgs 파일이 사용 됩니다. .Rgs 파일에 대 한 자세한 내용은 [ATL 레지스트리 구성 요소 (등록자)](../../atl/atl-registry-component-registrar.md)를 참조 하세요.
+**Registration_script** c + + 특성은 *스크립트로* 지정 된 사용자 지정 등록 스크립트를 실행 합니다. 이 특성을 지정 하지 않으면 구성 요소 등록에 대 한 정보를 포함 하는 표준 .rgs 파일이 사용 됩니다. .Rgs 파일에 대 한 자세한 내용은 [ATL 레지스트리 구성 요소 (등록자)](../../atl/atl-registry-component-registrar.md)를 참조 하세요.
 
 이 특성을 사용하려면 [coclass](coclass.md), [progid](progid.md)또는 [vi_progid](vi-progid.md) 특성(또는 이 중 하나를 암시하는 다른 특성)을 동일한 요소에 적용해야 합니다.
 

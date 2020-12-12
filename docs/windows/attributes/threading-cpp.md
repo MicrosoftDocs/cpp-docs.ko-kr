@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 스레딩 (c + +)'
 title: 스레딩 (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - threading attribute
 ms.assetid: 9b558cd6-fbf0-4602-aed5-31c068550ce3
-ms.openlocfilehash: 6f83dca442b6508207a4123fa918fc5078bdf664
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: e46a3720280fe7ee7b9debae98e3270825e8db40
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840819"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327250"
 ---
 # <a name="threading-c"></a>threading(C++)
 
@@ -50,7 +51,7 @@ ATL 프로젝트에서 [coclass](coclass.md) 특성도 있는 경우 *model* 에
 
 ## <a name="example"></a>예제
 
-**스레딩을**사용 하는 샘플은 사용 [이 허가](licensed.md) 된 예제를 참조 하세요.
+**스레딩을** 사용 하는 샘플은 사용 [이 허가](licensed.md) 된 예제를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 

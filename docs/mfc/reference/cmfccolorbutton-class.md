@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CMFCColorButton 클래스'
 title: CMFCColorButton 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -44,12 +45,12 @@ helpviewer_keywords:
 - CMFCColorButton [MFC], UpdateColor
 - CMFCColorButton [MFC], m_bEnabledInCustomizeMode
 ms.assetid: 9fdf34ae-4cc5-4c5e-9d89-1c50e8a73699
-ms.openlocfilehash: 7abe37969799d7fcd78d525a5ec1c6faa9d876ee
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: b3f3e40f1e52c1a387563fde2aa1027046d557f3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561000"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327694"
 ---
 # <a name="cmfccolorbutton-class"></a>CMFCColorButton 클래스
 
@@ -65,16 +66,16 @@ class CMFCColorButton : public CMFCButton
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CMFCColorButton:: CMFCColorButton](#cmfccolorbutton)|새 `CMFCColorButton` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
-|[CMFCColorButton::EnableAutomaticButton](#enableautomaticbutton)|일반 색 단추 위에 배치 되는 "자동" 단추를 사용 하거나 사용 하지 않도록 설정 합니다. 표준 시스템 자동 단추에는 **자동**으로 레이블이 지정 됩니다.|
-|[CMFCColorButton::EnableOtherButton](#enableotherbutton)|일반 색 단추 아래에 있는 "기타" 단추를 사용 하거나 사용 하지 않도록 설정 합니다. 표준 시스템 "기타" 단추에는 **더 많은 색**이 지정 됩니다.|
+|[CMFCColorButton::EnableAutomaticButton](#enableautomaticbutton)|일반 색 단추 위에 배치 되는 "자동" 단추를 사용 하거나 사용 하지 않도록 설정 합니다. 표준 시스템 자동 단추에는 **자동** 으로 레이블이 지정 됩니다.|
+|[CMFCColorButton::EnableOtherButton](#enableotherbutton)|일반 색 단추 아래에 있는 "기타" 단추를 사용 하거나 사용 하지 않도록 설정 합니다. 표준 시스템 "기타" 단추에는 **더 많은 색** 이 지정 됩니다.|
 |[CMFCColorButton::GetAutomaticColor](#getautomaticcolor)|현재 자동 색을 검색 합니다.|
 |[CMFCColorButton:: GetColor](#getcolor)|단추의 색을 검색 합니다.|
 |[CMFCColorButton:: SetColor](#setcolor)|단추의 색을 설정 합니다.|
@@ -86,7 +87,7 @@ class CMFCColorButton : public CMFCButton
 
 ### <a name="protected-methods"></a>Protected 메서드
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |[CMFCColorButton:: IsDrawXPTheme](#isdrawxptheme)|현재 색 단추가 Windows XP의 비주얼 스타일에 표시 되는지 여부를 나타냅니다.|
 |[CMFCColorButton::OnDraw](#ondraw)|단추의 이미지를 표시 하기 위해 프레임 워크에서 호출 됩니다.|
@@ -98,10 +99,10 @@ class CMFCColorButton : public CMFCButton
 
 ### <a name="data-members"></a>데이터 멤버
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|`m_bAltColorDlg`|부울입니다. TRUE 이면 프레임 워크는 *다른* 단추를 클릭할 때 [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) 색 대화 상자를 표시 하 고, 그렇지 않으면 시스템 색 대화 상자를 표시 합니다. 기본값은 TRUE입니다. 자세한 내용은 [Cmfccolorbutton:: EnableOtherButton](#enableotherbutton)을 참조 하세요.|
-|`m_bAutoSetFocus`|부울입니다. TRUE 이면 메뉴가 표시 될 때 프레임 워크에서 색 메뉴에 포커스를 설정 하 고, FALSE 이면 포커스를 변경 하지 않습니다. 기본값은 TRUE입니다.|
+|`m_bAltColorDlg`|부울 값입니다. TRUE 이면 프레임 워크는 *다른* 단추를 클릭할 때 [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) 색 대화 상자를 표시 하 고, 그렇지 않으면 시스템 색 대화 상자를 표시 합니다. 기본값은 TRUE입니다. 자세한 내용은 [Cmfccolorbutton:: EnableOtherButton](#enableotherbutton)을 참조 하세요.|
+|`m_bAutoSetFocus`|부울 값입니다. TRUE 이면 메뉴가 표시 될 때 프레임 워크에서 색 메뉴에 포커스를 설정 하 고, FALSE 이면 포커스를 변경 하지 않습니다. 기본값은 TRUE입니다.|
 |[CMFCColorButton:: m_bEnabledInCustomizeMode](#m_benabledincustomizemode)|색 단추에 대해 사용자 지정 모드를 사용할 수 있는지 여부를 나타냅니다.|
 |`m_Color`|[Colorref](/windows/win32/gdi/colorref) 값입니다. 현재 선택한 색을 포함 합니다.|
 |`m_ColorAutomatic`|[Colorref](/windows/win32/gdi/colorref) 값입니다. 현재 선택 된 기본 색을 포함 합니다.|
@@ -116,9 +117,9 @@ class CMFCColorButton : public CMFCButton
 
 ## <a name="remarks"></a>설명
 
-기본적으로 클래스는 `CMFCColorButton` 색 선택 대화 상자를 여는 푸시 단추로 동작 합니다. 색 선택 대화 상자에는 작은 색 단추 배열과 사용자 지정 색 선택을 표시 하는 "기타" 단추가 포함 됩니다. 표준 시스템 "기타" 단추에는 **더 많은 색**이 지정 됩니다. 사용자가 새 색을 선택 하면 `CMFCColorButton` 개체가 변경 내용을 반영 하 고 선택한 색을 표시 합니다.
+기본적으로 클래스는 `CMFCColorButton` 색 선택 대화 상자를 여는 푸시 단추로 동작 합니다. 색 선택 대화 상자에는 작은 색 단추 배열과 사용자 지정 색 선택을 표시 하는 "기타" 단추가 포함 됩니다. 표준 시스템 "기타" 단추에는 **더 많은 색** 이 지정 됩니다. 사용자가 새 색을 선택 하면 `CMFCColorButton` 개체가 변경 내용을 반영 하 고 선택한 색을 표시 합니다.
 
-코드에서 직접 또는 **클래스 마법사** 도구와 대화 상자 템플릿을 사용 하 여 색 단추 컨트롤을 만듭니다. 색 단추 컨트롤을 직접 만드는 경우 `CMFCColorButton` 응용 프로그램에 변수를 추가한 다음 개체의 생성자와 메서드를 호출 합니다 `Create` `CMFCColorButton` . **클래스 마법사**를 사용 하는 경우 `CButton` 응용 프로그램에 변수를 추가한 다음 변수의 형식을에서로 변경 합니다 `CButton` `CMFCColorButton` .
+코드에서 직접 또는 **클래스 마법사** 도구와 대화 상자 템플릿을 사용 하 여 색 단추 컨트롤을 만듭니다. 색 단추 컨트롤을 직접 만드는 경우 `CMFCColorButton` 응용 프로그램에 변수를 추가한 다음 개체의 생성자와 메서드를 호출 합니다 `Create` `CMFCColorButton` . **클래스 마법사** 를 사용 하는 경우 `CButton` 응용 프로그램에 변수를 추가한 다음 변수의 형식을에서로 변경 합니다 `CButton` `CMFCColorButton` .
 
 색 선택 대화 상자 ( [Cmfccolorbar 클래스](../../mfc/reference/cmfccolorbar-class.md))는 프레임 워크가 이벤트 처리기를 호출할 때 [Cmfccolorbar:: OnShowColorPopup](#onshowcolorpopup) 메서드로 표시 됩니다 `OnLButtonDown` . [Cmfccolorbutton:: OnShowColorPopup](#onshowcolorpopup) 메서드를 재정의 하 여 사용자 지정 색 선택을 지원할 수 있습니다.
 
@@ -201,7 +202,7 @@ void EnableOtherButton(
 COLORREF GetAutomaticColor() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 자동 색을 나타내는 RGB 값입니다.
 
@@ -217,7 +218,7 @@ COLORREF GetAutomaticColor() const;
 COLORREF GetColor() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 RGB 값입니다.
 
@@ -231,7 +232,7 @@ RGB 값입니다.
 BOOL IsDrawXPTheme() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 비주얼 스타일이 지원 되 고 현재 색 단추가 Windows XP의 비주얼 스타일에 표시 되 면 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
@@ -448,7 +449,7 @@ virtual CSize SizeToContent(BOOL bCalcOnly=FALSE);
 *bCalcOnly*<br/>
 진행 0이 아니면 새 크기의 단추 컨트롤이 계산 되지만 실제 크기는 변경 되지 않습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `CSize`새 단추 컨트롤 크기를 지정 하는 개체입니다.
 

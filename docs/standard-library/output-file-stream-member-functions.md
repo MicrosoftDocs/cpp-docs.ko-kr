@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 출력 파일 스트림 멤버 함수'
 title: Output File Stream Member 함수
 ms.date: 11/04/2016
 helpviewer_keywords:
 - output streams [C++], member functions
 ms.assetid: 38aaf710-8035-4a34-a0c4-123a5327f28a
-ms.openlocfilehash: f20ed4e238d23211a6eeec4a3091daeb4d02a9b3
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f2e9bde7bcac8ebccc668c68f222b495b53e0889
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217677"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327565"
 ---
 # <a name="output-file-stream-member-functions"></a>Output File Stream Member 함수
 
@@ -104,11 +105,11 @@ int main( )
 
 |함수|반환 값|
 |--------------|------------------|
-|[불량](basic-ios-class.md#bad)|**`true`** 복구할 수 없는 오류가 있으면를 반환 합니다.|
+|[올바르지](basic-ios-class.md#bad)|**`true`** 복구할 수 없는 오류가 있으면를 반환 합니다.|
 |[통과](basic-ios-class.md#fail)|**`true`** 복구할 수 없는 오류 또는 "예상" 조건 (예: 변환 오류)이 있거나 파일이 없으면를 반환 합니다. 를 호출한 후에는 0 인수를 사용 하 여 처리를 다시 시작할 수 있습니다 `clear` .|
-|[좋음](basic-ios-class.md#good)|**`true`** 오류 조건 (복구할 수 없음 또는 기타)이 없고 파일 끝 플래그가 설정 되지 않은 경우를 반환 합니다.|
+|[good](basic-ios-class.md#good)|**`true`** 오류 조건 (복구할 수 없음 또는 기타)이 없고 파일 끝 플래그가 설정 되지 않은 경우를 반환 합니다.|
 |[객체](basic-ios-class.md#eof)|**`true`** 파일 끝 조건을 반환 합니다.|
-|[해제](basic-ios-class.md#clear)|내부 오류 상태를 설정합니다. 기본 인수를 사용하여 호출된 경우에는 모든 오류 비트를 지웁니다.|
+|[clear](basic-ios-class.md#clear)|내부 오류 상태를 설정합니다. 기본 인수를 사용하여 호출된 경우에는 모든 오류 비트를 지웁니다.|
 |rdstate (기본-ios-클래스. md # rdstate|현재 오류 상태를 반환합니다.|
 
 **!** 연산자와 동일한 기능을 수행 하기 위해 연산자가 오버 로드 됩니다 `fail` . 따라서 다음 식은

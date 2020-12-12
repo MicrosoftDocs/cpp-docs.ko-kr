@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: casin, casin, casinl'
 title: casin, casinf, casinl
 ms.date: 11/04/2016
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - casinf function
 - casinl function
 ms.assetid: b75d1455-7b1e-43b0-bd46-c530be190be9
-ms.openlocfilehash: e3ae944c9808fd0fc6e8d1ffbd02da2a69454cc6
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 222e1b99bcc366b3d3d6656bd438d69f670f75eb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70943386"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326339"
 ---
 # <a name="casin-casinf-casinl"></a>casin, casinf, casinl
 
@@ -71,21 +72,21 @@ _Lcomplex casinl(
 
 ## <a name="return-value"></a>반환 값
 
-*Z*의 아크사인 (라디안)입니다. 결과는 허수 축을 따라 제한이 없으며, 실수 축을 따라 [-π/2, + π/2] 간격 내에 있습니다.
+*Z* 의 아크사인 (라디안)입니다. 결과는 허수 축을 따라 제한이 없으며, 실수 축을 따라 [-π/2, + π/2] 간격 내에 있습니다.
 
 ## <a name="remarks"></a>설명
 
-는 C++ 오버 로드를 허용 하므로 **_Fcomplex** 및 **_fcomplex** 값을 사용 하 고 반환 하는 **casin** 오버 로드를 호출할 수 있습니다. C 프로그램에서 **casin** 항상 **_dcomplex** value를 사용 하 고 반환 합니다.
+C + +에서는 오버 로드를 허용 하므로 **_Fcomplex** 및 **_Lcomplex** 값을 사용 하 고 반환 하는 **casin** 오버 로드를 호출할 수 있습니다. C 프로그램에서 **casin** 항상 **_Dcomplex** 값을 사용 하 고 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |루틴에서 반환된 값|C 헤더|C++ 헤더|
 |-------------|--------------|------------------|
-|**casin**,               **casinf**, **casinl**|\<complex.h>|\<ccomplex>|
+|**casin**,               **casin**, **casinl**|\<complex.h>|\<ccomplex>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [사전순 함수 참조](crt-alphabetical-function-reference.md)<br/>
 [catanh, catanhf, catanhl](catanh-catanhf-catanhl.md)<br/>

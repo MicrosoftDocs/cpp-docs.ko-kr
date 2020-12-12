@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: 함수'
 title: to 함수
 ms.date: 11/04/2016
 api_location:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - case, converting
 - characters, converting
 ms.assetid: f636a4c6-8c9f-4be2-baac-064f9dbae300
-ms.openlocfilehash: a54f20d6ae4dead5ba7c606fd28d456e96ff31d6
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 4e2e8993bfe3ecc85071ab53bcd38c38c9da3370
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836080"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326869"
 ---
 # <a name="to-functions"></a>to 함수
 
@@ -72,9 +73,9 @@ ms.locfileid: "88836080"
 
 `towlower` 및 `towupper` 함수는 다음 조건이 둘 다 0이 아닌 경우에만 변환된 `c` 복사본을 반환합니다. 그렇지 않은 경우에는 `c`가 변경되지 않습니다.
 
-- `c`가 적절한 대/소문자의 와이드 문자인 경우(즉, `iswupper` 또는 **iswlower**이 각각 0이 아닌 경우)
+- `c`가 적절한 대/소문자의 와이드 문자인 경우(즉, `iswupper` 또는 **iswlower** 이 각각 0이 아닌 경우)
 
-- 대상 대/소문자에 해당하는 와이드 문자가 있는 경우(즉, `iswlower` 또는 **iswupper**이 각각 0이 아닌 경우)
+- 대상 대/소문자에 해당하는 와이드 문자가 있는 경우(즉, `iswlower` 또는 **iswupper** 이 각각 0이 아닌 경우)
 
 ## <a name="example"></a>예제
 

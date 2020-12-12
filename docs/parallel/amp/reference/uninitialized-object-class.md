@@ -1,4 +1,5 @@
 ---
+description: Uninitialized_object 클래스에 대해 자세히 알아보세요.
 title: uninitialized_object 클래스
 ms.date: 03/27/2019
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - uninitialized_object class
 ms.assetid: 6ae3c4e8-64a6-4511-a158-03be197b63af
-ms.openlocfilehash: ef7ded0bf925d3430b70064c4979b75e08f9cf45
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 4929de9e865492c9fb468f5fac336f67fb307efb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77127701"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326392"
 ---
 # <a name="uninitialized_object-class"></a>uninitialized_object 클래스
 
@@ -29,11 +30,11 @@ class uninitialized_object : public runtime_exception;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
 |[uninitialized_object 생성자](#uninitialized_object)|`uninitialized_object` 클래스의 새 인스턴스를 초기화합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `exception`
 
@@ -47,9 +48,9 @@ class uninitialized_object : public runtime_exception;
 
 **네임스페이스:** 동시성
 
-## <a name="uninitialized_object"></a>uninitialized_object
+## <a name="uninitialized_object"></a><a name="uninitialized_object"></a> uninitialized_object
 
-`uninitialized_object` 예외의 새 인스턴스를 생성 합니다.
+예외의 새 인스턴스를 생성 `uninitialized_object` 합니다.
 
 ### <a name="syntax"></a>구문
 
@@ -65,10 +66,10 @@ uninitialized_object() throw();
 *_Message*<br/>
 오류에 대한 설명입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-`uninitialized_object` exception 개체입니다.
+`uninitialized_object`예외 개체입니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[Concurrency 네임스페이스(C++ AMP)](concurrency-namespace-cpp-amp.md)
+[동시성 네임 스페이스 (C++ AMP)](concurrency-namespace-cpp-amp.md)

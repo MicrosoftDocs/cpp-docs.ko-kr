@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 종료 (CRT)'
 title: terminate(CRT)
 ms.date: 4/2/2020
 api_name:
@@ -27,16 +28,16 @@ helpviewer_keywords:
 - terminate function
 - exception handling, termination
 ms.assetid: 90e67402-08e9-4b2a-962c-66a8afd3ccb4
-ms.openlocfilehash: 1ec4e27096dd6b5fea089e21c95022542d7adc82
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 8370c1f1aff54b5286ad4472b053275e3468a8d2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912217"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326170"
 ---
 # <a name="terminate-crt"></a>terminate(CRT)
 
-**Set_terminate**를 사용 하 여 [abort](abort.md) 또는 지정한 함수를 호출 합니다.
+**Set_terminate** 를 사용 하 여 [abort](abort.md) 또는 지정한 함수를 호출 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -54,7 +55,7 @@ void terminate( void );
 
 - 스택이 예외를 throw한 후에 손상된 경우
 
-**종료** 호출은 기본적으로 [중단](abort.md) 됩니다. 사용자 고유의 종료 함수를 작성 하 고 함수 이름을 인수로 사용 하 여 **set_terminate** 를 호출 하 여이 기본값을 변경할 수 있습니다. **terminate** 는 **set_terminate**에 대 한 인수로 지정 된 마지막 함수를 호출 합니다. 자세한 내용은 [처리되지 않은 C++ 예외](../../cpp/unhandled-cpp-exceptions.md)를 참조하세요.
+**종료** 호출은 기본적으로 [중단](abort.md) 됩니다. 사용자 고유의 종료 함수를 작성 하 고 함수 이름을 인수로 사용 하 여 **set_terminate** 를 호출 하 여이 기본값을 변경할 수 있습니다. **terminate** 는 **set_terminate** 에 대 한 인수로 지정 된 마지막 함수를 호출 합니다. 자세한 내용은 [처리되지 않은 C++ 예외](../../cpp/unhandled-cpp-exceptions.md)를 참조하세요.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -112,7 +113,7 @@ void term_func()
 term_func() was called by terminate().
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [예외 처리 루틴](../../c-runtime-library/exception-handling-routines.md)<br/>
 [중단이](abort.md)<br/>

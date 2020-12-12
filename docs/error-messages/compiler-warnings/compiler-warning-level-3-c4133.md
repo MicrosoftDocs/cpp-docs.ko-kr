@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 3) C4133'
 title: 컴파일러 경고 (수준 3) C4133
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4133
 ms.assetid: bdef87b0-21b3-41ac-9b23-1fa86101a9ac
-ms.openlocfilehash: 158af15bd4e5f01243a75597c61191bc6ba2cd00
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 84a0367a0a27b896bbfb04715e638b9ccc4a9a7c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80199034"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326479"
 ---
 # <a name="compiler-warning-level-3-c4133"></a>컴파일러 경고 (수준 3) C4133
 

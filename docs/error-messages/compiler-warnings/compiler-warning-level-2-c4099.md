@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 2) C4099'
 title: 컴파일러 경고 (수준 2) C4099
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4099
 ms.assetid: 00bb803d-cae7-4ab8-8969-b46f54139ac8
-ms.openlocfilehash: 97ead14dc9771dc02ad722843ec9fe1a8056e3f6
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: c35ce10560ca81f9457f6a21c4c55d96996e7645
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80174286"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326519"
 ---
 # <a name="compiler-warning-level-2-c4099"></a>컴파일러 경고 (수준 2) C4099
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 대화 상자 컨트롤 (c + +)'
 title: 대화 상자 컨트롤 (c + +) | Microsoft Docs
 ms.date: 02/15/2019
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - dialog box controls [C++], custom (user) controls
 - Dialog Editor [C++], custom controls
 ms.assetid: e216c4f9-2fd4-429d-889a-8ebce7bad177
-ms.openlocfilehash: 449e60e968916f7741422ca2766375ad29afd062
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: e68547ebd550797d4ad195c6bef4c3f2a71e769e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91505709"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327150"
 ---
 # <a name="dialog-box-controls-c"></a>대화 상자 컨트롤 (c + +)
 
@@ -30,7 +31,7 @@ ms.locfileid: "91505709"
 
 대화 상자에 컨트롤을 추가한 후에는 [속성 창](/visualstudio/ide/reference/properties-window)에서 해당 캡션과 같은 속성을 변경할 수 있습니다. 여러 개의 컨트롤을 선택 하 고 해당 속성을 한 번에 변경할 수도 있습니다.
 
-**대화 상자 편집기**에 대 한 자세한 내용은 컨트롤 [추가, 편집 또는 삭제](adding-editing-or-deleting-controls.md)방법, [레이아웃 컨트롤](../windows/arrangement-of-controls-on-dialog-boxes.md)및 [컨트롤 액세스 및 값 정의](../windows/defining-mnemonics-access-keys.md)를 참조 하세요.
+**대화 상자 편집기** 에 대 한 자세한 내용은 컨트롤 [추가, 편집 또는 삭제](adding-editing-or-deleting-controls.md)방법, [레이아웃 컨트롤](../windows/arrangement-of-controls-on-dialog-boxes.md)및 [컨트롤 액세스 및 값 정의](../windows/defining-mnemonics-access-keys.md)를 참조 하세요.
 
 컨트롤 및 대화 상자에 대 한 자세한 내용은 [컨트롤 클래스](../mfc/control-classes.md), [대화 상자 클래스](../mfc/dialog-box-classes.md)및 [스크롤 막대 스타일](../mfc/reference/styles-used-by-mfc.md#scroll-bar-styles)을 참조 하세요.
 

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _swab'
 title: _swab
 ms.date: 4/2/2020
 api_name:
@@ -31,12 +32,12 @@ helpviewer_keywords:
 - swab function
 - bytes, swapping
 ms.assetid: 017142f2-050c-4f6a-8b49-6b094f58ec94
-ms.openlocfilehash: 7353081fab92fcc3324a214688be28a4f651b05f
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 178189ede5330d467e8ec263a4558bb55108f354
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912418"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326254"
 ---
 # <a name="_swab"></a>_swab
 
@@ -71,7 +72,7 @@ void _swab(
 
 ## <a name="remarks"></a>설명
 
-*N* 이 짝수 이면 **_swab** 함수는 *src*에서 *n* 바이트를 복사 하 고, 인접 한 각 바이트 쌍을 교환 하 고, 결과를 *대상*에 저장 합니다. *N* 이 홀수 이면 **_swab** 은 *src*의 첫 번째 *n*-1 바이트를 복사 하 고 교환 하 고 최종 바이트는 복사 되지 않습니다. **_Swab** 함수는 일반적으로 다른 바이트 순서를 사용 하는 컴퓨터에 전송할 이진 데이터를 준비 하는 데 사용 됩니다.
+*N* 이 짝수 이면 **_swab** 함수는 *src* 에서 *n* 바이트를 복사 하 고, 인접 한 각 바이트 쌍을 교환 하 고, 결과를 *대상* 에 저장 합니다. *N* 이 홀수 이면 **_swab** 은 *src* 의 첫 번째 *n*-1 바이트를 복사 하 고 교환 하 고 최종 바이트는 복사 되지 않습니다. **_Swab** 함수는 일반적으로 다른 바이트 순서를 사용 하는 컴퓨터에 전송할 이진 데이터를 준비 하는 데 사용 됩니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -79,7 +80,7 @@ void _swab(
 
 |루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
-|**_swab**|C: \<stdlib.h> C++: \<cstdlib> 또는 \<stdlib.h>|
+|**_swab**|C: \<stdlib.h> c + +: \<cstdlib> 또는 \<stdlib.h>|
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
@@ -110,6 +111,6 @@ After:  BADCFEHGJILKNMPORQTSVUXWZY
         ABCDEFGHIJKLMNOPQRSTUVWXYZ.
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [버퍼 조작](../../c-runtime-library/buffer-manipulation.md)<br/>

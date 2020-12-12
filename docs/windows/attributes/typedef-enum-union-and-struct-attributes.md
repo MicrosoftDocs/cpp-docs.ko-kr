@@ -1,16 +1,17 @@
 ---
+description: '자세히 알아보기: Typedef, Enum, Union 및 Struct 특성'
 title: Typedef, Enum, Union 및 Struct 특성 (c + + COM)
 ms.date: 10/02/2018
 helpviewer_keywords:
 - union attributes
 - attributes [C++/CLI], reference topics
 ms.assetid: f8a4fe94-dc02-4aed-bc31-3e500d42f4c7
-ms.openlocfilehash: 5e9eccd5e4464e92757d6dd78dd0f5187372ea3e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9f72f5ff45709287d31aa4da05b2569a0b37baff
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222110"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327241"
 ---
 # <a name="typedef-enum-union-and-struct-attributes"></a>Typedef, Enum, Union 및 Struct 특성
 
@@ -18,7 +19,7 @@ ms.locfileid: "87222110"
 
 ### <a name="typedef"></a>형식 정의
 
-|attribute|설명|
+|특성|설명|
 |---------------|-----------------|
 |[case](case-cpp.md)|에서 [switch_type](switch-type.md) 특성과 함께 사용 **`union`** 됩니다.|
 |[재구성](custom-cpp.md)|사용자 고유의 특성을 정의할 수 있습니다.|
@@ -38,7 +39,7 @@ ms.locfileid: "87222110"
 
 ### <a name="enum"></a>enum
 
-|attribute|설명|
+|특성|설명|
 |---------------|-----------------|
 |[재구성](custom-cpp.md)|사용자 고유의 특성을 정의할 수 있습니다.|
 |[내보내기가](export.md)|데이터 구조가 .idl 파일에 배치 되도록 합니다.|
@@ -47,7 +48,7 @@ ms.locfileid: "87222110"
 
 ### <a name="union"></a>union
 
-|attribute|설명|
+|특성|설명|
 |---------------|-----------------|
 |[재구성](custom-cpp.md)|사용자 고유의 특성을 정의할 수 있습니다.|
 |[내보내기가](export.md)|데이터 구조가 .idl 파일에 배치 되도록 합니다.|
@@ -61,14 +62,14 @@ ms.locfileid: "87222110"
 
 ### <a name="nonencapsulated-union"></a>캡슐화 되지 않은 공용 구조체
 
-|attribute|설명|
+|특성|설명|
 |---------------|-----------------|
 |[ms_union](ms-union.md)|캡슐화 되지 않은 공용 구조체의 네트워크 데이터 표현 맞춤을 제어 합니다.|
 |[no_injected_text](no-injected-text.md)|컴파일러가 특성 사용의 결과로 코드를 삽입 하지 않도록 합니다.|
 
 ### <a name="struct"></a>struct
 
-|attribute|설명|
+|특성|설명|
 |---------------|-----------------|
 |[aggregatable](aggregatable.md)|클래스가 집계를 지원함을 나타냅니다.|
 |[집계](aggregates.md)|컨트롤이 대상 클래스를 집계 함을 나타냅니다.|

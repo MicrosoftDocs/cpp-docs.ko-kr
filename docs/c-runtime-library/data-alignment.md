@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 데이터 맞춤'
 title: 데이터 맞춤
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - data alignment [C++]
 ms.assetid: 35ac3d2d-a4b3-421b-954f-b7372b1f18e1
-ms.openlocfilehash: 92b8df81751e01e655e348d5f090705e5194312b
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: cd942d0ec9c4cdfbedf473bf005123061dece669
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57738822"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326352"
 ---
 # <a name="data-alignment"></a>데이터 맞춤
 

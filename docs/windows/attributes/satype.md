@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: satype'
 title: satype (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - satype attribute
 ms.assetid: 1716590b-6bcb-4aba-b1bc-82f7335f02c3
-ms.openlocfilehash: 16da256f491dbb0002d92cadaceda14a49eb2192
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: dab0f866eba5501a9a83d531d9cbdf50501dcff0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842782"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327323"
 ---
 # <a name="satype"></a>satype
 
@@ -35,7 +36,7 @@ ms.locfileid: "88842782"
 |**적용 대상**|인터페이스 매개 변수, 인터페이스 메서드|
 |**불가능**|아니요|
 |**필수 특성**|없음|
-|**잘못된 특성**|None|
+|**잘못된 특성**|없음|
 
 ## <a name="remarks"></a>설명
 

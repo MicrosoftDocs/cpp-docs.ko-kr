@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 시스템, _wsystem'
 title: system, _wsystem
 ms.date: 4/2/2020
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - commands, executing
 - command interpreter
 ms.assetid: 7d3df2b6-f742-49ce-bf52-012b0aee3df5
-ms.openlocfilehash: 15e4637d709fdf4600ecb4c66c7d4a75c4fa07eb
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 3fb2045b932347669a756be1c8bc2f87694bd50d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844979"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326241"
 ---
 # <a name="system-_wsystem"></a>system, _wsystem
 
@@ -67,7 +68,7 @@ int _wsystem(
 
 ## <a name="return-value"></a>반환 값
 
-*Command* 가 **NULL** 이 고 명령 인터프리터가 발견 되 면 0이 아닌 값을 반환 합니다. 명령 인터프리터를 찾을 수 없는 경우는 0을 반환 하 고 **errno** 를 **enoent (** 로 설정 합니다. *Command* 가 **NULL**이 아니면 **system** 은 명령 인터프리터에서 반환 된 값을 반환 합니다. 명령 인터프리터가 값 0을 반환할 때만 값 0을 반환합니다. 반환 값-1은 오류를 나타내고 **errno** 은 다음 값 중 하나로 설정 됩니다.
+*Command* 가 **NULL** 이 고 명령 인터프리터가 발견 되 면 0이 아닌 값을 반환 합니다. 명령 인터프리터를 찾을 수 없는 경우는 0을 반환 하 고 **errno** 를 **enoent (** 로 설정 합니다. *Command* 가 **NULL** 이 아니면 **system** 은 명령 인터프리터에서 반환 된 값을 반환 합니다. 명령 인터프리터가 값 0을 반환할 때만 값 0을 반환합니다. 반환 값-1은 오류를 나타내고 **errno** 은 다음 값 중 하나로 설정 됩니다.
 
 | 값 | 설명 |
 |-|-|
@@ -80,11 +81,11 @@ int _wsystem(
 
 ## <a name="remarks"></a>설명
 
-**시스템** 함수 *는 명령을 명령 인터프리터에 전달 하며* ,이 명령은 문자열을 운영 체제 명령으로 실행 합니다. **시스템** 은 **COMSPEC** 및 **PATH** 환경 변수를 사용 하 여 CMD.exe 명령 인터프리터 파일을 찾습니다. *Command* 가 **NULL**인 경우 함수는 명령 인터프리터가 있는지만 확인 합니다.
+**시스템** 함수 *는 명령을 명령 인터프리터에 전달 하며* ,이 명령은 문자열을 운영 체제 명령으로 실행 합니다. **시스템** 은 **COMSPEC** 및 **PATH** 환경 변수를 사용 하 여 CMD.exe 명령 인터프리터 파일을 찾습니다. *Command* 가 **NULL** 인 경우 함수는 명령 인터프리터가 있는지만 확인 합니다.
 
-[Fflush](fflush.md) 또는 [_flushall](flushall.md)를 사용 하 여 명시적으로 플러시 하거나 **시스템**을 호출 하기 전에 모든 스트림을 닫아야 합니다.
+[Fflush](fflush.md) 또는 [_flushall](flushall.md)를 사용 하 여 명시적으로 플러시 하거나 **시스템** 을 호출 하기 전에 모든 스트림을 닫아야 합니다.
 
-**_wsystem** 는 **시스템**의 와이드 문자 버전입니다. **_wsystem** 에 대 한 *명령* 인수는 와이드 문자열입니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다.
+**_wsystem** 는 **시스템** 의 와이드 문자 버전입니다. **_wsystem** 에 대 한 *명령* 인수는 와이드 문자열입니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 

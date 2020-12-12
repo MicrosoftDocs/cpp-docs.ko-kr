@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 식 계산기 오류 CXX0069'
 title: 식 계산기 오류 CXX0069
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - CXX0069
 ms.assetid: cf334b23-1e17-4d37-acc5-18597ee84164
-ms.openlocfilehash: 07e6dea2090c09223719d0dbeeadc9497e7ab042
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: cf9ebe20a325b0f104323d5525301fa5bbf8b7e2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80184270"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326450"
 ---
 # <a name="expression-evaluator-error-cxx0069"></a>식 계산기 오류 CXX0069
 

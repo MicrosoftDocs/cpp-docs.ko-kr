@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: v1_enum'
 title: v1_enum (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - v1_enum attribute
 ms.assetid: 2fe92d92-81b9-4a1c-b6ce-437d0eb770ca
-ms.openlocfilehash: 6529a32b0bfe2de09191e9cced8f6bd98e7ffdcc
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: c096ec78971e8980b68572c7f0bbb4510d03d3d1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832986"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327202"
 ---
 # <a name="v1_enum"></a>v1_enum
 
@@ -29,7 +30,7 @@ ms.locfileid: "88832986"
 
 ## <a name="example"></a>예제
 
-다음 코드에서는 **v1_enum**를 사용 하는 방법을 보여 줍니다.
+다음 코드에서는 **v1_enum** 를 사용 하는 방법을 보여 줍니다.
 
 ```cpp
 // cpp_attr_ref_v1_enum.cpp

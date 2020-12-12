@@ -1,4 +1,5 @@
 ---
+description: 데이터 변환에 대해 자세히 알아보세요.
 title: 데이터 변환
 ms.date: 03/21/2018
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - data conversion routines [C++]
 - converting data
 ms.assetid: b15b5268-7467-49f1-bf95-5299b598f94c
-ms.openlocfilehash: 94e6a8182e12ecd74f9d2cd5dddaa84a1e3eb847
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4ce9a7e04ed8d7e561e256929b8b8625e34d2620
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218769"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327050"
 ---
 # <a name="data-conversion"></a>데이터 변환
 
@@ -20,13 +21,13 @@ ms.locfileid: "87218769"
 
 ## <a name="data-conversion-routines"></a>데이터 변환 루틴
 
-|루틴에서 반환된 값|Windows Server Update Services와 함께|
+|루틴에서 반환된 값|기능|
 |-------------|---------|
 |[abs](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|정수의 절대값 찾기|
-|[atof, _atof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|문자열 변환**`float`**|
-|[atoi, _atoi_l](../c-runtime-library/reference/atoi-atoi-l-wtoi-wtoi-l.md)|문자열 변환**`int`**|
+|[atof, _atof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|문자열 변환 **`float`**|
+|[atoi, _atoi_l](../c-runtime-library/reference/atoi-atoi-l-wtoi-wtoi-l.md)|문자열 변환 **`int`**|
 |[_atoi64, _atoi64_l](../c-runtime-library/reference/atoi64-atoi64-l-wtoi64-wtoi64-l.md)|문자열을 또는로 변환 **`__int64`****`long long`**|
-|[atol, _atol_l](../c-runtime-library/reference/atol-atol-l-wtol-wtol-l.md)|문자열 변환**`long`**|
+|[atol, _atol_l](../c-runtime-library/reference/atol-atol-l-wtol-wtol-l.md)|문자열 변환 **`long`**|
 |[c16rtomb, c32rtomb](../c-runtime-library/reference/c16rtomb-c32rtomb1.md)|UTF-16 또는 UTF-32 문자를 해당 멀티 바이트 문자로 변환|
 |[_ecvt](../c-runtime-library/reference/ecvt.md), [_ecvt_s](../c-runtime-library/reference/ecvt-s.md)|**`double`** 지정 된 길이의 문자열로 변환 합니다.|
 |[_fcvt](../c-runtime-library/reference/fcvt.md), [_fcvt_s](../c-runtime-library/reference/fcvt-s.md)|**`double`** 소수점 뒤의 지정 된 자릿수를 사용 하 여 문자열로 변환 합니다.|
@@ -43,7 +44,7 @@ ms.locfileid: "87218769"
 |[mbrtoc16, mbrtoc32](../c-runtime-library/reference/mbrtoc16-mbrtoc323.md)|멀티바이트 문자를 해당하는 UTF-16 또는 UTF-32 문자로 변환|
 |[mbstowcs, _mbstowcs_l](../c-runtime-library/reference/mbstowcs-mbstowcs-l.md), [mbstowcs_s, _mbstowcs_s_l](../c-runtime-library/reference/mbstowcs-s-mbstowcs-s-l.md)|멀티바이트 문자의 시퀀스를 해당되는 와이드 문자 시퀀스로 변환합니다.|
 |[mbtowc, _mbtowc_l](../c-runtime-library/reference/mbtowc-mbtowc-l.md)|멀티바이트 문자를 해당되는 와이드 문자로 변환합니다.|
-|[strtod, _strtod_l, wcstod, _wcstod_l](../c-runtime-library/reference/strtod-strtod-l-wcstod-wcstod-l.md)|문자열 변환**`double`**|
+|[strtod, _strtod_l, wcstod, _wcstod_l](../c-runtime-library/reference/strtod-strtod-l-wcstod-wcstod-l.md)|문자열 변환 **`double`**|
 |[strtol, wcstol, _strtol_l, _wcstol_l](../c-runtime-library/reference/strtol-wcstol-strtol-l-wcstol-l.md)|문자열을 **`long`** 정수로 변환|
 |[strtoul, _strtoul_l, wcstoul, _wcstoul_l](../c-runtime-library/reference/strtoul-strtoul-l-wcstoul-wcstoul-l.md)|문자열을 **`unsigned long`** 정수로 변환|
 |[strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](../c-runtime-library/reference/strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)|문자열을 로캘별 정보를 기준으로 정렬된 형식으로 변환합니다.|
@@ -54,10 +55,10 @@ ms.locfileid: "87218769"
 |[toupper, _toupper, towupper, _toupper_l, _towupper_l](../c-runtime-library/reference/toupper-toupper-towupper-toupper-l-towupper-l.md)|문자를 무조건 대문자로 변환|
 |[wcstombs, _wcstombs_l](../c-runtime-library/reference/wcstombs-wcstombs-l.md), [wcstombs_s, _wcstombs_s_l](../c-runtime-library/reference/wcstombs-s-wcstombs-s-l.md)|와이드 문자의 시퀀스를 해당되는 멀티바이트 문자의 시퀀스로 변환합니다.|
 |[wctomb, _wctomb_l](../c-runtime-library/reference/wctomb-wctomb-l.md), [wctomb_s, _wctomb_s_l](../c-runtime-library/reference/wctomb-s-wctomb-s-l.md)|와이드 문자를 해당되는 멀티바이트 문자로 변환합니다.|
-|[_wtof, _wtof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|와이드 문자 문자열을로 변환 합니다.**`double`**|
-|[_wtoi, _wtoi_l](../c-runtime-library/reference/atoi-atoi-l-wtoi-wtoi-l.md)|와이드 문자 문자열을로 변환 합니다.**`int`**|
+|[_wtof, _wtof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|와이드 문자 문자열을로 변환 합니다. **`double`**|
+|[_wtoi, _wtoi_l](../c-runtime-library/reference/atoi-atoi-l-wtoi-wtoi-l.md)|와이드 문자 문자열을로 변환 합니다. **`int`**|
 |[_wtoi64, _wtoi64_l](../c-runtime-library/reference/atoi64-atoi64-l-wtoi64-wtoi64-l.md)|와이드 문자 문자열을 또는로 변환 합니다. **`__int64`****`long long`**|
-|[_wtol, _wtol_l](../c-runtime-library/reference/atol-atol-l-wtol-wtol-l.md)|와이드 문자 문자열을로 변환 합니다.**`long`**|
+|[_wtol, _wtol_l](../c-runtime-library/reference/atol-atol-l-wtol-wtol-l.md)|와이드 문자 문자열을로 변환 합니다. **`long`**|
 
 ## <a name="see-also"></a>참고 항목
 

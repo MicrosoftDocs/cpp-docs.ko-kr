@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 2) C4056'
 title: 컴파일러 경고 (수준 2) C4056
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4056
 ms.assetid: a3c3a9b8-ec30-452d-96cb-3694adcce789
-ms.openlocfilehash: 6046c41bfe9d787732a2cbd50ce3b0d0d9fdb26f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 5d8b96e97197e43bf288476e310ddd842a90ec48
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80174351"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326546"
 ---
 # <a name="compiler-warning-level-2-c4056"></a>컴파일러 경고 (수준 2) C4056
 

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: short_vector 구조체'
 title: short_vector 구조체
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 - AMP_SHORT_VECTORS/short_vector
 - AMP_SHORT_VECTORS/Concurrency::graphics::short_vector::short_vector Constructor
 ms.assetid: e4f50b8f-1150-437d-b58c-79c5fb883708
-ms.openlocfilehash: fc2864477da80885b18dabb08b9ccbee30f31387
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 54879df686210606c99a1ae5b9ccc7a31f7fca25
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81374746"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327603"
 ---
 # <a name="short_vector-structure"></a>short_vector 구조체
 
@@ -85,13 +86,13 @@ struct short_vector<double, 4>;
 
 ### <a name="public-typedefs"></a>공용 Typedefs
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |`type`||
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
 |[short_vector::short_vector 생성자](#ctor)||
 
@@ -101,11 +102,11 @@ struct short_vector<double, 4>;
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** amp_short_vectors.h
+**헤더:** amp_short_vectors. h
 
-**네임스페이스:** 동시성::그래픽
+**네임 스페이스:** Concurrency:: graphics
 
-## <a name="short_vectorshort_vector-constructor"></a><a name="ctor"></a>short_vector:short_vector 생성자
+## <a name="short_vectorshort_vector-constructor"></a><a name="ctor"></a> short_vector:: short_vector 생성자
 
 ```cpp
 short_vector();

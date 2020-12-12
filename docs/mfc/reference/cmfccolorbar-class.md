@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CMFCColorBar 클래스'
 title: CMFCColorBar 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -74,12 +75,12 @@ helpviewer_keywords:
 - CMFCColorBar [MFC], SetPropList
 - CMFCColorBar [MFC], ShowCommandMessageString
 ms.assetid: 4756ee40-25a5-4cee-af7f-acab7993d1c7
-ms.openlocfilehash: ca28f8a07938e787fcf2d91d714c9dc82092194f
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 5a2935c71a5579dddb2133f2ac6589a6bd447ef6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561039"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327709"
 ---
 # <a name="cmfccolorbar-class"></a>CMFCColorBar 클래스
 
@@ -95,13 +96,13 @@ class CMFCColorBar : public CMFCPopupMenuBar
 
 ### <a name="protected-constructors"></a>Protected 생성자
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |[CMFCColorBar:: CMFCColorBar](#cmfccolorbar)|`CMFCColorBar` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CMFCColorBar:: ContextToSize](#contexttosize)|색 막대 컨트롤의 단추를 포함 하는 데 필요한 세로 및 가로 여백을 계산한 다음 해당 단추의 위치를 조정 합니다.|
 |[CMFCColorBar:: CreateControl](#createcontrol)|색 막대 컨트롤 창을 만들고 개체에 연결한 `CMFCColorBar` 다음 지정 된 색 색상표를 포함 하도록 컨트롤의 크기를 조정 합니다.|
@@ -110,7 +111,7 @@ class CMFCColorBar : public CMFCPopupMenuBar
 |[CMFCColorBar:: EnableOtherButton](#enableotherbutton)|사용자가 더 많은 색을 선택할 수 있는 대화 상자 표시를 사용 하거나 사용 하지 않도록 설정 합니다.|
 |[CMFCColorBar:: GetColor](#getcolor)|현재 선택 된 색을 검색 합니다.|
 |[CMFCColorBar:: GetCommandID](#getcommandid)|현재 색 막대 컨트롤의 명령 ID를 검색 합니다.|
-|[CMFCColorBar:: GetHighlightedColor](#gethighlightedcolor)|색 단추에 포커스가 있음을 나타내는 색을 검색 합니다. 즉, 단추가 *활성*상태입니다.|
+|[CMFCColorBar:: GetHighlightedColor](#gethighlightedcolor)|색 단추에 포커스가 있음을 나타내는 색을 검색 합니다. 즉, 단추가 *활성* 상태입니다.|
 |[CMFCColorBar:: GetHorzMargin](#gethorzmargin)|왼쪽 또는 오른쪽 색 셀과 클라이언트 영역 경계 사이의 공백의 가로 여백을 검색 합니다.|
 |[CMFCColorBar:: GetVertMargin](#getvertmargin)|위쪽 또는 아래쪽 색 셀과 클라이언트 영역 경계 사이의 공간에 해당 하는 세로 여백을 검색 합니다.|
 |[CMFCColorBar:: IsTearOff](#istearoff)|현재 색 막대를 도킹할 수 있는지 여부를 나타냅니다.|
@@ -123,7 +124,7 @@ class CMFCColorBar : public CMFCPopupMenuBar
 
 ### <a name="protected-methods"></a>Protected 메서드
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |[CMFCColorBar:: AdjustLocations](#adjustlocations)|색 막대 컨트롤에서 색 단추의 위치를 조정 합니다.|
 |[CMFCColorBar:: AllowChangeTextLabels](#allowchangetextlabels)|색 단추의 텍스트 레이블을 변경할 수 있는지 여부를 나타냅니다.|
@@ -144,7 +145,7 @@ class CMFCColorBar : public CMFCPopupMenuBar
 
 ### <a name="protected-data-members"></a>보호된 데이터 멤버
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |`m_bInternal`|마우스 이벤트가 처리 되는지 여부를 결정 하는 부울 필드입니다. 일반적으로이 필드가 TRUE이 고 사용자 지정 모드가 FALSE 인 경우 마우스 이벤트가 처리 됩니다.|
 |`m_bIsEnabled`|컨트롤을 사용할 수 있는지 여부를 나타내는 부울입니다.|
@@ -251,7 +252,7 @@ virtual void AdjustLocations();
 virtual BOOL AllowChangeTextLabels() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 항상 FALSE입니다.
 
@@ -267,7 +268,7 @@ virtual BOOL AllowChangeTextLabels() const;
 virtual BOOL AllowShowOnList() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 항상 TRUE입니다.
 
@@ -288,7 +289,7 @@ virtual CSize CalcSize(BOOL bVertDock);
 *bVertDock*<br/>
 진행 색 막대 컨트롤이 세로로 도킹 되도록 지정 하려면 TRUE로 설정 합니다. 색 막대 컨트롤이 가로로 도킹 되도록 지정 하려면 FALSE로 설정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 색 막대 컨트롤에서 색 단추 배열의 크기입니다.
 
@@ -339,7 +340,7 @@ CMFCColorBar(
 *lpszAutoColor*<br/>
 진행 *자동* (기본) 색 단추의 텍스트 레이블이나 NULL입니다.
 
-자동 단추의 표준 레이블은 **자동**입니다.
+자동 단추의 표준 레이블은 **자동** 입니다.
 
 *lpszOtherColor*<br/>
 진행 추가 색을 선택 하거나 NULL을 표시 하는 *기타* 단추의 텍스트 레이블입니다.
@@ -434,7 +435,7 @@ virtual BOOL Create(
 *nColDockVert*<br/>
 진행 세로 방향으로 도킹할 때 색 막대 컨트롤의 열 수입니다. 기본값은 0입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -472,13 +473,13 @@ virtual BOOL CreateControl(
 *pPalette*<br/>
 진행 색의 색상표 또는 NULL에 대 한 포인터입니다. 이 매개 변수가 NULL 인 경우이 메서드는 20 개의 색이 지정 된 것 처럼 색 막대 컨트롤의 크기를 계산 합니다. 기본값은 NULL입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 *rect*, *Ncolumns*및 *pPalette* 매개 변수를 사용 하 여 색 막대 컨트롤의 적절 한 수 또는 행과 열을 계산한 다음 [cmfccolorbar:: Create](#create) 메서드를 호출 합니다.
+이 메서드는 *rect*, *Ncolumns* 및 *pPalette* 매개 변수를 사용 하 여 색 막대 컨트롤의 적절 한 수 또는 행과 열을 계산한 다음 [cmfccolorbar:: Create](#create) 메서드를 호출 합니다.
 
 ## <a name="cmfccolorbarcreatepalette"></a><a name="createpalette"></a> CMFCColorBar:: CreatePalette
 
@@ -498,7 +499,7 @@ static BOOL CreatePalette(
 *색*\
 진행 색의 색상표입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -518,7 +519,7 @@ void EnableAutomaticButton(
 *lpszLabel*<br/>
 진행 *자동* (기본) 색 단추의 텍스트 레이블이나 NULL입니다.
 
-자동 단추의 표준 레이블은 **자동**입니다.
+자동 단추의 표준 레이블은 **자동** 입니다.
 
 *colorAutomatic*<br/>
 진행 자동 단추를 클릭할 때 프레임 워크에서 적용 하는 기본 색입니다.
@@ -562,7 +563,7 @@ void EnableOtherButton(
 COLORREF GetColor() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 선택한 색입니다.
 
@@ -579,9 +580,9 @@ CSize GetColorGridSize(BOOL bVertDock) const;
 *bVertDock*\
 진행 세로 도킹 된 색 막대 컨트롤에 대해 계산을 수행 하려면 TRUE이 고, 그렇지 않으면 가로 도킹 된 컨트롤에 대 한 계산을 수행 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-[CSize](../../atl-mfc-shared/reference/csize-class.md) `cx` 구성 요소에 열 수가 포함 되 고 해당 `cy` 구성 요소에 행 수가 포함 된 csize 개체입니다.
+[](../../atl-mfc-shared/reference/csize-class.md) `cx` 구성 요소에 열 수가 포함 되 고 해당 `cy` 구성 요소에 행 수가 포함 된 csize 개체입니다.
 
 ## <a name="cmfccolorbargetcommandid"></a><a name="getcommandid"></a> CMFCColorBar:: GetCommandID
 
@@ -591,7 +592,7 @@ CSize GetColorGridSize(BOOL bVertDock) const;
 UINT GetCommandID() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 명령 ID입니다.
 
@@ -612,19 +613,19 @@ int GetExtraHeight(int nNumColumns) const;
 *nNumColumns*\
 진행 색 막대 컨트롤에 문서 색이 포함 되어 있는 경우 문서 색의 표에 표시할 열 수입니다. 그렇지 않으면이 값이 사용 되지 않습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 필요한 계산 된 추가 높이입니다.
 
 ## <a name="cmfccolorbargethighlightedcolor"></a><a name="gethighlightedcolor"></a> CMFCColorBar:: GetHighlightedColor
 
-색 단추에 포커스가 있음을 나타내는 색을 검색 합니다. 즉, 단추가 *활성*상태입니다.
+색 단추에 포커스가 있음을 나타내는 색을 검색 합니다. 즉, 단추가 *활성* 상태입니다.
 
 ```
 COLORREF GetHighlightedColor() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 RGB 값입니다.
 
@@ -638,7 +639,7 @@ RGB 값입니다.
 int GetHorzMargin();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 가로 여백입니다.
 
@@ -650,7 +651,7 @@ int GetHorzMargin();
 int GetVertMargin() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 세로 여백입니다.
 
@@ -672,7 +673,7 @@ static int InitColors(
 *arColors*\
 진행 색의 배열입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 색 배열의 요소 수입니다.
 
@@ -684,7 +685,7 @@ static int InitColors(
 BOOL IsTearOff() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 색 막대 컨트롤을 도킹할 수 있으면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -705,7 +706,7 @@ virtual BOOL OnKey(UINT nChar);
 *nChar*<br/>
 진행 사용자가 누른 키의 가상 키 코드입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 지정 된 키를 처리 하면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
@@ -722,7 +723,7 @@ virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
 *pButton*\
 진행 도구 모음에 있는 컨트롤에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -766,7 +767,7 @@ virtual BOOL OpenColorDialog(
 *colorRes*<br/>
 제한이 사용자가 선택한 색입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 사용자가 색을 선택한 경우 TRUE입니다. 사용자가 색 대화 상자를 취소 한 경우 FALSE입니다.
 
@@ -793,7 +794,7 @@ CPalette* SelectPalette(CDC* pDC);
 *컨트롤러가*\
 진행 현재 색 막대 컨트롤의 부모 단추에 대 한 장치 컨텍스트에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 색 막대 컨트롤의 부모 단추 색상표로 대체 되는 색상표에 대 한 포인터입니다.
 
