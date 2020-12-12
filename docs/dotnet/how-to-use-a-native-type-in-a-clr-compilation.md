@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 방법:/clr 컴파일에 네이티브 형식 사용'
 title: 방법:-clr 컴파일에서 네이티브 형식 사용
 ms.custom: get-started-article
 ms.date: 11/04/2016
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - compilation, native types in /clr
 - /clr compiler option [C++], using native types
 ms.assetid: 3a505c90-4adb-4942-9cf9-7d1fdcbc01e7
-ms.openlocfilehash: 88a678a19043d3229218dd69afbf8548348817df
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 8e8479bb64166faec841d9d69ce38b3e8e57e048
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90683964"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97286282"
 ---
 # <a name="how-to-use-a-native-type-in-a-clr-compilation"></a>방법: /clr 컴파일에 네이티브 형식 사용
 
@@ -59,6 +60,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [C + + Interop 사용 (암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

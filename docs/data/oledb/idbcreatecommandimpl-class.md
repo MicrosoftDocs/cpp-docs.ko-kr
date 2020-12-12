@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: IDBCreateCommandImpl 클래스'
 title: IDBCreateCommandImpl 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - IDBCreateCommandImpl class
 - CreateCommand method
 ms.assetid: eac4755e-1668-42e1-958e-a35620c385ae
-ms.openlocfilehash: b7b658b2b365eb84a39ae94cef7c77e18d7bd4a0
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: aaa9e84b66bd8bcb93fa418eed56a3cdadd31d6f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845551"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287348"
 ---
 # <a name="idbcreatecommandimpl-class"></a>IDBCreateCommandImpl 클래스
 
@@ -68,7 +69,7 @@ STDMETHOD(CreateCommand)(IUnknown * pUnkOuter,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [IDBCreateCommand:: CreateCommand](/previous-versions/windows/desktop/ms709772(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [IDBCreateCommand:: CreateCommand](/previous-versions/windows/desktop/ms709772(v=vs.85)) 를 참조 하세요.
 
 일부 매개 변수는에서 설명 하는 다양 한 이름의 *프로그래머 참조* 매개 변수 OLE DB에 해당 합니다 `IDBCreateCommand::CreateCommand` .
 

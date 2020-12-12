@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4677'
 title: 컴파일러 경고(수준 1) C4677
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4677
 ms.assetid: a8d656a1-e2ff-4f8b-9028-201765131026
-ms.openlocfilehash: 5b31fd22c917b2c0f505ca189425f8160f62f748
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e2edd37149fd4242cc1a0f5c5df29fe4fe21e17f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80175547"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97285424"
 ---
 # <a name="compiler-warning-level-1-c4677"></a>컴파일러 경고(수준 1) C4677
 

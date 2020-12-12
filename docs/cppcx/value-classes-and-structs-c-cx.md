@@ -1,16 +1,17 @@
 ---
+description: '자세히 알아보기: 값 클래스 및 구조체 (c + +/CX)'
 title: 값 클래스 및 구조체(C++/CX)
 ms.date: 12/30/2016
 helpviewer_keywords:
 - value struct
 - value class
 ms.assetid: 262a0992-9721-4c02-8297-efc07d90e5a4
-ms.openlocfilehash: 15d54d139f086ce5bb025aaeab145c71d33903c0
-ms.sourcegitcommit: 3f0c1dcdcce25865d1a1022bcc5b9eec79f69025
+ms.openlocfilehash: 25551d6215eebbdc328946bf5ba2524c875338ce
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94381599"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288050"
 ---
 # <a name="value-classes-and-structs-ccx"></a>값 클래스 및 구조체(C++/CX)
 
@@ -147,7 +148,7 @@ public:
 };
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [형식 시스템 (c + +/CX)](../cppcx/type-system-c-cx.md)<br/>
 [C + +/CX 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)<br/>

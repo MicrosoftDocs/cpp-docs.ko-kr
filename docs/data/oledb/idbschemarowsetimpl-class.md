@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: IDBSchemaRowsetImpl 클래스'
 title: IDBSchemaRowsetImpl 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - GetRowset method
 - GetSchemas method
 ms.assetid: bd7bf0d7-a1c6-4afa-88e3-cfdbdf560703
-ms.openlocfilehash: d78aa23469cc0fa94498f93e9a6975e0a7c827e9
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 392f74793f363c203b740b14b00b605d8256bef5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509034"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287283"
 ---
 # <a name="idbschemarowsetimpl-class"></a>IDBSchemaRowsetImpl 클래스
 
@@ -75,7 +76,7 @@ class ATL_NO_VTABLE IDBSchemaRowsetImpl : public IDBSchemaRowset
 
 ### <a name="interface-methods"></a>인터페이스 메서드
 
-| 속성 | 설명 |
+| Name | 설명 |
 |-|-|
 |[GetRowset](#getrowset)|스키마 행 집합을 반환합니다.|
 |[GetSchemas](#getschemas)|[IDBSchemaRowsetImpl::GetRowset](#getrowset)에서 액세스할 수 있는 스키마 행 집합 목록을 반환합니다.|
@@ -84,13 +85,13 @@ class ATL_NO_VTABLE IDBSchemaRowsetImpl : public IDBSchemaRowset
 
 이 클래스는 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) 인터페이스 및 템플릿화된 작성자 함수 [CreateSchemaRowset](#createschemarowset)를 구현합니다.
 
-OLE DB는 스키마 행 집합을 사용하여 공급자의 데이터에 대한 데이터를 반환합니다. 이러한 데이터를 흔히 "메타데이터"라고 합니다. 기본적으로 공급자는 `DBSCHEMA_TABLES` `DBSCHEMA_COLUMNS` `DBSCHEMA_PROVIDER_TYPES` *OLE DB 프로그래머 참조*에서 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) 에 설명 된 대로 항상, 및를 지원 해야 합니다. 스키마 행 집합은 스키마 맵에 지정됩니다. 스키마 맵 항목에 대한 자세한 내용은 [SCHEMA_ENTRY](./macros-for-ole-db-provider-templates.md#schema_entry)를 참조하세요.
+OLE DB는 스키마 행 집합을 사용하여 공급자의 데이터에 대한 데이터를 반환합니다. 이러한 데이터를 흔히 "메타데이터"라고 합니다. 기본적으로 공급자는 `DBSCHEMA_TABLES` `DBSCHEMA_COLUMNS` `DBSCHEMA_PROVIDER_TYPES` *OLE DB 프로그래머 참조* 에서 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) 에 설명 된 대로 항상, 및를 지원 해야 합니다. 스키마 행 집합은 스키마 맵에 지정됩니다. 스키마 맵 항목에 대한 자세한 내용은 [SCHEMA_ENTRY](./macros-for-ole-db-provider-templates.md#schema_entry)를 참조하세요.
 
 ATL 개체 마법사의 OLE DB 공급자 마법사는 프로젝트의 스키마 행 집합에 대한 코드를 자동으로 생성합니다. 기본적으로 마법사는 앞에서 언급 한 필수 스키마 행 집합을 지원 합니다. ATL 개체 마법사를 사용 하 여 소비자를 만드는 경우 마법사는 스키마 행 집합을 사용 하 여 올바른 데이터를 공급자에 바인딩합니다. 올바른 메타데이터를 제공하는 스키마 행 집합을 구현하지 않은 경우 마법사는 올바른 데이터를 바인딩하지 않습니다.
 
 공급자의 스키마 행 집합을 지원하는 방법에 대한 자세한 내용은 [스키마 행 집합 지원](../../data/oledb/supporting-schema-rowsets.md)을 참조하세요.
 
-스키마 행 집합에 대한 자세한 내용은 [OLE DB 프로그래머 참조](/previous-versions/windows/desktop/ms712921(v=vs.85)) 에서 *스키마 행 집합*을 참조하세요.
+스키마 행 집합에 대한 자세한 내용은 [OLE DB 프로그래머 참조](/previous-versions/windows/desktop/ms712921(v=vs.85)) 에서 *스키마 행 집합* 을 참조하세요.
 
 ## <a name="idbschemarowsetimplcheckrestrictions"></a><a name="checkrestrictions"></a> IDBSchemaRowsetImpl:: CheckRestrictions
 
@@ -149,7 +150,7 @@ HRESULT CreateSchemaRowset(IUnknown *pUnkOuter,
 [in] 스키마 행 집합에 적용된 제한 수입니다.
 
 *rgRestrictions*<br/>
-[in] 행 집합에 적용할 `cRestrictions`**VARIANT**배열입니다.
+[in] 행 집합에 적용할 `cRestrictions`**VARIANT** 배열입니다.
 
 *riid*<br/>
 진행 출력에 대해 [QueryInterface](../../atl/queryinterface.md) 할 인터페이스 `IUnknown` 입니다.
@@ -161,10 +162,10 @@ HRESULT CreateSchemaRowset(IUnknown *pUnkOuter,
 [in] 설정할 속성을 지정하는 [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) 구조체의 배열입니다.
 
 *ppRowset*<br/>
-제한이 `IUnknown` *Riid*가 요청한 보내는입니다. `IUnknown`스키마 행 집합 개체의 인터페이스입니다.
+제한이 `IUnknown` *Riid* 가 요청한 보내는입니다. `IUnknown`스키마 행 집합 개체의 인터페이스입니다.
 
 *pSchemaRowset*<br/>
-[out] 스키마 행 집합 클래스의 인스턴스에 대한 포인터입니다. 일반적으로 이 매개 변수는 사용되지 않지만 COM 개체로 전달하기 전에 스키마 행 집합에서 추가 작업을 수행해야 하는 경우에 사용될 수 있습니다. *PSchemaRowset* 의 수명은 *ppRowset*에 의해 바인딩됩니다.
+[out] 스키마 행 집합 클래스의 인스턴스에 대한 포인터입니다. 일반적으로 이 매개 변수는 사용되지 않지만 COM 개체로 전달하기 전에 스키마 행 집합에서 추가 작업을 수행해야 하는 경우에 사용될 수 있습니다. *PSchemaRowset* 의 수명은 *ppRowset* 에 의해 바인딩됩니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -238,7 +239,7 @@ STDMETHOD (GetRowset)(IUnknown *pUnkOuter,
 [in] 행 집합에 적용할 제한 수입니다.
 
 *rgRestrictions*<br/>
-[in] 제한을 나타내는 `cRestrictions`**VARIANT**배열입니다.
+[in] 제한을 나타내는 `cRestrictions`**VARIANT** 배열입니다.
 
 *riid*<br/>
 [in] 새로 만든 스키마 행 집합의 요청에 대한 IID입니다.
@@ -279,7 +280,7 @@ STDMETHOD (GetSchema s )(ULONG * pcSchemas,
 [out] 스키마 행 집합 GUID 배열의 포인터로 채워진 GUID 배열의 포인터입니다.
 
 *prgRest*<br/>
-[out] 제한 배열로 채울 **ULONG**배열의 포인터입니다.
+[out] 제한 배열로 채울 **ULONG** 배열의 포인터입니다.
 
 ### <a name="remarks"></a>설명
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: IAccessorImpl 클래스'
 title: IAccessorImpl 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - GetBindings method
 - ReleaseAccessor method
 ms.assetid: 768606da-8b71-417c-a62c-88069ce7730d
-ms.openlocfilehash: 356278b316912bdb81f1c43bbf2034f00ec3d785
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: e7b2c2ea7192ec0fdb8c943ce4062ada0b1f0504
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845616"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287413"
 ---
 # <a name="iaccessorimpl-class"></a>IAccessorImpl 클래스
 
@@ -96,7 +97,7 @@ class ATL_NO_VTABLE IAccessorImpl : public IAccessorImplBase<BindType>
 
 생성자입니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 IAccessorImpl();
@@ -115,7 +116,7 @@ STDMETHOD(AddRefAccessor)(HACCESSOR hAccessor,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*의 [IAccessor:: addrefaccessor](/previous-versions/windows/desktop/ms714978(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 의 [IAccessor:: addrefaccessor](/previous-versions/windows/desktop/ms714978(v=vs.85)) 를 참조 하세요.
 
 ## <a name="iaccessorimplcreateaccessor"></a><a name="createaccessor"></a> IAccessorImpl:: CreateAccessor
 
@@ -134,7 +135,7 @@ STDMETHOD(CreateAccessor)(DBACCESSORFLAGS dwAccessorFlags,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*의 [IAccessor:: createaccessor](/previous-versions/windows/desktop/ms720969(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 의 [IAccessor:: createaccessor](/previous-versions/windows/desktop/ms720969(v=vs.85)) 를 참조 하세요.
 
 ## <a name="iaccessorimplgetbindings"></a><a name="getbindings"></a> IAccessorImpl:: GetBindings
 
@@ -151,7 +152,7 @@ STDMETHOD(GetBindings)(HACCESSOR hAccessor,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [IAccessor:: getbindings](/previous-versions/windows/desktop/ms721253(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [IAccessor:: getbindings](/previous-versions/windows/desktop/ms721253(v=vs.85)) 를 참조 하세요.
 
 ## <a name="iaccessorimplreleaseaccessor"></a><a name="releaseaccessor"></a> IAccessorImpl:: ReleaseAccessor
 
@@ -166,7 +167,7 @@ STDMETHOD(ReleaseAccessor)(HACCESSOR hAccessor,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*의 [IAccessor:: releaseaccessor](/previous-versions/windows/desktop/ms719717(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 의 [IAccessor:: releaseaccessor](/previous-versions/windows/desktop/ms719717(v=vs.85)) 를 참조 하세요.
 
 ## <a name="see-also"></a>참고 항목
 

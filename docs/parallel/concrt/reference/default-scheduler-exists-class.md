@@ -1,4 +1,5 @@
 ---
+description: Default_scheduler_exists 클래스에 대해 자세히 알아보세요.
 title: default_scheduler_exists 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - default_scheduler_exists class
 ms.assetid: f6e575e2-4e0f-455a-9e06-54f462ce0c1c
-ms.openlocfilehash: eed5dd242beb4c4cd481f22635e0d5f71c28d7e6
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 6921f7bd820271cf590707c2e56cefa9f576cefe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77139183"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97284852"
 ---
 # <a name="default_scheduler_exists-class"></a>default_scheduler_exists 클래스
 
@@ -29,11 +30,11 @@ class default_scheduler_exists : public std::exception;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
 |[default_scheduler_exists](#ctor)|오버로드됨. `default_scheduler_exists` 개체를 생성합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `exception`
 
@@ -43,9 +44,9 @@ class default_scheduler_exists : public std::exception;
 
 **헤더:** concrt .h
 
-**네임스페이스:** 동시성
+**네임 스페이스:** 동시성
 
-## <a name="ctor"></a>default_scheduler_exists
+## <a name="default_scheduler_exists"></a><a name="ctor"></a> default_scheduler_exists
 
 `default_scheduler_exists` 개체를 생성합니다.
 
@@ -62,4 +63,4 @@ default_scheduler_exists() throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[concurrency 네임스페이스](concurrency-namespace.md)
+[concurrency 네임 스페이스](concurrency-namespace.md)

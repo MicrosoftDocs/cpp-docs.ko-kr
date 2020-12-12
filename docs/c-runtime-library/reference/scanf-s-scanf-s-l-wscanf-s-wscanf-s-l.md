@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l'
 title: scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l
 ms.date: 03/26/2019
 api_name:
@@ -45,12 +46,12 @@ helpviewer_keywords:
 - wscanf_s_l function
 - buffers [C++], avoiding overruns
 ms.assetid: 42cafcf7-52d6-404a-80e4-b056a7faf2e5
-ms.openlocfilehash: 8811bd0b6e4009cd6aba570e65d0687fab465614
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f7044a5f0a29e9421b7105ac177228e7fad3ab30
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231366"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289103"
 ---
 # <a name="scanf_s-_scanf_s_l-wscanf_s-_wscanf_s_l"></a>scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l
 
@@ -90,21 +91,21 @@ int _wscanf_s_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-성공적으로 변환 되 고 할당 된 필드 수를 반환 합니다. 읽은 필드가 있지만 할당 되지 않은 필드는 반환 값에 포함 되지 않습니다. 반환 값이 0 이면 할당 된 필드가 없음을 나타냅니다. 반환 값은 오류에 대 한 **EOF** 이거나 파일 끝 문자 또는 문자열 끝 문자가 문자를 읽으려고 하는 첫 번째 시도에서 발견 된 경우입니다. *Format* 이 **NULL** 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 **scanf_s** 해 서 실행 하도록 허용한 경우 **EOF** 를 반환 하 고 **errno** 를 **EINVAL**로 설정 **wscanf_s** 합니다.
+성공적으로 변환 되 고 할당 된 필드 수를 반환 합니다. 읽은 필드가 있지만 할당 되지 않은 필드는 반환 값에 포함 되지 않습니다. 반환 값이 0 이면 할당 된 필드가 없음을 나타냅니다. 반환 값은 오류에 대 한 **EOF** 이거나 파일 끝 문자 또는 문자열 끝 문자가 문자를 읽으려고 하는 첫 번째 시도에서 발견 된 경우입니다. *Format* 이 **NULL** 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 **scanf_s** 해 서 실행 하도록 허용한 경우 **EOF** 를 반환 하 고 **errno** 를 **EINVAL** 로 설정 **wscanf_s** 합니다.
 
 이 오류 및 다른 오류 코드에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist, 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-**Scanf_s** 함수는 표준 입력 스트림 **stdin**에서 데이터를 읽고 *인수*에 씁니다. 각 *인수* *는 형식 지정자*에 해당 하는 변수 형식에 대 한 포인터 여야 합니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
+**Scanf_s** 함수는 표준 입력 스트림 **stdin** 에서 데이터를 읽고 *인수* 에 씁니다. 각 *인수* *는 형식 지정자* 에 해당 하는 변수 형식에 대 한 포인터 여야 합니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
 
-**wscanf_s** 은 **scanf_s**의 와이드 문자 버전입니다. **wscanf_s** 에 대 한 *format* 인수는 와이드 문자 문자열입니다. **wscanf_s** 및 **SCANF_S** 는 스트림이 ANSI 모드에서 열리는 경우 동일 하 게 동작 합니다. **scanf_s** 는 현재 유니코드 스트림의 입력을 지원 하지 않습니다.
+**wscanf_s** 은 **scanf_s** 의 와이드 문자 버전입니다. **wscanf_s** 에 대 한 *format* 인수는 와이드 문자 문자열입니다. **wscanf_s** 및 **SCANF_S** 는 스트림이 ANSI 모드에서 열리는 경우 동일 하 게 동작 합니다. **scanf_s** 는 현재 유니코드 스트림의 입력을 지원 하지 않습니다.
 
 **_L** 접미사가 있는 이러한 함수 버전은 현재 스레드 로캘 대신 *로캘* 매개 변수를 사용 한다는 점을 제외 하 고는 동일 합니다.
 
-**Scanf** 및 **wscanf**와 달리 **scanf_s** 및 **wscanf_s** 에는 일부 매개 변수에 대해 버퍼 크기를 지정 해야 합니다. 모든 **c**, **c**, **s**, **s**또는 문자열 컨트롤 집합 **[]** 매개 변수의 크기를 지정 합니다. 문자에서 버퍼 크기는 추가 매개 변수로 전달 됩니다. 버퍼 또는 변수에 대 한 포인터 바로 다음에 옵니다. 예를 들어 문자열을 읽는 경우 해당 문자열에 대 한 버퍼 크기가 다음과 같이 전달 됩니다.
+**Scanf** 및 **wscanf** 와 달리 **scanf_s** 및 **wscanf_s** 에는 일부 매개 변수에 대해 버퍼 크기를 지정 해야 합니다. 모든 **c**, **c**, **s**, **s** 또는 문자열 컨트롤 집합 **[]** 매개 변수의 크기를 지정 합니다. 문자에서 버퍼 크기는 추가 매개 변수로 전달 됩니다. 버퍼 또는 변수에 대 한 포인터 바로 다음에 옵니다. 예를 들어 문자열을 읽는 경우 해당 문자열에 대 한 버퍼 크기가 다음과 같이 전달 됩니다.
 
 ```C
 char s[10];
@@ -114,7 +115,7 @@ scanf_s("%9s", s, (unsigned)_countof(s)); // buffer size is 10, width specificat
 버퍼 크기에는 터미널 null이 포함 됩니다. 너비 사양 필드를 사용 하 여 읽은 토큰이 버퍼에 맞는지 확인할 수 있습니다. 토큰이 너무 커서에 맞지 않는 경우에는 너비 사양이 없으면 버퍼에 아무 것도 쓰여지지 않습니다.
 
 > [!NOTE]
-> Size 매개 변수는 size_t이 **`unsigned`** 아니라 형식 **size_t**입니다. 64 비트 빌드 구성의 경우 정적 캐스트를 사용 하 여 **size_t** 값을로 변환 **`unsigned`** 합니다.
+> Size 매개 변수는 size_t이 **`unsigned`** 아니라 형식 입니다. 64 비트 빌드 구성의 경우 정적 캐스트를 사용 하 여 **size_t** 값을로 변환 **`unsigned`** 합니다.
 
 버퍼 크기 매개 변수는 바이트가 아닌 문자의 최대 수를 설명 합니다. 이 예제에서는 버퍼 형식의 너비가 서식 지정자의 너비와 일치 하지 않습니다.
 
@@ -157,7 +158,7 @@ scanf_s("%4c", c, (unsigned)_countof(c)); // not null terminated
 |**scanf_s**, **_scanf_s_l**|\<stdio.h>|
 |**wscanf_s**, **_wscanf_s_l**|\<stdio.h> 또는 \<wchar.h>|
 
-이 콘솔은 UWP (유니버설 Windows 플랫폼) 앱에서 지원 되지 않습니다. C 런타임 함수가 UWP 앱에서 사용할 수 있으려면 표준 스트림이 **stdin**, **stdout**및 **stderr** 을 처리 해야 합니다. 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
+이 콘솔은 UWP (유니버설 Windows 플랫폼) 앱에서 지원 되지 않습니다. C 런타임 함수가 UWP 앱에서 사용할 수 있으려면 표준 스트림이 **stdin**, **stdout** 및 **stderr** 을 처리 해야 합니다. 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 

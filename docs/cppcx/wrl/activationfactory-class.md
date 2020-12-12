@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: ActivationFactory 클래스'
 title: ActivationFactory 클래스
 ms.date: 10/03/2018
 ms.topic: reference
@@ -21,12 +22,12 @@ helpviewer_keywords:
 - Microsoft::WRL::ActivationFactory::QueryInterface method
 - Microsoft::WRL::ActivationFactory::Release method
 ms.assetid: 5faddf1f-43b6-4f8a-97de-8c9d3ae1e1ff
-ms.openlocfilehash: 0655caeb3f49a18e9c57c78f0008901aaaedda4a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 7204a3c2f981947a03efba648dd91b69d582fee1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368702"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287842"
 ---
 # <a name="activationfactory-class"></a>ActivationFactory 클래스
 
@@ -57,7 +58,7 @@ class ActivationFactory :
 ### <a name="parameters"></a>매개 변수
 
 *I0*<br/>
-제로 인터페이스입니다.
+0 번째 인터페이스입니다.
 
 *I1*<br/>
 첫 번째 인터페이스입니다.
@@ -67,13 +68,13 @@ class ActivationFactory :
 
 ## <a name="remarks"></a>설명
 
-`ActivationFactory`은 `IActivationFactory` 인터페이스에 대한 등록 방법 및 기본 기능을 제공합니다. `ActivationFactory`또한 사용자 지정 팩터리 구현을 제공할 수 있습니다.
+`ActivationFactory` 인터페이스에 대 한 등록 메서드 및 기본 기능을 제공 `IActivationFactory` 합니다. `ActivationFactory` 사용자 지정 팩터리 구현을 제공할 수도 있습니다.
 
-다음 코드 조각은 활성화를 사용하는 방법을 상징적으로 보여 줍니다.
+다음 코드 조각 기호로는 ActivationFactory를 사용 하는 방법을 보여 줍니다.
 
 [!code-cpp[wrl-microsoft__wrl__activationfactory#1](../codesnippet/CPP/activationfactory-class_1.cpp)]
 
-다음 코드 조각에서는 구현 [구조에서](implements-structure.md) 세 개 이상의 인터페이스 아이디를 지정하는 방법을 보여 줍니다.
+다음 코드 조각에서는 [Implements](implements-structure.md) 구조체를 사용 하 여 세 개 이상의 인터페이스 id를 지정 하는 방법을 보여 줍니다.
 
 `struct MyFactory : ActivationFactory<Implements<I1, I2, I3>, I4, I5>;`
 
@@ -81,20 +82,20 @@ class ActivationFactory :
 
 ### <a name="public-constructors"></a>Public 생성자
 
-속성                                                       | Description
+이름                                                       | 설명
 ---------------------------------------------------------- | ------------------------------------------
-[정품 인증공장::정품 인증공장](#activationfactory) | `ActivationFactory` 클래스를 초기화합니다.
+[ActivationFactory:: ActivationFactory](#activationfactory) | `ActivationFactory` 클래스를 초기화합니다.
 
 ### <a name="public-methods"></a>Public 메서드
 
-속성                                                           | Description
+이름                                                           | 설명
 -------------------------------------------------------------- | --------------------------------------------------------------------------------------------
-[정품 인증공장::추가 참조](#addref)                           | 현재 `ActivationFactory` 개체의 참조 수를 증가합니다.
-[정품 인증공장::GetIids](#getiids)                         | 구현된 인터페이스 ID의 배열을 가져옵니다.
-[정품 인증팩토리::GetRuntimeClass이름](#getruntimeclassname) | 현재 `ActivationFactory` 인스턴스화하는 개체의 런타임 클래스 이름을 가져옵니다.
-[정품 인증팩토리::GetTrustLevel](#gettrustlevel)             | 현재 `ActivationFactory` 인스턴스화하는 개체의 신뢰 수준을 가져옵니다.
-[정품 인증공장::쿼리 인터페이스](#queryinterface)           | 지정된 인터페이스에 대한 포인터를 검색합니다.
-[정품 인증공장::릴리스](#release)                         | 현재 `ActivationFactory` 개체의 참조 수를 감소시입니다.
+[ActivationFactory:: AddRef](#addref)                           | 현재 개체의 참조 횟수를 늘립니다 `ActivationFactory` .
+[ActivationFactory:: GetIids](#getiids)                         | 구현된 인터페이스 ID의 배열을 가져옵니다.
+[ActivationFactory:: GetRuntimeClassName](#getruntimeclassname) | 현재에서 인스턴스화하는 개체의 런타임 클래스 이름을 가져옵니다 `ActivationFactory` .
+[ActivationFactory:: GetTrustLevel](#gettrustlevel)             | 현재가 인스턴스화하는 개체의 신뢰 수준을 가져옵니다 `ActivationFactory` .
+[ActivationFactory:: QueryInterface](#queryinterface)           | 지정 된 인터페이스에 대 한 포인터를 검색 합니다.
+[ActivationFactory:: Release](#release)                         | 현재 개체의 참조 횟수를 감소 시킵니다 `ActivationFactory` .
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -120,11 +121,11 @@ class ActivationFactory :
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** 모듈.h
+**헤더:** module .h
 
 **네임스페이스:** Microsoft::WRL
 
-## <a name="activationfactoryactivationfactory"></a><a name="activationfactory"></a>정품 인증공장::정품 인증공장
+## <a name="activationfactoryactivationfactory"></a><a name="activationfactory"></a> ActivationFactory:: ActivationFactory
 
 `ActivationFactory` 클래스를 초기화합니다.
 
@@ -132,9 +133,9 @@ class ActivationFactory :
 ActivationFactory();
 ```
 
-## <a name="activationfactoryaddref"></a><a name="addref"></a>정품 인증공장::추가 참조
+## <a name="activationfactoryaddref"></a><a name="addref"></a> ActivationFactory:: AddRef
 
-현재 `ActivationFactory` 개체의 참조 수를 증가합니다.
+현재 개체의 참조 횟수를 늘립니다 `ActivationFactory` .
 
 ```cpp
 STDMETHOD_(
@@ -143,11 +144,11 @@ STDMETHOD_(
 )();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 S_OK이고, 그렇지 않으면 실패를 설명하는 HRESULT가 발생합니다.
 
-## <a name="activationfactorygetiids"></a><a name="getiids"></a>정품 인증공장::GetIids
+## <a name="activationfactorygetiids"></a><a name="getiids"></a> ActivationFactory:: GetIids
 
 구현된 인터페이스 ID의 배열을 가져옵니다.
 
@@ -159,19 +160,19 @@ STDMETHOD(
 
 ### <a name="parameters"></a>매개 변수
 
-*이드 카운트*<br/>
-이 작업이 완료되면 *iids* 배열의 인터ace ID 수가 됩니다.
+*iidCount*<br/>
+이 작업이 완료 되 면 *iid* 배열의 인터페이스 id 수입니다.
 
-*아이드 (이드)*<br/>
+*iid*<br/>
 이 작업이 완료될 대 구현된 인터페이스 ID의 배열입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 S_OK이고, 그렇지 않으면 실패를 설명하는 HRESULT가 발생합니다. E_OUTOFMEMORY는 가능한 실패 HRESULT입니다.
 
-## <a name="activationfactorygetruntimeclassname"></a><a name="getruntimeclassname"></a>정품 인증팩토리::GetRuntimeClass이름
+## <a name="activationfactorygetruntimeclassname"></a><a name="getruntimeclassname"></a> ActivationFactory:: GetRuntimeClassName
 
-현재 `ActivationFactory` 인스턴스화하는 개체의 런타임 클래스 이름을 가져옵니다.
+현재에서 인스턴스화하는 개체의 런타임 클래스 이름을 가져옵니다 `ActivationFactory` .
 
 ```cpp
 STDMETHOD(
@@ -181,16 +182,16 @@ STDMETHOD(
 
 ### <a name="parameters"></a>매개 변수
 
-*런타임 이름*<br/>
-이 작업이 완료되면 현재 `ActivationFactory` 인스턴스화하는 개체의 런타임 클래스 이름이 포함된 문자열에 대한 핸들입니다.
+*Runti을 Ame*<br/>
+이 작업이 완료 되 면 현재에서 인스턴스화하는 개체의 런타임 클래스 이름을 포함 하는 문자열에 대 한 핸들입니다 `ActivationFactory` .
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 S_OK이고, 그렇지 않으면 실패를 설명하는 HRESULT가 발생합니다.
 
-## <a name="activationfactorygettrustlevel"></a><a name="gettrustlevel"></a>정품 인증팩토리::GetTrustLevel
+## <a name="activationfactorygettrustlevel"></a><a name="gettrustlevel"></a> ActivationFactory:: GetTrustLevel
 
-현재 `ActivationFactory` 인스턴스화하는 개체의 신뢰 수준을 가져옵니다.
+현재가 인스턴스화하는 개체의 신뢰 수준을 가져옵니다 `ActivationFactory` .
 
 ```cpp
 STDMETHOD(
@@ -200,16 +201,16 @@ STDMETHOD(
 
 ### <a name="parameters"></a>매개 변수
 
-*트러스트Lvl*<br/>
-이 작업이 완료되면 `ActivationFactory` 인스턴스화하는 런타임 클래스의 신뢰 수준이 됩니다.
+*trustLvl*<br/>
+이 작업이 완료 되 면에서 인스턴스화하는 런타임 클래스의 신뢰 수준입니다 `ActivationFactory` .
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-성공하면 S_OK; 그렇지 않으면 어설션 오류가 내보내지고 *trustLvl이* 로 `FullTrust`설정됩니다.
+성공 하면 S_OK 합니다. 그렇지 않으면 어설션 오류가 내보내지고 *Trustlvl* 이로 설정 됩니다 `FullTrust` .
 
-## <a name="activationfactoryqueryinterface"></a><a name="queryinterface"></a>정품 인증공장::쿼리 인터페이스
+## <a name="activationfactoryqueryinterface"></a><a name="queryinterface"></a> ActivationFactory:: QueryInterface
 
-지정된 인터페이스에 대한 포인터를 검색합니다.
+지정 된 인터페이스에 대 한 포인터를 검색 합니다.
 
 ```cpp
 STDMETHOD(
@@ -223,15 +224,15 @@ STDMETHOD(
 인터페이스 ID입니다.
 
 *ppvObject*<br/>
-이 작업이 완료되면 매개 변수 *riid로*지정한 인터페이스에 대한 포인터입니다.
+이 작업이 완료 되 면 매개 변수 *riid* 에서 지정 하는 인터페이스에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 S_OK이고, 그렇지 않으면 실패를 설명하는 HRESULT가 발생합니다.
 
-## <a name="activationfactoryrelease"></a><a name="release"></a>정품 인증공장::릴리스
+## <a name="activationfactoryrelease"></a><a name="release"></a> ActivationFactory:: Release
 
-현재 `ActivationFactory` 개체의 참조 수를 감소시입니다.
+현재 개체의 참조 횟수를 감소 시킵니다 `ActivationFactory` .
 
 ```cpp
 STDMETHOD_(
@@ -240,6 +241,6 @@ STDMETHOD_(
 )();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 S_OK이고, 그렇지 않으면 실패를 설명하는 HRESULT가 발생합니다.

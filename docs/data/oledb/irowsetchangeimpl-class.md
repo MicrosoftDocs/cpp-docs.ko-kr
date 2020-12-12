@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: IRowsetChangeImpl 클래스'
 title: IRowsetChangeImpl 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -31,12 +32,12 @@ helpviewer_keywords:
 - SetData method
 - FlushData method
 ms.assetid: 1e9fee15-ed9e-4387-af8f-215569beca6c
-ms.openlocfilehash: 66e7b758752a46fffff177323fe83eecc0b2fa55
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 6536b589cdf936b653d87941fb717e96ff88422c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832781"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287231"
 ---
 # <a name="irowsetchangeimpl-class"></a>IRowsetChangeImpl 클래스
 
@@ -123,7 +124,7 @@ STDMETHOD (DeleteRows )(HCHAPTER /* hReserved */,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [IRowsetChange::D eleterows](/previous-versions/windows/desktop/ms724362(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [IRowsetChange::D eleterows](/previous-versions/windows/desktop/ms724362(v=vs.85)) 를 참조 하세요.
 
 ## <a name="irowsetchangeimplinsertrow"></a><a name="insertrow"></a> IRowsetChangeImpl:: InsertRow
 
@@ -140,7 +141,7 @@ STDMETHOD (InsertRow )(HCHAPTER /* hReserved */,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [IRowsetChange:: InsertRow](/previous-versions/windows/desktop/ms716921(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [IRowsetChange:: InsertRow](/previous-versions/windows/desktop/ms716921(v=vs.85)) 를 참조 하세요.
 
 ## <a name="irowsetchangeimplsetdata"></a><a name="setdata"></a> IRowsetChangeImpl:: SetData
 
@@ -156,7 +157,7 @@ STDMETHOD (SetData )(HROW hRow,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [IRowsetChange:: SetData](/previous-versions/windows/desktop/ms721232(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [IRowsetChange:: SetData](/previous-versions/windows/desktop/ms721232(v=vs.85)) 를 참조 하세요.
 
 ## <a name="irowsetchangeimplflushdata"></a><a name="flushdata"></a> IRowsetChangeImpl:: FlushData
 

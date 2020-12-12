@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: OLE DB 소비자 템플릿에 대 한 매크로 및 전역 함수'
 title: OLE DB 소비자 템플릿에 대한 매크로 및 전역 함수
 ms.date: 02/11/2019
 f1_keywords:
@@ -99,12 +100,12 @@ helpviewer_keywords:
 - END_PARAM_MAP macro
 - SET_PARAM_TYPE macro
 ms.assetid: 8765eb7b-32dd-407c-bacf-8890ef959837
-ms.openlocfilehash: 60f642366589bb13b15665331a81d440322eb13f
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: fb6e126483690e43ceaf3814f6c288ecfdc69da1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504036"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287075"
 ---
 # <a name="macros-and-global-functions-for-ole-db-consumer-templates"></a>OLE DB 소비자 템플릿에 대한 매크로 및 전역 함수
 
@@ -112,13 +113,13 @@ OLE DB Consumer 템플릿에는 다음과 같은 매크로 및 전역 함수가 
 
 ## <a name="global-functions"></a>전역 함수
 
-| 속성 | 설명 |
+| Name | 설명 |
 |-|-|
 |[AtlTraceErrorRecords](#atltraceerrorrecords)|오류가 반환 되 면 덤프 장치에 OLE DB 오류 레코드 정보를 덤프 합니다.|
 
 ## <a name="accessor-map-macros"></a>접근자 맵 매크로
 
-| 속성 | 설명 |
+| Name | 설명 |
 |-|-|
 |[BEGIN_ACCESSOR](#begin_accessor)|접근자 항목의 시작을 표시 합니다.|
 |[BEGIN_ACCESSOR_MAP](#begin_accessor_map)|접근자 맵 항목의 시작을 표시합니다.|
@@ -127,7 +128,7 @@ OLE DB Consumer 템플릿에는 다음과 같은 매크로 및 전역 함수가 
 
 ## <a name="column-map-macros"></a>열 맵 매크로
 
-| 속성 | 설명 |
+| Name | 설명 |
 |-|-|
 |[BEGIN_COLUMN_MAP](#begin_column_map)|사용자 레코드 클래스에서 열 맵 항목의 시작을 표시 합니다.|
 |[BLOB_ENTRY](#blob_entry)|BLOB (binary large object)를 바인딩하는 데 사용 됩니다.|
@@ -140,7 +141,7 @@ OLE DB Consumer 템플릿에는 다음과 같은 매크로 및 전역 함수가 
 |[BLOB_NAME_STATUS](#blob_name_status)|BLOB 데이터 열의 상태를 보고 합니다.|
 |[BOOKMARK_ENTRY](#bookmark_entry)|행 집합의 책갈피 항목을 나타냅니다. 책갈피 항목은 특별 한 종류의 열 항목입니다.|
 |[COLUMN_ENTRY](#column_entry)|데이터베이스의 특정 열에 대 한 바인딩을 나타냅니다.|
-|[COLUMN_ENTRY_EX](#column_entry_ex)|데이터베이스의 특정 열에 대 한 바인딩을 나타냅니다. *형식*, *길이*, *전체 자릿수*, *소수 자릿수*및 *상태* 매개 변수를 지원 합니다.|
+|[COLUMN_ENTRY_EX](#column_entry_ex)|데이터베이스의 특정 열에 대 한 바인딩을 나타냅니다. *형식*, *길이*, *전체 자릿수*, *소수 자릿수* 및 *상태* 매개 변수를 지원 합니다.|
 |[COLUMN_ENTRY_LENGTH](#column_entry_length)|데이터베이스의 특정 열에 대 한 바인딩을 나타냅니다. 는 *길이* 변수를 지원 합니다.|
 |[COLUMN_ENTRY_LENGTH_STATUS](#column_entry_length_status)|데이터베이스의 특정 열에 대 한 바인딩을 나타냅니다. *상태* 및 *길이* 매개 변수를 지원 합니다.|
 |[COLUMN_ENTRY_PS](#column_entry_ps)|데이터베이스의 특정 열에 대 한 바인딩을 나타냅니다. 는 *전체 자릿수* 및 *소수 자릿수* 매개 변수를 지원 합니다.|
@@ -167,14 +168,14 @@ OLE DB Consumer 템플릿에는 다음과 같은 매크로 및 전역 함수가 
 
 ## <a name="command-macros"></a>명령 매크로
 
-| 속성 | 설명 |
+| Name | 설명 |
 |-|-|
 |[DEFINE_COMMAND](#define_command)|[CCommand](../../data/oledb/ccommand-class.md) 클래스를 사용 하는 경우 행 집합을 만드는 데 사용 되는 명령을 지정 합니다. 지정 된 응용 프로그램 유형과 일치 하는 문자열 유형 (ANSI 또는 유니코드)만 허용 합니다. DEFINE_COMMAND 대신 [DEFINE_COMMAND_EX](#define_command_ex) 를 사용 하는 것이 좋습니다.|
 |[DEFINE_COMMAND_EX](#define_command_ex)|[CCommand](../../data/oledb/ccommand-class.md) 클래스를 사용 하는 경우 행 집합을 만드는 데 사용 되는 명령을 지정 합니다. 는 ANSI 및 유니코드 응용 프로그램을 지원 합니다.|
 
 ## <a name="parameter-map-macros"></a>매개 변수 맵 매크로
 
-| 속성 | 설명 |
+| Name | 설명 |
 |-|-|
 |[BEGIN_PARAM_MAP](#begin_param_map)|사용자 레코드 클래스에서 매개 변수 맵 항목의 시작을 표시 합니다.|
 |[END_PARAM_MAP](#end_param_map)|매개 변수 맵 항목의 끝을 표시 합니다.|
@@ -678,7 +679,7 @@ COLUMN_ENTRY(nOrdinal, data)
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [DBBINDING](/previous-versions/windows/desktop/ms716845(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [DBBINDING](/previous-versions/windows/desktop/ms716845(v=vs.85)) 를 참조 하세요.
 
 *nOrdinal*<br/>
 [in] 열 번호입니다.
@@ -712,7 +713,7 @@ COLUMN_ENTRY_EX(nOrdinal, wType, nLength, nPrecision, nScale, data, length, stat
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [DBBINDING](/previous-versions/windows/desktop/ms716845(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [DBBINDING](/previous-versions/windows/desktop/ms716845(v=vs.85)) 를 참조 하세요.
 
 *nOrdinal*<br/>
 [in] 열 번호입니다.
@@ -764,7 +765,7 @@ COLUMN_ENTRY_LENGTH(nOrdinal, data, length)
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [DBBINDING](/previous-versions/windows/desktop/ms716845(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [DBBINDING](/previous-versions/windows/desktop/ms716845(v=vs.85)) 를 참조 하세요.
 
 *nOrdinal*<br/>
 진행 1부터 시작 하는 열 번호입니다. 책갈피는 열 0에 해당 합니다.
@@ -797,7 +798,7 @@ COLUMN_ENTRY_LENGTH_STATUS(nOrdinal, data, length, status)
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [DBBINDING](/previous-versions/windows/desktop/ms716845(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [DBBINDING](/previous-versions/windows/desktop/ms716845(v=vs.85)) 를 참조 하세요.
 
 *nOrdinal*<br/>
 [in] 열 번호입니다.
@@ -833,7 +834,7 @@ COLUMN_ENTRY_PS(nOrdinal, nPrecision, nScale, data)
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [DBBINDING](/previous-versions/windows/desktop/ms716845(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [DBBINDING](/previous-versions/windows/desktop/ms716845(v=vs.85)) 를 참조 하세요.
 
 *nOrdinal*<br/>
 [in] 열 번호입니다.
@@ -869,7 +870,7 @@ COLUMN_ENTRY_PS_LENGTH(nOrdinal, nPrecision, nScale, data, length)
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [DBBINDING](/previous-versions/windows/desktop/ms716845(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [DBBINDING](/previous-versions/windows/desktop/ms716845(v=vs.85)) 를 참조 하세요.
 
 *nOrdinal*<br/>
 진행 1부터 시작 하는 열 번호입니다. 책갈피는 열 0에 해당 합니다.
@@ -908,7 +909,7 @@ COLUMN_ENTRY_PS_LENGTH_STATUS(nOrdinal, nPrecision, nScale, data, length, status
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [DBBINDING](/previous-versions/windows/desktop/ms716845(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [DBBINDING](/previous-versions/windows/desktop/ms716845(v=vs.85)) 를 참조 하세요.
 
 *nOrdinal*<br/>
 [in] 열 번호입니다.
@@ -950,7 +951,7 @@ COLUMN_ENTRY_PS_STATUS(nOrdinal, nPrecision, nScale, data, status)
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [DBBINDING](/previous-versions/windows/desktop/ms716845(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [DBBINDING](/previous-versions/windows/desktop/ms716845(v=vs.85)) 를 참조 하세요.
 
 *nOrdinal*<br/>
 [in] 열 번호입니다.
@@ -989,7 +990,7 @@ COLUMN_ENTRY_STATUS(nOrdinal, data, status)
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [DBBINDING](/previous-versions/windows/desktop/ms716845(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [DBBINDING](/previous-versions/windows/desktop/ms716845(v=vs.85)) 를 참조 하세요.
 
 *nOrdinal*<br/>
 [in] 열 번호입니다.
@@ -1576,7 +1577,7 @@ SET_PARAM_TYPE(type)
 
 #### <a name="remarks"></a>설명
 
-공급자는 기본 데이터 소스에서 지원되는 매개 변수 입력/출력 형식만 지원합니다. 형식은 하나 이상의 값의 조합입니다 `DBPARAMIO` ( *OLE DB 프로그래머 참조*에서 [DBBINDING 구조체](/previous-versions/windows/desktop/ms716845(v=vs.85)) 참조).
+공급자는 기본 데이터 소스에서 지원되는 매개 변수 입력/출력 형식만 지원합니다. 형식은 하나 이상의 값의 조합입니다 `DBPARAMIO` ( *OLE DB 프로그래머 참조* 에서 [DBBINDING 구조체](/previous-versions/windows/desktop/ms716845(v=vs.85)) 참조).
 
 - `DBPARAMIO_NOTPARAM` 접근자에는 매개 변수가 없습니다. 일반적으로 `eParamIO` 사용자에 게 매개 변수가 무시 됨을 알리기 위해 행 접근자에서이 값을로 설정 합니다.
 

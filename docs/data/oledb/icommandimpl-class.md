@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: ICommandImpl 클래스'
 title: ICommandImpl 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -51,12 +52,12 @@ helpviewer_keywords:
 - m_bCancelWhenExecuting
 - m_bIsExecuting
 ms.assetid: ef285fef-0d66-45e6-a762-b03357098e3b
-ms.openlocfilehash: 2f2d3938d63e5e67fc501d52d269c06f6b144ac8
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 62066d689e51a8ca8a71bb8120199c05ed2811d3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91501833"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287387"
 ---
 # <a name="icommandimpl-class"></a>ICommandImpl 클래스
 
@@ -96,7 +97,7 @@ class ATL_NO_VTABLE ICommandImpl : public CommandBase
 
 ### <a name="data-members"></a>데이터 멤버
 
-| 속성 | 설명 |
+| Name | 설명 |
 |-|-|
 |[m_bCancel](#bcancel)|명령을 취소할지 여부를 나타냅니다.|
 |[m_bCancelWhenExecuting](#bcancelwhenexecuting)|명령을 실행할 때 취소할 것인지 여부를 나타냅니다.|
@@ -118,13 +119,13 @@ STDMETHOD(Cancel)();
 
 ### <a name="remarks"></a>설명
 
-*OLE DB 프로그래머 참조*에서 [ICommand:: Cancel](/previous-versions/windows/desktop/ms714402(v=vs.85)) 을 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [ICommand:: Cancel](/previous-versions/windows/desktop/ms714402(v=vs.85)) 을 참조 하세요.
 
 ## <a name="icommandimplcancelexecution"></a><a name="cancelexecution"></a> ICommandImpl:: CancelExecution
 
 현재 명령 실행을 취소 합니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 HRESULT CancelExecution();
@@ -167,7 +168,7 @@ HRESULT CreateRowset(IUnknown* pUnkOuter,
 [in/out] 의 *ppRowset* 에 해당 `ICommand::Execute` 합니다.
 
 *pRowsetObj*<br/>
-제한이 행 집합 개체에 대 한 포인터입니다. 일반적으로이 매개 변수는 사용 되지 않지만, COM 개체로 전달 하기 전에 행 집합에서 더 많은 작업을 수행 해야 하는 경우에 사용할 수 있습니다. *PRowsetObj* 의 수명은 *ppRowset*에 의해 바인딩됩니다.
+제한이 행 집합 개체에 대 한 포인터입니다. 일반적으로이 매개 변수는 사용 되지 않지만, COM 개체로 전달 하기 전에 행 집합에서 더 많은 작업을 수행 해야 하는 경우에 사용할 수 있습니다. *PRowsetObj* 의 수명은 *ppRowset* 에 의해 바인딩됩니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -195,7 +196,7 @@ HRESULT Execute(IUnknown* pUnkOuter,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [ICommand:: Execute](/previous-versions/windows/desktop/ms718095(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [ICommand:: Execute](/previous-versions/windows/desktop/ms718095(v=vs.85)) 를 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
@@ -216,7 +217,7 @@ STDMETHOD (GetDBSession) (REFIID riid,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [ICommand:: getdbsession](/previous-versions/windows/desktop/ms719622(v=vs.85)) 을 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [ICommand:: getdbsession](/previous-versions/windows/desktop/ms719622(v=vs.85)) 을 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
@@ -226,7 +227,7 @@ STDMETHOD (GetDBSession) (REFIID riid,
 
 생성자입니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 ICommandImpl();

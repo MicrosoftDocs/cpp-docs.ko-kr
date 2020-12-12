@@ -1,4 +1,5 @@
 ---
+description: 다음에 대해 자세히 알아보세요. `allocator`
 title: allocator
 ms.date: 03/21/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - __declspec keyword [C++], allocator
 - allocator __declspec keyword
-ms.openlocfilehash: a26cf4d2b79d64ddc9f0b60982d778e33d0f200a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 20ca879259c49f01f5283a867b4e562cfddcc058
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216650"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288271"
 ---
 # `allocator`
 

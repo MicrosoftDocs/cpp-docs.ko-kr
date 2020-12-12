@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: c + +/CX 언어 참조'
 title: C + +/CX 언어 참조
 ms.date: 09/15/2017
 ms.assetid: 3f6abf92-4e5e-4ed8-8e11-f9252380d30a
-ms.openlocfilehash: f28270ace3965a3cf89e250a873af14e48390708
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: ac72abeb84c656ce0ab9569ad5c944ea61b7d646
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91507419"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288037"
 ---
 # <a name="ccx-language-reference"></a>C + +/CX 언어 참조
 
@@ -26,7 +27,7 @@ C + +/CX를 사용 하 여 다음을 만들 수 있습니다.
 
 - Windows DirectX 게임 및 그래픽 위주 앱. 자세한 내용은 [DirectX를 사용 하 여 간단한 UWP 게임 만들기](/windows/uwp/gaming/tutorial--create-your-first-uwp-directx-game)를 참조 하세요.
 
-## <a name="related-articles"></a>관련된 문서
+## <a name="related-articles"></a>관련 문서
 
 | 링크 | 설명 |
 |--|--|

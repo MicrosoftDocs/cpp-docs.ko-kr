@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 방법:/clr로 마이그레이션'
 title: '방법: -clr로 마이그레이션'
 ms.custom: get-started-article
 ms.date: 09/18/2018
@@ -10,22 +11,22 @@ helpviewer_keywords:
 - migration [C++], /clr compiler option
 - /clr compiler option [C++], porting to
 ms.assetid: c9290b8b-436a-4510-8b56-eae51f4a9afc
-ms.openlocfilehash: 0c21fe585049ebce6383c5d8f673704e7362cd72
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 39853f755074a4999f39f9e04445234abfbe93b0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225698"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97286399"
 ---
 # <a name="how-to-migrate-to-clr"></a>방법: /clr로 마이그레이션
 
-이 항목에서는 **/clr** 을 사용 하 여 네이티브 코드를 컴파일할 때 발생 하는 문제에 대해 설명 합니다 (자세한 내용은 [/Clr (공용 언어 런타임 컴파일)](../build/reference/clr-common-language-runtime-compilation.md) 참조). **/clr** 을 사용 하면 네이티브 c + + 코드를 호출 하 고 .net 어셈블리에서 다른 네이티브 c + + 코드를 호출할 수 있습니다. **/Clr**을 사용 하 여 컴파일하는 이점에 대 한 자세한 내용은 [혼합형 (네이티브 및 관리) 어셈블리](../dotnet/mixed-native-and-managed-assemblies.md) 및 [네이티브 및 .net 상호 운용성](../dotnet/native-and-dotnet-interoperability.md) 을 참조 하세요.
+이 항목에서는 **/clr** 을 사용 하 여 네이티브 코드를 컴파일할 때 발생 하는 문제에 대해 설명 합니다 (자세한 내용은 [/Clr (공용 언어 런타임 컴파일)](../build/reference/clr-common-language-runtime-compilation.md) 참조). **/clr** 을 사용 하면 네이티브 c + + 코드를 호출 하 고 .net 어셈블리에서 다른 네이티브 c + + 코드를 호출할 수 있습니다. **/Clr** 을 사용 하 여 컴파일하는 이점에 대 한 자세한 내용은 [혼합형 (네이티브 및 관리) 어셈블리](../dotnet/mixed-native-and-managed-assemblies.md) 및 [네이티브 및 .net 상호 운용성](../dotnet/native-and-dotnet-interoperability.md) 을 참조 하세요.
 
 ## <a name="known-issues-compiling-library-projects-with-clr"></a>/Clr을 사용 하 여 라이브러리 프로젝트를 컴파일하는 알려진 문제
 
-Visual Studio는 **/clr**을 사용 하 여 라이브러리 프로젝트를 컴파일할 때 알려진 몇 가지 문제를 포함 합니다.
+Visual Studio는 **/clr** 을 사용 하 여 라이브러리 프로젝트를 컴파일할 때 알려진 몇 가지 문제를 포함 합니다.
 
-- 코드는 [CRuntimeClass:: FromName](../mfc/reference/cruntimeclass-structure.md#fromname)을 사용 하 여 런타임에 형식을 쿼리할 수 있습니다. 그러나 형식이 MSIL .dll ( **/clr**을 사용 하 여 컴파일)에 있는 경우에 대 한 호출은 `FromName` 관리 되는 .dll에서 정적 생성자가 실행 되기 전에 발생 하면 실패할 수 있습니다. 즉, 코드를 관리 되는 .dll에서 실행 한 후에는 fromname 호출이 발생 해도이 문제가 표시 되지 않습니다. 이 문제를 해결 하기 위해 관리 되는 .dll에서 함수를 정의 하 고 내보내고 네이티브 MFC 응용 프로그램에서 호출 하 여 관리 되는 정적 생성자를 강제로 생성할 수 있습니다. 예를 들면 다음과 같습니다.
+- 코드는 [CRuntimeClass:: FromName](../mfc/reference/cruntimeclass-structure.md#fromname)을 사용 하 여 런타임에 형식을 쿼리할 수 있습니다. 그러나 형식이 MSIL .dll ( **/clr** 을 사용 하 여 컴파일)에 있는 경우에 대 한 호출은 `FromName` 관리 되는 .dll에서 정적 생성자가 실행 되기 전에 발생 하면 실패할 수 있습니다. 즉, 코드를 관리 되는 .dll에서 실행 한 후에는 fromname 호출이 발생 해도이 문제가 표시 되지 않습니다. 이 문제를 해결 하기 위해 관리 되는 .dll에서 함수를 정의 하 고 내보내고 네이티브 MFC 응용 프로그램에서 호출 하 여 관리 되는 정적 생성자를 강제로 생성할 수 있습니다. 예를 들어:
 
     ```
     // MFC extension DLL Header file:
@@ -51,11 +52,11 @@ Visual Studio 2003 이전 버전에서 Visual Studio 2010로 업그레이드 하
 
 ### <a name="upgrading-from-managed-extensions-for-c"></a>Managed Extensions for C++에서 업그레이드
 
-Visual Studio 2005부터 Managed Extensions for C++로 작성 된 코드는 **/clr**에서 컴파일되지 않습니다.
+Visual Studio 2005부터 Managed Extensions for C++로 작성 된 코드는 **/clr** 에서 컴파일되지 않습니다.
 
 ## <a name="convert-c-code-to-c"></a>C 코드를 c + +로 변환
 
-Visual Studio는 C 파일을 컴파일하도록 하지만 **/clr** 컴파일을 위해 c + +로 변환 해야 합니다. 실제 파일 이름을 변경할 필요가 없습니다. **/tp** ( [/tc,/tp,/tc,/Tp (소스 파일 형식 지정)](../build/reference/tc-tp-tc-tp-specify-source-file-type.md)참조)를 사용할 수 있습니다. **/Clr**에는 c + + 소스 코드 파일이 필요 하지만 개체 지향 패러다임을 사용 하도록 코드를 다시 사용할 필요는 없습니다.
+Visual Studio는 C 파일을 컴파일하도록 하지만 **/clr** 컴파일을 위해 c + +로 변환 해야 합니다. 실제 파일 이름을 변경할 필요가 없습니다. **/tp** ( [/tc,/tp,/tc,/Tp (소스 파일 형식 지정)](../build/reference/tc-tp-tc-tp-specify-source-file-type.md)참조)를 사용할 수 있습니다. **/Clr** 에는 c + + 소스 코드 파일이 필요 하지만 개체 지향 패러다임을 사용 하도록 코드를 다시 사용할 필요는 없습니다.
 
 C 코드는 c + + 파일로 컴파일될 때 변경 해야 할 가능성이 매우 높습니다. C + + 형식 안전 규칙은 엄격한 규칙 이므로 캐스트를 사용 하 여 명시적으로 형식을 변환 해야 합니다. 예를 들어 malloc는 void 포인터를 반환 하지만 캐스트를 사용 하 여 C의 모든 형식에 대 한 포인터에 할당할 수 있습니다.
 
@@ -87,7 +88,7 @@ Visual Studio 2010에서 프로젝트를 컴파일하고 실행 한 후에는 �
 
 ### <a name="create-new-project-configurations"></a>새 프로젝트 구성 만들기
 
-**새 프로젝트 구성 대화 상자** (**빌드**Configuration Manager 활성 솔루션 구성 새로 만들기)에서 **설정 복사** 옵션을 사용  >  **Configuration Manager**  >  **Active Solution Configuration**  >  **New**하 여 기존 프로젝트 설정에 따라 프로젝트 구성을 만들 수 있습니다. 디버그 구성에 대해이 작업을 한 번 수행 하 고 릴리스 구성에 대해 한 번 수행 합니다. 이후 변경 내용은 **/clr** 관련 구성에만 적용 될 수 있으며 원래 프로젝트 구성은 그대로 유지 됩니다.
+**새 프로젝트 구성 대화 상자** (**빌드** Configuration Manager 활성 솔루션 구성 새로 만들기)에서 **설정 복사** 옵션을 사용  >    >    >  하 여 기존 프로젝트 설정에 따라 프로젝트 구성을 만들 수 있습니다. 디버그 구성에 대해이 작업을 한 번 수행 하 고 릴리스 구성에 대해 한 번 수행 합니다. 이후 변경 내용은 **/clr** 관련 구성에만 적용 될 수 있으며 원래 프로젝트 구성은 그대로 유지 됩니다.
 
 사용자 지정 빌드 규칙을 사용 하는 프로젝트에는 추가 주의가 필요할 수 있습니다.
 
@@ -100,15 +101,15 @@ Visual Studio 2010에서 프로젝트를 컴파일하고 실행 한 후에는 �
 > [!NOTE]
 > Visual Studio 2003에서 관리 라이브러리나 웹 서비스 프로젝트를 업그레이드 하는 경우 **/zl** 컴파일러 옵션이 **명령줄** 속성 페이지에 추가 됩니다. 이렇게 하면 LNK2001이 발생 합니다. 확인을 위해 **명령줄** 속성 페이지에서 **/zl** 을 제거 합니다. 자세한 내용은 [/zl (기본 라이브러리 이름 생략)](../build/reference/zl-omit-default-library-name.md) 및 [컴파일러 및 빌드 속성 설정](../build/working-with-project-properties.md) 을 참조 하세요. 또는 msvcrt.lib 및 msvcmrt.lib를 링커의 **추가 종속성** 속성에 추가 합니다.
 
-메이크파일로 빌드된 프로젝트의 경우 **/clr** 을 추가 하면 호환 되지 않는 컴파일러 옵션을 수동으로 사용 하지 않도록 설정 해야 합니다. **/Clr**과 호환 되지 않는 컴파일러 옵션에 대 한 자세한 내용은/[/clr 제한](../build/reference/clr-restrictions.md) 을 참조 하세요.
+메이크파일로 빌드된 프로젝트의 경우 **/clr** 을 추가 하면 호환 되지 않는 컴파일러 옵션을 수동으로 사용 하지 않도록 설정 해야 합니다. **/Clr** 과 호환 되지 않는 컴파일러 옵션에 대 한 자세한 내용은/[/clr 제한](../build/reference/clr-restrictions.md) 을 참조 하세요.
 
 ### <a name="precompiled-headers"></a>미리 컴파일된 헤더
 
-미리 컴파일된 헤더는 **/clr**에서 지원 됩니다. 그러나/clr을 사용 하 여 일부 CPP 파일만 컴파일하는 경우 **(rest** 를 네이티브로 컴파일) **/clr** 을 사용 하 여 생성 된 미리 컴파일된 헤더가 **/clr**을 사용 하지 않고 생성 된 헤더와 호환 되지 않기 때문에 일부 변경이 필요 합니다. 이러한 비 호환성은 **/clr** 에서 메타 데이터를 생성 하 고 요구 하기 때문에 발생 합니다. 따라서 모듈 컴파일 **/clr** 은 메타 데이터를 포함 하지 않는 미리 컴파일된 헤더를 사용할 수 없으며 **/clr** 이 아닌 모듈은 메타 데이터를 포함 하는 미리 컴파일된 헤더 파일을 사용할 수 없습니다.
+미리 컴파일된 헤더는 **/clr** 에서 지원 됩니다. 그러나/clr을 사용 하 여 일부 CPP 파일만 컴파일하는 경우 **(rest** 를 네이티브로 컴파일) **/clr** 을 사용 하 여 생성 된 미리 컴파일된 헤더가 **/clr** 을 사용 하지 않고 생성 된 헤더와 호환 되지 않기 때문에 일부 변경이 필요 합니다. 이러한 비 호환성은 **/clr** 에서 메타 데이터를 생성 하 고 요구 하기 때문에 발생 합니다. 따라서 모듈 컴파일 **/clr** 은 메타 데이터를 포함 하지 않는 미리 컴파일된 헤더를 사용할 수 없으며 **/clr** 이 아닌 모듈은 메타 데이터를 포함 하는 미리 컴파일된 헤더 파일을 사용할 수 없습니다.
 
 일부 모듈이 컴파일되는 프로젝트를 **컴파일하는 가장** 쉬운 방법은 미리 컴파일된 헤더를 완전히 사용 하지 않도록 설정 하는 것입니다. (프로젝트 속성 페이지 대화 상자에서 C/c + + 노드를 열고 미리 컴파일된 헤더를 선택 합니다. 그런 다음, 미리 컴파일된 헤더 만들기/사용 속성을 "미리 컴파일된 헤더 사용 안 함"으로 변경 합니다.
 
-그러나 특히 큰 프로젝트의 경우 미리 컴파일된 헤더를 사용 하면 컴파일 속도가 훨씬 우수 하므로이 기능을 사용 하지 않는 것이 좋습니다. 이 경우 별도의 미리 컴파일된 헤더를 사용 하도록 **/clr** 및 비 **/clr** 파일을 구성 하는 것이 가장 좋습니다. 이 작업은 **솔루션 탐색기**를 사용 하 여 **/clr** 로 컴파일할 모듈을 다중 선택 하 고 그룹을 마우스 오른쪽 단추로 클릭 한 다음 속성을 선택 하 여 한 번에 수행할 수 있습니다. 그런 다음 파일 및 미리 컴파일된 헤더 파일 속성을 사용 하 여 만들기/사용 PCH를 변경 하 여 각각 다른 헤더 파일 이름과 PCH 파일을 사용 합니다.
+그러나 특히 큰 프로젝트의 경우 미리 컴파일된 헤더를 사용 하면 컴파일 속도가 훨씬 우수 하므로이 기능을 사용 하지 않는 것이 좋습니다. 이 경우 별도의 미리 컴파일된 헤더를 사용 하도록 **/clr** 및 비 **/clr** 파일을 구성 하는 것이 가장 좋습니다. 이 작업은 **솔루션 탐색기** 를 사용 하 여 **/clr** 로 컴파일할 모듈을 다중 선택 하 고 그룹을 마우스 오른쪽 단추로 클릭 한 다음 속성을 선택 하 여 한 번에 수행할 수 있습니다. 그런 다음 파일 및 미리 컴파일된 헤더 파일 속성을 사용 하 여 만들기/사용 PCH를 변경 하 여 각각 다른 헤더 파일 이름과 PCH 파일을 사용 합니다.
 
 ## <a name="fixing-errors"></a>오류 수정
 
@@ -132,7 +133,7 @@ DLL 데이터 내보내기는 오류가 발생 하기 쉬우며 권장 하지 �
 
 ### <a name="floating-point-and-alignment-issues"></a>부동 소수점 및 맞춤 문제
 
-`__controlfp`는 공용 언어 런타임에서 지원 되지 않습니다 (자세한 내용은 [_control87, _controlfp, \_ _control87_2](../c-runtime-library/reference/control87-controlfp-control87-2.md) 참조). CLR도 [정렬을](../cpp/align-cpp.md)고려 하지 않습니다.
+`__controlfp` 는 공용 언어 런타임에서 지원 되지 않습니다 (자세한 내용은 [_control87, _controlfp, \_ _control87_2](../c-runtime-library/reference/control87-controlfp-control87-2.md) 참조). CLR도 [정렬을](../cpp/align-cpp.md)고려 하지 않습니다.
 
 ### <a name="com-initialization"></a>COM 초기화
 
@@ -152,7 +153,7 @@ MSIL로 생성 되는 네이티브 c + + 메서드를 간접적으로 호출 하
 
 ## <a name="using-new-visual-c-features"></a>새 Visual C++ 기능 사용
 
-응용 프로그램을 컴파일하고, 링크 하 고, 실행 한 후 **/clr**로 컴파일된 모든 모듈에서 .net 기능 사용을 시작할 수 있습니다. 자세한 내용은 [런타임 플랫폼의 구성 요소 확장](../extensions/component-extensions-for-runtime-platforms.md)을 참조하세요.
+응용 프로그램을 컴파일하고, 링크 하 고, 실행 한 후 **/clr** 로 컴파일된 모든 모듈에서 .net 기능 사용을 시작할 수 있습니다. 자세한 내용은 [런타임 플랫폼의 구성 요소 확장](../extensions/component-extensions-for-runtime-platforms.md)을 참조하세요.
 
 Visual C++의 .NET 프로그래밍에 대 한 자세한 내용은 다음을 참조 하세요.
 

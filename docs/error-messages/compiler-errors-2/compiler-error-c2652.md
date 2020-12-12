@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2652'
 title: 컴파일러 오류 C2652
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2652
 ms.assetid: 6e3d1a90-a989-4088-8afd-dc82f6a2d66f
-ms.openlocfilehash: cedee3f1e3289aaf0ea38d75b6c812b61f891435
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 6d0f85a089c527ce299e007ce04d96ac68daaf56
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756125"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97286178"
 ---
 # <a name="compiler-error-c2652"></a>컴파일러 오류 C2652
 

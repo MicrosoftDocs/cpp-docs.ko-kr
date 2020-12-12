@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 추상 클래스 (c + +)'
 title: 추상 클래스 (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - abstract classes [C++]
 - derived classes [C++], abstract classes [C++]
 ms.assetid: f0c5975b-39de-4d68-9640-6ce57f4632e6
-ms.openlocfilehash: 2ea9d3765f65434cb738c2b7c53f9499bba24545
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: bb1c42ce7930128e72c88afaca90da7aaac0bde5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80181696"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288414"
 ---
 # <a name="abstract-classes-c"></a>추상 클래스 (C++)
 
@@ -55,7 +56,7 @@ private:
 
 *추상-클래스-이름*::*함수 이름*()
 
-개체를 제거하는 과정에서 기본 클래스 소멸자가 항상 호출되기 때문에 기본 클래스가 순수 가상 소멸자를 포함하는 클래스 계층 구조를 설계할 때 도움이 됩니다. 다음과 같은 예제를 참조하세요.
+개체를 제거하는 과정에서 기본 클래스 소멸자가 항상 호출되기 때문에 기본 클래스가 순수 가상 소멸자를 포함하는 클래스 계층 구조를 설계할 때 도움이 됩니다. 다음 예제를 참조하세요.
 
 ```cpp
 // Declare an abstract base class with a pure virtual destructor.
@@ -86,6 +87,6 @@ int main() {
 > [!NOTE]
 > 앞의 예제에서 순수 가상 함수인 `base::~base`는 `derived::~derived`에서 암시적으로 호출됩니다. 명시적으로 전체 정규화된 멤버 함수 이름을 사용하여 순수 가상 함수를 호출할 수도 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 [상속](../cpp/inheritance-cpp.md)

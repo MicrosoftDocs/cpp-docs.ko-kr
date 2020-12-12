@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: IRowsetIdentityImpl 클래스'
 title: IRowsetIdentityImpl 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - IRowsetIdentityImpl class
 - IsSameRow method
 ms.assetid: 56821edf-e045-40c8-96bd-231552cd5799
-ms.openlocfilehash: 48ed687ff67208109b5a2acf400d98491b4c769a
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 4cba00d16671c3efd26bc3a9b20e93e1f80a1cc4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836145"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287205"
 ---
 # <a name="irowsetidentityimpl-class"></a>IRowsetIdentityImpl 클래스
 
@@ -65,7 +66,7 @@ STDMETHOD(IsSameRow )(HROW hThisRow,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [IRowsetIdentity:: IsSameRow](/previous-versions/windows/desktop/ms719629(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [IRowsetIdentity:: IsSameRow](/previous-versions/windows/desktop/ms719629(v=vs.85)) 를 참조 하세요.
 
 ### <a name="remarks"></a>설명
 

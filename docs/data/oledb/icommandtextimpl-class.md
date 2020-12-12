@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: ICommandTextImpl 클래스'
 title: ICommandTextImpl 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - m_strCommandText
 - SetCommandText method
 ms.assetid: 9c2715cc-1e55-4468-8327-85341617ed46
-ms.openlocfilehash: 7d31933b162a74db31bdd3c65dc68e396a3896c4
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 4b48b9f8f2ee535a648681064cc6b1083c76e489
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91501722"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287374"
 ---
 # <a name="icommandtextimpl-class"></a>ICommandTextImpl 클래스
 
@@ -54,14 +55,14 @@ class ATL_NO_VTABLE ICommandTextImpl
 
 ### <a name="interface-methods"></a>인터페이스 메서드
 
-| 속성 | 설명 |
+| Name | 설명 |
 |-|-|
 |[GetCommandText](#getcommandtext)|[Setcommandtext](#setcommandtext)에 대 한 마지막 호출로 설정 된 텍스트 명령을 반환 합니다.|
 |[SetCommandText](#setcommandtext)|명령 텍스트를 설정 하 여 기존 명령 텍스트를 바꿉니다.|
 
 ### <a name="data-members"></a>데이터 멤버
 
-| 속성 | 설명 |
+| Name | 설명 |
 |-|-|
 |[m_strCommandText](#strcommandtext)|명령 텍스트를 저장 합니다.|
 
@@ -82,7 +83,7 @@ STDMETHOD(GetCommandText)(GUID * pguidDialect,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [ICommandText:: getcommandtext](/previous-versions/windows/desktop/ms709825(v=vs.85)) 를 참조 하세요. *PguidDialect* 매개 변수는 기본적으로 무시 됩니다.
+*OLE DB 프로그래머 참조* 에서 [ICommandText:: getcommandtext](/previous-versions/windows/desktop/ms709825(v=vs.85)) 를 참조 하세요. *PguidDialect* 매개 변수는 기본적으로 무시 됩니다.
 
 ## <a name="icommandtextimplsetcommandtext"></a><a name="setcommandtext"></a> ICommandTextImpl:: SetCommandText
 
@@ -97,7 +98,7 @@ STDMETHOD(SetCommandText)(REFGUID rguidDialect,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [ICommandText:: setcommandtext](/previous-versions/windows/desktop/ms709757(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [ICommandText:: setcommandtext](/previous-versions/windows/desktop/ms709757(v=vs.85)) 를 참조 하세요.
 
 ## <a name="icommandtextimplm_strcommandtext"></a><a name="strcommandtext"></a> ICommandTextImpl:: m_strCommandText
 

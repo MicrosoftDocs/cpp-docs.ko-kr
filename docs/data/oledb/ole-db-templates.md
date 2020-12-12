@@ -1,4 +1,5 @@
 ---
+description: OLE DB 템플릿에 대해 자세히 알아보세요.
 title: OLE DB 템플릿
 ms.date: 05/09/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - OLE DB templates
 ms.assetid: 73918f6f-1fd7-4fa2-a0ff-7f9d792fce7e
-ms.openlocfilehash: d3b709bbebdf040ac818d2d2d44576cf49aafdd4
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 2a1680f541e9d8f8fb35da22670e72b3a87a1db0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500903"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97286776"
 ---
 # <a name="ole-db-templates"></a>OLE DB 템플릿
 
@@ -25,7 +26,7 @@ OLE DB 템플릿을 사용하면 OLE DB 데이터에 더 쉽게 액세스할 수
 [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-reference.md)<br/>
 용도별로 나열된 OLE DB 공급자 템플릿 클래스 링크를 제공합니다.
 
-## <a name="related-sections"></a>관련 섹션
+## <a name="related-sections"></a>관련 단원
 
 [OLE DB 프로그래밍 개요](../../data/oledb/ole-db-programming-overview.md)<br/>
 OLE DB가 무엇인지를 소개하고 OLE DB의 범용 데이터 액세스에 대해 설명합니다.
@@ -45,7 +46,7 @@ OLE DB 공급자 템플릿에 대한 개념 자료를 설명합니다.
 [OLE DB 소비자 만들기](../../data/oledb/creating-an-ole-db-consumer.md)<br/>
 OLE DB 템플릿 소비자를 만드는 방법을 설명합니다.
 
-[단순한 읽기 전용 공급자 만들기](../../data/oledb/creating-a-simple-read-only-provider.md)<br/>
+[간단한 Read-Only 공급자 만들기](../../data/oledb/creating-a-simple-read-only-provider.md)<br/>
 문자열 쌍을 읽는 단순한 읽기 전용 공급자를 만드는 방법을 설명합니다.
 
 [업데이트 가능 공급자 만들기](../../data/oledb/creating-an-updatable-provider.md)<br/>

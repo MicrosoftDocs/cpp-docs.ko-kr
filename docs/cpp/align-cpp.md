@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: align (c + +)'
 title: 맞춤 (C++)
 ms.date: 12/17/2018
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - align __declspec keyword
 - __declspec keyword [C++], align
 ms.assetid: 9cb63f58-658b-4425-ac47-af8eabfc5878
-ms.openlocfilehash: 0a1212f1c78f49029f82be5a2f5d82ea1788b6e0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2794c94e5ef56063ea0b5621838a8e33cfdca5c1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227662"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288309"
 ---
 # <a name="align-c"></a>맞춤 (C++)
 
@@ -22,7 +23,7 @@ Visual Studio 2015 이상에서 c + + 11 표준 지정자를 사용 **`alignas`*
 
 `__declspec(align(#))`를 사용하여 사용자 정의 데이터(예: 함수의 정적 할당 또는 자동 데이터)를 정확하게 제어합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **__declspec (align (** *#* **))** *선언 자*
 
@@ -30,7 +31,7 @@ Visual Studio 2015 이상에서 c + + 11 표준 지정자를 사용 **`alignas`*
 
 최신 프로세서 명령을 사용하는 애플리케이션을 작성할 경우 몇 가지 새로운 제약 조건과 문제가 생깁니다. 많은 새 명령에는 16 바이트 경계에 맞춘 데이터가 필요 합니다. 또한 자주 사용 하는 데이터를 프로세서의 캐시 줄 크기에 맞춰 캐시 성능을 향상 시킬 수 있습니다. 예를 들어 크기가 32 바이트 미만인 구조체를 정의할 경우 해당 구조체 형식의 개체가 효율적으로 캐시 되도록 32 바이트 맞춤이 필요할 수 있습니다.
 
-\#맞춤 값입니다. 유효한 항목은 2, 4, 8, 16, 32 또는 64와 같이 1에서 8192(바이트) 사이에 속하는 2의 정수 제곱입니다. `declarator`정렬 된 것으로 선언 하는 데이터입니다.
+\# 맞춤 값입니다. 유효한 항목은 2, 4, 8, 16, 32 또는 64와 같이 1에서 8192(바이트) 사이에 속하는 2의 정수 제곱입니다. `declarator` 정렬 된 것으로 선언 하는 데이터입니다.
 
 형식의 맞춤 요구 사항인 형식의 값을 반환 하는 방법에 대 한 자세한 내용은 `size_t` 을 참조 하십시오 [`alignof`](../cpp/alignof-operator.md) . 64 비트 프로세서를 대상으로 하는 경우 정렬 되지 않은 포인터를 선언 하는 방법에 대 한 자세한 내용은을 참조 하십시오 [`__unaligned`](../cpp/unaligned.md) .
 
@@ -70,9 +71,9 @@ __declspec(align(32)) struct Str1{
 
 자세한 내용은 다음을 참조하세요.
 
-- [`align`예와](#vclrfalignexamples)
+- [`align` 예와](#vclrfalignexamples)
 
-- [새 형식 정의`__declspec(align(#))`](#vclrf_declspecaligntypedef)
+- [새 형식 정의 `__declspec(align(#))`](#vclrf_declspecaligntypedef)
 
 - [스레드 로컬 저장소에서 데이터 맞춤](#vclrfthreadlocalstorageallocation)
 
@@ -80,7 +81,7 @@ __declspec(align(32)) struct Str1{
 
 - [구조 맞춤 예](../build/x64-software-conventions.md#examples-of-structure-alignment) (x64 특정)
 
-## <a name="align-examples"></a><a name="vclrfalignexamples"></a>맞춤 예
+## <a name="align-examples"></a><a name="vclrfalignexamples"></a> 맞춤 예
 
 다음 예제에서는 `__declspec(align(#))`가 데이터 구조체의 크기 및 맞춤에 영향을 주는 방식을 보여 줍니다. 예제에서는 다음과 같은 정의를 가정합니다.
 
@@ -117,7 +118,7 @@ struct S3 {
 };
 ```
 
-이 예제에서 `a`에는 자연 형식 맞춤(여기서는 4바이트)이 사용됩니다. 그러나 `S1`은 32바이트 맞춤이어야 합니다. 28 바이트의 안쪽 여백이 따라가 `a` `s1` 오프셋 32에서 시작 됩니다. `S4`는 `S1` 구조체에서 가장 큰 맞춤 요구 사항 이므로의 맞춤 요구 사항을 상속 합니다. `sizeof(struct S4)`가 64를 반환합니다.
+이 예제에서 `a`에는 자연 형식 맞춤(여기서는 4바이트)이 사용됩니다. 그러나 `S1`은 32바이트 맞춤이어야 합니다. 28 바이트의 안쪽 여백이 따라가 `a` `s1` 오프셋 32에서 시작 됩니다. `S4` 는 `S1` 구조체에서 가장 큰 맞춤 요구 사항 이므로의 맞춤 요구 사항을 상속 합니다. `sizeof(struct S4)`가 64를 반환합니다.
 
 ```cpp
 struct S4 {
@@ -169,9 +170,9 @@ void fn() {
 }
 ```
 
-메모리가 힙에 할당된 경우 호출되는 할당 함수에 따라 맞춤이 결정됩니다.  예를 들어, `malloc`를 사용할 경우 피연산자 크기에 따라 결과가 결정됩니다. *Arg* >= 8 이면 반환 되는 메모리는 8 바이트로 정렬 됩니다. *Arg* < 8 인 경우 반환 되는 메모리의 맞춤은 *arg*보다 작은 2의 첫 번째 거듭제곱입니다. 예를 들어를 사용 하는 경우 `malloc(7)` 맞춤은 4 바이트입니다.
+메모리가 힙에 할당된 경우 호출되는 할당 함수에 따라 맞춤이 결정됩니다.  예를 들어, `malloc`를 사용할 경우 피연산자 크기에 따라 결과가 결정됩니다. *Arg* >= 8 이면 반환 되는 메모리는 8 바이트로 정렬 됩니다. *Arg* < 8 인 경우 반환 되는 메모리의 맞춤은 *arg* 보다 작은 2의 첫 번째 거듭제곱입니다. 예를 들어를 사용 하는 경우 `malloc(7)` 맞춤은 4 바이트입니다.
 
-## <a name="defining-new-types-with-__declspecalign"></a><a name="vclrf_declspecaligntypedef"></a>새 형식 정의`__declspec(align(#))`
+## <a name="defining-new-types-with-__declspecalign"></a><a name="vclrf_declspecaligntypedef"></a> 새 형식 정의 `__declspec(align(#))`
 
 맞춤 특성을 사용하여 형식을 정의할 수 있습니다.
 
@@ -184,7 +185,7 @@ typedef __declspec(align(32)) struct aType bType;
 
 이제 `aType` 및의 `bType` 크기가 같지만 (8 바이트) 형식의 변수 `bType` 는 32 바이트 정렬 됩니다.
 
-## <a name="aligning-data-in-thread-local-storage"></a><a name="vclrfthreadlocalstorageallocation"></a>스레드 로컬 저장소에서 데이터 정렬
+## <a name="aligning-data-in-thread-local-storage"></a><a name="vclrfthreadlocalstorageallocation"></a> 스레드 로컬 저장소에서 데이터 정렬
 
 `__declspec(thread)` 특성으로 만들어 이미지의 TLS 섹션에 넣은 정적 TLS(스레드 로컬 스토리지)는 보통의 정적 데이터와 똑같은 맞춤으로 작동합니다. 운영 체제에서는 TLS 데이터를 만들기 위해 메모리에 TLS 섹션의 크기를 할당하고 TLS 섹션 맞춤 특성을 고려합니다.
 

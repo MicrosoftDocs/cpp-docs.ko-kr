@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2656'
 title: 컴파일러 오류 C2656
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2656
 ms.assetid: 1ec91186-0735-4904-859b-59da9af2d426
-ms.openlocfilehash: 58819bb752e257be39ac7bb5a19cdf82b8e6baec
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 925b04fcc053f2d164ceeae5768232651de51b3e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80177172"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97286100"
 ---
 # <a name="compiler-error-c2656"></a>컴파일러 오류 C2656
 

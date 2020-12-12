@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4266'
 title: 컴파일러 경고(수준 4) C4266
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4266
 ms.assetid: 90ec5f5b-3451-4c16-bb1b-c30a626bdaa0
-ms.openlocfilehash: eeca693e03751245d9b031d6f64751f0372bbb69
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 173e7da734a1bd94ccee9684bc2400c020dfc76c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991353"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97285177"
 ---
 # <a name="compiler-warning-level-4-c4266"></a>컴파일러 경고(수준 4) C4266
 
@@ -38,7 +39,7 @@ class LocalBinding : private Engine {
 };   // C4266
 ```
 
-가능한 해결 방법:
+해결 방법:
 
 ```cpp
 // C4266b.cpp

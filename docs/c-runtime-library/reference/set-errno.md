@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _set_errno'
 title: _set_errno
 ms.date: 4/2/2020
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - set_errno function
 - _set_errno function
 ms.assetid: d338914a-1894-4cf3-ae45-f2c4eb26590b
-ms.openlocfilehash: e889f8e2dabfffbcc69ff796fb21570b66b57fb0
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: f609e26468728d88346ef7b43faa2209ef9c77e7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913052"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288856"
 ---
 # <a name="_set_errno"></a>_set_errno
 
@@ -49,9 +50,9 @@ errno_t _set_errno( int error_value );
 ### <a name="parameters"></a>매개 변수
 
 *error_value*<br/>
-**Errno**의 새 값입니다.
+**Errno** 의 새 값입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 성공하면 0을 반환합니다.
 
@@ -87,7 +88,7 @@ Oops: Illegal byte sequence
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [_get_errno](get-errno.md)<br/>
 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)<br/>

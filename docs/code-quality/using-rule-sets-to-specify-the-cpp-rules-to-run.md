@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 규칙 집합을 사용 하 여 실행할 c + + 규칙 지정'
 title: 규칙 집합을 사용하여 실행할 C++ 규칙 지정
 ms.date: 07/27/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.rulesets.native
-ms.openlocfilehash: 53e1122cd1aac74401ca956ee24ebcdf79883228
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: fc1423e92b9dde26b7f6123cae23f1ea4f671fbd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92921908"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288479"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>규칙 집합을 사용하여 실행할 C++ 규칙 지정
 
@@ -239,7 +240,7 @@ Visual Studio에서 사용자 지정 c + + 규칙 집합을 만들려면 Visual 
 
 스키마 요소 세부 정보:
 
-| Schema 요소 | Description |
+| Schema 요소 | 설명 |
 |--------------------|--------------|
 | `TLocalization` | 규칙 집합 파일의 이름, 규칙 집합 파일의 설명, 지역화 된 리소스를 포함 하는 리소스 어셈블리의 이름 및 지역화 된 리소스의 기본 이름을 포함 하는 지역화 정보 |
 | `TRuleHintPaths` | 규칙 집합 파일을 검색 하기 위한 힌트로 사용 되는 파일 경로 |

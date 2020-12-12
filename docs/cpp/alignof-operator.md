@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: alignof 연산자'
 title: alignof 연산자
 ms.date: 12/17/2018
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - alignof [C++]
 - types [C++], alignment requirements
 ms.assetid: acb1eed7-6398-40bd-b0c5-684ceb64afbc
-ms.openlocfilehash: 6a2046774674858211ae89abb9b4cfc7b09c0a6d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b7e053b932ed631d8b03dc1b89f6857905740e5a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227636"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288310"
 ---
 # <a name="alignof-operator"></a>alignof 연산자
 
@@ -58,7 +59,7 @@ typedef struct { int a; double b; } S;
 typedef __declspec(align(32)) struct { int a; } S;
 ```
 
-`alignof(S)`이(가) `32`와 같은 경우
+`alignof(S)`이(가) `32`와 같은 경우.
 
 에서 사용 하는 한 가지 용도는 **`alignof`** 사용자 고유의 메모리 할당 루틴 중 하나에 대 한 매개 변수입니다. 예를 들어, 다음의 정의된 구조인 `S`가 지정된 경우 `aligned_malloc`이라는 메모리 할당 루틴을 호출하여 특정한 할당 경계에서 메모리를 할당할 수 있습니다.
 
@@ -93,4 +94,4 @@ X86 및 x64 관련 코드에서 맞춤의 차이점에 대한 자세한 내용�
 ## <a name="see-also"></a>참조
 
 [단항 연산자가 있는 식](../cpp/expressions-with-unary-operators.md)<br/>
-[C++ 키워드](../cpp/keywords-cpp.md)
+[키워드](../cpp/keywords-cpp.md)

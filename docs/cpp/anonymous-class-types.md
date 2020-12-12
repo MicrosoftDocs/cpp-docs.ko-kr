@@ -1,20 +1,21 @@
 ---
+description: '자세한 정보: 익명 클래스 형식'
 title: 익명 클래스 형식
 ms.date: 11/04/2016
 helpviewer_keywords:
 - class types [C++], anonymous
 - anonymous class types
 ms.assetid: 9ba667b2-8c2a-4c29-82a6-fa120b9233c8
-ms.openlocfilehash: 77f0a5517cee5e4baeacbbdcae47bdeea2853a97
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 91cc86602e4f9ead4d9da272e9cca4299be18e5c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216637"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288221"
 ---
 # <a name="anonymous-class-types"></a>익명 클래스 형식
 
-클래스는 익명 일 수 있습니다. 즉, *식별자*없이 선언할 수 있습니다. 이는 다음과 같이 클래스 이름을 이름으로 바꿀 때 유용 **`typedef`** 합니다.
+클래스는 익명 일 수 있습니다. 즉, *식별자* 없이 선언할 수 있습니다. 이는 다음과 같이 클래스 이름을 이름으로 바꿀 때 유용 **`typedef`** 합니다.
 
 ```cpp
 typedef struct

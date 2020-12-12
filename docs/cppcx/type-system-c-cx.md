@@ -1,13 +1,14 @@
 ---
+description: '자세히 알아보기: 형식 시스템 (c + +/CX)'
 title: 형식 시스템(C++/CX)
 ms.date: 02/03/2017
 ms.assetid: b67bee8a-b526-4872-969e-ef22724e88fe
-ms.openlocfilehash: 242fbde1774ef4537eedce26cafff6b8625ac2a5
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 43b1e9dd2df6e9e457525ebf337604f68f0c267f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845148"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288167"
 ---
 # <a name="type-system-ccx"></a>형식 시스템(C++/CX)
 
@@ -37,7 +38,7 @@ C + +로 작성 된 유니버설 Windows 플랫폼 앱을 컴파일하는 경우
 
 | 메타데이터에 게시됨 | 메타데이터에 게시되지 않음 |
 |--|--|
-| 공공 | private |
+| public | private |
 | protected | internal |
 | public protected | private protected |
 

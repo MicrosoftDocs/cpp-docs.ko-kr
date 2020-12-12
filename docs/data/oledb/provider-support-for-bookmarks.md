@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 공급자에 대 한 책갈피 지원'
 title: 공급자의 책갈피 지원
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - IRowsetLocate class
 - OLE DB providers, bookmark support
 ms.assetid: 1b14ccff-4f76-462e-96ab-1aada815c377
-ms.openlocfilehash: 240cb4da03d6c8c1958b7a86e78171aca2dc30e9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0a2225f44d9d094f52e97b88eb58c6942906edf6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216455"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97286659"
 ---
 # <a name="provider-support-for-bookmarks"></a>공급자의 책갈피 지원
 
@@ -40,7 +41,7 @@ class CCustomRowset : public CRowsetImpl< CCustomRowset,
           IRowsetLocateImpl<CCustomRowset, IRowsetLocate>>
 ```
 
-네 번째, 다섯 번째 및 여섯 번째 매개 변수가 모두 추가 됩니다. 이 예에서는 네 번째 및 다섯 번째 매개 변수의 기본값을 사용 하지만를 `IRowsetLocateImpl` 여섯 번째 매개 변수로 지정 합니다. `IRowsetLocateImpl`는 두 개의 템플릿 매개 변수를 사용 하는 OLE DB 템플릿 클래스입니다 .이 클래스는 `IRowsetLocate` 인터페이스를 클래스에 연결 `CCustomRowset` 합니다. 대부분의 인터페이스를 추가 하려면이 단계를 건너뛰고 다음 단계를 진행할 수 있습니다. `IRowsetLocate`및 `IRowsetScroll` 인터페이스만 이러한 방식으로 처리 해야 합니다.
+네 번째, 다섯 번째 및 여섯 번째 매개 변수가 모두 추가 됩니다. 이 예에서는 네 번째 및 다섯 번째 매개 변수의 기본값을 사용 하지만를 `IRowsetLocateImpl` 여섯 번째 매개 변수로 지정 합니다. `IRowsetLocateImpl` 는 두 개의 템플릿 매개 변수를 사용 하는 OLE DB 템플릿 클래스입니다 .이 클래스는 `IRowsetLocate` 인터페이스를 클래스에 연결 `CCustomRowset` 합니다. 대부분의 인터페이스를 추가 하려면이 단계를 건너뛰고 다음 단계를 진행할 수 있습니다. `IRowsetLocate`및 `IRowsetScroll` 인터페이스만 이러한 방식으로 처리 해야 합니다.
 
 그런 다음 `CCustomRowset` 인터페이스에 대해를 호출 하도록에 지시 해야 합니다 `QueryInterface` `IRowsetLocate` . 지도에 줄을 추가 합니다 `COM_INTERFACE_ENTRY(IRowsetLocate)` . 의 인터페이스 맵은 `CCustomRowset` 다음 코드와 같이 표시 됩니다.
 
@@ -78,7 +79,7 @@ class CTextData
 };
 ```
 
-그런 다음 `GetColumnInfo` *사용자 지정*RS .cpp 파일에서 다음과 같이 함수를 구현 합니다.
+그런 다음 `GetColumnInfo` *사용자 지정* RS .cpp 파일에서 다음과 같이 함수를 구현 합니다.
 
 ```cpp
 ////////////////////////////////////////////////////////////////////
@@ -148,11 +149,11 @@ ATLCOLUMNINFO* CAgentMan::GetColumnInfo(RUpdateRowset* pThis, ULONG* pcCols)
 }
 ```
 
-`GetColumnInfo`는 먼저 라는 속성이 설정 되었는지 여부를 확인 `DBPROP_IRowsetLocate` 합니다. OLE DB에는 행 집합 개체의 각 선택적 인터페이스에 대 한 속성이 있습니다. 소비자가 이러한 선택적 인터페이스 중 하나를 사용 하려는 경우 속성을 true로 설정 합니다. 그런 다음 공급자는이 속성을 확인 하 고이 속성을 기반으로 특별 한 작업을 수행할 수 있습니다.
+`GetColumnInfo` 는 먼저 라는 속성이 설정 되었는지 여부를 확인 `DBPROP_IRowsetLocate` 합니다. OLE DB에는 행 집합 개체의 각 선택적 인터페이스에 대 한 속성이 있습니다. 소비자가 이러한 선택적 인터페이스 중 하나를 사용 하려는 경우 속성을 true로 설정 합니다. 그런 다음 공급자는이 속성을 확인 하 고이 속성을 기반으로 특별 한 작업을 수행할 수 있습니다.
 
 구현에서 명령 개체에 대 한 포인터를 사용 하 여 속성을 가져옵니다. `pThis`포인터는 행 집합 또는 명령 클래스를 나타냅니다. 여기에서 템플릿을 사용 하므로이를 **`void`** 포인터로 전달 하거나 코드가 컴파일되지 않습니다.
 
-열 정보를 저장할 정적 배열을 지정 합니다. 소비자가 책갈피 열을 원하지 않는 경우 배열의 항목이 낭비 됩니다. 이 배열을 동적으로 할당할 수 있지만 제대로 소멸 해야 합니다. 이 예제에서는 매크로 ADD_COLUMN_ENTRY 및 ADD_COLUMN_ENTRY_EX를 사용 하 여 배열에 정보를 삽입 합니다. *사용자 지정*RS에 매크로를 추가할 수 있습니다. 다음 코드와 같이 H 파일을 표시 합니다.
+열 정보를 저장할 정적 배열을 지정 합니다. 소비자가 책갈피 열을 원하지 않는 경우 배열의 항목이 낭비 됩니다. 이 배열을 동적으로 할당할 수 있지만 제대로 소멸 해야 합니다. 이 예제에서는 매크로 ADD_COLUMN_ENTRY 및 ADD_COLUMN_ENTRY_EX를 사용 하 여 배열에 정보를 삽입 합니다. *사용자 지정* RS에 매크로를 추가할 수 있습니다. 다음 코드와 같이 H 파일을 표시 합니다.
 
 ```cpp
 ////////////////////////////////////////////////////////////////////////

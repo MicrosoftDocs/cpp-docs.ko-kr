@@ -1,4 +1,5 @@
 ---
+description: Scanf, _scanf_l, wscanf, _wscanf_l에 대해 자세히 알아보세요.
 title: scanf, _scanf_l, wscanf, _wscanf_l
 ms.date: 10/21/2019
 api_name:
@@ -43,12 +44,12 @@ helpviewer_keywords:
 - wscanf_l function
 - _wscanf_l function
 ms.assetid: 73eac607-117f-4be4-9ff0-4afd9cf3c848
-ms.openlocfilehash: 62f97c901bc7e6dc34a2db6ad80193cc4aaa986a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4f87ae7caf2dbc197834864bc43a04be48f5c466
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231353"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289038"
 ---
 # <a name="scanf-_scanf_l-wscanf-_wscanf_l"></a>scanf, _scanf_l, wscanf, _wscanf_l
 
@@ -91,22 +92,22 @@ int _wscanf_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 성공적으로 변환되고 할당된 필드 수를 반환합니다. 이때 읽혀졌지만 할당되지 않은 필드는 반환 값에 포함되지 않습니다. 반환 값이 0이면 할당된 필드가 없음을 나타냅니다.
 
-*Format* 이 **NULL** 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **EOF** 를 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
+*Format* 이 **NULL** 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **EOF** 를 반환 하 고 **errno** 를 **EINVAL** 로 설정 합니다.
 
 이러한 오류 코드 및 기타 오류 코드에 대한 내용은 [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-**Scanf** 함수는 표준 입력 스트림 **stdin** 에서 데이터를 읽고 *인수*에 지정 된 위치에 데이터를 씁니다. 각 *인수* 는 *형식의 형식*지정자에 해당 하는 형식의 변수에 대 한 포인터 여야 합니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
+**Scanf** 함수는 표준 입력 스트림 **stdin** 에서 데이터를 읽고 *인수* 에 지정 된 위치에 데이터를 씁니다. 각 *인수* 는 *형식의 형식* 지정자에 해당 하는 형식의 변수에 대 한 포인터 여야 합니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
 
 > [!IMPORTANT]
-> **Scanf**를 사용 하 여 문자열을 읽을 때 항상 **% s** 형식에 대 한 너비를 지정 합니다 (예: **"% s"** 대신 **"% 32s"** ). 그렇지 않으면 형식이 잘못 지정 된 입력으로 인해 버퍼 오버런이 발생할 수 있습니다. 또는 [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)이나 [fgets](fgets-fgetws.md)를 사용하는 것이 좋습니다.
+> **Scanf** 를 사용 하 여 문자열을 읽을 때 항상 **% s** 형식에 대 한 너비를 지정 합니다 (예: **"% s"** 대신 **"% 32s"** ). 그렇지 않으면 형식이 잘못 지정 된 입력으로 인해 버퍼 오버런이 발생할 수 있습니다. 또는 [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)이나 [fgets](fgets-fgetws.md)를 사용하는 것이 좋습니다.
 
-**wscanf** 는 **scanf**의 와이드 문자 버전입니다. **wscanf** 에 대 한 *format* 인수는 와이드 문자열입니다. **wscanf** 및 **SCANF** 는 스트림이 ANSI 모드에서 열리는 경우 동일 하 게 동작 합니다. **scanf** 는 현재 유니코드 스트림의 입력을 지원 하지 않습니다.
+**wscanf** 는 **scanf** 의 와이드 문자 버전입니다. **wscanf** 에 대 한 *format* 인수는 와이드 문자열입니다. **wscanf** 및 **SCANF** 는 스트림이 ANSI 모드에서 열리는 경우 동일 하 게 동작 합니다. **scanf** 는 현재 유니코드 스트림의 입력을 지원 하지 않습니다.
 
 **_L** 접미사가 있는 이러한 함수 버전은 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하 고는 동일 합니다.
 
@@ -126,7 +127,7 @@ int _wscanf_l(
 |**scanf**, **_scanf_l**|\<stdio.h>|
 |**wscanf**, **_wscanf_l**|\<stdio.h> 또는 \<wchar.h>|
 
-이 콘솔은 UWP (유니버설 Windows 플랫폼) 앱에서 지원 되지 않습니다. 콘솔, **stdin**, **stdout**및 **stderr**에 연결 된 표준 스트림 핸들은 C 런타임 함수가 UWP 앱에서 사용할 수 있으려면 먼저 리디렉션해야 합니다. 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
+이 콘솔은 UWP (유니버설 Windows 플랫폼) 앱에서 지원 되지 않습니다. 콘솔, **stdin**, **stdout** 및 **stderr** 에 연결 된 표준 스트림 핸들은 C 런타임 함수가 UWP 앱에서 사용할 수 있으려면 먼저 리디렉션해야 합니다. 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 

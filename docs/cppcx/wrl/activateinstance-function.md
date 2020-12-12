@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 기능 인스턴스 함수'
 title: ActivateInstance 함수
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - ActivateInstance function
 ms.assetid: 8cfd1dd9-5fda-4cc2-acf8-d40e783b3875
-ms.openlocfilehash: d1109e769352d412df8348822e05b66063159ee8
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 03d7b67810ee2ab287072546b098f81f43687233
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214229"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287855"
 ---
 # <a name="activateinstance-function"></a>ActivateInstance 함수
 
@@ -35,10 +36,10 @@ inline HRESULT ActivateInstance(
 활성화할 형식입니다.
 
 *activatableClassId*<br/>
-매개 변수 *T*를 정의 하는 클래스 ID의 이름입니다.
+매개 변수 *T* 를 정의 하는 클래스 ID의 이름입니다.
 
-*instance*<br/>
-이 작업이 완료 되 면 *T*의 인스턴스에 대 한 참조입니다.
+*인스턴스*<br/>
+이 작업이 완료 되 면 *T* 의 인스턴스에 대 한 참조입니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -52,4 +53,4 @@ inline HRESULT ActivateInstance(
 
 ## <a name="see-also"></a>참고 항목
 
-[Windows::Foundation 네임스페이스](windows-foundation-namespace.md)
+[Windows:: Foundation 네임 스페이스](windows-foundation-namespace.md)

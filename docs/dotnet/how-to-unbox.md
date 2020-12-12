@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 방법: Unbox'
 title: '방법: Unbox'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - unboxing
 ms.assetid: 75794696-9275-47bf-9a7d-5abe6585ab91
-ms.openlocfilehash: b184b0b534e2720af833f34b908ede5b998803ec
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: e5f3ae72f1d7b2340baa868a2e1d009b3534e701
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "79544870"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97286321"
 ---
 # <a name="how-to-unbox"></a>방법: Unbox
 
@@ -41,4 +42,4 @@ int main() {
 
 ## <a name="see-also"></a>참고 항목
 
-[Boxing](../extensions/boxing-cpp-component-extensions.md)
+[boxing](../extensions/boxing-cpp-component-extensions.md)

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 동적 접근자 재정의'
 title: 동적 접근자 재정의
 ms.date: 10/19/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - dynamic accessors
 - overriding, dynamic accessors
 ms.assetid: cbefd156-6da5-490d-b795-c2d7d874f7ce
-ms.openlocfilehash: d616079745c0a5adfa4167e4bdde8e7768f9b9d8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1057b59d7b2cd6b6f5e83511d9dd10e3726f648d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218314"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97286763"
 ---
 # <a name="overriding-a-dynamic-accessor"></a>동적 접근자 재정의
 

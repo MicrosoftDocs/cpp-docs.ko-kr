@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _searchenv_s, _wsearchenv_s'
 title: _searchenv_s, _wsearchenv_s
 ms.date: 4/2/2020
 api_name:
@@ -42,12 +43,12 @@ helpviewer_keywords:
 - _searchenv_s function
 - environment paths
 ms.assetid: 47f9fc29-250e-4c09-b52e-9e9f0ef395ca
-ms.openlocfilehash: 5dd21013c8910ba07e2d23606af49bc80458dbc6
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: c618840c904bb03eb2f04b9931c7fe7999a278a4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918990"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288960"
 ---
 # <a name="_searchenv_s-_wsearchenv_s"></a>_searchenv_s, _wsearchenv_s
 
@@ -87,7 +88,7 @@ errno_t _wsearchenv_s(
 
 ### <a name="parameters"></a>매개 변수
 
-*이름도*<br/>
+*filename*<br/>
 검색할 파일의 이름입니다.
 
 *varname*<br/>
@@ -99,7 +100,7 @@ errno_t _wsearchenv_s(
 *이면 numberofelements 이벤트가*<br/>
 *경로 이름* 버퍼의 크기입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 성공 시 0이고, 실패 시 오류 코드입니다.
 
@@ -107,23 +108,23 @@ errno_t _wsearchenv_s(
 
 ### <a name="error-conditions"></a>오류 조건
 
-|*이름도*|*varname*|*아니라*|*이면 numberofelements 이벤트가*|반환 값|*Pathname* 의 내용|
+|*filename*|*varname*|*아니라*|*이면 numberofelements 이벤트가*|반환 값|*Pathname* 의 내용|
 |----------------|---------------|----------------|------------------------|------------------|----------------------------|
-|any|any|**N**|any|**EINVAL**|해당 없음|
-|**N**|any|any|any|**EINVAL**|변경되지 않음|
+|any|any|**NULL**|any|**EINVAL**|해당 없음|
+|**NULL**|any|any|any|**EINVAL**|변경되지 않음|
 |any|any|any|<= 0|**EINVAL**|변경되지 않음|
 
-이러한 조건 중 하나라도 발생하는 경우, [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 예외가 발생합니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **errno** 를 **EINVAL** 로 설정 하 고 **EINVAL**를 반환 합니다.
+이러한 조건 중 하나라도 발생하는 경우, [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 예외가 발생합니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **errno** 를 **EINVAL** 로 설정 하 고 **EINVAL** 를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-**_Searchenv_s** 루틴은 지정 된 도메인에서 대상 파일을 검색 합니다. *Varname* 변수는 **PATH**, **LIB**및 **INCLUDE**와 같은 디렉터리 경로 목록을 지정 하는 모든 환경 또는 사용자 정의 변수일 수 있습니다. **_Searchenv_s** 는 대/소문자를 구분 하므로 *varname* 은 환경 변수의 대/소문자와 일치 해야 합니다. *Varname* 이 프로세스 환경에 정의 된 환경 변수의 이름과 일치 하지 않는 경우 함수는 0을 반환 하 고 *pathname* 변수는 변경 되지 않습니다.
+**_Searchenv_s** 루틴은 지정 된 도메인에서 대상 파일을 검색 합니다. *Varname* 변수는 **PATH**, **LIB** 및 **INCLUDE** 와 같은 디렉터리 경로 목록을 지정 하는 모든 환경 또는 사용자 정의 변수일 수 있습니다. **_Searchenv_s** 는 대/소문자를 구분 하므로 *varname* 은 환경 변수의 대/소문자와 일치 해야 합니다. *Varname* 이 프로세스 환경에 정의 된 환경 변수의 이름과 일치 하지 않는 경우 함수는 0을 반환 하 고 *pathname* 변수는 변경 되지 않습니다.
 
-루틴은 먼저 현재 작업 디렉터리에서 파일을 검색합니다. 파일을 찾을 수 없는 경우 다음 위치로 환경 변수에 지정된 디렉터리를 확인합니다. 대상 파일이 이러한 디렉터리 중 하나에 있으면 새로 만든 경로가 *pathname*에 복사 됩니다. 파일 *이름* 파일을 찾을 수 없는 경우 *경로 이름* 에 빈 null 종료 문자열이 포함 됩니다.
+루틴은 먼저 현재 작업 디렉터리에서 파일을 검색합니다. 파일을 찾을 수 없는 경우 다음 위치로 환경 변수에 지정된 디렉터리를 확인합니다. 대상 파일이 이러한 디렉터리 중 하나에 있으면 새로 만든 경로가 *pathname* 에 복사 됩니다. 파일 *이름* 파일을 찾을 수 없는 경우 *경로 이름* 에 빈 null 종료 문자열이 포함 됩니다.
 
 *경로* 이름 버퍼는 생성 된 경로 이름의 전체 길이를 수용할 수 있도록 **_MAX_PATH** 자 이상 이어야 합니다. 그렇지 않으면 **_searchenv_s** *경로 이름* 버퍼를 오버런 하 여 예기치 않은 동작이 발생할 수 있습니다.
 
-**_wsearchenv_s** 은 **_searchenv_s**의 와이드 문자 버전입니다. **_wsearchenv_s** 인수는 와이드 문자 문자열입니다. **_wsearchenv_s** 와 **_searchenv_s** 는 동일 하 게 동작 합니다.
+**_wsearchenv_s** 은 **_searchenv_s** 의 와이드 문자 버전입니다. **_wsearchenv_s** 인수는 와이드 문자 문자열입니다. **_wsearchenv_s** 와 **_searchenv_s** 는 동일 하 게 동작 합니다.
 
 C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 것이 보다 간단해 집니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으며(크기 인수를 지정할 필요가 없어짐), 기존의 비보안 함수를 보다 최신의 보안 대응 함수로 자동으로 바꿀 수 있습니다. 자세한 내용은 [안전한 템플릿 오버로드](../../c-runtime-library/secure-template-overloads.md)를 참조하세요.
 
@@ -180,7 +181,7 @@ Path for CL.EXE:
 C:\Program Files\Microsoft Visual Studio 2010\VC\BIN\CL.EXE
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [디렉터리 제어](../../c-runtime-library/directory-control.md)<br/>
 [_searchenv, _wsearchenv](searchenv-wsearchenv.md)<br/>

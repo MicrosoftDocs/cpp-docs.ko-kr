@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: IDBInitializeImpl 클래스'
 title: IDBInitializeImpl 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -38,12 +39,12 @@ helpviewer_keywords:
 - m_dwStatus
 - m_pCUtlPropInfo
 ms.assetid: e4182f81-0443-44f5-a0d3-e7e075d6f883
-ms.openlocfilehash: aff02e812d2806201a08164aeb4a8ef290550725
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 6b37998c78c3e88921318654653995ff356ba18a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845538"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287322"
 ---
 # <a name="idbinitializeimpl-class"></a>IDBInitializeImpl 클래스
 
@@ -77,7 +78,7 @@ class ATL_NO_VTABLE IDBInitializeImpl : public IDBInitialize
 
 | Name | 설명 |
 |-|-|
-|[초기](#initialize)|공급자를 시작 합니다.|
+|[초기화](#initialize)|공급자를 시작 합니다.|
 |[묵시적](#uninitialize)|공급자를 중지 합니다.|
 
 ### <a name="data-members"></a>데이터 멤버
@@ -117,7 +118,7 @@ STDMETHOD(Initialize)(void);
 
 ### <a name="remarks"></a>설명
 
-*OLE DB 프로그래머 참조*에서 [IDBInitialize:: Initialize](/previous-versions/windows/desktop/ms718026(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [IDBInitialize:: Initialize](/previous-versions/windows/desktop/ms718026(v=vs.85)) 를 참조 하세요.
 
 ## <a name="idbinitializeimpluninitialize"></a><a name="uninitialize"></a> IDBInitializeImpl:: 초기화 취소
 
@@ -131,7 +132,7 @@ STDMETHOD(Uninitialize)(void);
 
 ### <a name="remarks"></a>설명
 
-*OLE DB 프로그래머 참조*에서 [IDBInitialize:: 초기화](/previous-versions/windows/desktop/ms719648(v=vs.85)) 취소를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [IDBInitialize:: 초기화](/previous-versions/windows/desktop/ms719648(v=vs.85)) 취소를 참조 하세요.
 
 ## <a name="idbinitializeimplm_dwstatus"></a><a name="dwstatus"></a> IDBInitializeImpl:: m_dwStatus
 

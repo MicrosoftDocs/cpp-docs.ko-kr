@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CStreamRowset 클래스'
 title: CStreamRowset 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - CStreamRowset class, constructor
 - Close method
 ms.assetid: a106e953-a38a-464e-8ea5-28963d9e4811
-ms.openlocfilehash: 304dfe0e026a9fbba899c1ef17c06cf1baf1529b
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 278f85b36a2b4ec1c3d6b3c2bd5ecc5b47c5ef73
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841053"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287816"
 ---
 # <a name="cstreamrowset-class"></a>CStreamRowset 클래스
 
@@ -85,7 +86,7 @@ SQL Server 2000은 XML 서식 지정을 수행 하 고 행 집합의 모든 열�
 
 개체를 인스턴스화하고 초기화 `CStreamRowset` 합니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 CStreamRowset();

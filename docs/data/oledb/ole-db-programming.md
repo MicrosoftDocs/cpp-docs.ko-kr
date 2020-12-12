@@ -1,4 +1,5 @@
 ---
+description: OLE DB 프로그래밍에 대 한 자세한 정보
 title: OLE DB 프로그래밍
 ms.date: 05/02/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - data access [C++], OLE DB programming
 - OLE DB [C++], about OLE DB
 ms.assetid: 52a80d66-17a9-43a1-9b90-392ae43cea2b
-ms.openlocfilehash: 85cfc23630cf035489fb441fd2c85b1c0a696c71
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: f93a79638ec3667ccfad087abb8c73b6e369d8d8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509528"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97286945"
 ---
 # <a name="ole-db-programming"></a>OLE DB 프로그래밍
 

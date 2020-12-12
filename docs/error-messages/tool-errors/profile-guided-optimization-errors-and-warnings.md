@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Profile-Guided 최적화 오류 및 경고 (PGxxxx)'
 title: 프로필 기반 최적화 오류 및 경고
 ms.date: 04/17/2019
 f1_keywords:
@@ -44,16 +45,16 @@ f1_keywords:
 - PG1066
 - PG1067
 ms.assetid: f67b1011-fb64-4df3-9356-d52c9423ff3f
-ms.openlocfilehash: 9be94ee3145dc23543fa5880c14e08a2ed25c76b
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: 6c319d7f4ef7e0eaeaf3bf551f83ce1e2a312446
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64856096"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97285190"
 ---
-# <a name="profile-guided-optimization-errors-and-warnings-pgxxxx"></a>프로필 기반 최적화 오류 및 경고 (PGxxxx)
+# <a name="profile-guided-optimization-errors-and-warnings-pgxxxx"></a>Profile-Guided 최적화 오류 및 경고 (PGxxxx)
 
-이 섹션은 프로필 기반 최적화 (PGO) 도구에서 생성 된 오류에 대 한 참조입니다. PGO 오류 및 경고에 폼 PG*xxxx*, 여기서 *xxxx* 는 4 자리 숫자입니다.
+이 섹션은 PGO (Profile-Guided 최적화) 도구에서 생성 된 오류에 대 한 참조입니다. PGO 오류 및 경고에는 PG *xxxx* 형식이 있습니다. 여기서 *xxxx* 는 네 자리 숫자입니다.
 
 [!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
@@ -66,7 +67,7 @@ ms.locfileid: "64856096"
 [프로필 기반 최적화 경고 PG1039](../../error-messages/tool-errors/profile-guided-optimization-warning-pg1039.md) \
 [프로필 기반 최적화 경고 PG1087](../../error-messages/tool-errors/profile-guided-optimization-warning-pg1087.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[C /C++ 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md) \
+[C/c + + 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md) \
 [프로필 기반 최적화](../../build/profile-guided-optimizations.md)
