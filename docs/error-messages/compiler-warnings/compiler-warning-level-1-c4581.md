@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4581'
 title: 컴파일러 경고(수준 1) C4581
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4581
 ms.assetid: 598bcd87-257d-4eb3-94e4-15bb31aadc99
-ms.openlocfilehash: 491121bc236c54ce5b74c76abfa6a650ff7a99ff
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6fffa3f7ea74cb17eae7fe4af2575e1d574084fc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80162168"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332223"
 ---
 # <a name="compiler-warning-level-1-c4581"></a>컴파일러 경고(수준 1) C4581
 
 사용 되지 않는 동작: ' "string1" '이 (가) ' n a l l '로 바뀌어 특성을 처리
 
-이 오류는 Visual Studio 2005에 대해 수행 된 컴파일러 규칙 작업의 결과로 생성 될 수 있습니다. 시각적 C++ 특성에 대 한 매개 변수 검사입니다.
+이 오류는 Visual Studio 2005에 대해 수행 된 컴파일러 규칙 작업의 결과로 생성 될 수 있습니다. Visual C++ 특성에 대 한 매개 변수 검사입니다.
 
 이전 버전에서 특성 값은 따옴표로 묶여 있는지 여부에 관계 없이 수락 되었습니다. 값이 열거형 인 경우 따옴표로 묶지 않아야 합니다.
 

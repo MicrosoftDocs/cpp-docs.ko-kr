@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 3) C4641'
 title: 컴파일러 경고(수준 3) C4641
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4641
 ms.assetid: 28fe5c3e-6039-42da-9100-1312b5b15aea
-ms.openlocfilehash: 1e3eab6e96e829e3c3fd9304e757ba653e8f19b4
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 4b1111075b4cf375ef102899f0971773080f33ba
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991812"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332173"
 ---
 # <a name="compiler-warning-level-3-c4641"></a>컴파일러 경고(수준 3) C4641
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: Module 클래스'
 title: Module 클래스
 ms.date: 10/18/2018
 ms.topic: reference
@@ -43,12 +44,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Module::UnregisterObjects method
 - Microsoft::WRL::Module::UnregisterWinRTObject method
 ms.assetid: dd67e3b8-c2e1-4f53-8c0f-565a140ba649
-ms.openlocfilehash: f7930247c979c111a7f4798e35ebe7aa95209f37
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 00063bca4d35ca2d7eab09ad9d03d57dcdc85593
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225750"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97186391"
 ---
 # <a name="module-class"></a>Module 클래스
 
@@ -84,7 +85,7 @@ Name                                                                            
 
 ### <a name="public-constructors"></a>Public 생성자
 
-Name                             | 설명
+이름                             | 설명
 -------------------------------- | -----------------------------------------------------------
 [Module:: ~ Module](#tilde-module) | 클래스의 현재 인스턴스를 초기화 `Module` 합니다.
 
@@ -126,7 +127,7 @@ Name                                         | 설명
 [Module:: objectCount_](#objectcount)         | [는 함수를](make-function.md) 사용 하 여 만든 클래스의 수를 추적 합니다.
 [Module:: releaseNotifier_](#releasenotifier) | 개체에 대 한 포인터를 보유 `ReleaseNotifier` 합니다.
 
-### <a name="macros"></a>매크로
+### <a name="macros"></a>Macros
 
 Name                                                                   | 설명
 ---------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -148,7 +149,7 @@ Name                                                                   | 설명
 
 **네임스페이스:** Microsoft::WRL
 
-## <a name="modulemodule"></a><a name="tilde-module"></a>Module:: ~ Module
+## <a name="modulemodule"></a><a name="tilde-module"></a> Module:: ~ Module
 
 클래스의 현재 인스턴스를 초기화 `Module` 합니다.
 
@@ -156,7 +157,7 @@ Name                                                                   | 설명
 virtual ~Module();
 ```
 
-## <a name="modulecreate"></a><a name="create"></a>Module:: Create
+## <a name="modulecreate"></a><a name="create"></a> Module:: Create
 
 모듈의 인스턴스를 만듭니다.
 
@@ -187,11 +188,11 @@ WRL_NOTHROW static Module& Create(
 *방법이*<br/>
 *개체* 와 *메서드* 매개 변수는 함께 사용 됩니다. 모듈의 마지막 인스턴스 개체가 해제 될 때 마지막 인스턴스 개체의 메서드를 가리킵니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 모듈에 대 한 참조입니다.
 
-## <a name="moduledecrementobjectcount"></a><a name="decrementobjectcount"></a>모듈::D ecrementObjectCount
+## <a name="moduledecrementobjectcount"></a><a name="decrementobjectcount"></a> 모듈::D ecrementObjectCount
 
 모듈에서 추적하는 개체 수를 줄입니다.
 
@@ -199,11 +200,11 @@ WRL_NOTHROW static Module& Create(
 virtual long DecrementObjectCount();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 감소 작업 전 수입니다.
 
-## <a name="modulegetactivationfactory"></a><a name="getactivationfactory"></a>Module:: GetActivationFactory
+## <a name="modulegetactivationfactory"></a><a name="getactivationfactory"></a> Module:: GetActivationFactory
 
 모듈에 대한 활성화 팩터리를 가져옵니다.
 
@@ -223,14 +224,14 @@ WRL_NOTHROW HRESULT GetActivationFactory(
 *ppIFactory*<br/>
 지정된 런타임 클래스에 대한 IActivationFactory입니다.
 
-*서버*<br/>
+*serverName*<br/>
 현재 모듈의 클래스 팩터리 하위 집합 이름입니다. [ActivatableClassWithFactoryEx](activatableclass-macros.md) 매크로에 사용 되는 서버 이름을 지정 하거나를 지정 **`nullptr`** 하 여 기본 서버 이름을 가져옵니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 S_OK이고, 그렇지 않으면 GetActivationFactory에서 반환된 HRESULT입니다.
 
-## <a name="modulegetclassobject"></a><a name="getclassobject"></a>Module:: GetClassObject
+## <a name="modulegetclassobject"></a><a name="getclassobject"></a> Module:: GetClassObject
 
 클래스 팩터리의 캐시를 가져옵니다.
 
@@ -254,16 +255,16 @@ HRESULT GetClassObject(
 *ppv*<br/>
 반환된 개체에 대한 포인터입니다.
 
-*서버*<br/>
+*serverName*<br/>
 , 또는 매크로 중 하나에 지정 된 서버 `ActivatableClassWithFactory` 이름 `ActivatableClassWithFactoryEx` 이거나, `ActivatableClass` **`nullptr`** 기본 서버 이름을 가져오려면입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
 Windows 런타임 아닌 COM에만이 메서드를 사용 합니다. 이 메서드는 `IClassFactory` 메서드만 노출 합니다.
 
-## <a name="modulegetmodule"></a><a name="getmodule"></a>Module:: GetModule
+## <a name="modulegetmodule"></a><a name="getmodule"></a> Module:: GetModule
 
 모듈의 인스턴스를 만듭니다.
 
@@ -272,11 +273,11 @@ static Module& GetModule();
 WRL_NOTHROW static Module& GetModule();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 모듈에 대한 참조입니다.
 
-## <a name="modulegetobjectcount"></a><a name="getobjectcount"></a>Module:: GetObjectCount
+## <a name="modulegetobjectcount"></a><a name="getobjectcount"></a> Module:: GetObjectCount
 
 이 모듈에서 관리되는 개체 수를 가져옵니다.
 
@@ -284,11 +285,11 @@ WRL_NOTHROW static Module& GetModule();
 virtual long GetObjectCount() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 모듈에서 관리되는 현재 개체 수입니다.
 
-## <a name="moduleincrementobjectcount"></a><a name="incrementobjectcount"></a>Module:: IncrementObjectCount
+## <a name="moduleincrementobjectcount"></a><a name="incrementobjectcount"></a> Module:: IncrementObjectCount
 
 모듈에서 추적하는 개체 수를 늘립니다.
 
@@ -296,11 +297,11 @@ virtual long GetObjectCount() const;
 virtual long IncrementObjectCount();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 증가 연산 전 수입니다.
 
-## <a name="modulemodule"></a><a name="module"></a>Module:: Module
+## <a name="modulemodule"></a><a name="module"></a> Module:: Module
 
 `Module` 클래스의 새 인스턴스를 초기화합니다.
 
@@ -312,7 +313,7 @@ Module();
 
 이 생성자는 protected 이며 키워드를 사용 하 여 호출할 수 없습니다 **`new`** . 대신 [module:: GetModule](#getmodule) 또는 [Module:: Create](#create)를 호출 합니다.
 
-## <a name="moduleobjectcount_"></a><a name="objectcount"></a>Module:: objectCount_
+## <a name="moduleobjectcount_"></a><a name="objectcount"></a> Module:: objectCount_
 
 [는 함수를](make-function.md) 사용 하 여 만든 클래스의 수를 추적 합니다.
 
@@ -320,7 +321,7 @@ Module();
 volatile long objectCount_;
 ```
 
-## <a name="moduleregistercomobject"></a><a name="registercomobject"></a>Module:: RegisterCOMObject
+## <a name="moduleregistercomobject"></a><a name="registercomobject"></a> Module:: RegisterCOMObject
 
 다른 애플리케이션이 COM 개체에 연결할 수 있도록 이 개체를 하나 이상 등록합니다.
 
@@ -335,7 +336,7 @@ WRL_NOTHROW virtual HRESULT RegisterCOMObject(
 
 ### <a name="parameters"></a>매개 변수
 
-*서버*<br/>
+*serverName*<br/>
 서버의 정규화된 이름입니다.
 
 *clsid*<br/>
@@ -350,7 +351,7 @@ WRL_NOTHROW virtual HRESULT RegisterCOMObject(
 *count*<br/>
 등록할 CLSID 수입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공할 경우 S_OK이고, 그렇지 않으면 작업에 실패한 이유를 나타내는 CO_E_OBJISREG와 같은 HRESULT가 발생합니다.
 
@@ -360,7 +361,7 @@ COM 개체는 CLSCTX 열거형의 CLSCTX_LOCAL_SERVER 열거자를 사용하여 
 
 등록 된 개체에 대 한 연결 형식은 현재 *comflag* 템플릿 매개 변수와 regcls 열거형의 REGCLS_SUSPENDED 열거자를 조합 하 여 지정 합니다.
 
-## <a name="moduleregisterobjects"></a><a name="registerobjects"></a>Module:: RegisterObjects
+## <a name="moduleregisterobjects"></a><a name="registerobjects"></a> Module:: RegisterObjects
 
 다른 응용 프로그램이 해당 개체에 연결할 수 있도록 COM 또는 Windows 런타임 개체를 등록 합니다.
 
@@ -375,14 +376,14 @@ HRESULT RegisterObjects(
 *모듈*<br/>
 COM 또는 Windows 런타임 개체의 배열입니다.
 
-*서버*<br/>
+*serverName*<br/>
 개체를 생성한 서버의 이름입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 시 S_OK이고, 그렇지 않으면 작업이 실패한 이유를 나타내는 HRESULT입니다.
 
-## <a name="moduleregisterwinrtobject"></a><a name="registerwinrtobject"></a>Module:: RegisterWinRTObject
+## <a name="moduleregisterwinrtobject"></a><a name="registerwinrtobject"></a> Module:: RegisterWinRTObject
 
 다른 응용 프로그램에서 연결할 수 있도록 하나 이상의 Windows 런타임 개체를 등록 합니다.
 
@@ -395,7 +396,7 @@ HRESULT RegisterWinRTObject(const wchar_t* serverName,
 
 ### <a name="parameters"></a>매개 변수
 
-*서버*<br/>
+*serverName*<br/>
 이 작업으로 영향을 받는 개체의 하위 집합을 지정하는 이름입니다.
 
 *activatableClassIds*<br/>
@@ -407,11 +408,11 @@ HRESULT RegisterWinRTObject(const wchar_t* serverName,
 *count*<br/>
 등록할 개체의 수입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 S_OK이고 그렇지 않으면 작업에 실패한 이유를 나타내는 CO_E_OBJISREG와 같은 HRESULT 오류가 발생합니다.
 
-## <a name="modulereleasenotifier_"></a><a name="releasenotifier"></a>Module:: releaseNotifier_
+## <a name="modulereleasenotifier_"></a><a name="releasenotifier"></a> Module:: releaseNotifier_
 
 개체에 대 한 포인터를 보유 `ReleaseNotifier` 합니다.
 
@@ -419,7 +420,7 @@ HRESULT RegisterWinRTObject(const wchar_t* serverName,
 ReleaseNotifier *releaseNotifier_;
 ```
 
-## <a name="moduleterminate"></a><a name="terminate"></a>Module:: Terminate
+## <a name="moduleterminate"></a><a name="terminate"></a> Module:: Terminate
 
 모듈에 의해 인스턴스화되는 모든 팩터리가 종료됩니다.
 
@@ -431,7 +432,7 @@ void Terminate();
 
 캐시에서 팩터리를 해제합니다.
 
-## <a name="moduleunregistercomobject"></a><a name="unregistercomobject"></a>Module:: UnregisterCOMObject
+## <a name="moduleunregistercomobject"></a><a name="unregistercomobject"></a> Module:: UnregisterCOMObject
 
 다른 애플리케이션에서 COM 개체에 연결할 수 없도록 하나 이상의 COM 개체의 등록을 취소합니다.
 
@@ -444,7 +445,7 @@ virtual HRESULT UnregisterCOMObject(
 
 ### <a name="parameters"></a>매개 변수
 
-*서버*<br/>
+*serverName*<br/>
 (사용되지 않음)
 
 *쿠키*<br/>
@@ -453,11 +454,11 @@ virtual HRESULT UnregisterCOMObject(
 *count*<br/>
 등록 취소할 클래스 수입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 작업에 성공하면 S_OK이고, 그렇지 않으면 작업에 실패한 이유를 나타내는 HRESULT 오류가 발생합니다.
 
-## <a name="moduleunregisterobjects"></a><a name="unregisterobjects"></a>Module:: UnregisterObjects
+## <a name="moduleunregisterobjects"></a><a name="unregisterobjects"></a> Module:: UnregisterObjects
 
 다른 애플리케이션에서 지정된 모듈의 개체에 연결할 수 없도록 이 개체의 등록을 취소합니다.
 
@@ -472,14 +473,14 @@ HRESULT UnregisterObjects(
 *모듈*<br/>
 모듈에 대한 포인터입니다.
 
-*서버*<br/>
+*serverName*<br/>
 이 작업으로 영향을 받는 개체의 하위 집합을 지정하는 정규화 이름입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 작업에 성공하면 S_OK이고, 그렇지 않으면 이 작업에 실패한 이유를 나타내는 HRESULT 오류가 발생합니다.
 
-## <a name="moduleunregisterwinrtobject"></a><a name="unregisterwinrtobject"></a>Module:: UnregisterWinRTObject
+## <a name="moduleunregisterwinrtobject"></a><a name="unregisterwinrtobject"></a> Module:: UnregisterWinRTObject
 
 다른 응용 프로그램에서 다른 응용 프로그램에 연결할 수 없도록 하나 이상의 Windows 런타임 개체의 등록을 취소 합니다.
 

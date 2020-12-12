@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 링커 도구 오류 LNK2017'
 title: 링커 도구 오류 LNK2017
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK2017
 ms.assetid: f7c21733-b0fb-4888-a295-9b453ba6ee77
-ms.openlocfilehash: 02e80de5c34809a331003f3b0fb28d32e138a531
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e4215d7c1730f85f43c2440163fa03ad97c741e5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80194735"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338454"
 ---
 # <a name="linker-tools-error-lnk2017"></a>링커 도구 오류 LNK2017
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: ATL 데이터베이스 클래스 (OLE DB 템플릿)'
 title: ATL 데이터베이스 클래스(OLE DB 템플릿)
 ms.date: 05/02/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - database classes [C++], OLE DB
 - database classes [C++], ATL
 ms.assetid: 219766aa-e18a-405f-9e36-d7a0fdb31b2b
-ms.openlocfilehash: 5b13a27540b12e7ac1503fbf7cd0e1fe396ce8c8
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: a9cc532a0b49f591cd08c70c398f8a37c08071ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91501893"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97213223"
 ---
 # <a name="atl-database-classes-ole-db-templates"></a>ATL 데이터베이스 클래스(OLE DB 템플릿)
 

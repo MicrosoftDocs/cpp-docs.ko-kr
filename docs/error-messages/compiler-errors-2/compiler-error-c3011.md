@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3011'
 title: 컴파일러 오류 C3011
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3011
 ms.assetid: 24c3a917-ebff-4deb-9155-23adf6468531
-ms.openlocfilehash: b5c9ffffaf934815912bcf103bbe75869f84ce1f
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 3a8591ad528c68bb5d072049e2b85567699fc5c8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756177"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97286035"
 ---
 # <a name="compiler-error-c3011"></a>컴파일러 오류 C3011
 

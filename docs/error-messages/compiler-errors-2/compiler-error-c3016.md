@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3016'
 title: 컴파일러 오류 C3016
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3016
 ms.assetid: 3423467e-e8bb-4f35-b4db-7925cafa74c1
-ms.openlocfilehash: 728d6042b192e0c309f8e9a6e473108f23dbbdf9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e45425946993caa43cfaf1a19730ef5414a6f2d5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232081"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97285866"
 ---
 # <a name="compiler-error-c3016"></a>컴파일러 오류 C3016
 

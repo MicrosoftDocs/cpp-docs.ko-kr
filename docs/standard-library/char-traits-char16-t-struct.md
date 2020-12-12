@@ -1,4 +1,5 @@
 ---
+description: Char_traits &lt; char16_t Struct에 대해 자세히 알아보세요. &gt;
 title: char_traits&lt;char16_t&gt; 구조체
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - char_traits<char16_t> class
 ms.assetid: 5daf3b62-dd6e-451f-b189-0350a04ff966
-ms.openlocfilehash: 53a77ff993d3a99cae1ec8e48a06dd7800ce74c7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2ad725b514d6804edfdea6d4ba72c2cfd44c4f21
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230222"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325264"
 ---
 # <a name="char_traitsltchar16_tgt-struct"></a>char_traits&lt;char16_t&gt; 구조체
 
-형식의 요소에 대 한 템플릿 구조체 **char_traits \<CharType> ** 의 특수화 인 구조체입니다 **`char16_t`** .
+형식의 요소에 대 한 템플릿 구조체 **char_traits \<CharType>** 의 특수화 인 구조체입니다 **`char16_t`** .
 
 ## <a name="syntax"></a>구문
 

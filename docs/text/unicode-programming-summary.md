@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 유니코드 프로그래밍 요약'
 title: 유니코드 프로그래밍 요약
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Unicode [C++], programming with
 - Unicode [C++], MFC and C run-time functions
 ms.assetid: a4c9770f-6c9c-447c-996b-980920288bed
-ms.openlocfilehash: 5095e1c58db3e5c35eb9215367f2fbb064bc228a
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: fe07aa4ff57e8dbf92377d54820adf8463d98211
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504710"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306627"
 ---
 # <a name="unicode-programming-summary"></a>유니코드 프로그래밍 요약
 
@@ -26,7 +27,7 @@ ms.locfileid: "91504710"
 
 - 이식 가능한 런타임 함수 및 형식을 사용 합니다.
 
-   유니코드 문자열 처리에 적절 한 C 런타임 함수를 사용 합니다. `wcs`함수 패밀리를 사용할 수 있지만 완전히 이식 가능한 (국제적으로 설정 된) 매크로를 사용 하는 것이 좋습니다 `_TCHAR` . 이러한 매크로는 모두 접두사로 사용 되며 `_tcs` `str` 함수 패밀리에 대해 하나를 대체 합니다. 이러한 함수는 *런타임 라이브러리 참조*의 [국제화](../c-runtime-library/internationalization.md) 섹션에 자세히 설명 되어 있습니다. 자세한 내용은 [tchar.h의 제네릭 텍스트 매핑](../text/generic-text-mappings-in-tchar-h.md)을 참조 하세요.
+   유니코드 문자열 처리에 적절 한 C 런타임 함수를 사용 합니다. `wcs`함수 패밀리를 사용할 수 있지만 완전히 이식 가능한 (국제적으로 설정 된) 매크로를 사용 하는 것이 좋습니다 `_TCHAR` . 이러한 매크로는 모두 접두사로 사용 되며 `_tcs` `str` 함수 패밀리에 대해 하나를 대체 합니다. 이러한 함수는 *런타임 라이브러리 참조* 의 [국제화](../c-runtime-library/internationalization.md) 섹션에 자세히 설명 되어 있습니다. 자세한 내용은 [tchar.h의 제네릭 텍스트 매핑](../text/generic-text-mappings-in-tchar-h.md)을 참조 하세요.
 
    `_TCHAR`및 [유니코드 지원](../text/support-for-unicode.md)에 설명 된 관련 이식 가능한 데이터 형식을 사용 합니다.
 

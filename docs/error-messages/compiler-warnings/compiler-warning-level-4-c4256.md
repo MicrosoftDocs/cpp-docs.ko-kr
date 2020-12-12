@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4256'
 title: 컴파일러 경고(수준 4) C4256
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - C4256
 ms.assetid: a755a32e-895a-4837-a2b5-4ea06b736798
-ms.openlocfilehash: 1ec3e64548cead53cea906cdf2abd3dd25ee06d4
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 3ccd8447f930f40df5e488714cdcfb52e54d9928
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991391"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97189303"
 ---
 # <a name="compiler-warning-level-4-c4256"></a>컴파일러 경고(수준 4) C4256
 
-' function ': 가상 베이스가 있는 클래스의 생성자에는 ' ... ';이 (가) 있습니다. 호출이 이전 버전의 시각적 개체와 호환 되지 않을 수 있습니다.C++
+' function ': 가상 베이스가 있는 클래스의 생성자에는 ' ... ';이 (가) 있습니다. 호출은 이전 버전의와 호환 되지 않을 수 있습니다 Visual C++
 
 호환 되지 않을 수 있습니다.
 
-다음 코드 예를 살펴보십시오. 버전 7 이전 버전의 Microsoft C++ 컴파일러를 사용 하 여 생성자 S2:: S2 (int i, ...)의 정의를 컴파일 했지만 다음 예제를 현재 버전을 사용 하 여 컴파일하면 특수 한 대/소문자 호출 규칙 변경으로 인해 s 3의 생성자 호출이 제대로 작동 하지 않습니다. 두 항목이 모두 Visual C++ 6.0을 사용해서 컴파일된 경우, 줄임표에 대해 전달된 매개 변수가 없지 않은 한 어느 항목에서도 호출이 올바르게 작동하지 않습니다.
+다음 코드 예제를 생각해보세요. 버전 7 이전의 Microsoft c + + 컴파일러 버전을 사용 하 여 생성자 S2:: S2 (int i, ...)의 정의를 컴파일 했지만 현재 버전을 사용 하 여 다음 예제를 컴파일하면 특수 한 대/소문자 호출 규칙 변경으로 인해 s 3의 생성자 호출이 제대로 작동 하지 않습니다. 두 항목이 모두 Visual C++ 6.0을 사용해서 컴파일된 경우, 줄임표에 대해 전달된 매개 변수가 없지 않은 한 어느 항목에서도 호출이 올바르게 작동하지 않습니다.
 
 이 경고를 해결 하려면
 

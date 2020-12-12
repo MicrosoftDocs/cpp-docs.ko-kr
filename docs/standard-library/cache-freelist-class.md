@@ -1,4 +1,5 @@
 ---
+description: Cache_freelist 클래스에 대해 자세히 알아보세요.
 title: cache_freelist 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - stdext::cache_freelist [C++], allocate
 - stdext::cache_freelist [C++], deallocate
 ms.assetid: 840694de-36ba-470f-8dae-2b723d5a8cd9
-ms.openlocfilehash: bbe0ff0f2297afcec99bd162ebe6a6d3e10f9bce
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 9d5b3da272cff39b0c9d7d69df2c744d6952cd03
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88560728"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325384"
 ---
 # <a name="cache_freelist-class"></a>cache_freelist 클래스
 
@@ -38,7 +39,7 @@ class cache_freelist
 
 ## <a name="remarks"></a>설명
 
-Cache_freelist 클래스 템플릿은 *Sz*크기의 메모리 블록에 대 한 무료 목록을 유지 관리 합니다. 사용 가능한 목록이 꽉 차면 **operator delete** 를 사용 하 여 메모리 블록의 할당을 취소 합니다. 사용 가능한 목록이 비어 있는 경우 **operator new** 를 사용 하 여 새 메모리 블록을 할당 합니다. 사용 가능한 목록의 최대 크기는 *max* 매개 변수에 전달 된 최대 클래스 클래스에 의해 결정 됩니다.
+Cache_freelist 클래스 템플릿은 *Sz* 크기의 메모리 블록에 대 한 무료 목록을 유지 관리 합니다. 사용 가능한 목록이 꽉 차면 **operator delete** 를 사용 하 여 메모리 블록의 할당을 취소 합니다. 사용 가능한 목록이 비어 있는 경우 **operator new** 를 사용 하 여 새 메모리 블록을 할당 합니다. 사용 가능한 목록의 최대 크기는 *max* 매개 변수에 전달 된 최대 클래스 클래스에 의해 결정 됩니다.
 
 각 메모리 블록은 사용 가능한 메모리의 *Sz* 바이트와 **operator new** 및 **operator delete** 에 필요한 데이터를 포함 합니다.
 
@@ -74,7 +75,7 @@ void *allocate(std::size_t count);
 *수*\
 할당할 배열의 요소 수입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 할당된 개체에 대한 포인터입니다.
 

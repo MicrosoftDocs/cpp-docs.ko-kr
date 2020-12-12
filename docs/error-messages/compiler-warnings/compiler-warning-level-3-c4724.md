@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 3) C4724'
 title: 컴파일러 경고(수준 3) C4724
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4724
 ms.assetid: 3be4305b-e8fe-49a9-abbf-b20dfbd71a19
-ms.openlocfilehash: 64425333fb8b89127b92e906c93d17c26fe25cdf
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: dcc0c207983f8af5ecbc2eb59c15714cee49c8a6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80174078"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332154"
 ---
 # <a name="compiler-warning-level-3-c4724"></a>컴파일러 경고(수준 3) C4724
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: TCHAR.H 사용 _MBCS 코드를 포함 하는 H 데이터 형식'
 title: _MBCS 코드와 TCHAR.H 데이터 형식 사용
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - TCHAR.H data types, mapping
 - mappings [C++], TCHAR.H
 ms.assetid: 298583c5-22c3-40f6-920e-9ec96d42abd8
-ms.openlocfilehash: dd43c29d77c3351e8f597b474c4756ad3d45ef2b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4672ba210e0df0af1a4f4ee106d31cc978bdf2fc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215363"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306588"
 ---
 # <a name="using-tcharh-data-types-with-_mbcs-code"></a>_MBCS 코드와 TCHAR.H 데이터 형식 사용
 
@@ -61,7 +62,7 @@ ms.locfileid: "87215363"
     #define _tcschr _mbschr
     ```
 
-   이 방법을 사용 하는 경우 문자열 인수 및 문자열 반환 값에 적절 한 데이터 형식을 사용 하도록 주의 해야 합니다. 형식 캐스팅을 사용하여 적절한 형식 일치를 보장하거나 `_TXCHAR` 일반 텍스트 데이터 형식을 사용할 수 있습니다. `_TXCHAR`**`char`** SBCS 코드의 형식에 매핑되고 **`unsigned char`** MBCS 코드의 형식에 매핑됩니다. 일반 텍스트 매크로에 대 한 자세한 내용은 *런타임 라이브러리 참조*에서 [일반 텍스트 매핑](../c-runtime-library/generic-text-mappings.md) 을 참조 하세요.
+   이 방법을 사용 하는 경우 문자열 인수 및 문자열 반환 값에 적절 한 데이터 형식을 사용 하도록 주의 해야 합니다. 형식 캐스팅을 사용하여 적절한 형식 일치를 보장하거나 `_TXCHAR` 일반 텍스트 데이터 형식을 사용할 수 있습니다. `_TXCHAR`**`char`** SBCS 코드의 형식에 매핑되고 **`unsigned char`** MBCS 코드의 형식에 매핑됩니다. 일반 텍스트 매크로에 대 한 자세한 내용은 *런타임 라이브러리 참조* 에서 [일반 텍스트 매핑](../c-runtime-library/generic-text-mappings.md) 을 참조 하세요.
 
 ## <a name="see-also"></a>참고 항목
 

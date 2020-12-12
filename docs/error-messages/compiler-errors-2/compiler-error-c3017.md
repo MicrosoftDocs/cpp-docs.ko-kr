@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3017'
 title: 컴파일러 오류 C3017
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3017
 ms.assetid: 12ab2c2a-d0d2-4900-9cbf-39be0af590dd
-ms.openlocfilehash: 34347abffd91246ada080d19fee88ee09c8fce99
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bbfffbb9d9f9b0c34dbf0dab57c28d7fd6892fd9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232068"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97285840"
 ---
 # <a name="compiler-error-c3017"></a>컴파일러 오류 C3017
 

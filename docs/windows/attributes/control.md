@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 컨트롤'
 title: control (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Control attribute
 ms.assetid: 3d046bb2-4afe-4cb8-a762-233b296e1975
-ms.openlocfilehash: 14ceb3ce51396efefe77404e8f18a36a7d7a4825
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 80148c636e14e7d19bec784b411944c44993ee15
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844160"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306406"
 ---
 # <a name="control"></a>제어
 

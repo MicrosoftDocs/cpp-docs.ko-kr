@@ -1,15 +1,16 @@
-﻿---
+---
+description: '자세한 정보: 컴파일러 제한'
 title: 컴파일러 한계
 ms.date: 05/06/2019
 helpviewer_keywords:
 - cl.exe compiler, limits for language constructs
 ms.assetid: f1fa59c6-55b4-414b-80c5-3df72952160d
-ms.openlocfilehash: e0e2381d88c727466b06a97c72826d2d5e15a87b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7471b6e161f6e1f1466fdc27266249cefc17f7ca
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233771"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318158"
 ---
 # <a name="compiler-limits"></a>컴파일러 한계
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: _com_error:: Error'
 title: _com_error::Error
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - Error method [C++]
 ms.assetid: b53a15fd-198e-4276-afcd-13439c4807f7
-ms.openlocfilehash: 8e2c52d10b15822703329dcea18944773f5784ea
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 25dd78caeada9e7606bc26f241126b0d0f510f4c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80180760"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318197"
 ---
 # <a name="_com_errorerror"></a>_com_error::Error
 
@@ -26,16 +27,16 @@ ms.locfileid: "80180760"
 HRESULT Error( ) const throw( );
 ```
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 
 생성자에 전달 된 원시 HRESULT 항목입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
-`_com_error` 개체의 캡슐화 된 HRESULT 항목을 검색 합니다.
+개체의 캡슐화 된 HRESULT 항목을 검색 `_com_error` 합니다.
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [_com_error 클래스](../cpp/com-error-class.md)

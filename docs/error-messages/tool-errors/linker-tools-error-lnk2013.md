@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 링커 도구 오류 LNK2013'
 title: 링커 도구 오류 LNK2013
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK2013
 ms.assetid: 21408e2d-3f56-4d1f-a031-00df70785ed4
-ms.openlocfilehash: 6ad3f40f06e64422b393edb457a0dcf419828b6f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 51b754e19656ad8ec7ef1686605086b6e4a41853
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80194748"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338464"
 ---
 # <a name="linker-tools-error-lnk2013"></a>링커 도구 오류 LNK2013
 
@@ -27,4 +28,4 @@ ms.locfileid: "80194748"
 
 - 정적 함수를 포함 하는 코드 섹션의 이름을 호출자와 동일 하 게 바꿉니다.
 
-`DUMPBIN /SYMBOLS`를 사용 하 여 함수가 정적 인지 확인 합니다.
+`DUMPBIN /SYMBOLS`함수가 정적 인지 확인 하려면를 사용 합니다.

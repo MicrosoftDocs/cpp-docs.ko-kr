@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: &lt; cerrno&gt;'
 title: '&lt;cerrno&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,24 +7,24 @@ f1_keywords:
 helpviewer_keywords:
 - cerrno header
 ms.assetid: c618f95c-ad4b-4a6f-825b-8727322ec77a
-ms.openlocfilehash: 1186a1e3c58c34de53f7a9835eaf9fd188593301
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 07f853f132c6ee3eed83fe67c9e451138f0ab301
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68455505"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325304"
 ---
 # <a name="ltcerrnogt"></a>&lt;cerrno&gt;
 
-C 표준 라이브러리 헤더 \<errno>를 포함하고 `std` 네임스페이스에 연결된 이름을 추가합니다. 이 헤더를 포함하면 C 표준 라이브러리 헤더의 외부 링크를 사용하여 선언한 이름이 `std` 네임스페이스에 선언됩니다.
+C 표준 라이브러리 헤더를 포함 \<errno.h> 하 고 네임 스페이스에 연결 된 이름을 추가 합니다 `std` . 이 헤더를 포함 하면 C 표준 라이브러리 헤더의 외부 링크를 사용 하 여 선언한 이름이 네임 스페이스에 선언 됩니다 `std` .
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 #include <cerrno>
 ```
 
-## <a name="macros"></a>매크로
+## <a name="macros"></a>Macros
 
 ```cpp
 #define errno
@@ -111,8 +112,8 @@ C 표준 라이브러리 헤더 \<errno>를 포함하고 `std` 네임스페이�
 
 여기에 포함 된 매크로는 POSIX 표준에 의해 정의 됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
-[C++ 표준 라이브러리 개요](../standard-library/cpp-standard-library-overview.md)\
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[C + + 표준 라이브러리 개요](../standard-library/cpp-standard-library-overview.md)\
+[C + + 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)
