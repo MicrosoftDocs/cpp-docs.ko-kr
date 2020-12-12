@@ -1,15 +1,16 @@
 ---
+description: '다음에 대 한 자세한 정보: steady_clock 구조체'
 title: steady_clock 구조체
 ms.date: 05/22/2018
 f1_keywords:
 - chrono/std::chrono::steady_clock
 ms.assetid: 970d12ec-fc80-4391-a2f7-b57b2aec668d
-ms.openlocfilehash: d21d5c2ed7ed667333007f3bd12d13f47b868380
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 066a98f4eba6670e640e9fcc9b79eb017859a3d2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217404"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97169075"
 ---
 # <a name="steady_clock-struct"></a>steady_clock 구조체
 
@@ -25,9 +26,9 @@ struct steady_clock;
 
 Windows에서 `steady_clock` 함수를 래핑합니다 `QueryPerformanceCounter` .
 
-`now`에 대한 첫 번째 호출에서 반환되는 값이 항상 `now`에 대한 순차적 호출에서 반환되는 값보다 작거나 같을 경우 클록은 *monotonic*입니다. 클록이 *monotonic*이고 클록 틱간 시간이 지속적이면 해당 클록은 *steady*입니다.
+`now`에 대한 첫 번째 호출에서 반환되는 값이 항상 `now`에 대한 순차적 호출에서 반환되는 값보다 작거나 같을 경우 클록은 *단조* 입니다. 클록이 *단조* 이고 클록 틱 간 시간이 지속적이면 해당 클록은 *지속* 입니다.
 
-`high_resolution_clock`는에 대 한 typedef입니다 `steady_clock` .
+`high_resolution_clock` 는에 대 한 typedef입니다 `steady_clock` .
 
 ### <a name="public-typedefs"></a>Public typedef
 
@@ -48,7 +49,7 @@ Windows에서 `steady_clock` 함수를 래핑합니다 `QueryPerformanceCounter`
 
 |Name|설명|
 |----------|-----------------|
-|`steady_clock::is_steady`|보유 **`true`** 합니다. `steady_clock`은 *지속*입니다.|
+|`steady_clock::is_steady`|보유 **`true`** 합니다. `steady_clock`은 *지속* 입니다.|
 
 ## <a name="requirements"></a>요구 사항
 

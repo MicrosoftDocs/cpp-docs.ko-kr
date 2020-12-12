@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: _strupr, _strupr_l, _mbsupr, _mbsupr_l, _wcsupr_l, _wcsupr'
 title: _strupr, _strupr_l, _mbsupr, _mbsupr_l, _wcsupr_l, _wcsupr
 ms.date: 4/2/2020
 api_name:
@@ -70,12 +71,12 @@ helpviewer_keywords:
 - _tcsupr function
 - strings [C++], converting case
 ms.assetid: caac8f16-c233-41b6-91ce-575ec7061b77
-ms.openlocfilehash: c30aa9e1a73ba51931caff726837841f76922139
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: a7de813f13d4a79a394ae369b4385e8e2c6e4e5a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912333"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97117174"
 ---
 # <a name="_strupr-_strupr_l-_mbsupr-_mbsupr_l-_wcsupr_l-_wcsupr"></a>_strupr, _strupr_l, _mbsupr, _mbsupr_l, _wcsupr_l, _wcsupr
 
@@ -139,23 +140,23 @@ unsigned char *_mbsupr_l(
 
 ### <a name="parameters"></a>매개 변수
 
-*문자열*<br/>
+*str*<br/>
 대문자로 변환할 문자열입니다.
 
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 변경된 문자열에 대한 포인터를 반환합니다. 수정은 현재 위치에서 수행되므로 반환되는 포인터는 입력 인수로 전달되는 포인터와 같습니다. 반환 값 없음은 오류를 나타내는 데 예약되어 있습니다.
 
 ## <a name="remarks"></a>설명
 
-**_Strupr** 함수는 현재 자리에서 *str* 의 각 소문자를 대문자로 변환 합니다. 변환은 로캘의 **LC_CTYPE** 범주 설정에 따라 결정 됩니다. 다른 문자는 영향을 받지 않습니다. **LC_CTYPE**에 대 한 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조 하세요. **_L** 접미사가 없는 이러한 함수 버전은 현재 로캘을 사용 합니다. **_l** 접미사가 있는 버전은 전달 된 로캘을 대신 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**_Strupr** 함수는 현재 자리에서 *str* 의 각 소문자를 대문자로 변환 합니다. 변환은 로캘의 **LC_CTYPE** 범주 설정에 따라 결정 됩니다. 다른 문자는 영향을 받지 않습니다. **LC_CTYPE** 에 대 한 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조 하세요. **_L** 접미사가 없는 이러한 함수 버전은 현재 로캘을 사용 합니다. **_l** 접미사가 있는 버전은 전달 된 로캘을 대신 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-**_wcsupr** 및 **_mbsupr** 는 **_strupr**의 와이드 문자 및 멀티 바이트 문자 버전입니다. **_Wcsupr** 의 인수 및 반환 값은 와이드 문자 문자열입니다. **_mbsupr** 의 이러한 문자열은 멀티 바이트 문자열입니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
+**_wcsupr** 및 **_mbsupr** 는 **_strupr** 의 와이드 문자 및 멀티 바이트 문자 버전입니다. **_Wcsupr** 의 인수 및 반환 값은 와이드 문자 문자열입니다. **_mbsupr** 의 이러한 문자열은 멀티 바이트 문자열입니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
 
-*Str* 이 null 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 원래 문자열을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
+*Str* 이 null 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 원래 문자열을 반환 하 고 **errno** 를 **EINVAL** 로 설정 합니다.
 
 C++에서 이러한 함수는 보다 최신의 보안 대응 함수를 호출하는 템플릿 오버로드를 갖고 있습니다. 자세한 내용은 [안전한 템플릿 오버로드](../../c-runtime-library/secure-template-overloads.md)를 참조하세요.
 
@@ -182,8 +183,8 @@ C++에서 이러한 함수는 보다 최신의 보안 대응 함수를 호출하
 
 [_strlwr](strlwr-wcslwr-mbslwr-strlwr-l-wcslwr-l-mbslwr-l.md)의 예제를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Locale](../../c-runtime-library/locale.md)<br/>
+[로캘](../../c-runtime-library/locale.md)<br/>
 [문자열 조작](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [_strlwr, _wcslwr, _mbslwr, _strlwr_l, _wcslwr_l, _mbslwr_l](strlwr-wcslwr-mbslwr-strlwr-l-wcslwr-l-mbslwr-l.md)<br/>

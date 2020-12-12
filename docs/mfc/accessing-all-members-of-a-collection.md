@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 컬렉션의 모든 멤버에 액세스'
 title: 컬렉션의 모든 멤버에 액세스
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - ', '
 - ', '
 ms.assetid: 7bbae518-062e-4393-81f9-b22abd2e5f59
-ms.openlocfilehash: cc058e6e4bf0058adb13f83e7ea071ebb4570ec4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0207c082f17cf1a02da1829d5e04ea3eccae3b40
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214180"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97169582"
 ---
 # <a name="accessing-all-members-of-a-collection"></a>컬렉션의 모든 멤버에 액세스
 

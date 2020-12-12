@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2104'
 title: 컴파일러 오류 C2104
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2104
 ms.assetid: 2ea78896-72a6-4901-a1fa-f33ea88ad61b
-ms.openlocfilehash: 2945f35379f29f2a163e654aae1f682a0914e40e
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 407bb77c3c1fe19410a68a1dc48baf562dc6c5b1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74752225"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170245"
 ---
 # <a name="compiler-error-c2104"></a>컴파일러 오류 C2104
 

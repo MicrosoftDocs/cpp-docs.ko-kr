@@ -1,4 +1,5 @@
 ---
+description: _Interlockedbittestandset 내장 함수에 대해 자세히 알아보세요.
 title: _interlockedbittestandset 내장 함수
 ms.date: 09/02/2019
 f1_keywords:
@@ -21,18 +22,18 @@ helpviewer_keywords:
 - _interlockedbittestandset64 intrinsic
 - lock_bts instruction
 ms.assetid: b1b7e334-53ea-48cf-ba60-5fa3ef51a1fc
-ms.openlocfilehash: 9679abf674b5ef366818e73504c3c8c80c5d8ed7
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: bc1ee5e70c5b892b7c98bb9cb03f75b3baeda268
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217754"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168204"
 ---
 # <a name="_interlockedbittestandset-intrinsic-functions"></a>_interlockedbittestandset 내장 함수
 
 **Microsoft 전용**
 
-주소를 1로 설정 하기 `b` 전에 주소 `a` 비트를 검사 하 고 현재 값을 반환 하는 명령을 생성 합니다.
+`b`주소를 1로 설정 하기 전에 주소 비트를 검사 하 고 현재 값을 반환 하는 명령을 생성 `a` 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -97,11 +98,11 @@ unsigned char _interlockedbittestandset64_HLERelease(
 
 ## <a name="return-value"></a>반환 값
 
-설정 전 위치의 `b` 비트 값입니다.
+설정 전 위치의 비트 값입니다 `b` .
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|헤더|
+|Intrinsic|Architecture|헤더|
 |---------------|------------------|------------|
 |`_interlockedbittestandset`|x86, ARM, x64, ARM64|\<intrin.h>|
 |`_interlockedbittestandset_acq`, `_interlockedbittestandset_nf`, `_interlockedbittestandset_rel`|ARM, ARM64|\<intrin.h>|
@@ -114,7 +115,7 @@ unsigned char _interlockedbittestandset64_HLERelease(
 
 X86 및 x64 프로세서에서 이러한 내장 함수는 `lock bts` 명령을 사용 하 여 지정 된 비트를 읽고 1로 설정 합니다. 이 작업은 원자성 작업입니다.
 
-ARM 및 ARM64 프로세서에서는 임계 영역의 시작 및 끝 `_acq` 과 `_rel` 같이 획득 및 해제 의미 체계에 및 접미사와 함께 내장 함수를 사용 합니다. `_nf` ("No fence") 접미사가 포함 된 ARM 내장 함수는 메모리 장벽으로 작동 하지 않습니다.
+ARM 및 ARM64 프로세서에서는 `_acq` `_rel` 임계 영역의 시작 및 끝과 같이 획득 및 해제 의미 체계에 및 접미사와 함께 내장 함수를 사용 합니다. `_nf`("No fence") 접미사가 포함 된 ARM 내장 함수는 메모리 장벽으로 작동 하지 않습니다.
 
 HLE(Hardware Lock Elision) 명령을 지원하는 Intel 프로세서에서 `_HLEAcquire` 및 `_HLERelease` 접미사가 포함된 내장 함수는 하드웨어에서 잠금 쓰기 단계를 제거하여 성능을 향상시킬 수 있는 힌트를 프로세서에 포함합니다. HLE을 지원 하지 않는 프로세서에서 이러한 내장 함수를 호출 하면 힌트가 무시 됩니다.
 
@@ -122,7 +123,7 @@ HLE(Hardware Lock Elision) 명령을 지원하는 Intel 프로세서에서 `_HLE
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)\
-[x86 컴파일러와 충돌](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)
+[X86 컴파일러와 충돌](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

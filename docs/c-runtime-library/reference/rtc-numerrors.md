@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _RTC_NumErrors'
 title: _RTC_NumErrors
 ms.date: 11/04/2016
 api_name:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - _RTC_NumErrors function
 - RTC_NumErrors function
 ms.assetid: 7e82adae-38e2-4f8b-bc0b-37bda8109fd1
-ms.openlocfilehash: 0e0af8596dbc7f48bc3f6b996219ec7c7a57749d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: df103f5aada8c896669b82abc1b65621597acf1a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234031"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168711"
 ---
 # <a name="_rtc_numerrors"></a>_RTC_NumErrors
 

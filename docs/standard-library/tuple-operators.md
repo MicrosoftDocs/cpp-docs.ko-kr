@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: &lt; 튜플 &gt; 연산자'
 title: '&lt;tuple&gt; 연산자'
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,12 +10,12 @@ f1_keywords:
 - tuple/std::operator<=
 - tuple/std::operator==
 ms.assetid: f25752dc-d3e2-4e12-b5ac-9a8682ca60ed
-ms.openlocfilehash: 5554f08f32048bafde5bdb2c316e12e1e01c6ffb
-ms.sourcegitcommit: 19016630f9d35f365e9ba249e0f3617515d7ca33
+ms.openlocfilehash: de7c39aead2c1a216e4b7fc8646b92b09bb58dce
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92274625"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168893"
 ---
 # <a name="lttuplegt-operators"></a>&lt;tuple&gt; 연산자
 

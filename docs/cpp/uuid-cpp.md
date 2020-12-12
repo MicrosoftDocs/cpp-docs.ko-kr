@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: uuid (c + +)'
 title: uuid (C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - __declspec keyword [C++], uuid
 - uuid __declspec keyword
 ms.assetid: 9d004621-09bc-4a8d-871b-648f5d5102d7
-ms.openlocfilehash: f775820fe7f84c5081a213ca9ecb07d617716a9d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c841bb1813769ab70e756fe4edb7fd351c1dbc49
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226986"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97116732"
 ---
 # <a name="uuid-c"></a>uuid (C++)
 
@@ -28,7 +29,7 @@ __declspec( uuid("ComObjectGUID") ) declarator
 
 ## <a name="remarks"></a>설명
 
-**`uuid`** 특성은 문자열을 인수로 사용 합니다. 이 문자열은 **{}** 구분 기호를 사용 하거나 사용 하지 않고 일반 레지스트리 형식으로 GUID의 이름을 지정 합니다. 예를 들면 다음과 같습니다.
+**`uuid`** 특성은 문자열을 인수로 사용 합니다. 이 문자열은 **{}** 구분 기호를 사용 하거나 사용 하지 않고 일반 레지스트리 형식으로 GUID의 이름을 지정 합니다. 예를 들어:
 
 ```cpp
 struct __declspec(uuid("00000000-0000-0000-c000-000000000046")) IUnknown;
@@ -44,4 +45,4 @@ struct __declspec(uuid("{00020400-0000-0000-c000-000000000046}")) IDispatch;
 ## <a name="see-also"></a>참조
 
 [__declspec](../cpp/declspec.md)<br/>
-[C++ 키워드](../cpp/keywords-cpp.md)
+[키워드](../cpp/keywords-cpp.md)

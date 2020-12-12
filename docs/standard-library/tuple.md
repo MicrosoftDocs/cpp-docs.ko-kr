@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: &lt; 튜플&gt;'
 title: '&lt;tuple&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - tuple header
 ms.assetid: e4ef5c2d-318b-44f6-8bce-fce4ecd796a3
-ms.openlocfilehash: b1eeba2fced21f5a38799db7fc4af259e03bc266
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 7c9f55866cc723aa6f7414b6a633a3cfbebd625a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841846"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168841"
 ---
 # <a name="lttuplegt"></a>&lt;tuple&gt;
 
@@ -52,7 +53,7 @@ ms.locfileid: "88841846"
 |[연산자>](../standard-library/tuple-operators.md#op_gt)|개체의 비교 `tuple` (보다 큼)|
 |[연산자>=](../standard-library/tuple-operators.md#op_gt_eq)|개체 비교 `tuple` (크거나 같음)|
 
-### <a name="functions"></a>Functions
+### <a name="functions"></a>함수
 
 |Name|설명|
 |-|-|

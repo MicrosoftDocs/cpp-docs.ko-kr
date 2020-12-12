@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: &lt; a m &gt; typedef'
 title: '&lt;sstream&gt; 형식 정의'
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ f1_keywords:
 - iosfwd/std::wstringbuf
 - iosfwd/std::wstringstream
 ms.assetid: d102edd2-ecea-4a35-a398-cf96e58dd422
-ms.openlocfilehash: 9236f652cad85d0bbe9a3a15139ac0dc04937273
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b30eeabfe89c54b7e449d6767e4b047dcc0e1192
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846136"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97169179"
 ---
 # <a name="ltsstreamgt-typedefs"></a>&lt;sstream&gt; 형식 정의
 

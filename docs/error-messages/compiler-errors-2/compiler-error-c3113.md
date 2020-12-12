@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3113'
 title: 컴파일러 오류 C3113
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3113
 ms.assetid: 3afdc668-b29e-474e-9ea3-aa027d42db7c
-ms.openlocfilehash: 067e8b14a0123691ee6368dccaa3ca3f5c763413
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: dcad27e26e0795b8d1901cca51dc5cd16a88ae5c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74760789"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97115991"
 ---
 # <a name="compiler-error-c3113"></a>컴파일러 오류 C3113
 

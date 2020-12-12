@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: Concurrency 네임 스페이스 상수 (AMP)'
 title: Concurrency 네임스페이스 상수(AMP)
 ms.date: 11/04/2016
 f1_keywords:
 - amp/Concurrency::HLSL_MAX_NUM_BUFFERS
 - amp/Concurrency::MODULENAME_MAX_LENGTH
 ms.assetid: 13a8e8cd-2eec-4e60-a91d-5d271072747b
-ms.openlocfilehash: 512c0e30048584ae97a5da14fd5b3304f6888390
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f8a2cd10aa2701bda24f7017704dce59c5609835
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841222"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97122228"
 ---
 # <a name="concurrency-namespace-constants-amp"></a>Concurrency 네임스페이스 상수(AMP)
 

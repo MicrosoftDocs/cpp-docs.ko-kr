@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: &lt; a m&gt;'
 title: '&lt;sstream&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - sstream header
 ms.assetid: 56f55bc5-549d-4e7f-aaad-99e0ffa49c9e
-ms.openlocfilehash: 31a445fcc7deb5e5bade5437058cb36e28dacd40
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5f0c5307073c2296f20df0adb663bce9b4b97d59
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844329"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97169101"
 ---
 # <a name="ltsstreamgt"></a>&lt;sstream&gt;
 
@@ -95,18 +96,18 @@ void swap (
 
 ### <a name="manipulators"></a>조작자
 
-|이름|Description|
+|Name|설명|
 |-|-|
 |[스왑을](../standard-library/sstream-functions.md#sstream_swap)|두 `sstream` 개체 간에 값을 교환합니다.|
 
 ### <a name="classes"></a>클래스
 
-|클래스|Description|
+|클래스|설명|
 |-|-|
 |[basic_stringbuf](../standard-library/basic-stringbuf-class.md)|배열 개체에 저장된 요소의 시퀀스에서 문자 특성이 `Tr` 클래스에 의해 결정되는 `Elem` 형식 요소의 전송을 제어하는 스트림 버퍼에 대해 설명합니다.|
-|[basic_istringstream](../standard-library/basic-istringstream-class.md)|[basic_stringbuf](../standard-library/basic-stringbuf-class.md) < **Elem** **Tr** `Alloc` `Elem` 문자 특성이 클래스에 의해 결정 되 `Tr` 고 해당 요소가 클래스의 할당자에 의해 할당 되는 형식의 요소가 있는 클래스 basic_stringbuf Elem, Tr,>의 스트림 버퍼에서 요소 및 인코드된 개체의 추출을 제어 하는 개체에 대해 설명 합니다 `Alloc` .|
-|[basic_ostringstream](../standard-library/basic-ostringstream-class.md)|[basic_stringbuf](../standard-library/basic-stringbuf-class.md) < **Elem** **Tr** `Alloc` `Elem` 문자 특성이 클래스에 의해 결정 되 `Tr` 고 해당 요소가 클래스의 할당자에 의해 할당 되는 형식의 요소가 있는 클래스 basic_stringbuf Elem, Tr,>의 스트림 버퍼에 요소 및 인코드된 개체 삽입을 제어 하는 개체에 대해 설명 합니다 `Alloc` .|
-|[basic_stringstream](../standard-library/basic-stringstream-class.md)|[basic_stringbuf](../standard-library/basic-stringbuf-class.md) < **Elem** **Tr** `Alloc` `Elem` 문자 특성이 클래스에 의해 결정 되 `Tr` 고 해당 요소가 클래스의 할당자에 의해 할당 되는 형식의 요소가 있는 Elem, Tr,> basic_stringbuf 클래스의 스트림 버퍼를 사용 하 여 요소 및 인코드된 개체의 삽입 및 추출을 제어 하는 개체에 대해 설명 합니다 `Alloc` .|
+|[basic_istringstream](../standard-library/basic-istringstream-class.md)|[](../standard-library/basic-stringbuf-class.md) <   `Alloc` `Elem` 문자 특성이 클래스에 의해 결정 되 `Tr` 고 해당 요소가 클래스의 할당자에 의해 할당 되는 형식의 요소가 있는 클래스 basic_stringbuf Elem, Tr,>의 스트림 버퍼에서 요소 및 인코드된 개체의 추출을 제어 하는 개체에 대해 설명 합니다 `Alloc` .|
+|[basic_ostringstream](../standard-library/basic-ostringstream-class.md)|[](../standard-library/basic-stringbuf-class.md) <   `Alloc` `Elem` 문자 특성이 클래스에 의해 결정 되 `Tr` 고 해당 요소가 클래스의 할당자에 의해 할당 되는 형식의 요소가 있는 클래스 basic_stringbuf Elem, Tr,>의 스트림 버퍼에 요소 및 인코드된 개체 삽입을 제어 하는 개체에 대해 설명 합니다 `Alloc` .|
+|[basic_stringstream](../standard-library/basic-stringstream-class.md)|[](../standard-library/basic-stringbuf-class.md) <   `Alloc` `Elem` 문자 특성이 클래스에 의해 결정 되 `Tr` 고 해당 요소가 클래스의 할당자에 의해 할당 되는 형식의 요소가 있는 Elem, Tr,> basic_stringbuf 클래스의 스트림 버퍼를 사용 하 여 요소 및 인코드된 개체의 삽입 및 추출을 제어 하는 개체에 대해 설명 합니다 `Alloc` .|
 
 ## <a name="requirements"></a>요구 사항
 

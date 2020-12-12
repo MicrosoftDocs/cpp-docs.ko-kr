@@ -1,5 +1,6 @@
 ---
-title: 문서-뷰 아키텍처의 세로
+description: '자세히 알아보기: 문서/뷰 아키텍처의 세로'
+title: Document-View 아키텍처의 세로
 ms.date: 11/04/2016
 helpviewer_keywords:
 - documents [MFC], views
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - document/view architecture [MFC], about document/view architecture
 - views [MFC], accessing document data from
 ms.assetid: 4e7f65dc-b166-45d8-bcd5-9bb0d399b946
-ms.openlocfilehash: 8c7bb4add1ebce62147f0bd5403f693cbec87e91
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e4f8fc636349aaa12ee4481c7f6223c343b6d406
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214193"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97169634"
 ---
 # <a name="a-portrait-of-the-documentview-architecture"></a>문서/뷰 아키텍처에 대한 자세한 설명
 

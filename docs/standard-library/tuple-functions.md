@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: &lt; 튜플 &gt; 함수'
 title: '&lt;tuple&gt; 함수'
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - std::get [C++]
 - std::make_tuple [C++]
 - std::tie [C++]
-ms.openlocfilehash: 46c386ecffb8fbbf7c07d40b334afd91d261ebcf
-ms.sourcegitcommit: 19016630f9d35f365e9ba249e0f3617515d7ca33
+ms.openlocfilehash: cf58cab5f222594a935156cf7e7f2e886639da2b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92274526"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168958"
 ---
 # <a name="lttuplegt-functions"></a>&lt;tuple&gt; 함수
 
@@ -30,7 +31,7 @@ template <class F, class Tuple> constexpr decltype(auto) apply(F&& f, Tuple&& t)
 
 ### <a name="remarks"></a>설명
 
-튜플 *t*를 사용 하 여 *F* 함수를 호출 합니다.
+튜플 *t* 를 사용 하 여 *F* 함수를 호출 합니다.
 
 ## <a name="forward_as_tuple"></a><a name="forward"></a> forward_as_tuple
 
@@ -95,7 +96,7 @@ template <class T, class... Types>
 
 ### <a name="remarks"></a>설명
 
-템플릿 함수는 인덱스 *인덱스*또는 개체의 *T* 형식에 있는 값에 대 한 참조를 반환 합니다 `tuple` .
+템플릿 함수는 인덱스 *인덱스* 또는 개체의 *T* 형식에 있는 값에 대 한 참조를 반환 합니다 `tuple` .
 
 `get<T>(Tuple)` 을 호출할 때 튜플에 T 형식의 요소가 두 개 이상 있거나 없는 경우 컴파일러 오류가 생성됩니다.
 

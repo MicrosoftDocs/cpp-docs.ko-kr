@@ -1,4 +1,5 @@
 ---
+description: _InterlockedCompareExchange 내장 함수에 대해 자세히 알아보세요.
 title: _InterlockedCompareExchange 내장 함수
 ms.date: 09/02/2019
 f1_keywords:
@@ -48,12 +49,12 @@ helpviewer_keywords:
 - InterlockedCompareExchange64_rel intrinsic
 - _InterlockedCompareExchange64_rel intrinsic
 ms.assetid: c3ad79c0-a523-4930-a3a4-69a65d7d5c81
-ms.openlocfilehash: 26dff1c902fff495d5efe45d8da10b1c5da72878
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 10788b5b4e8c8f7ee139dd8810149a49e8978f3c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222048"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168191"
 ---
 # <a name="_interlockedcompareexchange-intrinsic-functions"></a>_InterlockedCompareExchange 내장 함수
 
@@ -181,7 +182,7 @@ __int64 _InterlockedCompareExchange64_rel(
 *대상이*\
 [in, out] 대상 값에 대 한 포인터입니다. 부호는 무시됩니다.
 
-*교환의*\
+*Exchange*\
 진행 Exchange 값입니다. 부호는 무시됩니다.
 
 *비교 피연산자*\
@@ -193,7 +194,7 @@ __int64 _InterlockedCompareExchange64_rel(
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|헤더|
+|Intrinsic|Architecture|헤더|
 |---------------|------------------|------------|
 |`_InterlockedCompareExchange`, `_InterlockedCompareExchange8`, `_InterlockedCompareExchange16`, `_InterlockedCompareExchange64`|x86, ARM, x64, ARM64|\<intrin.h>|
 |`_InterlockedCompareExchange_acq`, `_InterlockedCompareExchange_rel`, `_InterlockedCompareExchange8_acq`, `_InterlockedCompareExchange8_nf`, `_InterlockedCompareExchange8_rel`,`_InterlockedCompareExchange16_acq`, `_InterlockedCompareExchange16_nf`, `_InterlockedCompareExchange16_rel`, `_InterlockedCompareExchange64_acq`, `_InterlockedCompareExchange64_nf`, `_InterlockedCompareExchange64_rel`,|ARM, ARM64|\<intrin.h>|
@@ -202,15 +203,15 @@ __int64 _InterlockedCompareExchange64_rel(
 
 ## <a name="remarks"></a>설명
 
-`_InterlockedCompareExchange`값에 대 한 `Destination` `Comparand` 원자성 비교를 수행 합니다. `Destination` 값이 `Comparand` 값과 같으면 `Exchange`으로 지정된 주소에 `Destination` 값이 저장됩니다. 그렇지 않으면는 작업을 수행 하지 않습니다.
+`_InterlockedCompareExchange` 값에 대 한 원자성 비교를 수행 `Destination` `Comparand` 합니다. `Destination` 값이 `Comparand` 값과 같으면 `Exchange`으로 지정된 주소에 `Destination` 값이 저장됩니다. 그렇지 않으면는 작업을 수행 하지 않습니다.
 
-`_InterlockedCompareExchange`Win32 Windows SDK [InterlockedCompareExchange](/windows/win32/api/winnt/nf-winnt-interlockedcompareexchange) 함수에 대 한 컴파일러 내장 함수 지원을 제공 합니다.
+`_InterlockedCompareExchange` Win32 Windows SDK [InterlockedCompareExchange](/windows/win32/api/winnt/nf-winnt-interlockedcompareexchange) 함수에 대 한 컴파일러 내장 함수 지원을 제공 합니다.
 
 에 `_InterlockedCompareExchange` 는 관련 된 데이터 형식 및 프로세서별 획득 또는 릴리스 의미 체계가 사용 되는지 여부에 따라 다양 한 변형이 있습니다.
 
-함수는 `_InterlockedCompareExchange` long 정수 값에 대해 작동 하 `_InterlockedCompareExchange8` 는 반면,는 8 비트 정수 `_InterlockedCompareExchange16` 값에 대해 작동 하 고는 short `_InterlockedCompareExchange64` 정수 값에 대해 작동 하며 64 비트 정수 값에 대해 작동 합니다.
+함수는 `_InterlockedCompareExchange` long 정수 값에 대해 작동 하는 반면,는 8 비트 정수 값에 대해 작동 하 `_InterlockedCompareExchange8` `_InterlockedCompareExchange16` 고는 short 정수 값에 대해 작동 하며 `_InterlockedCompareExchange64` 64 비트 정수 값에 대해 작동 합니다.
 
-ARM 플랫폼에서는 임계 영역의 시작 및 끝과 같은 위치에서 의미 체계를 획득하고 해제하려면 `_acq` 및 `_rel` 접미사가 포함된 내장 함수를 사용합니다. `_nf` ("No fence") 접미사가 포함 된 ARM 내장 함수는 메모리 장벽으로 작동 하지 않습니다.
+ARM 플랫폼에서는 임계 영역의 시작 및 끝과 같은 위치에서 의미 체계를 획득하고 해제하려면 `_acq` 및 `_rel` 접미사가 포함된 내장 함수를 사용합니다. `_nf`("No fence") 접미사가 포함 된 ARM 내장 함수는 메모리 장벽으로 작동 하지 않습니다.
 
 `_np`("no prefetch"의 약어) 접미사가 포함된 내장 함수는 컴파일러가 가능한 프리페치 연산을 삽입하지 못하도록 차단합니다.
 
@@ -432,10 +433,10 @@ int main(
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [_InterlockedCompareExchange128](../intrinsics/interlockedcompareexchange128.md)\
 [_InterlockedCompareExchangePointer 내장 함수](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)\
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)\
-[키워드](../cpp/keywords-cpp.md)\
-[x86 컴파일러와 충돌](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)
+[어](../cpp/keywords-cpp.md)\
+[X86 컴파일러와 충돌](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

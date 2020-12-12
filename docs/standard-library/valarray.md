@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: &lt; valarray&gt;'
 title: '&lt;valarray&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - valarray header
 ms.assetid: 30835415-21c1-4801-8f24-6bbef7dd8ecd
-ms.openlocfilehash: 9d2f3097637b3708c16f3048a34dd32b7f6fd80b
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 7cc902a60a68f9cb667530dac76812d4a8e082be
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840143"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168776"
 ---
 # <a name="ltvalarraygt"></a>&lt;valarray&gt;
 
@@ -44,7 +45,7 @@ ms.locfileid: "88840143"
 |[시작](../standard-library/valarray-functions.md#begin)||
 |[cos](../standard-library/valarray-functions.md#cos)|입력 valarray의 요소에서 작동하고 요소가 입력 valarray 요소의 코사인과 같은 valarray를 반환합니다.|
 |[cosh](../standard-library/valarray-functions.md#cosh)|입력 valarray의 요소에서 작동하고 요소가 입력 valarray 요소의 쌍곡 코사인과 같은 valarray를 반환합니다.|
-|[종단](../standard-library/valarray-functions.md#end)||
+|[end](../standard-library/valarray-functions.md#end)||
 |[exp](../standard-library/valarray-functions.md#exp)|입력 valarray의 요소에서 작동하고 요소가 입력 valarray 요소의 자연 지수와 같은 valarray를 반환합니다.|
 |[로깅할](../standard-library/valarray-functions.md#log)|입력 valarray의 요소에서 작동하고 요소가 입력 valarray 요소의 자연 로그와 같은 valarray를 반환합니다.|
 |[log10](../standard-library/valarray-functions.md#log10)|입력 valarray의 요소에서 작동하고 요소가 입력 valarray 요소의 base 10 또는 상용 로그와 같은 valarray를 반환합니다.|

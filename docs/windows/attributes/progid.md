@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: progid'
 title: progid (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - progid attribute
 ms.assetid: afcf559c-e432-481f-aa9a-bd3bb72c02a8
-ms.openlocfilehash: 136c651ec92c78339c2f701804a6a409523dd30f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: ed829d1ec20ae06fae8604e35ccc260013f59e3d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840000"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114938"
 ---
 # <a name="progid"></a>progid
 
@@ -32,7 +33,7 @@ Progid는 COM/ActiveX 개체를 식별 하는 데 사용 되는 CLSID (클래스
 
 ## <a name="remarks"></a>설명
 
-`progid`C + + 특성을 사용 하 여 COM 개체에 대해 ProgID를 지정할 수 있습니다. ProgID의 형식은 name1. *name2. 버전*입니다. ProgID에 대 한 *버전* 을 지정 하지 않으면 기본 버전은 1입니다. *Name1. name2*를 지정 하지 않는 경우 기본 이름은 *classname*입니다. 을 지정 하지 않은 경우 `progid` 를 지정 하면 `vi_progid` *name1* 이 `vi_progid` 사용 되 고 (다음 일련 번호) 버전이 추가 됩니다.
+`progid`C + + 특성을 사용 하 여 COM 개체에 대해 ProgID를 지정할 수 있습니다. ProgID의 형식은 name1. *name2. 버전* 입니다. ProgID에 대 한 *버전* 을 지정 하지 않으면 기본 버전은 1입니다. *Name1. name2* 를 지정 하지 않는 경우 기본 이름은 *classname* 입니다. 을 지정 하지 않은 경우 `progid` 를 지정 하면 `vi_progid` *name1* 이 `vi_progid` 사용 되 고 (다음 일련 번호) 버전이 추가 됩니다.
 
 에서 사용 하는 특성 블록 `progid` 에서도를 사용 하지 않는 경우 `uuid` 컴파일러는 레지스트리를 검사 하 여 지정 된에 `uuid` 대 한가 있는지 확인 합니다 `progid` . 을 `progid` 지정 하지 않으면 버전 (coclass를 만드는 경우 coclass 이름)이를 생성 하는 데 사용 됩니다 `progid` .
 

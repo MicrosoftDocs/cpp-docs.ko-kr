@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 구조체 곱하기'
 title: multiplies 구조체
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - multiplies class
 - multiplies struct
 ms.assetid: ec85e8af-70ad-44ad-90f0-d961a5847864
-ms.openlocfilehash: 3bccaf2a5e6594652a1179b357cdbbee2d2436b3
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 552f36d2060ca9ad6141438a45a128e84b705630
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68240577"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114990"
 ---
 # <a name="multiplies-struct"></a>multiplies 구조체
 
@@ -39,14 +40,14 @@ struct multiplies<void>
 
 ### <a name="parameters"></a>매개 변수
 
-*형식*하십시오 *T*, *U*\
+*형식*, *T*, *U*\
 지정되었거나 유추된 형식의 피연산자를 가져오는 이진 `operator*`를 지원하는 형식입니다.
 
-*왼쪽*\
-곱하기 연산의 왼쪽 피연산자입니다. 형식의 lvalue 참조 인수를 사용 하는 특수화 되지 않은 템플릿은 *형식*합니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *T*합니다.
+*비어*\
+곱하기 연산의 왼쪽 피연산자입니다. 특수화 되지 않은 *템플릿은 형식의 lvalue* 참조 인수를 사용 합니다. 특수화 된 템플릿은 유추 형식 *T* 의 lvalue 및 rvalue 참조 인수를 완벽 하 게 전달 합니다.
 
 *오른쪽*\
-곱하기 연산의 오른쪽 피연산자입니다. 형식의 lvalue 참조 인수를 사용 하는 특수화 되지 않은 템플릿은 *형식*합니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *U*합니다.
+곱하기 연산의 오른쪽 피연산자입니다. 특수화 되지 않은 *템플릿은 형식의 lvalue* 참조 인수를 사용 합니다. 특수화 된 템플릿은 유추 형식 *U* 의 lvalue 및 rvalue 참조 인수를 완벽 하 게 전달 합니다.
 
 ## <a name="return-value"></a>반환 값
 

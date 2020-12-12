@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4610'
 title: 컴파일러 경고(수준 4) C4610
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4610
 ms.assetid: 23c1a16c-9ca9-4bf6-9911-a72b785560c2
-ms.openlocfilehash: 1cf8b9bd3194d03f5cb57a32ac78bfe82962d07c
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 6a655cbafc330738747120b3e768e06eefd6fcc0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74990681"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168308"
 ---
 # <a name="compiler-warning-level-4-c4610"></a>컴파일러 경고(수준 4) C4610
 

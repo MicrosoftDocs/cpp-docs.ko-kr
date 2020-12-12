@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: setjmp 및를 사용 합니다.'
 title: Setjmp 및 사용
 ms.date: 08/14/2018
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - setjmp function
 - setjmp function, C++ programs
 ms.assetid: 96be8816-f6f4-4567-9a9c-0c3c720e37c5
-ms.openlocfilehash: 6adbe22eb684c9a1dda080f6d35a99c55d6c3d30
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5d0f62eeed8b2401309f339a59872c7dd0ac3107
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226999"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97116745"
 ---
 # <a name="using-setjmp-and-longjmp"></a>Setjmp 및 사용
 

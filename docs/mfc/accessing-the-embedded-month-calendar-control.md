@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 포함 된 Monthcalendar 컨트롤 액세스'
 title: 포함된 MonthCalendar 컨트롤 액세스
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - month calendar controls [MFC], changing the font
 - DateTimePicker control [MFC]
 ms.assetid: 355e97ed-cf81-4df3-a2f8-9ddbbde93227
-ms.openlocfilehash: 66a9ef7fd49ea81ddac4779aa6d1c3f12fbe4c55
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 35c715cdd84bd7921883db530c8cf36e8e5cf07e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84617372"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97169452"
 ---
 # <a name="accessing-the-embedded-month-calendar-control"></a>포함된 MonthCalendar 컨트롤 액세스
 

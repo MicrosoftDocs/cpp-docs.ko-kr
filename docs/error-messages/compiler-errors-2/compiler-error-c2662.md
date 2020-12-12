@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2662'
 title: 컴파일러 오류 C2662
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2662
 ms.assetid: e172c2a4-f29e-4034-8232-e7dc6f83689f
-ms.openlocfilehash: 5e2dd6b01db5f7d3026f14c5032ab4623eb6fb58
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 98a82773c5befe8a125031ab3aac355f582aa15a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220290"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170011"
 ---
 # <a name="compiler-error-c2662"></a>컴파일러 오류 C2662
 
@@ -41,7 +42,7 @@ int main() {
 }
 ```
 
-**/Clr**을 사용 하 여 컴파일하는 경우에는 **`const`** 관리 되는 또는 정규화 된 형식에 대해 함수를 호출할 수 없습니다 **`volatile`** . 관리 되는 클래스의 const 멤버 함수는 선언할 수 없으므로 const 관리 되는 개체에서 메서드를 호출할 수 없습니다.
+**/Clr** 을 사용 하 여 컴파일하는 경우에는 **`const`** 관리 되는 또는 정규화 된 형식에 대해 함수를 호출할 수 없습니다 **`volatile`** . 관리 되는 클래스의 const 멤버 함수는 선언할 수 없으므로 const 관리 되는 개체에서 메서드를 호출할 수 없습니다.
 
 ```cpp
 // C2662_b.cpp

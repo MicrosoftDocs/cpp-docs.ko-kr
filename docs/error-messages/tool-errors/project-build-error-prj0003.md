@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 프로젝트 빌드 오류 PRJ0003'
 title: 프로젝트 빌드 오류 PRJ0003
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0003
 ms.assetid: fc5a84bb-c6d3-41d6-8dd6-475455820778
-ms.openlocfilehash: 59028c6d886630ef7db115a2ea93327669b2fcfd
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: cefd56e1d11da77f288333fb0e1f9c10ef684d12
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80192928"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97119410"
 ---
 # <a name="project-build-error-prj0003"></a>프로젝트 빌드 오류 PRJ0003
 
@@ -29,8 +30,8 @@ ms.locfileid: "80192928"
 
 - **VC + + 디렉터리** 에 지정 된 실행 파일 경로에는 실행 하려는 도구의 경로가 포함 되지 않습니다. 자세한 내용은 [컴파일러 및 빌드 속성 설정](../../build/working-with-project-properties.md) 을 참조 하세요.
 
-- 메이크파일 프로젝트의 경우 **빌드 명령줄** 또는 **다시 작성**명령줄에서 실행할 명령이 없습니다.
+- 메이크파일 프로젝트의 경우 **빌드 명령줄** 또는 **다시 작성** 명령줄에서 실행할 명령이 없습니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[프로젝트 빌드 오류 및 경고(PRJxxxx)](../../error-messages/tool-errors/project-build-errors-and-warnings-prjxxxx.md)
+[프로젝트 빌드 오류 및 경고 (PRJxxxx)](../../error-messages/tool-errors/project-build-errors-and-warnings-prjxxxx.md)

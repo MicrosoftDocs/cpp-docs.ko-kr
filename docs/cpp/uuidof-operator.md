@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: `__uuidof` 연산자'
 title: __uuidof 연산자
 ms.date: 10/10/2018
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - __uuidof keyword [C++]
 - __LIBID_ keyword [C++]
 ms.assetid: badfe709-809b-4b66-ad48-ee35039d25c6
-ms.openlocfilehash: f7564270408d14f58d1528c1f41c0afd2dbe219c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e6c14ac6f00b5e6314e1e4d844aea479fa714984
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226973"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97116719"
 ---
 # <a name="__uuidof-operator"></a>`__uuidof` 연산자
 
@@ -23,7 +24,7 @@ ms.locfileid: "87226973"
 
 식에 연결된 GUID를 검색합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **`__uuidof (`***식***`)`**
 
@@ -69,7 +70,7 @@ int main() {
 }
 ```
 
-## <a name="comments"></a>주석
+## <a name="comments"></a>의견
 
 라이브러리 이름이 더 이상 범위에 없는 경우 대신을 사용할 수 있습니다 `__LIBID_` **`__uuidof`** . 예를 들어:
 
@@ -82,4 +83,4 @@ StringFromCLSID(__LIBID_, &lpolestr);
 ## <a name="see-also"></a>참조
 
 [단항 연산자가 있는 식](../cpp/expressions-with-unary-operators.md)<br/>
-[C++ 키워드](../cpp/keywords-cpp.md)
+[키워드](../cpp/keywords-cpp.md)

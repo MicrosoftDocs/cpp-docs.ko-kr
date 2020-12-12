@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: &lt; stdexcept>&gt;'
 title: '&lt;stdexcept&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - stdexcept header
 ms.assetid: 495c10b1-1e60-4514-9f8f-7fda11a2f522
-ms.openlocfilehash: d4028d57a6e8898f85a37d9731e7e8d4cda19a2f
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 07ab90442630c6dfb5a96604ba7c0cb6b214f605
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68453716"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97169088"
 ---
 # <a name="ltstdexceptgt"></a>&lt;stdexcept&gt;
 
@@ -35,7 +36,7 @@ ms.locfileid: "68453716"
 
 ### <a name="classes"></a>클래스
 
-|클래스|Description|
+|클래스|설명|
 |-|-|
 |[domain_error 클래스](../standard-library/domain-error-class.md)|이 클래스는 도메인 오류를 보고하기 위해 발생하는 모든 예외에 대한 기본 클래스로 사용됩니다.|
 |[invalid_argument 클래스](../standard-library/invalid-argument-class.md)|이 클래스는 잘못된 인수를 보고하기 위해 발생하는 모든 예외에 대한 기본 클래스로 사용됩니다.|
@@ -47,7 +48,7 @@ ms.locfileid: "68453716"
 |[runtime_error 클래스](../standard-library/runtime-error-class.md)|이 클래스는 프로그램이 실행되는 경우에만 검색될 수 있는 오류를 보고하기 위해 발생하는 모든 예외에 대한 기본 클래스로 사용됩니다.|
 |[underflow_error 클래스](../standard-library/underflow-error-class.md)|이 클래스는 산술 언더플로를 보고하기 위해 발생하는 모든 예외에 대한 기본 클래스로 사용됩니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[C + + 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

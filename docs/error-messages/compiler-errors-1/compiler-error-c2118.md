@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2118'
 title: 컴파일러 오류 C2118
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2118
 ms.assetid: bf4315d0-f085-4323-b813-96ee61a13bde
-ms.openlocfilehash: 944109ba3531f2e3fca50300f26000fdaf850d19
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 89ddf355e233e4fb2d6f36a53369d85bf8ea019a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74755202"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170102"
 ---
 # <a name="compiler-error-c2118"></a>컴파일러 오류 C2118
 

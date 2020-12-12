@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: DAO 클래스'
 title: DAO 클래스
 ms.date: 09/17/2019
 helpviewer_keywords:
 - database classes [MFC], DAO
 - DAO [MFC], classes
 ms.assetid: b15d0cd6-328b-4288-9c19-d037a795db57
-ms.openlocfilehash: 51abd29ef4de5d70f4a5b2b6b14b53510e7876a1
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: bf30a4d985947ca435c53391ce9529caf9ec2c81
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615928"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97169413"
 ---
 # <a name="dao-classes"></a>DAO 클래스
 
@@ -50,16 +51,16 @@ DAO 데이터베이스 클래스에서 사용하는 DAO 레코드 필드 교환(
 ## <a name="related-classes"></a>관련 클래스
 
 [CLongBinary](reference/clongbinary-class.md)<br/>
-비트맵과 같은 BLOB (binary large object)의 저장소에 대 한 핸들을 캡슐화 합니다. `CLongBinary`개체는 데이터베이스 테이블에 저장 된 대량 데이터 개체를 관리 하는 데 사용 됩니다.
+비트맵과 같은 BLOB (binary large object)의 저장소에 대 한 핸들을 캡슐화 합니다. `CLongBinary` 개체는 데이터베이스 테이블에 저장 된 대량 데이터 개체를 관리 하는 데 사용 됩니다.
 
 [COleCurrency](reference/colecurrency-class.md)<br/>
-소수점 앞에 15 자리가 있고 그 뒤에 4 자리가 있는 고정 소수점 산술 형식인 OLE 자동화 형식 **통화**에 대 한 래퍼입니다.
+소수점 앞에 15 자리가 있고 그 뒤에 4 자리가 있는 고정 소수점 산술 형식인 OLE 자동화 형식 **통화** 에 대 한 래퍼입니다.
 
 [COleDateTime](../atl-mfc-shared/reference/coledatetime-class.md)<br/>
-OLE 자동화 형식 **날짜**에 대 한 래퍼입니다. 날짜 및 시간 값을 나타냅니다.
+OLE 자동화 형식 **날짜** 에 대 한 래퍼입니다. 날짜 및 시간 값을 나타냅니다.
 
 [COleVariant](reference/colevariant-class.md)<br/>
-OLE 자동화 유형 **변형**에 대 한 래퍼입니다. **VARIANT**의 데이터는 다양 한 형식으로 저장할 수 있습니다.
+OLE 자동화 유형 **변형** 에 대 한 래퍼입니다. **VARIANT** 의 데이터는 다양 한 형식으로 저장할 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 

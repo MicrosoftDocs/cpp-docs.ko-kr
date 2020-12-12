@@ -1,21 +1,22 @@
 ---
+description: '자세히 알아보기: 동기화 데이터 구조'
 title: 동기화 데이터 구조
 ms.date: 11/04/2016
 helpviewer_keywords:
 - synchronization data structures
 ms.assetid: d612757d-e4b7-4019-a627-f853af085b8b
-ms.openlocfilehash: 244aaac9bd40c83d0bbec3c360bdf7351da54baf
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d5e2e9e6d79f1e71a8f18f98d69fb794597d0ccb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231665"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97169348"
 ---
 # <a name="synchronization-data-structures"></a>동기화 데이터 구조
 
 동시성 런타임는 여러 스레드의 공유 데이터에 대 한 액세스를 동기화 할 수 있는 여러 데이터 구조를 제공 합니다. 이러한 데이터 구조는 자주 수정 하는 공유 데이터를 포함 하는 경우에 유용 합니다. 예를 들어 중요 한 섹션과 같은 동기화 개체는 공유 리소스를 사용할 수 있을 때까지 다른 스레드가 대기 하도록 합니다. 따라서 이러한 개체를 사용 하 여 자주 사용 되는 데이터에 대 한 액세스를 동기화 하는 경우 응용 프로그램의 확장성이 손실 될 수 있습니다. [PPL (병렬 패턴 라이브러리)](../../parallel/concrt/parallel-patterns-library-ppl.md) 은 [동시성:: 결합할](../../parallel/concrt/reference/combinable-class.md) 수 있는 클래스를 제공 합니다 .이 클래스를 사용 하면 동기화 하지 않고도 여러 스레드나 작업 간에 리소스를 공유할 수 있습니다. 클래스에 대 한 자세한 내용은 `combinable` [병렬 컨테이너 및 개체](../../parallel/concrt/parallel-containers-and-objects.md)를 참조 하세요.
 
-## <a name="sections"></a><a name="top"></a>섹션이
+## <a name="sections"></a><a name="top"></a> 섹션이
 
 이 항목에서는 다음과 같은 비동기 메시지 블록 형식에 대해 자세히 설명 합니다.
 
@@ -27,7 +28,7 @@ ms.locfileid: "87231665"
 
 - [event](#event)
 
-## <a name="critical_section"></a><a name="critical_section"></a>critical_section
+## <a name="critical_section"></a><a name="critical_section"></a> critical_section
 
 [Concurrency:: critical_section](../../parallel/concrt/reference/critical-section-class.md) 클래스는 다른 작업을 선점 하는 대신 다른 작업에 양보 하는 협조적 상호 제외 개체를 나타냅니다. 중요 섹션은 여러 스레드에서 공유 데이터에 대 한 단독 읽기 및 쓰기 액세스를 필요로 하는 경우에 유용 합니다.
 
@@ -45,7 +46,7 @@ ms.locfileid: "87231665"
 
 [[맨 위로](#top)이동]
 
-## <a name="reader_writer_lock"></a><a name="reader_writer_lock"></a>reader_writer_lock
+## <a name="reader_writer_lock"></a><a name="reader_writer_lock"></a> reader_writer_lock
 
 [Concurrency:: reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md) 클래스는 공유 데이터에 대 한 스레드로부터 안전한 읽기/쓰기 작업을 제공 합니다. 여러 스레드가 공유 리소스에 대 한 동시 읽기 액세스를 요구 하지만 해당 공유 리소스에 거의 쓰지 않는 경우 판독기/작성기 잠금을 사용 합니다. 이 클래스는 한 번에 하나의 스레드만 개체에 대 한 쓰기 권한을 제공 합니다.
 
@@ -74,9 +75,9 @@ ms.locfileid: "87231665"
 
 [[맨 위로](#top)이동]
 
-## <a name="scoped_lock-and-scoped_lock_read"></a><a name="scoped_lock"></a>scoped_lock 및 scoped_lock_read
+## <a name="scoped_lock-and-scoped_lock_read"></a><a name="scoped_lock"></a> scoped_lock 및 scoped_lock_read
 
-`critical_section`및 `reader_writer_lock` 클래스는 상호 제외 개체를 사용 하는 방법을 간소화 하는 중첩 된 도우미 클래스를 제공 합니다. 이러한 도우미 클래스를 범위 지정 *잠금*이라고 합니다.
+`critical_section`및 `reader_writer_lock` 클래스는 상호 제외 개체를 사용 하는 방법을 간소화 하는 중첩 된 도우미 클래스를 제공 합니다. 이러한 도우미 클래스를 범위 지정 *잠금* 이라고 합니다.
 
 `critical_section`클래스에는 [concurrency:: critical_section:: scoped_lock](reference/critical-section-class.md#critical_section__scoped_lock_class) 클래스가 포함 되어 있습니다. 생성자는 제공 된 개체에 대 한 액세스 권한을 획득 합니다. `critical_section` 소멸자는 해당 개체에 대 한 액세스 권한을 해제 합니다. 클래스에는 `reader_writer_lock` 제공 된 개체에 대 한 쓰기 액세스를 관리 한다는 점을 제외 하 고와 유사한 [concurrency:: reader_writer_lock:: scoped_lock](reference/reader-writer-lock-class.md#scoped_lock_class) 클래스가 포함 되어 있습니다 `critical_section::scoped_lock` `reader_writer_lock` . 클래스에는 `reader_writer_lock` [concurrency:: reader_writer_lock:: scoped_lock_read](reference/reader-writer-lock-class.md#scoped_lock_read_class) 클래스도 포함 되어 있습니다. 이 클래스는 제공 된 개체에 대 한 읽기 액세스를 관리 `reader_writer_lock` 합니다.
 

@@ -1,4 +1,5 @@
 ---
+description: _InterlockedAnd 내장 함수에 대해 자세히 알아보세요.
 title: _InterlockedAnd 내장 함수
 ms.date: 09/02/2019
 f1_keywords:
@@ -56,12 +57,12 @@ helpviewer_keywords:
 - _InterlockedAnd8 intrinsic
 - _InterlockedAnd_HLEAcquire intrinsic
 ms.assetid: ad271dc3-42cd-47d0-9f65-30d5cfeb66fc
-ms.openlocfilehash: e22b463a5229de4745f71aaa0240374a5c057508
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: f5e00b997eced482a8adc8881e9a1b6a3231bb72
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217767"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168256"
 ---
 # <a name="_interlockedand-intrinsic-functions"></a>_InterlockedAnd 내장 함수
 
@@ -172,7 +173,7 @@ __int64 _InterlockedAnd64_rel(
 
 ### <a name="parameters"></a>매개 변수
 
-*value*\
+*기본값*\
 [in, out] 결과로 바꿀 첫 번째 피연산자에 대 한 포인터입니다.
 
 *마스크할*\
@@ -184,7 +185,7 @@ __int64 _InterlockedAnd64_rel(
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|헤더|
+|Intrinsic|Architecture|헤더|
 |---------------|------------------|------------|
 |`_InterlockedAnd`, `_InterlockedAnd8`, `_InterlockedAnd16`|x86, ARM, x64, ARM64|\<intrin.h>|
 |`_InterlockedAnd64`|ARM, x64, ARM64|\<intrin.h>|
@@ -196,7 +197,7 @@ __int64 _InterlockedAnd64_rel(
 
 각 함수 이름의 숫자는 인수의 비트 크기를 지정합니다.
 
-ARM 및 ARM64 플랫폼에서 임계 영역의 시작 및 끝 `_acq` 과 `_rel` 같은 획득 및 해제 의미 체계에 대해 내장 함수 및 접미사를 사용 합니다. `_nf`("no fence"의 약어) 접미사가 포함된 내장 함수는 메모리 장벽으로 작동하지 않습니다.
+ARM 및 ARM64 플랫폼에서 `_acq` `_rel` 임계 영역의 시작 및 끝과 같은 획득 및 해제 의미 체계에 대해 내장 함수 및 접미사를 사용 합니다. `_nf`("no fence"의 약어) 접미사가 포함된 내장 함수는 메모리 장벽으로 작동하지 않습니다.
 
 `_np`("no prefetch"의 약어) 접미사가 포함된 내장 함수는 컴파일러가 가능한 프리페치 연산을 삽입하지 못하도록 차단합니다.
 
@@ -228,7 +229,7 @@ int main()
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)\
-[x86 컴파일러와 충돌](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)
+[X86 컴파일러와 충돌](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

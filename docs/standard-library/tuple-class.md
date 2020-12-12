@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 튜플 클래스'
 title: 튜플 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - tuple class
 ms.assetid: c38749be-ae4d-41f3-98ea-6aa3250de9a3
-ms.openlocfilehash: 04fd3ec6ce3363d118174025823279a80dd00f0b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9beb3f263fa516d7d4096c404c135deffde6fc31
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215545"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97169024"
 ---
 # <a name="tuple-class"></a>튜플 클래스
 
@@ -116,7 +117,7 @@ The tuples in the vector are
 ( 3, 0.033, three ).
 ```
 
-## <a name="operator"></a><a name="op_eq"></a>연산자 =
+## <a name="operator"></a><a name="op_eq"></a> 연산자 =
 
 `tuple` 개체를 할당합니다.
 
@@ -198,7 +199,7 @@ int main()
 x 4
 ```
 
-## <a name="swap"></a><a name="tuple_swap"></a>스왑을
+## <a name="swap"></a><a name="tuple_swap"></a> 스왑을
 
 두 튜플의 요소를 교환합니다.
 
@@ -210,16 +211,16 @@ template <class... Types>
 ### <a name="parameters"></a>매개 변수
 
 *비어*\
-튜플 *오른쪽*의 요소와 교환할 요소를 포함 하는 튜플입니다.
+튜플 *오른쪽* 의 요소와 교환할 요소를 포함 하는 튜플입니다.
 
 *오른쪽*\
-요소를 *왼쪽*튜플의 요소와 교환 해야 하는 튜플입니다.
+요소를 *왼쪽* 튜플의 요소와 교환 해야 하는 튜플입니다.
 
 ### <a name="remarks"></a>설명
 
 함수는 `left.swap(right)`을 실행합니다.
 
-## <a name="tuple"></a><a name="tuple"></a>튜플이
+## <a name="tuple"></a><a name="tuple"></a> 튜플이
 
 `tuple` 개체를 생성합니다.
 
@@ -258,7 +259,7 @@ N번째 복사된 튜플 요소의 형식입니다.
 
 두 번째 생성자는 요소가 각 `Pi`로 `i - 1` 인덱스의 요소를 초기화하여 `P1`, `P2`, ..., `PN` 인수에서 복사 생성되는 개체를 생성합니다.
 
-세 번째 및 네 번째 생성자는 해당 요소가 *오른쪽*의 해당 요소에서 복사 생성 되는 개체를 생성 합니다.
+세 번째 및 네 번째 생성자는 해당 요소가 *오른쪽* 의 해당 요소에서 복사 생성 되는 개체를 생성 합니다.
 
 다섯 번째 생성자는 인덱스 0의 요소가 `right.first`에서 복사 생성되고 인덱스 1의 요소가 `right.second`에서 복사 생성되는 개체를 생성합니다.
 

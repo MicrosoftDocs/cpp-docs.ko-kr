@@ -1,4 +1,5 @@
 ---
+description: Tuple_element 클래스에 대해 자세히 알아보세요.
 title: tuple_element 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - std::tuple_element
 ms.assetid: 4c51a6c1-ce81-462f-8c6c-291d69f2b77c
-ms.openlocfilehash: be9d9fe56d35e96e4179eb511edccd475a369f32
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: dea9f883c2ae8d0a071f894405059ddb5f2090af
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008284"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168971"
 ---
 # <a name="tuple_element-class"></a>tuple_element 클래스
 
@@ -76,7 +77,7 @@ template <class T1, class T2>
 
 ## <a name="remarks"></a>설명
 
-클래스 템플릿에는 `tuple_element` `type` 튜플 형식 *튜플의*인덱스 *인덱스* 에 있는 형식에 대 한 동의어 인 중첩 된 typedef가 있습니다.
+클래스 템플릿에는 `tuple_element` `type` 튜플 형식 *튜플의* 인덱스 *인덱스* 에 있는 형식에 대 한 동의어 인 중첩 된 typedef가 있습니다.
 
 `tuple_element_t` 형식 정의는 `tuple_element<Index, Tuple>::type`에 사용할 수 있는 편리한 별칭입니다.
 
