@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4337'
 title: 컴파일러 경고(수준 4) C4337
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4337
 ms.assetid: 70bc72d9-aac5-45cd-abd3-ebe42a05897b
-ms.openlocfilehash: 5080c600e37468d5c3617769ddb4596a31be47f0
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: f8d59093e92c17603b4f254d7a5cb26f1299e9e3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991224"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97212209"
 ---
 # <a name="compiler-warning-level-4-c4337"></a>컴파일러 경고(수준 4) C4337
 
@@ -19,7 +20,7 @@ ms.locfileid: "74991224"
 
 [#Import 지시문](../../preprocessor/hash-import-directive-cpp.md) 의 auto_search 특성으로 인해 형식 라이브러리를 암시적으로 가져왔습니다.
 
-다음 두 파일에서 만든 디스크에 두 개의 형식 라이브러리가 지정 됩니다 (midl로 컴파일).
+다음 두 파일 (midl.exe로 컴파일)에서 만든 디스크에 두 개의 형식 라이브러리가 지정 됩니다.
 
 ```
 // C4337a.idl

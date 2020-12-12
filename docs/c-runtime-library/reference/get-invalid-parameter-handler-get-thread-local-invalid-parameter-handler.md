@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _get_invalid_parameter_handler, _get_thread_local_invalid_parameter_handler'
 title: _get_invalid_parameter_handler, _get_thread_local_invalid_parameter_handler
 ms.date: 4/2/2020
 api_name:
@@ -32,12 +33,12 @@ helpviewer_keywords:
 - _get_thread_local_invalid_parameter_handler function
 - _get_invalid_parameter_handler function
 ms.assetid: a176da0e-38ca-4d99-92bb-b0e2b8072f53
-ms.openlocfilehash: 27e42c9f3f570b24df8fa2a26798b3dc3fa326b3
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: ecb39588ea2776d661f391596d3f482628eddd7a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82909889"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97213379"
 ---
 # <a name="_get_invalid_parameter_handler-_get_thread_local_invalid_parameter_handler"></a>_get_invalid_parameter_handler, _get_thread_local_invalid_parameter_handler
 
@@ -78,11 +79,11 @@ typedef void (__cdecl* _invalid_parameter_handler)(
 
 |루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
-|**_get_invalid_parameter_handler**, **_get_thread_local_invalid_parameter_handler**|C: \<stdlib.h><br /><br /> C++: \<cstdlib> 또는 \<stdlib.h>|
+|**_get_invalid_parameter_handler**, **_get_thread_local_invalid_parameter_handler**|C \<stdlib.h><br /><br /> C + +: \<cstdlib> 또는 \<stdlib.h>|
 
 **_Get_invalid_parameter_handler** 및 **_Get_thread_local_invalid_parameter_handler** 함수는 Microsoft 전용입니다. 호환성에 대한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [_set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler](set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md)<br/>
 [보안이 강화 된 CRT 함수 버전](../../c-runtime-library/security-enhanced-versions-of-crt-functions.md)<br/>

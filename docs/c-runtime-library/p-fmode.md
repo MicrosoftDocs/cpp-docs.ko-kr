@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __p__fmode'
 title: __p__fmode
 ms.date: 4/2/2020
 api_name:
@@ -23,16 +24,16 @@ f1_keywords:
 helpviewer_keywords:
 - __p__fmode
 ms.assetid: 1daa1394-81eb-43aa-a71b-4cc6acf3207b
-ms.openlocfilehash: dfd9962c49b03dbb30223d1d7403b791ed6dbec9
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: da7cae9c881ebe042aa5d6003b50c09c65ea02d7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919883"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97213522"
 ---
 # <a name="__p__fmode"></a>__p__fmode
 
-파일 I/O 연산에 대한 기본 *파일 변환 모드*를 지정하는 `_fmode` 전역 변수에 대한 포인터입니다.
+파일 I/O 연산에 대한 기본 *파일 변환 모드* 를 지정하는 `_fmode` 전역 변수에 대한 포인터입니다.
 
 ## <a name="syntax"></a>구문
 

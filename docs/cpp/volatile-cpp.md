@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: volatile (c + +)'
 title: volatile (C++)
 ms.date: 05/07/2019
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - volatile objects
 - objects [C++], volatile
 ms.assetid: 81db4a85-ed5a-4a2c-9a53-5d07a771d2de
-ms.openlocfilehash: bbdd7d03d820b9fc0d541dbb31d55b641226f14e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cb7bda39ded03342b03ed889125992960210b940
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213101"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97213340"
 ---
 # <a name="volatile-c"></a>volatile (C++)
 
@@ -30,7 +31,7 @@ volatile declarator ;
 
 [/Volatile](../build/reference/volatile-volatile-keyword-interpretation.md) 컴파일러 스위치를 사용 하 여 컴파일러가이 키워드를 해석 하는 방법을 수정할 수 있습니다.
 
-Visual Studio는 **`volatile`** 대상 아키텍처에 따라 키워드를 다르게 해석 합니다. ARM의 경우 **/volatile** 컴파일러 옵션이 지정 되지 않은 경우 컴파일러는 **/volatile: iso** 가 지정 된 것 처럼 수행 됩니다. ARM이 아닌 아키텍처의 경우 **/volatile** 컴파일러 옵션을 지정 하지 않으면 컴파일러가 **/volatile: ms** 가 지정 된 것 처럼 수행 됩니다. 따라서 ARM 이외의 아키텍처에서는 **/volatile: iso**를 지정 하 고 스레드 간에 공유 되는 메모리를 처리할 때 명시적인 동기화 기본 형식 및 컴파일러 내장 함수를 사용 하는 것이 좋습니다.
+Visual Studio는 **`volatile`** 대상 아키텍처에 따라 키워드를 다르게 해석 합니다. ARM의 경우 **/volatile** 컴파일러 옵션이 지정 되지 않은 경우 컴파일러는 **/volatile: iso** 가 지정 된 것 처럼 수행 됩니다. ARM이 아닌 아키텍처의 경우 **/volatile** 컴파일러 옵션을 지정 하지 않으면 컴파일러가 **/volatile: ms** 가 지정 된 것 처럼 수행 됩니다. 따라서 ARM 이외의 아키텍처에서는 **/volatile: iso** 를 지정 하 고 스레드 간에 공유 되는 메모리를 처리할 때 명시적인 동기화 기본 형식 및 컴파일러 내장 함수를 사용 하는 것이 좋습니다.
 
 한정자를 사용 하 여 **`volatile`** 인터럽트 처리기와 같은 비동기 프로세스에서 사용 하는 메모리 위치에 대 한 액세스를 제공할 수 있습니다.
 
@@ -71,6 +72,6 @@ C # Volatile 키워드를 알고 있거나 **`volatile`** 이전 버전의 Micro
 
 ## <a name="see-also"></a>참조
 
-[C++ 키워드](../cpp/keywords-cpp.md)<br/>
+[키워드](../cpp/keywords-cpp.md)<br/>
 [const](../cpp/const-cpp.md)<br/>
 [const 및 volatile 포인터](../cpp/const-and-volatile-pointers.md)

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _pgmptr, _wpgmptr'
 title: _pgmptr, _wpgmptr
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - _pgmptr function
 - pgmptr function
 ms.assetid: 4d44b515-0eff-4136-8bc4-684195f218f5
-ms.openlocfilehash: beff0401d0aa2aa21819e58618ef4c02795d4393
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 70902be4f1c9686839a958439116fc3e28a2a315
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75300159"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97213444"
 ---
 # <a name="_pgmptr-_wpgmptr"></a>_pgmptr, _wpgmptr
 
@@ -30,7 +31,7 @@ extern char *_pgmptr;
 extern wchar_t *_wpgmptr;
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 프로그램이 명령 인터프리터(Cmd.exe)에서 실행될 때 `_pgmptr`은 자동으로 실행 파일의 전체 경로로 초기화됩니다. 예를 들어 Hello.exe가 C:\BIN에 있고 C:\BIN이 경로에 있는 경우 다음을 실행하면 `_pgmptr`이 C:\BIN\Hello.exe로 설정됩니다.
 
@@ -50,11 +51,11 @@ C> hello
 
 ## <a name="requirements"></a>요구 사항
 
-|Variable|필수 헤더|
+|변수|필수 헤더|
 |--------------|---------------------|
 |`_pgmptr`, `_wpgmptr`|\<stdlib.h>|
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 프로그램에서는 `_pgmptr`의 사용을 보여 줍니다.
 
@@ -75,6 +76,6 @@ int main( void )
 
 `_wpgmptr`를 `%Fs`로 변경하고 `%S`을 `main`으로 변경하여 `wmain`을 사용할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [전역 변수](../c-runtime-library/global-variables.md)

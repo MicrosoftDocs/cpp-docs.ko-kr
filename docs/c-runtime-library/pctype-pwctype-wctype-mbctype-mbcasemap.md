@@ -1,4 +1,5 @@
 ---
+description: _Pctype, _pwctype, _wctype, _mbctype, _mbcasemap에 대해 자세히 알아보세요.
 title: _pctype, _pwctype, _wctype, _mbctype, _mbcasemap
 ms.date: 11/04/2016
 api_name:
@@ -46,12 +47,12 @@ helpviewer_keywords:
 - mbctype function
 - _mbcasemap function
 ms.assetid: 7f5e1107-c43b-4b9b-b387-781e6d2373cb
-ms.openlocfilehash: 8ffb46dc410bc1397e3d592f68339b4a58dae86c
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
-ms.translationtype: HT
+ms.openlocfilehash: 4122d282b3b205af3d6fb67f9755f9c13c4bb5e2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70939975"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97213457"
 ---
 # <a name="_pctype-_pwctype-_wctype-_mbctype-_mbcasemap"></a>_pctype, _pwctype, _wctype, _mbctype, _mbcasemap
 
