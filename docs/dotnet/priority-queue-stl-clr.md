@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: priority_queue (STL/CLR)'
 title: priority_queue(STL/CLR)
 ms.date: 11/04/2016
 ms.topic: reference
@@ -51,12 +52,12 @@ helpviewer_keywords:
 - value_compare member [STL/CLR]
 - value_type member [STL/CLR]
 ms.assetid: 4d0000d3-68ff-4c4b-8157-7060540136f5
-ms.openlocfilehash: fd87c39db279fb70d5c5b5f20e583251dc519755
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 666efbc634ae962836fce4fa12ca762ab7085d92
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502399"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97282499"
 ---
 # <a name="priority_queue-stlclr"></a>priority_queue(STL/CLR)
 
@@ -592,7 +593,7 @@ priority_queue <Value, Container>% operator=(priority_queue <Value, Container>% 
 
 ### <a name="remarks"></a>설명
 
-멤버 연산자는 개체에 대해 *를 복사 하 고를 반환* **`*this`** 합니다. 이를 사용 하 여 제어 되는 시퀀스를 *오른쪽*에 있는 제어 되는 시퀀스의 복사본으로 바꿉니다.
+멤버 연산자는 개체에 대해 *를 복사 하 고를 반환* **`*this`** 합니다. 이를 사용 하 여 제어 되는 시퀀스를 *오른쪽* 에 있는 제어 되는 시퀀스의 복사본으로 바꿉니다.
 
 ### <a name="example"></a>예제
 
@@ -728,7 +729,7 @@ template<typename InIt>
 
 `priority_queue(priority_queue<Value, Container>% right);`
 
-순서 조건자가 포함 된의 복사본 인 래핑된 컨테이너를 만듭니다 `right.get_container()` `right.value_comp()` . 이를 사용 하 여 첫 번째 제어 되는 시퀀스를 지정 합니다 .이 시퀀스는 동일한 순서 조건자를 사용 하 여 queue 개체 *오른쪽*에 의해 제어 되는 시퀀스의 복사본입니다.
+순서 조건자가 포함 된의 복사본 인 래핑된 컨테이너를 만듭니다 `right.get_container()` `right.value_comp()` . 이를 사용 하 여 첫 번째 제어 되는 시퀀스를 지정 합니다 .이 시퀀스는 동일한 순서 조건자를 사용 하 여 queue 개체 *오른쪽* 에 의해 제어 되는 시퀀스의 복사본입니다.
 
 생성자는 다음과 같습니다.
 
@@ -740,13 +741,13 @@ template<typename InIt>
 
 `explicit priority_queue(value_compare^ pred);`
 
-순서 조건자 *pred*를 사용 하 여 빈 래핑된 컨테이너를 만듭니다. 이를 사용 하 여 지정 된 순서 조건자를 사용 하 여 빈 초기 제어 되는 시퀀스를 지정 합니다.
+순서 조건자 *pred* 를 사용 하 여 빈 래핑된 컨테이너를 만듭니다. 이를 사용 하 여 지정 된 순서 조건자를 사용 하 여 빈 초기 제어 되는 시퀀스를 지정 합니다.
 
 생성자는 다음과 같습니다.
 
 `priority_queue(value_compare^ pred, container_type cont);`
 
-순서 조건자 *pred*을 사용 하 여 빈 래핑된 컨테이너를 만든 다음 *계속* 해 서 사용 하는 모든 요소를 푸시합니다 .이 컨테이너는 지정 된 순서 조건자를 사용 하 여 기존 컨테이너에서 초기 제어 되는 시퀀스를 지정 합니다.
+순서 조건자 *pred* 을 사용 하 여 빈 래핑된 컨테이너를 만든 다음 *계속* 해 서 사용 하는 모든 요소를 푸시합니다 .이 컨테이너는 지정 된 순서 조건자를 사용 하 여 기존 컨테이너에서 초기 제어 되는 시퀀스를 지정 합니다.
 
 생성자는 다음과 같습니다.
 
@@ -758,13 +759,13 @@ template<typename InIt>
 
 `template<typename InIt> priority_queue(InIt first, InIt last, value_compare^ pred);`
 
-순서 조건자 *pred*를 사용 하 여 빈 래핑된 컨테이너를 만든 다음 시퀀스 [ `first` ,)를 푸시합니다 `last` . 지정 된 순서 조건자를 사용 하 여 지정 된 seqeuence에서 초기 제어 되는 시퀀스를 지정 하는 데 사용 합니다.
+순서 조건자 *pred* 를 사용 하 여 빈 래핑된 컨테이너를 만든 다음 시퀀스 [ `first` ,)를 푸시합니다 `last` . 지정 된 순서 조건자를 사용 하 여 지정 된 seqeuence에서 초기 제어 되는 시퀀스를 지정 하는 데 사용 합니다.
 
 생성자는 다음과 같습니다.
 
 `template<typename InIt> priority_queue(InIt first, InIt last, value_compare^ pred, container_type% cont);`
 
-순서 조건자 *pred*을 사용 하 여 빈 래핑된 컨테이너를 만든 다음, *연속* 의 모든 요소와 시퀀스 [ `first` ,)를 푸시합니다 `last` . 지정 된 순서 조건자를 사용 하 여 기존 컨테이너 및 지정 된 seqeuence에서 초기 제어 되는 시퀀스를 지정 하는 데 사용 합니다.
+순서 조건자 *pred* 을 사용 하 여 빈 래핑된 컨테이너를 만든 다음, *연속* 의 모든 요소와 시퀀스 [ `first` ,)를 푸시합니다 `last` . 지정 된 순서 조건자를 사용 하 여 기존 컨테이너 및 지정 된 seqeuence에서 초기 제어 되는 시퀀스를 지정 하는 데 사용 합니다.
 
 ### <a name="example"></a>예제
 
@@ -1335,7 +1336,7 @@ typedef Value value_type;
 
 ### <a name="remarks"></a>설명
 
-형식은 템플릿 매개 변수 *값*의 동의어입니다.
+형식은 템플릿 매개 변수 *값* 의 동의어입니다.
 
 ### <a name="example"></a>예제
 

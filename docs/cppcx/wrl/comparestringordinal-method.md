@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: CompareStringOrdinal 메서드'
 title: CompareStringOrdinal 메서드
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::Details::CompareStringOrdinal
 ms.assetid: ffa997fd-8cd7-40a5-b9e7-f55d40b072f4
-ms.openlocfilehash: 1291084395b02602b7a3de9013df6720d2e237fc
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 1994d0f3ec4104e27094de10255194a911ae2945
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214099"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97282850"
 ---
 # <a name="comparestringordinal-method"></a>CompareStringOrdinal 메서드
 
@@ -32,15 +33,15 @@ inline INT32 CompareStringOrdinal(
 *rhs*<br/>
 비교할 두 번째 HSTRING입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 
 |값|조건|
 |-----------|---------------|
-|-1|*lhs* 가 *rhs*보다 작은 경우|
+|-1|*lhs* 가 *rhs* 보다 작은 경우|
 |0|*lhs* equals *rhs*.|
-|1|*lhs* 가 *rhs*보다 큽니다.|
+|1|*lhs* 가 *rhs* 보다 큽니다.|
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 지정 된 두 HSTRING 개체를 비교 하 고 정렬 순서에서 해당 상대 위치를 나타내는 정수를 반환 합니다.
 
@@ -52,4 +53,4 @@ inline INT32 CompareStringOrdinal(
 
 ## <a name="see-also"></a>참고 항목
 
-[Microsoft::WRL::Wrappers::Details 네임스페이스](microsoft-wrl-wrappers-details-namespace.md)
+[Microsoft:: WRL:: 래퍼::D etails 네임 스페이스](microsoft-wrl-wrappers-details-namespace.md)

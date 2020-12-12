@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: &lt; 목록&gt;'
 title: '&lt;list&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - list header
 ms.assetid: 2345823b-5612-44d8-95d3-aa96ed076d17
-ms.openlocfilehash: cbc93500c3fe61b2a4640008b869f3a6b71b5c6c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: dd75c6871e9996b7bfba32ed34999a6fec6fc1b0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833311"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97284670"
 ---
 # <a name="ltlistgt"></a>&lt;list&gt;
 
 컨테이너 클래스 템플릿 목록과 여러 지원 템플릿을 정의 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 #include <list>
@@ -39,7 +40,7 @@ ms.locfileid: "88833311"
 |[연산자>](../standard-library/list-operators.md#op_gt)|연산자의 좌변에 있는 목록 개체가 우변에 있는 목록 개체보다 큰지 테스트합니다.|
 |[연산자>=](../standard-library/list-operators.md#op_gt_eq)|연산자의 좌변에 있는 목록 개체가 우변에 있는 목록 개체보다 크거나 같은지 테스트합니다.|
 
-### <a name="functions"></a>Functions
+### <a name="functions"></a>함수
 
 |Name|설명|
 |-|-|

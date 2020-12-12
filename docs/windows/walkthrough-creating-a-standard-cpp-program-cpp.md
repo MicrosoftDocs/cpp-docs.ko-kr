@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 연습: 표준 c + + 프로그램 만들기 (c + +)'
 title: '연습: 표준 C++ 프로그램 만들기(C++)'
 ms.custom: get-started-article
 ms.date: 04/25/2019
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - command-line applications [C++], standard
 - standard applications [C++]
 ms.assetid: 48217e35-d892-46b7-93e3-f6f0b7e2da35
-ms.openlocfilehash: 778a73e62a834dd73aca1a22bd4dd7f244e7bb4d
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 64310c72a7c58402dfe8c58ce2dab8eb2cbd231e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924244"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97283188"
 ---
 # <a name="walkthrough-creating-a-standard-c-program-c"></a>연습: 표준 C++ 프로그램 만들기(C++)
 
@@ -76,7 +77,7 @@ Visual Studio를 사용 하 여 표준 c + + 프로그램을 만들 수 있습�
 
 1. **다음** 을 클릭 한 다음 **콘솔 응용 프로그램** 이 선택 되어 있는지 확인 하 고 **미리 컴파일된 헤더** 상자의 선택을 취소 합니다.
 
-1. **마침** 을 클릭합니다.
+1. **Finish** 를 클릭합니다.
 
 ::: moniker-end
 
@@ -112,4 +113,4 @@ Visual Studio를 사용 하 여 표준 c + + 프로그램을 만들 수 있습�
 ## <a name="see-also"></a>참조
 
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
-[C + + 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)
+[C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)

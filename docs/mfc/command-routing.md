@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 명령 라우팅'
 title: 명령 라우팅
 ms.date: 09/06/2019
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - handlers, command [MFC]
 - command routing
 ms.assetid: 9393a956-bdd4-47c5-9013-dbd680433f93
-ms.openlocfilehash: e47ffd38b342301da32abae9690738ef83c0426b
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 4004f74413f236599c5cdd14f6593bc5d2bd26b8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84620689"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97283448"
 ---
 # <a name="command-routing"></a>명령 라우팅
 
@@ -35,7 +36,7 @@ ms.locfileid: "84620689"
 
 |명령을 수신하는 개체 형식 . .|자신 및 다른 명령 대상 개체가 명령을 처리하는 순서|
 |----------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-|MDI 프레임 창(`CMDIFrameWnd`)|1. 활성`CMDIChildWnd`<br />2 .이 프레임 창<br />3. 응용 프로그램 ( `CWinApp` 개체)|
+|MDI 프레임 창(`CMDIFrameWnd`)|1. 활성 `CMDIChildWnd`<br />2 .이 프레임 창<br />3. 응용 프로그램 ( `CWinApp` 개체)|
 |문서 프레임 창(`CFrameWnd`, `CMDIChildWnd`)|1. 활성 뷰<br />2 .이 프레임 창<br />3. 응용 프로그램 ( `CWinApp` 개체)|
 |보기|1 .이 뷰<br />2. 보기에 첨부 된 문서|
 |문서|1 .이 문서<br />2. 문서에 첨부 된 문서 템플릿|
@@ -45,4 +46,4 @@ ms.locfileid: "84620689"
 
 ## <a name="see-also"></a>참고 항목
 
-[프레임워크가 처리기를 호출하는 방법](how-the-framework-calls-a-handler.md)
+[프레임 워크가 처리기를 호출 하는 방법](how-the-framework-calls-a-handler.md)

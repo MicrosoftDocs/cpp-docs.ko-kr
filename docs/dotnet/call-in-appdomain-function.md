@@ -1,4 +1,5 @@
 ---
+description: Call_in_appdomain 함수에 대해 자세히 알아보세요.
 title: call_in_appdomain 함수
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - call_in_appdomain function
 ms.assetid: 9a1a5026-b76b-4cae-a3d4-29badeb9db9c
-ms.openlocfilehash: 567b6d8fe9412e58f21de9a1031ec54c4bc01cdc
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ece4929e2b99b09f3c9148b50c609ec1b5596b3c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230898"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97282577"
 ---
 # <a name="call_in_appdomain-function"></a>call_in_appdomain 함수
 
@@ -53,7 +54,7 @@ RetType call_in_appdomain(
 *arg1 ... argN*<br/>
 다른 appdomain에 전달 되는 매개 변수는 0 ~ 15 `voidFunc` `nonvoidFunc` 입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 `voidFunc` `nonvoidFunc` 지정 된 응용 프로그램 도메인에서 또는를 실행 한 결과입니다.
 

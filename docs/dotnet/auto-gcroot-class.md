@@ -1,4 +1,5 @@
 ---
+description: Auto_gcroot 클래스에 대해 자세히 알아보세요.
 title: auto_gcroot 클래스
 ms.date: 01/16/2019
 ms.topic: reference
@@ -16,12 +17,12 @@ f1_keywords:
 helpviewer_keywords:
 - msclr::auto_gcroot
 ms.assetid: b5790912-265d-463e-a486-47302e91042a
-ms.openlocfilehash: 3f6190b0d16648490552c0f415251a3df2b33188
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9c763883a10906a8f63b7ba265576ab547750b66
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230950"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97282798"
 ---
 # <a name="auto_gcroot-class"></a>auto_gcroot 클래스
 
@@ -75,7 +76,7 @@ class auto_gcroot;
 
 Msclr **네임 스페이스**
 
-## <a name="auto_gcrootauto_gcroot"></a><a name="auto-gcroot"></a>auto_gcroot:: auto_gcroot
+## <a name="auto_gcrootauto_gcroot"></a><a name="auto-gcroot"></a> auto_gcroot:: auto_gcroot
 
 `auto_gcroot`생성자입니다.
 
@@ -191,7 +192,7 @@ in RefClassA destructor: second
 done
 ```
 
-## <a name="auto_gcrootauto_gcroot"></a><a name="tilde-auto-gcroot"></a>auto_gcroot:: ~ auto_gcroot
+## <a name="auto_gcrootauto_gcroot"></a><a name="tilde-auto-gcroot"></a> auto_gcroot:: ~ auto_gcroot
 
 `auto_gcroot`소멸자입니다.
 
@@ -238,7 +239,7 @@ ClassA destructor
 done
 ```
 
-## <a name="auto_gcrootattach"></a><a name="attach"></a>auto_gcroot:: attach
+## <a name="auto_gcrootattach"></a><a name="attach"></a> auto_gcroot:: attach
 
 `auto_gcroot`개체에 연결 합니다.
 
@@ -262,7 +263,7 @@ auto_gcroot<_element_type> & attach(
 
 ### <a name="return-value"></a>반환 값
 
-현재의 `auto_gcroot`입니다.
+현재 `auto_gcroot`입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -333,7 +334,7 @@ Hello from fourth A!
 in ClassA destructor:fourth
 ```
 
-## <a name="auto_gcrootget"></a><a name="get"></a>auto_gcroot:: get
+## <a name="auto_gcrootget"></a><a name="get"></a> auto_gcroot:: get
 
 포함 된 개체를 가져옵니다.
 
@@ -393,7 +394,7 @@ Hello from first A!
 in ClassA destructor:first
 ```
 
-## <a name="auto_gcrootrelease"></a><a name="release"></a>auto_gcroot:: release
+## <a name="auto_gcrootrelease"></a><a name="release"></a> auto_gcroot:: release
 
 관리에서 개체를 해제 `auto_gcroot` 합니다.
 
@@ -456,7 +457,7 @@ Hello from first A!
 done
 ```
 
-## <a name="auto_gcrootreset"></a><a name="reset"></a>auto_gcroot:: reset
+## <a name="auto_gcrootreset"></a><a name="reset"></a> auto_gcroot:: reset
 
 현재 소유 하 고 있는 개체를 삭제 하 고 필요에 따라 새 개체를 소유 합니다.
 
@@ -521,7 +522,7 @@ ClassA destructor: second
 done
 ```
 
-## <a name="auto_gcrootswap"></a><a name="swap"></a>auto_gcroot:: swap
+## <a name="auto_gcrootswap"></a><a name="swap"></a> auto_gcroot:: swap
 
 다른 개체와 개체를 교환 `auto_gcroot` 합니다.
 
@@ -563,7 +564,7 @@ s1 = 'string one', s2 = 'string two'
 s1 = 'string two', s2 = 'string one'
 ```
 
-## <a name="auto_gcrootoperator-gt"></a><a name="operator-arrow"></a>auto_gcroot:: operator-&gt;
+## <a name="auto_gcrootoperator-gt"></a><a name="operator-arrow"></a> auto_gcroot:: operator-&gt;
 
 멤버 액세스 연산자입니다.
 
@@ -612,7 +613,7 @@ Hello from first A!
 a->m_i = 5
 ```
 
-## <a name="auto_gcrootoperator"></a><a name="operator-assign"></a>auto_gcroot:: operator =
+## <a name="auto_gcrootoperator"></a><a name="operator-assign"></a> auto_gcroot:: operator =
 
 대입 연산자입니다.
 
@@ -704,7 +705,7 @@ done
 in ClassA destructor: third
 ```
 
-## <a name="auto_gcrootoperator-auto_gcroot"></a><a name="operator-auto-gcroot"></a>auto_gcroot:: operator auto_gcroot
+## <a name="auto_gcrootoperator-auto_gcroot"></a><a name="operator-auto-gcroot"></a> auto_gcroot:: operator auto_gcroot
 
 와 호환 되는 형식 사이의 형식 캐스팅 연산자 `auto_gcroot` 입니다.
 
@@ -759,7 +760,7 @@ Hello from first B!
 Hello from first A!
 ```
 
-## <a name="auto_gcrootoperator-bool"></a><a name="operator-bool"></a>auto_gcroot:: operator bool
+## <a name="auto_gcrootoperator-bool"></a><a name="operator-bool"></a> auto_gcroot:: operator bool
 
 조건식에 사용 하기 위한 연산자 `auto_gcroot` 입니다.
 
@@ -804,7 +805,7 @@ now s is valid
 now s is invalid
 ```
 
-## <a name="auto_gcrootoperator"></a><a name="operator-logical-not"></a>auto_gcroot:: operator!
+## <a name="auto_gcrootoperator"></a><a name="operator-logical-not"></a> auto_gcroot:: operator!
 
 조건식에 사용 하기 위한 연산자 `auto_gcroot` 입니다.
 

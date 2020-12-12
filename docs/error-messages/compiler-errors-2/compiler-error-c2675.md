@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2675'
 title: 컴파일러 오류 C2675
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2675
 ms.assetid: 4b92a12b-bff8-4dd5-a109-620065fc146c
-ms.openlocfilehash: 0b7b81ce7314fbad02d6873403fc5cf1bdd54709
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 71d52a8da09861078811757ad7af7c757e418e5c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74760376"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97282031"
 ---
 # <a name="compiler-error-c2675"></a>컴파일러 오류 C2675
 

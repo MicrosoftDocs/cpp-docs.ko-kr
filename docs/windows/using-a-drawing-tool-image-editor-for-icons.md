@@ -1,4 +1,5 @@
 ---
+description: '방법에 대 한 자세한 정보: 방법: 그리기 도구 사용'
 title: '방법: 그리기 도구 사용'
 ms.date: 02/15/2019
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - graphics [C++], custom brushes
 - custom brushes
 ms.assetid: 1f8c6eef-7760-45a9-a5cb-9e15c6f91245
-ms.openlocfilehash: 46ba1f1057484f2b5b1e1286482d80fd96312caf
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 9415b81eb520b626186fe321184bd1d7d7391b61
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502928"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97283266"
 ---
 # <a name="how-to-use-a-drawing-tool"></a>방법: 그리기 도구 사용
 
@@ -61,7 +62,7 @@ ms.locfileid: "91502928"
 
 ### <a name="to-select-and-use-a-drawing-tool-from-the-image-menu"></a>이미지 메뉴에서 그리기 도구를 선택 하 고 사용 하려면
 
-1. 메뉴 **이미지**  >  **도구**로 이동 합니다.
+1. 메뉴 **이미지**  >  **도구** 로 이동 합니다.
 
 1. 연계 하위 메뉴에서 사용 하려는 도구를 선택 합니다.
 
@@ -73,7 +74,7 @@ ms.locfileid: "91502928"
 
 ### <a name="to-draw-a-line"></a>선을 그리려면
 
-1. [이미지 편집기 도구 모음](./image-editor-for-icons.md) 을 사용 하거나 메뉴 **이미지**도구로 이동 하 여 >  **Tools** **선** 도구를 선택 합니다.
+1. [이미지 편집기 도구 모음](./image-editor-for-icons.md) 을 사용 하거나 메뉴 **이미지** 도구로 이동 하 여 >   **선** 도구를 선택 합니다.
 
 1. 필요한 경우 색 및 브러시를 선택 합니다.
 
@@ -99,13 +100,13 @@ ms.locfileid: "91502928"
 
 ## <a name="custom-brushes"></a>사용자 지정 브러시
 
-사용자 지정 브러시는 이미지 **편집기**의 미리 만든 브러시 중 하 나와 같이 선택 하 여 사용 하는 이미지의 사각형 부분입니다. 선택 영역에서 수행할 수 있는 모든 작업은 사용자 지정 브러시 에서도 수행할 수 있습니다.
+사용자 지정 브러시는 이미지 **편집기** 의 미리 만든 브러시 중 하 나와 같이 선택 하 여 사용 하는 이미지의 사각형 부분입니다. 선택 영역에서 수행할 수 있는 모든 작업은 사용자 지정 브러시 에서도 수행할 수 있습니다.
 
 ### <a name="to-create-a-custom-brush-from-a-portion-of-an-image"></a>이미지의 일부에서 사용자 지정 브러시를 만들려면
 
 1. 브러시에 사용할 이미지의 파트를 선택 합니다.
 
-1. **Shift** 키를 누른 상태에서 선택 영역을 선택 하 고 이미지 전체로 끌거나 메뉴 **이미지**로 이동을 선택 하  >  **여 브러시로 선택**합니다.
+1. **Shift** 키를 누른 상태에서 선택 영역을 선택 하 고 이미지 전체로 끌거나 메뉴 **이미지** 로 이동을 선택 하  >  **여 브러시로 선택** 합니다.
 
    선택 항목은 이미지 전체에서 선택 영역에 있는 색을 배포 하는 사용자 지정 브러시가 됩니다. 선택 항목의 복사본은 끌기 경로를 따라 유지 됩니다. 더 천천히 끌면 복사본이 더 많이 생성 됩니다.
 

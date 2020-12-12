@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: &lt; ostream &gt; 함수'
 title: '&lt;ostream&gt; 함수'
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - std::endl [C++]
 - std::ends [C++]
 - std::flush [C++]
-ms.openlocfilehash: 4db966797202b16911aa67b6fda7c81785d98166
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: fb99b713db4c29fe42b45858588181536aec4f5e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842639"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280523"
 ---
 # <a name="ltostreamgt-functions"></a>&lt;ostream&gt; 함수
 
@@ -44,18 +45,18 @@ basic_ostream<Elem, Tr>& endl(
 요소 형식입니다.
 
 *Ostr*\
-**Basic_ostream**형식의 개체입니다.
+**Basic_ostream** 형식의 개체입니다.
 
 *비교한*\
 문자 특성입니다.
 
 ### <a name="return-value"></a>반환 값
 
-**Basic_ostream**형식의 개체입니다.
+**Basic_ostream** 형식의 개체입니다.
 
 ### <a name="remarks"></a>설명
 
-조작자는 *Ostr*를 호출 합니다. [put](../standard-library/basic-ostream-class.md#put)(*ostr*.[ ](../standard-library/basic-ios-class.md#widen)(' \n '))를 확장 한 다음 *ostr*를 호출 합니다. [플러시](../standard-library/basic-ostream-class.md#flush). *Ostr*을 반환 합니다.
+조작자는 *Ostr* 를 호출 합니다. [put](../standard-library/basic-ostream-class.md#put)(*ostr*.[](../standard-library/basic-ios-class.md#widen)(' \n '))를 확장 한 다음 *ostr* 를 호출 합니다. [플러시](../standard-library/basic-ostream-class.md#flush). *Ostr* 을 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -102,7 +103,7 @@ basic_ostream<Elem, Tr>& ends(
 
 ### <a name="remarks"></a>설명
 
-조작자는 *Ostr*를 호출 합니다. [put](../standard-library/basic-ostream-class.md#put)(*Elem*(' \ 0 ')) *Ostr*을 반환 합니다.
+조작자는 *Ostr* 를 호출 합니다. [put](../standard-library/basic-ostream-class.md#put)(*Elem*(' \ 0 ')) *Ostr* 을 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -151,7 +152,7 @@ basic_ostream<Elem, Tr>& flush(
 
 ### <a name="remarks"></a>설명
 
-조작자는 *Ostr*를 호출 합니다. [플러시](../standard-library/basic-ostream-class.md#flush). *Ostr*을 반환 합니다.
+조작자는 *Ostr* 를 호출 합니다. [플러시](../standard-library/basic-ostream-class.md#flush). *Ostr* 을 반환 합니다.
 
 ### <a name="example"></a>예제
 

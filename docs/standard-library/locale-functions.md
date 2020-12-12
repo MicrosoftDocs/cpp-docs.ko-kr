@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: &lt; 로캘 &gt; 함수'
 title: '&lt;locale&gt; 함수'
 ms.date: 11/04/2016
 f1_keywords:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - std::tolower [C++]
 - std::toupper [C++]
 - std::use_facet [C++]
-ms.openlocfilehash: 91d0b40de557eb2414d6ee685795796c3290177c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 6bad3cab6886fcee34fba06e88ce54e216db4649
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833246"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97284618"
 ---
 # <a name="ltlocalegt-functions"></a>&lt;locale&gt; 함수
 
@@ -192,7 +193,7 @@ bool isalpha(CharType Ch, const locale& Loc)
 
 ### <a name="remarks"></a>설명
 
-템플릿 함수는 [use_facet](../standard-library/locale-functions.md#use_facet) <  [ctype](../standard-library/ctype-class.md) \< **CharType**> > () use_facet 반환 합니다 `Loc` . [는](../standard-library/ctype-class.md#is)( **ctype** \< **CharType**> :: **alpha**, `Ch` )입니다.
+템플릿 함수는 [](../standard-library/locale-functions.md#use_facet) <  [ctype](../standard-library/ctype-class.md) \< **CharType**> > () use_facet 반환 합니다 `Loc` . [는](../standard-library/ctype-class.md#is)( **ctype** \< **CharType**> :: **alpha**, `Ch` )입니다.
 
 ### <a name="example"></a>예제
 
@@ -257,7 +258,7 @@ bool iscntrl(CharType Ch, const locale& Loc)
 
 ### <a name="remarks"></a>설명
 
-템플릿 함수는 [use_facet](../standard-library/locale-functions.md#use_facet) <  [ctype](../standard-library/ctype-class.md) \< **CharType**> > () use_facet 반환 합니다 `Loc` . [is](../standard-library/ctype-class.md#is)( **ctype** \< **CharType**> :: **cntrl**, `Ch` )입니다.
+템플릿 함수는 [](../standard-library/locale-functions.md#use_facet) <  [ctype](../standard-library/ctype-class.md) \< **CharType**> > () use_facet 반환 합니다 `Loc` . [is](../standard-library/ctype-class.md#is)( **ctype** \< **CharType**> :: **cntrl**, `Ch` )입니다.
 
 ### <a name="example"></a>예제
 
@@ -322,7 +323,7 @@ bool isdigit(CharType Ch, const locale& Loc)
 
 ### <a name="remarks"></a>설명
 
-템플릿 함수는 [use_facet](../standard-library/locale-functions.md#use_facet) <  [ctype](../standard-library/ctype-class.md) \< **CharType**> > () use_facet 반환 합니다 `Loc` . [는](../standard-library/ctype-class.md#is)( **ctype** \< **CharType**> :: **digit**, `Ch` )입니다.
+템플릿 함수는 [](../standard-library/locale-functions.md#use_facet) <  [ctype](../standard-library/ctype-class.md) \< **CharType**> > () use_facet 반환 합니다 `Loc` . [는](../standard-library/ctype-class.md#is)( **ctype** \< **CharType**> :: **digit**, `Ch` )입니다.
 
 ### <a name="example"></a>예제
 
@@ -387,7 +388,7 @@ bool isgraph(CharType Ch, const locale& Loc)
 
 ### <a name="remarks"></a>설명
 
-템플릿 함수는 [use_facet](../standard-library/locale-functions.md#use_facet) <  [ctype](../standard-library/ctype-class.md) \< **CharType**> > () use_facet 반환 합니다 `Loc` . [is](../standard-library/ctype-class.md#is)( **ctype** \< **CharType**> :: **graph**, `Ch` )입니다.
+템플릿 함수는 [](../standard-library/locale-functions.md#use_facet) <  [ctype](../standard-library/ctype-class.md) \< **CharType**> > () use_facet 반환 합니다 `Loc` . [is](../standard-library/ctype-class.md#is)( **ctype** \< **CharType**> :: **graph**, `Ch` )입니다.
 
 ### <a name="example"></a>예제
 
@@ -452,7 +453,7 @@ bool islower(CharType Ch, const locale& Loc)
 
 ### <a name="remarks"></a>설명
 
-템플릿 함수는 [use_facet](../standard-library/locale-functions.md#use_facet) <  [ctype](../standard-library/ctype-class.md) \< **CharType**> > () use_facet 반환 합니다 `Loc` . [is](../standard-library/ctype-class.md#is)( **ctype** \< **CharType**> :: **lower**, `Ch` )입니다.
+템플릿 함수는 [](../standard-library/locale-functions.md#use_facet) <  [ctype](../standard-library/ctype-class.md) \< **CharType**> > () use_facet 반환 합니다 `Loc` . [is](../standard-library/ctype-class.md#is)( **ctype** \< **CharType**> :: **lower**, `Ch` )입니다.
 
 ### <a name="example"></a>예제
 
@@ -517,7 +518,7 @@ bool isprint(CharType Ch, const locale& Loc)
 
 ### <a name="remarks"></a>설명
 
-템플릿 함수는 [use_facet](../standard-library/locale-functions.md#use_facet) <  [ctype](../standard-library/ctype-class.md) \< **CharType**> > () use_facet 반환 합니다 `Loc` . [is](../standard-library/ctype-class.md#is)( **ctype** \< **CharType**> :: **print**, `Ch` )입니다.
+템플릿 함수는 [](../standard-library/locale-functions.md#use_facet) <  [ctype](../standard-library/ctype-class.md) \< **CharType**> > () use_facet 반환 합니다 `Loc` . [is](../standard-library/ctype-class.md#is)( **ctype** \< **CharType**> :: **print**, `Ch` )입니다.
 
 ### <a name="example"></a>예제
 
@@ -581,7 +582,7 @@ bool ispunct(CharType Ch, const locale& Loc)
 
 ### <a name="remarks"></a>설명
 
-템플릿 함수는 [use_facet](../standard-library/locale-functions.md#use_facet) `<` [ctype](../standard-library/ctype-class.md) \< **CharType**> > () use_facet 반환 합니다 `Loc` . [is](../standard-library/ctype-class.md#is)( **ctype** \< **CharType**> :: **punct**, `Ch` )입니다.
+템플릿 함수는 [](../standard-library/locale-functions.md#use_facet) `<` [ctype](../standard-library/ctype-class.md) \< **CharType**> > () use_facet 반환 합니다 `Loc` . [is](../standard-library/ctype-class.md#is)( **ctype** \< **CharType**> :: **punct**, `Ch` )입니다.
 
 ### <a name="example"></a>예제
 
@@ -646,7 +647,7 @@ bool isspace(CharType Ch, const locale& Loc)
 
 ### <a name="remarks"></a>설명
 
-템플릿 함수는 [use_facet](../standard-library/locale-functions.md#use_facet) <  [ctype](../standard-library/ctype-class.md) \< **CharType**> > () use_facet 반환 합니다 `Loc` . [는](../standard-library/ctype-class.md#is)( **ctype** \< **CharType**> :: **space**, `Ch` )입니다.
+템플릿 함수는 [](../standard-library/locale-functions.md#use_facet) <  [ctype](../standard-library/ctype-class.md) \< **CharType**> > () use_facet 반환 합니다 `Loc` . [는](../standard-library/ctype-class.md#is)( **ctype** \< **CharType**> :: **space**, `Ch` )입니다.
 
 ### <a name="example"></a>예제
 
@@ -711,7 +712,7 @@ bool isupper(CharType Ch, const locale& Loc)
 
 ### <a name="remarks"></a>설명
 
-템플릿 함수는 [use_facet](../standard-library/locale-functions.md#use_facet) <  [ctype](../standard-library/ctype-class.md) \< **CharType**> > () use_facet 반환 합니다 `Loc` . [is](../standard-library/ctype-class.md#is)( **ctype** \< **CharType**> :: **upper**, `Ch` )입니다.
+템플릿 함수는 [](../standard-library/locale-functions.md#use_facet) <  [ctype](../standard-library/ctype-class.md) \< **CharType**> > () use_facet 반환 합니다 `Loc` . [is](../standard-library/ctype-class.md#is)( **ctype** \< **CharType**> :: **upper**, `Ch` )입니다.
 
 ### <a name="example"></a>예제
 
@@ -776,7 +777,7 @@ bool isxdigit(CharType Ch, const locale& Loc)
 
 ### <a name="remarks"></a>설명
 
-템플릿 함수는 [use_facet](../standard-library/locale-functions.md#use_facet) <  [ctype](../standard-library/ctype-class.md) \< **CharType**> > () use_facet 반환 합니다 `Loc` . [는](../standard-library/ctype-class.md#is)( **ctype** \< **CharType**> :: **xdigit**, `Ch` )입니다.
+템플릿 함수는 [](../standard-library/locale-functions.md#use_facet) <  [ctype](../standard-library/ctype-class.md) \< **CharType**> > () use_facet 반환 합니다 `Loc` . [는](../standard-library/ctype-class.md#is)( **ctype** \< **CharType**> :: **xdigit**, `Ch` )입니다.
 
 16진수는 16을 기준으로 사용하여 숫자를 나타내는데, 숫자 0-9와 대/소문자를 구분하지 않는 문자 A-F를 사용하여 10진수 0-15를 나타냅니다.
 
@@ -843,7 +844,7 @@ CharType tolower(CharType Ch, const locale& Loc)
 
 ### <a name="remarks"></a>설명
 
-템플릿 함수는 [use_facet](../standard-library/locale-functions.md#use_facet) <  [ctype](../standard-library/ctype-class.md) \< **CharType**> > () use_facet 반환 합니다 `Loc` . [tolower](../standard-library/ctype-class.md#tolower)( `Ch` ).
+템플릿 함수는 [](../standard-library/locale-functions.md#use_facet) <  [ctype](../standard-library/ctype-class.md) \< **CharType**> > () use_facet 반환 합니다 `Loc` . [tolower](../standard-library/ctype-class.md#tolower)( `Ch` ).
 
 ### <a name="example"></a>예제
 
@@ -892,7 +893,7 @@ CharType toupper(CharType Ch, const locale& Loc)
 
 ### <a name="remarks"></a>설명
 
-템플릿 함수는 [use_facet](../standard-library/locale-functions.md#use_facet) <  [ctype](../standard-library/ctype-class.md) \< **CharType**> > () use_facet 반환 합니다 `Loc` . [toupper](../standard-library/ctype-class.md#toupper)( `Ch` ).
+템플릿 함수는 [](../standard-library/locale-functions.md#use_facet) <  [ctype](../standard-library/ctype-class.md) \< **CharType**> > () use_facet 반환 합니다 `Loc` . [toupper](../standard-library/ctype-class.md#toupper)( `Ch` ).
 
 ### <a name="example"></a>예제
 

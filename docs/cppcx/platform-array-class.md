@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Platform:: Array 클래스'
 title: Platform::Array 클래스
 ms.date: 12/30/2016
 ms.topic: reference
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Array Class
 ms.assetid: 7815ab40-88c5-42b0-83b8-081cef0cda31
-ms.openlocfilehash: 4903c18f981c87c418a6ab08595816ce22a7413c
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 76e8329cdc324bc7a8de338725d48188b79ac9f3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90742946"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97284202"
 ---
 # <a name="platformarray-class"></a>Platform::Array 클래스
 
@@ -34,9 +35,9 @@ Platform:: Array는 platform:: [WriteOnlyArray 클래스](../cppcx/platform-writ
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
-|[Array 생성자](#ctor)|클래스 템플릿 매개 변수 *T*로 지정 된, 수정 가능한 1 차원 형식 배열을 초기화 합니다.|
+|[Array 생성자](#ctor)|클래스 템플릿 매개 변수 *T* 로 지정 된, 수정 가능한 1 차원 형식 배열을 초기화 합니다.|
 
 ### <a name="methods"></a>메서드
 
@@ -44,7 +45,7 @@ Platform:: Array는 platform:: [WriteOnlyArray 클래스](../cppcx/platform-writ
 
 ### <a name="properties"></a>속성
 
-| 속성 | Description |
+| 이름 | 설명 |
 |--|--|
 | [Array:: Value](#value) | 현재 배열에 대한 핸들을 검색합니다. |
 
@@ -64,7 +65,7 @@ Platform:: Array를 사용 하는 시기 및 방법에 대 한 자세한 내용�
 
 ## <a name="array-constructors"></a><a name="ctor"></a> 배열 생성자
 
-클래스 템플릿 매개 변수 *T*로 지정 된, 수정 가능한 1 차원 형식 배열을 초기화 합니다.
+클래스 템플릿 매개 변수 *T* 로 지정 된, 수정 가능한 1 차원 형식 배열을 초기화 합니다.
 
 ### <a name="syntax"></a>구문
 
@@ -121,7 +122,7 @@ property Array^ Value;
 
 현재 배열에 대한 핸들입니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [Platform 네임스페이스](../cppcx/platform-namespace-c-cx.md)<br/>
 [Array 및 WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md)

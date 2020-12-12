@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2493'
 title: 컴파일러 오류 C2493
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2493
 ms.assetid: 68316cd5-682b-49c3-b6ea-23c4e5d296cf
-ms.openlocfilehash: e3c38167ff2b6d2b2f78a1357a9450a70cb421cc
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5b9f98fc2f21eadedd8316e60b249a387a0e80dc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216195"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97283677"
 ---
 # <a name="compiler-error-c2493"></a>컴파일러 오류 C2493
 

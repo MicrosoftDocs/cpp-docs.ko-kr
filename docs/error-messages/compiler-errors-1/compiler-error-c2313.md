@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2313'
 title: 컴파일러 오류 C2313
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2313
 ms.assetid: f70eb19b-c0a3-4fb2-ade1-3890a589928d
-ms.openlocfilehash: 0eb085d9959359b31b022c2268f0ea8c7b811b20
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 455bc3a833f576c051ff1531d921f8504789810e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74748127"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97282160"
 ---
 # <a name="compiler-error-c2313"></a>컴파일러 오류 C2313
 

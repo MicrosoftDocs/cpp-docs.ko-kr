@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 뷰에서 그리기'
 title: 뷰에 그리기
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - paint messages in view class [MFC]
 - device contexts, screen drawings
 ms.assetid: e3761db6-0f19-4482-a4cd-ac38ef7c4d3a
-ms.openlocfilehash: c60d99fdebcd64ad844bc19918a30beb90b86af3
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: b5d6b33d91f6a71048162078a926c5ad4336d6a1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618931"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97283409"
 ---
 # <a name="drawing-in-a-view"></a>뷰에 그리기
 
@@ -26,9 +27,9 @@ ms.locfileid: "84618931"
 
 1. 프레임 워크가 전달 하는 장치 컨텍스트 개체의 멤버 함수를 호출 하 여 데이터를 표시 `OnDraw` 합니다.
 
-문서 데이터가 변경 되 면 변경 내용을 반영 하기 위해 뷰를 다시 그려야 합니다. 일반적으로이는 사용자가 문서에 대 한 보기를 변경 하는 경우에 발생 합니다. 이 경우 뷰는 문서의 [UpdateAllViews](reference/cdocument-class.md#updateallviews) 멤버 함수를 호출 하 여 동일한 문서에 대 한 모든 보기를 자동으로 업데이트 합니다. `UpdateAllViews`각 뷰의 [OnUpdate](reference/cview-class.md#onupdate) 멤버 함수를 호출 합니다. 의 기본 구현에서는 `OnUpdate` 뷰의 전체 클라이언트 영역을 무효화 합니다. 이를 재정의 하 여 문서의 수정 된 부분에 매핑되는 클라이언트 영역의 영역만 무효화할 수 있습니다.
+문서 데이터가 변경 되 면 변경 내용을 반영 하기 위해 뷰를 다시 그려야 합니다. 일반적으로이는 사용자가 문서에 대 한 보기를 변경 하는 경우에 발생 합니다. 이 경우 뷰는 문서의 [UpdateAllViews](reference/cdocument-class.md#updateallviews) 멤버 함수를 호출 하 여 동일한 문서에 대 한 모든 보기를 자동으로 업데이트 합니다. `UpdateAllViews` 각 뷰의 [OnUpdate](reference/cview-class.md#onupdate) 멤버 함수를 호출 합니다. 의 기본 구현에서는 `OnUpdate` 뷰의 전체 클라이언트 영역을 무효화 합니다. 이를 재정의 하 여 문서의 수정 된 부분에 매핑되는 클라이언트 영역의 영역만 무효화할 수 있습니다.
 
-`UpdateAllViews`클래스의 멤버 함수와 `CDocument` `OnUpdate` 클래스의 멤버 함수를 `CView` 사용 하면 문서에서 수정 된 부분을 설명 하는 정보를 전달할 수 있습니다. 이 "힌트" 메커니즘을 통해 뷰가 다시 그려야 하는 영역을 제한할 수 있습니다. `OnUpdate`두 개의 "힌트" 인수를 사용 합니다. **LPARAM**형식의 첫 번째 *lhint*를 사용 하면 원하는 데이터를 전달할 수 있으며, * 형식의 두 번째, *phint*를 사용 하 여 `CObject` 에서 파생 된 개체에 대 한 포인터를 전달할 수 있습니다 `CObject` .
+`UpdateAllViews`클래스의 멤버 함수와 `CDocument` `OnUpdate` 클래스의 멤버 함수를 `CView` 사용 하면 문서에서 수정 된 부분을 설명 하는 정보를 전달할 수 있습니다. 이 "힌트" 메커니즘을 통해 뷰가 다시 그려야 하는 영역을 제한할 수 있습니다. `OnUpdate` 두 개의 "힌트" 인수를 사용 합니다. **LPARAM** 형식의 첫 번째 *lhint* 를 사용 하면 원하는 데이터를 전달할 수 있으며, * 형식의 두 번째, *phint* 를 사용 하 여 `CObject` 에서 파생 된 개체에 대 한 포인터를 전달할 수 있습니다 `CObject` .
 
 뷰가 무효화 되 면 Windows에서 **WM_PAINT** 메시지를 보냅니다. 뷰의 [OnPaint](reference/cwnd-class.md#onpaint) handler 함수는 [CPaintDC](reference/cpaintdc-class.md) 클래스의 장치 컨텍스트 개체를 만들고 뷰의 멤버 함수를 호출 하 여 메시지에 응답 합니다 `OnDraw` . 일반적으로는 재정의 처리기 함수를 작성할 필요가 없습니다 `OnPaint` .
 

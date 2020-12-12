@@ -1,16 +1,17 @@
 ---
+description: Windows Forms/MFC 프로그래밍 차이점에 대해 자세히 알아보세요.
 title: Windows Forms-MFC 프로그래밍 차이점
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC [C++], Windows Forms support
 - Windows Forms [C++], compared to MFC
 ms.assetid: f3bfcf45-cfd4-45a4-8cde-5f4dbb18ee51
-ms.openlocfilehash: 136549bb457cc17293d4c7201c9836d9094eea94
-ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
+ms.openlocfilehash: a48b4f54e44145abab33990e20ca76ed654659e0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "79544822"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97283942"
 ---
 # <a name="windows-formsmfc-programming-differences"></a>Windows Forms/MFC 프로그래밍의 차이점
 
@@ -42,7 +43,7 @@ MFC와 함께 사용 Windows Forms을 보여 주는 예제 응용 프로그램�
 
    MFC는 문서의 더티 상태를 유지 합니다. 따라서 응용 프로그램을 닫거나 응용 프로그램을 포함 하는 마지막 보기를 닫거나 Windows에서 종료 하는 경우 MFC는 문서를 저장 하 라는 메시지를 표시 합니다. Windows Forms에는 해당 하는 지원 기능이 없습니다.
 
-- Commands
+- 명령
 
    MFC에는 명령의 개념이 있습니다. 메뉴 모음, 도구 모음 및 상황에 맞는 메뉴는 모두 동일한 명령 (예: 잘라내기 및 복사)을 호출할 수 있습니다. Windows Forms에서 명령은 특정 UI 요소 (예: 메뉴 항목)의 긴밀 하 게 바인딩된 이벤트입니다. 따라서 모든 명령 이벤트를 명시적으로 후크 해야 합니다. Windows Forms에서 단일 처리기를 사용 하 여 여러 이벤트를 처리할 수도 있습니다. 자세한 내용은 [Windows Forms에서 단일 이벤트 처리기에 여러 이벤트 연결](/dotnet/framework/winforms/how-to-connect-multiple-events-to-a-single-event-handler-in-windows-forms)을 참조 하세요.
 

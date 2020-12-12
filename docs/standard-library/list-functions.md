@@ -1,20 +1,21 @@
 ---
-title: '&lt;list&gt; 함수 | Microsoft Docs'
+description: '자세한 정보: &lt; 함수 목록 &gt; 표시'
+title: '&lt;&gt;함수 나열 | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - list/std::swap
-ms.openlocfilehash: 04f00a9274018432cd03917ae5485f2d395649e4
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 6a94fcc916db08a510a968b66b0a0dc0cfa9b8e5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79425606"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97284709"
 ---
-# <a name="ltlistgt-functions"></a>&lt;list&gt; 함수
+# <a name="ltlistgt-functions"></a>&lt;목록 &gt; 함수
 
-## <a name="swap"></a>스왑을
+## <a name="swap"></a><a name="swap"></a> 스왑을
 
 두 목록의 요소를 교환합니다.
 
@@ -25,7 +26,7 @@ template <class T, class Allocator>
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽*\
+*비어*\
 `list` 형식의 개체입니다.
 
 *오른쪽*\

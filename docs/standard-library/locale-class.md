@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: locale 클래스'
 title: locale 클래스
 ms.date: 07/20/2020
 f1_keywords:
@@ -21,12 +22,12 @@ helpviewer_keywords:
 - std::locale [C++], facet
 - std::locale [C++], id
 ms.assetid: 7dd6d271-472d-4750-8fb5-ea8f55fbef62
-ms.openlocfilehash: 55aeaf27b1c31ef0dba68d0ead3633590777cbdf
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: e934a2e892f0b68926369c8e4a4128162345dd83
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040603"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97284631"
 ---
 # <a name="locale-class"></a>locale 클래스
 
@@ -112,7 +113,7 @@ messages<wchar_t>
 
 이러한 미리 정의 된 패싯 중 일부는 `iostream` 숫자 값과 텍스트 시퀀스 사이의 변환을 제어 하기 위해 클래스에서 사용 됩니다.
 
-클래스 로캘 개체는 또한 로캘 이름을 [string](../standard-library/string-typedefs.md#string) 클래스의 개체로 저장합니다. 잘못된 로캘 이름을 사용하여 로캘 패싯 또는 로캘 개체를 만들 경우 [runtime_erro](../standard-library/runtime-error-class.md) 클래스의 개체가 throw됩니다. 저장 된 로캘 이름은 `"*"` 로캘 개체에서 C 스타일 로캘이 개체로 표현 된 로캘과 정확히 일치 하는지 확신할 수 없는 경우입니다. 그렇지 않으면 `locale_object` name을 호출 하 여 일부 로캘 개체에 대해 표준 C 라이브러리 내에서 일치 하는 로캘을 설정할 수 있습니다 `setlocale(LC_ALL , locale_object.` [name](#name) `().c_str())` .
+클래스 로캘 개체는 또한 로캘 이름을 [string](../standard-library/string-typedefs.md#string) 클래스의 개체로 저장합니다. 잘못된 로캘 이름을 사용하여 로캘 패싯 또는 로캘 개체를 만들 경우 [runtime_erro](../standard-library/runtime-error-class.md) 클래스의 개체가 throw됩니다. 저장 된 로캘 이름은 `"*"` 로캘 개체에서 C 스타일 로캘이 개체로 표현 된 로캘과 정확히 일치 하는지 확신할 수 없는 경우입니다. 그렇지 않으면 `locale_object` name을 호출 하 여 일부 로캘 개체에 대해 표준 C 라이브러리 내에서 일치 하는 로캘을 설정할 수 있습니다 `setlocale(LC_ALL , locale_object.` [](#name) `().c_str())` .
 
 이 구현에서는 정적 멤버 함수도 호출하여
 
@@ -159,14 +160,14 @@ cout.imbue(loc);
 
 ### <a name="static-functions"></a>정적 함수
 
-|Name|Description|
+|Name|설명|
 |-|-|
 |[기존](#classic)|정적 멤버 함수는 클래식 C 로캘을 나타내는 로캘 개체를 반환합니다.|
 |[global](#global)|프로그램에 대한 기본 로컬을 다시 설정합니다.|
 
 ### <a name="operators"></a>연산자
 
-|연산자|Description|
+|연산자|설명|
 |-|-|
 |[연산자 =](#op_eq)|로캘을 할당 합니다.|
 |[연산자! =](#op_neq)|두 로캘이 다른지 테스트합니다.|
@@ -175,7 +176,7 @@ cout.imbue(loc);
 
 ### <a name="classes"></a>클래스
 
-|클래스|Description|
+|클래스|설명|
 |-|-|
 |[패싯에](#facet_class)|모든 로캘 패싯에 대한 기본 클래스로 사용하는 클래스입니다.|
 |[`id`](#id_class)|멤버 클래스는 로캘의 패싯을 조회하기 위한 인덱스로 사용되는 고유한 패싯 ID를 제공합니다.|
@@ -297,7 +298,7 @@ locale combine(const locale& source_locale) const;
 
 ### <a name="return-value"></a>반환 값
 
-멤버 함수는 source_locale에 나열 된 패싯을 대체 하거나 ** \* 이** 패싯을 추가 하는 로캘 개체를 반환 합니다 `Facet` . *source_locale*
+멤버 함수는 source_locale에 나열 된 패싯을 대체 하거나 **\* 이** 패싯을 추가 하는 로캘 개체를 반환 합니다 `Facet` . 
 
 ### <a name="example"></a>예제
 
@@ -454,7 +455,7 @@ locale(const locale& from_locale, const Facet* new_facet);
 
 ### <a name="remarks"></a>설명
 
-첫 번째 생성자는 전역 로캘과 일치하도록 개체를 초기화합니다. 두 번째와 세 번째 생성자는 *locale_name*로캘 이름과 일관 된 동작을 갖도록 모든 로캘 범주를 초기화 합니다. 나머지 생성자는 다음과 같은 예외를 제외 하 고 *from_locale*복사 합니다.
+첫 번째 생성자는 전역 로캘과 일치하도록 개체를 초기화합니다. 두 번째와 세 번째 생성자는 *locale_name* 로캘 이름과 일관 된 동작을 갖도록 모든 로캘 범주를 초기화 합니다. 나머지 생성자는 다음과 같은 예외를 제외 하 고 *from_locale* 복사 합니다.
 
 `locale(const locale& from_locale, const locale& Other, category new_category);`
 
@@ -468,7 +469,7 @@ C & *new_category* 가 0 *이 아닌 범주* c에 해당 하는 패싯을 대체
 
 `template<class Facet> locale(const locale& from_locale, Facet* new_facet);`
 
-*new_facet* 가 null 포인터가 아닌 경우 *new_facet*패싯 *from_locale* 를 대체 하거나이를에 추가 합니다.
+*new_facet* 가 null 포인터가 아닌 경우 *new_facet* 패싯 *from_locale* 를 대체 하거나이를에 추가 합니다.
 
 로캘 이름 *locale_name* null 포인터 이거나 잘못 된 경우 함수는 [runtime_error](../standard-library/runtime-error-class.md)를 throw 합니다.
 
@@ -641,7 +642,7 @@ bool operator()(
 
 ### <a name="return-value"></a>반환 값
 
-- **`true`***left* 가 사전순으로 보다 작은 경우 *이 고, 그렇지*않으면 **`false`** 입니다.
+- **`true`***left* 가 사전순으로 보다 작은 경우 *이 고, 그렇지* 않으면 **`false`** 입니다.
 
 ### <a name="remarks"></a>설명
 

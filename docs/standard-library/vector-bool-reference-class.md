@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: vector &lt; bool &gt; :: reference 클래스'
 title: vector&lt;bool&gt;::reference 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - vector<bool> reference class
 ms.assetid: f27854f9-0ef0-4e7e-ad2e-cd53b6cb3334
-ms.openlocfilehash: 3dde17522c05a05bda04c338682b4b3f9920a972
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4e9e4700f8af269f02f038c37d55460bae3a2a96
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228104"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280484"
 ---
 # <a name="vectorltboolgtreference-class"></a>vector&lt;bool&gt;::reference 클래스
 
@@ -38,7 +39,7 @@ bool& refb = vb[1];   // conversion error - do not use
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더**:\<vector>
+**헤더**: \<vector>
 
 **네임스페이스:** std
 

@@ -1,15 +1,16 @@
 ---
+description: '자세히 알아보기: 견고성'
 title: 견고성
 ms.date: 11/04/2016
 helpviewer_keywords:
 - robustness [CRT]
 ms.assetid: 7f1a87f8-eff9-4b76-ae9b-d133d3de6adf
-ms.openlocfilehash: 9de2611e29f5f9bfd08839517e873c3dda225af0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7dfe3d40eae4c67f45d4332ce22255a44c33f728
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211595"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97284514"
 ---
 # <a name="robustness"></a>견고성
 
@@ -17,7 +18,7 @@ ms.locfileid: "87211595"
 
 ## <a name="run-time-robustness-functions"></a>런타임 견고성 함수
 
-|함수|Windows Server Update Services와 함께|
+|함수|기능|
 |--------------|---------|
 |[_set_new_handler](../c-runtime-library/reference/set-new-handler.md)|**`new`** 연산자가 메모리 할당에 실패 하는 경우 오류 처리 메커니즘에 제어를 전달 합니다.|
 |[_set_se_translator](../c-runtime-library/reference/set-se-translator.md)|Win32 예외(C 구조적 예외)를 C++ 형식 예외로 처리합니다.|

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2053'
 title: 컴파일러 오류 C2053
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2053
 ms.assetid: 13324c85-13a8-4996-bd42-a31bfe7ff80f
-ms.openlocfilehash: a74e8104ec55e465875846b48186b9abdcb0f2f0
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 6ead23c4a32e2f781bbc070284d6c83118e0c569
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75302070"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97283721"
 ---
 # <a name="compiler-error-c2053"></a>컴파일러 오류 C2053
 

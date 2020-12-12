@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: RAND_MAX'
 title: RAND_MAX
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - RAND_MAX constant
 ms.assetid: a2039697-8908-4911-bd2d-a2bdd19912a0
-ms.openlocfilehash: d9174198b9fff8411f20bbe309ef5900c3dcaaee
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: 77cd86cd0378c07195c44fb429b5b12d3f1d0a60
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57749323"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97284501"
 ---
-# <a name="randmax"></a>RAND_MAX
+# <a name="rand_max"></a>RAND_MAX
 
 ## <a name="syntax"></a>구문
 
@@ -21,7 +22,7 @@ ms.locfileid: "57749323"
 #include <stdlib.h>
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 상수 `RAND_MAX`는 `rand` 함수에서 반환할 수 있는 최대값입니다. `RAND_MAX`는 0x7fff 값으로 정의됩니다.
 

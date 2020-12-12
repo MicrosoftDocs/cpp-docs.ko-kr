@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: auto_handle'
 title: auto_handle
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,14 +8,14 @@ f1_keywords:
 helpviewer_keywords:
 - auto_handle
 ms.assetid: 505e967a-b75f-4bd8-8f46-57eb66c53538
-ms.openlocfilehash: 05fe344514099a4fdd53315cf979a2be0fec1695
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 584959ea958a2a1888df5f4696e6c4fe5cd38df4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62364495"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97282629"
 ---
-# <a name="autohandle"></a>auto_handle
+# <a name="auto_handle"></a>auto_handle
 
 `auto_handle` 클래스 및 `swap` 함수를 정의합니다.
 
@@ -30,8 +31,8 @@ ms.locfileid: "62364495"
 
 [auto_handle 클래스](../dotnet/auto-handle-class.md)
 
-[swap 함수(auto_handle)](../dotnet/swap-function-auto-handle.md)
+[swap 함수 (auto_handle)](../dotnet/swap-function-auto-handle.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[C++ 지원 라이브러리](../dotnet/cpp-support-library.md)
+[C + + 지원 라이브러리](../dotnet/cpp-support-library.md)

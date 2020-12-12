@@ -1,17 +1,18 @@
 ---
+description: '자세히 알아보기: `scanf` 너비 사양'
 title: scanf 너비 사양
 ms.date: 10/22/2019
 helpviewer_keywords:
 - scanf function, width specification
 ms.assetid: 94b4e8fe-c4a2-4799-8b6c-a2cf28ffb09c
-ms.openlocfilehash: 781e292140babd61fbcde77cefcb917736b17cc3
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f4b0e13ef87add74bc802ba11ea6b87d0dfc6b8a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87188741"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97284436"
 ---
-# <a name="scanf-width-specification"></a>`scanf`너비 사양
+# <a name="scanf-width-specification"></a>`scanf` 너비 사양
 
 이 정보는 `scanf_s`와 같은 보안 버전을 비롯하여 함수의 `scanf` 패밀리에서 형식 문자열의 해석에 적용됩니다. 다음 함수는 일반적으로 입력 스트림이 일련의 토큰으로 나뉜다고 가정합니다. 토큰은 공백 (공백, 탭 또는 줄 바꿈)으로 구분 되거나 숫자 형식의 경우 숫자 텍스트로 변환할 수 없는 첫 번째 문자가 나타내는 숫자 데이터 형식의 자연 스러운 끝으로 구분 됩니다. 입력 구문 분석을 토큰의 자연스러운 끝 이전에 중단하는 데 너비 지정을 사용할 수 있습니다.
 
@@ -32,17 +33,17 @@ scanf_s("%20s", str, 21);
 
 ## <a name="the-size-prefix"></a>크기 접두사
 
-선택적 접두사 **h**, **hh**, **l**, **ll**, **I64**및 **l** 은 `argument` (수정 하는 형식 문자에 따라 long 또는 short, 단일 바이트 문자 또는 와이드 문자)의 크기를 표시 합니다. 이러한 서식 지정 문자는 `scanf` 또는 `wscanf` 함수의 형식 문자와 함께 사용되어 다음 표에 표시된 것처럼 인수의 해석을 지정합니다. **I64** 형식 접두사는 Microsoft 확장 이며 표준 C와 호환 되지 않습니다. 형식 문자 및 해당 의미는 형식 [ `scanf` 필드 문자](../c-runtime-library/scanf-type-field-characters.md)의 "scanf 함수에 대 한 형식 문자" 표에 설명 되어 있습니다.
+선택적 접두사 **h**, **hh**, **l**, **ll**, **I64** 및 **l** 은 `argument` (수정 하는 형식 문자에 따라 long 또는 short, 단일 바이트 문자 또는 와이드 문자)의 크기를 표시 합니다. 이러한 서식 지정 문자는 `scanf` 또는 `wscanf` 함수의 형식 문자와 함께 사용되어 다음 표에 표시된 것처럼 인수의 해석을 지정합니다. **I64** 형식 접두사는 Microsoft 확장 이며 표준 C와 호환 되지 않습니다. 형식 문자 및 해당 의미는 형식 [ `scanf` 필드 문자](../c-runtime-library/scanf-type-field-characters.md)의 "scanf 함수에 대 한 형식 문자" 표에 설명 되어 있습니다.
 
 > [!NOTE]
-> 형식의 데이터와 함께 사용 하는 경우 **h**, **l**및 **l** 접두사는 Microsoft 확장 **`char`** 입니다.
+> 형식의 데이터와 함께 사용 하는 경우 **h**, **l** 및 **l** 접두사는 Microsoft 확장 **`char`** 입니다.
 
 ### <a name="size-prefixes-for-scanf-and-wscanf-format-type-specifiers"></a>`scanf`및 `wscanf` 서식 형식 지정자에 대 한 크기 접두사
 
 |지정할 함수|접두사 사용|형식 지정자 사용|
 |----------------|----------------|-------------------------|
 |**`double`**|**l**|**e**, **E**, **f**, **g** 또는 **G**|
-|**`long double`**(와 동일 **`double`** )|**L-value**|**e**, **E**, **f**, **g** 또는 **G**|
+|**`long double`** (와 동일 **`double`** )|**L**|**e**, **E**, **f**, **g** 또는 **G**|
 |**`long int`**|**l**|**d**, **i**, **o**, **x** 또는 **X**|
 |**`long unsigned int`**|**l**|**u**|
 |**`long long`**|**드리겠습니다**|**d**, **i**, **o**, **x** 또는 **X**|
@@ -54,13 +55,13 @@ scanf_s("%20s", str, 21);
 |단일 바이트 문자(`scanf` 사용)|**h**|**c** 또는 **c**|
 |단일 바이트 문자(`wscanf` 사용)|**h**|**c** 또는 **c**|
 |와이드 문자(`scanf` 사용)|**l**|**c** 또는 **c**|
-|와이드 문자(`wscanf` 사용)|**l**|**c**또는 **c**|
-|단일 바이트 문자열 (사용)`scanf`|**h**|**s** 또는 **S**|
-|단일 바이트 문자열 (사용)`wscanf`|**h**|**s** 또는 **S**|
-|을 사용 하는 와이드 문자열`scanf`|**l**|**s** 또는 **S**|
-|을 사용 하는 와이드 문자열`wscanf`|**l**|**s** 또는 **S**|
+|와이드 문자(`wscanf` 사용)|**l**|**c** 또는 **c**|
+|단일 바이트 문자열 (사용) `scanf`|**h**|**s** 또는 **S**|
+|단일 바이트 문자열 (사용) `wscanf`|**h**|**s** 또는 **S**|
+|을 사용 하는 와이드 문자열 `scanf`|**l**|**s** 또는 **S**|
+|을 사용 하는 와이드 문자열 `wscanf`|**l**|**s** 또는 **S**|
 
-다음 예에서는 `scanf_s` 함수 및 `wscanf_s` 함수와 함께 **h** 및 **l**를 사용합니다.
+다음 예에서는 `scanf_s` 함수 및 `wscanf_s` 함수와 함께 **h** 및 **l** 를 사용합니다.
 
 ```C
 scanf_s("%ls", &x, 2);     // Read a wide-character string
@@ -71,7 +72,7 @@ wscanf_s(L"%hC", &x, 2);    // Read a single-byte character
 
 ## <a name="reading-undelimited-strings"></a>구분 되지 않은 문자열 읽기
 
-공백 문자로 구분 되지 않는 문자열을 읽으려면 대괄호 ()의 문자 집합이 **`[ ]`** **s** (문자열) 형식 문자를 대체할 수 있습니다. 대괄호 안에 있는 문자 집합을 *제어 문자열*이라고 합니다. 해당 입력 필드는 제어 문자열에 나타나지 않는 첫 번째 문자까지 읽습니다. 집합의 첫 번째 문자가 캐럿 () 인 경우 **`^`** 효과가 반대가 됩니다. 입력 필드는 문자 집합의 나머지 부분에 표시 되는 첫 번째 문자까지 읽힙니다.
+공백 문자로 구분 되지 않는 문자열을 읽으려면 대괄호 ()의 문자 집합이 **`[ ]`** **s** (문자열) 형식 문자를 대체할 수 있습니다. 대괄호 안에 있는 문자 집합을 *제어 문자열* 이라고 합니다. 해당 입력 필드는 제어 문자열에 나타나지 않는 첫 번째 문자까지 읽습니다. 집합의 첫 번째 문자가 캐럿 () 인 경우 **`^`** 효과가 반대가 됩니다. 입력 필드는 문자 집합의 나머지 부분에 표시 되는 첫 번째 문자까지 읽힙니다.
 
 % **[A-z]** 및 **% [z-a]** 는 모두 **% [abcde...z에 해당 하는 것으로 해석 됩니다. z]**. 일반적인 `scanf` 함수 확장 이지만 표준 C에서는 필요 하지 않습니다.
 
@@ -98,4 +99,4 @@ wscanf_s(L"%hC", &x, 2);    // Read a single-byte character
 [`scanf`, `_scanf_l`, `wscanf`, `_wscanf_l`](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)<br/>
 [`scanf_s`, `_scanf_s_l`, `wscanf_s`, `_wscanf_s_l`](../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)<br/>
 [형식 사양 필드: `scanf` 및 `wscanf` 함수](../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md)<br/>
-[`scanf`형식 필드 문자](../c-runtime-library/scanf-type-field-characters.md)<br/>
+[`scanf` 형식 필드 문자](../c-runtime-library/scanf-type-field-characters.md)<br/>

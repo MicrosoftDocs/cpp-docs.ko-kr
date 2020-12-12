@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Platform:: Collections:: InputIterator 클래스'
 title: Platform::Collections::InputIterator 클래스
 ms.date: 03/27/2019
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - InputIterator Class
 ms.assetid: ef72eea4-32a9-42b9-8119-ce87dbdcd3be
-ms.openlocfilehash: 4aeef07a34c04bd1ab47acf808026024faada567
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7345435c57c75c04f0eb30d9773d655d713853de
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218431"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97283959"
 ---
 # <a name="platformcollectionsinputiterator-class"></a>Platform::Collections::InputIterator 클래스
 
@@ -38,7 +39,7 @@ InputIterator 템플릿 클래스의 형식 이름입니다.
 |----------|-----------------|
 |`difference_type`|포인터 차이(ptrdiff_t)입니다.|
 |`iterator_category`|입력 반복기의 범주(::std::input_iterator_tag)입니다.|
-|`pointer`|에 대 한 포인터입니다.`const X`|
+|`pointer`|에 대 한 포인터입니다. `const X`|
 |`reference`|`const X`에 대한 참조입니다.|
 |`value_type`|`X` 형식 이름입니다.|
 
@@ -68,7 +69,7 @@ InputIterator 템플릿 클래스의 형식 이름입니다.
 
 **네임스페이스:** Platform::Collections
 
-## <a name="inputiteratorinputiterator-constructor"></a><a name="ctor"></a>InputIterator:: InputIterator 생성자
+## <a name="inputiteratorinputiterator-constructor"></a><a name="ctor"></a> InputIterator:: InputIterator 생성자
 
 InputIterator 클래스의 새 인스턴스를 초기화합니다.
 
@@ -81,10 +82,10 @@ explicit InputIterator(Windows::Foundation::Collections<X>^ iterator);
 
 ### <a name="parameters"></a>매개 변수
 
-*반복*<br/>
+*iterator*<br/>
 반복기 개체입니다.
 
-## <a name="inputiteratoroperator-gt-operator"></a><a name="operator-arrow"></a>InputIterator:: operator- &gt; 연산자
+## <a name="inputiteratoroperator-gt-operator"></a><a name="operator-arrow"></a> InputIterator:: operator- &gt; 연산자
 
 현재 InputIterator가 지정하는 요소의 주소를 검색합니다.
 
@@ -98,7 +99,7 @@ pointer operator->() const;
 
 현재 InputIterator가 지정하는 요소의 주소입니다.
 
-## <a name="inputiteratoroperator-operator"></a><a name="operator-dereference"></a>InputIterator:: operator \* 연산자
+## <a name="inputiteratoroperator-operator"></a><a name="operator-dereference"></a> InputIterator:: operator \* 연산자
 
 현재 InputIterator가 지정하는 요소에 대한 참조를 검색합니다.
 
@@ -112,7 +113,7 @@ reference operator*() const;
 
 현재 InputIterator가 지정하는 요소입니다.
 
-## <a name="inputiteratoroperator-operator"></a><a name="operator-equality"></a>InputIterator:: operator = = 연산자
+## <a name="inputiteratoroperator-operator"></a><a name="operator-equality"></a> InputIterator:: operator = = 연산자
 
 현재 InputIterator가 지정된 InputIterator와 같은지 여부를 나타냅니다.
 
@@ -127,11 +128,11 @@ bool operator== (const InputIterator& other) const;
 *다른*<br/>
 다른 InputIterator입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-**`true`** 현재 InputIterator가 *다른*와 같으면이 고, 그렇지 않으면입니다. 그렇지 않으면 **`false`** 입니다.
+**`true`** 현재 InputIterator가 *다른* 와 같으면이 고, 그렇지 않으면입니다. 그렇지 않으면 **`false`** 입니다.
 
-## <a name="inputiteratoroperator-operator"></a><a name="operator-increment"></a>InputIterator:: operator + + 연산자
+## <a name="inputiteratoroperator-operator"></a><a name="operator-increment"></a> InputIterator:: operator + + 연산자
 
 현재 InputIterator를 증가시킵니다.
 
@@ -152,7 +153,7 @@ InputIterator operator++(int);
 
 두 번째 구문은 현재 InputIterator를 사후에 증가시킵니다. **`int`** 두 번째 구문의 형식은 실제 정수 피연산자가 아니라 후 위 증가 연산을 나타냅니다.
 
-## <a name="inputiteratoroperator-operator"></a><a name="operator-inequality"></a>InputIterator:: operator! = 연산자
+## <a name="inputiteratoroperator-operator"></a><a name="operator-inequality"></a> InputIterator:: operator! = 연산자
 
 현재 InputIterator가 지정된 InputIterator와 같지 않은지 여부를 나타냅니다.
 
@@ -167,9 +168,9 @@ bool operator!=(const InputIterator& other) const;
 *다른*<br/>
 다른 InputIterator입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-**`true`** 현재 InputIterator가 *다른*와 같지 않으면이 고, 그렇지 않으면입니다. 그렇지 않으면 **`false`** 입니다.
+**`true`** 현재 InputIterator가 *다른* 와 같지 않으면이 고, 그렇지 않으면입니다. 그렇지 않으면 **`false`** 입니다.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 관리 되는 예외 사용의 기본 개념'
 title: 관리되는 예외 사용의 기본 개념
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - throwing exceptions, managed exceptions
 - Visual C++, handling managed exceptions
 ms.assetid: 40ce8931-1ecc-491a-815f-733b23fcba35
-ms.openlocfilehash: 4eeec5db00ceca5429f4a3a270e1b249a8955249
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1c6e405de2a82e32375092007dcc1f0fd8f654c0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230924"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97282603"
 ---
 # <a name="basic-concepts-in-using-managed-exceptions"></a>관리되는 예외 사용의 기본 개념
 
@@ -31,11 +32,11 @@ ms.locfileid: "87230924"
 
 **/Clr** 옵션을 사용 하 여 컴파일하면 clr 예외를 처리할 수 있을 뿐만 아니라 clr 예외를 <xref:System.Exception> 처리 하는 데 유용한 여러 메서드를 제공할 수 있으며 사용자 정의 예외 클래스에 대 한 기본 클래스로 사용 하는 것이 좋습니다.
 
-**/Clr**에서 인터페이스에서 파생 된 예외 형식을 catch 하는 것은 지원 되지 않습니다. 또한 공용 언어 런타임에서는 스택 오버플로 예외를 catch 하는 것을 허용 하지 않습니다. 스택 오버플로 예외는 프로세스를 종료 합니다.
+**/Clr** 에서 인터페이스에서 파생 된 예외 형식을 catch 하는 것은 지원 되지 않습니다. 또한 공용 언어 런타임에서는 스택 오버플로 예외를 catch 하는 것을 허용 하지 않습니다. 스택 오버플로 예외는 프로세스를 종료 합니다.
 
 관리 되는 응용 프로그램 및 관리 되지 않는 응용 프로그램에서 예외 처리의 차이점에 대 한 자세한 내용은 [Managed Extensions for C++에서 예외 처리 동작의 차이점](../dotnet/differences-in-exception-handling-behavior-under-clr.md)을 참조 하세요.
 
-## <a name="throwing-exceptions-under-clr"></a><a name="vcconbasicconceptsinusingmanagedexceptionsanchor1"></a>/Clr에서 예외 throw
+## <a name="throwing-exceptions-under-clr"></a><a name="vcconbasicconceptsinusingmanagedexceptionsanchor1"></a> /Clr에서 예외 throw
 
 C + + throw 식이 CLR 형식에 대 한 핸들을 throw 하도록 확장 되었습니다. 다음 예제에서는 사용자 지정 예외 형식을 만든 다음 해당 형식의 인스턴스를 throw 합니다.
 
@@ -68,7 +69,7 @@ void GlobalFunction() {
 }
 ```
 
-## <a name="trycatch-blocks-for-clr-extensions"></a><a name="vcconbasicconceptsinusingmanagedexceptionsanchor2"></a>CLR 확장에 대 한 Try/Catch 블록
+## <a name="trycatch-blocks-for-clr-extensions"></a><a name="vcconbasicconceptsinusingmanagedexceptionsanchor2"></a> CLR 확장에 대 한 Try/Catch 블록
 
 동일한 **`try`** / **`catch`** 블록 구조를 사용 하 여 CLR 및 네이티브 예외를 모두 catch 할 수 있습니다.
 
@@ -152,7 +153,7 @@ Throw 된 예외에 대 한 이벤트 순서는 다음과 같습니다.
 catch(Object^)
 ```
 
-그리고
+및
 
 ```
 catch(...)
@@ -162,7 +163,7 @@ catch(...)
 
 Catch (Object ^)에서 관리 되지 않는 형식을 catch 하는 경우에는 throw 된 개체를 삭제 하지 않습니다.
 
-관리 되지 않는 예외를 throw 하거나 catch 할 때 **/EHs** 또는 **/eha**대신 [/ehsc](../build/reference/eh-exception-handling-model.md) 컴파일러 옵션을 사용 하는 것이 좋습니다.
+관리 되지 않는 예외를 throw 하거나 catch 할 때 **/EHs** 또는 **/eha** 대신 [/ehsc](../build/reference/eh-exception-handling-model.md) 컴파일러 옵션을 사용 하는 것이 좋습니다.
 
 ## <a name="see-also"></a>참고 항목
 

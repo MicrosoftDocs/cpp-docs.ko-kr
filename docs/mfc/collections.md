@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 컬렉션'
 title: 컬렉션
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - collection classes [MFC], lists
 - collection classes [MFC], shapes
 ms.assetid: 02586e4c-851d-41d0-a722-feb11c17c74c
-ms.openlocfilehash: f2cd03afbb09dff38298454658c3d3dc2dfa6a8a
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 63bc61b73a9ba654fd22ecf3a238f8ef89734221
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619357"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97283474"
 ---
 # <a name="collections"></a>컬렉션
 
@@ -35,7 +36,7 @@ Microsoft Foundation Class 라이브러리는 개체 그룹을 관리하기 위�
 > [!NOTE]
 > 코드에 이미 비템플릿 컬렉션 클래스가 사용되는 경우 이를 계속 사용할 수 있습니다. 고유 데이터 형식에 대해 새로운 형식 안전 컬렉션 클래스를 작성하는 경우 템플릿 기반의 신규 클래스를 사용하는 것이 좋습니다.
 
-## <a name="collection-shapes"></a><a name="_core_collection_shapes"></a>컬렉션 모양
+## <a name="collection-shapes"></a><a name="_core_collection_shapes"></a> 컬렉션 모양
 
 컬렉션 클래스는 "모양" 및 요소의 유형에 따라 분류됩니다. 모양은 컬렉션에서 개체가 구성 및 저장되는 방법을 나타냅니다. MFC는 세 가지 컬렉션 모양으로 목록, 배열 및 맵(사전이라고도 부름)을 제공합니다. 특정 프로그래밍 문제에 가장 적합한 컬렉션 모양을 선택하면 됩니다.
 
@@ -45,7 +46,7 @@ Microsoft Foundation Class 라이브러리는 개체 그룹을 관리하기 위�
 
    목록 클래스는 이중으로 링크된 목록으로 구현되는 정렬되었고 인덱싱되지 않은 요소 목록을 제공합니다. 목록에는 "머리"와 "꼬리"가 포함되며, 머리 또는 꼬리에서 요소를 추가 또는 제거하거나, 가운데에서 요소를 삽입 또는 삭제는 작업은 속도가 매우 빠릅니다.
 
-- Array
+- 배열
 
    배열 클래스는 개체에 대해 동적으로 크기가 조정되고, 정렬되었으며, 정수로 인덱싱된 배열을 제공합니다.
 
@@ -53,7 +54,7 @@ Microsoft Foundation Class 라이브러리는 개체 그룹을 관리하기 위�
 
    맵은 키 개체를 값 개체와 연결하는 컬렉션입니다.
 
-## <a name="the-template-based-collection-classes"></a><a name="_core_the_template_based_collection_classes"></a>템플릿 기반 컬렉션 클래스
+## <a name="the-template-based-collection-classes"></a><a name="_core_the_template_based_collection_classes"></a> Template-Based 컬렉션 클래스
 
 모든 형식의 개체를 포함하는 형식 안전 컬렉션을 구현하는 가장 쉬운 방법은 MFC 템플릿 기반 클래스 중 하나를 사용하는 것입니다. 이러한 클래스의 예제는 MFC 샘플 [수집](../overview/visual-cpp-samples.md)을 참조 하세요.
 
@@ -61,18 +62,18 @@ Microsoft Foundation Class 라이브러리는 개체 그룹을 관리하기 위�
 
 ### <a name="collection-template-classes"></a>컬렉션 템플릿 클래스
 
-|컬렉션 내용|배열|목록|Maps|
+|컬렉션 내용|배열|목록|지도|
 |-------------------------|------------|-----------|----------|
 |임의 형식의 개체의 컬렉션|`CArray`|`CList`|`CMap`|
 |임의 형식의 개체에 대한 포인터 컬렉션|`CTypedPtrArray`|`CTypedPtrList`|`CTypedPtrMap`|
 
-## <a name="the-collection-classes-not-based-on-templates"></a><a name="_core_the_collection_classes_not_based_on_templates"></a>템플릿을 기반으로 하지 않는 컬렉션 클래스
+## <a name="the-collection-classes-not-based-on-templates"></a><a name="_core_the_collection_classes_not_based_on_templates"></a> 템플릿을 기반으로 하지 않는 컬렉션 클래스
 
 애플리케이션에서 이미 MFC 비템플릿 클래스가 사용되는 경우 이를 계속 사용할 수 있습니다. 하지만 새로운 컬렉션의 경우에는 템플릿 기반 클래스를 사용하는 것이 좋습니다. 다음 표에서는 템플릿을 기반으로 하지 않는 MFC 컬렉션 클래스를 보여줍니다.
 
 ### <a name="nontemplate-collection-classes"></a>비템플릿 컬렉션 클래스
 
-|배열|목록|Maps|
+|배열|목록|지도|
 |------------|-----------|----------|
 |`CObArray`|`CObList`|`CMapPtrToWord`|
 |`CByteArray`|`CPtrList`|`CMapPtrToPtr`|
@@ -96,9 +97,9 @@ Microsoft Foundation Class 라이브러리는 개체 그룹을 관리하기 위�
 
 #### <a name="general-collection-class-tasks"></a>일반 컬렉션 클래스 작업
 
-- [컬렉션 클래스 선택에 대한 권장 사항](recommendations-for-choosing-a-collection-class.md)
+- [컬렉션 클래스 선택에 대 한 권장 사항](recommendations-for-choosing-a-collection-class.md)
 
-- [방법: 형식이 안전한 컬렉션 만들기](how-to-make-a-type-safe-collection.md)
+- [방법: Type-Safe 컬렉션 만들기](how-to-make-a-type-safe-collection.md)
 
 - [스택 및 큐 컬렉션 만들기](creating-stack-and-queue-collections.md)
 

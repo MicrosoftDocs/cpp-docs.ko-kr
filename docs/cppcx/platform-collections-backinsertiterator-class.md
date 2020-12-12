@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Platform:: Collections:: BackInsertIterator 클래스'
 title: Platform::Collections::BackInsertIterator 클래스
 ms.date: 03/27/2019
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BackInsertIterator Class
 ms.assetid: aecee1ff-100d-4129-b84b-1966f0923dbf
-ms.openlocfilehash: f5c82a776a537d469d42a16bd4f425e7bb2c13aa
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: d4130db388470b5e29b545b66b06ee85b2cbb608
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90742933"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97283994"
 ---
 # <a name="platformcollectionsbackinsertiterator-class"></a>Platform::Collections::BackInsertIterator 클래스
 
@@ -39,13 +40,13 @@ BackInsertIterator 클래스는 [back_insert_iterator Class](../standard-library
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[BackInsertIterator:: BackInsertIterator](#ctor)|BackInsertIterator 클래스의 새 인스턴스를 초기화합니다.|
 
 ### <a name="public-operators"></a>Public 연산자
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |[BackInsertIterator:: operator * 연산자](#operator-dereference)|현재 BackInsertIterator에 대한 참조를 검색합니다.|
 |[BackInsertIterator:: operator + + 연산자](#operator-increment)|현재 BackInsertIterator에 대한 참조를 반환합니다. 반복기는 수정되지 않습니다.|
@@ -74,7 +75,7 @@ explicit BackInsertIterator(
 
 #### <a name="parameters"></a>매개 변수
 
-*hyper-v*<br/>
+*v*<br/>
 IVector \<T> 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -140,6 +141,6 @@ BackInsertIterator operator++(int);
 
 그러나 이 연산자는 BackInsertIterator를 실제로 수정하지 않습니다. 대신에 수정되지 않은 현재 반복기에 대한 참조를 반환합니다. 이는 [operator *](#operator-dereference)와 동일한 동작입니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [Platform 네임 스페이스](platform-namespace-c-cx.md)

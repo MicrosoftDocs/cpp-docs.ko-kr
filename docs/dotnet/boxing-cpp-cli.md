@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: Boxing (c + +/CLI)'
 title: Boxing(C++/CLI)
 ms.date: 11/04/2016
 ms.assetid: f4ee27a8-6a34-432d-b9ec-39285d513b23
-ms.openlocfilehash: 03304b902ced2c1e9776eeec90142380b984ee45
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4914271dc5b1ae0bcee2a82b3cddb4433a2dc84f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230911"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97282590"
 ---
 # <a name="boxing-ccli"></a>Boxing(C++/CLI)
 

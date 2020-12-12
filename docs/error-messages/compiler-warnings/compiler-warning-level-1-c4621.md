@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4621'
 title: 컴파일러 경고(수준 1) C4621
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4621
 ms.assetid: 40931bd9-cb89-497e-86f0-cec9f016c63c
-ms.openlocfilehash: a48934fd097f9039988db32511ca87cbd66b22d2
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 72e4adbb45488b200ff67f1d0b225591f9ea1a6b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80199755"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97281472"
 ---
 # <a name="compiler-warning-level-1-c4621"></a>컴파일러 경고(수준 1) C4621
 
@@ -19,7 +20,7 @@ ms.locfileid: "80199755"
 
 지정 된 형식에 대해 정의 된 후 위 감소 연산자가 없습니다. 컴파일러가 오버로드된 전위 연산자를 사용했습니다.
 
-이 경고는 후위 `--` 연산자를 정의하여 방지할 수 있습니다. 아래와 같이 `--` 연산자의 두 인수 버전을 만듭니다.
+이 경고는 후위 `--` 연산자를 정의하여 방지할 수 있습니다. 아래와 같이 연산자의 두 인수 버전을 만듭니다 `--` .
 
 ```cpp
 // C4621.cpp

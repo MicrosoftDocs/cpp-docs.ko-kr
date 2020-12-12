@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: freopen, _wfreopen'
 title: freopen, _wfreopen
 ms.date: 4/2/2020
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - tfreopen function
 - wfreopen function
 ms.assetid: de4b73f8-1043-4d62-98ee-30d2022da885
-ms.openlocfilehash: 435211b246f9943588aeef2005e501a9eac59c6b
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: be2355ef49ee9a4a3e966de9077ee236dae03648
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916338"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97282980"
 ---
 # <a name="freopen-_wfreopen"></a>freopen, _wfreopen
 
@@ -72,9 +73,9 @@ FILE *_wfreopen(
 *스트림*<br/>
 **FILE** 구조체에 대한 포인터입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-각 함수는 새로 열린 파일에 대한 포인터를 반환합니다. 오류가 발생 하면 원래 파일이 닫히고 함수에서 **NULL** 포인터 값을 반환 합니다. *Path*, *mode*또는 *stream* 이 null 포인터인 경우 또는 *filename* 이 빈 문자열인 경우 이러한 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **errno** 를 **EINVAL** 로 설정 하 고 **NULL**을 반환 합니다.
+각 함수는 새로 열린 파일에 대한 포인터를 반환합니다. 오류가 발생 하면 원래 파일이 닫히고 함수에서 **NULL** 포인터 값을 반환 합니다. *Path*, *mode* 또는 *stream* 이 null 포인터인 경우 또는 *filename* 이 빈 문자열인 경우 이러한 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **errno** 를 **EINVAL** 로 설정 하 고 **NULL** 을 반환 합니다.
 
 이러한 오류 코드 및 기타 오류 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
@@ -82,7 +83,7 @@ FILE *_wfreopen(
 
 이러한 함수의 더 안전한 버전이 있습니다. [freopen_s, _wfreopen_s](freopen-s-wfreopen-s.md)를 참조하세요.
 
-**Freopen** 함수는 현재 *스트림과* 연결 된 파일을 닫고 *경로*에 지정 된 파일에 *스트림을* 다시 할당 합니다. **_wfreopen** 은 **_freopen**의 와이드 문자 버전입니다. **_wfreopen** 에 대 한 *경로* 및 *모드* 인수는 와이드 문자 문자열입니다. **_wfreopen** 와 **_freopen** 는 동일 하 게 동작 합니다.
+**Freopen** 함수는 현재 *스트림과* 연결 된 파일을 닫고 *경로* 에 지정 된 파일에 *스트림을* 다시 할당 합니다. **_wfreopen** 은 **_freopen** 의 와이드 문자 버전입니다. **_wfreopen** 에 대 한 *경로* 및 *모드* 인수는 와이드 문자 문자열입니다. **_wfreopen** 와 **_freopen** 는 동일 하 게 동작 합니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -92,9 +93,9 @@ FILE *_wfreopen(
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tfreopen**|**freopen**|**freopen**|**_wfreopen**|
 
-**freopen** 은 일반적으로 미리 열린 파일 **stdin**, **stdout**및 **stderr** 을 사용자가 지정한 파일로 리디렉션하는 데 사용 됩니다. *스트림과* 연결 된 새 파일은 다음과 같이 파일에 대해 요청 된 액세스 형식을 지정 하는 문자열인 *모드*를 사용 하 여 열립니다.
+**freopen** 은 일반적으로 미리 열린 파일 **stdin**, **stdout** 및 **stderr** 을 사용자가 지정한 파일로 리디렉션하는 데 사용 됩니다. *스트림과* 연결 된 새 파일은 다음과 같이 파일에 대해 요청 된 액세스 형식을 지정 하는 문자열인 *모드* 를 사용 하 여 열립니다.
 
-|*mode*|액세스 권한|
+|*mode*|Access|
 |-|-|
 | **&** | 읽기 위해 엽니다. 파일이 없거나 찾을 수 없는 경우 **freopen** 호출이 실패 합니다. |
 | **w** | 쓰기 위해 빈 파일을 엽니다. 지정한 파일이 있으면 이 파일의 내용은 삭제됩니다. |
@@ -113,23 +114,23 @@ FILE *_wfreopen(
 
 |*모드* 한정자|변환 모드|
 |-|-|
-| **트** | 텍스트(변환됨) 모드에서 엽니다. |
+| **t** | 텍스트(변환됨) 모드에서 엽니다. |
 | **b** | 이진 (변환 되지 않음) 모드에서 열기 캐리지 리턴 및 줄 바꿈 문자를 포함 하는 변환은 표시 되지 않습니다. |
 
 텍스트 (변환 됨) 모드에서 캐리지 리턴-줄 바꿈 (CR-LF) 조합은 입력 시 LF (단일 줄 바꿈) 문자로 변환 됩니다. LF 문자는 출력에서 CR-LF 조합으로 변환 됩니다. 또한 CTRL+Z는 입력 시 파일 끝 문자로 변환됩니다. **"A +"** 를 사용 하 여 읽거나 쓰고 쓰기 위해 열린 파일에서 런타임 라이브러리는 파일 끝에 CTRL + Z가 있는지 확인 하 고 가능한 경우이를 제거 합니다. 이는 [fseek](fseek-fseeki64.md) 및 [fseek](ftell-ftelli64.md) 를 사용 하 여 파일 내에서 이동 하면 파일의 끝 부분에서 [fseek](fseek-fseeki64.md) 가 제대로 동작 하지 않을 수 있기 때문입니다. **T** 옵션은 ANSI 이식성이 필요한 곳에 사용 하면 안 되는 Microsoft 확장입니다.
 
-*모드*에서 **t** 또는 **b** 를 지정 하지 않은 경우 기본 변환 모드는 [_fmode](../../c-runtime-library/fmode.md)전역 변수에 의해 정의 됩니다. **T** 또는 **b** 가 인수 앞에 있으면 함수가 실패 하 고 **NULL**을 반환 합니다.
+*모드* 에서 **t** 또는 **b** 를 지정 하지 않은 경우 기본 변환 모드는 [_fmode](../../c-runtime-library/fmode.md)전역 변수에 의해 정의 됩니다. **T** 또는 **b** 가 인수 앞에 있으면 함수가 실패 하 고 **NULL** 을 반환 합니다.
 
 텍스트 모드와 이진 모드에 대한 자세한 내용은 [텍스트 및 이진 모드 파일 I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md)를 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|필수 헤더|
+|함수|필수 헤더|
 |--------------|---------------------|
 |**freopen**|\<stdio.h>|
 |**_wfreopen**|\<stdio.h> 또는 \<wchar.h>|
 
-이 콘솔은 UWP (유니버설 Windows 플랫폼) 앱에서 지원 되지 않습니다. 콘솔, **stdin**, **stdout**및 **stderr**에 연결 된 표준 스트림 핸들은 C 런타임 함수가 UWP 앱에서 사용할 수 있으려면 먼저 리디렉션해야 합니다. 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
+이 콘솔은 UWP (유니버설 Windows 플랫폼) 앱에서 지원 되지 않습니다. 콘솔, **stdin**, **stdout** 및 **stderr** 에 연결 된 표준 스트림 핸들은 C 런타임 함수가 UWP 앱에서 사용할 수 있으려면 먼저 리디렉션해야 합니다. 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
@@ -166,7 +167,7 @@ successfully reassigned
 This will go to the file 'freopen.out'
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [스트림 I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fclose, _fcloseall](fclose-fcloseall.md)<br/>

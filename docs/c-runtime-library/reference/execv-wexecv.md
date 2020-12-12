@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _execv, _wexecv'
 title: _execv, _wexecv
 ms.date: 4/2/2020
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - wexecv function
 - execv function
 ms.assetid: 8dbaf7bc-9040-4316-a0c1-db7e866b52af
-ms.openlocfilehash: 2c92321ebf31cf3dd1e446246674a437919e347b
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 62bb8d92acf99d9db091dbe7e3be9dffe1fbb439
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919701"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97283084"
 ---
 # <a name="_execv-_wexecv"></a>_execv, _wexecv
 
@@ -68,7 +69,7 @@ intptr_t _wexecv(
 *마다*<br/>
 매개 변수에 대한 포인터 배열입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 성공하면 이러한 함수는 호출 프로세스에 값을 반환하지 않습니다. 반환 값-1은 오류를 나타내며,이 경우 **errno** 전역 변수가 설정 됩니다.
 
@@ -94,7 +95,7 @@ intptr_t _wexecv(
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|필수 헤더|선택적 헤더|
+|함수|필수 헤더|선택적 헤더|
 |--------------|---------------------|---------------------|
 |**_execv**|\<process.h>|\<errno.h>|
 |**_wexecv**|\<process.h> 또는 \<wchar.h>|\<errno.h>|
@@ -105,7 +106,7 @@ intptr_t _wexecv(
 
 [_exec, _wexec 함수](../../c-runtime-library/exec-wexec-functions.md)의 예제를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [프로세스 및 환경 제어](../../c-runtime-library/process-and-environment-control.md)<br/>
 [_exec, _wexec 함수](../../c-runtime-library/exec-wexec-functions.md)<br/>
