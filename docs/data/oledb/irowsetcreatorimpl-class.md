@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: IRowsetCreatorImpl 클래스'
 title: IRowsetCreatorImpl 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - IRowsetCreatorImpl class
 - SetSite method
 ms.assetid: 92cc950f-7978-4754-8d9a-defa63867d82
-ms.openlocfilehash: c1ad2c5e97dfe975a3b545e44b512dff7bf512a0
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 6a478e86bdb09851afed091c99ed0d0931a9115e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843446"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317404"
 ---
 # <a name="irowsetcreatorimpl-class"></a>IRowsetCreatorImpl 클래스
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 표준 명령 라우팅 재정의'
 title: 표준 명령 라우팅 재정의
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - command handling [MFC], routing commands
 - overriding, standard command routing
 ms.assetid: 872b698a-7432-40c4-9008-68721e8effa5
-ms.openlocfilehash: 680b185f8d68a834862bc0fe14bf6e7984effd65
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 5241e767beee85f92875128cc5ebccd1a23477f5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84617729"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97205995"
 ---
 # <a name="overriding-the-standard-command-routing"></a>표준 명령 라우팅 재정의
 
@@ -22,8 +23,8 @@ ms.locfileid: "84617729"
 
 - 기본값이 아닌 새 개체 또는 명령 대상에서 명령을 전달할 수 있습니다.
 
-라우팅에 새 개체를 삽입 하는 경우 해당 클래스는 명령 대상 클래스 여야 합니다. 의 재정의 버전에서는 `OnCmdMsg` 재정의 하는 버전을 호출 해야 합니다. 예제는 [OnCmdMsg](reference/ccmdtarget-class.md#oncmdmsg) `CCmdTarget` 제공 된 소스 코드에서 *MFC 참조* 의 클래스의 OnCmdMsg 멤버 함수 및 및와 같은 클래스의 버전을 참조 하세요 `CView` `CDocument` .
+라우팅에 새 개체를 삽입 하는 경우 해당 클래스는 명령 대상 클래스 여야 합니다. 의 재정의 버전에서는 `OnCmdMsg` 재정의 하는 버전을 호출 해야 합니다. 예제는 [](reference/ccmdtarget-class.md#oncmdmsg) `CCmdTarget` 제공 된 소스 코드에서 *MFC 참조* 의 클래스의 OnCmdMsg 멤버 함수 및 및와 같은 클래스의 버전을 참조 하세요 `CView` `CDocument` .
 
 ## <a name="see-also"></a>참고 항목
 
-[프레임워크가 처리기를 호출하는 방법](how-the-framework-calls-a-handler.md)
+[프레임 워크가 처리기를 호출 하는 방법](how-the-framework-calls-a-handler.md)

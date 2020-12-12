@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: &lt; mutex&gt;'
 title: '&lt;mutex&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <mutex>
 ms.assetid: efb60c89-687a-4e38-8fe4-694e11c4e8a3
-ms.openlocfilehash: d5ff6f2a81a5caa564792e2c0cb43b7722c3e1dd
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b04b62629253e725e650009f373702f907b9116a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838555"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338258"
 ---
 # <a name="ltmutexgt"></a>&lt;mutex&gt;
 
@@ -27,9 +28,9 @@ ms.locfileid: "88838555"
 ## <a name="remarks"></a>설명
 
 > [!NOTE]
-> **/Clr**을 사용 하 여 컴파일된 코드에서이 헤더는 차단 됩니다.
+> **/Clr** 을 사용 하 여 컴파일된 코드에서이 헤더는 차단 됩니다.
 
-`mutex` 및 `recursive_mutex` 클래스는 *뮤텍스 형식*입니다. 뮤텍스 형식에는 예외를 throw하지 않는 기본 생성자와 소멸자가 있습니다. 이러한 개체에는 여러 스레드가 동일한 개체를 잠그려고 할 때 상호 배제하는 메서드가 있습니다. 특히, 뮤텍스 형식에는 `lock`, `try_lock` 및 `unlock` 메서드가 포함되어 있습니다.
+`mutex` 및 `recursive_mutex` 클래스는 *뮤텍스 형식* 입니다. 뮤텍스 형식에는 예외를 throw하지 않는 기본 생성자와 소멸자가 있습니다. 이러한 개체에는 여러 스레드가 동일한 개체를 잠그려고 할 때 상호 배제하는 메서드가 있습니다. 특히, 뮤텍스 형식에는 `lock`, `try_lock` 및 `unlock` 메서드가 포함되어 있습니다.
 
 - 스레드가 뮤텍스의 소유권을 가져올 때까지 `lock` 메서드가 호출 스레드를 차단합니다. 반환 값은 무시됩니다.
 
@@ -39,13 +40,13 @@ ms.locfileid: "88838555"
 
 뮤텍스 형식을 형식 인수로 사용하여 템플릿 `lock_guard` 및 `unique_lock`을 인스턴스화할 수 있습니다. 템플릿 [condition_variable_any](../standard-library/condition-variable-any-class.md)에서 이러한 형식의 개체를 구성원 대기 함수에 대한 `Lock` 인수로 사용할 수 있습니다.
 
-*시간이 지정된 뮤텍스 형식*은 뮤텍스 형식에 대한 요구 사항을 충족합니다. 또한 `try_lock_for` 및 `try_lock_until` 메서드는 하나의 인수를 사용 하 여 호출할 수 있어야 하 고로 변환할 수 있는 형식을 반환 해야 합니다 **`bool`** . 시간이 지정된 뮤텍스 형식은 추가 인수 모두에 기본값이 있는 경우 이러한 인수를 사용하여 함수를 정의할 수 있습니다.
+*시간이 지정된 뮤텍스 형식* 은 뮤텍스 형식에 대한 요구 사항을 충족합니다. 또한 `try_lock_for` 및 `try_lock_until` 메서드는 하나의 인수를 사용 하 여 호출할 수 있어야 하 고로 변환할 수 있는 형식을 반환 해야 합니다 **`bool`** . 시간이 지정된 뮤텍스 형식은 추가 인수 모두에 기본값이 있는 경우 이러한 인수를 사용하여 함수를 정의할 수 있습니다.
 
 - `try_lock_for` 메서드는 하나의 인수 즉, `Rel_time`을 사용하여 호출할 수 있어야 합니다. 이 인수의 형식은 [chrono::duration](../standard-library/duration-class.md)의 인스턴스화입니다. 이 메서드에서 뮤텍스의 소유권을 가져오려고 시도하지만 성공 여부에 관계없이 `Rel_time`으로 지정한 시간 이내에 반환합니다. 메서드가 소유권을 가져오면 반환 값이로 변환 **`true`** 되 고, 그렇지 않으면 반환 값이로 변환 **`false`** 됩니다.
 
 - `try_lock_until` 메서드는 하나의 인수 즉, `Abs_time`을 사용하여 호출할 수 있어야 합니다. 이 인수의 형식은 [chrono::time_point](../standard-library/time-point-class.md)의 인스턴스화입니다. 이 메서드에서 뮤텍스의 소유권을 가져오려고 시도하지만 성공 여부에 관계없이 `Abs_time`으로 지정한 시간 이내에 반환합니다. 메서드가 소유권을 가져오면 반환 값이로 변환 **`true`** 되 고, 그렇지 않으면 반환 값이로 변환 **`false`** 됩니다.
 
-뮤텍스 형식은 *잠금 가능 형식*이라고도 합니다. 구성원 함수 `try_lock`을 제공하지 않는 경우 *기본 잠금 형식*입니다. 시간이 지정된 뮤텍스 형식은 *시간이 지정된 잠금 가능 형식*이라고도 합니다.
+뮤텍스 형식은 *잠금 가능 형식* 이라고도 합니다. 구성원 함수 `try_lock`을 제공하지 않는 경우 *기본 잠금 형식* 입니다. 시간이 지정된 뮤텍스 형식은 *시간이 지정된 잠금 가능 형식* 이라고도 합니다.
 
 ## <a name="members"></a>멤버
 
@@ -61,7 +62,7 @@ ms.locfileid: "88838555"
 |[timed_mutex 클래스](../standard-library/timed-mutex-class.md)|시간이 지정된 뮤텍스 형식을 나타냅니다. 이러한 형식의 개체를 사용하면 프로그램 내에서 시간이 제한된 차단이 있는 상호 배제를 강제로 수행할 수 있습니다.|
 |[unique_lock 클래스](../standard-library/unique-lock-class.md)|`mutex`의 잠금 및 잠금 해제를 관리하는 개체를 만들기 위해 인스턴스화할 수 있는 템플릿을 나타냅니다.|
 
-### <a name="functions"></a>Functions
+### <a name="functions"></a>함수
 
 |Name|설명|
 |-|-|

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 구조체 부정'
 title: negate 구조체
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - negate struct
 - negate class
 ms.assetid: 8a372686-786e-4262-b37c-ca13dc11e62f
-ms.openlocfilehash: cb45f61323a407e90c2a455460a4d2cdd7b6720a
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: fccc583d38b797a856ed4e0915e5e0255bb9eaee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68240560"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338246"
 ---
 # <a name="negate-struct"></a>negate 구조체
 
@@ -39,15 +40,15 @@ struct negate<void>
 
 ### <a name="parameters"></a>매개 변수
 
-*형식*\
+*입력할*\
 지정되었거나 유추된 형식의 피연산자를 사용하는 `operator-`를 지원하는 모든 형식입니다.
 
-*왼쪽*\
-부정할 피연산자입니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *형식*합니다.
+*비어*\
+부정할 피연산자입니다. 특수화 된 템플릿은 유추 형식 *형식의* lvalue 및 rvalue 참조 인수를 완벽 하 게 전달 합니다.
 
 ## <a name="return-value"></a>반환 값
 
-`-Left`의 결과입니다. 특수화 된 템플릿은 단항에서 반환 되는 형식을 포함 하는 결과의 전달을 완벽 하 게 `operator-`합니다.
+`-Left`의 결과입니다. 특수화 된 템플릿은 단항에서 반환 되는 형식을 포함 하는 결과를 완벽 하 게 전달 합니다 `operator-` .
 
 ## <a name="example"></a>예제
 

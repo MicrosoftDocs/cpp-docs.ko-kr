@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3066'
 title: 컴파일러 오류 C3066
 ms.date: 03/28/2017
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3066
 ms.assetid: 226f6de5-c4c5-41e2-b31a-2e30a37fbbeb
-ms.openlocfilehash: 80468f4e35ffd9d09706b8bb8fc2fdc6eb8e679e
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 68e348e14ddababe96123d31812e2f650e14b52f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74738858"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97281693"
 ---
 # <a name="compiler-error-c3066"></a>컴파일러 오류 C3066
 

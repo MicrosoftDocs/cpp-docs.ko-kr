@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: MFC ActiveX 컨트롤: 글꼴 사용'
 title: 'MFC ActiveX 컨트롤: 글꼴 사용'
 ms.date: 11/19/2018
 f1_keywords:
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - SelectStockFont method [MFC]
 - fonts [MFC], ActiveX controls
 ms.assetid: 7c51d602-3f5a-481d-84d1-a5d8a3a71761
-ms.openlocfilehash: 02c52d2544afdc9d13fc3ec67ad9eed757a3f277
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 5f0c495ee92dbcfcb27627628f3bcf92982f719f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91499690"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97206008"
 ---
 # <a name="mfc-activex-controls-using-fonts"></a>MFC ActiveX 컨트롤: 글꼴 사용
 
@@ -52,13 +53,13 @@ ActiveX 컨트롤에서 텍스트를 표시 하는 경우 font 속성을 변경 
 
 1. 컨트롤의 인터페이스 노드(라이브러리 노드의 두 번째 노드)를 마우스 오른쪽 단추로 클릭하여 바로 가기 메뉴를 엽니다.
 
-1. 바로 가기 메뉴에서 **추가** 를 클릭 한 다음 **속성 추가**를 클릭 합니다.
+1. 바로 가기 메뉴에서 **추가** 를 클릭 한 다음 **속성 추가** 를 클릭 합니다.
 
    그러면 속성 추가 마법사가 열립니다.
 
-1. **속성 이름** 상자에서 **글꼴**을 클릭 합니다.
+1. **속성 이름** 상자에서 **글꼴** 을 클릭 합니다.
 
-1. **Finish**를 클릭합니다.
+1. **Finish** 를 클릭합니다.
 
 속성 추가 마법사는 컨트롤 클래스 구현 파일에 있는 컨트롤의 디스패치 맵에 다음 줄을 추가 합니다.
 
@@ -78,13 +79,13 @@ ActiveX 컨트롤에서 텍스트를 표시 하는 경우 font 속성을 변경 
 
 1. 컨트롤의 인터페이스 노드(라이브러리 노드의 두 번째 노드)를 마우스 오른쪽 단추로 클릭하여 바로 가기 메뉴를 엽니다.
 
-1. 바로 가기 메뉴에서 **추가** 를 클릭 한 다음 **속성 추가**를 클릭 합니다.
+1. 바로 가기 메뉴에서 **추가** 를 클릭 한 다음 **속성 추가** 를 클릭 합니다.
 
    그러면 속성 추가 마법사가 열립니다.
 
-1. **속성 이름** 상자에서 **캡션**을 클릭 합니다.
+1. **속성 이름** 상자에서 **캡션** 을 클릭 합니다.
 
-1. **Finish**를 클릭합니다.
+1. **Finish** 를 클릭합니다.
 
 속성 추가 마법사는 컨트롤 클래스 구현 파일에 있는 컨트롤의 디스패치 맵에 다음 줄을 추가 합니다.
 
@@ -120,17 +121,17 @@ ActiveX 컨트롤에서 텍스트를 표시 하는 경우 font 속성을 변경 
 
 1. 컨트롤의 인터페이스 노드(라이브러리 노드의 두 번째 노드)를 마우스 오른쪽 단추로 클릭하여 바로 가기 메뉴를 엽니다.
 
-1. 바로 가기 메뉴에서 **추가** 를 클릭 한 다음 **속성 추가**를 클릭 합니다.
+1. 바로 가기 메뉴에서 **추가** 를 클릭 한 다음 **속성 추가** 를 클릭 합니다.
 
    그러면 속성 추가 마법사가 열립니다.
 
-1. **속성 이름** 상자에 속성의 이름을 입력 합니다. 이 예에서는 **HeadingFont**를 사용 합니다.
+1. **속성 이름** 상자에 속성의 이름을 입력 합니다. 이 예에서는 **HeadingFont** 를 사용 합니다.
 
-1. **구현 형식**에서 **Get/Set 메서드**를 클릭합니다.
+1. **구현 형식** 에서 **Get/Set 메서드** 를 클릭합니다.
 
-1. **속성 형식** 상자에서 **IDispatch** <strong>\*</strong> 속성의 형식에 대해 IDispatch를 선택 합니다.
+1. **속성 형식** 상자에서  <strong>\*</strong> 속성의 형식에 대해 IDispatch를 선택 합니다.
 
-1. **Finish**를 클릭합니다.
+1. **Finish** 를 클릭합니다.
 
 속성 추가 마법사는 `HeadingFont` 클래스 및 샘플에 사용자 지정 속성을 추가 하는 코드를 만듭니다 `CSampleCtrl` . IDL 파일. `HeadingFont`는 Get/Set 속성 형식 이므로 속성 추가 마법사는 `CSampleCtrl` DISP_PROPERTY_EX_ID[DISP_PROPERTY_EX](reference/dispatch-maps.md#disp_property_ex) 매크로 항목을 포함 하도록 클래스의 디스패치 맵을 수정 합니다.
 
@@ -225,7 +226,7 @@ DISP_PROPERTY_EX 매크로는 `HeadingFont` 속성 이름을 해당 하는 클�
 
 ### <a name="additions-to-the-implementation-file"></a>구현 파일에 추가
 
-컨트롤 생성자에서 제목 글꼴을 초기화 하는 코드에서 &*m_xFontNotification* 를 &*m_xHeadingFontNotify*로 변경 합니다. 다음 코드를 추가합니다.
+컨트롤 생성자에서 제목 글꼴을 초기화 하는 코드에서 &*m_xFontNotification* 를 &*m_xHeadingFontNotify* 로 변경 합니다. 다음 코드를 추가합니다.
 
 [!code-cpp[NVC_MFC_AxFont#20](codesnippet/cpp/mfc-activex-controls-using-fonts_20.cpp)]
 

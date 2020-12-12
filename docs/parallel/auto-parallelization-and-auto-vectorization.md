@@ -1,13 +1,14 @@
 ---
+description: '에 대 한 자세한 정보: 자동 병렬화 및 자동 벡터화'
 title: 자동 병렬화 및 자동 벡터화
 ms.date: 11/04/2016
 ms.assetid: ec71583a-287b-4599-8767-1d255e080fe3
-ms.openlocfilehash: adc0dd9346cc2850b02e01804e26044c367f2d14
-ms.sourcegitcommit: fcc3aeb271449f8be80348740cffef39ba543407
+ms.openlocfilehash: 4de73924ab6c28335ea6fcf2e6473e74d68bd189
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82538622"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338317"
 ---
 # <a name="auto-parallelization-and-auto-vectorization"></a>자동 병렬화 및 자동 벡터화
 
@@ -24,7 +25,7 @@ void loop_test(int u) {
 }
 ```
 
-`u`는 작은 값이 될 수 있으므로 컴파일러는 이 루프를 자동으로 평행화하지는 않습니다. 그러나 `u`가 항상 큰 값이 되는 것을 아는 경우 사용자는 이를 평행화하려 할 수 있습니다. 자동 병렬화를 사용 하도록 설정 하려면 [#pragma 루프 (hint_parallel (n))](../preprocessor/loop.md)를 지정 합니다 `n` . 여기서은 병렬 처리할 스레드 수입니다. 다음 예에서 컴파일러는 8개 스레드에 걸쳐 루프를 평행화하려고 합니다.
+`u`는 작은 값이 될 수 있으므로 컴파일러는 이 루프를 자동으로 평행화하지는 않습니다. 그러나 `u`가 항상 큰 값이 되는 것을 아는 경우 사용자는 이를 평행화하려 할 수 있습니다. 자동 병렬화를 사용 하도록 설정 하려면 [#pragma 루프 (hint_parallel (n))](../preprocessor/loop.md)를 지정 `n` 합니다. 여기서은 병렬 처리할 스레드 수입니다. 다음 예에서 컴파일러는 8개 스레드에 걸쳐 루프를 평행화하려고 합니다.
 
 ```cpp
 void loop_test(int u) {
@@ -36,7 +37,7 @@ void loop_test(int u) {
 
 모든 [pragma 지시문](../preprocessor/pragma-directives-and-the-pragma-keyword.md)과 마찬가지로 대체 pragma 구문도 `__pragma(loop(hint_parallel(n)))` 지원 됩니다.
 
-사용자가 원하더라도 컴파일러가 평행화할 수 없는 루프도 있습니다. 아래 예를 살펴보세요.
+사용자가 원하더라도 컴파일러가 평행화할 수 없는 루프도 있습니다. 예를 들면 다음과 같습니다.
 
 ```cpp
 #pragma loop(hint_parallel(8))
@@ -103,7 +104,7 @@ for (int i = 0; i < 1000; ++i)
 
 모든 [pragma 지시문](../preprocessor/pragma-directives-and-the-pragma-keyword.md)과 마찬가지로 대체 pragma 구문도 `__pragma(loop(no_vector))` 지원 됩니다.
 
-자동 평행 화 도우미과 마찬가지로 [/Qvec-report (자동 벡터화 보고 수준)](../build/reference/qvec-report-auto-vectorizer-reporting-level.md) 명령줄 옵션을 지정 하 여 성공적으로 벡터화 루프에만`/Qvec-report:1`또는 성공적으로 벡터화 루프`/Qvec-report:2`를 모두 보고할 수 있습니다.
+자동 평행 화 도우미과 마찬가지로 [/Qvec-report (자동 벡터화 보고 수준)](../build/reference/qvec-report-auto-vectorizer-reporting-level.md) 명령줄 옵션을 지정 하 여 성공적으로 벡터화 루프에만 `/Qvec-report:1` 또는 성공적으로 벡터화 루프를 모두 보고할 수 있습니다 `/Qvec-report:2` .
 
 이유 코드 및 메시지에 대 한 자세한 내용은 [벡터화 및 평행 화 도우미 messages](../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md)를 참조 하세요.
 
@@ -111,9 +112,9 @@ for (int i = 0; i < 1000; ++i)
 
 ## <a name="see-also"></a>참고 항목
 
-[실행](../preprocessor/loop.md)<br/>
+[loop](../preprocessor/loop.md)<br/>
 [네이티브 코드의 병렬 프로그래밍](/archive/blogs/nativeconcurrency)<br/>
-[/Qpar(자동 병렬화 도우미)](../build/reference/qpar-auto-parallelizer.md)<br/>
-[/Qpar-report(자동 병렬화 도우미 보고 수준)](../build/reference/qpar-report-auto-parallelizer-reporting-level.md)<br/>
-[/Qvec-report(자동 벡터화 도우미 보고 수준)](../build/reference/qvec-report-auto-vectorizer-reporting-level.md)<br/>
-[벡터화 도우미 및 병렬화 도우미 메시지](../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md)
+[/Qpar (자동 평행 화 도우미)](../build/reference/qpar-auto-parallelizer.md)<br/>
+[/Qpar-report (자동 평행 화 도우미 보고 수준)](../build/reference/qpar-report-auto-parallelizer-reporting-level.md)<br/>
+[/Qvec-report (자동 벡터화 도우미 보고 수준)](../build/reference/qvec-report-auto-vectorizer-reporting-level.md)<br/>
+[벡터화 및 평행 화 도우미 메시지](../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md)

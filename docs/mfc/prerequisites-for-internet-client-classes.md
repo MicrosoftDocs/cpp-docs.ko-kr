@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 인터넷 클라이언트 클래스의 필수 구성 요소'
 title: 인터넷 클라이언트 클래스의 필수 구성 요소
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - prerequisites, Internet client classes [MFC]
 - Gopher client applications [MFC]
 ms.assetid: c51d1dfe-260c-4228-8100-e4efd90e9599
-ms.openlocfilehash: aaf5756df69728e8ae89fb278bc0671bfc6840b7
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 9159aa6b3ae4918e406524be05e00fca66cd28a5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619829"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97205878"
 ---
 # <a name="prerequisites-for-internet-client-classes"></a>인터넷 클라이언트 클래스의 필수 구성 요소
 
@@ -29,7 +30,7 @@ ms.locfileid: "84619829"
 
 ### <a name="general-internet-url-ftp-gopher-or-http"></a>일반 인터넷 URL (FTP, Gopher 또는 HTTP)
 
-|작업|필수 요소|
+|작업|필수 조건|
 |------------|------------------|
 |연결을 설정합니다.|[Cinternetsession](reference/cinternetsession-class.md) 을 만들어 인터넷 클라이언트 응용 프로그램의 기반을 설정 합니다.|
 |URL을 엽니다.|연결을 설정합니다. [Cinternetsession:: OpenURL](reference/cinternetsession-class.md#openurl)을 호출 합니다. `OpenURL`함수는 읽기 전용 리소스 개체를 반환 합니다.|
@@ -39,7 +40,7 @@ ms.locfileid: "84619829"
 
 ### <a name="ftp"></a>FTP
 
-|작업|필수 요소|
+|작업|필수 조건|
 |------------|------------------|
 |FTP 연결을 설정 합니다.|이 인터넷 클라이언트 응용 프로그램의 기반으로 [Cinternetsession](reference/cinternetsession-class.md) 을 만듭니다. [Cinternetsession:: GetFtpConnection](reference/cinternetsession-class.md#getftpconnection) 을 호출 하 여 [cinternetsession](reference/cftpconnection-class.md) 개체를 만듭니다.|
 |첫 번째 리소스를 찾습니다.|FTP 연결을 설정 합니다. [Cftpfilefind](reference/cftpfilefind-class.md) 개체를 만듭니다. [Cftpfilefind:: FindFile](reference/cftpfilefind-class.md#findfile)을 호출 합니다.|
@@ -52,7 +53,7 @@ ms.locfileid: "84619829"
 
 ### <a name="http"></a>HTTP
 
-|작업|필수 요소|
+|작업|필수 조건|
 |------------|------------------|
 |HTTP 연결을 설정 합니다.|이 인터넷 클라이언트 응용 프로그램의 기반으로 [Cinternetsession](reference/cinternetsession-class.md) 을 만듭니다. [Cinternetsession:: GetHttpConnection](reference/cinternetsession-class.md#gethttpconnection) 를 호출 하 여 [CHttpConnection](reference/chttpconnection-class.md) 개체를 만듭니다.|
 |HTTP 파일을 엽니다.|HTTP 연결을 설정 합니다. [CHttpConnection:: OpenRequest](reference/chttpconnection-class.md#openrequest) 를 호출 하 여 [CHttpFile](reference/chttpfile-class.md) 개체를 만듭니다. [CHttpFile:: AddRequestHeaders](reference/chttpfile-class.md#addrequestheaders)를 호출 합니다. [CHttpFile:: sendrequest가](reference/chttpfile-class.md#sendrequest)를 호출 합니다.|
@@ -61,7 +62,7 @@ ms.locfileid: "84619829"
 
 ### <a name="gopher"></a>고
 
-|작업|필수 요소|
+|작업|필수 조건|
 |------------|------------------|
 |Gopher 연결을 설정 합니다.|이 인터넷 클라이언트 응용 프로그램의 기반으로 [Cinternetsession](reference/cinternetsession-class.md) 을 만듭니다. [Cinternetsession:: GetGopherConnection](reference/cinternetsession-class.md#getgopherconnection) 를 호출 하 여 [CGopherConnection](reference/cgopherconnection-class.md)를 만듭니다.|
 |현재 디렉터리에서 첫 번째 파일을 찾습니다.|Gopher 연결을 설정 합니다. [CGopherFileFind](reference/cgopherfilefind-class.md) 개체를 만듭니다. [CGopherConnection:: CreateLocator](reference/cgopherconnection-class.md#createlocator) 를 호출 하 여 [CGopherLocator](reference/cgopherlocator-class.md) 개체를 만듭니다. [CGopherFileFind:: FindFile](reference/cgopherfilefind-class.md#findfile)에 로케이터를 전달 합니다. 나중에 필요한 경우 [CGopherFileFind:: GetLocator](reference/cgopherfilefind-class.md#getlocator) 를 호출 하 여 파일의 로케이터를 가져옵니다.|
@@ -71,6 +72,6 @@ ms.locfileid: "84619829"
 
 ## <a name="see-also"></a>참고 항목
 
-[Win32 인터넷 확장명(WinInet)](win32-internet-extensions-wininet.md)<br/>
-[인터넷 클라이언트 애플리케이션을 만들기 위한 MFC 클래스](mfc-classes-for-creating-internet-client-applications.md)<br/>
-[MFC WinInet 클래스를 사용하여 인터넷 클라이언트 애플리케이션 작성](writing-an-internet-client-application-using-mfc-wininet-classes.md)
+[Win32 인터넷 확장 (WinInet)](win32-internet-extensions-wininet.md)<br/>
+[인터넷 클라이언트 응용 프로그램을 만들기 위한 MFC 클래스](mfc-classes-for-creating-internet-client-applications.md)<br/>
+[MFC WinInet 클래스를 사용 하 여 인터넷 클라이언트 응용 프로그램 작성](writing-an-internet-client-application-using-mfc-wininet-classes.md)

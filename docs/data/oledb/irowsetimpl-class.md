@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: IRowsetImpl 클래스'
 title: IRowsetImpl 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -88,12 +89,12 @@ helpviewer_keywords:
 - m_iRowset
 - m_rgRowHandles
 ms.assetid: 6a9189af-7556-45b1-adcb-9d62bb36704c
-ms.openlocfilehash: 27a07d10256147d3c3ed383744ba1ee5fdfd06a1
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 45b34d0404383bc425b0b4938782b2a34e725808
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504076"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317417"
 ---
 # <a name="irowsetimpl-class"></a>IRowsetImpl 클래스
 
@@ -149,7 +150,7 @@ class ATL_NO_VTABLE IRowsetImpl : public RowsetInterface
 
 ### <a name="data-members"></a>데이터 멤버
 
-| 속성 | 설명 |
+| Name | 설명 |
 |-|-|
 |[m_bCanFetchBack](#bcanfetchback)|공급자가 뒤로 페치를 지원할지 여부를 나타냅니다.|
 |[m_bCanScrollBack](#bcanscrollback)|공급자가 커서를 뒤로 스크롤할 수 있는지 여부를 나타냅니다.|
@@ -176,7 +177,7 @@ STDMETHOD(AddRefRows )(DBCOUNTITEM cRows,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [IRowset:: addrefrows](/previous-versions/windows/desktop/ms719619(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [IRowset:: addrefrows](/previous-versions/windows/desktop/ms719619(v=vs.85)) 를 참조 하세요.
 
 ## <a name="irowsetimplcreaterow"></a><a name="createrow"></a> IRowsetImpl:: CreateRow
 
@@ -219,7 +220,7 @@ STDMETHOD(GetData )(HROW hRow,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [IRowset:: GetData](/previous-versions/windows/desktop/ms716988(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [IRowset:: GetData](/previous-versions/windows/desktop/ms716988(v=vs.85)) 를 참조 하세요.
 
 일부 매개 변수는에서 설명 하는 다양 한 이름의 *프로그래머 참조* 매개 변수 OLE DB에 해당 합니다 `IRowset::GetData` .
 
@@ -270,7 +271,7 @@ STDMETHOD(GetNextRows )(HCHAPTER hReserved,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [IRowset:: GetNextRows](/previous-versions/windows/desktop/ms709827(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [IRowset:: GetNextRows](/previous-versions/windows/desktop/ms709827(v=vs.85)) 를 참조 하세요.
 
 ## <a name="irowsetimplirowsetimpl"></a><a name="irowsetimpl"></a> IRowsetImpl:: IRowsetImpl
 
@@ -302,7 +303,7 @@ HRESULT RefRows(DBCOUNTITEM cRows,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [IRowset:: addrefrows](/previous-versions/windows/desktop/ms719619(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [IRowset:: addrefrows](/previous-versions/windows/desktop/ms719619(v=vs.85)) 를 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -324,7 +325,7 @@ STDMETHOD(ReleaseRows )(DBCOUNTITEM cRows,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [IRowset:: ReleaseRows](/previous-versions/windows/desktop/ms719771(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [IRowset:: ReleaseRows](/previous-versions/windows/desktop/ms719771(v=vs.85)) 를 참조 하세요.
 
 ## <a name="irowsetimplrestartposition"></a><a name="restartposition"></a> IRowsetImpl:: RestartPosition
 
@@ -338,7 +339,7 @@ STDMETHOD(RestartPosition )(HCHAPTER /* hReserved */);
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [IRowset:: RestartPosition](/previous-versions/windows/desktop/ms712877(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [IRowset:: RestartPosition](/previous-versions/windows/desktop/ms712877(v=vs.85)) 를 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
@@ -415,13 +416,13 @@ unsigned m_bReset:1;
 
 ### <a name="remarks"></a>설명
 
-소비자가 음수 또는 CRows를 사용 하 여 [GetNextRows](#getnextrows) 를 호출 `lOffset` 하 *cRows* 고 `m_bReset` 가 true 이면 `GetNextRows` 행 집합의 끝으로 이동 합니다. `m_bReset`가 false 이면 소비자는 OLE DB 사양을 준수 하 여 오류 코드를 수신 합니다. `m_bReset`플래그는 **`true`** 행 집합을 처음 만들 때와 소비자가 [IRowsetImpl:: RestartPosition](#restartposition)를 호출 하는 경우로 설정 됩니다. 를 **`false`** 호출할 때로 설정 `GetNextRows` 됩니다.
+소비자가 음수 또는 CRows를 사용 하 여 [GetNextRows](#getnextrows) 를 호출 `lOffset` 하  고 `m_bReset` 가 true 이면 `GetNextRows` 행 집합의 끝으로 이동 합니다. `m_bReset`가 false 이면 소비자는 OLE DB 사양을 준수 하 여 오류 코드를 수신 합니다. `m_bReset`플래그는 **`true`** 행 집합을 처음 만들 때와 소비자가 [IRowsetImpl:: RestartPosition](#restartposition)를 호출 하는 경우로 설정 됩니다. 를 **`false`** 호출할 때로 설정 `GetNextRows` 됩니다.
 
 ## <a name="irowsetimplm_irowset"></a><a name="irowset"></a> IRowsetImpl:: m_iRowset
 
 커서를 나타내는 행 집합에 대 한 인덱스입니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 DBROWOFFSET m_iRowset;
@@ -439,7 +440,7 @@ MapClass m_rgRowHandles;
 
 ### <a name="remarks"></a>설명
 
-을 호출 하 여 행 핸들을 제거 `ReleaseRows` 합니다. *Mapclass*의 정의는 [IRowsetImpl 개요](../../data/oledb/irowsetimpl-class.md) 를 참조 하세요.
+을 호출 하 여 행 핸들을 제거 `ReleaseRows` 합니다. *Mapclass* 의 정의는 [IRowsetImpl 개요](../../data/oledb/irowsetimpl-class.md) 를 참조 하세요.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 방법: parallel_for 루프 작성'
 title: '방법: parallel_for 루프 작성'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - writing a parallel_for loop [Concurrency Runtime]
 - parallel_for function, example
 ms.assetid: adb4d64e-5514-4b70-8dcb-b9210e6b5a1c
-ms.openlocfilehash: 8d2d54e084652a8f34b125b96c3f502dd9cdb1fa
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: ccf66c3e457b540721f0a76722b9d17206cf0f7f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008971"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97205696"
 ---
 # <a name="how-to-write-a-parallel_for-loop"></a>방법: parallel_for 루프 작성
 
@@ -49,7 +50,7 @@ parallel: 1311
 
 > **cl.exe/EHsc parallel-matrix-multiply**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [병렬 알고리즘](../../parallel/concrt/parallel-algorithms.md)<br/>
 [parallel_for 함수](reference/concurrency-namespace-functions.md#parallel_for)

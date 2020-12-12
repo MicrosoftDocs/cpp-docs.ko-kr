@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: IErrorRecordsImpl 클래스'
 title: IErrorRecordsImpl 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -63,12 +64,12 @@ helpviewer_keywords:
 - GetRecordCount method
 - m_rgErrors
 ms.assetid: dea8e938-c5d8-45ab-86de-eb8fbf534ffb
-ms.openlocfilehash: cb0e236a31846e3465d76b6904a7b4c57a2b8cf4
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 2c4a674a6197178e3418afc6e62cda1894497599
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91508997"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317456"
 ---
 # <a name="ierrorrecordsimpl-class"></a>IErrorRecordsImpl 클래스
 
@@ -107,7 +108,7 @@ OLE DB 오류 개체를 나타내는 클래스입니다.
 
 ### <a name="interface-methods"></a>인터페이스 메서드
 
-| 속성 | 설명 |
+| Name | 설명 |
 |-|-|
 |[AddErrorRecord](#adderrorrecord)|OLE DB error 개체에 레코드를 추가 합니다.|
 |[GetBasicErrorInfo](#getbasicerrorinfo)|반환 코드 및 공급자별 오류 번호와 같은 오류에 대 한 기본 정보를 반환 합니다.|
@@ -118,7 +119,7 @@ OLE DB 오류 개체를 나타내는 클래스입니다.
 
 ### <a name="data-members"></a>데이터 멤버
 
-| 속성 | 설명 |
+| Name | 설명 |
 |-|-|
 |[m_rgErrors](#rgerrors)|오류 레코드의 배열입니다.|
 
@@ -233,7 +234,7 @@ STDMETHOD(AddErrorRecord )(ERRORINFO *pErrorInfo,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [Ierrorrecords:: AddErrorRecord](/previous-versions/windows/desktop/ms725362(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [Ierrorrecords:: AddErrorRecord](/previous-versions/windows/desktop/ms725362(v=vs.85)) 를 참조 하세요.
 
 ## <a name="ierrorrecordsimplgetbasicerrorinfo"></a><a name="getbasicerrorinfo"></a> IErrorRecordsImpl:: GetBasicErrorInfo
 
@@ -248,7 +249,7 @@ STDMETHOD(GetBasicErrorInfo )(ULONG ulRecordNum,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [Ierrorrecords:: getbasicerrorinfo](/previous-versions/windows/desktop/ms723907(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [Ierrorrecords:: getbasicerrorinfo](/previous-versions/windows/desktop/ms723907(v=vs.85)) 를 참조 하세요.
 
 ## <a name="ierrorrecordsimplgetcustomerrorobject"></a><a name="getcustomerrorobject"></a> IerrorrecordGetCustomErrorObject Pl::
 
@@ -264,7 +265,7 @@ STDMETHOD(GetCustomErrorObject )(ULONG ulRecordNum,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [Ierrorrecords:: GetCustomErrorObject](/previous-versions/windows/desktop/ms725417(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [Ierrorrecords:: GetCustomErrorObject](/previous-versions/windows/desktop/ms725417(v=vs.85)) 를 참조 하세요.
 
 ## <a name="ierrorrecordsimplgeterrorinfo"></a><a name="geterrorinfo"></a> IErrorRecordsImpl:: GetErrorInfo
 
@@ -280,7 +281,7 @@ STDMETHOD(GetErrorInfo )(ULONG ulRecordNum,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [Ierrorrecords:: geterrorinfo](/previous-versions/windows/desktop/ms711230(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [Ierrorrecords:: geterrorinfo](/previous-versions/windows/desktop/ms711230(v=vs.85)) 를 참조 하세요.
 
 ## <a name="ierrorrecordsimplgeterrorparameters"></a><a name="geterrorparameters"></a> IErrorRecordsImpl:: GetErrorParameters
 
@@ -295,7 +296,7 @@ STDMETHOD(GetErrorParameters )(ULONG ulRecordNum,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*의 [Ierrorrecords:: geterrorparameters](/previous-versions/windows/desktop/ms715793(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 의 [Ierrorrecords:: geterrorparameters](/previous-versions/windows/desktop/ms715793(v=vs.85)) 를 참조 하세요.
 
 ## <a name="ierrorrecordsimplgetrecordcount"></a><a name="getrecordcount"></a> IErrorRecordsImpl:: GetRecordCount
 
@@ -309,7 +310,7 @@ STDMETHOD(GetRecordCount )(ULONG *pcRecords);
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [Ierrorrecords:: getrecordcount](/previous-versions/windows/desktop/ms722724(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [Ierrorrecords:: getrecordcount](/previous-versions/windows/desktop/ms722724(v=vs.85)) 를 참조 하세요.
 
 ## <a name="ierrorrecordsimplm_rgerrors"></a><a name="rgerrors"></a> IErrorRecordsImpl:: m_rgErrors
 

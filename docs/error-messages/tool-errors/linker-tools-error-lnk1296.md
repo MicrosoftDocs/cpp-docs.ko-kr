@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 링커 도구 오류 LNK1296'
 title: 링커 도구 오류 LNK1296
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1296
 ms.assetid: f94a3d18-5411-456b-966f-89810fdcfe60
-ms.openlocfilehash: 7fada5a0372703d12f4f53617533ccaa047b7ff7
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ab290ba06b6dc2f9bb1d2b4834bdf2bc4350f884
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80194956"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97193684"
 ---
 # <a name="linker-tools-error-lnk1296"></a>링커 도구 오류 LNK1296
 

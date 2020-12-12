@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3059'
 title: 컴파일러 오류 C3059
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3059
 ms.assetid: 57220324-8286-4cab-a1ab-45385eb1eae0
-ms.openlocfilehash: 9b1efc0969373b6a91b0800ae71477b2371814bb
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 82629fb77a0cf589f4e311d951fcf1540e0b7c8f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91501435"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97281758"
 ---
 # <a name="compiler-error-c3059"></a>컴파일러 오류 C3059
 

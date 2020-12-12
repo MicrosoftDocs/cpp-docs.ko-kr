@@ -1,15 +1,16 @@
 ---
+description: '자세히 알아보기: Rich Edit 컨트롤의 개요'
 title: Rich Edit 컨트롤의 개요
 ms.date: 11/04/2016
 helpviewer_keywords:
 - rich edit controls [MFC]
 ms.assetid: ad589b9f-a3fd-4820-bf1f-6b1965997e68
-ms.openlocfilehash: b99a5c6faaae4679b6aef67f240febbfb0f596e8
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 9971eb7340ddf270c6094d239737c89cff66e6e0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84617718"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97205969"
 ---
 # <a name="overview-of-the-rich-edit-control"></a>Rich Edit 컨트롤의 개요
 
