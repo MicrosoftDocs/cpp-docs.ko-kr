@@ -1,4 +1,5 @@
 ---
+description: _InterlockedCompareExchange128 내장 함수에 대해 자세히 알아보세요.
 title: _InterlockedCompareExchange128 내장 함수
 ms.date: 09/02/2019
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - cmpxchg16b instruction
 - _InterlockedCompareExchange128 intrinsic
 ms.assetid: f05918fc-716a-4f6d-b746-1456d6b96c56
-ms.openlocfilehash: 6f6b36b238945f7d46e9817cdc85977d666e1e9b
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: ee04a71dafe37d6075a054946cd947f6f3829092
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80077620"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168139"
 ---
 # <a name="_interlockedcompareexchange128-intrinsic-functions"></a>_InterlockedCompareExchange128 내장 함수
 
@@ -62,7 +63,7 @@ unsigned char _InterlockedCompareExchange128_rel(
 
 ### <a name="parameters"></a>매개 변수
 
-*대상*\
+*대상이*\
 [in, out] 128 비트 필드로 간주 되는 2 64 비트 정수의 배열인 대상에 대 한 포인터입니다. 일반 보호 오류를 방지 하려면 대상 데이터가 16 바이트 맞춤 이어야 합니다.
 
 *ExchangeHigh*\
@@ -76,32 +77,32 @@ unsigned char _InterlockedCompareExchange128_rel(
 
 ## <a name="return-value"></a>반환 값
 
-128 비트 비교 피연산자이 대상의 원래 값과 같으면 1입니다. `ExchangeHigh` 및 `ExchangeLow` 128 비트 대상을 덮어씁니다.
+128 비트 비교 피연산자이 대상의 원래 값과 같으면 1입니다. `ExchangeHigh``ExchangeLow`128 비트 대상을 덮어씁니다.
 
 비교 피연산자가 대상의 원래 값과 같지 않은 경우 0입니다. 대상의 값은 변경 되지 않으며 비교 피연산자의 값은 대상의 값으로 덮어쓰여집니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|Intrinsic|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`_InterlockedCompareExchange128`|x64, ARM64|
 |`_InterlockedCompareExchange128_acq`, `_InterlockedCompareExchange128_nf`, `_InterlockedCompareExchange128_rel`|ARM64|
-|`_InterlockedCompareExchange128_np`|x64|
+|`_InterlockedCompareExchange128_np`|X64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
-`_InterlockedCompareExchange128` 내장 함수는 128 비트의 잠금 비교 및 교환을 수행 하는 `cmpxchg16b` 명령 (`lock` 접두사 포함)을 생성 합니다. 이전 버전의 AMD 64 비트 하드웨어는이 명령을 지원 하지 않습니다. `cmpxchg16b` 명령에 대 한 하드웨어 지원을 확인 하려면 `InfoType=0x00000001 (standard function 1)`를 사용 하 여 `__cpuid` 내장 함수를 호출 합니다. 명령이 지원 되는 경우 `CPUInfo[2]` (ECX)의 비트는 1입니다.
+`_InterlockedCompareExchange128`내장 함수는 `cmpxchg16b` 접두사를 사용 하 여 `lock` 128 비트의 잠금 비교 및 교환을 수행 하는 명령을 생성 합니다. 이전 버전의 AMD 64 비트 하드웨어는이 명령을 지원 하지 않습니다. 명령에 대 한 하드웨어 지원을 확인 하려면를 사용 하 여 `cmpxchg16b` `__cpuid` 내장 함수를 호출 `InfoType=0x00000001 (standard function 1)` 합니다. 명령이 지원 되는 경우의 비트 13 `CPUInfo[2]` (ECX)은 1입니다.
 
 > [!NOTE]
-> `ComparandResult` 값은 항상 덮어쓰여집니다. `lock` 명령 후이 내장 함수는 `Destination`의 초기 값을 `ComparandResult`에 즉시 복사 합니다. 이러한 이유로 예기치 않은 동작을 방지 하려면 `ComparandResult` 및 `Destination` 별도의 메모리 위치를 가리켜야 합니다.
+> 의 값은 `ComparandResult` 항상 덮어쓰여집니다. 명령 후 `lock` 이 내장 함수는의 초기 값을에 즉시 `Destination` 복사 `ComparandResult` 합니다. 따라서 `ComparandResult` 및는 `Destination` 예기치 않은 동작을 방지 하기 위해 별도의 메모리 위치를 가리켜야 합니다.
 
-하위 수준 스레드 동기화에 `_InterlockedCompareExchange128`를 사용할 수 있지만 대신 더 작은 동기화 기능 (예: 다른 `_InterlockedCompareExchange` 내장 함수)을 사용할 수 있는 경우 128 비트를 동기화 할 필요가 없습니다. 메모리에서 128 비트 값에 대 한 원자성 액세스를 원하는 경우 `_InterlockedCompareExchange128`를 사용 합니다.
+`_InterlockedCompareExchange128`낮은 수준의 스레드 동기화에를 사용할 수 있지만, 더 작은 동기화 기능 (예: 다른 내장 함수)을 사용할 수 있는 경우 128 비트를 동기화 할 필요가 없습니다 `_InterlockedCompareExchange` . `_InterlockedCompareExchange128`메모리에서 128 비트 값에 대 한 원자성 액세스를 원하는 경우를 사용 합니다.
 
-`cmpxchg16b` 명령을 지원 하지 않는 하드웨어에서 내장 함수를 사용 하는 코드를 실행 하는 경우 결과를 예측할 수 없습니다.
+명령을 지원 하지 않는 하드웨어에서 내장 함수를 사용 하는 코드를 실행 하는 경우 `cmpxchg16b` 결과를 예측할 수 없습니다.
 
-ARM 플랫폼에서는 임계 영역의 시작 및 끝과 같은 위치에서 의미 체계를 획득하고 해제하려면 `_acq` 및 `_rel` 접미사가 포함된 내장 함수를 사용합니다. `_nf` ("no fence") 접미사가 포함 된 ARM 내장 함수는 메모리 장벽으로 작동 하지 않습니다.
+ARM 플랫폼에서는 임계 영역의 시작 및 끝과 같은 위치에서 의미 체계를 획득하고 해제하려면 `_acq` 및 `_rel` 접미사가 포함된 내장 함수를 사용합니다. `_nf`("No fence") 접미사가 포함 된 ARM 내장 함수는 메모리 장벽으로 작동 하지 않습니다.
 
 `_np`("no prefetch"의 약어) 접미사가 포함된 내장 함수는 컴파일러가 가능한 프리페치 연산을 삽입하지 못하도록 차단합니다.
 
@@ -109,7 +110,7 @@ ARM 플랫폼에서는 임계 영역의 시작 및 끝과 같은 위치에서 �
 
 ## <a name="example"></a>예제
 
-이 예제에서는 `_InterlockedCompareExchange128`를 사용 하 여 2 64 비트 정수의 배열의 상위 단어를 높은 단어 및 낮은 단어의 합계로 바꾸고 하위 단어를 늘립니다. `BigInt.Int` 배열에 대 한 액세스는 원자성 이지만이 예제에서는 단일 스레드를 사용 하 고 편의상 잠금을 무시 합니다.
+이 예제에서는 `_InterlockedCompareExchange128` 를 사용 하 여 2 64 비트 정수의 배열에 대 한 상위 단어를 높은 단어와 낮은 단어의 합계로 바꾸고 하위 단어를 늘립니다. 배열에 대 한 액세스는 `BigInt.Int` 원자성 이지만,이 예제에서는 단일 스레드를 사용 하 고 편의상 잠금을 무시 합니다.
 
 ```cpp
 // cmpxchg16b.c
@@ -159,8 +160,8 @@ BigInt.Int[1] = 34, BigInt.Int[0] = 12
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)\
-[내장 함수 _InterlockedCompareExchange](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)\
-[x86 컴파일러와 충돌](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)
+[_InterlockedCompareExchange 내장 함수](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)\
+[X86 컴파일러와 충돌](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

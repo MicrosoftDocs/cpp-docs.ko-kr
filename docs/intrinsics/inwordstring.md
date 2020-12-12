@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __inwordstring'
 title: __inwordstring
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - __inwordstring intrinsic
 - rep insw instruction
 ms.assetid: 6de37939-017a-4740-9e3d-7de78a30daba
-ms.openlocfilehash: a6f67e15bc5eef9fbe9cc8d12e95afcdf869e3b1
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: d65aaedd3fc0fd51ab276abb391ed3c58047ccda
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70221883"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167814"
 ---
 # <a name="__inwordstring"></a>__inwordstring
 
 **Microsoft 전용**
 
-`rep insw` 명령을 사용 하 여 지정 된 포트에서 데이터를 읽습니다.
+명령을 사용 하 여 지정 된 포트에서 데이터를 읽습니다 `rep insw` .
 
 ## <a name="syntax"></a>구문
 
@@ -44,11 +45,11 @@ void __inwordstring(
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`__inwordstring`|x86, x64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 ## <a name="remarks"></a>설명
 
@@ -56,6 +57,6 @@ void __inwordstring(
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

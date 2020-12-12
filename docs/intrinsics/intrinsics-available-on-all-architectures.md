@@ -1,25 +1,26 @@
 ---
+description: '자세히 알아보기: 모든 아키텍처에서 내장 함수 사용 가능'
 title: 모든 아키텍처에서 사용할 수 있는 내장 함수
 ms.date: 09/02/2019
 helpviewer_keywords:
 - cl.exe compiler, intrinsics
 ms.assetid: 1fe3958e-d2fe-4188-8e34-5896738246eb
-ms.openlocfilehash: 0293daacd717b3ae85b993729090fe363f7e0b9b
-ms.sourcegitcommit: e805200eaef4fe7a65a00051bbd305273af94fe7
+ms.openlocfilehash: b2f3a1371b250230e09c60301478787fe17ea7cb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74163474"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167944"
 ---
 # <a name="intrinsics-available-on-all-architectures"></a>모든 아키텍처에서 사용할 수 있는 내장 함수
 
-Microsoft C/C++ 컴파일러 및 유니버설 C 런타임 라이브러리 (c #)는 모든 아키텍처에서 일부 내장 함수를 사용할 수 있도록 합니다.
+Microsoft C/c + + 컴파일러와 CRT (유니버설 C 런타임 라이브러리)는 모든 아키텍처에서 일부 내장 함수를 사용할 수 있도록 합니다.
 
 ## <a name="compiler-intrinsics"></a>컴파일러 내장 함수
 
 다음 내장 함수는 x86, AMD64, ARM 및 ARM64 아키텍처에서 사용할 수 있습니다.
 
-|내장 함수|Header|
+|Intrinsic|헤더|
 |---------------|------------|
 |[_AddressOfReturnAddress](../intrinsics/addressofreturnaddress.md)|intrin.h|
 |[_BitScanForward](../intrinsics/bitscanforward-bitscanforward64.md)|intrin.h|
@@ -73,7 +74,7 @@ Microsoft C/C++ 컴파일러 및 유니버설 C 런타임 라이브러리 (c #)�
 
 다음의 모든 아키텍처에는 내장 형식이 포함 되어 있습니다.
 
-|내장 함수|Header|
+|Intrinsic|헤더|
 |---------------|------------|
 |[abs](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|stdlib.h|
 |[_abs64](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|stdlib.h|
@@ -104,10 +105,10 @@ Microsoft C/C++ 컴파일러 및 유니버설 C 런타임 라이브러리 (c #)�
 |[cosl](../c-runtime-library/reference/cos-cosf-cosl.md)|math.h|
 |[exp](../c-runtime-library/reference/exp-expf.md)|math.h|
 |[expf](../c-runtime-library/reference/exp-expf.md)|math.h|
-|[추가 l](../c-runtime-library/reference/exp-expf.md)|math.h|
+|[expl](../c-runtime-library/reference/exp-expf.md)|math.h|
 |[fabs](../c-runtime-library/reference/fabs-fabsf-fabsl.md)|math.h|
 |[fabsf](../c-runtime-library/reference/fabs-fabsf-fabsl.md)|math.h|
-|[floor](../c-runtime-library/reference/floor-floorf-floorl.md)|math.h|
+|[평면](../c-runtime-library/reference/floor-floorf-floorl.md)|math.h|
 |[floorf](../c-runtime-library/reference/floor-floorf-floorl.md)|math.h|
 |[floorl](../c-runtime-library/reference/floor-floorf-floorl.md)|math.h|
 |[fmod](../c-runtime-library/reference/fmod-fmodf.md)|math.h|
@@ -115,7 +116,7 @@ Microsoft C/C++ 컴파일러 및 유니버설 C 런타임 라이브러리 (c #)�
 |[fmodl](../c-runtime-library/reference/fmod-fmodf.md)|math.h|
 |[labs](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|stdlib.h|
 |[llabs](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|stdlib.h|
-|[log](../c-runtime-library/reference/log-logf-log10-log10f.md)|math.h|
+|[로깅할](../c-runtime-library/reference/log-logf-log10-log10f.md)|math.h|
 |[log10](../c-runtime-library/reference/log-logf-log10-log10f.md)|math.h|
 |[log10f](../c-runtime-library/reference/log-logf-log10-log10f.md)|math.h|
 |[log10l](../c-runtime-library/reference/log-logf-log10-log10f.md)|math.h|
@@ -133,7 +134,7 @@ Microsoft C/C++ 컴파일러 및 유니버설 C 런타임 라이브러리 (c #)�
 |[_rotl64](../c-runtime-library/reference/rotl-rotl64-rotr-rotr64.md)|stdlib.h|
 |[_rotr](../c-runtime-library/reference/rotl-rotl64-rotr-rotr64.md)|stdlib.h|
 |[_rotr64](../c-runtime-library/reference/rotl-rotl64-rotr-rotr64.md)|stdlib.h|
-|[sin](../c-runtime-library/reference/sin-sinf-sinl.md)|math.h|
+|[사인](../c-runtime-library/reference/sin-sinf-sinl.md)|math.h|
 |[sinf](../c-runtime-library/reference/sin-sinf-sinl.md)|math.h|
 |[sinh](../c-runtime-library/reference/sinh-sinhf-sinhl.md)|math.h|
 |[sinhf](../c-runtime-library/reference/sinh-sinhf-sinhl.md)|math.h|
@@ -160,9 +161,9 @@ Microsoft C/C++ 컴파일러 및 유니버설 C 런타임 라이브러리 (c #)�
 |[wcslen](../c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md)|string.h|
 |[_wcsset](../c-runtime-library/reference/strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)|string.h|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [ARM 내장 함수](../intrinsics/arm-intrinsics.md)\
 [ARM64 내장 함수](../intrinsics/arm64-intrinsics.md)\
 [x86 내장 목록](../intrinsics/x86-intrinsics-list.md)\
-[x64 (amd64) 내장 목록](../intrinsics/x64-amd64-intrinsics-list.md)
+[x64(amd64) 내장 목록](../intrinsics/x64-amd64-intrinsics-list.md)

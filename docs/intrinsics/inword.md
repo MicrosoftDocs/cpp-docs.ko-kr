@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __inword'
 title: __inword
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - in instruction
 - __inword intrinsic
 ms.assetid: 5c617edd-6709-40a1-aad2-40d5e39283c6
-ms.openlocfilehash: 7daaf1abd5089716061f118e30e9534e5c5c18ee
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 8e2d698437cdb27a472872cfe24d7d0ab0a3c768
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79440970"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167879"
 ---
 # <a name="__inword"></a>__inword
 
 **Microsoft 전용**
 
-`in` 명령을 사용 하 여 지정 된 포트에서 데이터를 읽습니다.
+명령을 사용 하 여 지정 된 포트에서 데이터를 읽습니다 `in` .
 
 ## <a name="syntax"></a>구문
 
@@ -31,7 +32,7 @@ unsigned short __inword(
 
 ### <a name="parameters"></a>매개 변수
 
-*포트*\
+*포트인*\
 진행 읽을 포트입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -44,7 +45,7 @@ unsigned short __inword(
 |---------------|------------------|
 |`__inword`|x86, x64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 ## <a name="remarks"></a>설명
 
@@ -52,6 +53,6 @@ unsigned short __inword(
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)
