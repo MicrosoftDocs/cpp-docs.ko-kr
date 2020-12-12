@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 연산자 오버 로드에 대 한 일반 규칙'
 title: 연산자 오버로드에 대한 일반 규칙
 ms.date: 11/04/2016
 helpviewer_keywords:
 - operator overloading [C++], rules
 ms.assetid: eb2b3754-35f7-4832-b1da-c502893dc0c7
-ms.openlocfilehash: da0bf04435118c819fc29efd3082d8d312e43006
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 224bc6fb8de566519ef848471905d1ed76a020db
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213400"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268732"
 ---
 # <a name="general-rules-for-operator-overloading"></a>연산자 오버로드에 대한 일반 규칙
 
@@ -19,7 +20,7 @@ ms.locfileid: "87213400"
 
 - 기본 제공 데이터 형식에 적용할 때 연산자의 의미를 다시 정의할 수 없습니다.
 
-- 오버로드된 연산자는 비정적 클래스 멤버 함수 또는 전역 함수여야 합니다. private 또는 protected 클래스 멤버에 액세스해야 하는 전역 함수는 해당 클래스의 friend로 선언해야 합니다. 전역 함수는 클래스 또는 열거형 형식이거나 클래스 또는 열거형 형식에 대한 참조인 인수를 하나 이상 사용해야 합니다. 예를 들면 다음과 같습니다.
+- 오버로드된 연산자는 비정적 클래스 멤버 함수 또는 전역 함수여야 합니다. private 또는 protected 클래스 멤버에 액세스해야 하는 전역 함수는 해당 클래스의 friend로 선언해야 합니다. 전역 함수는 클래스 또는 열거형 형식이거나 클래스 또는 열거형 형식에 대한 참조인 인수를 하나 이상 사용해야 합니다. 예를 들어:
 
     ```cpp
     // rules_for_operator_overloading.cpp
@@ -70,4 +71,4 @@ var++;
 
 ## <a name="see-also"></a>참고 항목
 
-[연산자 오버 로드](../cpp/operator-overloading.md)
+[연산자 오버로드](../cpp/operator-overloading.md)

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _RTC_SetErrorFunc'
 title: _RTC_SetErrorFunc
 ms.date: 11/04/2016
 api_name:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - RTC_SetErrorFunc function
 - _RTC_SetErrorFunc function
 ms.assetid: b2292722-0d83-4092-83df-3d5b19880666
-ms.openlocfilehash: 6b173dd9af9fe11146341468c44a0abc10ce90bc
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 454fd54e0960e8ce52c94b4e4a1e0a93ea99d3eb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70949021"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268940"
 ---
 # <a name="_rtc_seterrorfunc"></a>_RTC_SetErrorFunc
 
@@ -51,11 +52,11 @@ _RTC_error_fn _RTC_SetErrorFunc(
 
 ## <a name="return-value"></a>반환 값
 
-이전에 정의된 오류 함수입니다. 이전에 정의 된 함수가 없으면 **NULL**을 반환 합니다.
+이전에 정의된 오류 함수입니다. 이전에 정의 된 함수가 없으면 **NULL** 을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-이 함수를 사용 하지 마십시오. 대신 **_RTC_SetErrorFuncW**를 사용 합니다. 이전 버전과의 호환성을 위해서만 유지됩니다.
+이 함수를 사용 하지 마십시오. 대신 **_RTC_SetErrorFuncW** 를 사용 합니다. 이전 버전과의 호환성을 위해서만 유지됩니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -69,7 +70,7 @@ _RTC_error_fn _RTC_SetErrorFunc(
 
 모든 버전의 [C 런타임 라이브러리](../../c-runtime-library/crt-library-features.md)입니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [_CrtDbgReport, _CrtDbgReportW](crtdbgreport-crtdbgreportw.md)<br/>
 [런타임 오류 검사](../../c-runtime-library/run-time-error-checking.md)<br/>

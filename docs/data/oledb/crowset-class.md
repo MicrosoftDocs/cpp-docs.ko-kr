@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CRowset 클래스'
 title: CRowset 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -228,12 +229,12 @@ helpviewer_keywords:
 - Update method
 - UpdateAll method
 ms.assetid: b0228a90-b8dd-47cc-b397-8d4c15c1e7f4
-ms.openlocfilehash: b351530326e0dc4ed0b72db50d17717824eb6bb4
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 2d767803dcf5aac6dd4954d970ca753b3cfb24c4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91507274"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268537"
 ---
 # <a name="crowset-class"></a>CRowset 클래스
 
@@ -265,7 +266,7 @@ class CRowset
 |[닫기](#close)|행과 현재 인터페이스를 해제 `IRowset` 합니다.|
 |[비교](#compare)|[IRowsetLocate:: Compare](/previous-versions/windows/desktop/ms709539(v=vs.85))를 사용 하 여 두 책갈피를 비교 합니다.|
 |[CRowset](#crowset)|새 개체를 만들고 `CRowset` (선택 사항) `IRowset` 매개 변수로 제공 된 인터페이스에 연결 합니다.|
-|[Delete](#delete)|[IRowsetChange: DeleteRows](/previous-versions/windows/desktop/ms724362(v=vs.85))를 사용 하 여 행 집합에서 행을 삭제 합니다.|
+|[삭제](#delete)|[IRowsetChange: DeleteRows](/previous-versions/windows/desktop/ms724362(v=vs.85))를 사용 하 여 행 집합에서 행을 삭제 합니다.|
 |[FindNextRow](#findnextrow)|지정 된 책갈피 다음에 일치 하는 다음 행을 찾습니다.|
 |[GetApproximatePosition](#getapproximateposition)|책갈피에 해당 하는 행의 대략적인 위치를 반환 합니다.|
 |[GetData](#getdata)|행 집합의 행 복사본에서 데이터를 검색합니다.|
@@ -420,10 +421,10 @@ HRESULT FindNextRow(DBCOMPAREOP op,
 진행 데이터 값에 대해 할당 된 소비자 데이터 구조의 길이 (바이트)입니다. 자세한 내용은 `cbMaxLen` *OLE DB 프로그래머 참조* 에서 [DBBINDING 구조체](/previous-versions/windows/desktop/ms716845(v=vs.85)) 의 설명을 참조 하세요.
 
 *bPrecision*<br/>
-진행 데이터를 가져올 때 사용 되는 최대 전체 자릿수입니다. *Wtype* 이 DBTYPE_NUMERIC 경우에만 사용 됩니다. 자세한 내용은 *OLE DB 프로그래머 참조*에서 [DBTYPE_NUMERIC 관련 변환 또는 DBTYPE_DECIMAL](/previous-versions/windows/desktop/ms719714(v=vs.85)) 을 참조 하세요.
+진행 데이터를 가져올 때 사용 되는 최대 전체 자릿수입니다. *Wtype* 이 DBTYPE_NUMERIC 경우에만 사용 됩니다. 자세한 내용은 *OLE DB 프로그래머 참조* 에서 [DBTYPE_NUMERIC 관련 변환 또는 DBTYPE_DECIMAL](/previous-versions/windows/desktop/ms719714(v=vs.85)) 을 참조 하세요.
 
 *bScale*<br/>
-진행 데이터를 가져올 때 사용 되는 배율입니다. *Wtype* 이 DBTYPE_NUMERIC 또는 DBTYPE_DECIMAL 경우에만 사용 됩니다. 자세한 내용은 *OLE DB 프로그래머 참조*에서 [DBTYPE_NUMERIC 관련 변환 또는 DBTYPE_DECIMAL](/previous-versions/windows/desktop/ms719714(v=vs.85)) 을 참조 하세요.
+진행 데이터를 가져올 때 사용 되는 배율입니다. *Wtype* 이 DBTYPE_NUMERIC 또는 DBTYPE_DECIMAL 경우에만 사용 됩니다. 자세한 내용은 *OLE DB 프로그래머 참조* 에서 [DBTYPE_NUMERIC 관련 변환 또는 DBTYPE_DECIMAL](/previous-versions/windows/desktop/ms719714(v=vs.85)) 을 참조 하세요.
 
 *bSkipCurrent*<br/>
 진행 검색을 시작할 책갈피의 행 수입니다.
@@ -602,7 +603,7 @@ HRESULT Insert(int nAccessor = 0,
 
 다음 예에서는 행 집합을 통해 데이터 원본에 액세스 한 다음 해당 행 집합의 테이블을 사용 하 여 문자열을 삽입 하는 방법을 보여 줍니다.
 
-먼저 프로젝트에 새 ATL 개체를 삽입 하 여 테이블 클래스를 만듭니다. 예를 들어 작업 영역 창에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **새 ATL 개체**를 선택 합니다. **데이터 액세스** 범주에서 **소비자**를 선택 합니다. **Table**형식의 소비자 개체를 만듭니다. **테이블을 선택 하면** 테이블에서 직접 행 집합이 만들어지며, **명령을** 선택 하면 SQL 명령을 통해 행 집합이 만들어집니다. 데이터 원본을 선택 하 여 해당 데이터 원본에 액세스 하는 데 사용할 테이블을 지정 합니다. 소비자 개체 **Ccustomertable**을 호출 하는 경우 다음과 같이 삽입 코드를 구현 합니다.
+먼저 프로젝트에 새 ATL 개체를 삽입 하 여 테이블 클래스를 만듭니다. 예를 들어 작업 영역 창에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **새 ATL 개체** 를 선택 합니다. **데이터 액세스** 범주에서 **소비자** 를 선택 합니다. **Table** 형식의 소비자 개체를 만듭니다. **테이블을 선택 하면** 테이블에서 직접 행 집합이 만들어지며, **명령을** 선택 하면 SQL 명령을 통해 행 집합이 만들어집니다. 데이터 원본을 선택 하 여 해당 데이터 원본에 액세스 하는 데 사용할 테이블을 지정 합니다. 소비자 개체 **Ccustomertable** 을 호출 하는 경우 다음과 같이 삽입 코드를 구현 합니다.
 
 [!code-cpp[NVC_OLEDB_Consumer#10](../../data/oledb/codesnippet/cpp/crowset-insert_1.cpp)]
 
@@ -886,7 +887,7 @@ HRESULT Update(DBCOUNTITEM* pcRows = NULL,
 
 ### <a name="remarks"></a>설명
 
-현재 행이 마지막으로 인출 되거나 업데이트 된 후 (또는 UpdateAll을 사용 하 여) 보류 중인 변경 내용을 모두 전송 `Update` 합니다. [UpdateAll](#updateall) 일반적으로 [SetData](#setdata) 를 호출 하 여 행의 열에 데이터 값을 설정 하 고 `Update` 를 호출 하 여 해당 변경 내용을 전송 합니다.
+현재 행이 마지막으로 인출 되거나 업데이트 된 후 (또는 UpdateAll을 사용 하 여) 보류 중인 변경 내용을 모두 전송 `Update` 합니다. [](#updateall) 일반적으로 [SetData](#setdata) 를 호출 하 여 행의 열에 데이터 값을 설정 하 고 `Update` 를 호출 하 여 해당 변경 내용을 전송 합니다.
 
 이 메서드에는 `IRowsetUpdate` 모든 공급자에서 지원 되지 않을 수 있는 선택적 인터페이스가 필요 합니다 .이 경우 메서드는 E_NOINTERFACE를 반환 합니다. `DBPROP_IRowsetUpdate` `Open` 행 집합을 포함 하는 테이블이 나 명령에 대해를 호출 하기 전에 VARIANT_TRUE 설정 해야 합니다.
 
@@ -915,7 +916,7 @@ HRESULT UpdateAll(DBCOUNTITEM* pcRows = NULL,
 
 ### <a name="remarks"></a>설명
 
-[업데이트](#update) 또는을 사용 하 여 해당 행이 마지막으로 인출 되거나 업데이트 된 이후 모든 행에 대해 보류 중인 변경 내용을 전송 `UpdateAll` 합니다. `UpdateAll` 는 여전히 핸들 ( *Pphrow*참조)이 있는지 여부에 관계 없이 수정 된 모든 행을 업데이트 합니다.
+[업데이트](#update) 또는을 사용 하 여 해당 행이 마지막으로 인출 되거나 업데이트 된 이후 모든 행에 대해 보류 중인 변경 내용을 전송 `UpdateAll` 합니다. `UpdateAll` 는 여전히 핸들 ( *Pphrow* 참조)이 있는지 여부에 관계 없이 수정 된 모든 행을 업데이트 합니다.
 
 예를 들어 행 집합에 5 개의 행을 삽입 하는 데를 사용 하는 경우를 `Insert` `Update` 5 번 호출 하거나 `UpdateAll` 한 번 호출 하 여 모두 업데이트할 수 있습니다.
 

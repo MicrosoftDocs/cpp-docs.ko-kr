@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2290'
 title: 컴파일러 오류 C2290
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2290
 ms.assetid: 78c0feec-ccde-401b-8335-5b6ea6be8a13
-ms.openlocfilehash: 9ee5e4f3a2da25f2c0c2aeddbf8dda266eedb6e0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7cbaf08a3bdab2c03bda31897a5dc170883310ec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216260"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268316"
 ---
 # <a name="compiler-error-c2290"></a>컴파일러 오류 C2290
 

@@ -1,16 +1,17 @@
 ---
+description: '자세히 알아보기: 기본적으로 해제 되어 있는 컴파일러 경고'
 title: 기본적으로 해제되어 있는 컴파일러 경고
 ms.date: 08/29/2019
 helpviewer_keywords:
 - warnings, compiler
 - cl.exe compiler, setting options
 ms.assetid: 69809cfb-a38a-4035-b154-283a61938df8
-ms.openlocfilehash: 3727777c6abd3ae5ba19f147e2b6fbe559251813
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5bc482d12026bb8358d773be6a0c8b32cc2317fc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836611"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97269382"
 ---
 # <a name="compiler-warnings-that-are-off-by-default"></a>기본적으로 해제되어 있는 컴파일러 경고
 
@@ -32,9 +33,9 @@ ms.locfileid: "88836611"
 
    `/Wall`은 기본적으로 해제되어 있는 모든 경고가 사용되게 만듭니다. 이 옵션을 사용 하는 경우 [/wd](../build/reference/compiler-option-warning-level.md) 옵션을 사용 하 여 개별 경고를 해제할 수 있습니다.
 
-- [/w*Lnnnn*](../build/reference/compiler-option-warning-level.md)
+- [/w *Lnnnn*](../build/reference/compiler-option-warning-level.md)
 
-   이 옵션은 수준 *L*에서 경고 *nnnn* 을 사용 하도록 설정 합니다.
+   이 옵션은 수준 *L* 에서 경고 *nnnn* 을 사용 하도록 설정 합니다.
 
 ## <a name="warnings-that-are-off-by-default"></a>기본적으로 해제 되어 있는 경고
 
@@ -91,7 +92,7 @@ ms.locfileid: "88836611"
 |[C4596](../error-messages/compiler-warnings/c4596.md) (수준 4)|'*identifier*': 멤버 선언 <sup>14.3</sup> <sup>Perm</sup> 의 정규화 된 이름이 잘못 되었습니다.|
 |C4598 (수준 1 및 수준 3)|' #include "*헤더*" ': 미리 컴파일된 헤더의 헤더 번호 *헤더 번호가* <sup>14.3</sup> 위치에서 현재 컴파일과 일치 하지 않습니다.|
 |C4599 (수준 3)|'*option* *path*': 명령줄 인수 번호는 미리 컴파일된 헤더 <sup>14.3</sup> 과 일치 *하지 않습니다.*|
-|C4605 (수준 1)|'/D*macro*'은 (는) 현재 명령줄에서 지정 되었지만 미리 컴파일된 헤더를 빌드할 때 지정 되지 않았습니다.|
+|C4605 (수준 1)|'/D *macro*'은 (는) 현재 명령줄에서 지정 되었지만 미리 컴파일된 헤더를 빌드할 때 지정 되지 않았습니다.|
 |[C4608](../error-messages/compiler-warnings/compiler-warning-level-3-c4608.md) (수준 3)|'*union_member*'은 (는) 이미 이니셜라이저 목록의 다른 공용 구조체 멤버 '*union_member*' <sup>Perm</sup> 에서 초기화 되었습니다.|
 |[C4619](../error-messages/compiler-warnings/compiler-warning-level-3-c4619.md) (수준 3)|#pragma 경고: 경고 번호 '*number*'가 없습니다.|
 |[C4623](../error-messages/compiler-warnings/compiler-warning-level-4-c4623.md) (수준 4)|'derived class': 기본 클래스의 기본 생성자에 액세스할 수 없으므로 기본 생성자를 생성할 수 없습니다.|
@@ -119,7 +120,7 @@ ms.locfileid: "88836611"
 |[C4820](../error-messages/compiler-warnings/compiler-warning-level-4-c4820.md) (수준 4)|'*member_name*' 구문을 생성 한 후 '*바이트*' 바이트 패딩 추가|
 | [C4822](../error-messages/compiler-warnings/compiler-warning-level-1-c4822.md) (수준 1) | '*member*': 지역 클래스 멤버 함수에 본문이 없습니다. |
 |C4826 (수준 2)|'*Type1*'에서 '*type2*' (으)로의 변환이 부호 확장 되었습니다. 이로 인해 예기치 않은 런타임 동작이 발생할 수 있습니다.|
-|C4837 (수준 4)|검색 된 삼중 자: '?? '*character '로*바뀐 *문자*|
+|C4837 (수준 4)|검색 된 삼중 자: '?? '*character '로* 바뀐 *문자*|
 |C4841 (수준 4)|비표준 확장이 사용 됨: offsetof에 사용 되는 복합 멤버 지정자|
 |C4842 (수준 4)|여러 상속을 사용 하는 형식에 적용 된 ' offsetof '의 결과가 컴파일러 릴리스 간에 일치 하지 않을 수 있습니다.|
 |[C4868](../error-messages/compiler-warnings/compiler-warning-c4868.md) (수준 4)|'_file_(*line_number*) ' 컴파일러는 중괄호로 묶인 초기화 목록에서 왼쪽에서 오른쪽으로 계산 순서를 적용할 수 없습니다.|
@@ -142,7 +143,7 @@ ms.locfileid: "88836611"
 |C5029 (수준 4)|비표준 확장이 사용 됨: c + +의 맞춤 특성은 변수, 데이터 멤버 및 태그 형식에만 적용 됩니다.|
 |C5031 (수준 4)|#pragma 경고 (pop): 다른 파일 <sup>14.1</sup> 에 푸시된 경고 상태를 표시 하지 않을 수 있습니다.|
 |C5032 (수준 4)|해당 하는 #pragma 경고 (pop) <sup>14.1</sup> #pragma 경고 (push)가 발견 됨|
-|에서는 "c5034|내장 '*내장*함수를 사용 하면 함수 *함수 이름이* 게스트 코드 <sup>15.3</sup> 로 컴파일됩니다.|
+|에서는 "c5034|내장 '*내장* 함수를 사용 하면 함수 *함수 이름이* 게스트 코드 <sup>15.3</sup> 로 컴파일됩니다.|
 |C5035|'*feature*' 기능을 사용 하면 함수 *함수 이름이* 게스트 코드 <sup>15.3</sup> 로 컴파일됩니다.|
 |C5036 (수준 1)|/wks를 사용 하 여 컴파일할 때 varargs 함수 포인터 변환: x86arm64 '*type1*'에서 '*type2*' <sup>15.3</sup>|
 |[C5038](../error-messages/compiler-warnings/c5038.md) (수준 4)|데이터 멤버 '*member1*'는 데이터 멤버 '*member2*' <sup>15.3</sup> 다음에 초기화 됩니다.|

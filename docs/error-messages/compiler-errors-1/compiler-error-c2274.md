@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2274'
 title: 컴파일러 오류 C2274
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2274
 ms.assetid: 8e874903-f499-45ef-8291-f821eee4cc1c
-ms.openlocfilehash: 5907664ba367d6e4005698e112d0a19f3a2a26e9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 31b9d63b9cf87114ce2d1d79f1f38fff97d4ebbb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220381"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268355"
 ---
 # <a name="compiler-error-c2274"></a>컴파일러 오류 C2274
 

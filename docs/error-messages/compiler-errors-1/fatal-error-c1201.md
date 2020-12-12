@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 심각한 오류 C1201'
 title: 심각한 오류 C1201
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1201
 ms.assetid: e58b9b9a-2c6f-454d-8719-9773aca765d1
-ms.openlocfilehash: cca16f89b3f6b3053211762dab622d33695d4783
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3eb4676e369e25d402e3b60e5866fac3d626c450
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80203491"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268160"
 ---
 # <a name="fatal-error-c1201"></a>심각한 오류 C1201
 

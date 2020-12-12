@@ -1,20 +1,21 @@
 ---
+description: '자세한 정보: 방법: .NET 컬렉션에서 STL/CLR 컨테이너로 변환'
 title: '방법: .NET 컬렉션에서 STL/CLR 컨테이너로 변환'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - STL/CLR, converting from .NET collections
 - STL/CLR Containers [STL/CLR]
 ms.assetid: bb927c48-78e8-4150-bd0b-787c651f4a87
-ms.openlocfilehash: 4993571d479924edc71a277887a8bd95fc4fd463
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: ba3e4ce6b9d7bd1c5da373c6eb545eb8167942b6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91506440"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268394"
 ---
 # <a name="how-to-convert-from-a-net-collection-to-a-stlclr-container"></a>방법: .NET 컬렉션에서 STL/CLR 컨테이너로 변환
 
-이 항목에서는 .NET 컬렉션을 해당 하는 STL/CLR 컨테이너로 변환 하는 방법을 보여 줍니다. 예를 들어 .NET을 <xref:System.Collections.Generic.List%601> stl/clr [벡터로](../dotnet/vector-stl-clr.md) 변환 하는 방법 및 .net을 stl/clr 맵으로 변환 하는 방법을 보여 <xref:System.Collections.Generic.Dictionary%602> 주지만 프로시저 [map](../dotnet/map-stl-clr.md)는 모든 컬렉션 및 컨테이너와 유사 합니다.
+이 항목에서는 .NET 컬렉션을 해당 하는 STL/CLR 컨테이너로 변환 하는 방법을 보여 줍니다. 예를 들어 .NET을 <xref:System.Collections.Generic.List%601> stl/clr [벡터로](../dotnet/vector-stl-clr.md) 변환 하는 방법 및 .net을 stl/clr 맵으로 변환 하는 방법을 보여 <xref:System.Collections.Generic.Dictionary%602> 주지만 프로시저 [](../dotnet/map-stl-clr.md)는 모든 컬렉션 및 컨테이너와 유사 합니다.
 
 ### <a name="to-create-a-container-from-a-collection"></a>컬렉션에서 컨테이너를 만들려면
 
@@ -30,7 +31,7 @@ ms.locfileid: "91506440"
 
    두 번째 예에서는이 절차를 보여 줍니다.
 
-## <a name="examples"></a>예
+## <a name="examples"></a>예제
 
 이 예제에서는 제네릭을 만들고 <xref:System.Collections.Generic.List%601> 5 개의 요소를 추가 합니다. 그런 다음를 `vector` 인수로 사용 하는 생성자를 사용 하 여를 만듭니다 <xref:System.Collections.Generic.IEnumerable%601> .
 

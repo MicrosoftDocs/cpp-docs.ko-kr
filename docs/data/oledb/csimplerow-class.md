@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CSimpleRow 클래스'
 title: CSimpleRow 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -34,18 +35,18 @@ helpviewer_keywords:
 - m_dwRef
 - m_iRowset
 ms.assetid: 06d9621d-60cc-4508-8b0c-528d1b1a809b
-ms.openlocfilehash: c0d7ea0966b9a582e4a6969573458bca2e8a0fea
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 7390a8d82e8996c81761065541eebbbccae510ad
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91507228"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268420"
 ---
 # <a name="csimplerow-class"></a>CSimpleRow 클래스
 
 [IRowsetImpl](../../data/oledb/irowsetimpl-class.md) 클래스에서 사용 되는 행 핸들의 기본 구현을 제공 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CSimpleRow
@@ -68,20 +69,20 @@ class CSimpleRow
 
 ### <a name="data-members"></a>데이터 멤버
 
-| 속성 | 설명 |
+| Name | 설명 |
 |-|-|
 |[m_dwRef](#dwref)|기존 행 핸들에 대 한 참조 수입니다.|
 |[m_iRowset](#irowset)|커서를 나타내는 행 집합에 대 한 인덱스입니다.|
 
 ## <a name="remarks"></a>설명
 
-행 핸들은 논리적으로 결과 행에 대 한 고유 태그입니다. `IRowsetImpl``CSimpleRow` [IRowsetImpl:: GetNextRows](./irowsetimpl-class.md#getnextrows)에서 요청 된 모든 행에 대해 새를 만듭니다. `CSimpleRow` 는의 기본 템플릿 인수 이므로를 행 핸들의 고유한 구현으로 바꿀 수도 있습니다 `IRowsetImpl` . 이 클래스를 바꾸기 위한 유일한 요구 사항은 대체 클래스가 **LONG**형식의 단일 매개 변수를 허용 하는 생성자를 제공 하는 것입니다.
+행 핸들은 논리적으로 결과 행에 대 한 고유 태그입니다. `IRowsetImpl``CSimpleRow` [IRowsetImpl:: GetNextRows](./irowsetimpl-class.md#getnextrows)에서 요청 된 모든 행에 대해 새를 만듭니다. `CSimpleRow` 는의 기본 템플릿 인수 이므로를 행 핸들의 고유한 구현으로 바꿀 수도 있습니다 `IRowsetImpl` . 이 클래스를 바꾸기 위한 유일한 요구 사항은 대체 클래스가 **LONG** 형식의 단일 매개 변수를 허용 하는 생성자를 제공 하는 것입니다.
 
 ## <a name="csimplerowaddrefrow"></a><a name="addrefrow"></a> CSimpleRow:: AddRefRow
 
 스레드로부터 안전한 방식으로 기존 행 핸들에 참조 횟수를 추가 합니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 DWORD AddRefRow();
@@ -123,13 +124,13 @@ CSimpleRow(DBCOUNTITEM iRowsetCur);
 
 ### <a name="remarks"></a>설명
 
-[M_iRowset](#irowset) 를 *iRowsetCur*로 설정 합니다.
+[M_iRowset](#irowset) 를 *iRowsetCur* 로 설정 합니다.
 
 ## <a name="csimplerowreleaserow"></a><a name="releaserow"></a> CSimpleRow:: ReleaseRow
 
 스레드로부터 안전한 방식으로 행을 해제 합니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 DWORD ReleaseRow();
@@ -139,7 +140,7 @@ DWORD ReleaseRow();
 
 기존 행 핸들에 대 한 참조 수입니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 DWORD m_dwRef;

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CSession 클래스'
 title: CSession 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -40,18 +41,18 @@ helpviewer_keywords:
 - Open method
 - StartTransaction method
 ms.assetid: 83cd798f-b45d-4f11-a23c-29183390450c
-ms.openlocfilehash: f507ed432e107f586d34bb6b08fa9d3f7dc509d8
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 41ebf1c9d93e1443504f92b052e770c251324633
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91507236"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268433"
 ---
 # <a name="csession-class"></a>CSession 클래스
 
 단일 데이터베이스 액세스 세션을 나타냅니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CSession
@@ -92,7 +93,7 @@ HRESULT Abort(BOID* pboidReason = NULL,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [ITransaction:: Abort](/previous-versions/windows/desktop/ms709833(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [ITransaction:: Abort](/previous-versions/windows/desktop/ms709833(v=vs.85)) 를 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -126,7 +127,7 @@ HRESULT Commit(BOOL bRetaining = FALSE,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [ITransaction:: Commit](/previous-versions/windows/desktop/ms713008(v=vs.85)) 을 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [ITransaction:: Commit](/previous-versions/windows/desktop/ms713008(v=vs.85)) 을 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -148,7 +149,7 @@ HRESULT GetTransactionInfo(XACTTRANSINFO* pInfo) const throw();
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [ITransaction:: gettransactioninfo](/previous-versions/windows/desktop/ms714975(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [ITransaction:: gettransactioninfo](/previous-versions/windows/desktop/ms714975(v=vs.85)) 를 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -156,7 +157,7 @@ HRESULT GetTransactionInfo(XACTTRANSINFO* pInfo) const throw();
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 *OLE DB 프로그래머 참조*에서 [ITransaction:: gettransactioninfo](/previous-versions/windows/desktop/ms714975(v=vs.85)) 를 참조 하세요.
+자세한 내용은 *OLE DB 프로그래머 참조* 에서 [ITransaction:: gettransactioninfo](/previous-versions/windows/desktop/ms714975(v=vs.85)) 를 참조 하세요.
 
 ## <a name="csessionopen"></a><a name="open"></a> CSession:: Open
 
@@ -204,7 +205,7 @@ HRESULT StartTransaction(ISOLEVEL isoLevel = ISOLATIONLEVEL_READCOMMITTED,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [ITransactionLocal:: starttransaction](/previous-versions/windows/desktop/ms709786(v=vs.85)) 을 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [ITransactionLocal:: starttransaction](/previous-versions/windows/desktop/ms709786(v=vs.85)) 을 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -212,7 +213,7 @@ HRESULT StartTransaction(ISOLEVEL isoLevel = ISOLATIONLEVEL_READCOMMITTED,
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 *OLE DB 프로그래머 참조*에서 [ITransactionLocal:: starttransaction](/previous-versions/windows/desktop/ms709786(v=vs.85)) 을 참조 하세요.
+자세한 내용은 *OLE DB 프로그래머 참조* 에서 [ITransactionLocal:: starttransaction](/previous-versions/windows/desktop/ms709786(v=vs.85)) 을 참조 하세요.
 
 ## <a name="see-also"></a>참고 항목
 

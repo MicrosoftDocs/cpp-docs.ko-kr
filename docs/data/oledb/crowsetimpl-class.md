@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CRowsetImpl 클래스'
 title: CRowsetImpl 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - m_strCommandText
 - m_strIndexText
 ms.assetid: e97614b3-b11d-4806-a0d3-b9401331473f
-ms.openlocfilehash: cca74504c80b964b14742e7405953ad68764aa62
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: e517806cc7083700d4fad7fc053777b11a7de665
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91507271"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268446"
 ---
 # <a name="crowsetimpl-class"></a>CRowsetImpl 클래스
 
@@ -90,7 +91,7 @@ class CRowsetImpl :
 
 ### <a name="overridable-methods"></a>재정의 가능한 메서드
 
-| 속성 | 설명 |
+| Name | 설명 |
 |-|-|
 |[GetColumnInfo](#getcolumninfo)|특정 클라이언트 요청에 대 한 열 정보를 검색 합니다.|
 |[GetCommandFromID](#getcommandfromid)|두 매개 변수 중 하나에 문자열 값이 포함 되어 있는지 확인 하 고, 그럴 경우 문자열 값을 [m_strCommandText](#strcommandtext) 데이터 멤버에 복사 하 고 [m_strIndexText](#strindextext)합니다.|
@@ -98,7 +99,7 @@ class CRowsetImpl :
 
 ### <a name="data-members"></a>데이터 멤버
 
-| 속성 | 설명 |
+| Name | 설명 |
 |-|-|
 |[m_rgRowData](#rgrowdata)|기본적으로에 대 한 `CAtlArray` 사용자 레코드 템플릿 인수에 templatizes 하는입니다 `CRowsetImpl` . 다른 배열 형식 클래스는 템플릿 인수를로 변경 하 여 사용할 수 있습니다 `ArrayType` `CRowsetImpl` .|
 |[m_strCommandText](#strcommandtext)|행 집합의 초기 명령을 포함 합니다.|
@@ -141,7 +142,7 @@ HRESULT CRowsetBaseImpl::NameFromDBID(DBID* pDBID,
 
 ### <a name="return-value"></a>반환 값
 
-표준 HRESULT입니다. `DBID`가 테이블 인지 인덱스 ( *bindex*로 표시 됨) 인지에 따라 메서드는 DB_E_NOINDEX 또는 DB_E_NOTABLE을 반환 합니다.
+표준 HRESULT입니다. `DBID`가 테이블 인지 인덱스 ( *bindex* 로 표시 됨) 인지에 따라 메서드는 DB_E_NOINDEX 또는 DB_E_NOTABLE을 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -281,7 +282,7 @@ ArrayType CRowsetBaseImpl::m_rgRowData;
 
 행 집합의 초기 명령을 포함 합니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 CComBSTR CRowsetBaseImpl::m_strCommandText;

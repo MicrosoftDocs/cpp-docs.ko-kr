@@ -1,15 +1,16 @@
 ---
+description: '자세히 알아보기: 방법: 예외 안전성을 위한 디자인'
 title: '방법: 예외 안전성을 위한 디자인'
 ms.custom: how-to
 ms.date: 11/19/2019
 ms.topic: conceptual
 ms.assetid: 19ecc5d4-297d-4c4e-b4f3-4fccab890b3d
-ms.openlocfilehash: 732a46166c99396c5d55a7d2acd834b58f3d2b2e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a4b957803d822b495ae6d44bb6640dcbb4535397
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87187805"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268641"
 ---
 # <a name="how-to-design-for-exception-safety"></a>방법: 예외 안전성을 위한 디자인
 
@@ -89,7 +90,7 @@ public:
 
 ## <a name="the-three-exception-guarantees"></a>세 가지 예외 보장
 
-일반적으로 예외 보안은 함수에서 제공할 수 있는 세 가지 예외 보증 ( *실패 없음 보장*, *강력한 보증*및 *기본 보증*)을 기준으로 설명 됩니다.
+일반적으로 예외 보안은 함수에서 제공할 수 있는 세 가지 예외 보증 ( *실패 없음 보장*, *강력한 보증* 및 *기본 보증*)을 기준으로 설명 됩니다.
 
 ### <a name="no-fail-guarantee"></a>실패 보장 안 함
 

@@ -1,4 +1,5 @@
 ---
+description: '에 대 한 자세한 정보: put, _putws'
 title: puts, _putws
 ms.date: 4/2/2020
 api_name:
@@ -36,16 +37,16 @@ helpviewer_keywords:
 - putts function
 - _putws function
 ms.assetid: 32dada12-ed45-40ac-be06-3feeced9ecd6
-ms.openlocfilehash: 2e581237c7b839af87df7bc88369f21751b855d2
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 9b48be23b02301f79b942371fbd273a14bab3800
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916103"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268953"
 ---
 # <a name="puts-_putws"></a>puts, _putws
 
-**stdout**에 문자열을 씁니다.
+**stdout** 에 문자열을 씁니다.
 
 ## <a name="syntax"></a>구문
 
@@ -60,18 +61,18 @@ int _putws(
 
 ### <a name="parameters"></a>매개 변수
 
-*문자열*<br/>
+*str*<br/>
 출력 문자열입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-정상적으로 실행되면 음수가 아닌 값을 반환합니다. **Put** 이 실패 하면 **EOF**를 반환 합니다. **_putws** 실패할 경우 **weof**를 반환 합니다. *Str* 이 null 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **errno** 를 **EINVAL** 로 설정 하 고 **EOF** 또는 **weof**를 반환 합니다.
+정상적으로 실행되면 음수가 아닌 값을 반환합니다. **Put** 이 실패 하면 **EOF** 를 반환 합니다. **_putws** 실패할 경우 **weof** 를 반환 합니다. *Str* 이 null 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **errno** 를 **EINVAL** 로 설정 하 고 **EOF** 또는 **weof** 를 반환 합니다.
 
 이러한 오류 코드 및 기타 오류 코드에 대한 내용은 [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-**Put** 함수는 문자열의 종료 null 문자 (' \ 0 ')를 출력 스트림에서 줄 바꿈 문자 (' \n ')로 바꿔서 표준 출력 스트림 **stdout**에 *str* 을 씁니다.
+**Put** 함수는 문자열의 종료 null 문자 (' \ 0 ')를 출력 스트림에서 줄 바꿈 문자 (' \n ')로 바꿔서 표준 출력 스트림 **stdout** 에 *str* 을 씁니다.
 
 **_putws** 은의 와이드 문자 버전 **입니다.** 두 함수는 스트림이 ANSI 모드에서 열리는 경우 동일 하 게 동작 합니다. **put** 은 현재 유니코드 스트림에 대 한 출력을 지원 하지 않습니다.
 
@@ -92,7 +93,7 @@ int _putws(
 |**puts**|\<stdio.h>|
 |**_putws**|\<stdio.h>|
 
-이 콘솔은 UWP (유니버설 Windows 플랫폼) 앱에서 지원 되지 않습니다. 콘솔, **stdin**, **stdout**및 **stderr**에 연결 된 표준 스트림 핸들은 C 런타임 함수가 UWP 앱에서 사용할 수 있으려면 먼저 리디렉션해야 합니다. 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
+이 콘솔은 UWP (유니버설 Windows 플랫폼) 앱에서 지원 되지 않습니다. 콘솔, **stdin**, **stdout** 및 **stderr** 에 연결 된 표준 스트림 핸들은 C 런타임 함수가 UWP 앱에서 사용할 수 있으려면 먼저 리디렉션해야 합니다. 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="libraries"></a>라이브러리
 

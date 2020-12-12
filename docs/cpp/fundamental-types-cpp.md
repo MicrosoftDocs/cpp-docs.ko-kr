@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 기본 제공 형식 (c + +)'
 title: 기본 제공 형식 (c + +)
 ms.date: 07/22/2020
 f1_keywords:
@@ -46,16 +47,16 @@ helpviewer_keywords:
 - storing types [C++]
 - data types [C++], void
 ms.assetid: 58b0106a-0406-4b74-a430-7cbd315c0f89
-ms.openlocfilehash: 73486dd4d81fc91007f078ec5c509bcb963d2706
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 601bd0742002506272ec3da7af448a4bdba96065
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232276"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268745"
 ---
 # <a name="built-in-types-c"></a>기본 제공 형식 (c + +)
 
-기본 제공 형식 ( *기본 형식*이 라고도 함)은 c + + 언어 표준에 의해 지정 되며 컴파일러에 기본 제공 됩니다. 기본 제공 형식은 헤더 파일에 정의 되어 있지 않습니다. 기본 제공 형식은 *정수 계열*, *부동*소수점 및 *void*의 세 가지 주요 범주로 구분 됩니다. 정수 계열 형식은 정수를 나타냅니다. 부동 소수점 형식은 소수 부분이 있을 수 있는 값을 지정할 수 있습니다. 대부분의 기본 제공 형식은 컴파일러에서 고유한 형식으로 처리 됩니다. 그러나 일부 형식은 *동의어*이거나 컴파일러에서 동등한 형식으로 처리 됩니다.
+기본 제공 형식 ( *기본 형식* 이 라고도 함)은 c + + 언어 표준에 의해 지정 되며 컴파일러에 기본 제공 됩니다. 기본 제공 형식은 헤더 파일에 정의 되어 있지 않습니다. 기본 제공 형식은 *정수 계열*, *부동* 소수점 및 *void* 의 세 가지 주요 범주로 구분 됩니다. 정수 계열 형식은 정수를 나타냅니다. 부동 소수점 형식은 소수 부분이 있을 수 있는 값을 지정할 수 있습니다. 대부분의 기본 제공 형식은 컴파일러에서 고유한 형식으로 처리 됩니다. 그러나 일부 형식은 *동의어* 이거나 컴파일러에서 동등한 형식으로 처리 됩니다.
 
 ## <a name="void-type"></a>void 형식
 
@@ -79,13 +80,13 @@ ms.locfileid: "87232276"
 
 **`char`** 형식은 기본 실행 문자 집합의 멤버를 효율적으로 인코딩하는 문자 표시 형식입니다. C + + 컴파일러는 **`char`** , 및 형식의 변수를 **`signed char`** **`unsigned char`** 서로 다른 형식으로 처리 합니다.
 
-**Microsoft**전용: **`char`** 컴파일 옵션을 사용 하지 않는 경우 형식의 변수는 **`int`** 기본적으로 형식에서와 같이로 승격 됩니다 **`signed char`** [`/J`](../build/reference/j-default-char-type-is-unsigned.md) . 이 경우 형식으로 처리 **`unsigned char`** 되 고 부호 확장 없이로 승격 됩니다 **`int`** .
+**Microsoft** 전용: **`char`** 컴파일 옵션을 사용 하지 않는 경우 형식의 변수는 **`int`** 기본적으로 형식에서와 같이로 승격 됩니다 **`signed char`** [`/J`](../build/reference/j-default-char-type-is-unsigned.md) . 이 경우 형식으로 처리 **`unsigned char`** 되 고 부호 확장 없이로 승격 됩니다 **`int`** .
 
 형식의 변수는 **`wchar_t`** 와이드 문자 또는 멀티 바이트 문자 형식입니다. **`L`** 문자 또는 문자열 리터럴 앞에 접두사를 사용 하 여 와이드 문자 형식을 지정 합니다.
 
-**Microsoft**전용: 기본적으로 **`wchar_t`** 는 네이티브 형식 이지만를 사용 [`/Zc:wchar_t-`](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) 하 여 **`wchar_t`** 에 대 한 typedef를 만들 수 있습니다 **`unsigned short`** . **`__wchar_t`** 형식은 네이티브 형식의 Microsoft 전용 동의어입니다 **`wchar_t`** .
+**Microsoft** 전용: 기본적으로 **`wchar_t`** 는 네이티브 형식 이지만를 사용 [`/Zc:wchar_t-`](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) 하 여 **`wchar_t`** 에 대 한 typedef를 만들 수 있습니다 **`unsigned short`** . **`__wchar_t`** 형식은 네이티브 형식의 Microsoft 전용 동의어입니다 **`wchar_t`** .
 
-**`char8_t`** 형식은 utf-8 문자 표현에 사용 됩니다. 와 동일한 표현을 **`unsigned char`** 갖지만 컴파일러에서 고유한 형식으로 처리 됩니다. **`char8_t`** C + + 20의 새 형식입니다. **Microsoft 전용**:을 사용 **`char8_t`** 하려면 컴파일러 옵션을 사용 해야 [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) 합니다.
+**`char8_t`** 형식은 utf-8 문자 표현에 사용 됩니다. 와 동일한 표현을 **`unsigned char`** 갖지만 컴파일러에서 고유한 형식으로 처리 됩니다. **`char8_t`** C + + 20의 새 형식입니다. **Microsoft 전용**:을 사용 **`char8_t`**  하려면 컴파일러 옵션을 사용 해야 [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) 합니다.
 
 **`char16_t`** 형식은 utf-16 문자 표현에 사용 됩니다. UTF-16 코드 단위를 나타낼 수 있을 만큼 커야 합니다. 컴파일러에서 고유한 형식으로 처리 됩니다.
 
@@ -95,7 +96,7 @@ ms.locfileid: "87232276"
 
 부동 소수점 형식은 IEEE-754 표현을 사용 하 여 광범위 한 크고 많을에서 소수 값의 근사값을 제공 합니다. 다음 표에서는 c + +의 부동 소수점 형식 및 부동 소수점 형식 크기에 대 한 비교 제한 사항을 보여 줍니다. 이러한 제한은 c + + 표준에 따라 적용 되며 Microsoft 구현과는 독립적입니다. 기본 제공 부동 소수점 형식의 절대 크기가 표준에 지정 되어 있지 않습니다.
 
-| Type | 콘텐츠 |
+| 형식 | 콘텐츠 |
 |--|--|
 | **`float`** | 형식은 **`float`** c + +에서 가장 작은 부동 소수점 형식입니다. |
 | **`double`** | 형식은 **`double`** 형식 보다 크거나 같은 부동 소수점 형식 **`float`** 이지만, 형식의 크기 보다 짧거나 같습니다 **`long double`** . |
@@ -137,13 +138,13 @@ ms.locfileid: "87232276"
 
 - **`unsigned long long`**, **`unsigned long long int`**
 
-**Microsoft 전용** 정수 형식에는 특정 너비 **`__int8`** , **`__int16`** , **`__int32`** 및 **`__int64`** 형식이 포함 됩니다. 이러한 형식은 및 한정자를 사용할 수 있습니다 **`signed`** **`unsigned`** . **`__int8`** 데이터 형식은 형식과 동의어이 고 **`char`** , **`__int16`** 은 형식과 동의어이 고 **`short`** **`__int32`** **`int`** **`__int64`** **`long long`** ,는 형식과 동의어 이며,는 형식과 동의어입니다.
+**Microsoft 전용** 정수 형식에는 특정 너비 **`__int8`** , **`__int16`** , **`__int32`** 및 **`__int64`** 형식이 포함 됩니다. 이러한 형식은 및 한정자를 사용할 수 있습니다 **`signed`** **`unsigned`** . **`__int8`** 데이터 형식은 **`char`** 형식과 동의어이고, **`__int16`** 은 **`short`** , **`__int32`** 는 **`int`** , **`__int64`** 는 **`long long`** 와 동의어입니다.
 
 ## <a name="sizes-of-built-in-types"></a>기본 제공 형식의 크기
 
 대부분의 기본 제공 형식에는 구현에서 정의 된 크기가 있습니다. 다음 표에서는 Microsoft c + +의 기본 제공 형식에 필요한 저장소 크기를 나열 합니다. 특히 **`long`** 는 64 비트 운영 체제 에서도 4 바이트입니다.
 
-| Type | 크기 |
+| 형식 | 크기 |
 |--|--|
 | **`bool`**, **`char`**, **`char8_t`**, **`unsigned char`**, **`signed char`**, **`__int8`** | 1바이트 |
 | **`char16_t`**, **`__int16`**, **`short`**, **`unsigned short`**, **`wchar_t`**, **`__wchar_t`** | 2바이트 |

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 하드웨어 예외'
 title: 하드웨어 예외
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - hardware exceptions [C++]
 - low level errors
 ms.assetid: 06ac6f01-a8cf-4426-bb12-1688315ae1cd
-ms.openlocfilehash: 8adfd59eab0960ab14b2becb8d9864c77196c909
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3fccda4f23aa260f737f81e877d2ea9d673ebafe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80188678"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268719"
 ---
 # <a name="hardware-exceptions"></a>하드웨어 예외
 
@@ -27,7 +28,7 @@ Windows에서 인식하는 하드웨어 예외는 다음 표에 요약되어 있
 |--------------------|------------------------|
 |STATUS_ACCESS_VIOLATION|액세스할 수 없는 메모리 위치를 읽거나 씁니다.|
 |STATUS_BREAKPOINT|하드웨어 정의 중단점이 발생합니다. 디버거에서만 사용됩니다.|
-|STATUS_DATATYPE_MISALIGNMENT|올바르게 정렬되지 않은 주소에 있는 데이터를 읽거나 씁니다. 예를 들어, 16비트 엔티티는 2바이트 경계에 정렬되어야 합니다. Intel 80*x*86 프로세서에는 적용 되지 않습니다.|
+|STATUS_DATATYPE_MISALIGNMENT|올바르게 정렬되지 않은 주소에 있는 데이터를 읽거나 씁니다. 예를 들어, 16비트 엔티티는 2바이트 경계에 정렬되어야 합니다. Intel 80 *x* 86 프로세서에는 적용 되지 않습니다.|
 |STATUS_FLOAT_DIVIDE_BY_ZERO|부동 소수점 형식을 0.0으로 나눕니다.|
 |STATUS_FLOAT_OVERFLOW|부동 소수점 형식의 최대 양의 지수를 초과합니다.|
 |STATUS_FLOAT_UNDERFLOW|부동 소수점 형식의 최저 음의 지수 크기를 초과합니다.|

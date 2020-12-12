@@ -1,15 +1,16 @@
 ---
+description: '자세히 알아보기: new 연산자 (c + +)'
 title: new 연산자 (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - new keyword [C++]
 ms.assetid: 69fee812-1c28-4882-8fda-d1ad17860004
-ms.openlocfilehash: 0c3ed59262ec5ad061572d23c1166b2153cb16ca
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: 5bfc6fdc59348defc87d26dae1056ae80dab3ec5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008575"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268628"
 ---
 # <a name="new-operator-c"></a>new 연산자 (C++)
 
@@ -117,7 +118,7 @@ int main() {
 
 ## <a name="example-new-operator"></a>예: `new` 연산자
 
-연산자의 배치 새로운 형태를 사용 하는 경우 **`new`** 할당 크기 외에 인수를 포함 하는 폼에는 생성자가 예외를 throw 하는 경우 컴파일러에서 연산자의 배치 형태를 지원 하지 않습니다 **`delete`** . 예를 들면 다음과 같습니다.
+연산자의 배치 새로운 형태를 사용 하는 경우 **`new`** 할당 크기 외에 인수를 포함 하는 폼에는 생성자가 예외를 throw 하는 경우 컴파일러에서 연산자의 배치 형태를 지원 하지 않습니다 **`delete`** . 예를 들어:
 
 ```cpp
 // expre_new_Operator2.cpp
@@ -193,7 +194,7 @@ int main()
 
 ## <a name="lifetime-of-objects-allocated-with-new"></a>new로 할당된 개체 수명
 
-연산자를 사용 하 여 할당 된 개체는 해당 개체가 **`new`** 정의 된 범위가 종료 될 때 제거 되지 않습니다. 연산자가 **`new`** 할당 하는 개체에 대 한 포인터를 반환 하기 때문에 프로그램은 이러한 개체에 액세스 하는 데 적합 한 범위의 포인터를 정의 해야 합니다. 예를 들면 다음과 같습니다.
+연산자를 사용 하 여 할당 된 개체는 해당 개체가 **`new`** 정의 된 범위가 종료 될 때 제거 되지 않습니다. 연산자가 **`new`** 할당 하는 개체에 대 한 포인터를 반환 하기 때문에 프로그램은 이러한 개체에 액세스 하는 데 적합 한 범위의 포인터를 정의 해야 합니다. 예를 들어:
 
 ```cpp
 // expre_Lifetime_of_Objects_Allocated_with_new.cpp
@@ -228,16 +229,16 @@ int main()
 
 - 개체를 초기화합니다. 초기화가 완료되면 할당된 스토리지가 개체가 되는 데 충분한 정보가 있습니다.
 
-- *새 형식 이름* 또는 *형식 이름*에서 파생 된 포인터 형식의 개체에 대 한 포인터를 반환 합니다. 프로그램에서는 이 포인터를 사용하여 새로 할당된 개체에 액세스합니다.
+- *새 형식 이름* 또는 *형식 이름* 에서 파생 된 포인터 형식의 개체에 대 한 포인터를 반환 합니다. 프로그램에서는 이 포인터를 사용하여 새로 할당된 개체에 액세스합니다.
 
-**`new`** 연산자는 **new**함수를 호출 합니다. 모든 형식의 배열 및, 또는 형식이 아닌 개체에 대해 **`class`** **`struct`** **`union`** 전역 함수인 **:: operator new**가 호출 되어 저장소를 할당 합니다. 클래스 형식 개체는 클래스 별로 고유한 **operator 새** 정적 멤버 함수를 정의할 수 있습니다.
+**`new`** 연산자는 **new** 함수를 호출 합니다. 모든 형식의 배열 및, 또는 형식이 아닌 개체에 대해 **`class`** **`struct`** **`union`** 전역 함수인 **:: operator new** 가 호출 되어 저장소를 할당 합니다. 클래스 형식 개체는 클래스 별로 고유한 **operator 새** 정적 멤버 함수를 정의할 수 있습니다.
 
-컴파일러가 형식 형식의 개체를 **`new`** 할당 하는 연산자를 발견 하면 **type** `type` **:: operator new (sizeof (** ))에 대 한 호출을 발생 `type` **) )** 하거나, 사용자 정의 **연산자 new** 가 정의 되지 않은 경우 **:: operator new (sizeof (** `type` **))** 를 호출 합니다. 따라서 연산자는 **`new`** 개체에 대해 올바른 크기의 메모리를 할당할 수 있습니다.
+컴파일러가 형식 형식의 개체를 **`new`** 할당 하는 연산자를 발견 하면  `type` **:: operator new (sizeof (** ))에 대 한 호출을 발생 `type`  하거나, 사용자 정의 **연산자 new** 가 정의 되지 않은 경우 **:: operator new (sizeof (** `type` **))** 를 호출 합니다. 따라서 연산자는 **`new`** 개체에 대해 올바른 크기의 메모리를 할당할 수 있습니다.
 
 > [!NOTE]
 > **Operator new** 에 대 한 인수는 형식입니다 `size_t` . 이 형식은,,,,,,, 및에 정의 되어 \<direct.h> \<malloc.h> \<memory.h> \<search.h> \<stddef.h> \<stdio.h> \<stdlib.h> \<string.h> \<time.h> 있습니다.
 
-문법의 옵션은 *배치* 지정을 허용 합니다 ( [new 연산자](../cpp/new-operator-cpp.md)에 대 한 문법 참조). *Placement* 매개 변수는 **operator new**의 사용자 정의 구현에만 사용할 수 있습니다. 추가 정보를 **operator new**에 전달할 수 있습니다. 와 같은 *배치* 필드가 있는 식은 `T *TObject = new ( 0x0040 ) T;` `T *TObject = T::operator new( sizeof( T ), 0x0040 );` 클래스 T에 멤버 연산자 new가 있는 경우로 변환 되 고, 그렇지 않으면로 변환 됩니다 `T *TObject = ::operator new( sizeof( T ), 0x0040 );` .
+문법의 옵션은 *배치* 지정을 허용 합니다 ( [new 연산자](../cpp/new-operator-cpp.md)에 대 한 문법 참조). *Placement* 매개 변수는 **operator new** 의 사용자 정의 구현에만 사용할 수 있습니다. 추가 정보를 **operator new** 에 전달할 수 있습니다. 와 같은 *배치* 필드가 있는 식은 `T *TObject = new ( 0x0040 ) T;` `T *TObject = T::operator new( sizeof( T ), 0x0040 );` 클래스 T에 멤버 연산자 new가 있는 경우로 변환 되 고, 그렇지 않으면로 변환 됩니다 `T *TObject = ::operator new( sizeof( T ), 0x0040 );` .
 
 *배치* 필드의 원래 용도는 하드웨어 종속 개체가 사용자 지정 주소에서 할당 되도록 허용 하는 것입니다.
 

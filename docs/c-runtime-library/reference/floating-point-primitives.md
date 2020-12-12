@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 부동 소수점 기본 형식'
 title: 부동 소수점 기본 형식
 ms.date: 4/2/2020
 api_name:
@@ -157,12 +158,12 @@ helpviewer_keywords:
 - _dsin
 - _ldsin
 - _fdsin
-ms.openlocfilehash: e28c873206d8f050dbde2afc9ebfe3540b6642ff
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 05422620a4da907820ed86a61d4e8dc16b37d3f5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218687"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268966"
 ---
 # <a name="floating-point-primitives"></a>부동 소수점 기본 형식
 
@@ -216,7 +217,7 @@ int __cdecl _fdsign(float x);
 
 ### <a name="remarks"></a>설명
 
-이러한 부동 소수점 기본 형식은 CRT에서 [signbit](signbit.md) 매크로 또는 함수를 구현 합니다. 인수 *x*의 significand (가 수)에서 부호 비트가 설정 된 경우 0이 아닌 값을 반환 하 고 부호 비트가 설정 되지 않은 경우 0을 반환 합니다.
+이러한 부동 소수점 기본 형식은 CRT에서 [signbit](signbit.md) 매크로 또는 함수를 구현 합니다. 인수 *x* 의 significand (가 수)에서 부호 비트가 설정 된 경우 0이 아닌 값을 반환 하 고 부호 비트가 설정 되지 않은 경우 0을 반환 합니다.
 
 ## <a name="_dpcomp-_ldpcomp-_fdpcomp"></a>_dpcomp, _ldpcomp, _fdpcomp
 
@@ -235,7 +236,7 @@ int __cdecl _fdpcomp(float x, float y);
 
 ### <a name="remarks"></a>설명
 
-이러한 부동 소수점 기본 형식은 *x* 및 *y*라는 두 개의 인수를 사용 하 고 math에 정의 된 이러한 상수의 비트 or로 표현 되는 순서 관계를 표시 하는 값을 반환 합니다.
+이러한 부동 소수점 기본 형식은 *x* 및 *y* 라는 두 개의 인수를 사용 하 고 math에 정의 된 이러한 상수의 비트 or로 표현 되는 순서 관계를 표시 하는 값을 반환 합니다.
 
 | 값 | 설명 |
 |------------|-----------------|
@@ -294,7 +295,7 @@ short __cdecl _fd_int(float* px, short exp);
 
 ### <a name="remarks"></a>설명
 
-이러한 부동 소수점 기본 형식은 부동 소수점 값 *px* 및 지 수 값에 대 한 포인터를 사용 하 고 가능한 경우 지정 된 지 수 아래에서 부동 소수점 값의 소수 *부분을 제거*합니다. 반환 되는 값은 값이 NaN 또는 무한대 인 경우 *px* 의 입력 값에 대 한 **fpclassify** 의 결과이 고, 그렇지 않은 경우에는 *px* 의 출력 값입니다.
+이러한 부동 소수점 기본 형식은 부동 소수점 값 *px* 및 지 수 값에 대 한 포인터를 사용 하 고 가능한 경우 지정 된 지 수 아래에서 부동 소수점 값의 소수 *부분을 제거* 합니다. 반환 되는 값은 값이 NaN 또는 무한대 인 경우 *px* 의 입력 값에 대 한 **fpclassify** 의 결과이 고, 그렇지 않은 경우에는 *px* 의 출력 값입니다.
 
 ## <a name="_dscale-_ldscale-_fdscale"></a>_dscale, _ldscale, _fdscale
 
@@ -316,7 +317,7 @@ short __cdecl _fdscale(float* px, long exp);
 
 ### <a name="remarks"></a>설명
 
-이러한 부동 소수점 기본 형식은 부동 소수점 값 *px* 와 지 수 값에 대 한 *포인터를 사용*하 고 가능 하면<sup>*값을*</sup> *px* 로 조정 합니다. 반환 되는 값은 값이 NaN 또는 무한대 인 경우 *px* 의 입력 값에 대 한 **fpclassify** 의 결과이 고, 그렇지 않은 경우에는 *px* 의 출력 값입니다. 이식성을 위해 [ldexp, ldexp 및 ldexp](ldexp.md) 함수를 사용 하는 것이 좋습니다.
+이러한 부동 소수점 기본 형식은 부동 소수점 값 *px* 와 지 수 값에 대 한 *포인터를 사용* 하 고 가능 하면 <sup>*값을*</sup> *px* 로 조정 합니다. 반환 되는 값은 값이 NaN 또는 무한대 인 경우 *px* 의 입력 값에 대 한 **fpclassify** 의 결과이 고, 그렇지 않은 경우에는 *px* 의 출력 값입니다. 이식성을 위해 [ldexp, ldexp 및 ldexp](ldexp.md) 함수를 사용 하는 것이 좋습니다.
 
 ## <a name="_dunscale-_ldunscale-_fdunscale"></a>_dunscale, _ldunscale, _fdunscale
 
@@ -338,7 +339,7 @@ short __cdecl _fdunscale(short* pexp, float* px);
 
 ### <a name="remarks"></a>설명
 
-이러한 부동 소수점 기본 형식은 *px* 에서 가리키는 부동 소수점 값을 significand (가 수) 및 지 수 (가능한 경우)로 구분 합니다. Significand는 절대값을 0.5 보다 크거나 같고 1.0 보다 작은 값으로 크기를 조정 합니다. 지 수는 값 *n*입니다. 여기서 원래 부동 소수점 값은 크기 조정 된 significand 시간 2<sup>*n*</sup>과 같습니다. 이 정수 지 수 *n* 은 *pexp*가 가리키는 위치에 저장 됩니다. 반환 되는 값은 값이 NaN 또는 무한대 인 경우 *px* 의 입력 값에 대 한 **fpclassify** 의 결과이 고, 그렇지 않으면 출력 값입니다. 이식성을 위해 [frexp, frexpf, frexpl](frexp.md) 함수를 사용 하는 것이 좋습니다.
+이러한 부동 소수점 기본 형식은 *px* 에서 가리키는 부동 소수점 값을 significand (가 수) 및 지 수 (가능한 경우)로 구분 합니다. Significand는 절대값을 0.5 보다 크거나 같고 1.0 보다 작은 값으로 크기를 조정 합니다. 지 수는 값 *n* 입니다. 여기서 원래 부동 소수점 값은 크기 조정 된 significand 시간 2 <sup>*n*</sup>과 같습니다. 이 정수 지 수 *n* 은 *pexp* 가 가리키는 위치에 저장 됩니다. 반환 되는 값은 값이 NaN 또는 무한대 인 경우 *px* 의 입력 값에 대 한 **fpclassify** 의 결과이 고, 그렇지 않으면 출력 값입니다. 이식성을 위해 [frexp, frexpf, frexpl](frexp.md) 함수를 사용 하는 것이 좋습니다.
 
 ## <a name="_dexp-_ldexp-_fdexp"></a>_dexp, _ldexp, _fdexp
 
@@ -352,7 +353,7 @@ short __cdecl _fdexp(float* px, float y, long exp);
 
 ### <a name="parameters"></a>매개 변수
 
-*x.y*<br/>
+*y*<br/>
 부동 소수점 함수 인수입니다.
 
 *px*<br/>
@@ -363,7 +364,7 @@ short __cdecl _fdexp(float* px, float y, long exp);
 
 ### <a name="remarks"></a>설명
 
-이러한 부동 소수점 기본 형식은 *px* 에서 가리키는 위치에서 *y* * 2<sup>*exp*</sup>와 동일한 부동 소수점 값을 생성 합니다. 반환 되는 값은 NaN 또는 infinity 인 경우 *y* 의 입력 값에 대 한 **fpclassify** 의 결과이 고, 그렇지 않은 경우에는 *px* 의 출력 값입니다. 이식성을 위해 [ldexp, ldexp 및 ldexp](ldexp.md) 함수를 사용 하는 것이 좋습니다.
+이러한 부동 소수점 기본 형식은 *px* 에서 가리키는 위치에서 *y* * 2 <sup>*exp*</sup>와 동일한 부동 소수점 값을 생성 합니다. 반환 되는 값은 NaN 또는 infinity 인 경우 *y* 의 입력 값에 대 한 **fpclassify** 의 결과이 고, 그렇지 않은 경우에는 *px* 의 출력 값입니다. 이식성을 위해 [ldexp, ldexp 및 ldexp](ldexp.md) 함수를 사용 하는 것이 좋습니다.
 
 ## <a name="_dnorm-_fdnorm"></a>_dnorm, _fdnorm
 
@@ -381,7 +382,7 @@ short __cdecl _fdnorm(unsigned short* ps);
 
 ### <a name="remarks"></a>설명
 
-이러한 부동 소수점 기본 형식은 언더플로 되었습니다 부동 소수점 값의 소수 부분을 정규화 하 고 *특성*또는 편향 지수가 일치 하도록 조정 합니다. 이 값은 **`unsigned short`** `_double_val` `_ldouble_val` `_float_val` punning에 선언 된, 또는 형식 union을 통해의 배열로 변환 된 부동 소수점 형식의 비트 표현으로 전달 됩니다. 반환 값은 NaN 또는 infinity 인 경우 입력 부동 소수점 값에 대 한 **fpclassify** 의 결과이 고, 그렇지 않으면 출력 값입니다.
+이러한 부동 소수점 기본 형식은 언더플로 되었습니다 부동 소수점 값의 소수 부분을 정규화 하 고 *특성* 또는 편향 지수가 일치 하도록 조정 합니다. 이 값은 **`unsigned short`** `_double_val` `_ldouble_val` `_float_val` punning에 선언 된, 또는 형식 union을 통해의 배열로 변환 된 부동 소수점 형식의 비트 표현으로 전달 됩니다. 반환 값은 NaN 또는 infinity 인 경우 입력 부동 소수점 값에 대 한 **fpclassify** 의 결과이 고, 그렇지 않으면 출력 값입니다.
 
 ## <a name="_dpoly-_ldpoly-_fdpoly"></a>_dpoly, _ldpoly, _fdpoly
 
@@ -406,7 +407,7 @@ float __cdecl _fdpoly(float x, _float const* table, int n);
 
 ### <a name="remarks"></a>설명
 
-이러한 부동 소수점 기본 형식은 *테이블*의 해당 상수 값으로 계수를 나타내는 order *n* 의 다항식에서 *x* 계산을 반환 합니다. 예를 들어 *table* \[ 0] = 3.0, *table* \[ 1] = 4.0, *table* \[ 2] = 5.0 및 *n* = 2 인 경우 다항식 5.0 x<sup>2</sup> + 4.0 x + 3.0를 나타냅니다. 이러한 다항식이 *x* 2.0에 대해 평가 되는 경우 결과는 31.0입니다. 이러한 함수는 내부적으로 사용 되지 않습니다.
+이러한 부동 소수점 기본 형식은 *테이블* 의 해당 상수 값으로 계수를 나타내는 order *n* 의 다항식에서 *x* 계산을 반환 합니다. 예를 들어 *table* \[ 0] = 3.0, *table* \[ 1] = 4.0, *table* \[ 2] = 5.0 및 *n* = 2 인 경우 다항식 5.0 x <sup>2</sup> + 4.0 x + 3.0를 나타냅니다. 이러한 다항식이 *x* 2.0에 대해 평가 되는 경우 결과는 31.0입니다. 이러한 함수는 내부적으로 사용 되지 않습니다.
 
 ## <a name="_dlog-_dlog-_dlog"></a>_dlog, _dlog, _dlog
 
@@ -428,7 +429,7 @@ float __cdecl _fdlog(float x, int base_flag);
 
 ### <a name="remarks"></a>설명
 
-이러한 부동 소수점 기본 형식은 *base_flag* 가 0 일 때 *x*, ln (*x*) 또는 log<sub>*e*</sub>(*x*)의 자연 로그를 반환 합니다. 이 값은 0이 아닌 *base_flag* 경우 로그 밑이 10 인 *x*또는 log<sub>10</sub>(*x*)을 반환 합니다. 이러한 함수는 내부적으로 사용 되지 않습니다. 이식성을 위해 [log, logf, logf, log10, log10f 및 log10l](log-logf-log10-log10f.md)함수를 사용 하는 것이 좋습니다.
+이러한 부동 소수점 기본 형식은 *base_flag* 가 0 일 때 *x*, ln (*x*) 또는 log <sub>*e*</sub>(*x*)의 자연 로그를 반환 합니다. 이 값은 0이 아닌 *base_flag* 경우 로그 밑이 10 인 *x* 또는 log <sub>10</sub>(*x*)을 반환 합니다. 이러한 함수는 내부적으로 사용 되지 않습니다. 이식성을 위해 [log, logf, logf, log10, log10f 및 log10l](log-logf-log10-log10f.md)함수를 사용 하는 것이 좋습니다.
 
 ## <a name="_dsin-_ldsin-_fdsin"></a>_dsin, _ldsin, _fdsin
 

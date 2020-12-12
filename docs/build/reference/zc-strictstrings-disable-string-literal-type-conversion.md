@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: `/Zc:strictStrings` (문자열 리터럴 형식 변환 사용 안 함)'
 title: /Zc:strictStrings(문자열 리터럴 형식 변환 사용 안 함)
 ms.date: 03/06/2018
 f1_keywords:
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - /Zc compiler options (C++)
 - Zc compiler options (C++)
 ms.assetid: b7eb3f3b-82c1-48a2-8e63-66bad7397b46
-ms.openlocfilehash: df880ed64fa472ff55eb5ee0d17caacf56228ab6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 38c0ac2fe69acd81762fbf26797eece659ee63a3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211894"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97269057"
 ---
-# <a name="zcstrictstrings-disable-string-literal-type-conversion"></a>`/Zc:strictStrings`(문자열 리터럴 형식 변환 사용 안 함)
+# <a name="zcstrictstrings-disable-string-literal-type-conversion"></a>`/Zc:strictStrings` (문자열 리터럴 형식 변환 사용 안 함)
 
 지정 된 경우 컴파일러는 **`const`** 문자열 리터럴을 사용 하 여 초기화 된 포인터에 대해 엄격한 정규화 규칙을 요구 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **`/Zc:strictStrings`**[**`-`**]
 
@@ -68,8 +69,8 @@ Visual C++의 규칙과 관련된 문제에 대한 자세한 내용은 [Nonstand
 
 1. **구성 속성**  >  **C/c + +**  >  **명령줄** 속성 페이지를 선택 합니다.
 
-1. 포함 하도록 **추가 옵션** 속성을 수정한 **`/Zc:strictStrings`** 다음 **확인**을 선택 합니다.
+1. 포함 하도록 **추가 옵션** 속성을 수정한 **`/Zc:strictStrings`** 다음 **확인** 을 선택 합니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[`/Zc`규칙](zc-conformance.md)<br/>
+[`/Zc` 규칙](zc-conformance.md)<br/>
