@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CDynamicAccessor 클래스'
 title: CDynamicAccessor 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -124,18 +125,18 @@ helpviewer_keywords:
 - SetStatus method
 - SetValue method
 ms.assetid: 374b13b7-1f09-457d-9e6b-df260ff4d178
-ms.openlocfilehash: 31cc996b8beedadf9cba5a46b3b4da20e19268b0
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 2cb5c23ef72bafc85b4300707eb6c5ffe33314f3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91498681"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170804"
 ---
 # <a name="cdynamicaccessor-class"></a>CDynamicAccessor 클래스
 
 데이터베이스 스키마(데이터베이스의 내부 구조)에 대해 모를 때 데이터 소스에 액세스할 수 있습니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CDynamicAccessor : public CAccessorBase
@@ -193,7 +194,7 @@ HRESULT AddBindEntry(const DBCOLUMNINFO& info) throw();
 #### <a name="parameters"></a>매개 변수
 
 *나타납니다*<br/>
-진행 `DBCOLUMNINFO` 열 정보를 포함 하는 구조체입니다. *OLE DB 프로그래머 참조*에서 [IColumnsInfo:: GETCOLUMNINFO](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) 의 "DBCOLUMNINFO 구조체"를 참조 하세요.
+진행 `DBCOLUMNINFO` 열 정보를 포함 하는 구조체입니다. *OLE DB 프로그래머 참조* 에서 [IColumnsInfo:: GETCOLUMNINFO](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) 의 "DBCOLUMNINFO 구조체"를 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -232,7 +233,7 @@ BLOB (binary large object) 데이터를 처리 하는 방법을 지정 합니다
 
 모든 열을 바인딩 해제 하 고 할당 된 메모리를 해제 하며 클래스에서 [IAccessor](/previous-versions/windows/desktop/ms719672(v=vs.85)) 인터페이스 포인터를 해제 합니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void Close() throw();
@@ -320,7 +321,7 @@ bool GetColumnFlags(DBORDINAL nColumn,
 [in] 열 번호입니다. 열 번호는 1로 시작 합니다. 값 0은 책갈피 열 (있는 경우)을 참조 합니다.
 
 *pFlags*<br/>
-제한이 열 특징을 설명 하는 비트 마스크에 대 한 포인터입니다. *OLE DB 프로그래머 참조*의 [IColumnsInfo:: GETCOLUMNINFO](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) 에서 "DBCOLUMNFLAGS 열거 형식"을 참조 하세요.
+제한이 열 특징을 설명 하는 비트 마스크에 대 한 포인터입니다. *OLE DB 프로그래머 참조* 의 [IColumnsInfo:: GETCOLUMNINFO](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) 에서 "DBCOLUMNFLAGS 열거 형식"을 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -352,10 +353,10 @@ HRESULT GetColumnInfo(IRowset* pRowset,
 제한이 행 집합의 열 수를 반환할 메모리에 대 한 포인터입니다. 이 숫자에는 책갈피 열 (있는 경우)이 포함 됩니다.
 
 *ppColumnInfo*<br/>
-제한이 구조체의 배열을 반환할 메모리에 대 한 포인터 `DBCOLUMNINFO` 입니다. *OLE DB 프로그래머 참조*에서 [IColumnsInfo:: GETCOLUMNINFO](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) 의 "DBCOLUMNINFO 구조체"를 참조 하세요.
+제한이 구조체의 배열을 반환할 메모리에 대 한 포인터 `DBCOLUMNINFO` 입니다. *OLE DB 프로그래머 참조* 에서 [IColumnsInfo:: GETCOLUMNINFO](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) 의 "DBCOLUMNINFO 구조체"를 참조 하세요.
 
 *ppStringsBuffer*<br/>
-제한이 단일 할당 블록 내에서 모든 문자열 값 ( *columnid* 또는 for *pwszName*내에서 사용 되는 이름)의 저장소에 대 한 포인터를 반환할 메모리에 대 한 포인터입니다.
+제한이 단일 할당 블록 내에서 모든 문자열 값 ( *columnid* 또는 for *pwszName* 내에서 사용 되는 이름)의 저장소에 대 한 포인터를 반환할 메모리에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 

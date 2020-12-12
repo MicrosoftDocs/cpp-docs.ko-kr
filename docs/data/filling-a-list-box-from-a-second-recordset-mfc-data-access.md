@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 두 번째 레코드 집합에서 목록 상자 채우기 (MFC Data Access)'
 title: " 번째 레코드 집합에서 목록 상자 채우기  (MFC Data Access)"
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - combo boxes [C++], filling from second recordset
 - CListCtrl class, filling from second recordset
 ms.assetid: 360c0834-da6b-4dc0-bcea-80e9acd611f0
-ms.openlocfilehash: 8664e98c6668568918cc0e6504a38119d2e71428
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: b912511512b42e15e98a35836758ba37bf4cb989
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81336919"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170908"
 ---
 # <a name="filling-a-list-box-from-a-second-recordset--mfc-data-access"></a> 번째 레코드 집합에서 목록 상자 채우기  (MFC Data Access)
 
@@ -28,13 +29,13 @@ ms.locfileid: "81336919"
 
 #### <a name="to-fill-a-combo-box-or-list-box-from-a-second-recordset"></a>두 번째 레코드 집합에서 콤보 상자 또는 목록 상자를 채우려면
 
-1. 레코드 집합 개체[만들기(CRecordset](../mfc/reference/crecordset-class.md).
+1. 레코드 집합 개체를 만듭니다 ([CRecordset](../mfc/reference/crecordset-class.md).
 
-1. 콤보 상자 컨트롤에 대 한 [CComboBox](../mfc/reference/ccombobox-class.md) 개체에 대 한 포인터를 가져옵니다.
+1. 콤보 상자 컨트롤의 [Ccombobox](../mfc/reference/ccombobox-class.md) 개체에 대 한 포인터를 가져옵니다.
 
 1. 콤보 상자에서 이전 콘텐츠를 비웁니다.
 
-1. 레코드 집합의 모든 레코드를 이동하여 콤보 상자에 추가할 현재 레코드의 각 문자열에 대해 [CComboBox::AddString을](../mfc/reference/ccombobox-class.md#addstring) 호출합니다.
+1. 레코드 집합의 모든 레코드를 이동 하 여 콤보 상자에 추가 하려는 현재 레코드의 각 문자열에 대해 [Ccombobox:: AddString](../mfc/reference/ccombobox-class.md#addstring) 을 호출 합니다.
 
 1. 콤보 상자의 선택 항목을 초기화합니다.
 
@@ -70,5 +71,5 @@ void CSectionForm::OnInitialUpdate()
 
 ## <a name="see-also"></a>참고 항목
 
-[레코드 뷰  (MFC Data Access)](../data/record-views-mfc-data-access.md)<br/>
+[레코드 뷰 (MFC Data Access)](../data/record-views-mfc-data-access.md)<br/>
 [ODBC 드라이버 목록](../data/odbc/odbc-driver-list.md)

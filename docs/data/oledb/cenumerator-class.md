@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CEnumerator 클래스'
 title: CEnumerator 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -22,18 +23,18 @@ helpviewer_keywords:
 - GetMoniker method
 - Open method
 ms.assetid: 25805f1b-26e3-402f-af83-1b5fe5ddebf7
-ms.openlocfilehash: dfc358c06179d50cbf6442863fd2ed2c533cd00a
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 1d66afad29bd9fd785f5bc4e75a72605232af41c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91498538"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170648"
 ---
 # <a name="cenumerator-class"></a>CEnumerator 클래스
 
 [ISourcesRowset](/previous-versions/windows/desktop/ms715969(v=vs.85)) 인터페이스를 노출 하 여 모든 데이터 소스와 열거자를 설명 하는 행 집합을 반환 하는 OLE DB 열거자 개체를 사용 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CEnumerator :

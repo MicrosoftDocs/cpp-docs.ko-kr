@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CNoMultipleResults 클래스'
 title: CNoMultipleResults 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - CNoMultipleResults class
 ms.assetid: 343e77c4-b319-476e-b592-901ab9b2f34e
-ms.openlocfilehash: 793b820264d001fbfbf7920fd322a55b98e90f0d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 1fd2ddfb19ed8fb4ba4fa3f957a77a2cc8312e1d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80211720"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170349"
 ---
 # <a name="cnomultipleresults-class"></a>CNoMultipleResults 클래스
 
@@ -25,7 +26,7 @@ ms.locfileid: "80211720"
 class CNoMultipleResults
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 명령을 사용 하 여 여러 결과 집합을 처리 하려면 [CMultipleResults](../../data/oledb/cmultipleresults-class.md) 를 대신 사용 합니다.
 

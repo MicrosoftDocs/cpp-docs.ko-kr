@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CDBPropIDSet 클래스'
 title: CDBPropIDSet 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -31,18 +32,18 @@ helpviewer_keywords:
 - operator=, property sets
 - SetGUID method
 ms.assetid: 52bb806c-9581-494d-9af7-50d8a4834805
-ms.openlocfilehash: 4de218188326dad434c5b0d355a3a15d39bb576c
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 6f0c3ea19daeef2b262f6ac1ad76599160baf266
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502505"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170830"
 ---
 # <a name="cdbpropidset-class"></a>CDBPropIDSet 클래스
 
 구조체에서 상속 `DBPROPIDSET` 하 고 키 필드와 [AddPropertyID](#addpropertyid) access 메서드를 초기화 하는 생성자를 추가 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CDBPropIDSet : public tagDBPROPIDSET
@@ -64,7 +65,7 @@ class CDBPropIDSet : public tagDBPROPIDSET
 
 ### <a name="operators"></a>연산자
 
-| 속성 | 설명 |
+| Name | 설명 |
 |-|-|
 |[연산자 =](#op_equal)|다른 속성 ID로 설정 된 하나의 속성을 할당 합니다.|
 

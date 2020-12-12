@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CEnumeratorAccessor 클래스'
 title: CEnumeratorAccessor 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -35,18 +36,18 @@ helpviewer_keywords:
 - m_szName
 - m_szParseName
 ms.assetid: 21e8e7ea-3511-4afe-b33f-d520f4ff82bb
-ms.openlocfilehash: 0b4baa4671a013699e51a9ab28c002a680dfcd61
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f37de34c508487f3ee54f47db1b0a64df8a97b25
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838141"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170570"
 ---
 # <a name="cenumeratoraccessor-class"></a>CEnumeratorAccessor 클래스
 
 [CEnumerator](../../data/oledb/cenumerator-class.md) 에서 열거자 행 집합의 데이터에 액세스 하는 데 사용 됩니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CEnumeratorAccessor

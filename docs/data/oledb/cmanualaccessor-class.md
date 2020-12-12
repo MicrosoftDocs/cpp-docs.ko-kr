@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CManualAccessor 클래스'
 title: CManualAccessor 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -30,18 +31,18 @@ helpviewer_keywords:
 - CreateAccessor method
 - CreateParameterAccessor method
 ms.assetid: a0088074-7135-465c-b228-69097a50b8cc
-ms.openlocfilehash: 24938812ea254fe0150cbabf58dd72bf45ebd0a1
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 3d625a9a02431445cc1505c6a3f7e9673a04201d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504105"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170557"
 ---
 # <a name="cmanualaccessor-class"></a>CManualAccessor 클래스
 
 고급 사용을 위해 디자인 된 접근자 형식을 나타냅니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CManualAccessor : public CAccessorBase
@@ -82,7 +83,7 @@ void AddBindEntry(DBORDINAL nOrdinal,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [DBBINDING](/previous-versions/windows/desktop/ms716845(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [DBBINDING](/previous-versions/windows/desktop/ms716845(v=vs.85)) 를 참조 하세요.
 
 *nOrdinal*<br/>
 진행 열 번호입니다.
@@ -123,7 +124,7 @@ void AddParameterEntry(DBORDINAL nOrdinal,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [DBBINDING](/previous-versions/windows/desktop/ms716845(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [DBBINDING](/previous-versions/windows/desktop/ms716845(v=vs.85)) 를 참조 하세요.
 
 *nOrdinal*<br/>
 진행 매개 변수 번호입니다.

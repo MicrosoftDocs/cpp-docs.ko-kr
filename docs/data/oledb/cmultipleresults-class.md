@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CMultipleResults 클래스'
 title: CMultipleResults 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,16 +9,16 @@ f1_keywords:
 helpviewer_keywords:
 - CMultipleResults class
 ms.assetid: 6ce5bbb9-b551-483c-988a-e6aee9135a19
-ms.openlocfilehash: 88bc956c3a08c6dddbd7d26a18cfc10f778cabcf
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f1bfe21c9a4613e550c9acae6741e3b0ae47fda6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80211832"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170518"
 ---
 # <a name="cmultipleresults-class"></a>CMultipleResults 클래스
 
-명령을 사용 하 여 여러 결과 집합을 처리 하려면 `CCommand` 템플릿 인수 *Tmultiple*에 `CMultipleResults`를 사용 합니다.
+명령을 사용 하 여 여러 결과 집합을 처리 하려면 `CMultipleResults` `CCommand` 템플릿 인수 *tmultiple* 에 대해를 사용 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -25,7 +26,7 @@ ms.locfileid: "80211832"
 class CMultipleResults
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 여러 결과 집합을 처리 하려면 [CCommand](../../data/oledb/ccommand-class.md) 가이 클래스에서 상속 해야 합니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CDynamicParameterAccessor 클래스'
 title: CDynamicParameterAccessor 클래스
 ms.date: 02/14/2018
 f1_keywords:
@@ -90,18 +91,18 @@ helpviewer_keywords:
 - SetParamStatus method
 - SetParamString method
 ms.assetid: 5f22626e-e80d-491f-8b3b-cedc50331960
-ms.openlocfilehash: 4596f5181dd197b16786ee4d4d16cf06721b13b6
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 5470ced8b4479124f0db3878fe2562a658547f9f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91498658"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170778"
 ---
 # <a name="cdynamicparameteraccessor-class"></a>CDynamicParameterAccessor 클래스
 
 [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) 와 유사하지만 [ICommandWithParameters](/sql/relational-databases/native-client-ole-db-interfaces/icommandwithparameters) 인터페이스를 호출하여 설정한 매개 변수 정보를 가져옵니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CDynamicParameterAccessor : public CDynamicAccessor
@@ -313,7 +314,7 @@ DBSTATUS* GetParamStatus(DBORDINAL nParam) const throw();
 [in] 매개 변수 번호입니다(1에서 오프셋). 매개 변수 0은 반환 값으로 예약됩니다. 매개 변수 번호는 SQL 또는 저장 프로시저 호출에서 해당 순서를 기준으로 하는 매개 변수의 인덱스입니다. 예는 [Setparam](#setparam) 을 참조 하세요.
 
 *pStatus*<br/>
-제한이 지정 된 매개 변수의 DBSTATUS 상태를 포함 하는 변수에 대 한 포인터입니다. DBSTATUS 값에 대 한 자세한 내용은 *OLE DB 프로그래머 참조*의 [상태](/previous-versions/windows/desktop/ms722617(v=vs.85)) 를 참조 하거나 oledb에서 dbstatus를 검색 하십시오.
+제한이 지정 된 매개 변수의 DBSTATUS 상태를 포함 하는 변수에 대 한 포인터입니다. DBSTATUS 값에 대 한 자세한 내용은 *OLE DB 프로그래머 참조* 의 [상태](/previous-versions/windows/desktop/ms722617(v=vs.85)) 를 참조 하거나 oledb에서 dbstatus를 검색 하십시오.
 
 ### <a name="remarks"></a>설명
 
@@ -414,7 +415,7 @@ bool SetParam(TCHAR* pParamName,
 데이터 형식인 템플릿 매개 변수입니다.
 
 *nParam*<br/>
-[in] 매개 변수 번호입니다(1에서 오프셋). 매개 변수 0은 반환 값으로 예약됩니다. 매개 변수 번호는 SQL 또는 저장 프로시저 호출에서 해당 순서를 기준으로 하는 매개 변수의 인덱스입니다. 다음은 그 예입니다.
+[in] 매개 변수 번호입니다(1에서 오프셋). 매개 변수 0은 반환 값으로 예약됩니다. 매개 변수 번호는 SQL 또는 저장 프로시저 호출에서 해당 순서를 기준으로 하는 매개 변수의 인덱스입니다. 예를 들어:
 
 [!code-cpp[NVC_OLEDB_Consumer#8](../../data/oledb/codesnippet/cpp/cdynamicparameteraccessor-setparam_1.cpp)]
 
@@ -425,7 +426,7 @@ bool SetParam(TCHAR* pParamName,
 진행 버퍼에 쓸 데이터가 들어 있는 메모리에 대 한 포인터입니다.
 
 *status*<br/>
-진행 DBSTATUS 열 상태입니다. DBSTATUS 값에 대 한 자세한 내용은 *OLE DB 프로그래머 참조*의 [상태](/previous-versions/windows/desktop/ms722617(v=vs.85)) 를 참조 하거나 oledb에서 dbstatus를 검색 하십시오.
+진행 DBSTATUS 열 상태입니다. DBSTATUS 값에 대 한 자세한 내용은 *OLE DB 프로그래머 참조* 의 [상태](/previous-versions/windows/desktop/ms722617(v=vs.85)) 를 참조 하거나 oledb에서 dbstatus를 검색 하십시오.
 
 ### <a name="return-value"></a>반환 값
 
@@ -473,7 +474,7 @@ bool SetParamStatus(DBORDINAL nParam,
 [in] 매개 변수 번호입니다(1에서 오프셋). 매개 변수 0은 반환 값으로 예약됩니다. 매개 변수 번호는 SQL 또는 저장 프로시저 호출에서 해당 순서를 기준으로 하는 매개 변수의 인덱스입니다. 예는 [Setparam](#setparam) 을 참조 하세요.
 
 *status*<br/>
-진행 지정 된 매개 변수의 DBSTATUS 상태입니다. DBSTATUS 값에 대 한 자세한 내용은 *OLE DB 프로그래머 참조*의 [상태](/previous-versions/windows/desktop/ms722617(v=vs.85)) 를 참조 하거나 oledb에서 dbstatus를 검색 하십시오.
+진행 지정 된 매개 변수의 DBSTATUS 상태입니다. DBSTATUS 값에 대 한 자세한 내용은 *OLE DB 프로그래머 참조* 의 [상태](/previous-versions/windows/desktop/ms722617(v=vs.85)) 를 참조 하거나 oledb에서 dbstatus를 검색 하십시오.
 
 ### <a name="remarks"></a>설명
 
@@ -502,13 +503,13 @@ bool SetParamString(DBORDINAL nParam,
 진행 지정 된 매개 변수의 ANSI (**CHAR**) 또는 유니코드 (**WCHAR**) 문자열 데이터에 대 한 포인터입니다. Oledb의 DBSTATUS를 참조 하세요.
 
 *status*<br/>
-진행 지정 된 매개 변수의 DBSTATUS 상태입니다. DBSTATUS 값에 대 한 자세한 내용은 *OLE DB 프로그래머 참조*의 [상태](/previous-versions/windows/desktop/ms722617(v=vs.85)) 를 참조 하거나 oledb에서 dbstatus를 검색 하십시오.
+진행 지정 된 매개 변수의 DBSTATUS 상태입니다. DBSTATUS 값에 대 한 자세한 내용은 *OLE DB 프로그래머 참조* 의 [상태](/previous-versions/windows/desktop/ms722617(v=vs.85)) 를 참조 하거나 oledb에서 dbstatus를 검색 하십시오.
 
 ### <a name="remarks"></a>설명
 
 **`true`** 성공 시 또는 실패 시 반환 **`false`** 됩니다.
 
-`SetParamString`*pstring*에 대해 지정 된 최대 크기 보다 큰 문자열을 설정 하려고 하면가 실패 합니다.
+`SetParamString`*pstring* 에 대해 지정 된 최대 크기 보다 큰 문자열을 설정 하려고 하면가 실패 합니다.
 
 `SetParamString`를 사용 하 여 버퍼에 문자열 매개 변수 데이터를 설정 합니다. [Setparam](#setparam) 을 사용 하 여 버퍼에서 문자열이 아닌 매개 변수 데이터를 설정 합니다.
 

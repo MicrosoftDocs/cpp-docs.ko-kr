@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CCustomSource (CustomDS .h)'
 title: CCustomSource(CustomDS.H)
 ms.date: 10/22/2018
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - CMyProviderSource class in MyProviderDS.H
 - CCustomSource class in CustomDS.H
 ms.assetid: c143d48e-59c8-4f67-9141-3aab51859b92
-ms.openlocfilehash: 8e92c30e8d62ade095167880917ad70da8e59b36
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 6fbb9fe0676521b01caa3bba5f5bb2be03d0fe6f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90742920"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170440"
 ---
 # <a name="ccustomsource-customdsh"></a>CCustomSource (CustomDS .h)
 
@@ -153,11 +154,11 @@ struct UPROPINFO
 
 고유한 속성 집합을 정의 하려면 추가 BEGIN_PROPSET_MAP/END_PROPSET_MAP 조합을 만들어 하나를 추가할 수 있습니다. 속성 집합에 대 한 GUID를 정의한 다음 고유한 속성을 정의 합니다. 공급자별 속성을 사용 하는 경우 기존 속성을 사용 하는 대신 새 속성 집합에 추가 합니다. 이는 OLE DB의 이후 버전에서 발생 하는 문제를 방지 합니다.
 
-## <a name="user-defined-property-sets"></a>사용자 정의 속성 집합
+## <a name="user-defined-property-sets"></a>User-Defined 속성 집합
 
 Visual C++는 사용자 정의 속성 집합을 지원 합니다. 또는를 재정의할 필요가 없습니다 `GetProperties` `GetPropertyInfo` . 대신, 템플릿에서 사용자 정의 속성 집합을 검색 하 여 해당 개체에 추가 합니다.
 
-초기화 시에 사용할 수 있어야 하는 사용자 정의 속성 집합을 사용 하는 경우 (즉, 소비자가를 호출 하기 전에 `IDBInitialize::Initialize` ) BEGIN_PROPERTY_SET_EX 매크로와 함께 UPROPSET_USERINIT 플래그를 사용 하 여 지정할 수 있습니다. 이 속성이 작동 하려면 (OLE DB 사양에 필요 함) 데이터 소스 개체에 속성 집합이 있어야 합니다. 예를 들면 다음과 같습니다.
+초기화 시에 사용할 수 있어야 하는 사용자 정의 속성 집합을 사용 하는 경우 (즉, 소비자가를 호출 하기 전에 `IDBInitialize::Initialize` ) BEGIN_PROPERTY_SET_EX 매크로와 함께 UPROPSET_USERINIT 플래그를 사용 하 여 지정할 수 있습니다. 이 속성이 작동 하려면 (OLE DB 사양에 필요 함) 데이터 소스 개체에 속성 집합이 있어야 합니다. 예를 들어:
 
 ```cpp
 BEGIN_PROPERTY_SET_EX(DBPROPSET_MYPROPSET, UPROPSET_USERINIT)
@@ -165,6 +166,6 @@ BEGIN_PROPERTY_SET_EX(DBPROPSET_MYPROPSET, UPROPSET_USERINIT)
 END_PROPERTY_SET_EX(DBPROPSET_MYPROPSET)
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[공급자 마법사 생성 파일](../../data/oledb/provider-wizard-generated-files.md)<br/>
+[공급자 Wizard-Generated 파일](../../data/oledb/provider-wizard-generated-files.md)<br/>
