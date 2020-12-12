@@ -1,5 +1,6 @@
 ---
-title: CTreeCtrl vs. CTreeView
+description: '자세히 알아보기: CTreeCtrl 및 CTreeView'
+title: CTreeCtrl과 CTreeView
 ms.date: 11/04/2016
 helpviewer_keywords:
 - tree view controls
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - CTreeView class [MFC], vs. CTreeCtrl class [MFC]
 - tree controls [MFC], and tree view
 ms.assetid: bba5af25-103f-4b53-84d3-071bc9bd6494
-ms.openlocfilehash: 83e07c75b9eab6df05dbcd0f52cfbe8b90e1d768
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: edaf2662d483a23c7618a143ee4aabe7910cf121
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84620477"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97309422"
 ---
-# <a name="ctreectrl-vs-ctreeview"></a>CTreeCtrl vs. CTreeView
+# <a name="ctreectrl-vs-ctreeview"></a>CTreeCtrl과 CTreeView
 
 MFC는 트리 컨트롤 [CTreeCtrl](reference/ctreectrl-class.md) 및 [ctreeview](reference/ctreeview-class.md)를 캡슐화 하는 두 개의 클래스를 제공 합니다. 각 클래스는 여러 상황에서 유용 합니다.
 

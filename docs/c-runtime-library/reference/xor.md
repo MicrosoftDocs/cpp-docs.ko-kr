@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: xor'
 title: xor
 ms.date: 11/04/2016
 api_location:
@@ -22,12 +23,12 @@ f1_keywords:
 helpviewer_keywords:
 - xor function
 ms.assetid: 0fe9554b-d87b-4487-92ed-366c6dc21df2
-ms.openlocfilehash: a9b3c393f481f083dcf476ae95cc30541a01ad28
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 58d550dc9415273d5d3f5084d09cc7f305615165
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80170100"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97309175"
 ---
 # <a name="xor"></a>xor
 
@@ -72,4 +73,4 @@ int main( )
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<iso646 >
+**헤더:**\<iso646.h>
