@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 힙 상수'
 title: 힙 상수
 ms.date: 11/04/2016
 f1_keywords:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - _HEAPBADPTR constants
 - heap constants
 ms.assetid: 3f751bb9-2dc4-486f-b5f5-9061c96d3754
-ms.openlocfilehash: 44c7a280ebffd0073f1dfb3a0a3cbdbd2efee0fb
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: da90be1855f9a4714bc2d441651ac721ede84c1f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57745374"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97120697"
 ---
 # <a name="heap-constants"></a>힙 상수
 
@@ -38,7 +39,7 @@ ms.locfileid: "57745374"
 #include <malloc.h>
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 이러한 상수는 힙의 상태를 나타내는 반환 값을 제공합니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 증가 및 감소 연산자 오버 로드 (c + +)'
 title: 증가 및 감소 연산자 오버로드(C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - decrement operators [C++]
 - decrement operators [C++], types of
 ms.assetid: 5423c6ce-3999-4a77-92f6-ad540add1b1d
-ms.openlocfilehash: 10cda57b74a7da57f2d48b91854b5d37c8d181f1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f2704a1c10375bf8422324d90f41c6e3ac245505
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87186986"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97113924"
 ---
 # <a name="increment-and-decrement-operator-overloading-c"></a>증가 및 감소 연산자 오버로드(C++)
 
@@ -128,4 +129,4 @@ int main()
 
 ## <a name="see-also"></a>참고 항목
 
-[연산자 오버 로드](../cpp/operator-overloading.md)
+[연산자 오버로드](../cpp/operator-overloading.md)

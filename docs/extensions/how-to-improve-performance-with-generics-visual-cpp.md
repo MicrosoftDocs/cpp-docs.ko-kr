@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 방법: 제네릭을 사용 하 여 성능 향상 (c + +/CLI)'
 title: '방법: 제네릭을 사용하여 성능 개선(C++/CLI)'
 ms.date: 10/12/2018
 ms.topic: reference
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - C++, generics
 - generics [C++], performance
 ms.assetid: f14a175b-301f-46cc-86e4-c82d35f9aa3e
-ms.openlocfilehash: 039c5b069351249e51d961d9d1757ed6b09ef99c
-ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
+ms.openlocfilehash: 90066a64deda574dae895023cf92ac7fa2807603
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91414167"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97119163"
 ---
 # <a name="how-to-improve-performance-with-generics-ccli"></a>방법: 제네릭을 사용하여 성능 개선(C++/CLI)
 
@@ -124,6 +125,6 @@ int main()
 14
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [제네릭](generics-cpp-component-extensions.md)

@@ -1,14 +1,15 @@
 ---
+description: '자세한 정보: 데스크톱 응용 프로그램 (Visual C++)'
 title: 데스크톱 애플리케이션(Visual C++)
 ms.date: 07/28/2019
 ms.assetid: a020b534-293c-44e2-aa48-516c43ddeb8f
 ms.topic: overview
-ms.openlocfilehash: 26448ca65b3162e2adfe6988dfd8c9e85432429c
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: eb7badb73af507d31c9dd982f0a6189362249a3b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504434"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114756"
 ---
 # <a name="desktop-applications-visual-c"></a>데스크톱 애플리케이션(Visual C++)
 
@@ -44,7 +45,7 @@ C + +의 모든 데스크톱 응용 프로그램은 C 런타임 (CRT) 및 표준
 |[빈 Win32 애플리케이션에 파일 추가](./overview-of-windows-programming-in-cpp.md)|빈 프로젝트에 파일을 추가 하는 방법|
 |[리소스 파일 작업](working-with-resource-files.md)|데스크톱 응용 프로그램에 이미지, 아이콘, 문자열 테이블 및 기타 리소스를 추가 하는 방법입니다.|
 |[DirectX를 사용하여 게임을 만들기 위한 리소스(C++)](resources-for-creating-a-game-using-directx.md)|C + +로 게임을 만들기 위한 콘텐츠에 대 한 링크입니다.|
-|[연습: 정적 라이브러리 만들기 및 사용](../build/walkthrough-creating-and-using-a-static-library-cpp.md)|.Lib 이진 파일을 만드는 방법|
+|[연습: 정적 라이브러리 만들기 및 사용](../build/walkthrough-creating-and-using-a-static-library-cpp.md)|.lib 이진 파일을 만드는 방법입니다.|
 |[방법: Windows 데스크톱 응용 프로그램에서 Windows 10 SDK 사용](how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)|Windows 10 SDK를 사용하여 빌드할 프로젝트를 설정하는 단계를 설명합니다.|
 
 ## <a name="related-articles"></a>관련 문서

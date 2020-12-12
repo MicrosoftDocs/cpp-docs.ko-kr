@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: __asm 블록에서 C 또는 c + + 사용'
 title: __asm 블록에서 C 또는 C++ 사용
 ms.date: 08/30/2018
 helpviewer_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - typedef names, used in __asm blocks
 - __asm keyword [C++], C/C++ elements in
 ms.assetid: ae8b2b52-6b75-42e3-ac0c-ad02d922ed97
-ms.openlocfilehash: 05e63d666f3fc39126d6f48e8fc523c4a02e76df
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2fc1987339fcbabee07e2b626c3ae764c3d5e2e1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87191419"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97121929"
 ---
 # <a name="using-c-or-c-in-__asm-blocks"></a>__asm 블록에서 C 또는 C++ 사용
 
@@ -35,7 +36,7 @@ ms.locfileid: "87191419"
 
 - 매크로 및 전처리기 지시문
 
-- __ / \* 설명 \* ( / __ 및 __//__ )
+- __/ \* 설명 \* ( /__ 및 __//__ )
 
 - 형식 이름(MASM 형식이 올바를 때마다)
 

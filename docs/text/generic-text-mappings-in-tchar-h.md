@@ -1,5 +1,6 @@
 ---
-title: Tchar.h의 제네릭 텍스트 매핑
+description: '자세한 정보: tchar.h의 Generic-Text 매핑'
+title: Tchar.h의 Generic-Text 매핑
 ms.date: 11/04/2016
 helpviewer_keywords:
 - mapping generic-text
@@ -10,14 +11,14 @@ helpviewer_keywords:
 - TCHAR.H data types, mapping
 - mappings [C++], TCHAR.H
 ms.assetid: 01e1bb74-5a01-4093-8720-68b6c1fdda80
-ms.openlocfilehash: c317e7d67cc3d086dacbe0f24b0103d389afefda
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f083dc03eab7db25b54955d8d34a13f2b5b7197b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217300"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97118350"
 ---
-# <a name="generic-text-mappings-in-tcharh"></a>Tchar.h의 제네릭 텍스트 매핑
+# <a name="generic-text-mappings-in-tcharh"></a>Tchar.h의 Generic-Text 매핑
 
 Microsoft 런타임 라이브러리는 국가별 사용을 위해 코드를 전송 하는 과정을 간소화 하기 위해 다양 한 데이터 형식, 루틴 및 기타 개체에 대 한 Microsoft 고유의 일반 텍스트 매핑을 제공 합니다. Tchar.h에 정의 된 이러한 매핑을 사용 하 여 문을 사용 하 여 정의 하는 매니페스트 상수에 따라 싱글바이트, 멀티 바이트 또는 유니코드 문자 집합에 대해 컴파일할 수 있는 제네릭 코드를 작성할 수 있습니다 `#define` . 제네릭 텍스트 매핑은 ANSI와 호환되지 않는 Microsoft 확장입니다.
 
@@ -27,7 +28,7 @@ Tchar.h를 사용 하면 동일한 소스에서 단일 바이트, MBCS (멀티 �
 
 일부 SBCS (싱글바이트 문자 집합) 문자열 처리 함수는 (부호 있는) 매개 변수를 사용 하기 때문에 **`char*`** 가 정의 되 면 형식이 일치 하지 않는다는 컴파일러 경고가 발생 `_MBCS` 합니다. 이 경고를 방지 하는 방법에는 다음 세 가지가 있습니다.
 
-1. Tchar.h에 형식이 안전한 인라인 함수 썽크를 사용 합니다. 기본 동작입니다.
+1. Tchar.h에 형식이 안전한 인라인 함수 썽크를 사용 합니다. 이것은 기본적인 동작입니다.
 
 1. 명령줄에서를 정의 하 여 tchar.h에서 직접 매크로를 사용 `_MB_MAP_DIRECT` 합니다. 이렇게 하는 경우 형식을 수동으로 일치시켜야 합니다. 이는 가장 빠른 방법 이지만 형식이 안전 하지 않습니다.
 
@@ -45,16 +46,16 @@ Tchar.h를 사용 하면 동일한 소스에서 단일 바이트, MBCS (멀티 �
 
 ### <a name="generic-text-data-type-mappings"></a>일반 텍스트 데이터 형식 매핑
 
-|일반 텍스트<br /> 데이터 형식 이름|_UNICODE &<br /> _MBCS 정의 되지 않음|_MBCS<br /> 정의됨|_UNICODE<br /> 정의됨|
+|Generic-Text<br /> 데이터 형식 이름|_UNICODE &<br /> _MBCS 정의 되지 않음|_MBCS<br /> 정의됨|_UNICODE<br /> 정의됨|
 |--------------------------------------|----------------------------------------|------------------------|---------------------------|
 |`_TCHAR`|**`char`**|**`char`**|**`wchar_t`**|
 |`_TINT`|**`int`**|**`unsigned int`**|`wint_t`|
 |`_TSCHAR`|**`signed char`**|**`signed char`**|**`wchar_t`**|
 |`_TUCHAR`|**`unsigned char`**|**`unsigned char`**|**`wchar_t`**|
 |`_TXCHAR`|**`char`**|**`unsigned char`**|**`wchar_t`**|
-|`_T` 또는 `_TEXT`|효과 없음(전처리기에 의해 제거됨)|효과 없음(전처리기에 의해 제거됨)|`L`다음 문자 또는 문자열을 해당 유니코드로 변환 합니다.|
+|`_T` 또는 `_TEXT`|효과 없음(전처리기에 의해 제거됨)|효과 없음(전처리기에 의해 제거됨)|`L` 다음 문자 또는 문자열을 해당 유니코드로 변환 합니다.|
 
-루틴, 변수 및 기타 개체의 일반 텍스트 매핑 목록은 런타임 라이브러리 참조에서 [일반 텍스트 매핑](../c-runtime-library/generic-text-mappings.md) 을 참조 하세요.
+루틴, 변수 및 기타 개체의 일반 텍스트 매핑 목록은 Run-Time 라이브러리 참조에서 [일반 텍스트 매핑](../c-runtime-library/generic-text-mappings.md) 을 참조 하세요.
 
 > [!NOTE]
 > `str`포함 된 null 바이트를 포함할 수 있는 유니코드 문자열과 함수 패밀리를 사용 하지 마세요. 마찬가지로 `wcs` MBCS (또는 SBCS) 문자열과 함께 함수 패밀리를 사용 하지 마십시오.

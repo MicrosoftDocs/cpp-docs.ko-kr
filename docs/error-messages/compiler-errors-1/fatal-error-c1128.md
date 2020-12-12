@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 심각한 오류 C1128'
 title: 심각한 오류 C1128
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1128
 ms.assetid: 6f9580fd-ecef-48be-9780-dcf666704279
-ms.openlocfilehash: 64671c9abe8ed1375df1e91ca7509e6a597366ee
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: c63a875df2fa5edca57d6d0c3876c09a30ce1115
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80203645"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97123671"
 ---
 # <a name="fatal-error-c1128"></a>심각한 오류 C1128
 
@@ -23,7 +24,7 @@ ms.locfileid: "80203645"
 
 인라인 함수가 너무 많은 경우에도 C1128 발생할 수 있습니다.
 
-이 오류를 해결 하려면 소스 파일을 여러 소스 코드 파일로 나누고, **/gy**를 사용 하지 않고 컴파일하거나,/bigobj로 컴파일합니다 [(에서 섹션의 수 늘리기). Obj 파일)](../../build/reference/bigobj-increase-number-of-sections-in-dot-obj-file.md).  **/Gy**로 컴파일하지 않는 경우 **/O2** 와 **/o2** 모두 **/gy**를 암시 하므로 최적화를 개별적으로 지정 해야 합니다.
+이 오류를 해결 하려면 소스 파일을 여러 소스 코드 파일로 나누고, **/gy** 를 사용 하지 않고 컴파일하거나,/bigobj로 컴파일합니다 [(에서 섹션의 수 늘리기). Obj 파일)](../../build/reference/bigobj-increase-number-of-sections-in-dot-obj-file.md).  **/Gy** 로 컴파일하지 않는 경우 **/O2** 와 **/o2** 모두 **/gy** 를 암시 하므로 최적화를 개별적으로 지정 해야 합니다.
 
 가능 하면 디버깅 정보 없이 컴파일합니다.
 

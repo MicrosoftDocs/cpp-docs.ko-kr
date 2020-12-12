@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2485'
 title: 컴파일러 오류 C2485
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2485
 ms.assetid: daae3fc1-76cf-4a6f-b2fa-86873fb0929d
-ms.openlocfilehash: 62865ab89193eb1b1b833444713db1d113d2a2c7
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d4deada210c76aff3b890a9327b70b1e2fafdc6b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80205103"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97123853"
 ---
 # <a name="compiler-error-c2485"></a>컴파일러 오류 C2485
 

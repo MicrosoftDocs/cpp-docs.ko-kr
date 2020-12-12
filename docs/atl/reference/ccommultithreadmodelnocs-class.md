@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CComMultiThreadModelNoCS 클래스'
 title: CComMultiThreadModelNoCS 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,16 +15,16 @@ helpviewer_keywords:
 - CComMultiThreadModelNoCS class
 - threading [ATL]
 ms.assetid: 2b3f7a45-fd72-452c-aaf3-ccdaa621c821
-ms.openlocfilehash: beb5cd1e13de1a10546f28d4a7eb98e45b6e9af1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8b26c59564f9a7869bb3429ee31284925815e6ac
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224268"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97152011"
 ---
 # <a name="ccommultithreadmodelnocs-class"></a>CComMultiThreadModelNoCS 클래스
 
-`CComMultiThreadModelNoCS`임계 영역 잠금 또는 잠금 해제 기능 없이 변수 값을 증가 및 감소 시키는 스레드로부터 안전한 메서드를 제공 합니다.
+`CComMultiThreadModelNoCS` 임계 영역 잠금 또는 잠금 해제 기능 없이 변수 값을 증가 및 감소 시키는 스레드로부터 안전한 메서드를 제공 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -50,7 +51,7 @@ class CComMultiThreadModelNoCS
 
 ## <a name="remarks"></a>설명
 
-`CComMultiThreadModelNoCS`는 변수를 증가 및 감소 시킬 수 있는 스레드로부터 안전한 메서드를 제공 한다는 점에서 [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) 와 비슷합니다. 그러나를 통해 임계 영역 클래스를 참조 하는 경우 `CComMultiThreadModelNoCS` 및와 같은 `Lock` 메서드 `Unlock` 는 아무 작업도 수행 하지 않습니다.
+`CComMultiThreadModelNoCS` 는 변수를 증가 및 감소 시킬 수 있는 스레드로부터 안전한 메서드를 제공 한다는 점에서 [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) 와 비슷합니다. 그러나를 통해 임계 영역 클래스를 참조 하는 경우 `CComMultiThreadModelNoCS` 및와 같은 `Lock` 메서드 `Unlock` 는 아무 작업도 수행 하지 않습니다.
 
 일반적으로 `CComMultiThreadModelNoCS` 는 이름을 통해를 사용 `ThreadModelNoCS` **`typedef`** 합니다. 이 **`typedef`** 는 `CComMultiThreadModelNoCS` , `CComMultiThreadModel` 및 [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md)에 정의 되어 있습니다.
 
@@ -63,7 +64,7 @@ class CComMultiThreadModelNoCS
 
 **헤더:** 서 기. h
 
-## <a name="ccommultithreadmodelnocsautocriticalsection"></a><a name="autocriticalsection"></a>CComMultiThreadModelNoCS::AutoCriticalSection
+## <a name="ccommultithreadmodelnocsautocriticalsection"></a><a name="autocriticalsection"></a> CComMultiThreadModelNoCS::AutoCriticalSection
 
 를 사용 하 `CComMultiThreadModelNoCS` 는 경우 **`typedef`** 이름이 `AutoCriticalSection` [CComFakeCriticalSection](../../atl/reference/ccomfakecriticalsection-class.md)클래스를 참조 합니다.
 
@@ -89,7 +90,7 @@ typedef CComFakeCriticalSection AutoCriticalSection;
 
 [CComMultiThreadModel:: AutoCriticalSection](../../atl/reference/ccommultithreadmodel-class.md#autocriticalsection)를 참조 하세요.
 
-## <a name="ccommultithreadmodelnocscriticalsection"></a><a name="criticalsection"></a>CComMultiThreadModelNoCS:: CriticalSection
+## <a name="ccommultithreadmodelnocscriticalsection"></a><a name="criticalsection"></a> CComMultiThreadModelNoCS:: CriticalSection
 
 를 사용 하 `CComMultiThreadModelNoCS` 는 경우 **`typedef`** 이름이 `CriticalSection` [CComFakeCriticalSection](../../atl/reference/ccomfakecriticalsection-class.md)클래스를 참조 합니다.
 
@@ -115,9 +116,9 @@ typedef CComFakeCriticalSection CriticalSection;
 
 [CComMultiThreadModel:: AutoCriticalSection](../../atl/reference/ccommultithreadmodel-class.md#autocriticalsection)를 참조 하세요.
 
-## <a name="ccommultithreadmodelnocsdecrement"></a><a name="decrement"></a>CComMultiThreadModelNoCS::D ecrement
+## <a name="ccommultithreadmodelnocsdecrement"></a><a name="decrement"></a> CComMultiThreadModelNoCS::D ecrement
 
-이 정적 함수는 *p*로 가리키는 변수의 값을 감소 시키는 Win32 함수 [InterlockedDecrement](/windows/win32/api/winnt/nf-winnt-interlockeddecrement)를 호출 합니다.
+이 정적 함수는 *p* 로 가리키는 변수의 값을 감소 시키는 Win32 함수 [InterlockedDecrement](/windows/win32/api/winnt/nf-winnt-interlockeddecrement)를 호출 합니다.
 
 ```
 static ULONG WINAPI Decrement(LPLONG p) throw();
@@ -128,7 +129,7 @@ static ULONG WINAPI Decrement(LPLONG p) throw();
 *®*<br/>
 진행 감소 시킬 변수에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 감소 결과가 0 이면는 `Decrement` 0을 반환 합니다. 감소 결과 값이 0이 아니면 반환 값도 0이 아니라 감소의 결과와 다를 수 있습니다.
 
@@ -136,9 +137,9 @@ static ULONG WINAPI Decrement(LPLONG p) throw();
 
 **InterlockedDecrement** 은이 변수를 사용 하 여 두 개 이상의 스레드가 동시에 수행 되지 않도록 방지 합니다.
 
-## <a name="ccommultithreadmodelnocsincrement"></a><a name="increment"></a>CComMultiThreadModelNoCS:: 증가값
+## <a name="ccommultithreadmodelnocsincrement"></a><a name="increment"></a> CComMultiThreadModelNoCS:: 증가값
 
-이 정적 함수는 *p*로 가리키는 변수의 값을 증가 시키는 Win32 함수 [InterlockedIncrement](/windows/win32/api/winnt/nf-winnt-interlockedincrement)를 호출 합니다.
+이 정적 함수는 *p* 로 가리키는 변수의 값을 증가 시키는 Win32 함수 [InterlockedIncrement](/windows/win32/api/winnt/nf-winnt-interlockedincrement)를 호출 합니다.
 
 ```
 static ULONG WINAPI Increment(LPLONG p) throw();
@@ -149,7 +150,7 @@ static ULONG WINAPI Increment(LPLONG p) throw();
 *®*<br/>
 진행 증가 시킬 변수에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 증가값의 결과가 0 이면 **increment** 는 0을 반환 합니다. 증가값의 결과가 0이 아닌 경우 반환 값도 0이 아니라 증가값의 결과와 다를 수 있습니다.
 
@@ -157,7 +158,7 @@ static ULONG WINAPI Increment(LPLONG p) throw();
 
 **InterlockedIncrement** 은이 변수를 사용 하 여 두 개 이상의 스레드가 동시에 수행 되지 않도록 방지 합니다.
 
-## <a name="ccommultithreadmodelnocsthreadmodelnocs"></a><a name="threadmodelnocs"></a>CComMultiThreadModelNoCS:: ThreadModelNoCS
+## <a name="ccommultithreadmodelnocsthreadmodelnocs"></a><a name="threadmodelnocs"></a> CComMultiThreadModelNoCS:: ThreadModelNoCS
 
 를 사용 하 `CComMultiThreadModelNoCS` 는 경우 **`typedef`** 이름은를 `ThreadModelNoCS` 참조 하기만 `CComMultiThreadModelNoCS` 합니다.
 

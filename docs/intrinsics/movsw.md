@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __movsw'
 title: __movsw
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - rep movsw instruction
 - __movsw intrinsic
 ms.assetid: db402ad5-7f0e-449a-b0b0-eea9928d6435
-ms.openlocfilehash: 67eef7fe0a5b9803650f345740a8c40262cd2014
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 500a2bc3af83887cdd5d65501695c9db60ef60f1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70221726"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97119032"
 ---
 # <a name="__movsw"></a>__movsw
 
 **Microsoft 전용**
 
-이동 문자열 (`rep movsw`) 명령을 생성 합니다.
+이동 문자열 ( `rep movsw` ) 명령을 생성 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -36,7 +37,7 @@ void __movsw(
 *대상이*\
 제한이 작업의 대상입니다.
 
-*Source*\
+*원본*\
 진행 작업의 소스입니다.
 
 *수*\
@@ -44,11 +45,11 @@ void __movsw(
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`__movsw`|x86, x64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 ## <a name="remarks"></a>설명
 
@@ -84,6 +85,6 @@ int main()
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

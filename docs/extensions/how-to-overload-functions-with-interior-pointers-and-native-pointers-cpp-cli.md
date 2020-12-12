@@ -1,16 +1,17 @@
 ---
+description: '자세히 알아보기: 방법: 내부 포인터 및 네이티브 포인터를 사용 하 여 함수 오버 로드 (c + +/CLI)'
 title: '방법: 내부 포인터 및 네이티브 포인터를 사용하여 함수 오버로드(C++/CLI)'
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - Functions with interior and native pointers, overloading
 ms.assetid: d70df625-4aad-457c-84f5-70a0a290cc1f
-ms.openlocfilehash: d4e7ee1140942b0168c8ae94baabd938d6923c7c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f68861b7140ed3ae7fac84bc9a197f68ddd9b72d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80172246"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97119150"
 ---
 # <a name="how-to-overload-functions-with-interior-pointers-and-native-pointers-ccli"></a>방법: 내부 포인터 및 네이티브 포인터를 사용하여 함수 오버로드(C++/CLI)
 
@@ -63,6 +64,6 @@ in f( int* pi )
 in f( interior_ptr<int> pi )
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[interior_ptr(C++/CLI)](interior-ptr-cpp-cli.md)
+[interior_ptr (c + +/CLI)](interior-ptr-cpp-cli.md)

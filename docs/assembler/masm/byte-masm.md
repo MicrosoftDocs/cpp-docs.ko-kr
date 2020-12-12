@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: 바이트'
 title: BYTE (MASM)
 ms.date: 12/17/2019
 f1_keywords:
@@ -6,26 +7,26 @@ f1_keywords:
 helpviewer_keywords:
 - BYTE directive
 ms.assetid: 8dd94476-c069-4585-a478-3cb2e8e6ae54
-ms.openlocfilehash: 84d501316b570b8769a1f4254c8d134f71d3b27d
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: 4c37a97b7f2444cf167514048805948c19b137c5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75315240"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97121005"
 ---
 # <a name="byte"></a>BYTE
 
-각 *이니셜라이저의*저장소 바이트를 할당 하 고 필요에 따라 초기화 합니다.
+각 *이니셜라이저의* 저장소 바이트를 할당 하 고 필요에 따라 초기화 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
-> ⟦*name*⟧ **BYTE** *이니셜라이저* ⟦ __,__ *이니셜라이저가* 있습니다. ⟧
+> ⟦*name*⟧ **BYTE** *이니셜라이저* ⟦__,__ *이니셜라이저가* 있습니다. ⟧
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 형식이 유효한 모든 곳에서 형식을 형식 지정자로 사용할 수도 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [지시문 참조](directives-reference.md)\
 [DB](db.md)\

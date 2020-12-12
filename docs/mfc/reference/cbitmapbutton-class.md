@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CBitmapButton 클래스'
 title: CBitmapButton 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - CBitmapButton [MFC], LoadBitmaps
 - CBitmapButton [MFC], SizeToContent
 ms.assetid: 9ad6cb45-c3c4-4fb1-96d3-1fe3df7bbcfc
-ms.openlocfilehash: 0cf4554f86f4a9275e4d96b3db519fde7fb05b22
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 93d114dce87aba4643af427f3726a5ffab004b77
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231873"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97122709"
 ---
 # <a name="cbitmapbutton-class"></a>CBitmapButton 클래스
 
@@ -35,7 +36,7 @@ class CBitmapButton : public CButton
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[CBitmapButton:: CBitmapButton](#cbitmapbutton)|`CBitmapButton` 개체를 생성합니다.|
 
@@ -49,7 +50,7 @@ class CBitmapButton : public CButton
 
 ## <a name="remarks"></a>설명
 
-`CBitmapButton`개체에는 최대 4 개의 비트맵이 포함 되어 있습니다. 여기에는 단추를 사용할 수 있는 여러 상태에 대 한 이미지가 포함 됩니다. up (또는 normal), down (또는 선택), 집중 및 사용 안 함입니다. 첫 번째 비트맵만 필요 합니다. 나머지는 선택 사항입니다.
+`CBitmapButton` 개체에는 최대 4 개의 비트맵이 포함 되어 있습니다. 여기에는 단추를 사용할 수 있는 여러 상태에 대 한 이미지가 포함 됩니다. up (또는 normal), down (또는 선택), 집중 및 사용 안 함입니다. 첫 번째 비트맵만 필요 합니다. 나머지는 선택 사항입니다.
 
 비트맵 단추 이미지는 이미지 자체 뿐만 아니라 이미지 주위에 테두리를 포함 합니다. 일반적으로 테두리는 단추의 상태를 표시 하는 파트를 재생 합니다. 예를 들어 포커스가 있는 상태에 대 한 비트맵은 일반적으로 up 상태에 대 한 비트맵 이지만 테두리에서 파선 사각형 인세트를 사용 하거나 테두리의 굵은 실선을 사용 합니다. 사용 하지 않도록 설정 된 상태에 대 한 비트맵은 일반적으로 up 상태와 유사 하지만 대비가 낮습니다 (예: 흐리게 표시 되거나 회색 메뉴 선택).
 
@@ -112,7 +113,7 @@ class CBitmapButton : public CButton
 
 **헤더:** afxext.h
 
-## <a name="cbitmapbuttonautoload"></a><a name="autoload"></a>CBitmapButton:: AutoLoad
+## <a name="cbitmapbuttonautoload"></a><a name="autoload"></a> CBitmapButton:: AutoLoad
 
 대화 상자의 단추를 클래스의 개체와 연결 하 `CBitmapButton` 고, 이름을 기준으로 비트맵을 로드 하 고, 단추의 크기를 비트맵에 맞게 조정 합니다.
 
@@ -130,7 +131,7 @@ BOOL AutoLoad(
 *pParent*<br/>
 단추를 소유 하는 개체에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -142,7 +143,7 @@ BOOL AutoLoad(
 
 [!code-cpp[NVC_MFCControlLadenDialog#75](../../mfc/codesnippet/cpp/cbitmapbutton-class_1.cpp)]
 
-## <a name="cbitmapbuttoncbitmapbutton"></a><a name="cbitmapbutton"></a>CBitmapButton:: CBitmapButton
+## <a name="cbitmapbuttoncbitmapbutton"></a><a name="cbitmapbutton"></a> CBitmapButton:: CBitmapButton
 
 `CBitmapButton` 개체를 만듭니다.
 
@@ -158,7 +159,7 @@ C + + 개체를 만든 후 `CBitmapButton` [cbutton:: Create](../../mfc/referenc
 
 [!code-cpp[NVC_MFCControlLadenDialog#57](../../mfc/codesnippet/cpp/cbitmapbutton-class_2.cpp)]
 
-## <a name="cbitmapbuttonloadbitmaps"></a><a name="loadbitmaps"></a>CBitmapButton:: LoadBitmaps
+## <a name="cbitmapbuttonloadbitmaps"></a><a name="loadbitmaps"></a> CBitmapButton:: LoadBitmaps
 
 리소스 이름 또는 ID 번호로 식별 되는 비트맵 이미지를 로드 하려는 경우 또는 예를 들어 `AutoLoad` 대화 상자의 일부가 아닌 비트맵 단추를 만들기 때문에 함수를 사용할 수 없는 경우이 함수를 사용 합니다.
 
@@ -179,7 +180,7 @@ BOOL LoadBitmaps(
 ### <a name="parameters"></a>매개 변수
 
 *lpszBitmapResource*<br/>
-비트맵 단추의 표준 또는 "위로" 상태에 대 한 비트맵의 이름을 포함 하는 null로 끝나는 문자열을 가리킵니다. 필수 사항입니다.
+비트맵 단추의 표준 또는 "위로" 상태에 대 한 비트맵의 이름을 포함 하는 null로 끝나는 문자열을 가리킵니다. 필수 요소.
 
 *lpszBitmapResourceSel*<br/>
 비트맵 단추의 선택 또는 "아래로" 상태에 대 한 비트맵의 이름을 포함 하는 null로 끝나는 문자열을 가리킵니다. NULL일 수 있습니다.
@@ -191,7 +192,7 @@ BOOL LoadBitmaps(
 비트맵 단추의 비활성 상태인 비트맵의 이름을 포함 하는 null로 끝나는 문자열을 가리킵니다. NULL일 수 있습니다.
 
 *nIDBitmapResource*<br/>
-비트맵 단추의 표준 또는 "위로" 상태에 대 한 비트맵 리소스의 리소스 ID 번호를 지정 합니다. 필수 사항입니다.
+비트맵 단추의 표준 또는 "위로" 상태에 대 한 비트맵 리소스의 리소스 ID 번호를 지정 합니다. 필수 요소.
 
 *nIDBitmapResourceSel*<br/>
 비트맵 단추의 선택 또는 "중단" 상태에 대 한 비트맵 리소스의 리소스 ID 번호를 지정 합니다. 0 일 수 있습니다.
@@ -202,7 +203,7 @@ BOOL LoadBitmaps(
 *nIDBitmapResourceDisabled*<br/>
 비트맵 단추의 비활성 상태인 비트맵 리소스의 리소스 ID 번호를 지정 합니다. 0 일 수 있습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -210,7 +211,7 @@ BOOL LoadBitmaps(
 
 [!code-cpp[NVC_MFCControlLadenDialog#58](../../mfc/codesnippet/cpp/cbitmapbutton-class_3.cpp)]
 
-## <a name="cbitmapbuttonsizetocontent"></a><a name="sizetocontent"></a>CBitmapButton:: System.windows.window.sizetocontent
+## <a name="cbitmapbuttonsizetocontent"></a><a name="sizetocontent"></a> CBitmapButton:: System.windows.window.sizetocontent
 
 비트맵 단추의 크기를 비트맵 크기에 맞게 조정 하려면이 함수를 호출 합니다.
 

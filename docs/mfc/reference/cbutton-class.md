@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CButton 클래스'
 title: CButton 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -74,12 +75,12 @@ helpviewer_keywords:
 - CButton [MFC], SetState
 - CButton [MFC], SetTextMargin
 ms.assetid: cdc76d5b-31da-43c5-bc43-fde4cb39de5b
-ms.openlocfilehash: 7e2156c7fba6d5c621ab9e73b4739be45941fcc5
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: af7b9bec8298942bcb414e83be24257dd62652cb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561988"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97122579"
 ---
 # <a name="cbutton-class"></a>CButton 클래스
 
@@ -95,13 +96,13 @@ class CButton : public CWnd
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CButton:: CButton](#cbutton)|`CButton` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CButton:: Create](#create)|Windows 단추 컨트롤을 만들고이를 개체에 연결 `CButton` 합니다.|
 |[CButton::D rawItem](#drawitem)|소유자가 그린 개체를 그리려면를 재정의 `CButton` 합니다.|
@@ -153,7 +154,7 @@ class CButton : public CWnd
 
 각 메시지 맵 항목은 다음 형식을 사용 합니다.
 
-**설정 \_ ** _알림_ **(** _id_, _memberFxn_ **)**
+**설정 \_** _알림_ **(** _id_, _memberFxn_ **)**
 
 여기서 *id* 는 알림을 보내는 컨트롤의 자식 창 id를 지정 하 고 *memberFxn* 는 알림을 처리 하기 위해 작성 한 부모 멤버 함수의 이름입니다.
 
@@ -228,7 +229,7 @@ Button 컨트롤의 스타일을 지정 합니다. 단추 [스타일](../../mfc/
 *nID*<br/>
 단추 컨트롤의 ID를 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -285,7 +286,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 HBITMAP GetBitmap() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 비트맵에 대 한 핸들입니다. 이전에 비트맵을 지정 하지 않은 경우 NULL입니다.
 
@@ -301,7 +302,7 @@ Button 컨트롤 스타일에 대 한 정보를 검색 합니다.
 UINT GetButtonStyle() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 개체의 단추 스타일을 반환 합니다 `CButton` . 이 함수는 다른 창 스타일이 아닌 [BS_](../../mfc/reference/styles-used-by-mfc.md#button-styles) 스타일 값만 반환 합니다.
 
@@ -317,7 +318,7 @@ UINT GetButtonStyle() const;
 int GetCheck() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 BS_AUTOCHECKBOX, BS_AUTORADIOBUTTON, BS_AUTO3STATE, BS_CHECKBOX, BS_RADIOBUTTON 또는 BS_3STATE 스타일을 사용 하 여 만든 단추 컨트롤의 반환 값은 다음 값 중 하나입니다.
 
@@ -341,7 +342,7 @@ BS_AUTOCHECKBOX, BS_AUTORADIOBUTTON, BS_AUTO3STATE, BS_CHECKBOX, BS_RADIOBUTTON 
 HCURSOR GetCursor();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 커서 이미지에 대 한 핸들입니다. 이전에 커서가 지정 되지 않은 경우 NULL입니다.
 
@@ -357,7 +358,7 @@ HCURSOR GetCursor();
 HICON GetIcon() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 아이콘에 대한 핸들입니다. 이전에 아이콘이 지정 되지 않은 경우 NULL입니다.
 
@@ -378,7 +379,7 @@ BOOL GetIdealSize(SIZE* psize);
 *psize*<br/>
 단추의 현재 크기에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -399,7 +400,7 @@ BOOL GetImageList(PBUTTON_IMAGELIST pbuttonImagelist);
 *pbuttonImagelist*<br/>
 개체의 이미지 목록에 대 한 포인터 `CButton` 입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -427,7 +428,7 @@ BOOL GetNote(
 *cchNote*\
 [in, out] 부호 없는 정수 변수에 대 한 포인터입니다. 이 메서드가 호출 되 면 변수는 *lpszNote* 매개 변수로 지정 된 버퍼의 크기를 포함 합니다. 이 메서드가 반환 될 때 반환 값이 TRUE 이면 변수는 현재 명령 링크 컨트롤과 연결 된 메모의 크기를 포함 합니다. 반환 값이 FALSE 이면 변수는 메모를 포함 하는 데 필요한 버퍼 크기를 포함 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 첫 번째 오버 로드에서 현재 명령 링크 컨트롤과 연결 된 메모 텍스트를 포함 하는 [CString](../../atl-mfc-shared/using-cstring.md) 개체입니다.
 
@@ -449,7 +450,7 @@ BOOL GetNote(
 UINT GetNoteLength() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 명령 링크 컨트롤에 대 한 메모 텍스트의 길이 (16 비트 유니코드 문자)입니다.
 
@@ -467,7 +468,7 @@ UINT GetNoteLength() const;
 TCHAR GetSplitGlyph() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 분할 단추 컨트롤과 연결 된 문자 모양 문자입니다.
 
@@ -487,7 +488,7 @@ TCHAR GetSplitGlyph() const;
 CImageList* GetSplitImageList() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 [CImageList](../../mfc/reference/cimagelist-class.md) 개체에 대 한 포인터입니다.
 
@@ -510,7 +511,7 @@ BOOL GetSplitInfo(PBUTTON_SPLITINFO pInfo) const;
 *pInfo*\
 제한이 현재 분할 단추 컨트롤에 대 한 정보를 수신 하는 [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) 구조체에 대 한 포인터입니다. 호출자는 구조체를 할당 해야 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -533,7 +534,7 @@ BOOL GetSplitSize(LPSIZE pSize) const;
 *pSize*\
 제한이 사각형에 대 한 설명을 받는 [크기](/windows/win32/api/windef/ns-windef-size) 구조체에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -553,7 +554,7 @@ BOOL GetSplitSize(LPSIZE pSize) const;
 UINT GetSplitStyle() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 분할 단추 스타일의 비트 조합입니다. 자세한 내용은 `uSplitStyle` [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) 구조체의 멤버를 참조 하십시오.
 
@@ -573,11 +574,11 @@ Button 컨트롤의 상태를 검색 합니다.
 UINT GetState() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 단추 컨트롤의 현재 상태를 나타내는 값의 조합을 포함 하는 비트 필드입니다. 다음 표에서는 가능한 값을 나열 합니다.
 
-|단추 상태|값|Description|
+|단추 상태|값|설명|
 |------------------|-----------|-----------------|
 |BST_UNCHECKED|0x0000|초기 상태입니다.|
 |BST_CHECKED|0x0001|단추 컨트롤이 선택 됩니다.|
@@ -606,7 +607,7 @@ BOOL GetTextMargin(RECT* pmargin);
 *pmargin*<br/>
 개체의 텍스트 여백에 대 한 포인터 `CButton` 입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 텍스트 여백을 반환 합니다.
 
@@ -631,7 +632,7 @@ HBITMAP SetBitmap(HBITMAP hBitmap);
 *hBitmap*<br/>
 비트맵 핸들입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 단추와 이전에 연결 된 비트맵의 핸들입니다.
 
@@ -725,7 +726,7 @@ HCURSOR SetCursor(HCURSOR hCursor);
 *hCursor*<br/>
 커서의 핸들입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 단추와 이전에 연결 된 커서의 핸들입니다.
 
@@ -764,7 +765,7 @@ BOOL SetDropDownState(BOOL fDropDown);
 *fDropDown*\
 진행 BST_DROPDOWNPUSHED 상태를 설정 하려면 TRUE로 설정 합니다. 그렇지 않으면 FALSE입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -776,7 +777,7 @@ BOOL SetDropDownState(BOOL fDropDown);
 
 ### <a name="example"></a>예제
 
-다음 코드 예제에서는 분할 단추 컨트롤에 프로그래밍 방식으로 액세스 하는 데 사용 되는 변수 *m_splitButton*를 정의 합니다. 이 변수는 다음 예제에서 사용 됩니다.
+다음 코드 예제에서는 분할 단추 컨트롤에 프로그래밍 방식으로 액세스 하는 데 사용 되는 변수 *m_splitButton* 를 정의 합니다. 이 변수는 다음 예제에서 사용 됩니다.
 
 [!code-cpp[NVC_MFC_CButton_s1#1](../../mfc/reference/codesnippet/cpp/cbutton-class_10.h)]
 
@@ -799,7 +800,7 @@ BOOL SetElevationRequired(BOOL fElevationRequired);
 *fElevationRequired*\
 진행 상태를 설정 하려면 TRUE `elevation required` 이 고, 그렇지 않으면 FALSE입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -822,7 +823,7 @@ HICON SetIcon(HICON hIcon);
 *hIcon*<br/>
 아이콘 핸들입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 단추와 이전에 연결 된 아이콘 핸들입니다.
 
@@ -861,7 +862,7 @@ BOOL SetImageList(PBUTTON_IMAGELIST pbuttonImagelist);
 *pbuttonImagelist*<br/>
 새 이미지 목록에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 TRUE를 반환 하 고 실패 하면 FALSE를 반환 합니다.
 
@@ -882,7 +883,7 @@ BOOL SetNote(LPCTSTR lpszNote);
 *lpszNote*\
 진행 명령 링크 컨트롤에 대 한 메모 텍스트로 설정 된 유니코드 문자열에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -894,7 +895,7 @@ BOOL SetNote(LPCTSTR lpszNote);
 
 ### <a name="example"></a>예제
 
-다음 코드 예제에서는 명령 링크 컨트롤에 프로그래밍 방식으로 액세스 하는 데 사용 되는 변수 *m_cmdLink*를 정의 합니다. 이 변수는 다음 예제에서 사용 됩니다.
+다음 코드 예제에서는 명령 링크 컨트롤에 프로그래밍 방식으로 액세스 하는 데 사용 되는 변수 *m_cmdLink* 를 정의 합니다. 이 변수는 다음 예제에서 사용 됩니다.
 
 [!code-cpp[NVC_MFC_CButton_s1#1](../../mfc/reference/codesnippet/cpp/cbutton-class_10.h)]
 
@@ -917,7 +918,7 @@ BOOL SetSplitGlyph(TCHAR chGlyph);
 *chGlyph*\
 진행 분할 단추 드롭다운 화살표로 사용할 문자 모양을 지정 하는 문자입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -927,7 +928,7 @@ BOOL SetSplitGlyph(TCHAR chGlyph);
 
 문자 모양은 특정 글꼴의 문자를 물리적으로 표현한 것입니다. *Chglyph* 매개 변수는 문자 모양으로 사용 되지 않지만 시스템 정의 문자 모양 집합에서 문자 모양을 선택 하는 데 대신 사용 됩니다. 기본 드롭다운 화살표 문자 모양은 문자 ' 6 '으로 지정 되 고 유니코드 문자 검정색 아래쪽 삼각형 (U + 25BC)과 유사 합니다.
 
-이 메서드는 `mask` BCSIF_GLYPH 플래그와 Chglyph 매개 변수가 있는 멤버를 사용 하 여 [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) 구조체의 멤버를 초기화 한 `himlGlyph` 다음 Windows SDK에 설명 된 [BCM_GETSPLITINFO](/windows/win32/Controls/bcm-getsplitinfo) 메시지에 해당 구조체를 보냅니다. *chGlyph*
+이 메서드는 `mask` BCSIF_GLYPH 플래그와 Chglyph 매개 변수가 있는 멤버를 사용 하 여 [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) 구조체의 멤버를 초기화 한 `himlGlyph` 다음 Windows SDK에 설명 된 [BCM_GETSPLITINFO](/windows/win32/Controls/bcm-getsplitinfo) 메시지에 해당 구조체를 보냅니다. 
 
 ## <a name="cbuttonsetsplitimagelist"></a><a name="setsplitimagelist"></a> CButton:: SetSplitImageList
 
@@ -942,7 +943,7 @@ BOOL SetSplitImageList(CImageList* pSplitImageList);
 *pSplitImageList*\
 진행 현재 분할 단추 컨트롤에 할당할 [CImageList](../../mfc/reference/cimagelist-class.md) 개체에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -950,7 +951,7 @@ BOOL SetSplitImageList(CImageList* pSplitImageList);
 
 단추 스타일이 BS_SPLITBUTTON 또는 BS_DEFSPLITBUTTON 된 컨트롤에만이 메서드를 사용 합니다.
 
-이 메서드는 `mask` BCSIF_IMAGE 플래그와 pSplitImageList 매개 변수를 사용 하 여 [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) 구조체의 멤버를 초기화 한 `himlGlyph` 다음 Windows SDK에 설명 된 [BCM_GETSPLITINFO](/windows/win32/Controls/bcm-getsplitinfo) 메시지에 해당 구조체를 보냅니다. *pSplitImageList*
+이 메서드는 `mask` BCSIF_IMAGE 플래그와 pSplitImageList 매개 변수를 사용 하 여 [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) 구조체의 멤버를 초기화 한 `himlGlyph` 다음 Windows SDK에 설명 된 [BCM_GETSPLITINFO](/windows/win32/Controls/bcm-getsplitinfo) 메시지에 해당 구조체를 보냅니다. 
 
 ## <a name="cbuttonsetsplitinfo"></a><a name="setsplitinfo"></a> CButton:: SetSplitInfo
 
@@ -965,7 +966,7 @@ BOOL SetSplitInfo(PBUTTON_SPLITINFO pInfo);
 *pInfo*\
 진행 현재 분할 단추 컨트롤을 정의 하는 [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) 구조체에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -1000,7 +1001,7 @@ BOOL SetSplitSize(LPSIZE pSize);
 *pSize*\
 진행 경계 사각형을 설명 하는 [크기](/windows/win32/api/windef/ns-windef-size) 구조체에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -1010,7 +1011,7 @@ BOOL SetSplitSize(LPSIZE pSize);
 
 분할 단추 컨트롤이 확장 되 면 목록 컨트롤이 나 페이저 컨트롤과 같은 드롭다운 구성 요소를 표시할 수 있습니다. 이 메서드는 드롭다운 구성 요소를 포함 하는 경계 사각형의 크기를 지정 합니다.
 
-이 메서드는 `mask` BCSIF_SIZE 플래그와 Psize 매개 변수를 사용 하는 멤버를 사용 하 여 [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) 구조체의 멤버를 초기화 한 `size` 다음 Windows SDK에 설명 된 [BCM_GETSPLITINFO](/windows/win32/Controls/bcm-getsplitinfo) 메시지에 해당 구조체를 보냅니다. *pSize*
+이 메서드는 `mask` BCSIF_SIZE 플래그와 Psize 매개 변수를 사용 하는 멤버를 사용 하 여 [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) 구조체의 멤버를 초기화 한 `size` 다음 Windows SDK에 설명 된 [BCM_GETSPLITINFO](/windows/win32/Controls/bcm-getsplitinfo) 메시지에 해당 구조체를 보냅니다. 
 
 ### <a name="example"></a>예제
 
@@ -1037,7 +1038,7 @@ BOOL SetSplitStyle(UINT uSplitStyle);
 *uSplitStyle*\
 진행 분할 단추 스타일의 비트 조합입니다. 자세한 내용은 `uSplitStyle` [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) 구조체의 멤버를 참조 하십시오.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -1047,7 +1048,7 @@ BOOL SetSplitStyle(UINT uSplitStyle);
 
 분할 단추 스타일은 창에 분할 단추 아이콘이 그려지는 맞춤, 가로 세로 비율 및 그래픽 형식을 지정 합니다. 자세한 내용은 `uSplitStyle` [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) 구조체의 멤버를 참조 하십시오.
 
-이 메서드는 `mask` BCSIF_STYLE 플래그 및 Usplitstyle 매개 변수를 사용 하는 멤버를 사용 하 여 [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) 구조체의 멤버를 초기화 한 `uSplitStyle` 다음 Windows SDK에 설명 된 [BCM_GETSPLITINFO](/windows/win32/Controls/bcm-getsplitinfo) 메시지에 해당 구조체를 보냅니다. *uSplitStyle*
+이 메서드는 `mask` BCSIF_STYLE 플래그 및 Usplitstyle 매개 변수를 사용 하는 멤버를 사용 하 여 [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) 구조체의 멤버를 초기화 한 `uSplitStyle` 다음 Windows SDK에 설명 된 [BCM_GETSPLITINFO](/windows/win32/Controls/bcm-getsplitinfo) 메시지에 해당 구조체를 보냅니다. 
 
 ### <a name="example"></a>예제
 
@@ -1097,7 +1098,7 @@ BOOL SetTextMargin(RECT* pmargin);
 *pmargin*<br/>
 새 텍스트 여백에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 TRUE를 반환 하 고 실패 하면 FALSE를 반환 합니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: unique (c + +)'
 title: unique (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - unique attribute
 ms.assetid: abd7ed14-5ae7-44a8-8333-0058e9c92b2f
-ms.openlocfilehash: 8b0bd5be19baddaed367bb619135be5cea8e7677
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 46db247e5e2106821fb3ab36746c1586409388ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836158"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97118318"
 ---
 # <a name="unique-c"></a>unique(C++)
 
@@ -29,7 +30,7 @@ ms.locfileid: "88836158"
 
 ## <a name="example"></a>예제
 
-**고유한**의 샘플 [사용에 대 한 참조 예제를](ref-cpp.md) 참조 하십시오.
+**고유한** 의 샘플 [사용에 대 한 참조 예제를](ref-cpp.md) 참조 하십시오.
 
 ## <a name="requirements"></a>요구 사항
 

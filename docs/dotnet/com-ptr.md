@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: com::p tr'
 title: com::ptr
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - com::ptr
 ms.assetid: ee302e3c-8fed-4875-a372-2e55003718d3
-ms.openlocfilehash: 993511142b72bd769fe8582b2650e5d020bd6ce2
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: bbfc38f10afc7d80a87e1bed0bc94716c83b75f0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79545860"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97124373"
 ---
 # <a name="comptr"></a>com::ptr
 
@@ -24,10 +25,10 @@ CLR 클래스의 멤버로 사용할 수 있는 COM 개체에 대한 래퍼입�
 #include <msclr\com\ptr.h>
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
-[com::p Tr 클래스](../dotnet/com-ptr-class.md) 는 \<msclr\com\ptr.h > 파일에 정의 되어 있습니다.
+[com::p Tr 클래스가](../dotnet/com-ptr-class.md) 파일에 정의 되어 \<msclr\com\ptr.h> 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[C++ 지원 라이브러리](../dotnet/cpp-support-library.md)
+[C + + 지원 라이브러리](../dotnet/cpp-support-library.md)

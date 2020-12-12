@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3446'
 title: 컴파일러 오류 C3446
 ms.date: 07/21/2017
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3446
 ms.assetid: 33064548-24e4-46f1-beb1-476e3c3b3fbf
-ms.openlocfilehash: 2e1e474b27fec6c1625136e526add0935e309746
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 442ac07c1684278e76f86531d1c28de6507eb999
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80075027"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97113675"
 ---
 # <a name="compiler-error-c3446"></a>컴파일러 오류 C3446
 

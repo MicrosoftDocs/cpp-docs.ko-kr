@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2388'
 title: 컴파일러 오류 C2388
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2388
 ms.assetid: 764ad2d7-cb04-425f-ba30-70989488c4a4
-ms.openlocfilehash: 50148f4fb5c3af33d8de8b005f75f491b0540271
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 63a2758b4e214b38c7d999bdc2a33d328709ea67
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225503"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97123983"
 ---
 # <a name="compiler-error-c2388"></a>컴파일러 오류 C2388
 

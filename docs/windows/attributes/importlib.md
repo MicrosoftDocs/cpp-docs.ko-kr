@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: importlib'
 title: importlib (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - importlib attribute
 ms.assetid: f129e459-b8d3-4aca-a0bc-ee53e18b62ed
-ms.openlocfilehash: 004533282ca089a076df6b110d52701abc16f71d
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f3000be3415ed944d621ebcd36442e33951efc84
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842223"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114951"
 ---
 # <a name="importlib"></a>importlib
 
@@ -34,7 +35,7 @@ ms.locfileid: "88842223"
 
 ## <a name="example"></a>예제
 
-다음 코드에서는 **importlib**를 사용 하는 방법의 예를 보여 줍니다.
+다음 코드에서는 **importlib** 를 사용 하는 방법의 예를 보여 줍니다.
 
 ```cpp
 // cpp_attr_ref_importlib.cpp

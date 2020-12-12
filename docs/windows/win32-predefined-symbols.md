@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: Win32 미리 정의 된 기호'
 title: 미리 정의된 Win32 기호
 ms.date: 02/14/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - symbols [C++], Win32 predefined
 - Windows API [C++], predefined symbols
 ms.assetid: 45c8e193-ee2a-4024-bfc2-34d1ec9c9239
-ms.openlocfilehash: f69dddcb8b6a9a390f80ab4d0112e19c4e8d32e1
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: ed6d41bc82a30a40d157c2e23b999e430d505fa9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835651"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97148774"
 ---
 # <a name="win32-predefined-symbols"></a>미리 정의된 Win32 기호
 

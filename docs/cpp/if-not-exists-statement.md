@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __if_not_exists 문'
 title: __if_not_exists 문
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - __if_not_exists keyword [C++]
 ms.assetid: a2f322d4-e96f-4a32-954e-4323d20c6e32
-ms.openlocfilehash: e99fcee440bd69eabafec693df99d347f3aee828
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 29f98c2d07858077207c10dfcdd45b9ce51268e7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88560285"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97113950"
 ---
 # <a name="__if_not_exists-statement"></a>__if_not_exists 문
 
@@ -55,5 +56,5 @@ statements
 ## <a name="see-also"></a>참고 항목
 
 [선택문](../cpp/selection-statements-cpp.md)<br/>
-[C++ 키워드](../cpp/keywords-cpp.md)<br/>
+[키워드](../cpp/keywords-cpp.md)<br/>
 [__if_exists 문](../cpp/if-exists-statement.md)

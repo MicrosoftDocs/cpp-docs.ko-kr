@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CBaseTabbedPane 클래스'
 title: CBaseTabbedPane 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -62,12 +63,12 @@ helpviewer_keywords:
 - CBaseTabbedPane [MFC], SetAutoHideMode
 - CBaseTabbedPane [MFC], ShowTab
 ms.assetid: f22c0080-5b29-4a0a-8f74-8f0a4cd2dbcf
-ms.openlocfilehash: 21f2821392d2b9e71837997f5a9a10ab80ba073f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 980f2691aa9e129b0e47070d7ff095d486c45b65
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838674"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97122748"
 ---
 # <a name="cbasetabbedpane-class"></a>CBaseTabbedPane 클래스
 
@@ -260,7 +261,7 @@ virtual void ConvertToTabbedDocument(BOOL bActiveTabOnly = TRUE);
 ### <a name="parameters"></a>매개 변수
 
 *bActiveTabOnly*<br/>
-진행 탭 창으로 변환 하는 경우 TRUE를 지정 하 여 활성 탭만 변환 합니다. 창에 있는 모든 탭을 변환 하려면 FALSE를 지정 합니다.
+진행 탭 창을 변환할 때 활성 탭만 변환 하려면 TRUE를 지정 합니다. 창에 있는 모든 탭을 변환 하려면 FALSE를 지정 합니다.
 
 ## <a name="cbasetabbedpanedetachpane"></a><a name="detachpane"></a> CBaseTabbedPane::D etachPane
 
@@ -444,7 +445,7 @@ virtual void GetMinSize(CSize& size) const;
 
 ### <a name="remarks"></a>설명
 
-최소 창 크기를 일관 되 게 처리 하는 경우 ( [Cpane:: m_bHandleMinSize](../../mfc/reference/cpane-class.md#m_bhandleminsize)) *크기가* 활성 탭에 대해 허용 되는 최소 크기로 채워집니다. 그렇지 않으면 *크기가* [cpane:: GetMinSize](../../mfc/reference/cpane-class.md#getminsize)의 반환 값으로 채워집니다.
+최소 창 크기를 일관 되 게 처리 하는 경우 ( [Cpane:: m_bHandleMinSize](../../mfc/reference/cpane-class.md#m_bhandleminsize)) *크기가* 활성 탭에 대해 허용 되는 최소 크기로 채워집니다. 그렇지 않으면 *크기* 는 [Cpane:: GetMinSize](../../mfc/reference/cpane-class.md#getminsize)의 반환 값으로 채워집니다.
 
 ## <a name="cbasetabbedpanegetpaneicon"></a><a name="getpaneicon"></a> CBaseTabbedPane:: GetPaneIcon
 
@@ -461,7 +462,7 @@ virtual void GetMinSize(CSize& size) const;
 
 ### <a name="remarks"></a>설명
 
-최소 창 크기를 일관 되 게 처리 하는 경우 ( [Cpane:: m_bHandleMinSize](../../mfc/reference/cpane-class.md#m_bhandleminsize)) *크기가* 활성 탭에 대해 허용 되는 최소 크기로 채워집니다. 그렇지 않으면 *크기가* [cpane:: GetMinSize](../../mfc/reference/cpane-class.md#getminsize)의 반환 값으로 채워집니다.
+최소 창 크기를 일관 되 게 처리 하는 경우 ( [Cpane:: m_bHandleMinSize](../../mfc/reference/cpane-class.md#m_bhandleminsize)) *크기가* 활성 탭에 대해 허용 되는 최소 크기로 채워집니다. 그렇지 않으면 *크기* 는 [Cpane:: GetMinSize](../../mfc/reference/cpane-class.md#getminsize)의 반환 값으로 채워집니다.
 
 ## <a name="cbasetabbedpanegetpanelist"></a><a name="getpanelist"></a> CBaseTabbedPane:: GetPaneList
 

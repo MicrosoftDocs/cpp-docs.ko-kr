@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 이미지 목록에서 이미지 끌기'
 title: 이미지 목록에서 이미지 끌기
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - image lists [MFC], dragging images from
 - images [MFC], dragging from image lists
 ms.assetid: af691db8-e4f0-4046-b7b9-9acc68d3713d
-ms.openlocfilehash: 5d15b0b66d2270174dbfbcfd21bb77f5f41558c7
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 4d81be73484d32d9b26e5aa4ae48b7e550306493
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626479"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97118851"
 ---
 # <a name="dragging-images-from-an-image-list"></a>이미지 목록에서 이미지 끌기
 
@@ -22,7 +23,7 @@ ms.locfileid: "84626479"
 
 [System.windows.dragdrop.dragenter>](reference/cimagelist-class.md#dragenter) 멤버 함수는 창 내에서 끌기 이미지의 초기 위치를 설정 하 고 위치에 이미지를 그립니다. 매개 변수에는 이미지를 그릴 창에 대 한 포인터와 창 내에서 초기 위치의 좌표를 지정 하는 점이 포함 됩니다. 좌표는 클라이언트 영역이 아니라 창의 왼쪽 위 모퉁이를 기준으로 합니다. 좌표를 매개 변수로 사용 하는 모든 이미지 끌기 함수의 경우에도 마찬가지입니다. 즉, 좌표를 지정할 때 테두리, 제목 표시줄 및 메뉴 모음 등의 창 요소 너비를 보정 해야 합니다. 를 호출할 때 **NULL** 창 핸들을 지정 하는 경우 `DragEnter` 끌기 함수는 바탕 화면 창과 연결 된 장치 컨텍스트에서 이미지를 그리고 좌표는 화면의 왼쪽 위 모퉁이를 기준으로 합니다.
 
-`DragEnter`끌기 작업을 수행 하는 동안 지정 된 창에 대 한 다른 모든 업데이트를 잠급니다. 끌기 작업을 수행 하는 동안 그리기를 수행 해야 하는 경우 (예: 끌어서 놓기 작업의 대상 강조 표시) [system.windows.dragdrop.dragleave>](reference/cimagelist-class.md#dragleave) 멤버 함수를 사용 하 여 끌어 온 이미지를 일시적으로 숨길 수 있습니다. [Dragshownolock](reference/cimagelist-class.md#dragshownolock) 멤버 함수를 사용할 수도 있습니다.
+`DragEnter` 끌기 작업을 수행 하는 동안 지정 된 창에 대 한 다른 모든 업데이트를 잠급니다. 끌기 작업을 수행 하는 동안 그리기를 수행 해야 하는 경우 (예: 끌어서 놓기 작업의 대상 강조 표시) [system.windows.dragdrop.dragleave>](reference/cimagelist-class.md#dragleave) 멤버 함수를 사용 하 여 끌어 온 이미지를 일시적으로 숨길 수 있습니다. [Dragshownolock](reference/cimagelist-class.md#dragshownolock) 멤버 함수를 사용할 수도 있습니다.
 
 이미지 끌기를 완료 하면 [Enddrag](reference/cimagelist-class.md#enddrag) 를 호출 합니다.
 

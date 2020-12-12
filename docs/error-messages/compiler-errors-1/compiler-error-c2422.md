@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2422'
 title: 컴파일러 오류 C2422
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2422
 ms.assetid: ef0ec302-4028-4778-b134-0b8cea4bcad9
-ms.openlocfilehash: 39f779ee846cf4f328f9c7af59ae394d97d7a3ca
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 4fb35b7613e523c750d6c3f15a8071117edba46a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74744734"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97120245"
 ---
 # <a name="compiler-error-c2422"></a>컴파일러 오류 C2422
 
 ' 피연산자 '에 잘못 된 세그먼트 재정의가 있습니다.
 
-인라인 어셈블리 코드에서 피연산자에 대 한 세그먼트 재정의 연산자 (콜론)를 잘못 사용 했습니다.  이 오류가 발생하는 원인은 다음과 같습니다.
+인라인 어셈블리 코드에서 피연산자에 대 한 세그먼트 재정의 연산자 (콜론)를 잘못 사용 했습니다.  가능한 원인은 다음과 같습니다.
 
 - 연산자 앞의 레지스터가 세그먼트 레지스터가 아닙니다.
 

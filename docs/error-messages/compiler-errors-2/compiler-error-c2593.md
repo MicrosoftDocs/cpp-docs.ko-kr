@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2593'
 title: 컴파일러 오류 C2593
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2593
 ms.assetid: 4a0fe9bb-2163-447d-91f6-1890ed8250f6
-ms.openlocfilehash: 2a385e35376ddce528678980705595bfb98aca95
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 849cd79b1d469d957cf1bde499ce66bd54a64074
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74759349"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97120167"
 ---
 # <a name="compiler-error-c2593"></a>컴파일러 오류 C2593
 
@@ -39,9 +40,9 @@ int main() {
 }
 ```
 
-이 오류는 `CArchive` 개체를 사용 하 여 부동 소수점 변수를 serialize 하는 경우에 발생할 수 있습니다. 컴파일러는 `<<` 연산자를 모호한 것으로 식별 합니다. `CArchive` serialize 할 C++ 수 있는 기본 형식은 `BYTE`, `WORD`, `DWORD`및 `LONG`고정 크기 형식입니다. 모든 정수 형식은 serialization을 위해 이러한 형식 중 하나로 캐스팅 되어야 합니다. 부동 소수점 형식은 `CArchive::Write()` 멤버 함수를 사용 하 여 보관 해야 합니다.
+이 오류는 개체를 사용 하 여 부동 소수점 변수를 serialize 하는 경우에 발생할 수 있습니다 `CArchive` . 컴파일러는 연산자를 `<<` 모호한 것으로 식별 합니다. Serialize 할 수 있는 유일한 기본 c + + 형식은 `CArchive` 고정 크기 형식인, `BYTE` , `WORD` `DWORD` 및 `LONG` 입니다. 모든 정수 형식은 serialization을 위해 이러한 형식 중 하나로 캐스팅 되어야 합니다. 부동 소수점 형식은 멤버 함수를 사용 하 여 보관 해야 합니다 `CArchive::Write()` .
 
-다음 예제에서는 부동 소수점 변수 (`f`)를 보관 `ar`에 보관 하는 방법을 보여 줍니다.
+다음 예제에서는 부동 소수점 변수 ()를 보관 하는 방법을 보여 줍니다 `f` `ar` .
 
 ```
 ar.Write(&f, sizeof( float ));

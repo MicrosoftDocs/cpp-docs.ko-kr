@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: _atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l'
 title: _atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l
 ms.date: 4/2/2020
 api_name:
@@ -59,12 +60,12 @@ helpviewer_keywords:
 - _atoflt function
 - _atodbl_l function
 ms.assetid: 2d2530f4-4bd4-42e3-8083-f2d2fbc8432a
-ms.openlocfilehash: 1106a3882fd9c6a6c2e9d434a6f49221ff6d99d0
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 28db01c76da7789b5887d5209d133a63dede8d4b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920040"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97117525"
 ---
 # <a name="_atodbl-_atodbl_l-_atoldbl-_atoldbl_l-_atoflt-_atoflt_l"></a>_atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l
 
@@ -86,15 +87,15 @@ int _atoflt_l( _CRT_FLOAT * value, const char * str, locale_t locale );
 *value*<br/>
 문자열을 부동 소수점 값으로 변환하여 생성되는 double, long double 또는 float 값입니다. 이러한 값은 구조체에서 래핑됩니다.
 
-*문자열*<br/>
+*str*<br/>
 부동 소수점 값으로 변환하기 위해 구문 분석할 문자열입니다.
 
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-정상적으로 실행되는 경우 0을 반환합니다. 가능한 오류 코드는 **_UNDERFLOW** 또는 **_OVERFLOW**헤더 파일 \<>에 정의 되어 있습니다.
+정상적으로 실행되는 경우 0을 반환합니다. 가능한 오류 코드는 헤더 파일에 정의 된 **_UNDERFLOW** 또는 **_OVERFLOW** 입니다 \<math.h> .
 
 ## <a name="remarks"></a>설명
 
@@ -168,9 +169,9 @@ Float value: inf
 Return value: 3
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [데이터 변환](../../c-runtime-library/data-conversion.md)<br/>
 [부동 소수점 지원](../../c-runtime-library/floating-point-support.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
+[로캘](../../c-runtime-library/locale.md)<br/>
 [atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: __asm 블록에서 연산자 사용'
 title: __asm 블록에서 연산자 사용
 ms.date: 08/30/2018
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - operators [C++], using in __asm blocks
 - square brackets [ ]
 ms.assetid: a26ccfd4-40ae-4a61-952f-c417982aa8dd
-ms.openlocfilehash: cdcfee20cfdc5a6dc315d00ef024d1616900a2e8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 266d840e6cb407d45c1d3a49bed6a2390e52aa2e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87191107"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97121851"
 ---
 # <a name="using-operators-in-__asm-blocks"></a>__asm 블록에서 연산자 사용
 

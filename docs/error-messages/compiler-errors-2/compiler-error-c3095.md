@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3095'
 title: 컴파일러 오류 C3095
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3095
 ms.assetid: cde725be-0936-40f6-9e57-e1d7d0710f83
-ms.openlocfilehash: 1630def4fb2b22c948b3a33b081227d91351bf35
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 9dab36b01b60ee1c78731c4bb12f22a249e094b6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756827"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97116329"
 ---
 # <a name="compiler-error-c3095"></a>컴파일러 오류 C3095
 

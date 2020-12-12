@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 상속 (c + +)'
 title: 상속(C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - derived classes [C++], about derived classes
 - classes [C++], derived
 ms.assetid: 3534ca19-d9ed-4a40-be1b-b921ad0e6956
-ms.openlocfilehash: ab8425a916eb96f6419c67a76fa401716ad84631
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d3007b8e12d6ba695a8a3e6604270a65f1118bb2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232263"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97113898"
 ---
 # <a name="inheritance--c"></a>상속(C++)
 

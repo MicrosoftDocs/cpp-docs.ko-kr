@@ -1,4 +1,5 @@
 ---
+description: Is_trivially_copyable 클래스에 대해 자세히 알아보세요.
 title: is_trivially_copyable 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - is_trivially_copyable
 ms.assetid: 89a53bf8-036c-4108-91e1-fe34adbde8b3
-ms.openlocfilehash: d3062ae311b63be76ba07185f4f8173afa4229cc
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 0c3590f1549f064492b361ae2ddeff665e9365ae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68459757"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97118474"
 ---
-# <a name="istriviallycopyable-class"></a>is_trivially_copyable 클래스
+# <a name="is_trivially_copyable-class"></a>is_trivially_copyable 클래스
 
 형식이 일반적으로 복사 가능한 형식인지를 테스트합니다.
 
@@ -35,10 +36,10 @@ struct is_trivially_copyable;
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<type_traits>
+**헤더:**\<type_traits>
 
 **네임스페이스:** std
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [<type_traits>](../standard-library/type-traits.md)

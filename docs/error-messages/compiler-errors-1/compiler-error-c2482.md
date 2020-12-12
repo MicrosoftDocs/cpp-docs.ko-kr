@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2482'
 title: 컴파일러 오류 C2482
 ms.date: 09/15/2017
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2482
 ms.assetid: 98c87da2-625c-4cc2-9bf7-78d15921e779
-ms.openlocfilehash: a68c3f06daf977bda4700a293803859d4aa96771
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1ffde4d7ea9f4eccdd643b3ac6efe0545775816a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216208"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97123931"
 ---
 # <a name="compiler-error-c2482"></a>컴파일러 오류 C2482
 

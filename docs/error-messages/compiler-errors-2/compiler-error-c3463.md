@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3463'
 title: 컴파일러 오류 C3463
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3463
 ms.assetid: 153efcc0-085c-4615-84ea-d22942618bdf
-ms.openlocfilehash: 29b30f5d518b6b6df768693666ea1af1c515c540
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 4d208780deb8e2cba738aec7a5ddf1b5df93f300
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500470"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97113483"
 ---
 # <a name="compiler-error-c3463"></a>컴파일러 오류 C3463
 

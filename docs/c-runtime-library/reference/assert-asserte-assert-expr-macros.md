@@ -1,4 +1,5 @@
 ---
+description: _ASSERT, _ASSERTE, _ASSERT_EXPR 매크로에 대해 자세히 알아보세요.
 title: _ASSERT, _ASSERTE, _ASSERT_EXPR 매크로
 ms.date: 11/04/2016
 api_location:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - _ASSERT macro
 - _ASSERT_EXPR macro
 ms.assetid: e98fd2a6-7f5e-4aa8-8fe8-e93490deba36
-ms.openlocfilehash: d07fbe5de7afdc62f952727660447c5e4f0b78aa
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 28c90d2c92feb298b2416633e783c5d0a87e4bd8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232640"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97117577"
 ---
 # <a name="_assert-_asserte-_assert_expr-macros"></a>_ASSERT, _ASSERTE, _ASSERT_EXPR 매크로
 
@@ -60,11 +61,11 @@ _ASSERTE( booleanExpression );
 
 **_ASSERT_EXPR**, **_ASSERT** 및 **_ASSERTE** 매크로를 사용 하 여 디버깅 프로세스 중 가정을 확인 하는 데 필요한 깔끔하고 간단한 메커니즘을 응용 프로그램에 제공 합니다. 이들 매크로는 애플리케이션의 정품 빌드 시 호출되지 않도록 `#ifdef` 문에 포함할 필요가 없으므로 매우 유연합니다. 이 유연성을 얻으려면 [_DEBUG](../../c-runtime-library/debug.md) 매크로를 사용합니다. **_ASSERT_EXPR**, **_ASSERT** 및 **_ASSERTE** 는 컴파일 시간에 **_DEBUG** 정의 된 경우에만 사용할 수 있습니다. **_DEBUG** 정의 되지 않은 경우 전처리 중에 이러한 매크로에 대 한 호출이 제거 됩니다.
 
-*BooleanExpression* 인수를 **_ASSERT** 및 **_ASSERTE** 평가 하 고 결과가 **_ASSERT_EXPR** **`false`** (0) 이면 진단 메시지를 인쇄 하 고 [_CrtDbgReportW](crtdbgreport-crtdbgreportw.md) 를 호출 하 여 디버그 보고서를 생성 합니다. _ASSERT_EXPR **_ASSERT** 매크로는 간단한 진단 메시지를 출력 하 고, 메시지에 실패 한 식의 문자열 표현을 포함 하 고, **_ASSERT_EXPR** 는 메시지 *문자열을* 진단 메시지에 포함 **_ASSERTE** 합니다. *BooleanExpression* 가 0이 아닌 값으로 계산 되 면 이러한 매크로는 아무 작업도 수행 하지 않습니다.
+*BooleanExpression* 인수를 **_ASSERT** 및 **_ASSERTE** 평가 하 고 결과가  **`false`** (0) 이면 진단 메시지를 인쇄 하 고 [_CrtDbgReportW](crtdbgreport-crtdbgreportw.md) 를 호출 하 여 디버그 보고서를 생성 합니다. _ASSERT_EXPR **_ASSERT** 매크로는 간단한 진단 메시지를 출력 하 고, 메시지에 실패 한 식의 문자열 표현을 포함 하 고, **_ASSERT_EXPR** 는 메시지 *문자열을* 진단 메시지에 포함 **_ASSERTE** 합니다. *BooleanExpression* 가 0이 아닌 값으로 계산 되 면 이러한 매크로는 아무 작업도 수행 하지 않습니다.
 
-**_ASSERT_EXPR**, **_ASSERT** 및 **_ASSERTE** 를 **_CrtDbgReportW**호출 하면 모든 출력이 와이드 문자로 됩니다. **_ASSERTE** *booleanExpression* 에서 유니코드 문자를 올바르게 인쇄 하 고 *메시지*에 유니코드 문자를 인쇄 **_ASSERT_EXPR** 합니다.
+**_ASSERT_EXPR**, **_ASSERT** 및 **_ASSERTE** 를 **_CrtDbgReportW** 호출 하면 모든 출력이 와이드 문자로 됩니다. **_ASSERTE** *booleanExpression* 에서 유니코드 문자를 올바르게 인쇄 하 고 *메시지* 에 유니코드 문자를 인쇄 **_ASSERT_EXPR** 합니다.
 
-**_ASSERTE** 매크로는 실패 한 식을 지정 하 고 **_ASSERT_EXPR** 를 사용 하 여 생성 된 보고서에 메시지를 지정할 수 있으므로 사용자는 응용 프로그램 소스 코드를 참조 하지 않고 문제를 식별할 수 있습니다. 그러나 **_ASSERT_EXPR** 에서 인쇄 되는 모든 *메시지* 와 **_ASSERTE** 에 의해 평가 되는 모든 식은 응용 프로그램의 출력 (디버그 버전) 파일에 문자열 상수로 포함 된다는 단점이 있습니다. 따라서 **_ASSERT_EXPR** 또는 **_ASSERTE**에 대해 많은 수의 호출을 수행 하는 경우 이러한 식은 출력 파일의 크기를 크게 늘릴 수 있습니다.
+**_ASSERTE** 매크로는 실패 한 식을 지정 하 고 **_ASSERT_EXPR** 를 사용 하 여 생성 된 보고서에 메시지를 지정할 수 있으므로 사용자는 응용 프로그램 소스 코드를 참조 하지 않고 문제를 식별할 수 있습니다. 그러나 **_ASSERT_EXPR** 에서 인쇄 되는 모든 *메시지* 와 **_ASSERTE** 에 의해 평가 되는 모든 식은 응용 프로그램의 출력 (디버그 버전) 파일에 문자열 상수로 포함 된다는 단점이 있습니다. 따라서 **_ASSERT_EXPR** 또는 **_ASSERTE** 에 대해 많은 수의 호출을 수행 하는 경우 이러한 식은 출력 파일의 크기를 크게 늘릴 수 있습니다.
 
 [_CrtSetReportMode](crtsetreportmode.md) 및 [_CrtSetReportFile](crtsetreportfile.md) 함수를 사용해서 지정하지 않으면 메시지가 설정에 해당하는 팝업 대화 상자에 표시됩니다.
 

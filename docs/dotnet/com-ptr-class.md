@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: com::p tr 클래스'
 title: com::ptr 클래스
 ms.date: 01/16/2019
 ms.topic: reference
@@ -16,12 +17,12 @@ f1_keywords:
 helpviewer_keywords:
 - msclr::ptr class
 ms.assetid: 0144d0e4-919c-45f9-a3f8-fbc9edba32bf
-ms.openlocfilehash: 9cb0ad23450d06bb314b0e2d6fa1d01784d633e2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 73016d425d06ecbda12702afc1793a4bab81ccc7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214908"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97124399"
 ---
 # <a name="comptr-class"></a>com::ptr 클래스
 
@@ -198,7 +199,7 @@ int main() {
 
 **네임 스페이스** msclr:: com
 
-## <a name="ptrptr"></a><a name="ptr"></a>ptr::p tr
+## <a name="ptrptr"></a><a name="ptr"></a> ptr::p tr
 
 소유 하는 COM 개체에 대 한 포인터를 반환 합니다.
 
@@ -285,7 +286,7 @@ int main() {
 }
 ```
 
-## <a name="ptrptr"></a><a name="tilde-ptr"></a>ptr:: ~ ptr
+## <a name="ptrptr"></a><a name="tilde-ptr"></a> ptr:: ~ ptr
 
 Destructs a `com::ptr` .
 
@@ -360,7 +361,7 @@ int main() {
 }
 ```
 
-## <a name="ptrattach"></a><a name="attach"></a>ptr:: Attach
+## <a name="ptrattach"></a><a name="attach"></a> ptr:: Attach
 
 COM 개체를에 연결 `com::ptr` 합니다.
 
@@ -461,7 +462,7 @@ int main() {
 }
 ```
 
-## <a name="ptrcreateinstance"></a><a name="createInstance"></a>ptr:: CreateInstance
+## <a name="ptrcreateinstance"></a><a name="createInstance"></a> ptr:: CreateInstance
 
 내에서 COM 개체의 인스턴스를 만듭니다 `com::ptr` .
 
@@ -516,7 +517,7 @@ void CreateInstance(
 새로 만든 개체를 관리 하는 코드가 실행 되는 컨텍스트입니다. 값은 열거형에서 가져옵니다 `CLSCTX` . `cls_context`을 지정 하지 않으면 CLSCTX_ALL 값이 사용 됩니다.
 
 *rclsid*<br/>
-`CLSID`개체를 만드는 데 사용 되는 데이터 및 코드와 연결 됩니다.
+`CLSID` 개체를 만드는 데 사용 되는 데이터 및 코드와 연결 됩니다.
 
 ### <a name="exceptions"></a>예외
 
@@ -526,7 +527,7 @@ void CreateInstance(
 
 ### <a name="remarks"></a>설명
 
-`CreateInstance`를 사용 하 여 `CoCreateInstance` ProgID 또는 CLSID에서 식별 된 지정 된 개체의 새 인스턴스를 만듭니다. 는 `com::ptr` 새로 만든 개체를 참조 하 고 소멸 될 때 소유 된 모든 참조를 자동으로 해제 합니다.
+`CreateInstance` 를 사용 하 여 `CoCreateInstance` ProgID 또는 CLSID에서 식별 된 지정 된 개체의 새 인스턴스를 만듭니다. 는 `com::ptr` 새로 만든 개체를 참조 하 고 소멸 될 때 소유 된 모든 참조를 자동으로 해제 합니다.
 
 ### <a name="example"></a>예제
 
@@ -579,7 +580,7 @@ int main() {
 }
 ```
 
-## <a name="ptrdetach"></a><a name="detach"></a>ptr::D etach
+## <a name="ptrdetach"></a><a name="detach"></a> ptr::D etach
 
 COM 개체의 소유권을 부여 하 여 개체에 대 한 포인터를 반환 합니다.
 
@@ -599,7 +600,7 @@ COM 개체에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
-`Detach`는 먼저 호출자를 대신 하 여 COM 개체에 대 한 참조를 추가한 다음에서 소유 하는 모든 참조를 해제 `com::ptr` 합니다.  호출자는 궁극적으로 반환 된 개체를 해제 하 여 제거 해야 합니다.
+`Detach` 는 먼저 호출자를 대신 하 여 COM 개체에 대 한 참조를 추가한 다음에서 소유 하는 모든 참조를 해제 `com::ptr` 합니다.  호출자는 궁극적으로 반환 된 개체를 해제 하 여 제거 해야 합니다.
 
 ### <a name="example"></a>예제
 
@@ -684,7 +685,7 @@ int main() {
 }
 ```
 
-## <a name="ptrgetinterface"></a><a name="getInterface"></a>ptr:: GetInterface
+## <a name="ptrgetinterface"></a><a name="getInterface"></a> ptr:: GetInterface
 
 소유 하는 COM 개체에 대 한 포인터를 반환 합니다.
 
@@ -826,7 +827,7 @@ int main() {
 <word>persnickety</word>
 ```
 
-## <a name="ptrqueryinterface"></a><a name="queryInterface"></a>ptr:: QueryInterface
+## <a name="ptrqueryinterface"></a><a name="queryInterface"></a> ptr:: QueryInterface
 
 소유 된 COM 개체를 쿼리하여 인터페이스에 연결 하 고 그 결과를 다른에 연결 `com::ptr` 합니다.
 
@@ -957,7 +958,7 @@ int main() {
 <#document>persnickety</#document>
 ```
 
-## <a name="ptrrelease"></a><a name="release"></a>ptr:: Release
+## <a name="ptrrelease"></a><a name="release"></a> ptr:: Release
 
 COM 개체에서 소유 된 모든 참조를 해제 합니다.
 
@@ -1045,7 +1046,7 @@ int main() {
 }
 ```
 
-## <a name="ptroperator-gt"></a><a name="operator-arrow"></a>ptr:: operator-&gt;
+## <a name="ptroperator-gt"></a><a name="operator-arrow"></a> ptr:: operator-&gt;
 
 소유 하는 COM 개체에서 메서드를 호출 하는 데 사용 되는 멤버 액세스 연산자입니다.
 
@@ -1187,7 +1188,7 @@ int main() {
 <word>persnickety</word>
 ```
 
-## <a name="ptroperator"></a><a name="operator-assign"></a>ptr:: operator =
+## <a name="ptroperator"></a><a name="operator-assign"></a> ptr:: operator =
 
 COM 개체를에 연결 `com::ptr` 합니다.
 
@@ -1292,7 +1293,7 @@ int main() {
 }
 ```
 
-## <a name="ptroperator-bool"></a><a name="operator-bool"></a>ptr:: operator bool
+## <a name="ptroperator-bool"></a><a name="operator-bool"></a> ptr:: operator bool
 
 조건식에 사용 하기 위한 연산자 `com::ptr` 입니다.
 
@@ -1363,7 +1364,7 @@ int main() {
 DOM Document created.
 ```
 
-## <a name="ptroperator"></a><a name="operator-logical-not"></a>ptr:: operator!
+## <a name="ptroperator"></a><a name="operator-logical-not"></a> ptr:: operator!
 
 소유 하는 COM 개체가 잘못 되었는지 여부를 확인 하는 연산자입니다.
 

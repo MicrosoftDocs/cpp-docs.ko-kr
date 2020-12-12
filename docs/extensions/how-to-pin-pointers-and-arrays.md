@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 방법: 포인터 및 배열 고정'
 title: '방법: 포인터 및 배열 고정'
 ms.date: 10/12/2018
 ms.topic: reference
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - pointers, pinning
 - arrays [C++], pinning
 ms.assetid: ee783260-e676-46b8-a38e-11a06f1d57b0
-ms.openlocfilehash: 8dc42690f0f56b97b2af3ed54dfb17d49b081695
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ab0e09e94c45cc31862ef8d0b6c0771bfeae115d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80172219"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97119137"
 ---
 # <a name="how-to-pin-pointers-and-arrays"></a>방법: 포인터 및 배열 고정
 
@@ -45,6 +46,6 @@ int main() {
 ++
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[pin_ptr(C++/CLI)](pin-ptr-cpp-cli.md)
+[pin_ptr (c + +/CLI)](pin-ptr-cpp-cli.md)

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: __asm 블록에서 어셈블리 언어 사용'
 title: __asm 블록에서 어셈블리 언어 사용
 ms.date: 08/30/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - assembly language [C++]
 - __asm keyword [C++], assembly language in
 ms.assetid: ad699356-1d16-4984-871f-c5fd7797c1fb
-ms.openlocfilehash: 164cd45be5149b0c31cdbe4484bb852892476fa2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c9a558bbafc9168edb490159951e8de572a3ed7b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87191438"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97121955"
 ---
 # <a name="using-assembly-language-in-__asm-blocks"></a>__asm 블록에서 어셈블리 언어 사용
 

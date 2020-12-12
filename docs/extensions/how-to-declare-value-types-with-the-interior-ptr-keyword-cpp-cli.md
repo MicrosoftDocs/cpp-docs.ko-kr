@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 방법: interior_ptr 키워드를 사용 하 여 값 형식 선언 (c + +/CLI)'
 title: '방법: interior_ptr 키워드를 사용하여 값 형식 선언(C++/CLI)'
 ms.date: 10/12/2018
 ms.topic: reference
@@ -6,25 +7,25 @@ helpviewer_keywords:
 - _ptr keyword
 - value types, declaring
 ms.assetid: 49eea66e-eeba-49bd-95b0-ba297be436e3
-ms.openlocfilehash: b5d17f3621271faa03e30e24f259d8d7cebbb491
-ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
+ms.openlocfilehash: b8d5c554f212a9536b0ad063d67e044c08194015
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91414492"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97119176"
 ---
 # <a name="how-to-declare-value-types-with-the-interior_ptr-keyword-ccli"></a>방법: interior_ptr 키워드를 사용하여 값 형식 선언(C++/CLI)
 
-**interior_ptr**은 값 형식에 사용할 수 있습니다.
+**interior_ptr** 은 값 형식에 사용할 수 있습니다.
 
 > [!IMPORTANT]
 > 이 언어 기능은 `/clr` 컴파일러 옵션에서 지원하지만 `/ZW` 컴파일러 옵션에서는 지원하지 않습니다.
 
 ## <a name="example-interior_ptr-with-value-type"></a>예: 값 형식의 interior_ptr
 
-### <a name="description"></a>Description
+### <a name="description"></a>설명
 
-다음 C++/CLI 샘플에서는 값 형식에 **interior_ptr**을 사용하는 방법을 보여 줍니다.
+다음 C++/CLI 샘플에서는 값 형식에 **interior_ptr** 을 사용하는 방법을 보여 줍니다.
 
 ### <a name="code"></a>코드
 
@@ -67,7 +68,7 @@ int main() {
 
 ## <a name="example-this-pointer"></a>예: this 포인터
 
-### <a name="description"></a>Description
+### <a name="description"></a>설명
 
 값 형식에서 **`this`** 포인터는 interior_ptr로 평가 됩니다.
 
@@ -89,7 +90,7 @@ value struct V {
 
 ## <a name="example-address-of-operator"></a>예: 주소 연산자
 
-### <a name="description"></a>Description
+### <a name="description"></a>설명
 
 다음 샘플은 정적 멤버에 주소 연산자를 사용하는 방법을 보여 줍니다.
 

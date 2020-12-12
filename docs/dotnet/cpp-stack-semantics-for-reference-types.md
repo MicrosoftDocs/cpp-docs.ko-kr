@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 참조 형식에 대 한 c + + 스택 의미 체계'
 title: 참조 형식에 대한 C++ 스택 의미 체계
 ms.date: 11/04/2016
 helpviewer_keywords:
 - reference types, C++ stack semantics for
 ms.assetid: 319a1304-f4a4-4079-8b84-01cec847d531
-ms.openlocfilehash: 886d0d16d8b81364078db5604ab10d8dcc3fa561
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a7f377225e70eff4093d4b9820a3d14644b96f58
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87197841"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97124321"
 ---
 # <a name="c-stack-semantics-for-reference-types"></a>참조 형식에 대한 C++ 스택 의미 체계
 
