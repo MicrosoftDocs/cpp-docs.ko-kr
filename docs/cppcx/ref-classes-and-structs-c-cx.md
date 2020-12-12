@@ -1,17 +1,18 @@
 ---
+description: '자세히 알아보기: Ref 클래스 및 구조체 (c + +/CX)'
 title: Ref 클래스 및 구조체(C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 3d736b82-0bf0-48cf-bac1-cc9d110b70d1
-ms.openlocfilehash: d128734f8c78c9198f0731b415c1be35b0c58e65
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e87709febd03c185ec50845ff6fbb1a5ee27aba7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214960"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97273230"
 ---
 # <a name="ref-classes-and-structs-ccx"></a>Ref 클래스 및 구조체(C++/CX)
 
-C + +/CX에서는 사용자 정의 *ref 클래스* 및 *ref 구조체*와 사용자 정의 *값 클래스* 및 *값 구조체*를 지원 합니다. 이러한 데이터 구조는 c + +/CX에서 Windows 런타임 형식 시스템을 지 원하는 기본 컨테이너입니다. 해당 콘텐츠는 특정 규칙에 따라 메타 데이터로 내보내지고,이를 통해 Windows 런타임 구성 요소와 c + + 또는 다른 언어로 작성 된 유니버설 Windows 플랫폼 앱 간에 전달 될 수 있습니다.
+C + +/CX에서는 사용자 정의 *ref 클래스* 및 *ref 구조체* 와 사용자 정의 *값 클래스* 및 *값 구조체* 를 지원 합니다. 이러한 데이터 구조는 c + +/CX에서 Windows 런타임 형식 시스템을 지 원하는 기본 컨테이너입니다. 해당 콘텐츠는 특정 규칙에 따라 메타 데이터로 내보내지고,이를 통해 Windows 런타임 구성 요소와 c + + 또는 다른 언어로 작성 된 유니버설 Windows 플랫폼 앱 간에 전달 될 수 있습니다.
 
 ref 클래스 또는 ref 구조체에는 다음과 같은 중요한 기능이 있습니다.
 
@@ -19,7 +20,7 @@ ref 클래스 또는 ref 구조체에는 다음과 같은 중요한 기능이 �
 
 - Ref 클래스, 값 클래스, ref 구조체, 값 구조체 또는 nullable 값 구조체를 포함 하는 c + +/CX를 멤버로 포함할 수 있습니다. 또한, 등의 스칼라 형식도 포함할 수 `float64` 있습니다 **`bool`** . 또한 `std::vector` 또는 사용자 지정 클래스(public이 아니어야 함)와 같은 표준 C++ 형식을 포함할 수 있습니다. C + +/cx 구문에는 **`public`** ,, **`protected`** **`internal`** , **`private`** 또는 **`protected private`** 액세스 가능성이 있을 수 있습니다. 모든 **`public`** 또는 **`protected`** 멤버는 메타 데이터로 내보내집니다. 표준 c + + 형식에는 **`private`** **`internal`** **`protected private`** 메타 데이터로 내보내지 못하도록 하는, 또는 액세스 가능성이 있어야 합니다.
 
-- 하나 이상의 *인터페이스 클래스* 또는 *인터페이스 구조체*를 구현할 수 있습니다.
+- 하나 이상의 *인터페이스 클래스* 또는 *인터페이스 구조체* 를 구현할 수 있습니다.
 
 - 한 기본 클래스에서 상속할 수 있으며 기본 클래스 자체에는 추가 제한이 있습니다. public ref 클래스 계층 구조의 상속에는 private ref 클래스의 상속보다 많은 제한이 있습니다.
 
@@ -97,7 +98,7 @@ ref 클래스 소멸자는 다음과 같이 선언될 수만 있습니다.
 
 이미 소멸자가 실행되도록 한 클래스의 멤버에 액세스하려고 하는 경우의 동작은 정의되어 있지 않습니다. 프로그램 작동이 중단될 가능성이 놓습니다. public 소멸자가 없는 형식에 대해 `delete t` 를 호출하면 아무런 효과가 없습니다. 형식 `delete this` 계층 구조 내에서 알려진 또는 소멸자가 있는 형식 또는 기본 클래스에 대해를 호출 **`private`** **`protected private`** 해도 아무런 효과가 없습니다.
 
-public 소멸자를 선언하는 경우 ref 클래스가 `Platform::IDisposable` 을 구현하고 소멸자가 `Dispose` 메서드를 구현하도록 컴파일러에서 코드가 생성됩니다. `Platform::IDisposable`는의 c + +/CX 프로젝션입니다 `Windows::Foundation::IClosable` . 이러한 인터페이스를 명시적으로 구현하지 마세요.
+public 소멸자를 선언하는 경우 ref 클래스가 `Platform::IDisposable` 을 구현하고 소멸자가 `Dispose` 메서드를 구현하도록 컴파일러에서 코드가 생성됩니다. `Platform::IDisposable` 는의 c + +/CX 프로젝션입니다 `Windows::Foundation::IClosable` . 이러한 인터페이스를 명시적으로 구현하지 마세요.
 
 ## <a name="inheritance"></a>상속
 

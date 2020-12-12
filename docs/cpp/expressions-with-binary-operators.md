@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 이항 연산자가 있는 식'
 title: 이항 연산자로 구성된 식
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - binary operators [C++]
 - expressions [C++], binary operators
 ms.assetid: 6dea3df4-a4bd-42c3-9807-4a27c120ac9a
-ms.openlocfilehash: a5c9127db4714575cdf037147cc97601a4523e93
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 753b7f22658d843ad2388b38a2dc636e7190a278
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81360857"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97273347"
 ---
 # <a name="expressions-with-binary-operators"></a>이항 연산자로 구성된 식
 
@@ -29,13 +30,13 @@ ms.locfileid: "81360857"
 
   - 더하기(+)
 
-  - 빼기(-)
+  - 빼기(–)
 
 - [시프트 연산자](../cpp/left-shift-and-right-shift-operators-input-and-output.md)
 
-  - 오른쪽 시프트(>>)
+  - 오른쪽 시프트 (>>)
 
-  - 좌측 시프트(<<)
+  - 왼쪽 시프트 (<<)
 
 - [관계형 및 같음 연산자](../cpp/relational-operators-equal-and-equal.md)
 
@@ -43,7 +44,7 @@ ms.locfileid: "81360857"
 
   - 보다 큼(>)
 
-  - (=)\<이하
+  - 작거나 같음 ( \< =)
 
   - 크거나 같음(>=)
 
@@ -53,17 +54,17 @@ ms.locfileid: "81360857"
 
 - 비트 연산자
 
-  - [비트 와이즈 및 (&)](../cpp/bitwise-and-operator-amp.md)
+  - [비트 AND (&)](../cpp/bitwise-and-operator-amp.md)
 
-  - [비트별 배타적 OR(^)](../cpp/bitwise-exclusive-or-operator-hat.md)
+  - [배타적 비트 OR (^)](../cpp/bitwise-exclusive-or-operator-hat.md)
 
-  - [비트별 포함 OR (&#124;)](../cpp/bitwise-inclusive-or-operator-pipe.md)
+  - [포괄적 비트 OR (&#124;)](../cpp/bitwise-inclusive-or-operator-pipe.md)
 
 - 논리 연산자
 
-  - [논리 및 (&&)](../cpp/logical-and-operator-amp-amp.md)
+  - [논리적 AND (&&)](../cpp/logical-and-operator-amp-amp.md)
 
-  - [논리 OR(&#124;&#124;)](../cpp/logical-or-operator-pipe-pipe.md)
+  - [논리적 OR (&#124;&#124;)](../cpp/logical-or-operator-pipe-pipe.md)
 
 - [대입 연산자](../cpp/assignment-operators.md)
 
@@ -71,7 +72,7 @@ ms.locfileid: "81360857"
 
   - 더하기 대입(+=)
 
-  - 빼기 과제(-=)
+  - 빼기 대입 (-=)
 
   - 곱하기 대입(*=)
 
@@ -79,18 +80,18 @@ ms.locfileid: "81360857"
 
   - 모듈러스 대입(%=)
 
-  - 좌근 교대 \<할당(<=)
+  - 왼쪽 시프트 대입 (<\< =)
 
-  - 오른쪽 시프트 할당(>>=)
+  - 오른쪽 시프트 할당 (>>=)
 
-  - 비트및할당(&=)
+  - 비트 AND 대입 (&=)
 
   - 배타적 비트 OR 대입(^=)
 
-  - 비트별 포함 OR 할당(&#124;=)
+  - 포괄적 비트 OR 대입 (&#124;=)
 
-- [쉼표 연산자](../cpp/comma-operator.md) (, )
+- [쉼표 연산자](../cpp/comma-operator.md) (,)
 
 ## <a name="see-also"></a>참고 항목
 
-[식의 형식](../cpp/types-of-expressions.md)
+[식 형식](../cpp/types-of-expressions.md)

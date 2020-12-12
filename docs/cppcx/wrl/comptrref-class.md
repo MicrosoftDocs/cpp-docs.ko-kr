@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: ComPtrRef 클래스'
 title: ComPtrRef 클래스
 ms.date: 10/03/2018
 ms.topic: reference
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::ComPtrRef::operator void** operator
 - Microsoft::WRL::Details::ComPtrRef::ReleaseAndGetAddressOf method
 ms.assetid: d6bdfd20-e977-45b4-9ac1-1b8efbdb77de
-ms.openlocfilehash: f92a3e14018cf8c02dec40b664b72a0956f6220e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 42a0698c8eb393c84422b52ee112013b91fe39e6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220537"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97273152"
 ---
 # <a name="comptrref-class"></a>ComPtrRef 클래스
 
@@ -56,7 +57,7 @@ class ComPtrRef : public ComPtrRefBase<T>;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-Name                               | 설명
+이름                               | 설명
 ---------------------------------- | -------------------------------------------------------------------------------------------------------------
 [ComPtrRef:: ComPtrRef](#comptrref) | `ComPtrRef`지정 된 포인터에서 다른 개체에 대 한 클래스의 새 인스턴스를 초기화 `ComPtrRef` 합니다.
 
@@ -90,7 +91,7 @@ Name                                                                     | 설�
 
 **네임 스페이스:** Microsoft:: WRL::D etails
 
-## <a name="comptrrefcomptrref"></a><a name="comptrref"></a>ComPtrRef:: ComPtrRef
+## <a name="comptrrefcomptrref"></a><a name="comptrref"></a> ComPtrRef:: ComPtrRef
 
 WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
 
@@ -109,7 +110,7 @@ ComPtrRef(
 
 `ComPtrRef`지정 된 포인터에서 다른 개체에 대 한 클래스의 새 인스턴스를 초기화 `ComPtrRef` 합니다.
 
-## <a name="comptrrefgetaddressof"></a><a name="getaddressof"></a>ComPtrRef:: GetAddressOf
+## <a name="comptrrefgetaddressof"></a><a name="getaddressof"></a> ComPtrRef:: GetAddressOf
 
 WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
 
@@ -117,7 +118,7 @@ WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습
 InterfaceType* const * GetAddressOf() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 개체가 나타내는 인터페이스에 대 한 포인터의 주소입니다 `ComPtrRef` .
 
@@ -125,7 +126,7 @@ InterfaceType* const * GetAddressOf() const;
 
 현재 개체가 나타내는 인터페이스에 대 한 포인터의 주소를 검색 합니다 `ComPtrRef` .
 
-## <a name="comptrrefoperator"></a><a name="operator-equality"></a>ComPtrRef:: operator = =
+## <a name="comptrrefoperator"></a><a name="operator-equality"></a> ComPtrRef:: operator = =
 
 WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
 
@@ -164,19 +165,19 @@ bool operator==(
 *b*<br/>
 다른 개체에 대 한 참조 `ComPtrRef` 또는 익명 형식에 대 한 포인터 ( **`void*`** )
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-첫 번째 연산자는 **`true`** 개체 *a* 가 개체 *b*와 같으면를, 그렇지 않으면를 생성 **`false`** 합니다.
+첫 번째 연산자는 **`true`** 개체 *a* 가 개체 *b* 와 같으면를, 그렇지 않으면를 생성 **`false`** 합니다.
 
 두 번째 및 세 번째 연산자는 **`true`** 개체 *a* 가와 같으면 **`nullptr`** 이 고, 그렇지 않으면 **`false`** 입니다.
 
-네 번째 및 다섯 번째 연산자는 **`true`** 개체 *a* 가 개체 *b*와 같으면이 고, 그렇지 않으면 **`false`** 입니다.
+네 번째 및 다섯 번째 연산자는 **`true`** 개체 *a* 가 개체 *b* 와 같으면이 고, 그렇지 않으면 **`false`** 입니다.
 
 ### <a name="remarks"></a>설명
 
 두 `ComPtrRef` 개체가 같은지를 나타냅니다.
 
-## <a name="comptrrefoperator"></a><a name="operator-inequality"></a>ComPtrRef:: operator! =
+## <a name="comptrrefoperator"></a><a name="operator-inequality"></a> ComPtrRef:: operator! =
 
 WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
 
@@ -215,19 +216,19 @@ bool operator!=(
 *b*<br/>
 다른 개체에 대 한 참조 `ComPtrRef` 또는 익명 개체에 대 한 포인터 ( **`void*`** )
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-첫 번째 연산자는 **`true`** 개체 *a* 가 개체 *b*와 같지 않으면를, 그렇지 않으면를 생성 **`false`** 합니다.
+첫 번째 연산자는 **`true`** 개체 *a* 가 개체 *b* 와 같지 않으면를, 그렇지 않으면를 생성 **`false`** 합니다.
 
 두 번째 및 세 번째 연산자는 **`true`** 개체 *a* 가와 같지 않으면를 **`nullptr`** , 그렇지 않으면를 생성 **`false`** 합니다.
 
-네 번째 및 다섯 번째 연산자는 **`true`** 개체 *a* 가 개체 *b*와 같지 않으면를, 그렇지 않으면를 생성 **`false`** 합니다.
+네 번째 및 다섯 번째 연산자는 **`true`** 개체 *a* 가 개체 *b* 와 같지 않으면를, 그렇지 않으면를 생성 **`false`** 합니다.
 
 ### <a name="remarks"></a>설명
 
 두 `ComPtrRef` 개체가 같지 않은지를 나타냅니다.
 
-## <a name="comptrrefoperator-interfacetype"></a><a name="operator-interfacetype-star-star"></a>ComPtrRef:: operator InterfaceType\*\*
+## <a name="comptrrefoperator-interfacetype"></a><a name="operator-interfacetype-star-star"></a> ComPtrRef:: operator InterfaceType\*\*
 
 WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
 
@@ -239,7 +240,7 @@ operator InterfaceType**();
 
 현재 개체를 삭제 `ComPtrRef` 하 고 개체가 나타내는 인터페이스에 대 한 포인터 포인터를 반환 합니다 `ComPtrRef` .
 
-## <a name="comptrrefoperator"></a><a name="operator-star"></a>ComPtrRef:: operator *
+## <a name="comptrrefoperator"></a><a name="operator-star"></a> ComPtrRef:: operator *
 
 WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
 
@@ -247,7 +248,7 @@ WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습
 InterfaceType* operator *();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 개체가 나타내는 인터페이스에 대 한 포인터 `ComPtrRef` 입니다.
 
@@ -255,7 +256,7 @@ InterfaceType* operator *();
 
 현재 개체가 나타내는 인터페이스에 대 한 포인터를 검색 합니다 `ComPtrRef` .
 
-## <a name="comptrrefoperator-t"></a><a name="operator-t-star"></a>ComPtrRef:: operator T *
+## <a name="comptrrefoperator-t"></a><a name="operator-t-star"></a> ComPtrRef:: operator T *
 
 WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
 
@@ -267,7 +268,7 @@ operator T*();
 
 현재 개체의 [ptr_](comptrrefbase-class.md#ptr) 데이터 멤버 값을 반환 합니다 `ComPtrRef` .
 
-## <a name="comptrrefoperator-void"></a><a name="operator-void-star-star"></a>ComPtrRef:: operator void\*\*
+## <a name="comptrrefoperator-void"></a><a name="operator-void-star-star"></a> ComPtrRef:: operator void\*\*
 
 WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
 
@@ -279,7 +280,7 @@ operator void**() const;
 
 현재 개체를 삭제 하 고, 개체로 표시 된 인터페이스에 대 한 포인터를 포인터로 `ComPtrRef` 캐스팅 한 `ComPtrRef` **`void`** 다음 캐스트 포인터를 반환 합니다.
 
-## <a name="comptrrefreleaseandgetaddressof"></a><a name="releaseandgetaddressof"></a>ComPtrRef:: ReleaseAndGetAddressOf
+## <a name="comptrrefreleaseandgetaddressof"></a><a name="releaseandgetaddressof"></a> ComPtrRef:: ReleaseAndGetAddressOf
 
 WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
 
@@ -287,7 +288,7 @@ WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습
 InterfaceType** ReleaseAndGetAddressOf();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 삭제 된 개체가 나타내는 인터페이스에 대 한 포인터입니다 `ComPtrRef` .
 

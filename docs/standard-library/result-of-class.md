@@ -1,4 +1,5 @@
 ---
+description: Result_of 클래스에 대해 자세히 알아보세요.
 title: result_of 클래스
 ms.date: 02/21/2019
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - std::result_of_t
 - std::result_of::type
 ms.assetid: 5374a096-4b4a-4712-aa97-6852c5cdd6be
-ms.openlocfilehash: 54806f965cc46058e3c82b4863bb45782abe079e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2aba6b073309be064b9ff0edc7bffa4d8d0098e7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87202313"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97273906"
 ---
 # <a name="result_of-class"></a>result_of 클래스
 
@@ -45,7 +46,7 @@ template<class T>
 
 ## <a name="remarks"></a>설명
 
-이 템플릿을 사용 하 여 컴파일 타임에 ()의 결과 형식을 확인할 수 `Fn` `ArgTypes` 있습니다. 여기서 *Fn* 은 호출 가능 형식, 함수에 대 한 참조 또는 호출 가능 형식에 대 한 참조 이거나 *argtypes*에서 형식의 인수 목록을 사용 하 여 호출 됩니다. `type`클래스 템플릿의 멤버는 확인 `decltype(std::invoke(declval<Fn>(), declval<ArgTypes>()...))` 되지 않은 식이 올바른 형식인 경우 결과 형식의 이름을 `std::invoke(declval<Fn>(), declval<ArgTypes>()...)` 로 합니다. 그렇지 않으면 클래스 템플릿에 멤버가 없습니다 `type` . 매개 변수 팩 *argtypes* 의 형식 *Fn* 및 모든 형식은 완전 한 형식, **`void`** 또는 범위를 알 수 없는 배열 이어야 합니다. C + + 17의 [invoke_result](invoke-result-class.md) 에는 더 이상 사용 되지 않습니다.
+이 템플릿을 사용 하 여 컴파일 타임에 ()의 결과 형식을 확인할 수 `Fn` `ArgTypes` 있습니다. 여기서 *Fn* 은 호출 가능 형식, 함수에 대 한 참조 또는 호출 가능 형식에 대 한 참조 이거나 *argtypes* 에서 형식의 인수 목록을 사용 하 여 호출 됩니다. `type`클래스 템플릿의 멤버는 확인 `decltype(std::invoke(declval<Fn>(), declval<ArgTypes>()...))` 되지 않은 식이 올바른 형식인 경우 결과 형식의 이름을 `std::invoke(declval<Fn>(), declval<ArgTypes>()...)` 로 합니다. 그렇지 않으면 클래스 템플릿에 멤버가 없습니다 `type` . 매개 변수 팩 *argtypes* 의 형식 *Fn* 및 모든 형식은 완전 한 형식, **`void`** 또는 범위를 알 수 없는 배열 이어야 합니다. C + + 17의 [invoke_result](invoke-result-class.md) 에는 더 이상 사용 되지 않습니다.
 
 ## <a name="requirements"></a>요구 사항
 

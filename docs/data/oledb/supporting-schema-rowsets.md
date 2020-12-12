@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 스키마 행 집합 지원'
 title: 스키마 행 집합 지원
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - OLE DB providers, schema rowsets
 - OLE DB, schema rowsets
 ms.assetid: 71c5e14b-6e33-4502-a2d9-a1dc6d6e9ba0
-ms.openlocfilehash: 156fe9c7a2b15f7254fb0c83f8b25982aa5ad09a
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 029b05f594dda01112cd975543462f92e351b1c3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924312"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97272736"
 ---
 # <a name="supporting-schema-rowsets"></a>스키마 행 집합 지원
 
@@ -146,7 +147,7 @@ if (InlineIsEqualGUID(rguidSchema[l], DBSCHEMA_TABLES))
     rgRestrictions[l] = 0x0C;
 ```
 
-다음 `Execute` 함수는 일반 행 집합의 함수와 비슷합니다. *pcRowsAffected* , *cRestrictions* , *rgRestrictions* 등 세 개의 인수가 있습니다. *pcRowsAffected* 변수는 공급자가 스키마 행 집합의 행 수를 반환할 수 있는 출력 매개 변수입니다. *cRestrictions* 매개 변수는 소비자가 공급자에 전달하는 제한 수를 보유하는 입력 매개 변수입니다. *rgRestrictions* 매개 변수는 제한 값을 보유하는 VARIANT 값 배열입니다.
+다음 `Execute` 함수는 일반 행 집합의 함수와 비슷합니다. *pcRowsAffected*, *cRestrictions*, *rgRestrictions* 등 세 개의 인수가 있습니다. *pcRowsAffected* 변수는 공급자가 스키마 행 집합의 행 수를 반환할 수 있는 출력 매개 변수입니다. *cRestrictions* 매개 변수는 소비자가 공급자에 전달하는 제한 수를 보유하는 입력 매개 변수입니다. *rgRestrictions* 매개 변수는 제한 값을 보유하는 VARIANT 값 배열입니다.
 
 ```cpp
 HRESULT Execute(DBROWCOUNT* pcRowsAffected, ULONG cRestrictions,

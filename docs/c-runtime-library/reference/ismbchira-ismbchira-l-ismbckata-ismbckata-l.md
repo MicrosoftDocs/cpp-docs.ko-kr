@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: _ismbchira, _ismbchira_l, _ismbckata, _ismbckata_l'
 title: _ismbchira, _ismbchira_l, _ismbckata, _ismbckata_l
 ms.date: 4/2/2020
 api_name:
@@ -48,12 +49,12 @@ helpviewer_keywords:
 - Hiragana
 - ismbckata function
 ms.assetid: 2db388a2-be31-489b-81c8-f6bf3f0582d3
-ms.openlocfilehash: 89c6aacbb6726165703d38e3ea519806b1f970d2
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: a3df603c53a320898ab7eb94176d4e150a3073c9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910702"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97273581"
 ---
 # <a name="_ismbchira-_ismbchira_l-_ismbckata-_ismbckata_l"></a>_ismbchira, _ismbchira_l, _ismbckata, _ismbckata_l
 
@@ -89,9 +90,9 @@ int _ismbckata_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-이러한 각 루틴은 이 문자가 테스트 조건을 만족하는 경우 0이 아닌 값을 반환하고, 그렇지 않으면 0을 반환합니다. *C* <= 255이 고 해당 **_ismbb** 루틴이 있는 경우 (예: **_ismbcalnum** **_ismbbalnum**에 해당 하는 경우) 결과는 해당 **_ismbb** 루틴의 반환 값입니다.
+이러한 각 루틴은 이 문자가 테스트 조건을 만족하는 경우 0이 아닌 값을 반환하고, 그렇지 않으면 0을 반환합니다. *C* <= 255이 고 해당 **_ismbb** 루틴이 있는 경우 (예: **_ismbcalnum** **_ismbbalnum** 에 해당 하는 경우) 결과는 해당 **_ismbb** 루틴의 반환 값입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -121,10 +122,10 @@ int _ismbckata_l(
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [문자 분류](../../c-runtime-library/character-classification.md)<br/>
 [_ismbc 루틴](../../c-runtime-library/ismbc-routines.md)<br/>
 [is, isw 루틴](../../c-runtime-library/is-isw-routines.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[멀티 바이트 문자 시퀀스 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[로캘](../../c-runtime-library/locale.md)<br/>
+[Multibyte-Character 시퀀스의 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>

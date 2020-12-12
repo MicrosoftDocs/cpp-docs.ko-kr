@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CreateClassFactory 함수'
 title: CreateClassFactory 함수
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CreateClassFactory function
 ms.assetid: 772d5d1b-8872-4745-81ca-521a39564713
-ms.openlocfilehash: 0467a9a1341e29a61a3b32d999769b01385f641f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 99565ee732843f57426f10375ffabc7680ef3c62
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214060"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97273061"
 ---
 # <a name="createclassfactory-function"></a>CreateClassFactory 함수
 
@@ -35,8 +36,8 @@ inline HRESULT STDMETHODCALLTYPE CreateClassFactory(
 *flags*<br/>
 하나 이상의 [RuntimeClassType](runtimeclasstype-enumeration.md) 열거형 값의 조합입니다.
 
-*entry*<br/>
-매개 변수 *riid*에 대 한 초기화 및 등록 정보를 포함 하는 [creatormap](creatormap-structure.md) 에 대 한 포인터입니다.
+*엔트리의*<br/>
+매개 변수 *riid* 에 대 한 초기화 및 등록 정보를 포함 하는 [creatormap](creatormap-structure.md) 에 대 한 포인터입니다.
 
 *riid*<br/>
 인터페이스 ID에 대 한 참조입니다.
@@ -48,9 +49,9 @@ inline HRESULT STDMETHODCALLTYPE CreateClassFactory(
 
 성공하면 S_OK이고, 그렇지 않으면 오류를 나타내는 HRESULT입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
-템플릿 매개 변수 *팩터리가* 인터페이스 `IClassFactory`에서 파생 되지 않으면 어설션 오류가 발생 합니다.
+템플릿 매개 변수 *팩터리가* 인터페이스에서 파생 되지 않는 경우 어설션 오류가 발생 `IClassFactory` 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -60,4 +61,4 @@ inline HRESULT STDMETHODCALLTYPE CreateClassFactory(
 
 ## <a name="see-also"></a>참고 항목
 
-[Microsoft::WRL::Wrappers::Details 네임스페이스](microsoft-wrl-wrappers-details-namespace.md)
+[Microsoft:: WRL:: 래퍼::D etails 네임 스페이스](microsoft-wrl-wrappers-details-namespace.md)

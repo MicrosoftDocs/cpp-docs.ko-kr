@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: fwide'
 title: fwide
 ms.date: 11/04/2016
 api_name:
@@ -23,12 +24,12 @@ f1_keywords:
 helpviewer_keywords:
 - fwide function
 ms.assetid: a4641f5b-d74f-4946-95d5-53a64610d28d
-ms.openlocfilehash: 652aee03bfb5504a51d74efb326cc7a3d7c28649
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 5cc49bb92421ac8899df9850c110a519d32b1d1a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80171205"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97273750"
 ---
 # <a name="fwide"></a>fwide
 
@@ -45,15 +46,15 @@ int fwide(
 
 ### <a name="parameters"></a>매개 변수
 
-*stream*<br/>
+*스트림*<br/>
 **파일** 구조에 대 한 포인터입니다 (무시 됨).
 
 *mode*<br/>
 스트림의 새 너비: 와이드 문자의 경우 양수, 바이트의 경우 음수이며 0은 변경되지 않습니다. 이 값은 무시됩니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-이 함수는 현재 *모드*를 반환 합니다.
+이 함수는 현재 *모드* 를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 

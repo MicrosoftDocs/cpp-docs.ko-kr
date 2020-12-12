@@ -1,13 +1,14 @@
 ---
+description: '자세히 알아보기: 명시적으로 기본 설정 및 삭제 된 함수'
 title: 명시적으로 기본 설정 및 삭제된 함수
 ms.date: 11/04/2016
 ms.assetid: 5a588478-fda2-4b3f-a279-db3967f5e07e
-ms.openlocfilehash: fd3fb53dec0cc08274b7ea54176c2a15dbab45d7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a3c4789996d39acd4ddd3bbc186ce39509a1d62f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211582"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97273360"
 ---
 # <a name="explicitly-defaulted-and-deleted-functions"></a>명시적으로 기본 설정 및 삭제된 함수
 
@@ -15,7 +16,7 @@ C++ 11에서 기본 설정 및 삭제된 함수를 사용하면 특수 멤버 �
 
 ## <a name="benefits-of-explicitly-defaulted-and-deleted-functions"></a>명시적으로 기본 설정 및 삭제된 함수의 이점
 
-C++에서 컴파일러는 형식을 자체적으로 선언하지 않을 경우 기본 생성자, 복사 생성자, 복사 할당 연산자 및 소멸자를 자동으로 생성합니다. 이러한 함수는 *특수 멤버 함수*라고 하며 c + +에서 간단한 사용자 정의 형식이 c의 구조체와 같이 동작 합니다. 즉, 추가 코딩 작업 없이 만들고, 복사 하 고, 삭제할 수 있습니다. C++11은 언어에 이동 의미 체계를 가져오고 이동 생성자와 이동 할당 연산자를 컴파일러가 자동으로 생성할 수 있는 특수 멤버 함수 목록에 추가합니다.
+C++에서 컴파일러는 형식을 자체적으로 선언하지 않을 경우 기본 생성자, 복사 생성자, 복사 할당 연산자 및 소멸자를 자동으로 생성합니다. 이러한 함수는 *특수 멤버 함수* 라고 하며 c + +에서 간단한 사용자 정의 형식이 c의 구조체와 같이 동작 합니다. 즉, 추가 코딩 작업 없이 만들고, 복사 하 고, 삭제할 수 있습니다. C++11은 언어에 이동 의미 체계를 가져오고 이동 생성자와 이동 할당 연산자를 컴파일러가 자동으로 생성할 수 있는 특수 멤버 함수 목록에 추가합니다.
 
 따라서 단순 형식에는 편리하지만 복합 형식은 종종 하나 이상의 특수 멤버 함수 자체를 정의하므로 다른 특수 멤버 함수가 자동으로 생성되지 않도록 할 수 있습니다. 실제로는 다음과 같습니다.
 

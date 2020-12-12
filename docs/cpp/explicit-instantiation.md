@@ -1,4 +1,5 @@
-﻿---
+---
+description: '자세한 정보: 명시적 인스턴스화'
 title: 명시적 인스턴스화
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - explicit instantiation
 - instantiation, explicit
 ms.assetid: 8b0d4e32-45a6-49d5-8041-1ebdd674410e
-ms.openlocfilehash: 4b1808791110c4eed237d18436897dac59170206
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c3d6587490215627a867b7e20d49a50a089940da
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232302"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97273477"
 ---
 # <a name="explicit-instantiation"></a>명시적 인스턴스화
 
@@ -33,7 +34,7 @@ template MyStack<int, 6>::MyStack( void );
 
 [함수 템플릿 인스턴스화](../cpp/function-template-instantiation.md)의 예제에 표시 된 것 처럼 특정 형식 인수를 사용 하 여 함수 템플릿을 명시적으로 인스턴스화할 수 있습니다.
 
-키워드를 사용 하 여 **`extern`** 멤버의 자동 인스턴스화를 방지할 수 있습니다. 예를 들면 다음과 같습니다.
+키워드를 사용 하 여 **`extern`** 멤버의 자동 인스턴스화를 방지할 수 있습니다. 예를 들어:
 
 ```cpp
 extern template class MyStack<int, 6>;

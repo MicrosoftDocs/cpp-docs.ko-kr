@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: DerefHelper Structure'
 title: DerefHelper 구조체
 ms.date: 10/03/2018
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - DerefHelper structure
 ms.assetid: 86ded58b-c3ee-4a4f-bb86-4f67b895d427
-ms.openlocfilehash: 43453d3162de697fa1cfcf0581953c91bbe3934f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 8605e3923d8d3099a080be22f9d8e70ee9187ef9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214047"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97272918"
 ---
 # <a name="derefhelper-structure"></a>DerefHelper 구조체
 
@@ -33,21 +34,21 @@ struct DerefHelper<T*>;
 *T*<br/>
 템플릿 매개 변수입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
-`T*` template 매개 변수에 대 한 역참조 된 포인터를 나타냅니다.
+템플릿 매개 변수에 대 한 역참조 된 포인터를 나타냅니다 `T*` .
 
-**DerefHelper** 는 `ComPtr<Details::DerefHelper<ProgressTraits::Arg1Type>::DerefType> operationInterface;`와 같은 식에 사용 됩니다.
+**DerefHelper** 은와 같은 식에 사용 됩니다 `ComPtr<Details::DerefHelper<ProgressTraits::Arg1Type>::DerefType> operationInterface;` .
 
 ## <a name="members"></a>멤버
 
-### <a name="public-typedefs"></a>공용 형식 정의
+### <a name="public-typedefs"></a>공용 Typedefs
 
-|이름|설명|
+|Name|설명|
 |----------|-----------------|
-|`DerefType`|역참조 된 템플릿 매개 변수 `T*`의 식별자입니다.|
+|`DerefType`|역참조 된 템플릿 매개 변수의 식별자 `T*` 입니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `DerefHelper`
 
@@ -59,4 +60,4 @@ struct DerefHelper<T*>;
 
 ## <a name="see-also"></a>참고 항목
 
-[Microsoft::WRL::Details 네임스페이스](microsoft-wrl-details-namespace.md)
+[Microsoft:: WRL::D etails 네임 스페이스](microsoft-wrl-details-namespace.md)

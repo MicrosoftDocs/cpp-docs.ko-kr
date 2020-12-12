@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: Windows 런타임 및 관리 되는 템플릿 (c + +/CLI 및 c + +/CX)'
 title: Windows 런타임 및 관리형 템플릿(C++/CLI 및 C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - templates, with CLR types
 ms.assetid: cf59d16b-5514-448b-9a95-e0b4fcb616a6
-ms.openlocfilehash: 5765370e611e5822b3b2d156d2eee5d21e5b453d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 75b39c58bc42c23da313525f125dc98abdb0866b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81376315"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97274036"
 ---
 # <a name="windows-runtime-and-managed-templates-ccli-and-ccx"></a>Windows 런타임 및 관리형 템플릿(C++/CLI 및 C++/CX)
 
@@ -38,7 +39,7 @@ ms.locfileid: "81376315"
 
 컴파일러 옵션: `/clr`
 
-### <a name="examples"></a>예
+### <a name="examples"></a>예제
 
 관리되는 형식 템플릿 매개 변수로 제네릭 형식을 인스턴스화할 수 있지만 제네릭 형식 템플릿 매개 변수로 관리되는 템플릿을 인스턴스화할 수 없습니다. 이는 제네릭 형식이 런타임에 확인되기 때문입니다. 자세한 내용은 [제네릭 및 템플릿(C++/CLI)](generics-and-templates-visual-cpp.md)을 참조하세요.
 
@@ -73,7 +74,7 @@ template<class T> public ref class R {
 };
 ```
 
-C++/CLI 언어 구문으로 참조된 어셈블리에 정의된 템플릿을 액세스할 수 없지만 리플렉션을 사용할 수 있습니다. 템플릿이 인스턴스화되지 않으면 메타데이터에서 내보내지지 않습니다. 템플릿을 인스턴스화할 경우 참조된 멤버 함수만 메타데이터에 표시됩니다.
+C++/CLI 언어 구문으로 참조된 어셈블리에 정의된 템플릿을 액세스할 수 없지만 리플렉션을 사용할 수 있습니다. 템플릿이 인스턴스화되지 않은 경우 메타 데이터에서 내보내지 않습니다. 템플릿을 인스턴스화할 경우 참조된 멤버 함수만 메타데이터에 표시됩니다.
 
 ```cpp
 // managed_templates_3.cpp
@@ -132,4 +133,4 @@ class A <int> {};
 
 ## <a name="see-also"></a>참고 항목
 
-[.NET 및 UWP용 구성 요소 확장](component-extensions-for-runtime-platforms.md)
+[.NET 및 UWP 용 구성 요소 확장](component-extensions-for-runtime-platforms.md)

@@ -1,17 +1,18 @@
 ---
-title: 문서-뷰 아키텍처의 대체
+description: '자세히 알아보기: 문서/뷰 아키텍처의 대안'
+title: Document-View 아키텍처에 대 한 대안
 ms.date: 11/04/2016
 helpviewer_keywords:
 - documents [MFC], applications without
 - CDocument class [MFC], space requirements
 - views [MFC], applications without
 ms.assetid: 2c22f352-a137-45ce-9971-c142173496fb
-ms.openlocfilehash: 66325d1ae087b29f59f37197fb8695504bbddbc6
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 6462a7aabdf52e3ec881f32d68d12128595f2110
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619752"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97274049"
 ---
 # <a name="alternatives-to-the-documentview-architecture"></a>문서/뷰 아키텍처의 대체
 
@@ -50,7 +51,7 @@ MFC에서 제공하는 문서/뷰 아키텍처는 애플리케이션의 많은 �
 
   - 두 개의 `CString` 개체입니다.
 
-  - 세 개의 **BOOL**s.
+  - 세 개의 **BOOL** s.
 
   - 한 개의 `CDocTemplate` 포인터입니다.
 

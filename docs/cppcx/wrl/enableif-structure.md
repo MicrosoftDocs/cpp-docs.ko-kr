@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: EnableIf 구조체'
 title: EnableIf 구조체
 ms.date: 10/03/2018
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - EnableIf structure
 ms.assetid: 7825b283-e6b2-4f39-a4b9-c03bcd431b8e
-ms.openlocfilehash: f43166920f3582ab681b67d2c89563dcf78ff0f1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 098dd5fdc7e37a7754d7124eba3e146575c127be
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220498"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97272853"
 ---
 # <a name="enableif-structure"></a>EnableIf 구조체
 

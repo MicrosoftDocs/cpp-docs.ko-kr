@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CriticalSectionTraits Structure'
 title: CriticalSectionTraits 구조체
 ms.date: 09/26/2018
 ms.topic: reference
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HandleTraits::CriticalSectionTraits::GetInvalidValue method
 - Microsoft::WRL::Wrappers::HandleTraits::CriticalSectionTraits::Unlock method
 ms.assetid: c515a1b5-4eb0-40bc-9035-c4d9352c9de7
-ms.openlocfilehash: 3573cad21734a97629cbc12b76d73b99024cbc2f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 20e4b7dd47acf6f632c888c9bfdedeb3f4e60270
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220511"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97272944"
 ---
 # <a name="criticalsectiontraits-structure"></a>CriticalSectionTraits 구조체
 
@@ -53,7 +54,7 @@ Name   | 설명
 
 **네임 스페이스:** Microsoft:: WRL:: 래퍼:: 핸드
 
-## <a name="criticalsectiontraitsgetinvalidvalue"></a><a name="getinvalidvalue"></a>CriticalSectionTraits:: GetInvalidValue
+## <a name="criticalsectiontraitsgetinvalidvalue"></a><a name="getinvalidvalue"></a> CriticalSectionTraits:: GetInvalidValue
 
 템플릿이 `CriticalSection` 항상 유효 하지 않도록 템플릿을 전문적으로 만듭니다.
 
@@ -61,7 +62,7 @@ Name   | 설명
 inline static Type GetInvalidValue();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 는 항상 잘못 된 임계 영역에 대 한 포인터를 반환 합니다.
 
@@ -69,7 +70,7 @@ inline static Type GetInvalidValue();
 
 `Type`한정자는로 정의 됩니다 `typedef CRITICAL_SECTION* Type;` .
 
-## <a name="criticalsectiontraitsunlock"></a><a name="unlock"></a>CriticalSectionTraits:: Unlock
+## <a name="criticalsectiontraitsunlock"></a><a name="unlock"></a> CriticalSectionTraits:: Unlock
 
 지정 된 `CriticalSection` 임계 영역 개체의 소유권 해제를 지원 하도록 템플릿을 특수화 합니다.
 

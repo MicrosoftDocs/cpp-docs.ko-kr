@@ -1,4 +1,5 @@
 ---
+description: '자동화 클라이언트: 형식 라이브러리 사용에 대 한 자세한 정보'
 title: '자동화 클라이언트: 형식 라이브러리 사용'
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - MkTypLib tool
 - .odl files
 ms.assetid: d405bc47-118d-4786-b371-920d035b2047
-ms.openlocfilehash: e5f9ffcebc3725851c599e7b21369f45d0029d81
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: c50425da1327f97fe410723df1e21136f1bd6f98
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626097"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97274010"
 ---
 # <a name="automation-clients-using-type-libraries"></a>자동화 클라이언트: 형식 라이브러리 사용
 
@@ -37,7 +38,7 @@ Visual C++는 프로젝트를 만들 때 자동화를 포함 하도록 선택한
 
 1. 클래스 뷰 또는 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **추가** 를 클릭 한 다음 바로 가기 메뉴에서 **클래스 추가** 를 클릭 합니다.
 
-1. **클래스 추가** 대화 상자의 왼쪽 창에서 **Visual C++/mfc** 폴더를 선택 합니다. 오른쪽 창에서 **TypeLib의 MFC 클래스** 아이콘을 선택 하 고 **열기**를 클릭 합니다.
+1. **클래스 추가** 대화 상자의 왼쪽 창에서 **Visual C++/mfc** 폴더를 선택 합니다. 오른쪽 창에서 **TypeLib의 MFC 클래스** 아이콘을 선택 하 고 **열기** 를 클릭 합니다.
 
 1. **Typelib에서 클래스 추가 마법사** 대화 상자의 **사용 가능한 형식 라이브러리** 드롭다운 목록에서 형식 라이브러리를 선택 합니다. **인터페이스** 상자에는 선택한 형식 라이브러리에 사용할 수 있는 인터페이스가 표시 됩니다.
 
@@ -54,7 +55,7 @@ Visual C++는 프로젝트를 만들 때 자동화를 포함 하도록 선택한
     > [!NOTE]
     >  일부 형식 라이브러리 정보는를 사용 하 여 파일에 저장 될 수 있습니다. DLL,. OCX 또는입니다. DTE.OLB 파일 확장명입니다.
 
-1. **Finish**를 클릭합니다.
+1. **Finish** 를 클릭합니다.
 
    그러면 마법사가 지정 된 클래스와 파일 이름을 사용 하 여 디스패치 클래스에 대 한 코드를 작성 합니다.
 
