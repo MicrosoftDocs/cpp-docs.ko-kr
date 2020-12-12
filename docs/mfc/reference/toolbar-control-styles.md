@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: ToolBar 컨트롤 스타일'
 title: ToolBar 컨트롤 스타일
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ToolBar control styles [MFC]
 ms.assetid: 0f717eb9-fa32-4263-b852-809238863feb
-ms.openlocfilehash: eab4dbde68fcebdb0afd0d058b4678c464874c81
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b044f353ddbdc4ccc9d5050ea14307386b7c2a15
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837127"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97218721"
 ---
 # <a name="toolbar-control-styles"></a>ToolBar 컨트롤 스타일
 
