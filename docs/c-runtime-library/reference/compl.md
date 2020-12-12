@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: compl'
 title: compl
 ms.date: 11/04/2016
 api_name:
@@ -25,12 +26,12 @@ f1_keywords:
 helpviewer_keywords:
 - compl function
 ms.assetid: e03f6fb5-cb8b-4afa-99c0-905f4105fb34
-ms.openlocfilehash: ae1924ba8cdbcdeb9a06c241bc1fadfc66efd613
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 73ce31c8d8fefc4021b797b9b9e061e616f60e5a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80170309"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97260633"
 ---
 # <a name="compl"></a>compl
 
@@ -42,7 +43,7 @@ ms.locfileid: "80170309"
 #define compl ~
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 매크로가 ~ 연산자를 생성합니다.
 
@@ -74,4 +75,4 @@ int main( )
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<iso646 >
+**헤더:**\<iso646.h>

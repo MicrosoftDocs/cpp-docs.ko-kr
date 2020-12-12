@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: `/X` (표준 포함 경로 무시)'
 title: /X(표준 포함 경로 무시)
 ms.date: 07/31/2020
 f1_keywords:
@@ -14,14 +15,14 @@ helpviewer_keywords:
 - X compiler option
 - Ignore Standard Include Paths compiler option
 ms.assetid: 16bdf2cc-c8dc-46e4-bdcc-f3caeba5e1ef
-ms.openlocfilehash: 652feeb200b7106aaca1ed7264f1e25c088a3dab
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 69936b80893de2c45622ec9973a218a94e8029a4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520410"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97261010"
 ---
-# <a name="x-ignore-standard-include-paths"></a>`/X`(표준 포함 경로 무시)
+# <a name="x-ignore-standard-include-paths"></a>`/X` (표준 포함 경로 무시)
 
 컴파일러가 PATH 및 INCLUDE 환경 변수에 지정 된 디렉터리에서 포함 파일을 검색 하지 않도록 합니다.
 
@@ -53,7 +54,7 @@ ms.locfileid: "87520410"
 CL /X /I \ALT\INCLUDE MAIN.C
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
 [MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

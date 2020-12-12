@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CAutoHideDockSite 클래스'
 title: CAutoHideDockSite 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - CAutoHideDockSite [MFC], UnSetAutoHideMode
 - CAutoHideDockSite [MFC], m_nExtraSpace
 ms.assetid: 2a0f6bec-c369-4ab7-977d-564e7946ebad
-ms.openlocfilehash: 14db8d93ea7706b3a4daad2ba751f8410974f6cb
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 00ac5224d559f84378bd87bd9abe56756a6f4d97
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841638"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97261283"
 ---
 # <a name="cautohidedocksite-class"></a>CAutoHideDockSite 클래스
 
@@ -143,7 +144,7 @@ virtual void DockPane(
 
 ### <a name="remarks"></a>설명
 
-기본 구현에서는 나중에 사용 하기 위해 제공 되는 *dockMethod*매개 변수를 사용 하지 않습니다.
+기본 구현에서는 나중에 사용 하기 위해 제공 되는 *dockMethod* 매개 변수를 사용 하지 않습니다.
 
 *LpRect* 가 NULL 인 경우 프레임 워크는 도킹 사이트의 기본 위치에 창을 배치 합니다. 도크 사이트가 가로 인 경우 기본 위치는 도크 사이트의 맨 왼쪽에 있습니다. 그렇지 않으면 기본 위치가 도크 사이트의 맨 위에 있습니다.
 
@@ -225,7 +226,7 @@ virtual void RepositionPanes(CRect& rectNewClientArea);
 
 ### <a name="remarks"></a>설명
 
-기본 구현에서는 *rectNewClientArea*를 사용 하지 않습니다. 전역 도구 모음 여백과 단추 간격으로 창을 다시 그립니다.
+기본 구현에서는 *rectNewClientArea* 를 사용 하지 않습니다. 전역 도구 모음 여백과 단추 간격으로 창을 다시 그립니다.
 
 ## <a name="cautohidedocksiteunsetautohidemode"></a><a name="unsetautohidemode"></a> CAutoHideDockSite:: UnSetAutoHideMode
 
@@ -242,7 +243,7 @@ void UnSetAutoHideMode(CMFCAutoHideBar* pAutoHideToolbar);
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 *pAutoHideToolbar*을 포함 하는 행을 검색 합니다. 해당 `CMFCAutoHideBar.UnSetAutoHideMode` 행의 모든 개체에 대해를 호출 `CMFCAutoHideBar` 합니다. *PAutoHideToolbar* 를 찾을 수 없거나 NULL 인 경우이 메서드 `CMFCAutoHideBar.UnSetAutoHideMode` 는의 모든 개체에 대해를 호출 `CMFCAutoHideBar` `CAutoHideDockSite` 합니다.
+이 메서드는 *pAutoHideToolbar* 을 포함 하는 행을 검색 합니다. 해당 `CMFCAutoHideBar.UnSetAutoHideMode` 행의 모든 개체에 대해를 호출 `CMFCAutoHideBar` 합니다. *PAutoHideToolbar* 를 찾을 수 없거나 NULL 인 경우이 메서드 `CMFCAutoHideBar.UnSetAutoHideMode` 는의 모든 개체에 대해를 호출 `CMFCAutoHideBar` `CAutoHideDockSite` 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

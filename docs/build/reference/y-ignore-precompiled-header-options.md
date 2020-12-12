@@ -1,4 +1,5 @@
 ---
+description: 자세히 알아보기:/Y-(미리 컴파일된 헤더 옵션 무시)
 title: /Y-(미리 컴파일된 헤더 옵션 무시)
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,16 +9,16 @@ helpviewer_keywords:
 - -Y- compiler option [C++]
 - /Y- compiler option [C++]
 ms.assetid: cfaecb36-58db-46b8-b04d-cca6072b1b7a
-ms.openlocfilehash: c56c25d587d84e599718d2e1a74d469def3501f7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b3d1eb6d404e0463ee547c1905f792b485bf65f6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62316186"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97260841"
 ---
 # <a name="y--ignore-precompiled-header-options"></a>/Y-(미리 컴파일된 헤더 옵션 무시)
 
-다른 모든 `/Y` 컴파일러 옵션을 무시과 자체를 재정의할 수 없습니다.
+다른 모든 `/Y` 컴파일러 옵션이 무시 되도록 하 고 자체적으로 재정의 될 수 없습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -29,7 +30,7 @@ ms.locfileid: "62316186"
 
 미리 컴파일된 헤더에 대 한 자세한 내용은 다음을 참조 하세요.
 
-- [/Y(미리 컴파일된 헤더)](y-precompiled-headers.md)
+- [/Y (미리 컴파일된 헤더)](y-precompiled-headers.md)
 
 - [미리 컴파일된 헤더 파일](../creating-precompiled-header-files.md)
 
@@ -47,7 +48,7 @@ ms.locfileid: "62316186"
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
-[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)
+[MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)

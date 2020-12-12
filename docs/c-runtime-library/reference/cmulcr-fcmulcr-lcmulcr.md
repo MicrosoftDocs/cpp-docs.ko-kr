@@ -1,4 +1,5 @@
 ---
+description: _Cmulcr, _FCmulcr, _LCmulcr에 대해 자세히 알아보세요.
 title: _Cmulcr, _FCmulcr, _LCmulcr
 ms.date: 03/30/2018
 api_name:
@@ -32,12 +33,12 @@ helpviewer_keywords:
 - _Cmulcr function
 - _FCmulcr function
 - _LCmulcr function
-ms.openlocfilehash: cbff1c2cb0e66da77b6fdc8127b78fb475aa5080
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: ea1dbbcea6890246b1e318da238fb8cc2ee3abb0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70942896"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97260724"
 ---
 # <a name="_cmulcr-_fcmulcr-_lcmulcr"></a>_Cmulcr, _FCmulcr, _LCmulcr
 
@@ -61,11 +62,11 @@ _Lcomplex _LCmulcr( _Lcomplex x, long double y );
 
 ## <a name="return-value"></a>반환 값
 
-복소수 *x* 및 flaoting number *y*의 복소수 곱을 나타내는 **_dcomplex**, **_dcomplex**또는 **_dcomplex** 구조체입니다.
+복소수 *x* 및 flaoting number *y* 의 복소수 곱을 나타내는 **_Dcomplex**, **_Fcomplex** 또는 **_Lcomplex** 구조체입니다.
 
 ## <a name="remarks"></a>설명
 
-기본 제공 산술 연산자는 복합 형식의 Microsoft 구현에서 작동 하지 않기 때문에 **_Cmulcr**, **_FCmulcr**및 **_LCmulcr** 함수는 부동 소수점 형식으로 복합 형식의 곱하기를 간소화 합니다.
+기본 제공 산술 연산자는 복합 형식의 Microsoft 구현에서 작동 하지 않기 때문에 **_Cmulcr**, **_FCmulcr** 및 **_LCmulcr** 함수는 부동 소수점 형식으로 복합 형식의 곱하기를 단순화 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -73,9 +74,9 @@ _Lcomplex _LCmulcr( _Lcomplex x, long double y );
 |-------------|--------------|------------------|
 |**_Cmulcr**, **_FCmulcr**, **_LCmulcr**|\<complex.h>|\<complex.h>|
 
-이러한 함수는 Microsoft 전용입니다. **_Dcomplex**, **_Dcomplex**및 **_dcomplex** 형식은 각각 구현 되지 않은 C99 네이티브 형식 **double _complex**, **float __l**및 **long double _dcomplex**에 해당 합니다. 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+이러한 함수는 Microsoft 전용입니다. **_Dcomplex**, **_Fcomplex** 및 **_Lcomplex** 형식은 각각 Microsoft에서 구현 되지 않은 C99 네이티브 형식 **double _Complex**, **float _Complex** 및 **long double _Complex** 에 해당 합니다. 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [사전순 함수 참조](crt-alphabetical-function-reference.md)<br/>
 [_Cbuild, _FCbuild, _LCbuild](cbuild-fcbuild-lcbuild.md)<br/>

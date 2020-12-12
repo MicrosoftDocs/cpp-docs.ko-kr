@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: array 클래스 (c + + 표준 라이브러리)'
 title: array 클래스(C++ 표준 라이브러리)| Microsoft 문서
 ms.date: 11/13/2019
 f1_keywords:
@@ -96,12 +97,12 @@ helpviewer_keywords:
 - std::array [C++], size
 - std::array [C++], swap
 ms.assetid: fdfd43a5-b2b5-4b9e-991f-93bf10fb4293
-ms.openlocfilehash: f826bb679d3391855d0a0dbc7c4355a735b9c529
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 058d1a6f3ad49392271f553fe381cc31624be360
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562573"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97261127"
 ---
 # <a name="array-class-c-standard-library"></a>array 클래스(C++ 표준 라이브러리)
 
@@ -124,21 +125,21 @@ class array;
 
 ## <a name="members"></a>멤버
 
-|형식 정의|Description|
+|형식 정의|설명|
 |-|-|
 |[const_iterator](#const_iterator)|제어되는 시퀀스에 대한 상수 반복기의 형식입니다.|
 |[const_pointer](#const_pointer)|요소에 대한 상수 포인터의 형식입니다.|
 |[const_reference](#const_reference)|요소에 대한 상수 참조의 형식입니다.|
 |[const_reverse_iterator](#const_reverse_iterator)|제어되는 시퀀스에 대한 상수 역방향 반복기의 형식입니다.|
 |[difference_type](#difference_type)|두 요소 사이의 부호가 있는 거리의 형식입니다.|
-|[반복](#iterator)|제어되는 시퀀스에 대한 반복기의 형식입니다.|
+|[iterator](#iterator)|제어되는 시퀀스에 대한 반복기의 형식입니다.|
 |[놓고](#pointer)|요소에 대한 포인터의 형식입니다.|
 |[reference](#reference)|요소에 대한 참조의 형식입니다.|
 |[reverse_iterator](#reverse_iterator)|제어되는 시퀀스에 대한 반대 반복기의 형식입니다.|
 |[size_type](#size_type)|두 요소 사이의 부호가 없는 거리의 형식입니다.|
 |[value_type](#value_type)|요소의 형식입니다.|
 
-|멤버 함수|Description|
+|멤버 함수|설명|
 |-|-|
 |[array](#array)|배열 개체를 생성합니다.|
 |[assign](#assign)|않게. `fill`를 사용 합니다.) 모든 요소를 바꿉니다.|
@@ -151,7 +152,7 @@ class array;
 |[crend](#crend)|역방향 배열 끝에 대해 const 반복기를 반환합니다.|
 |[data](#data)|첫 번째 요소의 주소를 가져옵니다.|
 |[empty](#empty)|요소가 있는지 테스트합니다.|
-|[종단](#end)|제어되는 시퀀스의 끝을 지정합니다.|
+|[end](#end)|제어되는 시퀀스의 끝을 지정합니다.|
 |[칠할](#fill)|지정된 값을 가진 모든 요소를 바꿉니다.|
 |[앞뒤](#front)|첫 번째 요소에 액세스합니다.|
 |[max_size](#max_size)|요소 수를 계산합니다.|
@@ -160,7 +161,7 @@ class array;
 |[size](#size)|요소 수를 계산합니다.|
 |[스왑을](#swap)|두 컨테이너의 내용을 바꿉니다.|
 
-|연산자|Description|
+|연산자|설명|
 |-|-|
 |[array:: operator =](#op_eq)|제어되는 시퀀스를 바꿉니다.|
 |[array:: operator\[\]](#op_at)|지정된 위치에 있는 요소에 액세스합니다.|
@@ -200,7 +201,7 @@ array(const array& right);
 
 기본 생성자 `array()`는 제어되는 시퀀스를 초기화되지 않은 상태(또는 기본 시퀀스를 초기화된 상태)로 유지합니다. 초기화되지 않은 제어되는 시퀀스를 지정하려면 이 생성자를 사용합니다.
 
-Copy 생성자는 `array(const array& right)` 시퀀스 [*right* `.begin()` , *right*)를 사용 하 여 제어 되는 시퀀스를 초기화 합니다 `.end()` . 배열 개체 *right*에 의해 제어되는 시퀀스의 복사본인 초기의 제어되는 시퀀스를 지정하려면 이 생성자를 사용합니다.
+Copy 생성자는 `array(const array& right)` 시퀀스 [*right* `.begin()` , *right*)를 사용 하 여 제어 되는 시퀀스를 초기화 합니다 `.end()` . 배열 개체 *right* 에 의해 제어되는 시퀀스의 복사본인 초기의 제어되는 시퀀스를 지정하려면 이 생성자를 사용합니다.
 
 ### <a name="example"></a>예제
 
@@ -388,7 +389,7 @@ int main()
 const_iterator cbegin() const noexcept;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`const`** 범위의 첫 번째 요소 또는 빈 범위의 끝 바로 다음 위치를 가리키는 임의 액세스 반복기입니다 (빈 범위의 경우 `cbegin() == cend()` ).
 
@@ -414,7 +415,7 @@ auto i2 = Container.cbegin();
 const_iterator cend() const noexcept;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 범위 끝의 바로 다음을 가리키는 임의 액세스 반복기입니다.
 
@@ -622,7 +623,7 @@ int main()
 const_reverse_iterator crbegin() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 역방향 배열에서 첫 번째 요소의 주소를 지정하거나 정방향 배열에서 마지막 요소의 주소를 지정하는 const 역방향 임의 액세스 반복기입니다.
 
@@ -666,7 +667,7 @@ The first element of the reversed array is 2.
 const_reverse_iterator crend() const noexcept;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 역방향 배열에서 마지막 요소 다음의 위치(역방향이 해제된 배열의 첫 번째 요소 앞의 위치) 주소를 지정하는 const 역방향 임의 액세스 반복기입니다.
 
@@ -1089,7 +1090,7 @@ constexpr const_reference operator[](size_type off) const;
 
 멤버 함수는 위치에서 제어 되는 시퀀스의 요소에 대 한 참조를 *반환 합니다.* 해당 위치가 유효하지 않을 경우 동작이 정의되지 않습니다.
 
-또한 **배열의**요소에 대 한 참조를 가져오는 데 사용할 수 있는 비 멤버 [get](array-functions.md#get) 함수도 있습니다.
+또한 **배열의** 요소에 대 한 참조를 가져오는 데 사용할 수 있는 비 멤버 [get](array-functions.md#get) 함수도 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -1138,7 +1139,7 @@ array<Value> operator=(array<Value> right);
 
 ### <a name="remarks"></a>설명
 
-멤버 연산자 *는의 각 요소를 제어* 되는 시퀀스의 해당 요소에 할당 하 고를 반환 **`*this`** 합니다. 이를 사용 하 여 제어 되는 시퀀스를 *오른쪽*에 있는 제어 되는 시퀀스의 복사본으로 바꿉니다.
+멤버 연산자 *는의 각 요소를 제어* 되는 시퀀스의 해당 요소에 할당 하 고를 반환 **`*this`** 합니다. 이를 사용 하 여 제어 되는 시퀀스를 *오른쪽* 에 있는 제어 되는 시퀀스의 복사본으로 바꿉니다.
 
 ### <a name="example"></a>예제
 
@@ -1502,7 +1503,7 @@ void swap(array& right);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 제어 되는 시퀀스를 **`*this`** 과 *오른쪽*으로 바꿉니다. `N`에 비례하여 많은 요소 할당과 생성자 호출을 수행합니다.
+멤버 함수는 제어 되는 시퀀스를 **`*this`** 과 *오른쪽* 으로 바꿉니다. `N`에 비례하여 많은 요소 할당과 생성자 호출을 수행합니다.
 
 두 **배열** 인스턴스를 교환 하는 데 사용할 수 있는 비 멤버 [swap](array-functions.md#swap) 함수도 있습니다.
 

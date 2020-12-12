@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: clearerr'
 title: clearerr
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - resetting stream error indicator
 - clearerr function
 ms.assetid: a9711cd4-3335-43d4-a018-87bbac5b3bac
-ms.openlocfilehash: fc9ce31c4bdb0f7bedba461dd48b4072bfc50613
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 3085039b142f4aa5eec84259626deef961e37fa0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916976"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97260789"
 ---
 # <a name="clearerr"></a>clearerr
 
@@ -54,9 +55,9 @@ void clearerr(
 
 ## <a name="remarks"></a>설명
 
-**Clearerr** 함수는 *스트림에*대 한 오류 표시기와 파일 끝 표시기를 다시 설정 합니다. 오류 표시기는 자동으로 지워지지 않습니다. 지정 된 스트림에 대 한 오류 표시기가 설정 되 면 **clearerr**, [fseek](fseek-fseeki64.md), **fsetpos**또는 [되감기](rewind.md) 가 호출 될 때까지 해당 스트림의 작업은 오류 값을 계속 반환 합니다.
+**Clearerr** 함수는 *스트림에* 대 한 오류 표시기와 파일 끝 표시기를 다시 설정 합니다. 오류 표시기는 자동으로 지워지지 않습니다. 지정 된 스트림에 대 한 오류 표시기가 설정 되 면 **clearerr**, [fseek](fseek-fseeki64.md), **fsetpos** 또는 [되감기](rewind.md) 가 호출 될 때까지 해당 스트림의 작업은 오류 값을 계속 반환 합니다.
 
-*Stream* 이 **NULL**인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **errno** 를 **EINVAL** 로 설정 하 고를 반환 합니다. **Errno** 및 오류 코드에 대 한 자세한 내용은 [errno 상수](../../c-runtime-library/errno-constants.md)를 참조 하십시오.
+*Stream* 이 **NULL** 인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **errno** 를 **EINVAL** 로 설정 하 고를 반환 합니다. **Errno** 및 오류 코드에 대 한 자세한 내용은 [errno 상수](../../c-runtime-library/errno-constants.md)를 참조 하십시오.
 
 이 함수의 더 안전한 버전을 사용할 수 있습니다. [clearerr_s](clearerr-s.md)를 참조하세요.
 

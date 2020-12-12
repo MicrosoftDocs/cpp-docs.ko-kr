@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: XML 문서 (Visual C++)'
 title: XML 문서(Visual C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - comments, C++ source code files
 - /// delimiter for C++ documentation
 ms.assetid: a1aec1c5-b2d1-4c74-83ae-1dbbbb76b506
-ms.openlocfilehash: c25c54e81bb9c10fc871a2abc178f57e661ae4e6
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 762380d08483292866cb96b34be4d85f7a2f510a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81335727"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97260945"
 ---
 # <a name="xml-documentation-visual-c"></a>XML 문서(Visual C++)
 
@@ -31,11 +32,11 @@ Visual C++ 코드 파일에서 XML 문서 주석은 메서드 또는 형식 정�
 
 문서 주석이 있는 .xml 파일을 만드는 방법에 대한 자세한 내용은 다음 항목을 참조하세요.
 
-|원하는 정보|참조|
+|원하는 정보|참조 항목|
 |---------------------------|---------|
 |사용할 컴파일러 옵션|[/doc](doc-process-documentation-comments-c-cpp.md)|
-|문서에서 일반적으로 사용되는 기능을 제공하는 데 사용할 수 있는 태그|[문서 주석에 권장태그](recommended-tags-for-documentation-comments-visual-cpp.md)|
-|컴파일러에서 코드의 구문을 식별하기 위해 생성하는 ID 문자열|[.xml 파일 처리](dot-xml-file-processing.md)|
+|문서에서 일반적으로 사용되는 기능을 제공하는 데 사용할 수 있는 태그|[문서 주석에 대한 권장 태그](recommended-tags-for-documentation-comments-visual-cpp.md)|
+|컴파일러에서 코드의 구문을 식별하기 위해 생성하는 ID 문자열|[.Xml 파일 처리](dot-xml-file-processing.md)|
 |문서 태그를 구분하는 방법|[Visual C++ 문서 태그의 구분 기호](delimiters-for-visual-cpp-documentation-tags.md)|
 |하나 이상의 .xdc 파일에서.xml 파일을 생성합니다.|[XDCMake 참조](xdcmake-reference.md)|
 |Visual Studio 기능 영역과 관련된 XML에 대한 정보 링크|[Visual Studio의 XML](/visualstudio/xml-tools/xml-tools-in-visual-studio)|
