@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: _strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l'
 title: _strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l
 ms.date: 4/2/2020
 api_name:
@@ -76,12 +77,12 @@ helpviewer_keywords:
 - mbsnicmp function
 - _wcsnicmp function
 ms.assetid: df6e5037-4039-4c85-a0a6-21d4ef513966
-ms.openlocfilehash: 3be900679dddbbab7cba0982c11d5c75a190d685
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: d43a0879bf044f71b9f71b6c5d97d0bd3b1353d6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920088"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306081"
 ---
 # <a name="_strnicmp-_wcsnicmp-_mbsnicmp-_strnicmp_l-_wcsnicmp_l-_mbsnicmp_l"></a>_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l
 
@@ -139,7 +140,7 @@ int _mbsnicmp_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 다음과 같이 부분 문자열 간의 관계를 나타냅니다.
 
@@ -149,17 +150,17 @@ int _mbsnicmp_l(
 |0|*string1* 하위 문자열 *은 문자열이 아닌 부분 문자열과 같습니다* .|
 |> 0|*string1* 부분 문자열이 문자열 *2* 의 부분 문자열 보다 큽니다.|
 
-매개 변수 유효성 검사 오류 시 이러한 함수는 **_NLSCMPERROR**를 반환 합니다 .이 \<함수는> 및 \<mbstring>에 정의 되어 있습니다.
+매개 변수 유효성 검사 오류 시 이러한 함수는 및에 정의 된 **_NLSCMPERROR** 를 \<string.h> 반환 \<mbstring.h> 합니다.
 
 ## <a name="remarks"></a>설명
 
-**_Strnicmp** 함수 서 수로는 *문자열* 1과 *문자열 2*의 처음 *개수* 문자를 비교 합니다. 비교는 대소문자와 관계없이 각 문자를 소문자로 변환하여 수행됩니다. **_strnicmp** 는 대/소문자를 구분 하지 않는 **strncmp**버전입니다. *Count* 문자를 비교 하기 전에 두 문자열 중 하나에서 종결 null 문자에 도달 하면 비교가 종료 됩니다. *Count* 문자를 비교 하기 전에 문자열 중 하나에서 종결 null 문자에 도달할 때 문자열이 같으면 문자열이 낮을수록 짧습니다.
+**_Strnicmp** 함수 서 수로는 *문자열* 1과 *문자열 2* 의 처음 *개수* 문자를 비교 합니다. 비교는 대소문자와 관계없이 각 문자를 소문자로 변환하여 수행됩니다. **_strnicmp** 는 대/소문자를 구분 하지 않는 **strncmp** 버전입니다. *Count* 문자를 비교 하기 전에 두 문자열 중 하나에서 종결 null 문자에 도달 하면 비교가 종료 됩니다. *Count* 문자를 비교 하기 전에 문자열 중 하나에서 종결 null 문자에 도달할 때 문자열이 같으면 문자열이 낮을수록 짧습니다.
 
-ASCII 테이블에서 91~96까지의 문자('[', '\\', ']', '^', '_' 및 '\`')는 영숫자보다 작은 것으로 평가됩니다. 이 순서는 **stricmp**의 순서와 동일 합니다.
+ASCII 테이블에서 91~96까지의 문자('[', '\\', ']', '^', '_' 및 '\`')는 영숫자보다 작은 것으로 평가됩니다. 이 순서는 **stricmp** 의 순서와 동일 합니다.
 
-**_wcsnicmp** 및 **_mbsnicmp** 는 **_strnicmp**의 와이드 문자 및 멀티 바이트 문자 버전입니다. **_Wcsnicmp** 의 인수는 와이드 문자 문자열입니다. **_mbsnicmp** 의 이러한 문자열은 멀티 바이트 문자열입니다. **_mbsnicmp** 는 현재 멀티 바이트 코드 페이지에 따라 멀티 바이트 문자 시퀀스를 인식 하 고 오류 발생 시 **_NLSCMPERROR** 을 반환 합니다. 자세한 내용은 [코드 페이지](../../c-runtime-library/code-pages.md) 참조하세요. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다. 이러한 함수는 로캘 설정의 영향을 받습니다. 즉, **_l** 접미사가 없는 버전은 로캘 종속 동작에 현재 로캘을 사용 합니다. **_l** 접미사가 있는 버전은 전달 된 *로캘을* 대신 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**_wcsnicmp** 및 **_mbsnicmp** 는 **_strnicmp** 의 와이드 문자 및 멀티 바이트 문자 버전입니다. **_Wcsnicmp** 의 인수는 와이드 문자 문자열입니다. **_mbsnicmp** 의 이러한 문자열은 멀티 바이트 문자열입니다. **_mbsnicmp** 는 현재 멀티 바이트 코드 페이지에 따라 멀티 바이트 문자 시퀀스를 인식 하 고 오류 발생 시 **_NLSCMPERROR** 을 반환 합니다. 자세한 내용은 [코드 페이지](../../c-runtime-library/code-pages.md) 참조하세요. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다. 이러한 함수는 로캘 설정의 영향을 받습니다. 즉, **_l** 접미사가 없는 버전은 로캘 종속 동작에 현재 로캘을 사용 합니다. **_l** 접미사가 있는 버전은 전달 된 *로캘을* 대신 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-이러한 모든 함수는 해당 함수 매개 변수의 유효성을 검사합니다. *String1* 또는 *문자열* 하나가 Null 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **_NLSCMPERROR** 을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
+이러한 모든 함수는 해당 함수 매개 변수의 유효성을 검사합니다. *String1* 또는 *문자열* 하나가 Null 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **_NLSCMPERROR** 을 반환 하 고 **errno** 를 **EINVAL** 로 설정 합니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -185,7 +186,7 @@ ASCII 테이블에서 91~96까지의 문자('[', '\\', ']', '^', '_' 및 '\`')�
 
 [strncmp](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)에 대한 예제를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [문자열 조작](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)<br/>

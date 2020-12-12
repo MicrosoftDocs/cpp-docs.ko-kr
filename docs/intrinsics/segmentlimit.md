@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __segmentlimit'
 title: __segmentlimit
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - __segmentlimit intrinsic
 - lsl instruction
 ms.assetid: d0bc3630-90cb-4185-8667-686fd41e23d4
-ms.openlocfilehash: 9239d8de8ce2065d09ee7975301a2cb41832ba89
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 49f8688918e07e143615af7b184a784daa0eaaa1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217985"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97307004"
 ---
 # <a name="__segmentlimit"></a>__segmentlimit
 
 **Microsoft 전용**
 
-`lsl` (로드 세그먼트 제한) 명령을 생성 합니다.
+`lsl`(로드 세그먼트 제한) 명령을 생성 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -35,15 +36,15 @@ unsigned long __segmentlimit(
 
 ## <a name="return-value"></a>반환 값
 
-선택 기가 유효 하 고 현재 사용 권한 수준에서 표시 되는 경우 *에*의해 지정 된 세그먼트 선택기의 세그먼트 한도입니다.
+선택 기가 유효 하 고 현재 사용 권한 수준에서 표시 되는 경우 *에* 의해 지정 된 세그먼트 선택기의 세그먼트 한도입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`__segmentlimit`|x86, x64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 ## <a name="remarks"></a>설명
 
@@ -107,6 +108,6 @@ sl was changed
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

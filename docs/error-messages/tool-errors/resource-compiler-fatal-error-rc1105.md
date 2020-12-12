@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 리소스 컴파일러 심각한 오류 RC1105'
 title: 리소스 컴파일러 심각한 오류 RC1105
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - RC1105
 ms.assetid: 80ce18e7-44ee-4844-bede-321fe0844d56
-ms.openlocfilehash: 395c1e66e160d6ee6ea6621ce1fa894a0ba29428
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 469ae65492d6677ca48f4d5548682a39ebd44f34
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80182437"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97307056"
 ---
 # <a name="resource-compiler-fatal-error-rc1105"></a>리소스 컴파일러 심각한 오류 RC1105
 

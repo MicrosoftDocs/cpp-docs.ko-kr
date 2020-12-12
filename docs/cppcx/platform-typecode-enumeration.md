@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Platform:: TypeCode 열거형'
 title: Platform::TypeCode 열거형
 ms.date: 12/30/2016
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::TypeCode Enumeration
 ms.assetid: 93c1305f-eb16-4bec-aead-f88d9518b4cf
-ms.openlocfilehash: 86bc17c45f36a5a72b089340e166df11e9a4334d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3e7bc3d5fa3cf8aec29a9aa3f20c7d02489eddf9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214283"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97307888"
 ---
 # <a name="platformtypecode-enumeration"></a>Platform::TypeCode 열거형
 
@@ -28,12 +29,12 @@ enum class TypeCode {};
 
 |형식 코드|설명|
 |---------------|-----------------|
-|부울|Platform::Boolean 형식입니다.|
+|Boolean|Platform::Boolean 형식입니다.|
 |Char16|default::char16 형식입니다.|
 |DateTime|DateTime 형식입니다.|
 |Decimal|숫자 형식입니다.|
 |Double|default::float64 형식입니다.|
-|비어 있음|Void|
+|Empty|Void|
 |Int16|default::int16 형식입니다.|
 |Int32|default::int32 형식입니다.|
 |Int64|default::int64 형식입니다.|
@@ -54,4 +55,4 @@ enum class TypeCode {};
 
 **네임스페이스:** Platform
 
-**메타데이터:** platform.winmd
+**메타 데이터:** platform.object

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CMFCTabDropTarget 클래스'
 title: CMFCTabDropTarget 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - CMFCTabDropTarget [MFC], OnDropEx
 - CMFCTabDropTarget [MFC], Register
 ms.assetid: 9777b7b6-10da-4c4b-b1d1-7ea795b0f1cb
-ms.openlocfilehash: 9160cfd847977f98ac22eecd72632822c751a3aa
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 2a12d171a934912993a61ba4ae915d9e1f3a5cf6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834234"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306783"
 ---
 # <a name="cmfctabdroptarget-class"></a>CMFCTabDropTarget 클래스
 
@@ -105,7 +106,7 @@ virtual DROPEFFECT OnDragEnter(
 
 ### <a name="return-value"></a>반환 값
 
-놓기가 *point*로 지정 된 위치에서 발생 하는 경우 발생 하는 효과입니다. 다음 중 하나 이상이 될 수 있습니다.
+놓기가 *point* 로 지정 된 위치에서 발생 하는 경우 발생 하는 효과입니다. 다음 중 하나 이상이 될 수 있습니다.
 
 - DROPEFFECT_NONE
 
@@ -168,7 +169,7 @@ virtual DROPEFFECT OnDragOver(
 
 ### <a name="return-value"></a>반환 값
 
-놓기가 *point*로 지정 된 위치에서 발생 하는 경우 발생 하는 효과입니다. 다음 중 하나 이상이 될 수 있습니다.
+놓기가 *point* 로 지정 된 위치에서 발생 하는 경우 발생 하는 효과입니다. 다음 중 하나 이상이 될 수 있습니다.
 
 - DROPEFFECT_NONE
 
@@ -232,7 +233,7 @@ virtual DROPEFFECT OnDropEx(
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 `CMFCBaseTabCtrl::OnDrop` 도구 모음 프레임 워크가 사용자 지정 모드에 있고 클립보드 데이터 형식을 사용할 수 있는 경우를 호출 합니다. 에 대 한 호출에서 0이 아닌 값을 반환 하는 경우 `CMFCBaseTabCtrl::OnDrop` 이 메서드는 *dropEffect*에 지정 된 기본 놓기 효과를 반환 합니다. 그렇지 않으면이 메서드는 DROPEFFECT_NONE 반환 합니다. 드롭 효과에 대 한 자세한 내용은 [Coledroptarget:: OnDropEx](../../mfc/reference/coledroptarget-class.md#ondropex)를 참조 하세요.
+이 메서드는 `CMFCBaseTabCtrl::OnDrop` 도구 모음 프레임 워크가 사용자 지정 모드에 있고 클립보드 데이터 형식을 사용할 수 있는 경우를 호출 합니다. 에 대 한 호출에서 0이 아닌 값을 반환 하는 경우 `CMFCBaseTabCtrl::OnDrop` 이 메서드는 *dropEffect* 에 지정 된 기본 놓기 효과를 반환 합니다. 그렇지 않으면이 메서드는 DROPEFFECT_NONE 반환 합니다. 드롭 효과에 대 한 자세한 내용은 [Coledroptarget:: OnDropEx](../../mfc/reference/coledroptarget-class.md#ondropex)를 참조 하세요.
 
 사용자 지정 모드에 대 한 자세한 내용은 [Cmfctoolbar:: IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode)를 참조 하세요. 클립보드 데이터 형식에 대 한 자세한 내용은 [Coledataobject:: IsDataAvailable](../../mfc/reference/coledataobject-class.md#isdataavailable)를 참조 하세요.
 

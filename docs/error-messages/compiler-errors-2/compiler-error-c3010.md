@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3010'
 title: 컴파일러 오류 C3010
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3010
 ms.assetid: e959d038-bba6-432a-9c0a-0470474de7d9
-ms.openlocfilehash: cbce65840280d3171ea84638b968686fa65633be
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 50467ad1cb03255cbb5ef008e2ac2897de4a6a5c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75302252"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97305314"
 ---
 # <a name="compiler-error-c3010"></a>컴파일러 오류 C3010
 

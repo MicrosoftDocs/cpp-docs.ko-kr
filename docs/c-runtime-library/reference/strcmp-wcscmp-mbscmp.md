@@ -1,4 +1,5 @@
 ---
+description: Strcmp, wcscmp, _mbscmp, _mbscmp_l에 대해 자세히 알아보세요.
 title: strcmp, wcscmp, _mbscmp, _mbscmp_l
 ms.date: 4/2/2020
 api_name:
@@ -48,12 +49,12 @@ helpviewer_keywords:
 - _ftcscmp function
 - ftcscmp function
 ms.assetid: 5d216b57-7a5c-4cb3-abf0-0f4facf4396d
-ms.openlocfilehash: 805e355fe12cb2f7ead6180edd45ad0748570141
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 0c611b92b39d04e455bbd31f22f98898723ff7c1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920383"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306159"
 ---
 # <a name="strcmp-wcscmp-_mbscmp-_mbscmp_l"></a>strcmp, wcscmp, _mbscmp, _mbscmp_l
 
@@ -92,9 +93,9 @@ int _mbscmp_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-이러한 각 함수에 대 한 반환 값은 *문자열* 1에서 *문자열 2*로의 서 수 관계를 나타냅니다.
+이러한 각 함수에 대 한 반환 값은 *문자열* 1에서 *문자열 2* 로의 서 수 관계를 나타냅니다.
 
 |값|문자열 1과 문자열 2의 관계|
 |-----------|----------------------------------------|
@@ -102,11 +103,11 @@ int _mbscmp_l(
 |0|*string1* 은 *문자열 2* 와 동일 합니다.|
 |> 0|*string1* 이 *문자열 2* 보다 큽니다.|
 
-매개 변수 유효성 검사 오류 시 및를 **_mbscmp** 하 고 **_mbscmp_l** **_NLSCMPERROR**을 반환 합니다 \<.이 매개 변수는 \<> 및> mbstrom.
+매개 변수 유효성 검사 오류 시 및에 정의 된 **_NLSCMPERROR** 를 반환 하 **_mbscmp_l** **_mbscmp** \<string.h> \<mbstring.h> 합니다.
 
 ## <a name="remarks"></a>설명
 
-**Strcmp** 함수는 *문자열* 1과 *문자열 2* 의 서 수 비교를 수행 하 고 해당 관계를 나타내는 값을 반환 합니다. **wcscmp** 및 **_mbscmp** 는 각각 **strcmp**의 와이드 문자 및 멀티 바이트 문자 버전입니다. **_mbscmp** 는 현재 멀티 바이트 코드 페이지에 따라 멀티 바이트 문자 시퀀스를 인식 하 고 오류 발생 시 **_NLSCMPERROR** 을 반환 합니다. **_mbscmp_l** 는 동일한 동작을 갖지만 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 합니다. 자세한 내용은 [코드 페이지](../../c-runtime-library/code-pages.md) 참조하세요. 또한 *string1* 또는 *문자열* 1이 Null 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 **_mbscmp** . 계속 해 서 실행 하도록 허용한 경우 **_mbscmp** 하 **_mbscmp_l** 고 _mbscmp_l **_NLSCMPERROR** 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다. **strcmp** 및 **wcscmp** 는 해당 매개 변수의 유효성을 검사 하지 않습니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다.
+**Strcmp** 함수는 *문자열* 1과 *문자열 2* 의 서 수 비교를 수행 하 고 해당 관계를 나타내는 값을 반환 합니다. **wcscmp** 및 **_mbscmp** 는 각각 **strcmp** 의 와이드 문자 및 멀티 바이트 문자 버전입니다. **_mbscmp** 는 현재 멀티 바이트 코드 페이지에 따라 멀티 바이트 문자 시퀀스를 인식 하 고 오류 발생 시 **_NLSCMPERROR** 을 반환 합니다. **_mbscmp_l** 는 동일한 동작을 갖지만 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 합니다. 자세한 내용은 [코드 페이지](../../c-runtime-library/code-pages.md) 참조하세요. 또한 *string1* 또는 *문자열* 1이 Null 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 **_mbscmp** . 계속 해 서 실행 하도록 허용한 경우 **_mbscmp** 하  고 _mbscmp_l **_NLSCMPERROR** 반환 하 고 **errno** 를 **EINVAL** 로 설정 합니다. **strcmp** 및 **wcscmp** 는 해당 매개 변수의 유효성을 검사 하지 않습니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -122,7 +123,7 @@ int _mbscmp_l(
 
 문자 집합과 사전적 문자 순서가 다른 로캘에서는 **strcmp** 대신 **strcoll** 를 사용 하 여 문자열을 사전적로 비교할 수 있습니다. 또는 원본 문자열에서 **strxfrm** 를 사용한 다음 결과 문자열에 **strcmp** 를 사용할 수 있습니다.
 
-**Strcmp** 함수는 대/소문자를 구분 합니다. stricmp, ** \_wcsicmp**및 ** \_mbsicmp** 는 먼저 문자열을 소문자 형식으로 변환 하 여 문자열을 비교 합니다. ** \_** ASCII 테이블의 ' Z '와 ' a ' 사이에 있는 문자 (' [', '\\', '] ', ' ^ ', ' _ ' 및 '\`')를 포함 하는 두 문자열은 대/소문자에 따라 서로 다른 방식으로 비교 됩니다. 예를 들어 두 문자열 "ABCDE...Z" 및 "ABCD ^"는 비교가 소문자 ("abcde...z" > "abcd ^") 인 경우와 다른 방법 ("ABCDE...Z" < "ABCD ^")을 비교 하는 경우 한 가지 방법을 비교 합니다.
+**Strcmp** 함수는 대/소문자를 구분 합니다. **\_ stricmp**, **\_ wcsicmp** 및 **\_ mbsicmp** 는 먼저 문자열을 소문자 형식으로 변환 하 여 문자열을 비교 합니다. ASCII 테이블의 ' Z '와 ' a ' 사이에 있는 문자 (' [', ' \\ ', '] ', ' ^ ', ' _ ' 및 ' ')를 포함 하는 두 문자열은 \` 대/소문자에 따라 서로 다른 방식으로 비교 됩니다. 예를 들어 두 문자열 "ABCDE...Z" 및 "ABCD ^"는 비교가 소문자 ("abcde...z" > "abcd ^") 인 경우와 다른 방법 ("ABCDE...Z" < "ABCD ^")을 비교 하는 경우 한 가지 방법을 비교 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -187,7 +188,7 @@ Compare strings:
    _stricmp:  String 1 is equal to string 2
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [문자열 조작](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [memcmp, wmemcmp](memcmp-wmemcmp.md)<br/>

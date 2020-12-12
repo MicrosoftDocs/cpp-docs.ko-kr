@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: ostrstream 클래스'
 title: ostrstream 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - std::ostrstream [C++], rdbuf
 - std::ostrstream [C++], str
 ms.assetid: e2e34679-b266-4728-a8e1-8eda5d400e46
-ms.openlocfilehash: f17d8006aea6c5467f8de270318386bb12df264a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9966f044d48aa762d681bafcfc22441f7124c9a8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222227"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97305145"
 ---
 # <a name="ostrstream-class"></a>ostrstream 클래스
 
@@ -38,7 +39,7 @@ class ostrstream : public ostream
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[ostrstream](#ostrstream)|`ostrstream` 형식의 개체를 생성합니다.|
 
@@ -57,7 +58,7 @@ class ostrstream : public ostream
 
 **네임스페이스:** std
 
-## <a name="ostrstreamfreeze"></a><a name="freeze"></a>ostrstream:: freeze
+## <a name="ostrstreamfreeze"></a><a name="freeze"></a> ostrstream:: freeze
 
 스트림 버퍼 작업을 통해 스트림 버퍼를 사용할 수 없게 합니다.
 
@@ -78,7 +79,7 @@ void freeze(bool _Freezeit = true);
 
 을 사용 하는 예제는 [strstream:: freeze](../standard-library/strstreambuf-class.md#freeze) 를 참조 하세요 `freeze` .
 
-## <a name="ostrstreamostrstream"></a><a name="ostrstream"></a>ostrstream:: ostrstream
+## <a name="ostrstreamostrstream"></a><a name="ostrstream"></a> ostrstream:: ostrstream
 
 `ostrstream` 형식의 개체를 생성합니다.
 
@@ -109,7 +110,7 @@ ostrstream(char* ptr,
 
 - 그렇지 않으면는 `ptr` 첫 번째 요소가로 지정 된 C 문자열을 포함 하는 count 요소 배열의 첫 번째 요소를 지정 `ptr` 하 고 생성자는 `strstreambuf` ( `ptr` , `count` , `ptr`  +  `strlen` ( `ptr` ))를 호출 합니다.
 
-## <a name="ostrstreampcount"></a><a name="pcount"></a>ostrstream::p 수
+## <a name="ostrstreampcount"></a><a name="pcount"></a> ostrstream::p 수
 
 제어되는 시퀀스에 기록되는 요소 수의 개수를 반환합니다.
 
@@ -117,7 +118,7 @@ ostrstream(char* ptr,
 streamsize pcount() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 제어되는 시퀀스에 기록되는 요소 수의 개수입니다.
 
@@ -129,7 +130,7 @@ streamsize pcount() const;
 
 `pcount`를 사용하는 샘플은 [strstream::pcount](../standard-library/strstreambuf-class.md#pcount)를 참조하세요.
 
-## <a name="ostrstreamrdbuf"></a><a name="rdbuf"></a>ostrstream:: rdbuf
+## <a name="ostrstreamrdbuf"></a><a name="rdbuf"></a> ostrstream:: rdbuf
 
 스트림의 연결된 strstreambuf 개체에 대한 포인터를 반환합니다.
 
@@ -137,7 +138,7 @@ streamsize pcount() const;
 strstreambuf *rdbuf() const
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 스트림의 연결된 strstreambuf 개체에 대한 포인터입니다.
 
@@ -149,7 +150,7 @@ strstreambuf *rdbuf() const
 
 `rdbuf`를 사용하는 샘플은 [strstreambuf::pcount](../standard-library/strstreambuf-class.md#pcount)를 참조하세요.
 
-## <a name="ostrstreamstr"></a><a name="str"></a>ostrstream:: str
+## <a name="ostrstreamstr"></a><a name="str"></a> ostrstream:: str
 
 [freeze](../standard-library/strstreambuf-class.md#freeze)를 호출한 다음 제어되는 시퀀스의 시작 부분에 대한 포인터를 반환합니다.
 
@@ -157,7 +158,7 @@ strstreambuf *rdbuf() const
 char *str();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 제어되는 시퀀스의 시작 부분에 대한 포인터입니다.
 

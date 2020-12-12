@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2489'
 title: 컴파일러 오류 C2489
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2489
 ms.assetid: 67d8cd98-db7e-4f7f-86b4-4af7bc89ec8b
-ms.openlocfilehash: 1977e32cec9d88a51aa6ec450a09be7fc33eb408
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 21e7a935ee3cf9c0dc1aa886b94ada931fbb64ca
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757100"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97305405"
 ---
 # <a name="compiler-error-c2489"></a>컴파일러 오류 C2489
 

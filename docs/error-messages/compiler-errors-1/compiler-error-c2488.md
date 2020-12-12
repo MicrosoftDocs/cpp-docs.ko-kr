@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2488'
 title: 컴파일러 오류 C2488
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2488
 ms.assetid: cd435909-43e4-43c6-a57c-5d02468ef75f
-ms.openlocfilehash: 0c361db98e0ffd3f37f9e08b78f52ba7ae547030
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: bb6a36749b630c4193174314f47a150f0981b0df
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757113"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97305496"
 ---
 # <a name="compiler-error-c2488"></a>컴파일러 오류 C2488
 

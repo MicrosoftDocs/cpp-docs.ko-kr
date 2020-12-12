@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CAccessorRowset 클래스'
 title: CAccessorRowset 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -27,12 +28,12 @@ helpviewer_keywords:
 - FreeRecordMemory method
 - GetColumnInfo method
 ms.assetid: bd4f58ed-cebf-4d43-8985-1e5fcbf06953
-ms.openlocfilehash: d9dd2eec3948896487b5b977d1107db1f4a1046b
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: c93580fa41967004947b075e82e00bdcb745ad4e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91498722"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97307576"
 ---
 # <a name="caccessorrowset-class"></a>CAccessorRowset 클래스
 
@@ -92,7 +93,7 @@ HRESULT Bind();
 
 초기화는 `CAccessorRowset` 개체입니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 CAccessorRowset();
@@ -116,7 +117,7 @@ void Close();
 
 현재 레코드에서 해제 해야 하는 모든 열을 해제 합니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void FreeRecordMemory();
@@ -139,7 +140,7 @@ HRESULT GetColumnInfo(DBORDINAL* pColumns,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [IColumnsInfo:: GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [IColumnsInfo:: GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) 를 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -149,7 +150,7 @@ HRESULT GetColumnInfo(DBORDINAL* pColumns,
 
 사용자는 반환 된 열 정보와 문자열 버퍼를 해제 해야 합니다. [Cdynamicaccessor](../../data/oledb/cdynamicaccessor-class.md) 를 사용 하 고 바인딩을 재정의 해야 하는 경우이 메서드의 두 번째 버전을 사용 합니다.
 
-자세한 내용은 *OLE DB 프로그래머 참조*에서 [IColumnsInfo:: GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) 를 참조 하세요.
+자세한 내용은 *OLE DB 프로그래머 참조* 에서 [IColumnsInfo:: GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) 를 참조 하세요.
 
 ## <a name="see-also"></a>참고 항목
 

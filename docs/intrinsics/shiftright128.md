@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __shiftright128'
 title: __shiftright128
 ms.date: 09/02/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - __shiftright128 intrinsic
 ms.assetid: 5419a6c4-0de1-43fb-b314-4faa5b2d051f
-ms.openlocfilehash: a18a9958a51f291e4997c23e87ee48f739562416
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 71f8a0d9b740ebfef5e930715e07d1ec31950269
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70220024"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306978"
 ---
 # <a name="__shiftright128"></a>__shiftright128
 
@@ -46,11 +47,11 @@ unsigned __int64 __shiftright128(
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`__shiftright128`|X64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 ## <a name="remarks"></a>설명
 
@@ -62,7 +63,7 @@ unsigned __int64 __shiftright128(
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [__shiftleft128](../intrinsics/shiftleft128.md)\
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

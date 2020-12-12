@@ -1,24 +1,25 @@
 ---
-title: 명령 개체 인터페이스
+description: '자세한 정보: Command 개체 인터페이스'
+title: Command 개체 인터페이스
 ms.date: 10/24/2018
 helpviewer_keywords:
 - command object interfaces [C++]
 - command objects [OLE DB]
 - OLE DB [C++], command object interfaces
 ms.assetid: dacff5ae-252c-4f20-9ad7-4e602cc48536
-ms.openlocfilehash: 755c44cf8d0cb5bf5066197bfd0ead3e0f25e1f9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 07dce6a71e7afd3a47c63942d48dd78d758103f8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62216371"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97307524"
 ---
-# <a name="command-object-interfaces"></a>명령 개체 인터페이스
+# <a name="command-object-interfaces"></a>Command 개체 인터페이스
 
-명령 개체는 `IAccessor` 인터페이스를 사용하여 매개 변수 바인딩을 지정합니다. 소비자는 `IAccessor::CreateAccessor`를 호출하고 여기에 `DBBINDING` 구조의 배열을 전달합니다. `DBBINDING`에는 열 바인딩에 대한 정보(형식, 길이 등)가 있습니다. 공급자가 이 구조를 받은 다음 데이터 전송 방법과 변환의 필요 여부를 결정합니다.
+Command 개체는 인터페이스를 사용 하 여 `IAccessor` 매개 변수 바인딩을 지정 합니다. 소비자는 `IAccessor::CreateAccessor` 를 호출 하 여 구조체의 배열을 전달 `DBBINDING` 합니다. `DBBINDING` 열 바인딩에 대 한 정보 (예: 형식 및 길이)를 포함 합니다. 공급자는 구조를 수신 하 고 데이터가 전송 되는 방법 및 변환이 필요한 지 여부를 결정 합니다.
 
-`ICommandText` 인터페이스는 텍스트 명령을 지정하는 방법을 제공합니다. `ICommandProperties` 인터페이스는 모든 명령 속성을 처리합니다.
+`ICommandText`인터페이스는 텍스트 명령을 지정 하는 방법을 제공 합니다. `ICommandProperties`인터페이스는 모든 명령 속성을 처리 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)<br/>
+[OLE DB 공급자 템플릿 아키텍처](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

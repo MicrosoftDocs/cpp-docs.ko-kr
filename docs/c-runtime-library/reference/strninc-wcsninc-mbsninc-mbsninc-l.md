@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: _strninc, _wcsninc, _mbsninc, _mbsninc_l'
 title: _strninc, _wcsninc, _mbsninc, _mbsninc_l
 ms.date: 4/2/2020
 api_name:
@@ -48,12 +49,12 @@ helpviewer_keywords:
 - mbsninc_l function
 - _tcsninc function
 ms.assetid: 6caace64-f9e4-48c0-afa8-ea51824ad723
-ms.openlocfilehash: fe35d3b37d5aadfbeae69de5ff00c349a2263e30
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 5368811af3677bf6b9de47b56eeb6095d994960b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914200"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306068"
 ---
 # <a name="_strninc-_wcsninc-_mbsninc-_mbsninc_l"></a>_strninc, _wcsninc, _mbsninc, _mbsninc_l
 
@@ -86,7 +87,7 @@ unsigned char *_mbsninc(
 
 ### <a name="parameters"></a>매개 변수
 
-*문자열*<br/>
+*str*<br/>
 원본 문자열입니다.
 
 *count*<br/>
@@ -95,9 +96,9 @@ unsigned char *_mbsninc(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-이러한 각 루틴은 *str* 이 *count* 문자로 증가 한 후 *str* 에 대 한 포인터를 반환 하거나 제공 된 포인터가 **null**인 경우 **null** 을 반환 합니다. *Count* 가 *str*의 문자 수보다 크거나 같은 경우 결과가 정의 되지 않습니다.
+이러한 각 루틴은 *str* 이 *count* 문자로 증가 한 후 *str* 에 대 한 포인터를 반환 하거나 제공 된 포인터가 **null** 인 경우 **null** 을 반환 합니다. *Count* 가 *str* 의 문자 수보다 크거나 같은 경우 결과가 정의 되지 않습니다.
 
 ## <a name="remarks"></a>설명
 
@@ -111,7 +112,7 @@ unsigned char *_mbsninc(
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tcsninc**|**_strninc**|**_mbsninc**|**_wcsninc**|
 
-**_strninc** 및 **_wcsninc** 는 **_mbsninc**의 싱글바이트 문자열과 와이드 문자열 버전입니다. **_wcsninc** 및 **_strninc** 는이 매핑에 대해서만 제공 되며 그렇지 않으면 사용 하면 안 됩니다. 자세한 내용은 [일반 텍스트 매핑 사용](../../c-runtime-library/using-generic-text-mappings.md) 및 [일반 텍스트 매핑](../../c-runtime-library/generic-text-mappings.md)을 참조하세요.
+**_strninc** 및 **_wcsninc** 는 **_mbsninc** 의 싱글바이트 문자열과 와이드 문자열 버전입니다. **_wcsninc** 및 **_strninc** 는이 매핑에 대해서만 제공 되며 그렇지 않으면 사용 하면 안 됩니다. 자세한 내용은 [일반 텍스트 매핑 사용](../../c-runtime-library/using-generic-text-mappings.md) 및 [일반 텍스트 매핑](../../c-runtime-library/generic-text-mappings.md)을 참조하세요.
 
 **_mbsninc_l** 은 전달 된 로캘 매개 변수를 대신 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
@@ -126,11 +127,11 @@ unsigned char *_mbsninc(
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [문자열 조작](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[멀티 바이트 문자 시퀀스 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[로캘](../../c-runtime-library/locale.md)<br/>
+[Multibyte-Character 시퀀스의 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_strdec, _wcsdec, _mbsdec, _mbsdec_l](strdec-wcsdec-mbsdec-mbsdec-l.md)<br/>
 [_strinc, _wcsinc, _mbsinc, _mbsinc_l](strinc-wcsinc-mbsinc-mbsinc-l.md)<br/>
 [_strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l](strnextc-wcsnextc-mbsnextc-mbsnextc-l.md)<br/>

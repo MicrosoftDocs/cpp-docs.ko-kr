@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CMFCStatusBar 클래스'
 title: CMFCStatusBar 클래스
 ms.date: 11/19/2018
 f1_keywords:
@@ -72,12 +73,12 @@ helpviewer_keywords:
 - CMFCStatusBar [MFC], SetTipText
 - CMFCStatusBar [MFC], OnDrawPane
 ms.assetid: f2960d1d-f4ed-41e8-bd99-0382b2f8d88e
-ms.openlocfilehash: 004873ef2696eb9504cdd4df77e700c4a145e886
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 79ba7c749a73406893173d7486fd5df208a37b83
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90686576"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97307082"
 ---
 # <a name="cmfcstatusbar-class"></a>CMFCStatusBar 클래스
 
@@ -95,7 +96,7 @@ class CMFCStatusBar : public CPane
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CMFCStatusBar:: CalcFixedLayout](#calcfixedlayout)|( [Cbasepane:: CalcFixedLayout](../../mfc/reference/cbasepane-class.md#calcfixedlayout)를 재정의 합니다.)|
 |[CMFCStatusBar:: CommandToIndex](#commandtoindex)||
@@ -132,7 +133,7 @@ class CMFCStatusBar : public CPane
 
 ### <a name="protected-methods"></a>Protected 메서드
 
-|Name|Description|
+|Name|설명|
 |----------|-----------------|
 |[CMFCStatusBar:: OnDrawPane](#ondrawpane)|상태 표시줄의 창을 다시 그리면 프레임 워크에서 호출 됩니다.|
 
@@ -800,7 +801,7 @@ void SetTipText(
 *pszTipText*<br/>
 진행 새 도구 설명 텍스트입니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

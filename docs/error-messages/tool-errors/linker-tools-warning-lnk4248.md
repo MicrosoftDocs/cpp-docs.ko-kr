@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 링커 도구 경고 LNK4248'
 title: 링커 도구 경고 LNK4248
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4248
 ms.assetid: e40523ff-e3cb-4ba6-ab79-23f0f339f6cf
-ms.openlocfilehash: 81f3c2abc41673e6e4c9e3f59ff1dd515e1cf365
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: b5b2247713e5e61ee26cd16e3e6fd46a8cd483af
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90685427"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97305288"
 ---
 # <a name="linker-tools-warning-lnk4248"></a>링커 도구 경고 LNK4248
 
@@ -19,7 +20,7 @@ ms.locfileid: "90685427"
 
 형식에 MSIL 메타 데이터에 대 한 정의가 없습니다.
 
-Msil 모듈에서 형식이 참조 되 고 msil 모듈이 형식에 대 한 정의가 있는 네이티브 모듈과 연결 된 msil **/clr**모듈에 형식에 대 한 전방 선언만 있는 경우 LNK4248이 발생할 수 있습니다.
+Msil 모듈에서 형식이 참조 되 고 msil 모듈이 형식에 대 한 정의가 있는 네이티브 모듈과 연결 된 msil 모듈에 형식에 대 한 전방 선언만 있는 경우 LNK4248이 발생할 수 있습니다.
 
 이 경우 링커에서는 MSIL 메타 데이터에 네이티브 형식 정의를 제공 하 고이를 통해 올바른 동작을 제공할 수 있습니다.
 

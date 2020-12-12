@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _environ, _wenviron'
 title: _environ, _wenviron
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - process environment
 - wenviron function
 ms.assetid: 7e639962-6536-47cd-8095-0cbe44a56e03
-ms.openlocfilehash: 8d67947c93d1387bfdc38c3bae5b3f978024a725
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: e1a69bec6fa93373c74e1f73de469bc3b93158e0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81349374"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97305054"
 ---
 # <a name="_environ-_wenviron"></a>_environ, _wenviron
 
@@ -49,9 +50,9 @@ extern wchar_t **_wenviron;
 
 와이드 문자 버전의 `_environ`입니다. `wmain` 함수를 사용하는 프로그램에서 `_wenviron`은 프로그램 시작 시 운영 체제 환경에서 가져온 설정에 따라 초기화됩니다.
 
-환경이 멀티바이트 문자열로 구성되기 때문에, `main`을 사용하는 프로그램에서 `_wenviron`은 처음에 **NULL**입니다. `_wgetenv` 또는 `_wputenv`에 대한 첫 번째 호출에서 해당하는 와이드 문자열 환경이 만들어지며 `_wenviron`이 이 환경을 가리킵니다.
+환경이 멀티바이트 문자열로 구성되기 때문에, `main`을 사용하는 프로그램에서 `_wenviron`은 처음에 **NULL** 입니다. `_wgetenv` 또는 `_wputenv`에 대한 첫 번째 호출에서 해당하는 와이드 문자열 환경이 만들어지며 `_wenviron`이 이 환경을 가리킵니다.
 
-마찬가지로, `wmain`을 사용하는 프로그램에서 환경이 와이드 문자열로 구성되기 때문에 `_environ`은 처음에 **NULL**입니다. `_getenv` 또는 `_putenv`에 대한 첫 번째 호출에서 해당하는 멀티바이트 문자열 환경이 만들어지며 `_environ`이 이 환경을 가리킵니다.
+마찬가지로, `wmain`을 사용하는 프로그램에서 환경이 와이드 문자열로 구성되기 때문에 `_environ`은 처음에 **NULL** 입니다. `_getenv` 또는 `_putenv`에 대한 첫 번째 호출에서 해당하는 멀티바이트 문자열 환경이 만들어지며 `_environ`이 이 환경을 가리킵니다.
 
 환경의 두 개의 복사본(MBCS 및 유니코드)이 프로그램에 동시에 존재하는 경우 런타임 시스템은 두 복사본을 모두 유지해야 하며 이에 따라 실행 시간이 늦어집니다. 예를 들어 `_putenv`를 호출할 때마다 `_wputenv`에 대한 호출도 자동으로 실행되어 두 환경 문자열이 일치하게 됩니다.
 

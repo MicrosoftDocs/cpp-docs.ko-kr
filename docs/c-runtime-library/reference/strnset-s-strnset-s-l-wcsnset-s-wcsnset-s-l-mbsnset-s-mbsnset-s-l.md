@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: _strnset_s, _strnset_s_l, _wcsnset_s, _wcsnset_s_l, _mbsnset_s, _mbsnset_s_l'
 title: _strnset_s, _strnset_s_l, _wcsnset_s, _wcsnset_s_l, _mbsnset_s, _mbsnset_s_l
 ms.date: 4/2/2020
 api_name:
@@ -63,12 +64,12 @@ helpviewer_keywords:
 - strnset_s function
 - _wcsnset_s function
 ms.assetid: 9cf1b321-b5cb-4469-b285-4c07cfbd8813
-ms.openlocfilehash: 123f8c4945d98ccf3dd94a48dbbb0fef3b35a8e5
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 388d0ed82b811187f10d68fed7e48b954fdb3e2b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911213"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97305912"
 ---
 # <a name="_strnset_s-_strnset_s_l-_wcsnset_s-_wcsnset_s_l-_mbsnset_s-_mbsnset_s_l"></a>_strnset_s, _strnset_s_l, _wcsnset_s, _wcsnset_s_l, _mbsnset_s, _mbsnset_s_l
 
@@ -123,7 +124,7 @@ errno_t _mbsnset_s_l(
 
 ### <a name="parameters"></a>매개 변수
 
-*문자열*<br/>
+*str*<br/>
 변경할 문자열입니다.
 
 *이면 numberofelements 이벤트가*<br/>
@@ -138,7 +139,7 @@ errno_t _mbsnset_s_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 정상적으로 실행되는 경우 0이고 그렇지 않으면 오류 코드입니다.
 
@@ -146,9 +147,9 @@ errno_t _mbsnset_s_l(
 
 ## <a name="remarks"></a>설명
 
-이러한 함수는 *str* 의 처음 *카운트* 문자를 *c*로 설정 합니다. *Count* 가 *str*의 크기 보다 크면 *count*대신 *str* 의 크기가 사용 됩니다. *Count* 가 *numberofelements* 보다 크고이 두 매개 변수가 *str*의 크기 보다 크면 오류가 발생 합니다.
+이러한 함수는 *str* 의 처음 *카운트* 문자를 *c* 로 설정 합니다. *Count* 가 *str* 의 크기 보다 크면 *count* 대신 *str* 의 크기가 사용 됩니다. *Count* 가 *numberofelements* 보다 크고이 두 매개 변수가 *str* 의 크기 보다 크면 오류가 발생 합니다.
 
-**_wcsnset_s** 및 **_mbsnset_s** 는 **_strnset_s**의 와이드 문자 및 멀티 바이트 문자 버전입니다. **_Wcsnset_s** 의 문자열 인수는 와이드 문자열입니다. **_mbsnset_s** 는 amultibyte 문자열입니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
+**_wcsnset_s** 및 **_mbsnset_s** 는 **_strnset_s** 의 와이드 문자 및 멀티 바이트 문자 버전입니다. **_Wcsnset_s** 의 문자열 인수는 와이드 문자열입니다. **_mbsnset_s** 는 amultibyte 문자열입니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
 
 출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_l** 접미사가 없는 이러한 함수 버전은 이 로캘 종속 동작에 현재 로캘을 사용하며, **_l** 접미사가 있는 버전은 전달된 로캘 매개 변수를 대신 사용하는 경우를 제외하고는 동일합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
@@ -197,11 +198,11 @@ Before: This is a test
 After:  **** is a test
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [문자열 조작](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[멀티 바이트 문자 시퀀스 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[로캘](../../c-runtime-library/locale.md)<br/>
+[Multibyte-Character 시퀀스의 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)<br/>
 [strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>
 [strcpy, wcscpy, _mbscpy](strcpy-wcscpy-mbscpy.md)<br/>

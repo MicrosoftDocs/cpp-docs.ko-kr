@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2196'
 title: 컴파일러 오류 C2196
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2196
 ms.assetid: fd2f6a58-48ce-4e58-96f8-e37720feb8e7
-ms.openlocfilehash: ec677e14b856f4b8a572006d61668ef089e42834
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 7c82cd145cff43d8773f87e65a09eee32185ffb4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74758517"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97305475"
 ---
 # <a name="compiler-error-c2196"></a>컴파일러 오류 C2196
 

@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: Platform:: WeakReference 클래스'
 title: Platform::WeakReference 클래스
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
 - Platform::WeakReference
 ms.assetid: 8cfe1977-a8c7-4b7b-b539-25c77ed4c5f1
-ms.openlocfilehash: befefba7cc76f24f6dddd58d0c5f040bfd205508
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: edf3220d8916ff4bdb1462f3dd04149a4e9a9709
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216598"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97307797"
 ---
 # <a name="platformweakreference-class"></a>Platform::WeakReference 클래스
 
@@ -49,7 +50,7 @@ class WeakReference
 
 WeakReference 클래스 자체는 ref 클래스가 아니므로 Platform::Object^에서 상속하지 않으며 public 메서드의 시그니처에 사용될 수 없습니다.
 
-## <a name="weakreferenceoperator"></a><a name="operator-assign"></a>WeakReference:: operator =
+## <a name="weakreferenceoperator"></a><a name="operator-assign"></a> WeakReference:: operator =
 
 WeakReference에 값을 할당합니다.
 
@@ -66,17 +67,17 @@ WeakReference& operator=(const volatile ::Platform::Object^ const otherArg);
 
 위의 목록에서 마지막 오버로드를 사용하면 WeakReference 변수에 ref 클래스를 할당할 수 있습니다. 이 경우 ref 클래스는 [Platform:: Object](../cppcx/platform-object-class.md)^로 다운 캐스트 됩니다. 나중에 [WeakReference:: Resolve \<T> ](#resolve) 멤버 함수의 형식 매개 변수에 대 한 인수로 지정 하 여 원래 형식을 복원 합니다.
 
-## <a name="weakreferenceoperator-booltype"></a><a name="booltype"></a>WeakReference:: operator BoolType
+## <a name="weakreferenceoperator-booltype"></a><a name="booltype"></a> WeakReference:: operator BoolType
 
 WeakReference 클래스에 대한 안전 bool 패턴을 구현합니다. 코드에서 명시적으로 호출하면 안 됩니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 BoolType BoolType();
 ```
 
-## <a name="weakreferenceresolve-method-platform-namespace"></a><a name="resolve"></a>WeakReference:: Resolve 메서드 (Platform 네임 스페이스)
+## <a name="weakreferenceresolve-method-platform-namespace"></a><a name="resolve"></a> WeakReference:: Resolve 메서드 (Platform 네임 스페이스)
 
 원래 ref 클래스에 대 한 핸들을 반환 하거나, **`nullptr`** 개체가 더 이상 존재 하지 않는 경우을 반환 합니다.
 
@@ -108,7 +109,7 @@ if (bar != nullptr)
 
 형식 매개 변수는 T^이 아니라 T입니다.
 
-## <a name="weakreferenceweakreference-constructor"></a><a name="ctor"></a>WeakReference:: WeakReference 생성자
+## <a name="weakreferenceweakreference-constructor"></a><a name="ctor"></a> WeakReference:: WeakReference 생성자
 
 WeakReference를 생성하는 다양한 방법을 제공합니다.
 

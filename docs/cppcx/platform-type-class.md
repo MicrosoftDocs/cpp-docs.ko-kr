@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Platform:: Type 클래스'
 title: Platform::Type 클래스
 ms.date: 12/30/2016
 ms.topic: reference
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Type Class
 ms.assetid: d6b03f1e-b240-49b9-a08e-53a460030475
-ms.openlocfilehash: f94e1b37cf198f92d49efc793753892c1b138d69
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: c11e85180dfb3eeeeb6eea88c3bd47b40fa7289b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846565"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97307901"
 ---
 # <a name="platformtype-class"></a>Platform::Type 클래스
 

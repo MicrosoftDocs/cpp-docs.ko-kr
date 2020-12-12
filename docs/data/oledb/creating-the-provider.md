@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 공급자 만들기'
 title: 공급자 만들기
 ms.date: 05/09/2019
 helpviewer_keywords:
 - OLE DB providers, creating
 ms.assetid: 2506ba8f-010d-4231-aac1-387432f7b6b9
-ms.openlocfilehash: 5a24245ae19fc6fa2a66d4bf102765b712b4cf5c
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 2b5a00f0a873575d9fe7b2b177bb34a6c74e193e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92921505"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97305439"
 ---
 # <a name="creating-the-provider"></a>공급자 만들기
 
@@ -33,13 +34,13 @@ Visual Studio 2019 이상에서는 ATL OLE DB 공급자 마법사를 사용할 �
 
 1. 필요한 경우 다른 이름 상자를 편집합니다. 개체와 파일 이름 외에도 다음을 편집할 수 있습니다.
 
-   - **Coclass** : COM에서 공급자를 만드는 데 사용 하는 이름입니다.
+   - **Coclass**: COM에서 공급자를 만드는 데 사용 하는 이름입니다.
 
-   - **ProgID** : GUID 대신 사용할 수 있는 텍스트 문자열인 프로그래밍 식별자입니다.
+   - **ProgID**: GUID 대신 사용할 수 있는 텍스트 문자열인 프로그래밍 식별자입니다.
 
-   - **Version** : ProgID 및 Coclass와 함께 사용 되어 버전 종속 프로그래밍 ID를 생성 합니다.
+   - **Version**: ProgID 및 Coclass와 함께 사용 되어 버전 종속 프로그래밍 ID를 생성 합니다.
 
-1. **마침** 을 클릭합니다.
+1. **Finish** 를 클릭합니다.
 
 ::: moniker-end
 

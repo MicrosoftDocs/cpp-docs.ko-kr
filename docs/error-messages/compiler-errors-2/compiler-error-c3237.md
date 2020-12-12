@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3237'
 title: 컴파일러 오류 C3237
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3237
 ms.assetid: 690970c8-e13b-4ff3-96e3-5fd93c4d356b
-ms.openlocfilehash: 9c0c65cba83fd1dfed09d3aeba75d7deac9218c9
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 4cfb42f7b8267623d085794822f2688c8798b2d4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74759375"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97307485"
 ---
 # <a name="compiler-error-c3237"></a>컴파일러 오류 C3237
 

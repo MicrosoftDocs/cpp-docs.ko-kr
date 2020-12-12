@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CNoRowset 클래스'
 title: CNoRowset 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,16 +11,16 @@ f1_keywords:
 helpviewer_keywords:
 - CNoRowset class
 ms.assetid: 55c6c7a4-9e3a-4775-a2dd-c8b333012fa6
-ms.openlocfilehash: 19a1e01fd29c74cf1c44081c24bf384704cf2acd
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 4cdb4631b63ec1f013183713900ffd9574d90fc3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80211474"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97307563"
 ---
 # <a name="cnorowset-class"></a>CNoRowset 클래스
 
-[CCommand](../../data/oledb/ccommand-class.md) 또는 [CTable](../../data/oledb/ctable-class.md)의 템플릿 인수 (`TRowset`)로 사용할 수 있습니다.
+`TRowset` [CCommand](../../data/oledb/ccommand-class.md) 또는 [CTable](../../data/oledb/ctable-class.md)의 템플릿 인수 ()로 사용할 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,25 +34,25 @@ class CNoRowset
 *TAccessor*<br/>
 접근자 클래스입니다. 기본값은 `CAccessorBase`입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
-명령에서 행 집합을 반환 하지 않는 경우 `CNoRowset`를 템플릿 인수로 사용 합니다.
+`CNoRowset`명령이 행 집합을 반환 하지 않는 경우 템플릿 인수로 사용 합니다.
 
-`CNoRowset`는 각각 다른 접근자 클래스 메서드에 해당 하는 다음과 같은 스텁 메서드를 구현 합니다.
+`CNoRowset` 는 다른 접근자 클래스 메서드에 해당 하는 다음과 같은 스텁 메서드를 구현 합니다.
 
-- `BindFinished`-바인딩이 완료 되었음을 나타냅니다 (`S_OK`반환).
+- `BindFinished` -바인딩이 완료 된 경우 (를 반환 `S_OK` )를 나타냅니다.
 
-- `Close`-행과 현재 IRowset 인터페이스를 해제 합니다.
+- `Close` -행과 현재 IRowset 인터페이스를 해제 합니다.
 
-- `GetIID`-연결 지점의 인터페이스 ID를 검색 합니다.
+- `GetIID` -연결 지점의 인터페이스 ID를 검색 합니다.
 
-- `GetInterface`-인터페이스를 검색 합니다.
+- `GetInterface` -인터페이스를 검색 합니다.
 
-- `GetInterfacePtr`-캡슐화 된 인터페이스 포인터를 검색 합니다.
+- `GetInterfacePtr` -캡슐화 된 인터페이스 포인터를 검색 합니다.
 
-- `SetAccessor`-접근자에 대 한 포인터를 설정 합니다.
+- `SetAccessor` -접근자에 대 한 포인터를 설정 합니다.
 
-- `SetupOptionalRowsetInterfaces`-행 집합에 대 한 선택적 인터페이스를 설정 합니다.
+- `SetupOptionalRowsetInterfaces` -행 집합에 대 한 선택적 인터페이스를 설정 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __shiftleft128'
 title: __shiftleft128
 ms.date: 09/02/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - __shiftleft128 intrinsic
 ms.assetid: 557b846a-8fb0-469d-91ac-1b1fad80dc2a
-ms.openlocfilehash: 5da9ac81cedbdd24e10eb438892f88510c32ca24
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: e0e1402660c2ddb6f5993e5186302ff489ed864f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70218008"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306991"
 ---
 # <a name="__shiftleft128"></a>__shiftleft128
 
@@ -46,15 +47,15 @@ unsigned __int64 __shiftleft128(
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`__shiftleft128`|X64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 ## <a name="remarks"></a>설명
 
-*시프트* 값 `__shiftleft128(1, 0, 64)`은 항상 모듈로 64 이므로 예를 들어를 호출 하면 함수는 하위 부분 `0` 비트를 왼쪽으로 이동 하 고, 그렇지 않을 경우에는의 `0` `1` 상위 부분을 반환 합니다.
+*시프트* 값은 항상 모듈로 64 이므로 예를 들어를 호출 하면 `__shiftleft128(1, 0, 64)` 함수는 하위 부분 비트를 왼쪽으로 이동 하 고, 그렇지 않을 경우에는 `0` 의 상위 부분을 반환 `0` `1` 합니다.
 
 ## <a name="example"></a>예제
 
@@ -96,7 +97,7 @@ int main()
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [__shiftright128](../intrinsics/shiftright128.md)\
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

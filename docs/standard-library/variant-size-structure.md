@@ -1,20 +1,21 @@
 ---
+description: '다음에 대 한 자세한 정보: variant_size 구조체'
 title: variant_size 구조체
 ms.date: 04/04/2019
 f1_keywords:
 - variant/std::variant_size
 helpviewer_keywords:
 - variant_size struct
-ms.openlocfilehash: cc707e0eea2d071098caccab3839bc802318ce1e
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: dcdc15c7f04f61a5bf22eba63eaf9f0600e60c8c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68268725"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97305093"
 ---
-# <a name="variantsize-struct"></a>variant_size 구조체
+# <a name="variant_size-struct"></a>variant_size 구조체
 
-Variant 개체를 지원합니다.
+변형 개체를 지원 합니다.
 
 ## <a name="syntax"></a>구문
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Platform:: ValueType 클래스'
 title: Platform::ValueType 클래스
 ms.date: 02/03/2017
 ms.topic: reference
@@ -7,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::ValueType Class
 ms.assetid: 79aa8754-b140-4974-a5b1-be046938a10a
-ms.openlocfilehash: f4ce34fa3f197424833d34bdb866712d412e69c3
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: e6873b4b884586d06dae6e2fd1966041fd49bcc8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846552"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97307810"
 ---
 # <a name="platformvaluetype-class"></a>Platform::ValueType 클래스
 
 값 형식 인스턴스의 기본 클래스입니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 public ref class ValueType : Object
@@ -26,7 +27,7 @@ public ref class ValueType : Object
 
 ## <a name="public-methods"></a>public 메서드
 
-| 이름 | Description |
+| Name | 설명 |
 |--|--|
 | [ValueType:: ToString](#tostring) | 개체의 문자열 표현을 반환합니다. [Platform:: Object](../cppcx/platform-object-class.md)에서 상속 됩니다. |
 
