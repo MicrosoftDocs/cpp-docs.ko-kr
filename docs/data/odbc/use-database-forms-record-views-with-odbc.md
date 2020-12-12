@@ -1,20 +1,21 @@
 ---
+description: '자세한 정보: ODBC에서 데이터베이스 폼 (레코드 뷰) 사용'
 title: ODBC에서 데이터베이스 폼(레코드 뷰) 사용
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ODBC, record views
 - record views, ODBC
 ms.assetid: 6a2ce346-8104-4ccd-b06e-ca0859a132fe
-ms.openlocfilehash: e0b5235508c3e44381736b0575ebdfc994bee1a3
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3c178451c3b15eed5a3ffd3910c5b28b4091f13c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80212548"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97313660"
 ---
 # <a name="use-database-forms-record-views-with-odbc"></a>ODBC에서 데이터베이스 폼(레코드 뷰) 사용
 
-데이터 입력 응용 프로그램이나 데이터 보기 응용 프로그램 같은 일부 응용 프로그램에는 폼(대화 상자 스타일의 컨트롤이 포함된 뷰)이 필요합니다.
+데이터 입력 또는 데이터 보기와 같은 일부 응용 프로그램에는 대화 상자 스타일 컨트롤이 포함 된 보기가 필요 합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 
@@ -32,4 +33,4 @@ ms.locfileid: "80212548"
 
 ## <a name="see-also"></a>참고 항목
 
-[ODBC(Open Database Connectivity)](../../data/odbc/open-database-connectivity-odbc.md)
+[ODBC (Open Database Connectivity)](../../data/odbc/open-database-connectivity-odbc.md)

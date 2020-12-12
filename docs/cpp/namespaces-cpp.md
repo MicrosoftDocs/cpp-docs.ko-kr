@@ -1,4 +1,5 @@
 ---
+description: '네임 스페이스에 대 한 자세한 정보: 네임 스페이스 (c + +)'
 title: 네임스페이스 (C++)
 ms.date: 08/30/2017
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - namespaces [C++]
 ms.assetid: d1a5a9ab-1cad-47e6-a82d-385bb77f4188
-ms.openlocfilehash: 234df334a8c385859440175cb9a1aab5b2e26ead
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5a655b5e772d16df34e64c5e4808ce68de64f49f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227298"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97313764"
 ---
 # <a name="namespaces-c"></a>네임스페이스 (C++)
 
@@ -58,7 +59,7 @@ mgr.DoSomething();
 Func(mgr);
 ```
 
-## <a name="using-directives"></a><a id="using_directives"></a>using 지시문
+## <a name="using-directives"></a><a id="using_directives"></a> using 지시문
 
 **`using`** 지시문을 **`namespace`** 사용 하면 명시적 한정자로 *네임 스페이스 이름* 없이의 모든 이름을 사용할 수 있습니다. 네임 스페이스에서 여러 다른 식별자를 사용 하는 경우 구현 파일 (예: * .cpp)에서 using 지시문을 사용 합니다. 하나 또는 두 개의 식별자만 사용 하는 경우에는 using 선언을 사용 하 여 네임 스페이스의 모든 식별자가 아닌 해당 식별자를 범위로 가져옵니다. 지역 변수의 이름이 네임스페이스 변수와 동일한 경우 네임스페이스 변수가 숨겨집니다. 전역 변수와 동일한 이름을 가진 네임스페이스 변수를 사용하면 오류가 발생합니다.
 
@@ -98,7 +99,7 @@ int ContosoDataServer::Bar(){return 0;}
 
 단일 파일의 여러 블록과 여러 파일에서 네임스페이스를 선언할 수 있습니다. 컴파일러가 전처리 중에 파트를 결합하며, 결과로 생성된 네임스페이스에는 모든 파트에서 선언된 멤버가 모두 포함됩니다. 이러한 예로 표준 라이브러리의 각 헤더 파일에서 선언된 std 네임스페이스가 있습니다.
 
-정의된 이름의 명시적 정규화로 선언된 명명된 네임스페이스의 멤버는 해당 네임스페이스의 외부에서 정의될 수 있습니다. 그러나 정의는 선언의 네임스페이스를 포함하는 네임스페이스의 선언 위치 다음에 표시되어야 합니다. 예를 들면 다음과 같습니다.
+정의된 이름의 명시적 정규화로 선언된 명명된 네임스페이스의 멤버는 해당 네임스페이스의 외부에서 정의될 수 있습니다. 그러나 정의는 선언의 네임스페이스를 포함하는 네임스페이스의 선언 위치 다음에 표시되어야 합니다. 예를 들어:
 
 ```cpp
 // defining_namespace_members.cpp
@@ -241,9 +242,9 @@ namespace Contoso
 }
 ```
 
-## <a name="namespace-aliases"></a><a id="namespace_aliases"></a>네임 스페이스 별칭
+## <a name="namespace-aliases"></a><a id="namespace_aliases"></a> 네임 스페이스 별칭
 
-네임스페이스 이름은 고유해야 하며, 이는 대체로 이름이 너무 짧지 않아야 함을 의미합니다. 이름 길이를 사용 하 여 코드를 읽을 수 없거나 using 지시문을 사용할 수 없는 헤더 파일을 입력 하는 것이 지루한 경우 실제 이름의 약어 역할을 하는 네임 스페이스 별칭을 만들 수 있습니다. 예를 들면 다음과 같습니다.
+네임스페이스 이름은 고유해야 하며, 이는 대체로 이름이 너무 짧지 않아야 함을 의미합니다. 이름 길이를 사용 하 여 코드를 읽을 수 없거나 using 지시문을 사용할 수 없는 헤더 파일을 입력 하는 것이 지루한 경우 실제 이름의 약어 역할을 하는 네임 스페이스 별칭을 만들 수 있습니다. 예를 들어:
 
 ```cpp
 namespace a_very_long_namespace_name { class Foo {}; }

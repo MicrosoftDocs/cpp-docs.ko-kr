@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 C 4950'
 title: 컴파일러 경고 C4950
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4950
 ms.assetid: 50226a5c-c664-4d09-ac59-e9e874ca244f
-ms.openlocfilehash: 52c4de94dfe087b4dcf407295e556c9350b2cb8b
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e1bb05501fcac6c836bfd4aa89f72807b625c292
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80164991"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97314882"
 ---
 # <a name="compiler-warning-c4950"></a>컴파일러 경고 C4950
 
 'type_or_member': 사용되지 않는 것으로 표시되었습니다.
 
-멤버 또는 형식이 <xref:System.ObsoleteAttribute> 특성에서 사용 되지 않는 것으로 표시 되었습니다.
+멤버 또는 형식이 특성에서 사용 되지 않는 것으로 표시 되었습니다 <xref:System.ObsoleteAttribute> .
 
 C4950은 항상 오류로 실행됩니다. [Warning](../../preprocessor/warning.md) pragma 지시문 또는 [/wd](../../build/reference/compiler-option-warning-level.md) 컴파일러 옵션을 사용 하 여이 경고를 해제할 수 있습니다.
 

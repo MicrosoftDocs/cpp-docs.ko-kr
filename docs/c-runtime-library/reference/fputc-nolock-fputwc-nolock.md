@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _fputc_nolock, _fputwc_nolock'
 title: _fputc_nolock, _fputwc_nolock
 ms.date: 4/2/2020
 api_name:
@@ -39,12 +40,12 @@ helpviewer_keywords:
 - _fputtc_nolock function
 - _fputwc_nolock function
 ms.assetid: c63eb3ad-58fa-46d0-9249-9c25f815eab9
-ms.openlocfilehash: e25539bf6c6d590a787615e091ec68753cd1c93e
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: c9070f641fce2acbd584ef75f6209464f3e90130
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920137"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97314163"
 ---
 # <a name="_fputc_nolock-_fputwc_nolock"></a>_fputc_nolock, _fputwc_nolock
 
@@ -71,13 +72,13 @@ wint_t _fputwc_nolock(
 *스트림*<br/>
 **FILE** 구조체에 대한 포인터입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 이러한 각 함수는 기록된 문자를 반환합니다. 오류 정보는 [fputc, fputwc](fputc-fputwc.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-**_fputc_nolock** 및 **_fputwc_nolock** 는 각각 **fputc** 및 **fputwc**와 동일 합니다. 단, 다른 스레드의 간섭 으로부터 보호 되지 않습니다. 이들은 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 애플리케이션과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
+**_fputc_nolock** 및 **_fputwc_nolock** 는 각각 **fputc** 및 **fputwc** 와 동일 합니다. 단, 다른 스레드의 간섭 으로부터 보호 되지 않습니다. 이들은 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 애플리케이션과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
 
 스트림이 ANSI 모드에서 열리는 경우 두 함수는 동일하게 작동합니다. **_fputc_nolock** 는 현재 유니코드 스트림으로의 출력을 지원 하지 않습니다.
 
@@ -91,12 +92,12 @@ wint_t _fputwc_nolock(
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|필수 헤더|
+|함수|필수 헤더|
 |--------------|---------------------|
 |**_fputc_nolock**|\<stdio.h>|
 |**_fputwc_nolock**|\<stdio.h> 또는 \<wchar.h>|
 
-이 콘솔은 UWP (유니버설 Windows 플랫폼) 앱에서 지원 되지 않습니다. 콘솔에 연결 된 표준 스트림 핸들 (**stdin**, **stdout**및 **stderr**)은 C 런타임 함수가 UWP 앱에서 사용할 수 있도록 리디렉션해야 합니다. 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
+이 콘솔은 UWP (유니버설 Windows 플랫폼) 앱에서 지원 되지 않습니다. 콘솔에 연결 된 표준 스트림 핸들 (**stdin**, **stdout** 및 **stderr**)은 C 런타임 함수가 UWP 앱에서 사용할 수 있도록 리디렉션해야 합니다. 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
@@ -123,7 +124,7 @@ int main( void )
 This is a test of _fputc_nolock!!
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [스트림 I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fgetc, fgetwc](fgetc-fgetwc.md)<br/>

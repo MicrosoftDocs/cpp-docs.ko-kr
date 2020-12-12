@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 스택 및 큐 컬렉션 만들기'
 title: 스택 및 큐 컬렉션 만들기
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - stack collections
 - collections, queue
 ms.assetid: 3c7bc198-35f0-4fc3-aaed-6005a0f22638
-ms.openlocfilehash: 5db90422f78fc6ca3bc2a182f9569c33db56cad1
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: e6c3d4a2ade4262e01bd5d84529aa57d308a8623
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84623216"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97309773"
 ---
 # <a name="creating-stack-and-queue-collections"></a>스택 및 큐 컬렉션 만들기
 
 이 문서에서는 MFC 목록 클래스에서 [스택](#_core_stacks) 및 [큐](#_core_queues)와 같은 다른 데이터 구조를 만드는 방법을 설명 합니다. 이 예제에서는에서 파생 된 클래스 `CList` 를 사용 하지만 `CList` 기능을 추가 해야 하는 경우가 아니면 직접를 사용할 수 있습니다.
 
-## <a name="stacks"></a><a name="_core_stacks"></a>스택
+## <a name="stacks"></a><a name="_core_stacks"></a> 스택
 
 표준 목록 컬렉션에는 head와 tail이 모두 있으므로 마지막으로 시작 된 스택의 동작을 모방 하는 파생 된 목록 컬렉션을 쉽게 만들 수 있습니다. 스택은 낙서의 트레이 스택과 같습니다. 트레이가 스택에 추가 되 면 스택에서 위쪽으로 이동 합니다. 마지막으로 추가 된 트레이가 제거 되는 첫 번째입니다. 목록 컬렉션 멤버 함수 `AddHead` 및를 `RemoveHead` 사용 하 여 목록에서 특정 요소를 추가 하 고 제거할 수 있으므로 가장 최근에 추가한 요소가 가장 먼저 제거 됩니다.
 

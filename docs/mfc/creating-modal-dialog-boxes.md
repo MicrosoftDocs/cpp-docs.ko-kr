@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 모달 대화 상자 만들기'
 title: 모달 대화 상자 만들기
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - MFC dialog boxes [MFC], creating
 - MFC dialog boxes [MFC], modal
 ms.assetid: 26c7a68c-79f6-4862-a5a8-6024984644d2
-ms.openlocfilehash: ed7cc94982a46e542a5174d4d46b8013cc84ffa4
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 82fa10c65161df98ea3d377e302c0fb787feb14c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622975"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97309799"
 ---
 # <a name="creating-modal-dialog-boxes"></a>모달 대화 상자 만들기
 

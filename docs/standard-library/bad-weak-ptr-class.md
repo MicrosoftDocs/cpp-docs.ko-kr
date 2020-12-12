@@ -1,4 +1,5 @@
 ---
+description: Bad_weak_ptr 클래스에 대해 자세히 알아보세요.
 title: bad_weak_ptr 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - bad_weak_ptr
 - bad_weak_ptr class
 ms.assetid: a09336d5-7237-4480-ab6b-3787e0e6025e
-ms.openlocfilehash: e1d536eed6727a5d1e828d358aa6b64521d748b8
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: db74ed31ff92f7665e8ecde5fc4700bcdf1a7fc1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68454264"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97312919"
 ---
-# <a name="badweakptr-class"></a>bad_weak_ptr 클래스
+# <a name="bad_weak_ptr-class"></a>bad_weak_ptr 클래스
 
 불량 weak_ptr 예외를 보고합니다.
 
@@ -70,6 +71,6 @@ int main()
 bad weak pointer
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [weak_ptr 클래스](../standard-library/weak-ptr-class.md)

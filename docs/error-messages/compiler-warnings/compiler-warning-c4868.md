@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4868'
 title: 컴파일러 경고 C4868
 ms.date: 10/26/2017
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4868
 ms.assetid: fc6aa7e5-34dd-4ec2-88bd-16e430361dc7
-ms.openlocfilehash: fe113a948cdf2a6e4b4fcf6b0055fe92d583f004
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 66b6673dc1981351aa25a7ce6c0b9bc30bdf82c4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220134"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97315012"
 ---
 # <a name="compiler-warning-level-4-c4868"></a>컴파일러 경고 (수준 4) C4868
 

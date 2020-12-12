@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __writecr0'
 title: __writecr0
 ms.date: 09/02/2019
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - _writecr0 intrinsic
 ms.assetid: a143d08d-0333-4e1b-91b4-4acb2ae91b5a
-ms.openlocfilehash: 1f00796242ae352d32935c2551d50f2d93d734ec
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 9a4cf4f30b5663b875ca27416b698eb8477938d4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219298"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97313101"
 ---
 # <a name="__writecr0"></a>__writecr0
 
 **Microsoft 전용**
 
-Cr0 레지스터 레지스터에 `Data` 값을 씁니다.
+`Data`Cr0 레지스터 레지스터에 값을 씁니다.
 
 ## <a name="syntax"></a>구문
 
@@ -29,16 +30,16 @@ void writecr0(
 
 ### <a name="parameters"></a>매개 변수
 
-*데이터로*\
+*데이터*\
 진행 CR0 레지스터 레지스터에 쓸 값입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`__writecr0`|x86, x64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 ## <a name="remarks"></a>설명
 
@@ -46,6 +47,6 @@ void writecr0(
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

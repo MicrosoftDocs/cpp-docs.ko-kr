@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 컨트롤 막대'
 title: 컨트롤 막대
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - CToolBar class [MFC], control bars
 - CStatusBar class [MFC], control bars
 ms.assetid: 31831910-3d23-4d70-9e71-03cc02f01ec4
-ms.openlocfilehash: a2d3683b744493bb5566456b9e1358c1ddc418d4
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 985201b2c09c4d60996e9ee64b2507fe1593e5ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615972"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97310150"
 ---
 # <a name="control-bars"></a>컨트롤 막대
 
@@ -36,13 +37,13 @@ ms.locfileid: "84615972"
 - [CReBar](reference/crebar-class.md) 클래스의 rebars
 
 > [!IMPORTANT]
-> MFC 버전 4.0을 사용 하 여 도구 모음, 상태 표시줄 및 도구 팁은 MFC와 관련 된 이전 구현 대신 *comctl32.dll* 에서 구현 된 시스템 기능을 사용 하 여 구현 됩니다. Comctl32.dll 기능을 래핑하는 MFC 버전 6.0에서 `CReBar` 도 추가 되었습니다.
+> MFC 버전 4.0을 사용 하 여 도구 모음, 상태 표시줄 및 도구 설명은 MFC에 한정 된 이전 구현 대신 *comctl32.dll* 에 구현 된 시스템 기능을 사용 하 여 구현 됩니다. comctl32.dll 기능을 래핑하는 MFC 버전 6.0에서 `CReBar` 도 추가 되었습니다.
 
 컨트롤 막대 형식에 대 한 간략 한 소개는 다음과 같습니다. 자세한 내용은 아래 링크를 참조 하세요.
 
 ## <a name="control-bars"></a>컨트롤 막대
 
-컨트롤 막대는 빠른 1 단계 명령 작업을 제공 하 여 프로그램의 유용성을 크게 향상 시킵니다. 클래스는 `CControlBar` 모든 도구 모음, 상태 표시줄 및 대화 상자 모음의 공통적인 기능을 제공 합니다. `CControlBar`부모 프레임 창에서 컨트롤 막대의 위치를 지정 하는 기능을 제공 합니다. 일반적으로 컨트롤 막대는 부모 프레임 창의 자식 창이 기 때문에 프레임 창의 클라이언트 뷰 또는 MDI 클라이언트에 대 한 "형제"입니다. 컨트롤 막대 개체는 부모 창의 클라이언트 사각형에 대 한 정보를 사용 하 여 자신을 배치 합니다. 그런 다음 클라이언트 뷰나 MDI 클라이언트 창이 나머지 클라이언트 창을 채우도록 부모의 나머지 클라이언트 창 사각형을 변경 합니다.
+컨트롤 막대는 빠른 1 단계 명령 작업을 제공 하 여 프로그램의 유용성을 크게 향상 시킵니다. 클래스는 `CControlBar` 모든 도구 모음, 상태 표시줄 및 대화 상자 모음의 공통적인 기능을 제공 합니다. `CControlBar` 부모 프레임 창에서 컨트롤 막대의 위치를 지정 하는 기능을 제공 합니다. 일반적으로 컨트롤 막대는 부모 프레임 창의 자식 창이 기 때문에 프레임 창의 클라이언트 뷰 또는 MDI 클라이언트에 대 한 "형제"입니다. 컨트롤 막대 개체는 부모 창의 클라이언트 사각형에 대 한 정보를 사용 하 여 자신을 배치 합니다. 그런 다음 클라이언트 뷰나 MDI 클라이언트 창이 나머지 클라이언트 창을 채우도록 부모의 나머지 클라이언트 창 사각형을 변경 합니다.
 
 > [!NOTE]
 > 컨트롤 막대의 단추에 **명령** 또는 **UPDATE_COMMAND_UI** 처리기가 없으면 프레임 워크가 자동으로 단추를 사용 하지 않도록 설정 합니다.

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 집계 가능한'
 title: 집계 가능한 (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - aggregatable attribute
 ms.assetid: 9253a46a-cd76-41f2-b3b6-86f709bb069c
-ms.openlocfilehash: 6782b1ca28eb07b3f726bd85cd7fffa9b1f1bad2
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 0ba6c96f1b12deb2db91c20f0558961ef1ed6f61
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836376"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97314258"
 ---
 # <a name="aggregatable"></a>aggregatable
 
@@ -82,4 +83,4 @@ class CMyClass {};
 [IDL 특성](idl-attributes.md)<br/>
 [클래스 특성](class-attributes.md)<br/>
 [Typedef, Enum, Union 및 Struct 특성](typedef-enum-union-and-struct-attributes.md)<br/>
-[요약](/windows/win32/com/aggregation)
+[집계](/windows/win32/com/aggregation)

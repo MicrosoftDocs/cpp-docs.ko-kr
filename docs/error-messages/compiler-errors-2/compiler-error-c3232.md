@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3232'
 title: 컴파일러 오류 C3232
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3232
 ms.assetid: 3119b3a9-0eff-4a3f-b805-e4d160af9e39
-ms.openlocfilehash: e0668cb66bf8e9fa6431b6f238167d594cd00416
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 180af73cc76afdca9d21c168e925bc1755cd88a0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74750314"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97312009"
 ---
 # <a name="compiler-error-c3232"></a>컴파일러 오류 C3232
 

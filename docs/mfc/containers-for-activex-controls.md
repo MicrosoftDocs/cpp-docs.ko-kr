@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: ActiveX 컨트롤에 대 한 컨테이너'
 title: ActiveX 컨트롤에 대한 컨테이너
 ms.date: 09/12/2018
 helpviewer_keywords:
 - ActiveX control containers [MFC], application support
 ms.assetid: 5ff0bf37-07f4-49aa-ad9c-c63d3756243a
-ms.openlocfilehash: 875a5277da829b18befd56c50eeb1333c1635e0a
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 854fe1eb1d13c3d0ac62df10b52e000b3ea92148
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84625972"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97310397"
 ---
 # <a name="containers-for-activex-controls"></a>ActiveX 컨트롤에 대한 컨테이너
 

@@ -1,4 +1,5 @@
 ---
+description: '컨테이너: 고급 기능에 대 한 자세한 정보'
 title: '컨테이너: 고급 기능'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - server/container applications [MFC]
 - containers [MFC], container applications
 ms.assetid: 221fd99c-b138-40fa-ad6a-974e3b3ad1f8
-ms.openlocfilehash: 1ef4ed9865d3a88a6ff85f777984b856d03cc48e
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: d49f699ec0349e5c53b95996c6ee4b5d151dce5e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616365"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97310514"
 ---
 # <a name="containers-advanced-features"></a>컨테이너: 고급 기능
 
@@ -27,7 +28,7 @@ ms.locfileid: "84616365"
 
 - [포함 된 개체에 대 한 OLE 링크](#_core_links_to_embedded_objects)
 
-## <a name="creating-a-containerserver-application"></a><a name="_core_creating_a_container_server_application"></a>컨테이너/서버 응용 프로그램 만들기
+## <a name="creating-a-containerserver-application"></a><a name="_core_creating_a_container_server_application"></a> 컨테이너/서버 응용 프로그램 만들기
 
 컨테이너/서버 응용 프로그램은 컨테이너와 서버 역할을 모두 수행 하는 응용 프로그램입니다. 이에 대 한 예는 Windows 용 Microsoft Word입니다. 다른 응용 프로그램에 Windows 문서에 대 한 Word를 포함할 수 있으며 Windows 문서용 Word에 항목을 포함할 수도 있습니다. 컨테이너 응용 프로그램을 컨테이너 및 전체 서버 (조합 컨테이너/미니 서버 응용 프로그램을 만들 수 없음)로 수정 하는 프로세스는 전체 서버를 만드는 프로세스와 유사 합니다.
 
@@ -45,7 +46,7 @@ ms.locfileid: "84616365"
 
 MDI 응용 프로그램은 자체에 삽입할 수 없습니다. 컨테이너/서버 응용 프로그램은 SDI 응용 프로그램이 아닌 경우 자체에 삽입할 수 없습니다.
 
-## <a name="links-to-embedded-objects"></a><a name="_core_links_to_embedded_objects"></a>포함 된 개체에 대 한 링크
+## <a name="links-to-embedded-objects"></a><a name="_core_links_to_embedded_objects"></a> 포함 된 개체에 대 한 링크
 
 포함 된 개체에 대 한 링크 기능을 사용 하면 사용자가 컨테이너 응용 프로그램 내에 포함 된 개체에 대 한 OLE 링크를 사용 하 여 문서를 만들 수 있습니다. 예를 들어 포함 된 스프레드시트를 포함 하는 워드 프로세서에서 문서를 만듭니다. 응용 프로그램에서 포함 된 개체에 대 한 링크를 지 원하는 경우 워드 프로세서의 문서에 포함 된 스프레드시트에 링크를 붙여 넣을 수 있습니다. 이 기능을 사용 하면 응용 프로그램에서 word 프로세서의 원래 위치를 모르는 상태에서 스프레드시트에 포함 된 정보를 사용할 수 있습니다.
 
@@ -69,7 +70,7 @@ MDI 응용 프로그램은 자체에 삽입할 수 없습니다. 컨테이너/�
 
       응용 프로그램이 "/포함" 스위치를 사용 하 여 시작 되는 경우 서버 응용 프로그램과 유사한 주 창을 표시 해서는 안 됩니다.
 
-MFC OLE 샘플 [OCLIENT](../overview/visual-cpp-samples.md) 는이 기능을 구현 합니다. 이 작업을 수행 하는 방법에 대 한 예제는 `InitInstance` OCLIENT에서 함수를 참조 하세요 *. *이 샘플 응용 프로그램의 CPP 파일입니다.
+MFC OLE 샘플 [OCLIENT](../overview/visual-cpp-samples.md) 는이 기능을 구현 합니다. 이 작업을 수행 하는 방법에 대 한 예제는 `InitInstance` OCLIENT에서 함수를 참조 하세요 *.* 이 샘플 응용 프로그램의 CPP 파일입니다.
 
 ## <a name="see-also"></a>참고 항목
 

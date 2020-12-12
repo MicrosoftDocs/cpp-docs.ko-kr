@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 스레드 간 예외 전송'
 title: 스레드 간 예외 전송
 ms.date: 05/07/2019
 helpviewer_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - rethrow_exception
 - move exceptions between threads
 ms.assetid: 5c95d57b-acf5-491f-8122-57c5df0edd98
-ms.openlocfilehash: c3ba61062421462dea8f4280575be9f00ac3931a
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 8b62937c95c755304ab5766185168fad618a53aa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561364"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97313673"
 ---
 # <a name="transporting-exceptions-between-threads"></a>스레드 간 예외 전송
 
@@ -66,9 +67,9 @@ namespace std
 
 하지만 보조 스레드에서 예외를 throw하는 경우 기본 스레드가 이를 처리하도록 합니다. 이것은 애플리케이션에서 2차 스레드의 수에 관계없이 일관성 있으며 통합된 방식으로 예외를 다루기를 원하기 때문입니다.
 
-### <a name="solution"></a>솔루션
+### <a name="solution"></a>해결 방법
 
-앞의 시나리오를 처리하기 위해 스레드 간에 예외를 전송할 때 C++ 표준이 지원됩니다. 보조 스레드가 예외를 throw 하는 경우 해당 예외는 *현재 예외가*됩니다. 실제 세계에 대 한 비유를 통해 현재 예외를 *비행*이라고 합니다. 현재 예외는 throw되는 시점부터 이 예외를 catch하는 예외 처리기가 반환될 때까지 발생 중입니다.
+앞의 시나리오를 처리하기 위해 스레드 간에 예외를 전송할 때 C++ 표준이 지원됩니다. 보조 스레드가 예외를 throw 하는 경우 해당 예외는 *현재 예외가* 됩니다. 실제 세계에 대 한 비유를 통해 현재 예외를 *비행* 이라고 합니다. 현재 예외는 throw되는 시점부터 이 예외를 catch하는 예외 처리기가 반환될 때까지 발생 중입니다.
 
 보조 스레드는 블록에서 현재 예외를 catch 한 **`catch`** 다음 함수를 호출 하 여 `current_exception` 개체에 예외를 저장할 수 있습니다 `exception_ptr` . `exception_ptr` 개체는 보조 스레드 및 기본 스레드에서 사용할 수 있어야 합니다. 예를 들어, `exception_ptr` 개체는 전역 변수일 수 있습니다. 전역 변수의 액세스는 뮤텍스로 제어됩니다. *전송* 이라는 용어는 한 스레드의 예외를 다른 스레드가 액세스할 수 있는 형식으로 변환할 수 있음을 의미 합니다.
 
@@ -88,14 +89,14 @@ C++ 표준 위원회 제안서에 대한 자세한 내용은 문서 번호 N2179
 
 - **/Eha** 컴파일러 옵션 및 **`catch`** 문은 SEH 및 c + + 예외를 전송할 수 있습니다.
 
-- **/Eha**, **/EHs**및 **/Ehsc** 컴파일러 옵션 및 **`catch`** 문은 c + + 예외를 전송할 수 있습니다.
+- **/Eha**, **/EHs** 및 **/Ehsc** 컴파일러 옵션 및 **`catch`** 문은 c + + 예외를 전송할 수 있습니다.
 
 - **/Clr** 컴파일러 옵션 및 **`catch`** 문은 c + + 예외를 전송할 수 있습니다. **/Clr** 컴파일러 옵션은 **/eha** 옵션의 사양을 의미 합니다. 컴파일러는 관리되는 예외의 전송을 지원하지 않습니다. 이는 system.string [클래스](../standard-library/exception-class.md)에서 파생 된 관리 되는 예외가 이미 개체 이므로 일반적인 languange 런타임의 기능을 사용 하 여 스레드 간에 이동할 수 있기 때문입니다.
 
    > [!IMPORTANT]
    > **/Ehsc** 컴파일러 옵션을 지정 하 고 c + + 예외만 catch 하는 것이 좋습니다. **/Eha** 또는 **/clr** 컴파일러 옵션을 사용 하 고 **`catch`** 줄임표 (...) *예외 선언* ()이 있는 문에는 보안 위협에 노출 `catch(...)` 합니다. 문을 사용 하 여 **`catch`** 몇 가지 특정 예외를 캡처하는 것이 좋습니다. 하지만 `catch(...)` 문은 예기치 않은 심각한 예외를 포함하여 모든 C++ 및 SEH 예외를 캡처합니다. 예기치 않은 예외를 무시하거나 잘못 처리하는 경우 악성 코드가 이 기회를 이용하여 프로그램 보안을 해칠 수 있습니다.
 
-## <a name="usage"></a>사용량
+## <a name="usage"></a>사용
 
 다음 섹션에서는 `exception_ptr` 형식 및 `current_exception` , `rethrow_exception` 및 함수를 사용 하 여 예외를 전송 하는 방법을 설명 합니다 `make_exception_ptr` .
 
@@ -103,7 +104,7 @@ C++ 표준 위원회 제안서에 대한 자세한 내용은 문서 번호 N2179
 
 `exception_ptr` 개체를 사용하여 현재 예외 또는 사용자 지정 예외의 인스턴스를 참조합니다. Microsoft 구현에서 예외가 [EXCEPTION_RECORD](/windows/win32/api/winnt/ns-winnt-exception_record) 구조체에 의해 표시됩니다. 각 `exception_ptr` 개체에는 예외를 나타내는 `EXCEPTION_RECORD` 구조체의 복사본을 가리키는 예외 참조 필드가 포함됩니다.
 
-`exception_ptr` 변수를 선언할 때 변수는 예외와 관련되지 않습니다. 즉, 해당 예외 참조 필드는 NULL입니다. 이러한 `exception_ptr` 개체를 *null exception_ptr*라고 합니다.
+`exception_ptr` 변수를 선언할 때 변수는 예외와 관련되지 않습니다. 즉, 해당 예외 참조 필드는 NULL입니다. 이러한 `exception_ptr` 개체를 *null exception_ptr* 라고 합니다.
 
 `current_exception` 또는 `make_exception_ptr` 함수를 사용하여 `exception_ptr` 개체에 예외를 지정합니다. `exception_ptr` 변수에 예외를 할당하면, 변수 예외 참조 필드는 예외 복사본을 가리킵니다. 메모리가 부족하여 예외를 복사할 수 없는 경우 예외 참조 필드는 [std::bad_alloc](../standard-library/bad-alloc-class.md) 예외의 복사본을 가리킵니다. `current_exception`또는 `make_exception_ptr` 함수가 다른 이유로 예외를 복사할 수 없는 경우 함수는 [terminate](../c-runtime-library/reference/terminate-crt.md) 함수를 호출 하 여 현재 프로세스를 종료 합니다.
 

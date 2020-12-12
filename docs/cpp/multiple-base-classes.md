@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 여러 기본 클래스'
 title: 다중 기본 클래스
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - multiple inheritance, class declaration
 - multiple base classes [C++]
 ms.assetid: a30c69fe-401c-4a87-96a0-e0da70c7c740
-ms.openlocfilehash: 0e663f33213a5fd57f2adbdcc53233c6af29954e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6e9e839e5906fba4a45e4e2edd4965817816a298
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227376"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97314102"
 ---
 # <a name="multiple-base-classes"></a>다중 기본 클래스
 
@@ -31,14 +32,14 @@ class CollectionOfBook : public Book, public Collection {
 
 생성자와 소멸자가 호출되는 특정 경우를 제외하고 기본 클래스가 지정되는 순서는 중요하지 않습니다. 이러한 경우 기본 클래스가 지정되는 순서는 다음에 영향을 줍니다.
 
-- 생성자에 의한 초기화가 진행되는 순서입니다. 코드가 `Book`의 `CollectionOfBook` 부분을 의존하여 `Collection` 파트 전에 초기화되는 경우 사양의 순서는 중요합니다. 초기화는 *기본 목록*에 클래스를 지정 하는 순서 대로 발생 합니다.
+- 생성자에 의한 초기화가 진행되는 순서입니다. 코드가 `Book`의 `CollectionOfBook` 부분을 의존하여 `Collection` 파트 전에 초기화되는 경우 사양의 순서는 중요합니다. 초기화는 *기본 목록* 에 클래스를 지정 하는 순서 대로 발생 합니다.
 
-- 정리하기 위해 소멸자를 호출하는 순서입니다. 다른 부품이 소멸될 때 클래스의 특정 "부품"이 있어야 하는 경우 순서가 중요합니다. 소멸자는 *기본 목록*에 지정 된 클래스의 반대 순서로 호출 됩니다.
+- 정리하기 위해 소멸자를 호출하는 순서입니다. 다른 부품이 소멸될 때 클래스의 특정 "부품"이 있어야 하는 경우 순서가 중요합니다. 소멸자는 *기본 목록* 에 지정 된 클래스의 반대 순서로 호출 됩니다.
 
     > [!NOTE]
     >  기본 클래스의 사양 순서는 클래스의 메모리 레이아웃에 영향을 줍니다. 메모리에 있는 기본 멤버의 순서에 따라 모든 프로그래밍 의사를 결정하지 마십시오.
 
-*기본 목록을*지정할 때 동일한 클래스 이름을 두 번 이상 지정할 수 없습니다. 그러나 클래스는 간접 기본 클래스가 되거나 두 번 이상 파생 클래스가 될 수 있습니다.
+*기본 목록을* 지정할 때 동일한 클래스 이름을 두 번 이상 지정할 수 없습니다. 그러나 클래스는 간접 기본 클래스가 되거나 두 번 이상 파생 클래스가 될 수 있습니다.
 
 ## <a name="virtual-base-classes"></a>가상 기본 클래스
 
@@ -213,6 +214,6 @@ public:
 
 이 그림에서 비가상 기본 클래스를 통해 `A` 클래스의 임의 멤버에 액세스하면 모호성이 발생합니다. 컴파일러는 `B`에 연결된 하위 개체를 사용할지, 아니면 `C`에 연결된 하위 개체를 사용할지를 설명하는 정보를 가지고 있지 않습니다. 그러나 `A`를 가상 기본 클래스로 지정하면 어느 하위 개체에 액세스할지가 분명해집니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 [상속](../cpp/inheritance-cpp.md)

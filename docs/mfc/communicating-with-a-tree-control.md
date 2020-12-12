@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 트리 컨트롤과 통신'
 title: 트리 컨트롤과 통신
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - communications, tree controls
 - tree controls
 ms.assetid: 680ad9ee-b11f-452d-93fa-501ca7d7e069
-ms.openlocfilehash: f480cdad2fce53f830b8067083a8a4be4b4e4848
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 82ee4fe0beb65e44166b4d68ffd44923b7fe0c76
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619656"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97310566"
 ---
 # <a name="communicating-with-a-tree-control"></a>트리 컨트롤과 통신
 

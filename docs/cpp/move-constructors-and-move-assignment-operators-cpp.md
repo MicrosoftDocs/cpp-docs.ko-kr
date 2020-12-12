@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 이동 생성자 및 이동 할당 연산자 (c + +)'
 title: '방법: 이동 생성자 및 이동 할당 연산자 정의 (c + +)'
 ms.date: 03/05/2018
 helpviewer_keywords:
 - move constructor [C++]
 ms.assetid: e75efe0e-4b74-47a9-96ed-4e83cfc4378d
-ms.openlocfilehash: e57f67eeca93572b26ee03033cbe4dcf90431f78
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: 9430f4970a0f911000c31b142ed177aee7dff2d2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008880"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97313972"
 ---
 # <a name="move-constructors-and-move-assignment-operators-c"></a>이동 생성자 및 이동 할당 연산자(C++)
 
@@ -309,7 +310,7 @@ MemoryBlock(MemoryBlock&& other) noexcept
 
 [Std:: move](../standard-library/utility-functions.md#move) 함수는 lvalue `other` 를 rvalue로 변환 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [Rvalue 참조 선언자: &&](../cpp/rvalue-reference-declarator-amp-amp.md)<br/>
 [std:: move](../standard-library/utility-functions.md#move)

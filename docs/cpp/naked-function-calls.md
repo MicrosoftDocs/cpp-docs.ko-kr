@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Naked 함수 호출'
 title: Naked 함수 호출
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - naked keyword [C++]
 - naked keyword [C++], storage-class attribute
 ms.assetid: 2a66847a-a43f-4541-a7be-c9f5f29b5fdb
-ms.openlocfilehash: 9b49d34d7276d3c9260488f23d1821b9708d2481
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ffc28b65a8c16881164805f0cfa55ffe1bc54e9b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227324"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97313803"
 ---
 # <a name="naked-function-calls"></a>Naked 함수 호출
 

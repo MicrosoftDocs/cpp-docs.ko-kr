@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: 부동 소수점 마이그레이션 문제'
 title: 부동 소수점 마이그레이션 문제
 ms.date: 05/17/2017
 ms.assetid: 36a1b552-2f2b-4919-bc9d-c17f42434954
-ms.openlocfilehash: 40eb08e4f9c7058d6b11700535e1c25f86548a22
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 079706570a52d164f4308941924d0a96ca5d44ec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80215022"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97312906"
 ---
 # <a name="floating-point-migration-issues"></a>부동 소수점 마이그레이션 문제
 
@@ -31,6 +32,6 @@ Visual Studio 2015에서 수학 함수를 유니버설 CRT로 이동하면서 �
 
 ## <a name="see-also"></a>참고 항목
 
-[이전 버전의 Visual에서 프로젝트 업그레이드C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
+[이전 버전의 Visual C++에서 프로젝트 업그레이드](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
 [잠재적인 업그레이드 문제 개요(Visual C++)](overview-of-potential-upgrade-issues-visual-cpp.md)<br/>
 [Visual C++ 변경 기록 2003 - 2015](visual-cpp-change-history-2003-2015.md)

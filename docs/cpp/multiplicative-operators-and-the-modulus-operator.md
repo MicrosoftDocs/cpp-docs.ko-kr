@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 곱하기 연산자 및 나머지 연산자'
 title: 곱하기 연산자 및 나머지 연산자
 ms.date: 11/04/2016
 f1_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - multiplicative operators [C++]
 - division operator
 ms.assetid: b53ea5da-d0b4-40dc-98f3-0aa52d548293
-ms.openlocfilehash: c277c93640201de69a4cb29060bc5191aa91629c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e3e3e3823abb255922bf31be90b4a116fb100efe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227363"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97313868"
 ---
 # <a name="multiplicative-operators-and-the-modulus-operator"></a>곱하기 연산자 및 나머지 연산자
 
@@ -50,7 +51,7 @@ expression % expression
 
 나누기 연산자는 첫 번째 피연산자를 두 번째 피연산자로 나눈 결과를 구합니다.
 
-모듈러스 연산자는 다음 식으로 지정 된 나머지를 생성 합니다. 여기서 *e1* 은 첫 번째 피연산자이 고 *e2* 는 두 번째: *e1* -(*e1*  /  *e2*) \* *e2*입니다. 여기서 두 피연산자는 모두 정수 계열 형식입니다.
+모듈러스 연산자는 다음 식으로 지정 된 나머지를 생성 합니다. 여기서 *e1* 은 첫 번째 피연산자이 고 *e2* 는 두 번째: *e1* -(*e1*  /  *e2*) \* *e2* 입니다. 여기서 두 피연산자는 모두 정수 계열 형식입니다.
 
 0으로 나누기는 나누기 또는 모듈러스 식에 정의되지 않았으며 런타임 오류를 생성합니다. 따라서 다음 식에서는 정의되지 않은 잘못된 결과가 생성됩니다.
 
@@ -72,7 +73,7 @@ Microsoft C++에서 모듈러스 식의 결과가 항상 첫 번째 피연산자
 
 두 정수의 나누기 계산이 정확하지 않고 피연산자가 한 개만 음수일 경우 나누기 연산에서 구하는 정확한 값보다 작은 최대 정수(부호에 관계 없는 크기)가 결과가 됩니다. 예를 들어-11/3의 계산 된 값은-3.666666666입니다. 해당 정수 부분의 결과는-3입니다.
 
-곱하기 연산자 간의 관계는 id (*e1*  /  *e2*) \* *e2*  +  *e1*  %  *e2*  ==  *e1*에 의해 제공 됩니다.
+곱하기 연산자 간의 관계는 id (*e1*  /  *e2*) \* *e2*  +  *e1*  %  *e2*  ==  *e1* 에 의해 제공 됩니다.
 
 ## <a name="example"></a>예제
 

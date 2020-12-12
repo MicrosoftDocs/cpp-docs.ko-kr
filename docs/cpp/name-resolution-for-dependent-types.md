@@ -1,13 +1,14 @@
-﻿---
+---
+description: '자세히 알아보기: 종속 형식에 대 한 이름 확인'
 title: 종속적인 형식에 대한 이름 확인
 ms.date: 11/04/2016
 ms.assetid: 34066bb4-0c79-4fd8-bda7-539a60a277ab
-ms.openlocfilehash: de40bd056fe351e679ff32d9908c068ea4c6752a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f50b067062f01d04ce26374ad969d572e1a7fe08
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227311"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97313790"
 ---
 # <a name="name-resolution-for-dependent-types"></a>종속적인 형식에 대한 이름 확인
 

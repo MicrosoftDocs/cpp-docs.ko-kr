@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: 컨테이너: Client-Item 상태'
 title: '컨테이너: 클라이언트 항목 상태'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - lifetime, lifetime states and OLE container client items
 - client items and OLE containers
 ms.assetid: e7021caa-bd07-4adb-976e-f5f3d025bc53
-ms.openlocfilehash: 660b544a0f061ae2e4435777cdd934367f2e7652
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2f6560b5694bcd7a55b7547593d9ba2dc9a93389
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228650"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97310462"
 ---
 # <a name="containers-client-item-states"></a>컨테이너: 클라이언트 항목 상태
 
@@ -32,7 +33,7 @@ ms.locfileid: "87228650"
 
 비어 있는 상태에서는 클라이언트 항목이 아직 완전히 항목이 아닙니다. 메모리가 할당 되었지만 아직 OLE 항목의 데이터를 사용 하 여 초기화 되지 않았습니다. 이는에 대 한 호출을 통해 생성 **`new`** 되었지만 아직 2 단계를 만든 일반적인 두 번째 단계를 거치지 않은 클라이언트 항목의 상태입니다.
 
-두 번째 단계에서는 또는 다른 xxxx 함수를 호출 하 여 수행 된 `COleClientItem::CreateFromFile` `CreateFrom` *xxxx* 항목이 완전히 만들어집니다. OLE 데이터 (파일 또는 클립보드와 같은 다른 원본)가 파생 개체와 연결 되어 있습니다 `COleClientItem` . 이제 항목이 로드 된 상태입니다.
+두 번째 단계에서는 또는 다른 xxxx 함수를 호출 하 여 수행 된 `COleClientItem::CreateFromFile` `CreateFrom`  항목이 완전히 만들어집니다. OLE 데이터 (파일 또는 클립보드와 같은 다른 원본)가 파생 개체와 연결 되어 있습니다 `COleClientItem` . 이제 항목이 로드 된 상태입니다.
 
 항목이 컨테이너의 문서에서 열린 대신 서버 창에서 열린 경우에는 열기 (또는 완전히 열림) 상태에 있습니다. 이 상태에서는 항목이 다른 곳에서 활성 상태임을 나타내기 위해 컨테이너 창의 항목 표현에 대 한 교차 해치를 일반적으로 그립니다.
 
@@ -41,7 +42,7 @@ ms.locfileid: "87228650"
 ## <a name="see-also"></a>참고 항목
 
 [컨테이너](containers.md)<br/>
-[정품 인증](activation-cpp.md)<br/>
-[컨테이너: 클라이언트 항목 알림](containers-client-item-notifications.md)<br/>
-[추적기](trackers.md)<br/>
+[활성화](activation-cpp.md)<br/>
+[컨테이너: Client-Item 알림](containers-client-item-notifications.md)<br/>
+[Trackers](trackers.md)<br/>
 [CRectTracker 클래스](reference/crecttracker-class.md)

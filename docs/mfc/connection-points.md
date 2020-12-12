@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 연결 요소'
 title: 연결 지점
 ms.date: 11/19/2018
 f1_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - CCmdTarget class [MFC], and connection points
 - sinks, connection points
 ms.assetid: bc9fd7c7-8df6-4752-ac8c-0b177442c88d
-ms.openlocfilehash: c14d8247be2abdf828b88e728bd930691ec6571f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 721f35ea1737bf8e49f8b802b5382687a848c084
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214154"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97310553"
 ---
 # <a name="connection-points"></a>연결 지점
 
@@ -49,7 +50,7 @@ MFC는 [CConnectionPoint](reference/cconnectionpoint-class.md) 및 [ccmdtarget](
 
 클래스에 연결 지점이 둘 이상 있는 경우 **BEGIN_CONNECTION_MAP** 와 **END_CONNECTION_MAP** 매크로 사이에 **CONNECTION_PART** 매크로를 추가로 삽입 합니다.
 
-마지막으로 클래스의 생성자에서에 대 한 호출을 추가 `EnableConnections` 합니다. 예를 들면 다음과 같습니다.
+마지막으로 클래스의 생성자에서에 대 한 호출을 추가 `EnableConnections` 합니다. 예를 들어:
 
 [!code-cpp[NVC_MFCConnectionPoints#3](codesnippet/cpp/connection-points_3.cpp)]
 

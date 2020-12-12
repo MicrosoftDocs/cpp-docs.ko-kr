@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3487'
 title: 컴파일러 오류 C3487
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3487
 ms.assetid: 39bda474-4418-4a79-98bf-2b22fa92eaaa
-ms.openlocfilehash: 7b38755470e3746066711382b2ed471badc8e197
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: a02640980ab1313069c747ebfe449b767055a88b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74738442"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97315675"
 ---
 # <a name="compiler-error-c3487"></a>컴파일러 오류 C3487
 

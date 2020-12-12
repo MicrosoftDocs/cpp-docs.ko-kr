@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: 컨테이너: Client-Item 알림'
 title: '컨테이너: 클라이언트 항목 알림'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - OLE containers [MFC], client-item notifications
 - client items and OLE containers
 ms.assetid: e1f1c427-01f5-45f2-b496-c5bce3d76340
-ms.openlocfilehash: 54b1b2a64685b00fb265e0f80c1f6ad878a7da85
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 2918ea29bcd656e76735db8e003d33dce21c6b63
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84623013"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97310475"
 ---
 # <a name="containers-client-item-notifications"></a>컨테이너: 클라이언트 항목 알림
 
@@ -30,7 +31,7 @@ ms.locfileid: "84623013"
 |**OLE_CHANGED_STATE**|OLE 항목이 한 상태에서 다른 상태로 변경 되었습니다.|
 |**OLE_CHANGED_ASPECT**|프레임 워크에서 OLE 항목의 그리기 측면을 변경 했습니다.|
 
-이러한 값은 AFXOLE에 정의 된 **OLE_NOTIFICATION** 열거형에서 가져온 것입니다. 넣기.
+이러한 값은 AFXOLE에 정의 된 **OLE_NOTIFICATION** 열거형에서 가져온 것입니다.
 
 이 함수에 대 한 두 번째 인수는 항목이 변경 된 방법 또는 입력 한 상태를 지정 합니다.
 
@@ -38,9 +39,9 @@ ms.locfileid: "84623013"
 |----------------------------|---------------------|
 |**OLE_SAVED** 또는 **OLE_CLOSED**|는 사용 되지 않습니다.|
 |**OLE_CHANGED**|변경 된 OLE 항목의 측면을 지정 합니다.|
-|**OLE_CHANGED_STATE**|입력 중인 상태 (*emptyState*, *loadedState*, *Openstate*, *activestate*또는 *activeUIState*)를 설명 합니다.|
+|**OLE_CHANGED_STATE**|입력 중인 상태 (*emptyState*, *loadedState*, *Openstate*, *activestate* 또는 *activeUIState*)를 설명 합니다.|
 
-클라이언트 항목에서 가정할 수 있는 상태에 대 한 자세한 내용은 [컨테이너: 클라이언트-항목 상태](containers-client-item-states.md)를 참조 하세요.
+클라이언트 항목에서 가정할 수 있는 상태에 대 한 자세한 내용은 [컨테이너: Client-Item 상태](containers-client-item-states.md)를 참조 하세요.
 
 프레임 워크는 `COleClientItem::OnGetItemPosition` 내부 편집을 위해 항목을 활성화할 때를 호출 합니다. 내부 편집을 지 원하는 응용 프로그램의 경우 구현이 필요 합니다. MFC 응용 프로그램 마법사는 `CRect` 에 대 한 인수로 전달 되는 개체에 항목의 좌표를 할당 하는 기본 구현을 제공 합니다 `OnGetItemPosition` .
 
@@ -49,5 +50,5 @@ ms.locfileid: "84623013"
 ## <a name="see-also"></a>참고 항목
 
 [컨테이너](containers.md)<br/>
-[컨테이너: 클라이언트 항목 상태](containers-client-item-states.md)<br/>
+[컨테이너: Client-Item 상태](containers-client-item-states.md)<br/>
 [COleClientItem:: OnChangeItemPosition](reference/coleclientitem-class.md#onchangeitemposition)

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 C4958'
 title: 컴파일러 경고 C4958
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4958
 ms.assetid: e79b9e9c-d572-4a3a-a3b6-60962b70864a
-ms.openlocfilehash: 63371d91367902c1eab539cb370e55440fcbf917
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 1a6260a441b619923e8c2ddf8c7a5d891a3c3844
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80164887"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97314804"
 ---
 # <a name="compiler-warning-c4958"></a>컴파일러 경고 C4958
 
@@ -21,7 +22,7 @@ ms.locfileid: "80164887"
 
 포인터 산술 연산을 사용하여 확인할 수 없는 이미지를 생성합니다.
 
-자세한 내용은 [순수형 및 안정형 코드C++(/cli)](../../dotnet/pure-and-verifiable-code-cpp-cli.md)를 참조 하세요.
+자세한 내용은 [순수형 및 안정형 코드 (c + +/cli)](../../dotnet/pure-and-verifiable-code-cpp-cli.md)를 참조 하세요.
 
 **/Clr: safe** 컴파일러 옵션은 visual studio 2015에서 더 이상 사용 되지 않으며 visual studio 2017에서는 지원 되지 않습니다.
 

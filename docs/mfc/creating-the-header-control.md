@@ -1,16 +1,17 @@
 ---
+description: '자세히 알아보기: 헤더 컨트롤 만들기'
 title: 헤더 컨트롤 만들기
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CHeaderCtrl class [MFC], creating
 - header controls [MFC], creating
 ms.assetid: 7864d9d2-4a2c-4622-b58b-7b110a1e28d2
-ms.openlocfilehash: b08dd4d3f12c70ae495b20b936d44f6a695d1ae1
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: b75a21a0d855e557bf02a9144fc3712b5bb2ee35
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616241"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97309695"
 ---
 # <a name="creating-the-header-control"></a>헤더 컨트롤 만들기
 

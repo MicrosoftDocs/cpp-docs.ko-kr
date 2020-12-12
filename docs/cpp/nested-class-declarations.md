@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 중첩 클래스 선언'
 title: 중첩 클래스 선언
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - declaring classes [C++]
 - declarations, nested classes
 ms.assetid: c02e471d-b7f9-41b8-8ef6-2323f006dbd5
-ms.openlocfilehash: 672156e65e223be45c91558ed91065859566a8b9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8247a969be59cb35752f141ea281a271de24f87b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227285"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97313686"
 ---
 # <a name="nested-class-declarations"></a>중첩 클래스 선언
 
@@ -63,7 +64,7 @@ int main()
 > [!NOTE]
 > 중첩 클래스는 클래스 범위 내에서 형식만 선언하며, 중첩 클래스의 포함된 개체가 만들어지지는 않습니다. 위의 예제에서는 두 중첩 클래스를 선언하지만 이러한 클래스 형식의 개체는 선언하지 않습니다.
 
-중첩 클래스 선언의 범위 표시 유형에 대한 예외는 형식 이름이 정방향 선언과 함께 선언된 경우입니다.  이 경우 정방향 선언에서 선언된 클래스 이름은 바깥쪽 클래스 외부에 표시되며 해당 범위는 가장 작은 바깥쪽 비클래스 범위로 정의됩니다.  예를 들면 다음과 같습니다.
+중첩 클래스 선언의 범위 표시 유형에 대한 예외는 형식 이름이 정방향 선언과 함께 선언된 경우입니다.  이 경우 정방향 선언에서 선언된 클래스 이름은 바깥쪽 클래스 외부에 표시되며 해당 범위는 가장 작은 바깥쪽 비클래스 범위로 정의됩니다.  예를 들어:
 
 ```cpp
 // nested_class_declarations_2.cpp
@@ -206,6 +207,6 @@ int GetExtendedErrorStatus( char *message )
 
 이전의 인터페이스를 사용하면 여러 클래스에서 오류 메시지를 복사할 메모리 위치를 전달하여 이 함수의 서비스를 사용할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [클래스 및 구조체](../cpp/classes-and-structs-cpp.md)

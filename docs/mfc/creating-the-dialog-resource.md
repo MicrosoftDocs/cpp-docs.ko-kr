@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 대화 상자 리소스 만들기'
 title: 대화 상자 리소스 만들기
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - resources [MFC], creating dialog boxes
 - MFC dialog boxes [MFC], dialog resource
 ms.assetid: 0b83bd33-14d3-4611-8129-fccdae18053e
-ms.openlocfilehash: efaef11cfdc036a201ced3357ca81b37a5dc29db
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 999a63d11981b8d21be85096ff49813c92b15810
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619619"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97309721"
 ---
 # <a name="creating-the-dialog-resource"></a>대화 상자 리소스 만들기
 

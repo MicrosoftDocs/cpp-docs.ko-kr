@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3412'
 title: 컴파일러 오류 C3412
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3412
 ms.assetid: aa4dd43b-54ce-4cda-85c1-1a77dd6e34fa
-ms.openlocfilehash: 6918e3be0a0288bab50d63a188bc33df87fe7754
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: aa0dc6cfeac193afc99d003cd821663bcfc139c8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90742894"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97313192"
 ---
 # <a name="compiler-error-c3412"></a>컴파일러 오류 C3412
 

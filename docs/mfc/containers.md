@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: 컨테이너'
 title: 컨테이너
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - containers [MFC], OLE container applications
 - containers [MFC], container applications
 ms.assetid: b19d7c05-4d02-44bd-b76a-4a6c25994a62
-ms.openlocfilehash: a76bc9775e13350a031539c63476a4a8fae68ed0
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 20f31535f055312de3da05f5fa3e469183941f25
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84620644"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97310280"
 ---
 # <a name="containers"></a>컨테이너
 
@@ -27,7 +28,7 @@ ms.locfileid: "84620644"
 
 [복합 파일 사용](containers-compound-files.md)
 
-[컨테이너 사용자 인터페이스 문제](containers-user-interface-issues.md)
+[컨테이너 User-Interface 문제](containers-user-interface-issues.md)
 
 [컨테이너의 고급 기능](containers-advanced-features.md)
 
@@ -36,4 +37,4 @@ ms.locfileid: "84620644"
 [OLE](ole-in-mfc.md)<br/>
 [서버](servers.md)<br/>
 [활성화](activation-cpp.md)<br/>
-[메뉴 및 리소스(OLE)](menus-and-resources-ole.md)
+[메뉴 및 리소스 (OLE)](menus-and-resources-ole.md)

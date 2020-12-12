@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3484'
 title: 컴파일러 오류 C3484
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3484
 ms.assetid: 2fe847fa-f6ee-4978-bc1d-b6dc6ae906ac
-ms.openlocfilehash: ded4a183f69e4903afb4c9dfeae22f7751ef76ad
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 6d3e72ef89ad33333c840b549cfc5c7c40495130
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90686282"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97315688"
 ---
 # <a name="compiler-error-c3484"></a>컴파일러 오류 C3484
 

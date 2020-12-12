@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _WriteBarrier'
 title: _WriteBarrier
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - WriteBarrier intrinsic
 - _WriteBarrier intrinsic
 ms.assetid: a5ffdad9-0ca1-4eb7-b2f3-0f092c4bf4b5
-ms.openlocfilehash: a41f4c6c5cdd6b72e76a596622912e88fbd03f34
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 7fe78eaa30e7971853ff9d73d7142b8eeddb679f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219320"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97313140"
 ---
 # <a name="_writebarrier"></a>_WriteBarrier
 
@@ -21,9 +22,9 @@ ms.locfileid: "70219320"
 호출 시점 전체에서 메모리 액세스 작업을 다시 정렬할 수 있는 컴파일러 최적화를 제한합니다.
 
 > [!CAUTION]
-> `_ReadBarrier`, `_WriteBarrier` 및 `_ReadWriteBarrier` 컴파일러 내장 함수 및 `MemoryBarrier` 매크로는 모두 더 이상 사용되지 않으므로 사용하면 안 됩니다. 스레드 간 통신의 경우 [ C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)에 정의 된 [atomic_thread_fence](../standard-library/atomic-functions.md#atomic_thread_fence) 및 [std:: atomic\<T >](../standard-library/atomic.md)와 같은 메커니즘을 사용 합니다. 하드웨어 액세스의 경우 [/volatile: iso](../build/reference/volatile-volatile-keyword-interpretation.md) 컴파일러 옵션을 [volatile](../cpp/volatile-cpp.md) 키워드와 함께 사용 합니다.
+> `_ReadBarrier`, `_WriteBarrier` 및 `_ReadWriteBarrier` 컴파일러 내장 함수 및 `MemoryBarrier` 매크로는 모두 더 이상 사용되지 않으므로 사용하면 안 됩니다. 스레드 간 통신의 경우 [c + + 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)에 정의 된 [atomic_thread_fence](../standard-library/atomic-functions.md#atomic_thread_fence) 및 [std \<T> :: atomic](../standard-library/atomic.md)과 같은 메커니즘을 사용 합니다. 하드웨어 액세스의 경우 [/volatile: iso](../build/reference/volatile-volatile-keyword-interpretation.md) 컴파일러 옵션을 [volatile](../cpp/volatile-cpp.md) 키워드와 함께 사용 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```C
 void _WriteBarrier(void);
@@ -31,11 +32,11 @@ void _WriteBarrier(void);
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`_WriteBarrier`|x86, x64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 ## <a name="remarks"></a>설명
 
@@ -43,9 +44,9 @@ void _WriteBarrier(void);
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [_ReadBarrier](../intrinsics/readbarrier.md)\
 [_ReadWriteBarrier](../intrinsics/readwritebarrier.md)\
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)\
-[C++ 키워드](../cpp/keywords-cpp.md)
+[키워드](../cpp/keywords-cpp.md)
