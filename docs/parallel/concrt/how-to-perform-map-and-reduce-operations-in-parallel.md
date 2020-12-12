@@ -1,4 +1,5 @@
 ---
+description: '방법: 방법: 매핑 수행 및 병렬 작업 줄이기'
 title: '방법: 매핑 수행 및 병렬 작업 줄이기'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,18 +7,18 @@ helpviewer_keywords:
 - parallel map and reduce, example
 - parallel_reduce function, example
 ms.assetid: 9d19fac0-4ab6-4380-a375-3b18eeb87720
-ms.openlocfilehash: 599e46c05a91a1f2ea6e317fe024d3c98a78977f
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: f35c9bf4df5a79cf9568bc286ff628e2f9fd45c1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77141702"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97209843"
 ---
 # <a name="how-to-perform-map-and-reduce-operations-in-parallel"></a>방법: 매핑 수행 및 병렬 작업 줄이기
 
 이 예제에서는 [동시성::p arallel_transform](reference/concurrency-namespace-functions.md#parallel_transform) 및 [동시성::p arallel_reduce](reference/concurrency-namespace-functions.md#parallel_reduce) 알고리즘과 [concurrency:: concurrent_unordered_map](../../parallel/concrt/reference/concurrent-unordered-map-class.md) 클래스를 사용 하 여 파일에서 단어의 발생 횟수를 계산 하는 방법을 보여 줍니다.
 
-*Map* 연산은 시퀀스의 각 값에 함수를 적용 합니다. *감소* 연산은 시퀀스의 요소를 하나의 값으로 결합 합니다. C++ 표준 라이브러리 [std:: transform](../../standard-library/algorithm-functions.md#transform) 및 [std:: 누적](../../standard-library/numeric-functions.md#accumulate) 함수를 사용 하 여 맵 및 감소 작업을 수행할 수 있습니다. 그러나 많은 문제에 대해 성능을 향상시키기 위해 `parallel_transform` 알고리즘을 사용하여 매핑 작업을 병렬로 수행하고, `parallel_reduce` 알고리즘을 사용하여 줄이기 작업을 병렬로 수행할 수 있습니다. 경우에 따라 `concurrent_unordered_map`을 사용하여 매핑과 줄이기를 하나의 작업으로 수행할 수도 있습니다.
+*Map* 연산은 시퀀스의 각 값에 함수를 적용 합니다. *감소* 연산은 시퀀스의 요소를 하나의 값으로 결합 합니다. C + + 표준 라이브러리 [std:: transform](../../standard-library/algorithm-functions.md#transform) 및 [std:: 누적](../../standard-library/numeric-functions.md#accumulate) 함수를 사용 하 여 맵 및 감소 작업을 수행할 수 있습니다. 그러나 많은 문제에 대해 성능을 향상시키기 위해 `parallel_transform` 알고리즘을 사용하여 매핑 작업을 병렬로 수행하고, `parallel_reduce` 알고리즘을 사용하여 줄이기 작업을 병렬로 수행할 수 있습니다. 경우에 따라 `concurrent_unordered_map`을 사용하여 매핑과 줄이기를 하나의 작업으로 수행할 수도 있습니다.
 
 ## <a name="example"></a>예제
 
@@ -27,7 +28,7 @@ ms.locfileid: "77141702"
 
 ## <a name="compiling-the-code"></a>코드 컴파일
 
-코드를 컴파일하려면 코드를 복사한 다음 Visual Studio 프로젝트에 붙여넣거나, `parallel-map-reduce.cpp` 이름이 지정 된 파일에 붙여 넣은 후 Visual Studio 명령 프롬프트 창에서 다음 명령을 실행 합니다.
+코드를 컴파일하려면 코드를 복사한 다음 Visual Studio 프로젝트에 붙여넣거나 라는 파일에 붙여 넣은 후 `parallel-map-reduce.cpp` Visual Studio 명령 프롬프트 창에서 다음 명령을 실행 합니다.
 
 > **cl.exe/EHsc parallel-map-reduce**
 

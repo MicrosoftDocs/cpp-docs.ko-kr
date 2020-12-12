@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 링커 도구 경고 LNK4075'
 title: 링커 도구 경고 LNK4075
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4075
 ms.assetid: f39ad3f9-c263-4cf0-9d70-259fc56ac96d
-ms.openlocfilehash: e4a385b9559e2f54e81bda76e6dd13505e978a74
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d7883573271522857b34b3aac81bf45029e540ba
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80183490"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97210155"
 ---
 # <a name="linker-tools-warning-lnk4075"></a>링커 도구 경고 LNK4075
 
@@ -31,4 +32,4 @@ ms.locfileid: "80183490"
 
 몇 가지 구체적인 예는 다음과 같습니다.
 
-- **/Zi**를 사용 하 여 컴파일된 모듈을 연결 하는 경우/candcontinue 라는 내부 링커 옵션을 의미 하 고/OPT: REF,/OPT: ICF 또는/INCREMENTAL: no를 사용 하 여 컴파일된 모듈은 LNK4075를 가져옵니다.  자세한 내용은 [/Z7,/zi,/zi (디버그 정보 형식)](../../build/reference/z7-zi-zi-debug-information-format.md) 를 참조 하세요.
+- **/Zi** 를 사용 하 여 컴파일된 모듈을 연결 하는 경우/candcontinue 라는 내부 링커 옵션을 의미 하 고/OPT: REF,/OPT: ICF 또는/INCREMENTAL: no를 사용 하 여 컴파일된 모듈은 LNK4075를 가져옵니다.  자세한 내용은 [/Z7,/zi,/zi (디버그 정보 형식)](../../build/reference/z7-zi-zi-debug-information-format.md) 를 참조 하세요.

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2959'
 title: 컴파일러 오류 C2959
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2959
 ms.assetid: d66bb2a8-70c3-4209-a358-b0c47f111a50
-ms.openlocfilehash: a0e20ed3601babb2f4f53bc293d1dc462f9a30a7
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: aa5da1db36ce8544e95ad509402b066e664faf18
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74747633"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97210428"
 ---
 # <a name="compiler-error-c2959"></a>컴파일러 오류 C2959
 

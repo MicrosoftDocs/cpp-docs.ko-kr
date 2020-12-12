@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _putc_nolock, _putwc_nolock'
 title: _putc_nolock, _putwc_nolock
 ms.date: 4/2/2020
 api_name:
@@ -40,12 +41,12 @@ helpviewer_keywords:
 - _puttc_nolock function
 - _putwc_nolock function
 ms.assetid: 3cfc7f21-c9e8-4b7f-b0fb-af0d4d85e7e1
-ms.openlocfilehash: 21ab002dee736a099bae5ce12f5c78248e682d58
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 2d69851ee6458d54f9c56e13894046ffa094e11f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913317"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97209440"
 ---
 # <a name="_putc_nolock-_putwc_nolock"></a>_putc_nolock, _putwc_nolock
 
@@ -72,15 +73,15 @@ wint_t _putwc_nolock(
 *스트림*<br/>
 **FILE** 구조체에 대한 포인터입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-**putc, putwc**를 참조하세요.
+**putc, putwc** 를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
 **_putc_nolock** 및 **_putwc_nolock** 는 다른 스레드의 간섭 으로부터 보호 되지 않는다는 점을 제외 하 고는 **_nolock** 접미사가 없는 버전과 동일 합니다. 이들은 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 애플리케이션과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
 
-**_putwc_nolock** 은 **_putc_nolock**의 와이드 문자 버전입니다. 두 함수는 스트림이 ANSI 모드에서 열리는 경우 동일 하 게 동작 합니다. **_putc_nolock** 는 현재 유니코드 스트림으로의 출력을 지원 하지 않습니다.
+**_putwc_nolock** 은 **_putc_nolock** 의 와이드 문자 버전입니다. 두 함수는 스트림이 ANSI 모드에서 열리는 경우 동일 하 게 동작 합니다. **_putc_nolock** 는 현재 유니코드 스트림으로의 출력을 지원 하지 않습니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -97,7 +98,7 @@ wint_t _putwc_nolock(
 |**_putc_nolock**|\<stdio.h>|
 |**_putwc_nolock**|\<stdio.h> 또는 \<wchar.h>|
 
-이 콘솔은 UWP (유니버설 Windows 플랫폼) 앱에서 지원 되지 않습니다. 콘솔, **stdin**, **stdout**및 **stderr**에 연결 된 표준 스트림 핸들은 C 런타임 함수가 UWP 앱에서 사용할 수 있으려면 먼저 리디렉션해야 합니다. 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
+이 콘솔은 UWP (유니버설 Windows 플랫폼) 앱에서 지원 되지 않습니다. 콘솔, **stdin**, **stdout** 및 **stderr** 에 연결 된 표준 스트림 핸들은 C 런타임 함수가 UWP 앱에서 사용할 수 있으려면 먼저 리디렉션해야 합니다. 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="libraries"></a>라이브러리
 

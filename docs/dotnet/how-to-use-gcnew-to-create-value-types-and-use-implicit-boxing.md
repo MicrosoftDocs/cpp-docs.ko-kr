@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 방법: gcnew를 사용 하 여 값 형식 만들기 및 암시적 Boxing 사용'
 title: '방법: gcnew를 사용하여 값 형식 만들기 및 암시적 boxing 사용'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - boxing, implicit
 - value types, creating
 ms.assetid: ceb48841-d6bd-47be-a167-57f44c961603
-ms.openlocfilehash: 891704d24ca7a7bf8724c8e57faa2aef20a7f982
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: e58b50be4399cef6a842ce0b02e951617f143e5c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "79544876"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97210896"
 ---
 # <a name="how-to-use-gcnew-to-create-value-types-and-use-implicit-boxing"></a>방법: gcnew를 사용하여 값 형식 만들기 및 암시적 boxing 사용
 
@@ -46,4 +47,4 @@ int main() {
 
 ## <a name="see-also"></a>참고 항목
 
-[Boxing](../extensions/boxing-cpp-component-extensions.md)
+[boxing](../extensions/boxing-cpp-component-extensions.md)

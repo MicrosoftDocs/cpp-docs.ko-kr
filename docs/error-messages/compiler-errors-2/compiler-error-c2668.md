@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2668'
 title: 컴파일러 오류 C2668
 ms.date: 03/28/2017
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2668
 ms.assetid: 041e9627-1c76-420e-a653-cfc83f933bd3
-ms.openlocfilehash: f6b0539e7c794852f7e4b28d60f4b402a020bed1
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 87ae1cfa3588b8b524d73d717365206c9b7213ea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90743206"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97210688"
 ---
 # <a name="compiler-error-c2668"></a>컴파일러 오류 C2668
 

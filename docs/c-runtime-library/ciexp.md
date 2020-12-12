@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _CIexp'
 title: _CIexp
 ms.date: 4/2/2020
 api_name:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - CIexp intrinsic
 - _CIexp intrinsic
 ms.assetid: f8a3e3b7-fa57-41a3-9983-6c81914cbb55
-ms.openlocfilehash: 90a8fdac4b3b671853d2274de26040e3bf67def4
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: bc1e4ccb081fe31f786fcd19d3d8c761a7472212
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918038"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97209674"
 ---
 # <a name="_ciexp"></a>_CIexp
 
@@ -54,7 +55,7 @@ void __cdecl _CIexp();
 
 **플랫폼:** x86
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [사전순 함수 참조](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [exp, expf, expl](../c-runtime-library/reference/exp-expf.md)

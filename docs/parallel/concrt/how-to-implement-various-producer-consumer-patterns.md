@@ -1,20 +1,21 @@
 ---
+description: '자세한 정보: 방법: 다양 한 Producer-Consumer 패턴 구현'
 title: '방법: 다양한 공급자/소비자 패턴 구현'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - producer-consumer patterns, implementing [Concurrency Runtime]
 - implementing producer-consumer patterns [Concurrency Runtime]
 ms.assetid: 75f2c7cc-5399-49ea-98eb-847fe6747169
-ms.openlocfilehash: 70813adf6715a2bcaf4af7370ce43d99c44263bd
-ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
+ms.openlocfilehash: 5742d3ba213997efc54aeca360c99fd11b0cf712
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91413777"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97209908"
 ---
 # <a name="how-to-implement-various-producer-consumer-patterns"></a>방법: 다양한 공급자/소비자 패턴 구현
 
-이 항목에서는 응용 프로그램에서 생산자-소비자 패턴을 구현 하는 방법에 대해 설명 합니다. 이 패턴에서 *생산자*는 메시지 블록에 메시지를 보내고 *소비자*는 해당 블록에서 메시지를 읽습니다.
+이 항목에서는 응용 프로그램에서 생산자-소비자 패턴을 구현 하는 방법에 대해 설명 합니다. 이 패턴에서 *생산자* 는 메시지 블록에 메시지를 보내고 *소비자* 는 해당 블록에서 메시지를 읽습니다.
 
 이 항목에서는 두 가지 시나리오를 보여 줍니다. 첫 번째 시나리오에서 소비자는 생산자가 보내는 각 메시지를 받아야 합니다. 두 번째 시나리오에서 소비자는 주기적으로 데이터를 폴링합니다. 따라서 각 메시지를 수신할 필요가 없습니다.
 

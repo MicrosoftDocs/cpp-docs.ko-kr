@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2073'
 title: 컴파일러 오류 C2073
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2073
 ms.assetid: 57908234-be7a-4ce9-b0a7-8b1ad621865e
-ms.openlocfilehash: 545b2b24d3bfe5a36c5554dfa898d17b05067c3d
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 791f07040b0a0dd70d2cb0aa8373eb6c342c5b97
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757737"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97209167"
 ---
 # <a name="compiler-error-c2073"></a>컴파일러 오류 C2073
 

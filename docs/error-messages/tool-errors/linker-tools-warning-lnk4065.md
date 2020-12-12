@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 링커 도구 경고 LNK4065'
 title: 링커 도구 경고 LNK4065
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4065
 ms.assetid: aa5c9e2c-9ad3-4460-8605-4c12bbc6d423
-ms.openlocfilehash: ed45eba3964533f6764cc775507a5054a21b700e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 1294cb5e88c40c8a9da387c815ee11b50e422542
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80194059"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97210194"
 ---
 # <a name="linker-tools-warning-lnk4065"></a>링커 도구 경고 LNK4065
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: ModuleType 열거형'
 title: ModuleType 열거형
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - ModuleType enumeration
 ms.assetid: 61a763af-a5a4-451d-8b40-815af507fcde
-ms.openlocfilehash: 8425a15d594f7b8b30027d3576ee86015b656130
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 148f9594fd16a6c8a2af70ac0ff2ac03cd1f62e0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213722"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97209375"
 ---
 # <a name="moduletype-enumeration"></a>ModuleType 열거형
 
@@ -33,8 +34,8 @@ enum ModuleType;
 |`InProc`|In-process 서버.|
 |`OutOfProc`|Out-of-process 서버입니다.|
 |`DisableCaching`|모듈에서 캐싱 메커니즘을 사용 하지 않도록 설정 합니다.|
-|`InProcDisableCaching`|`InProc`와 `DisableCaching`의 조합입니다.|
-|`OutOfProcDisableCaching`|`OutOfProc`와 `DisableCaching`의 조합입니다.|
+|`InProcDisableCaching`|및의 `InProc` 조합 `DisableCaching` 입니다.|
+|`OutOfProcDisableCaching`|및의 `OutOfProc` 조합 `DisableCaching` 입니다.|
 
 ## <a name="requirements"></a>요구 사항
 
@@ -44,4 +45,4 @@ enum ModuleType;
 
 ## <a name="see-also"></a>참고 항목
 
-[Microsoft::WRL 네임스페이스](microsoft-wrl-namespace.md)
+[Microsoft:: WRL 네임 스페이스](microsoft-wrl-namespace.md)

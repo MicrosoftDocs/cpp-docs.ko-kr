@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2975'
 title: 컴파일러 오류 C2975
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2975
 ms.assetid: 526f6b9d-6c76-4c12-9252-1b1d7c1e06c7
-ms.openlocfilehash: 70fc648de8bcf4f1e85edf3a12cc0b7d3d70625f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 9f9108d1dc4e0fe61b6dd2135fb69bbaedfaedf0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80201567"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97210350"
 ---
 # <a name="compiler-error-c2975"></a>컴파일러 오류 C2975
 
@@ -35,7 +36,7 @@ int main() {
 }
 ```
 
-&#95; &#95;C2975는 [/zi](../../build/reference/z7-zi-zi-debug-information-format.md)를 사용 하 여&#95; &#95; 컴파일 시간 상수로 줄을 사용 하는 경우에도 발생 합니다. 한 가지 해결 방법은 **/zi**대신 [/zi](../../build/reference/z7-zi-zi-debug-information-format.md) 를 사용 하 여 컴파일하는 것입니다.
+C2975는 [/zi](../../build/reference/z7-zi-zi-debug-information-format.md)를 사용 하 여 컴파일 시간 상수로 &#95;&#95;줄&#95;&#95; 를 사용 하는 경우에도 발생 합니다. 한 가지 해결 방법은 **/zi** 대신 [/zi](../../build/reference/z7-zi-zi-debug-information-format.md) 를 사용 하 여 컴파일하는 것입니다.
 
 ```cpp
 // C2975b.cpp

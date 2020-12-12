@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _CIsqrt'
 title: _CIsqrt
 ms.date: 4/2/2020
 api_name:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - CIsqrt intrinsic
 - _CIsqrt intrinsic
 ms.assetid: 663548ea-398c-48ee-8397-a787c6ebb937
-ms.openlocfilehash: baedb0541e16c28d18d0062fa5498fb8e2c8dea8
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: b643ad301acc217f3fac1bbf1aeee1d7141702a4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918360"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97209622"
 ---
 # <a name="_cisqrt"></a>_CIsqrt
 
@@ -54,7 +55,7 @@ void __cdecl _CIsqrt();
 
 **플랫폼:** x86
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [사전순 함수 참조](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [sqrt, sqrtf, sqrtl](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)

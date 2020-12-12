@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _purecall'
 title: _purecall
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - _purecall function
 - purecall function
 ms.assetid: 56135d9b-3403-4e22-822d-e714523801cc
-ms.openlocfilehash: 19ad6c2f517d9ddf277a7bdda6e46c7940f0d3f1
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: df52d7383685f3ce183562d8789b710fd7587acd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913335"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97209453"
 ---
 # <a name="_purecall"></a>_purecall
 
@@ -55,9 +56,9 @@ extern "C" int __cdecl _purecall();
 
 ## <a name="requirements"></a>요구 사항
 
-**_Purecall** 함수에 헤더 선언이 없습니다. **_Purecall_handler** typedef는 stdlib.h>에 \<정의 되어 있습니다.
+**_Purecall** 함수에 헤더 선언이 없습니다. **_Purecall_handler** typedef는에 정의 되어 \<stdlib.h> 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [사전순 함수 참조](crt-alphabetical-function-reference.md)<br/>
 [_get_purecall_handler, _set_purecall_handler](get-purecall-handler-set-purecall-handler.md)<br/>
