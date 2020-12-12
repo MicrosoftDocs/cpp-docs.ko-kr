@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 어댑터 (STL/CLR)'
 title: adapter(STL/CLR)
 ms.date: 06/15/2018
 ms.topic: reference
@@ -48,18 +49,18 @@ helpviewer_keywords:
 - operator= member [STL/CLR]
 - range_adapter member [STL/CLR]
 ms.assetid: 71ce7e51-42b6-4f70-9595-303791a97677
-ms.openlocfilehash: 3278371cc7afb08f0d461c77cde9578e1f2840c6
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 66e6346c644bc0d176d90701722cfcd90cbb3590
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502424"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97116421"
 ---
 # <a name="adapter-stlclr"></a>adapter(STL/CLR)
 
 STL/CLR 헤더는 `<cliext/adapter>` 두 개의 템플릿 클래스 ( `collection_adapter` 및 `range_adapter` ) 및 템플릿 함수를 지정 합니다 `make_collection` .
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 #include <cliext/adapter>
@@ -616,7 +617,7 @@ collection_adapter<Coll>% operator=(collection_adapter<Coll>% right);
 
 ### <a name="remarks"></a>설명
 
-멤버 연산자는 개체에 대해 *를 복사 하 고를 반환* **`*this`** 합니다. 저장 된 bcl 핸들을 *오른쪽*에 저장 된 bcl 핸들의 복사본으로 바꾸는 데 사용 합니다.
+멤버 연산자는 개체에 대해 *를 복사 하 고를 반환* **`*this`** 합니다. 저장 된 bcl 핸들을 *오른쪽* 에 저장 된 bcl 핸들의 복사본으로 바꾸는 데 사용 합니다.
 
 ### <a name="example"></a>예제
 
@@ -809,7 +810,7 @@ void swap(collection_adapter<Coll>% right);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 저장 된 BCL 핸들을 **`*this`** 와 *오른쪽*으로 바꿉니다.
+멤버 함수는 저장 된 BCL 핸들을 **`*this`** 와 *오른쪽* 으로 바꿉니다.
 
 ### <a name="example"></a>예제
 
@@ -1050,7 +1051,7 @@ range_adapter<Iter>% operator=(range_adapter<Iter>% right);
 
 ### <a name="remarks"></a>설명
 
-멤버 연산자는 개체에 대해 *를 복사 하 고를 반환* **`*this`** 합니다. 이를 사용 하 여 저장 된 반복기 쌍을 *오른쪽*에 저장 된 반복기 쌍의 복사본으로 바꿉니다.
+멤버 연산자는 개체에 대해 *를 복사 하 고를 반환* **`*this`** 합니다. 이를 사용 하 여 저장 된 반복기 쌍을 *오른쪽* 에 저장 된 반복기 쌍의 복사본으로 바꿉니다.
 
 ### <a name="example"></a>예제
 
@@ -1126,7 +1127,7 @@ range_adapter(Iter first, Iter last);
 
 `range_adapter(range_adapter<Iter>% right);`
 
-*오른쪽*에 저장 된 쌍을 복사 하 여 저장 된 반복기 쌍을 초기화 합니다.
+*오른쪽* 에 저장 된 쌍을 복사 하 여 저장 된 반복기 쌍을 초기화 합니다.
 
 생성자는 다음과 같습니다.
 
@@ -1138,7 +1139,7 @@ range_adapter(Iter first, Iter last);
 
 `range_adapter(Iter^ first, last);`
 
-*first* 및 *last*를 사용 하 여 저장 된 반복기 쌍을 초기화 합니다.
+*first* 및 *last* 를 사용 하 여 저장 된 반복기 쌍을 초기화 합니다.
 
 ### <a name="example"></a>예제
 

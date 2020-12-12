@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __if_exists 문'
 title: __if_exists 문
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - symbols, testing for existence
 - __if_exists keyword [C++]
 ms.assetid: d3eb34b6-f3a9-4063-a286-b62a28c0c7fa
-ms.openlocfilehash: 6522b1877dd2517032fc140de42671353ce9c357
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: d2edfc11d70e50d2e393938c108db9c425468003
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561403"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97113963"
 ---
 # <a name="__if_exists-statement"></a>__if_exists 문
 
@@ -125,5 +126,5 @@ C::f exists
 ## <a name="see-also"></a>참조
 
 [선택문](../cpp/selection-statements-cpp.md)<br/>
-[C++ 키워드](../cpp/keywords-cpp.md)<br/>
+[키워드](../cpp/keywords-cpp.md)<br/>
 [__if_not_exists 문](../cpp/if-not-exists-statement.md)

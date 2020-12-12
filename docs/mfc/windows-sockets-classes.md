@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: Windows 소켓 클래스'
 title: Windows 소켓 클래스
 ms.date: 11/04/2016
 helpviewer_keywords:
 - sockets classes [MFC]
 - Windows Sockets [MFC], classes
 ms.assetid: 58b9ab8d-9e44-4db3-8265-e04e713d2e9a
-ms.openlocfilehash: 3f1b7b2b6674b4a5f8c8f7bff6c5fa239715f459
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 03d8ddae0bb511e52b0ea7ed2b3754184ed6ebc8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79445977"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97118643"
 ---
 # <a name="windows-sockets-classes"></a>Windows 소켓 클래스
 
@@ -20,10 +21,10 @@ Windows 소켓은 두 컴퓨터 간에 통신 하는 네트워크 프로토콜 �
 씬 래퍼에서 Windows 소켓 API를 캡슐화 합니다.
 
 [CSocket](../mfc/reference/csocket-class.md)<br/>
-`CAsyncSocket`에서 파생 된 더 높은 수준의 추상화입니다. 동기적으로 작동 합니다.
+에서 파생 된 더 높은 수준의 추상화 `CAsyncSocket` 입니다. 동기적으로 작동 합니다.
 
 [CSocketFile](../mfc/reference/csocketfile-class.md)<br/>
-Windows 소켓에 `CFile` 인터페이스를 제공 합니다.
+`CFile`Windows 소켓에 대 한 인터페이스를 제공 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

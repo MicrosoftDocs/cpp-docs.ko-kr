@@ -1,4 +1,5 @@
-﻿---
+---
+description: '자세히 알아보기: 클래스 멤버 개요'
 title: 클래스 멤버 개요
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - class members [C++], types of
 - class members
 ms.assetid: 8802cfa9-705d-4f37-acde-245d6838010c
-ms.openlocfilehash: 02c5593d9fb5e72ee6b398c9637397ab26c9f3f2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6059fc589d7065863c37f03a6e40882e1039b17c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229066"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114119"
 ---
 # <a name="class-member-overview"></a>클래스 멤버 개요
 
@@ -170,6 +171,6 @@ int CanInit2::j = i;
 > [!NOTE]
 > 정의할 `CanInit2`가 `i` 클래스의 멤버가 되도록 지정하려면 클래스 이름 `i`가 `CanInit2` 앞에 와야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [클래스 및 구조체](../cpp/classes-and-structs-cpp.md)

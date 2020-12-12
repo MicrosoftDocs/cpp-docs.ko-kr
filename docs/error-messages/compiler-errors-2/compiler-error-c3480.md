@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3480'
 title: 컴파일러 오류 C3480
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3480
 ms.assetid: 7b2e055a-9604-4d13-861b-b38bda1a6940
-ms.openlocfilehash: a2fa1a8b02cf05d332210f359ae3ff33ed7d6e35
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: dbeed462410d36b466e807d576549c1b73ee4917
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90686308"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97113417"
 ---
 # <a name="compiler-error-c3480"></a>컴파일러 오류 C3480
 

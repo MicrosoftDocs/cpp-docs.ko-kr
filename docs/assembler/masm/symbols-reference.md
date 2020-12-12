@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 기호 참조'
 title: 기호 참조
 ms.date: 07/15/2020
 helpviewer_keywords:
 - MASM (Microsoft Macro Assembler), symbols reference
 ms.assetid: 96ed59cc-dafa-4299-bb2e-9c7c3f496491
-ms.openlocfilehash: a207de02a44ad960e84c6de3f78323c2f990e42c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 48b53d6002ba8b50005edebcb2932b41c5f30f8a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832155"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97125244"
 ---
 # <a name="symbols-reference"></a>기호 참조
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _clear87, _clearfp'
 title: _clear87, _clearfp
 ms.date: 04/05/2018
 api_name:
@@ -32,12 +33,12 @@ helpviewer_keywords:
 - _clearfp function
 - clear87 function
 ms.assetid: 72d24a70-7688-4793-ae09-c96d33fcca52
-ms.openlocfilehash: 4ca49895b881d9e307c1116681bc36f86b167c25
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: c15dd66f9a6598f351a54f0269619d9768eaa152
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70942964"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97124958"
 ---
 # <a name="_clear87-_clearfp"></a>_clear87, _clearfp
 
@@ -50,15 +51,15 @@ unsigned int _clear87( void );
 unsigned int _clearfp( void );
 ```
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 
-반환 된 값의 비트는 **_clear87** 또는 **_clear87**호출 전의 부동 소수점 상태를 표시 합니다. _Mpbf에서 반환 된 비트의전체 정의는 Float. h를 참조 하세요. 많은 수학 라이브러리 함수는 예기치 않은 결과를 포함하여 8087/80287 상태 단어를 수정합니다. 부동 소수점 상태 단어의 알려진 상태 사이에서 더 작은 수의 부동 소수점 연산이 수행 됨에 따라 _mpbs 및 **_statusers** 의 반환 값이 더 안정적입니다.
+반환 된 값의 비트는 **_clear87** 또는 **_clearfp** 호출 전의 부동 소수점 상태를 표시 합니다. **_Clear87** 에서 반환 된 비트의 전체 정의는 Float. h를 참조 하세요. 많은 수학 라이브러리 함수는 예기치 않은 결과를 포함하여 8087/80287 상태 단어를 수정합니다. 부동 소수점 상태 단어의 알려진 상태 사이에서 수행 되는 부동 소수점 작업의 수를 줄이면 **_clear87** 및 **_status87** 의 반환 값이 더 안정적이 됩니다.
 
 ## <a name="remarks"></a>설명
 
-_Mpbfa 함수는 부동 소수점 상태 단어의 예외 플래그를 지우고 사용 중인 비트를 0으로 설정 하 고 상태 단어를 반환 합니다. 부동 소수점 상태 단어는 8087/80287 상태 단어와 8087/80287 예외 처리기에서 검색한 기타 조건(예: 부동 소수점 스택 오버플로 및 언더플로)의 조합입니다.
+**_Clear87** 함수는 부동 소수점 상태 단어의 예외 플래그를 지우고 사용 중인 비트를 0으로 설정 하 고 상태 단어를 반환 합니다. 부동 소수점 상태 단어는 8087/80287 상태 단어와 8087/80287 예외 처리기에서 검색한 기타 조건(예: 부동 소수점 스택 오버플로 및 언더플로)의 조합입니다.
 
-**_clearfp** 는 플랫폼 독립적인 이식 가능한 버전의 **_clearfp** 루틴입니다. 이는 Intel ( x86) 플랫폼의 _mpba와 동일 하며 X64 및 ARM 플랫폼 에서도 지원 됩니다. 부동 소수점 코드를 x64 및 ARM으로 이식 하려면 **_clearfp**를 사용 합니다. X86 플랫폼만을 대상으로 하는 경우 _mpbba_mpfp를 사용할 수 있습니다.
+**_clearfp** 는 플랫폼 독립적인 이식 가능한 버전의 **_clear87** 루틴입니다. 이는 Intel (x86) 플랫폼에서 **_clear87** 하는 것과 동일 하며 X64 및 ARM 플랫폼 에서도 지원 됩니다. 부동 소수점 코드를 x64 및 ARM으로 이식할 수 있도록 하려면 **_clearfp** 를 사용 합니다. X86 플랫폼만 대상으로 하는 경우 **_clear87** 또는 **_clearfp** 를 사용할 수 있습니다.
 
 공용 언어 런타임은 기본 부동 소수점 전체 자릿수를 지원 하기 때문에 [/clr (공용 언어 런타임 컴파일)](../../build/reference/clr-common-language-runtime-compilation.md) 을 사용 하 여 컴파일할 때 이러한 함수는 사용 되지 않습니다.
 
@@ -69,7 +70,7 @@ _Mpbfa 함수는 부동 소수점 상태 단어의 예외 플래그를 지우고
 |**_clear87**|\<float.h>|
 |**_clearfp**|\<float.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
@@ -110,8 +111,8 @@ Status: 0003 - inexact, underflow
 Status: 80000 - denormal
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [부동 소수점 지원](../../c-runtime-library/floating-point-support.md)<br/>
-[_control87, _controlfp, \__control87_2](control87-controlfp-control87-2.md)<br/>
+[_control87, _controlfp, \_ _control87_2](control87-controlfp-control87-2.md)<br/>
 [_status87, _statusfp, _statusfp2](status87-statusfp-statusfp2.md)<br/>

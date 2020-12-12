@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3893'
 title: 컴파일러 오류 C3893
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3893
 ms.assetid: 90d52eae-6ef2-4db1-b7ad-92f9e8b140fb
-ms.openlocfilehash: 20c17eaa6555b5511ecbc930eacdb2ec92475b23
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 975e2e356bc4b98a25a80e8ae4cc152c3b9b3207
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74749505"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97119920"
 ---
 # <a name="compiler-error-c3893"></a>컴파일러 오류 C3893
 

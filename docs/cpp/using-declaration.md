@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 선언 사용'
 title: 선언 사용
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - namespaces [C++], unqualified names in
 - using keyword [C++]
 ms.assetid: 4184e2b1-3adc-408e-b5f3-0b3f8b554723
-ms.openlocfilehash: 072ecd325a76e80dbd710c241e39fdf7b969e537
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: eb0c3367b3d526c0b5cc30eff6865d41ba33070b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008254"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97116849"
 ---
 # <a name="using-declaration"></a>선언 사용
 
@@ -217,7 +218,7 @@ void g() {
 
 ## <a name="example-local-function-declarations-and-using-declarations"></a>예: 로컬 함수 선언 및 `using` 선언
 
-로컬 함수 선언은 선언을 사용 하 여 도입 된 함수와 동일한 이름과 형식을 가질 수 없습니다. 예를 들면 다음과 같습니다.
+로컬 함수 선언은 선언을 사용 하 여 도입 된 함수와 동일한 이름과 형식을 가질 수 없습니다. 예를 들어:
 
 ```cpp
 // functions_in_namespaces2.cpp
@@ -325,7 +326,7 @@ public:
 };
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [네임스페이스](../cpp/namespaces-cpp.md)<br/>
 [키워드](../cpp/keywords-cpp.md)

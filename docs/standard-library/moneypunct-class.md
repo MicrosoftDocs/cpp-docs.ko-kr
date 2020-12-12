@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: moneypunct 클래스'
 title: moneypunct 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -46,16 +47,16 @@ helpviewer_keywords:
 - std::moneypunct [C++], positive_sign
 - std::moneypunct [C++], thousands_sep
 ms.assetid: cf2650da-3e6f-491c-95d5-23e57f582ee6
-ms.openlocfilehash: 8efed3cea9684c61f3bcac9eadb87b8a2b55ce09
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 8885b80b352ed7eee2830b2416ef9f57d634aa07
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520942"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97115172"
 ---
 # <a name="moneypunct-class"></a>moneypunct 클래스
 
-클래스 템플릿에서는 통화 입력 필드 또는 통화 출력 필드를 나타내는 데 사용 되는 *Chartype* 형식의 시퀀스를 설명 하기 위해 로캘 패싯으로 사용할 수 있는 개체에 대해 설명 합니다. 템플릿 매개 변수 *국제* 이 *true*이면 국제 규칙이 관찰 됩니다.
+클래스 템플릿에서는 통화 입력 필드 또는 통화 출력 필드를 나타내는 데 사용 되는 *Chartype* 형식의 시퀀스를 설명 하기 위해 로캘 패싯으로 사용할 수 있는 개체에 대해 설명 합니다. 템플릿 매개 변수 *국제* 이 *true* 이면 국제 규칙이 관찰 됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -74,13 +75,13 @@ class moneypunct;
 
 ## <a name="remarks"></a>설명
 
-모든 로캘 패싯과 마찬가지로, 고정 개체 ID에는 초기값 0이 저장되어 있습니다. 저장된 값에 액세스를 처음 시도하면 **id**에 고유한 양수 값이 저장됩니다.
+모든 로캘 패싯과 마찬가지로, 고정 개체 ID에는 초기값 0이 저장되어 있습니다. 저장된 값에 액세스를 처음 시도하면 **id** 에 고유한 양수 값이 저장됩니다.
 
-상수 정적 개체 intl에는 템플릿 매개 변수 *Intl*의 값이 저장됩니다.
+상수 정적 개체 intl에는 템플릿 매개 변수 *Intl* 의 값이 저장됩니다.
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[moneypunct](#moneypunct)|`moneypunct` 형식의 개체 생성자입니다.|
 
@@ -120,7 +121,7 @@ class moneypunct;
 
 **네임스페이스:** std
 
-## <a name="moneypunctchar_type"></a><a name="char_type"></a>moneypunct:: char_type
+## <a name="moneypunctchar_type"></a><a name="char_type"></a> moneypunct:: char_type
 
 로캘에서 사용하는 문자를 설명하기 위해 사용하는 형식입니다.
 
@@ -130,9 +131,9 @@ typedef CharType char_type;
 
 ### <a name="remarks"></a>설명
 
-이 형식은 템플릿 매개 변수 **Chartype**의 동의어입니다.
+이 형식은 템플릿 매개 변수 **Chartype** 의 동의어입니다.
 
-## <a name="moneypunctcurr_symbol"></a><a name="curr_symbol"></a>moneypunct:: curr_symbol
+## <a name="moneypunctcurr_symbol"></a><a name="curr_symbol"></a> moneypunct:: curr_symbol
 
 통화 기호로 사용할 로캘별 요소 시퀀스를 반환합니다.
 
@@ -169,7 +170,7 @@ int main( )
 };
 ```
 
-## <a name="moneypunctdecimal_point"></a><a name="decimal_point"></a>moneypunct::d ecimal_point
+## <a name="moneypunctdecimal_point"></a><a name="decimal_point"></a> moneypunct::d ecimal_point
 
 소수점 기호로 사용할 로캘별 요소 시퀀스를 반환합니다.
 
@@ -215,7 +216,7 @@ German_Germany.1252 international decimal point ,
 German_Germany.1252 domestic decimal point ,
 ```
 
-## <a name="moneypunctdo_curr_symbol"></a><a name="do_curr_symbol"></a>moneypunct::d o_curr_symbol
+## <a name="moneypunctdo_curr_symbol"></a><a name="do_curr_symbol"></a> moneypunct::d o_curr_symbol
 
 통화 기호로 사용할 로캘별 요소 시퀀스를 반환하는 보호된 가상 멤버 함수입니다.
 
@@ -231,7 +232,7 @@ virtual string_type do_curr_symbol() const;
 
 `curr_symbol`에 의해 가상 구성원 함수가 호출되는 [curr_symbol](#curr_symbol)의 예제를 참조하세요.
 
-## <a name="moneypunctdo_decimal_point"></a><a name="do_decimal_point"></a>moneypunct::d o_decimal_point
+## <a name="moneypunctdo_decimal_point"></a><a name="do_decimal_point"></a> moneypunct::d o_decimal_point
 
 소수점 기호통화 기호로 사용할 로캘별 요소 시퀀스를 반환하는 보호된 가상 구성원 함수입니다.
 
@@ -247,7 +248,7 @@ virtual CharType do_decimal_point() const;
 
 `decimal_point`에 의해 가상 구성원 함수가 호출되는 [decimal_point](#decimal_point)의 예제를 참조하세요.
 
-## <a name="moneypunctdo_frac_digits"></a><a name="do_frac_digits"></a>moneypunct::d o_frac_digits
+## <a name="moneypunctdo_frac_digits"></a><a name="do_frac_digits"></a> moneypunct::d o_frac_digits
 
 소수점 오른쪽에 표시할 자릿수를 로캘별로 반환하는 보호된 가상 구성원 함수입니다.
 
@@ -263,7 +264,7 @@ virtual int do_frac_digits() const;
 
 `frac_digits`에 의해 가상 구성원 함수가 호출되는 [frac_digits](#frac_digits)의 예제를 참조하세요.
 
-## <a name="moneypunctdo_grouping"></a><a name="do_grouping"></a>moneypunct::d o_grouping
+## <a name="moneypunctdo_grouping"></a><a name="do_grouping"></a> moneypunct::d o_grouping
 
 소수점 자리 왼쪽의 숫자를 그룹화하는 방법을 결정하는 로캘별 규칙을 반환하는 보호된 가상 구성원 함수입니다.
 
@@ -279,7 +280,7 @@ virtual string do_grouping() const;
 
 에서 가상 멤버 함수를 호출 하는 [그룹화](#grouping)의 예제를 참조 하세요 `grouping` .
 
-## <a name="moneypunctdo_neg_format"></a><a name="do_neg_format"></a>moneypunct::d o_neg_format
+## <a name="moneypunctdo_neg_format"></a><a name="do_neg_format"></a> moneypunct::d o_neg_format
 
 음수 금액의 출력의 서식을 지정하기 위한 로캘별 규칙을 반환하기 위해 호출하는 보호된 가상 멤버 함수입니다.
 
@@ -291,15 +292,15 @@ virtual pattern do_neg_format() const;
 
 보호된 가상 구성원 함수는 음수 값에 대해 통화 출력 필드를 생성하는 방법을 결정하기 위한 로캘별 규칙을 반환합니다. 의 각 4 개 요소에 `pattern::field` 는 다음 값을 사용할 수 있습니다.
 
-- `none`0 개 이상의 공백을 찾거나 아무것도 생성 하지 않습니다.
+- `none` 0 개 이상의 공백을 찾거나 아무것도 생성 하지 않습니다.
 
-- `sign`양수 또는 음수 기호를 일치 또는 생성 합니다.
+- `sign` 양수 또는 음수 기호를 일치 또는 생성 합니다.
 
-- `space`0 개 이상의 공백을 찾거나 공백을 생성 하려면입니다.
+- `space` 0 개 이상의 공백을 찾거나 공백을 생성 하려면입니다.
 
-- `symbol`통화 기호를 일치 또는 생성 하려면입니다.
+- `symbol` 통화 기호를 일치 또는 생성 하려면입니다.
 
-- `value`통화 값을 일치 하거나 생성 하려면입니다.
+- `value` 통화 값을 일치 하거나 생성 하려면입니다.
 
 통화 출력 필드의 구성 요소는 생성 되며 통화 입력 필드의 구성 요소는 이러한 요소가 표시 되는 순서와 일치 `pattern::field` 합니다. ,, `sign` `symbol` `value` 및 중 하나는 `none` `space` 정확히 한 번만 나타나야 합니다. 값을 `none` 먼저 표시 해서는 안 됩니다. 값은 `space` 첫 번째 또는 마지막으로 표시 되지 않아야 합니다. `Intl`이 true 이면 순서는 `symbol` , `sign` , `none` , `value` 입니다.
 
@@ -309,7 +310,7 @@ virtual pattern do_neg_format() const;
 
 `neg_format`에 의해 가상 구성원 함수가 호출되는 [neg_format](#neg_format)의 예제를 참조하세요.
 
-## <a name="moneypunctdo_negative_sign"></a><a name="do_negative_sign"></a>moneypunct::d o_negative_sign
+## <a name="moneypunctdo_negative_sign"></a><a name="do_negative_sign"></a> moneypunct::d o_negative_sign
 
 음수 부호 기호로 사용할 로캘별 요소 시퀀스를 반환하기 위해 호출하는 보호된 가상 멤버 함수입니다.
 
@@ -325,7 +326,7 @@ virtual string_type do_negative_sign() const;
 
 `negative_sign`에 의해 가상 구성원 함수가 호출되는 [negative_sign](#negative_sign)의 예제를 참조하세요.
 
-## <a name="moneypunctdo_pos_format"></a><a name="do_pos_format"></a>moneypunct::d o_pos_format
+## <a name="moneypunctdo_pos_format"></a><a name="do_pos_format"></a> moneypunct::d o_pos_format
 
 양수 금액의 출력의 서식을 지정하기 위한 로캘별 규칙을 반환하기 위해 호출하는 보호된 가상 멤버 함수입니다.
 
@@ -343,7 +344,7 @@ virtual pattern do_pos_format() const;
 
 `pos_format`에 의해 가상 구성원 함수가 호출되는 [pos_format](#pos_format)의 예제를 참조하세요.
 
-## <a name="moneypunctdo_positive_sign"></a><a name="do_positive_sign"></a>moneypunct::d o_positive_sign
+## <a name="moneypunctdo_positive_sign"></a><a name="do_positive_sign"></a> moneypunct::d o_positive_sign
 
 양수 부호로 사용할 로캘별 요소 시퀀스를 반환하는 보호된 가상 구성원 함수입니다.
 
@@ -359,7 +360,7 @@ virtual string_type do_positive_sign() const;
 
 `positive_sign`에 의해 가상 구성원 함수가 호출되는 [positive_sign](#positive_sign)의 예제를 참조하세요.
 
-## <a name="moneypunctdo_thousands_sep"></a><a name="do_thousands_sep"></a>moneypunct::d o_thousands_sep
+## <a name="moneypunctdo_thousands_sep"></a><a name="do_thousands_sep"></a> moneypunct::d o_thousands_sep
 
 소수점 왼쪽의 그룹 구분 기호로 사용할 로캘별 요소를 반환하는 보호된 가상 구성원 함수입니다.
 
@@ -375,7 +376,7 @@ virtual CharType do_thousands_sep() const;
 
 `thousands_sep`에 의해 가상 구성원 함수가 호출되는 [thousands_sep](#thousands_sep)의 예제를 참조하세요.
 
-## <a name="moneypunctfrac_digits"></a><a name="frac_digits"></a>moneypunct:: frac_digits
+## <a name="moneypunctfrac_digits"></a><a name="frac_digits"></a> moneypunct:: frac_digits
 
 소수점 오른쪽에 표시할 자릿수를 로캘별로 반환합니다.
 
@@ -444,7 +445,7 @@ German_Germany.1252 domestic frac_digits
 to the right of the radix character: 2
 ```
 
-## <a name="moneypunctgrouping"></a><a name="grouping"></a>moneypunct:: grouping
+## <a name="moneypunctgrouping"></a><a name="grouping"></a> moneypunct:: grouping
 
 소수점 왼쪽의 숫자를 그룹화할 방법을 결정하기 위한 로캘별 규칙을 반환합니다.
 
@@ -513,7 +514,7 @@ German_Germany.1252 domestic frac_digits
 to the right of the radix character: 2
 ```
 
-## <a name="moneypunctmoneypunct"></a><a name="moneypunct"></a>moneypunct:: moneypunct
+## <a name="moneypunctmoneypunct"></a><a name="moneypunct"></a> moneypunct:: moneypunct
 
 `moneypunct` 형식의 개체 생성자입니다.
 
@@ -534,13 +535,13 @@ explicit moneypunct(size_t _Refs = 0);
 
 - 1: 개체의 수명을 수동으로 관리해야 합니다.
 
-- \>1: 이러한 값은 정의 되지 않습니다.
+- \> 1: 이러한 값은 정의 되지 않습니다.
 
 소멸자는 보호되므로 직접적인 예제는 확인할 수 없습니다.
 
 생성자는 [locale::facet](../standard-library/locale-class.md#facet_class)(_ *Refs*)를 통해 해당 기준 개체를 초기화합니다.
 
-## <a name="moneypunctneg_format"></a><a name="neg_format"></a>moneypunct:: neg_format
+## <a name="moneypunctneg_format"></a><a name="neg_format"></a> moneypunct:: neg_format
 
 음수 금액의 출력의 서식을 지정하기 위한 로캘별 규칙을 반환합니다.
 
@@ -588,7 +589,7 @@ int main( ) {
 }
 ```
 
-## <a name="moneypunctnegative_sign"></a><a name="negative_sign"></a>moneypunct:: negative_sign
+## <a name="moneypunctnegative_sign"></a><a name="negative_sign"></a> moneypunct:: negative_sign
 
 음수 부호 기호로 사용할 로캘별 요소 시퀀스를 반환합니다.
 
@@ -650,7 +651,7 @@ French_France.1252 international negative sign: -
 French_France.1252 domestic negative sign: -
 ```
 
-## <a name="moneypunctpos_format"></a><a name="pos_format"></a>moneypunct::p os_format
+## <a name="moneypunctpos_format"></a><a name="pos_format"></a> moneypunct::p os_format
 
 양수 금액의 출력의 서식을 지정하기 위한 로캘별 규칙을 반환합니다.
 
@@ -698,7 +699,7 @@ int main() {
 }
 ```
 
-## <a name="moneypunctpositive_sign"></a><a name="positive_sign"></a>moneypunct::p ositive_sign
+## <a name="moneypunctpositive_sign"></a><a name="positive_sign"></a> moneypunct::p ositive_sign
 
 양수 부호 기호로 사용할 로캘별 요소 시퀀스를 반환합니다.
 
@@ -760,7 +761,7 @@ French_France.1252 international positive sign:
 French_France.1252 domestic positive sign:
 ```
 
-## <a name="moneypunctstring_type"></a><a name="string_type"></a>moneypunct:: string_type
+## <a name="moneypunctstring_type"></a><a name="string_type"></a> moneypunct:: string_type
 
 **CharType** 형식의 문자가 포함된 문자열을 설명하는 형식입니다.
 
@@ -772,7 +773,7 @@ typedef basic_string<CharType, Traits, Allocator> string_type;
 
 이 형식은 개체가 문장 부호 시퀀스의 복사본을 저장할 수 있는 클래스 템플릿 [basic_string](../standard-library/basic-string-class.md) 의 특수화를 설명 합니다.
 
-## <a name="moneypunctthousands_sep"></a><a name="thousands_sep"></a>moneypunct:: thousands_sep
+## <a name="moneypunctthousands_sep"></a><a name="thousands_sep"></a> moneypunct:: thousands_sep
 
 1000 단위 구분 기호로 사용할 로캘별 요소 시퀀스를 반환합니다.
 
@@ -833,7 +834,7 @@ English_Canada.1252 international thousands separator: ,
 English_Canada.1252 domestic thousands separator: ,
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [\<locale>](../standard-library/locale.md)\
 [C + + 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

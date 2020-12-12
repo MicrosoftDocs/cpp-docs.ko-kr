@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: __sptr, __uptr'
 title: __sptr, __uptr
 ms.date: 10/10/2018
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - __sptr modifier
 - __uptr modifier
 ms.assetid: c7f5f3b2-9106-4a0b-a6de-d1588ab153ed
-ms.openlocfilehash: 5aac130073a635d0bc5f537aff75c526a9f086c2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 13e365e0e8258c1860df2f107a3dad0ade76e529
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225841"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97113729"
 ---
 # <a name="__sptr-__uptr"></a>__sptr, __uptr
 

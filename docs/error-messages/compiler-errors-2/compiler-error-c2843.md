@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2843'
 title: 컴파일러 오류 C2843
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2843
 ms.assetid: 9d3f2ac4-eea5-4fed-abeb-e752f442bfcc
-ms.openlocfilehash: d6ab867323e629695e161f3ac001a3fb2174775e
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 3ca201167d6745de8d0b0e8f27a414eebe8a75a0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74752004"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97119959"
 ---
 # <a name="compiler-error-c2843"></a>컴파일러 오류 C2843
 

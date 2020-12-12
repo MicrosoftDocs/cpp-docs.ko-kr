@@ -1,15 +1,16 @@
 ---
-title: '이식 및 업그레이드: 예제 및 사례 연구'
+description: '다음에 대 한 자세한 정보: 포팅 및 업그레이드: 예제 및 사례 연구'
+title: '포팅 및 업그레이드: 예제 및 사례 연구'
 ms.date: 11/04/2016
 ms.assetid: d48bbff9-1ea7-467f-8c8b-758601f01573
-ms.openlocfilehash: 50e22c9eac39927c4456eeff1ed05c46a239bd30
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: 2488e4675cd20c72439aadf3c6eba5c85f2e12d9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57747192"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97115198"
 ---
-# <a name="porting-and-upgrading-examples-and-case-studies"></a>이식 및 업그레이드: 예제 및 사례 연구
+# <a name="porting-and-upgrading-examples-and-case-studies"></a>포팅 및 업그레이드: 예제 및 사례 연구
 
 성공적인 마이그레이션 스토리를 검토하여 이전 버전의 Visual C++에서 현재 버전으로 마이그레이션하는 동안 발생할 수 있는 문제 종류에 대한 아이디어를 얻을 수 있습니다.
 

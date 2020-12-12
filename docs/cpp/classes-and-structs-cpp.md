@@ -1,15 +1,16 @@
 ---
+description: '자세히 알아보기: 클래스 및 구조체 (c + +)'
 title: 클래스 및 구조체(C++)
 ms.date: 05/07/2019
 helpviewer_keywords:
 - C++, classes and structs
 ms.assetid: 516dd496-13fb-4f17-845a-e9ca45437873
-ms.openlocfilehash: d593f6575fec64aa0eb14c7aa0fcbb5c4eb66691
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9d845cf130c2cbf06e182a49f3d83c78745864d8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220602"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114067"
 ---
 # <a name="classes-and-structs-c"></a>클래스 및 구조체(C++)
 
@@ -53,7 +54,7 @@ ms.locfileid: "87220602"
 
 |구조체|클래스|Unions|
 |----------------|-------------|------------|
-|클래스 키가**`struct`**|클래스 키가**`class`**|클래스 키가**`union`**|
+|클래스 키가 **`struct`**|클래스 키가 **`class`**|클래스 키가 **`union`**|
 |기본 액세스가 공용임|기본 액세스가 개인임|기본 액세스가 공용임|
 |사용 제약 조건 없음|사용 제약 조건 없음|한 번에 한 멤버만 사용|
 

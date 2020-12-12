@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3533'
 title: 컴파일러 오류 C3533
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3533
 ms.assetid: a68b1ba5-466e-4190-a1a4-505ccfe548b7
-ms.openlocfilehash: c77c5c0fff8f8d9c1c64ba11773503b197006b67
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 03506c5880cce18a27f16f0e05d3b231d14c9ce6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91510110"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97113197"
 ---
 # <a name="compiler-error-c3533"></a>컴파일러 오류 C3533
 
@@ -23,9 +24,9 @@ ms.locfileid: "91510110"
 
 1. **`auto`** 매개 변수 선언에서 키워드를 제거 합니다.
 
-## <a name="examples"></a>예
+## <a name="examples"></a>예제
 
-다음 예제에서는 키워드를 사용 하 여 함수 매개 변수를 선언 **`auto`** 하 고 **/zc: auto**를 사용 하 여 컴파일되기 때문에 C3533를 생성 합니다.
+다음 예제에서는 키워드를 사용 하 여 함수 매개 변수를 선언 **`auto`** 하 고 **/zc: auto** 를 사용 하 여 컴파일되기 때문에 C3533를 생성 합니다.
 
 ```cpp
 // C3533a.cpp
@@ -33,7 +34,7 @@ ms.locfileid: "91510110"
 void f(auto j) {} // C3533
 ```
 
-다음 예제에서는 키워드를 사용 하 여 템플릿 매개 변수를 선언 **`auto`** 하 고 **/zc: auto**로 컴파일되기 때문에 c + + 14 모드에서 C3533를 생성 합니다. C + + 17에서는 형식이 추론 된 단일 비 형식 템플릿 매개 변수를 사용 하는 클래스 템플릿의 유효한 정의입니다.
+다음 예제에서는 키워드를 사용 하 여 템플릿 매개 변수를 선언 **`auto`** 하 고 **/zc: auto** 로 컴파일되기 때문에 c + + 14 모드에서 C3533를 생성 합니다. C + + 17에서는 형식이 추론 된 단일 비 형식 템플릿 매개 변수를 사용 하는 클래스 템플릿의 유효한 정의입니다.
 
 ```cpp
 // C3533b.cpp

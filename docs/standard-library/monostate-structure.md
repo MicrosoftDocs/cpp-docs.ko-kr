@@ -1,20 +1,21 @@
 ---
+description: '자세히 알아보기: monostate 구조체'
 title: monostate 구조체
 ms.date: 04/04/2019
 f1_keywords:
 - variant/std::monostate
 helpviewer_keywords:
 - monostate struct
-ms.openlocfilehash: f083b5f4abd6e9fc482007744683342f7ab92fc0
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 93b21f399761970129a495590e0821aa911a0408
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68269335"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97115159"
 ---
 # <a name="monostate-struct"></a>monostate 구조체
 
-클래스 monostate 변형 형식은 기본 형식이 되도록 변형에 대 한 대체 형식으로 사용 됩니다.
+Monostate 클래스는 variant 형식의 대체 형식으로 사용 되어 variant 형식의 기본 생성 가능를 만듭니다.
 
 ## <a name="syntax"></a>구문
 

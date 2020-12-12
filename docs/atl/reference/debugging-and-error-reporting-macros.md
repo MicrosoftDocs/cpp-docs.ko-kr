@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 디버깅 및 오류 보고 매크로'
 title: 디버깅 및 오류 보고 매크로
 ms.date: 05/06/2019
 f1_keywords:
@@ -11,18 +12,18 @@ f1_keywords:
 helpviewer_keywords:
 - macros, error reporting
 ms.assetid: 4da9b87f-ec5c-4a32-ab93-637780909b9d
-ms.openlocfilehash: 6b969cfb841a9a95d695eacc0a25f9dd378379ac
-ms.sourcegitcommit: ced5ff1431ffbd25b20d106901955532723bd188
+ms.openlocfilehash: 573c3f341ff9f9df58337b75e1080dde960d232c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92135543"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97139947"
 ---
 # <a name="debugging-and-error-reporting-macros"></a>디버깅 및 오류 보고 매크로
 
 이러한 매크로는 유용한 디버깅 및 추적 기능을 제공 합니다.
 
-|Name|Description|
+|Name|설명|
 |-|-|
 |[_ATL_DEBUG_INTERFACES](#_atl_debug_interfaces)|가 호출 될 때 검색 되는 인터페이스 누수를 출력 창에 씁니다 `_Module.Term` .|
 |[_ATL_DEBUG_QI](#_atl_debug_qi)|모든 호출을 `QueryInterface` 출력 창에 씁니다.|
@@ -226,7 +227,7 @@ ATLTRACE2의 약식 형태는 디버거의 출력 창에 문자열을 씁니다.
 
 ### <a name="atl-trace-flags"></a>ATL 추적 플래그
 
-|ATL 범주|Description|
+|ATL 범주|설명|
 |------------------|-----------------|
 |`atlTraceGeneral`|모든 ATL 응용 프로그램에 대 한 보고서입니다. 기본값입니다.|
 |`atlTraceCOM`|COM 메서드를 보고 합니다.|
@@ -244,7 +245,7 @@ ATLTRACE2의 약식 형태는 디버거의 출력 창에 문자열을 씁니다.
 
 ### <a name="mfc-trace-flags"></a>MFC 추적 플래그
 
-|MFC 범주|Description|
+|MFC 범주|설명|
 |------------------|-----------------|
 |`traceAppMsg`|일반적인 목적의 MFC 메시지입니다. 항상 권장 됩니다.|
 |`traceDumpContext`|[CDumpContext](../../mfc/reference/cdumpcontext-class.md)의 메시지입니다.|

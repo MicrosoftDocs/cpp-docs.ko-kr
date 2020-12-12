@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CBasePane 클래스'
 title: CBasePane 클래스
 ms.date: 11/06/2018
 f1_keywords:
@@ -166,16 +167,16 @@ helpviewer_keywords:
 - CBasePane [MFC], UndockPane
 - CBasePane [MFC], DoPaint
 ms.assetid: 8163dd51-d7c7-4def-9c74-61f8ecdfad82
-ms.openlocfilehash: 941f32dfadffd97210586edd7c2aa63c3c1708cd
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 52a71ddd3a1896e498b9a093aed41a048e115ef3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81752983"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97122786"
 ---
 # <a name="cbasepane-class"></a>CBasePane 클래스
 
-MFC의 모든 창에 대한 기본 클래스입니다.
+MFC의 모든 창에 대 한 기본 클래스입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -187,162 +188,162 @@ class CBasePane : public CWnd
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
 |`CBasePane::CBasePane`|기본 생성자입니다.|
 |`CBasePane::~CBasePane`|소멸자|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|`CBasePane::accHitTest`|화면의 지정된 지점에서 자식 요소나 자식 개체를 검색하기 위해 프레임워크에서 호출됩니다. [(CWnd 재정의::accHitTest](../../mfc/reference/cwnd-class.md#acchittest).)|
-|`CBasePane::accLocation`|지정된 개체의 현재 화면 위치를 검색하기 위해 프레임워크에서 호출합니다. [(CWnd::acclocation](../../mfc/reference/cwnd-class.md#acclocation)를 재정의합니다.)|
-|[CBasePane::AccNotify개체포커스이벤트](#accnotifyobjectfocusevent)|`CBasePane`이 메서드를 사용 하지 않습니다.|
-|`CBasePane::accSelect`|선택 영역을 수정하거나 지정된 개체의 키보드 포커스를 이동하기 위해 프레임워크에서 호출됩니다. [(CWnd 재정의::accSelect.)](../../mfc/reference/cwnd-class.md#accselect)|
-|[CBasePane::애드파인](#addpane)|도킹 관리자에 창을 추가합니다.|
-|[CBasePane::조정도킹레이아웃](#adjustdockinglayout)|도킹 관리자로 전화를 리디렉션하여 도킹 레이아웃을 조정합니다.|
-|[CBasePane::조정레이아웃](#adjustlayout)|창이 내부 레이아웃을 조정해야 할 때 프레임워크에서 호출됩니다.|
-|[CBasePane::석회화레이아웃](#calcfixedlayout)|컨트롤 막대의 수평 크기를 계산합니다.|
-|[CBasePane::캔 수락파인](#canacceptpane)|다른 창을 창에 도킹할 수 있는지 여부를 결정합니다.|
-|[CBasePane::CanAutoHide](#canautohide)|창이 자동 숨기기 모드를 지원하는지 여부를 결정합니다.|
-|[CBasePane:::첨부할 수 있습니다.](#canbeattached)|창을 다른 창에 도킹할 수 있는지 여부를 결정합니다.|
-|[CBasePane::수 닫힘](#canbeclosed)|창을 닫을 수 있는지 여부를 결정합니다.|
-|[CBasePane::캔독](#canbedocked)|창을 다른 창에 도킹할 수 있는지 여부를 결정합니다.|
-|[CBasePane::수있습니다](#canberesized)|창의 크기를 조정할 수 있는지 여부를 결정합니다.|
-|[CBasePane::수탭문서](#canbetabbeddocument)|창을 MDI 탭 문서로 변환할 수 있는지 여부를 지정합니다.|
-|[CBasePane::캔플로트](#canfloat)|창이 부동할 수 있는지 여부를 결정합니다.|
-|[CBasePane::캔포커스](#canfocus)|창이 포커스를 수신할 수 있는지 여부를 지정합니다.|
-|[CBasePane::복사 상태](#copystate)|지정된 창의 상태를 복사합니다.|
-|[CBasePane::만들기기본미니프레임](#createdefaultminiframe)|창이 부동할 수 있는 경우 미니 프레임 창을 만듭니다.|
-|[CBasePane::만들기](#createex)|창 컨트롤을 만듭니다.|
-|[CBasePane::D오크파인](#dockpane)|창을 다른 창이나 프레임 창에 도킹합니다.|
-|[CBasePane::DockPaneUsingRTTI](#dockpaneusingrtti)|런타임 형식 정보를 사용하여 창을 도킹합니다.|
-|[CBasePane::DockToFrame창](#docktoframewindow)|도킹 가능한 창을 프레임에 도킹합니다.|
-|[CBasePane::DoesAllowDyn인더인](#doesallowdyninsertbefore)|이 창과 상위 프레임 사이에 다른 창을 동적으로 삽입할 수 있는지 여부를 결정합니다.|
-|[CBasePane::사용 도킹](#enabledocking)|창을 주 프레임에 도킹할 수 있습니다.|
-|[CBasePane::인에이블그리퍼](#enablegripper)|그리퍼를 활성화하거나 비활성화합니다. 그리퍼가 활성화된 경우 사용자는 그리퍼를 드래그하여 창의 위치를 변경할 수 있습니다.|
+|`CBasePane::accHitTest`|화면의 지정된 지점에서 자식 요소나 자식 개체를 검색하기 위해 프레임워크에서 호출됩니다. ( [CWnd:: accHitTest](../../mfc/reference/cwnd-class.md#acchittest)를 재정의 합니다.)|
+|`CBasePane::accLocation`|지정 된 개체의 현재 화면 위치를 검색 하기 위해 프레임 워크에서 호출 됩니다. ( [CWnd:: accLocation](../../mfc/reference/cwnd-class.md#acclocation)을 재정의 합니다.)|
+|[CBasePane:: AccNotifyObjectFocusEvent](#accnotifyobjectfocusevent)|`CBasePane` 는이 메서드를 사용 하지 않습니다.|
+|`CBasePane::accSelect`|선택 영역을 수정하거나 지정된 개체의 키보드 포커스를 이동하기 위해 프레임워크에서 호출됩니다. ( [CWnd:: accSelect](../../mfc/reference/cwnd-class.md#accselect)를 재정의 합니다.)|
+|[CBasePane:: AddPane](#addpane)|도킹 관리자에 창을 추가 합니다.|
+|[CBasePane:: AdjustDockingLayout](#adjustdockinglayout)|도킹 관리자에 대 한 호출을 리디렉션하여 도킹 레이아웃을 조정 합니다.|
+|[CBasePane:: AdjustLayout](#adjustlayout)|창이 내부 레이아웃을 조정 해야 할 때 프레임 워크에서 호출 됩니다.|
+|[CBasePane:: CalcFixedLayout](#calcfixedlayout)|컨트롤 막대의 가로 크기를 계산 합니다.|
+|[CBasePane:: CanAcceptPane](#canacceptpane)|창에 다른 창을 도킹할 수 있는지 여부를 확인 합니다.|
+|[CBasePane:: CanAutoHide 숨기기](#canautohide)|창에서 자동 숨기기 모드를 지원 하는지 여부를 확인 합니다.|
+|[CBasePane:: CanBeAttached](#canbeattached)|창을 다른 창에 도킹할 수 있는지 여부를 결정 합니다.|
+|[CBasePane:: CanBeClosed](#canbeclosed)|창을 닫을 수 있는지 여부를 결정 합니다.|
+|[CBasePane:: CanBeDocked](#canbedocked)|창을 다른 창에 도킹할 수 있는지 여부를 결정 합니다.|
+|[CBasePane:: CanBeResized](#canberesized)|창의 크기를 조정할 수 있는지 여부를 확인 합니다.|
+|[CBasePane:: CanBeTabbedDocument](#canbetabbeddocument)|창을 MDI 탭 문서로 변환할 수 있는지 여부를 지정 합니다.|
+|[CBasePane:: CanFloat](#canfloat)|창을 부동 상태로 만들 수 있는지 여부를 결정 합니다.|
+|[CBasePane:: CanFocus](#canfocus)|창이 포커스를 받을 수 있는지 여부를 지정 합니다.|
+|[CBasePane:: CopyState](#copystate)|지정 된 창의 상태를 복사 합니다.|
+|[CBasePane:: CreateDefaultMiniframe](#createdefaultminiframe)|창이 부동 될 수 있으면에서 미니 프레임 창을 만듭니다.|
+|[CBasePane:: CreateEx](#createex)|창 컨트롤을 만듭니다.|
+|[CBasePane::D ockPane](#dockpane)|창을 다른 창이 나 프레임 창에 도킹 합니다.|
+|[CBasePane::D ockPaneUsingRTTI](#dockpaneusingrtti)|런타임 형식 정보를 사용 하 여 창을 도킹 합니다.|
+|[CBasePane::D Ockto프레임 창](#docktoframewindow)|도킹 가능한 창을 프레임에 도킹 합니다.|
+|[CBasePane::D oesAllowDynInsertBefore](#doesallowdyninsertbefore)|이 창과 부모 프레임 사이에 다른 창이 동적으로 삽입 될 수 있는지 여부를 결정 합니다.|
+|[CBasePane:: EnableDocking](#enabledocking)|주 프레임에 창을 도킹할 수 있습니다.|
+|[CBasePane:: EnableGripper](#enablegripper)|그리퍼를 사용 하거나 사용 하지 않도록 설정 합니다. 그리퍼를 사용 하는 경우 사용자는 창의 위치를 변경 하기 위해 끌 수 있습니다.|
 |`CBasePane::FillWindowRect`|내부적으로 사용됩니다.|
-|[CBasePane::플로트파인](#floatpane)|창을 부동합니다.|
-|`CBasePane::get_accChild`|지정된 자식의 `IDispatch` 인터페이스 주소를 검색하기 위해 프레임워크에서 호출됩니다. [(재정의 CWnd::get_accChild](../../mfc/reference/cwnd-class.md#get_accchild).)|
-|`CBasePane::get_accChildCount`|이 개체에 속하는 자식 수를 검색하기 위해 프레임워크에서 호출합니다. [(cwnd::get_accChildCount](../../mfc/reference/cwnd-class.md#get_accchildcount)재정의 .)|
-|`CBasePane::get_accDefaultAction`|개체에 대 한 기본 작업을 설명 하는 문자열을 검색 하려면 프레임 워크에서 호출 합니다. [(CWnd::get_accDefaultAction](../../mfc/reference/cwnd-class.md#get_accdefaultaction)재정의 .)|
-|`CBasePane::get_accDescription`|지정한 개체의 모양을 설명하는 문자열을 검색하기 위해 프레임워크에서 호출됩니다. [(CWnd::get_accDescription](../../mfc/reference/cwnd-class.md#get_accdescription)재정의 .)|
-|`CBasePane::get_accFocus`|키보드 포커스가 있는 개체를 검색하기 위해 프레임워크에서 호출됩니다. [(재정의 CWnd::get_accFocus](../../mfc/reference/cwnd-class.md#get_accfocus).)|
-|`CBasePane::get_accHelp`|개체에 대 한 도움말 속성 문자열을 검색 하는 프레임 워크에 의해 호출 됩니다. [(CWnd::get_accHelp](../../mfc/reference/cwnd-class.md#get_acchelp)재정의 .)|
-|[CBasePane::get_accHelpTopic](#get_acchelptopic)|지정된 개체와 연결된 WinHelp 파일의 전체 경로 및 해당 파일에 있는 해당 토픽의 식별자를 검색하기 위해 프레임워크에서 호출합니다. [(CWnd::get_accHelpTopic](../../mfc/reference/cwnd-class.md#get_acchelptopic)재정의 .)|
-|`CBasePane::get_accKeyboardShortcut`|개체에 대 한 지정 된 바로 가기 키를 검색 하는 프레임 워크에 의해 호출 됩니다. [(재정의 CWnd::get_accKeyboardShortcut](../../mfc/reference/cwnd-class.md#get_acckeyboardshortcut).)|
-|`CBasePane::get_accName`|지정된 개체의 이름을 검색하기 위해 프레임워크에서 호출됩니다. [(cwnd::get_accName](../../mfc/reference/cwnd-class.md#get_accname)재정의 .)|
-|`CBasePane::get_accParent`|개체의 부모에 대 `IDispatch` 한 인터페이스를 검색 하는 프레임 워크에 의해 호출 됩니다. [(cwnd::get_accParent.)](../../mfc/reference/cwnd-class.md#get_accparent)|
-|`CBasePane::get_accRole`|지정된 개체의 역할을 설명하는 정보를 검색하기 위해 프레임워크에서 호출됩니다. [(CWnd::get_accRole](../../mfc/reference/cwnd-class.md#get_accrole)재정의 .)|
-|[CBasePane::get_accSelection](#get_accselection)|이 개체의 선택된 자식 개체를 검색하기 위해 프레임워크에서 호출됩니다. [(CWnd::get_accSelection](../../mfc/reference/cwnd-class.md#get_accselection)재정의 .)|
-|`CBasePane::get_accState`|지정된 개체의 현재 상태를 검색하기 위해 프레임워크에서 호출됩니다. [(CWnd::get_accState](../../mfc/reference/cwnd-class.md#get_accstate)재정의 .)|
-|`CBasePane::get_accValue`|지정된 개체의 값을 검색하기 위해 프레임워크에서 호출됩니다. [(cwnd::get_accValue](../../mfc/reference/cwnd-class.md#get_accvalue)재정의 .)|
-|[CBasePane::GetCaptionHeight](#getcaptionheight)|캡션 높이를 반환합니다.|
-|[CBasePane::GetControlBar스타일](#getcontrolbarstyle)|컨트롤 막대 스타일을 반환합니다.|
-|[CBasePane::GetCurrent정렬](#getcurrentalignment)|현재 창 선형을 반환합니다.|
-|[CBasePane::겟도킹 모드](#getdockingmode)|창에 대한 현재 도킹 모드를 반환합니다.|
-|[CBasePane::GetDockSiteFrameD](#getdocksiteframewnd)|창에 대한 도크 사이트인 창에 대한 포인터를 반환합니다.|
-|[CBasePane::GetEnabled정렬](#getenabledalignment)|창에 적용되는 CBRS_ALIGN_ 스타일을 반환합니다.|
-|[CBasePane::GetMFC스타일](#getmfcstyle)|MFC에 특정한 창 스타일을 반환합니다.|
-|[CBasePane::GetPaneIcon](#getpaneicon)|창 아이콘에 핸들을 반환합니다.|
+|[CBasePane:: FloatPane](#floatpane)|창을 부동 합니다.|
+|`CBasePane::get_accChild`|지정된 자식의 `IDispatch` 인터페이스 주소를 검색하기 위해 프레임워크에서 호출됩니다. ( [CWnd:: get_accChild](../../mfc/reference/cwnd-class.md#get_accchild)을 재정의 합니다.)|
+|`CBasePane::get_accChildCount`|이 개체에 속한 자식의 수를 검색 하기 위해 프레임 워크에서 호출 됩니다. ( [CWnd:: get_accChildCount](../../mfc/reference/cwnd-class.md#get_accchildcount)을 재정의 합니다.)|
+|`CBasePane::get_accDefaultAction`|개체의 기본 동작을 설명 하는 문자열을 검색 하기 위해 프레임 워크에서 호출 됩니다. ( [CWnd:: get_accDefaultAction](../../mfc/reference/cwnd-class.md#get_accdefaultaction)을 재정의 합니다.)|
+|`CBasePane::get_accDescription`|지정한 개체의 모양을 설명하는 문자열을 검색하기 위해 프레임워크에서 호출됩니다. ( [CWnd:: get_accDescription](../../mfc/reference/cwnd-class.md#get_accdescription)을 재정의 합니다.)|
+|`CBasePane::get_accFocus`|키보드 포커스가 있는 개체를 검색하기 위해 프레임워크에서 호출됩니다. ( [CWnd:: get_accFocus](../../mfc/reference/cwnd-class.md#get_accfocus)을 재정의 합니다.)|
+|`CBasePane::get_accHelp`|개체에 대 한 도움말 속성 문자열을 검색 하기 위해 프레임 워크에서 호출 됩니다. ( [CWnd:: get_accHelp](../../mfc/reference/cwnd-class.md#get_acchelp)을 재정의 합니다.)|
+|[CBasePane:: get_accHelpTopic](#get_acchelptopic)|지정 된 개체와 관련 된 WinHelp 파일의 전체 경로와 해당 파일의 해당 항목에 대 한 식별자를 검색 하기 위해 프레임 워크에서 호출 됩니다. ( [CWnd:: get_accHelpTopic](../../mfc/reference/cwnd-class.md#get_acchelptopic)을 재정의 합니다.)|
+|`CBasePane::get_accKeyboardShortcut`|개체에 대해 지정 된 바로 가기 키를 검색 하기 위해 프레임 워크에서 호출 됩니다. ( [CWnd:: get_accKeyboardShortcut](../../mfc/reference/cwnd-class.md#get_acckeyboardshortcut)을 재정의 합니다.)|
+|`CBasePane::get_accName`|지정된 개체의 이름을 검색하기 위해 프레임워크에서 호출됩니다. ( [CWnd:: get_accName](../../mfc/reference/cwnd-class.md#get_accname)을 재정의 합니다.)|
+|`CBasePane::get_accParent`|`IDispatch`개체의 부모에 대 한 인터페이스를 검색 하기 위해 프레임 워크에서 호출 됩니다. ( [CWnd:: get_accParent](../../mfc/reference/cwnd-class.md#get_accparent)을 재정의 합니다.)|
+|`CBasePane::get_accRole`|지정된 개체의 역할을 설명하는 정보를 검색하기 위해 프레임워크에서 호출됩니다. ( [CWnd:: get_accRole](../../mfc/reference/cwnd-class.md#get_accrole)을 재정의 합니다.)|
+|[CBasePane:: get_accSelection](#get_accselection)|이 개체의 선택된 자식 개체를 검색하기 위해 프레임워크에서 호출됩니다. ( [CWnd:: get_accSelection](../../mfc/reference/cwnd-class.md#get_accselection)을 재정의 합니다.)|
+|`CBasePane::get_accState`|지정된 개체의 현재 상태를 검색하기 위해 프레임워크에서 호출됩니다. ( [CWnd:: get_accState](../../mfc/reference/cwnd-class.md#get_accstate)을 재정의 합니다.)|
+|`CBasePane::get_accValue`|지정된 개체의 값을 검색하기 위해 프레임워크에서 호출됩니다. ( [CWnd:: get_accValue](../../mfc/reference/cwnd-class.md#get_accvalue)을 재정의 합니다.)|
+|[CBasePane:: GetCaptionHeight](#getcaptionheight)|캡션 높이를 반환합니다.|
+|[CBasePane:: GetControlBarStyle](#getcontrolbarstyle)|컨트롤 막대 스타일을 반환 합니다.|
+|[CBasePane:: GetCurrentAlignment](#getcurrentalignment)|현재 창 맞춤을 반환 합니다.|
+|[CBasePane:: GetDockingMode](#getdockingmode)|창에 대 한 현재 도킹 모드를 반환 합니다.|
+|[CBasePane:: GetDockSiteFrameWnd](#getdocksiteframewnd)|창에 대 한 도크 사이트인 창에 대 한 포인터를 반환 합니다.|
+|[CBasePane:: GetEnabledAlignment](#getenabledalignment)|창에 적용 되는 CBRS_ALIGN_ 스타일을 반환 합니다.|
+|[CBasePane:: GetMFCStyle](#getmfcstyle)|MFC에 특정 한 창 스타일을 반환 합니다.|
+|[CBasePane:: GetPaneIcon](#getpaneicon)|창 아이콘에 대 한 핸들을 반환 합니다.|
 |`CBasePane::GetPaneRect`|내부적으로 사용됩니다.|
-|[CBasePane:::겟파네로우](#getpanerow)|창이 도킹된 [CDockingPanesRow](../../mfc/reference/cdockingpanesrow-class.md)개체에 대한 포인터를 반환합니다.|
-|[CBasePane::겟파인 스타일](#getpanestyle)|창 스타일을 반환합니다.|
-|[CBasePane::GetParentDockSite](#getparentdocksite)|상위 도크 사이트에 대한 포인터를 반환합니다.|
-|[CBasePane::GetParentMiniFrame](#getparentminiframe)|상위 미니 프레임 창에 대한 포인터를 반환합니다.|
-|[CBasePane:::GetParentTabbedPane](#getparenttabbedpane)|상위 탭창에 대한 포인터를 반환합니다.|
-|[CBasePane::GetParentTabwnd](#getparenttabwnd)|탭 안에 있는 부모 창에 대한 포인터를 반환합니다.|
-|[CBasePane::Get최근가볼 수 있는 상태](#getrecentvisiblestate)|프레임워크는 보관에서 창이 복원될 때 이 메서드를 호출합니다.|
-|[CBasePane::숨바꼭한인쇄 미리보기 모드](#hideinprintpreviewmode)|창이 인쇄 미리 보기에 숨겨져 있는지 여부를 지정합니다.|
-|[CBasePane::삽입창](#insertpane)|지정된 창을 도킹 관리자에 등록합니다.|
-|[CBasePane::접근성 호환](#isaccessibilitycompatible)|창이 활성 접근성을 지원하는지 여부를 지정합니다.|
-|[CBasePane::IsAutoHideMode](#isautohidemode)|창이 자동 숨기기 모드에 있는지 여부를 결정합니다.|
-|[CBasePane::IsDialog제어](#isdialogcontrol)|창이 대화 상자 컨트롤인지 여부를 지정합니다.|
-|[CBasePane::IsDocked](#isdocked)|창이 도킹되었는지 여부를 결정합니다.|
-|[CBasePane::떠 있는](#isfloating)|창이 부동 인지 여부를 확인 합니다.|
-|[CBasePane::수평](#ishorizontal)|창이 수평으로 도킹되는지 여부를 결정합니다.|
-|[CBasePane::이인 플로팅멀티파인프레임](#isinfloatingmultipaneframewnd)|창이 다중 창 프레임 창에 있는지 여부를 지정합니다.|
-|[CBasePane::IsMDITabbed](#ismditabbed)|창이 탭된 문서로 MDI 자식 창에 추가되었는지 여부를 결정합니다.|
-|[CBasePane::IsPaneVisible](#ispanevisible)|창에 대해 WS_VISIBLE 플래그가 설정되어 있는지 여부를 지정합니다.|
-|[CBasePane::이포인트니어독사이트](#ispointneardocksite)|지정된 점이 도크 사이트 근처에 있는지 여부를 결정합니다.|
-|[CBasePane::이재성](#isresizable)|창의 크기를 조정할 수 있는지 여부를 결정합니다.|
-|[CBasePane::복원에서레지스트리](#isrestoredfromregistry)|창이 레지스트리에서 복원되는지 여부를 결정합니다.|
-|[CBasePane::IsTabbed](#istabbed)|탭된 창의 탭 컨트롤에 창이 삽입되었는지 여부를 결정합니다.|
+|[CBasePane:: Getpane Erow](#getpanerow)|창이 도킹 된 [CDockingPanesRow](../../mfc/reference/cdockingpanesrow-class.md)개체에 대 한 포인터를 반환 합니다.|
+|[CBasePane:: GetPaneStyle](#getpanestyle)|창 스타일을 반환 합니다.|
+|[CBasePane:: GetParentDockSite](#getparentdocksite)|부모 도크 사이트에 대 한 포인터를 반환 합니다.|
+|[CBasePane:: GetParentMiniFrame](#getparentminiframe)|부모 미니 프레임 창에 대 한 포인터를 반환 합니다.|
+|[CBasePane:: GetParentTabbedPane](#getparenttabbedpane)|부모 탭 창에 대 한 포인터를 반환 합니다.|
+|[CBasePane:: GetParentTabWnd](#getparenttabwnd)|탭 내의 부모 창에 대 한 포인터를 반환 합니다.|
+|[CBasePane:: GetRecentVisibleState](#getrecentvisiblestate)|프레임 워크는 보관 파일에서 창이 복원 될 때이 메서드를 호출 합니다.|
+|[CBasePane:: HideInPrintPreviewMode](#hideinprintpreviewmode)|창이 인쇄 미리 보기에서 숨겨지는지 여부를 지정 합니다.|
+|[CBasePane:: InsertPane](#insertpane)|지정 된 창을 도킹 관리자에 등록 합니다.|
+|[CBasePane:: IsAccessibilityCompatible](#isaccessibilitycompatible)|창에서 Active Accessibility 지원할지 여부를 지정 합니다.|
+|[CBasePane:: IsAutoHideMode](#isautohidemode)|창이 자동 숨기기 모드에 있는지 여부를 확인 합니다.|
+|[CBasePane:: IsDialogControl](#isdialogcontrol)|창이 대화 상자 컨트롤 인지 여부를 지정 합니다.|
+|[CBasePane:: IsDocked](#isdocked)|창이 도킹 되어 있는지 여부를 확인 합니다.|
+|[CBasePane:: IsFloating](#isfloating)|창이 부동 인지 여부를 확인 합니다.|
+|[CBasePane:: IsHorizontal](#ishorizontal)|창이 가로로 도킹 되는지 여부를 결정 합니다.|
+|[CBasePane:: IsInFloatingMultiPaneFrameWnd](#isinfloatingmultipaneframewnd)|창이 다중 창 프레임 창에 있는지 여부를 지정 합니다.|
+|[CBasePane:: IsMDITabbed](#ismditabbed)|창이 MDI 자식 창에 탭 문서로 추가 되었는지 여부를 확인 합니다.|
+|[CBasePane:: IsPaneVisible](#ispanevisible)|창에 대해 WS_VISIBLE 플래그를 설정할지 여부를 지정 합니다.|
+|[CBasePane:: IsPointNearDockSite](#ispointneardocksite)|지정 된 지점이 dock 사이트 근처에 있는지 여부를 확인 합니다.|
+|[CBasePane:: IsResizable 조정 가능](#isresizable)|창의 크기를 조정할 수 있는지 여부를 확인 합니다.|
+|[CBasePane:: IsRestoredFromRegistry](#isrestoredfromregistry)|레지스트리에서 창이 복원 되는지 여부를 결정 합니다.|
+|[CBasePane:: IsTabbed](#istabbed)|탭 창의 탭 컨트롤에 창이 삽입 되었는지 여부를 확인 합니다.|
 |`CBasePane::IsTooltipTopmost`|내부적으로 사용됩니다.|
-|[CBasePane::가 보입니다.](#isvisible)|창이 표시되는지 여부를 결정합니다.|
-|[CBasePane::로드스테이트](#loadstate)|레지스트리에서 창 상태를 로드합니다.|
-|[CBasePane::이동 창](#movewindow)|창을 이동합니다.|
-|[CBasePane::온애프터체인지부모](#onafterchangeparent)|창의 부모가 변경되었을 때 프레임워크에서 호출됩니다.|
-|[CBasePane::에 전에변경부모](#onbeforechangeparent)|창이 부모 창을 변경하기 직전에 프레임워크에서 호출됩니다.|
-|[CBasePane::온드로우 캡션](#ondrawcaption)|프레임워크는 캡션이 그려질 때 이 메서드를 호출합니다.|
-|[CBasePane::온무파네 분배기](#onmovepanedivider)|이 메서드는 현재 사용 되지 않습니다.|
-|[CBasePane::온파네컨텍스트 메뉴](#onpanecontextmenu)|창 목록이 있는 메뉴를 빌드할 때 프레임워크에서 호출합니다.|
-|[CBasePane::에제거해제미니프레임](#onremovefromminiframe)|상위 미니 프레임 창에서 창이 제거될 때 프레임워크에서 호출됩니다.|
-|[CBasePane::온셋데이터](#onsetaccdata)|`CBasePane`이 메서드를 사용 하지 않습니다.|
+|[CBasePane:: IsVisible](#isvisible)|창이 표시 되는지 여부를 확인 합니다.|
+|[CBasePane:: LoadState](#loadstate)|레지스트리에서 창 상태를 로드 합니다.|
+|[CBasePane:: MoveWindow](#movewindow)|창을 이동 합니다.|
+|[CBasePane:: OnAfterChangeParent](#onafterchangeparent)|창의 부모가 변경 될 때 프레임 워크에서 호출 됩니다.|
+|[CBasePane:: OnBeforeChangeParent](#onbeforechangeparent)|창에서 부모 창이 변경 되기 직전에 프레임 워크에서 호출 됩니다.|
+|[CBasePane:: OnDrawCaption](#ondrawcaption)|프레임 워크는 캡션을 그릴 때이 메서드를 호출 합니다.|
+|[CBasePane:: OnMovePaneDivider](#onmovepanedivider)|이 메서드는 현재 사용 되지 않습니다.|
+|[CBasePane:: OnPaneContextMenu](#onpanecontextmenu)|창 목록을 포함 하는 메뉴를 빌드할 때 프레임 워크에서 호출 됩니다.|
+|[CBasePane:: OnRemoveFromMiniFrame](#onremovefromminiframe)|부모 미니 프레임 창에서 창이 제거 될 때 프레임 워크에서 호출 됩니다.|
+|[CBasePane:: OnSetAccData](#onsetaccdata)|`CBasePane` 는이 메서드를 사용 하지 않습니다.|
 |`CBasePane::OnUpdateCmdUI`|내부적으로 사용됩니다.|
-|[CBasePane::P인FromPoint](#panefrompoint)|지정된 점을 포함하는 창을 반환합니다.|
+|[CBasePane::P aneFromPoint](#panefrompoint)|지정 된 지점을 포함 하는 창을 반환 합니다.|
 |`CBasePane::PreTranslateMessage`|창 메시지가 [TranslateMessage](../../mfc/reference/cwinapp-class.md) 및 [DispatchMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) Windows 함수로 디스패치되기 전에 [CWinApp](/windows/win32/api/winuser/nf-winuser-dispatchmessage) 클래스가 이 메시지를 해석하는 데 사용됩니다. ( [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)를 재정의합니다.)|
-|[CBasePane::리콜레이아웃](#recalclayout)|`CBasePane`이 메서드를 사용 하지 않습니다.|
-|[CBasePane::제거파인에서독매니저](#removepanefromdockmanager)|창을 등록 취소하고 도킹 관리자의 목록에서 창이 제거됩니다.|
-|[CBasePane::저장 상태](#savestate)|레지스트리에 창의 상태를 저장합니다.|
-|[CBasePane::선택기본글꼴](#selectdefaultfont)|지정된 장치 컨텍스트에 대한 기본 글꼴을 선택합니다.|
+|[CBasePane:: RecalcLayout](#recalclayout)|`CBasePane` 는이 메서드를 사용 하지 않습니다.|
+|[CBasePane:: RemovePaneFromDockManager](#removepanefromdockmanager)|창의 등록을 취소 하 고 도킹 관리자의 목록에서 제거 합니다.|
+|[CBasePane:: SaveState](#savestate)|레지스트리에 창의 상태를 저장합니다.|
+|[CBasePane:: SelectDefaultFont](#selectdefaultfont)|지정 된 장치 컨텍스트에 대 한 기본 글꼴을 선택 합니다.|
 |`CBasePane::Serialize`|이 개체를 보관 저장소에서 읽어오거나 보관 저장소에 씁니다. ( [CObject::Serialize](../../mfc/reference/cobject-class.md#serialize)를 재정의합니다.)|
-|[CBasePane::세트컨트롤바스타일](#setcontrolbarstyle)|컨트롤 막대 스타일을 설정합니다.|
-|[CBasePane::SetDocking 모드](#setdockingmode)|창에 대한 도킹 모드를 설정합니다.|
+|[CBasePane:: SetControlBarStyle](#setcontrolbarstyle)|컨트롤 막대 스타일을 설정 합니다.|
+|[CBasePane:: SetDockingMode](#setdockingmode)|창에 대 한 도킹 모드를 설정 합니다.|
 |`CBasePane::SetMDITabbed`|내부적으로 사용됩니다.|
-|[CBasePane::세파네정렬](#setpanealignment)|창의 맞춤을 설정합니다.|
+|[CBasePane:: SetPaneAlignment](#setpanealignment)|창에 대 한 맞춤을 설정 합니다.|
 |`CBasePane::SetPaneRect`|내부적으로 사용됩니다.|
-|[CBasePane::SetPaneStyle](#setpanestyle)|창의 스타일을 설정합니다.|
+|[CBasePane:: SetPaneStyle](#setpanestyle)|창 스타일을 설정 합니다.|
 |`CBasePane::SetRestoredFromRegistry`|내부적으로 사용됩니다.|
-|[CBasePane::SetWindowPos](#setwindowpos)|창의 크기, 위치 및 Z 순서를 변경합니다.|
-|[CBasePane::쇼파인](#showpane)|창을 표시하거나 숨깁니다.|
-|[CBasePane::스트레치파인](#stretchpane)|창을 가로 또는 세로로 확장합니다.|
-|[CBasePane::도킹 팬 해제](#undockpane)|도크 사이트, 기본 슬라이더 또는 현재 도킹된 미니 프레임 창에서 창을 제거합니다.|
+|[CBasePane:: SetWindowPos](#setwindowpos)|창의 크기, 위치 및 Z 순서를 변경 합니다.|
+|[CBasePane:: ShowPane](#showpane)|창을 표시 하거나 숨깁니다.|
+|[CBasePane:: StretchPane](#stretchpane)|창을 가로 또는 세로로 확장합니다.|
+|[CBasePane:: UndockPane](#undockpane)|도킹 사이트, 기본 슬라이더 또는 현재 도킹 된 미니 프레임 창에서 창을 제거 합니다.|
 
 ### <a name="protected-methods"></a>Protected 메서드
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|[CBasePane::D페인트](#dopaint)|창의 배경을 채웁니다.|
+|[CBasePane::D oPaint](#dopaint)|창의 배경을 채웁니다.|
 
 ## <a name="remarks"></a>설명
 
-MFC에서 사용할 수 있는 확장 된 도킹 기능을 지원하는 창 클래스를 `CBasePane` 만들려면 [CPane 클래스에서 파생하거나 CPane Class에서](../../mfc/reference/cpane-class.md)파생시켜야 합니다.
+MFC에서 사용할 수 있는 확장 된 도킹 기능을 지 원하는 창 클래스를 만들려면 `CBasePane` [Cpane 클래스](../../mfc/reference/cpane-class.md)에서 파생 해야 합니다.
 
 ## <a name="customization-tips"></a>사용자 지정 팁
 
-다음 사용자 지정 팁은 `CBasePane Class` 해당 클래스와 상속되는 모든 클래스와 관련이 있습니다.
+다음 사용자 지정 팁은 `CBasePane Class` 및이 클래스에서 상속 되는 클래스와 관련 되어 있습니다.
 
-- 창을 작성할 때 다음과 같은 몇 가지 새 스타일을 적용할 수 있습니다.
+- 창을 만들 때 여러 가지 새 스타일을 적용할 수 있습니다.
 
-  - AFX_CBRS_FLOAT 창을 플로트합니다.
+  - AFX_CBRS_FLOAT 창을 부동으로 만듭니다.
 
-  - AFX_CBRS_AUTOHIDE 자동 숨기기 모드를 활성화합니다.
+  - AFX_CBRS_AUTOHIDE 자동 숨기기 모드를 사용 하도록 설정 합니다.
 
-  - AFX_CBRS_CLOSE 창을 닫을 수 있습니다(숨김).
+  - AFX_CBRS_CLOSE 창을 닫을 수 있습니다 (숨김).
 
-  이러한 플래그는 비트-OR 작업과 결합할 수 있습니다.
+  비트 OR 연산과 결합할 수 있는 플래그입니다.
 
-`CBasePane`[CBasePane::CanBeClosed](#canbeclosed), [CBasePane::CanAutoHide,](#canautohide) [CBasePane::CanFloat](#canfloat). 파생 클래스에서 재정의하여 동작을 사용자 지정할 수 있습니다.
+`CBasePane` 는 [Cbasepane:: CanBeClosed](#canbeclosed), [Cbasepane:: canautohide 숨기기](#canautohide), [Cbasepane:: canautohide](#canfloat)와 같은 플래그를 반영 하는 다음과 같은 가상 부울 메서드를 구현 합니다. 파생 클래스에서 재정의 하 여 동작을 사용자 지정할 수 있습니다.
 
-- [CBasePane::CanAcceptPane](#canacceptpane)을 재정의하여 도킹 동작을 사용자 지정할 수 있습니다. 창이 이 메서드에서 FALSE를 반환하여 다른 창이 도킹되지 않도록 합니다.
+- [Cbasepane:: CanAcceptPane](#canacceptpane)을 재정의 하 여 도킹 동작을 사용자 지정할 수 있습니다. 창이이 메서드에서 FALSE를 반환 하도록 하 여 다른 창이 도킹 되지 않도록 합니다.
 
-- 부동 할 수 없고 다른 창이 도킹되지 못하게하는 정적 창을 만들려면 (OutlookDemo 예제의 Outlook 막대와 유사), 비 부동으로 만들고 [CBasePane ::DoesAllowDynInsertBefore](#doesallowdyninsertbefore) FALSE를 반환합니다. 창이 AFX_CBRS_FLOAT 스타일 없이 만들어지면 기본 구현은 FALSE를 반환합니다.
+- OutlookDemo 예제에서 Outlook 표시줄과 유사 하 게 부동 창에 도킹 하지 않고 다른 창이 도킹 되지 않도록 하는 정적 창을 만들려는 경우이를 비 부동으로 만들고 [Cbasepane::D oesallowdyninsertbefore](#doesallowdyninsertbefore) 를 재정의 하 여 FALSE를 반환 합니다. 창이 AFX_CBRS_FLOAT 스타일 없이 만들어진 경우 기본 구현은 FALSE를 반환 합니다.
 
-- -1이외의 아이디를 사용하여 모든 창을 만듭니다.
+- -1 이외의 Id가 있는 모든 창을 만듭니다.
 
-- 창 가시성을 확인하려면 [CBasePane::IsVisible](#isvisible)를 사용합니다. 탭 및 자동 숨기기 모드에서 가시성 상태를 올바르게 처리합니다.
+- 창 표시 여부를 확인 하려면 [Cbasepane:: IsVisible](#isvisible)을 사용 합니다. 탭 및 자동 숨기기 모드에서 표시 상태를 올바르게 처리 합니다.
 
-- 부동 되지 않는 조정 가능한 창을 만들려면 AFX_CBRS_FLOAT 스타일 없이 만들고 [CFrameWnd::DockControlBar](../../mfc/reference/cframewnd-class.md#dockcontrolbar)를 호출합니다.
+- 비 부동 크기 조정 가능 창을 만들려면 AFX_CBRS_FLOAT 스타일 없이 만든 다음 [CFrameWnd::D ockControlBar](../../mfc/reference/cframewnd-class.md#dockcontrolbar)를 호출 합니다.
 
-- 도킹 레이아웃에서 창을 제외하거나 도킹 바에서 도구 모음을 제거하려면 [CBasePane::UndockPane을](#undockpane)호출합니다. 자동 숨기기 모드에서 또는 탭된 창 탭에 있는 창에 대해 이 메서드를 호출하지 마십시오.
+- 도킹 레이아웃에서 창을 제외 하거나 도킹 막대에서 도구 모음을 제거 하려면 [Cbasepane:: UndockPane](#undockpane)를 호출 합니다. 자동 숨기기 모드의 창이 나 탭 창의 탭에 있는 창에 대해이 메서드를 호출 하지 마십시오.
 
-- 자동 숨기기 모드에 있는 창을 부동 또는 도킹 해제하려면 [CBasePane::FloatPane::UndockPane를](#floatpane) 호출하기 전에 FALSE를 사용하여 [CDockablePane::SetAutoHideMode를](../../mfc/reference/cdockablepane-class.md#setautohidemode) 호출해야 합니다. [CBasePane::UndockPane](#undockpane)
+- 자동 숨기기 모드에 있는 창을 부동 또는 도킹 해제 하려면 [Cbasepane:: FloatPane](#floatpane) 또는 [Cbasepane:: UndockPane](#undockpane)를 호출 하기 전에 [CDockablePane:: SetAutoHideMode](../../mfc/reference/cdockablepane-class.md#setautohidemode) 를 첫 번째 인수로 사용 하 여 호출 해야 합니다.
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 `CBasePane` 클래스에서 다양한 메서드를 사용하는 방법을 보여 줍니다. 이 예제에서는 `CFrameWndEx` 클래스에서 창을 검색하는 방법과 도킹 모드, 창 정렬 및 창 스타일을 설정하는 방법을 보여 줍니다. 코드는 워드 [패드 샘플에서](../../overview/visual-cpp-samples.md)입니다.
+다음 예제에서는 `CBasePane` 클래스에서 다양한 메서드를 사용하는 방법을 보여 줍니다. 이 예제에서는 클래스에서 창을 검색 하는 방법과 `CFrameWndEx` 도킹 모드, 창 맞춤 및 창 스타일을 설정 하는 방법을 보여 줍니다. 이 코드는 [Word Pad 샘플](../../overview/visual-cpp-samples.md)에서 가져온 것입니다.
 
 [!code-cpp[NVC_MFC_WordPad#2](../../mfc/reference/codesnippet/cpp/cbasepane-class_1.cpp)]
 
@@ -358,11 +359,11 @@ MFC에서 사용할 수 있는 확장 된 도킹 기능을 지원하는 창 클�
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxbasepane.h
+**헤더:** afxbasepane
 
-## <a name="cbasepaneaccnotifyobjectfocusevent"></a><a name="accnotifyobjectfocusevent"></a>CBasePane::AccNotify개체포커스이벤트
+## <a name="cbasepaneaccnotifyobjectfocusevent"></a><a name="accnotifyobjectfocusevent"></a> CBasePane:: AccNotifyObjectFocusEvent
 
-`CBasePane`이 메서드를 사용 하지 않습니다.
+`CBasePane` 는이 메서드를 사용 하지 않습니다.
 
 ```
 virtual void AccNotifyObjectFocusEvent(int);
@@ -371,11 +372,11 @@ virtual void AccNotifyObjectFocusEvent(int);
 ### <a name="parameters"></a>매개 변수
 
 *int*<br/>
-【인】 사용되지 않습니다.
+진행 사용 되지 않습니다.
 
-## <a name="cbasepaneaddpane"></a><a name="addpane"></a>CBasePane::애드파인
+## <a name="cbasepaneaddpane"></a><a name="addpane"></a> CBasePane:: AddPane
 
-도킹 관리자에 창을 추가합니다.
+도킹 관리자에 창을 추가 합니다.
 
 ```cpp
 void AddPane(CBasePane* pBar);
@@ -384,17 +385,17 @@ void AddPane(CBasePane* pBar);
 ### <a name="parameters"></a>매개 변수
 
 *pBar*<br/>
-【인】 추가할 창에 대한 포인터입니다.
+진행 추가할 창에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
-이 방법은 도킹 관리자에 창을 추가하는 편리한 방법입니다. 이 메서드를 사용 하 여 상위 프레임의 형식을 분석 하는 코드를 작성할 필요가 없습니다.
+이 메서드는 도킹 관리자에 창을 추가 하는 편리한 방법입니다. 이 메서드를 사용 하 여 부모 프레임의 형식을 분석 하는 코드를 작성할 필요가 없습니다.
 
-자세한 내용은 [CDockingManager 클래스](../../mfc/reference/cdockingmanager-class.md) 및 [CMDIFrameWndEx::AddPane](../../mfc/reference/cmdiframewndex-class.md#addpane)을 참조하십시오.
+자세한 내용은 [CDockingManager 클래스](../../mfc/reference/cdockingmanager-class.md) 및 [CMDIFrameWndEx:: addpane](../../mfc/reference/cmdiframewndex-class.md#addpane)을 참조 하세요.
 
-## <a name="cbasepaneadjustdockinglayout"></a><a name="adjustdockinglayout"></a>CBasePane::조정도킹레이아웃
+## <a name="cbasepaneadjustdockinglayout"></a><a name="adjustdockinglayout"></a> CBasePane:: AdjustDockingLayout
 
-도킹 관리자로 전화를 리디렉션하여 도킹 레이아웃을 조정합니다.
+도킹 관리자에 대 한 호출을 리디렉션하여 도킹 레이아웃을 조정 합니다.
 
 ```
 virtual void AdjustDockingLayout(HDWP hdwp=NULL);
@@ -402,18 +403,18 @@ virtual void AdjustDockingLayout(HDWP hdwp=NULL);
 
 ### <a name="parameters"></a>매개 변수
 
-*HDWP*<br/>
-【아웃】 여러 창 위치를 포함하는 구조체에 대한 핸들입니다.
+*hdwp*<br/>
+제한이 여러 창 위치를 포함 하는 구조체에 대 한 핸들입니다.
 
 ### <a name="remarks"></a>설명
 
-이 방법은 도킹 레이아웃을 조정하는 편리한 방법입니다. 이 메서드를 사용 하 여 상위 프레임의 형식을 분석 하는 코드를 작성할 필요가 없습니다.
+이 메서드는 도킹 레이아웃을 조정 하는 편리한 방법입니다. 이 메서드를 사용 하 여 부모 프레임의 형식을 분석 하는 코드를 작성할 필요가 없습니다.
 
-자세한 내용은 [CDockingManager::adjustDocking레이아웃을](../../mfc/reference/cdockingmanager-class.md#adjustdockinglayout) 참조하십시오.
+자세한 내용은 [CDockingManager:: AdjustDockingLayout](../../mfc/reference/cdockingmanager-class.md#adjustdockinglayout) 를 참조 하세요.
 
-## <a name="cbasepaneadjustlayout"></a><a name="adjustlayout"></a>CBasePane::조정레이아웃
+## <a name="cbasepaneadjustlayout"></a><a name="adjustlayout"></a> CBasePane:: AdjustLayout
 
-창의 내부 레이아웃을 조정 하기 위해 프레임 워크에 의해 호출 됩니다.
+창의 내부 레이아웃을 조정 하기 위해 프레임 워크에서 호출 됩니다.
 
 ```
 virtual void AdjustLayout();
@@ -421,11 +422,11 @@ virtual void AdjustLayout();
 
 ### <a name="remarks"></a>설명
 
-창이 내부 레이아웃을 조정해야 할 때 프레임워크는 이 메서드를 호출합니다. 기본 구현은 아무 것도 수행하지 않습니다.
+프레임 워크는 창의 내부 레이아웃을 조정 해야 하는 경우이 메서드를 호출 합니다. 기본 구현은 아무 작업도 수행 하지 않습니다.
 
-## <a name="cbasepanecalcfixedlayout"></a><a name="calcfixedlayout"></a>CBasePane::석회화레이아웃
+## <a name="cbasepanecalcfixedlayout"></a><a name="calcfixedlayout"></a> CBasePane:: CalcFixedLayout
 
-컨트롤 막대의 수평 크기를 계산합니다.
+컨트롤 막대의 가로 크기를 계산 합니다.
 
 ```
 virtual CSize CalcFixedLayout(
@@ -435,23 +436,23 @@ virtual CSize CalcFixedLayout(
 
 ### <a name="parameters"></a>매개 변수
 
-*b스트레치*<br/>
-【인】 막대를 프레임 크기로 늘려야 하는지 여부를 나타냅니다. *bStretch* 매개변수는 막대가 도킹 막대가 아닌 경우 0이 아니며 도킹 또는 부동(도킹에 사용 가능)이 0입니다.
+*bStretch*<br/>
+진행 프레임 크기까지 막대를 늘일 지 여부를 나타냅니다. 막대가 도킹 막대가 아닌 경우 (도킹에 사용할 수 없음) *Bstretch* 매개 변수는 0이 아니며 도킹 되거나 부동 (도킹에 사용 가능) 인 경우 0입니다.
 
-*b호르츠 (주)*<br/>
-【인】 막대가 수평 또는 수직 방향임을 나타냅니다. 막대가 가로 방향이고 세로 방향인 경우 0인 경우 *bHorz* 매개변수는 0이 아닙니다.
+*bHorz*<br/>
+진행 가로 또는 세로 방향으로 막대를 나타냅니다. 막대가 가로 방향인 경우 *Bhorz* 매개 변수는 0이 아니고 세로 방향인 경우 0입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-개체의 컨트롤 막대 크기(픽셀 `CSize` 단위)입니다.
+개체의 컨트롤 막대 크기 (픽셀) `CSize` 입니다.
 
 ### <a name="remarks"></a>설명
 
-[CControlBar:::CalcFixed레이아웃의](../../mfc/reference/ccontrolbar-class.md#calcfixedlayout) 비고 섹션을 참조하십시오.
+[Ccontrolbar:: CalcFixedLayout](../../mfc/reference/ccontrolbar-class.md#calcfixedlayout) 의 설명 섹션을 참조 하세요.
 
-## <a name="cbasepanecanacceptpane"></a><a name="canacceptpane"></a>CBasePane::캔 수락파인
+## <a name="cbasepanecanacceptpane"></a><a name="canacceptpane"></a> CBasePane:: CanAcceptPane
 
-다른 창을 창에 도킹할 수 있는지 여부를 결정합니다.
+창에 다른 창을 도킹할 수 있는지 여부를 확인 합니다.
 
 ```
 virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
@@ -460,79 +461,79 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
 ### <a name="parameters"></a>매개 변수
 
 *pBar*<br/>
-【인】 도킹할 창에 대한 포인터입니다.
+진행 도킹할 창에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-다른 창을 수락할 수 있는 경우 TRUE입니다. 그렇지 않으면 거짓.
+다른 창을 허용할 수 있으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-프레임워크는 *pBar에서* 지정한 창을 현재 창에 도킹하기 전에 이 메서드를 호출합니다.
+프레임 워크는 *Pbar* 에 지정 된 창을 현재 창에 도킹 하기 전에이 메서드를 호출 합니다.
 
-이 메서드와 [CBasePane:CanBeDocked](#canbedocked) 메서드를 사용하여 창이 응용 프로그램의 다른 창에 도킹되는 방법을 제어합니다.
+이 메서드와 [Cbasepane:: CanBeDocked](#canbedocked) 메서드를 사용 하 여 창이 응용 프로그램의 다른 창에 도킹 하는 방법을 제어 합니다.
 
-기본 구현은 FALSE를 반환합니다.
+기본 구현에서는 FALSE를 반환 합니다.
 
-## <a name="cbasepanecanautohide"></a><a name="canautohide"></a>CBasePane::CanAutoHide
+## <a name="cbasepanecanautohide"></a><a name="canautohide"></a> CBasePane:: CanAutoHide 숨기기
 
-창이 자동 숨기기 모드를 지원하는지 여부를 결정합니다.
+창에서 자동 숨기기 모드를 지원 하는지 여부를 확인 합니다.
 
 ```
 virtual BOOL CanAutoHide() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-이 창이 자동 숨기기 모드를 지원하는 경우 TRUE; 그렇지 않으면 거짓.
+이 창에서 자동 숨기기 모드를 지원 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-프레임워크는 이 함수를 호출하여 창이 자동 숨기기 모드를 지원하는지 여부를 확인합니다.
+프레임 워크는이 함수를 호출 하 여 창에서 자동 숨기기 모드를 지원 하는지 여부를 확인 합니다.
 
-시공 하는 동안 AFX_CBRS_AUTOHIDE 플래그를 [CBasePane::CreateEx에](#createex)전달 하 여이 기능을 설정할 수 있습니다.
+생성 하는 동안 AFX_CBRS_AUTOHIDE 플래그를 [Cbasepane:: CreateEx](#createex)에 전달 하 여이 기능을 설정할 수 있습니다.
 
-기본 구현은 AFX_CBRS_AUTOHIDE 플래그를 확인합니다. 파생 클래스에서 이 메서드를 재정의하여 이 동작을 사용자 지정합니다.
+기본 구현에서는 AFX_CBRS_AUTOHIDE 플래그를 확인 합니다. 파생 클래스에서이 메서드를 재정의 하 여이 동작을 사용자 지정 합니다.
 
-## <a name="cbasepanecanbeattached"></a><a name="canbeattached"></a>CBasePane:::첨부할 수 있습니다.
+## <a name="cbasepanecanbeattached"></a><a name="canbeattached"></a> CBasePane:: CanBeAttached
 
-창을 다른 창 또는 프레임 창에 도킹할 수 있는지 여부를 결정합니다.
+창을 다른 창이 나 프레임 창에 도킹할 수 있는지 여부를 결정 합니다.
 
 ```
 virtual BOOL CanBeAttached() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-TRUE 창을 다른 창 또는 프레임 창에 도킹할 수 있는 경우 그렇지 않으면 거짓.
+창을 다른 창이 나 프레임 창에 도킹할 수 있으면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-기본 구현은 FALSE를 반환합니다. 파생 클래스에서 이 메서드를 재정의하여 [CBasePane::EnableDocking](#enabledocking)을 호출하지 않고 도킹하는 기능을 활성화하거나 사용하지 않도록 설정합니다.
+기본 구현에서는 FALSE를 반환 합니다. [Cbasepane:: enabledocking](#enabledocking)을 호출 하지 않고 도킹할 수 있는 기능을 사용 하거나 사용 하지 않도록 설정 하려면 파생 클래스에서이 메서드를 재정의 합니다.
 
-## <a name="cbasepanecanbeclosed"></a><a name="canbeclosed"></a>CBasePane::수 닫힘
+## <a name="cbasepanecanbeclosed"></a><a name="canbeclosed"></a> CBasePane:: CanBeClosed
 
-창을 닫을 수 있는지 여부를 결정합니다.
+창을 닫을 수 있는지 여부를 결정 합니다.
 
 ```
 virtual BOOL CanBeClosed() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-TRUE 창을 닫을 수 있는 경우; 그렇지 않으면 거짓.
+창을 닫을 수 있으면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-프레임워크는 창을 닫을 수 있는지 여부를 결정하기 위해 이 메서드를 호출합니다. 메서드가 TRUE를 반환하면 **닫기** 단추가 창의 제목 표시줄에 추가되고 창이 부동인 경우 창의 미니프레임 창의 제목 표시줄에 추가됩니다.
+프레임 워크는이 메서드를 호출 하 여 창을 닫을 수 있는지 여부를 확인 합니다. 메서드가 TRUE를 반환 하는 경우 창의 제목 표시줄에 **닫기** 단추가 추가 되거나 창이 부동 인 경우 창의 미니 프레임 창에 있는 제목 표시줄에 추가 됩니다.
 
-시공 하는 동안 AFX_CBRS_CLOSE 플래그를 [CBasePane::CreateEx에](#createex)전달 하 여이 기능을 설정할 수 있습니다.
+생성 하는 동안 AFX_CBRS_CLOSE 플래그를 [Cbasepane:: CreateEx](#createex)에 전달 하 여이 기능을 설정할 수 있습니다.
 
-기본 구현은 AFX_CBRS_CLOSE 플래그를 확인합니다.
+기본 구현에서는 AFX_CBRS_CLOSE 플래그를 확인 합니다.
 
-## <a name="cbasepanecanbedocked"></a><a name="canbedocked"></a>CBasePane::캔독
+## <a name="cbasepanecanbedocked"></a><a name="canbedocked"></a> CBasePane:: CanBeDocked
 
-창을 다른 창에 도킹할 수 있는지 여부를 결정합니다.
+창을 다른 창에 도킹할 수 있는지 여부를 결정 합니다.
 
 ```
 virtual BOOL CanBeDocked(CBasePane* pDockBar) const;
@@ -541,96 +542,96 @@ virtual BOOL CanBeDocked(CBasePane* pDockBar) const;
 ### <a name="parameters"></a>매개 변수
 
 *pDockBar*<br/>
-【인】 다른 창에 대한 포인터입니다.
+진행 다른 창에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-이 창을 다른 창에 도킹할 수 있는 경우 TRUE입니다. 그렇지 않으면 거짓.
+이 창을 다른 창에 도킹할 수 있으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-프레임워크는 *pDockBar에서* 지정한 창을 현재 창에 도킹하기 전에 이 메서드를 호출합니다.
+프레임 워크는 *pDockBar* 에서 지정 된 창을 현재 창에 도킹 하기 전에이 메서드를 호출 합니다.
 
-이 메서드와 [CBasePane:CanAcceptPane](#canacceptpane) 메서드를 사용하여 창이 응용 프로그램의 다른 창에 도킹되는 방법을 제어합니다.
+이 메서드와 [Cbasepane:: CanAcceptPane](#canacceptpane) 메서드를 사용 하 여 창이 응용 프로그램의 다른 창에 도킹 하는 방법을 제어할 수 있습니다.
 
-기본 구현은 FALSE를 반환합니다.
+기본 구현에서는 FALSE를 반환 합니다.
 
-## <a name="cbasepanecanberesized"></a><a name="canberesized"></a>CBasePane::수있습니다
+## <a name="cbasepanecanberesized"></a><a name="canberesized"></a> CBasePane:: CanBeResized
 
-창의 크기를 조정할 수 있는지 여부를 결정합니다.
+창의 크기를 조정할 수 있는지 여부를 확인 합니다.
 
 ```
 virtual BOOL CanBeResized() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-TRUE 창크기를 크기를 조정할 수 있는 경우 그렇지 않으면 false입니다.
+창의 크기를 조정할 수 있으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 AFX_CBRS_RESIZE 플래그를 확인 `CBasePane::OnCreate`합니다. 이 플래그를 지정하지 않으면 도킹 관리자는 창을 도킹하는 대신 고정가능한 것으로 내부적으로 플래그를 지정합니다.
+이 메서드는에서 기본적으로 지정 되는 AFX_CBRS_RESIZE 플래그를 확인 합니다 `CBasePane::OnCreate` . 이 플래그를 지정 하지 않으면 도킹 관리자가 창에 도킹 하지 않고 내부적으로 창에 플래그를 지정 합니다.
 
-## <a name="cbasepanecanbetabbeddocument"></a><a name="canbetabbeddocument"></a>CBasePane::수탭문서
+## <a name="cbasepanecanbetabbeddocument"></a><a name="canbetabbeddocument"></a> CBasePane:: CanBeTabbedDocument
 
-창을 MDI 탭 문서로 변환할 수 있는지 여부를 지정합니다.
+창을 MDI 탭 문서로 변환할 수 있는지 여부를 지정 합니다.
 
 ```
 virtual BOOL CanBeTabbedDocument() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-TRUE 창을 탭된 문서로 변환할 수 있는 경우; 그렇지 않으면 false입니다. `CBasePane::CanBeTabbedDocument`항상 FALSE를 반환합니다.
+창을 탭 문서로 변환할 수 있으면 TRUE이 고, 그렇지 않으면 FALSE입니다. `CBasePane::CanBeTabbedDocument` 항상 FALSE를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-`CBasePane` [CDockablePane 클래스와](../../mfc/reference/cdockablepane-class.md)같은 특정 파생 형식의 개체만 탭된 문서로 변환할 수 있습니다.
+`CBasePane` [CDockablePane 클래스](../../mfc/reference/cdockablepane-class.md)와 같은 특정 파생 형식의 개체만 탭 문서로 변환할 수 있습니다.
 
-## <a name="cbasepanecanfloat"></a><a name="canfloat"></a>CBasePane::캔플로트
+## <a name="cbasepanecanfloat"></a><a name="canfloat"></a> CBasePane:: CanFloat
 
-창이 부동할 수 있는지 여부를 결정합니다.
+창을 부동 상태로 만들 수 있는지 여부를 결정 합니다.
 
 ```
 virtual BOOL CanFloat() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-TRUE 창이 부동 할 수 있는 경우; 그렇지 않으면 거짓.
+창을 부동 상태로 만들 수 있으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-프레임워크는 이 메서드를 호출하여 창이 부동 할 수 있는지 여부를 결정합니다.
+프레임 워크는이 메서드를 호출 하 여 창이 부동 될 수 있는지 여부를 확인 합니다.
 
-시공 하는 동안 AFX_CBRS_FLOAT 플래그를 [CBasePane::CreateEx에](#createex)전달 하 여이 기능을 설정할 수 있습니다.
+생성 하는 동안 AFX_CBRS_FLOAT 플래그를 [Cbasepane:: CreateEx](#createex)에 전달 하 여이 기능을 설정할 수 있습니다.
 
 > [!NOTE]
-> 프레임워크는 부동되지 않는 창이 정적이며 도킹 상태가 변경될 수 없다고 가정합니다. 따라서 프레임워크는 부동 되지 않는 창의 도킹 상태를 저장 하지 않습니다.
+> 프레임 워크에서는 부동 창이 아닌 창이 정적 이며 도킹 상태를 변경할 수 없는 것으로 가정 합니다. 따라서 프레임 워크는 비 부동 창의 도킹 상태를 저장 하지 않습니다.
 
-기본 구현은 AFX_CBRS_FLOAT 스타일을 검사합니다.
+기본 구현에서는 AFX_CBRS_FLOAT 스타일을 확인 합니다.
 
-## <a name="cbasepanecanfocus"></a><a name="canfocus"></a>CBasePane::캔포커스
+## <a name="cbasepanecanfocus"></a><a name="canfocus"></a> CBasePane:: CanFocus
 
-창이 포커스를 수신할 수 있는지 여부를 지정합니다.
+창이 포커스를 받을 수 있는지 여부를 지정 합니다.
 
 ```
 virtual BOOL CanFocus() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-창이 포커스를 받을 수 있는 경우 TRUE입니다. 그렇지 않으면 거짓.
+창이 포커스를 받을 수 있으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 파생 클래스에서 재정의하여 포커스를 제어합니다. 예를 들어 도구 모음이 포커스를 받을 수 없기 때문에 이 메서드는 도구 모음 개체에서 호출될 때 FALSE를 반환합니다.
+포커스를 제어 하려면 파생 클래스에서이 메서드를 재정의 합니다. 예를 들어 도구 모음이 포커스를 받을 수 없기 때문에 toolbar 개체에서이 메서드를 호출 하면이 메서드는 FALSE를 반환 합니다.
 
-프레임워크는 창이 도킹되거나 부동될 때 입력 포커스를 설정하려고 시도합니다.
+창이 도킹 되거나 부동 창이 될 때 프레임 워크에서 입력 포커스를 설정 하려고 시도 합니다.
 
-## <a name="cbasepanecopystate"></a><a name="copystate"></a>CBasePane::복사 상태
+## <a name="cbasepanecopystate"></a><a name="copystate"></a> CBasePane:: CopyState
 
-지정된 창의 상태를 복사합니다.
+지정 된 창의 상태를 복사 합니다.
 
 ```
 virtual void CopyState(CBasePane* pOrgBar);
@@ -638,16 +639,16 @@ virtual void CopyState(CBasePane* pOrgBar);
 
 ### <a name="parameters"></a>매개 변수
 
-*포그바*<br/>
-【인】 다른 창에 대한 포인터입니다.
+*고 모음*<br/>
+진행 다른 창에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 *pOrgBar에서* 이 창에 상태를 복사합니다.
+이 메서드는 원본 *표시줄* 에서이 창으로 상태를 복사 합니다.
 
-## <a name="cbasepanecreatedefaultminiframe"></a><a name="createdefaultminiframe"></a>CBasePane::만들기기본미니프레임
+## <a name="cbasepanecreatedefaultminiframe"></a><a name="createdefaultminiframe"></a> CBasePane:: CreateDefaultMiniframe
 
-창이 부동 할 수있는 경우이 메서드는 창을 위한 미니 프레임 창을 만듭니다.
+창이 부동 될 수 있는 경우이 메서드는 미니 프레임 창을 만듭니다.
 
 ```
 virtual CPaneFrameWnd* CreateDefaultMiniframe(CRect rectInitial);
@@ -655,20 +656,20 @@ virtual CPaneFrameWnd* CreateDefaultMiniframe(CRect rectInitial);
 
 ### <a name="parameters"></a>매개 변수
 
-*정류 초기*<br/>
-【인】 미니 프레임 창의 초기 좌표를 지정합니다.
+*rectInitial*<br/>
+진행 미니 프레임 창의 초기 좌표를 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-생성에 실패한 경우 새 미니 프레임 창 또는 NULL에 대한 포인터입니다.
+새 미니 프레임 창에 대 한 포인터 이거나, 만들지 못한 경우 NULL입니다.
 
 ### <a name="remarks"></a>설명
 
-프레임워크는 창이 부동 상태로 전환될 때 이 메서드를 호출합니다. 메서드는 미니 프레임 창을 만들고 창을 이 창에 연결 합니다.
+프레임 워크는 창이 부동 상태로 전환 될 때이 메서드를 호출 합니다. 메서드는 미니 프레임 창을 만들고 창을이 창에 연결 합니다.
 
-기본 구현은 NULL을 반환합니다.
+기본 구현에서는 NULL을 반환 합니다.
 
-## <a name="cbasepanecreateex"></a><a name="createex"></a>CBasePane::만들기
+## <a name="cbasepanecreateex"></a><a name="createex"></a> CBasePane:: CreateEx
 
 창 컨트롤을 만듭니다.
 
@@ -688,59 +689,59 @@ virtual BOOL CreateEx(
 ### <a name="parameters"></a>매개 변수
 
 *dwStyleEx*<br/>
-【인】 확장 된 스타일 (참조 [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex) 자세한 내용은).
+진행 확장 스타일입니다 (자세한 내용은 [CWnd:: CreateEx](../../mfc/reference/cwnd-class.md#createex) 참조).
 
 *lpszClassName*<br/>
-【인】 창 클래스 이름입니다.
+진행 창 클래스 이름입니다.
 
 *lpszWindowName*<br/>
-【인】 창 이름입니다.
+진행 창 이름입니다.
 
 *dwStyle*<br/>
-【인】 창 [스타일(CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex)참조).
+진행 창 스타일 ( [CWnd:: CreateEx](../../mfc/reference/cwnd-class.md#createex)참조)입니다.
 
 *rect*<br/>
-【인】 초기 사각형입니다.
+진행 초기 사각형입니다.
 
 *pParentWnd*<br/>
-【인】 상위 창에 대한 포인터입니다.
+진행 부모 창에 대 한 포인터입니다.
 
 *nID*<br/>
-【인】 창 ID를 지정합니다. 설명은 고유해야 합니다.
+진행 창 ID를 지정 합니다. 설명은 고유해야 합니다.
 
-*dw컨트롤바스타일*<br/>
-【인】 창에 플래그를 스타일합니다.
+*Dwcontrol바 스타일*<br/>
+진행 창에 대 한 스타일 플래그입니다.
 
 *pContext*<br/>
-【인】 에 대한 포인터`CcreateContext`
+진행 에 대 한 포인터입니다. `CcreateContext`
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-TRUE 창이 성공적으로 만들어지면 그렇지 않으면 거짓.
+창이 성공적으로 생성 되 면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-클래스의 `lpszClassName`창을 만듭니다. WS_CAPTION 지정하면 라이브러리에서 캡션이 있는 창을 `CBasePane::m_bHasCaption` 지원하지 않으므로 이 메서드는 WS_CAPTION 스타일 비트를 지우고 TRUE로 설정합니다.
+클래스의 창을 만듭니다 `lpszClassName` . WS_CAPTION 지정 하는 경우이 메서드는 WS_CAPTION 스타일 비트를 지우고 `CBasePane::m_bHasCaption` 를 TRUE로 설정 합니다. 라이브러리가 캡션을 포함 하는 창을 지원 하지 않기 때문입니다.
 
-자식 창 스타일과 MFC 컨트롤 바(CBRS_) 스타일의 조합을 사용할 수 있습니다.
+자식 창 스타일과 MFC 컨트롤 막대 (CBRS_) 스타일의 조합을 사용할 수 있습니다.
 
-라이브러리는 창에 대한 몇 가지 새로운 스타일을 추가합니다. 다음 표는 새 스타일에 대해 설명합니다.
+라이브러리는 창에 대 한 여러 가지 새 스타일을 추가 합니다. 다음 표에서는 새 스타일에 대해 설명 합니다.
 
 |스타일|Description|
 |-----------|-----------------|
-|AFX_CBRS_FLOAT|창이 부동할 수 있습니다.|
-|AFX_CBRS_AUTOHIDE|창은 자동 숨기기 모드를 지원합니다.|
-|AFX_CBRS_RESIZE|창의 크기를 조정할 수 있습니다. **중요 사항:**  이 스타일은 구현되지 않습니다.|
+|AFX_CBRS_FLOAT|창을 부동으로 만들 수 있습니다.|
+|AFX_CBRS_AUTOHIDE|창에서 자동 숨기기 모드를 지원 합니다.|
+|AFX_CBRS_RESIZE|창의 크기를 조정할 수 있습니다. **중요:**  이 스타일은 구현 되지 않습니다.|
 |AFX_CBRS_CLOSE|창을 닫을 수 있습니다.|
-|AFX_CBRS_AUTO_ROLLUP|창이 부동 할 때 롤업 할 수 있습니다.|
-|AFX_CBRS_REGULAR_TABS|한 창이 이 스타일을 가진 다른 창에 도킹되면 일반 탭창이 만들어집니다. (자세한 내용은 [CTabbedPane 클래스를](../../mfc/reference/ctabbedpane-class.md)참조하십시오.)|
-|AFX_CBRS_OUTLOOK_TABS|한 창이 이 스타일을 가진 다른 창에 도킹되면 Outlook 스타일 탭 창이 만들어집니다. (자세한 내용은 [CMFCOutlookBar 클래스를](../../mfc/reference/cmfcoutlookbar-class.md)참조하십시오.)|
+|AFX_CBRS_AUTO_ROLLUP|이 창은 부동 될 때 롤업할 수 있습니다.|
+|AFX_CBRS_REGULAR_TABS|한 창이이 스타일이 있는 다른 창에 도킹 하면 일반 탭 창이 만들어집니다. 자세한 내용은 [CTabbedPane 클래스](../../mfc/reference/ctabbedpane-class.md)를 참조 하세요.|
+|AFX_CBRS_OUTLOOK_TABS|한 창이이 스타일이 있는 다른 창에 도킹 되 면 Outlook 스타일의 탭 창이 만들어집니다. 자세한 내용은 [CMFCOutlookBar 클래스](../../mfc/reference/cmfcoutlookbar-class.md)를 참조 하세요.|
 
-새 스타일을 사용하려면 *dwControlBarStyle*에 지정합니다.
+새 스타일을 사용 하려면 *Dwcontrol바 스타일* 로 지정 합니다.
 
-## <a name="cbasepanedockpane"></a><a name="dockpane"></a>CBasePane::D오크파인
+## <a name="cbasepanedockpane"></a><a name="dockpane"></a> CBasePane::D ockPane
 
-창을 다른 창이나 프레임 창에 도킹합니다.
+창을 다른 창이 나 프레임 창에 도킹 합니다.
 
 ```
 virtual BOOL DockPane(
@@ -752,27 +753,27 @@ virtual BOOL DockPane(
 ### <a name="parameters"></a>매개 변수
 
 *pDockBar*<br/>
-【인】 다른 창에 대한 포인터입니다.
+진행 다른 창에 대 한 포인터입니다.
 
-*Lprect*<br/>
-【인】 대상 사각형을 지정합니다.
+*lpRect*<br/>
+진행 대상 사각형을 지정 합니다.
 
 *dockMethod*<br/>
-【인】 도킹 방법을 지정합니다.
+진행 도킹 방법을 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-컨트롤 막대가 성공적으로 도킹된 경우 TRUE; 그렇지 않으면 false입니다.
+컨트롤 막대가 성공적으로 도킹 되었으면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-*pDockBar에*의해 지정된 다른 창이나 도크 [바(CDockSite Class)에](../../mfc/reference/cdocksite-class.md)창을 도킹하거나 *pDockBar가* NULL인 경우 주 프레임에 이 함수를 호출합니다.
+이 함수를 호출 하 여 창을 다른 창이 나 *pDockBar* 에 의해 지정 된 도크 막대 ( [CDockSite 클래스](../../mfc/reference/cdocksite-class.md))에 고정 하거나 *pDockBar* 가 NULL 인 경우 주 프레임으로 고정 합니다.
 
-*dockMethod는* 창이 도킹되는 방법을 지정합니다. 가능한 값 목록은 [CPane::DockPane을](../../mfc/reference/cpane-class.md#dockpane) 참조하십시오.
+*dockMethod* 는 창이 도킹 되는 방법을 지정 합니다. 가능한 값 목록은 [Cpane::D ockPane](../../mfc/reference/cpane-class.md#dockpane) 을 참조 하세요.
 
-## <a name="cbasepanedockpaneusingrtti"></a><a name="dockpaneusingrtti"></a>CBasePane::DockPaneUsingRTTI
+## <a name="cbasepanedockpaneusingrtti"></a><a name="dockpaneusingrtti"></a> CBasePane::D ockPaneUsingRTTI
 
-런타임 형식 정보를 사용하여 창을 도킹합니다.
+런타임 형식 정보를 사용 하 여 창을 도킹 합니다.
 
 ```cpp
 void DockPaneUsingRTTI(BOOL bUseDockSite);
@@ -780,12 +781,12 @@ void DockPaneUsingRTTI(BOOL bUseDockSite);
 
 ### <a name="parameters"></a>매개 변수
 
-*bUseDock사이트*<br/>
-【인】 TRUE인 경우 도킹 사이트에 도킹합니다. FALSE인 경우 상위 프레임에 도킹합니다.
+*bUseDockSite*<br/>
+진행 TRUE 이면 도킹 사이트에 도킹 합니다. FALSE 이면 부모 프레임에 도킹 합니다.
 
-## <a name="cbasepanedocktoframewindow"></a><a name="docktoframewindow"></a>CBasePane::DockToFrame창
+## <a name="cbasepanedocktoframewindow"></a><a name="docktoframewindow"></a> CBasePane::D Ockto프레임 창
 
-도킹 가능한 창을 프레임에 도킹합니다.
+도킹 가능한 창을 프레임에 도킹 합니다.
 
 ```
 virtual BOOL DockToFrameWindow(
@@ -799,55 +800,55 @@ virtual BOOL DockToFrameWindow(
 
 ### <a name="parameters"></a>매개 변수
 
-*dw정렬*<br/>
-【인】 창을 도킹할 상위 프레임의 측면입니다.
+*dwAlignment*<br/>
+진행 창을 도킹할 부모 프레임의 측면입니다.
 
-*Lprect*<br/>
-【인】 원하는 크기입니다.
+*lpRect*<br/>
+진행 원하는 크기입니다.
 
 *dwDockFlags*<br/>
-【인】 무시.
+진행 무시.
 
 *pRelativeBar*<br/>
-【인】 무시.
+진행 무시.
 
-*n친척색인*<br/>
-【인】 무시.
+*nRelativeIndex*<br/>
+진행 무시.
 
 *bOuterEdge*<br/>
-【인】 TRUE이고 *dwAlignment에*의해 지정된 측면에 다른 도킹 가능한 창이 있는 경우 창은 부모 프레임의 가장자리에 더 가까운 다른 창 외부에 도킹됩니다. FALSE인 경우 창이 클라이언트 영역의 중심에 더 가깝게 도킹됩니다.
+진행 TRUE이 고 *Dwalignment* 로 지정 된 측면에 도킹 가능한 다른 창이 있으면 창이 다른 창 외부에 도킹 되어 부모 프레임의 가장자리에 더 가깝게 배치 됩니다. FALSE 이면 창이 클라이언트 영역의 가운데에 더 가깝게 도킹 됩니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-메서드가 성공한 경우 TRUE입니다. 그렇지 않으면 거짓.
+메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-창 분할 [(CPane Divider 클래스)를](../../mfc/reference/cpanedivider-class.md)만들 수 없는 경우이 메서드가 실패 합니다. 그렇지 않으면 항상 TRUE를 반환합니다.
+창 구분선 ( [CPaneDivider 클래스](../../mfc/reference/cpanedivider-class.md))을 만들 수 없는 경우이 메서드는 실패 합니다. 그렇지 않은 경우 항상 TRUE를 반환 합니다.
 
-## <a name="cbasepanedoesallowdyninsertbefore"></a><a name="doesallowdyninsertbefore"></a>CBasePane::DoesAllowDyn인더인
+## <a name="cbasepanedoesallowdyninsertbefore"></a><a name="doesallowdyninsertbefore"></a> CBasePane::D oesAllowDynInsertBefore
 
-이 창과 상위 프레임 사이에 다른 창을 동적으로 삽입할 수 있는지 여부를 결정합니다.
+이 창과 부모 프레임 사이에 다른 창이 동적으로 삽입 될 수 있는지 여부를 결정 합니다.
 
 ```
 virtual BOOL DoesAllowDynInsertBefore() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-TRUE 사용자가 다른 창을 삽입할 수 있는 경우; 그렇지 않으면 거짓.
+사용자가 다른 창을 삽입할 수 있으면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-프레임워크는 이 메서드를 호출하여 사용자가 이 창 앞에 창을 동적으로 삽입할 수 있는지 여부를 결정합니다.
+프레임 워크는이 메서드를 호출 하 여 사용자가이 창 앞에 창을 동적으로 삽입할 수 있는지 여부를 확인 합니다.
 
-예를 들어 응용 프로그램에서 프레임의 왼쪽에 도킹된 창(예: Outlook 막대)을 만든다고 가정합니다. 사용자가 첫 번째 창의 왼쪽에 다른 창을 도킹하지 못하도록 하려면 이 메서드를 재정의하고 FALSE를 반환합니다.
+예를 들어 응용 프로그램이 프레임 왼쪽 (예: Outlook 표시줄)에 도킹 된 창을 만드는 경우를 가정 합니다. 사용자가 첫 번째 창의 왼쪽에 다른 창을 도킹할 수 없도록 하려면이 메서드를 재정의 하 고 FALSE를 반환 합니다.
 
-[CDockablePane 클래스에서](../../mfc/reference/cdockablepane-class.md)파생된 부동 되지 않는 창에 대해 이 메서드를 재정의하고 FALSE를 반환하는 것이 좋습니다.
+[CDockablePane 클래스](../../mfc/reference/cdockablepane-class.md)에서 파생 된 비 부동 창에 대해이 메서드를 재정의 하 고 FALSE를 반환 하는 것이 좋습니다.
 
-기본 구현은 TRUE를 반환합니다.
+기본 구현에서는 TRUE를 반환 합니다.
 
-## <a name="cbasepanedopaint"></a><a name="dopaint"></a>CBasePane::D페인트
+## <a name="cbasepanedopaint"></a><a name="dopaint"></a> CBasePane::D oPaint
 
 창의 배경을 채웁니다.
 
@@ -857,16 +858,16 @@ virtual void DoPaint(CDC* pDC);
 
 ### <a name="parameters"></a>매개 변수
 
-*pDC*<br/>
-【인】 장치 컨텍스트에 대한 포인터입니다.
+*컨트롤러가*<br/>
+진행 장치 컨텍스트에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
-기본 구현은 현재 시각적 관리자를 호출하여 배경을 [채웁니다(CMFCVisualManager::OnFillBarBackground).](../../mfc/reference/cmfcvisualmanager-class.md#onfillbarbackground)
+기본 구현에서는 현재 비주얼 관리자를 호출 하 여 배경을 채웁니다 ( [Cmfcvisualmanager:: OnFillBarBackground](../../mfc/reference/cmfcvisualmanager-class.md#onfillbarbackground)).
 
-## <a name="cbasepaneenabledocking"></a><a name="enabledocking"></a>CBasePane::사용 도킹
+## <a name="cbasepaneenabledocking"></a><a name="enabledocking"></a> CBasePane:: EnableDocking
 
-창을 주 프레임에 도킹할 수 있습니다.
+주 프레임에 창을 도킹할 수 있습니다.
 
 ```
 virtual void EnableDocking(DWORD dwAlignment);
@@ -874,20 +875,20 @@ virtual void EnableDocking(DWORD dwAlignment);
 
 ### <a name="parameters"></a>매개 변수
 
-*dw정렬*<br/>
-【인】 활성화할 도킹 정렬을 지정합니다.
+*dwAlignment*<br/>
+진행 사용할 도킹 맞춤을 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
-주 프레임에 도킹 정렬을 활성화하려면 이 메서드를 호출합니다. CBRS_ALIGN_ 플래그 조합을 전달할 수 있습니다(자세한 내용은 [CControlBar::EnableDocking](../../mfc/reference/ccontrolbar-class.md#enabledocking)참조).
+주 프레임에 대 한 도킹 맞춤을 사용 하도록 설정 하려면이 메서드를 호출 합니다. CBRS_ALIGN_ 플래그의 조합을 전달할 수 있습니다 (자세한 내용은 [Ccontrolbar:: EnableDocking](../../mfc/reference/ccontrolbar-class.md#enabledocking)참조).
 
-`EnableDocking`내부 플래그를 `CBasePane::m_dwEnabledAlignment` 설정하고 창이 도킹될 때 프레임워크에서 이 플래그를 확인합니다.
+`EnableDocking``CBasePane::m_dwEnabledAlignment`창이 도킹 될 때 내부 플래그를 설정 하 고 프레임 워크에서이 플래그를 확인 합니다.
 
-[CBasePane::GetEnabledAlignment을](#getenabledalignment) 호출하여 창에 대한 도킹 정렬을 결정합니다.
+[Cbasepane:: GetEnabledAlignment](#getenabledalignment) 를 호출 하 여 창의 도킹 맞춤을 결정 합니다.
 
-## <a name="cbasepaneenablegripper"></a><a name="enablegripper"></a>CBasePane::인에이블그리퍼
+## <a name="cbasepaneenablegripper"></a><a name="enablegripper"></a> CBasePane:: EnableGripper
 
-그리퍼를 활성화하거나 비활성화합니다. 그리퍼가 활성화된 경우 사용자는 그리퍼를 드래그하여 창의 위치를 변경할 수 있습니다.
+그리퍼를 사용 하거나 사용 하지 않도록 설정 합니다. 그리퍼를 사용 하는 경우 사용자는 창의 위치를 변경 하기 위해 끌 수 있습니다.
 
 ```
 virtual void EnableGripper(BOOL bEnable);
@@ -896,15 +897,15 @@ virtual void EnableGripper(BOOL bEnable);
 ### <a name="parameters"></a>매개 변수
 
 *bEnable*<br/>
-【인】 트루는 그리퍼를 활성화하기 위해; FALSE를 비활성화합니다.
+진행 그리퍼를 사용 하려면 TRUE로 설정 합니다. FALSE 이면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-프레임워크는 이 메서드를 사용하여 WS_CAPTION 스타일을 사용하는 대신 그리퍼를 사용하도록 설정합니다.
+프레임 워크는이 메서드를 사용 하 여 WS_CAPTION 스타일을 사용 하는 대신 그리퍼를 사용 하도록 설정 합니다.
 
-## <a name="cbasepanefloatpane"></a><a name="floatpane"></a>CBasePane::플로트파인
+## <a name="cbasepanefloatpane"></a><a name="floatpane"></a> CBasePane:: FloatPane
 
-창을 부동합니다.
+창을 부동 합니다.
 
 ```
 virtual BOOL FloatPane(
@@ -915,26 +916,26 @@ virtual BOOL FloatPane(
 
 ### <a name="parameters"></a>매개 변수
 
-*직류 플로트*<br/>
-【인】 부동 창이 나타나는 화면 좌표를 지정합니다.
+*rectFloat*<br/>
+진행 부동 창이 나타나는 화면 좌표를 지정 합니다.
 
 *dockMethod*<br/>
-【인】 창을 부동에 사용할 dock 메서드를 지정합니다.
+진행 창을 부동 하는 데 사용할 dock 메서드를 지정 합니다.
 
 *bShow*<br/>
-【인】 부동 창이 표시되는지(TRUE) 또는 숨김(FALSE)을 지정합니다.
+진행 부동 창이 표시 되는지 (TRUE) 또는 숨겨지는지 (FALSE)를 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-창이 성공적으로 부동된 경우 TRUE; 그렇지 않으면 거짓.
+창이 성공적으로 부동 되었으면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 호출하여 *rectFloat에서*지정한 화면 위치에 창을 플로팅합니다.
+*RectFloat* 로 지정 된 화면 위치에서 창을 부동 하려면이 메서드를 호출 합니다.
 
-## <a name="cbasepaneget_acchelptopic"></a><a name="get_acchelptopic"></a>CBasePane::get_accHelpTopic
+## <a name="cbasepaneget_acchelptopic"></a><a name="get_acchelptopic"></a> CBasePane:: get_accHelpTopic
 
-프레임워크는 지정된 개체와 연결된 **WinHelp** 파일의 전체 경로및 해당 파일에 있는 적절한 토픽의 식별자를 검색하기 위해 이 메서드를 호출합니다.
+프레임 워크는이 메서드를 호출 하 여 지정 된 개체와 관련 된 **WinHelp** 파일의 전체 경로와 해당 파일의 해당 항목에 대 한 식별자를 검색 합니다.
 
 ```
 virtual HRESULT get_accHelpTopic(
@@ -945,26 +946,26 @@ virtual HRESULT get_accHelpTopic(
 
 ### <a name="parameters"></a>매개 변수
 
-*psz도움말파일*<br/>
-【인】 지정된 개체와 연결된 **WinHelp** 파일의 전체 경로를 수신하는 BSTR의 주소(있는 경우)입니다.
+*pszHelpFile*<br/>
+진행 지정 된 개체와 연결 된 **WinHelp** 파일의 전체 경로 (있는 경우)를 받는 BSTR의 주소입니다.
 
-*바차일드*<br/>
-【인】 검색할 도움말 항목이 개체의 항목인지 아니면 개체의 자식 요소 중 하나인지 지정합니다. 이 매개 변수는 CHILDID_SELF(개체에 대한 도움말 항목을 가져오려면) 또는 자식 ID(개체의 자식 요소 중 하나에 대한 도움말 항목을 가져오려면)일 수 있습니다.
+*varChild*<br/>
+진행 검색할 도움말 항목이 개체 또는 개체의 자식 요소 중 하나 인지 여부를 지정 합니다. 이 매개 변수는 CHILDID_SELF (개체에 대 한 도움말 항목을 가져오기 위해) 또는 자식 ID (개체의 자식 요소 중 하나에 대 한 도움말 항목을 가져올 수 있음) 일 수 있습니다.
 
 *pidTopic*<br/>
-【인】 지정된 개체와 연결된 **도움말** 파일 항목을 식별합니다.
+진행 지정 된 개체와 연결 된 **도움말** 파일 항목을 식별 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-`CBasePane`이 메서드를 구현 하지 않습니다. 따라서 `CBasePane::get_accHelpTopic` 항상 S_FALSE 반환합니다.
+`CBasePane` 에서이 메서드를 구현 하지 않습니다. 따라서는 `CBasePane::get_accHelpTopic` 항상 S_FALSE을 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 기능은 MFC의 활성 접근성 지원의 일부입니다. 파생 클래스에서 이 함수를 재정의하여 개체에 대한 도움말 정보를 제공합니다.
+이 함수는 MFC의 Active Accessibility 지원의 일부입니다. 파생 클래스에서이 함수를 재정의 하 여 개체에 대 한 도움말 정보를 제공 합니다.
 
-## <a name="cbasepaneget_accselection"></a><a name="get_accselection"></a>CBasePane::get_accSelection
+## <a name="cbasepaneget_accselection"></a><a name="get_accselection"></a> CBasePane:: get_accSelection
 
-프레임워크는 이 메서드를 호출하여 이 개체의 선택된 자식을 검색합니다.
+프레임 워크는이 메서드를 호출 하 여이 개체의 선택 된 자식을 검색 합니다.
 
 ```
 virtual HRESULT get_accSelection(VARIANT* pvarChildren);
@@ -972,18 +973,18 @@ virtual HRESULT get_accSelection(VARIANT* pvarChildren);
 
 ### <a name="parameters"></a>매개 변수
 
-*pvar어린이*<br/>
-【인】 선택한 자식을 식별하는 정보를 받습니다.
+*pvarChildren*<br/>
+진행 선택한 자식을 식별 하는 정보를 받습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-`CBasePane`이 메서드를 구현 하지 않습니다. *pvarChildren이* NULL인 경우 이 메서드는 E_INVALIDARG 반환합니다. 그렇지 않으면 이 메서드는 DISP_E_MEMBERNOTFOUND 반환합니다.
+`CBasePane` 에서이 메서드를 구현 하지 않습니다. *PvarChildren* 가 NULL 인 경우이 메서드는 E_INVALIDARG을 반환 합니다. 그렇지 않으면이 메서드는 DISP_E_MEMBERNOTFOUND 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 기능은 MFC의 활성 접근성 지원의 일부입니다. 창없는 ActiveX 컨트롤 이외의 창이 없는 사용자 인터페이스 요소가 있는 경우 파생 클래스에서 이 함수를 재정의합니다.
+이 함수는 MFC의 Active Accessibility 지원의 일부입니다. 창 없는 ActiveX 컨트롤 이외의 사용자 인터페이스 요소를 사용 하지 않는 경우 파생 클래스에서이 함수를 재정의 합니다.
 
-## <a name="cbasepanegetcaptionheight"></a><a name="getcaptionheight"></a>CBasePane::GetCaptionHeight
+## <a name="cbasepanegetcaptionheight"></a><a name="getcaptionheight"></a> CBasePane:: GetCaptionHeight
 
 캡션 높이를 반환합니다.
 
@@ -991,21 +992,21 @@ virtual HRESULT get_accSelection(VARIANT* pvarChildren);
 virtual int GetCaptionHeight() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 캡션 높이입니다.
 
-## <a name="cbasepanegetcontrolbarstyle"></a><a name="getcontrolbarstyle"></a>CBasePane::GetControlBar스타일
+## <a name="cbasepanegetcontrolbarstyle"></a><a name="getcontrolbarstyle"></a> CBasePane:: GetControlBarStyle
 
-컨트롤 막대 스타일을 반환합니다.
+컨트롤 막대 스타일을 반환 합니다.
 
 ```
 virtual DWORD GetControlBarStyle() const
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-AFX_CBRS_ 플래그의 비트 또는 조합입니다.
+AFX_CBRS_ 플래그의 비트 OR 조합입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1013,107 +1014,107 @@ AFX_CBRS_ 플래그의 비트 또는 조합입니다.
 
 |스타일|Description|
 |-----------|-----------------|
-|AFX_CBRS_FLOAT|컨트롤 막대를 부동 으로 만듭니다.|
-|AFX_CBRS_AUTOHIDE|자동 숨기기 모드를 활성화합니다.|
-|AFX_CBRS_RESIZE|컨트롤 막대의 크기 조정을 활성화합니다. 이 플래그를 설정하면 도킹 가능한 창에 컨트롤 막대를 배치할 수 있습니다.|
-|AFX_CBRS_CLOSE|컨트롤 막대를 숨길 수 있습니다.|
+|AFX_CBRS_FLOAT|컨트롤 막대를 부동으로 만듭니다.|
+|AFX_CBRS_AUTOHIDE|자동 숨기기 모드를 사용 하도록 설정 합니다.|
+|AFX_CBRS_RESIZE|컨트롤 막대의 크기를 조정할 수 있습니다. 이 플래그가 설정 되 면 도킹 가능한 창에 컨트롤 막대를 배치할 수 있습니다.|
+|AFX_CBRS_CLOSE|컨트롤 막대를 숨길 수 있도록 합니다.|
 
-## <a name="cbasepanegetcurrentalignment"></a><a name="getcurrentalignment"></a>CBasePane::GetCurrent정렬
+## <a name="cbasepanegetcurrentalignment"></a><a name="getcurrentalignment"></a> CBasePane:: GetCurrentAlignment
 
-현재 창 선형을 반환합니다.
+현재 창 맞춤을 반환 합니다.
 
 ```
 virtual DWORD GetCurrentAlignment() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-컨트롤 막대의 현재 정렬입니다. 다음 표에서는 가능한 값을 보여 주며 다음과 같은 값을 보여 주며 다음과 같은 값을 보여 주며 있습니다.
+컨트롤 막대의 현재 맞춤입니다. 다음 표에서는 가능한 값을 보여 줍니다.
 
 |값|맞춤|
 |-----------|---------------|
-|CBRS_ALIGN_LEFT|왼쪽 맞춤.|
-|CBRS_ALIGN_RIGHT|오른쪽 정렬.|
-|CBRS_ALIGN_TOP|상단 정렬.|
-|CBRS_ALIGN_BOTTOM|하단 정렬.|
+|CBRS_ALIGN_LEFT|왼쪽 맞춤입니다.|
+|CBRS_ALIGN_RIGHT|오른쪽 맞춤입니다.|
+|CBRS_ALIGN_TOP|위쪽 맞춤입니다.|
+|CBRS_ALIGN_BOTTOM|아래쪽 맞춤입니다.|
 
-## <a name="cbasepanegetdockingmode"></a><a name="getdockingmode"></a>CBasePane::겟도킹 모드
+## <a name="cbasepanegetdockingmode"></a><a name="getdockingmode"></a> CBasePane:: GetDockingMode
 
-창에 대한 현재 도킹 모드를 반환합니다.
+창에 대 한 현재 도킹 모드를 반환 합니다.
 
 ```
 virtual AFX_DOCK_TYPE GetDockingMode() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-창을 드래그하는 경우 DT_STANDARD 드래그 사각형으로 화면에 표시됩니다. 창의 내용을 드래그하는 경우 DT_IMMEDIATE.
+창 끌기를 화면에서 끌기 사각형으로 표시 하는 경우에 DT_STANDARD 합니다. 창의 내용을 끌 때 DT_IMMEDIATE 합니다.
 
 ### <a name="remarks"></a>설명
 
-프레임워크는 이 메서드를 호출하여 창의 현재 도킹 모드를 결정합니다.
+프레임 워크는이 메서드를 호출 하 여 창의 현재 도킹 모드를 확인 합니다.
 
-`CBasePane::m_dockMode` 정의되지 않은 경우(DT_UNDEFINED) 도킹 모드는 전역 도킹`AFX_GLOBAL_DATA::m_dockModeGlobal`모드()에서 가져온 것입니다.
+`CBasePane::m_dockMode`가 정의 되지 않은 경우 (DT_UNDEFINED) 도킹 모드는 전역 도킹 모드 ()에서 가져옵니다 `AFX_GLOBAL_DATA::m_dockModeGlobal` .
 
-*m_dockMode* 설정하거나 재정의하면 `GetDockingMode` 각 창에 대한 도킹 모드를 제어할 수 있습니다.
+*M_dockMode* 또는 재정의를 설정 하 여 `GetDockingMode` 각 창에 대 한 도킹 모드를 제어할 수 있습니다.
 
-## <a name="cbasepanegetdocksiteframewnd"></a><a name="getdocksiteframewnd"></a>CBasePane::GetDockSiteFrameD
+## <a name="cbasepanegetdocksiteframewnd"></a><a name="getdocksiteframewnd"></a> CBasePane:: GetDockSiteFrameWnd
 
-창이 도킹된 [CDockingPanesRow](../../mfc/reference/cdockingpanesrow-class.md)개체에 대한 포인터를 반환합니다.
+창이 도킹 된 [CDockingPanesRow](../../mfc/reference/cdockingpanesrow-class.md)개체에 대 한 포인터를 반환 합니다.
 
 ```
 virtual CWnd* GetDockSiteFrameWnd() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-창의 도크 사이트에 대한 포인터입니다.
+창의 dock 사이트에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
-창의 도크 사이트에 대한 포인터를 검색하려면 이 메서드를 호출합니다. 창이 주 프레임에 도킹된 경우 도크 사이트는 주 프레임 창이거나 창이 부동하는 경우 미니 프레임 창이 될 수 있습니다.
+창의 dock 사이트에 대 한 포인터를 검색 하려면이 메서드를 호출 합니다. 도킹 사이트는 창이 주 프레임에 도킹 된 경우 주 프레임 창이 고 창이 부동 인 경우 미니 프레임 창이 될 수 있습니다.
 
-## <a name="cbasepanegetenabledalignment"></a><a name="getenabledalignment"></a>CBasePane::GetEnabled정렬
+## <a name="cbasepanegetenabledalignment"></a><a name="getenabledalignment"></a> CBasePane:: GetEnabledAlignment
 
-창에 적용되는 CBRS_ALIGN_ 스타일을 반환합니다.
+창에 적용 되는 CBRS_ALIGN_ 스타일을 반환 합니다.
 
 ```
 virtual DWORD GetEnabledAlignment() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-CBRS_ALIGN_ 스타일의 조합입니다. 다음 표에서는 가능한 스타일을 보여 주었습니다.
+CBRS_ALIGN_ 스타일의 조합입니다. 다음 표에서는 가능한 스타일을 보여 줍니다.
 
-|플래그|사용 가능한 정렬|
+|플래그|설정 맞춤|
 |----------|-----------------------|
-|CBRS_ALIGN_LEFT|왼쪽.|
+|CBRS_ALIGN_LEFT|비어.|
 |CBRS_ALIGN_RIGHT|오른쪽.|
 |CBRS_ALIGN_TOP|위쪽.|
-|CBRS_ALIGN_BOTTOM|하단.|
+|CBRS_ALIGN_BOTTOM|하위별.|
 |CBRS_ALIGN_ANY|모든 플래그의 조합입니다.|
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 호출하여 창에 대해 활성화된 선형을 확인합니다. 활성화된 정렬은 창을 도킹할 수 있는 주 프레임 창의 측면을 의미합니다.
+창에 대해 사용 하도록 설정 된 맞춤을 결정 하려면이 메서드를 호출 합니다. 설정 맞춤은 창이 도킹 될 수 있는 주 프레임 창의 면을 의미 합니다.
 
-[CBasePane::EnableDocking을](#enabledocking)사용하여 도킹 정렬을 활성화합니다.
+[Cbasepane:: EnableDocking](#enabledocking)을 사용 하 여 도킹 맞춤을 사용 하도록 설정 합니다.
 
-## <a name="cbasepanegetmfcstyle"></a><a name="getmfcstyle"></a>CBasePane::GetMFC스타일
+## <a name="cbasepanegetmfcstyle"></a><a name="getmfcstyle"></a> CBasePane:: GetMFCStyle
 
-MFC에 특정한 창 스타일을 반환합니다.
+MFC에 특정 한 창 스타일을 반환 합니다.
 
 ```
 virtual DWORD GetMFCStyle() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-라이브러리별(AFX_CBRS_) 창 스타일의 조합입니다.
+라이브러리 특정 (AFX_CBRS_) 창 스타일의 조합입니다.
 
-## <a name="cbasepanegetpaneicon"></a><a name="getpaneicon"></a>CBasePane::GetPaneIcon
+## <a name="cbasepanegetpaneicon"></a><a name="getpaneicon"></a> CBasePane:: GetPaneIcon
 
-창 아이콘에 핸들을 반환합니다.
+창 아이콘에 대 한 핸들을 반환 합니다.
 
 ```
 virtual HICON GetPaneIcon(BOOL bBigIcon);
@@ -1122,59 +1123,59 @@ virtual HICON GetPaneIcon(BOOL bBigIcon);
 ### <a name="parameters"></a>매개 변수
 
 *bBigIcon*<br/>
-【인】 TRUE인 경우 32픽셀 x 32픽셀 아이콘을 지정합니다. FALSE인 경우 16픽셀 x 16픽셀 아이콘을 지정합니다.
+진행 TRUE 이면 32 픽셀 x 32 픽셀 아이콘을 지정 합니다. FALSE 인 경우 16 x 16 픽셀 아이콘을 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-창 아이콘의 핸들입니다. 실패하면 NULL을 반환합니다.
+창 아이콘에 대 한 핸들입니다. 실패 한 경우 NULL을 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-기본 구현은 [CWnd::GetIcon을](../../mfc/reference/cwnd-class.md#geticon)호출합니다.
+기본 구현에서는 [CWnd:: GetIcon](../../mfc/reference/cwnd-class.md#geticon)을 호출 합니다.
 
-## <a name="cbasepanegetpanerow"></a><a name="getpanerow"></a>CBasePane:::겟파네로우
+## <a name="cbasepanegetpanerow"></a><a name="getpanerow"></a> CBasePane:: Getpane Erow
 
-창이 도킹된 [CDockingPanesRow](../../mfc/reference/cdockingpanesrow-class.md)개체에 대한 포인터를 반환합니다.
+창이 도킹 된 [CDockingPanesRow](../../mfc/reference/cdockingpanesrow-class.md)개체에 대 한 포인터를 반환 합니다.
 
 ```
 CDockingPanesRow* GetPaneRow();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-창이 `CDockingPanesRow` 도킹되었는지 에 대한 포인터 또는 부동 창인 경우 NULL입니다.
+`CDockingPanesRow`창이 도킹 된 경우에 대 한 포인터 이거나 부동 인 경우 NULL입니다.
 
 ### <a name="remarks"></a>설명
 
-창이 도킹된 행에 액세스하려면 이 메서드를 호출합니다. 예를 들어 특정 행의 창을 정렬하려면 `GetPaneRow` 전화를 걸고 [CDockingPanesRow::ArrangePanes](../../mfc/reference/cdockingpanesrow-class.md#arrangepanes)를 호출합니다.
+창이 도킹 된 행에 액세스 하려면이 메서드를 호출 합니다. 예를 들어 특정 행의 창을 정렬 하려면를 호출한 `GetPaneRow` 다음 [CDockingPanesRow:: ArrangePanes](../../mfc/reference/cdockingpanesrow-class.md#arrangepanes)를 호출 합니다.
 
-## <a name="cbasepanegetpanestyle"></a><a name="getpanestyle"></a>CBasePane::겟파인 스타일
+## <a name="cbasepanegetpanestyle"></a><a name="getpanestyle"></a> CBasePane:: GetPaneStyle
 
-창 스타일을 반환합니다.
+창 스타일을 반환 합니다.
 
 ```
 virtual DWORD GetPaneStyle() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-생성 시 [CBasePane::SetPaneStyle](#setpanestyle) 메서드에 의해 설정된 컨트롤 막대 스타일(CBRS_ 스타일 포함)의 조합입니다.
+만들 때 [Cbasepane:: SetPaneStyle](#setpanestyle) 메서드에 의해 설정 된 컨트롤 막대 스타일 (CBRS_ 스타일 포함)의 조합입니다.
 
-## <a name="cbasepanegetparentdocksite"></a><a name="getparentdocksite"></a>CBasePane::GetParentDockSite
+## <a name="cbasepanegetparentdocksite"></a><a name="getparentdocksite"></a> CBasePane:: GetParentDockSite
 
-상위 도크 사이트에 대한 포인터를 반환합니다.
+부모 도크 사이트에 대 한 포인터를 반환 합니다.
 
 ```
 virtual CDockSite* GetParentDockSite() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-상위 도크 사이트입니다.
+부모 도크 사이트입니다.
 
-## <a name="cbasepanegetparentminiframe"></a><a name="getparentminiframe"></a>CBasePane::GetParentMiniFrame
+## <a name="cbasepanegetparentminiframe"></a><a name="getparentminiframe"></a> CBasePane:: GetParentMiniFrame
 
-상위 미니 프레임 창에 대한 포인터를 반환합니다.
+부모 미니 프레임 창에 대 한 포인터를 반환 합니다.
 
 ```
 virtual CPaneFrameWnd* GetParentMiniFrame(BOOL bNoAssert=FALSE) const;
@@ -1183,33 +1184,33 @@ virtual CPaneFrameWnd* GetParentMiniFrame(BOOL bNoAssert=FALSE) const;
 ### <a name="parameters"></a>매개 변수
 
 *bNoAssert*<br/>
-【인】 TRUE인 경우 이 메서드는 유효하지 않은 포인터를 확인하지 않습니다. 응용 프로그램이 종료될 때 이 메서드를 호출하는 경우 이 매개 변수를 TRUE로 설정합니다.
+진행 TRUE 이면이 메서드는 유효 하지 않은 포인터를 확인 하지 않습니다. 응용 프로그램이 종료 될 때이 메서드를 호출 하는 경우이 매개 변수를 TRUE로 설정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-창이 부동 하는 경우 부모 미니 프레임 창에 대 한 유효한 포인터; 그렇지 않으면 NULL.
+창이 부동 인 경우 부모 미니 프레임 창에 대 한 유효한 포인터입니다. 그렇지 않으면 NULL입니다.
 
 ### <a name="remarks"></a>설명
 
-이 함수를 호출하여 부모 미니 프레임 창에 대한 포인터를 검색합니다. 이 메서드는 모든 부모를 거치고 [CPaneFrameWnd 클래스에서](../../mfc/reference/cpaneframewnd-class.md)파생된 개체를 확인합니다.
+부모 미니 프레임 창에 대 한 포인터를 검색 하려면이 함수를 호출 합니다. 이 메서드는 모든 부모를 반복 하 고 [CPaneFrameWnd 클래스](../../mfc/reference/cpaneframewnd-class.md)에서 파생 된 개체를 확인 합니다.
 
-창이 부동 인지 여부를 확인 하는 데 사용 합니다. `GetParentMiniFrame`
+`GetParentMiniFrame`창이 부동 인지 여부를 확인 하는 데 사용 합니다.
 
-## <a name="cbasepanegetparenttabbedpane"></a><a name="getparenttabbedpane"></a>CBasePane:::GetParentTabbedPane
+## <a name="cbasepanegetparenttabbedpane"></a><a name="getparenttabbedpane"></a> CBasePane:: GetParentTabbedPane
 
-상위 탭창에 대한 포인터를 반환합니다.
+부모 탭 창에 대 한 포인터를 반환 합니다.
 
 ```
 CBaseTabbedPane* GetParentTabbedPane() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-상위 탭 창에 대한 포인터가 있는 경우 그렇지 않으면 NULL.
+부모 탭 창이 있으면 해당 창에 대 한 포인터이 고, 그렇지 않으면입니다. 그렇지 않으면 NULL입니다.
 
-## <a name="cbasepanegetparenttabwnd"></a><a name="getparenttabwnd"></a>CBasePane::GetParentTabwnd
+## <a name="cbasepanegetparenttabwnd"></a><a name="getparenttabwnd"></a> CBasePane:: GetParentTabWnd
 
-탭 안에 있는 부모 창에 대한 포인터를 반환합니다.
+탭 내의 부모 창에 대 한 포인터를 반환 합니다.
 
 ```
 CMFCBaseTabCtrl* GetParentTabWnd(HWND& hWndTab) const;
@@ -1218,47 +1219,47 @@ CMFCBaseTabCtrl* GetParentTabWnd(HWND& hWndTab) const;
 ### <a name="parameters"></a>매개 변수
 
 *hWndTab*<br/>
-【아웃】 반환 값이 NULL이 아닌 경우 이 매개 변수에는 상위 탭된 창에 대한 핸들이 포함됩니다.
+제한이 반환 값이 NULL이 아닌 경우이 매개 변수는 부모 탭 창에 대 한 핸들을 포함 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-상위 탭 창 또는 NULL에 대한 유효한 포인터입니다.
+부모 탭 창 또는 NULL에 대 한 유효한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
-이 함수를 사용하여 부모 탭 창에 대한 포인터를 검색합니다. 창이 도킹 래퍼 `GetParent` [(CDockablePaneAdapter 클래스)](../../mfc/reference/cdockablepaneadapter-class.md)내부 또는 창 어댑터 [(CDockablePaneAdapter 클래스)](../../mfc/reference/cdockablepaneadapter-class.md)내부에있을 수 있기 때문에 호출하기에 충분하지 않을 수 있습니다. 이러한 `GetParentTabWnd` 경우 유효한 포인터를 검색할 수 있습니다(부모가 탭된 창이라고 가정).
+부모 탭 창에 대 한 포인터를 검색 하려면이 함수를 사용 합니다. `GetParent`창이 도킹 래퍼 ( [CDockablePaneAdapter 클래스](../../mfc/reference/cdockablepaneadapter-class.md)) 내부에 있거나 창 어댑터 ( [CDockablePaneAdapter 클래스](../../mfc/reference/cdockablepaneadapter-class.md)) 안에 있을 수 있으므로를 호출 하는 데 충분 하지 않은 경우도 있습니다. 를 사용 하면 `GetParentTabWnd` 이러한 경우에 올바른 포인터를 검색할 수 있습니다 (부모가 탭 창인 것으로 가정).
 
-## <a name="cbasepanegetrecentvisiblestate"></a><a name="getrecentvisiblestate"></a>CBasePane::Get최근가볼 수 있는 상태
+## <a name="cbasepanegetrecentvisiblestate"></a><a name="getrecentvisiblestate"></a> CBasePane:: GetRecentVisibleState
 
-프레임워크는 보관에서 창이 복원될 때 이 메서드를 호출합니다.
+프레임 워크는 보관 파일에서 창이 복원 될 때이 메서드를 호출 합니다.
 
 ```
 virtual BOOL GetRecentVisibleState() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-최근 표시되는 상태를 지정하는 BOOL입니다. TRUE이면 창이 직렬화될 때 표시되고 복원될 때 표시되어야 합니다. FALSE인 경우 창은 직렬화될 때 숨겨져 있으며 복원할 때 숨어야합니다.
+최근 표시 상태를 지정 하는 부울입니다. TRUE 이면 창이 serialize 될 때 표시 되 고 복원 될 때 표시 됩니다. FALSE 이면 창이 serialize 될 때 숨겨지고 복원 시 숨겨야 합니다.
 
-## <a name="cbasepanehideinprintpreviewmode"></a><a name="hideinprintpreviewmode"></a>CBasePane::숨바꼭한인쇄 미리보기 모드
+## <a name="cbasepanehideinprintpreviewmode"></a><a name="hideinprintpreviewmode"></a> CBasePane:: HideInPrintPreviewMode
 
-창이 인쇄 미리 보기에 숨겨져 있는지 여부를 지정합니다.
+창이 인쇄 미리 보기에서 숨겨지는지 여부를 지정 합니다.
 
 ```
 virtual BOOL HideInPrintPreviewMode() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-창이 인쇄 미리 보기에 표시되지 않는 경우 TRUE입니다. 그렇지 않으면 false입니다.
+창이 인쇄 미리 보기에 표시 되지 않으면 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-기본 창은 인쇄 미리 보기에 표시되지 않습니다. 따라서이 메서드는 항상 TRUE를 반환 합니다.
+기본 창은 인쇄 미리 보기에 표시 되지 않습니다. 따라서이 메서드는 항상 TRUE를 반환 합니다.
 
-## <a name="cbasepaneinsertpane"></a><a name="insertpane"></a>CBasePane::삽입창
+## <a name="cbasepaneinsertpane"></a><a name="insertpane"></a> CBasePane:: InsertPane
 
-지정된 창을 도킹 관리자에 등록합니다.
+지정 된 창을 도킹 관리자에 등록 합니다.
 
 ```
 BOOL InsertPane(
@@ -1269,76 +1270,76 @@ BOOL InsertPane(
 
 ### <a name="parameters"></a>매개 변수
 
-*p컨트롤바*<br/>
-【인】 삽입할 창에 대한 포인터입니다.
+*pControlBar*<br/>
+진행 삽입할 창에 대 한 포인터입니다.
 
-*p Target*<br/>
-【인】 인접 창에 대한 포인터입니다.
+*pTarget*<br/>
+진행 인접 한 창에 대 한 포인터입니다.
 
-*b애프터*<br/>
-【인】 TRUE인 경우 *pControlBar가* *pTarget*에 삽입됩니다. FALSE인 경우 *pControlBar가* *pTarget*앞에 삽입됩니다.
+*bAfter*<br/>
+진행 TRUE 이면 *Pcontrolbar* 가 *ptarget* 뒤에 삽입 됩니다. FALSE 이면 *Pcontrolbar* 가 *ptarget* 앞에 삽입 됩니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-TRUE 메서드가 성공하면 FALSE가 그렇지 않으면 FALSE입니다.
+메서드가 성공 하면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
-## <a name="cbasepaneisaccessibilitycompatible"></a><a name="isaccessibilitycompatible"></a>CBasePane::접근성 호환
+## <a name="cbasepaneisaccessibilitycompatible"></a><a name="isaccessibilitycompatible"></a> CBasePane:: IsAccessibilityCompatible
 
-창이 활성 접근성을 지원하는지 여부를 지정합니다.
+창에서 Active Accessibility 지원할지 여부를 지정 합니다.
 
 ```
 virtual BOOL IsAccessibilityCompatible();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-TRUE 창이 활성 내게 필요한 옵션 지원을 지원하는 경우; 그렇지 않으면 false입니다.
+창에서 Active Accessibility을 지원 하면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
-## <a name="cbasepaneisautohidemode"></a><a name="isautohidemode"></a>CBasePane::IsAutoHideMode
+## <a name="cbasepaneisautohidemode"></a><a name="isautohidemode"></a> CBasePane:: IsAutoHideMode
 
-창이 자동 숨기기 모드에 있는지 여부를 결정합니다.
+창이 자동 숨기기 모드에 있는지 여부를 확인 합니다.
 
 ```
 virtual BOOL IsAutoHideMode() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-창이 자동 숨기기 모드인 경우 TRUE입니다. 그렇지 않으면 false입니다.
+창이 자동 숨기기 모드에 있으면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-기본 창은 자동으로 숨길 수 없습니다. 이 메서드는 항상 FALSE를 반환합니다.
+기본 창은 자동으로 숨길 수 없습니다. 이 메서드는 항상 FALSE를 반환 합니다.
 
-## <a name="cbasepaneisdialogcontrol"></a><a name="isdialogcontrol"></a>CBasePane::IsDialog제어
+## <a name="cbasepaneisdialogcontrol"></a><a name="isdialogcontrol"></a> CBasePane:: IsDialogControl
 
-창이 대화 상자 컨트롤인지 여부를 지정합니다.
+창이 대화 상자 컨트롤 인지 여부를 지정 합니다.
 
 ```
 BOOL IsDialogControl() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-창이 대화 상자 컨트롤인 경우 TRUE입니다. 그렇지 않으면 false입니다.
+창이 대화 상자 컨트롤 이면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-프레임워크는 이 메서드를 사용하여 모든 창에 대한 레이아웃 일관성을 보장합니다.
+프레임 워크는이 메서드를 사용 하 여 모든 창에 대 한 레이아웃 일관성을 유지 합니다.
 
-## <a name="cbasepaneisdocked"></a><a name="isdocked"></a>CBasePane::IsDocked
+## <a name="cbasepaneisdocked"></a><a name="isdocked"></a> CBasePane:: IsDocked
 
-창이 도킹되었는지 여부를 결정합니다.
+창이 도킹 되어 있는지 여부를 확인 합니다.
 
 ```
 virtual BOOL IsDocked() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-TRUE 창의 부모가 미니 프레임이 아니거나 창이 다른 창이 있는 미니 프레임에 떠 있는 경우 그렇지 않으면 false입니다.
+창의 부모가 미니 프레임이 아니거나 창이 다른 창에 있는 미니 프레임에서 부동 상태 이면 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
-## <a name="cbasepaneisfloating"></a><a name="isfloating"></a>CBasePane::떠 있는
+## <a name="cbasepaneisfloating"></a><a name="isfloating"></a> CBasePane:: IsFloating
 
 창이 부동 인지 여부를 확인 합니다.
 
@@ -1346,77 +1347,77 @@ TRUE 창의 부모가 미니 프레임이 아니거나 창이 다른 창이 있�
 virtual BOOL IsFloating() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-창이 부동 하는 경우 TRUE; 그렇지 않으면 false입니다.
+창이 부동 되었으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 [CBasePane::IsDocked의](#isdocked)반대 값을 반환합니다.
+이 메서드는 [Cbasepane:: IsDocked](#isdocked)의 반대 값을 반환 합니다.
 
-## <a name="cbasepaneishorizontal"></a><a name="ishorizontal"></a>CBasePane::수평
+## <a name="cbasepaneishorizontal"></a><a name="ishorizontal"></a> CBasePane:: IsHorizontal
 
-창이 수평으로 도킹되는지 여부를 결정합니다.
+창이 가로로 도킹 되는지 여부를 결정 합니다.
 
 ```
 virtual BOOL IsHorizontal() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-창이 수평으로 도킹된 경우 TRUE입니다. 그렇지 않으면 거짓.
+창이 가로로 도킹 되 면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-기본 구현은 CBRS_ORIENT_HORZ 대해 현재 도킹 정렬을 검사합니다.
+기본 구현에서는 CBRS_ORIENT_HORZ에 대 한 현재 도킹 맞춤을 확인 합니다.
 
-## <a name="cbasepaneisinfloatingmultipaneframewnd"></a><a name="isinfloatingmultipaneframewnd"></a>CBasePane::이인 플로팅멀티파인프레임
+## <a name="cbasepaneisinfloatingmultipaneframewnd"></a><a name="isinfloatingmultipaneframewnd"></a> CBasePane:: IsInFloatingMultiPaneFrameWnd
 
-창이 다중 창 프레임 창에 있는지 여부를 [지정합니다(CMultiPaneFrameWnd 클래스).](../../mfc/reference/cmultipaneframewnd-class.md)
+창이 다중 창 프레임 창 ( [CMultiPaneFrameWnd 클래스](../../mfc/reference/cmultipaneframewnd-class.md))에 있는지 여부를 지정 합니다.
 
 ```
 virtual BOOL IsInFloatingMultiPaneFrameWnd() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-창이 다중 창 프레임 창에 있는 경우 TRUE입니다. 그렇지 않으면 false입니다.
+창이 다중 창 프레임 창에 있으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-도킹 가능한 창만 다중 창 프레임 창에 떠있을 수 있습니다. 따라서 `CBasePane::IsInFloatingMultiPaneFrameWnd` 항상 FALSE를 반환합니다.
+도킹 가능한 창만 다중 창 프레임 창에서 부동 창으로 표시할 수 있습니다. 따라서는 `CBasePane::IsInFloatingMultiPaneFrameWnd` 항상 FALSE를 반환 합니다.
 
-## <a name="cbasepaneismditabbed"></a><a name="ismditabbed"></a>CBasePane::IsMDITabbed
+## <a name="cbasepaneismditabbed"></a><a name="ismditabbed"></a> CBasePane:: IsMDITabbed
 
-창이 탭된 문서로 MDI 자식 창에 추가되었는지 여부를 결정합니다.
+창이 MDI 자식 창에 탭 문서로 추가 되었는지 여부를 확인 합니다.
 
 ```
 virtual BOOL IsMDITabbed() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-TRUE 창이 탭된 문서로 MDI 자식 창에 추가된 경우 그렇지 않으면 false입니다.
+창이 MDI 자식 창에 탭 문서로 추가 되었으면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
-## <a name="cbasepaneispanevisible"></a><a name="ispanevisible"></a>CBasePane::IsPaneVisible
+## <a name="cbasepaneispanevisible"></a><a name="ispanevisible"></a> CBasePane:: IsPaneVisible
 
-창에 대해 WS_VISIBLE 플래그가 설정되어 있는지 여부를 지정합니다.
+창에 대해 WS_VISIBLE 플래그를 설정할지 여부를 지정 합니다.
 
 ```
 BOOL IsPaneVisible() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-WS_VISIBLE 설정된 경우 TRUE입니다. 그렇지 않으면 false입니다.
+WS_VISIBLE 설정 되어 있으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-[CBasePane::가시광선을](#isvisible) 사용하여 창 가시성을 확인합니다.
+[Cbasepane:: IsVisible](#isvisible) 을 사용 하 여 창 표시 여부를 확인 합니다.
 
-## <a name="cbasepaneispointneardocksite"></a><a name="ispointneardocksite"></a>CBasePane::이포인트니어독사이트
+## <a name="cbasepaneispointneardocksite"></a><a name="ispointneardocksite"></a> CBasePane:: IsPointNearDockSite
 
-지정된 점이 도크 사이트 근처에 있는지 여부를 결정합니다.
+지정 된 지점이 dock 사이트 근처에 있는지 여부를 확인 합니다.
 
 ```
 BOOL IsPointNearDockSite(
@@ -1427,88 +1428,88 @@ BOOL IsPointNearDockSite(
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
-【인】 지정된 점입니다.
+*까지*<br/>
+진행 지정 된 지점입니다.
 
-*dwBar 정렬*<br/>
-【아웃】 점이 근처에 있는 모서리를 지정합니다. 가능한 값은 CBRS_ALIGN_LEFT, CBRS_ALIGN_RIGHT, CBRS_ALIGN_TOP 및 CBRS_ALIGN_BOTTOM
+*Dw바 맞춤*<br/>
+제한이 점이 근처에 있는 가장자리를 지정 합니다. 가능한 값은 CBRS_ALIGN_LEFT, CBRS_ALIGN_RIGHT, CBRS_ALIGN_TOP 및 CBRS_ALIGN_BOTTOM
 
 *bOuterEdge*<br/>
-【아웃】 TRUE 점이 도크 사이트의 외부 테두리 근처에 있는 경우; 그렇지 않으면 거짓.
+제한이 지점이 dock 사이트의 외부 테두리 근처에 있으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-포인트가 도크 사이트 근처에 있는 경우 TRUE; 그렇지 않으면 거짓.
+지점이 dock 사이트 근처에 있으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-점은 도킹 관리자에서 설정된 민감도 내에 있을 때 도크 사이트 근처에 있습니다. 기본 민감도는 15픽셀입니다.
+도킹 관리자의 민감도 집합 내에 있는 위치는 도크 사이트 근처에 있습니다. 기본 민감도는 15 픽셀입니다.
 
-## <a name="cbasepaneisresizable"></a><a name="isresizable"></a>CBasePane::이재성
+## <a name="cbasepaneisresizable"></a><a name="isresizable"></a> CBasePane:: IsResizable 조정 가능
 
-창의 크기를 조정할 수 있는지 여부를 결정합니다.
+창의 크기를 조정할 수 있는지 여부를 확인 합니다.
 
 ```
 virtual BOOL IsResizable() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-TRUE 사용자가 창을 크기를 조정할 수 있는 경우 그렇지 않으면 false입니다.
+사용자가 창을 조정할 수 있으면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-[CDockablePane 클래스의](../../mfc/reference/cdockablepane-class.md) 창 크기를 조정할 수 있습니다.
+[CDockablePane 클래스](../../mfc/reference/cdockablepane-class.md) 의 창 크기를 조정할 수 있습니다.
 
-상태 [표시줄(CMFCStatusBar 클래스)과](../../mfc/reference/cmfcstatusbar-class.md)도크 모음(CDockSite [클래스)의](../../mfc/reference/cdocksite-class.md)크기를 조정할 수 없습니다.
+상태 표시줄 ( [Cmfcstatusbar 클래스](../../mfc/reference/cmfcstatusbar-class.md)) 및 도크 막대 ( [CDockSite 클래스](../../mfc/reference/cdocksite-class.md))는 크기를 조정할 수 없습니다.
 
-## <a name="cbasepaneisrestoredfromregistry"></a><a name="isrestoredfromregistry"></a>CBasePane::복원에서레지스트리
+## <a name="cbasepaneisrestoredfromregistry"></a><a name="isrestoredfromregistry"></a> CBasePane:: IsRestoredFromRegistry
 
-창이 레지스트리에서 복원되는지 여부를 결정합니다.
+레지스트리에서 창이 복원 되는지 여부를 결정 합니다.
 
 ```
 virtual BOOL IsRestoredFromRegistry() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-TRUE 창이 레지스트리에서 복원되는 경우 그렇지 않으면 false입니다.
+창이 레지스트리에서 복원 되 면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
-## <a name="cbasepaneistabbed"></a><a name="istabbed"></a>CBasePane::IsTabbed
+## <a name="cbasepaneistabbed"></a><a name="istabbed"></a> CBasePane:: IsTabbed
 
-탭된 창의 탭 컨트롤에 창이 삽입되었는지 여부를 결정합니다.
+탭 창의 탭 컨트롤에 창이 삽입 되었는지 여부를 확인 합니다.
 
 ```
 virtual BOOL IsTabbed() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-TRUE 컨트롤 막대가 탭된 창의 탭에 삽입된 경우; 그렇지 않으면 거짓.
+컨트롤 막대가 탭 창의 탭에 삽입 되 면 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 즉시 부모에 대 한 포인터를 검색 하 고 부모의 런타임 [클래스는 CMFCBaseTabCtrl 클래스](../../mfc/reference/cmfcbasetabctrl-class.md)인지 확인 합니다.
+이 메서드는 직계 부모에 대 한 포인터를 검색 하 고 부모의 런타임 클래스가 [CMFCBaseTabCtrl 클래스](../../mfc/reference/cmfcbasetabctrl-class.md)인지 여부를 확인 합니다.
 
-## <a name="cbasepaneisvisible"></a><a name="isvisible"></a>CBasePane::가 보입니다.
+## <a name="cbasepaneisvisible"></a><a name="isvisible"></a> CBasePane:: IsVisible
 
-창이 표시되는지 여부를 결정합니다.
+창이 표시 되는지 여부를 확인 합니다.
 
 ```
 virtual BOOL IsVisible() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-TRUE 창이 표시되는 경우; 그렇지 않으면 거짓.
+창이 표시 되 면 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 사용하여 창의 가시성을 확인합니다. `::IsWindowVisible`는 사용하지 마세요.
+창의 표시 여부를 확인 하려면이 메서드를 사용 합니다. `::IsWindowVisible`는 사용하지 마세요.
 
-창이 탭되지 않은 [경우(CBasePane::IsTabbed](#istabbed)참조) 이 메서드는 WS_VISIBLE 스타일을 확인합니다. 창이 탭된 경우 이 메서드는 상위 탭 창의 가시성을 확인합니다. 상위 창이 표시되는 경우 함수는 [CMFCBaseTabCtrl::IsTabVisible](../../mfc/reference/cmfcbasetabctrl-class.md#istabvisible)를 사용하여 창 탭의 가시성을 확인합니다.
+창이 탭 되지 않은 경우 ( [Cbasepane:: IsTabbed](#istabbed)참조)이 메서드는 WS_VISIBLE 스타일을 확인 합니다. 창이 탭 되 면이 메서드는 부모 탭 창의 표시 여부를 확인 합니다. 부모 창이 표시 되는 경우 함수는 [CMFCBaseTabCtrl:: IsTabVisible](../../mfc/reference/cmfcbasetabctrl-class.md#istabvisible)을 사용 하 여 창 탭의 표시 여부를 확인 합니다.
 
-## <a name="cbasepaneloadstate"></a><a name="loadstate"></a>CBasePane::로드스테이트
+## <a name="cbasepaneloadstate"></a><a name="loadstate"></a> CBasePane:: LoadState
 
 레지스트리에서 창의 상태를 로드합니다.
 
@@ -1522,25 +1523,25 @@ virtual BOOL LoadState(
 ### <a name="parameters"></a>매개 변수
 
 *lpszProfileName*<br/>
-【인】 프로필 이름입니다.
+진행 프로필 이름입니다.
 
 *nIndex*<br/>
-【인】 프로필 인덱스입니다.
+진행 프로필 인덱스입니다.
 
 *uiID*<br/>
-【인】 창 ID.
+진행 창 ID입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-TRUE 창 상태가 성공적으로 로드된 경우 그렇지 않으면 거짓.
+창 상태가 성공적으로 로드 되었으면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-프레임워크는 이 메서드를 호출하여 레지스트리에서 창 상태를 로드합니다. 파생 클래스에서 재정의하여 [CBasePane::SaveState](#savestate)에 의해 저장된 추가 정보를 로드합니다.
+프레임 워크는이 메서드를 호출 하 여 레지스트리에서 창 상태를 로드 합니다. [Cbasepane:: SaveState](#savestate)에 의해 저장 된 추가 정보를 로드 하려면 파생 클래스에서 재정의 합니다.
 
-## <a name="cbasepanemovewindow"></a><a name="movewindow"></a>CBasePane::이동 창
+## <a name="cbasepanemovewindow"></a><a name="movewindow"></a> CBasePane:: MoveWindow
 
-창을 이동합니다.
+창을 이동 합니다.
 
 ```
 virtual HDWP MoveWindow(
@@ -1552,25 +1553,25 @@ virtual HDWP MoveWindow(
 ### <a name="parameters"></a>매개 변수
 
 *rect*<br/>
-【인】 창의 새 위치와 크기를 지정하는 사각형입니다.
+진행 창의 새 위치와 크기를 지정 하는 사각형입니다.
 
 *bRepaint*<br/>
-【인】 TRUE이면 창이 다시 그려집니다. FALSE이면 창이 다시 그려지지 않습니다.
+진행 TRUE 이면 창이 다시 그려집니다. FALSE 이면 창이 다시 그리지 않습니다.
 
-*HDWP*<br/>
-【인】 지연된 창 위치 구조로 처리합니다.
+*hdwp*<br/>
+진행 지연 된 창 위치 구조체에 대 한 핸들입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-지연된 창 위치 구조 또는 NULL에 대한 핸들입니다.
+지연 된 창 위치 구조체 또는 NULL에 대 한 핸들입니다.
 
 ### <a name="remarks"></a>설명
 
-*NULL을 hdwp* 매개 변수로 전달하는 경우 이 메서드는 창을 정상적으로 이동합니다. 핸들을 전달하는 경우 이 메서드는 지연된 창 이동을 수행합니다. [BeginDeferWindowPos를](/windows/win32/api/winuser/nf-winuser-begindeferwindowpos) 호출하거나 이 메서드에 이전 호출의 반환 값을 저장하여 핸들을 가져올 수 있습니다.
+*Hdwp* 매개 변수로 NULL을 전달 하는 경우이 메서드는 창을 정상적으로 이동 합니다. 핸들을 전달 하는 경우이 메서드는 지연 된 창 이동을 수행 합니다. 이 메서드에 대 한 이전 호출의 반환 값을 저장 하거나 [BeginDeferWindowPos](/windows/win32/api/winuser/nf-winuser-begindeferwindowpos) 를 호출 하 여 핸들을 가져올 수 있습니다.
 
-## <a name="cbasepaneonafterchangeparent"></a><a name="onafterchangeparent"></a>CBasePane::온애프터체인지부모
+## <a name="cbasepaneonafterchangeparent"></a><a name="onafterchangeparent"></a> CBasePane:: OnAfterChangeParent
 
-창의 부모가 변경된 후 프레임워크에서 호출됩니다.
+창의 부모가 변경 된 후 프레임 워크에서 호출 됩니다.
 
 ```
 virtual void OnAfterChangeParent(CWnd* pWndOldParent);
@@ -1578,18 +1579,18 @@ virtual void OnAfterChangeParent(CWnd* pWndOldParent);
 
 ### <a name="parameters"></a>매개 변수
 
-*pWndOld부모*<br/>
-【인】 이전 부모에 대한 포인터입니다.
+*pWndOldParent*<br/>
+진행 이전 부모에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
-프레임워크는 일반적으로 도킹 또는 부동 작업으로 인해 창의 부모가 변경된 후 이 메서드를 호출합니다.
+일반적으로 도킹 또는 부동 작업 때문에 프레임 워크는 창의 부모를 변경한 후이 메서드를 호출 합니다.
 
 기본 구현은 아무 작업도 수행하지 않습니다.
 
-## <a name="cbasepaneonbeforechangeparent"></a><a name="onbeforechangeparent"></a>CBasePane::에 전에변경부모
+## <a name="cbasepaneonbeforechangeparent"></a><a name="onbeforechangeparent"></a> CBasePane:: OnBeforeChangeParent
 
-창이 부모 창을 변경하기 직전에 프레임워크에서 호출됩니다.
+창에서 부모 창이 변경 되기 직전에 프레임 워크에서 호출 됩니다.
 
 ```
 virtual void OnBeforeChangeParent(
@@ -1600,20 +1601,20 @@ virtual void OnBeforeChangeParent(
 ### <a name="parameters"></a>매개 변수
 
 *pWndNewParent*<br/>
-【인】 새 부모 창에 대한 포인터입니다.
+진행 새 부모 창에 대 한 포인터입니다.
 
 *bDelay*<br/>
-【인】 레이아웃 조정을 지연해야 하는지 여부를 지정합니다.
+진행 레이아웃 조정을 지연 해야 하는지 여부를 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
-프레임워크는 일반적으로 도킹, 부동 또는 자동 숨기기 작업으로 인해 창의 부모가 변경되기 직전에 이 메서드를 호출합니다.
+일반적으로 도킹, 부동 또는 자동 숨기기 작업 때문에 프레임 워크는 창의 부모가 변경 되기 직전에이 메서드를 호출 합니다.
 
 기본 구현은 아무 작업도 수행하지 않습니다.
 
-## <a name="cbasepaneondrawcaption"></a><a name="ondrawcaption"></a>CBasePane::온드로우 캡션
+## <a name="cbasepaneondrawcaption"></a><a name="ondrawcaption"></a> CBasePane:: OnDrawCaption
 
-프레임워크는 캡션이 그려질 때 이 메서드를 호출합니다.
+프레임 워크는 캡션을 그릴 때이 메서드를 호출 합니다.
 
 ```
 virtual void OnDrawCaption();
@@ -1621,9 +1622,9 @@ virtual void OnDrawCaption();
 
 ### <a name="remarks"></a>설명
 
-이 메서드에는 `CBasePane` 클래스에 대 한 기능이 없습니다.
+이 메서드는 클래스에 대 한 기능을 포함 하지 않습니다 `CBasePane` .
 
-## <a name="cbasepaneonmovepanedivider"></a><a name="onmovepanedivider"></a>CBasePane::온무파네 분배기
+## <a name="cbasepaneonmovepanedivider"></a><a name="onmovepanedivider"></a> CBasePane:: OnMovePaneDivider
 
 이 메서드는 현재 사용 되지 않습니다.
 
@@ -1633,12 +1634,12 @@ virtual void OnMovePaneDivider(CPaneDivider* /* unused */);
 
 ### <a name="parameters"></a>매개 변수
 
-*하지 않는*<br/>
-【인】 사용되지 않습니다.
+*사용 되지 않는*<br/>
+진행 사용 되지 않습니다.
 
-## <a name="cbasepaneonpanecontextmenu"></a><a name="onpanecontextmenu"></a>CBasePane::온파네컨텍스트 메뉴
+## <a name="cbasepaneonpanecontextmenu"></a><a name="onpanecontextmenu"></a> CBasePane:: OnPaneContextMenu
 
-창 목록이 있는 메뉴를 빌드할 때 프레임워크에서 호출합니다.
+창 목록을 포함 하는 메뉴를 빌드할 때 프레임 워크에서 호출 됩니다.
 
 ```
 virtual void OnPaneContextMenu(
@@ -1648,21 +1649,21 @@ virtual void OnPaneContextMenu(
 
 ### <a name="parameters"></a>매개 변수
 
-*p부모 프레임*<br/>
-【인】 상위 프레임에 대한 포인터입니다.
+*pParentFrame*<br/>
+진행 부모 프레임에 대 한 포인터입니다.
 
-*지점*<br/>
-【인】 바로 가기 메뉴의 위치를 지정합니다.
+*까지*<br/>
+진행 바로 가기 메뉴의 위치를 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
-`OnPaneContextMenu`현재 프레임 창에 속하는 창 목록을 유지 관리하는 도킹 관리자를 호출합니다. 이 메서드는 바로 가기 메뉴에 창의 이름을 추가 하 고 표시 합니다. 메뉴의 명령은 개별 창을 표시하거나 숨깁니다.
+`OnPaneContextMenu` 현재 프레임 창에 속하는 창 목록을 유지 하는 도킹 관리자를 호출 합니다. 이 메서드는 바로 가기 메뉴에 창의 이름을 추가 하 고 표시 합니다. 메뉴의 명령은 개별 창을 표시 하거나 숨깁니다.
 
-이 메서드를 재정의하여 이 동작을 사용자 지정합니다.
+이 동작을 사용자 지정 하려면이 메서드를 재정의 합니다.
 
-## <a name="cbasepaneonremovefromminiframe"></a><a name="onremovefromminiframe"></a>CBasePane::에제거해제미니프레임
+## <a name="cbasepaneonremovefromminiframe"></a><a name="onremovefromminiframe"></a> CBasePane:: OnRemoveFromMiniFrame
 
-상위 미니 프레임 창에서 창이 제거될 때 프레임워크에서 호출됩니다.
+부모 미니 프레임 창에서 창이 제거 될 때 프레임 워크에서 호출 됩니다.
 
 ```
 virtual void OnRemoveFromMiniFrame(CPaneFrameWnd* pMiniFrame);
@@ -1671,17 +1672,17 @@ virtual void OnRemoveFromMiniFrame(CPaneFrameWnd* pMiniFrame);
 ### <a name="parameters"></a>매개 변수
 
 *pMiniFrame*<br/>
-【인】 창이 제거되는 미니 프레임 창에 대한 포인터입니다.
+진행 창이 제거 되는 미니 프레임 창에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
-프레임워크는 도킹의 결과로 부모 미니 프레임 창에서 창이 제거될 때 이 메서드를 호출합니다.
+프레임 워크는 부모 미니 프레임 창에서 창이 제거 될 때 (예: 도킹의 결과로)이 메서드를 호출 합니다.
 
 기본 구현은 아무 작업도 수행하지 않습니다.
 
-## <a name="cbasepaneonsetaccdata"></a><a name="onsetaccdata"></a>CBasePane::온셋데이터
+## <a name="cbasepaneonsetaccdata"></a><a name="onsetaccdata"></a> CBasePane:: OnSetAccData
 
-`CBasePane`이 메서드를 사용 하지 않습니다.
+`CBasePane` 는이 메서드를 사용 하지 않습니다.
 
 ```
 virtual BOOL OnSetAccData(long lVal);
@@ -1690,17 +1691,17 @@ virtual BOOL OnSetAccData(long lVal);
 ### <a name="parameters"></a>매개 변수
 
 *lVal*<br/>
-【인】 사용되지 않습니다.
+진행 사용 되지 않습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-이 메서드는 항상 TRUE를 반환합니다.
+이 메서드는 항상 TRUE를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-## <a name="cbasepanepanefrompoint"></a><a name="panefrompoint"></a>CBasePane::P인FromPoint
+## <a name="cbasepanepanefrompoint"></a><a name="panefrompoint"></a> CBasePane::P aneFromPoint
 
-지정된 점을 포함하는 창을 반환합니다.
+지정 된 지점을 포함 하는 창을 반환 합니다.
 
 ```
 CBasePane* PaneFromPoint(
@@ -1712,33 +1713,33 @@ CBasePane* PaneFromPoint(
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
-【인】 검사할 점을 화면 좌표로 지정합니다.
+*까지*<br/>
+진행 확인할 지점을 화면 좌표로 지정 합니다.
 
-*n감도*<br/>
-【인】 이 금액만큼 검색 영역을 늘립니다. 지정된 지점이 증가된 영역에 속하는 경우 창이 검색 기준을 충족합니다.
+*nSensitivity*<br/>
+진행 검색 영역을이 양만큼 늘립니다. 지정 된 지점이 증가 하는 영역에 있으면 창에 검색 조건이 충족 됩니다.
 
 *bExactBar*<br/>
-【인】 *true는 nSensitivity* 매개 변수를 무시합니다. 그렇지 않으면 false입니다.
+진행 *Nsensitivity* 매개 변수를 무시 하려면 TRUE로 설정 합니다. 그렇지 않으면 FALSE입니다.
 
-*pRTCBarType*<br/>
-【인】 NULL이 아닌 경우 메서드는 지정된 형식의 창만 검색합니다.
+*Prtc바 형식*<br/>
+진행 NULL이 아닌 경우 메서드는 지정 된 형식의 요소만 검색 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-지정된 `CBasePane`점을 포함하는 -derive된 개체 또는 창이 없는 경우 NULL입니다.
+`CBasePane`지정 된 지점을 포함 하는 파생 개체 이거나, 창이 없는 경우 NULL입니다.
 
-## <a name="cbasepanerecalclayout"></a><a name="recalclayout"></a>CBasePane::리콜레이아웃
+## <a name="cbasepanerecalclayout"></a><a name="recalclayout"></a> CBasePane:: RecalcLayout
 
-`CBasePane`이 메서드를 사용 하지 않습니다.
+`CBasePane` 는이 메서드를 사용 하지 않습니다.
 
 ```
 virtual void RecalcLayout();
 ```
 
-## <a name="cbasepaneremovepanefromdockmanager"></a><a name="removepanefromdockmanager"></a>CBasePane::제거파인에서독매니저
+## <a name="cbasepaneremovepanefromdockmanager"></a><a name="removepanefromdockmanager"></a> CBasePane:: RemovePaneFromDockManager
 
-창을 등록 취소하고 도킹 관리자의 목록에서 창이 제거됩니다.
+창의 등록을 취소 하 고 도킹 관리자의 목록에서 제거 합니다.
 
 ```cpp
 void RemovePaneFromDockManager(
@@ -1752,21 +1753,21 @@ void RemovePaneFromDockManager(
 ### <a name="parameters"></a>매개 변수
 
 *pBar*<br/>
-【인】 제거할 창에 대한 포인터입니다.
+진행 제거할 창에 대 한 포인터입니다.
 
 *bDestroy*<br/>
-【인】 TRUE이면 제거된 창이 소멸됩니다.
+진행 TRUE 이면 제거 된 창이 제거 됩니다.
 
-*bAdjust레이아웃*<br/>
-【인】 TRUE인 경우 도킹 레이아웃을 즉시 조정합니다.
+*bAdjustLayout*<br/>
+진행 TRUE 이면 도킹 레이아웃을 즉시 조정 합니다.
 
-*b자동 숨기기*<br/>
-【인】 TRUE인 경우 도킹 레이아웃은 자동 숨기기 막대 목록과 관련이 있습니다. FALSE인 경우 도킹 레이아웃은 일반 창 목록과 관련이 있습니다.
+*bAutoHide 숨기기*<br/>
+진행 TRUE 이면 도킹 레이아웃이 자동 숨기기 막대 목록과 관련 됩니다. FALSE 이면 도킹 레이아웃이 일반 창 목록과 관련 됩니다.
 
-*pBar교체*<br/>
-【인】 제거된 창을 대체하는 창에 대한 포인터입니다.
+*P바 대체*<br/>
+진행 제거 된 창을 대체 하는 창에 대 한 포인터입니다.
 
-## <a name="cbasepanesavestate"></a><a name="savestate"></a>CBasePane::저장 상태
+## <a name="cbasepanesavestate"></a><a name="savestate"></a> CBasePane:: SaveState
 
 레지스트리에 창의 상태를 저장합니다.
 
@@ -1780,25 +1781,25 @@ virtual BOOL SaveState(
 ### <a name="parameters"></a>매개 변수
 
 *lpszProfileName*<br/>
-【인】 프로필 이름입니다.
+진행 프로필 이름입니다.
 
 *nIndex*<br/>
-【인】 프로필 인덱스입니다.
+진행 프로필 인덱스입니다.
 
 *uiID*<br/>
-【인】 창 ID.
+진행 창 ID입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-TRUE 상태가 성공적으로 저장된 경우 그렇지 않으면 거짓.
+상태가 성공적으로 저장 되었으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-프레임워크는 창의 상태를 레지스트리에 저장할 때 이 메서드를 호출합니다. 파생 `SaveState` 클래스에서 재정의하여 추가 정보를 저장합니다.
+프레임 워크는 창의 상태를 레지스트리에 저장할 때이 메서드를 호출 합니다. `SaveState`파생 클래스에서를 재정의 하 여 추가 정보를 저장 합니다.
 
-## <a name="cbasepaneselectdefaultfont"></a><a name="selectdefaultfont"></a>CBasePane::선택기본글꼴
+## <a name="cbasepaneselectdefaultfont"></a><a name="selectdefaultfont"></a> CBasePane:: SelectDefaultFont
 
-지정된 장치 컨텍스트에 대한 기본 글꼴을 선택합니다.
+지정 된 장치 컨텍스트에 대 한 기본 글꼴을 선택 합니다.
 
 ```
 CFont* SelectDefaultFont(CDC* pDC);
@@ -1806,16 +1807,16 @@ CFont* SelectDefaultFont(CDC* pDC);
 
 ### <a name="parameters"></a>매개 변수
 
-*pDC*<br/>
-【인】 장치 컨텍스트입니다.
+*컨트롤러가*<br/>
+진행 장치 컨텍스트입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-기본 [CFont 클래스](../../mfc/reference/cfont-class.md) 개체에 대한 포인터입니다.
+기본 [Cfont 클래스](../../mfc/reference/cfont-class.md) 개체에 대 한 포인터입니다.
 
-## <a name="cbasepanesetcontrolbarstyle"></a><a name="setcontrolbarstyle"></a>CBasePane::세트컨트롤바스타일
+## <a name="cbasepanesetcontrolbarstyle"></a><a name="setcontrolbarstyle"></a> CBasePane:: SetControlBarStyle
 
-컨트롤 막대 스타일을 설정합니다.
+컨트롤 막대 스타일을 설정 합니다.
 
 ```
 virtual void SetControlBarStyle(DWORD dwNewStyle);
@@ -1824,18 +1825,18 @@ virtual void SetControlBarStyle(DWORD dwNewStyle);
 ### <a name="parameters"></a>매개 변수
 
 *dwNewStyle*<br/>
-【인】 다음과 같은 가능한 값의 비트-OR 조합입니다.
+진행 다음 가능한 값의 비트 OR 조합입니다.
 
 |스타일|Description|
 |-----------|-----------------|
-|AFX_CBRS_FLOAT|컨트롤 막대를 부동 으로 만듭니다.|
-|AFX_CBRS_AUTOHIDE|자동 숨기기 모드를 활성화합니다.|
-|AFX_CBRS_RESIZE|컨트롤 막대의 크기 조정을 활성화합니다. 이 플래그를 설정하면 도킹 가능한 창에 컨트롤 막대를 배치할 수 있습니다.|
-|AFX_CBRS_CLOSE|컨트롤 막대를 숨길 수 있습니다.|
+|AFX_CBRS_FLOAT|컨트롤 막대를 부동으로 만듭니다.|
+|AFX_CBRS_AUTOHIDE|자동 숨기기 모드를 사용 하도록 설정 합니다.|
+|AFX_CBRS_RESIZE|컨트롤 막대의 크기를 조정할 수 있습니다. 이 플래그가 설정 되 면 도킹 가능한 창에 컨트롤 막대를 배치할 수 있습니다.|
+|AFX_CBRS_CLOSE|컨트롤 막대를 숨길 수 있도록 합니다.|
 
-## <a name="cbasepanesetdockingmode"></a><a name="setdockingmode"></a>CBasePane::SetDocking 모드
+## <a name="cbasepanesetdockingmode"></a><a name="setdockingmode"></a> CBasePane:: SetDockingMode
 
-창에 대한 도킹 모드를 설정합니다.
+창에 대 한 도킹 모드를 설정 합니다.
 
 ```cpp
 void SetDockingMode(AFX_DOCK_TYPE dockModeNew);
@@ -1843,20 +1844,20 @@ void SetDockingMode(AFX_DOCK_TYPE dockModeNew);
 
 ### <a name="parameters"></a>매개 변수
 
-*독모드신규*<br/>
-【인】 창에 대한 새 도킹 모드를 지정합니다.
+*dockModeNew*<br/>
+진행 창에 대 한 새 도킹 모드를 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
-프레임워크는 표준 및 즉시 도킹 모드의 두 가지 도킹 모드를 지원합니다.
+프레임 워크는 표준 및 즉시 두 가지 도킹 모드를 지원 합니다.
 
-표준 도킹 모드에서는 드래그 사각형을 사용하여 창과 미니 프레임 창이 이동됩니다. 즉각적인 도킹 모드에서는 컨트롤 바와 미니 프레임 창이 컨텍스트에 따라 즉시 이동됩니다.
+표준 도킹 모드에서 창 및 미니 프레임 창은 끌기 사각형을 사용 하 여 이동 합니다. 즉시 도킹 모드에서는 컨트롤 막대와 미니 프레임 창이 즉시 해당 컨텍스트와 함께 이동 됩니다.
 
-처음에 도킹 모드는 [CDockingManager:m_dockModeGlobal](../../mfc/reference/cdockingmanager-class.md#m_dockmodeglobal)에 의해 전역적으로 정의됩니다. `SetDockingMode` 메서드를 사용하여 각 창에 대해 개별적으로 도킹 모드를 설정할 수 있습니다.
+처음에는 도킹 모드가 [CDockingManager:: m_dockModeGlobal](../../mfc/reference/cdockingmanager-class.md#m_dockmodeglobal)에서 전역적으로 정의 됩니다. 메서드를 사용 하 여 각 창에 대해 개별적으로 도킹 모드를 설정할 수 있습니다 `SetDockingMode` .
 
-## <a name="cbasepanesetpanealignment"></a><a name="setpanealignment"></a>CBasePane::세파네정렬
+## <a name="cbasepanesetpanealignment"></a><a name="setpanealignment"></a> CBasePane:: SetPaneAlignment
 
-창의 맞춤을 설정합니다.
+창에 대 한 맞춤을 설정 합니다.
 
 ```
 virtual void SetPaneAlignment(DWORD dwAlignment);
@@ -1864,25 +1865,25 @@ virtual void SetPaneAlignment(DWORD dwAlignment);
 
 ### <a name="parameters"></a>매개 변수
 
-*dw정렬*<br/>
-【인】 새 정렬을 지정합니다.
+*dwAlignment*<br/>
+진행 새 맞춤을 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
-일반적으로 프레임워크는 창이 주 프레임의 한 쪽에서 다른 쪽으로 도킹될 때 이 메서드를 호출합니다.
+일반적으로 프레임 워크는 주 프레임의 한 쪽에서 다른 쪽으로 창이 도킹 될 때이 메서드를 호출 합니다.
 
-다음 표에서는 *dwAlignment에*대해 가능한 값을 보여 주며 다음과 같은 값을 보여 주며 다음과 같은 값을 보여 주며 다음과 같은 값을 보여 주며 다음과 같은 값을 보여 주며 다음과
+다음 표에서는 *Dwalignment* 에 사용할 수 있는 값을 보여 줍니다.
 
 |값|맞춤|
 |-----------|---------------|
-|CBRS_ALIGN_LEFT|왼쪽 맞춤.|
-|CBRS_ALIGN_RIGHT|오른쪽 정렬.|
-|CBRS_ALIGN_TOP|상단 정렬.|
-|CBRS_ALIGN_BOTTOM|하단 정렬.|
+|CBRS_ALIGN_LEFT|왼쪽 맞춤입니다.|
+|CBRS_ALIGN_RIGHT|오른쪽 맞춤입니다.|
+|CBRS_ALIGN_TOP|위쪽 맞춤입니다.|
+|CBRS_ALIGN_BOTTOM|아래쪽 맞춤입니다.|
 
-## <a name="cbasepanesetpanestyle"></a><a name="setpanestyle"></a>CBasePane::SetPaneStyle
+## <a name="cbasepanesetpanestyle"></a><a name="setpanestyle"></a> CBasePane:: SetPaneStyle
 
-창의 스타일을 설정합니다.
+창 스타일을 설정 합니다.
 
 ```
 virtual void SetPaneStyle(DWORD dwNewStyle);
@@ -1891,17 +1892,17 @@ virtual void SetPaneStyle(DWORD dwNewStyle);
 ### <a name="parameters"></a>매개 변수
 
 *dwNewStyle*<br/>
-【인】 설정할 새 스타일을 지정합니다.
+진행 설정할 새 스타일을 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 afxres.h에 정의된 CBRS_ 스타일을 설정하는 데 사용할 수 있습니다. 창 스타일과 창 맞춤이 함께 저장되므로 다음과 같이 현재 선형과 결합하여 새 스타일을 설정합니다.
+이 메서드는 afxres.h에 정의 된 CBRS_ 스타일을 설정 하는 데 사용할 수 있습니다. 창 스타일과 창 맞춤이 함께 저장 되므로 다음과 같이 새 스타일을 현재 맞춤과 조합 하 여 설정 합니다.
 
 `pPane->SetPaneStyle (pPane->GetCurrentAlignment() | CBRS_TOOLTIPS);`
 
-## <a name="cbasepanesetwindowpos"></a><a name="setwindowpos"></a>CBasePane::SetWindowPos
+## <a name="cbasepanesetwindowpos"></a><a name="setwindowpos"></a> CBasePane:: SetWindowPos
 
-창의 크기, 위치 및 Z 순서를 변경합니다.
+창의 크기, 위치 및 Z 순서를 변경 합니다.
 
 ```
 virtual HDWP SetWindowPos(
@@ -1916,38 +1917,38 @@ virtual HDWP SetWindowPos(
 
 ### <a name="parameters"></a>매개 변수
 
-*pWnd인더*<br/>
-【인】 Z 순서로 `CWnd` 이 `CWnd` 개체 앞에 오는 개체를 식별합니다. 자세한 내용은 [CWnd::SetWindowPos](../../mfc/reference/cwnd-class.md#setwindowpos)를 참조하십시오.
+*pWndInsertAfter*<br/>
+진행 `CWnd` Z 순서에서이 개체 앞에 오는 개체를 식별 `CWnd` 합니다. 자세한 내용은 [CWnd:: SetWindowPos](../../mfc/reference/cwnd-class.md#setwindowpos)를 참조 하세요.
 
 *x*<br/>
-【인】 창의 왼쪽 위치를 지정합니다.
+진행 창 왼쪽의 위치를 지정 합니다.
 
-*Y*<br/>
-【인】 창 위쪽의 위치를 지정합니다.
+*y*<br/>
+진행 창 위쪽의 위치를 지정 합니다.
 
-*Cx*<br/>
-【인】 창의 너비를 지정합니다.
+*cx*<br/>
+진행 창의 너비를 지정 합니다.
 
-*Cy*<br/>
-【인】 창의 높이를 지정합니다.
+*cy*<br/>
+진행 창의 높이를 지정 합니다.
 
 *nFlags*<br/>
-【인】 크기 및 위치 옵션을 지정합니다. 자세한 내용은 [CWnd::SetWindowPos](../../mfc/reference/cwnd-class.md#setwindowpos)를 참조하십시오.
+진행 크기 및 위치 옵션을 지정 합니다. 자세한 내용은 [CWnd:: SetWindowPos](../../mfc/reference/cwnd-class.md#setwindowpos)를 참조 하세요.
 
-*HDWP*<br/>
-【인】 하나 이상의 창에 대한 크기 및 위치 정보가 포함된 구조를 처리합니다.
+*hdwp*<br/>
+진행 하나 이상의 창에 대 한 크기 및 위치 정보를 포함 하는 구조체에 대 한 핸들입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-업데이트된 지연된 창 위치 구조 또는 NULL에 대한 핸들입니다.
+업데이트 된 지연 된 창 위치 구조 또는 NULL에 대 한 핸들입니다.
 
 ### <a name="remarks"></a>설명
 
-*pWndInsertAfter가* NULL인 경우 이 메서드는 [CWnd::SetWindowPos](../../mfc/reference/cwnd-class.md#setwindowpos)를 호출합니다. *pWndInsertAfter가* NULL이 아닌 경우 `DeferWindowPos`이 메서드는 을 호출합니다.
+*PWndInsertAfter* 가 NULL 인 경우이 메서드는 [CWnd:: setwindowpos](../../mfc/reference/cwnd-class.md#setwindowpos)를 호출 합니다. *PWndInsertAfter* 가 NULL이 아닌 경우이 메서드는를 호출 `DeferWindowPos` 합니다.
 
-## <a name="cbasepaneshowpane"></a><a name="showpane"></a>CBasePane::쇼파인
+## <a name="cbasepaneshowpane"></a><a name="showpane"></a> CBasePane:: ShowPane
 
-창을 표시하거나 숨깁니다.
+창을 표시 하거나 숨깁니다.
 
 ```
 virtual void ShowPane(
@@ -1959,21 +1960,21 @@ virtual void ShowPane(
 ### <a name="parameters"></a>매개 변수
 
 *bShow*<br/>
-【인】 창을 표시할지(TRUE) 또는 숨기기(FALSE)할지 지정합니다.
+진행 창을 표시할지 (TRUE) 또는 숨길지 (FALSE) 지정 합니다.
 
 *bDelay*<br/>
-【인】 TRUE인 경우 도킹 레이아웃의 재계산이 지연됩니다.
+진행 TRUE 이면 도킹 레이아웃을 다시 계산 하는 작업이 지연 됩니다.
 
 *bActivate*<br/>
-【인】 TRUE이면 표시될 때 창이 활성화됩니다.
+진행 TRUE 이면 창이 표시 될 때 활성화 됩니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 창을 표시하거나 숨깁니다. 이 메서드는 `ShowWindow` 관련 도킹 관리자에게 창의 가시성 변경 사항을 통보하기 때문에 이 메서드를 대신 사용합니다.
+이 메서드는 창을 표시 하거나 숨깁니다. `ShowWindow`이 메서드는 창 표시의 변경 내용에 대해 관련 도킹 관리자에 게 알립니다. 대신이 메서드를 사용 합니다.
 
-[CBasePane::IsVisible를](#isvisible) 사용하여 창의 현재 가시성을 확인합니다.
+[Cbasepane:: IsVisible](#isvisible) 을 사용 하 여 창의 현재 표시 여부를 확인 합니다.
 
-## <a name="cbasepanestretchpane"></a><a name="stretchpane"></a>CBasePane::스트레치파인
+## <a name="cbasepanestretchpane"></a><a name="stretchpane"></a> CBasePane:: StretchPane
 
 창을 가로 또는 세로로 확장합니다.
 
@@ -1986,18 +1987,18 @@ virtual CSize StretchPane(
 ### <a name="parameters"></a>매개 변수
 
 *nLength*<br/>
-【인】 창을 늘릴 길이입니다.
+진행 창을 늘릴 길이입니다.
 
 *bVert*<br/>
-【인】 TRUE인 경우 창을 세로로 늘입니다. FALSE인 경우 창을 가로로 늘입니다.
+진행 TRUE 이면 창을 세로로 늘립니다. FALSE 이면 창을 가로로 늘립니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-늘어난 창의 크기입니다.
+확대 된 창의 크기입니다.
 
-## <a name="cbasepaneundockpane"></a><a name="undockpane"></a>CBasePane::도킹 팬 해제
+## <a name="cbasepaneundockpane"></a><a name="undockpane"></a> CBasePane:: UndockPane
 
-도크 사이트, 기본 슬라이더 또는 현재 도킹된 미니 프레임 창에서 창을 제거합니다.
+도킹 사이트, 기본 슬라이더 또는 현재 도킹 된 미니 프레임 창에서 창을 제거 합니다.
 
 ```
 virtual void UndockPane(BOOL bDelay=FALSE);
@@ -2006,15 +2007,15 @@ virtual void UndockPane(BOOL bDelay=FALSE);
 ### <a name="parameters"></a>매개 변수
 
 *bDelay*<br/>
-TRUE이면 도킹 레이아웃이 즉시 다시 계산되지 않습니다.
+TRUE 이면 도킹 레이아웃이 즉시 다시 계산 되지 않습니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 호출하여 창 상태를 조작하거나 도킹 레이아웃에서 창을 제외합니다.
+창 상태를 조작 하거나 도킹 레이아웃에서 창을 제외 하려면이 메서드를 호출 합니다.
 
-이 창을 계속 사용하려면 이 메서드를 호출하기 전에 [CBasePane::DockPane](#dockpane) 또는 [CBasePane::FloatPane를](#floatpane) 호출합니다.
+이 창을 계속 사용 하려는 경우이 메서드를 호출 하기 전에 [Cbasepane::D ockPane](#dockpane) 또는 [Cbasepane:: FloatPane](#floatpane) 를 호출 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

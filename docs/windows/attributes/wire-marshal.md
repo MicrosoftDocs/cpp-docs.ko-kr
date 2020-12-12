@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: wire_marshal'
 title: wire_marshal (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - wire_marshal attribute
 ms.assetid: 244f9d72-776d-4ebd-b60a-cee600a126b5
-ms.openlocfilehash: 04d6e7dcc887815b6f1b3becd67bd11bef4a81d7
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 69e3b85137d656e40cb77f9f75c361495c88f4a0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832883"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97118292"
 ---
 # <a name="wire_marshal"></a>wire_marshal
 
@@ -29,7 +30,7 @@ ms.locfileid: "88832883"
 
 ## <a name="example"></a>예제
 
-다음 코드에서는 **wire_marshal**를 사용 하는 방법을 보여 줍니다.
+다음 코드에서는 **wire_marshal** 를 사용 하는 방법을 보여 줍니다.
 
 ```cpp
 // cpp_attr_ref_wire_marshal.cpp

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: SUBTTL'
 title: SUBTTL
 ms.date: 12/16/2019
 f1_keywords:
@@ -6,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - SUBTTL directive
 ms.assetid: 927efadd-ec99-4de9-b64d-229bb2df3bf4
-ms.openlocfilehash: bd2d59a86a7b3a10ce2382d200f968d4572aa3db
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: b344aaf8375bff6afc62c621f83f797a3dd31ba7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75319166"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97125322"
 ---
 # <a name="subttl"></a>SUBTTL
 
 [부제](subtitle.md)를 참조 하세요.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **SUBTTL**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[MASM BNF 문법](masm-bnf-grammar.md)
-[지시문 참조](directives-reference.md)
+[지시문 참조](directives-reference.md) 
+ [MASM BNF 문법](masm-bnf-grammar.md)

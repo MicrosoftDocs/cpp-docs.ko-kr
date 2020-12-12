@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3483'
 title: 컴파일러 오류 C3483
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3483
 ms.assetid: 18b3a2c5-dfc9-4661-9653-08a5798474cf
-ms.openlocfilehash: 0d6c1467575e7fae7d5e4862f36e733a68210f8e
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 7c67e1e4d44c64fbcc023ee410dff2ecdd92c361
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74743096"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97113390"
 ---
 # <a name="compiler-error-c3483"></a>컴파일러 오류 C3483
 

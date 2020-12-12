@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 클래스 그리기 및 인쇄'
 title: 클래스 그리기 및 인쇄
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - printing classes [MFC]
 - graphics [MFC], graphical output classes
 ms.assetid: 2781c599-a038-462a-98ca-634b07ee22b0
-ms.openlocfilehash: 63f116cb9b71efaf174e841a76e9aab155ef863c
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: e338eebfbc0fa48cfc02a928c38078cebb0c4f7a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618955"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97118773"
 ---
 # <a name="drawing-and-printing-classes"></a>클래스 그리기 및 인쇄
 

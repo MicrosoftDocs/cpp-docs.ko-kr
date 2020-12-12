@@ -1,4 +1,5 @@
 ---
+description: 자세한 내용은 Command-Line Error D8021을 (를) 확인 하세요.
 title: 명령줄 오류 D8021
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - D8021
 ms.assetid: 8ec85441-d0d8-42d8-b777-1e4636ea9878
-ms.openlocfilehash: 9e4437fb6fe47c1a250383e2c44319aa06830b84
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: c851c4ecd22e6b0720f19aac3e2bc8eae0ab4050
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80196913"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97115705"
 ---
 # <a name="command-line-error-d8021"></a>명령줄 오류 D8021
 

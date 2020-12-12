@@ -1,4 +1,5 @@
 ---
+description: Move_iterator 클래스에 대해 자세히 알아보세요.
 title: move_iterator 클래스
 ms.date: 03/27/2019
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - std::move_iterator [C++], reference
 - std::move_iterator [C++], base
 ms.assetid: a5e5cdd8-a264-4c6b-9f9c-68b0e8edaab7
-ms.openlocfilehash: 55e0c23aaf085a132ecab739ec1d4ff1f11858a0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 59201364dd7aef2fa9b635ae234599401dd33107
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228195"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97115003"
 ---
 # <a name="move_iterator-class"></a>move_iterator 클래스
 
@@ -45,7 +46,7 @@ class move_iterator;
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[move_iterator](#move_iterator)|`move_iterator` 형식의 개체에 대한 생성자입니다.|
 
@@ -86,7 +87,7 @@ class move_iterator;
 
 **네임스페이스:** std
 
-## <a name="move_iteratorbase"></a><a name="base"></a>move_iterator:: base
+## <a name="move_iteratorbase"></a><a name="base"></a> move_iterator:: base
 
 이 `move_iterator`에 대한 저장된 반복기를 반환합니다.
 
@@ -98,7 +99,7 @@ RandomIterator base() const;
 
 이 멤버 함수는 저장된 반복기를 반환합니다.
 
-## <a name="move_iteratordifference_type"></a><a name="difference_type"></a>move_iterator::d ifference_type
+## <a name="move_iteratordifference_type"></a><a name="difference_type"></a> move_iterator::d ifference_type
 
 이 형식은 `difference_type` `move_iterator` **`typedef`** 반복기 특성을 기반으로 하는 이며 `difference_type` , 같은 의미로 사용 될 수 있습니다.
 
@@ -110,7 +111,7 @@ typedef typename iterator_traits<RandomIterator>::difference_type difference_typ
 
 이 형식은 반복기 특성 `typename iterator_traits<RandomIterator>::pointer`의 동의어입니다.
 
-## <a name="move_iteratoriterator_category"></a><a name="iterator_category"></a>move_iterator:: iterator_category
+## <a name="move_iteratoriterator_category"></a><a name="iterator_category"></a> move_iterator:: iterator_category
 
 이 형식은 `iterator_category` `move_iterator` **`typedef`** 반복기 특성을 기반으로 하는 이며 `iterator_category` , 같은 의미로 사용 될 수 있습니다.
 
@@ -122,7 +123,7 @@ typedef typename iterator_traits<RandomIterator>::iterator_category  iterator_ca
 
 이 형식은 반복기 특성 `typename iterator_traits<RandomIterator>::iterator_category`의 동의어입니다.
 
-## <a name="move_iteratoriterator_type"></a><a name="iterator_type"></a>move_iterator:: iterator_type
+## <a name="move_iteratoriterator_type"></a><a name="iterator_type"></a> move_iterator:: iterator_type
 
 `iterator_type` 형식은 클래스 템플릿 `move_iterator`에 대한 템플릿 매개 변수 `RandomIterator`를 기반으로 하며 해당 위치에 같은 의미로 사용될 수 있습니다.
 
@@ -134,7 +135,7 @@ typedef RandomIterator iterator_type;
 
 이 형식은 템플릿 매개 변수 `RandomIterator`의 동의어입니다.
 
-## <a name="move_iteratormove_iterator"></a><a name="move_iterator"></a>move_iterator:: move_iterator
+## <a name="move_iteratormove_iterator"></a><a name="move_iterator"></a> move_iterator:: move_iterator
 
 이동 반복기를 생성합니다. 매개 변수를 저장된 반복기로 사용합니다.
 
@@ -154,7 +155,7 @@ move_iterator(const move_iterator<Type>& right);
 
 첫 번째 생성자는 기본 생성자를 사용하여 저장된 반복기를 초기화합니다. 나머지 생성자는 `base.base()`를 사용하여 저장된 반복기를 초기화합니다.
 
-## <a name="move_iteratoroperator"></a><a name="op_add_eq"></a>move_iterator:: operator + =
+## <a name="move_iteratoroperator"></a><a name="op_add_eq"></a> move_iterator:: operator + =
 
 저장된 반복기가 새 현재 위치에서 요소를 가리키도록 저장된 반복기에 오프셋을 추가합니다. 그러면 연산자가 새 현재 요소를 이동시킵니다.
 
@@ -167,7 +168,7 @@ move_iterator& operator+=(difference_type _Off);
 *_Off*\
 새 현재 위치를 알기 위해 현재 위치에 추가하는 오프셋입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 새 현재 요소를 반환합니다.
 
@@ -175,7 +176,7 @@ move_iterator& operator+=(difference_type _Off);
 
 연산자는 저장 된 반복기에 *_Off* 를 추가 합니다. 그런 다음 **`*this`** 를 반환 합니다.
 
-## <a name="move_iteratoroperator-"></a><a name="operator-_eq"></a>move_iterator:: operator-=
+## <a name="move_iteratoroperator-"></a><a name="operator-_eq"></a> move_iterator:: operator-=
 
 지정된 수의 이전 요소를 이동합니다. 이 연산자는 저장된 반복기에서 오프셋을 뺍니다.
 
@@ -189,7 +190,7 @@ move_iterator& operator-=(difference_type _Off);
 
 연산자가 `*this += -_Off`를 평가합니다. 그런 다음 **`*this`** 를 반환 합니다.
 
-## <a name="move_iteratoroperator"></a><a name="op_add_add"></a>move_iterator:: operator + +
+## <a name="move_iteratoroperator"></a><a name="op_add_add"></a> move_iterator:: operator + +
 
 이 `move_iterator.`에 속하는 저장된 반복기를 단계적으로 증가시킵니다. 현재 요소는 사후 증가 연산자로 액세스합니다. 다음 요소는 사전 증가 연산자로 액세스합니다.
 
@@ -206,7 +207,7 @@ move_iterator operator++(int);
 
 두 번째 (postincrement) 연산자는의 복사본 **`*this`** 을 만들고를 계산 `++*this` 합니다. 그런 다음 복사본을 반환합니다.
 
-## <a name="move_iteratoroperator"></a><a name="op_add"></a>move_iterator:: operator +
+## <a name="move_iteratoroperator"></a><a name="op_add"></a> move_iterator:: operator +
 
 임의 요소 수만큼 앞으로 이동한 반복기 위치를 반환합니다.
 
@@ -220,7 +221,7 @@ move_iterator operator+(difference_type _Off) const;
 
 연산자는를 반환 `move_iterator(*this) +=` `_Off` 합니다.
 
-## <a name="move_iteratoroperator"></a><a name="op_at"></a>move_iterator:: operator []
+## <a name="move_iteratoroperator"></a><a name="op_at"></a> move_iterator:: operator []
 
 배열 인덱스에 `move iterator` 범위의 요소에 대한 액세스를 허용합니다.
 
@@ -234,7 +235,7 @@ reference operator[](difference_type _Off) const;
 
 연산자가 `(reference)*(*this + _Off)`를 반환합니다.
 
-## <a name="move_iteratoroperator--"></a><a name="operator--"></a>move_iterator:: operator--
+## <a name="move_iteratoroperator--"></a><a name="operator--"></a> move_iterator:: operator--
 
 사전 및 사후 감소 멤버 연산자는 저장된 반복기에서 감소를 수행합니다.
 
@@ -251,7 +252,7 @@ move_iterator operator--();
 
 두 번째 (postdecrement) 연산자는의 복사본 **`*this`** 을 만들고를 계산 `--*this` 합니다. 그런 다음 복사본을 반환합니다.
 
-## <a name="move_iteratoroperator-"></a><a name="operator-"></a>move_iterator:: operator-
+## <a name="move_iteratoroperator-"></a><a name="operator-"></a> move_iterator:: operator-
 
 저장된 반복기를 단계적으로 감소시키고 표시된 값을 반환합니다.
 
@@ -265,7 +266,7 @@ move_iterator operator-(difference_type _Off) const;
 
 연산자가 `move_iterator(*this) -= _Off`를 반환합니다.
 
-## <a name="move_iteratoroperator"></a><a name="op_star"></a>move_iterator:: operator *
+## <a name="move_iteratoroperator"></a><a name="op_star"></a> move_iterator:: operator *
 
 저장된 반복기를 역참조하고 값을 반환합니다. `rvalue reference`처럼 동작하며 이동 할당을 수행합니다. 연산자는 기본 반복기에서 현재 요소를 전송합니다. 뒤에 오는 요소는 새 현재 요소가 됩니다.
 
@@ -277,7 +278,7 @@ reference operator*() const;
 
 연산자가 `(reference)*base()`를 반환합니다.
 
-## <a name="move_iteratoroperator-gt"></a><a name="op_arrow"></a>move_iterator:: operator-&gt;
+## <a name="move_iteratoroperator-gt"></a><a name="op_arrow"></a> move_iterator:: operator-&gt;
 
 일반적인 `RandomIterator` `operator->`와 마찬가지로, 현재 요소에 속하는 필드에 대한 액세스를 제공합니다.
 
@@ -289,7 +290,7 @@ pointer operator->() const;
 
 연산자가 `&**this`를 반환합니다.
 
-## <a name="move_iteratorpointer"></a><a name="pointer"></a>move_iterator::p ointer
+## <a name="move_iteratorpointer"></a><a name="pointer"></a> move_iterator::p ointer
 
 형식은 `pointer` **`typedef`** 에 대 한 임의 반복기를 기반으로 하는 이며 `RandomIterator` `move_iterator` , 같은 의미로 사용 될 수 있습니다.
 
@@ -301,7 +302,7 @@ typedef RandomIterator  pointer;
 
 이 형식은 `RandomIterator`의 동의어입니다.
 
-## <a name="move_iteratorreference"></a><a name="reference"></a>move_iterator:: reference
+## <a name="move_iteratorreference"></a><a name="reference"></a> move_iterator:: reference
 
 형식은에 `reference` **`typedef`** 대 한을 기반 `value_type&&` 으로 `move_iterator` 하며와 같은 의미로 사용할 수 있습니다 `value_type&&` .
 
@@ -313,7 +314,7 @@ typedef value_type&& reference;
 
 이 형식은 rvalue 참조인 `value_type&&`과 동일한 의미입니다.
 
-## <a name="move_iteratorvalue_type"></a><a name="value_type"></a>move_iterator:: value_type
+## <a name="move_iteratorvalue_type"></a><a name="value_type"></a> move_iterator:: value_type
 
 이 형식은 `value_type` `move_iterator` **`typedef`** 반복기 특성을 기반으로 하는 이며 `value_type` , 같은 의미로 사용 될 수 있습니다.
 

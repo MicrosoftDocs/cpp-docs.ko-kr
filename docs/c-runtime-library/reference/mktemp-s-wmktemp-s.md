@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _mktemp_s, _wmktemp_s'
 title: _mktemp_s, _wmktemp_s
 ms.date: 4/2/2020
 api_name:
@@ -38,12 +39,12 @@ helpviewer_keywords:
 - wmktemp_s function
 - temporary files [C++]
 ms.assetid: 92a7e269-7f3d-4c71-bad6-14bc827a451d
-ms.openlocfilehash: 7834049fe8d28f7294976ac29a3daa663a06cff6
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: c1dcaa7817de70a3478e9bf8014b4ab223837c34
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919134"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114306"
 ---
 # <a name="_mktemp_s-_wmktemp_s"></a>_mktemp_s, _wmktemp_s
 
@@ -76,9 +77,9 @@ errno_t _wmktemp_s(
 파일 이름 패턴입니다.
 
 *sizeInChars*<br/>
-**_Mktemp_s**의 싱글바이트 문자에 있는 버퍼의 크기입니다. **_wmktemp_s**에서 null 종결자를 포함 하는 와이드 문자입니다.
+**_Mktemp_s** 의 싱글바이트 문자에 있는 버퍼의 크기입니다. **_wmktemp_s** 에서 null 종결자를 포함 하는 와이드 문자입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 이 두 함수는 모두 정상적으로 실행되면 0을 반환하고 실행 시 오류가 발생하면 오류 코드를 반환합니다.
 
@@ -86,15 +87,15 @@ errno_t _wmktemp_s(
 
 |*nameTemplate*|*sizeInChars*|반환 값|*NameTemplate* 의 새 값|
 |----------------|-------------------|----------------------|-------------------------------|
-|**N**|any|**EINVAL**|**N**|
+|**NULL**|any|**EINVAL**|**NULL**|
 |형식이 잘못 되었습니다 (올바른 형식에 대 한 설명 섹션 참조).|any|**EINVAL**|빈 문자열|
 |any|<= X의 수|**EINVAL**|빈 문자열|
 
-위의 오류 조건 중 하나라도 발생하는 경우, [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 는 **EINVAL** 로 설정 되 고 함수는 **EINVAL**를 반환 합니다.
+위의 오류 조건 중 하나라도 발생하는 경우, [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 는 **EINVAL** 로 설정 되 고 함수는 **EINVAL** 를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-**_Mktemp_s** 함수는 *nameTemplate* 인수를 수정 하 여 고유한 파일 이름을 만듭니다. 따라서 호출 후에 *nameTemplate* 포인터는 새 파일 이름을 포함 하는 문자열을 가리킵니다. **_mktemp_s** 은 자동으로 멀티 바이트 문자열 인수를 적절 하 게 처리 하 고, 런타임 시스템에서 현재 사용 중인 멀티 바이트 코드 페이지에 따라 멀티 바이트 문자 시퀀스를 인식 합니다. **_wmktemp_s** 은 **_mktemp_s**의 와이드 문자 버전입니다. **_wmktemp_s** 의 인수는 와이드 문자 문자열입니다. **_wmktemp_s** 에서 멀티 바이트 문자열을 처리 하지 않는 경우를 제외 하 고 **_wmktemp_s** 및 **_mktemp_s** 는 동일 하 게 동작 합니다.
+**_Mktemp_s** 함수는 *nameTemplate* 인수를 수정 하 여 고유한 파일 이름을 만듭니다. 따라서 호출 후에 *nameTemplate* 포인터는 새 파일 이름을 포함 하는 문자열을 가리킵니다. **_mktemp_s** 은 자동으로 멀티 바이트 문자열 인수를 적절 하 게 처리 하 고, 런타임 시스템에서 현재 사용 중인 멀티 바이트 코드 페이지에 따라 멀티 바이트 문자 시퀀스를 인식 합니다. **_wmktemp_s** 은 **_mktemp_s** 의 와이드 문자 버전입니다. **_wmktemp_s** 의 인수는 와이드 문자 문자열입니다. **_wmktemp_s** 에서 멀티 바이트 문자열을 처리 하지 않는 경우를 제외 하 고 **_wmktemp_s** 및 **_mktemp_s** 는 동일 하 게 동작 합니다.
 
 이러한 함수의 디버그 라이브러리 버전은 먼저 0xFE를 사용 하 여 버퍼를 채웁니다. 이 동작을 사용하지 않으려면 [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md)를 사용하세요.
 
@@ -106,9 +107,9 @@ errno_t _wmktemp_s(
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tmktemp_s**|**_mktemp_s**|**_mktemp_s**|**_wmktemp_s**|
 
-*NameTemplate* 인수에는 **baseXXXXXX**형식이 있습니다. 여기서 *base* 는 사용자가 제공 하는 새 파일 이름의 일부이 고 각 X는 **_mktemp_s**에서 제공 하는 문자에 대 한 자리 표시자입니다. *NameTemplate* 의 각 자리 표시자 문자는 대문자 X 여야 합니다 **_mktemp_s** . _mktemp_s *밑* 을 유지 하 고 첫 번째 후행 X를 영문자로 바꿉니다. **_mktemp_s** 는 다음 후행 X를 5 자리 값으로 바꿉니다. 이 값은 호출 프로세스 또는 다중 스레드 프로그램의 호출 스레드를 식별 하는 고유 번호입니다.
+*NameTemplate* 인수에는 **baseXXXXXX** 형식이 있습니다. 여기서 *base* 는 사용자가 제공 하는 새 파일 이름의 일부이 고 각 X는 **_mktemp_s** 에서 제공 하는 문자에 대 한 자리 표시자입니다. *NameTemplate* 의 각 자리 표시자 문자는 대문자 X 여야 합니다  . _mktemp_s *밑* 을 유지 하 고 첫 번째 후행 X를 영문자로 바꿉니다. **_mktemp_s** 는 다음 후행 X를 5 자리 값으로 바꿉니다. 이 값은 호출 프로세스 또는 다중 스레드 프로그램의 호출 스레드를 식별 하는 고유 번호입니다.
 
-**_Mktemp_s** 에 대 한 각 호출은 *nameTemplate*을 수정 합니다. 동일한 *nameTemplate* 인수를 사용 하는 동일한 프로세스 또는 스레드에서의 각 후속 호출에서 **_mktemp_s** 는 이전 호출에서 **_mktemp_s** 에서 반환 된 이름과 일치 하는 파일 이름을 확인 합니다. 지정 된 이름에 대 한 파일이 존재 하지 않는 경우 **_mktemp_s** 는 해당 이름을 반환 합니다. 이전에 반환 된 모든 이름에 대 한 파일이 존재 하는 경우 **_mktemp_s** 이전에 반환 된 이름에서 사용한 영문자를 ' a ' ~ ' z '부터 순서 대로 사용 가능한 다음 소문자로 대체 하 여 새 이름을 만듭니다. 예를 들어 *base* 가 다음과 같은 경우:
+**_Mktemp_s** 에 대 한 각 호출은 *nameTemplate* 을 수정 합니다. 동일한 *nameTemplate* 인수를 사용 하는 동일한 프로세스 또는 스레드에서의 각 후속 호출에서 **_mktemp_s** 는 이전 호출에서 **_mktemp_s** 에서 반환 된 이름과 일치 하는 파일 이름을 확인 합니다. 지정 된 이름에 대 한 파일이 존재 하지 않는 경우 **_mktemp_s** 는 해당 이름을 반환 합니다. 이전에 반환 된 모든 이름에 대 한 파일이 존재 하는 경우 **_mktemp_s** 이전에 반환 된 이름에서 사용한 영문자를 ' a ' ~ ' z '부터 순서 대로 사용 가능한 다음 소문자로 대체 하 여 새 이름을 만듭니다. 예를 들어 *base* 가 다음과 같은 경우:
 
 > **fn**
 
@@ -191,7 +192,7 @@ Unique filename is fnd03188
 Unique filename is fne03188
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [파일 처리](../../c-runtime-library/file-handling.md)<br/>
 [fopen, _wfopen](fopen-wfopen.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 인라인 어셈블리에서 레이블로 이동'
 title: 인라인 어셈블리에서 레이블로 점프
 ms.date: 08/30/2018
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - labels, in __asm blocks
 - jumping to labels in inline assembly
 ms.assetid: 36c18b97-8981-4631-9dfd-af6c14a04297
-ms.openlocfilehash: 0c411289745466bd6478cc82ab30e6a05be9cc25
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b4a32dd9baace77245f612d68b58f954a81075ab
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87192004"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97117720"
 ---
 # <a name="jumping-to-labels-in-inline-assembly"></a>인라인 어셈블리에서 레이블로 점프
 

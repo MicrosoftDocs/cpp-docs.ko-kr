@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: sizeof 연산자'
 title: sizeof 연산자
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - sizeof operator
 ms.assetid: 8bc3b6fb-54a1-4eb7-ada0-05f8c5efc532
-ms.openlocfilehash: 13e181bf84e359d433fbe951b1aa69320a1f0013
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d4af55697a1466829e81f5eb220ffba72bf73f6a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87186297"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97116888"
 ---
 # <a name="sizeof-operator"></a>sizeof 연산자
 
@@ -95,7 +96,7 @@ The size of the pointer is 4
 
 **`sizeof`** 연산자가 참조에 적용 되는 경우 결과는가 **`sizeof`** 개체 자체에 적용 된 것과 동일 합니다.
 
-크기 배열 배열이 구조체의 마지막 요소인 경우 **`sizeof`** 연산자는 배열 없이 구조체의 크기를 반환 합니다.
+크기가 지정되지 않은 배열이 구조체의 마지막 요소인 경우 **`sizeof`** 연산자는 배열 없는 구조체의 크기를 반환합니다.
 
 **`sizeof`** 연산자는 다음 형식의 식을 사용 하 여 배열의 요소 수를 계산 하는 데 종종 사용 됩니다.
 
@@ -106,4 +107,4 @@ sizeof array / sizeof array[0]
 ## <a name="see-also"></a>참조
 
 [단항 연산자가 있는 식](../cpp/expressions-with-unary-operators.md)<br/>
-[C++ 키워드](../cpp/keywords-cpp.md)
+[키워드](../cpp/keywords-cpp.md)

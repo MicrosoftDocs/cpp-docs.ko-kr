@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3386'
 title: 컴파일러 오류 C3386
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3386
 ms.assetid: 93fa8c33-0f10-402b-8eec-b0a217a1f8dc
-ms.openlocfilehash: efe882db447b9ebc69d02e3b10d9e484a3cfd8a8
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 5bc80abe7c43e30c4114d0f3ffd7733c8ea3e9d1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520450"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97115900"
 ---
 # <a name="compiler-error-c3386"></a>컴파일러 오류 C3386
 

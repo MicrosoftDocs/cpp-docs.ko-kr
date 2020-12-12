@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 단일 상속'
 title: 단일 상속
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - derived classes [C++], single base class
 - inheritance, single
 ms.assetid: 1cb946ed-8b1b-4cf1-bde0-d9cecbfdc622
-ms.openlocfilehash: 306f5eb3624797ca48848ef0a8f69625e0f6b574
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a750cf66074612ce40f9a4fa03d8453ae2decfef
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87186362"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97116953"
 ---
 # <a name="single-inheritance"></a>단일 상속
 
@@ -56,7 +57,7 @@ class PaperbackBook : public Book {};
 > [!NOTE]
 > 방향이 있는 비순환 그래프는 단일 상속만을 고유하게 나타내지 않습니다. 즉, 다중 상속 그래프를 나타내는 데 사용되기도 합니다.
 
-상속에서 파생 클래스는 기본 클래스의 멤버와 새로 추가하는 멤버를 포함합니다. 따라서 파생 클래스는 기본 클래스의 멤버를 참조할 수 있습니다(해당 멤버가 파생 클래스에서 다시 정의되는 경우는 제외). 이러한 멤버가 파생 클래스에서 다시 정의된 경우에는 범위 결정 연산자(`::`)를 사용하여 직접 또는 간접 기본 클래스의 멤버를 참조할 수 있습니다. 다음 예를 살펴보세요.
+상속에서 파생 클래스는 기본 클래스의 멤버와 새로 추가하는 멤버를 포함합니다. 따라서 파생 클래스는 기본 클래스의 멤버를 참조할 수 있습니다(해당 멤버가 파생 클래스에서 다시 정의되는 경우는 제외). 이러한 멤버가 파생 클래스에서 다시 정의된 경우에는 범위 결정 연산자(`::`)를 사용하여 직접 또는 간접 기본 클래스의 멤버를 참조할 수 있습니다. 다음 예제를 고려해 보세요.
 
 ```cpp
 // deriv_SingleInheritance2.cpp

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Windows 소켓: 바이트 순서 지정'
 title: 'Windows 소켓: 바이트 순서 지정'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - sockets [MFC], byte order issues
 - Windows Sockets [MFC], byte order issues
 ms.assetid: 8a787a65-f9f4-4002-a02f-ac25a5dace5d
-ms.openlocfilehash: f00936f3de07df8c1e4d9df1c678b2cfd5f3e3ad
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d143967fdcc9b4d1dac772bf0fe25b67d70aef53
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226804"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97118656"
 ---
 # <a name="windows-sockets-byte-ordering"></a>Windows 소켓: 바이트 순서 지정
 
@@ -23,12 +24,12 @@ ms.locfileid: "87226804"
 
 컴퓨터 아키텍처 마다 다른 바이트 순서를 사용 하 여 데이터를 저장 하는 경우가 있습니다. 예를 들어 Intel 기반 컴퓨터는 Macintosh (Motorola) 컴퓨터의 반대 순서로 데이터를 저장 합니다. "작은 Endian" 라는 Intel 바이트 순서는 네트워크 표준 "빅 Endian" 순서의 반대 이기도 합니다. 다음 표에서는 이러한 용어에 대해 설명 합니다.
 
-### <a name="big--and-little-endian-byte-ordering"></a>빅 및 거의 Endian 바이트 순서 지정
+### <a name="big--and-little-endian-byte-ordering"></a>빅 및 Little-Endian 바이트 순서 지정
 
 |바이트 순서 지정|의미|
 |-------------------|-------------|
-|빅 Endian|가장 중요 한 바이트는 단어의 왼쪽 끝에 있습니다.|
-|작은 Endian|가장 중요 한 바이트는 단어의 오른쪽 끝에 있습니다.|
+|Big-Endian|가장 중요 한 바이트는 단어의 왼쪽 끝에 있습니다.|
+|Little-Endian|가장 중요 한 바이트는 단어의 오른쪽 끝에 있습니다.|
 
 일반적으로 네트워크를 통해 보내고 받는 데이터에 대 한 바이트 순서 변환에 대해 걱정할 필요가 없지만 바이트 순서를 변환 해야 하는 경우가 있습니다.
 
@@ -54,14 +55,14 @@ ms.locfileid: "87226804"
 
 [Casyncsocket](../mfc/reference/casyncsocket-class.md)을 사용 하려면 필요한 바이트 순서 변환을 직접 관리 해야 합니다. Windows 소켓은 "빅 Endian" 바이트 순서 모델을 표준화 하 고이 순서와 다른 순서 간에 변환 하는 함수를 제공 합니다. 그러나 [CSocket](../mfc/reference/csocket-class.md)과 함께 사용 하는 [CArchive](../mfc/reference/carchive-class.md)는 반대 ("작은 Endian") 순서를 사용 하지만 `CArchive` 바이트 순서 변환에 대 한 세부 정보를 처리 합니다. 응용 프로그램에서이 표준 순서를 사용 하거나 Windows 소켓 바이트 순서 변환 함수를 사용 하 여 코드를 더 이식 가능 하 게 만들 수 있습니다.
 
-MFC 소켓을 사용 하는 이상적인 사례는 두 end에서 모두 MFC를 사용 하 여 통신의 양쪽 끝을 작성 하는 경우입니다. FTP 서버와 같은 비 MFC 응용 프로그램과 통신 하는 응용 프로그램을 작성 하는 경우 Windows 소켓 변환 루틴 **ntohs**, **ntohl**, **htons**및 **htonl**를 사용 하 여 보관 개체에 데이터를 전달 하기 전에 직접 바이트 교체를 관리 해야 합니다. 비 MFC 응용 프로그램과 통신 하는 데 사용 되는 이러한 함수의 예는이 문서의 뒷부분에 나옵니다.
+MFC 소켓을 사용 하는 이상적인 사례는 두 end에서 모두 MFC를 사용 하 여 통신의 양쪽 끝을 작성 하는 경우입니다. FTP 서버와 같은 비 MFC 응용 프로그램과 통신 하는 응용 프로그램을 작성 하는 경우 Windows 소켓 변환 루틴 **ntohs**, **ntohl**, **htons** 및 **htonl** 를 사용 하 여 보관 개체에 데이터를 전달 하기 전에 직접 바이트 교체를 관리 해야 합니다. 비 MFC 응용 프로그램과 통신 하는 데 사용 되는 이러한 함수의 예는이 문서의 뒷부분에 나옵니다.
 
 > [!NOTE]
 > 통신의 다른 쪽 끝이 MFC 응용 프로그램이 아닌 경우 수신기가이를 처리할 수 없기 때문에에서 파생 된 c + + 개체를 보관으로 스트리밍하는 것도 피해 야 합니다 `CObject` . [Windows 소켓: 보관 파일에 소켓 사용](../mfc/windows-sockets-using-sockets-with-archives.md)에 대 한 참고를 참조 하세요.
 
 바이트 주문에 대 한 자세한 내용은 Windows SDK에서 사용할 수 있는 Windows 소켓 사양을 참조 하십시오.
 
-## <a name="a-byte-order-conversion-example"></a>바이트 순서 변환 예
+## <a name="a-byte-order-conversion-example"></a>Byte-Order 변환 예
 
 다음 예제에서는 보관을 사용 하는 개체에 대 한 serialization 함수를 보여 줍니다 `CSocket` . 또한 Windows 소켓 API에서 바이트 순서 변환 함수를 사용 하는 방법을 보여 줍니다.
 
@@ -81,7 +82,7 @@ C + +에서은 **`struct`** 기본적으로 클래스와 동일 합니다. 구�
 
 이 예제에서는 한 쪽 끝에 비 MFC 서버 응용 프로그램의 바이트 순서와 `CArchive` 다른 쪽 end의 mfc 클라이언트 응용 프로그램에서 사용 되는의 차이를 명확 하 게 하기 때문에 데이터의 바이트 순서 변환을 호출 합니다. 이 예에서는 Windows 소켓이 제공 하는 몇 가지 바이트 순서 변환 함수를 보여 줍니다. 다음 표에서는 이러한 함수에 대해 설명 합니다.
 
-### <a name="windows-sockets-byte-order-conversion-functions"></a>Windows 소켓 바이트 순서 변환 함수
+### <a name="windows-sockets-byte-order-conversion-functions"></a>Windows 소켓 Byte-Order 변환 함수
 
 |함수|용도|
 |--------------|-------------|

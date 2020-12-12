@@ -1,20 +1,21 @@
 ---
+description: '자세히 알아보기: 레코드 뷰 클래스의 기능 (MFC Data Access)'
 title: 레코드 뷰 클래스의 기능  (MFC Data Access)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - record views, classes
 - record view classes
 ms.assetid: e7b2820f-09c4-483f-83c0-317e8be42bdf
-ms.openlocfilehash: 62597a3eb3f7a7e779ca57c9781565176df568d4
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: bf2a0bd1a609fcb29eb945f60ab22c4632addf1b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213436"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97116537"
 ---
 # <a name="features-of-record-view-classes--mfc-data-access"></a>레코드 뷰 클래스의 기능  (MFC Data Access)
 
-[CFormView](../mfc/reference/cformview-class.md)클래스를 사용 하 여 폼 기반 데이터 액세스 프로그래밍을 수행할 수 있지만 일반적으로 [CRecordView](../mfc/reference/crecordview-class.md) 는에서 파생 하는 것이 더 좋은 클래스입니다. `CFormView` 기능 외에도 다음을 `CRecordView`.
+[CFormView](../mfc/reference/cformview-class.md)클래스를 사용 하 여 폼 기반 데이터 액세스 프로그래밍을 수행할 수 있지만 일반적으로 [CRecordView](../mfc/reference/crecordview-class.md) 는에서 파생 하는 것이 더 좋은 클래스입니다. 해당 기능 외에도 `CFormView` `CRecordView` 다음을 수행 합니다.
 
 - 양식 컨트롤과 연결 된 레코드 집합 개체 간의 DDX (대화 상자 데이터 교환)를 제공 합니다.
 
@@ -26,5 +27,5 @@ ms.locfileid: "80213436"
 
 ## <a name="see-also"></a>참고 항목
 
-[레코드 뷰(MFC Data Access)](../data/record-views-mfc-data-access.md)<br/>
+[레코드 뷰 (MFC Data Access)](../data/record-views-mfc-data-access.md)<br/>
 [ODBC 드라이버 목록](../data/odbc/odbc-driver-list.md)

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 방법: 기호 관리'
 title: '방법: 기호 관리'
 ms.date: 02/14/2019
 f1_keywords:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - calculated symbols
 - shared symbols
 ms.assetid: 26541832-8dba-4177-b642-e08f94502ea7
-ms.openlocfilehash: 67a5c801c13038e7215473edecc2d41a8f7086e0
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 2a7bdc6994bfcdadc9b7d1d5b98350fcd47ad6fe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91505722"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97118227"
 ---
 # <a name="how-to-manage-symbols"></a>방법: 기호 관리
 
@@ -145,7 +146,7 @@ ms.locfileid: "91505722"
 
 ### <a name="to-change-an-unassigned-symbol"></a>할당되지 않은 기호를 변경하려면
 
-1. **이름** 상자에서 할당 되지 않은 기호를 선택 하 고 **변경**을 선택 합니다.
+1. **이름** 상자에서 할당 되지 않은 기호를 선택 하 고 **변경** 을 선택 합니다.
 
 1. **기호 변경** 대화 상자에서 제공 하는 상자에서 기호의 이름 또는 값을 편집 합니다.
 
@@ -154,7 +155,7 @@ ms.locfileid: "91505722"
 
 ### <a name="to-delete-an-unassigned-unused-symbol"></a>할당되지 않은(사용되지 않은) 기호를 삭제하려면
 
-**리소스 기호** 대화 상자에서 삭제 하려는 기호를 선택 하 고 **삭제**를 선택 합니다.
+**리소스 기호** 대화 상자에서 삭제 하려는 기호를 선택 하 고 **삭제** 를 선택 합니다.
 
 > [!NOTE]
 > 리소스 파일에서 사용 되지 않은 기호를 삭제 하기 전에 해당 기호를 프로그램의 다른 위치 또는 컴파일 시간에 포함 된 리소스 파일에서 사용 하지 않는지 확인 합니다.
@@ -165,7 +166,7 @@ ms.locfileid: "91505722"
 
 읽기 전용 기호 정의를 사용하려는 한 가지 이유는 여러 프로젝트에서 공유하려고 하는 기호 파일 때문입니다.
 
-또한 단순 정수 대신 식을 사용하여 기호 값을 정의하는 기호 정의를 사용하는 기존 리소스가 있는 경우에 포함된 기호 파일을 사용할 수 있습니다. 다음은 그 예입니다.
+또한 단순 정수 대신 식을 사용하여 기호 값을 정의하는 기호 정의를 사용하는 기존 리소스가 있는 경우에 포함된 기호 파일을 사용할 수 있습니다. 예를 들어:
 
 ```cpp
 #define   IDC_CONTROL1 2100
@@ -200,7 +201,7 @@ ms.locfileid: "91505722"
 
    이러한 방식으로 포함 된 파일의 기호는 리소스 파일을 열 때마다 평가 되지만 파일을 저장할 때 디스크에서 대체 되지 않습니다.
 
-1. **확인**을 선택합니다.
+1. **확인** 을 선택합니다.
 
 ### <a name="to-change-the-name-of-the-resource-symbol-header-file"></a>리소스 기호 헤더 파일의 이름을 변경하려면
 

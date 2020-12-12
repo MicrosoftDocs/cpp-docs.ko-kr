@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2842'
 title: 컴파일러 오류 C2842
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2842
 ms.assetid: 8674f08d-9f50-46ad-9229-abc6b74fa0e5
-ms.openlocfilehash: 99b2c86d1e914c9425c2664d4e858bba6cb99486
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f086c6c5fcfa451f320d96470615e4f5f4d5674a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62382946"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97119985"
 ---
 # <a name="compiler-error-c2842"></a>컴파일러 오류 C2842
 
-> '*클래스*': 관리 되는 또는 WinRT 형식에는 고유한 'operator new'를 정의할 수 없습니다 또는 operator delete'
+> '*class*': 관리 되는 형식 또는 WinRT 형식은 고유한 ' operator new ' 또는 ' operator delete '를 정의할 수 없습니다.
 
 ## <a name="remarks"></a>설명
 
-직접 정의할 수 있습니다 **new 연산자** 또는 **delete 연산자** 네이티브 힙의 메모리 할당을 관리할 수 있습니다. 그러나 참조 클래스는 관리되는 힙에만 할당되기 때문에 이러한 연산자를 정의할 수 없습니다.
+사용자 고유의 **operator new** 또는 **operator delete** 를 정의 하 여 네이티브 힙의 메모리 할당을 관리할 수 있습니다. 그러나 참조 클래스는 관리되는 힙에만 할당되기 때문에 이러한 연산자를 정의할 수 없습니다.
 
-자세한 내용은 [사용자 정의 연산자 (C++/CLI)](../../dotnet/user-defined-operators-cpp-cli.md)합니다.
+자세한 내용은 [사용자 정의 연산자 (c + +/cli)](../../dotnet/user-defined-operators-cpp-cli.md)를 참조 하세요.
 
 ## <a name="example"></a>예제
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CVTRES 심각한 오류 CVT1100'
 title: CVTRES 심각한 오류 CVT1100
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - CVT1100
 ms.assetid: 886e88dd-5818-4b5f-84f2-d2a3d75f0aaf
-ms.openlocfilehash: b7e67df24d41b1e8826673146fcc27fd93d143fd
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e54a3aeaf8b0b7955ab7e9cb7558c97a57fc95e0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80196549"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97119738"
 ---
 # <a name="cvtres-fatal-error-cvt1100"></a>CVTRES 심각한 오류 CVT1100
 

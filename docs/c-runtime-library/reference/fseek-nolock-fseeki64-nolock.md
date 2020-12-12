@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _fseek_nolock, _fseeki64_nolock'
 title: _fseek_nolock, _fseeki64_nolock
 ms.date: 4/2/2020
 api_name:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - _fseeki64_nolock function
 - seek file pointers
 ms.assetid: 2dd4022e-b715-462b-b935-837561605a02
-ms.openlocfilehash: c09f9964416785131c0c928c214a0de5ec6dd859
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 3a8701dcb7380bee31d1d04aa92209169682e54d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910165"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114263"
 ---
 # <a name="_fseek_nolock-_fseeki64_nolock"></a>_fseek_nolock, _fseeki64_nolock
 
@@ -68,12 +69,12 @@ int _fseeki64_nolock(
 **FILE** 구조체에 대한 포인터입니다.
 
 *offset*<br/>
-*origin*부터의 바이트 수입니다.
+*origin* 부터의 바이트 수입니다.
 
 *원본*<br/>
 초기 위치입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 각각 [fseek](fseek-fseeki64.md) 및 [_fseeki64](fseek-fseeki64.md)와 동일 합니다.
 
@@ -85,13 +86,13 @@ int _fseeki64_nolock(
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|필수 헤더|
+|함수|필수 헤더|
 |--------------|---------------------|
 |**_fseek_nolock**, **_fseeki64_nolock**|\<stdio.h>|
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [스트림 I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [ftell, _ftelli64](ftell-ftelli64.md)<br/>

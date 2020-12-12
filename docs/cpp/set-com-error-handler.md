@@ -1,19 +1,20 @@
-﻿---
+---
+description: '다음에 대 한 자세한 정보: _set_com_error_handler'
 title: _set_com_error_handler
 ms.date: 11/04/2016
 helpviewer_keywords:
 - _set_com_error_handler function
 ms.assetid: 49fe4fca-5e37-4d83-abaf-15be5ce37f94
-ms.openlocfilehash: debad733f351c710ada342e29fa95a4d1ff03b7d
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 88c59f30276089f28dc6e40b1ab5829bf68a7b4a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81749801"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97116966"
 ---
 # <a name="_set_com_error_handler"></a>_set_com_error_handler
 
-COM 오류 처리에 사용되는 기본 함수를 대체합니다. **_set_com_error_handler** Microsoft에 만전을 기하고 있습니다.
+COM 오류 처리에 사용되는 기본 함수를 대체합니다. **_set_com_error_handler** 는 Microsoft 전용입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -31,15 +32,15 @@ void __stdcall _set_com_error_handler(
 *pHandler*<br/>
 대체 함수에 대한 포인터입니다.
 
-*Hr*<br/>
-HRESULT 정보.
+*시간*<br/>
+HRESULT 정보입니다.
 
-*페르인포*<br/>
+*perrinfo*<br/>
 `IErrorInfo` 개체입니다.
 
 ## <a name="remarks"></a>설명
 
-기본적으로 [_com_raise_error](../cpp/com-raise-error.md) 모든 COM 오류를 처리합니다. **_set_com_error_handler** 사용하여 사용자 고유의 오류 처리 함수를 호출하여 이 동작을 변경할 수 있습니다.
+기본적으로 [_com_raise_error](../cpp/com-raise-error.md) 는 모든 com 오류를 처리 합니다. 사용자 고유의 오류 처리 함수를 호출 하 **_set_com_error_handler** 를 사용 하 여이 동작을 변경할 수 있습니다.
 
 대체 함수에는 `_com_raise_error`의 시그니처에 해당하는 시그니처가 있어야 합니다.
 
@@ -86,10 +87,10 @@ Exception raised: Unable to establish the connection!
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<comdef.h>
+**헤더:**\<comdef.h>
 
-**Lib:** **/Zc:wchar_t** 컴파일러 옵션이 지정되면(기본값) comsuppw.lib 또는 comsuppwd.lib를 사용합니다. **/Zc:wchar_t 컴파일러** 옵션을 지정하면 comsupp.lib를 사용합니다. IDE에서 이 옵션을 설정하는 방법을 포함하여 자세한 내용은 [/Zc:wchar_t(wchar_t 네이티브 유형)을](../build/reference/zc-wchar-t-wchar-t-is-native-type.md)참조하십시오.
+**Lib:** **/Zc: wchar_t** 컴파일러 옵션 (기본값)을 지정 하는 경우 comsuppw 또는 comsuppw를 사용 합니다. **/Zc: wchar_t-** 컴파일러 옵션이 지정 된 경우 comsupp.lib를 사용 합니다. IDE에서이 옵션을 설정 하는 방법을 비롯 한 자세한 내용은 [/zc: wchar_t (Wchar_t 네이티브 형식)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md)를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [컴파일러 COM 전역 함수](../cpp/compiler-com-global-functions.md)

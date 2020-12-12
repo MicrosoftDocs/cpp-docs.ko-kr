@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 디버깅 및 오류 보고 전역 함수'
 title: 디버깅 및 오류 보고 전역 함수
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - functions [ATL], error reporting
 ms.assetid: 11339c02-98cd-428d-b3b9-7deeb155a6a3
-ms.openlocfilehash: 10aca6862f6989c126981a9f6437c61f1c07bdae
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 3c729a7d8e870ce7b104ca53cd83bf8c41112dea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90742790"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97139986"
 ---
 # <a name="debugging-and-error-reporting-global-functions"></a>디버깅 및 오류 보고 전역 함수
 
 이러한 함수는 유용한 디버깅 및 추적 기능을 제공 합니다.
 
-|속성|Description|
+|Name|설명|
 |-|-|
 |[AtlHresultFromLastError](debugging-and-error-reporting-global-functions.md#atlhresultfromlasterror)|`GetLastError`HRESULT 형식의 오류 코드를 반환 합니다.|
 |[AtlHresultFromWin32](debugging-and-error-reporting-global-functions.md#atlhresultfromwin32)|Win32 오류 코드 HRESULT로 변환합니다.|
@@ -145,7 +146,7 @@ HRESULT WINAPI AtlReportError(
 
 ### <a name="return-value"></a>반환 값
 
-*Hres* 매개 변수가 0이 아니면 *hres*의 값을 반환 합니다. *Hres* 가 0 이면 처음 4 개 버전의가 `AtlReportError` DISP_E_EXCEPTION 반환 됩니다. 마지막 두 버전은 매크로 **MAKE_HRESULT (1, FACILITY_ITF,** )의 결과를 반환 합니다 `nID` **)**.
+*Hres* 매개 변수가 0이 아니면 *hres* 의 값을 반환 합니다. *Hres* 가 0 이면 처음 4 개 버전의가 `AtlReportError` DISP_E_EXCEPTION 반환 됩니다. 마지막 두 버전은 매크로 **MAKE_HRESULT (1, FACILITY_ITF,** )의 결과를 반환 합니다 `nID` .
 
 ### <a name="remarks"></a>설명
 

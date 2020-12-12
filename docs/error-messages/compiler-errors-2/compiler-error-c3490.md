@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3490'
 title: 컴파일러 오류 C3490
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3490
 ms.assetid: 7638559a-fd06-4527-a9c1-0c8ae68b3123
-ms.openlocfilehash: 76729f49358e2a05b425730517e88ba14f2909c6
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 03896872fd0c683e3011aa7edbacb6a0a01ceaef
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90685726"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97113365"
 ---
 # <a name="compiler-error-c3490"></a>컴파일러 오류 C3490
 

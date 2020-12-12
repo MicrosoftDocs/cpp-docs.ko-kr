@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _set_printf_count_output'
 title: _set_printf_count_output
 ms.date: 11/04/2016
 api_name:
@@ -27,16 +28,16 @@ helpviewer_keywords:
 - set_printf_count_output function
 - _set_printf_count_output function
 ms.assetid: d8259ec5-764e-42d0-9169-72172e95163b
-ms.openlocfilehash: 0d53b4e4c56a69582a4eb517fa1a5c9e10cd7d2f
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 455c4f0e49ce111853145a05d78efabcd76386fe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70948413"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114249"
 ---
 # <a name="_set_printf_count_output"></a>_set_printf_count_output
 
-[Printf, _printf_l, wprintf, _printf_l](printf-printf-l-wprintf-wprintf-l.md)함수에서 **% n** 형식의 지원을 사용 하거나 사용 하지 않도록 설정 합니다.
+[Printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)family 함수에서 **% n** 형식의 지원을 사용 하거나 사용 하지 않도록 설정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -57,7 +58,7 @@ int _set_printf_count_output(
 
 ## <a name="remarks"></a>설명
 
-보안상의 이유로 **printf** 와 모든 변형에서 **% n** 서식 지정자에 대 한 지원은 기본적으로 사용 되지 않습니다. **Printf** 형식 사양에 **% n** 이 있으면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 하는 것이 기본 동작입니다. 0이 아닌 인수를 사용 하 여 **_set_printf_count_output** 를 호출 하면 [Format 사양 구문: Printf 및 wprintf 함수](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)에 설명 된 대로 **printf**제품군 함수가 **% n** 을 해석 합니다.
+보안상의 이유로 **printf** 와 모든 변형에서 **% n** 서식 지정자에 대 한 지원은 기본적으로 사용 되지 않습니다. **Printf** 형식 사양에 **% n** 이 있으면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 하는 것이 기본 동작입니다. 0이 아닌 인수를 사용 하 여 **_set_printf_count_output** 를 호출 하면 [형식 사양 구문: Printf 및 wprintf 함수](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)에 설명 된 대로 **printf** 제품군 함수가 **% n** 을 해석 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -65,7 +66,7 @@ int _set_printf_count_output(
 |-------------|---------------------|
 |**_set_printf_count_output**|\<stdio.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
@@ -94,6 +95,6 @@ int main()
 i = 5
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [_get_printf_count_output](get-printf-count-output.md)<br/>
