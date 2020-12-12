@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: MFC 클래스 개체의 형식 캐스팅'
 title: MFC 클래스 개체의 형식 캐스팅
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - casting types [MFC]
 - macros [MFC], casting pointers
 ms.assetid: e138465e-c35f-4e84-b788-bd200ccf2f0e
-ms.openlocfilehash: e3702ced83021e42ac6bf71a78efc51fa07b8be9
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: bec49afc0050aa32c6e5436e5efca9b0dab30709
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840494"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97218673"
 ---
 # <a name="type-casting-of-mfc-class-objects"></a>MFC 클래스 개체의 형식 캐스팅
 
@@ -42,7 +43,7 @@ DYNAMIC_DOWNCAST(class, pointer)
 클래스의 이름입니다.
 
 *놓고*<br/>
-*클래스*형식의 개체에 대 한 포인터로 캐스팅 될 포인터입니다.
+*클래스* 형식의 개체에 대 한 포인터로 캐스팅 될 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -68,7 +69,7 @@ STATIC_DOWNCAST(class_name, pobject)
 
 ### <a name="remarks"></a>설명
 
-*pobject* 은 NULL 이거나, *class_name*에서 직접 파생 되거나 간접적으로 파생 되는 클래스의 개체를 가리켜야 합니다. _DEBUG 전처리기 기호가 정의 된 응용 프로그램의 빌드에서는 *pobject* 가 NULL이 아니거나 *class_name* 매개 변수에 지정 된 클래스의 "종류"가 아닌 개체를 가리키는 경우 ( [CObject:: IsKindOf](../../mfc/reference/cobject-class.md#iskindof)참조)를 어설션 합니다. **_DEBUG** 되지 않은 빌드에서는 매크로는 형식 검사 없이 캐스트를 수행 합니다.
+*pobject* 은 NULL 이거나, *class_name* 에서 직접 파생 되거나 간접적으로 파생 되는 클래스의 개체를 가리켜야 합니다. _DEBUG 전처리기 기호가 정의 된 응용 프로그램의 빌드에서는 *pobject* 가 NULL이 아니거나 *class_name* 매개 변수에 지정 된 클래스의 "종류"가 아닌 개체를 가리키는 경우 ( [CObject:: IsKindOf](../../mfc/reference/cobject-class.md#iskindof)참조)를 어설션 합니다. **_DEBUG** 되지 않은 빌드에서는 매크로는 형식 검사 없이 캐스트를 수행 합니다.
 
 *Class_name* 매개 변수에 지정 된 클래스는에서 파생 되어야 `CObject` 하며, CObject [클래스: cobject에서 클래스 파생](../../mfc/deriving-a-class-from-cobject.md)문서에 설명 된 대로 DECLARE_DYNAMIC 및 IMPLEMENT_DYNAMIC, DECLARE_DYNCREATE 및 IMPLEMENT_DYNCREATE, DECLARE_SERIAL 및 IMPLEMENT_SERIAL 매크로를 사용 해야 합니다.
 
