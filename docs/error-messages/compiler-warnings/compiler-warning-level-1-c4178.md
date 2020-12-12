@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4178'
 title: 컴파일러 경고(수준 1) C4178
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4178
 ms.assetid: 2c2c8f97-a5c4-47cd-8dd2-beea172613f3
-ms.openlocfilehash: e8d20da1ec8ca6ef4a06fdd1d8417d1cb9706947
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 87876a70f638c3c8d98c20a3297482d317256d78
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87196645"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97266756"
 ---
 # <a name="compiler-warning-level-1-c4178"></a>컴파일러 경고(수준 1) C4178
 

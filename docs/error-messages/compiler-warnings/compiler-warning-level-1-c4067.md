@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4067'
 title: 컴파일러 경고 (수준 1) C4067
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4067
 ms.assetid: 1d10353e-8cd5-4b01-9184-a06189b965a4
-ms.openlocfilehash: 8bdd16f5c3182e4217e195475bdb4a9a0f60fa6f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: b11167ba5648e71be16197ecfb418d92cb5d879a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80164120"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97267666"
 ---
 # <a name="compiler-warning-level-1-c4067"></a>컴파일러 경고 (수준 1) C4067
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3223'
 title: 컴파일러 오류 C3223
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3223
 ms.assetid: 1f4380b4-0413-40db-a868-62f97babaf78
-ms.openlocfilehash: a1897492dd5ae0e3290b2d1a2a36b53a62bde839
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: d768bba53634e3614ba4dc583cb57d2d16e744fa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74753616"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97267692"
 ---
 # <a name="compiler-error-c3223"></a>컴파일러 오류 C3223
 

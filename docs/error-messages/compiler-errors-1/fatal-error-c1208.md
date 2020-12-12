@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 심각한 오류 C1208'
 title: 심각한 오류 C1208
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1208
 ms.assetid: 4eefd8f0-5c2e-4a11-9e63-293e1139db65
-ms.openlocfilehash: cf4af072d000e70114ed1723ec802086ca90ba48
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 7b989b4600bf4e24ca53325475cfc6239ea71624
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80203400"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97267965"
 ---
 # <a name="fatal-error-c1208"></a>심각한 오류 C1208
 

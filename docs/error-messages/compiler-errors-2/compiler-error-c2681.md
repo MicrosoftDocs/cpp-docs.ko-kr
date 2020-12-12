@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2681'
 title: 컴파일러 오류 C2681
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2681
 ms.assetid: eb42da6d-8d2c-43fd-986b-e73e2b004885
-ms.openlocfilehash: d7cf39e89f70f27471fb3a251aac12793f1fb33b
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 3b002e6260787e60377d726bcceb6db41fce532a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74760298"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97267783"
 ---
 # <a name="compiler-error-c2681"></a>컴파일러 오류 C2681
 

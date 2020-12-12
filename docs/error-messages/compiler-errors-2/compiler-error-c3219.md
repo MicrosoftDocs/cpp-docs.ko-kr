@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3219'
 title: 컴파일러 오류 C3219
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3219
 ms.assetid: 9c9757b0-1256-4cdf-9d8c-a3a72f300ce5
-ms.openlocfilehash: 72d5c3737dd2059dff46369b87d0e2caecef5a4f
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 0210d8c65972a6adc7d5c2dbe51088f3c3766106
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74737961"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97267744"
 ---
 # <a name="compiler-error-c3219"></a>컴파일러 오류 C3219
 

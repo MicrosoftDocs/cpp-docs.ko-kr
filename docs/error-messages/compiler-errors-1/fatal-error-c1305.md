@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 심각한 오류 C1305'
 title: 심각한 오류 C1305
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1305
 ms.assetid: 1629c850-e2db-4678-83d8-9bfc85323bc5
-ms.openlocfilehash: 6ad00eb3d95e9f09d4f84daefb7e2a87fd1a3abf
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 100046d5ad7c6fa943358063d3d3cb21ffa00e5d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80203361"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97267900"
 ---
 # <a name="fatal-error-c1305"></a>심각한 오류 C1305
 

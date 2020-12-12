@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 심각한 오류 C1207'
 title: 심각한 오류 C1207
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1207
 ms.assetid: cd31b410-9523-47db-883c-e69a9351ffa2
-ms.openlocfilehash: 23f8285907ba633ca25d0b71918025df2f9700ac
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 4910e1385b9fe300c4cf1656d09d911343c17a3a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80203413"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97267991"
 ---
 # <a name="fatal-error-c1207"></a>심각한 오류 C1207
 
