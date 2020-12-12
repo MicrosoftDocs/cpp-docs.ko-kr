@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 메시지 처리 및 매핑'
 title: 메시지 처리 및 매핑
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - message handling [MFC]
 - message maps [MFC]
 ms.assetid: 62fe2a1b-944c-449d-a0f0-63c11ee0a3cb
-ms.openlocfilehash: a27f8220055630873b02dd7ff975c04744ad9e8e
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 50a55f4718b47054690325e882177fa9acad2f46
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622402"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97203200"
 ---
 # <a name="message-handling-and-mapping"></a>메시지 처리 및 매핑
 
@@ -27,11 +28,11 @@ Windows의 메시지 및 메시지 큐에 대 한 일반적인 내용은 Windows
 
 ## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아야 할 내용
 
-- [프레임워크의 메시지 및 명령](messages-and-commands-in-the-framework.md)
+- [프레임 워크의 메시지 및 명령](messages-and-commands-in-the-framework.md)
 
 - [프레임 워크에서 메시지 처리기를 호출 하는 방법](how-the-framework-calls-a-handler.md)
 
-- [프레임워크가 메시지 맵을 검색하는 방법](how-the-framework-searches-message-maps.md)
+- [프레임 워크가 메시지 맵을 검색 하는 방법](how-the-framework-searches-message-maps.md)
 
 - [메시지 처리기 함수 선언](declaring-message-handler-functions.md)
 
@@ -41,7 +42,7 @@ Windows의 메시지 및 메시지 큐에 대 한 일반적인 내용은 Windows
 
 - [사용자 인터페이스 개체의 동적 업데이트](how-to-update-user-interface-objects.md)
 
-- [방법: 템플릿 클래스에 대한 메시지 맵 만들기](how-to-create-a-message-map-for-a-template-class.md)
+- [방법: 템플릿 클래스에 대 한 메시지 맵 만들기](how-to-create-a-message-map-for-a-template-class.md)
 
 ## <a name="see-also"></a>참고 항목
 

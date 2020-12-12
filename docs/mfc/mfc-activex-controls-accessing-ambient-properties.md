@@ -1,16 +1,17 @@
 ---
+description: '자세히 알아보기: MFC ActiveX 컨트롤: 앰비언트 속성 액세스'
 title: 'MFC ActiveX 컨트롤: 앰비언트 속성 액세스'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], accessing ambient properties
 - properties [MFC], accessing ambient
 ms.assetid: fdc9db29-e6b0-45d2-a879-8bd60e2058a7
-ms.openlocfilehash: e5c78c9943f8baeadcc1198ee8c96f2023ac0215
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 6b553c73873a6f96cab3ab55b576a51045c06609
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84625440"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97203070"
 ---
 # <a name="mfc-activex-controls-accessing-ambient-properties"></a>MFC ActiveX 컨트롤: 앰비언트 속성 액세스
 
@@ -20,7 +21,7 @@ ms.locfileid: "84625440"
 
 앰비언트 속성에 액세스 하려면 [COleControl:: GetAmbientProperty](reference/colecontrol-class.md#getambientproperty)를 호출 합니다. 이 함수는 첫 번째 매개 변수 (파일 OLECTL)로 앰비언트 속성의 디스패치 ID를 예상 합니다. H는 앰비언트 속성의 표준 집합에 대 한 디스패치 Id를 정의 합니다.
 
-함수의 매개 변수는 `GetAmbientProperty` 디스패치 ID, 예상 속성 유형을 나타내는 variant 태그 및 값이 반환 되어야 하는 메모리에 대 한 포인터입니다. 이 포인터가 참조 하는 데이터 형식은 variant 태그에 따라 달라 집니다. 이 함수는 컨테이너가 속성을 지 원하는 경우 **TRUE** 를 반환 하 고 그렇지 않으면 **FALSE**를 반환 합니다.
+함수의 매개 변수는 `GetAmbientProperty` 디스패치 ID, 예상 속성 유형을 나타내는 variant 태그 및 값이 반환 되어야 하는 메모리에 대 한 포인터입니다. 이 포인터가 참조 하는 데이터 형식은 variant 태그에 따라 달라 집니다. 이 함수는 컨테이너가 속성을 지 원하는 경우 **TRUE** 를 반환 하 고 그렇지 않으면 **FALSE** 를 반환 합니다.
 
 다음 코드 예제에서는 "UserMode" 라는 앰비언트 속성의 값을 가져옵니다. 컨테이너에서이 속성을 지원 하지 않으면 기본값인 **TRUE** 로 가정 합니다.
 

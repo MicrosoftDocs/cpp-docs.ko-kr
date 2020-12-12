@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: MFC ActiveX 컨트롤: 다른 사용자 지정 속성 페이지 추가'
 title: 'MFC ActiveX 컨트롤: 다른 사용자 지정 속성 페이지 추가'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - ActiveX controls [MFC], property pages
 - MFC ActiveX controls [MFC], property pages
 ms.assetid: fcf7e119-9f29-41a9-908d-e9b1607e08af
-ms.openlocfilehash: a749c5d8d676ac85c3c2085eb041328aff599ab8
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 3802a32ed86536850e3a15ae9ce4bb53feb1ff1c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91508871"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97203031"
 ---
 # <a name="mfc-activex-controls-adding-another-custom-property-page"></a>MFC ActiveX 컨트롤: 다른 사용자 지정 속성 페이지 추가
 
@@ -35,17 +36,17 @@ ActiveX 컨트롤에서 속성 페이지를 사용 하는 방법에 대 한 자�
 
 1. 컨트롤 프로젝트를 열고 프로젝트 작업 영역에서 리소스 뷰를 엽니다.
 
-1. 리소스 뷰를 마우스 오른쪽 단추로 클릭 하 여 바로 가기 메뉴를 열고 **리소스 추가**를 클릭 합니다.
+1. 리소스 뷰를 마우스 오른쪽 단추로 클릭 하 여 바로 가기 메뉴를 열고 **리소스 추가** 를 클릭 합니다.
 
-1. **대화 상자** 노드를 확장 하 고 **IDD_OLE_PROPPAGE_SMALL**를 선택 합니다.
+1. **대화 상자** 노드를 확장 하 고 **IDD_OLE_PROPPAGE_SMALL** 를 선택 합니다.
 
 1. **새로 만들기** 를 클릭 하 여 프로젝트에 리소스를 추가 합니다.
 
 1. 새 속성 페이지 템플릿을 선택 하 여 **속성** 창을 새로 고칩니다 ( **리소스 뷰**).
 
-1. **ID** 속성의 새 값을 입력 합니다. 이 예제에서는 **IDD_PROPPAGE_NEWPAGE**를 사용 합니다.
+1. **ID** 속성의 새 값을 입력 합니다. 이 예제에서는 **IDD_PROPPAGE_NEWPAGE** 를 사용 합니다.
 
-1. 도구 모음에서 **저장**을 클릭합니다.
+1. 도구 모음에서 **저장** 을 클릭합니다.
 
 ### <a name="to-associate-the-new-template-with-a-class"></a>새 템플릿을 클래스와 연결 하려면
 
@@ -53,7 +54,7 @@ ActiveX 컨트롤에서 속성 페이지를 사용 하는 방법에 대 한 자�
 
 1. 클래스 뷰를 마우스 오른쪽 단추로 클릭 하 여 바로 가기 메뉴를 엽니다.
 
-1. 바로 가기 메뉴에서 **추가** 를 클릭 한 다음 **클래스 추가**를 클릭 합니다.
+1. 바로 가기 메뉴에서 **추가** 를 클릭 한 다음 **클래스 추가** 를 클릭 합니다.
 
    그러면 [클래스 추가](../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) 대화 상자가 열립니다.
 
@@ -61,11 +62,11 @@ ActiveX 컨트롤에서 속성 페이지를 사용 하는 방법에 대 한 자�
 
 1. [MFC 클래스 마법사](reference/mfc-add-class-wizard.md)의 **클래스 이름** 상자에 새 대화 상자 클래스의 이름을 입력 합니다. (이 예제에서는 `CAddtlPropPage` )
 
-1. 파일 이름을 변경 하려면 **변경**을 클릭 합니다. 구현 및 헤더 파일의 이름을 입력 하거나 기본 이름을 적용 합니다.
+1. 파일 이름을 변경 하려면 **변경** 을 클릭 합니다. 구현 및 헤더 파일의 이름을 입력 하거나 기본 이름을 적용 합니다.
 
 1. **기본 클래스** 상자에서를 선택 `COlePropertyPage` 합니다.
 
-1. 대화 상자 **ID** 상자에서 **IDD_PROPPAGE_NEWPAGE**를 선택 합니다.
+1. 대화 상자 **ID** 상자에서 **IDD_PROPPAGE_NEWPAGE** 를 선택 합니다.
 
 1. **마침** 을 클릭 하 여 클래스를 만듭니다.
 

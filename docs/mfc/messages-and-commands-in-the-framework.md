@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 프레임 워크의 메시지 및 명령'
 title: 프레임워크의 메시지 및 명령
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - events [MFC], event-driven programming
 - message-driven programming [MFC]
 ms.assetid: d799ed8c-6a9f-4f05-be5d-29cb5bc6d185
-ms.openlocfilehash: db529e2a22b45de3c6f6a659874bbaa941187217
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 48612304ca46fa43c8336c7a9f582f9e8460f00d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84624300"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97203122"
 ---
 # <a name="messages-and-commands-in-the-framework"></a>프레임워크의 메시지 및 명령
 
@@ -20,7 +21,7 @@ Microsoft Windows 용으로 작성 된 응용 프로그램은 "메시지 구동"
 
 다음 항목에서는 메시지 및 명령에 대해 설명 하기 위해 문서 제품군의 나머지 부분에서 사용 되는 주요 용어를 소개 합니다.
 
-- [Messages](messages.md)
+- [메시지](messages.md)
 
 - [메시지 처리기](message-handlers.md)
 
