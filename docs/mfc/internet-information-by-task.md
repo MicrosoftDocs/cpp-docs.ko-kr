@@ -1,15 +1,16 @@
 ---
+description: '자세히 알아보기: 작업별 인터넷 정보'
 title: 작업별 인터넷 정보
 ms.date: 09/12/2018
 helpviewer_keywords:
 - MFC, Internet applications
 ms.assetid: da078bf5-53c3-4167-b1ef-509b5a544ad9
-ms.openlocfilehash: ba359aaba2129af3ab4af9543a46b8810cf4fb6e
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 1f0b1651198518b195e4a53f2b4d9d24cf39e686
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615601"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338353"
 ---
 # <a name="internet-information-by-task"></a>작업별 인터넷 정보
 
@@ -26,7 +27,7 @@ ms.locfileid: "84615601"
 
 ## <a name="what-do-you-want-to-do"></a>뭘 하고 싶으세요
 
-### <a name="activex-controls-documents-and-asynchronous-moniker-tasks"></a><a name="_core_activex_controls.2c_.documents_and_asynchronous_moniker_tasks"></a>ActiveX 컨트롤, 문서 및 비동기 모니커 작업
+### <a name="activex-controls-documents-and-asynchronous-moniker-tasks"></a><a name="_core_activex_controls.2c_.documents_and_asynchronous_moniker_tasks"></a> ActiveX 컨트롤, 문서 및 비동기 모니커 작업
 
 - [비동기 모니커에 대해 알아보기](asynchronous-monikers-on-the-internet.md)
 
@@ -34,7 +35,7 @@ ms.locfileid: "84615601"
 
 - [ActiveX 컨트롤 최적화](mfc-activex-controls-optimization.md)
 
-### <a name="wininet-tasks"></a><a name="_core_wininet_tasks"></a>WinInet 작업
+### <a name="wininet-tasks"></a><a name="_core_wininet_tasks"></a> WinInet 작업
 
 - [인터넷 액세스에 대 한 Win32 API 함수인 WinInet에 대해 알아봅니다.](wininet-basics.md)
 

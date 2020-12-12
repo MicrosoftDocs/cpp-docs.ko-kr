@@ -1,4 +1,5 @@
 ---
+description: Static_cast 연산자에 대해 자세히 알아보세요.
 title: static_cast 연산자
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - static_cast keyword [C++]
 ms.assetid: 1f7c0c1c-b288-476c-89d6-0e2ceda5c293
-ms.openlocfilehash: 8551d41417647ee4f759e2547e2c1909c59d78cd
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7d76b4e21adea6561d7d6822871631c242aaf9c0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213205"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317963"
 ---
 # <a name="static_cast-operator"></a>static_cast 연산자
 
-식에 *expression* 있는 형식만 기반으로 식을 *형식 id* 형식으로 변환 합니다.
+식에  있는 형식만 기반으로 식을 *형식 id* 형식으로 변환 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -51,7 +52,7 @@ void f(B* pb, D* pd) {
 
 [Dynamic_cast](../cpp/dynamic-cast-operator.md)와는 달리의 변환에 대해 런타임 검사가 수행 되지 않습니다 **`static_cast`** `pb` . `pb`가 가리키는 개체는 유형 `D`의 개체가 아닐 수 있으며, 이 경우 `*pd2`를 사용하는 것은 매우 위험합니다. 예를 들어 `D` 클래스가 아닌 `B` 클래스의 멤버인 함수를 호출하면 액세스 위반이 발생할 수 있습니다.
 
-**`dynamic_cast`** 및 **`static_cast`** 연산자는 클래스 계층 구조 전체에서 포인터를 이동 합니다. 그러나는 **`static_cast`** cast 문에 제공 된 정보에만 의존 하므로 안전 하지 않을 수 있습니다. 예를 들면 다음과 같습니다.
+**`dynamic_cast`** 및 **`static_cast`** 연산자는 클래스 계층 구조 전체에서 포인터를 이동 합니다. 그러나는 **`static_cast`** cast 문에 제공 된 정보에만 의존 하므로 안전 하지 않을 수 있습니다. 예를 들어:
 
 ```cpp
 // static_cast_Operator_2.cpp
@@ -76,7 +77,7 @@ void f(B* pb) {
 
 이 동작은 클래스 형식 이외의 형식에도 적용됩니다. 예를 들어,를 사용 하 여 **`static_cast`** int에서로 변환할 수 있습니다 **`char`** . 그러나 결과에는 **`char`** 전체 값을 저장할 수 있는 충분 한 비트가 없을 수 있습니다 **`int`** . 다시, 변환 결과가 안전한 지 확인 하는 것은 프로그래머에 게 남아 있습니다 **`static_cast`** .
 
-**`static_cast`** 연산자를 사용 하 여 표준 변환 및 사용자 정의 변환을 비롯 한 암시적 변환을 수행할 수도 있습니다. 예를 들면 다음과 같습니다.
+**`static_cast`** 연산자를 사용 하 여 표준 변환 및 사용자 정의 변환을 비롯 한 암시적 변환을 수행할 수도 있습니다. 예를 들어:
 
 ```cpp
 // static_cast_Operator_3.cpp
@@ -108,4 +109,4 @@ void f() {
 ## <a name="see-also"></a>참고 항목
 
 [캐스팅 연산자](../cpp/casting-operators.md)<br/>
-[C++ 키워드](../cpp/keywords-cpp.md)
+[키워드](../cpp/keywords-cpp.md)

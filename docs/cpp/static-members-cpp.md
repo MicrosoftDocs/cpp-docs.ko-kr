@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 정적 멤버 (c + +)'
 title: 정적 멤버(C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - instance constructors, shared members
 - class instances [C++], static members
 ms.assetid: 9cc8cf0f-d74c-46f2-8e83-42d4e42c8370
-ms.openlocfilehash: b79b65ab3cbf4565f31ad6717f8163c678697c9c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2aad7c5ef70f319a976704ef36664459ca9ab252
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213192"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317950"
 ---
 # <a name="static-members-c"></a>정적 멤버(C++)
 
@@ -63,7 +64,7 @@ int main()
 long nBytes = BufferedOutput::bytecount;
 ```
 
-정적 멤버가 존재하기 위해 클래스 형식의 개체가 있어야 하는 것은 아닙니다. 멤버 선택 ()을 사용 하 여 정적 멤버에 액세스할 수도 있습니다 **.** 및 **->** ) 연산자가 있습니다. 예를 들면 다음과 같습니다.
+정적 멤버가 존재하기 위해 클래스 형식의 개체가 있어야 하는 것은 아닙니다. 멤버 선택 ()을 사용 하 여 정적 멤버에 액세스할 수도 있습니다 **.** 및 **->** ) 연산자가 있습니다. 예를 들어:
 
 ```cpp
 BufferedOutput Console;
@@ -77,6 +78,6 @@ long nBytes = Console.bytecount;
 
 정적 멤버의 형식은 클래스 이름으로 한정되지 않습니다. 따라서의 형식은입니다 `BufferedOutput::bytecount` **`long`** .
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [클래스 및 구조체](../cpp/classes-and-structs-cpp.md)

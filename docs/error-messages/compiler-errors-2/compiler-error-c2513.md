@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2513'
 title: 컴파일러 오류 C2513
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2513
 ms.assetid: ab5b21d3-61e2-4df7-8eea-6f14d6ba8620
-ms.openlocfilehash: 96f2ccc29eed5c1fa4e29f69d18ae6503417f211
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d1238acd8dc2d56e4757ffb986d4db47c047e76b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212724"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97212898"
 ---
 # <a name="compiler-error-c2513"></a>컴파일러 오류 C2513
 

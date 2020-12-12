@@ -1,4 +1,5 @@
 ---
+description: 다음에 대 한 자세한 정보:/Q 옵션 (하위 수준 작업)
 title: /Q 옵션(하위 수준 작업)
 ms.date: 01/08/2020
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - Q compiler option [C++]
 - -Q compiler option [C++]
 - /Q compiler option [C++]
-ms.openlocfilehash: f5342071cef76bcc736f128c344279898a61c462
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f01781dd670c128f65717a05c6a9367e126550e8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231496"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97225715"
 ---
 # <a name="q-options-low-level-operations"></a>/Q 옵션(하위 수준 작업)
 
@@ -43,4 +44,4 @@ ms.locfileid: "87231496"
 ## <a name="see-also"></a>참고 항목
 
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
-[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)
+[MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)

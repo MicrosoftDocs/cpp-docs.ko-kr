@@ -1,16 +1,17 @@
 ---
+description: '자세히 알아보기: 파일 닫기'
 title: 파일 닫기
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC, file operations
 - files [MFC], closing
 ms.assetid: 8415a3a8-3c75-45b0-ac2a-d5385f49bdb3
-ms.openlocfilehash: 51e51c88260a51ec44f11ecb5c2a88e645194f4e
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: e8d2f0792aeb889c40cb516af259fc2a40890a1a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84617227"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338387"
 ---
 # <a name="closing-files"></a>파일 닫기
 
@@ -24,4 +25,4 @@ ms.locfileid: "84617227"
 
 ## <a name="see-also"></a>참고 항목
 
-[Files](files-in-mfc.md)
+[파일](files-in-mfc.md)

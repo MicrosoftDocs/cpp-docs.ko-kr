@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: &lt; clocale&gt;'
 title: '&lt;clocale&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - clocale header
 ms.assetid: 5bde3e01-cf67-4f1f-a383-447ec814d00e
-ms.openlocfilehash: 60d15795328de567a8ba626f5344b2fb08e57aa7
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 3a1efb972d33ccb5b28fac6d77803aa6de2e08c7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68459346"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325116"
 ---
 # <a name="ltclocalegt"></a>&lt;clocale&gt;
 
-표준 C 라이브러리 헤더 \<locale.h>를 포함하고 `std` 네임스페이스에 연결된 이름을 추가합니다.
+표준 C 라이브러리 헤더를 포함 \<locale.h> 하 고 네임 스페이스에 연결 된 이름을 추가 합니다 `std` .
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<clocale >
+**헤더:**\<clocale>
 
 **네임스페이스:** std
 
@@ -52,8 +53,8 @@ char* setlocale(int category, const char* locale);
 lconv* localeconv();
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
-[C++ 표준 라이브러리 개요](../standard-library/cpp-standard-library-overview.md)\
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[C + + 표준 라이브러리 개요](../standard-library/cpp-standard-library-overview.md)\
+[C + + 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

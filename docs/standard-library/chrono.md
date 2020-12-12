@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: &lt; chrono&gt;'
 title: '&lt;chrono&gt;'
 ms.date: 05/07/2019
 f1_keywords:
@@ -10,12 +11,12 @@ f1_keywords:
 - chrono/std::chrono::milliseconds
 - chrono/std::chrono::microseconds
 ms.assetid: 844de749-f306-482e-89bc-6f53c99c8324
-ms.openlocfilehash: b74c25e9c26d5767426576633e0999ae3ca44954
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: a59ad0d88a1d9266e61a8ef49e7cf9184da803b3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840650"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325143"
 ---
 # <a name="ltchronogt"></a>&lt;chrono&gt;
 
@@ -33,32 +34,32 @@ Visual Studio 2015부터의 구현은 `steady_clock` 조성에 및 단 조성에
 
 ### <a name="classes"></a>클래스
 
-|이름|Description|
+|이름|설명|
 |-|-|
 |[duration 클래스](../standard-library/duration-class.md)|시간 간격을 포함하는 유형을 설명합니다.|
 |[time_point 클래스](../standard-library/time-point-class.md)|시점을 나타내는 형식을 설명합니다.|
 
 ### <a name="structs"></a>구조체
 
-|이름|Description|
+|Name|설명|
 |-|-|
 |[common_type 구조체](../standard-library/common-type-structure.md)|및의 인스턴스화에 대 한 클래스 템플릿 [common_type](../standard-library/common-type-class.md) 의 특수화를 설명 합니다 `duration` `time_point` .|
 |[duration_values 구조체](../standard-library/duration-values-structure.md)|`duration` 템플릿 매개 변수 `Rep`에 대한 특정 값을 제공합니다.|
 |[high_resolution_clock 구조체](../standard-library/high-resolution-clock-struct.md)||
 |[steady_clock 구조체](../standard-library/steady-clock-struct.md)|`steady` 클록을 나타냅니다.|
-|[system_clock 구조체](../standard-library/system-clock-structure.md)|시스템의 실시간 시계를 기반으로 하는 *시계 형식*을 나타냅니다.|
+|[system_clock 구조체](../standard-library/system-clock-structure.md)|시스템의 실시간 시계를 기반으로 하는 *시계 형식* 을 나타냅니다.|
 |[treat_as_floating_point 구조체](../standard-library/treat-as-floating-point-structure.md)|형식이 부동 소수점 형식으로 처리될 수 있는지 여부를 지정합니다.|
 
-### <a name="functions"></a>Functions
+### <a name="functions"></a>함수
 
-|이름|Description|
+|Name|설명|
 |-|-|
 |[duration_cast](../standard-library/chrono-functions.md#duration_cast)|지정된 형식으로 `duration` 개체를 캐스팅합니다.|
 |[time_point_cast](../standard-library/chrono-functions.md#time_point_cast)|지정된 형식으로 `time_point` 개체를 캐스팅합니다.|
 
 ### <a name="operators"></a>연산자
 
-|이름|Description|
+|Name|설명|
 |-|-|
 |[연산자](../standard-library/chrono-operators.md#operator-)|`duration` 및 `time_point` 개체의 빼기 또는 부정에 대한 연산자입니다.|
 |[연산자! =](../standard-library/chrono-operators.md#op_neq)|`duration` 또는 `time_point` 개체와 함께 사용하는 같지 않음 연산자입니다.|
@@ -76,7 +77,7 @@ Visual Studio 2015부터의 구현은 `steady_clock` 조성에 및 단 조성에
 
 다음 typedef에 사용 되는 비율 형식에 대 한 자세한 내용은을 참조 하십시오 [\<ratio>](../standard-library/ratio.md) .
 
-|이름|Description|
+|Name|설명|
 |-|-|
 |`typedef duration<long long, nano> nanoseconds;`|`duration`틱 기간이 1 나노초 인 형식의 동의어입니다.|
 |`typedef duration<long long, micro> microseconds;`|`duration`틱 기간이 1 마이크로초 인 형식의 동의어입니다.|
@@ -89,7 +90,7 @@ Visual Studio 2015부터의 구현은 `steady_clock` 조성에 및 단 조성에
 
 **(C + + 11)** \<chrono> 헤더는 코드의 편리 함, 형식 안전성 및 유지 관리에 사용할 수 있는 다음과 같은 [사용자 정의 리터럴을](../cpp/user-defined-literals-cpp.md) 정의 합니다. 이러한 리터럴은 `literals::chrono_literals` 인라인 네임스페이스에 정의되며 std::chrono가 범위 내에 있을 때 범위 안에 있습니다.
 
-|선언|Description|
+|선언|설명|
 |-|-|
 |`hours operator "" h(unsigned long long Val)`|정수 계열 값으로 시간을 지정합니다.|
 |`duration<double, ratio<3600> > operator "" h(long double Val)`|부동 소수점 값으로 시간을 지정합니다.|

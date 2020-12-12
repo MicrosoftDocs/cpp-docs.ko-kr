@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 링커 도구 경고 LNK4037'
 title: 링커 도구 경고 LNK4037
 ms.date: 10/04/2017
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4037
 ms.assetid: 9ba02fd3-b04f-4679-bab9-26fa82cf09bb
-ms.openlocfilehash: 43fae7d0f19f96998d2e1a1739bc3e596bbd9ea9
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 78fd5ed9f8e2f82221b64053607846f1b8abc00a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80194202"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331947"
 ---
 # <a name="linker-tools-warning-lnk4037"></a>링커 도구 경고 LNK4037
 

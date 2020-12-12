@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4411'
 title: 컴파일러 경고(수준 1) C4411
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4411
 ms.assetid: d209452c-83bd-4333-8d0b-759ca9b4864e
-ms.openlocfilehash: 7d5064b69259e0b88d51d316f5ecf06591c744f5
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ce5eed664cf4269c2faa3486392fe7fc989222ad
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80162415"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97212612"
 ---
 # <a name="compiler-warning-level-1-c4411"></a>컴파일러 경고(수준 1) C4411
 

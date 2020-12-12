@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _ismbbalnum, _ismbbalnum_l'
 title: _ismbbalnum, _ismbbalnum_l
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - ismbbalnum_l function
 - _ismbbalnum function
 ms.assetid: 8025de50-a871-49fd-9ae6-f437b47aa987
-ms.openlocfilehash: abbc664170c274929875ef2e4b7af70bc5812a94
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: e4caf523d788cba4466d3d21beb6470d80b9aefd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917548"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306334"
 ---
 # <a name="_ismbbalnum-_ismbbalnum_l"></a>_ismbbalnum, _ismbbalnum_l
 
@@ -64,13 +65,13 @@ int _ismbbalnum_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 식이 다음과 같이 0이 아닌 값을 반환 **_ismbbalnum**
 
 `isalnum(c) || _ismbbkalnum(c)`
 
-*c*의 경우 0이 아니고, 그렇지 않으면 0입니다.
+*c* 의 경우 0이 아니고, 그렇지 않으면 0입니다.
 
 **_L** 접미사가 있는이 함수의 버전은 로캘 종속 동작에 현재 로캘 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다.
 
@@ -91,7 +92,7 @@ int _ismbbalnum_l(
 
 모든 버전의 [C 런타임 라이브러리](../../c-runtime-library/crt-library-features.md)입니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [바이트 분류](../../c-runtime-library/byte-classification.md)<br/>
 [_ismbb 루틴](../../c-runtime-library/ismbb-routines.md)<br/>

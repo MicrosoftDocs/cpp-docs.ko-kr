@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: strchr, wcschr, _mbschr, _mbschr_l'
 title: strchr, wcschr, _mbschr, _mbschr_l
 ms.date: 4/2/2020
 api_name:
@@ -47,12 +48,12 @@ helpviewer_keywords:
 - tcschr function
 - mbschr_l function
 ms.assetid: 2639905d-e983-43b7-b885-abef32cfac43
-ms.openlocfilehash: a7cea0b2c640b7cb87d7097cea7bdf94a73abfb8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8971022e529a03199a890d769843fd77ec44c5af
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229313"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306224"
 ---
 # <a name="strchr-wcschr-_mbschr-_mbschr_l"></a>strchr, wcschr, _mbschr, _mbschr_l
 
@@ -128,13 +129,13 @@ Null 종료 소스 문자열입니다.
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-이러한 각 함수는 *str*에서 *c* 의 첫 번째 항목에 대 한 포인터를 반환 하거나 *c* 를 찾을 수 없는 경우 NULL을 반환 합니다.
+이러한 각 함수는 *str* 에서 *c* 의 첫 번째 항목에 대 한 포인터를 반환 하거나 *c* 를 찾을 수 없는 경우 NULL을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-`strchr`함수는 *str*에서 처음 발견 되는 *c* 를 찾거나 *c* 를 찾을 수 없는 경우 NULL을 반환 합니다. null 종료 문자는 검색에 포함됩니다.
+`strchr`함수는 *str* 에서 처음 발견 되는 *c* 를 찾거나 *c* 를 찾을 수 없는 경우 NULL을 반환 합니다. null 종료 문자는 검색에 포함됩니다.
 
 `wcschr`, `_mbschr` 및 `_mbschr_l`은 `strchr`의 와이드 문자 및 멀티바이트 문자 버전입니다. `wcschr`의 인수 및 반환 값은 와이드 문자열이며 `_mbschr`의 인수와 반환 값은 멀티바이트 문자열입니다. `_mbschr`은 멀티바이트 문자 시퀀스를 인식합니다. 또한 문자열이 null 포인터이면 `_mbschr`은 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기를 호출합니다. 계속 해 서 실행 하도록 허용한 경우는 `_mbschr` NULL을 반환 하 고를 `errno` EINVAL로 설정 합니다. `strchr` 및 `wcschr`는 매개 변수의 유효성을 검사하지 않습니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
 
@@ -222,7 +223,7 @@ Result:   last r found at position 30
 
 [문자열 조작](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [로캘](../../c-runtime-library/locale.md)<br/>
-[멀티 바이트 문자 시퀀스 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Multibyte-Character 시퀀스의 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strcspn, wcscspn, _mbscspn, _mbscspn_l](strcspn-wcscspn-mbscspn-mbscspn-l.md)<br/>
 [strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)<br/>
 [strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>

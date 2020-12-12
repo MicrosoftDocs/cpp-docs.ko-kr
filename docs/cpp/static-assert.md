@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: static_assert'
 title: static_assert
 ms.date: 07/29/2019
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - assertions [C++], static_assert
 - static_assert
 ms.assetid: 28dd3668-e78c-4de8-ba68-552084743426
-ms.openlocfilehash: bf796b853d21d33d97e25c05101b7486e1eb112f
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: 76383aacf67f0e8bcc12880674afa17f9fce3603
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008866"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317989"
 ---
 # <a name="static_assert"></a>static_assert
 
@@ -28,15 +29,15 @@ static_assert( constant-expression ); // C++17 (Visual Studio 2017 and later)
 
 ### <a name="parameters"></a>매개 변수
 
-*상수 식*\
+*constant-expression*\
 부울로 변환할 수 있는 정수 계열 상수 식입니다. 평가 된 식이 0 (false) 이면 *문자열-리터럴* 매개 변수가 표시 되 고 컴파일이 오류와 함께 실패 합니다. 식이 0이 아니면 (true) **`static_assert`** 선언은 적용 되지 않습니다.
 
-*문자열-리터럴*\
+*string-literal*\
 *상수 식* 매개 변수가 0 인 경우 표시 되는 메시지입니다. 메시지는 컴파일러의 [기본 문자 집합](../c-language/ascii-character-set.md) 에 있는 문자열입니다. 즉, [멀티 바이트 또는 와이드 문자가](../c-language/multibyte-and-wide-characters.md)아닙니다.
 
 ## <a name="remarks"></a>설명
 
-선언의 *상수 식* 매개 변수는 **`static_assert`** *소프트웨어 어설션을*나타냅니다. 소프트웨어 어설션은 프로그램의 특정 지점에서 true가 될 조건을 지정합니다. 조건이 true 이면 **`static_assert`** 선언이 적용 되지 않습니다. 조건이 false 이면 어설션이 실패 하 고 컴파일러가 *문자열 리터럴* 매개 변수로 메시지를 표시 하 고 오류가 발생 하 여 컴파일이 실패 합니다. Visual Studio 2017 이상에서 문자열 리터럴 매개 변수는 선택 사항입니다.
+선언의 *상수 식* 매개 변수는 **`static_assert`** *소프트웨어 어설션을* 나타냅니다. 소프트웨어 어설션은 프로그램의 특정 지점에서 true가 될 조건을 지정합니다. 조건이 true 이면 **`static_assert`** 선언이 적용 되지 않습니다. 조건이 false 이면 어설션이 실패 하 고 컴파일러가 *문자열 리터럴* 매개 변수로 메시지를 표시 하 고 오류가 발생 하 여 컴파일이 실패 합니다. Visual Studio 2017 이상에서 문자열 리터럴 매개 변수는 선택 사항입니다.
 
 **`static_assert`** 선언은 컴파일 타임에 소프트웨어 어설션을 테스트 합니다. 이와 달리 [Assert 매크로 및 _assert 및 _wassert 함수](../c-runtime-library/reference/assert-macro-assert-wassert.md) 는 런타임에 소프트웨어 어설션을 테스트 하 고 공간 또는 시간에 런타임 비용을 발생 시킵니다. **`static_assert`** 선언은 템플릿 인수가 *상수 식* 매개 변수에 포함 될 수 있기 때문에 템플릿 디버깅에 특히 유용 합니다.
 
@@ -104,7 +105,7 @@ public:
 };
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [어설션 및 사용자 제공 메시지(C++)](../cpp/assertion-and-user-supplied-messages-cpp.md)<br/>
 [#error 지시문 (C/c + +)](../preprocessor/hash-error-directive-c-cpp.md)<br/>

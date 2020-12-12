@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3204'
 title: 컴파일러 오류 C3204
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3204
 ms.assetid: 06e578da-0262-48c8-b2ae-be1cd6d28884
-ms.openlocfilehash: 72b9f4fe926b617d7c5b3538fb9d3281e1d95a5f
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 8e9275cada58988c9dac3942569fb0416ddff0ba
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74738702"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97285736"
 ---
 # <a name="compiler-error-c3204"></a>컴파일러 오류 C3204
 

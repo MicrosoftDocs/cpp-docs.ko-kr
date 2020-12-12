@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2514'
 title: 컴파일러 오류 C2514
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2514
 ms.assetid: 4b7085e5-6714-4261-80b7-bc72e64ab3e8
-ms.openlocfilehash: e0153ec9d48225d153221f2192761da4023fab96
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 3999a5a65df08142b68e7257b257d39d1b5245e9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74746515"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97212820"
 ---
 # <a name="compiler-error-c2514"></a>컴파일러 오류 C2514
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2511'
 title: 컴파일러 오류 C2511
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2511
 ms.assetid: df999efe-fe2b-418b-bb55-4af6a0592631
-ms.openlocfilehash: ff78cb50b274fe40d513739264bd7e9894bbed9d
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 846173cc887fd09b564d18e063820bc0e0d5b184
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74746567"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97212924"
 ---
 # <a name="compiler-error-c2511"></a>컴파일러 오류 C2511
 
 ' identifier ': 오버 로드 된 멤버 함수를 ' class '에서 찾을 수 없습니다.
 
-지정 된 매개 변수를 사용 하 여 선언 된 함수의 버전이 없습니다.  가능한 원인
+지정 된 매개 변수를 사용 하 여 선언 된 함수의 버전이 없습니다.  가능한 원인:
 
 1. 함수에 전달 된 매개 변수가 잘못 되었습니다.
 

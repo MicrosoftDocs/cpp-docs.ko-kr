@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3021'
 title: 컴파일러 오류 C3021
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3021
 ms.assetid: 0cef6d97-e267-438a-ac8b-0daf5bbbc2cf
-ms.openlocfilehash: 9a90a3378690140c27fe938c269f4fb00f6eae12
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: c615dcb476aef5e3c9de0e705ca35d696e2af6a2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74742108"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97285723"
 ---
 # <a name="compiler-error-c3021"></a>컴파일러 오류 C3021
 

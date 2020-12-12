@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4172'
 title: 컴파일러 경고 (수준 1) C4172
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4172
 ms.assetid: a8d2bf65-d8b1-4fe3-8340-a223d7e7fde6
-ms.openlocfilehash: 7258172c00b1ff4aebb18fa2c715559fd82a2180
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 7bcfe460150e543c1e3fb6a93ed6656619b5cb13
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80163548"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97266938"
 ---
 # <a name="compiler-warning-level-1-c4172"></a>컴파일러 경고 (수준 1) C4172
 

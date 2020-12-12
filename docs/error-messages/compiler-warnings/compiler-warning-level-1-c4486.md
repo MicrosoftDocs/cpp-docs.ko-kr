@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4486'
 title: 컴파일러 경고(수준 1) C4486
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4486
 ms.assetid: 2c0c59e3-d025-4d97-8da2-fa27df1402fc
-ms.openlocfilehash: 893dd9241f83895d253fc8b5513f56cab272e31c
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: e664c9654b41932ab81c596494953807b8bb5d13
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90684679"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97212443"
 ---
 # <a name="compiler-warning-level-1-c4486"></a>컴파일러 경고(수준 1) C4486
 

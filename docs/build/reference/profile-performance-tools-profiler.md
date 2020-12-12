@@ -1,4 +1,5 @@
 ---
+description: 자세히 알아보기:/PROFILE (성능 도구 프로파일러)
 title: /PROFILE(성능 도구 프로파일러)
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - -PROFILE linker option
 - /PROFILE linker option
 ms.assetid: e676baa1-5063-47a3-a357-ba0d1f0d1699
-ms.openlocfilehash: 07952c979fd66291b1744521d83e4556f010d297
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: fb9310bb782a4b321113155f01db2228e3a46e15
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500790"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97225793"
 ---
 # <a name="profile-performance-tools-profiler"></a>/PROFILE(성능 도구 프로파일러)
 
@@ -58,7 +59,7 @@ ms.locfileid: "91500790"
 
 ### <a name="to-set-this-linker-option-within-visual-studio-cmake-project"></a>Visual Studio CMake에서이 링커 옵션을 설정 하려면 다음을 수행 하십시오.
 
-**Cmake** 프로젝트에는 **속성 페이지가**없으므로 링커 옵션 CMakeLists.txt modifing를 사용 하 여 설정할 수 있습니다.
+**Cmake** 프로젝트에는 **속성 페이지가** 없으므로 링커 옵션 CMakeLists.txt modifing를 사용 하 여 설정할 수 있습니다.
 
 1. 프로젝트 루트 디렉터리에서 CMakeLists.txt를 엽니다.
 

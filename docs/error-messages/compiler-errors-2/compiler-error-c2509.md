@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2509'
 title: 컴파일러 오류 C2509
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2509
 ms.assetid: 339c1fcd-ec4a-456c-9f18-a9b24d9921af
-ms.openlocfilehash: f0322c1d6f80f26b81ac0e93b944a2f3277026ce
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: d7b6c2f05aaf525bee9572cd921d1fdffe1b0cf1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74746814"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97212963"
 ---
 # <a name="compiler-error-c2509"></a>컴파일러 오류 C2509
 

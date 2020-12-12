@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 링커 도구 경고 LNK4022'
 title: 링커 도구 경고 LNK4022
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4022
 ms.assetid: 890f487e-db98-45dd-a226-c7ccead82b1e
-ms.openlocfilehash: 9b9ce09a7133c0bdc18957f6ade213583e9540eb
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f0f968bf8e562d87e2227fb67f7a37b450c813b1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80194189"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331935"
 ---
 # <a name="linker-tools-warning-lnk4022"></a>링커 도구 경고 LNK4022
 

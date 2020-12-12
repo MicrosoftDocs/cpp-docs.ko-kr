@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 클립보드'
 title: 클립보드
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Clipboard, programming
 - transferring data
 ms.assetid: a71b2824-1f14-4914-8816-54578d73ad4e
-ms.openlocfilehash: 5f4a17bedaa50913dce1f6388dfb6b8d9ecd38da
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 4b78e2e4237dc50b6a40dc9ff688f935d433bd84
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84617283"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338397"
 ---
 # <a name="clipboard"></a>클립보드
 

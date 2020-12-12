@@ -1,16 +1,17 @@
-﻿---
+---
+description: '다음에 대 한 자세한 정보: 문 (c + +)'
 title: 문 (C++)
 ms.custom: index-page
 ms.date: 11/04/2016
 helpviewer_keywords:
 - statements [C++], C++
 ms.assetid: 7028fddf-0d47-469a-a7df-f8576423e066
-ms.openlocfilehash: c82afd68761b8429f69190510bd64445a28b8216
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 6ff61402761fe892d3c94f447d9cd0c4c75f3eee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81317211"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318002"
 ---
 # <a name="statements-c"></a>문 (C++)
 
@@ -18,7 +19,7 @@ C++ 명령문은 개체 조작 방법과 순서를 제어하는 프로그램 요
 
 - [개요](../cpp/overview-of-cpp-statements.md)
 
-- [레이블이 지정된 명령문](../cpp/labeled-statements.md)
+- [레이블 문](../cpp/labeled-statements.md)
 
 - 명령문 범주
 
@@ -36,8 +37,8 @@ C++ 명령문은 개체 조작 방법과 순서를 제어하는 프로그램 요
 
   - [선언 문](declarations-and-definitions-cpp.md). 선언은 프로그램에 이름을 제공합니다.
 
-예외 처리 문에 대한 자세한 내용은 [예외 처리](../cpp/exception-handling-in-visual-cpp.md)를 참조하십시오.
+예외 처리 문에 대 한 자세한 내용은 [예외 처리](../cpp/exception-handling-in-visual-cpp.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목 
+## <a name="see-also"></a>참조
 
 [C++ 언어 참조](../cpp/cpp-language-reference.md)
