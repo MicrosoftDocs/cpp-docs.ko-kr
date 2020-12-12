@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CDaoWorkspace 클래스'
 title: CDaoWorkspace 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -62,12 +63,12 @@ helpviewer_keywords:
 - CDaoWorkspace [MFC], SetLoginTimeout
 - CDaoWorkspace [MFC], m_pDAOWorkspace
 ms.assetid: 64f60de6-4df1-4d4a-a65b-c489b5257d52
-ms.openlocfilehash: eea3fb29f219890ebe596c5d8109257e9d422054
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 73236019db3ecf4a79ef93e19a55d909e6e0d61d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839792"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97247999"
 ---
 # <a name="cdaoworkspace-class"></a>CDaoWorkspace 클래스
 
@@ -147,7 +148,7 @@ class CDaoWorkspace : public CObject
 
 MFC는 보안 제어에 사용 되는 DAO의 사용자 및 그룹 컬렉션을 구현 하지 않습니다. DAO의 이러한 측면이 필요한 경우 DAO 인터페이스에 대 한 직접 호출을 통해 직접 프로그래밍 해야 합니다. 자세한 내용은 [Technical Note 54](../../mfc/tn054-calling-dao-directly-while-using-mfc-dao-classes.md)을 참조 하세요.
 
-## <a name="usage"></a>사용량
+## <a name="usage"></a>사용
 
 클래스를 사용 하 여 다음을 수행할 수 있습니다 `CDaoWorkspace` .
 
@@ -313,13 +314,13 @@ static void PASCAL CompactDatabase(
 기존에 닫힌 데이터베이스의 이름입니다. 전체 경로와 파일 이름을 사용할 수 있습니다 (예: "C: \\ \MYDB. MDB ". 파일 이름에 확장명이 있으면 지정 해야 합니다. 네트워크에서 UNC (uniform 명명 규칙)를 지 원하는 경우 " \\ \\ \\ \myserver \\ \MYSHARE \\ \MYDIR \\ \MYDB.와 같은 네트워크 경로를 지정할 수도 있습니다. MDB ". " \\ "은 c + + 이스케이프 문자 이므로 경로 문자열에 이중 백슬래시가 필요 합니다.
 
 *lpszDestName*<br/>
-만들고 있는 압축 된 데이터베이스의 전체 경로입니다. *LpszSrcName*와 함께 네트워크 경로를 지정할 수도 있습니다. *LpszDestName* 인수를 사용 하 여 *lpszSrcName*와 동일한 데이터베이스 파일을 지정할 수 없습니다.
+만들고 있는 압축 된 데이터베이스의 전체 경로입니다. *LpszSrcName* 와 함께 네트워크 경로를 지정할 수도 있습니다. *LpszDestName* 인수를 사용 하 여 *lpszSrcName* 와 동일한 데이터베이스 파일을 지정할 수 없습니다.
 
 *lpszPassword*<br/>
 암호로 보호 된 데이터베이스를 압축 하려고 할 때 사용 되는 암호입니다. 암호를 사용 하는 버전을 사용 하는 경우 `CompactDatabase` 모든 매개 변수를 제공 해야 합니다. 또한이 매개 변수는 connect 매개 변수 이므로 다음과 같이 특별 한 서식 지정이 필요 합니다. PWD = *lpszPassword*. 예:; PWD = "행복". (선행 세미콜론이 필요 합니다.)
 
 *lpszLocale*<br/>
-*LpszDestName*을 만들기 위한 정렬 순서를 지정 하는 데 사용 되는 문자열 식입니다. (아래 참조)의 기본값을 적용 하 여이 인수를 생략 하는 경우 `dbLangGeneral` 새 데이터베이스의 로캘은 이전 데이터베이스의 로캘과 동일 합니다. 가능한 값은 다음과 같습니다.
+*LpszDestName* 을 만들기 위한 정렬 순서를 지정 하는 데 사용 되는 문자열 식입니다. (아래 참조)의 기본값을 적용 하 여이 인수를 생략 하는 경우 `dbLangGeneral` 새 데이터베이스의 로캘은 이전 데이터베이스의 로캘과 동일 합니다. 가능한 값은 다음과 같습니다.
 
 - `dbLangGeneral` 영어, 독일어, 프랑스어, 포르투갈어, 이탈리아어 및 현대 스페인어
 
@@ -352,7 +353,7 @@ static void PASCAL CompactDatabase(
 - `dbLangTurkish` 터키어
 
 *nOptions*<br/>
-대상 데이터베이스 *lpszDestName*에 대 한 옵션을 하나 이상 나타냅니다. 기본값을 적용 하 여이 인수를 생략 하는 경우 *lpszDestName* 는 *lpszSrcName*와 동일한 암호화와 동일한 버전을 갖게 됩니다. `dbEncrypt`또는 옵션을 비트 or `dbDecrypt` 연산자를 사용 하는 버전 옵션 중 하 나와 결합할 수 있습니다. 데이터베이스 엔진 버전이 아닌 데이터베이스 형식을 지정 하는 가능한 값은 다음과 같습니다.
+대상 데이터베이스 *lpszDestName* 에 대 한 옵션을 하나 이상 나타냅니다. 기본값을 적용 하 여이 인수를 생략 하는 경우 *lpszDestName* 는 *lpszSrcName* 와 동일한 암호화와 동일한 버전을 갖게 됩니다. `dbEncrypt`또는 옵션을 비트 or `dbDecrypt` 연산자를 사용 하는 버전 옵션 중 하 나와 결합할 수 있습니다. 데이터베이스 엔진 버전이 아닌 데이터베이스 형식을 지정 하는 가능한 값은 다음과 같습니다.
 
 - `dbEncrypt` 압축 하는 동안 데이터베이스를 암호화 합니다.
 
@@ -366,7 +367,7 @@ static void PASCAL CompactDatabase(
 
 - `dbVersion30` 압축 하는 동안 Microsoft Jet 데이터베이스 엔진 버전 3.0을 사용 하는 데이터베이스를 만듭니다.
 
-`dbEncrypt`옵션 인수에서 또는를 사용 하 여 `dbDecrypt` 압축 될 때 데이터베이스의 암호를 암호화할지 여부를 지정할 수 있습니다. 암호화 상수를 생략 하거나 및를 모두 포함 하는 `dbDecrypt` 경우 `dbEncrypt` *lpszDestName* 는 *lpszSrcName*와 동일한 암호화를 갖게 됩니다. Options 인수에서 version 상수 중 하나를 사용 하 여 압축 된 데이터베이스에 대 한 데이터 형식의 버전을 지정할 수 있습니다. 이 상수는 *lpszDestName*의 데이터 형식 버전에만 영향을 줍니다. 하나의 버전 상수만 지정할 수 있습니다. 버전 상수를 생략 하는 경우 *lpszDestName* 는 *lpszSrcName*과 동일한 버전을 갖게 됩니다. *LpszDestName* 는 *lpszSrcName*의 버전 보다 같거나 높은 버전 으로만 압축할 수 있습니다.
+`dbEncrypt`옵션 인수에서 또는를 사용 하 여 `dbDecrypt` 압축 될 때 데이터베이스의 암호를 암호화할지 여부를 지정할 수 있습니다. 암호화 상수를 생략 하거나 및를 모두 포함 하는 `dbDecrypt` 경우 `dbEncrypt` *lpszDestName* 는 *lpszSrcName* 와 동일한 암호화를 갖게 됩니다. Options 인수에서 version 상수 중 하나를 사용 하 여 압축 된 데이터베이스에 대 한 데이터 형식의 버전을 지정할 수 있습니다. 이 상수는 *lpszDestName* 의 데이터 형식 버전에만 영향을 줍니다. 하나의 버전 상수만 지정할 수 있습니다. 버전 상수를 생략 하는 경우 *lpszDestName* 는 *lpszSrcName* 과 동일한 버전을 갖게 됩니다. *LpszDestName* 는 *lpszSrcName* 의 버전 보다 같거나 높은 버전 으로만 압축할 수 있습니다.
 
 > [!CAUTION]
 > 데이터베이스가 암호화 되지 않은 경우 사용자/암호 보안을 구현 하는 경우에도 데이터베이스를 구성 하는 이진 디스크 파일을 직접 읽을 수 있습니다.
@@ -473,7 +474,7 @@ void GetDatabaseInfo(
 
 한 버전의 함수를 사용 하 여 인덱스를 기준으로 데이터베이스를 조회할 수 있습니다. 다른 버전에서는 이름을 기준으로 데이터베이스를 조회할 수 있습니다.
 
-*Dbinfo*에 반환 되는 정보에 대 한 설명은 [CDaoDatabaseInfo](../../mfc/reference/cdaodatabaseinfo-structure.md) 구조를 참조 하세요. 이 구조에는 위의 정보 항목에 해당 하는 멤버가 포함 되어 *있습니다.* 한 수준에서 정보를 요청 하는 경우 모든 이전 수준에 대 한 정보도 얻을 수 있습니다.
+*Dbinfo* 에 반환 되는 정보에 대 한 설명은 [CDaoDatabaseInfo](../../mfc/reference/cdaodatabaseinfo-structure.md) 구조를 참조 하세요. 이 구조에는 위의 정보 항목에 해당 하는 멤버가 포함 되어 *있습니다.* 한 수준에서 정보를 요청 하는 경우 모든 이전 수준에 대 한 정보도 얻을 수 있습니다.
 
 ## <a name="cdaoworkspacegetinipath"></a><a name="getinipath"></a> CDaoWorkspace::GetIniPath
 
@@ -641,7 +642,7 @@ void GetWorkspaceInfo(
 
 ### <a name="remarks"></a>설명
 
-*Wkspcinfo*에 반환 되는 정보에 대 한 설명은 [CDaoWorkspaceInfo](../../mfc/reference/cdaoworkspaceinfo-structure.md) 구조를 참조 하세요. 이 구조에는 위의 정보 항목에 해당 하는 멤버가 포함 되어 *있습니다.* 한 수준에서 정보를 요청 하면 이전 수준에 대 한 정보도 얻을 수 있습니다.
+*Wkspcinfo* 에 반환 되는 정보에 대 한 설명은 [CDaoWorkspaceInfo](../../mfc/reference/cdaoworkspaceinfo-structure.md) 구조를 참조 하세요. 이 구조에는 위의 정보 항목에 해당 하는 멤버가 포함 되어 *있습니다.* 한 수준에서 정보를 요청 하면 이전 수준에 대 한 정보도 얻을 수 있습니다.
 
 ## <a name="cdaoworkspaceidle"></a><a name="idle"></a> CDaoWorkspace:: Idle
 
@@ -712,7 +713,7 @@ virtual void Open(LPCTSTR lpszName = NULL);
 
 개체를 생성 한 후 `CDaoWorkspace` 다음 중 하나를 수행 하려면이 멤버 함수를 호출 합니다.
 
-- 기본 작업 영역을 명시적으로 엽니다. *LpszName*에 대해 NULL을 전달 합니다.
+- 기본 작업 영역을 명시적으로 엽니다. *LpszName* 에 대해 NULL을 전달 합니다.
 
 - `CDaoWorkspace`작업 영역 컬렉션의 구성원 인 기존 개체를 이름으로 엽니다. 기존 작업 영역 개체에 대 한 올바른 이름을 전달 하세요.
 
