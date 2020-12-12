@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: _sprintf_p, _sprintf_p_l, _swprintf_p, _swprintf_p_l'
 title: _sprintf_p, _sprintf_p_l, _swprintf_p, _swprintf_p_l
 ms.date: 11/04/2016
 api_name:
@@ -45,12 +46,12 @@ helpviewer_keywords:
 - formatted text [C++]
 - _stprintf_p_l function
 ms.assetid: a2ae78e8-6b0c-48d5-87a9-ea2365b0693d
-ms.openlocfilehash: c694567aa7554319d5821678a18c3b5392f89965
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: 84702c0ab04027f350978c511ee8f871af753bb9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008850"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97292301"
 ---
 # <a name="_sprintf_p-_sprintf_p_l-_swprintf_p-_swprintf_p_l"></a>_sprintf_p, _sprintf_p_l, _swprintf_p, _swprintf_p_l
 
@@ -112,11 +113,11 @@ int _swprintf_p_l(
 
 ## <a name="remarks"></a>설명
 
-**_Sprintf_p** 함수는 일련의 문자 및 값의 형식을 지정 하 고 *버퍼*에 저장 합니다. *Argument_list* 의 각 인수 (있는 경우)는 *형식의*해당 형식 지정에 따라 변환 되 고 출력 됩니다. *Format* 인수는 [printf 및 wprintf 함수에 대 한 형식 지정 구문을](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)사용 합니다. 기록된 마지막 문자 뒤에 null 문자가 추가됩니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다. **_Sprintf_p** 와 **sprintf_s** 의 차이점은 **_sprintf_p** 에서 위치 매개 변수를 지원 한다는 것입니다 .이를 통해 형식 문자열에서 인수가 사용 되는 순서를 지정할 수 있습니다. 자세한 내용은 [printf_p 위치 매개 변수](../../c-runtime-library/printf-p-positional-parameters.md)를 참조하세요.
+**_Sprintf_p** 함수는 일련의 문자 및 값의 형식을 지정 하 고 *버퍼* 에 저장 합니다. *Argument_list* 의 각 인수 (있는 경우)는 *형식의* 해당 형식 지정에 따라 변환 되 고 출력 됩니다. *Format* 인수는 [printf 및 wprintf 함수에 대 한 형식 지정 구문을](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)사용 합니다. 기록된 마지막 문자 뒤에 null 문자가 추가됩니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다. **_Sprintf_p** 와 **sprintf_s** 의 차이점은 **_sprintf_p** 에서 위치 매개 변수를 지원 한다는 것입니다 .이를 통해 형식 문자열에서 인수가 사용 되는 순서를 지정할 수 있습니다. 자세한 내용은 [printf_p 위치 매개 변수](../../c-runtime-library/printf-p-positional-parameters.md)를 참조하세요.
 
-**_swprintf_p** 은 **_sprintf_p**의 와이드 문자 버전입니다. **_swprintf_p** 에 대 한 포인터 인수는 와이드 문자 문자열입니다. **_Swprintf_p** 의 인코딩 오류 검색은 **_sprintf_p**와 다를 수 있습니다. **_swprintf_p** 및 **fwprintf_p** 는 동일 하 게 동작 합니다. 단, **_swprintf_p** **파일**의 대상이 아니라 문자열에 출력을 작성 하 고 **_swprintf_p** 는 *count* 매개 변수를 사용 하 여 쓸 최대 문자 수를 지정 합니다. **_L** 접미사가 있는 이러한 함수 버전은 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하 고는 동일 합니다.
+**_swprintf_p** 은 **_sprintf_p** 의 와이드 문자 버전입니다. **_swprintf_p** 에 대 한 포인터 인수는 와이드 문자 문자열입니다. **_Swprintf_p** 의 인코딩 오류 검색은 **_sprintf_p** 와 다를 수 있습니다. **_swprintf_p** 및 **fwprintf_p** 는 동일 하 게 동작 합니다. 단, **_swprintf_p** **파일** 의 대상이 아니라 문자열에 출력을 작성 하 고 **_swprintf_p** 는 *count* 매개 변수를 사용 하 여 쓸 최대 문자 수를 지정 합니다. **_L** 접미사가 있는 이러한 함수 버전은 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하 고는 동일 합니다.
 
-**_sprintf_p** 는 종료 null 문자를 제외 하 고 *버퍼*에 저장 된 바이트 수를 반환 합니다. **_swprintf_p** 는 종료 null 와이드 문자를 제외 하 고 *버퍼*에 저장 된 와이드 문자 수를 반환 합니다. *버퍼* 또는 *형식이* null 포인터 이거나 형식 문자열에 잘못 된 형식 지정 문자가 포함 된 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는-1을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
+**_sprintf_p** 는 종료 null 문자를 제외 하 고 *버퍼* 에 저장 된 바이트 수를 반환 합니다. **_swprintf_p** 는 종료 null 와이드 문자를 제외 하 고 *버퍼* 에 저장 된 와이드 문자 수를 반환 합니다. *버퍼* 또는 *형식이* null 포인터 이거나 형식 문자열에 잘못 된 형식 지정 문자가 포함 된 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는-1을 반환 하 고 **errno** 를 **EINVAL** 로 설정 합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
 
@@ -209,7 +210,7 @@ Wrote 24 characters
 Wrote -1 characters
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [스트림 I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [_fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l](fprintf-p-fprintf-p-l-fwprintf-p-fwprintf-p-l.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _spawnl, _wspawnl'
 title: _spawnl, _wspawnl
 ms.date: 11/04/2016
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - wspawnl function
 - process creation
 ms.assetid: dd4584c9-7173-4fc5-b93a-6e7d3c2316d7
-ms.openlocfilehash: 4b51faae4ba6f371f712e4c39374ae9717c90bed
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 1e4550578334c994647bd8a244063c572cfd5616
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834377"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97292548"
 ---
 # <a name="_spawnl-_wspawnl"></a>_spawnl, _wspawnl
 
@@ -77,11 +78,11 @@ intptr_t _wspawnl(
 실행할 파일의 경로입니다.
 
 *arg0*, *arg1*, ... *argn*<br/>
-인수에 대한 포인터 목록입니다. *Arg0* 인수는 일반적으로 *cmdname*에 대 한 포인터입니다. *Argn* 에 대 한 인수 *arg1* 은 새 인수 목록을 형성 하는 문자열에 대 한 포인터입니다. *Argn*다음에는 인수 목록의 끝을 표시 하는 **NULL** 포인터가 있어야 합니다.
+인수에 대한 포인터 목록입니다. *Arg0* 인수는 일반적으로 *cmdname* 에 대 한 포인터입니다. *Argn* 에 대 한 인수 *arg1* 은 새 인수 목록을 형성 하는 문자열에 대 한 포인터입니다. *Argn* 다음에는 인수 목록의 끝을 표시 하는 **NULL** 포인터가 있어야 합니다.
 
 ## <a name="return-value"></a>반환 값
 
-동기 **_spawnl** 또는 **_wspawnl** ( *모드*에 대해 지정 된 **_P_WAIT** )의 반환 값은 새 프로세스의 종료 상태입니다. 비동기 **_spawnl** 또는 **_wspawnl** ( *모드*에 지정 된 **_P_NOWAIT** 또는 **_P_NOWAITO** )의 반환 값은 프로세스 핸들입니다. 프로세스가 정상적으로 종료되는 경우 종료 상태는 0입니다. 생성 된 프로세스가 0이 아닌 인수를 사용 하 여 **종료** 루틴을 특별히 호출 하는 경우 종료 상태를 0이 아닌 값으로 설정할 수 있습니다. 새 프로세스가 양수 값의 종료 상태를 명시적으로 설정하지 않은 경우, 양수 값의 종료 상태는 중단되거나 인터럽트된 비정상적인 종료를 나타냅니다. 반환 값-1은 오류를 나타냅니다 (새 프로세스가 시작 되지 않음). 이 경우 **errno** 는 다음 값 중 하나로 설정 됩니다.
+동기 **_spawnl** 또는 **_wspawnl** ( *모드* 에 대해 지정 된 **_P_WAIT** )의 반환 값은 새 프로세스의 종료 상태입니다. 비동기 **_spawnl** 또는 **_wspawnl** ( *모드* 에 지정 된 **_P_NOWAIT** 또는 **_P_NOWAITO** )의 반환 값은 프로세스 핸들입니다. 프로세스가 정상적으로 종료되는 경우 종료 상태는 0입니다. 생성 된 프로세스가 0이 아닌 인수를 사용 하 여 **종료** 루틴을 특별히 호출 하는 경우 종료 상태를 0이 아닌 값으로 설정할 수 있습니다. 새 프로세스가 양수 값의 종료 상태를 명시적으로 설정하지 않은 경우, 양수 값의 종료 상태는 중단되거나 인터럽트된 비정상적인 종료를 나타냅니다. 반환 값-1은 오류를 나타냅니다 (새 프로세스가 시작 되지 않음). 이 경우 **errno** 는 다음 값 중 하나로 설정 됩니다.
 
 | 값 | 설명 |
 |--|--|
@@ -93,7 +94,7 @@ intptr_t _wspawnl(
 
 이러한 반환 코드 및 기타 반환 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
-이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. *Cmdname* 또는 *arg0* 가 빈 문자열 또는 Null 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **errno** 를 **EINVAL**로 설정 하 고-1을 반환 합니다. 새로운 프로세스가 생성되지 않습니다.
+이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. *Cmdname* 또는 *arg0* 가 빈 문자열 또는 Null 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **errno** 를 **EINVAL** 로 설정 하 고-1을 반환 합니다. 새로운 프로세스가 생성되지 않습니다.
 
 ## <a name="remarks"></a>설명
 

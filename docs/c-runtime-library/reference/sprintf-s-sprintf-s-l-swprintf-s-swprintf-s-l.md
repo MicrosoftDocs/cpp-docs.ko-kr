@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l'
 title: sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l
 ms.date: 11/04/2016
 api_name:
@@ -44,12 +45,12 @@ helpviewer_keywords:
 - _sprintf_s_l function
 - formatted text [C++]
 ms.assetid: 424f0a29-22ef-40e8-b565-969f5f57782f
-ms.openlocfilehash: 006b0f84494466b5c23a8c86f586774b66839b03
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: 4d5114367daf8061315d296816799c5707c0323c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008831"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97292262"
 ---
 # <a name="sprintf_s-_sprintf_s_l-swprintf_s-_swprintf_s_l"></a>sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l
 
@@ -119,19 +120,19 @@ int swprintf_s(
 
 ## <a name="return-value"></a>반환 값
 
-기록 된 문자 수 이며, 오류가 발생 한 경우-1입니다. *버퍼* 또는 *형식이* null 포인터인 경우 **sprintf_s** 및 **swprintf_s** -1을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
+기록 된 문자 수 이며, 오류가 발생 한 경우-1입니다. *버퍼* 또는 *형식이* null 포인터인 경우 **sprintf_s** 및 **swprintf_s** -1을 반환 하 고 **errno** 를 **EINVAL** 로 설정 합니다.
 
-**sprintf_s** 는 종료 null 문자를 제외 하 고 *버퍼*에 저장 된 바이트 수를 반환 합니다. **swprintf_s** 는 종료 null 와이드 문자를 제외 하 고 *버퍼*에 저장 된 와이드 문자 수를 반환 합니다.
+**sprintf_s** 는 종료 null 문자를 제외 하 고 *버퍼* 에 저장 된 바이트 수를 반환 합니다. **swprintf_s** 는 종료 null 와이드 문자를 제외 하 고 *버퍼* 에 저장 된 와이드 문자 수를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-**Sprintf_s** 함수는 일련의 문자 및 값의 형식을 지정 하 고 *버퍼*에 저장 합니다. 각 *인수* (있는 경우)는 *형식*의 해당 형식 사양에 따라 변환 되 고 출력 됩니다. 형식은 일반 문자로 구성 되며 [printf](printf-printf-l-wprintf-wprintf-l.md)의 *format* 인수와 동일한 폼 및 함수를 가집니다. 기록된 마지막 문자 뒤에 null 문자가 추가됩니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
+**Sprintf_s** 함수는 일련의 문자 및 값의 형식을 지정 하 고 *버퍼* 에 저장 합니다. 각 *인수* (있는 경우)는 *형식* 의 해당 형식 사양에 따라 변환 되 고 출력 됩니다. 형식은 일반 문자로 구성 되며 [printf](printf-printf-l-wprintf-wprintf-l.md)의 *format* 인수와 동일한 폼 및 함수를 가집니다. 기록된 마지막 문자 뒤에 null 문자가 추가됩니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
 
-**Sprintf_s** 와 [sprintf](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md) 의 한 가지 주요 차이점은 **sprintf_s** 는 서식 문자열에서 유효한 형식 지정 문자를 확인 하는 것이 고, [sprintf](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md) 는 형식 문자열 또는 버퍼가 **NULL** 포인터 인지 여부만 확인 한다는 것입니다. 검사에 실패할 경우 [Parameter Validation](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 계속 해 서 실행 하도록 허용한 경우 함수는-1을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
+**Sprintf_s** 와 [sprintf](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md) 의 한 가지 주요 차이점은 **sprintf_s** 는 서식 문자열에서 유효한 형식 지정 문자를 확인 하는 것이 고, [sprintf](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md) 는 형식 문자열 또는 버퍼가 **NULL** 포인터 인지 여부만 확인 한다는 것입니다. 검사에 실패할 경우 [Parameter Validation](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 계속 해 서 실행 하도록 허용한 경우 함수는-1을 반환 하 고 **errno** 를 **EINVAL** 로 설정 합니다.
 
-**Sprintf_s** 와 [sprintf](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md) 의 다른 주요 차이점은 **sprintf_s** 는 출력 버퍼의 크기를 문자 단위로 지정 하는 길이 매개 변수를 사용 한다는 것입니다. 종료 null을 포함 하 여 서식이 지정 된 텍스트에 대해 버퍼가 너무 작은 경우 버퍼 [0]에 null 문자를 배치 하 *여 버퍼를*빈 문자열로 설정 하면 잘못 된 매개 변수 처리기가 호출 됩니다. **_Snprintf**와 달리 **sprintf_s** 는 버퍼 크기가 0이 아닌 한 버퍼를 null로 종료 하도록 보장 합니다.
+**Sprintf_s** 와 [sprintf](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md) 의 다른 주요 차이점은 **sprintf_s** 는 출력 버퍼의 크기를 문자 단위로 지정 하는 길이 매개 변수를 사용 한다는 것입니다. 종료 null을 포함 하 여 서식이 지정 된 텍스트에 대해 버퍼가 너무 작은 경우 버퍼 [0]에 null 문자를 배치 하 *여 버퍼를* 빈 문자열로 설정 하면 잘못 된 매개 변수 처리기가 호출 됩니다. **_Snprintf** 와 달리 **sprintf_s** 는 버퍼 크기가 0이 아닌 한 버퍼를 null로 종료 하도록 보장 합니다.
 
-**swprintf_s** 은 **sprintf_s**의 와이드 문자 버전입니다. **swprintf_s** 에 대 한 포인터 인수는 와이드 문자 문자열입니다. **Swprintf_s** 의 인코딩 오류 검색은 **sprintf_s**와 다를 수 있습니다. **_L** 접미사가 있는 이러한 함수 버전은 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하 고는 동일 합니다.
+**swprintf_s** 은 **sprintf_s** 의 와이드 문자 버전입니다. **swprintf_s** 에 대 한 포인터 인수는 와이드 문자 문자열입니다. **Swprintf_s** 의 인코딩 오류 검색은 **sprintf_s** 와 다를 수 있습니다. **_L** 접미사가 있는 이러한 함수 버전은 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하 고는 동일 합니다.
 
 C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 것이 보다 간단해 집니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있어 크기 인수를 지정할 필요가 없으며, 기존의 비보안 함수를 보다 최신의 보안 대응 함수로 자동으로 바꿀 수 있습니다. 자세한 내용은 [안전한 템플릿 오버로드](../../c-runtime-library/secure-template-overloads.md)를 참조하세요.
 
@@ -213,7 +214,7 @@ wrote 11 characters
 wrote -1 characters
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [스트림 I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>

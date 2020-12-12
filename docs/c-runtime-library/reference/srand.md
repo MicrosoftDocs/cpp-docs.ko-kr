@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: srand'
 title: srand
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - pseudorandom numbers
 - starting points, setting random
 - starting points
-ms.openlocfilehash: 3f6f97ad9a3bd0d7e4e88ad1797d369f012bbe5e
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: bea91841b549fae09faa4345767fc22cf4d6208e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913601"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97292172"
 ---
 # <a name="srand"></a>srand
 
@@ -76,7 +77,7 @@ void srand(
 
 [rand](rand.md)의 예제를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [부동 소수점 지원](../../c-runtime-library/floating-point-support.md)<br/>
 [rand](rand.md)<br/>

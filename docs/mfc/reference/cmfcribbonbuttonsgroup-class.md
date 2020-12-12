@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Cmfc리본 Buttonsgroup 클래스'
 title: CMFCRibbonButtonsGroup 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -30,16 +31,16 @@ helpviewer_keywords:
 - CMFCRibbonButtonsGroup [MFC], SetImages
 - CMFCRibbonButtonsGroup [MFC], SetParentCategory
 ms.assetid: b993d93e-fc1a-472f-a87f-1d7b7b499845
-ms.openlocfilehash: d690e8bf306234e7b742a4c6a0917e5430d92d10
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 0b86ce6ff21bd36daaac9d68ce511ae395141170
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81754108"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97293834"
 ---
 # <a name="cmfcribbonbuttonsgroup-class"></a>CMFCRibbonButtonsGroup 클래스
 
-이 `CMFCRibbonButtonsGroup` 클래스를 사용하면 리본 단추 집합을 그룹으로 구성할 수 있습니다. 그룹의 모든 단추는 가로로 서로 직접 인접해 있으며 테두리로 둘러싸여 있습니다.
+`CMFCRibbonButtonsGroup`클래스를 사용 하면 리본 단추 집합을 그룹으로 구성할 수 있습니다. 그룹의 모든 단추는 가로로 서로 직접 인접해 있으며 테두리로 둘러싸여 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -51,33 +52,33 @@ class CMFCRibbonButtonsGroup : public CMFCRibbonBaseElement
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
 |[CMFCRibbonButtonsGroup::CMFCRibbonButtonsGroup](#cmfcribbonbuttonsgroup)|`CMFCRibbonButtonsGroup` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[CMFC 리본 단추 그룹::추가 단추](#addbutton)|그룹에 단추를 추가합니다.|
-|[CMFC리본 단추 그룹::추가 단추](#addbuttons)|그룹에 단추 목록을 추가합니다.|
-|[CMFC 리본 단추 그룹::GetButton](#getbutton)|지정된 인덱스에 있는 단추에 대한 포인터를 반환합니다.|
-|[CMFC리본 버튼 그룹::겟카운트](#getcount)|그룹의 단추 수를 반환합니다.|
-|[CMFCRibbonButtonsGroup::GetImageSize](#getimagesize)|리본 그룹의 일반 이미지 의 이미지 크기를 [반환합니다(CMFCRibbonBaseElement::GetImageSize](../../mfc/reference/cmfcribbonbaseelement-class.md#getimagesize)재정의.)|
-|[CMFCRibbonButtonsGroup::GetRegularSize](#getregularsize)|리본 요소의 일반 크기를 [반환합니다(CMFC리본베이스요소 재정의::GetRegularSize.)](../../mfc/reference/cmfcribbonbaseelement-class.md#getregularsize)|
-|[CMFCRibbonButtonsGroup::HasImages](#hasimages)|개체에 `CMFCRibbonButtonsGroup` 도구 모음 이미지가 포함되어 있는지 여부를 보고합니다.|
-|[CMFCRibbonButtonsGroup::OnDrawImage](#ondrawimage)|단추의 정상 여부, 강조 표시 또는 사용 안 함 여부에 따라 지정된 단추에 대 한 적절 한 이미지를 그립니다.|
-|[CMFCRibbonButtonsGroup::RemoveAll](#removeall)|개체에서 모든 단추를 `CMFCRibbonButtonsGroup` 제거합니다.|
-|[CMFC리본 단추 그룹::세트 이미지](#setimages)|그룹에 이미지를 할당합니다.|
-|[CMFCRibbonButtonsGroup::SetParentCategory](#setparentcategory)|개체의 `CMFCRibbonCategory` 상위 및 개체 내의 모든 단추를 설정합니다(CMFCRibbonBaseElement:SetParentCategory 재정의.) [CMFCRibbonBaseElement::SetParentCategory](../../mfc/reference/cmfcribbonbaseelement-class.md#setparentcategory) `CMFCRibbonButtonsGroup`|
+|[Cmfc리본 Buttonsgroup:: AddButton](#addbutton)|그룹에 단추를 추가 합니다.|
+|[Cmfc리본 Buttonsgroup:: AddButtons](#addbuttons)|그룹에 단추 목록을 추가 합니다.|
+|[Cmfc리본 Buttonsgroup:: GetButton](#getbutton)|지정 된 인덱스에 있는 단추에 대 한 포인터를 반환 합니다.|
+|[Cmfc리본 Buttonsgroup:: GetCount](#getcount)|그룹의 단추 수를 반환 합니다.|
+|[CMFCRibbonButtonsGroup::GetImageSize](#getimagesize)|리본 그룹에 있는 일반 이미지의 이미지 크기를 반환 합니다 ( [Cmfcribbon Baseelement:: GetImageSize](../../mfc/reference/cmfcribbonbaseelement-class.md#getimagesize)재정의).|
+|[CMFCRibbonButtonsGroup::GetRegularSize](#getregularsize)|리본 요소의 일반 크기를 반환 합니다 ( [Cmfcribbon Baseelement:: GetRegularSize](../../mfc/reference/cmfcribbonbaseelement-class.md#getregularsize)재정의).|
+|[CMFCRibbonButtonsGroup::HasImages](#hasimages)|`CMFCRibbonButtonsGroup`개체에 도구 모음 이미지가 포함 되어 있는지 여부를 보고 합니다.|
+|[CMFCRibbonButtonsGroup::OnDrawImage](#ondrawimage)|단추가 정상 인지 강조 표시 되었는지 여부에 따라 지정 된 단추에 대 한 적절 한 이미지를 그립니다.|
+|[CMFCRibbonButtonsGroup::RemoveAll](#removeall)|개체에서 모든 단추를 제거 `CMFCRibbonButtonsGroup` 합니다.|
+|[Cmfc리본 Buttonsgroup:: SetImages](#setimages)|이미지를 그룹에 할당 합니다.|
+|[CMFCRibbonButtonsGroup::SetParentCategory](#setparentcategory)|`CMFCRibbonCategory`개체의 부모 `CMFCRibbonButtonsGroup` 와 그 안에 있는 모든 단추를 설정 합니다 ( [CmfcSetParentCategory Baseelement::](../../mfc/reference/cmfcribbonbaseelement-class.md#setparentcategory)재정의).|
 
 ## <a name="remarks"></a>설명
 
-이 그룹은 [CMFCBaseRibbonElement에서](../../mfc/reference/cmfcribbonbaseelement-class.md) 파생되며 단일 엔터티로 조작할 수 있습니다. 모든 패널 또는 팝업 메뉴에 그룹을 배치할 수 있습니다.
+그룹은 [Cmfcbaseribbonelement](../../mfc/reference/cmfcribbonbaseelement-class.md) 에서 파생 되며 단일 엔터티로 조작할 수 있습니다. 패널 또는 팝업 메뉴에 그룹을 배치할 수 있습니다.
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 `CMFCRibbonButtonsGroup` 클래스에서 다양한 메서드를 사용하는 방법을 보여 줍니다. 이 예제에서는 개체를 `CMFCRibbonButtonsGroup` 구성하고, 리본 단추 그룹에 이미지를 할당하고, 리본 단추 그룹에 단추를 추가하는 방법을 보여 주며, 단추를 추가합니다. 이 코드 조각은 [클라이언트 그리기 샘플](../../overview/visual-cpp-samples.md)의 일부입니다.
+다음 예제에서는 `CMFCRibbonButtonsGroup` 클래스에서 다양한 메서드를 사용하는 방법을 보여 줍니다. 예제에서는 개체를 생성 하 고 `CMFCRibbonButtonsGroup` , 리본 단추 그룹에 이미지를 할당 하 고, 리본 단추 그룹에 단추를 추가 하는 방법을 보여 줍니다. 이 코드 조각은 [클라이언트 그리기 샘플](../../overview/visual-cpp-samples.md)의 일부입니다.
 
 [!code-cpp[NVC_MFC_DrawClient#2](../../mfc/reference/codesnippet/cpp/cmfcribbonbuttonsgroup-class_1.cpp)]
 
@@ -91,11 +92,11 @@ class CMFCRibbonButtonsGroup : public CMFCRibbonBaseElement
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxribbonbuttonsgroup.h
+**헤더:** afxribbonbuttonsgroup
 
-## <a name="cmfcribbonbuttonsgroupaddbutton"></a><a name="addbutton"></a>CMFC 리본 단추 그룹::추가 단추
+## <a name="cmfcribbonbuttonsgroupaddbutton"></a><a name="addbutton"></a> Cmfc리본 Buttonsgroup:: AddButton
 
-그룹에 단추를 추가합니다.
+그룹에 단추를 추가 합니다.
 
 ```cpp
 void AddButton(CMFCRibbonBaseElement* pButton);
@@ -103,12 +104,12 @@ void AddButton(CMFCRibbonBaseElement* pButton);
 
 ### <a name="parameters"></a>매개 변수
 
-*p 버튼*<br/>
-【인】 추가할 단추에 대한 포인터입니다.
+*pButton*<br/>
+진행 추가할 단추에 대 한 포인터입니다.
 
-## <a name="cmfcribbonbuttonsgroupaddbuttons"></a><a name="addbuttons"></a>CMFC리본 단추 그룹::추가 단추
+## <a name="cmfcribbonbuttonsgroupaddbuttons"></a><a name="addbuttons"></a> Cmfc리본 Buttonsgroup:: AddButtons
 
-그룹에 단추 목록을 추가합니다.
+그룹에 단추 목록을 추가 합니다.
 
 ```cpp
 void AddButtons(
@@ -118,9 +119,9 @@ void AddButtons(
 ### <a name="parameters"></a>매개 변수
 
 *lstButtons*<br/>
-【인】 추가하려는 단추에 대한 포인터 목록입니다.
+진행 추가 하려는 단추에 대 한 포인터 목록입니다.
 
-## <a name="cmfcribbonbuttonsgroupcmfcribbonbuttonsgroup"></a><a name="cmfcribbonbuttonsgroup"></a>CMFC리본 단추 그룹::CMFC리본 단추 그룹
+## <a name="cmfcribbonbuttonsgroupcmfcribbonbuttonsgroup"></a><a name="cmfcribbonbuttonsgroup"></a> Cmfc리본 Buttonsgroup:: Cmfc리본 Buttonsgroup
 
 `CMFCRibbonButtonsGroup` 개체를 생성합니다.
 
@@ -131,16 +132,16 @@ CMFCRibbonButtonsGroup(CMFCRibbonBaseElement* pButton);
 
 ### <a name="parameters"></a>매개 변수
 
-*p 버튼*<br/>
-【인】 새로 만든 `CMFCRibbonButtonsGroup` 개체에 추가할 단추를 지정합니다.
+*pButton*<br/>
+진행 새로 만든 개체에 추가할 단추를 지정 합니다 `CMFCRibbonButtonsGroup` .
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcribbonbuttonsgroupgetbutton"></a><a name="getbutton"></a>CMFC 리본 단추 그룹::GetButton
+## <a name="cmfcribbonbuttonsgroupgetbutton"></a><a name="getbutton"></a> Cmfc리본 Buttonsgroup:: GetButton
 
-지정된 인덱스에 있는 단추에 대한 포인터를 반환합니다.
+지정 된 인덱스에 있는 단추에 대 한 포인터를 반환 합니다.
 
 ```
 CMFCRibbonBaseElement* GetButton(int i) const;
@@ -148,44 +149,44 @@ CMFCRibbonBaseElement* GetButton(int i) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*Ⅰ*<br/>
-【인】 반환할 단추의 0기반 인덱스입니다.
+*i*<br/>
+진행 반환할 단추의 0부터 시작 하는 인덱스입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-지정된 인덱스에 있는 단추에 대한 포인터입니다. 지정된 인덱스가 범위를 벗어난 경우 NULL입니다.
+지정 된 인덱스에 있는 단추에 대 한 포인터입니다. 지정 된 인덱스가 범위를 벗어난 경우 NULL입니다.
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcribbonbuttonsgroupgetcount"></a><a name="getcount"></a>CMFC리본 버튼 그룹::겟카운트
+## <a name="cmfcribbonbuttonsgroupgetcount"></a><a name="getcount"></a> Cmfc리본 Buttonsgroup:: GetCount
 
-그룹의 단추 수를 반환합니다.
+그룹의 단추 수를 반환 합니다.
 
 ```
 int GetCount() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 그룹의 단추 수입니다.
 
-## <a name="cmfcribbonbuttonsgroupgetimagesize"></a><a name="getimagesize"></a>CMFC리본 단추 그룹::GetImageSize
+## <a name="cmfcribbonbuttonsgroupgetimagesize"></a><a name="getimagesize"></a> Cmfc리본 Buttonsgroup:: GetImageSize
 
-보호된 `CMFCToolBarImages` 멤버의 `m_Images`원본 이미지 크기를 검색합니다.
+보호 된 멤버의 원본 이미지 크기를 검색 합니다 `CMFCToolBarImages` `m_Images` .
 
 ```
 const CSize GetImageSize() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-도구 모음 이미지의 원본 이미지 크기(있는 경우)를 `CSize` 반환하거나 그렇지 않은 경우 0을 반환합니다.
+도구 모음 이미지 (있는 경우)의 원본 이미지 크기를 반환 하거나, `CSize` 그렇지 않으면 0을 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcribbonbuttonsgroupgetregularsize"></a><a name="getregularsize"></a>CMFC 리본 버튼 그룹 ::GetRegularsize
+## <a name="cmfcribbonbuttonsgroupgetregularsize"></a><a name="getregularsize"></a> Cmfc리본 Buttonsgroup:: GetRegularSize
 
-리본 그룹 요소의 가능한 최대 크기를 검색합니다.
+리본 그룹 요소의 최대 가능 크기를 검색 합니다.
 
 ```
 virtual CSize GetRegularSize(CDC* pDC);
@@ -193,30 +194,30 @@ virtual CSize GetRegularSize(CDC* pDC);
 
 ### <a name="parameters"></a>매개 변수
 
-*pDC*<br/>
-【인】 리본 그룹의 장치 컨텍스트에 대한 포인터입니다.
+*컨트롤러가*<br/>
+진행 리본 그룹의 장치 컨텍스트에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcribbonbuttonsgrouphasimages"></a><a name="hasimages"></a>CMFC리본버튼그룹::하스이미지
+## <a name="cmfcribbonbuttonsgrouphasimages"></a><a name="hasimages"></a> Cmfc리본 Buttonsgroup:: HasImages
 
-개체에 `CMFCRibbonButtonsGroup` 도구 모음 이미지가 포함되어 있는지 여부를 보고합니다.
+`CMFCRibbonButtonsGroup`개체에 도구 모음 이미지가 포함 되어 있는지 여부를 보고 합니다.
 
 ```
 BOOL HasImages() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-보호된 `CMFCToolBarImages` 멤버에 `m_Images` 이미지가 포함된 경우 TRUE를 반환하거나 그렇지 않은 경우 FALSE를 반환합니다.
+보호 된 멤버에 이미지가 포함 된 경우 TRUE `CMFCToolBarImages` 를 반환 하 고 `m_Images` 그렇지 않으면 FALSE를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcribbonbuttonsgroupondrawimage"></a><a name="ondrawimage"></a>CMFC리본 단추 그룹::온드로우 이미지
+## <a name="cmfcribbonbuttonsgroupondrawimage"></a><a name="ondrawimage"></a> Cmfc리본 Buttonsgroup:: OnDrawImage
 
-단추의 정상 여부, 강조 표시 또는 사용 안 함 여부에 따라 지정된 단추에 대 한 적절 한 이미지를 그립니다.
+단추가 정상 인지 강조 표시 되었는지 여부에 따라 지정 된 단추에 대 한 적절 한 이미지를 그립니다.
 
 ```
 virtual void OnDrawImage(
@@ -228,23 +229,23 @@ virtual void OnDrawImage(
 
 ### <a name="parameters"></a>매개 변수
 
-*pDC*<br/>
-【인】 개체의 장치 컨텍스트에 `CMFCRibbonButtonsGroup` 대한 포인터입니다.
+*컨트롤러가*<br/>
+진행 개체의 장치 컨텍스트에 대 한 포인터 `CMFCRibbonButtonsGroup` 입니다.
 
 *rectImage*<br/>
-【인】 이미지를 그릴 사각형입니다.
+진행 이미지를 그릴 사각형입니다.
 
-*p 버튼*<br/>
-【인】 이미지를 그릴 버튼입니다.
+*pButton*<br/>
+진행 이미지를 그릴 단추입니다.
 
-*n이미지 인덱스*<br/>
-【인】 단추에 그릴 이미지의 인덱스입니다(일반, 강조 표시 또는 비활성화된 단추의 세 가지 이미지 배열 중 하나).
+*nImageIndex*<br/>
+진행 단추에 그릴 이미지의 인덱스입니다 (표준, 강조 표시 또는 비활성화 된 단추의 세 가지 이미지 배열 중 하나).
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcribbonbuttonsgroupremoveall"></a><a name="removeall"></a>CMFC리본 버튼 그룹::모두 제거
+## <a name="cmfcribbonbuttonsgroupremoveall"></a><a name="removeall"></a> Cmfc리본 Buttonsgroup:: RemoveAll
 
-개체에서 모든 단추를 `CMFCRibbonButtonsGroup` 제거합니다.
+개체에서 모든 단추를 제거 `CMFCRibbonButtonsGroup` 합니다.
 
 ```cpp
 void RemoveAll();
@@ -252,9 +253,9 @@ void RemoveAll();
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcribbonbuttonsgroupsetimages"></a><a name="setimages"></a>CMFC리본 단추 그룹::세트 이미지
+## <a name="cmfcribbonbuttonsgroupsetimages"></a><a name="setimages"></a> Cmfc리본 Buttonsgroup:: SetImages
 
-리본 단추 그룹에 이미지를 할당합니다.
+리본 단추 그룹에 이미지를 할당 합니다.
 
 ```cpp
 void SetImages(
@@ -265,25 +266,25 @@ void SetImages(
 
 ### <a name="parameters"></a>매개 변수
 
-*p 이미지*<br/>
-【인】 일반 이미지.
+*pImages*<br/>
+진행 일반 이미지.
 
-*pHotimages*<br/>
-【인】 뜨거운 이미지.
+*pHotImages*<br/>
+진행 핫 이미지.
 
-*p장애인 이미지*<br/>
-【인】 비활성화된 이미지입니다.
+*pDisabledImages*<br/>
+진행 이미지를 사용할 수 없습니다.
 
 ### <a name="remarks"></a>설명
 
-그룹에 `SetImages` 단추를 추가하기 전에 전화를 합니다. 이미지 수는 그룹에 추가할 단추 수와 같거나 같아야 합니다.
+`SetImages`그룹에 단추를 추가 하기 전에를 호출 합니다. 이미지 수는 그룹에 추가할 단추 수보다 크거나 같아야 합니다.
 
 > [!NOTE]
-> 핫 이미지는 사용자가 단추 위로 마우스를 가져간 경우 표시되는 이미지입니다. 비활성화된 이미지는 단추를 사용하지 않도록 설정하면 표시되는 이미지입니다.
+> 핫 이미지는 사용자가 단추를 가리킬 때 표시 되는 이미지입니다. 사용 하지 않도록 설정 된 이미지는 단추를 사용할 수 없을 때 표시 되는 이미지입니다.
 
-## <a name="cmfcribbonbuttonsgroupsetparentcategory"></a><a name="setparentcategory"></a>CMFC리본 단추 그룹::설정 부모 범주
+## <a name="cmfcribbonbuttonsgroupsetparentcategory"></a><a name="setparentcategory"></a> Cmfc리본 Buttonsgroup:: SetParentCategory
 
-`CMFCRibbonButtonsGroup` 개체의 상위 `CMFCRibbonCategory` 및 개체 내의 모든 단추를 설정합니다.
+`CMFCRibbonCategory`개체의 부모 `CMFCRibbonButtonsGroup` 와 그 안의 모든 단추를 설정 합니다.
 
 ```
 virtual void SetParentCategory(CMFCRibbonCategory* pCategory);
@@ -291,12 +292,12 @@ virtual void SetParentCategory(CMFCRibbonCategory* pCategory);
 
 ### <a name="parameters"></a>매개 변수
 
-*p카테고리*<br/>
-【인】 설정할 상위 범주에 대한 포인터(리본 컨트롤의 탭그룹을 범주라고 함).
+*pCategory*<br/>
+진행 설정할 부모 범주에 대 한 포인터입니다 (리본 컨트롤의 탭 그룹을 범주 라고 함).
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)

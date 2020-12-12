@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3203'
 title: 컴파일러 오류 C3203
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3203
 ms.assetid: 6356770e-22c1-434c-91fe-f60b0aa23b91
-ms.openlocfilehash: 1d0ed5ec717efecb9fbea4a9451836c0471522b6
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: ea0c54fc54cfa19d4d41a712fba0fa24fe03abb5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74738715"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97291859"
 ---
 # <a name="compiler-error-c3203"></a>컴파일러 오류 C3203
 

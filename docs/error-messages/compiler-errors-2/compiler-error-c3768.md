@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3768'
 title: 컴파일러 오류 C3768
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3768
 ms.assetid: 091f0d53-1dff-43fd-813d-5c43c85b6ab0
-ms.openlocfilehash: 534be9e3873276313335ca921264be92c9259b93
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3203fe74fb1da91f24312f76ca11ac49711da8f9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80165745"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97291716"
 ---
 # <a name="compiler-error-c3768"></a>컴파일러 오류 C3768
 
@@ -21,7 +22,7 @@ ms.locfileid: "80165745"
 
 **/Clr: pure** 컴파일러 옵션은 visual studio 2015에서는 더 이상 사용 되지 않으며 visual studio 2017에서는 지원 되지 않습니다.
 
-**/Clr: pure**를 사용 하 여 컴파일하는 경우 가상 `vararg` 함수의 주소를 가져올 수 없습니다.
+**/Clr: pure** 를 사용 하 여 컴파일하는 경우 가상 함수의 주소를 가져올 수 없습니다 `vararg` .
 
 ## <a name="example"></a>예제
 

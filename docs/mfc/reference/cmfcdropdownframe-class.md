@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CMFCDropDownFrame 클래스'
 title: CMFCDropDownFrame 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - CMFCDropDownFrame [MFC], RecalcLayout
 - CMFCDropDownFrame [MFC], SetAutoDestroy
 ms.assetid: 09ff81a9-de00-43ec-9df9-b626f7728c4b
-ms.openlocfilehash: 62bab0fbde364406f35edb959abb6e55a9125504
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9ab5cbaf600fe7970bdff229b43d34fd04c8fbb9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840741"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97294043"
 ---
 # <a name="cmfcdropdownframe-class"></a>CMFCDropDownFrame 클래스
 

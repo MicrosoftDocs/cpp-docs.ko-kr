@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CMFCDynamicLayout 클래스'
 title: CMFCDynamicLayout 클래스
 ms.date: 08/29/2019
 f1_keywords:
@@ -15,12 +16,12 @@ f1_keywords:
 - AFXLAYOUT/CMFCDynamicLayout::LoadResource
 - AFXLAYOUT/CMFCDynamicLayout::SetMinSize
 ms.assetid: c2df2976-f049-47fc-9cf0-abe3e01948bc
-ms.openlocfilehash: 1c5d73897f7028768476c82824f8c0b6d530aea2
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 56979cce8ff20224cae444dab038bae29deeb39b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90742907"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97293913"
 ---
 # <a name="cmfcdynamiclayout-class"></a>CMFCDynamicLayout 클래스
 
@@ -36,14 +37,14 @@ class CMFCDynamicLayout : public CObject
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |`CMFCDynamicLayout::CMFCDynamicLayout`|`CMFCDynamicLayout` 개체를 생성합니다.|
 |`CMFCDynamicLayout::~CMFCDynamicLayout`|소멸자|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CMFCDynamicLayout::AddItem](#additem)|자식 창(일반적으로 컨트롤)을 동적 레이아웃 관리자가 제어하는 창 목록에 추가합니다.|
 |[CMFCDynamicLayout::Adjust](#adjust)|자식 창(일반적으로 컨트롤)을 동적 레이아웃 관리자가 제어하는 창 목록에 추가합니다.|
@@ -66,7 +67,7 @@ class CMFCDynamicLayout : public CObject
 
 ## <a name="nested-types"></a>중첩 형식
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |[CMFCDynamicLayout::MoveSettings 구조체](#movesettings_structure)|동적 레이아웃의 컨트롤에 대한 이동 데이터를 캡슐화합니다.|
 |[CMFCDynamicLayout::SizeSettings 구조체](#sizesettings_structure)|동적 레이아웃의 컨트롤에 대한 크기 변경 데이터를 캡슐화합니다.|
@@ -518,7 +519,7 @@ static SizeSettings SizeVertical(int nRatio);
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)

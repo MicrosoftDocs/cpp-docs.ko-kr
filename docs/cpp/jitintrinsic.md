@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: jitintrinsic'
 title: jitintrinsic
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - __declspec keyword [C++], jitintrinsic
 - jitintrinsic __declspec modifier
 ms.assetid: 23dbe416-7ef6-442b-b16d-9a81aab04fa6
-ms.openlocfilehash: cecadcad15ee65a44ad5a8245efdb69903c89459
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 29f4db3e946d2ccf0ec96bb0248e751bb9297db5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233706"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97292002"
 ---
 # <a name="jitintrinsic"></a>jitintrinsic
 
@@ -34,4 +35,4 @@ __declspec(jitintrinsic)
 ## <a name="see-also"></a>참고 항목
 
 [__declspec](../cpp/declspec.md)<br/>
-[C++ 키워드](../cpp/keywords-cpp.md)
+[키워드](../cpp/keywords-cpp.md)
