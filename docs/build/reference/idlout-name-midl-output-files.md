@@ -1,4 +1,5 @@
 ---
+description: 자세히 알아보기:/IDLOUT (MIDL 출력 파일 이름)
 title: /IDLOUT(MIDL 출력 파일 이름 지정)
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - -IDLOUT linker option
 - IDLOUT linker option
 ms.assetid: 10d00a6a-85b4-4de1-8732-e422c6931509
-ms.openlocfilehash: 8dc26a0564a979c918d1eb1eb85e63e9c73caba0
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 9835721d3e9b376feca51d87d375efa79dc43df7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91506935"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97199846"
 ---
 # <a name="idlout-name-midl-output-files"></a>/IDLOUT(MIDL 출력 파일 이름 지정)
 
@@ -44,13 +45,13 @@ MIDL 컴파일러는 [module](../../windows/attributes/module-cpp.md) 특성을 
 
 - *파일 이름*.tlb
 
-- *파일 이름*_p .c
+- *파일 이름* _p .c
 
-- *파일 이름*_i .c
+- *파일 이름* _i .c
 
 - *파일 이름*.h
 
-*filename* 은/IDLOUT.에 전달 하는 매개 변수입니다. [/TLBOUT](tlbout-name-dot-tlb-file.md) 가 지정 된 경우 .tlb 파일은/TLBOUT *filename*에서 이름을 가져옵니다.
+*filename* 은/IDLOUT.에 전달 하는 매개 변수입니다. [/TLBOUT](tlbout-name-dot-tlb-file.md) 가 지정 된 경우 .tlb 파일은/TLBOUT *filename* 에서 이름을 가져옵니다.
 
 /IDLOUT 또는/TLBOUT를 모두 지정 하지 않으면 링커가 vc70, vc70, vc70_p, vc70_i 및 vc70을 만듭니다.
 

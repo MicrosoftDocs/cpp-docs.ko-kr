@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CInvalidArgException 클래스'
 title: CInvalidArgException 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - CInvalidArgException [MFC], CInvalidArgException
 ms.assetid: e43d7c67-1157-47f8-817a-804083e8186e
-ms.openlocfilehash: b28b6e84043b85a8117694a67ff5fff13e7c786b
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: f68642747a81d1c45a8246f4f25abfb8b79c81d8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81372370"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97202797"
 ---
 # <a name="cinvalidargexception-class"></a>CInvalidArgException 클래스
 
@@ -29,15 +30,15 @@ class CInvalidArgException : public CSimpleException
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[CInvalidArg예외::CInvalidArgException](#cinvalidargexception)|생성자입니다.|
+|[CInvalidArgException:: CInvalidArgException](#cinvalidargexception)|생성자입니다.|
 
 ## <a name="remarks"></a>설명
 
-개체는 `CInvalidArgException` 잘못된 인수 예외 조건을 나타냅니다.
+`CInvalidArgException`개체가 잘못 된 인수 예외 상태를 나타냅니다.
 
-예외 처리에 대한 자세한 내용은 [CException 클래스](../../mfc/reference/cexception-class.md) 항목 및 [예외 처리(MFC)를](../../mfc/exception-handling-in-mfc.md)참조하십시오.
+예외 처리에 대 한 자세한 내용은 [Cexception 클래스](../../mfc/reference/cexception-class.md) 항목 및 [예외 처리 (MFC)](../../mfc/exception-handling-in-mfc.md)를 참조 하세요.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -51,9 +52,9 @@ class CInvalidArgException : public CSimpleException
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afx.h
+**헤더:** afx
 
-## <a name="cinvalidargexceptioncinvalidargexception"></a><a name="cinvalidargexception"></a>CInvalidArg예외::CInvalidArgException
+## <a name="cinvalidargexceptioncinvalidargexception"></a><a name="cinvalidargexception"></a> CInvalidArgException:: CInvalidArgException
 
 생성자입니다.
 
@@ -63,7 +64,7 @@ CInvalidArgException();
 
 ### <a name="remarks"></a>설명
 
-이 생성자는 직접 사용하지 마십시오. 글로벌 함수 **AfxthrowInvalidArgException을**호출합니다.
+이 생성자를 직접 사용 하지 마십시오. **AfxThrowInvalidArgException** 전역 함수를 호출 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

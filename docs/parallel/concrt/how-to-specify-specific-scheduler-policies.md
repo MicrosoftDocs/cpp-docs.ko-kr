@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 방법: 특정 스케줄러 정책 지정'
 title: '방법: 특정 Scheduler 정책 지정'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - specifying scheduler policies [Concurrency Runtime]
 - scheduler policies, specifying [Concurrency Runtime]
 ms.assetid: 9c5149f9-ac34-4ff3-9e79-0bad103e4e6b
-ms.openlocfilehash: bd5edfbdf6b0fda9c7e327dab9538bbf6b5e4b12
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: c4aeeea04d69613ef3eb80f36863b16530e18e37
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142446"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97197259"
 ---
 # <a name="how-to-specify-specific-scheduler-policies"></a>방법: 특정 Scheduler 정책 지정
 
@@ -45,7 +46,7 @@ Scheduler that has a custom policy:
 
 ## <a name="compiling-the-code"></a>코드 컴파일
 
-예제 코드를 복사 하 여 Visual Studio 프로젝트에 붙여넣거나, `scheduler-policy.cpp` 이름이 지정 된 파일에 붙여 넣은 후 Visual Studio 명령 프롬프트 창에서 다음 명령을 실행 합니다.
+예제 코드를 복사 하 여 Visual Studio 프로젝트에 붙여넣거나 라는 파일에 붙여 넣은 `scheduler-policy.cpp` 후 Visual Studio 명령 프롬프트 창에서 다음 명령을 실행 합니다.
 
 > **cl.exe/EHsc scheduler-policy**
 
@@ -53,4 +54,4 @@ Scheduler that has a custom policy:
 
 [스케줄러 정책](../../parallel/concrt/scheduler-policies.md)<br/>
 [방법: 스케줄러 인스턴스 관리](../../parallel/concrt/how-to-manage-a-scheduler-instance.md)<br/>
-[방법: 특정 스케줄러 정책을 사용하는 에이전트 만들기](../../parallel/concrt/how-to-create-agents-that-use-specific-scheduler-policies.md)
+[방법: 특정 스케줄러 정책을 사용 하는 에이전트 만들기](../../parallel/concrt/how-to-create-agents-that-use-specific-scheduler-policies.md)

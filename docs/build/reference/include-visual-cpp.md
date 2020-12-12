@@ -1,5 +1,6 @@
 ---
-title: '> 포함 &lt;(C++ 문서 설명)'
+description: '자세히 알아보기: &lt; 포함&gt;'
+title: '&lt;> 포함 (c + + 문서 주석)'
 ms.date: 11/04/2016
 f1_keywords:
 - <include>
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - include C++ XML tag
 - <include> C++ XML tag
 ms.assetid: 392a3e61-0371-4617-8362-446650876ce3
-ms.openlocfilehash: e1d6a26f28069cfb4a1c74bd591d63bc89352774
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 577281b293fcca9b9b0b9491dd239240d435f32c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79439512"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97199781"
 ---
 # <a name="ltincludegt"></a>&lt;include&gt;
 
-\<include> 태그를 사용하면 소스 코드의 형식과 멤버를 설명하는 다른 파일의 주석을 참조할 수 있습니다. 소스 코드 파일에 직접 문서 주석을 포함하는 대신 사용되는 대안입니다.  예를 들어 \<include>를 사용하여 팀이나 회사 전체에서 사용되는 표준 "상용구" 주석을 삽입할 수 있습니다.
+\<include> 태그를 사용하면 소스 코드의 형식과 멤버를 설명하는 다른 파일의 주석을 참조할 수 있습니다. 소스 코드 파일에 직접 문서 주석을 포함하는 대신 사용되는 대안입니다.  예를 들어를 사용 \<include> 하 여 팀 또는 회사 전체에서 사용 되는 표준 "상용구" 주석을 삽입할 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -40,13 +41,13 @@ ms.locfileid: "79439512"
 
 ## <a name="remarks"></a>설명
 
-\<include> 태그는 XML XPath 구문을 사용합니다. \<include>를 사용하여 사용자 지정하는 방법은 XPath 설명서를 참조하세요.
+\<include> 태그는 XML XPath 구문을 사용합니다. 를 사용 하 여 사용자 지정 하는 방법은 XPath 설명서를 참조 하세요 \<include> .
 
-[/doc](doc-process-documentation-comments-c-cpp.md)로 컴파일하여 문서 주석을 파일로 처리합니다.
+[/Doc](doc-process-documentation-comments-c-cpp.md) 를 사용 하 여 컴파일하여 문서 주석을 파일로 처리 합니다.
 
 ## <a name="example"></a>예제
 
-다중 파일 예제입니다. \<include>를 사용하는 첫 번째 파일에는 다음과 같은 문서 주석이 포함되어 있습니다.
+다중 파일 예제입니다. 에서 사용 하는 첫 번째 파일에는 \<include> 다음과 같은 문서 주석이 포함 되어 있습니다.
 
 ```cpp
 // xml_include_tag.cpp

@@ -1,5 +1,6 @@
 ---
-title: C++디버깅 속성 페이지
+description: '자세한 정보: c + + 디버깅 속성 페이지'
+title: C + + 디버깅 속성 페이지
 ms.date: 07/24/2019
 ms.topic: article
 ms.assetid: 78115a6b-3799-4515-814e-8566b5bdc55d
@@ -35,16 +36,16 @@ f1_keywords:
 - VC.Project.IVCWebSvcDebugPageObject.HttpUrl
 - VC.Project.IVCWebSvcDebugPageObject.DebuggerType
 - VC.Project.IVCWebSvcDebugPageObject.SQLDebugging
-ms.openlocfilehash: c2190c4406e165cfec1915234b688c598f228777
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 16a7fec317485dd20a430baab9a413586f913fa3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80169710"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97201744"
 ---
-# <a name="c-debugging-property-pages"></a>C++디버깅 속성 페이지
+# <a name="c-debugging-property-pages"></a>C + + 디버깅 속성 페이지
 
-이러한 속성 페이지는 **프로젝트** > **속성** > **구성 속성** > **디버깅**에서 찾을 수 있습니다. 드롭다운 컨트롤에서 디버거 형식을 선택 합니다. 코드를 디버깅 C++ 하는 방법에 대 한 자세한 내용은 [자습서: C++ Visual Studio를 사용 하 여 코드를 디버그](/visualstudio/debugger/getting-started-with-the-debugger-cpp) 하 고 [네이티브 코드 디버깅](/visualstudio/debugger/debugging-native-code)을 참조 하세요.
+이러한 속성 페이지는 **프로젝트**  >  **속성**  >  **구성 속성**  >  **디버깅** 아래에 있습니다. 드롭다운 컨트롤에서 디버거 형식을 선택 합니다. C + + 코드를 디버깅 하는 방법에 대 한 자세한 내용은 [자습서: Visual Studio를 사용 하 여 c + + 코드 디버그](/visualstudio/debugger/getting-started-with-the-debugger-cpp) 및 [네이티브 코드 디버깅](/visualstudio/debugger/debugging-native-code)을 참조 하세요.
 
 ## <a name="local-windows-debugger-property-page"></a>로컬 Windows 디버거 속성 페이지
 
@@ -75,9 +76,9 @@ ms.locfileid: "80169710"
 - **혼합** -혼합
 - **자동** 자동
 - **스크립트** -스크립트
-- **GPU 전용 (C++ amp)** -gpu 전용 (C++ amp)
+- **Gpu 전용 (C++ AMP)** -gpu만 (C++ AMP)
 
-### <a name="environment"></a>Environment
+### <a name="environment"></a>환경
 
 디버깅할 프로그램의 환경 또는 기존 환경과 병합할 변수를 지정 합니다.
 
@@ -104,11 +105,11 @@ SQL 디버거를 연결 합니다.
 
 ### <a name="amp-default-accelerator"></a>Amp 기본 액셀러레이터
 
-AMP C++ 의 기본 액셀러레이터 키 선택을 재정의 합니다. 관리 코드를 디버깅할 때는 속성이 적용 되지 않습니다.
+C++ AMP의 기본 액셀러레이터 키 선택을 재정의 합니다. 관리 코드를 디버깅할 때는 속성이 적용 되지 않습니다.
 
 ## <a name="remote-windows-debugger-property-page"></a>원격 Windows 디버거 속성 페이지
 
-원격 디버깅에 대 한 자세한 내용은 [Visual Studio에서 visual C++ 프로젝트 원격 디버깅](/visualstudio/debugger/remote-debugging-cpp)을 참조 하세요.
+원격 디버깅에 대 한 자세한 내용은 [Visual Studio에서 Visual C++ 프로젝트 원격 디버깅](/visualstudio/debugger/remote-debugging-cpp)을 참조 하세요.
 
 ### <a name="remote-command"></a>원격 명령
 
@@ -146,9 +147,9 @@ AMP C++ 의 기본 액셀러레이터 키 선택을 재정의 합니다. 관리 
 - **혼합** -혼합
 - **자동** 자동
 - **스크립트** -스크립트
-- **GPU 전용 (C++ amp)** -gpu 전용 (C++ amp)
+- **Gpu 전용 (C++ AMP)** -gpu만 (C++ AMP)
 
-### <a name="environment"></a>Environment
+### <a name="environment"></a>환경
 
 디버깅할 프로그램의 환경 또는 기존 환경과 병합할 변수를 지정 합니다.
 
@@ -187,7 +188,7 @@ SQL 디버거를 연결 합니다.
 
 ### <a name="amp-default-accelerator"></a>Amp 기본 액셀러레이터
 
-AMP C++ 의 기본 액셀러레이터 키 선택을 재정의 합니다. 관리 코드를 디버깅할 때는 속성이 적용 되지 않습니다.
+C++ AMP의 기본 액셀러레이터 키 선택을 재정의 합니다. 관리 코드를 디버깅할 때는 속성이 적용 되지 않습니다.
 
 ## <a name="web-browser-debugger-property-page"></a>웹 브라우저 디버거 속성 페이지
 

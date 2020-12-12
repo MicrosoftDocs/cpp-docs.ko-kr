@@ -1,4 +1,5 @@
 ---
+description: 'MFC ActiveX 컨트롤: ActiveX 컨트롤에 스톡 이벤트 추가에 대해 자세히 알아보세요.'
 title: 'MFC ActiveX 컨트롤: ActiveX 컨트롤에 스톡 이벤트 추가'
 ms.date: 11/04/2016
 f1_keywords:
@@ -42,12 +43,12 @@ helpviewer_keywords:
 - EVENT_STOCK_READYSTATECHANGE event
 - EVENT_STOCK_KEYPRESS event
 ms.assetid: 3eeadc67-4b3d-4444-8caa-53054073988a
-ms.openlocfilehash: e63e63b914b9db64139b9b81a2c749a78ac4a58f
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: e5b99ca2cd8675ab133f56d0e815abe0829867eb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91503849"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97202901"
 ---
 # <a name="mfc-activex-controls-adding-stock-events-to-an-activex-control"></a>MFC ActiveX 컨트롤: ActiveX 컨트롤에 스톡 이벤트 추가
 
@@ -59,11 +60,11 @@ ms.locfileid: "91503849"
 
 ### <a name="stock-events"></a>스톡 이벤트
 
-|이벤트|실행 함수|주석|
+|이벤트|실행 함수|의견|
 |-----------|---------------------|--------------|
-|클릭|**void FireClick ()**|컨트롤에서 마우스를 캡처할 때 발생 합니다. 단추 **위로** (왼쪽, 중간 또는 오른쪽) 메시지가 수신 되 고 단추는 컨트롤을 통해 릴리스됩니다. 스톡 MouseDown 및 MouseUp 이벤트는이 이벤트 보다 먼저 발생 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_CLICK ()**|
+|사이드바에서|**void FireClick ()**|컨트롤에서 마우스를 캡처할 때 발생 합니다. 단추 **위로** (왼쪽, 중간 또는 오른쪽) 메시지가 수신 되 고 단추는 컨트롤을 통해 릴리스됩니다. 스톡 MouseDown 및 MouseUp 이벤트는이 이벤트 보다 먼저 발생 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_CLICK ()**|
 |DblClick|**void FireDblClick ()**|클릭과 유사 하지만 **BUTTONDBLCLK** 메시지를 받을 때 발생 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_DBLCLICK ()**|
-|Error|**void FireError (***scode* * **lpcstr** , `lpszDescription` **UINT** `nHelpID` **= 0)**        |메서드 호출 또는 속성 액세스 범위 밖의 ActiveX 컨트롤 내에서 오류가 발생할 때 발생 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_ERROREVENT ()**|
+|오류|**void FireError (** * **lpcstr** , `lpszDescription` **UINT** `nHelpID` **= 0)**        |메서드 호출 또는 속성 액세스 범위 밖의 ActiveX 컨트롤 내에서 오류가 발생할 때 발생 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_ERROREVENT ()**|
 |KeyDown|**void FireKeyDown (short** `nChar` **, short** `nShiftState` **)**      |`WM_SYSKEYDOWN`또는 메시지를 받을 때 발생 `WM_KEYDOWN` 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_KEYDOWN ()**|
 |KeyPress|**Void FireKeyPress (short)** <strong>\*</strong> `pnChar` **)**    |메시지를 받을 때 발생 `WM_CHAR` 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_KEYPRESS ()**|
 |KeyUp|**void FireKeyUp (short** `nChar` **, short** `nShiftState` **)**      |`WM_SYSKEYUP`또는 메시지를 받을 때 발생 `WM_KEYUP` 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_KEYUP ()**|
@@ -82,13 +83,13 @@ ms.locfileid: "91503849"
 
 1. 클래스 뷰에서 ActiveX 컨트롤 클래스를 마우스 오른쪽 단추로 클릭 하 여 바로 가기 메뉴를 엽니다.
 
-1. 바로 가기 메뉴에서 **추가** 를 클릭 한 다음 **이벤트 추가**를 클릭 합니다.
+1. 바로 가기 메뉴에서 **추가** 를 클릭 한 다음 **이벤트 추가** 를 클릭 합니다.
 
    그러면 이벤트 추가 마법사가 열립니다.
 
 1. **이벤트 이름** 드롭다운 목록에서을 선택 `KeyPress` 합니다.
 
-1. **Finish**를 클릭합니다.
+1. **Finish** 를 클릭합니다.
 
 ## <a name="add-event-wizard-changes-for-stock-events"></a><a name="_core_classwizard_changes_for_stock_events"></a> 스톡 이벤트에 대 한 이벤트 추가 마법사 변경
 

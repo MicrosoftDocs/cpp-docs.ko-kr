@@ -1,4 +1,5 @@
 ---
+description: 자세히 알아보기:/IGNOREIDL (t를 MIDL로 특성 처리&#39;안 함)
 title: /IGNOREIDL (&#39;t를 MIDL로 처리 하지 않음)
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - -IGNOREIDL linker option
 - /IGNOREIDL linker option
 ms.assetid: 29514098-6a1c-4317-af2f-1dc268972780
-ms.openlocfilehash: eac6209e0c34562254117d6ab9db5f47545037ea
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: c68b3ec2f9bd5607ef523667bcddc68b22d3c34c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91506892"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97199820"
 ---
 # <a name="ignoreidl-don39t-process-attributes-into-midl"></a>/IGNOREIDL (&#39;t를 MIDL로 처리 하지 않음)
 

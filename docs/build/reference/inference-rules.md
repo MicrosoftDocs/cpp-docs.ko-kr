@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 유추 규칙'
 title: 유추 규칙
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - rules, inference
 - NMAKE program, inference rules
 ms.assetid: caff320f-fb07-4eea-80c3-a6a2133a8492
-ms.openlocfilehash: d3d7ca41d96d3845237b445edefff05044dacdc2
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: fc063f71ff88442ce6f7fc02c5b22f015ce0010c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80170516"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97199755"
 ---
 # <a name="inference-rules"></a>유추 규칙
 
@@ -25,9 +26,9 @@ ms.locfileid: "80170516"
 
 [일괄 처리 모드 규칙](batch-mode-rules.md)
 
-[미리 정의 된 규칙](predefined-rules.md)
+[미리 정의된 규칙](predefined-rules.md)
 
-[유추 된 종속 항목 및 규칙](inferred-dependents-and-rules.md)
+[유추된 종속 파일과 규칙](inferred-dependents-and-rules.md)
 
 [유추 규칙의 우선 순위](precedence-in-inference-rules.md)
 

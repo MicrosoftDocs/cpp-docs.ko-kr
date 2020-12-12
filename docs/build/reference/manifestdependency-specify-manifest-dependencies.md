@@ -1,4 +1,5 @@
 ---
+description: 자세히 알아보기:/MANIFESTDEPENDENCY (매니페스트 종속성 지정)
 title: /MANIFESTDEPENDENCY(매니페스트 종속성 지정)
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - /MANIFESTDEPENDENCY linker option
 - -MANIFESTDEPENDENCY linker option
 ms.assetid: e4b68313-33a2-4c3e-908e-ac2b9f7d6a73
-ms.openlocfilehash: 43239efe70cc555d1a7e03c5d67e99e40ccd480e
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 129dc84818b0bda9b2106c0d07dca5b605dc6f96
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69492701"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97199169"
 ---
 # <a name="manifestdependency-specify-manifest-dependencies"></a>/MANIFESTDEPENDENCY(매니페스트 종속성 지정)
 
@@ -23,11 +24,11 @@ ms.locfileid: "69492701"
 
 ## <a name="remarks"></a>설명
 
-/MANIFESTDEPENDENCY를 사용 하면 매니페스트 파일의 \<종속성 > 섹션에 배치 되는 특성을 지정할 수 있습니다.
+/MANIFESTDEPENDENCY를 사용 하면 \<dependency> 매니페스트 파일의 섹션에 배치 되는 특성을 지정할 수 있습니다.
 
 매니페스트 파일을 만드는 방법에 대 한 자세한 내용은 [/smanifest (Side-by-side 어셈블리 매니페스트 만들기)](manifest-create-side-by-side-assembly-manifest.md) 를 참조 하세요.
 
-매니페스트 파일의 \<종속성 > 섹션에 대 한 자세한 내용은 [게시자 구성 파일](/windows/win32/SbsCs/publisher-configuration-files)을 참조 하세요.
+매니페스트 파일의 섹션에 대 한 자세한 내용은 \<dependency> [게시자 구성 파일](/windows/win32/SbsCs/publisher-configuration-files)을 참조 하세요.
 
 /MANIFESTDEPENDENCY 정보는 다음 두 가지 방법 중 하나로 링커에 전달할 수 있습니다.
 
@@ -63,7 +64,7 @@ ms.locfileid: "69492701"
 
 1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. **구성 속성** > 링커매니페스트 > **파일** 속성 페이지를 선택 합니다.
+1. **구성 속성**  >  **링커**  >  **매니페스트 파일** 속성 페이지를 선택 합니다.
 
 1. **추가 매니페스트 종속성** 속성을 수정 합니다.
 
@@ -71,7 +72,7 @@ ms.locfileid: "69492701"
 
 1. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalManifestDependencies%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [MSVC 링커 참조](linking.md)<br/>
 [MSVC 링커 옵션](linker-options.md)

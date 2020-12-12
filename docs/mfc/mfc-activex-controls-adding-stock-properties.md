@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: MFC ActiveX 컨트롤: 스톡 속성 추가'
 title: 'MFC ActiveX 컨트롤: 스톡 속성 추가'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - foreground colors, ActiveX controls
 - foreground colors [MFC]
 ms.assetid: 8b98c8c5-5b69-4366-87bf-0e61e6668ecb
-ms.openlocfilehash: 27fed55ac8a5fc8b95f81c1bfd2c6edb3da6227d
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 1bcfc69fe5fd7cdcadcd641fb831c07bde79bbfe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502240"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97202823"
 ---
 # <a name="mfc-activex-controls-adding-stock-properties"></a>MFC ActiveX 컨트롤: 스톡 속성 추가
 
@@ -47,13 +48,13 @@ ms.locfileid: "91502240"
 
 1. 컨트롤의 인터페이스 노드(라이브러리 노드의 두 번째 노드)를 마우스 오른쪽 단추로 클릭하여 바로 가기 메뉴를 엽니다.
 
-1. 바로 가기 메뉴에서 **추가** 를 클릭 한 다음 **속성 추가**를 클릭 합니다.
+1. 바로 가기 메뉴에서 **추가** 를 클릭 한 다음 **속성 추가** 를 클릭 합니다.
 
    그러면 [속성 추가 마법사](../ide/adding-a-property-visual-cpp.md#names-add-property-wizard)가 열립니다.
 
-1. **속성 이름** 상자에서 **캡션**을 클릭 합니다.
+1. **속성 이름** 상자에서 **캡션** 을 클릭 합니다.
 
-1. **Finish**를 클릭합니다.
+1. **Finish** 를 클릭합니다.
 
 ## <a name="add-property-wizard-changes-for-stock-properties"></a><a name="_core_classwizard_changes_for_stock_properties"></a> 스톡 속성에 대 한 속성 추가 마법사 변경 내용
 
