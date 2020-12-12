@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 데이터 개체 및 데이터 원본 (OLE)'
 title: 데이터 개체 및 데이터 소스(OLE)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - OLE [MFC], data objects
 - OLE [MFC], data sources
 ms.assetid: 8f68eed8-0ce8-4489-a4cc-f95554f89090
-ms.openlocfilehash: dfe400dddfecce3e52337f7f449e975dff2ca83e
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 719053e2a75b18fbf54440403351198acc66b9d3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616214"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97291209"
 ---
 # <a name="data-objects-and-data-sources-ole"></a>데이터 개체 및 데이터 소스(OLE)
 
@@ -27,7 +28,7 @@ ms.locfileid: "84616214"
 
 다음 문서에서는 응용 프로그램에서 데이터 개체 및 데이터 소스를 사용 하는 방법을 설명 합니다. 이 정보는 데이터를 복사 하 여 붙여넣기 위해 둘 다 호출 될 수 있으므로 컨테이너 및 서버 응용 프로그램 모두에 적용 됩니다.
 
-- [데이터 개체 및 데이터 소스: 생성 및 소멸](data-objects-and-data-sources-creation-and-destruction.md)
+- [데이터 개체 및 데이터 원본: 생성 및 소멸](data-objects-and-data-sources-creation-and-destruction.md)
 
 - [데이터 개체 및 데이터 소스: 조작](data-objects-and-data-sources-manipulation.md)
 

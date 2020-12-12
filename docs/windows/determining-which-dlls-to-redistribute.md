@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 재배포할 Dll 확인'
 title: 재배포할 DLL 확인
 ms.date: 07/15/2019
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - application deployment [C++], DLL redistribution
 - deploying applications [C++], DLL redistribution
 ms.assetid: f7a2cb42-fb48-42ab-abd2-b35e2fd5601a
-ms.openlocfilehash: 079bfa33ced9f62d6abbccca86435b1b5654a2de
-ms.sourcegitcommit: d77159732a8e782b2a1b7abea552065f2b6f61c1
+ms.openlocfilehash: 016351a6d204c71cfef516862c9b57bebafcc1a2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93344711"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329401"
 ---
 # <a name="determining-which-dlls-to-redistribute"></a>재배포할 DLL 확인
 
@@ -37,7 +38,7 @@ Visual Studio에 포함된 모든 파일을 다시 배포할 수는 없습니다
 
 다음 표에서는 애플리케이션에서 사용될 수 있는 일부 Visual C++ DLL에 대해 설명합니다.
 
-|Visual C++ 라이브러리|Description|적용 대상|
+|Visual C++ 라이브러리|설명|적용 대상|
 |--------------------------|-----------------|----------------|
 |vcruntime *버전*.dll|네이티브 코드용 런타임 라이브러리.|일반 C 및 C++ 언어 시작 및 종료 서비스를 사용하는 애플리케이션.|
 |vccorlib *version*.dll|관리 코드용 런타임 라이브러리.|관리 코드에 C++ 언어 서비스를 사용하는 애플리케이션.|

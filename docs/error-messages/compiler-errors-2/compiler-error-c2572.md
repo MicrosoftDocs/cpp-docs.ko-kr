@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2572'
 title: 컴파일러 오류 C2572
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2572
 ms.assetid: f1a42d69-727d-4ce5-88c8-d5f55dea66ac
-ms.openlocfilehash: ed2e9771d1a407b947926a6f0d8beeb51e724ac7
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: ff0549309df0567e2d1d7f26f98f95c3c3b629d5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74755488"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97208959"
 ---
 # <a name="compiler-error-c2572"></a>컴파일러 오류 C2572
 

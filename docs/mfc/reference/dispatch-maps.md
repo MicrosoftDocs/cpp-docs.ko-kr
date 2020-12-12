@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 디스패치 맵'
 title: 디스패치 맵
 ms.date: 06/20/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - dispatch maps [MFC]
 - dispatch map macros [MFC]
 ms.assetid: bef9d08b-ad35-4c3a-99d8-04150c7c04e2
-ms.openlocfilehash: 24921f2da404a2e5103d9a3cd2abba03109f0681
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3b160040af52e8346cbcbb09cc05c301f607052b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222812"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219969"
 ---
 # <a name="dispatch-maps"></a>디스패치 맵
 
@@ -29,7 +30,7 @@ OLE Automation은 메서드를 호출 하 고 응용 프로그램에서 속성�
 |[DISP_PROPERTY_PARAM](#disp_property_param)|매개 변수를 사용 하 고 Get 및 Set 함수의 이름을로 설정 하는 OLE 자동화 속성을 정의 합니다.|
 |[DISP_DEFVALUE](#disp_defvalue)|기존 속성을 개체의 기본값으로 만듭니다.|
 
-## <a name="declare_dispatch_map"></a><a name="declare_dispatch_map"></a>DECLARE_DISPATCH_MAP
+## <a name="declare_dispatch_map"></a><a name="declare_dispatch_map"></a> DECLARE_DISPATCH_MAP
 
 `CCmdTarget`프로그램의 파생 클래스가 OLE 자동화를 지 원하는 경우 해당 클래스는 해당 메서드 및 속성을 노출 하는 디스패치 맵을 제공 해야 합니다.
 
@@ -54,7 +55,7 @@ DECLARE_DISPATCH_MAP()
 
 **헤더:** afxwin.h
 
-## <a name="begin_dispatch_map"></a><a name="begin_dispatch_map"></a>BEGIN_DISPATCH_MAP
+## <a name="begin_dispatch_map"></a><a name="begin_dispatch_map"></a> BEGIN_DISPATCH_MAP
 
 디스패치 맵의 정의를 선언 합니다.
 
@@ -68,7 +69,7 @@ BEGIN_DISPATCH_MAP(theClass, baseClass)
 이 디스패치 맵을 소유 하는 클래스의 이름을 지정 합니다.
 
 *baseClass*<br/>
-*Theclass*의 기본 클래스 이름을 지정 합니다.
+*Theclass* 의 기본 클래스 이름을 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -78,7 +79,7 @@ BEGIN_DISPATCH_MAP(theClass, baseClass)
 
 **헤더:** afxdisp.h
 
-## <a name="end_dispatch_map"></a><a name="end_dispatch_map"></a>END_DISPATCH_MAP
+## <a name="end_dispatch_map"></a><a name="end_dispatch_map"></a> END_DISPATCH_MAP
 
 디스패치 맵의 정의를 종료 합니다.
 
@@ -94,7 +95,7 @@ BEGIN_DISPATCH_MAP와 함께 사용 해야 합니다.
 
 **헤더:** afxdisp.h
 
-## <a name="disp_function"></a><a name="disp_function"></a>DISP_FUNCTION
+## <a name="disp_function"></a><a name="disp_function"></a> DISP_FUNCTION
 
 디스패치 맵에 OLE 자동화 함수를 정의 합니다.
 
@@ -152,7 +153,7 @@ short 정수를 포함 하는 목록 및 short 정수에 대 한 포인터를 �
 
 `VTS_`상수 및 해당 의미는 다음과 같습니다.
 
-|기호|매개 변수 유형|
+|기호|매개 변수 형식|
 |------------|--------------------|
 |VTS_I2|**`short`**|
 |VTS_I4|**`long`**|
@@ -184,7 +185,7 @@ short 정수를 포함 하는 목록 및 short 정수에 대 한 포인터를 �
 
 **헤더:** afxdisp.h
 
-## <a name="disp_property"></a><a name="disp_property"></a>DISP_PROPERTY
+## <a name="disp_property"></a><a name="disp_property"></a> DISP_PROPERTY
 
 디스패치 맵에서 OLE automation 속성을 정의 합니다.
 
@@ -212,7 +213,7 @@ DISP_PROPERTY(
 
 ### <a name="remarks"></a>설명
 
-*VtPropType* 인수는 **VARTYPE**유형입니다. 이 인수에 사용할 수 있는 값은 VARENUM 열거형에서 가져옵니다.
+*VtPropType* 인수는 **VARTYPE** 유형입니다. 이 인수에 사용할 수 있는 값은 VARENUM 열거형에서 가져옵니다.
 
 |기호|속성 형식|
 |------------|-----------------------|
@@ -235,7 +236,7 @@ DISP_PROPERTY(
 
 **헤더:** afxdisp.h
 
-## <a name="disp_property_ex"></a><a name="disp_property_ex"></a>DISP_PROPERTY_EX
+## <a name="disp_property_ex"></a><a name="disp_property_ex"></a> DISP_PROPERTY_EX
 
 OLE automation 속성을 정의 하 고 디스패치 맵에서 속성의 값을 가져오고 설정 하는 데 사용 되는 함수의 이름을로 설정 합니다.
 
@@ -267,7 +268,7 @@ DISP_PROPERTY_EX(
 
 ### <a name="remarks"></a>설명
 
-*Memberget* 및 *MemberSet* 함수는 *vtPropType* 인수에 의해 결정 된 시그니처를 포함 합니다. *Memberget* 함수는 인수를 사용 하지 않고 *vtPropType*에서 지정한 형식의 값을 반환 합니다. *MemberSet* 함수는 *vtPropType* 에 의해 지정 된 형식의 인수를 사용 하 고 아무 것도 반환 하지 않습니다.
+*Memberget* 및 *MemberSet* 함수는 *vtPropType* 인수에 의해 결정 된 시그니처를 포함 합니다. *Memberget* 함수는 인수를 사용 하지 않고 *vtPropType* 에서 지정한 형식의 값을 반환 합니다. *MemberSet* 함수는 *vtPropType* 에 의해 지정 된 형식의 인수를 사용 하 고 아무 것도 반환 하지 않습니다.
 
 *VtPropType* 인수는 VARTYPE 유형입니다. 이 인수에 사용할 수 있는 값은 VARENUM 열거형에서 가져옵니다. 이러한 값의 목록은 [DISP_FUNCTION](#disp_function)의 *vtRetVal* 매개 변수에 대 한 설명을 참조 하십시오. DISP_FUNCTION 설명에 나열 된 VT_EMPTY는 속성 데이터 형식으로 허용 되지 않습니다.
 
@@ -275,7 +276,7 @@ DISP_PROPERTY_EX(
 
 **헤더:** afxdisp.h
 
-## <a name="disp_property_notify"></a><a name="disp_property_notify"></a>DISP_PROPERTY_NOTIFY
+## <a name="disp_property_notify"></a><a name="disp_property_notify"></a> DISP_PROPERTY_NOTIFY
 
 디스패치 맵에 알림을 사용 하 여 OLE automation 속성을 정의 합니다.
 
@@ -300,7 +301,7 @@ DISP_PROPERTY_NOTIFY(
 속성이 저장 된 멤버 변수의 이름입니다.
 
 *pfnAfterSet*<br/>
-*Szexternalname*에 대 한 알림 함수의 이름입니다.
+*Szexternalname* 에 대 한 알림 함수의 이름입니다.
 
 *vtPropType*<br/>
 속성의 형식을 지정 하는 값입니다.
@@ -330,7 +331,7 @@ DISP_PROPERTY으로 정의 된 속성과 달리 DISP_PROPERTY_NOTIFY으로 정�
 
 **헤더:** afxdisp.h
 
-## <a name="disp_property_param"></a><a name="disp_property_param"></a>DISP_PROPERTY_PARAM
+## <a name="disp_property_param"></a><a name="disp_property_param"></a> DISP_PROPERTY_PARAM
 
 별도의 및 멤버 함수를 사용 하 여 액세스 되는 속성을 정의 `Get` `Set` 합니다.
 
@@ -390,7 +391,7 @@ DISP_PROPERTY_EX 매크로와 달리이 매크로를 사용 하면 속성에 대
 
 **헤더:** afxdisp.h
 
-## <a name="disp_defvalue"></a><a name="disp_defvalue"></a>DISP_DEFVALUE
+## <a name="disp_defvalue"></a><a name="disp_defvalue"></a> DISP_DEFVALUE
 
 기존 속성을 개체의 기본값으로 만듭니다.
 

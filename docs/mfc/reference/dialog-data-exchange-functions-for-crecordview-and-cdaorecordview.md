@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CRecordView 및 CDaoRecordView에 대 한 대화 상자 데이터 교환 함수'
 title: CRecordView 및 CDaoRecordView에 대한 대화 상자 데이터 교환 함수
 ms.date: 09/17/2019
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - databases [MFC], dialog data exchange (DDX) support
 - DAO [MFC], dialog data exchange (DDX) support
 ms.assetid: 0d8cde38-3a2c-4100-9589-ac80a7b1ce91
-ms.openlocfilehash: 06d0511317c21f6b132349d7d6cd6c2d6f20bc1b
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9b149c3cdc05bf63f69b94bbcaf084a84ec42a84
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837374"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97220034"
 ---
 # <a name="dialog-data-exchange-functions-for-crecordview-and-cdaorecordview"></a>CRecordView 및 CDaoRecordView에 대한 대화 상자 데이터 교환 함수
 
@@ -48,7 +49,7 @@ ms.locfileid: "88837374"
 |[DDX_FieldRadio](#ddx_fieldradio)|또는에서 레코드 집합 필드 데이터 멤버와 라디오 단추 그룹 간에 정수 데이터를 전송 `CRecordView` `CDaoRecordView` 합니다.|
 |[DDX_FieldScroll](#ddx_fieldscroll)|또는에서 스크롤 막대 컨트롤의 스크롤 위치를 설정 하거나 가져옵니다 `CRecordView` `CDaoRecordView` . [DoFieldExchange](../../mfc/reference/cdaorecordset-class.md#dofieldexchange) 함수에서를 호출 합니다.|
 |[DDX_FieldSlider](#ddx_fieldslider)|레코드 뷰 및 레코드 **`int`** 집합의 필드 데이터 멤버에서 slider 컨트롤의 thumb 위치를 동기화 합니다. |
-|[DDX_FieldText](#ddx_fieldtext)|오버 로드 된 버전은 **`int`** **UINT** **`long`** `DWORD` [CString](../../atl-mfc-shared/reference/cstringt-class.md) **`float`** **`double`** **`short`** 레코드 집합 필드 데이터 멤버와 또는의 편집 상자 사이 [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) [COleCurrency](../../mfc/reference/colecurrency-class.md) 에서 `CRecordView` , UINT,,, CString,,,, COleDateTime 및 COleCurrency 데이터 `CDaoRecordView` 를 전송 하는 데 사용할 수 있습니다.|
+|[DDX_FieldText](#ddx_fieldtext)|오버 로드 된 버전은 **`int`**  **`long`** `DWORD` [](../../atl-mfc-shared/reference/cstringt-class.md) **`float`** **`double`** **`short`** 레코드 집합 필드 데이터 멤버와 또는의 편집 상자 사이 [](../../atl-mfc-shared/reference/coledatetime-class.md) [](../../mfc/reference/colecurrency-class.md) 에서 `CRecordView` , UINT,,, CString,,,, COleDateTime 및 COleCurrency 데이터 `CDaoRecordView` 를 전송 하는 데 사용할 수 있습니다.|
 
 ## <a name="ddx_fieldcbindex"></a><a name="ddx_fieldcbindex"></a> DDX_FieldCBIndex
 
@@ -84,7 +85,7 @@ void AFXAPI DDX_FieldCBIndex(
 
 ### <a name="remarks"></a>설명
 
-데이터 집합에서 컨트롤로 데이터를 이동 하는 경우이 함수는 *인덱스*에 지정 된 값에 따라 컨트롤에서 선택 항목을 설정 합니다. 레코드 집합에서 컨트롤로 전송할 때 레코드 집합 필드가 Null 이면 MFC는 인덱스의 값을 0으로 설정 합니다. 컨트롤에서 레코드 집합으로의 전송에서 컨트롤이 비어 있거나 선택 된 항목이 없는 경우에는 레코드 집합 필드가 0으로 설정 됩니다.
+데이터 집합에서 컨트롤로 데이터를 이동 하는 경우이 함수는 *인덱스* 에 지정 된 값에 따라 컨트롤에서 선택 항목을 설정 합니다. 레코드 집합에서 컨트롤로 전송할 때 레코드 집합 필드가 Null 이면 MFC는 인덱스의 값을 0으로 설정 합니다. 컨트롤에서 레코드 집합으로의 전송에서 컨트롤이 비어 있거나 선택 된 항목이 없는 경우에는 레코드 집합 필드가 0으로 설정 됩니다.
 
 ODBC 기반 클래스로 작업 하는 경우 첫 번째 버전을 사용 합니다. DAO 기반 클래스로 작업 하는 경우 두 번째 버전을 사용 합니다.
 
@@ -100,7 +101,7 @@ DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 
 
 ## <a name="ddx_fieldcbstring"></a><a name="ddx_fieldcbstring"></a> DDX_FieldCBString
 
-함수는 레코드 `DDX_FieldCBString` 뷰에서 콤보 상자 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 컨트롤의 편집 컨트롤과 `CString` 레코드 뷰와 연결 된 레코드 집합의 필드 데이터 멤버 사이에서 CString 데이터의 전송을 관리 합니다.
+함수는 레코드 `DDX_FieldCBString` 뷰에서 콤보 상자 [](../../atl-mfc-shared/reference/cstringt-class.md) 컨트롤의 편집 컨트롤과 `CString` 레코드 뷰와 연결 된 레코드 집합의 필드 데이터 멤버 사이에서 CString 데이터의 전송을 관리 합니다.
 
 ```cpp
 void AFXAPI DDX_FieldCBString(
@@ -132,7 +133,7 @@ void AFXAPI DDX_FieldCBString(
 
 ### <a name="remarks"></a>설명
 
-데이터 집합에서 컨트롤로 데이터를 이동 하는 경우이 함수는 콤보 상자의 현재 선택 항목을 *값*에 지정 된 문자열의 문자로 시작 하는 첫 번째 행으로 설정 합니다. 레코드 집합에서 컨트롤로 전송할 때 레코드 집합 필드가 Null 이면 모든 선택 항목이 콤보 상자에서 제거 되 고 콤보 상자의 편집 컨트롤은 빈 상태로 설정 됩니다. 컨트롤에서 레코드 집합으로의 전송 시 컨트롤이 비어 있으면 필드에서을 허용 하는 경우 레코드 집합 필드가 Null로 설정 됩니다.
+데이터 집합에서 컨트롤로 데이터를 이동 하는 경우이 함수는 콤보 상자의 현재 선택 항목을 *값* 에 지정 된 문자열의 문자로 시작 하는 첫 번째 행으로 설정 합니다. 레코드 집합에서 컨트롤로 전송할 때 레코드 집합 필드가 Null 이면 모든 선택 항목이 콤보 상자에서 제거 되 고 콤보 상자의 편집 컨트롤은 빈 상태로 설정 됩니다. 컨트롤에서 레코드 집합으로의 전송 시 컨트롤이 비어 있으면 필드에서을 허용 하는 경우 레코드 집합 필드가 Null로 설정 됩니다.
 
 ODBC 기반 클래스로 작업 하는 경우 첫 번째 버전을 사용 합니다. DAO 기반 클래스로 작업 하는 경우 두 번째 버전을 사용 합니다.
 
@@ -148,7 +149,7 @@ DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 
 
 ## <a name="ddx_fieldcbstringexact"></a><a name="ddx_fieldcbstringexact"></a> DDX_FieldCBStringExact
 
-함수는 레코드 `DDX_FieldCBStringExact` 뷰에서 콤보 상자 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 컨트롤의 편집 컨트롤과 `CString` 레코드 뷰와 연결 된 레코드 집합의 필드 데이터 멤버 사이에서 CString 데이터의 전송을 관리 합니다.
+함수는 레코드 `DDX_FieldCBStringExact` 뷰에서 콤보 상자 [](../../atl-mfc-shared/reference/cstringt-class.md) 컨트롤의 편집 컨트롤과 `CString` 레코드 뷰와 연결 된 레코드 집합의 필드 데이터 멤버 사이에서 CString 데이터의 전송을 관리 합니다.
 
 ```cpp
 void AFXAPI DDX_FieldCBStringExact(
@@ -180,7 +181,7 @@ void AFXAPI DDX_FieldCBStringExact(
 
 ### <a name="remarks"></a>설명
 
-데이터 집합에서 컨트롤로 데이터를 이동 하는 경우이 함수는 콤보 상자의 현재 선택 항목을 *값*에 지정 된 문자열과 정확히 일치 하는 첫 번째 행으로 설정 합니다. 레코드 집합에서 컨트롤로 전송할 때 레코드 집합 필드가 NULL 이면 모든 선택 항목이 콤보 상자에서 제거 되 고 콤보 상자의 편집 상자는 비어 있는 것으로 설정 됩니다. 컨트롤에서 레코드 집합으로의 전송에서 컨트롤이 비어 있으면 레코드 집합 필드가 NULL로 설정 됩니다.
+데이터 집합에서 컨트롤로 데이터를 이동 하는 경우이 함수는 콤보 상자의 현재 선택 항목을 *값* 에 지정 된 문자열과 정확히 일치 하는 첫 번째 행으로 설정 합니다. 레코드 집합에서 컨트롤로 전송할 때 레코드 집합 필드가 NULL 이면 모든 선택 항목이 콤보 상자에서 제거 되 고 콤보 상자의 편집 상자는 비어 있는 것으로 설정 됩니다. 컨트롤에서 레코드 집합으로의 전송에서 컨트롤이 비어 있으면 레코드 집합 필드가 NULL로 설정 됩니다.
 
 ODBC 기반 클래스로 작업 하는 경우 첫 번째 버전을 사용 합니다. DAO 기반 클래스로 작업 하는 경우 두 번째 버전을 사용 합니다.
 
@@ -228,7 +229,7 @@ void AFXAPI DDX_FieldCheck(
 
 ### <a name="remarks"></a>설명
 
-`DDX_FieldCheck`가 호출 되 면 *값* 이 확인란 컨트롤의 현재 상태로 설정 되 고, 전송 방향에 따라 컨트롤의 상태가 *value*로 설정 됩니다.
+`DDX_FieldCheck`가 호출 되 면 *값* 이 확인란 컨트롤의 현재 상태로 설정 되 고, 전송 방향에 따라 컨트롤의 상태가 *value* 로 설정 됩니다.
 
 DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요.
 
@@ -270,7 +271,7 @@ void AFXAPI DDX_FieldLBIndex(
 
 ### <a name="remarks"></a>설명
 
-데이터 집합에서 컨트롤로 데이터를 이동 하는 경우이 함수는 *인덱스*에 지정 된 값에 따라 컨트롤에서 선택 항목을 설정 합니다. 레코드 집합에서 컨트롤로 전송할 때 레코드 집합 필드가 Null 이면 MFC는 인덱스의 값을 0으로 설정 합니다. 컨트롤에서 레코드 집합으로의 전송에서 컨트롤이 비어 있으면 레코드 집합 필드가 0으로 설정 됩니다.
+데이터 집합에서 컨트롤로 데이터를 이동 하는 경우이 함수는 *인덱스* 에 지정 된 값에 따라 컨트롤에서 선택 항목을 설정 합니다. 레코드 집합에서 컨트롤로 전송할 때 레코드 집합 필드가 Null 이면 MFC는 인덱스의 값을 0으로 설정 합니다. 컨트롤에서 레코드 집합으로의 전송에서 컨트롤이 비어 있으면 레코드 집합 필드가 0으로 설정 됩니다.
 
 ODBC 기반 클래스로 작업 하는 경우 첫 번째 버전을 사용 합니다. DAO 기반 클래스로 작업 하는 경우 두 번째 버전을 사용 합니다.
 
@@ -318,7 +319,7 @@ void AFXAPI DDX_FieldLBString(
 
 ### <a name="remarks"></a>설명
 
-반대 방향으로이 함수는 목록 상자에서 현재 선택 영역을 *값*으로 지정 된 문자열의 문자로 시작 하는 첫 번째 행으로 설정 합니다. 레코드 집합에서 컨트롤로 전송할 때 레코드 집합 필드가 Null 이면 모든 선택 항목이 목록 상자에서 제거 됩니다. 컨트롤에서 레코드 집합으로의 전송에서 컨트롤이 비어 있으면 레코드 집합 필드가 Null로 설정 됩니다.
+반대 방향으로이 함수는 목록 상자에서 현재 선택 영역을 *값* 으로 지정 된 문자열의 문자로 시작 하는 첫 번째 행으로 설정 합니다. 레코드 집합에서 컨트롤로 전송할 때 레코드 집합 필드가 Null 이면 모든 선택 항목이 목록 상자에서 제거 됩니다. 컨트롤에서 레코드 집합으로의 전송에서 컨트롤이 비어 있으면 레코드 집합 필드가 Null로 설정 됩니다.
 
 ODBC 기반 클래스로 작업 하는 경우 첫 번째 버전을 사용 합니다. DAO 기반 클래스로 작업 하는 경우 두 번째 버전을 사용 합니다.
 
@@ -366,7 +367,7 @@ void AFXAPI DDX_FieldLBStringExact(
 
 ### <a name="remarks"></a>설명
 
-반대 방향으로이 함수는 목록 상자에서 현재 선택 영역을 *값*에 지정 된 문자열과 정확히 일치 하는 첫 번째 행으로 설정 합니다. 레코드 집합에서 컨트롤로 전송할 때 레코드 집합 필드가 Null 이면 모든 선택 항목이 목록 상자에서 제거 됩니다. 컨트롤에서 레코드 집합으로의 전송에서 컨트롤이 비어 있으면 레코드 집합 필드가 Null로 설정 됩니다.
+반대 방향으로이 함수는 목록 상자에서 현재 선택 영역을 *값* 에 지정 된 문자열과 정확히 일치 하는 첫 번째 행으로 설정 합니다. 레코드 집합에서 컨트롤로 전송할 때 레코드 집합 필드가 Null 이면 모든 선택 항목이 목록 상자에서 제거 됩니다. 컨트롤에서 레코드 집합으로의 전송에서 컨트롤이 비어 있으면 레코드 집합 필드가 Null로 설정 됩니다.
 
 ODBC 기반 클래스로 작업 하는 경우 첫 번째 버전을 사용 합니다. DAO 기반 클래스로 작업 하는 경우 두 번째 버전을 사용 합니다.
 
@@ -462,7 +463,7 @@ void AFXAPI DDX_FieldScroll(
 
 ### <a name="remarks"></a>설명
 
-데이터 집합에서 컨트롤로 데이터를 이동 하는 경우이 함수는 스크롤 막대 컨트롤의 스크롤 위치를 *value*에 지정 된 값으로 설정 합니다. 레코드 집합에서 컨트롤로 전송할 때 레코드 집합 필드가 Null 이면 scroll bar 컨트롤이 0으로 설정 됩니다. 컨트롤에서 레코드 집합으로의 전송에서 컨트롤이 비어 있으면 레코드 집합 필드의 값은 0입니다.
+데이터 집합에서 컨트롤로 데이터를 이동 하는 경우이 함수는 스크롤 막대 컨트롤의 스크롤 위치를 *value* 에 지정 된 값으로 설정 합니다. 레코드 집합에서 컨트롤로 전송할 때 레코드 집합 필드가 Null 이면 scroll bar 컨트롤이 0으로 설정 됩니다. 컨트롤에서 레코드 집합으로의 전송에서 컨트롤이 비어 있으면 레코드 집합 필드의 값은 0입니다.
 
 ODBC 기반 클래스로 작업 하는 경우 첫 번째 버전을 사용 합니다. DAO 기반 클래스로 작업 하는 경우 두 번째 버전을 사용 합니다.
 
@@ -512,7 +513,7 @@ void AFXAPI DDX_FieldSlider(
 
 ### <a name="remarks"></a>설명
 
-데이터 집합의 데이터를 슬라이더로 이동 하는 경우이 함수는 슬라이더의 위치를 *value*에 지정 된 값으로 설정 합니다. 레코드 집합에서 컨트롤로 전송할 때 레코드 집합 필드가 Null 이면 slider 컨트롤의 위치는 0으로 설정 됩니다. 컨트롤에서 레코드 집합으로의 전송 시 컨트롤이 비어 있으면 레코드 집합 필드의 값은 0입니다.
+데이터 집합의 데이터를 슬라이더로 이동 하는 경우이 함수는 슬라이더의 위치를 *value* 에 지정 된 값으로 설정 합니다. 레코드 집합에서 컨트롤로 전송할 때 레코드 집합 필드가 Null 이면 slider 컨트롤의 위치는 0으로 설정 됩니다. 컨트롤에서 레코드 집합으로의 전송 시 컨트롤이 비어 있으면 레코드 집합 필드의 값은 0입니다.
 
 `DDX_FieldSlider` 는 범위 정보를 단순히 위치가 아닌 범위를 설정할 수 있는 슬라이더 컨트롤을 사용 하 여 교환 하지 않습니다.
 
@@ -530,7 +531,7 @@ DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 
 
 ## <a name="ddx_fieldtext"></a><a name="ddx_fieldtext"></a> DDX_FieldText
 
-`DDX_FieldText`함수는 **`int`** **`short`** **`long`** [CString](../../atl-mfc-shared/reference/cstringt-class.md) **`float`** **`double`** 편집 상자 컨트롤과 레코드 집합의 필드 데이터 멤버 사이에서,,, DWORD, CString,,, **BOOL**또는 **BYTE** 데이터의 전송을 관리 합니다.
+`DDX_FieldText`함수는 **`int`** **`short`** **`long`** [](../../atl-mfc-shared/reference/cstringt-class.md) **`float`** **`double`** 편집 상자 컨트롤과 레코드 집합의 필드 데이터 멤버 사이에서,,, DWORD, CString,,, **BOOL** 또는 **BYTE** 데이터의 전송을 관리 합니다.
 
 ```cpp
 void AFXAPI DDX_FieldText(

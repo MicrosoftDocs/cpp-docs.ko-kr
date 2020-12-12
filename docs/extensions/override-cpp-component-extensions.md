@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: override (c + +/CLI 및 c + +/CX)'
 title: override  (C++/CLI 및 C++/CX)
 ms.date: 11/04/2016
 ms.topic: reference
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - overriding, override keyword [C++]
 - override keyword [C++]
 ms.assetid: 34d19257-1686-4fcd-96f5-af07c70ba914
-ms.openlocfilehash: 32c825539efe670528eab7416afefe07d4cb1b6c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 1be49ac9b9e2d0f2eb3342855a42e9707f883078
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80172102"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335939"
 ---
 # <a name="override--ccli-and-ccx"></a>override  (C++/CLI 및 C++/CX)
 
@@ -25,9 +26,9 @@ override 지정자에 대한 자세한 내용은 [override 지정자](../cpp/ove
 
 상황에 맞는 키워드에 대한 자세한 내용은 [상황에 맞는 키워드](context-sensitive-keywords-cpp-component-extensions.md)를 참조하세요.
 
-## <a name="examples"></a>예
+## <a name="examples"></a>예제
 
-다음 코드 예제에서는 네이티브 컴파일에도 **override**를 사용할 수 있음을 보여 줍니다.
+다음 코드 예제에서는 네이티브 컴파일에도 **override** 를 사용할 수 있음을 보여 줍니다.
 
 ```cpp
 // override_keyword_1.cpp
@@ -43,7 +44,7 @@ struct X : public I1 {
 
 ### <a name="example"></a>예제
 
-다음 코드 예제에서는 Windows 런타임 컴파일에 **override**를 사용할 수 있음을 보여 줍니다.
+다음 코드 예제에서는 Windows 런타임 컴파일에 **override** 를 사용할 수 있음을 보여 줍니다.
 
 ```cpp
 // override_keyword_2.cpp
@@ -63,7 +64,7 @@ ref struct X : public I1 {
 
 ### <a name="example"></a>예제
 
-다음 코드 예제에서는 공용 언어 런타임 컴파일에 **override**를 사용할 수 있음을 보여 줍니다.
+다음 코드 예제에서는 공용 언어 런타임 컴파일에 **override** 를 사용할 수 있음을 보여 줍니다.
 
 ```cpp
 // override_keyword_3.cpp

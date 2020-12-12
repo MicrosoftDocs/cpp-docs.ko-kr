@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 식 계산기 오류 CXX0051'
 title: 식 계산기 오류 CXX0051
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - CAN0051
 - CXX0051
 ms.assetid: 031cd2ed-d9bb-4aa5-9858-71581bcca49c
-ms.openlocfilehash: 3bacaddb39f1a380053e74c8a7e9fd952dac8ea5
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 1a40decc795731437f72c0d91cf97e8ddfc83efa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80184829"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97208426"
 ---
 # <a name="expression-evaluator-error-cxx0051"></a>식 계산기 오류 CXX0051
 

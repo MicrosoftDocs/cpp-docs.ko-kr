@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 식 계산기 오류 CXX0025'
 title: 식 계산기 오류 CXX0025
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - CAN0025
 - CXX0025
 ms.assetid: 3e2fb541-63b3-46ac-9f93-3dadb253bcf6
-ms.openlocfilehash: fc994cf2551627cd3efd9be67dd9a2dac4379a0d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 66df1272e1ddd5ec2c9fb413de92feab30167fc3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225230"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335966"
 ---
 # <a name="expression-evaluator-error-cxx0025"></a>식 계산기 오류 CXX0025
 

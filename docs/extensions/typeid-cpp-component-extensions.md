@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: typeid (c + +/CLI 및 c + +/CX)'
 title: typeid(C++/CLI 및 C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - typeid keyword [C++]
 ms.assetid: e9706cae-e7c4-4d6d-b474-646d73df3e70
-ms.openlocfilehash: bfb226bc11f0fd7d3feddfb2c50ffe1aa6311d3d
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 0452de57b93eb5d55bed34fc1f9745280a6b6184
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500378"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97185663"
 ---
 # <a name="typeid--ccli-and-ccx"></a>typeid(C++/CLI 및 C++/CX)
 
@@ -82,7 +83,7 @@ type::typeid
 
 컴파일러 옵션: `/clr`
 
-### <a name="examples"></a>예
+### <a name="examples"></a>예제
 
 다음 예제에서는 typeid 키워드와 `GetType()` 멤버를 비교합니다.
 
