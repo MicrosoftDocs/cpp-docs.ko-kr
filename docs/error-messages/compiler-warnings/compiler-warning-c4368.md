@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 C4368'
 title: 컴파일러 경고 C4368
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4368
 ms.assetid: cb85bcee-fd3d-4aa5-b626-2324f07a4f1b
-ms.openlocfilehash: d96ae14bc427568dcf7ba7bc6e5d53f3d28883ae
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 106d8b0bb0dc70f03017892e8597c0cf059016cd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80165304"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97180788"
 ---
 # <a name="compiler-warning-c4368"></a>컴파일러 경고 C4368
 
