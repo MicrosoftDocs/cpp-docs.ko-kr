@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 링커 도구 오류 LNK1277'
 title: 링커 도구 오류 LNK1277
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1277
 ms.assetid: afca3de0-50cc-4140-af7a-13493a170835
-ms.openlocfilehash: 7c00fb32e4b36eff119195efbb34d536d80df6a9
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 82a71878d30088bd018c4e54216d53228efe949d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80183659"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97193736"
 ---
 # <a name="linker-tools-error-lnk1277"></a>링커 도구 오류 LNK1277
 
