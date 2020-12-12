@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CHtmlEditCtrlBase 클래스'
 title: CHtmlEditCtrlBase 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -220,12 +221,12 @@ helpviewer_keywords:
 - CHtmlEditCtrlBase [MFC], Unlink
 - CHtmlEditCtrlBase [MFC], UnorderList
 ms.assetid: e0cc74b4-8320-4570-b673-16c03d2ae266
-ms.openlocfilehash: 74df35a82342bad59e9065ef593581add6d3d734
-ms.sourcegitcommit: d77159732a8e782b2a1b7abea552065f2b6f61c1
+ms.openlocfilehash: 2dfe61dfce86230f87f7e4883f6800e897c3770b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93344737"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97115419"
 ---
 # <a name="chtmleditctrlbase-class"></a>CHtmlEditCtrlBase 클래스
 
@@ -241,7 +242,7 @@ template <class T> class CHtmlEditCtrlBase
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CHtmlEditCtrlBase::AddToGlyphTable](#addtoglyphtable)|디자인 모드에서 특정 태그에 대해 표시할 이미지를 지정 하는 문자 모양 테이블에 항목을 추가 합니다.|
 |[CHtmlEditCtrlBase:: Bold](#bold)|선택한 텍스트의 굵은 상태를 설정/해제 합니다.|

@@ -1,5 +1,6 @@
 ---
-title: C캐시드데이터패스속성 클래스
+description: '자세히 알아보기: CCachedDataPathProperty 클래스'
+title: CCachedDataPathProperty 클래스
 ms.date: 11/04/2016
 f1_keywords:
 - CCachedDataPathProperty
@@ -10,14 +11,14 @@ helpviewer_keywords:
 - CCachedDataPathProperty [MFC], CCachedDataPathProperty
 - CCachedDataPathProperty [MFC], m_Cache
 ms.assetid: 0d81356b-4fe5-43f6-aed2-2eb5a5485706
-ms.openlocfilehash: ebab34433f23b119e3444b3eaa8b0ad6313555af
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a61d2553afc4415da29399293843deb1be5f113d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81352359"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97122501"
 ---
-# <a name="ccacheddatapathproperty-class"></a>C캐시드데이터패스속성 클래스
+# <a name="ccacheddatapathproperty-class"></a>CCachedDataPathProperty 클래스
 
 비동기적으로 전송되고 메모리 파일에 캐싱되는 OLE 컨트롤 속성을 구현합니다.
 
@@ -31,29 +32,29 @@ class CCachedDataPathProperty : public CDataPathProperty
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[C캐시드데이터패스속성::C캐시드데이터패스속성](#ccacheddatapathproperty)|`CCachedDataPathProperty` 개체를 생성합니다.|
+|[CCachedDataPathProperty::CCachedDataPathProperty](#ccacheddatapathproperty)|`CCachedDataPathProperty` 개체를 생성합니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|[C캐시데이터패스속성::m_Cache](#m_cache)|`CMemFile`데이터를 캐시할 개체입니다.|
+|[CCachedDataPathProperty:: m_Cache](#m_cache)|`CMemFile` 데이터를 캐시할 개체입니다.|
 
 ## <a name="remarks"></a>설명
 
-메모리 파일은 디스크가 아닌 RAM에 저장되며 빠른 임시 전송에 유용합니다.
+메모리 파일은 디스크가 아닌 RAM에 저장 되며 빠른 임시 전송에 유용 합니다.
 
-와 `CAysncMonikerFile` 함께 `CDataPathProperty` `CCachedDataPathProperty` 및 ,을 통해 OLE 컨트롤에서 비동기 모니커를 사용할 수 있는 기능을 제공합니다. 개체를 사용하면 `CCachedDataPathProperty` URL 또는 파일 소스에서 비동기적으로 데이터를 전송하고 `m_Cache` public 변수를 통해 메모리 파일에 저장할 수 있습니다. 모든 데이터는 메모리 파일에 저장되며 알림을 보고 응답하지 않는 한 [OnDataAvailable을](../../mfc/reference/casyncmonikerfile-class.md#ondataavailable) 재정의할 필요가 없습니다. 예를 들어 큰 을 전송하는 경우 . GIF 파일과 더 많은 데이터가 도착하고 그 자체를 다시 그려야한다는 것을 제어에 알리고 싶어, 알림을 만들기 위해 재정의. `OnDataAvailable`
+및와 `CAysncMonikerFile` 함께 `CDataPathProperty` 에서는 `CCachedDataPathProperty` OLE 컨트롤에서 비동기 모니커를 사용 하는 기능을 제공 합니다. `CCachedDataPathProperty`개체를 사용 하면 URL 또는 파일 원본에서 데이터를 비동기적으로 전송 하 고 공용 변수를 통해 메모리 파일에 저장할 수 있습니다 `m_Cache` . 모든 데이터는 메모리 파일에 저장 되며, 알림을 감시 하 고 응답 하려는 경우가 아니면 [사용 가능한 Ondataavailable](../../mfc/reference/casyncmonikerfile-class.md#ondataavailable) 재정의할 필요가 없습니다. 예를 들어, 크게를 전송 하는 경우 GIF 파일은 더 많은 데이터가 도착 했음을 컨트롤에 알리고, 자신을 다시 그려야 합니다 .를 재정의 하 여 `OnDataAvailable` 알림을 만듭니다.
 
-클래스는 `CCachedDataPathProperty` 에서 `CDataPathProperty`파생됩니다.
+클래스는 `CCachedDataPathProperty` 에서 파생 됩니다 `CDataPathProperty` .
 
-인터넷 응용 프로그램에서 비동기 모니커 및 ActiveX 컨트롤을 사용하는 방법에 대한 자세한 내용은 다음 항목을 참조하십시오.
+인터넷 응용 프로그램에서 비동기 모니커 및 ActiveX 컨트롤을 사용 하는 방법에 대 한 자세한 내용은 다음 항목을 참조 하세요.
 
-- [인터넷 첫 번째 단계: 액티브X 컨트롤](../../mfc/activex-controls-on-the-internet.md)
+- [인터넷 우선 단계: ActiveX 컨트롤](../../mfc/activex-controls-on-the-internet.md)
 
-- [인터넷 첫 번째 단계: 비동기 모니커](../../mfc/asynchronous-monikers-on-the-internet.md)
+- [인터넷 우선 단계: 비동기 모니커](../../mfc/asynchronous-monikers-on-the-internet.md)
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -73,9 +74,9 @@ class CCachedDataPathProperty : public CDataPathProperty
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxctl.h
+**헤더:** afxctl
 
-## <a name="ccacheddatapathpropertyccacheddatapathproperty"></a><a name="ccacheddatapathproperty"></a>C캐시드데이터패스속성::C캐시드데이터패스속성
+## <a name="ccacheddatapathpropertyccacheddatapathproperty"></a><a name="ccacheddatapathproperty"></a> CCachedDataPathProperty::CCachedDataPathProperty
 
 `CCachedDataPathProperty` 개체를 생성합니다.
 
@@ -90,18 +91,18 @@ CCachedDataPathProperty(
 ### <a name="parameters"></a>매개 변수
 
 *pControl*<br/>
-이 `CCachedDataPathProperty` 개체와 연결될 ActiveX 컨트롤 개체에 대한 포인터입니다.
+이 개체와 연결 될 ActiveX 컨트롤 개체에 대 한 포인터 `CCachedDataPathProperty` 입니다.
 
 *lpszPath*<br/>
-절대 또는 상대경로는 속성의 실제 절대 위치를 참조하는 비동기 모니커를 만드는 데 사용됩니다. `CCachedDataPathProperty`는 파일 이름이 아닌 URL을 사용합니다. 파일에 대한 `CCachedDataPathProperty` 개체를 원하는 경우 경로에 file:// 준비합니다.
+절대 또는 상대 경로일 수 있는 경로는 속성의 실제 절대 위치를 참조 하는 비동기 모니커를 만드는 데 사용 됩니다. `CCachedDataPathProperty` 파일 이름이 아닌 Url을 사용 합니다. `CCachedDataPathProperty`파일에 대 한 개체를 원하는 경우 file://앞에 경로를 추가 합니다.
 
 ### <a name="remarks"></a>설명
 
-`COleControl` *pControl이* 가리키는 개체는 [Open에서](../../mfc/reference/cdatapathproperty-class.md#open) 사용하고 파생 클래스에서 검색됩니다. *pControl이* NULL이면 함께 `Open` 사용되는 컨트롤을 [SetControl](../../mfc/reference/cdatapathproperty-class.md#setcontrol)로 설정해야 합니다. *lpszPath가* NULL인 경우 경로를 통과하거나 `Open` [SetPath](../../mfc/reference/cdatapathproperty-class.md#setpath)로 설정할 수 있습니다.
+`COleControl` *Pcontrol* 에서 가리키는 개체는 파생 클래스에서 파생 [](../../mfc/reference/cdatapathproperty-class.md#open) 되 고 검색에서 사용 됩니다. *Pcontrol* 이 NULL 인 경우에 사용 되는 컨트롤은 `Open` [setcontrol](../../mfc/reference/cdatapathproperty-class.md#setcontrol)을 사용 하 여 설정 해야 합니다. *LpszPath* 가 NULL 인 경우 경로를 통과 `Open` 하거나 [setpath](../../mfc/reference/cdatapathproperty-class.md#setpath)를 사용 하 여 설정할 수 있습니다.
 
-## <a name="ccacheddatapathpropertym_cache"></a><a name="m_cache"></a>C캐시데이터패스속성::m_Cache
+## <a name="ccacheddatapathpropertym_cache"></a><a name="m_cache"></a> CCachedDataPathProperty:: m_Cache
 
-데이터가 캐시되는 메모리 파일의 클래스 이름을 포함합니다.
+데이터가 캐시 되는 메모리 파일의 클래스 이름을 포함 합니다.
 
 ```
 CMemFile m_Cache;
@@ -109,10 +110,10 @@ CMemFile m_Cache;
 
 ### <a name="remarks"></a>설명
 
-메모리 파일은 디스크가 아닌 RAM에 저장됩니다.
+메모리 파일은 디스크가 아닌 RAM에 저장 됩니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[CDataPath속성 클래스](../../mfc/reference/cdatapathproperty-class.md)<br/>
+[CDataPathProperty 클래스](../../mfc/reference/cdatapathproperty-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
-[CDataPath속성 클래스](../../mfc/reference/cdatapathproperty-class.md)
+[CDataPathProperty 클래스](../../mfc/reference/cdatapathproperty-class.md)

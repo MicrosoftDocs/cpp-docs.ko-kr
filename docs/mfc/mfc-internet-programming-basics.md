@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: MFC 인터넷 프로그래밍 기본 사항'
 title: MFC 인터넷 프로그래밍 기본 사항
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - Internet content [MFC]
 - WinInet classes [MFC]
 ms.assetid: 6df2dfd0-6e3f-4587-9d01-2a32f00f8a6f
-ms.openlocfilehash: b41ce97a9b5efe6ad84c543f5c49dd091557b3a8
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 8774f2ec77b9e721733edccdcd0a83e96cb62fe0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846318"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97115445"
 ---
 # <a name="mfc-internet-programming-basics"></a>MFC 인터넷 프로그래밍 기본 사항
 
@@ -32,7 +33,7 @@ Microsoft는 클라이언트 및 서버 응용 프로그램을 모두 프로그�
 
 ![클라이언트 및 서버 응용 프로그램](../mfc/media/vc38bq1.gif "클라이언트 및 서버 응용 프로그램")
 
-MFC는 인터넷 프로그래밍을 지 원하는 클래스를 제공 합니다. [COleControl](reference/colecontrol-class.md) 및 [CDOCOBJECTSERVER](reference/cdocobjectserver-class.md) 및 관련 MFC 클래스를 사용 하 여 ActiveX 컨트롤 및 활성 문서를 작성할 수 있습니다. [Cinternetsession](reference/cinternetsession-class.md), [CCAsyncMonikerFile connection](reference/cftpconnection-class.md)및 [CAsyncMonikerFile](reference/casyncmonikerfile-class.md) 와 같은 MFC 클래스를 사용 하 여 FTP, HTTP, gopher 등의 인터넷 프로토콜을 사용 하 여 파일 및 정보를 검색할 수 있습니다.
+MFC는 인터넷 프로그래밍을 지 원하는 클래스를 제공 합니다. [COleControl](reference/colecontrol-class.md) 및 [CDOCOBJECTSERVER](reference/cdocobjectserver-class.md) 및 관련 MFC 클래스를 사용 하 여 ActiveX 컨트롤 및 활성 문서를 작성할 수 있습니다. [Cinternetsession](reference/cinternetsession-class.md), [CCAsyncMonikerFile connection](reference/cftpconnection-class.md)및 [](reference/casyncmonikerfile-class.md) 와 같은 MFC 클래스를 사용 하 여 FTP, HTTP, gopher 등의 인터넷 프로토콜을 사용 하 여 파일 및 정보를 검색할 수 있습니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 
@@ -48,7 +49,7 @@ MFC는 인터넷 프로그래밍을 지 원하는 클래스를 제공 합니다.
 
 - [HTML 기본 사항](html-basics.md)
 
-## <a name="related-sections"></a>관련 섹션
+## <a name="related-sections"></a>관련 단원
 
 - [인터넷의 ActiveX 컨트롤](activex-controls-on-the-internet.md)
 

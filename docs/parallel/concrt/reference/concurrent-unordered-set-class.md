@@ -1,4 +1,5 @@
 ---
+description: Concurrent_unordered_set 클래스에 대해 자세히 알아보세요.
 title: concurrent_unordered_set 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - concurrent_unordered_set class
 ms.assetid: c61f9a9a-4fd9-491a-9251-e300737ecf4b
-ms.openlocfilehash: 8dbce21efcd6c1df31d42702aa3e8eeecf6d9114
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5030212b5f77d04a2c4a5a63e00f4c82388c650f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87194045"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97115328"
 ---
 # <a name="concurrent_unordered_set-class"></a>concurrent_unordered_set 클래스
 
@@ -43,7 +44,7 @@ _Allocator_type,
 
 ### <a name="parameters"></a>매개 변수
 
-*시계의*<br/>
+*K*<br/>
 키 형식입니다.
 
 *_Hasher*<br/>
@@ -79,25 +80,25 @@ _Allocator_type,
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
-|[concurrent_unordered_set](#ctor)|오버로드되었습니다. 순서가 지정 되지 않은 동시 집합을 생성 합니다.|
+|[concurrent_unordered_set](#ctor)|오버로드됨. 순서가 지정 되지 않은 동시 집합을 생성 합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
 |이름|설명|
 |----------|-----------------|
 |[hash_function](#hash_function)|저장 된 해시 함수 개체를 반환 합니다.|
-|[insert](#insert)|오버로드되었습니다. 개체에 요소를 추가 `concurrent_unordered_set` 합니다.|
+|[insert](#insert)|오버로드됨. 개체에 요소를 추가 `concurrent_unordered_set` 합니다.|
 |[key_eq](#key_eq)|저장 된 같음 비교 함수 개체를 반환 합니다.|
 |[스왑을](#swap)|두 `concurrent_unordered_set` 개체의 내용을 바꿉니다. 이 메서드는 동시성이 보장 되지 않습니다.|
-|[unsafe_erase](#unsafe_erase)|오버로드되었습니다. 에서 지정 된 위치에 있는 요소를 제거 합니다 `concurrent_unordered_set` . 이 메서드는 동시성이 보장 되지 않습니다.|
+|[unsafe_erase](#unsafe_erase)|오버로드됨. 에서 지정 된 위치에 있는 요소를 제거 합니다 `concurrent_unordered_set` . 이 메서드는 동시성이 보장 되지 않습니다.|
 
 ### <a name="public-operators"></a>Public 연산자
 
 |Name|설명|
 |----------|-----------------|
-|[연산자 =](#operator_eq)|오버로드되었습니다. 다른 개체의 내용을 `concurrent_unordered_set` 이 개체에 할당 합니다. 이 메서드는 동시성이 보장 되지 않습니다.|
+|[연산자 =](#operator_eq)|오버로드됨. 다른 개체의 내용을 `concurrent_unordered_set` 이 개체에 할당 합니다. 이 메서드는 동시성이 보장 되지 않습니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -117,7 +118,7 @@ _Allocator_type,
 
 **네임 스페이스:** 동시성
 
-## <a name="begin"></a><a name="begin"></a>시작
+## <a name="begin"></a><a name="begin"></a> begin
 
 동시 컨테이너의 첫 번째 요소를 가리키는 반복기를 반환 합니다. 이 메서드는 동시성이 보장 됩니다.
 
@@ -127,11 +128,11 @@ iterator begin();
 const_iterator begin() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 동시 컨테이너의 첫 번째 요소에 대 한 반복기입니다.
 
-## <a name="cbegin"></a><a name="cbegin"></a>cbegin
+## <a name="cbegin"></a><a name="cbegin"></a> cbegin
 
 동시 컨테이너의 첫 번째 요소를 가리키는 상수 반복기를 반환 합니다. 이 메서드는 동시성이 보장 됩니다.
 
@@ -139,11 +140,11 @@ const_iterator begin() const;
 const_iterator cbegin() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 동시 컨테이너의 첫 번째 요소에 대 한 상수 반복기입니다.
 
-## <a name="cend"></a><a name="cend"></a>cend
+## <a name="cend"></a><a name="cend"></a> cend
 
 동시 컨테이너에서 마지막 요소 다음에 나오는 위치를 가리키는 상수 반복기를 반환 합니다. 이 메서드는 동시성이 보장 됩니다.
 
@@ -151,11 +152,11 @@ const_iterator cbegin() const;
 const_iterator cend() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 동시 컨테이너에서 마지막 요소 다음에 나오는 위치에 대 한 상수 반복기입니다.
 
-## <a name="clear"></a><a name="clear"></a>해제
+## <a name="clear"></a><a name="clear"></a> 해제
 
 동시 컨테이너의 모든 요소를 지웁니다. 이 함수는 동시성이 안전 하지 않습니다.
 
@@ -163,7 +164,7 @@ const_iterator cend() const;
 void clear();
 ```
 
-## <a name="concurrent_unordered_set"></a><a name="ctor"></a>concurrent_unordered_set
+## <a name="concurrent_unordered_set"></a><a name="ctor"></a> concurrent_unordered_set
 
 순서가 지정 되지 않은 동시 집합을 생성 합니다.
 
@@ -232,7 +233,7 @@ concurrent_unordered_set(
 
 마지막 생성자는 순서가 지정되지 않은 동시 집합 `_Uset`의 이동을 지정합니다.
 
-## <a name="count"></a><a name="count"></a>수
+## <a name="count"></a><a name="count"></a> 수
 
 지정 된 키와 일치 하는 요소의 수를 셉니다. 이 함수는 동시성이 안전 합니다.
 
@@ -245,11 +246,11 @@ size_type count(const key_type& KVal) const;
 *KVal*<br/>
 검색할 키입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 키가 컨테이너에 표시 되는 횟수입니다.
 
-## <a name="empty"></a><a name="empty"></a>비우려면
+## <a name="empty"></a><a name="empty"></a> 비우려면
 
 요소가 있는지 여부를 테스트합니다. 이 메서드는 동시성이 보장 됩니다.
 
@@ -257,7 +258,7 @@ size_type count(const key_type& KVal) const;
 bool empty() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 동시 컨테이너가 비어 있으면이 고, **`false`** 그렇지 않으면입니다.
 
@@ -265,7 +266,7 @@ bool empty() const;
 
 동시 삽입이 있을 때이 함수를 호출한 후에도 동시 컨테이너가 비어 있는지 여부는 반환 값을 읽기 전에 즉시 변경할 수 있습니다.
 
-## <a name="end"></a><a name="end"></a>종단
+## <a name="end"></a><a name="end"></a> end
 
 동시 컨테이너에서 마지막 요소 다음에 나오는 위치를 가리키는 반복기를 반환 합니다. 이 메서드는 동시성이 보장 됩니다.
 
@@ -275,11 +276,11 @@ iterator end();
 const_iterator end() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 동시 컨테이너에서 마지막 요소 다음에 나오는 위치에 대 한 반복기입니다.
 
-## <a name="equal_range"></a><a name="equal_range"></a>equal_range
+## <a name="equal_range"></a><a name="equal_range"></a> equal_range
 
 지정 된 키와 일치 하는 범위를 찾습니다. 이 함수는 동시성이 안전 합니다.
 
@@ -298,7 +299,7 @@ std::pair<const_iterator,
 *KVal*<br/>
 검색할 키 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 첫 번째 요소가 시작 부분에 대 한 반복기이 고 두 번째 요소는 범위의 끝 부분에 대 한 반복기 인 [쌍](../../../standard-library/pair-structure.md) 입니다.
 
@@ -306,7 +307,7 @@ std::pair<const_iterator,
 
 연속 삽입을 수행 하면 시작 반복기 뒤와 끝 반복기 앞에 추가 키를 삽입할 수 있습니다.
 
-## <a name="find"></a><a name="find"></a>찾아낼
+## <a name="find"></a><a name="find"></a> 찾아낼
 
 지정된 키와 일치하는 요소를 찾습니다. 이 함수는 동시성이 안전 합니다.
 
@@ -321,7 +322,7 @@ const_iterator find(const key_type& KVal) const;
 *KVal*<br/>
 검색할 키 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 제공 된 키와 일치 하는 첫 번째 요소의 위치를 가리키는 반복기 이거나, `end()` 이러한 요소가 없는 경우 반복기입니다.
 
@@ -333,11 +334,11 @@ const_iterator find(const key_type& KVal) const;
 allocator_type get_allocator() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 동시 컨테이너에 대해 저장 된 할당자 개체입니다.
 
-## <a name="hash_function"></a><a name="hash_function"></a>hash_function
+## <a name="hash_function"></a><a name="hash_function"></a> hash_function
 
 저장 된 해시 함수 개체를 반환 합니다.
 
@@ -345,11 +346,11 @@ allocator_type get_allocator() const;
 hasher hash_function() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 저장된 해시 함수 개체입니다.
 
-## <a name="insert"></a><a name="insert"></a>넣거나
+## <a name="insert"></a><a name="insert"></a> 넣거나
 
 개체에 요소를 추가 `concurrent_unordered_set` 합니다.
 
@@ -384,7 +385,7 @@ typename std::enable_if<!std::is_same<const_iterator,
 *_Iterator*<br/>
 삽입에 사용되는 반복기 형식입니다.
 
-*Hyper-v*<br/>
+*V*<br/>
 집합에 삽입 된 값의 형식입니다.
 
 *value*<br/>
@@ -399,7 +400,7 @@ typename std::enable_if<!std::is_same<const_iterator,
 *last*<br/>
 삽입할 범위의 끝입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 반복기 및 부울 값을 포함 하는 쌍입니다. 자세한 내용은 설명 섹션을 참조하세요.
 
@@ -413,7 +414,7 @@ typename std::enable_if<!std::is_same<const_iterator,
 
 마지막 두 멤버 함수는 처음 두 함수와 똑같이 동작하지만, `value`는 삽입된 값을 생성하는데 사용된다는 점이 다릅니다.
 
-## <a name="key_eq"></a><a name="key_eq"></a>key_eq
+## <a name="key_eq"></a><a name="key_eq"></a> key_eq
 
 저장 된 같음 비교 함수 개체를 반환 합니다.
 
@@ -421,11 +422,11 @@ typename std::enable_if<!std::is_same<const_iterator,
 key_equal key_eq() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 저장 된 같음 비교 함수 개체입니다.
 
-## <a name="load_factor"></a><a name="load_factor"></a>load_factor
+## <a name="load_factor"></a><a name="load_factor"></a> load_factor
 
 컨테이너의 현재 로드 비율을 계산 하 고 반환 합니다. 로드 비율은 컨테이너의 요소 수를 버킷 수로 나눈 값입니다.
 
@@ -433,11 +434,11 @@ key_equal key_eq() const;
 float load_factor() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 컨테이너의 로드 비율입니다.
 
-## <a name="max_load_factor"></a><a name="max_load_factor"></a>max_load_factor
+## <a name="max_load_factor"></a><a name="max_load_factor"></a> max_load_factor
 
 컨테이너의 최대 로드 비율을 가져오거나 설정 합니다. 최대 로드 비율은 컨테이너가 내부 테이블을 확장 하기 전에 모든 버킷에 있는 요소 수보다 가장 많은 수입니다.
 
@@ -451,11 +452,11 @@ void max_load_factor(float _Newmax);
 
 `_Newmax`
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 첫 번째 멤버 함수는 저장된 최대 로드 비율을 반환합니다. 두 번째 멤버 함수는 값을 반환 하지 않지만 제공 된 로드 계수가 잘못 된 경우에는 [out_of_range](../../../standard-library/out-of-range-class.md) 예외를 throw 합니다.
 
-## <a name="max_size"></a><a name="max_size"></a>max_size
+## <a name="max_size"></a><a name="max_size"></a> max_size
 
 할당자에 의해 결정 되는 동시 컨테이너의 최대 크기를 반환 합니다. 이 메서드는 동시성이 보장 됩니다.
 
@@ -463,7 +464,7 @@ void max_load_factor(float _Newmax);
 size_type max_size() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 동시 컨테이너에 삽입할 수 있는 최대 요소 수입니다.
 
@@ -471,7 +472,7 @@ size_type max_size() const;
 
 이 상한 값은 실제로 컨테이너가 보유할 수 있는 값 보다 클 수 있습니다.
 
-## <a name="operator"></a><a name="operator_eq"></a>연산자 =
+## <a name="operator"></a><a name="operator_eq"></a> 연산자 =
 
 다른 개체의 내용을 `concurrent_unordered_set` 이 개체에 할당 합니다. 이 메서드는 동시성이 보장 되지 않습니다.
 
@@ -486,7 +487,7 @@ concurrent_unordered_set& operator= (concurrent_unordered_set&& _Uset);
 *_Uset*<br/>
 소스 `concurrent_unordered_set` 개체입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 개체에 대 한 참조 `concurrent_unordered_set` 입니다.
 
@@ -494,7 +495,7 @@ concurrent_unordered_set& operator= (concurrent_unordered_set&& _Uset);
 
 `operator=`는 순서가 지정되지 않은 동시 집합에서 기존 요소를 지운 다음 이 집합으로 `_Uset`의 내용을 이동하거나 복사합니다.
 
-## <a name="rehash"></a><a name="rehash"></a>rehash
+## <a name="rehash"></a><a name="rehash"></a> rehash
 
 해시 테이블을 다시 빌드합니다.
 
@@ -513,7 +514,7 @@ void rehash(size_type _Buckets);
 
 버킷 수가 유효 하지 않은 경우 (0 이거나 최대 버킷 수보다 큰 경우) [out_of_range](../../../standard-library/out-of-range-class.md) 예외를 throw 합니다.
 
-## <a name="size"></a><a name="size"></a>크기가
+## <a name="size"></a><a name="size"></a> 크기가
 
 이 동시 컨테이너의 요소 수를 반환합니다. 이 메서드는 동시성이 보장 됩니다.
 
@@ -521,7 +522,7 @@ void rehash(size_type _Buckets);
 size_type size() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 컨테이너에 들어 있는 항목 수입니다.
 
@@ -529,7 +530,7 @@ size_type size() const;
 
 동시 삽입이 있을 경우 이 함수를 호출한 직후, 반환 값을 읽기도 전에 동시 컨테이너의 요소 수가 변경될 수 있습니다.
 
-## <a name="swap"></a><a name="swap"></a>스왑을
+## <a name="swap"></a><a name="swap"></a> 스왑을
 
 두 `concurrent_unordered_set` 개체의 내용을 바꿉니다. 이 메서드는 동시성이 보장 되지 않습니다.
 
@@ -542,7 +543,7 @@ void swap(concurrent_unordered_set& _Uset);
 *_Uset*<br/>
 스왑할 `concurrent_unordered_set` 개체입니다.
 
-## <a name="unsafe_begin"></a><a name="unsafe_begin"></a>unsafe_begin
+## <a name="unsafe_begin"></a><a name="unsafe_begin"></a> unsafe_begin
 
 특정 버킷에 대 한이 컨테이너의 첫 번째 요소에 반복기를 반환 합니다.
 
@@ -557,11 +558,11 @@ const_local_iterator unsafe_begin(size_type _Bucket) const;
 *_Bucket*<br/>
 버킷 인덱스입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 버킷의 시작 부분을 가리키는 반복기입니다.
 
-## <a name="unsafe_bucket"></a><a name="unsafe_bucket"></a>unsafe_bucket
+## <a name="unsafe_bucket"></a><a name="unsafe_bucket"></a> unsafe_bucket
 
 이 컨테이너에서 특정 키가 매핑되는 버킷 인덱스를 반환 합니다.
 
@@ -574,11 +575,11 @@ size_type unsafe_bucket(const key_type& KVal) const;
 *KVal*<br/>
 검색 되는 요소 키입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 컨테이너의 키에 대 한 버킷 인덱스입니다.
 
-## <a name="unsafe_bucket_count"></a><a name="unsafe_bucket_count"></a>unsafe_bucket_count
+## <a name="unsafe_bucket_count"></a><a name="unsafe_bucket_count"></a> unsafe_bucket_count
 
 이 컨테이너의 현재 버킷 수를 반환 합니다.
 
@@ -586,11 +587,11 @@ size_type unsafe_bucket(const key_type& KVal) const;
 size_type unsafe_bucket_count() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 컨테이너의 현재 버킷 수입니다.
 
-## <a name="unsafe_bucket_size"></a><a name="unsafe_bucket_size"></a>unsafe_bucket_size
+## <a name="unsafe_bucket_size"></a><a name="unsafe_bucket_size"></a> unsafe_bucket_size
 
 이 컨테이너의 특정 버킷에 있는 항목 수를 반환 합니다.
 
@@ -603,11 +604,11 @@ size_type unsafe_bucket_size(size_type _Bucket);
 *_Bucket*<br/>
 검색할 버킷입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 컨테이너의 현재 버킷 수입니다.
 
-## <a name="unsafe_cbegin"></a><a name="unsafe_cbegin"></a>unsafe_cbegin
+## <a name="unsafe_cbegin"></a><a name="unsafe_cbegin"></a> unsafe_cbegin
 
 특정 버킷에 대 한이 컨테이너의 첫 번째 요소에 반복기를 반환 합니다.
 
@@ -620,11 +621,11 @@ const_local_iterator unsafe_cbegin(size_type _Bucket) const;
 *_Bucket*<br/>
 버킷 인덱스입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 버킷의 시작 부분을 가리키는 반복기입니다.
 
-## <a name="unsafe_cend"></a><a name="unsafe_cend"></a>unsafe_cend
+## <a name="unsafe_cend"></a><a name="unsafe_cend"></a> unsafe_cend
 
 특정 버킷에 있는 마지막 요소 다음의 위치에 대 한 반복기를 반환 합니다.
 
@@ -637,11 +638,11 @@ const_local_iterator unsafe_cend(size_type _Bucket) const;
 *_Bucket*<br/>
 버킷 인덱스입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 버킷의 시작 부분을 가리키는 반복기입니다.
 
-## <a name="unsafe_end"></a><a name="unsafe_end"></a>unsafe_end
+## <a name="unsafe_end"></a><a name="unsafe_end"></a> unsafe_end
 
 특정 버킷에 대 한이 컨테이너의 마지막 요소에 반복기를 반환 합니다.
 
@@ -656,11 +657,11 @@ const_local_iterator unsafe_end(size_type _Bucket) const;
 *_Bucket*<br/>
 버킷 인덱스입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 버킷 끝을 가리키는 반복기입니다.
 
-## <a name="unsafe_erase"></a><a name="unsafe_erase"></a>unsafe_erase
+## <a name="unsafe_erase"></a><a name="unsafe_erase"></a> unsafe_erase
 
 에서 지정 된 위치에 있는 요소를 제거 합니다 `concurrent_unordered_set` . 이 메서드는 동시성이 보장 되지 않습니다.
 
@@ -688,7 +689,7 @@ iterator unsafe_erase(
 *last*<br/>
 반복기.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 처음 두 멤버 함수는 제거 된 요소 뒤에 남은 첫 번째 요소를 지정 하는 반복기를 반환 하거나, 이러한 요소가 없는 경우 [end](#end)()를 반환 합니다. 세 번째 멤버 함수는 제거 되는 요소의 수를 반환 합니다.
 
@@ -698,7 +699,7 @@ iterator unsafe_erase(
 
 세 번째 멤버 함수는 [equal_range](#equal_range)(kval)로 구분 된 범위의 요소를 제거 합니다.
 
-## <a name="unsafe_max_bucket_count"></a><a name="unsafe_max_bucket_count"></a>unsafe_max_bucket_count
+## <a name="unsafe_max_bucket_count"></a><a name="unsafe_max_bucket_count"></a> unsafe_max_bucket_count
 
 이 컨테이너의 최대 버킷 수를 반환 합니다.
 
@@ -706,7 +707,7 @@ iterator unsafe_erase(
 size_type unsafe_max_bucket_count() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 컨테이너의 최대 버킷 수입니다.
 
