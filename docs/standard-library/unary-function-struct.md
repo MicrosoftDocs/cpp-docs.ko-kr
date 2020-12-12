@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: unary_function 구조체'
 title: unary_function 구조체
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - unary_function class
 ms.assetid: 04c2fbdc-c1f6-48ed-b6cc-292a6d484627
-ms.openlocfilehash: 4b93664377838cd5ff97346282cb9120ae9b5e37
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 441bbecbd356dddb20d8b8249dbaa39ccfbcc3ea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520592"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97207399"
 ---
 # <a name="unary_function-struct"></a>unary_function 구조체
 
@@ -31,7 +32,7 @@ struct unary_function
 
 템플릿 구조체는 폼의 멤버 함수를 정의 하는 클래스의 기본으로 사용 `result_type operator()( constargument_type& ) const` 됩니다.
 
-이러한 모든 파생 단항 함수는 유일한 인수 유형을 **argument_type**으로, 반환 형식을 **result_type**로 참조할 수 있습니다.
+이러한 모든 파생 단항 함수는 유일한 인수 유형을 **argument_type** 으로, 반환 형식을 **result_type** 로 참조할 수 있습니다.
 
 ## <a name="example"></a>예제
 

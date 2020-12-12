@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 레코드 집합: 조인 수행 (ODBC)'
 title: '레코드 집합: 조인 수행(ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,16 +11,16 @@ helpviewer_keywords:
 - ODBC recordsets [C++], joins
 - recordsets [C++], joining tables
 ms.assetid: ca720900-a156-4780-bf01-4293633bea64
-ms.openlocfilehash: 7e8d42f2b96911cd57aca7c132b53ed7c10162be
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 1c7aa7bfb6925d9f7e916ddb6cd60061667d7859
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80212799"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97204513"
 ---
 # <a name="recordset-performing-a-join-odbc"></a>레코드 집합: 조인 수행(ODBC)
 
-이 항목은 MFC ODBC 클래스에 적용됩니다.
+이 토픽은 MFC ODBC 클래스에 적용됩니다.
 
 ## <a name="what-a-join-is"></a>조인 정의
 
@@ -33,11 +34,11 @@ ms.locfileid: "80212799"
 
 - 테이블이 조인 되는 열을 지정 하는 필터 (SQL **WHERE** 절)입니다. 이 필터는 "Table1. KeyCol = Table2" 형식을 사용 하 여 실제로 조인을 수행 합니다.
 
-여러 쌍의 열을 연결 하 여 동일한 방식으로 두 개 이상의 테이블을 조인할 수 있습니다. 각 쌍은 SQL 키워드 **및**에 의해 조인 됩니다.
+여러 쌍의 열을 연결 하 여 동일한 방식으로 두 개 이상의 테이블을 조인할 수 있습니다. 각 쌍은 SQL 키워드 **및** 에 의해 조인 됩니다.
 
 ## <a name="see-also"></a>참고 항목
 
 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[레코드 집합: 미리 정의된 쿼리에 대한 클래스 선언(ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md)<br/>
-[레코드 집합: 테이블에 대한 클래스 선언(ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)<br/>
-[레코드 집합: 레코드 집합 다시 쿼리(ODBC)](../../data/odbc/recordset-requerying-a-recordset-odbc.md)
+[레코드 집합: 미리 정의 된 쿼리에 대 한 클래스 선언 (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md)<br/>
+[레코드 집합: 테이블에 대 한 클래스 선언 (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)<br/>
+[레코드 집합: 레코드 집합 다시 쿼리 (ODBC)](../../data/odbc/recordset-requerying-a-recordset-odbc.md)

@@ -1,19 +1,20 @@
 ---
+description: '자세한 정보: 간단한 작업'
 title: 간단한 작업
 ms.date: 11/04/2016
 helpviewer_keywords:
 - lightweight tasks
 ms.assetid: b6dcfc7a-9fa9-4144-96a6-2845ea272017
-ms.openlocfilehash: be417052ffab19c1bc2d2ba6f35094f98e315812
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 328d556eacb2e33bdf3077b722defa81669a525c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77141846"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97205566"
 ---
 # <a name="lightweight-tasks"></a>간단한 작업
 
-이 문서에서는 동시성 런타임의 간단한 작업 역할에 대해 설명 합니다. *간단한 작업* 은 `concurrency::Scheduler` 또는 `concurrency::ScheduleGroup` 개체에서 직접 예약 하는 작업입니다. 간단한 작업은 Windows API [CreateThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) 함수에 제공 하는 함수와 유사 합니다. 따라서 동시성 런타임의 예약 기능을 사용 하도록 기존 코드를 조정 하는 경우 간단한 작업이 유용 합니다. 동시성 런타임 자체는 간단한 작업을 사용 하 여 비동기 에이전트를 예약 하 고 비동기 메시지 블록 간에 메시지를 보냅니다.
+이 문서에서는 동시성 런타임의 간단한 작업 역할에 대해 설명 합니다. *간단한 작업* 은 또는 개체에서 직접 예약 하는 작업입니다 `concurrency::Scheduler` `concurrency::ScheduleGroup` . 간단한 작업은 Windows API [CreateThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) 함수에 제공 하는 함수와 유사 합니다. 따라서 동시성 런타임의 예약 기능을 사용 하도록 기존 코드를 조정 하는 경우 간단한 작업이 유용 합니다. 동시성 런타임 자체는 간단한 작업을 사용 하 여 비동기 에이전트를 예약 하 고 비동기 메시지 블록 간에 메시지를 보냅니다.
 
 > [!TIP]
 > 동시성 런타임은 기본 스케줄러를 제공하므로 애플리케이션에서 스케줄러를 만들 필요가 없습니다. 작업 스케줄러는 응용 프로그램의 성능을 미세 조정 하는 데 도움이 되므로 동시성 런타임를 처음 접하는 경우 [PPL (병렬 패턴 라이브러리)](../../parallel/concrt/parallel-patterns-library-ppl.md) 또는 [비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md) 를 사용 하는 것이 좋습니다.
@@ -30,5 +31,5 @@ ms.locfileid: "77141846"
 
 ## <a name="see-also"></a>참고 항목
 
-[작업 스케줄러](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
-[연습: 간단한 작업을 사용하기 위해 기존 코드 조정](../../parallel/concrt/walkthrough-adapting-existing-code-to-use-lightweight-tasks.md)
+[작업 Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
+[연습: 간단한 작업을 사용 하기 위해 기존 코드 조정](../../parallel/concrt/walkthrough-adapting-existing-code-to-use-lightweight-tasks.md)

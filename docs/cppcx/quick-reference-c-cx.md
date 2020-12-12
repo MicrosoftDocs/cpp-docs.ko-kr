@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: 빠른 참조 (c + +/CX)'
 title: 빠른 참조(C++/CX)
 ms.date: 12/30/2016
 ms.assetid: ba457195-26e5-43aa-b99d-24a871e550f4
-ms.openlocfilehash: 6effcaec6a619bdd674dcae3bf4092fe82404d08
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 74640449df21787d059509e80deb1e1e0cdaf94c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214973"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97204656"
 ---
 # <a name="quick-reference-ccx"></a>빠른 참조(C++/CX)
 
@@ -24,7 +25,7 @@ Windows 런타임는 신뢰할 수 있는 운영 체제 환경 에서만 실행 
 ||**`wchar_t`**, **`char16_t`**|`char16`|유니코드(UTF-16) 코드 포인트를 나타내는 숫자가 아닌 16비트 값입니다.|
 ||**`short`**<br /><br /> **`unsigned short`**|`int16`<br /><br /> `uint16`|16비트 부호 있는 정수입니다.<br /><br /> 16비트 부호 없는 정수입니다.|
 ||**`int`**<br /><br /> **`unsigned int`**|**`int`**<br /><br /> `uint32`|32비트 부호 있는 정수입니다.<br /><br /> 32비트 부호 없는 정수입니다.|
-||**`long long`** 디스크나**`__int64`**<br /><br /> **`unsigned long long`**|`int64`<br /><br /> `uint64`|64비트 부호 있는 정수입니다.<br /><br /> 64비트 부호 없는 정수입니다.|
+||**`long long`** 디스크나 **`__int64`**<br /><br /> **`unsigned long long`**|`int64`<br /><br /> `uint64`|64비트 부호 있는 정수입니다.<br /><br /> 64비트 부호 없는 정수입니다.|
 ||**`float`**, **`double`**|`float32, float64`|32비트 또는 64비트 IEEE 754 부동 소수점 숫자입니다.|
 ||**`enum`**|**`enum class`**<br /><br /> 또는<br /><br /> **`enum struct`**|32비트 열거형입니다.|
 ||(해당 없음)|`Platform::Guid`|`Platform` 네임스페이스의 숫자가 아닌 128비트 값(GUID)입니다.|
@@ -44,7 +45,7 @@ Windows 런타임는 신뢰할 수 있는 운영 체제 환경 에서만 실행 
 |이벤트|(해당 없음)|**`event`***대리자-형식 식별자* *이벤트-식별자*`;`<br /><br /> *대리자 형식-* 식별자 대리자 *-식별자*  =  `ref new` *대리자-형식-식별자* `( this` *[, parameters]*`);`<br /><br /> *event-identifier* `+=` *delegate-identifier* `;`<br /><br /> 또는<br /><br /> `EventRegistrationToken`*토큰-식별자*  =  *obj* `.` *이벤트-식별자* `+=` *대리자-식별자*`;`<br /><br /> 또는<br /><br /> **`auto`***토큰-식별자*  =  *obj*. *이벤트-식별자* `::add(` *대리자-식별자*`);`<br /><br /> *obj* `.` *event-identifier* `-=` *token-identifier* `;`<br /><br /> 또는<br /><br /> *obj* `.` *event-identifier* `::remove(` *token-identifier* `);`|이벤트가 발생한 경우에 호출되는 이벤트 처리기(대리자) 컬렉션을 저장하는 이벤트 개체를 선언합니다.<br /><br /> 이벤트 처리기를 만듭니다.<br /><br /> 이벤트 처리기를 추가합니다.<br /><br /> 이벤트 처리기를 추가하면 이벤트 토큰(*token-identifier*)이 반환됩니다. 이벤트 처리기를 명시적으로 제거하려면 나중에 사용하도록 이벤트 토큰을 저장해야 합니다.<br /><br /> 이벤트 처리기를 제거합니다.<br /><br /> 이벤트 처리기를 제거하려면 이벤트 처리기가 추가될 때 저장한 이벤트 토큰을 지정해야 합니다.|
 |속성|(해당 없음)|**`property`***T* *식별자*<br /><br /> **`property`***T* *식별자* `[` *인덱스*`];`<br /><br /> **`property`***T* `default[` *인덱스*`];`|클래스 또는 개체 멤버 함수가 데이터 멤버 또는 인덱싱된 배열 요소에 액세스하는 데 사용된 같은 구문을 사용하여 액세스됨을 선언합니다.<br /><br /> 클래스 또는 개체 멤버 함수의 속성을 선언합니다.<br /><br /> 개체 멤버 함수의 인덱싱된 속성을 선언합니다.<br /><br /> 클래스 멤버 함수의 인덱싱된 속성을 선언합니다.|
 |매개 변수화된 형식|템플릿|`generic <typename` *T* `> interface class` *식별자* `{}`<br /><br /> `generic <typename` *T* `> delegate` *[return-type]* *delegate-identifier* `() {}`|매개 변수화된 인터페이스 클래스를 선언합니다.<br /><br /> 매개 변수화된 대리자를 선언합니다.|
-|Nullable 값 형식|`boost::optional<T>`|[Platform:: IBox\<T>](../cppcx/platform-ibox-interface.md)|스칼라 형식 및 값 구조체의 변수가 값을 가질 수 있도록 **`nullptr`** 합니다.|
+|Nullable 값 형식|`boost::optional<T>`|[Platform:: IBox \<T>](../cppcx/platform-ibox-interface.md)|스칼라 형식 및 값 구조체의 변수가 값을 가질 수 있도록 **`nullptr`** 합니다.|
 
 ## <a name="see-also"></a>참고 항목
 

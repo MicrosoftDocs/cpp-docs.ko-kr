@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 국가별 설정'
 title: 국가별 사용
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - MBCS [C++], enabling
 - Unicode [C++], enabling
 ms.assetid: b077f4ca-5865-40ef-a46e-d9e4d686ef21
-ms.openlocfilehash: ff0fb4102a0453b900b5b406739492a9420a5b07
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 15db7e27b65f4225917945820c936e572fc5da94
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228091"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97207269"
 ---
 # <a name="international-enabling"></a>국가별 사용
 

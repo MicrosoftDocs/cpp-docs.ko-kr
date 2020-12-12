@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: async_uuid'
 title: async_uuid (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - async_uuid attribute
 ms.assetid: 235cb0d7-be58-4dd9-983c-e2a21bbc42c6
-ms.openlocfilehash: cb0abdcedc26c5ffe197e52d5da4fbad1ec516d2
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: cb55fe66f05bfc7879470bfa6c64c00ffd2913e8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836246"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97205332"
 ---
 # <a name="async_uuid"></a>async_uuid
 

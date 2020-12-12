@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 멤버 Access Control (c + +)'
 title: 멤버 액세스 제어(C++)
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - member access [C++]
 - member-access control [C++]
 ms.assetid: 2d596bca-56ad-4277-94e1-ce3db45fa14a
-ms.openlocfilehash: de775c511701cd0b7cf923f47e33723b30a966e1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2cce7cb98e76098f3c20a6c2404f91ccf40db1cb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87186973"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97206879"
 ---
 # <a name="member-access-control-c"></a>멤버 액세스 제어(C++)
 
@@ -153,7 +154,7 @@ struct Derived : public Base
 
 ## <a name="access-control-and-static-members"></a>액세스 제어 및 정적 멤버
 
-기본 클래스를로 지정 하면 **`private`** 비정적 멤버에만 영향을 줍니다. 파생 클래스에서 계속 공용 정적 멤버에 액세스할 수 있습니다. 그러나 포인터, 참조 또는 개체를 사용하여 기본 클래스의 멤버에 액세스하는 경우 액세스 제어가 다시 적용되는 시간에 변환이 필요할 수 있습니다. 다음과 같은 예제를 참조하세요.
+기본 클래스를로 지정 하면 **`private`** 비정적 멤버에만 영향을 줍니다. 파생 클래스에서 계속 공용 정적 멤버에 액세스할 수 있습니다. 그러나 포인터, 참조 또는 개체를 사용하여 기본 클래스의 멤버에 액세스하는 경우 액세스 제어가 다시 적용되는 시간에 변환이 필요할 수 있습니다. 다음 예제를 참조하세요.
 
 ```cpp
 // access_control.cpp
@@ -195,7 +196,7 @@ int Derived2::ShowCount()
 
 ## <a name="access-to-virtual-functions"></a>가상 함수에 대한 액세스
 
-[가상](../cpp/virtual-cpp.md) 함수에 적용 되는 액세스 제어는 함수 호출을 수행 하는 데 사용 되는 형식에 따라 결정 됩니다. 함수의 선언 재정의는 지정된 형식에 대한 액세스 제어에 영향을 주지 않습니다. 예를 들면 다음과 같습니다.
+[가상](../cpp/virtual-cpp.md) 함수에 적용 되는 액세스 제어는 함수 호출을 수행 하는 데 사용 되는 형식에 따라 결정 됩니다. 함수의 선언 재정의는 지정된 형식에 대한 액세스 제어에 영향을 주지 않습니다. 예를 들어:
 
 ```cpp
 // access_to_virtual_functions.cpp

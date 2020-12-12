@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 방법: 다양 한 문자열 형식 간 변환'
 title: '방법: 다양한 문자열 형식 간 변환'
 ms.custom: get-started-article
 ms.date: 11/04/2016
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - string conversion [C++]
 - strings [C++], converting
 ms.assetid: e7e4f741-3c82-45f0-b8c0-1e1e343b0e77
-ms.openlocfilehash: 068665c594f2fbeb531be21ded7ef16f3f5c1ef3
-ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
+ms.openlocfilehash: 47a7107e8e776c0d9be584fd0cc166f48c90326c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91414518"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97207347"
 ---
 # <a name="how-to-convert-between-various-string-types"></a>방법: 다양한 문자열 형식 간 변환
 
@@ -20,7 +21,7 @@ ms.locfileid: "91414518"
 
 ## <a name="example-convert-from-char-"></a>예: char *에서 변환
 
-### <a name="description"></a>Description
+### <a name="description"></a>설명
 
 이 예제에서는에서 `char *` 위에 나열 된 다른 문자열 형식으로 변환 하는 방법을 보여 줍니다. `char *`문자열 (C 스타일 문자열이 라고도 함)은 null 문자를 사용 하 여 문자열의 끝을 표시 합니다. C 스타일 문자열은 일반적으로 문자 당 1 바이트가 필요 하지만 2 바이트를 사용할 수도 있습니다. 아래 예제에서 문자열 `char *` 은 유니코드 문자열에서 변환 된 결과 문자열 데이터로 인해 멀티 바이트 문자열이 라고도 합니다. 단일 바이트 및 멀티 바이트 문자 ( `MBCS` ) 함수는 문자열에 대해 작동할 수 있습니다 `char *` .
 
@@ -119,7 +120,7 @@ Hello, World! (System::String)
 
 ## <a name="example-convert-from-wchar_t-"></a>예: wchar_t에서 변환 *
 
-### <a name="description"></a>Description
+### <a name="description"></a>설명
 
 이 예제에서는에서 `wchar_t *` 위에 나열 된 다른 문자열 형식으로 변환 하는 방법을 보여 줍니다. 를 비롯 한 여러 문자열 형식은 `wchar_t *` 와이드 문자 형식을 구현 합니다. 멀티 바이트 및 와이드 문자 형식 간에 문자열을 변환 하려면와 같은 단일 함수 호출 `mbstowcs_s` 또는와 같은 클래스에 대 한 생성자 호출을 사용할 수 있습니다 `CStringA` .
 
@@ -241,7 +242,7 @@ Hello, World! (System::String)
 
 ## <a name="example-convert-from-_bstr_t"></a>예: _bstr_t에서 변환
 
-### <a name="description"></a>Description
+### <a name="description"></a>설명
 
 이 예제에서는에서 `_bstr_t` 위에 나열 된 다른 문자열 형식으로 변환 하는 방법을 보여 줍니다. `_bstr_t`개체는 와이드 문자열을 캡슐화 하는 방법입니다 `BSTR` . BSTR 문자열에는 길이 값이 있으며 null 문자를 사용 하 여 문자열을 종료 하지 않지만 변환 하는 문자열 형식에는 종료 null이 필요할 수 있습니다.
 
@@ -339,7 +340,7 @@ Hello, World! (System::String)
 
 ## <a name="example-convert-from-ccombstr"></a>예: CComBSTR에서 변환
 
-### <a name="description"></a>Description
+### <a name="description"></a>설명
 
 이 예제에서는에서 `CComBSTR` 위에 나열 된 다른 문자열 형식으로 변환 하는 방법을 보여 줍니다. _Bstr_t와 마찬가지로 `CComBSTR` 개체는 와이드 문자 bstr 문자열을 캡슐화 하는 방법입니다. BSTR 문자열에는 길이 값이 있으며 null 문자를 사용 하 여 문자열을 종료 하지 않지만 변환 하는 문자열 형식에는 종료 null이 필요할 수 있습니다.
 
@@ -447,7 +448,7 @@ Hello, World! (System::String)
 
 ## <a name="example-convert-from-cstring"></a>예: CString에서 변환
 
-### <a name="description"></a>Description
+### <a name="description"></a>설명
 
 이 예제에서는에서 `CString` 위에 나열 된 다른 문자열 형식으로 변환 하는 방법을 보여 줍니다. `CString` 는 TCHAR.H 데이터 형식을 기반으로 하며,이는 기호가 정의 되어 있는지 여부에 따라 달라 집니다 `_UNICODE` . `_UNICODE`가 정의 되지 않은 경우 `TCHAR` 은 char로 정의 되 고는 `CString` 멀티 바이트 문자열을 포함 `_UNICODE` 합니다 .가 정의 된 경우 `TCHAR` 는로 정의 되 고는 **`wchar_t`** 와이드 문자열을 포함 `CString` 합니다.
 
@@ -589,7 +590,7 @@ Hello, World! (System::String)
 
 ## <a name="example-convert-from-basic_string"></a>예: basic_string에서 변환
 
-### <a name="description"></a>Description
+### <a name="description"></a>설명
 
 이 예제에서는에서 `basic_string` 위에 나열 된 다른 문자열 형식으로 변환 하는 방법을 보여 줍니다.
 
@@ -683,7 +684,7 @@ Hello, World! (System::String)
 
 ## <a name="example-convert-from-systemstring"></a>예: Convert System:: String
 
-### <a name="description"></a>Description
+### <a name="description"></a>설명
 
 이 예제에서는 와이드 문자 (유니코드) [System:: String](/dotnet/api/system.string) 에서 위에 나열 된 다른 문자열 형식으로 변환 하는 방법을 보여 줍니다.
 

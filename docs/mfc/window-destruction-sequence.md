@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 창 소멸 시퀀스'
 title: 창 소멸 시퀀스
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,23 +10,23 @@ helpviewer_keywords:
 - sequence [MFC]
 - windows [MFC], destroying
 ms.assetid: 2d819196-6240-415f-a308-db43745e616c
-ms.openlocfilehash: d4592e6ac0077d6bc335b50f2d67b140402b4fe2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2ba60f1dcd3668a754bbe4384a6c8cf6b4d541d5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62167649"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97207685"
 ---
 # <a name="window-destruction-sequence"></a>창 소멸 시퀀스
 
-MFC 프레임 워크를 사용자가 창의 기본 프레임 창을 닫으면 [OnClose](../mfc/reference/cwnd-class.md#onclose) 처리기 호출 [DestroyWindow](../mfc/reference/cwnd-class.md#destroywindow)합니다. Windows 창을 소멸 될 때 호출 되는 마지막 멤버 함수는 [OnNcDestroy](../mfc/reference/cwnd-class.md#onncdestroy), 일부 정리를 수행 하는 호출을 [기본](../mfc/reference/cwnd-class.md#default) 멤버 Windows 정리를 수행 하도록 함수를 마지막으로 호출 합니다 가상 멤버 함수 [PostNcDestroy](../mfc/reference/cwnd-class.md#postncdestroy)합니다. 합니다 [CFrameWnd](../mfc/reference/cframewnd-class.md) 구현의 `PostNcDestroy` 삭제는 C++ 창 개체입니다.
+MFC 프레임 워크에서 사용자가 프레임 창을 닫으면 창의 기본 [OnClose](../mfc/reference/cwnd-class.md#onclose) 처리기는 [DestroyWindow](../mfc/reference/cwnd-class.md#destroywindow)를 호출 합니다. Windows 창이 제거 될 때 호출 되는 마지막 멤버 함수는 [OnNcDestroy](../mfc/reference/cwnd-class.md#onncdestroy)입니다 .이 함수는 정리를 수행 하 고 [기본](../mfc/reference/cwnd-class.md#default) 멤버 함수를 호출 하 여 windows 정리를 수행 하며, 마지막으로 가상 멤버 함수 [PostNcDestroy](../mfc/reference/cwnd-class.md#postncdestroy)를 호출 합니다. 의 [CFrameWnd](../mfc/reference/cframewnd-class.md) 구현은 `PostNcDestroy` c + + 창 개체를 삭제 합니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아야 할 내용
 
-- [할당 및 창 메모리 할당 취소](../mfc/allocating-and-deallocating-window-memory.md)
+- [창 메모리 할당 및 할당 취소](../mfc/allocating-and-deallocating-window-memory.md)
 
-- [해당 HWND에서에서 CWnd 분리](../mfc/detaching-a-cwnd-from-its-hwnd.md)
+- [CWnd를 해당 HWND에서 분리](../mfc/detaching-a-cwnd-from-its-hwnd.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[창 개체 제거](../mfc/destroying-window-objects.md)
+[창 개체 소멸](../mfc/destroying-window-objects.md)

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: &lt; 스레드 &gt; 연산자'
 title: '&lt;thread&gt; 연산자'
 ms.date: 11/04/2016
 f1_keywords:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - std::operator&lt;&lt; (thread)
 - std::operator&lt;= (thread)
 - std::operator== (thread)
-ms.openlocfilehash: 26ed8157685502618fe6fb82fbf9c9ad4c47cba3
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 3992dccf051622bcf854c1843f1bdeb15d227731
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845031"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97207425"
 ---
 # <a name="ltthreadgt-operators"></a>&lt;thread&gt; 연산자
 
@@ -217,7 +218,7 @@ basic_ostream<Elem, Tr>& operator<<(
 
 ### <a name="remarks"></a>설명
 
-이 함수는 *Ostr*에 *Id* 를 삽입 합니다.
+이 함수는 *Ostr* 에 *Id* 를 삽입 합니다.
 
 두 `thread::id` 개체가 비교 결과 같으면 해당 개체의 삽입된 텍스트 표현은 동일합니다.
 

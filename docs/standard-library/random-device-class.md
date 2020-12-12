@@ -1,4 +1,5 @@
 ---
+description: Random_device 클래스에 대해 자세히 알아보세요.
 title: random_device 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - std::random_device [C++], entropy
 - std::random_device [C++], entropy
 ms.assetid: 4393d515-0cb6-4e0d-a2ba-c780f05dc1bf
-ms.openlocfilehash: b2176ce7dcdefdcf4fc0846cd18b1b01d4de2916
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 29f7f9d1359e488bbe15811193c034a0be12219b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843549"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97207477"
 ---
 # <a name="random_device-class"></a>random_device 클래스
 

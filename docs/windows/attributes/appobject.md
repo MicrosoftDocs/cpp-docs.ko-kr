@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: appobject'
 title: appobject (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - appobject attribute
 ms.assetid: 8ce30b73-e945-403e-a755-6bc78078a695
-ms.openlocfilehash: 6562702a93273e4fc24ba138a1eb20b1ab6b076e
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b371b9726e3a750ef5d40ebe5abae219b473bb02
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836350"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97205462"
 ---
 # <a name="appobject"></a>appobject
 
@@ -29,7 +30,7 @@ Coclass를 전체 .exe 응용 프로그램과 연결 된 응용 프로그램 개
 
 ## <a name="example"></a>예제
 
-다음 코드에서는 **appobject**을 포함 하는 특성 블록이 앞에 오는 간단한 클래스 정의를 보여 줍니다.
+다음 코드에서는 **appobject** 을 포함 하는 특성 블록이 앞에 오는 간단한 클래스 정의를 보여 줍니다.
 
 ```cpp
 // cpp_attr_ref_appobject.cpp

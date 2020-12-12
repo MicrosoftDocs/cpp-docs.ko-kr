@@ -1,5 +1,6 @@
 ---
-title: 멀티바이트 문자 집합(MBCS) 프로그래밍 팁
+description: '자세한 정보: MBCS 프로그래밍 팁'
+title: MBCS 프로그래밍 팁
 ms.date: 11/04/2016
 helpviewer_keywords:
 - programming [C++], MBCS
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - MBCS [C++], programming
 - multibyte characters [C++]
 ms.assetid: d8ad36b8-917f-474e-8adb-69462adecd17
-ms.openlocfilehash: 420e376d3a66c8f8115732692089f4254847bc0d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 76890f3ecbee6938433bcd2d3fa99023d69e039c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410594"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97207191"
 ---
-# <a name="mbcs-programming-tips"></a>멀티바이트 문자 집합(MBCS) 프로그래밍 팁
+# <a name="mbcs-programming-tips"></a>MBCS 프로그래밍 팁
 
-새롭게 개발을 시작하는 상황이라면 응용 프로그램에 포함된 문자열을 모두가 올바르게 볼 수 있도록 문자열 처리에 유니코드를 사용해야 합니다. 멀티바이트 문자 집합(MBCS)은 오래된 과거의 기술이며 유니코드로 대체되었습니다. 이 단원에서는 MBCS를 사용하는 기존 프로그램을 유지보수해야 하거나 유니코드로의 변환이 어려운 부분들에 참고가 될 만한 조언들을 제공합니다. 이 단원의 내용은 MFC의 사용 여부와는 관계 없이 모든 애플리케이션을 대상으로 합니다. 다루는 주제는 다음과 같습니다.
+새로운 개발에서 최종 사용자가 볼 수 있는 모든 문자열에 대해 유니코드 문자 인코딩을 사용해야 합니다. MBCS는 유니코드로 대체 된 레거시 기술입니다. 이 단원에서는 MBCS를 사용하고 유니코드로의 변환이 실용적이지 않은 기존 프로그램을 유지 관리해야 하는 개발자에 대한 팁을 제공합니다. 이 조언이 mfc 응용 프로그램 및 MFC 없이 작성 된 응용 프로그램에 적용 됩니다. 다룰 주제는 다음과 같습니다.
 
-- [멀티바이트 문자 집합(MBCS) 프로그래밍 팁](../text/general-mbcs-programming-advice.md)
+- [일반적인 MBCS 프로그래밍 권장 사항](../text/general-mbcs-programming-advice.md)
 
 - [포인터 증가 및 감소](../text/incrementing-and-decrementing-pointers.md)
 
@@ -32,6 +33,6 @@ ms.locfileid: "62410594"
 
 - [버퍼 오버플로](../text/buffer-overflow.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[멀티바이트 문자 집합(MBCS) 지원](../text/support-for-multibyte-character-sets-mbcss.md)
+[Mbcs (멀티 바이트 문자 집합) 지원](../text/support-for-multibyte-character-sets-mbcss.md)

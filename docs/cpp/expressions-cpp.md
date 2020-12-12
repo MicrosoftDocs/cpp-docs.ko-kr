@@ -1,16 +1,17 @@
 ---
+description: '다음에 대 한 자세한 정보: 식 (c + +)'
 title: 식 (C++)
 ms.custom: index-page
 ms.date: 11/04/2016
 helpviewer_keywords:
 - expressions [C++]
 ms.assetid: aaa1f250-7185-4113-b682-3f5e995943d1
-ms.openlocfilehash: 908a0f2dd304a5b5f9d3b70e80fafbfe3574ece1
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 0576a2e76925bb6808a57dc9eee54231e5a06677
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80179941"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97204734"
 ---
 # <a name="expressions-c"></a>식 (C++)
 
@@ -28,11 +29,11 @@ C++에서는 연산자를 오버로드할 수 있으며 해당 의미는 사용�
 
 - [범위 결정 연산자](../cpp/scope-resolution-operator.md)
 
-- [후 위 식](../cpp/postfix-expressions.md)
+- [후위 식](../cpp/postfix-expressions.md)
 
 - [단항 연산자가 있는 식](../cpp/expressions-with-unary-operators.md)
 
-- [이항 연산자가 있는 식](../cpp/expressions-with-binary-operators.md)
+- [이항 연산자로 구성된 식](../cpp/expressions-with-binary-operators.md)
 
 - [조건 연산자](../cpp/conditional-operator-q.md)
 
@@ -48,11 +49,11 @@ C++에서는 연산자를 오버로드할 수 있으며 해당 의미는 사용�
 
 - [오버 로드 된 연산자](../cpp/operator-overloading.md)
 
-- [typeid](../extensions/typeid-cpp-component-extensions.md) (C++/cli)
+- [typeid](../extensions/typeid-cpp-component-extensions.md) (c + +/cli)
 
     > [!NOTE]
     >  기본 제공 형식에 대한 연산자를 오버 로드할 수 없으며 해당 동작은 미리 정의되어 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [C++ 언어 참조](../cpp/cpp-language-reference.md)

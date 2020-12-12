@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 메시지 범주'
 title: 메시지 범주
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - messages [MFC], Windows
 - message handling [MFC], message types
 ms.assetid: 68e1db75-9da6-4a4d-b2c2-dc4d59f8d87b
-ms.openlocfilehash: 3875a6931b4380f0531e4c1786de6dddfccb76ca
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 66635101a8727e560d21d44546e2e12ace6f33ba
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84625463"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97203382"
 ---
 # <a name="message-categories"></a>메시지 범주
 
@@ -35,14 +36,14 @@ ms.locfileid: "84625463"
 
    여기에는 사용자 인터페이스 개체의 WM_COMMAND 알림 메시지 (메뉴, 도구 모음 단추 및 액셀러레이터 키)가 포함 됩니다. 프레임 워크는 다른 메시지와 다른 메시지를 처리 하며 [명령 대상](command-targets.md)에 설명 된 대로 더 많은 종류의 개체에서 처리할 수 있습니다.
 
-## <a name="windows-messages-and-control-notification-messages"></a><a name="_core_windows_messages_and_control.2d.notification_messages"></a>Windows 메시지 및 컨트롤 알림 메시지
+## <a name="windows-messages-and-control-notification-messages"></a><a name="_core_windows_messages_and_control.2d.notification_messages"></a> Windows 메시지 및 Control-Notification 메시지
 
 범주 1과 2의 메시지 (Windows 메시지 및 컨트롤 알림)는 windows: 클래스에서 파생 된 클래스의 개체에 의해 처리 됩니다 `CWnd` . 여기에는,,,, `CFrameWnd` `CMDIFrameWnd` `CMDIChildWnd` `CView` `CDialog` 및 이러한 기본 클래스에서 파생 된 고유한 클래스가 포함 됩니다. 이러한 개체는 `HWND` Windows 창에 대 한 핸들을 캡슐화 합니다.
 
-## <a name="command-messages"></a><a name="_core_command_messages"></a>명령 메시지
+## <a name="command-messages"></a><a name="_core_command_messages"></a> 명령 메시지
 
 범주 3-commands의 메시지는 windows 및 보기 외에도 다양 한 개체 (문서, 문서 템플릿 및 응용 프로그램 개체 자체)로 처리할 수 있습니다. 명령이 특정 개체에 직접 영향을 주는 경우 해당 개체가 명령을 처리 하는 것이 좋습니다. 예를 들어 파일 메뉴의 열기 명령은 응용 프로그램과 논리적으로 연결 되어 있습니다. 응용 프로그램은 명령을 받을 때 지정 된 문서를 엽니다. 따라서 Open 명령의 처리기는 응용 프로그램 클래스의 멤버 함수입니다. 명령 및 개체를 개체로 라우팅하는 방법에 대 한 자세한 내용은 [프레임 워크가 처리기를 호출 하는 방법](how-the-framework-calls-a-handler.md)을 참조 하세요.
 
 ## <a name="see-also"></a>참고 항목
 
-[프레임워크의 메시지 및 명령](messages-and-commands-in-the-framework.md)
+[프레임 워크의 메시지 및 명령](messages-and-commands-in-the-framework.md)

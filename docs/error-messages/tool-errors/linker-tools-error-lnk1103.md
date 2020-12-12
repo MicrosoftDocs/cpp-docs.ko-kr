@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 링커 도구 오류 LNK1103'
 title: 링커 도구 오류 LNK1103
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1103
 ms.assetid: c8e9bc54-6a71-471c-899e-6f98122ee3c4
-ms.openlocfilehash: 668b354750171daefe0713d32f84f835134f93c7
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 8b14d8cc1d0834fe37cbce8578731a207acd1a50
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80195385"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97203395"
 ---
 # <a name="linker-tools-error-lnk1103"></a>링커 도구 오류 LNK1103
 

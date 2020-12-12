@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _ecvt_s'
 title: _ecvt_s
 ms.date: 4/2/2020
 api_name:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - numbers, converting
 - converting double numbers
 ms.assetid: d52fb0a6-cb91-423f-80b3-952a8955d914
-ms.openlocfilehash: e76ebd065d323a9ae501ce6a7a5790389c7d5dad
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: abda39ce5c33a5f6b6cca0757411e16c4171cd97
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234213"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97206944"
 ---
 # <a name="_ecvt_s"></a>_ecvt_s
 
@@ -82,11 +83,11 @@ errno_t _ecvt_s(
 *_Sign*<br/>
 변환된 숫자의 부호입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 성공할 경우 0입니다. 오류가 있을 경우 반환 값은 오류 코드입니다. 오류 코드는 Errno.h에서 정의됩니다. 자세한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
-다음 표에 나와 있는 잘못된 매개 변수의 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 이 함수는 잘못된 매개 변수 처리기를 호출합니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **errno** 를 **EINVAL** 로 설정 하 고 **EINVAL**를 반환 합니다.
+다음 표에 나와 있는 잘못된 매개 변수의 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 이 함수는 잘못된 매개 변수 처리기를 호출합니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **errno** 를 **EINVAL** 로 설정 하 고 **EINVAL** 를 반환 합니다.
 
 ### <a name="error-conditions"></a>오류 조건
 
@@ -99,11 +100,11 @@ errno_t _ecvt_s(
 
 ## <a name="security-issues"></a>보안 문제
 
-*버퍼가* 유효한 메모리를 가리키지 않고 **NULL**이 아닌 경우에는 **_ecvt_s** 에서 액세스 위반이 발생할 수 있습니다.
+*버퍼가* 유효한 메모리를 가리키지 않고 **NULL** 이 아닌 경우에는 **_ecvt_s** 에서 액세스 위반이 발생할 수 있습니다.
 
 ## <a name="remarks"></a>설명
 
-**_Ecvt_s** 함수는 부동 소수점 숫자를 문자열로 변환 합니다. *_Value* 매개 변수는 변환할 부동 소수점 숫자입니다. 이 함수는 *_Value* 의 *숫자를* 문자열로 저장 하 고 null 문자 (' \ 0 ')를 추가 합니다. *_Value* 의 자릿수가 *_Count*을 초과 하는 경우 하위 숫자가 반올림 됩니다. *개수* 보다 작은 경우 문자열은 0으로 채워집니다.
+**_Ecvt_s** 함수는 부동 소수점 숫자를 문자열로 변환 합니다. *_Value* 매개 변수는 변환할 부동 소수점 숫자입니다. 이 함수는 *_Value* 의 *숫자를* 문자열로 저장 하 고 null 문자 (' \ 0 ')를 추가 합니다. *_Value* 의 자릿수가 *_Count* 을 초과 하는 경우 하위 숫자가 반올림 됩니다. *개수* 보다 작은 경우 문자열은 0으로 채워집니다.
 
 숫자만 문자열에 저장됩니다. 소수점의 위치와 *_Value* 부호는 *_Dec* 에서 가져올 수 있으며 호출 후에 *_Sign* 수 있습니다. *_Dec* 매개 변수는 문자열의 시작 부분을 기준으로 소수점의 위치를 제공 하는 정수 값을 가리킵니다. 0 또는 음의 정수 값은 소수점이 첫 번째 숫자의 왼쪽에 있다는 것을 나타냅니다. *_Sign* 매개 변수는 변환 된 숫자의 부호를 나타내는 정수를 가리킵니다. 정수 값이 0이면 숫자가 양수입니다. 그렇지 않으면 숫자가 음수입니다.
 

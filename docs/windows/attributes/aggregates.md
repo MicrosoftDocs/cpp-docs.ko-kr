@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 집계'
 title: 집합체 (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - aggregate objects [C++], aggregates attribute
 - aggregates [C++]
 ms.assetid: 67a084c9-941f-474b-a029-9c93b38ebe9a
-ms.openlocfilehash: e745cae5710bbf8df1314ec20a4a0b72545c0591
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: c108b18f957047a6a5dbb33538a23de6c3469783
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836363"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97205475"
 ---
 # <a name="aggregates"></a>집계
 
@@ -93,6 +94,6 @@ struct CObject : IObject
 [COM 특성](com-attributes.md)<br/>
 [클래스 특성](class-attributes.md)<br/>
 [Typedef, Enum, Union 및 Struct 특성](typedef-enum-union-and-struct-attributes.md)<br/>
-[요약](/windows/win32/com/aggregation)<br/>
+[집계](/windows/win32/com/aggregation)<br/>
 [가능한](/windows/win32/Midl/aggregatable)<br/>
 [COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](../../atl/reference/com-interface-entry-macros.md#com_interface_entry_autoaggregate_blind)

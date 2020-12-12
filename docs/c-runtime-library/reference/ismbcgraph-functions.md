@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _ismbcgraph, _ismbcgraph_l, _ismbcprint, _ismbcprint_l, _ismbcpunct, _ismbcpunct_l, _ismbcblank, _ismbcblank_l, _ismbcspace, _ismbcspace_l'
 title: _ismbcgraph, _ismbcgraph_l, _ismbcprint, _ismbcprint_l, _ismbcpunct, _ismbcpunct_l, _ismbcblank, _ismbcblank_l, _ismbcspace, _ismbcspace_l
 ms.date: 4/2/2020
 api_name:
@@ -70,12 +71,12 @@ helpviewer_keywords:
 - _ismbcgraph_l function
 - _ismbcspace function
 ms.assetid: 8e0a5f47-ba64-4411-92a3-3c525d16e3be
-ms.openlocfilehash: 5f2c8b595de323994aa670a8e0fee9e562897e49
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 08233d05dc558bf659c1c2ee00c3a381be2d1257
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919759"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97206931"
 ---
 # <a name="_ismbcgraph-_ismbcgraph_l-_ismbcprint-_ismbcprint_l-_ismbcpunct-_ismbcpunct_l-_ismbcblank-_ismbcblank_l-_ismbcspace-_ismbcspace_l"></a>_ismbcgraph, _ismbcgraph_l, _ismbcprint, _ismbcprint_l, _ismbcpunct, _ismbcpunct_l, _ismbcblank, _ismbcblank_l, _ismbcspace, _ismbcspace_l
 
@@ -132,9 +133,9 @@ int _ismbcspace_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-이러한 각 루틴은 문자가 테스트 조건을 만족하는 경우 0이 아닌 값을 반환하고, 그렇지 않으면 0을 반환합니다. *C* <= 255이 고 해당 **_ismbb** 루틴이 있는 경우 (예: **_ismbcalnum** **_ismbbalnum**에 해당 하는 경우) 결과는 해당 **_ismbb** 루틴의 반환 값입니다.
+이러한 각 루틴은 문자가 테스트 조건을 만족하는 경우 0이 아닌 값을 반환하고, 그렇지 않으면 0을 반환합니다. *C* <= 255이 고 해당 **_ismbb** 루틴이 있는 경우 (예: **_ismbcalnum** **_ismbbalnum** 에 해당 하는 경우) 결과는 해당 **_ismbb** 루틴의 반환 값입니다.
 
 **_L** 접미사가 있는 함수는 현재 로캘이 아닌 로캘 종속 동작에 대해 전달 된 로캘을 사용 한다는 점을 제외 하 고 이러한 함수의 버전은 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
@@ -173,11 +174,11 @@ int _ismbcspace_l(
 
 모든 버전의 [C 런타임 라이브러리](../../c-runtime-library/crt-library-features.md)입니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [문자 분류](../../c-runtime-library/character-classification.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[멀티 바이트 문자 시퀀스 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[로캘](../../c-runtime-library/locale.md)<br/>
+[Multibyte-Character 시퀀스의 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_ismbc 루틴](../../c-runtime-library/ismbc-routines.md)<br/>
 [is, isw 루틴](../../c-runtime-library/is-isw-routines.md)<br/>
 [_ismbb 루틴](../../c-runtime-library/ismbb-routines.md)<br/>

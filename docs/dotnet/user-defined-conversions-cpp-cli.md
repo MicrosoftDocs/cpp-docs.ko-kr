@@ -1,15 +1,16 @@
 ---
+description: 자세한 내용은 User-Defined 변환 (c + +/CLI)을 (를) 확인 하세요.
 title: 사용자 정의 변환(C++/CLI)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - user-defined conversions [C++]
 ms.assetid: 8010fd59-2775-4e9a-a6ed-58055032d66f
-ms.openlocfilehash: bb7a30382bc586f4d324d47ef6e6757fac83f5ae
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 0b07ab3201bfd379a17922f020486d0b17a59558
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "79545134"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97204266"
 ---
 # <a name="user-defined-conversions-ccli"></a>사용자 정의 변환(C++/CLI)
 
@@ -80,7 +81,7 @@ in N::N
 
 변환 연산자는 다른 클래스의 개체에서 연산자가 정의 된 클래스의 개체를 만듭니다.
 
-Standard C++ 에서는 convert 연산자를 지원 하지 않습니다. 표준 C++ 에서는이 용도로 생성자를 사용 합니다. 그러나 CLR 형식을 사용 하는 경우 Visual C++ 은 convert 연산자를 호출 하기 위한 구문 지원을 제공 합니다.
+표준 c + +에서는 convert 연산자를 지원 하지 않습니다. 표준 c + +에서는이 용도로 생성자를 사용 합니다. 그러나 CLR 유형을 사용 하는 경우 변환 연산자를 호출 하기 위한 구문 지원을 제공 Visual C++.
 
 다른 CLS 규격 언어와의 상호 운용성을 위해 지정 된 클래스에 대 한 각 사용자 정의 단항 생성자를 해당 하는 convert 연산자를 사용 하 여 래핑할 수 있습니다.
 
@@ -319,6 +320,6 @@ int main() {
 2000
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [클래스 및 구조체](../extensions/classes-and-structs-cpp-component-extensions.md)

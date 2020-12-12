@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2548'
 title: 컴파일러 오류 C2548
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2548
 ms.assetid: 01e9c835-9bf3-4020-9295-5ee448c519f3
-ms.openlocfilehash: f89208314c1d2e8ddb5100da72aa600a411b4608
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: cf7686191199ec1d0b5c515138f15f2fbf85efa8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756801"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97204110"
 ---
 # <a name="compiler-error-c2548"></a>컴파일러 오류 C2548
 

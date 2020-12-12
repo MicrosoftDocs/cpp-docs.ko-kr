@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 메뉴 (MFC)'
 title: 메뉴(MFC)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - menus [MFC], manipulating during execution
 - menus [MFC]
 ms.assetid: 6a181495-47a9-4356-83fc-b89152d6cb4c
-ms.openlocfilehash: 4a9a20676c91dab0d1708293e004513bb648d178
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: d1cdc91cae8ae0ddfc8c7e9853d9f920511ffb05
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626201"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97203408"
 ---
 # <a name="menus-mfc"></a>메뉴(MFC)
 
@@ -28,9 +29,9 @@ MFC는 메뉴를 사용 하는 데 도움이 되는 두 가지 요소를 제공 
 
 - [프로그램 실행 중 메뉴 개체 조작](manipulating-menus-during-program-execution.md)
 
-- [사용자 인터페이스 개체를 업데이트 하는 방법](how-to-update-user-interface-objects.md)
+- [User-Interface 개체를 업데이트 하는 방법](how-to-update-user-interface-objects.md)
 
-- [예제](menu-sample-list.md)
+- [샘플](menu-sample-list.md)
 
 ## <a name="see-also"></a>참고 항목
 

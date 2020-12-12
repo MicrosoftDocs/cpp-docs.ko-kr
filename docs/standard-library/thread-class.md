@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: thread 클래스'
 title: thread 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - std::thread [C++], joinable
 - std::thread [C++], native_handle
 - std::thread [C++], swap
-ms.openlocfilehash: 19f7ae1fc95f531f509273f0eb9998c73fe7d47b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b9afa8e649fd2b3fb0fdaf339e4a6fbead5b4ef6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215584"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97207464"
 ---
 # <a name="thread-class"></a>thread 클래스
 
@@ -56,9 +57,9 @@ class thread;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
-|[스레드(thread)](#thread)|`thread` 개체를 생성합니다.|
+|[스레드](#thread)|`thread` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -67,7 +68,7 @@ class thread;
 |[분리](#detach)|`thread` 개체에서 관련 스레드를 분리합니다.|
 |[get_id](#get_id)|관련 스레드의 고유 식별자를 반환합니다.|
 |[hardware_concurrency](#hardware_concurrency)|정적. 하드웨어 스레드 컨텍스트 수의 추정치를 반환합니다.|
-|[조인](#join)|관련 스레드가 완료될 때까지 차단합니다.|
+|[join](#join)|관련 스레드가 완료될 때까지 차단합니다.|
 |[조인 가능](#joinable)|관련 스레드가 조인 가능한지를 지정합니다.|
 |[native_handle](#native_handle)|뮤텍스 핸들을 나타내는 구현별 형식을 반환합니다.|
 |[스왑을](#swap)|개체 상태를 지정된 `thread` 개체와 바꿉니다.|
@@ -84,7 +85,7 @@ class thread;
 
 **네임스페이스:** std
 
-## <a name="threaddetach"></a><a name="detach"></a>스레드::d etach
+## <a name="threaddetach"></a><a name="detach"></a> 스레드::d etach
 
 관련 스레드를 분리합니다. 종료 시에는 운영 체제가 스레드 리소스를 해제합니다.
 
@@ -100,7 +101,7 @@ void detach();
 
 호출 개체와 연결된 스레드가 유효하지 않은 경우 함수는 오류 코드가 `no_such_process`인 `system_error`를 throw합니다.
 
-## <a name="threadget_id"></a><a name="get_id"></a>thread:: get_id
+## <a name="threadget_id"></a><a name="get_id"></a> thread:: get_id
 
 연결된 스레드에 대한 고유 식별자를 반환합니다.
 
@@ -108,11 +109,11 @@ void detach();
 id get_id() const noexcept;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 연결된 스레드를 고유하게 식별하는 [thread::id](#id_class) 개체이거나, 개체에 스레드가 연결되어 있지 않은 경우 `thread::id()`입니다.
 
-## <a name="threadhardware_concurrency"></a><a name="hardware_concurrency"></a>thread:: hardware_concurrency
+## <a name="threadhardware_concurrency"></a><a name="hardware_concurrency"></a> thread:: hardware_concurrency
 
 하드웨어 스레드 컨텍스트 수의 추정치를 반환하는 정적 메서드입니다.
 
@@ -120,11 +121,11 @@ id get_id() const noexcept;
 static unsigned int hardware_concurrency() noexcept;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 하드웨어 스레드 컨텍스트 수의 추정치입니다. 값이 계산할 수 없는 상태이거나 올바르게 정의되어 있지 않으면 이 메서드는 0을 반환합니다.
 
-## <a name="threadid-class"></a><a name="id_class"></a>thread:: id 클래스
+## <a name="threadid-class"></a><a name="id_class"></a> thread:: id 클래스
 
 프로세스에서 각 실행 스레드에 대한 고유 식별자를 반환합니다.
 
@@ -140,7 +141,7 @@ class thread::id {
 
 모든 기본 생성 `thread::id` 개체의 비교 결과는 같습니다.
 
-## <a name="threadjoin"></a><a name="join"></a>thread:: join
+## <a name="threadjoin"></a><a name="join"></a> thread:: join
 
 호출 개체와 연결된 실행 스레드가 완료될 때까지 차단합니다.
 
@@ -152,23 +153,23 @@ void join();
 
 호출이 성공하면 호출 개체에 대한 [get_id](#get_id) 후속 호출에서는 기존 스레드의 `thread::id`와 비교할 때 같지 않은 기본 [thread::id](#id_class)가 반환됩니다. 호출이 성공하지 않으면 `get_id`에서 반환되는 값은 변경되지 않습니다.
 
-## <a name="threadjoinable"></a><a name="joinable"></a>thread:: 조인 가능
+## <a name="threadjoinable"></a><a name="joinable"></a> thread:: 조인 가능
 
-연결 된 스레드가 *조인 가능*여부를 지정 합니다.
+연결 된 스레드가 *조인 가능* 여부를 지정 합니다.
 
 ```cpp
 bool joinable() const noexcept;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-**`true`** 연결 된 스레드가 *조인 가능*이면이 고, 그렇지 않으면입니다. 그렇지 않으면 **`false`** 입니다.
+**`true`** 연결 된 스레드가 *조인 가능* 이면이 고, 그렇지 않으면입니다. 그렇지 않으면 **`false`** 입니다.
 
 ### <a name="remarks"></a>설명
 
-스레드 개체는 `get_id() != id()`인 경우 *조인 가능*합니다.
+스레드 개체는 `get_id() != id()`인 경우 *조인 가능* 합니다.
 
-## <a name="threadnative_handle"></a><a name="native_handle"></a>thread:: native_handle
+## <a name="threadnative_handle"></a><a name="native_handle"></a> thread:: native_handle
 
 뮤텍스 핸들을 나타내는 구현별 형식을 반환합니다. 스레드 핸들은 구현별 방식으로 사용할 수 있습니다.
 
@@ -176,11 +177,11 @@ bool joinable() const noexcept;
 native_handle_type native_handle();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `native_handle_type`은 `void *`로 캐스팅된 Win32 `HANDLE`로 정의됩니다.
 
-## <a name="threadoperator"></a><a name="op_eq"></a>thread:: operator =
+## <a name="threadoperator"></a><a name="op_eq"></a> thread:: operator =
 
 지정한 개체의 스레드를 현재 개체에 연결합니다.
 
@@ -193,7 +194,7 @@ thread& operator=(thread&& Other) noexcept;
 *다른*\
 `thread` 개체입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `*this`
 
@@ -203,7 +204,7 @@ thread& operator=(thread&& Other) noexcept;
 
 연결이 설정되면 `Other`는 기본 생성 상태로 설정됩니다.
 
-## <a name="threadswap"></a><a name="swap"></a>thread:: swap
+## <a name="threadswap"></a><a name="swap"></a> thread:: swap
 
 개체 상태를 지정된 `thread` 개체의 상태와 바꿉니다.
 
@@ -216,7 +217,7 @@ void swap(thread& Other) noexcept;
 *다른*\
 `thread` 개체입니다.
 
-## <a name="threadthread-constructor"></a><a name="thread"></a>thread:: thread 생성자
+## <a name="threadthread-constructor"></a><a name="thread"></a> thread:: thread 생성자
 
 `thread` 개체를 생성합니다.
 
@@ -234,7 +235,7 @@ thread(thread&& Other) noexcept;
 스레드에 의해 실행되는 애플리케이션 정의 함수
 
 *은*\
-*F*에 전달 될 인수 목록입니다.
+*F* 에 전달 될 인수 목록입니다.
 
 *다른*\
 기존 `thread` 개체입니다.

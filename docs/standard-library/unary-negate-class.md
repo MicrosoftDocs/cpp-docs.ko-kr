@@ -1,4 +1,5 @@
 ---
+description: Unary_negate 클래스에 대해 자세히 알아보세요.
 title: unary_negate 클래스
 ms.date: 02/21/2019
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - unary_negate class
 ms.assetid: e3b86eec-3205-49b9-ab83-f55225af4e0c
-ms.openlocfilehash: 2d9f0bedd9e541e65f04ac20375f16f41413cf03
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 33907bce7e03005488d23b3ac39666b6310b0e43
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72684430"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97207412"
 ---
 # <a name="unary_negate-class"></a>unary_negate 클래스
 
-지정 된 단항 함수의 반환 값을 부정 하는 멤버 함수를 제공 하는 클래스 템플릿입니다. [Not_fn](functional-functions.md#not_fn)를 사용 하 여 c + + 17에서 사용 되지 않습니다.
+지정 된 단항 함수의 반환 값을 부정 하는 멤버 함수를 제공 하는 클래스 템플릿입니다. C + + 17에서 더 이상 사용 되지 않는 [not_fn](functional-functions.md#not_fn)입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -31,19 +32,19 @@ class unary_negate
 
 ### <a name="parameters"></a>매개 변수
 
-*Func* \
+*Func*\
 부정할 단항 함수입니다.
 
-*왼쪽* \
+*비어*\
 부정할 단항 함수의 피연산자입니다.
 
 ## <a name="return-value"></a>반환 값
 
 단항 함수의 부정
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
-클래스 템플릿은 *\_Func*단항 함수 개체의 복사본을 저장 합니다. @No__t_1 반환 하는 것 처럼 `operator()` 멤버 함수를 정의 합니다.
+클래스 템플릿은 단항 함수 개체 *\_ Func* 의 복사본을 저장 합니다. 반환 하는 멤버 함수 `operator()` 를 정의 `!_Func(left)` 합니다.
 
 `unary_negate`의 생성자는 직접 사용되는 경우가 거의 없습니다. 도우미 함수 [not1](../standard-library/functional-functions.md#not1)을 사용하면 **unary_negator** 어댑터 조건자를 보다 쉽게 선언하고 사용할 수 있습니다.
 

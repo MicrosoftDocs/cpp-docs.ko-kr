@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4536'
 title: 컴파일러 경고(수준 4) C4536
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4536
 ms.assetid: ab4d0686-f813-4e88-a264-b40d3630ed6c
-ms.openlocfilehash: 9d3c81282f7299317eef8bd69e340076a3a3fc96
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 73ff8a69d2940ce84743c883b7ed2e4056dd7881
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80198369"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97206658"
 ---
 # <a name="compiler-warning-level-4-c4536"></a>컴파일러 경고(수준 4) C4536
 

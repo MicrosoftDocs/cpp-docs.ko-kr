@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: ActivationFactoryCallback 함수'
 title: ActivationFactoryCallback 함수
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - ActivationFactoryCallback function
 ms.assetid: dd40c79b-1273-4f2a-8c24-ae9926fb4fd9
-ms.openlocfilehash: 0be4bebcc561cdf1df3f2502c8cc1927bdc65564
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 9398b3f681e32c7a73b46de549ce7c41a3af6196
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214216"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97204617"
 ---
 # <a name="activationfactorycallback-function"></a>ActivationFactoryCallback 함수
 
@@ -33,13 +34,13 @@ inline HRESULT STDAPICALLTYPE ActivationFactoryCallback(
 런타임 클래스 이름을 지정 하는 문자열에 대 한 핸들입니다.
 
 *ppFactory*<br/>
-이 작업이 완료 되 면 매개 변수 *activationId*에 해당 하는 활성화 팩터리가 활성화 됩니다.
+이 작업이 완료 되 면 매개 변수 *activationId* 에 해당 하는 활성화 팩터리가 활성화 됩니다.
 
 ## <a name="return-value"></a>반환 값
 
 성공하면 S_OK이고, 그렇지 않으면 실패를 설명하는 HRESULT가 발생합니다. 오류 Hresult는 CLASS_E_CLASSNOTAVAILABLE E_INVALIDARG 됩니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 지정 된 활성화 ID에 대 한 활성화 팩터리를 가져옵니다.
 
@@ -53,4 +54,4 @@ Windows 런타임는이 콜백 함수를 호출 하 여 해당 런타임 클래�
 
 ## <a name="see-also"></a>참고 항목
 
-[Microsoft::WRL::Details 네임스페이스](microsoft-wrl-details-namespace.md)
+[Microsoft:: WRL::D etails 네임 스페이스](microsoft-wrl-details-namespace.md)

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 레코드 집합 (ODBC)'
 title: 레코드 집합(ODBC)
 ms.date: 05/09/2019
 helpviewer_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - snapshots, ODBC recordsets
 - dynasets
 ms.assetid: 333337c5-575e-4d26-b5f6-47166ad7874d
-ms.openlocfilehash: b7a55621f4875b24cc33a0fd49a5b8b4c88b34cb
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: edbad5851db6f5ac9e1fddcc769c4f860ee5478e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368642"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97204539"
 ---
 # <a name="recordset-odbc"></a>레코드 집합(ODBC)
 
@@ -66,60 +67,60 @@ ms.locfileid: "81368642"
 
 ## <a name="your-recordsets"></a><a name="_core_your_recordsets"></a> 레코드 집합
 
-액세스하려는 모든 개별 테이블, 보기 또는 저장 프로시저에 대해 일반적으로 `CRecordset`에서 파생된 클래스를 정의합니다. (예외는 데이터베이스 조인이며, 한 레코드 집합이 두 개 이상의 테이블의 열을 나타냅니다.) 레코드 집합 클래스를 파생하는 경우 대화 상자 데이터 교환(DDX) 메커니즘과 유사한 레코드 필드 교환(RFX) 메커니즘 또는 대량 레코드 필드 교환(Bulk RFX) 메커니즘을 사용하도록 설정합니다. RFX 및 Bulk RFX는 데이터 원본에서 레코드 집합으로 데이터를 간단하게 전송합니다. 또한 RFX는 레코드 집합에서 데이터 원본으로 데이터를 추가로 전송합니다. 자세한 내용은 [RFX(레코드 필드 교환)](../../data/odbc/record-field-exchange-rfx.md) 및 [레코드 집합: 대량 레코드 가져오기(ODBC)를](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)참조하십시오.
+액세스하려는 모든 개별 테이블, 보기 또는 저장 프로시저에 대해 일반적으로 `CRecordset`에서 파생된 클래스를 정의합니다. 단, 한 레코드 집합은 둘 이상의 테이블에서 열을 나타내는 데이터베이스 조인입니다. 레코드 집합 클래스를 파생 시킬 때는 DDX (대화 상자 데이터 교환) 메커니즘과 유사한 RFX (레코드 필드 교환) 메커니즘 또는 대량 RFX (대량 레코드 필드 교환) 메커니즘을 사용 하도록 설정 합니다. RFX 및 Bulk RFX는 데이터 원본에서 레코드 집합으로 데이터를 간단하게 전송합니다. 또한 RFX는 레코드 집합에서 데이터 원본으로 데이터를 추가로 전송합니다. 자세한 내용은 [RFX (레코드 필드 교환)](../../data/odbc/record-field-exchange-rfx.md) 및 [레코드 집합: 대량 레코드 페치 (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)를 참조 하세요.
 
-레코드 집합 개체를 사용하면 선택한 모든 레코드에 액세스할 수 있습니다. `CRecordset` 멤버 함수(예: `MoveNext` 및 `MovePrev`)를 사용하여 선택한 여러 레코드를 스크롤합니다. 동시에, 레코드 집합 개체는 선택한 레코드 중 하나의 현재 레코드만 나타냅니다. 테이블의 열 또는 데이터베이스 쿼리에서 발생하는 레코드에 해당하는 레코드 집합 클래스 멤버 변수를 선언하여 현재 레코드의 필드를 검사할 수 있습니다. 레코드 집합 데이터 멤버에 대한 자세한 내용은 [레코드 집합: 아키텍처(ODBC)를](../../data/odbc/recordset-architecture-odbc.md)참조하십시오.
+레코드 집합 개체를 사용하면 선택한 모든 레코드에 액세스할 수 있습니다. `CRecordset` 멤버 함수(예: `MoveNext` 및 `MovePrev`)를 사용하여 선택한 여러 레코드를 스크롤합니다. 동시에, 레코드 집합 개체는 선택한 레코드 중 하나의 현재 레코드만 나타냅니다. 테이블의 열 또는 데이터베이스 쿼리에서 발생하는 레코드에 해당하는 레코드 집합 클래스 멤버 변수를 선언하여 현재 레코드의 필드를 검사할 수 있습니다. 레코드 집합 데이터 멤버에 대 한 자세한 내용은 [레코드 집합: 아키텍처 (ODBC)](../../data/odbc/recordset-architecture-odbc.md)를 참조 하세요.
 
 다음 항목에서는 레코드 집합 개체 사용에 대한 세부 정보를 설명합니다. 이 항목은 기능 범주 및 순차적 읽기를 허용하는 자연스러운 탐색 순서로 나열되어 있습니다.
 
 ### <a name="topics-about-the-mechanics-of-opening-reading-and-closing-recordsets"></a>레코드 열기, 읽기 및 닫기의 메커니즘에 대한 항목
 
-- [레코드 집합: 아키텍처(ODBC)](../../data/odbc/recordset-architecture-odbc.md)
+- [레코드 집합: 아키텍처 (ODBC)](../../data/odbc/recordset-architecture-odbc.md)
 
-- [레코드 집합: 테이블에 대한 클래스 선언(ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)
+- [레코드 집합: 테이블에 대 한 클래스 선언 (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)
 
-- [레코드 집합: 레코드 집합 만들기 및 닫기(ODBC)](../../data/odbc/recordset-creating-and-closing-recordsets-odbc.md)
+- [레코드 집합: 레코드 집합 만들기 및 닫기 (ODBC)](../../data/odbc/recordset-creating-and-closing-recordsets-odbc.md)
 
 - [레코드 집합: 스크롤(ODBC)](../../data/odbc/recordset-scrolling-odbc.md)
 
-- [레코드 집합: 책갈피와 절대 위치(ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md)
+- [레코드 집합: 책갈피 및 절대 위치 (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md)
 
-- [레코드 집합: 레코드 필터링(ODBC)](../../data/odbc/recordset-filtering-records-odbc.md)
+- [레코드 집합: 레코드 필터링 (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md)
 
-- [레코드 집합: 레코드 정렬(ODBC)](../../data/odbc/recordset-sorting-records-odbc.md)
+- [레코드 집합: 레코드 정렬 (ODBC)](../../data/odbc/recordset-sorting-records-odbc.md)
 
-- [레코드 집합: 레코드 집합 매개 변수화(ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md)
+- [레코드 집합: 레코드 집합 매개 변수화 (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md)
 
 ### <a name="topics-about-the-mechanics-of-modifying-recordsets"></a>레코드 집합 수정 메커니즘에 대한 항목
 
-- [레코드 집합: 레코드 추가, 업데이트 및 삭제(ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)
+- [레코드 집합: 레코드 추가, 업데이트 및 삭제 (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)
 
-- [레코드 집합: 레코드 잠금(ODBC)](../../data/odbc/recordset-locking-records-odbc.md)
+- [레코드 집합: 레코드 잠금 (ODBC)](../../data/odbc/recordset-locking-records-odbc.md)
 
-- [레코드 집합: 레코드 집합 다시 쿼리(ODBC)](../../data/odbc/recordset-requerying-a-recordset-odbc.md)
+- [레코드 집합: 레코드 집합 다시 쿼리 (ODBC)](../../data/odbc/recordset-requerying-a-recordset-odbc.md)
 
 ### <a name="topics-about-somewhat-more-advanced-techniques"></a>약간 더 고급 기술에 대한 항목
 
-- [레코드 집합: 조인 수행(ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md)
+- [레코드 집합: 조인 수행 (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md)
 
-- [레코드 집합: 미리 정의된 쿼리에 대한 클래스 선언(ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md)
+- [레코드 집합: 미리 정의 된 쿼리에 대 한 클래스 선언 (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md)
 
-- [레코드 집합: 데이터 열 동적 바인딩(ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md)
+- [레코드 집합: 데이터 열 동적 바인딩 (ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md)
 
-- [레코드 집합: 대량 레코드 페치(ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)
+- [레코드 집합: 대량 레코드 페치 (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)
 
-- [레코드 집합: 대형 데이터 항목 작업(ODBC)](../../data/odbc/recordset-working-with-large-data-items-odbc.md)
+- [레코드 집합: 대량 데이터 항목 작업 (ODBC)](../../data/odbc/recordset-working-with-large-data-items-odbc.md)
 
-- [레코드 집합: 합계 및 다른 집계 결과 구하기(ODBC)](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md)
+- [레코드 집합: 합계 및 다른 집계 결과 구하기 (ODBC)](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md)
 
 ### <a name="topics-about-how-recordsets-work"></a>레코드 집합의 작동 방법에 대한 항목
 
-- [레코드 집합: 레코드 집합의 레코드 선택 방법(ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)
+- [레코드 집합: 레코드 집합의 레코드 선택 방법 (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)
 
-- [레코드 집합: 레코드 집합의 레코드 업데이트 방법(ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md)
+- [레코드 집합: 레코드 집합의 레코드 업데이트 방법 (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md)
 
 ## <a name="see-also"></a>참고 항목
 
-[개방형 데이터베이스 연결(ODBC)](../../data/odbc/open-database-connectivity-odbc.md)<br/>
+[ODBC (Open Database Connectivity)](../../data/odbc/open-database-connectivity-odbc.md)<br/>
 [MFC ODBC 사용](../../mfc/reference/adding-an-mfc-odbc-consumer.md)<br/>
 [트랜잭션(ODBC)](../../data/odbc/transaction-odbc.md)

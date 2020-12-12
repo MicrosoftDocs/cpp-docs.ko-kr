@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _get_heap_handle'
 title: _get_heap_handle
 ms.date: 4/2/2020
 api_name:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - _get_heap_handle function
 - get_heap_handle function
 ms.assetid: a4d05049-8528-494a-8281-a470d1e1115c
-ms.openlocfilehash: 895814a1a44910ef65a826cba330a3edd70b85a9
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: dacf90e981233c92534a2667ad31462e9bf5992c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916308"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97205215"
 ---
 # <a name="_get_heap_handle"></a>_get_heap_handle
 
@@ -65,7 +66,7 @@ C 런타임 시스템에서 사용되는 Win32 힙에 대한 핸들을 반환합
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="sample"></a>예제
+## <a name="sample"></a>샘플
 
 ```cpp
 // crt_get_heap_handle.cpp
@@ -88,6 +89,6 @@ int main(void)
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [메모리 할당](../../c-runtime-library/memory-allocation.md)<br/>

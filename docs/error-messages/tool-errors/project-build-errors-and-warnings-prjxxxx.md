@@ -1,17 +1,18 @@
 ---
+description: 프로젝트 빌드 오류 및 경고 (PRJxxxx)에 대해 자세히 알아보세요.
 title: 프로젝트 빌드 오류 및 경고
 ms.date: 04/16/2019
 ms.assetid: 79d223ed-986a-4536-8299-aec8356b449c
-ms.openlocfilehash: e735214912b737a5fdb9ddf8a8ed9fe37e285d12
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: c5befd87c0b4b4eecec279d1f8f8ec9f5e342e78
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64857292"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97206567"
 ---
 # <a name="project-build-errors-and-warnings-prjxxxx"></a>프로젝트 빌드 오류 및 경고(PRJxxxx)
 
-이 섹션은 프로젝트에서 생성 된 오류에 대 한 참조가 빌드 도구입니다. 프로젝트 빌드 오류 및 경고의 경우 폼 PRJ*xxxx*, 여기서 *xxxx* 는 4 자리 숫자입니다.
+이 섹션은 프로젝트 빌드 도구에서 생성 된 오류에 대 한 참조입니다. 프로젝트 빌드 오류 및 경고에는 PRJ *xxxx* 형식이 있습니다. 여기서 *xxxx* 는 네 자리 숫자입니다.
 
 [!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
@@ -61,7 +62,7 @@ ms.locfileid: "64857292"
 [프로젝트 빌드 경고 PRJ0042](project-build-warning-prj0042.md) \
 [프로젝트 빌드 경고 PRJ0049](project-build-warning-prj0049.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[C /C++ 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md) \
-[Visual Studio 프로젝트 |C++](../../build/creating-and-managing-visual-cpp-projects.md)
+[C/c + + 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md) \
+[Visual Studio 프로젝트 | C](../../build/creating-and-managing-visual-cpp-projects.md)

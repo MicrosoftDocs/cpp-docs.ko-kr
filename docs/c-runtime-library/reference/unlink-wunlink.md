@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _unlink, _wunlink'
 title: _unlink, _wunlink
 ms.date: 4/2/2020
 api_name:
@@ -38,12 +39,12 @@ helpviewer_keywords:
 - files [C++], removing
 - _tunlink function
 ms.assetid: 5e4f5f1b-1e99-4391-9b18-9ac63c32fae8
-ms.openlocfilehash: af6fd6c7065529b43f5e275ce1d745d0031ddfb7
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 742df45211b6e19314a3b3f89880d7f2cd83fb2f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82909280"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97205150"
 ---
 # <a name="_unlink-_wunlink"></a>_unlink, _wunlink
 
@@ -62,18 +63,18 @@ int _wunlink(
 
 ### <a name="parameters"></a>매개 변수
 
-*이름도*<br/>
+*filename*<br/>
 제거할 파일의 이름입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-이러한 각 함수는 정상적으로 실행되면 0을 반환합니다. 그렇지 않은 경우 함수는-1을 반환 하 고 **errno** 를 **eacces**로 설정 합니다. 즉, 경로가 읽기 전용 파일 또는 디렉터리를 지정 하거나 파일 또는 경로를 찾을 수 없음을 의미 하는 **enoent (** 로 설정 합니다.
+이러한 각 함수는 정상적으로 실행되면 0을 반환합니다. 그렇지 않은 경우 함수는-1을 반환 하 고 **errno** 를 **eacces** 로 설정 합니다. 즉, 경로가 읽기 전용 파일 또는 디렉터리를 지정 하거나 파일 또는 경로를 찾을 수 없음을 의미 하는 **enoent (** 로 설정 합니다.
 
 이러한 반환 코드 및 기타 반환 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-**_Unlink** 함수는 *filename*에 지정 된 파일을 삭제 합니다. **_wunlink** 은 **_unlink**의 와이드 문자 버전입니다. **_wunlink** 에 대 한 *파일 이름* 인수는 와이드 문자열입니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다.
+**_Unlink** 함수는 *filename* 에 지정 된 파일을 삭제 합니다. **_wunlink** 은 **_unlink** 의 와이드 문자 버전입니다. **_wunlink** 에 대 한 *파일 이름* 인수는 와이드 문자열입니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -92,7 +93,7 @@ int _wunlink(
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="code-example"></a>코드 예
+## <a name="code-example"></a>코드 예제
 
 이 프로그램은 _unlink를 사용하여 CRT_UNLINK.TXT를 삭제합니다.
 
@@ -122,7 +123,7 @@ This file will be deleted.
 Deleted 'CRT_UNLINK.TXT'
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [파일 처리](../../c-runtime-library/file-handling.md)<br/>
 [_close](close.md)<br/>

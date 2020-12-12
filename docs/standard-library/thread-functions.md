@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: &lt; 스레드 &gt; 함수'
 title: '&lt;thread&gt; 함수'
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - std::sleep_until [C++]
 - std::swap [C++]
 - std::yield [C++]
-ms.openlocfilehash: 64a62180243d77f361c243b2a89de56b0a14920e
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 37e1f745b66c45f5e3ad6bd4be2a2837042b8433
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845044"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97207438"
 ---
 # <a name="ltthreadgt-functions"></a>&lt;thread&gt; 함수
 
@@ -58,7 +59,7 @@ inline void sleep_for(const chrono::duration<Rep, Period>& Rel_time);
 
 ### <a name="remarks"></a>설명
 
-함수는 적어도 *Rel_time*에 지정 된 시간 동안 호출 스레드를 차단 합니다. 이 함수는 예외를 throw하지 않습니다.
+함수는 적어도 *Rel_time* 에 지정 된 시간 동안 호출 스레드를 차단 합니다. 이 함수는 예외를 throw하지 않습니다.
 
 ## <a name="sleep_until"></a><a name="sleep_until"></a> sleep_until
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 방법: parallel_invoke를 사용 하 여 병렬 정렬 루틴 작성'
 title: '방법: parallel_invoke를 사용하여 병렬 정렬 루틴 작성'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - structured_task_group class, example
 - improving parallel performance with task groups [Concurrency Runtime]
 ms.assetid: 53979a2a-525d-4437-8952-f1ff85b37673
-ms.openlocfilehash: 9d84cdbecb7cc6d39cb30077780c558db85888c0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4146bed939e265f611d79c465681c10ef28a1ebe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222721"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97205670"
 ---
 # <a name="how-to-use-parallel_invoke-to-write-a-parallel-sort-routine"></a>방법: parallel_invoke를 사용하여 병렬 정렬 루틴 작성
 
@@ -24,7 +25,7 @@ ms.locfileid: "87222721"
 > [!NOTE]
 > 이 예제에서는 이해를 돕기 위해 병렬 정렬 루틴을 사용합니다. PPL에서 제공 하는 기본 제공 정렬 알고리즘인 [동시성::p arallel_sort](reference/concurrency-namespace-functions.md#parallel_sort), [동시성::p arallel_buffered_sort](reference/concurrency-namespace-functions.md#parallel_buffered_sort)및 [동시성::p arallel_radixsort](reference/concurrency-namespace-functions.md#parallel_radixsort)를 사용할 수도 있습니다. 자세한 내용은 [병렬 알고리즘](../../parallel/concrt/parallel-algorithms.md)을 참조 하세요.
 
-## <a name="sections"></a><a name="top"></a>섹션이
+## <a name="sections"></a><a name="top"></a> 섹션이
 
 이 문서에서는 다음 작업에 대해 설명 합니다.
 
@@ -32,7 +33,7 @@ ms.locfileid: "87222721"
 
 - [Parallel_invoke를 사용 하 여 동시에 바 이토 닉 정렬 수행](#parallel)
 
-## <a name="performing-bitonic-sort-serially"></a><a name="serial"></a>직렬에서 바 이토 않은 정렬 수행
+## <a name="performing-bitonic-sort-serially"></a><a name="serial"></a> 직렬에서 바 이토 않은 정렬 수행
 
 다음 예에서는 바 이토 닉 정렬 알고리즘의 일련 버전을 보여 줍니다. `bitonic_sort`함수는 시퀀스를 두 개의 파티션으로 나누고, 해당 파티션을 반대 방향으로 정렬 한 다음 결과를 병합 합니다. 이 함수는 자신을 두 번 재귀적으로 호출 하 여 각 파티션을 정렬 합니다.
 
@@ -40,7 +41,7 @@ ms.locfileid: "87222721"
 
 [[맨 위로](#top)이동]
 
-## <a name="using-parallel_invoke-to-perform-bitonic-sort-in-parallel"></a><a name="parallel"></a>Parallel_invoke를 사용 하 여 동시에 바 이토 닉 정렬 수행
+## <a name="using-parallel_invoke-to-perform-bitonic-sort-in-parallel"></a><a name="parallel"></a> Parallel_invoke를 사용 하 여 동시에 바 이토 닉 정렬 수행
 
 이 섹션에서는 알고리즘을 사용 하 여 `parallel_invoke` 바 이토 닉 정렬 알고리즘을 병렬로 수행 하는 방법을 설명 합니다.
 

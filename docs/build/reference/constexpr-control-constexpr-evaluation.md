@@ -1,4 +1,5 @@
 ---
+description: 다음에 대 한 자세한 정보:/hconstexpr (컨트롤 constexpr 평가)
 title: /constexpr(컨트롤 constexpr 평가)
 ms.date: 08/15/2017
 f1_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - -constexpr control constexpr evaluation [C++]
 - constexpr control constexpr evaluation [C++]
 ms.assetid: 76d56784-f5ad-401d-841d-09d1059e8b8c
-ms.openlocfilehash: 7b3ae1cd732fe1ec234e2734ea4c6fa86db9d5af
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a9274321933fb0fbcf965943b0168db85c8a8d5c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223865"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97205345"
 ---
 # <a name="constexpr-control-constexpr-evaluation"></a>/constexpr(컨트롤 constexpr 평가)
 
 컴파일 시간에 계산에 대 한 매개 변수를 제어 하려면 **/sers** 컴파일러 옵션을 사용 **`constexpr`** 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **/cerx: 깊이**<em>N</em>\
 > **/constexpr: backtrace**<em>N</em>\
@@ -32,7 +33,7 @@ ms.locfileid: "87223865"
 
 **backtrace**<em>n</em> 진단에서 최대 *n* 개의 평가를 표시 **`constexpr`** 합니다. 기본값은 10입니다.
 
-**steps**<em>N</em> n 단계 **`constexpr`** 를 완료 한 *N* 후 n 단계를 종료 합니다. 기본값은 10만입니다.
+<em></em> n 단계 **`constexpr`** 를 완료 한  후 n 단계를 종료 합니다. 기본값은 10만입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -44,9 +45,9 @@ ms.locfileid: "87223865"
 
 1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다.
 
-2. **구성 속성**에서 **C/c + +** 폴더를 확장 하 고 **명령줄** 속성 페이지를 선택 합니다.
+2. **구성 속성** 에서 **C/c + +** 폴더를 확장 하 고 **명령줄** 속성 페이지를 선택 합니다.
 
-3. **추가 옵션** 상자에/cererers 옵션을 입력 합니다. **/constexpr** **확인** 또는 **적용** 을 선택 하 여 변경 내용을 저장 합니다.
+3. **추가 옵션** 상자에/cererers 옵션을 입력 합니다.  **확인** 또는 **적용** 을 선택 하 여 변경 내용을 저장 합니다.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면
 
@@ -55,4 +56,4 @@ ms.locfileid: "87223865"
 ## <a name="see-also"></a>참고 항목
 
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
-[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)
+[MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)

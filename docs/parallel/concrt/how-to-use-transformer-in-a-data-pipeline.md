@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 방법: 데이터 파이프라인에서 변환기 사용'
 title: '방법: 데이터 파이프라인에서 transformer 사용'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,16 +7,16 @@ helpviewer_keywords:
 - data pipelines, using transformer [Concurrency Runtime]
 - using transformer in data pipelines [Concurrency Runtime]
 ms.assetid: ca49cb3f-4dab-4b09-a9c9-d3a109ae4c29
-ms.openlocfilehash: 4eb490ecf51abea324f20395279bff2d74b7af77
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 97b0af16a3ce89b940952117bb8639d281363a23
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215857"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97205618"
 ---
 # <a name="how-to-use-transformer-in-a-data-pipeline"></a>방법: 데이터 파이프라인에서 transformer 사용
 
-이 항목에는 데이터 파이프라인에서 [concurrency:: 변환기](../../parallel/concrt/reference/transformer-class.md) 클래스를 사용 하는 방법을 보여 주는 기본 예제가 포함 되어 있습니다. 데이터 파이프라인을 사용 하 여 이미지 처리를 수행 하는 전체 예제는 [연습: 이미지 처리 네트워크 만들기](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)를 참조 하세요.
+이 항목에는 데이터 파이프라인에서 [concurrency:: 변환기](../../parallel/concrt/reference/transformer-class.md) 클래스를 사용 하는 방법을 보여 주는 기본 예제가 포함 되어 있습니다. 데이터 파이프라인을 사용 하 여 이미지 처리를 수행 하는 전체 예제는 [연습: Image-Processing 네트워크 만들기](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)를 참조 하세요.
 
 *데이터 파이프라인* 은 동시 프로그래밍의 일반적인 패턴입니다. 데이터 파이프라인은 일련의 단계로 구성 되며, 각 단계는 작업을 수행 하 고 해당 작업의 결과를 다음 단계로 전달 합니다. `transformer`클래스는 입력 값을 받고 해당 값에 대해 작업을 수행한 다음 사용할 다른 구성 요소에 대 한 결과를 생성 하기 때문에 데이터 파이프라인의 핵심 구성 요소입니다.
 
@@ -58,4 +59,4 @@ The result is -42.
 
 [비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md)<br/>
 [비동기 메시지 블록](../../parallel/concrt/asynchronous-message-blocks.md)<br/>
-[연습: 이미지 처리 네트워크 만들기](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)
+[연습: Image-Processing 네트워크 만들기](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)
