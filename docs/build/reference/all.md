@@ -1,4 +1,5 @@
 ---
+description: 자세히 알아보기:/ALL
 title: /ALL
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - -ALL dumpbin option
 - ALL dumpbin option
 ms.assetid: aa7eb74a-33ba-4d77-8620-3d7ea8b19952
-ms.openlocfilehash: 4b02a13be70963d8c2dcf934cf2c750daf8052a9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 175d4ea7fb7bf4895c304846e6064be5e24bec67
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62273185"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97179683"
 ---
 # <a name="all"></a>/ALL
 
@@ -23,10 +24,10 @@ ms.locfileid: "62273185"
 
 ## <a name="remarks"></a>설명
 
-이 옵션에 코드 디스어셈블리를 제외한 모든 사용 가능한 정보가 표시 됩니다. 사용 하 여 [/DISASM](disasm.md) 디스어셈블리를 표시 합니다. 사용할 수 있습니다 [/RAWDATA](rawdata.md): 없음/모두 파일의 원시 이진 세부 정보를 생략 합니다.
+이 옵션은 코드 디스어셈블리를 제외 하 고 사용 가능한 모든 정보를 표시 합니다. 디스어셈블리를 표시 하려면 [/DISASM](disasm.md) 를 사용 합니다. [/RAWDATA](rawdata.md): NONE을 사용 하 여 파일의 원시 이진 정보를 생략할 수 있습니다.
 
-[/HEADERS](headers.md) DUMPBIN 옵션은 [/GL](gl-whole-program-optimization.md) 컴파일러 옵션으로 만든 파일에만 사용할 수 있습니다.
+[/GL](gl-whole-program-optimization.md) 컴파일러 옵션으로 생성된 파일에서는 [/HEADERS](headers.md) DUMPBIN옵션만 사용할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [DUMPBIN 옵션](dumpbin-options.md)

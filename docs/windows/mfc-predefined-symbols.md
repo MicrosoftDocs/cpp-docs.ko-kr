@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: MFC 미리 정의 된 기호'
 title: 미리 정의된 MFC 기호
 ms.date: 02/14/2019
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - databases [C++], MFC programming model
 - Windows programming MFC symbols [C++]
 ms.assetid: c1e689c4-45d7-40a3-8ee9-f47676cc3bbb
-ms.openlocfilehash: 376b25b457ae0bb9ebc473d997b91c7acfd7316e
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: a55cc0d3e572da7321d992715257e444bbe1d261
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846305"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97180086"
 ---
 # <a name="mfc-predefined-symbols"></a>미리 정의된 MFC 기호
 
@@ -439,7 +440,7 @@ MFC 프로젝트는 항상 windows를 지 원하는 여러 헤더 파일을 포�
 
 이러한 기호는 MFC 지원 파일에도 포함 되지만 표준 Windows 응용 프로그램 함수 및 작업을 지원 합니다. 이러한 기호는 메뉴와 함께 사용 됩니다.
 
-**메뉴 편집기**에서 메뉴를 사용 하는 경우 이러한 기호가 일반 메뉴 명령과 관련 된 **속성** 창에 표시 됩니다. 예를 들어 응용 프로그램에 **Exit** 명령이 있는 **파일** 메뉴가 있는 경우 해당 명령은 `ID_APP_EXIT` [속성 창](/visualstudio/ide/reference/properties-window)의 기호와 연결 됩니다.
+**메뉴 편집기** 에서 메뉴를 사용 하는 경우 이러한 기호가 일반 메뉴 명령과 관련 된 **속성** 창에 표시 됩니다. 예를 들어 응용 프로그램에 **Exit** 명령이 있는 **파일** 메뉴가 있는 경우 해당 명령은 `ID_APP_EXIT` [속성 창](/visualstudio/ide/reference/properties-window)의 기호와 연결 됩니다.
 
 :::row:::
    :::column span="":::

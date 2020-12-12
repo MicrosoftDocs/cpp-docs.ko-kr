@@ -1,4 +1,5 @@
 ---
+description: 자세히 알아보기:/CETCOMPAT (CET 섀도 스택 호환)
 title: /CETCOMPAT (CET 섀도 스택 호환)
 ms.date: 09/01/2020
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - /CETCOMPAT linker option
 - /CETCOMPAT
-ms.openlocfilehash: 7de7c2007c29769cb3ac8f89d07de8b00bf44c26
-ms.sourcegitcommit: e58918c45316d799c1952ca7797a85adbcd0c472
+ms.openlocfilehash: 923272a3b3829d0b00f22d2f8c9474f02b7306d0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89281831"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97179280"
 ---
 # <a name="cetcompat-cet-shadow-stack-compatible"></a>/CETCOMPAT (CET 섀도 스택 호환)
 
@@ -51,7 +52,7 @@ Visual Studio 2019 버전 16.7부터:
 
 1. 프로젝트에 대한 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../working-with-project-properties.md)을 참조하세요.
 
-1. **구성 속성**  >  **링커**  >  **명령줄** 속성 페이지를 선택 합니다.
+1. **구성 속성** > **링커** > **명령줄** 속성 페이지를 선택합니다.
 
 1. **추가 옵션** 편집 컨트롤에서을 추가 *`/CETCOMPAT`* 하 여 이진 파일을 CET로 표시 하거나 호환 되지 않는 것으로 표시 *`/CETCOMPAT:NO`* 합니다.
 

@@ -1,4 +1,5 @@
 ---
+description: 자세한 정보:/C (전처리 중에 주석 유지)
 title: /C(전처리 중에 주석 유지)
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - c compiler option [C++]
 - /c compiler option [C++]
 ms.assetid: 944567ca-16bc-4728-befe-d414a7787f26
-ms.openlocfilehash: f80ebf45dd396a3f92d9b755c56522d4731bb2d0
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 2cf5bf562db78dcb6c570d7313b56ad4a9fc5adb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79440279"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97179358"
 ---
 # <a name="c-preserve-comments-during-preprocessing"></a>/C(전처리 중에 주석 유지)
 
@@ -30,7 +31,7 @@ ms.locfileid: "79440279"
 
 ## <a name="remarks"></a>설명
 
-이 컴파일러 옵션에는 **/e**, **/p**또는 **/ep** 옵션이 필요 합니다.
+이 컴파일러 옵션에는 **/e**, **/p** 또는 **/ep** 옵션이 필요 합니다.
 
 다음 코드 샘플에서는 소스 코드 주석을 표시 합니다.
 
@@ -64,7 +65,7 @@ int i;   // a variable
 ## <a name="see-also"></a>참고 항목
 
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
-[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)<br/>
+[MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)<br/>
 [/E(stdout으로 전처리)](e-preprocess-to-stdout.md)<br/>
-[/P(파일로 전처리)](p-preprocess-to-a-file.md)<br/>
-[/EP(#line 지시문 없이 stdout으로 전처리)](ep-preprocess-to-stdout-without-hash-line-directives.md)
+[/P (파일로 전처리)](p-preprocess-to-a-file.md)<br/>
+[/EP (#line 지시문 없이 stdout으로 전처리)](ep-preprocess-to-stdout-without-hash-line-directives.md)

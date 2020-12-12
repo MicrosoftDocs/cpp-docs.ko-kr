@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 폼 뷰 (MFC)'
 title: 폼 뷰(MFC)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - forms-based applications [MFC]
 - forms [MFC], adding to applications
 ms.assetid: efbe73c1-4ca4-4613-aac2-30d916e92c0e
-ms.openlocfilehash: 94d8b7d026ee3aaf1bac9dee2226de6dd9382599
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: be0853c46509e92d758b38e6a3b7fbd993e9b700
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615688"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97180366"
 ---
 # <a name="form-views-mfc"></a>폼 뷰(MFC)
 
@@ -58,7 +59,7 @@ SDI 응용 프로그램을 사용 하는 경우 사용자가 **새** 명령을 �
 
 자세한 내용은 다음을 참조하세요.
 
-- [폼 기반 응용 프로그램 만들기](reference/creating-a-forms-based-mfc-application.md)
+- [Forms-Based 응용 프로그램 만들기](reference/creating-a-forms-based-mfc-application.md)
 
 - [프로젝트에 폼 삽입](inserting-a-form-into-a-project.md)
 

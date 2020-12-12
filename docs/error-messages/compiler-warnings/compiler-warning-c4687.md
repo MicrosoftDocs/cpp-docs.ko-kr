@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 C4687'
 title: 컴파일러 경고 C4687
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4687
 ms.assetid: 2f28e0b1-7358-4c88-bd70-aad8f0aa004c
-ms.openlocfilehash: 83f5c535f9cf252783110838c181c88c8b0096ee
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.openlocfilehash: ffa8e645aa82a8577d0cd39a4963b8008b6cf9a3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69631603"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97180723"
 ---
 # <a name="compiler-warning-c4687"></a>컴파일러 경고 C4687
 

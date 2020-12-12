@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 가져오기 라이브러리 빌드 및 파일 내보내기'
 title: 가져오기 라이브러리 및 내보내기 파일 빌드
 ms.date: 09/05/2018
 f1_keywords:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - .lib files
 - EXP files
 ms.assetid: 2fe4f30a-1dd6-4b05-84b5-0752e1dee354
-ms.openlocfilehash: 5cb5224b3edaf84dbcb7c0429044a647fb5ac19a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8fbd06ce06d77721e64294b88632933b3ad71a03
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229755"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97179514"
 ---
 # <a name="building-an-import-library-and-export-file"></a>가져오기 라이브러리 및 내보내기 파일 빌드
 
@@ -58,7 +59,7 @@ ms.locfileid: "87229755"
 
 프로그램에서 함수를 내보내 다른 프로그램에서 함수를 호출할 수 있도록 합니다. **데이터 키워드를** 사용 하 여 데이터를 내보낼 수도 있습니다. 내보내기는 일반적으로 DLL에 정의 됩니다.
 
-*Entryname* 은 호출 프로그램에서 사용할 함수 또는 데이터 항목의 이름입니다. 필요에 따라 *internalname* 를 정의 프로그램에서 알려진 함수로 지정할 수 있습니다. 기본적으로 *internalname* 는 *entryname*와 동일 합니다. *서 수* 는 1에서 65535 사이의 내보내기 테이블에 인덱스를 지정 합니다. *서 수*를 지정 하지 않으면 LIB에서 하나를 할당 합니다. **NONAME** 키워드는 *entryname*없이 서 수로만 함수를 내보냅니다. Data **키워드는** 데이터 전용 개체를 내보내는 데 사용 됩니다.
+*Entryname* 은 호출 프로그램에서 사용할 함수 또는 데이터 항목의 이름입니다. 필요에 따라 *internalname* 를 정의 프로그램에서 알려진 함수로 지정할 수 있습니다. 기본적으로 *internalname* 는 *entryname* 와 동일 합니다. *서 수* 는 1에서 65535 사이의 내보내기 테이블에 인덱스를 지정 합니다. *서 수* 를 지정 하지 않으면 LIB에서 하나를 할당 합니다. **NONAME** 키워드는 *entryname* 없이 서 수로만 함수를 내보냅니다. Data **키워드는** 데이터 전용 개체를 내보내는 데 사용 됩니다.
 
 > **/INCLUDE:** *기호*
 

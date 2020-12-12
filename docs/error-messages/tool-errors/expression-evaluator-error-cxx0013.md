@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 식 계산기 오류 CXX0013'
 title: 식 계산기 오류 CXX0013
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - CAN0013
 - CXX0013
 ms.assetid: cf571e37-008d-47cd-80fa-59e96b1146e1
-ms.openlocfilehash: 16677837a0ad3a0af1930fec81b137bbe55d8338
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: eb5c58a8932cd7b6edd0525290ed5e52c11c58b3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80196094"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97180381"
 ---
 # <a name="expression-evaluator-error-cxx0013"></a>식 계산기 오류 CXX0013
 

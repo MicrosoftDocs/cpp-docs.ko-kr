@@ -1,4 +1,5 @@
 ---
+description: '에 대 한 자세한 정보: 액셀러레이터 키 (c + +)'
 title: 액셀러레이터 키 (c + +)
 ms.date: 02/14/2019
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - menus [C++], shortcut keys
 - keyboard shortcuts [C++], menu association
 ms.assetid: f234c5f2-4ec3-4c9e-834a-b5dd297625b9
-ms.openlocfilehash: 4f838caa8ca9e4a996fa4cb8018d663c6c7aecea
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 397e0735ba33af6adf8f10c6188f73d6f504e68b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504292"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97180099"
 ---
 # <a name="accelerator-keys-c"></a>액셀러레이터 키 (c + +)
 
@@ -57,7 +58,7 @@ Windows 애플리케이션 프로젝트에 포함될 수 있는 미리 정의된
 |VK_OEM_2|Windows 미국 표준 키보드의 경우 **/?** key|
 |VK_OEM_3|Windows 미국 표준 키보드의 경우 **`~** 키|
 |VK_OEM_4|Windows 미국 표준 키보드의 경우 **[{** key|
-|VK_OEM_5|Windows 미국 표준 키보드의 경우 ** \\&#124;** 키|
+|VK_OEM_5|Windows 미국 표준 키보드의 경우 **\\&#124;** 키|
 |VK_OEM_6|Windows 미국 표준 키보드의 경우 **]}** 키|
 |VK_OEM_7|Windows 미국 표준 키보드의 경우 ' 작은따옴표/큰따옴표 ' 키|
 |VK_OEM_COMMA|Windows 모든 국가/지역의 경우 **,** 키|

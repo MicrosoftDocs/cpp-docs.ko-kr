@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 숨김'
 title: hidden (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - hidden attribute
 ms.assetid: 199c96dd-fc07-46c7-af93-92020aebebe7
-ms.openlocfilehash: ffa1ce01cfd570de7b699e415f10b27acf525047
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 0609ef8b0dedb08e26e5442fd5070ca6a29e11d6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88830958"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97180229"
 ---
 # <a name="hidden"></a>hidden
 
@@ -29,7 +30,7 @@ ms.locfileid: "88830958"
 
 ## <a name="example"></a>예제
 
-**Hidden**을 사용 하는 방법에 대 한 예제는 [바인딩](bindable.md) 가능의 예제를 참조 하세요.
+**Hidden** 을 사용 하는 방법에 대 한 예제는 [바인딩](bindable.md) 가능의 예제를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 

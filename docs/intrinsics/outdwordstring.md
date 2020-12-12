@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __outdwordstring'
 title: __outdwordstring
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - __outdwordstring intrinsic
 - rep outsd instruction
 ms.assetid: 55b31a65-aab7-4b5c-b61d-d9e2fb0c497a
-ms.openlocfilehash: 50908a65795af617f18a497c073cfefe009dfd80
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 3fbba7dd128666b591305326695e656befd9cada
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217155"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97180396"
 ---
 # <a name="__outdwordstring"></a>__outdwordstring
 
 **Microsoft 전용**
 
-`Count` `Buffer` `rep outsd` 에서 지정된i/o포트에서시작하는더블워드를전송하는명령을생성합니다.`Port`
+`rep outsd`에서 지정 된 i/o 포트에서 시작 하는 더블 워드를 전송 하는 명령을 생성 합니다 `Count` `Buffer` `Port` .
 
 ## <a name="syntax"></a>구문
 
@@ -44,11 +45,11 @@ void __outdwordstring(
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`__outdwordstring`|x86, x64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 ## <a name="remarks"></a>설명
 
@@ -56,6 +57,6 @@ void __outdwordstring(
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

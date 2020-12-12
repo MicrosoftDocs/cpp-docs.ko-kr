@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 연습: Agent-Based 응용 프로그램 만들기'
 title: '연습: 에이전트 기반 애플리케이션 만들기'
 ms.date: 04/25/2019
 helpviewer_keywords:
 - asynchronous agents, creating
 - agent class, example
 ms.assetid: 730f42ce-6d58-4753-b948-fd9c9ef2ce6c
-ms.openlocfilehash: 9d9fdd3ddface01f84f6426dd334600cf88b84e7
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: cca3fc5e8467b7eb5699e4e9f513e35d5b97da93
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924833"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97180378"
 ---
 # <a name="walkthrough-creating-an-agent-based-application"></a>연습: 에이전트 기반 애플리케이션 만들기
 

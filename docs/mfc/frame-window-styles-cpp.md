@@ -1,4 +1,5 @@
 ---
+description: 자세한 내용은 Frame-Window 스타일 (c + +)을 (를) 확인 하세요.
 title: 프레임 창 스타일(C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,16 +10,16 @@ helpviewer_keywords:
 - MFC, frame windows
 - styles [MFC], windows
 ms.assetid: fc5058c1-eec8-48d8-9f76-3fc01cfa53f7
-ms.openlocfilehash: 3c22944537370a44aee1af1cf71281264ed4969b
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 5d7b0effe4b7cea17eb0b5bd8208563ba552ba99
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626451"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97180345"
 ---
 # <a name="frame-window-styles-c"></a>프레임 창 스타일(C++)
 
-프레임 워크를 사용 하 여 가져오는 프레임 창은 대부분의 프로그램에 적합 하지만 고급 함수 [Precreatewindow](reference/cwnd-class.md#precreatewindow) 및 MFC 전역 함수 [AfxRegisterWndClass](reference/application-information-and-management.md#afxregisterwndclass)를 사용 하 여 추가 유연성을 얻을 수 있습니다. `PreCreateWindow`는의 멤버 함수입니다 `CWnd` .
+프레임 워크를 사용 하 여 가져오는 프레임 창은 대부분의 프로그램에 적합 하지만 고급 함수 [Precreatewindow](reference/cwnd-class.md#precreatewindow) 및 MFC 전역 함수 [AfxRegisterWndClass](reference/application-information-and-management.md#afxregisterwndclass)를 사용 하 여 추가 유연성을 얻을 수 있습니다. `PreCreateWindow` 는의 멤버 함수입니다 `CWnd` .
 
 **WS_HSCROLL** 및 **WS_VSCROLL** 스타일을 주 프레임 창에 적용 하는 경우 사용자가 **MDICLIENT** 영역을 스크롤할 수 있도록 **MDICLIENT** 창에 대신 적용 됩니다.
 

@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: c + +의 Windows 프로그래밍 개요'
 title: C++의 Windows 프로그래밍 개요
 ms.date: 09/17/2019
 ms.assetid: efc691d7-21f3-47ae-ae56-cab999ccf59d
-ms.openlocfilehash: 0aa667168f88f48458ae3a9b3541d4944f7530cc
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 812fef686208f5f9d4f1c23cd5eb9b2cb8b227bf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86404989"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97180112"
 ---
 # <a name="overview-of-windows-programming-in-c"></a>C++의 Windows 프로그래밍 개요
 
@@ -97,11 +98,11 @@ Visual Studio는 네이티브 코드에 대한 강력한 디버거, 정적 분�
 
 ## <a name="in-this-section"></a>단원 내용
 
-|제목|Description|
+|제목|설명|
 |-----------|-----------------|
 |[연습: 표준 c + + 프로그램 만들기](walkthrough-creating-a-standard-cpp-program-cpp.md)| Windows 콘솔 응용 프로그램을 만듭니다.|
 |[연습: Windows 데스크톱 애플리케이션 만들기(C++)](walkthrough-creating-windows-desktop-applications-cpp.md)|네이티브 Windows 데스크톱 응용 프로그램을 만듭니다.|
-|[Windows 바탕 화면 마법사](windows-desktop-wizard.md)|마법사를 사용 하 여 새 Windows 프로젝트를 만듭니다.|
+|[Windows 데스크톱 마법사](windows-desktop-wizard.md)|마법사를 사용 하 여 새 Windows 프로젝트를 만듭니다.|
 |[ATL(액티브 템플릿 라이브러리)](../atl/atl-com-desktop-components.md)|C + +에서 COM 구성 요소를 만들려면 ATL 라이브러리를 사용 합니다.|
 |[MFC(Microsoft Foundation Class)](../mfc/mfc-desktop-applications.md)|MFC를 사용 하 여 대화 상자 및 컨트롤을 사용 하는 크고 작은 Windows 응용 프로그램 만들기|
 |[ATL 및 MFC 공유 클래스](../atl-mfc-shared/atl-mfc-shared-classes.md)|ATL 및 MFC에서 공유 되는 CString과 같은 클래스를 사용 합니다.|
@@ -116,7 +117,7 @@ Visual Studio는 네이티브 코드에 대한 강력한 디버거, 정적 분�
 
 ## <a name="related-articles"></a>관련 문서
 
-|제목|Description|
+|제목|설명|
 |-----------|-----------------|
 |[Visual Studio의 C++](../overview/visual-cpp-in-visual-studio.md)|Visual C++ 개발자 콘텐츠에 대 한 부모 항목입니다.|
 [C + +/CLI를 사용한 .NET 개발](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)|.NET 응용 프로그램 및 구성 요소와의 통신을 가능 하 게 하는 네이티브 c + + 라이브러리에 대 한 래퍼를 만듭니다.|
