@@ -1,13 +1,14 @@
 ---
+description: 자세히 알아보기:/Qvec-report (자동 벡터화 도우미 보고 수준)
 title: /Qvec-report(자동 벡터화 도우미 보고 수준)
 ms.date: 11/04/2016
 ms.assetid: 4778c9a3-0692-4085-9b05-1bfeadf4c74a
-ms.openlocfilehash: 2007e80db0ee0aec362869315767505ec06ab109
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 734dabffa3bf19ecaba42d35d208eb27ec7b2968
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836870"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97225468"
 ---
 # <a name="qvec-report-auto-vectorizer-reporting-level"></a>/Qvec-report(자동 벡터화 도우미 보고 수준)
 
@@ -31,9 +32,9 @@ ms.locfileid: "88836870"
 
 ### <a name="to-set-the-qvec-report-compiler-option-in-visual-studio"></a>Visual Studio에서/Qvec-report 컴파일러 옵션을 설정 하려면
 
-1. **솔루션 탐색기**에서 프로젝트의 바로 가기 메뉴를 열고 **속성**을 선택합니다.
+1. **솔루션 탐색기** 에서 프로젝트의 바로 가기 메뉴를 열고 **속성** 을 선택합니다.
 
-1. **속성 페이지** 대화 상자의 **C/c + +** 에서 **명령줄**을 선택 합니다.
+1. **속성 페이지** 대화 상자의 **C/c + +** 에서 **명령줄** 을 선택 합니다.
 
 1. **추가 옵션** 상자에 또는을 입력 `/Qvec-report:1` `/Qvec-report:2` 합니다.
 
@@ -45,5 +46,5 @@ ms.locfileid: "88836870"
 
 [/Q 옵션 (하위 수준 작업)](q-options-low-level-operations.md)<br/>
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
-[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)<br/>
+[MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)<br/>
 [Visual Studio의 네이티브 코드 벡터화](/archive/blogs/nativeconcurrency/auto-vectorizer-in-visual-studio-2012-overview)

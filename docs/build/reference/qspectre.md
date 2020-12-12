@@ -1,22 +1,23 @@
 ---
+description: 자세히 알아보기:/Qspectre
 title: /Qspectre
 ms.date: 09/06/2019
 f1_keywords:
 - VC.Project.VCCLCompilerTool.SpectreMitigation
 helpviewer_keywords:
 - /Qspectre
-ms.openlocfilehash: a4872d18fed4523e235aee70839f1e482d78f345
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 576052a9db8a4ce63c82afaf644f41fa847ad9a9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92919113"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97225494"
 ---
 # <a name="qspectre"></a>/Qspectre
 
 특정 스펙터 변형 1 보안 취약성을 완화하기 위한 컴파일러 생성 지침을 지정합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **/Qspectre**
 
@@ -63,7 +64,7 @@ MFC 및 ATL에 대해 스펙터 완화 라이브러리를 설치할 수도 있�
 - 스펙터 완화를 사용하는 \[(x86/x64) | ARM | ARM64]용 Visual C++ ATL
 - 스펙터 완화를 사용하는 \[(x86/x64) | ARM | ARM64]용 Visual C++ MFC
 
-**/Qspectre** 를 사용 하 여 코드를 빌드하는 경우 이러한 라이브러리가 설치 되어 있지 않으면 빌드 시스템에서 **경고 MSB8038: 스펙터 완화를 사용할 수 있지만 스펙터 완화 된 라이브러리를 찾을 수 없습니다** . MFC 또는 ATL 코드 빌드가 실패 하 고 링커가 심각한 오류 LNK1104 같은 오류를 보고 하는 경우 **: ' oldnames. n a m e '을 열 수 없습니다** . 이러한 누락 된 라이브러리는 원인일 수 있습니다.
+**/Qspectre** 를 사용 하 여 코드를 빌드하는 경우 이러한 라이브러리가 설치 되어 있지 않으면 빌드 시스템에서 **경고 MSB8038: 스펙터 완화를 사용할 수 있지만 스펙터 완화 된 라이브러리를 찾을 수 없습니다**. MFC 또는 ATL 코드 빌드가 실패 하 고 링커가 심각한 오류 LNK1104 같은 오류를 보고 하는 경우 **: ' oldnames. n a m e '을 열 수 없습니다**. 이러한 누락 된 라이브러리는 원인일 수 있습니다.
 
 ### <a name="additional-information"></a>추가 정보
 

@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: DAO 데이터베이스 엔진 초기화 및 종료'
 title: DAO 데이터베이스 엔진 초기화 및 종료
 ms.date: 09/17/2019
 helpviewer_keywords:
 - DAO (Data Access Objects), termination
 - DAO (Data Access Objects), initialization
 ms.assetid: a7edf31c-e7c2-4f3e-aada-63c3e48781da
-ms.openlocfilehash: 0a70dd396a87315a96224edccf13250a2927cd99
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9e9b522d744eabc84074b201051151b80ed75d7e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837595"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97220398"
 ---
 # <a name="dao-database-engine-initialization-and-termination"></a>DAO 데이터베이스 엔진 초기화 및 종료
 

@@ -1,15 +1,16 @@
 ---
+description: 자세히 알아보기:/Qpa (자동 평행 화 도우미)
 title: /Qpar(자동 평행화 도우미)
 ms.date: 11/04/2016
 f1_keywords:
 - VC.Project.VCCLCompilerTool.EnableParallelCodeGeneration
 ms.assetid: 33ecf49d-c0d5-4f34-bce3-84ff03f38918
-ms.openlocfilehash: effe1ad7799022ea85184513de1dc48c72d6bfcb
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f0d4264acc4224aaad518f936dcb885d592d3007
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839441"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97225585"
 ---
 # <a name="qpar-auto-parallelizer"></a>/Qpar(자동 평행화 도우미)
 
@@ -31,9 +32,9 @@ ms.locfileid: "88839441"
 
 ### <a name="to-set-the-qpar-compiler-option-in-visual-studio"></a>Visual Studio에서 /Qpar 컴파일러 옵션을 설정하려면
 
-1. **솔루션 탐색기**에서 프로젝트의 바로 가기 메뉴를 열고 **속성**을 선택합니다.
+1. **솔루션 탐색기** 에서 프로젝트의 바로 가기 메뉴를 열고 **속성** 을 선택합니다.
 
-1. **속성 페이지** 대화 상자의 **C/c + +** 에서 **명령줄**을 선택 합니다.
+1. **속성 페이지** 대화 상자의 **C/c + +** 에서 **명령줄** 을 선택 합니다.
 
 1. **추가 옵션** 상자에를 입력 `/Qpar` 합니다.
 
@@ -46,6 +47,6 @@ ms.locfileid: "88839441"
 [/Q 옵션 (하위 수준 작업)](q-options-low-level-operations.md)<br/>
 [/Qpar-report (자동 평행 화 도우미 보고 수준)](qpar-report-auto-parallelizer-reporting-level.md)<br/>
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
-[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)<br/>
+[MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)<br/>
 [#pragma loop ()](../../preprocessor/loop.md)<br/>
 [Visual Studio의 네이티브 코드 벡터화](/archive/blogs/nativeconcurrency/auto-vectorizer-in-visual-studio-2012-overview)

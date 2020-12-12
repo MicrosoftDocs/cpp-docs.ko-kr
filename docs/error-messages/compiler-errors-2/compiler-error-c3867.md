@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3867'
 title: 컴파일러 오류 C3867
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3867
 ms.assetid: bc5de03f-e01a-4407-88c3-2c63f0016a1e
-ms.openlocfilehash: 40825bf92a892917f815c955ee4ba1fb6fa906c3
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 5d4340a3e9f2fc94ac9debeded601a37223904aa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90686420"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97222842"
 ---
 # <a name="compiler-error-c3867"></a>컴파일러 오류 C3867
 

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: DDX_DHtml 도우미 매크로'
 title: DDX_DHtml 도우미 매크로
 ms.date: 11/04/2016
 f1_keywords:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - DDX (dialog data exchange), DHtml helper macros
 - macros [MFC], DDX_DHtml helpers
 ms.assetid: c46302d2-ea43-4fea-bfc2-6f590d99f267
-ms.openlocfilehash: eeea85872422edcf421ba2fe254c8f03c093fe3c
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: ac7df82d628c943a5ba28697cf614853e7e7dddd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90743453"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97220242"
 ---
 # <a name="ddx_dhtml-helper-macros"></a>DDX_DHtml 도우미 매크로
 
@@ -30,7 +31,7 @@ DDX_DHtml 도우미 매크로를 사용 하면 HTML 페이지에서 일반적으
 
 ### <a name="data-exchange-macros"></a>데이터 교환 매크로
 
-|속성|Description|
+|Name|설명|
 |-|-|
 |[DDX_DHtml_ElementValue](#ddx_dhtml_elementvalue)|선택한 컨트롤에서 Value 속성을 설정 하거나 검색 합니다.|
 |[DDX_DHtml_ElementInnerText](#ddx_dhtml_elementinnertext)|현재 요소의 시작 태그와 끝 태그 사이에 있는 텍스트를 설정 하거나 검색 합니다.|
@@ -257,6 +258,6 @@ DDX_DHtml_Img_Src 매크로를 사용 하 여 IMAGE 요소의 Src 속성을 검�
 
 이 매크로는 DISPID_IHTMLIMGELEMENT_SRC 디스패치 ID를 사용 하 여 [CDHtmlDialog::D DX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) 함수를 호출 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [CDHtmlDialog 클래스](../../mfc/reference/cdhtmldialog-class.md)

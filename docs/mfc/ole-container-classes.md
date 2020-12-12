@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: OLE 컨테이너 클래스'
 title: OLE 컨테이너 클래스
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - OLE [MFC], classes
 - containers [MFC], OLE container applications
 ms.assetid: 1e27e1ab-4c22-41eb-8547-6915c72668ae
-ms.openlocfilehash: 596b94e7fdbb5d9dc1862867001f6c01c1aea7b2
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 1525fb41f15952d62b6b3c9a7603480d1e399229
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84617802"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97222231"
 ---
 # <a name="ole-container-classes"></a>OLE 컨테이너 클래스
 

@@ -1,13 +1,14 @@
 ---
+description: 자세히 알아보기:/Qpar-report (자동 평행 화 도우미 보고 수준)
 title: /Qpar-report(자동 병렬화 도우미 보고 수준)
 ms.date: 11/04/2016
 ms.assetid: 562673b9-02da-4bf8-bb64-70bc25ef4651
-ms.openlocfilehash: 3a154bdf50e951ee932173cdb65f9e1514011245
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 573ab7535b63ba8d3f19f2917c17709ac7726b38
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839415"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97225533"
 ---
 # <a name="qpar-report-auto-parallelizer-reporting-level"></a>/Qpar-report(자동 병렬화 도우미 보고 수준)
 
@@ -31,9 +32,9 @@ ms.locfileid: "88839415"
 
 ### <a name="to-set-the-qpar-report-compiler-option-in-visual-studio"></a>Visual Studio에서 /Qpar-report 컴파일러 옵션을 설정하려면
 
-1. **솔루션 탐색기**에서 프로젝트의 바로 가기 메뉴를 열고 **속성**을 선택합니다.
+1. **솔루션 탐색기** 에서 프로젝트의 바로 가기 메뉴를 열고 **속성** 을 선택합니다.
 
-1. **속성 페이지** 대화 상자의 **C/c + +** 에서 **명령줄**을 선택 합니다.
+1. **속성 페이지** 대화 상자의 **C/c + +** 에서 **명령줄** 을 선택 합니다.
 
 1. **추가 옵션** 상자에 또는을 입력 `/Qpar-report:1` `/Qpar-report:2` 합니다.
 
@@ -45,5 +46,5 @@ ms.locfileid: "88839415"
 
 [/Q 옵션 (하위 수준 작업)](q-options-low-level-operations.md)<br/>
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
-[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)<br/>
+[MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)<br/>
 [Visual Studio의 네이티브 코드 벡터화](/archive/blogs/nativeconcurrency/auto-vectorizer-in-visual-studio-2012-overview)

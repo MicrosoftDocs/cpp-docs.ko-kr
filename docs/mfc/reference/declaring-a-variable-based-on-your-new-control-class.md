@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 새 컨트롤 클래스를 기반으로 변수 선언'
 title: 새 컨트롤 클래스 기반의 변수 선언
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - control classes [MFC], variables
 - classes [MFC], declaring variables based on
 ms.assetid: 5722dc38-c0eb-40bd-93da-67a808140d03
-ms.openlocfilehash: a828351a9e789228143d43d4c0a756abda879989
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: aa38a38b3113e4c4826756b020860d79e03ef16b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91506685"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97220229"
 ---
 # <a name="declaring-a-variable-based-on-your-new-control-class"></a>새 컨트롤 클래스 기반의 변수 선언
 
@@ -35,13 +36,13 @@ MFC 컨트롤 클래스를 만든 후에는이를 기반으로 변수를 선언�
 
 1. **변수 이름** 상자에 이름을 입력 합니다.
 
-1. **범주**아래에서 **제어**를 클릭 합니다.
+1. **범주** 아래에서 **제어** 를 클릭 합니다.
 
 1. **컨트롤 ID** 목록에서 추가한 컨트롤을 선택 합니다. **변수 형식** 목록에 올바른 변수 형식이 표시 되 고 **컨트롤 형식** 상자에 올바른 컨트롤 형식이 표시 됩니다.
 
 1. **설명** 상자에 코드에 표시 하려는 모든 주석을 추가 합니다.
 
-1. **확인**을 클릭합니다.
+1. **확인** 을 클릭합니다.
 
 ## <a name="see-also"></a>참조
 

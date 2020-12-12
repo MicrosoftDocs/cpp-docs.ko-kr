@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __noop'
 title: __noop
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - __noop keyword [C++]
 ms.assetid: 81ac6e97-7bf8-496b-b3c4-fd02837573e5
-ms.openlocfilehash: e12855127e417472eb88c951b71881240b808013
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4b140141e0f773f01cd666dd67f77244d7aef8a5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214206"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97222465"
 ---
 # <a name="__noop"></a>__noop
 
@@ -47,4 +48,4 @@ int main() {
 ## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)\
-[C++ 키워드](../cpp/keywords-cpp.md)
+[키워드](../cpp/keywords-cpp.md)

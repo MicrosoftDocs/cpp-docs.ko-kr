@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 데이터베이스 매크로 및 전역'
 title: 데이터베이스 매크로 및 전역
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - global functions [MFC], database functions
 - macros [MFC], MFC database
 ms.assetid: 5b9b9e61-1cf9-4345-9f29-3807dd466488
-ms.openlocfilehash: 0dc53bce8b43677e7fe0aa1787d1adcc16a560c4
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 1dd6501c8ea37478a7b75341467e1c77819aa3f3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837529"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97220320"
 ---
 # <a name="database-macros-and-globals"></a>데이터베이스 매크로 및 전역
 
@@ -100,7 +101,7 @@ AFX_SQL_ASYNC(prs, SQLFunc)
 
 ### <a name="parameters"></a>매개 변수
 
-*pr*<br/>
+*prs*<br/>
 `CRecordset` 개체 또는 `CDatabase` 개체에 대한 포인터입니다. MFC 4.2부터는 이 매개 변수 값이 무시됩니다.
 
 *SQLFunc*<br/>

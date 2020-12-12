@@ -1,17 +1,18 @@
 ---
+description: '자세한 정보: 샘플 메이크파일'
 title: 샘플 메이크파일
 ms.date: 11/04/2016
 ms.assetid: 8343ce71-5556-4ae0-8d1e-7efd82673070
-ms.openlocfilehash: 79ca4e466d37880787260be5b8b4ec76a5bb092f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 95b7eef18ca2b517d1b3de9ca450b1bbd03116d2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62318825"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97224909"
 ---
 # <a name="sample-makefile"></a>샘플 메이크파일
 
-이 항목에서는 샘플 메이크파일 포함 되어 있습니다.
+이 항목에는 샘플 메이크파일이 포함 되어 있습니다.
 
 ## <a name="sample"></a>샘플
 
@@ -34,6 +35,6 @@ challeng.exe: challeng.obj md4c.obj
   $(link) $(ldebug) $(conflags) -out:challeng.exe $** $(conlibs) lsapi32.lib
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [메이크파일의 내용](contents-of-a-makefile.md)

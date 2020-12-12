@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: OLE 일반 대화 상자 클래스'
 title: OLE 일반 대화 상자 클래스
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,19 +8,19 @@ helpviewer_keywords:
 - OLE common dialog classes [MFC]
 - common dialog classes [MFC]
 ms.assetid: 706526ae-f94f-4909-a0f8-6b5fe954fd97
-ms.openlocfilehash: 1854d19c540f5e3e64b47786f465a05213eced86
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: c30871c8f49be608f5ceeea3d84c86d483e20a81
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84617786"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97222283"
 ---
 # <a name="ole-common-dialog-classes"></a>OLE 일반 대화 상자 클래스
 
 이러한 클래스는 다양 한 표준 OLE 대화 상자를 구현 하 여 일반적인 OLE 태스크를 처리 합니다. 또한 OLE 기능에 대해 일관 된 사용자 인터페이스를 제공 합니다.
 
 [COleDialog](reference/coledialog-class.md)<br/>
-프레임 워크에서 모든 OLE 대화 상자에 대 한 일반적인 구현을 포함 하는 데 사용 됩니다. 사용자 인터페이스 범주의 모든 대화 상자 클래스는이 기본 클래스에서 파생 됩니다. `COleDialog`직접 사용할 수 없습니다.
+프레임 워크에서 모든 OLE 대화 상자에 대 한 일반적인 구현을 포함 하는 데 사용 됩니다. 사용자 인터페이스 범주의 모든 대화 상자 클래스는이 기본 클래스에서 파생 됩니다. `COleDialog` 직접 사용할 수 없습니다.
 
 [COleInsertDialog](reference/coleinsertdialog-class.md)<br/>
 새 OLE 연결 된 항목 또는 포함 된 항목을 삽입 하기 위한 표준 사용자 인터페이스인 개체 삽입 대화 상자를 표시 합니다.

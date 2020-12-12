@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 규칙에서 경로 검색'
 title: 규칙에서 경로 검색
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - inference rules in NMAKE
 - rules, inference
 ms.assetid: 38feded6-536d-425d-bf40-fff3173a5506
-ms.openlocfilehash: eab6e9d32940aaf5729ce82c4e8258a3a3132208
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bf070fc57907b68eb458b8a5276698282ef30f9d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62318864"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97224883"
 ---
 # <a name="search-paths-in-rules"></a>규칙에서 경로 검색
 
@@ -22,7 +23,7 @@ ms.locfileid: "62318864"
 
 ## <a name="remarks"></a>설명
 
-유추 규칙 종속성에 정확 하 게 지정 하는 경로가 유추 규칙 경로 일치 하는 경우에 종속성에 적용 됩니다. 종속 항목의 디렉터리 지정 *frompath* 및 대상의 디렉터리 *topath*; 공백이 허용 됩니다. 각 확장에 대 한 하나의 경로 지정 합니다. 이상의 확장 프로그램의 경로 다른 경로 필요합니다. 현재 디렉터리를 지정 하려면 마침표 (.) 또는 빈 중괄호 ({})를 사용 합니다. 매크로 나타낼 수 있습니다 *frompath* 하 고 *topath*; 전처리 중에 호출 됩니다.
+유추 규칙은 종속성에 지정 된 경로가 유추 규칙 경로와 정확히 일치 하는 경우에만 종속성에 적용 됩니다. *Topath*;의 *frompath* 및 대상 디렉터리에 종속 디렉터리를 지정 합니다. 공백은 허용 되지 않습니다. 각 확장에 대해 하나의 경로만 지정 합니다. 한 확장의 경로에 다른 경로에 대 한 경로가 필요 합니다. 현재 디렉터리를 지정 하려면 마침표 (.) 또는 빈 중괄호 ({}) 중 하나를 사용 합니다. 매크로는 *frompath* 및 *topath* 을 나타낼 수 있습니다. 전처리 하는 동안 호출 됩니다.
 
 ## <a name="example"></a>예제
 
@@ -57,6 +58,6 @@ ms.locfileid: "62318864"
         $(CC) $(CFLAGS) $<
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [규칙 정의](defining-a-rule.md)

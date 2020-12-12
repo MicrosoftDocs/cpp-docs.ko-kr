@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3552'
 title: 컴파일러 오류 C3552
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3552
 ms.assetid: 83401524-1bf1-44c0-8aca-a6eb35c4224c
-ms.openlocfilehash: d2d3a60fcd4a26238cd6cf330f47b48c5b3198ad
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: aca1474f53c8ac1a8257b23d0042550b76b3c0e8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230833"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97223258"
 ---
 # <a name="compiler-error-c3552"></a>컴파일러 오류 C3552
 

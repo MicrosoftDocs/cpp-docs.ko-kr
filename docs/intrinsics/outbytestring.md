@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __outbytestring'
 title: __outbytestring
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - __outbytestring intrinsic
 - outsb instruction
 ms.assetid: c9150661-9c18-427f-bae8-710bba6ed78c
-ms.openlocfilehash: 31caf17db5d56efccd6b30200994b1080356b4c1
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: feadb0b4275e370de88bfc04c8a10f90c41d0844
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217176"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97222426"
 ---
 # <a name="__outbytestring"></a>__outbytestring
 
 **Microsoft 전용**
 
-`Count` `Port` `rep outsb` 에서 가리키는데이터의처음바이트를로지정된포트로보내는명령을생성합니다.`Buffer`
+`rep outsb` `Count` 에서 가리키는 데이터의 처음 바이트를로 지정 된 포트로 보내는 명령을 생성 합니다 `Buffer` `Port` .
 
 ## <a name="syntax"></a>구문
 
@@ -44,11 +45,11 @@ void __outbytestring(
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`__outbytestring`|x86, x64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 ## <a name="remarks"></a>설명
 
@@ -56,6 +57,6 @@ void __outbytestring(
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

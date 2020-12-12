@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 메모리 관리: 예제'
 title: '메모리 관리: 예'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - frame allocation [MFC]
 - memory allocation [MFC], data structures
 ms.assetid: f10240f8-b698-4c83-9288-97a54318930b
-ms.openlocfilehash: 0568b3abbcd5776eab4d0ab9748bcbcd79c2a84b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: dcd7ba9ce5fee0af932766494f0a7afd64684e77
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228611"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97222296"
 ---
 # <a name="memory-management-examples"></a>메모리 관리: 예
 
@@ -36,7 +37,7 @@ ms.locfileid: "87228611"
 
 - [개체](#_core_allocation_of_an_object)
 
-## <a name="allocation-of-an-array-of-bytes"></a><a name="_core_allocation_of_an_array_of_bytes"></a>바이트 배열 할당
+## <a name="allocation-of-an-array-of-bytes"></a><a name="_core_allocation_of_an_array_of_bytes"></a> 바이트 배열 할당
 
 #### <a name="to-allocate-an-array-of-bytes-on-the-frame"></a>프레임에 바이트 배열을 할당 하려면
 
@@ -56,7 +57,7 @@ ms.locfileid: "87228611"
 
    [!code-cpp[NVC_MFC_Utilities#3](codesnippet/cpp/memory-management-examples_3.cpp)]
 
-## <a name="allocation-of-a-data-structure"></a><a name="_core_allocation_of_a_data_structure"></a>데이터 구조 할당
+## <a name="allocation-of-a-data-structure"></a><a name="_core_allocation_of_a_data_structure"></a> 데이터 구조 할당
 
 #### <a name="to-allocate-a-data-structure-on-the-frame"></a>프레임에 데이터 구조를 할당 하려면
 
@@ -72,7 +73,7 @@ ms.locfileid: "87228611"
 
    [!code-cpp[NVC_MFC_Utilities#5](codesnippet/cpp/memory-management-examples_5.cpp)]
 
-## <a name="allocation-of-an-object"></a><a name="_core_allocation_of_an_object"></a>개체 할당
+## <a name="allocation-of-an-object"></a><a name="_core_allocation_of_an_object"></a> 개체 할당
 
 #### <a name="to-allocate-an-object-on-the-frame"></a>프레임에 개체를 할당 하려면
 

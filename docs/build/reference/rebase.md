@@ -1,4 +1,5 @@
 ---
+description: 다음에 대 한 자세한 정보:/기준
 title: /다시 지정
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - executable files [C++], base address
 - /REBASE editbin option [C++]
 ms.assetid: 3f89d874-af5c-485b-974b-fd205f6e1a4b
-ms.openlocfilehash: 42cbcb911fcd0aa7753d84aae5523d28371b9972
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6cbbf0a21bd9306167fb165b63c22e810518e161
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62319202"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97225338"
 ---
 # <a name="rebase"></a>/다시 지정
 
@@ -26,16 +27,16 @@ ms.locfileid: "62319202"
 
 ## <a name="remarks"></a>설명
 
-이 옵션에 지정된 된 파일에 대 한 기본 주소를 설정합니다. EDITBIN은 64KB까지 반올림 하는 각 파일의 크기에 따라 연속적인 주소 공간에서 새 기본 주소를 할당 합니다. 기본 주소에 대 한 자세한 내용은 참조는 [기본 주소](base-base-address.md) (/ 기본) 링커 옵션입니다.
+이 옵션은 지정 된 파일에 대 한 기본 주소를 설정 합니다. EDITBIN은 각 파일의 크기에 따라 인접 한 주소 공간에 가장 가까운 64 KB로 반올림 된 새 기준 주소를 할당 합니다. 기본 주소에 대 한 자세한 내용은 [기본 주소](base-base-address.md) (/base) 링커 옵션을 참조 하세요.
 
-프로그램 실행 파일과 Dll을 지정 합니다 *파일* 기반 하는 순서로 EDITBIN 명령줄의 인수입니다. 하나 이상의 선택적으로 지정할 수 있습니다 *한정자*각각 쉼표로 구분 (**,**):
+EDITBIN 명령줄의 *파일* 인수에서 프로그램의 실행 파일 및 dll을 기반으로 할 순서 대로 지정 합니다. 선택적으로 하나 이상의 *한정자* 를 쉼표 (**,**)로 구분 하 여 지정할 수 있습니다.
 
 |한정자|작업|
 |--------------|------------|
-|**BASE=**<em>address</em>|파일에 기본 주소 재할당에 대 한 시작 주소를 제공 합니다. 지정할 *주소* 10 진수 또는 C 언어 표기법으로 나타냅니다. BASE를 지정 하지 않은 경우 기본적으로 시작 하는 기본 주소는 0x400000입니다. DOWN이 사용 되는, 기본 지정 해야 하 고 *주소* 기본 주소 범위의 끝을 설정 합니다.|
-|**BASEFILE**|COFFBASE 라는 파일을 만듭니다. TXT에 필요한 형식으로 링크의 텍스트 파일/기본 옵션입니다.|
-|**DOWN**|끝 주소에서 아래쪽으로 기본 주소를 할당할 EDITBIN 알려 줍니다. 아래 주소 범위의 가장 높은 가능한 주소에 있는 첫 번째 파일을 사용 하 여 지정 된 순서로 파일을 다시 할당 됩니다. 파일의 기준 주소 공간이 충분 하도록 아래쪽에 있는 BASE는 사용 해야 합니다. 지정된 된 파일에 필요한 주소 공간을 확인 하려면 EDITBIN /REBASE를 사용 하 여 파일을 실행 하 고 표시 된 전체 크기를 64KB를 추가 합니다.|
+|**기준 =**<em>주소</em>|기본 주소를 파일에 다시 할당 하기 위한 시작 주소를 제공 합니다. 10 진수 또는 C 언어 표기법으로 *주소* 를 지정 합니다. BASE를 지정 하지 않으면 기본 시작 기본 주소는 0x400000입니다. DOWN을 사용 하는 경우 BASE를 지정 하 고 *주소* 는 기본 주소 범위의 끝을 설정 합니다.|
+|**BASEFILE**|COFFBASE.TXT 라는 파일을 만듭니다 .이 파일은 링크의/BASE 옵션에 필요한 형식의 텍스트 파일입니다.|
+|**드롭다운**|끝 주소에서 하향 밑 주소를 다시 할당 하도록 EDITBIN에 지시 합니다. 파일은 지정 된 순서 대로 다시 할당 되며, 첫 번째 파일은 주소 범위의 끝 아래에서 가능한 가장 높은 주소에 위치 합니다. 파일 기반으로 충분 한 주소 공간을 확보 하기 위해 밑은 DOWN과 함께 사용 해야 합니다. 지정 된 파일에 필요한 주소 공간을 확인 하려면 파일에 대해/다시 지정을 사용 하 여 EDITBIN을 실행 하 고 표시 된 총 크기에 64 KB를 추가 합니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [EDITBIN 옵션](editbin-options.md)
