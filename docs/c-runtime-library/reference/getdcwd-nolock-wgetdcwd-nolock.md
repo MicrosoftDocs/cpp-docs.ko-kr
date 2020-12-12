@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _getdcwd_nolock, _wgetdcwd_nolock'
 title: _getdcwd_nolock, _wgetdcwd_nolock
 ms.date: 11/04/2016
 api_name:
@@ -37,12 +38,12 @@ helpviewer_keywords:
 - _wgetdcwd_nolock function
 - directories [C++], current working
 ms.assetid: d9bdf712-43f8-4173-8f9a-844e82beaa97
-ms.openlocfilehash: c07c52e0dcfe84c5f00a9a0b67d872a860941c6f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d40bd7a3cf8d666ad7ba108fc71e443ea262c13f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229443"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256564"
 ---
 # <a name="_getdcwd_nolock-_wgetdcwd_nolock"></a>_getdcwd_nolock, _wgetdcwd_nolock
 
@@ -75,15 +76,15 @@ wchar_t *_wgetdcwd_nolock(
 경로의 스토리지 위치입니다.
 
 *maxlen*<br/>
-경로의 최대 길이 (문자): **`char`** **_getdcwd** 및 **`wchar_t`** **_wgetdcwd**의 최대 길이입니다.
+경로의 최대 길이 (문자): **`char`** **_getdcwd** 및 **`wchar_t`** **_wgetdcwd** 의 최대 길이입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 [_getdcwd, _wgetdcwd](getdcwd-wgetdcwd.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-**_getdcwd_nolock** 및 **_wgetdcwd_nolock** 는 다른 스레드의 간섭 으로부터 보호 되지 않는다는 점을 제외 하 고 각각 **_getdcwd** 및 **_wgetdcwd**와 동일 합니다. 이들은 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 애플리케이션과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
+**_getdcwd_nolock** 및 **_wgetdcwd_nolock** 는 다른 스레드의 간섭 으로부터 보호 되지 않는다는 점을 제외 하 고 각각 **_getdcwd** 및 **_wgetdcwd** 와 동일 합니다. 이들은 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 애플리케이션과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
 

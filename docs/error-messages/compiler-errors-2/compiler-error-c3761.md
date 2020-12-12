@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3761'
 title: 컴파일러 오류 C3761
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3761
 ms.assetid: 0c16f093-7a78-4838-b90b-0c67ef6e9270
-ms.openlocfilehash: 615992a2cf7563ab474f2547098a645dde0a31f8
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: c3fd33d7a27d8ae85582a5711b7bdd1e15c93393
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91501260"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97255459"
 ---
 # <a name="compiler-error-c3761"></a>컴파일러 오류 C3761
 

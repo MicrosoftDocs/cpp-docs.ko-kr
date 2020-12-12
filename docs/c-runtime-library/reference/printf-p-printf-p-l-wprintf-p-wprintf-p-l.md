@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: _printf_p, _printf_p_l, _wprintf_p, _wprintf_p_l'
 title: _printf_p, _printf_p_l, _wprintf_p, _wprintf_p_l
 ms.date: 11/04/2016
 api_name:
@@ -42,12 +43,12 @@ helpviewer_keywords:
 - tprintf_p_l function
 - _printf_p_l function
 ms.assetid: 1b7e9ef9-a069-45db-af9d-c2730168322e
-ms.openlocfilehash: 555739fbcdd3503461d7b831660a94602f244aa3
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 1249395c883306c04eb0b294d06ec73c4f04447c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70950262"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97252846"
 ---
 # <a name="_printf_p-_printf_p_l-_wprintf_p-_wprintf_p_l"></a>_printf_p, _printf_p_l, _wprintf_p, _wprintf_p_l
 
@@ -93,20 +94,20 @@ int _wprintf_p_l(
 
 ## <a name="remarks"></a>설명
 
-**_Intf_l** 함수는 일련의 문자 및 값을 표준 출력 스트림으로 **stdout**에 인쇄 합니다. 인수가 *형식* 문자열을 따르는 경우 *서식* 문자열은 인수의 출력 형식을 결정 하는 사양을 포함 해야 합니다 ( [printf_p 위치 매개 변수](../../c-runtime-library/printf-p-positional-parameters.md)참조).
+**_Printf_p** 함수는 일련의 문자 및 값을 서식 지정 하 고 표준 출력 스트림 **stdout** 에 출력 합니다. 인수가 *형식* 문자열을 따르는 경우 *서식* 문자열은 인수의 출력 형식을 결정 하는 사양을 포함 해야 합니다 ( [printf_p 위치 매개 변수](../../c-runtime-library/printf-p-positional-parameters.md)참조).
 
-**_Printf_p** 와 **printf_s** 의 차이점은 **_printf_p** 가 위치 매개 변수를 지원 한다는 것입니다 .이 매개 변수를 사용 하면 형식 문자열에서 인수가 사용 되는 순서를 지정할 수 있습니다. 자세한 내용은 [printf_p 위치 매개 변수](../../c-runtime-library/printf-p-positional-parameters.md)를 참조하세요.
+**_Printf_p** 와 **printf_s** 의 차이점은 **_printf_p** 에서 위치 매개 변수를 지원 한다는 것입니다 .이를 통해 형식 문자열에서 인수가 사용 되는 순서를 지정할 수 있습니다. 자세한 내용은 [printf_p 위치 매개 변수](../../c-runtime-library/printf-p-positional-parameters.md)를 참조하세요.
 
-**_wintf_l** 는 **_intf_l**의 와이드 문자 버전입니다. 스트림이 ANSI 모드에서 열리는 경우 동일 하 게 동작 합니다. **_printf_p** 는 현재 유니코드 스트림에 대 한 출력을 지원 하지 않습니다.
+**_wprintf_p** 은 **_printf_p** 의 와이드 문자 버전입니다. 스트림이 ANSI 모드에서 열리는 경우 동일 하 게 동작 합니다. **_printf_p** 는 현재 유니코드 스트림으로의 출력을 지원 하지 않습니다.
 
-**_L** 접미사가 있는 이러한 함수 버전은 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 하는 경우를 제외 하 고는 동일 합니다.
+**_L** 접미사가 있는 이러한 함수 버전은 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하 고는 동일 합니다.
 
 > [!IMPORTANT]
-> *format*이 사용자 정의 문자열이 아닌지 확인하세요.
+> *format* 이 사용자 정의 문자열이 아닌지 확인하세요.
 
-*Format* 또는 *인수*가 **NULL**이거나 형식 문자열에 잘못된 형식 지정 문자가 포함되어 있는 경우에는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 **_printf_p** 및 **_wprintf_p** 함수에서 잘못된 매개 변수 처리기를 호출합니다. 계속 해 서 실행 하도록 허용한 경우 함수는-1을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
+*Format* 또는 *인수가* **NULL** 이거나 형식 문자열에 잘못 된 형식 지정 문자가 포함 된 경우 **_Printf_p** 및 **_wprintf_p** 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 함수는-1을 반환 하 고 **errno** 를 **EINVAL** 로 설정 합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
 
 |Tchar.h 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -120,7 +121,7 @@ int _wprintf_p_l(
 |**_printf_p**, **_printf_p_l**|\<stdio.h>|
 |**_wprintf_p**, **_wprintf_p_l**|\<stdio.h> 또는 \<wchar.h>|
 
-이 콘솔은 UWP (유니버설 Windows 플랫폼) 앱에서 지원 되지 않습니다. 콘솔, **stdin**, **stdout**및 **stderr**에 연결 된 표준 스트림 핸들은 C 런타임 함수가 UWP 앱에서 사용할 수 있으려면 먼저 리디렉션해야 합니다. 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+이 콘솔은 UWP (유니버설 Windows 플랫폼) 앱에서 지원 되지 않습니다. 콘솔, **stdin**, **stdout** 및 **stderr** 에 연결 된 표준 스트림 핸들은 C 런타임 함수가 UWP 앱에서 사용할 수 있으려면 먼저 리디렉션해야 합니다. 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
@@ -152,7 +153,7 @@ Reusing arguments: 10 10 10 10
 Width specifiers:     Hello
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [부동 소수점 지원](../../c-runtime-library/floating-point-support.md)<br/>
 [스트림 I/O](../../c-runtime-library/stream-i-o.md)<br/>
@@ -164,6 +165,6 @@ Width specifiers:     Hello
 [scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>
 [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)<br/>
 [_sprintf_p, _sprintf_p_l, _swprintf_p, _swprintf_p_l](sprintf-p-sprintf-p-l-swprintf-p-swprintf-p-l.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \_ _swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
 [sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l](sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md)<br/>
 [vprintf 함수](../../c-runtime-library/vprintf-functions.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: islower, iswlower, _islower_l, _iswlower_l'
 title: islower, iswlower, _islower_l, _iswlower_l
 ms.date: 4/2/2020
 api_name:
@@ -48,12 +49,12 @@ helpviewer_keywords:
 - iswlower function
 - _islower_l function
 ms.assetid: fcc3b70a-2b47-45fd-944d-e5c1942e6457
-ms.openlocfilehash: 4add576b9abe2bedda227d76cf3fc57890cfcbc1
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: cf4b127e46a18308da9e51880b7c10b2e2f4aa06
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917558"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256447"
 ---
 # <a name="islower-iswlower-_islower_l-_iswlower_l"></a>islower, iswlower, _islower_l, _iswlower_l
 
@@ -86,9 +87,9 @@ int _iswlower_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-*C* 가 소문자의 특정 표현인 경우 이러한 각 루틴은 0이 아닌 값을 반환 합니다. **islower** 는 *c* 가 소문자 (a-z) 인 경우 0이 아닌 값을 반환 합니다. **iswlower** 는 *c* 가 소문자에 해당 하는 와이드 문자인 경우 0이 아닌 값을 반환 하 고, *c* 가 **iswcntrl**, **iswlower**, **iswpunct**또는 **iswlower** 가 0이 아닌 구현 시 정의 된 와이드 문자 집합 중 하나인 경우에는 0이 아닌 값을 반환 합니다. *C* 가 테스트 조건을 충족 하지 않는 경우 이러한 루틴은 각각 0을 반환 합니다.
+*C* 가 소문자의 특정 표현인 경우 이러한 각 루틴은 0이 아닌 값을 반환 합니다. **islower** 는 *c* 가 소문자 (a-z) 인 경우 0이 아닌 값을 반환 합니다. **iswlower** 는 *c* 가 소문자에 해당 하는 와이드 문자인 경우 0이 아닌 값을 반환 하 고, *c* 가 **iswcntrl**, **iswlower**, **iswpunct** 또는 **iswlower** 가 0이 아닌 구현 시 정의 된 와이드 문자 집합 중 하나인 경우에는 0이 아닌 값을 반환 합니다. *C* 가 테스트 조건을 충족 하지 않는 경우 이러한 루틴은 각각 0을 반환 합니다.
 
 **_L** 접미사가 있는 이러한 함수 버전은 로캘 종속 동작에 현재 로캘 대신 전달 된 로캘을 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
@@ -116,8 +117,8 @@ int _iswlower_l(
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [문자 분류](../../c-runtime-library/character-classification.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
+[로캘](../../c-runtime-library/locale.md)<br/>
 [is, isw 루틴](../../c-runtime-library/is-isw-routines.md)<br/>

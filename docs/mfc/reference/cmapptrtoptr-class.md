@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CMapPtrToPtr 클래스'
 title: CMapPtrToPtr 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - CMapPtrToPtr [MFC], RemoveKey
 - CMapPtrToPtr [MFC], SetAt
 ms.assetid: 23cbbaec-9d64-48f2-92ae-5e24fa64b926
-ms.openlocfilehash: f8fc69007d35927daaa7128de1bc0ceb0b44c746
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3cc561f7420e9c3c7bc2b2f6460536a80d7ef7cd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223046"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97259541"
 ---
 # <a name="cmapptrtoptr-class"></a>CMapPtrToPtr 클래스
 
@@ -63,7 +64,7 @@ class CMapPtrToPtr : public CObject
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[CMapPtrToPtr::CMapPtrToPtr](../../mfc/reference/cmapstringtoob-class.md#cmapstringtoob)|생성자입니다.|
 
@@ -93,7 +94,7 @@ class CMapPtrToPtr : public CObject
 
 ## <a name="remarks"></a>설명
 
-`CMapPtrToPtr`IMPLEMENT_DYNAMIC 매크로를 통합 하 여 런타임 형식 액세스를 지원 하 고 개체를 덤프 `CDumpContext` 합니다. 개별 지도 요소 (포인터 값)의 덤프가 필요한 경우 덤프 컨텍스트의 깊이를 1 이상으로 설정 해야 합니다.
+`CMapPtrToPtr` IMPLEMENT_DYNAMIC 매크로를 통합 하 여 런타임 형식 액세스를 지원 하 고 개체를 덤프 `CDumpContext` 합니다. 개별 지도 요소 (포인터 값)의 덤프가 필요한 경우 덤프 컨텍스트의 깊이를 1 이상으로 설정 해야 합니다.
 
 포인터 포인터 맵은 serialize 할 수 없습니다.
 

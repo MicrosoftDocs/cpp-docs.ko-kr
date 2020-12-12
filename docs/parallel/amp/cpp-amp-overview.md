@@ -1,4 +1,5 @@
 ---
+description: 자세한 내용은 C++ AMP 개요를 확인 하세요.
 title: C++ AMP 개요
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - C++ Accelerated Massive Parallelism, overview
 - C++ Accelerated Massive Parallelism
 ms.assetid: 9e593b06-6e3c-43e9-8bae-6d89efdd39fc
-ms.openlocfilehash: 0eeda43a279be74ea71669b55356603e980cab40
-ms.sourcegitcommit: d77159732a8e782b2a1b7abea552065f2b6f61c1
+ms.openlocfilehash: edbf20385724c062deea00ff8ea159d7021f9c63
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93344750"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97254640"
 ---
 # <a name="c-amp-overview"></a>C++ AMP 개요
 
@@ -225,7 +226,7 @@ for (int i = 0; i < 5; i++)
 
 다음 표에서는 및 클래스 간의 유사점과 차이점을 요약 하 여 보여 줍니다 `array` `array_view` .
 
-|Description|array 클래스|array_view 클래스|
+|설명|array 클래스|array_view 클래스|
 |-----------------|-----------------|-----------------------|
 |Rank가 결정 된 경우|컴파일 시간에.|컴파일 시간에.|
 |범위가 결정 되 면|런타임에.|런타임에.|
@@ -238,7 +239,7 @@ for (int i = 0; i < 5; i++)
 
 공유 메모리는 CPU와 가속기 모두에서 액세스할 수 있는 메모리입니다. 공유 메모리를 사용 하면 CPU와 가속기 간에 데이터를 복사 하는 오버 헤드가 감소 하거나 크게 줄어듭니다. 메모리가 공유 되더라도 CPU와 가속기 모두 동시에 액세스할 수 없으며, 이렇게 하면 정의 되지 않은 동작이 발생 합니다.
 
-`array` 개체를 사용 하 여 연결 된 가속기가 지 원하는 경우 공유 메모리 사용에 대 한 세분화 된 제어를 지정할 수 있습니다. 액셀러레이터 키가 공유 메모리를 지원 하는지 여부는 [supports_cpu_shared_memory](reference/accelerator-class.md#supports_cpu_shared_memory) **`true`** 공유 메모리가 지원 될 때 반환 되는 액셀러레이터의 supports_cpu_shared_memory 속성에 의해 결정 됩니다. 공유 메모리가 지원 되는 경우 액셀러레이터에 대 한 메모리 할당에 대 한 기본 [Access_type 열거형](reference/concurrency-namespace-enums-amp.md#access_type) 은 속성에 의해 결정 됩니다 `default_cpu_access_type` . 기본적으로 `array` 및 `array_view` 개체는 연결 된 `access_type` 기본와 동일 하 게 사용 `accelerator` 됩니다.
+`array` 개체를 사용 하 여 연결 된 가속기가 지 원하는 경우 공유 메모리 사용에 대 한 세분화 된 제어를 지정할 수 있습니다. 액셀러레이터 키가 공유 메모리를 지원 하는지 여부는 [](reference/accelerator-class.md#supports_cpu_shared_memory) **`true`** 공유 메모리가 지원 될 때 반환 되는 액셀러레이터의 supports_cpu_shared_memory 속성에 의해 결정 됩니다. 공유 메모리가 지원 되는 경우 액셀러레이터에 대 한 메모리 할당에 대 한 기본 [Access_type 열거형](reference/concurrency-namespace-enums-amp.md#access_type) 은 속성에 의해 결정 됩니다 `default_cpu_access_type` . 기본적으로 `array` 및 `array_view` 개체는 연결 된 `access_type` 기본와 동일 하 게 사용 `accelerator` 됩니다.
 
 의 [array:: Cpu_access_type 데이터 멤버](reference/array-class.md#cpu_access_type) 속성을 `array` 명시적으로 설정 하면 공유 메모리가 사용 되는 방식에 대 한 세분화 된 제어를 실행 하 여 계산 커널의 메모리 액세스 패턴에 따라 하드웨어의 성능 특성에 맞게 앱을 최적화할 수 있습니다. 는 `array_view` 연결 된와 동일한를 반영 `cpu_access_type` `array` 하거나, array_view 데이터 소스 없이 생성 된 경우에는 `access_type` 먼저 저장소를 할당 하도록 하는 환경을 반영 합니다. 즉, 호스트 (CPU)에서 처음으로 액세스 하는 경우에는 CPU 데이터 소스에 대해 생성 된 것 처럼 동작 하 고 캡처와 연결 된의를 공유 합니다. 그러나에서 처음으로 액세스 하는 경우에는에서 `access_type` `accelerator_view` 만든에 `accelerator_view` 대해 만들어진 것 처럼 동작 하 `array` `accelerator_view` 고의를 공유 합니다 `array` `access_type` .
 
@@ -465,7 +466,7 @@ C++ AMP는 가속 그래픽 프로그래밍을 위해 디자인 된 그래픽 �
 
 - [Writeonly_texture_view 클래스](../../parallel/amp/reference/writeonly-texture-view-class.md): 질감에 대 한 쓰기 전용 액세스를 제공 합니다.
 
-- Short vector Library: **`int`** ,, `uint` **`float`** , **`double`** , 일반 또는 [unorm](../../parallel/amp/reference/unorm-class.md) [norm](../../parallel/amp/reference/norm-class.md)을 기반으로 하는 길이 2, 3 및 4의 짧은 벡터 형식 집합을 정의 합니다.
+- Short vector Library: **`int`** ,, `uint` **`float`** , **`double`** , 일반 또는 [unorm](../../parallel/amp/reference/unorm-class.md) [](../../parallel/amp/reference/norm-class.md)을 기반으로 하는 길이 2, 3 및 4의 짧은 벡터 형식 집합을 정의 합니다.
 
 ## <a name="universal-windows-platform-uwp-apps"></a>UWP(유니버설 Windows 플랫폼) 앱
 

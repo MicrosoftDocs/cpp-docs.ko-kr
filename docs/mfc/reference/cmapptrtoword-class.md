@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CMapPtrToWord 클래스'
 title: CMapPtrToWord 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - CMapPtrToWord [MFC], RemoveKey
 - CMapPtrToWord [MFC], SetAt
 ms.assetid: 4631c6b6-d49f-49d9-adc0-1e0491e32d7b
-ms.openlocfilehash: 254659a9f00ff7c0c27174cfbea4c131993150f3
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f1b9742b6693c07b27c22a77b8c45d5b20500bb8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223033"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97259489"
 ---
 # <a name="cmapptrtoword-class"></a>CMapPtrToWord 클래스
 
@@ -63,7 +64,7 @@ class CMapPtrToWord : public CObject
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[CMapPtrToWord::CMapPtrToWord](../../mfc/reference/cmapstringtoob-class.md#cmapstringtoob)|생성자입니다.|
 
@@ -93,7 +94,7 @@ class CMapPtrToWord : public CObject
 
 ## <a name="remarks"></a>설명
 
-`CMapWordToPtr`IMPLEMENT_DYNAMIC 매크로를 통합 하 여 런타임 형식 액세스를 지원 하 고 개체를 덤프 `CDumpContext` 합니다. 개별 지도 요소에 대 한 덤프가 필요한 경우 덤프 컨텍스트의 깊이를 1 이상으로 설정 해야 합니다.
+`CMapWordToPtr` IMPLEMENT_DYNAMIC 매크로를 통합 하 여 런타임 형식 액세스를 지원 하 고 개체를 덤프 `CDumpContext` 합니다. 개별 지도 요소에 대 한 덤프가 필요한 경우 덤프 컨텍스트의 깊이를 1 이상으로 설정 해야 합니다.
 
 단어 포인터 맵이 serialize 되지 않을 수 있습니다.
 

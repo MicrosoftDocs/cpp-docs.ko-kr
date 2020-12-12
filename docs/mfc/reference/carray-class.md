@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CArray 클래스'
 title: CArray 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -42,12 +43,12 @@ helpviewer_keywords:
 - CArray [MFC], SetAtGrow
 - CArray [MFC], SetSize
 ms.assetid: fead8b00-4cfd-4625-ad0e-251df62ba92f
-ms.openlocfilehash: f73666f3a20488d14a82b7c56d682f3f5b2386df
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2aea88178347fd146720a8205974049e4baf039f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87195176"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97259645"
 ---
 # <a name="carray-class"></a>CArray 클래스
 
@@ -66,13 +67,13 @@ class CArray : public CObject
 배열에 저장 된 개체의 형식을 지정 하는 템플릿 매개 변수입니다. *TYPE* 은에서 반환 하는 매개 변수입니다 `CArray` .
 
 *ARG_TYPE*<br/>
-배열에 저장 된 개체에 액세스 하는 데 사용 되는 인수 형식을 지정 하는 템플릿 매개 변수입니다. 일반적으로 *형식*에 대 한 참조입니다. *ARG_TYPE* 은에 전달 되는 매개 변수입니다 `CArray` .
+배열에 저장 된 개체에 액세스 하는 데 사용 되는 인수 형식을 지정 하는 템플릿 매개 변수입니다. 일반적으로 *형식* 에 대 한 참조입니다. *ARG_TYPE* 은에 전달 되는 매개 변수입니다 `CArray` .
 
 ## <a name="members"></a>멤버
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[CArray:: CArray](#carray)|빈 배열을 생성합니다.|
 
@@ -134,7 +135,7 @@ C 배열과 마찬가지로 인덱싱된 요소에 대 한 액세스 시간은 `
 
 **헤더:** afxtempl.h
 
-## <a name="carrayadd"></a><a name="add"></a>CArray:: Add
+## <a name="carrayadd"></a><a name="add"></a> CArray:: Add
 
 배열의 끝에 새 요소를 추가 하 여 배열을 1 만큼 증가 합니다.
 
@@ -150,7 +151,7 @@ INT_PTR Add(ARG_TYPE newElement);
 *newElement*<br/>
 이 배열에 추가할 요소입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 추가 된 요소의 인덱스입니다.
 
@@ -162,7 +163,7 @@ INT_PTR Add(ARG_TYPE newElement);
 
 [!code-cpp[NVC_MFCCollections#22](../../mfc/codesnippet/cpp/carray-class_1.cpp)]
 
-## <a name="carrayappend"></a><a name="append"></a>CArray:: Append
+## <a name="carrayappend"></a><a name="append"></a> CArray:: Append
 
 한 배열의 내용을 다른 배열의 끝에 추가 하려면이 멤버 함수를 호출 합니다.
 
@@ -175,7 +176,7 @@ INT_PTR Append(const CArray& src);
 *src*<br/>
 배열에 추가할 요소의 원본입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 추가 된 첫 번째 요소의 인덱스입니다.
 
@@ -189,7 +190,7 @@ INT_PTR Append(const CArray& src);
 
 [!code-cpp[NVC_MFCCollections#23](../../mfc/codesnippet/cpp/carray-class_2.cpp)]
 
-## <a name="carraycarray"></a><a name="carray"></a>CArray:: CArray
+## <a name="carraycarray"></a><a name="carray"></a> CArray:: CArray
 
 빈 배열을 생성합니다.
 
@@ -205,7 +206,7 @@ CArray();
 
 [!code-cpp[NVC_MFCCollections#24](../../mfc/codesnippet/cpp/carray-class_3.cpp)]
 
-## <a name="carraycopy"></a><a name="copy"></a>CArray:: Copy
+## <a name="carraycopy"></a><a name="copy"></a> CArray:: Copy
 
 한 배열의 요소를 다른 배열에 복사 하려면이 멤버 함수를 사용 합니다.
 
@@ -222,13 +223,13 @@ void Copy(const CArray& src);
 
 한 배열의 요소를 다른 배열의 요소로 덮어쓰려면이 멤버 함수를 호출 합니다.
 
-`Copy`메모리를 해제 하지 않습니다. 그러나 필요한 경우 `Copy` 배열에 복사 된 요소를 수용 하기 위해 추가 메모리를 할당할 수 있습니다.
+`Copy` 메모리를 해제 하지 않습니다. 그러나 필요한 경우 `Copy` 배열에 복사 된 요소를 수용 하기 위해 추가 메모리를 할당할 수 있습니다.
 
 ### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCCollections#25](../../mfc/codesnippet/cpp/carray-class_4.cpp)]
 
-## <a name="carrayelementat"></a><a name="elementat"></a>CArray:: ElementAt
+## <a name="carrayelementat"></a><a name="elementat"></a> CArray:: ElementAt
 
 배열 내에서 지정 된 요소에 대 한 임시 참조를 반환 합니다.
 
@@ -242,7 +243,7 @@ const TYPE& ElementAt(INT_PTR nIndex) const;
 *nIndex*<br/>
 0 보다 크거나 같고 [system.array.getupperbound](#getupperbound)에서 반환 된 값 보다 작거나 같은 정수 인덱스입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 배열 요소에 대 한 참조입니다.
 
@@ -254,7 +255,7 @@ const TYPE& ElementAt(INT_PTR nIndex) const;
 
   [Getsize](#getsize)의 예제를 참조 하세요.
 
-## <a name="carrayfreeextra"></a><a name="freeextra"></a>CArray:: FreeExtra
+## <a name="carrayfreeextra"></a><a name="freeextra"></a> CArray:: FreeExtra
 
 배열이 증가 하는 동안 할당 된 추가 메모리를 해제 합니다.
 
@@ -270,7 +271,7 @@ void FreeExtra();
 
   [GetData](#getdata)의 예제를 참조 하세요.
 
-## <a name="carraygetat"></a><a name="getat"></a>CArray:: GetAt
+## <a name="carraygetat"></a><a name="getat"></a> CArray:: GetAt
 
 지정 된 인덱스에 있는 배열 요소를 반환 합니다.
 
@@ -287,7 +288,7 @@ const TYPE& GetAt(INT_PTR nIndex) const;
 *nIndex*<br/>
 0 보다 크거나 같고 [system.array.getupperbound](#getupperbound)에서 반환 된 값 보다 작거나 같은 정수 인덱스입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재이 인덱스에 있는 배열 요소입니다.
 
@@ -299,7 +300,7 @@ const TYPE& GetAt(INT_PTR nIndex) const;
 
 [!code-cpp[NVC_MFCCollections#26](../../mfc/codesnippet/cpp/carray-class_5.cpp)]
 
-## <a name="carraygetcount"></a><a name="getcount"></a>CArray:: GetCount
+## <a name="carraygetcount"></a><a name="getcount"></a> CArray:: GetCount
 
 배열 요소의 수를 반환 합니다.
 
@@ -307,7 +308,7 @@ const TYPE& GetAt(INT_PTR nIndex) const;
 INT_PTR GetCount() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 배열의 항목 수입니다.
 
@@ -319,7 +320,7 @@ INT_PTR GetCount() const;
 
 [!code-cpp[NVC_MFCCollections#27](../../mfc/codesnippet/cpp/carray-class_6.cpp)]
 
-## <a name="carraygetdata"></a><a name="getdata"></a>CArray:: GetData
+## <a name="carraygetdata"></a><a name="getdata"></a> CArray:: GetData
 
 이 멤버 함수를 사용 하 여 배열의 요소에 직접 액세스할 수 있습니다.
 
@@ -333,7 +334,7 @@ TYPE* GetData();
 *TYPE*<br/>
 배열 요소의 형식을 지정 하는 템플릿 매개 변수입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 배열 요소에 대 한 포인터입니다.
 
@@ -347,7 +348,7 @@ TYPE* GetData();
 
 [!code-cpp[NVC_MFCCollections#28](../../mfc/codesnippet/cpp/carray-class_7.cpp)]
 
-## <a name="carraygetsize"></a><a name="getsize"></a>CArray:: GetSize
+## <a name="carraygetsize"></a><a name="getsize"></a> CArray:: GetSize
 
 배열의 크기를 반환합니다.
 
@@ -363,7 +364,7 @@ INT_PTR GetSize() const;
 
 [!code-cpp[NVC_MFCCollections#29](../../mfc/codesnippet/cpp/carray-class_8.cpp)]
 
-## <a name="carraygetupperbound"></a><a name="getupperbound"></a>CArray:: System.array.getupperbound
+## <a name="carraygetupperbound"></a><a name="getupperbound"></a> CArray:: System.array.getupperbound
 
 이 배열의 현재 상한을 반환 합니다.
 
@@ -381,7 +382,7 @@ INT_PTR GetUpperBound() const;
 
   [CArray:: GetAt](#getat)의 예제를 참조 하세요.
 
-## <a name="carrayinsertat"></a><a name="insertat"></a>CArray:: InsertAt
+## <a name="carrayinsertat"></a><a name="insertat"></a> CArray:: InsertAt
 
 첫 번째 버전은 `InsertAt` 배열의 지정 된 인덱스에 하나의 요소 (또는 요소의 여러 복사본)를 삽입 합니다.
 
@@ -428,7 +429,7 @@ void InsertAt(
 
 [!code-cpp[NVC_MFCCollections#30](../../mfc/codesnippet/cpp/carray-class_9.cpp)]
 
-## <a name="carrayisempty"></a><a name="isempty"></a>CArray:: IsEmpty
+## <a name="carrayisempty"></a><a name="isempty"></a> CArray:: IsEmpty
 
 배열이 비어 있는지 여부를 확인 합니다.
 
@@ -436,11 +437,11 @@ void InsertAt(
 BOOL IsEmpty() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 배열에 요소가 없으면 0이 아닙니다. 그렇지 않으면 0입니다.
 
-## <a name="carrayoperator-"></a><a name="operator_at"></a>CArray:: operator\[\]
+## <a name="carrayoperator-"></a><a name="operator_at"></a> CArray:: operator \[\]
 
 이러한 첨자 연산자는 [Setat](#setat) 및 [GetAt](#getat) 함수를 편리 하 게 대체 합니다.
 
@@ -467,7 +468,7 @@ const TYPE& operator[](int_ptr nindex) const;
 
 [!code-cpp[NVC_MFCCollections#34](../../mfc/codesnippet/cpp/carray-class_10.cpp)]
 
-## <a name="carrayrelocateelements"></a><a name="relocateelements"></a>CArray:: RelocateElements
+## <a name="carrayrelocateelements"></a><a name="relocateelements"></a> CArray:: RelocateElements
 
 배열을 확장 하거나 축소할 때 데이터를 새 버퍼에 재배치 합니다.
 
@@ -498,7 +499,7 @@ AFX_INLINE void CArray<TYPE, ARG_TYPE>::RelocateElements(
 
 요소가 자체 멤버 중 하나에 대 한 포인터를 포함 하는 배열 또는 다른 구조체에 배열 요소 중 하나에 대 한 포인터가 포함 된 경우 포인터는 일반 복사본으로 업데이트 되지 않습니다. 이 경우 관련 형식으로의 특수화를 구현 하 여 포인터를 수정할 수 있습니다 `RelocateElements` . 데이터 복사를 담당 하기도 합니다.
 
-## <a name="carrayremoveall"></a><a name="removeall"></a>CArray:: RemoveAll
+## <a name="carrayremoveall"></a><a name="removeall"></a> CArray:: RemoveAll
 
 이 배열의 모든 요소를 반환합니다.
 
@@ -514,7 +515,7 @@ void RemoveAll();
 
 [!code-cpp[NVC_MFCCollections#31](../../mfc/codesnippet/cpp/carray-class_11.cpp)]
 
-## <a name="carrayremoveat"></a><a name="removeat"></a>CArray:: RemoveAt
+## <a name="carrayremoveat"></a><a name="removeat"></a> CArray:: RemoveAt
 
 배열의 지정 된 인덱스에서 시작 하는 하나 이상의 요소를 제거 합니다.
 
@@ -542,7 +543,7 @@ void RemoveAt(
 
 [!code-cpp[NVC_MFCCollections#32](../../mfc/codesnippet/cpp/carray-class_12.cpp)]
 
-## <a name="carraysetat"></a><a name="setat"></a>CArray:: SetAt
+## <a name="carraysetat"></a><a name="setat"></a> CArray:: SetAt
 
 지정 된 인덱스에 배열 요소를 설정 합니다.
 
@@ -563,7 +564,7 @@ void SetAt(INT_PTR nIndex, ARG_TYPE newElement);
 
 ### <a name="remarks"></a>설명
 
-`SetAt`는 배열을 증가 시 키 지 않습니다. 배열이 자동으로 증가 하 게 하려면 [SetAtGrow](#setatgrow) 를 사용 합니다.
+`SetAt` 는 배열을 증가 시 키 지 않습니다. 배열이 자동으로 증가 하 게 하려면 [SetAtGrow](#setatgrow) 를 사용 합니다.
 
 인덱스 값이 배열의 올바른 위치를 나타내는지 확인 해야 합니다. 범위를 벗어나면 라이브러리의 디버그 버전이 어설션 됩니다.
 
@@ -571,7 +572,7 @@ void SetAt(INT_PTR nIndex, ARG_TYPE newElement);
 
   [GetAt](#getat)의 예제를 참조 하세요.
 
-## <a name="carraysetatgrow"></a><a name="setatgrow"></a>CArray:: SetAtGrow
+## <a name="carraysetatgrow"></a><a name="setatgrow"></a> CArray:: SetAtGrow
 
 지정 된 인덱스에 배열 요소를 설정 합니다.
 
@@ -598,7 +599,7 @@ void SetAtGrow(INT_PTR nIndex, ARG_TYPE newElement);
 
 [!code-cpp[NVC_MFCCollections#33](../../mfc/codesnippet/cpp/carray-class_13.cpp)]
 
-## <a name="carraysetsize"></a><a name="setsize"></a>CArray:: SetSize
+## <a name="carraysetsize"></a><a name="setsize"></a> CArray:: SetSize
 
 비어 있거나 기존 배열의 크기를 설정 합니다. 필요한 경우 메모리를 할당 합니다.
 

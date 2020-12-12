@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: bad_cast 예외'
 title: bad_cast 예외
 ms.date: 10/04/2019
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - exceptions [C++], bad_cast
 - bad_cast keyword [C++]
 ms.assetid: 31eae1e7-d8d5-40a0-9fef-64a6a4fc9021
-ms.openlocfilehash: 2efe5be5e44751831a56b29cfc629df2d21843f7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 40408128bd1c90feff34e8ea1ce8bf7a3c0d56cf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229183"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97255693"
 ---
 # <a name="bad_cast-exception"></a>bad_cast 예외
 
@@ -82,7 +83,7 @@ Shape& ref_shape = dynamic_cast<Shape&>(ref_circle);
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[bad_cast](#bad_cast)|`bad_cast` 형식의 개체에 대한 생성자입니다.|
 
@@ -94,11 +95,11 @@ Shape& ref_shape = dynamic_cast<Shape&>(ref_circle);
 
 ### <a name="operators"></a>연산자
 
-|연산자|Description|
+|연산자|설명|
 |-|-|
 |[연산자 =](#op_eq)|한 `bad_cast` 개체를 다른 개체에 할당 하는 대입 연산자입니다.|
 
-## <a name="bad_cast"></a><a name="bad_cast"></a>bad_cast
+## <a name="bad_cast"></a><a name="bad_cast"></a> bad_cast
 
 `bad_cast` 형식의 개체에 대한 생성자입니다.
 
@@ -107,7 +108,7 @@ bad_cast(const char * _Message = "bad cast");
 bad_cast(const bad_cast &);
 ```
 
-## <a name="operator"></a><a name="op_eq"></a>연산자 =
+## <a name="operator"></a><a name="op_eq"></a> 연산자 =
 
 한 `bad_cast` 개체를 다른 개체에 할당 하는 대입 연산자입니다.
 
@@ -115,7 +116,7 @@ bad_cast(const bad_cast &);
 bad_cast& operator=(const bad_cast&) noexcept;
 ```
 
-## <a name="what"></a><a name="what"></a>이며
+## <a name="what"></a><a name="what"></a> 이며
 
 ```cpp
 const char* what() const noexcept override;

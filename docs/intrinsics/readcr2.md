@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __readcr2'
 title: __readcr2
 ms.date: 09/02/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - __readcr2 intrinsic
 ms.assetid: d02c97d8-1953-46e7-a79e-a781e2c5bf27
-ms.openlocfilehash: 482f4548a692d6aa3b65fbc42caabda29bb393c1
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: dd862f88716fd2d385622c5100f91fdf47061543
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217112"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97257357"
 ---
 # <a name="__readcr2"></a>__readcr2
 
@@ -31,11 +32,11 @@ CR2 레지스터의 값입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`__readcr2`|x86, x64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 ## <a name="remarks"></a>설명
 
@@ -43,6 +44,6 @@ CR2 레지스터의 값입니다.
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

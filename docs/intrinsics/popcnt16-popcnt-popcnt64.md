@@ -1,4 +1,5 @@
 ---
+description: __Popcnt16, __popcnt, __popcnt64에 대해 자세히 알아보세요.
 title: __popcnt16, __popcnt, __popcnt64
 ms.date: 09/02/2019
 f1_keywords:
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - __popcnt64
 - __popcnt
 ms.assetid: e525b236-adc8-42df-9b9b-8b7d8c245d3b
-ms.openlocfilehash: 3e5ae7f897500775671f8bd2563028874579a627
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: cb95ff09d589cfd9a9cfc438d0334cf68f073825
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70221362"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97257526"
 ---
 # <a name="__popcnt16-__popcnt-__popcnt64"></a>__popcnt16, __popcnt, __popcnt64
 
 **Microsoft 전용**
 
-16, 32 또는 `1` 64 비트 부호 없는 정수에서 비트 수 (모집단 수)를 계산 합니다.
+`1`16, 32 또는 64 비트 부호 없는 정수에서 비트 수 (모집단 수)를 계산 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -40,28 +41,28 @@ unsigned __int64 __popcnt64(
 
 ### <a name="parameters"></a>매개 변수
 
-*value*\
+*기본값*\
 진행 모집단 개수를 원하는 16, 32 또는 64 비트의 부호 없는 정수입니다.
 
 ## <a name="return-value"></a>반환 값
 
-값 매개 변수의 `1` 비트 수입니다 .
+`1` *값* 매개 변수의 비트 수입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`__popcnt16`|고급 비트 조작|
 |`__popcnt`|고급 비트 조작|
 |`__popcnt64`|64 비트 모드의 고급 비트 조작입니다.|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 ## <a name="remarks"></a>설명
 
-각 내장 함수는 `popcnt` 명령을 생성 합니다. 32 비트 모드에서는 64 비트 범용 레지스터가 없으므로 64 비트가 `popcnt` 지원 되지 않습니다.
+각 내장 함수는 명령을 생성 합니다 `popcnt` . 32 비트 모드에서는 64 비트 범용 레지스터가 없으므로 64 비트가 `popcnt` 지원 되지 않습니다.
 
-`popcnt` 명령에 대 한 하드웨어 지원을 확인 하려면를 사용 `__cpuid` `InfoType=0x00000001` 하 여 내장 함수를 호출 하 `CPUInfo[2] (ECX)`고 비트 23을 확인 합니다. 명령이 지원 되는 경우이 비트는 1이 고, 그렇지 않으면 0입니다. `popcnt` 명령을 지원 하지 않는 하드웨어에서 이러한 내장 함수를 사용 하는 코드를 실행 하는 경우 결과를 예측할 수 없습니다.
+명령에 대 한 하드웨어 지원을 확인 하려면를 사용 하 여 `popcnt` 내장 함수를 호출 하 `__cpuid` `InfoType=0x00000001` 고 비트 23을 확인 `CPUInfo[2] (ECX)` 합니다. 명령이 지원 되는 경우이 비트는 1이 고, 그렇지 않으면 0입니다. 명령을 지원 하지 않는 하드웨어에서 이러한 내장 함수를 사용 하는 코드를 실행 하는 경우 `popcnt` 결과를 예측할 수 없습니다.
 
 ## <a name="example"></a>예제
 
@@ -103,6 +104,6 @@ __popcnt(0xffffffff) = 32
 
 Advanced 마이크로 장치, i n c .의 저작권 2007 부분 All rights reserved. 고급 마이크로 장치, i n c .의 권한으로 재현 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

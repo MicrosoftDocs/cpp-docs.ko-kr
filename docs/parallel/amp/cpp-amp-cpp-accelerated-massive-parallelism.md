@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: C++ AMP (C++ Accelerated Massive Parallelism)'
 title: C++ AMP(C++ Accelerated Massive Parallelism)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - C++ AMP (see C++ Accelerated Massive Parallelism)
 - C++ Accelerated Massive Parallelism, getting started
 ms.assetid: e27824cb-3167-409b-8c3f-a0e476d8f349
-ms.openlocfilehash: 243c476b6536278eb09b26b24becb65276d6e48a
-ms.sourcegitcommit: 093f49b8b69daf86661adc125b1d2d7b1f0e0650
+ms.openlocfilehash: e7d53748cbce42958cd3117b2720ecfb46c14425
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89427636"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97254614"
 ---
 # <a name="c-amp-c-accelerated-massive-parallelism"></a>C++ AMP(C++ Accelerated Massive Parallelism)
 
@@ -35,7 +36,7 @@ C++ AMP (C++ Accelerated Massive Parallelism)는 개별 그래픽 카드의 GPU 
 [tile_static 키워드](../../cpp/tile-static-keyword.md)<br/>
 [restrict (C++ AMP)](../../cpp/restrict-cpp-amp.md)
 
-## <a name="other-resources"></a>기타 리소스
+## <a name="other-resources"></a>관련 자료
 
 [네이티브 코드 블로그의 병렬 프로그래밍](/archive/blogs/nativeconcurrency/)<br/>
 [다운로드를 위한 C++ AMP 샘플 프로젝트](/archive/blogs/nativeconcurrency/c-amp-sample-projects-for-download)<br/>
