@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 출력 매개 변수'
 title: 출력 매개 변수
 ms.date: 10/24/2018
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - procedure calls
 - procedure calls, stored procedures
 ms.assetid: 4f7c2700-1c2d-42f3-8c9f-7e83962b2442
-ms.openlocfilehash: ece626eb7fbecae9b90321ccc2569607897cf520
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: c52877483d40d7de1a8313eb806769ce92af7337
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80209861"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97316936"
 ---
 # <a name="output-parameters"></a>출력 매개 변수
 
@@ -53,7 +54,7 @@ as
 return 0
 ```
 
-`@_rowcount` outparameter는 테스트 테이블에서 반환 된 행 수를 보고 합니다. 그러나이 저장 프로시저는 행 수를 50로 제한 합니다. 예를 들어 테스트에 100 행이 있는 경우이 코드는 상위 50 행만 검색 하므로 rowcount는 50이 됩니다. 테이블에 30 개의 행만 있는 경우 rowcount는 30입니다. 값을 페치 하기 전에 `Close` 또는 `CloseAll`를 호출 하 여 outparameter를 채워야 합니다.
+`@_rowcount`Outparameter는 테스트 테이블에서 반환 된 행 수를 보고 합니다. 그러나이 저장 프로시저는 행 수를 50로 제한 합니다. 예를 들어 테스트에 100 행이 있는 경우이 코드는 상위 50 행만 검색 하므로 rowcount는 50이 됩니다. 테이블에 30 개의 행만 있는 경우 rowcount는 30입니다. `Close` `CloseAll` 값을 페치 하기 전에 또는를 호출 하 여 outparameter를 채워야 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

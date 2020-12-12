@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: Android Native Activity 앱 만들기'
 title: Android Native Activity 앱 만들기
 ms.date: 10/17/2019
 ms.assetid: 884014b1-5208-45ec-b0da-ad0070d2c24d
-ms.openlocfilehash: 664729a920076839f5f9b4440768fe3adb846803
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: d8ccccde40c89553d12fd98645cda2877e581273
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924196"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319328"
 ---
 # <a name="create-an-android-native-activity-app"></a>Android Native Activity 앱 만들기
 

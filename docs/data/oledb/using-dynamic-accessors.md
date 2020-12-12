@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 동적 접근자 사용'
 title: 동적 접근자 사용
 ms.date: 10/18/2018
 helpviewer_keywords:
 - accessors [C++], dynamic
 - dynamic accessors
 ms.assetid: e5d5bfa6-2b1d-49d0-8ced-914666422431
-ms.openlocfilehash: 4f42d6f20da819cf325cad06a04878b46e52352a
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: 9cc1cbf1f4c408317802698c01b228b48a5614c0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008685"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319146"
 ---
 # <a name="using-dynamic-accessors"></a>동적 접근자 사용
 
@@ -150,13 +151,13 @@ int main(int argc, char* argv[] )
 
 ## <a name="using-cdynamicparameteraccessor"></a>CDynamicParameterAccessor 사용
 
-[Cdynamicparameteraccessor](../../data/oledb/cdynamicparameteraccessor-class.md) 는 ICommandWithParameters 인터페이스를 호출 하 여 설정할 매개 변수 정보를 가져오는 점을 제외 하 고 [cdynamicaccessor](../../data/oledb/cdynamicaccessor-class.md)와 유사 `CDynamicParameterAccessor` 합니다. [ICommandWithParameters](/sql/relational-databases/native-client-ole-db-interfaces/icommandwithparameters) 공급자는 이 클래스를 사용할 소비자에 대해 `ICommandWithParameters` 를 지원해야 합니다.
+[Cdynamicparameteraccessor](../../data/oledb/cdynamicparameteraccessor-class.md) 는 ICommandWithParameters 인터페이스를 호출 하 여 설정할 매개 변수 정보를 가져오는 점을 제외 하 고 [cdynamicaccessor](../../data/oledb/cdynamicaccessor-class.md)와 유사 `CDynamicParameterAccessor` 합니다. [](/sql/relational-databases/native-client-ole-db-interfaces/icommandwithparameters) 공급자는 이 클래스를 사용할 소비자에 대해 `ICommandWithParameters` 를 지원해야 합니다.
 
 매개 변수 정보는 이 클래스로 만들고 관리하는 버퍼에 저장됩니다. [Cdynamicparameteraccessor:: GetParam](./cdynamicparameteraccessor-class.md#getparam) 및 [Cdynamicparameteraccessor:: GetParamType](./cdynamicparameteraccessor-class.md#getparamtype)를 사용 하 여 버퍼에서 매개 변수 데이터를 가져옵니다.
 
 이 클래스를 사용 하 여 SQL Server 저장 프로시저를 실행 하 고 출력 매개 변수 값을 가져오는 방법을 보여 주는 예제는 GitHub의 [Microsoft VCSamples](https://github.com/Microsoft/VCSamples) 리포지토리에서 [dynamicconsumer](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/DynamicConsumer) 샘플 코드를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [접근자 사용](../../data/oledb/using-accessors.md)<br/>
 [CDynamicAccessor 클래스](../../data/oledb/cdynamicaccessor-class.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 어설션 및 User-Supplied 메시지 (c + +)'
 title: 어설션 및 사용자 제공 메시지 (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - '#error%2C assert%2C static_assert [C++]'
 - user-supplied messages [C++], compile time
 ms.assetid: ebf7d885-61c8-4233-b0ae-1c9a38e0f385
-ms.openlocfilehash: a4861b3e1d17835f11f5e148d6b62051a6747f80
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: eb0dd5d94ffe49017ecb89f53063993bedd12382
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226023"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319574"
 ---
 # <a name="assertion-and-user-supplied-messages-c"></a>어설션 및 사용자 제공 메시지 (C++)
 
@@ -37,4 +38,4 @@ C + + 언어는 응용 프로그램 디버깅에 도움이 되는 세 가지 오
 [_ASSERT, _ASSERTE, _ASSERT_EXPR 매크로](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md)<br/>
 [static_assert](../cpp/static-assert.md)<br/>
 [_STATIC_ASSERT 매크로](../c-runtime-library/reference/static-assert-macro.md)<br/>
-[모음](../cpp/templates-cpp.md)
+[템플릿](../cpp/templates-cpp.md)

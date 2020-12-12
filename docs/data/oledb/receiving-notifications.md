@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 알림 받기'
 title: 알림 수신
 ms.date: 10/24/2018
 helpviewer_keywords:
@@ -10,29 +11,29 @@ helpviewer_keywords:
 - rowsets, event notifications
 - OLE DB providers, notifications
 ms.assetid: 305a1103-0c87-40c8-94bc-7fbbdd52ae32
-ms.openlocfilehash: 4b630a9728770a5e35e6d6300cf465b90238350c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 1885223a7d2b3e932cf449312eab989ecf1d2554
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80209799"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97316884"
 ---
 # <a name="receiving-notifications"></a>알림 수신
 
-OLE DB는 이벤트가 발생할 경우 알림을 수신하기 위한 인터페이스를 제공합니다. 이러한 내용은 **OLE DB 프로그래머 참조**의 [OLE DB 개체 알림에](/previous-versions/windows/desktop/ms725406(v=vs.85)) 설명 되어 있습니다. 이러한 이벤트의 설정은 표준 COM 연결 포인트 메커니즘을 사용합니다. 예를 들어 `IRowsetNotify`를 통해 이벤트를 검색 하려는 ATL 개체는 클래스 파생 목록에 `IRowsetNotify`를 추가 하 고 COM_INTERFACE_ENTRY 매크로를 통해 노출 하 여 `IRowsetNotify` 인터페이스를 구현 합니다.
+OLE DB는 이벤트가 발생할 때 알림을 받기 위한 인터페이스를 제공 합니다. 이러한 내용은 **OLE DB 프로그래머 참조** 의 [OLE DB 개체 알림에](/previous-versions/windows/desktop/ms725406(v=vs.85)) 설명 되어 있습니다. 이러한 이벤트의 설치에는 표준 COM 연결 지점 메커니즘이 사용 됩니다. 예를 들어를 통해 이벤트를 검색 하려는 ATL 개체는 `IRowsetNotify` `IRowsetNotify` `IRowsetNotify` 클래스 파생 목록에를 추가 하 고 COM_INTERFACE_ENTRY 매크로를 통해 노출 하 여 인터페이스를 구현 합니다.
 
-`IRowsetNotify`에는 여러 번 호출할 수 있는 세 가지 메서드가 있습니다. 이러한 방법 중 하나에만 응답 하려면 [IRowsetNotifyImpl](../../data/oledb/irowsetnotifyimpl-class.md) 클래스를 사용할 수 있습니다 .이 클래스는 관심이 없는 메서드에 대 한 E_NOTIMPL를 반환 합니다.
+`IRowsetNotify` 에는 여러 번 호출 될 수 있는 세 가지 메서드가 있습니다. 이러한 방법 중 하나에만 응답 하려면 [IRowsetNotifyImpl](../../data/oledb/irowsetnotifyimpl-class.md) 클래스를 사용할 수 있습니다 .이 클래스는 관심이 없는 메서드에 대 한 E_NOTIMPL를 반환 합니다.
 
-행 집합을 만들 때 반환 된 행 집합 개체에서 알림을 설정 하는 데 필요한 `IConnectionPointContainer`지원 하도록 공급자에 게 지시 해야 합니다.
+행 집합을 만들 때 반환 된 행 집합 개체에서 지원 하도록 공급자에 게 `IConnectionPointContainer` 알림을 설정 하는 데 필요한 것을 알려야 합니다.
 
-다음 코드에서는 ATL 개체에서 행 집합을 열고 `AtlAdvise` 함수를 사용 하 여 알림 싱크를 설정 하는 방법을 보여 줍니다. `AtlAdvise` `AtlUnadvise`를 호출할 때 사용 되는 쿠키를 반환 합니다.
+다음 코드에서는 ATL 개체에서 행 집합을 열고 함수를 사용 하 여 알림 싱크를 설정 하는 방법을 보여 줍니다 `AtlAdvise` . `AtlAdvise` 를 호출할 때 사용 되는 쿠키를 반환 합니다 `AtlUnadvise` .
 
 ```cpp
 CDBPropSet propset(DBPROPSET_ROWSET);
 propset.AddProperty(DBPROP_IConnectionPointContainer, true);
 ```
 
-그러면 아래 코드처럼 사용합니다.
+그런 다음, 다음 코드에서 사용 됩니다.
 
 ```cpp
 product.Open(session, _T("Products"), &propset);

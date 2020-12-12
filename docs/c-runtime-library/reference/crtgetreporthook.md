@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _CrtGetReportHook'
 title: _CrtGetReportHook
 ms.date: 11/04/2016
 api_name:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - CrtGetReportHook function
 - _CrtGetReportHook function
 ms.assetid: 922758ed-7edd-4359-9c92-0535192dc11a
-ms.openlocfilehash: bc005dda435b5e11d6c3c886de180ed85b9c2a04
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 9c950341e3f1b0231620449d983fcfe5bc0f5f12
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70942398"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319741"
 ---
 # <a name="_crtgetreporthook"></a>_CrtGetReportHook
 
@@ -42,7 +43,7 @@ ms.locfileid: "70942398"
 _CRT_REPORT_HOOK _CrtGetReportHook( void );
 ```
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 
 현재 클라이언트 정의 보고 함수를 반환합니다.
 
@@ -58,7 +59,7 @@ _CRT_REPORT_HOOK _CrtGetReportHook( void );
 |-------------|---------------------|
 |**_CrtGetReportHook**|\<crtdbg.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="libraries"></a>라이브러리
 
@@ -66,9 +67,9 @@ _CRT_REPORT_HOOK _CrtGetReportHook( void );
 
 ## <a name="example"></a>예제
 
-**_CrtSetReportHook**를 사용 하는 방법에 대 한 예제는 [보고서](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/report)를 참조 하세요.
+**_CrtSetReportHook** 사용 방법에 대 한 예제는 [보고서](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/report)를 참조 하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [디버그 루틴](../../c-runtime-library/debug-routines.md)<br/>
 [_CrtSetReportHook](crtsetreporthook.md)<br/>

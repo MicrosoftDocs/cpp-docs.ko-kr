@@ -1,22 +1,23 @@
 ---
+description: '자세히 알아보기: 동기화 데이터 구조와 Windows API의 비교'
 title: 동기화 데이터 구조와 Windows API의 비교
 ms.date: 11/04/2016
 helpviewer_keywords:
 - synchronization data structures, compared to Windows API
 - event class, example
 ms.assetid: 8b0b1a3a-ef80-408c-91fa-93e6af920b4e
-ms.openlocfilehash: b889570935b3a94e0cb8717c8af1783e2ce31c42
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: b5c633c61d070e2cd687b6281597694a7533fe0f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040343"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318418"
 ---
 # <a name="comparing-synchronization-data-structures-to-the-windows-api"></a>동기화 데이터 구조와 Windows API의 비교
 
 이 항목에서는 동시성 런타임에서 제공 하는 동기화 데이터 구조와 Windows API에서 제공 하는 동기화 데이터 구조의 동작을 비교 합니다.
 
-동시성 런타임에서 제공 하는 동기화 데이터 구조는 *협조적 스레딩 모델*을 따릅니다. 협조적 스레딩 모델에서 동기화 기본 형식은 다른 스레드에 대 한 처리 리소스를 명시적으로 생성 합니다. 이는 제어 스케줄러 또는 운영 체제에서 처리 리소스를 다른 스레드로 전송 하는 *선점형 스레딩 모델과*다릅니다.
+동시성 런타임에서 제공 하는 동기화 데이터 구조는 *협조적 스레딩 모델* 을 따릅니다. 협조적 스레딩 모델에서 동기화 기본 형식은 다른 스레드에 대 한 처리 리소스를 명시적으로 생성 합니다. 이는 제어 스케줄러 또는 운영 체제에서 처리 리소스를 다른 스레드로 전송 하는 *선점형 스레딩 모델과* 다릅니다.
 
 ## <a name="critical_section"></a>critical_section
 
@@ -36,13 +37,13 @@ ms.locfileid: "90040343"
 
 SRW 잠금에 대 한 자세한 내용은 Platform SDK의 [srw (슬림 판독기/Writer) 잠금](/windows/win32/sync/slim-reader-writer--srw--locks) 을 참조 하세요.
 
-## <a name="event"></a>event
+## <a name="event"></a>이벤트
 
 [Concurrency:: event](../../parallel/concrt/reference/event-class.md) 클래스는 명명 되지 않은 Windows 수동 다시 설정 이벤트와 비슷합니다. 그러나 개체는 `event` 협조적으로 동작 하지만 Windows 이벤트는 미리 동작 합니다. Windows 이벤트에 대 한 자세한 내용은 [이벤트 개체](/windows/win32/Sync/event-objects)를 참조 하세요.
 
 ## <a name="example"></a>예제
 
-### <a name="description"></a>Description
+### <a name="description"></a>설명
 
 클래스와 Windows 이벤트의 차이를 더 잘 이해 하려면 `event` 다음 예제를 참조 하세요. 이 예제에서는 스케줄러가 최대 두 개의 동시 작업을 만든 다음 `event` 클래스 및 Windows 수동 다시 설정 이벤트를 사용 하는 두 개의 유사한 함수를 호출할 수 있도록 합니다. 각 함수는 먼저 공유 이벤트가 신호를 받을 때까지 대기 하는 여러 작업을 만듭니다. 각 함수는 실행 중인 작업을 생성 한 다음 이벤트에 신호를 보냅니다. 각 함수는 신호를 받은 이벤트를 기다립니다.
 

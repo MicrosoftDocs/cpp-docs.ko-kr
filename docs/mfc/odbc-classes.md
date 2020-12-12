@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: ODBC 클래스'
 title: ODBC 클래스
 ms.date: 11/04/2016
 helpviewer_keywords:
 - database classes [MFC], ODBC
 - ODBC classes [MFC]
 ms.assetid: 6c40fca8-3033-4873-9abe-7f51725de0e0
-ms.openlocfilehash: 18b6e3a0ea20dbd352a61c4faab52c35b852dcb3
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: ac03543a6dfd9cf85320f9ff051730c102f2e0bd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622188"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318691"
 ---
 # <a name="odbc-classes"></a>ODBC 클래스
 
@@ -36,10 +37,10 @@ ODBC 데이터베이스를 사용 하는 프로그램에는 적어도 `CDatabase
 ## <a name="related-classes"></a>관련 클래스
 
 [CLongBinary](reference/clongbinary-class.md)<br/>
-비트맵과 같은 BLOB (binary large object)의 저장소에 대 한 핸들을 캡슐화 합니다. `CLongBinary`개체는 데이터베이스 테이블에 저장 된 대량 데이터 개체를 관리 하는 데 사용 됩니다.
+비트맵과 같은 BLOB (binary large object)의 저장소에 대 한 핸들을 캡슐화 합니다. `CLongBinary` 개체는 데이터베이스 테이블에 저장 된 대량 데이터 개체를 관리 하는 데 사용 됩니다.
 
 [CDBVariant](reference/cdbvariant-class.md)<br/>
-값의 데이터 형식에 대해 걱정 하지 않고 값을 저장할 수 있습니다. `CDBVariant`공용 구조체에 저장 된 현재 값의 데이터 형식을 추적 합니다.
+값의 데이터 형식에 대해 걱정 하지 않고 값을 저장할 수 있습니다. `CDBVariant` 공용 구조체에 저장 된 현재 값의 데이터 형식을 추적 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

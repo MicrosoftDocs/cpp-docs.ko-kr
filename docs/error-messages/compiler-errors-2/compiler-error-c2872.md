@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2872'
 title: 컴파일러 오류 C2872
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2872
 ms.assetid: c619ef97-6e0e-41d7-867c-f8d28a07d553
-ms.openlocfilehash: f57b250f87bd7f2c5808b5a681ddfe49dfa5e876
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b1b1bc09917e499b3b9e1c72070c4a6b19e9c523
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228897"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97320563"
 ---
 # <a name="compiler-error-c2872"></a>컴파일러 오류 C2872
 

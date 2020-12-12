@@ -1,20 +1,21 @@
 ---
+description: '자세히 알아보기: 할당'
 title: 할당
 ms.date: 11/04/2016
 helpviewer_keywords:
 - operators [C++], assignment
 - assignment operators [C++], overloaded
 ms.assetid: d87e4f89-f8f5-42c1-9d3c-184bca9d0e15
-ms.openlocfilehash: f1697a8de3dff6c46de01db6bbff5447c03b6282
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 696706202e70e8baf50dda34ac98ff9bca5dcda2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80190705"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319493"
 ---
 # <a name="assignment"></a>할당
 
-할당 연산자 ( **=** )는 엄격 하 게 말하면 이항 연산자입니다. 할당 연산자의 선언은 다음을 제외하고 다른 모든 이항 연산자와 동일합니다.
+대입 연산자 ()는 엄격 하 게 **=** 말하면 이항 연산자입니다. 할당 연산자의 선언은 다음을 제외하고 다른 모든 이항 연산자와 동일합니다.
 
 - 비정적 멤버 함수여야 합니다. **Operator =** 를 비멤버 함수로 선언할 수 없습니다.
 - 파생 클래스가 상속하지 않습니다.

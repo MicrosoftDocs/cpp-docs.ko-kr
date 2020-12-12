@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4657'
 title: 컴파일러 경고(수준 1) C4657
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4657
 ms.assetid: eb750050-cea6-4ead-b80c-d5dcd4971cfc
-ms.openlocfilehash: 6cc049d99339a6f19ca86cd5c7a10f062a1451a9
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: b0a1af53c145495e4daacfa09247ea8cc6fb5697
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80199502"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318792"
 ---
 # <a name="compiler-warning-level-1-c4657"></a>컴파일러 경고(수준 1) C4657
 
@@ -25,10 +26,10 @@ ms.locfileid: "80199502"
 
 1. 데이터 형식을 오류가 발생하기 이전 상태로 다시 변경합니다.
 
-1. **디버그** 메뉴에서 **코드 변경 내용 적용**을 선택합니다.
+1. **디버그** 메뉴에서 **코드 변경 내용 적용** 을 선택합니다.
 
 ### <a name="to-remove-this-error-without-changing-your-source-code"></a>소스 코드를 변경하지 않고 이 오류를 제거하려면
 
-1. **디버그** 메뉴에서 **디버깅 중지**를 선택합니다.
+1. **디버그** 메뉴에서 **디버깅 중지** 를 선택합니다.
 
-1. **빌드** 메뉴에서 **빌드**를 선택합니다.
+1. **빌드** 메뉴에서 **빌드** 를 선택합니다.

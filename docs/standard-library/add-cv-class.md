@@ -1,4 +1,5 @@
 ---
+description: Add_cv 클래스에 대해 자세히 알아보세요.
 title: add_cv 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - add_cv class
 - add_cv
 ms.assetid: a5572c78-a097-45d7-b476-ed4876889dea
-ms.openlocfilehash: 0afeea71daf8358b2aeeefe8d368c135a54a6ad6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bc25efd879a27b3d3af2e5f4db8dd74fafa3fb45
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222630"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319933"
 ---
 # <a name="add_cv-class"></a>add_cv 클래스
 
@@ -35,7 +36,7 @@ using add_cv_t = typename add_cv<T>::type;
 
 ## <a name="remarks"></a>설명
 
-`add_cv<T>` `type` **`typedef`** *T* 가 이미 cv 한정자를가지고 있거나 참조 이거나 함수인 *T* 경우를 제외 하 고, 수정 된 형식의 인스턴스에는 [add_volatile](add-volatile-class.md) 및 [add_const](add-const-class.md)에 의해 수정 된 동일한 멤버가 있습니다.
+`add_cv<T>` `type` **`typedef`** *T* 가 이미 cv 한정자를가지고 있거나 참조 이거나 함수인  경우를 제외 하 고, 수정 된 형식의 인스턴스에는 [add_volatile](add-volatile-class.md) 및 [add_const](add-const-class.md)에 의해 수정 된 동일한 멤버가 있습니다.
 
 `add_cv_t<T>` 도우미 형식은 `add_cv<T>` 멤버 typedef `type`에 액세스하기 위한 바로 가기입니다.
 

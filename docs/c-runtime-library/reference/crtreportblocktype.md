@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _CrtReportBlockType'
 title: _CrtReportBlockType
 ms.date: 11/04/2016
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - _BLOCK_SUBTYPE macro
 - BLOCK_TYPE macro
 ms.assetid: 0f4b9da7-bebb-4956-9541-b2581640ec6b
-ms.openlocfilehash: 1fccb66632e832b491832cfac12fb1940bdf0f87
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b05b7fe73896068a05368df001ca5c80fedfb69a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213595"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319626"
 ---
 # <a name="_crtreportblocktype"></a>_CrtReportBlockType
 
@@ -53,13 +54,13 @@ int _CrtReportBlockType(
 *pBlock*<br/>
 유효한 디버그 힙 블록에 대한 포인터입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 유효한 디버그 힙 포인터를 전달 하는 경우 **_CrtReportBlockType** 함수는의 형식으로 블록 형식과 하위 형식을 반환 합니다 **`int`** . 잘못된 포인터를 전달한 경우 함수는 -1을 반환합니다.
 
 ## <a name="remarks"></a>설명
 
-**_CrtReportBlockType**에서 반환 된 형식과 하위 형식을 추출 하려면 매크로 **_BLOCK_TYPE** 를 사용 하 고 반환 값에 **_BLOCK_SUBTYPE** (둘 다 crtdbg.h에서 정의 됨)을 사용 합니다.
+**_CrtReportBlockType** 에서 반환 된 형식과 하위 형식을 추출 하려면 매크로 **_BLOCK_TYPE** 를 사용 하 고 반환 값에 **_BLOCK_SUBTYPE** (둘 다 crtdbg.h에서 정의 됨)을 사용 합니다.
 
 할당 블록 형식 및 사용 방법에 대 한 자세한 내용은 [디버그 힙의 블록 형식](/visualstudio/debugger/crt-debug-heap-details)을 참조 하세요.
 

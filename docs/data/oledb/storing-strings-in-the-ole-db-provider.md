@@ -1,22 +1,23 @@
 ---
+description: '자세한 정보: OLE DB 공급자에 문자열 저장'
 title: OLE DB 공급자에 문자열 저장
 ms.date: 05/09/2019
 helpviewer_keywords:
 - user records, editing
 ms.assetid: 36cb9635-067c-4cad-8f85-962f28026f6a
-ms.openlocfilehash: 1d6d2b73495d5ca6e275b13ed3c430f8169179d4
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: d5a0fc7160f09d1a8b385b83481cc6fa9009f582
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80079103"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97316702"
 ---
 # <a name="storing-strings-in-the-ole-db-provider"></a>OLE DB 공급자에 문자열 저장
 
 > [!NOTE]
 > Visual Studio 2019 이상에서는 ATL OLE DB 공급자 마법사를 사용할 수 없습니다.
 
-*ATL OLE DB 공급자 마법사*는 **Custom**RS.h에 `CWindowsFile`이라는 기본 사용자 레코드를 만듭니다. 두 문자열을 처리하려면 다음 코드와 같이 `CWindowsFile`을 수정합니다.
+**ATL OLE DB 공급자 마법사** 는 *Custom* RS.h에 `CWindowsFile`이라는 기본 사용자 레코드를 만듭니다. 두 문자열을 처리하려면 다음 코드와 같이 `CWindowsFile`을 수정합니다.
 
 ```cpp
 ////////////////////////////////////////////////////////////////////////
@@ -57,4 +58,4 @@ END_PROVIDER_COLUMN_MAP()
 
 ## <a name="see-also"></a>참고 항목
 
-[단순한 읽기 전용 공급자 구현](../../data/oledb/implementing-the-simple-read-only-provider.md)<br/>
+[간단한 Read-Only 공급자 구현](../../data/oledb/implementing-the-simple-read-only-provider.md)<br/>

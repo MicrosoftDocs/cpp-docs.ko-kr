@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3072'
 title: 컴파일러 오류 C3072
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3072
 ms.assetid: cdd5cb6b-c478-4698-adfa-c40188d34a18
-ms.openlocfilehash: bcf2548fbe1182f7f6c4bd966ca6aa9ef9f10089
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 02876a6983a47ce76f6e089bafde68af41034131
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212607"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97320281"
 ---
 # <a name="compiler-error-c3072"></a>컴파일러 오류 C3072
 

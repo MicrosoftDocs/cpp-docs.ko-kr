@@ -1,4 +1,5 @@
 ---
+description: '에 대 한 자세한 정보: safebuffers'
 title: safebuffer
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - __declspec keyword (C++), safebuffers
 - safebuffers __declspec keyword
 ms.assetid: 0b0dce14-4523-44d2-8070-5dd0fdabc618
-ms.openlocfilehash: 456e84cfba40a4219f44fe1549272621f79d09a2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8fefa12ffcbd81d58f4f5002e27751f03d7c1cb9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213244"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319354"
 ---
 # <a name="safebuffers"></a>safebuffer
 
@@ -37,7 +38,7 @@ __declspec( safebuffers )
 
 ## <a name="inline-functions"></a>인라인 함수
 
-*기본 함수* 는 [인라인](inline-functions-cpp.md) 키워드를 사용 하 여 *보조 함수의*복사본을 삽입할 수 있습니다. 키워드를 **`__declspec(safebuffers)`** 함수에 적용 하는 경우 해당 함수에 대해 버퍼 오버런 검색이 억제 됩니다. 그러나 인라이닝은 다음과 같은 방법으로 키워드에 영향을 줍니다 **`__declspec(safebuffers)`** .
+*기본 함수* 는 [인라인](inline-functions-cpp.md) 키워드를 사용 하 여 *보조 함수의* 복사본을 삽입할 수 있습니다. 키워드를 **`__declspec(safebuffers)`** 함수에 적용 하는 경우 해당 함수에 대해 버퍼 오버런 검색이 억제 됩니다. 그러나 인라이닝은 다음과 같은 방법으로 키워드에 영향을 줍니다 **`__declspec(safebuffers)`** .
 
 두 함수에 모두 **/gs** 컴파일러 옵션이 지정 되어 있지만 primary 함수는 키워드를 지정 한다고 가정 합니다 **`__declspec(safebuffers)`** . 보조 함수의 데이터 구조는 보안 검사를 가능하게 하기 때문에 이 함수는 보안 검사를 억제하지 않습니다. 이 경우 다음과 같습니다.
 
@@ -77,6 +78,6 @@ int wmain() {
 ## <a name="see-also"></a>참조
 
 [__declspec](../cpp/declspec.md)<br/>
-[C++ 키워드](../cpp/keywords-cpp.md)<br/>
+[키워드](../cpp/keywords-cpp.md)<br/>
 [inline, __inline, \__forceinline](inline-functions-cpp.md)<br/>
 [strict_gs_check](../preprocessor/strict-gs-check.md)

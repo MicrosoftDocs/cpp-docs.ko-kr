@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CWinFormsView 클래스'
 title: CWinFormsView 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - CWinFormsView [MFC], CWinFormsView
 - CWinFormsView [MFC], GetControl
 ms.assetid: d597e397-6529-469b-88f5-7f65a6b9e895
-ms.openlocfilehash: 3c247babd2ec1057f1e24b8132ed81727a0fd402
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 09dad434ebe0e0011fef5836196fd15e25390536
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040654"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318431"
 ---
 # <a name="cwinformsview-class"></a>CWinFormsView 클래스
 
@@ -31,19 +32,19 @@ class CWinFormsView : public CView;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CWinFormsView:: CWinFormsView](#cwinformsview)|`CWinFormsView` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CWinFormsView:: GetControl](#getcontrol)|Windows Forms 컨트롤에 대 한 포인터를 검색 합니다.|
 
 ### <a name="public-operators"></a>Public 연산자
 
-|Name|Description|
+|Name|설명|
 |----------|-|
 |[CWinFormsView:: operator 컨트롤 ^](#operator_control)|Windows Forms 컨트롤에 대 한 포인터로 형식을 캐스팅 합니다.|
 

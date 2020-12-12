@@ -1,4 +1,5 @@
 ---
+description: Add_volatile 클래스에 대해 자세히 알아보세요.
 title: add_volatile 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - add_volatile class
 - add_volatile
 ms.assetid: cde57277-d764-402d-841e-97611ebaab14
-ms.openlocfilehash: e8c213a116ff7a7d4218179f0e944ac4f84a75e5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6f138c9009d127efe2d640124d9af1e114eb0732
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230274"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319871"
 ---
 # <a name="add_volatile-class"></a>add_volatile 클래스
 
@@ -35,7 +36,7 @@ using add_volatile_t = typename add_volatile<T>::type;
 
 ## <a name="remarks"></a>설명
 
-의 인스턴스에는 `add_volatile<T>` **`typedef`** `type` *t* 가 참조, 함수 또는 휘발성 한정 형식인 경우 t이 고, 그렇지 *T* 않으면 t 인 멤버가 있습니다 **`volatile`** *T*. 별칭은 `add_volatile_t` 멤버에 액세스 하는 바로 가기입니다 **`typedef`** `type` .
+의 인스턴스에는 `add_volatile<T>` **`typedef`** `type` *t* 가 참조, 함수 또는 휘발성 한정 형식인 경우 t이 고, 그렇지  않으면 t 인 멤버가 있습니다 **`volatile`** . 별칭은 `add_volatile_t` 멤버에 액세스 하는 바로 가기입니다 **`typedef`** `type` .
 
 ## <a name="example"></a>예제
 

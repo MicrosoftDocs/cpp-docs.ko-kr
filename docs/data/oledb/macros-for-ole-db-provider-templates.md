@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: OLE DB 공급자 템플릿에 대 한 매크로'
 title: OLE DB 공급자 템플릿에 대한 매크로
 ms.date: 02/11/2019
 f1_keywords:
@@ -50,12 +51,12 @@ helpviewer_keywords:
 - END_SCHEMA_MAP macro
 - SCHEMA_ENTRY macro
 ms.assetid: 909482c5-64ab-4e52-84a9-1c07091db183
-ms.openlocfilehash: e72204102bfa47a9dd162499030a38c07bbfe46c
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 5e1e1137f49060273c60c73fc89c24c75fd2604d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504006"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317170"
 ---
 # <a name="macros-for-ole-db-provider-templates"></a>OLE DB 공급자 템플릿에 대한 매크로
 
@@ -63,7 +64,7 @@ OLE DB 템플릿 공급자 매크로는 다음 범주의 기능을 제공 합니
 
 ## <a name="property-set-map-macros"></a>속성 집합 맵 매크로
 
-| 속성 | 설명 |
+| Name | 설명 |
 |-|-|
 |[BEGIN_PROPERTY_SET](#begin_property_set)|속성 집합의 시작을 표시 합니다.|
 |[BEGIN_PROPERTY_SET_EX](#begin_property_set_ex)|속성 집합의 시작을 표시 합니다.|
@@ -77,7 +78,7 @@ OLE DB 템플릿 공급자 매크로는 다음 범주의 기능을 제공 합니
 
 ## <a name="column-map-macros"></a>열 맵 매크로
 
-| 속성 | 설명 |
+| Name | 설명 |
 |-|-|
 |[BEGIN_PROVIDER_COLUMN_MAP](#begin_provider_column_map)|공급자 열 맵 항목의 시작을 표시 합니다.|
 |[END_PROVIDER_COLUMN_MAP](#end_provider_column_map)|공급자 열 맵 항목의 끝을 표시 합니다.|
@@ -91,7 +92,7 @@ OLE DB 템플릿 공급자 매크로는 다음 범주의 기능을 제공 합니
 
 ## <a name="schema-rowset-macros"></a>스키마 행 집합 매크로
 
-| 속성 | 설명 |
+| Name | 설명 |
 |-|-|
 |[BEGIN_SCHEMA_MAP](#begin_schema_map)|스키마 맵의 시작을 표시 합니다.|
 |[END_SCHEMA_MAP](#end_schema_map)|스키마 맵의 끝을 표시 합니다.|
@@ -615,7 +616,7 @@ HRESULT Execute (LONG* pcRowsAffected,
     const VARIANT* rgRestrictions);
 ```
 
-이 `Execute` 함수는 행 집합의 데이터를 채웁니다. ATL 프로젝트 마법사는 다음의 세 가지 필수 OLE DB 스키마 각각에 대 한 프로젝트의 세 가지 초기 스키마 행 집합 *OLE DB 프로그래머 참조*에서 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) 에 설명 된 대로를 만듭니다.
+이 `Execute` 함수는 행 집합의 데이터를 채웁니다. ATL 프로젝트 마법사는 다음의 세 가지 필수 OLE DB 스키마 각각에 대 한 프로젝트의 세 가지 초기 스키마 행 집합 *OLE DB 프로그래머 참조* 에서 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) 에 설명 된 대로를 만듭니다.
 
 - DBSCHEMA_TABLES
 

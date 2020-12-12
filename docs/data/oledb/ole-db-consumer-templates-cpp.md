@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 소비자 템플릿 OLE DB (c + +)'
 title: OLE DB 소비자 템플릿(C++)
 ms.date: 10/22/2018
 helpviewer_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - OLE DB consumer templates [C++]
 - databases [C++], consumers
 ms.assetid: d3e42612-0bc0-4d65-9c32-0e8a7b219e82
-ms.openlocfilehash: d2697c955d2063bb075e06536b083c0b138aa4ac
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6aaf935234b8ec3396c97345ca7e38a0f8d806bf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62284048"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317157"
 ---
 # <a name="ole-db-consumer-templates-c"></a>OLE DB 소비자 템플릿(C++)
 
-OLE DB 소비자 템플릿은 OLE DB 버전 2.6 사양을 지원합니다. (OLE DB 소비자 템플릿은 OLE DB 2.6에 대해 테스트 하지만 사양에서 모든 인터페이스를 지원 하지 않습니다.) 소비자 템플릿은 OLE DB 소비자를 구현하기 위해 작성해야 하는 코드의 양을 최소화합니다. 이 템플릿은 다음과 같은 장점이 있습니다.
+OLE DB 소비자 템플릿은 OLE DB 버전 2.6 사양을 지원합니다. OLE DB 소비자 템플릿은 OLE DB 2.6에 대해 테스트 되지만 사양의 모든 인터페이스를 지원 하지는 않습니다. 소비자 템플릿은 OLE DB 소비자를 구현 하기 위해 작성 해야 하는 코드의 양을 최소화 합니다. 이 템플릿은 다음과 같은 장점이 있습니다.
 
 - OLE DB 기능에 쉽게 액세스하고 ATL 및 MFC와 간단하게 통합할 수 있습니다.
 
@@ -24,7 +25,7 @@ OLE DB 소비자 템플릿은 OLE DB 버전 2.6 사양을 지원합니다. (OLE 
 
 - OLE DB 프로그래밍을 위한 네이티브 C/C++ 데이터 형식을 제공합니다.
 
-OLE DB 템플릿을 사용하려면 C++ 템플릿, COM 및 OLE DB 인터페이스에 대해 잘 알고 있어야 합니다. OLE DB에 익숙하지 참조 [Microsoft OLE DB Driver for SQL Server](/sql/connect/oledb/oledb-driver-for-sql-server)합니다.
+OLE DB 템플릿을 사용하려면 C++ 템플릿, COM 및 OLE DB 인터페이스에 대해 잘 알고 있어야 합니다. OLE DB에 익숙하지 않은 경우 [Microsoft OLE DB Driver for SQL Server](/sql/connect/oledb/oledb-driver-for-sql-server)를 참조 하세요.
 
 OLE DB 템플릿은 새로운 개체 모델을 추가하는 대신 기존 OLE DB 개체 모델을 지원합니다. OLE DB 소비자 템플릿의 최상위 계층 클래스는 OLE DB 사양에 정의된 구성 요소와 유사합니다. OLE DB 소비자 템플릿의 디자인에는 행 집합의 여러 접근자와 같은 고급 기능이 포함됩니다. 템플릿과 다중 상속을 사용하면 라이브러리가 작고 유연해집니다.
 
@@ -32,7 +33,7 @@ OLE DB 템플릿은 새로운 개체 모델을 추가하는 대신 기존 OLE DB
 
 소비자는 다음 항목에 설명되어 있는 여러 종류의 개체를 사용합니다.
 
-- [데이터 소스 및 세션](../../data/oledb/data-sources-and-sessions.md)
+- [데이터 원본 및 세션](../../data/oledb/data-sources-and-sessions.md)
 
 - [접근자 및 행 집합](../../data/oledb/accessors-and-rowsets.md)
 
@@ -56,9 +57,9 @@ OLE DB 소비자는 지역 변수로 데이터베이스 테이블의 열을 바�
 
 - [일반 OLE DB 소비자 시나리오(예제)](../../data/oledb/working-with-ole-db-consumer-templates.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [OLE DB 프로그래밍](../../data/oledb/ole-db-programming.md)<br/>
 [데이터 액세스](../data-access-in-cpp.md)<br/>
 [OLE DB SDK 설명서](/previous-versions/windows/desktop/ms722784(v=vs.85))<br/>
-[SQL Server 용 Microsoft OLE DB 드라이버](/sql/connect/oledb/oledb-driver-for-sql-server)
+[SQL Server용 Microsoft OLE DB 드라이버](/sql/connect/oledb/oledb-driver-for-sql-server)

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _CrtGetAllocHook'
 title: _CrtGetAllocHook
 ms.date: 11/04/2016
 api_name:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - _CrtGetAllocHook function
 - CrtGetAllocHook function
 ms.assetid: 036acf7c-547a-4b3f-a636-80451070d7ed
-ms.openlocfilehash: 769621e92bf5f99f76f71b368a3b9a5cd0f79fd0
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 997e3a03f0c9b56fda3a0fd89daf606a652136c5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70942414"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319767"
 ---
 # <a name="_crtgetallochook"></a>_CrtGetAllocHook
 
@@ -42,7 +43,7 @@ C 런타임 디버그 메모리 할당 프로세스에 연결하기 위해 현�
 _CRT_ALLOC_HOOK _CrtGetAllocHook( void );
 ```
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 
 현재 정의된 할당 후크 함수를 반환합니다.
 
@@ -58,13 +59,13 @@ _CRT_ALLOC_HOOK _CrtGetAllocHook( void );
 |-------------|---------------------|
 |**_CrtGetAllocHook**|\<crtdbg.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="libraries"></a>라이브러리
 
 [C 런타임 라이브러리](../../c-runtime-library/crt-library-features.md)의 디버그 버전만 해당됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [디버그 루틴](../../c-runtime-library/debug-routines.md)<br/>
 [_CrtSetAllocHook](crtsetallochook.md)<br/>

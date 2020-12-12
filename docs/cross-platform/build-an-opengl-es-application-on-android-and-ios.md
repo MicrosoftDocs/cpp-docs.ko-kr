@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: Android 및 iOS에서 OpenGL ES 응용 프로그램 빌드'
 title: Android 및 iOS에서 OpenGL ES 애플리케이션 빌드
 ms.date: 10/09/2019
 ms.assetid: 76a67886-df57-4a81-accb-2e3c2eaf607b
-ms.openlocfilehash: 278fd66202332417f7663542f0d66a3ec545b715
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: c840e9bbfd450c412ff7c0646127c157a3af565a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924293"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319419"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Android 및 iOS에서 OpenGL ES 애플리케이션 빌드
 
@@ -59,7 +60,7 @@ IOS 앱을 빌드 및 테스트 하려면 Mac 컴퓨터가 필요 합니다. 설
 
 - `MyOpenGLESApp.Android.NativeActivity`에는 Android에서 앱을 Native Activity로 구현하는 참조 및 글루 코드가 포함되어 있습니다. 글루 코드에서의 진입점은 `MyOpenGLESApp.Shared`의 공용 공유 코드를 포함하는 *main.cpp* 에서 구현됩니다. 미리 컴파일된 헤더는 *.pch. h* 에 있습니다. 이 Native Activity 앱 프로젝트는 공유 라이브러리 *.so* 파일로 컴파일되며 `MyOpenGLESApp.Android.Packaging` 프로젝트에서 이 라이브러리를 선택합니다.
 
-- `MyOpenGLESApp.iOS.StaticLibrary`는 `MyOpenGLESApp.Shared`의 공유 코드를 포함하는 iOS 정적 라이브러리( *.a* ) 파일을 만듭니다. `MyOpenGLESApp.iOS.Application` 프로젝트에서 만든 앱에 연결되어 있습니다.
+- `MyOpenGLESApp.iOS.StaticLibrary`는 `MyOpenGLESApp.Shared`의 공유 코드를 포함하는 iOS 정적 라이브러리(*.a*) 파일을 만듭니다. `MyOpenGLESApp.iOS.Application` 프로젝트에서 만든 앱에 연결되어 있습니다.
 
 - `MyOpenGLESApp.Shared`에는 플랫폼 간에 작동하는 공유 코드가 포함됩니다. 플랫폼별 코드의 조건부 컴파일에 전처리기 매크로를 사용합니다. 공유 코드는 `MyOpenGLESApp.Android.NativeActivity` 및 `MyOpenGLESApp.iOS.StaticLibrary`에서 모두 프로젝트 참조에 의해 선택됩니다.
 

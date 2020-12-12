@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: false (c + +)'
 title: false (C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - false keyword [C++]
 ms.assetid: cc13aec5-1f02-4d38-8dbf-5473ea2b354f
-ms.openlocfilehash: d6162bdde3dea0d245a0c83c1d52b06003fee16c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 73f1f07c858f0a578cc2d3135e560cc8e0cb9d32
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227493"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319458"
 ---
 # <a name="false-c"></a>false (C++)
 
@@ -39,4 +40,4 @@ int main()
 
 ## <a name="see-also"></a>참고 항목
 
-[C++ 키워드](../cpp/keywords-cpp.md)
+[키워드](../cpp/keywords-cpp.md)

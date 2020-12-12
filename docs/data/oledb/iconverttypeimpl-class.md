@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: IConvertTypeImpl 클래스'
 title: IConvertTypeImpl 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - IConvertTypeImpl class
 - CanConvert method
 ms.assetid: 7f81e79e-7d3f-4cbe-b93c-d632a94b15f6
-ms.openlocfilehash: b4309e794a83e6c13dcf0051791cd1762a6d5012
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5ac0e70432dbb81bd3f8aa30fd2adb9cb9e3fc30
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845564"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317568"
 ---
 # <a name="iconverttypeimpl-class"></a>IConvertTypeImpl 클래스
 
@@ -68,7 +69,7 @@ STDMETHOD(CanConvert)(DBTYPE wFromType,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [가 iconverttype:: canconvert](/previous-versions/windows/desktop/ms711224(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [가 iconverttype:: canconvert](/previous-versions/windows/desktop/ms711224(v=vs.85)) 를 참조 하세요.
 
 ### <a name="remarks"></a>설명
 

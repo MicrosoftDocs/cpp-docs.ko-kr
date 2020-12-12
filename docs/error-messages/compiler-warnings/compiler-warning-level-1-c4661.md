@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4661'
 title: 컴파일러 경고(수준 1) C4661
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4661
 ms.assetid: 603bb8b7-356d-4eef-924b-64d769bac5bd
-ms.openlocfilehash: 43a3287787f831db23423412a9baf959929adfae
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 401f9a7229b4eec1f6484c49b6d2b1a18d8c49f8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80199463"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318834"
 ---
 # <a name="compiler-warning-level-1-c4661"></a>컴파일러 경고(수준 1) C4661
 

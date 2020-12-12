@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2877'
 title: 컴파일러 오류 C2877
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2877
 ms.assetid: 0b54837e-fcae-4d90-9658-623250435e24
-ms.openlocfilehash: b28a301b757e41e6ba238f361520bc89e0744eba
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: fd5a122cfed34c59e4a597bb6371a026a90c2ebb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74736323"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97320488"
 ---
 # <a name="compiler-error-c2877"></a>컴파일러 오류 C2877
 

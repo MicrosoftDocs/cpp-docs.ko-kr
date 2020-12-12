@@ -1,4 +1,5 @@
 ---
+description: Add_rvalue_reference 클래스에 대해 자세히 알아보세요.
 title: add_rvalue_reference 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - add_rvalue_reference Class
 ms.assetid: 76b0cb7c-1031-45d0-b409-f03ab0297580
-ms.openlocfilehash: 6d7cc1d45ed3b963de0a0a004c1696ddbf0af440
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: f4f5b58ddd2aa1e02b3023a27ef2feba83624326
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84623927"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319884"
 ---
 # <a name="add_rvalue_reference-class"></a>add_rvalue_reference 클래스
 
@@ -34,7 +35,7 @@ using add_rvalue_reference_t = typename add_rvalue_reference<T>::type;
 
 ## <a name="remarks"></a>설명
 
-클래스에는 `add_rvalue_reference` `type` 템플릿 매개 변수 *T*에 대 한 rvalue 참조 형식의 별칭인 라는 멤버가 있습니다. 참조 축소의 의미 체계는 비 개체 및 비 함수 형식 *t*의 경우 t `T&&` 가 *t*임을 의미 합니다. 예를 들어 *T* 가 lvalue 참조 형식이 면 `add_rvalue_reference<T>::type` 는 rvalue 참조가 아닌 lvalue 참조 형식입니다.
+클래스에는 `add_rvalue_reference` `type` 템플릿 매개 변수 *T* 에 대 한 rvalue 참조 형식의 별칭인 라는 멤버가 있습니다. 참조 축소의 의미 체계는 비 개체 및 비 함수 형식 *t* 의 경우 t `T&&` 가 *t* 임을 의미 합니다. 예를 들어 *T* 가 lvalue 참조 형식이 면 `add_rvalue_reference<T>::type` 는 rvalue 참조가 아닌 lvalue 참조 형식입니다.
 
 편의상는 \<type_traits> 의 멤버를 별칭으로 하는 도우미 템플릿를 정의 `add_rvalue_reference_t` `type` `add_rvalue_reference` 합니다.
 

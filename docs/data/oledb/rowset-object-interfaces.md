@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 행 집합 개체 인터페이스'
 title: Rowset 개체 인터페이스
 ms.date: 10/24/2018
 helpviewer_keywords:
@@ -8,16 +9,16 @@ helpviewer_keywords:
 - OLE DB provider templates, object interfaces
 - interfaces, list of
 ms.assetid: 0d7a5d48-2fe4-434f-a84b-157c1fdc3494
-ms.openlocfilehash: d9c2c61714a98d9de09d8657352a14f296e35a58
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: fc7cbb0ee7c15cc7414144334018afc93888da01
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "79544545"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97316858"
 ---
 # <a name="rowset-object-interfaces"></a>Rowset 개체 인터페이스
 
-다음 표는 OLE DB가 행 집합 개체에 대해 정의한 필수 인터페이스와 선택적 인터페이스를 보여 줍니다.
+다음 표에서는 행 집합 개체에 대해 OLE DB에 의해 정의 된 필수 및 선택적 인터페이스를 보여 줍니다.
 
 |인터페이스|필수 여부|OLE DB 템플릿에서 구현 됩니까?|
 |---------------|---------------|--------------------------------------|
@@ -46,8 +47,8 @@ ms.locfileid: "79544545"
 |[ISupportErrorInfo](/previous-versions/windows/desktop/ms715816(v=vs.85))|선택 사항|예|
 |[IRowsetBookmark](/previous-versions/windows/desktop/ms714246(v=vs.85))|선택 사항|아니요|
 
-마법사에서 생성 된 행 집합 개체는 상속을 통해 `IAccessor`, `IRowset`및 `IRowsetInfo`을 구현 합니다. `IAccessorImpl`은 출력 열을 모두 바인딩합니다. `IRowset` 인터페이스는 행과 데이터 페치를 처리 합니다. `IRowsetInfo` 인터페이스는 행 집합 속성을 처리 합니다.
+마법사에서 생성 된 행 집합 개체는 `IAccessor` 상속을 통해, 및를 구현 합니다 `IRowset` `IRowsetInfo` . 는 `IAccessorImpl` 출력 열을 모두 바인딩합니다. `IRowset`인터페이스는 행과 데이터 페치를 처리 합니다. `IRowsetInfo`인터페이스는 행 집합 속성을 처리 합니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)<br/>
+[OLE DB 공급자 템플릿 아키텍처](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

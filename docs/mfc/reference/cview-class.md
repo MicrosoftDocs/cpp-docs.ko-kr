@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CView 클래스'
 title: CView 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -52,12 +53,12 @@ helpviewer_keywords:
 - CView [MFC], OnPrint
 - CView [MFC], OnUpdate
 ms.assetid: 9cff3c56-7564-416b-b9a4-71a9254ed755
-ms.openlocfilehash: 4c9623d34320b4489e6c086147cfff1038e95162
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8bb45bff3f63c2c1f9fd01d9c50091f5a3117d74
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222890"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318483"
 ---
 # <a name="cview-class"></a>CView 클래스
 
@@ -163,7 +164,7 @@ class AFX_NOVTABLE CView : public CWnd
 
 **헤더:** afxwin.h
 
-## <a name="cviewcview"></a><a name="cview"></a>CView:: CView
+## <a name="cviewcview"></a><a name="cview"></a> CView:: CView
 
 `CView` 개체를 생성합니다.
 
@@ -175,7 +176,7 @@ CView();
 
 프레임 워크는 새 프레임 창이 만들어지거나 창이 분할 될 때 생성자를 호출 합니다. [Oninitialupdate](#oninitialupdate) 멤버 함수를 재정의 하 여 문서가 연결 된 후 뷰를 초기화 합니다.
 
-## <a name="cviewdoprepareprinting"></a><a name="doprepareprinting"></a>CView::D oPreparePrinting
+## <a name="cviewdoprepareprinting"></a><a name="doprepareprinting"></a> CView::D oPreparePrinting
 
 [Onprepareprinting](#onprepareprinting) 재정의에서이 함수를 호출 하 여 인쇄 대화 상자를 호출 하 고 프린터 장치 컨텍스트를 만듭니다.
 
@@ -188,7 +189,7 @@ BOOL DoPreparePrinting(CPrintInfo* pInfo);
 *pInfo*<br/>
 현재 인쇄 작업을 설명하는 [CPrintInfo](../../mfc/reference/cprintinfo-structure.md) 구조체를 가리킵니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 인쇄 또는 인쇄 미리 보기를 시작할 수 있는 경우 0이 아님 작업이 취소 된 경우 0입니다.
 
@@ -198,7 +199,7 @@ BOOL DoPreparePrinting(CPrintInfo* pInfo);
 
 파일을 미리 보는 경우이 함수는 현재 프린터 설정을 사용 하 여 프린터 장치 컨텍스트를 만듭니다. 이 장치 컨텍스트는 미리 보기 중에 프린터를 시뮬레이션 하는 데 사용 됩니다.
 
-## <a name="cviewgetdocument"></a><a name="getdocument"></a>CView:: GetDocument
+## <a name="cviewgetdocument"></a><a name="getdocument"></a> CView:: GetDocument
 
 뷰 문서에 대 한 포인터를 가져오려면이 함수를 호출 합니다.
 
@@ -206,7 +207,7 @@ BOOL DoPreparePrinting(CPrintInfo* pInfo);
 CDocument* GetDocument() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 뷰와 연결 된 [CDocument](../../mfc/reference/cdocument-class.md) 개체에 대 한 포인터입니다. 뷰가 문서에 연결 되지 않은 경우 NULL입니다.
 
@@ -214,7 +215,7 @@ CDocument* GetDocument() const;
 
 이렇게 하면 문서의 멤버 함수를 호출할 수 있습니다.
 
-## <a name="cviewisselected"></a><a name="isselected"></a>CView:: IsSelected
+## <a name="cviewisselected"></a><a name="isselected"></a> CView:: IsSelected
 
 지정 된 문서 항목이 선택 되어 있는지 여부를 확인 하기 위해 프레임 워크에서 호출 됩니다.
 
@@ -227,7 +228,7 @@ virtual BOOL IsSelected(const CObject* pDocItem) const;
 *pDocItem*<br/>
 테스트 중인 문서 항목을 가리킵니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 지정 된 문서 항목이 선택 된 경우 0이 아닌 값입니다. 그렇지 않으면 0입니다.
 
@@ -235,7 +236,7 @@ virtual BOOL IsSelected(const CObject* pDocItem) const;
 
 이 함수의 기본 구현에서는 FALSE를 반환 합니다. [Cdocitem](../../mfc/reference/cdocitem-class.md) 개체를 사용 하 여 선택 항목을 구현 하는 경우이 함수를 재정의 합니다. 뷰에 OLE 항목이 포함 되어 있으면이 함수를 재정의 해야 합니다.
 
-## <a name="cviewonactivateframe"></a><a name="onactivateframe"></a>CView:: OnActivateFrame
+## <a name="cviewonactivateframe"></a><a name="onactivateframe"></a> CView:: OnActivateFrame
 
 뷰를 포함 하는 프레임 창이 활성화 또는 비활성화 될 때 프레임 워크에서 호출 됩니다.
 
@@ -263,7 +264,7 @@ virtual void OnActivateFrame(
 
 뷰와 연결 된 프레임 창이 활성화 또는 비활성화 되는 경우 특별 한 처리를 수행 하려면이 멤버 함수를 재정의 합니다. 예를 들어, [CFormView](../../mfc/reference/cformview-class.md) 는 포커스가 있는 컨트롤을 저장 하 고 복원할 때이 재정의를 수행 합니다.
 
-## <a name="cviewonactivateview"></a><a name="onactivateview"></a>CView:: OnActivateView
+## <a name="cviewonactivateview"></a><a name="onactivateview"></a> CView:: OnActivateView
 
 뷰가 활성화 또는 비활성화 될 때 프레임 워크에서 호출 됩니다.
 
@@ -293,7 +294,7 @@ virtual void OnActivateView(
 
 이러한 매개 변수는 [CFrameWnd:: GetActiveView](../../mfc/reference/cframewnd-class.md#getactiveview) 에서 반환 하는 것과 다른 뷰를 사용 하 여 [CFrameWnd:: setactiveview](../../mfc/reference/cframewnd-class.md#setactiveview) 를 호출 하는 경우에 다릅니다. 이는 분할자 창에서 가장 자주 발생 합니다.
 
-## <a name="cviewonbeginprinting"></a><a name="onbeginprinting"></a>CView:: OnBeginPrinting
+## <a name="cviewonbeginprinting"></a><a name="onbeginprinting"></a> CView:: OnBeginPrinting
 
 `OnPreparePrinting` 이 호출된 후 인쇄 또는 인쇄 미리 보기 작업을 시작할 때 프레임워크에서 호출됩니다.
 
@@ -317,7 +318,7 @@ virtual void OnBeginPrinting(
 
 또한 이 함수를 사용하여 프린터 디바이스 컨텍스트의 속성에 따라 초기화를 수행할 수 있습니다. 예를 들어 문서를 인쇄하는 데 필요한 페이지 수는 사용자가 인쇄 대화 상자에서 지정한 설정(예: 페이지 길이)에 따라 다를 수 있습니다. 이러한 상황에서는 일반적인 경우와 달리 [OnPreparePrinting](#onprepareprinting) 멤버 함수에서 문서 길이를 지정할 수 없습니다. 대화 상자 설정에 따라 프린터 디바이스 컨텍스트가 만들어질 때까지 기다려야 합니다. [OnBeginPrinting](#onbeginprinting) 은 프린터 디바이스 컨텍스트를 나타내는 [CDC](../../mfc/reference/cdc-class.md) 개체에 대한 액세스를 제공하는 첫 번째 재정의 가능 함수이므로 이 함수에서 문서 길이를 설정할 수 있습니다. 이때까지 문서 길이를 지정하지 않으면 인쇄 미리 보기 중에 스크롤 막대가 표시되지 않습니다.
 
-## <a name="cviewondragenter"></a><a name="ondragenter"></a>CView:: System.windows.uielement.ondragenter
+## <a name="cviewondragenter"></a><a name="ondragenter"></a> CView:: System.windows.uielement.ondragenter
 
 마우스를 놓기 대상 창의 스크롤이 아닌 영역에 처음으로 가져갈 때 프레임 워크에서 호출 됩니다.
 
@@ -339,9 +340,9 @@ virtual DROPEFFECT OnDragEnter(
 *까지*<br/>
 뷰의 클라이언트 영역을 기준으로 하는 현재 마우스 위치입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-사용자가이 위치에서 개체를 삭제 한 경우 발생 하는 삭제 유형을 나타내는 DROPEFFECT 열거 형식의 값입니다. Drop 형식은 일반적으로 *Dwkeystate*로 표시 되는 현재 키 상태에 따라 달라 집니다. DROPEFFECT 값에 대 한 keystates 표준 매핑은 다음과 같습니다.
+사용자가이 위치에서 개체를 삭제 한 경우 발생 하는 삭제 유형을 나타내는 DROPEFFECT 열거 형식의 값입니다. Drop 형식은 일반적으로 *Dwkeystate* 로 표시 되는 현재 키 상태에 따라 달라 집니다. DROPEFFECT 값에 대 한 keystates 표준 매핑은 다음과 같습니다.
 
 - 이 창에서 데이터 개체를 삭제할 수 DROPEFFECT_NONE.
 
@@ -359,7 +360,7 @@ virtual DROPEFFECT OnDragEnter(
 
 [System.windows.uielement.ondragover](#ondragover) 멤버 함수에 대 한 이후 호출을 준비 하려면이 함수를 재정의 합니다. 나중에 멤버 함수에서 사용할 수 있도록 데이터 개체에서 필요한 모든 데이터를 검색 해야 합니다 `OnDragOver` . 또한 사용자에 게 시각적 피드백을 제공 하기 위해 뷰를 업데이트 해야 합니다. 자세한 내용은 [OLE 끌어서 놓기: 놓기 대상 구현](../../mfc/drag-and-drop-ole.md#implement-a-drop-target)문서를 참조 하세요.
 
-## <a name="cviewondragleave"></a><a name="ondragleave"></a>CView:: System.windows.uielement.ondragleave
+## <a name="cviewondragleave"></a><a name="ondragleave"></a> CView:: System.windows.uielement.ondragleave
 
 마우스를 해당 창에 대 한 올바른 끌어 놓기 영역 밖으로 이동할 때 끌기 작업을 수행 하는 동안 프레임 워크에서 호출 됩니다.
 
@@ -371,7 +372,7 @@ virtual void OnDragLeave();
 
 개체를 끌어서 놓는 동안 시각적 사용자 의견을 제거 하는 등의 방법으로 [system.windows.uielement.ondragenter](#ondragenter) 또는 [system.windows.uielement.ondragover](#ondragover) 호출 중에 수행 된 작업을 모두 정리 해야 하는 경우이 함수를 재정의 합니다.
 
-## <a name="cviewondragover"></a><a name="ondragover"></a>CView:: System.windows.uielement.ondragover
+## <a name="cviewondragover"></a><a name="ondragover"></a> CView:: System.windows.uielement.ondragover
 
 놓기 대상 창 위로 마우스를 이동할 때 끌기 작업을 수행 하는 동안 프레임 워크에서 호출 됩니다.
 
@@ -393,9 +394,9 @@ virtual DROPEFFECT OnDragOver(
 *까지*<br/>
 뷰 클라이언트 영역을 기준으로 하는 현재 마우스 위치입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-사용자가이 위치에서 개체를 삭제 한 경우 발생 하는 삭제 유형을 나타내는 DROPEFFECT 열거 형식의 값입니다. 삭제 유형은 *Dwkeystate*로 표시 되는 현재 키 상태에 따라 달라 집니다. DROPEFFECT 값에 대 한 keystates 표준 매핑은 다음과 같습니다.
+사용자가이 위치에서 개체를 삭제 한 경우 발생 하는 삭제 유형을 나타내는 DROPEFFECT 열거 형식의 값입니다. 삭제 유형은 *Dwkeystate* 로 표시 되는 현재 키 상태에 따라 달라 집니다. DROPEFFECT 값에 대 한 keystates 표준 매핑은 다음과 같습니다.
 
 - 이 창에서 데이터 개체를 삭제할 수 DROPEFFECT_NONE.
 
@@ -413,7 +414,7 @@ virtual DROPEFFECT OnDragOver(
 
 끌기 작업을 수행 하는 동안 사용자에 게 시각적 피드백을 제공 하려면이 함수를 재정의 합니다. 이 함수는 지속적으로 호출 되기 때문에 포함 된 모든 코드는 가능한 한 최적화 되어야 합니다. 자세한 내용은 [OLE 끌어서 놓기: 놓기 대상 구현](../../mfc/drag-and-drop-ole.md#implement-a-drop-target)문서를 참조 하세요.
 
-## <a name="cviewondragscroll"></a><a name="ondragscroll"></a>CView:: OnDragScroll
+## <a name="cviewondragscroll"></a><a name="ondragscroll"></a> CView:: OnDragScroll
 
 [System.windows.uielement.ondragenter](#ondragenter) 또는 [system.windows.uielement.ondragover](#ondragover) 를 호출 하 여 해당 지점이 스크롤 영역에 있는지 여부를 확인 하기 전에 프레임 워크에서 호출 됩니다.
 
@@ -431,9 +432,9 @@ virtual DROPEFFECT OnDragScroll(
 *까지*<br/>
 화면에 상대적인 커서 위치 (픽셀)를 포함 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-사용자가이 위치에서 개체를 삭제 한 경우 발생 하는 삭제 유형을 나타내는 DROPEFFECT 열거 형식의 값입니다. Drop 형식은 일반적으로 *Dwkeystate*로 표시 되는 현재 키 상태에 따라 달라 집니다. DROPEFFECT 값에 대 한 keystates 표준 매핑은 다음과 같습니다.
+사용자가이 위치에서 개체를 삭제 한 경우 발생 하는 삭제 유형을 나타내는 DROPEFFECT 열거 형식의 값입니다. Drop 형식은 일반적으로 *Dwkeystate* 로 표시 되는 현재 키 상태에 따라 달라 집니다. DROPEFFECT 값에 대 한 keystates 표준 매핑은 다음과 같습니다.
 
 - 이 창에서 데이터 개체를 삭제할 수 DROPEFFECT_NONE.
 
@@ -451,7 +452,7 @@ virtual DROPEFFECT OnDragScroll(
 
 이 이벤트에 특별 한 동작을 제공 하려는 경우이 함수를 재정의 합니다. 기본 구현은 각 창의 테두리 안쪽에 있는 기본 스크롤 영역으로 커서를 끌 때 자동으로 창을 스크롤합니다. 자세한 내용은 [OLE 끌어서 놓기: 놓기 대상 구현](../../mfc/drag-and-drop-ole.md#implement-a-drop-target)문서를 참조 하세요.
 
-## <a name="cviewondraw"></a><a name="ondraw"></a>CView:: OnDraw
+## <a name="cviewondraw"></a><a name="ondraw"></a> CView:: OnDraw
 
 문서 이미지를 렌더링 하기 위해 프레임 워크에서 호출 됩니다.
 
@@ -472,7 +473,7 @@ virtual void OnDraw(CDC* pDC) = 0;
 
 그리기를 최적화 하려면 장치 컨텍스트의 [RectVisible](../../mfc/reference/cdc-class.md#rectvisible) 멤버 함수를 호출 하 여 지정 된 사각형을 그릴지 여부를 확인 합니다. 일반 화면 표시와 인쇄를 구분 해야 하는 경우 장치 컨텍스트의 [IsPrinting](../../mfc/reference/cdc-class.md#isprinting) 멤버 함수를 호출 합니다.
 
-## <a name="cviewondrop"></a><a name="ondrop"></a>CView:: OnDrop
+## <a name="cviewondrop"></a><a name="ondrop"></a> CView:: OnDrop
 
 사용자가 유효한 놓기 대상에 대해 데이터 개체를 해제할 때 프레임 워크에서 호출 됩니다.
 
@@ -499,7 +500,7 @@ virtual BOOL OnDrop(
 *까지*<br/>
 뷰 클라이언트 영역을 기준으로 하는 현재 마우스 위치입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 삭제에 성공 하면 0이 아닌 값이 고, 그렇지 않으면 0입니다.
 
@@ -512,7 +513,7 @@ virtual BOOL OnDrop(
 > [!NOTE]
 > 이 뷰 클래스에 [Ondropex](#ondropex) 에 대 한 재정의가 있는 경우 프레임 워크는이 함수를 호출 하지 않습니다.
 
-## <a name="cviewondropex"></a><a name="ondropex"></a>CView:: OnDropEx
+## <a name="cviewondropex"></a><a name="ondropex"></a> CView:: OnDropEx
 
 사용자가 유효한 놓기 대상에 대해 데이터 개체를 해제할 때 프레임 워크에서 호출 됩니다.
 
@@ -538,9 +539,9 @@ Drop 소스가 지 원하는 drop 효과 목록입니다. 놓기 효과 값은 �
 *까지*<br/>
 뷰 클라이언트 영역을 기준으로 하는 현재 마우스 위치입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-*Point*로 지정 된 위치에서 삭제 시도로 인해 발생 하는 낙하 효과입니다. 이 값은 *dropEffectList*에 지정 된 값 중 하나 여야 합니다. Drop 효과는 설명 섹션에 설명 되어 있습니다.
+*Point* 로 지정 된 위치에서 삭제 시도로 인해 발생 하는 낙하 효과입니다. 이 값은 *dropEffectList* 에 지정 된 값 중 하나 여야 합니다. Drop 효과는 설명 섹션에 설명 되어 있습니다.
 
 ### <a name="remarks"></a>설명
 
@@ -554,11 +555,11 @@ Drop 소스가 지 원하는 drop 효과 목록입니다. 놓기 효과 값은 �
 
   - *DropList* 를 검사 하 여 놓기 원본에서 지 원하는 놓기 효과를 확인 합니다. 팝업 메뉴 에서만 이러한 작업을 사용 하도록 설정 합니다.
 
-  - [Setmenudefaultitem](/windows/win32/api/winuser/nf-winuser-setmenudefaultitem) 을 사용 하 여 *dropdefault*를 기준으로 기본 동작을 설정 합니다.
+  - [Setmenudefaultitem](/windows/win32/api/winuser/nf-winuser-setmenudefaultitem) 을 사용 하 여 *dropdefault* 를 기준으로 기본 동작을 설정 합니다.
 
   - 마지막으로 팝업 메뉴에서 사용자 선택에 표시 된 작업을 수행 합니다.
 
-- 마우스 오른쪽 단추를 다운 하지 않으면 재정의에서이를 표준 drop 요청으로 처리 해야 합니다. *Dropdefault*에 지정 된 drop 효과를 사용 합니다. 또는 재정의에서 더미 값 (-1)을 반환 하 여이 drop 작업을 처리 함을 나타낼 수 있습니다 `OnDrop` .
+- 마우스 오른쪽 단추를 다운 하지 않으면 재정의에서이를 표준 drop 요청으로 처리 해야 합니다. *Dropdefault* 에 지정 된 drop 효과를 사용 합니다. 또는 재정의에서 더미 값 (-1)을 반환 하 여이 drop 작업을 처리 함을 나타낼 수 있습니다 `OnDrop` .
 
 *Pdataobject* 를 사용 하 여 `COleDataObject` 지정 된 지점에서 삭제 된 클립보드 데이터 형식 및 데이터를 검사 합니다.
 
@@ -576,7 +577,7 @@ Drop effects는 drop 작업과 관련 된 동작을 설명 합니다. 다음 dro
 
 기본 메뉴 명령을 설정 하는 방법에 대 한 자세한 내용은 Windows SDK의 [Setmenudefaultitem](/windows/win32/api/winuser/nf-winuser-setmenudefaultitem) 및이 볼륨의 [CMenu:: GetSafeHmenu](../../mfc/reference/cmenu-class.md#getsafehmenu) 을 참조 하세요.
 
-## <a name="cviewonendprinting"></a><a name="onendprinting"></a>CView:: OnEndPrinting
+## <a name="cviewonendprinting"></a><a name="onendprinting"></a> CView:: OnEndPrinting
 
 문서를 인쇄 하거나 미리 본 후 프레임 워크에서 호출 됩니다.
 
@@ -598,7 +599,7 @@ virtual void OnEndPrinting(
 
 이 함수의 기본 구현은 아무 작업도 수행하지 않습니다. [Onbeginprinting](#onbeginprinting) 멤버 함수에서 할당 한 모든 GDI 리소스를 해제 하려면이 함수를 재정의 합니다.
 
-## <a name="cviewonendprintpreview"></a><a name="onendprintpreview"></a>CView:: OnEndPrintPreview
+## <a name="cviewonendprintpreview"></a><a name="onendprintpreview"></a> CView:: OnEndPrintPreview
 
 사용자가 인쇄 미리 보기 모드를 종료할 때 프레임 워크에서 호출 됩니다.
 
@@ -630,7 +631,7 @@ virtual void OnEndPrintPreview(
 
 일반적으로 함수 끝의 재정의에서의 기본 클래스 버전을 항상 호출 `OnEndPrintPreview` 합니다.
 
-## <a name="cviewoninitialupdate"></a><a name="oninitialupdate"></a>CView:: OnInitialUpdate
+## <a name="cviewoninitialupdate"></a><a name="oninitialupdate"></a> CView:: OnInitialUpdate
 
 뷰가 문서에 처음 연결 된 후 뷰가 처음 표시 되기 전에 프레임 워크에서 호출 됩니다.
 
@@ -642,7 +643,7 @@ virtual void OnInitialUpdate();
 
 이 함수의 기본 구현은 힌트 정보 없이 [OnUpdate](#onupdate) 멤버 함수를 호출 합니다. 즉, *lhint* 매개 변수에 0의 기본값을 사용 하 고 *PHINT* 매개 변수에는 NULL을 사용 합니다. 문서에 대 한 정보를 필요로 하는 일회성 초기화를 수행 하려면이 함수를 재정의 합니다. 예를 들어 응용 프로그램에 고정 크기의 문서가 있는 경우이 함수를 사용 하 여 문서 크기에 따라 뷰의 스크롤 제한을 초기화할 수 있습니다. 응용 프로그램에서 가변 크기 문서를 지 원하는 경우 [OnUpdate](#onupdate) 를 사용 하 여 문서가 변경 될 때마다 스크롤 제한을 업데이트 합니다.
 
-## <a name="cviewonpreparedc"></a><a name="onpreparedc"></a>CView:: OnPrepareDC
+## <a name="cviewonpreparedc"></a><a name="onpreparedc"></a> CView:: OnPrepareDC
 
 화면 표시에 대해 [OnDraw](#ondraw) 멤버 함수를 호출 하 고 인쇄 또는 인쇄 미리 보기 중에 각 페이지에 대해 [OnPrint](#onprint) 멤버 함수를 호출 하기 전에 프레임 워크에서 호출 됩니다.
 
@@ -680,7 +681,7 @@ virtual void OnPrepareDC(
 
 [!code-cpp[NVC_MFCDocView#183](../../mfc/codesnippet/cpp/cview-class_1.cpp)]
 
-## <a name="cviewonprepareprinting"></a><a name="onprepareprinting"></a>CView:: OnPreparePrinting
+## <a name="cviewonprepareprinting"></a><a name="onprepareprinting"></a> CView:: OnPreparePrinting
 
 문서를 인쇄 하거나 미리 보기 전에 프레임 워크에서 호출 됩니다.
 
@@ -693,7 +694,7 @@ virtual BOOL OnPreparePrinting(CPrintInfo* pInfo);
 *pInfo*<br/>
 현재 인쇄 작업을 설명하는 [CPrintInfo](../../mfc/reference/cprintinfo-structure.md) 구조체를 가리킵니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 0이 아니면 인쇄를 시작 합니다. 인쇄 작업이 취소 된 경우 0입니다.
 
@@ -701,9 +702,9 @@ virtual BOOL OnPreparePrinting(CPrintInfo* pInfo);
 
 기본 구현은 아무 작업도 수행하지 않습니다.
 
-인쇄 및 인쇄 미리 보기를 사용 하도록 설정 하려면이 함수를 재정의 해야 합니다. [Doprepareprinting](#doprepareprinting) 멤버 함수를 호출 하 고 *pinfo* 매개 변수를 전달한 다음 반환 값을 반환 합니다. `DoPreparePrinting`인쇄 대화 상자를 표시 하 고 프린터 장치 컨텍스트를 만듭니다. 기본값 이외의 값을 사용 하 여 인쇄 대화 상자를 초기화 하려면 *Pinfo*의 멤버에 값을 할당 합니다. 예를 들어 문서의 길이를 알고 있는 경우를 호출 하기 전에 *Pinfo* 의 [setmaxpage](../../mfc/reference/cprintinfo-structure.md#setmaxpage) 멤버 함수에 값을 전달 `DoPreparePrinting` 합니다. 이 값은 인쇄 대화 상자의 범위 부분에 있는 끝: 상자에 표시 됩니다.
+인쇄 및 인쇄 미리 보기를 사용 하도록 설정 하려면이 함수를 재정의 해야 합니다. [Doprepareprinting](#doprepareprinting) 멤버 함수를 호출 하 고 *pinfo* 매개 변수를 전달한 다음 반환 값을 반환 합니다. `DoPreparePrinting`인쇄 대화 상자를 표시 하 고 프린터 장치 컨텍스트를 만듭니다. 기본값 이외의 값을 사용 하 여 인쇄 대화 상자를 초기화 하려면 *Pinfo* 의 멤버에 값을 할당 합니다. 예를 들어 문서의 길이를 알고 있는 경우를 호출 하기 전에 *Pinfo* 의 [setmaxpage](../../mfc/reference/cprintinfo-structure.md#setmaxpage) 멤버 함수에 값을 전달 `DoPreparePrinting` 합니다. 이 값은 인쇄 대화 상자의 범위 부분에 있는 끝: 상자에 표시 됩니다.
 
-`DoPreparePrinting`미리 보기 작업에 대 한 인쇄 대화 상자를 표시 하지 않습니다. 인쇄 작업에 대 한 인쇄 대화 상자를 무시 하려면 `m_bPreview` *pinfo* 의 멤버가 FALSE 인지 확인 하 고,이를에 전달 하기 전에 TRUE로 설정 하 고 `DoPreparePrinting` 나중에 false로 다시 설정 합니다.
+`DoPreparePrinting` 미리 보기 작업에 대 한 인쇄 대화 상자를 표시 하지 않습니다. 인쇄 작업에 대 한 인쇄 대화 상자를 무시 하려면 `m_bPreview` *pinfo* 의 멤버가 FALSE 인지 확인 하 고,이를에 전달 하기 전에 TRUE로 설정 하 고 `DoPreparePrinting` 나중에 false로 다시 설정 합니다.
 
 프린터 장치 컨텍스트를 나타내는 개체에 액세스 해야 하는 초기화를 수행 해야 하는 경우 `CDC` (예: 문서의 길이를 지정 하기 전에 페이지 크기를 확인 해야 하는 경우) 멤버 함수를 재정의 `OnBeginPrinting` 합니다.
 
@@ -719,7 +720,7 @@ virtual BOOL OnPreparePrinting(CPrintInfo* pInfo);
 
 [!code-cpp[NVC_MFCDocView#185](../../mfc/codesnippet/cpp/cview-class_3.cpp)]
 
-## <a name="cviewonprint"></a><a name="onprint"></a>CView:: OnPrint
+## <a name="cviewonprint"></a><a name="onprint"></a> CView:: OnPrint
 
 문서 페이지를 인쇄 하거나 미리 보기 위해 프레임 워크에서 호출 됩니다.
 
@@ -763,7 +764,7 @@ virtual void OnPrint(
 
 다른 예는 [CRichEditView::P rintinsiderect](../../mfc/reference/cricheditview-class.md#printinsiderect)를 참조 하세요.
 
-## <a name="cviewonscroll"></a><a name="onscroll"></a>CView:: OnScroll
+## <a name="cviewonscroll"></a><a name="onscroll"></a> CView:: OnScroll
 
 스크롤이 가능한 지 여부를 확인 하기 위해 프레임 워크에서 호출 됩니다.
 
@@ -789,7 +790,7 @@ virtual BOOL OnScroll(
 
 - SB_PAGEUP 한 페이지를 위로 스크롤합니다.
 
-- 스크롤 상자를 지정한 위치로 끕니다 SB_THUMBTRACK 합니다. 현재 위치는 *Npos*에 지정 됩니다.
+- 스크롤 상자를 지정한 위치로 끕니다 SB_THUMBTRACK 합니다. 현재 위치는 *Npos* 에 지정 됩니다.
 
 - SB_TOP 맨 위로 스크롤합니다.
 
@@ -799,7 +800,7 @@ virtual BOOL OnScroll(
 *bDoScroll*<br/>
 지정 된 스크롤 동작을 실제로 수행할지 여부를 결정 합니다. TRUE 이면 스크롤이 수행 됩니다. FALSE 이면 스크롤이 발생 하지 않아야 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 *Bdoscroll* 이 TRUE이 고 뷰가 실제로 스크롤 된 경우 0이 아닌 값을 반환 합니다. 그렇지 않으면 0입니다. *Bdoscroll* 이 FALSE 인 경우 실제로 스크롤이 수행 되지 않더라도 *BDOSCROLL* 이 TRUE 일 경우 반환 된 값을 반환 합니다.
 
@@ -807,7 +808,7 @@ virtual BOOL OnScroll(
 
 이 함수는 뷰가 스크롤 막대 메시지를 받을 때 *Bdoscroll* 이 TRUE로 설정 된 프레임 워크에서 호출 됩니다. 이 경우 실제로 뷰를 스크롤해야 합니다. 다른 경우에는 스크롤이 실제로 수행 되기 전에 OLE 항목을 놓기 대상의 자동 스크롤 영역으로 처음 끌 때 *Bdoscroll* 을 FALSE로 설정 하 여이 함수를 호출 합니다. 이 경우 실제로 뷰를 스크롤해야 하는 것은 아닙니다.
 
-## <a name="cviewonscrollby"></a><a name="onscrollby"></a>CView:: OnScrollBy
+## <a name="cviewonscrollby"></a><a name="onscrollby"></a> CView:: OnScrollBy
 
 사용자가 보기의 현재 테두리를 기준으로 OLE 항목을 끌거나 세로 또는 가로 스크롤 막대를 조작 하 여 문서의 현재 보기를 벗어난 영역을 볼 때 프레임 워크에서 호출 됩니다.
 
@@ -825,7 +826,7 @@ virtual BOOL OnScrollBy(
 *bDoScroll*<br/>
 뷰의 스크롤이 발생 하는지 여부를 결정 합니다. TRUE 이면 스크롤이 수행 됩니다. FALSE 이면 스크롤이 수행 되지 않습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 뷰를 스크롤할 수 있는 경우 0이 아닙니다. 그렇지 않으면 0입니다.
 
@@ -837,7 +838,7 @@ virtual BOOL OnScrollBy(
 
 문서 너비 또는 높이가 32767 픽셀을 초과 하는 경우 `OnScrollBy` 이 잘못 된 *sizeScroll* 인수를 사용 하 여 호출 되므로 32767 이전 스크롤은 실패 합니다.
 
-## <a name="cviewonupdate"></a><a name="onupdate"></a>CView:: OnUpdate
+## <a name="cviewonupdate"></a><a name="onupdate"></a> CView:: OnUpdate
 
 뷰의 문서가 수정 된 후 프레임 워크에서 호출 됩니다. 이 함수는 [CDocument:: UpdateAllViews](../../mfc/reference/cdocument-class.md#updateallviews) 에 의해 호출 되며, 뷰에서 해당 수정 내용을 반영 하도록 표시를 업데이트할 수 있습니다.
 
@@ -863,7 +864,7 @@ virtual void OnUpdate(
 
 이는 [Oninitialupdate](#oninitialupdate)의 기본 구현에 의해도 호출 됩니다. 기본 구현에서는 전체 클라이언트 영역을 무효화 하 고 다음 WM_PAINT 메시지가 수신 될 때 그리기를 위해 표시 합니다. 문서의 수정 된 부분에 매핑되는 영역만 업데이트 하려면이 함수를 재정의 합니다. 이렇게 하려면 힌트 매개 변수를 사용 하 여 수정 내용에 대 한 정보를 전달 해야 합니다.
 
-*Lhint*를 사용 하려면 특정 힌트 값 (일반적으로 비트 마스크 또는 열거 형식)을 정의 하 고 문서에서 다음 값 중 하나를 전달 하도록 합니다. *Phint*를 사용 하려면 [CObject](../../mfc/reference/cobject-class.md) 에서 힌트 클래스를 파생 시키고 문서에서 힌트 개체에 대 한 포인터를 전달 하도록 합니다. 재정의할 때 `OnUpdate` [CObject:: IsKindOf](../../mfc/reference/cobject-class.md#iskindof) 멤버 함수를 사용 하 여 힌트 개체의 런타임 형식을 확인 합니다.
+*Lhint* 를 사용 하려면 특정 힌트 값 (일반적으로 비트 마스크 또는 열거 형식)을 정의 하 고 문서에서 다음 값 중 하나를 전달 하도록 합니다. *Phint* 를 사용 하려면 [CObject](../../mfc/reference/cobject-class.md) 에서 힌트 클래스를 파생 시키고 문서에서 힌트 개체에 대 한 포인터를 전달 하도록 합니다. 재정의할 때 `OnUpdate` [CObject:: IsKindOf](../../mfc/reference/cobject-class.md#iskindof) 멤버 함수를 사용 하 여 힌트 개체의 런타임 형식을 확인 합니다.
 
 일반적으로에서 직접 그리기를 수행 하면 안 `OnUpdate` 됩니다. 대신, 장치 좌표에서 업데이트를 필요로 하는 영역을 설명 하는 사각형을 결정 합니다. 이 사각형을 [CWnd:: InvalidateRect](../../mfc/reference/cwnd-class.md#invalidaterect)에 전달 합니다. 이렇게 하면 다음에 [WM_PAINT](/windows/win32/gdi/wm-paint) 메시지가 수신 될 때 그리기가 발생 합니다.
 

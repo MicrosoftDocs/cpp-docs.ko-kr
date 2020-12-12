@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 행 집합에 여러 접근자 사용'
 title: 행 집합에서 여러 접근자 사용
 ms.date: 10/24/2018
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - rowsets [C++], multiple accessors
 - accessors [C++], rowsets
 ms.assetid: 80d4dc5d-4940-4a28-a4ee-d8602f71d2a6
-ms.openlocfilehash: 48772539b4dda9262a244506a36932d1e752949e
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 2fa8ca7737872b16abb5bfdf6a7ef6b8a38c5f85
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509401"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319133"
 ---
 # <a name="using-multiple-accessors-on-a-rowset"></a>행 집합에서 여러 접근자 사용
 

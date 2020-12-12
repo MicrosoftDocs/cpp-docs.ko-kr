@@ -1,4 +1,5 @@
 ---
+description: OLE DB 공급자 템플릿 아키텍처에 대해 자세히 알아보세요.
 title: OLE DB 공급자 템플릿 구조
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - architecture [C++], OLE DB Provider
 - OLE DB provider templates, object model
 ms.assetid: 639304a3-f9e0-44dc-8d0c-0ebd2455b363
-ms.openlocfilehash: 89e07f95853c3611b7cceaef3f247c220c630add
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 1cc1619ab7ed13c2d7962f75229df2ecd8cf0d78
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509549"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317131"
 ---
 # <a name="ole-db-provider-template-architecture"></a>OLE DB 공급자 템플릿 구조
 
@@ -21,7 +22,7 @@ OLE DB 공급자 아키텍처는 데이터 원본 개체와 하나 이상의 세
 
 ![공급자 아키텍처](../../data/oledb/media/vc4twb1.gif "공급자 아키텍처")
 
-**OLE DB 공급자 마법사**에서 만든 원본 파일과 함께 OLE DB 템플릿은 데이터 원본 개체를 구현 합니다. 세션은 OLE DB에 해당 하는 개체입니다 `TSession` .
+**OLE DB 공급자 마법사** 에서 만든 원본 파일과 함께 OLE DB 템플릿은 데이터 원본 개체를 구현 합니다. 세션은 OLE DB에 해당 하는 개체입니다 `TSession` .
 
 ## <a name="mandatory-and-optional-interfaces"></a>필수 및 선택적 인터페이스
 
@@ -41,7 +42,7 @@ OLE DB 공급자 템플릿은 행 및 저장소 개체를 구현 하지 않습�
 
 다음 표에서는 [OLE DB 2.6 SDK 설명서](/previous-versions/windows/desktop/ms722784(v=vs.85))에 따라 위에 나열 된 개체에 대 한 필수 및 선택적 인터페이스를 보여 줍니다.
 
-|구성 요소|인터페이스|설명|
+|구성 요소|인터페이스|의견|
 |---------------|---------------|-------------|
 |[데이터 원본](../../data/oledb/data-source-object-interfaces.md) ([cdatasource](../../data/oledb/cdatasource-class.md))|강제로 `IDBCreateSession`<br /><br /> 강제로 `IDBInitialize`<br /><br /> 강제로 `IDBProperties`<br /><br /> 강제로 `IPersist`<br /><br /> 필드 `IConnectionPointContainer`<br /><br /> 필드 `IDBAsynchStatus`<br /><br /> 필드 `IDBDataSourceAdmin`<br /><br /> 필드 `IDBInfo`<br /><br /> 필드 `IPersistFile`<br /><br /> 필드 `ISupportErrorInfo`|소비자에서 공급자로의 연결입니다. 개체는 사용자 ID, 암호 및 데이터 원본 이름과 같은 연결에 대 한 속성을 지정 하는 데 사용 됩니다. 개체를 사용 하 여 데이터 원본 (만들기, 업데이트, 삭제, 테이블 등)을 관리할 수도 있습니다.|
 |[세션](../../data/oledb/session-object-interfaces.md) ([csession](./cdataconnection-class.md#op_csession_amp))|강제로 `IGetDataSource`<br /><br /> 강제로 `IOpenRowset`<br /><br /> 강제로 `ISessionProperties`<br /><br /> 필드 `IAlterIndex`<br /><br /> 필드 `IAlterTable`<br /><br /> 필드 `IBindResource`<br /><br /> 필드 `ICreateRow`<br /><br /> 필드 `IDBCreateCommand`<br /><br /> 필드 `IDBSchemaRowset`<br /><br /> 필드 `IIndexDefinition`<br /><br /> 필드 `ISupportErrorInfo`<br /><br /> 필드 `ITableCreation`<br /><br /> 필드 `ITableDefinition`<br /><br /> 필드 `ITableDefinitionWithConstraints`<br /><br /> 필드 `ITransaction`<br /><br /> 필드 `ITransactionJoin`<br /><br /> 필드 `ITransactionLocal`<br /><br /> 필드 `ITransactionObject`|Session 개체는 소비자와 공급자 간의 단일 대화입니다. `HSTMT`여러 동시 세션이 활성화 될 수 있다는 점에서 ODBC와 비슷합니다.<br /><br /> 세션 개체는 OLE DB 기능을 얻기 위한 기본 링크입니다. 명령, 트랜잭션 또는 행 집합 개체를 가져오려면 session 개체를 통해 이동 합니다.|

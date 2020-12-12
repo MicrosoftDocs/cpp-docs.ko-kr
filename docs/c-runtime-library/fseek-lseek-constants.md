@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: fseek, _lseek 상수'
 title: fseek, _lseek 상수
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,14 +11,14 @@ helpviewer_keywords:
 - SEEK_END constant
 - SEEK_CUR constant
 ms.assetid: 9deeb13e-5aa3-4c33-80d8-721c80a4de9d
-ms.openlocfilehash: 2e6cb2e0d781212f3b5e7758554507dfa438a716
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: be12597682074f610b0a69395146b400fed4d6b2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743363"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319819"
 ---
-# <a name="fseek-lseek-constants"></a>fseek, _lseek 상수
+# <a name="fseek-_lseek-constants"></a>fseek, _lseek 상수
 
 ## <a name="syntax"></a>구문
 
@@ -25,7 +26,7 @@ ms.locfileid: "57743363"
 #include <stdio.h>
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 *origin* 인수는 초기 위치를 지정하며 다음 매니페스트 상수 중 하나가 될 수 있습니다.
 

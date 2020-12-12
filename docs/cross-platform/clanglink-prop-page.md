@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: Clang 링커 속성 (Android c + +)'
 title: Clang 링커 속성(Android C++)
 ms.date: 10/23/2017
 ms.assetid: 66e88848-116c-4eb0-bc57-183394d35b57
@@ -25,16 +26,16 @@ f1_keywords:
 - VC.Project.VCLinkerTool.Clang.AdditionalOptionsPage
 - VC.Project.VCLinkerTool.Clang.AdditionalDependencies
 - VC.Project.VCLinkerTool.Clang.LibraryDependencies
-ms.openlocfilehash: 55b944040157d13741b992f4ec66c35d1b117d95
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 65cbfb3d77dad3d78d8b343274d0fa65cf3ed457
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79470252"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319276"
 ---
 # <a name="clang-linker-properties-android-c"></a>Clang 링커 속성(Android C++)
 
-| 속성 | Description | 선택 사항 |
+| 속성 | 설명 | 선택 항목 |
 |--|--|--|
 | 출력 파일 | 이 옵션은 링커가 만드는 프로그램의 기본 이름 및 위치를 재정의합니다. (-o) |
 | 진행률 표시 | 링커 진행 메시지를 출력합니다. |

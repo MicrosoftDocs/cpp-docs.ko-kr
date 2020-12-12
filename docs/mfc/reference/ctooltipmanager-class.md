@@ -1,5 +1,6 @@
 ---
-title: C툴팁매니저 클래스
+description: '자세히 알아보기: CTooltipManager 클래스'
+title: CTooltipManager 클래스
 ms.date: 11/04/2016
 f1_keywords:
 - CTooltipManager
@@ -16,14 +17,14 @@ helpviewer_keywords:
 - CTooltipManager [MFC], SetTooltipText
 - CTooltipManager [MFC], UpdateTooltips
 ms.assetid: c71779d7-8b6e-47ef-8500-d4552731fe86
-ms.openlocfilehash: 4e721740fc100a34ea08dd7ff5f9291eea2d9b36
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 0ec6d691abbceb7026fe9656c17ff899f1d07759
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81752175"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318548"
 ---
-# <a name="ctooltipmanager-class"></a>C툴팁매니저 클래스
+# <a name="ctooltipmanager-class"></a>CTooltipManager 클래스
 
 도구 설명에 대한 런타임 정보를 유지합니다. `CTooltipManager` 클래스는 애플리케이션당 한 번씩 인스턴스화됩니다.
 
@@ -37,7 +38,7 @@ class CTooltipManager : public CObject
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
 |[CTooltipManager::CreateToolTip](#createtooltip)|지정된 Windows 컨트롤 형식에 대한 도구 설명 컨트롤을 만듭니다.|
 |[CTooltipManager::DeleteToolTip](#deletetooltip)|도구 설명 컨트롤을 삭제합니다.|
@@ -47,7 +48,7 @@ class CTooltipManager : public CObject
 
 ## <a name="remarks"></a>설명
 
-[CMFCToolTipCtrl 클래스를](../../mfc/reference/cmfctooltipctrl-class.md) `CMFCToolTipInfo`사용하고 `CTooltipManager` 함께 응용 프로그램에서 사용자 지정된 도구 설명서를 구현합니다. 이러한 도구 설명 클래스를 사용하는 방법에 대한 예제는 [CMFCToolTipCtrl 클래스](../../mfc/reference/cmfctooltipctrl-class.md) 항목을 참조하십시오.
+[CMFCToolTipCtrl 클래스](../../mfc/reference/cmfctooltipctrl-class.md), `CMFCToolTipInfo` 및를 함께 사용 하 여 `CTooltipManager` 응용 프로그램에 사용자 지정 도구 설명을 구현 합니다. 이러한 도구 설명 클래스를 사용 하는 방법에 대 한 예제는 [CMFCToolTipCtrl 클래스](../../mfc/reference/cmfctooltipctrl-class.md) 항목을 참조 하세요.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -57,11 +58,11 @@ class CTooltipManager : public CObject
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxtooltipmanager.h
+**헤더:** afxtooltipmanager
 
-## <a name="ctooltipmanagercreatetooltip"></a><a name="createtooltip"></a>CTooltipManager::만들기도구 팁
+## <a name="ctooltipmanagercreatetooltip"></a><a name="createtooltip"></a> CTooltipManager:: CreateToolTip
 
-도구 설명 컨트롤을 만듭니다.
+Tooltip 컨트롤을 만듭니다.
 
 ```
 static BOOL CreateToolTip(
@@ -72,42 +73,42 @@ static BOOL CreateToolTip(
 
 ### <a name="parameters"></a>매개 변수
 
-*pTool팁*<br/>
-【아웃】 도구 설명 포인터에 대한 참조입니다. 함수가 반환될 때 새로 작성된 도구 설명을 가리키도록 설정됩니다.
+*pToolTip*<br/>
+제한이 도구 설명 포인터에 대 한 참조입니다. 함수가 반환 될 때 새로 만든 도구 설명을 가리키도록 설정 됩니다.
 
 *pWndParent*<br/>
-【인】 도구 설명의 상위 입니다.
+진행 도구 설명의 부모입니다.
 
 *nType*<br/>
-【인】 도구 설명의 유형입니다.
+진행 도구 설명의 유형입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-도구 설명이 성공적으로 생성된 경우 0이 아닙니다.
+도구 설명이 성공적으로 만들어진 경우 0이 아닙니다.
 
 ### <a name="remarks"></a>설명
 
-*pToolTip에서*다시 전달되는 도구 설명 컨트롤을 삭제하려면 [CTooltipManager::DeleteToolTip을](#deletetooltip) 호출해야 합니다.
+[CTooltipManager::D eletetooltip](#deletetooltip) 를 호출 하 여 *ptooltip* 에서 다시 전달 되는 도구 설명 컨트롤을 삭제 해야 합니다.
 
-[CTooltipManager는](../../mfc/reference/ctooltipmanager-class.md) *nType이* 지정하는 툴팁 유형을 기반으로 생성하는 각 도구 설명의 시각적 표시 매개변수를 설정합니다. 하나 이상의 도구 설명 형식에 대한 매개 변수를 변경하려면 [CTooltipManager::SetTooltipParams](#settooltipparams)를 호출합니다.
+[CTooltipManager](../../mfc/reference/ctooltipmanager-class.md) 는 *nType* 가 지정 하는 도구 설명 유형에 따라 생성 되는 각 도구 설명의 시각적 표시 매개 변수를 설정 합니다. 하나 이상의 도구 설명 형식에 대 한 매개 변수를 변경 하려면 [CTooltipManager:: SetTooltipParams](#settooltipparams)를 호출 합니다.
 
-유효한 도구 설명 유형은 다음 표에 나열됩니다.
+다음 표에는 유효한 도구 설명 형식이 나와 있습니다.
 
-|공구 팁 유형|제어 범주|예제 유형|
+|도구 설명 형식|컨트롤 범주|예제 형식|
 |------------------|----------------------|-------------------|
-|AFX_TOOLTIP_TYPE_BUTTON|버튼입니다.|CMFCButton|
-|AFX_TOOLTIP_TYPE_CAPTIONBAR|캡션 막대입니다.|CMFCCaptionBar|
-|AFX_TOOLTIP_TYPE_DEFAULT|다른 범주에 맞지 않는 모든 컨트롤입니다.|없음|
-|AFX_TOOLTIP_TYPE_DOCKBAR|도킹 가능한 창입니다.|CDockablePane|
+|AFX_TOOLTIP_TYPE_BUTTON|단추입니다.|CMFCButton|
+|AFX_TOOLTIP_TYPE_CAPTIONBAR|캡션 표시줄입니다.|CMFCCaptionBar|
+|AFX_TOOLTIP_TYPE_DEFAULT|다른 범주에 맞지 않는 컨트롤입니다.|없음|
+|AFX_TOOLTIP_TYPE_DOCKBAR|도킹 가능한 창.|CDockablePane|
 |AFX_TOOLTIP_TYPE_EDIT|텍스트 상자입니다.|없음|
-|AFX_TOOLTIP_TYPE_MINIFRAME|미니프레임.|CPaneFrameWnd|
-|AFX_TOOLTIP_TYPE_PLANNER|플래너.|없음|
-|AFX_TOOLTIP_TYPE_RIBBON|리본 바입니다.|CMFC리본바, CMFC리본패널메뉴바|
+|AFX_TOOLTIP_TYPE_MINIFRAME|미니 프레임입니다.|CPaneFrameWnd|
+|AFX_TOOLTIP_TYPE_PLANNER|Planner.|없음|
+|AFX_TOOLTIP_TYPE_RIBBON|리본 표시줄입니다.|Cmfc리본 표시줄, CMFCRibbonPanelMenuBar|
 |AFX_TOOLTIP_TYPE_TAB|탭 컨트롤입니다.|CMFCTabCtrl|
-|AFX_TOOLTIP_TYPE_TOOLBAR|도구 모음입니다.|CMFC툴바, CMFC팝메뉴바|
+|AFX_TOOLTIP_TYPE_TOOLBAR|도구 모음입니다.|CMFCToolBar, CMFCPopupMenuBar|
 |AFX_TOOLTIP_TYPE_TOOLBOX|도구 상자입니다.|없음|
 
-## <a name="ctooltipmanagerdeletetooltip"></a><a name="deletetooltip"></a>C툴팁매니저::DeleteToolTip
+## <a name="ctooltipmanagerdeletetooltip"></a><a name="deletetooltip"></a> CTooltipManager::D eleteToolTip
 
 도구 설명 컨트롤을 삭제합니다.
 
@@ -117,16 +118,16 @@ static void DeleteToolTip(CToolTipCtrl*& pToolTip);
 
 ### <a name="parameters"></a>매개 변수
 
-*pTool팁*<br/>
-【인, 아웃】 삭제할 도구 설명에 대한 포인터에 대한 참조입니다.
+*pToolTip*<br/>
+[in, out] 제거할 도구 설명에 대 한 포인터에 대 한 참조입니다.
 
 ### <a name="remarks"></a>설명
 
-[CTooltipManager::CreateToolTool팁에](#createtooltip)의해 만들어진 각 [CToolTipCtrl 클래스에](../../mfc/reference/ctooltipctrl-class.md) 대해 이 메서드를 호출합니다. 부모 컨트롤은 처리기에서 `OnDestroy` 이 메서드를 호출해야 합니다. 프레임워크에서 도구 설명을 올바르게 제거하려면 이 방법을 선택해야 합니다. 이 메서드는 반환 하기 전에 *pToolTip을* NULL로 설정 합니다.
+[CTooltipManager:: CreateToolTip](#createtooltip)에서 만든 각 [CToolTipCtrl 클래스](../../mfc/reference/ctooltipctrl-class.md) 에 대해이 메서드를 호출 합니다. 부모 컨트롤이 처리기에서이 메서드를 호출 해야 합니다 `OnDestroy` . 이는 프레임 워크에서 도구 설명을 올바르게 제거 하는 데 필요 합니다. 이 메서드는 반환 되기 전에 *Ptooltip* 을 NULL로 설정 합니다.
 
-## <a name="ctooltipmanagersettooltipparams"></a><a name="settooltipparams"></a>CTooltipManager::setTooltipParams
+## <a name="ctooltipmanagersettooltipparams"></a><a name="settooltipparams"></a> CTooltipManager:: SetTooltipParams
 
-지정된 Windows 컨트롤 유형에 대한 도구 설명 컨트롤의 모양을 사용자 지정합니다.
+지정 된 Windows 컨트롤 형식에 대 한 도구 설명 컨트롤의 모양을 사용자 지정 합니다.
 
 ```cpp
 void SetTooltipParams(
@@ -137,32 +138,32 @@ void SetTooltipParams(
 
 ### <a name="parameters"></a>매개 변수
 
-*n유형*<br/>
-【인】 컨트롤 유형을 지정합니다.
+*nTypes*<br/>
+진행 컨트롤 형식을 지정 합니다.
 
 *pRTC*<br/>
-【인】 사용자 지정 도구 설명의 런타임 클래스입니다.
+진행 사용자 지정 도구 설명의 런타임 클래스입니다.
 
 *pParams*<br/>
-【인】 도구 설명 매개 변수입니다.
+진행 Tooltip 매개 변수.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 도구 설명끝을 만들 때 [CToolTipManager에서](../../mfc/reference/ctooltipmanager-class.md) 사용하는 런타임 클래스 및 초기 매개 변수를 설정합니다. 컨트롤이 [CTooltipManager::CreateToolTip을](#createtooltip) 호출하고 *nType으로*표시된 형식 중 하나인 도구 설명 형식을 전달하는 경우 도구 설명 관리자는 *pRTC에서* 지정한 런타임 클래스의 인스턴스인 도구 설명 컨트롤을 만들고 *pParams에* 의해 지정된 매개 변수를 새 도구 설명에 전달합니다.
+이 메서드는 도구 설명을 만들 때 [CToolTipManager](../../mfc/reference/ctooltipmanager-class.md) 에서 사용 하는 런타임 클래스 및 초기 매개 변수를 설정 합니다. 컨트롤이 [CTooltipManager:: CreateToolTip](#createtooltip) 를 호출 하 고 *ntypes* 가 나타내는 형식 중 하나인 도구 설명 형식을 전달 하는 경우 도구 설명 관리자는 *prtc* 에서 지정한 런타임 클래스의 인스턴스인 도구 설명 컨트롤을 만들고 *pparams* 로 지정 된 매개 변수를 새 도구 설명에 전달 합니다.
 
-이 메서드를 호출하면 모든 기존 도구 설명 소유자가 AFX_WM_UPDATETOOLTIPS 메시지를 수신하고 [CTooltipManager::CreateToolTip](#createtooltip)를 사용하여 도구 설명서를 다시 만들어야 합니다.
+이 메서드를 호출 하면 기존 도구 설명 소유자는 모두 AFX_WM_UPDATETOOLTIPS 메시지를 수신 하 고 [CTooltipManager:: CreateToolTip](#createtooltip)를 사용 하 여 해당 도구 설명을 다시 만들어야 합니다.
 
-*n유형은* [CTooltipManager::CreateToolTip에서](#createtooltip) 사용하는 유효한 도구 설명 형식의 조합이거나 AFX_TOOLTIP_TYPE_ALL 수 있습니다. AFX_TOOLTIP_TYPE_ALL 통과하면 모든 도구 설명 유형이 영향을 받습니다.
+*n 형식은* [CTooltipManager:: CreateToolTip](#createtooltip) 에서 사용 하는 유효한 도구 설명 형식의 조합 이거나 AFX_TOOLTIP_TYPE_ALL 수 있습니다. AFX_TOOLTIP_TYPE_ALL를 전달 하는 경우 모든 도구 설명 형식이 영향을 받습니다.
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 `SetTooltipParams` `CTooltipManager` 클래스의 메서드를 사용 하는 방법을 보여 줍니다. 이 코드 조각은 [클라이언트 그리기 샘플](../../overview/visual-cpp-samples.md)의 일부입니다.
+다음 예제에서는 클래스의 메서드를 사용 하는 방법을 보여 줍니다 `SetTooltipParams` `CTooltipManager` . 이 코드 조각은 [클라이언트 그리기 샘플](../../overview/visual-cpp-samples.md)의 일부입니다.
 
 [!code-cpp[NVC_MFC_DrawClient#11](../../mfc/reference/codesnippet/cpp/ctooltipmanager-class_1.cpp)]
 
-## <a name="ctooltipmanagersettooltiptext"></a><a name="settooltiptext"></a>CTooltipManager::SetTooltipText
+## <a name="ctooltipmanagersettooltiptext"></a><a name="settooltiptext"></a> CTooltipManager:: SetTooltipText
 
-도구 설명에 대한 텍스트와 설명을 설정합니다.
+도구 설명에 대 한 텍스트 및 설명을 설정 합니다.
 
 ```
 static void SetTooltipText(
@@ -175,28 +176,28 @@ static void SetTooltipText(
 
 ### <a name="parameters"></a>매개 변수
 
-*Pti*<br/>
-【인】 TOOLINFO 개체에 대한 포인터입니다.
+*pTI*<br/>
+진행 TOOLINFO 개체에 대 한 포인터입니다.
 
-*pTool팁*<br/>
-【인, 아웃】 텍스트와 설명을 설정할 도구 설명 컨트롤에 대한 포인터입니다.
+*pToolTip*<br/>
+[in, out] 텍스트와 설명을 설정할 도구 설명 컨트롤에 대 한 포인터입니다.
 
 *nType*<br/>
-【인】 이 도구 설명이 연결된 컨트롤 유형을 지정합니다.
+진행 이 도구 설명이 연결 된 컨트롤의 유형을 지정 합니다.
 
 *strText*<br/>
-【인】 도구 설명 텍스트로 설정할 텍스트입니다.
+진행 도구 설명 텍스트로 설정할 텍스트입니다.
 
 *lpszDescr*<br/>
-【인】 도구 설명 설명에 대한 포인터입니다. NULL일 수 있습니다.
+진행 도구 설명에 대 한 포인터입니다. NULL일 수 있습니다.
 
 ### <a name="remarks"></a>설명
 
-*nType* 값은 도구 설명팁을 만들 때 [CTooltipManager::CreateToolTip의](#createtooltip) *nType* 매개 변수와 동일한 값이어야 합니다.
+*NType* 의 값은 도구 설명을 만들 때 [CTooltipManager:: CreateToolTip](#createtooltip) 의 *nType* 매개 변수와 동일한 값 이어야 합니다.
 
-## <a name="ctooltipmanagerupdatetooltips"></a><a name="updatetooltips"></a>CTooltipManager::업데이트도구 팁
+## <a name="ctooltipmanagerupdatetooltips"></a><a name="updatetooltips"></a> CTooltipManager:: UpdateTooltips
 
-자세한 내용은 Visual Studio 설치의 **\\VC\\atlmfc\\src mfc** 폴더에 있는 소스 코드를 참조하십시오.
+자세한 내용은 Visual Studio 설치의 **VC \\ s\mfc \\ src \\ mfc** 폴더에 있는 소스 코드를 참조 하세요.
 
 ```cpp
 void UpdateTooltips();
@@ -204,9 +205,9 @@ void UpdateTooltips();
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
-[CMFC툴팁Ctrl 클래스](../../mfc/reference/cmfctooltipctrl-class.md)<br/>
-[CMFC툴팁정보 클래스](../../mfc/reference/cmfctooltipinfo-class.md)
+[CMFCToolTipCtrl 클래스](../../mfc/reference/cmfctooltipctrl-class.md)<br/>
+[CMFCToolTipInfo 클래스](../../mfc/reference/cmfctooltipinfo-class.md)

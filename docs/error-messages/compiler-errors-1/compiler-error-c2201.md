@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2201'
 title: 컴파일러 오류 C2201
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2201
 ms.assetid: ed927659-6e9c-447d-9963-19969ae1e957
-ms.openlocfilehash: d6697de48c4868170e8c7afa287b0eb43e9523f5
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 334a459a6fbfa930c99e3c203b1fb214cb36706a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91501640"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319003"
 ---
 # <a name="compiler-error-c2201"></a>컴파일러 오류 C2201
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 저장 프로시저 정의'
 title: 저장 프로시저 정의
 ms.date: 10/24/2018
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - stored procedures, defining
 - stored procedures, OLE DB
 ms.assetid: 54949b81-3275-4dd9-96e4-3eda1ed755f2
-ms.openlocfilehash: 47f68bcf5c62aa54cc5ee60de166e1085f5a3fc5
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 52527da031093d82c9d74be5807a5de26f3ee091
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500925"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317690"
 ---
 # <a name="defining-stored-procedures"></a>저장 프로시저 정의
 

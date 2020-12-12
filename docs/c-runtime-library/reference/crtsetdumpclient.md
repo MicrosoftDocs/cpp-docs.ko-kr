@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _CrtSetDumpClient'
 title: _CrtSetDumpClient
 ms.date: 11/04/2016
 api_name:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - _CrtSetDumpClient function
 - CrtSetDumpClient function
 ms.assetid: f3dd06d0-c331-4a12-b68d-25378d112033
-ms.openlocfilehash: fd2b037ce10f708ab133f31a20636438b0d04b93
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 89a2648aae62fc7f62b04519eacce4e0f67002f1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234265"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319536"
 ---
 # <a name="_crtsetdumpclient"></a>_CrtSetDumpClient
 
@@ -47,7 +48,7 @@ _CRT_DUMP_CLIENT _CrtSetDumpClient( _CRT_DUMP_CLIENT dumpClient );
 *클라이언트 \ 클라이언트*<br/>
 C 런타임 디버그 메모리 덤프 프로세스에 연결할 새로운 클라이언트 정의 메모리 덤프 함수입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 이전에 정의된 클라이언트 블록 덤프 함수를 반환합니다.
 
@@ -61,7 +62,7 @@ C 런타임 디버그 메모리 덤프 프로세스에 연결할 새로운 클�
 void DumpClientFunction( void *userPortion, size_t blockSize );
 ```
 
-*Userportion* 인수는 메모리 블록의 사용자 데이터 부분에 대 한 포인터 *이 고 블록* 크기는 할당 된 메모리 블록의 크기 (바이트)를 지정 합니다. 클라이언트 블록 덤프 함수는를 반환 해야 합니다 **`void`** . **_CrtSetDumpClient** 에 전달 되는 클라이언트 덤프 함수에 대 한 포인터는 crtdbg.h에 정의 된 **_CRT_DUMP_CLIENT**형식입니다.
+*Userportion* 인수는 메모리 블록의 사용자 데이터 부분에 대 한 포인터 *이 고 블록* 크기는 할당 된 메모리 블록의 크기 (바이트)를 지정 합니다. 클라이언트 블록 덤프 함수는를 반환 해야 합니다 **`void`** . **_CrtSetDumpClient** 에 전달 되는 클라이언트 덤프 함수에 대 한 포인터는 crtdbg.h에 정의 된 **_CRT_DUMP_CLIENT** 형식입니다.
 
 ```C
 typedef void (__cdecl *_CRT_DUMP_CLIENT)( void *, size_t );

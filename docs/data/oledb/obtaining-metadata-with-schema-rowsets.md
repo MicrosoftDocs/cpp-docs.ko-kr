@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 스키마 행 집합을 사용 하 여 메타 데이터 가져오기'
 title: 스키마 행 집합을 사용하여 메타데이터 구하기
 ms.date: 10/24/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - OLE DB consumer templates, getting provider metadata
 - metadata, getting (OLE DB Templates)
 ms.assetid: 6b448461-82fb-4acf-816b-3cbb0ca1d186
-ms.openlocfilehash: 37418cc91913ed840d1601aab9005b476bf29ee0
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 9692b27de6d949e23b3868b2c55b79b685d6b5fe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91508988"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317183"
 ---
 # <a name="obtaining-metadata-with-schema-rowsets"></a>스키마 행 집합을 사용하여 메타데이터 구하기
 
@@ -82,7 +83,7 @@ CRestrictions<CAccessor<CColumnsInfo>
 
 스키마 행 집합에 대 한 참조 인 경우 OLE DB 템플릿에 제공 된 typedef 클래스 ( [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md)참조).
 
-제한 열을 포함 하 여 OLE DB 스키마 행 집합에 대 한 자세한 내용은 **OLE DB 프로그래머 참조**에서 [부록 B: 스키마 행 집합](/previous-versions/windows/desktop/ms712921(v=vs.85)) 을 참조 하세요.
+제한 열을 포함 하 여 OLE DB 스키마 행 집합에 대 한 자세한 내용은 **OLE DB 프로그래머 참조** 에서 [부록 B: 스키마 행 집합](/previous-versions/windows/desktop/ms712921(v=vs.85)) 을 참조 하세요.
 
 스키마 행 집합 클래스를 사용 하는 방법에 대 한 더 복잡 한 예제는 [CatDB](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer) 및 [DBViewer](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer) 샘플을 참조 하세요.
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 공용 (c + +)'
 title: public (C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - public keyword [C++]
 ms.assetid: f3e10a59-39f6-4bcd-827e-3e99f8f89497
-ms.openlocfilehash: 0f6b58896cbcb11901721125f9b1a32a99acb357
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1fd9377647568a9f4e2079d93097ca49bd6ed9be
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227142"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319445"
 ---
 # <a name="public-c"></a>public (C++)
 
@@ -68,4 +69,4 @@ int main() {
 ## <a name="see-also"></a>참고 항목
 
 [클래스 멤버에 대한 액세스 제어](member-access-control-cpp.md)<br/>
-[C++ 키워드](../cpp/keywords-cpp.md)
+[키워드](../cpp/keywords-cpp.md)

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CWaitCursor 클래스'
 title: CWaitCursor 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - CWaitCursor [MFC], CWaitCursor
 - CWaitCursor [MFC], Restore
 ms.assetid: 5dfae2ff-d7b6-4383-b0ad-91e0868c67b3
-ms.openlocfilehash: dfeedad18b3ebcefedff446699f074c86037a4a3
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f9552dcd6f5304c96d550e153870f69d78d932ad
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222877"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318470"
 ---
 # <a name="cwaitcursor-class"></a>CWaitCursor 클래스
 
@@ -31,7 +32,7 @@ class CWaitCursor
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[CWaitCursor:: CWaitCursor](#cwaitcursor)|개체를 생성 `CWaitCursor` 하 고 대기 커서를 표시 합니다.|
 
@@ -43,7 +44,7 @@ class CWaitCursor
 
 ## <a name="remarks"></a>설명
 
-`CWaitCursor`에 기본 클래스가 없습니다.
+`CWaitCursor` 에 기본 클래스가 없습니다.
 
 적절 한 Windows 프로그래밍 방법에서는 상당한 시간을 소요 하는 작업을 수행할 때마다 대기 커서를 표시 해야 합니다.
 
@@ -73,7 +74,7 @@ class CWaitCursor
 
 [!code-cpp[NVC_MFCWindowing#62](../../mfc/reference/codesnippet/cpp/cwaitcursor-class_1.cpp)]
 
-## <a name="cwaitcursorcwaitcursor"></a><a name="cwaitcursor"></a>CWaitCursor:: CWaitCursor
+## <a name="cwaitcursorcwaitcursor"></a><a name="cwaitcursor"></a> CWaitCursor:: CWaitCursor
 
 대기 커서를 표시 하려면 `CWaitCursor` 긴 작업을 수행 하는 코드 보다 먼저 개체를 선언 하면 됩니다.
 
@@ -96,7 +97,7 @@ CWaitCursor();
 
 [!code-cpp[NVC_MFCWindowing#63](../../mfc/reference/codesnippet/cpp/cwaitcursor-class_2.cpp)]
 
-## <a name="cwaitcursorrestore"></a><a name="restore"></a>CWaitCursor:: Restore
+## <a name="cwaitcursorrestore"></a><a name="restore"></a> CWaitCursor:: Restore
 
 Wait 커서를 복원 하려면 메시지 상자나 대화 상자를 표시 하는 등의 작업을 수행한 후에이 함수를 호출 합니다. 그러면 대기 커서가 다른 커서로 변경 될 수 있습니다.
 

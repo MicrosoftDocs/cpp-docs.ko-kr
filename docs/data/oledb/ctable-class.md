@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: CTable 클래스'
 title: CTable 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - CTable class
 - Open method
 ms.assetid: f13fdaa3-e198-4557-977d-54b0bbc3454d
-ms.openlocfilehash: a967ef8fa2832afd56442ae4f988ba080d0b2872
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 62808080a68bbd5de00b39c43661e06617ba53f1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845642"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317729"
 ---
 # <a name="ctable-class"></a>CTable 클래스
 
@@ -106,7 +107,7 @@ HRESULT Open(const CSession& session,
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 *OLE DB 프로그래머 참조*에서 [Iopenrowset:: OpenRowset](/previous-versions/windows/desktop/ms716724(v=vs.85)) 을 참조 하세요.
+자세한 내용은 *OLE DB 프로그래머 참조* 에서 [Iopenrowset:: OpenRowset](/previous-versions/windows/desktop/ms716724(v=vs.85)) 을 참조 하세요.
 
 ## <a name="see-also"></a>참고 항목
 

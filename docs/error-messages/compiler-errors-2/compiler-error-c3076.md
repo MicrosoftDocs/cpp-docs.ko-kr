@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3076'
 title: 컴파일러 오류 C3076
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3076
 ms.assetid: 8a87b3e4-2c17-4b87-9622-ef0962d6a34e
-ms.openlocfilehash: f3ce849113b0fc21a192f748bc46fc35be48880d
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 27fbfe27d2e8efb1abee611701fdbde8f0d3d09f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74749635"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97320182"
 ---
 # <a name="compiler-error-c3076"></a>컴파일러 오류 C3076
 
@@ -19,7 +20,7 @@ ms.locfileid: "74749635"
 
 네이티브 형식은 CLR 형식의 인스턴스를 포함할 수 없습니다.
 
-자세한 내용은 [ C++ 참조 형식에 대 한 스택 의미 체계](../../dotnet/cpp-stack-semantics-for-reference-types.md)를 참조 하세요.
+자세한 내용은 [참조 형식에 대 한 c + + 스택 의미 체계](../../dotnet/cpp-stack-semantics-for-reference-types.md)를 참조 하세요.
 
 ## <a name="example"></a>예제
 

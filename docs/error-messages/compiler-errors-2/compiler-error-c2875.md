@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2875'
 title: 컴파일러 오류 C2875
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2875
 ms.assetid: d589fc0c-08b2-4a79-bc0e-dca5eb80bdd5
-ms.openlocfilehash: cefb2c0b138c0a6a6061e990e6bb79ce9b93f6b5
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 8d6d4d7f985079070cde4dfe46e3619cc035126f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74736336"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97320514"
 ---
 # <a name="compiler-error-c2875"></a>컴파일러 오류 C2875
 

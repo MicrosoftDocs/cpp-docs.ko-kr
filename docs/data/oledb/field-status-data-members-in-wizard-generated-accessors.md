@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: Wizard-Generated 접근자의 필드 상태 데이터 멤버'
 title: 마법사 생성 접근자의 필드 상태 데이터 멤버
 ms.date: 05/09/2019
 helpviewer_keywords:
 - OLE DB consumer templates, field status
 - field status in OLE DB templates
 ms.assetid: 66e4e223-c60c-471e-860d-d23abcdfe371
-ms.openlocfilehash: 476c91f55071f6d1c7f243257273a32798813cae
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 0e0df633883b83d7d8fd0966082fbf00d2a72e13
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924636"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317651"
 ---
 # <a name="field-status-data-members-in-wizard-generated-accessors"></a>마법사 생성 접근자의 필드 상태 데이터 멤버
 
@@ -24,7 +25,7 @@ Visual Studio 2019 이상에서는 ATL OLE DB 소비자 마법사를 사용할 �
 
 **ATL OLE DB 소비자 마법사** 를 사용하여 소비자를 만드는 경우, 열 맵에 지정한 각 필드에 대한 데이터 멤버가 사용자 레코드 클래스에 생성됩니다. 각 데이터 멤버는 `DWORD` 형식이며, 해당 필드의 상태 값을 포함합니다.
 
-예를 들어 데이터 멤버 *m_OwnerID* 의 경우 필드 상태에 대한 추가 데이터 멤버( *dwOwnerIDStatus* )와 필드 길이에 대한 다른 데이터 멤버( *dwOwnerIDLength* )가 생성됩니다. 또한 COLUMN_ENTRY_LENGTH_STATUS 항목을 사용하여 열 맵이 생성됩니다.
+예를 들어 데이터 멤버 *m_OwnerID* 의 경우 필드 상태에 대한 추가 데이터 멤버(*dwOwnerIDStatus*)와 필드 길이에 대한 다른 데이터 멤버(*dwOwnerIDLength*)가 생성됩니다. 또한 COLUMN_ENTRY_LENGTH_STATUS 항목을 사용하여 열 맵이 생성됩니다.
 
 이 작업은 다음 코드에서 확인할 수 있습니다.
 

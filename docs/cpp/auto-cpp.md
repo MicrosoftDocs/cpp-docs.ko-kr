@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: `auto` (c + +)'
 title: auto(C++)
 ms.date: 12/10/2019
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - auto keyword [C++]
 ms.assetid: e9d495d7-601c-4547-b897-998389a311f4
-ms.openlocfilehash: be268635e61005efbdb01ed8c4eec79c7cb9b800
-ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
+ms.openlocfilehash: 2237c8aa3cb1b1078a8b90ba5a3ba6cba0a7134b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91353040"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319471"
 ---
 # <a name="auto-c"></a>`auto`(C++)
 
@@ -21,7 +22,7 @@ ms.locfileid: "91353040"
 > [!NOTE]
 > C + + 표준에서는이 키워드의 원래 의미와 수정 된 의미를 정의 합니다. Visual Studio 2010 이전에는 **`auto`** 키워드에서 *자동* 저장소 클래스의 변수, 즉 로컬 수명을 가진 변수를 선언 합니다. Visual Studio 2010부터 **`auto`** 키워드는 해당 형식이 선언의 초기화 식에서 추론 되는 변수를 선언 합니다. [ `/Zc:auto`&#91; &#93;](../build/reference/zc-auto-deduce-variable-type.md) 컴파일러 옵션은 키워드의 의미를 제어 합니다 **`auto`** .
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **`auto`***선언 자* *이니셜라이저***`;`**
 

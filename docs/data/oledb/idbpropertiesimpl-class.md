@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: IDBPropertiesImpl 클래스'
 title: IDBPropertiesImpl 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - GetPropertyInfo method
 - SetProperties method
 ms.assetid: a7f15a8b-95b2-4316-b944-d5d03f8d74ab
-ms.openlocfilehash: d94c5d121386989d223a55b8ce7626444c3f8950
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: e8384086de5b61422cd63e2dc3fbda0cfe040843
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509069"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317495"
 ---
 # <a name="idbpropertiesimpl-class"></a>IDBPropertiesImpl 클래스
 
@@ -52,7 +53,7 @@ class ATL_NO_VTABLE IDBPropertiesImpl
 
 ### <a name="interface-methods"></a>인터페이스 메서드
 
-| 속성 | 설명 |
+| Name | 설명 |
 |-|-|
 |[GetProperties](#getproperties)|데이터 원본 개체에 현재 설정 된 데이터 원본, 데이터 원본 정보 및 초기화 속성 그룹의 속성 값 또는 현재 열거자에 설정 된 초기화 속성 그룹의 속성 값을 반환 합니다.|
 |[GetPropertyInfo](#getpropertyinfo)|공급자가 지 원하는 모든 속성에 대 한 정보를 반환 합니다.|
@@ -77,7 +78,7 @@ STDMETHOD(GetProperties)(ULONG cPropertySets,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [IDBProperties:: GetProperties](/previous-versions/windows/desktop/ms714344(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [IDBProperties:: GetProperties](/previous-versions/windows/desktop/ms714344(v=vs.85)) 를 참조 하세요.
 
 일부 매개 변수는에서 설명 하는 다양 한 이름의 *프로그래머 참조* 매개 변수 OLE DB에 해당 합니다 `IDBProperties::GetProperties` .
 
@@ -108,7 +109,7 @@ STDMETHOD(GetPropertyInfo)(ULONG cPropertySets,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [IDBProperties:: GetPropertyInfo](/previous-versions/windows/desktop/ms718175(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [IDBProperties:: GetPropertyInfo](/previous-versions/windows/desktop/ms718175(v=vs.85)) 를 참조 하세요.
 
 일부 매개 변수는에서 설명 하는 다양 한 이름의 *프로그래머 참조* 매개 변수 OLE DB에 해당 합니다 `IDBProperties::GetPropertyInfo` .
 
@@ -134,7 +135,7 @@ STDMETHOD(SetProperties)(ULONG cPropertySets,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [IDBProperties:: SetProperties](/previous-versions/windows/desktop/ms723049(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [IDBProperties:: SetProperties](/previous-versions/windows/desktop/ms723049(v=vs.85)) 를 참조 하세요.
 
 ### <a name="remarks"></a>설명
 

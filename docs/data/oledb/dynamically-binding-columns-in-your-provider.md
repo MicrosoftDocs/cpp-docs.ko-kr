@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 공급자에서 열을 동적으로 바인딩'
 title: 공급자에서 열을 동적으로 바인딩
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - dynamic column binding
 - providers [C++], dynamic column binding
 ms.assetid: 45e811e3-f5a7-4627-98cc-bf817c4e556e
-ms.openlocfilehash: 3eee52004e1418b3e756a78c8c2a04040d0bd7ff
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: a597d03ad9bf5169b4aec7fc6e82f5c49c956f63
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91501855"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317677"
 ---
 # <a name="dynamically-binding-columns-in-your-provider"></a>공급자에서 열을 동적으로 바인딩
 

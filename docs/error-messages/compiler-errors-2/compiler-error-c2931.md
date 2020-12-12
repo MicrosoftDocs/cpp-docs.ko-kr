@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2931'
 title: 컴파일러 오류 C2931
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2931
 ms.assetid: 33430407-b149-4ba3-baf8-b0dae1ea3a5d
-ms.openlocfilehash: 03c5c1865343afdc0fd7a67ce393c7e1a5d2966f
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: a4d659a0529fa80affc6749d150b9a567d015d90
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757698"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97320333"
 ---
 # <a name="compiler-error-c2931"></a>컴파일러 오류 C2931
 

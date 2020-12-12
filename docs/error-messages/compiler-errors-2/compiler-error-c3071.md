@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3071'
 title: 컴파일러 오류 C3071
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3071
 ms.assetid: 69879e66-a60e-4058-9bbd-d5c5e2d8ee37
-ms.openlocfilehash: 26a95b18970aef450c6fdf718910aa3f816fd778
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: f99175021b87cb9c27982121567bbb0dd97b0163
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74759414"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97320412"
 ---
 # <a name="compiler-error-c3071"></a>컴파일러 오류 C3071
 

@@ -1,26 +1,27 @@
 ---
+description: '자세한 정보: OLE DB 소비자 템플릿 사용'
 title: OLE DB 소비자 템플릿 작업
 ms.date: 10/24/2018
 helpviewer_keywords:
 - sample applications [C++], OLE DB Templates
 - OLE DB consumer templates, about consumer templates
 ms.assetid: 526aa897-5961-4396-85cb-c84f77113551
-ms.openlocfilehash: f1cc18d2192a42d22e31ee346f1e233cd7615ac0
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 62d4920ab38cf960a3dec0bf8845016a42d798a9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80209263"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319081"
 ---
 # <a name="working-with-ole-db-consumer-templates"></a>OLE DB 소비자 템플릿 작업
 
 다음 항목에서는 일반적인 시나리오에서 OLE DB 소비자 템플릿을 사용 하는 방법에 대 한 몇 가지 예를 제공 합니다.
 
-- [데이터베이스 특성을 사용하여 데이터 액세스 단순화](../../data/oledb/simplifying-data-access-with-database-attributes.md)
+- [데이터베이스 특성을 사용 하 여 데이터 액세스 간소화](../../data/oledb/simplifying-data-access-with-database-attributes.md)
 
-- [마법사 생성 접근자의 필드 상태 데이터 멤버](../../data/oledb/field-status-data-members-in-wizard-generated-accessors.md)
+- [Wizard-Generated 접근자의 필드 상태 데이터 멤버](../../data/oledb/field-status-data-members-in-wizard-generated-accessors.md)
 
-- [단순 행 집합 검색](../../data/oledb/traversing-a-simple-rowset.md)
+- [단순 행 집합 트래버스](../../data/oledb/traversing-a-simple-rowset.md)
 
 - [매개 변수가 있는 쿼리 실행](../../data/oledb/issuing-a-parameterized-query.md)
 
@@ -32,7 +33,7 @@ ms.locfileid: "80209263"
 
 - [접근자 사용](../../data/oledb/using-accessors.md)
 
-- [스키마 행 집합을 사용하여 메타데이터 구하기](../../data/oledb/obtaining-metadata-with-schema-rowsets.md)
+- [스키마 행 집합을 사용 하 여 메타 데이터 가져오기](../../data/oledb/obtaining-metadata-with-schema-rowsets.md)
 
 - [OLE DB에서 트랜잭션 지원](../../data/oledb/supporting-transactions-in-ole-db.md)
 
@@ -40,13 +41,13 @@ ms.locfileid: "80209263"
 
 - [기존 ADO 레코드 집합 사용](../../data/oledb/using-an-existing-ado-recordset.md)
 
-- [다른 테이블에 행에 대한 참조가 들어 있는 경우의 열 업데이트](../../data/oledb/updating-a-column-when-another-table-contains-a-reference-to-the-row.md)
+- [다른 테이블에 행에 대 한 참조가 포함 된 경우 열 업데이트](../../data/oledb/updating-a-column-when-another-table-contains-a-reference-to-the-row.md)
 
 - [책갈피 사용](../../data/oledb/using-bookmarks.md)
 
 - [BLOB 검색](../../data/oledb/retrieving-a-blob.md)
 
-- [알림 수신](../../data/oledb/receiving-notifications.md)
+- [알림 받기](../../data/oledb/receiving-notifications.md)
 
 OLE DB 소비자를 만들고 구현 하는 예제는 [간단한 소비자 만들기](../../data/oledb/creating-an-ole-db-consumer.md)를 참조 하세요.
 
@@ -56,7 +57,7 @@ OLE DB 소비자를 만들고 구현 하는 예제는 [간단한 소비자 만�
 
 - [DBViewer](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer)
 
-- [다중 읽기](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer)
+- [MultiRead](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer)
 
 ## <a name="see-also"></a>참고 항목
 

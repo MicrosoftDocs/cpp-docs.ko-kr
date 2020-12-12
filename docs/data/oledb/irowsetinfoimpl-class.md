@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: IRowsetInfoImpl 클래스'
 title: IRowsetInfoImpl 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - GetReferencedRowset method
 - GetSpecification method
 ms.assetid: 9c654155-7727-464e-bd31-143e68391a47
-ms.openlocfilehash: 7ceaf30318c176b13cb6f81c8401501863b988a4
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: cc51a32b6bee62ef7343bf134b3f1bc4099b8562
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504054"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317365"
 ---
 # <a name="irowsetinfoimpl-class"></a>IRowsetInfoImpl 클래스
 
@@ -51,7 +52,7 @@ class ATL_NO_VTABLE IRowsetInfoImpl :
 에서 파생 된 클래스 `IRowsetInfoImpl` 입니다.
 
 *PropClass*<br/>
-*T*를 기본값으로 사용 하는 사용자 정의 가능한 속성 클래스입니다.
+*T* 를 기본값으로 사용 하는 사용자 정의 가능한 속성 클래스입니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -61,7 +62,7 @@ class ATL_NO_VTABLE IRowsetInfoImpl :
 
 ### <a name="interface-methods"></a>인터페이스 메서드
 
-| 속성 | 설명 |
+| Name | 설명 |
 |-|-|
 |[GetProperties](#getproperties)|행 집합에서 지원하는 모든 속성의 현재 설정을 반환합니다.|
 |[GetReferencedRowset](#getreferencedrowset)|책갈피가 적용 되는 행 집합에 대 한 인터페이스 포인터를 반환 합니다.|
@@ -86,7 +87,7 @@ STDMETHOD (GetProperties )(const ULONG cPropertyIDSets,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [IRowsetInfo:: GetProperties](/previous-versions/windows/desktop/ms719611(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [IRowsetInfo:: GetProperties](/previous-versions/windows/desktop/ms719611(v=vs.85)) 를 참조 하세요.
 
 ## <a name="irowsetinfoimplgetreferencedrowset"></a><a name="getreferencedrowset"></a> IRowsetInfoImpl:: GetReferencedRowset
 
@@ -102,7 +103,7 @@ STDMETHOD (GetReferencedRowset )(DBORDINAL iOrdinal,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [IRowsetInfo:: GetReferencedRowset](/previous-versions/windows/desktop/ms721145(v=vs.85)) 을 참조 하세요. *Iordinal* 매개 변수는 책갈피 열 이어야 합니다.
+*OLE DB 프로그래머 참조* 에서 [IRowsetInfo:: GetReferencedRowset](/previous-versions/windows/desktop/ms721145(v=vs.85)) 을 참조 하세요. *Iordinal* 매개 변수는 책갈피 열 이어야 합니다.
 
 ## <a name="irowsetinfoimplgetspecification"></a><a name="getspecification"></a> IRowsetInfoImpl:: GetSpecification
 
@@ -117,7 +118,7 @@ STDMETHOD (GetSpecification )(REFIID riid,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [IRowsetInfo:: getspecification](/previous-versions/windows/desktop/ms716746(v=vs.85)) 을 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [IRowsetInfo:: getspecification](/previous-versions/windows/desktop/ms716746(v=vs.85)) 을 참조 하세요.
 
 ### <a name="remarks"></a>설명
 

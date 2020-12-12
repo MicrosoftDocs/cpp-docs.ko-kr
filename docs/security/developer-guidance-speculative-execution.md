@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: c + + 개발자 지침에서 잘못 실행 채널에 대 한 지침'
 title: 잘못 실행 되는 채널에 대 한 c + + 개발자 지침
 ms.date: 07/10/2018
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Spectre
 - CVE-2017-5753
 - Speculative Execution
-ms.openlocfilehash: 72dffd25eef847d1bdffe61c4a18a27d9cb33644
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 41376f02c04a9baf83fec19791d77c169c73fa31
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842457"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97320081"
 ---
 # <a name="c-developer-guidance-for-speculative-execution-side-channels"></a>잘못 실행 되는 채널에 대 한 c + + 개발자 지침
 
@@ -51,13 +52,13 @@ unsigned char ReadByte(unsigned char *buffer, unsigned int buffer_size, unsigned
 
 CPU가이 misprediction를 검색 하는 동안에는의 범위에서 읽어온 바이트 값에 대 한 정보를 표시 하는 나머지 부작용이 CPU 캐시에 남아 있을 수 있습니다 `buffer` . 이러한 부작용은의 각 캐시 라인에 얼마나 빨리 액세스 되는지 검색 하 여 시스템에서 실행 되는 낮은 권한의 컨텍스트를 통해 검색할 수 있습니다 `shared_buffer` . 이를 수행 하기 위해 수행할 수 있는 단계는 다음과 같습니다.
 
-1. ** `ReadByte` `untrusted_index` 보다 `buffer_size` 작은를 사용 하 여를 여러 번 호출 **합니다. 공격 컨텍스트는 `ReadByte` 분기 예측 자가 보다 낮은 수준으로 사용 되지 않도록 교육을 수행 하도록 공격 대상 컨텍스트 (예: RPC를 통해)를 호출할 수 있습니다 `untrusted_index` `buffer_size` .
+1. **`ReadByte` `untrusted_index` 보다 `buffer_size` 작은를 사용 하 여를 여러 번 호출** 합니다. 공격 컨텍스트는 `ReadByte` 분기 예측 자가 보다 낮은 수준으로 사용 되지 않도록 교육을 수행 하도록 공격 대상 컨텍스트 (예: RPC를 통해)를 호출할 수 있습니다 `untrusted_index` `buffer_size` .
 
-2. **의 모든 캐시 줄을 `shared_buffer` 플러시합니다 **. 공격 컨텍스트는에서 참조 하는 메모리의 공유 영역에 있는 모든 캐시 줄을 플러시합니다 `shared_buffer` . 메모리 영역이 공유 되므로이는 간단 하며와 같은 내장 함수를 사용 하 여 수행할 수 있습니다 `_mm_clflush` .
+2. **의 모든 캐시 줄을 `shared_buffer` 플러시합니다**. 공격 컨텍스트는에서 참조 하는 메모리의 공유 영역에 있는 모든 캐시 줄을 플러시합니다 `shared_buffer` . 메모리 영역이 공유 되므로이는 간단 하며와 같은 내장 함수를 사용 하 여 수행할 수 있습니다 `_mm_clflush` .
 
-3. ** `ReadByte` `untrusted_index` 보다 `buffer_size` 큰를 사용 하 여를 호출 **합니다. 공격 컨텍스트는 분기를 사용 `ReadByte` 하지 않을 것으로 잘못 예측 하는 공격 컨텍스트를 호출 합니다. 이로 인해 프로세서에서 speculatively가 보다 큰 경우의 본문을 실행 하 여 `untrusted_index` `buffer_size` 의 범위를 벗어난 읽기로 돌아갑니다 `buffer` . 따라서 `shared_buffer` 는 범위를 벗어나는 잠재적 비밀 값을 사용 하 여 인덱싱됩니다. 따라서 CPU에서 각 캐시 줄을 로드 합니다.
+3. **`ReadByte` `untrusted_index` 보다 `buffer_size` 큰를 사용 하 여를 호출** 합니다. 공격 컨텍스트는 분기를 사용 `ReadByte` 하지 않을 것으로 잘못 예측 하는 공격 컨텍스트를 호출 합니다. 이로 인해 프로세서에서 speculatively가 보다 큰 경우의 본문을 실행 하 여 `untrusted_index` `buffer_size` 의 범위를 벗어난 읽기로 돌아갑니다 `buffer` . 따라서 `shared_buffer` 는 범위를 벗어나는 잠재적 비밀 값을 사용 하 여 인덱싱됩니다. 따라서 CPU에서 각 캐시 줄을 로드 합니다.
 
-4. **에서 각 캐시 줄 `shared_buffer` 을 읽어 가장 빠르게 액세스 하**는를 확인 합니다. 공격 컨텍스트는의 각 캐시 줄을 읽고 `shared_buffer` 다른 항목 보다 훨씬 빠르게 로드 되는 캐시 줄을 검색할 수 있습니다. 3 단계에서 가져온 것으로 예상 되는 캐시 줄입니다. 이 예제에서 바이트 값과 캐시 줄 간에 1:1 관계가 있으므로 공격자는 범위를 벗어난 읽은 바이트의 실제 값을 유추할 수 있습니다.
+4. **에서 각 캐시 줄 `shared_buffer` 을 읽어 가장 빠르게 액세스 하** 는를 확인 합니다. 공격 컨텍스트는의 각 캐시 줄을 읽고 `shared_buffer` 다른 항목 보다 훨씬 빠르게 로드 되는 캐시 줄을 검색할 수 있습니다. 3 단계에서 가져온 것으로 예상 되는 캐시 줄입니다. 이 예제에서 바이트 값과 캐시 줄 간에 1:1 관계가 있으므로 공격자는 범위를 벗어난 읽은 바이트의 실제 값을 유추할 수 있습니다.
 
 위의 단계는 CVE-2017-5753의 인스턴스를 악용 하는 것과 함께 FLUSH + RELOAD 라는 기법을 사용 하는 예를 제공 합니다.
 
@@ -69,9 +70,9 @@ SDL ( [보안 개발 수명 주기](https://www.microsoft.com/sdl/) )과 같은 
 
 |트러스트 경계|설명|
 |----------------|----------------|
-|가상 컴퓨터 경계|다른 가상 컴퓨터에서 신뢰할 수 없는 데이터를 수신 하는 별도의 가상 컴퓨터에서 워크 로드를 격리 하는 응용 프로그램은 위험이 있을 수 있습니다.|
+|가상 머신 경계 |다른 가상 컴퓨터에서 신뢰할 수 없는 데이터를 수신 하는 별도의 가상 컴퓨터에서 워크 로드를 격리 하는 응용 프로그램은 위험이 있을 수 있습니다.|
 |커널 경계|관리자가 아닌 사용자 모드 프로세스에서 신뢰할 수 없는 데이터를 받는 커널 모드 장치 드라이버는 위험할 수 있습니다.|
-|프로세스 경계|RPC (원격 프로시저 호출), 공유 메모리 또는 다른 IPC (프로세스 간 통신) 메커니즘과 같이 로컬 시스템에서 실행 되는 다른 프로세스에서 신뢰할 수 없는 데이터를 수신 하는 응용 프로그램은 위험할 수 있습니다.|
+|프로세스 경계 |RPC (원격 프로시저 호출), 공유 메모리 또는 IPC (기타 Inter-Process 통신) 메커니즘과 같이 로컬 시스템에서 실행 되는 다른 프로세스에서 신뢰할 수 없는 데이터를 받는 응용 프로그램은 위험할 수 있습니다.|
 |Enclave 경계|Enclave 외부에서 신뢰할 수 없는 데이터를 수신 하는 보안 enclave (예: Intel SGX) 내에서 실행 되는 응용 프로그램은 위험이 있을 수 있습니다.|
 |언어 경계|JIT (Just-in-time)를 해석 하는 응용 프로그램은 더 높은 수준의 언어로 작성 된 신뢰할 수 없는 코드를 컴파일하고 실행 하는 것은 위험할 수 있습니다.|
 
@@ -302,13 +303,13 @@ void DispatchMessage(unsigned int untrusted_message_id, unsigned char *buffer, u
 
 ## <a name="mitigation-options"></a>해결 방법 옵션
 
-소스 코드를 변경 하 여 잘못 된 실행 측 채널 취약성을 완화할 수 있습니다. 이러한 변경 내용에는 *추론 장벽을*추가 하거나 중요 한 정보를 잘못 된 실행에 액세스할 수 없도록 응용 프로그램의 디자인을 변경 하는 등 특정 취약점의 특정 인스턴스를 완화 하는 작업이 포함 될 수 있습니다.
+소스 코드를 변경 하 여 잘못 된 실행 측 채널 취약성을 완화할 수 있습니다. 이러한 변경 내용에는 *추론 장벽을* 추가 하거나 중요 한 정보를 잘못 된 실행에 액세스할 수 없도록 응용 프로그램의 디자인을 변경 하는 등 특정 취약점의 특정 인스턴스를 완화 하는 작업이 포함 될 수 있습니다.
 
 ### <a name="speculation-barrier-via-manual-instrumentation"></a>수동 계측을 통해 장벽 추론
 
 개발자는 *추론 장벽을* 수동으로 삽입 하 여 비 아키텍처 경로를 따라 잘못 실행 되는 것을 방지할 수 있습니다. 예를 들어 개발자는 조건부 블록의 시작 부분 (조건부 분기 이후) 이나 중요 한 첫 번째 로드 전에 조건부 블록의 본문에서 위험한 코딩 패턴 앞에 추론 장벽을 삽입할 수 있습니다. 이렇게 하면 조건부 분기 misprediction 실행을 serialize 하 여 비 아키텍처 경로에서 위험한 코드를 실행할 수 없습니다. 추론 장벽 시퀀스는 다음 표에 설명 된 대로 하드웨어 아키텍처에 따라 달라 집니다.
 
-|아키텍처|CVE-2017-5753에 대 한 추론 장벽 내장 함수|CVE-2018-3639에 대 한 추론 장벽 내장 함수|
+|Architecture|CVE-2017-5753에 대 한 추론 장벽 내장 함수|CVE-2018-3639에 대 한 추론 장벽 내장 함수|
 |----------------|----------------|----------------|
 |x86/x64|_mm_lfence ()|_mm_lfence ()|
 |ARM|현재 사용할 수 없음|__dsb (0)|

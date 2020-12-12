@@ -1,4 +1,5 @@
 ---
+description: '다음에 대해 자세히 알아보세요. Rvalue 참조 선언 자: &amp;&amp;'
 title: 'Rvalue 참조 선언 자: &amp;&amp;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - '&& rvalue reference declarator'
 ms.assetid: eab0ce3a-c5a3-4992-aa70-6a8ab1f7491d
-ms.openlocfilehash: 953aafe79115ad32a172c878eb910dd06b81e3f4
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 6c88116c5834c027d72874d1377e79799faa80ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842041"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319380"
 ---
 # <a name="rvalue-reference-declarator-ampamp"></a>Rvalue 참조 선언 자: &amp;&amp;
 
@@ -27,11 +28,11 @@ type-id && cast-expression
 
 rvalue 참조를 사용하면 lvalue와 rvalue를 구별할 수 있습니다. lvalue 참조와 rvalue 참조는 구문 및 의미 체계가 비슷하지만 다소 다른 규칙을 따릅니다. Lvalue 및 rvalue에 대 한 자세한 내용은 [lvalue 및 rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md)를 참조 하세요. Lvalue 참조에 대 한 자세한 내용은 [Lvalue 참조 선언 자: &](../cpp/lvalue-reference-declarator-amp.md)를 참조 하세요.
 
-다음 섹션에서는 rvalue 참조가 *의미 체계 이동* 및 *완벽 한 전달*의 구현을 지 원하는 방법을 설명 합니다.
+다음 섹션에서는 rvalue 참조가 *의미 체계 이동* 및 *완벽 한 전달* 의 구현을 지 원하는 방법을 설명 합니다.
 
 ## <a name="move-semantics"></a>의미 체계 이동
 
-Rvalue 참조는 응용 프로그램의 성능을 크게 향상 시킬 수 있는 *이동 의미 체계*의 구현을 지원 합니다. 의미 체계 이동을 사용하여 한 개체에서 다른 개체로 리소스(예: 동적으로 할당된 메모리)를 전송하는 코드를 작성할 수 있습니다. 의미 체계 이동은 리소스가 프로그램의 다른 곳에서 참조될 수 없는 임시 개체에서 전송될 수 있도록 하기 때문에 작동합니다.
+Rvalue 참조는 응용 프로그램의 성능을 크게 향상 시킬 수 있는 *이동 의미 체계* 의 구현을 지원 합니다. 의미 체계 이동을 사용하여 한 개체에서 다른 개체로 리소스(예: 동적으로 할당된 메모리)를 전송하는 코드를 작성할 수 있습니다. 의미 체계 이동은 리소스가 프로그램의 다른 곳에서 참조될 수 없는 임시 개체에서 전송될 수 있도록 하기 때문에 작동합니다.
 
 이동 의미 체계를 구현 하려면 일반적으로 *이동 생성자를* 제공 하 고 필요에 따라 이동 할당 연산자 (**operator =**)를 클래스에 제공 합니다. 이렇게 하면 해당 소스가 rvalue인 복사 및 할당 작업에서 자동으로 의미 체계 이동을 활용합니다. 기본 복사 생성자와 달리, 컴파일러는 기본 이동 생성자를 제공하지 않습니다. 이동 생성자를 작성 하는 방법과 응용 프로그램에서이 생성자를 사용 하는 방법에 대 한 자세한 내용은 [이동 생성자 및 이동 할당 연산자 (c + +)](../cpp/move-constructors-and-move-assignment-operators-cpp.md)를 참조 하세요.
 
@@ -63,7 +64,7 @@ Visual Studio 2010에서 c + + 표준 라이브러리에 의미 체계 이동을
 
 ## <a name="perfect-forwarding"></a>완벽한 전달
 
-완벽한 전달은 오버로드된 함수의 필요성을 줄이고 전달 문제를 방지하는 데 도움이 됩니다. *전달 문제* 는 참조를 매개 변수로 사용 하는 제네릭 함수를 작성 하 고 이러한 매개 변수를 다른 함수에 전달 하거나 *전달*하는 경우에 발생할 수 있습니다. 예를 들어 제네릭 함수가 `const T&` 형식의 매개 변수를 사용하는 경우 호출된 함수는 해당 매개 변수의 값을 수정할 수 없습니다. 제네릭 함수가 `T&` 형식의 매개 변수를 사용하는 경우에는 rvalue(예: 임시 개체 또는 정수 리터럴)를 사용하여 해당 함수를 호출할 수 없습니다.
+완벽한 전달은 오버로드된 함수의 필요성을 줄이고 전달 문제를 방지하는 데 도움이 됩니다. *전달 문제* 는 참조를 매개 변수로 사용 하는 제네릭 함수를 작성 하 고 이러한 매개 변수를 다른 함수에 전달 하거나 *전달* 하는 경우에 발생할 수 있습니다. 예를 들어 제네릭 함수가 `const T&` 형식의 매개 변수를 사용하는 경우 호출된 함수는 해당 매개 변수의 값을 수정할 수 없습니다. 제네릭 함수가 `T&` 형식의 매개 변수를 사용하는 경우에는 rvalue(예: 임시 개체 또는 정수 리터럴)를 사용하여 해당 함수를 호출할 수 없습니다.
 
 일반적으로 이 문제를 해결하려면 각 매개 변수에 대해 `T&` 및 `const T&`를 둘 다 사용하는 제네릭 함수의 오버로드된 버전을 제공해야 합니다. 따라서 오버로드된 함수의 수가 매개 변수의 수와 함께 급격하게 증가합니다. rvalue 참조를 사용하면 마치 다른 함수가 직접 호출된 것처럼 임의의 인수를 받아들여 다른 함수에 전달하는 함수의 버전을 작성할 수 있습니다.
 
@@ -281,7 +282,7 @@ In g(MemoryBlock&&).
 
 **함수 템플릿은 해당 템플릿 인수 형식을 추론한 다음 참조 축소 규칙을 사용합니다.**
 
-매개 변수를 다른 함수에 *전달 하거나 전달*하는 함수 템플릿을 작성 하는 것이 일반적입니다. 템플릿 형식 추론이 rvalue 참조를 사용하는 함수 템플릿에 대해 어떻게 작용하는지를 이해해야 합니다.
+매개 변수를 다른 함수에 *전달 하거나 전달* 하는 함수 템플릿을 작성 하는 것이 일반적입니다. 템플릿 형식 추론이 rvalue 참조를 사용하는 함수 템플릿에 대해 어떻게 작용하는지를 이해해야 합니다.
 
 함수 인수가 rvalue이면 컴파일러는 인수를 rvalue 참조로 추론합니다. 예를 들어 `X` 형식을 매개 변수로 사용하는 템플릿 함수에 `T&&` 형식의 개체에 대한 rvalue 참조를 전달하는 경우, 템플릿 인수 추론에서는 `T`가 `X`인 것으로 추론합니다. 따라서 매개 변수의 형식은 `X&&` 입니다. 함수 인수가 lvalue 또는 lvalue 인 경우 **`const`** 컴파일러는 해당 형식을 해당 형식의 lvalue 참조 또는 lvalue 참조로 추론 합니다 **`const`** .
 
@@ -410,4 +411,4 @@ rvalue 참조는 rvalue와 lvalue를 구별합니다. rvalue 참조는 불필요
 [Lvalue 참조 선언자: &](../cpp/lvalue-reference-declarator-amp.md)<br/>
 [Lvalues 및 Rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md)<br/>
 [이동 생성자 및 이동 할당 연산자(C++)](../cpp/move-constructors-and-move-assignment-operators-cpp.md)<br/>
-[C + + 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)
+[C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: IRowsetUpdateImpl 클래스'
 title: IRowsetUpdateImpl 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -49,12 +50,12 @@ helpviewer_keywords:
 - IsUpdateAllowed method
 - m_mapCachedData
 ms.assetid: f85af76b-ab6f-4f8b-8f4a-337c9679d68f
-ms.openlocfilehash: 88ee9257655c96195339ded79f2dd4d3b7c7caf5
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: f040ed902b867059636a16bf635dc5c526b8ba1b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509779"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317248"
 ---
 # <a name="irowsetupdateimpl-class"></a>IRowsetUpdateImpl 클래스
 
@@ -104,13 +105,13 @@ class IRowsetUpdateImpl : public IRowsetChangeImpl<
 
 ### <a name="interface-methods-used-with-irowsetchange"></a>인터페이스 메서드 (IRowsetChange와 함께 사용 됨)
 
-| 속성 | 설명 |
+| Name | 설명 |
 |-|-|
 |[SetData](#setdata)|하나 이상의 열에 데이터 값을 설정 합니다.|
 
 ### <a name="interface-methods-used-with-irowsetupdate"></a>인터페이스 메서드 (IRowsetUpdate와 함께 사용 됨)
 
-| 속성 | 설명 |
+| Name | 설명 |
 |-|-|
 |[GetOriginalData](#getoriginaldata)|보류 중인 변경 내용을 무시 하 고 데이터 원본에서 가장 최근에 전송 되거나 데이터 원본에서 가져온 데이터를 가져옵니다.|
 |[GetPendingRows](#getpendingrows)|보류 중인 변경 내용이 있는 행의 목록을 반환 합니다.|
@@ -120,13 +121,13 @@ class IRowsetUpdateImpl : public IRowsetChangeImpl<
 
 ### <a name="implementation-methods-callback"></a>구현 메서드 (콜백)
 
-| 속성 | 설명 |
+| Name | 설명 |
 |-|-|
 |[IsUpdateAllowed](#isupdateallowed)|업데이트를 허용 하기 전에 보안, 무결성 등을 확인 하는 데 사용 됩니다.|
 
 ### <a name="data-members"></a>데이터 멤버
 
-| 속성 | 설명 |
+| Name | 설명 |
 |-|-|
 |[m_mapCachedData](#mapcacheddata)|지연 된 작업의 원래 데이터를 포함 합니다.|
 
@@ -159,7 +160,7 @@ STDMETHOD (SetData )(HROW hRow,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [IRowsetChange:: SetData](/previous-versions/windows/desktop/ms721232(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [IRowsetChange:: SetData](/previous-versions/windows/desktop/ms721232(v=vs.85)) 를 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
@@ -179,7 +180,7 @@ STDMETHOD (GetOriginalData )(HROW hRow,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [IRowsetUpdate:: getoriginaldata](/previous-versions/windows/desktop/ms709947(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [IRowsetUpdate:: getoriginaldata](/previous-versions/windows/desktop/ms709947(v=vs.85)) 를 참조 하세요.
 
 ## <a name="irowsetupdateimplgetpendingrows"></a><a name="getpendingrows"></a> IRowsetUpdateImpl:: GetPendingRows
 
@@ -200,11 +201,11 @@ STDMETHOD (GetPendingRows )(HCHAPTER /* hReserved */,
 *hReserved*<br/>
 진행 [IRowsetUpdate:: GetPendingRows](/previous-versions/windows/desktop/ms719626(v=vs.85))의 *hchapter* 매개 변수에 해당 합니다.
 
-다른 매개 변수는 *OLE DB 프로그래머 참조*에서 [IRowsetUpdate:: getpendingrows](/previous-versions/windows/desktop/ms719626(v=vs.85)) 를 참조 하세요.
+다른 매개 변수는 *OLE DB 프로그래머 참조* 에서 [IRowsetUpdate:: getpendingrows](/previous-versions/windows/desktop/ms719626(v=vs.85)) 를 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 *OLE DB 프로그래머 참조*에서 [IRowsetUpdate:: getpendingrows](/previous-versions/windows/desktop/ms719626(v=vs.85)) 를 참조 하세요.
+자세한 내용은 *OLE DB 프로그래머 참조* 에서 [IRowsetUpdate:: getpendingrows](/previous-versions/windows/desktop/ms719626(v=vs.85)) 를 참조 하세요.
 
 ## <a name="irowsetupdateimplgetrowstatus"></a><a name="getrowstatus"></a> IRowsetUpdateImpl:: GetRowStatus
 
@@ -224,7 +225,7 @@ STDMETHOD (GetRowStatus )(HCHAPTER /* hReserved */,
 *hReserved*<br/>
 진행 [IRowsetUpdate:: GetRowStatus](/previous-versions/windows/desktop/ms724377(v=vs.85))의 *hchapter* 매개 변수에 해당 합니다.
 
-다른 매개 변수는 *OLE DB 프로그래머 참조*에서 [IRowsetUpdate:: GetRowStatus](/previous-versions/windows/desktop/ms724377(v=vs.85)) 를 참조 하세요.
+다른 매개 변수는 *OLE DB 프로그래머 참조* 에서 [IRowsetUpdate:: GetRowStatus](/previous-versions/windows/desktop/ms724377(v=vs.85)) 를 참조 하세요.
 
 ## <a name="irowsetupdateimplundo"></a><a name="undo"></a> IRowsetUpdateImpl:: Undo
 
@@ -252,7 +253,7 @@ STDMETHOD (Undo )(HCHAPTER /* hReserved */,
 *prgRowsUndone*<br/>
 진행 [IRowsetUpdate:: Undo](/previous-versions/windows/desktop/ms719655(v=vs.85))의 *prgrows* 매개 변수에 해당 합니다.
 
-다른 매개 변수는 *OLE DB 프로그래머 참조*에서 [IRowsetUpdate:: Undo](/previous-versions/windows/desktop/ms719655(v=vs.85)) 를 참조 하세요.
+다른 매개 변수는 *OLE DB 프로그래머 참조* 에서 [IRowsetUpdate:: Undo](/previous-versions/windows/desktop/ms719655(v=vs.85)) 를 참조 하세요.
 
 ## <a name="irowsetupdateimplupdate"></a><a name="update"></a> IRowsetUpdateImpl:: Update
 
@@ -274,11 +275,11 @@ STDMETHOD (Update )(HCHAPTER /* hReserved */,
 *hReserved*<br/>
 진행 [IRowsetUpdate:: Update](/previous-versions/windows/desktop/ms719709(v=vs.85))의 *hchapter* 매개 변수에 해당 합니다.
 
-다른 매개 변수는 *OLE DB 프로그래머 참조*에서 [IRowsetUpdate:: Update](/previous-versions/windows/desktop/ms719709(v=vs.85)) 를 참조 하세요.
+다른 매개 변수는 *OLE DB 프로그래머 참조* 에서 [IRowsetUpdate:: Update](/previous-versions/windows/desktop/ms719709(v=vs.85)) 를 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
-[IRowsetChangeImpl:: FlushData](./irowsetchangeimpl-class.md#flushdata)를 호출 하 여 변경 내용을 전송 합니다. 소비자는 [CRowset:: Update](./crowset-class.md#update) 를 호출 하 여 변경 내용을 적용 해야 합니다. *OLE DB 프로그래머 참조*의 [행 상태](/previous-versions/windows/desktop/ms722752(v=vs.85)) 에 설명 된 대로 *prgRowstatus* 을 적절 한 값으로 설정 합니다.
+[IRowsetChangeImpl:: FlushData](./irowsetchangeimpl-class.md#flushdata)를 호출 하 여 변경 내용을 전송 합니다. 소비자는 [CRowset:: Update](./crowset-class.md#update) 를 호출 하 여 변경 내용을 적용 해야 합니다. *OLE DB 프로그래머 참조* 의 [행 상태](/previous-versions/windows/desktop/ms722752(v=vs.85)) 에 설명 된 대로 *prgRowstatus* 을 적절 한 값으로 설정 합니다.
 
 ## <a name="irowsetupdateimplisupdateallowed"></a><a name="isupdateallowed"></a> IRowsetUpdateImpl:: IsUpdateAllowed
 

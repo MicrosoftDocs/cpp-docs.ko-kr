@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3070'
 title: 컴파일러 오류 C3070
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3070
 ms.assetid: ac88584d-40a6-4176-90f3-2371c3c935f2
-ms.openlocfilehash: d97550560e12ef9778553a809e02c1fb0d2d8b19
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 223492901df335102db7285eacaaa946a54e3eaa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74758205"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97320294"
 ---
 # <a name="compiler-error-c3070"></a>컴파일러 오류 C3070
 

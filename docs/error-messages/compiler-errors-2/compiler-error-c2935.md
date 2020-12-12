@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2935'
 title: 컴파일러 오류 C2935
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2935
 ms.assetid: e11ef90d-0756-4e43-8a09-4974c6aa72a3
-ms.openlocfilehash: 676c238dfb0ae78dbe5b144b5242bfb4ccbda76c
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 853c1e51444454ffdbd09e8387d47eb9770d7fa7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756151"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97320307"
 ---
 # <a name="compiler-error-c2935"></a>컴파일러 오류 C2935
 

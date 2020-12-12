@@ -1,4 +1,5 @@
 ---
+description: 다음에 대해 자세히 알아보세요. `selectany`
 title: selectany
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - __declspec keyword [C++], selectany
 - selectany __declspec keyword
 ms.assetid: 9c353017-5a42-4f50-b741-bd13da1ce84d
-ms.openlocfilehash: 6cd2ec4e22d94c42432a1fc3e39afd5540302d22
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: e17ad5787211aacbb206d5e68ba355047711b96a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008214"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319341"
 ---
 # `selectany`
 
@@ -20,7 +21,7 @@ ms.locfileid: "92008214"
 
 선언된 전역 데이터 항목(변수 또는 개체)이 pick-any COMDAT(패키지된 함수)임을 컴파일러에 알립니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **`__declspec( selectany )`***선언 자*
 

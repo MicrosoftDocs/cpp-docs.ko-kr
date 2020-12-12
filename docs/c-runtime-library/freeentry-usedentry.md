@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _FREEENTRY, _USEDENTRY'
 title: _FREEENTRY, _USEDENTRY
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,14 +13,14 @@ helpviewer_keywords:
 - FREEENTRY constant
 - USEDENTRY constant
 ms.assetid: 26f658e6-6846-4a4e-9984-262cfe392770
-ms.openlocfilehash: a8aa11173dcc76089a916d19fd319e0d317724ce
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: 6b4e33cf1afa10966a8562518d5e3ed1134782aa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751937"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319832"
 ---
-# <a name="freeentry-usedentry"></a>_FREEENTRY, _USEDENTRY
+# <a name="_freeentry-_usedentry"></a>_FREEENTRY, _USEDENTRY
 
 ## <a name="syntax"></a>구문
 
@@ -27,7 +28,7 @@ ms.locfileid: "57751937"
 #include <malloc.h>
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 이러한 상수는 `_heapwalk` 루틴에 의해 **_HEAPINFO** 구조체의 **_useflag** 요소에 할당된 값을 나타냅니다. 힙 항목의 상태를 나타냅니다.
 

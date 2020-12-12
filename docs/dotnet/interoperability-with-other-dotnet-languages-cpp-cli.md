@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 다른 .NET 언어와의 상호 운용성 (c + +/CLI)'
 title: 다른 .NET 언어와의 상호 운용성(C++/CLI)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,20 +10,20 @@ helpviewer_keywords:
 - lock statement
 - lock C# keyword [C++]
 ms.assetid: a5902cf8-a14d-4559-aefb-c178615d45bb
-ms.openlocfilehash: ffdf9a8b11912bde38e15408228670c8cff9a503
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 51cead7fcc7dedc05f0225facf10fe70a3d606fd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62188324"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97316611"
 ---
 # <a name="interoperability-with-other-net-languages-ccli"></a>다른 .NET 언어와의 상호 운용성(C++/CLI)
 
-이 섹션의 항목에는 시각적 개체의 어셈블리를 만드는 방법을 보여 줍니다 C++ 을 사용 하거나 작성 하는 어셈블리에 기능을 제공 하는 C# 또는 Visual Basic입니다.
+이 단원의 항목에서는를 사용 하거나 c # 또는 Visual Basic로 작성 된 어셈블리에 기능을 제공 하는 Visual C++에서 어셈블리를 만드는 방법을 보여 줍니다.
 
-## <a name="consume_indexer"></a> C# 인덱서 사용
+## <a name="consume-a-c-indexer"></a><a name="consume_indexer"></a> C # 인덱서 사용
 
-Visual C++ 인덱서; 없습니다 인덱싱된 속성에 해당 합니다. C# 인덱서를 사용 하는 인덱싱된 속성 처럼 인덱서에 액세스 합니다.
+Visual C++에 인덱서가 없습니다. 인덱싱된 속성이 있습니다. C # 인덱서를 사용 하려면 인덱싱된 속성인 것 처럼 인덱서에 액세스 합니다.
 
 인덱서에 대 한 자세한 내용은 다음을 참조 하세요.
 
@@ -30,7 +31,7 @@ Visual C++ 인덱서; 없습니다 인덱싱된 속성에 해당 합니다. C# �
 
 ### <a name="example"></a>예제
 
-다음 C# 프로그램 인덱서를 정의합니다.
+다음 c # 프로그램은 인덱서를 정의 합니다.
 
 ```csharp
 // consume_cs_indexers.cs
@@ -70,7 +71,7 @@ public class MainClass {
 
 ### <a name="example"></a>예제
 
-이 시각적 개체 C++ 프로그램에서는 인덱서를 사용 합니다.
+이 Visual C++ 프로그램은 인덱서를 사용 합니다.
 
 ```cpp
 // consume_cs_indexers_2.cpp
@@ -100,9 +101,9 @@ Element #9 = 0
 Element #10 = 0
 ```
 
-## <a name="implement_isas"></a> 구현 됩니다 및 as C# 키워드
+## <a name="implement-is-and-as-c-keywords"></a><a name="implement_isas"></a> Is 및 as c # 키워드 구현
 
-이 항목에서는의 기능을 구현 하는 방법을 보여 줍니다.는 `is` 하 고 `as` C# 시각적 개체에 대 한 키워드 C++합니다.
+이 항목에서는 `is` `as` Visual C++에서 및 c # 키워드의 기능을 구현 하는 방법을 보여 줍니다.
 
 ### <a name="example"></a>예제
 
@@ -141,11 +142,11 @@ int main() {
 o is a string
 ```
 
-## <a name="implement_locak"></a> Lock C# 키워드 구현
+## <a name="implement-the-lock-c-keyword"></a><a name="implement_locak"></a> Lock c # 키워드 구현
 
-이 항목에서는 구현 하는 방법을 보여 줍니다.는 C# `lock` 시각적 개체에 키워드 C++합니다.
+이 항목에서는 Visual C++에서 c # 키워드를 구현 하는 방법을 보여 줍니다 `lock` .
 
-사용할 수도 있습니다는 `lock` 클래스는 C++ 지원 라이브러리입니다. 참조 [동기화 (lock 클래스)](../dotnet/synchronization-lock-class.md) 자세한 내용은 합니다.
+`lock`C + + 지원 라이브러리에서 클래스를 사용할 수도 있습니다. 자세한 내용은 [동기화 (Lock 클래스)](../dotnet/synchronization-lock-class.md) 를 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -184,6 +185,6 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[C++/CLI를 사용한 .NET 프로그래밍(Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+[C + +/CLI를 사용한 .NET 프로그래밍 (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

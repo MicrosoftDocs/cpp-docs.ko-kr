@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: ICommandPropertiesImpl 클래스'
 title: ICommandPropertiesImpl 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - GetProperties method
 - SetProperties method
 ms.assetid: b3cf6aea-527e-4f0d-96e0-669178b021a2
-ms.openlocfilehash: bd4dd73c79085a2c2d85a5dbacbfd20bc920108e
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: bf6a6f9a3ddd43a61671a85a791d63958f63c3e3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91501763"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317569"
 ---
 # <a name="icommandpropertiesimpl-class"></a>ICommandPropertiesImpl 클래스
 
@@ -49,7 +50,7 @@ class ATL_NO_VTABLE ICommandPropertiesImpl
 
 ### <a name="interface-methods"></a>인터페이스 메서드
 
-| 속성 | 설명 |
+| Name | 설명 |
 |-|-|
 |[GetProperties](#getproperties)|행 집합에 대해 현재 요청 된 행 집합 속성 그룹의 속성 목록을 반환 합니다.|
 |[SetProperties](#setproperties)|행 집합 속성 그룹의 속성을 설정 합니다.|
@@ -73,7 +74,7 @@ STDMETHOD(GetProperties)(const ULONG cPropertyIDSets,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [ICommandProperties:: GetProperties](/previous-versions/windows/desktop/ms723119(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [ICommandProperties:: GetProperties](/previous-versions/windows/desktop/ms723119(v=vs.85)) 를 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
@@ -92,7 +93,7 @@ STDMETHOD(SetProperties)(ULONG cPropertySets,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [ICommandProperties:: SetProperties](/previous-versions/windows/desktop/ms711497(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [ICommandProperties:: SetProperties](/previous-versions/windows/desktop/ms711497(v=vs.85)) 를 참조 하세요.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CTaskDialog 클래스'
 title: CTaskDialog Class
 ms.date: 11/19/2018
 f1_keywords:
@@ -116,12 +117,12 @@ helpviewer_keywords:
 - CTaskDialog [MFC], ShowDialog
 - CTaskDialog [MFC], TaskDialogCallback
 ms.assetid: 1991ec98-ae56-4483-958b-233809c8c559
-ms.openlocfilehash: 3fd67eed7e80a2e594710df8ae8bc6fd13f0e96c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 91cd3caec703f8e81116fccd75c0457abb69a3e9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837673"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318587"
 ---
 # <a name="ctaskdialog-class"></a>CTaskDialog Class
 
@@ -409,7 +410,7 @@ CTaskDialog(
 
 를 응용 프로그램에 추가 하는 방법에는 두 가지가 있습니다 `CTaskDialog` . 첫 번째 방법은 생성자 중 하나를 사용 하 여를 만들고 `CTaskDialog` [Ctaskdialog::D omodal](#domodal)을 사용 하 여 표시 하는 것입니다. 두 번째 방법은 정적 함수 [Ctaskdialog:: ShowDialog](#showdialog)를 사용 하는 것입니다 .이 함수를 사용 하면 `CTaskDialog` 개체를 명시적으로 만들지 않고도를 표시할 수 있습니다 `CTaskDialog` .
 
-두 번째 생성자는 응용 프로그램의 리소스 파일에 있는 데이터를 사용 하 여 명령 단추 컨트롤을 만듭니다. 리소스 파일의 문자열 테이블에는 문자열 Id가 연결 된 여러 문자열이 있습니다. 이 메서드는 *nIDCommandControlsFirst* 과 *nCommandControlsLast*사이에 있는 문자열 테이블의 유효한 각 항목에 대 한 명령 단추 컨트롤을 추가 합니다. 이러한 명령 단추 컨트롤의 경우 문자열 테이블의 문자열은 컨트롤의 캡션입니다. 문자열 ID는 컨트롤의 ID입니다.
+두 번째 생성자는 응용 프로그램의 리소스 파일에 있는 데이터를 사용 하 여 명령 단추 컨트롤을 만듭니다. 리소스 파일의 문자열 테이블에는 문자열 Id가 연결 된 여러 문자열이 있습니다. 이 메서드는 *nIDCommandControlsFirst* 과 *nCommandControlsLast* 사이에 있는 문자열 테이블의 유효한 각 항목에 대 한 명령 단추 컨트롤을 추가 합니다. 이러한 명령 단추 컨트롤의 경우 문자열 테이블의 문자열은 컨트롤의 캡션입니다. 문자열 ID는 컨트롤의 ID입니다.
 
 유효한 옵션 목록은 [Ctaskdialog:: SetOptions](#setoptions) 를 참조 하세요.
 
@@ -716,7 +717,7 @@ void NavigateTo(CTaskDialog& oTaskDialog) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 `CTaskDialog` *Otaskdialog*가 표시 될 때 현재를 숨깁니다. *Otaskdialog* 는 현재와 동일한 위치에 표시 됩니다 `CTaskDialog` .
+이 메서드는 `CTaskDialog` *Otaskdialog* 가 표시 될 때 현재를 숨깁니다. *Otaskdialog* 는 현재와 동일한 위치에 표시 됩니다 `CTaskDialog` .
 
 ## <a name="ctaskdialogoncommandcontrolclick"></a><a name="oncommandcontrolclick"></a> CTaskDialog:: OnCommandControlClick
 
@@ -1004,7 +1005,7 @@ Ctaskdialog [:: ctaskdialog](#ctaskdialog) 생성자와 [Ctaskdialog:: SetCommon
 
 이 메서드를 사용 하 여이에 사용할 수 없는 일반 단추를 사용 하거나 사용 하지 않도록 설정 하는 경우 `CTaskDialog` 이 메서드는 [확인](diagnostic-services.md#ensure) 매크로를 사용 하 여 예외를 throw 합니다.
 
-이 메서드는에 사용할 수 있지만 이전에는 `CTaskDialog` 사용 하지 않도록 설정 했더라도 *nDisabledButtonMask*에 없는 모든 단추를 사용 하도록 설정 합니다. 이 메서드는 비슷한 방식으로 권한 상승을 처리 합니다. 공용 단추를 사용할 수 있지만 *nElevationButtonMask*에 포함 되지 않은 경우에는 권한 상승이 필요 하지 않은 일반 단추를 기록 합니다.
+이 메서드는에 사용할 수 있지만 이전에는 `CTaskDialog` 사용 하지 않도록 설정 했더라도 *nDisabledButtonMask* 에 없는 모든 단추를 사용 하도록 설정 합니다. 이 메서드는 비슷한 방식으로 권한 상승을 처리 합니다. 공용 단추를 사용할 수 있지만 *nElevationButtonMask* 에 포함 되지 않은 경우에는 권한 상승이 필요 하지 않은 일반 단추를 기록 합니다.
 
 ### <a name="example"></a>예제
 
@@ -1038,7 +1039,7 @@ void SetCommonButtons(
 
 *Nbuttonmask* 로 표시 되는 단추는 이전에에 추가 된 모든 공통 단추를 재정의 합니다 `CTaskDialog` . *Nbuttonmask* 에 표시 된 단추만 사용할 수 있습니다.
 
-*NDisabledButtonMask* 또는 *NElevationButtonMask* 에 *nbuttonmask*에 없는 단추가 포함 된 경우이 메서드는 [확인](diagnostic-services.md#ensure) 매크로를 사용 하 여 예외를 throw 합니다.
+*NDisabledButtonMask* 또는 *NElevationButtonMask* 에 *nbuttonmask* 에 없는 단추가 포함 된 경우이 메서드는 [확인](diagnostic-services.md#ensure) 매크로를 사용 하 여 예외를 throw 합니다.
 
 기본적으로 모든 일반 단추가 활성화 되며 권한 상승이 필요 하지 않습니다.
 
@@ -1084,7 +1085,7 @@ void SetDefaultCommandControl(int nCommandControlID);
 
 기본 명령 단추 컨트롤은가 `CTaskDialog` 사용자에 게 처음 표시 될 때 선택 되는 컨트롤입니다.
 
-이 메서드는 *Ncommandcontrolid*로 지정 된 명령 단추 컨트롤을 찾을 수 없는 경우 예외를 throw 합니다.
+이 메서드는 *Ncommandcontrolid* 로 지정 된 명령 단추 컨트롤을 찾을 수 없는 경우 예외를 throw 합니다.
 
 ### <a name="example"></a>예제
 
@@ -1107,7 +1108,7 @@ void SetDefaultRadioButton(int nRadioButtonID);
 
 기본 라디오 단추는가 `CTaskDialog` 사용자에 게 처음 표시 될 때 선택 되는 단추입니다.
 
-*NRadioButtonID*로 지정 된 라디오 단추를 찾을 수 없는 경우이 메서드는 예외를 throw 합니다.
+*NRadioButtonID* 로 지정 된 라디오 단추를 찾을 수 없는 경우이 메서드는 예외를 throw 합니다.
 
 ### <a name="example"></a>예제
 
@@ -1162,7 +1163,7 @@ void SetExpansionArea(
 
 클래스의 확장 영역을 `CTaskDialog` 사용 하면 사용자에 게 추가 정보를 제공할 수 있습니다. 확장 영역은의 주 부분에 있으며 `CTaskDialog` 제목 및 콘텐츠 문자열 바로 아래에 있습니다.
 
-`CTaskDialog`가 처음 표시 될 때 확장 된 정보를 표시 하지 않고 `strCollapsedLabel` 확장 단추 옆에 배치 합니다. 사용자가 확장 단추를 클릭 하면에서 `CTaskDialog` *strex놓을* 수 있는 정보를 표시 하 고 레이블을 *strexancached 레이블로*변경 합니다.
+`CTaskDialog`가 처음 표시 될 때 확장 된 정보를 표시 하지 않고 `strCollapsedLabel` 확장 단추 옆에 배치 합니다. 사용자가 확장 단추를 클릭 하면에서 `CTaskDialog` *strex놓을* 수 있는 정보를 표시 하 고 레이블을 *strexancached 레이블로* 변경 합니다.
 
 ### <a name="example"></a>예제
 
@@ -1189,7 +1190,7 @@ void SetFooterIcon(LPCWSTR lpszFooterIcon);
 
 [Ctaskdialog 클래스](../../mfc/reference/ctaskdialog-class.md)의 아래쪽에 바닥글 아이콘이 표시 됩니다. 연결 된 바닥글 텍스트가 있을 수 있습니다. [Ctaskdialog:: SetFooterText](#setfootertext)를 사용 하 여 바닥글 텍스트를 변경할 수 있습니다.
 
-이 메서드는 [ENSURE](diagnostic-services.md#ensure) `CTaskDialog` 가 표시 되거나 입력 매개 변수가 NULL 일 경우 확인 매크로를 사용 하 여 예외를 throw 합니다.
+이 메서드는 [](diagnostic-services.md#ensure) `CTaskDialog` 가 표시 되거나 입력 매개 변수가 NULL 일 경우 확인 매크로를 사용 하 여 예외를 throw 합니다.
 
 는 `CTaskDialog` `HICON` 또는 바닥글 아이콘 으로만 사용할 수 있습니다 `LPCWSTR` . 생성자 또는 [Ctaskdialog:: SetOptions](#setoptions)에서 옵션 TDF_USE_HICON_FOOTER 설정 하 여 구성 합니다. 기본적으로는 `CTaskDialog` `LPCWSTR` 바닥글 아이콘의 입력 형식으로 사용 하도록 구성 됩니다. 이 메서드는 부적절 한 유형을 사용 하 여 아이콘을 설정 하려고 하면 예외를 발생 시킵니다.
 
@@ -1237,7 +1238,7 @@ void SetMainIcon(LPCWSTR lpszMainIcon);
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 [ENSURE](diagnostic-services.md#ensure) `CTaskDialog` 가 표시 되거나 입력 매개 변수가 NULL 일 경우 확인 매크로를 사용 하 여 예외를 throw 합니다.
+이 메서드는 [](diagnostic-services.md#ensure) `CTaskDialog` 가 표시 되거나 입력 매개 변수가 NULL 일 경우 확인 매크로를 사용 하 여 예외를 throw 합니다.
 
 는 `CTaskDialog` 또는를 주 아이콘 으로만 수락할 수 있습니다 `HICON` `LPCWSTR` . 생성자 또는 [Ctaskdialog:: SetOptions](#setoptions) 메서드에서 TDF_USE_HICON_MAIN 옵션을 설정 하 여이를 구성할 수 있습니다. 기본적으로는 `CTaskDialog` `LPCWSTR` 주 아이콘의 입력 형식으로 사용 하도록 구성 됩니다. 이 메서드는 부적절 한 유형을 사용 하 여 아이콘을 설정 하려고 하면 예외를 발생 시킵니다.
 
@@ -1379,11 +1380,11 @@ void SetProgressBarRange(
 
 ### <a name="remarks"></a>설명
 
-진행률 표시줄의 위치는 *nRangeMin* 및 *nRangeMax*을 기준으로 합니다. 예를 들어 *nRangeMin* 가 50이 고 *nRangeMax* 가 100 이면 75의 위치는 진행률 표시줄의 중간입니다. [Ctaskdialog:: SetProgressBarPosition](#setprogressbarposition) 를 사용 하 여 진행률 표시줄의 위치를 설정 합니다.
+진행률 표시줄의 위치는 *nRangeMin* 및 *nRangeMax* 을 기준으로 합니다. 예를 들어 *nRangeMin* 가 50이 고 *nRangeMax* 가 100 이면 75의 위치는 진행률 표시줄의 중간입니다. [Ctaskdialog:: SetProgressBarPosition](#setprogressbarposition) 를 사용 하 여 진행률 표시줄의 위치를 설정 합니다.
 
 진행률 표시줄을 표시 하려면 TDF_SHOW_PROGRESS_BAR 옵션을 사용 하도록 설정 하 고 TDF_SHOW_MARQUEE_PROGRESS_BAR 사용 하지 않도록 설정 해야 합니다. 이 메서드는 TDF_SHOW_PROGRESS_BAR를 자동으로 설정 하 고 TDF_SHOW_MARQUEE_PROGRESS_BAR를 지웁니다. [Ctaskdialog:: SetOptions](#setoptions) 를 사용 하 여 [Ctaskdialog 클래스](../../mfc/reference/ctaskdialog-class.md)의이 인스턴스에 대 한 옵션을 수동으로 변경 합니다.
 
-이 메서드는 *nRangeMin* 가 *nRangeMax*보다 작지 않은 경우 [확인](diagnostic-services.md#ensure) 매크로와 함께 예외를 throw 합니다. 이 메서드는 `CTaskDialog` 가 이미 표시 되어 있고 움직이는 텍스트 진행률 표시줄을 포함 하는 경우에도 예외를 throw 합니다.
+이 메서드는 *nRangeMin* 가 *nRangeMax* 보다 작지 않은 경우 [확인](diagnostic-services.md#ensure) 매크로와 함께 예외를 throw 합니다. 이 메서드는 `CTaskDialog` 가 이미 표시 되어 있고 움직이는 텍스트 진행률 표시줄을 포함 하는 경우에도 예외를 throw 합니다.
 
 ### <a name="example"></a>예제
 
@@ -1404,9 +1405,9 @@ void SetProgressBarState(int nState = PBST_NORMAL);
 
 ### <a name="remarks"></a>설명
 
-이 메서드는가 이미 표시 되어 있고 움직이는 텍스트 진행률 표시줄이 있는 경우 매크로를 사용 하 여 예외를 throw 합니다 [ENSURE](diagnostic-services.md#ensure) `CTaskDialog` .
+이 메서드는가 이미 표시 되어 있고 움직이는 텍스트 진행률 표시줄이 있는 경우 매크로를 사용 하 여 예외를 throw 합니다 [](diagnostic-services.md#ensure) `CTaskDialog` .
 
-다음 표에서는 *Nstate*에 사용할 수 있는 값을 보여 줍니다. 이러한 모든 경우에는 지정 된 중지 위치에 도달할 때까지 진행률 표시줄이 일반 색으로 채워집니다. 그러면 상태에 따라 색이 변경 됩니다.
+다음 표에서는 *Nstate* 에 사용할 수 있는 값을 보여 줍니다. 이러한 모든 경우에는 지정 된 중지 위치에 도달할 때까지 진행률 표시줄이 일반 색으로 채워집니다. 그러면 상태에 따라 색이 변경 됩니다.
 
 |Name|설명|
 |-|-|
@@ -1553,7 +1554,7 @@ static INT_PTR ShowDialog(
 
 이 정적 메서드를 사용 하면 `CTaskDialog` 코드에서 개체를 명시적으로 만들지 않고도 클래스의 인스턴스를 만들 수 있습니다 `CTaskDialog` . 개체가 없기 때문에 `CTaskDialog` `CTaskDialog` 이 메서드를 사용 하 여 사용자에 게를 표시 하는 경우의 다른 메서드를 호출할 수 없습니다 `CTaskDialog` .
 
-이 메서드는 응용 프로그램의 리소스 파일에 있는 데이터를 사용 하 여 명령 단추 컨트롤을 만듭니다. 리소스 파일의 문자열 테이블에는 문자열 Id가 연결 된 여러 문자열이 있습니다. 이 메서드는 *nIDCommandControlsFirst* 과 *nCommandControlsLast*사이에 있는 문자열 테이블의 유효한 각 항목에 대 한 명령 단추 컨트롤을 추가 합니다. 이러한 명령 단추 컨트롤의 경우 문자열 테이블의 문자열은 컨트롤의 캡션입니다. 문자열 ID는 컨트롤의 ID입니다.
+이 메서드는 응용 프로그램의 리소스 파일에 있는 데이터를 사용 하 여 명령 단추 컨트롤을 만듭니다. 리소스 파일의 문자열 테이블에는 문자열 Id가 연결 된 여러 문자열이 있습니다. 이 메서드는 *nIDCommandControlsFirst* 과 *nCommandControlsLast* 사이에 있는 문자열 테이블의 유효한 각 항목에 대 한 명령 단추 컨트롤을 추가 합니다. 이러한 명령 단추 컨트롤의 경우 문자열 테이블의 문자열은 컨트롤의 캡션입니다. 문자열 ID는 컨트롤의 ID입니다.
 
 유효한 옵션 목록은 [Ctaskdialog:: SetOptions](#setoptions) 를 참조 하세요.
 

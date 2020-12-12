@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4650'
 title: 컴파일러 경고(수준 1) C4650
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4650
 ms.assetid: 3190b3e3-dcd6-4846-939b-f900ab652b2a
-ms.openlocfilehash: e57f1d9acba4a8734339f3b8e538120abe542efc
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 8af31cb6eaacc8b090103a2a5f622eb7aff275a4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80199570"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318886"
 ---
 # <a name="compiler-warning-level-1-c4650"></a>컴파일러 경고(수준 1) C4650
 

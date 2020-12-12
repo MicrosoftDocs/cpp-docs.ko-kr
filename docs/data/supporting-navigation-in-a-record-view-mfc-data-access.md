@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 레코드 뷰에서 탐색 지원 (MFC Data Access)'
 title: 레코드 뷰에서의 탐색 지원  (MFC Data Access)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - record views, navigation
 - navigation [C++], in record view
 ms.assetid: 227f2a6d-87c9-4656-807a-8e246965bcce
-ms.openlocfilehash: dcac4c43cf553528d5c84a090f7e4265e3a1321c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 828c514235f9f319c441ba21302b21d56e7611ea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80209120"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319042"
 ---
 # <a name="supporting-navigation-in-a-record-view--mfc-data-access"></a>레코드 뷰에서의 탐색 지원  (MFC Data Access)
 
@@ -23,5 +24,5 @@ ms.locfileid: "80209120"
 
 ## <a name="see-also"></a>참고 항목
 
-[레코드 뷰(MFC Data Access)](../data/record-views-mfc-data-access.md)<br/>
+[레코드 뷰 (MFC Data Access)](../data/record-views-mfc-data-access.md)<br/>
 [ODBC 드라이버 목록](../data/odbc/odbc-driver-list.md)

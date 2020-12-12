@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _CrtGetDumpClient'
 title: _CrtGetDumpClient
 ms.date: 11/04/2016
 api_name:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - _CrtGetDumpClient function
 - CrtGetDumpClient function
 ms.assetid: 9051867f-341b-493b-b53d-45d2b454a3ad
-ms.openlocfilehash: 4b5c6c7d4d123d2d419f104ddaabd57c10ad320e
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: b4163e6f4f252eddd304f2704c3f5a9aa62b5371
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70938743"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319754"
 ---
 # <a name="_crtgetdumpclient"></a>_CrtGetDumpClient
 
@@ -42,7 +43,7 @@ ms.locfileid: "70938743"
 _CRT_DUMP_CLIENT _CrtGetDumpClient( void );
 ```
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 
 현재 덤프 루틴을 반환합니다.
 
@@ -58,13 +59,13 @@ _CRT_DUMP_CLIENT _CrtGetDumpClient( void );
 |-------------|---------------------|
 |**_CrtGetDumpClient**|\<crtdbg.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="libraries"></a>라이브러리
 
 [C 런타임 라이브러리](../../c-runtime-library/crt-library-features.md)의 디버그 버전만 해당됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [디버그 루틴](../../c-runtime-library/debug-routines.md)<br/>
 [_CrtReportBlockType](crtreportblocktype.md)<br/>

@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: c + +의 특성'
 title: C + +의 특성
 ms.date: 05/06/2019
 ms.assetid: 748340d9-8abf-4940-b0a0-91b6156a3ff8
-ms.openlocfilehash: efdc62e2343135aee483520f633bac99519455b4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2c22cacdede278114ed0e2242165280facbb492a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229209"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319549"
 ---
 # <a name="attributes-in-c"></a>C + +의 특성
 
@@ -35,13 +36,13 @@ void Foo(int);
 
 특성은 #pragma 지시문, __declspec () (Visual C++) 또는 GNU ( &#95;&#95;attribute&#95;&#95; )와 같은 공급 업체별 확장에 대 한 표준화 된 대안을 나타냅니다. 그러나 대부분의 경우에는 공급 업체별 구문을 사용 해야 합니다. 표준에서는 현재 준수 하는 컴파일러가 인식 해야 하는 다음 특성을 지정 합니다.
 
-- `[[noreturn]]`함수가를 반환 하지 않도록 지정 합니다. 즉, 항상 예외를 throw 합니다. 컴파일러는 엔터티에 대 한 컴파일 규칙을 조정할 수 있습니다 `[[noreturn]]` .
+- `[[noreturn]]` 함수가를 반환 하지 않도록 지정 합니다. 즉, 항상 예외를 throw 합니다. 컴파일러는 엔터티에 대 한 컴파일 규칙을 조정할 수 있습니다 `[[noreturn]]` .
 
-- `[[carries_dependency]]`함수가 스레드 동기화와 관련 하 여 데이터 종속성 순서를 전파 하도록 지정 합니다. 특성을 하나 이상의 매개 변수에 적용 하 여 전달 된 인수가 함수 본문에 대 한 종속성을 전달 하도록 지정할 수 있습니다. 특성은 함수 자체에 적용 되어 반환 값이 함수에서 종속성을 전달 하도록 지정할 수 있습니다. 컴파일러는이 정보를 사용 하 여 보다 효율적인 코드를 생성할 수 있습니다.
+- `[[carries_dependency]]` 함수가 스레드 동기화와 관련 하 여 데이터 종속성 순서를 전파 하도록 지정 합니다. 특성을 하나 이상의 매개 변수에 적용 하 여 전달 된 인수가 함수 본문에 대 한 종속성을 전달 하도록 지정할 수 있습니다. 특성은 함수 자체에 적용 되어 반환 값이 함수에서 종속성을 전달 하도록 지정할 수 있습니다. 컴파일러는이 정보를 사용 하 여 보다 효율적인 코드를 생성할 수 있습니다.
 
 - `[[deprecated]]`**Visual Studio 2015 이상:** 함수를 사용 하기에 적합 하지 않으며 이후 버전의 라이브러리 인터페이스에 존재 하지 않을 수 있음을 지정 합니다. 컴파일러는 클라이언트 코드에서 함수를 호출 하려고 할 때이를 사용 하 여 정보 메시지를 생성할 수 있습니다. 클래스의 선언, typedef 이름, 변수, 비정적 데이터 멤버, 함수, 네임 스페이스, 열거형, 열거자 또는 템플릿 특수화에 적용할 수 있습니다.
 
-- `[[fallthrough]]`**Visual Studio 2017 이상:** ( [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)과 함께 사용 가능) `[[fallthrough]]` fallthrough 동작이 의도 된 컴파일러에 [switch](switch-statement-cpp.md) 대 한 힌트 (또는 코드를 읽는 모든 사용자)에 게 특성을 사용할 수 있습니다. Microsoft c + + 컴파일러는 현재 fallthrough 동작에 대해 경고 하지 않으므로이 특성은 컴파일러 동작에 영향을 주지 않습니다.
+- `[[fallthrough]]`**Visual Studio 2017 이상:** ( [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)과 함께 사용 가능) `[[fallthrough]]` fallthrough 동작이 의도 된 컴파일러에 [](switch-statement-cpp.md) 대 한 힌트 (또는 코드를 읽는 모든 사용자)에 게 특성을 사용할 수 있습니다. Microsoft c + + 컴파일러는 현재 fallthrough 동작에 대해 경고 하지 않으므로이 특성은 컴파일러 동작에 영향을 주지 않습니다.
 
 - `[[nodiscard]]`**Visual Studio 2017 버전 15.3 이상:** ( [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)과 함께 사용 가능)은 함수의 반환 값이 삭제 되지 않도록 지정 합니다. 이 예에 표시 된 것 처럼 경고 C4834을 발생 시킵니다.
 
@@ -60,7 +61,7 @@ void Foo(int);
 
 ## <a name="microsoft-specific-attributes"></a>Microsoft 전용 특성
 
-- `[[gsl::suppress(rules)]]`이 Microsoft 관련 특성은 코드에서 [GSL (지침 지원 라이브러리](https://github.com/Microsoft/GSL) ) 규칙을 적용 하는 검사기의 경고를 표시 하지 않는 데 사용 됩니다. 예를 들어 다음 코드 조각을 살펴보십시오.
+- `[[gsl::suppress(rules)]]` 이 Microsoft 관련 특성은 코드에서 [GSL (지침 지원 라이브러리](https://github.com/Microsoft/GSL) ) 규칙을 적용 하는 검사기의 경고를 표시 하지 않는 데 사용 됩니다. 예를 들어 다음 코드 조각을 살펴보십시오.
 
     ```cpp
     int main()
