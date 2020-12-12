@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 방법: 병렬 컨테이너를 사용 하 여 효율성 향상'
 title: '방법: 병렬 컨테이너를 사용하여 효율성 향상'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - concurrent_queue class, examples
 - concurrent_vector class, examples
 ms.assetid: bd00046d-e9b6-4ae1-b661-3995f671b867
-ms.openlocfilehash: 361e0e32efb45468ba108ee975879f990ac98395
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: 6e416da7b1cdcbe1a9b3073569cf4dda6434ceea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008334"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341557"
 ---
 # <a name="how-to-use-parallel-containers-to-increase-efficiency"></a>방법: 병렬 컨테이너를 사용하여 효율성 향상
 
@@ -69,7 +70,7 @@ Prime factors of 1050985 are: 5 13 19 23 37.
 
 > **cl.exe/EHsc carmichael-primes**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [병렬 컨테이너 및 개체](../../parallel/concrt/parallel-containers-and-objects.md)<br/>
 [작업 병렬 처리](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>

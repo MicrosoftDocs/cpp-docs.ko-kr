@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3046'
 title: 컴파일러 오류 C3046
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3046
 ms.assetid: 2e53d835-faa1-4ec0-9807-41f3dc552635
-ms.openlocfilehash: cd7c934babe37def934b644ff4657ad63eb7676d
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: aee37f1f1921c62614dc5e40de4514403b92c91a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91506225"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97269811"
 ---
 # <a name="compiler-error-c3046"></a>컴파일러 오류 C3046
 

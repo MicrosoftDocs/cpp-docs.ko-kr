@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4242'
 title: 컴파일러 경고(수준 4) C4242
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4242
 ms.assetid: 8df742e1-fbf1-42f3-8e93-c0e1c222dc7e
-ms.openlocfilehash: 2f457b5424cbca071e047f4375aaa85962e52210
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 7eabb546e2dff11b52be20e1a791aa31e9373a69
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991476"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334845"
 ---
 # <a name="compiler-warning-level-4-c4242"></a>컴파일러 경고(수준 4) C4242
 

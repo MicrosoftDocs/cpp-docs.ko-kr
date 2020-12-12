@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3043'
 title: 컴파일러 오류 C3043
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3043
 ms.assetid: 0ef55e63-e82b-48eb-9d44-690950ac34c6
-ms.openlocfilehash: e24d8166a977ab8f16688c8be30e69c7bb616c20
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: e63c5bd5857b0b962b8bee464eb77d31e1b1edd1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91506370"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97269889"
 ---
 # <a name="compiler-error-c3043"></a>컴파일러 오류 C3043
 

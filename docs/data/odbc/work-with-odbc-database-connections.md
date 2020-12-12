@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: ODBC 데이터베이스 연결 작업'
 title: ODBC 데이터베이스 연결을 사용한 작업
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,16 +10,16 @@ helpviewer_keywords:
 - databases [C++], connecting to
 - ODBC connections [C++], databases
 ms.assetid: f41a67c7-168d-4657-9999-257535e44c87
-ms.openlocfilehash: 29626d9ce98ac5bcd3889ee9417298ddfe3d7f1d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: c74c8d1407c2ba29aa04eba10c7cb6a720294b56
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80212487"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246138"
 ---
 # <a name="work-with-odbc-database-connections"></a>ODBC 데이터베이스 연결을 사용한 작업
 
-다음 항목에서는 ODBC 데이터 원본에 연결하는 방법에 대해 설명합니다.
+다음 항목에서는 ODBC 데이터 원본에 연결 하는 방법에 대해 설명 합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 
@@ -28,4 +29,4 @@ ms.locfileid: "80212487"
 
 ## <a name="see-also"></a>참고 항목
 
-[ODBC(Open Database Connectivity)](../../data/odbc/open-database-connectivity-odbc.md)
+[ODBC (Open Database Connectivity)](../../data/odbc/open-database-connectivity-odbc.md)

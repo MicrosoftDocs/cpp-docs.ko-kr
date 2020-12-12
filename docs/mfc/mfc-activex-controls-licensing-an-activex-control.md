@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: MFC ActiveX 컨트롤: ActiveX 컨트롤 라이선스'
 title: 'MFC ActiveX 컨트롤: ActiveX 컨트롤 라이선스'
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - GetLicenseKey method [MFC]
 - licensing ActiveX controls
 ms.assetid: cacd9e45-701a-4a1f-8f1f-b0b39f6ac303
-ms.openlocfilehash: 4fe2fcf63cce02ed6c1c9943e6d0fe6ffab00a92
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: cf7b797ecfd7ae19af7c922443850d115b4cc2b3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622366"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341596"
 ---
 # <a name="mfc-activex-controls-licensing-an-activex-control"></a>MFC ActiveX 컨트롤: ActiveX 컨트롤 라이선스
 
@@ -35,7 +36,7 @@ ActiveX 컨트롤의 선택적 기능인 라이선스 지원을 통해 컨트롤
 
 라이선스를 구현 하는 ActiveX 컨트롤을 사용 하 여 다른 사용자가 ActiveX 컨트롤을 사용 하는 방법을 결정할 수 있습니다. 및 컨트롤을 사용 하 여 제어 구매자를 제공 합니다. LIC 파일 (구매는 구매를 통해 컨트롤을 배포할 수 있지만는 배포할 수 없음). LIC 파일 (컨트롤을 사용 하는 응용 프로그램 포함) 이를 통해 해당 응용 프로그램의 사용자는 먼저 컨트롤에 대 한 라이선스를 부여 하지 않고 컨트롤을 사용 하는 새 응용 프로그램을 작성할 수 없습니다.
 
-## <a name="overview-of-activex-control-licensing"></a><a name="_core_overview_of_activex_control_licensing"></a>ActiveX 컨트롤 라이선스 개요
+## <a name="overview-of-activex-control-licensing"></a><a name="_core_overview_of_activex_control_licensing"></a> ActiveX 컨트롤 라이선스 개요
 
 ActiveX 컨트롤에 대 한 라이선스 지원을 제공 하기 위해 [Coleobjectfactory](reference/coleobjectfactory-class.md) 클래스는 `IClassFactory2` `IClassFactory2::RequestLicKey` , `IClassFactory2::GetLicInfo` 및 인터페이스의 몇 가지 함수에 대 한 구현을 `IClassFactory2::CreateInstanceLic` 제공 합니다. 컨테이너 응용 프로그램 개발자가 컨트롤의 인스턴스를 만들도록 요청 하면 `GetLicInfo` 컨트롤을 확인 하기 위해를 호출 합니다. LIC 파일이 있습니다. 컨트롤이 사용이 허가 되 면 컨트롤의 인스턴스를 만들고 컨테이너에 배치할 수 있습니다. 개발자가 컨테이너 응용 프로그램을 생성 한 후에는이 시간에 대 한 또 다른 함수 호출을 `RequestLicKey` 수행 합니다. 이 함수는 컨테이너 응용 프로그램에 대 한 라이선스 키 (단순 문자열)를 반환 합니다. 그러면 반환 된 키가 응용 프로그램에 포함 됩니다.
 
@@ -53,7 +54,7 @@ ActiveX 컨트롤에 대 한 라이선스 지원을 제공 하기 위해 [Coleob
 
 컨트롤 라이선스는 컨트롤 구현 DLL의 특정 코드와 라이선스 파일의 두 가지 기본 구성 요소로 구성 됩니다. 코드는 두 개의 함수 호출 및 두 개의 함수 호출로 구성 되며 저작권 표시를 포함 하는 "라이선스 문자열" 이라고 하는 문자열입니다. 이러한 호출과 라이선스 문자열은 컨트롤 구현 ()에서 찾을 수 있습니다. CPP) 파일입니다. ActiveX 컨트롤 마법사에 의해 생성 되는 라이선스 파일은 copyright 문이 포함 된 텍스트 파일입니다. 과 함께 프로젝트 이름을 사용 하 여 이름이 지정 됩니다. LIC 확장 (예: 샘플). .LIC. 사용이 허가 된 컨트롤은 디자인 타임 사용이 필요한 경우 라이선스 파일과 함께 제공 되어야 합니다.
 
-## <a name="creating-a-licensed-control"></a><a name="_core_creating_a_licensed_control"></a>사용이 허가 된 컨트롤 만들기
+## <a name="creating-a-licensed-control"></a><a name="_core_creating_a_licensed_control"></a> 사용이 허가 된 컨트롤 만들기
 
 ActiveX 컨트롤 마법사를 사용 하 여 컨트롤 프레임 워크를 만드는 경우 라이선스 지원을 포함 하는 것이 쉽습니다. 컨트롤이 런타임 라이선스를 갖도록 지정 하면 ActiveX 컨트롤 마법사는 라이선스를 지원 하기 위해 컨트롤 클래스에 코드를 추가 합니다. 코드는 라이선스 확인을 위해 키와 라이선스 파일을 사용 하는 함수로 구성 됩니다. 이러한 함수를 수정 하 여 컨트롤 라이선스를 사용자 지정할 수도 있습니다. 라이선스 사용자 지정에 대 한 자세한 내용은이 문서의 뒷부분에 있는 [ActiveX 컨트롤의 라이선스 사용자 지정](#_core_customizing_the_licensing_of_an_activex_control) 을 참조 하세요.
 
@@ -63,7 +64,7 @@ ActiveX 컨트롤 마법사를 사용 하 여 컨트롤 프레임 워크를 만�
 
 이제 ActiveX 컨트롤 마법사는 기본 라이선스 지원을 포함 하는 ActiveX 컨트롤 프레임 워크를 생성 합니다. 라이선스 코드에 대 한 자세한 설명은 다음 항목을 참조 하세요.
 
-## <a name="licensing-support"></a><a name="_core_licensing_support"></a>라이선스 지원
+## <a name="licensing-support"></a><a name="_core_licensing_support"></a> 라이선스 지원
 
 Activex 컨트롤 마법사를 사용 하 여 ActiveX 컨트롤에 라이선스 지원을 추가 하는 경우 ActiveX 컨트롤 마법사는 라이선스 기능을 선언 하 고 구현 하는 코드를 컨트롤 헤더 및 구현 파일에 추가 합니다. 이 코드는 `VerifyUserLicense` 멤버 함수와 `GetLicenseKey` [Coleobjectfactory](reference/coleobjectfactory-class.md) 에 있는 기본 구현을 재정의 하는 멤버 함수로 구성 됩니다. 이러한 함수는 컨트롤 라이선스를 검색 하 고 확인 합니다.
 
@@ -84,13 +85,13 @@ Activex 컨트롤 마법사를 사용 하 여 ActiveX 컨트롤에 라이선스 
 
    포함 된 키와 컨트롤의 고유 키가 동일한 지 확인 합니다. 이렇게 하면 컨테이너에서 사용할 컨트롤의 인스턴스를 만들 수 있습니다. 이 함수는 처리의 일부로 프레임 워크에서 호출 `IClassFactory2::CreateInstanceLic` 되며 라이선스 키의 사용자 지정 확인을 제공 하도록 재정의할 수 있습니다. 기본 구현에서는 문자열 비교를 수행 합니다. 자세한 내용은이 문서의 뒷부분에 나오는 [ActiveX 컨트롤의 라이선스 사용자 지정](#_core_customizing_the_licensing_of_an_activex_control)을 참조 하세요.
 
-### <a name="header-file-modifications"></a><a name="_core_header_file_modifications"></a>헤더 파일 수정
+### <a name="header-file-modifications"></a><a name="_core_header_file_modifications"></a> 헤더 파일 수정
 
 ActiveX 컨트롤 마법사는 컨트롤 헤더 파일에 다음 코드를 배치 합니다. 이 예제에서는 `CSampleCtrl` 컨트롤의 존재 여부를 확인 하는 개체의 두 멤버 함수를 `factory` 선언 합니다. LIC 파일 및 컨트롤을 포함 하는 응용 프로그램에 사용할 라이선스 키를 검색 하는 다른 파일입니다.
 
 [!code-cpp[NVC_MFC_AxUI#39](codesnippet/cpp/mfc-activex-controls-licensing-an-activex-control_1.h)]
 
-### <a name="implementation-file-modifications"></a><a name="_core_implementation_file_modifications"></a>구현 파일 수정
+### <a name="implementation-file-modifications"></a><a name="_core_implementation_file_modifications"></a> 구현 파일 수정
 
 ActiveX 컨트롤 마법사는 컨트롤 구현 파일에 다음 두 개의 문을 배치 하 여 라이선스 파일 이름과 라이선스 문자열을 선언 합니다.
 
@@ -107,7 +108,7 @@ ActiveX 컨트롤 마법사는 컨트롤 구현 파일에 다음 코드를 배�
 
 [!code-cpp[NVC_MFC_AxUI#42](codesnippet/cpp/mfc-activex-controls-licensing-an-activex-control_4.idl)]
 
-## <a name="customizing-the-licensing-of-an-activex-control"></a><a name="_core_customizing_the_licensing_of_an_activex_control"></a>ActiveX 컨트롤의 라이선스 사용자 지정
+## <a name="customizing-the-licensing-of-an-activex-control"></a><a name="_core_customizing_the_licensing_of_an_activex_control"></a> ActiveX 컨트롤의 라이선스 사용자 지정
 
 `VerifyUserLicense`, `GetLicenseKey` 및 `VerifyLicenseKey` 가 컨트롤 팩터리 클래스의 가상 멤버 함수로 선언 되기 때문에 컨트롤의 라이선스 동작을 사용자 지정할 수 있습니다.
 

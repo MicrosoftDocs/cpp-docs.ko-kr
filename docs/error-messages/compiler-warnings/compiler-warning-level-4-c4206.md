@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4206'
 title: 컴파일러 경고(수준 4) C4206
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4206
 ms.assetid: 3df97812-3ed7-4003-9769-057acf97ce3c
-ms.openlocfilehash: ae1e4d814d38409f362efd27cecae983eb86479a
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 96fa42d2d567f19c4c6f45fd8d9198de573da0d8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80173987"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97206710"
 ---
 # <a name="compiler-warning-level-4-c4206"></a>컴파일러 경고(수준 4) C4206
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3045'
 title: 컴파일러 오류 C3045
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3045
 ms.assetid: 9351ba3e-3d3f-455f-ac90-a810fa9fd947
-ms.openlocfilehash: fc5c2b526133ea0de70d11c3a01269436701de79
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 0d39399d656a482d401eafb51f53c177c8c3bb2a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91506289"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97269850"
 ---
 # <a name="compiler-error-c3045"></a>컴파일러 오류 C3045
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3042'
 title: 컴파일러 오류 C3042
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3042
 ms.assetid: bf73f61e-5bd2-40a8-9b06-6244e6a15a41
-ms.openlocfilehash: 8cd27f492a72277c383afa5ca335a073b1a0519c
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 04c4366e574f158234653d32b4b6e01bfceaaa27
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91506392"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97269915"
 ---
 # <a name="compiler-error-c3042"></a>컴파일러 오류 C3042
 

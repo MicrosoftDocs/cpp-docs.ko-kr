@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2988'
 title: 컴파일러 오류 C2988
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2988
 ms.assetid: c07ada8d-7cdf-4496-8656-cc3851e76b46
-ms.openlocfilehash: a26c6e85eba21a9bca94869acea9a3239f1e11b3
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 8ec5682cd6ce7516c95f545f8e5811babfb1d160
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80201554"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97206801"
 ---
 # <a name="compiler-error-c2988"></a>컴파일러 오류 C2988
 

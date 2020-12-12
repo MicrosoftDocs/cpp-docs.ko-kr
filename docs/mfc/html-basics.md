@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: HTML 기본 사항'
 title: HTML 기초
 ms.date: 11/04/2016
 helpviewer_keywords:
 - HTML [MFC], about HTML
 ms.assetid: aab8ea9f-12d4-4bdd-a585-ac3124081a2a
-ms.openlocfilehash: 29ca2e3df4981db22a10281ba2a2938fc91d5b46
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: f32926beb9152441169320bf3553b0066f78fa7c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619995"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290247"
 ---
 # <a name="html-basics"></a>HTML 기초
 
@@ -21,7 +22,7 @@ ms.locfileid: "84619995"
 
 1. 메모장 또는 일반 텍스트 편집기를 엽니다.
 
-1. **파일** 메뉴에서 **새로 만들기**를 선택 합니다.
+1. **파일** 메뉴에서 **새로 만들기** 를 선택 합니다.
 
 1. 다음 줄을 입력 합니다.
 
@@ -33,9 +34,9 @@ ms.locfileid: "84619995"
     </HTML>
     ```
 
-1. **파일** 메뉴에서 **저장**을 선택 하 고 파일을 c:\webpages\First.htm.로 저장 합니다. 편집기에서 파일을 열어 둡니다.
+1. **파일** 메뉴에서 **저장** 을 선택 하 고 파일을 c:\webpages\First.htm로 저장 합니다. 편집기에서 파일을 열어 둡니다.
 
-1. 브라우저로 전환 하 고, **파일** 메뉴에서 **열기**를 선택 하거나, 브라우저의 URL 편집 상자에 *file://C:/webpages/first.htm* 를 입력 합니다. "최상위 HTML 태그" 라는 창 캡션이 있는 빈 페이지가 표시 됩니다.
+1. 브라우저로 전환 하 고, **파일** 메뉴에서 **열기** 를 선택 하거나, 브라우저의 URL 편집 상자에 *file://C:/webpages/first.htm* 를 입력 합니다. "최상위 HTML 태그" 라는 창 캡션이 있는 빈 페이지가 표시 됩니다.
 
    태그는 페어링 되며 꺾쇠 괄호에 포함 됩니다. 태그는 대/소문자를 구분 하지 않지만 태그를 표시 하는 데 대/소문자를 사용 하는 경우가 많습니다.
 
@@ -50,7 +51,7 @@ ms.locfileid: "84619995"
     </BODY>
     ```
 
-1. **파일** 메뉴에서 **저장**을 선택 합니다.
+1. **파일** 메뉴에서 **저장** 을 선택 합니다.
 
 1. 브라우저로 다시 전환 하 고 페이지를 새로 고칩니다.
 

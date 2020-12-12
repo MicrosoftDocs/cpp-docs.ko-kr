@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: XML 데이터 액세스'
 title: XML 데이터 액세스
 ms.date: 10/18/2018
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - rowsets [C++], retrieving XML data
 - CStreamRowset class, retrieving XML data
 ms.assetid: 6b693d55-a554-4846-8118-e8773b79b572
-ms.openlocfilehash: 437f1d103420ec5727294894c02587c68cffbdda
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: f229dc4567247ea95ebf00a5dbc9316be8aeac1b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509130"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246086"
 ---
 # <a name="accessing-xml-data"></a>XML 데이터 액세스
 
@@ -44,7 +45,7 @@ CCommand<CNoAccessor, CStreamRowset> myCmd;
 
 일반적으로를 호출 하는 경우 `CCommand::Open` (예: `CRowset` 클래스로 지정 `TRowset` ) 포인터를 가져옵니다 `IRowset` . `ICommand::Execute``IRowset`개체의 멤버에 저장 된 포인터를 반환 합니다 `m_spRowset` `CRowset` . , 및와 같은 메서드 `MoveFirst` `MoveNext` `GetData` 는 해당 포인터를 사용 하 여 데이터를 검색 합니다.
 
-반면를 호출 하는 경우 `CCommand::Open` (를 `CStreamRowset` 클래스로 지정)는 `TRowset` `ICommand::Execute` `ISequentialStream` `m_spStream` [CStreamRowset](../../data/oledb/cstreamrowset-class.md)의 데이터 멤버에 저장 된 포인터를 반환 합니다. 그런 다음 메서드를 사용 `Read` 하 여 XML 형식의 (유니코드 문자열) 데이터를 검색 합니다. 다음은 그 예입니다.
+반면를 호출 하는 경우 `CCommand::Open` (를 `CStreamRowset` 클래스로 지정)는 `TRowset` `ICommand::Execute` `ISequentialStream` `m_spStream` [CStreamRowset](../../data/oledb/cstreamrowset-class.md)의 데이터 멤버에 저장 된 포인터를 반환 합니다. 그런 다음 메서드를 사용 `Read` 하 여 XML 형식의 (유니코드 문자열) 데이터를 검색 합니다. 예를 들어:
 
 ```cpp
 myCmd.m_spStream->Read()

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2714'
 title: 컴파일러 오류 C2714
 ms.date: 07/22/2020
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - C2714
 ms.assetid: 401a5a42-660c-4bad-9d63-1a2d092bc489
-ms.openlocfilehash: d3f733f065af5b3217dc19d46b46e504d39151f4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7bea0fc27de49f5767b8b250254f255964423cdc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225412"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97320833"
 ---
 # <a name="compiler-error-c2714"></a>컴파일러 오류 C2714
 
-> `alignof(void)`허용 되지 않음
+> `alignof(void)` 허용 되지 않음
 
 잘못 된 값이 연산자에 전달 되었습니다.
 

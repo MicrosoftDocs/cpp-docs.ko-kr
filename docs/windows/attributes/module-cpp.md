@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: module (c + +)'
 title: module (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - module attributes
 ms.assetid: 02223b2a-62b5-4262-832f-564b1e11e58e
-ms.openlocfilehash: b6cde0baaae9901258e90ededf05c60cb13a7dc1
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 1780ebcb89e7d19f3f3a4c2656d383725d85657a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833974"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327482"
 ---
 # <a name="module-c"></a>module(C++)
 
@@ -28,7 +29,7 @@ ms.locfileid: "88833974"
 *type*<br/>
 필드 다음 중 하나일 수 있습니다.
 
-- `dll` 결과 DLL이 in-process COM 서버로 작동 하도록 허용 하는 함수 및 클래스를 추가 합니다. 이것은 기본값입니다.
+- `dll` 결과 DLL이 in-process COM 서버로 작동 하도록 허용 하는 함수 및 클래스를 추가 합니다. 기본값입니다.
 
 - `exe` 결과 실행 파일이 out-of-process COM 서버로 작동 하도록 허용 하는 함수 및 클래스를 추가 합니다.
 
@@ -121,7 +122,7 @@ ATL을 사용하는 프로젝트 내에서 이 특성을 사용하는 경우 특
 [module(name="MyLibrary", version="1.2", helpfile="MyHelpFile")];
 ```
 
-다음 코드는 **module**사용 결과 삽입된 코드에 나타날 수 있는 함수의 자체 구현을 제공할 수 있음을 보여 줍니다. 삽입된 코드 보기에 대한 자세한 정보는 [/Fx](../../build/reference/fx-merge-injected-code.md) 를 참조하세요. **module** 특성에 의해 삽입된 함수 중 하나를 재정의하려면 함수의 구현을 포함할 클래스를 만들고 여기에 **module** 특성을 적용합니다.
+다음 코드는 **module** 사용 결과 삽입된 코드에 나타날 수 있는 함수의 자체 구현을 제공할 수 있음을 보여 줍니다. 삽입된 코드 보기에 대한 자세한 정보는 [/Fx](../../build/reference/fx-merge-injected-code.md) 를 참조하세요. **module** 특성에 의해 삽입된 함수 중 하나를 재정의하려면 함수의 구현을 포함할 클래스를 만들고 여기에 **module** 특성을 적용합니다.
 
 ```cpp
 // cpp_attr_ref_module2.cpp

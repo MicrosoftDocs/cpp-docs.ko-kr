@@ -1,15 +1,16 @@
 ---
+description: Filesystem_error 클래스에 대해 자세히 알아보세요.
 title: filesystem_error 클래스
 ms.date: 09/10/2018
 f1_keywords:
 - filesystem/std::experimental::filesystem::filesystem_error
 ms.assetid: c53aac27-c1fa-43e4-8967-48ea8ba1f172
-ms.openlocfilehash: 1d142057859f1ca173f8953b34c07bbb3803ecba
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 8165bfbc0d59dbbdab17d910e2e2f7973988049d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835872"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232436"
 ---
 # <a name="filesystem_error-class"></a>filesystem_error 클래스
 
@@ -33,7 +34,7 @@ class filesystem_error    : public system_error;
 |-|-|
 |[filesystem_error](#filesystem_error)|메시지를 생성 `filesystem_error` 합니다.|
 
-### <a name="functions"></a>Functions
+### <a name="functions"></a>함수
 
 |Name|설명|
 |-|-|
@@ -49,7 +50,7 @@ class filesystem_error    : public system_error;
 
 ## <a name="filesystem_error"></a><a name="filesystem_error"></a> filesystem_error
 
-첫 번째 생성자는 *what_arg* 와 *ec*에서 메시지를 생성 합니다. 또한 두 번째 생성자는 *pval1*에서 해당 메시지를 생성 하 여에 저장 `mypval1` 합니다. 세 번째 생성자는 *pval1*에서 해당 메시지를 생성 하 고에 저장 되는 pval1에서 해당 메시지를 생성 `mypval1` *pval2* `mypval2` 합니다.
+첫 번째 생성자는 *what_arg* 와 *ec* 에서 메시지를 생성 합니다. 또한 두 번째 생성자는 *pval1* 에서 해당 메시지를 생성 하 여에 저장 `mypval1` 합니다. 세 번째 생성자는 *pval1* 에서 해당 메시지를 생성 하 고에 저장 되는 pval1에서 해당 메시지를 생성 `mypval1`  `mypval2` 합니다.
 
 ```cpp
 filesystem_error(const string& what_arg,

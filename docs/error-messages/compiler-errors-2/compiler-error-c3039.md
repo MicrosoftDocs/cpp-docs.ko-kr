@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3039'
 title: 컴파일러 오류 C3039
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3039
 ms.assetid: 02776f16-f57a-4ffd-b7f7-9c696b633e08
-ms.openlocfilehash: ea6efbfa95992b04ade5496e8c7253ee87319a93
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: e84f769e49fa2b06eea2b1fe0b53ea2d935efb9c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91508367"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97270019"
 ---
 # <a name="compiler-error-c3039"></a>컴파일러 오류 C3039
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3041'
 title: 컴파일러 오류 C3041
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3041
 ms.assetid: 9df1ae44-3ac7-4c6c-899f-f35ffe7ccf0d
-ms.openlocfilehash: 06233369bfd813d53e895a559fa8a6cf8f885fa7
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: ce4a0b1dbbcc0dc83b84c25afd4acf43fa0af687
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91506415"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97269935"
 ---
 # <a name="compiler-error-c3041"></a>컴파일러 오류 C3041
 

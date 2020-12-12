@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Cre바 Ctrl 클래스'
 title: Cre바 Ctrl 클래스
 ms.date: 11/19/2018
 f1_keywords:
@@ -98,12 +99,12 @@ helpviewer_keywords:
 - CReBarCtrl [MFC], ShowBand
 - CReBarCtrl [MFC], SizeToRect
 ms.assetid: 154570d7-e48c-425d-8c7e-c64542bcb4cc
-ms.openlocfilehash: 872d577c2272939a6bf7ed1e3069cda426083e3f
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 75caee2fb0b6bb883ecb421325d41b25c38252b5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561897"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97301232"
 ---
 # <a name="crebarctrl-class"></a>Cre바 Ctrl 클래스
 
@@ -119,13 +120,13 @@ class CReBarCtrl : public CWnd
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[Cre바 Ctrl:: Cre Ctrl](#crebarctrl)|`CReBarCtrl` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[Cre바 Ctrl:: BeginDrag](#begindrag)|Rebar 컨트롤을 끌어서 놓기 모드로 전환 합니다.|
 |[Cre바 Ctrl:: Create](#create)|Rebar 컨트롤을 만들고이를 개체에 연결 `CReBarCtrl` 합니다.|
@@ -263,7 +264,7 @@ Rebar 컨트롤의 부모 창인 [CWnd](../../mfc/reference/cwnd-class.md) 개�
 *nID*<br/>
 Rebar 컨트롤의 컨트롤 ID를 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 개체가 성공적으로 만들어진 경우 0이 아닙니다. 그렇지 않으면 0입니다.
 
@@ -303,7 +304,7 @@ virtual BOOL CreateEx(
 컨트롤에 적용 되는 rebar 컨트롤 스타일의 조합을 지정 합니다. 지원 되는 스타일 목록은 Windows SDK의 [Rebar 컨트롤 스타일](/windows/win32/Controls/rebar-control-styles) 을 참조 하세요.
 
 *rect*<br/>
-*PParentWnd*의 클라이언트 좌표에서 만들 창의 크기와 위치를 설명 하는 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조체에 대 한 참조입니다.
+*PParentWnd* 의 클라이언트 좌표에서 만들 창의 크기와 위치를 설명 하는 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조체에 대 한 참조입니다.
 
 *pParentWnd*<br/>
 컨트롤의 부모 창에 대 한 포인터입니다.
@@ -311,7 +312,7 @@ virtual BOOL CreateEx(
 *nID*<br/>
 컨트롤의 자식 창 ID입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -344,7 +345,7 @@ BOOL DeleteBand(UINT uBand);
 *uBand*<br/>
 삭제할 밴드의 인덱스 (0부터 시작)입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 밴드가 삭제 되 면 0이 아닌 값으로 설정 됩니다. 그렇지 않으면 0입니다.
 
@@ -399,7 +400,7 @@ Windows SDK에 설명 된 대로 Win32 메시지 [RB_GETBANDCOUNT](/windows/win3
 UINT GetBandCount() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 컨트롤에 할당 된 밴드 수입니다.
 
@@ -421,7 +422,7 @@ BOOL GetBandInfo(
 *prbbi*<br/>
 대역 정보를 수신 하는 [Re바 밴드 정보](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfow) 구조에 대 한 포인터입니다. 이 `cbSize` 구조체의 멤버를로 설정 하 `sizeof(REBARBANDINFO)` 고 `fMask` 이 메시지를 보내기 전에 검색 하려는 항목으로 멤버를 설정 해야 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하는 경우 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -450,7 +451,7 @@ Rebar 막대의 높이를 검색 합니다.
 UINT GetBarHeight() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 컨트롤의 높이를 픽셀 단위로 나타내는 값입니다.
 
@@ -467,7 +468,7 @@ BOOL GetBarInfo(REBARINFO* prbi) const;
 *prbi*<br/>
 Rebar 컨트롤 정보를 받는 [Rebarinfo](/windows/win32/api/commctrl/ns-commctrl-rebarinfo) 구조에 대 한 포인터입니다. 이 메시지를 보내기 전에이 구조체의 *Cbsize* 멤버를로 설정 해야 합니다 `sizeof(REBARINFO)` .
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하는 경우 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -479,7 +480,7 @@ Windows SDK에 설명 된 대로 Win32 메시지 [RB_GETBKCOLOR](/windows/win32/
 COLORREF GetBkColor() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 기본 배경색을 나타내는 COLORREF 값입니다.
 
@@ -496,7 +497,7 @@ BOOL GetColorScheme(COLORSCHEME* lpcs);
 *lpcs*<br/>
 Windows SDK 설명 된 대로 [COLORSCHEME](/windows/win32/api/commctrl/ns-commctrl-colorscheme) 구조체에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하는 경우 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -512,7 +513,7 @@ Windows SDK에 설명 된 대로 Win32 메시지 [RB_GETDROPTARGET](/windows/win
 IDropTarget* GetDropTarget() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 [IDropTarget](/windows/win32/api/oleidl/nn-oleidl-idroptarget) 인터페이스에 대 한 포인터입니다.
 
@@ -524,7 +525,7 @@ IDropTarget* GetDropTarget() const;
 DWORD GetExtendedStyle() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 확장 스타일을 나타내는 플래그의 비트 조합 (OR)입니다. 가능한 플래그는 RBS_EX_SPLITTER 및 RBS_EX_TRANSPARENT입니다. 자세한 내용은 [Cre바 ctrl:: SetExtendedStyle](#setextendedstyle) 메서드의 *dwmask* 매개 변수를 참조 하세요.
 
@@ -540,7 +541,7 @@ DWORD GetExtendedStyle() const;
 CImageList* GetImageList() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 [CImageList](../../mfc/reference/cimagelist-class.md) 개체에 대 한 포인터입니다. 컨트롤에 대해 설정 된 이미지 목록이 없으면 NULL을 반환 합니다.
 
@@ -556,7 +557,7 @@ Rebar 컨트롤의 현재 색상표를 검색 합니다.
 CPalette* GetPalette() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 Rebar 컨트롤의 현재 색상표를 지정 하는 [Cpalette](../../mfc/reference/cpalette-class.md) 개체에 대 한 포인터입니다.
 
@@ -586,7 +587,7 @@ Rebar 컨트롤에서 밴드의 인덱스 (0부터 시작)입니다.
 *prc*<br/>
 Rebar 밴드의 경계를 수신 하는 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조체에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하는 경우 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -602,7 +603,7 @@ Windows SDK에 설명 된 대로 Win32 메시지 [RB_GETROWCOUNT](/windows/win32
 UINT GetRowCount() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 컨트롤의 밴드 행 수를 나타내는 UINT 값입니다.
 
@@ -623,7 +624,7 @@ UINT GetRowHeight(UINT uRow) const;
 *uRow*<br/>
 높이가 검색 되는 대역의 인덱스 (0부터 시작)입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 행 높이 (픽셀)를 나타내는 UINT 값입니다.
 
@@ -639,7 +640,7 @@ Windows SDK에 설명 된 대로 Win32 메시지 [RB_GETTEXTCOLOR](/windows/win3
 COLORREF GetTextColor() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 기본 텍스트 색을 나타내는 COLORREF 값입니다.
 
@@ -651,7 +652,7 @@ Windows SDK에 설명 된 대로 Win32 메시지 [RB_GETTOOLTIPS](/windows/win32
 CToolTipCtrl* GetToolTips() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) 개체에 대 한 포인터입니다.
 
@@ -672,7 +673,7 @@ int HitTest(RBHITTESTINFO* prbht);
 *prbht*<br/>
 [RBHITTESTINFO](/windows/win32/api/commctrl/ns-commctrl-rbhittestinfo) 구조체에 대 한 포인터입니다. 메시지를 보내기 전에 `pt` 이 구조체의 멤버를 테스트 하는 지점 (클라이언트 좌표)으로 초기화 해야 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 지정 된 지점에 있는 대역의 인덱스 (0부터 시작)이 고, 지점에 있는 크기 조정 밴드가 없으면-1입니다.
 
@@ -689,7 +690,7 @@ int IDToIndex(UINT uBandID) const;
 *uBandID*<br/>
 `wID`밴드가 삽입 될 때 [Re바 밴드 정보](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfow) 구조의 구성원에 전달 되는, 지정 된 대역의 응용 프로그램 정의 식별자입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 0부터 시작 하는 밴드 인덱스이 고, 그렇지 않으면-1입니다. 중복 된 밴드 인덱스가 있으면 첫 번째 인덱스가 반환 됩니다.
 
@@ -711,7 +712,7 @@ BOOL InsertBand(
 *prbbi*<br/>
 삽입할 대역을 정의 하는 [Re바 밴드 정보](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfow) 구조에 대 한 포인터입니다. 이 함수를 호출 하기 전에이 구조체의 *Cbsize* 멤버를로 설정 해야 합니다 `sizeof(REBARBANDINFO)` .
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하는 경우 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -779,7 +780,7 @@ BOOL MoveBand(
 *U)*<br/>
 새 대역 위치의 인덱스 (0부터 시작)입니다. 이 매개 변수 값은 대역에서 1을 뺀 값 보다 클 수 없습니다. 밴드 수를 가져오려면 [get밴드로 count](#getbandcount)를 호출 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하는 경우 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -816,7 +817,7 @@ void RestoreBand(UINT uBand);
 
 ### <a name="remarks"></a>설명
 
-[RB_MAXIMIZEBAND](/windows/win32/Controls/rb-maximizeband) `fIdeal` Windows SDK에 설명 된 대로를 1로 설정 하 여 RB_MAXIMIZEBAND Win32 메시지의 동작을 구현 합니다.
+[](/windows/win32/Controls/rb-maximizeband) `fIdeal` Windows SDK에 설명 된 대로를 1로 설정 하 여 RB_MAXIMIZEBAND Win32 메시지의 동작을 구현 합니다.
 
 ### <a name="example"></a>예제
 
@@ -840,7 +841,7 @@ BOOL SetBandInfo(
 *prbbi*<br/>
 삽입할 대역을 정의 하는 [Re바 밴드 정보](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfow) 구조에 대 한 포인터입니다. 이 `cbSize` 메시지를 보내기 전에이 구조체의 멤버를로 설정 해야 합니다 `sizeof(REBARBANDINFO)` .
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하는 경우 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -866,7 +867,7 @@ BOOL SetBandWidth(
 *cxWidth*\
 진행 Rebar 밴드의 새 너비 (픽셀)입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -899,7 +900,7 @@ BOOL SetBarInfo(REBARINFO* prbi);
 *prbi*<br/>
 설정할 정보를 포함 하는 [Rebarinfo](/windows/win32/api/commctrl/ns-commctrl-rebarinfo) 구조에 대 한 포인터입니다. 이 `cbSize` `sizeof(REBARINFO)` 메시지를 보내기 전에이 구조체의 멤버를로 설정 해야 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하는 경우 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -920,7 +921,7 @@ COLORREF SetBkColor(COLORREF clr);
 *clr*<br/>
 새 기본 배경색을 나타내는 COLORREF 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이전 기본 배경색을 나타내는 [Colorref](/windows/win32/gdi/colorref) 값입니다.
 
@@ -966,7 +967,7 @@ DWORD SetExtendedStyle(
 *dwStyleEx*\
 진행 적용할 스타일을 지정 하는 플래그의 비트 조합 (OR)입니다. 스타일을 설정 하려면 *Dwmask* 매개 변수에 사용 되는 것과 동일한 플래그를 지정 합니다. 스타일을 다시 설정 하려면 이진 0을 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이전 확장 스타일입니다.
 
@@ -987,7 +988,7 @@ BOOL SetImageList(CImageList* pImageList);
 *pImageList*<br/>
 Rebar 컨트롤에 할당할 이미지 목록을 포함 하는 [CImageList](../../mfc/reference/cimagelist-class.md) 개체에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하는 경우 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -1004,7 +1005,7 @@ CWnd* SetOwner(CWnd* pWnd);
 *pWnd*<br/>
 `CWnd`Rebar 컨트롤의 소유자로 설정할 개체에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 Rebar 컨트롤의 현재 소유자 인 [CWnd](../../mfc/reference/cwnd-class.md) 개체에 대 한 포인터입니다.
 
@@ -1028,7 +1029,7 @@ CPalette* SetPalette(HPALETTE hPal);
 *hPal*<br/>
 Rebar 컨트롤이 사용할 새 색상표를 지정 하는 HPALETTE입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 Rebar 컨트롤의 이전 색상표를 지정 하는 [cpalette](../../mfc/reference/cpalette-class.md) 개체에 대 한 포인터입니다.
 
@@ -1049,7 +1050,7 @@ COLORREF SetTextColor(COLORREF clr);
 *clr*<br/>
 개체의 새 텍스트 색을 나타내는 COLORREF 값입니다 `CReBarCtrl` .
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 개체와 연결 된 이전 텍스트 색을 나타내는 [Colorref](/windows/win32/gdi/colorref) 값 `CReBarCtrl` 입니다.
 
@@ -1087,7 +1088,7 @@ HRESULT SetWindowTheme(LPCWSTR pszSubAppName);
 *pszSubAppName*<br/>
 설정할 rebar 비주얼 스타일을 포함 하는 유니코드 문자열에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 반환 값은 사용 되지 않습니다.
 
@@ -1113,7 +1114,7 @@ Rebar 컨트롤에서 밴드의 인덱스 (0부터 시작)입니다.
 *fShow*<br/>
 밴드를 표시 하거나 숨길지 여부를 나타냅니다. 이 값이 TRUE 이면 밴드가 표시 됩니다. 그렇지 않으면 대역이 숨겨집니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하는 경우 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -1130,7 +1131,7 @@ BOOL SizeToRect(CRect& rect);
 *rect*<br/>
 Rebar 컨트롤의 크기를 조정 해야 하는 사각형을 지정 하는 [Crect](../../atl-mfc-shared/reference/crect-class.md) 개체에 대 한 참조입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하는 경우 0이 아니고, 그렇지 않으면 0입니다.
 

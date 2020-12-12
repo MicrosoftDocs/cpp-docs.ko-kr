@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CRecordView 클래스'
 title: CRecordView 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - CRecordView [MFC], OnMove
 - CRecordView [MFC], OnMove
 ms.assetid: 9b4b0897-bd50-4d48-a0b4-f3323f5ccc55
-ms.openlocfilehash: 21db03fde267a366d4dd1bf747880951e7546058
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ad9ef6ed53ed1f9ad843518701bd6e8d619e6e8a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219614"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97301154"
 ---
 # <a name="crecordview-class"></a>CRecordView 클래스
 
@@ -59,7 +60,7 @@ class AFX_NOVTABLE CRecordView : public CFormView
 
 ## <a name="remarks"></a>설명
 
-뷰는 개체에 직접 연결 된 폼 뷰입니다 `CRecordset` . 대화 상자 템플릿 리소스에서 뷰를 만들고 `CRecordset` 대화 상자 템플릿의 컨트롤에 개체의 필드를 표시 합니다. `CRecordView`개체는 DDX (대화 상자 데이터 교환) 및 RFX (레코드 필드 교환)를 사용 하 여 폼의 컨트롤과 레코드 집합의 필드 간 데이터 이동을 자동화 합니다. `CRecordView`는 현재 보기에서 레코드를 업데이트 하기 위한 첫 번째, 다음, 이전, 마지막 레코드 및 인터페이스로 이동 하기 위한 기본 구현도 제공 합니다.
+뷰는 개체에 직접 연결 된 폼 뷰입니다 `CRecordset` . 대화 상자 템플릿 리소스에서 뷰를 만들고 `CRecordset` 대화 상자 템플릿의 컨트롤에 개체의 필드를 표시 합니다. `CRecordView`개체는 DDX (대화 상자 데이터 교환) 및 RFX (레코드 필드 교환)를 사용 하 여 폼의 컨트롤과 레코드 집합의 필드 간 데이터 이동을 자동화 합니다. `CRecordView` 는 현재 보기에서 레코드를 업데이트 하기 위한 첫 번째, 다음, 이전, 마지막 레코드 및 인터페이스로 이동 하기 위한 기본 구현도 제공 합니다.
 
 > [!NOTE]
 > ODBC (Open Database Connectivity) 클래스 대신 DAO (Data Access Objects) 클래스를 사용 하 여 작업 하는 경우 [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) 클래스를 대신 사용 합니다. 자세한 내용은 [개요: 데이터베이스 프로그래밍](../../data/data-access-programming-mfc-atl.md)문서를 참조 하세요.
@@ -70,7 +71,7 @@ class AFX_NOVTABLE CRecordView : public CFormView
 
 레코드에서 레코드로 이동 하는 기본 구현에 대 한 자세한 내용은 `IsOnFirstRecord` 및 `IsOnLastRecord` 및 [레코드 뷰 사용](../../data/using-a-record-view-mfc-data-access.md)문서를 참조 하세요.
 
-`CRecordView`레코드 뷰에서 사용자 인터페이스를 업데이트할 수 있도록 레코드 집합에서 사용자의 위치를 추적 합니다. 사용자가 레코드 집합의 끝으로 이동할 때 레코드 뷰는 메뉴 항목 또는 도구 모음 단추와 같은 사용자 인터페이스 개체를 사용 하지 않도록 설정 하 여 동일한 방향으로 이동 합니다.
+`CRecordView` 레코드 뷰에서 사용자 인터페이스를 업데이트할 수 있도록 레코드 집합에서 사용자의 위치를 추적 합니다. 사용자가 레코드 집합의 끝으로 이동할 때 레코드 뷰는 메뉴 항목 또는 도구 모음 단추와 같은 사용자 인터페이스 개체를 사용 하지 않도록 설정 하 여 동일한 방향으로 이동 합니다.
 
 레코드 뷰 및 레코드 집합 클래스를 선언 하 고 사용 하는 방법에 대 한 자세한 내용은 문서 [레코드 뷰](../../data/record-views-mfc-data-access.md)의 "레코드 뷰 디자인 및 만들기"를 참조 하세요. 레코드 보기의 작동 방식 및 사용 방법에 대 한 자세한 내용은 [레코드 뷰 사용](../../data/using-a-record-view-mfc-data-access.md)문서를 참조 하세요.
 
@@ -94,7 +95,7 @@ class AFX_NOVTABLE CRecordView : public CFormView
 
 **헤더:** afxdb
 
-## <a name="crecordviewcrecordview"></a><a name="crecordview"></a>CRecordView:: CRecordView
+## <a name="crecordviewcrecordview"></a><a name="crecordview"></a> CRecordView:: CRecordView
 
 에서 파생 된 형식의 개체를 만들 때 `CRecordView` 두 가지 형식의 생성자를 호출 하 여 뷰 개체를 초기화 하 고 뷰의 기반이 되는 대화 상자 리소스를 식별 합니다.
 
@@ -118,7 +119,7 @@ explicit CRecordView(UINT nIDTemplate);
 > [!NOTE]
 > 파생 클래스는 자체 생성자를 제공 *해야 합니다* . 파생 클래스의 생성자에서 `CRecordView::CRecordView` 아래 예제와 같이 리소스 이름 또는 ID를 인수로 사용 하 여 생성자를 호출 합니다.
 
-`CRecordView::OnInitialUpdate`를 호출 하 `UpdateData` 는를 호출 `DoDataExchange` 합니다. 이 초기 호출을 `DoDataExchange` `CRecordView` 통해 컨트롤 (간접적)을 `CRecordset` 클래스 마법사에서 만든 필드 데이터 멤버에 연결 합니다. 이러한 데이터 멤버는 기본 클래스 멤버 함수를 호출한 후에만 사용할 수 있습니다 `CFormView::OnInitialUpdate` .
+`CRecordView::OnInitialUpdate` 를 호출 하 `UpdateData` 는를 호출 `DoDataExchange` 합니다. 이 초기 호출을 `DoDataExchange` `CRecordView` 통해 컨트롤 (간접적)을 `CRecordset` 클래스 마법사에서 만든 필드 데이터 멤버에 연결 합니다. 이러한 데이터 멤버는 기본 클래스 멤버 함수를 호출한 후에만 사용할 수 있습니다 `CFormView::OnInitialUpdate` .
 
 > [!NOTE]
 > 클래스 마법사를 사용 하는 경우 마법사는 **`enum`** 값 `CRecordView::IDD` 을 정의 하 고, 클래스 선언에서 지정 하 고, 생성자의 멤버 초기화 목록에이 값을 사용 합니다.
@@ -127,7 +128,7 @@ explicit CRecordView(UINT nIDTemplate);
 
 [!code-cpp[NVC_MFCDatabase#32](../../mfc/codesnippet/cpp/crecordview-class_1.cpp)]
 
-## <a name="crecordviewisonfirstrecord"></a><a name="isonfirstrecord"></a>CRecordView:: IsOnFirstRecord
+## <a name="crecordviewisonfirstrecord"></a><a name="isonfirstrecord"></a> CRecordView:: IsOnFirstRecord
 
 이 멤버 함수를 호출 하 여 현재 레코드가이 레코드 뷰와 연결 된 레코드 집합 개체의 첫 번째 레코드 인지 여부를 확인 합니다.
 
@@ -135,7 +136,7 @@ explicit CRecordView(UINT nIDTemplate);
 BOOL IsOnFirstRecord();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 레코드가 레코드 집합의 첫 번째 레코드 이면 0이 아닌 값입니다. 그렇지 않으면 0입니다.
 
@@ -145,7 +146,7 @@ BOOL IsOnFirstRecord();
 
 사용자가 첫 번째 레코드로 이동 하는 경우 프레임 워크는 첫 번째 레코드나 이전 레코드로 이동 하는 데 사용 하는 사용자 인터페이스 개체를 사용 하지 않도록 설정 합니다.
 
-## <a name="crecordviewisonlastrecord"></a><a name="isonlastrecord"></a>CRecordView:: IsOnLastRecord
+## <a name="crecordviewisonlastrecord"></a><a name="isonlastrecord"></a> CRecordView:: IsOnLastRecord
 
 이 멤버 함수를 호출 하 여 현재 레코드가이 레코드 뷰와 연결 된 레코드 집합 개체의 마지막 레코드 인지 여부를 확인 합니다.
 
@@ -153,7 +154,7 @@ BOOL IsOnFirstRecord();
 BOOL IsOnLastRecord();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 레코드가 레코드 집합의 마지막 레코드 이면 0이 아닌 값입니다. 그렇지 않으면 0입니다.
 
@@ -162,9 +163,9 @@ BOOL IsOnLastRecord();
 이 함수는 레코드에서 레코드로 이동 하기 위한 사용자 인터페이스를 지원 하기 위해 클래스 마법사에서 작성 하는 기본 명령 업데이트 처리기의 고유한 구현을 작성 하는 데 유용 합니다.
 
 > [!CAUTION]
-> 이 함수의 결과는 뷰가 사용자가 이전에 이동할 때까지 레코드 집합의 끝을 검색할 수 없는 경우를 제외 하 고 신뢰할 수 있습니다. 사용자는 레코드 뷰가 사용자 인터페이스 개체를 사용 하지 않도록 설정 하 여 다음 또는 마지막 레코드로 이동 해야 함을 알리기 전에 마지막 레코드를 넘어 이동 해야 합니다. 사용자가 마지막 레코드를 지난 후 마지막 레코드로 다시 이동 하는 경우 (또는 이전) 레코드 뷰는 레코드 집합에서 사용자의 위치를 추적 하 고 사용자 인터페이스 개체를 올바르게 비활성화할 수 있습니다. `IsOnLastRecord`는 `OnRecordLast` ID_RECORD_LAST 명령 또는를 처리 하는 구현 함수를 호출한 후에도 신뢰할 수 없습니다 `CRecordset::MoveLast` .
+> 이 함수의 결과는 뷰가 사용자가 이전에 이동할 때까지 레코드 집합의 끝을 검색할 수 없는 경우를 제외 하 고 신뢰할 수 있습니다. 사용자는 레코드 뷰가 사용자 인터페이스 개체를 사용 하지 않도록 설정 하 여 다음 또는 마지막 레코드로 이동 해야 함을 알리기 전에 마지막 레코드를 넘어 이동 해야 합니다. 사용자가 마지막 레코드를 지난 후 마지막 레코드로 다시 이동 하는 경우 (또는 이전) 레코드 뷰는 레코드 집합에서 사용자의 위치를 추적 하 고 사용자 인터페이스 개체를 올바르게 비활성화할 수 있습니다. `IsOnLastRecord` 는 `OnRecordLast` ID_RECORD_LAST 명령 또는를 처리 하는 구현 함수를 호출한 후에도 신뢰할 수 없습니다 `CRecordset::MoveLast` .
 
-## <a name="crecordviewongetrecordset"></a><a name="ongetrecordset"></a>CRecordView:: OnGetRecordset
+## <a name="crecordviewongetrecordset"></a><a name="ongetrecordset"></a> CRecordView:: OnGetRecordset
 
 레코드 뷰와 연결 된 파생 개체에 대 한 포인터를 반환 `CRecordset` 합니다.
 
@@ -172,7 +173,7 @@ BOOL IsOnLastRecord();
 virtual CRecordset* OnGetRecordset() = 0;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `CRecordset`개체가 성공적으로 만들어졌으면 파생 개체에 대 한 포인터이 고, 그렇지 않으면 NULL 포인터입니다.
 
@@ -182,7 +183,7 @@ virtual CRecordset* OnGetRecordset() = 0;
 
 자세한 내용 및 예제는 레코드 뷰 [: 레코드 뷰 사용](../../data/using-a-record-view-mfc-data-access.md)문서를 참조 하세요.
 
-## <a name="crecordviewonmove"></a><a name="onmove"></a>CRecordView:: OnMove
+## <a name="crecordviewonmove"></a><a name="onmove"></a> CRecordView:: OnMove
 
 이 멤버 함수를 호출 하 여 레코드 집합의 다른 레코드로 이동 하 고 레코드 뷰의 컨트롤에 해당 필드를 표시 합니다.
 
@@ -203,7 +204,7 @@ virtual BOOL OnMove(UINT nIDMoveCommand);
 
 - ID_RECORD_PREV 레코드 집합의 이전 레코드로 이동 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이동에 성공 하면 0이 아닌 값이 고, 그렇지 않으면 0입니다. 이동 요청이 거부 된 경우입니다.
 

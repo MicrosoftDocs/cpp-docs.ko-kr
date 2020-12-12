@@ -1,4 +1,5 @@
 ---
+description: '자세한 내용은 WM_ 메시지: P-R'
 title: 'WM_ 메시지: P - R'
 ms.date: 11/04/2016
 f1_keywords:
@@ -33,36 +34,36 @@ helpviewer_keywords:
 - ON_WM_QUERYENDSESSION [MFC]
 - WM_ messages
 ms.assetid: f46962e5-8329-4f1f-9b4d-fdad2a5ce1f8
-ms.openlocfilehash: 283e7aa52008d76067249978d667ce641020a3bb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d1e3ad4ca65bcf9f4b1b0901a6fe1dbf441595e5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62309072"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97218305"
 ---
-# <a name="wm-messages-p---r"></a>WM_ 메시지: P - R
+# <a name="wm_-messages-p---r"></a>WM_ 메시지: P - R
 
-다음 맵 항목 함수 프로토타입을에 해당합니다.
+함수 프로토타입에 해당 하는 맵 항목은 다음과 같습니다.
 
 |맵 항목|함수 프로토타입|
 |---------------|------------------------|
-|ON_WM_PAINT()|afx_msg void [OnPaint](../../mfc/reference/cwnd-class.md#onpaint)();|
-|ON_WM_PAINTCLIPBOARD()|afx_msg void [OnPaintClipboard](../../mfc/reference/cwnd-class.md#onpaintclipboard)( CWnd*, HANDLE );|
-|ON_WM_PALETTECHANGED()|afx_msg void [OnPaletteChanged](../../mfc/reference/cwnd-class.md#onpalettechanged)( CWnd* );|
-|ON_WM_PALETTEISCHANGING()|afx_msg void [OnPaletteIsChanging](../../mfc/reference/cwnd-class.md#onpaletteischanging)( CWnd* );|
-|ON_WM_PARENTNOTIFY()|afx_msg void [OnParentNotify](../../mfc/reference/cwnd-class.md#onparentnotify)( UINT, LONG );|
-|ON_WM_POWERBROADCAST()|afx_msg UINT [OnPowerBroadcast](../../mfc/reference/cwnd-class.md#onpowerbroadcast)( UINT, UINT );|
-|ON_WM_QUERYDRAGICON()|afx_msg HCURSOR [OnQueryDragIcon](../../mfc/reference/cwnd-class.md#onquerydragicon)()();|
-|ON_WM_QUERYENDSESSION()|afx_msg BOOL [OnQueryEndSession](../../mfc/reference/cwnd-class.md#onqueryendsession)()();|
-|ON_WM_QUERYNEWPALETTE()|afx_msg BOOL [OnQueryNewPalette](../../mfc/reference/cwnd-class.md#onquerynewpalette)()();|
-|ON_WM_QUERYOPEN()|afx_msg BOOL [OnQueryOpen](../../mfc/reference/cwnd-class.md#onqueryopen)()();|
-|ON_WM_RBUTTONDBLCLK()|afx_msg void [OnRButtonDblClk](../../mfc/reference/cwnd-class.md#onrbuttondblclk)( UINT, CPoint );|
-|ON_WM_RBUTTONDOWN()|afx_msg void [OnRButtonDown](../../mfc/reference/cwnd-class.md#onrbuttondown)( UINT, CPoint );|
-|ON_WM_RBUTTONUP()|afx_msg void [OnRButtonUp](../../mfc/reference/cwnd-class.md#onrbuttonup)( UINT, CPoint );|
-|ON_WM_RENDERALLFORMATS()|afx_msg void [OnRenderAllFormats](../../mfc/reference/cwnd-class.md#onrenderallformats)();|
-|ON_WM_RENDERFORMAT()|afx_msg void [OnRenderFormat](../../mfc/reference/cwnd-class.md#onrenderformat)( UINT );|
+|ON_WM_PAINT ()|afx_msg void [OnPaint](../../mfc/reference/cwnd-class.md#onpaint)();|
+|ON_WM_PAINTCLIPBOARD ()|afx_msg void [OnPaintClipboard](../../mfc/reference/cwnd-class.md#onpaintclipboard)(CWnd *, HANDLE);|
+|ON_WM_PALETTECHANGED ()|afx_msg void [OnPaletteChanged](../../mfc/reference/cwnd-class.md#onpalettechanged)(CWnd *);|
+|ON_WM_PALETTEISCHANGING ()|afx_msg void [OnPaletteIsChanging](../../mfc/reference/cwnd-class.md#onpaletteischanging)(CWnd *);|
+|ON_WM_PARENTNOTIFY ()|afx_msg void [Onparentnotify](../../mfc/reference/cwnd-class.md#onparentnotify)(UINT, LONG);|
+|ON_WM_POWERBROADCAST ()|afx_msg UINT [Onpowerbroadcast](../../mfc/reference/cwnd-class.md#onpowerbroadcast)(UINT, uint);|
+|ON_WM_QUERYDRAGICON ()|afx_msg HCURSOR [Onquerydragicon](../../mfc/reference/cwnd-class.md#onquerydragicon)() ();|
+|ON_WM_QUERYENDSESSION ()|afx_msg BOOL [Onqueryendsession](../../mfc/reference/cwnd-class.md#onqueryendsession)() ();|
+|ON_WM_QUERYNEWPALETTE ()|afx_msg BOOL [Onquerynewpalette](../../mfc/reference/cwnd-class.md#onquerynewpalette)() ();|
+|ON_WM_QUERYOPEN ()|afx_msg BOOL [Onqueryopen](../../mfc/reference/cwnd-class.md#onqueryopen)() ();|
+|ON_WM_RBUTTONDBLCLK ()|afx_msg void [OnRButtonDblClk](../../mfc/reference/cwnd-class.md#onrbuttondblclk)(UINT, cpoint);|
+|ON_WM_RBUTTONDOWN ()|afx_msg void [Onrbuttondown](../../mfc/reference/cwnd-class.md#onrbuttondown)(UINT, cpoint);|
+|ON_WM_RBUTTONUP ()|afx_msg void [Onrbuttonup](../../mfc/reference/cwnd-class.md#onrbuttonup)(UINT, cpoint);|
+|ON_WM_RENDERALLFORMATS ()|afx_msg void [Onrenderallformats](../../mfc/reference/cwnd-class.md#onrenderallformats)();|
+|ON_WM_RENDERFORMAT ()|afx_msg void [Onrenderformat](../../mfc/reference/cwnd-class.md#onrenderformat)(UINT);|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [메시지 맵](../../mfc/reference/message-maps-mfc.md)<br/>
-[WM_ 메시지 처리기](../../mfc/reference/handlers-for-wm-messages.md)
+[WM_ 메시지에 대 한 처리기](../../mfc/reference/handlers-for-wm-messages.md)
