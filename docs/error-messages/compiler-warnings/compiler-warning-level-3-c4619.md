@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 3) C4619'
 title: 컴파일러 경고(수준 3) C4619
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4619
 ms.assetid: 701fea21-01aa-4bea-93d4-1cb8824170b0
-ms.openlocfilehash: 658e52a2349f070def1efb80ca8a1cd93abca0cd
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: c108e4d1a0845cc6629a36307c33fc8342cadd67
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991960"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337270"
 ---
 # <a name="compiler-warning-level-3-c4619"></a>컴파일러 경고(수준 3) C4619
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _BitScanForward, _BitScanForward64'
 title: _BitScanForward, _BitScanForward64
 ms.date: 09/02/2019
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - bsf instruction
 - BitScanForward intrinsic
 ms.assetid: 405e60fb-0815-42a7-9b02-6fc035122203
-ms.openlocfilehash: 91f43d19259419b78d1910a00a154d2d4f0adfc7
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 182f22b5350fcad7c3da9a0d6f6df36c0871a3e7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222223"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337221"
 ---
 # <a name="_bitscanforward-_bitscanforward64"></a>_BitScanForward, _BitScanForward64
 
@@ -55,12 +56,12 @@ unsigned char _BitScanForward64(
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`_BitScanForward`|x86, ARM, x64, ARM64|
 |`_BitScanForward64`|ARM64, x64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 ## <a name="example"></a>예제
 
@@ -104,6 +105,6 @@ Mask: 12 Index: 2
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

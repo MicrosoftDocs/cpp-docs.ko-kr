@@ -1,4 +1,5 @@
 ---
+description: Is_error_condition_enum 클래스에 대해 자세히 알아보세요.
 title: is_error_condition_enum 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - is_error_condition_enum class
 ms.assetid: 752bb87a-c61c-4304-9254-5aaf228b59c0
-ms.openlocfilehash: c40f8f6eb93a33098cfbcf8133f08c56285abb43
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 3fd4f95e06ebee66a1f4d7d0e7de039d26b9f1fe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68452597"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323730"
 ---
-# <a name="iserrorconditionenum-class"></a>is_error_condition_enum 클래스
+# <a name="is_error_condition_enum-class"></a>is_error_condition_enum 클래스
 
 [error_condition](../standard-library/error-condition-class.md) 열거형을 테스트하는 형식 조건자를 나타냅니다.
 
@@ -30,6 +31,6 @@ template <_Enum>
 
 사용자 정의 형식의 경우 이 형식에 특수화를 추가할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [<type_traits>](../standard-library/type-traits.md)

@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 연산자 &lt; 연산자 (Microsoft:: WRL)'
 title: '연산자 &lt; 연산자 (Microsoft:: WRL)'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - client/Microsoft::WRL::operator<
 ms.assetid: bfae0e1c-1648-482b-99c2-3217d62aba46
-ms.openlocfilehash: b438f823814e21e2da43f698471d782c88626628
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1edbb8218ef07355040bd05ab99db8f97be1cb59
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226882"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330777"
 ---
 # <a name="operatorlt-operator-microsoftwrl"></a>연산자 &lt; 연산자 (Microsoft:: WRL)
 
@@ -33,9 +34,9 @@ bool operator<(const Details::ComPtrRef<ComPtr<T>>& a, const Details::ComPtrRef<
 *b*<br/>
 오른쪽 개체입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-**`true`** 의 주소가 *b*의 *주소* 보다 작은 경우 그렇지 않으면 **`false`** 입니다.
+**`true`** 의 주소가 *b* 의 *주소* 보다 작은 경우 그렇지 않으면 **`false`** 입니다.
 
 ## <a name="requirements"></a>요구 사항
 

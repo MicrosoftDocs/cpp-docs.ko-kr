@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: accelerator 및 accelerator_view 개체 사용'
 title: accelerator 및 accelerator_view 개체 사용
 ms.date: 11/04/2016
 ms.assetid: 18f0dc66-8236-4420-9f46-1a14f2c3fba1
-ms.openlocfilehash: 7807f0c1c572b2e7c3224cf0366233e2a28dbe07
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 270b517764b8060efbaea9d00c20e24aa1746818
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215896"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97314492"
 ---
 # <a name="using-accelerator-and-accelerator_view-objects"></a>accelerator 및 accelerator_view 개체 사용
 
@@ -94,7 +95,7 @@ void pick_with_most_memory()
 
 ## <a name="shared-memory"></a>공유 메모리
 
-공유 메모리는 CPU와 가속기 모두에서 액세스할 수 있는 메모리입니다. 공유 메모리를 사용 하면 CPU와 가속기 간에 데이터를 복사 하는 오버 헤드가 감소 하거나 크게 줄어듭니다. 메모리가 공유 되더라도 CPU와 가속기 모두 동시에 액세스할 수 없으며, 이렇게 하면 정의 되지 않은 동작이 발생 합니다. 액셀러레이터 키 [supports_cpu_shared_memory](reference/accelerator-class.md#supports_cpu_shared_memory) **`true`** 가 공유 메모리를 지원 하 고 [default_cpu_access_type](reference/accelerator-class.md#default_cpu_access_type) 속성이에 할당 된 메모리에 대 한 기본 [access_type](reference/concurrency-namespace-enums-amp.md#access_type) 를 가져옵니다. 예를 들어,에 할당 된 메모리에 대 한 기본을 가져옵니다 `accelerator` **array** `accelerator` `array_view` `accelerator` . supports_cpu_shared_memory
+공유 메모리는 CPU와 가속기 모두에서 액세스할 수 있는 메모리입니다. 공유 메모리를 사용 하면 CPU와 가속기 간에 데이터를 복사 하는 오버 헤드가 감소 하거나 크게 줄어듭니다. 메모리가 공유 되더라도 CPU와 가속기 모두 동시에 액세스할 수 없으며, 이렇게 하면 정의 되지 않은 동작이 발생 합니다. 액셀러레이터 키 [](reference/accelerator-class.md#supports_cpu_shared_memory) **`true`** 가 공유 메모리를 지원 하 고 [default_cpu_access_type](reference/accelerator-class.md#default_cpu_access_type) 속성이에 할당 된 메모리에 대 한 기본 [access_type](reference/concurrency-namespace-enums-amp.md#access_type) 를 가져옵니다. 예를 들어,에 할당 된 메모리에 대 한 기본을 가져옵니다 `accelerator`  `accelerator` `array_view` `accelerator` . supports_cpu_shared_memory
 
 C++ AMP 런타임은 각각에 대해 가장 적합 한 기본값을 자동으로 선택 `access_type` `accelerator` 하지만 공유 메모리의 성능 특성 (대역폭 및 대기 시간)은 cpu에서 읽거나 cpu에서 쓰거나 둘 다를 수행할 때 전용 (비공유) 가속기 메모리의 성능 특성 보다 낮을 수 있습니다. 공유 메모리와 CPU에서 읽기 및 쓰기를 위한 전용 메모리가 모두 사용 되는 경우 런타임은 기본적으로로 설정 되 고 `access_type_read_write` , 그렇지 않으면 런타임에서 보다 보수적인 기본값을 선택 하 `access_type` 고 응용 프로그램에서 계산 커널의 메모리 액세스 패턴이 다른를 활용 하는 경우이를 재정의할 수 있습니다 `access_type` .
 

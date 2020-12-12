@@ -1,4 +1,5 @@
-﻿---
+---
+description: '자세한 정보: 비표준 동작'
 title: 비표준 동작
 ms.date: 05/06/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - Microsoft-specific, compiler behavior
 - nonstandard behavior, compliance and compatibility
 ms.assetid: a57dea27-dc79-4f64-8a83-017e84841773
-ms.openlocfilehash: f31938c78e443bb53a286f79661d86b7a6e9edbc
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9f696582b23dfd4a22e6d48b9294a79787518b50
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87186544"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330848"
 ---
 # <a name="nonstandard-behavior"></a>비표준 동작
 
@@ -64,7 +65,7 @@ int main() {
 
 ## <a name="function-exception-specifiers"></a>함수 예외 지정자
 
-`throw()` 이외의 함수 예외 지정자는 구문 분석되지만 사용되지 않습니다. 이것은 C++ 사양의 단원 15.4에 맞지 않습니다. 예를 들면 다음과 같습니다.
+`throw()` 이외의 함수 예외 지정자는 구문 분석되지만 사용되지 않습니다. 이것은 C++ 사양의 단원 15.4에 맞지 않습니다. 예를 들어:
 
 ```cpp
 void f() throw(int); // parsed but not used

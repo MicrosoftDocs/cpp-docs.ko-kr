@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2910'
 title: 컴파일러 오류 C2910
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2910
 ms.assetid: 09c50e6a-e099-42f6-8ed6-d80e292a7a36
-ms.openlocfilehash: 0061a7171dd08440ec5d8c8b8cadb77303ff8f41
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: d4bb87b054f28e0eab5bc1eef815fd1770d45809
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74761117"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97270630"
 ---
 # <a name="compiler-error-c2910"></a>컴파일러 오류 C2910
 
@@ -56,7 +57,7 @@ template <> A<void>::A(void* p){}   // C2910
 
 이 오류는 Visual Studio .NET 2003:에서 수행한 컴파일러 규칙 작업의 결과로도 생성 됩니다.
 
-Visual Studio .NET 2003 및 visual Studio .NET 버전의 visual studio에서 코드를 사용할 수 있는 C++경우 `template <>`를 제거 합니다.
+코드는 Visual Studio .NET 2003 및 Visual Studio .NET 버전의 Visual C++, 제거에서 유효 `template <>` 합니다.
 
 다음 샘플에서는 C2910를 생성 합니다.
 

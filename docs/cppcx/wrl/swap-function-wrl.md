@@ -1,16 +1,17 @@
 ---
+description: '자세히 알아보기: Swap 함수 (WRL)'
 title: Swap 함수 (WRL)
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - internal/Microsoft::WRL::Details::Swap
 ms.assetid: ed134a08-ceb7-4279-aa02-a183c3a426ea
-ms.openlocfilehash: e665dbca025da56ba81c3fdf1749b2d653b78c00
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e81c9e332c6c6a69f475f53132689dc99fffdfee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213566"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97186196"
 ---
 # <a name="swap-function-wrl"></a>Swap 함수 (WRL)
 
@@ -27,15 +28,15 @@ WRL_NOTHROW inline void Swap(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*비어*<br/>
 첫 번째 인수입니다.
 
-*right*<br/>
+*오른쪽*<br/>
 두 번째 인수입니다.
 
 ## <a name="return-value"></a>반환 값
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 지정 된 두 인수 값을 교환 합니다.
 
@@ -47,4 +48,4 @@ WRL_NOTHROW inline void Swap(
 
 ## <a name="see-also"></a>참고 항목
 
-[Microsoft::WRL::Details 네임스페이스](microsoft-wrl-details-namespace.md)
+[Microsoft:: WRL::D etails 네임 스페이스](microsoft-wrl-details-namespace.md)

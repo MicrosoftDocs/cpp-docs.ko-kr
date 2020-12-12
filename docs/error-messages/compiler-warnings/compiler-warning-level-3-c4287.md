@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 3) C4287'
 title: 컴파일러 경고(수준 3) C4287
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4287
 ms.assetid: 1bf3bff8-6402-4d06-95ba-431678a790a7
-ms.openlocfilehash: 9ea192dddf570d0b41b6531181f4a2fbf51664c2
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a82ad437a4ba6e7e374e7eb8f50359e7bf667e9a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80198915"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344083"
 ---
 # <a name="compiler-warning-level-3-c4287"></a>컴파일러 경고(수준 3) C4287
 

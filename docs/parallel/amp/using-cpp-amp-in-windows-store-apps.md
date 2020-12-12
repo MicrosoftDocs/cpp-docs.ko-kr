@@ -1,23 +1,24 @@
 ---
-title: 사용 하 여 C++ UWP 앱에서 AMP
+description: '자세한 정보: UWP 앱에서 C++ AMP 사용'
+title: UWP 앱에서 C++ AMP 사용
 ms.date: 11/04/2016
 ms.assetid: 85577298-2c28-4209-9470-eb21048615db
-ms.openlocfilehash: 31fede0a2419e56d53cb16521b08067dac5facc6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 91c7b147ff89a1fe19ebe1b18e465533053542d0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405354"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97314479"
 ---
-# <a name="using-c-amp-in-uwp-apps"></a>사용 하 여 C++ UWP 앱에서 AMP
+# <a name="using-c-amp-in-uwp-apps"></a>UWP 앱에서 C++ AMP 사용
 
-사용할 수 있습니다 C++ AMP (C++ Accelerated Massive Parallelism)에서 GPU (그래픽 처리 장치) 또는 다른 연산 가속기에서 계산을 수행 하려면 유니버설 Windows 플랫폼 (UWP) 앱입니다. 그러나, C++ AMP는 Windows Runtime 형식으로 직접 작업하기 위한 API를 제공하지 않으며, Windows 런타임은 C++ AMP에 대한 래퍼를 제공하지 않습니다. 코드(본인이 직접 만든 형식 포함)에 Windows 런타임 형식을 사용할 경우 C++ AMP와 호환되는 형식으로 변환해야 합니다.
+UWP (유니버설 Windows 플랫폼) 앱에서 C++ AMP (C++ Accelerated Massive Parallelism)를 사용 하 여 GPU (그래픽 처리 장치) 또는 기타 계산 액셀러레이터에 대 한 계산을 수행할 수 있습니다. 그러나, C++ AMP는 Windows Runtime 형식으로 직접 작업하기 위한 API를 제공하지 않으며, Windows 런타임은 C++ AMP에 대한 래퍼를 제공하지 않습니다. 코드(본인이 직접 만든 형식 포함)에 Windows 런타임 형식을 사용할 경우 C++ AMP와 호환되는 형식으로 변환해야 합니다.
 
 ## <a name="performance-considerations"></a>성능 고려 사항
 
-시각적 개체를 사용 하는 경우 C++ 구성 요소 확장 C++유니버설 Windows 플랫폼 (UWP) 앱을 만드는 /CX 함께 연속 저장소는 일반 이전 데이터 (POD) 형식을 사용 하는 것이 좋습니다-예를 들어 `std::vector` 또는 C 스타일 배열-에 대 한 데이터와 함께 사용할는 C++ AMP 합니다. 이 마샬링이 없는 발생 하기 때문에 비 POD 형식 또는 Windows RT 컨테이너를 사용 하 여 더 높은 성능을 얻을 수 있습니다.
+Visual C++ 구성 요소 확장 c + +/CX를 사용 하 여 UWP (유니버설 Windows 플랫폼) 앱을 만드는 경우 `std::vector` C++ AMP와 함께 사용 되는 데이터에 대해 연속 저장소 (예: 또는 C 스타일 배열)와 함께 POD (일반-이전 데이터) 형식을 사용 하는 것이 좋습니다. 이렇게 하면 마샬링을 수행할 필요가 없기 때문에 비 POD 형식 또는 Windows RT 컨테이너를 사용 하는 것 보다 성능을 향상 시킬 수 있습니다.
 
-에 C++ AMP 커널에서이 방식으로 저장 된 데이터에 액세스를 래핑하면를 `std::vector` 에서 저장소 배열 또는 `concurrency::array_view` 다음에서 배열 뷰를 사용 하 여는 `concurrency::parallel_for_each` 루프:
+C++ AMP 커널에서 이러한 방식으로 저장 된 데이터에 액세스 하려면 `std::vector` 또는 배열 저장소를에 래핑하고 `concurrency::array_view` 루프에서 배열 뷰를 사용 하면 됩니다 `concurrency::parallel_for_each` .
 
 ```cpp
 // simple vector addition example
@@ -39,24 +40,24 @@ concurrency::parallel_for_each(av0.extent, [=](concurrency::index<1> idx) restri
 
 ## <a name="marshaling-windows-runtime-types"></a>Windows 런타임 형식 마샬링
 
-사용 하려는 Windows 런타임 Api를 사용 하 여 작업할 때 C++ AMP와 같은 Windows 런타임 컨테이너에 저장 된 데이터에는 `Platform::Array<T>^` 사용 하 여 선언 되는 클래스 또는 구조체 같은 복잡 한 데이터 형식에는 **ref**키워드 또는 **값** 키워드입니다. 이러한 상황에서 데이터를 사용할 수 있도록 몇 가지 추가 작업을 수행 해야 C++ AMP 합니다.
+Windows 런타임 Api를 사용 하는 경우 `Platform::Array<T>^` **ref** 키워드나 **value** 키워드를 사용 하 여 선언 된 클래스 또는 구조체와 같은 복잡 한 데이터 형식 또는와 같은 Windows 런타임 컨테이너에 저장 된 데이터에 대 한 C++ AMP를 사용할 수 있습니다. 이러한 상황에서는 데이터를 C++ AMP 사용할 수 있도록 하기 위해 몇 가지 추가 작업을 수행 해야 합니다.
 
-### <a name="platformarrayt-where-t-is-a-pod-type"></a>Platform:: array\<T > ^, 여기서 T는 POD 형식
+### <a name="platformarrayt-where-t-is-a-pod-type"></a>Platform:: Array \<T> ^, 여기서 T는 POD 형식입니다.
 
-발생 하는 `Platform::Array<T>^` T가 POD 형식이 사용 하 여 내부 저장소에 액세스할 수 있습니다는 `get` 멤버 함수:
+이 발생 하 `Platform::Array<T>^` 고 T가 POD 형식이 면 멤버 함수를 사용 하 여 기본 저장소에 액세스할 수 있습니다 `get` .
 
 ```cpp
 Platform::Array<float>^ arr; // Assume that this was returned by a Windows Runtime API
 concurrency::array_view<float, 1> av(arr->Length, &arr->get(0));
 ```
 
-T는 POD 형식이 없으면 기술을 사용 하 여를 설명 하는 다음 섹션에서 사용 하 여 데이터를 사용 하 여 C++ AMP 합니다.
+T가 POD 형식이 아닌 경우에는 다음 섹션에 설명 된 기술을 사용 하 여 C++ AMP 데이터를 사용 합니다.
 
 ### <a name="windows-runtime-types-ref-classes-and-value-classes"></a>Windows 런타임 형식: ref 클래스 및 값 클래스
 
-C++AMP는 복잡 한 데이터 형식을 지원 하지 않습니다. 비 POD 형식 및 사용 하 여 선언 된 모든 형식을 포함 합니다 **ref** 키워드와 **값** 키워드입니다. 지원 되지 않는 형식이 사용 되는 경우는 `restrict(amp)` 컨텍스트에 컴파일 타임 오류가 생성 됩니다.
+C++ AMP은 복합 데이터 형식을 지원 하지 않습니다. 여기에는 비 POD 형식 및 **ref** 키워드나 **value** 키워드를 사용 하 여 선언 된 모든 형식이 포함 됩니다. 컨텍스트에서 지원 되지 않는 형식을 사용 하는 경우 `restrict(amp)` 컴파일 타임 오류가 생성 됩니다.
 
-지원 되지 않는 형식에서 발생할 경우 관심 있는 부분은 데이터를 복사할 수 있습니다는 `concurrency::array` 개체입니다. 데이터를 사용할 수 있도록 하는 것 외에도 C++ 를 사용, AMP이 수동 복사 방식을 데이터 집약성을 극대화 하 고 사용 되지 않는 데이터가 액셀러레이터 키에 복사 되지 않습니다 보장 하 여 성능을 향상할 수도 있습니다. 사용 하 여 성능을 더욱 향상 시킬 수 있습니다는 *스테이징 배열*, 되는 특수 한 형태의 `concurrency::array` 배열에 다른 배열 간의 빈번한 전송에 최적화 되어야 합니다는 AMP 런타임에 힌트를 제공 하는 지정 된 액셀러레이터 키입니다.
+지원 되지 않는 형식이 발생 하는 경우 해당 데이터의 흥미로운 부분을 개체로 복사할 수 있습니다 `concurrency::array` . 이 수동 복사 방법은 데이터를 C++ AMP 사용할 수 있도록 하는 것 외에도 데이터 집약성을 극대화 하 고 사용 되지 않는 데이터가 액셀러레이터 키에 복사 되지 않도록 하 여 성능을 향상 시킬 수 있습니다. *준비 배열을* 사용 하 여 성능을 향상 시킬 수 있습니다 .이 배열을 사용 하 여 `concurrency::array` 지정 된 액셀러레이터의 다른 배열 간에 자주 전송 하도록 배열을 최적화 해야 함을 AMP 런타임에 힌트를 제공 합니다.
 
 ```cpp
 // pixel_color.h
@@ -113,7 +114,7 @@ concurrency::parallel_for_each(av_red.extent, [=](index<1> idx) restrict(amp)
     });
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[사용 하 여 첫 번째 UWP 앱 만들기C++](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp)<br/>
+[C + +를 사용 하 여 첫 번째 UWP 앱 만들기](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp)<br/>
 [C++로 Windows Runtime 구성 요소 만들기](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

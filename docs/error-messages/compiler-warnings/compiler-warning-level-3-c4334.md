@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 3) C4334'
 title: 컴파일러 경고(수준 3) C4334
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4334
 ms.assetid: d845857f-bc95-4faf-a079-626a0cf935ba
-ms.openlocfilehash: 38b93c83f822bc5b856a46f0dd62ea275d2bf207
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3c7a84efc3c98779c5b50dc1b3fb28e687f856eb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80198720"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344031"
 ---
 # <a name="compiler-warning-level-3-c4334"></a>컴파일러 경고(수준 3) C4334
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2603'
 title: 컴파일러 오류 C2603
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,24 +7,24 @@ f1_keywords:
 helpviewer_keywords:
 - C2603
 ms.assetid: 9ca520d0-f082-4b65-933d-17c3bcf8b02c
-ms.openlocfilehash: e4540180058c890a1dec9c4060f796f1f044c934
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: e28ea581c4c1417972cddc0ce558bd518acb8889
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65448001"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97208790"
 ---
 # <a name="compiler-error-c2603"></a>컴파일러 오류 C2603
 
-> '*함수*'. 생성자/소멸자 함수에서 사용 하 여 너무 많은 블록 범위 정적 개체
+> '*function*': 생성자/소멸자가 있는 블록 범위 정적 개체가 함수에 너무 많습니다.
 
-버전의 Microsoft에서 C++ Visual Studio 2015 이전 컴파일러 때나 합니다 [/zc: threadsafeinit-](../../build/reference/zc-threadsafeinit-thread-safe-local-static-initialization.md) 컴파일러 옵션을 지정 하면 31에서 외부에서 볼 수 있습니다 하는 정적 개체의 수에 제한이 있기 인라인 함수입니다.
+Visual Studio 2015 이전의 Microsoft c + + 컴파일러 또는 [/zc: threadSafeInit-](../../build/reference/zc-threadsafeinit-thread-safe-local-static-initialization.md) 컴파일러 옵션이 지정 된 경우 외부에서 볼 수 있는 인라인 함수에서 사용할 수 있는 정적 개체 수는 31 개로 제한 됩니다.
 
-Microsoft의 최신 버전을 채택 좋습니다이 문제를 해결 하려면 C++ 컴파일러 도구 집합 또는 가능한 경우 /zc: threadsafeinit-컴파일러 옵션을 제거 합니다. 없는 경우에 정적 개체를 결합 하는 것이 좋습니다. 개체가 동일한 형식의 경우 해당 유형의 단일 정적 배열 사용 하는 것이 좋습니다를 필요에 따라 개별 멤버를 참조 합니다.
+이 문제를 해결 하려면 최신 버전의 Microsoft c + + 컴파일러 도구 집합을 채택 하거나 가능한 경우/Zc: threadSafeInit-컴파일러 옵션을 제거 하는 것이 좋습니다. 가능 하지 않은 경우 정적 개체를 결합 하는 것이 좋습니다. 개체가 동일한 형식이 면 해당 형식의 단일 정적 배열을 사용 하 고 필요에 따라 개별 멤버를 참조 하는 것이 좋습니다.
 
 ## <a name="example"></a>예제
 
-다음 코드는 C2603를 생성 하 고를 해결 하는 방법을 보여 줍니다.
+다음 코드는 C2603을 생성 하 고이를 해결 하는 한 가지 방법을 보여 줍니다.
 
 ```cpp
 // C2603.cpp

@@ -1,4 +1,5 @@
 ---
+description: Unsupported_feature 클래스에 대해 자세히 알아보세요.
 title: unsupported_feature 클래스
 ms.date: 03/27/2019
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - unsupported_feature class
 ms.assetid: 6b1ab917-df13-48c7-9648-7cb2465a0ff5
-ms.openlocfilehash: 561f0a258943f6d7e1c0f1b5cae716592c931fbc
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 22cbc193de2a42e76ead4097d1e39351693ef706
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77127714"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97314505"
 ---
 # <a name="unsupported_feature-class"></a>unsupported_feature 클래스
 
@@ -29,11 +30,11 @@ class unsupported_feature : public runtime_exception;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
-|[unsupported_feature 생성자](#unsupported_feature)|`unsupported_feature` 예외의 새 인스턴스를 생성 합니다.|
+|[unsupported_feature 생성자](#unsupported_feature)|예외의 새 인스턴스를 생성 `unsupported_feature` 합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `exception`
 
@@ -41,9 +42,9 @@ class unsupported_feature : public runtime_exception;
 
 `unsupported_feature`
 
-## <a name="unsupported_feature"></a>unsupported_feature
+## <a name="unsupported_feature"></a><a name="unsupported_feature"></a> unsupported_feature
 
-  `unsupported_feature` 예외의 새 인스턴스를 생성 합니다.
+  예외의 새 인스턴스를 생성 `unsupported_feature` 합니다.
 
 ### <a name="syntax"></a>구문
 
@@ -59,7 +60,7 @@ unsupported_feature() throw();
 *_Message*<br/>
 오류에 대한 설명입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `unsupported_feature` 개체
 
@@ -71,4 +72,4 @@ unsupported_feature() throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[Concurrency 네임스페이스(C++ AMP)](concurrency-namespace-cpp-amp.md)
+[동시성 네임 스페이스 (C++ AMP)](concurrency-namespace-cpp-amp.md)

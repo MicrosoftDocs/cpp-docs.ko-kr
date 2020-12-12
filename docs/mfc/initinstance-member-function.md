@@ -1,4 +1,5 @@
-﻿---
+---
+description: InitInstance 멤버 함수에 대해 자세히 알아보세요.
 title: InitInstance 멤버 함수
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,16 +10,16 @@ helpviewer_keywords:
 - MFC, initializing
 - initializing MFC applications
 ms.assetid: 4ef09267-ff7f-4c39-91a0-57454a264f83
-ms.openlocfilehash: 0a458f19f956bb1092cc76acd587bc467f25325e
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: b55c5dbd665b45c74e5990b7d40a63fcd9098a9b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84625576"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97220619"
 ---
 # <a name="initinstance-member-function"></a>InitInstance 멤버 함수
 
-Windows 운영 체제에서는 동일한 응용 프로그램의 복사본을 두 개 이상 실행 하거나 "인스턴스"를 실행할 수 있습니다. `WinMain`응용 프로그램의 새 인스턴스가 시작 될 때마다 [InitInstance](reference/cwinapp-class.md#initinstance) 를 호출 합니다.
+Windows 운영 체제에서는 동일한 응용 프로그램의 복사본을 두 개 이상 실행 하거나 "인스턴스"를 실행할 수 있습니다. `WinMain` 응용 프로그램의 새 인스턴스가 시작 될 때마다 [InitInstance](reference/cwinapp-class.md#initinstance) 를 호출 합니다.
 
 `InitInstance`MFC 응용 프로그램 마법사에서 만든 표준 구현에서는 다음 작업을 수행 합니다.
 
@@ -39,4 +40,4 @@ Windows 운영 체제에서는 동일한 응용 프로그램의 복사본을 두
 
 ## <a name="see-also"></a>참고 항목
 
-[CWinApp: 애플리케이션 클래스](cwinapp-the-application-class.md)
+[CWinApp: 응용 프로그램 클래스](cwinapp-the-application-class.md)

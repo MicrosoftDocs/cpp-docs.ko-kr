@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: operator! = 연산자 (Microsoft:: WRL)'
 title: operator!= Operator (Microsoft::WRL)
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - client/Microsoft::WRL::operator!=
 ms.assetid: 785435da-87a6-4454-9bce-9d288a96dc26
-ms.openlocfilehash: af7088348cd3f52b38f0277fb7d0a973a1ca0e4b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 69385c81ee401e7fdd47077b21fbc5342eaa091a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226895"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330783"
 ---
 # <a name="operator-operator-microsoftwrl"></a>operator!= Operator (Microsoft::WRL)
 
@@ -61,7 +62,7 @@ WRL_NOTHROW bool operator!=(
 *b*<br/>
 오른쪽 개체입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 **`true`** 개체가 같지 않으면이 고, 그렇지 않으면입니다. 그렇지 않으면 **`false`** 입니다.
 

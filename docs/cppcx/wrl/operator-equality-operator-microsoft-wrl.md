@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: operator = = 연산자 (Microsoft:: WRL)'
 title: operator== Operator (Microsoft::WRL)
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - client/Microsoft::WRL::operator==
 ms.assetid: 94f383a5-17a9-40c7-9d9c-778acdc54b27
-ms.openlocfilehash: 4774d4801f917691610a457105fc6690ab030a44
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 36d178dc948a6d580fc0a0dab43c36e734a319c3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226908"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330803"
 ---
 # <a name="operator-operator-microsoftwrl"></a>operator== Operator (Microsoft::WRL)
 
@@ -61,7 +62,7 @@ WRL_NOTHROW bool operator==(
 *b*<br/>
 오른쪽 개체입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 **`true`** 개체가 같으면이 고, 그렇지 않으면입니다. 그렇지 않으면 **`false`** 입니다.
 

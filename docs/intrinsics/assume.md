@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __assume'
 title: __assume
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - __assume keyword [C++]
 ms.assetid: d8565123-b132-44b1-8235-5a8c8bff85a7
-ms.openlocfilehash: 80acb417ed85ced8f72906848474837efe6bc9d1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: fd7f275a8b570bc6176f4464ee59f2656328cf30
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225100"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337245"
 ---
 # <a name="__assume"></a>__assume
 
@@ -119,4 +120,4 @@ int main(int p)
 ## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)\
-[C++ 키워드](../cpp/keywords-cpp.md)
+[키워드](../cpp/keywords-cpp.md)
