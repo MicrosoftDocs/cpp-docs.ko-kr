@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: clog10, clog10f, clog10l'
 title: clog10, clog10f, clog10l
 ms.date: 11/04/2016
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - clog10f function
 - clog10l function
 ms.assetid: 2ddae00d-ef93-4441-add3-f4d58358401b
-ms.openlocfilehash: a840494caf3c34f09d8c90970988e847be712cb4
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 8f3112cec5d7f0d75435c1f47c8a28c9d3c93d69
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70939107"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277247"
 ---
 # <a name="clog10-clog10f-clog10l"></a>clog10, clog10f, clog10l
 
@@ -76,7 +77,7 @@ _Lcomplex clog10( _Lcomplex z );  // C++ only
 
 ## <a name="remarks"></a>설명
 
-는 C++ 오버 로드를 허용 하므로 **_Fcomplex** 및 **_fcomplex** 값을 사용 하 고 반환 하는 **clog10** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **clog10** 는 항상 **_dcomplex** 를 사용 하 고 반환 합니다.
+C + +에서는 오버 로드를 허용 하므로 **_Fcomplex** 및 **_Lcomplex** 값을 사용 하 고 반환 하는 **clog10** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **clog10** 는 항상 **_Dcomplex** 값을 사용 하 고 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -84,9 +85,9 @@ _Lcomplex clog10( _Lcomplex z );  // C++ only
 |-------------|--------------|------------------|
 |**clog10**,               **clog10f**, **clogl**|\<complex.h>|\<ccomplex>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [사전순 함수 참조](crt-alphabetical-function-reference.md)<br/>
 [cexp, cexpf, cexpl](cexp-cexpf-cexpl.md)<br/>

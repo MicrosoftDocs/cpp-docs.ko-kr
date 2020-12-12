@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3887'
 title: 컴파일러 오류 C3887
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3887
 ms.assetid: a7e82426-ef99-437b-9562-2822004e18fe
-ms.openlocfilehash: f64b72fe5d546550c32f60a27360d8a77c8255bd
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 8c80a1ff54f56e111934ebc370fee28f011bd37b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74736583"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97274348"
 ---
 # <a name="compiler-error-c3887"></a>컴파일러 오류 C3887
 
@@ -31,7 +32,7 @@ ref struct Y1 {
 };
 ```
 
-가능한 해결 방법:
+해결 방법:
 
 ```cpp
 // C3887b.cpp

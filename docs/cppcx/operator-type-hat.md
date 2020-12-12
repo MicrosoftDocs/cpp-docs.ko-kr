@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: 연산자 유형 ^'
 title: 연산자 Type^
 ms.date: 12/30/2016
 ms.assetid: b24ffc83-0780-4f9a-8ee0-f5725db339d1
-ms.openlocfilehash: 180efcac76b7f51291a47ee68508e7444a6c069c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6258da5f276313d28f56fe470849c929cc057a47
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62161812"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97276805"
 ---
 # <a name="operator-type"></a>연산자 Type^
 
@@ -19,7 +20,7 @@ ms.locfileid: "62161812"
 Operator Type^(Windows::UI::Xaml::Interop::TypeName typeName);
 ```
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>Return Value
 
 `Platform::Type` Windows::UI::Xaml::Interop::TypeName [이 제공되면](/uwp/api/windows.ui.xaml.interop.typename)을 반환합니다.
 
@@ -46,11 +47,11 @@ Type^ tx2 = (Type^)(tn);
 
 ## <a name="net-framework-equivalent"></a>.NET Framework의 해당 값
 
-.NET framework 프로젝트 `TypeName` 으로 <xref:System.Type>
+.NET Framework `TypeName` 프로그램 프로젝트 <xref:System.Type>
 
 ### <a name="requirements"></a>요구 사항
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [연산자 Windows::UI::Xaml::Interop::TypeName](../cppcx/operator-windows-ui-xaml-interop-typename.md)<br/>
-[Platform::Type 클래스](../cppcx/platform-type-class.md)
+[Platform:: Type 클래스](../cppcx/platform-type-class.md)

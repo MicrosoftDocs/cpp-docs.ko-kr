@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _setjmp3'
 title: _setjmp3
 ms.date: 11/04/2016
 api_name:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - _setjmp3 function
 - setjmp3 function
 ms.assetid: 6129c2f3-8bac-4fdb-a827-44e1eebba500
-ms.openlocfilehash: d7120ddd10322d0b7391608fd388d9f45c1600e8
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
-ms.translationtype: HT
+ms.openlocfilehash: 07a84601a6f57eca3e7dc71638a964428579b1c7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70957808"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277065"
 ---
 # <a name="_setjmp3"></a>_setjmp3
 
@@ -51,10 +52,10 @@ int _setjmp3(
 *count*<br/>
 [in] `optional parameters`에 저장된 정보의 추가 `DWORD` 수입니다.
 
-선택적 매개 변수 <br/>
+*선택적 매개 변수*<br/>
 [in] `setjmp` 내장 함수가 적용한 추가 데이터입니다. 첫 번째 `DWORD`는 추가 데이터를 해제한 다음 비휘발성 등록 상태로 반환하는 데 사용되는 함수 포인터입니다. 두 번째 `DWORD`는 복원할 시도 수준입니다. 모든 추가 데이터는 `jmp_buf`의 제네릭 데이터 배열에 저장됩니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 항상 0을 반환합니다.
 

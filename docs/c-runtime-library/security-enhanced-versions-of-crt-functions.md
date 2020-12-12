@@ -1,4 +1,5 @@
 ---
+description: Security-Enhanced 버전의 CRT 함수에 대해 자세히 알아보세요.
 title: 보안이 강화된 CRT 함수 버전
 ms.date: 03/21/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - security-enhanced CRT
 - CRT, security enhancements
 ms.assetid: f87e5a01-4cb2-4379-9e8f-d4693828c55a
-ms.openlocfilehash: 9cc44caa047e087b2f3de9b5af142d1ea868e893
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 95e94eb7790ef589fee3287b6cee8997faac7ab6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232380"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277208"
 ---
 # <a name="security-enhanced-versions-of-crt-functions"></a>보안이 강화된 CRT 함수 버전
 
@@ -19,7 +20,7 @@ ms.locfileid: "87232380"
 
 ## <a name="secure-functions"></a>보안 함수
 
-|CRT 함수|보안이 강화된 함수|Windows Server Update Services와 함께|
+|CRT 함수|보안이 강화된 함수|기능|
 |------------------|--------------------------------|---------|
 |[_access, _waccess](../c-runtime-library/reference/access-waccess.md)|[_access_s, _waccess_s](../c-runtime-library/reference/access-s-waccess-s.md)|파일 액세스 권한을 결정합니다.|
 |[_alloca](../c-runtime-library/reference/alloca.md)|[_malloca](../c-runtime-library/reference/malloca.md)|스택에 메모리를 할당합니다.|

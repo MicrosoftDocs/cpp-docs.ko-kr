@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Platform:: IDisposable 인터페이스'
 title: Platform::IDisposable 인터페이스
 ms.date: 02/03/2017
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::IDisposable Interface
 ms.assetid: f4344056-7030-42ed-bc98-b140edffddcd
-ms.openlocfilehash: 0024edbad0bb3311a0497be67fc8bcfc954602e1
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 0a1e7b44861d48f496f21d634d4d28ff1c968bcf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214242"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97276779"
 ---
 # <a name="platformidisposable-interface"></a>Platform::IDisposable 인터페이스
 
@@ -38,7 +39,7 @@ IDisposable 인터페이스는 IUnknown 인터페이스에서 상속됩니다. I
 
 IDisposable 인터페이스에는 다음 메서드가 있습니다.
 
-|방법|설명|
+|메서드|설명|
 |------------|-----------------|
 |Dispose|관리되지 않는 리소스를 해제하는 데 사용됩니다.|
 

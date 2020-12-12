@@ -1,4 +1,5 @@
 ---
+description: _Spawn, _wspawn 함수에 대해 자세히 알아보세요.
 title: _spawn, _wspawn 함수
 ms.date: 11/04/2016
 api_location:
@@ -48,12 +49,12 @@ helpviewer_keywords:
 - tspawnlpe function
 - _tspawnle function
 ms.assetid: bb47c703-5216-4e09-8023-8cf25bbf2cf9
-ms.openlocfilehash: 2f6aa420d7e6bb736721c4a68ff6451121da26ab
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 4b5fe1b386358095880c69fbf956c7c0a4a08ba9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840416"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97276909"
 ---
 # <a name="_spawn-_wspawn-functions"></a>_spawn, _wspawn 함수
 
@@ -76,7 +77,7 @@ ms.locfileid: "88840416"
 
 함수 이름 끝에 있는 문자에 따라 변형이 결정됩니다.
 
-|글자|Variant|
+|Letter|변형|
 |-|-|
 | `e`  | 환경 설정에 대한 포인터 배열인 `envp`가 새로운 프로세스에 전달됩니다.  |
 | `l`  | 명령줄 인수는 `_spawn` 함수로 개별적으로 전달됩니다. 이 접미사는 일반적으로 새로운 프로세스에 대한 여러 매개 변수를 미리 알고 있을 때 사용됩니다.  |
@@ -134,11 +135,11 @@ ms.locfileid: "88840416"
 
 인수의 개수를 미리 알고 있는 경우에는 `_spawnl`, `_spawnle`, `_spawnlp` 및 `_spawnlpe` 호출이 일반적으로 사용됩니다. `arg0` 인수는 일반적으로 `cmdname`에 대한 포인터입니다. `arg1` - `argn` 인수는 새 인수 목록을 구성하는 문자열에 대한 포인터입니다. `argn` 다음에는 인수 목록의 끝을 표시하는 **NULL** 포인터가 와야 합니다.
 
-새로운 프로세스에 대한 인수 개수가 가변적인 경우에는 `_spawnv`, `_spawnve`, `_spawnvp` 및 `_spawnvpe` 호출이 유용합니다. 인수에 대한 포인터는 `argv`* 배열로 전달됩니다.* 인수 `argv`[0]은 일반적으로 리얼 모드에서 경로를 가리키는 포인터이거나 보호 모드에서 프로그램 이름을 가리키는 포인터입니다. `argv`[1]부터 `argv`[`n`]은 새로운 인수 목록을 구성하는 문자열을 가리키는 포인터입니다. 인수 `argv`[`n` +1]은 인수 목록의 끝을 표시하는 **NULL** 포인터여야 합니다.
+새로운 프로세스에 대한 인수 개수가 가변적인 경우에는 `_spawnv`, `_spawnve`, `_spawnvp` 및 `_spawnvpe` 호출이 유용합니다. 인수에 대한 포인터는 `argv`*배열로 전달됩니다.* 인수 `argv`[0]은 일반적으로 리얼 모드에서 경로를 가리키는 포인터이거나 보호 모드에서 프로그램 이름을 가리키는 포인터입니다. `argv`[1]부터 `argv`[`n`]은 새로운 인수 목록을 구성하는 문자열을 가리키는 포인터입니다. 인수 `argv`[`n` +1]은 인수 목록의 끝을 표시하는 **NULL** 포인터여야 합니다.
 
 ## <a name="environment-of-the-spawned-process"></a>생성된 프로세스의 환경
 
-`_spawn` 호출 실행 시 열려 있는 파일은 새로운 프로세스에서 열린 채로 유지됩니다. `_spawnl`, `_spawnlp`, `_spawnv` 및 `_spawnvp` 호출에서 새로운 프로세스는 호출 프로세스의 환경을 상속 받습니다. `_spawnle`, `_spawnlpe`, `_spawnve` 및 `_spawnvpe` 호출을 사용하면 `envp` 인수를 통해 환경 설정 목록을 전달하여 새로운 프로세스에 대한 환경을 변경할 수 있습니다. `envp` 인수는 문자 포인터 배열이며, 마지막 요소를 제외한 각 요소는 환경 변수를 정의하고 null로 종료되는 문자열을 가리킵니다. 이러한 문자열의 형식은 일반적으로 `NAME`=`value`입니다. 여기서 `NAME`은 환경 변수의 이름이고, `value`는 해당 변수가 설정된 문자열 값입니다. 는 큰따옴표로 `value` 묶지 않습니다. 배열의 마지막 요소는 NULL 이어야 합니다 `envp` . **NULL** `envp` 자체가 **NULL**이면 생성된 프로세스가 부모 프로세스의 환경 설정을 상속 받습니다.
+`_spawn` 호출 실행 시 열려 있는 파일은 새로운 프로세스에서 열린 채로 유지됩니다. `_spawnl`, `_spawnlp`, `_spawnv` 및 `_spawnvp` 호출에서 새로운 프로세스는 호출 프로세스의 환경을 상속 받습니다. `_spawnle`, `_spawnlpe`, `_spawnve` 및 `_spawnvpe` 호출을 사용하면 `envp` 인수를 통해 환경 설정 목록을 전달하여 새로운 프로세스에 대한 환경을 변경할 수 있습니다. `envp` 인수는 문자 포인터 배열이며, 마지막 요소를 제외한 각 요소는 환경 변수를 정의하고 null로 종료되는 문자열을 가리킵니다. 이러한 문자열의 형식은 일반적으로 `NAME`=`value`입니다. 여기서 `NAME`은 환경 변수의 이름이고, `value`는 해당 변수가 설정된 문자열 값입니다. 는 큰따옴표로 `value` 묶지 않습니다. 배열의 마지막 요소는 NULL 이어야 합니다 `envp` .  `envp` 자체가 **NULL** 이면 생성된 프로세스가 부모 프로세스의 환경 설정을 상속 받습니다.
 
 `_spawn` 함수는 변환 모드를 포함하여 열려 있는 파일에 대한 모든 정보를 새로운 프로세스에 전달할 수 있습니다. 이 정보는 환경의 `C_FILE_INFO` 항목을 통해 리얼 모드에서 전달됩니다. 시작 코드는 일반적으로 이 항목을 처리한 다음 환경에서 삭제합니다. 그러나 `_spawn` 함수가 C 프로세스가 아닌 프로세스를 생성하면 이 항목이 환경에 남아 있습니다. 환경을 인쇄하면 이 항목에 대한 정의 문자열에 그래픽 문자가 표시됩니다. 이는 환경 정보가 리얼 모드에서 이진 형식으로 전달되기 때문입니다. 일반 작업에서는 다른 효과가 없습니다. 보호 모드에서는 환경 정보가 텍스트 형식으로 전달되므로 그래픽 문자를 포함하지 않습니다.
 
@@ -152,7 +153,7 @@ DLL 또는 GUI 애플리케이션에서 `_spawn`을 호출하며 출력을 파�
 
 - Win32 API를 사용하여 파이프를 만든 다음 [AllocConsole](/windows/console/allocconsole)을 호출하고, 시작 구조에서 핸들 값을 설정하고, [CreateProcess](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessw)를 호출합니다.
 
-- 그런 다음 [_popen, _wpopen](../c-runtime-library/reference/popen-wpopen.md)을 호출합니다. 이 함수는 **cmd.exe /c** 또는 **command.exe /c**를 사용하여 파이프를 만들고 앱을 호출합니다.
+- 그런 다음 [_popen, _wpopen](../c-runtime-library/reference/popen-wpopen.md)을 호출합니다. 이 함수는 **cmd.exe /c** 또는 **command.exe /c** 를 사용하여 파이프를 만들고 앱을 호출합니다.
 
 ## <a name="example"></a>예제
 

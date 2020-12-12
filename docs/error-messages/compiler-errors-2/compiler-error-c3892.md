@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3892'
 title: 컴파일러 오류 C3892
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3892
 ms.assetid: 83fff42c-ea48-442f-bc2e-b33a6b99d890
-ms.openlocfilehash: 73d96c61e918da3aabbfc00b83213fa79a2eedf9
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 1fe2692e594debebdaf3493414d0e6136c9403a5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74736388"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97274270"
 ---
 # <a name="compiler-error-c3892"></a>컴파일러 오류 C3892
 

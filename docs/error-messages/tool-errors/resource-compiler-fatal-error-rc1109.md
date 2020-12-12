@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 리소스 컴파일러 심각한 오류 RC1109'
 title: 리소스 컴파일러 심각한 오류 RC1109
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - RC1109
 ms.assetid: 2d3ec1c9-86fd-4d53-aa52-840c310b8328
-ms.openlocfilehash: 89ccb0186e94d174cb1d83d2a0d04a12029130fc
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3a8bb469d27109bdebbb31181ec234a09cce2948
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80173051"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97274166"
 ---
 # <a name="resource-compiler-fatal-error-rc1109"></a>리소스 컴파일러 심각한 오류 RC1109
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Platform:: AccessDeniedException 클래스'
 title: Platform::AccessDeniedException 클래스
 ms.date: 12/30/2016
 ms.topic: reference
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::AccessDeniedException
 ms.assetid: 6ae2155b-7b16-4587-8d2d-da05eab4c7e9
-ms.openlocfilehash: 4abbac977a256ff27f99caaf77393450d3ccf858
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2dd1e543093000521bceb0abed128a1dac27a6e0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62161773"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97276792"
 ---
 # <a name="platformaccessdeniedexception-class"></a>Platform::AccessDeniedException 클래스
 
@@ -35,10 +36,10 @@ public ref class AccessDeniedException : COMException,    IException,    IPrinta
 
 **지원 되는 최소 서버:** Windows Server 2012
 
-**네임스페이스:** 플랫폼
+**네임스페이스:** Platform
 
-**메타데이터:** platform.winmd
+**메타 데이터:** platform.object
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[Platform::COMException 클래스](../cppcx/platform-comexception-class.md)
+[Platform:: COMException 클래스](../cppcx/platform-comexception-class.md)

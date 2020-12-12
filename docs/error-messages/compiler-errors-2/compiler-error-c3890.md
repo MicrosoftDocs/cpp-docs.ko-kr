@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3890'
 title: 컴파일러 오류 C3890
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3890
 ms.assetid: 2f22c2fd-c14e-45e1-b936-b739ffc0b135
-ms.openlocfilehash: 8d93afa2ac8e365eff2f9256235b391f561cb977
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 1eddf71c5b380f97cd9910649f64fc67045b76a7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74736544"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97274296"
 ---
 # <a name="compiler-error-c3890"></a>컴파일러 오류 C3890
 
