@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 제네릭 및 템플릿 (c + +/CLI)'
 title: 제네릭 및 템플릿(C++/CLI)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - generics [C++], vs. templates
 - templates, C++
 ms.assetid: 63adec79-b1dc-4a1a-a21d-b8a72a8fce31
-ms.openlocfilehash: 567286ee24e9df968b2d352489fe12f2735854eb
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a62e765255896ef75d4cda73b66e7be0298b3690
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80172349"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97301687"
 ---
 # <a name="generics-and-templates-ccli"></a>제네릭 및 템플릿(C++/CLI)
 
@@ -47,7 +48,7 @@ ms.locfileid: "80172349"
 
 ## <a name="example"></a>예제
 
-### <a name="description"></a>Description
+### <a name="description"></a>설명
 
 다음 예제에서는 템플릿과 제네릭을 함께 사용하는 간단한 예제를 보여 줍니다. 이 예제에서 템플릿 클래스는 해당 매개 변수를 제네릭 형식에 전달합니다. 반대의 경우는 불가능합니다.
 
@@ -92,6 +93,6 @@ int main() {
 F
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [제네릭](generics-cpp-component-extensions.md)

@@ -1,4 +1,5 @@
 ---
+description: _Exec, _wexec 함수에 대해 자세히 알아보세요.
 title: _exec, _wexec 함수
 ms.date: 11/04/2016
 api_location:
@@ -56,12 +57,12 @@ helpviewer_keywords:
 - _exec function
 - _texecvpe function
 ms.assetid: a261df93-206a-4fdc-b8ac-66aa7db83bc6
-ms.openlocfilehash: ecfcf88b09a4383fc050e9737a0ffe7203f9a050
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 0a28c7bdc192e2e72c751e953987509c07611934
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839727"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97300101"
 ---
 # <a name="_exec-_wexec-functions"></a>_exec, _wexec 함수
 
@@ -128,7 +129,7 @@ ms.locfileid: "88839727"
 
 `_execv`, `_execve`, `_execvp` 및 `_execvpe` 호출은 새 프로세스에 대한 매개 변수 개수가 가변적인 경우 유용합니다. 매개변수에 대한 포인터는 배열 `argv`로 전달됩니다. 일반적으로 매개 변수 `argv`[0]은 `cmdname`에 대한 포인터입니다. 매개 변수 `argv`[1]~`argv`[`n`]는 새 매개 변수 목록을 구성하는 문자열을 가리킵니다. 매개 변수 `argv`[`n`+1]는 매개 변수 목록의 끝을 표시하는 **NULL** 포인터여야 합니다.
 
-`_exec` 호출 시 열린 파일은 새 프로세스에서도 열린 채 남아 있습니다. `_execl`, `_execlp`, `_execv` 및 `_execvp` 호출 시 새 프로세스는 호출 프로세스의 환경을 상속합니다. `_execle`, `_execlpe`, `_execve` 및 `_execvpe` 호출은 `envp` 매개 변수를 통해 환경 설정 목록을 전달함으로써 새 프로세스의 환경을 변경합니다. `envp`는 문자 포인터의 배열로, 마지막 요소를 제외한 각 요소는 환경 변수를 정의하는 null로 끝나는 문자열을 가리킵니다. 이러한 문자열의 형식은 일반적으로 `NAME`=`value`입니다. 여기서 `NAME`은 환경 변수의 이름이고, `value`는 해당 변수가 설정된 문자열 값입니다. 는 큰따옴표로 `value` 묶지 않습니다. 배열의 마지막 요소는 NULL 이어야 합니다 `envp` . **NULL** `envp` 자체가 **NULL**이면 새 프로세스는 호출 프로세스의 환경을 상속합니다.
+`_exec` 호출 시 열린 파일은 새 프로세스에서도 열린 채 남아 있습니다. `_execl`, `_execlp`, `_execv` 및 `_execvp` 호출 시 새 프로세스는 호출 프로세스의 환경을 상속합니다. `_execle`, `_execlpe`, `_execve` 및 `_execvpe` 호출은 `envp` 매개 변수를 통해 환경 설정 목록을 전달함으로써 새 프로세스의 환경을 변경합니다. `envp`는 문자 포인터의 배열로, 마지막 요소를 제외한 각 요소는 환경 변수를 정의하는 null로 끝나는 문자열을 가리킵니다. 이러한 문자열의 형식은 일반적으로 `NAME`=`value`입니다. 여기서 `NAME`은 환경 변수의 이름이고, `value`는 해당 변수가 설정된 문자열 값입니다. 는 큰따옴표로 `value` 묶지 않습니다. 배열의 마지막 요소는 NULL 이어야 합니다 `envp` .  `envp` 자체가 **NULL** 이면 새 프로세스는 호출 프로세스의 환경을 상속합니다.
 
 `_exec` 함수 중 하나를 사용하여 실행된 프로그램은 마치 프로그램의 .exe 파일 헤더에 있는 최대 할당 필드가 기본값인 0xFFFFH로 설정된 것처럼 항상 메모리로 로드됩니다 .
 

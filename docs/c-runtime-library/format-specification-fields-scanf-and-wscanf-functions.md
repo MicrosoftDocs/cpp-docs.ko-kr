@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 형식 사양 필드: scanf 및 wscanf 함수'
 title: '형식 사양 필드: scanf 및 wscanf 함수'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - format specification fields for scanf function
 - type fields
 ms.assetid: 7e95de1b-0b71-4de3-9f81-c9560c78e039
-ms.openlocfilehash: 4be7aa5e0790f0124890ee981ffd58e3027ea59b
-ms.sourcegitcommit: 111ee74772d7f308d3414b5d42cbc1e90287f081
+ms.openlocfilehash: 64d889af8200f5dcc745d628e02c388d74039bdd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88659333"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97303916"
 ---
 # <a name="format-specification-fields-scanf-and-wscanf-functions"></a>형식 사양 필드: scanf 및 wscanf 함수
 

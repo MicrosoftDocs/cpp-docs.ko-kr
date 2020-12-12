@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _aligned_msize'
 title: _aligned_msize
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - aligned_msize function
 - _aligned_msize function
 ms.assetid: 10995edc-2110-4212-9ca9-5e0220a464f4
-ms.openlocfilehash: 1037c63af17a844959bc72e42da2c33267b43004
-ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
+ms.openlocfilehash: 6b3b7df960cdbf687a1ea51fa98da216ddfed068
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91414037"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97303702"
 ---
 # <a name="_aligned_msize"></a>_aligned_msize
 

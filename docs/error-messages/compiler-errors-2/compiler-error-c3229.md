@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3229'
 title: 컴파일러 오류 C3229
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3229
 ms.assetid: f2d90923-aa8b-444f-ab10-1f37dbb864e1
-ms.openlocfilehash: bf205259eda45c79ac0c3c772d4f437cb3ac14b8
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 17d50d0bcc60357e024505499e002589525c5cba
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90743089"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97304118"
 ---
 # <a name="compiler-error-c3229"></a>컴파일러 오류 C3229
 

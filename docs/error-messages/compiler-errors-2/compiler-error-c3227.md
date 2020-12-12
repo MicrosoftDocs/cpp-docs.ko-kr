@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3227'
 title: 컴파일러 오류 C3227
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3227
 ms.assetid: 7939c23a-96c8-43c2-89e9-f217d132d155
-ms.openlocfilehash: 460000531dba77e42379199f276c9e2e02f43a9b
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 26d66bf3e0c3bc3a6f391d66608f3e6790b2d11d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74743421"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97304144"
 ---
 # <a name="compiler-error-c3227"></a>컴파일러 오류 C3227
 

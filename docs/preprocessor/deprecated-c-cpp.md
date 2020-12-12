@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 사용 되지 않는 pragma'
 title: deprecated pragma
 ms.date: 08/29/2019
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - deprecated pragma
 - pragmas, deprecated
 ms.assetid: 9c046f12-7875-499a-8d5d-12f8642fed2d
-ms.openlocfilehash: 52d9deb4ad68dacc99fab9d12bc9eb21bc0d360e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b3f7e8bf17e98f6e6f57511f3c0c9a94a9388bf1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231613"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97300777"
 ---
 # <a name="deprecated-pragma"></a>deprecated pragma
 
@@ -21,7 +22,7 @@ Pragma를 사용 하면 **`deprecated`** 함수, 형식 또는 다른 식별자�
 > [!NOTE]
 > C + + 14 `[[deprecated]]` 특성 및 Microsoft 한정자 나 pragma 대신 해당 특성을 사용 해야 하는 경우에 대 한 지침에 대 한 자세한 내용은 `__declspec(deprecated)` **`deprecated`** [c + +의 특성](../cpp/attributes.md)을 참조 하세요.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **#pragma 사용 되지 않음 (** *identifier1* [ **,** *identifier2* ] **)**
 

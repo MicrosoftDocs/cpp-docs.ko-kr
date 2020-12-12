@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2532'
 title: 컴파일러 오류 C2532
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2532
 ms.assetid: a94fdf13-5063-4206-b5a5-374930287bee
-ms.openlocfilehash: 3b84b4cbeb08b0299d57975f485df940d94aacb0
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6b2d340e247a2ed35e9005230118af8ad025c462
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80202581"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97302116"
 ---
 # <a name="compiler-error-c2532"></a>컴파일러 오류 C2532
 

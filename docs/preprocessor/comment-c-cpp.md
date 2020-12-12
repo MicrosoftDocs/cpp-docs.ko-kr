@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 주석 pragma'
 title: 주석 pragma
 ms.date: 08/29/2019
 f1_keywords:
@@ -10,24 +11,24 @@ helpviewer_keywords:
 - pragmas, comment
 - comment pragma
 ms.assetid: 20f099ff-6303-49b3-9c03-a94b6aa69b85
-ms.openlocfilehash: 3175ad5318bcc6fd9aa6233258ccec9033c89be8
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 71172632ee1589c3f6d66136e9567929bff5d08c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219093"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97300816"
 ---
 # <a name="comment-pragma"></a>주석 pragma
 
 주석 기록을 개체 파일 또는 실행 파일에 배치합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **#pragma 주석 (** *주석 유형* [ **,** "*주석-문자열*"] **)**
 
 ## <a name="remarks"></a>설명
 
-*주석-형식은* 아래에 설명 된 미리 정의 된 식별자 중 하나로, 주석 레코드의 형식을 지정 합니다. 선택적 *주석 문자열* 은 일부 주석 형식에 대 한 추가 정보를 제공 하는 문자열 리터럴입니다. *주석 문자열* 은 문자열 리터럴 이므로 이스케이프 문자, 포함 된 따옴표 (`"`) 및 연결에 대 한 문자열 리터럴에 대 한 모든 규칙을 따르는 합니다.
+*주석-형식은* 아래에 설명 된 미리 정의 된 식별자 중 하나로, 주석 레코드의 형식을 지정 합니다. 선택적 *주석 문자열* 은 일부 주석 형식에 대 한 추가 정보를 제공 하는 문자열 리터럴입니다. *주석 문자열* 은 문자열 리터럴 이므로 이스케이프 문자, 포함 된 따옴표 () 및 연결에 대 한 문자열 리터럴에 대 한 모든 규칙을 따르는 `"` 합니다.
 
 ### <a name="compiler"></a>compiler
 
@@ -65,7 +66,7 @@ ms.locfileid: "70219093"
 
 일반 주석을 개체 파일에 배치합니다. *주석 문자열* 매개 변수에는 주석의 텍스트가 포함 됩니다. 이 주석 기록은 링커에 의해 무시됩니다.
 
-## <a name="examples"></a>예
+## <a name="examples"></a>예제
 
 다음 pragma를 사용하면 링커가 연결하는 동안 EMAPI.LIB 라이브러리를 검색할 수 있습니다. 링커는 먼저 현재 작업 경로에서 검색한 다음 LIB 환경 변수에 지정된 경로에서 검색합니다.
 
@@ -85,6 +86,6 @@ ms.locfileid: "70219093"
 #pragma comment( user, "Compiled on " __DATE__ " at " __TIME__ )
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [Pragma 지시문 및 __pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

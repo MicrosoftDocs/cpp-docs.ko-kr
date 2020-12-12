@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _aligned_free'
 title: _aligned_free
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - _aligned_free function
 - aligned_free function
 ms.assetid: ed1ce952-cdfc-4682-85cc-f75d4101603d
-ms.openlocfilehash: d296600da4db2b97479de95cfc1f8c41d0e50708
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 2efbda028f1a5c23ce8a6f02da543a114534985d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915948"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97303728"
 ---
 # <a name="_aligned_free"></a>_aligned_free
 
@@ -54,7 +55,7 @@ void _aligned_free (
 
 ## <a name="remarks"></a>설명
 
-**_aligned_free** 표시 `__declspec(noalias)`됩니다. 즉, 함수가 전역 변수를 수정 하지 않도록 보장 합니다. 자세한 내용은 [noalias](../../cpp/noalias.md)를 참조하세요.
+**_aligned_free** 표시 됩니다 `__declspec(noalias)` . 즉, 함수가 전역 변수를 수정 하지 않도록 보장 합니다. 자세한 내용은 [noalias](../../cpp/noalias.md)를 참조하세요.
 
 이 함수는 다른 _aligned CRT 함수와 달리 매개 변수의 유효성을 검사하지 않습니다. *Memblock* 이 NULL 포인터인 경우이 함수는 단순히 동작을 수행 하지 않습니다. `errno`를 변경하지 않으며, 잘못된 매개 변수 처리기를 호출하지도 않습니다. 메모리 블록을 할당하기 위해 전에 _aligned 함수를 사용하지 않아 함수에 오류가 발생하거나 예기치 않은 문제 때문에 메모리 맞춤 오류가 발생하면 함수는 [_RPT, _RPTF, _RPTW, _RPTFW 매크로](rpt-rptf-rptw-rptfw-macros.md)에서 디버그 보고서를 생성합니다.
 
@@ -70,6 +71,6 @@ void _aligned_free (
 
 자세한 내용은 [_aligned_malloc](aligned-malloc.md)를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [데이터 맞춤](../../c-runtime-library/data-alignment.md)

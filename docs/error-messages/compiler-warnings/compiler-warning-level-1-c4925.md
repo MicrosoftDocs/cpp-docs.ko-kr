@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4925'
 title: 컴파일러 경고(수준 1) C4925
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4925
 ms.assetid: a4b206c0-016a-4f28-873a-bb8bb41bad50
-ms.openlocfilehash: defd60d02a8725b114b3901f8d70af87e27445c4
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 0fefea9580631439c9e442bb737f39b5c236b229
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80174637"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97301947"
 ---
 # <a name="compiler-warning-level-1-c4925"></a>컴파일러 경고(수준 1) C4925
 

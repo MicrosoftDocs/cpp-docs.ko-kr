@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: C 런타임 오류 R6028'
 title: C 런타임 오류 R6028
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - R6028
 ms.assetid: 81e99079-4388-4244-a4f7-4641c508871c
-ms.openlocfilehash: 1c165b7c9351e34ef6316962cd90663f2b6152ab
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f4b634814331a7301fccef77be31034afc77084a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80197134"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97301778"
 ---
 # <a name="c-runtime-error-r6028"></a>C 런타임 오류 R6028
 

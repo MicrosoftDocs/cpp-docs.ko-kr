@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 제네릭 클래스 (c + +/CLI)'
 title: 제네릭 클래스(C++/CLI)
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - generic classes
 - generics [C++], declaring generic classes
 ms.assetid: 0beb99e1-1ec4-4fee-9836-ce9657d67a3a
-ms.openlocfilehash: fd287d8e9fe08ccd42436569eafee3f6935700e2
-ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
+ms.openlocfilehash: 6b27f5220ab45fb62858bca2cec9ba0e46e9ec0a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91414128"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97301765"
 ---
 # <a name="generic-classes-ccli"></a>제네릭 클래스(C++/CLI)
 
@@ -60,7 +61,7 @@ class-body
 제네릭 클래스의 이름으로, 유효한 모든 C++ 식별자입니다.
 
 *수정자*<br/>
-(선택 사항) 허용되는 한정자는 **sealed** 및 **abstract**입니다.
+(선택 사항) 허용되는 한정자는 **sealed** 및 **abstract** 입니다.
 
 *base-list*<br/>
 하나의 기본 클래스와 구현된 모든 인터페이스가 쉼표로 구분된 목록입니다.
@@ -276,7 +277,7 @@ Test1
 
 추가적인 형식 매개 변수가 없는 제네릭 클래스의 메서드는 바깥쪽 제네릭 클래스에 의해 암시적으로 매개 변수화되지만, 일반적으로 제네릭이 아닌 것으로 참조됩니다.
 
-제네릭이 아닌 메서드의 시그니처에는 바깥쪽 클래스의 형식 매개 변수가 직접 또는 생성된 개방형 형식을 통해 하나 이상 포함될 수 있습니다. 예를 들면 다음과 같습니다.
+제네릭이 아닌 메서드의 시그니처에는 바깥쪽 클래스의 형식 매개 변수가 직접 또는 생성된 개방형 형식을 통해 하나 이상 포함될 수 있습니다. 예를 들어:
 
 `void MyMethod(MyClass<ItemType> x) {}`
 
@@ -341,7 +342,7 @@ Amount: $123.00**
 
 ## <a name="generic-methods-in-generic-classes"></a>제네릭 클래스의 제네릭 메서드
 
-제네릭 클래스와 제네릭이 아닌 클래스 둘 다에서 제네릭 메서드를 선언할 수 있습니다. 예를 들면 다음과 같습니다.
+제네릭 클래스와 제네릭이 아닌 클래스 둘 다에서 제네릭 메서드를 선언할 수 있습니다. 예를 들어:
 
 ## <a name="example-declare-generic-and-non-generic-methods"></a>예제: 제네릭 및 제네릭이 아닌 메서드 선언
 
@@ -710,6 +711,6 @@ The field is assigned the double value: 0.123
 The field is assigned the string: Hello Generics!
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [제네릭](generics-cpp-component-extensions.md)

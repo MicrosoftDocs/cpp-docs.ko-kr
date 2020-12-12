@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: setvbuf'
 title: setvbuf
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - stream buffering
 - setvbuf function
 ms.assetid: 6aa5aa37-3408-4fa0-992f-87f9f9c4baea
-ms.openlocfilehash: 907d02e94c79acf09dfa99a8b42e9f448d32dcfa
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 8010bdea7a2542e8797ea8c352d9221cdb4cc0b9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915759"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97303494"
 ---
 # <a name="setvbuf"></a>setvbuf
 
@@ -64,25 +65,25 @@ int setvbuf(
 *size*<br/>
 버퍼 크기(바이트)입니다. 허용 범위: 2 <= *size* <= INT_MAX (2147483647). 내부적으로 *크기* 에 대해 제공 되는 값은 가장 가까운 2의 배수로 반올림 됩니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 정상적으로 실행되는 경우 0을 반환합니다.
 
-*Stream* 이 **NULL**이거나 *모드나* *크기가* 유효한 변경 범위에 포함 되지 않은 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속해서 실행하도록 허용된 경우 이 함수는 -1을 반환하고 **errno**를 **EINVAL**로 설정합니다.
+*Stream* 이 **NULL** 이거나 *모드나* *크기가* 유효한 변경 범위에 포함 되지 않은 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속해서 실행하도록 허용된 경우 이 함수는 -1을 반환하고 **errno** 를 **EINVAL** 로 설정합니다.
 
 이러한 오류 코드 및 기타 오류 코드에 대한 내용은 [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-**Setvbuf** 함수를 사용 하면 프로그램에서 *스트림의*버퍼링 및 버퍼 크기를 모두 제어할 수 있습니다. *스트림이* 열려 있었기 때문에 i/o 작업이 수행 되지 않은 열려 있는 파일을 참조 해야 합니다. *버퍼* 에서 가리키는 배열이 **NULL**이 아닌 경우 버퍼로 사용 됩니다 .이 경우 **setvbuf** 는 자동으로 할당 된 바이트 *크기*/2 \* 바이트의 버퍼를 사용 합니다.
+**Setvbuf** 함수를 사용 하면 프로그램에서 *스트림의* 버퍼링 및 버퍼 크기를 모두 제어할 수 있습니다. *스트림이* 열려 있었기 때문에 i/o 작업이 수행 되지 않은 열려 있는 파일을 참조 해야 합니다. *버퍼* 에서 가리키는 배열이 **NULL** 이 아닌 경우 버퍼로 사용 됩니다 .이 경우 **setvbuf** 는 자동으로 할당 된 바이트 *크기*/2 바이트의 버퍼를 사용 \* 합니다.
 
-모드는 **_IOFBF**, **_IOLBF**또는 **_IONBF**이어야 합니다. *Mode* 가 **_IOFBF** 또는 **_IOLBF**이면 *크기가* 버퍼의 크기로 사용 됩니다. *Mode* 가 **_IONBF**이면 스트림은 버퍼링 되지 않으며 *크기* 는 무시 되 고 *버퍼* 는 무시 됩니다. *모드* 의 값과 해당 의미는 다음과 같습니다.
+모드는 **_IOFBF**, **_IOLBF** 또는 **_IONBF** 이어야 합니다. *Mode* 가 **_IOFBF** 또는 **_IOLBF** 이면 *크기가* 버퍼의 크기로 사용 됩니다. *Mode* 가 **_IONBF** 이면 스트림은 버퍼링 되지 않으며 *크기* 는 무시 되 고 *버퍼* 는 무시 됩니다. *모드* 의 값과 해당 의미는 다음과 같습니다.
 
 |*모드* 값|의미|
 |-|-|
-| **_IOFBF** | 전체 버퍼링 즉, 버퍼는 버퍼로 *사용 되 고* *크기* 는 버퍼 크기로 사용 됩니다. *버퍼가* **NULL**이면 자동으로 할당 된 버퍼 *크기* (바이트)가 사용 됩니다. |
+| **_IOFBF** | 전체 버퍼링 즉, 버퍼는 버퍼로 *사용 되 고* *크기* 는 버퍼 크기로 사용 됩니다. *버퍼가* **NULL** 이면 자동으로 할당 된 버퍼 *크기* (바이트)가 사용 됩니다. |
 | **_IOLBF** | 이 값을 사용하는 경우 라인 버퍼링이 제공되는 시스템도 있습니다. 그러나 Win32의 경우 동작은 **_IOFBF** 전체 버퍼링과 동일 합니다. |
-| **_IONBF** | *버퍼 또는* *크기*에 관계 없이 버퍼가 사용 되지 않습니다. |
+| **_IONBF** | *버퍼 또는* *크기* 에 관계 없이 버퍼가 사용 되지 않습니다. |
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -135,7 +136,7 @@ int main( void )
 'stream2' now has no buffer
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [스트림 I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fclose, _fcloseall](fclose-fcloseall.md)<br/>

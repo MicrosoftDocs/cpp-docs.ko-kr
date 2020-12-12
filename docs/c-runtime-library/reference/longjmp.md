@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 이상'
 title: longjmp
 ms.date: 08/14/2018
 api_name:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - restoring stack environment and execution locale
 - longjmp function
 ms.assetid: 0e13670a-5130-45c1-ad69-6862505b7a2f
-ms.openlocfilehash: 4f737818afe7136262362e4fe996745064568758
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bfcbac2ea54e167f65f0d303e08d6450e53ff0e1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218561"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299984"
 ---
 # <a name="longjmp"></a>longjmp
 
@@ -55,9 +56,9 @@ void longjmp(
 
 ## <a name="remarks"></a>설명
 
-이 **함수는** *이전에에* 저장 된 스택 환경 및 실행 로캘을 복원 `setjmp` 합니다. `setjmp`및 **이상** 버전은 비로컬를 실행 하는 방법을 제공 **`goto`** 합니다. 일반적으로 일반 호출 및 반환 규칙을 사용 하지 않고 이전에 호출 된 루틴에서 오류 처리 또는 복구 코드에 실행 제어를 전달 하는 데 사용 됩니다.
+이 **함수는** *이전에에* 저장 된 스택 환경 및 실행 로캘을 복원 `setjmp` 합니다. `setjmp` 및 **이상** 버전은 비로컬를 실행 하는 방법을 제공 **`goto`** 합니다. 일반적으로 일반 호출 및 반환 규칙을 사용 하지 않고 이전에 호출 된 루틴에서 오류 처리 또는 복구 코드에 실행 제어를 전달 하는 데 사용 됩니다.
 
-를 호출 하면 `setjmp` 현재 스택 환경이 *env*에 저장 됩니다. 이상 값에 대 한 후속 호출에서는 저장 된 환경을 **복원 하 고** 컨트롤을 해당 호출 바로 다음 지점으로 반환 합니다 `setjmp` . *value*가 `setjmp` 호출에 의해 반환된 것처럼 실행이 다시 시작됩니다. 컨트롤을 받는 루틴에 액세스할 수 있는 모든 변수 (레지스터 변수 제외)의 값에는가 중이 호출 되었을 **때의 값이 포함** 됩니다. 레지스터 변수 값은 예측할 수 없습니다. `setjmp`에서 반환되는 값은 0이 아니어야 합니다. *value*가 0으로 전달되는 경우 값 1은 실제 반환에서 대체됩니다.
+를 호출 하면 `setjmp` 현재 스택 환경이 *env* 에 저장 됩니다. 이상 값에 대 한 후속 호출에서는 저장 된 환경을 **복원 하 고** 컨트롤을 해당 호출 바로 다음 지점으로 반환 합니다 `setjmp` . *value* 가 `setjmp` 호출에 의해 반환된 것처럼 실행이 다시 시작됩니다. 컨트롤을 받는 루틴에 액세스할 수 있는 모든 변수 (레지스터 변수 제외)의 값에는가 중이 호출 되었을 **때의 값이 포함** 됩니다. 레지스터 변수 값은 예측할 수 없습니다. `setjmp`에서 반환되는 값은 0이 아니어야 합니다. *value* 가 0으로 전달되는 경우 값 1은 실제 반환에서 대체됩니다.
 
 **Microsoft 전용**
 
@@ -65,7 +66,7 @@ Windows의 Microsoft c + + 코드 **에서, 명령줄** 은 예외 처리 코드
 
 를 호출한 **함수가 반환 되기 전에** 는 이상 값만 호출 `setjmp` 합니다. 그렇지 않으면 결과를 예측할 수 없습니다.
 
-을 사용 하는 경우 다음 **제한 사항을 준수**합니다.
+을 사용 하는 경우 다음 **제한 사항을 준수** 합니다.
 
 - 레지스터 변수 값이 그대로 유지된다고 가정하지 마십시오. 을 호출 하는 루틴의 레지스터 변수 값은 `setjmp` 가 중 **jmp** 를 실행 한 후 적절 한 값으로 복원 되지 않을 수 있습니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _access_s, _waccess_s'
 title: _access_s, _waccess_s
 ms.date: 4/2/2020
 api_name:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - _access_s function
 - _waccess_s function
 ms.assetid: fb3004fc-dcd3-4569-8b27-d817546e947e
-ms.openlocfilehash: c3893b3d78a2c142ffc9e10eb6bbf299c5fddb9b
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: cf46f3996005584a8f17b25baac60b9c5683ed19
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916903"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97303845"
 ---
 # <a name="_access_s-_waccess_s"></a>_access_s, _waccess_s
 
@@ -68,7 +69,7 @@ errno_t _waccess_s(
 *mode*<br/>
 권한 설정
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 파일에 지정된 모드가 있으면 각 함수는 0을 반환합니다. 명명된 파일이 없거나 지정된 모드에서 액세스할 수 없는 경우 함수는 오류 코드를 반환합니다. 이 경우 함수는 다음과 같이 집합에서 오류 코드를 반환하고 `errno`를 같은 값으로 설정합니다.
 
@@ -82,7 +83,7 @@ errno_t _waccess_s(
 
 ## <a name="remarks"></a>설명
 
-파일에서 사용 하는 경우 **_access_s** 함수는 지정 된 파일이 있는지 여부를 확인 하 고 *모드*값에 지정 된 대로 액세스할 수 있습니다. 디렉터리와 함께 사용 하는 경우 **_access_s** 지정 된 디렉터리가 있는지만 확인 합니다. Windows 2000 이상 운영 체제에서는 모든 디렉터리에 읽기 및 쓰기 권한이 있습니다.
+파일에서 사용 하는 경우 **_access_s** 함수는 지정 된 파일이 있는지 여부를 확인 하 고 *모드* 값에 지정 된 대로 액세스할 수 있습니다. 디렉터리와 함께 사용 하는 경우 **_access_s** 지정 된 디렉터리가 있는지만 확인 합니다. Windows 2000 이상 운영 체제에서는 모든 디렉터리에 읽기 및 쓰기 권한이 있습니다.
 
 |모드 값|파일 검사|
 |----------------|---------------------|
@@ -93,7 +94,7 @@ errno_t _waccess_s(
 
 파일 읽기 권한 또는 쓰기 권한은 파일을 열기 위한 충분한 권한이 아닙니다. 예를 들어 파일이 다른 프로세스에 의해 잠겨 있는 경우 **_access_s** 에서 0을 반환 하더라도 액세스 하지 못할 수 있습니다.
 
-**_waccess_s** 은 **_access_s**의 와이드 문자 버전입니다. **_waccess_s** *경로* 인수는 와이드 문자 문자열입니다. 그렇지 않으면 **_waccess_s** 와 **_access_s** 는 동일 하 게 동작 합니다.
+**_waccess_s** 은 **_access_s** 의 와이드 문자 버전입니다. **_waccess_s** *경로* 인수는 와이드 문자 문자열입니다. 그렇지 않으면 **_waccess_s** 와 **_access_s** 는 동일 하 게 동작 합니다.
 
 이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. *Path* 가 NULL 이거나 *mode* 가 유효한 모드를 지정 하지 않는 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속해서 실행하도록 허용된 경우 이러한 함수는 `errno`를 `EINVAL`로 설정하고 `EINVAL`을 반환합니다.
 
@@ -156,7 +157,7 @@ File crt_access_s.c exists.
 File crt_access_s.c does not have write permission.
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [파일 처리](../../c-runtime-library/file-handling.md)<br/>
 [_access, _waccess](access-waccess.md)<br/>

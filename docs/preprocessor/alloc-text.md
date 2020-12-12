@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: alloc_text pragma'
 title: alloc_text pragma
 ms.date: 08/29/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - alloc_text pragma
 - pragmas, alloc_text
 ms.assetid: 1fd7be18-e4f7-4f70-b079-6326f72b871a
-ms.openlocfilehash: c638c2026a493453aeb5aff00ba6273efb5f184e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 496a083c251684ebba004eef00bf466e72211ada
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219445"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97301063"
 ---
 # <a name="alloc_text-pragma"></a>alloc_text pragma
 
 지정한 함수 정의가 상주하는 코드 섹션의 이름을 지정합니다. pragma는 명명된 함수의 함수 선언자와 함수 정의 간에 발생해야 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **#pragma alloc_text (** "*textsection*" **,** *function1* [**,** *function2* ...] **)**
 

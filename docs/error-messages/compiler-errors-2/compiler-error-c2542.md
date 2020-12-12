@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2542'
 title: 컴파일러 오류 C2542
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2542
 ms.assetid: a984520d-f835-4cac-ac0e-7f1d5f5c6278
-ms.openlocfilehash: f996a5ddf607a83512788bad0b16cf2eec2b4ef4
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e53c748fb60a63ffb0018ccf081a99aaa0118b82
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80202568"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97301999"
 ---
 # <a name="compiler-error-c2542"></a>컴파일러 오류 C2542
 

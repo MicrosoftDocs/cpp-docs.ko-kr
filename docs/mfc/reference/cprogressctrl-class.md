@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CProgressCtrl 클래스'
 title: CProgressCtrl 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -42,12 +43,12 @@ helpviewer_keywords:
 - CProgressCtrl [MFC], SetStep
 - CProgressCtrl [MFC], StepIt
 ms.assetid: 222630f4-1598-4026-8198-51649b1192ab
-ms.openlocfilehash: eda19ca2b94978201806e60d2ae8399e00e13f1f
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: f5bd1bcae041d6bd61b715275b232fc5536cba2f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561520"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97301414"
 ---
 # <a name="cprogressctrl-class"></a>CProgressCtrl 클래스
 
@@ -63,13 +64,13 @@ class CProgressCtrl : public CWnd
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CProgressCtrl:: CProgressCtrl](#cprogressctrl)|`CProgressCtrl` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CProgressCtrl:: Create](#create)|진행률 표시줄 컨트롤을 만들고이를 개체에 연결 `CProgressCtrl` 합니다.|
 |[CProgressCtrl:: CreateEx](#createex)|지정 된 Windows 확장 스타일을 사용 하 여 진행률 컨트롤을 만들고 개체에 연결 `CProgressCtrl` 합니다.|
@@ -149,7 +150,7 @@ virtual BOOL Create(
 - PBS_SMOOTH는 진행률 표시줄 컨트롤에서 부드러운 부드러운 채우기를 표시 합니다. 이 플래그가 없으면 컨트롤이 블록으로 채워집니다.
 
 *rect*<br/>
-진행률 표시줄 컨트롤의 크기와 위치를 지정 합니다. 이는 [Crect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조 일 수 있습니다. 컨트롤은 자식 창 이어야 하므로 지정 된 좌표는 *pParentWnd*의 클라이언트 영역을 기준으로 합니다.
+진행률 표시줄 컨트롤의 크기와 위치를 지정 합니다. 이는 [Crect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조 일 수 있습니다. 컨트롤은 자식 창 이어야 하므로 지정 된 좌표는 *pParentWnd* 의 클라이언트 영역을 기준으로 합니다.
 
 *pParentWnd*<br/>
 진행률 표시줄 컨트롤의 부모 창 (일반적으로)을 지정 합니다 `CDialog` . NULL이 아니어야 합니다.
@@ -157,7 +158,7 @@ virtual BOOL Create(
 *nID*<br/>
 진행률 표시줄 컨트롤의 ID를 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `CProgressCtrl`개체가 성공적으로 만들어졌으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
@@ -191,7 +192,7 @@ virtual BOOL CreateEx(
 진행률 표시줄 컨트롤의 스타일을 지정 합니다. Windows SDK에서 [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) 에 설명 된 창 스타일의 조합을 적용 합니다.
 
 *rect*<br/>
-*PParentWnd*의 클라이언트 좌표에서 만들 창의 크기와 위치를 설명 하는 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조체에 대 한 참조입니다.
+*PParentWnd* 의 클라이언트 좌표에서 만들 창의 크기와 위치를 설명 하는 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조체에 대 한 참조입니다.
 
 *pParentWnd*<br/>
 컨트롤의 부모 창에 대 한 포인터입니다.
@@ -199,7 +200,7 @@ virtual BOOL CreateEx(
 *nID*<br/>
 컨트롤의 자식 창 ID입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -215,7 +216,7 @@ virtual BOOL CreateEx(
 COLORREF GetBarColor() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 [Colorref](/windows/win32/gdi/colorref) 값으로 표시 되는 현재 진행률 표시줄의 색 이거나, 진행률 표시기 막대 색이 기본 색 이면 CLR_DEFAULT입니다.
 
@@ -231,7 +232,7 @@ COLORREF GetBarColor() const;
 COLORREF GetBkColor() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 [Colorref](/windows/win32/gdi/colorref) 값으로 표시 되는 현재 진행률 표시줄의 배경색입니다.
 
@@ -247,7 +248,7 @@ COLORREF GetBkColor() const;
 int GetPos();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 진행률 표시줄 컨트롤의 위치입니다.
 
@@ -279,7 +280,7 @@ void GetRange(
 
 ### <a name="remarks"></a>설명
 
-이 함수는 각각 *Nlower* 및 *nlower*에서 참조 하는 정수에 대 한 하 한 및 상한 값을 복사 합니다.
+이 함수는 각각 *Nlower* 및 *nlower* 에서 참조 하는 정수에 대 한 하 한 및 상한 값을 복사 합니다.
 
 ### <a name="example"></a>예제
 
@@ -293,7 +294,7 @@ void GetRange(
 int GetState() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 진행률 표시줄 컨트롤의 상태 이며 다음 값 중 하나입니다.
 
@@ -327,7 +328,7 @@ int GetState() const;
 int GetStep() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 진행률 표시줄의 단계 증가값입니다.
 
@@ -362,7 +363,7 @@ int OffsetPos(int nPos);
 *nPos*<br/>
 위치로 이동할 금액입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 진행률 표시줄 컨트롤의 이전 위치입니다.
 
@@ -383,7 +384,7 @@ COLORREF SetBarColor(COLORREF clrBar);
 *clrBar*\
 진행 진행률 표시기 표시줄의 새 색을 지정 하는 [Colorref](/windows/win32/gdi/colorref) 값입니다. 진행률 표시줄의 기본 색을 사용 하려면 CLR_DEFAULT를 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 [Colorref](/windows/win32/gdi/colorref) 값으로 표시 되는 진행률 표시기 표시줄의 이전 색 이거나, 진행률 표시기 표시줄의 색이 기본 색 이면 CLR_DEFAULT입니다.
 
@@ -418,7 +419,7 @@ COLORREF SetBkColor(COLORREF clrNew);
 *clrNew*<br/>
 새 배경색을 지정 하는 COLORREF 값입니다. 진행률 표시줄의 기본 배경색을 사용 하려면 CLR_DEFAULT 값을 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이전 배경색을 나타내는 [Colorref](/windows/win32/gdi/colorref) 값 이거나, 배경색이 기본 색 이면 CLR_DEFAULT입니다.
 
@@ -444,7 +445,7 @@ BOOL SetMarquee(
 *N 간격*\
 진행 움직이는 텍스트 애니메이션 업데이트 사이의 시간 (밀리초)입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드는 항상 TRUE를 반환 합니다.
 
@@ -479,7 +480,7 @@ int SetPos(int nPos);
 *nPos*<br/>
 진행률 표시줄 컨트롤의 새 위치입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 진행률 표시줄 컨트롤의 이전 위치입니다.
 
@@ -538,7 +539,7 @@ int SetState(int iState);
 - `PBST_ERROR` -오류
 - `PBST_PAUSED` - 일시 중지됨
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 진행률 표시줄 컨트롤의 이전 상태입니다.
 
@@ -571,7 +572,7 @@ int SetStep(int nStep);
 *nStep*<br/>
 새 단계 증가값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이전 단계 증가값입니다.
 
@@ -593,7 +594,7 @@ int SetStep(int nStep);
 int StepIt();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 진행률 표시줄 컨트롤의 이전 위치입니다.
 

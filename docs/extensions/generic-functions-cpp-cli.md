@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 제네릭 함수 (c + +/CLI)'
 title: 제네릭 함수(C++/CLI)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - methods [C++], generic
 - generic functions
 ms.assetid: 8e409364-58f9-4360-b486-e7d555e0c218
-ms.openlocfilehash: 3d648a23176786985a7ca1e22165c7c5a695e601
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cd2c5390499e6858824fae7a3368afe6de8c6c56
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216013"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97301739"
 ---
 # <a name="generic-functions-ccli"></a>제네릭 함수(C++/CLI)
 

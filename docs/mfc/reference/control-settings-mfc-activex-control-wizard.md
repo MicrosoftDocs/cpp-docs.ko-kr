@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 컨트롤 설정, MFC ActiveX 컨트롤 마법사'
 title: MFC ActiveX 컨트롤 마법사, 컨트롤 설정
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - MFC ActiveX Control Wizard, control settings
 ms.assetid: 2ccaa4fc-0d52-413e-afa3-ecd474c3f6f0
-ms.openlocfilehash: 1578ca7f4134e51e0ba0d3c2b247dcafcb0fbd67
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 31e8c5fd257128e17017d3d0fa801fc812f99397
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86405015"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97301596"
 ---
 # <a name="control-settings-mfc-activex-control-wizard"></a>MFC ActiveX 컨트롤 마법사, 컨트롤 설정
 
@@ -23,15 +24,15 @@ ms.locfileid: "86405015"
 
 - **다음을 기준으로 컨트롤 만들기**
 
-   이 목록에서 컨트롤이 상속 해야 하는 컨트롤의 종류를 선택할 수 있습니다. 목록은에서 사용할 수 있는 컨트롤 클래스의 하위 집합이 `CreateWindowEx` 며, ctrl. h에 지정 된 추가 공용 컨트롤입니다. 선택 항목은 `PreCreateWindow` *ProjName*Ctrl .cpp 파일의 함수에 있는 컨트롤의 스타일을 결정 합니다. 자세한 내용은 [MFC ActiveX 컨트롤: Windows 컨트롤 서브클래싱](../../mfc/mfc-activex-controls-subclassing-a-windows-control.md)을 참조 하세요.
+   이 목록에서 컨트롤이 상속 해야 하는 컨트롤의 종류를 선택할 수 있습니다. 목록은에서 사용할 수 있는 컨트롤 클래스의 하위 집합이 `CreateWindowEx` 며, ctrl. h에 지정 된 추가 공용 컨트롤입니다. 선택 항목은 `PreCreateWindow` *ProjName* Ctrl .cpp 파일의 함수에 있는 컨트롤의 스타일을 결정 합니다. 자세한 내용은 [MFC ActiveX 컨트롤: Windows 컨트롤 서브클래싱](../../mfc/mfc-activex-controls-subclassing-a-windows-control.md)을 참조 하세요.
 
-   |제어|Description|
+   |제어|설명|
    |-------------|-----------------|
    |**단추만**|Windows 단추 컨트롤|
    |**상자가**|Windows 콤보 상자 컨트롤입니다.|
    |**편집할**|Windows 편집 상자 컨트롤입니다.|
    |**상자가**|Windows 목록 상자 컨트롤|
-   |**스크롤 막대**|Windows 스크롤 막대 컨트롤입니다.|
+   |**SCROLLBAR**|Windows 스크롤 막대 컨트롤입니다.|
    |**정적인**|Windows 정적 컨트롤|
    |**msctls_hotkey32**|핫 키 공용 컨트롤|
    |**msctls_progress32**|진행률 표시줄 공용 컨트롤|
@@ -59,7 +60,7 @@ ms.locfileid: "86405015"
    > [!NOTE]
    > 사용자가 컨트롤에 대 한 도움말에 액세스 하는 방법은 도움말을 구현 하는 방법 및 컨테이너 도움말에 컨트롤 도움말을 통합 했는지 여부에 따라 달라 집니다.
 
-   이 옵션을 선택 하면 `AboutBox` 컨트롤 메서드가 프로젝트 컨트롤 클래스 (C*ProjName*Ctrl. .cpp)에 삽입 되 고 aboutbox 함이 프로젝트 디스패치 맵에 추가 됩니다. 이 옵션은 기본적으로 선택됩니다.
+   이 옵션을 선택 하면 `AboutBox` 컨트롤 메서드가 프로젝트 컨트롤 클래스 (C *ProjName* Ctrl. .cpp)에 삽입 되 고 aboutbox 함이 프로젝트 디스패치 맵에 추가 됩니다. 이 옵션은 기본적으로 선택됩니다.
 
 - **최적화 된 그리기 코드**
 
@@ -71,11 +72,11 @@ ms.locfileid: "86405015"
 
 - **잘리지 않는 장치 컨텍스트**
 
-   에서에 대 한 호출을 사용 하지 않도록 설정 하려면 컨트롤 헤더 (*projname*ctrl. h)에서 [COleControl:: getcontrolflags](../../mfc/reference/colecontrol-class.md#getcontrolflags) 를 재정의 `IntersectClipRect` `COleControl` 합니다. 이 옵션을 선택 하면 작은 속도의 이점이 제공 됩니다. **창 없는 활성화**를 선택 하면이 기능을 사용할 수 없습니다. 자세한 내용은 [잘리지 않는 장치 컨텍스트 사용](../../mfc/using-an-unclipped-device-context.md)을 참조 하세요.
+   에서에 대 한 호출을 사용 하지 않도록 설정 하려면 컨트롤 헤더 (*projname* ctrl. h)에서 [COleControl:: getcontrolflags](../../mfc/reference/colecontrol-class.md#getcontrolflags) 를 재정의 `IntersectClipRect` `COleControl` 합니다. 이 옵션을 선택 하면 작은 속도의 이점이 제공 됩니다. **창 없는 활성화** 를 선택 하면이 기능을 사용할 수 없습니다. 자세한 내용은 [잘리지 않는 장치 컨텍스트 사용](../../mfc/using-an-unclipped-device-context.md)을 참조 하세요.
 
 - **깜빡임 없는 활성화**
 
-   컨트롤의 활성 및 비활성 상태 간에 발생 하는 그리기 작업 및 해당 시각적 개체를 제거 합니다. **창 없는 활성화**를 선택 하면이 기능을 사용할 수 없습니다. 이 옵션을 설정 하는 경우 `noFlickerActivate` 플래그는 [COleControl:: getcontrolflags](../../mfc/reference/colecontrol-class.md#getcontrolflags)에서 반환 하는 플래그 중 하나입니다. 자세한 내용은 [깜빡임 없는 활성화 제공](../../mfc/providing-flicker-free-activation.md)을 참조 하세요.
+   컨트롤의 활성 및 비활성 상태 간에 발생 하는 그리기 작업 및 해당 시각적 개체를 제거 합니다. **창 없는 활성화** 를 선택 하면이 기능을 사용할 수 없습니다. 이 옵션을 설정 하는 경우 `noFlickerActivate` 플래그는 [COleControl:: getcontrolflags](../../mfc/reference/colecontrol-class.md#getcontrolflags)에서 반환 하는 플래그 중 하나입니다. 자세한 내용은 [Flicker-Free 활성화 제공](../../mfc/providing-flicker-free-activation.md)을 참조 하세요.
 
 - **개체 삽입 대화 상자에서 사용 가능**
 
@@ -96,5 +97,5 @@ ms.locfileid: "86405015"
 ## <a name="see-also"></a>참고 항목
 
 [MFC ActiveX 컨트롤 마법사](../../mfc/reference/mfc-activex-control-wizard.md)<br/>
-[애플리케이션 설정, MFC ActiveX 컨트롤 마법사](../../mfc/reference/application-settings-mfc-activex-control-wizard.md)<br/>
+[MFC ActiveX 컨트롤 마법사, 응용 프로그램 설정](../../mfc/reference/application-settings-mfc-activex-control-wizard.md)<br/>
 [MFC ActiveX 컨트롤 마법사, 컨트롤 이름](../../mfc/reference/control-names-mfc-activex-control-wizard.md)

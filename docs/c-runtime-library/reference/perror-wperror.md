@@ -1,4 +1,5 @@
 ---
+description: Perror, _wperror에 대해 자세히 알아보세요.
 title: perror, _wperror
 ms.date: 4/2/2020
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - _wperror function
 - perror function
 ms.assetid: 34fce792-16fd-4673-9849-cd88b54b6cd5
-ms.openlocfilehash: 64b9abe6313cc13e1e20f8f66ba486cdeb3e4892
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: e63108ac90170d460ee8a2c86e1db773343c1911
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919331"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97304690"
 ---
 # <a name="perror-_wperror"></a>perror, _wperror
 
@@ -64,7 +65,7 @@ void _wperror(
 
 ## <a name="remarks"></a>설명
 
-**Perror** 함수는 오류 메시지를 **stderr**에 출력 합니다. **_wperror** 은 **_perror**의 와이드 문자 버전입니다. **_wperror** 에 대 한 *메시지* 인수는 와이드 문자열입니다. **_wperror** 와 **_perror** 는 동일 하 게 동작 합니다.
+**Perror** 함수는 오류 메시지를 **stderr** 에 출력 합니다. **_wperror** 은 **_perror** 의 와이드 문자 버전입니다. **_wperror** 에 대 한 *메시지* 인수는 와이드 문자열입니다. **_wperror** 와 **_perror** 는 동일 하 게 동작 합니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -76,7 +77,7 @@ void _wperror(
 
 *메시지가* 먼저 인쇄 된 후 콜론, 오류를 생성 한 마지막 라이브러리 호출에 대 한 시스템 오류 메시지 및 줄 바꿈 문자가 차례로 인쇄 됩니다. *메시지가* null 포인터 또는 null 문자열에 대 한 포인터인 경우 **perror** 는 시스템 오류 메시지만 인쇄 합니다.
 
-오류 번호는 ERRNO.H에 정의되어 있는 [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) 변수에 저장됩니다. [_sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) 변수를 통해 시스템 오류 메시지에 액세스합니다. 이 변수는 오류 번호순으로 정렬된 메시지 배열입니다. **perror** 는 **_sys_errlist**에 대 한 인덱스로 **errno** 값을 사용 하 여 적절 한 오류 메시지를 인쇄 합니다. 변수 [_sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) 의 값은 **_sys_errlist** 배열의 최대 요소 수로 정의 됩니다.
+오류 번호는 ERRNO.H에 정의되어 있는 [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) 변수에 저장됩니다. [_sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) 변수를 통해 시스템 오류 메시지에 액세스합니다. 이 변수는 오류 번호순으로 정렬된 메시지 배열입니다. **perror** 는 **_sys_errlist** 에 대 한 인덱스로 **errno** 값을 사용 하 여 적절 한 오류 메시지를 인쇄 합니다. 변수 [_sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) 의 값은 **_sys_errlist** 배열의 최대 요소 수로 정의 됩니다.
 
 정확한 결과를 위해 라이브러리 루틴이 오류와 함께 반환 되는 즉시 **perror** 를 호출 합니다. 그렇지 않으면 후속 호출에서 **errno** 값을 덮어쓸 수 있습니다.
 
@@ -143,9 +144,9 @@ strerror says open failed: No such file or directory
 _strerror says open failed: No such file or directory
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [프로세스 및 환경 제어](../../c-runtime-library/process-and-environment-control.md)<br/>
 [clearerr](clearerr.md)<br/>
 [ferror](ferror.md)<br/>
-[strerror, _strerror, _wcserror, \__wcserror](strerror-strerror-wcserror-wcserror.md)<br/>
+[strerror, _strerror, _wcserror, \_ _wcserror](strerror-strerror-wcserror-wcserror.md)<br/>

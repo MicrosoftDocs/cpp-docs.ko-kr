@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: CPtrArray 클래스'
 title: CPtrArray 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -42,12 +43,12 @@ helpviewer_keywords:
 - CPtrArray [MFC], SetAtGrow
 - CPtrArray [MFC], SetSize
 ms.assetid: c23b87a3-bf84-49d6-a66b-61e999d0938a
-ms.openlocfilehash: 5db9f69348e96fffc1aa6fdc88134d777eb5406d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7cde7f76d604562c1161ccc577feea1e43b2076e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226856"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97301349"
 ---
 # <a name="cptrarray-class"></a>CPtrArray 클래스
 
@@ -71,7 +72,7 @@ class CPtrArray : public CObject
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[CPtrArray:: CPtrArray](../../mfc/reference/cobarray-class.md#cobarray)|빈 배열을 생성합니다.|
 
@@ -105,7 +106,7 @@ class CPtrArray : public CObject
 
 ## <a name="remarks"></a>설명
 
-`CPtrArray`IMPLEMENT_DYNAMIC 매크로를 통합 하 여 런타임 형식 액세스를 지원 하 고 개체를 덤프 `CDumpContext` 합니다. 개별 포인터 배열 요소의 덤프가 필요한 경우 덤프 컨텍스트의 깊이를 1 이상으로 설정 해야 합니다.
+`CPtrArray` IMPLEMENT_DYNAMIC 매크로를 통합 하 여 런타임 형식 액세스를 지원 하 고 개체를 덤프 `CDumpContext` 합니다. 개별 포인터 배열 요소의 덤프가 필요한 경우 덤프 컨텍스트의 깊이를 1 이상으로 설정 해야 합니다.
 
 > [!NOTE]
 > 배열을 사용하기 전에 `SetSize`를 사용하여 배열 크기를 설정하고 배열에 대해 메모리를 할당합니다. `SetSize`를 사용하지 않는 경우 배열에 요소를 추가하면 배열이 자주 다시 할당되고 복사됩니다. 이처럼 다시 할당 및 복사가 자주 수행되면 효율성이 떨어지며 메모리가 조각화될 수 있습니다.

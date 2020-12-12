@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _aligned_malloc'
 title: _aligned_malloc
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - aligned_malloc function
 - _aligned_malloc function
 ms.assetid: fb788d40-ee94-4039-aa4d-97d73dab1ca0
-ms.openlocfilehash: 3caf2e8a3160c5533dfdb5bb387b373daf16b6e7
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 39160835ec73593a030fbccd68b00afc7ec4a56c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912918"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97303780"
 ---
 # <a name="_aligned_malloc"></a>_aligned_malloc
 
@@ -53,22 +54,22 @@ void * _aligned_malloc(
 *size*<br/>
 요청된 메모리 할당 크기입니다.
 
-*정렬(alignment)*<br/>
+*할당*<br/>
 맞춤 값으로 2의 정수 거듭제곱이어야 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-할당 된 메모리 블록에 대 한 포인터 이거나, 작업에 실패 한 경우 NULL입니다. 포인터가 *맞춤*의 배수입니다.
+할당 된 메모리 블록에 대 한 포인터 이거나, 작업에 실패 한 경우 NULL입니다. 포인터가 *맞춤* 의 배수입니다.
 
 ## <a name="remarks"></a>설명
 
 **_aligned_malloc** 는 [malloc](malloc.md)를 기반으로 합니다.
 
-**_aligned_malloc** 는 및 `__declspec(noalias)` `__declspec(restrict)`로 표시 됩니다. 즉, 함수는 전역 변수를 수정 하지 않고 반환 된 포인터에 별칭이 지정 되지 않도록 보장 합니다. 자세한 내용은 [noalias](../../cpp/noalias.md) 및 [restrict](../../cpp/restrict.md)를 참조하세요.
+**_aligned_malloc** 는 및로 표시 됩니다 `__declspec(noalias)` `__declspec(restrict)` . 즉, 함수는 전역 변수를 수정 하지 않고 반환 된 포인터에 별칭이 지정 되지 않도록 보장 합니다. 자세한 내용은 [noalias](../../cpp/noalias.md) 및 [restrict](../../cpp/restrict.md)를 참조하세요.
 
-이 함수는 메모리 할당에 실패한 경우 또는 요청된 크기가 `errno`보다 큰 경우 `ENOMEM`를 `_HEAP_MAXREQ`으로 설정합니다. `errno`에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요. 또한 **_aligned_malloc** 은 해당 매개 변수의 유효성을 검사 합니다. *Alignment* 가 2의 거듭제곱이 아니거나 *크기가* 0 인 경우이 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 NULL을 반환 `errno` 하 `EINVAL`고를로 설정 합니다.
+이 함수는 메모리 할당에 실패한 경우 또는 요청된 크기가 `errno`보다 큰 경우 `ENOMEM`를 `_HEAP_MAXREQ`으로 설정합니다. `errno`에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요. 또한 **_aligned_malloc** 은 해당 매개 변수의 유효성을 검사 합니다. *Alignment* 가 2의 거듭제곱이 아니거나 *크기가* 0 인 경우이 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 NULL을 반환 하 고 `errno` 를로 설정 `EINVAL` 합니다.
 
-[_Aligned_free](aligned-free.md) 를 사용 하 여 **_aligned_malloc** 및 `_aligned_offset_malloc`에서 가져온 메모리의 할당을 취소 합니다. 를 사용 `free`하지 마세요 .이 경우 정렬 된 메모리를 올바르게 회수 하지 않으며 버그를 진단 하기가 어려울 수 있습니다.
+[_Aligned_free](aligned-free.md) 를 사용 하 여 **_aligned_malloc** 및에서 가져온 메모리의 할당을 취소 `_aligned_offset_malloc` 합니다. 를 사용 하지 마세요 `free` .이 경우 정렬 된 메모리를 올바르게 회수 하지 않으며 버그를 진단 하기가 어려울 수 있습니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -160,6 +161,6 @@ This pointer, 3280891, is offset by 5 on alignment of 16
 This pointer, 3280891, is offset by 5 on alignment of 16
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [데이터 맞춤](../../c-runtime-library/data-alignment.md)

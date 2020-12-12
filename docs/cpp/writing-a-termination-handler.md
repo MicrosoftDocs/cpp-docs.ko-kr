@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 종료 처리기 작성'
 title: 종료 처리기 작성
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - exception handling [C++], termination handlers
 - try-catch keyword [C++], termination handlers
 ms.assetid: 52aa1f8f-f8dd-44b8-be94-5e2fc88d44fb
-ms.openlocfilehash: 8a243281e0d984a42cd4b4d9f249d867812d8bca
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a203cab7d61be66c5fe919aefe1895aa0928c5d9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80187312"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97302987"
 ---
 # <a name="writing-a-termination-handler"></a>종료 처리기 작성
 
@@ -26,13 +27,13 @@ ms.locfileid: "80187312"
 
 ## <a name="what-do-you-want-to-know-more-about"></a>추가 정보
 
-- [Try finally 문](../cpp/try-finally-statement.md)
+- [try-finally 문](../cpp/try-finally-statement.md)
 
 - [리소스 정리](../cpp/cleaning-up-resources.md)
 
-- [예외 처리의 작업 타이밍](../cpp/timing-of-exception-handling-a-summary.md)
+- [예외 처리에서의 작업 타이밍](../cpp/timing-of-exception-handling-a-summary.md)
 
-- [종료 처리기에 대 한 제한 사항](../cpp/restrictions-on-termination-handlers.md)
+- [종료 처리기에 대한 제한](../cpp/restrictions-on-termination-handlers.md)
 
 ## <a name="see-also"></a>참고 항목
 
