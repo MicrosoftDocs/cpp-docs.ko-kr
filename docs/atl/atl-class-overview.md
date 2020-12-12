@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: ATL 클래스 개요'
 title: ATL 클래스 개요
 ms.date: 11/04/2016
 helpviewer_keywords:
 - classes [C++], ATL
 - ATL, class reference
 ms.assetid: c38ac93d-c3a2-4ce7-8153-f1d34c0f0fa6
-ms.openlocfilehash: 7480bc19ad4a49c0fb816bca5f1fed13f470030b
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: a35fd7b178082e81e7cc43ff037f2fc083ef4b67
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831933"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166059"
 ---
 # <a name="atl-class-overview"></a>ATL 클래스 개요
 
@@ -60,4 +61,4 @@ ATL 프로젝트에서 사용할 수 있는 추가 클래스는 [공유 클래�
 [함수](../atl/reference/atl-functions.md)<br/>
 [전역 변수](../atl/reference/atl-global-variables.md)<br/>
 [매크로](../atl/reference/atl-macros.md)<br/>
-[정의](../atl/reference/atl-typedefs.md)
+[Typedefs](../atl/reference/atl-typedefs.md)

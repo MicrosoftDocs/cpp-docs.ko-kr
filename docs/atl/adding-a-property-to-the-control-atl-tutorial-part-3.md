@@ -1,48 +1,49 @@
 ---
+description: '자세히 알아보기: 컨트롤에 속성 추가 (ATL 자습서, 3 부)'
 title: 컨트롤에 속성 추가(ATL 자습서, 3부)
 ms.custom: get-started-article
 ms.date: 09/26/2018
 ms.assetid: f775fe34-103b-4f07-9999-400e987ee030
-ms.openlocfilehash: c5f71880f780e793cd77eb5a7571d31de4a8d01a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 22a44b6878afd6d51fb396d8f02a60e93436cf05
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219003"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166332"
 ---
 # <a name="adding-a-property-to-the-control-atl-tutorial-part-3"></a>컨트롤에 속성 추가(ATL 자습서, 3부)
 
-`IPolyCtl`는 컨트롤의 사용자 지정 메서드 및 속성을 포함 하는 인터페이스 이며 여기에 속성을 추가 합니다.
+`IPolyCtl` 는 컨트롤의 사용자 지정 메서드 및 속성을 포함 하는 인터페이스 이며 여기에 속성을 추가 합니다.
 
 ### <a name="to-add-the-property-definitions-to-your-project"></a>프로젝트에 속성 정의를 추가 하려면
 
-1. **클래스 뷰**에서 분기를 확장 `Polygon` 합니다.
+1. **클래스 뷰** 에서 분기를 확장 `Polygon` 합니다.
 
 1. 를 마우스 오른쪽 단추로 클릭 `IPolyCtl` 합니다.
 
-1. 바로 가기 메뉴에서 **추가**를 클릭 한 다음 **속성 추가**를 클릭 합니다. **속성 추가** 마법사가 나타납니다.
+1. 바로 가기 메뉴에서 **추가** 를 클릭 한 다음 **속성 추가** 를 클릭 합니다. **속성 추가** 마법사가 나타납니다.
 
-1. `Sides` **속성 이름**으로를 입력 합니다.
+1. `Sides` **속성 이름** 으로를 입력 합니다.
 
-1. **속성 유형**드롭다운 목록에서을 선택 **`short`** 합니다.
+1. **속성 유형** 드롭다운 목록에서을 선택 **`short`** 합니다.
 
 1. **확인** 을 클릭 하 여 속성 추가를 마칩니다.
 
-1. **솔루션 탐색기**에서 Polygon을 열고 인터페이스 끝에서 다음 줄을 바꿉니다 `IPolyCtl : IDispatch` .
+1. **솔루션 탐색기** 에서 Polygon을 열고 인터페이스 끝에서 다음 줄을 바꿉니다 `IPolyCtl : IDispatch` .
 
     ```cpp
     short get_Sides();
     void set_Sides(short value);
     ```
 
-    다음 문자열로 바꾸세요.
+    다음과 같이 바꿉니다.
 
     ```cpp
     [propget, id(1), helpstring("property Sides")] HRESULT Sides([out, retval] short *pVal);
     [propput, id(1), helpstring("property Sides")] HRESULT Sides([in] short newVal);
     ```
 
-1. **솔루션 탐색기**에서 polyctl.htm를 열고의 정의 뒤에 다음 줄을 추가 `m_clrFillColor` 합니다.
+1. **솔루션 탐색기** 에서 polyctl.htm를 열고의 정의 뒤에 다음 줄을 추가 `m_clrFillColor` 합니다.
 
     [!code-cpp[NVC_ATL_Windowing#44](../atl/codesnippet/cpp/adding-a-property-to-the-control-atl-tutorial-part-3_1.h)]
 

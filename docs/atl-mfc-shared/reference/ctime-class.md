@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CTime 클래스'
 title: CTime 클래스
 ms.date: 10/18/2018
 f1_keywords:
@@ -24,12 +25,12 @@ helpviewer_keywords:
 - CTime class
 - shared classes, CTime
 ms.assetid: 0a299544-485b-48dc-9d3c-fdc30f57d612
-ms.openlocfilehash: d551698a81921227dd0d7b7d80436bba960ed176
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 3768423a4d3bf873e9161b846e21fda4beffdc9c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832037"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166605"
 ---
 # <a name="ctime-class"></a>CTime 클래스
 
@@ -94,7 +95,7 @@ class CTime
 > [!NOTE]
 > 상한 날짜 제한은 12/31/3000입니다. 한도는 오전 1/1/1970 12:00:00 시 GMT입니다.
 
-사용에 대 한 자세한 내용은 `CTime` 런타임 라이브러리 참조의 [날짜 및 시간](../../atl-mfc-shared/date-and-time.md)및 [시간 관리](../../c-runtime-library/time-management.md) 문서를 참조 하세요.
+사용에 대 한 자세한 내용은 `CTime` Run-Time 라이브러리 참조에서 [날짜 및 시간](../../atl-mfc-shared/date-and-time.md)및 [시간 관리](../../c-runtime-library/time-management.md) 문서를 참조 하세요.
 
 > [!NOTE]
 > `CTime`구조가 mfc 7.1에서 mfc 8.0로 변경 되었습니다. `CTime`Mfc 8.0 이상 버전에서 **연산자 <<** 를 사용 하 여 구조체를 serialize 하는 경우 이전 버전의 mfc에서는 결과 파일을 읽을 수 없습니다.
@@ -397,7 +398,7 @@ struct tm* GetGmtTm(struct tm* ptm) const;
 
 ### <a name="return-value"></a>반환 값
 
-포함 파일 시간에 정의 된 대로 채워진 **struct tm** 에 대 한 포인터입니다. 넣기. 구조 레이아웃에 대해서는 [gmtime, _gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md) 을 참조 하세요.
+포함 파일 시간 .H에 정의 된 대로 채워진 **struct tm** 에 대 한 포인터입니다. 구조 레이아웃에 대해서는 [gmtime, _gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md) 을 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
@@ -444,7 +445,7 @@ struct tm* GetLocalTm(struct tm* ptm) const;
 
 ### <a name="return-value"></a>반환 값
 
-포함 파일 시간에 정의 된 대로 채워진 **struct tm** 에 대 한 포인터입니다. 넣기. 구조 레이아웃에 대해서는 [gmtime, _gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md) 을 참조 하세요.
+포함 파일 시간 .H에 정의 된 대로 채워진 **struct tm** 에 대 한 포인터입니다. 구조 레이아웃에 대해서는 [gmtime, _gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md) 을 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
@@ -642,7 +643,7 @@ CArchive& Serialize64(CArchive& ar);
 
 ### <a name="parameters"></a>매개 변수
 
-*방어력*<br/>
+*ar*<br/>
 `CArchive`업데이트 하려는 개체입니다.
 
 ### <a name="return-value"></a>반환 값

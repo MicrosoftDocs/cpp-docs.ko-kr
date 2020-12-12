@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3495'
 title: 컴파일러 오류 C3495
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3495
 ms.assetid: 1fd40cb8-8373-403d-b8a8-f08424a50807
-ms.openlocfilehash: a67d4d859e3a9dd2241f14a476492df0fd3e6b8d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3c04c80182dad32b539e09224fd9e303b3325578
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223423"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97113170"
 ---
 # <a name="compiler-error-c3495"></a>컴파일러 오류 C3495
 
@@ -37,6 +38,6 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [람다 식](../../cpp/lambda-expressions-in-cpp.md)

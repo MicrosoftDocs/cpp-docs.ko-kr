@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: ATL 연결 지점 예제'
 title: ATL 연결 지점 예제
 ms.date: 11/04/2016
 helpviewer_keywords:
 - connection points [C++], examples
 - examples [ATL]
 ms.assetid: a49721b7-f308-43de-8868-f662a94bc81a
-ms.openlocfilehash: f33364cee65031c358fb546312f3fe2b7ae854d3
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 6416720b5366838f9687f31947cac9a6824da058
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69491789"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165812"
 ---
 # <a name="atl-connection-point-example"></a>ATL 연결 지점 예제
 
@@ -18,10 +19,10 @@ ms.locfileid: "69491789"
 
 [!code-cpp[NVC_ATL_Windowing#84](../atl/codesnippet/cpp/atl-connection-point-example_1.h)]
 
-를 나가는 `IPropertyNotifySink` 인터페이스로 지정 하는 경우 대신 `IConnectionPointImpl` [IPropertyNotifySinkCP](../atl/reference/ipropertynotifysinkcp-class.md) 클래스를 사용할 수 있습니다. 예:
+를 나가는 인터페이스로 지정 하는 경우 `IPropertyNotifySink` 대신 [IPropertyNotifySinkCP](../atl/reference/ipropertynotifysinkcp-class.md) 클래스를 사용할 수 있습니다 `IConnectionPointImpl` . 예를 들어:
 
 [!code-cpp[NVC_ATL_Windowing#85](../atl/codesnippet/cpp/atl-connection-point-example_2.h)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [연결점](../atl/atl-connection-points.md)

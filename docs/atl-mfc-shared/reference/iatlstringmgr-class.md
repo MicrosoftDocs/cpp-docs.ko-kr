@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: IAtlStringMgr 클래스'
 title: IAtlStringMgr 클래스
 ms.date: 10/18/2018
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - memory, managing
 - IAtlStringMgr class
 ms.assetid: 722f0346-a770-4aa7-8f94-177be8dba823
-ms.openlocfilehash: a617ba829999e9e5778bd7f0091cfb0d624dce71
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 7b3aa9d8984639d42e673e96b5fcf25308a757bb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832011"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166527"
 ---
 # <a name="iatlstringmgr-class"></a>IAtlStringMgr 클래스
 
@@ -174,7 +175,7 @@ CStringData* Reallocate(
 
 ### <a name="remarks"></a>설명
 
-*.Pdata*에서 지정한 기존 메모리 블록의 크기를 조정 하려면이 함수를 호출 합니다.
+*.Pdata* 에서 지정한 기존 메모리 블록의 크기를 조정 하려면이 함수를 호출 합니다.
 
 이 메서드에 의해 할당 된 메모리를 해제 하려면 [Iatlstringmgr:: Free](#free) 를 호출 합니다.
 

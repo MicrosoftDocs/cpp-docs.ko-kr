@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CRect 클래스'
 title: CRect 클래스
 ms.date: 11/06/2018
 f1_keywords:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - LPRECT operator
 - RECT structure
 ms.assetid: dee4e752-15d6-4db4-b68f-1ad65b2ed6ca
-ms.openlocfilehash: f45090971e8dbb89ae281b408cc3a14e102ffe17
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 229ec3b54f1b128641034bc763d2a62c0a6fe0a4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502883"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166683"
 ---
 # <a name="crect-class"></a>CRect 클래스
 
@@ -89,7 +90,7 @@ class CRect : public tagRECT
 
 ### <a name="public-operators"></a>Public 연산자
 
-|속성|설명|
+|Name|설명|
 |----------|-----------------|
 |[CRect:: operator-](#operator_-)|또는 수축에서 지정 된 오프셋을 빼고 `CRect` `CRect` 결과를 반환 `CRect` 합니다.|
 |[CRect:: operator LPCRECT](#operator_lpcrect)|`CRect`를 `LPCRECT`로 변환합니다.|
@@ -645,7 +646,7 @@ ASSERT(!rectNotNull.IsRectNull());
 
 ## <a name="crectmovetox"></a><a name="movetox"></a> CRect:: MoveToX
 
-사각형을 *x*로 지정 된 절대 x 좌표로 이동 하려면이 함수를 호출 합니다.
+사각형을 *x* 로 지정 된 절대 x 좌표로 이동 하려면이 함수를 호출 합니다.
 
 ```cpp
 void MoveToX(int x) throw();
@@ -697,7 +698,7 @@ ASSERT(rect == CRect(10, 10, 110, 110));
 
 ## <a name="crectmovetoy"></a><a name="movetoy"></a> CRect:: MoveToY
 
-사각형을 *y*로 지정 된 절대 y 좌표로 이동 하려면이 함수를 호출 합니다.
+사각형을 *y* 로 지정 된 절대 y 좌표로 이동 하려면이 함수를 호출 합니다.
 
 ```cpp
 void MoveToY(int y) throw();
@@ -730,7 +731,7 @@ void NormalizeRect() throw();
 사각형은 Windows에서 일반적으로 좌표에 사용 하는 네 번째 사분면 위치에 대해 정규화 됩니다. `NormalizeRect` 위쪽 및 아래쪽 값을 비교 하 고 위쪽이 아래쪽 보다 크면 바꿉니다. 마찬가지로 왼쪽이 오른쪽 보다 큰 경우 왼쪽 및 오른쪽 값을 바꿉니다. 이 함수는 다양 한 매핑 모드와 반전 된 사각형을 처리할 때 유용 합니다.
 
 > [!NOTE]
-> 다음 `CRect` 멤버 함수는 정상적으로 작동 하기 위해 [Height](#height), [Width](#width), [Size](#size), [isUnionRect tempty](#isrectempty), [ptinrect](#ptinrect), [EqualRect](#equalrect), [UnionRect](#unionrect), [IntersectRect](#intersectrect), [SubtractRect](#subtractrect), [operator = =](#operator_eq_eq), [operator! =](#operator_neq), [operator &#124;](#operator_or), operator [&#124;=](#operator_or_eq), [operator &](#operator_amp)및 [operator &=](#operator_amp_eq)와 같이 정상적으로 작동 하기 위해 정규화 된 사각형이 필요 합니다.
+> 다음 `CRect` 멤버 함수는 정상적으로 작동 하기 위해 [Height](#height), [Width](#width), [Size](#size), [isUnionRect tempty](#isrectempty), [ptinrect](#ptinrect), [EqualRect](#equalrect), [](#unionrect), [IntersectRect](#intersectrect), [SubtractRect](#subtractrect), [operator = =](#operator_eq_eq), [operator! =](#operator_neq), [operator &#124;](#operator_or), operator [&#124;=](#operator_or_eq), [operator &](#operator_amp)및 [operator &=](#operator_amp_eq)와 같이 정상적으로 작동 하기 위해 정규화 된 사각형이 필요 합니다.
 
 ### <a name="example"></a>예제
 
@@ -871,7 +872,7 @@ ASSERT(rect1 == test);
 
 ## <a name="crectoperator-"></a><a name="operator_neq"></a> CRect:: operator! =
 
-*rect* `CRect` 왼쪽 위 모퉁이와 오른쪽 아래 모퉁이의 좌표를 비교 하 여 rect가와 같지 않은지 여부를 확인 합니다.
+ `CRect` 왼쪽 위 모퉁이와 오른쪽 아래 모퉁이의 좌표를 비교 하 여 rect가와 같지 않은지 여부를 확인 합니다.
 
 ```
 BOOL operator!=(const RECT& rect) const throw();
@@ -1128,7 +1129,7 @@ ASSERT(rect2 == rectResult);
 
 ## <a name="crectoperator-amp"></a><a name="operator_amp"></a> CRect:: operator &amp;
 
-`CRect`및 rect2의 교집합에 해당 하는을 반환 `CRect` 합니다. *rect2*
+`CRect`및 rect2의 교집합에 해당 하는을 반환 `CRect` 합니다. 
 
 ```
 CRect operator&(const RECT& rect2) const throw();
@@ -1141,7 +1142,7 @@ CRect operator&(const RECT& rect2) const throw();
 
 ### <a name="return-value"></a>반환 값
 
-`CRect`및 rect2의 교집합에 해당 하는입니다 `CRect` . *rect2*
+`CRect`및 rect2의 교집합에 해당 하는입니다 `CRect` . 
 
 ### <a name="remarks"></a>설명
 
@@ -1164,7 +1165,7 @@ ASSERT(rectResult == rect3);
 
 ## <a name="crectoperator-124"></a><a name="operator_or"></a> CRect:: operator &#124;
 
-`CRect`및 rect2의 합집합에 해당 하는을 반환 합니다 `CRect` . *rect2*
+`CRect`및 rect2의 합집합에 해당 하는을 반환 합니다 `CRect` . 
 
 ```
 CRect operator|(const RECT&
@@ -1178,7 +1179,7 @@ rect2) const throw();
 
 ### <a name="return-value"></a>반환 값
 
-`CRect`및 rect2의 합집합에 해당 하는입니다 `CRect` . *rect2*
+`CRect`및 rect2의 합집합에 해당 하는입니다 `CRect` . 
 
 ### <a name="remarks"></a>설명
 
@@ -1348,7 +1349,7 @@ BOOL SubtractRect(LPCRECT lpRectSrc1, LPCRECT lpRectSrc2) throw();
 
 ### <a name="remarks"></a>설명
 
-빼기는 *lpRectScr1* 및 *lpRectScr2*의 교집합에 속하지 않은 *lpRectScr1* 의 모든 요소를 포함 하는 가장 작은 사각형입니다.
+빼기는 *lpRectScr1* 및 *lpRectScr2* 의 교집합에 속하지 않은 *lpRectScr1* 의 모든 요소를 포함 하는 가장 작은 사각형입니다.
 
 *LpRectSrc2* 에 의해 지정 된 사각형이 x 또는 y 방향 중 하나 이상에서 *lpRectSrc1* 에 의해 지정 된 사각형과 완전히 겹치면 *lpRectSrc1* 에 의해 지정 된 사각형이 변경 되지 않습니다.
 

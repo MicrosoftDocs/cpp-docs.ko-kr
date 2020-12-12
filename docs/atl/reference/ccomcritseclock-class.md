@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CComCritSecLock 클래스'
 title: CComCritSecLock 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComCritSecLock class
 ms.assetid: 223152a1-86c3-4ef9-89a7-f455fe791b0e
-ms.openlocfilehash: fd2904f67d84db42d6b35aa4e505b063d6ea9a9f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7cad44f062fe75418da1f948c5f180283142779b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224294"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97152102"
 ---
 # <a name="ccomcritseclock-class"></a>CComCritSecLock 클래스
 
@@ -36,7 +37,7 @@ template<class TLock> class CComCritSecLock
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[CComCritSecLock::CComCritSecLock](#ctor)|생성자입니다.|
 |[CComCritSecLock:: ~ CComCritSecLock](#dtor)|소멸자입니다.|
@@ -56,7 +57,7 @@ template<class TLock> class CComCritSecLock
 
 **헤더:** 서 기. h
 
-## <a name="ccomcritseclockccomcritseclock"></a><a name="ctor"></a>CComCritSecLock::CComCritSecLock
+## <a name="ccomcritseclockccomcritseclock"></a><a name="ctor"></a> CComCritSecLock::CComCritSecLock
 
 생성자입니다.
 
@@ -76,7 +77,7 @@ CComCritSecLock(TLock& cs, bool bInitialLock = true);
 
 임계 영역 개체를 초기화 합니다.
 
-## <a name="ccomcritseclockccomcritseclock"></a><a name="dtor"></a>CComCritSecLock:: ~ CComCritSecLock
+## <a name="ccomcritseclockccomcritseclock"></a><a name="dtor"></a> CComCritSecLock:: ~ CComCritSecLock
 
 소멸자입니다.
 
@@ -88,7 +89,7 @@ CComCritSecLock(TLock& cs, bool bInitialLock = true);
 
 임계 영역 개체의 잠금을 해제 합니다.
 
-## <a name="ccomcritseclocklock"></a><a name="lock"></a>CComCritSecLock:: Lock
+## <a name="ccomcritseclocklock"></a><a name="lock"></a> CComCritSecLock:: Lock
 
 이 메서드를 호출 하 여 임계 영역 개체를 잠급니다.
 
@@ -96,7 +97,7 @@ CComCritSecLock(TLock& cs, bool bInitialLock = true);
 HRESULT Lock() throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 개체가 성공적으로 잠겨 있으면 S_OK을 반환 하 고, 실패 하면 오류 HRESULT를 반환 합니다.
 
@@ -104,7 +105,7 @@ HRESULT Lock() throw();
 
 개체가 이미 잠겨 있는 경우 디버그 빌드에서 ASSERT 오류가 발생 합니다.
 
-## <a name="ccomcritseclockunlock"></a><a name="unlock"></a>CComCritSecLock:: Unlock
+## <a name="ccomcritseclockunlock"></a><a name="unlock"></a> CComCritSecLock:: Unlock
 
 임계 영역 개체의 잠금을 해제 하려면이 메서드를 호출 합니다.
 

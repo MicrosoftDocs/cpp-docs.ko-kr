@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CStringData 클래스'
 title: CStringData 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - CStringData class
 - shared classes, CStringData
 ms.assetid: 4e31b5ca-3dbe-4fd5-b692-8211fbfb2593
-ms.openlocfilehash: 140836f45ed2f4088bc0baed67676f93cb268d01
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 74bf3563cb5dca506498ceef05ddc84f13c44f41
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832115"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166592"
 ---
 # <a name="cstringdata-class"></a>CStringData 클래스
 
@@ -48,7 +49,7 @@ struct CStringData
 |[IsShared](#isshared)|연결 된 문자열 개체의 버퍼가 현재 공유 되어 있는지 여부를 확인 합니다.|
 |[잠금](#lock)|연결 된 문자열 개체의 버퍼를 잠급니다.|
 |[릴리스](#release)|지정 된 문자열 개체를 해제 합니다.|
-|[잠금을](#unlock)|연결 된 문자열 개체의 버퍼 잠금을 해제 합니다.|
+|[잠금 해제](#unlock)|연결 된 문자열 개체의 버퍼 잠금을 해제 합니다.|
 
 ### <a name="data-members"></a>데이터 멤버
 

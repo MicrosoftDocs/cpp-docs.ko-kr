@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3505'
 title: 컴파일러 오류 C3505
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3505
 ms.assetid: ed73c99e-93a1-4f3a-bac7-ba7ed5d836e4
-ms.openlocfilehash: 0c67eb46208c35c1b11a74898107ad3c0e6e570d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 10727b04ce587eb56872440ad7d46dd544eb0642
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80200853"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97113115"
 ---
 # <a name="compiler-error-c3505"></a>컴파일러 오류 C3505
 
@@ -23,6 +24,6 @@ C3505는 64 비트 컴퓨터 64에서 32 비트, x86 호스트 크로스 컴파�
 
 자세한 내용은 다음 항목을 참조하세요.
 
-- [방법: 명령줄에서 64비트 Visual C++ 도구 집합 사용](../../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)
+- [방법: 명령줄에서 64비트 Visual C++ 도구 집합 활성화](../../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)
 
 - [방법: 64비트, x64 플랫폼을 대상으로 한 Visual C++ 프로젝트 구성](../../build/how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md)

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 옵션'
 title: OPTION (MASM)
 ms.date: 07/15/2020
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - OPTION directive
 ms.assetid: 8e10dabd-e36f-4586-ab01-ada96736b0bd
-ms.openlocfilehash: 3d5bef52106b38487d1a2be248cff274f39e009c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: e2ab1f232b63c2a368204584c1fed69efb40e6ec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88830841"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97126232"
 ---
 # <a name="option"></a>OPTION
 
 어셈블러의 기능을 사용 하거나 사용 하지 않도록 설정 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **`OPTION`***옵션 목록*
 

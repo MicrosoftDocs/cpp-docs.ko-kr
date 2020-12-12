@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CMFCToolBarsCustomizeDialog 클래스'
 title: CMFCToolBarsCustomizeDialog 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -24,18 +25,18 @@ helpviewer_keywords:
 - CMFCToolBarsCustomizeDialog [MFC], OnInitDialog
 - CMFCToolBarsCustomizeDialog [MFC], PostNcDestroy
 ms.assetid: 78e2cddd-4f13-4097-afc3-1ad646a113f1
-ms.openlocfilehash: a61cefa7f844062fcca42711ce6515180066b919
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d05e94f614510c264e5916404abeeb6dfc4bea9a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839103"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97143457"
 ---
 # <a name="cmfctoolbarscustomizedialog-class"></a>CMFCToolBarsCustomizeDialog 클래스
 
 사용자가 응용 프로그램에서 도구 모음, 메뉴, 바로 가기 키, 사용자 정의 도구, 비주얼 스타일을 사용자 지정할 수 있는 모덜리스 탭 대화 상자 ( [CPropertySheet 클래스](../../mfc/reference/cpropertysheet-class.md)) 일반적으로 사용자가 **도구** 메뉴에서 **사용자 지정** 을 선택하여 이 대화 상자에 액세스합니다.
 
-**사용자 지정** 대화 상자에는 **명령**, **도구 모음**, **도구**, **키보드**, **메뉴**및 **옵션**의 6 개 탭이 있습니다.
+**사용자 지정** 대화 상자에는 **명령**, **도구 모음**, **도구**, **키보드**, **메뉴** 및 **옵션** 의 6 개 탭이 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -61,7 +62,7 @@ class CMFCToolBarsCustomizeDialog : public CPropertySheet
 |[CMFCToolBarsCustomizeDialog:: AddMenuCommands](#addmenucommands)|리소스에서 메뉴를 로드 하 고 [CMFCToolBarsCustomizeDialog:: AddMenuCommands](#addmenucommands) 를 호출 하 여 **명령** 페이지의 명령 목록에 해당 메뉴를 추가 합니다.|
 |[CMFCToolBarsCustomizeDialog:: AddToolBar](#addtoolbar)|리소스에서 도구 모음을 로드 합니다. 그런 다음 메뉴의 각 명령에 대해 [CMFCToolBarsCustomizeDialog:: AddButton](#addbutton) 메서드를 호출 하 여 **명령 페이지의 명령 목록** 에 있는 단추를 지정 된 범주에 삽입 합니다.|
 |[CMFCToolBarsCustomizeDialog:: Create](#create)|**사용자 지정** 대화 상자를 표시 합니다.|
-|`CMFCToolBarsCustomizeDialog::EnableTools`|나중에 사용하기 위해 예약되어 있습니다.|
+|`CMFCToolBarsCustomizeDialog::EnableTools`|다음에 사용하도록 예약됩니다.|
 |[CMFCToolBarsCustomizeDialog:: EnableUserDefinedToolbars](#enableuserdefinedtoolbars)|**사용자 지정** 대화 상자를 사용 하 여 새 도구 모음 만들기를 사용 하거나 사용 하지 않도록 설정 합니다.|
 |[CMFCToolBarsCustomizeDialog:: FillAllCommandsList](#fillallcommandslist)|제공 된 `CListBox` 개체를 **All 명령** 범주의 명령으로 채웁니다.|
 |[CMFCToolBarsCustomizeDialog:: Fill범주 Combobox](#fillcategoriescombobox)|제공 된 `CComboBox` 개체를 **사용자 지정** 대화 상자의 각 명령 범주 이름으로 채웁니다.|
@@ -211,9 +212,9 @@ void AddMenuCommands(
 
 ### <a name="remarks"></a>설명
 
-`AddMenuCommands`메서드는 *pmenu*의 모든 메뉴 항목을 반복 합니다. 하위 메뉴가 포함 되지 않은 각 메뉴 항목에 대해이 메서드는 [CMFCToolBarButton 클래스](../../mfc/reference/cmfctoolbarbutton-class.md) 개체를 만들고 [CMFCToolBarsCustomizeDialog:: AddButton](#addbutton) 메서드를 호출 하 여 메뉴 항목을 **명령** 페이지의 명령 목록에 도구 모음 단추로 추가 합니다. 이 프로세스에서는 구분 기호가 무시 됩니다.
+`AddMenuCommands`메서드는 *pmenu* 의 모든 메뉴 항목을 반복 합니다. 하위 메뉴가 포함 되지 않은 각 메뉴 항목에 대해이 메서드는 [CMFCToolBarButton 클래스](../../mfc/reference/cmfctoolbarbutton-class.md) 개체를 만들고 [CMFCToolBarsCustomizeDialog:: AddButton](#addbutton) 메서드를 호출 하 여 메뉴 항목을 **명령** 페이지의 명령 목록에 도구 모음 단추로 추가 합니다. 이 프로세스에서는 구분 기호가 무시 됩니다.
 
-*Bpopup* 이 TRUE 이면 하위 메뉴가 포함 된 각 메뉴 항목에 대해이 메서드는 [cmfc도구](../../mfc/reference/cmfctoolbarmenubutton-class.md) 메뉴 메뉴 개체를 만들어를 호출 하 여 명령 목록에 삽입 `AddButton` 합니다. 그렇지 않으면 하위 메뉴가 포함 된 메뉴 항목이 명령 목록에 표시 되지 않습니다. 두 경우 모두에서 `AddMenuCommands` 하위 메뉴가 포함 된 메뉴 항목이 발견 되 면이를 재귀적으로 호출 하 여 하위 메뉴에 대 한 포인터를 *pmenu* 매개 변수로 전달 하 고 하위 메뉴의 레이블을 *lpszMenuPath*에 추가 합니다.
+*Bpopup* 이 TRUE 이면 하위 메뉴가 포함 된 각 메뉴 항목에 대해이 메서드는 [cmfc도구](../../mfc/reference/cmfctoolbarmenubutton-class.md) 메뉴 메뉴 개체를 만들어를 호출 하 여 명령 목록에 삽입 `AddButton` 합니다. 그렇지 않으면 하위 메뉴가 포함 된 메뉴 항목이 명령 목록에 표시 되지 않습니다. 두 경우 모두에서 `AddMenuCommands` 하위 메뉴가 포함 된 메뉴 항목이 발견 되 면이를 재귀적으로 호출 하 여 하위 메뉴에 대 한 포인터를 *pmenu* 매개 변수로 전달 하 고 하위 메뉴의 레이블을 *lpszMenuPath* 에 추가 합니다.
 
 ## <a name="cmfctoolbarscustomizedialogaddtoolbar"></a><a name="addtoolbar"></a> CMFCToolBarsCustomizeDialog:: AddToolBar
 
@@ -480,7 +481,7 @@ int GetCountInCategory(
 
 ### <a name="return-value"></a>반환 값
 
-제공 된 목록에서 텍스트 레이블이 *lpszItemName*과 같은 항목 수입니다.
+제공 된 목록에서 텍스트 레이블이 *lpszItemName* 과 같은 항목 수입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -594,7 +595,7 @@ virtual BOOL OnEditToolbarMenuImage(
 
 ### <a name="return-value"></a>반환 값
 
-변경이 커밋되면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다. 기본 구현에서는 대화 상자를 표시 하 고 사용자가 **확인**을 클릭 하면 TRUE를 반환 하 고, 사용자가 **취소** 또는 **닫기** 단추를 클릭 하면 FALSE를 반환 합니다.
+변경이 커밋되면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다. 기본 구현에서는 대화 상자를 표시 하 고 사용자가 **확인** 을 클릭 하면 TRUE를 반환 하 고, 사용자가 **취소** 또는 **닫기** 단추를 클릭 하면 FALSE를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CSimpleStringT 클래스'
 title: CSimpleStringT 클래스
 ms.date: 10/18/2018
 f1_keywords:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - strings [C++], ATL class
 - CSimpleStringT class
 ms.assetid: 15814fcb-5b8f-4425-a97e-3b61fc9b48d8
-ms.openlocfilehash: bbbab04ff311d874fc209d2c46fadda57e79a222
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: fd2ddf79e94827ad42411eeec71dde2fce28bd8e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219094"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166657"
 ---
 # <a name="csimplestringt-class"></a>CSimpleStringT 클래스
 
@@ -59,9 +60,9 @@ class CSimpleStringT
 *BaseType*<br/>
 문자열 클래스의 문자 형식입니다. 다음 중 하나일 수 있습니다.
 
-- **`char`**(ANSI 문자열의 경우).
+- **`char`** (ANSI 문자열의 경우).
 
-- **`wchar_t`**(유니코드 문자열의 경우).
+- **`wchar_t`** (유니코드 문자열의 경우).
 
 - TCHAR.H (ANSI 및 유니코드 문자열 모두)
 
@@ -76,7 +77,7 @@ class CSimpleStringT
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[CSimpleStringT::CSimpleStringT](#ctor)|`CSimpleStringT`여러 가지 방법으로 개체를 생성 합니다.|
 |[CSimpleStringT:: ~ CSimpleStringT](#dtor)|소멸자|
@@ -121,13 +122,13 @@ class CSimpleStringT
 
 ### <a name="remarks"></a>설명
 
-`CSimpleStringT`는 Visual C++에서 지 원하는 다양 한 문자열 클래스의 기본 클래스입니다. 문자열 개체의 메모리 관리와 기본 버퍼 조작을 최소한으로 지원 합니다. 고급 문자열 개체는 [CStringT 클래스](../../atl-mfc-shared/reference/cstringt-class.md)를 참조 하세요.
+`CSimpleStringT` 는 Visual C++에서 지 원하는 다양 한 문자열 클래스의 기본 클래스입니다. 문자열 개체의 메모리 관리와 기본 버퍼 조작을 최소한으로 지원 합니다. 고급 문자열 개체는 [CStringT 클래스](../../atl-mfc-shared/reference/cstringt-class.md)를 참조 하세요.
 
 ### <a name="requirements"></a>요구 사항
 
 **헤더:** atlsimpstr
 
-## <a name="csimplestringtappend"></a><a name="append"></a>CSimpleStringT:: Append
+## <a name="csimplestringtappend"></a><a name="append"></a> CSimpleStringT:: Append
 
 `CSimpleStringT`기존 개체에 개체를 추가 `CSimpleStringT` 합니다.
 
@@ -166,7 +167,7 @@ str1.Append(str2);
 ASSERT(_tcscmp(str1, _T("Soccer is an elegant game")) == 0);
 ```
 
-## <a name="csimplestringtappendchar"></a><a name="appendchar"></a>CSimpleStringT:: AppendChar
+## <a name="csimplestringtappendchar"></a><a name="appendchar"></a> CSimpleStringT:: AppendChar
 
 기존 개체에 문자를 추가 `CSimpleStringT` 합니다.
 
@@ -185,7 +186,7 @@ void AppendChar(XCHAR ch);
 
 지정 된 문자를 기존 개체의 끝에 추가 하려면이 함수를 호출 `CSimpleStringT` 합니다.
 
-## <a name="csimplestringtcopychars"></a><a name="copychars"></a>CSimpleStringT:: CopyChars
+## <a name="csimplestringtcopychars"></a><a name="copychars"></a> CSimpleStringT:: CopyChars
 
 하나 이상의 문자를 개체에 복사 `CSimpleStringT` 합니다.
 
@@ -225,7 +226,7 @@ str.CopyChars(str.GetBuffer(), pszSrc, 12);
 _tprintf_s(_T("%s\n"), str);
 ```
 
-## <a name="csimplestringtcopycharsoverlapped"></a><a name="copycharsoverlapped"></a>CSimpleStringT::CopyCharsOverlapped
+## <a name="csimplestringtcopycharsoverlapped"></a><a name="copycharsoverlapped"></a> CSimpleStringT::CopyCharsOverlapped
 
 하나 이상의 문자를 개체에 복사 `CSimpleStringT` 합니다.
 
@@ -257,7 +258,7 @@ static void CopyCharsOverlapped(
 
 [CSimpleStringT:: CopyChars](#copychars)의 예제 또는의 소스 코드 `CSimpleStringT::SetString` (atlsimpstr에 있음)를 참조 하세요.
 
-## <a name="csimplestringtcsimplestringt"></a><a name="ctor"></a>CSimpleStringT::CSimpleStringT
+## <a name="csimplestringtcsimplestringt"></a><a name="ctor"></a> CSimpleStringT::CSimpleStringT
 
 `CSimpleStringT` 개체를 생성합니다.
 
@@ -276,7 +277,7 @@ explicit CSimpleStringT(IAtlStringMgr* pStringMgr) throw();
 `CSimpleStringT`이 개체에 복사할 기존 개체 `CSimpleStringT` 입니다.
 
 *pchSrc*<br/>
-길이가 *Nlength*인 문자 배열에 대 한 포인터로, null이 끝나지 않습니다.
+길이가 *Nlength* 인 문자 배열에 대 한 포인터로, null이 끝나지 않습니다.
 
 *pszSrc*<br/>
 이 개체로 복사 될 null로 끝나는 문자열 `CSimpleStringT` 입니다.
@@ -293,7 +294,7 @@ explicit CSimpleStringT(IAtlStringMgr* pStringMgr) throw();
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 `CSimpleStringT::CSimpleStringT` ATL을 사용 하 여를 사용 하는 방법을 보여 줍니다 **`typedef`** `CSimpleString` . `CSimpleString`는 일반적으로 사용 되는 클래스 템플릿의 특수화입니다 `CSimpleStringT` .
+다음 예제에서는 `CSimpleStringT::CSimpleStringT` ATL을 사용 하 여를 사용 하는 방법을 보여 줍니다 **`typedef`** `CSimpleString` . `CSimpleString` 는 일반적으로 사용 되는 클래스 템플릿의 특수화입니다 `CSimpleStringT` .
 
 ```cpp
 CSimpleString s1(pMgr);
@@ -310,7 +311,7 @@ CSimpleString s5(_T("xxxxxx"), 6, pMgr);
 // s5 = "xxxxxx"
 ```
 
-## <a name="csimplestringtempty"></a><a name="empty"></a>CSimpleStringT:: Empty
+## <a name="csimplestringtempty"></a><a name="empty"></a> CSimpleStringT:: Empty
 
 이 `CSimpleStringT` 개체를 빈 문자열로 만들고 메모리를 적절 하 게 해제 합니다.
 
@@ -333,7 +334,7 @@ CSimpleString s(pMgr);
 ASSERT(s.IsEmpty());
 ```
 
-## <a name="csimplestringtfreeextra"></a><a name="freeextra"></a>CSimpleStringT:: FreeExtra
+## <a name="csimplestringtfreeextra"></a><a name="freeextra"></a> CSimpleStringT:: FreeExtra
 
 이전에 문자열에 의해 할당 되었지만 더 이상 필요 하지 않은 추가 메모리를 해제 합니다.
 
@@ -384,7 +385,7 @@ Alloc length is 1031, String length is 15
 Alloc length is 15, String length is 15
 ```
 
-## <a name="csimplestringtgetalloclength"></a><a name="getalloclength"></a>CSimpleStringT::GetAllocLength
+## <a name="csimplestringtgetalloclength"></a><a name="getalloclength"></a> CSimpleStringT::GetAllocLength
 
 개체의 할당 된 길이를 검색 `CSimpleStringT` 합니다.
 
@@ -402,7 +403,7 @@ int GetAllocLength() const throw();
 
 이 메서드를 호출 하 여이 개체에 할당 된 문자 수를 확인 `CSimpleStringT` 합니다. 이 함수를 호출 하는 예제는 [Freeextra](#freeextra) 를 참조 하세요.
 
-## <a name="csimplestringtgetat"></a><a name="getat"></a>CSimpleStringT:: GetAt
+## <a name="csimplestringtgetat"></a><a name="getat"></a> CSimpleStringT:: GetAt
 
 개체에서 한 문자를 반환 `CSimpleStringT` 합니다.
 
@@ -417,13 +418,13 @@ XCHAR GetAt(int iChar) const;
 *iChar*<br/>
 개체에 있는 문자의 0부터 시작 하는 인덱스 `CSimpleStringT` 입니다. *IChar* 매개 변수는 0 보다 크거나 같고 [getlength](#getlength)에서 반환 된 값 보다 작아야 합니다. 그렇지 않으면에서 예외를 발생 `GetAt` 시킵니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `XCHAR`문자열의 지정 된 위치에 있는 문자를 포함 하는입니다.
 
 ### <a name="remarks"></a>설명
 
-*IChar*로 지정 된 문자를 반환 하려면이 메서드를 호출 합니다. 오버 로드 된 첨자 (**[]**) 연산자는에 대 한 편리한 별칭입니다 `GetAt` . Null 종결자는를 사용 하 여 예외를 생성 하지 않고 주소를 지정할 수 `GetAt` 있습니다. 그러나이 값은로 계산 되지 않으며 `GetLength` 반환 되는 값은 0입니다.
+*IChar* 로 지정 된 문자를 반환 하려면이 메서드를 호출 합니다. 오버 로드 된 첨자 (**[]**) 연산자는에 대 한 편리한 별칭입니다 `GetAt` . Null 종결자는를 사용 하 여 예외를 생성 하지 않고 주소를 지정할 수 `GetAt` 있습니다. 그러나이 값은로 계산 되지 않으며 `GetLength` 반환 되는 값은 0입니다.
 
 ### <a name="example"></a>예제
 
@@ -434,7 +435,7 @@ CSimpleString s(_T("abcdef"), pMgr);
 ASSERT(s.GetAt(2) == _T('c'));
 ```
 
-## <a name="csimplestringtgetbuffer"></a><a name="getbuffer"></a>CSimpleStringT:: GetBuffer
+## <a name="csimplestringtgetbuffer"></a><a name="getbuffer"></a> CSimpleStringT:: GetBuffer
 
 개체의 내부 문자 버퍼에 대 한 포인터를 반환 합니다 `CSimpleStringT` .
 
@@ -452,7 +453,7 @@ PXSTR GetBuffer();
 
 *Nminbufferlength* 가 현재 버퍼의 길이 보다 크면 현재 버퍼를 삭제 하 `GetBuffer` 고 요청한 크기의 버퍼로 바꾸고 개체 참조 횟수를 0으로 다시 설정 합니다. 이전에이 버퍼에서 [Lockbuffer](#lockbuffer) 를 호출한 경우 버퍼 잠금이 손실 됩니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `PXSTR`개체의 (null로 끝나는) 문자 버퍼에 대 한 포인터입니다.
 
@@ -466,7 +467,7 @@ PXSTR GetBuffer();
 
 개체가 제거 되 면 버퍼 메모리가 자동으로 해제 됩니다 `CSimpleStringT` .
 
-문자열 길이를 직접 추적 하는 경우에는 null 종결 문자를 추가 하면 안 됩니다. 그러나를 사용 하 여 버퍼를 해제할 때 최종 문자열 길이를 지정 해야 합니다 `ReleaseBuffer` . 종료 null 문자를 추가 하는 경우 길이에-1 (기본값)을 전달 해야 합니다. `ReleaseBuffer`그런 다음는 버퍼 길이를 확인 합니다.
+문자열 길이를 직접 추적 하는 경우에는 null 종결 문자를 추가 하면 안 됩니다. 그러나를 사용 하 여 버퍼를 해제할 때 최종 문자열 길이를 지정 해야 합니다 `ReleaseBuffer` . 종료 null 문자를 추가 하는 경우 길이에-1 (기본값)을 전달 해야 합니다. `ReleaseBuffer` 그런 다음는 버퍼 길이를 확인 합니다.
 
 메모리가 부족 하 여 요청을 만족 하지 않는 경우 `GetBuffer` 이 메서드는 CMemoryException *을 throw 합니다.
 
@@ -483,9 +484,9 @@ ASSERT(_tcscmp(s, _T("Hello")) == 0);
 s.ReleaseBuffer();
 ```
 
-## <a name="csimplestringtgetbuffersetlength"></a><a name="getbuffersetlength"></a>CSimpleStringT::GetBufferSetLength
+## <a name="csimplestringtgetbuffersetlength"></a><a name="getbuffersetlength"></a> CSimpleStringT::GetBufferSetLength
 
-개체의 내부 문자 버퍼에 대 한 포인터를 반환 하 `CSimpleStringT` 고, 필요한 경우 *n 길이*에 지정 된 길이와 정확히 일치 하는 경우 해당 길이를 자르거나 증가 시킵니다.
+개체의 내부 문자 버퍼에 대 한 포인터를 반환 하 `CSimpleStringT` 고, 필요한 경우 *n 길이* 에 지정 된 길이와 정확히 일치 하는 경우 해당 길이를 자르거나 증가 시킵니다.
 
 ### <a name="syntax"></a>구문
 
@@ -498,7 +499,7 @@ PXSTR GetBufferSetLength(int nLength);
 *nLength*<br/>
 문자 버퍼의 정확한 크기 `CSimpleStringT` (문자)입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `PXSTR`개체의 (null로 끝나는) 문자 버퍼에 대 한 포인터입니다.
 
@@ -540,7 +541,7 @@ str += _T(" soccer is best!");
 ASSERT(_tcscmp(str, _T("Cup soccer is best!")) == 0);
 ```
 
-## <a name="csimplestringtgetlength"></a><a name="getlength"></a>CSimpleStringT:: GetLength
+## <a name="csimplestringtgetlength"></a><a name="getlength"></a> CSimpleStringT:: GetLength
 
 개체의 문자 수를 반환 합니다 `CSimpleStringT` .
 
@@ -560,7 +561,7 @@ int GetLength() const throw();
 
 MBCS (멀티 바이트 문자 집합)의 경우는 `GetLength` 각 8 비트 문자를 계산 합니다. 즉, 한 멀티 바이트 문자의 선행 및 후행 바이트는 2 바이트로 계산 됩니다. 이 함수를 호출 하는 예제는 [Freeextra](#freeextra) 를 참조 하세요.
 
-## <a name="csimplestringtgetmanager"></a><a name="getmanager"></a>CSimpleStringT:: GetManager
+## <a name="csimplestringtgetmanager"></a><a name="getmanager"></a> CSimpleStringT:: GetManager
 
 개체의 메모리 관리자를 검색 `CSimpleStringT` 합니다.
 
@@ -578,7 +579,7 @@ IAtlStringMgr* GetManager() const throw();
 
 개체에서 사용 하는 메모리 관리자를 검색 하려면이 메서드를 호출 `CSimpleStringT` 합니다. 메모리 관리자 및 문자열 개체에 대 한 자세한 내용은 [메모리 관리 및 CStringT](../memory-management-with-cstringt.md)를 참조 하십시오.
 
-## <a name="csimplestringtgetstring"></a><a name="getstring"></a>CSimpleStringT:: GetString
+## <a name="csimplestringtgetstring"></a><a name="getstring"></a> CSimpleStringT:: GetString
 
 문자열을 검색 합니다.
 
@@ -609,7 +610,7 @@ str += _T("Cup soccer is best!");
 _tprintf_s(_T("%s"), str.GetString());
 ```
 
-## <a name="csimplestringtisempty"></a><a name="isempty"></a>CSimpleStringT:: IsEmpty
+## <a name="csimplestringtisempty"></a><a name="isempty"></a> CSimpleStringT:: IsEmpty
 
 개체에서 `CSimpleStringT` 빈 조건을 테스트 합니다.
 
@@ -636,7 +637,7 @@ CSimpleString s(pMgr);
 ASSERT(s.IsEmpty());
 ```
 
-## <a name="csimplestringtlockbuffer"></a><a name="lockbuffer"></a>CSimpleStringT:: LockBuffer
+## <a name="csimplestringtlockbuffer"></a><a name="lockbuffer"></a> CSimpleStringT:: LockBuffer
 
 참조 횟수를 사용 하지 않도록 설정 하 고 버퍼의 문자열을 보호 합니다.
 
@@ -687,7 +688,7 @@ _tprintf_s(_T("%c"), ch);
 str.UnlockBuffer();
 ```
 
-## <a name="csimplestringtoperator"></a><a name="operator_at"></a>CSimpleStringT:: operator\[\]
+## <a name="csimplestringtoperator"></a><a name="operator_at"></a> CSimpleStringT:: operator\[\]
 
 이 함수를 호출 하 여 문자 배열의 단일 문자에 액세스 합니다.
 
@@ -704,7 +705,7 @@ XCHAR operator[](int iChar) const;
 
 ### <a name="remarks"></a>설명
 
-오버 로드 된 첨자 (**[]**) 연산자는 *iChar*의 0부터 시작 하는 인덱스에 의해 지정 된 단일 문자를 반환 합니다. 이 연산자는 [GetAt](#getat) 멤버 함수를 편리 하 게 대체 합니다.
+오버 로드 된 첨자 (**[]**) 연산자는 *iChar* 의 0부터 시작 하는 인덱스에 의해 지정 된 단일 문자를 반환 합니다. 이 연산자는 [GetAt](#getat) 멤버 함수를 편리 하 게 대체 합니다.
 
 > [!NOTE]
 > 첨자 (**[]**) 연산자를 사용 하 여의 문자 값을 가져올 수 있지만이 연산자를 사용 하 여 `CSimpleStringT` 의 문자 값을 변경할 수는 없습니다 `CSimpleStringT` .
@@ -718,7 +719,7 @@ CSimpleString s(_T("abc"), pMgr);
 ASSERT(s[1] == _T('b'));
 ```
 
-## <a name="csimplestringtoperator-"></a><a name="operator_at"></a>CSimpleStringT:: operator\[\]
+## <a name="csimplestringtoperator-"></a><a name="operator_at"></a> CSimpleStringT:: operator \[\]
 
 이 함수를 호출 하 여 문자 배열의 단일 문자에 액세스 합니다.
 
@@ -735,12 +736,12 @@ XCHAR operator[](int iChar) const;
 
 ### <a name="remarks"></a>설명
 
-오버 로드 된 첨자 (**[]**) 연산자는 *iChar*의 0부터 시작 하는 인덱스에 의해 지정 된 단일 문자를 반환 합니다. 이 연산자는 [GetAt](#getat) 멤버 함수를 편리 하 게 대체 합니다.
+오버 로드 된 첨자 (**[]**) 연산자는 *iChar* 의 0부터 시작 하는 인덱스에 의해 지정 된 단일 문자를 반환 합니다. 이 연산자는 [GetAt](#getat) 멤버 함수를 편리 하 게 대체 합니다.
 
 > [!NOTE]
 > 첨자 (**[]**) 연산자를 사용 하 여의 문자 값을 가져올 수 있지만이 연산자를 사용 하 여 `CSimpleStringT` 의 문자 값을 변경할 수는 없습니다 `CSimpleStringT` .
 
-## <a name="csimplestringtoperator-"></a><a name="operator_add_eq"></a>CSimpleStringT:: operator + =
+## <a name="csimplestringtoperator-"></a><a name="operator_add_eq"></a> CSimpleStringT:: operator + =
 
 새 문자열 또는 문자를 기존 문자열의 끝에 조인 합니다.
 
@@ -780,7 +781,7 @@ CSimpleString str(_T("abc"), pMgr);
 ASSERT(_tcscmp((str += _T("def")), _T("abcdef")) == 0);
 ```
 
-## <a name="csimplestringtoperator-"></a><a name="operator_eq"></a>CSimpleStringT:: operator =
+## <a name="csimplestringtoperator-"></a><a name="operator_eq"></a> CSimpleStringT:: operator =
 
 개체에 새 값을 할당 `CSimpleStringT` 합니다.
 
@@ -827,7 +828,7 @@ s1 = _T("x");
 ASSERT(_tcscmp(s1, _T("x")) == 0);
 ```
 
-## <a name="csimplestringtoperator-pcxstr"></a><a name="operator_pcxstr"></a>CSimpleStringT:: operator PCXSTR
+## <a name="csimplestringtoperator-pcxstr"></a><a name="operator_pcxstr"></a> CSimpleStringT:: operator PCXSTR
 
 개체에 저장 된 문자를 `CSimpleStringT` C 스타일 문자열로 직접 액세스 합니다.
 
@@ -879,17 +880,17 @@ wcout << strSports;
 wcout << (PCWSTR)strSports;
 ```
 
-## <a name="csimplestringtpcxstr"></a><a name="pcxstr"></a>CSimpleStringT::P CXSTR
+## <a name="csimplestringtpcxstr"></a><a name="pcxstr"></a> CSimpleStringT::P CXSTR
 
 상수 문자열에 대 한 포인터입니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```
 typedef ChTraitsBase< BaseType >::PCXSTR PCXSTR;
 ```
 
-## <a name="csimplestringtpreallocate"></a><a name="preallocate"></a>CSimpleStringT::P 다시 할당
+## <a name="csimplestringtpreallocate"></a><a name="preallocate"></a> CSimpleStringT::P 다시 할당
 
 개체의 특정 크기 (바이트)를 할당 `CSimpleStringT` 합니다.
 
@@ -908,7 +909,7 @@ void Preallocate( int nLength);
 
 이 메서드를 호출 하 여 개체에 대 한 특정 버퍼 크기를 할당 `CSimpleStringT` 합니다.
 
-`CSimpleStringT`는 문자 버퍼에 대 한 공간을 할당할 수 없는 경우 STATUS_NO_MEMORY 예외를 발생 시킵니다. 기본적으로 메모리 할당은 WIN32 API 함수 또는에 의해 수행 됩니다 `HeapAlloc` `HeapReAlloc` .
+`CSimpleStringT` 는 문자 버퍼에 대 한 공간을 할당할 수 없는 경우 STATUS_NO_MEMORY 예외를 발생 시킵니다. 기본적으로 메모리 할당은 WIN32 API 함수 또는에 의해 수행 됩니다 `HeapAlloc` `HeapReAlloc` .
 
 ### <a name="example"></a>예제
 
@@ -921,17 +922,17 @@ str.Preallocate(100);
 _tprintf_s(_T("Allocated length: %d\n"), str.GetAllocLength());
 ```
 
-## <a name="csimplestringtpxstr"></a><a name="pxstr"></a>CSimpleStringT::P XSTR
+## <a name="csimplestringtpxstr"></a><a name="pxstr"></a> CSimpleStringT::P XSTR
 
 문자열에 대 한 포인터입니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```
 typedef ChTraitsBase< BaseType >::PXSTR PXSTR;
 ```
 
-## <a name="csimplestringtreleasebuffer"></a><a name="releasebuffer"></a>CSimpleStringT:: ReleaseBuffer
+## <a name="csimplestringtreleasebuffer"></a><a name="releasebuffer"></a> CSimpleStringT:: ReleaseBuffer
 
 [Getbuffer](#getbuffer)에서 할당 한 버퍼의 제어를 해제 합니다.
 
@@ -972,7 +973,7 @@ ASSERT(s.GetLength() == 3);
 // Length still 3
 ```
 
-## <a name="csimplestringtreleasebuffersetlength"></a><a name="releasebuffersetlength"></a>CSimpleStringT::ReleaseBufferSetLength
+## <a name="csimplestringtreleasebuffersetlength"></a><a name="releasebuffersetlength"></a> CSimpleStringT::ReleaseBufferSetLength
 
 [Getbuffer](#getbuffer)에서 할당 한 버퍼의 제어를 해제 합니다.
 
@@ -991,7 +992,7 @@ void ReleaseBufferSetLength(int nNewLength);
 
 이 함수는 string 개체에 대 한 올바른 길이를 전달 해야 한다는 점을 제외 하 고 [Releasebuffer](#releasebuffer) 와 기능적으로 비슷합니다.
 
-## <a name="csimplestringtsetat"></a><a name="setat"></a>CSimpleStringT:: SetAt
+## <a name="csimplestringtsetat"></a><a name="setat"></a> CSimpleStringT:: SetAt
 
 개체에서 단일 문자를 설정 `CSimpleStringT` 합니다.
 
@@ -1011,7 +1012,7 @@ void SetAt(int iChar, XCHAR ch);
 
 ### <a name="remarks"></a>설명
 
-*IChar*에 있는 문자를 덮어쓰려면이 메서드를 호출 합니다. *IChar* 가 기존 문자열의 범위를 초과 하는 경우이 메서드는 문자열을 확대 하지 않습니다.
+*IChar* 에 있는 문자를 덮어쓰려면이 메서드를 호출 합니다. *IChar* 가 기존 문자열의 범위를 초과 하는 경우이 메서드는 문자열을 확대 하지 않습니다.
 
 ### <a name="example"></a>예제
 
@@ -1023,7 +1024,7 @@ s.SetAt(1, _T('a'));
 ASSERT(_tcscmp(s, _T("aacdef")) == 0);
 ```
 
-## <a name="csimplestringtsetmanager"></a><a name="setmanager"></a>CSimpleStringT:: SetManager
+## <a name="csimplestringtsetmanager"></a><a name="setmanager"></a> CSimpleStringT:: SetManager
 
 개체의 메모리 관리자를 지정 합니다 `CSimpleStringT` .
 
@@ -1051,7 +1052,7 @@ CSimpleString s(pMgr);
 s.SetManager(pCustomMgr);
 ```
 
-## <a name="csimplestringtsetstring"></a><a name="setstring"></a>CSimpleStringT:: SetString
+## <a name="csimplestringtsetstring"></a><a name="setstring"></a> CSimpleStringT:: SetString
 
 개체의 문자열을 설정 `CSimpleStringT` 합니다.
 
@@ -1068,11 +1069,11 @@ void SetString(PCXSTR pszSrc);
 Null로 끝나는 문자열에 대 한 포인터입니다.
 
 *nLength*<br/>
-*PszSrc*의 문자 수입니다.
+*PszSrc* 의 문자 수입니다.
 
 ### <a name="remarks"></a>설명
 
-문자열을 개체에 복사 `CSimpleStringT` 합니다. `SetString`버퍼의 이전 문자열 데이터를 덮어씁니다.
+문자열을 개체에 복사 `CSimpleStringT` 합니다. `SetString` 버퍼의 이전 문자열 데이터를 덮어씁니다.
 
 두 버전 모두 `SetString` *pszSrc* 이 null 포인터 인지 여부를 확인 하 고, 있는 경우 E_INVALIDARG 오류를 throw 합니다.
 
@@ -1093,7 +1094,7 @@ s.SetString(_T("Soccer"), 6);
 ASSERT(_tcscmp(s, _T("Soccer")) == 0);
 ```
 
-## <a name="csimplestringtstringlength"></a><a name="stringlength"></a>CSimpleStringT:: StringLength
+## <a name="csimplestringtstringlength"></a><a name="stringlength"></a> CSimpleStringT:: StringLength
 
 지정 된 문자열의 문자 수를 반환 합니다.
 
@@ -1108,13 +1109,13 @@ ATL_NOINLINE static int StringLength(PCXSTR psz) throw();
 *psz*<br/>
 Null로 끝나는 문자열에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-*Psz*의 문자 수입니다. null 종결자를 계산 하지 않습니다.
+*Psz* 의 문자 수입니다. null 종결자를 계산 하지 않습니다.
 
 ### <a name="remarks"></a>설명
 
-*Psz*가 가리키는 문자열의 문자 수를 검색 하려면이 메서드를 호출 합니다.
+*Psz* 가 가리키는 문자열의 문자 수를 검색 하려면이 메서드를 호출 합니다.
 
 ### <a name="example"></a>예제
 
@@ -1124,7 +1125,7 @@ Null로 끝나는 문자열에 대 한 포인터입니다.
 ASSERT(CSimpleString::StringLength(_T("soccer")) == 6);
 ```
 
-## <a name="csimplestringttruncate"></a><a name="truncate"></a>CSimpleStringT:: Truncate
+## <a name="csimplestringttruncate"></a><a name="truncate"></a> CSimpleStringT:: Truncate
 
 문자열을 새 길이로 자릅니다.
 
@@ -1159,7 +1160,7 @@ _tprintf_s(_T("Allocated length: %d\n"), str.GetLength());
 _tprintf_s(_T("Contents: %s\n"), str);
 ```
 
-## <a name="csimplestringtunlockbuffer"></a><a name="unlockbuffer"></a>CSimpleStringT:: UnlockBuffer
+## <a name="csimplestringtunlockbuffer"></a><a name="unlockbuffer"></a> CSimpleStringT:: UnlockBuffer
 
 개체의 버퍼 잠금을 해제 `CSimpleStringT` 합니다.
 
@@ -1175,7 +1176,7 @@ void UnlockBuffer() throw();
 
 소멸자는를 `CSimpleStringT` 자동으로 호출 `UnlockBuffer` 하 여 소멸자가 호출 될 때 버퍼가 잠기지 않도록 합니다. 이 메서드에 대 한 예제는 [Lockbuffer](#lockbuffer)를 참조 하세요.
 
-## <a name="csimplestringtcsimplestringt"></a><a name="dtor"></a>CSimpleStringT:: ~ CSimpleStringT
+## <a name="csimplestringtcsimplestringt"></a><a name="dtor"></a> CSimpleStringT:: ~ CSimpleStringT
 
 `CSimpleStringT` 개체를 제거합니다.
 

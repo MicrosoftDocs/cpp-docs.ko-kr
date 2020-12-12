@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2634'
 title: 컴파일러 오류 C2634
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - C2634
 ms.assetid: 58c8f2db-ac95-4a81-9355-ef3cfb0ba7b3
-ms.openlocfilehash: ae53dc8f33920c84bed152cdd7d7bf34e01f165a
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 5e8aee2ce27fc56f1204d925147f48352bd24a15
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74759453"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97123411"
 ---
 # <a name="compiler-error-c2634"></a>컴파일러 오류 C2634
 
-' & class:: member ': 참조 멤버에 대 한 포인터가 잘못 되었습니다.
+' &class:: member ': 참조 멤버에 대 한 포인터가 잘못 되었습니다.
 
 참조 멤버에 대 한 포인터가 선언 됩니다.
 

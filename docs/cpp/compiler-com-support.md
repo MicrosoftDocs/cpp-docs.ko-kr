@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 컴파일러 COM 지원'
 title: 컴파일러 COM 지원
 ms.date: 05/06/2019
 helpviewer_keywords:
 - cl.exe compiler, COM support
 - COM, compiler support
 ms.assetid: 76a78442-f2a4-4985-9967-67e20773f847
-ms.openlocfilehash: 9a5961049cbc54c94cec5b444e2d98f013dda932
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1dd64d34b39a2b5cd2f0648d38deddf51e8541a3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233784"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97120466"
 ---
 # <a name="compiler-com-support"></a>컴파일러 COM 지원
 

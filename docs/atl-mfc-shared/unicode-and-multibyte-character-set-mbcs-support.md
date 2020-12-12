@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 유니코드 및 MBCS (멀티 바이트 문자 집합) 지원'
 title: 유니코드 및 멀티바이트 문자 집합(MBCS) 지원
 ms.date: 01/09/2017
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - Unicode [C++], string objects
 - strings [C++], Unicode
 - strings [C++], character set support
-ms.openlocfilehash: efa90acd169aeb8739b0bf97a5ab27026cc80cc6
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9e9a09777e835872a5c8bc6613460478acf9be9b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831985"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166410"
 ---
 # <a name="unicode-and-multibyte-character-set-mbcs-support"></a>유니코드 및 멀티바이트 문자 집합(MBCS) 지원
 
@@ -25,7 +26,7 @@ ms.locfileid: "88831985"
 
 - [MBCS (멀티 바이트 문자 집합)](#mfc-support-for-mbcs-strings), **`char`** 단일 또는 더블 바이트 문자 및 로캘별 문자 집합으로 인코딩된 문자열
 
-Microsoft는 모든 새 개발을 위해 MFC 유니코드 라이브러리를 권장 하며 MBCS 라이브러리는 Visual Studio 2013 및 Visual Studio 2015에서 더 이상 사용 되지 않습니다. 물론 이에 해당하는 경우는 더 이상 없습니다. Visual Studio 2017에서 MBCS 사용 중단 경고가 제거 되었습니다.
+Microsoft는 모든 새 개발을 위해 MFC 유니코드 라이브러리를 권장 하며 MBCS 라이브러리는 Visual Studio 2013 및 Visual Studio 2015에서 더 이상 사용 되지 않습니다. 더 이상 그렇지 않습니다. Visual Studio 2017에서 MBCS 사용 중단 경고가 제거 되었습니다.
 
 ## <a name="mfc-support-for-unicode-strings"></a>유니코드 문자열에 대 한 MFC 지원
 
@@ -35,30 +36,30 @@ Microsoft는 모든 새 개발을 위해 MFC 유니코드 라이브러리를 권
 
 :::row:::
    :::column span="":::
-      MFC*버전*..lib \
-      MFC*버전*UD. LIB
-      MFCM*버전*# .lib \
-      MFCM*버전*UD. LIB
-      MFCS*버전*# .lib \
-      MFCS*버전*UD. LIB
+      MFC *버전*..lib \
+      MFC *버전* UD. LIB
+      MFCM *버전*# .lib \
+      MFCM *버전* UD. LIB
+      MFCS *버전*# .lib \
+      MFCS *버전* UD. LIB
       UAFXCW. LIB
       UAFXCWD. LIB
    :::column-end:::
    :::column span="":::
-      MFC*버전*U .pdb \
-      MFC*버전*UD. .PDB
-      MFCM*버전*U .pdb \
-      MFCM*버전*UD. .PDB
-      MFCS*버전*U .pdb \
-      MFCS*버전*UD. .PDB
+      MFC *버전* U .pdb \
+      MFC *버전* UD. .PDB
+      MFCM *버전* U .pdb \
+      MFCM *버전* UD. .PDB
+      MFCS *버전* U .pdb \
+      MFCS *버전* UD. .PDB
       UAFXCW. .PDB
       UAFXCWD. .PDB
    :::column-end:::
    :::column span="":::
-      MFC*버전*U.DLL \
-      MFC*버전*UD.DLL \
-      MFCM*버전*U.DLL \
-      MFCM*버전*UD.DLL
+      MFC *버전* U.DLL \
+      MFC *버전* UD.DLL \
+      MFCM *버전* U.DLL \
+      MFCM *버전* UD.DLL
    :::column-end:::
 :::row-end:::
 
@@ -101,7 +102,7 @@ DBCS에서 지정 된 문자열은 모든 싱글바이트 ANSI 문자, 모든 �
 
 `CString` 멤버 함수는 호출 하는 C 런타임 함수의 특수 "일반 텍스트" 버전을 사용 하거나 유니코드 인식 함수를 사용 합니다. 따라서 예를 들어 `CString` 함수가 일반적으로를 호출 하는 경우 `strcmp` 해당 제네릭 텍스트 함수를 `_tcscmp` 대신 호출 합니다. _MBCS 및 _UNICODE 기호가 정의 된 방식에 따라은 다음과 같이 `_tcscmp` 매핑됩니다.
 
-|기호|기능|
+|기호|함수|
 |-|-|
 |_MBCS 정의됨|`_mbscmp`|
 |_UNICODE 정의됨|`wcscmp`|
@@ -110,7 +111,7 @@ DBCS에서 지정 된 문자열은 모든 싱글바이트 ANSI 문자, 모든 �
 > [!NOTE]
 > _MBCS 및 _UNICODE 기호는 함께 사용할 수 없습니다.
 
-모든 런타임 문자열 처리 루틴에 대 한 일반 텍스트 함수 매핑은 [C 런타임 라이브러리 참조](../c-runtime-library/c-run-time-library-reference.md)에 설명 되어 있습니다. 목록은 [국제화](../c-runtime-library/internationalization.md)를 참조 하세요.
+모든 런타임 문자열 처리 루틴에 대 한 일반 텍스트 함수 매핑은 [C Run-Time 라이브러리 참조](../c-runtime-library/c-run-time-library-reference.md)에 설명 되어 있습니다. 목록은 [국제화](../c-runtime-library/internationalization.md)를 참조 하세요.
 
 마찬가지로 `CString` 메서드는 제네릭 데이터 형식 매핑을 사용 하 여 구현 됩니다. MBCS와 유니코드를 모두 사용 하도록 설정 하기 위해 MFC는 또는에 대해 TCHAR.H를 사용 하 고, 또는에 대해 LPTSTR를 사용 하 **`char`** **`wchar_t`** **`char`** <strong>\*</strong> `wchar_t*` 고, **const char** <strong>\*</strong> 또는에 LPCTSTR `const wchar_t*` MBCS 또는 유니코드에 대 한 올바른 매핑을 보장 합니다.
 

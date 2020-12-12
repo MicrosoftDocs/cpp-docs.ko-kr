@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: retval'
 title: retval (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - retval attribute
 ms.assetid: bfa16f08-157d-4eea-afde-1232c54b8501
-ms.openlocfilehash: f90893390bc67cb495e646f61e3d61a994e42e50
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 15bfc994d18a9c61c37402aa763ecbfd96cbd768
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845993"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114860"
 ---
 # <a name="retval"></a>retval
 
@@ -31,7 +32,7 @@ ms.locfileid: "88845993"
 
 ## <a name="example"></a>예제
 
-**Retval**의 샘플 사용에 대 한 [바인딩](bindable.md) 예제를 참조 하세요.
+**Retval** 의 샘플 사용에 대 한 [바인딩](bindable.md) 예제를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 

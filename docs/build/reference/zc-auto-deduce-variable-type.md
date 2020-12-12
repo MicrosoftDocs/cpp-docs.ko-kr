@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: `/Zc:auto` (변수 형식 추론)'
 title: /Zc:auto(변수 형식 추론)
 ms.date: 02/28/2018
 f1_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - /Zc compiler options (C++)
 - Zc compiler options (C++)
 ms.assetid: 5f5bc102-44c3-4688-bbe1-080594dcee5c
-ms.openlocfilehash: 6bb1c8f2b14c483cbd46ecb6534a33db020e23e0
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: d20f377fc653e9c3cceb5c3e81b5e5e8a815bcad
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502825"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114717"
 ---
 # <a name="zcauto-deduce-variable-type"></a>`/Zc:auto` (변수 형식 추론)
 
 **`/Zc:auto`** 컴파일러 옵션을 사용 하면 컴파일러에서 [ `auto` 키워드](../../cpp/auto-cpp.md) 를 사용 하 여 변수를 선언 하는 방법을 알 수 있습니다. 기본 옵션인를 지정 하는 경우 **`/Zc:auto`** 컴파일러는 초기화 식에서 선언 된 변수의 형식을 추론 합니다. 를 지정 하면 **`/Zc:auto-`** 컴파일러가 자동 저장소 클래스에 변수를 할당 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **`/Zc:auto`**[**`-`**]
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3507'
 title: 컴파일러 오류 C3507
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3507
 ms.assetid: 75f89767-f6f9-40f6-9820-81a49e09abdf
-ms.openlocfilehash: a38efcc0d74bbea0e0bf767cb9e5a11561ab4fb8
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: d745aab4fec8c7a0bebab6fd4f41b27b7ac5c4df
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91507128"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97113089"
 ---
 # <a name="compiler-error-c3507"></a>컴파일러 오류 C3507
 

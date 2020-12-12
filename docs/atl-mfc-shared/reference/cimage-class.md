@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CImage 클래스'
 title: CImage 클래스
 ms.date: 08/19/2019
 f1_keywords:
@@ -54,12 +55,12 @@ helpviewer_keywords:
 - CImage class
 - transparent color
 ms.assetid: 52861e3d-bf7e-481f-a240-90e88f76c490
-ms.openlocfilehash: 6e7197648fd91b2280d406c19c1019ca23f6a470
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: a094aecfae57a678f306d00e0998247000361822
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90684302"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166828"
 ---
 # <a name="cimage-class"></a>CImage 클래스
 
@@ -78,13 +79,13 @@ class CImage
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CImage:: CImage](#cimage)|생성자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CImage:: AlphaBlend](#alphablend)|투명 또는 반투명 픽셀의 비트맵이 표시 됩니다.|
 |[CImage::Attach](#attach)|HBITMAP을 개체에 연결 `CImage` 합니다. 비 DIB 섹션 비트맵 또는 DIB 섹션 비트맵과 함께 사용할 수 있습니다.|
@@ -103,7 +104,7 @@ class CImage
 |[CImage:: GetImporterFilterString](#getimporterfilterstring)|사용 가능한 이미지 형식과 해당 설명을 찾습니다.|
 |[CImage::GetMaxColorTableEntries](#getmaxcolortableentries)|색 테이블의 최대 항목 수를 검색 합니다.|
 |[CImage:: GetPitch](#getpitch)|현재 이미지의 피치 (바이트)를 검색 합니다.|
-|[CImage:: GetPixel](#getpixel)|*X* 및 *y*로 지정 된 픽셀의 색을 검색 합니다.|
+|[CImage:: GetPixel](#getpixel)|*X* 및 *y* 로 지정 된 픽셀의 색을 검색 합니다.|
 |[CImage::GetPixelAddress](#getpixeladdress)|지정 된 픽셀의 주소를 검색 합니다.|
 |[CImage::GetTransparentColor](#gettransparentcolor)|색 테이블에서 투명 색의 위치를 검색 합니다.|
 |[CImage::GetWidth](#getwidth)|현재 이미지의 너비 (픽셀)를 검색 합니다.|
@@ -128,13 +129,13 @@ class CImage
 
 ### <a name="public-operators"></a>Public 연산자
 
-|Name|Description|
+|Name|설명|
 |----------|-----------------|
 |[CImage:: operator HBITMAP](#operator_hbitmap)|개체에 연결 된 Windows 핸들을 반환 합니다 `CImage` .|
 
 ## <a name="remarks"></a>설명
 
-`CImage` DIB (장치 독립적 비트맵) 섹션이 아닌 비트맵을 사용 합니다. 그러나 DIB 섹션 에서만 [Create](#create) 또는 [CImage:: Load](#load) 를 사용할 수 있습니다. Attach를 사용 하 여 비 DIB 섹션 비트맵을 개체에 연결할 수 `CImage` 있지만 [Attach](#attach) `CImage` dib 섹션 비트맵만 지 원하는 다음 메서드를 사용할 수 없습니다.
+`CImage` DIB (장치 독립적 비트맵) 섹션이 아닌 비트맵을 사용 합니다. 그러나 DIB 섹션 에서만 [Create](#create) 또는 [CImage:: Load](#load) 를 사용할 수 있습니다. Attach를 사용 하 여 비 DIB 섹션 비트맵을 개체에 연결할 수 `CImage` 있지만 [](#attach) `CImage` dib 섹션 비트맵만 지 원하는 다음 메서드를 사용할 수 없습니다.
 
 - [GetBits](#getbits)
 
@@ -191,9 +192,9 @@ void CMyDlg::OnRButtonDown(UINT nFlags, CPoint point)
 는 `CImage` MFC 또는 ATL에서 사용할 수 있습니다.
 
 > [!NOTE]
-> 를 사용 하 여 프로젝트를 만드는 경우 `CImage` atlimage를 `CString` 포함 하기 전에 *atlimage.h*를 정의 해야 합니다. 프로젝트에서 MFC를 사용 하지 않고 ATL을 사용 하는 경우 *atlimage*를 *포함 하기 전에* 프로젝트를 포함 합니다. 프로젝트에서 MFC를 사용 하는 경우 (또는 MFC를 지 원하는 ATL 프로젝트인 경우)에는 *atlimage*를 포함 하기 전에 *afxstr* 를 포함 합니다.
+> 를 사용 하 여 프로젝트를 만드는 경우 `CImage` atlimage를 `CString` 포함 하기 전에 를 정의 해야 합니다. 프로젝트에서 MFC를 사용 하지 않고 ATL을 사용 하는 경우 *atlimage* 를 *포함 하기 전에* 프로젝트를 포함 합니다. 프로젝트에서 MFC를 사용 하는 경우 (또는 MFC를 지 원하는 ATL 프로젝트인 경우)에는 *atlimage* 를 포함 하기 전에 *afxstr* 를 포함 합니다.
 >
-> 마찬가지로 *atlimpl*을 포함 하기 전에 *atlimage* 를 포함 해야 합니다. 이를 쉽게 수행 하려면 *atlimage* (Visual Studio 2017 및 이전 버전의*stdafx.h* )에를 포함 *합니다.*
+> 마찬가지로 *atlimpl* 을 포함 하기 전에 *atlimage* 를 포함 해야 합니다. 이를 쉽게 수행 하려면 *atlimage* (Visual Studio 2017 및 이전 버전의 *stdafx.h* )에를 포함 *합니다.*
 
 ## <a name="requirements"></a>요구 사항
 
@@ -492,7 +493,7 @@ BOOL CreateEx(
 
 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 다음 예제에서는 16 비트를 사용 하 여 각 픽셀을 인코딩하여 100x100 픽셀 비트맵을 만듭니다. 지정 된 16 비트 픽셀에서 bits 0-3는 빨강 구성 요소를 인코딩하고, bits 4-7 인코드 녹색을 인코딩하고, bits 8-11를 인코딩합니다. 나머지 4 비트는 사용 되지 않습니다.
 
@@ -713,7 +714,7 @@ static HRESULT GetExporterFilterString(
 *pszAllFilesDescription*<br/>
 이 매개 변수가 NULL이 아닌 경우 필터 문자열은 목록의 시작 부분에 하나의 추가 필터를 포함 합니다. 이 필터는 해당 설명에 대해 *pszAllFilesDescription* 의 현재 값을 포함 하 고, 목록의 다른 내보내기에서 지 원하는 확장명의 파일을 허용 합니다.
 
-예를 들면 다음과 같습니다.
+예를 들어:
 
 ```cpp
 //First filter in the list will be titled "All Image Files", and
@@ -763,7 +764,7 @@ _T("All Image Files"));
 
 파일 description0&#124;\* ext0&#124;filedescription1&#124;. \* ext1&#124; ... 파일 설명 *n*&#124;\* . ext *n*&#124;&#124;
 
-여기서 ' &#124; '는로 지정 된 구분 문자입니다 `chSeparator` . 예를 들면 다음과 같습니다.
+여기서 ' &#124; '는로 지정 된 구분 문자입니다 `chSeparator` . 예를 들어:
 
 `"Bitmap format|*.bmp|JPEG format|*.jpg|GIF format|*.gif|PNG format|*.png||"`
 
@@ -808,7 +809,7 @@ static HRESULT GetImporterFilterString(
 *pszAllFilesDescription*<br/>
 이 매개 변수가 NULL이 아닌 경우 필터 문자열은 목록의 시작 부분에 하나의 추가 필터를 포함 합니다. 이 필터는 해당 설명에 대해 *pszAllFilesDescription* 의 현재 값을 포함 하 고, 목록의 다른 내보내기에서 지 원하는 확장명의 파일을 허용 합니다.
 
-예를 들면 다음과 같습니다.
+예를 들어:
 
 ```cpp
 //First filter in the list will be titled "All Image Files", and
@@ -854,7 +855,7 @@ _T("All Image Files"));
 
 파일 description0&#124;\* ext0&#124;filedescription1&#124;. \* ext1&#124; ... 파일 설명 *n*&#124;\* . ext *n*&#124;&#124;
 
-여기서 ' &#124; '는 *chseparator*로 지정 된 구분 문자입니다. 예를 들면 다음과 같습니다.
+여기서 ' &#124; '는 *chseparator* 로 지정 된 구분 문자입니다. 예를 들어:
 
 `"Bitmap format|*.bmp|JPEG format|*.jpg|GIF format|*.gif|PNG format|*.png||"`
 
@@ -899,7 +900,7 @@ int GetPitch() const throw();
 
 ## <a name="cimagegetpixel"></a><a name="getpixel"></a> CImage:: GetPixel
 
-*X* 및 *y*로 지정 된 위치에서 픽셀의 색을 검색 합니다.
+*X* 및 *y* 로 지정 된 위치에서 픽셀의 색을 검색 합니다.
 
 ```
 COLORREF GetPixel(int x, int y) const throw();
@@ -1066,7 +1067,7 @@ HRESULT Load(IStream* pStream) throw();
 
 ### <a name="remarks"></a>설명
 
-*PszFileName* 또는 *pstream*에 의해 지정 된 이미지를 로드 합니다.
+*PszFileName* 또는 *pstream* 에 의해 지정 된 이미지를 로드 합니다.
 
 유효한 이미지 형식은 BMP, GIF, JPEG, PNG 및 TIFF입니다.
 
@@ -1410,7 +1411,7 @@ void SetPixelIndexed(int x, int y, int iIndex) throw();
 
 ## <a name="cimagesetpixelrgb"></a><a name="setpixelrgb"></a> CImage:: SetPixelRGB
 
-*X* 및 *y* 로 지정 된 위치의 픽셀을 빨간색, 녹색, 파랑 (RGB) 이미지의 *r*, *g*및 *b*로 표시 되는 색으로 설정 합니다.
+*X* 및 *y* 로 지정 된 위치의 픽셀을 빨간색, 녹색, 파랑 (RGB) 이미지의 *r*, *g* 및 *b* 로 표시 되는 색으로 설정 합니다.
 
 ```cpp
 void SetPixelRGB(
@@ -1654,7 +1655,7 @@ BOOL TransparentBlt(CImage* pSrcImage, CImage* pDstImage,
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [MMXSwarm 샘플](../../overview/visual-cpp-samples.md)<br/>
 [SimpleImage 샘플](../../overview/visual-cpp-samples.md)<br/>

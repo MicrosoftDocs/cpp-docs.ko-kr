@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: ATL 컬렉션 클래스'
 title: ATL 컬렉션 클래스 개요
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - CTraits classes
 - collection classes
 ms.assetid: 4d619d46-5b4e-41dd-b9fd-e86b1fbc00b5
-ms.openlocfilehash: 039af388a3713540c6ba7d39e8b639cf83d291ff
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 32d9fe928024d82af7031fbbb8d88aba5e3eae31
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040862"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166085"
 ---
 # <a name="atl-collection-classes"></a>ATL 컬렉션 클래스
 
@@ -50,8 +51,8 @@ ATL은 적은 수의 개체를 처리 하기 위한 다음과 같은 배열 클�
 |[CAtlArray](../atl/reference/catlarray-class.md)|배열을 구현 합니다.|
 |[CAtlList](../atl/reference/catllist-class.md)|목록을 구현 합니다.|
 |[CAtlMap](../atl/reference/catlmap-class.md)|키 또는 값을 기준으로 데이터를 참조할 수 있는 매핑 구조를 구현 합니다.|
-|[CRBMap](../atl/reference/crbmap-class.md)|빨강 검정 알고리즘을 사용 하 여 매핑 구조를 구현 합니다.|
-|[CRBMultiMap](../atl/reference/crbmultimap-class.md)|빨강 검정 다중 매핑 구조를 구현 합니다.|
+|[CRBMap](../atl/reference/crbmap-class.md)|Red-Black 알고리즘을 사용 하 여 매핑 구조를 구현 합니다.|
+|[CRBMultiMap](../atl/reference/crbmultimap-class.md)|Red-Black multimapping 구조체를 구현 합니다.|
 
 이러한 클래스는 디버그 빌드에서 사용 될 때 많은 프로그래밍 오류를 트래핑 하지만 성능 면에서 이러한 검사가 정품 빌드에서 수행 되지 않습니다.
 
@@ -59,7 +60,7 @@ ATL은 적은 수의 개체를 처리 하기 위한 다음과 같은 배열 클�
 
 메모리 포인터와 인터페이스 포인터를 관리 하는 데 더 특수화 된 컬렉션 클래스도 제공 됩니다.
 
-|클래스|용도|
+|클래스|목적|
 |-----------|-------------|
 |[CAutoPtrArray](../atl/reference/cautoptrarray-class.md)|스마트 포인터의 배열을 생성할 때 유용한 메서드를 제공 합니다.|
 |[CAutoPtrList](../atl/reference/cautoptrlist-class.md)|스마트 포인터 목록을 생성할 때 유용한 메서드를 제공 합니다.|
@@ -82,13 +83,13 @@ ATL은 적은 수의 개체를 처리 하기 위한 다음과 같은 배열 클�
 
 ### <a name="collection-shape-features"></a>컬렉션 모양 특징
 
-|도형|주문됨|인덱싱|다음을 삽입 합니다.<br /><br /> element|검색 대상<br /><br /> 지정 된 요소|중복<br /><br /> 요소|
+|셰이프|주문됨|인덱싱|다음을 삽입 합니다.<br /><br /> element|검색 대상<br /><br /> 지정 된 요소|중복<br /><br /> 요소|
 |-----------|--------------|--------------|---------------------------|--------------------------------------|-----------------------------|
 |목록|예|아니요|Fast (일정 한 시간)|저속 O (n)|예|
 |Array|예|Int (일정 시간)|끝에 삽입 하는 경우 (이 경우에는 상수 시간)를 제외 하 고 O (n)가 느려집니다.|저속 O (n)|예|
-|지도|아니요|키 기준 (일정 시간)|Fast (일정 한 시간)|Fast (일정 한 시간)|아니요(키) 예(값)|
-|빨강-검정 지도|예 (키로)|키 O (로그 n)|Fast O (로그 n)|Fast O (로그 n)|아니요|
-|빨강-검정 Multimap|예 (키로)|키 O (로그 n) (키 당 여러 값)|Fast O (로그 n)|Fast O (로그 n)|예 (키 당 여러 값)|
+|맵|아니요|키 기준 (일정 시간)|Fast (일정 한 시간)|Fast (일정 한 시간)|아니요(키) 예(값)|
+|Red-Black 맵|예 (키로)|키 O (로그 n)|Fast O (로그 n)|Fast O (로그 n)|아니요|
+|Red-Black Multimap|예 (키로)|키 O (로그 n) (키 당 여러 값)|Fast O (로그 n)|Fast O (로그 n)|예 (키 당 여러 값)|
 
 ## <a name="using-ctraits-objects"></a>CTraits 개체 사용
 

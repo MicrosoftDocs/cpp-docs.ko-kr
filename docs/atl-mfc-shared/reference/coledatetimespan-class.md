@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: COleDateTimeSpan 클래스'
 title: COleDateTimeSpan 클래스
 ms.date: 03/27/2019
 f1_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - Date data type, MFC encapsulation of
 - COleDateTimeSpan class
 ms.assetid: 7441526d-a30a-4019-8fb3-3fee6f897cbe
-ms.openlocfilehash: 5934a456b519d14def14018f966c7bff8206c3c4
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 51632f8c179ea0e256c39052e924d296b89aefd0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500139"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166774"
 ---
 # <a name="coledatetimespan-class"></a>COleDateTimeSpan 클래스
 
@@ -70,7 +71,7 @@ class COleDateTimeSpan
 
 ### <a name="public-operators"></a>Public 연산자
 
-|속성|설명|
+|Name|설명|
 |-|-|
 |[연산자 +,-](#operator_add_-)|값의 부호를 추가, 빼기 및 변경 `COleDateTimeSpan` 합니다.|
 |[operator + =,-=](#operator_add_eq_-_eq)|`COleDateTimeSpan`이 값에서 값을 더하거나 뺍니다 `COleDateTimeSpan` .|
@@ -80,7 +81,7 @@ class COleDateTimeSpan
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|속성|설명|
+|Name|설명|
 |----------|-----------------|
 |[COleDateTimeSpan:: m_span](#m_span)|**`double`** 이 개체의 내부를 포함 `COleDateTimeSpan` 합니다.|
 |[COleDateTimeSpan:: m_status](#m_status)|이 개체의 상태를 포함 `COleDateTimeSpan` 합니다.|
@@ -745,7 +746,7 @@ enum DateTimeSpanStatus{
 - `COleDateTimeSpan::null` 이 `COleDateTimeSpan` 개체가 null 임을 나타냅니다. 즉,이 개체에 대해 값이 제공 되지 않았음을 나타냅니다. 이는 c + + NULL과는 달리 "값이 없습니다" 라는 데이터베이스 의미의 "null"입니다.
 
    > [!CAUTION]
-   > 이 함수는 고급 프로그래밍 상황을 위한 것입니다. 이 함수는이 개체의 데이터를 변경 하지 않습니다. 상태를 **null** 또는 **잘못**된 것으로 설정 하는 데 주로 사용 됩니다. 할당 연산자 ([operator =](#operator_eq)) 및 [SetDateTimeSpan](#setdatetimespan) 는 원본 값을 기준으로 개체의 상태를 설정 합니다.
+   > 이 함수는 고급 프로그래밍 상황을 위한 것입니다. 이 함수는이 개체의 데이터를 변경 하지 않습니다. 상태를 **null** 또는 **잘못** 된 것으로 설정 하는 데 주로 사용 됩니다. 할당 연산자 ([operator =](#operator_eq)) 및 [SetDateTimeSpan](#setdatetimespan) 는 원본 값을 기준으로 개체의 상태를 설정 합니다.
 
 ### <a name="example"></a>예제
 

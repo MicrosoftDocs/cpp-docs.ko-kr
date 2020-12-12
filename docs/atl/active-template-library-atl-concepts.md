@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: ATL (액티브 템플릿 라이브러리) 개념'
 title: ATL(액티브 템플릿 라이브러리) 개념
 ms.date: 05/06/2019
 helpviewer_keywords:
 - ATL, about ATL
 ms.assetid: a3960991-4d76-4da5-9568-3fa7fde53ff4
-ms.openlocfilehash: c87eedff5b6ce7d906c05ac0678425af575f0af8
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 5437f381ea145d5474dcdba25673d4e41c60c54b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504273"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166319"
 ---
 # <a name="active-template-library-atl-concepts"></a>ATL(액티브 템플릿 라이브러리) 개념
 
@@ -70,7 +71,7 @@ ATL에서 배열과 맵을 사용하는 방법을 설명합니다.
 [ATL 레지스트리 구성 요소(등록자)](atl-registry-component-registrar.md)<br/>
 ATL 스크립팅 구문과 대체 가능 매개 변수를 설명합니다. 등록자에 대한 정적 링크를 설정하는 방법도 설명합니다.
 
-[ATL 및 C 런타임 코드를 사용한 프로그래밍](programming-with-atl-and-c-run-time-code.md)<br/>
+[ATL 및 C Run-Time 코드를 사용한 프로그래밍](programming-with-atl-and-c-run-time-code.md)<br/>
 정적 또는 동적 CRT(C 런타임) 라이브러리 연결의 장점에 대해 설명합니다.
 
 [CComBSTR을 사용한 프로그래밍](programming-with-ccombstr-atl.md)<br/>
@@ -82,7 +83,7 @@ atlenc.h에서 uuencode, 16진수, UTF8 같은 광범위한 공통 인터넷 표
 [유틸리티 참조](atl-utilities-reference.md)<br/>
 [CPathT](reference/cpatht-class.md) 및 [CUrl](reference/curl-class.md) 형식으로 경로 및 URL을 조작하는 코드를 제공합니다. 스레드 풀 [CThreadPool](reference/cthreadpool-class.md)을 자체 애플리케이션에 사용할 수 있습니다. 이 코드는 atlpath.h 및 atlutil.h에서 찾을 수 있습니다.
 
-## <a name="related-sections"></a>관련 섹션
+## <a name="related-sections"></a>관련 단원
 
 [ATL 자습서](active-template-library-atl-tutorial.md)<br/>
 컨트롤을 만드는 과정을 안내하고 프로세스의 몇 가지 ATL 기본 사항을 보여 줍니다.

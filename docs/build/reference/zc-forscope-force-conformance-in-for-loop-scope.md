@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보:/Zc: forScope (for 루프 범위의 강제 규칙)'
 title: /Zc:forScope(for 루프 범위의 강제 규칙)
 ms.date: 03/06/2018
 f1_keywords:
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - Conformance compiler options
 - Zc compiler options [C++]
 ms.assetid: 3031f02d-3b14-4ad0-869e-22b0110c3aed
-ms.openlocfilehash: b1173ad609a1b2c95d6cf118f4e2d5defeec5b9c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7124bba6608facfea546974cfa40ef9556ff713a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234343"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114665"
 ---
 # <a name="zcforscope-force-conformance-in-for-loop-scope"></a>/Zc:forScope(for 루프 범위의 강제 규칙)
 
 Microsoft 확장( [/Ze](../../cpp/for-statement-cpp.md) )과 함께[for](za-ze-disable-language-extensions.md)루프의 표준 C++ 동작을 구현하는 데 사용됩니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **/Zc: forScope**[ **-** ]
 
@@ -34,7 +35,7 @@ Microsoft 확장( [/Ze](../../cpp/for-statement-cpp.md) )과 함께[for](za-ze-d
 
 **/Zc:forScope-** 옵션은 더 이상 사용되지 않으므로 이후 릴리스에서 제거될 예정입니다. **/Zc:forScope-** 를 사용하면 사용 중단 경고 D9035가 발생합니다.
 
-다음 코드는 **/Za** 가 아니라 **/Ze**에서 컴파일됩니다.
+다음 코드는 **/Za** 가 아니라 **/Ze** 에서 컴파일됩니다.
 
 ```cpp
 // zc_forScope.cpp

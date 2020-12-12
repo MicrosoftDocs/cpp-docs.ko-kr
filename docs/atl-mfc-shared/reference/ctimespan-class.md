@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CTimeSpan 클래스'
 title: CTimeSpan 클래스
 ms.date: 10/18/2018
 f1_keywords:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - shared classes, CTimeSpan
 - time, elapsed
 ms.assetid: ee1e42f6-1839-477a-8435-fb26ad475140
-ms.openlocfilehash: 0c13aa0d8f6c46db3b018283ab2a408a3f9531e1
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b15fa247baaa4de77c5caab12d584a80321b9420
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832024"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166579"
 ---
 # <a name="ctimespan-class"></a>CTimeSpan 클래스
 
@@ -83,7 +84,7 @@ class CTimeSpan
 
 `CTime`및 `CTimeSpan` 클래스는 파생을 위해 디자인 되지 않았습니다. 가상 함수가 없으므로 및 개체의 크기는 `CTime` `CTimeSpan` 정확히 8 바이트입니다. 대부분의 멤버 함수는 인라인 함수입니다.
 
-사용에 대 한 자세한 내용은 `CTimeSpan` *런타임 라이브러리 참조*의 [날짜 및 시간](../../atl-mfc-shared/date-and-time.md)및 [시간 관리](../../c-runtime-library/time-management.md) 문서를 참조 하세요.
+사용에 대 한 자세한 내용은 `CTimeSpan` *런타임 라이브러리 참조* 의 [날짜 및 시간](../../atl-mfc-shared/date-and-time.md)및 [시간 관리](../../c-runtime-library/time-management.md) 문서를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -399,7 +400,7 @@ CArchive& Serialize64(CArchive& ar);
 
 ### <a name="parameters"></a>매개 변수
 
-*방어력*<br/>
+*ar*<br/>
 `CArchive`업데이트 하려는 개체입니다.
 
 ### <a name="return-value"></a>반환 값

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: ATL 컨트롤 포함 FAQ'
 title: ATL 컨트롤 포함 FAQ
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,20 +9,20 @@ helpviewer_keywords:
 - ActiveX controls [C++], hosting
 - controls [ATL]
 ms.assetid: d4bdfbe0-82ca-4f2f-bb95-cb89bdcc9b53
-ms.openlocfilehash: 693617589f157d352972485396777cec587a5b8f
-ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
+ms.openlocfilehash: 5c5d3d452a119908cb6c8dcdb08da3276db78f51
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352702"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165773"
 ---
 # <a name="atl-control-containment-faq"></a>ATL 컨트롤 포함 FAQ
 
 ## <a name="which-atl-classes-facilitate-activex-control-containment"></a>어떤 ATL 클래스가 ActiveX 컨트롤 포함에 도움이 되나요?
 
-ATL의 컨트롤 호스팅 코드에서는 ATL 클래스를 사용할 필요가 없습니다. 단순히 **"AtlAxWin80"** 창을 만들고 필요한 경우 컨트롤 호스팅 api를 사용할 수 있습니다. 자세한 내용은 **ATL 컨트롤 호스팅 api**를 참조 하세요. 그러나 다음 클래스를 사용 하면 포함 기능을 보다 쉽게 사용할 수 있습니다.
+ATL의 컨트롤 호스팅 코드에서는 ATL 클래스를 사용할 필요가 없습니다. 단순히 **"AtlAxWin80"** 창을 만들고 필요한 경우 컨트롤 호스팅 API를 사용할 수 있습니다. 자세한 내용은 **ATL Control-Hosting api** 를 참조 하세요. 그러나 다음 클래스를 사용 하면 포함 기능을 보다 쉽게 사용할 수 있습니다.
 
-|클래스|Description|
+|클래스|설명|
 |-----------|-----------------|
 |[CAxWindow](../atl/reference/caxwindow-class.md)|창을 만들고, 컨트롤을 만들거나, 창에 컨트롤을 연결 하 고, 호스트 개체에 대 한 인터페이스 포인터를 검색 하는 메서드를 제공 하는 **"AtlAxWin80"** 창을 래핑합니다.|
 |[CAxWindow2T](../atl/reference/caxwindow2t-class.md)|창을 만들고, 컨트롤을 만들거나, 사용이 허가 된 컨트롤을 창에 연결 하 고, 호스트 개체에 대 한 인터페이스 포인터를 검색 하는 메서드를 제공 하는 **"AtlAxWinLic80"** 창을 래핑합니다.|
@@ -33,7 +34,7 @@ ATL의 컨트롤 호스팅 코드에서는 ATL 클래스를 사용할 필요가 
 
 ATL의 컨트롤 호스팅 API는 모든 창이 ActiveX 컨트롤 컨테이너 역할을 하도록 허용 하는 함수 집합입니다. 이러한 함수는 소스 코드로 사용할 수 있고 ATL90.dll에 의해 노출 되기 때문에 프로젝트에 정적 또는 동적으로 연결할 수 있습니다. 컨트롤 호스팅 함수는 아래 표에 나열 되어 있습니다.
 
-|함수|Description|
+|함수|설명|
 |--------------|-----------------|
 |[AtlAxAttachControl](reference/composite-control-global-functions.md#atlaxattachcontrol)|호스트 개체를 만들어 제공 된 창에 연결 하 고 기존 컨트롤을 연결 합니다.|
 |[AtlAxCreateControl](reference/composite-control-global-functions.md#atlaxcreatecontrol)|호스트 개체를 만들어 제공 된 창에 연결한 다음 컨트롤을 로드 합니다.|

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CString 사용'
 title: CString 사용
 ms.date: 06/18/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - CString objects, reference counting
 - CString class (Visual C++)
 ms.assetid: ed018aaf-8b10-46f9-828c-f9c092dc7609
-ms.openlocfilehash: 8ebf3441c7d8856fe412e2efed4c717b01ced362
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f0afea345f2a01d66cbb541aa2a6c958c28365a7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219016"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166397"
 ---
 # <a name="using-cstring"></a>CString 사용
 
@@ -23,7 +24,7 @@ ms.locfileid: "87219016"
 
 `CStringW`개체는 형식을 포함 **`wchar_t`** 하며 유니코드 문자열을 지원 합니다. `CStringA`개체는 형식을 포함 **`char`** 하며 싱글바이트 및 MBCS (멀티 바이트) 문자열을 지원 합니다. `CString`개체는 **`char`** **`wchar_t`** MBCS 기호 또는 유니코드 기호가 컴파일 타임에 정의 되었는지 여부에 따라 형식 또는 형식을 지원 합니다.
 
-`CString` 개체는 `CStringData` 개체에 문자 데이터를 보관합니다. `CString`NULL로 종료 되는 C 스타일 문자열을 허용 합니다. `CString`는 더 빠른 성능을 위해 문자열 길이를 추적 하지만 LPCWSTR로의 변환을 지원 하기 위해 저장 된 문자 데이터에 NULL 문자를 유지 합니다. `CString`C 스타일 문자열을 내보낼 때 null 종결자를 포함 합니다. 의 다른 위치에 NULL을 삽입할 수 `CString` 있지만 예기치 않은 결과가 발생할 수 있습니다.
+`CString` 개체는 `CStringData` 개체에 문자 데이터를 보관합니다. `CString` NULL로 종료 되는 C 스타일 문자열을 허용 합니다. `CString` 는 더 빠른 성능을 위해 문자열 길이를 추적 하지만 LPCWSTR로의 변환을 지원 하기 위해 저장 된 문자 데이터에 NULL 문자를 유지 합니다. `CString` C 스타일 문자열을 내보낼 때 null 종결자를 포함 합니다. 의 다른 위치에 NULL을 삽입할 수 `CString` 있지만 예기치 않은 결과가 발생할 수 있습니다.
 
 `CAtlString`, `CAtlStringA` 및 `CAtlStringW` 문자열 클래스 집합은 MFC 라이브러리에 연결하지 않고 사용할 수 있습니다(CRT 지원 포함/미포함).
 
