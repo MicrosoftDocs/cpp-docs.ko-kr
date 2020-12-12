@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4339'
 title: 컴파일러 경고(수준 4) C4339
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4339
 ms.assetid: 5b83353d-7777-4afb-8476-3c368349028c
-ms.openlocfilehash: e7c3f6f3a2cb9da9857d8336d24d57caf8114850
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: e05a7a73ac0cbbf056e5e30db0989e7fe933d01e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991211"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97294524"
 ---
 # <a name="compiler-warning-level-4-c4339"></a>컴파일러 경고(수준 4) C4339
 

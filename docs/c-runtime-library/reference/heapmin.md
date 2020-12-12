@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _heapmin'
 title: _heapmin
 ms.date: 4/2/2020
 api_name:
@@ -32,12 +33,12 @@ helpviewer_keywords:
 - _heapmin function
 - heapmin function
 ms.assetid: c0bccdf6-2d14-4d7b-a7ff-d6a17bdb410f
-ms.openlocfilehash: 9a98dfffc784d05a93f65a51a5250c31fe1dd596
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 06ec2d7b0269927d8d67c9fe7431f2f550728aae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920106"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97296448"
 ---
 # <a name="_heapmin"></a>_heapmin
 
@@ -51,13 +52,13 @@ int _heapmin( void );
 
 ## <a name="return-value"></a>Return Value
 
-성공 하면 **_heapmin** 는 0을 반환 합니다. 그렇지 않은 경우 함수는-1을 반환 하 고 **errno** 를 **ENOSYS**로 설정 합니다.
+성공 하면 **_heapmin** 는 0을 반환 합니다. 그렇지 않은 경우 함수는-1을 반환 하 고 **errno** 를 **ENOSYS** 로 설정 합니다.
 
 이러한 반환 코드 및 기타 반환 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하십시오.
 
 ## <a name="remarks"></a>설명
 
-**_Heapmin** 함수는 사용 되지 않는 힙 메모리를 운영 체제로 해제 하 여 힙을 최소화 합니다. 운영 체제에서 **_heapmin**(예: Windows 98)를 지원 하지 않는 경우 함수는-1을 반환 하 고 **errno** 를 **ENOSYS**로 설정 합니다.
+**_Heapmin** 함수는 사용 되지 않는 힙 메모리를 운영 체제로 해제 하 여 힙을 최소화 합니다. 운영 체제에서 **_heapmin**(예: Windows 98)를 지원 하지 않는 경우 함수는-1을 반환 하 고 **errno** 를 **ENOSYS** 로 설정 합니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -69,10 +70,10 @@ int _heapmin( void );
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [메모리 할당](../../c-runtime-library/memory-allocation.md)<br/>
-[늘릴](free.md)<br/>
+[free](free.md)<br/>
 [_heapadd](../../c-runtime-library/heapadd.md)<br/>
 [_heapchk](heapchk.md)<br/>
 [_heapset](../../c-runtime-library/heapset.md)<br/>

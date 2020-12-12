@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 링커 도구 경고 LNK4105'
 title: 링커 도구 경고 LNK4105
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4105
 ms.assetid: 6c7bebf4-4ea6-4533-a6ed-e563d43abbd7
-ms.openlocfilehash: 655a6dfde77984cd0c941ec0d8abb0c4d099c80f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6536273a0b3e5b6e60b782e5953a70a7b3eb2798
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80183295"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97294420"
 ---
 # <a name="linker-tools-warning-lnk4105"></a>링커 도구 경고 LNK4105
 
@@ -27,4 +28,4 @@ ms.locfileid: "80183295"
 link /libpath:c:\filepath\lib bar.obj
 ```
 
-는 기본 위치에서 검색 하기 전에 `c:\filepath\lib`에서 필요한 라이브러리를 검색 하도록 링커에 지시 합니다.
+는 `c:\filepath\lib` 기본 위치에서 검색 하기 전에에서 필요한 라이브러리를 검색 하도록 링커에 지시 합니다.

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4214'
 title: 컴파일러 경고(수준 4) C4214
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4214
 ms.assetid: 9b8db279-1f12-4a6b-a923-2db22acd1947
-ms.openlocfilehash: 70dadb7d424352fbde8c5904053b22fe7cc6b77e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: afc3f425f0d37b3fb3063d18cb514336271a30ae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80161284"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97297306"
 ---
 # <a name="compiler-warning-level-4-c4214"></a>컴파일러 경고(수준 4) C4214
 

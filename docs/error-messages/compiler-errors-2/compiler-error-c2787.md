@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2787'
 title: 컴파일러 오류 C2787
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2787
 ms.assetid: 34cb57e6-cafe-4ce7-bcc6-53d194629bd0
-ms.openlocfilehash: 00f2097dc556055f0becf1d81d784c9126c66f63
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 96a06908012e565bc606bf56f6a1709ee1f265a4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74739599"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97297812"
 ---
 # <a name="compiler-error-c2787"></a>컴파일러 오류 C2787
 

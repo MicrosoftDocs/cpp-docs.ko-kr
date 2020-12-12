@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CBookmark 클래스'
 title: CBookmark 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -66,12 +67,12 @@ helpviewer_keywords:
 - operator =, bookmarks
 - operator=, bookmarks
 ms.assetid: bc942f95-6f93-41d9-bb6e-bcdae4ae0b7a
-ms.openlocfilehash: 4013e40c364593676ebb099804304ffb2adb42c1
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 7c138776e282c287eb7e7e09b93196ac0792f7ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838479"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97295070"
 ---
 # <a name="cbookmark-class"></a>CBookmark 클래스
 
@@ -135,7 +136,7 @@ CBookmark(DBLENGTH nSize);
 
 ### <a name="remarks"></a>설명
 
-첫 번째 함수는 버퍼를 NULL로 설정 하 고 버퍼 크기를 0으로 설정 합니다. 두 번째 함수는 버퍼 크기를 *nSize*로 설정 하 고 버퍼를 *nSize* bytes의 바이트 배열로 설정 합니다.
+첫 번째 함수는 버퍼를 NULL로 설정 하 고 버퍼 크기를 0으로 설정 합니다. 두 번째 함수는 버퍼 크기를 *nSize* 로 설정 하 고 버퍼를 *nSize* bytes의 바이트 배열로 설정 합니다.
 
 > [!NOTE]
 > 이 함수는 에서만 사용할 수 있습니다 `CBookmark<0>` .
@@ -170,7 +171,7 @@ virtual DBLENGTH GetSize() const throw();
 
 ## <a name="cbookmarksetbookmark"></a><a name="setbookmark"></a> CBookmark:: SetBookmark
 
-*Pbuffer* 에서 참조 하는 책갈피 값을 버퍼에 복사 하 `CBookmark` 고 버퍼 크기를 *nSize*로 설정 합니다.
+*Pbuffer* 에서 참조 하는 책갈피 값을 버퍼에 복사 하 `CBookmark` 고 버퍼 크기를 *nSize* 로 설정 합니다.
 
 ### <a name="syntax"></a>구문
 

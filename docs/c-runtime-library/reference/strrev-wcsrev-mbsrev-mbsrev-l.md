@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: _strrev, _wcsrev, _mbsrev, _mbsrev_l'
 title: _strrev, _wcsrev, _mbsrev, _mbsrev_l
 ms.date: 4/2/2020
 api_name:
@@ -53,12 +54,12 @@ helpviewer_keywords:
 - tcsrev function
 - _tcsrev function
 ms.assetid: 87863e89-4fa0-421c-af48-25d8516fe72f
-ms.openlocfilehash: d0f03f84045d6fc036e6c8111da7b8484f2b8622
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: c3e1e0483220daca9182f6ee8a312dfc6589caf3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911172"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97296175"
 ---
 # <a name="_strrev-_wcsrev-_mbsrev-_mbsrev_l"></a>_strrev, _wcsrev, _mbsrev, _mbsrev_l
 
@@ -87,21 +88,21 @@ unsigned char *_mbsrev_l(
 
 ### <a name="parameters"></a>매개 변수
 
-*문자열*<br/>
+*str*<br/>
 순서를 반대로 바꿀 Null 종료 문자열입니다.
 
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 변경된 문자열에 대한 포인터를 반환합니다. 반환 값 없음은 오류를 나타내는 데 예약되어 있습니다.
 
 ## <a name="remarks"></a>설명
 
-**_Strrev** 함수는 *str*의 문자 순서를 반대로 바꿉니다. 종료 null 문자는 현재 위치에 유지됩니다. **_wcsrev** 및 **_mbsrev** 는 **_strrev**의 와이드 문자 및 멀티 바이트 문자 버전입니다. **_Wcsrev** 의 인수 및 반환 값은 와이드 문자 문자열입니다. **_mbsrev** 의 이러한 문자열은 멀티 바이트 문자열입니다. **_Mbsrev**의 경우 *str* 의 각 멀티 바이트 문자의 바이트 순서는 변경 되지 않습니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
+**_Strrev** 함수는 *str* 의 문자 순서를 반대로 바꿉니다. 종료 null 문자는 현재 위치에 유지됩니다. **_wcsrev** 및 **_mbsrev** 는 **_strrev** 의 와이드 문자 및 멀티 바이트 문자 버전입니다. **_Wcsrev** 의 인수 및 반환 값은 와이드 문자 문자열입니다. **_mbsrev** 의 이러한 문자열은 멀티 바이트 문자열입니다. **_Mbsrev** 의 경우 *str* 의 각 멀티 바이트 문자의 바이트 순서는 변경 되지 않습니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
 
-**_mbsrev** 은 해당 매개 변수의 유효성을 검사 합니다. *String1* 또는 *문자열* 하나가 Null 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 **_Mbsrev** **NULL** 을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다. **_strrev** 및 **_wcsrev** 는 매개 변수의 유효성을 검사 하지 않습니다.
+**_mbsrev** 은 해당 매개 변수의 유효성을 검사 합니다. *String1* 또는 *문자열* 하나가 Null 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 **_Mbsrev** **NULL** 을 반환 하 고 **errno** 를 **EINVAL** 로 설정 합니다. **_strrev** 및 **_wcsrev** 는 매개 변수의 유효성을 검사 하지 않습니다.
 
 출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따라 영향을 받습니다. 자세한 내용은 [setlocale, _wsetlocale를](setlocale-wsetlocale.md) 참조 하세요. **_L** 접미사가 없는 함수는 현재 로캘을 사용 하 고 **_l** 접미사가 있는 함수는 전달 된 로캘 매개 변수를 대신 사용 한다는 점을 제외 하 고 이러한 함수의 버전은 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
@@ -157,10 +158,10 @@ int main( void )
 The string "Able was I ere I saw Elba" is a palindrome
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [문자열 조작](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[멀티 바이트 문자 시퀀스 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[로캘](../../c-runtime-library/locale.md)<br/>
+[Multibyte-Character 시퀀스의 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strcpy, wcscpy, _mbscpy](strcpy-wcscpy-mbscpy.md)<br/>
 [_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)<br/>

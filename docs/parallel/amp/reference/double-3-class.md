@@ -1,4 +1,5 @@
 ---
+description: Double_3 클래스에 대해 자세히 알아보세요.
 title: double_3 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -72,12 +73,12 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::double_3::rbg
 - amp_short_vectors/Concurrency::graphics::double_3::get_yxz
 ms.assetid: baeb3ff0-2862-4c81-857e-b1a4c085be25
-ms.openlocfilehash: 981b3026e1efb6c3b4e06457a0eb1f986cdcaafa
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: ddda1c0e1d28a97f7e5fd5662a414a5c2d40909f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77126697"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97297111"
 ---
 # <a name="double_3-class"></a>double_3 클래스
 
@@ -89,116 +90,116 @@ ms.locfileid: "77126697"
 class double_3;
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 
-### <a name="public-typedefs"></a>공용 형식 정의
+### <a name="public-typedefs"></a>공용 Typedefs
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |value_type||
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[double_3 생성자](#ctor)|오버로드되었습니다. 기본 생성자는 0으로 모든 요소를 초기화 합니다.|
+|[double_3 생성자](#ctor)|오버로드됨. 기본 생성자는 0으로 모든 요소를 초기화 합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|double_3::get_x||
-|double_3::get_xy||
-|double_3::get_xyz||
-|double_3::get_xz||
-|double_3::get_xzy||
-|double_3::get_y||
-|double_3::get_yx||
-|double_3::get_yxz||
-|double_3::get_yz||
-|double_3::get_yzx||
-|double_3::get_z||
-|double_3::get_zx||
-|double_3::get_zxy||
-|double_3::get_zy||
-|double_3::get_zyx||
-|double_3::ref_b||
-|double_3::ref_g||
-|double_3::ref_r||
-|double_3::ref_x||
-|double_3::ref_y||
-|double_3::ref_z||
-|double_3::set_x||
-|double_3::set_xy||
-|double_3::set_xyz||
-|double_3::set_xz||
-|double_3::set_xzy||
-|double_3::set_y||
-|double_3::set_yx||
-|double_3::set_yxz||
-|double_3::set_yz||
-|double_3::set_yzx||
-|double_3::set_z||
-|double_3::set_zx||
-|double_3::set_zxy||
-|double_3::set_zy||
-|double_3::set_zyx||
+|double_3:: get_x||
+|double_3:: get_xy||
+|double_3:: get_xyz||
+|double_3:: get_xz||
+|double_3:: get_xzy||
+|double_3:: get_y||
+|double_3:: get_yx||
+|double_3:: get_yxz||
+|double_3:: get_yz||
+|double_3:: get_yzx||
+|double_3:: get_z||
+|double_3:: get_zx||
+|double_3:: get_zxy||
+|double_3:: get_zy||
+|double_3:: get_zyx||
+|double_3:: ref_b||
+|double_3:: ref_g||
+|double_3:: ref_r||
+|double_3:: ref_x||
+|double_3:: ref_y||
+|double_3:: ref_z||
+|double_3:: set_x||
+|double_3:: set_xy||
+|double_3:: set_xyz||
+|double_3:: set_xz||
+|double_3:: set_xzy||
+|double_3:: set_y||
+|double_3:: set_yx||
+|double_3:: set_yxz||
+|double_3:: set_yz||
+|double_3:: set_yzx||
+|double_3:: set_z||
+|double_3:: set_zx||
+|double_3:: set_zxy||
+|double_3:: set_zy||
+|double_3:: set_zyx||
 
 ### <a name="public-operators"></a>Public 연산자
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|double_3::operator-||
-|double_3::operator--||
-|double_3::operator*=||
-|double_3::operator/=||
-|double_3::operator++||
-|double_3::operator+=||
-|double_3::operator=||
-|double_3::operator-=||
+|double_3:: operator-||
+|double_3:: operator--||
+|double_3:: operator * =||
+|double_3:: operator/=||
+|double_3:: operator + +||
+|double_3:: operator + =||
+|double_3:: operator =||
+|double_3:: operator-=||
 
 ### <a name="public-constants"></a>공용 상수
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |[크기 상수](#double_3__size)||
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|double_3::b||
-|double_3::bg||
-|double_3::bgr||
-|double_3::br||
-|double_3::brg||
-|double_3::g||
-|double_3::gb||
-|double_3::gbr||
-|double_3::gr||
-|double_3::grb||
-|double_3::r||
-|double_3::rb||
-|double_3::rbg||
-|double_3::rg||
-|double_3::rgb||
-|double_3::x||
-|double_3::xy||
-|double_3::xyz||
-|double_3::xz||
-|double_3::xzy||
-|double_3::y||
-|double_3::yx||
-|double_3::yxz||
-|double_3::yz||
-|double_3::yzx||
-|double_3::z||
-|double_3::zx||
-|double_3::zxy||
-|double_3::zy||
-|double_3::zyx||
+|double_3:: b||
+|double_3:: bg||
+|double_3:: bgr로||
+|double_3:: br||
+|double_3:: brg||
+|double_3:: g||
+|double_3:: gb||
+|double_3:: gbr||
+|double_3:: gr||
+|double_3:: grb||
+|double_3:: r||
+|double_3:: rb||
+|double_3:: rbg||
+|double_3:: rg||
+|double_3:: rgb||
+|double_3:: x||
+|double_3:: xy||
+|double_3:: xyz||
+|double_3:: xz||
+|double_3:: xzy||
+|double_3:: y||
+|double_3:: yx||
+|double_3:: yxz||
+|double_3:: yz||
+|double_3:: yzx||
+|double_3:: z||
+|double_3:: zx||
+|double_3:: zxy||
+|double_3:: zy||
+|double_3:: zyx||
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `double_3`
 
@@ -208,7 +209,7 @@ class double_3;
 
 **네임 스페이스:** Concurrency:: graphics
 
-## <a name="ctor"></a>double_3
+## <a name="double_3"></a><a name="ctor"></a> double_3
 
 기본 생성자는 0으로 모든 요소를 초기화 합니다.
 
@@ -268,7 +269,7 @@ explicit inline double_3(
 *_Other*<br/>
 을 초기화 하는 데 사용 되는 개체입니다.
 
-## <a name="double_3__size"></a>크기가
+## <a name="size"></a><a name="double_3__size"></a> 크기가
 
 ```cpp
 static const int size = 3;

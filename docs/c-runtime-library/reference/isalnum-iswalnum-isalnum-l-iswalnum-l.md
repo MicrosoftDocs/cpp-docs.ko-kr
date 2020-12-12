@@ -1,4 +1,5 @@
 ---
+description: Isalnum, iswalnum, _isalnum_l, _iswalnum_l에 대해 자세히 알아보세요.
 title: isalnum, iswalnum, _isalnum_l, _iswalnum_l
 ms.date: 4/2/2020
 api_name:
@@ -43,12 +44,12 @@ helpviewer_keywords:
 - _istalnum_l function
 - _iswalnum_l function
 ms.assetid: 0dc51306-ade8-4944-af27-e4176fc89093
-ms.openlocfilehash: e32cdd2ad13ead282840e192e572757d759110f7
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: fbd1b686a02938317f36d7a9ec0e61c3fc2ae73f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919810"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97296383"
 ---
 # <a name="isalnum-iswalnum-_isalnum_l-_iswalnum_l"></a>isalnum, iswalnum, _isalnum_l, _iswalnum_l
 
@@ -71,9 +72,9 @@ int _iswalnum_l( wint_t c, _locale_t locale );
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-*C* 가 영숫자의 특정 표현인 경우 이러한 각 루틴은 0이 아닌 값을 반환 합니다. **isalnum** 는 *c*의 **isalpha** 또는 **isalpha** 가 0이 아닌 경우 즉, *c* 가 a-z, a-z 또는 0-9 범위 내에 있는 경우 0이 아닌 값을 반환 합니다. **iswalnum** 는 *c*에 대해 **iswalpha** 또는 **iswdigit** 가 0이 아닌 경우 0이 아닌 값을 반환 합니다. *C* 가 테스트 조건을 충족 하지 않는 경우 이러한 루틴은 각각 0을 반환 합니다.
+*C* 가 영숫자의 특정 표현인 경우 이러한 각 루틴은 0이 아닌 값을 반환 합니다. **isalnum** 는 *c* 의 **isalpha** 또는 **isalpha** 가 0이 아닌 경우 즉, *c* 가 a-z, a-z 또는 0-9 범위 내에 있는 경우 0이 아닌 값을 반환 합니다. **iswalnum** 는 *c* 에 대해 **iswalpha** 또는 **iswdigit** 가 0이 아닌 경우 0이 아닌 값을 반환 합니다. *C* 가 테스트 조건을 충족 하지 않는 경우 이러한 루틴은 각각 0을 반환 합니다.
 
 **_L** 접미사가 있는 이러한 함수 버전은 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
@@ -101,8 +102,8 @@ int _iswalnum_l( wint_t c, _locale_t locale );
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [문자 분류](../../c-runtime-library/character-classification.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
+[로캘](../../c-runtime-library/locale.md)<br/>
 [is, isw 루틴](../../c-runtime-library/is-isw-routines.md)<br/>

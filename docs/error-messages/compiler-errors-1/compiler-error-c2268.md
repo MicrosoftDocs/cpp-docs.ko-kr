@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2268'
 title: 컴파일러 오류 C2268
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2268
 ms.assetid: 0ed055c9-3c6f-4df2-a5b6-85cf0e01a249
-ms.openlocfilehash: 11e0c2c81e9bcd2249321e83a506aeaa832c2ee8
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 2ce70c43cc9365aebdf8441b916715ac67731c49
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75301797"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97295044"
 ---
 # <a name="compiler-error-c2268"></a>컴파일러 오류 C2268
 

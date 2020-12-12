@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 문자 비교'
 title: 문자 비교
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,32 +7,32 @@ helpviewer_keywords:
 - MBCS [C++], character comparison
 - characters [C++], comparing
 ms.assetid: 18846e44-3e6e-40c4-9b42-3153fb15db20
-ms.openlocfilehash: 075a22634f254c2ea634a1171ee157971fe5918e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0e00e087074a70145f1a73694293edc3c522d69f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410696"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97297007"
 ---
 # <a name="character-comparison"></a>문자 비교
 
-다음 팁을 사용하십시오.
+다음 팁을 사용 합니다.
 
-- 알려진 선행 바이트와 ASCII 문자 비교는 제대로 수행됩니다.
+- 알려진 선행 바이트를 ASCII 문자와 비교 하는 것이 올바르게 작동 합니다.
 
     ```cpp
     if( *sz1 == 'A' )
     ```
 
-- 두 개의 알 수 없는 문자를 비교하려면 Mbstring.h에 정의된 매크로 중 하나를 사용해야 합니다.
+- 두 개의 알 수 없는 문자를 비교 하려면 Mbstring에 정의 된 매크로 중 하나를 사용 해야 합니다.
 
     ```cpp
     if( !_mbccmp( sz1, sz2) )
     ```
 
-   이렇게 하면 더블바이트 문자의 바이트 두 개가 모두 비교됩니다.
+   이렇게 하면 더블 바이트 문자의 두 바이트를 같은지 비교할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[멀티바이트 문자 집합(MBCS) 프로그래밍 팁](../text/mbcs-programming-tips.md)<br/>
+[MBCS 프로그래밍 팁](../text/mbcs-programming-tips.md)<br/>
 [버퍼 오버플로](../text/buffer-overflow.md)

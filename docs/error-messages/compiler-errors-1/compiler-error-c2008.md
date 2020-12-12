@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2008'
 title: 컴파일러 오류 C2008
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2008
 ms.assetid: e748ccbe-ffd4-4008-aca7-e53c25225209
-ms.openlocfilehash: 292f5c6ab9a4e14077f848ff57ff08adefeb09a1
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 3fcde1885fd752a03a1285470a232f1daaa27df2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757334"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97298528"
 ---
 # <a name="compiler-error-c2008"></a>컴파일러 오류 C2008
 
@@ -26,7 +27,7 @@ ms.locfileid: "74757334"
 #define TEST1"mytest1"    // C2008
 ```
 
-가능한 해결 방법:
+해결 방법:
 
 ```cpp
 // C2008b.cpp

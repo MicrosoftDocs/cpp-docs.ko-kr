@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2788'
 title: 컴파일러 오류 C2788
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2788
 ms.assetid: 8688fc5c-e652-43b4-b407-9c488c76f2db
-ms.openlocfilehash: a708e711fd086d31ecd5e8cc9c35679571af48c4
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 8521df743e6c19f250d0344d4adf2299934887e4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74739573"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97297787"
 ---
 # <a name="compiler-error-c2788"></a>컴파일러 오류 C2788
 

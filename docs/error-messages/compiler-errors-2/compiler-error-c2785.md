@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2785'
 title: 컴파일러 오류 C2785
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2785
 ms.assetid: d8d13360-0d00-4815-8475-b49c7f0dc0f3
-ms.openlocfilehash: 6aff2e5c96e3c79fc748d8a95779d6a08647ab03
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: f40b652e30b30f0ef17426b547337352181383e0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74739625"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97297904"
 ---
 # <a name="compiler-error-c2785"></a>컴파일러 오류 C2785
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: MFC ActiveX 컨트롤: 최적화'
 title: 'MFC ActiveX 컨트롤: 최적화'
 ms.date: 09/12/2018
 helpviewer_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], active/inactive state
 - optimizing performance, ActiveX controls
 ms.assetid: 8b11f26a-190d-469b-b594-5336094a0109
-ms.openlocfilehash: b4e12889ca1bb5f4bb423a1f1ede1c396f8d60b5
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: db7fc1f1bdcdc3a3ffbf3b14d1809806389f0862
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615395"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97294108"
 ---
 # <a name="mfc-activex-controls-optimization"></a>MFC ActiveX 컨트롤: 최적화
 
@@ -42,26 +43,26 @@ Windows에는 OLE 개체에 대 한 두 가지 주요 단점이 있습니다. �
 |-------------------------------------------------------|------------|----------------------|
 |**표시 될 때 활성화** 확인란|지우기|[표시 될 때 활성화 옵션 해제](turning-off-the-activate-when-visible-option.md)|
 |**창 없는 활성화** 확인란|선택|[창 없는 활성화 제공](providing-windowless-activation.md)|
-|**잘리지 않는 장치 컨텍스트** 확인란|선택|[잘리지 않는 디바이스 컨텍스트 사용](using-an-unclipped-device-context.md)|
-|**깜빡임 없는 활성화** 확인란|선택|[깜빡임 없는 활성화 제공](providing-flicker-free-activation.md)|
-|**비활성 상태인 경우 마우스 포인터 알림** 확인란|선택|[비활성 상태 중 마우스 상호 작용 제공](providing-mouse-interaction-while-inactive.md)|
+|**잘리지 않는 장치 컨텍스트** 확인란|선택|[잘리지 않는 장치 컨텍스트 사용](using-an-unclipped-device-context.md)|
+|**깜빡임 없는 활성화** 확인란|선택|[Flicker-Free 활성화 제공](providing-flicker-free-activation.md)|
+|**비활성 상태인 경우 마우스 포인터 알림** 확인란|선택|[비활성 상태에서 마우스 상호 작용 제공](providing-mouse-interaction-while-inactive.md)|
 |**최적화 된 그리기 코드** 확인란|선택|[컨트롤 그리기 최적화](optimizing-control-drawing.md)|
 
 이러한 최적화를 구현 하는 멤버 함수에 대 한 자세한 내용은 [COleControl](reference/colecontrol-class.md)을 참조 하십시오.
 
 자세한 내용은 다음을 참조하세요.
 
-- [지속성 및 초기화 최적화](optimizing-persistence-and-initialization.md)
+- [지 속성 및 초기화 최적화](optimizing-persistence-and-initialization.md)
 
 - [창 없는 활성화 제공](providing-windowless-activation.md)
 
 - [표시 될 때 활성화 옵션 해제](turning-off-the-activate-when-visible-option.md)
 
-- [비활성 상태 중 마우스 상호 작용 제공](providing-mouse-interaction-while-inactive.md)
+- [비활성 상태에서 마우스 상호 작용 제공](providing-mouse-interaction-while-inactive.md)
 
-- [깜빡임 없는 활성화 제공](providing-flicker-free-activation.md)
+- [Flicker-Free 활성화 제공](providing-flicker-free-activation.md)
 
-- [잘리지 않는 디바이스 컨텍스트 사용](using-an-unclipped-device-context.md)
+- [잘리지 않는 장치 컨텍스트 사용](using-an-unclipped-device-context.md)
 
 - [컨트롤 그리기 최적화](optimizing-control-drawing.md)
 

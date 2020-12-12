@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: Concurrency::p recise_math 네임 스페이스 함수'
 title: Concurrency::precise_math 네임스페이스 함수
 ms.date: 11/04/2016
 f1_keywords:
@@ -90,12 +91,12 @@ f1_keywords:
 - amp_math/Concurrency::precise_math::trunc
 - amp_math/Concurrency::precise_math::truncf
 ms.assetid: fae53ab4-d1c5-45bb-a6a0-a74258e9aea3
-ms.openlocfilehash: 770946769c60f3dd689f5cd2defd6d4c6f6ed6b5
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 2b96c059e919e9085aa2c26d57042d4dc3188417
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836922"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97297163"
 ---
 # <a name="concurrencyprecise_math-namespace-functions"></a>Concurrency::precise_math 네임스페이스 함수
 
@@ -926,7 +927,7 @@ inline double expm1(double exponent) restrict(amp);
 ### <a name="parameters"></a>매개 변수
 
 *지수가*<br/>
-수학 식 n의 지 수 용어 *n* 입니다 `e` <sup>n</sup>. 여기서 `e` 는 자연 로그의 밑입니다.
+수학 식 n의 지 수 용어 *n* 입니다 `e` <sup></sup>. 여기서 `e` 는 자연 로그의 밑입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -943,7 +944,7 @@ inline float expm1f(float exponent) restrict(amp);
 ### <a name="parameters"></a>매개 변수
 
 *지수가*<br/>
-수학 식 n의 지 수 용어 *n* 입니다 `e` <sup>n</sup>. 여기서 `e` 는 자연 로그의 밑입니다.
+수학 식 n의 지 수 용어 *n* 입니다 `e` <sup></sup>. 여기서 `e` 는 자연 로그의 밑입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1315,7 +1316,7 @@ inline double fmod(
 
 ### <a name="return-value"></a>반환 값
 
-로 나눈 나머지, 즉 n의 `_X` `_Y` 값입니다 `_X`  -  `_Y` *n*. 여기서 *n* 은 n의 크기가 `_X`  -  `_Y` *n* 의 크기 보다 작음을 나타내는 `_Y` 정수입니다.
+로 나눈 나머지, 즉 n의 `_X` `_Y` 값입니다 `_X`  -  `_Y` . 여기서 *n* 은 n의 크기가 `_X`  -  `_Y`  의 크기 보다 작음을 나타내는 `_Y` 정수입니다.
 
 ## <a name="fmodf"></a><a name="fmodf"></a> fmodf
 
@@ -1337,7 +1338,7 @@ inline float fmodf(
 
 ### <a name="return-value"></a>반환 값
 
-로 나눈 나머지, 즉 n의 `_X` `_Y` 값입니다 `_X`  -  `_Y` *n*. 여기서 *n* 은 n의 크기가 `_X`  -  `_Y` *n* 의 크기 보다 작음을 나타내는 `_Y` 정수입니다.
+로 나눈 나머지, 즉 n의 `_X` `_Y` 값입니다 `_X`  -  `_Y` . 여기서 *n* 은 n의 크기가 `_X`  -  `_Y`  의 크기 보다 작음을 나타내는 `_Y` 정수입니다.
 
 ## <a name="fpclassify"></a><a name="fpclassify"></a> fpclassify
 

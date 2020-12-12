@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4296'
 title: 컴파일러 경고(수준 4) C4296
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4296
 ms.assetid: 9d99aafe-f6bd-4ee0-b8d0-98ce5712274d
-ms.openlocfilehash: 36412dd636816ce15b78edfc8bffdd5fb45963d6
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 995c332a0f1ee46c9df7081dd34a97b51de40ac6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991299"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97294537"
 ---
 # <a name="compiler-warning-level-4-c4296"></a>컴파일러 경고(수준 4) C4296
 

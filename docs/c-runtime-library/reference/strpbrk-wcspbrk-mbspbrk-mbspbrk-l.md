@@ -1,4 +1,5 @@
 ---
+description: Strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l에 대해 자세히 알아보세요.
 title: strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l
 ms.date: 4/2/2020
 api_name:
@@ -50,12 +51,12 @@ helpviewer_keywords:
 - _mbspbrk function
 - mbspbrk_l function
 ms.assetid: 80b504f7-a167-4dde-97ad-4ae3000dc810
-ms.openlocfilehash: fbde746cba02605be7fa42e941a30bfa02d0561a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2dd5da437ef0b6f9f319f3ba7a9543f7922bfd9c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231314"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97296253"
 ---
 # <a name="strpbrk-wcspbrk-_mbspbrk-_mbspbrk_l"></a>strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l
 
@@ -131,13 +132,13 @@ Null 종료 문자 집합입니다.
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-*Str*에서 *strcharset* 의 문자가 처음 나타나는 위치에 대 한 포인터를 반환 하거나, 두 문자열 인수에 공통 된 문자가 없는 경우 NULL 포인터를 반환 합니다.
+*Str* 에서 *strcharset* 의 문자가 처음 나타나는 위치에 대 한 포인터를 반환 하거나, 두 문자열 인수에 공통 된 문자가 없는 경우 NULL 포인터를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-`strpbrk`함수는 *strcharset*의 문자 집합에 속하는 *str* 의 첫 번째 문자에 대 한 포인터를 반환 합니다. 종료 null 문자는 검색에 포함되지 않습니다.
+`strpbrk`함수는 *strcharset* 의 문자 집합에 속하는 *str* 의 첫 번째 문자에 대 한 포인터를 반환 합니다. 종료 null 문자는 검색에 포함되지 않습니다.
 
 `wcspbrk` 및 `_mbspbrk` 는 `strpbrk`의 와이드 문자 및 멀티바이트 문자 버전입니다. `wcspbrk`의 인수 및 반환 값은 와이드 문자열이며 `_mbspbrk`의 인수와 반환 값은 멀티바이트 문자열입니다.
 
@@ -206,7 +207,7 @@ int main( void )
 
 [문자열 조작](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [로캘](../../c-runtime-library/locale.md)<br/>
-[멀티 바이트 문자 시퀀스 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Multibyte-Character 시퀀스의 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strcspn, wcscspn, _mbscspn, _mbscspn_l](strcspn-wcscspn-mbscspn-mbscspn-l.md)<br/>
 [strchr, wcschr, _mbschr, _mbschr_l](strchr-wcschr-mbschr-mbschr-l.md)<br/>
 [strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>

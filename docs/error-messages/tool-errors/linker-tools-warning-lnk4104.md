@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 링커 도구 경고 LNK4104'
 title: 링커 도구 경고 LNK4104
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4104
 ms.assetid: ca6728db-d616-419a-a570-65e8445c6079
-ms.openlocfilehash: 604dccf01b3dffc0060546bebf19d64c16ebf965
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ab48885a4a8d2806154d3a8911bdc65453359e2c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80193968"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97294433"
 ---
 # <a name="linker-tools-warning-lnk4104"></a>링커 도구 경고 LNK4104
 
 ' symbol ' 기호 내보내기는 PRIVATE 이어야 합니다.
 
-`symbol`은 다음 중 하나일 수 있습니다.
+는 `symbol` 다음 중 하나일 수 있습니다.
 
 - `DllCanUnloadNow`
 

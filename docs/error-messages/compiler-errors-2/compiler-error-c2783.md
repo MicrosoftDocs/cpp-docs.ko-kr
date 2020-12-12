@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2783'
 title: 컴파일러 오류 C2783
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2783
 ms.assetid: 1ce94a11-bb8b-4be3-a222-f1f105da74b3
-ms.openlocfilehash: adba87853bac764d4975d6b6fa9aa44940ced03c
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 671a1974f94ca9e31b83861c3e1b503762ca58d1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74739677"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97297969"
 ---
 # <a name="compiler-error-c2783"></a>컴파일러 오류 C2783
 

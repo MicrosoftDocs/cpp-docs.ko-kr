@@ -1,4 +1,5 @@
 ---
+description: Double_2 클래스에 대해 자세히 알아보세요.
 title: double_2 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -28,12 +29,12 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::double_2::g
 - amp_short_vectors/Concurrency::graphics::double_2::set_y
 ms.assetid: c19c2d21-3cbf-4ce5-b460-3b8253688f82
-ms.openlocfilehash: 73656415d1b8774fe8304d674872524e76ee301d
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 104fef0c035487570a23360c312684ef176f69ae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77126710"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97297131"
 ---
 # <a name="double_2-class"></a>double_2 클래스
 
@@ -49,66 +50,66 @@ class double_2;
 
 ### <a name="public-typedefs"></a>공용 Typedefs
 
-|name|설명|
+|Name|설명|
 |----------|-----------------|
 |`value_type`||
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
 |[double_2 생성자](#ctor)|오버로드됨. 기본 생성자는 0으로 모든 요소를 초기화 합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
-|double_2::get_x||
-|double_2::get_xy||
-|double_2::get_y||
-|double_2::get_yx||
-|double_2::ref_g||
-|double_2::ref_r||
-|double_2::ref_x||
-|double_2::ref_y||
-|double_2::set_x||
-|double_2::set_xy||
-|double_2::set_y||
-|double_2::set_yx||
+|double_2:: get_x||
+|double_2:: get_xy||
+|double_2:: get_y||
+|double_2:: get_yx||
+|double_2:: ref_g||
+|double_2:: ref_r||
+|double_2:: ref_x||
+|double_2:: ref_y||
+|double_2:: set_x||
+|double_2:: set_xy||
+|double_2:: set_y||
+|double_2:: set_yx||
 
 ### <a name="public-operators"></a>Public 연산자
 
-|name|설명|
+|Name|설명|
 |----------|-----------------|
-|double_2::operator-||
-|double_2::operator--||
-|double_2::operator*=||
-|double_2::operator/=||
-|double_2::operator++||
-|double_2::operator+=||
-|double_2::operator=||
-|double_2::operator-=||
+|double_2:: operator-||
+|double_2:: operator--||
+|double_2:: operator * =||
+|double_2:: operator/=||
+|double_2:: operator + +||
+|double_2:: operator + =||
+|double_2:: operator =||
+|double_2:: operator-=||
 
 ### <a name="public-constants"></a>공용 상수
 
-|name|설명|
+|Name|설명|
 |----------|-----------------|
 |double_2::size 상수||
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|name|설명|
+|Name|설명|
 |----------|-----------------|
-|double_2::g||
-|double_2::gr||
-|double_2::r||
-|double_2::rg||
-|double_2::x||
-|double_2::xy||
-|double_2::y||
-|double_2::yx||
+|double_2:: g||
+|double_2:: gr||
+|double_2:: r||
+|double_2:: rg||
+|double_2:: x||
+|double_2:: xy||
+|double_2:: y||
+|double_2:: yx||
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `double_2`
 
@@ -118,7 +119,7 @@ class double_2;
 
 **네임 스페이스:** Concurrency:: graphics
 
-## <a name="ctor"></a>double_2
+## <a name="double_2"></a><a name="ctor"></a> double_2
 
 기본 생성자는 0으로 모든 요소를 초기화 합니다.
 
@@ -174,7 +175,7 @@ explicit inline double_2(
 *_Other*<br/>
 을 초기화 하는 데 사용 되는 개체입니다.
 
-## <a name="double_2__size"></a>크기가
+## <a name="size"></a><a name="double_2__size"></a> 크기가
 
 ```cpp
 static const int size = 2;

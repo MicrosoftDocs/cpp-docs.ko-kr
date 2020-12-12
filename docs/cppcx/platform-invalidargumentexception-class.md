@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Platform:: InvalidArgumentException 클래스'
 title: Platform::InvalidArgumentException 클래스
 ms.date: 12/30/2016
 ms.topic: reference
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::InvalidArgumentException
 ms.assetid: 1a8d860b-3bcb-41a9-9346-6610616a0b46
-ms.openlocfilehash: 1cc4b87ded26807066c81e5da6935548d1a5ad26
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 04d20a1e119aa4ffab0da498a9532c9acd4433b3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384961"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97295252"
 ---
 # <a name="platforminvalidargumentexception-class"></a>Platform::InvalidArgumentException 클래스
 
@@ -35,10 +36,10 @@ public ref class InvalidArgumentException : COMException,    IException,    IPri
 
 **지원 되는 최소 서버:** Windows Server 2012
 
-**네임스페이스:** 플랫폼
+**네임스페이스:** Platform
 
-**메타데이터:** platform.winmd
+**메타 데이터:** platform.object
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[Platform::COMException 클래스](../cppcx/platform-comexception-class.md)
+[Platform:: COMException 클래스](../cppcx/platform-comexception-class.md)
