@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4548'
 title: 컴파일러 경고(수준 1) C4548
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4548
 ms.assetid: 2cee817e-e463-4d90-bbd2-de120d48c101
-ms.openlocfilehash: 3770810ae4b2e8550fa79db27b58c581414316b5
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 7c0f88f6516b1069fa9ef13e56c5ca043f627820
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80186233"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97266002"
 ---
 # <a name="compiler-warning-level-1-c4548"></a>컴파일러 경고(수준 1) C4548
 

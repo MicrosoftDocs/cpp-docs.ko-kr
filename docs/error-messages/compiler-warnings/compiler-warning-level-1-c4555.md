@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4555'
 title: 컴파일러 경고(수준 1) C4555
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4555
 ms.assetid: 50b286c1-f7bf-4292-b1fa-baaac9538611
-ms.openlocfilehash: fb3373178ebb53d7b14228a361fcc2f0a08c873b
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e6ef8f5698364e0186dbf6cbf623af96ef2bf7d3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80162363"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97265846"
 ---
 # <a name="compiler-warning-level-1-c4555"></a>컴파일러 경고(수준 1) C4555
 
@@ -21,7 +22,7 @@ ms.locfileid: "80162363"
 
 기본적으로 이 경고는 해제되어 있습니다. 자세한 내용은 [기본적으로 해제되어 있는 컴파일러 경고](../../preprocessor/compiler-warnings-that-are-off-by-default.md) 를 참조하세요.
 
-다음은 그 예입니다.
+예를 들어:
 
 ```cpp
 // C4555.cpp

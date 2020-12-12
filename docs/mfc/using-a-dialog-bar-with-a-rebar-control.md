@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Rebar 컨트롤에 대화 상자 모음 사용'
 title: 대화 상자 모음과 Rebar 컨트롤 함께 사용
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - rebar controls [MFC], dialog bars
 - dialog bars [MFC], using with rebar bands
 ms.assetid: e528cea0-6b81-4bdf-9643-7c03b6176590
-ms.openlocfilehash: e4e786d3670ec74b734739e29aa7e3e33b5af384
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 97fb8ca5c356d91fa4b4ba44753fbdc9bf298435
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75302369"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97263532"
 ---
 # <a name="using-a-dialog-bar-with-a-rebar-control"></a>대화 상자 모음과 Rebar 컨트롤 함께 사용
 
@@ -23,7 +24,7 @@ ms.locfileid: "75302369"
 
 ### <a name="to-implement-a-transparent-dialog-bar-in-a-rebar-band"></a>Rebar 밴드에서 투명 대화 상자를 구현 하려면
 
-1. [클래스 추가 대화 상자](../mfc/reference/adding-an-mfc-class.md)를 사용 하 여 대화 상자 표시줄 개체를 구현 하는 새 클래스 (예: `CMyDlgBar`)를 추가 합니다.
+1. [클래스 추가 대화 상자](../mfc/reference/adding-an-mfc-class.md)를 사용 하 여 `CMyDlgBar` 대화 상자 표시줄 개체를 구현 하는 새 클래스 (예:)를 추가 합니다.
 
 1. WM_ERASEBKGND 메시지에 대 한 처리기를 추가 합니다.
 
@@ -39,7 +40,7 @@ ms.locfileid: "75302369"
 
 새 처리기는 WM_ERASEBKGND 메시지를 부모 창으로 전달 하 고 대화 상자 표시줄 개체가 이동 될 때마다 강제로 다시 그리기를 수행 하 여 대화 상자의 투명도를 시뮬레이션 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [CReBarCtrl 사용](../mfc/using-crebarctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)

@@ -1,5 +1,6 @@
 ---
-title: CResource예외 클래스
+description: '자세한 정보: CResourceException 클래스'
+title: CResourceException 클래스
 ms.date: 11/04/2016
 f1_keywords:
 - CResourceException
@@ -8,14 +9,14 @@ f1_keywords:
 helpviewer_keywords:
 - CResourceException [MFC], CResourceException
 ms.assetid: af6ae043-d124-4bfd-b35e-7bb0db67d289
-ms.openlocfilehash: 557bfe1cc41c3dda65bd95d7d687820c0b9862b7
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: c76635ae2cfa6c55bf54da7e73f6afbb44506fee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368324"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97264871"
 ---
-# <a name="cresourceexception-class"></a>CResource예외 클래스
+# <a name="cresourceexception-class"></a>CResourceException 클래스
 
 Windows에서 요청된 리소스를 찾거나 할당할 수 없을 경우 발생합니다.
 
@@ -29,15 +30,15 @@ class CResourceException : public CSimpleException
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[C리소스 예외::C리소스 예외](#cresourceexception)|`CResourceException` 개체를 생성합니다.|
+|[CResourceException:: CResourceException](#cresourceexception)|`CResourceException` 개체를 생성합니다.|
 
 ## <a name="remarks"></a>설명
 
-더 이상의 자격이 필요하지 않거나 불가능합니다.
+더 이상 정규화를 수행할 필요가 없습니다.
 
-사용에 `CResourceException`대한 자세한 내용은 [MFC(예외 처리)](../../mfc/exception-handling-in-mfc.md)문서를 참조하십시오.
+사용에 대 한 자세한 내용은 `CResourceException` [예외 처리 (MFC)](../../mfc/exception-handling-in-mfc.md)문서를 참조 하세요.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -53,7 +54,7 @@ class CResourceException : public CSimpleException
 
 **헤더:** afxwin.h
 
-## <a name="cresourceexceptioncresourceexception"></a><a name="cresourceexception"></a>C리소스 예외::C리소스 예외
+## <a name="cresourceexceptioncresourceexception"></a><a name="cresourceexception"></a> CResourceException:: CResourceException
 
 `CResourceException` 개체를 생성합니다.
 
@@ -63,7 +64,7 @@ CResourceException();
 
 ### <a name="remarks"></a>설명
 
-이 생성자는 직접 사용하지 말고 전역 함수 [AfxThrowResourceException을](exception-processing.md#afxthrowresourceexception)호출합니다. 예외에 대한 자세한 내용은 [MFC의 예외 처리](../exception-handling-in-mfc.md)문서를 참조하십시오.
+이 생성자는 직접 사용 하지 말고 [AfxThrowResourceException](exception-processing.md#afxthrowresourceexception)전역 함수를 호출 합니다. 예외에 대 한 자세한 내용은 [MFC의 예외 처리](../exception-handling-in-mfc.md)문서를 참조 하세요.
 
 ## <a name="see-also"></a>참고 항목
 

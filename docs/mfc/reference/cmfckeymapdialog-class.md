@@ -1,5 +1,6 @@
 ---
-title: CMFC키맵디아로그 클래스
+description: '자세한 정보: CMFCKeyMapDialog 클래스'
+title: CMFCKeyMapDialog 클래스
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCKeyMapDialog
@@ -26,16 +27,16 @@ helpviewer_keywords:
 - CMFCKeyMapDialog [MFC], PrintKeyMap
 - CMFCKeyMapDialog [MFC], SetColumnsWidth
 ms.assetid: 5feb4942-d636-462d-a162-0104dd320f4e
-ms.openlocfilehash: 22aa006ce214ca720192bb761e2ff2b35a64fce3
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: e339edb54b9c381dd2b27c9ee3ec7566308ae434
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81374409"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97265235"
 ---
-# <a name="cmfckeymapdialog-class"></a>CMFC키맵디아로그 클래스
+# <a name="cmfckeymapdialog-class"></a>CMFCKeyMapDialog 클래스
 
-클래스는 `CMFCKeyMapDialog` 키보드의 키에 명령을 매핑하는 컨트롤을 지원합니다.
+`CMFCKeyMapDialog`클래스는 명령을 키보드의 키에 매핑하는 컨트롤을 지원 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -47,34 +48,34 @@ class CMFCKeyMapDialog : public CDialogEx
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[CMFC키맵디아로그::CMFC키맵디아로그](#cmfckeymapdialog)|`CMFCKeyMapDialog` 개체를 생성합니다.|
+|[CMFCKeyMapDialog:: CMFCKeyMapDialog](#cmfckeymapdialog)|`CMFCKeyMapDialog` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[CMFC키맵디아로그::DoModal](#domodal)|키보드 매핑 대화 상자를 표시합니다.|
+|[CMFCKeyMapDialog::D oModal](#domodal)|키보드 매핑 대화 상자를 표시 합니다.|
 
 ### <a name="protected-methods"></a>Protected 메서드
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|[CMFC키맵 디아로그::형식항목](#formatitem)|키 매핑을 설명하는 문자열을 빌드하기 위해 프레임워크에서 호출합니다. 기본적으로 문자열에는 명령 이름, 사용된 바로 가기 키 및 바로 가기 키 설명이 포함됩니다.|
-|[CMFC키맵디아로그::GetCommand키](#getcommandkeys)|지정된 명령과 연결된 바로 가기 키 목록이 포함된 문자열을 검색합니다.|
-|[CMFC키맵 디아로그::온인서인스아이템](#oninsertitem)|새 항목이 키보드 매핑 컨트롤을 지원하는 내부 목록 컨트롤에 삽입되기 전에 프레임워크에서 호출됩니다.|
-|[CMFC키맵디아로그::온프린트헤더](#onprintheader)|새 페이지에서 키보드 맵의 헤더를 인쇄하려면 프레임워크에서 호출합니다.|
-|[CMFC키맵 디아로그::온프린트항목](#onprintitem)|키보드 매핑 항목을 인쇄하는 프레임워크에서 호출합니다.|
-|[CMFC키맵 디아로그::온셋열](#onsetcolumns)|키보드 매핑 컨트롤을 지원하는 내부 목록 컨트롤의 열에 대한 캡션을 설정하기 위해 프레임워크에서 호출합니다.|
-|[CMFC키맵디아로그::P린트키맵](#printkeymap)|사용자가 **인쇄** 단추를 클릭할 때 프레임워크에서 호출됩니다.|
-|[CMFC키맵 디아로그::세트열너비](#setcolumnswidth)|키보드 매핑 컨트롤을 지원하는 내부 목록 컨트롤에서 열의 너비를 설정하기 위해 프레임워크에서 호출합니다.|
+|[CMFCKeyMapDialog:: FormatItem](#formatitem)|키 매핑을 설명 하는 문자열을 빌드하기 위해 프레임 워크에서 호출 됩니다. 기본적으로 문자열에는 명령 이름, 사용 된 바로 가기 키 및 바로 가기 키 설명이 포함 되어 있습니다.|
+|[CMFCKeyMapDialog:: GetCommandKeys](#getcommandkeys)|지정 된 명령과 연결 된 바로 가기 키의 목록을 포함 하는 문자열을 검색 합니다.|
+|[CMFCKeyMapDialog:: OnInsertItem](#oninsertitem)|새 항목이 키보드 매핑 컨트롤을 지 원하는 내부 목록 컨트롤에 삽입 되기 전에 프레임 워크에서 호출 됩니다.|
+|[CMFCKeyMapDialog:: OnPrintHeader](#onprintheader)|새 페이지에서 키보드 맵에 대 한 헤더를 인쇄 하기 위해 프레임 워크에서 호출 됩니다.|
+|[CMFCKeyMapDialog:: OnPrintItem](#onprintitem)|키보드 매핑 항목을 인쇄 하기 위해 프레임 워크에서 호출 됩니다.|
+|[CMFCKeyMapDialog:: OnSetColumns](#onsetcolumns)|키보드 매핑 컨트롤을 지 원하는 내부 목록 컨트롤의 열에 대해 캡션을 설정 하기 위해 프레임 워크에서 호출 됩니다.|
+|[CMFCKeyMapDialog::P rintKeyMap](#printkeymap)|사용자가 **인쇄** 단추를 클릭할 때 프레임 워크에서 호출 됩니다.|
+|[CMFCKeyMapDialog:: Set\-width](#setcolumnswidth)|키보드 매핑 컨트롤을 지 원하는 내부 목록 컨트롤의 열 너비를 설정 하기 위해 프레임 워크에서 호출 됩니다.|
 
 ## <a name="remarks"></a>설명
 
-클래스를 `CMFCKeyMapDialog` 사용하여 식용 키보드 매핑 대화 상자를 구현합니다. 대화 상자는 목록 보기 컨트롤을 사용하여 키보드 단축키와 관련 명령을 표시합니다.
+클래스를 사용 `CMFCKeyMapDialog` 하 여 크기 조정 가능한 키보드 매핑 대화 상자를 구현 합니다. 대화 상자는 목록 뷰 컨트롤을 사용 하 여 바로 가기 키와 관련 된 명령을 표시 합니다.
 
-응용 프로그램에서 `CMFCKeyMapDialog` 클래스를 사용하려면 포인터를 주 프레임 창에 생성자의 `CMFCKeyMapDialog` 매개 변수로 전달합니다. 그런 다음 `DoModal` 메서드를 호출하여 모달 대화 상자를 시작합니다.
+`CMFCKeyMapDialog`응용 프로그램에서 클래스를 사용 하려면 주 프레임 창에 대 한 포인터를 생성자에 대 한 매개 변수로 전달 `CMFCKeyMapDialog` 합니다. 그런 다음 메서드를 호출 `DoModal` 하 여 모달 대화 상자를 시작 합니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -92,9 +93,9 @@ class CMFCKeyMapDialog : public CDialogEx
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxkeymapdialog.h
+**헤더:** afxkeymapdialog
 
-## <a name="cmfckeymapdialogcmfckeymapdialog"></a><a name="cmfckeymapdialog"></a>CMFC키맵디아로그::CMFC키맵디아로그
+## <a name="cmfckeymapdialogcmfckeymapdialog"></a><a name="cmfckeymapdialog"></a> CMFCKeyMapDialog:: CMFCKeyMapDialog
 
 `CMFCKeyMapDialog` 개체를 생성합니다.
 
@@ -106,39 +107,39 @@ CMFCKeyMapDialog(
 
 ### <a name="parameters"></a>매개 변수
 
-*pWnd부모프레임*<br/>
-【인】 개체의 상위 창에 `CMFCKeyMapDialog` 대한 포인터입니다.
+*pWndParentFrame*<br/>
+진행 개체의 부모 창에 대 한 포인터 `CMFCKeyMapDialog` 입니다.
 
-*b인가능하게 인쇄*<br/>
-【인】 TRUE 가속기 키 목록을 인쇄할 수 있는 경우; 그렇지 않으면 false입니다. 기본값은 FALSE입니다.
+*베 프린트*<br/>
+진행 액셀러레이터 키 목록을 인쇄할 수 있으면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다. 기본값은 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 `CMFCKeyMapDialog` 클래스의 개체를 생성 하는 방법을 보여 줍니다. 이 예제는 [Visual Studio 데모 샘플의](../../overview/visual-cpp-samples.md)일부입니다.
+다음 예제에서는 클래스의 개체를 생성 하는 방법을 보여 줍니다 `CMFCKeyMapDialog` . 이 예제는 [Visual Studio Demo 샘플](../../overview/visual-cpp-samples.md)의 일부입니다.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#21](../../mfc/codesnippet/cpp/cmfckeymapdialog-class_1.cpp)]
 
-## <a name="cmfckeymapdialogdomodal"></a><a name="domodal"></a>CMFC키맵디아로그::DoModal
+## <a name="cmfckeymapdialogdomodal"></a><a name="domodal"></a> CMFCKeyMapDialog::D oModal
 
-키보드 매핑 대화 상자를 표시합니다.
+키보드 매핑 대화 상자를 표시 합니다.
 
 ```
 virtual INT_PTR DoModal();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-IDOK 또는 IDCANCEL과 같은 서명된 정수는 [CDialog::EndDialog](../../mfc/reference/cdialog-class.md#enddialog) 메서드에 전달됩니다. 메서드는 차례로 대화 상자를 닫습니다. 자세한 내용은 [CDialog::DoModal](../../mfc/reference/cdialog-class.md#domodal)을 참조하십시오.
+IDOK 또는 IDCANCEL와 같이 [CDialog:: EndDialog](../../mfc/reference/cdialog-class.md#enddialog) 메서드에 전달 되는 부호 있는 정수입니다. 그런 다음 메서드는 대화 상자를 닫습니다. 자세한 내용은 [CDialog::D oModal](../../mfc/reference/cdialog-class.md#domodal)을 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
-키보드 매핑 대화 상자를 사용하면 다양한 명령 범주에 가속기 키를 선택하고 할당할 수 있습니다. 또한 선택한 가속기 키와 설명을 클립보드에 복사할 수 있습니다.
+키보드 매핑 대화 상자를 사용 하 여 다양 한 범주의 명령에 액셀러레이터 키를 선택 하 고 할당할 수 있습니다. 또한 선택한 액셀러레이터 키와 해당 설명을 클립보드에 복사할 수 있습니다.
 
-## <a name="cmfckeymapdialogformatitem"></a><a name="formatitem"></a>CMFC키맵 디아로그::형식항목
+## <a name="cmfckeymapdialogformatitem"></a><a name="formatitem"></a> CMFCKeyMapDialog:: FormatItem
 
-키 매핑을 설명하는 문자열을 빌드하기 위해 프레임워크에서 호출합니다. 기본적으로 문자열에는 명령 이름, 사용된 바로 가기 키 및 바로 가기 키 설명이 포함됩니다.
+키 매핑을 설명 하는 문자열을 빌드하기 위해 프레임 워크에서 호출 됩니다. 기본적으로 문자열에는 명령 이름, 사용 된 바로 가기 키 및 바로 가기 키 설명이 포함 되어 있습니다.
 
 ```
 virtual CString FormatItem(int nItem) const;
@@ -147,17 +148,17 @@ virtual CString FormatItem(int nItem) const;
 ### <a name="parameters"></a>매개 변수
 
 *nItem*<br/>
-【인】 키 매핑의 내부 목록에서 항목의 0기반 인덱스입니다.
+진행 키 매핑의 내부 목록에 있는 항목의 인덱스 (0부터 시작)입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-서식이 지정된 항목 텍스트가 포함된 `CString` 개체입니다.
+`CString`서식이 지정 된 항목 텍스트를 포함 하는 개체입니다.
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfckeymapdialoggetcommandkeys"></a><a name="getcommandkeys"></a>CMFC키맵디아로그::GetCommand키
+## <a name="cmfckeymapdialoggetcommandkeys"></a><a name="getcommandkeys"></a> CMFCKeyMapDialog:: GetCommandKeys
 
-문자열 값을 검색합니다. 문자열에는 지정된 명령과 연결된 바로 가기 키 목록이 포함되어 있습니다.
+문자열 값을 검색 합니다. 문자열에는 지정 된 명령과 연결 된 바로 가기 키의 목록이 포함 되어 있습니다.
 
 ```
 virtual CString GetCommandKeys(UINT uiCmdID) const;
@@ -166,17 +167,17 @@ virtual CString GetCommandKeys(UINT uiCmdID) const;
 ### <a name="parameters"></a>매개 변수
 
 *uiCmdID*<br/>
-【인】 명령 ID입니다.
+진행 명령 ID입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-지정된 명령과 연결된 바로 가기 키의 세미콜론 구분(';') 목록입니다.
+지정 된 명령과 연결 된 바로 가기 키의 세미콜론으로 구분 된 ('; ') 목록입니다.
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfckeymapdialogoninsertitem"></a><a name="oninsertitem"></a>CMFC키맵 디아로그::온인서인스아이템
+## <a name="cmfckeymapdialogoninsertitem"></a><a name="oninsertitem"></a> CMFCKeyMapDialog:: OnInsertItem
 
-새 항목이 키보드 매핑 컨트롤을 지원하는 내부 목록 컨트롤에 삽입되기 전에 프레임워크에서 호출됩니다.
+새 항목이 키보드 매핑 컨트롤을 지 원하는 내부 목록 컨트롤에 삽입 되기 전에 프레임 워크에서 호출 됩니다.
 
 ```
 virtual void OnInsertItem(
@@ -186,17 +187,17 @@ virtual void OnInsertItem(
 
 ### <a name="parameters"></a>매개 변수
 
-*p 버튼*<br/>
-【인】 명령 이름 및 설명에 키보드 키 조합을 매핑하는 데 사용되는 도구 모음 단추에 대한 포인터입니다. 키 맵 항목은 내부 목록 컨트롤에 저장됩니다.
+*pButton*<br/>
+진행 키보드 키 조합을 명령 이름과 설명에 매핑하는 데 사용 되는 도구 모음 단추에 대 한 포인터입니다. 키 맵 항목은 내부 목록 컨트롤에 저장 됩니다.
 
 *nItem*<br/>
-【인】 내부 목록 컨트롤에 새 키 맵 항목을 삽입할 위치를 지정하는 0기반 인덱스입니다.
+진행 내부 목록 컨트롤에 새 키 맵 항목을 삽입할 위치를 지정 하는 인덱스 (0부터 시작)입니다.
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfckeymapdialogonprintheader"></a><a name="onprintheader"></a>CMFC키맵디아로그::온프린트헤더
+## <a name="cmfckeymapdialogonprintheader"></a><a name="onprintheader"></a> CMFCKeyMapDialog:: OnPrintHeader
 
-새 페이지에서 키보드 맵의 헤더를 인쇄하려면 프레임워크에서 호출합니다.
+새 페이지에서 키보드 맵에 대 한 헤더를 인쇄 하기 위해 프레임 워크에서 호출 됩니다.
 
 ```
 virtual int OnPrintHeader(
@@ -207,26 +208,26 @@ virtual int OnPrintHeader(
 
 ### <a name="parameters"></a>매개 변수
 
-*Dc*<br/>
-【인】 프린터의 장치 컨텍스트입니다.
+*dc*<br/>
+진행 프린터에 대 한 장치 컨텍스트입니다.
 
-*n페이지*<br/>
-【인】 인쇄할 페이지 번호입니다.
+*nPage*<br/>
+진행 인쇄할 페이지 번호입니다.
 
-*Cx*<br/>
-【인】 헤더의 가로 오프셋(픽셀 단위)입니다.
+*cx*<br/>
+진행 헤더의 가로 오프셋 (픽셀)입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-성공하면 인쇄된 텍스트의 높이입니다. 자세한 내용은 [CDC::DrawText의](../../mfc/reference/cdc-class.md#drawtext)반환 값 섹션을 참조하십시오.
+성공 하면 인쇄 된 텍스트의 높이입니다. 자세한 내용은 [CDC::D rawtext](../../mfc/reference/cdc-class.md#drawtext)의 반환 값 섹션을 참조 하십시오.
 
 ### <a name="remarks"></a>설명
 
-프레임워크는 이 메서드를 사용하여 키보드 맵을 인쇄합니다. 기본적으로 이 메서드는 페이지 번호, 응용 프로그램 이름 및 대화 상자 제목을 인쇄합니다.
+프레임 워크는이 메서드를 사용 하 여 키보드 맵을 인쇄 합니다. 기본적으로이 메서드는 페이지 번호, 응용 프로그램 이름 및 대화 상자 제목을 인쇄 합니다.
 
-## <a name="cmfckeymapdialogonprintitem"></a><a name="onprintitem"></a>CMFC키맵 디아로그::온프린트항목
+## <a name="cmfckeymapdialogonprintitem"></a><a name="onprintitem"></a> CMFCKeyMapDialog:: OnPrintItem
 
-키보드 매핑 항목을 인쇄하는 프레임워크에서 호출합니다.
+키보드 매핑 항목을 인쇄 하기 위해 프레임 워크에서 호출 됩니다.
 
 ```
 virtual int OnPrintItem(
@@ -239,32 +240,32 @@ virtual int OnPrintItem(
 
 ### <a name="parameters"></a>매개 변수
 
-*Dc*<br/>
-【인】 프린터의 장치 컨텍스트입니다.
+*dc*<br/>
+진행 프린터의 장치 컨텍스트입니다.
 
 *nItem*<br/>
-【인】 인쇄할 항목의 0기반 인덱스입니다.
+진행 인쇄할 항목의 인덱스 (0부터 시작)입니다.
 
-*Y*<br/>
-【인】 페이지 상단과 항목의 위치 사이의 세로 간격띄우기입니다.
+*y*<br/>
+진행 페이지의 위쪽과 항목의 위치 사이의 세로 오프셋입니다.
 
-*Cx*<br/>
-【인】 페이지 왼쪽과 항목의 위치 사이의 가로 간격띄우기입니다.
+*cx*<br/>
+진행 페이지의 왼쪽과 항목의 위치 사이의 가로 오프셋입니다.
 
-*bCalc높이 높이*<br/>
-【인】 TRUE인쇄 항목에 대한 최적의 높이를 계산합니다. 기본 공간에 맞도록 인쇄 항목을 잘립니다.
+*bCalcHeight*<br/>
+진행 인쇄 항목의 최적 높이를 계산 하려면 TRUE로 설정 합니다. FALSE 이면 인쇄 항목이 기본 공간에 맞게 잘립니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-인쇄된 항목의 높이입니다.
+인쇄 된 항목의 높이입니다.
 
 ### <a name="remarks"></a>설명
 
-프레임워크는 이 메서드를 호출하여 키 맵 대화 상자 항목을 인쇄합니다. 기본적으로 이 메서드는 항목의 명령 이름, 바로 가기 키 및 명령 설명을 인쇄합니다.
+프레임 워크는이 메서드를 호출 하 여 키 맵 대화 상자 항목을 인쇄 합니다. 기본적으로이 메서드는 항목의 명령 이름, 바로 가기 키 및 명령 설명을 인쇄 합니다.
 
-## <a name="cmfckeymapdialogonsetcolumns"></a><a name="onsetcolumns"></a>CMFC키맵 디아로그::온셋열
+## <a name="cmfckeymapdialogonsetcolumns"></a><a name="onsetcolumns"></a> CMFCKeyMapDialog:: OnSetColumns
 
-키보드 매핑 컨트롤을 지원하는 내부 목록 컨트롤의 열에 대한 캡션을 설정하기 위해 프레임워크에서 호출합니다.
+키보드 매핑 컨트롤을 지 원하는 내부 목록 컨트롤의 열에 대해 캡션을 설정 하기 위해 프레임 워크에서 호출 됩니다.
 
 ```
 virtual void OnSetColumns();
@@ -272,11 +273,11 @@ virtual void OnSetColumns();
 
 ### <a name="remarks"></a>설명
 
-기본적으로 이 메서드는 세 개의 리소스에서 열에 대 한 캡션을 가져옵니다. 명령 열 캡션은 IDS_AFXBARRES_COMMAND, 키 열 캡션은 IDS_AFXBARRES_KEYS, 설명 열 캡션은 IDS_AFXBARRES_DESCRIPTION.
+기본적으로이 메서드는 세 리소스에서 열의 캡션을 가져옵니다. 명령 열 캡션은 IDS_AFXBARRES_COMMAND에서, 키 열 캡션은 IDS_AFXBARRES_KEYS에서, 설명 열 캡션은 IDS_AFXBARRES_DESCRIPTION에서 가져온 것입니다.
 
-## <a name="cmfckeymapdialogprintkeymap"></a><a name="printkeymap"></a>CMFC키맵디아로그::P린트키맵
+## <a name="cmfckeymapdialogprintkeymap"></a><a name="printkeymap"></a> CMFCKeyMapDialog::P rintKeyMap
 
-사용자가 **인쇄** 단추를 클릭할 때 프레임워크에서 호출됩니다.
+사용자가 **인쇄** 단추를 클릭할 때 프레임 워크에서 호출 됩니다.
 
 ```
 virtual void PrintKeyMap();
@@ -284,11 +285,11 @@ virtual void PrintKeyMap();
 
 ### <a name="remarks"></a>설명
 
-메서드는 `PrintKeyMap` 키 맵을 인쇄합니다. 새 인쇄 작업을 시작한 다음 모든 키 매핑이 인쇄될 때까지 [CMFCKeyMapDialog::OnPrintHeader](#onprintheader) 및 [CMFCKeyMapDialog::OnPrintItem](#onprintitem) 메서드를 반복적으로 호출합니다.
+`PrintKeyMap`메서드는 키 맵을 인쇄 합니다. 새 인쇄 작업을 시작한 다음 모든 키 매핑이 인쇄 될 때까지 [Cmfckeymapdialog:: OnPrintHeader](#onprintheader) 및 [Cmfckeymapdialog:: onprintitem](#onprintitem) 메서드를 반복적으로 호출 합니다.
 
-## <a name="cmfckeymapdialogsetcolumnswidth"></a><a name="setcolumnswidth"></a>CMFC키맵 디아로그::세트열너비
+## <a name="cmfckeymapdialogsetcolumnswidth"></a><a name="setcolumnswidth"></a> CMFCKeyMapDialog:: Set\-width
 
-키보드 매핑 컨트롤을 지원하는 내부 목록 컨트롤에서 열의 너비를 설정하기 위해 프레임워크에서 호출합니다.
+키보드 매핑 컨트롤을 지 원하는 내부 목록 컨트롤의 열 너비를 설정 하기 위해 프레임 워크에서 호출 됩니다.
 
 ```
 virtual void SetColumnsWidth();
@@ -296,10 +297,10 @@ virtual void SetColumnsWidth();
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 내부 목록 컨트롤의 열을 기본 너비로 설정합니다. 먼저 바로 가기 키 열의 너비가 계산됩니다. 그런 다음 나머지 너비의 3분의 1이 명령 열에 할당되고 나머지 3분의 2가 설명 열에 할당됩니다.
+이 메서드는 내부 목록 컨트롤의 열을 기본 너비로 설정 합니다. 먼저 바로 가기 키 열의 너비를 계산 합니다. 그런 다음 나머지 너비의 1/3이 명령 열에 할당 되 고 나머지 2/3는 설명 열에 할당 됩니다.
 
 ## <a name="see-also"></a>참고 항목
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
-[C키보드관리자 클래스](../../mfc/reference/ckeyboardmanager-class.md)
+[CKeyboardManager 클래스](../../mfc/reference/ckeyboardmanager-class.md)

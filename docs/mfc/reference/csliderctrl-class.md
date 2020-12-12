@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CSliderCtrl 클래스'
 title: CSliderCtrl 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -74,12 +75,12 @@ helpviewer_keywords:
 - CSliderCtrl [MFC], SetTipSide
 - CSliderCtrl [MFC], SetToolTips
 ms.assetid: dd12b084-4eda-4550-a810-8f3cfb06b871
-ms.openlocfilehash: 8dfdcf34474027180708045131a19bf6f7e14512
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 556366f429b39344f4ae2f20acd3c20fd9760552
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562534"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97264546"
 ---
 # <a name="csliderctrl-class"></a>CSliderCtrl 클래스
 
@@ -95,13 +96,13 @@ class CSliderCtrl : public CWnd
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CSliderCtrl:: CSliderCtrl](#csliderctrl)|`CSliderCtrl` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CSliderCtrl:: ClearSel](#clearsel)|슬라이더 컨트롤에서 현재 선택 영역을 지웁니다.|
 |[CSliderCtrl:: ClearTics](#cleartics)|슬라이더 컨트롤에서 현재 눈금 표시를 제거 합니다.|
@@ -217,7 +218,7 @@ virtual BOOL Create(
 *nID*<br/>
 슬라이더 컨트롤의 ID를 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 초기화에 성공 하면 0이 아닌 값이 고, 그렇지 않으면 0입니다.
 
@@ -225,7 +226,7 @@ virtual BOOL Create(
 
 `CSliderCtrl`두 단계로을 생성 합니다. 먼저 생성자를 호출한 다음을 호출 합니다 `Create` .이 메서드는 슬라이더 컨트롤을 만들고이를 개체에 연결 `CSliderCtrl` 합니다.
 
-*Dwstyle*에 대해 설정 된 값에 따라 슬라이더 컨트롤은 세로 방향 또는 가로 방향 중 하나를 사용할 수 있습니다. 둘 중 어느 쪽에 나 양쪽에 눈금 표시를 포함할 수 있습니다. 연속 값의 범위를 지정 하는 데에도 사용할 수 있습니다.
+*Dwstyle* 에 대해 설정 된 값에 따라 슬라이더 컨트롤은 세로 방향 또는 가로 방향 중 하나를 사용할 수 있습니다. 둘 중 어느 쪽에 나 양쪽에 눈금 표시를 포함할 수 있습니다. 연속 값의 범위를 지정 하는 데에도 사용할 수 있습니다.
 
 슬라이더 컨트롤에 확장 창 스타일을 적용 하려면 대신 [Createex](#createex) 를 호출 `Create` 합니다.
 
@@ -251,7 +252,7 @@ virtual BOOL CreateEx(
 슬라이더 컨트롤의 스타일을 지정 합니다. Windows SDK에 설명 된 [슬라이더 컨트롤 스타일](/windows/win32/Controls/trackbar-control-styles)의 조합을 컨트롤에 적용 합니다.
 
 *rect*<br/>
-*PParentWnd*의 클라이언트 좌표에서 만들 창의 크기와 위치를 설명 하는 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조체에 대 한 참조입니다.
+*PParentWnd* 의 클라이언트 좌표에서 만들 창의 크기와 위치를 설명 하는 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조체에 대 한 참조입니다.
 
 *pParentWnd*<br/>
 컨트롤의 부모 창에 대 한 포인터입니다.
@@ -259,7 +260,7 @@ virtual BOOL CreateEx(
 *nID*<br/>
 컨트롤의 자식 창 ID입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -292,9 +293,9 @@ CWnd* GetBuddy(BOOL fLocation = TRUE) const;
 
 - FALSE는 슬라이더의 오른쪽에 있는 버디에 대 한 핸들을 검색 합니다. 슬라이더 컨트롤에서 TBS_VERT 스타일을 사용 하는 경우이 메시지는 슬라이더 아래에 있는 버디를 검색 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-*Flocation*에 지정 된 위치에 있는 버디 창인 [CWnd](../../mfc/reference/cwnd-class.md) 개체에 대 한 포인터 이거나, 해당 위치에 버디 창이 없는 경우 NULL입니다.
+*Flocation* 에 지정 된 위치에 있는 버디 창인 [CWnd](../../mfc/reference/cwnd-class.md) 개체에 대 한 포인터 이거나, 해당 위치에 버디 창이 없는 경우 NULL입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -325,7 +326,7 @@ void GetChannelRect(LPRECT lprc) const;
 int GetLineSize() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 슬라이더 컨트롤의 줄 크기입니다.
 
@@ -341,7 +342,7 @@ int GetLineSize() const;
 UINT GetNumTics() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 슬라이더 컨트롤의 눈금 표시 수입니다.
 
@@ -353,7 +354,7 @@ UINT GetNumTics() const;
 int GetPageSize() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 슬라이더 컨트롤의 페이지 크기입니다.
 
@@ -369,7 +370,7 @@ int GetPageSize() const;
 int GetPos() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 위치입니다.
 
@@ -393,7 +394,7 @@ void GetRange(
 
 ### <a name="remarks"></a>설명
 
-이 함수는 *Nmin* 및 *n 일별 최대*에서 참조 하는 정수에 값을 복사 합니다.
+이 함수는 *Nmin* 및 *n 일별 최대* 에서 참조 하는 정수에 값을 복사 합니다.
 
 ## <a name="csliderctrlgetrangemax"></a><a name="getrangemax"></a> CSliderCtrl:: GetRangeMax
 
@@ -403,7 +404,7 @@ void GetRange(
 int GetRangeMax() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 컨트롤의 최대 위치입니다.
 
@@ -415,7 +416,7 @@ int GetRangeMax() const;
 int GetRangeMin() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 컨트롤의 최소 위치입니다.
 
@@ -445,7 +446,7 @@ void GetSelection(
 int GetThumbLength() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 슬라이더의 길이 (픽셀)입니다.
 
@@ -479,7 +480,7 @@ int GetTic(int nTic) const;
 *nTic*<br/>
 눈금 표시를 식별 하는 인덱스 (0부터 시작)입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 지정 된 눈금 표시의 위치 이거나, *Ntic* 가 유효한 인덱스를 지정 하지 않는 경우-1입니다.
 
@@ -491,7 +492,7 @@ int GetTic(int nTic) const;
 DWORD* GetTicArray() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 슬라이더 컨트롤의 눈금 표시 위치를 포함 하는 배열의 주소입니다.
 
@@ -508,7 +509,7 @@ int GetTicPos(int nTic) const;
 *nTic*<br/>
 눈금 표시를 식별 하는 인덱스 (0부터 시작)입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 지정 된 눈금 표시의 실제 위치 (클라이언트 좌표) 이거나, *Ntic* 가 유효한 인덱스를 지정 하지 않은 경우-1입니다.
 
@@ -520,7 +521,7 @@ int GetTicPos(int nTic) const;
 CToolTipCtrl* GetToolTips() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) 개체에 대 한 포인터 또는 도구 설명이 사용 되지 않는 경우 NULL입니다. 슬라이더 컨트롤에서 TBS_TOOLTIPS 스타일을 사용 하지 않는 경우 반환 값은 NULL입니다.
 
@@ -552,7 +553,7 @@ CWnd* SetBuddy(
 
 - FALSE trackbar 컨트롤에서 TBS_HORZ 스타일을 사용 하는 경우 버디가 트랙 표시줄의 오른쪽에 표시 됩니다. Trackbar에서 TBS_VERT 스타일을 사용 하는 경우 buddy는 trackbar 컨트롤 아래에 나타납니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 해당 위치에서 슬라이더 컨트롤에 이전에 할당 된 [CWnd](../../mfc/reference/cwnd-class.md) 개체에 대 한 포인터입니다.
 
@@ -575,7 +576,7 @@ int SetLineSize(int nSize);
 *nSize*<br/>
 슬라이더 컨트롤의 줄 바꿈 크기입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이전 줄 크기입니다.
 
@@ -596,7 +597,7 @@ int SetPageSize(int nSize);
 *nSize*<br/>
 슬라이더 컨트롤의 새 페이지 크기입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이전 페이지 크기입니다.
 
@@ -737,7 +738,7 @@ BOOL SetTic(int nTic);
 *nTic*<br/>
 눈금 표시의 위치입니다. 이 매개 변수는 양수 값을 지정 해야 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 눈금 표시가 설정 된 경우 0이 아닌 값입니다. 그렇지 않으면 0입니다.
 
@@ -773,9 +774,9 @@ int SetTipSide(int nLocation);
 *N 위치*<br/>
 도구 설명 컨트롤이 표시 되는 위치를 나타내는 값입니다. 가능한 값 목록은 Windows SDK에 설명 된 대로 Win32 메시지 [TBM_SETTIPSIDE](/windows/win32/Controls/tbm-settipside)를 참조 하세요.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-Tooltip 컨트롤의 이전 위치를 나타내는 값입니다. 반환 값은 *Nlocation*에 사용할 수 있는 값 중 하 나와 같습니다.
+Tooltip 컨트롤의 이전 위치를 나타내는 값입니다. 반환 값은 *Nlocation* 에 사용할 수 있는 값 중 하 나와 같습니다.
 
 ### <a name="remarks"></a>설명
 

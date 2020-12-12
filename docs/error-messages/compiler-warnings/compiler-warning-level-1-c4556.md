@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4556'
 title: 컴파일러 경고(수준 1) C4556
 ms.date: 08/27/2018
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - C4556
 ms.assetid: e4c0e296-b747-4db1-9608-30b8b74feac2
-ms.openlocfilehash: 501d79a8a86fcd3e2d8ba08dc2f03488f9abb827
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a0e0780b541b74125135ab84daa6ecab80b57e83
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80162311"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97265859"
 ---
 # <a name="compiler-warning-level-1-c4556"></a>컴파일러 경고(수준 1) C4556
 
-> 내장 직접 인수 *' s a l e*'의 값이 '*lowerbound* - *상한값*' 범위를 벗어났습니다.
+> 내장 직접 인수 *' s a l e*'의 값이 '*lowerbound*  -  *상한값*' 범위를 벗어났습니다.
 
 ## <a name="remarks"></a>설명
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CMFCMenuButton 클래스'
 title: CMFCMenuButton 클래스
 ms.date: 07/15/2019
 f1_keywords:
@@ -24,12 +25,12 @@ helpviewer_keywords:
 - CMFCMenuButton [MFC], m_nMenuResult
 - CMFCMenuButton [MFC], m_bDefaultClick
 ms.assetid: 53d3d459-1e5a-47c5-8b7f-2e61f6af5187
-ms.openlocfilehash: 2f8ef341d7f460ed6b0ec23cb8a490842eb67cbc
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 954a9239f7a4912e29dd031ecacfeb2e06c6d8be
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90743271"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97265131"
 ---
 # <a name="cmfcmenubutton-class"></a>CMFCMenuButton 클래스
 
@@ -45,20 +46,20 @@ class CMFCMenuButton : public CMFCButton
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CMFCMenuButton:: CMFCMenuButton](#cmfcmenubutton)|`CMFCMenuButton` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CMFCMenuButton::PreTranslateMessage](#pretranslatemessage)|디스패치 되기 전에 창 메시지를 변환 하기 위해 프레임 워크에서 호출 됩니다. ( `CMFCButton::PreTranslateMessage`을 재정의합니다.)|
 |[CMFCMenuButton:: System.windows.window.sizetocontent](#sizetocontent)|텍스트 및 이미지 크기에 따라 단추의 크기를 변경 합니다.|
 
 ### <a name="data-members"></a>데이터 멤버
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |[CMFCMenuButton:: m_bOSMenu](#m_bosmenu)|기본 시스템 팝업 메뉴를 표시할지 아니면 [CContextMenuManager:: TrackPopupMenu](../../mfc/reference/ccontextmenumanager-class.md#trackpopupmenu)를 사용할지를 지정 합니다.|
 |[CMFCMenuButton:: m_bRightArrow](#m_brightarrow)|팝업 메뉴가 단추의 오른쪽 아래에 표시될지 여부를 지정 합니다.|
@@ -222,7 +223,7 @@ virtual CSize SizeToContent(BOOL bCalcOnly = FALSE);
 
 단추의 새 크기는 단추 텍스트, 이미지 및 화살표에 맞게 계산 됩니다. 또한 프레임 워크는 가로 가장자리에 대 한 10 픽셀의 미리 정의 된 여백 및 세로 가장자리의 경우 5 픽셀을 추가 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

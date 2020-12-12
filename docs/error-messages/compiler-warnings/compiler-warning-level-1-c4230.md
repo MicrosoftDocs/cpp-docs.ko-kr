@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4230'
 title: 컴파일러 경고(수준 1) C4230
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4230
 ms.assetid: a4be8729-74b6-44df-a5ea-e3f45aad0f8f
-ms.openlocfilehash: 0b590eaef2094c3d1c3a83541e9d5e10415928f9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b5427d4ab87a1ba1c65456dab379f76100e75fea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223215"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97266289"
 ---
 # <a name="compiler-warning-level-1-c4230"></a>컴파일러 경고(수준 1) C4230
 

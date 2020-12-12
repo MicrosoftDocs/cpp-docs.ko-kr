@@ -1,17 +1,18 @@
 ---
+description: '자세한 정보: 리소스 컴파일러 오류 및 경고 (RCxxxx, RWxxxx)'
 title: 리소스 컴파일러 오류 및 경고
 ms.date: 04/17/2019
 ms.assetid: 0819f955-0561-491d-af3d-2453f4e2d035
-ms.openlocfilehash: dec141723e911c09fc63d7868a2783fb399e6fc3
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 328a64cfba23ef4904f9591c90168fab3a1b08ca
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69509963"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97265755"
 ---
 # <a name="resource-compiler-errors-and-warnings-rcxxxx-rwxxxx"></a>리소스 컴파일러 오류 및 경고(RCxxxx, RWxxxx)
 
-이 섹션은 리소스 컴파일러에 의해 생성 된 오류에 대 한 참조입니다. 리소스 컴파일러 오류 및 경고의 형식은 RC*xxxx* 또는 RW*xxxx*이며 *xxxx* 는 네 자리 숫자입니다.
+이 섹션은 리소스 컴파일러에 의해 생성 된 오류에 대 한 참조입니다. 리소스 컴파일러 오류 및 경고의 형식은 RC *xxxx* 또는 RW *xxxx* 이며 *xxxx* 는 네 자리 숫자입니다.
 
 [!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
@@ -97,7 +98,7 @@ ms.locfileid: "69509963"
 [리소스 컴파일러 경고 RW4003](resource-compiler-warning-rw4003.md) \
 [리소스 컴파일러 경고 RW4004](resource-compiler-warning-rw4004.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[C/C++ 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md)
-[리소스 컴파일러](/windows/win32/menurc/resource-compiler)
+[C/c + + 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md) 
+ [리소스 컴파일러](/windows/win32/menurc/resource-compiler)

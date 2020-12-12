@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4264'
 title: 컴파일러 경고(수준 1) C4264
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4264
 ms.assetid: 315a13c1-ca54-4a90-9d2b-dd996463af5d
-ms.openlocfilehash: aa30c22e0c3a9c3d8a3ab2c4ab468f4e4851509c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ecacd50871a0eba34f1bbf6bc35302fa7c096fa1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80163195"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97266158"
 ---
 # <a name="compiler-warning-level-1-c4264"></a>컴파일러 경고(수준 1) C4264
 

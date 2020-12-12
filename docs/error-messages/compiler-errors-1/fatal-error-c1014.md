@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 심각한 오류 C1014'
 title: 심각한 오류 C1014
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1014
 ms.assetid: 4c01ef70-e765-4d07-a3fe-a11c19fb610b
-ms.openlocfilehash: b7a55cee67cbf7b8a7be4e9dd50b12425f6621c6
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 0f3304a15e4428e3bf11311a7460b9fe8a7adcd6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80204725"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97262427"
 ---
 # <a name="fatal-error-c1014"></a>심각한 오류 C1014
 

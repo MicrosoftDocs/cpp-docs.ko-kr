@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CMFCLinkCtrl 클래스'
 title: CMFCLinkCtrl 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,16 +15,16 @@ helpviewer_keywords:
 - CMFCLinkCtrl [MFC], SizeToContent
 - CMFCLinkCtrl [MFC], OnDrawFocusRect
 ms.assetid: 80f3874d-7cc8-410e-9ff1-62a225f5034b
-ms.openlocfilehash: 79edff8be6e2c37baa938fc5b624253932609e17
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 6951f086ac99c4b8a8260a79ee08d54476694350
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81754251"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97265222"
 ---
 # <a name="cmfclinkctrl-class"></a>CMFCLinkCtrl 클래스
 
-클래스는 `CMFCLinkCtrl` 단추를 하이퍼링크로 표시하고 단추를 클릭하면 링크의 대상을 호출합니다.
+`CMFCLinkCtrl`클래스는 단추를 하이퍼링크로 표시 하 고 단추를 클릭할 때 링크 대상을 호출 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -35,25 +36,25 @@ class CMFCLinkCtrl : public CMFCButton
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[CMFCLinkCtrl:::SetURL](#seturl)|지정된 URL을 단추 텍스트로 표시합니다.|
-|[CMFCLinkCtrl:::세URL 프리픽스](#seturlprefix)|URL의 암시적 프로토콜(예: "http:")을 설정합니다.|
-|[CMFCLinkCtrl::크기토콘텐츠](#sizetocontent)|단추 텍스트 또는 비트맵을 포함하도록 단추크기를 조정합니다.|
+|[CMFCLinkCtrl:: SetURL](#seturl)|지정 된 URL을 단추 텍스트로 표시 합니다.|
+|[CMFCLinkCtrl:: SetURLPrefix](#seturlprefix)|URL의 암시적 프로토콜 (예: "http:")을 설정 합니다.|
+|[CMFCLinkCtrl:: System.windows.window.sizetocontent](#sizetocontent)|단추 텍스트 또는 비트맵을 포함 하도록 단추의 크기를 조정 합니다.|
 
 ### <a name="protected-methods"></a>Protected 메서드
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|[CMFCLinkCtrl:::온드로우 포커스렉트](#ondrawfocusrect)|단추의 포커스 사각형이 그려지기 전에 프레임워크에서 호출됩니다.|
+|[CMFCLinkCtrl:: OnDrawFocusRect](#ondrawfocusrect)|단추의 포커스 영역을 그리기 전에 프레임 워크에서 호출 됩니다.|
 
 ## <a name="remarks"></a>설명
 
-`CMFCLinkCtrl` 클래스에서 파생된 단추를 클릭하면 프레임워크는 단추의 URL을 매개 변수로 `ShellExecute` 메서드에 전달합니다. 그런 `ShellExecute` 다음 메서드는 URL의 대상을 엽니다.
+클래스에서 파생 된 단추를 클릭 하면 `CMFCLinkCtrl` 프레임 워크에서 단추의 URL을 메서드에 매개 변수로 전달 합니다 `ShellExecute` . 그런 다음 `ShellExecute` 메서드는 URL의 대상을 엽니다.
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 `CMFCLinkCtrl` 개체의 크기를 설정하는 방법과 `CMFCLinkCtrl` 개체에서 URL 및 도구 설명을 설정하는 방법을 보여 줍니다. 이 예제는 [새 컨트롤 샘플의](../../overview/visual-cpp-samples.md)일부입니다.
+다음 예제에서는 개체의 크기를 설정 하는 방법과 `CMFCLinkCtrl` 개체에서 url 및 도구 설명을 설정 하는 방법을 보여 줍니다 `CMFCLinkCtrl` . 이 예제는 [새 컨트롤 샘플](../../overview/visual-cpp-samples.md)의 일부입니다.
 
 [!code-cpp[NVC_MFC_NewControls#9](../../mfc/reference/codesnippet/cpp/cmfclinkctrl-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#10](../../mfc/reference/codesnippet/cpp/cmfclinkctrl-class_2.cpp)]
@@ -74,11 +75,11 @@ class CMFCLinkCtrl : public CMFCButton
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxlinkctrl.h
+**헤더:** afxlinkctrl
 
-## <a name="cmfclinkctrlondrawfocusrect"></a><a name="ondrawfocusrect"></a>CMFCLinkCtrl:::온드로우 포커스렉트
+## <a name="cmfclinkctrlondrawfocusrect"></a><a name="ondrawfocusrect"></a> CMFCLinkCtrl:: OnDrawFocusRect
 
-단추의 포커스 사각형이 그려지기 전에 프레임워크에서 호출됩니다.
+단추의 포커스 영역을 그리기 전에 프레임 워크에서 호출 됩니다.
 
 ```
 virtual void OnDrawFocusRect(
@@ -88,19 +89,19 @@ virtual void OnDrawFocusRect(
 
 ### <a name="parameters"></a>매개 변수
 
-*pDC*<br/>
-【인】 장치 컨텍스트에 대한 포인터입니다.
+*컨트롤러가*<br/>
+진행 장치 컨텍스트에 대 한 포인터입니다.
 
 *rectClient*<br/>
-【인】 링크 컨트롤을 바인딩하는 사각형입니다.
+진행 링크 컨트롤의 경계를 조정 하는 사각형입니다.
 
 ### <a name="remarks"></a>설명
 
-고유한 코드를 사용하여 단추의 포커스 사각형을 그리려는 경우 이 메서드를 재정의합니다.
+사용자 고유의 코드를 사용 하 여 단추의 포커스 영역을 그리도록 하려면이 메서드를 재정의 합니다.
 
-## <a name="cmfclinkctrlseturl"></a><a name="seturl"></a>CMFCLinkCtrl:::SetURL
+## <a name="cmfclinkctrlseturl"></a><a name="seturl"></a> CMFCLinkCtrl:: SetURL
 
-지정된 URL을 단추 텍스트로 표시합니다.
+지정 된 URL을 단추 텍스트로 표시 합니다.
 
 ```cpp
 void SetURL(LPCTSTR lpszURL);
@@ -109,13 +110,13 @@ void SetURL(LPCTSTR lpszURL);
 ### <a name="parameters"></a>매개 변수
 
 *lpszURL*<br/>
-【인】 표시할 단추 텍스트입니다.
+진행 표시할 단추 텍스트입니다.
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfclinkctrlseturlprefix"></a><a name="seturlprefix"></a>CMFCLinkCtrl:::세URL 프리픽스
+## <a name="cmfclinkctrlseturlprefix"></a><a name="seturlprefix"></a> CMFCLinkCtrl:: SetURLPrefix
 
-URL의 암시적 프로토콜(예: "http:")을 설정합니다.
+URL의 암시적 프로토콜 (예: "http:")을 설정 합니다.
 
 ```cpp
 void SetURLPrefix(LPCTSTR lpszPrefix);
@@ -123,16 +124,16 @@ void SetURLPrefix(LPCTSTR lpszPrefix);
 
 ### <a name="parameters"></a>매개 변수
 
-*lpsz사전수정*<br/>
-【인】 URL 프로토콜의 접두사입니다.
+*lpszPrefix*<br/>
+진행 URL 프로토콜의 접두사입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 사용하여 URL 접두사를 설정합니다. 접두사는 단추의 얼굴에 표시되지 않지만 URL의 대상을 탐색하는 데 사용할 수 있습니다.
+URL 접두사를 설정 하려면이 메서드를 사용 합니다. 접두사는 단추의 표면에 표시 되지 않지만 URL 대상을 탐색 하는 데 사용할 수 있습니다.
 
-## <a name="cmfclinkctrlsizetocontent"></a><a name="sizetocontent"></a>CMFCLinkCtrl::크기토콘텐츠
+## <a name="cmfclinkctrlsizetocontent"></a><a name="sizetocontent"></a> CMFCLinkCtrl:: System.windows.window.sizetocontent
 
-단추 텍스트 또는 비트맵을 포함하도록 단추크기를 조정합니다.
+단추 텍스트 또는 비트맵을 포함 하도록 단추의 크기를 조정 합니다.
 
 ```
 virtual CSize SizeToContent(
@@ -142,21 +143,21 @@ virtual CSize SizeToContent(
 
 ### <a name="parameters"></a>매개 변수
 
-*bV 센터*<br/>
-【인】 TRUE 는 링크 컨트롤의 위쪽과 아래쪽 사이에 단추 텍스트와 비트맵을 세로로 가운데에 배치합니다. 그렇지 않으면 false입니다. 기본값은 FALSE입니다.
+*bVCenter*<br/>
+진행 단추 텍스트와 비트맵을 링크 컨트롤의 위쪽과 아래쪽 사이에 세로로 맞추려면 TRUE로 설정 합니다. 그렇지 않으면 FALSE입니다. 기본값은 FALSE입니다.
 
-*bH센터*<br/>
-【인】 TRUE 는 링크 컨트롤의 왼쪽과 오른쪽 사이에 단추 텍스트와 비트맵을 가로로 가운데에 두는 것입니다. 그렇지 않으면 false입니다. 기본값은 FALSE입니다.
+*bHCenter*<br/>
+진행 단추 텍스트와 비트맵을 링크 컨트롤의 왼쪽과 오른쪽 사이에 가로로 맞추려면 TRUE로 설정 합니다. 그렇지 않으면 FALSE입니다. 기본값은 FALSE입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-링크 컨트롤의 새 크기를 포함하는 [CSize](../../atl-mfc-shared/reference/csize-class.md) 개체입니다.
+링크 컨트롤의 새 크기를 포함 하는 [csize](../../atl-mfc-shared/reference/csize-class.md) 개체입니다.
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
-[클링Ctrl 클래스](../../mfc/reference/clinkctrl-class.md)<br/>
-[CMFC버튼 클래스](../../mfc/reference/cmfcbutton-class.md)
+[CLinkCtrl 클래스](../../mfc/reference/clinkctrl-class.md)<br/>
+[CMFCButton 클래스](../../mfc/reference/cmfcbutton-class.md)

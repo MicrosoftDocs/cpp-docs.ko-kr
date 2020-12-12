@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CPageSetupDialog 클래스'
 title: CPageSetupDialog 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - CPageSetupDialog [MFC], PreDrawPage
 - CPageSetupDialog [MFC], m_psd
 ms.assetid: 049c0ac8-f254-4854-9414-7a8271d1447a
-ms.openlocfilehash: 280d75c3bcacd673107fd32ecaa39953b06a77c8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 862e8c1edff04ba58efe13f471ffeee71c11ede5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214076"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97264910"
 ---
 # <a name="cpagesetupdialog-class"></a>CPageSetupDialog 클래스
 
@@ -51,7 +52,7 @@ class CPageSetupDialog : public CCommonDialog
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[CPageSetupDialog::CPageSetupDialog](#cpagesetupdialog)|`CPageSetupDialog` 개체를 생성합니다.|
 
@@ -82,7 +83,7 @@ class CPageSetupDialog : public CCommonDialog
 
 개체를 사용 하려면 `CPageSetupDialog` 먼저 생성자를 사용 하 여 개체를 만듭니다 `CPageSetupDialog` . 대화 상자를 생성 한 후에는 데이터 멤버의 값을 설정 하거나 수정 `m_psd` 하 여 대화 상자의 컨트롤 값을 초기화할 수 있습니다. [M_psd](#m_psd) 구조는 PAGESETUPDLG 유형입니다.
 
-대화 상자 컨트롤을 초기화 한 후 `DoModal` 멤버 함수를 호출 하 여 대화 상자를 표시 하 고 사용자가 인쇄 옵션을 선택할 수 있습니다. `DoModal`사용자가 확인 (IDOK) 또는 취소 (IDCANCEL) 단추를 선택 했는지 여부를 반환 합니다.
+대화 상자 컨트롤을 초기화 한 후 `DoModal` 멤버 함수를 호출 하 여 대화 상자를 표시 하 고 사용자가 인쇄 옵션을 선택할 수 있습니다. `DoModal` 사용자가 확인 (IDOK) 또는 취소 (IDCANCEL) 단추를 선택 했는지 여부를 반환 합니다.
 
 `DoModal`에서 IDOK를 반환 하는 경우의 여러 `CPageSetupDialog` 멤버 함수를 사용 하거나 `m_psd` 데이터 멤버에 액세스 하 여 사용자가 입력 한 정보를 검색할 수 있습니다.
 
@@ -107,7 +108,7 @@ class CPageSetupDialog : public CCommonDialog
 
 **헤더:** afxdlgs
 
-## <a name="cpagesetupdialogcpagesetupdialog"></a><a name="cpagesetupdialog"></a>CPageSetupDialog::CPageSetupDialog
+## <a name="cpagesetupdialogcpagesetupdialog"></a><a name="cpagesetupdialog"></a> CPageSetupDialog::CPageSetupDialog
 
 개체를 생성 하려면이 함수를 호출 `CPageSetupDialog` 합니다.
 
@@ -169,7 +170,7 @@ CPageSetupDialog(
 
 [!code-cpp[NVC_MFCDocView#94](../../mfc/codesnippet/cpp/cpagesetupdialog-class_1.cpp)]
 
-## <a name="cpagesetupdialogcreateprinterdc"></a><a name="createprinterdc"></a>CPageSetupDialog:: Create프린터 Dc
+## <a name="cpagesetupdialogcreateprinterdc"></a><a name="createprinterdc"></a> CPageSetupDialog:: Create프린터 Dc
 
 [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) 및 [DEVNAMES](/windows/win32/api/commdlg/ns-commdlg-devnames) 구조에서 프린터 장치 컨텍스트를 만듭니다.
 
@@ -177,11 +178,11 @@ CPageSetupDialog(
 HDC CreatePrinterDC();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 새로 만든 프린터 DC (장치 컨텍스트)에 대 한 핸들입니다.
 
-## <a name="cpagesetupdialogdomodal"></a><a name="domodal"></a>CPageSetupDialog::D oModal
+## <a name="cpagesetupdialogdomodal"></a><a name="domodal"></a> CPageSetupDialog::D oModal
 
 이 함수를 호출 하 여 Windows 일반 OLE 페이지 설정 대화 상자를 표시 하 고 사용자가 인쇄 여백, 용지 크기 및 용지 및 대상 프린터와 같은 다양 한 인쇄 설정 옵션을 선택할 수 있습니다.
 
@@ -189,7 +190,7 @@ HDC CreatePrinterDC();
 virtual INT_PTR DoModal();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 IDOK 또는 IDCANCEL. IDCANCEL이 반환 되는 경우 Windows [CommDlgExtendedError](/windows/win32/api/commdlg/nf-commdlg-commdlgextendederror) 함수를 호출 하 여 오류가 발생 했는지 여부를 확인 합니다.
 
@@ -209,7 +210,7 @@ IDOK 및 IDCANCEL는 사용자가 확인 또는 취소 단추를 선택 했는�
 
   [CPageSetupDialog:: CPageSetupDialog](#cpagesetupdialog)의 예제를 참조 하세요.
 
-## <a name="cpagesetupdialoggetdevicename"></a><a name="getdevicename"></a>CPageSetupDialog:: GetDeviceName 이름
+## <a name="cpagesetupdialoggetdevicename"></a><a name="getdevicename"></a> CPageSetupDialog:: GetDeviceName 이름
 
 이후에이 함수 `DoModal` 를 호출 하 여 현재 선택 된 프린터의 이름을 검색 합니다.
 
@@ -217,11 +218,11 @@ IDOK 및 IDCANCEL는 사용자가 확인 또는 취소 단추를 선택 했는�
 CString GetDeviceName() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 개체에서 사용 하는 장치 이름 `CPageSetupDialog` 입니다.
 
-## <a name="cpagesetupdialoggetdevmode"></a><a name="getdevmode"></a>CPageSetupDialog:: GetDevMode
+## <a name="cpagesetupdialoggetdevmode"></a><a name="getdevmode"></a> CPageSetupDialog:: GetDevMode
 
 를 호출한 후이 함수 `DoModal` 를 호출 하 여 개체의 프린터 장치 컨텍스트에 대 한 정보를 검색 `CPageSetupDialog` 합니다.
 
@@ -229,11 +230,11 @@ CString GetDeviceName() const;
 LPDEVMODE GetDevMode() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) 데이터 구조로, 장치 초기화 및 인쇄 드라이버 환경에 대 한 정보가 포함 되어 있습니다. Windows SDK에서 설명 하는 Windows [globalunlock](/windows/win32/api/winbase/nf-winbase-globalunlock) 함수를 사용 하 여이 구조에서 사용 하는 메모리의 잠금을 해제 해야 합니다.
 
-## <a name="cpagesetupdialoggetdrivername"></a><a name="getdrivername"></a>CPageSetupDialog:: GetDriverName
+## <a name="cpagesetupdialoggetdrivername"></a><a name="getdrivername"></a> CPageSetupDialog:: GetDriverName
 
 [DoModal](../../mfc/reference/cprintdialog-class.md#domodal) 를 호출한 후이 함수를 호출 하 여 시스템 정의 프린터 장치 드라이버의 이름을 검색 합니다.
 
@@ -241,7 +242,7 @@ LPDEVMODE GetDevMode() const;
 CString GetDriverName() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `CString`시스템 정의 드라이버 이름을 지정 하는입니다.
 
@@ -249,7 +250,7 @@ CString GetDriverName() const;
 
 에서 반환 하는 개체에 대 한 포인터를 `CString` `GetDriverName` `lpszDriverName` [CDC:: CreateDC](../../mfc/reference/cdc-class.md#createdc)에 대 한 호출에서 값으로 사용 합니다.
 
-## <a name="cpagesetupdialoggetmargins"></a><a name="getmargins"></a>CPageSetupDialog:: GetMargins
+## <a name="cpagesetupdialoggetmargins"></a><a name="getmargins"></a> CPageSetupDialog:: GetMargins
 
 을 호출 하 여 `DoModal` 프린터 장치 드라이버의 여백을 검색 한 후이 함수를 호출 합니다.
 
@@ -267,7 +268,7 @@ void GetMargins(
 *lpRectMinMargins*<br/>
 `RECT` `CRect` 현재 선택 된 프린터의 최소 인쇄 여백 (1/1000 인치 또는 1/100 mm)을 설명 하는 구조체 또는 개체에 대 한 포인터입니다. 이 사각형에 관심이 없으면이 매개 변수에 대해 NULL을 전달 합니다.
 
-## <a name="cpagesetupdialoggetpapersize"></a><a name="getpapersize"></a>CPageSetupDialog:: GetPaperSize
+## <a name="cpagesetupdialoggetpapersize"></a><a name="getpapersize"></a> CPageSetupDialog:: GetPaperSize
 
 인쇄를 위해 선택 된 용지의 크기를 검색 하려면이 함수를 호출 합니다.
 
@@ -275,11 +276,11 @@ void GetMargins(
 CSize GetPaperSize() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 인쇄를 위해 선택 된 용지 크기 (1/1000 인치 또는 1/100 mm)를 포함 하는 [Csize](../../atl-mfc-shared/reference/csize-class.md) 개체입니다.
 
-## <a name="cpagesetupdialoggetportname"></a><a name="getportname"></a>CPageSetupDialog::GetPortName
+## <a name="cpagesetupdialoggetportname"></a><a name="getportname"></a> CPageSetupDialog::GetPortName
 
 를 호출한 후이 함수 `DoModal` 를 호출 하 여 현재 선택 된 프린터 포트의 이름을 검색 합니다.
 
@@ -287,11 +288,11 @@ CSize GetPaperSize() const;
 CString GetPortName() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 선택 된 프린터 포트의 이름입니다.
 
-## <a name="cpagesetupdialogm_psd"></a><a name="m_psd"></a>CPageSetupDialog:: m_psd
+## <a name="cpagesetupdialogm_psd"></a><a name="m_psd"></a> CPageSetupDialog:: m_psd
 
 멤버가 dialog 개체의 특성을 저장 하는 PAGESETUPDLG 형식의 구조입니다.
 
@@ -309,7 +310,7 @@ PAGESETUPDLG m_psd;
 
 [CPageSetupDialog:: CPageSetupDialog](#cpagesetupdialog)의 예제를 참조 하세요.
 
-## <a name="cpagesetupdialogondrawpage"></a><a name="ondrawpage"></a>CPageSetupDialog:: OnDrawPage
+## <a name="cpagesetupdialogondrawpage"></a><a name="ondrawpage"></a> CPageSetupDialog:: OnDrawPage
 
 인쇄 된 페이지의 화면 이미지를 그리기 위해 프레임 워크에서 호출 됩니다.
 
@@ -343,7 +344,7 @@ virtual UINT OnDrawPage(
 *lpRect*<br/>
 그리기 영역의 좌표를 포함 하는 [Crect](../../atl-mfc-shared/reference/crect-class.md) 또는 [RECT](/windows/win32/api/windef/ns-windef-rect) 개체에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 처리 되는 경우 0이 아닌 값 그렇지 않으면 0입니다.
 
@@ -351,13 +352,13 @@ virtual UINT OnDrawPage(
 
 이 이미지는 일반 OLE 페이지 설정 대화 상자의 일부로 표시 됩니다. 기본 구현에서는 텍스트 페이지의 이미지를 그립니다.
 
-이 함수를 재정의 하 여 이미지의 특정 영역 또는 전체 이미지의 그리기를 사용자 지정 합니다. **`switch`** **`case`** *N 메시지*의 값을 확인 하는 문이 포함 된 문을 사용 하 여이 작업을 수행할 수 있습니다. 예를 들어 페이지 이미지 내용의 렌더링을 사용자 지정 하려면 다음 예제 코드를 사용할 수 있습니다.
+이 함수를 재정의 하 여 이미지의 특정 영역 또는 전체 이미지의 그리기를 사용자 지정 합니다. **`switch`** **`case`** *N 메시지* 의 값을 확인 하는 문이 포함 된 문을 사용 하 여이 작업을 수행할 수 있습니다. 예를 들어 페이지 이미지 내용의 렌더링을 사용자 지정 하려면 다음 예제 코드를 사용할 수 있습니다.
 
 [!code-cpp[NVC_MFCDocView#96](../../mfc/codesnippet/cpp/cpagesetupdialog-class_3.cpp)]
 
-*N 메시지*의 모든 경우를 처리할 필요가 없습니다. 이미지의 한 구성 요소, 이미지의 여러 구성 요소 또는 전체 영역을 처리 하도록 선택할 수 있습니다.
+*N 메시지* 의 모든 경우를 처리할 필요가 없습니다. 이미지의 한 구성 요소, 이미지의 여러 구성 요소 또는 전체 영역을 처리 하도록 선택할 수 있습니다.
 
-## <a name="cpagesetupdialogpredrawpage"></a><a name="predrawpage"></a>CPageSetupDialog::P reDrawPage
+## <a name="cpagesetupdialogpredrawpage"></a><a name="predrawpage"></a> CPageSetupDialog::P reDrawPage
 
 인쇄 된 페이지의 화면 이미지를 그리기 전에 프레임 워크에서 호출 됩니다.
 
@@ -395,7 +396,7 @@ virtual UINT PreDrawPage(
 *pPSD*<br/>
 `PAGESETUPDLG` 구조체에 대한 포인터입니다. [Pagesetupdlg](/windows/win32/api/commdlg/ns-commdlg-pagesetupdlgw)에 대 한 자세한 내용은 Windows SDK를 참조 하세요.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 처리 되는 경우 0이 아닌 값 그렇지 않으면 0입니다.
 

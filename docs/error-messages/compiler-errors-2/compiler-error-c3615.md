@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3615'
 title: 컴파일러 오류 C3615
 ms.date: 10/24/2017
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3615
 ms.assetid: 5ce96ba9-3d31-49f3-9aa8-24e5cdf6dcfc
-ms.openlocfilehash: 17a210e2a514af1ffd62bf38651c4d17bd1fe32b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9f3b95b96ff10a99f3ebeac1bc3b19f759dd0ab7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230794"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97262284"
 ---
 # <a name="compiler-error-c3615"></a>컴파일러 오류 C3615
 
