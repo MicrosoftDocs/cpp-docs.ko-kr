@@ -1,4 +1,5 @@
 ---
+description: Is_invocable, is_invocable_r, is_nothrow_invocable, is_nothrow_invocable_r 클래스에 대해 자세히 알아보세요.
 title: is_invocable, is_invocable_r, is_nothrow_invocable, is_nothrow_invocable_r 클래스
 ms.date: 02/21/2019
 f1_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - is_nothrow_invocable
 - is_nothrow_invocable_r class
 - is_nothrow_invocable_r
-ms.openlocfilehash: 47801eff0ea0c41c7b69dfb7a1aa5190a43f1b75
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 117e2ff85634898e170223e726a2cfea0ac6a470
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233108"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230937"
 ---
 # <a name="is_invocable-is_invocable_r-is_nothrow_invocable-is_nothrow_invocable_r-classes"></a>is_invocable, is_invocable_r, is_nothrow_invocable, is_nothrow_invocable_r 클래스
 
@@ -72,15 +73,15 @@ inline constexpr bool is_nothrow_invocable_r_v =
 
 ## <a name="remarks"></a>설명
 
-`is_invocable`형식 조건자는 확인 되지 않은 컨텍스트에서 인수 인수를 사용 하 여 호출할 수 있는 *Args* *호출* 가능 형식을 호출할 수 있는 경우 true입니다.
+`is_invocable`형식 조건자는 확인 되지 않은 컨텍스트에서 인수 인수를 사용 하 여 호출할 수 있는  *호출* 가능 형식을 호출할 수 있는 경우 true입니다.
 
-`is_invocable_r`형식 조건자는 확인 되지 않은 컨텍스트에서 인수 인수를 사용 하 여 호출할 수 있는 *Args* *호출* 가능 형식을 호출할 수 있는 경우 true 이며, *변환할*수 있는 결과 형식을 생성 합니다.
+`is_invocable_r`형식 조건자는 확인 되지 않은 컨텍스트에서 인수 인수를 사용 하 여 호출할 수 있는  *호출* 가능 형식을 호출할 수 있는 경우 true 이며, *변환할* 수 있는 결과 형식을 생성 합니다.
 
-형식 조건자는 호출 가능 `is_nothrow_invocable` 형식이 확인 되지 않은 컨텍스트에서 인수 인수를 사용 하 여 *Args* 호출 될 수 있는 경우 true이 고, 이러한 호출은 예외를 throw 하지 않는 것으로 알려져 *있습니다* .
+형식 조건자는 호출 가능 `is_nothrow_invocable` 형식이 확인 되지 않은 컨텍스트에서 인수 인수를 사용 하 여  호출 될 수 있는 경우 true이 고, 이러한 호출은 예외를 throw 하지 않는 것으로 알려져 *있습니다* .
 
-형식 조건자는 확인 되지 않은 `is_nothrow_invocable_r` 컨텍스트에서 인수 인수를 사용 하 여 호출 될 수 *Args* *있는 호출* 가능 형식을 호출 하 여 *변환할*수 있는 결과 형식을 생성 하 고 이러한 호출이 예외를 throw 하지 않는 것으로 알려진 경우 true입니다.
+형식 조건자는 확인 되지 않은 `is_nothrow_invocable_r` 컨텍스트에서 인수 인수를 사용 하 여 호출 될 수  *있는 호출* 가능 형식을 호출 하 여 *변환할* 수 있는 결과 형식을 생성 하 고 이러한 호출이 예외를 throw 하지 않는 것으로 알려진 경우 true입니다.
 
-매개 변수 pack *Args* 의 *변환*가능 하 고, *호출 가능*하 고, 형식은 모두 완전 한 형식, 알 수 없는 범위 배열 또는 cv 한정 형식 이어야 합니다 **`void`** . 그렇지 않으면 조건자의 동작이 정의 되지 않습니다.
+매개 변수 pack *Args* 의 *변환* 가능 하 고, *호출 가능* 하 고, 형식은 모두 완전 한 형식, 알 수 없는 범위 배열 또는 cv 한정 형식 이어야 합니다 **`void`** . 그렇지 않으면 조건자의 동작이 정의 되지 않습니다.
 
 ## <a name="example"></a>예제
 
