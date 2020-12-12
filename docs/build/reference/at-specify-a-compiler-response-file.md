@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: @ (컴파일러 지시 파일 지정)'
 title: '@(컴파일러 지시 파일 지정)'
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - '@ compiler option'
 - cl.exe compiler, specifying response files
 ms.assetid: 400fffee-909d-4f60-bf76-45833e822685
-ms.openlocfilehash: c2b5578e1ce1db590bdf5abbff0c91e858803ad7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bd2859f7973723d93594693902e92ac3530d73ff
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62273003"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97182894"
 ---
 # <a name="-specify-a-compiler-response-file"></a>@(컴파일러 지시 파일 지정)
 
-컴파일러 지시 파일을 지정합니다.
+컴파일러 지시 파일을 지정 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **\@**<em>response_file</em>
 
@@ -30,21 +31,21 @@ ms.locfileid: "62273003"
 
 ## <a name="remarks"></a>설명
 
-지시 파일이 명령줄에서 지정할 수 있는 모든 명령을 포함할 수 있습니다. 이 파일은 명령줄 인수가 127자를 초과할 경우에 유용할 수 있습니다.
+지시 파일은 명령줄에서 지정 하는 모든 명령을 포함할 수 있습니다. 이 파일은 명령줄 인수가 127자를 초과할 경우에 유용할 수 있습니다.
 
-지정 불가능 합니다 **\@** 지시 파일 내에서 옵션입니다. 즉, 응답 파일을 다른 지시 파일을 포함할 수 없습니다.
+지시 파일에서 옵션을 지정할 수 없습니다 **\@** . 즉, 지시 파일은 다른 지시 파일을 포함할 수 없습니다.
 
-명령줄에서 많은 지시 파일 옵션을 지정할 수 있습니다 (예를 들어 `@respfile.1 @respfile.2`) 원하는 만큼 합니다.
+명령줄에서 원하는 수 만큼의 지시 파일 옵션 (예:)을 지정할 수 있습니다 `@respfile.1 @respfile.2` .
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-- 응답 파일을 개발 환경 내에서 지정할 수 없습니다 하 고 명령줄에서 지정 해야 합니다.
+- 개발 환경에서 지시 파일을 지정할 수 없으며 명령줄에서 지정 해야 합니다.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면
 
-- 이 컴파일러 옵션을 프로그래밍 방식으로 변경할 수 없습니다.
+- 이 컴파일러 옵션은 프로그래밍 방식으로 변경할 수 없습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
-[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)
+[MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)

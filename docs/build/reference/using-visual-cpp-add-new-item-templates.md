@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Visual C++ 사용 하 여 새 항목 템플릿 추가'
 title: Visual C++ 새 항목 추가 템플릿 사용
 ms.date: 05/06/2019
 helpviewer_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - Add New Item command
 - templates, Add New Item
 ms.assetid: 286d1be6-0473-407f-9a51-437dff1bfab7
-ms.openlocfilehash: e6ef78d1a43bc649a31b715afd4ce1d44f25a8c6
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
-ms.translationtype: HT
+ms.openlocfilehash: 11e7057f563ac446daf8e7506896a5af778fdac4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65217768"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97182205"
 ---
 # <a name="using-visual-c-add-new-item-templates"></a>Visual C++ 새 항목 추가 템플릿 사용
 
-사용 하 여 Visual Studio 프로젝트에 공통 되는 항목을 쉽게 추가할 수 있습니다 합니다 **새 항목 추가** 명령입니다. **새 항목 추가** 명령을 사용하는 경우 적절한 파일을 프로젝트에 추가하는 항목 템플릿 목록이 포함된 `Add New Item` 대화 상자가 나타납니다.
+**새 항목 추가** 명령을 사용 하 여 Visual Studio 프로젝트에 공통적인 항목을 쉽게 추가할 수 있습니다. **새 항목 추가** 명령을 사용하는 경우 적절한 파일을 프로젝트에 추가하는 항목 템플릿 목록이 포함된 `Add New Item` 대화 상자가 나타납니다.
 
-다음 표는 Visual Studio 새 항목 추가 템플릿 목록을 사전순으로 합니다.
+다음 표에는 Visual Studio의 사전순 새 항목 추가 템플릿이 나와 있습니다.
 
 |템플릿|설명|
 |--------------|-----------------|
@@ -45,7 +46,7 @@ ms.locfileid: "65217768"
 |리소스 템플릿 파일(.rct)|리소스 템플릿 파일을 만듭니다.|
 |리본(.mfcribbon-ms)|리본 파일을 만듭니다.|
 |서버 지시 파일(.srf)|ATL 서버에서 사용되는 서버 지시 파일을 만듭니다.|
-|SQL 스크립트 파일(.sql)|SQL 스크립트 파일을 만듭니다. **참고:**  이 템플릿은 Professional Edition 기능이 아닙니다.|
+|SQL 스크립트 파일(.sql)|SQL 스크립트 파일을 만듭니다. **참고:** 이 템플릿은 Professional Edition 기능이 아닙니다.|
 |스타일시트(.css)|다양한 HTML 스타일을 정의하는 데 사용되는 CSS 스타일시트를 추가합니다.|
 |텍스트 파일(.txt)|빈 텍스트 파일을 추가합니다.|
 |사용자 정의 컨트롤|CLR 기능을 사용하여 사용자 정의 컨트롤을 추가합니다.|
@@ -54,6 +55,6 @@ ms.locfileid: "65217768"
 |XML 스키마 파일(.xsd)|XML 문서용 스키마를 정의하는 데 사용되는 파일을 만듭니다.|
 |XSLT 파일(.xslt)|XML 문서를 변환하는 데 사용하는 파일을 만듭니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[코드 마법사로 기능 추가](../../ide/adding-functionality-with-code-wizards-cpp.md)
+[코드 마법사에서 기능 추가](../../ide/adding-functionality-with-code-wizards-cpp.md)

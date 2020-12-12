@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 가져오기, _getws'
 title: gets, _getws
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - gets function
 - standard input, reading from
 ms.assetid: 1ec2dd4b-f801-48ea-97c2-892590f16024
-ms.openlocfilehash: 1c60cf14334a0dcc0492b23da10a36c3219bb699
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: cb2bf89bfcec8e10e05fa479cd7c9d78d9c6d80e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919906"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97181724"
 ---
 # <a name="gets-_getws"></a>gets, _getws
 
@@ -75,9 +76,9 @@ wchar_t *_getws(
 *버퍼*<br/>
 입력 문자열에 대한 스토리지 위치입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-성공하면 해당 인수를 반환합니다. **NULL** 포인터는 오류 또는 파일 끝 조건을 나타냅니다. 어떤 것이 발생했는지 확인하려면 [ferror](../c-runtime-library/reference/ferror.md) 또는 [feof](../c-runtime-library/reference/feof.md) 를 사용하십시오. `buffer`이 **NULL**인 경우 이러한 함수는 [매개 변수 유효성 검사](../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기를 호출합니다. 계속해서 실행하도록 허용된 경우 이러한 함수는 **NULL**을 반환하고 errno를 `EINVAL`로 설정합니다.
+성공하면 해당 인수를 반환합니다. **NULL** 포인터는 오류 또는 파일 끝 조건을 나타냅니다. 어떤 것이 발생했는지 확인하려면 [ferror](../c-runtime-library/reference/ferror.md) 또는 [feof](../c-runtime-library/reference/feof.md) 를 사용하십시오. `buffer`이 **NULL** 인 경우 이러한 함수는 [매개 변수 유효성 검사](../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기를 호출합니다. 계속해서 실행하도록 허용된 경우 이러한 함수는 **NULL** 을 반환하고 errno를 `EINVAL`로 설정합니다.
 
 ## <a name="remarks"></a>설명
 
@@ -130,7 +131,7 @@ int main( void )
 Hello there!The line entered was: Hello there!
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [스트림 I/O](../c-runtime-library/stream-i-o.md)<br/>
 [fgets, fgetws](../c-runtime-library/reference/fgets-fgetws.md)<br/>

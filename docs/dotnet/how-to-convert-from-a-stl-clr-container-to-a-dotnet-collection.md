@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 방법: STL/CLR 컨테이너에서 .NET 컬렉션으로 변환'
 title: '방법: STL/CLR 컨테이너에서 .NET 컬렉션으로 변환'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - STL/CLR Containers [STL/CLR]
 - STL/CLR, converting to .NET collections
 ms.assetid: 70b2dfd9-869c-4e0f-9a29-b1ee0cb0d107
-ms.openlocfilehash: a4a754bbee08e93e2db9af50f98d7603fabcd8d4
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 93649ae411c53d21db5e660d8faa6aa707f74f16
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91498503"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97181308"
 ---
 # <a name="how-to-convert-from-a-stlclr-container-to-a-net-collection"></a>방법: STL/CLR 컨테이너에서 .NET 컬렉션으로 변환
 
@@ -24,7 +25,7 @@ ms.locfileid: "91498503"
 
    - 전체 컨테이너를 변환 하려면 컨테이너를 적절 한 .NET 컬렉션 인터페이스 또는 인터페이스 컬렉션으로 캐스팅 합니다. 두 번째 예제에서는이 메서드를 보여 줍니다.
 
-## <a name="examples"></a>예
+## <a name="examples"></a>예제
 
 이 예제에서는 STL/CLR을 만들고 `vector` 여기에 5 개의 요소를 추가 합니다. 그런 다음 함수를 호출 하 여 .NET 컬렉션을 만듭니다 `make_collection` . 마지막으로 새로 만든 컬렉션의 내용을 표시 합니다.
 

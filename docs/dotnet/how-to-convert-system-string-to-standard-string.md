@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 방법: System:: String을 표준 문자열로 변환'
 title: '방법: System::String을 표준 문자열로 변환'
 ms.custom: get-started-article
 ms.date: 11/04/2016
@@ -6,16 +7,16 @@ helpviewer_keywords:
 - C++ Standard Library, converting System::String to standard string
 - string conversion, System::String
 ms.assetid: 79e2537e-d4eb-459f-9506-0e738045b59e
-ms.openlocfilehash: 7dd73b8fed98918135b66af1b6351977426cd26e
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 2bcdaef743f2856f2db20dae8b804bb33546ea0d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "79545302"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97181333"
 ---
 # <a name="how-to-convert-systemstring-to-standard-string"></a>방법: System::String을 표준 문자열로 변환
 
-Vcclr의 `PtrToStringChars`을 사용 하지 않고 <xref:System.String>을 `std::string` 또는 `std::wstring`으로 변환할 수 있습니다.
+<xref:System.String> `std::string` `std::wstring` Vcclr에서를 사용 하지 않고를 또는로 변환할 수 있습니다. `PtrToStringChars`
 
 ## <a name="example"></a>예제
 
@@ -65,4 +66,4 @@ efgh
 
 ## <a name="see-also"></a>참고 항목
 
-[C++ Interop 사용(암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+[C + + Interop 사용 (암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

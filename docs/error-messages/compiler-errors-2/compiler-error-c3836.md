@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3836'
 title: 컴파일러 오류 C3836
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3836
 ms.assetid: 254f851b-7b7d-4c34-a740-fcf72f6a636a
-ms.openlocfilehash: 9c8a7e761f2ece046d5de5c0e74ee911e5ee550d
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: c7e05bbf95facf5b8552b4442138cc38b86703c0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74741406"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97180879"
 ---
 # <a name="compiler-error-c3836"></a>컴파일러 오류 C3836
 

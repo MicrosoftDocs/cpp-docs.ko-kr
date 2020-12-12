@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2159'
 title: 컴파일러 오류 C2159
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2159
 ms.assetid: 925a2cbd-43c9-45ee-a373-84004350b380
-ms.openlocfilehash: 8c0ef75f63f5aa57e02297ebd94d4224048b0f2d
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 045515ba964832de8821e048eac58b0ec507d830
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74755869"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97181217"
 ---
 # <a name="compiler-error-c2159"></a>컴파일러 오류 C2159
 

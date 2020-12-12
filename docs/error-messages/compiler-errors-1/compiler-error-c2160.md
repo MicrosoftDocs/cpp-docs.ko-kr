@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2160'
 title: 컴파일러 오류 C2160
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2160
 ms.assetid: a1f694a7-fb16-4437-b7f5-a1af6da94bc5
-ms.openlocfilehash: 0cfc0822ab790a456c6fa56142047c1826257477
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 84c257fc249d136c495adbcb22cd59701d6c363c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74740860"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97181191"
 ---
 # <a name="compiler-error-c2160"></a>컴파일러 오류 C2160
 

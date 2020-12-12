@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3816'
 title: 컴파일러 오류 C3816
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3816
 ms.assetid: 2e52cc7f-e31c-41a3-8d6f-9f5fab3648c0
-ms.openlocfilehash: 5e31138d50676c312028e35b480cc682dc146a43
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: b2a4ffc435ad4fc2e0c516d99ade1058799fb4b5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757126"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97180957"
 ---
 # <a name="compiler-error-c3816"></a>컴파일러 오류 C3816
 

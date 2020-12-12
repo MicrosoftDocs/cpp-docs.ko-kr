@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: __getmainargs, __wgetmainargs'
 title: __getmainargs, __wgetmainargs
 ms.date: 11/04/2016
 api_name:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - __wgetmainargs
 - __getmainargs
 ms.assetid: f72f54eb-9509-4bdf-8752-40fc49055439
-ms.openlocfilehash: 01658c6146706d8ea7bfd70d002efcfff88031b0
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6f06f83a72d037df6a0973b24ac92ecade6c21eb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80171595"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97181750"
 ---
 # <a name="__getmainargs-__wgetmainargs"></a>__getmainargs, __wgetmainargs
 
@@ -40,16 +41,16 @@ ms.locfileid: "80171595"
 int __getmainargs(
     int * _Argc,
    char *** _Argv,
-   char *** _Env,
+   char **_ _Env,
    int _DoWildCard,
-_startupinfo * _StartInfo);
+_startupinfo _ _StartInfo);
 
 int __wgetmainargs (
    int *_Argc,
    wchar_t ***_Argv,
-   wchar_t ***_Env,
+   wchar_t **__Env,
    int _DoWildCard,
-   _startupinfo * _StartInfo)
+   _startupinfo _ _StartInfo)
 ```
 
 #### <a name="parameters"></a>매개 변수
@@ -58,10 +59,10 @@ int __wgetmainargs (
 `argv` 뒤에 오는 인수 개수를 포함하는 정수입니다. `argc` 매개 변수는 항상 1보다 크거나 같습니다.
 
 `_Argv`<br/>
-프로그램의 사용자가 입력한 명령줄 인수를 나타내는 null로 끝나는 문자열의 배열입니다. 규칙에 따라 `argv[0]`는 프로그램 호출에 사용되는 명령이며, argv[1]가 첫 번째 명령줄 인수인 식으로 항상 **NULL**인 argv[argc]까지 진행됩니다. 첫 번째 명령줄 인수는 항상 `argv[1]`이고 마지막 인수는 `argv[argc - 1]`입니다.
+프로그램의 사용자가 입력한 명령줄 인수를 나타내는 null로 끝나는 문자열의 배열입니다. 규칙에 따라 `argv[0]` 은 프로그램을 호출 하는 데 사용 되는 명령이 며, argv [1]은 첫 번째 명령줄 인수 이므로 항상 **NULL** 인 argv [argc]까지 진행 됩니다. 첫 번째 명령줄 인수는 항상 `argv[1]`이고 마지막 인수는 `argv[argc - 1]`입니다.
 
 `_Env`<br/>
-사용자 환경에서 설정되는 변수를 나타내는 문자열 배열입니다. 이 배열은 **NULL** 항목으로 종료됩니다.
+사용자 환경에서 설정되는 변수를 나타내는 문자열 배열입니다. 이 배열은 **NULL** 항목으로 종료 됩니다.
 
 `_DoWildCard`<br/>
 1로 설정하면 명령줄 인수에서 와일드카드를 확장하고 0으로 설정하면 아무 작업도 수행하지 않는 정수입니다.
@@ -69,7 +70,7 @@ int __wgetmainargs (
 `_StartInfo`<br/>
 CRT DLL에 전달할 기타 정보입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 성공하면 0, 실패하면 음수 값입니다.
 
@@ -79,7 +80,7 @@ CRT DLL에 전달할 기타 정보입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |__getmainargs|internal.h|
 |__wgetmainargs|internal.h|

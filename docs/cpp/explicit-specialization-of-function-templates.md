@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 함수 템플릿의 명시적 특수화'
 title: 함수 템플릿의 명시적 특수화
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,16 +9,16 @@ helpviewer_keywords:
 - declaring functions [C++], specialization of function template
 - specialization of function templates
 ms.assetid: eb0fcb73-eaed-42a1-9b83-14b055a34bf8
-ms.openlocfilehash: 638b5dbca1b3c0c9b9c9c946418ea70354ff6266
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c77ebce3383ba2051ac010c39a7dd0eb37b8111a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220563"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97181503"
 ---
 # <a name="explicit-specialization-of-function-templates"></a>함수 템플릿의 명시적 특수화
 
-함수 템플릿을 사용하면 특정 형식에 대한 함수 템플릿의 명시적 특수화(재정의)를 제공하여 해당 형식에 대한 특별한 동작을 정의할 수 있습니다. 예를 들면 다음과 같습니다.
+함수 템플릿을 사용하면 특정 형식에 대한 함수 템플릿의 명시적 특수화(재정의)를 제공하여 해당 형식에 대한 특별한 동작을 정의할 수 있습니다. 예를 들어:
 
 ```cpp
 template<> void MySwap(double a, double b);

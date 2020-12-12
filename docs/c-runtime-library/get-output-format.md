@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _get_output_format'
 title: _get_output_format
 ms.date: 11/04/2016
 api_name:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - get_output_format function
 - _get_output_format function
 ms.assetid: 0ce42f3b-3479-41c4-bcbf-1d21f7ee37e7
-ms.openlocfilehash: 682ab9796942e52ed036193887158ea22b738189
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: cdbe5038745273882685a79e148e143c3d65d7e5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81349336"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97181737"
 ---
 # <a name="_get_output_format"></a>_get_output_format
 
@@ -61,7 +62,7 @@ unsigned int _get_output_format();
 
 ## <a name="see-also"></a>참고 항목
 
-[형식 사양 구문: 인쇄및 wprintf 함수](../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)<br/>
+[형식 사양 구문: printf 및 wprintf 함수](../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)<br/>
 [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)<br/>
 [_set_output_format](../c-runtime-library/set-output-format.md)

@@ -1,4 +1,5 @@
 ---
+description: 자세히 알아보기:/CLRSUPPORTLASTERROR (PInvoke 호출의 마지막 오류 코드 유지)
 title: /CLRSUPPORTLASTERROR(PInvoke 호출의 마지막 오류 코드 유지)
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - /CLRSUPPORTLASTERROR linker option
 - -CLRSUPPORTLASTERROR linker option
 ms.assetid: b7057990-4154-4b1d-9fc9-6236f7be7575
-ms.openlocfilehash: ccf13971bf77fb8e960b781e4a1aa2a0e06a5d61
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 253d67e2ced2667d3ca8c7b9330ed3e6d4182d9f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90686105"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97182413"
 ---
 # <a name="clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls"></a>/CLRSUPPORTLASTERROR(PInvoke 호출의 마지막 오류 코드 유지)
 
-기본적으로 설정 된 **/CLRSUPPORTLASTERROR**는 P/Invoke 메커니즘을 통해 호출 된 함수의 마지막 오류 코드를 유지 합니다 .이를 통해 **/clr**로 컴파일된 코드에서 dll의 네이티브 함수를 호출할 수 있습니다.
+기본적으로 설정 된 **/CLRSUPPORTLASTERROR** 는 P/Invoke 메커니즘을 통해 호출 된 함수의 마지막 오류 코드를 유지 합니다 .이를 통해 **/clr** 로 컴파일된 코드에서 dll의 네이티브 함수를 호출할 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -26,9 +27,9 @@ ms.locfileid: "90686105"
 
 ## <a name="remarks"></a>설명
 
-마지막 오류 코드를 유지 하면 성능이 저하 되는 것을 의미 합니다.  마지막 오류 코드를 유지 하는 경우 성능에 영향을 주지 않으려면  **/CLRSUPPORTLASTERROR: NO**와 연결 합니다.
+마지막 오류 코드를 유지 하면 성능이 저하 되는 것을 의미 합니다.  마지막 오류 코드를 유지 하는 경우 성능에 영향을 주지 않으려면  **/CLRSUPPORTLASTERROR: NO** 와 연결 합니다.
 
-시스템 Dll의 함수에 대 한 마지막 오류 코드만 유지 하는 **/CLRSUPPORTLASTERROR: SYSTEMDLL**과 연결 하 여 성능 영향을 최소화할 수 있습니다.
+시스템 Dll의 함수에 대 한 마지막 오류 코드만 유지 하는 **/CLRSUPPORTLASTERROR: SYSTEMDLL** 과 연결 하 여 성능 영향을 최소화할 수 있습니다.
 
 > [!NOTE]
 > 동일한 모듈에서 CLR 코드에 사용 되는 관리 되지 않는 함수에는 마지막 오류를 유지 하는 기능이 지원 되지 않습니다.
@@ -66,7 +67,7 @@ __declspec(dllexport) double MySqrt(__int64 n) {
 }
 ```
 
-다음 샘플에서는 **/CLRSUPPORTLASTERROR**를 사용 하는 방법을 보여 주는 DLL을 사용 합니다.
+다음 샘플에서는 **/CLRSUPPORTLASTERROR** 를 사용 하는 방법을 보여 주는 DLL을 사용 합니다.
 
 ```cpp
 // CLRSUPPORTLASTERROR_client.cpp
@@ -117,7 +118,7 @@ GetLastError for application call failed (127).
 GetLastError for system call succeeded (183).
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [MSVC 링커 참조](linking.md)<br/>
 [MSVC 링커 옵션](linker-options.md)

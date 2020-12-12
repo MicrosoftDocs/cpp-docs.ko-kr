@@ -1,23 +1,24 @@
 ---
+description: '자세한 정보: 바인딩 가져오기'
 title: 가져오기 바인딩
 ms.date: 11/04/2016
 helpviewer_keywords:
 - /DELAY:NOBIND linker option
 - DELAY:NOBIND linker option
 ms.assetid: bb766038-deb1-41b1-bcbc-29a30e8c1e2a
-ms.openlocfilehash: 4058d738b87b69a73e8f18d977be8435a7d96a14
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7d1b4374bf1d3340a918f252d80102057febe053
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62272925"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97182712"
 ---
 # <a name="binding-imports"></a>가져오기 바인딩
 
-링커의 기본 동작은 지연 로드 된 dll을 바인딩할 수 있는 가져오기 주소 테이블을 만드는 방법은입니다. 도우미 함수를 호출 하는 대신 바인딩된 정보를 사용 하려고 경우 DLL이 바인딩되면 **GetProcAddress** 참조 된 각 합니다. 타임 스탬프 또는 기본 설정된 주소가 일치 하지 않으면 로드 된 DLL의 도우미 함수 것으로 간주 하 바인딩된 가져오기 주소 테이블을 오래 된 존재 하지 않는 경우에 따라 진행 됩니다.
+기본 링커 동작은 지연 로드 된 DLL에 대 한 바인딩 가능한 가져오기 주소 테이블을 만드는 것입니다. DLL이 바인딩된 경우 도우미 함수는 참조 되는 각 가져오기에서 **GetProcAddress** 를 호출 하는 대신 바인딩된 정보를 사용 하려고 합니다. 타임 스탬프 또는 기본 설정 주소가 로드 된 DLL의 타임 스탬프 또는 기본 설정 주소와 일치 하지 않으면 도우미 함수는 바인딩된 가져오기 주소 테이블이 오래 된 것으로 가정 하 고 존재 하지 않는 것 처럼 계속 진행 됩니다.
 
-지정 하지 않을 경우 DLL의 지연 로드 가져오기 바인딩할 합니다 [지연/](delay-delay-load-import-settings.md): nobind 링커의 명령줄에서 이미지 파일의 생성 및 사용 중인 공간에서 바인딩된 가져오기 주소 테이블을 못합니다.
+DLL의 지연 로드 된 가져오기를 바인딩하지 않으려는 경우 링커 명령줄에 [/delay](delay-delay-load-import-settings.md): nobind을 지정 하면 바인딩된 가져오기 주소 테이블이 생성 되 고 이미지 파일의 공간이 사용 되지 않습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[링커의 지연 로드된 DLL 지원](linker-support-for-delay-loaded-dlls.md)
+[Delay-Loaded Dll에 대 한 링커 지원](linker-support-for-delay-loaded-dlls.md)

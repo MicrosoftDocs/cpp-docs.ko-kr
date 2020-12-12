@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2153'
 title: 컴파일러 오류 C2153
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2153
 ms.assetid: cfc50cb7-9a0f-4b5b-879a-d419c99f7be1
-ms.openlocfilehash: 1f03b196b7ddaae80dac1941cdde5be16acace5f
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 0b5ded0908f3c12033f1c2b3b034b41b52e847cb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74748686"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97181295"
 ---
 # <a name="compiler-error-c2153"></a>컴파일러 오류 C2153
 

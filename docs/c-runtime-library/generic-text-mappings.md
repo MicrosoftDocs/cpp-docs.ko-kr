@@ -1,4 +1,5 @@
 ---
+description: Generic-Text 매핑에 대해 자세히 알아보세요.
 title: 일반 텍스트 매핑
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - generic-text mappings
 - mappings, generic-text
 ms.assetid: 1ed02e02-3649-42dd-a697-e1b4af25bb02
-ms.openlocfilehash: d4bf4fdc44cc8807bebacdad3700d2040c628b0d
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: 3f993b4bd9d00f0acf4988fb8311a35383a70156
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57742676"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97181789"
 ---
 # <a name="generic-text-mappings"></a>일반 텍스트 매핑
 
@@ -29,4 +30,4 @@ ms.locfileid: "57742676"
 ## <a name="see-also"></a>참고 항목
 
 [데이터 형식 매핑](../c-runtime-library/data-type-mappings.md)<br/>
-[샘플 일반 텍스트 프로그램](../c-runtime-library/a-sample-generic-text-program.md)
+[샘플 Generic-Text 프로그램](../c-runtime-library/a-sample-generic-text-program.md)

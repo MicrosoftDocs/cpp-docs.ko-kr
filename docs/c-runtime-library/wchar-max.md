@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: WCHAR_MAX'
 title: WCHAR_MAX
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - WCHAR_MAX constant
 ms.assetid: 2b5f8bfd-9098-47fc-be8f-598a0c975ed4
-ms.openlocfilehash: 8fc910fbd64c0add6ca67c7fd72a9dcdd3c6b5ae
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d6b58cd61432beb8b7524e4191136d531779f35f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218496"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97181620"
 ---
 # <a name="wchar_max"></a>WCHAR_MAX
 
