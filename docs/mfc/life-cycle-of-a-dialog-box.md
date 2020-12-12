@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: MFC에서 대화 상자 작업'
 title: MFC에서 대화 상자를 통해 작업
 ms.date: 09/27/2019
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - MFC dialog boxes [MFC], life cycle
 - life cycle of dialog boxes [MFC]
 ms.assetid: e16fd78e-238d-4f31-8c9d-8564f3953bd9
-ms.openlocfilehash: d365be21ef19a6779df649e9368fdc0cda4851df
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 5e88d34ab26f8abd24923aacafa02c3c62ec7f06
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84621443"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327795"
 ---
 # <a name="working-with-dialog-boxes-in-mfc"></a>MFC에서 대화 상자를 통해 작업
 
@@ -31,7 +32,7 @@ ms.locfileid: "84621443"
 
 - [모덜리스 대화 상자 만들기](creating-modeless-dialog-boxes.md)
 
-- [메모리에서 대화 상자 템플릿 사용](using-a-dialog-template-in-memory.md)
+- [메모리의 대화 상자 템플릿 사용](using-a-dialog-template-in-memory.md)
 
 - [대화 상자의 배경색 설정](setting-the-dialog-boxs-background-color.md)
 
@@ -43,7 +44,7 @@ ms.locfileid: "84621443"
 
 - [대화 상자 닫기](closing-the-dialog-box.md)
 
-- [대화 상자 삭제](destroying-the-dialog-box.md)
+- [대화 상자 소멸시키기](destroying-the-dialog-box.md)
 
 - [DDX (대화 상자 데이터 교환) 및 유효성 검사 (DDV)](dialog-data-exchange-and-validation.md)
 

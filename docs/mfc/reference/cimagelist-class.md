@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CImageList 클래스'
 title: CImageList 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -74,12 +75,12 @@ helpviewer_keywords:
 - CImageList [MFC], Write
 - CImageList [MFC], m_hImageList
 ms.assetid: b6d1a704-1c82-4548-8a8f-77972adc98a5
-ms.openlocfilehash: 28693aaa32ab5f4baaf773a7bac64c491d55cf78
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 039f4e307727970b6236af6ad51bf658c44bae0b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212399"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327775"
 ---
 # <a name="cimagelist-class"></a>CImageList 클래스
 
@@ -95,7 +96,7 @@ class CImageList : public CObject
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[CImageList:: CImageList](#cimagelist)|`CImageList` 개체를 생성합니다.|
 
@@ -166,7 +167,7 @@ class CImageList : public CObject
 
 **헤더:** afxcmn.h
 
-## <a name="cimagelistadd"></a><a name="add"></a>CImageList:: Add
+## <a name="cimagelistadd"></a><a name="add"></a> CImageList:: Add
 
 이미지 목록에 하나 이상의 이미지 또는 아이콘을 추가 하려면이 함수를 호출 합니다.
 
@@ -196,7 +197,7 @@ int Add(HICON hIcon);
 *hIcon*<br/>
 새 이미지에 대 한 비트맵과 마스크를 포함 하는 아이콘 핸들입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하는 경우 첫 번째 새 이미지의 인덱스 (0부터 시작)입니다. 그렇지 않으면-1입니다.
 
@@ -208,7 +209,7 @@ int Add(HICON hIcon);
 
 [!code-cpp[NVC_MFC_CImageList#1](../../mfc/reference/codesnippet/cpp/cimagelist-class_1.cpp)]
 
-## <a name="cimagelistattach"></a><a name="attach"></a>CImageList:: Attach
+## <a name="cimagelistattach"></a><a name="attach"></a> CImageList:: Attach
 
 이 함수를 호출 하 여 이미지 목록을 개체에 연결 `CImageList` 합니다.
 
@@ -221,7 +222,7 @@ BOOL Attach(HIMAGELIST hImageList);
 *hImageList*<br/>
 이미지 목록 개체에 대 한 핸들입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 첨부 파일이 성공 하면 0이 아닌 값입니다. 그렇지 않으면 0입니다.
 
@@ -229,7 +230,7 @@ BOOL Attach(HIMAGELIST hImageList);
 
 [!code-cpp[NVC_MFC_CImageList#2](../../mfc/reference/codesnippet/cpp/cimagelist-class_2.cpp)]
 
-## <a name="cimagelistbegindrag"></a><a name="begindrag"></a>CImageList:: BeginDrag
+## <a name="cimagelistbegindrag"></a><a name="begindrag"></a> CImageList:: BeginDrag
 
 이미지를 끌기 시작 하려면이 함수를 호출 합니다.
 
@@ -247,7 +248,7 @@ BOOL BeginDrag(
 *ptHotSpot*<br/>
 시작 끌기 위치의 좌표 (일반적으로 커서 위치)입니다. 좌표는 이미지의 왼쪽 위 모퉁이를 기준으로 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -259,7 +260,7 @@ BOOL BeginDrag(
 
 [!code-cpp[NVC_MFC_CImageList#3](../../mfc/reference/codesnippet/cpp/cimagelist-class_3.cpp)]
 
-## <a name="cimagelistcimagelist"></a><a name="cimagelist"></a>CImageList:: CImageList
+## <a name="cimagelistcimagelist"></a><a name="cimagelist"></a> CImageList:: CImageList
 
 `CImageList` 개체를 생성합니다.
 
@@ -267,7 +268,7 @@ BOOL BeginDrag(
 CImageList();
 ```
 
-## <a name="cimagelistcopy"></a><a name="copy"></a>CImageList:: Copy
+## <a name="cimagelistcopy"></a><a name="copy"></a> CImageList:: Copy
 
 이 멤버 함수는 Windows SDK에 설명 된 대로 [ImageList_Copy](/windows/win32/api/commctrl/nf-commctrl-imagelist_copy)Win32 함수 동작을 구현 합니다.
 
@@ -303,7 +304,7 @@ BOOL Copy(
 *.Psrc*<br/>
 `CImageList`복사 작업의 대상인 개체에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하는 경우 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -311,7 +312,7 @@ BOOL Copy(
 
 [!code-cpp[NVC_MFC_CImageList#6](../../mfc/reference/codesnippet/cpp/cimagelist-class_4.cpp)]
 
-## <a name="cimagelistcreate"></a><a name="create"></a>CImageList:: Create
+## <a name="cimagelistcreate"></a><a name="create"></a> CImageList:: Create
 
 이미지 목록을 초기화 하 고 [CImageList](../../mfc/reference/cimagelist-class.md) 개체에 연결 합니다.
 
@@ -404,7 +405,7 @@ BOOL Create(CImageList* pImageList);
 *pImageList*<br/>
 `CImageList` 개체에 대한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -416,7 +417,7 @@ BOOL Create(CImageList* pImageList);
 
 [!code-cpp[NVC_MFC_CImageList#7](../../mfc/reference/codesnippet/cpp/cimagelist-class_5.cpp)]
 
-## <a name="cimagelistdeleteimagelist"></a><a name="deleteimagelist"></a>CImageList::D eleteImageList
+## <a name="cimagelistdeleteimagelist"></a><a name="deleteimagelist"></a> CImageList::D eleteImageList
 
 이미지 목록을 삭제 하려면이 함수를 호출 합니다.
 
@@ -424,7 +425,7 @@ BOOL Create(CImageList* pImageList);
 BOOL DeleteImageList();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -432,7 +433,7 @@ BOOL DeleteImageList();
 
 [!code-cpp[NVC_MFC_CImageList#8](../../mfc/reference/codesnippet/cpp/cimagelist-class_6.cpp)]
 
-## <a name="cimagelistdeletetempmap"></a><a name="deletetempmap"></a>CImageList::D eleteTempMap
+## <a name="cimagelistdeletetempmap"></a><a name="deletetempmap"></a> CImageList::D eleteTempMap
 
 유휴 시간 처리기에서 자동으로 호출 `CWinApp` 되며, `DeleteTempMap` `CImageList` [fromhandle](#fromhandle)에 의해 생성 된 모든 임시 개체를 삭제 하지만 `hImageList` 개체와 일시적으로 연결 된 핸들 ()은 소멸 하지 않습니다 `ImageList` .
 
@@ -444,7 +445,7 @@ static void PASCAL DeleteTempMap();
 
 [!code-cpp[NVC_MFC_CImageList#9](../../mfc/reference/codesnippet/cpp/cimagelist-class_7.cpp)]
 
-## <a name="cimagelistdetach"></a><a name="detach"></a>CImageList::D etach
+## <a name="cimagelistdetach"></a><a name="detach"></a> CImageList::D etach
 
 개체에서 이미지 목록 개체를 분리 하려면이 함수를 호출 `CImageList` 합니다.
 
@@ -452,7 +453,7 @@ static void PASCAL DeleteTempMap();
 HIMAGELIST Detach();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이미지 목록 개체에 대 한 핸들입니다.
 
@@ -464,9 +465,9 @@ HIMAGELIST Detach();
 
   [CImageList:: Attach](#attach)의 예제를 참조 하세요.
 
-## <a name="cimagelistdragenter"></a><a name="dragenter"></a>CImageList::D ragEnter
+## <a name="cimagelistdragenter"></a><a name="dragenter"></a> CImageList::D ragEnter
 
-끌기 작업 중에는 *pWndLock* 로 지정 된 창으로 업데이트를 잠그고 *point*로 지정 된 위치에 끌기 이미지를 표시 합니다.
+끌기 작업 중에는 *pWndLock* 로 지정 된 창으로 업데이트를 잠그고 *point* 로 지정 된 위치에 끌기 이미지를 표시 합니다.
 
 ```
 static BOOL PASCAL DragEnter(
@@ -482,7 +483,7 @@ static BOOL PASCAL DragEnter(
 *까지*<br/>
 끌기 이미지를 표시할 위치입니다. 좌표는 창의 왼쪽 위 모퉁이를 기준으로 합니다 (클라이언트 영역이 아님).
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -498,7 +499,7 @@ static BOOL PASCAL DragEnter(
 
   [CImageList:: BeginDrag](#begindrag)의 예제를 참조 하세요.
 
-## <a name="cimagelistdragleave"></a><a name="dragleave"></a>CImageList::D ragLeave
+## <a name="cimagelistdragleave"></a><a name="dragleave"></a> CImageList::D ragLeave
 
 *PWndLock* 에 지정 된 창의 잠금을 해제 하 고 끌기 이미지를 숨겨 창이 업데이트 될 수 있도록 합니다.
 
@@ -511,7 +512,7 @@ static BOOL PASCAL DragLeave(CWnd* pWndLock);
 *pWndLock*<br/>
 끌기 이미지를 소유 하는 창에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -519,7 +520,7 @@ static BOOL PASCAL DragLeave(CWnd* pWndLock);
 
   [CImageList:: EndDrag](#enddrag)의 예제를 참조 하세요.
 
-## <a name="cimagelistdragmove"></a><a name="dragmove"></a>CImageList::D ragMove
+## <a name="cimagelistdragmove"></a><a name="dragmove"></a> CImageList::D ragMove
 
 끌어서 놓기 작업을 수행 하는 동안 끌고 있는 이미지를 이동 하려면이 함수를 호출 합니다.
 
@@ -529,10 +530,10 @@ static BOOL PASCAL DragMove(CPoint pt);
 
 ### <a name="parameters"></a>매개 변수
 
-*p t*<br/>
+*pt*<br/>
 새 끌기 위치입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -544,7 +545,7 @@ static BOOL PASCAL DragMove(CPoint pt);
 
 [!code-cpp[NVC_MFC_CImageList#4](../../mfc/reference/codesnippet/cpp/cimagelist-class_8.cpp)]
 
-## <a name="cimagelistdragshownolock"></a><a name="dragshownolock"></a>CImageList::D ragShowNolock
+## <a name="cimagelistdragshownolock"></a><a name="dragshownolock"></a> CImageList::D ragShowNolock
 
 창을 잠그지 않고 끌기 작업 중에 끌기 이미지를 표시 하거나 숨깁니다.
 
@@ -557,7 +558,7 @@ static BOOL PASCAL DragShowNolock(BOOL bShow);
 *bShow*<br/>
 끌기 이미지를 표시할지 여부를 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -565,7 +566,7 @@ static BOOL PASCAL DragShowNolock(BOOL bShow);
 
 [CImageList::D ragenter](#dragenter) 함수는 끌기 작업 중에 창에 대 한 모든 업데이트를 잠급니다. 그러나이 함수는 창을 잠그지 않습니다.
 
-## <a name="cimagelistdraw"></a><a name="draw"></a>CImageList: 원시:D
+## <a name="cimagelistdraw"></a><a name="draw"></a> CImageList: 원시:D
 
 끌어서 놓기 작업을 수행 하는 동안 끌고 있는 이미지를 그리려면이 함수를 호출 합니다.
 
@@ -585,7 +586,7 @@ BOOL Draw(
 *nImage*<br/>
 그릴 이미지의 0부터 시작 하는 인덱스입니다.
 
-*p t*<br/>
+*pt*<br/>
 지정 된 장치 컨텍스트 내에서 그릴 위치입니다.
 
 *nStyle*<br/>
@@ -599,7 +600,7 @@ BOOL Draw(
 |ILD_NORMAL|이미지 목록의 배경색을 사용 하 여 이미지를 그립니다. 배경색이 CLR_NONE 값 이면 마스크를 사용 하 여 이미지가 투명 하 게 그려집니다.|
 |ILD_TRANSPARENT|배경 색에 관계 없이 마스크를 사용 하 여 투명 하 게 이미지를 그립니다.|
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -607,7 +608,7 @@ BOOL Draw(
 
   [CImageList:: SetOverlayImage](#setoverlayimage)의 예제를 참조 하세요.
 
-## <a name="cimagelistdrawex"></a><a name="drawex"></a>CImageList::D rawEx
+## <a name="cimagelistdrawex"></a><a name="drawex"></a> CImageList::D rawEx
 
 지정 된 장치 컨텍스트에 이미지 목록 항목을 그립니다.
 
@@ -630,7 +631,7 @@ BOOL DrawEx(
 *nImage*<br/>
 그릴 이미지의 0부터 시작 하는 인덱스입니다.
 
-*p t*<br/>
+*pt*<br/>
 지정 된 장치 컨텍스트 내에서 그릴 위치입니다.
 
 *sz*<br/>
@@ -645,7 +646,7 @@ BOOL DrawEx(
 *nStyle*<br/>
 그리기 스타일을 지정 하는 플래그입니다. Windows SDK에서 [ImageList_DrawEx](/windows/win32/api/commctrl/nf-commctrl-imagelist_drawex) 의 *fstyle* 을 참조 하십시오.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -657,7 +658,7 @@ BOOL DrawEx(
 
 [!code-cpp[NVC_MFC_CImageList#10](../../mfc/reference/codesnippet/cpp/cimagelist-class_9.cpp)]
 
-## <a name="cimagelistdrawindirect"></a><a name="drawindirect"></a>CImageList::D rawIndirect
+## <a name="cimagelistdrawindirect"></a><a name="drawindirect"></a> CImageList::D rawIndirect
 
 이미지 목록에서 이미지를 그리려면이 멤버 함수를 호출 합니다.
 
@@ -690,7 +691,7 @@ BOOL DrawIndirect(
 *nImage*<br/>
 그릴 이미지의 인덱스 (0부터 시작)입니다.
 
-*p t*<br/>
+*pt*<br/>
 이미지를 그릴 x 및 y 좌표를 포함 하는 [점](/windows/win32/api/windef/ns-windef-point) 구조입니다.
 
 *sz*<br/>
@@ -740,7 +741,7 @@ ILS_APLHA와 함께 사용 하는 경우이 멤버는 알파 채널에 대 한 �
 *crEffect*<br/>
 네온 및 그림자 효과에 사용 되는 [Colorref](/windows/win32/gdi/colorref) 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이미지가 성공적으로 그려진 경우 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
@@ -754,7 +755,7 @@ Win32 구조를 직접 입력 하려면 첫 번째 버전을 사용 합니다. �
 
 [!code-cpp[NVC_MFC_CImageList#11](../../mfc/reference/codesnippet/cpp/cimagelist-class_10.cpp)]
 
-## <a name="cimagelistenddrag"></a><a name="enddrag"></a>CImageList:: EndDrag
+## <a name="cimagelistenddrag"></a><a name="enddrag"></a> CImageList:: EndDrag
 
 이 함수를 호출 하 여 끌기 작업을 종료 합니다.
 
@@ -770,7 +771,7 @@ static void PASCAL EndDrag();
 
 [!code-cpp[NVC_MFC_CImageList#5](../../mfc/reference/codesnippet/cpp/cimagelist-class_11.cpp)]
 
-## <a name="cimagelistextracticon"></a><a name="extracticon"></a>CImageList:: ExtractIcon
+## <a name="cimagelistextracticon"></a><a name="extracticon"></a> CImageList:: ExtractIcon
 
 이미지 목록에서 이미지 및 관련 마스크에 따라 아이콘을 만들려면이 함수를 호출 합니다.
 
@@ -783,7 +784,7 @@ HICON ExtractIcon(int nImage);
 *nImage*<br/>
 이미지의 0부터 시작 하는 인덱스입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 아이콘 핸들 그렇지 않으면 NULL입니다.
 
@@ -795,7 +796,7 @@ HICON ExtractIcon(int nImage);
 
 [!code-cpp[NVC_MFC_CImageList#12](../../mfc/reference/codesnippet/cpp/cimagelist-class_12.cpp)]
 
-## <a name="cimagelistfromhandle"></a><a name="fromhandle"></a>CImageList:: FromHandle
+## <a name="cimagelistfromhandle"></a><a name="fromhandle"></a> CImageList:: FromHandle
 
 `CImageList`이미지 목록에 대 한 핸들을 지정 하면 개체에 대 한 포인터를 반환 합니다.
 
@@ -808,7 +809,7 @@ static CImageList* PASCAL FromHandle(HIMAGELIST hImageList);
 *hImageList*<br/>
 이미지 목록을 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 개체에 대 한 포인터 `CImageList` 이 고, 그렇지 않으면 NULL입니다.
 
@@ -820,7 +821,7 @@ static CImageList* PASCAL FromHandle(HIMAGELIST hImageList);
 
 [!code-cpp[NVC_MFC_CImageList#13](../../mfc/reference/codesnippet/cpp/cimagelist-class_13.cpp)]
 
-## <a name="cimagelistfromhandlepermanent"></a><a name="fromhandlepermanent"></a>CImageList:: FromHandlePermanent
+## <a name="cimagelistfromhandlepermanent"></a><a name="fromhandlepermanent"></a> CImageList:: FromHandlePermanent
 
 `CImageList`이미지 목록에 대 한 핸들을 지정 하면 개체에 대 한 포인터를 반환 합니다.
 
@@ -833,7 +834,7 @@ static CImageList* PASCAL FromHandlePermanent(HIMAGELIST hImageList);
 *hImageList*<br/>
 이미지 목록을 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 개체에 대 한 포인터 `CImageList` 이 고, 그렇지 않으면 NULL입니다.
 
@@ -845,7 +846,7 @@ static CImageList* PASCAL FromHandlePermanent(HIMAGELIST hImageList);
 
 [!code-cpp[NVC_MFC_CImageList#14](../../mfc/reference/codesnippet/cpp/cimagelist-class_14.cpp)]
 
-## <a name="cimagelistgetbkcolor"></a><a name="getbkcolor"></a>CImageList:: GetBkColor
+## <a name="cimagelistgetbkcolor"></a><a name="getbkcolor"></a> CImageList:: GetBkColor
 
 이미지 목록의 현재 배경색을 검색 하려면이 함수를 호출 합니다.
 
@@ -853,7 +854,7 @@ static CImageList* PASCAL FromHandlePermanent(HIMAGELIST hImageList);
 COLORREF GetBkColor() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 개체 배경색의 RGB 색 값입니다 `CImageList` .
 
@@ -861,7 +862,7 @@ COLORREF GetBkColor() const;
 
   [CImageList:: SetBkColor](#setbkcolor)의 예제를 참조 하세요.
 
-## <a name="cimagelistgetdragimage"></a><a name="getdragimage"></a>CImageList:: GetDragImage
+## <a name="cimagelistgetdragimage"></a><a name="getdragimage"></a> CImageList:: GetDragImage
 
 끌기에 사용 되는 임시 이미지 목록을 가져옵니다.
 
@@ -879,11 +880,11 @@ static CImageList* PASCAL GetDragImage(
 *lpPointHotSpot*<br/>
 끌기 `POINT` 위치를 기준으로 하는 끌기 이미지의 오프셋을 받는 구조체의 주소입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 끌기에 사용 되는 임시 이미지 목록에 대 한 포인터입니다. 그렇지 않으면 NULL입니다.
 
-## <a name="cimagelistgetimagecount"></a><a name="getimagecount"></a>CImageList:: GetImageCount
+## <a name="cimagelistgetimagecount"></a><a name="getimagecount"></a> CImageList:: GetImageCount
 
 이미지 목록의 이미지 수를 검색 하려면이 함수를 호출 합니다.
 
@@ -891,7 +892,7 @@ static CImageList* PASCAL GetDragImage(
 int GetImageCount() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이미지 수입니다.
 
@@ -899,7 +900,7 @@ int GetImageCount() const;
 
   [CImageList:: ExtractIcon](#extracticon)의 예제를 참조 하세요.
 
-## <a name="cimagelistgetimageinfo"></a><a name="getimageinfo"></a>CImageList:: GetImageInfo
+## <a name="cimagelistgetimageinfo"></a><a name="getimageinfo"></a> CImageList:: GetImageInfo
 
 이미지에 대 한 정보를 검색 하려면이 함수를 호출 합니다.
 
@@ -917,7 +918,7 @@ BOOL GetImageInfo(
 *pImageInfo*<br/>
 이미지에 대 한 정보를 받는 [Imageinfo](/windows/win32/api/commctrl/ns-commctrl-imageinfo) 구조체에 대 한 포인터입니다. 이 구조체의 정보는 이미지에 대 한 비트맵을 직접 조작 하는 데 사용할 수 있습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -925,7 +926,7 @@ BOOL GetImageInfo(
 
 `IMAGEINFO`구조는 이미지 목록의 이미지에 대 한 정보를 포함 합니다.
 
-## <a name="cimagelistgetsafehandle"></a><a name="getsafehandle"></a>CImageList:: GetSafeHandle
+## <a name="cimagelistgetsafehandle"></a><a name="getsafehandle"></a> CImageList:: GetSafeHandle
 
 데이터 멤버를 검색 하려면이 함수를 호출 `m_hImageList` 합니다.
 
@@ -933,7 +934,7 @@ BOOL GetImageInfo(
 HIMAGELIST GetSafeHandle() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 연결 된 이미지 목록에 대 한 핸들입니다. 개체가 연결 되어 있지 않으면 NULL입니다.
 
@@ -941,7 +942,7 @@ HIMAGELIST GetSafeHandle() const;
 
 [!code-cpp[NVC_MFC_CImageList#15](../../mfc/reference/codesnippet/cpp/cimagelist-class_15.cpp)]
 
-## <a name="cimagelistm_himagelist"></a><a name="m_himagelist"></a>CImageList:: m_hImageList
+## <a name="cimagelistm_himagelist"></a><a name="m_himagelist"></a> CImageList:: m_hImageList
 
 이 개체에 연결 된 이미지 목록의 핸들입니다.
 
@@ -955,7 +956,7 @@ HIMAGELIST GetSafeHandle() const;
 
 [!code-cpp[NVC_MFC_CImageList#23](../../mfc/reference/codesnippet/cpp/cimagelist-class_16.cpp)]
 
-## <a name="cimagelistoperator-himagelist"></a><a name="operator_himagelist"></a>CImageList:: operator HIMAGELIST
+## <a name="cimagelistoperator-himagelist"></a><a name="operator_himagelist"></a> CImageList:: operator HIMAGELIST
 
 이 연산자를 사용 하 여 개체의 연결 된 핸들을 가져옵니다 `CImageList` .
 
@@ -963,7 +964,7 @@ HIMAGELIST GetSafeHandle() const;
 operator HIMAGELIST() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 개체가 나타내는 이미지 목록에 대 한 핸들이 고, `CImageList` 그렇지 않으면 NULL입니다.
 
@@ -975,7 +976,7 @@ operator HIMAGELIST() const;
 
 [!code-cpp[NVC_MFC_CImageList#16](../../mfc/reference/codesnippet/cpp/cimagelist-class_17.cpp)]
 
-## <a name="cimagelistread"></a><a name="read"></a>CImageList:: Read
+## <a name="cimagelistread"></a><a name="read"></a> CImageList:: Read
 
 이 함수를 호출 하 여 보관 파일에서 이미지 목록을 읽습니다.
 
@@ -988,7 +989,7 @@ BOOL Read(CArchive* pArchive);
 *pArchive*<br/>
 `CArchive`이미지 목록을 읽을 개체에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -996,7 +997,7 @@ BOOL Read(CArchive* pArchive);
 
 [!code-cpp[NVC_MFC_CImageList#18](../../mfc/reference/codesnippet/cpp/cimagelist-class_18.cpp)]
 
-## <a name="cimagelistremove"></a><a name="remove"></a>CImageList:: Remove
+## <a name="cimagelistremove"></a><a name="remove"></a> CImageList:: Remove
 
 이미지 목록 개체에서 이미지를 제거 하려면이 함수를 호출 합니다.
 
@@ -1009,7 +1010,7 @@ BOOL Remove(int nImage);
 *nImage*<br/>
 제거할 이미지의 0부터 시작 하는 인덱스입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -1021,7 +1022,7 @@ BOOL Remove(int nImage);
 
 [!code-cpp[NVC_MFC_CImageList#19](../../mfc/reference/codesnippet/cpp/cimagelist-class_19.cpp)]
 
-## <a name="cimagelistreplace"></a><a name="replace"></a>CImageList:: Replace
+## <a name="cimagelistreplace"></a><a name="replace"></a> CImageList:: Replace
 
 이미지 목록의 이미지를 새 이미지로 바꾸려면이 함수를 호출 합니다.
 
@@ -1050,7 +1051,7 @@ int Replace(
 *hIcon*<br/>
 새 이미지에 대 한 비트맵과 마스크를 포함 하는 아이콘에 대 한 핸들입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 BOOL을 반환 하는 버전은 0이 아닌 값을 반환 합니다. 그렇지 않으면 0입니다.
 
@@ -1064,7 +1065,7 @@ int Replace(
 
   [CImageList:: SetImageCount](#setimagecount)의 예제를 참조 하세요.
 
-## <a name="cimagelistsetbkcolor"></a><a name="setbkcolor"></a>CImageList:: SetBkColor
+## <a name="cimagelistsetbkcolor"></a><a name="setbkcolor"></a> CImageList:: SetBkColor
 
 이미지 목록의 배경색을 설정 하려면이 함수를 호출 합니다.
 
@@ -1077,7 +1078,7 @@ COLORREF SetBkColor(COLORREF cr);
 *cr*<br/>
 설정할 배경색입니다. CLR_NONE 수 있습니다. 이 경우 이미지는 마스크를 사용 하 여 투명 하 게 그려집니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 이전 배경색입니다. 그렇지 않으면 CLR_NONE 합니다.
 
@@ -1085,7 +1086,7 @@ COLORREF SetBkColor(COLORREF cr);
 
 [!code-cpp[NVC_MFC_CImageList#20](../../mfc/reference/codesnippet/cpp/cimagelist-class_20.cpp)]
 
-## <a name="cimagelistsetdragcursorimage"></a><a name="setdragcursorimage"></a>CImageList:: SetDragCursorImage
+## <a name="cimagelistsetdragcursorimage"></a><a name="setdragcursorimage"></a> CImageList:: SetDragCursorImage
 
 지정 된 이미지 (일반적으로 마우스 커서 이미지)와 현재 끌기 이미지를 결합 하 여 새 끌기 이미지를 만듭니다.
 
@@ -1103,7 +1104,7 @@ BOOL SetDragCursorImage(
 *ptHotSpot*<br/>
 새 이미지 내 핫 스폿의 위치입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -1111,7 +1112,7 @@ BOOL SetDragCursorImage(
 
 끌기 작업을 수행 하는 동안 끌기 함수는 새 이미지를 사용 하기 때문에를 호출한 후에는 Windows [ShowCursor](/windows/win32/api/winuser/nf-winuser-showcursor) 함수를 사용 하 여 실제 마우스 커서를 숨겨야 합니다 `CImageList::SetDragCursorImage` . 그렇지 않으면 끌기 작업 기간 동안 두 개의 마우스 커서가 있는 시스템에 표시 될 수 있습니다.
 
-## <a name="cimagelistsetimagecount"></a><a name="setimagecount"></a>CImageList:: SetImageCount
+## <a name="cimagelistsetimagecount"></a><a name="setimagecount"></a> CImageList:: SetImageCount
 
 개체의 이미지 수를 다시 설정 하려면이 멤버 함수를 호출 `CImageList` 합니다.
 
@@ -1124,7 +1125,7 @@ BOOL SetImageCount(UINT uNewCount);
 *uNewCount*<br/>
 이미지 목록의 새 총 이미지 수를 지정 하는 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하는 경우 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -1138,7 +1139,7 @@ BOOL SetImageCount(UINT uNewCount);
 
 [!code-cpp[NVC_MFC_CImageList#21](../../mfc/reference/codesnippet/cpp/cimagelist-class_21.cpp)]
 
-## <a name="cimagelistsetoverlayimage"></a><a name="setoverlayimage"></a>CImageList:: SetOverlayImage
+## <a name="cimagelistsetoverlayimage"></a><a name="setoverlayimage"></a> CImageList:: SetOverlayImage
 
 오버레이 마스크로 사용할 이미지 목록에 이미지의 0부터 시작 하는 인덱스를 추가 하려면이 함수를 호출 합니다.
 
@@ -1156,7 +1157,7 @@ BOOL SetOverlayImage(
 *nOverlay*<br/>
 오버레이 마스크의 인덱스 (1부터 사용)입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -1170,7 +1171,7 @@ BOOL SetOverlayImage(
 
 [!code-cpp[NVC_MFC_CImageList#22](../../mfc/reference/codesnippet/cpp/cimagelist-class_22.cpp)]
 
-## <a name="cimagelistwrite"></a><a name="write"></a>CImageList:: Write
+## <a name="cimagelistwrite"></a><a name="write"></a> CImageList:: Write
 
 보관에 이미지 목록 개체를 쓰려면이 함수를 호출 합니다.
 
@@ -1183,7 +1184,7 @@ BOOL Write(CArchive* pArchive);
 *pArchive*<br/>
 이미지 목록이 저장 되는 개체에 대 한 포인터입니다 `CArchive` .
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 

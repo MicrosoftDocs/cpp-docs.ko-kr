@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: propputref'
 title: propputref (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - propputref attribute
 ms.assetid: 9b0aed74-fdc7-4e59-9117-949bea4f86dd
-ms.openlocfilehash: dbb5d5966fc82f69be0ed7d2fa0a66ad558a7915
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5f09d742ef0df75df03e4f4d740181cfcaaa8f2d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839909"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329670"
 ---
 # <a name="propputref"></a>propputref
 
@@ -29,7 +30,7 @@ ms.locfileid: "88839909"
 
 ## <a name="example"></a>예제
 
-**Propputref**의 샘플 사용에 대 한 [바인딩](bindable.md) 예제를 참조 하세요.
+**Propputref** 의 샘플 사용에 대 한 [바인딩](bindable.md) 예제를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 

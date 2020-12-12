@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 창 개체 소멸'
 title: 창 개체 소멸시키기
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - window objects [MFC], destroying
 - window objects [MFC], removing
 ms.assetid: 3241fea0-c614-4a25-957d-20f21bd5fd0c
-ms.openlocfilehash: 22b483c1005931b229453ae229935c0e716ab726
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: c2837ba6b9f568d7f6ab0175ae3ad99c31ccdc7e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84621858"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327821"
 ---
 # <a name="destroying-window-objects"></a>창 개체 소멸시키기
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 표준 컨트롤에서 컨트롤 파생'
 title: 표준 컨트롤에서 컨트롤 파생시키기
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - Windows common controls [MFC], deriving from
 - standard controls
 ms.assetid: a6f84315-7007-4e0e-8576-78be81254802
-ms.openlocfilehash: 54e43c8445bb6b8db4c6a7a4b28890e81be52d6c
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 80e63464a7ad6d869582c66d5047a255e303a6a9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616963"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327872"
 ---
 # <a name="deriving-controls-from-a-standard-control"></a>표준 컨트롤에서 컨트롤 파생시키기
 
@@ -36,7 +37,7 @@ ms.locfileid: "84616963"
 
 1. `OnInitDialog` `SubclassDlgItem` 파생 컨트롤에 대 한 멤버 함수를 호출 하도록 대화 상자 클래스의 멤버 함수를 재정의 합니다.
 
-`SubclassDlgItem`대화 상자 템플릿에서 생성 된 컨트롤을 "동적으로 서브 클래스" 합니다. 컨트롤이 동적으로 서브클래싱된 경우 Windows에 연결 하 여 응용 프로그램 내에서 일부 메시지를 처리 한 다음 나머지 메시지를 Windows에 전달 합니다. 자세한 내용은 MFC 참조에서 클래스의 [SubclassDlgItem](reference/cwnd-class.md#subclassdlgitem) 멤버 함수를 참조 `CWnd` 하세요 *MFC Reference*. 다음 예제에서는 `OnInitDialog` 를 호출 하기 위해의 재정의를 작성할 수 있는 방법을 보여 줍니다 `SubclassDlgItem` .
+`SubclassDlgItem` 대화 상자 템플릿에서 생성 된 컨트롤을 "동적으로 서브 클래스" 합니다. 컨트롤이 동적으로 서브클래싱된 경우 Windows에 연결 하 여 응용 프로그램 내에서 일부 메시지를 처리 한 다음 나머지 메시지를 Windows에 전달 합니다. 자세한 내용은 MFC 참조에서 클래스의 [SubclassDlgItem](reference/cwnd-class.md#subclassdlgitem) 멤버 함수를 참조 `CWnd` 하세요 . 다음 예제에서는 `OnInitDialog` 를 호출 하기 위해의 재정의를 작성할 수 있는 방법을 보여 줍니다 `SubclassDlgItem` .
 
 [!code-cpp[NVC_MFCControlLadenDialog#3](codesnippet/cpp/deriving-controls-from-a-standard-control_1.cpp)]
 

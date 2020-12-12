@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4717'
 title: 컴파일러 경고(수준 1) C4717
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4717
 ms.assetid: 5ef3c6c7-8599-4714-a973-0f5b69cdab3c
-ms.openlocfilehash: 40897e54601793431671bc14f855db43e905c656
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 7a23469539dd809ea4905701bd1f8064f26a8036
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80175290"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97328139"
 ---
 # <a name="compiler-warning-level-1-c4717"></a>컴파일러 경고(수준 1) C4717
 

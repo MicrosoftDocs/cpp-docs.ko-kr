@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _findclose'
 title: _findclose
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - _findclose function
 - findclose function
 ms.assetid: 9216c573-0878-444c-b5d7-cdaf16fb9163
-ms.openlocfilehash: dffe2ff71f1eecaec78c75867ebb7e34a963ee3a
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 389a8aaf55605a1d9e3193c86ce500bf313fd631
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911803"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329203"
 ---
 # <a name="_findclose"></a>_findclose
 
@@ -50,9 +51,9 @@ int _findclose(
 ### <a name="parameters"></a>매개 변수
 
 *처리*<br/>
-**_Findfirst**에 대 한 이전 호출에서 반환 된 검색 핸들입니다.
+**_Findfirst** 에 대 한 이전 호출에서 반환 된 검색 핸들입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 성공 하면 **_findclose** 가 0을 반환 합니다. 그렇지 않으면-1을 반환 하 고 **errno** 를 **enoent (** 로 설정 하 여 더 이상 일치 하는 파일을 찾을 수 없음을 나타냅니다.
 
@@ -62,13 +63,13 @@ int _findclose(
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|필수 헤더|
+|함수|필수 헤더|
 |--------------|---------------------|
 |**_findclose**|\<io.h>|
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [시스템 호출](../../c-runtime-library/system-calls.md)<br/>
 [파일 이름 검색 함수](../../c-runtime-library/filename-search-functions.md)<br/>

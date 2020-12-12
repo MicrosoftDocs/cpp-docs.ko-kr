@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 배포 개념'
 title: 배포 개념
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - deploying applications [C++], about deploying applications
 - libraries [C++], application deployment issues
 ms.assetid: ebd7f246-ab54-40e8-87fa-dac02c0047b3
-ms.openlocfilehash: ac3565b4ec465ec60672d2238fbe81b71613a6c1
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 441e067a541f375029cdb55321a8ad75d1f03c67
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65449030"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329425"
 ---
 # <a name="deployment-concepts"></a>배포 개념
 
@@ -21,7 +22,7 @@ ms.locfileid: "65449030"
 
 ## <a name="windows-installer-deployment-in-c"></a>C++에서 Windows Installer 배포
 
-Visual Studio C++ 프로젝트 배포에 대 한 일반적으로 기존 Windows Installer 설치를 사용 합니다. Windows Installer 배포를 준비하려면 setup.exe 파일에서 애플리케이션을 패키지하고 설치 관리자 패키지(.msi)와 함께 해당 파일을 배포합니다. 그런 다음, 사용자는 setup.exe를 실행하여 애플리케이션을 설치합니다.
+Visual Studio c + + 프로젝트는 일반적으로 기존 Windows Installer 설치 프로그램을 사용 하 여 배포 합니다. Windows Installer 배포를 준비하려면 setup.exe 파일에서 애플리케이션을 패키지하고 설치 관리자 패키지(.msi)와 함께 해당 파일을 배포합니다. 그런 다음, 사용자는 setup.exe를 실행하여 애플리케이션을 설치합니다.
 
 설치 프로젝트를 솔루션에 추가하여 애플리케이션 패키지하고, 빌드할 때 사용자에게 배포하는 설정 및 설치 관리자 패키지 파일을 만듭니다. 자세한 내용은 [배포 방법 선택](choosing-a-deployment-method.md)을 참조하세요.
 
@@ -35,19 +36,19 @@ Visual C++ 라이브러리는 DLL로 패키지되며, Visual Studio에서 C/C++ 
 
 패키징 및 재배포에 대한 자세한 내용은 다음 항목을 참조합니다.
 
-- [재배포할 DLL 확인](determining-which-dlls-to-redistribute.md).
+- [재배포할 Dll 확인](determining-which-dlls-to-redistribute.md)
 
-- [배포 방법 선택](choosing-a-deployment-method.md).
+- [배포 방법 선택](choosing-a-deployment-method.md)
 
-- [범용 CRT 배포](universal-crt-deployment.md).
+- [유니버설 CRT 배포](universal-crt-deployment.md).
 
 문제 해결에 대한 배포 예제 및 제안 사항은 다음을 참조합니다.
 
 - [배포 예제](deployment-examples.md).
 
-- [C/C++ 격리된 애플리케이션 및 side-by-side 어셈블리 문제 해결](../build/troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md).
+- [C/c + + 격리 된 응용 프로그램 및 Side-by-side 어셈블리 문제 해결](../build/troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-- [데스크톱 응용 프로그램 배포](deploying-native-desktop-applications-visual-cpp.md)
+- [데스크톱 애플리케이션 배포](deploying-native-desktop-applications-visual-cpp.md)
 - [Visual C++ 애플리케이션의 종속성 이해](understanding-the-dependencies-of-a-visual-cpp-application.md)

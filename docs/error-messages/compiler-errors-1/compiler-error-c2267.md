@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2267'
 title: 컴파일러 오류 C2267
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2267
 ms.assetid: ea63bebb-6208-4367-8440-39be07f9c360
-ms.openlocfilehash: 0a72470feb79a226fe0f167364eeaea7dec9fd4d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: df69073cbb1956033cf7d028c56e13018e4bbcf4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87208475"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97328406"
 ---
 # <a name="compiler-error-c2267"></a>컴파일러 오류 C2267
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 네이티브 데스크톱 응용 프로그램 배포 (Visual C++)'
 title: 네이티브 데스크톱 애플리케이션 배포(Visual C++)
 ms.date: 05/11/2018
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - distributing applications [C++]
 ms.assetid: 37f1691e-d67c-41e4-926e-528a237a9bac
 ms.topic: overview
-ms.openlocfilehash: e9ae5db05c0835bb65a65cdccf58ab7f7d1b789f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: c3da460266eb630e7ac243f523fa6e89a79fa1f0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80160192"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329442"
 ---
 # <a name="deploying-native-desktop-applications-visual-c"></a>네이티브 데스크톱 애플리케이션 배포(Visual C++)
 
@@ -41,7 +42,7 @@ Visual Studio는 Windows 애플리케이션을 배포하는 다양한 기술을 
 
 - [배포 방법 선택](choosing-a-deployment-method.md)
 
-- [범용 CRT 배포](universal-crt-deployment.md).
+- [유니버설 CRT 배포](universal-crt-deployment.md).
 
 - [Visual C++ 파일 재배포](redistributing-visual-cpp-files.md)
 
@@ -49,11 +50,11 @@ Visual Studio는 Windows 애플리케이션을 배포하는 다양한 기술을 
 
 - [웹 클라이언트 애플리케이션 재배포](redistributing-web-client-applications.md)
 
-- [ClickOnce Deployment for Visual C++ Applications](clickonce-deployment-for-visual-cpp-applications.md)
+- [Visual C++ 응용 프로그램에 대 한 ClickOnce 배포](clickonce-deployment-for-visual-cpp-applications.md)
 
 - [이전 버전의 런타임에서 C++ /clr 애플리케이션 실행](running-a-cpp-clr-application-on-a-previous-runtime-version.md)
 
-## <a name="related-sections"></a>관련 섹션
+## <a name="related-sections"></a>관련 단원
 
 - [C/C++ 격리된 애플리케이션 및 side-by-side 어셈블리 빌드](../build/building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
 

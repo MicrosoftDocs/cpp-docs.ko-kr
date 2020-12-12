@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 동기화'
 title: synchronize (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - synchronize attribute
 ms.assetid: 15fc8544-955d-4765-b3d5-0f619c8b3f40
-ms.openlocfilehash: a7edbaa4e572af18bec9b3b6bef54594d6511390
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: bbee19406396e4041b4d7ca1e2acf2b8d7193494
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831673"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329552"
 ---
 # <a name="synchronize"></a>synchronize
 

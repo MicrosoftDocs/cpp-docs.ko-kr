@@ -1,4 +1,5 @@
 ---
+description: 자세한 내용은 User-Defined 특성 (c + +/CLI 및 c + +/CX)을 (를) 확인 하세요.
 title: 사용자 정의 특성(C++/CLI 및 C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - metadata, extending
 - custom attributes, extending metadata
 ms.assetid: 98b29048-a3ea-4698-8441-f149cdaec9fb
-ms.openlocfilehash: aed36ac7fed7eb1f16f8648f7bcd7efb37f43a75
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 2fab2cc1317522b43cd4bddbb56ae174907607d7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80171894"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327901"
 ---
 # <a name="user-defined-attributes--ccli-and-ccx"></a>사용자 정의 특성(C++/CLI 및 C++/CX)
 
@@ -43,7 +44,7 @@ Visual C++에서 어셈블리에 서명하는 방법에 대한 자세한 내용�
 
 컴파일러 옵션: `/clr`
 
-### <a name="examples"></a>예
+### <a name="examples"></a>예제
 
 다음 샘플에서는 사용자 지정 특성을 정의하는 방법을 보여 줍니다.
 
@@ -194,4 +195,4 @@ ref struct B {};
 
 ## <a name="see-also"></a>참고 항목
 
-[.NET 및 UWP용 구성 요소 확장](component-extensions-for-runtime-platforms.md)
+[.NET 및 UWP 용 구성 요소 확장](component-extensions-for-runtime-platforms.md)

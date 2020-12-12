@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: size_is'
 title: size_is (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - size_is attribute
 ms.assetid: 70192d09-f6c5-4d52-b3fe-303f8cb10aa5
-ms.openlocfilehash: dd0ec8622dfffdf9a0578c86d75d313042cc3c01
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f61124dc286de1c8893f093454c921b4d6e46037
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841768"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329613"
 ---
 # <a name="size_is"></a>size_is
 

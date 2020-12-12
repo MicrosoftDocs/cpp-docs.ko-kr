@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2264'
 title: 컴파일러 오류 C2264
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2264
 ms.assetid: 158b72cc-cee9-4a08-bd79-b7a5955345a8
-ms.openlocfilehash: df3b51c60a0546ed00a8cba7c6db066792cf50a2
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: a838271897db7a1ce553e6e9ea0d3f3e0c985a9a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74758751"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97328420"
 ---
 # <a name="compiler-error-c2264"></a>컴파일러 오류 C2264
 

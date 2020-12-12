@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: odl'
 title: odl (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - odl attribute
 ms.assetid: 75dcb314-b50f-4a63-9180-507ac1bc78f3
-ms.openlocfilehash: a2f3c58e40dc14d256ca694bb1266aed13dc9620
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 00228a11876a551a02a292fc4f20ea67f55506c2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842821"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329734"
 ---
 # <a name="odl"></a>odl
 

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: transmit_as'
 title: transmit_as (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - transmit_as attribute
 ms.assetid: 53d0b8ab-5b06-423e-83eb-3d01a10424b2
-ms.openlocfilehash: 9483bfd7ca95aa1121beb56aac8a286c25fa17cb
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5f626612257decaf8c7ac6253e3a586b9753deeb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840806"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329544"
 ---
 # <a name="transmit_as"></a>transmit_as
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2064 오류가 발생'
 title: 컴파일러 오류 C2064 오류가 발생
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2064
 ms.assetid: 6cda05da-f437-4f50-9813-ae69538713a3
-ms.openlocfilehash: cd62ea825e3ae7d9e4acc1cb6d93d4bc102be0eb
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: dd9f0386267a81d4f92d6dd0474cd9a3292e7345
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74737324"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97328570"
 ---
 # <a name="compiler-error-c2064"></a>컴파일러 오류 C2064 오류가 발생
 

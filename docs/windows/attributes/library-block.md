@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: library_block'
 title: library_block (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - library_block attribute
 ms.assetid: ae7a7ebe-5e1a-4eda-a058-11bbd058ece8
-ms.openlocfilehash: 13988abc12eb0b136dfc8d2c0d597005b56f0526
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 486c40fa8641e74b6e3bc72bc7f980e3ee1216e1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834118"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329822"
 ---
 # <a name="library_block"></a>library_block
 

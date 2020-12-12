@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: _strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l'
 title: _strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l
 ms.date: 4/2/2020
 api_name:
@@ -67,12 +68,12 @@ helpviewer_keywords:
 - fstrset function
 - _tcsset_l function
 ms.assetid: c42ded42-2ed9-4f06-a0a9-247ba305473a
-ms.openlocfilehash: 99cf969714115effcfd7f8f82b2247556d5dd110
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4f8c3e0d9f6cb9cdb372ad5eac9a0f5d2c6d8cd8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234005"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329170"
 ---
 # <a name="_strset-_strset_l-_wcsset-_wcsset_l-_mbsset-_mbsset_l"></a>_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l
 
@@ -124,15 +125,15 @@ unsigned char *_mbsset_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 변경된 문자열에 대한 포인터를 반환합니다.
 
 ## <a name="remarks"></a>설명
 
-**_Strset** 함수는 *str* 의 모든 문자 (null 종결 문자 제외)를로 변환 된 *c*로 설정 합니다 **`char`** . **_wcsset** 및 **_mbsset_l** 는 **_strset**의 와이드 문자 및 멀티 바이트 문자 버전 이며, 인수 및 반환 값의 데이터 형식은 그에 따라 다릅니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다.
+**_Strset** 함수는 *str* 의 모든 문자 (null 종결 문자 제외)를로 변환 된 *c* 로 설정 합니다 **`char`** . **_wcsset** 및 **_mbsset_l** 는 **_strset** 의 와이드 문자 및 멀티 바이트 문자 버전 이며, 인수 및 반환 값의 데이터 형식은 그에 따라 다릅니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다.
 
-**_mbsset** 은 해당 매개 변수의 유효성을 검사 합니다. *Str* 이 null 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 **_Mbsset** **NULL** 을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다. **_strset** 및 **_wcsset** 는 매개 변수의 유효성을 검사 하지 않습니다.
+**_mbsset** 은 해당 매개 변수의 유효성을 검사 합니다. *Str* 이 null 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 **_Mbsset** **NULL** 을 반환 하 고 **errno** 를 **EINVAL** 로 설정 합니다. **_strset** 및 **_wcsset** 는 매개 변수의 유효성을 검사 하지 않습니다.
 
 출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따라 영향을 받습니다. 자세한 내용은 [setlocale, _wsetlocale를](setlocale-wsetlocale.md) 참조 하세요. **_L** 접미사가 없는 함수는 현재 로캘을 사용 하 고 **_l** 접미사가 있는 함수는 전달 된 로캘 매개 변수를 대신 사용 한다는 점을 제외 하 고 이러한 함수의 버전은 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
@@ -188,7 +189,7 @@ After:  *******************************
 
 [문자열 조작](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [로캘](../../c-runtime-library/locale.md)<br/>
-[멀티 바이트 문자 시퀀스 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Multibyte-Character 시퀀스의 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbsnbset, _mbsnbset_l](mbsnbset-mbsnbset-l.md)<br/>
 [memset, wmemset](memset-wmemset.md)<br/>
 [strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)<br/>

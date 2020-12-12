@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: 개체 (c + +)'
 title: object (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - object attribute
 ms.assetid: f2d3c231-630d-4b4c-bd15-b1c30df362dd
-ms.openlocfilehash: c0c0ff552d8a33ebe70f56b9b186e963cc8e9b3d
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 82f259f6ca36c44f33eb68970d8b76ae2acc5853
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843107"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329752"
 ---
 # <a name="object-c"></a>object(C++)
 
@@ -31,7 +32,7 @@ ms.locfileid: "88843107"
 
 ## <a name="example"></a>예제
 
-**개체**를 사용 하는 방법에 대 한 예제를 보려면 [nonbrowsable](nonbrowsable.md) 수 없음을 참조 하세요.
+**개체** 를 사용 하는 방법에 대 한 예제를 보려면 [nonbrowsable](nonbrowsable.md) 수 없음을 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -48,7 +49,7 @@ ms.locfileid: "88843107"
 
 [IDL 특성](idl-attributes.md)<br/>
 [인터페이스 특성](interface-attributes.md)<br/>
-[dual](dual.md)<br/>
+[복수](dual.md)<br/>
 [dispinterface](dispinterface.md)<br/>
 [재구성](custom-cpp.md)<br/>
 [__interface](../../cpp/interface.md)

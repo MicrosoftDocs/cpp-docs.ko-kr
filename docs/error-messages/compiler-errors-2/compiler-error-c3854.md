@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3854'
 title: 컴파일러 오류 C3854
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3854
 ms.assetid: 32a9ead0-c6c7-485a-8802-c7b1fe921d3a
-ms.openlocfilehash: 8c62117e9437233f614aa0e57a3848fcb8dd0c79
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: f6c2399ff4c38cfbb306bd90e5bb5e96b34220eb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74754851"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97328163"
 ---
 # <a name="compiler-error-c3854"></a>컴파일러 오류 C3854
 

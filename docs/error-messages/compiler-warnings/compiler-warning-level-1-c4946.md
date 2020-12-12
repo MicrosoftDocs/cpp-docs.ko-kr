@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4946'
 title: 컴파일러 경고(수준 1) C4946
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4946
 ms.assetid: b85cbef0-e053-4de6-9b14-7b0f82d40495
-ms.openlocfilehash: 3b829eb7cdd0adc58a3ddb225115a4b188a2336f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 75422a3923f0c39ec79945a2e1c6f8b91c00ace8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80199075"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327999"
 ---
 # <a name="compiler-warning-level-1-c4946"></a>컴파일러 경고(수준 1) C4946
 

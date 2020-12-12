@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4810'
 title: 컴파일러 경고(수준 1) C4810
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4810
 ms.assetid: 39e2cae0-9c1c-4ac1-aaa0-5f661d06085b
-ms.openlocfilehash: bdeb4dd28587635a391e7b776ccd88b637a7769f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 4cebcf6b4cabc2539d5fcf25363f573a704ae577
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80174936"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97328093"
 ---
 # <a name="compiler-warning-level-1-c4810"></a>컴파일러 경고(수준 1) C4810
 

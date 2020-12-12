@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2065'
 title: 컴파일러 오류 C2065
 ms.date: 08/19/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2065
 ms.assetid: 78093376-acb7-45f5-9323-5ed7e0aab1dc
-ms.openlocfilehash: 68817498d6f29ef5982b72a2fee4e64a4423ccde
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a686276aa093e1f2011212d5999d43c76062487f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214817"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97328558"
 ---
 # <a name="compiler-error-c2065"></a>컴파일러 오류 C2065
 

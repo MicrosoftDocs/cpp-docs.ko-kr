@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4953'
 title: 컴파일러 경고(수준 1) C4953
 ms.date: 08/27/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4953
 ms.assetid: 3c4f6ac6-3976-41ab-8a27-3c41d7472ea7
-ms.openlocfilehash: 46f07227b5df62938cc51a7be4cf4f3595a0d947
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 1f10f757297bd4b0e71ec5246024a3ce7a313689
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80174521"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327944"
 ---
 # <a name="compiler-warning-level-1-c4953"></a>컴파일러 경고(수준 1) C4953
 

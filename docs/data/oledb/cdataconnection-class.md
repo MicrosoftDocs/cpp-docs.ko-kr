@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CDataConnection 클래스'
 title: CDataConnection 클래스
 ms.date: 03/27/2019
 f1_keywords:
@@ -61,18 +62,18 @@ helpviewer_keywords:
 - operator CSession*
 - CSession* operator
 ms.assetid: 77432d85-4e20-49ec-a0b0-142137828471
-ms.openlocfilehash: c456f4bf5891f550fcd9523fa376333d66e079a6
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 7cdcb681c40d1ef4e93baee5dc4e4395e6ea9c5e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509100"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97328807"
 ---
 # <a name="cdataconnection-class"></a>CDataConnection 클래스
 
 데이터 원본에 대 한 연결을 관리 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CDataConnection
@@ -95,7 +96,7 @@ class CDataConnection
 
 ### <a name="operators"></a>연산자
 
-| 속성 | 설명 |
+| Name | 설명 |
 |-|-|
 |[연산자 BOOL](#op_bool)|현재 세션이 열려 있는지 여부를 확인 합니다.|
 |[연산자 bool](#op_bool_ole)|현재 세션이 열려 있는지 여부를 확인 합니다.|
@@ -108,7 +109,7 @@ class CDataConnection
 
 `CDataConnection` 는 필요한 개체 (데이터 소스 및 세션)와 데이터 소스에 연결할 때 수행 해야 하는 작업의 일부를 캡슐화 하기 때문에 클라이언트를 만드는 데 유용한 클래스입니다.
 
-를 사용 하지 않는 `CDataConnection` 경우 개체를 만들고 `CDataSource` [OpenFromInitializationString](./cdatasource-class.md#openfrominitializationstring) 메서드를 호출한 다음, [Open](./csession-class.md#open) 메서드를 호출한 다음 [CCommand](../../data/oledb/ccommand-class.md) 개체를 만들고 해당 * 메서드를 호출 해야 [CSession](../../data/oledb/csession-class.md) `Open` 합니다.
+를 사용 하지 않는 `CDataConnection` 경우 개체를 만들고 `CDataSource` [OpenFromInitializationString](./cdatasource-class.md#openfrominitializationstring) 메서드를 호출한 다음, [Open](./csession-class.md#open) 메서드를 호출한 다음 [CCommand](../../data/oledb/ccommand-class.md) 개체를 만들고 해당 * 메서드를 호출 해야 [](../../data/oledb/csession-class.md) `Open` 합니다.
 
 `CDataConnection`에서는 연결 개체를 만들고 초기화 문자열을 전달한 다음 해당 연결을 사용 하 여 명령을 열어야 합니다. 데이터베이스에 대 한 연결을 반복 해 서 사용 하려는 경우에는 연결을 열어 두는 것이 좋습니다 .이 `CDataConnection` 작업을 수행 하는 편리한 방법을 제공 합니다.
 

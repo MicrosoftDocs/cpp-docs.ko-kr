@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CDataSource 클래스'
 title: CDataSource 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -56,18 +57,18 @@ helpviewer_keywords:
 - OpenWithPromptFileName method
 - OpenWithServiceComponents method
 ms.assetid: 99bf862c-9d5c-4117-9501-aa0e2672085c
-ms.openlocfilehash: f94cd631f1c6febdc07d53f84803b1203f4116bc
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 0fc764341c0077b305b8a0ad23f66b8691f1e520
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502538"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97328760"
 ---
 # <a name="cdatasource-class"></a>CDataSource 클래스
 
 공급자를 통해 데이터 원본에 대 한 연결을 나타내는 OLE DB 데이터 소스 개체에 해당 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CDataSource
@@ -103,7 +104,7 @@ class CDataSource
 
 포인터를 해제 하 여 연결을 닫습니다 `m_spInit` .
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void Close() throw();
@@ -398,10 +399,10 @@ HRESULT OpenWithServiceComponents (LPCSTR szProgID,
 [in] 데이터 공급자의 프로그램 ID입니다.
 
 *pPropset*<br/>
-진행 설정할 속성 및 값을 포함 하는 [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) 구조체의 배열에 대 한 포인터입니다. Windows SDK에서 *OLE DB 프로그래머 참조* 의 [속성 집합 및 속성 그룹](/previous-versions/windows/desktop/ms713696(v=vs.85)) 을 참조 하세요. 데이터 원본 개체가 초기화되면 속성은 데이터 원본 속성 그룹에 속해야 합니다. *PPropset*에서 동일한 속성이 두 번 이상 지정 된 경우 사용 되는 값은 공급자별로 다릅니다. *Ulpropsets* 가 0 이면이 매개 변수는 무시 됩니다.
+진행 설정할 속성 및 값을 포함 하는 [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) 구조체의 배열에 대 한 포인터입니다. Windows SDK에서 *OLE DB 프로그래머 참조* 의 [속성 집합 및 속성 그룹](/previous-versions/windows/desktop/ms713696(v=vs.85)) 을 참조 하세요. 데이터 원본 개체가 초기화되면 속성은 데이터 원본 속성 그룹에 속해야 합니다. *PPropset* 에서 동일한 속성이 두 번 이상 지정 된 경우 사용 되는 값은 공급자별로 다릅니다. *Ulpropsets* 가 0 이면이 매개 변수는 무시 됩니다.
 
 *ulPropSets*<br/>
-진행 *PPropSet* 인수에 전달 된 [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) 구조체의 수입니다. 이 값이 0 이면 공급자는 *pPropset*를 무시 합니다.
+진행 *PPropSet* 인수에 전달 된 [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) 구조체의 수입니다. 이 값이 0 이면 공급자는 *pPropset* 를 무시 합니다.
 
 ### <a name="return-value"></a>반환 값
 

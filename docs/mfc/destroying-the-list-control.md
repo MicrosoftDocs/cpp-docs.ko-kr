@@ -1,16 +1,17 @@
 ---
+description: '자세히 알아보기: 목록 컨트롤 제거'
 title: 목록 컨트롤 소멸시키기
 ms.date: 11/04/2016
 helpviewer_keywords:
 - list controls [MFC], destroying
 - CListCtrl class [MFC], destroying controls
 ms.assetid: 513ec820-3a02-49d2-b073-a6a7a3fc91b3
-ms.openlocfilehash: d128a613a2a4cb595f362f843a5ae2eba830e538
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: b909889a6365de639f67359859641af6e2bc6525
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84621895"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327835"
 ---
 # <a name="destroying-the-list-control"></a>목록 컨트롤 소멸시키기
 

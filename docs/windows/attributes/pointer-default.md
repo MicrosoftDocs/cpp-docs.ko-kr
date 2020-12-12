@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: pointer_default'
 title: pointer_default (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - pointer_default attribute
 ms.assetid: 2d0c7bbc-a1e8-4337-9e54-e304523e2735
-ms.openlocfilehash: e4e5ce03e8c0e6ca19814f5d228305b0d97322f9
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 0c7768227a5922bca7e1b48b3ad82821bb62ea54
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836194"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329690"
 ---
 # <a name="pointer_default"></a>pointer_default
 
@@ -26,7 +27,7 @@ ms.locfileid: "88836194"
 ### <a name="parameters"></a>매개 변수
 
 *value*<br/>
-포인터 형식 ( **ptr**, **ref**또는 **unique**)을 설명 하는 값입니다.
+포인터 형식 ( **ptr**, **ref** 또는 **unique**)을 설명 하는 값입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -34,7 +35,7 @@ ms.locfileid: "88836194"
 
 ## <a name="example"></a>예제
 
-**Pointer_default**의 샘플 사용에 대해서는 [defaultvalue](defaultvalue.md) 의 예제를 참조 하세요.
+**Pointer_default** 의 샘플 사용에 대해서는 [defaultvalue](defaultvalue.md) 의 예제를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 
