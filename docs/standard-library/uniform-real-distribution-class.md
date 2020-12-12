@@ -1,4 +1,5 @@
 ---
+description: Uniform_real_distribution 클래스에 대해 자세히 알아보세요.
 title: uniform_real_distribution 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - std::uniform_real_distribution [C++], param_type
 - std::uniform_real_distribution [C++], param_type
 ms.assetid: 5cf906fd-0319-4984-b21b-98425cd7532d
-ms.openlocfilehash: ba2ec419e524ca571120fe82c7cbf63c1a97eaaa
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: ae272955cb7586342d403e332b981ca8a1005256
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839597"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97132680"
 ---
 # <a name="uniform_real_distribution-class"></a>uniform_real_distribution 클래스
 
@@ -200,9 +201,9 @@ explicit uniform_real_distribution(const param_type& parm);
 
 **사전 조건:**`a < b`
 
-첫 번째 생성자 *는 값을 저장 하* 고 저장 된 *b* 값이 *b*값을 보유 하 고 있는 *개체를 생성* 합니다.
+첫 번째 생성자 *는 값을 저장 하* 고 저장 된 *b* 값이 *b* 값을 보유 하 고 있는 *개체를 생성* 합니다.
 
-두 번째 생성자는 저장된 매개 변수가 *parm*에서 초기화되는 개체를 생성합니다. `param()` 멤버 함수를 호출하여 기존 분포의 현재 매개 변수를 가져와 설정할 수 있습니다.
+두 번째 생성자는 저장된 매개 변수가 *parm* 에서 초기화되는 개체를 생성합니다. `param()` 멤버 함수를 호출하여 기존 분포의 현재 매개 변수를 가져와 설정할 수 있습니다.
 
 ## <a name="uniform_real_distributionparam_type"></a><a name="param_type"></a> uniform_real_distribution::p aram_type
 

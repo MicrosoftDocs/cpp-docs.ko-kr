@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 인터페이스 (ATL)'
 title: 인터페이스(ATL)
 ms.date: 11/04/2016
 ms.topic: reference
@@ -6,23 +7,23 @@ helpviewer_keywords:
 - COM interfaces
 - interfaces, COM
 ms.assetid: de6c8b12-6230-4fdc-af66-a28b91d5ee55
-ms.openlocfilehash: 56d5a010bc28257dce181ee33e0ddf74655ccd3c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: d68f482d05ff828631f5f9f27085f24af188d643
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81319382"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97147695"
 ---
 # <a name="interfaces-atl"></a>인터페이스(ATL)
 
-인터페이스는 개체가 외부 세계에 해당 기능을 노출하는 방법입니다. COM에서 인터페이스는 개체에 의해 구현된 함수에 대한 포인터 테이블(예: C++ vtable)입니다. 테이블은 인터페이스를 나타내며 인터페이스가 가리키는 함수는 해당 인터페이스의 메서드입니다. 개체는 원하는 만큼 인터페이스를 노출할 수 있습니다.
+인터페이스는 개체가 해당 기능을 외부 세계에 노출 하는 방법입니다. COM에서 인터페이스는 개체에서 구현 하는 함수에 대 한 포인터의 테이블 (예: c + + vtable)입니다. 이 표는 인터페이스와 해당 인터페이스가 가리키는 함수를 나타냅니다. 개체는 선택 하는 만큼 많은 인터페이스를 노출할 수 있습니다.
 
-각 인터페이스는 기본 COM 인터페이스인 [IUnknown을](../atl/iunknown.md)기반으로 합니다. 개체에서 `IUnknown` 노출되는 다른 인터페이스에 대한 탐색을 허용하는 메서드입니다.
+각 인터페이스는 기본 COM 인터페이스 [IUnknown](../atl/iunknown.md)을 기반으로 합니다. 의 메서드를 `IUnknown` 사용 하 여 개체에서 노출 하는 다른 인터페이스를 탐색할 수 있습니다.
 
-또한 각 인터페이스에는 고유한 인터페이스 ID(IID)가 부여됩니다. 이 고유성을 통해 인터페이스 버전 만들기를 쉽게 지원할 수 있습니다. 인터페이스의 새 버전은 단순히 새로운 IID와 함께 새로운 인터페이스입니다.
+또한 각 인터페이스에는 고유한 IID (인터페이스 ID)가 지정 됩니다. 이러한 고유성을 사용 하면 인터페이스 버전 관리를 쉽게 지원할 수 있습니다. 새 인터페이스 버전은 새 IID를 포함 하는 새 인터페이스 일 뿐입니다.
 
 > [!NOTE]
-> 표준 COM 및 OLE 인터페이스에 대한 IID는 미리 정의됩니다.
+> 표준 COM 및 OLE 인터페이스에 대 한 Iid는 미리 정의 되어 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 옵션 매크로'
 title: 컴파일러 옵션 매크로
 ms.date: 08/19/2019
 f1_keywords:
@@ -16,12 +17,12 @@ f1_keywords:
 helpviewer_keywords:
 - compiler options, macros
 ms.assetid: a869adc6-b3de-4299-b040-9ae20b45f82c
-ms.openlocfilehash: 90b80aaa34456677f2d7c2dd5717ae6837f4523f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 247ede37721d868c9c941ce85e024a55a2487947
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833571"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141273"
 ---
 # <a name="compiler-options-macros"></a>컴파일러 옵션 매크로
 
@@ -51,7 +52,7 @@ ms.locfileid: "88833571"
 
 ### <a name="remarks"></a>설명
 
-.NET 2002을 Visual C++ 하기 전에는 ATL에서 많은 경고를 사용 하지 않도록 설정 하 고 사용 하지 않도록 설정 하 여 사용자 코드에 표시 되지 않도록 합니다. 특히 다음에 대한 내용을 설명합니다.
+.NET 2002을 Visual C++ 하기 전에는 ATL에서 많은 경고를 사용 하지 않도록 설정 하 고 사용 하지 않도록 설정 하 여 사용자 코드에 표시 되지 않도록 합니다. 특히 다음 사항에 주의하세요.
 
 - C4127 조건식이 상수입니다.
 
@@ -69,13 +70,13 @@ ms.locfileid: "88833571"
 
 이전 버전에서 변환 된 프로젝트에서는 라이브러리 헤더에 의해 이러한 경고가 계속 비활성화 됩니다.
 
-라이브러리 헤더를 포함 하기 전에 *.pch* (Visual Studio 2017이 하 버전의*stdafx.h* ) 파일에 다음 줄을 추가 하 여이 동작을 변경할 수 있습니다.
+라이브러리 헤더를 포함 하기 전에 *.pch* (Visual Studio 2017이 하 버전의 *stdafx.h* ) 파일에 다음 줄을 추가 하 여이 동작을 변경할 수 있습니다.
 
 [!code-cpp[NVC_ATL_Utilities#97](../../atl/codesnippet/cpp/compiler-options-macros_1.h)]
 
 이를 추가 하는 경우 `#define` ATL 헤더는 이러한 경고의 상태를 전역적으로 사용 하지 않도록 설정 하는 데 주의를 기울여야 합니다. 즉, 사용자가 개별 경고를 사용 하도록 설정 하지 않고 명시적으로 사용 하지 않도록 설정 합니다.
 
-새 프로젝트에는 `#define` 기본적으로이 집합이 *.pch. h* (Visual Studio 2017 및 이전 버전의*stdafx.h* )에 있습니다.
+새 프로젝트에는 `#define` 기본적으로이 집합이 *.pch. h* (Visual Studio 2017 및 이전 버전의 *stdafx.h* )에 있습니다.
 
 ## <a name="_atl_apartment_threaded"></a><a name="_atl_apartment_threaded"></a> _ATL_APARTMENT_THREADED
 
@@ -115,7 +116,7 @@ _ATL_CSTRING_EXPLICIT_CONSTRUCTORS
 
 ATL 및 MFC 라이브러리는 Microsoft c + + 컴파일러의 향상 된 표준 c + + 준수와 일치 하도록 변경 되었습니다. ANSI c + + 표준에 따라 클래스 멤버 함수에 대 한 포인터의 구문은 이어야 합니다 `&CMyClass::MyFunc` .
 
-[_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning) 정의 되지 않은 경우 (기본 경우) ATL/MFC는 매크로 맵 (특히 메시지 맵)에서 C4867 오류를 사용 하지 않도록 설정 하 여 이전 버전에서 만든 코드를 이전과 같이 계속 빌드할 수 있습니다. **_ATL_ENABLE_PTM_WARNING**를 정의 하는 경우 코드는 c + + 표준 규격 이어야 합니다.
+[_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning) 정의 되지 않은 경우 (기본 경우) ATL/MFC는 매크로 맵 (특히 메시지 맵)에서 C4867 오류를 사용 하지 않도록 설정 하 여 이전 버전에서 만든 코드를 이전과 같이 계속 빌드할 수 있습니다. **_ATL_ENABLE_PTM_WARNING** 를 정의 하는 경우 코드는 c + + 표준 규격 이어야 합니다.
 
 그러나 비표준 폼은 더 이상 사용 되지 않습니다. 기존 코드를 c + + 표준 규격 구문으로 이동 해야 합니다. 예를 들어, 다음 코드는
 

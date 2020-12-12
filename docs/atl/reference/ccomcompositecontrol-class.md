@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CComCompositeControl 클래스'
 title: CComCompositeControl 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - CComCompositeControl class
 - composite controls, CComCompositeControl class
 ms.assetid: 1304b931-27e8-4fbc-be8e-bb226ad887fb
-ms.openlocfilehash: a37386c40f119c855dcb8584a72ce85c48a66381
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5c4d5b3e04855d570cab3a85bfe3a4c59482d990
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834741"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146824"
 ---
 # <a name="ccomcompositecontrol-class"></a>CComCompositeControl 클래스
 
@@ -221,7 +222,7 @@ virtual HWND CreateControlWindow(
 컨트롤의 부모 창에 대 한 핸들입니다.
 
 *rcPos*<br/>
-*HWndParent*에 상대적인 클라이언트 좌표에 있는 복합 컨트롤의 position 사각형입니다.
+*HWndParent* 에 상대적인 클라이언트 좌표에 있는 복합 컨트롤의 position 사각형입니다.
 
 ### <a name="return-value"></a>반환 값
 

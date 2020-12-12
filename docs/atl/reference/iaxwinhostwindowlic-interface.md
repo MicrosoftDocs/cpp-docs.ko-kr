@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: IAxWinHostWindowLic 인터페이스'
 title: IAxWinHostWindowLic 인터페이스
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - IAxWinHostWindowLic interface
 ms.assetid: 750f1520-6bce-428c-aca0-fccbe3f063c7
-ms.openlocfilehash: d7a63fc63b8abcf8574ea9a2fed2556635dba045
-ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
+ms.openlocfilehash: bf13d6f0209b982955fdf015ef47643c83b27eee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352949"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97139648"
 ---
 # <a name="iaxwinhostwindowlic-interface"></a>IAxWinHostWindowLic 인터페이스
 
@@ -30,7 +31,7 @@ interface IAxWinHostWindowLic : IAxWinHostWindow
 
 ### <a name="methods"></a>메서드
 
-|속성|Description|
+|속성|설명|
 |-|-|
 |[CreateControlLic](#createcontrollic)|라이선스가 있는 컨트롤을 만들어 호스트 개체에 연결 합니다.|
 |[CreateControlLicEx](#createcontrollicex)|라이선스가 있는 컨트롤을 만들어 호스트 개체에 연결 하 고 필요에 따라 이벤트 처리기를 설정 합니다.|

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CAtlDllModuleT 클래스'
 title: CAtlDllModuleT 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlDllModuleT class
 ms.assetid: 351d5767-8257-4878-94be-45a85e31a72d
-ms.openlocfilehash: e0896a28c24877465213a71ac5207c537c731003
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: b6b6f87fc77187b150824fcd67fae254eb6d8f57
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82168772"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97147435"
 ---
 # <a name="catldllmodulet-class"></a>CAtlDllModuleT 클래스
 
@@ -35,20 +36,20 @@ class ATL_NO_VTABLE CAtlDllModuleT : public CAtlModuleT<T>
 ### <a name="parameters"></a>매개 변수
 
 *T*<br/>
-에서 `CAtlDllModuleT`파생 된 클래스입니다.
+에서 파생 된 클래스 `CAtlDllModuleT` 입니다.
 
 ## <a name="members"></a>멤버
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
 |[CAtlDllModuleT:: CAtlDllModuleT](#catldllmodulet)|생성자입니다.|
 |[CAtlDllModuleT:: ~ CAtlDllModuleT](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
 |[CAtlDllModuleT::D llCanUnloadNow](#dllcanunloadnow)|DLL이 언로드될 수 있는지 테스트 합니다.|
 |[CAtlDllModuleT::D llGetClassObject](#dllgetclassobject)|클래스 팩터리를 반환 합니다.|
@@ -59,7 +60,7 @@ class ATL_NO_VTABLE CAtlDllModuleT : public CAtlModuleT<T>
 
 ## <a name="remarks"></a>설명
 
-`CAtlDllModuleT`DLL (동적 연결 라이브러리)의 모듈을 나타내며 모든 DLL 프로젝트에서 사용 하는 함수를 제공 합니다. 이러한 기능을 지 원하는 [이 클래스의 특수화에는 등록](../../atl/reference/catlmodulet-class.md) 지원이 포함 됩니다.
+`CAtlDllModuleT` DLL (동적 연결 라이브러리)의 모듈을 나타내며 모든 DLL 프로젝트에서 사용 하는 함수를 제공 합니다. 이러한 기능을 지 원하는 [이 클래스의 특수화에는 등록](../../atl/reference/catlmodulet-class.md) 지원이 포함 됩니다.
 
 ATL의 모듈에 대 한 자세한 내용은 [Atl 모듈 클래스](../../atl/atl-module-classes.md)를 참조 하세요.
 
@@ -77,7 +78,7 @@ ATL의 모듈에 대 한 자세한 내용은 [Atl 모듈 클래스](../../atl/at
 
 **헤더:** 서 기. h
 
-## <a name="catldllmoduletcatldllmodulet"></a><a name="catldllmodulet"></a>CAtlDllModuleT:: CAtlDllModuleT
+## <a name="catldllmoduletcatldllmodulet"></a><a name="catldllmodulet"></a> CAtlDllModuleT:: CAtlDllModuleT
 
 생성자입니다.
 
@@ -85,7 +86,7 @@ ATL의 모듈에 대 한 자세한 내용은 [Atl 모듈 클래스](../../atl/at
 CAtlDllModuleT() throw();
 ```
 
-## <a name="catldllmoduletcatldllmodulet"></a><a name="dtor"></a>CAtlDllModuleT:: ~ CAtlDllModuleT
+## <a name="catldllmoduletcatldllmodulet"></a><a name="dtor"></a> CAtlDllModuleT:: ~ CAtlDllModuleT
 
 소멸자입니다.
 
@@ -93,7 +94,7 @@ CAtlDllModuleT() throw();
 ~CAtlDllModuleT() throw();
 ```
 
-## <a name="catldllmoduletdllcanunloadnow"></a><a name="dllcanunloadnow"></a>CAtlDllModuleT::D llCanUnloadNow
+## <a name="catldllmoduletdllcanunloadnow"></a><a name="dllcanunloadnow"></a> CAtlDllModuleT::D llCanUnloadNow
 
 DLL이 언로드될 수 있는지 테스트 합니다.
 
@@ -101,11 +102,11 @@ DLL이 언로드될 수 있는지 테스트 합니다.
 HRESULT DllCanUnloadNow() throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 DLL이 언로드될 수 있으면 S_OK을 반환 하 고, 그렇지 않으면 S_FALSE을 반환 합니다.
 
-## <a name="catldllmoduletdllgetclassobject"></a><a name="dllgetclassobject"></a>CAtlDllModuleT::D llGetClassObject
+## <a name="catldllmoduletdllgetclassobject"></a><a name="dllgetclassobject"></a> CAtlDllModuleT::D llGetClassObject
 
 클래스 팩터리를 반환 합니다.
 
@@ -125,13 +126,13 @@ HRESULT DllGetClassObject(
 요청 된 인터페이스의 IID입니다.
 
 *ppv*<br/>
-*Riid*로 식별 되는 인터페이스 포인터에 대 한 포인터입니다. 개체가이 인터페이스를 지원 하지 않는 경우 *ppv* 가 NULL로 설정 됩니다.
+*Riid* 로 식별 되는 인터페이스 포인터에 대 한 포인터입니다. 개체가이 인터페이스를 지원 하지 않는 경우 *ppv* 가 NULL로 설정 됩니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 시 S_OK 또는 실패 시 오류 HRESULT를 반환 합니다.
 
-## <a name="catldllmoduletdllmain"></a><a name="dllmain"></a>CAtlDllModuleT::D llMain
+## <a name="catldllmoduletdllmain"></a><a name="dllmain"></a> CAtlDllModuleT::D llMain
 
 DLL (동적 연결 라이브러리)에 대 한 선택적 진입점입니다.
 
@@ -147,7 +148,7 @@ DLL_PROCESS_ATTACH로 설정 된 경우 DLL_THREAD_ATTACH 및 DLL_THREAD_DETACH 
 *lpReserved*<br/>
 예약되어 있습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 항상 TRUE를 반환 합니다.
 
@@ -155,7 +156,7 @@ DLL_PROCESS_ATTACH로 설정 된 경우 DLL_THREAD_ATTACH 및 DLL_THREAD_DETACH 
 
 DLL_THREAD_ATTACH 및 DLL_THREAD_DETACH 알림 호출을 사용 하지 않도록 설정 하면 많은 Dll이 있는 다중 스레드 응용 프로그램에 대 한 유용한 최적화를 사용할 수 있습니다.
 
-## <a name="catldllmoduletdllregisterserver"></a><a name="dllregisterserver"></a>CAtlDllModuleT::D llRegisterServer
+## <a name="catldllmoduletdllregisterserver"></a><a name="dllregisterserver"></a> CAtlDllModuleT::D llRegisterServer
 
 DLL의 개체에 대 한 시스템 레지스트리에 항목을 추가 합니다.
 
@@ -168,11 +169,11 @@ HRESULT DllRegisterServer(BOOL bRegTypeLib = TRUE) throw();
 *bRegTypeLib*<br/>
 형식 라이브러리를 등록 하려면 TRUE입니다. 기본값은 TRUE입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 시 S_OK 또는 실패 시 오류 HRESULT를 반환 합니다.
 
-## <a name="catldllmoduletdllunregisterserver"></a><a name="dllunregisterserver"></a>CAtlDllModuleT::D llUnregisterServer
+## <a name="catldllmoduletdllunregisterserver"></a><a name="dllunregisterserver"></a> CAtlDllModuleT::D llUnregisterServer
 
 DLL의 개체에 대 한 시스템 레지스트리에서 항목을 제거 합니다.
 
@@ -185,11 +186,11 @@ HRESULT DllUnregisterServer(BOOL bUnRegTypeLib = TRUE) throw();
 *bUnRegTypeLib*<br/>
 레지스트리에서 형식 라이브러리를 제거 하려면 TRUE입니다. 기본값은 TRUE입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 시 S_OK 또는 실패 시 오류 HRESULT를 반환 합니다.
 
-## <a name="catldllmoduletgetclassobject"></a><a name="getclassobject"></a>CAtlDllModuleT:: GetClassObject
+## <a name="catldllmoduletgetclassobject"></a><a name="getclassobject"></a> CAtlDllModuleT:: GetClassObject
 
 지정 된 CLSID의 개체를 만듭니다.
 
@@ -209,9 +210,9 @@ HRESULT GetClassObject(
 요청 된 인터페이스의 IID입니다.
 
 *ppv*<br/>
-*Riid*로 식별 되는 인터페이스 포인터에 대 한 포인터입니다. 개체가이 인터페이스를 지원 하지 않는 경우 *ppv* 가 NULL로 설정 됩니다.
+*Riid* 로 식별 되는 인터페이스 포인터에 대 한 포인터입니다. 개체가이 인터페이스를 지원 하지 않는 경우 *ppv* 가 NULL로 설정 됩니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 시 S_OK 또는 실패 시 오류 HRESULT를 반환 합니다.
 

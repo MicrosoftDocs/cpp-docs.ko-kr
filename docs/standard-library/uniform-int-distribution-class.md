@@ -1,4 +1,5 @@
 ---
+description: Uniform_int_distribution 클래스에 대해 자세히 알아보세요.
 title: uniform_int_distribution 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - std::uniform_int_distribution [C++], param_type
 - std::uniform_int_distribution [C++], param_type
 ms.assetid: a1867dcd-3bd9-4787-afe3-4b62692c1d04
-ms.openlocfilehash: 3d9bb3cf9c4e34916dad3e435c7f4040dcc5f373
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 96e5782c04ce77f8d705f60002ef8316b26793e4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831413"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97132693"
 ---
 # <a name="uniform_int_distribution-class"></a>uniform_int_distribution 클래스
 
@@ -202,9 +203,9 @@ explicit uniform_int_distribution(const param_type& parm);
 
 **사전 조건:**`a ≤ b`
 
-첫 번째 생성자 *는 값을 저장 하* 고 저장 된 *b* 값이 *b*값을 보유 하 고 있는 *개체를 생성* 합니다.
+첫 번째 생성자 *는 값을 저장 하* 고 저장 된 *b* 값이 *b* 값을 보유 하 고 있는 *개체를 생성* 합니다.
 
-두 번째 생성자는 저장된 매개 변수가 *parm*에서 초기화되는 개체를 생성합니다. `param()` 멤버 함수를 호출하여 기존 분포의 현재 매개 변수를 가져와 설정할 수 있습니다.
+두 번째 생성자는 저장된 매개 변수가 *parm* 에서 초기화되는 개체를 생성합니다. `param()` 멤버 함수를 호출하여 기존 분포의 현재 매개 변수를 가져와 설정할 수 있습니다.
 
 ## <a name="uniform_int_distributionparam_type"></a><a name="param_type"></a> uniform_int_distribution::p aram_type
 

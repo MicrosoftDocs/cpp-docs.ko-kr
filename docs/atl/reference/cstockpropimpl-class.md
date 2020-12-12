@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CStockPropImpl 클래스'
 title: CStockPropImpl 클래스
 ms.date: 05/06/2019
 f1_keywords:
@@ -64,12 +65,12 @@ helpviewer_keywords:
 - controls [ATL], stock properties
 - stock properties, ATL controls
 ms.assetid: 45f11d7d-6580-4a0e-872d-3bc8b836cfda
-ms.openlocfilehash: 9d54e4e5c49e73a12fc5d360c3963c2bcf5b2b38
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d2d71b4b318daeb6590e36d30f71e37a5d2b52b9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835586"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97140520"
 ---
 # <a name="cstockpropimpl-class"></a>CStockPropImpl 클래스
 
@@ -114,7 +115,7 @@ class ATL_NO_VTABLE CStockPropImpl :
 형식 라이브러리의 부 버전입니다. 기본값은 0입니다.
 
 *tihclass*<br/>
-*T*의 형식 정보를 관리 하는 데 사용 되는 클래스입니다. 기본값은 `CComTypeInfoHolder` 입니다.
+*T* 의 형식 정보를 관리 하는 데 사용 되는 클래스입니다. 기본값은 `CComTypeInfoHolder` 입니다.
 
 ## <a name="members"></a>멤버
 
@@ -192,7 +193,7 @@ Visual Studio는 마법사를 통해 스톡 속성을 지원 합니다. 컨트�
 
 - MouseIcon
 
-- Picture
+- 그림
 
 동일한 스톡 속성 3 개에 해당 하는 데이터 멤버가 형식 `CComPtr` 이거나 할당 연산자를 통해 올바른 인터페이스 참조 수를 제공 하는 다른 클래스가 필요 합니다.
 

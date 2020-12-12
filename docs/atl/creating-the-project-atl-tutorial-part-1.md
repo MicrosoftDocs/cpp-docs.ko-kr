@@ -1,14 +1,15 @@
 ---
+description: '자세히 알아보기: 프로젝트 만들기 (ATL 자습서, 1 부)'
 title: 프로젝트 만들기(ATL 자습서, 1부)
 ms.custom: get-started-article
 ms.date: 08/19/2019
 ms.assetid: f6b727d1-390a-4b27-b82f-daadcd9fc059
-ms.openlocfilehash: 8a0374fcaf9a18c82e90bde2abc032158ecc537a
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: f594294b5d97222791a3f3f43c147fae9514889b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92923870"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97148088"
 ---
 # <a name="creating-the-project-atl-tutorial-part-1"></a>프로젝트 만들기(ATL 자습서, 1부)
 
@@ -37,7 +38,7 @@ ms.locfileid: "92923870"
 
 ### <a name="to-create-the-initial-atl-project-using-the-atl-project-wizard"></a>ATL 프로젝트 마법사를 사용 하 여 초기 ATL 프로젝트를 만들려면
 
-1. Visual Studio 2017 이전 버전: **파일**  >  **새로 만들기**  >  **프로젝트** . **Visual C++** 탭을 열고 **MFC/ATL** 을 선택 합니다. **ATL 프로젝트** 를 선택 합니다.
+1. Visual Studio 2017 이전 버전: **파일**  >  **새로 만들기**  >  **프로젝트**. **Visual C++** 탭을 열고 **MFC/ATL** 을 선택 합니다. **ATL 프로젝트** 를 선택 합니다.
 
    Visual Studio 2019: **파일**  >  **새로 만들기**  >  **프로젝트** 를 선택 하 고 검색 상자에 "atl"을 입력 한 다음 **atl 프로젝트** 를 선택 합니다.
 
@@ -52,7 +53,7 @@ Visual Studio에서 여러 파일을 생성 하 여 프로젝트를 만듭니다
 
 ::: moniker range="<=msvc-150"
 
-|파일|Description|
+|파일|설명|
 |----------|-----------------|
 |Polygon .cpp|에는,, `DllMain` `DllCanUnloadNow` `DllGetClassObject` , 및의 `DllRegisterServer` 구현이 포함 되어 있습니다 `DllUnregisterServer` . 프로젝트의 ATL 개체 목록 인 개체 맵도 포함 합니다. 처음에는 비어 있습니다.|
 |Polygon .def|이 모듈 정의 파일은 DLL에 필요한 내보내기에 대 한 정보를 링커에 제공 합니다.|
@@ -61,14 +62,14 @@ Visual Studio에서 여러 파일을 생성 하 여 프로젝트를 만듭니다
 |Polygon .rc|처음에는 버전 정보와 프로젝트 이름을 포함 하는 문자열을 포함 하는 리소스 파일입니다.|
 |Resource.h|리소스 파일용 헤더 파일.|
 |Polygonps|이 모듈 정의 파일은 프록시 및 아파트 간 호출을 지 원하는 스텁 코드에서 필요한 내보내기에 대 한 정보를 링커에 제공 합니다.|
-|stdafx.cpp|Stdafx.h를 받을 파일입니다. `#include` *stdafx.h*|
+|stdafx.cpp|Stdafx.h를 받을 파일입니다. `#include` |
 |stdafx.h|`#include`ATL 헤더 파일을 미리 컴파일하는 파일입니다.|
 
 ::: moniker-end
 
 ::: moniker range=">=msvc-160"
 
-|파일|Description|
+|파일|설명|
 |----------|-----------------|
 |Polygon .cpp|에는,, `DllMain` `DllCanUnloadNow` `DllGetClassObject` , 및의 `DllRegisterServer` 구현이 포함 되어 있습니다 `DllUnregisterServer` . 프로젝트의 ATL 개체 목록 인 개체 맵도 포함 합니다. 처음에는 비어 있습니다.|
 |Polygon .def|이 모듈 정의 파일은 DLL에 필요한 내보내기에 대 한 정보를 링커에 제공 합니다.|

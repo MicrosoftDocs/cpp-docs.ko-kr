@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: IAxWinHostWindow 인터페이스'
 title: IAxWinHostWindow 인터페이스
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - IAxWinHostWindow interface
 ms.assetid: 9821c035-cd52-4c46-b58a-9278064f09b4
-ms.openlocfilehash: 44681b94e0bd1dfd757ebfa19f83074785dd95f5
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 86cccd2b9ae19d5020cd1cf7ff2f0aff8759060e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833376"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97139713"
 ---
 # <a name="iaxwinhostwindow-interface"></a>IAxWinHostWindow 인터페이스
 
@@ -61,7 +62,7 @@ interface IAxWinHostWindow : IUnknown
 
 ## <a name="iaxwinhostwindowattachcontrol"></a><a name="attachcontrol"></a> IAxWinHostWindow:: AttachControl
 
-*HWnd*로 식별 된 창을 사용 하 여 기존 (및 이전에 초기화 된) 컨트롤을 호스트 개체에 연결 합니다.
+*HWnd* 로 식별 된 창을 사용 하 여 기존 (및 이전에 초기화 된) 컨트롤을 호스트 개체에 연결 합니다.
 
 ```
 STDMETHOD(AttachControl)(IUnknown* pUnkControl, HWND hWnd);
@@ -81,7 +82,7 @@ STDMETHOD(AttachControl)(IUnknown* pUnkControl, HWND hWnd);
 
 ## <a name="iaxwinhostwindowcreatecontrol"></a><a name="createcontrol"></a> IAxWinHostWindow:: CreateControl
 
-컨트롤을 만들어 초기화 하 고 *hWnd*로 식별 되는 창에 호스팅합니다.
+컨트롤을 만들어 초기화 하 고 *hWnd* 로 식별 되는 창에 호스팅합니다.
 
 ```
 STDMETHOD(CreateControl)(

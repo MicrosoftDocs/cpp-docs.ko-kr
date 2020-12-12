@@ -1,17 +1,18 @@
 ---
+description: Unchecked_array_iterator 클래스에 대해 자세히 알아보세요.
 title: unchecked_array_iterator 클래스
 ms.date: 11/04/2016
 f1_keywords:
 - stdext::unchecked_array_iterator
 ms.assetid: 693b3b30-4e3a-465b-be06-409700bc50b1
-ms.openlocfilehash: 5344a108f32b694b9dafac78dbb8eb7064cdf4cc
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 6f2bbe4c31a76101a04e8c5be6a4e0dcf67cf87e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68455004"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97132745"
 ---
-# <a name="uncheckedarrayiterator-class"></a>unchecked_array_iterator 클래스
+# <a name="unchecked_array_iterator-class"></a>unchecked_array_iterator 클래스
 
 `unchecked_array_iterator` 클래스를 사용하여 확인되지 않은 반복기에 배열 또는 포인터를 래핑할 수 있습니다 이러한 경고를 전역적으로 해제하는 대신 이 클래스를 원시 포인터 또는 배열에 대한 래퍼로 목적에 따라 사용하여([make_unchecked_array_iterator](../standard-library/iterator-functions.md#make_unchecked_array_iterator) 함수 사용) 확인되지 않은 포인터 경고를 관리합니다. 가능한 경우 이 클래스의 확인된 버전 [checked_array_iterator](../standard-library/checked-array-iterator-class.md)를 선택합니다.
 
@@ -33,11 +34,11 @@ class unchecked_array_iterator;
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<iterator>
+**헤더:**\<iterator>
 
 **네임스페이스:** stdext
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [\<iterator>](../standard-library/iterator.md)\
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)
+[C + + 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

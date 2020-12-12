@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 단항 연산자 오버 로드'
 title: 단항 연산자 오버로드
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,32 +12,32 @@ helpviewer_keywords:
 - pointer dereference operator overloading
 - plus operator
 ms.assetid: 7683ef08-42a4-4283-928f-d3dd4f3ab4c0
-ms.openlocfilehash: a21c62549f02dddda951c79a06617671ccfe2526
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2e0a2d2b902403ee5ed34a95b6d282d7c2199795
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227220"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146057"
 ---
 # <a name="overloading-unary-operators"></a>단항 연산자 오버로드
 
 오버로드할 수 있는 단항 연산자는 다음과 같습니다.
 
-1. `!`([논리적 NOT](../cpp/logical-negation-operator-exclpt.md))
+1. `!` ([논리적 NOT](../cpp/logical-negation-operator-exclpt.md))
 
-1. `&`([주소](../cpp/address-of-operator-amp.md))
+1. `&` ([주소](../cpp/address-of-operator-amp.md))
 
-1. `~`([1의 보수](../cpp/one-s-complement-operator-tilde.md))
+1. `~` ([1의 보수](../cpp/one-s-complement-operator-tilde.md))
 
-1. `*`([포인터 역참조](../cpp/indirection-operator-star.md))
+1. `*` ([포인터 역참조](../cpp/indirection-operator-star.md))
 
-1. `+`([단항 더하기](../cpp/additive-operators-plus-and.md))
+1. `+` ([단항 더하기](../cpp/additive-operators-plus-and.md))
 
-1. `-`([단항 부정](../cpp/additive-operators-plus-and.md))
+1. `-` ([단항 부정](../cpp/additive-operators-plus-and.md))
 
-1. `++`([증가](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md))
+1. `++` ([증가](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md))
 
-1. `--`([감소](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md))
+1. `--` ([감소](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md))
 
 1. conversion operators
 
@@ -61,4 +62,4 @@ ms.locfileid: "87227220"
 
 ## <a name="see-also"></a>참고 항목
 
-[연산자 오버 로드](../cpp/operator-overloading.md)
+[연산자 오버로드](../cpp/operator-overloading.md)

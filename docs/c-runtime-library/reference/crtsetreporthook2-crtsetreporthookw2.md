@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _CrtSetReportHook2, _CrtSetReportHookW2'
 title: _CrtSetReportHook2, _CrtSetReportHookW2
 ms.date: 11/04/2016
 api_name:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - _CrtSetReportHookW2 function
 - CrtSetReportHookW2 function
 ms.assetid: 12e5f68d-c8a7-4b1a-9a75-72ba4a8592d0
-ms.openlocfilehash: 37ec0cea3fb558a5926e6f9c707e0e5033a17222
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: eab1ad4da90d5a86b821c374aae0aeceb97d7518
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70942214"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135722"
 ---
 # <a name="_crtsetreporthook2-_crtsetreporthookw2"></a>_CrtSetReportHook2, _CrtSetReportHookW2
 
@@ -57,7 +58,7 @@ int _CrtSetReportHookW2(
 ### <a name="parameters"></a>매개 변수
 
 *mode*<br/>
-수행할 작업: **_CRT_RPTHOOK_INSTALL** 또는 **_CRT_RPTHOOK_REMOVE**
+수행할 작업: **_CRT_RPTHOOK_INSTALL** 또는 **_CRT_RPTHOOK_REMOVE**.
 
 *pfnNewHook*<br/>
 이 함수의 좁은 문자 또는 와이드 문자 버전에서 설치 하거나 제거할 보고서 후크입니다.
@@ -68,11 +69,11 @@ int _CrtSetReportHookW2(
 
 ## <a name="remarks"></a>설명
 
-**_CrtSetReportHook2** 및 **_CrtSetReportHookW2** 를 사용 하면 함수를 후크 또는 언 후크 할 수 있지만 [_CrtSetReportHook](crtsetreporthook.md) 만 함수를 후크 할 수 있습니다.
+**_CrtSetReportHook2** 및 **_CrtSetReportHookW2** 를 사용 하 여 함수를 연결 하거나 언 후크 할 수 있지만 [_CrtSetReportHook](crtsetreporthook.md) 는 함수를 후크 할 수 있습니다.
 
-DLL에서 후크 호출이 수행 될 때와 여러 Dll이 로드 되 고 자체 후크 함수를 설정 하는 경우에는 **_CrtSetReportHook** 대신 **_CrtSetReportHook2** 또는 **_CrtSetReportHookW2** 를 사용 해야 합니다. 이러한 경우 DLL은 로드되었을 때와 다른 순서로 언로드될 수 있으며 후크 함수는 언로드된 DLL을 가리킨 상태를 유지할 수 있습니다. **_CrtSetReportHook**를 사용 하 여 후크 함수를 추가한 경우 모든 디버그 출력은 프로세스를 중단 합니다.
+DLL에서 후크 호출이 수행 될 때와 여러 Dll이 로드 되 고 자체 후크 함수를 설정 하는 경우에는 **_CrtSetReportHook** 대신 **_CrtSetReportHook2** 또는 **_CrtSetReportHookW2** 를 사용 해야 합니다. 이러한 경우 DLL은 로드되었을 때와 다른 순서로 언로드될 수 있으며 후크 함수는 언로드된 DLL을 가리킨 상태를 유지할 수 있습니다. 후크 함수가 **_CrtSetReportHook** 와 함께 추가 된 경우 디버그 출력은 프로세스를 중단 합니다.
 
-**_CrtSetReportHook** 로 추가 된 후크 함수는 **_CrtSetReportHook2** 또는 **_CrtSetReportHookW2** 를 사용 하 여 추가 된 후크 함수가 없거나 **_CrtSetReportHook2** 및 _를 사용 하 여 추가 된 모든 후크 함수가 있는 경우 호출 됩니다.  **CrtSetReportHookW2** 는 **FALSE**를 반환 합니다.
+**_CrtSetReportHook** 로 추가 된 후크 함수는 **_CrtSetReportHook2** 또는 **_CrtSetReportHookW2** 를 사용 하 여 추가 된 후크 함수가 없거나 **_CrtSetReportHook2** 를 사용 하 여 추가 된 모든 후크 함수를 호출 하 고 **_CrtSetReportHookW2** **FALSE** 를 반환 하는 경우 호출 됩니다.
 
 이 함수의 와이드 문자 버전을 사용할 수 있습니다. 보고서 후크 함수는 형식(와이드 문자 또는 좁은 문자)이 사용된 이 함수 버전과 일치하는 문자열을 사용합니다. 이 함수의 와이드 문자 버전에서 사용되는 보고서 후크에 대해 다음과 같은 함수 프로토타입을 사용합니다.
 
@@ -98,7 +99,7 @@ int YourReportHook( int reportType, char *message, int *returnValue );
 |**_CrtSetReportHook2**|\<crtdbg.h>|\<errno.h>|
 |**_CrtSetReportHookW2**|\<crtdbg.h>|\<errno.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="libraries"></a>라이브러리
 
@@ -252,6 +253,6 @@ _CrtSetReportHook2(_CRT_RPTHOOK_REMOVE, TestHook2) returned 0
 _CrtSetReportHook2(_CRT_RPTHOOK_REMOVE, TestHook1) returned 0
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [디버그 루틴](../../c-runtime-library/debug-routines.md)<br/>

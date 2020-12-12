@@ -1,4 +1,5 @@
 ---
+description: Underlying_type 클래스에 대해 자세히 알아보세요.
 title: underlying_type 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - underlying_type
 ms.assetid: 691ddce3-2677-4480-bd35-d933fab85d3e
-ms.openlocfilehash: ea4768d78047112a7584ca49b0e4487fad55a970
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: e717abe854f13fc96926deba1d4bf177529618cf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72688838"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97132706"
 ---
 # <a name="underlying_type-class"></a>underlying_type 클래스
 
@@ -26,19 +27,19 @@ struct underlying_type;
 
 ### <a name="parameters"></a>매개 변수
 
-*T* \
+*트*\
 수정할 형식입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
-클래스 템플릿의 `type` 멤버 typedef *는 t가 열거형 형식일 때* *t*의 기본 정수 계열 형식에 이름을, 그렇지 않으면 멤버 typedef `type` 없습니다.
+`type`클래스 템플릿의 멤버 typedef는 *t* 가 열거형 형식일 때 *t* 의 기본 정수 계열 형식 이름을, 그렇지 않으면 멤버 typedef가 없습니다 `type` .
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<type_traits>
+**헤더:**\<type_traits>
 
 **네임스페이스:** std
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [<type_traits>](../standard-library/type-traits.md)

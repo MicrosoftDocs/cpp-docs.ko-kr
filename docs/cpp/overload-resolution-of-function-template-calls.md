@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 함수 템플릿 호출의 오버 로드 확인'
 title: 함수 템플릿 호출의 오버로드 확인
 ms.date: 11/04/2016
 helpviewer_keywords:
 - function templates overload resolution
 ms.assetid: a2918748-2cbb-4fc6-a176-e256f120bee4
-ms.openlocfilehash: 7b7e374328b6d234426d8263e4c6655191133700
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: 6174ac7fe4354f655a5c6a94c7493c6cc1a423cd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008906"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146018"
 ---
 # <a name="overload-resolution-of-function-template-calls"></a>함수 템플릿 호출의 오버로드 확인
 
@@ -80,7 +81,7 @@ int main()
 void f(T1, T2)
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [이름 확인](../cpp/templates-and-name-resolution.md)<br/>
 [t](../cpp/typename.md)

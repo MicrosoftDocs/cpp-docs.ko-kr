@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: operator Windows:: UI:: Xaml:: Interop:: TypeName'
 title: 연산자 Windows::UI::Xaml::Interop::TypeName
 ms.date: 12/30/2016
 ms.assetid: a65a105e-7e3a-452f-932f-2cdaf00fbba5
-ms.openlocfilehash: d35056ca1a4e7f06c9f91fe86998a676a12395f2
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 3c4c856fcf93214959f75f861b035dbdee9b94a6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81337006"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97145719"
 ---
 # <a name="operator-windowsuixamlinteroptypename"></a>연산자 Windows::UI::Xaml::Interop::TypeName
 
@@ -52,4 +53,4 @@ Type^ tx2 = (Type^)(tn);
 ## <a name="see-also"></a>참고 항목
 
 [연산자 Windows::UI::Xaml::Interop::TypeName](../cppcx/operator-windows-ui-xaml-interop-typename.md)<br/>
-[Platform::Type 클래스](../cppcx/platform-type-class.md)
+[Platform:: Type 클래스](../cppcx/platform-type-class.md)

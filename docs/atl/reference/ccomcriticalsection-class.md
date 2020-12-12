@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CComCriticalSection 클래스'
 title: CComCriticalSection 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComCriticalSection class
 ms.assetid: 44e1edd2-90be-4bfe-9739-58e8b419e7d1
-ms.openlocfilehash: 8cf590052dee9d0303ccfb102296fc66038aec57
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7a6a3efef68a14cbda513ee60ed3980293514ad6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224307"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146733"
 ---
 # <a name="ccomcriticalsection-class"></a>CComCriticalSection 클래스
 
@@ -34,7 +35,7 @@ class CComCriticalSection
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[CComCriticalSection::CComCriticalSection](#ccomcriticalsection)|생성자입니다.|
 
@@ -55,9 +56,9 @@ class CComCriticalSection
 
 ## <a name="remarks"></a>설명
 
-`CComCriticalSection`는 임계 영역을 명시적으로 초기화 하 고 해제 해야 한다는 점을 제외 하 고는 [CComAutoCriticalSection](../../atl/reference/ccomautocriticalsection-class.md)클래스와 유사 합니다.
+`CComCriticalSection` 는 임계 영역을 명시적으로 초기화 하 고 해제 해야 한다는 점을 제외 하 고는 [CComAutoCriticalSection](../../atl/reference/ccomautocriticalsection-class.md)클래스와 유사 합니다.
 
-일반적으로 `CComCriticalSection` CriticalSection 이름을 통해를 **`typedef`** 사용 [CriticalSection](ccommultithreadmodel-class.md#criticalsection)합니다. [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md)를 사용하는 경우 이 이름은 `CComCriticalSection`를 참조합니다.
+일반적으로 `CComCriticalSection` CriticalSection 이름을 통해를 **`typedef`** 사용 [](ccommultithreadmodel-class.md#criticalsection)합니다. [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md)를 사용하는 경우 이 이름은 `CComCriticalSection`를 참조합니다.
 
 이 클래스를 사용 하는 보다 안전한 방법은 [CComCritSecLock 클래스](../../atl/reference/ccomcritseclock-class.md) 를 참조 `Lock` 하세요 `Unlock` .
 
@@ -65,7 +66,7 @@ class CComCriticalSection
 
 **헤더:**
 
-## <a name="ccomcriticalsectionccomcriticalsection"></a><a name="ccomcriticalsection"></a>CComCriticalSection::CComCriticalSection
+## <a name="ccomcriticalsectionccomcriticalsection"></a><a name="ccomcriticalsection"></a> CComCriticalSection::CComCriticalSection
 
 생성자입니다.
 
@@ -77,7 +78,7 @@ CComCriticalSection() throw();
 
 [M_sec](#m_sec) 데이터 멤버를 NULL로 설정 합니다.
 
-## <a name="ccomcriticalsectioninit"></a><a name="init"></a>CComCriticalSection:: Init
+## <a name="ccomcriticalsectioninit"></a><a name="init"></a> CComCriticalSection:: Init
 
 [M_sec](#m_sec) 데이터 멤버에 포함 된 임계 영역 개체를 초기화 하는 Win32 함수 [InitializeCriticalSection](/windows/win32/api/synchapi/nf-synchapi-initializecriticalsection)를 호출 합니다.
 
@@ -85,11 +86,11 @@ CComCriticalSection() throw();
 HRESULT Init() throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 시 S_OK를 반환 하거나, 오류 발생 시 E_FAIL E_OUTOFMEMORY 반환 합니다.
 
-## <a name="ccomcriticalsectionlock"></a><a name="lock"></a>CComCriticalSection:: Lock
+## <a name="ccomcriticalsectionlock"></a><a name="lock"></a> CComCriticalSection:: Lock
 
 는 스레드가 [m_sec](#m_sec) 데이터 멤버에 포함 된 임계 영역 개체의 소유권을 가져올 수 있을 때까지 대기 하는 Win32 함수 [EnterCriticalSection](/windows/win32/api/synchapi/nf-synchapi-entercriticalsection)를 호출 합니다.
 
@@ -97,7 +98,7 @@ HRESULT Init() throw();
 HRESULT Lock() throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 시 S_OK를 반환 하거나, 오류 발생 시 E_FAIL E_OUTOFMEMORY 반환 합니다.
 
@@ -105,7 +106,7 @@ HRESULT Lock() throw();
 
 먼저 [Init](#init) 메서드를 호출 하 여 임계 영역 개체를 초기화 해야 합니다. 보호 된 코드의 실행이 완료 되 면 스레드의 [잠금 해제](#unlock) 를 호출 하 여 임계 영역에 대 한 소유권을 해제 해야 합니다.
 
-## <a name="ccomcriticalsectionm_sec"></a><a name="m_sec"></a>CComCriticalSection:: m_sec
+## <a name="ccomcriticalsectionm_sec"></a><a name="m_sec"></a> CComCriticalSection:: m_sec
 
 모든 메서드에서 사용 하는 임계 영역 개체를 포함 `CComCriticalSection` 합니다.
 
@@ -113,7 +114,7 @@ HRESULT Lock() throw();
 CRITICAL_SECTION m_sec;
 ```
 
-## <a name="ccomcriticalsectionterm"></a><a name="term"></a>CComCriticalSection:: Term
+## <a name="ccomcriticalsectionterm"></a><a name="term"></a> CComCriticalSection:: Term
 
 [M_sec](#m_sec) 데이터 멤버에 포함 된 임계 영역 개체에서 사용 하는 모든 리소스를 해제 하는 Win32 함수 [DeleteCriticalSection](/windows/win32/api/synchapi/nf-synchapi-deletecriticalsection)를 호출 합니다.
 
@@ -121,7 +122,7 @@ CRITICAL_SECTION m_sec;
 HRESULT Term() throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 S_OK를 반환 합니다.
 
@@ -129,7 +130,7 @@ S_OK를 반환 합니다.
 
 `Term`가 호출 되 면 임계 영역을 더 이상 동기화에 사용할 수 없습니다.
 
-## <a name="ccomcriticalsectionunlock"></a><a name="unlock"></a>CComCriticalSection:: Unlock
+## <a name="ccomcriticalsectionunlock"></a><a name="unlock"></a> CComCriticalSection:: Unlock
 
 [M_sec](#m_sec) 데이터 멤버에 포함 된 임계 영역 개체의 소유권을 해제 하는 Win32 함수 [LeaveCriticalSection](/windows/win32/api/synchapi/nf-synchapi-leavecriticalsection)를 호출 합니다.
 
@@ -137,7 +138,7 @@ S_OK를 반환 합니다.
 HRESULT Unlock() throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 S_OK를 반환 합니다.
 

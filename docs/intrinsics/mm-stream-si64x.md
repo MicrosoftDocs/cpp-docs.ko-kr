@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _mm_stream_si64x'
 title: _mm_stream_si64x
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - movnti instruction
 - _mm_stream_si64x intrinsic
 ms.assetid: 114c2cd0-085f-41aa-846e-87bdd56c9ee7
-ms.openlocfilehash: f6ed0f2482ecbcdaa4d50034e0d08381768847a2
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 2a68437905c0d5dd56a522d15985db7179921852
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70221754"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97133226"
 ---
 # <a name="_mm_stream_si64x"></a>_mm_stream_si64x
 
 **Microsoft 전용**
 
-MOVNTI 명령을 생성 합니다. 캐시를 polluting 않고 *원본* 에 있는 데이터를 *대상*으로 지정 된 메모리 위치에 씁니다.
+MOVNTI 명령을 생성 합니다. 캐시를 polluting 않고 *원본* 에 있는 데이터를 *대상* 으로 지정 된 메모리 위치에 씁니다.
 
 ## <a name="syntax"></a>구문
 
@@ -34,16 +35,16 @@ void _mm_stream_si64x(
 *대상이*\
 제한이 원본 데이터를 쓸 위치에 대 한 포인터입니다.
 
-*Source*\
+*원본*\
 진행 쓸 데이터입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`_mm_stream_si64x`|X64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 ## <a name="remarks"></a>설명
 
@@ -77,6 +78,6 @@ int main()
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

@@ -1,4 +1,5 @@
 ---
+description: Underflow_error 클래스에 대해 자세히 알아보세요.
 title: underflow_error 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - underflow_error class
 ms.assetid: d632f1f9-9c6c-4954-b96b-03041bfab22d
-ms.openlocfilehash: 3f521e8ec083cd158212b3ae9cb9fcf26edc7e76
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 638f824ab5c74a57f7130ea4fdbb3aae3da27e18
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520514"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97132732"
 ---
 # <a name="underflow_error-class"></a>underflow_error 클래스
 
@@ -65,7 +66,7 @@ Type: class std::underflow_error
 
 **네임스페이스:** std
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [runtime_error 클래스](../standard-library/runtime-error-class.md)\
 [C + + 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

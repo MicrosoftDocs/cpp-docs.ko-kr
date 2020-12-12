@@ -1,18 +1,19 @@
-﻿---
+---
+description: '자세한 정보: Compile-Time 캡슐화에 대 한 Pimpl (최신 c + +)'
 title: 컴파일 타임 캡슐화에 대한 Pimpl(최신 C++)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c3e8a90a-b328-4990-82bb-e1b147f76e07
-ms.openlocfilehash: f1eb06ad3a52be486f085babf699677951b1ee71
-ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
+ms.openlocfilehash: 95d1ca4f377cc911e862885e86f846d8536d3b1f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74245185"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97145888"
 ---
 # <a name="pimpl-for-compile-time-encapsulation-modern-c"></a>컴파일 타임 캡슐화에 대한 Pimpl(최신 C++)
 
-*Pimpl* 는 구현을 최소화 하 고 C++ 인터페이스를 분리 하기 위한 최신 기술입니다. 캡슐화 Pimpl는 짧은 "포인터"를 구현합니다. 개념에 익숙할 수 있지만 명칭 또는 컴파일러 방화벽 관용구와 같은 다른 이름으로 이미 알려져 있습니다.
+*Pimpl* 는 구현을 숨기고, 결합을 최소화 하 고, 인터페이스를 분리 하는 최신 c + + 기술입니다. "구현에 대 한 포인터"는 pimpl 짧습니다. 이미 개념에 대해 잘 알고 있지만 Cheshire Cat 또는 컴파일러 방화벽 등의 다른 이름으로 알고 있을 수 있습니다.
 
 ## <a name="why-use-pimpl"></a>Pimpl 사용 되는 이유
 
@@ -22,7 +23,7 @@ ms.locfileid: "74245185"
 
 - 인터페이스 및 구현의 분리.
 
-- 식을.
+- 이식성.
 
 ## <a name="pimpl-header"></a>Pimpl 헤더
 
@@ -39,7 +40,7 @@ Pimpl를 통해 계단식 및 불안정 개체 레이아웃을 다시 작성할 
 
 ## <a name="pimpl-implementation"></a>Pimpl 구현
 
-.Cpp 파일에 `impl` 클래스를 정의 합니다.
+`impl`.Cpp 파일에 클래스를 정의 합니다.
 
 ```cpp
 // my_class.cpp
@@ -59,6 +60,6 @@ my_class::my_class(): pimpl( new impl )
 
 ## <a name="see-also"></a>참고 항목
 
-[다시 시작C++](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++ 시작하기](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)

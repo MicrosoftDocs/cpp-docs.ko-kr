@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 파일 처리'
 title: 파일 처리
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - files [C++], opening
 - files [C++], manipulating
 ms.assetid: 48119e2e-e94f-4602-b08b-b72440f731d8
-ms.openlocfilehash: 2a5c6ec3a70a85bf81f00b104d0c505677f609ac
-ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
-ms.translationtype: HT
+ms.openlocfilehash: 5727f2c4f1d0d79a471b8ec5a76ed719380e2d83
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70740064"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135774"
 ---
 # <a name="file-handling"></a>파일 처리
 

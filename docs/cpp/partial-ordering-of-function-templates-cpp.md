@@ -1,21 +1,22 @@
-﻿---
+---
+description: '자세히 알아보기: 함수 템플릿의 부분 순서 지정 (c + +)'
 title: 함수 템플릿의 부분 순서 지정 (C++)
 ms.date: 07/30/2019
 helpviewer_keywords:
 - partial ordering of function templates
 ms.assetid: 0c17347d-0e80-47ad-b5ac-046462d9dc73
-ms.openlocfilehash: 0c4f11b4b3e02504c4786ea34441362b542959d6
-ms.sourcegitcommit: 725e86dabe2901175ecc63261c3bf05802dddff4
+ms.openlocfilehash: 701c97aa819d0294f69f2fe2a71ffb9bf0210afa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68682421"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97145901"
 ---
 # <a name="partial-ordering-of-function-templates-c"></a>함수 템플릿의 부분 순서 지정 (C++)
 
 함수 호출의 인수 목록과 일치하는 다양한 함수 템플릿을 사용할 수 있습니다. C++에서는 호출해야 하는 함수를 지정하는 함수 템플릿의 부분 정렬을 정의합니다. 정렬이 부분적인 이유는 동일하게 특수화된 것으로 간주되는 일부 템플릿이 있을 수 있기 때문입니다.
 
-컴파일러는 가능한 일치 함수 템플릿 중에서 가장 특수화된 것을 선택합니다. 예를 들어 함수 템플릿이 형식을 `T` 사용 하 고를 사용 `T*` 하는 다른 함수 템플릿을 사용할 수 `T*` 있는 경우 버전은 보다 특수화 된 것으로 간주 됩니다. 인수가 포인터 형식일 때마다 제네릭 `T` 버전 보다 우선적으로 사용할 수 있습니다.
+컴파일러는 가능한 일치 함수 템플릿 중에서 가장 특수화된 것을 선택합니다. 예를 들어 함수 템플릿이 형식을 사용 하 고를 `T` 사용 하는 다른 함수 템플릿을 `T*` 사용할 수 있는 경우 `T*` 버전은 보다 특수화 된 것으로 간주 됩니다. `T`인수가 포인터 형식일 때마다 제네릭 버전 보다 우선적으로 사용할 수 있습니다.
 
 더욱 특수화된 함수 템플릿 후보를 확인하려면 다음 프로세스를 사용합니다.
 
@@ -33,15 +34,15 @@ ms.locfileid: "68682421"
 
    1. 특정 형식으로 특수화된 템플릿은 제네릭 형식 인수를 사용한 템플릿보다 특수화됩니다.
 
-   1. 가상 형식이 `T*` `T` `T` 템플릿인수`X` 에 대 한 유효한 인수 이지만에 대 한 유효한 인수가 아니기 때문에만 취하는 템플릿은 보다 특수 한 방법입니다. `X*` `T*`템플릿 인수입니다.
+   1. `T*` `T` 가상 형식이 `X*` 템플릿 인수에 대 한 유효한 인수 `T` 이지만 `X` 템플릿 인수에 대 한 유효한 인수가 아니기 때문에만 취하는 템플릿은 보다 특수 한 방법입니다 `T*` .
 
-   1. `const T`는 `T` 템플릿 인수에 `T`대 한 `const X` 유효한 인수 `X` 이지만는 `const T` 템플릿 인수에 대 한 유효한 인수가 아니기 때문에 보다 특수화 되어 있습니다.
+   1. `const T``T` `const X` 는 템플릿 인수에 대 한 유효한 인수 `T` 이지만는 `X` 템플릿 인수에 대 한 유효한 인수가 아니기 때문에 보다 특수화 되어 `const T` 있습니다.
 
-   1. `const T*`는 `T*` 템플릿 인수에 `T*`대 한 `const X*` 유효한 인수 `X*` 이지만는 `const T*` 템플릿 인수에 대 한 유효한 인수가 아니기 때문에 보다 특수화 되어 있습니다.
+   1. `const T*``T*` `const X*` 는 템플릿 인수에 대 한 유효한 인수 `T*` 이지만는 `X*` 템플릿 인수에 대 한 유효한 인수가 아니기 때문에 보다 특수화 되어 `const T*` 있습니다.
 
 ## <a name="example"></a>예제
 
-다음 샘플은 표준에 지정된 대로 작동합니다.
+다음 샘플은 표준에 지정 된 대로 작동 합니다.
 
 ```cpp
 // partial_ordering_of_function_templates.cpp
@@ -81,6 +82,6 @@ More specialized function called
 Even more specialized function for const T*
 ```
 
-## <a name="see-also"></a>참고 자료
+## <a name="see-also"></a>참조
 
 [함수 템플릿](../cpp/function-templates.md)

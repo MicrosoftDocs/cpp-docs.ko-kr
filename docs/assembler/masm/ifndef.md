@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: IFNDEF'
 title: IFNDEF
 ms.date: 12/17/2019
 f1_keywords:
@@ -6,26 +7,26 @@ f1_keywords:
 helpviewer_keywords:
 - IFNDEF directive
 ms.assetid: 8c93efc4-9375-45b6-8583-95f0c92f2a3a
-ms.openlocfilehash: fb8479d9df1eb238960d8f8a794c904847660e6b
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: 9891967f690c9f718119518e3bcf4e8d91ebec3e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75317216"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97129976"
 ---
 # <a name="ifndef"></a>IFNDEF
 
 *이름이* 정의 되지 않은 경우 어셈블리를 부여 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **IFNDEF** *이름*
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 전체 [구문에 대 한 자세한 내용은](if-masm.md) 을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [지시문 참조](directives-reference.md)\
 [MASM BNF 문법](masm-bnf-grammar.md)

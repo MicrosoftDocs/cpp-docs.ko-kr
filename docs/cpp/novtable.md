@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: novtable'
 title: novtable
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - novtable __declspec keyword
 - __declspec keyword [C++], novtable
 ms.assetid: cfef09c5-8c1e-4b14-8a72-7d726ded4484
-ms.openlocfilehash: ccf544608bcba83af17702767562ef93d775b5a9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2c818d07603e294f760b768861ce7e7a3e02894b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227259"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146200"
 ---
 # <a name="novtable"></a>novtable
 
@@ -58,4 +59,4 @@ In Y
 ## <a name="see-also"></a>참조
 
 [`__declspec`](../cpp/declspec.md)<br/>
-[C++ 키워드](../cpp/keywords-cpp.md)
+[키워드](../cpp/keywords-cpp.md)

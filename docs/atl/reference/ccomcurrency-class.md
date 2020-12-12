@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CComCurrency 클래스'
 title: CComCurrency 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -15,12 +16,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComCurrency class
 ms.assetid: a1c3d10a-bba6-40cc-8bcf-aed9023c8a9e
-ms.openlocfilehash: 2b3c260f250fdb198c8317355628fa2fe62c44eb
-ms.sourcegitcommit: 13f42c339fb7af935e3a93ac80e350d5e784c9f1
+ms.openlocfilehash: a53e4fe098d3f422b0ccab341f7d6f29d5fec49b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87470786"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146720"
 ---
 # <a name="ccomcurrency-class"></a>CComCurrency 클래스
 
@@ -36,13 +37,13 @@ class CComCurrency
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CComCurrency::CComCurrency](#ccomcurrency)|`CComCurrency` 개체에 대한 생성자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CComCurrency::GetCurrencyPtr](#getcurrencyptr)|`m_currency` 데이터 멤버의 주소를 반환합니다.|
 |[CComCurrency::GetFraction](#getfraction)|`CComCurrency` 개체의 소수 부분을 반환하려면 이 메서드를 호출합니다.|
@@ -53,7 +54,7 @@ class CComCurrency
 
 ### <a name="public-operators"></a>Public 연산자
 
-|이름|Description|
+|Name|설명|
 |----------|-----------------|
 |[CComCurrency:: operator-](#operator_-)|이 연산자는 `CComCurrency` 개체에 대해 빼기를 수행하는 데 사용됩니다.|
 |[CComCurrency:: operator! =](#operator_neq)|두 `CComCurrency` 개체가 다른지 비교합니다.|
@@ -74,7 +75,7 @@ class CComCurrency
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|이름|Description|
+|Name|설명|
 |----------|-----------------|
 |[CComCurrency::m_currency](#m_currency)|클래스 인스턴스에서 만든 통화 변수입니다.|
 
@@ -99,7 +100,7 @@ CY_MIN_FRACTION, CY_MAX_FRACTION 및 CY_SCALE 값은 atlcur.h에 정의됩니다
 
 **헤더: c:** c. h
 
-## <a name="ccomcurrencyccomcurrency"></a><a name="ccomcurrency"></a>CComCurrency:: CComCurrency
+## <a name="ccomcurrencyccomcurrency"></a><a name="ccomcurrency"></a> CComCurrency:: CComCurrency
 
 생성자입니다.
 
@@ -157,7 +158,7 @@ VARIANT 형식의 변수입니다. 현재 스레드의 로캘은 변환을 수�
 
 부동 소수점 또는 double 값을 사용 하 여 값을 할당 하는 경우는 `CComCurrency(10.50)` 와 동일 `CComCurrency(10,5000)` `CComCurrency(10,50)` 합니다.
 
-## <a name="ccomcurrencygetcurrencyptr"></a><a name="getcurrencyptr"></a>CComCurrency:: GetCurrencyPtr
+## <a name="ccomcurrencygetcurrencyptr"></a><a name="getcurrencyptr"></a> CComCurrency:: GetCurrencyPtr
 
 `m_currency` 데이터 멤버의 주소를 반환합니다.
 
@@ -165,11 +166,11 @@ VARIANT 형식의 변수입니다. 현재 스레드의 로캘은 변환을 수�
 CURRENCY* GetCurrencyPtr() throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 데이터 멤버의 주소를 반환 합니다. `m_currency`
 
-## <a name="ccomcurrencygetfraction"></a><a name="getfraction"></a>CComCurrency:: GetFraction
+## <a name="ccomcurrencygetfraction"></a><a name="getfraction"></a> CComCurrency:: GetFraction
 
 개체의 소수 부분을 반환 하려면이 메서드를 호출 `CComCurrency` 합니다.
 
@@ -177,19 +178,19 @@ CURRENCY* GetCurrencyPtr() throw();
 SHORT GetFraction() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 데이터 멤버의 소수 부분을 반환 합니다 `m_currency` .
 
 ### <a name="remarks"></a>설명
 
-소수 구성 요소는-9999 (CY_MIN_FRACTION)에서 + 9999 (CY_MAX_FRACTION) 사이의 4 자리 정수 값입니다. `GetFraction`1만 (CY_SCALE)으로 확장 된이 값을 반환 합니다. CY_MIN_FRACTION, CY_MAX_FRACTION 및 CY_SCALE의 값은 c. h h h. h에 정의 되어 있습니다.
+소수 구성 요소는-9999 (CY_MIN_FRACTION)에서 + 9999 (CY_MAX_FRACTION) 사이의 4 자리 정수 값입니다. `GetFraction` 1만 (CY_SCALE)으로 확장 된이 값을 반환 합니다. CY_MIN_FRACTION, CY_MAX_FRACTION 및 CY_SCALE의 값은 c. h h h. h에 정의 되어 있습니다.
 
 ### <a name="example"></a>예제
 
 [!code-cpp[NVC_ATL_Utilities#50](../../atl/codesnippet/cpp/ccomcurrency-class_1.cpp)]
 
-## <a name="ccomcurrencygetinteger"></a><a name="getinteger"></a>CComCurrency:: GetInteger
+## <a name="ccomcurrencygetinteger"></a><a name="getinteger"></a> CComCurrency:: GetInteger
 
 개체의 정수 구성 요소를 가져오려면이 메서드를 호출 `CComCurrency` 합니다.
 
@@ -197,7 +198,7 @@ SHORT GetFraction() const;
 LONGLONG GetInteger() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 데이터 멤버의 정수 구성 요소를 반환 합니다 `m_currency` .
 
@@ -205,7 +206,7 @@ LONGLONG GetInteger() const;
 
 [!code-cpp[NVC_ATL_Utilities#51](../../atl/codesnippet/cpp/ccomcurrency-class_2.cpp)]
 
-## <a name="ccomcurrencym_currency"></a><a name="m_currency"></a>CComCurrency:: m_currency
+## <a name="ccomcurrencym_currency"></a><a name="m_currency"></a> CComCurrency:: m_currency
 
 CURRENCY 데이터 멤버입니다.
 
@@ -217,7 +218,7 @@ CURRENCY m_currency;
 
 이 멤버는이 클래스의 메서드로 액세스 하 고 조작 하는 통화를 보유 합니다.
 
-## <a name="ccomcurrencyoperator--"></a><a name="operator_-"></a>CComCurrency:: operator-
+## <a name="ccomcurrencyoperator--"></a><a name="operator_-"></a> CComCurrency:: operator-
 
 이 연산자는 `CComCurrency` 개체에 대해 빼기를 수행하는 데 사용됩니다.
 
@@ -231,7 +232,7 @@ CComCurrency operator-(const CComCurrency& cur) const;
 *cur*<br/>
 `CComCurrency` 개체입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `CComCurrency`빼기의 결과를 나타내는 개체를 반환 합니다. 오버플로와 같은 오류가 발생할 경우이 연산자는 오류를 설명 하는 `AtlThrow` HRESULT를 사용 하 여를 호출 합니다.
 
@@ -239,7 +240,7 @@ CComCurrency operator-(const CComCurrency& cur) const;
 
 [!code-cpp[NVC_ATL_Utilities#55](../../atl/codesnippet/cpp/ccomcurrency-class_3.cpp)]
 
-## <a name="ccomcurrencyoperator-"></a><a name="operator_neq"></a>CComCurrency:: operator! =
+## <a name="ccomcurrencyoperator-"></a><a name="operator_neq"></a> CComCurrency:: operator! =
 
 이 연산자는 두 개체가 같지 않은지 비교 합니다.
 
@@ -252,7 +253,7 @@ bool operator!= (const CComCurrency& cur) const;
 *cur*<br/>
 비교할 `CComCurrency` 개체입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 비교할 항목이 개체와 같지 않으면 TRUE를 반환 하 고 `CComCurrency` , 그렇지 않으면 FALSE를 반환 합니다.
 
@@ -260,7 +261,7 @@ bool operator!= (const CComCurrency& cur) const;
 
 [!code-cpp[NVC_ATL_Utilities#56](../../atl/codesnippet/cpp/ccomcurrency-class_4.cpp)]
 
-## <a name="ccomcurrencyoperator-"></a><a name="operator_star"></a>CComCurrency:: operator *
+## <a name="ccomcurrencyoperator-"></a><a name="operator_star"></a> CComCurrency:: operator *
 
 이 연산자는 `CComCurrency` 개체에 대해 곱하기를 수행하는 데 사용됩니다.
 
@@ -277,7 +278,7 @@ CComCurrency operator*(const CComCurrency& cur) const;
 *cur*<br/>
 `CComCurrency`승수로 사용 되는 개체입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `CComCurrency`곱하기의 결과를 나타내는 개체를 반환 합니다. 오버플로와 같은 오류가 발생할 경우이 연산자는 오류를 설명 하는 `AtlThrow` HRESULT를 사용 하 여를 호출 합니다.
 
@@ -285,7 +286,7 @@ CComCurrency operator*(const CComCurrency& cur) const;
 
 [!code-cpp[NVC_ATL_Utilities#57](../../atl/codesnippet/cpp/ccomcurrency-class_5.cpp)]
 
-## <a name="ccomcurrencyoperator-"></a><a name="operator_star_eq"></a>CComCurrency:: operator\*=
+## <a name="ccomcurrencyoperator-"></a><a name="operator_star_eq"></a> CComCurrency:: operator \*=
 
 이 연산자는 `CComCurrency` 개체에 대해 곱하기를 수행하고 결과를 할당하는 데 사용됩니다.
 
@@ -302,7 +303,7 @@ const CComCurrency& operator*= (const CComCurrency& cur);
 *cur*<br/>
 `CComCurrency`승수로 사용 되는 개체입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 업데이트 된 개체를 반환 `CComCurrency` 합니다. 오버플로와 같은 오류가 발생할 경우이 연산자는 오류를 설명 하는 `AtlThrow` HRESULT를 사용 하 여를 호출 합니다.
 
@@ -310,7 +311,7 @@ const CComCurrency& operator*= (const CComCurrency& cur);
 
 [!code-cpp[NVC_ATL_Utilities#58](../../atl/codesnippet/cpp/ccomcurrency-class_6.cpp)]
 
-## <a name="ccomcurrencyoperator-"></a><a name="operator_div"></a>CComCurrency:: operator/
+## <a name="ccomcurrencyoperator-"></a><a name="operator_div"></a> CComCurrency:: operator/
 
 이 연산자는 `CComCurrency` 개체에 대해 나누기를 수행하는 데 사용됩니다.
 
@@ -323,7 +324,7 @@ CComCurrency operator/(long nOperand) const;
 *nOperand*<br/>
 제수입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `CComCurrency`나누기의 결과를 나타내는 개체를 반환 합니다. 제수가 0 이면 assert 오류가 발생 합니다.
 
@@ -331,7 +332,7 @@ CComCurrency operator/(long nOperand) const;
 
 [!code-cpp[NVC_ATL_Utilities#59](../../atl/codesnippet/cpp/ccomcurrency-class_7.cpp)]
 
-## <a name="ccomcurrencyoperator-"></a><a name="operator_div_eq"></a>CComCurrency:: operator/=
+## <a name="ccomcurrencyoperator-"></a><a name="operator_div_eq"></a> CComCurrency:: operator/=
 
 이 연산자는 `CComCurrency` 개체에 대해 나누기를 수행하고 결과를 할당하는 데 사용됩니다.
 
@@ -344,7 +345,7 @@ const CComCurrency& operator/= (long nOperand);
 *nOperand*<br/>
 제수입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 업데이트 된 개체를 반환 `CComCurrency` 합니다. 제수가 0 이면 assert 오류가 발생 합니다.
 
@@ -352,7 +353,7 @@ const CComCurrency& operator/= (long nOperand);
 
 [!code-cpp[NVC_ATL_Utilities#60](../../atl/codesnippet/cpp/ccomcurrency-class_8.cpp)]
 
-## <a name="ccomcurrencyoperator-"></a><a name="operator_add"></a>CComCurrency:: operator +
+## <a name="ccomcurrencyoperator-"></a><a name="operator_add"></a> CComCurrency:: operator +
 
 이 연산자는 `CComCurrency` 개체에 대해 더하기를 수행하는 데 사용됩니다.
 
@@ -365,7 +366,7 @@ CComCurrency operator+(const CComCurrency& cur) const;
 *cur*<br/>
 `CComCurrency`원래 개체에 추가할 개체입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `CComCurrency`더하기의 결과를 나타내는 개체를 반환 합니다. 오버플로와 같은 오류가 발생할 경우이 연산자는 오류를 설명 하는 `AtlThrow` HRESULT를 사용 하 여를 호출 합니다.
 
@@ -373,7 +374,7 @@ CComCurrency operator+(const CComCurrency& cur) const;
 
 [!code-cpp[NVC_ATL_Utilities#61](../../atl/codesnippet/cpp/ccomcurrency-class_9.cpp)]
 
-## <a name="ccomcurrencyoperator-"></a><a name="operator_add_eq"></a>CComCurrency:: operator + =
+## <a name="ccomcurrencyoperator-"></a><a name="operator_add_eq"></a> CComCurrency:: operator + =
 
 이 연산자는 `CComCurrency` 개체에 대해 더하기를 수행하고 결과를 현재 개체에 할당하는 데 사용됩니다.
 
@@ -384,9 +385,9 @@ const CComCurrency& operator+= (const CComCurrency& cur);
 ### <a name="parameters"></a>매개 변수
 
 *cur*<br/>
-`CComCurrency` 개체입니다.
+`CComCurrency` 개체
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 업데이트 된 개체를 반환 `CComCurrency` 합니다. 오버플로와 같은 오류가 발생할 경우이 연산자는 오류를 설명 하는 `AtlThrow` HRESULT를 사용 하 여를 호출 합니다.
 
@@ -394,7 +395,7 @@ const CComCurrency& operator+= (const CComCurrency& cur);
 
 [!code-cpp[NVC_ATL_Utilities#62](../../atl/codesnippet/cpp/ccomcurrency-class_10.cpp)]
 
-## <a name="ccomcurrencyoperator-lt"></a><a name="operator_lt"></a>CComCurrency:: operator&lt;
+## <a name="ccomcurrencyoperator-lt"></a><a name="operator_lt"></a> CComCurrency:: operator &lt;
 
 이 연산자는 두 `CComCurrency` 개체를 비교하여 더 작은 값을 확인합니다.
 
@@ -407,7 +408,7 @@ bool operator<(const CComCurrency& cur) const;
 *cur*<br/>
 `CComCurrency` 개체입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 첫 번째 개체가 두 번째 개체 보다 작은 경우 TRUE를 반환 하 고, 그렇지 않으면 FALSE를 반환 합니다.
 
@@ -415,7 +416,7 @@ bool operator<(const CComCurrency& cur) const;
 
 [!code-cpp[NVC_ATL_Utilities#63](../../atl/codesnippet/cpp/ccomcurrency-class_11.cpp)]
 
-## <a name="ccomcurrencyoperator-lt"></a><a name="operator_lt_eq"></a>CComCurrency:: operator&lt;=
+## <a name="ccomcurrencyoperator-lt"></a><a name="operator_lt_eq"></a> CComCurrency:: operator &lt;=
 
 이 연산자는 두 `CComCurrency` 개체를 비교하여 더 작거나 같은 값을 확인합니다.
 
@@ -428,7 +429,7 @@ bool operator<= (const CComCurrency& cur) const;
 *cur*<br/>
 `CComCurrency` 개체입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 첫 번째 개체가 두 번째 개체 보다 작거나 같으면 TRUE, 그렇지 않으면 FALSE를 반환 합니다.
 
@@ -436,7 +437,7 @@ bool operator<= (const CComCurrency& cur) const;
 
 [!code-cpp[NVC_ATL_Utilities#64](../../atl/codesnippet/cpp/ccomcurrency-class_12.cpp)]
 
-## <a name="ccomcurrencyoperator-"></a><a name="operator_eq"></a>CComCurrency:: operator =
+## <a name="ccomcurrencyoperator-"></a><a name="operator_eq"></a> CComCurrency:: operator =
 
 다음 연산자는 `CComCurrency` 개체에 새 값을 할당합니다.
 
@@ -465,7 +466,7 @@ CURRENCY 형식의 변수입니다.
 *sSrc*, *fsrc*, *lsrc*, *bsrc*, *ussrc*, *dsrc*, *csrc*, *ulsrc*, *dsrc*<br/>
 개체에 할당할 숫자 값 `CComCurrency` 입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 업데이트 된 개체를 반환 `CComCurrency` 합니다. 오버플로와 같은 오류가 발생할 경우이 연산자는 오류를 설명 하는 `AtlThrow` HRESULT를 사용 하 여를 호출 합니다.
 
@@ -473,7 +474,7 @@ CURRENCY 형식의 변수입니다.
 
 [!code-cpp[NVC_ATL_Utilities#65](../../atl/codesnippet/cpp/ccomcurrency-class_13.cpp)]
 
-## <a name="ccomcurrencyoperator--"></a><a name="operator_-_eq"></a>CComCurrency:: operator-=
+## <a name="ccomcurrencyoperator--"></a><a name="operator_-_eq"></a> CComCurrency:: operator-=
 
 이 연산자는 `CComCurrency` 개체에 대해 빼기를 수행하고 결과를 할당하는 데 사용됩니다.
 
@@ -486,7 +487,7 @@ const CComCurrency& operator-= (const CComCurrency& cur);
 *cur*<br/>
 `CComCurrency` 개체입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 업데이트 된 개체를 반환 `CComCurrency` 합니다. 오버플로와 같은 오류가 발생할 경우이 연산자는 오류를 설명 하는 `AtlThrow` HRESULT를 사용 하 여를 호출 합니다.
 
@@ -494,7 +495,7 @@ const CComCurrency& operator-= (const CComCurrency& cur);
 
 [!code-cpp[NVC_ATL_Utilities#66](../../atl/codesnippet/cpp/ccomcurrency-class_14.cpp)]
 
-## <a name="ccomcurrencyoperator-"></a><a name="operator_eq_eq"></a>CComCurrency:: operator = =
+## <a name="ccomcurrencyoperator-"></a><a name="operator_eq_eq"></a> CComCurrency:: operator = =
 
 이 연산자는 두 `CComCurrency` 개체가 같은지 비교합니다.
 
@@ -507,7 +508,7 @@ bool operator== (const CComCurrency& cur) const;
 *cur*<br/>
 비교할 `CComCurrency` 개체입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `m_currency`두 개체의 데이터 멤버 (두 개체 모두에 동일한 값이 있는 경우)와 개체가 같으면 TRUE, 그렇지 않으면 FALSE를 반환 합니다.
 
@@ -515,7 +516,7 @@ bool operator== (const CComCurrency& cur) const;
 
 [!code-cpp[NVC_ATL_Utilities#67](../../atl/codesnippet/cpp/ccomcurrency-class_15.cpp)]
 
-## <a name="ccomcurrencyoperator-gt"></a><a name="operator_gt"></a>CComCurrency:: operator&gt;
+## <a name="ccomcurrencyoperator-gt"></a><a name="operator_gt"></a> CComCurrency:: operator &gt;
 
 이 연산자는 두 `CComCurrency` 개체를 비교하여 더 큰 값을 확인합니다.
 
@@ -528,7 +529,7 @@ bool operator>(const CComCurrency& cur) const;
 *cur*<br/>
 `CComCurrency` 개체입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 첫 번째 개체가 두 번째 개체 보다 크면 TRUE를 반환 하 고, 그렇지 않으면 FALSE를 반환 합니다.
 
@@ -536,7 +537,7 @@ bool operator>(const CComCurrency& cur) const;
 
 [!code-cpp[NVC_ATL_Utilities#68](../../atl/codesnippet/cpp/ccomcurrency-class_16.cpp)]
 
-## <a name="ccomcurrencyoperator-gt"></a><a name="operator_gt_eq"></a>CComCurrency:: operator&gt;=
+## <a name="ccomcurrencyoperator-gt"></a><a name="operator_gt_eq"></a> CComCurrency:: operator &gt;=
 
 이 연산자는 두 `CComCurrency` 개체를 비교하여 더 크거나 같은 값을 확인합니다.
 
@@ -549,7 +550,7 @@ bool operator>= (const CComCurrency& cur) const;
 *cur*<br/>
 `CComCurrency` 개체입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 첫 번째 개체가 두 번째 개체 보다 크거나 같으면 TRUE, 그렇지 않으면 FALSE를 반환 합니다.
 
@@ -557,7 +558,7 @@ bool operator>= (const CComCurrency& cur) const;
 
 [!code-cpp[NVC_ATL_Utilities#69](../../atl/codesnippet/cpp/ccomcurrency-class_17.cpp)]
 
-## <a name="ccomcurrencyoperator-currency"></a><a name="operator_currency"></a>CComCurrency:: operator CURRENCY
+## <a name="ccomcurrencyoperator-currency"></a><a name="operator_currency"></a> CComCurrency:: operator CURRENCY
 
 이러한 연산자는 `CComCurrency` 개체를 CURRENCY 데이터 형식으로 캐스팅 하는 데 사용 됩니다.
 
@@ -566,7 +567,7 @@ operator CURRENCY&() throw();
 operator const CURRENCY&() const throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 통화 개체에 대 한 참조를 반환 합니다.
 
@@ -574,7 +575,7 @@ operator const CURRENCY&() const throw();
 
 [!code-cpp[NVC_ATL_Utilities#70](../../atl/codesnippet/cpp/ccomcurrency-class_18.cpp)]
 
-## <a name="ccomcurrencyround"></a><a name="round"></a>CComCurrency:: Round
+## <a name="ccomcurrencyround"></a><a name="round"></a> CComCurrency:: Round
 
 이 메서드를 호출 하 여 통화를 지정 된 소수 자릿수로 반올림 합니다.
 
@@ -587,7 +588,7 @@ HRESULT Roundint nDecimals);
 *nDecimals*<br/>
 `m_currency`0에서 4 사이의 범위에서 반올림 되는 자릿수입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 시 S_OK 또는 실패 시 오류 HRESULT를 반환 합니다.
 
@@ -595,7 +596,7 @@ HRESULT Roundint nDecimals);
 
 [!code-cpp[NVC_ATL_Utilities#52](../../atl/codesnippet/cpp/ccomcurrency-class_19.cpp)]
 
-## <a name="ccomcurrencysetfraction"></a><a name="setfraction"></a>CComCurrency:: SetFraction
+## <a name="ccomcurrencysetfraction"></a><a name="setfraction"></a> CComCurrency:: SetFraction
 
 `CComCurrency` 개체의 소수 부분을 설정하려면 이 메서드를 호출합니다.
 
@@ -608,7 +609,7 @@ HRESULT SetFraction(SHORT nFraction);
 *nFraction*<br/>
 데이터 멤버의 소수 부분 구성 요소에 할당할 값 `m_currency` 입니다. 소수 구성 요소의 부호는 정수 구성 요소와 동일 해야 하며 값은-9999 (CY_MIN_FRACTION)에서 + 9999 (CY_MAX_FRACTION) 사이 여야 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 시 S_OK 또는 실패 시 오류 HRESULT를 반환 합니다.
 
@@ -616,7 +617,7 @@ HRESULT SetFraction(SHORT nFraction);
 
 [!code-cpp[NVC_ATL_Utilities#53](../../atl/codesnippet/cpp/ccomcurrency-class_20.cpp)]
 
-## <a name="ccomcurrencysetinteger"></a><a name="setinteger"></a>CComCurrency:: SetInteger
+## <a name="ccomcurrencysetinteger"></a><a name="setinteger"></a> CComCurrency:: SetInteger
 
 `CComCurrency` 개체의 정수 부분을 설정하려면 이 메서드를 호출합니다.
 
@@ -631,7 +632,7 @@ HRESULT SetInteger(LONGLONG nInteger);
 
 *n 정수* 는 포괄 CY_MAX_INTEGER CY_MIN_INTEGER 범위에 있어야 합니다. 이러한 값은 c # c. h에 정의 되어 있습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 시 S_OK 또는 실패 시 오류 HRESULT를 반환 합니다.
 
@@ -642,5 +643,5 @@ HRESULT SetInteger(LONGLONG nInteger);
 ## <a name="see-also"></a>참고 항목
 
 [COleCurrency 클래스](../../mfc/reference/colecurrency-class.md)<br/>
-[통화](/windows/win32/api/wtypes/ns-wtypes-cy-r1)<br/>
+[CURRENCY](/windows/win32/api/wtypes/ns-wtypes-cy-r1)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

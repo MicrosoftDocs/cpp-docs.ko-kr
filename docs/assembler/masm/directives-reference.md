@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 지시문 참조'
 title: 지시문 참조
 ms.date: 07/15/2020
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - MASM (Microsoft Macro Assembler), directives reference
 ms.assetid: da6efcd1-18f7-41de-81cd-a002a02f9a22
-ms.openlocfilehash: e3e4fa7fbf18fbb18096593042873106897c70ca
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5f4e4a75ce37b0d393bbc6a2a8fd45d16247dcff
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88830750"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97132590"
 ---
 # <a name="directives-reference"></a>지시문 참조
 
-## <a name="x64"></a>x64
+## <a name="x64"></a>X64
 
 :::row:::
    :::column span="":::
@@ -185,7 +186,7 @@ ms.locfileid: "88830750"
    :::column-end:::
 :::row-end:::
 
-## <a name="macros"></a>매크로
+## <a name="macros"></a>Macros
 
 :::row:::
    :::column span="":::

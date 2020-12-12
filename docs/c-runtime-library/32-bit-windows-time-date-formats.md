@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 32 비트 Windows 시간/날짜 형식'
 title: 32비트 Windows 시간-날짜 서식
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - 32-bit Windows
 ms.assetid: ef1589db-84d7-4b24-8799-7c7a22cfe2bf
-ms.openlocfilehash: 4827f82df08273dfa369d6242b9fe2be84875128
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: 3893a2abc5d00cfba7ec83209470e907f87d3e94
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57746359"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135787"
 ---
 # <a name="32-bit-windows-timedate-formats"></a>32비트 Windows 시간/날짜 서식
 
@@ -22,7 +23,7 @@ ms.locfileid: "57746359"
 |비트 위치:|0   1   2   3   4|5   6   7   8   9   A|B   C   D   E   F|
 |-------------------|-----------------------|---------------------------|-----------------------|
 |길이:|5|6|5|
-|콘텐츠:|시|분|2초 증가|
+|콘텐츠:|시간|minutes|2초 증가|
 |값 범위:|0-23|0-59|2초 간격으로 0-29|
 
 ### <a name="date"></a>날짜
@@ -30,7 +31,7 @@ ms.locfileid: "57746359"
 |비트 위치:|0   1   2   3   4   5   6|7   8   9   A|B   C   D   E   F|
 |-------------------|-------------------------------|-------------------|-----------------------|
 |길이:|7|4|5|
-|콘텐츠:|년|월|일|
+|콘텐츠:|연도|month|일|
 |값 범위:|0-119|1-12|1-31|
 ||(1980에 상대적)|||
 

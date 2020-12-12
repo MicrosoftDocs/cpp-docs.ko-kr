@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Platform::D etails:: IPrintable 가능 인터페이스'
 title: Platform::Details::IPrintable 인터페이스
 ms.date: 12/30/2016
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Details::IPrintable Interface
 ms.assetid: b863a872-2563-4d90-88e0-c5a0bdde83f4
-ms.openlocfilehash: d6de13e05ffe6144fd6db0ba5e79f92c0a708dbb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 52a5645ab8108f28e5ef8e2d632a729d9d9e259d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62330416"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97145694"
 ---
 # <a name="platformdetailsiprintable-interface"></a>Platform::Details::IPrintable 인터페이스
 
@@ -34,10 +35,10 @@ interface class IPrintable;
 
 ### <a name="requirements"></a>요구 사항
 
-**메타데이터:** platform.winmd
+**메타 데이터:** platform.object
 
 **네임스페이스:** Platform::Details
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[플랫폼 Namespace](platform-namespace-c-cx.md)
+[Platform 네임 스페이스](platform-namespace-c-cx.md)

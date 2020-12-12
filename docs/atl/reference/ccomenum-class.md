@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CComEnum 클래스'
 title: CComEnum 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComEnum class
 ms.assetid: bff7dd7b-eb6e-4d6e-96ed-2706e66c8b3b
-ms.openlocfilehash: 7241d903e44329eb8fd50155059355a470fb7b90
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0cee4129c0bc5129313b92e144c22de9d161c9cb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226622"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146694"
 ---
 # <a name="ccomenum-class"></a>CComEnum 클래스
 
@@ -48,7 +49,7 @@ COM 열거자 인터페이스입니다. 예는 [IEnumString](/windows/win32/api/
 
 ## <a name="remarks"></a>설명
 
-`CComEnum`배열을 기반으로 COM 열거자 개체를 정의 합니다. 이 클래스는 c + + 표준 라이브러리 컨테이너를 기반으로 열거자를 구현 하는 [CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md) 와 유사 합니다. 이 클래스를 사용 하는 일반적인 단계는 아래에 설명 되어 있습니다. 자세한 내용은 [ATL 컬렉션 및 열거자](../../atl/atl-collections-and-enumerators.md)를 참조 하세요.
+`CComEnum` 배열을 기반으로 COM 열거자 개체를 정의 합니다. 이 클래스는 c + + 표준 라이브러리 컨테이너를 기반으로 열거자를 구현 하는 [CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md) 와 유사 합니다. 이 클래스를 사용 하는 일반적인 단계는 아래에 설명 되어 있습니다. 자세한 내용은 [ATL 컬렉션 및 열거자](../../atl/atl-collections-and-enumerators.md)를 참조 하세요.
 
 ## <a name="to-use-this-class"></a>이 클래스를 사용 하려면 다음을 수행 합니다.
 
