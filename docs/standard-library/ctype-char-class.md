@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: ctype &lt; char &gt; 클래스'
 title: ctype&lt;char&gt; 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - ctype<char> class
 ms.assetid: ee30acb4-a743-405e-b3d4-13602092da84
-ms.openlocfilehash: d2c74ef46babe388cfa6d649e8b4501b7c235bb9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f423b66f75cc0e1ee823251977e7d048b3c19e02
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220966"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324670"
 ---
 # <a name="ctypeltchargt-class"></a>ctype&lt;char&gt; 클래스
 

@@ -1,4 +1,5 @@
 ---
+description: Uint_2 클래스에 대해 자세히 알아보세요.
 title: uint_2 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -28,12 +29,12 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::uint_2::operator++
 - amp_short_vectors/Concurrency::graphics::uint_2::rg
 ms.assetid: 9fcc9129-72b1-4da7-9012-4d3be15f1c52
-ms.openlocfilehash: 5f01e4d50dc3fab8d7cb909d1ea2f3d1801f0db0
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 6cf10e10baad6cedb06cef4358feebb11e6ce076
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77126212"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325812"
 ---
 # <a name="uint_2-class"></a>uint_2 클래스
 
@@ -45,76 +46,76 @@ ms.locfileid: "77126212"
 class uint_2;
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 
-### <a name="public-typedefs"></a>공용 형식 정의
+### <a name="public-typedefs"></a>공용 Typedefs
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |`value_type`||
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[uint_2 생성자](#ctor)|오버로드되었습니다. 기본 생성자는 0으로 모든 요소를 초기화 합니다.|
+|[uint_2 생성자](#ctor)|오버로드됨. 기본 생성자는 0으로 모든 요소를 초기화 합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|uint_2::get_x||
-|uint_2::get_xy||
-|uint_2::get_y||
-|uint_2::get_yx||
-|uint_2::ref_g_Method||
-|uint_2::ref_r_Method||
-|uint_2::ref_x_Method||
-|uint_2::ref_y_Method||
-|uint_2::set_x||
-|uint_2::set_xy||
-|uint_2::set_y||
-|uint_2::set_yx||
+|uint_2:: get_x||
+|uint_2:: get_xy||
+|uint_2:: get_y||
+|uint_2:: get_yx||
+|uint_2:: ref_g_Method||
+|uint_2:: ref_r_Method||
+|uint_2:: ref_x_Method||
+|uint_2:: ref_y_Method||
+|uint_2:: set_x||
+|uint_2:: set_xy||
+|uint_2:: set_y||
+|uint_2:: set_yx||
 
 ### <a name="public-operators"></a>Public 연산자
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|uint_2::operator--||
-|uint_2::operator%=||
-|uint_2::operator&=||
-|uint_2::operator*=||
-|uint_2::operator/=||
-|uint_2::operator^=||
-|uint_2::operator&#124;=||
-|uint_2::operator~||
-|uint_2::operator++||
-|uint_2::operator+=||
-|uint_2:: operator <\<=||
-|uint_2::operator=||
-|uint_2::operator-=||
-|uint_2::operator>>=||
+|uint_2:: operator--||
+|uint_2:: operator% =||
+|uint_2:: operator&=||
+|uint_2:: operator * =||
+|uint_2:: operator/=||
+|uint_2:: operator ^ =||
+|uint_2:: operator&#124;=||
+|uint_2:: operator ~||
+|uint_2:: operator + +||
+|uint_2:: operator + =||
+|uint_2:: operator<\<=||
+|uint_2:: operator =||
+|uint_2:: operator-=||
+|uint_2:: operator>>=||
 
 ### <a name="public-constants"></a>공용 상수
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |[크기 상수](#uint_2__size)||
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|uint_2::g||
-|uint_2::gr||
-|uint_2::r||
-|uint_2::rg||
-|uint_2::x||
-|uint_2::xy||
-|uint_2::y||
-|uint_2::yx||
+|uint_2:: g||
+|uint_2:: gr||
+|uint_2:: r||
+|uint_2:: rg||
+|uint_2:: x||
+|uint_2:: xy||
+|uint_2:: y||
+|uint_2:: yx||
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `uint_2`
 
@@ -124,7 +125,7 @@ class uint_2;
 
 **네임 스페이스:** Concurrency:: graphics
 
-## <a name="ctor"></a>uint_2
+## <a name="uint_2"></a><a name="ctor"></a> uint_2
 
 기본 생성자는 0으로 모든 요소를 초기화 합니다.
 
@@ -180,7 +181,7 @@ explicit inline uint_2(
 *_Other*<br/>
 을 초기화 하는 데 사용 되는 개체입니다.
 
-## <a name="uint_2__size"></a>크기가
+## <a name="size"></a><a name="uint_2__size"></a> 크기가
 
 ```cpp
 static const int size = 2;

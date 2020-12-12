@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 활성화: 동사'
 title: '활성화: 동사'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - Primary verb [MFC]
 - OLE activation {MFC]
 ms.assetid: eb56ff23-1de8-43ad-abeb-dc7346ba7b70
-ms.openlocfilehash: 03edba0a4336fdc147ef6dd10c7a8154aca19d3a
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 2c680452d87f1fcfd1ee2a0b8362dbaab8c0affd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616637"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325934"
 ---
 # <a name="activation-verbs"></a>활성화: 동사
 

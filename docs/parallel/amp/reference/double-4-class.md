@@ -1,4 +1,5 @@
 ---
+description: Double_4 클래스에 대해 자세히 알아보세요.
 title: double_4 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -268,12 +269,12 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::double_4::bag
 - amp_short_vectors/Concurrency::graphics::double_4::zwy
 ms.assetid: a81c1595-24c6-4b3f-9574-d5942275e5e8
-ms.openlocfilehash: a9ca413573ebd741ea2a9a813a25ec2679aff5b7
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: bb423c01a048ec8ce78abd79fe16d32635473471
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77139349"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325880"
 ---
 # <a name="double_4-class"></a>double_4 클래스
 
@@ -285,314 +286,314 @@ ms.locfileid: "77139349"
 class double_4;
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 
-### <a name="public-typedefs"></a>공용 형식 정의
+### <a name="public-typedefs"></a>공용 Typedefs
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |`value_type`||
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[double_4 생성자](#ctor)|오버로드되었습니다. 기본 생성자는 0으로 모든 요소를 초기화 합니다.|
+|[double_4 생성자](#ctor)|오버로드됨. 기본 생성자는 0으로 모든 요소를 초기화 합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|double_4::get_w||
-|double_4::get_wx||
-|double_4::get_wxy||
-|double_4::get_wxyz||
-|double_4::get_wxz||
-|double_4::get_wxzy||
-|double_4::get_wy||
-|double_4::get_wyx||
-|double_4::get_wyxz||
-|double_4::get_wyz||
-|double_4::get_wyzx||
-|double_4::get_wz||
-|double_4::get_wzx||
-|double_4::get_wzxy||
-|double_4::get_wzy||
-|double_4::get_wzyx||
-|double_4::get_x||
-|double_4::get_xw||
-|double_4::get_xwy||
-|double_4::get_xwyz||
-|double_4::get_xwz||
-|double_4::get_xwzy||
-|double_4::get_xy||
-|double_4::get_xyw||
-|double_4::get_xywz||
-|double_4::get_xyz||
-|double_4::get_xyzw||
-|double_4::get_xz||
-|double_4::get_xzw||
-|double_4::get_xzwy||
-|double_4::get_xzy||
-|double_4::get_xzyw||
-|double_4::get_y||
-|double_4::get_yw||
-|double_4::get_ywx||
-|double_4::get_ywxz||
-|double_4::get_ywz||
-|double_4::get_ywzx||
-|double_4::get_yx||
-|double_4::get_yxw||
-|double_4::get_yxwz||
-|double_4::get_yxz||
-|double_4::get_yxzw||
-|double_4::get_yz||
-|double_4::get_yzw||
-|double_4::get_yzwx||
-|double_4::get_yzx||
-|double_4::get_yzxw||
-|double_4::get_z||
-|double_4::get_zw||
-|double_4::get_zwx||
-|double_4::get_zwxy||
-|double_4::get_zwy||
-|double_4::get_zwyx||
-|double_4::get_zx||
-|double_4::get_zxw||
-|double_4::get_zxwy||
-|double_4::get_zxy||
-|double_4::get_zxyw||
-|double_4::get_zy||
-|double_4::get_zyw||
-|double_4::get_zywx||
-|double_4::get_zyx||
-|double_4::get_zyxw||
-|double_4::ref_a||
-|double_4::ref_b||
-|double_4::ref_g||
-|double_4::ref_r||
-|double_4::ref_w||
-|double_4::ref_x||
-|double_4::ref_y||
-|double_4::ref_z||
-|double_4::set_w||
-|double_4::set_wx||
-|double_4::set_wxy||
-|double_4::set_wxyz||
-|double_4::set_wxz||
-|double_4::set_wxzy||
-|double_4::set_wy||
-|double_4::set_wyx||
-|double_4::set_wyxz||
-|double_4::set_wyz||
-|double_4::set_wyzx||
-|double_4::set_wz||
-|double_4::set_wzx||
-|double_4::set_wzxy||
-|double_4::set_wzy||
-|double_4::set_wzyx||
-|double_4::set_x||
-|double_4::set_xw||
-|double_4::set_xwy||
-|double_4::set_xwyz||
-|double_4::set_xwz||
-|double_4::set_xwzy||
-|double_4::set_xy||
-|double_4::set_xyw||
-|double_4::set_xywz||
-|double_4::set_xyz||
-|double_4::set_xyzw||
-|double_4::set_xz||
-|double_4::set_xzw||
-|double_4::set_xzwy||
-|double_4::set_xzy||
-|double_4::set_xzyw||
-|double_4::set_y||
-|double_4::set_yw||
-|double_4::set_ywx||
-|double_4::set_ywxz||
-|double_4::set_ywz||
-|double_4::set_ywzx||
-|double_4::set_yx||
-|double_4::set_yxw||
-|double_4::set_yxwz||
-|double_4::set_yxz||
-|double_4::set_yxzw||
-|double_4::set_yz||
-|double_4::set_yzw||
-|double_4::set_yzwx||
-|double_4::set_yzx||
-|double_4::set_yzxw||
-|double_4::set_z||
-|double_4::set_zw||
-|double_4::set_zwx||
-|double_4::set_zwxy||
-|double_4::set_zwy||
-|double_4::set_zwyx||
-|double_4::set_zx||
-|double_4::set_zxw||
-|double_4::set_zxwy||
-|double_4::set_zxy||
-|double_4::set_zxyw||
-|double_4::set_zy||
-|double_4::set_zyw||
-|double_4::set_zywx||
-|double_4::set_zyx||
-|double_4::set_zyxw||
+|double_4:: get_w||
+|double_4:: get_wx||
+|double_4:: get_wxy||
+|double_4:: get_wxyz||
+|double_4:: get_wxz||
+|double_4:: get_wxzy||
+|double_4:: get_wy||
+|double_4:: get_wyx||
+|double_4:: get_wyxz||
+|double_4:: get_wyz||
+|double_4:: get_wyzx||
+|double_4:: get_wz||
+|double_4:: get_wzx||
+|double_4:: get_wzxy||
+|double_4:: get_wzy||
+|double_4:: get_wzyx||
+|double_4:: get_x||
+|double_4:: get_xw||
+|double_4:: get_xwy||
+|double_4:: get_xwyz||
+|double_4:: get_xwz||
+|double_4:: get_xwzy||
+|double_4:: get_xy||
+|double_4:: get_xyw||
+|double_4:: get_xywz||
+|double_4:: get_xyz||
+|double_4:: get_xyzw||
+|double_4:: get_xz||
+|double_4:: get_xzw||
+|double_4:: get_xzwy||
+|double_4:: get_xzy||
+|double_4:: get_xzyw||
+|double_4:: get_y||
+|double_4:: get_yw||
+|double_4:: get_ywx||
+|double_4:: get_ywxz||
+|double_4:: get_ywz||
+|double_4:: get_ywzx||
+|double_4:: get_yx||
+|double_4:: get_yxw||
+|double_4:: get_yxwz||
+|double_4:: get_yxz||
+|double_4:: get_yxzw||
+|double_4:: get_yz||
+|double_4:: get_yzw||
+|double_4:: get_yzwx||
+|double_4:: get_yzx||
+|double_4:: get_yzxw||
+|double_4:: get_z||
+|double_4:: get_zw||
+|double_4:: get_zwx||
+|double_4:: get_zwxy||
+|double_4:: get_zwy||
+|double_4:: get_zwyx||
+|double_4:: get_zx||
+|double_4:: get_zxw||
+|double_4:: get_zxwy||
+|double_4:: get_zxy||
+|double_4:: get_zxyw||
+|double_4:: get_zy||
+|double_4:: get_zyw||
+|double_4:: get_zywx||
+|double_4:: get_zyx||
+|double_4:: get_zyxw||
+|double_4:: ref_a||
+|double_4:: ref_b||
+|double_4:: ref_g||
+|double_4:: ref_r||
+|double_4:: ref_w||
+|double_4:: ref_x||
+|double_4:: ref_y||
+|double_4:: ref_z||
+|double_4:: set_w||
+|double_4:: set_wx||
+|double_4:: set_wxy||
+|double_4:: set_wxyz||
+|double_4:: set_wxz||
+|double_4:: set_wxzy||
+|double_4:: set_wy||
+|double_4:: set_wyx||
+|double_4:: set_wyxz||
+|double_4:: set_wyz||
+|double_4:: set_wyzx||
+|double_4:: set_wz||
+|double_4:: set_wzx||
+|double_4:: set_wzxy||
+|double_4:: set_wzy||
+|double_4:: set_wzyx||
+|double_4:: set_x||
+|double_4:: set_xw||
+|double_4:: set_xwy||
+|double_4:: set_xwyz||
+|double_4:: set_xwz||
+|double_4:: set_xwzy||
+|double_4:: set_xy||
+|double_4:: set_xyw||
+|double_4:: set_xywz||
+|double_4:: set_xyz||
+|double_4:: set_xyzw||
+|double_4:: set_xz||
+|double_4:: set_xzw||
+|double_4:: set_xzwy||
+|double_4:: set_xzy||
+|double_4:: set_xzyw||
+|double_4:: set_y||
+|double_4:: set_yw||
+|double_4:: set_ywx||
+|double_4:: set_ywxz||
+|double_4:: set_ywz||
+|double_4:: set_ywzx||
+|double_4:: set_yx||
+|double_4:: set_yxw||
+|double_4:: set_yxwz||
+|double_4:: set_yxz||
+|double_4:: set_yxzw||
+|double_4:: set_yz||
+|double_4:: set_yzw||
+|double_4:: set_yzwx||
+|double_4:: set_yzx||
+|double_4:: set_yzxw||
+|double_4:: set_z||
+|double_4:: set_zw||
+|double_4:: set_zwx||
+|double_4:: set_zwxy||
+|double_4:: set_zwy||
+|double_4:: set_zwyx||
+|double_4:: set_zx||
+|double_4:: set_zxw||
+|double_4:: set_zxwy||
+|double_4:: set_zxy||
+|double_4:: set_zxyw||
+|double_4:: set_zy||
+|double_4:: set_zyw||
+|double_4:: set_zywx||
+|double_4:: set_zyx||
+|double_4:: set_zyxw||
 
 ### <a name="public-operators"></a>Public 연산자
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|double_4::operator-||
-|double_4::operator--||
-|double_4::operator*=||
-|double_4::operator/=||
-|double_4::operator++||
-|double_4::operator+=||
-|double_4::operator=||
-|double_4::operator-=||
+|double_4:: operator-||
+|double_4:: operator--||
+|double_4:: operator * =||
+|double_4:: operator/=||
+|double_4:: operator + +||
+|double_4:: operator + =||
+|double_4:: operator =||
+|double_4:: operator-=||
 
 ### <a name="public-constants"></a>공용 상수
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |[크기 상수](#double_4__size)||
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|double_4::a||
-|double_4::ab||
-|double_4::abg||
-|double_4::abgr||
-|double_4::abr||
-|double_4::abrg||
-|double_4::ag||
-|double_4::agb||
-|double_4::agbr||
-|double_4::agr||
-|double_4::agrb||
-|double_4::ar||
-|double_4::arb||
-|double_4::arbg||
-|double_4::arg||
-|double_4::argb||
-|double_4::b||
-|double_4::ba||
-|double_4::bag||
-|double_4::bagr||
-|double_4::bar||
-|double_4::barg||
-|double_4::bg||
-|double_4::bga||
-|double_4::bgar||
-|double_4::bgr||
-|double_4::bgra||
-|double_4::br||
-|double_4::bra||
-|double_4::brag||
-|double_4::brg||
-|double_4::brga||
-|double_4::g||
-|double_4::ga||
-|double_4::gab||
-|double_4::gabr||
-|double_4::gar||
-|double_4::garb||
-|double_4::gb||
-|double_4::gba||
-|double_4::gbar||
-|double_4::gbr||
-|double_4::gbra||
-|double_4::gr||
-|double_4::gra||
-|double_4::grab||
-|double_4::grb||
-|double_4::grba||
-|double_4::r||
-|double_4::ra||
-|double_4::rab||
-|double_4::rabg||
-|double_4::rag||
-|double_4::ragb||
-|double_4::rb||
-|double_4::rba||
-|double_4::rbag||
-|double_4::rbg||
-|double_4::rbga||
-|double_4::rg||
-|double_4::rga||
-|double_4::rgab||
-|double_4::rgb||
-|double_4::rgba||
-|double_4::w||
-|double_4::wx||
-|double_4::wxy||
-|double_4::wxyz||
-|double_4::wxz||
-|double_4::wxzy||
-|double_4::wy||
-|double_4::wyx||
-|double_4::wyxz||
-|double_4::wyz||
-|double_4::wyzx||
-|double_4::wz||
-|double_4::wzx||
-|double_4::wzxy||
-|double_4::wzy||
-|double_4::wzyx||
-|double_4::x||
-|double_4::xw||
-|double_4::xwy||
-|double_4::xwyz||
-|double_4::xwz||
-|double_4::xwzy||
-|double_4::xy||
-|double_4::xyw||
-|double_4::xywz||
-|double_4::xyz||
-|double_4::xyzw||
-|double_4::xz||
-|double_4::xzw||
-|double_4::xzwy||
-|double_4::xzy||
-|double_4::xzyw||
-|double_4::y||
-|double_4::yw||
-|double_4::ywx||
-|double_4::ywxz||
-|double_4::ywz||
-|double_4::ywzx||
-|double_4::yx||
-|double_4::yxw||
-|double_4::yxwz||
-|double_4::yxz||
-|double_4::yxzw||
-|double_4::yz||
-|double_4::yzw||
-|double_4::yzwx||
-|double_4::yzx||
-|double_4::yzxw||
-|double_4::z||
-|double_4::zw||
-|double_4::zwx||
-|double_4::zwxy||
-|double_4::zwy||
-|double_4::zwyx||
-|double_4::zx||
-|double_4::zxw||
-|double_4::zxwy||
-|double_4::zxy||
-|double_4::zxyw||
-|double_4::zy||
-|double_4::zyw||
-|double_4::zywx||
-|double_4::zyx||
-|double_4::zyxw||
+|double_4:: a||
+|double_4:: ab||
+|double_4:: abg||
+|double_4:: abgr||
+|double_4:: abr||
+|double_4:: abrg||
+|double_4:: ag||
+|double_4:: agb||
+|double_4:: agbr||
+|double_4:: agr||
+|double_4:: agrb||
+|double_4:: ar||
+|double_4:: arb||
+|double_4:: arbg||
+|double_4:: arg||
+|double_4:: argb||
+|double_4:: b||
+|double_4:: ba||
+|double_4:: 모음||
+|double_4:: bagr||
+|double_4:: bar||
+|double_4:: 바 g||
+|double_4:: bg||
+|double_4:: bga||
+|double_4:: bgar||
+|double_4:: bgr로||
+|double_4:: bgra||
+|double_4:: br||
+|double_4:: bra||
+|double_4:: brag||
+|double_4:: brg||
+|double_4:: brga||
+|double_4:: g||
+|double_4:: ga||
+|double_4:: gab||
+|double_4:: gabr||
+|double_4:: gar||
+|double_4:: garb||
+|double_4:: gb||
+|double_4:: gba||
+|double_4:: gbar||
+|double_4:: gbr||
+|double_4:: gbra||
+|double_4:: gr||
+|double_4:: gra||
+|double_4:: 잡기||
+|double_4:: grb||
+|double_4:: grba||
+|double_4:: r||
+|double_4:: ra||
+|double_4:: rab||
+|double_4:: rabg||
+|double_4:: 단편||
+|double_4:: ragb||
+|double_4:: rb||
+|double_4:: rba||
+|double_4:: rbag||
+|double_4:: rbg||
+|double_4:: rbga||
+|double_4:: rg||
+|double_4:: rga||
+|double_4:: rgab||
+|double_4:: rgb||
+|double_4:: rgba||
+|double_4:: w||
+|double_4:: wx||
+|double_4:: wxy||
+|double_4:: wxyz||
+|double_4:: wxz||
+|double_4:: wxzy||
+|double_4:: wy||
+|double_4:: wyx||
+|double_4:: wyxz||
+|double_4:: wyz||
+|double_4:: wyzx||
+|double_4:: wz||
+|double_4:: wzx||
+|double_4:: wzxy||
+|double_4:: wzy||
+|double_4:: wzyx||
+|double_4:: x||
+|double_4:: xw||
+|double_4:: xwy||
+|double_4:: xwyz||
+|double_4:: xwz||
+|double_4:: xwzy||
+|double_4:: xy||
+|double_4:: xyw||
+|double_4:: xywz||
+|double_4:: xyz||
+|double_4:: xyzw||
+|double_4:: xz||
+|double_4:: xzw||
+|double_4:: xzwy||
+|double_4:: xzy||
+|double_4:: xzyw||
+|double_4:: y||
+|double_4:: yw||
+|double_4:: ywx||
+|double_4:: ywxz||
+|double_4:: ywz||
+|double_4:: ywzx||
+|double_4:: yx||
+|double_4:: yxw||
+|double_4:: yxwz||
+|double_4:: yxz||
+|double_4:: yxzw||
+|double_4:: yz||
+|double_4:: yzw||
+|double_4:: yzwx||
+|double_4:: yzx||
+|double_4:: yzxw||
+|double_4:: z||
+|double_4:: zw||
+|double_4:: zwx||
+|double_4:: zwxy||
+|double_4:: zwy||
+|double_4:: zwyx||
+|double_4:: zx||
+|double_4:: zxw||
+|double_4:: zxwy||
+|double_4:: zxy||
+|double_4:: zxyw||
+|double_4:: zy||
+|double_4:: zyw||
+|double_4:: zywx||
+|double_4:: zyx||
+|double_4:: zyxw||
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `double_4`
 
@@ -602,7 +603,7 @@ class double_4;
 
 **네임 스페이스:** Concurrency:: graphics
 
-## <a name="ctor"></a>double_4
+## <a name="double_4"></a><a name="ctor"></a> double_4
 
 기본 생성자는 0으로 모든 요소를 초기화 합니다.
 
@@ -666,7 +667,7 @@ explicit inline double_4(
 *_Other*<br/>
 을 초기화 하는 데 사용 되는 개체입니다.
 
-## <a name="double_4__size"></a>크기가
+## <a name="size"></a><a name="double_4__size"></a> 크기가
 
 ```cpp
 static const int size = 4;

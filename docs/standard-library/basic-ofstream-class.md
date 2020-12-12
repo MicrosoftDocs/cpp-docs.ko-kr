@@ -1,4 +1,5 @@
 ---
+description: Basic_ofstream 클래스에 대해 자세히 알아보세요.
 title: basic_ofstream 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,16 +17,16 @@ helpviewer_keywords:
 - std::basic_ofstream [C++], rdbuf
 - std::basic_ofstream [C++], swap
 ms.assetid: 3bcc9c51-6dfc-4844-8fcc-22ef57c9dff1
-ms.openlocfilehash: d825dbbe278325e755af6fdffe01a34ac0a4080d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 10bb7ee14ea6b126ee907cbb8b56b3b3c31188a6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219263"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325669"
 ---
 # <a name="basic_ofstream-class"></a>basic_ofstream 클래스
 
-[basic_filebuf](../standard-library/basic-filebuf-class.md) <  `Elem` `Tr` `Elem` 문자 특성이 클래스에 의해 결정 되는 형식의 요소가 있는 클래스 basic_filebuf,>의 스트림 버퍼에 요소 및 인코드된 개체 삽입을 제어 하는 개체에 대해 설명 합니다 `Tr` .
+[](../standard-library/basic-filebuf-class.md) <  `Elem` `Tr` `Elem` 문자 특성이 클래스에 의해 결정 되는 형식의 요소가 있는 클래스 basic_filebuf,>의 스트림 버퍼에 요소 및 인코드된 개체 삽입을 제어 하는 개체에 대해 설명 합니다 `Tr` .
 
 ## <a name="syntax"></a>구문
 
@@ -72,7 +73,7 @@ int main(int argc, char **argv)
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[basic_ofstream](#basic_ofstream)|`basic_ofstream` 형식의 개체를 만듭니다.|
 
@@ -80,7 +81,7 @@ int main(int argc, char **argv)
 
 |멤버 함수|Description|
 |-|-|
-|[닫습니다](#close)|파일을 닫습니다.|
+|[close](#close)|파일을 닫습니다.|
 |[is_open](#is_open)|파일이 열려 있는지 확인합니다.|
 |[열기](#open)|파일을 엽니다.|
 |[rdbuf](#rdbuf)|저장된 스트림 버퍼 주소를 반환합니다.|
@@ -98,7 +99,7 @@ int main(int argc, char **argv)
 
 **네임스페이스:** std
 
-## <a name="basic_ofstreambasic_ofstream"></a><a name="basic_ofstream"></a>basic_ofstream:: basic_ofstream
+## <a name="basic_ofstreambasic_ofstream"></a><a name="basic_ofstream"></a> basic_ofstream:: basic_ofstream
 
 `basic_ofstream` 형식의 개체를 만듭니다.
 
@@ -137,9 +138,9 @@ basic_ofstream(
 
 첫 번째 생성자는 [basic_ostream](../standard-library/basic-ostream-class.md)()를 호출 하 여 기본 클래스를 초기화 합니다 `sb` `sb` . 여기서은 [basic_filebuf](../standard-library/basic-filebuf-class.md)> 클래스의 저장 된 개체입니다 <  `Elem` `Tr` . 또한 `basic_filebuf`< `Elem`, `Tr`>을 호출하여 `sb`를 초기화합니다.
 
-두 번째 및 세 번째 생성자는 `basic_ostream`( **sb**)를 호출하여 기본 클래스를 초기화합니다. 또한 `sb` 를 호출 하 `basic_filebuf` <  `Elem` 고> 한 다음를 호출 하 여를 초기화 `Tr` `sb` 합니다. [open](../standard-library/basic-filebuf-class.md#open)( `_Filename` , `_Mode` &#124;)를 엽니다 `ios_base::out` . 후자 함수가 null 포인터를 반환 하면 생성자는 [setstate](../standard-library/basic-ios-class.md#setstate)()를 호출 `failbit` 합니다.
+두 번째 및 세 번째 생성자는 `basic_ostream`( **sb**)를 호출하여 기본 클래스를 초기화합니다. 또한 `sb` 를 호출 하 `basic_filebuf` <  `Elem` 고> 한 다음를 호출 하 여를 초기화 `Tr` `sb` 합니다. [](../standard-library/basic-filebuf-class.md#open)( `_Filename` , `_Mode` &#124;)를 엽니다 `ios_base::out` . 후자 함수가 null 포인터를 반환 하면 생성자는 [setstate](../standard-library/basic-ios-class.md#setstate)()를 호출 `failbit` 합니다.
 
-네 번째 생성자는 복사 함수입니다. 이 메서드는 rvalue 참조로 처리 되는 *오른쪽*의 내용을 사용 하 여 개체를 초기화 합니다.
+네 번째 생성자는 복사 함수입니다. 이 메서드는 rvalue 참조로 처리 되는 *오른쪽* 의 내용을 사용 하 여 개체를 초기화 합니다.
 
 ### <a name="example"></a>예제
 
@@ -163,7 +164,7 @@ int main(int argc, char **argv)
 }
 ```
 
-## <a name="basic_ofstreamclose"></a><a name="close"></a>basic_ofstream:: close
+## <a name="basic_ofstreamclose"></a><a name="close"></a> basic_ofstream:: close
 
 파일을 닫습니다.
 
@@ -179,7 +180,7 @@ void close();
 
 `close`의 사용 예제는 [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close)를 참조하세요.
 
-## <a name="basic_ofstreamis_open"></a><a name="is_open"></a>basic_ofstream:: is_open
+## <a name="basic_ofstreamis_open"></a><a name="is_open"></a> basic_ofstream:: is_open
 
 파일이 열려 있는지 여부를 나타냅니다.
 
@@ -187,7 +188,7 @@ void close();
 bool is_open() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 파일이 열려 있으면이 고, **`false`** 그렇지 않으면입니다.
 
@@ -217,7 +218,7 @@ int main( )
 }
 ```
 
-## <a name="basic_ofstreamopen"></a><a name="open"></a>basic_ofstream:: open
+## <a name="basic_ofstreamopen"></a><a name="open"></a> basic_ofstream:: open
 
 파일을 엽니다.
 
@@ -260,7 +261,7 @@ void open(
 
 을 사용 하는 예제는 [basic_filebuf:: open](../standard-library/basic-filebuf-class.md#open) 을 참조 하세요 `open` .
 
-## <a name="basic_ofstreamoperator"></a><a name="op_eq"></a>basic_ofstream:: operator =
+## <a name="basic_ofstreamoperator"></a><a name="op_eq"></a> basic_ofstream:: operator =
 
 이 스트림 개체의 콘텐츠를 할당합니다. 복사본을 남기지 않는 `rvalue reference`와 관련된 이동 할당입니다.
 
@@ -273,15 +274,15 @@ basic_ofstream& operator=(basic_ofstream&& right);
 *오른쪽*\
 `basic_ofstream` 개체에 대한 rvalue 참조입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`*this`** 을 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 연산자는 rvalue 참조로 처리 되는 *오른쪽*의 내용을 사용 하 여 개체의 내용을 바꿉니다.
+멤버 연산자는 rvalue 참조로 처리 되는 *오른쪽* 의 내용을 사용 하 여 개체의 내용을 바꿉니다.
 
-## <a name="basic_ofstreamrdbuf"></a><a name="rdbuf"></a>basic_ofstream:: rdbuf
+## <a name="basic_ofstreamrdbuf"></a><a name="rdbuf"></a> basic_ofstream:: rdbuf
 
 저장된 스트림 버퍼 주소를 반환합니다.
 
@@ -289,7 +290,7 @@ basic_ofstream& operator=(basic_ofstream&& right);
 basic_filebuf<Elem, Tr> *rdbuf() const
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 저장된 스트림 버퍼 주소를 반환합니다.
 
@@ -297,7 +298,7 @@ basic_filebuf<Elem, Tr> *rdbuf() const
 
 `rdbuf`의 사용 예제는 [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close)를 참조하세요.
 
-## <a name="basic_ofstreamswap"></a><a name="swap"></a>basic_ofstream:: swap
+## <a name="basic_ofstreamswap"></a><a name="swap"></a> basic_ofstream:: swap
 
 두 `basic_ofstream` 개체의 내용을 교환합니다.
 
@@ -312,7 +313,7 @@ void swap(basic_ofstream& right);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는이 개체의 내용을 *오른쪽*의 내용으로 교환 합니다.
+멤버 함수는이 개체의 내용을 *오른쪽* 의 내용으로 교환 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

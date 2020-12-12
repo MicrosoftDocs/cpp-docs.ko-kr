@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: binder1st 클래스'
 title: binder1st 클래스
 ms.date: 02/21/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - binder1st class
 ms.assetid: 6b8ee343-c82f-48f8-867d-06f9d1d324c0
-ms.openlocfilehash: 15b704134d47b7bf7d8857bf380c756b0b03a1b0
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 1311d598c8300f3bba4d27acdaab879cbd054696
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72688381"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325507"
 ---
 # <a name="binder1st-class"></a>binder1st 클래스
 
@@ -43,24 +44,24 @@ protected:
 
 ### <a name="parameters"></a>매개 변수
 
-*binary_fn* \
+*binary_fn*\
 단항 함수 개체로 변환할 이항 함수 개체입니다.
 
-*왼쪽* \
+*비어*\
 이항 함수 개체의 첫 번째 인수가 바인딩되는 값입니다.
 
-*오른쪽* \
+*오른쪽*\
 수정된 이진 개체를 두 번째 인수의 고정 값과 비교하는 인수의 값입니다.
 
 ## <a name="return-value"></a>반환 값
 
-이항 함수 개체의 첫 번째 인수를 *왼쪽*값에 바인딩하여 생성 되는 단항 함수 개체입니다.
+이항 함수 개체의 첫 번째 인수를 *왼쪽* 값에 바인딩하여 생성 되는 단항 함수 개체입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
-클래스 템플릿은 `op`에 이진 함수 개체 *binary_fn* 복사본을 저장 하 고 `value`에 *왼쪽* 의 복사본을 저장 합니다. @No__t_1 반환 하는 것 처럼 `operator()` 멤버 함수를 정의 합니다.
+클래스 템플릿은에 *binary_fn* 이항 함수 개체의 복사본을 저장 `op` 하 고에 *왼쪽* 의 복사본을 저장 합니다 `value` . 반환 하는 멤버 함수 `operator()` 를 정의 `op(value, right)` 합니다.
 
-*Binary_fn* 가 `Operation` 형식의 개체이 고 `c` 상수인 경우 `bind1st(binary_fn, c)`는 `binder1st<Operation>(binary_fn, c)` 하는 것 보다 더 편리 합니다. 자세한 내용은 [bind1st](../standard-library/functional-functions.md#bind1st)를 참조 하세요.
+*Binary_fn* 이 형식의 개체이 `Operation` 고 `c` 가 상수인 경우 `bind1st(binary_fn, c)` 는와 더 편리 `binder1st<Operation>(binary_fn, c)` 합니다. 자세한 내용은 [bind1st](../standard-library/functional-functions.md#bind1st)를 참조 하세요.
 
 ## <a name="example"></a>예제
 

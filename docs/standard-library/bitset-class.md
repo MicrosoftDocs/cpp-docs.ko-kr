@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: bitset 클래스'
 title: bitset 클래스
 ms.date: 03/27/2019
 f1_keywords:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - std::bitset [C++], to_ulong
 - std::bitset [C++], reference
 ms.assetid: 28b86964-87b4-429c-8124-b6c251b6c50b
-ms.openlocfilehash: 623593e723b26244cc82e9eeed3e32657cca0b94
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 061bbe77a701e2161b3a33ffa94d3b8231b9f541
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846487"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325467"
 ---
 # <a name="bitset-class"></a>bitset 클래스
 
@@ -59,7 +60,7 @@ class bitset
 
 ## <a name="remarks"></a>설명
 
-유사한 [vector \<bool> 클래스](../standard-library/vector-bool-class.md)와 달리 bitset 클래스는 반복기를 포함 하지 않으며 c + + 표준 라이브러리 컨테이너가 아닙니다. 또한 \<bool> ** \<N\> bitset** 가 선언 될 때 템플릿 매개 변수 *N* 으로 지정 된 크기에 따라 컴파일 시에 고정 되는 특정 크기가 벡터와 다릅니다.
+유사한 [vector \<bool> 클래스](../standard-library/vector-bool-class.md)와 달리 bitset 클래스는 반복기를 포함 하지 않으며 c + + 표준 라이브러리 컨테이너가 아닙니다. 또한 \<bool> **\<N\> bitset** 가 선언 될 때 템플릿 매개 변수 *N* 으로 지정 된 크기에 따라 컴파일 시에 고정 되는 특정 크기가 벡터와 다릅니다.
 
 비트는 값이 1이면 설정되고, 값이 0이면 재설정 합니다. 비트를 대칭 이동하거나 반전한다는 것은 값을 1에서 0 또는 0에서 1로 변경하는 것입니다. bitset의 *N* 비트는 0에서 *N*-1 범위의 정수 값으로 인덱싱되며, 여기서 0은 첫 번째 비트 위치를 인덱싱하고 *N*-1은 최종 비트 위치를 인덱싱합니다.
 
@@ -77,7 +78,7 @@ class bitset
 |-|-|
 |[element_type](#element_type)|데이터 형식에 대 한 동의어이 **`bool`** 고에서 요소 비트를 참조 하는 데 사용할 수 있는 형식입니다 `bitset` .|
 
-### <a name="functions"></a>Functions
+### <a name="functions"></a>함수
 
 |Name|설명|
 |-|-|
@@ -265,7 +266,7 @@ bitset의 비트에 초기 값을 제공하는 데 사용되는 문자열의 문
 
 - 첫 번째 생성자 템플릿은 `bitset\<N>` 클래스의 개체를 구성하고 0과 1의 문자열로 제공된 문자에서 비트를 초기화합니다. 문자열에 0 또는 1이 아닌 문자가 있는 경우 생성자는 [잘못된 인수](../standard-library/invalid-argument-class.md) 클래스의 개체를 throw합니다. 지정 된 위치 (*_Pos*)가 문자열의 길이를 초과 하는 경우 생성자는 [out_of_range](../standard-library/out-of-range-class.md)클래스의 개체를 throw 합니다. 생성자는 `_Pos + j` 위치에 있는 문자열의 문자가 1인 bitset에서 *j* 위치에 있는 비트만 설정합니다. 기본적으로 *_Pos* 는 0입니다.
 
-- 두 번째 생성자 템플릿은 첫 번째 생성자와 비슷하지만 초기화할 비트 수를 지정 하는 데 사용 되는 추가 매개 변수 (*개수*)를 포함 합니다. 또한 두 개의 선택적 매개 변수 *_Zero* 및 *_One*있습니다 .이 매개 변수는 *str* 에서 각각 0 비트와 1 비트를 의미 하는 문자를 의미 하는 문자를 표시 합니다.
+- 두 번째 생성자 템플릿은 첫 번째 생성자와 비슷하지만 초기화할 비트 수를 지정 하는 데 사용 되는 추가 매개 변수 (*개수*)를 포함 합니다. 또한 두 개의 선택적 매개 변수 *_Zero* 및 *_One* 있습니다 .이 매개 변수는 *str* 에서 각각 0 비트와 1 비트를 의미 하는 문자를 의미 하는 문자를 표시 합니다.
 
 #### <a name="example"></a>예제
 
@@ -472,7 +473,7 @@ bitset\<N>& flip(size_t _Pos);
 
 #### <a name="remarks"></a>설명
 
-매개 변수로 지정 된 위치가 비트가 반전 된 **bitset \<** *N* **> ** 의 *N* 크기 보다 큰 경우 두 번째 멤버 함수는 [out_of_range](../standard-library/out-of-range-class.md) 예외를 throw 합니다.
+매개 변수로 지정 된 위치가 비트가 반전 된 **bitset \<** *N* **>** 의 *N* 크기 보다 큰 경우 두 번째 멤버 함수는 [out_of_range](../standard-library/out-of-range-class.md) 예외를 throw 합니다.
 
 #### <a name="example"></a>예제
 
@@ -737,7 +738,7 @@ bitset에 있는 비트를 이동해야 할 왼쪽에 있는 위치의 수입니
 
 #### <a name="remarks"></a>설명
 
-멤버 연산자 함수는 **bitset**( ** \* this**) **<<= pos를** 반환 합니다 [<<=](#op_lshift_eq) . 여기서 bitset의 비트를 지정 된 위치 수 만큼 왼쪽으로 이동 하 고 결과를 대상 bitset로 반환 합니다.
+멤버 연산자 함수는 **bitset**( **\* this**) **<<= pos를** 반환 합니다 [<<=](#op_lshift_eq) . 여기서 bitset의 비트를 지정 된 위치 수 만큼 왼쪽으로 이동 하 고 결과를 대상 bitset로 반환 합니다.
 
 #### <a name="example"></a>예제
 
@@ -979,7 +980,7 @@ After shifting the bits 2 positions to the right,
 the target bitset b1 becomes: ( 00111 ).
 ```
 
-### <a name="operator"></a><a name="op_at"></a> 연산자 []
+### <a name="operator"></a><a name="op_at"></a> operator[]
 
 bitset를 수정할 수 있는 경우 bitset 내 지정된 위치의 비트에 대한 참조를 반환하고, 수정할 수 없는 경우 해당 위치의 비트 값을 반환합니다.
 
@@ -1231,14 +1232,14 @@ public:
 
 #### <a name="remarks"></a>설명
 
-`reference` 클래스는 `operator[]` bitset에 대한 도우미 클래스로서만 존재합니다. 멤버 클래스는 bitset 내 개별 비트에 액세스할 수 있는 개체를 설명합니다. *B* 는 **`bool`** **bitset \<** *N* **> **형식의 *x* 및 *y* 개체와 해당 개체 내에서 *i* 및 *j* 유효한 위치 형식의 개체를 사용 합니다. *x [i]* 표기법은 *x* bitset 내 *i* 위치에 있는 비트를 참조합니다. `reference` 클래스의 멤버 함수는 다음 연산을 차례로 제공합니다.
+`reference` 클래스는 `operator[]` bitset에 대한 도우미 클래스로서만 존재합니다. 멤버 클래스는 bitset 내 개별 비트에 액세스할 수 있는 개체를 설명합니다. *B* 는 **`bool`** **bitset \<** *N* **>** 형식의 *x* 및 *y* 개체와 해당 개체 내에서 *i* 및 *j* 유효한 위치 형식의 개체를 사용 합니다. *x [i]* 표기법은 *x* bitset 내 *i* 위치에 있는 비트를 참조합니다. `reference` 클래스의 멤버 함수는 다음 연산을 차례로 제공합니다.
 
-|작업(Operation)|정의|
+|연산|정의|
 |---------------|----------------|
-|*x*[*i*] = *b*|**`bool`** 값 *b* 를 bitset x *i* 의 비트 위치에 *x*저장 합니다.|
+|*x*[*i*] = *b*|**`bool`** 값 *b* 를 bitset x  의 비트 위치에 저장 합니다.|
 |*x*[*i*] = *y*[*j*]|*y*[ *j*] 비트의 값을 *x* bitset 내 *i* 비트 위치에 저장합니다.|
-|*b* = ~ *x*[*i*]|*X*[ *i*] 비트의 대칭 이동 된 값을 **`bool`** *b*에 저장 합니다.|
-|*b*  =  *x*[*i*]|B의 비트 *x*[ *i*] 값을 저장 **`bool`** *b*합니다.|
+|*b* = ~ *x*[*i*]|*X*[ *i*] 비트의 대칭 이동 된 값을 **`bool`** *b* 에 저장 합니다.|
+|*b*  =  *x*[*i*]|B의 비트 *x*[ *i*] 값을 저장 **`bool`** 합니다.|
 |*x*[*i*]. `flip`( )|*x*[ *i*] 비트의 대칭 이동된 값을 *x* 내 *i* 비트 위치에 다시 저장합니다.|
 
 #### <a name="example"></a>예제

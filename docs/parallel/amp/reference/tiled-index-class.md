@@ -1,4 +1,5 @@
 ---
+description: Tiled_index 클래스에 대해 자세히 알아보세요.
 title: tiled_index 클래스
 ms.date: 03/27/2019
 f1_keywords:
@@ -19,12 +20,12 @@ f1_keywords:
 helpviewer_keywords:
 - tiled_index class
 ms.assetid: 0ce2ae26-f1bb-4436-b473-a9e1b619bb38
-ms.openlocfilehash: 9d295093031eaee0a2d4dd83aa931060e6eebc07
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 072735a9f98efc522c2f054d837d3c2f89e8958b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832272"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325826"
 ---
 # <a name="tiled_index-class"></a>tiled_index 클래스
 
@@ -75,7 +76,7 @@ class tiled_index<_Dim0, 0, 0> : public _Tiled_index_base<1>;
 
 |이름|설명|
 |----------|-----------------|
-|[get_tile_extent](#tiled_index__get_tile_extent)|[extent](extent-class.md) `tiled_index` 템플릿 인수, 및의 값을 갖는 익스텐트 개체를 반환 `_Dim0` 합니다 `_Dim1` `_Dim2` .|
+|[get_tile_extent](#tiled_index__get_tile_extent)|[](extent-class.md) `tiled_index` 템플릿 인수, 및의 값을 갖는 익스텐트 개체를 반환 `_Dim0` 합니다 `_Dim1` `_Dim2` .|
 
 ### <a name="public-constants"></a>공용 상수
 
@@ -95,7 +96,7 @@ class tiled_index<_Dim0, 0, 0> : public _Tiled_index_base<1>;
 
 |Name|설명|
 |----------|-----------------|
-|[tile_extent](#tile_extent)|[extent](extent-class.md) `tiled_index` 템플릿 인수 `tiled_index` 템플릿 인수 `_Dim0` , `_Dim1` 및의 값을 갖는 익스텐트 개체를 가져옵니다 `_Dim2` .|
+|[tile_extent](#tile_extent)|[](extent-class.md) `tiled_index` 템플릿 인수 `tiled_index` 템플릿 인수 `_Dim0` , `_Dim1` 및의 값을 갖는 익스텐트 개체를 가져옵니다 `_Dim2` .|
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -156,7 +157,7 @@ tiled_index(
 
 ## <a name="get_tile_extent"></a><a name="tiled_index__get_tile_extent"></a> get_tile_extent
 
-[extent](extent-class.md) `tiled_index` 템플릿 인수, 및의 값을 갖는 익스텐트 개체를 반환 `_Dim0` 합니다 `_Dim1` `_Dim2` .
+[](extent-class.md) `tiled_index` 템플릿 인수, 및의 값을 갖는 익스텐트 개체를 반환 `_Dim0` 합니다 `_Dim1` `_Dim2` .
 
 ### <a name="syntax"></a>구문
 
@@ -172,7 +173,7 @@ extent<rank> get_tile_extent()restrict(amp,cpu);
 
 현재 스레드의 타일에 장벽을 나타내는 [tile_barrier](tile-barrier-class.md) 개체를 저장 합니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 const tile_barrier barrier;
@@ -182,7 +183,7 @@ const tile_barrier barrier;
 
 개체의 전역 인덱스를 나타내는 차수 1, 2 또는 3의 [index](index-class.md) 개체를 저장 합니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 const index<rank> global;
@@ -192,7 +193,7 @@ const index<rank> global;
 
 [Tiled_extent](tiled-extent-class.md) 개체의 현재 타일의 상대 인덱스를 나타내는 차수 1, 2 또는 3의 [index](index-class.md) 개체를 저장 합니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 const index<rank> local;
@@ -202,7 +203,7 @@ const index<rank> local;
 
 개체의 순위를 저장 `tiled_index` 합니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 static const int rank = _Rank;
@@ -212,7 +213,7 @@ static const int rank = _Rank;
 
 [Tiled_extent](tiled-extent-class.md) 개체의 현재 타일의 좌표를 나타내는 차수 1, 2 또는 3의 [index](index-class.md) 개체를 저장 합니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 const index<rank> tile;
@@ -222,7 +223,7 @@ const index<rank> tile;
 
 가장 중요 한 차원의 길이를 저장 합니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 static const int tile_dim0 = _Dim0;
@@ -232,7 +233,7 @@ static const int tile_dim0 = _Dim0;
 
 은 (는) 다음으로 중요 한 차원의 길이를 저장 합니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 static const int tile_dim1 = _Dim1;
@@ -242,7 +243,7 @@ static const int tile_dim1 = _Dim1;
 
 최하위 차원의 길이를 저장 합니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 static const int tile_dim2 = _Dim2;
@@ -252,7 +253,7 @@ static const int tile_dim2 = _Dim2;
 
 [Tiled_extent](tiled-extent-class.md) 개체 내에서 현재 타일의 원본에 대 한 전역 좌표를 나타내는 차수 1, 2 또는 3의 [index](index-class.md) 개체를 저장 합니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 const index<rank> tile_origin
@@ -260,7 +261,7 @@ const index<rank> tile_origin
 
 ## <a name="tile_extent"></a><a name="tile_extent"></a> tile_extent
 
-[extent](extent-class.md) `tiled_index` 템플릿 인수 `tiled_index` 템플릿 인수 `_Dim0` , `_Dim1` 및의 값을 갖는 익스텐트 개체를 가져옵니다 `_Dim2` .
+[](extent-class.md) `tiled_index` 템플릿 인수 `tiled_index` 템플릿 인수 `_Dim0` , `_Dim1` 및의 값을 갖는 익스텐트 개체를 가져옵니다 `_Dim2` .
 
 ### <a name="syntax"></a>구문
 

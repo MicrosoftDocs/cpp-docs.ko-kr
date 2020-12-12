@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: 동시성 런타임'
 title: 동시성 런타임
 ms.date: 07/20/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - ConcRT (see Concurrency Runtime)
 - Concurrency Runtime
 ms.assetid: 874bc58f-8dce-483e-a3a1-4dcc9e52ed2c
-ms.openlocfilehash: ce75d7a78fec69922c08479f6c130c6b6ccec566
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 1bc161e8c70f98fe469feffa1c472ecaf6a7f161
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845512"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325786"
 ---
 # <a name="concurrency-runtime"></a>동시성 런타임
 
@@ -39,7 +40,7 @@ C++용 동시성 런타임은 강력하고 확장 가능하며 응답성이 높�
 |-|-|
 |[작업 병렬 처리](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br /><br /> [방법: parallel_invoke를 사용 하 여 병렬 정렬 루틴 작성](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md)<br /><br /> [방법: parallel_invoke를 사용 하 여 병렬 작업 실행](../../parallel/concrt/how-to-use-parallel-invoke-to-execute-parallel-operations.md)<br /><br /> [방법: 지연 후 완료 되는 작업 만들기](../../parallel/concrt/how-to-create-a-task-that-completes-after-a-delay.md)|비동기 코드를 작성하고 병렬 작업을 더 작은 부분으로 분해하는 데 도움이 되는 작업 및 작업 그룹을 설명합니다.|
 |[연습: 미래 구현](../../parallel/concrt/walkthrough-implementing-futures.md)|동시성 런타임 기능을 결합하여 더 많은 작업을 수행하는 방법을 보여 줍니다.|
-|[연습: 사용자 인터페이스 스레드에서 작업 제거](../../parallel/concrt/walkthrough-removing-work-from-a-user-interface-thread.md)|MFC 애플리케이션의 UI 스레드에서 수행하는 작업을 작업자 스레드로 이동하는 방법을 보여 줍니다.|
+|[연습: User-Interface 스레드에서 작업 제거](../../parallel/concrt/walkthrough-removing-work-from-a-user-interface-thread.md)|MFC 애플리케이션의 UI 스레드에서 수행하는 작업을 작업자 스레드로 이동하는 방법을 보여 줍니다.|
 |[병렬 패턴 라이브러리의 모범 사례](../../parallel/concrt/best-practices-in-the-parallel-patterns-library.md)<br /><br /> [동시성 런타임의 일반적인 모범 사례](../../parallel/concrt/general-best-practices-in-the-concurrency-runtime.md)|PPL 사용에 대한 팁과 유용한 정보를 제공합니다.|
 
 ## <a name="data-parallelism-in-the-ppl"></a>PPL에서 데이터 병렬 처리
@@ -69,9 +70,9 @@ C++용 동시성 런타임은 강력하고 확장 가능하며 응답성이 높�
 
 |아티클|설명|
 |-|-|
-|[비동기 에이전트](../../parallel/concrt/asynchronous-agents.md)<br /><br /> [비동기 메시지 블록](../../parallel/concrt/asynchronous-message-blocks.md)<br /><br /> [메시지 전달 함수](../../parallel/concrt/message-passing-functions.md)<br /><br /> [방법: 다양 한 생산자-소비자 패턴 구현](../../parallel/concrt/how-to-implement-various-producer-consumer-patterns.md)<br /><br /> [방법: 호출 및 변환기 클래스에 작업 함수 제공](../../parallel/concrt/how-to-provide-work-functions-to-the-call-and-transformer-classes.md)<br /><br /> [방법: 데이터 파이프라인에서 변환기 사용](../../parallel/concrt/how-to-use-transformer-in-a-data-pipeline.md)<br /><br /> [방법: 완료 된 작업 중에서 선택](../../parallel/concrt/how-to-select-among-completed-tasks.md)<br /><br /> [방법: 정기적으로 메시지 보내기](../../parallel/concrt/how-to-send-a-message-at-a-regular-interval.md)<br /><br /> [방법: 메시지 블록 필터 사용](../../parallel/concrt/how-to-use-a-message-block-filter.md)|동시성 런타임에서 데이터 흐름 작업을 수행하기 위한 구성 요소인 비동기 에이전트, 메시지 블록 및 메시지 전달 함수를 설명합니다.|
-|[연습: 에이전트 기반 응용 프로그램 만들기](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md)<br /><br /> [연습: 데이터 흐름 에이전트 만들기](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md)|기본 에이전트 기반 애플리케이션을 만드는 방법을 보여 줍니다.|
-|[연습: 이미지 처리 네트워크 만들기](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)|이미지 처리를 수행하는 비동기 메시지 블록의 네트워크를 만드는 방법을 보여 줍니다.|
+|[비동기 에이전트](../../parallel/concrt/asynchronous-agents.md)<br /><br /> [비동기 메시지 블록](../../parallel/concrt/asynchronous-message-blocks.md)<br /><br /> [메시지 전달 함수](../../parallel/concrt/message-passing-functions.md)<br /><br /> [방법: 다양 한 Producer-Consumer 패턴 구현](../../parallel/concrt/how-to-implement-various-producer-consumer-patterns.md)<br /><br /> [방법: 호출 및 변환기 클래스에 작업 함수 제공](../../parallel/concrt/how-to-provide-work-functions-to-the-call-and-transformer-classes.md)<br /><br /> [방법: 데이터 파이프라인에서 변환기 사용](../../parallel/concrt/how-to-use-transformer-in-a-data-pipeline.md)<br /><br /> [방법: 완료 된 작업 중에서 선택](../../parallel/concrt/how-to-select-among-completed-tasks.md)<br /><br /> [방법: 정기적으로 메시지 보내기](../../parallel/concrt/how-to-send-a-message-at-a-regular-interval.md)<br /><br /> [방법: 메시지 블록 필터 사용](../../parallel/concrt/how-to-use-a-message-block-filter.md)|동시성 런타임에서 데이터 흐름 작업을 수행하기 위한 구성 요소인 비동기 에이전트, 메시지 블록 및 메시지 전달 함수를 설명합니다.|
+|[연습: Agent-Based 응용 프로그램 만들기](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md)<br /><br /> [연습: 데이터 흐름 에이전트 만들기](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md)|기본 에이전트 기반 애플리케이션을 만드는 방법을 보여 줍니다.|
+|[연습: Image-Processing 네트워크 만들기](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)|이미지 처리를 수행하는 비동기 메시지 블록의 네트워크를 만드는 방법을 보여 줍니다.|
 |[연습: join을 사용 하 여 교착 상태 방지](../../parallel/concrt/walkthrough-using-join-to-prevent-deadlock.md)|동시성 런타임을 사용하여 애플리케이션의 교착 상태를 방지하는 방법을 보여 주기 위해 철학자들의 만찬 문제(Dining Philosophers Problem)를 활용합니다.|
 |[연습: 사용자 지정 메시지 블록 만들기](../../parallel/concrt/walkthrough-creating-a-custom-message-block.md)|들어오는 메시지를 우선 순위별로 정렬하는 사용자 지정 메시지 블록 형식을 만드는 방법을 보여 줍니다.|
 |[비동기 에이전트 라이브러리의 모범 사례](../../parallel/concrt/best-practices-in-the-asynchronous-agents-library.md)<br /><br /> [동시성 런타임의 일반적인 모범 사례](../../parallel/concrt/general-best-practices-in-the-concurrency-runtime.md)|에이전트 사용에 대한 팁과 유용한 정보를 제공합니다.|

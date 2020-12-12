@@ -1,27 +1,28 @@
 ---
+description: Cstdint에 대해 자세히 알아보세요. &lt;&gt;
 title: '&lt;cstdint&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <cstdint>
 ms.assetid: 87afafb2-c630-4383-a2fc-a6b47c639e21
-ms.openlocfilehash: 142ea2b341dad307dea98d1406803a1e7eca5e78
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 3edaadf3a5f10e379d943460d24c75fbb0eb091e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80076637"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324711"
 ---
 # <a name="ltcstdintgt"></a>&lt;cstdint&gt;
 
-표준 C 라이브러리 헤더 \<stdint.h>를 포함하고 `std` 네임스페이스에 연결된 이름을 추가합니다. 이 헤더를 포함하는 경우 표준 C 라이브러리 헤더의 외부 링크를 사용하여 선언한 이름이 `std` 네임스페이스에도 선언됩니다.
+표준 C 라이브러리 헤더를 포함 \<stdint.h> 하 고 네임 스페이스에 연결 된 이름을 추가 합니다 `std` . 이 헤더를 포함하는 경우 표준 C 라이브러리 헤더의 외부 링크를 사용하여 선언한 이름이 `std` 네임스페이스에도 선언됩니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 #include <cstdint>
 ```
 
-## <a name="types"></a>형식
+## <a name="types"></a>유형
 
 ```cpp
 namespace std {
@@ -56,7 +57,7 @@ namespace std {
 }
 ```
 
-## <a name="macros"></a>Macros
+## <a name="macros"></a>매크로
 
 ```cpp
 INT_[FAST LEAST]{8 16 32 64}_MIN
@@ -72,4 +73,4 @@ SIZE_MAX
 ## <a name="see-also"></a>참고 항목
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
-[C++ 표준 라이브러리 개요](../standard-library/cpp-standard-library-overview.md)
+[C + + 표준 라이브러리 개요](../standard-library/cpp-standard-library-overview.md)

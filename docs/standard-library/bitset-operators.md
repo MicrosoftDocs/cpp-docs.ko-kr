@@ -1,4 +1,5 @@
-﻿---
+---
+description: '자세한 정보: &lt; bitset &gt; 연산자'
 title: '&lt;bitset&gt; 연산자'
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,18 +13,18 @@ helpviewer_keywords:
 - std::operator&amp; (bitset)
 - std::operator&gt;&gt; (bitset)
 - std::operator&lt;&lt; (bitset)
-ms.openlocfilehash: 23c6abffe7e433a0550c45502a12e9adaf652a33
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 5157b3e8a8fa94152a4a2446b1d9a4c124677ddd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79423962"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325453"
 ---
 # <a name="ltbitsetgt-operators"></a>&lt;bitset&gt; 연산자
 
-## <a name="op_amp"></a> 연산자&amp;
+## <a name="operatoramp"></a><a name="op_amp"></a> 연산자&amp;
 
-두 bitset 간에 비트 `AND`을 수행합니다.
+두 bitset 간에 비트 `AND`를 수행합니다.
 
 ```cpp
 template <size_t size>
@@ -35,15 +36,15 @@ operator&(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽*\
+*비어*\
 각각의 요소를 비트 `AND`로 결합할 두 bitset 중 첫 번째입니다.
 
 *오른쪽*\
 각각의 요소를 비트 `AND`로 결합할 두 valarray 중 두 번째입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-요소가 *left* 및 *right*의 해당 요소에 대해 `AND` 연산을 수행한 결과인 bitset입니다.
+요소가 `AND` *left* 및 *right* 의 해당 요소에 대 한 작업을 수행한 결과인 bitset입니다.
 
 ### <a name="example"></a>예제
 
@@ -73,7 +74,7 @@ bitset 2: 0011
 bitset 3: 0001
 ```
 
-## <a name="op_lt_lt"></a>연산자&lt;&lt;
+## <a name="operatorltlt"></a><a name="op_lt_lt"></a> 연산자&lt;&lt;
 
 비트 시퀀스의 텍스트 표현을 출력 스트림에 삽입합니다.
 
@@ -87,15 +88,15 @@ basic_ostream<CharType, Traits>& operator<<(
 ### <a name="parameters"></a>매개 변수
 
 *오른쪽*\
-출력 스트림에 문자열로 삽입할 **bitset\<N>** 형식의 개체입니다.
+출력 스트림에 문자열로 삽입할 **bitset \<N>** 형식의 개체입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-`ostr`비트 시퀀스의 텍스트 표현입니다.
+에 있는 비트 시퀀스의 텍스트 표현 `ostr` 입니다.
 
 ### <a name="remarks"></a>설명
 
-템플릿 함수 오버 `operator<<`로드를 사용 하 여 bitset을 먼저 문자열로 변환 하지 않고 쓸 수 있습니다. 템플릿 함수는 다음을 효과적으로 실행합니다.
+템플릿 함수 오버 로드를 사용 하 여 `operator<<` bitset을 먼저 문자열로 변환 하지 않고 기록할 수 있습니다. 템플릿 함수는 다음을 효과적으로 실행합니다.
 
 `ostr << right.`[to_string](bitset-class.md)`<CharType, Traits, allocator<CharType>>()`
 
@@ -130,7 +131,7 @@ int main( )
 }
 ```
 
-## <a name="op_gt_gt"></a>연산자&gt;&gt;
+## <a name="operatorgtgt"></a><a name="op_gt_gt"></a> 연산자&gt;&gt;
 
 bitset에 대한 비트 문자의 문자열을 읽습니다.
 
@@ -149,13 +150,13 @@ bitset에 삽입할 입력 스트림에 입력되는 문자열입니다.
 *오른쪽*\
 입력 스트림에서 비트를 수신하는 bitset입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-템플릿 함수는 *i_str*문자열을 반환 합니다.
+템플릿 함수는 *i_str* 문자열을 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-`operator>>` 템플릿 함수 오버 로드는 bitset에 `bitset(str)`값 `str` *오른쪽* 에 저장 합니다. 여기서는 *`< CharType, Traits, allocator< CharType > >&`* 에서 추출 된 [basic_string](basic-string-class.md) i_str 형식의 개체입니다.
+Bitset에 저장 되는 템플릿 함수 오버 로드는 `operator>>` 값을 *오른쪽* 으로 설정 합니다 `bitset(str)` `str` . 여기서는 [](basic-string-class.md) `< CharType, Traits, allocator< CharType > >&` *i_str* 에서 추출 된 basic_string 형식의 개체입니다.
 
 템플릿 함수는 *i_str* 에서 요소를 추출 하 여 다음이 될 때까지 bitset에 삽입 합니다.
 
@@ -214,9 +215,9 @@ int main()
 }
 ```
 
-## <a name="op_xor"></a>operator ^
+## <a name="operator"></a><a name="op_xor"></a> operator ^
 
-두 bitset 간에 비트 `EXCLUSIVE-OR`을 수행합니다.
+두 bitset 간에 비트 `EXCLUSIVE-OR`를 수행합니다.
 
 ```cpp
 template <size_t size>
@@ -228,15 +229,15 @@ operator^(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽*\
+*비어*\
 각각의 요소를 비트 `EXCLUSIVE-OR`로 결합할 두 bitset 중 첫 번째입니다.
 
 *오른쪽*\
 각각의 요소를 비트 `EXCLUSIVE-OR`로 결합할 두 valarray 중 두 번째입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-요소가 *left* 및 *right*의 해당 요소에 대해 `EXCLUSIVE-OR` 연산을 수행한 결과인 bitset입니다.
+요소가 `EXCLUSIVE-OR` *left* 및 *right* 의 해당 요소에 대 한 작업을 수행한 결과인 bitset입니다.
 
 ### <a name="example"></a>예제
 
@@ -266,9 +267,9 @@ bitset 2: 0011
 bitset 3: 0110
 ```
 
-## <a name="op_or"></a>연산자&#124;
+## <a name="operator124"></a><a name="op_or"></a> 연산자&#124;
 
-두 bitset 간에 비트 `OR`을 수행합니다.
+두 bitset 간에 비트 `OR`를 수행합니다.
 
 ```cpp
 template <size_t size>
@@ -280,15 +281,15 @@ operator|(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽*\
+*비어*\
 각각의 요소를 비트 `OR`로 결합할 두 bitset 중 첫 번째입니다.
 
 *오른쪽*\
 각각의 요소를 비트 `OR`로 결합할 두 valarray 중 두 번째입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-요소가 *left* 및 *right*의 해당 요소에 대해 `OR` 연산을 수행한 결과인 bitset입니다.
+요소가 `OR` *left* 및 *right* 의 해당 요소에 대 한 작업을 수행한 결과인 bitset입니다.
 
 ### <a name="example"></a>예제
 

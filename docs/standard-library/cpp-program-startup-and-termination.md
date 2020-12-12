@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: c + + 프로그램 시작 및 종료'
 title: C++ Program Startup 및 Termination
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - startup code, and C++ program termination
 - main function, program startup
 ms.assetid: f72c8f76-f507-4ddd-a270-7b60f4fed625
-ms.openlocfilehash: e59e8852172a998e4bf4f42f9f919dc29c2ded85
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 644be6d4392f8e41b1d1cf7d45b484ed9903d463
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68450647"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324789"
 ---
 # <a name="c-program-startup-and-termination"></a>C++ Program Startup 및 Termination
 
@@ -34,7 +35,7 @@ C++ 프로그램은 여기에 설명된 몇 가지 추가 작업 외에도 C 프
 
 C에서와 마찬가지로 `main`에서 반환하거나 `exit`를 호출하면 `atexit`를 통해 등록된 모든 함수가 레지스트리의 역순으로 호출됩니다. 이렇게 등록된 함수에서 throw된 예외는 `terminate`를 호출합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[C++ 표준 라이브러리 개요](../standard-library/cpp-standard-library-overview.md)\
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[C + + 표준 라이브러리 개요](../standard-library/cpp-standard-library-overview.md)\
+[C + + 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

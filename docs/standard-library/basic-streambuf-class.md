@@ -1,4 +1,5 @@
 ---
+description: Basic_streambuf 클래스에 대해 자세히 알아보세요.
 title: basic_streambuf 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -94,12 +95,12 @@ helpviewer_keywords:
 - std::basic_streambuf [C++], xsgetn
 - std::basic_streambuf [C++], xsputn
 ms.assetid: 136af6c3-13bf-4501-9288-b93da26efac7
-ms.openlocfilehash: 6c9a44f56e89baf32ba49241822bc4ba018f0701
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 7600c60c501c1922deeabca11d41c89bc37548a5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561832"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325615"
 ---
 # <a name="basic_streambuf-class"></a>basic_streambuf 클래스
 
@@ -122,7 +123,7 @@ class basic_streambuf;
 
 ## <a name="remarks"></a>설명
 
-클래스 템플릿에서는 스트림의 특정 표현과의 요소 전송을 제어 하는 스트림 버퍼 파생을 위한 추상 기본 클래스에 대해 설명 합니다. 클래스의 개체는 `basic_streambuf` *Tr*형식의 요소가 있는 스트림 ( [char_type](#char_type)라고도 함)을 제어 하는 데 도움이 됩니다. 문자 특성은 클래스 [char_traits](../standard-library/char-traits-struct.md)에 의해 결정 됩니다 ( [traits_type](#traits_type)라고도 함).
+클래스 템플릿에서는 스트림의 특정 표현과의 요소 전송을 제어 하는 스트림 버퍼 파생을 위한 추상 기본 클래스에 대해 설명 합니다. 클래스의 개체는 `basic_streambuf` *Tr* 형식의 요소가 있는 스트림 ( [char_type](#char_type)라고도 함)을 제어 하는 데 도움이 됩니다. 문자 특성은 클래스 [char_traits](../standard-library/char-traits-struct.md)에 의해 결정 됩니다 ( [traits_type](#traits_type)라고도 함).
 
 모든 스트림 버퍼는 추출용(입력)과 삽입용(출력)의 독립적인 두 스트림을 개념적으로 제어합니다. 그러나 특정 표현의 경우 이러한 스트림 중 어느 하나 또는 모두를 액세스할 수 없도록 만들 수 있습니다. 일반적으로 두 스트림 간의 일부 관계는 유지합니다. 예를 들어 [basic_stringbuf](../standard-library/basic-stringbuf-class.md)> 개체의 출력 스트림에 삽입 하 <  `Elem` `Tr` 는 내용은 나중에 해당 입력 스트림에서 추출 하는 내용입니다. [Basic_filebuf](../standard-library/basic-filebuf-class.md)> 개체의 한 스트림을 배치할 때 <  `Elem` `Tr` 다른 스트림을 함께 배치 합니다.
 
@@ -220,7 +221,7 @@ class basic_streambuf;
 
 ### <a name="operators"></a>연산자
 
-|연산자|Description|
+|연산자|설명|
 |-|-|
 |[연산자 =](#op_eq)|이 개체의 값을 다른 `basic_streambuf` 개체에서 할당합니다.|
 
@@ -249,7 +250,7 @@ basic_streambuf(const basic_streambuf& right);
 
 첫 번째 보호된 생성자는 입력 버퍼와 출력 버퍼를 제어하는 모든 포인터에 null 포인터를 저장합니다. 또한 `locale::classic`을 로캘 개체에 저장합니다. 자세한 내용은 [locale:: classic](../standard-library/locale-class.md#classic)을 참조하세요.
 
-두 번째 보호 된 생성자는 *오른쪽*에서 포인터와 로캘을 복사 합니다.
+두 번째 보호 된 생성자는 *오른쪽* 에서 포인터와 로캘을 복사 합니다.
 
 ## <a name="basic_streambufchar_type"></a><a name="char_type"></a> basic_streambuf:: char_type
 
@@ -267,7 +268,7 @@ typedef Elem char_type;
 char_type *eback() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 입력 버퍼의 시작 부분에 대한 포인터입니다.
 
@@ -279,7 +280,7 @@ char_type *eback() const;
 char_type *egptr() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 입력 버퍼의 끝을 바로 지난 포인터입니다.
 
@@ -291,7 +292,7 @@ char_type *egptr() const;
 char_type *epptr() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 출력 버퍼의 끝을 바로 지난 포인터입니다.
 
@@ -316,7 +317,7 @@ Basic_streambuf 개체의 로캘을 가져옵니다.
 locale getloc() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 저장된 로캘 개체입니다.
 
@@ -350,7 +351,7 @@ C
 char_type *gptr() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 입력 버퍼의 다음 요소에 대한 포인터입니다.
 
@@ -379,7 +380,7 @@ virtual void imbue(const locale& _Loc);
 streamsize in_avail();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 버퍼에서 읽을 준비가 된 요소의 수입니다.
 
@@ -451,13 +452,13 @@ virtual int_type overflow(int_type _Meta = traits_type::eof());
 *_Meta*\
 버퍼 또는 **traits_type::**[eof](../standard-library/char-traits-struct.md#eof)에 삽입할 문자입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-함수가 성공할 수 없는 경우 **traits_type::eof**를 반환하거나 예외를 throw합니다. 아닌 경우 **traits_type::**[not_eof](../standard-library/char-traits-struct.md#not_eof)(_ *Meta*)를 반환합니다. 기본 동작은 **traits_type::eof**를 반환하는 것입니다.
+함수가 성공할 수 없는 경우 **traits_type::eof** 를 반환하거나 예외를 throw합니다. 아닌 경우 **traits_type::**[not_eof](../standard-library/char-traits-struct.md#not_eof)(_ *Meta*)를 반환합니다. 기본 동작은 **traits_type::eof** 를 반환하는 것입니다.
 
 ### <a name="remarks"></a>설명
 
-* \_ Meta* 가 **traits_type:: eof**와 비교 하지 않는 경우 보호 된 가상 멤버 함수는 시도한 **:**:[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(* \_ meta*) traits_type 요소를 출력 스트림에 삽입 합니다. 수행할 수 있는 방법은 다양합니다.
+*\_ Meta* 가 **traits_type:: eof** 와 비교 하지 않는 경우 보호 된 가상 멤버 함수는 시도한 **:**:[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(*\_ meta*) traits_type 요소를 출력 스트림에 삽입 합니다. 수행할 수 있는 방법은 다양합니다.
 
 - `write position`이 사용 가능한 경우 요소를 쓰기 위치에 저장하고 출력 버퍼에 대해 다음 포인터를 증가시킬 수 있습니다.
 
@@ -486,13 +487,13 @@ virtual int_type pbackfail(int_type _Meta = traits_type::eof());
 *_Meta*\
 버퍼 또는 **traits_type::**[eof](../standard-library/char-traits-struct.md#eof)에 삽입할 문자입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-함수가 성공할 수 없는 경우 **traits_type::eof**를 반환하거나 예외를 throw합니다. 성공할 경우 다른 값을 반환합니다. 기본 동작은 **traits_type::eof**를 반환하는 것입니다.
+함수가 성공할 수 없는 경우 **traits_type::eof** 를 반환하거나 예외를 throw합니다. 성공할 경우 다른 값을 반환합니다. 기본 동작은 **traits_type::eof** 를 반환하는 것입니다.
 
 ### <a name="remarks"></a>설명
 
-* \_ Meta* 가 **traits_type:: eof**와 비교 하는 경우 다시 푸시할 요소는 실제로 현재 요소 이전 스트림에 이미 있는 요소입니다. 아닌 경우 해당 요소는 **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(*\_Meta*)로 바뀝니다. 함수는 여러 가지 방법으로 요소를 다시 넣을 수 있습니다.
+*\_ Meta* 가 **traits_type:: eof** 와 비교 하는 경우 다시 푸시할 요소는 실제로 현재 요소 이전 스트림에 이미 있는 요소입니다. 아닌 경우 해당 요소는 **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(*\_Meta*)로 바뀝니다. 함수는 여러 가지 방법으로 요소를 다시 넣을 수 있습니다.
 
 - putback 위치가 사용 가능한 경우 요소를 putback 위치에 저장하고 입력 버퍼에 대해 다음 포인터를 증가시킬 수 있습니다.
 
@@ -508,7 +509,7 @@ virtual int_type pbackfail(int_type _Meta = traits_type::eof());
 char_type *pbase() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 출력 버퍼의 시작 부분에 대한 포인터입니다.
 
@@ -541,7 +542,7 @@ typedef typename traits_type::pos_type pos_type;
 char_type *pptr() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 출력 버퍼의 다음 요소에 대한 포인터입니다.
 
@@ -558,13 +559,13 @@ locale pubimbue(const locale& _Loc);
 *_Loc*\
 로캘에 대한 참조입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 로캘 개체에 저장된 이전 값입니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 로캘 개체에 _ *Loc*를 저장하고 [imbue](#imbue)를 호출합니다.
+멤버 함수는 로캘 개체에 _ *Loc* 를 저장하고 [imbue](#imbue)를 호출합니다.
 
 ### <a name="example"></a>예제
 
@@ -583,7 +584,7 @@ pos_type pubseekoff(off_type _Off,
 ### <a name="parameters"></a>매개 변수
 
 *_Off*\
-*_Way*를 기준으로 검색할 위치입니다.
+*_Way* 를 기준으로 검색할 위치입니다.
 
 *_Way*\
 오프셋 작업의 시작 지점입니다. 가능한 값은 [seekdir](../standard-library/ios-base-class.md#seekdir)을 참조하세요.
@@ -591,13 +592,13 @@ pos_type pubseekoff(off_type _Off,
 *_Which*\
 포인터 위치에 대한 모드를 지정합니다. 기본적으로는 읽기 및 쓰기 위치를 수정할 수 있습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 새 위치 또는 잘못 된 스트림 위치 ( [seekoff](#seekoff)(_ *Off*, `_Way` ,))를 반환 합니다 `_Which` .
 
 ### <a name="remarks"></a>설명
 
-*_Way*를 기준으로 포인터를 이동 합니다.
+*_Way* 를 기준으로 포인터를 이동 합니다.
 
 ## <a name="basic_streambufpubseekpos"></a><a name="pubseekpos"></a> basic_streambuf::p ubseekpos
 
@@ -615,7 +616,7 @@ pos_type pubseekpos(pos_type _Sp, ios_base::openmode _Which = ios_base::in | ios
 *_Which*\
 포인터 위치에 대한 모드를 지정합니다. 기본적으로는 읽기 및 쓰기 위치를 수정할 수 있습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 새 위치 또는 잘못된 스트림 위치입니다. 스트림 위치가 잘못되었는지를 확인하려면 반환 값을 `pos_type(off_type(-1))`과 비교합니다.
 
@@ -641,7 +642,7 @@ basic_streambuf<Elem, Tr> *pubsetbuf(
 *수*\
 버퍼의 크기입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 [Setbuf](#setbuf)( `_Buffer` ,)를 반환 `count` 합니다.
 
@@ -653,7 +654,7 @@ basic_streambuf<Elem, Tr> *pubsetbuf(
 int pubsync();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 실패 하면 [sync](#sync) 또는-1을 반환 합니다.
 
@@ -665,7 +666,7 @@ int pubsync();
 int_type sbumpc();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 요소입니다.
 
@@ -712,7 +713,7 @@ virtual pos_type seekoff(
 ### <a name="parameters"></a>매개 변수
 
 *_Off*\
-*_Way*를 기준으로 검색할 위치입니다.
+*_Way* 를 기준으로 검색할 위치입니다.
 
 *_Way*\
 오프셋 작업의 시작 지점입니다. 가능한 값은 [seekdir](../standard-library/ios-base-class.md#seekdir)을 참조하세요.
@@ -720,7 +721,7 @@ virtual pos_type seekoff(
 *_Which*\
 포인터 위치에 대한 모드를 지정합니다. 기본적으로는 읽기 및 쓰기 위치를 수정할 수 있습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 새 위치 또는 잘못 된 스트림 위치 ( `seekoff` (_ *Off*, `_Way` , `_Which` ))를 반환 합니다.
 
@@ -728,13 +729,13 @@ virtual pos_type seekoff(
 
 새 위치는 다음과 같이 결정됩니다.
 
-- `_Way` == `ios_base::beg`인 경우 새 위치는 스트림 시작 부분에 _ *Off*를 더한 위치입니다.
+- `_Way` == `ios_base::beg`인 경우 새 위치는 스트림 시작 부분에 _ *Off* 를 더한 위치입니다.
 
-- `_Way` == `ios_base::cur`인 경우 새 위치는 현재 스트림 위치에 _ *Off*를 더한 위치입니다.
+- `_Way` == `ios_base::cur`인 경우 새 위치는 현재 스트림 위치에 _ *Off* 를 더한 위치입니다.
 
-- `_Way` == `ios_base::end`인 경우 새 위치는 스트림 끝에 _ *Off*를 더한 위치입니다.
+- `_Way` == `ios_base::end`인 경우 새 위치는 스트림 끝에 _ *Off* 를 더한 위치입니다.
 
-일반적으로 **which & ios_base::in**이 0이 아닌 경우 입력 스트림이 영향을 받고, **which & ios_base::out**이 0이 아닌 경우 출력 스트림이 영향을 받습니다. 그러나 이 매개 변수의 실제 사용은 파생 스트림 버퍼 간에 다릅니다.
+일반적으로 **which & ios_base::in** 이 0이 아닌 경우 입력 스트림이 영향을 받고, **which & ios_base::out** 이 0이 아닌 경우 출력 스트림이 영향을 받습니다. 그러나 이 매개 변수의 실제 사용은 파생 스트림 버퍼 간에 다릅니다.
 
 하나 이상의 스트림 위치를 정상적으로 변경하는 경우 함수는 결과 스트림 위치 또는 결과 스트림 위치 중 하나를 반환합니다. 실패하면 잘못된 스트림 위치를 반환합니다. 기본 동작은 잘못된 스트림 위치를 반환하는 것입니다.
 
@@ -754,15 +755,15 @@ virtual pos_type seekpos(pos_type _Sp, ios_base::openmode _Which = ios_base::in 
 *_Which*\
 포인터 위치에 대한 모드를 지정합니다. 기본적으로는 읽기 및 쓰기 위치를 수정할 수 있습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 새 위치 또는 잘못된 스트림 위치입니다. 스트림 위치가 잘못되었는지를 확인하려면 반환 값을 `pos_type(off_type(-1))`과 비교합니다.
 
 ### <a name="remarks"></a>설명
 
-새 위치는 _ *Sp*입니다.
+새 위치는 _ *Sp* 입니다.
 
-일반적으로 **which & ios_base::in**이 0이 아닌 경우 입력 스트림이 영향을 받고, **which & ios_base::out**이 0이 아닌 경우 출력 스트림이 영향을 받습니다. 그러나 이 매개 변수의 실제 사용은 파생 스트림 버퍼 간에 다릅니다.
+일반적으로 **which & ios_base::in** 이 0이 아닌 경우 입력 스트림이 영향을 받고, **which & ios_base::out** 이 0이 아닌 경우 출력 스트림이 영향을 받습니다. 그러나 이 매개 변수의 실제 사용은 파생 스트림 버퍼 간에 다릅니다.
 
 하나 이상의 스트림 위치를 정상적으로 변경하는 경우 함수는 결과 스트림 위치 또는 결과 스트림 위치 중 하나를 반환합니다. 아닌 경우 잘못된 스트림 위치(-1)를 반환합니다. 기본 동작은 잘못된 스트림 위치를 반환하는 것입니다.
 
@@ -784,7 +785,7 @@ virtual basic_streambuf<Elem, Tr> *setbuf(
 *수*\
 버퍼의 크기입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 기본 동작은을 반환 하는 것입니다 **`this`** .
 
@@ -837,7 +838,7 @@ void setp(char_type* _Pbeg, char_type* _Pend);
 int_type sgetc();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 요소입니다.
 
@@ -867,7 +868,7 @@ int main( )
 
 ## <a name="basic_streambufsgetn"></a><a name="sgetn"></a> basic_streambuf:: sgetn
 
-입력 버퍼에서 문자 *수를 계산* 하 여 제공 된 버퍼 *ptr*에 저장 합니다.
+입력 버퍼에서 문자 *수를 계산* 하 여 제공 된 버퍼 *ptr* 에 저장 합니다.
 
 이 메서드는 전달된 값이 정확한지 확인하기 위해 호출자를 사용하므로 보안상 위험할 수 있습니다.
 
@@ -885,7 +886,7 @@ streamsize sgetn(
 *수*\
 읽을 요소의 수입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 읽은 요소의 수입니다. 자세한 내용은 [streamsize](../standard-library/ios-typedefs.md#streamsize)를 참조하세요.
 
@@ -928,7 +929,7 @@ int main()
 virtual streamsize showmanyc();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 기본 동작은 0을 반환하는 것입니다.
 
@@ -940,13 +941,13 @@ virtual streamsize showmanyc();
 int_type snextc();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 스트림에서 다음 요소입니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 [sbumpc](#sbumpc)를 반환합니다. 해당 함수가 **traits_type::**[eof](../standard-library/char-traits-struct.md#eof)를 반환하는 경우 **traits_type::eof**를 반환합니다. 아닌 경우 [sgetc](#sgetc)를 반환합니다.
+멤버 함수는 [sbumpc](#sbumpc)를 반환합니다. 해당 함수가 **traits_type::**[eof](../standard-library/char-traits-struct.md#eof)를 반환하는 경우 **traits_type::eof** 를 반환합니다. 아닌 경우 [sgetc](#sgetc)를 반환합니다.
 
 ### <a name="example"></a>예제
 
@@ -985,7 +986,7 @@ int_type sputbackc(char_type _Ch);
 *_Ch*\
 문자입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 문자 또는 실패를 반환합니다.
 
@@ -1033,7 +1034,7 @@ int_type sputc(char_type _Ch);
 *_Ch*\
 문자입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공할 경우 해당 문자를 반환합니다.
 
@@ -1079,7 +1080,7 @@ streamsize sputn(const char_type* ptr, streamsize count);
 *수*\
 문자 수입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 실제로 스트림에 삽입되는 문자의 수입니다.
 
@@ -1148,7 +1149,7 @@ int main( )
 int_type sungetc();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 문자 또는 실패를 반환합니다.
 
@@ -1215,7 +1216,7 @@ void swap(basic_streambuf& right);
 virtual int sync();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하지 못하면 함수는 -1을 반환합니다. 기본 동작은 0을 반환하는 것입니다.
 
@@ -1239,7 +1240,7 @@ typedef Tr traits_type;
 virtual int_type uflow();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 요소입니다.
 
@@ -1247,13 +1248,13 @@ virtual int_type uflow();
 
 보호된 가상 멤버 함수는 입력 버퍼에서 현재 요소 **ch** 추출을 시도한 다음 현재 스트림 위치로 이동하여 요소를 **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)( **ch**)로서 반환합니다. 수행할 수 있는 방법은 다양합니다.
 
-- 읽기 위치를 사용할 수 있으면 함수는 읽기 위치에 저장된 요소로 **ch**를 가져온 후 입력 버퍼의 다음 포인터로 이동합니다.
+- 읽기 위치를 사용할 수 있으면 함수는 읽기 위치에 저장된 요소로 **ch** 를 가져온 후 입력 버퍼의 다음 포인터로 이동합니다.
 
 - 일부 외부 소스에서 요소를 직접 읽고, **ch** 값으로서 전달할 수 있습니다.
 
 - 공통된 입력 및 출력 스트림이 있는 스트림 버퍼의 경우, 출력 버퍼에 대한 시작 포인터와 다음 포인터 사이의 일부 또는 모든 요소를 외부 대상에 기록하여 읽기 위치를 사용 가능하게 만들 수 있습니다. 또는 입력 버퍼에 대해 새 스토리지 또는 추가 스토리지를 할당할 수 있습니다. 그런 다음 함수는 일부 외부 소스에서 하나 이상의 요소를 읽습니다.
 
-함수가 성공할 수 없는 경우 **traits_type::**[eof](../standard-library/char-traits-struct.md#eof)를 반환 하거나 예외를 throw 합니다. 성공할 경우, 위에서 설명한 대로 변환된 입력 스트림에서 현재 요소 `ch`를 반환하고 입력 버퍼의 다음 포인터로 이동합니다. 기본 동작은 [underflow](#underflow)를 호출하는 것입니다. 해당 함수가 **traits_type::eof**를 반환할 경우 **traits_type::eof**를 반환합니다. 아닌 경우, 위에서 설명한 대로 변환된 입력 스트림에서 현재 요소 **ch**를 반환하고 입력 버퍼의 다음 포인터로 이동합니다.
+함수가 성공할 수 없는 경우 **traits_type::**[eof](../standard-library/char-traits-struct.md#eof)를 반환 하거나 예외를 throw 합니다. 성공할 경우, 위에서 설명한 대로 변환된 입력 스트림에서 현재 요소 `ch`를 반환하고 입력 버퍼의 다음 포인터로 이동합니다. 기본 동작은 [underflow](#underflow)를 호출하는 것입니다. 해당 함수가 **traits_type::eof** 를 반환할 경우 **traits_type::eof** 를 반환합니다. 아닌 경우, 위에서 설명한 대로 변환된 입력 스트림에서 현재 요소 **ch** 를 반환하고 입력 버퍼의 다음 포인터로 이동합니다.
 
 ## <a name="basic_streambufunderflow"></a><a name="underflow"></a> basic_streambuf:: 언더플로
 
@@ -1263,7 +1264,7 @@ virtual int_type uflow();
 virtual int_type underflow();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 요소입니다.
 
@@ -1271,11 +1272,11 @@ virtual int_type underflow();
 
 보호된 가상 멤버 함수는 입력 스트림에서 현재 요소 **ch** 추출을 시도한 다음 현재 스트림 위치로 이동하여 요소를 `traits_type::`[to_int_type](../standard-library/char-traits-struct.md#to_int_type)( **ch**)로서 반환합니다. 수행할 수 있는 방법은 다양합니다.
 
-- 읽기 위치를 사용할 수 있는 경우 **ch**는 읽기 위치에 저장된 요소입니다. 이에 대한 자세한 내용은 [basic_streambuf 클래스](../standard-library/basic-streambuf-class.md)의 설명 섹션을 참조하세요.
+- 읽기 위치를 사용할 수 있는 경우 **ch** 는 읽기 위치에 저장된 요소입니다. 이에 대한 자세한 내용은 [basic_streambuf 클래스](../standard-library/basic-streambuf-class.md)의 설명 섹션을 참조하세요.
 
 - 입력 버퍼에 대해 새 스토리지 또는 추가 스토리지를 할당한 다음, 일부 외부 소스에서 하나 이상의 요소를 읽음으로써 읽기 위치를 사용 가능하게 만들 수 있습니다. 이에 대한 자세한 내용은 [basic_streambuf 클래스](../standard-library/basic-streambuf-class.md)의 설명 섹션을 참조하세요.
 
-함수가 성공할 수 없는 경우 eof를 반환 `traits_type::` [eof](../standard-library/char-traits-struct.md#eof) `()` 하거나 예외를 throw 합니다. 성공할 경우 위에서 설명한 대로 변환된 입력 스트림의 현재 요소를 반환합니다. 기본 동작은 `traits_type::eof()`를 반환하는 것입니다.
+함수가 성공할 수 없는 경우 eof를 반환 `traits_type::` [](../standard-library/char-traits-struct.md#eof) `()` 하거나 예외를 throw 합니다. 성공할 경우 위에서 설명한 대로 변환된 입력 스트림의 현재 요소를 반환합니다. 기본 동작은 `traits_type::eof()`를 반환하는 것입니다.
 
 가상 `underflow` 함수는 [sync](#sync) 및 [overflow](#overflow) 함수와 함께 `streambuf` 파생 클래스의 특성을 정의합니다. 각 파생 클래스는 `underflow`를 다르게 구현할 수 있지만, 호출하는 스트림 클래스와의 인터페이스는 동일합니다.
 
@@ -1305,13 +1306,13 @@ virtual streamsize xsgetn(
 *수*\
 추출할 요소의 수입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 추출된 요소의 수입니다.
 
 ### <a name="remarks"></a>설명
 
-보호 된 가상 구성원 함수는 [sbumpc](#sbumpc)를 반복 해 서 호출 하는 것 처럼 입력 스트림에서 요소 *수를 계산* 하 여 *ptr*에서 시작 하는 배열에 저장 합니다. 실제로 추출된 요소의 수를 반환합니다.
+보호 된 가상 구성원 함수는 [sbumpc](#sbumpc)를 반복 해 서 호출 하는 것 처럼 입력 스트림에서 요소 *수를 계산* 하 여 *ptr* 에서 시작 하는 배열에 저장 합니다. 실제로 추출된 요소의 수를 반환합니다.
 
 ## <a name="basic_streambufxsputn"></a><a name="xsputn"></a> basic_streambuf:: xsputn
 
@@ -1329,13 +1330,13 @@ virtual streamsize xsputn(const char_type* ptr, streamsize count);
 *수*\
 삽입할 요소의 수입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 실제로 스트림에 삽입된 요소의 수입니다.
 
 ### <a name="remarks"></a>설명
 
-보호 된 가상 멤버 함수는 *ptr*에서 시작 하는 배열에서 [sputc](#sputc)를 반복 해 서 호출 하는 것 처럼 *개수를 계산* 하는 요소를 출력 스트림에 삽입 합니다. 문자를 출력 스트림에 삽입 하면 모든 *카운트* 문자가 작성 되 고 나 서 호출에서을 반환 하는 경우 중지 됩니다 `sputc( count)` `traits::eof()` . 실제로 삽입된 요소의 수를 반환합니다.
+보호 된 가상 멤버 함수는 *ptr* 에서 시작 하는 배열에서 [sputc](#sputc)를 반복 해 서 호출 하는 것 처럼 *개수를 계산* 하는 요소를 출력 스트림에 삽입 합니다. 문자를 출력 스트림에 삽입 하면 모든 *카운트* 문자가 작성 되 고 나 서 호출에서을 반환 하는 경우 중지 됩니다 `sputc( count)` `traits::eof()` . 실제로 삽입된 요소의 수를 반환합니다.
 
 ## <a name="see-also"></a>참고 항목
 

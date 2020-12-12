@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: pop_macro pragma'
 title: pop_macro pragma
 ms.date: 08/29/2019
 f1_keywords:
@@ -8,24 +9,24 @@ helpviewer_keywords:
 - pop_macro pragma
 - pragmas, pop_macro
 ms.assetid: 3b5489d0-69ba-4c66-b572-2748af0f12bb
-ms.openlocfilehash: f9e097d139e1df5c9ba09ad9ca99f0cfe6bbbfb3
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 395e107586b9534b2e9db616f30ddd88b15b93ec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70218288"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325708"
 ---
 # <a name="pop_macro-pragma"></a>pop_macro pragma
 
 *매크로 이름* 매크로의 값을이 매크로의 스택 맨 위에 있는 값으로 설정 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **#pragma pop_macro (** "*매크로-이름*" **)**
 
 ## <a name="remarks"></a>설명
 
-**Pop_macro**를 수행 하려면 먼저 [push_macro](../preprocessor/push-macro.md) 를 실행 해야 합니다.
+**Pop_macro** 를 수행 하려면 먼저 *매크로 이름* 에 대 한 [push_macro](../preprocessor/push-macro.md) 를 실행 해야 합니다.
 
 ## <a name="example"></a>예제
 
@@ -61,6 +62,6 @@ int main() {
 3
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [Pragma 지시문 및 __pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: Container Class:: empty'
 title: Container Class::empty
 ms.date: 11/04/2016
 helpviewer_keywords:
 - empty method
 ms.assetid: 2055418d-3c42-4d28-a7db-111586119ed9
-ms.openlocfilehash: ee837c058a5a6ed7ca4e8bd55e0b889f3246ee68
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cf79c51ba7a6508f45e5f9e9859ddf638794bb17
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217820"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324882"
 ---
 # <a name="container-classempty"></a>Container Class::empty
 

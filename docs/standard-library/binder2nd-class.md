@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: binder2nd 클래스'
 title: binder2nd 클래스
 ms.date: 02/21/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - binder2nd class
 ms.assetid: b2a9c1d1-dfc4-4ca9-a10e-ae84e195a62d
-ms.openlocfilehash: 297f91dd9283b9f004247d2d1814b30a17e7ffa2
-ms.sourcegitcommit: 4b0928a1a497648d0d327579c8262f25ed20d02e
+ms.openlocfilehash: a3c76fcea22045ee7e723ad3ad51390c39f602ef
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72890099"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325494"
 ---
 # <a name="binder2nd-class"></a>binder2nd 클래스
 
@@ -41,21 +42,21 @@ class binder2nd
 *func*\
 단항 함수 개체로 변환할 이항 함수 개체입니다.
 
-*오른쪽* \
+*오른쪽*\
 이항 함수 개체의 두 번째 인수가 바인딩되는 값입니다.
 
-*왼쪽* \
+*비어*\
 수정된 이진 개체를 두 번째 인수의 고정 값과 비교하는 인수의 값입니다.
 
 ## <a name="return-value"></a>반환 값
 
-이항 함수 개체의 두 번째 인수를 값 *오른쪽*에 바인딩하여 생성 되는 단항 함수 개체입니다.
+이항 함수 개체의 두 번째 인수를 값 *오른쪽* 에 바인딩하여 생성 되는 단항 함수 개체입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
-클래스 템플릿은 `op`에 이진 함수 개체 *func* 의 복사본을 저장 하 고 `value`에 *right* 의 복사본을 저장 합니다. `op(left, value)`반환 하는 것 처럼 `operator()` 멤버 함수를 정의 합니다.
+클래스 템플릿은에서 이진 함수 개체 *func* 의 복사본을 저장 `op` 하 고의 복사본을에 저장  합니다 `value` . 반환 하는 멤버 함수 `operator()` 를 정의 `op(left, value)` 합니다.
 
-*Func* 가 `Operation` 형식의 개체이 고 c가 상수인 경우 [bind2nd](../standard-library/functional-functions.md#bind2nd)`(func, c)`는 `binder2nd` 클래스 생성자 `binder2nd<Operation>(func, c)`와 같으며 더 편리 합니다.
+*Func* 가 형식의 개체이 `Operation` 고 c가 상수인 경우 [bind2nd](../standard-library/functional-functions.md#bind2nd) `(func, c)` 는 `binder2nd` 클래스 생성자 `binder2nd<Operation>(func, c)` 와 같으며 더 편리 합니다.
 
 ## <a name="example"></a>예제
 

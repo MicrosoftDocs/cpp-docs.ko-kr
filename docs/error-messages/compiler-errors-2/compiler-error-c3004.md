@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3004'
 title: 컴파일러 오류 C3004
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3004
 ms.assetid: 819c2b57-8366-4ca7-9135-1f0c5e5b6bb6
-ms.openlocfilehash: cb5fe5572774c77d4f9f982e271dce8c2d986300
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 30737aca11b52fb8eaecc376c38211772442abf5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75302291"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326030"
 ---
 # <a name="compiler-error-c3004"></a>컴파일러 오류 C3004
 

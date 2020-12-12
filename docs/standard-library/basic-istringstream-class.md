@@ -1,4 +1,5 @@
 ---
+description: Basic_istringstream 클래스에 대해 자세히 알아보세요.
 title: basic_istringstream 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,16 +15,16 @@ helpviewer_keywords:
 - std::basic_istringstream [C++], str
 - std::basic_istringstream [C++], swap
 ms.assetid: 1d5bb4b5-793d-4833-98e5-14676c451915
-ms.openlocfilehash: fd2ab79466c01343cbdadbcb649e3b05eee3c2a0
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 34073c660b5ede3d7df54e9e067ef5c3963671f4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561780"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325682"
 ---
 # <a name="basic_istringstream-class"></a>basic_istringstream 클래스
 
-[basic_stringbuf](../standard-library/basic-stringbuf-class.md) <  **Elem**, **Tr**,> basic_stringbuf 클래스의 스트림 버퍼에서 요소 및 인코드된 개체의 추출을 제어 하는 개체에 대해 설명 합니다 `Alloc` .
+[](../standard-library/basic-stringbuf-class.md) <  **Elem**, **Tr**,> basic_stringbuf 클래스의 스트림 버퍼에서 요소 및 인코드된 개체의 추출을 제어 하는 개체에 대해 설명 합니다 `Alloc` .
 
 ## <a name="syntax"></a>구문
 
@@ -45,7 +46,7 @@ class basic_istringstream : public basic_istream<Elem, Tr>
 
 ## <a name="remarks"></a>설명
 
-클래스 템플릿은 elem, tr,> 클래스의 스트림 버퍼에서 요소 및 인코드된 개체의 추출을 제어 하 [basic_stringbuf](../standard-library/basic-stringbuf-class.md)는 개체를 설명 합니다 .이는 <  **Elem** **Tr** `Alloc` 문자 특성이 *Tr*클래스에 의해 결정 되 고 해당 요소가 클래스의 할당자에 의해 할당 되 *는 elem*형식의 요소가 있는 basic_stringbuf. *Alloc* 이 개체는 basic_stringbuf< **Elem**, **Tr**, `Alloc`> 클래스의 개체를 저장합니다.
+클래스 템플릿은 elem, tr,> 클래스의 스트림 버퍼에서 요소 및 인코드된 개체의 추출을 제어 하 [](../standard-library/basic-stringbuf-class.md)는 개체를 설명 합니다 .이는 <    `Alloc` 문자 특성이 *Tr* 클래스에 의해 결정 되 고 해당 요소가 클래스의 할당자에 의해 할당 되 *는 elem* 형식의 요소가 있는 basic_stringbuf.  이 개체는 basic_stringbuf< **Elem**, **Tr**, `Alloc`> 클래스의 개체를 저장합니다.
 
 ### <a name="constructors"></a>생성자
 
@@ -63,13 +64,13 @@ class basic_istringstream : public basic_istream<Elem, Tr>
 
 |멤버 함수|Description|
 |-|-|
-|[rdbuf](#rdbuf)|Basic_stringbuf,>의 저장 된 스트림 버퍼 주소를 `pointer` 반환 [basic_stringbuf](../standard-library/basic-stringbuf-class.md) <  `Elem` `Tr` `Alloc` 합니다.|
-|[문자열](#str)|쓰기 위치를 변경하지 않고 문자열 버퍼에서 텍스트를 설정하거나 가져옵니다.|
+|[rdbuf](#rdbuf)|Basic_stringbuf,>의 저장 된 스트림 버퍼 주소를 `pointer` 반환 [](../standard-library/basic-stringbuf-class.md) <  `Elem` `Tr` `Alloc` 합니다.|
+|[str](#str)|쓰기 위치를 변경하지 않고 문자열 버퍼에서 텍스트를 설정하거나 가져옵니다.|
 |[스왑을](#swap)|이 `basic_istringstream` 개체의 값을 제공된 개체의 값으로 교환합니다.|
 
 ### <a name="operators"></a>연산자
 
-|연산자|Description|
+|연산자|설명|
 |-|-|
 |[연산자 =](#op_eq)|개체 매개 변수에서 이 `basic_istringstream` 개체에 값을 할당합니다.|
 
@@ -120,7 +121,7 @@ basic_istringstream(
 
 두 번째 생성자는 `basic_istream(sb)`를 호출하여 기본 개체를 초기화합니다. 또한 `basic_stringbuf`< `Elem`, `Tr`, `Alloc`>( `str`, `_Mode` &#124; `ios_base::in`)을 호출하여 `sb`를 초기화합니다.
 
-세 번째 생성자는 rvalue 참조로 처리 되는 *오른쪽*의 내용을 사용 하 여 개체를 초기화 합니다.
+세 번째 생성자는 rvalue 참조로 처리 되는 *오른쪽* 의 내용을 사용 하 여 개체를 초기화 합니다.
 
 ## <a name="basic_istringstreamoperator"></a><a name="op_eq"></a> basic_istringstream:: operator =
 
@@ -137,17 +138,17 @@ basic_istringstream& operator=(basic_istringstream&& right);
 
 ### <a name="remarks"></a>설명
 
-멤버 연산자는 rvalue 참조 이동 할당으로 처리 되는 개체의 내용을 *오른쪽*의 콘텐츠로 바꿉니다.
+멤버 연산자는 rvalue 참조 이동 할당으로 처리 되는 개체의 내용을 *오른쪽* 의 콘텐츠로 바꿉니다.
 
 ## <a name="basic_istringstreamrdbuf"></a><a name="rdbuf"></a> basic_istringstream:: rdbuf
 
-형식의 저장 된 스트림 버퍼 주소를 `pointer` [basic_stringbuf](../standard-library/basic-stringbuf-class.md) <  **Elem**, **Tr**,> basic_stringbuf 반환 합니다 `Alloc` .
+형식의 저장 된 스트림 버퍼 주소를 `pointer` [](../standard-library/basic-stringbuf-class.md) <  **Elem**, **Tr**,> basic_stringbuf 반환 합니다 `Alloc` .
 
 ```cpp
 basic_stringbuf<Elem, Tr, Alloc> *rdbuf() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `pointer` **Elem**, **Tr**,>< basic_stringbuf 되는 형식의 저장 된 스트림 버퍼 주소입니다 `Alloc` .
 
@@ -171,9 +172,9 @@ void str(
 *_Newstr*\
 새 문자열입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-[Basic_string](../standard-library/basic-string-class.md) <  **Elem**, **Tr**,> 클래스의 개체를 반환 `Alloc` 합니다 .이 개체는 제어 되는 시퀀스가 ** \* 이**에 의해 제어 되는 시퀀스의 복사본입니다.
+[Basic_string](../standard-library/basic-string-class.md) <  **Elem**, **Tr**,> 클래스의 개체를 반환 `Alloc` 합니다 .이 개체는 제어 되는 시퀀스가 **\* 이** 에 의해 제어 되는 시퀀스의 복사본입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -198,7 +199,7 @@ void swap(basic_istringstream& right);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는이 개체의 값과 *right*값을 교환 합니다.
+멤버 함수는이 개체의 값과 *right* 값을 교환 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

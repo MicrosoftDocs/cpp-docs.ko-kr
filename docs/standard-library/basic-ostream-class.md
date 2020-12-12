@@ -1,4 +1,5 @@
 ---
+description: Basic_ostream 클래스에 대해 자세히 알아보세요.
 title: basic_ostream 클래스
 ms.date: 03/27/2019
 f1_keywords:
@@ -20,16 +21,16 @@ helpviewer_keywords:
 - std::basic_ostream [C++], tellp
 - std::basic_ostream [C++], write
 ms.assetid: 5baadc65-b662-4fab-8c9f-94457c58cda1
-ms.openlocfilehash: 972c21feec805e4c1032f0ebad1e3ac0d7daa7dc
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 19bcc5fddd7ae73a77492f88ed516beb03182839
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219237"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325656"
 ---
 # <a name="basic_ostream-class"></a>basic_ostream 클래스
 
-이 클래스 템플릿은 `Elem` 문자 특성이 클래스에 의해 결정 되는 (traits_type 라고도 함) 형식의 요소를 사용 하 여 스트림 버퍼에 요소 및 인코드된 개체 삽입을 제어 하는 개체를 설명 합니다 .이는 [char_type](../standard-library/basic-ios-class.md#char_type)라고도 합니다 `Tr` . [traits_type](../standard-library/basic-ios-class.md#traits_type)
+이 클래스 템플릿은 `Elem` 문자 특성이 클래스에 의해 결정 되는 (traits_type 라고도 함) 형식의 요소를 사용 하 여 스트림 버퍼에 요소 및 인코드된 개체 삽입을 제어 하는 개체를 설명 합니다 .이는 [char_type](../standard-library/basic-ios-class.md#char_type)라고도 합니다 `Tr` . [](../standard-library/basic-ios-class.md#traits_type)
 
 ## <a name="syntax"></a>구문
 
@@ -41,7 +42,7 @@ class basic_ostream : virtual public basic_ios<Elem, Tr>
 ### <a name="parameters"></a>매개 변수
 
 *E*\
-`char_type`입니다.
+`char_type`
 
 *비교한*\
 문자 `traits_type`입니다.
@@ -110,7 +111,7 @@ return (*this);
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[basic_ostream](#basic_ostream)|`basic_ostream` 개체를 생성합니다.|
 
@@ -121,7 +122,7 @@ return (*this);
 |[플러시가](#flush)|버퍼를 플러시합니다.|
 |[보관](#put)|스트림에 문자를 넣습니다.|
 |[seekp](#seekp)|출력 스트림 내의 위치를 다시 설정합니다.|
-|[sentry](#sentry)|중첩 클래스는 선언에서 형식이 지정된 출력 함수 및 형식이 지정되지 않은 출력 함수를 구성하는 개체를 설명합니다.|
+|[감시](#sentry)|중첩 클래스는 선언에서 형식이 지정된 출력 함수 및 형식이 지정되지 않은 출력 함수를 구성하는 개체를 설명합니다.|
 |[스왑을](#swap)|이 `basic_ostream` 개체의 값을 제공된 `basic_ostream` 개체의 값으로 교환합니다.|
 |[tellp](#tellp)|출력 스트림 내의 위치를 보고합니다.|
 |[기록](#write)|스트림에 문자를 넣습니다.|
@@ -139,7 +140,7 @@ return (*this);
 
 **네임스페이스:** std
 
-## <a name="basic_ostreambasic_ostream"></a><a name="basic_ostream"></a>basic_ostream:: basic_ostream
+## <a name="basic_ostreambasic_ostream"></a><a name="basic_ostream"></a> basic_ostream:: basic_ostream
 
 `basic_ostream` 개체를 생성합니다.
 
@@ -170,7 +171,7 @@ basic_ostream(basic_ostream&& right);
 
 출력 스트림에 대한 자세한 내용은 [basic_ofstream::basic_ofstream](../standard-library/basic-ofstream-class.md#basic_ofstream)에 대한 예제를 참조하세요.
 
-## <a name="basic_ostreamflush"></a><a name="flush"></a>basic_ostream:: flush
+## <a name="basic_ostreamflush"></a><a name="flush"></a> basic_ostream:: flush
 
 버퍼를 플러시합니다.
 
@@ -178,13 +179,13 @@ basic_ostream(basic_ostream&& right);
 basic_ostream<Elem, Tr>& flush();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 Basic_ostream 개체에 대한 참조입니다.
 
 ### <a name="remarks"></a>설명
 
-[rdbuf](../standard-library/basic-ios-class.md#rdbuf)가 null 포인터가 아닌 경우 함수는 **rdbuf->**[pubsync](../standard-library/basic-streambuf-class.md#pubsync)를 호출합니다. -1이 반환되는 경우 함수는 [setstate](../standard-library/basic-ios-class.md#setstate)(**badbit**)를 호출합니다. ** \* 이**를 반환 합니다.
+[rdbuf](../standard-library/basic-ios-class.md#rdbuf)가 null 포인터가 아닌 경우 함수는 **rdbuf->**[pubsync](../standard-library/basic-streambuf-class.md#pubsync)를 호출합니다. -1이 반환되는 경우 함수는 [setstate](../standard-library/basic-ios-class.md#setstate)(**badbit**)를 호출합니다. **\* 이** 를 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -205,7 +206,7 @@ int main( )
 test
 ```
 
-## <a name="basic_ostreamoperatorltlt"></a><a name="basic_ostream_operator_lt_lt"></a>basic_ostream:: operator&lt;&lt;
+## <a name="basic_ostreamoperatorltlt"></a><a name="basic_ostream_operator_lt_lt"></a> basic_ostream:: operator&lt;&lt;
 
 스트림에 씁니다.
 
@@ -246,7 +247,7 @@ basic_ostream<Elem, Tr>& operator<<(const void* val);
 *짧은*\
 스트림에 기록할 요소입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 Basic_ostream 개체에 대한 참조입니다.
 
@@ -254,7 +255,7 @@ Basic_ostream 개체에 대한 참조입니다.
 
 \<ostream> 헤더는 또한 몇몇 전역 삽입 연산자를 정의합니다. 자세한 내용은 [operator<<](../standard-library/ostream-operators.md#op_lt_lt)를 참조 하세요.
 
-첫 번째 멤버 함수는 폼의 식이 `ostr << endl` [endl](../standard-library/ostream-functions.md#endl)**(ostr)** 을 호출 하 고 ** \* this**를 반환 하는지 확인 합니다. 두 번째와 세 번째 함수는 [hex](../standard-library/ios-functions.md#hex)와 같은 기타 조작자가 비슷하게 동작하도록 합니다. 나머지 함수는 모두 형식이 지정된 출력 함수입니다.
+첫 번째 멤버 함수는 폼의 식이 `ostr << endl` [endl](../standard-library/ostream-functions.md#endl)**(ostr)** 을 호출 하 고 **\* this** 를 반환 하는지 확인 합니다. 두 번째와 세 번째 함수는 [hex](../standard-library/ios-functions.md#hex)와 같은 기타 조작자가 비슷하게 동작하도록 합니다. 나머지 함수는 모두 형식이 지정된 출력 함수입니다.
 
 다음 함수는
 
@@ -262,7 +263,7 @@ Basic_ostream 개체에 대한 참조입니다.
 basic_ostream<Elem, Tr>& operator<<(basic_streambuf<Elem, Tr>* strbuf);
 ```
 
-*strbuf* 가 null 포인터가 아닌 경우 *strbuf*에서 요소를 추출 하 여 삽입 합니다. 추출은 파일의 끝에서 또는 추출이 예외를 throw하는 경우(다시 throw됨) 중지됩니다. 또한 삽입이 실패하면 문제의 요소를 추출하지 않은 채 중단됩니다. 함수가 요소를 삽입하지 않거나 추출이 예외를 throw하면 함수는 [setstate](../standard-library/basic-ios-class.md#setstate)(**failbit**)를 호출합니다. 어떤 경우 든 함수는 ** \* this**를 반환 합니다.
+*strbuf* 가 null 포인터가 아닌 경우 *strbuf* 에서 요소를 추출 하 여 삽입 합니다. 추출은 파일의 끝에서 또는 추출이 예외를 throw하는 경우(다시 throw됨) 중지됩니다. 또한 삽입이 실패하면 문제의 요소를 추출하지 않은 채 중단됩니다. 함수가 요소를 삽입하지 않거나 추출이 예외를 throw하면 함수는 [setstate](../standard-library/basic-ios-class.md#setstate)(**failbit**)를 호출합니다. 어떤 경우 든 함수는 **\* this** 를 반환 합니다.
 
 다음 함수는
 
@@ -270,7 +271,7 @@ basic_ostream<Elem, Tr>& operator<<(basic_streambuf<Elem, Tr>* strbuf);
 basic_ostream<Elem, Tr>& operator<<(bool val);
 ```
 
-`_Val`부울 필드로 변환 하 고 [use_facet](../standard-library/basic-filebuf-class.md#open) **<\<Elem, OutIt> num_put** `(` [getloc](../standard-library/ios-base-class.md#getloc))를 호출 하 여 삽입 합니다. [put](#put)(**OutIt**([rdbuf](../standard-library/basic-ios-class.md#rdbuf)), ** \* this**, `getloc` , **val**). 여기서 `OutIt` 는 [ostreambuf_iterator](../standard-library/ostreambuf-iterator-class.md)로 정의 됩니다 **\<Elem, Tr>** . 함수는 ** \* this**를 반환 합니다.
+`_Val`부울 필드로 변환 하 고 [use_facet](../standard-library/basic-filebuf-class.md#open) **<\<Elem, OutIt> num_put** `(` [getloc](../standard-library/ios-base-class.md#getloc))를 호출 하 여 삽입 합니다. [put](#put)(**OutIt**([rdbuf](../standard-library/basic-ios-class.md#rdbuf)), **\* this**, `getloc` , **val**). 여기서 `OutIt` 는 [ostreambuf_iterator](../standard-library/ostreambuf-iterator-class.md)로 정의 됩니다 **\<Elem, Tr>** . 함수는 **\* this** 를 반환 합니다.
 
 함수
 
@@ -286,7 +287,7 @@ basic_ostream<Elem, Tr>& operator<<(unsigned long long val);
 basic_ostream<Elem, Tr>& operator<<(const void* val);
 ```
 
-각각 *val* 을 숫자 필드로 변환 하 고 **use_facet<\<Elem, OutIt> num_put**()를 호출 하 여 삽입 `getloc` 합니다. **put**(**OutIt**( `rdbuf` ), ** \* this**, `getloc` , **val**). 여기서 **OutIt** 는 **ostreambuf_iterator \<Elem, Tr> **로 정의 됩니다. 함수는 ** \* this**를 반환 합니다.
+각각 *val* 을 숫자 필드로 변환 하 고 **use_facet<\<Elem, OutIt> num_put**()를 호출 하 여 삽입 `getloc` 합니다. **put**(**OutIt**( `rdbuf` ), **\* this**, `getloc` , **val**). 여기서 **OutIt** 는 **ostreambuf_iterator \<Elem, Tr>** 로 정의 됩니다. 함수는 **\* this** 를 반환 합니다.
 
 함수
 
@@ -296,7 +297,7 @@ basic_ostream<Elem, Tr>& operator<<(double val);
 basic_ostream<Elem, Tr>& operator<<(long double val);
 ```
 
-각각 *val* 을 숫자 필드로 변환 하 고 **use_facet<num_put \<Elem, OutIt> **()를 호출 하 여 삽입 `getloc` **합니다. put**(**OutIt**( `rdbuf` ), ** \* this**, `getloc` , **val**). 여기서 **OutIt** 는 **ostreambuf_iterator \<Elem, Tr> **로 정의 됩니다. 함수는 ** \* this**를 반환 합니다.
+각각 *val* 을 숫자 필드로 변환 하 고 **use_facet<num_put \<Elem, OutIt>**()를 호출 하 여 삽입 `getloc` **합니다. put**(**OutIt**( `rdbuf` ), **\* this**, `getloc` , **val**). 여기서 **OutIt** 는 **ostreambuf_iterator \<Elem, Tr>** 로 정의 됩니다. 함수는 **\* this** 를 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -348,7 +349,7 @@ int main()
 }
 ```
 
-## <a name="basic_ostreamoperator"></a><a name="op_eq"></a>basic_ostream:: operator =
+## <a name="basic_ostreamoperator"></a><a name="op_eq"></a> basic_ostream:: operator =
 
 제공된 `basic_ostream` 개체 매개 변수의 값을 이 개체에 할당합니다.
 
@@ -365,7 +366,7 @@ basic_ostream& operator=(basic_ostream&& right);
 
 멤버 연산자는 swap `(right)`를 호출합니다.
 
-## <a name="basic_ostreamput"></a><a name="put"></a>basic_ostream::p
+## <a name="basic_ostreamput"></a><a name="put"></a> basic_ostream::p
 
 스트림에 문자를 넣습니다.
 
@@ -378,13 +379,13 @@ basic_ostream<Elem, Tr>& put(char_type _Ch);
 *_Ch*\
 단일 문자입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 Basic_ostream 개체에 대한 참조입니다.
 
 ### <a name="remarks"></a>설명
 
-형식이 지정 되지 않은 출력 함수는 *_Ch*요소를 삽입 합니다. ** \* 이**를 반환 합니다.
+형식이 지정 되지 않은 출력 함수는 *_Ch* 요소를 삽입 합니다. **\* 이** 를 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -407,7 +408,7 @@ v
 l
 ```
 
-## <a name="basic_ostreamseekp"></a><a name="seekp"></a>basic_ostream:: seekp
+## <a name="basic_ostreamseekp"></a><a name="seekp"></a> basic_ostream:: seekp
 
 출력 스트림 내의 위치를 다시 설정합니다.
 
@@ -423,18 +424,18 @@ basic_ostream<Elem, Tr>& seekp(off_type _Off, ios_base::seekdir _Way);
 스트림 내의 위치입니다.
 
 *_Off*\
-*_Way*를 기준으로 하는 오프셋입니다.
+*_Way* 를 기준으로 하는 오프셋입니다.
 
 *_Way*\
 [ios_base::seekdir](../standard-library/ios-base-class.md#seekdir) 열거형 중 하나입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 Basic_ostream 개체에 대한 참조입니다.
 
 ### <a name="remarks"></a>설명
 
-[Fail](../standard-library/basic-ios-class.md#fail) 이 이면 **`false`** 첫 번째 멤버 함수는 일부 임시 개체에 대해 **newpos =** [rdbuf](../standard-library/basic-ios-class.md#rdbuf) **->** [pubseekpos](../standard-library/basic-streambuf-class.md#pubseekpos)(*_Pos*)를 호출 합니다 `pos_type` `newpos` . `fail`가 false 인 경우 두 번째 함수는 **newpos = rdbuf->** [pubseekoff](../standard-library/basic-streambuf-class.md#pubseekoff)(*_Off, _Way*)를 호출 합니다. 어떤 경우 든 ( `off_type` )**newpos = =** ( `off_type` ) (-1) (배치 작업이 실패 함) 이면 함수는 **istr** 을 호출 합니다. [setstate](../standard-library/basic-ios-class.md#setstate)(**failbit**). 두 함수는 모두 ** \* this**를 반환 합니다.
+[Fail](../standard-library/basic-ios-class.md#fail) 이 이면 **`false`** 첫 번째 멤버 함수는 일부 임시 개체에 대해 **newpos =** [rdbuf](../standard-library/basic-ios-class.md#rdbuf) **->** [pubseekpos](../standard-library/basic-streambuf-class.md#pubseekpos)(*_Pos*)를 호출 합니다 `pos_type` `newpos` . `fail`가 false 인 경우 두 번째 함수는 **newpos = rdbuf->** [pubseekoff](../standard-library/basic-streambuf-class.md#pubseekoff)(*_Off, _Way*)를 호출 합니다. 어떤 경우 든 ( `off_type` )**newpos = =** ( `off_type` ) (-1) (배치 작업이 실패 함) 이면 함수는 **istr** 을 호출 합니다. [setstate](../standard-library/basic-ios-class.md#setstate)(**failbit**). 두 함수는 모두 **\* this** 를 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -466,7 +467,7 @@ int main()
 7
 ```
 
-## <a name="basic_ostreamsentry"></a><a name="sentry"></a>basic_ostream:: sentry
+## <a name="basic_ostreamsentry"></a><a name="sentry"></a> basic_ostream:: sentry
 
 중첩 클래스는 선언에서 형식이 지정된 출력 함수 및 형식이 지정되지 않은 출력 함수를 구성하는 개체를 설명합니다.
 
@@ -476,9 +477,9 @@ int main()
 
 중첩 클래스는 선언에서 형식이 지정된 출력 함수 및 형식이 지정되지 않은 출력 함수를 구성하는 개체를 설명합니다. **Ostr입니다.** [바람직한](../standard-library/basic-ios-class.md#good) 는 **`true`** 및 **ostr입니다.** [동률](../standard-library/basic-ios-class.md#tie) 이 null 포인터가 아닙니다. 생성자가 **ostr. 동률 >** [플러시](#flush)를 호출 합니다. 그런 다음 생성자는에서 반환 된 값을 저장 `ostr.good` `status` 합니다. 를 나중에 호출 하면 `operator bool` 이 저장 된 값이 전달 됩니다.
 
-`uncaught_exception` **`false`** 에서 buf를 반환 하 고 [flags](../standard-library/ios-base-class.md#flags) **&** [unitbuf](../standard-library/ios-functions.md#unitbuf) 가 0이 아닌 경우 소멸자는 [flush](#flush)를 호출 합니다.
+`uncaught_exception` **`false`** 에서 buf를 반환 하 고 [flags](../standard-library/ios-base-class.md#flags) **&** [](../standard-library/ios-functions.md#unitbuf) 가 0이 아닌 경우 소멸자는 [flush](#flush)를 호출 합니다.
 
-## <a name="basic_ostreamswap"></a><a name="swap"></a>basic_ostream:: swap
+## <a name="basic_ostreamswap"></a><a name="swap"></a> basic_ostream:: swap
 
 이 `basic_ostream` 개체의 값을 제공된 `basic_ostream`의 값으로 교환합니다.
 
@@ -493,9 +494,9 @@ void swap(basic_ostream& right);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 [basic_ios:: swap](../standard-library/basic-ios-class.md#swap) `(right)` 을 호출 하 여이 개체의 내용을 *오른쪽*의 내용으로 교환 합니다.
+멤버 함수는 [basic_ios:: swap](../standard-library/basic-ios-class.md#swap) `(right)` 을 호출 하 여이 개체의 내용을 *오른쪽* 의 내용으로 교환 합니다.
 
-## <a name="basic_ostreamtellp"></a><a name="tellp"></a>basic_ostream:: 통신 lp
+## <a name="basic_ostreamtellp"></a><a name="tellp"></a> basic_ostream:: 통신 lp
 
 출력 스트림 내의 위치를 보고합니다.
 
@@ -503,7 +504,7 @@ void swap(basic_ostream& right);
 pos_type tellp();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 출력 스트림 내의 위치입니다.
 
@@ -515,7 +516,7 @@ pos_type tellp();
 
 `tellp` 사용 예제는 [seekp](#seekp)를 참조하세요.
 
-## <a name="basic_ostreamwrite"></a><a name="write"></a>basic_ostream:: write
+## <a name="basic_ostreamwrite"></a><a name="write"></a> basic_ostream:: write
 
 스트림에 문자를 넣습니다.
 
@@ -531,13 +532,13 @@ basic_ostream<Elem, Tr>& write(const char_type* str, streamsize count);
 *문자열*\
 스트림에 넣을 문자입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 Basic_ostream 개체에 대한 참조입니다.
 
 ### <a name="remarks"></a>설명
 
-형식이 지정 되지 않은 [출력 함수](../standard-library/basic-ostream-class.md) 는 *str*에서 시작 하는 *count* 요소의 시퀀스를 삽입 합니다.
+형식이 지정 되지 않은 [출력 함수](../standard-library/basic-ostream-class.md) 는 *str* 에서 시작 하는 *count* 요소의 시퀀스를 삽입 합니다.
 
 ### <a name="example"></a>예제
 

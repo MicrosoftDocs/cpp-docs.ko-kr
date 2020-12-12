@@ -1,4 +1,5 @@
 ---
+description: Basic_regex 클래스에 대해 자세히 알아보세요.
 title: basic_regex 클래스
 ms.date: 03/27/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - basic_regex class
 ms.assetid: 8a18c6b4-f22a-4cfd-bc16-b4267867ebc3
-ms.openlocfilehash: 4348941e065680a54f9bd0c9f5b7ab2ff1af5e56
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 450f3945faeb088c975bb1657d69496bcf078ccd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219224"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325628"
 ---
 # <a name="basic_regex-class"></a>basic_regex 클래스
 
@@ -40,7 +41,7 @@ class basic_regex
 
 일부 함수는 정규식을 정의하는 피연산자 시퀀스를 사용합니다. 그러한 피연산자 시퀀스를 여러 방법으로 지정할 수 있습니다.
 
-`ptr`--(null 포인터는 안 됨)에서 시작 하는 null로 끝나는 시퀀스 (예: *Elem* 형식의 경우 C 문자열)입니다. **`char`** `ptr` 여기서 종료 요소는 값 `value_type()` 이며 피연산자 시퀀스의 일부가 아닙니다.
+`ptr` --(null 포인터는 안 됨)에서 시작 하는 null로 끝나는 시퀀스 (예: *Elem* 형식의 경우 C 문자열)입니다. **`char`** `ptr` 여기서 종료 요소는 값 `value_type()` 이며 피연산자 시퀀스의 일부가 아닙니다.
 
 `ptr`, `count` -- `count`(null 포인터는 안 됨)에서 시작하는 `ptr` 요소의 시퀀스
 
@@ -70,7 +71,7 @@ class basic_regex
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[basic_regex](#basic_regex)|Regular Expression 개체를 생성합니다.|
 
@@ -196,7 +197,7 @@ getloc == imbued == true
 match("abc") == true
 ```
 
-## <a name="basic_regexassign"></a><a name="assign"></a>basic_regex:: assign
+## <a name="basic_regexassign"></a><a name="assign"></a> basic_regex:: assign
 
 정규식 개체에 값을 할당합니다.
 
@@ -267,7 +268,7 @@ basic_regex& assign(
 
 각 멤버 함수는에 보유 된 정규식을 **`*this`** 피연산자 시퀀스에 설명 된 정규식으로 대체 한 다음을 반환 **`*this`** 합니다.
 
-## <a name="basic_regexbasic_regex"></a><a name="basic_regex"></a>basic_regex:: basic_regex
+## <a name="basic_regexbasic_regex"></a><a name="basic_regex"></a> basic_regex:: basic_regex
 
 Regular Expression 개체를 생성합니다.
 
@@ -345,7 +346,7 @@ explicit basic_regex(
 
 빈 `basic_regex` 개체는 [regex_match](../standard-library/regex-functions.md#regex_match), [regex_search](../standard-library/regex-functions.md#regex_search)또는 [regex_replace](../standard-library/regex-functions.md#regex_replace)에 전달 될 때 문자 시퀀스와 일치 하지 않습니다.
 
-## <a name="basic_regexflag_type"></a><a name="flag_type"></a>basic_regex:: flag_type
+## <a name="basic_regexflag_type"></a><a name="flag_type"></a> basic_regex:: flag_type
 
 구문 옵션 플래그의 형식입니다.
 
@@ -357,7 +358,7 @@ typedef regex_constants::syntax_option_type flag_type;
 
 이 형식은 [regex_constants::syntax_option_type](../standard-library/regex-constants-class.md#syntax_option_type)의 동의어입니다.
 
-## <a name="basic_regexflags"></a><a name="flags"></a>basic_regex:: flags
+## <a name="basic_regexflags"></a><a name="flags"></a> basic_regex:: flags
 
 구문 옵션 플래그를 반환합니다.
 
@@ -369,7 +370,7 @@ flag_type flags() const;
 
 멤버 함수는 [basic_regex::assign](#assign) 멤버 함수 중 하나에 대한 최근 호출에 전달된 `flag_type` 인수의 값을 반환하거나, 이러한 호출이 수행되지 않은 경우 생성자에 전달된 값을 반환합니다.
 
-## <a name="basic_regexgetloc"></a><a name="getloc"></a>basic_regex:: getloc
+## <a name="basic_regexgetloc"></a><a name="getloc"></a> basic_regex:: getloc
 
 저장된 로캘 개체를 반환합니다.
 
@@ -381,7 +382,7 @@ locale_type getloc() const;
 
 멤버 함수는 `traits.` [regex_traits:: getloc](../standard-library/regex-traits-class.md#getloc)를 반환 합니다 `()` .
 
-## <a name="basic_regeximbue"></a><a name="imbue"></a>basic_regex:: imbue
+## <a name="basic_regeximbue"></a><a name="imbue"></a> basic_regex:: imbue
 
 저장된 로캘 개체를 변경합니다.
 
@@ -398,7 +399,7 @@ locale_type imbue(locale_type loc);
 
 멤버 함수는 **`*this`** 를 비우고 `traits.` [regex_traits:: imbue](../standard-library/regex-traits-class.md#imbue)를 반환 합니다 `(loc)` .
 
-## <a name="basic_regexlocale_type"></a><a name="locale_type"></a>basic_regex:: locale_type
+## <a name="basic_regexlocale_type"></a><a name="locale_type"></a> basic_regex:: locale_type
 
 저장된 로캘 개체의 형식입니다.
 
@@ -410,7 +411,7 @@ typedef typename RXtraits::locale_type locale_type;
 
 이 형식은 [regex_traits::locale_type](../standard-library/regex-traits-class.md#locale_type)의 동의어입니다.
 
-## <a name="basic_regexmark_count"></a><a name="mark_count"></a>basic_regex:: mark_count
+## <a name="basic_regexmark_count"></a><a name="mark_count"></a> basic_regex:: mark_count
 
 일치하는 하위 식의 수를 반환합니다.
 
@@ -422,7 +423,7 @@ unsigned mark_count() const;
 
 멤버 함수는 정규식의 캡처 그룹 수를 반환합니다.
 
-## <a name="basic_regexoperator"></a><a name="op_eq"></a>basic_regex:: operator =
+## <a name="basic_regexoperator"></a><a name="op_eq"></a> basic_regex:: operator =
 
 정규식 개체에 값을 할당합니다.
 
@@ -453,7 +454,7 @@ basic_regex& operator=(const basic_string<Elem, STtraits, STalloc>& str);
 
 각 연산자는에 보유 된 정규식을 **`*this`** 피연산자 시퀀스에 설명 된 정규식으로 대체 한 다음을 반환 **`*this`** 합니다.
 
-## <a name="basic_regexswap"></a><a name="swap"></a>basic_regex:: swap
+## <a name="basic_regexswap"></a><a name="swap"></a> basic_regex:: swap
 
 두 정규식 개체를 바꿉니다.
 
@@ -468,9 +469,9 @@ void swap(basic_regex& right) throw();
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 정규식을 **`*this`** 와 *오른쪽*으로 바꿉니다. 일정한 시간에 이 작업을 수행하고 예외를 throw하지 않습니다.
+멤버 함수는 정규식을 **`*this`** 와 *오른쪽* 으로 바꿉니다. 일정한 시간에 이 작업을 수행하고 예외를 throw하지 않습니다.
 
-## <a name="basic_regexvalue_type"></a><a name="value_type"></a>basic_regex:: value_type
+## <a name="basic_regexvalue_type"></a><a name="value_type"></a> basic_regex:: value_type
 
 요소 형식입니다.
 
@@ -480,7 +481,7 @@ typedef Elem value_type;
 
 ### <a name="remarks"></a>설명
 
-이 형식은 템플릿 매개 변수 *Elem*의 동의어입니다.
+이 형식은 템플릿 매개 변수 *Elem* 의 동의어입니다.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3350'
 title: 컴파일러 오류 C3350
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3350
 ms.assetid: cfbbc338-92b5-4f34-999e-aa2d2376bc70
-ms.openlocfilehash: 39d4b4c1cef0febe8845db3e74799b2d240dbdb3
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: edda71fdf8f1160d17099a7cee228a053ddd881b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74736960"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326016"
 ---
 # <a name="compiler-error-c3350"></a>컴파일러 오류 C3350
 

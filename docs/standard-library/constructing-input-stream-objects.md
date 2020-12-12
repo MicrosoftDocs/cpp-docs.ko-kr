@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 입력 스트림 개체 생성'
 title: 입력 스트림 개체 생성
 ms.date: 11/04/2016
 helpviewer_keywords:
 - input stream objects
 ms.assetid: ab94866e-6ffe-4f15-b4db-0bd23e636075
-ms.openlocfilehash: f281741979680fc03d3f96d2dbfbac6e1feefdea
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2ee1e0bb310c608b53a79afd101aaeafb3cb6645
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228312"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324921"
 ---
 # <a name="constructing-input-stream-objects"></a>입력 스트림 개체 생성
 

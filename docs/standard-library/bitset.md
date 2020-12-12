@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: &lt; bitset&gt;'
 title: '&lt;bitset&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - <bitset> header
 - bitset header
 ms.assetid: af30a9b9-489e-46e3-9d29-5f3ea07ae6dc
-ms.openlocfilehash: 55b34e7c042a12ad4b125a3263d1a9242456cb91
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 0638615a4d87cdc30eec7278ac217e9a2da49ea6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846500"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325440"
 ---
 # <a name="ltbitsetgt"></a>&lt;bitset&gt;
 

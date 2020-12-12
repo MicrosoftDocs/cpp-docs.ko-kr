@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 방법: 취소를 사용 하 여 동시성 런타임 사용 하는 OpenMP 루프 변환'
 title: '방법: 동시성 런타임을 사용하기 위해 취소를 사용하는 OpenMP 루프 변환'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - converting from OpenMP to the Concurrency Runtime, cancellation
 - cancellation, converting from OpenMP to the Concurrency Runtime
 ms.assetid: 4b0b3c33-bfa9-4e96-ae08-aef245a39cbb
-ms.openlocfilehash: adde6decc086b883c50e52d12e388197e185fb39
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: d64ba8bc3910181f9ce9ddb3844f778cdfe464d2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91505947"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325747"
 ---
 # <a name="how-to-convert-an-openmp-loop-that-uses-cancellation-to-use-the-concurrency-runtime"></a>방법: 동시성 런타임을 사용하기 위해 취소를 사용하는 OpenMP 루프 변환
 

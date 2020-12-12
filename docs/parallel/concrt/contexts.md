@@ -1,19 +1,20 @@
 ---
+description: '자세한 정보: 컨텍스트'
 title: 컨텍스트
 ms.date: 11/04/2016
 helpviewer_keywords:
 - contexts [Concurrency Runtime]
 ms.assetid: 10c1d861-8fbb-4ba0-b2ec-61876b11176e
-ms.openlocfilehash: 7df75ae7c1ac2b1d8c0b73ff1f1e3f2800d559b9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 70c97b74afaaa755a85532c7bc08a3a5c5fe3e17
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87194877"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325773"
 ---
 # <a name="contexts"></a>컨텍스트
 
-이 문서에서는 동시성 런타임 컨텍스트의 역할에 대해 설명 합니다. 스케줄러에 연결 된 스레드를 *실행 컨텍스트나* *컨텍스트*라고 합니다. [Concurrency:: wait](reference/concurrency-namespace-functions.md#wait) 함수와 concurrency::[Context 클래스](../../parallel/concrt/reference/context-class.md) 를 사용 하면 컨텍스트의 동작을 제어할 수 있습니다. 함수를 사용 `wait` 하 여 지정 된 시간 동안 현재 컨텍스트를 일시 중단 합니다. `Context`컨텍스트가 차단, 차단 해제 및 양보 될 때 또는 현재 컨텍스트를 oversubscribe 할 때 더 많은 제어가 필요한 경우 클래스를 사용 합니다.
+이 문서에서는 동시성 런타임 컨텍스트의 역할에 대해 설명 합니다. 스케줄러에 연결 된 스레드를 *실행 컨텍스트나* *컨텍스트* 라고 합니다. [Concurrency:: wait](reference/concurrency-namespace-functions.md#wait) 함수와 concurrency::[Context 클래스](../../parallel/concrt/reference/context-class.md) 를 사용 하면 컨텍스트의 동작을 제어할 수 있습니다. 함수를 사용 `wait` 하 여 지정 된 시간 동안 현재 컨텍스트를 일시 중단 합니다. `Context`컨텍스트가 차단, 차단 해제 및 양보 될 때 또는 현재 컨텍스트를 oversubscribe 할 때 더 많은 제어가 필요한 경우 클래스를 사용 합니다.
 
 > [!TIP]
 > 동시성 런타임은 기본 스케줄러를 제공하므로 애플리케이션에서 스케줄러를 만들 필요가 없습니다. 작업 스케줄러는 응용 프로그램의 성능을 미세 조정 하는 데 도움이 되므로 동시성 런타임를 처음 접하는 경우 [PPL (병렬 패턴 라이브러리)](../../parallel/concrt/parallel-patterns-library-ppl.md) 또는 [비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md) 를 사용 하는 것이 좋습니다.
@@ -40,7 +41,7 @@ Concurrency::[context 클래스](../../parallel/concrt/reference/context-class.m
 
 컨텍스트를 협조적으로 차단 및 차단 해제 하기 위해 일반적으로 [concurrency:: context:: CurrentContext](reference/context-class.md#currentcontext) 를 호출 하 여 현재 스레드와 연결 된 개체에 대 한 포인터를 검색 하 `Context` 고 그 결과를 저장 합니다. 그런 다음 메서드를 호출 `Context::Block` 하 여 현재 컨텍스트를 차단 합니다. 나중에 `Context::Unblock` 개별 컨텍스트에서를 호출 하 여 차단 된 컨텍스트의 차단을 해제 합니다.
 
-및에 대 한 각 호출 쌍을 일치 시켜야 합니다 `Context::Block` `Context::Unblock` . 런타임에서는 [concurrency::context_unblock_unbalanced](../../parallel/concrt/reference/context-unblock-unbalanced-class.md) `Context::Block` `Context::Unblock` 다른 메서드에 대 한 일치 하는 호출 없이 또는 메서드가 연속적으로 호출 될 때 concurrency:: context_unblock_unbalanced을 throw 합니다. 그러나를 호출 하기 전에를 호출할 필요가 없습니다 `Context::Block` `Context::Unblock` . 예를 들어 한 컨텍스트가 `Context::Unblock` 동일한 컨텍스트에 대해 다른 컨텍스트를 호출 하기 전에를 호출 하 `Context::Block` 는 경우 해당 컨텍스트는 차단 해제 된 상태로 유지 됩니다.
+및에 대 한 각 호출 쌍을 일치 시켜야 합니다 `Context::Block` `Context::Unblock` . 런타임에서는 [](../../parallel/concrt/reference/context-unblock-unbalanced-class.md) `Context::Block` `Context::Unblock` 다른 메서드에 대 한 일치 하는 호출 없이 또는 메서드가 연속적으로 호출 될 때 concurrency:: context_unblock_unbalanced을 throw 합니다. 그러나를 호출 하기 전에를 호출할 필요가 없습니다 `Context::Block` `Context::Unblock` . 예를 들어 한 컨텍스트가 `Context::Unblock` 동일한 컨텍스트에 대해 다른 컨텍스트를 호출 하기 전에를 호출 하 `Context::Block` 는 경우 해당 컨텍스트는 차단 해제 된 상태로 유지 됩니다.
 
 [Concurrency:: Context:: Yield](reference/context-class.md#yield) 메서드는 런타임이 다른 작업을 수행한 다음 실행을 위해 컨텍스트를 다시 예약할 수 있도록 실행을 생성 합니다. 메서드를 호출 하면 `Context::Block` 런타임에서 컨텍스트를 다시 예약 하지 않습니다.
 
@@ -70,7 +71,7 @@ Concurrency::[context 클래스](../../parallel/concrt/reference/context-class.m
 
 ## <a name="see-also"></a>참고 항목
 
-[작업 스케줄러](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
+[작업 Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 [방법: 일정 그룹을 사용 하 여 실행 순서에 영향을 줍니다.](../../parallel/concrt/how-to-use-schedule-groups-to-influence-order-of-execution.md)<br/>
 [방법: 컨텍스트 클래스를 사용 하 여 협조적 세마포 구현](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md)<br/>
 [방법: 초과 구독을 사용 하 여 대기 시간 오프셋](../../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md)

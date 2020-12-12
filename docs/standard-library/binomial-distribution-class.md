@@ -1,4 +1,5 @@
 ---
+description: Binomial_distribution 클래스에 대해 자세히 알아보세요.
 title: binomial_distribution 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - std::binomial_distribution [C++], param_type
 - std::binomial_distribution [C++], param_type
 ms.assetid: b7c8a26a-da8c-45a5-a3a8-208f7a3609ce
-ms.openlocfilehash: 3054a29bd1bc82861461851d4403a7095ac1fcbd
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 2cdb55fe312cd19c944ee6279286fe48e515b8a4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846513"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325480"
 ---
 # <a name="binomial_distribution-class"></a>binomial_distribution 클래스
 
@@ -253,9 +254,9 @@ explicit binomial_distribution(const param_type& parm);
 
 **사전 조건:** `0 ≤ t` 및 `0.0 ≤ p ≤ 1.0`
 
-첫 번째 생성자는 저장 된 *p* 값이 *p* 값을 보유 하 고 저장 된 *t* 값이 *t*값을 보유 하 고 있는 개체를 생성 합니다.
+첫 번째 생성자는 저장 된 *p* 값이 *p* 값을 보유 하 고 저장 된 *t* 값이 *t* 값을 보유 하 고 있는 개체를 생성 합니다.
 
-두 번째 생성자는 저장된 매개 변수가 *parm*에서 초기화되는 개체를 생성합니다. `param()` 멤버 함수를 호출하여 기존 분포의 현재 매개 변수를 가져와 설정할 수 있습니다.
+두 번째 생성자는 저장된 매개 변수가 *parm* 에서 초기화되는 개체를 생성합니다. `param()` 멤버 함수를 호출하여 기존 분포의 현재 매개 변수를 가져와 설정할 수 있습니다.
 
 ## <a name="binomial_distributionparam_type"></a><a name="param_type"></a> binomial_distribution::p aram_type
 
