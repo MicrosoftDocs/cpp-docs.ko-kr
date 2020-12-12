@@ -1,4 +1,5 @@
 ---
+description: Allocator_suballoc 클래스에 대해 자세히 알아보세요.
 title: allocator_suballoc 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - allocator_suballoc class
 ms.assetid: 50c6a5c0-d00d-4276-9285-d908fd4f6483
-ms.openlocfilehash: 47b82a198a52a61bd5558bd59a38b1d328fa67b2
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 7e542b4b8f419f1ac219c63b113aced7e0bd7cda
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562586"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163589"
 ---
 # <a name="allocator_suballoc-class"></a>allocator_suballoc 클래스
 

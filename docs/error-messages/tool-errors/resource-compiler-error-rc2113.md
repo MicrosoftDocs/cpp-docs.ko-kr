@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 리소스 컴파일러 오류 RC2113'
 title: 리소스 컴파일러 오류 RC2113
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - RC2113
 ms.assetid: cbf52e93-ab14-49b7-9ce8-fb55877602ec
-ms.openlocfilehash: ba286ce9c8ee3663d978b09b6158a6954efdf742
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 0e810640ef05770434a38c26cf701777e3099a7a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80191797"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97133707"
 ---
 # <a name="resource-compiler-error-rc2113"></a>리소스 컴파일러 오류 RC2113
 

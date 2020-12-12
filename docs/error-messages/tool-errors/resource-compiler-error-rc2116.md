@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 리소스 컴파일러 오류 RC2116'
 title: 리소스 컴파일러 오류 RC2116
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,15 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - RC2116
 ms.assetid: d9203ddf-798d-490b-be41-0dd3f7d53653
-ms.openlocfilehash: 3fae25b7232425128c51625ca09319cc84064f50
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 9d2c44aafd96c70dc4d0f1870ed0a577dce0bcf8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80191420"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97133616"
 ---
 # <a name="resource-compiler-error-rc2116"></a>리소스 컴파일러 오류 RC2116
 
 ID에 숫자가 필요 합니다.
 
-**DIALOG** 문에서 control 문의 `id` 필드에는 숫자가 필요 합니다. 컨트롤 ID에 대해 숫자나 `#define` 문이 있는지 확인 합니다.
+`id` **DIALOG** 문의 control 문 필드에는 숫자가 필요 합니다. `#define`컨트롤 ID에 대해 숫자나 문이 있는지 확인 합니다.

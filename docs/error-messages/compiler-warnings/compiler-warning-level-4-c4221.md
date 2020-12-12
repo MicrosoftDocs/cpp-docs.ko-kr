@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4221'
 title: 컴파일러 경고(수준 4) C4221
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4221
 ms.assetid: 8532bd68-54dc-4526-8597-f61dcb0a0129
-ms.openlocfilehash: e925f315e8506453403b0a0eda75b7c2956cc05c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4632b075dfb6a7c1895415a253c70f5b4fd4f278
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219939"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97164278"
 ---
 # <a name="compiler-warning-level-4-c4221"></a>컴파일러 경고(수준 4) C4221
 
 비표준 확장이 사용 됨: ' identifier ': 자동 변수의 주소를 사용 하 여 초기화할 수 없습니다.
 
-기본 Microsoft 확장 (/Ze)을 사용 하면**array** **`struct`** **`union`** 로컬 (자동) 변수의 주소를 사용 하 여 집계 형식 (배열, 또는)을 초기화할 수 있습니다.
+기본 Microsoft 확장 (/Ze)을 사용 하면 **`struct`** **`union`** 로컬 (자동) 변수의 주소를 사용 하 여 집계 형식 (배열, 또는)을 초기화할 수 있습니다.
 
 ## <a name="example"></a>예제
 

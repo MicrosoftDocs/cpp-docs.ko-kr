@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: ATL 유틸리티 참조'
 title: ATL 유틸리티 참조
 ms.date: 11/04/2016
 ms.assetid: dd8a2888-34f4-461e-9bf4-834218f9b95b
-ms.openlocfilehash: f9e59a2c67d391995d94d77f526613534acb48de
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 8545881c5cd48aaff1bb25448ba443829128dc41
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831877"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97148579"
 ---
 # <a name="atl-utilities-reference"></a>ATL 유틸리티 참조
 
@@ -40,7 +41,7 @@ ATL은 [Cpatht](../atl/reference/cpatht-class.md) 및 [말아](../atl/reference/
 |--|--|
 | [ATL_URL_SCHEME](../atl/reference/atl-url-scheme-enum.md) | 이 열거형의 멤버는 [말아](../atl/reference/curl-class.md)가 이해 하는 체계에 대 한 상수를 제공 합니다. |
 
-## <a name="functions"></a>Functions
+## <a name="functions"></a>함수
 
 | &emsp; | &emsp; |
 |--|--|

@@ -1,4 +1,5 @@
-﻿---
+---
+description: '자세한 정보: &lt; 알고리즘 &gt; 함수'
 title: '&lt;algorithm&gt; 함수'
 ms.date: 11/04/2016
 f1_keywords:
@@ -200,16 +201,16 @@ helpviewer_keywords:
 - std::count_if [C++]
 - std::partition_copy [C++]
 - std::swap [C++]
-ms.openlocfilehash: 5b83306d34c5e881e679ac4b6f0d7b9c249035cd
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: dd008215a737313ec8600fa64ac64aa9339b5334
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87205576"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163810"
 ---
 # <a name="ltalgorithmgt-functions"></a>&lt;algorithm&gt; 함수
 
-## <a name="adjacent_find"></a><a name="adjacent_find"></a>adjacent_find
+## <a name="adjacent_find"></a><a name="adjacent_find"></a> adjacent_find
 
 같지 않거나 지정한 조건을 충족하는 인접 요소 두 개를 검색합니다.
 
@@ -327,7 +328,7 @@ There are two adjacent elements where the second is twice the first.
 They have values of 10 & 20.
 ```
 
-## <a name="all_of"></a><a name="all_of"></a>all_of
+## <a name="all_of"></a><a name="all_of"></a> all_of
 
 **`true`** 지정 된 범위의 각 요소에 조건이 있는 경우를 반환 합니다.
 
@@ -403,7 +404,7 @@ li = ( 50 40 10 20 20 )
 All the elements are even numbers.
 ```
 
-## <a name="any_of"></a><a name="any_of"></a>any_of
+## <a name="any_of"></a><a name="any_of"></a> any_of
 
 **`true`** 지정 된 요소 범위에서 조건이 한 번 이상 있는 경우를 반환 합니다.
 
@@ -480,7 +481,7 @@ li = ( 51 41 11 21 20 )
 There's an even element in li.
 ```
 
-## <a name="binary_search"></a><a name="binary_search"></a>binary_search
+## <a name="binary_search"></a><a name="binary_search"></a> binary_search
 
 정렬된 범위에 지정된 값과 같거나 이진 조건자가 지정한 의미에 따라 지정된 값과 같은 요소가 있는지 여부를 테스트합니다.
 
@@ -619,7 +620,7 @@ Ordered using mod_lesser, vector v1 = ( 0 -1 1 -2 2 3 4 )
 There is an element with a value equivalent to -3 under mod_lesser.
 ```
 
-## <a name="clamp"></a><a name="clamp"></a>클램프
+## <a name="clamp"></a><a name="clamp"></a> 클램프
 
 값을 상한 및 하 한과 비교 하 고, 범위 사이에 있는 경우 값에 대 한 참조를 반환 하 고, 값이 각각 위나 아래에 있는 경우에는 상한 또는 하 한에 대 한 참조를 반환 합니다.
 
@@ -641,7 +642,7 @@ constexpr const Type& clamp(
 ### <a name="parameters"></a>매개 변수
 
 *기본값*\
-*위와* *아래*와 비교할 값입니다.
+*위와* *아래* 와 비교할 값입니다.
 
 *작을*\
 클램프 *값* 에 대 한 값의 하 한입니다.
@@ -650,17 +651,17 @@ constexpr const Type& clamp(
 클램프 *값* 에 대 한 값의 상한입니다.
 
 *pred*\
-*값* 을 *lower* 또는 *upper*로 비교 하는 데 사용 되는 조건자입니다. 비교 조건자는 두 개의 인수를 사용 하 고 **`true`** 첫 번째 값이 두 번째 보다 작은 경우에는를 반환 하 고 그렇지 않으면를 반환 **`false`** 합니다.
+*값* 을 *lower* 또는 *upper* 로 비교 하는 데 사용 되는 조건자입니다. 비교 조건자는 두 개의 인수를 사용 하 고 **`true`** 첫 번째 값이 두 번째 보다 작은 경우에는를 반환 하 고 그렇지 않으면를 반환 **`false`** 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-인 *경우에* 는에 대 한 참조를 반환 하 `value < lower` 고, 경우에는 *상한을* 반환 `upper < value` 합니다. 그렇지 않으면 *값*에 대 한 참조를 반환 합니다.
+인 *경우에* 는에 대 한 참조를 반환 하 `value < lower` 고, 경우에는 *상한을* 반환 `upper < value` 합니다. 그렇지 않으면 *값* 에 대 한 참조를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-*Upper* 가 *lower*보다 작으면 동작이 정의 되지 않습니다.
+*Upper* 가 *lower* 보다 작으면 동작이 정의 되지 않습니다.
 
-## <a name="copy"></a><a name="copy"></a>복사
+## <a name="copy"></a><a name="copy"></a> 복사
 
 소스 범위의 요소를 대상 범위에 할당하여 요소의 소스 시퀀스 전체에서 반복하고 정방향으로 새 위치를 할당합니다.
 
@@ -701,7 +702,7 @@ ForwardIterator2 copy(
 
 소스 범위는 유효해야 하며 대상에서 복사할 모든 요소를 보관할 충분한 공간이 있어야 합니다.
 
-알고리즘은 첫 번째 요소부터 시작 하 여 소스 요소를 복사 하기 때문에 소스 범위의 *마지막* 위치가 대상 범위에 포함 되지 않은 경우 대상 범위가 소스 범위와 겹칠 수 있습니다. `copy`는 소스 범위와 대상 범위가 겹치지 않는 경우 오른쪽이 아닌 왼쪽으로 요소를 이동 하는 데 사용할 수 있습니다. 여러 위치를 오른쪽으로 이동하려면 [copy_backward](algorithm-functions.md#copy_backward) 알고리즘을 사용합니다.
+알고리즘은 첫 번째 요소부터 시작 하 여 소스 요소를 복사 하기 때문에 소스 범위의 *마지막* 위치가 대상 범위에 포함 되지 않은 경우 대상 범위가 소스 범위와 겹칠 수 있습니다. `copy` 는 소스 범위와 대상 범위가 겹치지 않는 경우 오른쪽이 아닌 왼쪽으로 요소를 이동 하는 데 사용할 수 있습니다. 여러 위치를 오른쪽으로 이동하려면 [copy_backward](algorithm-functions.md#copy_backward) 알고리즘을 사용합니다.
 
 이 `copy` 알고리즘은 반복기가 가리키는 값만 수정하며 대상 범위에 있는 요소에 새로운 값을 할당합니다. 새 요소를 만드는 데 사용할 수 없고 빈 컨테이너에 요소를 직접 삽입할 수 없습니다.
 
@@ -763,7 +764,7 @@ v2 with v1 insert = ( 0 3 6 9 0 10 20 21 24 27 30 )
 v2 with shifted insert = ( 0 3 0 10 20 10 20 21 24 27 30 )
 ```
 
-## <a name="copy_backward"></a><a name="copy_backward"></a>copy_backward
+## <a name="copy_backward"></a><a name="copy_backward"></a> copy_backward
 
 소스 범위의 요소를 대상 범위에 할당하여 요소의 소스 시퀀스 전체에서 반복하고 역방향으로 새 위치를 할당합니다.
 
@@ -860,7 +861,7 @@ v2 with v1 insert = ( 0 3 6 9 0 10 20 21 24 27 30 )
 v2 with shifted insert = ( 0 3 6 9 0 10 0 10 20 27 30 )
 ```
 
-## <a name="copy_if"></a><a name="copy_if"></a>copy_if
+## <a name="copy_if"></a><a name="copy_if"></a> copy_if
 
 요소의 범위에서 **`true`** 지정 된 조건에 대 한 요소를 복사 합니다.
 
@@ -965,7 +966,7 @@ Even numbers are le = ( 46 88 72 60 40 84 )
 Odd numbers are lo = ( 59 79 71 5 )
 ```
 
-## <a name="copy_n"></a><a name="copy_n"></a>copy_n
+## <a name="copy_n"></a><a name="copy_n"></a> copy_n
 
 지정된 수의 요소를 복사합니다.
 
@@ -1035,7 +1036,7 @@ int main()
 dandelion + badger = danger
 ```
 
-## <a name="count"></a><a name="count"></a>수
+## <a name="count"></a><a name="count"></a> 수
 
 해당 값이 지정된 값과 일치하는 요소의 개수를 반환합니다.
 
@@ -1116,7 +1117,7 @@ v1 = ( 10 20 10 40 10 )
 The number of 10s in v2 is: 3.
 ```
 
-## <a name="count_if"></a><a name="count_if"></a>count_if
+## <a name="count_if"></a><a name="count_if"></a> count_if
 
 범위 내에서 해당 값이 지정된 조건과 일치하는 요소의 개수를 반환합니다.
 
@@ -1201,7 +1202,7 @@ v1 = ( 10 20 10 40 10 )
 The number of elements in v1 greater than 10 is: 2.
 ```
 
-## <a name="equal"></a><a name="equal"></a>다릅니다
+## <a name="equal"></a><a name="equal"></a> 다릅니다
 
 두 범위를 요소별로 비교하여 같음 여부 또는 이진 조건자가 지정한 의미의 동등성을 확인합니다.
 
@@ -1336,7 +1337,7 @@ int main()
 }
 ```
 
-## <a name="equal_range"></a><a name="equal_range"></a>equal_range
+## <a name="equal_range"></a><a name="equal_range"></a> equal_range
 
 정렬된 범위가 지정되면, 모든 요소가 지정된 값에 해당하는 하위 범위를 찾습니다.
 
@@ -1373,7 +1374,7 @@ pair<ForwardIterator, ForwardIterator> equal_range(
 
 검색 된 범위 내에 포함 된 하위 범위를 지정 하는 전방 반복기 쌍으로, 모든 요소가 사용 되는 이진 조건자 ( *pred* 또는 기본값, 보다 작음)로 정의 된 sense의 *값* 과 동일 합니다.
 
-*값*에 해당 하는 요소가 없는 경우 반환 된 쌍의 전방 반복기는 동일 하 고 범위의 순서를 방해 하지 않고 *값* 을 삽입할 수 있는 지점을 지정 합니다.
+*값* 에 해당 하는 요소가 없는 경우 반환 된 쌍의 전방 반복기는 동일 하 고 범위의 순서를 방해 하지 않고 *값* 을 삽입할 수 있는 지점을 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1502,7 +1503,7 @@ int main()
 }
 ```
 
-## <a name="fill"></a><a name="fill"></a>칠할
+## <a name="fill"></a><a name="fill"></a> 칠할
 
 지정한 범위의 모든 요소에 동일한 새 값을 할당합니다.
 
@@ -1580,7 +1581,7 @@ Vector v1 = ( 0 5 10 15 20 25 30 35 40 45 )
 Modified v1 = ( 0 5 10 15 20 2 2 2 2 2 )
 ```
 
-## <a name="fill_n"></a><a name="fill_n"></a>fill_n
+## <a name="fill_n"></a><a name="fill_n"></a> fill_n
 
 특정 요소로 시작하는 범위에서 지정된 개수의 요소에 새 값을 할당합니다.
 
@@ -1605,7 +1606,7 @@ ForwardIterator fill_n(
 사용할 실행 정책입니다.
 
 *기본*\
-값 *값*을 할당할 범위 내 첫 번째 요소 위치의 주소를 지정 하는 출력 반복기입니다.
+값 *값* 을 할당할 범위 내 첫 번째 요소 위치의 주소를 지정 하는 출력 반복기입니다.
 
 *수*\
 값을 할당할 요소의 수를 지정하는 부호 있는/부호 없는 정수 형식입니다.
@@ -1669,7 +1670,7 @@ int main()
 }
 ```
 
-## <a name="find"></a><a name="find"></a>찾아낼
+## <a name="find"></a><a name="find"></a> 찾아낼
 
 범위에서 지정된 값을 가진 요소가 첫 번째로 나타나는 위치를 찾습니다.
 
@@ -1704,7 +1705,7 @@ ForwardIterator find(
 
 ### <a name="return-value"></a>반환 값
 
-검색 중인 범위 내에서 지정된 값이 처음 나타나는 위치의 주소를 지정하는 입력 반복기입니다. 동일한 값의 요소가 없는 경우는 *last*를 반환 합니다.
+검색 중인 범위 내에서 지정된 값이 처음 나타나는 위치의 주소를 지정하는 입력 반복기입니다. 동일한 값의 요소가 없는 경우는 *last* 를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1712,7 +1713,7 @@ ForwardIterator find(
 
 `find()`를 사용하는 코드 예제를 보려면 [find_if](algorithm-functions.md#find_if)를 참조하세요.
 
-## <a name="find_end"></a><a name="find_end"></a>find_end
+## <a name="find_end"></a><a name="find_end"></a> find_end
 
 범위에서 지정된 시퀀스와 동일하거나 이진 조건자가 지정한 의미와 동일한 마지막 하위 시퀀스를 찾습니다.
 
@@ -1876,7 +1877,7 @@ There is a sequence of elements in v1 that are equivalent to those
 in v2 under the binary predicate twice and that begins at position 8.
 ```
 
-## <a name="find_first_of"></a><a name="find_first_of"></a>find_first_of
+## <a name="find_first_of"></a><a name="find_first_of"></a> find_first_of
 
 대상 범위 내에서 여러 값이 첫 번째로 나타나는 경우 또는 이진 조건자가 지정한 의미에서 지정된 요소 집합과 동일한 여러 요소가 첫 번째로 나타나는 경우를 검색합니다.
 
@@ -2043,7 +2044,7 @@ to those in v2 under the binary predicate twice
 and the first one begins at position 2.
 ```
 
-## <a name="find_if"></a><a name="find_if"></a>find_if
+## <a name="find_if"></a><a name="find_if"></a> find_if
 
 범위에서 지정된 조건을 만족하는 요소가 첫 번째 나타나는 위치를 찾습니다.
 
@@ -2074,7 +2075,7 @@ ForwardIterator find_if(
 
 ### <a name="return-value"></a>반환 값
 
-조건자로 지정 된 조건을 충족 하는 범위 내 첫 번째 요소를 참조 하는 입력 반복기입니다 (조건자 결과 **`true`** ). 조건자를 충족 하는 요소가 없는 경우는 *last*를 반환 합니다.
+조건자로 지정 된 조건을 충족 하는 범위 내 첫 번째 요소를 참조 하는 입력 반복기입니다 (조건자 결과 **`true`** ). 조건자를 충족 하는 요소가 없는 경우는 *last* 를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -2165,7 +2166,7 @@ int main()
 }
 ```
 
-## <a name="find_if_not"></a><a name="find_if_not"></a>find_if_not
+## <a name="find_if_not"></a><a name="find_if_not"></a> find_if_not
 
 표시된 범위에서 조건을 충족하지 않는 첫 번째 요소를 반환합니다.
 
@@ -2196,7 +2197,7 @@ ForwardIterator find_if_not(
 
 ### <a name="return-value"></a>반환 값
 
-조건자로 지정 된 조건을 충족 하지 않는 범위의 첫 번째 요소를 참조 하는 입력 반복기입니다 (조건자 결과 **`false`** ). 모든 요소가 조건자를 충족 하는 경우 (조건자가 **`true`** 모든 요소에 대해를 반환 하는 경우)는 *마지막*을 반환 합니다.
+조건자로 지정 된 조건을 충족 하지 않는 범위의 첫 번째 요소를 참조 하는 입력 반복기입니다 (조건자 결과 **`false`** ). 모든 요소가 조건자를 충족 하는 경우 (조건자가 **`true`** 모든 요소에 대해를 반환 하는 경우)는 *마지막* 을 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -2204,7 +2205,7 @@ ForwardIterator find_if_not(
 
 `find_if_not()`에 맞게 즉시 조정 가능한 코드 예제는 [find_if](algorithm-functions.md#find_if)를 참조하세요.
 
-## <a name="for_each"></a><a name="for_each"></a>for_each
+## <a name="for_each"></a><a name="for_each"></a> for_each
 
 범위 내에서 정방향으로 각 요소에 지정된 함수 개체를 적용하고 함수 개체를 반환합니다.
 
@@ -2359,7 +2360,7 @@ The average of the elements of v1 is:
 Average ( v1mod2 ) = 10.
 ```
 
-## <a name="for_each_n"></a><a name="for_each_n"></a>for_each_n
+## <a name="for_each_n"></a><a name="for_each_n"></a> for_each_n
 
 ```cpp
 template<class InputIterator, class Size, class Function>
@@ -2376,7 +2377,7 @@ ForwardIterator for_each_n(
     Function f);
 ```
 
-## <a name="generate"></a><a name="generate"></a>만드는
+## <a name="generate"></a><a name="generate"></a> 만드는
 
 범위에 있는 각 요소에 함수 개체에 의해 생성된 값을 할당합니다.
 
@@ -2456,7 +2457,7 @@ Vector v1 is ( 41 18467 6334 26500 19169 ).
 Deque deq1 is ( 15724 11478 29358 26962 24464 ).
 ```
 
-## <a name="generate_n"></a><a name="generate_n"></a>generate_n
+## <a name="generate_n"></a><a name="generate_n"></a> generate_n
 
 함수 개체에 의해 생성된 값을 범위 내 지정된 수의 요소에 할당하고 마지막에 할당된 값 하나 다음의 위치로 반환합니다.
 
@@ -2542,7 +2543,7 @@ int main()
 }
 ```
 
-## <a name="includes"></a><a name="includes"></a>내용이
+## <a name="includes"></a><a name="includes"></a> 내용이
 
 요소 간 순서 지정 또는 동등성 기준을 이진 조건자로 지정할 수 있을 경우 하나의 정렬된 범위가 두 번째 정렬된 범위에 포함된 모든 요소를 포함할 수 있는지 여부를 테스트합니다.
 
@@ -2767,7 +2768,7 @@ At least one of the elements in vector v2b is not contained in vector v2a.
 At least one of the elements in vector v3b is not contained under mod_lesser in vector v3a.
 ```
 
-## <a name="inplace_merge"></a><a name="inplace_merge"></a>inplace_merge
+## <a name="inplace_merge"></a><a name="inplace_merge"></a> inplace_merge
 
 두 연속 정렬 범위의 요소를 단일 정렬 범위로 결합합니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.
 
@@ -2824,7 +2825,7 @@ void inplace_merge(
 
 정렬된 연속 범위는 각각 `inplace_merge` 알고리즘에서 결합된 범위를 정렬하는 데 사용하는 것과 동일한 순서에 따라 알고리즘을 적용하기 위한 사전 조건으로 배열되어야 합니다. 각 범위 내 요소의 상대 순서가 유지되므로 작업이 안정적입니다. 두 소스 범위에 동일한 요소가 있는 경우, 결합된 범위에서 첫 번째 범위의 요소가 두 번째 소스 범위의 요소보다 앞에 옵니다.
 
-알고리즘은 임시 버퍼에 메모리를 할당하므로 복잡성은 사용 가능한 메모리에 따라 달라집니다. 충분 한 메모리를 사용할 수 있는 경우에는 비교 시 선형이 가장 좋습니다 `(last - first) - 1` . 보조 메모리를 사용할 수 없는 경우 가장 최악의 경우는이 고 `N log(N)` , 여기서 *N*은  =  *last*  -  *first*입니다.
+알고리즘은 임시 버퍼에 메모리를 할당하므로 복잡성은 사용 가능한 메모리에 따라 달라집니다. 충분 한 메모리를 사용할 수 있는 경우에는 비교 시 선형이 가장 좋습니다 `(last - first) - 1` . 보조 메모리를 사용할 수 없는 경우 가장 최악의 경우는이 고 `N log(N)` , 여기서 *N* 은  =  *last*  -  *first* 입니다.
 
 ### <a name="example"></a>예제
 
@@ -2937,7 +2938,7 @@ Merged inplace with binary predicate mod_lesser specified,
 vector v3mod = ( 0 0 1 -1 2 -2 3 -3 4 -4 5 -5 )
 ```
 
-## <a name="is_heap"></a><a name="is_heap"></a>is_heap
+## <a name="is_heap"></a><a name="is_heap"></a> is_heap
 
 **`true`** 지정 된 범위의 요소가 힙을 형성 하는 경우를 반환 합니다.
 
@@ -2993,7 +2994,7 @@ bool is_heap(
 
 `is_heap_until(first, last, pred) == last`.
 
-## <a name="is_heap_until"></a><a name="is_heap_until"></a>is_heap_until
+## <a name="is_heap_until"></a><a name="is_heap_until"></a> is_heap_until
 
 힙 정렬 조건을 충족 하지 않는 [,) 범위의 첫 번째 요소에 배치 된 반복기 `first` `last` 를 반환 하거나, 범위가 힙을 형성 하는 경우 *end* 를 반환 합니다.
 
@@ -3043,11 +3044,11 @@ RandomAccessIterator is_heap_until(
 
 ### <a name="remarks"></a>설명
 
-첫 번째 템플릿 함수는 `[first, last)`의 마지막 반복기 `next`를 반환합니다. 여기서 `[first, next)`는 `std::less<>` 함수 개체로 정렬되는 힙입니다. 거리가 `last - first` 2 보다 작은 경우 함수는 *last*를 반환 합니다.
+첫 번째 템플릿 함수는 `[first, last)`의 마지막 반복기 `next`를 반환합니다. 여기서 `[first, next)`는 `std::less<>` 함수 개체로 정렬되는 힙입니다. 거리가 `last - first` 2 보다 작은 경우 함수는 *last* 를 반환 합니다.
 
 두 번째 템플릿 함수는 힙 순서 조건 대신 조건자 *pred* 를 사용 한다는 점을 제외 하 고 첫 번째 템플릿 함수와 동일 하 게 동작 합니다 `std::less<>` .
 
-## <a name="is_partitioned"></a><a name="is_partitioned"></a>is_partitioned
+## <a name="is_partitioned"></a><a name="is_partitioned"></a> is_partitioned
 
 **`true`** 지정 된 범위에서 조건에 대해 테스트 하는 모든 요소가를 **`true`** 테스트 하는 요소 앞에 있는 경우를 반환 **`false`** 합니다.
 
@@ -3086,9 +3087,9 @@ bool is_partitioned(
 
 ### <a name="remarks"></a>설명
 
-의 모든 요소가 **`true`** `[first, last)` *pred*로 분할 된 경우에만 템플릿 함수가를 `X` `[first, last)` `pred (X)` 반환 `Y` 합니다 `pred (Y)` . 즉 **`false`** ,에 대 한 모든 요소가 인 경우에는의 모든 요소가 인 경우에만를 반환 합니다.
+의 모든 요소가 **`true`** `[first, last)` *pred* 로 분할 된 경우에만 템플릿 함수가를 `X` `[first, last)` `pred (X)` 반환 `Y` 합니다 `pred (Y)` . 즉 **`false`** ,에 대 한 모든 요소가 인 경우에는의 모든 요소가 인 경우에만를 반환 합니다.
 
-## <a name="is_permutation"></a><a name="is_permutation"></a>is_permutation
+## <a name="is_permutation"></a><a name="is_permutation"></a> is_permutation
 
 요소의 순서가 동일한지 여부에 관계없이 두 범위에 동일한 요소가 포함되어 있으면 true를 반환합니다. 두 번째 범위에 단일 반복기만 사용하는 오버로드는 두 번째 범위가 첫 번째 범위보다 긴 경우 차이를 감지하지 못하고 두 번째 범위가 첫 번째 범위보다 짧은 경우 정의되지 않은 동작이 발생하므로 C++14 코드에서 이중 범위 오버로드를 사용합니다.
 
@@ -3208,7 +3209,7 @@ int main()
 }
 ```
 
-## <a name="is_sorted"></a><a name="is_sorted"></a>is_sorted
+## <a name="is_sorted"></a><a name="is_sorted"></a> is_sorted
 
 **`true`** 지정 된 범위의 요소가 정렬 된 순서 대로 되어 있으면를 반환 합니다.
 
@@ -3258,7 +3259,7 @@ bool is_sorted(
 
 두 번째 템플릿 함수는 `is_sorted_until( first, last , pred ) == last`를 반환합니다. *Pred* predicate 함수는 주문 비교를 수행 합니다.
 
-## <a name="is_sorted_until"></a><a name="is_sorted_until"></a>is_sorted_until
+## <a name="is_sorted_until"></a><a name="is_sorted_until"></a> is_sorted_until
 
 지정된 범위에서 정렬된 순서에 있는 마지막 요소로 설정된 `ForwardIterator`를 반환합니다.
 
@@ -3306,15 +3307,15 @@ ForwardIterator is_sorted_until(
 
 ### <a name="return-value"></a>반환 값
 
-정렬된 순서에서 마지막 요소에 대해 설정된 `ForwardIterator`를 반환합니다. 정렬 된 시퀀스는 *처음*부터 시작 됩니다.
+정렬된 순서에서 마지막 요소에 대해 설정된 `ForwardIterator`를 반환합니다. 정렬 된 시퀀스는 *처음* 부터 시작 됩니다.
 
 ### <a name="remarks"></a>설명
 
-가 에 의해 정렬된 시퀀스가 되도록 첫 번째 템플릿 함수는 `[first, last]``[first, next)``operator<`에서 마지막 반복기 `next`를 반환합니다. `distance()`가 2 보다 작은 경우 함수는 *last*를 반환 합니다.
+가 에 의해 정렬된 시퀀스가 되도록 첫 번째 템플릿 함수는 `[first, last]``[first, next)``operator<`에서 마지막 반복기 `next`를 반환합니다. `distance()`가 2 보다 작은 경우 함수는 *last* 를 반환 합니다.
 
 `operator<(X, Y)`를 `pred(X, Y)`로 바꾸는 것을 제외하면 두 번째 템플릿 함수도 동일하게 동작합니다.
 
-## <a name="iter_swap"></a><a name="iter_swap"></a>iter_swap
+## <a name="iter_swap"></a><a name="iter_swap"></a> iter_swap
 
 지정된 반복기의 쌍이 참조하는 두 값을 교환합니다.
 
@@ -3333,7 +3334,7 @@ void iter_swap( ForwardIterator1 left, ForwardIterator2 right );
 
 ### <a name="remarks"></a>설명
 
-`swap`이전 버전과의 호환성을 위해 c + + 표준에 포함 된 **iter_swap**에 대 한 기본 설정으로 사용 해야 합니다. `Fit1`및가 `Fit2` 전방 반복기 이면는와 `iter_swap( Fit1, Fit2 )` 동일 `swap( *Fit1, *Fit2 )` 합니다.
+`swap` 이전 버전과의 호환성을 위해 c + + 표준에 포함 된 **iter_swap** 에 대 한 기본 설정으로 사용 해야 합니다. `Fit1`및가 `Fit2` 전방 반복기 이면는와 `iter_swap( Fit1, Fit2 )` 동일 `swap( *Fit1, *Fit2 )` 합니다.
 
 입력 정방향 반복기의 값 형식은 동일한 값을 가져야 합니다.
 
@@ -3470,7 +3471,7 @@ vector v1 is: v1 = ( 4 1 2 3 ).
 & deque deq2 is: deq2 = ( 0 5 ).
 ```
 
-## <a name="lexicographical_compare"></a><a name="lexicographical_compare"></a>lexicographical_compare
+## <a name="lexicographical_compare"></a><a name="lexicographical_compare"></a> lexicographical_compare
 
 두 시퀀스를 요소별로 비교하여 둘 중 작은 것을 결정합니다.
 
@@ -3637,7 +3638,7 @@ Vector v1 is lexicographically_less than L1.
 Vector v1 is not lexicographically_less than v2 under twice.
 ```
 
-## <a name="lower_bound"></a><a name="lower_bound"></a>lower_bound
+## <a name="lower_bound"></a><a name="lower_bound"></a> lower_bound
 
 정렬된 범위에서 지정된 값보다 크거나 같은 값을 갖는 첫 번째 요소의 위치를 찾습니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.
 
@@ -3776,7 +3777,7 @@ int main()
 }
 ```
 
-## <a name="make_heap"></a><a name="make_heap"></a>make_heap
+## <a name="make_heap"></a><a name="make_heap"></a> make_heap
 
 지정한 범위의 요소를 첫 번째 요소가 가장 큰 힙으로 변환합니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.
 
@@ -3858,7 +3859,7 @@ int main() {
 }
 ```
 
-## <a name="max"></a><a name="max"></a>최대값
+## <a name="max"></a><a name="max"></a> 최대값
 
 두 개체를 비교하고 둘 중 큰 개체를 반환합니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.
 
@@ -4071,7 +4072,7 @@ Vector v4 = max (v1,v2) is ( 0 1 2 ).
 Vector v5 = max (v1,v3) is ( 0 2 4 ).
 ```
 
-## <a name="max_element"></a><a name="max_element"></a>max_element
+## <a name="max_element"></a><a name="max_element"></a> max_element
 
 지정된 범위에서 가장 큰 첫 번째 요소를 찾습니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.
 
@@ -4225,7 +4226,7 @@ int main()
 }
 ```
 
-## <a name="merge"></a><a name="merge"></a>결합
+## <a name="merge"></a><a name="merge"></a> 결합
 
 정렬된 두 소스 범위의 모든 요소를 정렬된 단일 대상 범위로 결합합니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.
 
@@ -4466,7 +4467,7 @@ constexpr Type min(
 
 ### <a name="remarks"></a>설명
 
-`min` 알고리즘은 대체로 매개 변수로 전달된 개체를 사용하지 않습니다. 대부분의 C++ 표준 라이브러리 알고리즘은 매개 변수로 전달된 반복기가 위치를 지정하는 요소 범위에서 작동합니다. 요소 범위를 사용하는 함수가 필요한 경우 [min_element](algorithm-functions.md#min_element)를 사용합니다. [constexpr](../cpp/constexpr-cpp.md) `initializer_list` Visual Studio 2017의 오버 로드에서 constexpr을 사용 하도록 설정 했습니다.
+`min` 알고리즘은 대체로 매개 변수로 전달된 개체를 사용하지 않습니다. 대부분의 C++ 표준 라이브러리 알고리즘은 매개 변수로 전달된 반복기가 위치를 지정하는 요소 범위에서 작동합니다. 요소 범위를 사용하는 함수가 필요한 경우 [min_element](algorithm-functions.md#min_element)를 사용합니다. [](../cpp/constexpr-cpp.md) `initializer_list` Visual Studio 2017의 오버 로드에서 constexpr을 사용 하도록 설정 했습니다.
 
 ### <a name="example"></a>예제
 
@@ -4635,7 +4636,7 @@ Vector v4 = min ( v1,v2 ) is ( 0 1 2 ).
 Vector v5 = min ( v1,v3 ) is ( 0 1 2 ).
 ```
 
-## <a name="min_element"></a><a name="min_element"></a>min_element
+## <a name="min_element"></a><a name="min_element"></a> min_element
 
 지정된 범위에서 가장 작은 첫 번째 요소를 찾습니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.
 
@@ -4799,7 +4800,7 @@ The smallest element in v1 under the mod_lesser
 binary predicate is: 0
 ```
 
-## <a name="minmax_element"></a><a name="minmax_element"></a>minmax_element
+## <a name="minmax_element"></a><a name="minmax_element"></a> minmax_element
 
 한 번의 호출로 `min_element` 및 `max_element`에 의해 수행된 작업을 수행합니다.
 
@@ -4859,7 +4860,7 @@ pair<ForwardIterator, ForwardIterator> minmax_element(
 
 시퀀스가 비어 있지 않은 경우 함수는 최대 `3 * (last - first - 1) / 2`개의 비교를 수행합니다.
 
-## <a name="minmax"></a><a name="minmax"></a>minmax
+## <a name="minmax"></a><a name="minmax"></a> minmax
 
 두 개의 입력된 매개 변수를 비교하여 작은 수에서 큰 수의 순서로 구성된 한 쌍을 반환합니다.
 
@@ -4901,15 +4902,15 @@ constexpr pair<Type&, Type&> minmax(
 
 ### <a name="remarks"></a>설명
 
-첫 번째 템플릿 함수는 `pair<const Type&, const Type&>( right, left )` *right* 가 *left*보다 작은 경우를 반환 합니다. 그렇지 않으면 `pair<const Type&, const Type&>( left, right )`을 반환합니다.
+첫 번째 템플릿 함수는 `pair<const Type&, const Type&>( right, left )` *right* 가 *left* 보다 작은 경우를 반환 합니다. 그렇지 않으면 `pair<const Type&, const Type&>( left, right )`을 반환합니다.
 
-두 번째 멤버 함수는 첫 번째 요소가 작은 값이 고 두 번째 요소는 조건자 *pred*비교할 때 더 큰 쌍을 반환 합니다.
+두 번째 멤버 함수는 첫 번째 요소가 작은 값이 고 두 번째 요소는 조건자 *pred* 비교할 때 더 큰 쌍을 반환 합니다.
 
-나머지 템플릿 함수는 *왼쪽* 및 *오른쪽* 매개 변수를 *inlist*로 대체 한다는 점을 제외 하 고 동일 하 게 동작 합니다.
+나머지 템플릿 함수는 *왼쪽* 및 *오른쪽* 매개 변수를 *inlist* 로 대체 한다는 점을 제외 하 고 동일 하 게 동작 합니다.
 
 함수는 정확히 하나의 비교를 수행합니다.
 
-## <a name="mismatch"></a><a name="mismatch"></a>않거나
+## <a name="mismatch"></a><a name="mismatch"></a> 않거나
 
 두 범위를 요소별로 비교하고 차이가 발생한 첫 번째 위치를 찾습니다.
 
@@ -5151,7 +5152,7 @@ ForwardIterator2 move(
 
 템플릿 함수는  범위의 각 에 대해 `*(dest + N) = move(*(first + N))``N``[0, last - first)`을 한 번 평가하여 `N`의 값을 최소값부터 엄격하게 증가시킵니다. 그런 다음 `dest + N`를 반환합니다. `dest`및가 저장소 영역을 *먼저* 지정 하는 경우에는 *dest* 가 범위 내에 있지 않아야 합니다 `[first, last)` .
 
-## <a name="move_backward"></a><a name="move_backward"></a>move_backward
+## <a name="move_backward"></a><a name="move_backward"></a> move_backward
 
 한 반복기의 요소를 다른 반복기로 이동합니다. 이동은 지정된 범위의 마지막 요소에서 시작하고 해당 범위의 첫 번째 요소에서 끝납니다.
 
@@ -5180,7 +5181,7 @@ BidirectionalIterator2 move_backward(
 
 `move` 및 `move_backward`는 이동 반복기와 함께 `copy` 및 `copy_backward`를 사용하는 것과 기능적으로 등가입니다.
 
-## <a name="next_permutation"></a><a name="next_permutation"></a>next_permutation
+## <a name="next_permutation"></a><a name="next_permutation"></a> next_permutation
 
 원래 순서 지정을 사전순에 따라 다음으로 큰 순열(있는 경우)로 대체할 수 있도록 범위의 요소 순서를 재정렬합니다. 여기서 다음의 의미는 이진 조건자로 지정할 수 있습니다.
 
@@ -5359,9 +5360,9 @@ After another next_permutation of vector v1,
 v1 =   ( -3 -2 -1 1 0 2 3 ).
 ```
 
-## <a name="nth_element"></a><a name="nth_element"></a>nth_element
+## <a name="nth_element"></a><a name="nth_element"></a> nth_element
 
-요소 범위를 분할 하 여 범위에서 시퀀스의 *n*번째 요소를 정확 하 게 배치 하 여 그 앞의 모든 요소가 값 보다 작거나 같고 시퀀스에서 뒤에 나오는 모든 요소가 해당 요소 보다 크거나 같은 경우
+요소 범위를 분할 하 여 범위에서 시퀀스의 *n* 번째 요소를 정확 하 게 배치 하 여 그 앞의 모든 요소가 값 보다 작거나 같고 시퀀스에서 뒤에 나오는 모든 요소가 해당 요소 보다 크거나 같은 경우
 
 ```cpp
 template<class RandomAccessIterator>
@@ -5414,11 +5415,11 @@ void nth_element(
 
 참조된 범위는 유효해야 하고 모든 포인터는 역참조 가능해야 하며 시퀀스 내에서 처음 위치에서 증분하여 마지막 위치까지 도달할 수 있어야 합니다.
 
-`nth_element`알고리즘은 *n*번째 요소의 양쪽에 있는 하위 범위의 요소가 정렬 되는 것을 보장 하지 않습니다. 따라서 선택된 요소 아래의 범위에 있는 요소를 정렬하는 `partial_sort`보다 보증이 줄어들고, 더 낮은 범위의 순서가 필요하지 않은 경우 `partial_sort`에 대한 더 빠른 대안으로 사용될 수 있습니다.
+`nth_element`알고리즘은 *n* 번째 요소의 양쪽에 있는 하위 범위의 요소가 정렬 되는 것을 보장 하지 않습니다. 따라서 선택된 요소 아래의 범위에 있는 요소를 정렬하는 `partial_sort`보다 보증이 줄어들고, 더 낮은 범위의 순서가 필요하지 않은 경우 `partial_sort`에 대한 더 빠른 대안으로 사용될 수 있습니다.
 
 둘 중 어느 요소도 다른 것보다 작지 않은 경우 두 요소는 등가이지만, 반드시 같은 것은 아닙니다.
 
-정렬 복잡성의 평균은 *last first*와 관련 하 여 선형입니다.
+정렬 복잡성의 평균은 *last first* 와 관련 하 여 선형입니다.
 
 ### <a name="example"></a>예제
 
@@ -5486,7 +5487,7 @@ int main() {
 }
 ```
 
-## <a name="none_of"></a><a name="none_of"></a>none_of
+## <a name="none_of"></a><a name="none_of"></a> none_of
 
 **`true`** 지정 된 범위의 요소 사이에 조건이 없는 경우를 반환 합니다.
 
@@ -5527,7 +5528,7 @@ bool none_of(
 
 **`true`** `N` 범위에 있는 일부에 대해 `[0, last - first)` 조건자 `pred(*(first + N))` 가 항상 인 경우에만 템플릿 함수가를 반환 합니다 **`false`** .
 
-## <a name="partial_sort"></a><a name="partial_sort"></a>partial_sort
+## <a name="partial_sort"></a><a name="partial_sort"></a> partial_sort
 
 범위에 있는 지정된 수의 더 작은 요소를 비내림차순 또는 이진 조건자로 지정한 정렬 기준에 따라 정렬합니다.
 
@@ -5658,7 +5659,7 @@ Partially resorted (UDgreater) vector:
 v1 = ( 11 10 9 8 7 6 5 4 0 1 2 3 )
 ```
 
-## <a name="partial_sort_copy"></a><a name="partial_sort_copy"></a>partial_sort_copy
+## <a name="partial_sort_copy"></a><a name="partial_sort_copy"></a> partial_sort_copy
 
 소스 범위의 요소를 대상 범위로 복사합니다. 여기서 소스 요소는 지정된 다른 이진 조건자보다 작거나 지정된 다른 이진 조건자로 정렬됩니다.
 
@@ -5802,7 +5803,7 @@ int main() {
 }
 ```
 
-## <a name="partition"></a><a name="partition"></a>파티션마다
+## <a name="partition"></a><a name="partition"></a> 파티션마다
 
 범위의 요소를 두 개의 연결되지 않은 집합으로 분류하고, 단항 조건자를 만족하는 요소는 만족하지 않는 요소보다 앞에 오도록 합니다.
 
@@ -5888,7 +5889,7 @@ int main()
 }
 ```
 
-## <a name="partition_copy"></a><a name="partition_copy"></a>partition_copy
+## <a name="partition_copy"></a><a name="partition_copy"></a> partition_copy
 
 조건이 다른 대상에 해당 하는 요소를 대상으로 하는 요소를 복사 **`true`** **`false`** 합니다. 지정된 범위의 요소여야 합니다.
 
@@ -5923,10 +5924,10 @@ pair<ForwardIterator1, ForwardIterator2> partition_copy(
 범위의 끝을 나타내는 입력 반복기입니다.
 
 *dest1*\
-*Pred*를 사용 하 여 테스트 한 조건에 대해 true를 반환 하는 요소를 복사 하는 데 사용 되는 출력 반복기입니다.
+*Pred* 를 사용 하 여 테스트 한 조건에 대해 true를 반환 하는 요소를 복사 하는 데 사용 되는 출력 반복기입니다.
 
 *dest2*\
-*Pred*를 사용 하 여 테스트 한 조건에 대해 false를 반환 하는 요소를 복사 하는 데 사용 되는 출력 반복기입니다.
+*Pred* 를 사용 하 여 테스트 한 조건에 대해 false를 반환 하는 요소를 복사 하는 데 사용 되는 출력 반복기입니다.
 
 *pred*\
 테스트할 조건입니다. 이 조건은 테스트할 조건을 정의하는 사용자 정의 조건자 함수 개체에 의해 제공됩니다. 단항 조건자는 단일 인수를 사용 하 고 **`true`** 또는를 반환 **`false`** 합니다.
@@ -5935,7 +5936,7 @@ pair<ForwardIterator1, ForwardIterator2> partition_copy(
 
 템플릿 함수는 `X` 가 true 인 경우의 각 요소 `[first,last)` 를에 복사 하 고 `*dest1++` `pred(X)` , 그렇지 않으면로 복사 `*dest2++` 합니다. `pair<OutputIterator1, OutputIterator2>(dest1, dest2)`를 반환합니다.
 
-## <a name="partition_point"></a><a name="partition_point"></a>partition_point
+## <a name="partition_point"></a><a name="partition_point"></a> partition_point
 
 지정된 범위에서 조건을 충족하지 않는 첫 번째 요소를 반환합니다. 조건을 충족하는 요소가 앞에, 그렇지 않는 요소는 뒤에 정렬됩니다.
 
@@ -5960,13 +5961,13 @@ ForwardIterator partition_point(
 
 ### <a name="return-value"></a>반환 값
 
-`ForwardIterator` *Pred*에서 테스트 한 조건을 충족 하지 않는 첫 번째 요소를 참조 하거나, 하나를 찾을 수 없는 경우 *마지막으로* 반환 하는을 반환 합니다.
+`ForwardIterator` *Pred* 에서 테스트 한 조건을 충족 하지 않는 첫 번째 요소를 참조 하거나, 하나를 찾을 수 없는 경우 *마지막으로* 반환 하는을 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-템플릿 함수는 `it` 에서 `[first, last)` `pred(*it)` 가 인 첫 번째 반복기를 찾습니다 **`false`** . 순서는 *pred*를 기준으로 정렬 되어야 합니다.
+템플릿 함수는 `it` 에서 `[first, last)` `pred(*it)` 가 인 첫 번째 반복기를 찾습니다 **`false`** . 순서는 *pred* 를 기준으로 정렬 되어야 합니다.
 
-## <a name="pop_heap"></a><a name="pop_heap"></a>pop_heap
+## <a name="pop_heap"></a><a name="pop_heap"></a> pop_heap
 
 힙 맨 앞부터 범위의 끝에서 두 번째 위치 중에서 가장 큰 요소를 제거한 다음 나머지 요소로 새 힙을 구성합니다.
 
@@ -6075,7 +6076,7 @@ int main()
 }
 ```
 
-## <a name="prev_permutation"></a><a name="prev_permutation"></a>prev_permutation
+## <a name="prev_permutation"></a><a name="prev_permutation"></a> prev_permutation
 
 원래 순서 지정을 사전식으로 이전의 큰 순열(있는 경우)로 대체할 수 있도록 범위의 요소 순서를 재정렬합니다. 여기서 이전의 의미는 이진 조건자로 지정할 수 있습니다.
 
@@ -6250,7 +6251,7 @@ After another prev_permutation of vector v1,
 v1 =   ( -3 -2 0 2 -1 1 3 ).
 ```
 
-## <a name="push_heap"></a><a name="push_heap"></a>push_heap
+## <a name="push_heap"></a><a name="push_heap"></a> push_heap
 
 범위의 마지막에 있는 요소를 범위의 이전 요소로 구성된 기존 힙에 추가합니다.
 
@@ -6363,11 +6364,11 @@ int main() {
 }
 ```
 
-## <a name="random_shuffle"></a><a name="random_shuffle"></a>random_shuffle
+## <a name="random_shuffle"></a><a name="random_shuffle"></a> random_shuffle
 
 Std:: random_shuffle () 함수는 사용 되지 않으며 [std:: 무작위](algorithm-functions.md#shuffle)로 대체 되었습니다. 코드 예제 및 자세한 내용은을 참조 하 [\<random>](random.md) 고, [c + + 14에서 std:: random_shuffle 메서드가 더 이상 사용 되지 않는 이유](https://go.microsoft.com/fwlink/p/?linkid=397954)를 Stack Overflow 게시 합니다.
 
-## <a name="remove"></a><a name="remove"></a>삭제
+## <a name="remove"></a><a name="remove"></a> 삭제
 
 나머지 요소의 순서에 영향을 미치거나 지정된 값이 없는 새 범위의 끝을 반환하지 않고 지정된 범위에서 지정된 값을 제거합니다.
 
@@ -6463,7 +6464,7 @@ int main()
 }
 ```
 
-## <a name="remove_copy"></a><a name="remove_copy"></a>remove_copy
+## <a name="remove_copy"></a><a name="remove_copy"></a> remove_copy
 
 소스 범위의 요소를 대상 범위로 복사합니다. 단, 나머지 요소의 순서를 변경하거나 새 대상 범위의 끝을 반환하지 않고 지정된 값의 요소는 복사하지 않습니다.
 
@@ -6561,7 +6562,7 @@ int main()
 }
 ```
 
-## <a name="remove_copy_if"></a><a name="remove_copy_if"></a>remove_copy_if
+## <a name="remove_copy_if"></a><a name="remove_copy_if"></a> remove_copy_if
 
 조건자를 만족 하는 요소를 제외 하 고 소스 범위의 요소를 대상 범위로 복사 합니다. 요소는 나머지 요소의 순서를 방해 하지 않고 복사 됩니다. 새 대상 범위의 끝을 반환 합니다.
 
@@ -6668,7 +6669,7 @@ int main()
 }
 ```
 
-## <a name="remove_if"></a><a name="remove_if"></a>remove_if
+## <a name="remove_if"></a><a name="remove_if"></a> remove_if
 
 나머지 요소의 순서에 영향을 미치거나 지정된 값이 없는 새 범위의 끝을 반환하지 않고 지정된 범위에서 조건자를 만족하는 요소를 제거합니다.
 
@@ -6769,7 +6770,7 @@ int main()
 }
 ```
 
-## <a name="replace"></a><a name="replace"></a>바꾸십시오
+## <a name="replace"></a><a name="replace"></a> 바꾸십시오
 
 범위의 각 요소를 검사하고 요소가 지정된 값과 일치하면 대체합니다.
 
@@ -6856,7 +6857,7 @@ int main()
 }
 ```
 
-## <a name="replace_copy"></a><a name="replace_copy"></a>replace_copy
+## <a name="replace_copy"></a><a name="replace_copy"></a> replace_copy
 
 소스 범위의 각 요소를 검사하고 요소가 지정된 값과 일치하면 대체하는 동시에 결과를 새 대상 범위로 복사합니다.
 
@@ -6971,7 +6972,7 @@ int main()
 }
 ```
 
-## <a name="replace_copy_if"></a><a name="replace_copy_if"></a>replace_copy_if
+## <a name="replace_copy_if"></a><a name="replace_copy_if"></a> replace_copy_if
 
 소스 범위의 각 요소를 검사하고 요소가 지정된 조건자를 충족하면 대체하는 동시에 결과를 새 대상 범위로 복사합니다.
 
@@ -7094,7 +7095,7 @@ int main()
 }
 ```
 
-## <a name="replace_if"></a><a name="replace_if"></a>replace_if
+## <a name="replace_if"></a><a name="replace_if"></a> replace_if
 
 범위의 각 요소를 검사하고 요소가 지정된 조건자를 충족하면 대체합니다.
 
@@ -7190,7 +7191,7 @@ int main()
 }
 ```
 
-## <a name="reverse"></a><a name="reverse"></a>되돌립니다
+## <a name="reverse"></a><a name="reverse"></a> 되돌립니다
 
 범위 내에서 요소의 순서를 반대로 바꿉니다.
 
@@ -7265,7 +7266,7 @@ The modified vector v1 with values reversed is:
 ( 9 8 7 6 5 4 3 2 1 0 ).
 ```
 
-## <a name="reverse_copy"></a><a name="reverse_copy"></a>reverse_copy
+## <a name="reverse_copy"></a><a name="reverse_copy"></a> reverse_copy
 
 소스 범위 내의 요소의 순서를 바꾸는 동시에 요소를 대상 범위로 복사합니다.
 
@@ -7347,7 +7348,7 @@ int main()
 }
 ```
 
-## <a name="rotate"></a><a name="rotate"></a>시키거나
+## <a name="rotate"></a><a name="rotate"></a> 시키거나
 
 인접한 두 범위에 있는 요소를 교환합니다.
 
@@ -7461,7 +7462,7 @@ After the rotation of a single deque element to the back,
 d1 is   ( 0 1 2 3 4 5 ).
 ```
 
-## <a name="rotate_copy"></a><a name="rotate_copy"></a>rotate_copy
+## <a name="rotate_copy"></a><a name="rotate_copy"></a> rotate_copy
 
 소스 범위 내의 인접한 두 범위의 요소를 교환하고 결과를 대상 범위로 복사합니다.
 
@@ -7569,7 +7570,7 @@ int main()
 }
 ```
 
-## <a name="sample"></a><a name="sample"></a>샘플이
+## <a name="sample"></a><a name="sample"></a> 샘플이
 
 ```cpp
 template<class PopulationIterator, class SampleIterator, class Distance, class UniformRandomBitGenerator>
@@ -7581,7 +7582,7 @@ SampleIterator sample(
     UniformRandomBitGenerator&& g);
 ```
 
-## <a name="search"></a><a name="search"></a>조건을
+## <a name="search"></a><a name="search"></a> 조건을
 
 대상 범위 내에서 시퀀스의 요소가 지정된 요소 시퀀스와 동일하거나 이진 조건자가 지정한 의미에 따라 지정된 시퀀스의 요소와 동일한 첫 번째 시퀀스를 검색합니다.
 
@@ -7759,7 +7760,7 @@ to those in v2 under the binary predicate twice
 and the first one begins at position 2.
 ```
 
-## <a name="search_n"></a><a name="search_n"></a>search_n
+## <a name="search_n"></a><a name="search_n"></a> search_n
 
 범위에서 특정 값의 요소가 지정된 수만큼 있거나 이진 조건자가 지정한 해당 값과 관련이 있는 첫 번째 하위 시퀀스를 검색합니다.
 
@@ -7912,7 +7913,7 @@ There is a match of a sequence ( 5 5 5 ) under the equivalence
 predicate one_half in v1 and the first one begins at position 15.
 ```
 
-## <a name="set_difference"></a><a name="set_difference"></a>set_difference
+## <a name="set_difference"></a><a name="set_difference"></a> set_difference
 
 한 정렬된 소스 범위에 속하지만 두 번째 정렬된 소스 범위에 속하지 않는 모든 요소를 정렬된 단일 대상 범위로 결합합니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.
 
@@ -8114,7 +8115,7 @@ int main()
 }
 ```
 
-## <a name="set_intersection"></a><a name="set_intersection"></a>set_intersection
+## <a name="set_intersection"></a><a name="set_intersection"></a> set_intersection
 
 정렬된 두 소스 범위에 속하는 모든 요소를 정렬된 단일 대상 범위로 결합합니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.
 
@@ -8312,7 +8313,7 @@ int main()
 }
 ```
 
-## <a name="set_symmetric_difference"></a><a name="set_symmetric_difference"></a>set_symmetric_difference
+## <a name="set_symmetric_difference"></a><a name="set_symmetric_difference"></a> set_symmetric_difference
 
 정렬된 두 소스 범위 중 하나에만 속하는 모든 요소를 정렬된 단일 대상 범위로 결합합니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.
 
@@ -8514,7 +8515,7 @@ int main()
 }
 ```
 
-## <a name="set_union"></a><a name="set_union"></a>set_union
+## <a name="set_union"></a><a name="set_union"></a> set_union
 
 정렬된 두 소스 범위 중 하나 이상에 속하는 모든 요소를 정렬된 단일 대상 범위로 결합합니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.
 
@@ -8716,7 +8717,7 @@ int main()
 }
 ```
 
-## <a name="shuffle"></a><a name="shuffle"></a>섞기
+## <a name="shuffle"></a><a name="shuffle"></a> 섞기
 
 난수 생성기를 사용하여 지정된 범위 내 요소의 순서를 섞습니다(다시 정렬).
 
@@ -8743,7 +8744,7 @@ void shuffle(
 
 자세한 내용과를 사용 하는 코드 샘플을 `shuffle()` 보려면을 참조 하십시오 [\<random>](random.md) .
 
-## <a name="sort"></a><a name="sort"></a>정렬
+## <a name="sort"></a><a name="sort"></a> 정렬
 
 지정된 범위에 있는 요소를 비내림차순 또는 이진 조건자로 지정한 정렬 기준에 따라 정렬합니다.
 
@@ -8793,7 +8794,7 @@ void sort(
 
 둘 중 어느 요소도 다른 것보다 작지 않은 경우 두 요소는 등가이지만, 반드시 같은 것은 아닙니다. `sort` 알고리즘은 안정적이지 않으므로 등가 요소의 상대적인 순서가 유지될 것임을 보증하지 않습니다. `stable_sort` 알고리즘은 원래의 순서를 유지합니다.
 
-정렬 복잡성의 평균은 이며 `O( N log N )` 여기서 *N*  =  *last*  -  *first*입니다.
+정렬 복잡성의 평균은 이며 `O( N log N )` 여기서 *N*  =  *last*  -  *first* 입니다.
 
 ### <a name="example"></a>예제
 
@@ -8863,7 +8864,7 @@ Resorted (greater) vector v1 = ( 11 10 9 8 7 6 5 4 3 2 1 0 )
 Resorted (UDgreater) vector v1 = ( 11 10 9 8 7 6 5 4 3 2 1 0 )
 ```
 
-## <a name="sort_heap"></a><a name="sort_heap"></a>sort_heap
+## <a name="sort_heap"></a><a name="sort_heap"></a> sort_heap
 
 힙을 정렬된 범위로 변환합니다.
 
@@ -8907,7 +8908,7 @@ void sort_heap(
 
 참조된 범위는 유효해야 하고 모든 포인터는 역참조 가능해야 하며 시퀀스 내에서 처음 위치에서 증분하여 마지막 위치까지 도달할 수 있어야 합니다.
 
-복잡성은 최대 이며 `N log N` 여기서 *N*  =  *last*  -  *first*입니다.
+복잡성은 최대 이며 `N log N` 여기서 *N*  =  *last*  -  *first* 입니다.
 
 ### <a name="example"></a>예제
 
@@ -8963,7 +8964,7 @@ int main()
 }
 ```
 
-## <a name="stable_partition"></a><a name="stable_partition"></a>stable_partition
+## <a name="stable_partition"></a><a name="stable_partition"></a> stable_partition
 
 범위의 요소를 두 개의 연결되지 않은 집합으로 분류하고, 단항 조건자를 만족하는 요소는 만족하지 않는 요소보다 앞에 오도록 하여 동등한 요소의 상대적 관계를 유지합니다.
 
@@ -9053,7 +9054,7 @@ int main()
 }
 ```
 
-## <a name="stable_sort"></a><a name="stable_sort"></a>stable_sort
+## <a name="stable_sort"></a><a name="stable_sort"></a> stable_sort
 
 지정된 범위에 있는 요소를 비내림차순 또는 이진 조건자로 지정한 정렬 기준에 따라 정렬하고 동등한 요소의 상대적 관계를 유지합니다.
 
@@ -9103,7 +9104,7 @@ void stable_sort(
 
 둘 중 어느 요소도 다른 것보다 작지 않은 경우 두 요소는 등가이지만, 반드시 같은 것은 아닙니다. `sort`알고리즘은 안정적 이며 동등한 요소의 상대적 순서가 유지 되도록 보장 합니다.
 
-의 런타임 복잡성은 `stable_sort` 사용 가능한 메모리의 양에 따라 달라 지지만, 최상의 경우 (충분 한 메모리가 있는 경우)이 `O(N log N)` 고 최악의 경우는입니다 `O(N (log N)^2)` . 여기서 *N*은  =  *last*  -  *first*입니다. 일반적으로 `sort` 알고리즘은 보다 훨씬 빠릅니다 `stable_sort` .
+의 런타임 복잡성은 `stable_sort` 사용 가능한 메모리의 양에 따라 달라 지지만, 최상의 경우 (충분 한 메모리가 있는 경우)이 `O(N log N)` 고 최악의 경우는입니다 `O(N (log N)^2)` . 여기서 *N* 은  =  *last*  -  *first* 입니다. 일반적으로 `sort` 알고리즘은 보다 훨씬 빠릅니다 `stable_sort` .
 
 ### <a name="example"></a>예제
 
@@ -9172,7 +9173,7 @@ Resorted (greater) vector v1 = ( 10 10 8 8 6 6 4 4 2 2 0 0 )
 Resorted (UDgreater) vector v1 = ( 10 10 8 8 6 6 4 4 2 2 0 0 )
 ```
 
-## <a name="swap"></a><a name="swap"></a>스왑을
+## <a name="swap"></a><a name="swap"></a> 스왑을
 
 첫 번째 재정의는 두 개체의 값을 교환합니다. 두 번째 재정의는 두 개체 배열 간에 값을 교환합니다.
 
@@ -9255,7 +9256,7 @@ Vector v1 is ( 5 5 5 5 5 ).
 Vector v2 is ( 0 1 2 3 4 5 6 7 8 9 10 ).
 ```
 
-## <a name="swap_ranges"></a><a name="swap_ranges"></a>swap_ranges
+## <a name="swap_ranges"></a><a name="swap_ranges"></a> swap_ranges
 
 한 범위의 요소를 크기가 동일한 다른 범위의 요소로 교환합니다.
 
@@ -9359,7 +9360,7 @@ After the swap_range, vector v1 is ( 6 6 6 6 6 6 ).
 After the swap_range deque d1 is   ( 0 1 2 3 4 5 ).
 ```
 
-## <a name="transform"></a><a name="transform"></a>변환
+## <a name="transform"></a><a name="transform"></a> 변환
 
 두 소스 범위에서 요소 쌍에 또는 소스 범위에 있는 각 요소에 지정된 함수 개체를 적용하고 대상 범위에 함수 개체의 반환 값을 복사합니다.
 
@@ -9515,7 +9516,7 @@ Multiplying elements of the vectors v1mod and v2 pairwise gives:
 v3 = ( 320 180 80 20 0 20 80 ).
 ```
 
-## <a name="unique"></a><a name="unique"></a>고유
+## <a name="unique"></a><a name="unique"></a> 고유
 
 지정된 범위에서 서로 인접한 중복 요소를 제거합니다.
 
@@ -9664,7 +9665,7 @@ Removing adjacent elements satisfying the binary
   predicate mod_equal from vector v1 gives ( 5 7 ).
 ```
 
-## <a name="unique_copy"></a><a name="unique_copy"></a>unique_copy
+## <a name="unique_copy"></a><a name="unique_copy"></a> unique_copy
 
 서로 인접한 중복 요소를 제외하고 소스 범위의 요소를 대상 범위로 복사합니다.
 
@@ -9801,7 +9802,7 @@ int main() {
 }
 ```
 
-## <a name="upper_bound"></a><a name="upper_bound"></a>upper_bound
+## <a name="upper_bound"></a><a name="upper_bound"></a> upper_bound
 
 지정된 값보다 큰 값을 갖는 정렬된 범위에 있는 첫 번째 요소의 위치를 찾습니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.
 

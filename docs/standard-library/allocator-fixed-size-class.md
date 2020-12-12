@@ -1,4 +1,5 @@
 ---
+description: Allocator_fixed_size 클래스에 대해 자세히 알아보세요.
 title: allocator_fixed_size 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - stdext::allocators [C++], allocator_fixed_size
 - stdext::allocator_fixed_size
 ms.assetid: 138f3ef8-b0b3-49c3-9486-58f2213c172f
-ms.openlocfilehash: 340a4e51c82f1799ebea138ce230393825b9e636
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: b4b3452a611734dd2731bdb9c43e4bf7a7ce6744
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562612"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163602"
 ---
 # <a name="allocator_fixed_size-class"></a>allocator_fixed_size 클래스
 

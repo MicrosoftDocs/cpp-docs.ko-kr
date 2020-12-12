@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: c + + 라이브러리 헤더 사용'
 title: C++ 라이브러리 헤더 사용
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - library headers
 - C++ Standard Library, headers
 ms.assetid: a36e889e-1af2-4cd9-a211-bfc7a3fd8e85
-ms.openlocfilehash: a73ebebb4fdde5dd72f148390d004c32b9f4dff7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7666709f29a7e5bc4119b35ac314ceba15c24930
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215480"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97153605"
 ---
 # <a name="using-c-library-headers"></a>C++ 라이브러리 헤더 사용
 

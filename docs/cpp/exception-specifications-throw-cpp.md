@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 예외 사양 (throw, noexcept) (c + +)'
 title: 예외 사양 (throw, noexcept) (c + +)
 ms.date: 01/18/2018
 helpviewer_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - throw keyword [C++]
 - noexcept keyword [C++]
 ms.assetid: 4d3276df-6f31-4c7f-8cab-b9d2d003a629
-ms.openlocfilehash: 1fa56ebf0a0358845ef620a89bc416992b3c0e31
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a6b3cb808caf464dc3dd19ea4d34e9d68f09d0d4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221577"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97164804"
 ---
 # <a name="exception-specifications-throw-noexcept-c"></a>예외 사양 (throw, noexcept) (c + +)
 
-예외 사양은 함수에서 전파할 수 있는 예외 형식에 대 한 프로그래머의 의도를 나타내는 c + + 언어 기능입니다. *예외 사양을*사용 하 여 함수가 예외를 사용 하 여 종료 될 수 있도록 지정할 수 있습니다. 컴파일러는이 정보를 사용 하 여 함수에 대 한 호출을 최적화 하 고 예기치 않은 예외가 함수를 이스케이프 하는 경우 프로그램을 종료할 수 있습니다.
+예외 사양은 함수에서 전파할 수 있는 예외 형식에 대 한 프로그래머의 의도를 나타내는 c + + 언어 기능입니다. *예외 사양을* 사용 하 여 함수가 예외를 사용 하 여 종료 될 수 있도록 지정할 수 있습니다. 컴파일러는이 정보를 사용 하 여 함수에 대 한 호출을 최적화 하 고 예기치 않은 예외가 함수를 이스케이프 하는 경우 프로그램을 종료할 수 있습니다.
 
-C + + 17 이전에는 두 가지 종류의 예외 사양이 있었습니다. *Noexcept 사양은* c + + 11에서 새로 만들어졌습니다. 함수를 이스케이프할 수 있는 잠재적인 예외 집합이 비어 있는지 여부를 지정 합니다. *동적 예외 사양*또는 `throw(optional_type_list)` 사양은 c + + 11에서 사용 되지 않고의 별칭인를 제외 하 고 c + + 17에서 제거 되었습니다 `throw()` `noexcept(true)` . 이 예외 사양은 함수에서 throw 할 수 있는 예외에 대 한 요약 정보를 제공 하도록 설계 되었지만 실제로는 문제가 있는 것으로 확인 되었습니다. 약간 유용한 것으로 입증 된 하나의 동적 예외 사양은 무조건 `throw()` 사양입니다. 예를 들어 함수 선언은 다음과 같습니다.
+C + + 17 이전에는 두 가지 종류의 예외 사양이 있었습니다. *Noexcept 사양은* c + + 11에서 새로 만들어졌습니다. 함수를 이스케이프할 수 있는 잠재적인 예외 집합이 비어 있는지 여부를 지정 합니다. *동적 예외 사양* 또는 `throw(optional_type_list)` 사양은 c + + 11에서 사용 되지 않고의 별칭인를 제외 하 고 c + + 17에서 제거 되었습니다 `throw()` `noexcept(true)` . 이 예외 사양은 함수에서 throw 할 수 있는 예외에 대 한 요약 정보를 제공 하도록 설계 되었지만 실제로는 문제가 있는 것으로 확인 되었습니다. 약간 유용한 것으로 입증 된 하나의 동적 예외 사양은 무조건 `throw()` 사양입니다. 예를 들어 함수 선언은 다음과 같습니다.
 
 ```cpp
 void MyFunction(int i) throw();
@@ -50,15 +51,15 @@ void MyFunction(int i) noexcept;
 
 - 예외 사양을 명시적으로 지정하는지 여부
 
-C 함수에서는 명시적 예외 사양이 허용되지 않습니다. C 함수는 **/ehsc**에서 예외를 throw 하지 않는 것으로 간주 되며, **/EHs**, **/eha**또는 **/EHac**에서 구조적 예외를 throw 할 수 있습니다.
+C 함수에서는 명시적 예외 사양이 허용되지 않습니다. C 함수는 **/ehsc** 에서 예외를 throw 하지 않는 것으로 간주 되며, **/EHs**, **/eha** 또는 **/EHac** 에서 구조적 예외를 throw 할 수 있습니다.
 
 다음 표에서는 다양 한 컴파일러 예외 처리 옵션에서 c + + 함수가 잠재적으로 발생할 수 있는지 여부를 요약 합니다.
 
 |함수|/EHsc|/EHs|/EHa|/EHac|
 |--------------|------------|-----------|-----------|------------|
-|예외 사양이 없는 C++ 함수|yes|yes|yes|yes|
-|**`noexcept`**, `noexcept(true)` 또는 `throw()` 예외 사양을 사용 하는 c + + 함수|아니요|예|예|yes|
-|`noexcept(false)`, `throw(...)` 또는 `throw(type)` 예외 사양을 사용 하는 c + + 함수|yes|yes|yes|예|
+|예외 사양이 없는 C++ 함수|예|예|예|예|
+|**`noexcept`**, `noexcept(true)` 또는 `throw()` 예외 사양을 사용 하는 c + + 함수|아니요|아니요|예|예|
+|`noexcept(false)`, `throw(...)` 또는 `throw(type)` 예외 사양을 사용 하는 c + + 함수|예|예|예|예|
 
 ## <a name="example"></a>예제
 

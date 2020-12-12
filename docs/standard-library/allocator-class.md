@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: 할당자 클래스'
 title: allocator 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - std::allocator [C++], max_size
 - std::allocator [C++], rebind
 ms.assetid: 3fd58076-56cc-43bb-ad58-b4b7c9c6b410
-ms.openlocfilehash: 4857de0b77d69a0d256da2200e5f4d0eb9d51c51
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f1f54aae3191d261d549e69e942974fc46a670f2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844823"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163628"
 ---
 # <a name="allocator-class"></a>allocator 클래스
 
@@ -99,7 +100,7 @@ class allocator
 |[size_type](#size_type)|형식의 개체가 할당할 수 있는 시퀀스의 길이를 나타낼 수 있는 부호 없는 정수 형식입니다 `allocator` .|
 |[value_type](#value_type)|할당자에 의해 관리되는 형식입니다.|
 
-### <a name="functions"></a>Functions
+### <a name="functions"></a>함수
 
 |Name|Description|
 |-|-|
@@ -137,7 +138,7 @@ const_pointer address(const_reference val) const;
 
 #### <a name="remarks"></a>설명
 
-멤버 함수는 할당 된 요소에 대 한 포인터를 사용 해야 하는 형식으로 *val*의 주소를 반환 합니다.
+멤버 함수는 할당 된 요소에 대 한 포인터를 사용 해야 하는 형식으로 *val* 의 주소를 반환 합니다.
 
 #### <a name="example"></a>예제
 
@@ -537,7 +538,7 @@ void deallocate(pointer ptr, size_type count);
 
 #### <a name="remarks"></a>설명
 
-멤버 함수는를 `Type` 호출 하 여 *ptr*에서 시작 하는 형식의 count 개체 배열에 대 한 저장소를 해제 `operator delete(ptr)` 합니다. 동일한 크기와 형식의 배열 개체를 할당 하 여 ** \* 이**와 같은지 비교 하는 할당자 개체에 대해를 [할당](#allocate) 하는 호출을 통해 이전에 포인터 *ptr* 을 반환 해야 합니다. `deallocate`은 예외를 throw할 수 없습니다.
+멤버 함수는를 `Type` 호출 하 여 *ptr* 에서 시작 하는 형식의 count 개체 배열에 대 한 저장소를 해제 `operator delete(ptr)` 합니다. 동일한 크기와 형식의 배열 개체를 할당 하 여 **\* 이** 와 같은지 비교 하는 할당자 개체에 대해를 [할당](#allocate) 하는 호출을 통해 이전에 포인터 *ptr* 을 반환 해야 합니다. `deallocate`은 예외를 throw할 수 없습니다.
 
 #### <a name="example"></a>예제
 
@@ -558,7 +559,7 @@ void destroy(pointer ptr);
 
 #### <a name="remarks"></a>설명
 
-멤버 함수는 소멸자를 호출 하 여 *ptr*에서 지정 된 개체를 삭제 합니다 `ptr->Type::~Type` .
+멤버 함수는 소멸자를 호출 하 여 *ptr* 에서 지정 된 개체를 삭제 합니다 `ptr->Type::~Type` .
 
 #### <a name="example"></a>예제
 
@@ -812,7 +813,7 @@ typedef value_type *pointer;
 
 #### <a name="remarks"></a>설명
 
-포인터 형식은 `ptr` 형식의 개체에서 할당할 수 있는 모든 개체를 식 ** \* ptr**을 통해 지정할 수 있는 개체를 설명 합니다 `allocator` .
+포인터 형식은 `ptr` 형식의 개체에서 할당할 수 있는 모든 개체를 식 **\* ptr** 을 통해 지정할 수 있는 개체를 설명 합니다 `allocator` .
 
 #### <a name="example"></a>예제
 

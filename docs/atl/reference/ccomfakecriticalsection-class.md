@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CComFakeCriticalSection 클래스'
 title: CComFakeCriticalSection 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComFakeCriticalSection class
 ms.assetid: a4811b97-96bb-493b-ab9f-62822aeddb10
-ms.openlocfilehash: 5ada0fbed705af34391709653dbd3638fed32bf7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7280a47daa7464b24246ca8baa0aa7f5eaefa87a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226583"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97152063"
 ---
 # <a name="ccomfakecriticalsection-class"></a>CComFakeCriticalSection 클래스
 
@@ -49,7 +50,7 @@ class CComFakeCriticalSection
 
 **헤더:**
 
-## <a name="ccomfakecriticalsectioninit"></a><a name="init"></a>CComFakeCriticalSection:: Init
+## <a name="ccomfakecriticalsectioninit"></a><a name="init"></a> CComFakeCriticalSection:: Init
 
 중요 한 섹션이 없기 때문에 아무 작업도 수행 하지 않습니다.
 
@@ -57,11 +58,11 @@ class CComFakeCriticalSection
 HRESULT Init() throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 S_OK를 반환 합니다.
 
-## <a name="ccomfakecriticalsectionlock"></a><a name="lock"></a>CComFakeCriticalSection:: Lock
+## <a name="ccomfakecriticalsectionlock"></a><a name="lock"></a> CComFakeCriticalSection:: Lock
 
 중요 한 섹션이 없기 때문에 아무 작업도 수행 하지 않습니다.
 
@@ -69,11 +70,11 @@ S_OK를 반환 합니다.
 HRESULT Lock() throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 S_OK를 반환 합니다.
 
-## <a name="ccomfakecriticalsectionterm"></a><a name="term"></a>CComFakeCriticalSection:: Term
+## <a name="ccomfakecriticalsectionterm"></a><a name="term"></a> CComFakeCriticalSection:: Term
 
 중요 한 섹션이 없기 때문에 아무 작업도 수행 하지 않습니다.
 
@@ -81,11 +82,11 @@ S_OK를 반환 합니다.
 HRESULT Term() throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 S_OK를 반환 합니다.
 
-## <a name="ccomfakecriticalsectionunlock"></a><a name="unlock"></a>CComFakeCriticalSection:: Unlock
+## <a name="ccomfakecriticalsectionunlock"></a><a name="unlock"></a> CComFakeCriticalSection:: Unlock
 
 중요 한 섹션이 없기 때문에 아무 작업도 수행 하지 않습니다.
 
@@ -93,7 +94,7 @@ S_OK를 반환 합니다.
 HRESULT Unlock() throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 S_OK를 반환 합니다.
 

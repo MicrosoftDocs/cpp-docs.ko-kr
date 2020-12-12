@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CSimpleMapEqualHelper 클래스'
 title: CSimpleMapEqualHelper 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,16 +10,16 @@ f1_keywords:
 helpviewer_keywords:
 - CSimpleMapEqualHelper class
 ms.assetid: 9bb2968a-d609-405c-8272-ff3b42df6164
-ms.openlocfilehash: d137a35a517ea93139f036f6e9a7a8de06d518a7
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 2b8ff742bf24b6c6c4354cef652e3fc697ffb1d9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81330751"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97140610"
 ---
 # <a name="csimplemapequalhelper-class"></a>CSimpleMapEqualHelper 클래스
 
-이 클래스는 [CSimpleMap](../../atl/reference/csimplemap-class.md) 클래스의 도우미입니다.
+이 클래스는 [Csimplemap](../../atl/reference/csimplemap-class.md) 클래스에 대 한 도우미입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -30,31 +31,31 @@ class CSimpleMapEqualHelper
 #### <a name="parameters"></a>매개 변수
 
 *TKey*<br/>
-핵심 요소입니다.
+키 요소입니다.
 
-*TVal (주)*<br/>
+*TVal*<br/>
 값 요소입니다.
 
 ## <a name="members"></a>멤버
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[CSimpleMapEqual도우미::이퀄라이크키](#isequalkey)|(정적) 두 키를 같음으로 테스트합니다.|
-|[CSimpleMapEqual도우미::IsEqualValue](#isequalvalue)|(정적) 같음에 대해 두 값을 테스트합니다.|
+|[CSimpleMapEqualHelper::IsEqualKey](#isequalkey)|정적인 두 키가 같은지 테스트 합니다.|
+|[CSimpleMapEqualHelper::IsEqualValue](#isequalvalue)|정적인 두 값이 같은지 테스트 합니다.|
 
 ## <a name="remarks"></a>설명
 
-이 특성 클래스는 `CSimpleMap` 클래스에 대한 보충입니다. 같음(특히 키 `CSimpleMap` 및 값 구성 요소)을 비교하는 메서드를 제공합니다. 기본적으로 키와 값은 **operator==()를**사용하여 비교되지만 맵에 자체 같음 연산자가 없는 복잡한 데이터 형식이 포함되어 있는 경우 이 클래스를 재정의하여 필요한 추가 기능을 제공할 수 있습니다.
+이 특성 클래스는 클래스에 대 한 추가 자료입니다 `CSimpleMap` . 두 `CSimpleMap` 개체 요소 (특히 키 및 값 구성 요소)가 같은지 비교 하는 메서드를 제공 합니다. 기본적으로 키와 값은 **operator = = ()** 를 사용 하 여 비교 되지만 맵에 고유한 같음 연산자가 없는 복합 데이터 형식이 포함 된 경우이 클래스를 재정의 하 여 필요한 추가 기능을 제공할 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** 아시프콜.h
+**헤더:** atlsimpcoll
 
-## <a name="csimplemapequalhelperisequalkey"></a><a name="isequalkey"></a>CSimpleMapEqual도우미::이퀄라이크키
+## <a name="csimplemapequalhelperisequalkey"></a><a name="isequalkey"></a> CSimpleMapEqualHelper::IsEqualKey
 
-두 키를 같음으로 테스트합니다.
+두 키가 같은지 테스트 합니다.
 
 ```
 static bool IsEqualKey(const TKey& k1, const TKey& k2);
@@ -68,13 +69,13 @@ static bool IsEqualKey(const TKey& k1, const TKey& k2);
 *k2*<br/>
 두 번째 키입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-키가 같으면 true를 반환하고 그렇지 않으면 false를 반환합니다.
+키가 같으면 true, 그렇지 않으면 false를 반환 합니다.
 
-## <a name="csimplemapequalhelperisequalvalue"></a><a name="isequalvalue"></a>CSimpleMapEqual도우미::IsEqualValue
+## <a name="csimplemapequalhelperisequalvalue"></a><a name="isequalvalue"></a> CSimpleMapEqualHelper::IsEqualValue
 
-같음에 대해 두 값을 테스트합니다.
+두 값이 같은지 테스트 합니다.
 
 ```
 static bool IsEqualValue(const TVal& v1, const TVal& v2);
@@ -88,9 +89,9 @@ static bool IsEqualValue(const TVal& v1, const TVal& v2);
 *v2*<br/>
 두 번째 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-값이 같으면 true를 반환하고 false를 반환합니다.
+값이 같으면 true, 그렇지 않으면 false를 반환 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

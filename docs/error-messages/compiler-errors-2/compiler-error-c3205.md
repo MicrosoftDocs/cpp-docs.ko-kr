@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3205'
 title: 컴파일러 오류 C3205
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3205
 ms.assetid: 802d306e-5ff3-4491-8a22-c5f1c072d005
-ms.openlocfilehash: e7cb38a687daed93f72655337cd7cd3f25aaa08d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: bc85a414ee4ef1602f911833928b8f8dc7f49476
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80176431"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97164343"
 ---
 # <a name="compiler-error-c3205"></a>컴파일러 오류 C3205
 

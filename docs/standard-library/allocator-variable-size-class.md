@@ -1,4 +1,5 @@
 ---
+description: Allocator_variable_size 클래스에 대해 자세히 알아보세요.
 title: allocator_variable_size 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - stdext::allocator_variable_size
 - stdext::allocators [C++], allocator_variable_size
 ms.assetid: c3aa4105-ae45-4385-bbbe-9f23060478cb
-ms.openlocfilehash: 24769962d615c75f4573a6261b6000fadf39b218
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 9a6f9b6316daefbf436d4718a92312ceb8d55aa4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561351"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163537"
 ---
 # <a name="allocator_variable_size-class"></a>allocator_variable_size 클래스
 

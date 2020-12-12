@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 리소스 컴파일러 오류 RC2112'
 title: 리소스 컴파일러 오류 RC2112
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - RC2112
 ms.assetid: e9f29540-a90d-4989-a6e8-5f8f32015bd9
-ms.openlocfilehash: b7ab5ce14cebc77adcd8c6dbddbcbf8bbb12ceb2
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: da1491147283b9ff2eae2443575e79c7ef79d2cd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80191784"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97133746"
 ---
 # <a name="resource-compiler-error-rc2112"></a>리소스 컴파일러 오류 RC2112
 

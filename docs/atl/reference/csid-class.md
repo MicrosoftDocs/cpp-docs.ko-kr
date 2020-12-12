@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: CSid 클래스'
 title: CSid 클래스
 ms.date: 03/27/2019
 f1_keywords:
@@ -21,12 +22,12 @@ f1_keywords:
 helpviewer_keywords:
 - CSid class
 ms.assetid: be58b7ca-5958-49c3-a833-ca341aaaf753
-ms.openlocfilehash: b6787c0e3f075935f19d51aa73bbd66da9cc0fcb
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b0f5553f14d31a43c0cc581ef43b518fa612616d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835599"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97140805"
 ---
 # <a name="csid-class"></a>CSid 클래스
 
@@ -95,7 +96,7 @@ class CSid
 
 `SID`구조는 사용자 또는 그룹을 고유 하 게 식별 하는 데 사용 되는 가변 길이 구조입니다.
 
-응용 프로그램은 구조를 직접 수정 하면 안 되며 `SID` 대신이 래퍼 클래스에서 제공 되는 메서드를 사용 해야 합니다. 참고 항목을 참조 하세요. [CgetAtlSetOwnerSid sid](security-global-functions.md#atlgetownersid), [atlsetgroupsid](security-global-functions.md#atlsetgroupsid), [Atlgetownersid](security-global-functions.md#atlgetgroupsid)및 [AtlSetOwnerSid](security-global-functions.md#atlsetownersid).
+응용 프로그램은 구조를 직접 수정 하면 안 되며 `SID` 대신이 래퍼 클래스에서 제공 되는 메서드를 사용 해야 합니다. 참고 항목을 참조 하세요. [CgetAtlSetOwnerSid sid](security-global-functions.md#atlgetownersid), [atlsetgroupsid](security-global-functions.md#atlsetgroupsid), [Atlgetownersid](security-global-functions.md#atlgetgroupsid)및 [](security-global-functions.md#atlsetownersid).
 
 Windows의 액세스 제어 모델에 대 한 소개는 Windows SDK [Access Control](/windows/win32/SecAuthZ/access-control) 를 참조 하세요.
 
@@ -166,7 +167,7 @@ Subauthority 수입니다.
 
 ### <a name="remarks"></a>설명
 
-생성자는 개체를 초기화 `CSid` 하거나, 내부 데이터 멤버를 *Sidtypeinvalid*로 설정 하거나, 기존 `CSid` `SID` 또는 기존 계정에서 설정을 복사 합니다.
+생성자는 개체를 초기화 `CSid` 하거나, 내부 데이터 멤버를 *Sidtypeinvalid* 로 설정 하거나, 기존 `CSid` `SID` 또는 기존 계정에서 설정을 복사 합니다.
 
 초기화가 실패 하면 생성자는이 [클래스](../../atl/reference/catlexception-class.md)를 throw 합니다.
 
@@ -452,7 +453,7 @@ bool operator<(
 
 ### <a name="return-value"></a>반환 값
 
-*Lhs* 가 *rhs*보다 작은 경우 TRUE이 고, 그렇지 않으면 FALSE입니다.
+*Lhs* 가 *rhs* 보다 작은 경우 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ## <a name="csidoperator-lt"></a><a name="operator_lt__eq"></a> CSid:: operator &lt;=
 
@@ -474,7 +475,7 @@ bool operator<=(
 
 ### <a name="return-value"></a>반환 값
 
-*Lhs* 가 *rhs*보다 작거나 같으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
+*Lhs* 가 *rhs* 보다 작거나 같으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ## <a name="csidoperator-gt"></a><a name="operator_gt"></a> CSid:: operator &gt;
 
@@ -496,7 +497,7 @@ bool operator>(
 
 ### <a name="return-value"></a>반환 값
 
-*Lhs* 가 *RHS*보다 크면 TRUE이 고, 그렇지 않으면 FALSE입니다.
+*Lhs* 가 *RHS* 보다 크면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ## <a name="csidoperator-gt"></a><a name="operator_gt__eq"></a> CSid:: operator &gt;=
 
@@ -518,7 +519,7 @@ bool operator>=(
 
 ### <a name="return-value"></a>반환 값
 
-*Lhs* 가 *rhs*보다 크거나 같으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
+*Lhs* 가 *rhs* 보다 크거나 같으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ## <a name="csidoperator-const-sid-"></a><a name="operator_const_sid__star"></a> CSid:: operator const SID \*
 
@@ -570,7 +571,7 @@ SID_NAME_USE SidNameUse() const throw();
 
 ### <a name="remarks"></a>설명
 
-[CSid::LoadAccount](#loadaccount) `CSid` `SidNameUse` 를 호출 하 여 해당 상태를 반환 하기 전에 CSid:: loadaccount를 호출 하 여 개체를 업데이트 합니다. `SidNameUse` 는 또는를 호출 하 여 개체의 상태를 변경 하지 `LookupAccountName` 않고 `LookupAccountSid` 현재 상태만 반환 합니다.
+[](#loadaccount) `CSid` `SidNameUse` 를 호출 하 여 해당 상태를 반환 하기 전에 CSid:: loadaccount를 호출 하 여 개체를 업데이트 합니다. `SidNameUse` 는 또는를 호출 하 여 개체의 상태를 변경 하지 `LookupAccountName` 않고 `LookupAccountSid` 현재 상태만 반환 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

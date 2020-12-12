@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 이벤트 처리 전역 함수'
 title: 이벤트 처리 전역 함수
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - event handling, global functions
 - global functions, event handling
 ms.assetid: fd674470-3def-47c3-be1c-894fa85f13e8
-ms.openlocfilehash: fde93415640ef7fa460bb363af4c3cb14b356061
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 89e5ec38ff8884f5b99592541df6e397e2dd7116
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833454"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97139856"
 ---
 # <a name="event-handling-global-functions"></a>이벤트 처리 전역 함수
 

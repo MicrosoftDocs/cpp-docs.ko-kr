@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 예외 처리 매크로'
 title: 예외 처리 매크로
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - exception handling, macros
 - C++ exception handling, macros
 ms.assetid: a8385d34-3fb0-4006-a42a-de045cacf0f4
-ms.openlocfilehash: 7fcd8221ba5f121749cf366a93cc8a6d8d00ed7c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 8d5e6564dec5769fb172c66b3102677e58cbd788
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833441"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97139830"
 ---
 # <a name="exception-handling-macros"></a>예외 처리 매크로
 
 이러한 매크로는 예외 처리에 대 한 지원을 제공 합니다.
 
-|이름|Description|
+|Name|설명|
 |-|-|
 |[_ATLCATCH](#_atlcatch)|연결 된에서 발생 하는 오류를 처리 하는 문입니다 `_ATLTRY` .|
 |[_ATLCATCHALL](#_atlcatchall)|연결 된에서 발생 하는 오류를 처리 하는 문입니다 `_ATLTRY` .|

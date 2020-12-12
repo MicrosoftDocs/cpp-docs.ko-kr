@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _mm_stream_ss'
 title: _mm_stream_ss
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - movntss instruction
 - _mm_stream_ss intrinsic
 ms.assetid: c53dffe9-0dfe-4063-85d3-e8987b870fce
-ms.openlocfilehash: ef1a2045a20070b667d416175826e5377fe30ef6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3af79ee38c09f08ab8e1e5300800846c866972a3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215987"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97133209"
 ---
 # <a name="_mm_stream_ss"></a>_mm_stream_ss
 

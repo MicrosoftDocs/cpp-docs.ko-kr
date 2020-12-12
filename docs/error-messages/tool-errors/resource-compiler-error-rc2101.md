@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 리소스 컴파일러 오류 RC2101'
 title: 리소스 컴파일러 오류 RC2101
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - RC2101
 ms.assetid: 580f9d74-162f-41e9-9438-ddbe3457c359
-ms.openlocfilehash: 3fb576758e447c54e4ddfe7ddb024a1fd35a65f2
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: bed2490f48f40c94724fa249f7722a290cf8d9b1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80191654"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97164135"
 ---
 # <a name="resource-compiler-error-rc2101"></a>리소스 컴파일러 오류 RC2101
 
@@ -19,7 +20,7 @@ ms.locfileid: "80191654"
 
 리소스 컴파일러 파일에 **#pragma** 지시문이 포함 되어 있습니다.
 
-리소스 컴파일러가 포함 파일을 처리할 때 정의 하는 RC_INVOKED 상수를 사용 하 여 **#ifndef** 전처리기 지시문을 사용 합니다. RC_INVOKED 상수가 정의 될 때 처리 되지 않은 코드 블록 안에 **#pragma** 지시문을 추가 합니다. 블록의 코드는 리소스 컴파일러가 아니라 C/C++ 컴파일러에 의해서만 처리 됩니다. 다음 샘플 코드에서는이 기법을 보여 줍니다.
+리소스 컴파일러가 포함 파일을 처리할 때 정의 하는 RC_INVOKED 상수를 사용 하 여 **#ifndef** 전처리기 지시문을 사용 합니다. RC_INVOKED 상수가 정의 될 때 처리 되지 않은 코드 블록 안에 **#pragma** 지시문을 추가 합니다. 블록의 코드는 리소스 컴파일러가 아니라 C/c + + 컴파일러에 의해서만 처리 됩니다. 다음 샘플 코드에서는이 기법을 보여 줍니다.
 
 ```
 #ifndef RC_INVOKED

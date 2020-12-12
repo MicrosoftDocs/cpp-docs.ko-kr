@@ -1,4 +1,5 @@
 ---
+description: 'MFC ActiveX 컨트롤: ActiveX 컨트롤에서 그림 사용에 대해 자세히 알아보세요.'
 title: 'MFC ActiveX 컨트롤: ActiveX 컨트롤에서 그림 사용하기'
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - OnResetState method [MFC]
 - CLSID_CPicturePropPage [MFC]
 ms.assetid: 2e49735c-21b9-4442-bb3d-c82ef258eec9
-ms.openlocfilehash: 9eb204dd240ae17421a20b7cddeff56c9a22c19b
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 9c9989be7503eb449b969fbbf37d92f26c165131
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618071"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97133083"
 ---
 # <a name="mfc-activex-controls-using-pictures-in-an-activex-control"></a>MFC ActiveX 컨트롤: ActiveX 컨트롤에서 그림 사용하기
 
@@ -27,7 +28,7 @@ ms.locfileid: "84618071"
 
 - [컨트롤 프로젝트에 대한 추가](#_core_additions_to_your_control_project)
 
-## <a name="overview-of-custom-picture-properties"></a><a name="_core_overview_of_custom_picture_properties"></a>사용자 지정 그림 속성 개요
+## <a name="overview-of-custom-picture-properties"></a><a name="_core_overview_of_custom_picture_properties"></a> 사용자 지정 그림 속성 개요
 
 그림 형식은 일부 ActiveX 컨트롤에 공통적으로 적용되는 형식 그룹 중 하나입니다. 그림 형식은 메타 파일, 비트맵 또는 아이콘을 처리하며 사용자가 ActiveX 컨트롤에 표시할 그림을 지정할 수 있게 합니다. 사용자 지정 그림 속성은 그림 개체 및 컨트롤 사용자가 그림 속성에 액세스할 수 있게 하는 Get/Set 함수를 사용하여 구현됩니다. 컨트롤 사용자는 스톡 그림 속성 페이지를 사용하여 사용자 지정 그림 속성에 액세스합니다.
 
@@ -39,7 +40,7 @@ ActiveX 컨트롤 클래스는 컨트롤 내에서 그림 속성을 구현하는
 
    이 클래스를 사용하면 사용자 지정 그림 속성이 표시하는 항목에 대한 그림 개체 및 기능에 쉽게 액세스할 수 있습니다.
 
-- Get/Set 함수로 구현된 **LPPICTUREDISP**형식의 속성 지원.
+- Get/Set 함수로 구현된 **LPPICTUREDISP** 형식의 속성 지원.
 
    클래스 뷰를 사용하여 그림 형식을 지원하는 사용자 지정 속성을 빠르게 추가할 수 있습니다. 클래스 뷰를 사용하여 ActiveX 컨트롤 속성을 추가하는 방법에 대한 자세한 내용은 [MFC ActiveX 컨트롤: 속성](mfc-activex-controls-properties.md)문서를 참조하세요.
 
@@ -47,7 +48,7 @@ ActiveX 컨트롤 클래스는 컨트롤 내에서 그림 속성을 구현하는
 
    이 속성 페이지는 ActiveX 컨트롤에서 사용할 수 있는 스톡 속성 페이지 그룹의 일부입니다. ActiveX 컨트롤 속성 페이지에 대한 자세한 내용은 [MFC ActiveX 컨트롤: 스톡 속성 페이지 사용](mfc-activex-controls-using-stock-property-pages.md)을 참조하세요.
 
-## <a name="implementing-a-custom-picture-property-in-your-activex-control"></a><a name="_core_implementing_a_custom_picture_property_in_your_activex_control"></a>ActiveX 컨트롤에서 사용자 지정 그림 속성 구현
+## <a name="implementing-a-custom-picture-property-in-your-activex-control"></a><a name="_core_implementing_a_custom_picture_property_in_your_activex_control"></a> ActiveX 컨트롤에서 사용자 지정 그림 속성 구현
 
 이 섹션에 설명된 단계를 완료하면 컨트롤이 해당 사용자가 선택한 그림을 표시할 수 있습니다. 사용자는 현재 그림을 표시하며 다른 그림을 선택할 수 있게 해주는 찾아보기 단추가 있는 속성 페이지를 사용하여 표시된 그림을 변경할 수 있습니다.
 
@@ -63,7 +64,7 @@ ActiveX 컨트롤 클래스는 컨트롤 내에서 그림 속성을 구현하는
 
    ActiveX 컨트롤 그리기를 담당하는 여러 함수가 수정됩니다.
 
-## <a name="additions-to-your-control-project"></a><a name="_core_additions_to_your_control_project"></a>컨트롤 프로젝트에 추가
+## <a name="additions-to-your-control-project"></a><a name="_core_additions_to_your_control_project"></a> 컨트롤 프로젝트에 추가
 
 표준 그림 속성 페이지의 속성 페이지 ID를 추가 하려면 컨트롤 구현 파일 ()의 BEGIN_PROPPAGEIDS 매크로 뒤에 다음 줄을 삽입 합니다. CPP):
 
@@ -77,7 +78,7 @@ ActiveX 컨트롤 클래스는 컨트롤 내에서 그림 속성을 구현하는
 
 [!code-cpp[NVC_MFC_AxPic#3](codesnippet/cpp/mfc-activex-controls-using-pictures-in-an-activex-control_3.h)]
 
-데이터 멤버의 이름을 *m_pic*하는 것은 필요 하지 않습니다. 모든 이름에는 충분 합니다.
+데이터 멤버의 이름을 *m_pic* 하는 것은 필요 하지 않습니다. 모든 이름에는 충분 합니다.
 
 다음에는 그림 형식을 지원하는 사용자 지정 속성을 추가합니다.
 
@@ -89,17 +90,17 @@ ActiveX 컨트롤 클래스는 컨트롤 내에서 그림 속성을 구현하는
 
 1. 컨트롤의 인터페이스 노드(라이브러리 노드의 두 번째 노드)를 마우스 오른쪽 단추로 클릭하여 바로 가기 메뉴를 엽니다.
 
-1. 바로 가기 메뉴에서 **추가** 를 선택한 다음 **속성 추가**를 선택합니다.
+1. 바로 가기 메뉴에서 **추가** 를 선택한 다음 **속성 추가** 를 선택합니다.
 
 1. **속성 이름** 상자에 속성 이름을 입력합니다. 예제의 경우 이 절차에서 `ControlPicture` 를 사용합니다.
 
 1. **속성 유형** 상자에서 속성 유형에 대해 **IPictureDisp** 를 선택 <strong>\*</strong> 합니다.
 
-1. **구현 형식**에서 **Get/Set 메서드**를 클릭합니다.
+1. **구현 형식** 에서 **Get/Set 메서드** 를 클릭합니다.
 
 1. Get 및 Set 함수의 고유 이름을 입력하거나 기본 이름을 적용합니다. 이 예제에서는 기본 이름 `GetControlPicture` 및 `SetControlPicture` 를 사용합니다.
 
-1. **Finish**를 클릭합니다.
+1. **Finish** 를 클릭합니다.
 
 속성 추가 마법사가 컨트롤 헤더(.H) 파일의 디스패치 맵 주석 사이에 다음 코드를 추가합니다.
 
@@ -116,9 +117,9 @@ ActiveX 컨트롤 클래스는 컨트롤 내에서 그림 속성을 구현하는
 > [!NOTE]
 > 사용자 컨트롤 클래스 및 함수 이름은 위의 예제와 다를 수 있습니다.
 
-### <a name="modifications-to-your-control-project"></a><a name="_core_modifications_to_your_control_project"></a>컨트롤 프로젝트 수정
+### <a name="modifications-to-your-control-project"></a><a name="_core_modifications_to_your_control_project"></a> 컨트롤 프로젝트 수정
 
-컨트롤 프로젝트에 필요한 항목을 추가한 후 ActiveX 컨트롤의 렌더링에 영향을 주는 여러 함수를 수정해야 합니다. 이러한 함수, `OnResetState`, `OnDraw`및 사용자 지정 그림 속성의 Get/Set 함수는 컨트롤 구현 파일에 있습니다. 이 예제에서 컨트롤 클래스는를 호출 하 고 `CSampleCtrl` , `CPictureHolder` 데이터 멤버를 *m_pic*이라고 하며, 사용자 지정 그림 속성 이름은 `ControlPicture` 입니다.
+컨트롤 프로젝트에 필요한 항목을 추가한 후 ActiveX 컨트롤의 렌더링에 영향을 주는 여러 함수를 수정해야 합니다. 이러한 함수, `OnResetState`, `OnDraw`및 사용자 지정 그림 속성의 Get/Set 함수는 컨트롤 구현 파일에 있습니다. 이 예제에서 컨트롤 클래스는를 호출 하 고 `CSampleCtrl` , `CPictureHolder` 데이터 멤버를 *m_pic* 이라고 하며, 사용자 지정 그림 속성 이름은 `ControlPicture` 입니다.
 
 컨트롤 `OnResetState` 함수에서 `COleControl::OnResetState`호출 뒤에 다음과 같은 선택적 줄을 추가합니다.
 

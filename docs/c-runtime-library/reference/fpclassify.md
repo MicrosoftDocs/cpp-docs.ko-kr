@@ -1,4 +1,5 @@
 ---
+description: '에 대 한 자세한 정보: fpclassify'
 title: fpclassify
 ms.date: 04/05/2018
 api_name:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - fpclassify macro
 - fpclassify function
 ms.assetid: bf549499-7ff9-4a58-8692-f2d1cb6bab81
-ms.openlocfilehash: 75cfdc33c21059e190fd04f4cd1b73716e74ac42
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 716684f15e82fb439c16239a61401b892a244f93
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213582"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97164837"
 ---
 # <a name="fpclassify"></a>fpclassify
 
@@ -59,9 +60,9 @@ int fpclassify(
 *x*<br/>
 테스트할 부동 소수점 값입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-**fpclassify** 는 인수 *x*의 부동 소수점 클래스를 나타내는 정수 값을 반환 합니다. 다음 표에서는에 정의 된 **fpclassify**에서 반환 되는 가능한 값을 보여 줍니다 \<math.h> .
+**fpclassify** 는 인수 *x* 의 부동 소수점 클래스를 나타내는 정수 값을 반환 합니다. 다음 표에서는에 정의 된 **fpclassify** 에서 반환 되는 가능한 값을 보여 줍니다 \<math.h> .
 
 |값|설명|
 |-----------|-----------------|

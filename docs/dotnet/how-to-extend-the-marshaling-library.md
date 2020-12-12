@@ -1,16 +1,17 @@
 ---
+description: '자세히 알아보기: 방법: 마샬링 라이브러리 확장'
 title: '방법: 마샬링 라이브러리 확장명'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Marshaling Library, extending
 ms.assetid: 4c4a56d7-1d44-4118-b85f-f9686515e6e9
-ms.openlocfilehash: 071ea72a2aa03dcf16eb0f09e121eba4514e5828
-ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
+ms.openlocfilehash: 829e05002c23f5a5b59efdb5e65dc5769ca7906a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91414609"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97134968"
 ---
 # <a name="how-to-extend-the-marshaling-library"></a>방법: 마샬링 라이브러리 확장명
 
@@ -67,7 +68,7 @@ namespace msclr {
 
 1. 코드를 초기화 하는 방법에 대 한 주석을 `toPtr` 적절 한 빈 값으로 초기화 하는 주석을 바꿉니다. 예를 들어 포인터가 포인터인 경우로 설정 `NULL` 합니다.
 
-1. 변환 논리에 대 한 주석을 `from` 매개 변수를 형식의 개체로 변환 하는 코드로 바꿉니다 *TO* . 변환 된이 개체는에 저장 됩니다 `toPtr` .
+1. 변환 논리에 대 한 주석을 `from` 매개 변수를 형식의 개체로 변환 하는 코드로 바꿉니다  . 변환 된이 개체는에 저장 됩니다 `toPtr` .
 
 1. 설정에 대 한 주석을 `toObject` 변환 된 개체로 설정 하는 코드로 바꿉니다 `toObject` .
 

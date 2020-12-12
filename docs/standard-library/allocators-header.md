@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: &lt; 할당자&gt;'
 title: '&lt;allocators&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,25 +7,25 @@ f1_keywords:
 helpviewer_keywords:
 - allocators header
 ms.assetid: 4393a607-4df8-4278-bbb2-c8ec52e60b83
-ms.openlocfilehash: 69c086515230fd5a9aaa039ef02b7995842fa260
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 38183f58d9b919464a6cdbc31c6f75c539a9461b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87204887"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163485"
 ---
 # <a name="ltallocatorsgt"></a>&lt;allocators&gt;
 
 노드 기반 컨테이너에 대해 메모리 블록을 할당 및 해제하는 데 도움이 되는 여러 템플릿을 정의합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 #include <allocators>
 ```
 
 > [!NOTE]
-> \<allocators>는 Visual Studio 2019 버전 16.3부터 사용 되지 않습니다.
+> \<allocators> 는 Visual Studio 2019 버전 16.3부터 사용 되지 않습니다.
 
 ## <a name="remarks"></a>설명
 
@@ -84,7 +85,7 @@ _Lst1은 `allocator_chunklist` 및 [sync_per_thread](sync-per-thread-class.md) �
 
 템플릿을 인스턴스화할 때 사용 되는 std:: size_t 인수의 값을 다시 바인딩할 수 없는 컴파일러의 경우 캐시의 멤버 함수에 전달 되는 _Sz 인수의 값이 할당 및 할당 취소가 될 필요는 없습니다.
 
-\<allocators>는 다음과 같은 캐시 템플릿을 제공 합니다.
+\<allocators> 는 다음과 같은 캐시 템플릿을 제공 합니다.
 
 - [cache_freelist](cache-freelist-class.md)
 
@@ -92,7 +93,7 @@ _Lst1은 `allocator_chunklist` 및 [sync_per_thread](sync-per-thread-class.md) �
 
 - [cache_chunklist](cache-chunklist-class.md)
 
-필터는 템플릿 인수로 전달 되는 다른 블록 할당자를 사용 하 여 해당 멤버 함수를 구현 하는 블록 할당자입니다. 필터의 가장 일반적인 형태는 동기화 필터입니다. 동기화 필터는 다른 블록 할당자 인스턴스의 멤버 함수에 대한 액세스를 제어하기 위해 동기화 정책을 적용합니다. \<allocators>에서 제공 하는 동기화 필터는 다음과 같습니다.
+필터는 템플릿 인수로 전달 되는 다른 블록 할당자를 사용 하 여 해당 멤버 함수를 구현 하는 블록 할당자입니다. 필터의 가장 일반적인 형태는 동기화 필터입니다. 동기화 필터는 다른 블록 할당자 인스턴스의 멤버 함수에 대한 액세스를 제어하기 위해 동기화 정책을 적용합니다. \<allocators> 에서 제공 하는 동기화 필터는 다음과 같습니다.
 
 - [sync_none](sync-none-class.md)
 
@@ -102,7 +103,7 @@ _Lst1은 `allocator_chunklist` 및 [sync_per_thread](sync-per-thread-class.md) �
 
 - [sync_shared](sync-shared-class.md)
 
-\<allocators>는 또한 여러 개의 블록 할당자 인스턴스를 보유 하 고 컴파일 시간 대신 런타임에 할당 또는 할당 취소에 사용할 인스턴스를 결정 하는 필터 [rts_alloc](rts-alloc-class.md)제공 합니다. rebind를 컴파일할 수 없는 컴파일러에서 사용됩니다.
+\<allocators> 는 또한 여러 개의 블록 할당자 인스턴스를 보유 하 고 컴파일 시간 대신 런타임에 할당 또는 할당 취소에 사용할 인스턴스를 결정 하는 필터 [rts_alloc](rts-alloc-class.md)제공 합니다. rebind를 컴파일할 수 없는 컴파일러에서 사용됩니다.
 
 동기화 정책은 할당자 인스턴스가 다중 스레드의 동시 할당 및 할당 취소 요청을 처리하는 방법을 결정합니다. 가장 간단한 정책은 모든 요청을 기본 캐시 개체에 직접 전달하여 동기화 관리를 사용자에게 맡기는 것입니다. 좀 더 복잡한 정책은 뮤텍스를 사용하여 기본 캐시 개체에 대한 액세스를 직렬화하는 것일 수 있습니다.
 
@@ -110,7 +111,7 @@ _Lst1은 `allocator_chunklist` 및 [sync_per_thread](sync-per-thread-class.md) �
 
 캐시 템플릿은 `cache_freelist` 사용 가능 목록에 저장할 최대 요소 수를 결정 하는 max 클래스 인수를 사용 합니다.
 
-\<allocators>는 다음과 같은 최대 클래스를 제공 합니다.
+\<allocators> 는 다음과 같은 최대 클래스를 제공 합니다.
 
 - [max_none](max-none-class.md)
 
@@ -120,7 +121,7 @@ _Lst1은 `allocator_chunklist` 및 [sync_per_thread](sync-per-thread-class.md) �
 
 - [max_variable_size](max-variable-size-class.md)
 
-### <a name="macros"></a>매크로
+### <a name="macros"></a>Macros
 
 |매크로|설명|
 |-|-|
@@ -132,7 +133,7 @@ _Lst1은 `allocator_chunklist` 및 [sync_per_thread](sync-per-thread-class.md) �
 
 ### <a name="operators"></a>연산자
 
-|연산자|Description|
+|연산자|설명|
 |-|-|
 |[operator! = ( \<allocators> )](allocators-operators.md#op_neq)|지정된 클래스의 할당자 개체가 다른지 테스트합니다.|
 |[operator = = ( \<allocators> )](allocators-operators.md#op_eq_eq)|지정된 클래스의 할당자 개체가 같은지 테스트합니다.|

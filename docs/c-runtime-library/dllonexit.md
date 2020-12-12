@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __dllonexit'
 title: __dllonexit
 ms.date: 11/04/2016
 api_name:
@@ -21,12 +22,12 @@ f1_keywords:
 helpviewer_keywords:
 - __dllonexit
 ms.assetid: 708f2ceb-f95c-46b0-a58d-d68b3fa36f12
-ms.openlocfilehash: 61d63c751dd755bf8a7680c674681e114945814b
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
-ms.translationtype: HT
+ms.openlocfilehash: ef9dc444ecb1b36062a4dc9ea98ec9a15804f930
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70940443"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97151829"
 ---
 # <a name="__dllonexit"></a>__dllonexit
 
@@ -52,7 +53,7 @@ _onexit_t __dllonexit(   _onexit_t func,
 *pend*<br/>
 삭제 시 실행할 함수 목록의 끝 부분을 가리키는 변수에 대한 포인터입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 성공할 경우 사용자 함수에 대한 포인터입니다. 그렇지 않으면 **NULL** 포인터입니다.
 

@@ -1,16 +1,17 @@
 ---
+description: '&lt;Unordered_set 연산자에 대 한 자세한 정보 &gt;'
 title: '&lt;unordered_set&gt; 연산자'
 ms.date: 11/04/2016
 f1_keywords:
 - unordered_set/std::operator!=
 - unordered_set/std::operator==
 ms.assetid: 8653eea6-12f2-4dd7-aa2f-db38a71599a0
-ms.openlocfilehash: 7780b5dd031d6babc13bc202c948c3e8233f7170
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 6404ea9348dedea1e8ecdd4eefbca6b7c1b8158f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90741946"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97153735"
 ---
 # <a name="ltunordered_setgt-operators"></a>&lt;unordered_set&gt; 연산자
 

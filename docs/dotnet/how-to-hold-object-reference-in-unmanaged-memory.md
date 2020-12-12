@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 방법: 관리 되지 않는 메모리에 개체 참조 유지'
 title: '방법: 관리되지 않는 메모리에 개체 참조 유지'
 ms.custom: get-started-article
 ms.date: 11/04/2016
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - references, to objects in native functions
 - gcroot keyword [C++], object reference in native function
 ms.assetid: a61eb8ce-3982-477d-8d3d-2173fd57166d
-ms.openlocfilehash: 13d5bd37a0f5e0b065aecb8c5b264fb70685363f
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 9c54d0ce376e57c5865c2fef5987d878bfa8d7f6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90684510"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97134929"
 ---
 # <a name="how-to-hold-object-reference-in-unmanaged-memory"></a>방법: 관리되지 않는 메모리에 개체 참조 유지
 
@@ -92,6 +93,6 @@ int main() {
 StringWrapper::m_handle == ManagedString
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [C + + Interop 사용 (암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

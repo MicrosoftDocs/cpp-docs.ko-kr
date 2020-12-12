@@ -1,4 +1,5 @@
 ---
+description: 자세히 알아보기:/MANIFESTUAC (매니페스트에 UAC 정보 포함)
 title: /MANIFESTUAC(매니페스트에 UAC 정보 포함)
 ms.date: 06/12/2020
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - MANIFESTUAC linker option
 - -MANIFESTUAC linker option
 ms.assetid: 2d243c39-fa13-493c-b56f-d0d972a1603a
-ms.openlocfilehash: 96719c6f6f5359afb03b967524b1f65db6dc664a
-ms.sourcegitcommit: 8645408c7929558b8162f781776d0908d790a41c
+ms.openlocfilehash: 165f543dab087ca32c91002811d99b9048fa392b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85334936"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97137893"
 ---
 # <a name="manifestuac-embeds-uac-information-in-manifest"></a>/MANIFESTUAC(매니페스트에 UAC 정보 포함)
 
@@ -49,7 +50,7 @@ UAC(사용자 계정 컨트롤) 정보를 program 매니페스트에 포함할�
 
 선택 항목은 다음과 같습니다 **`/MANIFESTUAC:`** _`level`_ .
 
-- **`level='asInvoker'`**: 응용 프로그램이 시작 된 프로세스와 동일한 권한 수준에서 실행 됩니다. **관리자 권한으로 실행**을 선택 하 여 응용 프로그램을 더 높은 권한 수준으로 상승 시킬 수 있습니다.
+- **`level='asInvoker'`**: 응용 프로그램이 시작 된 프로세스와 동일한 권한 수준에서 실행 됩니다. **관리자 권한으로 실행** 을 선택 하 여 응용 프로그램을 더 높은 권한 수준으로 상승 시킬 수 있습니다.
 
 - **`level='highestAvailable'`**: 응용 프로그램이 가능한 가장 높은 권한 수준에서 실행 됩니다. 응용 프로그램을 시작 하는 사용자가 Administrators 그룹의 구성원 인 경우이 옵션은와 동일 합니다 **`level='requireAdministrator'`** . 사용 가능한 가장 높은 권한 수준이 여는 프로세스의 수준 보다 높으면 시스템에서 자격 증명을 묻는 메시지를 표시 합니다.
 
@@ -59,7 +60,7 @@ UAC(사용자 계정 컨트롤) 정보를 program 매니페스트에 포함할�
 
 > **`/MANIFESTUAC:`** \[ **`"`** ] **`level=`** { **`'asInvoker'`** | **`'highestAvailable'`** | **`'requireAdministrator'`** } **`uiAccess=`** { **`'true'`** | **`'false'`** } \[ **`"`** ]
 
-예:
+예를 들어:
 
 **`/MANIFESTUAC:"level='highestAvailable' uiAccess='true'"`**
 
@@ -69,13 +70,13 @@ UAC(사용자 계정 컨트롤) 정보를 program 매니페스트에 포함할�
 
 1. **구성 속성**  >  **링커**  >  **매니페스트 파일** 속성 페이지를 선택 합니다.
 
-1. Uac **(사용자 계정 컨트롤) 사용**, **uac 실행 수준**및 **uac 무시 UI 보호** 속성을 수정 합니다.
+1. Uac **(사용자 계정 컨트롤) 사용**, **uac 실행 수준** 및 **uac 무시 UI 보호** 속성을 수정 합니다.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>프로그래밍 방식으로 이 링커 옵션을 설정하려면
 
 1. See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.EnableUAC%2A>, <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.UACExecutionLevel%2A> 및 <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.UACUIAccess%2A>을 참조하십시오.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [MSVC 링커 참조](linking.md)<br/>
 [MSVC 링커 옵션](linker-options.md)

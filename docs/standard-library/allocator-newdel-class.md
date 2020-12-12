@@ -1,4 +1,5 @@
 ---
+description: Allocator_newdel 클래스에 대해 자세히 알아보세요.
 title: allocator_newdel 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - stdext::allocators [C++], allocator_newdel
 - stdext::allocator_newdel
 ms.assetid: 62666cd2-3afe-49f7-9dd1-9bbbb154da98
-ms.openlocfilehash: 30e0f7902a8af435b46aaedf0b38661b7a6604a8
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 0f514e64258ef0c1e7a4226a55a661216df9b3d5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562599"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163576"
 ---
 # <a name="allocator_newdel-class"></a>allocator_newdel 클래스
 

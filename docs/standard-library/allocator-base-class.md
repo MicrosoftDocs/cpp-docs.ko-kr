@@ -1,4 +1,5 @@
 ---
+description: Allocator_base 클래스에 대해 자세히 알아보세요.
 title: allocator_base 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -38,12 +39,12 @@ helpviewer_keywords:
 - stdext::allocator_base [C++], destroy
 - stdext::allocator_base [C++], max_size
 ms.assetid: f920b45f-2a88-4bb0-8ead-b6126b426ed4
-ms.openlocfilehash: f642c21f2b1060dd5adc5c3d98144592c3413777
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 95da41fd480101c26a2ab71b445790da47144189
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562638"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163641"
 ---
 # <a name="allocator_base-class"></a>allocator_base 클래스
 
@@ -114,7 +115,7 @@ char *_Charalloc(size_type count);
 *수*\
 할당할 배열의 요소 수입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 할당된 개체에 대한 포인터입니다.
 
@@ -157,7 +158,7 @@ const_pointer address(const_reference val);
 *짧은*\
 주소를 검색하는 개체의 const 또는 nonconst 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 각각 const 또는 nonconst 값으로 발견된 개체에 대한 const 또는 nonconst 포인터입니다.
 
@@ -184,7 +185,7 @@ pointer allocate(size_type _Nx);
 *_Hint*\
 이 매개 변수는 무시됩니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 할당된 개체에 대한 포인터입니다.
 
@@ -301,7 +302,7 @@ typedef std::ptrdiff_t difference_type;
 size_type max_size() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 할당할 수 있는 요소의 수입니다.
 

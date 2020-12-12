@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 임시 개체'
 title: 임시 개체
 ms.date: 11/04/2016
 helpviewer_keywords:
 - temporary objects
 - objects [C++], temporary
 ms.assetid: 4c8cec02-391e-4225-9bc6-06d150201412
-ms.openlocfilehash: 0f4cca7100ff8046123f7b2950c1d557797c70f4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d827568013b3684c2126887d390ecbf223c46da5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223553"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97164746"
 ---
 # <a name="temporary-objects"></a>임시 개체
 
@@ -18,7 +19,7 @@ ms.locfileid: "87223553"
 
 - **`const`** 초기화 되는 참조의 기본 형식과 다른 형식의 이니셜라이저를 사용 하 여 참조를 초기화 하려면입니다.
 
-- 사용자 정의 형식을 반환하는 함수의 반환 값을 저장하려는 경우 이러한 임시 개체는 프로그램이 반환 값을 개체에 복사하지 않는 경우에만 만들어집니다. 예를 들면 다음과 같습니다.
+- 사용자 정의 형식을 반환하는 함수의 반환 값을 저장하려는 경우 이러한 임시 개체는 프로그램이 반환 값을 개체에 복사하지 않는 경우에만 만들어집니다. 예를 들어:
 
     ```cpp
     UDT Func1();    //  Declare a function that returns a user-defined

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: &lt; 스택&gt;'
 title: '&lt;stack&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - stack, stack header
 - stack header
 ms.assetid: 89d8999e-c773-46f2-86c1-4b3b5aedb1c1
-ms.openlocfilehash: b2130994ca69dd23f7df3e521deb67263b13d0cc
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: ebb14f25d8a86d11ae0d1837b1b975c97c0ac396
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844290"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97153826"
 ---
 # <a name="ltstackgt"></a>&lt;stack&gt;
 

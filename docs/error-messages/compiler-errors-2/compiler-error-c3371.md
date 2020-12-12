@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3371'
 title: 컴파일러 오류 C3371
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3371
 ms.assetid: f7ecf1aa-ed0a-4f73-81e5-62cf98f88ea1
-ms.openlocfilehash: f4b4b516c3c06bd575b114da62030c94fcee6806
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 8e990cf6de278a4812fabcd5b9f1eafa1810d327
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91503166"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97150763"
 ---
 # <a name="compiler-error-c3371"></a>컴파일러 오류 C3371
 

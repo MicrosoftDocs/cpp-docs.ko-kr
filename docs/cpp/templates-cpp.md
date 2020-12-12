@@ -1,4 +1,5 @@
-﻿---
+---
+description: '자세한 정보: 템플릿 (c + +)'
 title: 템플릿 (C++)
 ms.date: 12/27/2019
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - templates, C++
 - templates [C++]
 ms.assetid: 90fcc14a-2092-47af-9d2e-dba26d25b872
-ms.openlocfilehash: 996458417b20533db074ce2fa13c06860c54247c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 14de4372502748c4d622e8739cad82b78a55daa9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223566"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97164759"
 ---
 # <a name="templates-c"></a>템플릿 (C++)
 
@@ -30,9 +31,9 @@ T minimum(const T& lhs, const T& rhs)
 }
 ```
 
-위의 코드에서는 반환 값과 호출 매개 변수 (lhs 및 rhs)가 모두이 형식인 단일 형식 매개 변수 *T*를 사용 하는 제네릭 함수의 템플릿을 설명 합니다. 형식 매개 변수의 이름을 원하는 대로 지정할 수 있지만 기본적으로 단일 대문자를 사용 하는 것이 가장 일반적으로 사용 됩니다. *T* 는 템플릿 매개 변수입니다. **`typename`** 키워드는이 매개 변수가 형식에 대 한 자리 표시자 임을 의미 합니다. 함수가 호출 되 면 컴파일러는 모든 인스턴스를 `T` 사용자가 지정 하거나 컴파일러에서 추론 한 구체적인 형식 인수로 바꿉니다. 컴파일러가 템플릿에서 클래스 또는 함수를 생성 하는 프로세스를 *템플릿 인스턴스화*라고 합니다. `minimum<int>`는 템플릿을 인스턴스화한 것입니다 `minimum<T>` .
+위의 코드에서는 반환 값과 호출 매개 변수 (lhs 및 rhs)가 모두이 형식인 단일 형식 매개 변수 *T* 를 사용 하는 제네릭 함수의 템플릿을 설명 합니다. 형식 매개 변수의 이름을 원하는 대로 지정할 수 있지만 기본적으로 단일 대문자를 사용 하는 것이 가장 일반적으로 사용 됩니다. *T* 는 템플릿 매개 변수입니다. **`typename`** 키워드는이 매개 변수가 형식에 대 한 자리 표시자 임을 의미 합니다. 함수가 호출 되 면 컴파일러는 모든 인스턴스를 `T` 사용자가 지정 하거나 컴파일러에서 추론 한 구체적인 형식 인수로 바꿉니다. 컴파일러가 템플릿에서 클래스 또는 함수를 생성 하는 프로세스를  *템플릿 인스턴스화* 라고 합니다. `minimum<int>` 는 템플릿을 인스턴스화한 것입니다 `minimum<T>` .
 
-다른 곳에서 사용자는 int에 대해 특수화 된 템플릿 인스턴스를 선언할 수 있습니다. get_a () 및 get_b ()는 int를 반환 하는 함수 라고 가정 합니다.
+다른 곳에서 사용자는 int에 대해 특수화 된 템플릿의 인스턴스를 선언할 수 있습니다. Get_a () 및 get_b ()이 int를 반환 하는 함수인 것으로 가정 합니다.
 
 ```cpp
 int a = get_a();
@@ -40,7 +41,7 @@ int b = get_b();
 int i = minimum<int>(a, b);
 ```
 
-그러나이는 함수 템플릿이 고 컴파일러가 `T` *a* 와 *b*인수에서 형식을 추론할 수 있으므로 일반 함수와 마찬가지로 호출할 수 있습니다.
+그러나이는 함수 템플릿이 고 컴파일러가 `T` *a* 와 *b* 인수에서 형식을 추론할 수 있으므로 일반 함수와 마찬가지로 호출할 수 있습니다.
 
 ```cpp
 int i = minimum(a, b);
@@ -57,7 +58,7 @@ int minimum(const int& lhs, const int& rhs)
 
 컴파일러가 함수 템플릿에서 형식 추론을 수행 하는 방법에 대 한 규칙은 일반 함수에 대 한 규칙을 기반으로 합니다. 자세한 내용은 [함수 템플릿 호출의 오버 로드 확인](../cpp/overload-resolution-of-function-template-calls.md)을 참조 하세요.
 
-## <a name="type-parameters"></a><a id="type_parameters"></a>형식 매개 변수
+## <a name="type-parameters"></a><a id="type_parameters"></a> 형식 매개 변수
 
 `minimum`위의 템플릿에서 형식 매개 변수 *T* 는 const 및 참조 한정자가 추가 되는 함수 호출 매개 변수에 사용 될 때까지 정규화 되지 않습니다.
 
@@ -151,9 +152,9 @@ auto v2 = constant<true>;   // v2 == true, decltype(v2) is bool
 auto v3 = constant<'a'>;    // v3 == 'a', decltype(v3) is char
 ```
 
-## <a name="templates-as-template-parameters"></a><a id="template_parameters"></a>템플릿 매개 변수로 서의 템플릿
+## <a name="templates-as-template-parameters"></a><a id="template_parameters"></a> 템플릿 매개 변수로 서의 템플릿
 
-템플릿은 템플릿 매개 변수가 될 수 있습니다. 이 예제에서 MyClass2에는 두 개의 템플릿 매개 변수, 즉 typename 매개 변수 *T* 와 템플릿 매개 변수 *Arr*이 있습니다.
+템플릿은 템플릿 매개 변수가 될 수 있습니다. 이 예제에서 MyClass2에는 두 개의 템플릿 매개 변수, 즉 typename 매개 변수 *T* 와 템플릿 매개 변수 *Arr* 이 있습니다.
 
 ```cpp
 template<typename T, template<typename U, int I> class Arr>
@@ -165,7 +166,7 @@ class MyClass2
 };
 ```
 
-*Arr* 매개 변수 자체에는 본문이 없으므로 매개 변수 이름이 필요 하지 않습니다. 실제로는의 본문 내에서 *Arr*의 typename 또는 클래스 매개 변수 이름을 참조 하는 것은 오류입니다 `MyClass2` . 따라서 다음 예제와 같이 *Arr*의 형식 매개 변수 이름을 생략할 수 있습니다.
+*Arr* 매개 변수 자체에는 본문이 없으므로 매개 변수 이름이 필요 하지 않습니다. 실제로는의 본문 내에서 *Arr* 의 typename 또는 클래스 매개 변수 이름을 참조 하는 것은 오류입니다 `MyClass2` . 따라서 다음 예제와 같이  *Arr* 의 형식 매개 변수 이름을 생략할 수 있습니다.
 
 ```cpp
 template<typename T, template<typename, int> class Arr>
@@ -215,7 +216,7 @@ int main()
 
 ## <a name="template-specialization"></a>템플릿 특수화
 
-경우에 따라 템플릿에서 모든 형식에 대해 정확 하 게 동일한 코드를 정의 하는 것이 불가능 하거나 바람직하지 않습니다. 예를 들어 형식 인수가 포인터 또는 std:: wstring 이거나 특정 기본 클래스에서 파생 된 형식인 경우에만 실행할 코드 경로를 정의할 수 있습니다.  이러한 경우 해당 특정 형식에 대 한 템플릿의 *특수화* 를 정의할 수 있습니다. 사용자가 해당 형식을 사용 하 여 템플릿을 인스턴스화하면 컴파일러가 특수화를 사용 하 여 클래스를 생성 하 고 다른 모든 형식의 경우 컴파일러는 더 일반적인 템플릿을 선택 합니다. 모든 매개 변수가 특수화 된 특수화는 *완전 한 특수화*입니다. 일부 매개 변수만 특수화 된 경우 *부분 특수화*라고 합니다.
+경우에 따라 템플릿에서 모든 형식에 대해 정확 하 게 동일한 코드를 정의 하는 것이 불가능 하거나 바람직하지 않습니다. 예를 들어 형식 인수가 포인터 또는 std:: wstring 이거나 특정 기본 클래스에서 파생 된 형식인 경우에만 실행할 코드 경로를 정의할 수 있습니다.  이러한 경우 해당 특정 형식에 대 한 템플릿의 *특수화* 를 정의할 수 있습니다. 사용자가 해당 형식을 사용 하 여 템플릿을 인스턴스화하면 컴파일러가 특수화를 사용 하 여 클래스를 생성 하 고 다른 모든 형식의 경우 컴파일러는 더 일반적인 템플릿을 선택 합니다. 모든 매개 변수가 특수화 된 특수화는 *완전 한 특수화* 입니다. 일부 매개 변수만 특수화 된 경우 *부분 특수화* 라고 합니다.
 
 ```cpp
 template <typename K, typename V>

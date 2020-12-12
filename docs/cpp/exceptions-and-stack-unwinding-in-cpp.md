@@ -1,17 +1,18 @@
 ---
+description: '자세한 정보: c + +에서 예외 및 스택 해제'
 title: C++ 예외 및 스택 해제
 ms.date: 11/19/2019
 ms.assetid: a1a57eae-5fc5-4c49-824f-3ce2eb8129ed
-ms.openlocfilehash: e0dadc90f85caeea359fca4ed0b45868ea77177e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4f9c5faff4dafcae41831eb4b24345134912b073
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221564"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97164785"
 ---
 # <a name="exceptions-and-stack-unwinding-in-c"></a>C++에서 예외 및 스택 해제
 
-C++ 예외 메커니즘에서 컨트롤은 throw 문에서 throw된 형식을 처리할 수 있는 첫 번째 catch 문으로 이동합니다. Catch 문에 도달 하면 throw 및 catch 문 사이의 범위에 있는 모든 자동 변수는 *스택*해제로 알려진 프로세스에서 제거 됩니다. 스택 해제에서 실행은 다음과 같이 진행됩니다.
+C++ 예외 메커니즘에서 컨트롤은 throw 문에서 throw된 형식을 처리할 수 있는 첫 번째 catch 문으로 이동합니다. Catch 문에 도달 하면 throw 및 catch 문 사이의 범위에 있는 모든 자동 변수는 *스택* 해제로 알려진 프로세스에서 제거 됩니다. 스택 해제에서 실행은 다음과 같이 진행됩니다.
 
 1. 제어가 **`try`** 일반적인 순차적 실행에 의해 문에 도달 합니다. 블록의 보호 된 섹션이 **`try`** 실행 됩니다.
 

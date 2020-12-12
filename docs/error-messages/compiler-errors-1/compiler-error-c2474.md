@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2474'
 title: 컴파일러 오류 C2474
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2474
 ms.assetid: 64e6c61e-6e77-480e-bcf0-b30a2fc482ac
-ms.openlocfilehash: ed2ba0d80ffcf2ef83abd551026bc6df4939ffbd
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: adbfce63a5a8d97707bfb8e73dfda265f5d5e328
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74743733"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97164408"
 ---
 # <a name="compiler-error-c2474"></a>컴파일러 오류 C2474
 

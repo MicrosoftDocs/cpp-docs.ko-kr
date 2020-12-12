@@ -1,23 +1,24 @@
 ---
+description: '자세한 정보: 람다 식의 예'
 title: 람다 식의 예
 ms.date: 05/07/2019
 helpviewer_keywords:
 - lambda expressions [C++], examples
 ms.assetid: 52506b15-0771-4190-a966-2f302049ca86
-ms.openlocfilehash: 585e76119b0e848e322c88ad0149ebb42c6b5b1d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 91c29bd1cd49045d51421d76bd46b3c121cfca3f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221603"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97164808"
 ---
 # <a name="examples-of-lambda-expressions"></a>람다 식의 예
 
 이 문서에서는 프로그램에 람다 식을 사용하는 방법을 보여 줍니다. 람다 식에 대 한 개요는 [람다 식](../cpp/lambda-expressions-in-cpp.md)을 참조 하세요. 람다 식의 구조에 대 한 자세한 내용은 [람다 식 구문](../cpp/lambda-expression-syntax.md)을 참조 하세요.
 
-## <a name="declaring-lambda-expressions"></a><a name="declaringLambdaExpressions"></a>람다 식 선언
+## <a name="declaring-lambda-expressions"></a><a name="declaringLambdaExpressions"></a> 람다 식 선언
 
-### <a name="example-1"></a>예제 1
+### <a name="example-1"></a>예 1
 
 람다 식이 형식화 되어 있기 때문에 다음과 같이 변수나 개체에 할당할 수 있습니다 **`auto`** [`function`](../standard-library/function-class.md) .
 
@@ -99,11 +100,11 @@ int main()
 
 [[이 문서의](#top)내용]
 
-## <a name="calling-lambda-expressions"></a><a name="callingLambdaExpressions"></a>람다 식 호출
+## <a name="calling-lambda-expressions"></a><a name="callingLambdaExpressions"></a> 람다 식 호출
 
 다음 코드 조각과 같이 람다 식을 즉시 호출할 수 있습니다. 두 번째 코드 조각은 람다를와 같은 c + + 표준 라이브러리 알고리즘에 인수로 전달 하는 방법을 보여 줍니다 `find_if` .
 
-### <a name="example-1"></a>예제 1
+### <a name="example-1"></a>예 1
 
 이 예제에서는 두 정수의 합을 반환하고 식 인수를 사용하여 인수 `5` 및 `4`로 식을 즉시 호출하는 람다 식을 선언합니다.
 
@@ -179,7 +180,7 @@ The first even number in the list is 42.
 
 [[이 문서의](#top)내용]
 
-## <a name="nesting-lambda-expressions"></a><a name="nestingLambdaExpressions"></a>람다 식 중첩
+## <a name="nesting-lambda-expressions"></a><a name="nestingLambdaExpressions"></a> 람다 식 중첩
 
 ### <a name="example"></a>예제
 
@@ -217,7 +218,7 @@ int main()
 
 [[이 문서의](#top)내용]
 
-## <a name="higher-order-lambda-functions"></a><a name="higherOrderLambdaExpressions"></a>고차 람다 함수
+## <a name="higher-order-lambda-functions"></a><a name="higherOrderLambdaExpressions"></a> Higher-Order 람다 함수
 
 ### <a name="example"></a>예제
 
@@ -266,7 +267,7 @@ int main()
 
 [[이 문서의](#top)내용]
 
-## <a name="using-a-lambda-expression-in-a-function"></a><a name="methodLambdaExpressions"></a>함수에서 람다 식 사용
+## <a name="using-a-lambda-expression-in-a-function"></a><a name="methodLambdaExpressions"></a> 함수에서 람다 식 사용
 
 ### <a name="example"></a>예제
 
@@ -359,7 +360,7 @@ int main()
 
 [[이 문서의](#top)내용]
 
-## <a name="using-lambda-expressions-with-templates"></a><a name="templateLambdaExpressions"></a>템플릿에 람다 식 사용
+## <a name="using-lambda-expressions-with-templates"></a><a name="templateLambdaExpressions"></a> 템플릿에 람다 식 사용
 
 ### <a name="example"></a>예제
 
@@ -423,7 +424,7 @@ C + + 템플릿에 대 한 자세한 내용은 [템플릿](../cpp/templates-cpp.
 
 [[이 문서의](#top)내용]
 
-## <a name="handling-exceptions"></a><a name="ehLambdaExpressions"></a>예외 처리
+## <a name="handling-exceptions"></a><a name="ehLambdaExpressions"></a> 예외 처리
 
 ### <a name="example"></a>예제
 
@@ -479,7 +480,7 @@ Caught 'invalid vector<T> subscript'.
 
 [[이 문서의](#top)내용]
 
-## <a name="using-lambda-expressions-with-managed-types-ccli"></a><a name="managedLambdaExpressions"></a>관리 되는 형식이 있는 람다 식 사용 (c + +/CLI)
+## <a name="using-lambda-expressions-with-managed-types-ccli"></a><a name="managedLambdaExpressions"></a> 관리 되는 형식이 있는 람다 식 사용 (c + +/CLI)
 
 ### <a name="example"></a>예제
 
@@ -519,15 +520,15 @@ STL/CLR 라이브러리에서 람다 식을 사용할 수도 있습니다. 자�
 
 [[이 문서의](#top)내용]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [람다 식](../cpp/lambda-expressions-in-cpp.md)<br/>
 [람다 식 구문](../cpp/lambda-expression-syntax.md)<br/>
 [`auto`](../cpp/auto-cpp.md)<br/>
-[`function`클래스](../standard-library/function-class.md)<br/>
+[`function` 클래스](../standard-library/function-class.md)<br/>
 [`find_if`](../standard-library/algorithm-functions.md#find_if)<br/>
 [`<algorithm>`](../standard-library/algorithm.md)<br/>
 [함수 호출](../cpp/function-call-cpp.md)<br/>
-[모음](../cpp/templates-cpp.md)<br/>
+[템플릿](../cpp/templates-cpp.md)<br/>
 [예외 처리](../cpp/exception-handling-in-visual-cpp.md)<br/>
 [STL/CLR 라이브러리 참조](../dotnet/stl-clr-library-reference.md)

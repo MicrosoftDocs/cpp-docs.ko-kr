@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2250'
 title: 컴파일러 오류 C2250
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2250
 ms.assetid: f990986f-5c7d-4af4-a25c-b35540f1e217
-ms.openlocfilehash: 472aabf00fecd000f274d97b5753ed8460ff867f
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 5d018a01899ac74f148b2f0467feff9d7cecc025
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74758868"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97134843"
 ---
 # <a name="compiler-error-c2250"></a>컴파일러 오류 C2250
 

@@ -1,4 +1,5 @@
 ---
+description: Aligned_storage 클래스에 대해 자세히 알아보세요.
 title: aligned_storage 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - aligned_storage class
 - aligned_storage
 ms.assetid: f255e345-1f05-4d07-81e4-017f420839fb
-ms.openlocfilehash: 741106888cdab63a75e090e860269f125c35efa6
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: c64be243ff724994cc27a57ce51d7ff0f81b6f9d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84623837"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163680"
 ---
 # <a name="aligned_storage-class"></a>aligned_storage 클래스
 
@@ -38,7 +39,7 @@ using aligned_storage_t = typename aligned_storage<Len, Align>::type;
 
 ## <a name="remarks"></a>설명
 
-템플릿 멤버 typedef는 `type` 맞춤 *정렬* 및 크기 *길이가*인 POD 형식의 동의어입니다. *Align* 은 `alignment_of<T>::value` 일부 형식 `T` 또는 기본 맞춤에 대해와 같아야 합니다.
+템플릿 멤버 typedef는 `type` 맞춤 *정렬* 및 크기 *길이가* 인 POD 형식의 동의어입니다. *Align* 은 `alignment_of<T>::value` 일부 형식 `T` 또는 기본 맞춤에 대해와 같아야 합니다.
 
 ## <a name="example"></a>예제
 

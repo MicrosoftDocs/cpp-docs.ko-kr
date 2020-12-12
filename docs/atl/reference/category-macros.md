@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 범주 매크로'
 title: 범주 매크로
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 - atlcom/ATL::IMPLEMENTED_CATEGORY
 - atlcom/ATL::REQUIRED_CATEGORY
 ms.assetid: 223578cb-6180-4787-a8d8-ba3787a5d3ee
-ms.openlocfilehash: 0db32c9550cd76fbc8e1f6776b8ecf4cceffebd7
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 31cbef36ca02fb990ba8935915837074d7dd4116
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833896"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165084"
 ---
 # <a name="category-macros"></a>범주 매크로
 
@@ -102,7 +103,7 @@ IMPLEMENTED_CATEGORY(catID)
 |단순 데이터 바인딩|CATID_PropertyNotifyControl|{157083E1-2368-11cf-87B9-00AA006C8166}|
 |고급 데이터 바인딩|CATID_VBDataBound|{157083E2-2368-11cf-87B9-00AA006C8166}|
 |창 없는 컨트롤|CATID_WindowlessObject|{1D06B600-3AE3-11cf-87B9-00AA006C8166}|
-|인터넷 인식 개체|샘플 목록은 Windows SDK의 [인터넷 인식 개체](/windows/win32/com/internet-aware-objects) 를 참조 하세요.||
+|개체 Internet-Aware|샘플 목록은 Windows SDK의 [인터넷 인식 개체](/windows/win32/com/internet-aware-objects) 를 참조 하세요.||
 
 ### <a name="example"></a>예제
 
@@ -139,7 +140,7 @@ REQUIRED_CATEGORY( catID )
 |단순 데이터 바인딩|CATID_PropertyNotifyControl|{157083E1-2368-11cf-87B9-00AA006C8166}|
 |고급 데이터 바인딩|CATID_VBDataBound|{157083E2-2368-11cf-87B9-00AA006C8166}|
 |창 없는 컨트롤|CATID_WindowlessObject|{1D06B600-3AE3-11cf-87B9-00AA006C8166}|
-|인터넷 인식 개체|샘플 목록은 Windows SDK의 [인터넷 인식 개체](/windows/win32/com/internet-aware-objects) 를 참조 하세요.||
+|개체 Internet-Aware|샘플 목록은 Windows SDK의 [인터넷 인식 개체](/windows/win32/com/internet-aware-objects) 를 참조 하세요.||
 
 ### <a name="example"></a>예제
 

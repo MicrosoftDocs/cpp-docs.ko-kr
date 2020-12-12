@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 스레드'
 title: 스레드(thread)
 ms.date: 05/07/2019
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - TLS (thread local storage), compiler implementation
 - __declspec keyword [C++], thread
 ms.assetid: 667f2a77-6d1f-4b41-bee8-05e67324fab8
-ms.openlocfilehash: 13e6d45642c08a97c06d7099b83e632501267310
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7b83686b6641585e7e7af334a6127c71a9171610
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225815"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97164707"
 ---
 # <a name="thread"></a>스레드(thread)
 
@@ -22,7 +23,7 @@ ms.locfileid: "87225815"
 
 **`thread`** 확장 된 저장소 클래스 한정자는 스레드 지역 변수를 선언 하는 데 사용 됩니다. C + + 11 이상에서 이식 가능한 해당 항목의 경우 이식 가능한 코드에 [thread_local](../cpp/storage-classes-cpp.md#thread_local) 저장소 클래스 지정자를 사용 합니다. Windows에서는를 **`thread_local`** 사용 하 여를 구현 **`__declspec(thread)`** 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 **`__declspec(thread)`***선언 자*
 
@@ -71,7 +72,7 @@ __declspec( thread ) int tls_i = 1;
     __declspec( thread ) B2 BObject2;   // BObject2 declared thread local.
     ```
 
-- 표준 C에서는 비정적 개체에 한 해 자신에 대 한 참조를 포함 하는 식을 사용 하 여 개체 또는 변수를 초기화할 수 있습니다. C + +에서는 일반적으로 자신에 대 한 참조를 포함 하는 식으로 개체를 동적으로 초기화할 수 있지만 스레드 로컬 개체에는이 형식의 초기화가 허용 되지 않습니다. 예를 들면 다음과 같습니다.
+- 표준 C에서는 비정적 개체에 한 해 자신에 대 한 참조를 포함 하는 식을 사용 하 여 개체 또는 변수를 초기화할 수 있습니다. C + +에서는 일반적으로 자신에 대 한 참조를 포함 하는 식으로 개체를 동적으로 초기화할 수 있지만 스레드 로컬 개체에는이 형식의 초기화가 허용 되지 않습니다. 예를 들어:
 
    ```cpp
    // declspec_thread_3.cpp
@@ -88,5 +89,5 @@ __declspec( thread ) int tls_i = 1;
 ## <a name="see-also"></a>참조
 
 [__declspec](../cpp/declspec.md)<br/>
-[C++ 키워드](../cpp/keywords-cpp.md)<br/>
+[키워드](../cpp/keywords-cpp.md)<br/>
 [TLS (스레드 로컬 저장소)](../parallel/thread-local-storage-tls.md)

@@ -1,4 +1,5 @@
 ---
+description: Allocator_traits 클래스에 대해 자세히 알아보세요.
 title: allocator_traits 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -40,16 +41,16 @@ helpviewer_keywords:
 - std::allocator_traits [C++], destroy
 - std::allocator_traits [C++], max_size
 - std::allocator_traits [C++], select_on_container_copy_construction
-ms.openlocfilehash: 8ab46ebf85531af052bc19bc5f0088f0f564793b
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d60658c5f8cf6217dff7a846f0e5cbae42e6a565
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844810"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163563"
 ---
 # <a name="allocator_traits-class"></a>allocator_traits 클래스
 
-클래스 템플릿은 *할당자 형식을*보완 하는 개체를 설명 합니다. 할당자 형식은 할당된 스토리지를 관리하는 데 사용되는 할당자 개체를 설명하는 형식입니다. 특히 할당자 형식 `Alloc`에 대해서는 할당자를 사용할 수 있는 컨테이너에 필요한 모든 정보를 확인하기 위해 `allocator_traits<Alloc>`를 사용할 수 있습니다. 자세한 내용은 기본 [allocator 클래스](allocator-class.md)를 참조하세요.
+클래스 템플릿은 *할당자 형식을* 보완 하는 개체를 설명 합니다. 할당자 형식은 할당된 스토리지를 관리하는 데 사용되는 할당자 개체를 설명하는 형식입니다. 특히 할당자 형식 `Alloc`에 대해서는 할당자를 사용할 수 있는 컨테이너에 필요한 모든 정보를 확인하기 위해 `allocator_traits<Alloc>`를 사용할 수 있습니다. 자세한 내용은 기본 [allocator 클래스](allocator-class.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -223,7 +224,7 @@ static Alloc select_on_container_copy_construction(const Alloc& al);
 
 #### <a name="return-value"></a>반환 값
 
-`al.select_on_container_copy_construction()`형식이 올바른 형식이 면이 메서드는을 반환 하 고 그렇지 않으면 *al*을 반환 합니다.
+`al.select_on_container_copy_construction()`형식이 올바른 형식이 면이 메서드는을 반환 하 고 그렇지 않으면 *al* 을 반환 합니다.
 
 #### <a name="remarks"></a>설명
 

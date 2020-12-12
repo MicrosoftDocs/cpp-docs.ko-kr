@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: &lt; 할당자 &gt; 매크로'
 title: '&lt;allocators&gt; macros'
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - std::CACHE_FREELIST [C++]
 - std::CACHE_SUBALLOC [C++]
 - std::SYNC_DEFAULT [C++]
-ms.openlocfilehash: dbf7577969ec43de47339bf80327007ac857a5a7
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: c4866495787cbf502997ca08a06e57ed667f4e9a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834975"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163524"
 ---
 # <a name="ltallocatorsgt-macros"></a>&lt;allocators&gt; macros
 

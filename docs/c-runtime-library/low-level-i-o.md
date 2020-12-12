@@ -1,4 +1,5 @@
 ---
+description: Low-Level i/o에 대해 자세히 알아보세요.
 title: 하위 수준 I/O
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - file handles [C++]
 - file handles [C++], I/O functions
 ms.assetid: 53e11bdd-6720-481c-8b2b-3a3a569ed534
-ms.openlocfilehash: acf07682e9045800bb04aa4c9d6abc5ae4376280
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 88e159e9f85cd4f893616d3aef935417f5abde52
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79443109"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97164980"
 ---
 # <a name="low-level-io"></a>하위 수준 I/O
 
@@ -21,7 +22,7 @@ ms.locfileid: "79443109"
 
 하위 수준 루틴에서는 다음과 같은 미리 정의된 파일 설명자를 사용하여 프로그램을 시작할 때 열린 표준 스트림에 액세스할 수 있습니다.
 
-|STREAM|파일 설명자|
+|스트림|파일 설명자|
 |------------|---------------------|
 |**stdin**|0|
 |**stdout**|1|
@@ -31,7 +32,7 @@ ms.locfileid: "79443109"
 
 ## <a name="low-level-io-functions"></a>하위 수준 I/O 함수
 
-|함수|사용|
+|함수|기능|
 |--------------|---------|
 |[_close](../c-runtime-library/reference/close.md)|파일 닫기|
 |[_commit](../c-runtime-library/reference/commit.md)|디스크에 파일 플러시|
@@ -47,7 +48,7 @@ ms.locfileid: "79443109"
 |[_umask](../c-runtime-library/reference/umask.md), [_umask_s](../c-runtime-library/reference/umask-s.md)|파일 사용 권한 마스크 설정|
 |[_write](../c-runtime-library/reference/write.md)|파일에 데이터 쓰기|
 
-**_dup** 및 **_dup2**는 일반적으로 미리 정의된 파일 설명자를 다른 파일에 연결하는 데 사용됩니다.
+**_dup** 및 **_dup2** 는 일반적으로 미리 정의된 파일 설명자를 다른 파일에 연결하는 데 사용됩니다.
 
 ## <a name="see-also"></a>참고 항목
 

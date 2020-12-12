@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CSimpleMap 클래스'
 title: CSimpleMap 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -23,16 +24,16 @@ f1_keywords:
 helpviewer_keywords:
 - CSimpleMap class
 ms.assetid: 61b06eb4-ae73-44b0-a305-0afb5a33e8b1
-ms.openlocfilehash: eed41c2250728d257b6d303e79c3afd36a543dbb
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 66640e3fcd325d59b82a10d98188a6fcd74ca79d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81747647"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97140623"
 ---
 # <a name="csimplemap-class"></a>CSimpleMap 클래스
 
-이 클래스는 간단한 매핑 배열에 대한 지원을 제공합니다.
+이 클래스는 간단한 매핑 배열을 지원 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -44,69 +45,69 @@ class CSimpleMap
 #### <a name="parameters"></a>매개 변수
 
 *TKey*<br/>
-키 요소 유형입니다.
+키 요소 형식입니다.
 
-*TVal (주)*<br/>
+*TVal*<br/>
 값 요소 형식입니다.
 
-*TEqual*<br/>
-특성 개체, 형식의 `T`요소에 대 한 같음 테스트를 정의 합니다.
+*Te Al*<br/>
+형식 요소에 대 한 같음 테스트를 정의 하는 특성 개체 `T` 입니다.
 
 ## <a name="members"></a>멤버
 
 ### <a name="public-typedefs"></a>공용 Typedefs
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|[C심플맵::_ArrayElementType](#_arrayelementtype)|값 형식에 대 한 typedef입니다.|
-|[C심플맵::_ArrayKeyType](#_arraykeytype)|키 유형에 대한 형식 def입니다.|
+|[CSimpleMap: _ArrayElementType](#_arrayelementtype)|값 형식에 대 한 Typedef입니다.|
+|[CSimpleMap: _ArrayKeyType](#_arraykeytype)|키 형식에 대 한 Typedef입니다.|
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[C심플맵::C심플맵](#csimplemap)|생성자입니다.|
-|[CSimplemap::~CSimpleMap](#dtor)|소멸자입니다.|
+|[Csimplemap: CSimpleMap](#csimplemap)|생성자입니다.|
+|[Csimplemap: ~ CSimpleMap](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[C심플맵::추가](#add)|맵 배열에 키 및 관련 값을 추가합니다.|
-|[C심플맵::찾기키](#findkey)|특정 키를 찾습니다.|
-|[C심플맵::찾기](#findval)|특정 값을 찾습니다.|
-|[C심플맵::겟키앳](#getkeyat)|지정된 키를 검색합니다.|
-|[C심플맵::겟사이즈](#getsize)|매핑 배열의 항목 수를 반환합니다.|
-|[C심플맵::GetValueAt](#getvalueat)|지정된 값을 검색합니다.|
-|[C심플맵::조회](#lookup)|지정된 키와 연결된 값을 반환합니다.|
-|[C심플맵::제거](#remove)|키 및 일치 값을 제거합니다.|
-|[C심플맵::모두 제거](#removeall)|모든 키와 값을 제거합니다.|
-|[C심플맵::리무브앳](#removeat)|특정 키 및 일치 값을 제거합니다.|
-|[C심플맵::리버스룩업](#reverselookup)|지정된 값과 연결된 키를 반환합니다.|
-|[C심플맵::세팅](#setat)|지정된 키와 연결된 값을 설정합니다.|
-|[C심플맵::SetAtIndex](#setatindex)|특정 키와 값을 설정합니다.|
+|[CSimpleMap:: Add](#add)|지도 배열에 키 및 연결 된 값을 추가 합니다.|
+|[CSimpleMap:: FindKey](#findkey)|특정 키를 찾습니다.|
+|[CSimpleMap: FindVal](#findval)|특정 값을 찾습니다.|
+|[CSimpleMap:: GetKeyAt](#getkeyat)|지정 된 키를 검색 합니다.|
+|[CSimpleMap: GetSize](#getsize)|매핑 배열의 항목 수를 반환 합니다.|
+|[CSimpleMap: GetValueAt](#getvalueat)|지정 된 값을 검색 합니다.|
+|[CSimpleMap: Lookup](#lookup)|지정 된 키와 연결 된 값을 반환 합니다.|
+|[CSimpleMap:: Remove](#remove)|키와 일치 하는 값을 제거 합니다.|
+|[CSimpleMap::](#removeall)|모든 키와 값을 제거 합니다.|
+|[CSimpleMap: RemoveAt](#removeat)|특정 키와 일치 하는 값을 제거 합니다.|
+|[CSimpleMap::](#reverselookup)|지정 된 값과 연결 된 키를 반환 합니다.|
+|[Csimpl\at:: SetAt](#setat)|지정 된 키와 연결 된 값을 설정 합니다.|
+|[CSimpleMap::](#setatindex)|특정 키와 값을 설정 합니다.|
 
 ## <a name="remarks"></a>설명
 
-`CSimpleMap`지정된 형식의 `T`간단한 매핑 배열을 지원하여 키 요소및 관련 값의 정렬되지 않은 배열을 관리합니다.
+`CSimpleMap` 지정 된 형식의 간단한 매핑 배열을 지원 `T` 하 여 키 요소 및 관련 값의 순서가 지정 되지 않은 배열을 관리 합니다.
 
-매개 `TEqual` 변수는 형식의 `T`두 요소에 대한 같음 함수를 정의하는 수단을 제공합니다. [CSimpleMapEqualHelper와](../../atl/reference/csimplemapequalhelper-class.md)유사한 클래스를 만들어 지정된 배열에 대한 같음 테스트의 동작을 변경할 수 있습니다. 예를 들어 포인터 배열을 처리할 때 포인터참조 값에 따라 같음을 정의하는 것이 유용할 수 있습니다. 기본 구현은 **연산자==()를**사용합니다.
+매개 변수는 `TEqual` 형식의 두 요소에 대해 같음 함수를 정의 하는 방법을 제공 합니다 `T` . [CSimpleMapEqualHelper](../../atl/reference/csimplemapequalhelper-class.md)와 유사한 클래스를 만들면 지정 된 배열에 대 한 같음 테스트의 동작을 변경할 수 있습니다. 예를 들어 포인터의 배열을 처리할 때 포인터가 참조 하는 값에 따라 같음을 정의 하는 것이 유용할 수 있습니다. 기본 구현에서는 **operator = = ()** 를 활용 합니다.
 
-이전 `CSimpleMap` ATL 릴리스와의 호환성을 위해 두 가지 및 [CSimpleArray가](../../atl/reference/csimplearray-class.md) 제공되며 보다 완전하고 효율적인 컬렉션 구현은 [CAtlArray](../../atl/reference/catlarray-class.md) 및 [CAtlMap에서](../../atl/reference/catlmap-class.md)제공됩니다.
+`CSimpleMap`및 [CSimpleArray](../../atl/reference/csimplearray-class.md) 모두 이전 ATL 릴리스와의 호환성을 위해 제공 되며, 더 완전 하 고 효율적인 컬렉션 구현은 [CAtlArray](../../atl/reference/catlarray-class.md) 및 [catlmap](../../atl/reference/catlmap-class.md)에서 제공 됩니다.
 
-ATL 및 MFC의 다른 맵 컬렉션과 달리 이 클래스는 간단한 배열로 구현되며 조회 검색에는 선형 검색이 필요합니다. `CAtlMap`배열에 많은 수의 요소가 포함되어 있는 경우에 사용해야 합니다.
+ATL 및 MFC의 다른 맵 컬렉션과 달리이 클래스는 단순 배열을 사용 하 여 구현 되 고 조회 검색에는 선형 검색이 필요 합니다. `CAtlMap` 배열에 많은 수의 요소가 포함 된 경우를 사용 해야 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** 아시프콜.h
+**헤더:** atlsimpcoll
 
 ## <a name="example"></a>예제
 
 [!code-cpp[NVC_ATL_Utilities#91](../../atl/codesnippet/cpp/csimplemap-class_1.cpp)]
 
-## <a name="csimplemapadd"></a><a name="add"></a>C심플맵::추가
+## <a name="csimplemapadd"></a><a name="add"></a> CSimpleMap:: Add
 
-맵 배열에 키 및 관련 값을 추가합니다.
+지도 배열에 키 및 연결 된 값을 추가 합니다.
 
 ```
 BOOL Add(const TKey& key, const TVal& val);
@@ -117,34 +118,34 @@ BOOL Add(const TKey& key, const TVal& val);
 *key*<br/>
 키입니다.
 
-*발*<br/>
-연결된 값입니다.
+*짧은*<br/>
+연결 된 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-키와 값이 성공적으로 추가된 경우 TRUE를 반환합니다.
+키와 값이 성공적으로 추가 되었으면 TRUE를 반환 하 고, 그렇지 않으면 FALSE를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-각 키 와 값 쌍 추가로 인해 매핑 배열 메모리가 해제되고 다시 할당되어 각 키에 대한 데이터가 항상 연속적으로 저장되도록 합니다. 즉, 두 번째 키 요소는 항상 메모리의 첫 번째 키 요소를 직접 따릅니다.
+각 키와 값 쌍을 추가 하면 매핑 배열 메모리를 해제 하 고 다시 할당 하 여 각에 대 한 데이터가 항상 연속적으로 저장 되도록 합니다. 즉, 두 번째 키 요소가 항상 메모리의 첫 번째 키 요소 바로 다음에 옵니다.
 
-## <a name="csimplemap_arrayelementtype"></a><a name="_arrayelementtype"></a>C심플맵::_ArrayElementType
+## <a name="csimplemap_arrayelementtype"></a><a name="_arrayelementtype"></a> CSimpleMap: _ArrayElementType
 
-키 형식에 대한 형식 def입니다.
+키 형식에 대 한 typedef입니다.
 
 ```
 typedef TVal _ArrayElementType;
 ```
 
-## <a name="csimplemap_arraykeytype"></a><a name="_arraykeytype"></a>C심플맵::_ArrayKeyType
+## <a name="csimplemap_arraykeytype"></a><a name="_arraykeytype"></a> CSimpleMap: _ArrayKeyType
 
-값 형식에 대한 형식 def입니다.
+값 형식에 대 한 typedef입니다.
 
 ```
 typedef TKey _ArrayKeyType;
 ```
 
-## <a name="csimplemapcsimplemap"></a><a name="csimplemap"></a>C심플맵::C심플맵
+## <a name="csimplemapcsimplemap"></a><a name="csimplemap"></a> Csimplemap: CSimpleMap
 
 생성자입니다.
 
@@ -154,9 +155,9 @@ CSimpleMap();
 
 ### <a name="remarks"></a>설명
 
-데이터 멤버를 초기화합니다.
+데이터 멤버를 초기화 합니다.
 
-## <a name="csimplemapcsimplemap"></a><a name="dtor"></a>CSimplemap::~CSimpleMap
+## <a name="csimplemapcsimplemap"></a><a name="dtor"></a> Csimplemap: ~ CSimpleMap
 
 소멸자입니다.
 
@@ -166,9 +167,9 @@ CSimpleMap();
 
 ### <a name="remarks"></a>설명
 
-할당된 모든 리소스를 해제합니다.
+할당 된 리소스를 모두 해제 합니다.
 
-## <a name="csimplemapfindkey"></a><a name="findkey"></a>C심플맵::찾기키
+## <a name="csimplemapfindkey"></a><a name="findkey"></a> CSimpleMap:: FindKey
 
 특정 키를 찾습니다.
 
@@ -181,11 +182,11 @@ int FindKey(const TKey& key) const;
 *key*<br/>
 검색할 키입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-발견 되면 키 인덱스를 반환하고 그렇지 않으면 -1을 반환합니다.
+키가 있으면 해당 인덱스를 반환 하 고, 그렇지 않으면-1을 반환 합니다.
 
-## <a name="csimplemapfindval"></a><a name="findval"></a>C심플맵::찾기
+## <a name="csimplemapfindval"></a><a name="findval"></a> CSimpleMap: FindVal
 
 특정 값을 찾습니다.
 
@@ -195,16 +196,16 @@ int FindVal(const TVal& val) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*발*<br/>
+*짧은*<br/>
 검색할 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-값이 발견되면 값의 인덱스를 반환하고 그렇지 않으면 -1을 반환합니다.
+값이 발견 되 면 값의 인덱스를 반환 하 고, 그렇지 않으면-1을 반환 합니다.
 
-## <a name="csimplemapgetkeyat"></a><a name="getkeyat"></a>C심플맵::겟키앳
+## <a name="csimplemapgetkeyat"></a><a name="getkeyat"></a> CSimpleMap:: GetKeyAt
 
-지정된 인덱스에서 키를 검색합니다.
+지정 된 인덱스에 있는 키를 검색 합니다.
 
 ```
 TKey& GetKeyAt(int nIndex) const;
@@ -215,29 +216,29 @@ TKey& GetKeyAt(int nIndex) const;
 *nIndex*<br/>
 반환할 키의 인덱스입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-*nIndex*에서 참조하는 키를 반환합니다.
+*Nindex* 에서 참조 하는 키를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-*nIndex에서* 전달된 인덱스는 반환 값이 의미 있는 경우 유효해야 합니다.
+*Nindex* 로 전달 되는 인덱스는 반환 값이 의미가 되려면 유효 해야 합니다.
 
-## <a name="csimplemapgetsize"></a><a name="getsize"></a>C심플맵::겟사이즈
+## <a name="csimplemapgetsize"></a><a name="getsize"></a> CSimpleMap: GetSize
 
-매핑 배열의 항목 수를 반환합니다.
+매핑 배열의 항목 수를 반환 합니다.
 
 ```
 int GetSize() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-매핑 배열에서 항목 수(키와 값은 하나의 항목)를 반환합니다.
+매핑 배열의 항목 수 (키 및 값은 한 항목)를 반환 합니다.
 
-## <a name="csimplemapgetvalueat"></a><a name="getvalueat"></a>C심플맵::GetValueAt
+## <a name="csimplemapgetvalueat"></a><a name="getvalueat"></a> CSimpleMap: GetValueAt
 
-특정 인덱스에서 값을 검색합니다.
+특정 인덱스에서 값을 검색 합니다.
 
 ```
 TVal& GetValueAt(int nIndex) const;
@@ -248,17 +249,17 @@ TVal& GetValueAt(int nIndex) const;
 *nIndex*<br/>
 반환할 값의 인덱스입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-*nIndex*에서 참조하는 값을 반환합니다.
+*Nindex* 에서 참조 하는 값을 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-*nIndex에서* 전달된 인덱스는 반환 값이 의미 있는 경우 유효해야 합니다.
+*Nindex* 로 전달 되는 인덱스는 반환 값이 의미가 되려면 유효 해야 합니다.
 
-## <a name="csimplemaplookup"></a><a name="lookup"></a>C심플맵::조회
+## <a name="csimplemaplookup"></a><a name="lookup"></a> CSimpleMap: Lookup
 
-지정된 키와 연결된 값을 반환합니다.
+지정 된 키와 연결 된 값을 반환 합니다.
 
 ```
 TVal Lookup(const TKey& key) const;
@@ -269,13 +270,13 @@ TVal Lookup(const TKey& key) const;
 *key*<br/>
 키입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-연결된 값을 반환합니다. 일치하는 키가 발견되지 않으면 NULL이 반환됩니다.
+연결 된 값을 반환 합니다. 일치 하는 키가 없는 경우 NULL이 반환 됩니다.
 
-## <a name="csimplemapremove"></a><a name="remove"></a>C심플맵::제거
+## <a name="csimplemapremove"></a><a name="remove"></a> CSimpleMap:: Remove
 
-키 및 일치 값을 제거합니다.
+키와 일치 하는 값을 제거 합니다.
 
 ```
 BOOL Remove(const TKey& key);
@@ -286,13 +287,13 @@ BOOL Remove(const TKey& key);
 *key*<br/>
 키입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-그렇지 않으면 키 및 일치 값이 성공적으로 제거된 경우 TRUE를 반환합니다.
+키와 일치 하는 값이 성공적으로 제거 되 면 TRUE를 반환 하 고, 그렇지 않으면 FALSE를 반환 합니다.
 
-## <a name="csimplemapremoveall"></a><a name="removeall"></a>C심플맵::모두 제거
+## <a name="csimplemapremoveall"></a><a name="removeall"></a> CSimpleMap::
 
-모든 키와 값을 제거합니다.
+모든 키와 값을 제거 합니다.
 
 ```cpp
 void RemoveAll();
@@ -300,11 +301,11 @@ void RemoveAll();
 
 ### <a name="remarks"></a>설명
 
-매핑 배열 개체에서 모든 키와 값을 제거합니다.
+매핑 배열 개체에서 모든 키와 값을 제거 합니다.
 
-## <a name="csimplemapremoveat"></a><a name="removeat"></a>C심플맵::리무브앳
+## <a name="csimplemapremoveat"></a><a name="removeat"></a> CSimpleMap: RemoveAt
 
-지정된 인덱스에서 키 및 관련 값을 제거합니다.
+지정 된 인덱스에서 키와 연결 된 값을 제거 합니다.
 
 ```
 BOOL RemoveAt(int nIndex);
@@ -313,15 +314,15 @@ BOOL RemoveAt(int nIndex);
 ### <a name="parameters"></a>매개 변수
 
 *nIndex*<br/>
-제거할 키 및 관련 값의 인덱스입니다.
+제거할 키 및 연결 된 값의 인덱스입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-지정된 인덱스가 잘못된 인덱스인 경우 TRUE를 반환합니다.
+성공 하면 TRUE를 반환 하 고, 지정 된 인덱스가 잘못 된 인덱스인 경우 FALSE를 반환 합니다.
 
-## <a name="csimplemapreverselookup"></a><a name="reverselookup"></a>C심플맵::리버스룩업
+## <a name="csimplemapreverselookup"></a><a name="reverselookup"></a> CSimpleMap::
 
-지정된 값과 연결된 키를 반환합니다.
+지정 된 값과 연결 된 키를 반환 합니다.
 
 ```
 TKey ReverseLookup(const TVal& val) const;
@@ -329,16 +330,16 @@ TKey ReverseLookup(const TVal& val) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*발*<br/>
+*짧은*<br/>
 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-연결된 키를 반환합니다. 일치하는 키가 발견되지 않으면 NULL이 반환됩니다.
+연결 된 키를 반환 합니다. 일치 하는 키가 없는 경우 NULL이 반환 됩니다.
 
-## <a name="csimplemapsetat"></a><a name="setat"></a>C심플맵::세팅
+## <a name="csimplemapsetat"></a><a name="setat"></a> Csimpl\at:: SetAt
 
-지정된 키와 연결된 값을 설정합니다.
+지정 된 키와 연결 된 값을 설정 합니다.
 
 ```
 BOOL SetAt(const TKey& key, const TVal& val);
@@ -349,16 +350,16 @@ BOOL SetAt(const TKey& key, const TVal& val);
 *key*<br/>
 키입니다.
 
-*발*<br/>
+*짧은*<br/>
 할당할 새 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-키가 발견되고 값이 성공적으로 변경된 경우 TRUE를 반환합니다.
+키를 찾았지만 값이 성공적으로 변경 되었으면 TRUE를 반환 하 고, 그렇지 않으면 FALSE를 반환 합니다.
 
-## <a name="csimplemapsetatindex"></a><a name="setatindex"></a>C심플맵::SetAtIndex
+## <a name="csimplemapsetatindex"></a><a name="setatindex"></a> CSimpleMap::
 
-지정된 인덱스에서 키와 값을 설정합니다.
+지정 된 인덱스에 있는 키와 값을 설정 합니다.
 
 ```
 BOOL SetAtIndex(
@@ -370,22 +371,22 @@ BOOL SetAtIndex(
 ### <a name="parameters"></a>매개 변수
 
 *nIndex*<br/>
-변경할 키와 값 쌍을 참조하는 인덱스입니다.
+변경할 키 및 값 쌍을 참조 하는 인덱스입니다.
 
 *key*<br/>
 새 키입니다.
 
-*발*<br/>
+*짧은*<br/>
 새 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-인덱스가 유효하지 않은 경우 TRUE, FALSE를 반환합니다.
+성공 하면 TRUE를 반환 하 고 인덱스가 유효 하지 않으면 FALSE를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-*nIndex*.
+*N 인덱스* 에 의해 가리키는 키와 값을 모두 업데이트 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [클래스 개요](../../atl/atl-class-overview.md)
