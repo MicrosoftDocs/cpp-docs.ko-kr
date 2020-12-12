@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 링커 도구 경고 LNK4071'
 title: 링커 도구 경고 LNK4071
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4071
 ms.assetid: 803f8c34-8219-4f55-a4ae-7133ceff2ba3
-ms.openlocfilehash: e83aae57031eb5bc78ebcff3ad39a597901c3f9b
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: c3c606148bbd177b6032399e981079bb13c16329
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80183542"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97278014"
 ---
 # <a name="linker-tools-warning-lnk4071"></a>링커 도구 경고 LNK4071
 

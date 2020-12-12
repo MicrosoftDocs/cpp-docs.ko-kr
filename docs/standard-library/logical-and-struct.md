@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: logical_and 구조체'
 title: logical_and 구조체
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - logical_and class
 - logical_and struct
 ms.assetid: 1a375cc2-0592-4d57-a553-78009c7ad610
-ms.openlocfilehash: 7036ebf9fed3877a395e44d8383776002b9afcae
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 2d0cc8b8c40407356d8d3ba41046c0033941c2ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81351683"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277702"
 ---
 # <a name="logical_and-struct"></a>logical_and 구조체
 
-인수에서 논리적 연결 작업()`operator&&`을 수행하는 미리 정의된 함수 개체입니다.
+인수에서 논리적 결합 작업 ()을 수행 하는 미리 정의 된 함수 개체 `operator&&` 입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -39,16 +40,16 @@ struct logical_and<void>
 
 ### <a name="parameters"></a>매개 변수
 
-*유형*, *T*, *U*\
+*형식*, *T*, *U*\
 지정되었거나 유추된 형식의 피연산자를 가져오는 `operator&&`를 지원하는 모든 형식입니다.
 
-*왼쪽*\
-논리곱 연산의 왼쪽 피연산자입니다. 특수화되지 않은 템플릿은 type *type.* 특수화된 템플릿은 유추된 형식 *T의*lvalue 및 rvalue 참조 인수를 완벽하게 전달합니다.
+*비어*\
+논리곱 연산의 왼쪽 피연산자입니다. 특수화 되지 않은 *템플릿은 형식의 lvalue* 참조 인수를 사용 합니다. 특수화 된 템플릿은 유추 형식 *T* 의 lvalue 및 rvalue 참조 인수를 완벽 하 게 전달 합니다.
 
 *오른쪽*\
-논리곱 연산의 오른쪽 피연산자입니다. 특수화되지 않은 템플릿은 type *type.* 특수화된 템플릿은 유추U 형식 *U의*lvalue 및 rvalue 참조 인수를 완벽하게 전달합니다.
+논리곱 연산의 오른쪽 피연산자입니다. 특수화 되지 않은 *템플릿은 형식의 lvalue* 참조 인수를 사용 합니다. 특수화 된 템플릿은 유추 형식 *U* 의 lvalue 및 rvalue 참조 인수를 완벽 하 게 전달 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 `Left && Right`의 결과입니다. 특수화된 템플릿은 `operator&&`에 의해 반환되는 형식을 가지고 있는 결과를 완벽하게 전달합니다.
 

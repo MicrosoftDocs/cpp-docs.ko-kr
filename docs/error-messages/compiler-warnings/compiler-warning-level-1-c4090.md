@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4090'
 title: 컴파일러 경고 (수준 1) C4090
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4090
 ms.assetid: baad469d-23d4-45aa-ad9c-305b32d61e9a
-ms.openlocfilehash: c4cb71355b4f3dca66c56ed4b89012ca9b9e646d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c096a32e5aa0d632d43d9990f3256c3f865bf796
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87197048"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97278105"
 ---
 # <a name="compiler-warning-level-1-c4090"></a>컴파일러 경고 (수준 1) C4090
 

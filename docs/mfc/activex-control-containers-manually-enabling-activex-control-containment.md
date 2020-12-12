@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: ActiveX 컨트롤 컨테이너: ActiveX 컨트롤 포함 수동 사용'
 title: 'ActiveX 컨트롤 컨테이너: ActiveX 컨트롤 포함 수동 설정'
 ms.date: 09/12/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - ActiveX control containers [MFC], enabling
 - ActiveX controls [MFC], enabling containers
 ms.assetid: 833bcde9-c9ad-4709-ad12-2fc2150fb6a5
-ms.openlocfilehash: a8092a77020695163ce4fbacf7eeea2650ae9f86
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 44ca8961b064aee1efd4a24dd5bf6841399131e0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84625108"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277962"
 ---
 # <a name="activex-control-containers-manually-enabling-activex-control-containment"></a>ActiveX 컨트롤 컨테이너: ActiveX 컨트롤 포함 수동 설정
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2893'
 title: 컴파일러 오류 C2893
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2893
 ms.assetid: ec0cbe43-005d-45da-8742-aaeb9b81d28e
-ms.openlocfilehash: ca603eb94d5d528a7fed15e0320e1f5d88bf0629
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 42e31327096a539feeb691c698b52f57ecb615a5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74760878"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97278261"
 ---
 # <a name="compiler-error-c2893"></a>컴파일러 오류 C2893
 
@@ -23,7 +24,7 @@ ms.locfileid: "74760878"
 
 ## <a name="example"></a>예제
 
-C2893 `T` `f`의 템플릿 매개 변수를 추론 하 여 `std::map<int,int>`해야 하지만 `std::map<int,int>`에 멤버 `data_type` 없습니다 (`T::data_type` `T = std::map<int,int>`를 사용 하 여 인스턴스화할 수 없음). 다음 샘플에서는 C2893를 생성 합니다.
+C2893 `f` 는의 템플릿 매개 변수가로 `T` 추론 `std::map<int,int>` 되었지만 `std::map<int,int>` (를 사용 하 `data_type` `T::data_type` 여 인스턴스화할 수 없음 `T = std::map<int,int>` ) 멤버를 포함 하지 않기 때문에 발생 합니다. 다음 샘플에서는 C2893를 생성 합니다.
 
 ```cpp
 // C2893.cpp

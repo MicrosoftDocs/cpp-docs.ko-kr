@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: &lt; 로캘&gt;'
 title: '&lt;locale&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - locale header
 ms.assetid: ca56f9d2-7128-44da-8df1-f4c78c17fbf2
-ms.openlocfilehash: ae008ef45e8a6bb57505432f2c931a768d4c8ea4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: dce8cb130269450e1b7996b61504e59dc372e3b7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224801"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277806"
 ---
 # <a name="ltlocalegt"></a>&lt;locale&gt;
 
 C + + 프로그램이 문자 분류 및 문자열 데이터 정렬에 대 한 국제화 지원을 비롯 하 여 숫자, 통화 및 calendric 데이터의 표현과 서식 지정과 관련 된 다양 한 문화권 규칙을 캡슐화 하 고 조작 하는 데 사용할 수 있는 클래스 템플릿 및 함수를 정의 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 #include <locale>
@@ -47,7 +48,7 @@ C + + 프로그램이 문자 분류 및 문자열 데이터 정렬에 대 한 �
 
 ### <a name="classes"></a>클래스
 
-|클래스|Description|
+|클래스|설명|
 |-|-|
 |[codecvt](../standard-library/codecvt-class.md)|내부 및 외부 문자 인코딩 간 변환에 사용 되는 패싯을 제공 하는 클래스 템플릿입니다.|
 |[codecvt_base](../standard-library/codecvt-base-class.md)|로 참조 되는 열거형을 정의 하는 데 사용 되는 codecvt 클래스에 대 한 기본 클래스입니다 .이 클래스는 `result` 변환 결과를 나타내기 위해 패싯 멤버 함수에 대 한 반환 형식으로 사용 됩니다.|
@@ -64,17 +65,17 @@ C + + 프로그램이 문자 분류 및 문자열 데이터 정렬에 대 한 �
 |[messages_byname](../standard-library/messages-byname-class.md)|지정 된 로캘의 메시지 패싯으로 사용 하 여 지역화 된 메시지를 검색할 수 있도록 하는 개체를 설명 하는 파생 클래스 템플릿입니다.|
 |[money_base](../standard-library/money-base-class.md)|개별적으로 또는 전체 범위 내에서 특성을 분류 또는 테스트하는 데 사용하는 열거형을 정의하는 데 사용하는 ctype 클래스의 기본 클래스입니다.|
 |[money_get](../standard-library/money-get-class.md)|**Chartype** 형식의 시퀀스에서 통화 값으로의 변환을 제어 하는 로캘 패싯으로 사용할 수 있는 개체를 설명 하는 클래스 템플릿입니다.|
-|[money_put](../standard-library/money-put-class.md)|통화 값에서 **Chartype**형식의 시퀀스로 변환을 제어 하는 로캘 패싯으로 사용할 수 있는 개체를 설명 하는 클래스 템플릿입니다.|
+|[money_put](../standard-library/money-put-class.md)|통화 값에서 **Chartype** 형식의 시퀀스로 변환을 제어 하는 로캘 패싯으로 사용할 수 있는 개체를 설명 하는 클래스 템플릿입니다.|
 |[moneypunct](../standard-library/moneypunct-class.md)|통화 입력 필드 또는 통화 출력 필드를 나타내는 데 사용 되는 **Chartype** 형식의 시퀀스를 설명 하기 위해 로캘 패싯으로 사용할 수 있는 개체를 설명 하는 클래스 템플릿입니다.|
 |[moneypunct_byname](../standard-library/moneypunct-byname-class.md)|지정 된 로캘의 moneypunct 패싯으로 사용할 수 있는 개체를 설명 하는 파생 클래스 템플릿으로 통화 입력 또는 출력 필드의 서식을 지정할 수 있습니다.|
 |[num_get](../standard-library/num-get-class.md)|**Chartype** 형식의 시퀀스에서 숫자 값으로의 변환을 제어 하는 로캘 패싯으로 사용할 수 있는 개체를 설명 하는 클래스 템플릿입니다.|
-|[num_put](../standard-library/num-put-class.md)|숫자 값을 **Chartype**형식의 시퀀스로 변환 하는 것을 제어 하는 로캘 패싯으로 사용할 수 있는 개체를 설명 하는 클래스 템플릿입니다.|
+|[num_put](../standard-library/num-put-class.md)|숫자 값을 **Chartype** 형식의 시퀀스로 변환 하는 것을 제어 하는 로캘 패싯으로 사용할 수 있는 개체를 설명 하는 클래스 템플릿입니다.|
 |[numpunct](../standard-library/numpunct-class.md)|숫자 및 부울 식의 서식 지정 및 문장 부호에 대 한 정보를 나타내는 데 사용 되는 **Chartype** 형식의 시퀀스를 설명 하는 로컬 패싯으로 사용할 수 있는 개체를 설명 하는 클래스 템플릿입니다.|
 |[numpunct_byname](../standard-library/numpunct-byname-class.md)|숫자 및 부울 식의 서식 지정 및 문장 부호를 사용할 수 있도록 지정 된 로캘의 moneypunct 패싯으로 사용할 수 있는 개체를 설명 하는 파생 클래스 템플릿입니다.|
 |[time_base](../standard-library/time-base-class.md)|Time_get 클래스 템플릿 패싯의 기본 클래스 역할을 하는 클래스로, 열거형 dateorder와이 형식의 여러 상수만 정의 합니다.|
 |[time_get](../standard-library/time-get-class.md)|**Chartype** 형식의 시퀀스에서 시간 값으로의 변환을 제어 하는 로캘 패싯으로 사용할 수 있는 개체를 설명 하는 클래스 템플릿입니다.|
 |[time_get_byname](../standard-library/time-get-byname-class.md)|Time_get 형식의 로캘 패싯으로 사용할 수 있는 개체를 설명 하는 파생 클래스 템플릿입니다 \<**CharType**, **InputIterator**> .|
-|[time_put](../standard-library/time-put-class.md)|시간 값에서 **Chartype**형식의 시퀀스로 변환을 제어 하는 로캘 패싯으로 사용할 수 있는 개체를 설명 하는 클래스 템플릿입니다.|
+|[time_put](../standard-library/time-put-class.md)|시간 값에서 **Chartype** 형식의 시퀀스로 변환을 제어 하는 로캘 패싯으로 사용할 수 있는 개체를 설명 하는 클래스 템플릿입니다.|
 |[time_put_byname](../standard-library/time-put-byname-class.md)|형식의 로캘 패싯으로 사용할 수 있는 개체를 설명 하는 파생 클래스 템플릿입니다 `time_put` \<**CharType**, **OutputIterator**> .|
 |[wbuffer_convert 클래스](../standard-library/wbuffer-convert-class.md)|바이트 스트림 버퍼에서 나가고 들어오는 요소의 전송을 제어하는 스트림 버퍼에 대해 설명합니다.|
 |[wstring_convert 클래스](../standard-library/wstring-convert-class.md)|와이드 문자열과 바이트 문자열 간의 변환을 수행 하는 클래스 템플릿입니다.|

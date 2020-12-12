@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4096'
 title: 컴파일러 경고 (수준 1) C4096
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4096
 ms.assetid: abf3cca2-2f21-45d8-b025-6b513b00681e
-ms.openlocfilehash: 4f5a45339673b57f946f206e1eaff0d23ec6fee9
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 2d787a2de5974b16fb962c17530532480d993fd6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80163938"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97278040"
 ---
 # <a name="compiler-warning-level-1-c4096"></a>컴파일러 경고 (수준 1) C4096
 
