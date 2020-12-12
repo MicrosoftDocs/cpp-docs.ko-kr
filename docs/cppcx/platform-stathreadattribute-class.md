@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Platform:: STAThreadAttribute 클래스'
 title: Platform::STAThreadAttribute 클래스
 ms.date: 12/30/2016
 ms.topic: reference
@@ -11,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::STAThreadAttribute Class
 ms.assetid: f97960fc-e673-4d9e-910a-54c8415411c4
-ms.openlocfilehash: 6a8220d8cddca29e621b21fc56966efdb42cb32e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a1c235ef9a171e650c960df184b081c4b6511cf1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213023"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97308005"
 ---
 # <a name="platformstathreadattribute-class"></a>Platform::STAThreadAttribute 클래스
 
@@ -60,13 +61,13 @@ STAThreadAttribute 특성은 [Platform:: Object 클래스](../cppcx/platform-obj
 
 STAThreadAttribute 클래스의 새 인스턴스를 초기화합니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 public:STAThreadAttribute();
 ```
 
-## <a name="stathreadattributeequals"></a><a name="equals"></a>STAThreadAttribute:: Equals
+## <a name="stathreadattributeequals"></a><a name="equals"></a> STAThreadAttribute:: Equals
 
 지정된 개체가 현재 개체와 같은지 확인합니다.
 
@@ -79,13 +80,13 @@ public:virtual override bool Equals( Object^ obj );
 ### <a name="parameters"></a>매개 변수
 
 *obj*<br/>
-비교할 개체.
+비교할 개체입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 개체가 같으면이 고, 그렇지 않으면입니다. 그렇지 않으면 **`false`** 입니다.
 
-## <a name="stathreadattributegethashcode"></a><a name="gethashcode"></a>STAThreadAttribute:: GetHashCode
+## <a name="stathreadattributegethashcode"></a><a name="gethashcode"></a> STAThreadAttribute:: GetHashCode
 
 이 인스턴스의 해시 코드를 반환합니다.
 
@@ -99,7 +100,7 @@ public:int GetHashCode();
 
 이 인스턴스의 해시 코드입니다.
 
-## <a name="stathreadattributetostring"></a><a name="tostring"></a>STAThreadAttribute:: ToString
+## <a name="stathreadattributetostring"></a><a name="tostring"></a> STAThreadAttribute:: ToString
 
 현재 개체를 나타내는 문자열을 반환합니다.
 

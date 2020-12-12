@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Platform:: Runtime:: System.runtime.compilerservices 네임 스페이스'
 title: Platform::Runtime::CompilerServices 네임스페이스
 ms.date: 12/30/2016
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Runtime::CompilerServices Namespace
 ms.assetid: 8613b6b3-b193-45d1-b956-881a4a700788
-ms.openlocfilehash: 88eac06eeb97fce26f321e8beb494b6b9e66be41
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 273a218c0a53ff28188491277ffb6f7f0fe7f744
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62183147"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97308044"
 ---
 # <a name="platformruntimecompilerservices-namespace"></a>Platform::Runtime::CompilerServices 네임스페이스
 
@@ -30,7 +31,7 @@ namespace Platform {
 
 이 네임스페이스는 내부용으로 설계되었지만 브라우저에서 이 네임스페이스의 다음 멤버를 표시할 수 있습니다.
 
-|이름|설명|
+|Name|설명|
 |----------|------------|
 |CallConvCdecl||
 |CallConvFastcall||
@@ -56,10 +57,10 @@ namespace Platform {
 
 ### <a name="requirements"></a>요구 사항
 
-**메타데이터:** platform.winmd
+**메타 데이터:** platform.object
 
 **네임스페이스:** Platform::CompilerServices
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[플랫폼 Namespace](platform-namespace-c-cx.md)
+[Platform 네임 스페이스](platform-namespace-c-cx.md)

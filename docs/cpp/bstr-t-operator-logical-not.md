@@ -1,4 +1,5 @@
 ---
+description: '자세한 내용은 _bstr_t:: operator!를 확인 하세요.'
 title: _bstr_t::operator !
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - operator!, bstr
 - operator !, bstr
 ms.assetid: 6e60b5a5-2d28-4eec-9e12-790da8f1fdd4
-ms.openlocfilehash: 6fc04c7fa7cb4bd6ecad894a1c1e4473572ac651
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a3647d56ae35ab08e0c60050130ee2fc5fafe7e3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232354"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97308720"
 ---
 # <a name="_bstr_toperator-"></a>_bstr_t::operator !
 

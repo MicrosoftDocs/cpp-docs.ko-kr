@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Platform:: Object 클래스'
 title: Platform::Object 클래스
 ms.date: 12/30/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - Object class
 ms.assetid: 709e84a8-0bff-471b-bc14-63e424080b5a
-ms.openlocfilehash: dded4602eda9653f50d26ef1b4aae86af96a262b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a190d5a56bb27fb95ac2c2c8bd2ba0e0d0572427
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213036"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97308252"
 ---
 # <a name="platformobject-class"></a>Platform::Object 클래스
 
@@ -33,7 +34,7 @@ public ref class Object : Object
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[Object::Object](#ctor)|Object 클래스의 새 인스턴스를 초기화합니다.|
 
@@ -59,7 +60,7 @@ public ref class Object : Object
 
 **네임스페이스:** Platform
 
-## <a name="objectequals-method"></a><a name="equals"></a>Object:: Equals 메서드
+## <a name="objectequals-method"></a><a name="equals"></a> Object:: Equals 메서드
 
 지정된 개체가 현재 개체와 같은지 확인합니다.
 
@@ -74,13 +75,13 @@ bool Equals(
 ### <a name="parameters"></a>매개 변수
 
 *obj*<br/>
-비교할 개체.
+비교할 개체입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 개체가 같으면이 고, 그렇지 않으면 **`false`** 입니다.
 
-## <a name="objectgethashcode-method"></a><a name="gethashcode"></a>Object:: GetHashCode 메서드
+## <a name="objectgethashcode-method"></a><a name="gethashcode"></a> Object:: GetHashCode 메서드
 
 COM 개체인 경우 이 인스턴스에 대한 `IUnknown`* ID 값을 반환하고, COM 개체가 아닌 경우 계산된 해시 값을 반환합니다.
 
@@ -98,11 +99,11 @@ public:int GetHashCode();
 
 GetHashCode를 사용하여 맵에 개체의 키를 만들 수 있습니다. [Object:: Equals](#equals)를 사용 하 여 해시 코드를 비교할 수 있습니다. 코드 경로가 매우 중요하며 `GetHashCode` 및 `Equals`가 충분히 빠르지 않은 경우 기본 COM 레이어로 드롭다운하고 네이티브 `IUnknown` 포인터 비교를 수행할 수 있습니다.
 
-## <a name="objectgettype-method"></a><a name="gettype"></a>Object:: GetType 메서드
+## <a name="objectgettype-method"></a><a name="gettype"></a> Object:: GetType 메서드
 
 개체의 런타임 형식을 설명 하는 [Platform:: Type](../cppcx/platform-type-class.md) 개체를 반환 합니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 Object::GetType();
@@ -124,17 +125,17 @@ Windows [:: UI:: Xaml:: Interop:: TypeName](/uwp/api/windows.ui.xaml.interop.typ
 rootFrame->Navigate(TypeName(MainPage::typeid), e->Arguments);
 ```
 
-## <a name="objectobject-constructor"></a><a name="ctor"></a>Object:: Object 생성자
+## <a name="objectobject-constructor"></a><a name="ctor"></a> Object:: Object 생성자
 
 Object 클래스의 새 인스턴스를 초기화합니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 public:Object();
 ```
 
-## <a name="objectreferenceequals-method"></a><a name="referenceequals"></a>Object:: ReferenceEquals 메서드
+## <a name="objectreferenceequals-method"></a><a name="referenceequals"></a> Object:: ReferenceEquals 메서드
 
 지정한 Object 인스턴스가 동일한지 여부를 확인합니다.
 
@@ -152,11 +153,11 @@ public:static bool ReferenceEquals(  Object^ obj1,   Object^ obj2);
 *obj2*<br/>
 비교할 두 번째 개체입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 두 개체가 같으면이 고, 그렇지 않으면입니다. 그렇지 않으면 **`false`** 입니다.
 
-## <a name="objecttostring-method-ccx"></a><a name="tostring"></a>Object:: ToString 메서드 (c + +/CX)
+## <a name="objecttostring-method-ccx"></a><a name="tostring"></a> Object:: ToString 메서드 (c + +/CX)
 
 현재 개체를 나타내는 문자열을 반환합니다.
 

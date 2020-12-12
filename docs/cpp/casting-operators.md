@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 캐스팅 연산자'
 title: 캐스팅 연산자
 ms.custom: index-page
 ms.date: 11/04/2016
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - operators [C++], casting
 - casting operators [C++]
 ms.assetid: 16240348-26bc-4f77-8eab-57253f00ce52
-ms.openlocfilehash: 606e8b159bb7bdb7527d33a5211cb33a26913754
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6ab19f1b30958f4d78a97be76c15373ed9c9b620
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221824"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97308551"
 ---
 # <a name="casting-operators"></a>캐스팅 연산자
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Platform:: SizeT value 클래스'
 title: Platform::SizeT 값 클래스
 ms.date: 12/30/2016
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::SizeT Struct
 ms.assetid: 0803612c-8ba1-430c-9b7b-1bebae88608d
-ms.openlocfilehash: 5add9212dc2655bc37cd357741073f855b009bde
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: ebcca27a94d23082374daafaa9fd7db180955a30
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81322157"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97308018"
 ---
 # <a name="platformsizet-value-class"></a>Platform::SizeT 값 클래스
 
@@ -26,21 +27,21 @@ public ref class SizeT sealed : ValueType
 
 ### <a name="members"></a>멤버
 
-|멤버|Description|
+|멤버|설명|
 |------------|-----------------|
 |[SizeT::SizeT 생성자](#ctor)|지정된 값을 사용하여 클래스의 새 인스턴스를 초기화합니다.|
 
 ### <a name="requirements"></a>요구 사항
 
-**지원되는 최소 클라이언트:** 윈도우 8
+**지원 되는 최소 클라이언트:** Windows 8
 
-**지원되는 최소 서버:** 윈도우 서버 2012
+**지원 되는 최소 서버:** Windows Server 2012
 
 **네임스페이스:** Platform
 
-**메타데이터:** 플랫폼.winmd
+**메타 데이터:** platform.object
 
-## <a name="sizetsizet-constructor"></a><a name="ctor"></a>SizeT::SizeT 생성자
+## <a name="sizetsizet-constructor"></a><a name="ctor"></a> SizeT:: SizeT 생성자
 
 지정된 값을 사용하여 SizeT의 새 인스턴스를 초기화합니다.
 
@@ -52,10 +53,10 @@ SizeT( uint32 value1 );   SizeT( void* value2 );
 
 ### <a name="parameters"></a>매개 변수
 
-*값1*<br/>
+*value1*<br/>
 부호 없는 32비트 값입니다.
 
-*Value2*<br/>
+*value2*<br/>
 부호 없는 32비트 값에 대한 포인터입니다.
 
 ## <a name="see-also"></a>참고 항목

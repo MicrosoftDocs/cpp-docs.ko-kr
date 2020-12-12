@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 호출 규칙'
 title: 호출 규칙
 ms.date: 11/04/2016
 helpviewer_keywords:
 - calling conventions
 ms.assetid: 11b1e45c-8fd1-420b-bca0-a19e294c1d85
-ms.openlocfilehash: d351ae064b8c9bdd0599a1d6981166371a62af58
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bb5dab14e9d046b6ccee75a4fb37bd7b105902dc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216611"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97308655"
 ---
 # <a name="calling-conventions"></a>호출 규칙
 

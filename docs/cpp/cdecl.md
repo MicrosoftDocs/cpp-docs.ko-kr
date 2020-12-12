@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __cdecl'
 title: __cdecl
 ms.date: 10/09/2018
 f1_keywords:
@@ -9,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - __cdecl keyword [C++]
 ms.assetid: 1ff1d03e-fb4e-4562-8be1-74f1ad6427f1
-ms.openlocfilehash: 9c1483d02bcb68d902cae527eb60e3ef9987607c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: de6d34aa70353f65191c0c36c790d517a1fbbf0e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227584"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97308577"
 ---
 # <a name="__cdecl"></a>__cdecl
 
@@ -70,4 +71,4 @@ typedef BOOL (__cdecl *funcname_ptr)(void * arg1, const char * arg2, DWORD flags
 ## <a name="see-also"></a>참고 항목
 
 [인수 전달 및 명명 규칙](../cpp/argument-passing-and-naming-conventions.md)<br/>
-[C++ 키워드](../cpp/keywords-cpp.md)
+[키워드](../cpp/keywords-cpp.md)

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _bstr_t 관계형 연산자'
 title: _bstr_t 관계형 연산자
 ms.date: 05/07/2019
 f1_keywords:
@@ -12,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - _bstr_t [C++]
 ms.assetid: e153da72-37c3-4d8a-b8eb-730d65da64dd
-ms.openlocfilehash: 8fc163255a5ab342938f56f8a22af3984a48e56a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3d34c83d9547bb9d52e43174cac2acd259717e76
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216624"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97308694"
 ---
 # <a name="_bstr_t-relational-operators"></a>_bstr_t 관계형 연산자
 

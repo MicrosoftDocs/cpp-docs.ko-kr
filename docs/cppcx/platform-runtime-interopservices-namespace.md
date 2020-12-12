@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Platform:: Runtime:: T e m 네임 스페이스'
 title: Platform::Runtime::InteropServices 네임스페이스
 ms.date: 12/30/2016
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Runtime::InteropServices Namespace
 ms.assetid: 546b981a-a360-4a78-b89f-fdf0df848747
-ms.openlocfilehash: c527c642228d97d8b185e3b97ff38304b09d5769
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 710da76e27f8b1d6460a8f2c9809efff07ce132c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62330195"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97308031"
 ---
 # <a name="platformruntimeinteropservices-namespace"></a>Platform::Runtime::InteropServices 네임스페이스
 
@@ -30,7 +31,7 @@ namespace Platform {
 
 이 네임스페이스는 내부용으로 설계되었지만 브라우저에서 이 네임스페이스의 다음 멤버를 표시할 수 있습니다.
 
-|이름|설명|
+|Name|설명|
 |----------|------------|
 |ComInterfaceType|열거형|
 |InterfaceTypeAttribute||
@@ -45,10 +46,10 @@ namespace Platform {
 
 ### <a name="requirements"></a>요구 사항
 
-**메타데이터:** platform.winmd
+**메타 데이터:** platform.object
 
-**네임스페이스:** Platform::InteropServices
+**:네임스페이스:** Platform::InteropServices
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[플랫폼 Namespace](platform-namespace-c-cx.md)
+[Platform 네임 스페이스](platform-namespace-c-cx.md)
