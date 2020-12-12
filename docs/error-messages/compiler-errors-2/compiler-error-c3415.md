@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3415'
 title: 컴파일러 오류 C3415
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3415
 ms.assetid: fa2db8ab-2820-4ec3-a740-fb5e2adcfb29
-ms.openlocfilehash: da7b49d30866b9fa5ab27a93357fd2812aaa2806
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 3f50f2bd7a443c01f820aa1915f14d83e0b0dbe8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74742927"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321915"
 ---
 # <a name="compiler-error-c3415"></a>컴파일러 오류 C3415
 
@@ -19,7 +20,7 @@ ms.locfileid: "74742927"
 
 [section](../../preprocessor/section.md) pragma에 충돌되는 값이 지정되었습니다.
 
-`value` 는 ntimage.h에 지정된 것처럼 섹션의 현재 설정입니다. 예를 들면 다음과 같습니다.:
+`value` 는 ntimage.h에 지정된 것처럼 섹션의 현재 설정입니다. 예를 들어:
 
 ```
 // Section contains extended relocations.

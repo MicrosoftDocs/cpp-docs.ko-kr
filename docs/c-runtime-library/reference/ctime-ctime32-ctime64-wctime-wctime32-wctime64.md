@@ -1,4 +1,5 @@
 ---
+description: '에 대 한 자세한 정보: ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64'
 title: ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64
 ms.date: 4/2/2020
 api_name:
@@ -56,12 +57,12 @@ helpviewer_keywords:
 - wctime function
 - time, converting
 ms.assetid: 2423de37-a35c-4f0a-a378-3116bc120a9d
-ms.openlocfilehash: 7dc87f417db93f8ad0d90de1270c19997669fb7c
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: e50e5dca470b7e764a7b71a596d4c253d023083b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914833"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329309"
 ---
 # <a name="ctime-_ctime32-_ctime64-_wctime-_wctime32-_wctime64"></a>ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64
 
@@ -83,7 +84,7 @@ wchar_t *_wctime64( const __time64_t *sourceTime );
 *sourceTime*<br/>
 변환할 저장 된 시간에 대 한 포인터입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 문자열 결과에 대한 포인터입니다. 다음과 같은 경우 **NULL** 이 반환 됩니다.
 
@@ -93,7 +94,7 @@ wchar_t *_wctime64( const __time64_t *sourceTime );
 
 - **_Ctime64** 또는 **_wctime64** 를 사용 하는 경우 *Sourcetime* 은 3000 년 12 월 31 일 23:59:59 이후의 날짜를 나타냅니다.
 
-**ctime** 은 **_ctime64** 로 계산 되는 인라인 함수 이며 **time_t** 는 **__time64_t**와 같습니다. 컴파일러가 **time_t** 이전 32 비트 **time_t**으로 해석 해야 하는 경우 **_USE_32BIT_TIME_T**를 정의할 수 있습니다. 이렇게 하면 **ctime** 이 **_ctime32**로 평가 됩니다. 2038년 1월 18일 이후에는 애플리케이션에서 오류가 발생할 수 있으므로 이 방식은 사용하지 않는 것이 좋으며, 64비트 플랫폼에서는 이러한 방식이 허용되지 않습니다.
+**ctime** 은 **_ctime64** 로 계산 되는 인라인 함수 이며 **time_t** 는 **__time64_t** 와 같습니다. 컴파일러가 **time_t** 이전 32 비트 **time_t** 으로 해석 해야 하는 경우 **_USE_32BIT_TIME_T** 를 정의할 수 있습니다. 이렇게 하면 **ctime** 이 **_ctime32** 로 평가 됩니다. 2038년 1월 18일 이후에는 애플리케이션에서 오류가 발생할 수 있으므로 이 방식은 사용하지 않는 것이 좋으며, 64비트 플랫폼에서는 이러한 방식이 허용되지 않습니다.
 
 ## <a name="remarks"></a>설명
 
@@ -107,11 +108,11 @@ Wed Jan 02 02:03:55 1980\n\0
 
 또한 변환된 문자열은 현지 표준 시간대 설정에 따라 조정됩니다. 표준 시간대 환경 및 전역 변수를 정의 하는 방법에 대 한 자세한 내용은 [time](time-time32-time64.md), [_ftime](ftime-ftime32-ftime64.md)및 [localtime](localtime-localtime32-localtime64.md) 함수에서 현지 시간과 [_tzset](tzset.md) 함수를 구성 하는 방법에 대 한 자세한 내용을 참조 하세요.
 
-**Ctime** 을 호출 하면 **gmtime** 및 **localtime** 함수에서 사용 하는 정적으로 할당 된 단일 버퍼가 수정 됩니다. 이러한 루틴 중 하나를 호출할 때마다 이전 호출의 결과가 삭제됩니다. **ctime** 은 **asctime** 함수를 사용 하 여 정적 버퍼를 공유 합니다. 따라서 **ctime** 호출은 **asctime**, **localtime**또는 **gmtime**에 대 한 이전 호출의 결과를 소멸 시킵니다.
+**Ctime** 을 호출 하면 **gmtime** 및 **localtime** 함수에서 사용 하는 정적으로 할당 된 단일 버퍼가 수정 됩니다. 이러한 루틴 중 하나를 호출할 때마다 이전 호출의 결과가 삭제됩니다. **ctime** 은 **asctime** 함수를 사용 하 여 정적 버퍼를 공유 합니다. 따라서 **ctime** 호출은 **asctime**, **localtime** 또는 **gmtime** 에 대 한 이전 호출의 결과를 소멸 시킵니다.
 
-**_wctime** 및 **_wctime64** 은 **ctime** 및 **_ctime64**의 와이드 문자 버전입니다. 와이드 문자 문자열에 대 한 포인터 반환 그렇지 않으면 **_ctime64**, **_wctime**및 **_wctime64** 가 **ctime**과 동일 하 게 동작 합니다.
+**_wctime** 및 **_wctime64** 은 **ctime** 및 **_ctime64** 의 와이드 문자 버전입니다. 와이드 문자 문자열에 대 한 포인터 반환 그렇지 않으면 **_ctime64**, **_wctime** 및 **_wctime64** 가 **ctime** 과 동일 하 게 동작 합니다.
 
-이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. *Sourcetime* 이 null 포인터 이거나 *sourcetime* 값이 음수 이면 이러한 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 함수는 **NULL** 을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
+이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. *Sourcetime* 이 null 포인터 이거나 *sourcetime* 값이 음수 이면 이러한 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 함수는 **NULL** 을 반환 하 고 **errno** 를 **EINVAL** 로 설정 합니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -163,7 +164,7 @@ int main( void )
 The time is Wed Feb 13 16:04:43 2002
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [시간 관리](../../c-runtime-library/time-management.md)<br/>
 [asctime, _wasctime](asctime-wasctime.md)<br/>

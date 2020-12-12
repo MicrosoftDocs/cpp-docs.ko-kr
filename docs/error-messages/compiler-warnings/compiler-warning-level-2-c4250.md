@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 2) C4250'
 title: 컴파일러 경고(수준 2) C4250
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4250
 ms.assetid: d47f7249-6b5a-414b-b2d4-56e5d246a782
-ms.openlocfilehash: 10064784e1124ac365475f00b3577d22f5e7f3f1
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 04ffb555912c53cb4208cb82ba63c1424ef617e4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90686524"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321867"
 ---
 # <a name="compiler-warning-level-2-c4250"></a>컴파일러 경고(수준 2) C4250
 

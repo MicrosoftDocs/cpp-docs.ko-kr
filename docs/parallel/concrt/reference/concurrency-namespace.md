@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: concurrency 네임 스페이스'
 title: 동시성 네임스페이스
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ f1_keywords:
 helpviewer_keywords:
 - Concurrency namespace
 ms.assetid: f1d33ca2-679b-4442-b140-22a9d9df61d1
-ms.openlocfilehash: f710ead679484c41b006566a711a03ba153201ec
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c17e058c6666f944ea9f34b90995e9b9d343b40e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230378"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335815"
 ---
 # <a name="concurrency-namespace"></a>동시성 네임스페이스
 
@@ -171,15 +172,15 @@ namespace concurrency;
 |[task_group_status](concurrency-namespace-enums.md#task_group_status)|`task_group` 또는 `structured_task_group` 개체의 실행 상태를 설명합니다. 이 형식의 값은 작업 그룹에 예약된 작업이 완료되기를 기다리는 수많은 메서드에 의해 반환됩니다.|
 |[WinRTInitializationType](concurrency-namespace-enums.md#winrtinitializationtype)|`WinRTInitialization` 정책에서 Windows 8 또는 그 이상 버전의 운영 체제에서 실행되는 애플리케이션에 대한 스케줄러 스레드에서 Windows 런타임이 초기화될지 여부와 초기화되는 방법을 설명하는데 사용됩니다. 사용 가능한 스케줄러 정책에 대 한 자세한 내용은 [Policyelementkey](concurrency-namespace-enums.md#policyelementkey)를 참조 하세요.|
 
-### <a name="functions"></a>Functions
+### <a name="functions"></a>함수
 
 |Name|설명|
 |----------|-----------------|
 |[Alloc 함수](concurrency-namespace-functions.md#alloc)|동시성 런타임 캐싱 하위 할당기에서 지정된 크기의 메모리 블록을 할당합니다.|
-|[asend 함수](concurrency-namespace-functions.md#asend)|오버로드되었습니다. 대상 블록에 데이터를 전파하는 작업을 예약하는 비동기 전송 작업입니다.|
+|[asend 함수](concurrency-namespace-functions.md#asend)|오버로드됨. 대상 블록에 데이터를 전파하는 작업을 예약하는 비동기 전송 작업입니다.|
 |[cancel_current_task 함수](concurrency-namespace-functions.md#cancel_current_task)|현재 실행 중인 작업을 취소합니다. 이 함수는 작업 실행을 중단하도록 작업 본문 내에서 호출될 수 있으며 `canceled` 상태로 들어가도록 할 수 있습니다.<br /><br /> `task`의 본문에 없는 경우에 이 함수를 호출하는 것은 지원되는 시나리오가 아닙니다. 이렇게 하면 응용 프로그램에서 충돌 또는 응답 하지 않는 등의 정의 되지 않은 동작이 발생 합니다.|
 |[create_async 함수](concurrency-namespace-functions.md#create_async)|사용자가 제공한 람다 또는 함수 개체를 기준으로 Windows 런타임 비동기 구문을 만듭니다. `create_async`의 반환 형식은 메서드에 전달된 람다의 시그니처에 따라 `IAsyncAction^`, `IAsyncActionWithProgress<TProgress>^`, `IAsyncOperation<TResult>^` 또는 `IAsyncOperationWithProgress<TResult, TProgress>^` 중 하나입니다.|
-|[create_task 함수](concurrency-namespace-functions.md#create_task)|오버로드되었습니다. PPL [작업](task-class.md) 개체를 만듭니다. 작업 생성자를 사용하는 곳이면 어디에나 `create_task`를 사용할 수 있습니다. 작업을 만드는 동안 키워드를 사용할 수 있기 때문에 주로 편의를 위해 제공 됩니다 **`auto`** .|
+|[create_task 함수](concurrency-namespace-functions.md#create_task)|오버로드됨. PPL [작업](task-class.md) 개체를 만듭니다. 작업 생성자를 사용하는 곳이면 어디에나 `create_task`를 사용할 수 있습니다. 작업을 만드는 동안 키워드를 사용할 수 있기 때문에 주로 편의를 위해 제공 됩니다 **`auto`** .|
 |[CreateResourceManager 함수](concurrency-namespace-functions.md#createresourcemanager)|동시성 런타임 리소스 관리자의 singleton 인스턴스를 나타내는 인터페이스를 반환합니다. 리소스 관리자는 서로 협력하려는 스케줄러에 리소스를 할당해야 합니다.|
 |[DisableTracing 함수](concurrency-namespace-functions.md#disabletracing)|동시성 런타임에서 추적을 사용하지 않도록 설정합니다. ETW 추적이 기본적으로 등록되지 않으므로 이 함수는 사용되지 않습니다.|
 |[EnableTracing 함수](concurrency-namespace-functions.md#enabletracing)|동시성 런타임에서 추적을 사용하도록 설정합니다. 이제 ETW 추적이 기본적으로 설정되므로 이 함수는 사용되지 않습니다.|
@@ -192,39 +193,39 @@ namespace concurrency;
 |[GetSchedulerId 함수](concurrency-namespace-functions.md#getschedulerid)|`IScheduler` 인터페이스를 구현하는 스케줄러에 할당할 수 있는 고유 식별자를 반환합니다.|
 |[interruption_point 함수](concurrency-namespace-functions.md#interruption_point)|취소를 위한 중단 지점을 만듭니다. 이 함수가 호출된 컨텍스트에서 취소가 진행 중이면 현재 실행 중인 병렬 작업의 실행을 중단하는 내부 예외가 발생합니다. 취소가 진행되고 있지 않으면 함수에서 아무 작업도 하지 않습니다.|
 |[is_current_task_group_canceling 함수](concurrency-namespace-functions.md#is_current_task_group_canceling)|현재 컨텍스트에서 현재 인라인으로 실행 중인 작업 그룹이 활성 취소 중이거나 곧 취소되는지 여부를 나타내는 표시를 반환합니다. 현재 컨텍스트에서 현재 인라인으로 실행 중인 작업 그룹이 없으면이 **`false`** 반환 됩니다.|
-|[make_choice 함수](concurrency-namespace-functions.md#make_choice)|오버로드되었습니다. 선택적 `choice` 또는 `Scheduler`과 두 개 이상의 입력 소스로 `ScheduleGroup` 메시징 블록을 생성합니다.|
-|[make_greedy_join 함수](concurrency-namespace-functions.md#make_greedy_join)|오버로드되었습니다. 선택적 `greedy multitype_join` 또는 `Scheduler`과 두 개 이상의 입력 소스로 `ScheduleGroup` 메시징 블록을 생성합니다.|
-|[make_join 함수](concurrency-namespace-functions.md#make_join)|오버로드되었습니다. 선택적 `non_greedy multitype_join` 또는 `Scheduler`과 두 개 이상의 입력 소스로 `ScheduleGroup` 메시징 블록을 생성합니다.|
+|[make_choice 함수](concurrency-namespace-functions.md#make_choice)|오버로드됨. 선택적 `choice` 또는 `Scheduler`과 두 개 이상의 입력 소스로 `ScheduleGroup` 메시징 블록을 생성합니다.|
+|[make_greedy_join 함수](concurrency-namespace-functions.md#make_greedy_join)|오버로드됨. 선택적 `greedy multitype_join` 또는 `Scheduler`과 두 개 이상의 입력 소스로 `ScheduleGroup` 메시징 블록을 생성합니다.|
+|[make_join 함수](concurrency-namespace-functions.md#make_join)|오버로드됨. 선택적 `non_greedy multitype_join` 또는 `Scheduler`과 두 개 이상의 입력 소스로 `ScheduleGroup` 메시징 블록을 생성합니다.|
 |[make_task 함수](concurrency-namespace-functions.md#make_task)|`task_handle` 개체를 만들기 위한 팩터리 메서드입니다.|
-|[parallel_buffered_sort 함수](concurrency-namespace-functions.md#parallel_buffered_sort)|오버로드되었습니다. 지정 된 범위의 요소를 내림차순으로 정렬 하거나 이진 조건자로 지정한 정렬 기준에 따라 병렬로 정렬 합니다. 이 함수는 `O(n)` 추가 공간이 필요하고 정렬되는 요소에 대한 기본 초기화를 요구한다는 점을 제외하고, 비교 기반의 불안정한 내부 정렬이라는 점에서 `std::sort`와 의미 체계가 비슷합니다.|
-|[parallel_for 함수](concurrency-namespace-functions.md#parallel_for)|오버로드되었습니다. `parallel_for`는 일정 범위의 인덱스를 반복하고 각 반복 시 사용자가 제공한 함수를 병렬로 실행합니다.|
-|[parallel_for_each 함수](concurrency-namespace-functions.md#parallel_for_each)|오버로드되었습니다. `parallel_for_each`는 범위 내의 각 요소에 지정된 함수를 병렬로 적용합니다. 요소에 대한 반복이 병렬로 수행되고 반복 순서가 지정되지 않는다는 점을 제외하고 `std` 네임스페이스의 `for_each` 함수와 의미 체계가 같습니다. `_Func` 인수는 `operator()(T)` 형식의 함수 호출 연산자를 지원해야 합니다. 여기서 `T` 매개 변수는 반복되는 컨테이너의 항목 형식입니다.|
-|[parallel_invoke 함수](concurrency-namespace-functions.md#parallel_invoke)|오버로드되었습니다. 매개 변수로 제공된 함수 개체를 병렬로 실행하고 실행이 완료될 때까지 차단됩니다. 각 함수 개체는 람다 식, 함수에 대한 포인터 또는 `void operator()()` 서명을 사용하여 함수 호출 연산자를 지원하는 모든 개체일 수 있습니다.|
-|[parallel_radixsort 함수](concurrency-namespace-functions.md#parallel_radixsort)|오버로드되었습니다. 기수 정렬 알고리즘을 사용하여 지정된 범위의 요소를 비내림차순으로 정렬합니다. 부호 없는 정수와 유사한 키로 정렬할 요소를 프로젝션할 수 있는 프로젝션 함수를 요구하는 안정적인 정렬 함수입니다. 정렬되는 요소에 기본 초기화가 필요합니다.|
-|[parallel_reduce 함수](concurrency-namespace-functions.md#parallel_reduce)|오버로드되었습니다. 연속적 부분 합계를 계산하여 지정된 범위 내 모든 요소의 합계를 계산하거나, 합계 대신 지정된 이항 연산을 사용하여 유사하게 구한 연속적 부분 결과의 결과를 병렬로 계산합니다. `parallel_reduce`는 이항 연산이 결합형이어야 하고 초기 값 대신 ID 값을 요구한다는 점을 제외하고 `std::accumulate`와 의미 체계가 비슷합니다.|
-|[parallel_sort 함수](concurrency-namespace-functions.md#parallel_sort)|오버로드되었습니다. 지정 된 범위의 요소를 내림차순으로 정렬 하거나 이진 조건자로 지정한 정렬 기준에 따라 병렬로 정렬 합니다. 이 함수는 비교 기반의 불안정한 내부 정렬이라는 점에서 `std::sort`와 의미 체계가 비슷합니다.|
-|[parallel_transform 함수](concurrency-namespace-functions.md#parallel_transform)|오버로드되었습니다. 두 소스 범위에서 요소 쌍에 또는 소스 범위에 있는 각 요소에 지정된 함수 개체를 적용하고 대상 범위에 함수 개체의 반환 값을 병렬로 복사합니다. 이 함수는 `std::transform`과 의미 체계가 같습니다.|
-|[receive 함수](concurrency-namespace-functions.md#receive)|오버로드되었습니다. 컨텍스트에서 정확히 한 소스의 데이터를 대기하고 허용되는 값을 필터링할 수 있게 하는 일반 receive 구현입니다.|
+|[parallel_buffered_sort 함수](concurrency-namespace-functions.md#parallel_buffered_sort)|오버로드됨. 지정 된 범위의 요소를 내림차순으로 정렬 하거나 이진 조건자로 지정한 정렬 기준에 따라 병렬로 정렬 합니다. 이 함수는 `O(n)` 추가 공간이 필요하고 정렬되는 요소에 대한 기본 초기화를 요구한다는 점을 제외하고, 비교 기반의 불안정한 내부 정렬이라는 점에서 `std::sort`와 의미 체계가 비슷합니다.|
+|[parallel_for 함수](concurrency-namespace-functions.md#parallel_for)|오버로드됨. `parallel_for`는 일정 범위의 인덱스를 반복하고 각 반복 시 사용자가 제공한 함수를 병렬로 실행합니다.|
+|[parallel_for_each 함수](concurrency-namespace-functions.md#parallel_for_each)|오버로드됨. `parallel_for_each`는 범위 내의 각 요소에 지정된 함수를 병렬로 적용합니다. 요소에 대한 반복이 병렬로 수행되고 반복 순서가 지정되지 않는다는 점을 제외하고 `std` 네임스페이스의 `for_each` 함수와 의미 체계가 같습니다. `_Func` 인수는 `operator()(T)` 형식의 함수 호출 연산자를 지원해야 합니다. 여기서 `T` 매개 변수는 반복되는 컨테이너의 항목 형식입니다.|
+|[parallel_invoke 함수](concurrency-namespace-functions.md#parallel_invoke)|오버로드됨. 매개 변수로 제공된 함수 개체를 병렬로 실행하고 실행이 완료될 때까지 차단됩니다. 각 함수 개체는 람다 식, 함수에 대한 포인터 또는 `void operator()()` 서명을 사용하여 함수 호출 연산자를 지원하는 모든 개체일 수 있습니다.|
+|[parallel_radixsort 함수](concurrency-namespace-functions.md#parallel_radixsort)|오버로드됨. 기수 정렬 알고리즘을 사용하여 지정된 범위의 요소를 비내림차순으로 정렬합니다. 부호 없는 정수와 유사한 키로 정렬할 요소를 프로젝션할 수 있는 프로젝션 함수를 요구하는 안정적인 정렬 함수입니다. 정렬되는 요소에 기본 초기화가 필요합니다.|
+|[parallel_reduce 함수](concurrency-namespace-functions.md#parallel_reduce)|오버로드됨. 연속적 부분 합계를 계산하여 지정된 범위 내 모든 요소의 합계를 계산하거나, 합계 대신 지정된 이항 연산을 사용하여 유사하게 구한 연속적 부분 결과의 결과를 병렬로 계산합니다. `parallel_reduce`는 이항 연산이 결합형이어야 하고 초기 값 대신 ID 값을 요구한다는 점을 제외하고 `std::accumulate`와 의미 체계가 비슷합니다.|
+|[parallel_sort 함수](concurrency-namespace-functions.md#parallel_sort)|오버로드됨. 지정 된 범위의 요소를 내림차순으로 정렬 하거나 이진 조건자로 지정한 정렬 기준에 따라 병렬로 정렬 합니다. 이 함수는 비교 기반의 불안정한 내부 정렬이라는 점에서 `std::sort`와 의미 체계가 비슷합니다.|
+|[parallel_transform 함수](concurrency-namespace-functions.md#parallel_transform)|오버로드됨. 두 소스 범위에서 요소 쌍에 또는 소스 범위에 있는 각 요소에 지정된 함수 개체를 적용하고 대상 범위에 함수 개체의 반환 값을 병렬로 복사합니다. 이 함수는 `std::transform`과 의미 체계가 같습니다.|
+|[receive 함수](concurrency-namespace-functions.md#receive)|오버로드됨. 컨텍스트에서 정확히 한 소스의 데이터를 대기하고 허용되는 값을 필터링할 수 있게 하는 일반 receive 구현입니다.|
 |[run_with_cancellation_token 함수](concurrency-namespace-functions.md#run_with_cancellation_token)|지정된 취소 토큰의 컨텍스트에서 동기적으로 즉시 함수 개체를 실행합니다.|
-|[send 함수](concurrency-namespace-functions.md#send)|오버로드되었습니다. 대상이 메시지를 수락 또는 거절할 때까지 기다리는 동기 전송 작업입니다.|
+|[send 함수](concurrency-namespace-functions.md#send)|오버로드됨. 대상이 메시지를 수락 또는 거절할 때까지 기다리는 동기 전송 작업입니다.|
 |[set_ambient_scheduler 함수(동시성 런타임)](concurrency-namespace-functions.md#set_ambient_scheduler)||
-|[set_task_execution_resources 함수](concurrency-namespace-functions.md#set_task_execution_resources)|오버로드되었습니다. 동시성 런타임 내부 작업자 스레드가 사용하는 실행 리소스를 지정된 선호도 집합으로 제한합니다.<br /><br /> 리소스 관리자가 생성되기 전이나 두 리소스 관리자 수명 사이에만 이 메서드를 호출할 수 있습니다. 리소스 관리자가 호출 시 존재하지 않는 한 여러 번 호출할 수 있습니다. 선호도 제한이 설정된 후에는 다음 유효한 `set_task_execution_resources` 메서드 호출까지 적용된 상태로 유지됩니다.<br /><br /> 제공된 선호도 마스크는 프로세스 선호도 마스크의 하위 집합이 아니어야 합니다. 필요한 경우 프로세스 선호도가 업데이트됩니다.|
+|[set_task_execution_resources 함수](concurrency-namespace-functions.md#set_task_execution_resources)|오버로드됨. 동시성 런타임 내부 작업자 스레드가 사용하는 실행 리소스를 지정된 선호도 집합으로 제한합니다.<br /><br /> 리소스 관리자가 생성되기 전이나 두 리소스 관리자 수명 사이에만 이 메서드를 호출할 수 있습니다. 리소스 관리자가 호출 시 존재하지 않는 한 여러 번 호출할 수 있습니다. 선호도 제한이 설정된 후에는 다음 유효한 `set_task_execution_resources` 메서드 호출까지 적용된 상태로 유지됩니다.<br /><br /> 제공된 선호도 마스크는 프로세스 선호도 마스크의 하위 집합이 아니어야 합니다. 필요한 경우 프로세스 선호도가 업데이트됩니다.|
 |[swap 함수](concurrency-namespace-functions.md#swap)|두 `concurrent_vector` 개체의 요소를 교환합니다.|
 |[task_from_exception 함수(동시성 런타임)](concurrency-namespace-functions.md#task_from_exception)||
 |[task_from_result 함수(동시성 런타임)](concurrency-namespace-functions.md#task_from_result)||
 |[Trace_agents_register_name 함수](concurrency-namespace-functions.md#trace_agents_register_name)|ETW 추적에서 메시지 블록 또는 에이전트에 지정된 이름을 연결합니다.|
-|[try_receive 함수](concurrency-namespace-functions.md#try_receive)|오버로드되었습니다. 컨텍스트에서 정확히 한 소스의 데이터를 찾고 허용되는 값을 필터링할 수 있게 하는 일반 try-receive 구현입니다. 데이터가 준비되지 않은 경우 메서드가 false를 반환합니다.|
+|[try_receive 함수](concurrency-namespace-functions.md#try_receive)|오버로드됨. 컨텍스트에서 정확히 한 소스의 데이터를 찾고 허용되는 값을 필터링할 수 있게 하는 일반 try-receive 구현입니다. 데이터가 준비되지 않은 경우 메서드가 false를 반환합니다.|
 |[wait 함수](concurrency-namespace-functions.md#wait)|지정된 시간 동안 현재 컨텍스트를 일시 중지합니다.|
 |[when_all 함수](concurrency-namespace-functions.md#when_all)|인수로 제공된 모든 작업이 성공적으로 완료될 경우 완료되는 작업을 만듭니다.|
-|[when_any 함수](concurrency-namespace-functions.md#when_any)|오버로드되었습니다. 인수로 제공된 모든 작업이 성공적으로 완료될 경우 완료되는 작업을 만듭니다.|
+|[when_any 함수](concurrency-namespace-functions.md#when_any)|오버로드됨. 인수로 제공된 모든 작업이 성공적으로 완료될 경우 완료되는 작업을 만듭니다.|
 
 ### <a name="operators"></a>연산자
 
 |Name|설명|
 |----------|-----------------|
 |[연산자! =](concurrency-namespace-operators.md#operator_neq)|연산자의 좌변에 있는 `concurrent_vector` 개체가 우변에 있는 `concurrent_vector` 개체와 같지 않은지 테스트합니다.|
-|[연산자&&](concurrency-namespace-operators.md#operator_amp_amp)|오버로드되었습니다. 인수로 제공 된 두 작업이 모두 성공적으로 완료 되 면 완료 되는 작업을 만듭니다.|
-|[operator&#124;&#124;](concurrency-namespace-operators.md#operator_lor)|오버로드되었습니다. 인수로 제공된 작업 중 하나가 성공적으로 완료될 경우 완료되는 작업을 만듭니다.|
+|[연산자&&](concurrency-namespace-operators.md#operator_amp_amp)|오버로드됨. 인수로 제공 된 두 작업이 모두 성공적으로 완료 되 면 완료 되는 작업을 만듭니다.|
+|[operator&#124;&#124;](concurrency-namespace-operators.md#operator_lor)|오버로드됨. 인수로 제공된 작업 중 하나가 성공적으로 완료될 경우 완료되는 작업을 만듭니다.|
 |[연산자<](concurrency-namespace-operators.md#operator_lt)|연산자의 좌변에 있는 `concurrent_vector` 개체가 우변에 있는 `concurrent_vector` 개체보다 작은지 테스트합니다.|
 |[연산자<=](concurrency-namespace-operators.md#operator_lt_eq)|연산자의 좌변에 있는 `concurrent_vector` 개체가 우변에 있는 `concurrent_vector` 개체보다 작거나 같은지 테스트합니다.|
 |[연산자 = =](concurrency-namespace-operators.md#operator_eq_eq)|연산자의 좌변에 있는 `concurrent_vector` 개체가 우변에 있는 `concurrent_vector` 개체와 같은지 테스트합니다.|

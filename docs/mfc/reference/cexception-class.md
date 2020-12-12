@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CException 클래스'
 title: CException 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - CException [MFC], Delete
 - CException [MFC], ReportError
 ms.assetid: cfacf14d-bfe4-4666-a5c7-38b800512920
-ms.openlocfilehash: e27802e05c832d28d848d9eb1235d6ef5980b306
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 39d3266817ee1be20acde0b01c7c5d1aa90313cb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841560"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184662"
 ---
 # <a name="cexception-class"></a>CException 클래스
 
@@ -115,7 +116,7 @@ void Delete();
 
 개체가 생성 될 때 개체를 삭제할지 여부를 지정할 수 있습니다. 자세한 내용은 [cexception:: cexception](#cexception)을 참조 하세요.
 
-`Delete`C + + 메커니즘을 사용 하는 경우에만를 호출 해야 **`try`** -  **`catch`** 합니다. MFC 매크로 **TRY** 및 **CATCH**를 사용 하는 경우 이러한 매크로는이 함수를 자동으로 호출 합니다.
+`Delete`C + + 메커니즘을 사용 하는 경우에만를 호출 해야 **`try`** -  **`catch`** 합니다. MFC 매크로 **TRY** 및 **CATCH** 를 사용 하는 경우 이러한 매크로는이 함수를 자동으로 호출 합니다.
 
 ### <a name="example"></a>예제
 

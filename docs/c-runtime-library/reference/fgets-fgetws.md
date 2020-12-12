@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: fgets, fgetws'
 title: fgets, fgetws
 ms.date: 4/2/2020
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - fgetws function
 - fgetts function
 ms.assetid: ad549bb5-df98-4ccd-a53f-95114e60c4fc
-ms.openlocfilehash: 5c1d63eea6561af6ab7f51c147c92e184d3d11f8
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 21c360f621ed19f076af129f618e80aa27102e86
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912058"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329301"
 ---
 # <a name="fgets-fgetws"></a>fgets, fgetws
 
@@ -63,7 +64,7 @@ wchar_t *fgetws(
 
 ### <a name="parameters"></a>매개 변수
 
-*문자열*<br/>
+*str*<br/>
 데이터의 스토리지 위치입니다.
 
 *numChars*<br/>
@@ -72,17 +73,17 @@ wchar_t *fgetws(
 *스트림*<br/>
 **FILE** 구조체에 대한 포인터입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-이러한 각 함수는 *str*을 반환 합니다. 오류 또는 파일 끝 조건을 나타내기 위해 **NULL** 이 반환 됩니다. **Feof** **ferror** 를 사용 하 여 오류가 발생 했는지 여부를 확인 합니다. *Str* 또는 *stream* 이 null 포인터 이거나 *numChars* 가 0 보다 작거나 같으면이 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 은 **EINVAL** 로 설정 되 고 함수는 **NULL**을 반환 합니다.
+이러한 각 함수는 *str* 을 반환 합니다. 오류 또는 파일 끝 조건을 나타내기 위해 **NULL** 이 반환 됩니다. **Feof** **ferror** 를 사용 하 여 오류가 발생 했는지 여부를 확인 합니다. *Str* 또는 *stream* 이 null 포인터 이거나 *numChars* 가 0 보다 작거나 같으면이 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 은 **EINVAL** 로 설정 되 고 함수는 **NULL** 을 반환 합니다.
 
 이러한 오류 코드 및 기타 오류 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-**Fgets** 함수는 입력 *스트림* 인수에서 문자열을 읽어 *str*에 저장 합니다. **fgets** 는 현재 스트림 위치에서 첫 번째 줄 바꿈 문자를 포함 하 여 스트림의 끝까지 또는 읽은 문자 수가 *numChars* -1과 같을 때까지 (둘 중 먼저 도달할 때까지) 문자를 가져옵니다. *Str* 에 저장 된 결과는 null 문자와 함께 추가 됩니다. 줄 바꿈 문자는 읽을 경우 문자열에 포함됩니다.
+**Fgets** 함수는 입력 *스트림* 인수에서 문자열을 읽어 *str* 에 저장 합니다. **fgets** 는 현재 스트림 위치에서 첫 번째 줄 바꿈 문자를 포함 하 여 스트림의 끝까지 또는 읽은 문자 수가 *numChars* -1과 같을 때까지 (둘 중 먼저 도달할 때까지) 문자를 가져옵니다. *Str* 에 저장 된 결과는 null 문자와 함께 추가 됩니다. 줄 바꿈 문자는 읽을 경우 문자열에 포함됩니다.
 
-**fgetws** 는 **fto**의 와이드 문자 버전입니다.
+**fgetws** 는 **fto** 의 와이드 문자 버전입니다.
 
 **fgetws** 는 *스트림을* 텍스트 모드에서 열지 아니면 이진 모드로 열지에 따라 와이드 문자 인수 *str* 를 멀티 바이트 문자열 또는 와이드 문자열로 읽습니다. 텍스트 및 이진 모드를 유니코드 및 멀티바이트 스트림 I/O에서 사용하는 방법에 대한 자세한 내용은 [텍스트 및 이진 모드 파일 I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md) 및 [텍스트 및 이진 모드의 유니코드 스트림 I/O](../../c-runtime-library/unicode-stream-i-o-in-text-and-binary-modes.md)를 참조하세요.
 
@@ -96,7 +97,7 @@ wchar_t *fgetws(
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|필수 헤더|
+|함수|필수 헤더|
 |--------------|---------------------|
 |**fgets**|\<stdio.h>|
 |**fgetws**|\<stdio.h> 또는 \<wchar.h>|
@@ -145,5 +146,5 @@ Line one.
 
 [스트림 I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fputs, fputws](fputs-fputws.md)<br/>
-[_getws를 가져옵니다.](../../c-runtime-library/gets-getws.md)<br/>
+[gets, _getws](../../c-runtime-library/gets-getws.md)<br/>
 [puts, _putws](puts-putws.md)<br/>

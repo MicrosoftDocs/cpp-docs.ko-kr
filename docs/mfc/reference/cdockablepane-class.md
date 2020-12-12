@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CDockablePane 클래스'
 title: CDockablePane Class
 ms.date: 07/02/2019
 f1_keywords:
@@ -132,12 +133,12 @@ helpviewer_keywords:
 - CDockablePane [MFC], m_bHideInAutoHideMode
 - CDockablePane [MFC], m_nSlideSteps
 ms.assetid: e2495f4c-765f-48f9-a2e2-e45e47608d91
-ms.openlocfilehash: 08c38419dd1ab8166095b1363ad69d816805614d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: baf205581c61fa26295a533cf04ee1562eb3c675
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212529"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97185130"
 ---
 # <a name="cdockablepane-class"></a>CDockablePane Class
 
@@ -153,7 +154,7 @@ class CDockablePane : public CPane
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[CDockablePane:: CDockablePane](#cdockablepane)|`CDockablePane` 개체를 생성하고 초기화합니다.|
 
@@ -247,7 +248,7 @@ class CDockablePane : public CPane
 
 ## <a name="remarks"></a>설명
 
-`CDockablePane`는 다음과 같은 기능을 구현 합니다.
+`CDockablePane` 는 다음과 같은 기능을 구현 합니다.
 
 - 주 프레임 창에 창을 도킹 합니다.
 
@@ -313,7 +314,7 @@ class CDockablePane : public CPane
 
 **헤더:** afxDockablePane
 
-## <a name="cdockablepaneattachtotabwnd"></a><a name="attachtotabwnd"></a>CDockablePane:: AttachToTabWnd
+## <a name="cdockablepaneattachtotabwnd"></a><a name="attachtotabwnd"></a> CDockablePane:: AttachToTabWnd
 
 현재 창을 대상 창에 연결 하 여 탭 창을 만듭니다.
 
@@ -339,7 +340,7 @@ virtual CDockablePane* AttachToTabWnd(
 *ppTabbedControlBar*<br/>
 제한이 연결 작업에서 발생 하는 탭 창을 포함 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 탭 창이 아닌 경우 현재 창에 대 한 포인터입니다. 그렇지 않으면 연결 작업에서 발생 하는 탭 창에 대 한 포인터입니다. 현재 창을 연결할 수 없거나 오류가 발생 한 경우 반환 값은 NULL입니다.
 
@@ -365,7 +366,7 @@ virtual CDockablePane* AttachToTabWnd(
 
 다른 창을 연결 하기 전에 첫 번째 창을 도킹 해야 합니다.
 
-## <a name="cdockablepanecalcfixedlayout"></a><a name="calcfixedlayout"></a>CDockablePane:: CalcFixedLayout
+## <a name="cdockablepanecalcfixedlayout"></a><a name="calcfixedlayout"></a> CDockablePane:: CalcFixedLayout
 
 창 사각형의 크기를 반환 합니다.
 
@@ -383,11 +384,11 @@ virtual CSize CalcFixedLayout(
 *bHorz*<br/>
 진행 사용 되지 않습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `CSize`창 사각형의 크기를 포함 하는 개체입니다.
 
-## <a name="cdockablepanecanacceptminiframe"></a><a name="canacceptminiframe"></a>CDockablePane:: CanAcceptMiniFrame
+## <a name="cdockablepanecanacceptminiframe"></a><a name="canacceptminiframe"></a> CDockablePane:: CanAcceptMiniFrame
 
 지정 된 미니 프레임을 창에 도킹할 수 있는지 여부를 확인 합니다.
 
@@ -400,11 +401,11 @@ virtual BOOL CanAcceptMiniFrame(CPaneFrameWnd* pMiniFrame) const;
 *pMiniFrame*<br/>
 진행 개체에 대 한 포인터 `CPaneFrameWnd` 입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 *PMiniFrame* 를 창에 도킹할 수 있으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
-## <a name="cdockablepanecanacceptpane"></a><a name="canacceptpane"></a>CDockablePane:: CanAcceptPane
+## <a name="cdockablepanecanacceptpane"></a><a name="canacceptpane"></a> CDockablePane:: CanAcceptPane
 
 다른 창을 현재 창에 도킹할 수 있는지 여부를 확인 합니다.
 
@@ -417,7 +418,7 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
 *pBar*<br/>
 진행 현재 창에 도킹할 창을 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 지정 된 창을이 창에 도킹할 수 있으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
@@ -429,7 +430,7 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
 
 기본적으로이 메서드는 *Pbar* 또는 해당 부모 중 하나가 형식인 경우 TRUE를 반환 합니다 `CDockablePane` .
 
-## <a name="cdockablepanecanautohide"></a><a name="canautohide"></a>CDockablePane:: CanAutoHide 숨기기
+## <a name="cdockablepanecanautohide"></a><a name="canautohide"></a> CDockablePane:: CanAutoHide 숨기기
 
 창을 자동으로 숨길 수 있는지 여부를 결정 합니다.
 
@@ -437,13 +438,13 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
 virtual BOOL CanAutoHide() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 창을 자동으로 숨길 수 있으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-`CDockablePane::CanAutoHide`는 다음과 같은 상황에서 FALSE를 반환 합니다.
+`CDockablePane::CanAutoHide` 는 다음과 같은 상황에서 FALSE를 반환 합니다.
 
 - 창에 부모가 없습니다.
 
@@ -451,7 +452,7 @@ virtual BOOL CanAutoHide() const;
 
 - 창이 도킹 되지 않습니다.
 
-## <a name="cdockablepanecanbeattached"></a><a name="canbeattached"></a>CDockablePane:: CanBeAttached
+## <a name="cdockablepanecanbeattached"></a><a name="canbeattached"></a> CDockablePane:: CanBeAttached
 
 현재 창을 다른 창에 도킹할 수 있는지 여부를 확인 합니다.
 
@@ -459,7 +460,7 @@ virtual BOOL CanAutoHide() const;
 virtual BOOL CanBeAttached() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 도킹 가능한 창을 다른 창이 나 주 프레임 창에 도킹할 수 있으면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -467,7 +468,7 @@ virtual BOOL CanBeAttached() const;
 
 기본적으로이 메서드는 항상 TRUE를 반환 합니다. [Cbasepane:: EnableDocking](../../mfc/reference/cbasepane-class.md#enabledocking)을 호출 하지 않고 도킹을 활성화 하거나 비활성화 하려면 파생 클래스에서이 메서드를 재정의 합니다.
 
-## <a name="cdockablepanecdockablepane"></a><a name="cdockablepane"></a>CDockablePane:: CDockablePane
+## <a name="cdockablepanecdockablepane"></a><a name="cdockablepane"></a> CDockablePane:: CDockablePane
 
 [CDockablePane](../../mfc/reference/cdockablepane-class.md) 개체를 생성 하 고 초기화 합니다.
 
@@ -479,7 +480,7 @@ CDockablePane();
 
 도킹 가능한 창 개체를 구성한 후에는 [CDockablePane:: create](#create) 또는 [CDockablePane:: createex](#createex) 를 호출 하 여 만듭니다.
 
-## <a name="cdockablepaneconverttotabbeddocument"></a><a name="converttotabbeddocument"></a>CDockablePane:: ConvertToTabbedDocument
+## <a name="cdockablepaneconverttotabbeddocument"></a><a name="converttotabbeddocument"></a> CDockablePane:: ConvertToTabbedDocument
 
 하나 이상의 도킹 가능한 창을 MDI 탭 문서로 변환 합니다.
 
@@ -492,7 +493,7 @@ virtual void ConvertToTabbedDocument(BOOL bActiveTabOnly = TRUE);
 *bActiveTabOnly*<br/>
 진행 을 변환할 때 `CTabbedPane` 활성 탭만 변환 하려면 TRUE를 지정 하 고 창의 모든 탭을 변환 하려면 FALSE를 지정 합니다.
 
-## <a name="cdockablepanecheckautohidecondition"></a><a name="checkautohidecondition"></a>CDockablePane:: CheckAutoHideCondition
+## <a name="cdockablepanecheckautohidecondition"></a><a name="checkautohidecondition"></a> CDockablePane:: CheckAutoHideCondition
 
 도킹 창이 숨겨지는지 (자동 숨기기 모드 라고도 함) 여부를 결정 합니다.
 
@@ -500,7 +501,7 @@ virtual void ConvertToTabbedDocument(BOOL bActiveTabOnly = TRUE);
 virtual BOOL CheckAutoHideCondition();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 숨기기 조건이 충족 되 면 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
@@ -510,7 +511,7 @@ virtual BOOL CheckAutoHideCondition();
 
 이전 조건이 모두 충족 되는 경우 프레임 워크는 [CDockablePane:: Slide](#slide) 를 호출 하 여 창을 숨깁니다.
 
-## <a name="cdockablepanecheckstopslidecondition"></a><a name="checkstopslidecondition"></a>CDockablePane:: CheckStopSlideCondition
+## <a name="cdockablepanecheckstopslidecondition"></a><a name="checkstopslidecondition"></a> CDockablePane:: CheckStopSlideCondition
 
 자동 숨기기 도킹 창이 슬라이딩으로 중지 되어야 하는 시기를 결정 합니다.
 
@@ -523,17 +524,17 @@ virtual BOOL CheckStopSlideCondition(BOOL bDirection);
 *bDirection*<br/>
 진행 창이 표시 되 면 TRUE입니다. 창이 숨겨진 경우 FALSE입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 중지 조건이 충족 되 면 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-도킹 가능한 창이 자동 숨기기 모드로 설정 된 경우 프레임 워크는 슬라이딩 효과를 사용 하 여 창을 표시 하거나 숨깁니다. 프레임 워크는 창이 슬라이딩 될 때이 함수를 호출 합니다. `CheckStopSlideCondition`창이 완전히 표시 되거나 완전히 숨겨지는 경우 TRUE를 반환 합니다.
+도킹 가능한 창이 자동 숨기기 모드로 설정 된 경우 프레임 워크는 슬라이딩 효과를 사용 하 여 창을 표시 하거나 숨깁니다. 프레임 워크는 창이 슬라이딩 될 때이 함수를 호출 합니다. `CheckStopSlideCondition` 창이 완전히 표시 되거나 완전히 숨겨지는 경우 TRUE를 반환 합니다.
 
 사용자 지정 자동 숨기기 효과를 구현 하려면 파생 클래스에서이 메서드를 재정의 합니다.
 
-## <a name="cdockablepanecopystate"></a><a name="copystate"></a>CDockablePane:: CopyState
+## <a name="cdockablepanecopystate"></a><a name="copystate"></a> CDockablePane:: CopyState
 
 도킹 가능한 창의 상태를 복사 합니다.
 
@@ -548,7 +549,7 @@ virtual void CopyState(CDockablePane* pOrgBar);
 
 ### <a name="remarks"></a>설명
 
-`CDockablePane::CopyState`다음 메서드를 호출 하 여 현재 창에 작업 *막대* 의 상태를 복사 합니다.
+`CDockablePane::CopyState` 다음 메서드를 호출 하 여 현재 창에 작업 *막대* 의 상태를 복사 합니다.
 
 - [CPane:: CopyState](../../mfc/reference/cpane-class.md#copystate)
 
@@ -560,7 +561,7 @@ virtual void CopyState(CDockablePane* pOrgBar);
 
 - [CDockablePane:: IsAutohideAllEnabled](#isautohideallenabled)
 
-## <a name="cdockablepanecreate"></a><a name="create"></a>CDockablePane:: Create
+## <a name="cdockablepanecreate"></a><a name="create"></a> CDockablePane:: Create
 
 Windows 컨트롤을 만들어 [CDockablePane](../../mfc/reference/cdockablepane-class.md) 개체에 연결 합니다.
 
@@ -596,7 +597,7 @@ virtual BOOL Create(
 [in, out] 부모 창을 지정 합니다.
 
 *rect*<br/>
-진행 *PParentWnd*의 클라이언트 좌표로 창의 크기와 위치를 지정 합니다.
+진행 *PParentWnd* 의 클라이언트 좌표로 창의 크기와 위치를 지정 합니다.
 
 *bHasGripper*<br/>
 진행 캡션을 사용 하 여 창을 만들려면 TRUE로 설정 합니다. 그렇지 않으면 FALSE입니다.
@@ -622,7 +623,7 @@ virtual BOOL Create(
 *sizeDefault*<br/>
 진행 창의 크기를 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 도킹 가능한 창이 성공적으로 만들어지면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
@@ -634,7 +635,7 @@ Windows 창을 만들고 개체에 연결 `CDockablePane` 합니다.
 
 *DwTabbedStyle* 매개 변수에 AFX_CBRS_OUTLOOK_TABS 플래그가 지정 되어 있으면 [CDockablePane:: AttachToTabWnd](#attachtotabwnd) 메서드를 사용 하 여 다른 창이이 창에 연결 된 경우이 창에서 OUTLOOK 스타일의 탭 창을 만듭니다. 기본적으로 도킹 가능한 창에서는 [CTabbedPane](../../mfc/reference/ctabbedpane-class.md)형식의 일반 탭 창을 만듭니다.
 
-## <a name="cdockablepanecreatedefaultpanedivider"></a><a name="createdefaultpanedivider"></a>CDockablePane:: CreateDefaultPaneDivider
+## <a name="cdockablepanecreatedefaultpanedivider"></a><a name="createdefaultpanedivider"></a> CDockablePane:: CreateDefaultPaneDivider
 
 프레임 창에 도킹 될 때 창에 대 한 기본 구분선을 만듭니다.
 
@@ -656,7 +657,7 @@ static CPaneDivider* __stdcall CreateDefaultPaneDivider(
 *pSliderRTC*<br/>
 진행 사용 되지 않습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드는 새로 만든 구분선에 대 한 포인터를 반환 하거나, 구분선 생성에 실패 하는 경우 NULL을 반환 합니다.
 
@@ -671,7 +672,7 @@ static CPaneDivider* __stdcall CreateDefaultPaneDivider(
 |CBRS_ALIGN_LEFT|창이 프레임 창의 클라이언트 영역 왼쪽에 도킹 되 고 있습니다.|
 |CBRS_ALIGN_RIGHT|창은 프레임 창의 클라이언트 영역 오른쪽에 도킹 됩니다.|
 
-## <a name="cdockablepanecreateex"></a><a name="createex"></a>CDockablePane:: CreateEx
+## <a name="cdockablepanecreateex"></a><a name="createex"></a> CDockablePane:: CreateEx
 
 Windows 컨트롤을 만들어 [CDockablePane](../../mfc/reference/cdockablepane-class.md) 개체에 연결 합니다.
 
@@ -701,7 +702,7 @@ virtual BOOL CreateEx(
 [in, out] 부모 창을 지정 합니다.
 
 *rect*<br/>
-진행 *PParentWnd*의 클라이언트 좌표로 창의 크기와 위치를 지정 합니다.
+진행 *PParentWnd* 의 클라이언트 좌표로 창의 크기와 위치를 지정 합니다.
 
 *bHasGripper*<br/>
 진행 캡션을 사용 하 여 창을 만들려면 TRUE로 설정 합니다. 그렇지 않으면 FALSE입니다.
@@ -721,7 +722,7 @@ virtual BOOL CreateEx(
 *pContext*<br/>
 [in, out] 창의 만들기 컨텍스트를 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 도킹 가능한 창이 성공적으로 만들어지면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
@@ -733,7 +734,7 @@ Windows 창을 만들고 개체에 연결 `CDockablePane` 합니다.
 
 *DwTabbedStyle* 매개 변수에 AFX_CBRS_OUTLOOK_TABS 플래그가 지정 되어 있으면 [CDockablePane:: AttachToTabWnd](#attachtotabwnd) 메서드를 사용 하 여 다른 창이이 창에 연결 된 경우이 창에서 OUTLOOK 스타일의 탭 창을 만듭니다. 기본적으로 도킹 가능한 창에서는 [CTabbedPane](../../mfc/reference/ctabbedpane-class.md)형식의 일반 탭 창을 만듭니다.
 
-## <a name="cdockablepanecreatetabbedpane"></a><a name="createtabbedpane"></a>CDockablePane:: CreateTabbedPane
+## <a name="cdockablepanecreatetabbedpane"></a><a name="createtabbedpane"></a> CDockablePane:: CreateTabbedPane
 
 현재 창에서 탭 창을 만듭니다.
 
@@ -741,7 +742,7 @@ Windows 창을 만들고 개체에 연결 `CDockablePane` 합니다.
 virtual CTabbedPane* CreateTabbedPane();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 새 탭 창 이거나, 만들기 작업이 실패 한 경우 NULL입니다.
 
@@ -753,7 +754,7 @@ virtual CTabbedPane* CreateTabbedPane();
 
 탭 창은 `m_pTabbedControlBarRTC` [CDockablePane:: createex](#createex) 메서드로 초기화 되는 멤버에 저장 된 런타임 클래스 정보에 따라 만들어집니다.
 
-## <a name="cdockablepanedockpanecontainer"></a><a name="dockpanecontainer"></a>CDockablePane::D ockPaneContainer
+## <a name="cdockablepanedockpanecontainer"></a><a name="dockpanecontainer"></a> CDockablePane::D ockPaneContainer
 
 컨테이너를 창에 도킹 합니다.
 
@@ -775,7 +776,7 @@ virtual BOOL DockPaneContainer(
 *dockMethod*<br/>
 진행 사용 되지 않습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 컨테이너가 창에 성공적으로 도킹 되었으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
@@ -790,7 +791,7 @@ virtual BOOL DockPaneContainer(
 |CBRS_ALIGN_LEFT|컨테이너는 창의 왼쪽에 도킹 됩니다.|
 |CBRS_ALIGN_RIGHT|컨테이너는 창의 오른쪽에 도킹 됩니다.|
 
-## <a name="cdockablepanedockpanestandard"></a><a name="dockpanestandard"></a>CDockablePane::D Ock.estandand
+## <a name="cdockablepanedockpanestandard"></a><a name="dockpanestandard"></a> CDockablePane::D Ock.estandand
 
 윤곽선 (표준) 도킹을 사용 하 여 창을 도킹 합니다.
 
@@ -803,11 +804,11 @@ virtual CPane* DockPaneStandard(BOOL& bWasDocked);
 *bWasDocked*<br/>
 진행 메서드가 반환 될 때이 값은 창이 성공적으로 도킹 된 경우 TRUE를 포함 합니다. 그렇지 않으면 FALSE를 포함 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 창이 탭 창에 도킹 된 경우 또는 도킹의 결과로 탭 창이 만들어진 경우이 메서드는 탭 창에 대 한 포인터를 반환 합니다. 창이 성공적으로 도킹 된 경우이 메서드는 포인터를 반환 합니다 **`this`** . 도킹에 실패 한 경우이 메서드는 NULL을 반환 합니다.
 
-## <a name="cdockablepanedocktorecentpos"></a><a name="docktorecentpos"></a>CDockablePane::D ockToRecentPos
+## <a name="cdockablepanedocktorecentpos"></a><a name="docktorecentpos"></a> CDockablePane::D ockToRecentPos
 
 저장 된 도킹 위치에 창을 도킹 합니다.
 
@@ -815,7 +816,7 @@ virtual CPane* DockPaneStandard(BOOL& bWasDocked);
 BOOL CDockablePane::DockToRecentPos();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 창이 성공적으로 도킹 되었으면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -823,7 +824,7 @@ BOOL CDockablePane::DockToRecentPos();
 
 도킹 가능한 창에는 최근 도킹 정보가 [CRecentDockSiteInfo](../../mfc/reference/crecentdocksiteinfo-class.md) 개체에 저장 됩니다.
 
-## <a name="cdockablepanedocktowindow"></a><a name="docktowindow"></a>CDockablePane::D ockToWindow
+## <a name="cdockablepanedocktowindow"></a><a name="docktowindow"></a> CDockablePane::D ockToWindow
 
 도킹 창 하나를 다른 도킹 창에 도킹 합니다.
 
@@ -845,15 +846,15 @@ virtual BOOL DockToWindow(
 *lpRect*<br/>
 진행 창에 대 한 도킹 사각형을 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 창이 성공적으로 도킹 되었으면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-*Dwalignment*로 지정 된 맞춤을 사용 하 여 한 창을 다른 창에 도킹 하려면이 메서드를 호출 합니다.
+*Dwalignment* 로 지정 된 맞춤을 사용 하 여 한 창을 다른 창에 도킹 하려면이 메서드를 호출 합니다.
 
-## <a name="cdockablepanedrawcaption"></a><a name="drawcaption"></a>CDockablePane::D rawCaption
+## <a name="cdockablepanedrawcaption"></a><a name="drawcaption"></a> CDockablePane::D rawCaption
 
 도킹 창의 캡션 (그리퍼 라고도 함)을 그립니다.
 
@@ -877,7 +878,7 @@ virtual void DrawCaption(
 
 파생 클래스에서이 메서드를 재정의 하 여 캡션의 모양을 사용자 지정 합니다.
 
-## <a name="cdockablepaneenableautohideall"></a><a name="enableautohideall"></a>CDockablePane:: EnableAutohideAll
+## <a name="cdockablepaneenableautohideall"></a><a name="enableautohideall"></a> CDockablePane:: EnableAutohideAll
 
 이 창과 컨테이너의 다른 창에 대해 자동 숨기기 모드를 사용 하거나 사용 하지 않도록 설정 합니다.
 
@@ -896,7 +897,7 @@ void EnableAutohideAll(BOOL bEnable = TRUE);
 
 특정 창에 대해이 기능을 사용 하지 않도록 설정 하려면 *Benable* 을 FALSE로 설정 하 여이 메서드를 호출 합니다.
 
-## <a name="cdockablepaneenablegripper"></a><a name="enablegripper"></a>CDockablePane:: EnableGripper
+## <a name="cdockablepaneenablegripper"></a><a name="enablegripper"></a> CDockablePane:: EnableGripper
 
 캡션 (그리퍼 라고도 함)을 표시 하거나 숨깁니다.
 
@@ -915,7 +916,7 @@ virtual void EnableGripper(BOOL bEnable);
 
 언제 든 지 캡션을 표시 하거나 숨길 수 있습니다. 창이 탭 창에 탭으로 추가 되거나 미니 프레임 창에서 창이 부동 되는 경우 프레임 워크는 캡션을 숨깁니다.
 
-## <a name="cdockablepanegetahrestoredrect"></a><a name="getahrestoredrect"></a>CDockablePane:: GetAHRestoredRect
+## <a name="cdockablepanegetahrestoredrect"></a><a name="getahrestoredrect"></a> CDockablePane:: GetAHRestoredRect
 
 자동 숨기기 모드에 있을 때 창의 위치를 지정 합니다.
 
@@ -923,13 +924,13 @@ virtual void EnableGripper(BOOL bEnable);
 CRect GetAHRestoredRect() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `CRect`자동 숨기기 모드일 때 창의 위치를 포함 하는 개체입니다.
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockablepanegetahslidemode"></a><a name="getahslidemode"></a>CDockablePane:: GetAHSlideMode
+## <a name="cdockablepanegetahslidemode"></a><a name="getahslidemode"></a> CDockablePane:: GetAHSlideMode
 
 창에 대 한 자동 숨기기 슬라이드 모드를 검색 합니다.
 
@@ -937,13 +938,13 @@ CRect GetAHRestoredRect() const;
 virtual UINT GetAHSlideMode() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 창에 대 한 자동 숨기기 슬라이드 모드를 지정 하는 UINT입니다. 반환 값은 AFX_AHSM_MOVE 또는 AFX_AHSM_STRETCH 일 수 있지만 구현에서는 AFX_AHSM_MOVE만 사용 합니다.
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockablepanegetcaptionheight"></a><a name="getcaptionheight"></a>CDockablePane:: GetCaptionHeight
+## <a name="cdockablepanegetcaptionheight"></a><a name="getcaptionheight"></a> CDockablePane:: GetCaptionHeight
 
 현재 캡션의 높이 (픽셀)를 반환 합니다.
 
@@ -951,7 +952,7 @@ virtual UINT GetAHSlideMode() const;
 virtual int GetCaptionHeight() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 캡션의 높이 (픽셀)입니다.
 
@@ -959,7 +960,7 @@ virtual int GetCaptionHeight() const;
 
 캡션이 [CDockablePane:: EnableGripper](#enablegripper) 메서드에 의해 숨겨진 경우 캡션 높이는 0이 고, 창에 캡션이 없으면입니다.
 
-## <a name="cdockablepanegetdefaultpanedivider"></a><a name="getdefaultpanedivider"></a>CDockablePane:: GetDefaultPaneDivider
+## <a name="cdockablepanegetdefaultpanedivider"></a><a name="getdefaultpanedivider"></a> CDockablePane:: GetDefaultPaneDivider
 
 창의 컨테이너에 대 한 기본 창 구분선을 반환 합니다.
 
@@ -967,7 +968,7 @@ virtual int GetCaptionHeight() const;
 CPaneDivider* GetDefaultPaneDivider() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 도킹 가능한 창이 주 프레임 창에 도킹 된 경우 또는 도킹 가능한 창이 도킹 되지 않았거나 부동 인 경우 유효한 [CPaneDivider](../../mfc/reference/cpanedivider-class.md) 개체입니다 `NULL` .
 
@@ -975,7 +976,7 @@ CPaneDivider* GetDefaultPaneDivider() const;
 
 창 분할자에 대 한 자세한 내용은 [CPaneDivider 클래스](../../mfc/reference/cpanedivider-class.md)를 참조 하세요.
 
-## <a name="cdockablepanegetdockingstatus"></a><a name="getdockingstatus"></a>CDockablePane:: GetDockingStatus
+## <a name="cdockablepanegetdockingstatus"></a><a name="getdockingstatus"></a> CDockablePane:: GetDockingStatus
 
 제공 된 포인터 위치를 기준으로 창이 도킹 될 수 있는 기능을 결정 합니다.
 
@@ -987,13 +988,13 @@ virtual AFX_CS_STATUS GetDockingStatus(
 
 ### <a name="parameters"></a>매개 변수
 
-*p t*<br/>
+*pt*<br/>
 진행 화면 좌표에서 포인터의 위치입니다.
 
 *nSensitivity*<br/>
 진행 사각형의 가장자리에서 떨어진 거리 (픽셀)입니다. 도킹을 사용 하려면 포인터가 있어야 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 다음 상태 값 중 하나입니다.
 
@@ -1012,7 +1013,7 @@ DT_IMMEDIATE 도킹 모드를 사용 하는 부동 도구 모음이 나 도킹 �
 
 지연 된 도킹 상태 (CS_DELAY_DOCK 및 CS_DELAY_DOCK_TO_TAB)의 경우 프레임 워크는 사용자가 마우스 단추를 놓을 때까지 도킹을 수행 하지 않습니다. 창에서 DT_STANDARD 도킹 모드를 사용 하는 경우 프레임 워크는 예상 도킹 위치에 사각형을 표시 합니다. 창에서 DT_SMART 도킹 모드를 사용 하는 경우 프레임 워크는 프로젝션 된 도킹 위치에 스마트 도킹 표식과 반투명 사각형을 표시 합니다. 창에 대 한 도킹 모드를 지정 하려면 [Cbasepane:: SetDockingMode](../../mfc/reference/cbasepane-class.md#setdockingmode) 메서드를 호출 합니다. 스마트 도킹에 대 한 자세한 내용은 [CDockingManager:: GetSmartDockingParams](../../mfc/reference/cdockingmanager-class.md#getsmartdockingparams)를 참조 하세요.
 
-## <a name="cdockablepanegetdragsensitivity"></a><a name="getdragsensitivity"></a>CDockablePane:: GetDragSensitivity
+## <a name="cdockablepanegetdragsensitivity"></a><a name="getdragsensitivity"></a> CDockablePane:: GetDragSensitivity
 
 도킹 창의 끌기 민감도를 반환 합니다.
 
@@ -1020,11 +1021,11 @@ DT_IMMEDIATE 도킹 모드를 사용 하는 부동 도구 모음이 나 도킹 �
 static const CSize& GetDragSensitivity();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 끌기 지점에 중심이 있는 사각형의 너비와 높이 (픽셀)를 포함 하는 [Csize](../../atl-mfc-shared/reference/csize-class.md) 개체입니다. 마우스 포인터를이 사각형 밖으로 이동할 때까지 끌기 작업이 시작 되지 않습니다.
 
-## <a name="cdockablepanegetlastpercentinpanecontainer"></a><a name="getlastpercentinpanecontainer"></a>CDockablePane:: GetLastPercentInPaneContainer
+## <a name="cdockablepanegetlastpercentinpanecontainer"></a><a name="getlastpercentinpanecontainer"></a> CDockablePane:: GetLastPercentInPaneContainer
 
 해당 컨테이너 ( [CPaneContainer 클래스](../../mfc/reference/cpanecontainer-class.md))에서 창이 차지 하는 공간의 비율을 검색 합니다.
 
@@ -1032,7 +1033,7 @@ static const CSize& GetDragSensitivity();
 int GetLastPercentInPaneContainer() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 해당 컨테이너에서 창이 차지 하는 공간의 비율을 지정 하는 *int* 입니다.
 
@@ -1040,7 +1041,7 @@ int GetLastPercentInPaneContainer() const;
 
 이 메서드는 컨테이너가 해당 레이아웃을 조정할 때 사용 됩니다.
 
-## <a name="cdockablepanegettabarea"></a><a name="gettabarea"></a>CDockablePane:: GetTabArea
+## <a name="cdockablepanegettabarea"></a><a name="gettabarea"></a> CDockablePane:: GetTabArea
 
 창의 탭 영역을 검색 합니다.
 
@@ -1062,7 +1063,7 @@ virtual void GetTabArea(
 
 이 메서드는에서 파생 되 고 탭이 있는 클래스 에서만 사용 됩니다 `CDockablePane` . 자세한 내용은 [CTabbedPane:: gettabarea](../../mfc/reference/ctabbedpane-class.md#gettabarea) 및 [CMFCOutlookBar:: gettabarea](../../mfc/reference/cmfcoutlookbar-class.md#gettabarea)를 참조 하세요.
 
-## <a name="cdockablepanegettabbedpanertc"></a><a name="gettabbedpanertc"></a>CDockablePane:: GetTabbedPaneRTC
+## <a name="cdockablepanegettabbedpanertc"></a><a name="gettabbedpanertc"></a> CDockablePane:: GetTabbedPaneRTC
 
 다른 창이 현재 창에 도킹 될 때 생성 되는 탭 창에 대 한 런타임 클래스 정보를 반환 합니다.
 
@@ -1070,7 +1071,7 @@ virtual void GetTabArea(
 CRuntimeClass* GetTabbedPaneRTC() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 도킹 가능한 창에 대 한 런타임 클래스 정보입니다.
 
@@ -1080,7 +1081,7 @@ CRuntimeClass* GetTabbedPaneRTC() const;
 
 [CDockablePane:: SetTabbedPaneRTC](#settabbedpanertc) 메서드를 호출 하 여 런타임 클래스 정보를 설정할 수 있습니다.
 
-## <a name="cdockablepanehasautohidemode"></a><a name="hasautohidemode"></a>CDockablePane:: HasAutoHideMode
+## <a name="cdockablepanehasautohidemode"></a><a name="hasautohidemode"></a> CDockablePane:: HasAutoHideMode
 
 도킹 창을 자동 숨기기 모드로 전환할 수 있는지 여부를 지정 합니다.
 
@@ -1088,7 +1089,7 @@ CRuntimeClass* GetTabbedPaneRTC() const;
 virtual BOOL HasAutoHideMode() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 도킹 가능한 창을 자동 숨기기 모드로 전환할 수 있으면 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
@@ -1096,7 +1097,7 @@ virtual BOOL HasAutoHideMode() const;
 
 도킹 가능한 특정 창에 대해 자동 숨기기 모드를 사용 하지 않도록 설정 하려면 파생 클래스에서이 메서드를 재정의 합니다.
 
-## <a name="cdockablepanehittest"></a><a name="hittest"></a>CDockablePane:: System.windows.media.visualtreehelper.hittest
+## <a name="cdockablepanehittest"></a><a name="hittest"></a> CDockablePane:: System.windows.media.visualtreehelper.hittest
 
 사용자가 마우스를 클릭할 때 창의 위치를 지정 합니다.
 
@@ -1114,7 +1115,7 @@ virtual int HitTest(
 *bDetectCaption*<br/>
 진행 HTCAPTION 창의 캡션에 있으면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 다음 값 중 하나입니다.
 
@@ -1128,7 +1129,7 @@ virtual int HitTest(
 
 - HTMAXBUTTON는 *고정 단추를 클릭* 합니다.
 
-## <a name="cdockablepaneisautohideallenabled"></a><a name="isautohideallenabled"></a>CDockablePane:: IsAutohideAllEnabled
+## <a name="cdockablepaneisautohideallenabled"></a><a name="isautohideallenabled"></a> CDockablePane:: IsAutohideAllEnabled
 
 도킹 창과 컨테이너의 다른 모든 창을 자동 숨기기 모드로 전환할 수 있는지 여부를 나타냅니다.
 
@@ -1136,7 +1137,7 @@ virtual int HitTest(
 virtual BOOL IsAutohideAllEnabled() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 도킹 가능한 창과 컨테이너의 다른 모든 창을 자동 숨기기 모드로 전환할 수 있으면 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
@@ -1146,7 +1147,7 @@ virtual BOOL IsAutohideAllEnabled() const;
 
 이 동작을 사용 하거나 사용 하지 않도록 설정 하려면 [CDockablePane:: EnableAutohideAll](#enableautohideall) 메서드를 호출 합니다.
 
-## <a name="cdockablepaneisautohidemode"></a><a name="isautohidemode"></a>CDockablePane:: IsAutoHideMode
+## <a name="cdockablepaneisautohidemode"></a><a name="isautohidemode"></a> CDockablePane:: IsAutoHideMode
 
 창이 자동 숨기기 모드에 있는지 여부를 확인 합니다.
 
@@ -1154,11 +1155,11 @@ virtual BOOL IsAutohideAllEnabled() const;
 virtual BOOL IsAutoHideMode() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 도킹 가능한 창이 자동 숨기기 모드 이면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
-## <a name="cdockablepaneisdocked"></a><a name="isdocked"></a>CDockablePane:: IsDocked
+## <a name="cdockablepaneisdocked"></a><a name="isdocked"></a> CDockablePane:: IsDocked
 
 현재 창이 도킹 되어 있는지 여부를 확인 합니다.
 
@@ -1166,7 +1167,7 @@ virtual BOOL IsAutoHideMode() const;
 virtual BOOL IsDocked() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 도킹 가능한 창이 미니 프레임 창에 속하지 않거나 다른 창이 있는 미니 프레임 창에서 부동 상태 이면 TRUE입니다. 창이 미니 프레임 창의 자식이 고 미니 프레임 창에 속하는 다른 창이 없는 경우 FALSE입니다.
 
@@ -1174,7 +1175,7 @@ virtual BOOL IsDocked() const;
 
 창이 주 프레임 창에 도킹 되었는지 여부를 확인 하려면 [CDockablePane:: GetDefaultPaneDivider](#getdefaultpanedivider)를 호출 합니다. 메서드가 NULL이 아닌 포인터를 반환 하는 경우 창은 주 프레임 창에 도킹 됩니다.
 
-## <a name="cdockablepaneishideinautohidemode"></a><a name="ishideinautohidemode"></a>CDockablePane:: IsHideInAutoHideMode
+## <a name="cdockablepaneishideinautohidemode"></a><a name="ishideinautohidemode"></a> CDockablePane:: IsHideInAutoHideMode
 
 [CDockablePane:: ShowPane](#showpane)을 호출 하 여 표시 되거나 숨겨진 창의 동작을 결정 합니다.
 
@@ -1182,7 +1183,7 @@ virtual BOOL IsDocked() const;
 virtual BOOL IsHideInAutoHideMode() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 자동 숨기기 모드에서 도킹 가능한 창을 숨겨야 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
@@ -1194,7 +1195,7 @@ virtual BOOL IsHideInAutoHideMode() const;
 
 의 기본값은 `m_bHideInAutoHideMode` FALSE입니다.
 
-## <a name="cdockablepaneisinfloatingmultipaneframewnd"></a><a name="isinfloatingmultipaneframewnd"></a>CDockablePane:: IsInFloatingMultiPaneFrameWnd
+## <a name="cdockablepaneisinfloatingmultipaneframewnd"></a><a name="isinfloatingmultipaneframewnd"></a> CDockablePane:: IsInFloatingMultiPaneFrameWnd
 
 창이 다중 창 프레임 창 ( [CMultiPaneFrameWnd 클래스](../../mfc/reference/cmultipaneframewnd-class.md))에 있는지 여부를 지정 합니다.
 
@@ -1202,13 +1203,13 @@ virtual BOOL IsHideInAutoHideMode() const;
 virtual BOOL IsInFloatingMultiPaneFrameWnd() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 창이 다중 창 프레임 창에 있으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockablepaneisresizable"></a><a name="isresizable"></a>CDockablePane:: IsResizable 조정 가능
+## <a name="cdockablepaneisresizable"></a><a name="isresizable"></a> CDockablePane:: IsResizable 조정 가능
 
 창의 크기를 조정할 수 있는지 여부를 지정 합니다.
 
@@ -1216,7 +1217,7 @@ virtual BOOL IsInFloatingMultiPaneFrameWnd() const;
 virtual BOOL IsResizable() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 창 크기를 조정할 수 있으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
@@ -1226,7 +1227,7 @@ virtual BOOL IsResizable() const;
 
 크기를 조정할 수 없는 창에는 float 또는 no 자동 숨기기 모드를 사용할 수 없으며 항상 부모 프레임의 외부 가장자리에 배치 됩니다.
 
-## <a name="cdockablepaneistablocationbottom"></a><a name="istablocationbottom"></a>CDockablePane:: IsTabLocationBottom
+## <a name="cdockablepaneistablocationbottom"></a><a name="istablocationbottom"></a> CDockablePane:: IsTabLocationBottom
 
 탭의 맨 위 또는 맨 아래에 탭이 있는지 여부를 지정 합니다.
 
@@ -1234,7 +1235,7 @@ virtual BOOL IsResizable() const;
 virtual BOOL IsTabLocationBottom() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 탭이 창의 맨 아래에 있으면 TRUE이 고, 그렇지 않으면입니다. 탭이 창의 맨 위에 있는 경우 FALSE입니다.
 
@@ -1242,7 +1243,7 @@ virtual BOOL IsTabLocationBottom() const;
 
 자세한 내용은 [CTabbedPane:: IsTabLocationBottom](../../mfc/reference/ctabbedpane-class.md#istablocationbottom)을 참조 하세요.
 
-## <a name="cdockablepaneistracked"></a><a name="istracked"></a>CDockablePane:: IsTracked
+## <a name="cdockablepaneistracked"></a><a name="istracked"></a> CDockablePane:: IsTracked
 
 사용자가 창을 이동 하는지 여부를 지정 합니다.
 
@@ -1250,11 +1251,11 @@ virtual BOOL IsTabLocationBottom() const;
 BOOL IsTracked() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 창을 이동 하 고 있으면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
-## <a name="cdockablepaneisvisible"></a><a name="isvisible"></a>CDockablePane:: IsVisible
+## <a name="cdockablepaneisvisible"></a><a name="isvisible"></a> CDockablePane:: IsVisible
 
 현재 창이 표시 되는지 여부를 확인 합니다.
 
@@ -1262,7 +1263,7 @@ BOOL IsTracked() const;
 virtual BOOL IsVisible() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 도킹 가능한 창이 표시 되 면 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
@@ -1276,7 +1277,7 @@ virtual BOOL IsVisible() const;
 
 도킹 가능한 창이 자동 숨기기 모드가 아닌 경우 표시 상태는 [Cbasepane:: IsVisible](../../mfc/reference/cbasepane-class.md#isvisible) 메서드에 의해 결정 됩니다.
 
-## <a name="---cdockablepaneloadstate"></a>##  <a name="loadstate"></a>CDockablePane:: LoadState
+## <a name="---cdockablepaneloadstate"></a>##  <a name="loadstate"></a> CDockablePane:: LoadState
 
 내부 전용입니다. 더 자세한 내용은 Visual Studio 설치의 VC\atlmfc\src\mfc 폴더에 있는 소스 코드를 참조하세요.
 
@@ -1288,7 +1289,7 @@ virtual BOOL LoadState(
 );
 ```
 
-## <a name="cdockablepanem_bdisableanimation"></a><a name="m_bdisableanimation"></a>CDockablePane:: m_bDisableAnimation
+## <a name="cdockablepanem_bdisableanimation"></a><a name="m_bdisableanimation"></a> CDockablePane:: m_bDisableAnimation
 
 도킹 가능한 창의 자동 숨기기 애니메이션을 사용 하지 않도록 설정할지 여부를 지정 합니다.
 
@@ -1296,7 +1297,7 @@ virtual BOOL LoadState(
 AFX_IMPORT_DATA static BOOL m_bDisableAnimation;
 ```
 
-## <a name="cdockablepanem_bhideinautohidemode"></a><a name="m_bhideinautohidemode"></a>CDockablePane:: m_bHideInAutoHideMode
+## <a name="cdockablepanem_bhideinautohidemode"></a><a name="m_bhideinautohidemode"></a> CDockablePane:: m_bHideInAutoHideMode
 
 창이 자동 숨기기 모드일 때 창의 동작을 결정 합니다.
 
@@ -1312,7 +1313,7 @@ AFX_IMPORT_DATA static BOOL m_bHideInAutoHideMode;
 
 이 멤버를 FALSE로 설정 하면 [CDockablePane:: ShowPane](#showpane)을 호출할 때 도킹 가능한 창이 활성화 되거나 비활성화 됩니다.
 
-## <a name="cdockablepanem_nslidesteps"></a><a name="m_nslidesteps"></a>CDockablePane:: m_nSlideSteps
+## <a name="cdockablepanem_nslidesteps"></a><a name="m_nslidesteps"></a> CDockablePane:: m_nSlideSteps
 
 창이 자동 숨기기 모드일 때 창의 애니메이션 속도를 지정 합니다.
 
@@ -1324,7 +1325,7 @@ AFX_IMPORT_DATA static int m_nSlideSteps;
 
 애니메이션 효과를 높이려면이 값을 낮춥니다. 애니메이션 효과가 느려지는 경우이 값을 늘립니다.
 
-## <a name="cdockablepaneonafterchangeparent"></a><a name="onafterchangeparent"></a>CDockablePane:: OnAfterChangeParent
+## <a name="cdockablepaneonafterchangeparent"></a><a name="onafterchangeparent"></a> CDockablePane:: OnAfterChangeParent
 
 자세한 내용은 Visual Studio 설치의 **VC \\ s\mfc \\ src \\ mfc** 폴더에 있는 소스 코드를 참조 하세요.
 
@@ -1338,7 +1339,7 @@ virtual void OnAfterChangeParent(CWnd* pWndOldParent);
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockablepaneonafterdockfromminiframe"></a><a name="onafterdockfromminiframe"></a>CDockablePane:: OnAfterDockFromMiniFrame
+## <a name="cdockablepaneonafterdockfromminiframe"></a><a name="onafterdockfromminiframe"></a> CDockablePane:: OnAfterDockFromMiniFrame
 
 부동 도킹 막대가 프레임 창에 도킹 될 때 프레임 워크에서 호출 됩니다.
 
@@ -1350,7 +1351,7 @@ virtual void OnAfterDockFromMiniFrame();
 
 기본적으로 이 메서드는 아무것도 수행하지 않습니다.
 
-## <a name="cdockablepaneonbeforechangeparent"></a><a name="onbeforechangeparent"></a>CDockablePane:: OnBeforeChangeParent
+## <a name="cdockablepaneonbeforechangeparent"></a><a name="onbeforechangeparent"></a> CDockablePane:: OnBeforeChangeParent
 
 프레임 워크는 창의 부모를 변경 하기 전에이 메서드를 호출 합니다.
 
@@ -1374,7 +1375,7 @@ virtual void OnBeforeChangeParent(
 
 창을 탭 문서로 변환 하는 경우이 메서드는 최근 도킹 위치를 저장 합니다. 프레임 워크는 최근 도킹 위치를 사용 하 여 도킹 된 상태로 다시 변환 될 때 창의 위치를 복원 합니다.
 
-## <a name="cdockablepaneonbeforefloat"></a><a name="onbeforefloat"></a>CDockablePane:: OnBeforeFloat
+## <a name="cdockablepaneonbeforefloat"></a><a name="onbeforefloat"></a> CDockablePane:: OnBeforeFloat
 
 프레임 워크는 창이 부동 상태로 전환 되기 전에이 메서드를 호출 합니다.
 
@@ -1392,7 +1393,7 @@ virtual BOOL OnBeforeFloat(
 *dockMethod*<br/>
 진행 도킹 방법을 지정 합니다. 가능한 값 목록은 [Cpane::D ockPane](../../mfc/reference/cpane-class.md#dockpane) 을 참조 하세요.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 창을 부동으로 표시할 수 있으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
@@ -1400,7 +1401,7 @@ virtual BOOL OnBeforeFloat(
 
 이 메서드는 창이 부동이 될 때 프레임 워크에서 호출 됩니다. 창이 부동 되기 전에 처리를 수행 하려는 경우 파생 클래스에서이 메서드를 재정의할 수 있습니다.
 
-## <a name="cdockablepaneonpressbuttons"></a><a name="onpressbuttons"></a>CDockablePane:: On보도 Sbuttons
+## <a name="cdockablepaneonpressbuttons"></a><a name="onpressbuttons"></a> CDockablePane:: On보도 Sbuttons
 
 사용자가 AFX_HTCLOSE 및 AFX_HTMAXBUTTON 단추 이외의 캡션 단추를 누를 때 호출 됩니다.
 
@@ -1417,7 +1418,7 @@ virtual void OnPressButtons(UINT nHit);
 
 도킹 가능한 창의 캡션에 사용자 지정 단추를 추가 하는 경우 사용자가 단추를 누를 때 알림을 받도록이 메서드를 재정의 합니다.
 
-## <a name="cdockablepaneonslide"></a><a name="onslide"></a>CDockablePane:: OnSlide
+## <a name="cdockablepaneonslide"></a><a name="onslide"></a> CDockablePane:: OnSlide
 
 창이 자동 숨기기 모드일 때 창에 애니메이션 효과를 주기 위해 프레임 워크에서 호출 됩니다.
 
@@ -1434,7 +1435,7 @@ virtual void OnSlide(BOOL bSlideOut);
 
 사용자 지정 자동 숨기기 효과를 구현 하려면 파생 클래스에서이 메서드를 재정의 합니다.
 
-## <a name="cdockablepaneremovefromdefaultpanedividier"></a><a name="removefromdefaultpanedividier"></a>CDockablePane:: RemoveFromDefaultPaneDividier
+## <a name="cdockablepaneremovefromdefaultpanedividier"></a><a name="removefromdefaultpanedividier"></a> CDockablePane:: RemoveFromDefaultPaneDividier
 
 프레임 워크는 창이 도킹 해제 될 때이 메서드를 호출 합니다.
 
@@ -1446,7 +1447,7 @@ void RemoveFromDefaultPaneDividier();
 
 이 메서드는 기본 창 구분선을 NULL로 설정 하 고 해당 컨테이너에서 창을 제거 합니다.
 
-## <a name="cdockablepanereplacepane"></a><a name="replacepane"></a>CDockablePane:: ReplacePane
+## <a name="cdockablepanereplacepane"></a><a name="replacepane"></a> CDockablePane:: ReplacePane
 
 창을 지정 된 창으로 바꿉니다.
 
@@ -1468,11 +1469,11 @@ BOOL ReplacePane(
 *bRegisterWithFrame*<br/>
 진행 TRUE 이면 새 창이 이전 창 부모의 도킹 관리자에 등록 됩니다. 새 창이 도킹 관리자가 유지 관리 하는 창 목록의 이전 창 인덱스에 삽입 됩니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 대체가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
-## <a name="cdockablepanerestoredefaultpanedivider"></a><a name="restoredefaultpanedivider"></a>CDockablePane:: RestoreDefaultPaneDivider
+## <a name="cdockablepanerestoredefaultpanedivider"></a><a name="restoredefaultpanedivider"></a> CDockablePane:: RestoreDefaultPaneDivider
 
 창이 deserialize 될 때 프레임 워크에서이 메서드를 호출 하 여 기본 창 구분선을 복원 합니다.
 
@@ -1484,7 +1485,7 @@ void RestoreDefaultPaneDivider();
 
 복원 된 기본 창 구분선은 현재 기본 창 구분선 (있는 경우)을 대체 합니다.
 
-## <a name="cdockablepanesetautohidemode"></a><a name="setautohidemode"></a>CDockablePane:: SetAutoHideMode
+## <a name="cdockablepanesetautohidemode"></a><a name="setautohidemode"></a> CDockablePane:: SetAutoHideMode
 
 도킹 창을 표시 모드와 자동 숨기기 모드 사이에서 전환 합니다.
 
@@ -1510,7 +1511,7 @@ virtual CMFCAutoHideBar* SetAutoHideMode(
 *bUseTimer*<br/>
 진행 사용자가 창을 자동 숨기기 모드로 전환 하거나 창을 즉시 숨길 때 자동 숨기기 효과를 사용할지 여부를 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 자동 숨기기 모드 또는 NULL로 전환 된 결과로 만들어진 자동 숨기기 도구 모음입니다.
 
@@ -1520,7 +1521,7 @@ virtual CMFCAutoHideBar* SetAutoHideMode(
 
 도킹 가능한 창을 프로그래밍 방식으로 자동 숨기기 모드로 전환 하려면이 메서드를 호출 합니다. 창은 주 프레임 창에 도킹 되어야 합니다 ( [CDockablePane:: GetDefaultPaneDivider](#getdefaultpanedivider) 는 [CPaneDivider](../../mfc/reference/cpanedivider-class.md)에 대 한 유효한 포인터를 반환 해야 함).
 
-## <a name="cdockablepanesetautohideparents"></a><a name="setautohideparents"></a>CDockablePane:: SetAutoHideParents
+## <a name="cdockablepanesetautohideparents"></a><a name="setautohideparents"></a> CDockablePane:: SetAutoHideParents
 
 창에 대 한 자동 숨기기 단추와 자동 숨기기 도구 모음을 설정 합니다.
 
@@ -1538,7 +1539,7 @@ void SetAutoHideParents(
 *pBtn*<br/>
 진행 자동 숨기기 단추에 대 한 포인터입니다.
 
-## <a name="cdockablepanesetlastpercentinpanecontainer"></a><a name="setlastpercentinpanecontainer"></a>CDockablePane:: SetLastPercentInPaneContainer
+## <a name="cdockablepanesetlastpercentinpanecontainer"></a><a name="setlastpercentinpanecontainer"></a> CDockablePane:: SetLastPercentInPaneContainer
 
 창이 컨테이너에서 차지 하는 공간의 백분율을 설정 합니다.
 
@@ -1555,7 +1556,7 @@ void SetLastPercentInPaneContainer(int n);
 
 프레임 워크는 레이아웃을 다시 계산할 때 새 값을 사용 하도록 창을 조정 합니다.
 
-## <a name="cdockablepanesetrestoreddefaultpanedivider"></a><a name="setrestoreddefaultpanedivider"></a>CDockablePane:: SetRestoredDefaultPaneDivider
+## <a name="cdockablepanesetrestoreddefaultpanedivider"></a><a name="setrestoreddefaultpanedivider"></a> CDockablePane:: SetRestoredDefaultPaneDivider
 
 복원 된 기본 창 구분선을 설정 합니다.
 
@@ -1572,7 +1573,7 @@ void SetRestoredDefaultPaneDivider(HWND hRestoredSlider);
 
 창이 deserialize 될 때 복원 된 기본 창 구분선이 얻어집니다. 자세한 내용은 [CDockablePane:: RestoreDefaultPaneDivider](#restoredefaultpanedivider)를 참조 하세요.
 
-## <a name="cdockablepanesettabbedpanertc"></a><a name="settabbedpanertc"></a>CDockablePane:: SetTabbedPaneRTC
+## <a name="cdockablepanesettabbedpanertc"></a><a name="settabbedpanertc"></a> CDockablePane:: SetTabbedPaneRTC
 
 두 창이 함께 도킹 될 때 생성 되는 탭 창에 대 한 런타임 클래스 정보를 설정 합니다.
 
@@ -1599,7 +1600,7 @@ void SetTabbedPaneRTC(CRuntimeClass* pRTC);
 
 그런 다음 해당 런타임 클래스 정보에 대 한 포인터를 사용 하 여이 메서드를 호출 합니다.
 
-## <a name="cdockablepaneshowpane"></a><a name="showpane"></a>CDockablePane:: ShowPane
+## <a name="cdockablepaneshowpane"></a><a name="showpane"></a> CDockablePane:: ShowPane
 
 창을 표시 하거나 숨깁니다.
 
@@ -1625,7 +1626,7 @@ virtual void ShowPane(
 
 도킹 가능한 창을 표시 하거나 숨길 때 [CWnd:: ShowWindow](../../mfc/reference/cwnd-class.md#showwindow) 대신이 메서드를 호출 합니다.
 
-## <a name="cdockablepaneslide"></a><a name="slide"></a>CDockablePane:: Slide
+## <a name="cdockablepaneslide"></a><a name="slide"></a> CDockablePane:: Slide
 
 자동 숨기기 모드인 창에 애니메이션 효과를 적용 합니다.
 
@@ -1649,7 +1650,7 @@ virtual void Slide(
 
 이 메서드는 값을 사용 하 여 `CDockablePane::m_nSlideDefaultTimeOut` 슬라이드 효과에 대 한 제한 시간을 결정 합니다. 제한 시간 값의 기본값은 1입니다. 자동 숨기기 알고리즘을 사용자 지정 하는 경우이 멤버를 수정 하 여 제한 시간을 변경 합니다.
 
-## <a name="cdockablepanetoggleautohide"></a><a name="toggleautohide"></a>CDockablePane:: ToggleAutoHide
+## <a name="cdockablepanetoggleautohide"></a><a name="toggleautohide"></a> CDockablePane:: ToggleAutoHide
 
 창을 항상 표시와 자동 숨기기 모드 사이에서 전환 합니다.
 
@@ -1661,7 +1662,7 @@ virtual void ToggleAutoHide();
 
 이 메서드는 [CDockablePane:: SetAutoHideMode](#setautohidemode)를 호출 하 여 창에 대해 자동 숨기기 모드를 설정/해제 합니다.
 
-## <a name="cdockablepaneundockpane"></a><a name="undockpane"></a>CDockablePane:: UndockPane
+## <a name="cdockablepaneundockpane"></a><a name="undockpane"></a> CDockablePane:: UndockPane
 
 주 프레임 창 또는 미니 프레임 창 컨테이너에서 창을 도킹 해제 합니다.
 

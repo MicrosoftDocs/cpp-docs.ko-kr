@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 함수 템플릿 인스턴스화'
 title: 함수 템플릿 인스턴스화
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - function templates, instantiation
 - instantiation, function templates
 ms.assetid: f22a07c7-3ad1-465a-84f5-8737e274bd47
-ms.openlocfilehash: 6917448af067542fffb13aa043720bf8a26f7ba3
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 1278190c9f86034374ee295a308fe0b8396b8716
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80179759"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341375"
 ---
 # <a name="function-template-instantiation"></a>함수 템플릿 인스턴스화
 

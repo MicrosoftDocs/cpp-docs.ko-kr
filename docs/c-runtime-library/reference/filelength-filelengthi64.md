@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _filelength, _filelengthi64'
 title: _filelength, _filelengthi64
 ms.date: 4/2/2020
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - files [C++], length
 - _filelengthi64 function
 ms.assetid: 3ab83d5a-543c-4079-b9d9-0abfc7da0275
-ms.openlocfilehash: 5fea019591fc5a90aab07f0347aa3f02fe0d43f3
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 21004112e731827240b66c343b69cc00133aa6ab
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910223"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329279"
 ---
 # <a name="_filelength-_filelengthi64"></a>_filelength, _filelengthi64
 
@@ -62,9 +63,9 @@ __int64 _filelengthi64(
 *fd*<br/>
 파일 설명자를 대상으로 지정합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-**_Filelength** 와 **_filelengthi64** 는 모두 *fd*와 연결 된 대상 파일의 파일 길이 (바이트)를 반환 합니다. *Fd* 가 잘못 된 파일 설명자 인 경우이 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 두 함수 모두-1L을 반환 하 여 오류를 나타내고 **errno** 를 **ebadf**로 설정 합니다.
+**_Filelength** 와 **_filelengthi64** 는 모두 *fd* 와 연결 된 대상 파일의 파일 길이 (바이트)를 반환 합니다. *Fd* 가 잘못 된 파일 설명자 인 경우이 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 두 함수 모두-1L을 반환 하 여 오류를 나타내고 **errno** 를 **ebadf** 로 설정 합니다.
 
 ## <a name="remarks"></a>설명
 
@@ -72,7 +73,7 @@ __int64 _filelengthi64(
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|필수 헤더|
+|함수|필수 헤더|
 |--------------|---------------------|
 |**_filelength**|\<io.h>|
 |**_filelengthi64**|\<io.h>|
@@ -83,7 +84,7 @@ __int64 _filelengthi64(
 
 [_chsize](chsize.md)의 예제를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [파일 처리](../../c-runtime-library/file-handling.md)<br/>
 [_chsize](chsize.md)<br/>

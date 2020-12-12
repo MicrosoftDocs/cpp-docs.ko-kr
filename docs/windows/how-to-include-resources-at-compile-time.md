@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 방법: 컴파일 타임에 리소스 포함 (c + +)'
 title: '방법: 컴파일 타임에 리소스 포함 (c + +)'
 ms.date: 02/14/2019
 f1_keywords:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - symbols [C++], finding
 - resources [C++], searching for symbols
 ms.assetid: 357e93c2-0a29-42f9-806f-882f688b8924
-ms.openlocfilehash: 5ac4cba4e8ad8a08fa1010758c5a343501d3af2c
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 18c391351c3a97a8adbbd79691f9c0e3ec07abae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504419"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329356"
 ---
 # <a name="how-to-include-resources-at-compile-time-c"></a>방법: 컴파일 타임에 리소스 포함 (c + +)
 
@@ -63,9 +64,9 @@ ms.locfileid: "91504419"
 
 ### <a name="to-include-resources-in-your-project-at-compile-time"></a>컴파일 시간에 프로젝트에 리소스를 포함하려면
 
-1. 고유한 파일 이름으로 리소스 스크립트 파일에 리소스를 배치합니다. 기본 리소스 스크립트 파일에 사용 되는 파일의 이름 이므로 *projectname .rc*를 사용 하지 마세요.
+1. 고유한 파일 이름으로 리소스 스크립트 파일에 리소스를 배치합니다. 기본 리소스 스크립트 파일에 사용 되는 파일의 이름 이므로 *projectname .rc* 를 사용 하지 마세요.
 
-1. [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources) 에서 *.rc* 파일을 마우스 오른쪽 단추로 클릭 하 고 **리소스 포함**을 선택 합니다.
+1. [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources) 에서 *.rc* 파일을 마우스 오른쪽 단추로 클릭 하 고 **리소스 포함** 을 선택 합니다.
 
 1. **컴파일 타임 지시문** 상자에 개발 환경의 주 리소스 파일에 새 리소스 파일을 포함 하는 [#include](../preprocessor/hash-include-directive-c-cpp.md) 컴파일러 지시문을 추가 합니다.
 
@@ -73,20 +74,20 @@ ms.locfileid: "91504419"
 
 ### <a name="to-specify-include-directories-for-a-specific-resource-rc-file"></a>특정 리소스 (.rc) 파일에 대 한 포함 디렉터리를 지정 하려면
 
-1. **솔루션 탐색기** 에서 *.rc* 파일을 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 합니다.
+1. **솔루션 탐색기** 에서 *.rc* 파일을 마우스 오른쪽 단추로 클릭 하 고 **속성** 을 선택 합니다.
 
 1. 왼쪽 창에서 **리소스** 노드를 선택 하 고 **추가 포함** 디렉터리 속성에 추가 포함 디렉터리를 지정 합니다.
 
 ### <a name="to-find-symbols-in-resources"></a>리소스에서 기호를 찾으려면
 
-1. 메뉴로 이동 하 **Edit**여  >  [기호 찾기](/visualstudio/ide/go-to)를 편집 합니다.
+1. 메뉴로 이동 하 여  >  [기호 찾기](/visualstudio/ide/go-to)를 편집 합니다.
 
    > [!TIP]
-   > 검색에서 [정규식](/visualstudio/ide/using-regular-expressions-in-visual-studio) 을 사용 하려면 **기호 찾기**대신 **편집** 메뉴에서 [파일에서 찾기](/visualstudio/ide/reference/find-command) 를 선택 합니다. [찾기 대화 상자](/visualstudio/ide/finding-and-replacing-text) 에서 **사용: 정규식** 확인란을 선택 하 고 **찾을 내용** 상자에서 드롭다운 목록에서 일반 검색 식을 선택할 수 있습니다. 이 목록에서 식을 선택 하면 **찾을 내용** 상자에 검색 텍스트로 대체 됩니다.
+   > 검색에서 [정규식](/visualstudio/ide/using-regular-expressions-in-visual-studio) 을 사용 하려면 **기호 찾기** 대신 **편집** 메뉴에서 [파일에서 찾기](/visualstudio/ide/reference/find-command) 를 선택 합니다. [찾기 대화 상자](/visualstudio/ide/finding-and-replacing-text) 에서 **사용: 정규식** 확인란을 선택 하 고 **찾을 내용** 상자에서 드롭다운 목록에서 일반 검색 식을 선택할 수 있습니다. 이 목록에서 식을 선택 하면 **찾을 내용** 상자에 검색 텍스트로 대체 됩니다.
 
 1. **찾을 내용** 상자의 드롭다운 목록에서 이전 검색 문자열을 선택 하거나 찾으려는 액셀러레이터 키를 입력 합니다 (예:) `ID_ACCEL1` .
 
-1. **찾기** 옵션을 선택 하 고 **다음 찾기**를 선택 합니다.
+1. **찾기** 옵션을 선택 하 고 **다음 찾기** 를 선택 합니다.
 
 > [!NOTE]
 > 문자열, 액셀러레이터 또는 이진 리소스에서 기호를 검색할 수 없습니다.

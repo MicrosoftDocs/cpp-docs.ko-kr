@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 유니코드 지원'
 title: 유니코드 지원
 ms.date: 01/09/2018
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - character sets [C++], Unicode
 - localization [C++], character sets
 - Unicode [C++], installing support
-ms.openlocfilehash: 90c07874b61656a8bec0f9ef373f2ee8f339e994
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3226f488afc8d9899777ac0b717dd012fec2cc3d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215376"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335753"
 ---
 # <a name="support-for-unicode"></a>유니코드 지원
 
@@ -33,12 +34,12 @@ MFC 프레임워크 전체에서는 유니코드를 사용할 수 있으며 MFC�
 |이식 불가능한 데이터 형식|다음 매크로로 바뀜|
 |-----------------------------|----------------------------|
 |**`char`**, **`wchar_t`**|`_TCHAR`|
-|**`char*`**, `LPSTR` (Win32 데이터 형식),`LPWSTR`|`LPTSTR`|
-|`const char*`, `LPCSTR` (Win32 데이터 형식),`LPCWSTR`|`LPCTSTR`|
+|**`char*`**, `LPSTR` (Win32 데이터 형식), `LPWSTR`|`LPTSTR`|
+|`const char*`, `LPCSTR` (Win32 데이터 형식), `LPCWSTR`|`LPCTSTR`|
 
 클래스는를 `CString` `_TCHAR` 기본으로 사용 하 고 쉽게 변환할 수 있도록 생성자와 연산자를 제공 합니다. 유니코드에 대한 대부분의 문자열 작업은 Windows ANSI 문자 집합을 처리하는 데 사용되는 것과 동일한 논리를 사용하여 작성할 수 있습니다. 이러한 논리는 작업의 기본 단위가 8비트 바이트 대신 16비트 문자라는 점이 다릅니다. 멀티바이트 문자 집합을 사용하는 것과 달리 유니코드 문자를 별도의 2바이트인 것처럼 처리할 필요가 없습니다. 그러나 서로게이트 쌍의 와이드 문자를 통해 표시 되는 단일 문자의 가능성을 처리 해야 합니다. 일반적으로 문자열의 길이는 포함 된 범위에 포함 된 문자 수와 동일 하다 고 가정 하는 코드를 작성 하지 마십시오.
 
-## <a name="what-do-you-want-to-do"></a>수행 작업
+## <a name="what-do-you-want-to-do"></a>원하는 작업을 선택하세요.
 
 - [MFC 유니코드 및 MBCS (멀티 바이트 문자 집합) 지원 사용](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md)
 

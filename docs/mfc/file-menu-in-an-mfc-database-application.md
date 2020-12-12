@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: MFC 데이터베이스 응용 프로그램의 파일 메뉴'
 title: MFC 데이터베이스 애플리케이션의 파일 메뉴
 ms.date: 11/04/2016
 helpviewer_keywords:
 - File menu
 - database applications [MFC], File menu commands
 ms.assetid: 92dafb75-c1b3-4860-80a0-87a83bfc36f2
-ms.openlocfilehash: fbbb4382749278708e8e758f79a618d5cad0549e
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: d8d229ce9c53e7a79044af2de03778574c18e5dd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615694"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335890"
 ---
 # <a name="file-menu-in-an-mfc-database-application"></a>MFC 데이터베이스 애플리케이션의 파일 메뉴
 
@@ -28,10 +29,10 @@ MFC 응용 프로그램 마법사는 문서 관련 파일 메뉴 명령을 사�
 
 - `OnFileOpen`명령의 프레임 워크의 기본 구현을 완전히 바꾸기 때문에의 기본 클래스 버전을 호출 하지 마세요.
 
-- 대신 처리기를 사용 하 여 데이터 소스를 나열 하는 대화 상자를 표시 합니다. `CDatabase::OpenEx` `CDatabase::Open` 매개 변수 **NULL**로 또는를 호출 하 여 이러한 대화 상자를 표시할 수 있습니다. 그러면 사용자 컴퓨터에서 사용 가능한 모든 데이터 원본을 표시 하는 ODBC 대화 상자가 열립니다.
+- 대신 처리기를 사용 하 여 데이터 소스를 나열 하는 대화 상자를 표시 합니다. `CDatabase::OpenEx` `CDatabase::Open` 매개 변수 **NULL** 로 또는를 호출 하 여 이러한 대화 상자를 표시할 수 있습니다. 그러면 사용자 컴퓨터에서 사용 가능한 모든 데이터 원본을 표시 하는 ODBC 대화 상자가 열립니다.
 
 - 데이터베이스 응용 프로그램은 일반적으로 전체 문서를 저장 하지 않으므로 serialize 된 문서를 사용 하 여 프로필 정보를 저장 하지 않는 한 저장 및 저장을 구현 하지 않을 수 있습니다. 그렇지 않으면 "commit transaction"과 같은 저장 명령을 구현할 수 있습니다. 이러한 명령을 재정의 하는 방법에 대 한 자세한 내용은 [Technical Note 22](tn022-standard-commands-implementation.md) 를 참조 하십시오.
 
 ## <a name="see-also"></a>참고 항목
 
-[Serialization: Serialization과 데이터베이스 입출력 비교](serialization-serialization-vs-database-input-output.md)
+[Serialization: Serialization과 데이터베이스 입/출력 비교](serialization-serialization-vs-database-input-output.md)

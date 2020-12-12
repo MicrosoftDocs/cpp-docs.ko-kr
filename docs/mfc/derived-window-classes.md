@@ -1,4 +1,5 @@
 ---
+description: 파생 창 클래스에 대해 자세히 알아보세요.
 title: 파생된 창 클래스
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - derived classes [MFC], window classes
 - window classes [MFC], derived
 ms.assetid: 6f7e437e-fbde-4a06-bfab-72d9dbf05292
-ms.openlocfilehash: c84284b765e740fa0a13972e9902e7737e15bbab
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 9219267b5351f972257d9770f8e8b38039b85788
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84623169"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335899"
 ---
 # <a name="derived-window-classes"></a>파생된 창 클래스
 
@@ -54,9 +55,9 @@ MDI 주 프레임 창에서 열린 개별 문서에 사용 됩니다. 각 문서
 
 ## <a name="window-class-hierarchy"></a>창 클래스 계층 구조
 
-Mfc *참조*에서 [mfc 계층 구조 차트](hierarchy-chart.md) 를 참조 하세요. 보기는 [문서/뷰 아키텍처](document-view-architecture.md)에서 설명 합니다. 대화 상자는 [대화](dialog-boxes.md)상자에 설명 되어 있습니다.
+Mfc *참조* 에서 [mfc 계층 구조 차트](hierarchy-chart.md) 를 참조 하세요. 보기는 [문서/뷰 아키텍처](document-view-architecture.md)에서 설명 합니다. 대화 상자는 [대화](dialog-boxes.md)상자에 설명 되어 있습니다.
 
-## <a name="creating-your-own-special-purpose-window-classes"></a>사용자 고유의 특수 한 용도의 창 클래스 만들기
+## <a name="creating-your-own-special-purpose-window-classes"></a>사용자 고유의 Special-Purpose 창 클래스 만들기
 
 클래스 라이브러리에서 제공 하는 창 클래스 외에 특수 한 용도의 자식 창이 필요할 수 있습니다. 이러한 창을 만들려면 사용자 고유의 [CWnd](reference/cwnd-class.md)파생 클래스를 만들어 프레임 또는 뷰의 자식 창으로 만듭니다. 프레임 워크는 문서 프레임 창에서 클라이언트 영역의 범위를 관리 한다는 점에 유의 해야 합니다. 대부분의 클라이언트 영역은 뷰에서 관리 되지만 컨트롤 막대나 사용자 지정 창과 같은 다른 창에서 보기와의 공간을 공유할 수 있습니다. 프레임 창의 클라이언트 영역에서 자식 창의 위치를 지정 하기 위해 [CView](reference/cview-class.md) 및 [ccontrolbar](reference/ccontrolbar-class.md) 클래스의 메커니즘과 상호 작용 해야 할 수 있습니다.
 

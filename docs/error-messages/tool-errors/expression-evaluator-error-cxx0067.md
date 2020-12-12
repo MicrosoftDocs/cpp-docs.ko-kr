@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 식 계산기 오류 CXX0067'
 title: 식 계산기 오류 CXX0067
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - CXX0067
 - CAN0067
 ms.assetid: 9a3e642b-4746-41ac-b665-bd98a6fa0cb3
-ms.openlocfilehash: 6bf9ddc1474ba32ecaee35ba9003bf76a424e4a1
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e7be4ab137bb32ddb54b151315dc42e63ecbafb9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80184322"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97208075"
 ---
 # <a name="expression-evaluator-error-cxx0067"></a>식 계산기 오류 CXX0067
 

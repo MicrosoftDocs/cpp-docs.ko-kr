@@ -1,5 +1,6 @@
 ---
-title: CMFC리본갤러리메뉴버튼 클래스
+description: '자세히 알아보기: CMFCRibbonGalleryMenuButton 클래스'
+title: CMFCRibbonGalleryMenuButton 클래스
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCRibbonGalleryMenuButton
@@ -18,17 +19,17 @@ helpviewer_keywords:
 - CMFCRibbonGalleryMenuButton [MFC], HasButton
 - CMFCRibbonGalleryMenuButton [MFC], IsEmptyMenuAllowed
 ms.assetid: 4d459d9b-8b1a-4371-92f6-dc4ce6cc42c8
-ms.openlocfilehash: 305393def3b176b052b1db89c66c1e755f528ee6
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: ee527178ba90b968b1968ae0c06dbd8629d8d1e9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375136"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321854"
 ---
-# <a name="cmfcribbongallerymenubutton-class"></a>CMFC리본갤러리메뉴버튼 클래스
+# <a name="cmfcribbongallerymenubutton-class"></a>CMFCRibbonGalleryMenuButton 클래스
 
 리본 갤러리가 포함된 리본 메뉴 단추를 구현합니다.
-자세한 내용은 Visual Studio 설치의 **\\VC\\atlmfc\\src mfc** 폴더에 있는 소스 코드를 참조하십시오.
+자세한 내용은 Visual Studio 설치의 **VC \\ s\mfc \\ src \\ mfc** 폴더에 있는 소스 코드를 참조 하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -40,19 +41,19 @@ class CMFCRibbonGalleryMenuButton : public CMFCToolBarMenuButton
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
 |[CMFCRibbonGalleryMenuButton::CMFCRibbonGalleryMenuButton](#cmfcribbongallerymenubutton)|`CMFCRibbonGalleryMenuButton` 개체를 생성하고 초기화합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[CMFCRibbonGalleryMenuButton::CopyFrom](#copyfrom)|[(CMFCToolBar메뉴 단추 재정의::복사에서](../../mfc/reference/cmfctoolbarmenubutton-class.md#copyfrom)시작))|
-|[CMFCRibbonGalleryMenuButton::CreatePopupMenu](#createpopupmenu)|[(CMFCToolBar메뉴 단추 재정의::만들기팝업 메뉴.)](../../mfc/reference/cmfctoolbarmenubutton-class.md#createpopupmenu)|
+|[CMFCRibbonGalleryMenuButton::CopyFrom](#copyfrom)|( [에서 Cmfc작업을](../../mfc/reference/cmfctoolbarmenubutton-class.md#copyfrom)재정의 합니다.|
+|[CMFCRibbonGalleryMenuButton::CreatePopupMenu](#createpopupmenu)|( [Cmfc를 재정의 하는 단추:: CreatePopupMenu](../../mfc/reference/cmfctoolbarmenubutton-class.md#createpopupmenu).)|
 |[CMFCRibbonGalleryMenuButton::GetPalette](#getpalette)||
 |[CMFCRibbonGalleryMenuButton::HasButton](#hasbutton)|( `CMFCToolBarMenuButton::HasButton`을 재정의합니다.)|
-|[CMFCRibbonGalleryMenuButton::IsEmptyMenuAllowed](#isemptymenuallowed)|[(재정의 CMFCToolBar메뉴 버튼::는빈메뉴허용.)](../../mfc/reference/cmfctoolbarmenubutton-class.md#isemptymenuallowed)|
+|[CMFCRibbonGalleryMenuButton::IsEmptyMenuAllowed](#isemptymenuallowed)|( [CmfcIsEmptyMenuAllowed Menubutton::](../../mfc/reference/cmfctoolbarmenubutton-class.md#isemptymenuallowed)를 재정의 합니다.)|
 
 ### <a name="remarks"></a>설명
 
@@ -88,16 +89,16 @@ BOOL CMainFrame::OnShowPopupMenu (CMFCPopupMenu* pMenuPopup)
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
-[Cobject](../../mfc/reference/cobject-class.md)\
-❏&nbsp;[CMFCToolBar 버튼](../../mfc/reference/cmfctoolbarbutton-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;❏&nbsp;[CMFCToolBar메뉴버튼](../../mfc/reference/cmfctoolbarmenubutton-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❏&nbsp;[CMFC리본갤러리메뉴버튼](../../mfc/reference/cmfcribbongallerymenubutton-class.md)
+[CObject](../../mfc/reference/cobject-class.md)\
+└ &nbsp; [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;└ &nbsp; [Cmfc menubutton](../../mfc/reference/cmfctoolbarmenubutton-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└ &nbsp; [CMFCRibbonGalleryMenuButton](../../mfc/reference/cmfcribbongallerymenubutton-class.md)
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afx리본팔레트갤러리.h
+**헤더:** afxribbonpalettegallery.h
 
-## <a name="cmfcribbongallerymenubuttoncopyfrom"></a><a name="copyfrom"></a>CMFC리본 갤러리메뉴버튼::복사
+## <a name="cmfcribbongallerymenubuttoncopyfrom"></a><a name="copyfrom"></a> CMFCRibbonGalleryMenuButton:: CopyFrom
 
 ```
 virtual void CopyFrom(const CMFCToolBarButton& src);
@@ -105,13 +106,13 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *src*<br/>
+진행 *src*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcribbongallerymenubuttoncmfcribbongallerymenubutton"></a><a name="cmfcribbongallerymenubutton"></a>CMFC리본 갤러리메뉴버튼::CMFC리본갤러리메뉴버튼
+## <a name="cmfcribbongallerymenubuttoncmfcribbongallerymenubutton"></a><a name="cmfcribbongallerymenubutton"></a> CMFCRibbonGalleryMenuButton::CMFCRibbonGalleryMenuButton
 
-[CMFC리본갤러리메뉴버튼을생성하고 초기화합니다.](../../mfc/reference/cmfcribbongallerymenubutton-class.md)
+[CMFCRibbonGalleryMenuButton](../../mfc/reference/cmfcribbongallerymenubutton-class.md) 개체를 생성 하 고 초기화 합니다.
 
 ```
 CMFCRibbonGalleryMenuButton(
@@ -131,70 +132,70 @@ CMFCRibbonGalleryMenuButton(
 ### <a name="parameters"></a>매개 변수
 
 *uiID*<br/>
-단추의 명령 ID입니다. 사용자가 이 단추를 클릭할 때 WM_COMMAND 메시지에 전송되는 값입니다.
+단추의 명령 ID입니다. 사용자가이 단추를 클릭할 때 WM_COMMAND 메시지에 전송 된 값입니다.
 
-*아이 이미지*<br/>
-갤러리 메뉴 버튼으로 표시할 이미지의 인덱스입니다. 이미지는 *이미지에 저장됩니다팔레트* 매개 변수.
+*iImage*<br/>
+갤러리 메뉴 단추와 함께 표시할 이미지의 인덱스입니다. 이미지는 *imagesPalette* 매개 변수에 저장 됩니다.
 
 *lpszText*<br/>
 메뉴 단추에 표시할 텍스트입니다.
 
-*이미지팔레트*<br/>
-갤러리에 표시할 이미지 목록이 포함되어 있습니다.
+*imagesPalette*<br/>
+갤러리에 표시할 이미지의 목록을 포함 합니다.
 
-*uiimages팔레트ResID*<br/>
-갤러리에 표시할 이미지 목록의 리소스 ID입니다.
+*uiImagesPaletteResID*<br/>
+갤러리에 표시할 이미지의 이미지 목록에 대 한 리소스 ID입니다.
 
-*cx팔레트이미지*<br/>
-갤러리에 표시할 이미지의 픽셀 너비를 지정합니다.
+*cxPaletteImage*<br/>
+갤러리에 표시할 이미지의 너비 (픽셀)를 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
-갤러리 메뉴 버튼은 화살표가 있는 팝업 메뉴로 표시됩니다. 사용자가 이 단추를 클릭하면 이미지 갤러리가 표시됩니다.
+갤러리 메뉴 단추는 화살표가 있는 팝업 메뉴로 표시 됩니다. 사용자가 이 단추를 클릭하면 이미지 갤러리가 표시됩니다.
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 `CMFCRibbonGalleryMenuButton` 클래스의 생성자 사용 방법을 보여 줍니다. 이 코드 조각은 MS [Office 2007 데모 샘플의](../../overview/visual-cpp-samples.md)일부입니다.
+다음 예제에서는 클래스의 생성자를 사용 하는 방법을 보여 줍니다 `CMFCRibbonGalleryMenuButton` . 이 코드 조각은 [MS Office 2007 Demo 샘플](../../overview/visual-cpp-samples.md)의 일부입니다.
 
 [!code-cpp[NVC_MFC_MSOffice2007Demo#8](../../mfc/reference/codesnippet/cpp/cmfcribbongallerymenubutton-class_1.cpp)]
 
-## <a name="cmfcribbongallerymenubuttoncreatepopupmenu"></a><a name="createpopupmenu"></a>CMFC리본 갤러리메뉴 버튼::만들기팝업 메뉴
+## <a name="cmfcribbongallerymenubuttoncreatepopupmenu"></a><a name="createpopupmenu"></a> CMFCRibbonGalleryMenuButton:: CreatePopupMenu
 
 ```
 virtual CMFCPopupMenu* CreatePopupMenu();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcribbongallerymenubuttongetpalette"></a><a name="getpalette"></a>CMFC리본 갤러리메뉴버튼::겟팔레트
+## <a name="cmfcribbongallerymenubuttongetpalette"></a><a name="getpalette"></a> CMFCRibbonGalleryMenuButton:: GetPalette
 
 ```
 CMFCRibbonGallery& GetPalette();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcribbongallerymenubuttonhasbutton"></a><a name="hasbutton"></a>CMFC리본 갤러리메뉴버튼::하스버튼
+## <a name="cmfcribbongallerymenubuttonhasbutton"></a><a name="hasbutton"></a> CMFCRibbonGalleryMenuButton:: HasButton
 
 ```
 virtual BOOL HasButton() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcribbongallerymenubuttonisemptymenuallowed"></a><a name="isemptymenuallowed"></a>CMFC리본 갤러리메뉴버튼:빈메뉴 허용됨
+## <a name="cmfcribbongallerymenubuttonisemptymenuallowed"></a><a name="isemptymenuallowed"></a> CMFCRibbonGalleryMenuButton:: IsEmptyMenuAllowed
 
 ```
 virtual BOOL IsEmptyMenuAllowed() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
@@ -202,5 +203,5 @@ virtual BOOL IsEmptyMenuAllowed() const;
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
-[CMFC툴바메뉴버튼 클래스](../../mfc/reference/cmfctoolbarmenubutton-class.md)<br/>
-[CMFC리본갤러리 클래스](../../mfc/reference/cmfcribbongallery-class.md)
+[Cmfc, Menubutton 클래스](../../mfc/reference/cmfctoolbarmenubutton-class.md)<br/>
+[Cmfc리본 갤러리 클래스](../../mfc/reference/cmfcribbongallery-class.md)

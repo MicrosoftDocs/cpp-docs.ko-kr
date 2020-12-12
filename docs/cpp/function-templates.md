@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 함수 템플릿'
 title: 함수 템플릿
 ms.date: 07/15/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - templates, function
 - function templates, about function templates
 ms.assetid: 59b56a4b-0689-4161-9c07-25021562e2a7
-ms.openlocfilehash: 44fb8691c296892377686310fbd9b4d9adcd0f80
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f64041e2fdd8b9acc30a4f71e445d9f73bb7db37
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232289"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341388"
 ---
 # <a name="function-templates"></a>함수 템플릿
 
@@ -44,7 +45,7 @@ MySwap( j, Hello );      //error
 
 컴파일러가 형식이 다른 매개 변수를 사용하여 `MySwap` 함수를 생성할 수 없으므로 두 번째 `MySwap` 호출은 컴파일 시간 오류를 트리거합니다. void 포인터가 사용된 경우 두 함수 호출 모두 올바르게 컴파일되지만 런타임에는 함수가 제대로 작동하지 않습니다.
 
-함수 템플릿에 대한 템플릿 인수는 명시적으로 지정할 수 있습니다. 예를 들면 다음과 같습니다.
+함수 템플릿에 대한 템플릿 인수는 명시적으로 지정할 수 있습니다. 예를 들어:
 
 ```cpp
 // function_templates2.cpp
@@ -59,7 +60,7 @@ int main(int j) {
 
 ## <a name="see-also"></a>참고 항목
 
-[모음](../cpp/templates-cpp.md)<br/>
+[템플릿](../cpp/templates-cpp.md)<br/>
 [함수 템플릿 인스턴스화](../cpp/function-template-instantiation.md)<br/>
 [명시적 인스턴스화](../cpp/explicit-instantiation.md)<br/>
 [함수 템플릿의 명시적 특수화](../cpp/explicit-specialization-of-function-templates.md)

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _CIsin'
 title: _CIsin
 ms.date: 4/2/2020
 api_name:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - _CIsin intrinsic
 - CIsin intrinsic
 ms.assetid: f215f39a-2341-4f1c-ba8e-cb522451ceb2
-ms.openlocfilehash: b7c3ba2c771d7659a7ca0ba2e64ade9068c2b390
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: e033d2f296deb1f0a650a7a39571d50068843c6c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917349"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246957"
 ---
 # <a name="_cisin"></a>_CIsin
 
@@ -54,7 +55,7 @@ void __cdecl _CIsin();
 
 **플랫폼:** x86
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [사전순 함수 참조](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [sin, sinf, sinl](../c-runtime-library/reference/sin-sinf-sinl.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __crtLCMapStringW'
 title: __crtLCMapStringW
 ms.date: 11/04/2016
 api_name:
@@ -20,12 +21,12 @@ f1_keywords:
 helpviewer_keywords:
 - __crtLCMapStringW
 ms.assetid: 45b4ac0e-438c-4fa3-b4d1-34195f4467d9
-ms.openlocfilehash: f239d95c0dfd50f765b6f23d7874f01dce085054
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 57b3f7e961de94d8a3dbd045a1fa1d74681cbfdc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80170997"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246759"
 ---
 # <a name="__crtlcmapstringw"></a>__crtLCMapStringW
 
@@ -65,7 +66,7 @@ int __crtLCMapStringW(
 *cchDest*<br/>
 `lpDestStr`이 가리키는 버퍼의 크기(문자)입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 `cchDest` 의 값이 0이 아닌 경우 문자 수 또는 바이트이며, `LCMAP_SORTKEY` 가 지정된 경우 버퍼에 쓰여진 값은 성공을 나타냅니다. 이 수는 null 종결자에 대한 공간을 포함합니다.
 
@@ -79,6 +80,6 @@ int __crtLCMapStringW(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |__crtLCMapStringW|awint.h|

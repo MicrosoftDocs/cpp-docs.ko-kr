@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: _ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock'
 title: _ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock
 ms.date: 4/2/2020
 api_name:
@@ -51,12 +52,12 @@ helpviewer_keywords:
 - ungetwch_nolock function
 - _ungetwch function
 ms.assetid: 70ae71c6-228c-4883-a57d-de6d5f873825
-ms.openlocfilehash: 2a7b3b2a71b633eac64ad5ebc5203d70f31626ed
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: d7491f80f5c8a619d6382f5811c0ff2fccc00125
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82909296"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341401"
 ---
 # <a name="_ungetch-_ungetwch-_ungetch_nolock-_ungetwch_nolock"></a>_ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock
 
@@ -87,9 +88,9 @@ wint_t _ungetwch_nolock(
 *c*<br/>
 푸시할 문자 수입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-성공할 경우 두 함수는 모두 문자 *c* 를 반환 합니다. 오류가 발생 하는 경우 **_ungetch** 은 **EOF** 값을 반환 하 고 **_ungetwch** 는 **weof**를 반환 합니다.
+성공할 경우 두 함수는 모두 문자 *c* 를 반환 합니다. 오류가 발생 하는 경우 **_ungetch** 은 **EOF** 값을 반환 하 고 **_ungetwch** 는 **weof** 를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
@@ -157,8 +158,8 @@ int main( void )
 Whitetoken = White
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[콘솔 및 포트 I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
+[콘솔 및 포트 i/o](../../c-runtime-library/console-and-port-i-o.md)<br/>
 [_cscanf, _cscanf_l, _cwscanf, _cwscanf_l](cscanf-cscanf-l-cwscanf-cwscanf-l.md)<br/>
 [_getch, _getwch](getch-getwch.md)<br/>

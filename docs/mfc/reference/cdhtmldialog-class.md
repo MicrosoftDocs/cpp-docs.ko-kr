@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CDHtmlDialog 클래스'
 title: CDHtmlDialog 클래스
 ms.date: 03/27/2019
 f1_keywords:
@@ -116,12 +117,12 @@ helpviewer_keywords:
 - CDHtmlDialog [MFC], m_strCurrentUrl
 - CDHtmlDialog [MFC], m_szHtmlResID
 ms.assetid: 3f941c85-87e1-4f0f-9cc5-ffee8498b312
-ms.openlocfilehash: 9cc01c94357d7aac7fa6fa98127628a60746e1e8
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: aa99d10b0d0ff6920f839d7588d80f489b971384
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842886"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97185286"
 ---
 # <a name="cdhtmldialog-class"></a>CDHtmlDialog 클래스
 
@@ -703,7 +704,7 @@ HRESULT GetDHtmlDocument(IHTMLDocument2 **pphtmlDoc);
 
 ### <a name="parameters"></a>매개 변수
 
-HTML 문서에 대 한 포인터에 포인터를 * \* \* pphtmlDoc* 합니다.
+HTML 문서에 대 한 포인터에 포인터를 *\* \* pphtmlDoc* 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -737,7 +738,7 @@ E_NOTIMPL을 반환합니다.
 
 ## <a name="cdhtmldialoggetelement"></a><a name="getelement"></a> CDHtmlDialog:: GetElement
 
-*Szelementid*로 지정 된 HTML 요소에 대 한 인터페이스를 반환 합니다.
+*Szelementid* 로 지정 된 HTML 요소에 대 한 인터페이스를 반환 합니다.
 
 ```
 HRESULT GetElement(
@@ -776,7 +777,7 @@ HTML 요소의 ID입니다.
 
 ## <a name="cdhtmldialoggetelementhtml"></a><a name="getelementhtml"></a> CDHtmlDialog:: GetElementHtml
 
-`innerHTML` *Szelementid*로 식별 되는 HTML 요소의 속성을 검색 합니다.
+`innerHTML` *Szelementid* 로 식별 되는 HTML 요소의 속성을 검색 합니다.
 
 ```
 BSTR GetElementHtml(LPCTSTR szElementId);
@@ -793,7 +794,7 @@ HTML 요소의 ID입니다.
 
 ## <a name="cdhtmldialoggetelementinterface"></a><a name="getelementinterface"></a> CDHtmlDialog:: GetElementInterface
 
-*Szelementid*로 식별 되는 HTML 요소에서 요청 된 인터페이스 포인터를 검색 합니다.
+*Szelementid* 로 식별 되는 HTML 요소에서 요청 된 인터페이스 포인터를 검색 합니다.
 
 ```
 template <class Q> HRESULT GetElementInterface(
@@ -827,7 +828,7 @@ HTML 요소의 ID입니다.
 
 ## <a name="cdhtmldialoggetelementproperty"></a><a name="getelementproperty"></a> CDHtmlDialog:: GetElementProperty
 
-*Szelementid*로 식별 되는 HTML 요소에서 *dispId* 로 식별 된 속성의 값을 검색 합니다.
+*Szelementid* 로 식별 되는 HTML 요소에서 *dispId* 로 식별 된 속성의 값을 검색 합니다.
 
 ```
 VARIANT GetElementProperty(
@@ -849,7 +850,7 @@ HTML 요소의 ID입니다.
 
 ## <a name="cdhtmldialoggetelementtext"></a><a name="getelementtext"></a> CDHtmlDialog:: GetElementText
 
-`innerText` *Szelementid*로 식별 되는 HTML 요소의 속성을 검색 합니다.
+`innerText` *Szelementid* 로 식별 되는 HTML 요소의 속성을 검색 합니다.
 
 ```
 BSTR GetElementText(LPCTSTR szElementId);
@@ -1012,7 +1013,7 @@ BOOL m_bUseHtmlTitle;
 
 ### <a name="remarks"></a>설명
 
-**M**_ **busehtmltitle** 이 TRUE 이면 대화 상자 캡션이 HTML 문서의 제목과 동일 하 게 설정 됩니다. 그렇지 않으면 대화 상자 리소스의 캡션이 사용 됩니다.
+**M** _ **busehtmltitle** 이 TRUE 이면 대화 상자 캡션이 HTML 문서의 제목과 동일 하 게 설정 됩니다. 그렇지 않으면 대화 상자 리소스의 캡션이 사용 됩니다.
 
 ## <a name="cdhtmldialogm_nhtmlresid"></a><a name="m_nhtmlresid"></a> CDHtmlDialog:: m_nHtmlResID
 
@@ -1064,7 +1065,7 @@ LPTSTR m_szHtmlResID;
 
 ## <a name="cdhtmldialognavigate"></a><a name="navigate"></a> CDHtmlDialog:: Navigate
 
-*LpszURL*에 지정 된 URL로 식별 되는 리소스로 이동 합니다.
+*LpszURL* 에 지정 된 URL로 식별 되는 리소스로 이동 합니다.
 
 ```cpp
 void Navigate(

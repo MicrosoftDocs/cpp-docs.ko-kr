@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CDragListBox 클래스'
 title: CDragListBox 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - CDragListBox [MFC], Dropped
 - CDragListBox [MFC], ItemFromPt
 ms.assetid: fee20b42-60ae-4aa9-83f9-5a3d9b96e33b
-ms.openlocfilehash: b260d3a88fc8c3f2d341005c1e47cfd9ab668e1e
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 0dfa61503bd9c1aa3017d37b873a8948f61e68e2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500357"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184767"
 ---
 # <a name="cdraglistbox-class"></a>CDragListBox 클래스
 
@@ -196,7 +197,7 @@ virtual void Dropped(
 
 ## <a name="cdraglistboxitemfrompt"></a><a name="itemfrompt"></a> CDragListBox:: ItemFromPt
 
-*Pt*에 있는 목록 상자 항목의 인덱스 (0부터 시작)를 검색 하려면이 함수를 호출 합니다.
+*Pt* 에 있는 목록 상자 항목의 인덱스 (0부터 시작)를 검색 하려면이 함수를 호출 합니다.
 
 ```
 int ItemFromPt(

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 식 계산기 오류 CXX0059'
 title: 식 계산기 오류 CXX0059
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - CXX0059
 - CAN0059
 ms.assetid: e8bdcb74-1315-4083-b24d-e47eac7d1ec0
-ms.openlocfilehash: f3473d4ae3380b5896005bc2801ef334f3a5ec4e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 4a0663d6e631ff3d9e6b5ec7977b1eea4b663454
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80184582"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97208192"
 ---
 # <a name="expression-evaluator-error-cxx0059"></a>식 계산기 오류 CXX0059
 

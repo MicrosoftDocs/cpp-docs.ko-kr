@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _crtDbgFlag'
 title: _crtDbgFlag
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,14 +14,14 @@ helpviewer_keywords:
 - enable memory allocation tracking flag
 - memory, tracking on the debug heap
 ms.assetid: 9e7adb47-8ab9-4e19-81d5-e2f237979973
-ms.openlocfilehash: a967b436d53acab6d76fa36fdf9b13c7c24d49c3
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: ef3c72b89ea9e5e557a567af9a9c52c8e85370ce
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57746984"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246762"
 ---
-# <a name="crtdbgflag"></a>_crtDbgFlag
+# <a name="_crtdbgflag"></a>_crtDbgFlag
 
 **_crtDbgFlag** 플래그는 힙의 디버그 버전에서 메모리 할당을 추적, 확인, 보고 및 덤프하는 방법을 제어하는 비트 필드 5개로 구성됩니다. 플래그의 비트 필드는 [_CrtSetDbgFlag](../c-runtime-library/reference/crtsetdbgflag.md) 함수를 사용하여 설정합니다. 이 플래그와 해당 비트 필드는 Crtdbg.h에서 선언됩니다. 이 플래그는 [_DEBUG](../c-runtime-library/debug.md) 플래그를 애플리케이션에서 정의한 경우에만 사용할 수 있습니다.
 
@@ -28,4 +29,4 @@ ms.locfileid: "57746984"
 
 ## <a name="see-also"></a>참고 항목
 
-[제어 플래그](../c-runtime-library/control-flags.md)
+[컨트롤 플래그](../c-runtime-library/control-flags.md)
