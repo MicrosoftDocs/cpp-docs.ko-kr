@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2115'
 title: 컴파일러 오류 C2115
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2115
 ms.assetid: 95d76ab5-ddd7-4e29-8cac-24285dccc490
-ms.openlocfilehash: 4da46d84f7d26dab46ba98d79a0411721796d461
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: b1dd766237a081311bc9da52487a97e5c968dae9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80207542"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97278443"
 ---
 # <a name="compiler-error-c2115"></a>컴파일러 오류 C2115
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 클래스 (c + +)'
 title: 클래스 (C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - class types [C++], class statements
 - class keyword [C++]
 ms.assetid: dd23c09f-6598-4069-8bff-69c7f2518b9f
-ms.openlocfilehash: 1dfa0b5e2dd65567b965be756ff171a3df75370a
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 2b1e984f3facd4d2d212979a1dcf6be2eee3b3a9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91499825"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97278742"
 ---
 # <a name="class-c"></a>클래스 (C++)
 
@@ -40,7 +41,7 @@ class [ms-decl-spec] [tag [: base-list ]]
 *ms decl-사양*<br/>
 선택적 스토리지 클래스 지정입니다. 자세한 내용은 [__declspec](../cpp/declspec.md) 키워드를 참조 하세요.
 
-*태그가*<br/>
+*태그*<br/>
 클래스에 지정 된 형식 이름입니다. 태그는 클래스의 범위 내에서 예약어가 됩니다. 태그는 선택 사항입니다. 생략 하면 익명 클래스가 정의 됩니다. 자세한 내용은 [익명 클래스 형식](../cpp/anonymous-class-types.md)을 참조 하세요.
 
 *base-list*<br/>

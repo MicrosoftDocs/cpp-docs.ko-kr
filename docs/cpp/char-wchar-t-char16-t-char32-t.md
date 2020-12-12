@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: char, wchar_t, char16_t, char32_t'
 title: char, wchar_t, char16_t, char32_t
 ms.date: 02/14/2018
 ms.assetid: 6b33e9f5-455b-4e49-8f12-a150cbfe2e5b
-ms.openlocfilehash: 6efbae1b8f6155410b823f1abef35c3dec90d458
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f8bab56bf8a2cebe8409c9dc4ceecf931ec83260
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232341"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97278794"
 ---
 # <a name="char-wchar_t-char16_t-char32_t"></a>char, wchar_t, char16_t, char32_t
 
@@ -24,7 +25,7 @@ char32_t ch4{ U'a' };
 
 ## <a name="remarks"></a>설명
 
-**`char`** 형식은 C 및 c + +의 원래 문자 형식 이었습니다. 형식은 **`unsigned char`** c + +에서 기본 제공 형식이 아닌 *바이트*를 나타내는 데 사용 되는 경우가 많습니다. **`char`** 형식은 ASCII 문자 집합 또는 ISO-8859 문자 집합의 문자를 저장 하는 데 사용할 수 있으며, shift-jis 또는 유니코드 문자 집합의 utf-8 인코딩과 같은 멀티 바이트 문자의 개별 바이트를 저장 하는 데 사용할 수 있습니다. 형식의 문자열 **`char`** 은 멀티 바이트 문자를 인코딩하는 데 사용 되는 경우에도 *좁은* 문자열 이라고 합니다. Microsoft 컴파일러에서 **`char`** 는 8 비트 형식입니다.
+**`char`** 형식은 C 및 c + +의 원래 문자 형식 이었습니다. 형식은 **`unsigned char`** c + +에서 기본 제공 형식이 아닌 *바이트* 를 나타내는 데 사용 되는 경우가 많습니다. **`char`** 형식은 ASCII 문자 집합 또는 ISO-8859 문자 집합의 문자를 저장 하는 데 사용할 수 있으며, shift-jis 또는 유니코드 문자 집합의 utf-8 인코딩과 같은 멀티 바이트 문자의 개별 바이트를 저장 하는 데 사용할 수 있습니다. 형식의 문자열 **`char`** 은 멀티 바이트 문자를 인코딩하는 데 사용 되는 경우에도 *좁은* 문자열 이라고 합니다. Microsoft 컴파일러에서 **`char`** 는 8 비트 형식입니다.
 
 **`wchar_t`** 형식은 구현 시 정의 된 와이드 문자 형식입니다. Microsoft 컴파일러에서 Windows 운영 체제의 네이티브 문자 형식인 u t f-UTF-16LE로 인코딩된 유니코드를 저장 하는 데 사용 되는 16 비트 와이드 문자를 나타냅니다. C #의 와이드 문자 버전은 **`wchar_t`** 네이티브 WINDOWS API의 와이드 문자 버전과 마찬가지로 및 해당 포인터와 배열 형식을 매개 변수 및 반환 값으로 사용 합니다.
 
