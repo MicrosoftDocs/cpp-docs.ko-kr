@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 링커 도구 오류 LNK1237'
 title: 링커 도구 오류 LNK1237
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1237
 ms.assetid: 8722ffa8-096a-4bb0-85f9-f3aa0e10872a
-ms.openlocfilehash: c56b2eb86c7605fb3330d7b1bb01e3235466ede6
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: ba6a0d23eea4d8d555115950fcd54a5e4f6a8bde
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74990965"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97193984"
 ---
 # <a name="linker-tools-error-lnk1237"></a>링커 도구 오류 LNK1237
 
 코드를 생성 하는 동안 컴파일러가/GL로 컴파일된 ' module ' 모듈에 정의 된 ' symbol ' 기호에 대 한 참조를 도입 했습니다.
 
-코드를 생성 하는 동안 컴파일러는 나중에 정의 된 **/gl**로 확인 되는 기호를 도입 하면 안 됩니다. `symbol`는 도입 되어 나중에 **/gl**로 컴파일된 정의로 확인 된 기호입니다.
+코드를 생성 하는 동안 컴파일러는 나중에 정의 된 **/gl** 로 확인 되는 기호를 도입 하면 안 됩니다. `symbol` 는 도입 되었고 나중에 **/gl** 로 컴파일된 정의로 확인 된 기호입니다.
 
 자세한 내용은 [/GL(전체 프로그램 최적화)](../../build/reference/gl-whole-program-optimization.md)을 참조하세요.
 

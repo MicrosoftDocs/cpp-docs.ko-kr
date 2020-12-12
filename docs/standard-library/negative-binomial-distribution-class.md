@@ -1,4 +1,5 @@
 ---
+description: Negative_binomial_distribution 클래스에 대해 자세히 알아보세요.
 title: negative_binomial_distribution 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - std::negative_binomial_distribution [C++], param_type
 - std::negative_binomial_distribution [C++], param_type
 ms.assetid: 7f5f0967-7fdd-4578-99d4-88f292b4fe9c
-ms.openlocfilehash: fd5153a8eb0652aed7d963fb1dbdb1277e4f6718
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 59b13cce627faed54427a08acf71de3546aca96e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836454"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338231"
 ---
 # <a name="negative_binomial_distribution-class"></a>negative_binomial_distribution 클래스
 
@@ -245,7 +246,7 @@ explicit negative_binomial_distribution(const param_type& parm);
 
 첫 번째 생성자는 저장된 `p` 값이 *p* 값을 보유하고 저장된 `k` 값이 *k* 값을 보유하고 있는 개체를 생성합니다.
 
-두 번째 생성자는 저장된 매개 변수가 *parm*에서 초기화되는 개체를 생성합니다. `param()` 멤버 함수를 호출하여 기존 분포의 현재 매개 변수를 가져와 설정할 수 있습니다.
+두 번째 생성자는 저장된 매개 변수가 *parm* 에서 초기화되는 개체를 생성합니다. `param()` 멤버 함수를 호출하여 기존 분포의 현재 매개 변수를 가져와 설정할 수 있습니다.
 
 ## <a name="negative_binomial_distributionparam_type"></a><a name="param_type"></a> negative_binomial_distribution::p aram_type
 

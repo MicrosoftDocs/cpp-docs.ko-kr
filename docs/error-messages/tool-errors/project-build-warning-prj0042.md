@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 프로젝트 빌드 경고 PRJ0042'
 title: 프로젝트 빌드 경고 PRJ0042
 ms.date: 08/27/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0042
 ms.assetid: 682c9999-6f85-409f-b102-00c93243f74f
-ms.openlocfilehash: 45de1de889dedbc03c556e4c88dc76f21e1c8c63
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 524d6efd457f7915f6e7e9e7d8b78b757d0863af
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80191914"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97206372"
 ---
 # <a name="project-build-warning-prj0042"></a>프로젝트 빌드 경고 PRJ0042
 

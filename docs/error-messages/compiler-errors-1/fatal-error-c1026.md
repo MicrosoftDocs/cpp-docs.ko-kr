@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 심각한 오류 C1026'
 title: 심각한 오류 C1026
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1026
 ms.assetid: 89bb9d40-673a-44aa-a9f4-b42c07b49d44
-ms.openlocfilehash: 9ea97bef16bebb8fc0e765ed708e54baee9a64de
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 08816f21879cf6dfbeb0389700d9a8ffdc7a40d5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220342"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345513"
 ---
 # <a name="fatal-error-c1026"></a>심각한 오류 C1026
 

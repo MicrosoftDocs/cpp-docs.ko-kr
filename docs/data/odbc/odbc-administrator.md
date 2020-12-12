@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: ODBC 관리자'
 title: ODBC 관리자
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - ODBC Administrator [C++]
 - drivers [C++], ODBC
 ms.assetid: b8652790-3437-4e7d-bc83-6ea6981f008b
-ms.openlocfilehash: 9e88492919eac80a4f3db2f94202d49011aa69de
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: bbcb0d93884f29a04f20c130f25bee9a5e2556ec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213185"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317833"
 ---
 # <a name="odbc-administrator"></a>ODBC 관리자
 
@@ -26,21 +27,21 @@ MFC ODBC 클래스 또는 MFC DAO (Data Access Object) 클래스에서 사용할
 
 ODBC 관리자는 설치 중에 설치 됩니다. **사용자 지정** 설치를 선택 하 고 **데이터베이스 옵션** 대화 상자에서 ODBC 드라이버를 선택 하지 않은 경우 설치 프로그램을 다시 실행 하 여 필요한 파일을 설치 해야 합니다.
 
-설치 하는 동안 설치 하려는 ODBC 드라이버를 선택 합니다. Visual C++ C++ 설치 프로그램을 사용 하 여 시각적 개체와 함께 제공 되는 추가 드라이버를 나중에 설치할 수 있습니다.
+설치 하는 동안 설치 하려는 ODBC 드라이버를 선택 합니다. 나중에 Visual C++ 설치 프로그램을 사용 하 여 Visual C++와 함께 제공 되는 추가 드라이버를 설치할 수 있습니다.
 
-시각적 개체 C++와 함께 제공 되지 않는 ODBC 드라이버를 설치 하려면 드라이버와 함께 제공 되는 설치 프로그램을 실행 해야 합니다.
+Visual C++와 함께 제공 되지 않는 ODBC 드라이버를 설치 하려면 드라이버와 함께 제공 되는 설치 프로그램을 실행 해야 합니다.
 
-#### <a name="to-install-odbc-drivers-that-ship-with-visual-c"></a>시각적 개체와 함께 제공 되는 ODBC 드라이버를 설치 하려면C++
+#### <a name="to-install-odbc-drivers-that-ship-with-visual-c"></a>Visual C++와 함께 제공 되는 ODBC 드라이버를 설치 하려면
 
-1. 시각적 C++ 배포 CD에서 설치 프로그램을 실행 합니다.
+1. Visual C++ 배포 CD에서 설치 프로그램을 실행 합니다.
 
    설치 프로그램에서 열기 대화 상자가 나타납니다.
 
-1. **설치 옵션** 대화 상자에 도달할 때까지 각 대화 상자에서 **다음** 을 클릭 합니다. **사용자 지정**을 선택 하 고 **다음**을 클릭 합니다.
+1. **설치 옵션** 대화 상자에 도달할 때까지 각 대화 상자에서 **다음** 을 클릭 합니다. **사용자 지정** 을 선택 하 고 **다음** 을 클릭 합니다.
 
-1. **Microsoft Visual C++ Setup** 대화 상자에서 **데이터베이스 옵션** 확인란을 제외한 모든 확인란의 선택을 취소 한 다음 **세부 정보** 를 클릭 하 여 **데이터베이스 옵션** 대화 상자를 표시 합니다.
+1. **데이터베이스 옵션** 확인란을 제외 하 고 **Microsoft Visual C++ 설정** 대화 상자에서 모든 확인란의 선택을 취소 한 다음 **세부 정보** 를 클릭 하 여 **데이터베이스 옵션** 대화 상자를 표시 합니다.
 
-1. **Microsoft Data Access Objects** 확인란의 선택을 취소 하 고 **microsoft ODBC Drivers** 확인란을 선택한 다음 **세부 정보**를 클릭 합니다.
+1. **Microsoft Data Access Objects** 확인란의 선택을 취소 하 고 **microsoft ODBC Drivers** 확인란을 선택한 다음 **세부 정보** 를 클릭 합니다.
 
    **MICROSOFT ODBC 드라이버** 대화 상자가 나타납니다.
 
@@ -52,5 +53,5 @@ ODBC 관리자는 설치 중에 설치 됩니다. **사용자 지정** 설치를
 
 ## <a name="see-also"></a>참고 항목
 
-[ODBC(Open Database Connectivity)](../../data/odbc/open-database-connectivity-odbc.md)<br/>
-[데이터 소스(ODBC)](../../data/odbc/data-source-odbc.md)
+[ODBC (Open Database Connectivity)](../../data/odbc/open-database-connectivity-odbc.md)<br/>
+[데이터 원본 (ODBC)](../../data/odbc/data-source-odbc.md)

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 명령 대상'
 title: 명령 대상
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - messages, command [MFC]
 - command routing [MFC], command targets
 ms.assetid: b0f784e5-c6dc-4391-9e71-aa7b7dcbe9f0
-ms.openlocfilehash: 59ba197174e95e42cd237c875f39f07801cb3dbe
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: b7be03282400c2d3a0dcf5eb0d24a0b06456ebca
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619308"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97206255"
 ---
 # <a name="command-targets"></a>명령 대상
 
@@ -22,4 +23,4 @@ Windows에서는 명령 메시지가 아닌 메시지를 메시지 처리기가 
 
 ## <a name="see-also"></a>참고 항목
 
-[프레임워크의 메시지 및 명령](messages-and-commands-in-the-framework.md)
+[프레임 워크의 메시지 및 명령](messages-and-commands-in-the-framework.md)

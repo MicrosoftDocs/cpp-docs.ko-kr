@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4731'
 title: 컴파일러 경고(수준 1) C4731
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4731
 ms.assetid: 5658c24c-3e6f-4505-835b-1fb92d47cab0
-ms.openlocfilehash: 72483b734a1463b7b211c49ef21a01536ffa0ea1
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d2041936d7d3c4b7189f57d57ffb1c9f226ea933
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80185726"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97228653"
 ---
 # <a name="compiler-warning-level-1-c4731"></a>컴파일러 경고(수준 1) C4731
 
@@ -39,4 +40,4 @@ void bad(int p) {
 }
 ```
 
-EBP는 프레임 포인터 (FPO는 허용 되지 않음)이 고 수정 되 고 있습니다. `p` 나중에 참조 되는 경우 `EBP`을 기준으로 참조 됩니다. 그러나 코드에서 `EBP`를 덮어쓰므로 프로그램이 제대로 작동 하지 않으며 오류가 발생할 수 있습니다.
+EBP는 프레임 포인터 (FPO는 허용 되지 않음)이 고 수정 되 고 있습니다. 이 나중에 참조 되는 경우 `p` 를 기준으로 참조 됩니다 `EBP` . 그러나 `EBP` 코드에서를 덮어쓰므로 프로그램이 제대로 작동 하지 않고 오류도 발생할 수 있습니다.

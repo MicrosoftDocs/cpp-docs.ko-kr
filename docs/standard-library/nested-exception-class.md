@@ -1,4 +1,5 @@
 ---
+description: Nested_exception 클래스에 대해 자세히 알아보세요.
 title: nested_exception 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - nested_exception class
 ms.assetid: 5ae2c4ef-c7ad-4469-8a9e-a773e86bb000
-ms.openlocfilehash: 4ab48f714e8b4de1a47674f1af8fe25467279f94
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: fd2a0d5b62eb0ec9ae1e70233984fe7457127414
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836441"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338204"
 ---
 # <a name="nested_exception-class"></a>nested_exception 클래스
 
@@ -36,7 +37,7 @@ class nested_exception {
 |-|-|
 |[연산자 =](#op_as)|대입 연산자입니다.|
 
-### <a name="functions"></a>Functions
+### <a name="functions"></a>함수
 
 |Name|설명|
 |-|-|

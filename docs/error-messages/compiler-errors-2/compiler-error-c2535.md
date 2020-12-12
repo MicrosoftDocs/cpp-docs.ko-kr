@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2535'
 title: 컴파일러 오류 C2535
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2535
 ms.assetid: a958f83e-e2bf-4a59-b44b-d406ec325d7e
-ms.openlocfilehash: f5cecd847837214f6392bead624e5377cef4833f
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 149ddabcde7364513379701c55d4801fd403206b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74758647"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258085"
 ---
 # <a name="compiler-error-c2535"></a>컴파일러 오류 C2535
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: &lt; 복합 &gt; 연산자'
 title: '&lt;complex&gt; operators'
 ms.date: 11/04/2016
 f1_keywords:
@@ -15,16 +16,16 @@ helpviewer_keywords:
 - std::operator!= (complex)
 - std::operator&gt;&gt; (complex)
 - std::operator&lt;&lt; (complex), std::operator== (complex)
-ms.openlocfilehash: 325e194e9cc5b597ae010477ecbe313be11b179a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 88930dbf0b96d42c5c643305b56121cec8a1bacd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222591"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325012"
 ---
 # <a name="ltcomplexgt-operators"></a>&lt;complex&gt; operators
 
-## <a name="operator"></a><a name="op_neq"></a>연산자! =
+## <a name="operator"></a><a name="op_neq"></a> 연산자! =
 
 하나 또는 둘 모두 실수 및 허수 부분에서 형식의 일부에 속할 수 있는 두 복소수를 같지 않은지 테스트합니다.
 
@@ -53,7 +54,7 @@ bool operator!=(
 *오른쪽*\
 같지 않은지 테스트할 매개 변수 형식의 복소수 또는 개체입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 숫자가 같지 않으면입니다. **`false`** 숫자가 같으면입니다.
 
@@ -163,7 +164,7 @@ The 2nd right-side complex number is cr3b = (5,0)
 The complex numbers cl3b & cr3b are equal.
 ```
 
-## <a name="operator"></a><a name="op_star"></a>연산자\*
+## <a name="operator"></a><a name="op_star"></a> 연산자\*
 
 하나 또는 둘 다 실수 및 허수 부분에서 형식의 일부에 속할 수 있는 두 복소수를 곱합니다.
 
@@ -192,7 +193,7 @@ complex<Type> operator*(
 *오른쪽*\
 두 복소수 중 두 번째 복소수 이거나 연산을 통해 곱할 복소수의 매개 변수 형식에 해당 하는 숫자입니다 \* .
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 값과 형식이 매개 변수 입력으로 지정되는 두 숫자를 곱한 복소수입니다.
 
@@ -260,7 +261,7 @@ int main( )
 }
 ```
 
-## <a name="operator"></a><a name="op_add"></a>연산자 +
+## <a name="operator"></a><a name="op_add"></a> 연산자 +
 
 하나 또는 둘 다 실수 및 허수 부분에서 형식의 일부에 속할 수 있는 두 복소수를 더합니다.
 
@@ -292,13 +293,13 @@ complex<Type> operator+(const complex<Type>& left);
 *오른쪽*\
 두 복소수 중 두 번째 복소수이거나 + 연산으로 더할 복소수의 매개 변수 형식을 가진 숫자입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 값과 형식이 매개 변수 입력으로 지정되는 두 숫자를 더한 복소수입니다.
 
 ### <a name="remarks"></a>설명
 
-연산이 오버로드되어 특정 형식으로 데이터를 변환하지 않고 단순한 산술 연산을 실행할 수 있습니다. 단항 연산자는 *left*를 반환 합니다.
+연산이 오버로드되어 특정 형식으로 데이터를 변환하지 않고 단순한 산술 연산을 실행할 수 있습니다. 단항 연산자는 *left* 를 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -400,7 +401,7 @@ The modulus of cs4 is: 5
 The argument of cs4 is: 0.927295 radians, which is 53.1301 degrees.
 ```
 
-## <a name="operator-"></a><a name="operator-"></a>연산자
+## <a name="operator-"></a><a name="operator-"></a> 연산자
 
 하나 또는 둘 다 실수 및 허수 부분에서 형식의 일부에 속할 수 있는 두 복소수를 뺍니다.
 
@@ -432,9 +433,9 @@ complex<Type> operator-(const complex<Type>& left);
 *오른쪽*\
 두 복소수 중 두 번째 복소수이거나 + 연산으로 뺄 복소수의 매개 변수 형식을 가진 숫자입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-*왼쪽*에서 *오른쪽* 의 빼기로 생성 된 복소수입니다. 값이 매개 변수 입력으로 지정 되는 두 숫자입니다.
+*왼쪽* 에서 *오른쪽* 의 빼기로 생성 된 복소수입니다. 값이 매개 변수 입력으로 지정 되는 두 숫자입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -542,7 +543,7 @@ The modulus of cs4 is: 5
 The argument of cs4 is: -2.2143 radians, which is -126.87 degrees.
 ```
 
-## <a name="operator"></a><a name="op_div"></a>연산자
+## <a name="operator"></a><a name="op_div"></a> 연산자
 
 하나 또는 둘 다 실수 및 허수 부분에서 형식의 일부에 속할 수 있는 두 복소수를 나눕니다.
 
@@ -571,7 +572,7 @@ complex<Type> operator*(
 *오른쪽*\
 복소수이거나 / 연산으로 분자를 나누는 데 사용할 분모인 복소수의 매개 변수 형식을 가진 숫자입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 매개 변수 입력으로 지정되는 값인 분모로 분자를 나눈 복소수입니다.
 
@@ -662,7 +663,7 @@ The modulus of cs3 is: 1.66667
 The argument of cs3 is: -0.523599 radians, which is -30 degrees.
 ```
 
-## <a name="operatorltlt"></a><a name="op_lt_lt"></a>연산자&lt;&lt;
+## <a name="operatorltlt"></a><a name="op_lt_lt"></a> 연산자&lt;&lt;
 
 지정된 복소수를 출력 스트림에 삽입합니다.
 
@@ -681,7 +682,7 @@ basic_ostream<Elem, Traits>& operator<<(
 *오른쪽*\
 출력 스트림에 입력하는 복소수입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 지정 된 복소수의 값을 데카르트 형식의 *Ostr* 에 씁니다. ( *실수, 허수 부분* )
 
@@ -724,7 +725,7 @@ The modulus of c2 is: 2
 The argument of c2 is: 0.523599 radians, which is 30 degrees.
 ```
 
-## <a name="operator"></a><a name="op_eq_eq"></a>연산자 = =
+## <a name="operator"></a><a name="op_eq_eq"></a> 연산자 = =
 
 하나 또는 둘 모두 실수 및 허수 부분에서 형식의 일부에 속할 수 있는 두 복소수를 같은지 테스트합니다.
 
@@ -753,7 +754,7 @@ bool operator==(
 *오른쪽*\
 같지 않은지 테스트할 매개 변수 형식의 복소수 또는 개체입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 숫자가 같으면이 고, 그렇지 않으면입니다. **`false`** 숫자가 같지 않으면입니다.
 
@@ -863,7 +864,7 @@ The 2nd right-side complex number is cr3b = (5,0)
 The complex numbers cl3b & cr3b are equal.
 ```
 
-## <a name="operatorgtgt"></a><a name="op_gt_gt"></a>연산자&gt;&gt;
+## <a name="operatorgtgt"></a><a name="op_gt_gt"></a> 연산자&gt;&gt;
 
 입력 스트림에서 복소수 값을 추출합니다.
 
@@ -882,9 +883,9 @@ basic_istream<Elem, Traits>& operator>>(
 *오른쪽*\
 입력 스트림에서 추출하는 복소수입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-*Istr* 에서 지정 된 복소수의 값을 읽어 *오른쪽*으로 반환 합니다.
+*Istr* 에서 지정 된 복소수의 값을 읽어 *오른쪽* 으로 반환 합니다.
 
 ### <a name="remarks"></a>설명
 

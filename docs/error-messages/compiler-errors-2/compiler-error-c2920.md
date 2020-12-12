@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2920'
 title: 컴파일러 오류 C2920
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2920
 ms.assetid: 0a4cb2de-00a0-4209-8160-c7ce6ed7d9ab
-ms.openlocfilehash: 2b744729097f7e697c7a7695a849b5ee46d7a4ab
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 08c11832fc2241fb8fbebf7bda56db29bf181022
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74761034"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97270331"
 ---
 # <a name="compiler-error-c2920"></a>컴파일러 오류 C2920
 

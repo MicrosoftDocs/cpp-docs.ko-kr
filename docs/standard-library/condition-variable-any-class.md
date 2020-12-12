@@ -1,4 +1,5 @@
 ---
+description: Condition_variable_any 클래스에 대해 자세히 알아보세요.
 title: condition_variable_any 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - std::condition_variable_any::wait
 - std::condition_variable_any::wait_for
 - std::condition_variable_any::wait_until
-ms.openlocfilehash: 9dc73de515aa8e321dbb28ca4a859b256613fbfe
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 853944a8eab0698fae6a12cace4ce9426ada8f3d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831479"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324999"
 ---
 # <a name="condition_variable_any-class"></a>condition_variable_any 클래스
 
@@ -43,7 +44,7 @@ class condition_variable_any;
 |-|-|
 |[condition_variable_any](#condition_variable_any)|`condition_variable_any` 개체를 생성합니다.|
 
-### <a name="functions"></a>Functions
+### <a name="functions"></a>함수
 
 |Name|설명|
 |-|-|
@@ -139,7 +140,7 @@ bool wait_for(Lock& Lck, const chrono::duration<Rep, Period>& Rel_time, Predicat
 
 첫 번째 메서드는 `cv_status::timeout` *Rel_time* 경과할 때 대기가 종료 될 경우를 반환 합니다. 그렇지 않은 경우 메서드는 `cv_status::no_timeout`를 반환합니다.
 
-두 번째 메서드는 *Pred*의 값을 반환 합니다.
+두 번째 메서드는 *Pred* 의 값을 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -194,11 +195,11 @@ void wait_until(
 
 형식을 반환 하는 메서드는 `cv_status` `cv_status::timeout` *Abs_time* 경과할 때 대기가 종료 될 경우를 반환 합니다. 그렇지 않으면 메서드는 `cv_status::no_timeout`을 반환합니다.
 
-을 반환 하는 메서드는 **`bool`** *Pred*의 값을 반환 합니다.
+을 반환 하는 메서드는 **`bool`** *Pred* 의 값을 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-첫 번째 메서드는 `condition_variable` 개체가 [notify_one](../standard-library/condition-variable-class.md#notify_one) 또는 [notify_all](../standard-library/condition-variable-class.md#notify_all)에 대 한 호출로 신호를 받거나 *Abs_time*때까지 차단 합니다. 또한 의사적으로 대기 모드를 해제할 수도 있습니다.
+첫 번째 메서드는 `condition_variable` 개체가 [notify_one](../standard-library/condition-variable-class.md#notify_one) 또는 [notify_all](../standard-library/condition-variable-class.md#notify_all)에 대 한 호출로 신호를 받거나 *Abs_time* 때까지 차단 합니다. 또한 의사적으로 대기 모드를 해제할 수도 있습니다.
 
 두 번째 메서드는 실제로 다음 코드를 실행합니다.
 

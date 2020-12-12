@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2918'
 title: 컴파일러 오류 C2918
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2918
 ms.assetid: e452f7ef-0590-45e6-9c7c-ee75dc014670
-ms.openlocfilehash: 0411a159dffb98e40a968af24f805098e638e436
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 7b8cef8ebdd2f44cfaa26be876f5fa41e3bba790
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80201671"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97270357"
 ---
 # <a name="compiler-error-c2918"></a>컴파일러 오류 C2918
 

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __writemsr'
 title: __writemsr
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - wrmsr instruction
 - __writemsr intrinsic
 ms.assetid: 938b1553-51a8-4822-a818-6bed79b0fde5
-ms.openlocfilehash: 7819477edb8d4e6b18a1213a73ba67065ea7ff57
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 0ab7392d9df07a9083ca095bc7002a6bf7d45628
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219138"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331855"
 ---
 # <a name="__writemsr"></a>__writemsr
 
 **Microsoft 전용**
 
-모델 특정 레지스터에 쓰기 (`wrmsr`) 명령을 생성 합니다.
+모델 특정 레지스터에 쓰기 ( `wrmsr` ) 명령을 생성 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -35,16 +36,16 @@ void __writemsr(
 *레지스터*\
 진행 모델 관련 레지스터입니다.
 
-*기본값*\
+*Value*\
 진행 쓸 값입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`__writemsr`|x86, x64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 ## <a name="remarks"></a>설명
 
@@ -52,6 +53,6 @@ void __writemsr(
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

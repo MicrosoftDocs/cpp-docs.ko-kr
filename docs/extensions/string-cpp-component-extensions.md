@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 문자열 (c + +/CLI 및 c + +/CX)'
 title: String(C++/CLI 및 C++/CX)
 ms.date: 10/08/2018
 ms.topic: reference
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - string support with /clr
 - /clr compiler option [C++], string support
 ms.assetid: c695f965-9be0-4e20-9661-373bfee6557e
-ms.openlocfilehash: b9da900ffbfff34dc596d8981095d8285bf37208
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a47842713d1e7349717eaaeddcd4f3cba86fbbea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80171946"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97206333"
 ---
 # <a name="string--ccli-and-ccx"></a>String(C++/CLI 및 C++/CX)
 
@@ -19,9 +20,9 @@ Windows 런타임 및 공용 언어 런타임은 할당된 메모리가 자동�
 
 ## <a name="windows-runtime"></a>Windows 런타임
 
-Windows 런타임 아키텍처에서는 `String` 데이터 형식이 `Platform` 네임스페이스에 있어야 합니다. 편의를 위해, Visual C++에서는 `string`의 동의어인 `Platform::String` 데이터 형식도 `default` 네임스페이스에 제공합니다.
+Windows 런타임 아키텍처에서는 `String` 데이터 형식이 `Platform` 네임스페이스에 있어야 합니다. 편의를 위해, Visual C++에서는 `Platform::String`의 동의어인 `string` 데이터 형식도 `default` 네임스페이스에 제공합니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 // compile with /ZW
@@ -63,7 +64,7 @@ using namespace default;
 
 컴파일러 옵션: **/clr**
 
-### <a name="examples"></a>예
+### <a name="examples"></a>예제
 
 다음 코드 예제에서는 문자열을 연결하고 비교하는 방법을 보여 줍니다.
 
@@ -261,6 +262,6 @@ System.String
 
 ## <a name="see-also"></a>참고 항목
 
-[.NET 및 UWP용 구성 요소 확장](component-extensions-for-runtime-platforms.md)<br/>
+[.NET 및 UWP 용 구성 요소 확장](component-extensions-for-runtime-platforms.md)<br/>
 [문자열 및 문자 리터럴](../cpp/string-and-character-literals-cpp.md)<br/>
 [/clr(공용 언어 런타임 컴파일)](../build/reference/clr-common-language-runtime-compilation.md)

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 리소스 컴파일러 오류 RC2001'
 title: 리소스 컴파일러 오류 RC2001
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - RC2001
 ms.assetid: 92bfb4c0-1879-4606-bb9f-ef7368707b4a
-ms.openlocfilehash: 35042687b798b53857becdedba57861bd4f41a05
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 101ebb260bcfd24fb74368ca66e1e9d318418367
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80191727"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97206346"
 ---
 # <a name="resource-compiler-error-rc2001"></a>리소스 컴파일러 오류 RC2001
 
 상수에서 줄 바꿈
 
-백슬래시 ( **\\** ) 나 닫는 큰따옴표와 여는 큰따옴표 ( **"** )가 없는 두 번째 줄에서 문자열 상수가 계속 되었습니다.
+백슬래시 ( **\\** ) 또는 닫는 큰따옴표와 여는 큰따옴표 (**"**)를 사용 하지 않고 두 번째 줄에서 문자열 상수가 계속 되었습니다.
 
 소스 파일에서 두 줄에 있는 문자열 상수를 중단 하려면 다음 중 하나를 수행 합니다.
 

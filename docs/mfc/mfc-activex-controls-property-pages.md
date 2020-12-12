@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: MFC ActiveX 컨트롤: 속성 페이지'
 title: 'MFC ActiveX 컨트롤: 속성 페이지'
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - CPropertyPageDialog class [MFC]
 - MFC ActiveX controls [MFC], property pages
 ms.assetid: 1506f87a-9fd6-4505-8380-0dbc9636230e
-ms.openlocfilehash: 3d22085daa503a7c778111718445920f98b98a89
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 40267857b12b2f23c07f03d0ee77b2ae8e6bf1a2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615437"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97206151"
 ---
 # <a name="mfc-activex-controls-property-pages"></a>MFC ActiveX 컨트롤: 속성 페이지
 
@@ -51,7 +52,7 @@ ActiveX 컨트롤에서 속성 페이지를 사용 하는 방법에 대 한 자�
 
 ActiveX 컨트롤이 아닌 MFC 응용 프로그램에서 속성 시트를 사용 하는 방법에 대 한 자세한 내용은 [속성 시트](property-sheets-mfc.md)를 참조 하십시오.
 
-## <a name="implementing-the-default-property-page"></a><a name="_core_implementing_the_default_property_page"></a>기본 속성 페이지 구현
+## <a name="implementing-the-default-property-page"></a><a name="_core_implementing_the_default_property_page"></a> 기본 속성 페이지 구현
 
 ActiveX 컨트롤 마법사를 사용 하 여 컨트롤 프로젝트를 만드는 경우 ActiveX 컨트롤 마법사는 [COlePropertyPage 클래스](reference/colepropertypage-class.md)에서 파생 된 컨트롤에 대 한 기본 속성 페이지 클래스를 제공 합니다. 처음에는이 속성 페이지가 비어 있지만 대화 상자 컨트롤 또는 컨트롤 집합을 추가할 수 있습니다. ActiveX 컨트롤 마법사는 기본적으로 속성 페이지 클래스를 하나만 만들기 때문에 클래스 뷰를 사용 하 여 추가 속성 페이지 클래스 (에서 파생 `COlePropertyPage` 됨)를 만들어야 합니다. 이 절차에 대 한 자세한 내용은 [MFC ActiveX 컨트롤: 다른 사용자 지정 속성 페이지 추가](mfc-activex-controls-adding-another-custom-property-page.md)를 참조 하세요.
 
@@ -67,7 +68,7 @@ ActiveX 컨트롤 마법사를 사용 하 여 컨트롤 프로젝트를 만드�
 
 예를 들어 다음 절차에서는 간단한 컨트롤인 "Sample"을 사용 합니다. ActiveX 컨트롤 마법사를 사용 하 여 샘플을 만들었으며 스톡 Caption 속성만 포함 합니다.
 
-## <a name="adding-controls-to-a-property-page"></a><a name="_core_adding_controls_to_a_property_page"></a>속성 페이지에 컨트롤 추가
+## <a name="adding-controls-to-a-property-page"></a><a name="_core_adding_controls_to_a_property_page"></a> 속성 페이지에 컨트롤 추가
 
 #### <a name="to-add-controls-to-a-property-page"></a>속성 페이지에 컨트롤을 추가 하려면
 
@@ -87,7 +88,7 @@ ActiveX 컨트롤 마법사를 사용 하 여 컨트롤 프로젝트를 만드�
 
 이제 사용자 인터페이스가 수정 되었으므로 캡션 속성에 편집 상자를 연결 해야 합니다. 다음 섹션에서 함수를 편집 하 여이 작업을 수행 `CSamplePropPage::DoDataExchange` 합니다.
 
-## <a name="customizing-the-dodataexchange-function"></a><a name="_core_customizing_the_dodataexchange_function"></a>DoDataExchange 함수 사용자 지정
+## <a name="customizing-the-dodataexchange-function"></a><a name="_core_customizing_the_dodataexchange_function"></a> DoDataExchange 함수 사용자 지정
 
 속성 페이지 [CWnd::D odataexchange](reference/cwnd-class.md#dodataexchange) 함수를 사용 하면 속성 페이지 값을 컨트롤의 실제 속성 값과 연결할 수 있습니다. 링크를 설정 하려면 적절 한 속성 페이지 필드를 해당 컨트롤 속성에 매핑해야 합니다.
 

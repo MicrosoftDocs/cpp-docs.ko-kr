@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3697'
 title: 컴파일러 오류 C3697
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3697
 ms.assetid: 2d3f63c4-b7f8-421d-a7a5-2bf17fd054f9
-ms.openlocfilehash: e642c744bbce5db4bb341a32769b2d9f74654044
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 71b8a48cfe5be962c69dbc65730c1820d766f60d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74758062"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97228705"
 ---
 # <a name="compiler-error-c3697"></a>컴파일러 오류 C3697
 
