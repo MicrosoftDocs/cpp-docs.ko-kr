@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: strstreambuf 클래스'
 title: strstreambuf 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - std::strstreambuf [C++], str
 - std::strstreambuf [C++], underflow
 ms.assetid: b040b8ea-0669-4eba-8908-6a9cc159c54b
-ms.openlocfilehash: e6b4df60f4d28839419d02fd3ed6d7cbf73d327f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7eaed8a540fc4d9e53f7c6c5b8bbb69b3a7c4653
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87202196"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183505"
 ---
 # <a name="strstreambuf-class"></a>strstreambuf 클래스
 
@@ -60,7 +61,7 @@ class strstreambuf : public streambuf
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[strstreambuf](#strstreambuf)|`strstreambuf` 형식의 개체를 생성합니다.|
 
@@ -83,7 +84,7 @@ class strstreambuf : public streambuf
 
 **네임스페이스:** std
 
-## <a name="strstreambuffreeze"></a><a name="freeze"></a>strstreambuf:: freeze
+## <a name="strstreambuffreeze"></a><a name="freeze"></a> strstreambuf:: freeze
 
 스트림 버퍼 작업을 통해 스트림 버퍼를 사용할 수 없게 합니다.
 
@@ -171,7 +172,7 @@ after clearing stream: stream good
 test1test3
 ```
 
-## <a name="strstreambufoverflow"></a><a name="overflow"></a>strstreambuf:: 오버플로
+## <a name="strstreambufoverflow"></a><a name="overflow"></a> strstreambuf:: 오버플로
 
 가득 찬 버퍼에 새 문자를 삽입할 때 호출할 수 있는 보호된 가상 함수입니다.
 
@@ -184,19 +185,19 @@ virtual int overflow(int _Meta = EOF);
 *_Meta*\
 버퍼에 삽입할 문자 또는 `EOF`입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-함수는 정상적으로 실행되지 않으면 `EOF`를 반환합니다. 그렇지 않으면 * \_ Meta*인 경우  ==  `EOF` 이외의 값을 반환 `EOF` 합니다. 그렇지 않으면 * \_ Meta*을 반환 합니다.
+함수는 정상적으로 실행되지 않으면 `EOF`를 반환합니다. 그렇지 않으면 *\_ Meta* 인 경우  ==  `EOF` 이외의 값을 반환 `EOF` 합니다. 그렇지 않으면 *\_ Meta* 을 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-* \_ Meta* ! = 인 경우 `EOF` 보호 된 가상 멤버 함수는 요소를 `(char)_Meta` 출력 버퍼에 삽입 하려고 합니다. 수행할 수 있는 방법은 다양합니다.
+*\_ Meta* ! = 인 경우 `EOF` 보호 된 가상 멤버 함수는 요소를 `(char)_Meta` 출력 버퍼에 삽입 하려고 합니다. 수행할 수 있는 방법은 다양합니다.
 
 - 쓰기 위치를 사용할 수 있는 경우 요소를 쓰기 위칭에 저장하고 출력 버퍼에 대해 다음 포인터를 증분할 수 있습니다.
 
 - 저장된 strstreambuf 모드에서 제어되는 시퀀스가 수정/확장 가능하며 고정되어 있지 않음을 나타내면 함수는 출력 버퍼에 대해 쓰기 위치를 새로 할당하여 사용 가능하도록 설정할 수 있습니다. 이러한 방식으로 출력 버퍼를 확장하면 연결된 입력 버퍼도 확장됩니다.
 
-## <a name="strstreambufpbackfail"></a><a name="pbackfail"></a>strstreambuf::p backfail
+## <a name="strstreambufpbackfail"></a><a name="pbackfail"></a> strstreambuf::p backfail
 
 요소를 입력 스트림에 다시 넣은 후 다음 포인터에서 가리키는 현재 요소로 설정하려고 하는 보호된 가상 구성원 함수입니다.
 
@@ -209,21 +210,21 @@ virtual int pbackfail(int _Meta = EOF);
 *_Meta*\
 버퍼에 삽입할 문자 또는 `EOF`입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-함수는 정상적으로 실행되지 않으면 `EOF`를 반환합니다. 그렇지 않으면 * \_ Meta*인 경우  ==  `EOF` 이외의 값을 반환 `EOF` 합니다. 그렇지 않으면 * \_ Meta*을 반환 합니다.
+함수는 정상적으로 실행되지 않으면 `EOF`를 반환합니다. 그렇지 않으면 *\_ Meta* 인 경우  ==  `EOF` 이외의 값을 반환 `EOF` 합니다. 그렇지 않으면 *\_ Meta* 을 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
 보호된 가상 구성원 함수는 요소를 입력 버퍼에 다시 넣은 후 다음 포인터에서 가리키는 현재 요소로 설정하려고 합니다.
 
-* \_ Meta*인 경우  ==  `EOF` 다시 푸시할 요소는 실제로 현재 요소 이전 스트림에 이미 있는 요소입니다. 그렇지 않으면 해당 요소는로 바뀝니다 `ch = (char)_Meta` . 함수는 여러 가지 방법으로 요소를 다시 넣을 수 있습니다.
+*\_ Meta* 인 경우  ==  `EOF` 다시 푸시할 요소는 실제로 현재 요소 이전 스트림에 이미 있는 요소입니다. 그렇지 않으면 해당 요소는로 바뀝니다 `ch = (char)_Meta` . 함수는 여러 가지 방법으로 요소를 다시 넣을 수 있습니다.
 
 - Putback 위치를 사용할 수 있고에 저장 된 요소가와 비교 되는 경우 `ch` 입력 버퍼에 대 한 다음 포인터를 감소 시킬 수 있습니다.
 
 - Putback 위치를 사용할 수 있고 strstreambuf 모드에서 제어 되는 시퀀스를 수정할 수 있는 경우 함수는 `ch` putback 위치에 저장 하 고 입력 버퍼에 대 한 다음 포인터를 감소 시킬 수 있습니다.
 
-## <a name="strstreambufpcount"></a><a name="pcount"></a>strstreambuf::p 수
+## <a name="strstreambufpcount"></a><a name="pcount"></a> strstreambuf::p 수
 
 제어되는 시퀀스에 기록되는 요소 수의 개수를 반환합니다.
 
@@ -231,7 +232,7 @@ virtual int pbackfail(int _Meta = EOF);
 streamsize pcount() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 제어되는 시퀀스에 기록되는 요소 수의 개수입니다.
 
@@ -258,7 +259,7 @@ int main( )
 }
 ```
 
-## <a name="strstreambufseekoff"></a><a name="seekoff"></a>strstreambuf:: seekoff
+## <a name="strstreambufseekoff"></a><a name="seekoff"></a> strstreambuf:: seekoff
 
 제어되는 스트림의 현재 위치를 변경하려고 하는 보호된 가상 멤버 함수입니다.
 
@@ -271,7 +272,7 @@ virtual streampos seekoff(streamoff _Off,
 ### <a name="parameters"></a>매개 변수
 
 *_Off*\
-*_Way*를 기준으로 검색할 위치입니다.
+*_Way* 를 기준으로 검색할 위치입니다.
 
 *_Way*\
 오프셋 작업의 시작 지점입니다. 가능한 값은 [seekdir](../standard-library/ios-base-class.md#seekdir)을 참조하세요.
@@ -279,7 +280,7 @@ virtual streampos seekoff(streamoff _Off,
 *_Which*\
 포인터 위치에 대한 모드를 지정합니다. 기본적으로는 읽기 및 쓰기 위치를 수정할 수 있습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 함수는 스트림 위치 중 하나 또는 두 위치를 모두 정상적으로 변경하면 결과 스트림 위치를 반환합니다. 그렇지 않으면 함수는 실패하며 잘못된 스트림 위치가 반환됩니다.
 
@@ -289,17 +290,17 @@ virtual streampos seekoff(streamoff _Off,
 
 새 위치는 다음과 같이 결정됩니다.
 
-- 인 경우 `_Way == ios_base::beg` 새 위치는 스트림 시작 부분에 *_Off*을 더한 값입니다.
+- 인 경우 `_Way == ios_base::beg` 새 위치는 스트림 시작 부분에 *_Off* 을 더한 값입니다.
 
-- 인 경우 `_Way == ios_base::cur` 새 위치는 현재 스트림 위치에 *_Off*을 더한 값입니다.
+- 인 경우 `_Way == ios_base::cur` 새 위치는 현재 스트림 위치에 *_Off* 을 더한 값입니다.
 
-- 인 경우 `_Way == ios_base::end` 새 위치는 스트림의 끝에 *_Off*을 더한 값입니다.
+- 인 경우 `_Way == ios_base::end` 새 위치는 스트림의 끝에 *_Off* 을 더한 값입니다.
 
 `_Which & ios_base::in`가 0이 아니고 입력 버퍼가 있으면 함수는 입력 버퍼에서 읽을 다음 위치를 변경 합니다. `_Which & ios_base::out`도이 0이 아니고 `_Way != ios_base::cur` 출력 버퍼가 있는 경우이 함수는 읽을 다음 위치와 일치 하도록 쓸 다음 위치를 설정 합니다.
 
 그렇지 않고 `_Which & ios_base::out`이 0이 아니며 출력 버퍼가 있으면 함수는 출력 버퍼에서 쓸 다음 위치를 변경합니다. 그렇지 않은 경우 위치 지정 작업이 실패합니다. 위치 지정 작업을 정상적으로 수행하려면 결과 스트림 위치가 제어되는 시퀀스 내에 있어야 합니다.
 
-## <a name="strstreambufseekpos"></a><a name="seekpos"></a>strstreambuf:: seekpos
+## <a name="strstreambufseekpos"></a><a name="seekpos"></a> strstreambuf:: seekpos
 
 제어되는 스트림의 현재 위치를 변경하려고 하는 보호된 가상 멤버 함수입니다.
 
@@ -315,17 +316,17 @@ virtual streampos seekpos(streampos _Sp, ios_base::openmode _Which = ios_base::i
 *_Which*\
 포인터 위치에 대한 모드를 지정합니다. 기본적으로는 읽기 및 쓰기 위치를 수정할 수 있습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 함수는 스트림 위치 중 하나 또는 두 위치를 모두 정상적으로 변경하면 결과 스트림 위치를 반환합니다. 그렇지 않으면 함수는 실패하며 잘못된 스트림 위치가 반환됩니다. 스트림 위치가 잘못되었는지를 확인하려면 반환 값을 `pos_type(off_type(-1))`과 비교합니다.
 
 ### <a name="remarks"></a>설명
 
-보호된 가상 멤버 함수는 제어된 스트림의 현재 위치를 변경하려고 합니다. strstreambuf 클래스 개체의 경우 스트림 위치는 스트림 오프셋으로만 구성됩니다. 오프셋 0은 제어되는 시퀀스의 첫 번째 요소를 지정합니다. 새 위치는 *_Sp*에 의해 결정 됩니다.
+보호된 가상 멤버 함수는 제어된 스트림의 현재 위치를 변경하려고 합니다. strstreambuf 클래스 개체의 경우 스트림 위치는 스트림 오프셋으로만 구성됩니다. 오프셋 0은 제어되는 시퀀스의 첫 번째 요소를 지정합니다. 새 위치는 *_Sp* 에 의해 결정 됩니다.
 
-`_Which` & **ios_base::in**이 0이 아니고 입력 버퍼가 있으면 함수는 입력 버퍼에서 읽을 다음 위치를 변경합니다. `_Which` & `ios_base::out`이 0이 아니고 출력 버퍼가 있는 경우 함수는 읽을 다음 위치와 일치하도록 쓸 다음 위치도 설정합니다. 그렇지 않고 `_Which` & `ios_base::out`이 0이 아니며 출력 버퍼가 있으면 함수는 출력 버퍼에서 쓸 다음 위치를 변경합니다. 그렇지 않은 경우 위치 지정 작업이 실패합니다. 위치 지정 작업을 정상적으로 수행하려면 결과 스트림 위치가 제어되는 시퀀스 내에 있어야 합니다.
+`_Which` & **ios_base::in** 이 0이 아니고 입력 버퍼가 있으면 함수는 입력 버퍼에서 읽을 다음 위치를 변경합니다. `_Which` & `ios_base::out`이 0이 아니고 출력 버퍼가 있는 경우 함수는 읽을 다음 위치와 일치하도록 쓸 다음 위치도 설정합니다. 그렇지 않고 `_Which` & `ios_base::out`이 0이 아니며 출력 버퍼가 있으면 함수는 출력 버퍼에서 쓸 다음 위치를 변경합니다. 그렇지 않은 경우 위치 지정 작업이 실패합니다. 위치 지정 작업을 정상적으로 수행하려면 결과 스트림 위치가 제어되는 시퀀스 내에 있어야 합니다.
 
-## <a name="strstreambufstr"></a><a name="str"></a>strstreambuf:: str
+## <a name="strstreambufstr"></a><a name="str"></a> strstreambuf:: str
 
 [freeze](#freeze)를 호출한 다음 제어되는 시퀀스의 시작 부분에 대한 포인터를 반환합니다.
 
@@ -333,7 +334,7 @@ virtual streampos seekpos(streampos _Sp, ios_base::openmode _Which = ios_base::i
 char *str();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 제어되는 시퀀스의 시작 부분에 대한 포인터입니다.
 
@@ -343,9 +344,9 @@ char *str();
 
 ### <a name="example"></a>예제
 
-**str**을 사용하는 샘플은 [strstreambuf::freeze](#freeze)를 참조하세요.
+**str** 을 사용하는 샘플은 [strstreambuf::freeze](#freeze)를 참조하세요.
 
-## <a name="strstreambufstrstreambuf"></a><a name="strstreambuf"></a>strstreambuf:: strstreambuf
+## <a name="strstreambufstrstreambuf"></a><a name="strstreambuf"></a> strstreambuf:: strstreambuf
 
 `strstreambuf` 형식의 개체를 생성합니다.
 
@@ -383,7 +384,7 @@ strstreambuf(const unsigned char* getptr,
 버퍼 메모리를 할당하는 데 사용되는 함수입니다.
 
 *수*\
-*Getptr*에서 가리키는 버퍼의 길이를 결정 합니다. *Getptr* 이 인수 (첫 번째 생성자 형식)가 아닌 경우에는 버퍼에 대해 제안 된 할당 크기입니다.
+*Getptr* 에서 가리키는 버퍼의 길이를 결정 합니다. *Getptr* 이 인수 (첫 번째 생성자 형식)가 아닌 경우에는 버퍼에 대해 제안 된 할당 크기입니다.
 
 *_Freefunc*\
 버퍼 메모리를 확보하는 데 사용되는 함수입니다.
@@ -418,11 +419,11 @@ strstreambuf(unsigned char *getptr,
 
 는 *getptr* 에서 제어 되는 시퀀스를 보유 하는 데 사용 되는 배열 개체를 지정 한다는 점을 제외 하 고 첫 번째 처럼 동작 합니다. 따라서 null 포인터가 아니어야 합니다. 배열의 *N* 요소 수는 다음과 같이 결정 됩니다.
 
-- (*Count* > 0) 이면 *N* 은 *count*입니다.
+- (*Count* > 0) 이면 *N* 은 *count* 입니다.
 
 - (*Count* = = 0) 인 경우 *N* 은 `strlen((const char *) getptr )` 입니다.
 
-- (*Count* < 0) 이면 *N* 이 **INT_MAX**됩니다.
+- (*Count* < 0) 이면 *N* 이 **INT_MAX** 됩니다.
 
 *Putptr* 이 null 포인터인 경우 함수는 다음을 실행 하 여 입력 버퍼만 설정 합니다.
 
@@ -466,7 +467,7 @@ streambuf((char *)getptr, count);
 
 단, 저장된 모드로 인해 제어되는 시퀀스를 수정하거나 확장할 수는 없습니다.
 
-## <a name="strstreambufunderflow"></a><a name="underflow"></a>strstreambuf:: 언더플로
+## <a name="strstreambufunderflow"></a><a name="underflow"></a> strstreambuf:: 언더플로
 
 입력 스트림에서 현재 요소를 추출하는 보호된 가상 함수입니다.
 
@@ -474,7 +475,7 @@ streambuf((char *)getptr, count);
 virtual int underflow();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 함수는 정상적으로 실행되지 않으면 `EOF`를 반환합니다. 그렇지 않으면 위에서 설명한 대로 변환된 입력 스트림의 현재 요소를 반환합니다.
 

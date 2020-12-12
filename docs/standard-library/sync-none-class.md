@@ -1,4 +1,5 @@
 ---
+description: Sync_none 클래스에 대해 자세히 알아보세요.
 title: sync_none 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - stdext::sync_none [C++], deallocate
 - stdext::sync_none [C++], equals
 ms.assetid: f7473cee-14f3-4fe1-88bc-68cd085e59e1
-ms.openlocfilehash: dac4dc1182de32af485d37a00ff96370ea8d8943
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 34c4f42962b1dc8b8dc58f07cd54384e049789a6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562118"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183349"
 ---
 # <a name="sync_none-class"></a>sync_none 클래스
 
@@ -102,7 +103,7 @@ bool equals(const sync<Cache>& Other) const;
 *다른*\
 같은지 비교할 캐시 개체입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 멤버 함수는 항상 **`true`** 를 반환 합니다.
 

@@ -1,4 +1,5 @@
 ---
+description: Subtract_with_carry_engine 클래스에 대해 자세히 알아보세요.
 title: subtract_with_carry_engine 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - std::subtract_with_carry_engine [C++], max
 - std::subtract_with_carry_engine [C++], seed
 ms.assetid: 94a055f2-a620-4a22-ac34-c156924bab31
-ms.openlocfilehash: cf82c4ca3ce995fa9a53dbea21293dc8515ff491
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9d2c082f2c7b8405cf8cd25bce6a77d263fd8f64
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840910"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183388"
 ---
 # <a name="subtract_with_carry_engine-class"></a>subtract_with_carry_engine 클래스
 
@@ -65,7 +66,7 @@ class subtract_with_carry_engine;
 
 `substract_with_carry_engine`클래스 템플릿은 [linear_congruential_engine](../standard-library/linear-congruential-engine-class.md)에 비해 향상 된 기능입니다. 이러한 엔진 둘 다 [mersenne_twister_engine](../standard-library/mersenne-twister-engine-class.md)만큼 빠르거나 품질 결과가 뛰어나지 않습니다.
 
-이 엔진은 되풀이 관계 ( *period*)를 사용 하 여 사용자가 지정 하는 부호 없는 정수 형식의 값을 생성 합니다. 여기서에는 값이이 고, `x(i) = (x(i - R) - x(i - S) - cy(i - 1)) mod M` 그렇지 않으면 `cy(i)` `1` `x(i - S) - x(i - R) - cy(i - 1) < 0` `0` 이며 값은 `M` `2` <sup>W</sup>입니다. 엔진의 상태는 운반 표시기에 *R* 값을 더한 값입니다. 이러한 값은가 최소 r 회 호출 된 경우 반환 되는 마지막 *R* 값으로 구성 됩니다 `operator()` . 그렇지 않으면 반환 된 *R* `N` 값과 초기값의 마지막 값으로 구성 `R - N` 됩니다.
+이 엔진은 되풀이 관계 ( *period*)를 사용 하 여 사용자가 지정 하는 부호 없는 정수 형식의 값을 생성 합니다. 여기서에는 값이이 고, `x(i) = (x(i - R) - x(i - S) - cy(i - 1)) mod M` 그렇지 않으면 `cy(i)` `1` `x(i - S) - x(i - R) - cy(i - 1) < 0` `0` 이며 값은 `M` `2` <sup>W</sup>입니다. 엔진의 상태는 운반 표시기에 *R* 값을 더한 값입니다. 이러한 값은가 최소 r 회 호출 된 경우 반환 되는 마지막 *R* 값으로 구성 됩니다 `operator()` . 그렇지 않으면 반환 된  `N` 값과 초기값의 마지막 값으로 구성 `R - N` 됩니다.
 
 템플릿 인수 `UIntType`은 최대 `M - 1`까지 값을 보유할 수 있도록 충분히 커야 합니다.
 

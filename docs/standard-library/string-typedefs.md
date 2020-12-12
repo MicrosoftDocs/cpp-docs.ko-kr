@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: &lt; 문자열 &gt; 형식 정의'
 title: '&lt;string&gt; 형식 정의'
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 - string/std::u32string
 - string/std::wstring
 ms.assetid: fdca01e9-f2f1-4b59-abda-0093d760b3cc
-ms.openlocfilehash: 083209f0121ac38d8adf81975577257e4e23a393
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 129d1105defaf06031333b7b06265f8d1bad4a98
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845434"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183700"
 ---
 # <a name="ltstringgt-typedefs"></a>&lt;string&gt; 형식 정의
 

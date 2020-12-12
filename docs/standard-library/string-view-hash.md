@@ -1,18 +1,19 @@
 ---
-title: '&gt; 특수화 string_view 해시&lt;'
+description: '자세히 알아보기: hash &lt; string_view &gt; 특수화'
+title: hash &lt; string_view &gt; 특수화
 ms.date: 04/19/2019
 f1_keywords:
 - xstring/basic_string_view::hash
 helpviewer_keywords:
 - std::basic_string_view::hash
-ms.openlocfilehash: c7bddd5fcf9008b958854fd4d7b72ea2e94cba47
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: cf4012752bbd8b3531920e78d612e78479de4b3d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214957"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183687"
 ---
-# <a name="hashltstring_viewgt-specialization"></a>&gt; 특수화 string_view 해시&lt;
+# <a name="hashltstring_viewgt-specialization"></a>hash &lt; string_view &gt; 특수화
 
 String_view 지정 된 해시 값을 생성 하는 템플릿 특수화입니다.
 
@@ -28,7 +29,7 @@ struct hash<basic_string_view<CharType, Traits>>
 };
 ```
 
-### <a name="remarks"></a>주의
+### <a name="remarks"></a>설명
 
 String_view 해시는 기본 문자열 개체의 해시와 같습니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CFileException 클래스'
 title: CFileException 클래스
 ms.date: 06/09/2020
 f1_keywords:
@@ -24,12 +25,12 @@ helpviewer_keywords:
 - CFileException [MFC], m_lOsError
 - CFileException [MFC], m_strFileName
 ms.assetid: f6491bb9-bfbc-42fd-a952-b33f9b62323f
-ms.openlocfilehash: 6d3102cfd41d68458332025cbf3410e3f169523b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a7540ffb22005ef0fe93954396f6fca1a5ae93af
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212451"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184519"
 ---
 # <a name="cfileexception-class"></a>CFileException 클래스
 
@@ -45,7 +46,7 @@ class CFileException : public CException
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[CFileException:: CFileException](#cfileexception)|`CFileException` 개체를 생성합니다.|
 
@@ -71,7 +72,7 @@ class CFileException : public CException
 
 클래스에는 `CFileException` 이식 가능한 원인 코드 및 운영 체제별 오류 번호를 포함 하는 공용 데이터 멤버가 포함 되어 있습니다. 또한 클래스는 파일 예외를 throw 하 고 운영 체제 오류 및 C 런타임 오류에 대 한 원인 코드를 반환 하는 정적 멤버 함수를 제공 합니다.
 
-`CFileException`개체는 `CFile` 멤버 함수 및 파생 클래스의 멤버 함수에서 생성 및 throw 됩니다. 이러한 개체는 **CATCH** 식의 범위 내에서 액세스할 수 있습니다. 이식성을 위해 원인 코드만 사용 하 여 예외에 대 한 이유를 가져옵니다. 예외에 대 한 자세한 내용은 [예외 처리 (MFC)](../../mfc/exception-handling-in-mfc.md)문서를 참조 하세요.
+`CFileException` 개체는 `CFile` 멤버 함수 및 파생 클래스의 멤버 함수에서 생성 및 throw 됩니다. 이러한 개체는 **CATCH** 식의 범위 내에서 액세스할 수 있습니다. 이식성을 위해 원인 코드만 사용 하 여 예외에 대 한 이유를 가져옵니다. 예외에 대 한 자세한 내용은 [예외 처리 (MFC)](../../mfc/exception-handling-in-mfc.md)문서를 참조 하세요.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -85,7 +86,7 @@ class CFileException : public CException
 
 **헤더:** afx
 
-## <a name="cfileexceptioncfileexception"></a><a name="cfileexception"></a>CFileException:: CFileException
+## <a name="cfileexceptioncfileexception"></a><a name="cfileexception"></a> CFileException:: CFileException
 
 `CFileException`개체의 원인 코드와 운영 체제 코드를 저장 하는 개체를 생성 합니다.
 
@@ -98,7 +99,7 @@ CFileException(
 
 ### <a name="parameters"></a>매개 변수
 
-*일으키지*<br/>
+*cause*<br/>
 예외에 대 한 이유를 나타내는 열거형 형식 변수입니다. 가능한 값 목록은 [Cfileexception:: m_cause](#m_cause) 를 참조 하세요.
 
 *lOsError*<br/>
@@ -114,7 +115,7 @@ CFileException(
 > [!NOTE]
 > *LOsError* 변수는 및 개체에만 적용 됩니다 `CFile` `CStdioFile` . `CMemFile`클래스는이 오류 코드를 처리 하지 않습니다.
 
-## <a name="cfileexceptionerrnotoexception"></a><a name="errnotoexception"></a>CFileException:: ErrnoToException
+## <a name="cfileexceptionerrnotoexception"></a><a name="errnotoexception"></a> CFileException:: ErrnoToException
 
 지정 된 런타임 라이브러리 오류 값을 `CFileException` 열거 된 오류 값으로 변환 합니다.
 
@@ -125,9 +126,9 @@ static int PASCAL ErrnoToException(int nErrno);
 ### <a name="parameters"></a>매개 변수
 
 *nErrno*<br/>
-런타임 include 파일 ERRNO에 정의 된 정수 오류 코드입니다. 넣기.
+런타임 include 파일 ERRNO에 정의 된 정수 오류 코드입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 지정 된 런타임 라이브러리 오류 값에 해당 하는 열거형 값입니다.
 
@@ -139,7 +140,7 @@ static int PASCAL ErrnoToException(int nErrno);
 
 [!code-cpp[NVC_MFCFiles#26](../../atl-mfc-shared/reference/codesnippet/cpp/cfileexception-class_1.cpp)]
 
-## <a name="cfileexceptiongeterrormessage"></a><a name="geterrormessage"></a>CFileException:: GetErrorMessage
+## <a name="cfileexceptiongeterrormessage"></a><a name="geterrormessage"></a> CFileException:: GetErrorMessage
 
 예외를 설명 하는 텍스트를 검색 합니다.
 
@@ -161,7 +162,7 @@ virtual BOOL GetErrorMessage(
 *pnHelpContext*<br/>
 [in, out] 도움말 컨텍스트 ID를 받는 부호 없는 정수에 대 한 포인터입니다. 인 경우 `NULL` ID가 반환 되지 않습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -175,7 +176,7 @@ virtual BOOL GetErrorMessage(
 
 [!code-cpp[NVC_MFCExceptions#22](../../mfc/codesnippet/cpp/cfileexception-class_2.cpp)]
 
-## <a name="cfileexceptionm_cause"></a><a name="m_cause"></a>CFileException:: m_cause
+## <a name="cfileexceptionm_cause"></a><a name="m_cause"></a> CFileException:: m_cause
 
 `CFileException` 열거형 형식으로 정의되는 값을 포함합니다.
 
@@ -187,7 +188,7 @@ int m_cause;
 
 이 데이터 멤버는 형식의 공용 변수입니다 **`int`** . 아래에 열거자와 해당 의미가 나와 있습니다.
 
-| Error | 값 및 의미 |
+| 오류 | 값 및 의미 |
 |--|--|
 | `CFileException::none` |    0: 오류가 발생하지 않았습니다. |
 | `CFileException::genericException` |    1: 지정되지 않은 오류가 발생했습니다. |
@@ -215,7 +216,7 @@ int m_cause;
 
 [!code-cpp[NVC_MFCFiles#30](../../atl-mfc-shared/reference/codesnippet/cpp/cfileexception-class_3.cpp)]
 
-## <a name="cfileexceptionm_loserror"></a><a name="m_loserror"></a>CFileException:: m_lOsError
+## <a name="cfileexceptionm_loserror"></a><a name="m_loserror"></a> CFileException:: m_lOsError
 
 이 예외에 대 한 운영 체제 오류 코드를 포함 합니다.
 
@@ -227,7 +228,7 @@ LONG m_lOsError;
 
 오류 코드 목록은 운영 체제 기술 설명서를 참조 하세요. 이 데이터 멤버는 LONG 형식의 공용 변수입니다.
 
-## <a name="cfileexceptionm_strfilename"></a><a name="m_strfilename"></a>CFileException:: m_strFileName
+## <a name="cfileexceptionm_strfilename"></a><a name="m_strfilename"></a> CFileException:: m_strFileName
 
 이 예외 조건에 대 한 파일 이름을 포함 합니다.
 
@@ -235,7 +236,7 @@ LONG m_lOsError;
 CString m_strFileName;
 ```
 
-## <a name="cfileexceptionoserrortoexception"></a><a name="oserrortoexception"></a>CFileException:: OsErrorToException
+## <a name="cfileexceptionoserrortoexception"></a><a name="oserrortoexception"></a> CFileException:: OsErrorToException
 
 지정 된 *lOsError* 값에 해당 하는 열거자를 반환 합니다. 오류 코드를 알 수 없는 경우 함수는를 반환 `CFileException::generic` 합니다.
 
@@ -248,7 +249,7 @@ static int PASCAL OsErrorToException(LONG lOsError);
 *lOsError*<br/>
 운영 체제 관련 오류 코드입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 지정 된 운영 체제 오류 값에 해당 하는 열거 값입니다.
 
@@ -256,7 +257,7 @@ static int PASCAL OsErrorToException(LONG lOsError);
 
 [!code-cpp[NVC_MFCFiles#27](../../atl-mfc-shared/reference/codesnippet/cpp/cfileexception-class_4.cpp)]
 
-## <a name="cfileexceptionthrowerrno"></a><a name="throwerrno"></a>CFileException:: ThrowErrno
+## <a name="cfileexceptionthrowerrno"></a><a name="throwerrno"></a> CFileException:: ThrowErrno
 
 지정 된 `CFileException` *nErrno* 값에 해당 하는 개체를 생성 한 다음 예외를 throw 합니다.
 
@@ -267,7 +268,7 @@ static void PASCAL ThrowErrno(int nErrno, LPCTSTR lpszFileName = NULL);
 ### <a name="parameters"></a>매개 변수
 
 *nErrno*<br/>
-런타임 include 파일 ERRNO에 정의 된 정수 오류 코드입니다. 넣기.
+런타임 include 파일 ERRNO에 정의 된 정수 오류 코드입니다.
 
 *lpszFileName*<br/>
 예외를 발생 시킨 파일의 이름을 포함 하는 문자열에 대 한 포인터입니다 (사용 가능한 경우).
@@ -276,7 +277,7 @@ static void PASCAL ThrowErrno(int nErrno, LPCTSTR lpszFileName = NULL);
 
 [!code-cpp[NVC_MFCFiles#28](../../atl-mfc-shared/reference/codesnippet/cpp/cfileexception-class_5.cpp)]
 
-## <a name="cfileexceptionthrowoserror"></a><a name="throwoserror"></a>CFileException:: ThrowOsError
+## <a name="cfileexceptionthrowoserror"></a><a name="throwoserror"></a> CFileException:: ThrowOsError
 
 지정 된 `CFileException` *lOsError* 값에 해당 하는을 throw 합니다. 오류 코드를 알 수 없는 경우 함수는로 코딩 된 예외를 throw `CFileException::generic` 합니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CFrameWndEx 클래스'
 title: CFrameWndEx 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -178,12 +179,12 @@ helpviewer_keywords:
 - CFrameWndEx [MFC], UpdateCaption
 - CFrameWndEx [MFC], WinHelp
 ms.assetid: 5830aca8-4a21-4f31-91f1-dd5477ffcc8d
-ms.openlocfilehash: 5aeffddcaa62732d2cba731f897f543e660cbab2
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 81774a3f2c11504f3e3022faf4a109cb1bafdc29
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832768"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184272"
 ---
 # <a name="cframewndex-class"></a>CFrameWndEx 클래스
 
@@ -426,7 +427,7 @@ BOOL DockPaneLeftOf(
 진행 도킹할 창 개체에 대 한 포인터입니다.
 
 *pLeftOf*<br/>
-진행 *Pbar*로 지정 된 창을 도킹할 왼쪽 창에 대 한 포인터입니다.
+진행 *Pbar* 로 지정 된 창을 도킹할 왼쪽 창에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -451,7 +452,7 @@ BOOL EnableAutoHidePanes(DWORD dwDockStyle);
 
 ### <a name="return-value"></a>반환 값
 
-*DwDockStyle*에 지정 된 프레임 창 쪽에 가로 막대 창이 도킹 된 경우 TRUE이 고, 그렇지 않으면 FALSE입니다.
+*DwDockStyle* 에 지정 된 프레임 창 쪽에 가로 막대 창이 도킹 된 경우 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -716,7 +717,7 @@ BOOL InsertPane(
 앞이나 뒤에 창을 삽입할 컨트롤 막대에 대한 포인터입니다.
 
 *bAfter*<br/>
-*Ptarget*뒤에 *pcontrolbar* 를 삽입 하려면 TRUE이 고, 그렇지 않으면 FALSE입니다.
+*Ptarget* 뒤에 *pcontrolbar* 를 삽입 하려면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1915,11 +1916,11 @@ CBasePane* PaneFromPoint(
 
 ### <a name="return-value"></a>반환 값
 
-*점을*포함 하는 컨트롤 막대에 대 한 포인터입니다. 컨트롤을 찾을 수 없는 경우 NULL입니다.
+*점을* 포함 하는 컨트롤 막대에 대 한 포인터입니다. 컨트롤을 찾을 수 없는 경우 NULL입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 응용 프로그램에서 특정 *지점*에 대 한 모든 컨트롤 막대를 검색 합니다.
+이 메서드는 응용 프로그램에서 특정 *지점* 에 대 한 모든 컨트롤 막대를 검색 합니다.
 
 검색 영역의 크기를 늘리려면 *Nsensitivity* 를 사용 합니다. *Prtcbartype* 을 사용 하 여 메서드가 검색 하는 컨트롤 막대의 형식을 제한 합니다.
 
@@ -2005,7 +2006,7 @@ void SetDockState(const CDockState& state);
 
 ### <a name="parameters"></a>매개 변수
 
-*상태*<br/>
+*state*<br/>
 도킹 상태입니다. 이 매개 변수는 무시됩니다.
 
 ## <a name="cframewndexsetprintpreviewframe"></a><a name="setprintpreviewframe"></a> CFrameWndEx:: SetPrintPreviewFrame

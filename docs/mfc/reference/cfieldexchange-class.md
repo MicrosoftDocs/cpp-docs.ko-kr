@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CFieldExchange 클래스'
 title: CFieldExchange 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - CFieldExchange [MFC], IsFieldType
 - CFieldExchange [MFC], SetFieldType
 ms.assetid: 24c5c0b3-06a6-430e-9b6f-005a2c65e29f
-ms.openlocfilehash: d10bfc436297a5f861f17843007347dcef9e58ca
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 128b2a7baf6fff923393f3105e27f1e85657bdde
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212477"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184558"
 ---
 # <a name="cfieldexchange-class"></a>CFieldExchange 클래스
 
@@ -38,22 +39,22 @@ class CFieldExchange
 
 ## <a name="remarks"></a>설명
 
-`CFieldExchange`에 기본 클래스가 없습니다.
+`CFieldExchange` 에 기본 클래스가 없습니다.
 
 사용자 지정 데이터 형식에 대 한 데이터 교환 루틴을 작성 하거나 대량 행 페치를 구현 하는 경우이 클래스를 사용 합니다. 그렇지 않으면이 클래스를 직접 사용 하지 않습니다. RFX 및 Bulk RFX는 레코드 집합 개체의 필드 데이터 멤버와 데이터 소스에 있는 현재 레코드의 해당 필드 간에 데이터를 교환 합니다.
 
 > [!NOTE]
 > ODBC (Open Database Connectivity) 클래스 대신 DAO (Data Access Objects) 클래스를 사용 하 여 작업 하는 경우 [CDaoFieldExchange](../../mfc/reference/cdaofieldexchange-class.md) 클래스를 대신 사용 합니다. 자세한 내용은 [개요: 데이터베이스 프로그래밍](../../data/data-access-programming-mfc-atl.md)문서를 참조 하세요.
 
-`CFieldExchange`개체는 레코드 필드 교환 또는 대량 레코드 필드 교환을 수행 하는 데 필요한 컨텍스트 정보를 제공 합니다. `CFieldExchange`개체는 바인딩 매개 변수 및 필드 데이터 멤버를 비롯 한 다양 한 작업을 지원 하 고 현재 레코드의 필드에 다양 한 플래그를 설정 합니다. RFX 및 대량 RFX 작업은 FieldType에서 정의 된 형식의 레코드 집합 클래스 데이터 멤버에 대해 수행 됩니다 **`enum`** **FieldType** `CFieldExchange` . 가능한 **FieldType** 값은 다음과 같습니다.
+`CFieldExchange`개체는 레코드 필드 교환 또는 대량 레코드 필드 교환을 수행 하는 데 필요한 컨텍스트 정보를 제공 합니다. `CFieldExchange` 개체는 바인딩 매개 변수 및 필드 데이터 멤버를 비롯 한 다양 한 작업을 지원 하 고 현재 레코드의 필드에 다양 한 플래그를 설정 합니다. RFX 및 대량 RFX 작업은 FieldType에서 정의 된 형식의 레코드 집합 클래스 데이터 멤버에 대해 수행 됩니다 **`enum`**  `CFieldExchange` . 가능한 **FieldType** 값은 다음과 같습니다.
 
-- `CFieldExchange::outputColumn`필드 데이터 멤버의 경우
+- `CFieldExchange::outputColumn` 필드 데이터 멤버의 경우
 
 - `CFieldExchange::inputParam``CFieldExchange::param`입력 매개 변수 데이터 멤버의 경우 또는입니다.
 
-- `CFieldExchange::outputParam`출력 매개 변수 데이터 멤버의 경우입니다.
+- `CFieldExchange::outputParam` 출력 매개 변수 데이터 멤버의 경우입니다.
 
-- `CFieldExchange::inoutParam`입력/출력 매개 변수 데이터 멤버의 경우입니다.
+- `CFieldExchange::inoutParam` 입력/출력 매개 변수 데이터 멤버의 경우입니다.
 
 클래스의 멤버 함수 및 데이터 멤버는 대부분 사용자 지정 RFX 루틴을 작성 하는 데 제공 됩니다. 자주를 사용 `SetFieldType` 합니다. 자세한 내용은 [RFX (레코드 필드 교환)](../../data/odbc/record-field-exchange-rfx.md) 및 [레코드 집합 (ODBC)](../../data/odbc/recordset-odbc.md)문서를 참조 하세요. 대량 행 페치에 대 한 자세한 내용은 [레코드 집합: 대량 레코드 페치 (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)문서를 참조 하세요. RFX 및 Bulk RFX 전역 함수에 대 한 자세한 내용은이 참조의 MFC 매크로 및 전역 섹션에서 [레코드 필드 교환 함수](../../mfc/reference/record-field-exchange-functions.md) 를 참조 하세요.
 
@@ -65,7 +66,7 @@ class CFieldExchange
 
 **헤더:** afxdb
 
-## <a name="cfieldexchangeisfieldtype"></a><a name="isfieldtype"></a>CFieldExchange::IsFieldType
+## <a name="cfieldexchangeisfieldtype"></a><a name="isfieldtype"></a> CFieldExchange::IsFieldType
 
 고유한 RFX 함수를 작성 하 `IsFieldType` 는 경우 함수 시작 부분에서를 호출 하 여 현재 작업을 특정 필드 또는 매개 변수 데이터 멤버 형식 ( `CFieldExchange::outputColumn` ,, `CFieldExchange::inputParam` `CFieldExchange::param` , 또는)에 대해 수행할 수 있는지 여부를 확인 `CFieldExchange::outputParam` `CFieldExchange::inoutParam` 합니다.
 
@@ -78,7 +79,7 @@ BOOL IsFieldType(UINT* pnField);
 *pnField*<br/>
 이 매개 변수에는 필드 또는 매개 변수 데이터 멤버의 순차 숫자가 반환 됩니다. 이 숫자는 [crecordset::D ofieldexchange](../../mfc/reference/crecordset-class.md#dofieldexchange) 또는 [Crecordset::D obulkfieldexchange](../../mfc/reference/crecordset-class.md#dobulkfieldexchange) 함수에서 데이터 멤버의 순서에 해당 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 필드 또는 매개 변수 형식에 대해 현재 작업을 수행할 수 있는 경우 0이 아닙니다.
 
@@ -86,7 +87,7 @@ BOOL IsFieldType(UINT* pnField);
 
 기존 RFX 함수의 모델을 따릅니다.
 
-## <a name="cfieldexchangesetfieldtype"></a><a name="setfieldtype"></a>CFieldExchange::SetFieldType
+## <a name="cfieldexchangesetfieldtype"></a><a name="setfieldtype"></a> CFieldExchange::SetFieldType
 
 `SetFieldType`레코드 집합 클래스의 [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) 또는 [DoBulkFieldExchange](../../mfc/reference/crecordset-class.md#dobulkfieldexchange) override에서를 호출 해야 합니다.
 

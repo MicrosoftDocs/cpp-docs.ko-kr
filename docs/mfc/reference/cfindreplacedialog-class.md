@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CFindReplaceDialog 클래스'
 title: CFindReplaceDialog 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -32,12 +33,12 @@ helpviewer_keywords:
 - CFindReplaceDialog [MFC], SearchDown
 - CFindReplaceDialog [MFC], m_fr
 ms.assetid: 610f0b5d-b398-4ef6-8c05-e9d6641e50a8
-ms.openlocfilehash: 92429bc17301d6615c87de958f38a717528e9544
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3deeb485a9048ba986f548ed66329b66bd039c08
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212438"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184480"
 ---
 # <a name="cfindreplacedialog-class"></a>CFindReplaceDialog 클래스
 
@@ -53,7 +54,7 @@ class CFindReplaceDialog : public CCommonDialog
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[CFindReplaceDialog::CFindReplaceDialog](#cfindreplacedialog)|개체를 생성 하려면이 함수를 호출 `CFindReplaceDialog` 합니다.|
 
@@ -93,7 +94,7 @@ class CFindReplaceDialog : public CCommonDialog
 
 사용자가 멤버 함수를 사용 하 여 대화 상자를 종료 하도록 결정 했는지 여부를 확인할 수 있습니다 `IsTerminating` .
 
-`CFindReplaceDialog`는 Windows 버전 3.1 이상과 함께 제공 되는 COMMDLG.DLL 파일을 기반으로 합니다.
+`CFindReplaceDialog` 는 Windows 버전 3.1 이상과 함께 제공 되는 COMMDLG.DLL 파일을 기반으로 합니다.
 
 대화 상자를 사용자 지정 하려면에서 클래스를 파생 시키고 `CFindReplaceDialog` , 사용자 지정 대화 상자 템플릿을 제공 하 고, 확장 된 컨트롤에서 알림 메시지를 처리 하는 메시지 맵을 추가 합니다. 처리 되지 않은 모든 메시지는 기본 클래스에 전달 되어야 합니다.
 
@@ -119,7 +120,7 @@ class CFindReplaceDialog : public CCommonDialog
 
 **헤더:** afxdlgs
 
-## <a name="cfindreplacedialogcfindreplacedialog"></a><a name="cfindreplacedialog"></a>CFindReplaceDialog:: CFindReplaceDialog
+## <a name="cfindreplacedialogcfindreplacedialog"></a><a name="cfindreplacedialog"></a> CFindReplaceDialog:: CFindReplaceDialog
 
 `CFindReplaceDialog` 개체를 생성합니다.
 
@@ -139,7 +140,7 @@ CFindReplaceDialog();
 
 [!code-cpp[NVC_MFCDocView#170](../../mfc/codesnippet/cpp/cfindreplacedialog-class_1.cpp)]
 
-## <a name="cfindreplacedialogcreate"></a><a name="create"></a>CFindReplaceDialog:: Create
+## <a name="cfindreplacedialogcreate"></a><a name="create"></a> CFindReplaceDialog:: Create
 
 의 값에 따라 찾기 또는 찾기/바꾸기 대화 상자 개체를 만들고 표시 합니다 `bFindDialogOnly` .
 
@@ -169,7 +170,7 @@ virtual BOOL Create(
 *pParentWnd*<br/>
 대화 상자의 부모 또는 소유자 창에 대 한 포인터입니다. 이 창에는 찾기/바꾸기 작업이 요청 되었음을 나타내는 특수 메시지가 표시 됩니다. NULL 인 경우 응용 프로그램의 주 창이 사용 됩니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 대화 상자 개체가 성공적으로 만들어진 경우에는 0이 아닙니다. 그렇지 않으면 0입니다.
 
@@ -189,7 +190,7 @@ virtual BOOL Create(
 
   [CFindReplaceDialog:: CFindReplaceDialog](#cfindreplacedialog)의 예제를 참조 하세요.
 
-## <a name="cfindreplacedialogfindnext"></a><a name="findnext"></a>CFindReplaceDialog:: FindNext
+## <a name="cfindreplacedialogfindnext"></a><a name="findnext"></a> CFindReplaceDialog:: FindNext
 
 콜백 함수에서이 함수를 호출 하 여 사용자가 다음 번에 검색 문자열을 찾으려고 하는지 여부를 확인 합니다.
 
@@ -197,11 +198,11 @@ virtual BOOL Create(
 BOOL FindNext() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 사용자가 다음 번에 검색 문자열을 찾으려고 하는 경우 0이 아닙니다. 그렇지 않으면 0입니다.
 
-## <a name="cfindreplacedialoggetfindstring"></a><a name="getfindstring"></a>CFindReplaceDialog:: GetFindString
+## <a name="cfindreplacedialoggetfindstring"></a><a name="getfindstring"></a> CFindReplaceDialog:: GetFindString
 
 찾을 기본 문자열을 검색 하려면 콜백 함수에서이 함수를 호출 합니다.
 
@@ -209,7 +210,7 @@ BOOL FindNext() const;
 CString GetFindString() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 찾을 기본 문자열입니다.
 
@@ -217,7 +218,7 @@ CString GetFindString() const;
 
 [!code-cpp[NVC_MFCDocView#69](../../mfc/codesnippet/cpp/cfindreplacedialog-class_5.cpp)]
 
-## <a name="cfindreplacedialoggetnotifier"></a><a name="getnotifier"></a>CFindReplaceDialog:: GetNotifier
+## <a name="cfindreplacedialoggetnotifier"></a><a name="getnotifier"></a> CFindReplaceDialog:: GetNotifier
 
 현재 찾기 바꾸기 대화 상자에 대 한 포인터를 검색 하려면이 함수를 호출 합니다.
 
@@ -230,7 +231,7 @@ static CFindReplaceDialog* PASCAL GetNotifier(LPARAM lParam);
 *lParam*<br/>
 프레임 창의 멤버 함수에 전달 되는 *lparam* 값 `OnFindReplace` 입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 대화 상자에 대 한 포인터입니다.
 
@@ -244,7 +245,7 @@ static CFindReplaceDialog* PASCAL GetNotifier(LPARAM lParam);
 
 [!code-cpp[NVC_MFCDocView#69](../../mfc/codesnippet/cpp/cfindreplacedialog-class_5.cpp)]
 
-## <a name="cfindreplacedialoggetreplacestring"></a><a name="getreplacestring"></a>CFindReplaceDialog:: GetReplaceString
+## <a name="cfindreplacedialoggetreplacestring"></a><a name="getreplacestring"></a> CFindReplaceDialog:: GetReplaceString
 
 현재 replace 문자열을 검색 하려면이 함수를 호출 합니다.
 
@@ -252,7 +253,7 @@ static CFindReplaceDialog* PASCAL GetNotifier(LPARAM lParam);
 CString GetReplaceString() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 찾은 문자열을 바꿀 기본 문자열입니다.
 
@@ -260,7 +261,7 @@ CString GetReplaceString() const;
 
   [CFindReplaceDialog:: GetFindString](#getfindstring)의 예제를 참조 하세요.
 
-## <a name="cfindreplacedialogisterminating"></a><a name="isterminating"></a>CFindReplaceDialog:: IsTerminating
+## <a name="cfindreplacedialogisterminating"></a><a name="isterminating"></a> CFindReplaceDialog:: IsTerminating
 
 사용자가 대화 상자를 종료 하도록 결정 했는지 여부를 확인 하려면 콜백 함수 내에서이 함수를 호출 합니다.
 
@@ -268,7 +269,7 @@ CString GetReplaceString() const;
 BOOL IsTerminating() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 사용자가 대화 상자를 종료 하기로 결정 한 경우 0이 아닙니다. 그렇지 않으면 0입니다.
 
@@ -280,7 +281,7 @@ BOOL IsTerminating() const;
 
   [CFindReplaceDialog:: GetFindString](#getfindstring)의 예제를 참조 하세요.
 
-## <a name="cfindreplacedialogm_fr"></a><a name="m_fr"></a>CFindReplaceDialog:: m_fr
+## <a name="cfindreplacedialogm_fr"></a><a name="m_fr"></a> CFindReplaceDialog:: m_fr
 
 개체를 사용자 지정 하는 데 사용 `CFindReplaceDialog` 됩니다.
 
@@ -298,7 +299,7 @@ FINDREPLACE m_fr;
 
   [CFindReplaceDialog:: CFindReplaceDialog](#cfindreplacedialog)의 예제를 참조 하세요.
 
-## <a name="cfindreplacedialogmatchcase"></a><a name="matchcase"></a>CFindReplaceDialog:: MatchCase
+## <a name="cfindreplacedialogmatchcase"></a><a name="matchcase"></a> CFindReplaceDialog:: MatchCase
 
 이 함수를 호출 하 여 사용자가 찾기 문자열의 대/소문자를 정확 하 게 일치 시 키 려 고 할지 여부를 결정 합니다.
 
@@ -306,11 +307,11 @@ FINDREPLACE m_fr;
 BOOL MatchCase() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 사용자가 검색 문자열의 대/소문자와 정확히 일치 하는 검색 문자열을 찾으려고 하는 경우 0이 아닙니다. 그렇지 않으면 0입니다.
 
-## <a name="cfindreplacedialogmatchwholeword"></a><a name="matchwholeword"></a>CFindReplaceDialog:: MatchWholeWord
+## <a name="cfindreplacedialogmatchwholeword"></a><a name="matchwholeword"></a> CFindReplaceDialog:: MatchWholeWord
 
 사용자가 전체 단어를 검색할지 여부를 결정 하려면이 함수를 호출 합니다.
 
@@ -318,11 +319,11 @@ BOOL MatchCase() const;
 BOOL MatchWholeWord() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 사용자가 검색 문자열의 전체 단어만 일치 시 키 려 고 하는 경우 0이 아닙니다. 그렇지 않으면 0입니다.
 
-## <a name="cfindreplacedialogreplaceall"></a><a name="replaceall"></a>CFindReplaceDialog:: ReplaceAll
+## <a name="cfindreplacedialogreplaceall"></a><a name="replaceall"></a> CFindReplaceDialog:: ReplaceAll
 
 이 함수를 호출 하 여 사용자가 모든 문자열의 대체를 원하는 지 여부를 확인 합니다.
 
@@ -330,11 +331,11 @@ BOOL MatchWholeWord() const;
 BOOL ReplaceAll() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 사용자가 replace 문자열과 일치 하는 모든 문자열을 바꾸도록 요청한 경우 0이 아닌 값입니다. 그렇지 않으면 0입니다.
 
-## <a name="cfindreplacedialogreplacecurrent"></a><a name="replacecurrent"></a>CFindReplaceDialog:: ReplaceCurrent
+## <a name="cfindreplacedialogreplacecurrent"></a><a name="replacecurrent"></a> CFindReplaceDialog:: ReplaceCurrent
 
 사용자가 현재 단어를 바꿀 것인지 여부를 확인 하려면이 함수를 호출 합니다.
 
@@ -342,11 +343,11 @@ BOOL ReplaceAll() const;
 BOOL ReplaceCurrent() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 사용자가 현재 선택 된 문자열이 replace 문자열로 대체 되도록 요청한 경우 0이 아닌 값입니다. 그렇지 않으면 0입니다.
 
-## <a name="cfindreplacedialogsearchdown"></a><a name="searchdown"></a>CFindReplaceDialog:: SearchDown
+## <a name="cfindreplacedialogsearchdown"></a><a name="searchdown"></a> CFindReplaceDialog:: SearchDown
 
 이 함수를 호출 하 여 사용자가 역방향으로 검색을 수행할지 여부를 결정 합니다.
 
@@ -354,7 +355,7 @@ BOOL ReplaceCurrent() const;
 BOOL SearchDown() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 사용자가 역방향으로 검색을 진행 하려는 경우 0이 아닌 값입니다. 사용자가 위쪽 방향으로 검색을 진행 하려는 경우 0입니다.
 

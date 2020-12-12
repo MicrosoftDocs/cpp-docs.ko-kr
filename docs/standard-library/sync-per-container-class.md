@@ -1,4 +1,5 @@
 ---
+description: Sync_per_container 클래스에 대해 자세히 알아보세요.
 title: sync_per_container 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - sync_per_container class
 ms.assetid: 0b4b2904-b668-4d94-a422-d4f919cbffab
-ms.openlocfilehash: 51a88e6ec4eca693c652635e1574e3611d7217cd
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 83dc2f3d874fdc1910a3da4fdc34fb18c432cc25
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562105"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183314"
 ---
 # <a name="sync_per_container-class"></a>sync_per_container 클래스
 
@@ -59,7 +60,7 @@ bool equals(const sync_per_container<Cache>& Other) const;
 *다른*\
 같은지 비교할 캐시 개체입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 멤버 함수는 항상 **`false`** 를 반환 합니다.
 

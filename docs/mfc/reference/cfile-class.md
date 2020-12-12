@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CFile 클래스'
 title: CFile 클래스
 ms.date: 06/12/2018
 f1_keywords:
@@ -60,12 +61,12 @@ helpviewer_keywords:
 - CFile [MFC], m_hFile
 - CFile [MFC], m_pTM
 ms.assetid: b2eb5757-d499-4e67-b044-dd7d1abaa0f8
-ms.openlocfilehash: 5be6a578fdd1d4e329c5b55d307d924a6c539e3d
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: edccd571edf3594d36679a6c4ed6e52df878a705
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90042084"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184545"
 ---
 # <a name="cfile-class"></a>CFile 클래스
 
@@ -81,13 +82,13 @@ class CFile : public CObject
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CFile:: CFile](#cfile)|`CFile`경로 또는 파일 핸들에서 개체를 생성 합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CFile:: Abort](#abort)|모든 경고 및 오류를 무시 하는 파일을 닫습니다.|
 |[CFile:: Close](#close)|파일을 닫고 개체를 삭제 합니다.|
@@ -115,20 +116,20 @@ class CFile : public CObject
 
 ### <a name="public-operators"></a>Public 연산자
 
-|Name|Description|
+|Name|설명|
 |----------|-----------------|
 |[CFile:: operator 핸들](#operator_handle)|개체에 대 한 핸들 `CFile` 입니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|Name|Description|
+|Name|설명|
 |----------|-----------------|
 |[CFile:: hFileNull](#hfilenull)|개체에 유효한 핸들이 있는지 여부를 확인 `CFile` 합니다.|
 |[CFile:: m_hFile](#m_hfile)|일반적으로 운영 체제 파일 핸들을 포함 합니다.|
 
 ### <a name="protected-data-members"></a>보호된 데이터 멤버
 
-|Name|Description|
+|Name|설명|
 |----------|-----------------|
 |[CFile:: m_pTM](#m_ptm)|`CAtlTransactionManager` 개체에 대한 포인터입니다.|
 
@@ -142,7 +143,7 @@ class CFile : public CObject
 
 일반적으로 디스크 파일은 생성 시 자동으로 열리고 `CFile` 소멸 시 닫힙니다. 정적 멤버 함수를 사용 하면 파일을 열지 않고 파일의 상태를 확인할 수 있습니다.
 
-사용에 대 한 자세한 내용은 `CFile` *런타임 라이브러리 참조*에서 [MFC의 파일](../../mfc/files-in-mfc.md) 및 [파일 처리](../../c-runtime-library/file-handling.md) 문서를 참조 하세요.
+사용에 대 한 자세한 내용은 `CFile` *런타임 라이브러리 참조* 에서 [MFC의 파일](../../mfc/files-in-mfc.md) 및 [파일 처리](../../c-runtime-library/file-handling.md) 문서를 참조 하세요.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -213,7 +214,7 @@ CAtlTransactionManager 개체에 대한 포인터
 
 다음 파일 액세스 모드 옵션 중 하나만 선택해야 합니다. 기본 파일 액세스 모드는 `CFile::modeRead`(읽기 전용)입니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |`CFile::modeRead`|읽기 권한만 요청합니다.|
 |`CFile::modeWrite`|쓰기 권한만 요청합니다.|
@@ -221,7 +222,7 @@ CAtlTransactionManager 개체에 대한 포인터
 
 다음 문자 모드 옵션 중 하나를 선택합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |`CFile::typeBinary`|이진 모드를 설정합니다(파생 클래스에만 사용됨).|
 |`CFile::typeText`|캐리지 리턴-줄 바꿈 쌍에 대 한 특수 처리를 사용 하 여 텍스트 모드를 설정 합니다 (파생 클래스에만 사용 됨).|
@@ -229,7 +230,7 @@ CAtlTransactionManager 개체에 대한 포인터
 
 다음 파일 공유 모드 옵션 중 하나만 선택해야 합니다. 기본 파일 공유 모드는 `CFile::shareExclusive`(단독)입니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |`CFile::shareDenyNone`|공유 제한이 없습니다.|
 |`CFile::shareDenyRead`|다른 모든 사용자에 대해 읽기 권한을 거부합니다.|
@@ -238,14 +239,14 @@ CAtlTransactionManager 개체에 대한 포인터
 
 다음 파일 만들기 모드 옵션 중 첫 번째 옵션 또는 두 옵션을 모두 선택합니다. 기본 만들기 모드는 `CFile::modeNoTruncate`(기존 파일 열기)입니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |`CFile::modeCreate`|파일이 없으면 새 파일을 만듭니다. 파일이 이미 있으면 덮어쓴 후 처음에 길이가 0으로 설정 됩니다.|
 |`CFile::modeNoTruncate`|파일이 없으면 새 파일을 만듭니다. 그렇지 않은 경우 파일이 이미 있으면 개체에 연결 `CFile` 됩니다.|
 
 설명에 따라 다음 파일 캐싱 옵션을 선택합니다. 기본적으로 시스템은 옵션으로 사용할 수 없는 범용 캐싱 구성표를 사용 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |`CFile::osNoBuffer`|시스템에서 파일에 대해 중간 캐시를 사용 하지 않습니다. 이 옵션은 다음 2개 옵션을 취소합니다.|
 |`CFile::osRandomAccess`|임의 액세스를 위해 파일 캐시가 최적화됩니다. 이 옵션과 순차 검색 옵션을 모두 사용 하지 마십시오.|
@@ -254,7 +255,7 @@ CAtlTransactionManager 개체에 대한 포인터
 
 파일 핸들이 상속되지 않도록 하려면 다음 보안 옵션을 선택합니다. 기본적으로 새 자식 프로세스는 파일 핸들을 사용할 수 있습니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |`CFile::modeNoInherit`|자식 프로세스가 파일 핸들을 사용하지 못하도록 차단합니다.|
 
@@ -594,7 +595,7 @@ CAtlTransactionManager 개체에 대한 포인터
 
 두 `Open` 함수는 파일을 여는 데 사용할 수 있는 "안전한" 방법입니다. 여기서 오류는 정상적인 정상적인 조건입니다.
 
-생성자는 `CFile` 오류 조건에서 예외를 throw 하지만는 `Open` 오류 조건에 대해 FALSE를 반환 합니다. `Open` 그러나에서는 여전히 [Cfileexception](../../mfc/reference/cfileexception-class.md) 개체를 초기화 하 여 오류를 설명할 수 있습니다. *PError* 매개 변수를 제공 하지 않거나 *PERROR*에 대해 NULL을 전달 하는 경우 `Open` 는 FALSE를 반환 하 고을 throw 하지 않습니다 `CFileException` . 기존에 포인터를 전달 하 `CFileException` 고 오류가 발생 하는 경우 `Open` 함수는 해당 오류를 설명 하는 정보로이를 채웁니다. `Open` 는 두 경우 모두 예외를 throw 하지 않습니다.
+생성자는 `CFile` 오류 조건에서 예외를 throw 하지만는 `Open` 오류 조건에 대해 FALSE를 반환 합니다. `Open` 그러나에서는 여전히 [Cfileexception](../../mfc/reference/cfileexception-class.md) 개체를 초기화 하 여 오류를 설명할 수 있습니다. *PError* 매개 변수를 제공 하지 않거나 *PERROR* 에 대해 NULL을 전달 하는 경우 `Open` 는 FALSE를 반환 하 고을 throw 하지 않습니다 `CFileException` . 기존에 포인터를 전달 하 `CFileException` 고 오류가 발생 하는 경우 `Open` 함수는 해당 오류를 설명 하는 정보로이를 채웁니다. `Open` 는 두 경우 모두 예외를 throw 하지 않습니다.
 
 다음 표에서는의 가능한 결과에 대해 설명 합니다 `Open` .
 
@@ -731,7 +732,7 @@ UINT nFrom);
 
 다음 표에서는 *Nfrom* 매개 변수의 가능한 값을 보여 줍니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |`CFile::begin`|파일의 시작 부분에서 검색 합니다.|
 |`CFile::current`|파일 포인터의 현재 위치에서 검색 합니다.|
@@ -851,7 +852,7 @@ CAtlTransactionManager 개체에 대한 포인터
 
 ### <a name="remarks"></a>설명
 
-시간을 설정 하려면 `m_mtime` *상태*필드를 수정 합니다.
+시간을 설정 하려면 `m_mtime` *상태* 필드를 수정 합니다.
 
 을 호출 하 여 `SetStatus` 파일의 특성만 변경 하 고 `m_mtime` 파일 상태 구조의 멤버가 0이 아닌 경우에도 특성이 영향을 받을 수 있습니다. 타임 스탬프를 변경 하면 특성에 부작용이 발생할 수 있습니다. 파일의 특성만 변경 하려면 먼저 `m_mtime` 파일 상태 구조의 멤버를 0으로 설정한 다음을 호출 `SetStatus` 합니다.
 

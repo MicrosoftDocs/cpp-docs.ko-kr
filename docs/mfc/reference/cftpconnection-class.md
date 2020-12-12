@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: CFtpConnection 클래스'
 title: CFtpConnection 클래스
 ms.date: 08/29/2019
 f1_keywords:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - CFtpConnection [MFC], Rename
 - CFtpConnection [MFC], SetCurrentDirectory
 ms.assetid: 5e3a0501-8893-49cf-a3d5-0628d8d6b936
-ms.openlocfilehash: 4ad2262b17208dd634b59f5df4d6e60c300bb3c1
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 97c7c848a5724a670f324e1d1d26ea781265be27
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832739"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184259"
 ---
 # <a name="cftpconnection-class"></a>CFtpConnection 클래스
 
@@ -134,7 +135,7 @@ FTP 서버 이름을 포함 하는 문자열에 대 한 포인터입니다.
 로그인 할 사용자의 이름을 지정 하는 null로 끝나는 문자열에 대 한 포인터입니다. NULL 인 경우 기본값은 anonymous입니다.
 
 *pstrPassword*<br/>
-로그인 하는 데 사용할 암호를 지정 하는 null로 끝나는 문자열에 대 한 포인터입니다. *Pstrpassword* 와 *pstrpassword* 이 모두 NULL 인 경우 기본 익명 암호는 사용자의 전자 메일 이름입니다. *Pstrpassword* 가 null 또는 빈 문자열이 고 *PSTRPASSWORD* 이 null이 아닌 경우 빈 암호가 사용 됩니다. 다음 표에서는 *Pstrusername* 및 *pstrusername*의 네 가지 가능한 설정에 대 한 동작을 설명 합니다.
+로그인 하는 데 사용할 암호를 지정 하는 null로 끝나는 문자열에 대 한 포인터입니다. *Pstrpassword* 와 *pstrpassword* 이 모두 NULL 인 경우 기본 익명 암호는 사용자의 전자 메일 이름입니다. *Pstrpassword* 가 null 또는 빈 문자열이 고 *PSTRPASSWORD* 이 null이 아닌 경우 빈 암호가 사용 됩니다. 다음 표에서는 *Pstrusername* 및 *pstrusername* 의 네 가지 가능한 설정에 대 한 동작을 설명 합니다.
 
 |*pstrUserName*|*pstrPassword*|FTP 서버에 전송 되는 사용자 이름|FTP 서버로 보낸 암호|
 |--------------------|--------------------|---------------------------------|---------------------------------|
@@ -177,7 +178,7 @@ FTP 서버에서 응답이 필요한 지 여부를 지정 합니다. 다음 값 
 - `CmdRespRead` 응답이 필요 합니다.
 - `CmdRespWrite` 사용 되지 않습니다.
 
-CmdResponseType은 *afxinet.h*에 정의 된 CFtpConnection의 멤버입니다.
+CmdResponseType은 *afxinet.h* 에 정의 된 CFtpConnection의 멤버입니다.
 
 *dwFlags*<br/>
 이 함수를 제어하는 플래그를 포함하는 값입니다. 전체 목록은 [이 항목을 참조 하세요.](/windows/win32/api/wininet/nf-wininet-ftpcommandw)
@@ -241,9 +242,9 @@ BOOL GetCurrentDirectory(
 *lpdwLen*<br/>
 다음 정보를 포함 하는 DWORD에 대 한 포인터입니다.
 
-On entry: *Pstrdirname*에서 참조 하는 버퍼의 크기입니다.
+On entry: *Pstrdirname* 에서 참조 하는 버퍼의 크기입니다.
 
-반환 시: *Pstrdirname*에 저장 된 문자 수입니다. 멤버 함수가 실패 하 고 ERROR_INSUFFICIENT_BUFFER 반환 되 면, *lpdwLen* 는 응용 프로그램에서 문자열을 받기 위해 할당 해야 하는 바이트 수를 포함 합니다.
+반환 시: *Pstrdirname* 에 저장 된 문자 수입니다. 멤버 함수가 실패 하 고 ERROR_INSUFFICIENT_BUFFER 반환 되 면, *lpdwLen* 는 응용 프로그램에서 문자열을 받기 위해 할당 해야 하는 바이트 수를 포함 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -278,9 +279,9 @@ BOOL GetCurrentDirectoryAsURL(
 *lpdwLen*<br/>
 다음 정보를 포함 하는 DWORD에 대 한 포인터입니다.
 
-On entry: *Pstrdirname*에서 참조 하는 버퍼의 크기입니다.
+On entry: *Pstrdirname* 에서 참조 하는 버퍼의 크기입니다.
 
-반환 시: *Pstrdirname*에 저장 된 문자 수입니다. 멤버 함수가 실패 하 고 ERROR_INSUFFICIENT_BUFFER 반환 되 면, *lpdwLen* 는 응용 프로그램에서 문자열을 받기 위해 할당 해야 하는 바이트 수를 포함 합니다.
+반환 시: *Pstrdirname* 에 저장 된 문자 수입니다. 멤버 함수가 실패 하 고 ERROR_INSUFFICIENT_BUFFER 반환 되 면, *lpdwLen* 는 응용 프로그램에서 문자열을 받기 위해 할당 해야 하는 바이트 수를 포함 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -340,7 +341,7 @@ FTP 서버에서 검색할 파일의 이름을 포함 하는 null로 끝나는 �
 전송이 발생 하는 조건을 지정 합니다. 이 매개 변수는 Windows SDK의 *DwFlags* [getfile](/windows/win32/api/wininet/nf-wininet-ftpgetfilew) 에 설명 된 모든 값이 될 수 있습니다.
 
 *dwContext*<br/>
-파일 검색에 대 한 컨텍스트 식별자입니다. *Dwcontext*에 대 한 자세한 내용은 **설명** 을 참조 하세요.
+파일 검색에 대 한 컨텍스트 식별자입니다. *Dwcontext* 에 대 한 자세한 내용은 **설명** 을 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -384,7 +385,7 @@ CInternetFile* OpenFile(
 - 파일 FTP_TRANSFER_TYPE_BINARY FTP 이미지 (Type I) 전송 메서드를 사용 하 여 데이터를 전송 합니다. 파일은 변경 없이 데이터를 그대로 전송 합니다. 이는 기본 전송 방법입니다.
 
 *dwContext*<br/>
-파일 열기에 대 한 컨텍스트 식별자입니다. *Dwcontext*에 대 한 자세한 내용은 **설명** 을 참조 하세요.
+파일 열기에 대 한 컨텍스트 식별자입니다. *Dwcontext* 에 대 한 자세한 내용은 **설명** 을 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -430,7 +431,7 @@ FTP 서버에 만들 파일의 이름을 포함 하는 문자열에 대 한 포�
 파일 전송이 발생 하는 조건을 지정 합니다. [System.windows.forms.openfiledialog.openfile](#openfile)에 설명 된 FTP_TRANSFER_ * 상수 중 하나일 수 있습니다.
 
 *dwContext*<br/>
-파일을 배치 하기 위한 컨텍스트 식별자입니다. *Dwcontext*에 대 한 자세한 내용은 **설명** 을 참조 하세요.
+파일을 배치 하기 위한 컨텍스트 식별자입니다. *Dwcontext* 에 대 한 자세한 내용은 **설명** 을 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: &lt; 문자열 &gt; 연산자'
 title: '&lt;string&gt; 연산자'
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - std::operator&lt; (string)
 - std::operator&lt;&lt; (string)
 - std::operator&lt;= (string), std::operator== (string)
-ms.openlocfilehash: e031eb4421906e35a96a862855a140218f233778
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9a23b4539fbb84533de83a541458deddbd13615e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832544"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183713"
 ---
 # <a name="ltstringgt-operators"></a>&lt;string&gt; 연산자
 
@@ -575,11 +576,11 @@ basic_ostream<CharType, Traits>& operator<<(
 
 ### <a name="return-value"></a>반환 값
 
-지정 된 문자열의 값을 출력 스트림에 *_Ostr*씁니다.
+지정 된 문자열의 값을 출력 스트림에 *_Ostr* 씁니다.
 
 ### <a name="remarks"></a>설명
 
-템플릿 함수 오버 로드 **연산자를<<** 하 여 클래스 템플릿 [basic_string](../standard-library/basic-string-class.md) 의 개체 *str* 을 스트림 * \_ ostr*에 삽입할 수 있습니다. 함수는를 효과적으로 반환 `_Ostr.write( str.c_str, str.size )` 합니다.
+템플릿 함수 오버 로드 **연산자를<<** 하 여 클래스 템플릿 [basic_string](../standard-library/basic-string-class.md) 의 개체 *str* 을 스트림 *\_ ostr* 에 삽입할 수 있습니다. 함수는를 효과적으로 반환 `_Ostr.write( str.c_str, str.size )` 합니다.
 
 ## <a name="operatorgt"></a><a name="op_gt"></a> 연산자&gt;
 
@@ -808,13 +809,13 @@ basic_istream<CharType, Traits>& operator>>(
 
 ### <a name="return-value"></a>반환 값
 
-*_Istr* 에서 지정 된 문자열의 값을 읽고 *오른쪽*으로 반환 합니다.
+*_Istr* 에서 지정 된 문자열의 값을 읽고 *오른쪽* 으로 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
 `skipws` 플래그가 설정된 경우가 아니면 연산자는 선행 공백을 건너뜁니다. 그리고 다음 문자가 공백이거나 파일의 끝에 도달할 때까지 뒤에 오는 모든 문자를 읽습니다.
 
-템플릿 함수는 **>>연산자 ** 를 오버 로드 하 여 *right* 로 제어 되는 시퀀스를 *_Istr*스트림에서 추출 된 요소 시퀀스로 바꿉니다. 다음과 같은 경우 추출이 중지됩니다.
+템플릿 함수는 **>>연산자** 를 오버 로드 하 여 *right* 로 제어 되는 시퀀스를 *_Istr* 스트림에서 추출 된 요소 시퀀스로 바꿉니다. 다음과 같은 경우 추출이 중지됩니다.
 
 - 파일의 끝.
 
@@ -822,7 +823,7 @@ basic_istream<CharType, Traits>& operator>>(
 
 함수가 `_Istr`을 추출한 후 [max_size](../standard-library/basic-string-class.md#max_size) 요소
 
-- 함수는 *ch* [use_facet](../standard-library/basic-filebuf-class.md#open) <  **ctype** \< **CharType**> > () use_facet 요소를 추출 `getloc` 합니다. **is**( **ctype** \< **CharType**> :: **space**, *ch*)는 true 이며,이 경우 문자는 다시 배치 됩니다.
+- 함수는  [](../standard-library/basic-filebuf-class.md#open) <  **ctype** \< **CharType**> > () use_facet 요소를 추출 `getloc` 합니다. **is**( **ctype** \< **CharType**> :: **space**, *ch*)는 true 이며,이 경우 문자는 다시 배치 됩니다.
 
 함수가 요소를 추출 하지 않으면 [setstate](../standard-library/basic-ios-class.md#setstate)()를 호출 `ios_base::failbit` 합니다. 어떤 경우든 **istr**. **width**(0) 및는를 반환 \* **`this`** 합니다.
 

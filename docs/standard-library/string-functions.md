@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: &lt; 문자열 &gt; 함수'
 title: '&lt;string&gt; functions'
 ms.date: 11/04/2016
 f1_keywords:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - std::swap [C++]
 - std::to_string [C++]
 - std::to_wstring [C++]
-ms.openlocfilehash: 350a66481c7061322f08a768ec1628598f4af68e
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 859cb6db2e02ad5e915b5d8f3ed31aaf7e443580
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843185"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183739"
 ---
 # <a name="ltstringgt-functions"></a>&lt;string&gt; functions
 
@@ -93,11 +94,11 @@ basic_istream<Allocator, Traits>& getline(
 
 ### <a name="return-value"></a>반환 값
 
-입력 스트림 *in_stream*입니다.
+입력 스트림 *in_stream* 입니다.
 
 ### <a name="remarks"></a>설명
 
-표시 된 함수 시그니처 쌍은 `(1)` *구분 기호가* 발견 될 때까지 *in_stream* 에서 문자를 추출 하 여 *str*에 저장 합니다.
+표시 된 함수 시그니처 쌍은 `(1)` *구분 기호가* 발견 될 때까지 *in_stream* 에서 문자를 추출 하 여 *str* 에 저장 합니다.
 
 로 표시 된 함수 시그니처 쌍은 `(2)` 줄 바꿈 문자를 기본 줄 구분 기호로 사용 하 고로 동작 `getline(in_stream, str, in_stream. widen('\n'))` 합니다.
 
@@ -107,7 +108,7 @@ basic_istream<Allocator, Traits>& getline(
 
 - 파일의 끝에 있습니다 .이 경우 *in_stream* 의 내부 상태 플래그가로 설정 됩니다 `ios_base::eofbit` .
 
-- 함수는 *구분 기호와*동일한 요소를 추출 합니다. 요소가 다시 배치 되거나 제어 되는 시퀀스에 추가 되지 않습니다.
+- 함수는 *구분 기호와* 동일한 요소를 추출 합니다. 요소가 다시 배치 되거나 제어 되는 시퀀스에 추가 되지 않습니다.
 
 - 함수는 `str.` [max_size](../standard-library/basic-string-class.md#max_size) 요소를 추출 합니다. *In_stream* 의 내부 상태 플래그는로 설정 됩니다 `ios_base::failbit` .
 
@@ -115,7 +116,7 @@ basic_istream<Allocator, Traits>& getline(
 
 내부 상태 플래그에 대한 자세한 내용은 [ios_base::iostate](../standard-library/ios-base-class.md#iostate)를 참조하세요.
 
-함수가 요소를 추출 하지 않으면 *in_stream* 의 내부 상태 플래그가로 설정 됩니다 `ios_base::failbit` . 어떤 경우 든 `getline` *in_stream*는를 반환 합니다.
+함수가 요소를 추출 하지 않으면 *in_stream* 의 내부 상태 플래그가로 설정 됩니다 `ios_base::failbit` . 어떤 경우 든 `getline` *in_stream* 는를 반환 합니다.
 
 예외가 throw 되 면 *in_stream* 및 *str* 는 유효한 상태로 유지 됩니다.
 
@@ -451,7 +452,7 @@ void swap(basic_string<CharType, Traits, Allocator>& left, basic_string<CharType
 
 ### <a name="remarks"></a>설명
 
-템플릿 함수는 특수 멤버 함수를 *왼쪽*으로 실행 합니다. 문자열에 대해 [바꾸기](../standard-library/basic-string-class.md#swap)(*오른쪽*)-일관 된 복잡성을 보장 합니다.
+템플릿 함수는 특수 멤버 함수를 *왼쪽* 으로 실행 합니다. 문자열에 대해 [바꾸기](../standard-library/basic-string-class.md#swap)(*오른쪽*)-일관 된 복잡성을 보장 합니다.
 
 ### <a name="example"></a>예제
 
@@ -517,21 +518,21 @@ string to_string(long double value);
 
 함수는를 호출 하는 것 처럼 함수 내부의 배열 개체에 저장 된 요소의 시퀀스로 *값* 을 변환 합니다. `Buf` `sprintf(Buf, Fmt, value)` 여기서 `Fmt` 은입니다.
 
-- `"%d"`*값* 이 형식인 경우**`int`**
+- `"%d"`*값* 이 형식인 경우 **`int`**
 
-- `"%u"`*값* 이 형식인 경우**`unsigned int`**
+- `"%u"`*값* 이 형식인 경우 **`unsigned int`**
 
-- `"%ld"`*값* 이 형식인 경우**`long`**
+- `"%ld"`*값* 이 형식인 경우 **`long`**
 
-- `"%lu"`*값* 이 형식인 경우**`unsigned long`**
+- `"%lu"`*값* 이 형식인 경우 **`unsigned long`**
 
-- `"%lld"`*값* 이 형식인 경우**`long long`**
+- `"%lld"`*값* 이 형식인 경우 **`long long`**
 
-- `"%llu"`*값* 이 형식인 경우**`unsigned long long`**
+- `"%llu"`*값* 이 형식인 경우 **`unsigned long long`**
 
 - `"%f"`*값* 이 또는 형식인 경우 **`float`****`double`**
 
-- `"%Lf"`*값* 이 형식인 경우**`long double`**
+- `"%Lf"`*값* 이 형식인 경우 **`long double`**
 
 함수에서 `string(Buf)`을 반환합니다.
 
@@ -564,21 +565,21 @@ wstring to_wstring(long double value);
 
 함수는를 호출 하는 것 처럼 함수 내부의 배열 개체에 저장 된 요소의 시퀀스로 *값* 을 변환 합니다. `Buf` `swprintf(Buf, Len, Fmt, value)` 여기서 `Fmt` 은입니다.
 
-- `L"%d"`*값* 이 형식인 경우**`int`**
+- `L"%d"`*값* 이 형식인 경우 **`int`**
 
-- `L"%u"`*값* 이 형식인 경우**`unsigned int`**
+- `L"%u"`*값* 이 형식인 경우 **`unsigned int`**
 
-- `L"%ld"`*값* 이 형식인 경우**`long`**
+- `L"%ld"`*값* 이 형식인 경우 **`long`**
 
-- `L"%lu"`*값* 이 형식인 경우**`unsigned long`**
+- `L"%lu"`*값* 이 형식인 경우 **`unsigned long`**
 
-- `L"%lld"`*값* 이 형식인 경우**`long long`**
+- `L"%lld"`*값* 이 형식인 경우 **`long long`**
 
-- `L"%llu"`*값* 이 형식인 경우**`unsigned long long`**
+- `L"%llu"`*값* 이 형식인 경우 **`unsigned long long`**
 
 - `L"%f"`*값* 이 또는 형식인 경우 **`float`****`double`**
 
-- `L"%Lf"`*값* 이 형식인 경우**`long double`**
+- `L"%Lf"`*값* 이 형식인 경우 **`long double`**
 
 함수에서 `wstring(Buf)`을 반환합니다.
 

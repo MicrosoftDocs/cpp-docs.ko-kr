@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CFolderPickerDialog 클래스'
 title: CFolderPickerDialog 클래스
 ms.date: 03/27/2019
 f1_keywords:
@@ -8,16 +9,16 @@ f1_keywords:
 helpviewer_keywords:
 - CFolderPickerDialog [MFC], CFolderPickerDialog
 ms.assetid: 8db01684-dd1d-4e9c-989e-07a2318a8156
-ms.openlocfilehash: ed3dc151060519bce216cf4a2f3d6559d6b8937e
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: f4a5bcc3162a5fffcc723d7ec420685b02be10f0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81373858"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184428"
 ---
 # <a name="cfolderpickerdialog-class"></a>CFolderPickerDialog 클래스
 
-CFolderPicker Dialog 클래스는 폴더 선택 모드에서 CFileDialog를 구현합니다.
+CFolderPickerDialog 클래스는 폴더 선택 모드에서 CFileDialog를 구현 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -29,10 +30,10 @@ class CFolderPickerDialog : public CFileDialog;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[CFolder피커디아로그::~CFolder피커디아로그](#_dtorcfolderpickerdialog)|소멸자|
-|[CFolder피커디아로그::CFolder피커디아로그](#cfolderpickerdialog)|생성자입니다.|
+|[CFolderPickerDialog:: ~ CFolderPickerDialog](#_dtorcfolderpickerdialog)|소멸자|
+|[CFolderPickerDialog:: CFolderPickerDialog](#cfolderpickerdialog)|생성자입니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -54,9 +55,9 @@ class CFolderPickerDialog : public CFileDialog;
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxdlgs.h
+**헤더:** afxdlgs
 
-## <a name="cfolderpickerdialogcfolderpickerdialog"></a><a name="cfolderpickerdialog"></a>CFolder피커디아로그::CFolder피커디아로그
+## <a name="cfolderpickerdialogcfolderpickerdialog"></a><a name="cfolderpickerdialog"></a> CFolderPickerDialog:: CFolderPickerDialog
 
 생성자입니다.
 
@@ -70,21 +71,21 @@ explicit CFolderPickerDialog(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpsz폴더*<br/>
-초기 폴더입니다.
+*lpszFolder*<br/>
+초기 폴더.
 
 *dwFlags*<br/>
-대화 상자를 사용자 지정할 수 있는 하나 이상의 플래그의 조합입니다.
+대화 상자를 사용자 지정할 수 있는 하나 이상의 플래그 조합입니다.
 
 *pParentWnd*<br/>
-대화 상자 개체의 부모 또는 소유자 창에 대한 포인터입니다.
+대화 상자 개체의 부모 또는 소유자 창에 대 한 포인터입니다.
 
 *dwSize*<br/>
-OPENFILENAME 구조의 크기입니다.
+OPENFILENAME 구조체의 크기입니다.
 
 ### <a name="remarks"></a>설명
 
-## <a name="cfolderpickerdialogcfolderpickerdialog"></a><a name="_dtorcfolderpickerdialog"></a>CFolder피커디아로그::~CFolder피커디아로그
+## <a name="cfolderpickerdialogcfolderpickerdialog"></a><a name="_dtorcfolderpickerdialog"></a> CFolderPickerDialog:: ~ CFolderPickerDialog
 
 소멸자
 

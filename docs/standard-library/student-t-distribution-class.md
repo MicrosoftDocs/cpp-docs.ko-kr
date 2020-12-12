@@ -1,4 +1,5 @@
 ---
+description: Student_t_distribution 클래스에 대해 자세히 알아보세요.
 title: student_t_distribution 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -21,12 +22,12 @@ helpviewer_keywords:
 - std::student_t_distribution [C++], max
 - std::student_t_distribution [C++], param_type
 ms.assetid: 87b48127-9311-4d07-95df-833ed46bf0b1
-ms.openlocfilehash: 23ded8704e1e29dabddadfdc0a1ced3644374ad9
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 24740a5fa15d9d77cb966184fe27e37956b3412e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840962"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183453"
 ---
 # <a name="student_t_distribution-class"></a>student_t_distribution 클래스
 
@@ -69,7 +70,7 @@ public:
 
 ## <a name="remarks"></a>설명
 
-스튜던트 t 분포에 따라 분포 된 경우 클래스 템플릿은 사용자 지정 정수 형식 또는 **`double`** 아무것도 제공 되지 않은 경우 형식의 값을 생성 하는 분포를 설명 합니다 *t*. 다음 테이블은 개별 멤버에 대한 문서와 연결되어 있습니다.
+스튜던트 t 분포에 따라 분포 된 경우 클래스 템플릿은 사용자 지정 정수 형식 또는 **`double`** 아무것도 제공 되지 않은 경우 형식의 값을 생성 하는 분포를 설명 합니다 . 다음 테이블은 개별 멤버에 대한 문서와 연결되어 있습니다.
 
 [student_t_distribution](#student_t_distribution)\
 [param_type](#param_type)
@@ -184,7 +185,7 @@ explicit student_t_distribution(const param_type& parm);
 
 첫 번째 생성자는 저장된 `n` 값이 *n* 값을 갖는 개체를 생성합니다.
 
-두 번째 생성자는 저장된 매개 변수가 *parm*에서 초기화되는 개체를 생성합니다. `param()` 멤버 함수를 호출하여 기존 분포의 현재 매개 변수를 가져와 설정할 수 있습니다.
+두 번째 생성자는 저장된 매개 변수가 *parm* 에서 초기화되는 개체를 생성합니다. `param()` 멤버 함수를 호출하여 기존 분포의 현재 매개 변수를 가져와 설정할 수 있습니다.
 
 ## <a name="student_t_distributionparam_type"></a><a name="param_type"></a> student_t_distribution::p aram_type
 

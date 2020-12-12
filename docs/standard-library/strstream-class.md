@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: strstream 클래스'
 title: strstream 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - std::strstream [C++], rdbuf
 - std::strstream [C++], str
 ms.assetid: 63f3be31-9e36-42b1-9715-a474a5997e2a
-ms.openlocfilehash: 796bf1b3ac41a4b5a6ab5bc16239d50616f554df
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c37a2ec46872b34e256710fe61f216a84cb0359d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224619"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183531"
 ---
 # <a name="strstream-class"></a>strstream 클래스
 
@@ -38,7 +39,7 @@ class strstream : public iostream
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[strstream](#strstream)|`strstream` 형식의 개체를 생성합니다.|
 
@@ -57,7 +58,7 @@ class strstream : public iostream
 
 **네임스페이스:** std
 
-## <a name="strstreamfreeze"></a><a name="freeze"></a>strstream:: freeze
+## <a name="strstreamfreeze"></a><a name="freeze"></a> strstream:: freeze
 
 스트림 버퍼 작업을 통해 스트림 버퍼를 사용할 수 없게 합니다.
 
@@ -78,7 +79,7 @@ void freeze(bool _Freezeit = true);
 
 을 사용 하는 예제는 [strstreambuf:: freeze](../standard-library/strstreambuf-class.md#freeze) 를 참조 하세요 `freeze` .
 
-## <a name="strstreampcount"></a><a name="pcount"></a>strstream::p 수
+## <a name="strstreampcount"></a><a name="pcount"></a> strstream::p 수
 
 제어되는 시퀀스에 기록되는 요소 수의 개수를 반환합니다.
 
@@ -86,7 +87,7 @@ void freeze(bool _Freezeit = true);
 streamsize pcount() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 제어되는 시퀀스에 기록되는 요소 수의 개수입니다.
 
@@ -98,7 +99,7 @@ streamsize pcount() const;
 
 pcount를 사용하는 샘플은 [strstreambuf::pcount](../standard-library/strstreambuf-class.md#pcount)를 참조하세요.
 
-## <a name="strstreamrdbuf"></a><a name="rdbuf"></a>strstream:: rdbuf
+## <a name="strstreamrdbuf"></a><a name="rdbuf"></a> strstream:: rdbuf
 
 스트림의 연결된 strstreambuf 개체에 대한 포인터를 반환합니다.
 
@@ -106,7 +107,7 @@ pcount를 사용하는 샘플은 [strstreambuf::pcount](../standard-library/strs
 strstreambuf *rdbuf() const
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 스트림의 연결된 strstreambuf 개체에 대한 포인터입니다.
 
@@ -118,7 +119,7 @@ strstreambuf *rdbuf() const
 
 `rdbuf`를 사용하는 샘플은 [strstreambuf::pcount](../standard-library/strstreambuf-class.md#pcount)를 참조하세요.
 
-## <a name="strstreamstr"></a><a name="str"></a>strstream:: str
+## <a name="strstreamstr"></a><a name="str"></a> strstream:: str
 
 [freeze](../standard-library/strstreambuf-class.md#freeze)를 호출한 다음 제어되는 시퀀스의 시작 부분에 대한 포인터를 반환합니다.
 
@@ -126,7 +127,7 @@ strstreambuf *rdbuf() const
 char *str();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 제어되는 시퀀스의 시작 부분에 대한 포인터입니다.
 
@@ -138,7 +139,7 @@ char *str();
 
 를 사용 하는 샘플은 [strstreambuf:: str](../standard-library/strstreambuf-class.md#str) 을 참조 하세요 `str` .
 
-## <a name="strstreamstrstream"></a><a name="strstream"></a>strstream:: strstream
+## <a name="strstreamstrstream"></a><a name="strstream"></a> strstream:: strstream
 
 `strstream` 형식의 개체를 생성합니다.
 
@@ -167,7 +168,7 @@ strstream(char* ptr,
 
 - `_Mode`  &  **Ios_base:: app**= = 0 인 경우 *ptr* 은 요소 배열의 첫 번째 요소를 지정 해야 `count` 하며 생성자는 `strstreambuf` ( `ptr` , `count` , `ptr` )를 호출 합니다.
 
-- 그렇지 않으면 *ptr* 은 첫 번째 요소가 *ptr*로 지정 되 고 생성자가 `strstreambuf` ( `ptr` , `count` , `ptr`  +  `strlen` ( `ptr` ))를 호출 하는 C 문자열을 포함 하는 count 요소 배열의 첫 번째 요소를 지정 해야 합니다.
+- 그렇지 않으면 *ptr* 은 첫 번째 요소가 *ptr* 로 지정 되 고 생성자가 `strstreambuf` ( `ptr` , `count` , `ptr`  +  `strlen` ( `ptr` ))를 호출 하는 C 문자열을 포함 하는 count 요소 배열의 첫 번째 요소를 지정 해야 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

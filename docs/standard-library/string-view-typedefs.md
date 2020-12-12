@@ -1,4 +1,5 @@
 ---
+description: '&lt;String_view 형식 정의에 대해 자세히 알아보세요. &gt;'
 title: '&lt;&gt;형식 정의 string_view'
 ms.date: 04/19/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 - xstring/std::u16string_view
 - xstring/std::u32string_view
 - xstring/std::wstring_view
-ms.openlocfilehash: 2afaaea466cc3b1ca46d2acdf0ceb5a42c597743
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 8bef37a85469dbc076c3488b1c70b394e5c63915
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836132"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183648"
 ---
 # <a name="ltstring_viewgt-typedefs"></a>&lt;&gt;형식 정의 string_view
 

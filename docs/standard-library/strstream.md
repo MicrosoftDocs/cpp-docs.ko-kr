@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: &lt; strstream&gt;'
 title: '&lt;strstream&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - strstream header
 ms.assetid: eaa9d0d4-d217-4f28-8a68-9b9ad7b1c0f5
-ms.openlocfilehash: 13eea1101abca0f79f0d7c15405ceb3118707b67
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: e99a07df2a63b991232440f8dad0eb299d0e00b4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845655"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183557"
 ---
 # <a name="ltstrstreamgt"></a>&lt;strstream&gt;
 
@@ -41,7 +42,7 @@ ms.locfileid: "88845655"
 |[ostrstream 클래스](../standard-library/ostrstream-class.md)|이 클래스는 [strstreambuf](../standard-library/strstreambuf-class.md) 클래스의 스트림 버퍼로 요소 및 인코드된 개체 삽입을 제어하는 개체를 설명합니다.|
 |[strstream 클래스](../standard-library/strstream-class.md)|이 클래스는 [strstreambuf](../standard-library/strstreambuf-class.md) 클래스의 스트림 버퍼를 사용한 요소 및 인코드된 개체 삽입 및 추출을 제어하는 개체를 설명합니다.|
 
-### <a name="functions"></a>Functions
+### <a name="functions"></a>함수
 
 ```cpp
 void freeze(bool freezefl = true);

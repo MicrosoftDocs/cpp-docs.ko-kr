@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: CFtpFileFind 클래스'
 title: CFtpFileFind 클래스
 ms.date: 05/28/2020
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - CFtpFileFind [MFC], FindNextFile
 - CFtpFileFind [MFC], GetFileURL
 ms.assetid: 9667cf01-657f-4b11-b9db-f11e5a7b4e4c
-ms.openlocfilehash: e53e16f738f0436cbd02074c10ca24dbcc9d0fd8
-ms.sourcegitcommit: 426e327c9f7c3a3b02300e3f924f9786d62958e9
+ms.openlocfilehash: 89d8a8232558c3afe9cf2f3a23d02226d8539aaf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84206234"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184233"
 ---
 # <a name="cftpfilefind-class"></a>CFtpFileFind 클래스
 
@@ -49,7 +50,7 @@ class CFtpFileFind : public CFileFind
 
 ## <a name="remarks"></a>설명
 
-`CFtpFileFind`검색을 시작 하 고, 파일을 찾고, 파일에 대 한 URL 또는 기타 설명 정보를 반환 하는 멤버 함수를 포함 합니다.
+`CFtpFileFind` 검색을 시작 하 고, 파일을 찾고, 파일에 대 한 URL 또는 기타 설명 정보를 반환 하는 멤버 함수를 포함 합니다.
 
 인터넷 및 로컬 파일 검색을 위해 디자인 된 다른 MFC 클래스에는 [CGopherFileFind](../../mfc/reference/cgopherfilefind-class.md) 및 [cfilefind](../../mfc/reference/cfilefind-class.md)가 포함 됩니다. 와 함께 `CFtpFileFind` 이러한 클래스는 서버 프로토콜 또는 파일 형식 (로컬 컴퓨터 또는 원격 서버)에 관계 없이 클라이언트에서 특정 파일을 찾기 위한 원활한 메커니즘을 제공 합니다. Http는 검색에 필요한 직접 파일 조작을 지원 하지 않으므로 HTTP 서버를 검색할 수 있는 MFC 클래스가 없습니다.
 
@@ -73,7 +74,7 @@ class CFtpFileFind : public CFileFind
 
 **헤더:** afxinet.h
 
-## <a name="cftpfilefindcftpfilefind"></a><a name="cftpfilefind"></a>CFtpFileFind:: CFtpFileFind
+## <a name="cftpfilefindcftpfilefind"></a><a name="cftpfilefind"></a> CFtpFileFind:: CFtpFileFind
 
 이 멤버 함수를 호출 하 여 개체를 생성 `CFtpFileFind` 합니다.
 
@@ -89,7 +90,7 @@ explicit CFtpFileFind(
 `CFtpConnection` 개체에 대한 포인터입니다. [Cinternetsession:: GetFtpConnection](../../mfc/reference/cinternetsession-class.md#getftpconnection)을 호출 하 여 FTP 연결을 가져올 수 있습니다.
 
 *dwContext*<br/>
-개체에 대 한 컨텍스트 식별자 `CFtpFileFind` 입니다. 자세한 내용은 다음 **설명을**참조 하세요.
+개체에 대 한 컨텍스트 식별자 `CFtpFileFind` 입니다. 자세한 내용은 다음 **설명을** 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
@@ -99,7 +100,7 @@ explicit CFtpFileFind(
 
   이 항목의 앞부분에 나오는 클래스 개요의 예제를 참조 하세요.
 
-## <a name="cftpfilefindfindfile"></a><a name="findfile"></a>CFtpFileFind:: FindFile
+## <a name="cftpfilefindfindfile"></a><a name="findfile"></a> CFtpFileFind:: FindFile
 
 FTP 파일을 찾으려면이 멤버 함수를 호출 합니다.
 
@@ -117,15 +118,15 @@ virtual BOOL FindFile(
 *dwFlags*<br/>
 이 세션을 처리 하는 방법을 설명 하는 플래그입니다. 이러한 플래그는 비트 OR 연산자 (&#124;)와 함께 사용할 수 있으며 다음과 같습니다.
 
-- `INTERNET_FLAG_RELOAD`로컬로 캐시 된 경우에도 네트워크에서 데이터를 가져옵니다. 이 플래그는 기본 플래그입니다.
+- `INTERNET_FLAG_RELOAD`   로컬로 캐시 된 경우에도 네트워크에서 데이터를 가져옵니다. 이 플래그는 기본 플래그입니다.
 
-- `INTERNET_FLAG_DONT_CACHE`로컬 또는 게이트웨이에서 데이터를 캐시 하지 않습니다.
+- `INTERNET_FLAG_DONT_CACHE`   로컬 또는 게이트웨이에서 데이터를 캐시 하지 않습니다.
 
-- `INTERNET_FLAG_RAW_DATA`기본값을 재정의 하 여 원시 데이터 (FTP에 대 한 [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) 구조)를 반환 합니다.
+- `INTERNET_FLAG_RAW_DATA`   기본값을 재정의 하 여 원시 데이터 (FTP에 대 한 [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) 구조)를 반환 합니다.
 
-- `INTERNET_FLAG_SECURE`SSL(Secure Sockets Layer) 또는 PCT를 사용 하 여 통신 하는 트랜잭션을 보호 합니다. 이 플래그는 HTTP 요청에만 적용 됩니다.
+- `INTERNET_FLAG_SECURE`   SSL(Secure Sockets Layer) 또는 PCT를 사용 하 여 통신 하는 트랜잭션을 보호 합니다. 이 플래그는 HTTP 요청에만 적용 됩니다.
 
-- `INTERNET_FLAG_EXISTING_CONNECT`가능 하면 `FindFile` 각 요청에 대해 새 세션을 만드는 대신 새 요청에 대 한 기존 연결을 서버에 다시 사용 합니다.
+- `INTERNET_FLAG_EXISTING_CONNECT`   가능 하면 `FindFile` 각 요청에 대해 새 세션을 만드는 대신 새 요청에 대 한 기존 연결을 서버에 다시 사용 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -139,7 +140,7 @@ virtual BOOL FindFile(
 
   이 항목의 이전 예제를 참조 하세요.
 
-## <a name="cftpfilefindfindnextfile"></a><a name="findnextfile"></a>CFtpFileFind:: FindNextFile
+## <a name="cftpfilefindfindnextfile"></a><a name="findnextfile"></a> CFtpFileFind:: FindNextFile
 
 [Findfile](#findfile) 멤버 함수를 호출 하 여 계속 해 서 파일 검색을 시작 하려면이 멤버 함수를 호출 합니다.
 
@@ -155,13 +156,13 @@ virtual BOOL FindNextFile();
 
 특성 함수를 호출 하기 전에이 함수를 한 번 이상 호출 해야 합니다 ( [Cfilefind:: FindNextFile](../../mfc/reference/cfilefind-class.md#findnextfile)참조).
 
-`FindNextFile`Win32 함수 [Findnextfile](/windows/win32/api/fileapi/nf-fileapi-findnextfilew)을 래핑합니다.
+`FindNextFile` Win32 함수 [Findnextfile](/windows/win32/api/fileapi/nf-fileapi-findnextfilew)을 래핑합니다.
 
 ### <a name="example"></a>예제
 
   이 항목의 앞부분에 나오는 예제를 참조 하세요.
 
-## <a name="cftpfilefindgetfileurl"></a><a name="getfileurl"></a>CGetFileURL Filefind::
+## <a name="cftpfilefindgetfileurl"></a><a name="getfileurl"></a> CGetFileURL Filefind::
 
 이 멤버 함수를 호출 하 여 지정 된 파일의 URL을 가져옵니다.
 
@@ -175,7 +176,7 @@ URL (Universal Resource Locator)의 파일 및 경로입니다.
 
 ### <a name="remarks"></a>설명
 
-`GetFileURL`는 결과를 URL 형식으로 제공 한다는 점을 제외 하 고는 멤버 함수 [Cfilefind:: GetFilePath](../../mfc/reference/cfilefind-class.md#getfilepath) 와 비슷합니다. 와 마찬가지로 `CFileFind::GetFilePath` 결과에는 파일 이름이 포함 되지 않습니다. 예를 들어 `file1.txt` 에 있는는를 `//moose/dir/file1.txt:` 반환 `ftp://moose/dir/` 합니다.
+`GetFileURL` 는 결과를 URL 형식으로 제공 한다는 점을 제외 하 고는 멤버 함수 [Cfilefind:: GetFilePath](../../mfc/reference/cfilefind-class.md#getfilepath) 와 비슷합니다. 와 마찬가지로 `CFileFind::GetFilePath` 결과에는 파일 이름이 포함 되지 않습니다. 예를 들어 `file1.txt` 에 있는는를 `//moose/dir/file1.txt:` 반환 `ftp://moose/dir/` 합니다.
 
 ## <a name="see-also"></a>참고 항목
 
