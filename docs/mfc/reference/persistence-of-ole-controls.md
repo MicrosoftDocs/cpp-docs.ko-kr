@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: OLE 컨트롤의 지 속성'
 title: OLE 컨트롤의 지속성
 ms.date: 11/04/2016
 helpviewer_keywords:
 - OLE controls [MFC], persistence
 - persistence, OLE controls
 ms.assetid: 64f8dc80-f110-41af-b3ea-14948f6bfdf7
-ms.openlocfilehash: f3ef5a1f465cc478b429b9fa41d6478f22030a8a
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 8c0ee5b81ffd21953c3ed9bcbc21a9ae30979b49
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843614"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97218981"
 ---
 # <a name="persistence-of-ole-controls"></a>OLE 컨트롤의 지속성
 
@@ -21,9 +22,9 @@ OLE 컨트롤의 한 가지 기능은 OLE 컨트롤에서 파일 또는 스트�
 |Name|설명|
 |-|-|
 |[PX_Blob](#px_blob)|BLOB (binary large object) 데이터를 저장 하는 컨트롤 속성을 교환 합니다.|
-|[PX_Bool](#px_bool)|**BOOL**형식의 컨트롤 속성을 교환 합니다.|
+|[PX_Bool](#px_bool)|**BOOL** 형식의 컨트롤 속성을 교환 합니다.|
 |[PX_Color](#px_color)|컨트롤의 색 속성을 교환 합니다.|
-|[PX_Currency](#px_currency)|**CY**형식의 컨트롤 속성을 교환 합니다.|
+|[PX_Currency](#px_currency)|**CY** 형식의 컨트롤 속성을 교환 합니다.|
 |[PX_DataPath](#px_datapath)|형식의 컨트롤 속성을 교환 `CDataPathProperty` 합니다.|
 |[PX_Double](#px_double)|형식의 컨트롤 속성을 교환 **`double`** 합니다.|
 |[PX_Font](#px_font)|컨트롤의 글꼴 속성을 교환 합니다.|
@@ -32,8 +33,8 @@ OLE 컨트롤의 한 가지 기능은 OLE 컨트롤에서 파일 또는 스트�
 |[PX_Long](#px_long)|형식의 컨트롤 속성을 교환 **`long`** 합니다.|
 |[PX_Picture](#px_picture)|컨트롤의 그림 속성을 교환 합니다.|
 |[PX_Short](#px_short)|형식의 컨트롤 속성을 교환 **`short`** 합니다.|
-|[PX_ULong](#px_ulong)|**ULONG**형식의 컨트롤 속성을 교환 합니다.|
-|[PX_UShort](#px_ushort)|**USHORT**형식의 컨트롤 속성을 교환 합니다.|
+|[PX_ULong](#px_ulong)|**ULONG** 형식의 컨트롤 속성을 교환 합니다.|
+|[PX_UShort](#px_ushort)|**USHORT** 형식의 컨트롤 속성을 교환 합니다.|
 |[PXstring](#px_string)|문자열 컨트롤 속성을 교환 합니다.|
 |[PX_VBXFontConvert](#px_vbxfontconvert)|VBX 컨트롤의 글꼴 관련 속성을 OLE 컨트롤 글꼴 속성으로 교환 합니다.|
 
@@ -71,7 +72,7 @@ BOOL PX_Blob(
 
 ### <a name="remarks"></a>설명
 
-속성의 값을 적절 하 게 *Hblob*에서 참조 하는 변수에서 읽거나 씁니다. 처음으로를 호출 하기 전에이 변수를 NULL로 초기화 해야 합니다 `PX_Blob` . 일반적으로이 작업은 컨트롤의 생성자에서 수행할 수 있습니다. *Hblobdefault* 를 지정 하면 속성의 기본값으로 사용 됩니다. 어떤 이유로 든 컨트롤의 초기화 또는 serialization 프로세스가 실패 하는 경우이 값이 사용 됩니다.
+속성의 값을 적절 하 게 *Hblob* 에서 참조 하는 변수에서 읽거나 씁니다. 처음으로를 호출 하기 전에이 변수를 NULL로 초기화 해야 합니다 `PX_Blob` . 일반적으로이 작업은 컨트롤의 생성자에서 수행할 수 있습니다. *Hblobdefault* 를 지정 하면 속성의 기본값으로 사용 됩니다. 어떤 이유로 든 컨트롤의 초기화 또는 serialization 프로세스가 실패 하는 경우이 값이 사용 됩니다.
 
 *Hblob* 및 *hblobdefault* 핸들은 다음을 포함 하는 메모리 블록을 참조 합니다.
 
@@ -118,7 +119,7 @@ BOOL PX_Bool(
 
 ### <a name="remarks"></a>설명
 
-속성의 값은 *Bvalue*에서 참조 하는 변수에서 읽거나 적절 하 게 기록 됩니다. *Bdefault* 를 지정 하면 속성의 기본값으로 사용 됩니다. 어떤 이유로 든 컨트롤의 serialization 프로세스가 실패 하는 경우이 값이 사용 됩니다.
+속성의 값은 *Bvalue* 에서 참조 하는 변수에서 읽거나 적절 하 게 기록 됩니다. *Bdefault* 를 지정 하면 속성의 기본값으로 사용 됩니다. 어떤 이유로 든 컨트롤의 serialization 프로세스가 실패 하는 경우이 값이 사용 됩니다.
 
 ## <a name="px_color"></a><a name="px_color"></a> PX_Color
 
@@ -157,11 +158,11 @@ BOOL PX_Color(
 
 ### <a name="remarks"></a>설명
 
-속성의 값은 적절 하 게 *Clrvalue*에서 참조 하는 변수에 읽거나 기록 됩니다. *Clrdefault* 를 지정 하면 속성의 기본값으로 사용 됩니다. 어떤 이유로 든 컨트롤의 serialization 프로세스가 실패 하는 경우이 값이 사용 됩니다.
+속성의 값은 적절 하 게 *Clrvalue* 에서 참조 하는 변수에 읽거나 기록 됩니다. *Clrdefault* 를 지정 하면 속성의 기본값으로 사용 됩니다. 어떤 이유로 든 컨트롤의 serialization 프로세스가 실패 하는 경우이 값이 사용 됩니다.
 
 ## <a name="px_currency"></a><a name="px_currency"></a> PX_Currency
 
-컨트롤의 멤버 함수 내에서이 함수 `DoPropExchange` 를 호출 하 여 **currency**형식의 속성을 serialize 또는 초기화 합니다.
+컨트롤의 멤버 함수 내에서이 함수 `DoPropExchange` 를 호출 하 여 **currency** 형식의 속성을 serialize 또는 초기화 합니다.
 
 ```cpp
 BOOL PX_Currency(
@@ -196,7 +197,7 @@ BOOL PX_Currency(
 
 ### <a name="remarks"></a>설명
 
-속성의 값은 *cyValue*에서 참조 하는 변수에서 읽거나 적절 하 게 기록 됩니다. *CyDefault* 를 지정 하면 속성의 기본값으로 사용 됩니다. 어떤 이유로 든 컨트롤의 serialization 프로세스가 실패 하는 경우이 값이 사용 됩니다.
+속성의 값은 *cyValue* 에서 참조 하는 변수에서 읽거나 적절 하 게 기록 됩니다. *CyDefault* 를 지정 하면 속성의 기본값으로 사용 됩니다. 어떤 이유로 든 컨트롤의 serialization 프로세스가 실패 하는 경우이 값이 사용 됩니다.
 
 ## <a name="px_datapath"></a><a name="px_datapath"></a> PX_DataPath
 
@@ -230,7 +231,7 @@ BOOL PX_DataPath(
 
 ### <a name="remarks"></a>설명
 
-데이터 경로 속성은 비동기 컨트롤 속성을 구현 합니다. 속성의 값은 *dataPathProperty*에서 참조 하는 변수에서 읽거나 적절 하 게 기록 됩니다.
+데이터 경로 속성은 비동기 컨트롤 속성을 구현 합니다. 속성의 값은 *dataPathProperty* 에서 참조 하는 변수에서 읽거나 적절 하 게 기록 됩니다.
 
 ## <a name="px_double"></a><a name="px_double"></a> PX_Double
 
@@ -269,7 +270,7 @@ BOOL PX_Double(
 
 ### <a name="remarks"></a>설명
 
-속성의 값은 *doubleValue*에서 참조 하는 변수에서 읽거나 적절 하 게 기록 됩니다. *DoubleDefault* 를 지정 하면 속성의 기본값으로 사용 됩니다. 어떤 이유로 든 컨트롤의 serialization 프로세스가 실패 하는 경우이 값이 사용 됩니다.
+속성의 값은 *doubleValue* 에서 참조 하는 변수에서 읽거나 적절 하 게 기록 됩니다. *DoubleDefault* 를 지정 하면 속성의 기본값으로 사용 됩니다. 어떤 이유로 든 컨트롤의 serialization 프로세스가 실패 하는 경우이 값이 사용 됩니다.
 
 ## <a name="px_font"></a><a name="px_font"></a> PX_Font
 
@@ -307,7 +308,7 @@ BOOL PX_Font(
 
 ### <a name="remarks"></a>설명
 
-속성의 값은 해당 하는 `font` 경우 참조에서 읽거나 씁니다 `CFontHolder` . *Pfontdesc* 및 *pFontDispAmbient* 가 지정 된 경우 필요한 경우 속성의 기본값을 초기화 하는 데 사용 됩니다. 이러한 값은 어떤 이유로 든 컨트롤의 serialization 프로세스가 실패 하는 경우에 사용 됩니다. 일반적으로 *P글꼴 desc* 에 대해 NULL을 전달 하 고 `COleControl::AmbientFont` *pFontDispAmbient*에 대해에서 반환 된 앰비언트 값을 전달 합니다. 에서 반환 되는 글꼴 개체는 `COleControl::AmbientFont` 멤버 함수를 호출 하 여 해제 해야 합니다 `IFontDisp::Release` .
+속성의 값은 해당 하는 `font` 경우 참조에서 읽거나 씁니다 `CFontHolder` . *Pfontdesc* 및 *pFontDispAmbient* 가 지정 된 경우 필요한 경우 속성의 기본값을 초기화 하는 데 사용 됩니다. 이러한 값은 어떤 이유로 든 컨트롤의 serialization 프로세스가 실패 하는 경우에 사용 됩니다. 일반적으로 *P글꼴 desc* 에 대해 NULL을 전달 하 고 `COleControl::AmbientFont` *pFontDispAmbient* 에 대해에서 반환 된 앰비언트 값을 전달 합니다. 에서 반환 되는 글꼴 개체는 `COleControl::AmbientFont` 멤버 함수를 호출 하 여 해제 해야 합니다 `IFontDisp::Release` .
 
 ## <a name="px_float"></a><a name="px_float"></a> PX_Float
 
@@ -346,7 +347,7 @@ BOOL PX_Float(
 
 ### <a name="remarks"></a>설명
 
-속성의 값은 *floatValue*에서 참조 하는 변수에서 읽거나 적절 하 게 기록 됩니다. *FloatDefault* 를 지정 하면 속성의 기본값으로 사용 됩니다. 어떤 이유로 든 컨트롤의 serialization 프로세스가 실패 하는 경우이 값이 사용 됩니다.
+속성의 값은 *floatValue* 에서 참조 하는 변수에서 읽거나 적절 하 게 기록 됩니다. *FloatDefault* 를 지정 하면 속성의 기본값으로 사용 됩니다. 어떤 이유로 든 컨트롤의 serialization 프로세스가 실패 하는 경우이 값이 사용 됩니다.
 
 ## <a name="px_iunknown"></a><a name="px_iunknown"></a> PX_IUnknown
 
@@ -384,7 +385,7 @@ BOOL PX_IUnknown(
 
 ### <a name="remarks"></a>설명
 
-속성의 값은 *pUnk*에서 참조 하는 변수에서 읽거나 적절 하 게 기록 됩니다. *PUnkDefault* 를 지정 하면 속성의 기본값으로 사용 됩니다. 어떤 이유로 든 컨트롤의 serialization 프로세스가 실패 하는 경우이 값이 사용 됩니다.
+속성의 값은 *pUnk* 에서 참조 하는 변수에서 읽거나 적절 하 게 기록 됩니다. *PUnkDefault* 를 지정 하면 속성의 기본값으로 사용 됩니다. 어떤 이유로 든 컨트롤의 serialization 프로세스가 실패 하는 경우이 값이 사용 됩니다.
 
 ## <a name="px_long"></a><a name="px_long"></a> PX_Long
 
@@ -423,7 +424,7 @@ BOOL PX_Long(
 
 ### <a name="remarks"></a>설명
 
-속성의 값을 적절 하 게 *lValue*에서 참조 하는 변수에서 읽거나 씁니다. *Ldefault* 를 지정 하면 속성의 기본값으로 사용 됩니다. 어떤 이유로 든 컨트롤의 serialization 프로세스가 실패 하는 경우이 값이 사용 됩니다.
+속성의 값을 적절 하 게 *lValue* 에서 참조 하는 변수에서 읽거나 씁니다. *Ldefault* 를 지정 하면 속성의 기본값으로 사용 됩니다. 어떤 이유로 든 컨트롤의 serialization 프로세스가 실패 하는 경우이 값이 사용 됩니다.
 
 ## <a name="px_picture"></a><a name="px_picture"></a> PX_Picture
 
@@ -462,7 +463,7 @@ BOOL PX_Picture(
 
 ### <a name="remarks"></a>설명
 
-적절 한 경우에는 *pict*에서 참조 하는 변수에서 속성의 값을 읽거나 씁니다. *PictDefault* 를 지정 하면 속성의 기본값으로 사용 됩니다. 어떤 이유로 든 컨트롤의 serialization 프로세스가 실패 하는 경우이 값이 사용 됩니다.
+적절 한 경우에는 *pict* 에서 참조 하는 변수에서 속성의 값을 읽거나 씁니다. *PictDefault* 를 지정 하면 속성의 기본값으로 사용 됩니다. 어떤 이유로 든 컨트롤의 serialization 프로세스가 실패 하는 경우이 값이 사용 됩니다.
 
 ## <a name="px_short"></a><a name="px_short"></a> PX_Short
 
@@ -501,11 +502,11 @@ BOOL PX_Short(
 
 ### <a name="remarks"></a>설명
 
-속성의 값은 *sValue*에서 참조 하는 변수에서 읽거나 적절 하 게 기록 됩니다. *Sdefault* 를 지정 하면 속성의 기본값으로 사용 됩니다. 어떤 이유로 든 컨트롤의 serialization 프로세스가 실패 하는 경우이 값이 사용 됩니다.
+속성의 값은 *sValue* 에서 참조 하는 변수에서 읽거나 적절 하 게 기록 됩니다. *Sdefault* 를 지정 하면 속성의 기본값으로 사용 됩니다. 어떤 이유로 든 컨트롤의 serialization 프로세스가 실패 하는 경우이 값이 사용 됩니다.
 
 ## <a name="px_ulong"></a><a name="px_ulong"></a> PX_ULong
 
-컨트롤의 멤버 함수 내에서이 함수 `DoPropExchange` 를 호출 하 여 **ULONG**형식의 속성을 serialize 또는 초기화 합니다.
+컨트롤의 멤버 함수 내에서이 함수 `DoPropExchange` 를 호출 하 여 **ULONG** 형식의 속성을 serialize 또는 초기화 합니다.
 
 ```cpp
 BOOL PX_ULong(
@@ -540,7 +541,7 @@ BOOL PX_ULong(
 
 ### <a name="remarks"></a>설명
 
-속성의 값은 *Ulvalue*에서 참조 하는 변수에서 적절 하 게 읽거나 씁니다. *Uldefault* 를 지정 하면 속성의 기본값으로 사용 됩니다. 어떤 이유로 든 컨트롤의 serialization 프로세스가 실패 하는 경우이 값이 사용 됩니다.
+속성의 값은 *Ulvalue* 에서 참조 하는 변수에서 적절 하 게 읽거나 씁니다. *Uldefault* 를 지정 하면 속성의 기본값으로 사용 됩니다. 어떤 이유로 든 컨트롤의 serialization 프로세스가 실패 하는 경우이 값이 사용 됩니다.
 
 ## <a name="px_ushort"></a><a name="px_ushort"></a> PX_UShort
 
@@ -579,7 +580,7 @@ BOOL PX_UShort(
 
 ### <a name="remarks"></a>설명
 
-속성의 값을 적절 하 게 *Usvalue*에서 참조 하는 변수에 읽거나 씁니다. *Usdefault* 를 지정 하면 속성의 기본값으로 사용 됩니다. 어떤 이유로 든 컨트롤의 serialization 프로세스가 실패 하는 경우이 값이 사용 됩니다.
+속성의 값을 적절 하 게 *Usvalue* 에서 참조 하는 변수에 읽거나 씁니다. *Usdefault* 를 지정 하면 속성의 기본값으로 사용 됩니다. 어떤 이유로 든 컨트롤의 serialization 프로세스가 실패 하는 경우이 값이 사용 됩니다.
 
 ## <a name="pxstring"></a><a name="px_string"></a> PXstring
 
@@ -618,7 +619,7 @@ BOOL PXstring(
 
 ### <a name="remarks"></a>설명
 
-속성의 값은 *Strvalue*에서 참조 하는 변수를 적절 하 게 읽거나 씁니다. *Strdefault* 를 지정 하면 속성의 기본값으로 사용 됩니다. 어떤 이유로 든 컨트롤의 serialization 프로세스가 실패 하는 경우이 값이 사용 됩니다.
+속성의 값은 *Strvalue* 에서 참조 하는 변수를 적절 하 게 읽거나 씁니다. *Strdefault* 를 지정 하면 속성의 기본값으로 사용 됩니다. 어떤 이유로 든 컨트롤의 serialization 프로세스가 실패 하는 경우이 값이 사용 됩니다.
 
 ## <a name="px_vbxfontconvert"></a><a name="px_vbxfontconvert"></a> PX_VBXFontConvert
 

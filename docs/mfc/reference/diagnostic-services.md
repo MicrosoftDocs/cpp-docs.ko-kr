@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 진단 서비스'
 title: 진단 서비스
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - diagnostics [MFC], diagnostic services
 - diagnostic functions and variables [MFC]
 ms.assetid: 8d78454f-9fae-49c2-88c9-d3fabd5393e8
-ms.openlocfilehash: 931545e6a79ecaa59d147e48265649ef20466fbd
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 3d2b7bd303fc062aa520497e649430f53f7667c5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837400"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97220073"
 ---
 # <a name="diagnostic-services"></a>진단 서비스
 
@@ -43,7 +44,7 @@ MFC 라이브러리는 프로그램을 더 쉽게 디버그할 수 있는 많은
 
 구현 파일에서에 대 한 모든 호출에는 **`new`** 메모리 할당이 발생 한 파일 이름 및 줄 번호가 저장 됩니다. [Cmemorystate::D umpallobjectssince](cmemorystate-structure.md#dumpallobjectssince) 함수는이 추가 정보를 표시 하 여 메모리 누수를 식별할 수 있도록 합니다. 진단 출력에 대 한 추가 정보는 [CDumpContext](../../mfc/reference/cdumpcontext-class.md) 클래스를 참조 하세요.
 
-또한 C 런타임 라이브러리는 애플리케이션을 디버그하는 데 사용할 수 있는 진단 함수 집합도 지원합니다. 자세한 내용은 런타임 라이브러리 참조에서 [루틴 디버그](../../c-runtime-library/debug-routines.md) 를 참조 하세요.
+또한 C 런타임 라이브러리는 애플리케이션을 디버그하는 데 사용할 수 있는 진단 함수 집합도 지원합니다. 자세한 내용은 Run-Time 라이브러리 참조에서 [루틴 디버그](../../c-runtime-library/debug-routines.md) 를 참조 하세요.
 
 ### <a name="mfc-general-diagnostic-macros"></a>MFC 일반 진단 매크로
 
@@ -56,7 +57,7 @@ MFC 라이브러리는 프로그램을 더 쉽게 디버그할 수 있는 많은
 |[DEBUG_ONLY](#debug_only)|ASSERT와 비슷하지만, 식의 값을 테스트하지는 않습니다. 디버그 모드에서만 실행해야 하는 코드에 유용합니다.|
 |[및 ENSURE_VALID 확인](#ensure)|를 사용 하 여 데이터 정확성의 유효성을 검사 합니다.|
 |[THIS_FILE](#this_file)|는 컴파일되는 파일의 이름으로 확장 됩니다.|
-|[추적](#trace)|라이브러리의 디버그 버전에서 `printf`와 유사한 기능을 제공합니다.|
+|[TRACE](#trace)|라이브러리의 디버그 버전에서 `printf`와 유사한 기능을 제공합니다.|
 |[올바른지](#verify)|ASSERT와 비슷하지만, 라이브러리의 릴리스 버전뿐만 아니라 디버그 버전에서도 식을 계산합니다.|
 
 ### <a name="mfc-general-diagnostic-variables-and-functions"></a>MFC 일반 진단 변수 및 함수
@@ -416,7 +417,7 @@ CDumpContext  afxDump;
 
 `afxDump`는 디버거 출력 창 또는 디버그 터미널에 `CDumpContext` 정보를 보낼 수 있도록 하는 미리 정의 된 [CDumpContext](../../mfc/reference/cdumpcontext-class.md) 개체입니다. 일반적으로 `afxDump` 에 대 한 매개 변수로를 제공 `CObject::Dump` 합니다.
 
-Windows NT 및 모든 버전의 Windows에서 `afxDump` 응용 프로그램을 디버그할 때 출력은 Visual C++의 출력 디버그 창으로 전송 됩니다.
+Windows NT 및 모든 버전의 Windows에서 `afxDump` 응용 프로그램을 디버그할 때 출력은 Visual C++ Output-Debug 창으로 전송 됩니다.
 
 이 변수는 MFC의 디버그 버전에만 정의 됩니다. 에 대 한 자세한 내용은 `afxDump` [MFC 응용 프로그램 디버깅](/visualstudio/debugger/mfc-debugging-techniques)을 참조 하세요.
 
@@ -734,7 +735,7 @@ BOOL AfxIsMemoryBlock(
 
 ### <a name="remarks"></a>설명
 
-또한 지정 된 크기를 원래 할당 된 크기와 비교 하 여 확인 합니다. 함수가 0이 아닌 값을 반환 하는 경우 할당 시퀀스 번호는 *Plrequestnumber*로 반환 됩니다. 이 숫자는 다른 모든 할당을 기준으로 블록이 할당 된 순서를 나타냅니다 **`new`** .
+또한 지정 된 크기를 원래 할당 된 크기와 비교 하 여 확인 합니다. 함수가 0이 아닌 값을 반환 하는 경우 할당 시퀀스 번호는 *Plrequestnumber* 로 반환 됩니다. 이 숫자는 다른 모든 할당을 기준으로 블록이 할당 된 순서를 나타냅니다 **`new`** .
 
 ### <a name="example"></a>예제
 
@@ -875,7 +876,7 @@ AFXAPI AfxDoForAllClasses(
 
 ### <a name="remarks"></a>설명
 
-Serializable `CObject` 파생 클래스는 DECLARE_SERIAL 매크로를 사용 하 여 파생 된 클래스입니다. PContext에서에 전달 되는 포인터는 `AfxDoForAllClasses` 호출 될 때마다 지정 된 반복 함수에 전달 됩니다. *pContext*
+Serializable `CObject` 파생 클래스는 DECLARE_SERIAL 매크로를 사용 하 여 파생 된 클래스입니다. PContext에서에 전달 되는 포인터는 `AfxDoForAllClasses` 호출 될 때마다 지정 된 반복 함수에 전달 됩니다. 
 
 > [!NOTE]
 > 이 함수는 MFC의 디버그 버전 에서만 작동 합니다.
@@ -910,7 +911,7 @@ void AfxDoForAllObjects(
 
 ### <a name="remarks"></a>설명
 
-스택, 전역 또는 포함 된 개체는 열거 되지 않습니다. PContext에서에 전달 된 포인터는 호출 될 때마다 `AfxDoForAllObjects` 지정 된 반복 함수에 전달 됩니다. *pContext*
+스택, 전역 또는 포함 된 개체는 열거 되지 않습니다. PContext에서에 전달 된 포인터는 호출 될 때마다 `AfxDoForAllObjects` 지정 된 반복 함수에 전달 됩니다. 
 
 > [!NOTE]
 > 이 함수는 MFC의 디버그 버전 에서만 작동 합니다.

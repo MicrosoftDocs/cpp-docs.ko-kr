@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 레코드 필드 교환 함수'
 title: 레코드 필드 교환 함수
 ms.date: 09/17/2019
 f1_keywords:
@@ -45,12 +46,12 @@ helpviewer_keywords:
 - RFX (record field exchange), data exchange functions [MFC]
 - RFX (record field exchange)
 ms.assetid: 6e4c5c1c-acb7-4c18-bf51-bf7959a696cd
-ms.openlocfilehash: 9bb1b7bcbce16bba8029fcfbbeea7552b1d4a0ba
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 2ba3a83bdda21f91913d7eda435a845b0977e8a9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843601"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97218955"
 ---
 # <a name="record-field-exchange-functions"></a>레코드 필드 교환 함수
 
@@ -271,7 +272,7 @@ void RFX_Date(
 
 ## <a name="rfx_double"></a><a name="rfx_double"></a> RFX_Double
 
-개체 **double float** 의 필드 데이터 멤버 `CRecordset` 와 ODBC 형식의 데이터 원본에 있는 레코드의 열 간에 이중 float 데이터를 전송 SQL_DOUBLE 합니다.
+개체  의 필드 데이터 멤버 `CRecordset` 와 ODBC 형식의 데이터 원본에 있는 레코드의 열 간에 이중 float 데이터를 전송 SQL_DOUBLE 합니다.
 
 ### <a name="syntax"></a>구문
 
@@ -461,10 +462,10 @@ void RFX_Text(
 전송 되는 문자열 또는 배열의 최대 허용 길이입니다. *Nmaxlength* 의 기본값은 255입니다. 올바른 값은 1에서 INT_MAX)입니다. 프레임 워크는 데이터에이 크기의 공간을 할당 합니다. 최상의 성능을 위해 원하는 가장 큰 데이터 항목을 수용할 만큼 충분히 큰 값을 전달 합니다.
 
 *nColumnType*<br/>
-주로 매개 변수에 사용 됩니다. 매개 변수의 데이터 형식을 나타내는 정수입니다. 형식은 **SQL_XXX**형식의 ODBC 데이터 형식입니다.
+주로 매개 변수에 사용 됩니다. 매개 변수의 데이터 형식을 나타내는 정수입니다. 형식은 **SQL_XXX** 형식의 ODBC 데이터 형식입니다.
 
 *nScale*<br/>
-ODBC 유형 SQL_DECIMAL 또는 SQL_NUMERIC의 값에 대 한 소수 자릿수를 지정 합니다. *Nscale* 은 매개 변수 값을 설정할 때만 유용 합니다. 자세한 내용은 *ODBC SDK 프로그래머 참조*의 부록 D에서 "전체 자릿수, 소수 자릿수, 길이 및 표시 크기" 항목을 참조 하세요.
+ODBC 유형 SQL_DECIMAL 또는 SQL_NUMERIC의 값에 대 한 소수 자릿수를 지정 합니다. *Nscale* 은 매개 변수 값을 설정할 때만 유용 합니다. 자세한 내용은 *ODBC SDK 프로그래머 참조* 의 부록 D에서 "전체 자릿수, 소수 자릿수, 길이 및 표시 크기" 항목을 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
@@ -523,10 +524,10 @@ void RFX_Binary_Bulk(
 바이트 값 배열에 대 한 포인터입니다. 이 배열은 데이터 원본에서 레코드 집합으로 전송 될 데이터를 저장 합니다.
 
 *prgLengths*<br/>
-Long 정수 배열에 대 한 포인터입니다. 이 배열은 *prgByteVals*가 가리키는 배열에 있는 각 값의 길이 (바이트)를 저장 합니다. 해당 데이터 항목에 Null 값이 포함 되어 있으면 SQL_NULL_DATA 값이 저장 됩니다. 자세한 내용은 `SQLBindCol` *Odbc SDK 프로그래머 참조*의 odbc API 함수를 참조 하세요.
+Long 정수 배열에 대 한 포인터입니다. 이 배열은 *prgByteVals* 가 가리키는 배열에 있는 각 값의 길이 (바이트)를 저장 합니다. 해당 데이터 항목에 Null 값이 포함 되어 있으면 SQL_NULL_DATA 값이 저장 됩니다. 자세한 내용은 `SQLBindCol` *Odbc SDK 프로그래머 참조* 의 odbc API 함수를 참조 하세요.
 
 *nMaxLength*<br/>
-*PrgByteVals*가 가리키는 배열에 저장 된 값의 최대 허용 길이입니다. 데이터가 잘리지 않도록 하려면 원하는 가장 큰 데이터 항목을 수용할 만큼 충분히 큰 값을 전달 합니다.
+*PrgByteVals* 가 가리키는 배열에 저장 된 값의 최대 허용 길이입니다. 데이터가 잘리지 않도록 하려면 원하는 가장 큰 데이터 항목을 수용할 만큼 충분히 큰 값을 전달 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -573,7 +574,7 @@ void RFX_Bool_Bulk(
 BOOL 값 배열에 대 한 포인터입니다. 이 배열은 데이터 원본에서 레코드 집합으로 전송 될 데이터를 저장 합니다.
 
 *prgLengths*<br/>
-Long 정수 배열에 대 한 포인터입니다. 이 배열은 *prgBoolVals*가 가리키는 배열에 있는 각 값의 길이 (바이트)를 저장 합니다. 해당 데이터 항목에 Null 값이 포함 되어 있으면 SQL_NULL_DATA 값이 저장 됩니다. 자세한 내용은 `SQLBindCol` *Odbc SDK 프로그래머 참조*의 odbc API 함수를 참조 하세요.
+Long 정수 배열에 대 한 포인터입니다. 이 배열은 *prgBoolVals* 가 가리키는 배열에 있는 각 값의 길이 (바이트)를 저장 합니다. 해당 데이터 항목에 Null 값이 포함 되어 있으면 SQL_NULL_DATA 값이 저장 됩니다. 자세한 내용은 `SQLBindCol` *Odbc SDK 프로그래머 참조* 의 odbc API 함수를 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
@@ -620,7 +621,7 @@ void RFX_Byte_Bulk(
 바이트 값 배열에 대 한 포인터입니다. 이 배열은 데이터 원본에서 레코드 집합으로 전송 될 데이터를 저장 합니다.
 
 *prgLengths*<br/>
-Long 정수 배열에 대 한 포인터입니다. 이 배열은 *prgByteVals*가 가리키는 배열에 있는 각 값의 길이 (바이트)를 저장 합니다. 해당 데이터 항목에 Null 값이 포함 되어 있으면 SQL_NULL_DATA 값이 저장 됩니다. 자세한 내용은 `SQLBindCol` *Odbc SDK 프로그래머 참조*의 odbc API 함수를 참조 하세요.
+Long 정수 배열에 대 한 포인터입니다. 이 배열은 *prgByteVals* 가 가리키는 배열에 있는 각 값의 길이 (바이트)를 저장 합니다. 해당 데이터 항목에 Null 값이 포함 되어 있으면 SQL_NULL_DATA 값이 저장 됩니다. 자세한 내용은 `SQLBindCol` *Odbc SDK 프로그래머 참조* 의 odbc API 함수를 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
@@ -664,10 +665,10 @@ void RFX_Date_Bulk(
 데이터 열의 이름입니다.
 
 *prgTSVals*<br/>
-TIMESTAMP_STRUCT 값 배열에 대 한 포인터입니다. 이 배열은 데이터 원본에서 레코드 집합으로 전송 될 데이터를 저장 합니다. TIMESTAMP_STRUCT 데이터 형식에 대 한 자세한 내용은 *ODBC SDK 프로그래머 참조*의 부록 D에서 "C 데이터 형식" 항목을 참조 하세요.
+TIMESTAMP_STRUCT 값 배열에 대 한 포인터입니다. 이 배열은 데이터 원본에서 레코드 집합으로 전송 될 데이터를 저장 합니다. TIMESTAMP_STRUCT 데이터 형식에 대 한 자세한 내용은 *ODBC SDK 프로그래머 참조* 의 부록 D에서 "C 데이터 형식" 항목을 참조 하세요.
 
 *prgLengths*<br/>
-Long 정수 배열에 대 한 포인터입니다. 이 배열은 *prgTSVals*가 가리키는 배열에 있는 각 값의 길이 (바이트)를 저장 합니다. 해당 데이터 항목에 Null 값이 포함 되어 있으면 SQL_NULL_DATA 값이 저장 됩니다. 자세한 내용은 `SQLBindCol` *Odbc SDK 프로그래머 참조*의 odbc API 함수를 참조 하세요.
+Long 정수 배열에 대 한 포인터입니다. 이 배열은 *prgTSVals* 가 가리키는 배열에 있는 각 값의 길이 (바이트)를 저장 합니다. 해당 데이터 항목에 Null 값이 포함 되어 있으면 SQL_NULL_DATA 값이 저장 됩니다. 자세한 내용은 `SQLBindCol` *Odbc SDK 프로그래머 참조* 의 odbc API 함수를 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
@@ -714,7 +715,7 @@ void RFX_Double_Bulk(
 값 배열에 대 한 포인터 **`double`** 입니다. 이 배열은 데이터 원본에서 레코드 집합으로 전송 될 데이터를 저장 합니다.
 
 *prgLengths*<br/>
-Long 정수 배열에 대 한 포인터입니다. 이 배열은 *prgDblVals*가 가리키는 배열에 있는 각 값의 길이 (바이트)를 저장 합니다. 해당 데이터 항목에 Null 값이 포함 되어 있으면 SQL_NULL_DATA 값이 저장 됩니다. 자세한 내용은 `SQLBindCol` *Odbc SDK 프로그래머 참조*의 odbc API 함수를 참조 하세요.
+Long 정수 배열에 대 한 포인터입니다. 이 배열은 *prgDblVals* 가 가리키는 배열에 있는 각 값의 길이 (바이트)를 저장 합니다. 해당 데이터 항목에 Null 값이 포함 되어 있으면 SQL_NULL_DATA 값이 저장 됩니다. 자세한 내용은 `SQLBindCol` *Odbc SDK 프로그래머 참조* 의 odbc API 함수를 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
@@ -793,7 +794,7 @@ void RFX_Long_Bulk(
 Long 정수 배열에 대 한 포인터입니다. 이 배열은 데이터 원본에서 레코드 집합으로 전송 될 데이터를 저장 합니다.
 
 *prgLengths*<br/>
-Long 정수 배열에 대 한 포인터입니다. 이 배열은 *prgLongVals*가 가리키는 배열에 있는 각 값의 길이 (바이트)를 저장 합니다. 해당 데이터 항목에 Null 값이 포함 되어 있으면 SQL_NULL_DATA 값이 저장 됩니다. 자세한 내용은 `SQLBindCol` *Odbc SDK 프로그래머 참조*의 odbc API 함수를 참조 하세요.
+Long 정수 배열에 대 한 포인터입니다. 이 배열은 *prgLongVals* 가 가리키는 배열에 있는 각 값의 길이 (바이트)를 저장 합니다. 해당 데이터 항목에 Null 값이 포함 되어 있으면 SQL_NULL_DATA 값이 저장 됩니다. 자세한 내용은 `SQLBindCol` *Odbc SDK 프로그래머 참조* 의 odbc API 함수를 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
@@ -840,7 +841,7 @@ void RFX_Single_Bulk(
 값 배열에 대 한 포인터 **`float`** 입니다. 이 배열은 데이터 원본에서 레코드 집합으로 전송 될 데이터를 저장 합니다.
 
 *prgLengths*<br/>
-Long 정수 배열에 대 한 포인터입니다. 이 배열은 *prgFltVals*가 가리키는 배열에 있는 각 값의 길이 (바이트)를 저장 합니다. 해당 데이터 항목에 Null 값이 포함 되어 있으면 SQL_NULL_DATA 값이 저장 됩니다. 자세한 내용은 `SQLBindCol` *Odbc SDK 프로그래머 참조*의 odbc API 함수를 참조 하세요.
+Long 정수 배열에 대 한 포인터입니다. 이 배열은 *prgFltVals* 가 가리키는 배열에 있는 각 값의 길이 (바이트)를 저장 합니다. 해당 데이터 항목에 Null 값이 포함 되어 있으면 SQL_NULL_DATA 값이 저장 됩니다. 자세한 내용은 `SQLBindCol` *Odbc SDK 프로그래머 참조* 의 odbc API 함수를 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
@@ -888,10 +889,10 @@ void RFX_Text_Bulk(
 LPSTR 값 배열에 대 한 포인터입니다. 이 배열은 데이터 원본에서 레코드 집합으로 전송 될 데이터를 저장 합니다. 최신 버전의 ODBC를 사용 하는 경우 이러한 값은 유니코드로 설정할 수 없습니다.
 
 *prgLengths*<br/>
-Long 정수 배열에 대 한 포인터입니다. 이 배열은 *prgStrVals*가 가리키는 배열에 있는 각 값의 길이 (바이트)를 저장 합니다. 이 길이는 null 종결 문자를 제외 합니다. 해당 데이터 항목에 Null 값이 포함 되어 있으면 SQL_NULL_DATA 값이 저장 됩니다. 자세한 내용은 `SQLBindCol` *Odbc SDK 프로그래머 참조*의 odbc API 함수를 참조 하세요.
+Long 정수 배열에 대 한 포인터입니다. 이 배열은 *prgStrVals* 가 가리키는 배열에 있는 각 값의 길이 (바이트)를 저장 합니다. 이 길이는 null 종결 문자를 제외 합니다. 해당 데이터 항목에 Null 값이 포함 되어 있으면 SQL_NULL_DATA 값이 저장 됩니다. 자세한 내용은 `SQLBindCol` *Odbc SDK 프로그래머 참조* 의 odbc API 함수를 참조 하세요.
 
 *nMaxLength*<br/>
-Null 종결 문자를 포함 하 여 *prgStrVals*가 가리키는 배열에 저장 된 값의 최대 허용 길이입니다. 데이터가 잘리지 않도록 하려면 원하는 가장 큰 데이터 항목을 수용할 만큼 충분히 큰 값을 전달 합니다.
+Null 종결 문자를 포함 하 여 *prgStrVals* 가 가리키는 배열에 저장 된 값의 최대 허용 길이입니다. 데이터가 잘리지 않도록 하려면 원하는 가장 큰 데이터 항목을 수용할 만큼 충분히 큰 값을 전달 합니다.
 
 ### <a name="remarks"></a>설명
 

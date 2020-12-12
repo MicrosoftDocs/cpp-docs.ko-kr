@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: OLE 초기화'
 title: OLE 초기화
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - OLE initialization
 ms.assetid: aa8a54a7-24c3-4344-b2c6-dbcf6084fa31
-ms.openlocfilehash: 13c267df492ab86606e893df4c13e5510e6e546a
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 0efed4fefe62b720852905b6eed44501d4369efa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843692"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97218994"
 ---
 # <a name="ole-initialization"></a>OLE 초기화
 

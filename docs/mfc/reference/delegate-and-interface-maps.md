@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 대리자 및 인터페이스 맵 매크로'
 title: 대리자 및 인터페이스 맵 매크로 (MFC)
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - event map macros [MFC]
 - interface map macros [MFC]
 ms.assetid: 3840e642-ff7d-4bdc-998b-c7d8fc50890e
-ms.openlocfilehash: 01f5cbfb1f751823d218761410bc9091b73cb0a3
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 222625514fa0d6d1d683a6ee4098812298f7ed72
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837452"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97220151"
 ---
 # <a name="delegate-and-interface-map-macros"></a>대리자 및 인터페이스 맵 매크로
 
@@ -230,7 +231,7 @@ INTERFACE_PART( theClass, iid, localClass)
 
 ### <a name="remarks"></a>설명
 
-이를 통해 IID를 *Theclass* 및 *localclass*로 표시 되는 클래스의 멤버에 매핑할 수 있습니다.
+이를 통해 IID를 *Theclass* 및 *localclass* 로 표시 되는 클래스의 멤버에 매핑할 수 있습니다.
 
 인터페이스 맵에 대 한 자세한 내용은 [Technical Note 38](../tn038-mfc-ole-iunknown-implementation.md)를 참조 하십시오.
 
@@ -258,7 +259,7 @@ MAKE_DELEGATE( DELEGATE,  MEMBER) ;
 
 ### <a name="remarks"></a>설명
 
-이 매크로는 *대리자* 및 name *멤버*형식의 관리 되는 이벤트 처리기 대리자를 만듭니다. 관리 되는 이벤트 처리기 대리자를 사용 하면 네이티브 클래스에서 관리 되는 이벤트를 처리할 수 있습니다.
+이 매크로는 *대리자* 및 name *멤버* 형식의 관리 되는 이벤트 처리기 대리자를 만듭니다. 관리 되는 이벤트 처리기 대리자를 사용 하면 네이티브 클래스에서 관리 되는 이벤트를 처리할 수 있습니다.
 
 ### <a name="example"></a>예제
 

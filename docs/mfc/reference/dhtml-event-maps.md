@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: DHTML 이벤트 맵'
 title: DHTML 이벤트 맵
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - DHTML events [MFC], event map
 - DHTML events [MFC]
 ms.assetid: 9a2c8ae7-7216-4a5e-bc60-6b98695be0c6
-ms.openlocfilehash: 099a08298357d99a3d09ed6fc1209d463f6a4526
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b9df8f1aa59472de033943efd28f5c688c61e706
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837426"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97220125"
 ---
 # <a name="dhtml-event-maps"></a>DHTML 이벤트 맵
 
@@ -110,7 +111,7 @@ DHTML 이벤트 맵을 포함 하는 클래스의 이름입니다. 이 클래스
 
 ## <a name="begin_dhtml_event_map_inline"></a><a name="begin_dhtml_event_map_inline"></a> BEGIN_DHTML_EVENT_MAP_INLINE
 
-*ClassName*의 클래스 정의 내에서 DHTML 이벤트 맵의 시작을 표시 합니다.
+*ClassName* 의 클래스 정의 내에서 DHTML 이벤트 맵의 시작을 표시 합니다.
 
 ```cpp
 BEGIN_DHTML_EVENT_MAP_INLINE(className)
@@ -157,7 +158,7 @@ DECLARE_DHTML_EVENT_MAP()
 
 ## <a name="dhtml_event"></a><a name="dhtml_event"></a> DHTML_EVENT
 
-*ElemName*로 식별 되는 HTML 요소에 의해 시작 되는 *dispid* 에 의해 식별 되는 이벤트를 처리 합니다 (문서 수준).
+*ElemName* 로 식별 되는 HTML 요소에 의해 시작 되는 *dispid* 에 의해 식별 되는 이벤트를 처리 합니다 (문서 수준).
 
 ```cpp
 DHTML_EVENT(dispid, elemName,  memberFxn)
@@ -184,7 +185,7 @@ HTML 요소의 ID를 포함 하는 LPCWSTR는 이벤트를 소싱 하거나 NULL
 
 ## <a name="dhtml_event_axcontrol"></a><a name="dhtml_event_axcontrol"></a> DHTML_EVENT_AXCONTROL
 
-*Controlname*으로 식별 되는 ActiveX 컨트롤에서 발생 한 *dispid* 로 식별 되는 이벤트를 처리 합니다.
+*Controlname* 으로 식별 되는 ActiveX 컨트롤에서 발생 한 *dispid* 로 식별 되는 이벤트를 처리 합니다.
 
 ```cpp
 DHTML_EVENT_AXCONTROL(dispid, controlName,  memberFxn)
@@ -211,7 +212,7 @@ DHTML_EVENT_AXCONTROL(dispid, controlName,  memberFxn)
 
 ## <a name="dhtml_event_class"></a><a name="dhtml_event_class"></a> DHTML_EVENT_CLASS
 
-*ElemName*로 식별 되는 CSS 클래스를 사용 하 여 *dispid* 에서 식별 한 이벤트를 문서 수준에서 처리 합니다.
+*ElemName* 로 식별 되는 CSS 클래스를 사용 하 여 *dispid* 에서 식별 한 이벤트를 문서 수준에서 처리 합니다.
 
 ```cpp
 DHTML_EVENT_CLASS(dispid, elemName,  memberFxn)
@@ -238,7 +239,7 @@ HTML 요소의 CSS 클래스를 포함 하는 LPCWSTR는 이벤트를 소싱 합
 
 ## <a name="dhtml_event_element"></a><a name="dhtml_event_element"></a> DHTML_EVENT_ELEMENT
 
-*ElemName*로 식별 되는 요소에서 *dispid*로 식별 되는 이벤트를 처리 합니다.
+*ElemName* 로 식별 되는 요소에서 *dispid* 로 식별 되는 이벤트를 처리 합니다.
 
 ```cpp
 DHTML_EVENT_ELEMENT(dispid, elemName,  memberFxn)
@@ -259,9 +260,9 @@ DHTML_EVENT_ELEMENT(dispid, elemName,  memberFxn)
 
 이 매크로를 사용 하 여 클래스의 [DHTML 이벤트 맵에](#begin_dhtml_event_map_inline) 항목을 추가 합니다.
 
-이 매크로를 사용 하 여 비 버블링 이벤트를 처리 하는 경우 이벤트의 소스는 *elemName*으로 식별 되는 요소가 됩니다.
+이 매크로를 사용 하 여 비 버블링 이벤트를 처리 하는 경우 이벤트의 소스는 *elemName* 으로 식별 되는 요소가 됩니다.
 
-이 매크로를 사용 하 여 버블링 이벤트를 처리 하는 경우 *elemName* 에 의해 식별 되는 요소가 이벤트의 소스가 아닐 수 있습니다. 소스는 *elemName*에 포함 된 모든 요소가 될 수 있습니다.
+이 매크로를 사용 하 여 버블링 이벤트를 처리 하는 경우 *elemName* 에 의해 식별 되는 요소가 이벤트의 소스가 아닐 수 있습니다. 소스는 *elemName* 에 포함 된 모든 요소가 될 수 있습니다.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -269,7 +270,7 @@ DHTML_EVENT_ELEMENT(dispid, elemName,  memberFxn)
 
 ## <a name="dhtml_event_onafterupdate"></a><a name="dhtml_event_onafterupdate"></a> DHTML_EVENT_ONAFTERUPDATE
 
-`onafterupdate` *ElemName*로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
+`onafterupdate` *ElemName* 로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
 
 ```cpp
 DHTML_EVENT_ONAFTERUPDATE(elemName, memberFxn)
@@ -293,7 +294,7 @@ DHTML_EVENT_ONAFTERUPDATE(elemName, memberFxn)
 
 ## <a name="dhtml_event_onbeforeupdate"></a><a name="dhtml_event_onbeforeupdate"></a> DHTML_EVENT_ONBEFOREUPDATE
 
-`onbeforeupdate` *ElemName*로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
+`onbeforeupdate` *ElemName* 로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
 
 ```cpp
 DHTML_EVENT_ONBEFOREUPDATE(elemName, memberFxn)
@@ -365,7 +366,7 @@ DHTML_EVENT_ONCHANGE(elemName, memberFxn)
 
 ## <a name="dhtml_event_onclick"></a><a name="dhtml_event_onclick"></a> DHTML_EVENT_ONCLICK
 
-`onclick` *ElemName*로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
+`onclick` *ElemName* 로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
 
 ```cpp
 DHTML_EVENT_ONCLICK(elemName, memberFxn)
@@ -389,7 +390,7 @@ DHTML_EVENT_ONCLICK(elemName, memberFxn)
 
 ## <a name="dhtml_event_ondataavailable"></a><a name="dhtml_event_ondataavailable"></a> DHTML_EVENT_ONDATAAVAILABLE
 
-`ondataavailable` *ElemName*로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
+`ondataavailable` *ElemName* 로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
 
 ```cpp
 DHTML_EVENT_ONDATAAVAILABLE(elemName, memberFxn)
@@ -413,7 +414,7 @@ DHTML_EVENT_ONDATAAVAILABLE(elemName, memberFxn)
 
 ## <a name="dhtml_event_ondatasetchanged"></a><a name="dhtml_event_ondatasetchanged"></a> DHTML_EVENT_ONDATASETCHANGED
 
-`ondatasetchanged` *ElemName*로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
+`ondatasetchanged` *ElemName* 로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
 
 ```cpp
 DHTML_EVENT_ONDATASETCHANGED(elemName, memberFxn)
@@ -461,7 +462,7 @@ DHTML_EVENT_ONDATASETCOMPLETE(elemName, memberFxn)
 
 ## <a name="dhtml_event_ondblclick"></a><a name="dhtml_event_ondblclick"></a> DHTML_EVENT_ONDBLCLICK
 
-`ondblclick` *ElemName*로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
+`ondblclick` *ElemName* 로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
 
 ```cpp
 DHTML_EVENT_ONDBLCLICK(elemName, memberFxn)
@@ -485,7 +486,7 @@ DHTML_EVENT_ONDBLCLICK(elemName, memberFxn)
 
 ## <a name="dhtml_event_ondragstart"></a><a name="dhtml_event_ondragstart"></a> DHTML_EVENT_ONDRAGSTART
 
-`ondragstart` *ElemName*로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
+`ondragstart` *ElemName* 로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
 
 ```cpp
 DHTML_EVENT_ONDRAGSTART(elemName, memberFxn)
@@ -509,7 +510,7 @@ DHTML_EVENT_ONDRAGSTART(elemName, memberFxn)
 
 ## <a name="dhtml_event_onerrorupdate"></a><a name="dhtml_event_onerrorupdate"></a> DHTML_EVENT_ONERRORUPDATE
 
-`onerrorupdate` *ElemName*로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
+`onerrorupdate` *ElemName* 로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
 
 ```cpp
 DHTML_EVENT_ONERRORUPDATE(elemName, memberFxn)
@@ -533,7 +534,7 @@ DHTML_EVENT_ONERRORUPDATE(elemName, memberFxn)
 
 ## <a name="dhtml_event_onfilterchange"></a><a name="dhtml_event_onfilterchange"></a> DHTML_EVENT_ONFILTERCHANGE
 
-`onfilterchange` *ElemName*로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
+`onfilterchange` *ElemName* 로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
 
 ```cpp
 DHTML_EVENT_ONFILTERCHANGE(elemName, memberFxn)
@@ -581,7 +582,7 @@ DHTML_EVENT_ONFOCUS(elemName, memberFxn)
 
 ## <a name="dhtml_event_onhelp"></a><a name="dhtml_event_onhelp"></a> DHTML_EVENT_ONHELP
 
-`onhelp` *ElemName*로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
+`onhelp` *ElemName* 로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
 
 ```cpp
 DHTML_EVENT_ONHELP(elemName, memberFxn)
@@ -605,7 +606,7 @@ DHTML_EVENT_ONHELP(elemName, memberFxn)
 
 ## <a name="dhtml_event_onkeydown"></a><a name="dhtml_event_onkeydown"></a> DHTML_EVENT_ONKEYDOWN
 
-`onkeydown` *ElemName*로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
+`onkeydown` *ElemName* 로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
 
 ```cpp
 DHTML_EVENT_ONKEYDOWN(elemName, memberFxn)
@@ -629,7 +630,7 @@ DHTML_EVENT_ONKEYDOWN(elemName, memberFxn)
 
 ## <a name="dhtml_event_onkeypress"></a><a name="dhtml_event_onkeypress"></a> DHTML_EVENT_ONKEYPRESS
 
-`onkeypress` *ElemName*로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
+`onkeypress` *ElemName* 로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
 
 ```cpp
 DHTML_EVENT_ONKEYPRESS(elemName, memberFxn)
@@ -653,7 +654,7 @@ DHTML_EVENT_ONKEYPRESS(elemName, memberFxn)
 
 ## <a name="dhtml_event_onkeyup"></a><a name="dhtml_event_onkeyup"></a> DHTML_EVENT_ONKEYUP
 
-`onkeyup` *ElemName*로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
+`onkeyup` *ElemName* 로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
 
 ```cpp
 DHTML_EVENT_ONKEYUP(elemName, memberFxn)
@@ -677,7 +678,7 @@ DHTML_EVENT_ONKEYUP(elemName, memberFxn)
 
 ## <a name="dhtml_event_onmousedown"></a><a name="dhtml_event_onmousedown"></a> DHTML_EVENT_ONMOUSEDOWN
 
-`onmousedown` *ElemName*로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
+`onmousedown` *ElemName* 로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
 
 ```cpp
 DHTML_EVENT_ONMOUSEDOWN(elemName, memberFxn)
@@ -701,7 +702,7 @@ DHTML_EVENT_ONMOUSEDOWN(elemName, memberFxn)
 
 ## <a name="dhtml_event_onmousemove"></a><a name="dhtml_event_onmousemove"></a> DHTML_EVENT_ONMOUSEMOVE
 
-`onmousemove` *ElemName*로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
+`onmousemove` *ElemName* 로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
 
 ```cpp
 DHTML_EVENT_ONMOUSEMOVE(elemName, memberFxn)
@@ -725,7 +726,7 @@ DHTML_EVENT_ONMOUSEMOVE(elemName, memberFxn)
 
 ## <a name="dhtml_event_onmouseout"></a><a name="dhtml_event_onmouseout"></a> DHTML_EVENT_ONMOUSEOUT
 
-`onmouseout` *ElemName*로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
+`onmouseout` *ElemName* 로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
 
 ```cpp
 DHTML_EVENT_ONMOUSEOUT(elemName, memberFxn)
@@ -749,7 +750,7 @@ DHTML_EVENT_ONMOUSEOUT(elemName, memberFxn)
 
 ## <a name="dhtml_event_onmouseover"></a><a name="dhtml_event_onmouseover"></a> DHTML_EVENT_ONMOUSEOVER
 
-`onmouseover` *ElemName*로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
+`onmouseover` *ElemName* 로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
 
 ```cpp
 DHTML_EVENT_ONMOUSEOVER(elemName, memberFxn)
@@ -773,7 +774,7 @@ DHTML_EVENT_ONMOUSEOVER(elemName, memberFxn)
 
 ## <a name="dhtml_event_onmouseup"></a><a name="dhtml_event_onmouseup"></a> DHTML_EVENT_ONMOUSEUP
 
-`onmouseup` *ElemName*로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
+`onmouseup` *ElemName* 로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
 
 ```cpp
 DHTML_EVENT_ONMOUSEUP(elemName, memberFxn)
@@ -821,7 +822,7 @@ DHTML_EVENT_ONRESIZE(elemName, memberFxn)
 
 ## <a name="dhtml_event_onrowenter"></a><a name="dhtml_event_onrowenter"></a> DHTML_EVENT_ONROWENTER
 
-`onrowenter` *ElemName*로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
+`onrowenter` *ElemName* 로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
 
 ```cpp
 DHTML_EVENT_ONROWENTER(elemName, memberFxn)
@@ -845,7 +846,7 @@ DHTML_EVENT_ONROWENTER(elemName, memberFxn)
 
 ## <a name="dhtml_event_onrowexit"></a><a name="dhtml_event_onrowexit"></a> DHTML_EVENT_ONROWEXIT
 
-`onrowexit` *ElemName*로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
+`onrowexit` *ElemName* 로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
 
 ```cpp
 DHTML_EVENT_ONROWEXIT(elemName, memberFxn)
@@ -869,7 +870,7 @@ DHTML_EVENT_ONROWEXIT(elemName, memberFxn)
 
 ## <a name="dhtml_event_onselectstart"></a><a name="dhtml_event_onselectstart"></a> DHTML_EVENT_ONSELECTSTART
 
-`onselectstart` *ElemName*로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
+`onselectstart` *ElemName* 로 식별 되는 HTML 요소에서 발생 한 이벤트를 문서 수준에서 처리 합니다.
 
 ```cpp
 DHTML_EVENT_ONSELECTSTART(elemName, memberFxn)
@@ -893,7 +894,7 @@ DHTML_EVENT_ONSELECTSTART(elemName, memberFxn)
 
 ## <a name="dhtml_event_tag"></a><a name="dhtml_event_tag"></a> DHTML_EVENT_TAG
 
-`dispid` *ElemName*로 식별 되는 html 태그를 사용 하 여에서 가져온 이벤트를 문서 수준에서 처리 합니다.
+`dispid` *ElemName* 로 식별 되는 html 태그를 사용 하 여에서 가져온 이벤트를 문서 수준에서 처리 합니다.
 
 ```cpp
 DHTML_EVENT_TAG(dispid, elemName,  memberFxn)
@@ -1099,13 +1100,13 @@ URL 이벤트 항목 맵을 포함하는 클래스의 이름입니다. 이 클�
 페이지의 URL 또는 HTML 리소스입니다.
 
 *mapName*<br/>
-Url이 *url*인 페이지를 지정 합니다. 이는이 페이지의 이벤트를 매핑하는 [BEGIN_EMBED_DHTML_EVENT_MAP](#begin_embed_dhtml_event_map) 매크로의 *mapName* 와 일치 합니다.
+Url이 *url* 인 페이지를 지정 합니다. 이는이 페이지의 이벤트를 매핑하는 [BEGIN_EMBED_DHTML_EVENT_MAP](#begin_embed_dhtml_event_map) 매크로의 *mapName* 와 일치 합니다.
 
 ### <a name="remarks"></a>설명
 
 페이지가 HTML 리소스인 경우 *url* 은 리소스 ID 번호 (123 또는 ID_HTMLRES1이 아닌 "123")의 문자열 표현 이어야 합니다.
 
-페이지 식별자 *mapName*는 포함 된 DHTML 이벤트 맵을 URL 이벤트 항목 맵에 연결 하는 데 사용 되는 임의의 기호입니다. DHTML 및 URL 이벤트 맵으로 범위가 제한 됩니다.
+페이지 식별자 *mapName* 는 포함 된 DHTML 이벤트 맵을 URL 이벤트 항목 맵에 연결 하는 데 사용 되는 임의의 기호입니다. DHTML 및 URL 이벤트 맵으로 범위가 제한 됩니다.
 
 ### <a name="example"></a>예제
 
