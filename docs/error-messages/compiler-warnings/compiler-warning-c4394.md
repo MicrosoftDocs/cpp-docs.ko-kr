@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 C4394'
 title: 컴파일러 경고 C4394
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4394
 ms.assetid: 5de94de0-17e3-4e7c-92f4-5c3c1b825120
-ms.openlocfilehash: fc4d66444b4ddc5c855e88d466ccc2f42c60e0ca
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 8a732e4cc1b3454a0dd602cd36b9ae8b959a8118
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91510061"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97180762"
 ---
 # <a name="compiler-warning-c4394"></a>컴파일러 경고 C4394
 
@@ -21,7 +22,7 @@ ms.locfileid: "91510061"
 
 공용 액세스 가능성을 갖도록 관리되는 함수를 선언할 수 있습니다. 자세한 내용은 [형식 표시](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Type_visibility) 유형 및 [멤버 표시](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Member_visibility)유형을 참조 하세요.
 
-C4394는 항상 오류로 실행 됩니다.  또는/wd를 사용 하 여이 경고를 해제할 수 있습니다 `#pragma warning` . 자세한 내용은 [경고](../../preprocessor/warning.md) 또는 [/W,/W0,/W1,/W2,](../../build/reference/compiler-option-warning-level.md) /W3,/W4,/W1,/W2,/W3,/W4,/Wall,/wd,/we,/wo,/Wv,/wx (경고 수준)를 참조 하십시오. **/wd**
+C4394는 항상 오류로 실행 됩니다.  또는/wd를 사용 하 여이 경고를 해제할 수 있습니다 `#pragma warning` . 자세한 내용은 [경고](../../preprocessor/warning.md) 또는 [/W,/W0,/W1,/W2,](../../build/reference/compiler-option-warning-level.md) /W3,/W4,/W1,/W2,/W3,/W4,/Wall,/wd,/we,/wo,/Wv,/wx (경고 수준)를 참조 하십시오. 
 
 ## <a name="example"></a>예제
 
