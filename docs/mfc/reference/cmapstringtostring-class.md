@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CMapStringToString 클래스'
 title: CMapStringToString 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -42,12 +43,12 @@ helpviewer_keywords:
 - CMapStringToString [MFC], RemoveKey
 - CMapStringToString [MFC], SetAt
 ms.assetid: b45794c2-fe6b-4edb-a8ca-faa03b57b4a8
-ms.openlocfilehash: 28422c26ba2ca77657bfcf166592d2bc69169891
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ba82647a6e81e82b4d977e4de3beee1bfd0b7c4e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223007"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97207815"
 ---
 # <a name="cmapstringtostring-class"></a>CMapStringToString 클래스
 
@@ -77,7 +78,7 @@ class CMapStringToString : public CObject
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[CMapStringToString:: CMapStringToString](../../mfc/reference/cmapstringtoob-class.md#cmapstringtoob)|생성자입니다.|
 
@@ -128,7 +129,7 @@ class CMapStringToString : public CObject
 
 **헤더:** afxcoll.h
 
-## <a name="cmapstringtostringcpair"></a><a name="cpair"></a>CMapStringToString:: CPair
+## <a name="cmapstringtostringcpair"></a><a name="cpair"></a> CMapStringToString:: CPair
 
 연결 된 문자열 개체의 키 값과 값을 포함 합니다.
 
@@ -138,9 +139,9 @@ class CMapStringToString : public CObject
 
 구조는 다음 두 필드로 구성 됩니다.
 
-- `key`키 형식의 실제 값입니다.
+- `key` 키 형식의 실제 값입니다.
 
-- `value`연결 된 개체의 값입니다.
+- `value` 연결 된 개체의 값입니다.
 
 [Cmapstringtostring::P lookup](#plookup), [cmapstringtostring::P getfirstassoc](#pgetfirstassoc)및 [cmapstringtostring::P getnextassoc](#pgetnextassoc)의 반환 값을 저장 하는 데 사용 됩니다.
 
@@ -148,7 +149,7 @@ class CMapStringToString : public CObject
 
   사용 예제를 보려면 [Cmapstringtostring::P lookup](#plookup)의 예제를 참조 하세요.
 
-## <a name="cmapstringtostringpgetfirstassoc"></a><a name="pgetfirstassoc"></a>CMapStringToString::P GetFirstAssoc
+## <a name="cmapstringtostringpgetfirstassoc"></a><a name="pgetfirstassoc"></a> CMapStringToString::P GetFirstAssoc
 
 Map 개체의 첫 번째 항목을 반환 합니다.
 
@@ -158,7 +159,7 @@ const CPair* PGetFirstAssoc() const;
 CPair* PGetFirstAssoc();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 맵의 첫 번째 항목에 대 한 포인터입니다. [Cmapstringtostring:: CPair](#cpair)를 참조 하세요. Map이 비어 있으면 값은 NULL입니다.
 
@@ -170,9 +171,9 @@ Map 개체의 첫 번째 요소에 대 한 포인터를 반환 하려면이 함�
 
 [!code-cpp[NVC_MFCCollections#73](../../mfc/codesnippet/cpp/cmapstringtostring-class_1.cpp)]
 
-## <a name="cmapstringtostringpgetnextassoc"></a><a name="pgetnextassoc"></a>CMapStringToString::P GetNextAssoc
+## <a name="cmapstringtostringpgetnextassoc"></a><a name="pgetnextassoc"></a> CMapStringToString::P GetNextAssoc
 
-*지 수를 가리키는*지도 요소를 검색 합니다.
+*지 수를 가리키는* 지도 요소를 검색 합니다.
 
 ```
 const CPair *PGetNextAssoc(const CPair* pAssoc) const;
@@ -185,7 +186,7 @@ CPair *PGetNextAssoc(const CPair* pAssoc);
 *이상 Soc*<br/>
 이전 [PGetNextAssoc](#pgetnextassoc) 또는 [Pgetfirstassoc](#pgetfirstassoc) 호출에서 반환 되는 맵 항목을 가리킵니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 맵의 다음 항목에 대 한 포인터입니다. [Cmapstringtostring:: CPair](#cpair)를 참조 하세요. 요소가 맵의 마지막 인 경우 값은 NULL입니다.
 
@@ -197,7 +198,7 @@ Map의 모든 요소를 반복 하려면이 메서드를 호출 합니다. 에 �
 
   [Cmapstringtostring::P GetFirstAssoc](#pgetfirstassoc)의 예제를 참조 하세요.
 
-## <a name="cmapstringtostringplookup"></a><a name="plookup"></a>CMapStringToString::P 조회
+## <a name="cmapstringtostringplookup"></a><a name="plookup"></a> CMapStringToString::P 조회
 
 지정 된 키에 매핑된 값을 조회 합니다.
 
@@ -212,7 +213,7 @@ CPair* PLookup(LPCTSTR key);
 *key*<br/>
 검색할 요소의 키에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 지정 된 키에 대 한 포인터입니다.
 

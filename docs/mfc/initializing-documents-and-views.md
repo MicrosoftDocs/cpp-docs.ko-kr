@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 문서 및 뷰 초기화'
 title: 문서 및 뷰 초기화
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - initializing objects [MFC], document objects
 - initializing views [MFC]
 ms.assetid: 33cb8643-8a16-478c-bc26-eccc734e3661
-ms.openlocfilehash: 0e970d6e8a166283f82575b309cf023f48899403
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: ea0840faefac0ae5a8b4cee0fe3b707a92737c70
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626348"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97208036"
 ---
 # <a name="initializing-documents-and-views"></a>문서 및 뷰 초기화
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CAnimationVariableChangeHandler 클래스'
 title: CAnimationVariableChangeHandler 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - CAnimationVariableChangeHandler [MFC], OnValueChanged
 - CAnimationVariableChangeHandler [MFC], SetAnimationController
 ms.assetid: 2ea4996d-5c04-4dfc-be79-d42d55050795
-ms.openlocfilehash: 2dc8f2c03f9df34012fb9db1ed5e5b0bb448b17f
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 1c97bc908a29bfb7edf2222f6df117fefdaf4091
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81755048"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97207880"
 ---
 # <a name="canimationvariablechangehandler-class"></a>CAnimationVariableChangeHandler 클래스
 
@@ -31,21 +32,21 @@ class CAnimationVariableChangeHandler : public CUIAnimationVariableChangeHandler
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
 |`CAnimationVariableChangeHandler::CAnimationVariableChangeHandler`|`CAnimationVariableChangeHandler` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|`CAnimationVariableChangeHandler::CreateInstance`|개체의 `CAnimationVariableChangeHandler` 인스턴스를 만듭니다.|
-|[C애니메이션변수변경핸들러::온밸류변경](#onvaluechanged)|애니메이션 변수의 값이 변경된 경우 호출됩니다. ( `CUIAnimationVariableChangeHandlerBase::OnValueChanged`을 재정의합니다.)|
-|[C애니메이션변수체인지핸들러:세트애니메이션컨트롤러](#setanimationcontroller)|애니메이션 컨트롤러에 대한 포인터를 저장하여 이벤트를 라우팅합니다.|
+|`CAnimationVariableChangeHandler::CreateInstance`|개체의 인스턴스를 만듭니다 `CAnimationVariableChangeHandler` .|
+|[CAnimationVariableChangeHandler:: OnValueChanged](#onvaluechanged)|애니메이션 변수 값이 변경 되 면 호출 됩니다. ( `CUIAnimationVariableChangeHandlerBase::OnValueChanged`을 재정의합니다.)|
+|[CAnimationVariableChangeHandler:: Set애니메이션 컨트롤러](#setanimationcontroller)|애니메이션 컨트롤러에 대 한 포인터를 저장 하 여 이벤트를 라우팅합니다.|
 
 ## <a name="remarks"></a>설명
 
-이 이벤트 처리기는 `IUIAnimationVariable::SetVariableChangeHandler` 호출하거나 `CAnimationVariable::EnableValueChangedEvent` `CAnimationBaseObject::EnableValueChangedEvent` 애니메이션 개체에 캡슐화된 모든 애니메이션 변수에 대해 이 이벤트를 활성화할 때 메서드에 생성되고 전달됩니다.
+이 이벤트 처리기는 `IUIAnimationVariable::SetVariableChangeHandler` `CAnimationVariable::EnableValueChangedEvent` 또는 `CAnimationBaseObject::EnableValueChangedEvent` (애니메이션 개체에 캡슐화 된 모든 애니메이션 변수에 대해이 이벤트를 사용 하도록 설정)를 호출할 때 생성 되어 메서드에 전달 됩니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -59,9 +60,9 @@ class CAnimationVariableChangeHandler : public CUIAnimationVariableChangeHandler
 
 **헤더:** afxanimationcontroller.h
 
-## <a name="canimationvariablechangehandleronvaluechanged"></a><a name="onvaluechanged"></a>C애니메이션변수변경핸들러::온밸류변경
+## <a name="canimationvariablechangehandleronvaluechanged"></a><a name="onvaluechanged"></a> CAnimationVariableChangeHandler:: OnValueChanged
 
-애니메이션 변수의 값이 변경된 경우 호출됩니다.
+애니메이션 변수 값이 변경 되 면 호출 됩니다.
 
 ```
 IFACEMETHOD(OnValueChanged) (
@@ -73,25 +74,25 @@ IFACEMETHOD(OnValueChanged) (
 
 ### <a name="parameters"></a>매개 변수
 
-*스토리 보드*<br/>
-변수에 애니메이션을 만드는 스토리보드입니다.
+*storyboard*<br/>
+변수에 애니메이션 효과를 주는 storyboard입니다.
 
-*변수*<br/>
-업데이트된 애니메이션 변수입니다.
+*variable*<br/>
+업데이트 된 애니메이션 변수입니다.
 
 *newValue*<br/>
 새 값입니다.
 
-*이전값*<br/>
+*previousValue*<br/>
 이전 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-메서드가 성공하면 S_OK가 반환되고, 그렇지 않으면 HRESULT 오류 코드를 반환합니다.
+메서드가 성공하면 S_OK가 반환되고, 그렇지 않으면 HRESULT 오류 코드를 반환 합니다.
 
-## <a name="canimationvariablechangehandlersetanimationcontroller"></a><a name="setanimationcontroller"></a>C애니메이션변수체인지핸들러:세트애니메이션컨트롤러
+## <a name="canimationvariablechangehandlersetanimationcontroller"></a><a name="setanimationcontroller"></a> CAnimationVariableChangeHandler:: Set애니메이션 컨트롤러
 
-애니메이션 컨트롤러에 대한 포인터를 저장하여 이벤트를 라우팅합니다.
+애니메이션 컨트롤러에 대 한 포인터를 저장 하 여 이벤트를 라우팅합니다.
 
 ```cpp
 void SetAnimationController(CAnimationController* pAnimationController);
@@ -99,9 +100,9 @@ void SetAnimationController(CAnimationController* pAnimationController);
 
 ### <a name="parameters"></a>매개 변수
 
-*p애니메이션 컨트롤러*<br/>
-이벤트를 수신하는 애니메이션 컨트롤러에 대한 포인터입니다.
+*가는 Imationcontroller*<br/>
+이벤트를 수신 하는 애니메이션 컨트롤러에 대 한 포인터입니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [클래스](../../mfc/reference/mfc-classes.md)
