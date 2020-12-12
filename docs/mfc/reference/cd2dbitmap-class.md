@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CD2DBitmap 클래스'
 title: CD2DBitmap 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -51,16 +52,16 @@ helpviewer_keywords:
 - CD2DBitmap [MFC], m_strPath
 - CD2DBitmap [MFC], m_uiResID
 ms.assetid: 2b3686f1-812c-462b-b449-9f0cb6949bf6
-ms.openlocfilehash: a3cabb00ded7dbc5f9c396a1de767058443a4436
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: ab023caa92683b24098db1a03d081922e3dfd48b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81754213"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227652"
 ---
 # <a name="cd2dbitmap-class"></a>CD2DBitmap 클래스
 
-ID2D1비트맵용 래퍼입니다.
+ID2D1Bitmap에 대 한 래퍼입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -72,82 +73,82 @@ class CD2DBitmap : public CD2DResource;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[CD2D비트맵::CD2D비트맵](#cd2dbitmap)|오버로드되었습니다. HBITMAP에서 CD2DBitmap 개체를 생성합니다.|
-|[CD2D비트맵::~CD2D비트맵](#_dtorcd2dbitmap)|소멸자입니다. D2D 비트맵 개체가 파괴될 때 호출됩니다.|
+|[CD2DBitmap:: CD2DBitmap](#cd2dbitmap)|오버로드됨. HBITMAP에서 CD2DBitmap 개체를 생성 합니다.|
+|[CD2DBitmap:: ~ CD2DBitmap](#_dtorcd2dbitmap)|소멸자입니다. D2D 비트맵 개체가 제거 될 때 호출 됩니다.|
 
 ### <a name="protected-constructors"></a>Protected 생성자
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|[CD2D비트맵::CD2D비트맵](#cd2dbitmap)|오버로드되었습니다. CD2DBitmap 개체를 생성합니다.|
+|[CD2DBitmap:: CD2DBitmap](#cd2dbitmap)|오버로드됨. CD2DBitmap 개체를 생성 합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[CD2D비트맵::연결](#attach)|기존 리소스 인터페이스를 개체에 연결합니다.|
-|[CD2D비트맵::카피From비트맵](#copyfrombitmap)|지정된 비트맵에서 현재 비트맵으로 지정된 영역복사|
-|[CD2D비트맵::카피From메모리](#copyfrommemory)|메모리에서 지정된 영역을 현재 비트맵으로 복사합니다.|
-|[CD2D비트맵::카피From렌더대상](#copyfromrendertarget)|지정된 렌더링 대상에서 현재 비트맵으로 지정된 영역복사|
-|[CD2D비트맵::만들기](#create)|CD2D비트맵을 만듭니다. [(CD2DResource::만들기](../../mfc/reference/cd2dresource-class.md#create)재정의.)|
-|[CD2D비트맵::D에스트로이](#destroy)|CD2DBitmap 개체를 삭제합니다. [(CD2DResource::Destroy](../../mfc/reference/cd2dresource-class.md#destroy)재정의.)|
-|[CD2D비트맵::D에타치](#detach)|개체에서 리소스 인터페이스 분리|
-|[CD2D비트맵::Get](#get)|ID2D1비트맵 인터페이스 반환|
-|[CD2D비트맵::GetDPI](#getdpi)|비트맵의 인치당 점 반환(DPI)|
-|[CD2D비트맵::겟픽셀포맷](#getpixelformat)|비트맵의 픽셀 형식 및 알파 모드를 검색합니다.|
-|[CD2D비트맵::겟픽셀사이즈](#getpixelsize)|비트맵의 장치 종속 단위(픽셀)에서 크기를 반환합니다.|
-|[CD2D비트맵::겟사이즈](#getsize)|비트맵의 장치 독립 픽셀(DIP)에서 크기를 반환합니다.|
-|[CD2D비트맵::유효하지 않음](#isvalid)|리소스 유효성 [검사(CD2DResource 재정의::유효합니다.)](../../mfc/reference/cd2dresource-class.md#isvalid)|
+|[CD2DBitmap:: Attach](#attach)|기존 리소스 인터페이스를 개체에 연결 합니다.|
+|[CD2DBitmap:: CopyFromBitmap](#copyfrombitmap)|지정 된 비트맵의 지정 된 영역을 현재 비트맵에 복사 합니다.|
+|[CD2DBitmap:: CopyFromMemory](#copyfrommemory)|지정 된 영역을 메모리에서 현재 비트맵으로 복사 합니다.|
+|[CD2DBitmap:: CopyFromRenderTarget](#copyfromrendertarget)|지정 된 렌더링 대상의 지정 된 영역을 현재 비트맵에 복사 합니다.|
+|[CD2DBitmap:: Create](#create)|CD2DBitmap를 만듭니다. [CD2DResource:: Create](../../mfc/reference/cd2dresource-class.md#create)를 재정의 합니다.|
+|[CD2DBitmap::D estroy](#destroy)|CD2DBitmap 개체를 소멸 시킵니다. [CD2DResource::D estroy](../../mfc/reference/cd2dresource-class.md#destroy)를 재정의 합니다.|
+|[CD2DBitmap::D etach](#detach)|개체에서 리소스 인터페이스를 분리 합니다.|
+|[CD2DBitmap:: Get](#get)|ID2D1Bitmap 인터페이스를 반환 합니다.|
+|[CD2DBitmap:: GetDPI](#getdpi)|비트맵의 DPI (인치당 도트 수)를 반환 합니다.|
+|[CD2DBitmap:: GetPixelFormat](#getpixelformat)|비트맵의 픽셀 형식 및 알파 모드를 검색 합니다.|
+|[CD2DBitmap:: GetPixelSize](#getpixelsize)|비트맵의 크기 (픽셀 단위)를 반환 합니다.|
+|[CD2DBitmap:: GetSize](#getsize)|비트맵의 장치 독립적 픽셀 (Dip) 크기를 반환 합니다.|
+|[CD2DBitmap:: IsValid](#isvalid)|리소스 유효성 검사 ( [CD2DResource:: IsValid](../../mfc/reference/cd2dresource-class.md#isvalid)재정의)|
 
 ### <a name="protected-methods"></a>Protected 메서드
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|[CD2D비트맵::커먼이니트](#commoninit)|개체 초기화|
+|[CD2DBitmap:: CommonInit](#commoninit)|개체를 초기화 합니다.|
 
 ### <a name="public-operators"></a>Public 연산자
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|[CD2D비트맵::연산자 ID2D1비트맵*](#operator_id2d1bitmap_star)|ID2D1비트맵 인터페이스 반환|
+|[CD2DBitmap:: operator ID2D1Bitmap *](#operator_id2d1bitmap_star)|ID2D1Bitmap 인터페이스를 반환 합니다.|
 
 ### <a name="protected-data-members"></a>보호된 데이터 멤버
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|[CD2D비트맵:m_bAutoDestroyHBMP](#m_bautodestroyhbmp)|m_hBmpSrc 파괴해야하는 경우 TRUE; 그렇지 않으면 거짓.|
-|[CD2D비트맵:m_hBmpSrc](#m_hbmpsrc)|소스 비트맵 핸들입니다.|
-|[CD2D비트맵:m_lpszType](#m_lpsztype)|리소스 유형입니다.|
-|[CD2D비트맵:m_pBitmap](#m_pbitmap)|ID2D1Bitmap 개체에 대한 포인터를 저장합니다.|
-|[CD2D비트맵:m_sizeDest](#m_sizedest)|비트맵 대상 크기입니다.|
-|[CD2D비트맵:m_strPath](#m_strpath)|봇맵 파일 경로입니다.|
-|[CD2D비트맵:m_uiResID](#m_uiresid)|비트맵 리소스 ID.|
+|[CD2DBitmap:: m_bAutoDestroyHBMP](#m_bautodestroyhbmp)|M_hBmpSrc를 제거 해야 하면 TRUE이 고, 그렇지 않으면 FALSE입니다.|
+|[CD2DBitmap:: m_hBmpSrc](#m_hbmpsrc)|원본 비트맵 핸들입니다.|
+|[CD2DBitmap:: m_lpszType](#m_lpsztype)|리소스 종류.|
+|[CD2DBitmap:: m_pBitmap](#m_pbitmap)|ID2D1Bitmap 개체에 대 한 포인터를 저장 합니다.|
+|[CD2DBitmap:: m_sizeDest](#m_sizedest)|비트맵 대상 크기입니다.|
+|[CD2DBitmap:: m_strPath](#m_strpath)|Botmap 파일 경로입니다.|
+|[CD2DBitmap:: m_uiResID](#m_uiresid)|비트맵 리소스 ID입니다.|
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
-[CD2D자원](../../mfc/reference/cd2dresource-class.md)
+[CD2DResource](../../mfc/reference/cd2dresource-class.md)
 
 `CD2DBitmap`
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxrendertarget.h
+**헤더:** afxrendertarget
 
-## <a name="cd2dbitmapcd2dbitmap"></a><a name="_dtorcd2dbitmap"></a>CD2D비트맵::~CD2D비트맵
+## <a name="cd2dbitmapcd2dbitmap"></a><a name="_dtorcd2dbitmap"></a> CD2DBitmap:: ~ CD2DBitmap
 
-소멸자입니다. D2D 비트맵 개체가 파괴될 때 호출됩니다.
+소멸자입니다. D2D 비트맵 개체가 제거 될 때 호출 됩니다.
 
 ```
 virtual ~CD2DBitmap();
 ```
 
-## <a name="cd2dbitmapattach"></a><a name="attach"></a>CD2D비트맵::연결
+## <a name="cd2dbitmapattach"></a><a name="attach"></a> CD2DBitmap:: Attach
 
-기존 리소스 인터페이스를 개체에 연결합니다.
+기존 리소스 인터페이스를 개체에 연결 합니다.
 
 ```cpp
 void Attach(ID2D1Bitmap* pResource);
@@ -155,12 +156,12 @@ void Attach(ID2D1Bitmap* pResource);
 
 ### <a name="parameters"></a>매개 변수
 
-*Presource*<br/>
+*보도 Ource*<br/>
 기존 리소스 인터페이스입니다. NULL이 될 수 없습니다.
 
-## <a name="cd2dbitmapcd2dbitmap"></a><a name="cd2dbitmap"></a>CD2D비트맵::CD2D비트맵
+## <a name="cd2dbitmapcd2dbitmap"></a><a name="cd2dbitmap"></a> CD2DBitmap:: CD2DBitmap
 
-리소스에서 CD2DBitmap 개체를 생성합니다.
+리소스에서 CD2DBitmap 개체를 생성 합니다.
 
 ```
 CD2DBitmap(
@@ -189,28 +190,28 @@ CD2DBitmap(
 
 ### <a name="parameters"></a>매개 변수
 
-*p부모 대상*<br/>
-렌더 대상에 대한 포인터입니다.
+*pParentTarget*<br/>
+렌더링 대상에 대 한 포인터입니다.
 
 *uiResID*<br/>
-리소스의 리소스 ID 번호입니다.
+리소스의 리소스 ID입니다.
 
 *lpszType*<br/>
-리소스 형식을 포함하는 null-종단 문자열에 대한 포인터입니다.
+리소스 형식을 포함 하는 null로 끝나는 문자열에 대 한 포인터입니다.
 
-*크기 가장*<br/>
+*sizeDest*<br/>
 비트맵의 대상 크기입니다.
 
-*b오토파괴*<br/>
-개체가 소유자(pParentTarget)에 의해 소멸됨을 나타냅니다.
+*bAutoDestroy*<br/>
+개체가 소유자 (pParentTarget)에 의해 소멸 됨을 나타냅니다.
 
 *lpszPath*<br/>
-파일 의 이름을 포함하는 null 종료 된 문자열에 대한 포인터입니다.
+파일의 이름을 포함 하는 null로 끝나는 문자열에 대 한 포인터입니다.
 
 *hbmpSrc*<br/>
-비트맵을 처리합니다.
+비트맵에 대 한 핸들입니다.
 
-## <a name="cd2dbitmapcommoninit"></a><a name="commoninit"></a>CD2D비트맵::커먼이니트
+## <a name="cd2dbitmapcommoninit"></a><a name="commoninit"></a> CD2DBitmap:: CommonInit
 
 개체를 초기화합니다.
 
@@ -218,9 +219,9 @@ CD2DBitmap(
 void CommonInit();
 ```
 
-## <a name="cd2dbitmapcopyfrombitmap"></a><a name="copyfrombitmap"></a>CD2D비트맵::카피From비트맵
+## <a name="cd2dbitmapcopyfrombitmap"></a><a name="copyfrombitmap"></a> CD2DBitmap:: CopyFromBitmap
 
-지정된 비트맵에서 지정된 영역을 현재 비트맵으로 복사합니다.
+지정 된 비트맵의 지정 된 영역을 현재 비트맵에 복사 합니다.
 
 ```
 HRESULT CopyFromBitmap(
@@ -234,19 +235,19 @@ HRESULT CopyFromBitmap(
 *pBitmap*<br/>
 복사할 비트맵입니다.
 
-*데스트 포인트*<br/>
-현재 비트맵에서 srcRect가 지정한 영역이 복사되는 영역의 왼쪽 위 모서리입니다.
+*destPoint*<br/>
+현재 비트맵에서 srcRect에서 지정한 지역이 복사 되는 영역의 왼쪽 위 모퉁이입니다.
 
 *srcRect*<br/>
-복사할 비트맵 영역입니다.
+복사할 비트맵의 영역입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-메서드가 성공하면 S_OK가 반환되고, 그렇지 않으면 HRESULT 오류 코드를 반환합니다.
+메서드가 성공하면 S_OK가 반환되고, 그렇지 않으면 HRESULT 오류 코드를 반환 합니다.
 
-## <a name="cd2dbitmapcopyfrommemory"></a><a name="copyfrommemory"></a>CD2D비트맵::카피From메모리
+## <a name="cd2dbitmapcopyfrommemory"></a><a name="copyfrommemory"></a> CD2DBitmap:: CopyFromMemory
 
-메모리에서 지정된 영역을 현재 비트맵으로 복사합니다.
+지정 된 영역을 메모리에서 현재 비트맵에 복사 합니다.
 
 ```
 HRESULT CopyFromMemory(
@@ -261,18 +262,18 @@ HRESULT CopyFromMemory(
 복사할 데이터입니다.
 
 *피치*<br/>
-srcData에 저장된 소스 비트맵의 보폭 또는 피치입니다. 보폭은 스캔라인의 바이트 수입니다(메모리의 한 행 픽셀). 보폭은 다음 수식에서 계산할 \* 수 있습니다: 픽셀당 픽셀 너비 바이트 + 메모리 패딩.
+SrcData에 저장 된 원본 비트맵의 stride 또는 피치입니다. Stride는 scanline의 바이트 수 (메모리에서 한 행의 픽셀)입니다. Stride는 픽셀당 픽셀 너비 \* 바이트 + 메모리 패딩에서 계산할 수 있습니다.
 
-*데스트렉트*<br/>
-현재 비트맵에서 srcRect가 지정한 영역이 복사되는 영역의 왼쪽 위 모서리입니다.
+*destRect*<br/>
+현재 비트맵에서 srcRect에서 지정한 지역이 복사 되는 영역의 왼쪽 위 모퉁이입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-메서드가 성공하면 S_OK가 반환되고, 그렇지 않으면 HRESULT 오류 코드를 반환합니다.
+메서드가 성공하면 S_OK가 반환되고, 그렇지 않으면 HRESULT 오류 코드를 반환 합니다.
 
-## <a name="cd2dbitmapcopyfromrendertarget"></a><a name="copyfromrendertarget"></a>CD2D비트맵::카피From렌더대상
+## <a name="cd2dbitmapcopyfromrendertarget"></a><a name="copyfromrendertarget"></a> CD2DBitmap:: CopyFromRenderTarget
 
-지정된 렌더링 대상에서 현재 비트맵으로 지정된 영역을 복사합니다.
+지정 된 렌더링 대상의 지정 된 영역을 현재 비트맵에 복사 합니다.
 
 ```
 HRESULT CopyFromRenderTarget(
@@ -283,22 +284,22 @@ HRESULT CopyFromRenderTarget(
 
 ### <a name="parameters"></a>매개 변수
 
-*p렌더대상*<br/>
-복사할 영역이 포함된 렌더 대상입니다.
+*pRenderTarget*<br/>
+복사할 영역을 포함 하는 렌더링 대상입니다.
 
-*데스트 포인트*<br/>
-현재 비트맵에서 srcRect가 지정한 영역이 복사되는 영역의 왼쪽 위 모서리입니다.
+*destPoint*<br/>
+현재 비트맵에서 srcRect에서 지정한 지역이 복사 되는 영역의 왼쪽 위 모퉁이입니다.
 
 *srcRect*<br/>
 복사할 renderTarget의 영역입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-메서드가 성공하면 S_OK가 반환되고, 그렇지 않으면 HRESULT 오류 코드를 반환합니다.
+메서드가 성공하면 S_OK가 반환되고, 그렇지 않으면 HRESULT 오류 코드를 반환 합니다.
 
-## <a name="cd2dbitmapcreate"></a><a name="create"></a>CD2D비트맵::만들기
+## <a name="cd2dbitmapcreate"></a><a name="create"></a> CD2DBitmap:: Create
 
-CD2D비트맵을 만듭니다.
+CD2DBitmap를 만듭니다.
 
 ```
 virtual HRESULT Create(CRenderTarget* pRenderTarget);
@@ -306,138 +307,138 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget);
 
 ### <a name="parameters"></a>매개 변수
 
-*p렌더대상*<br/>
-렌더 대상에 대한 포인터입니다.
+*pRenderTarget*<br/>
+렌더링 대상에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-메서드가 성공하면 S_OK가 반환되고, 그렇지 않으면 HRESULT 오류 코드를 반환합니다.
+메서드가 성공하면 S_OK가 반환되고, 그렇지 않으면 HRESULT 오류 코드를 반환 합니다.
 
-## <a name="cd2dbitmapdestroy"></a><a name="destroy"></a>CD2D비트맵::D에스트로이
+## <a name="cd2dbitmapdestroy"></a><a name="destroy"></a> CD2DBitmap::D estroy
 
-CD2DBitmap 개체를 삭제합니다.
+CD2DBitmap 개체를 소멸 시킵니다.
 
 ```
 virtual void Destroy();
 ```
 
-## <a name="cd2dbitmapdetach"></a><a name="detach"></a>CD2D비트맵::D에타치
+## <a name="cd2dbitmapdetach"></a><a name="detach"></a> CD2DBitmap::D etach
 
-개체에서 리소스 인터페이스를 분리합니다.
+개체에서 리소스 인터페이스를 분리 합니다.
 
 ```
 ID2D1Bitmap* Detach();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-분리된 리소스 인터페이스에 대한 포인터입니다.
+분리 된 리소스 인터페이스에 대 한 포인터입니다.
 
-## <a name="cd2dbitmapget"></a><a name="get"></a>CD2D비트맵::Get
+## <a name="cd2dbitmapget"></a><a name="get"></a> CD2DBitmap:: Get
 
-ID2D1비트맵 인터페이스를 반환합니다.
+ID2D1Bitmap 인터페이스를 반환 합니다.
 
 ```
 ID2D1Bitmap* Get();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-개체가 아직 초기화되지 않은 경우 ID2D1Bitmap 인터페이스 또는 NULL에 대한 포인터입니다.
+ID2D1Bitmap 인터페이스에 대 한 포인터 이거나, 개체가 아직 초기화 되지 않은 경우 NULL입니다.
 
-## <a name="cd2dbitmapgetdpi"></a><a name="getdpi"></a>CD2D비트맵::GetDPI
+## <a name="cd2dbitmapgetdpi"></a><a name="getdpi"></a> CD2DBitmap:: GetDPI
 
-비트맵의 인치당 점(DPI)을 반환합니다.
+비트맵의 DPI (인치당 도트 수)를 반환 합니다.
 
 ```
 CD2DSizeF GetDPI() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-비트맵의 수평 및 세로 DPI입니다.
+비트맵의 가로 및 세로 DPI입니다.
 
-## <a name="cd2dbitmapgetpixelformat"></a><a name="getpixelformat"></a>CD2D비트맵::겟픽셀포맷
+## <a name="cd2dbitmapgetpixelformat"></a><a name="getpixelformat"></a> CD2DBitmap:: GetPixelFormat
 
-비트맵의 픽셀 형식 및 알파 모드를 검색합니다.
+비트맵의 픽셀 형식 및 알파 모드를 검색 합니다.
 
 ```
 D2D1_PIXEL_FORMAT GetPixelFormat() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 비트맵의 픽셀 형식 및 알파 모드입니다.
 
-## <a name="cd2dbitmapgetpixelsize"></a><a name="getpixelsize"></a>CD2D비트맵::겟픽셀사이즈
+## <a name="cd2dbitmapgetpixelsize"></a><a name="getpixelsize"></a> CD2DBitmap:: GetPixelSize
 
-비트맵의 장치 종속 단위(픽셀)에서 크기를 반환합니다.
+비트맵의 크기 (픽셀 단위)를 반환 합니다.
 
 ```
 CD2DSizeU GetPixelSize() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-비트맵의 크기(픽셀 단위)입니다.
+비트맵의 크기 (픽셀)입니다.
 
-## <a name="cd2dbitmapgetsize"></a><a name="getsize"></a>CD2D비트맵::겟사이즈
+## <a name="cd2dbitmapgetsize"></a><a name="getsize"></a> CD2DBitmap:: GetSize
 
-비트맵의 장치 독립 픽셀(DIP)에서 크기를 반환합니다.
+비트맵의 장치 독립적 픽셀 (Dip) 크기를 반환 합니다.
 
 ```
 CD2DSizeF GetSize() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-비트맵의 크기(DIP)입니다.
+비트맵의 크기 (Dip)입니다.
 
-## <a name="cd2dbitmapisvalid"></a><a name="isvalid"></a>CD2D비트맵::유효하지 않음
+## <a name="cd2dbitmapisvalid"></a><a name="isvalid"></a> CD2DBitmap:: IsValid
 
-리소스 유효성을 확인합니다.
+리소스 유효성 검사를 수행 합니다.
 
 ```
 virtual BOOL IsValid() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-TRUE 리소스가 유효한 경우; 그렇지 않으면 거짓.
+리소스가 올바르면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
-## <a name="cd2dbitmapm_bautodestroyhbmp"></a><a name="m_bautodestroyhbmp"></a>CD2D비트맵:m_bAutoDestroyHBMP
+## <a name="cd2dbitmapm_bautodestroyhbmp"></a><a name="m_bautodestroyhbmp"></a> CD2DBitmap:: m_bAutoDestroyHBMP
 
-m_hBmpSrc 파괴해야하는 경우 TRUE; 그렇지 않으면 거짓.
+M_hBmpSrc를 제거 해야 하면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ```
 BOOL m_bAutoDestroyHBMP;
 ```
 
-## <a name="cd2dbitmapm_hbmpsrc"></a><a name="m_hbmpsrc"></a>CD2D비트맵:m_hBmpSrc
+## <a name="cd2dbitmapm_hbmpsrc"></a><a name="m_hbmpsrc"></a> CD2DBitmap:: m_hBmpSrc
 
-소스 비트맵 핸들입니다.
+원본 비트맵 핸들입니다.
 
 ```
 HBITMAP m_hBmpSrc;
 ```
 
-## <a name="cd2dbitmapm_lpsztype"></a><a name="m_lpsztype"></a>CD2D비트맵:m_lpszType
+## <a name="cd2dbitmapm_lpsztype"></a><a name="m_lpsztype"></a> CD2DBitmap:: m_lpszType
 
-리소스 유형입니다.
+리소스 종류.
 
 ```
 LPCTSTR m_lpszType;
 ```
 
-## <a name="cd2dbitmapm_pbitmap"></a><a name="m_pbitmap"></a>CD2D비트맵:m_pBitmap
+## <a name="cd2dbitmapm_pbitmap"></a><a name="m_pbitmap"></a> CD2DBitmap:: m_pBitmap
 
-ID2D1Bitmap 개체에 대한 포인터를 저장합니다.
+ID2D1Bitmap 개체에 대 한 포인터를 저장 합니다.
 
 ```
 ID2D1Bitmap* m_pBitmap;
 ```
 
-## <a name="cd2dbitmapm_sizedest"></a><a name="m_sizedest"></a>CD2D비트맵:m_sizeDest
+## <a name="cd2dbitmapm_sizedest"></a><a name="m_sizedest"></a> CD2DBitmap:: m_sizeDest
 
 비트맵 대상 크기입니다.
 
@@ -445,34 +446,34 @@ ID2D1Bitmap* m_pBitmap;
 CD2DSizeU m_sizeDest;
 ```
 
-## <a name="cd2dbitmapm_strpath"></a><a name="m_strpath"></a>CD2D비트맵:m_strPath
+## <a name="cd2dbitmapm_strpath"></a><a name="m_strpath"></a> CD2DBitmap:: m_strPath
 
-봇맵 파일 경로입니다.
+Botmap 파일 경로입니다.
 
 ```
 CString m_strPath;
 ```
 
-## <a name="cd2dbitmapm_uiresid"></a><a name="m_uiresid"></a>CD2D비트맵:m_uiResID
+## <a name="cd2dbitmapm_uiresid"></a><a name="m_uiresid"></a> CD2DBitmap:: m_uiResID
 
-비트맵 리소스 ID.
+비트맵 리소스 ID입니다.
 
 ```
 UINT m_uiResID;
 ```
 
-## <a name="cd2dbitmapoperator-id2d1bitmap"></a><a name="operator_id2d1bitmap_star"></a>CD2D비트맵::연산자 ID2D1비트맵*
+## <a name="cd2dbitmapoperator-id2d1bitmap"></a><a name="operator_id2d1bitmap_star"></a> CD2DBitmap:: operator ID2D1Bitmap *
 
-ID2D1비트맵 인터페이스 반환
+ID2D1Bitmap 인터페이스를 반환 합니다.
 
 ```
 operator ID2D1Bitmap*();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-개체가 아직 초기화되지 않은 경우 ID2D1Bitmap 인터페이스 또는 NULL에 대한 포인터입니다.
+ID2D1Bitmap 인터페이스에 대 한 포인터 이거나, 개체가 아직 초기화 되지 않은 경우 NULL입니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [클래스](../../mfc/reference/mfc-classes.md)

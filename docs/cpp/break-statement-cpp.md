@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: break 문 (c + +)'
 title: break 문 (C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - break keyword [C++]
 ms.assetid: 63739928-8985-4b05-93ce-016322e6da3d
-ms.openlocfilehash: 30ca602ecc65099adff7300f730c500a31fe0ed5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 13efaf55307f7f1d7decaf7cd0039c84b3141fc9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227610"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97229576"
 ---
 # <a name="break-statement-c"></a>break 문 (C++)
 
@@ -25,7 +26,7 @@ break;
 
 ## <a name="remarks"></a>설명
 
-**`break`** 문은 조건문과 [do](../cpp/do-while-statement-cpp.md), [for](../cpp/for-statement-cpp.md)및 [switch](../cpp/switch-statement-cpp.md) [while](../cpp/while-statement-cpp.md) loop 문을 사용 하 여 사용 됩니다.
+**`break`** 문은 조건문과 [do](../cpp/do-while-statement-cpp.md), [for](../cpp/for-statement-cpp.md)및 [](../cpp/switch-statement-cpp.md) [while](../cpp/while-statement-cpp.md) loop 문을 사용 하 여 사용 됩니다.
 
 문에서 문은 **`switch`** **`break`** 프로그램이 문 외부의 다음 문을 실행 하도록 합니다 **`switch`** . 문이 없으면 **`break`** 절을 포함 하 여 일치 하는 **`case`** 레이블의 끝에 있는 모든 문이 **`switch`** **`default`** 실행 됩니다.
 
@@ -154,5 +155,5 @@ int main() {
 ## <a name="see-also"></a>참고 항목
 
 [점프 문](../cpp/jump-statements-cpp.md)<br/>
-[C++ 키워드](../cpp/keywords-cpp.md)<br/>
+[키워드](../cpp/keywords-cpp.md)<br/>
 [continue 문](../cpp/continue-statement-cpp.md)

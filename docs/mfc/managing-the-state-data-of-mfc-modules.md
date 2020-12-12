@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: MFC 모듈의 상태 데이터 관리'
 title: MFC 모듈의 상태 데이터 관리
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - multiple modules [MFC]
 - module state restored [MFC]
 ms.assetid: 81889c11-0101-4a66-ab3c-f81cf199e1bb
-ms.openlocfilehash: 64888b8ab53ebd80f328e1efe79df6256f30f9b6
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: e991e73b40f49f3be4630c26957c827aa6f1bf0b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622581"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97228029"
 ---
 # <a name="managing-the-state-data-of-mfc-modules"></a>MFC 모듈의 상태 데이터 관리
 
@@ -28,7 +29,7 @@ ms.locfileid: "84622581"
 
 다음 그림에 표시 된 것 처럼 MFC는 응용 프로그램에서 사용 되는 각 모듈에 대 한 상태 데이터를 포함 합니다. 이러한 데이터의 예로는 Windows 인스턴스 핸들 (리소스를 로드 하는 데 사용), `CWinApp` 응용 프로그램의 현재 및 개체에 대 한 포인터 `CWinThread` , OLE 모듈 참조 횟수 및 windows 개체 핸들과 해당 MFC 개체의 해당 인스턴스 간의 연결을 유지 관리 하는 다양 한 맵이 있습니다. 그러나 응용 프로그램에서 여러 모듈을 사용 하는 경우 각 모듈의 상태 데이터는 응용 프로그램 너비가 아닙니다. 대신 각 모듈에는 MFC의 상태 데이터에 대 한 자체 개인 복사본이 있습니다.
 
-![응용 프로그램&#41;&#40;단일 모듈의 상태 데이터](../mfc/media/vc387n1.gif "응용 프로그램&#41; &#40;단일 모듈의 상태 데이터") <br/>
+![응용 프로그램&#41;&#40;단일 모듈의 상태 데이터 ](../mfc/media/vc387n1.gif "응용 프로그램&#41; &#40;단일 모듈의 상태 데이터") <br/>
 단일 모듈(애플리케이션)의 상태 데이터
 
 모듈의 상태 데이터는 구조에 포함 되며 항상 해당 구조체에 대 한 포인터를 통해 사용할 수 있습니다. 다음 그림에 표시 된 것 처럼 실행 흐름이 특정 모듈에 들어가면 해당 모듈의 상태가 "current" 또는 "유효" 상태 여야 합니다. 따라서 각 스레드 개체에는 해당 응용 프로그램의 유효 상태 구조에 대 한 포인터가 있습니다. 이 포인터를 항상 업데이트 된 상태로 유지 하는 것은 응용 프로그램의 전역 상태를 관리 하 고 각 모듈 상태의 무결성을 유지 관리 하는 데 중요 합니다. 전역 상태를 잘못 관리 하면 예기치 않은 응용 프로그램 동작이 발생할 수 있습니다.

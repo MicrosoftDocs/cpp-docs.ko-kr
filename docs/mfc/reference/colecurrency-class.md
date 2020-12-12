@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: COleCurrency 클래스'
 title: COleCurrency 클래스
 ms.date: 08/29/2019
 f1_keywords:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - COleCurrency [MFC], m_cur
 - COleCurrency [MFC], m_status
 ms.assetid: 3a36e345-303f-46fb-a57c-858274378a8d
-ms.openlocfilehash: ced4554701cef5fd6f790b9e37f4c1b41746b1ad
-ms.sourcegitcommit: 13f42c339fb7af935e3a93ac80e350d5e784c9f1
+ms.openlocfilehash: 4a877d455de3f4254711a752bc422bb1cbdcd8c8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87470968"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227392"
 ---
 # <a name="colecurrency-class"></a>COleCurrency 클래스
 
@@ -43,13 +44,13 @@ class COleCurrency
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[COleCurrency:: COleCurrency](#colecurrency)|`COleCurrency` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[COleCurrency:: Format](#format)|개체의 형식이 지정 된 문자열 표현을 생성 `COleCurrency` 합니다.|
 |[COleCurrency:: GetStatus](#getstatus)|이 개체의 상태 (유효성)를 가져옵니다 `COleCurrency` .|
@@ -59,7 +60,7 @@ class COleCurrency
 
 ### <a name="public-operators"></a>Public 연산자
 
-|이름|Description|
+|Name|설명|
 |----------|-----------------|
 |[연산자 =](#operator_eq)|값을 복사 `COleCurrency` 합니다.|
 |[연산자 +,-](#operator_plus_minus)|값의 부호를 추가, 빼기 및 변경 `COleCurrency` 합니다.|
@@ -73,18 +74,18 @@ class COleCurrency
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|이름|Description|
+|Name|설명|
 |----------|-----------------|
 |[COleCurrency:: m_cur](#m_cur)|이 개체의 내부 통화를 포함 합니다 `COleCurrency` .|
 |[COleCurrency:: m_status](#m_status)|이 개체의 상태를 포함 `COleCurrency` 합니다.|
 
 ## <a name="remarks"></a>설명
 
-`COleCurrency`에 기본 클래스가 없습니다.
+`COleCurrency` 에 기본 클래스가 없습니다.
 
 CURRENCY는 1만으로 크기가 조정 된 8 바이트 2의 보수 정수 값으로 구현 됩니다. 소수점 기호 왼쪽에는 15자리 고정 소수점 번호가 있고 오른쪽에는 4자리 고정 소수점 번호가 있습니다. CURRENCY 데이터 형식은 money를 포함 하는 계산 또는 정확성이 중요 한 고정 소수점 계산에 매우 유용 합니다. OLE 자동화의 데이터 형식에 사용할 수 있는 형식 중 하나입니다 `VARIANT` .
 
-`COleCurrency`는 또한이 고정 소수점 형식에 대 한 몇 가지 기본 산술 연산을 구현 합니다. 지원 되는 작업을 선택 하 여 고정 소수점 계산 중에 발생 하는 반올림 오류를 제어 합니다.
+`COleCurrency` 는 또한이 고정 소수점 형식에 대 한 몇 가지 기본 산술 연산을 구현 합니다. 지원 되는 작업을 선택 하 여 고정 소수점 계산 중에 발생 하는 반올림 오류를 제어 합니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -94,7 +95,7 @@ CURRENCY는 1만으로 크기가 조정 된 8 바이트 2의 보수 정수 값�
 
 **헤더:** afxdisp.h
 
-## <a name="colecurrencycolecurrency"></a><a name="colecurrency"></a>COleCurrency:: COleCurrency
+## <a name="colecurrencycolecurrency"></a><a name="colecurrency"></a> COleCurrency:: COleCurrency
 
 `COleCurrency` 개체를 생성합니다.
 
@@ -144,7 +145,7 @@ COleCurrency(
 
 [!code-cpp[NVC_MFCOleContainer#10](../../mfc/codesnippet/cpp/colecurrency-class_1.cpp)]
 
-## <a name="colecurrencyformat"></a><a name="format"></a>COleCurrency:: Format
+## <a name="colecurrencyformat"></a><a name="format"></a> COleCurrency:: Format
 
 통화 값의 형식이 지정 된 표현을 만들려면이 멤버 함수를 호출 합니다.
 
@@ -162,7 +163,7 @@ CString Format(DWORD  dwFlags = 0, LCID  lcid = LANG_USER_DEFAULT) const;
 *lcid*<br/>
 변환에 사용할 로캘 ID를 나타냅니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `CString`서식이 지정 된 통화 값을 포함 하는입니다.
 
@@ -174,7 +175,7 @@ CString Format(DWORD  dwFlags = 0, LCID  lcid = LANG_USER_DEFAULT) const;
 
 [!code-cpp[NVC_MFCOleContainer#11](../../mfc/codesnippet/cpp/colecurrency-class_2.cpp)]
 
-## <a name="colecurrencygetstatus"></a><a name="getstatus"></a>COleCurrency:: GetStatus
+## <a name="colecurrencygetstatus"></a><a name="getstatus"></a> COleCurrency:: GetStatus
 
 지정 된 개체의 상태 (유효성)를 가져오려면이 멤버 함수를 호출 `COleCurrency` 합니다.
 
@@ -182,7 +183,7 @@ CString Format(DWORD  dwFlags = 0, LCID  lcid = LANG_USER_DEFAULT) const;
 CurrencyStatus GetStatus() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 값의 상태를 반환 `COleCurrency` 합니다.
 
@@ -200,11 +201,11 @@ enum CurrencyStatus {
 
 이러한 상태 값에 대 한 간략 한 설명은 다음 목록을 참조 하세요.
 
-- `COleCurrency::valid`이 개체가 유효한 지 여부를 나타냅니다 `COleCurrency` .
+- `COleCurrency::valid` 이 개체가 유효한 지 여부를 나타냅니다 `COleCurrency` .
 
-- `COleCurrency::invalid`이 개체가 잘못 되었음을 나타냅니다. 즉 `COleCurrency` , 해당 값이 잘못 되었을 수 있습니다.
+- `COleCurrency::invalid` 이 개체가 잘못 되었음을 나타냅니다. 즉 `COleCurrency` , 해당 값이 잘못 되었을 수 있습니다.
 
-- `COleCurrency::null`이 `COleCurrency` 개체가 null 임을 나타냅니다. 즉,이 개체에 대해 값이 제공 되지 않았음을 나타냅니다. 이는 c + + NULL과는 달리 "값이 없습니다" 라는 데이터베이스 의미의 "null"입니다.
+- `COleCurrency::null` 이 `COleCurrency` 개체가 null 임을 나타냅니다. 즉,이 개체에 대해 값이 제공 되지 않았음을 나타냅니다. 이는 c + + NULL과는 달리 "값이 없습니다" 라는 데이터베이스 의미의 "null"입니다.
 
 개체의 상태는 `COleCurrency` 다음과 같은 경우 유효 하지 않습니다.
 
@@ -234,7 +235,7 @@ enum CurrencyStatus {
 
 [!code-cpp[NVC_MFCOleContainer#12](../../mfc/codesnippet/cpp/colecurrency-class_3.cpp)]
 
-## <a name="colecurrencym_cur"></a><a name="m_cur"></a>COleCurrency:: m_cur
+## <a name="colecurrencym_cur"></a><a name="m_cur"></a> COleCurrency:: m_cur
 
 이 개체의 기본 [통화](/windows/win32/api/wtypes/ns-wtypes-cy-r1) 구조 `COleCurrency` 입니다.
 
@@ -245,7 +246,7 @@ enum CurrencyStatus {
 
 자세한 내용은 Windows SDK의 [통화](/windows/win32/api/wtypes/ns-wtypes-cy-r1) 항목을 참조 하세요.
 
-## <a name="colecurrencym_status"></a><a name="m_status"></a>COleCurrency:: m_status
+## <a name="colecurrencym_status"></a><a name="m_status"></a> COleCurrency:: m_status
 
 이 데이터 멤버의 형식은 클래스 내에 정의 된 열거형 형식입니다 `CurrencyStatus` `COleCurrency` .
 
@@ -261,11 +262,11 @@ enum CurrencyStatus{
 
 이러한 상태 값에 대 한 간략 한 설명은 다음 목록을 참조 하세요.
 
-- `COleCurrency::valid`이 개체가 유효한 지 여부를 나타냅니다 `COleCurrency` .
+- `COleCurrency::valid` 이 개체가 유효한 지 여부를 나타냅니다 `COleCurrency` .
 
-- `COleCurrency::invalid`이 개체가 잘못 되었음을 나타냅니다. 즉 `COleCurrency` , 해당 값이 잘못 되었을 수 있습니다.
+- `COleCurrency::invalid` 이 개체가 잘못 되었음을 나타냅니다. 즉 `COleCurrency` , 해당 값이 잘못 되었을 수 있습니다.
 
-- `COleCurrency::null`이 `COleCurrency` 개체가 null 임을 나타냅니다. 즉,이 개체에 대해 값이 제공 되지 않았음을 나타냅니다. 이는 c + + NULL과는 달리 "값이 없습니다" 라는 데이터베이스 의미의 "null"입니다.
+- `COleCurrency::null` 이 `COleCurrency` 개체가 null 임을 나타냅니다. 즉,이 개체에 대해 값이 제공 되지 않았음을 나타냅니다. 이는 c + + NULL과는 달리 "값이 없습니다" 라는 데이터베이스 의미의 "null"입니다.
 
 개체의 상태는 `COleCurrency` 다음과 같은 경우 유효 하지 않습니다.
 
@@ -294,7 +295,7 @@ enum CurrencyStatus{
 > [!CAUTION]
 > 이 데이터 멤버는 고급 프로그래밍 상황을 위한 것입니다. 인라인 멤버 함수 [GetStatus](#getstatus) 및 [SetStatus](#setstatus)를 사용 해야 합니다. `SetStatus`이 데이터 멤버를 명시적으로 설정 하는 방법에 대 한 자세한 내용은을 참조 하십시오.
 
-## <a name="colecurrencyoperator-"></a><a name="operator_eq"></a>COleCurrency:: operator =
+## <a name="colecurrencyoperator-"></a><a name="operator_eq"></a> COleCurrency:: operator =
 
 이러한 오버 로드 된 할당 연산자는 원본 통화 값을이 개체에 복사 `COleCurrency` 합니다.
 
@@ -312,7 +313,7 @@ const COleCurrency& operator=(const VARIANT& varSrc);
 
 - **operator = (** `curSrc` **)** 피연산자의 값과 상태 이며, 기존 `COleCurrency` 개체가이 개체에 복사 됩니다 `COleCurrency` .
 
-- **operator = (** *varsrc* **)** `VARIANT`값 (또는 [COleVariant](../../mfc/reference/colevariant-class.md) 개체)을 통화 ()로 변환 하면 변환 된 `VT_CY` 값이이 개체에 복사 되 `COleCurrency` 고 상태는 valid로 설정 됩니다. 변환이 실패 하면 개체의 값 `COleCurrency` 이 0으로 설정 되 고 상태가 잘못 된 것으로 설정 됩니다.
+- **operator = (** *varsrc* **)** `VARIANT` 값 (또는 [COleVariant](../../mfc/reference/colevariant-class.md) 개체)을 통화 ()로 변환 하면 변환 된 `VT_CY` 값이이 개체에 복사 되 `COleCurrency` 고 상태는 valid로 설정 됩니다. 변환이 실패 하면 개체의 값 `COleCurrency` 이 0으로 설정 되 고 상태가 잘못 된 것으로 설정 됩니다.
 
 자세한 내용은 Windows SDK의 [통화](/windows/win32/api/wtypes/ns-wtypes-cy-r1) 및 [변형](/windows/win32/api/oaidl/ns-oaidl-variant) 항목을 참조 하세요.
 
@@ -320,7 +321,7 @@ const COleCurrency& operator=(const VARIANT& varSrc);
 
 [!code-cpp[NVC_MFCOleContainer#15](../../mfc/codesnippet/cpp/colecurrency-class_4.cpp)]
 
-## <a name="colecurrencyoperator---"></a><a name="operator_plus_minus"></a>COleCurrency:: operator +,-
+## <a name="colecurrencyoperator---"></a><a name="operator_plus_minus"></a> COleCurrency:: operator +,-
 
 이러한 연산자를 사용 하 여 두 값을 더하거나 서로 빼서 `COleCurrency` 값의 부호를 변경할 수 있습니다 `COleCurrency` .
 
@@ -344,7 +345,7 @@ COleCurrency operator-() const;
 
 [!code-cpp[NVC_MFCOleContainer#16](../../mfc/codesnippet/cpp/colecurrency-class_5.cpp)]
 
-## <a name="colecurrencyoperator---"></a><a name="operator_plus_minus_eq"></a>COleCurrency:: operator + =,-=
+## <a name="colecurrencyoperator---"></a><a name="operator_plus_minus_eq"></a> COleCurrency:: operator + =,-=
 
 `COleCurrency`이 개체에서 값을 추가 하 고 뺄 수 있습니다 `COleCurrency` .
 
@@ -367,7 +368,7 @@ const COleCurrency& operator-=(const COleCurrency& cur);
 
 [!code-cpp[NVC_MFCOleContainer#17](../../mfc/codesnippet/cpp/colecurrency-class_6.cpp)]
 
-## <a name="colecurrencyoperator--and-"></a><a name="operator_star"></a>COleCurrency:: operator \* 및/
+## <a name="colecurrencyoperator--and-"></a><a name="operator_star"></a> COleCurrency:: operator \* 및/
 
 `COleCurrency`정수 값을 기준으로 값의 크기를 조정할 수 있습니다.
 
@@ -390,7 +391,7 @@ COleCurrency operator/(long nOperand) const;
 
 [!code-cpp[NVC_MFCOleContainer#18](../../mfc/codesnippet/cpp/colecurrency-class_7.cpp)]
 
-## <a name="colecurrencyoperator--"></a><a name="operator_star_div_eq"></a>COleCurrency:: operator \* =,/=
+## <a name="colecurrencyoperator--"></a><a name="operator_star_div_eq"></a> COleCurrency:: operator \* =,/=
 
 `COleCurrency`정수 계열 값으로이 값의 크기를 조정할 수 있습니다.
 
@@ -435,7 +436,7 @@ friend CArchive& operator>>(
 
 추출 ( **>>** ) 연산자는 보관 파일에서 로드를 지원 합니다.
 
-## <a name="colecurrencyoperator-currency"></a><a name="operator_currency"></a>COleCurrency:: operator CURRENCY
+## <a name="colecurrencyoperator-currency"></a><a name="operator_currency"></a> COleCurrency:: operator CURRENCY
 
 `CURRENCY`이 개체에서 값이 복사 되는 구조체를 반환 `COleCurrency` 합니다.
 
@@ -445,7 +446,7 @@ operator CURRENCY() const;
 
 ### <a name="remarks"></a>설명
 
-## <a name="colecurrencyparsecurrency"></a><a name="parsecurrency"></a>COleCurrency::P arseCurrency
+## <a name="colecurrencyparsecurrency"></a><a name="parsecurrency"></a> COleCurrency::P arseCurrency
 
 통화 값을 읽도록 문자열을 구문 분석 하려면이 멤버 함수를 호출 합니다.
 
@@ -472,7 +473,7 @@ throw(COleException*);
 *lcid*<br/>
 변환에 사용할 로캘 ID를 나타냅니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 문자열이 통화 값으로 성공적으로 변환 되 면 0이 아닌 값이 고, 그렇지 않으면 0입니다.
 
@@ -492,7 +493,7 @@ throw(COleException*);
 
 [!code-cpp[NVC_MFCOleContainer#13](../../mfc/codesnippet/cpp/colecurrency-class_9.cpp)]
 
-## <a name="colecurrency-relational-operators"></a><a name="colecurrency_relational_operators"></a>COleCurrency 관계형 연산자
+## <a name="colecurrency-relational-operators"></a><a name="colecurrency_relational_operators"></a> COleCurrency 관계형 연산자
 
 두 통화 값을 비교 하 고 조건이 true 이면 0이 아닌 값을 반환 합니다. 그렇지 않으면 0입니다.
 
@@ -514,7 +515,7 @@ BOOL operator>=(const COleCurrency& cur) const;
 
 [!code-cpp[NVC_MFCOleContainer#20](../../mfc/codesnippet/cpp/colecurrency-class_10.cpp)]
 
-## <a name="colecurrencysetcurrency"></a><a name="setcurrency"></a>COleCurrency:: SetCurrency
+## <a name="colecurrencysetcurrency"></a><a name="setcurrency"></a> COleCurrency:: SetCurrency
 
 이 멤버 함수를 호출 하 여이 개체의 단위와 소수 부분을 설정 `COleCurrency` 합니다.
 
@@ -538,7 +539,7 @@ void SetCurrency(
 
 [!code-cpp[NVC_MFCOleContainer#14](../../mfc/codesnippet/cpp/colecurrency-class_11.cpp)]
 
-## <a name="colecurrencysetstatus"></a><a name="setstatus"></a>COleCurrency:: SetStatus
+## <a name="colecurrencysetstatus"></a><a name="setstatus"></a> COleCurrency:: SetStatus
 
 이 멤버 함수를 호출 하 여이 개체의 상태 (유효성)를 설정 `COleCurrency` 합니다.
 
@@ -565,11 +566,11 @@ enum CurrencyStatus {
 
 이러한 상태 값에 대 한 간략 한 설명은 다음 목록을 참조 하세요.
 
-- `COleCurrency::valid`이 개체가 유효한 지 여부를 나타냅니다 `COleCurrency` .
+- `COleCurrency::valid` 이 개체가 유효한 지 여부를 나타냅니다 `COleCurrency` .
 
-- `COleCurrency::invalid`이 개체가 잘못 되었음을 나타냅니다. 즉 `COleCurrency` , 해당 값이 잘못 되었을 수 있습니다.
+- `COleCurrency::invalid` 이 개체가 잘못 되었음을 나타냅니다. 즉 `COleCurrency` , 해당 값이 잘못 되었을 수 있습니다.
 
-- `COleCurrency::null`이 `COleCurrency` 개체가 null 임을 나타냅니다. 즉,이 개체에 대해 값이 제공 되지 않았음을 나타냅니다. 이는 c + + NULL과는 달리 "값이 없습니다" 라는 데이터베이스 의미의 "null"입니다.
+- `COleCurrency::null` 이 `COleCurrency` 개체가 null 임을 나타냅니다. 즉,이 개체에 대해 값이 제공 되지 않았음을 나타냅니다. 이는 c + + NULL과는 달리 "값이 없습니다" 라는 데이터베이스 의미의 "null"입니다.
 
 > [!CAUTION]
 > 이 함수는 고급 프로그래밍 상황을 위한 것입니다. 이 함수는이 개체의 데이터를 변경 하지 않습니다. 상태를 null 또는 잘못 된 것으로 설정 하는 데 주로 사용 됩니다. 할당 연산자 ( [operator =](#operator_eq)) 및 [setcurrency](#setcurrency) 는 원본 값을 기준으로 개체의 상태를 설정 합니다.

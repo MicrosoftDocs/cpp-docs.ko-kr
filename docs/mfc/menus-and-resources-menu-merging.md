@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 메뉴 및 리소스: 메뉴 병합'
 title: '메뉴 및 리소스: 메뉴 병합'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - merging toolbar and status bar [MFC]
 - menus [MFC], OLE document applications
 ms.assetid: 80b6bb17-d830-4122-83f0-651fc112d4d1
-ms.openlocfilehash: 03d27443f90634b5d787eee25acc951d24178f42
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: b326e02fb4dbdaaef0ae6015fef6b647cc85b907
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626218"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227977"
 ---
 # <a name="menus-and-resources-menu-merging"></a>메뉴 및 리소스: 메뉴 병합
 
@@ -27,7 +28,7 @@ ms.locfileid: "84626218"
 
 - [도구 모음 및 상태 표시줄](#_core_toolbars_and_status_bars)
 
-## <a name="menu-layouts"></a><a name="_core_menu_layouts"></a>메뉴 레이아웃
+## <a name="menu-layouts"></a><a name="_core_menu_layouts"></a> 메뉴 레이아웃
 
 첫 번째 단계는 메뉴 레이아웃을 조정 하는 것입니다. 컨테이너 응용 프로그램은 포함 된 항목이 현재 활성화 된 경우에만 사용할 새 메뉴를 만들어야 합니다. 최소한이 메뉴는 다음 순서로 나열 됩니다.
 
@@ -99,15 +100,15 @@ END
 
 포함 된 항목이 활성화 되 면 프레임 워크에서 내부 메뉴를 로드 합니다. 그런 다음 서버 응용 프로그램에서 해당 메뉴에 대 한 내부 활성화를 요청 하 고 구분 기호를 삽입 합니다. 메뉴를 결합 하는 방법입니다. 컨테이너의 메뉴에서 파일 및 창 배치 작업을 시작 하 고, 해당 항목에 대해 작동 하는 메뉴를 서버에서 가져올 수 있습니다.
 
-## <a name="toolbars-and-status-bars"></a><a name="_core_toolbars_and_status_bars"></a>도구 모음 및 상태 표시줄
+## <a name="toolbars-and-status-bars"></a><a name="_core_toolbars_and_status_bars"></a> 도구 모음 및 상태 표시줄
 
-서버 응용 프로그램은 새 도구 모음을 만들고 비트맵을 별도 파일에 저장 해야 합니다. 응용 프로그램 마법사에서 생성 된 응용 프로그램은이 비트맵을 ITOOLBAR 이라는 파일에 저장 합니다. .BMP. 새 도구 모음은 서버 항목이 현재 활성화 되어 있을 때 컨테이너 응용 프로그램의 도구 모음을 대체 하며, 일반 도구 모음과 동일한 항목을 포함 해야 하지만 파일 및 창 메뉴에서 항목을 나타내는 아이콘은 제거 합니다.
+서버 응용 프로그램은 새 도구 모음을 만들고 비트맵을 별도 파일에 저장 해야 합니다. 응용 프로그램 마법사에서 생성 된 응용 프로그램은이 비트맵을 ITOOLBAR.BMP 이라는 파일에 저장 합니다. 새 도구 모음은 서버 항목이 현재 활성화 되어 있을 때 컨테이너 응용 프로그램의 도구 모음을 대체 하며, 일반 도구 모음과 동일한 항목을 포함 해야 하지만 파일 및 창 메뉴에서 항목을 나타내는 아이콘은 제거 합니다.
 
 이 도구 모음은 파생 클래스에서 로드 되며 `COleIPFrameWnd` 응용 프로그램 마법사에서 생성 됩니다. 상태 표시줄은 컨테이너 응용 프로그램에 의해 처리 됩니다. 내부 프레임 창의 구현에 대 한 자세한 내용은 서버 [: 서버 구현](servers-implementing-a-server.md)을 참조 하세요.
 
 ## <a name="see-also"></a>참고 항목
 
-[메뉴 및 리소스(OLE)](menus-and-resources-ole.md)<br/>
+[메뉴 및 리소스 (OLE)](menus-and-resources-ole.md)<br/>
 [활성화](activation-cpp.md)<br/>
 [서버](servers.md)<br/>
 [컨테이너](containers.md)

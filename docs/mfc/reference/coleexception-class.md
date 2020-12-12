@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: COleException 클래스'
 title: COleException 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - COleException [MFC], Process
 - COleException [MFC], m_sc
 ms.assetid: 2571e9fe-26cc-42f0-9ad9-8ad5b4311ec1
-ms.openlocfilehash: c82099d816bc8ee8c179e9d4656f474156a629a9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cb11e9c285180c6e54701c210c5329714d7dccb0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233199"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227093"
 ---
 # <a name="coleexception-class"></a>COleException 클래스
 
@@ -61,7 +62,7 @@ class COleException : public CException
 
 **헤더:** afxdisp.h
 
-## <a name="coleexceptionm_sc"></a><a name="m_sc"></a>COleException:: m_sc
+## <a name="coleexceptionm_sc"></a><a name="m_sc"></a> COleException:: m_sc
 
 이 데이터 멤버는 예외의 원인을 나타내는 OLE 상태 코드를 포함 합니다.
 
@@ -79,7 +80,7 @@ SCODE m_sc;
 
 [!code-cpp[NVC_MFCOleContainer#22](../../mfc/codesnippet/cpp/coleexception-class_1.cpp)]
 
-## <a name="coleexceptionprocess"></a><a name="process"></a>COleException::P rocess
+## <a name="coleexceptionprocess"></a><a name="process"></a> COleException::P rocess
 
 **Process** 멤버 함수를 호출 하 여 catch 된 예외를 OLE 상태 코드로 변환 합니다.
 
@@ -92,7 +93,7 @@ static SCODE PASCAL Process(const CException* pAnyException);
 *는 Yexception*<br/>
 Catch 된 예외에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 OLE 상태 코드입니다.
 

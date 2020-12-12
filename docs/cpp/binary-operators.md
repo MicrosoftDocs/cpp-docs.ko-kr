@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 이항 연산자'
 title: 이항 연산자
 ms.date: 06/14/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - operators [C++], binary
 - binary operators [C++]
 ms.assetid: c0e7fbff-bc87-4708-8333-504ac09ee83e
-ms.openlocfilehash: f44217b68f6700603218c6f4f3e846075b7e7d55
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cfb897a3df7cdb3d76f7af82f694e1cf09284cc7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229131"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97229602"
 ---
 # <a name="binary-operators"></a>이항 연산자
 
@@ -23,7 +24,7 @@ ms.locfileid: "87229131"
 |--------------|----------|
 |**,**|쉼표|
 |**!=**|같지 않음|
-|**%**|Modulus|
+|**%**|모듈러스|
 |**%=**|모듈러스/할당|
 |**&**|비트 AND|
 |**&&**|논리적 AND|
@@ -43,7 +44,7 @@ ms.locfileid: "87229131"
 |**<<=**|왼쪽 시프트/할당|
 |**<=**|작거나 같음|
 |**=**|할당|
-|**==**|등호|
+|**==**|같음|
 |**>**|초과|
 |**>=**|크거나 같음|
 |**>>**|오른쪽 Shift|
@@ -71,4 +72,4 @@ ms.locfileid: "87229131"
 
 ## <a name="see-also"></a>참고 항목
 
-[연산자 오버 로드](../cpp/operator-overloading.md)
+[연산자 오버로드](../cpp/operator-overloading.md)

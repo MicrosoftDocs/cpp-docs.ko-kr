@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: _bstr_t:: copy'
 title: _bstr_t::copy
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - Copy method [C++]
 - BSTR object [C++], copy
 ms.assetid: 00ba7311-e82e-4a79-8106-5329fa2f869a
-ms.openlocfilehash: b6029e98e83b171d9ab9f8f3f0282fa3f46ca167
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 29ca965730dbcc22b4b725661ece68442d39aeba
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227597"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97229342"
 ---
 # <a name="_bstr_tcopy"></a>_bstr_t::copy
 
@@ -29,7 +30,7 @@ BSTR copy( bool fCopy = true ) const;
 #### <a name="parameters"></a>매개 변수
 
 *fCopy*<br/>
-이면 **`true`** **복사** 는 포함 된의 복사본을 반환 `BSTR` 하 고 **copy** , 그렇지 않으면 실제 BSTR을 반환 합니다.
+이면 **`true`** **복사** 는 포함 된의 복사본을 반환 `BSTR` 하 고  , 그렇지 않으면 실제 BSTR을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 파일 i/o 클래스'
 title: 파일 i/o 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 - stream classes [MFC]
 - memory file classes [MFC]
 ms.assetid: 92821c3f-d9e1-47f6-98c9-3b632d86e811
-ms.openlocfilehash: 2fcf4dfc1388df0df2bc25928ec8541486c6bb2d
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: b2a0404864cd63ea3992ebada643b15531bcfc3e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615667"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97228016"
 ---
 # <a name="file-io-classes"></a>파일 I/O 클래스
 
 이러한 클래스는 기존 디스크 파일, 메모리 내 파일, 활성 스트림 및 Windows 소켓에 대 한 인터페이스를 제공 합니다. 에서 파생 된 모든 클래스를 `CFile` 개체와 함께 사용 `CArchive` 하 여 serialization을 수행할 수 있습니다.
 
-`CArchive` `CFile` 사용자 고유의 입/출력 처리를 작성 하는 경우, 특히 및 클래스를 사용 합니다. 일반적으로 이러한 클래스에서 파생할 필요가 없습니다. 응용 프로그램 프레임 워크를 사용 하는 경우 문서에서 **Open** **Save** **File** `CArchive` `Serialize` 내용을 serialize 하는 방법에 대 한 세부 정보를 제공 하기 위해 문서 함수를 재정의 하는 경우 파일 메뉴에서 열기 및 저장 명령의 기본 구현에서는 클래스를 사용 하 여 파일 i/o를 처리 합니다. 파일 클래스 및 serialization에 대 한 자세한 내용은 [MFC의 파일](files-in-mfc.md) 및 [serialization](serialization-in-mfc.md)문서를 참조 하세요.
+`CArchive` `CFile` 사용자 고유의 입/출력 처리를 작성 하는 경우, 특히 및 클래스를 사용 합니다. 일반적으로 이러한 클래스에서 파생할 필요가 없습니다. 응용 프로그램 프레임 워크를 사용 하는 경우 문서에서    `CArchive` `Serialize` 내용을 serialize 하는 방법에 대 한 세부 정보를 제공 하기 위해 문서 함수를 재정의 하는 경우 파일 메뉴에서 열기 및 저장 명령의 기본 구현에서는 클래스를 사용 하 여 파일 i/o를 처리 합니다. 파일 클래스 및 serialization에 대 한 자세한 내용은 [MFC의 파일](files-in-mfc.md) 및 [serialization](serialization-in-mfc.md)문서를 참조 하세요.
 
 [CFile](reference/cfile-class.md)<br/>
 이진 디스크 파일에 대 한 파일 인터페이스를 제공 합니다.

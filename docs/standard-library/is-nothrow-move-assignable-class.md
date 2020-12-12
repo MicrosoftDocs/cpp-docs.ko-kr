@@ -1,4 +1,5 @@
 ---
+description: Is_nothrow_move_assignable 클래스에 대해 자세히 알아보세요.
 title: is_nothrow_move_assignable 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - is_nothrow_move_assignable
 ms.assetid: 000baa02-cbba-49de-9870-af730033348e
-ms.openlocfilehash: 92e3364843b5614c9fa108d33605b35962726aa2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 77d61ff79d56ff1caee2d856ac4d947821c16946
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217742"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230759"
 ---
 # <a name="is_nothrow_move_assignable-class"></a>is_nothrow_move_assignable 클래스
 

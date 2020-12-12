@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CConnectionPoint 클래스'
 title: CConnectionPoint 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -24,12 +25,12 @@ helpviewer_keywords:
 - CConnectionPoint [MFC], OnAdvise
 - CConnectionPoint [MFC], QuerySinkInterface
 ms.assetid: f0f23a1e-5e8c-41a9-aa6c-1a4793b28e8f
-ms.openlocfilehash: f428ec597e0e4a56788fae2455eff80b286fda39
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 62525428d8f9bf5303f379140837d75e53cbb387
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87183086"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227847"
 ---
 # <a name="cconnectionpoint-class"></a>CConnectionPoint 클래스
 
@@ -45,7 +46,7 @@ class CConnectionPoint : public CCmdTarget
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[CConnectionPoint::CConnectionPoint](#cconnectionpoint)|`CConnectionPoint` 개체를 생성합니다.|
 
@@ -57,7 +58,7 @@ class CConnectionPoint : public CCmdTarget
 |[CConnectionPoint:: GetContainer](#getcontainer)|연결 맵을 소유 하는 컨트롤의 컨테이너를 검색 합니다.|
 |[CConnectionPoint:: GetIID](#getiid)|연결 지점의 인터페이스 ID를 검색 합니다.|
 |[CConnectionPoint:: GetMaxConnections](#getmaxconnections)|컨트롤에서 지 원하는 최대 연결 지점의 수를 검색 합니다.|
-|[CConnectionPoint::GetNextConnection](#getnextconnection)|*Pos*에서 connection 요소에 대 한 포인터를 검색 합니다.|
+|[CConnectionPoint::GetNextConnection](#getnextconnection)|*Pos* 에서 connection 요소에 대 한 포인터를 검색 합니다.|
 |[CConnectionPoint:: GetStartPosition](#getstartposition)|호출에 전달 될 수 있는 위치 값을 반환 하 여 지도 반복을 시작 `GetNextConnection` 합니다.|
 |[CConnectionPoint:: OnAdvise](#onadvise)|연결을 설정 하거나 중단할 때 프레임 워크에서 호출 됩니다.|
 |[CConnectionPoint::QuerySinkInterface](#querysinkinterface)|요청 된 싱크 인터페이스에 대 한 포인터를 검색 합니다.|
@@ -102,7 +103,7 @@ BEGIN_CONNECTION_PART 및 END_CONNECTION_PART 매크로는 `XSampleConnPt` `CCon
 
 **헤더:** afxdisp.h
 
-## <a name="cconnectionpointcconnectionpoint"></a><a name="cconnectionpoint"></a>CConnectionPoint::CConnectionPoint
+## <a name="cconnectionpointcconnectionpoint"></a><a name="cconnectionpoint"></a> CConnectionPoint::CConnectionPoint
 
 `CConnectionPoint` 개체를 생성합니다.
 
@@ -110,7 +111,7 @@ BEGIN_CONNECTION_PART 및 END_CONNECTION_PART 매크로는 `XSampleConnPt` `CCon
 CConnectionPoint();
 ```
 
-## <a name="cconnectionpointgetconnections"></a><a name="getconnections"></a>CConnectionPoint:: GetConnections
+## <a name="cconnectionpointgetconnections"></a><a name="getconnections"></a> CConnectionPoint:: GetConnections
 
 연결 지점에 대 한 모든 활성 연결을 검색 하려면이 함수를 호출 합니다.
 
@@ -118,11 +119,11 @@ CConnectionPoint();
 const CPtrArray* GetConnections();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 활성 연결 (싱크)의 배열에 대 한 포인터입니다. 배열의 일부 포인터는 NULL 일 수 있습니다. 이 배열에서 NULL이 아닌 각 포인터는 캐스트 연산자를 사용 하 여 싱크 인터페이스에 대 한 포인터로 안전 하 게 변환할 수 있습니다.
 
-## <a name="cconnectionpointgetcontainer"></a><a name="getcontainer"></a>CConnectionPoint:: GetContainer
+## <a name="cconnectionpointgetcontainer"></a><a name="getcontainer"></a> CConnectionPoint:: GetContainer
 
 연결 지점에 대 한를 검색 하기 위해 프레임 워크에서 호출 `IConnectionPointContainer` 됩니다.
 
@@ -130,7 +131,7 @@ const CPtrArray* GetConnections();
 virtual LPCONNECTIONPOINTCONTAINER GetContainer();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 컨테이너에 대 한 포인터이 고, 그렇지 않으면 NULL입니다.
 
@@ -138,7 +139,7 @@ virtual LPCONNECTIONPOINTCONTAINER GetContainer();
 
 이 함수는 일반적으로 BEGIN_CONNECTION_PART 매크로를 통해 구현 됩니다.
 
-## <a name="cconnectionpointgetiid"></a><a name="getiid"></a>CConnectionPoint:: GetIID
+## <a name="cconnectionpointgetiid"></a><a name="getiid"></a> CConnectionPoint:: GetIID
 
 연결 지점의 인터페이스 ID를 검색 하기 위해 프레임 워크에서 호출 됩니다.
 
@@ -146,7 +147,7 @@ virtual LPCONNECTIONPOINTCONTAINER GetContainer();
 virtual REFIID GetIID() = 0;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 연결 지점의 인터페이스 ID에 대 한 참조입니다.
 
@@ -154,7 +155,7 @@ virtual REFIID GetIID() = 0;
 
 이 연결 지점에 대 한 인터페이스 ID를 반환 하려면이 함수를 재정의 합니다.
 
-## <a name="cconnectionpointgetmaxconnections"></a><a name="getmaxconnections"></a>CConnectionPoint:: GetMaxConnections
+## <a name="cconnectionpointgetmaxconnections"></a><a name="getmaxconnections"></a> CConnectionPoint:: GetMaxConnections
 
 연결 지점에서 지원 되는 최대 연결 수를 검색 하기 위해 프레임 워크에서 호출 됩니다.
 
@@ -162,7 +163,7 @@ virtual REFIID GetIID() = 0;
 virtual int GetMaxConnections();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 컨트롤에서 지 원하는 최대 연결 수입니다. 제한이 없는 경우에는-1입니다.
 
@@ -172,9 +173,9 @@ virtual int GetMaxConnections();
 
 컨트롤에 연결할 수 있는 싱크 수를 제한 하려면이 함수를 재정의 합니다.
 
-## <a name="cconnectionpointgetnextconnection"></a><a name="getnextconnection"></a>CConnectionPoint::GetNextConnection
+## <a name="cconnectionpointgetnextconnection"></a><a name="getnextconnection"></a> CConnectionPoint::GetNextConnection
 
-*Pos*에서 connection 요소에 대 한 포인터를 검색 합니다.
+*Pos* 에서 connection 요소에 대 한 포인터를 검색 합니다.
 
 ```
 LPUNKNOWN GetNextConnection(POSITION& pos) const;
@@ -185,9 +186,9 @@ LPUNKNOWN GetNextConnection(POSITION& pos) const;
 *pos*<br/>
 이전 `GetNextConnection` 또는 [Getstartposition](#getstartposition) 호출에서 반환 된 위치 값에 대 한 참조를 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-*Pos*에 지정 된 연결 요소 또는 NULL에 대 한 포인터입니다.
+*Pos* 에 지정 된 연결 요소 또는 NULL에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -197,7 +198,7 @@ LPUNKNOWN GetNextConnection(POSITION& pos) const;
 
 [!code-cpp[NVC_MFCConnectionPoints#4](../../mfc/codesnippet/cpp/cconnectionpoint-class_3.cpp)]
 
-## <a name="cconnectionpointgetstartposition"></a><a name="getstartposition"></a>CConnectionPoint:: GetStartPosition
+## <a name="cconnectionpointgetstartposition"></a><a name="getstartposition"></a> CConnectionPoint:: GetStartPosition
 
 [GetNextConnection](#getnextconnection) 호출에 전달 될 수 있는 위치 값을 반환 하 여 map 반복을 시작 합니다.
 
@@ -205,7 +206,7 @@ LPUNKNOWN GetNextConnection(POSITION& pos) const;
 POSITION GetStartPosition() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 지도를 반복 하기 위한 시작 위치를 나타내는 위치 값입니다. 또는 map이 비어 있으면 NULL입니다.
 
@@ -217,7 +218,7 @@ POSITION GetStartPosition() const;
 
   [CConnectionPoint:: GetNextConnection](#getnextconnection)의 예제를 참조 하세요.
 
-## <a name="cconnectionpointonadvise"></a><a name="onadvise"></a>CConnectionPoint:: OnAdvise
+## <a name="cconnectionpointonadvise"></a><a name="onadvise"></a> CConnectionPoint:: OnAdvise
 
 연결이 설정 되거나 끊어질 때 프레임 워크에서 호출 됩니다.
 
@@ -236,7 +237,7 @@ virtual void OnAdvise(BOOL bAdvise);
 
 싱크가 연결 지점에 연결 하거나 연결을 끊을 때 알림을 표시 하려면이 함수를 재정의 합니다.
 
-## <a name="cconnectionpointquerysinkinterface"></a><a name="querysinkinterface"></a>CConnectionPoint::QuerySinkInterface
+## <a name="cconnectionpointquerysinkinterface"></a><a name="querysinkinterface"></a> CConnectionPoint::QuerySinkInterface
 
 요청 된 싱크 인터페이스에 대 한 포인터를 검색 합니다.
 
@@ -252,9 +253,9 @@ virtual HRESULT QuerySinkInterface(
 요청 된 싱크 인터페이스의 식별자입니다.
 
 *ppInterface*<br/>
-*PUnkSink*로 식별 되는 인터페이스 포인터에 대 한 포인터입니다. 개체가이 인터페이스를 지원 하지 않으면 \* *PPINTERFACE* 가 NULL로 설정 됩니다.
+*PUnkSink* 로 식별 되는 인터페이스 포인터에 대 한 포인터입니다. 개체가이 인터페이스를 지원 하지 않으면 \* *PPINTERFACE* 가 NULL로 설정 됩니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 표준 HRESULT 값입니다.
 

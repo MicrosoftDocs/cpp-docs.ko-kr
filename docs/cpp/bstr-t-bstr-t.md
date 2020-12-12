@@ -1,4 +1,5 @@
 ---
+description: '자세한 내용은 _bstr_t:: _bstr_t을 (를) 확인 하세요.'
 title: _bstr_t::_bstr_t
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - _bstr_t method [C++]
 - _bstr_t class
 ms.assetid: 116d994e-5a72-4351-afbe-866c80b4c165
-ms.openlocfilehash: 843d6aa0e04595143d7da585e95d58e97fe80db0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: efc28b98ecbc6e22c2a78c89e46c08d94e6ce72d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221837"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97229420"
 ---
 # <a name="_bstr_t_bstr_t"></a>_bstr_t::_bstr_t
 
@@ -70,7 +71,7 @@ _bstr_t(
 |생성자|Description|
 |-----------------|-----------------|
 |`_bstr_t( )`|`_bstr_t`Null 개체를 캡슐화 하는 기본 개체를 생성 `BSTR` 합니다.|
-|`_bstr_t( _bstr_t&`  `s1`  `)`|`_bstr_t` 개체를 다른 개체의 복사본으로 생성합니다.<br /><br /> 이 복사본은 *shallow* `BSTR` 새 항목을 만드는 대신 캡슐화 된 개체의 참조 횟수를 증가 시키는 단순 복사본입니다.|
+|`_bstr_t( _bstr_t&`  `s1`  `)`|`_bstr_t` 개체를 다른 개체의 복사본으로 생성합니다.<br /><br /> 이 복사본은  `BSTR` 새 항목을 만드는 대신 캡슐화 된 개체의 참조 횟수를 증가 시키는 단순 복사본입니다.|
 |`_bstr_t( char*`  `s2`  `)`|새 `_bstr_t` 개체를 만드는 `SysAllocString`을 호출하여 `BSTR` 개체를 생성한 다음 캡슐화합니다.<br /><br /> 이 생성자는 먼저 멀티바이트를 유니코드로 변환합니다.|
 |`_bstr_t( wchar_t*`  `s3`  `)`|새 `_bstr_t` 개체를 만드는 `SysAllocString`을 호출하여 `BSTR` 개체를 생성한 다음 캡슐화합니다.|
 |`_bstr_t( _variant_t&`  `var`  `)`|캡슐화된 VARIANT 개체에서 `_bstr_t` 개체를 먼저 검색하여 `_variant_t` 개체에서 `BSTR` 개체를 생성합니다.|

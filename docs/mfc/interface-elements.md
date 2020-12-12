@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 인터페이스 요소'
 title: 인터페이스 요소
 ms.date: 11/19/2018
 helpviewer_keywords:
 - architecture [MFC], MFC Feature Pack
 - MFC Feature Pack, architecture
 ms.assetid: eead6827-9602-40a3-8038-8986e8207385
-ms.openlocfilehash: 4d4d81287cb30a7d3608025085cdb3f9a208147a
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: a0aa762455f6bfe97d371244682c66dbd141a761
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619987"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97228055"
 ---
 # <a name="interface-elements"></a>인터페이스 요소
 
@@ -28,7 +29,7 @@ ms.locfileid: "84619987"
 
 이제 컨트롤 막대를 창 이라고 하며 [Cbasepane 클래스](reference/cbasepane-class.md)에서 파생 됩니다. 이전 버전의 MFC에서 컨트롤 막대의 기본 클래스는 `CControlBar` 입니다.
 
-응용 프로그램 주 프레임 창은 일반적으로 [CFrameWndEx 클래스](reference/cframewndex-class.md) 또는 [CMDIFrameWndEx 클래스로](reference/cmdiframewndex-class.md)표현 됩니다. 주 프레임을 *dock 사이트*라고 합니다. 창에는 도킹 사이트, 도크 막대 또는 미니 프레임 창의 세 가지 부모 유형 중 하나를 사용할 수 있습니다.
+응용 프로그램 주 프레임 창은 일반적으로 [CFrameWndEx 클래스](reference/cframewndex-class.md) 또는 [CMDIFrameWndEx 클래스로](reference/cmdiframewndex-class.md)표현 됩니다. 주 프레임을 *dock 사이트* 라고 합니다. 창에는 도킹 사이트, 도크 막대 또는 미니 프레임 창의 세 가지 부모 유형 중 하나를 사용할 수 있습니다.
 
 크기를 조정 하거나 크기를 조정할 수 있는 두 가지 창 유형이 있습니다. 상태 표시줄 및 도구 모음과 같은 크기 조정 가능한 창은 분할자 또는 슬라이더를 사용 하 여 크기를 조정할 수 있습니다. 크기를 조정할 수 있는 창에서 컨테이너를 형성할 수 있습니다. 한 창은 다른 창에 도킹 하 고 둘 사이의 분할자를 만들 수 있습니다. 그러나 크기 조정 가능한 창에는 도킹할 수 있습니다.
 
@@ -50,7 +51,7 @@ Dock 사이트 (또는 주 프레임 창)는 응용 프로그램의 모든 창 �
 
 ## <a name="pane-dividers"></a>창 분할자
 
-창 구분선 (슬라이더 또는 분할자 라고도 합니다)은 [CPaneDivider 클래스로](reference/cpanedivider-class.md)표현 됩니다. 사용자가 창을 도킹 하면 창이 도킹 사이트 또는 다른 창에 도킹 되어 있는지 여부에 관계 없이 프레임 워크는 창 구분선을 만듭니다. 창이 도킹 사이트에 도킹 되 면 창 구분선을 *기본 창 구분선*이라고 합니다. 기본 창 구분선은 dock 사이트에 있는 모든 도킹 창의 레이아웃을 담당 합니다. Dock 관리자는 기본 창 구분선 및 창 목록의 목록을 유지 관리 합니다. 도킹 관리자는 모든 도킹 창의 레이아웃을 담당 합니다.
+창 구분선 (슬라이더 또는 분할자 라고도 합니다)은 [CPaneDivider 클래스로](reference/cpanedivider-class.md)표현 됩니다. 사용자가 창을 도킹 하면 창이 도킹 사이트 또는 다른 창에 도킹 되어 있는지 여부에 관계 없이 프레임 워크는 창 구분선을 만듭니다. 창이 도킹 사이트에 도킹 되 면 창 구분선을 *기본 창 구분선* 이라고 합니다. 기본 창 구분선은 dock 사이트에 있는 모든 도킹 창의 레이아웃을 담당 합니다. Dock 관리자는 기본 창 구분선 및 창 목록의 목록을 유지 관리 합니다. 도킹 관리자는 모든 도킹 창의 레이아웃을 담당 합니다.
 
 ## <a name="containers"></a>컨테이너
 
@@ -62,7 +63,7 @@ Dock 사이트 (또는 주 프레임 창)는 응용 프로그램의 모든 창 �
 
 ## <a name="tabbed-control-bars-and-outlook-bars"></a>탭 컨트롤 막대 및 Outlook 표시줄
 
-[CMFCBaseTabCtrl 클래스](reference/cmfcbasetabctrl-class.md) 는 분리 가능한 탭을 사용 하 여 탭 창의 기본 기능을 구현 합니다. 개체를 사용 하려면 `CMFCBaseTabCtrl` 응용 프로그램에서 [CBaseTabbedPane 클래스](reference/cbasetabbedpane-class.md) 를 초기화 합니다. `CBaseTabbedPane`는에서 파생 되 `CDockablePane` 고 개체에 대 한 포인터를 유지 `CMFCBaseTabCtrl` 합니다. 사용자는를 `CBaseTabbedPane` 사용 하 여 탭 컨트롤 막대를 도킹 하 고 크기를 조정할 수 있습니다. [CDockablePane:: AttachToTabWnd](reference/cdockablepane-class.md#attachtotabwnd) 를 사용 하 여 도킹 및 탭 된 컨트롤 막대를 동적으로 만듭니다.
+[CMFCBaseTabCtrl 클래스](reference/cmfcbasetabctrl-class.md) 는 분리 가능한 탭을 사용 하 여 탭 창의 기본 기능을 구현 합니다. 개체를 사용 하려면 `CMFCBaseTabCtrl` 응용 프로그램에서 [CBaseTabbedPane 클래스](reference/cbasetabbedpane-class.md) 를 초기화 합니다. `CBaseTabbedPane` 는에서 파생 되 `CDockablePane` 고 개체에 대 한 포인터를 유지 `CMFCBaseTabCtrl` 합니다. 사용자는를 `CBaseTabbedPane` 사용 하 여 탭 컨트롤 막대를 도킹 하 고 크기를 조정할 수 있습니다. [CDockablePane:: AttachToTabWnd](reference/cdockablepane-class.md#attachtotabwnd) 를 사용 하 여 도킹 및 탭 된 컨트롤 막대를 동적으로 만듭니다.
 
 Outlook bar 컨트롤은 탭 막대를 기반으로 합니다. [CMFCOutlookBar 클래스](reference/cmfcoutlookbar-class.md) 는에서 파생 됩니다 `CBaseTabbedPane` . Outlook bar를 사용 하는 방법에 대 한 자세한 내용은 [CMFCOutlookBar 클래스](reference/cmfcoutlookbar-class.md)를 참조 하세요.
 

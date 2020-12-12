@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: _bstr_t:: GetBSTR'
 title: _bstr_t::GetBSTR
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - GetBSTR method [C++]
 ms.assetid: 0c62ff16-4433-4183-a03c-d5a0a9b731ef
-ms.openlocfilehash: da438c65256d9a7e5bf5b02e108fee1385171d2d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ced985bb5123d86ff119279fc49a2b4d181ba8b3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80181215"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97229303"
 ---
 # <a name="_bstr_tgetbstr"></a>_bstr_t::GetBSTR
 
@@ -25,20 +26,20 @@ ms.locfileid: "80181215"
 BSTR& GetBSTR( );
 ```
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 
 `BSTR`에 의해 래핑되는 `_bstr_t`의 시작 부분입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
-**Getbstr** 은 `BSTR`을 공유 하는 모든 `_bstr_t` 개체에 영향을 줍니다. 두 개 이상의 `_bstr_t` 복사 생성자와 **operator =** 를 사용 하 여 `BSTR`를 공유할 수 있습니다.
+**Getbstr** `_bstr_t` 은를 공유 하는 모든 개체에 영향을 줍니다 `BSTR` . 두 개 이상의 `_bstr_t` 은 `BSTR` 복사 생성자와 **operator =** 를 사용 하 여를 공유할 수 있습니다.
 
 ## <a name="example"></a>예제
 
-**Getbstr**를 사용 하는 예제는 [_Bstr_t:: Assign](../cpp/bstr-t-assign.md) 을 참조 하십시오.
+**Getbstr** 를 사용 하는 예제는 [_Bstr_t:: Assign](../cpp/bstr-t-assign.md) 을 참조 하십시오.
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [_bstr_t 클래스](../cpp/bstr-t-class.md)

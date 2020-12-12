@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3675'
 title: 컴파일러 오류 C3675
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3675
 ms.assetid: 87461613-6633-430b-b95d-c7cb1bb63776
-ms.openlocfilehash: 6772572d29765370d6cdbf52ed8470ff2f3f054e
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 0e8ea8d3450cd7a145e596f7122a5d2cbb31c5fd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74758075"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97228744"
 ---
 # <a name="compiler-error-c3675"></a>컴파일러 오류 C3675
 
