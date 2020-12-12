@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: InterfaceListHelper Structure'
 title: InterfaceListHelper 구조체
 ms.date: 10/03/2018
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - InterfaceListHelper structure
 ms.assetid: 4297e419-c96b-45df-8a00-7568062125ba
-ms.openlocfilehash: 1a7b4c19bbcdd4161e9078274f18f96a48f9e7d7
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ca9e13e66acb6f27fba76a7653388305c57146dc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213852"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97249804"
 ---
 # <a name="interfacelisthelper-structure"></a>InterfaceListHelper 구조체
 
@@ -71,21 +72,21 @@ struct InterfaceListHelper<T0, Nil, Nil, Nil, Nil, Nil, Nil, Nil, Nil>;
 *T9*<br/>
 기본적으로 지정 되지 않은 템플릿 매개 변수 9입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
-지정 된 템플릿 매개 변수 인수를 재귀적으로 적용 하 여 `InterfaceList` 형식을 빌드합니다.
+지정 된 `InterfaceList` 템플릿 매개 변수 인수를 재귀적으로 적용 하 여 형식을 빌드합니다.
 
-**InterfaceListHelper** 템플릿에서는 템플릿 매개 변수 *T0* 를 사용 하 여 `InterfaceList` 구조체의 첫 번째 데이터 멤버를 정의한 다음, 나머지 템플릿 매개 변수에 **InterfaceListHelper** 템플릿을 재귀적으로 적용 합니다. 남아 있는 템플릿 매개 변수가 없으면 **InterfaceListHelper** 이 중지 됩니다.
+**InterfaceListHelper** 템플릿에서는 템플릿 매개 변수 *T0* 를 사용 하 여 구조체의 첫 번째 데이터 멤버를 정의한 `InterfaceList` 다음, 나머지 템플릿 매개 변수에 **InterfaceListHelper** 템플릿을 재귀적으로 적용 합니다. 남아 있는 템플릿 매개 변수가 없으면 **InterfaceListHelper** 이 중지 됩니다.
 
 ## <a name="members"></a>멤버
 
-### <a name="public-typedefs"></a>공용 형식 정의
+### <a name="public-typedefs"></a>공용 Typedefs
 
-|이름|설명|
+|Name|설명|
 |----------|-----------------|
 |`TypeT`|[인터페이스 목록] 형식의 동의어입니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `InterfaceListHelper`
 
@@ -97,4 +98,4 @@ struct InterfaceListHelper<T0, Nil, Nil, Nil, Nil, Nil, Nil, Nil, Nil>;
 
 ## <a name="see-also"></a>참고 항목
 
-[Microsoft::WRL::Details 네임스페이스](microsoft-wrl-details-namespace.md)
+[Microsoft:: WRL::D etails 네임 스페이스](microsoft-wrl-details-namespace.md)

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2088'
 title: 컴파일러 오류 C2088
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2088
 ms.assetid: b93f7094-185b-423d-8bb9-507cd757dbf5
-ms.openlocfilehash: 1f798774a7735a6aceb0bf75b3c6da9ccb1e4a72
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 246c130c0918310b59924f3940950d443c0b9217
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75301979"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97251923"
 ---
 # <a name="compiler-error-c2088"></a>컴파일러 오류 C2088
 

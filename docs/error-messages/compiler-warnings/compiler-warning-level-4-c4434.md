@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4434'
 title: 컴파일러 경고(수준 4) C4434
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4434
 ms.assetid: 24b8785e-353a-4c37-8bed-ed61001a871d
-ms.openlocfilehash: fccc37ec531768adbe332ddf9fd91ceb708c7185
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 24e8066ec415293eddf6de1d5a2dd2644623f2ac
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74990819"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97251468"
 ---
 # <a name="compiler-warning-level-4-c4434"></a>컴파일러 경고(수준 4) C4434
 

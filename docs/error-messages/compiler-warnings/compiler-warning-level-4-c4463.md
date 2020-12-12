@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4463'
 title: 컴파일러 경고 (수준 4) C4463
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4463
 ms.assetid: a07ae70c-db4e-472b-8b58-9137d9997323
-ms.openlocfilehash: acc7957493942a9c0e19ce098b74ed0b5d75a12d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: fe4ea13c50e16bf5b72f5753fa989970db3cadde
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214362"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97251325"
 ---
 # <a name="compiler-warning-level-4-c4463"></a>컴파일러 경고 (수준 4) C4463
 
 > 오버플로 *low_value* *high_value* 에만 값을 보유할 수 있는 비트 필드에 *값* 할당
 
-할당 된 *값* 이 비트 필드에서 보유할 수 있는 값 범위를 벗어납니다. 부호 있는 비트 필드 형식은 부호에 대해 상위 비트를 사용 하므로 *n* 이 비트 필드 크기인 경우 부호 있는 비트 필드의 범위는-2<sup>n-1</sup> -2<sup>n-1</sup>-1이 고, 부호 없는 비트 필드의 범위는 0에서 2<sup>n</sup>-1 사이입니다.
+할당 된 *값* 이 비트 필드에서 보유할 수 있는 값 범위를 벗어납니다. 부호 있는 비트 필드 형식은 부호에 대해 상위 비트를 사용 하므로 *n* 이 비트 필드 크기인 경우 부호 있는 비트 필드의 범위는-2 <sup>n-1</sup> -2 <sup>n-1</sup>-1이 고, 부호 없는 비트 필드의 범위는 0에서 2 <sup>n</sup>-1 사이입니다.
 
 ## <a name="example"></a>예제
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2084'
 title: 컴파일러 오류 C2084
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2084
 ms.assetid: 990b107f-3721-4851-ae8b-4b69a8c149ed
-ms.openlocfilehash: f217e0b94e27c0f85879e80b3ae887cb4f76f486
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d71575c13a916603141afc2388909defa8f47f4e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216364"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97252105"
 ---
 # <a name="compiler-error-c2084"></a>컴파일러 오류 C2084
 

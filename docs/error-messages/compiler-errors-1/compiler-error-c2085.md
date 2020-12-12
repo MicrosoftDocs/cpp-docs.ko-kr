@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2085'
 title: 컴파일러 오류 C2085
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2085
 ms.assetid: 0a86785c-8e6f-481b-8c7b-412220c1950d
-ms.openlocfilehash: 7dbf7266a6330a1fdb46d7f2df90e7684f026d9a
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 2cd828c9a18c06c5794bef01ba861f702af2e096
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75301966"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97252118"
 ---
 # <a name="compiler-error-c2085"></a>컴파일러 오류 C2085
 
@@ -27,7 +28,7 @@ void func1( void )
 int main( void ) {}   // C2085
 ```
 
-가능한 해결 방법:
+해결 방법:
 
 ```c
 // C2085b.c
@@ -35,4 +36,4 @@ void func1( void );
 int main( void ) {}
 ```
 
-세미콜론이 누락 된 `func1()`은 프로토타입이 아닌 함수 정의 처럼 보이지만, `func1()`내에서 `main` 정의 되어 식별자 `main`에 대 한 오류 C2085 생성 됩니다.
+세미콜론이 누락 된 경우 `func1()` 은 프로토타입이 아닌 함수 정의 처럼 보이지만 `main` `func1()` 식별자에 대 한 오류 C2085를 생성 하 여 내에서 정의 됩니다 `main` .

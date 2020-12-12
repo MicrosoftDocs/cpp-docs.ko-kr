@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CDaoRecordView 클래스'
 title: CDaoRecordView 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - CDaoRecordView [MFC], OnGetRecordset
 - CDaoRecordView [MFC], OnMove
 ms.assetid: 5aa7d0e2-bd05-413e-b216-80c404ce18ac
-ms.openlocfilehash: 95ed9207d0047287e373401da52f05235a817999
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cb91f6d3890806ac357a1f662905845598df1680
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223137"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97248179"
 ---
 # <a name="cdaorecordview-class"></a>CDaoRecordView 클래스
 
@@ -52,7 +53,7 @@ class AFX_NOVTABLE CDaoRecordView : public CFormView
 
 ## <a name="remarks"></a>설명
 
-뷰는 개체에 직접 연결 된 폼 뷰입니다 `CDaoRecordset` . 대화 상자 템플릿 리소스에서 뷰를 만들고 `CDaoRecordset` 대화 상자 템플릿의 컨트롤에 개체의 필드를 표시 합니다. `CDaoRecordView`개체는 DDX (대화 상자 데이터 교환)와 DFX (DAO 레코드 필드 교환)를 사용 하 여 폼의 컨트롤과 레코드 집합의 필드 간 데이터 이동을 자동화 합니다. `CDaoRecordView`는 현재 보기에서 레코드를 업데이트 하기 위한 첫 번째, 다음, 이전, 마지막 레코드 및 인터페이스로 이동 하기 위한 기본 구현도 제공 합니다.
+뷰는 개체에 직접 연결 된 폼 뷰입니다 `CDaoRecordset` . 대화 상자 템플릿 리소스에서 뷰를 만들고 `CDaoRecordset` 대화 상자 템플릿의 컨트롤에 개체의 필드를 표시 합니다. `CDaoRecordView`개체는 DDX (대화 상자 데이터 교환)와 DFX (DAO 레코드 필드 교환)를 사용 하 여 폼의 컨트롤과 레코드 집합의 필드 간 데이터 이동을 자동화 합니다. `CDaoRecordView` 는 현재 보기에서 레코드를 업데이트 하기 위한 첫 번째, 다음, 이전, 마지막 레코드 및 인터페이스로 이동 하기 위한 기본 구현도 제공 합니다.
 
 > [!NOTE]
 > DAO 데이터베이스 클래스는 ODBC (Open Database Connectivity)를 기반으로 하는 MFC 데이터베이스 클래스와는 다릅니다. 모든 DAO 데이터베이스 클래스 이름에는 "CDao" 접두사가 있습니다. 여전히 DAO 클래스를 사용 하 여 ODBC 데이터 원본에 액세스할 수 있습니다. DAO 클래스는 Microsoft Jet 데이터베이스 엔진을 사용 하므로 일반적으로 뛰어난 기능을 제공 합니다.
@@ -65,7 +66,7 @@ class AFX_NOVTABLE CDaoRecordView : public CFormView
 
 레코드에서 레코드로 이동 하는 기본 구현에 대 한 자세한 내용은 및 `IsOnFirstRecord` `IsOnLastRecord` 및에 적용 되는 [레코드 뷰를 사용 하](../../data/using-a-record-view-mfc-data-access.md)는 문서를 참조 하세요 `CRecordView` `CDaoRecordView` .
 
-`CDaoRecordView`레코드 뷰에서 사용자 인터페이스를 업데이트할 수 있도록 레코드 집합에서 사용자의 위치를 추적 합니다. 사용자가 레코드 집합의 끝으로 이동할 때 레코드 뷰는 메뉴 항목 또는 도구 모음 단추와 같은 사용자 인터페이스 개체를 사용 하지 않도록 설정 하 여 동일한 방향으로 이동 합니다.
+`CDaoRecordView` 레코드 뷰에서 사용자 인터페이스를 업데이트할 수 있도록 레코드 집합에서 사용자의 위치를 추적 합니다. 사용자가 레코드 집합의 끝으로 이동할 때 레코드 뷰는 메뉴 항목 또는 도구 모음 단추와 같은 사용자 인터페이스 개체를 사용 하지 않도록 설정 하 여 동일한 방향으로 이동 합니다.
 
 레코드 뷰 및 레코드 집합 클래스를 선언 하 고 사용 하는 방법에 대 한 자세한 내용은 문서 [레코드 뷰](../../data/record-views-mfc-data-access.md)의 "레코드 뷰 디자인 및 만들기"를 참조 하세요. 레코드 보기의 작동 방식 및 사용 방법에 대 한 자세한 내용은 [레코드 뷰 사용](../../data/using-a-record-view-mfc-data-access.md)문서를 참조 하세요. 위에서 언급 한 모든 문서는 및에 모두 적용 `CRecordView` `CDaoRecordView` 됩니다.
 
@@ -89,7 +90,7 @@ class AFX_NOVTABLE CDaoRecordView : public CFormView
 
 **헤더:** afxdao
 
-## <a name="cdaorecordviewcdaorecordview"></a><a name="cdaorecordview"></a>CDaoRecordView:: CDaoRecordView
+## <a name="cdaorecordviewcdaorecordview"></a><a name="cdaorecordview"></a> CDaoRecordView:: CDaoRecordView
 
 에서 파생 된 형식의 개체를 만들 때 `CDaoRecordView` 두 가지 형식의 생성자를 호출 하 여 뷰 개체를 초기화 하 고 뷰의 기반이 되는 대화 상자 리소스를 식별 합니다.
 
@@ -113,14 +114,14 @@ explicit CDaoRecordView(UINT nIDTemplate);
 > [!NOTE]
 > 파생 클래스는 자체 생성자를 제공 해야 합니다. 파생 클래스의 생성자에서 `CDaoRecordView::CDaoRecordView` 리소스 이름이 나 ID를 인수로 사용 하 여 생성자를 호출 합니다.
 
-`CDaoRecordView::OnInitialUpdate`를 호출 하 `CWnd::UpdateData` 는를 호출 `CWnd::DoDataExchange` 합니다. 이 초기 호출을 `DoDataExchange` `CDaoRecordView` 통해 컨트롤 (간접적)을 `CDaoRecordset` 클래스 마법사에서 만든 필드 데이터 멤버에 연결 합니다. 이러한 데이터 멤버는 기본 클래스 멤버 함수를 호출한 후에만 사용할 수 있습니다 `CFormView::OnInitialUpdate` .
+`CDaoRecordView::OnInitialUpdate` 를 호출 하 `CWnd::UpdateData` 는를 호출 `CWnd::DoDataExchange` 합니다. 이 초기 호출을 `DoDataExchange` `CDaoRecordView` 통해 컨트롤 (간접적)을 `CDaoRecordset` 클래스 마법사에서 만든 필드 데이터 멤버에 연결 합니다. 이러한 데이터 멤버는 기본 클래스 멤버 함수를 호출한 후에만 사용할 수 있습니다 `CFormView::OnInitialUpdate` .
 
 > [!NOTE]
 > 클래스 마법사를 사용 하는 경우 마법사는 **`enum`** 클래스 선언에 값을 정의 하 `CDaoRecordView::IDD` 고 생성자에 대 한 멤버 초기화 목록에서 값을 사용 합니다.
 
 [!code-cpp[NVC_MFCDatabase#35](../../mfc/codesnippet/cpp/cdaorecordview-class_1.cpp)]
 
-## <a name="cdaorecordviewisonfirstrecord"></a><a name="isonfirstrecord"></a>CDaoRecordView:: IsOnFirstRecord
+## <a name="cdaorecordviewisonfirstrecord"></a><a name="isonfirstrecord"></a> CDaoRecordView:: IsOnFirstRecord
 
 이 멤버 함수를 호출 하 여 현재 레코드가이 레코드 뷰와 연결 된 레코드 집합 개체의 첫 번째 레코드 인지 여부를 확인 합니다.
 
@@ -128,7 +129,7 @@ explicit CDaoRecordView(UINT nIDTemplate);
 BOOL IsOnFirstRecord();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 레코드가 레코드 집합의 첫 번째 레코드 이면 0이 아닌 값입니다. 그렇지 않으면 0입니다.
 
@@ -138,7 +139,7 @@ BOOL IsOnFirstRecord();
 
 사용자가 첫 번째 레코드로 이동 하는 경우 프레임 워크는 첫 번째 레코드나 이전 레코드로 이동 하는 사용자 인터페이스 개체 (예: 메뉴 항목 또는 도구 모음 단추)를 사용 하지 않도록 설정 합니다.
 
-## <a name="cdaorecordviewisonlastrecord"></a><a name="isonlastrecord"></a>CDaoRecordView:: IsOnLastRecord
+## <a name="cdaorecordviewisonlastrecord"></a><a name="isonlastrecord"></a> CDaoRecordView:: IsOnLastRecord
 
 이 멤버 함수를 호출 하 여 현재 레코드가이 레코드 뷰와 연결 된 레코드 집합 개체의 마지막 레코드 인지 여부를 확인 합니다.
 
@@ -146,7 +147,7 @@ BOOL IsOnFirstRecord();
 BOOL IsOnLastRecord();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 레코드가 레코드 집합의 마지막 레코드 이면 0이 아닌 값입니다. 그렇지 않으면 0입니다.
 
@@ -157,7 +158,7 @@ BOOL IsOnLastRecord();
 > [!CAUTION]
 > 이 함수의 결과는 사용자가 이전에 이동할 때까지 뷰가 레코드 집합의 끝을 검색할 수 없는 경우를 제외 하 고 신뢰할 수 있습니다. 레코드 뷰가 사용자 인터페이스 개체를 사용 하지 않도록 설정 하 여 다음 또는 마지막 레코드로 이동 해야 함을 알리기 위해 사용자는 마지막 레코드를 벗어나 이동 해야 할 수 있습니다. 사용자가 마지막 레코드를 지난 후 마지막 레코드로 다시 이동 하는 경우 (또는 이전) 레코드 뷰는 레코드 집합에서 사용자의 위치를 추적 하 고 사용자 인터페이스 개체를 올바르게 비활성화할 수 있습니다.
 
-## <a name="cdaorecordviewongetrecordset"></a><a name="ongetrecordset"></a>CDaoRecordView:: OnGetRecordset
+## <a name="cdaorecordviewongetrecordset"></a><a name="ongetrecordset"></a> CDaoRecordView:: OnGetRecordset
 
 레코드 뷰와 연결 된 파생 개체에 대 한 포인터를 반환 `CDaoRecordset` 합니다.
 
@@ -165,7 +166,7 @@ BOOL IsOnLastRecord();
 virtual CDaoRecordset* OnGetRecordset() = 0;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `CDaoRecordset`개체가 성공적으로 만들어졌으면 파생 개체에 대 한 포인터이 고, 그렇지 않으면 NULL 포인터입니다.
 
@@ -175,7 +176,7 @@ virtual CDaoRecordset* OnGetRecordset() = 0;
 
 자세한 내용 및 예제는 레코드 뷰 [: 레코드 뷰 사용](../../data/using-a-record-view-mfc-data-access.md)문서를 참조 하세요.
 
-## <a name="cdaorecordviewonmove"></a><a name="onmove"></a>CDaoRecordView:: OnMove
+## <a name="cdaorecordviewonmove"></a><a name="onmove"></a> CDaoRecordView:: OnMove
 
 이 멤버 함수를 호출 하 여 레코드 집합의 다른 레코드로 이동 하 고 레코드 뷰의 컨트롤에 해당 필드를 표시 합니다.
 
@@ -196,7 +197,7 @@ virtual BOOL OnMove(UINT nIDMoveCommand);
 
 - ID_RECORD_PREV 레코드 집합의 이전 레코드로 이동 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이동에 성공 하면 0이 아닌 값이 고, 그렇지 않으면 0입니다. 이동 요청이 거부 된 경우입니다.
 

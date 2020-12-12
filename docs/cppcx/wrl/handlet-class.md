@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 수동 Let 클래스'
 title: HandleT 클래스
 ms.date: 10/03/2018
 ms.topic: reference
@@ -27,12 +28,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HandleT::operator= operator
 - Microsoft::WRL::Wrappers::HandleT::~HandleT, destructor
 ms.assetid: 3822b32a-a426-4d94-a54d-919d4df60ee2
-ms.openlocfilehash: 661d3cb92b20fc929a9bae3cad7bb55740e5e096
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 608433193729e3d9be5b9490c469bf0b04d3531c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213010"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97250012"
 ---
 # <a name="handlet-class"></a>HandleT 클래스
 
@@ -60,7 +61,7 @@ Name     | 설명
 
 ### <a name="public-constructors"></a>Public 생성자
 
-Name                                | 설명
+이름                                | 설명
 ----------------------------------- | --------------------------------------------------
 [수동 Let:: 수동 Let](#handlet)        | `HandleT` 클래스의 새 인스턴스를 초기화합니다.
 [수동 Let:: ~ 핸드 Let](#tilde-handlet) | 클래스의 인스턴스를 초기화 하지 `HandleT` 않습니다.
@@ -103,7 +104,7 @@ Name                        | 설명
 
 **네임 스페이스:** Microsoft:: WRL:: 래퍼
 
-## <a name="handlethandlet"></a><a name="tilde-handlet"></a>수동 Let:: ~ 핸드 Let
+## <a name="handlethandlet"></a><a name="tilde-handlet"></a> 수동 Let:: ~ 핸드 Let
 
 클래스의 인스턴스를 초기화 하지 `HandleT` 않습니다.
 
@@ -111,7 +112,7 @@ Name                        | 설명
 ~HandleT();
 ```
 
-## <a name="handletattach"></a><a name="attach"></a>수동 Let:: Attach
+## <a name="handletattach"></a><a name="attach"></a> 수동 Let:: Attach
 
 지정 된 핸들을 현재 개체와 연결 `HandleT` 합니다.
 
@@ -126,7 +127,7 @@ void Attach(
 *h*<br/>
 핸들입니다.
 
-## <a name="handletclose"></a><a name="close"></a>수동 Let:: Close
+## <a name="handletclose"></a><a name="close"></a> 수동 Let:: Close
 
 현재 `HandleT` 개체를 닫습니다.
 
@@ -140,7 +141,7 @@ void Close();
 
 핸들이 제대로 닫히지 않은 경우 호출 스레드에서 예외가 발생합니다.
 
-## <a name="handletdetach"></a><a name="detach"></a>수동 Let::D etach
+## <a name="handletdetach"></a><a name="detach"></a> 수동 Let::D etach
 
 현재 개체를 `HandleT` 내부 핸들에서 분리 합니다.
 
@@ -148,7 +149,7 @@ void Close();
 typename HandleTraits::Type Detach();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 내부 핸들입니다.
 
@@ -156,7 +157,7 @@ typename HandleTraits::Type Detach();
 
 이 작업이 완료 되 면 현재이 `HandleT` 잘못 된 상태로 설정 됩니다.
 
-## <a name="handletget"></a><a name="get"></a>수동 Let:: Get
+## <a name="handletget"></a><a name="get"></a> 수동 Let:: Get
 
 내부 핸들의 값을 가져옵니다.
 
@@ -164,11 +165,11 @@ typename HandleTraits::Type Detach();
 typename HandleTraits::Type Get() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 핸들입니다.
 
-## <a name="handlethandle_"></a><a name="handle"></a>수동 Let:: handle_
+## <a name="handlethandle_"></a><a name="handle"></a> 수동 Let:: handle_
 
 개체가 나타내는 핸들을 포함 합니다 `HandleT` .
 
@@ -176,7 +177,7 @@ typename HandleTraits::Type Get() const;
 typename HandleTraits::Type handle_;
 ```
 
-## <a name="handlethandlet"></a><a name="handlet"></a>수동 Let:: 수동 Let
+## <a name="handlethandlet"></a><a name="handlet"></a> 수동 Let:: 수동 Let
 
 `HandleT` 클래스의 새 인스턴스를 초기화합니다.
 
@@ -198,9 +199,9 @@ HandleT(
 
 ### <a name="remarks"></a>설명
 
-첫 번째 생성자는 `HandleT` 개체에 대 한 유효한 핸들이 아닌 개체를 초기화 합니다. 두 번째 생성자는 `HandleT` 매개 변수 *h*에서 새 개체를 만듭니다.
+첫 번째 생성자는 `HandleT` 개체에 대 한 유효한 핸들이 아닌 개체를 초기화 합니다. 두 번째 생성자는 `HandleT` 매개 변수 *h* 에서 새 개체를 만듭니다.
 
-## <a name="handletinternalclose"></a><a name="internalclose"></a>수동 Let:: InternalClose
+## <a name="handletinternalclose"></a><a name="internalclose"></a> 수동 Let:: InternalClose
 
 현재 `HandleT` 개체를 닫습니다.
 
@@ -208,15 +209,15 @@ HandleT(
 virtual bool InternalClose();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 현재가 `HandleT` 성공적으로 닫혔으면이 고, 그렇지 않으면 **`false`** 입니다.
 
 ### <a name="remarks"></a>설명
 
-`InternalClose()`는 **`protected`** 입니다.
+`InternalClose()` 는 **`protected`** 입니다.
 
-## <a name="handletisvalid"></a><a name="isvalid"></a>수동 Let:: IsValid
+## <a name="handletisvalid"></a><a name="isvalid"></a> 수동 Let:: IsValid
 
 현재 `HandleT` 개체가 핸들을 나타내는지 여부를 나타냅니다.
 
@@ -224,11 +225,11 @@ virtual bool InternalClose();
 bool IsValid() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`**`HandleT`이 핸들을 나타내면이 고, 그렇지 않으면 **`false`** 입니다.
 
-## <a name="handletoperator"></a><a name="operator-assign"></a>핸드 Let:: operator =
+## <a name="handletoperator"></a><a name="operator-assign"></a> 핸드 Let:: operator =
 
 지정 된 개체의 값을 `HandleT` 현재 `HandleT` 개체로 이동 합니다.
 
@@ -243,10 +244,10 @@ HandleT& operator=(
 *h*<br/>
 핸들에 대 한 rvalue 참조입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 개체에 대 한 참조 `HandleT` 입니다.
 
 ### <a name="remarks"></a>설명
 
-이 작업은 `HandleT` 매개 변수 *h*로 지정 된 개체를 무효화 합니다.
+이 작업은 `HandleT` 매개 변수 *h* 로 지정 된 개체를 무효화 합니다.

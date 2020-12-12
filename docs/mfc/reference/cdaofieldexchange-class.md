@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CDaoFieldExchange 클래스'
 title: CDaoFieldExchange 클래스
 ms.date: 09/17/2019
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - CDaoFieldExchange [MFC], m_nOperation
 - CDaoFieldExchange [MFC], m_prs
 ms.assetid: 350a663e-92ff-44ab-ad53-d94efa2e5823
-ms.openlocfilehash: 62e9d1917e2d1eea19b9e8db4b6c56b6ad25d9e9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 41389ca9f1f9321abc828f9625f1fef3e745054d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231834"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97250909"
 ---
 # <a name="cdaofieldexchange-class"></a>CDaoFieldExchange 클래스
 
@@ -51,7 +52,7 @@ class CDaoFieldExchange
 
 ## <a name="remarks"></a>설명
 
-`CDaoFieldExchange`에 기본 클래스가 없습니다.
+`CDaoFieldExchange` 에 기본 클래스가 없습니다.
 
 사용자 지정 데이터 형식에 대 한 데이터 교환 루틴을 작성 하는 경우이 클래스를 사용 합니다. 그렇지 않으면이 클래스를 직접 사용 하지 않습니다. DFX는 [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) 개체의 필드 데이터 멤버와 데이터 소스에 있는 현재 레코드의 해당 필드 간에 데이터를 교환 합니다. DFX는 데이터 원본 및 데이터 원본에서 양방향으로 교환을 관리 합니다. 사용자 지정 DFX 루틴을 작성 하는 방법에 대 한 자세한 내용은 [기술 정보 53](../../mfc/tn053-custom-dfx-routines-for-dao-database-classes.md) 을 참조 하세요.
 
@@ -61,11 +62,11 @@ class CDaoFieldExchange
 > [!NOTE]
 > DAO DFX (레코드 필드 교환)는 ODBC 기반 MFC 데이터베이스 클래스 (,)의 RFX (레코드 필드 교환)와 매우 비슷합니다 `CDatabase` `CRecordset` . RFX를 이해 하는 경우 DFX를 쉽게 사용할 수 있습니다.
 
-`CDaoFieldExchange`개체는 DAO 레코드 필드 교환이 이루어지는 데 필요한 컨텍스트 정보를 제공 합니다. `CDaoFieldExchange`개체는 바인딩 매개 변수 및 필드 데이터 멤버를 비롯 한 다양 한 작업을 지원 하 고 현재 레코드의 필드에 다양 한 플래그를 설정 합니다. DFX 작업은 FieldType에서 정의 된 형식의 레코드 집합 클래스 데이터 멤버에 대해 수행 됩니다 **`enum`** **FieldType** `CDaoFieldExchange` . 가능한 **FieldType** 값은 다음과 같습니다.
+`CDaoFieldExchange`개체는 DAO 레코드 필드 교환이 이루어지는 데 필요한 컨텍스트 정보를 제공 합니다. `CDaoFieldExchange` 개체는 바인딩 매개 변수 및 필드 데이터 멤버를 비롯 한 다양 한 작업을 지원 하 고 현재 레코드의 필드에 다양 한 플래그를 설정 합니다. DFX 작업은 FieldType에서 정의 된 형식의 레코드 집합 클래스 데이터 멤버에 대해 수행 됩니다 **`enum`**  `CDaoFieldExchange` . 가능한 **FieldType** 값은 다음과 같습니다.
 
-- `CDaoFieldExchange::outputColumn`필드 데이터 멤버의 경우
+- `CDaoFieldExchange::outputColumn` 필드 데이터 멤버의 경우
 
-- `CDaoFieldExchange::param`매개 변수 데이터 멤버의 경우입니다.
+- `CDaoFieldExchange::param` 매개 변수 데이터 멤버의 경우입니다.
 
 [IsValidOperation](#isvalidoperation) 멤버 함수는 고유한 사용자 지정 DFX 루틴을 작성 하는 데 제공 됩니다. [CDaoRecordset::D ofieldexchange](../../mfc/reference/cdaorecordset-class.md#dofieldexchange) 함수에서 [SetFieldType](#setfieldtype) 를 자주 사용 합니다. DFX 전역 함수에 대 한 자세한 내용은 [레코드 필드 교환 함수](../../mfc/reference/record-field-exchange-functions.md)를 참조 하세요. 사용자 지정 데이터 형식에 대 한 사용자 지정 DFX 루틴을 작성 하는 방법에 대 한 자세한 내용은 [Technical Note 53](../../mfc/tn053-custom-dfx-routines-for-dao-database-classes.md)을 참조 하세요.
 
@@ -77,7 +78,7 @@ class CDaoFieldExchange
 
 **헤더:** afxdao
 
-## <a name="cdaofieldexchangeisvalidoperation"></a><a name="isvalidoperation"></a>CDaoFieldExchange:: IsValidOperation
+## <a name="cdaofieldexchangeisvalidoperation"></a><a name="isvalidoperation"></a> CDaoFieldExchange:: IsValidOperation
 
 사용자 고유의 DFX 함수를 작성 하는 경우 `IsValidOperation` 함수 시작 부분에서를 호출 하 여 특정 필드 데이터 멤버 형식 (또는)에 대해 현재 작업을 수행할 수 있는지 여부를 확인 `CDaoFieldExchange::outputColumn` `CDaoFieldExchange::param` 합니다.
 
@@ -85,7 +86,7 @@ class CDaoFieldExchange
 BOOL IsValidOperation();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 작업이 업데이트 되는 필드의 형식에 적합 한 경우 0이 아닙니다.
 
@@ -95,7 +96,7 @@ DFX 메커니즘에서 수행 하는 일부 작업은 가능한 필드 형식 �
 
 사용자 지정 DFX 루틴을 작성 하는 방법에 대 한 자세한 내용은 [Technical Note 53](../../mfc/tn053-custom-dfx-routines-for-dao-database-classes.md)을 참조 하세요.
 
-## <a name="cdaofieldexchangem_noperation"></a><a name="m_noperation"></a>CDaoFieldExchange:: m_nOperation
+## <a name="cdaofieldexchangem_noperation"></a><a name="m_noperation"></a> CDaoFieldExchange:: m_nOperation
 
 필드 교환 개체와 연결 된 [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) 개체에 대해 수행할 작업을 식별 합니다.
 
@@ -126,13 +127,13 @@ DFX 메커니즘에서 수행 하는 일부 작업은 가능한 필드 형식 �
 |`DumpField`|필드의 내용을 덤프 합니다 (디버그에만 해당).|
 |`MaxDFXOperation`|입력 검사에 사용 됩니다.|
 
-## <a name="cdaofieldexchangem_prs"></a><a name="m_prs"></a>CDaoFieldExchange:: m_prs
+## <a name="cdaofieldexchangem_prs"></a><a name="m_prs"></a> CDaoFieldExchange:: m_prs
 
 개체와 연결 된 [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) 개체에 대 한 포인터를 포함 `CDaoFieldExchange` 합니다.
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdaofieldexchangesetfieldtype"></a><a name="setfieldtype"></a>CDaoFieldExchange:: SetFieldType
+## <a name="cdaofieldexchangesetfieldtype"></a><a name="setfieldtype"></a> CDaoFieldExchange:: SetFieldType
 
 `SetFieldType` `CDaoRecordset` 클래스의 재정의에서를 호출 `DoFieldExchange` 합니다.
 
@@ -143,7 +144,7 @@ void SetFieldType(UINT nFieldType);
 ### <a name="parameters"></a>매개 변수
 
 *nFieldType*<br/>
-에 선언 된 **열거형 FieldType**의 값으로 `CDaoFieldExchange` , 다음 중 하나일 수 있습니다.
+에 선언 된 **열거형 FieldType** 의 값으로 `CDaoFieldExchange` , 다음 중 하나일 수 있습니다.
 
 - `CDaoFieldExchange::outputColumn`
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 바로 사용할 수 있는 배열 클래스'
 title: 바로 사용할 수 있는 배열 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - collection classes [MFC], arrays
 - classes [MFC], array
 ms.assetid: fdeabf95-2fe7-43a8-8f88-d954133caf52
-ms.openlocfilehash: cd297752728f54de2b2ff50877954440cbe70ff9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8522053f6e2056639509c08570543395031f1b2f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228572"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97248608"
 ---
 # <a name="ready-to-use-array-classes"></a>바로 사용할 수 있는 배열 클래스
 

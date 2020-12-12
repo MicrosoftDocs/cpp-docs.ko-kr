@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: Friend 어셈블리 (c + +)'
 title: Friend 어셈블리(C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - friend assemblies, Visual C++
 ms.assetid: 8d55fee0-b7c2-4fbe-a23b-dfe424dc71cd
-ms.openlocfilehash: a42caaf07f6ec0c71f63d6a0df8a79fff6f737e6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3f5a7dcd8833d6d396acfff5f42f6c1709327b2f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221447"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97252131"
 ---
 # <a name="friend-assemblies-c"></a>Friend 어셈블리(C++)
 
@@ -94,7 +95,7 @@ Class1::Test_Public
 
 다음 코드 예제에서는 구성 요소를 정의 하지만 구성 요소의 형식에 액세스할 수 있는 클라이언트 어셈블리를 지정 하지 않습니다.
 
-구성 요소는 **/opt: 없음 ef**를 사용 하 여 연결 됩니다. 이렇게 하면 특성이 있을 때 필요 하지 않은 구성 요소의 메타 데이터에서 전용 형식을 내보냅니다 `InternalsVisibleTo` . 자세한 내용은 [/OPT(최적화)](../build/reference/opt-optimizations.md)를 참조하세요.
+구성 요소는 **/opt: 없음 ef** 를 사용 하 여 연결 됩니다. 이렇게 하면 특성이 있을 때 필요 하지 않은 구성 요소의 메타 데이터에서 전용 형식을 내보냅니다 `InternalsVisibleTo` . 자세한 내용은 [/OPT(최적화)](../build/reference/opt-optimizations.md)를 참조하세요.
 
 ```cpp
 // friend_assemblies_3.cpp

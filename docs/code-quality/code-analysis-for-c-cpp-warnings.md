@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: C/c + + 경고에 대 한 코드 분석'
 title: C/c + + 경고에 대 한 코드 분석
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - native code analysis
 - warnings, C/C++ analysis
 ms.assetid: 28f3fda6-35e8-485b-9755-1991aaccec3f
-ms.openlocfilehash: 7982be29ba458a040239387b65d46c7b240cb7b7
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 9ae343b481221311fd6187d903e8e64fce655ca4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504852"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97252560"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>C/c + + 경고에 대 한 코드 분석
 

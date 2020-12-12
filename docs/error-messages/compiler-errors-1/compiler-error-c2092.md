@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2092'
 title: 컴파일러 오류 C2092
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2092
 ms.assetid: 037e44ae-16c8-489a-a512-dcdf7f7795a6
-ms.openlocfilehash: 8f2b83b4099308ea1d0bb127d8cea377ab65da96
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 3f89d735d44b3cc0b2c28013ab957bf433159afb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90741893"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97251884"
 ---
 # <a name="compiler-error-c2092"></a>컴파일러 오류 C2092
 

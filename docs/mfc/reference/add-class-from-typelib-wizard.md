@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: Typelib에서 클래스 추가 마법사'
 title: Typelib에서 클래스 추가 마법사
 ms.date: 05/09/2019
 helpviewer_keywords:
 - COM interfaces, adding classes
 ms.assetid: 96152afd-9374-4649-a6ab-b0fa2a5592a3
-ms.openlocfilehash: 73f2668883add0e711f0ef73e5602dd9cdc4ab28
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: fa70b7978cc8a7fecce7fa5dc2aa702fc8d11a2c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924105"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97248452"
 ---
 # <a name="add-class-from-typelib-wizard"></a>Typelib에서 클래스 추가 마법사
 
@@ -30,7 +31,7 @@ Visual Studio 2019 이상에서는 이 마법사를 사용할 수 없습니다.
    |옵션|설명|
    |------------|-----------------|
    |**레지스트리**|형식 라이브러리가 시스템에 등록되어 있습니다. 등록된 형식 라이브러리는 **사용 가능한 형식 라이브러리** 에 나열됩니다.|
-   |**파일**|형식 라이브러리는 반드시 시스템에 등록되지는 않지만 파일에는 포함됩니다. **위치** 에서 파일 위치를 제공해야 합니다.|
+   |**최근에 사용한 파일**|형식 라이브러리는 반드시 시스템에 등록되지는 않지만 파일에는 포함됩니다. **위치** 에서 파일 위치를 제공해야 합니다.|
 
 - **사용 가능한 형식 라이브러리**
 
@@ -61,7 +62,7 @@ Visual Studio 2019 이상에서는 이 마법사를 사용할 수 없습니다.
 
    **마침** 을 클릭하면 마법사에서 추가하는 **생성된 클래스** 상자에서 선택한 클래스의 이름을 지정합니다. **클래스** 상자에서 이름을 편집할 수 있습니다.
 
-- **파일**
+- **최근에 사용한 파일**
 
    새 클래스의 헤더 파일 이름을 설정합니다. 기본적으로 이 이름은 **생성된 클래스** 에 제공한 이름을 기반으로 합니다. 파일 이름을 선택한 위치에 저장하거나 클래스 선언을 기존 파일에 추가하려면 줄임표 단추를 클릭합니다. 기존 파일을 선택하면 마법사에서 **마침** 을 클릭해야 해당 파일이 선택한 위치에 저장됩니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 파일 읽기 및 쓰기'
 title: 파일 읽기 및 쓰기
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - reading files
 - writing to files [MFC]
 ms.assetid: cac0c826-ba56-495f-99b3-ce6336f65763
-ms.openlocfilehash: f68fd5c48bce214329437cc13fc39da0c3ca7d2b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 169135f57eaecb52605eca88b7f19e333551f1ad
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228585"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97248621"
 ---
 # <a name="reading-and-writing-files"></a>파일 읽기 및 쓰기
 
@@ -31,7 +32,7 @@ C 런타임 라이브러리 파일 처리 함수를 사용한 경우 MFC 읽기 
 
 1. `Seek`멤버 함수는 파일 내의 특정 오프셋으로 이동 하는 데에도 사용할 수 있습니다.
 
-`Read`버퍼에 대 한 포인터와 읽을 바이트 수를 사용 하 고 읽은 실제 바이트 수를 반환 합니다. EOF (파일 끝)에 도달 하 여 필요한 바이트 수를 읽을 수 없는 경우 실제 읽은 바이트 수가 반환 됩니다. 읽기 오류가 발생 하는 경우 예외가 throw 됩니다. `Write`는와 비슷하지만 `Read` 쓴 바이트 수는 반환 되지 않습니다. 지정 된 모든 바이트를 쓰지 않는 등 쓰기 오류가 발생 하면 예외가 throw 됩니다. 유효한 개체가 있는 경우 `CFile` 다음 예제와 같이 개체를 읽거나 쓸 수 있습니다.
+`Read` 버퍼에 대 한 포인터와 읽을 바이트 수를 사용 하 고 읽은 실제 바이트 수를 반환 합니다. EOF (파일 끝)에 도달 하 여 필요한 바이트 수를 읽을 수 없는 경우 실제 읽은 바이트 수가 반환 됩니다. 읽기 오류가 발생 하는 경우 예외가 throw 됩니다. `Write` 는와 비슷하지만 `Read` 쓴 바이트 수는 반환 되지 않습니다. 지정 된 모든 바이트를 쓰지 않는 등 쓰기 오류가 발생 하면 예외가 throw 됩니다. 유효한 개체가 있는 경우 `CFile` 다음 예제와 같이 개체를 읽거나 쓸 수 있습니다.
 
 [!code-cpp[NVC_MFCFiles#2](../atl-mfc-shared/reference/codesnippet/cpp/reading-and-writing-files_1.cpp)]
 
