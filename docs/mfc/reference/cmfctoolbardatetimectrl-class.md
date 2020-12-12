@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CMFCToolBarDateTimeCtrl 클래스'
 title: CMFCToolBarDateTimeCtrl 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -48,16 +49,16 @@ helpviewer_keywords:
 - CMFCToolBarDateTimeCtrl [MFC], SetTime
 - CMFCToolBarDateTimeCtrl [MFC], SetTimeAll
 ms.assetid: a3853cb9-8ebc-444f-a1e4-9cf905e24c18
-ms.openlocfilehash: 9aebd55f19a6687554d8d8378ef84ed5932025a2
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 141c2dc868f5bfc74c41cb5198daac790e23db58
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81372171"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306718"
 ---
 # <a name="cmfctoolbardatetimectrl-class"></a>CMFCToolBarDateTimeCtrl 클래스
 
-날짜 및 시간 선택기 컨트롤이 포함된 도구 모음 단추입니다.
+날짜 및 시간 선택 컨트롤을 포함 하는 도구 모음 단추입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -69,48 +70,48 @@ class CMFCToolBarDateTimeCtrl : public CMFCToolBarButton
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[CMFCToolBarDate타임Ctrl:::CMFCToolBarDateTimeCtrl](#cmfctoolbardatetimectrl)|`CMFCToolBarDateTimeCtrl` 개체를 생성합니다.|
+|[CMFCToolBarDateTimeCtrl::CMFCToolBarDateTimeCtrl](#cmfctoolbardatetimectrl)|`CMFCToolBarDateTimeCtrl` 개체를 생성합니다.|
 |`CMFCToolBarDateTimeCtrl::~CMFCToolBarDateTimeCtrl`|소멸자|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[CMFCToolBarDate타임Ctrl::캔스트레치](#canbestretched)|사용자 지정 하는 동안 단추를 늘릴 수 있는지 여부를 지정 합니다. [(CMFCToolBar 단추 재정의::캔스트라이드.)](../../mfc/reference/cmfctoolbarbutton-class.md#canbestretched)|
-|[CMFCToolBarDateTimeCtrl::복사에서](#copyfrom)|다른 도구 모음 단추의 속성을 현재 단추에 복사합니다. [(CMFCToolBar 단추 재정의::복사에서.)](../../mfc/reference/cmfctoolbarbutton-class.md#copyfrom)|
+|[CMFCToolBarDateTimeCtrl:: CanBeStretched](#canbestretched)|사용자 지정 중에 사용자가 단추를 늘릴 수 있는지 여부를 지정 합니다. [CMFCToolBarButton:: CanBeStretched](../../mfc/reference/cmfctoolbarbutton-class.md#canbestretched)를 재정의 합니다.|
+|[CMFCToolBarDateTimeCtrl:: CopyFrom](#copyfrom)|다른 도구 모음 단추의 속성을 현재 단추로 복사 합니다. [에서 CMFCToolBarButton:: copyfrom](../../mfc/reference/cmfctoolbarbutton-class.md#copyfrom)재정의 합니다.|
 |`CMFCToolBarDateTimeCtrl::DuplicateData`|다음에 사용하도록 예약됩니다.|
-|[CMFCToolBar 단추::내보내기 메뉴 단추](../../mfc/reference/cmfctoolbarbutton-class.md#exporttomenubutton)|도구 모음 단추에서 메뉴로 텍스트를 복사합니다.|
+|[CMFCToolBarButton:: ExportToMenuButton](../../mfc/reference/cmfctoolbarbutton-class.md#exporttomenubutton)|도구 모음 단추에서 메뉴로 텍스트를 복사 합니다.|
 |`CMFCToolBarDateTimeCtrl::CreateObject`|프레임워크에서 이 클래스 형식의 동적 인스턴스를 만드는 데 사용합니다.|
-|[CMFCToolBarDate타임Ctrl::GetByCmd](#getbycmd)|지정된 명령 `CMFCToolBarDateTimeCtrl` ID가 있는 응용 프로그램의 첫 번째 개체를 검색합니다.|
-|[CMFCToolBarDate타임Ctrl::GetDateTimeCtrl](#getdatetimectrl)|날짜 및 시간 선택기 컨트롤에 대한 포인터를 반환합니다.|
-|[CMFCToolBarDate타임Ctrl::GetHwnd](#gethwnd)|도구 모음 단추와 연결된 창 핸들을 검색합니다. [(CMFCToolBar 단추 재정의::GetHwnd.)](../../mfc/reference/cmfctoolbarbutton-class.md#gethwnd)|
-|`CMFCToolBarDateTimeCtrl::GetThisClass`|이 클래스 형식과 연결된 [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) 개체에 대한 포인터를 얻기 위해 프레임워크에서 사용됩니다.|
-|[CMFCToolBarDate타임Ctrl::GetTime](#gettime)|날짜 및 시간 선택기 컨트롤에서 선택한 시간을 가져옵니다 및 지정 된 [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) 구조에 두고.|
-|[CMFCToolBarDateTimeCtrl::GetTimeAll](#gettimeall)|지정된 명령 ID가 있는 시간 선택 기 제어 단추에서 선택한 시간을 반환합니다.|
-|[CMFC툴바데이트타임트rl::하핫보더](#havehotborder)|사용자가 단추를 선택할 때 단추의 테두리가 표시되는지 여부를 결정합니다. [(CMFCToolBar 단추 재정의::하핫보더.)](../../mfc/reference/cmfctoolbarbutton-class.md#havehotborder)|
-|[CMFCToolBarDate시간Ctrl::알림 명령](#notifycommand)|단추에서 [WM_COMMAND](/windows/win32/menurc/wm-command) 메시지를 처리하는지 여부를 지정합니다. [(CMFCToolBar 단추 재정의::알림 명령.)](../../mfc/reference/cmfctoolbarbutton-class.md#notifycommand)|
-|[CMFCToolBarDate타임Ctrl::OnAddTo 사용자 정의 페이지](#onaddtocustomizepage)|단추를 **사용자 지정** 대화 상자에 추가 될 때 프레임 워크에 의해 호출 됩니다. [(CMFCToolBar 단추 재정의::OnAddTo 사용자 지정 페이지.)](../../mfc/reference/cmfctoolbarbutton-class.md#onaddtocustomizepage)|
-|`CMFCToolBarDateTimeCtrl::OnCalculateSize`|지정된 장치 컨텍스트 및 도킹 상태에 대한 단추 크기를 계산하기 위해 프레임워크에서 호출합니다. [(CMFCToolBar 단추 재정의::계산 크기.)](../../mfc/reference/cmfctoolbarbutton-class.md#oncalculatesize)|
-|[CMFCToolBarDate타임Ctrl::OnChangeParentWnd](#onchangeparentwnd)|단추를 새 도구 모음에 삽입할 때 프레임워크에서 호출됩니다. [(CMFCToolBar 단추 재정의::OnChangeParentWnd.)](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd)|
-|[CMFCToolBarDate시간Ctrl::OnClick](#onclick)|사용자가 컨트롤을 클릭할 때 프레임워크에서 호출됩니다. [(CMFCToolBar 단추 재정의::OnClick.)](../../mfc/reference/cmfctoolbarbutton-class.md#onclick)|
-|[CMFCToolBarDate타임Ctrl::온CtlColor](#onctlcolor)|상위 도구 모음에서 WM_CTLCOLOR 메시지를 처리할 때 프레임워크에서 호출합니다. [(CMFCToolBar 단추 재정의::OnCtlColor.)](../../mfc/reference/cmfctoolbarbutton-class.md#onctlcolor)|
-|`CMFCToolBarDateTimeCtrl::OnDraw`|지정된 스타일과 옵션을 사용하여 단추를 그리는 프레임워크에서 호출합니다. [(CMFCToolBar 단추 재정의::온드로우.)](../../mfc/reference/cmfctoolbarbutton-class.md#ondraw)|
-|`CMFCToolBarDateTimeCtrl::OnDrawOnCustomizeList`|**사용자 지정 대화** 상자의 명령 창에서 단추를 그리는 프레임워크에서 **호출합니다.** [(CMFCToolBar 단추 재정의:OnDrawOn 사용자 지정 목록.)](../../mfc/reference/cmfctoolbarbutton-class.md#ondrawoncustomizelist)|
-|[CMFCToolBarDate타임Ctrl:::온글로벌폰트변경](#onglobalfontschanged)|전역 글꼴이 변경된 경우 프레임워크에서 호출합니다. [(CMFCToolBar 단추 재정의::온글로벌폰트 변경.)](../../mfc/reference/cmfctoolbarbutton-class.md#onglobalfontschanged)|
-|[CMFCToolBarDate타임Ctrl::OnMove](#onmove)|상위 도구 모음이 이동할 때 프레임워크에서 호출됩니다. [(CMFCToolBar 단추 재정의::OnMove.)](../../mfc/reference/cmfctoolbarbutton-class.md#onmove)|
-|[CMFC툴바데이트타임트럴::온쇼](#onshow)|단추를 표시 하거나 보이지 않는 될 때 프레임 워크에 의해 호출 됩니다. [(CMFCToolBar 단추 재정의::OnShow.)](../../mfc/reference/cmfctoolbarbutton-class.md#onshow)|
-|`CMFCToolBarDateTimeCtrl::OnSize`|상위 도구 모음의 크기 또는 위치를 변경하고 이 변경으로 인해 단추크기가 변경될 때 프레임워크에서 호출됩니다. [(CMFCToolBar 단추 재정의::OnSize.)](../../mfc/reference/cmfctoolbarbutton-class.md#onsize)|
-|[CMFCToolBarDate타임Ctrl::OnUpdateToolTip](#onupdatetooltip)|상위 도구 모음이 도구 설명 텍스트를 업데이트할 때 프레임워크에서 호출됩니다. [(CMFCToolBar 단추 재정의::OnUpdateToolTip](../../mfc/reference/cmfctoolbarbutton-class.md#onupdatetooltip).)|
-|`CMFCToolBarDateTimeCtrl::Serialize`|아카이브에서 이 개체를 읽거나 아카이브에 [기록합니다(CMFCToolBarButton::Serialize](../../mfc/reference/cmfctoolbarbutton-class.md#serialize)재사용.)|
-|`CMFCToolBarDateTimeCtrl::SetStyle`|도구 모음 단추의 스타일을 설정합니다. [(CMFCToolBar 단추 재정의::세트 스타일.)](../../mfc/reference/cmfctoolbarbutton-class.md#setstyle)|
-|[CMFCToolBarDate시간Ctrl::설정 시간](#settime)|시간 선택기 컨트롤에서 시간과 날짜를 설정합니다.|
-|[CMFCToolBarDateTimeCtrl::SetTimeAll](#settimeall)|지정된 명령 ID가 있는 시간 선택 기 컨트롤의 모든 인스턴스에서 시간과 날짜를 설정합니다.|
+|[CMFCToolBarDateTimeCtrl:: GetByCmd](#getbycmd)|`CMFCToolBarDateTimeCtrl`응용 프로그램에서 지정 된 명령 ID를 가진 첫 번째 개체를 검색 합니다.|
+|[CMFCToolBarDateTimeCtrl::GetDateTimeCtrl](#getdatetimectrl)|날짜 및 시간 선택 컨트롤에 대 한 포인터를 반환 합니다.|
+|[CMFCToolBarDateTimeCtrl::GetHwnd](#gethwnd)|도구 모음 단추와 연결 된 창 핸들을 검색 합니다. [CMFCToolBarButton:: GetHwnd](../../mfc/reference/cmfctoolbarbutton-class.md#gethwnd)를 재정의 합니다.|
+|`CMFCToolBarDateTimeCtrl::GetThisClass`|프레임 워크에서이 클래스 형식과 연결 된 [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) 개체에 대 한 포인터를 가져오는 데 사용 됩니다.|
+|[CMFCToolBarDateTimeCtrl:: GetTime](#gettime)|날짜 및 시간 선택 컨트롤에서 선택한 시간을 가져와 지정 된 [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) 구조체에 배치 합니다.|
+|[CMFCToolBarDateTimeCtrl:: GetTimeAll](#gettimeall)|지정 된 명령 ID를 가진 시간 선택 컨트롤 단추에서 선택한 시간을 반환 합니다.|
+|[CMFCToolBarDateTimeCtrl::HaveHotBorder](#havehotborder)|사용자가 단추를 선택할 때 단추의 테두리를 표시할지 여부를 결정 합니다. [CMFCToolBarButton:: HaveHotBorder](../../mfc/reference/cmfctoolbarbutton-class.md#havehotborder)를 재정의 합니다.|
+|[CMFCToolBarDateTimeCtrl::NotifyCommand](#notifycommand)|단추가 [WM_COMMAND](/windows/win32/menurc/wm-command) 메시지를 처리 하는지 여부를 지정 합니다. [CMFCToolBarButton:: NotifyCommand](../../mfc/reference/cmfctoolbarbutton-class.md#notifycommand)를 재정의 합니다.|
+|[CMFCToolBarDateTimeCtrl::OnAddToCustomizePage](#onaddtocustomizepage)|**사용자 지정** 대화 상자에 단추가 추가 될 때 프레임 워크에서 호출 됩니다. [CMFCToolBarButton:: OnAddToCustomizePage](../../mfc/reference/cmfctoolbarbutton-class.md#onaddtocustomizepage)를 재정의 합니다.|
+|`CMFCToolBarDateTimeCtrl::OnCalculateSize`|지정 된 장치 컨텍스트 및 도킹 상태에 대 한 단추의 크기를 계산 하기 위해 프레임 워크에서 호출 됩니다. [CMFCToolBarButton:: OnCalculateSize](../../mfc/reference/cmfctoolbarbutton-class.md#oncalculatesize)를 재정의 합니다.|
+|[CMFCToolBarDateTimeCtrl::OnChangeParentWnd](#onchangeparentwnd)|단추가 새 도구 모음에 삽입 될 때 프레임 워크에서 호출 됩니다. [CMFCToolBarButton:: OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd)를 재정의 합니다.|
+|[CMFCToolBarDateTimeCtrl:: OnClick](#onclick)|사용자가 컨트롤을 클릭할 때 프레임 워크에서 호출 됩니다. [CMFCToolBarButton:: OnClick](../../mfc/reference/cmfctoolbarbutton-class.md#onclick)을 재정의 합니다.|
+|[CMFCToolBarDateTimeCtrl::OnCtlColor](#onctlcolor)|부모 도구 모음이 WM_CTLCOLOR 메시지를 처리할 때 프레임 워크에서 호출 됩니다. [CMFCToolBarButton:: OnCtlColor](../../mfc/reference/cmfctoolbarbutton-class.md#onctlcolor)를 재정의 합니다.|
+|`CMFCToolBarDateTimeCtrl::OnDraw`|지정 된 스타일 및 옵션을 사용 하 여 단추를 그리기 위해 프레임 워크에서 호출 됩니다. [CMFCToolBarButton:: OnDraw](../../mfc/reference/cmfctoolbarbutton-class.md#ondraw)를 재정의 합니다.|
+|`CMFCToolBarDateTimeCtrl::OnDrawOnCustomizeList`|**사용자 지정** 대화 상자의 **명령** 창에 단추를 그리기 위해 프레임 워크에서 호출 됩니다. [CMFCToolBarButton:: OnDrawOnCustomizeList](../../mfc/reference/cmfctoolbarbutton-class.md#ondrawoncustomizelist)를 재정의 합니다.|
+|[CMFCToolBarDateTimeCtrl::OnGlobalFontsChanged](#onglobalfontschanged)|전역 글꼴이 변경 될 때 프레임 워크에서 호출 됩니다. [CMFCToolBarButton:: OnGlobalFontsChanged](../../mfc/reference/cmfctoolbarbutton-class.md#onglobalfontschanged)를 재정의 합니다.|
+|[CMFCToolBarDateTimeCtrl:: OnMove](#onmove)|부모 도구 모음이 이동 될 때 프레임 워크에서 호출 됩니다. [CMFCToolBarButton:: OnMove](../../mfc/reference/cmfctoolbarbutton-class.md#onmove)를 재정의 합니다.|
+|[CMFCToolBarDateTimeCtrl:: OnShow](#onshow)|단추를 표시 하거나 숨길 때 프레임 워크에서 호출 됩니다. [CMFCToolBarButton:: OnShow](../../mfc/reference/cmfctoolbarbutton-class.md#onshow)를 재정의 합니다.|
+|`CMFCToolBarDateTimeCtrl::OnSize`|부모 도구 모음이 크기나 위치를 변경 하 고이 변경으로 인해 크기가 변경 될 때 프레임 워크에서 호출 됩니다. [CMFCToolBarButton:: OnSize](../../mfc/reference/cmfctoolbarbutton-class.md#onsize)를 재정의 합니다.|
+|[CMFCToolBarDateTimeCtrl:: OnUpdateToolTip](#onupdatetooltip)|부모 도구 모음에서 도구 설명 텍스트를 업데이트할 때 프레임 워크에서 호출 됩니다. [CMFCToolBarButton:: OnUpdateToolTip](../../mfc/reference/cmfctoolbarbutton-class.md#onupdatetooltip)를 재정의 합니다.|
+|`CMFCToolBarDateTimeCtrl::Serialize`|보관에서이 개체를 읽거나 보관 파일에 씁니다 ( [CMFCToolBarButton:: Serialize](../../mfc/reference/cmfctoolbarbutton-class.md#serialize)재정의).|
+|`CMFCToolBarDateTimeCtrl::SetStyle`|도구 모음 단추의 스타일을 설정 합니다. [CMFCToolBarButton:: system.windows.forms.control.setstyle](../../mfc/reference/cmfctoolbarbutton-class.md#setstyle)를 재정의 합니다.|
+|[CMFCToolBarDateTimeCtrl:: SetTime](#settime)|시간 선택 컨트롤에서 시간 및 날짜를 설정 합니다.|
+|[CMFCToolBarDateTimeCtrl:: SetTimeAll](#settimeall)|지정 된 명령 ID를 가진 시간 선택 컨트롤의 모든 인스턴스에 대 한 시간 및 날짜를 설정 합니다.|
 
 ## <a name="remarks"></a>설명
 
-날짜 및 시간 선택기 컨트롤을 사용하는 방법에 대한 예제는 ToolbarDateTimePicker 샘플 프로젝트를 참조하십시오. 도구 모음에 컨트롤 단추를 추가하는 방법에 대한 자세한 내용은 [연습: 도구 모음에 컨트롤 넣기](../../mfc/walkthrough-putting-controls-on-toolbars.md)를 참조하십시오.
+날짜 및 시간 선택 컨트롤을 사용 하는 방법에 대 한 예제는 ToolbarDateTimePicker 샘플 프로젝트를 참조 하세요. 도구 모음에 컨트롤 단추를 추가 하는 방법에 대 한 자세한 내용은 [연습: 도구 모음에 컨트롤 배치](../../mfc/walkthrough-putting-controls-on-toolbars.md)를 참조 하세요.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -118,31 +119,31 @@ class CMFCToolBarDateTimeCtrl : public CMFCToolBarButton
 
 [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)
 
-[CMFC툴바데이트타임Ctrl](../../mfc/reference/cmfctoolbardatetimectrl-class.md)
+[CMFCToolBarDateTimeCtrl](../../mfc/reference/cmfctoolbardatetimectrl-class.md)
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxtoolbardatetimectrl.h
+**헤더:** afxtoolbardatetimectrl
 
-## <a name="cmfctoolbardatetimectrlcanbestretched"></a><a name="canbestretched"></a>CMFCToolBarDate타임Ctrl::캔스트레치
+## <a name="cmfctoolbardatetimectrlcanbestretched"></a><a name="canbestretched"></a> CMFCToolBarDateTimeCtrl:: CanBeStretched
 
-사용자 지정 하는 동안 단추를 늘릴 수 있는지 여부를 지정 합니다.
+사용자 지정 중에 사용자가 단추를 늘릴 수 있는지 여부를 지정 합니다.
 
 ```
 virtual BOOL CanBeStretched() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-이 메서드는 TRUE를 반환합니다.
+이 메서드는 TRUE를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-기본적으로 프레임워크는 사용자가 사용자 지정 하는 동안 도구 모음 단추를 늘릴 수 없습니다. 이 메서드는 사용자가 사용자 지정 하는 동안 날짜 및 시간 도구 모음 단추를 늘릴 수 있도록 기본 클래스 구현 [(CMFCToolBarButton::CanBeStretched)를](../../mfc/reference/cmfctoolbarbutton-class.md#canbestretched)확장 합니다.
+기본적으로 프레임 워크는 사용자 지정 중에 사용자가 도구 모음 단추를 늘이지 못하게 합니다. 이 메서드는 사용자 지정 중에 사용자가 날짜 및 시간 도구 모음 단추를 스트레치할 수 있도록 하 여 기본 클래스 구현 ( [CMFCToolBarButton:: CanBeStretched](../../mfc/reference/cmfctoolbarbutton-class.md#canbestretched))을 확장 합니다.
 
-## <a name="cmfctoolbardatetimectrlcmfctoolbardatetimectrl"></a><a name="cmfctoolbardatetimectrl"></a>CMFCToolBarDate타임Ctrl:::CMFCToolBarDateTimeCtrl
+## <a name="cmfctoolbardatetimectrlcmfctoolbardatetimectrl"></a><a name="cmfctoolbardatetimectrl"></a> CMFCToolBarDateTimeCtrl::CMFCToolBarDateTimeCtrl
 
-[CMFCToolBarDateTimeCtrl](../../mfc/reference/cmfctoolbardatetimectrl-class.md) 개체를 만들고 초기화합니다.
+[CMFCToolBarDateTimeCtrl](../../mfc/reference/cmfctoolbardatetimectrl-class.md) 개체를 만들고 초기화 합니다.
 
 ```
 CMFCToolBarDateTimeCtrl(
@@ -155,30 +156,30 @@ CMFCToolBarDateTimeCtrl(
 ### <a name="parameters"></a>매개 변수
 
 *uiID*<br/>
-【인】 컨트롤 ID입니다.
+진행 컨트롤 ID입니다.
 
-*아이 이미지*<br/>
-【인】 도구 모음 개체의 이미지 인덱스입니다. `CMFCToolBarImages`
+*iImage*<br/>
+진행 도구 모음의 개체에 있는 이미지의 인덱스입니다 `CMFCToolBarImages` .
 
 *dwStyle*<br/>
-【인】 사용자가 단추를 `CMFCToolBarDateTimeCtrlImpl` 클릭할 때 생성되는 창의 스타일입니다.
+진행 `CMFCToolBarDateTimeCtrlImpl` 사용자가 단추를 클릭할 때 만들어지는 창의 스타일입니다.
 
-*아이 폭*<br/>
-【인】 컨트롤의 너비(픽셀)입니다.
+*iWidth*<br/>
+진행 컨트롤의 너비 (픽셀)입니다.
 
 ### <a name="remarks"></a>설명
 
-이 개체는 시스템 날짜 및 시간으로 초기화됩니다. 내부 `CMFCToolBarDateTimeCtrlImpl` 객체의 창 스타일에는 *dwStyle* 매개 변수와 WS_CHILD 및 WS_VISIBLE 스타일이 포함됩니다. 을 사용하여 `CMFCToolBarDateTimeCtrl::SetStyle`이러한 스타일을 변경할 수 없습니다. 컨트롤의 스타일을 변경하는 데 사용합니다. `SetStyle` `CMFCToolBarDateTimeCtrl`
+이 개체는 시스템 날짜 및 시간으로 초기화 됩니다. 내부 개체의 창 스타일에는 `CMFCToolBarDateTimeCtrlImpl` *dwstyle* 매개 변수와 WS_CHILD 및 WS_VISIBLE 스타일이 포함 됩니다. 을 사용 하 여 이러한 스타일을 변경할 수는 없습니다 `CMFCToolBarDateTimeCtrl::SetStyle` . `SetStyle`컨트롤의 스타일을 변경 하는 데 사용 `CMFCToolBarDateTimeCtrl` 합니다.
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 `CMFCToolBarDateTimeCtrl` 클래스의 개체를 생성 하는 방법을 보여 줍니다. 이 코드 조각은 도구 [모음 날짜 시간 선택기 샘플의](../../overview/visual-cpp-samples.md)일부입니다.
+다음 예제에서는 클래스의 개체를 생성 하는 방법을 보여 줍니다 `CMFCToolBarDateTimeCtrl` . 이 코드 조각은 [도구 모음 날짜 시간 선택 샘플](../../overview/visual-cpp-samples.md)의 일부입니다.
 
 [!code-cpp[NVC_MFC_ToolbarDateTimePicker#1](../../mfc/reference/codesnippet/cpp/cmfctoolbardatetimectrl-class_1.cpp)]
 
-## <a name="cmfctoolbardatetimectrlcopyfrom"></a><a name="copyfrom"></a>CMFCToolBarDateTimeCtrl::복사에서
+## <a name="cmfctoolbardatetimectrlcopyfrom"></a><a name="copyfrom"></a> CMFCToolBarDateTimeCtrl:: CopyFrom
 
-다른 도구 모음 단추의 속성을 현재 단추에 복사합니다.
+다른 도구 모음 단추의 속성을 현재 단추로 복사 합니다.
 
 ```
 virtual void CopyFrom(const CMFCToolBarButton& src);
@@ -186,16 +187,16 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 
 ### <a name="parameters"></a>매개 변수
 
-*Src*<br/>
-【인】 복사할 소스 단추에 대한 참조입니다.
+*src*<br/>
+진행 복사할 원본 단추에 대 한 참조입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 호출하여 다른 도구 모음 단추를 이 도구 모음 단추에 복사합니다. *src는* 유형이어야합니다 `CMFCToolBarDateTimeCtrl`.
+이 메서드를 호출 하 여 다른 도구 모음 단추를이 도구 모음 단추에 복사 합니다. *src* 는 형식 이어야 합니다 `CMFCToolBarDateTimeCtrl` .
 
-## <a name="cmfctoolbardatetimectrlexporttomenubutton"></a><a name="exporttomenubutton"></a>CMFCToolBarDate타임Ctrl::내보내기 메뉴 단추
+## <a name="cmfctoolbardatetimectrlexporttomenubutton"></a><a name="exporttomenubutton"></a> CMFCToolBarDateTimeCtrl:: ExportToMenuButton
 
-도구 모음 단추에서 메뉴로 텍스트를 복사합니다.
+도구 모음 단추에서 메뉴로 텍스트를 복사 합니다.
 
 ```
 virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;
@@ -203,20 +204,20 @@ virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*메뉴 버튼*<br/>
-【인】 대상 메뉴 단추에 대한 참조입니다.
+*menuButton*<br/>
+진행 대상 메뉴 단추에 대 한 참조입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-이 메서드는 TRUE를 반환합니다.
+이 메서드는 TRUE를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 컨트롤의 명령 ID와 연결 된 문자열 리소스를 로드 하 여 기본 클래스 구현 [(CMFCToolBarButton::ExportToMenuButton)를](../../mfc/reference/cmfctoolbarbutton-class.md#exporttomenubutton)재정의 합니다. 문자열 리소스에 대한 자세한 내용은 [CStringT::LoadString](../../atl-mfc-shared/reference/cstringt-class.md#loadstring)을 참조하십시오.
+이 메서드는 컨트롤의 명령 ID와 연결 된 문자열 리소스를 로드 하 여 기본 클래스 구현 ( [CMFCToolBarButton:: ExportToMenuButton](../../mfc/reference/cmfctoolbarbutton-class.md#exporttomenubutton))을 재정의 합니다. 문자열 리소스에 대 한 자세한 내용은 [CStringT:: LoadString](../../atl-mfc-shared/reference/cstringt-class.md#loadstring)을 참조 하십시오.
 
-## <a name="cmfctoolbardatetimectrlgetbycmd"></a><a name="getbycmd"></a>CMFCToolBarDate타임Ctrl::GetByCmd
+## <a name="cmfctoolbardatetimectrlgetbycmd"></a><a name="getbycmd"></a> CMFCToolBarDateTimeCtrl:: GetByCmd
 
-지정된 명령 `CMFCToolBarDateTimeCtrl` ID가 있는 응용 프로그램의 첫 번째 개체를 검색합니다.
+`CMFCToolBarDateTimeCtrl`응용 프로그램에서 지정 된 명령 ID를 가진 첫 번째 개체를 검색 합니다.
 
 ```
 static CMFCToolBarDateTimeCtrl* __stdcall GetByCmd(UINT uiCmd);
@@ -225,51 +226,51 @@ static CMFCToolBarDateTimeCtrl* __stdcall GetByCmd(UINT uiCmd);
 ### <a name="parameters"></a>매개 변수
 
 *uiCmd*<br/>
-【인】 검색할 단추의 명령 ID입니다.
+진행 검색할 단추의 명령 ID입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-지정된 `CMFCToolBarDateTimeCtrl` 명령 ID가 있는 응용 프로그램의 첫 번째 `CMFCToolBarDateTimeCtrl` 개체 또는 지정된 명령 ID가 있는 개체가 없는 경우 NULL입니다.
+지정 된 `CMFCToolBarDateTimeCtrl` 명령 id를 가진 응용 프로그램의 첫 번째 개체 이거나, `CMFCToolBarDateTimeCtrl` 지정 된 명령 id를 가진 개체가 없는 경우 NULL입니다.
 
 ### <a name="remarks"></a>설명
 
-이 공유 유틸리티 메서드는 [CMFCToolBarDateTimeCtrl::SetTimeAll](#settimeall) 및 [CMFCToolBarDateTimeCtrl::GetTimeAll과](#gettimeall) 같은 메서드에서 사용되며 지정된 명령 ID가 있는 시간 선택기 컨트롤의 모든 인스턴스의 시간과 날짜를 설정하거나 가져옵니다.
+이 공유 유틸리티 메서드는 지정 된 명령 ID를 가진 시간 선택 컨트롤의 모든 인스턴스에 대 한 시간과 날짜를 설정 하거나 가져오기 위해 [CMFCToolBarDateTimeCtrl:: settimeall](#settimeall) 및 [CMFCToolBarDateTimeCtrl:: gettimeall](#gettimeall) 등의 메서드에서 사용 됩니다.
 
-## <a name="cmfctoolbardatetimectrlgetdatetimectrl"></a><a name="getdatetimectrl"></a>CMFCToolBarDate타임Ctrl::GetDateTimeCtrl
+## <a name="cmfctoolbardatetimectrlgetdatetimectrl"></a><a name="getdatetimectrl"></a> CMFCToolBarDateTimeCtrl::GetDateTimeCtrl
 
-날짜 및 시간 선택기 컨트롤에 대한 포인터를 반환합니다.
+날짜 및 시간 선택 컨트롤에 대 한 포인터를 반환 합니다.
 
 ```
 CDateTimeCtrl* GetDateTimeCtrl() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-날짜 및 시간 선택기 컨트롤에 대한 포인터; 또는 NULL 컨트롤이 없는 경우
+날짜 및 시간 선택 컨트롤에 대 한 포인터입니다. 또는 컨트롤이 없는 경우 NULL입니다.
 
 ### <a name="remarks"></a>설명
 
-도구 `CMFCToolBarDateTimeCtrl` 모음에 개체를 `m_pWndDateTime` 삽입할 때 `CMFCToolBarDateTimeCtrl` 클래스는 데이터 멤버를 초기화합니다.
+`CMFCToolBarDateTimeCtrl`클래스는 `m_pWndDateTime` `CMFCToolBarDateTimeCtrl` 개체를 도구 모음에 삽입할 때 데이터 멤버를 초기화 합니다.
 
-## <a name="cmfctoolbardatetimectrlgethwnd"></a><a name="gethwnd"></a>CMFCToolBarDate타임Ctrl::GetHwnd
+## <a name="cmfctoolbardatetimectrlgethwnd"></a><a name="gethwnd"></a> CMFCToolBarDateTimeCtrl::GetHwnd
 
-도구 모음 단추와 연결된 창 핸들을 검색합니다.
+도구 모음 단추와 연결 된 창 핸들을 검색 합니다.
 
 ```
 virtual HWND GetHwnd();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-날짜 및 시간 도구 모음 단추와 연결된 창 핸들입니다.
+날짜 및 시간 도구 모음 단추와 연결 된 창 핸들입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 [CMFCToolBarButton::GetHwnd 메서드를 재정의합니다.](../../mfc/reference/cmfctoolbarbutton-class.md#gethwnd)
+이 메서드는 [CMFCToolBarButton:: GetHwnd](../../mfc/reference/cmfctoolbarbutton-class.md#gethwnd) 메서드를 재정의 합니다.
 
-## <a name="cmfctoolbardatetimectrlgettime"></a><a name="gettime"></a>CMFCToolBarDate타임Ctrl::GetTime
+## <a name="cmfctoolbardatetimectrlgettime"></a><a name="gettime"></a> CMFCToolBarDateTimeCtrl:: GetTime
 
-연결된 날짜 및 시간 선택기 컨트롤에서 선택한 시간을 가져옵니다 및 지정된 [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) 구조에 넣습니다.
+연결 된 날짜 및 시간 선택 컨트롤에서 선택한 시간을 가져와 지정 된 [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) 구조체에 배치 합니다.
 
 ```
 BOOL GetTime(COleDateTime& timeDest) const;
@@ -280,22 +281,22 @@ DWORD GetTime(LPSYSTEMTIME pTimeDest) const;
 ### <a name="parameters"></a>매개 변수
 
 *timeDest*<br/>
-【아웃】 첫 번째 오버로드에서 시스템 시간 정보를 수신하는 [COleDateTime 클래스](../../atl-mfc-shared/reference/coledatetime-class.md) 개체입니다. 두 번째 오버로드에서 시스템 시간 정보를 수신하는 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 개체입니다.
+제한이 첫 번째 오버 로드에서 시스템 시간 정보를 수신 하는 [COleDateTime 클래스](../../atl-mfc-shared/reference/coledatetime-class.md) 개체입니다. 두 번째 오버 로드에서 시스템 시간 정보를 수신 하는 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 개체입니다.
 
-*p시간*<br/>
-【아웃】 시스템 시간 정보를 수신하는 [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) 구조에 대한 포인터입니다. NULL이 아니어야 합니다.
+*pTimeDest*<br/>
+제한이 시스템 시간 정보를 수신 하는 [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) 구조체에 대 한 포인터입니다. NULL이 아니어야 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-첫 번째 오버로드에서 시간이 [COleDateTime 클래스](../../atl-mfc-shared/reference/coledatetime-class.md) 개체에 성공적으로 기록된 경우 0이 아닌 경우 그렇지 않으면 0. 두 번째 및 세 번째 오버로드에서 반환 값은 [NMDATETIMECHANGE](/windows/win32/api/commctrl/ns-commctrl-nmdatetimechange) 구조에 설정된 dwFlag 멤버와 동일한 DWORD입니다.
+첫 번째 오버 로드에서는 시간이 [COleDateTime 클래스](../../atl-mfc-shared/reference/coledatetime-class.md) 개체에 성공적으로 기록 된 경우 0이 아닌 값이 됩니다. 그렇지 않으면 0입니다. 두 번째 및 세 번째 오버 로드에서 반환 값은 [NMDATETIMECHANGE](/windows/win32/api/commctrl/ns-commctrl-nmdatetimechange) 구조에 설정 된 dwflag 멤버와 동일한 DWORD입니다.
 
 ### <a name="remarks"></a>설명
 
-메서드는 날짜 및 시간 선택기가 날짜 및 시간으로 설정되어 있는지 여부를 표시하도록 [NMDATETIMECHANGE](/windows/win32/api/commctrl/ns-commctrl-nmdatetimechange) 구조 멤버 dwFlags를 설정합니다. 값이 GDT_NONE 같으면 컨트롤이 `no date` 상태로 설정되고 DTS_SHOWNONE 스타일을 사용합니다. 반환된 값이 GDT_VALID 같으면 시스템 시간이 대상 위치에 성공적으로 저장됩니다.
+메서드는 [NMDATETIMECHANGE](/windows/win32/api/commctrl/ns-commctrl-nmdatetimechange) Structure 멤버 dwFlags를 설정 하 여 날짜 및 시간 선택이 날짜 및 시간으로 설정 되어 있는지 여부를 나타냅니다. 값이 GDT_NONE와 같으면 컨트롤이 status로 설정 되 `no date` 고 DTS_SHOWNONE 스타일을 사용 합니다. 반환 된 값이 GDT_VALID와 같으면 시스템 시간이 대상 위치에 저장 됩니다.
 
-## <a name="cmfctoolbardatetimectrlgettimeall"></a><a name="gettimeall"></a>CMFCToolBarDateTimeCtrl::GetTimeAll
+## <a name="cmfctoolbardatetimectrlgettimeall"></a><a name="gettimeall"></a> CMFCToolBarDateTimeCtrl:: GetTimeAll
 
-지정된 명령 ID가 있는 시간 선택기 제어 단추에서 사용자가 선택한 시간을 반환합니다.
+지정 된 명령 ID를 가진 시간 선택 컨트롤 단추에서 사용자가 선택한 시간을 반환 합니다.
 
 ```
 static BOOL GetTimeAll(
@@ -314,41 +315,41 @@ static DWORD GetTimeAll(
 ### <a name="parameters"></a>매개 변수
 
 *uiCmd*<br/>
-【인】 도구 모음 단추의 명령 ID를 지정합니다.
+진행 도구 모음 단추의 명령 ID를 지정 합니다.
 
 *timeDest*<br/>
-【아웃】 첫 번째 오버로드에서 시스템 시간 정보를 수신하는 [COleDateTime 클래스](../../atl-mfc-shared/reference/coledatetime-class.md) 개체입니다. 두 번째 오버로드에서 시스템 시간 정보를 수신하는 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 개체입니다.
+제한이 첫 번째 오버 로드에서 시스템 시간 정보를 수신 하는 [COleDateTime 클래스](../../atl-mfc-shared/reference/coledatetime-class.md) 개체입니다. 두 번째 오버 로드에서 시스템 시간 정보를 수신 하는 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 개체입니다.
 
-*p시간*<br/>
-【아웃】 시스템 시간 정보를 수신하는 [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) 구조에 대한 포인터입니다. NULL이 아니어야 합니다.
+*pTimeDest*<br/>
+제한이 시스템 시간 정보를 수신 하는 [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) 구조체에 대 한 포인터입니다. NULL이 아니어야 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-프레임워크에서 명령 ID *uiCmd와*일치하는 도구 모음 단추를 찾을 수 없는 경우 반환 값은 첫 번째 오버로드에서 0이고 다른 오버로드에서 GDT_NONE. 도구 모음 단추를 찾은 경우 반환 값은 해당 단추의 [CMFCToolBarDateTimeCtrl::GetTime에](#gettime) 대한 호출에서 반환 값과 동일합니다. 단추를 찾을 때 반환 값이 0 또는 GDT_NONE 발생할 수 `GetTime` 있습니다., 다른 이유로 유효한 날짜를 반환 하지 않은 호출을 나타냅니다.
+프레임 워크에서 명령 ID *Uicmd* 와 일치 하는 도구 모음 단추를 찾을 수 없는 경우 첫 번째 오버 로드에서 반환 값은 0이 고 다른 오버 로드에서는 GDT_NONE. 도구 모음 단추가 있으면 반환 값은 해당 단추에서 [CMFCToolBarDateTimeCtrl:: GetTime](#gettime) 에 대 한 호출의 반환 값과 동일 합니다. 단추가 발견 될 때 반환 값이 0 또는 GDT_NONE 발생할 수 있습니다 .이는에 대 `GetTime` 한 호출이 다른 이유로 유효한 날짜를 반환 하지 않았음을 나타냅니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 지정된 명령 ID를 가지고 있고 해당 단추에서 [CMFCToolBarDateTimeCtrl::GetTime](#gettime) 메서드를 호출하는 도구 모음 단추를 찾습니다.
+이 메서드는 지정 된 명령 ID를 포함 하는 도구 모음 단추를 찾고 해당 단추에 대해 [CMFCToolBarDateTimeCtrl:: GetTime](#gettime) 메서드를 호출 합니다.
 
-## <a name="cmfctoolbardatetimectrlhavehotborder"></a><a name="havehotborder"></a>CMFC툴바데이트타임트rl::하핫보더
+## <a name="cmfctoolbardatetimectrlhavehotborder"></a><a name="havehotborder"></a> CMFCToolBarDateTimeCtrl::HaveHotBorder
 
-사용자가 단추를 선택할 때 단추의 테두리가 표시되는지 여부를 결정합니다.
+사용자가 단추를 선택할 때 단추의 테두리를 표시할지 여부를 결정 합니다.
 
 ```
 virtual BOOL HaveHotBorder() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-버튼을 선택하면 테두리가 표시되면 0이 아닙니다. 그렇지 않으면 0.
+선택 시 단추에 테두리가 표시 되 면 0이 아닌 값입니다. 그렇지 않으면 0입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 컨트롤이 표시 되는 경우 비영 값을 반환 합니다.
+이 메서드는 컨트롤이 표시 되는 경우 0이 아닌 값을 반환 합니다.
 
-## <a name="cmfctoolbardatetimectrlnotifycommand"></a><a name="notifycommand"></a>CMFCToolBarDate시간Ctrl::알림 명령
+## <a name="cmfctoolbardatetimectrlnotifycommand"></a><a name="notifycommand"></a> CMFCToolBarDateTimeCtrl::NotifyCommand
 
-단추에서 [WM_COMMAND](/windows/win32/menurc/wm-command) 메시지를 처리하는지 여부를 지정합니다.
+단추가 [WM_COMMAND](/windows/win32/menurc/wm-command) 메시지를 처리 하는지 여부를 지정 합니다.
 
 ```
 virtual BOOL NotifyCommand(int iNotifyCode);
@@ -357,21 +358,21 @@ virtual BOOL NotifyCommand(int iNotifyCode);
 ### <a name="parameters"></a>매개 변수
 
 *iNotifyCode*<br/>
-【인】 명령과 연결된 알림 메시지입니다.
+진행 명령과 연결 된 알림 메시지입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-TRUE 단추WM_COMMAND 메시지를 처리 하는 경우 또는 FALSE 메시지를 상위 도구 모음에서 처리 해야 함을 나타냅니다.
+단추가 WM_COMMAND 메시지를 처리 하면 TRUE이 고, 부모 도구 모음에서 메시지를 처리 해야 함을 나타내려면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-프레임워크는 부모 창에 [WM_COMMAND](/windows/win32/menurc/wm-command) 메시지를 보내려고 할 때 이 메서드를 호출합니다.
+프레임 워크는 부모 창에 [WM_COMMAND](/windows/win32/menurc/wm-command) 메시지를 보내려고 할 때이 메서드를 호출 합니다.
 
-이 메서드는 [DTN_DATETIMECHANGE](/windows/win32/Controls/dtn-datetimechange) 알림을 처리 하 여 기본 클래스 구현 [(CMFCToolBarButton::NotifyCommand)를](../../mfc/reference/cmfctoolbarbutton-class.md#notifycommand)확장 합니다. 내부 시간 상태를 업데이트하고 동일한 명령 `CMFCToolBarDateTimeCtrl` ID를 가진 모든 개체의 시간 속성을 업데이트합니다.
+이 메서드는 [DTN_DATETIMECHANGE](/windows/win32/Controls/dtn-datetimechange) 알림을 처리 하 여 기본 클래스 구현 ( [CMFCToolBarButton:: NotifyCommand](../../mfc/reference/cmfctoolbarbutton-class.md#notifycommand))을 확장 합니다. 내부 시간 상태를 업데이트 하 고 동일한 명령 ID를 사용 하 여 모든 개체의 시간 속성을 업데이트 `CMFCToolBarDateTimeCtrl` 합니다.
 
-## <a name="cmfctoolbardatetimectrlonaddtocustomizepage"></a><a name="onaddtocustomizepage"></a>CMFCToolBarDate타임Ctrl::OnAddTo 사용자 정의 페이지
+## <a name="cmfctoolbardatetimectrlonaddtocustomizepage"></a><a name="onaddtocustomizepage"></a> CMFCToolBarDateTimeCtrl::OnAddToCustomizePage
 
-단추를 **사용자 지정** 대화 상자에 추가 될 때 프레임 워크에 의해 호출 됩니다.
+**사용자 지정** 대화 상자에 단추가 추가 될 때 프레임 워크에서 호출 됩니다.
 
 ```
 virtual void OnAddToCustomizePage();
@@ -379,13 +380,13 @@ virtual void OnAddToCustomizePage();
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 기본 클래스 구현을 확장, [CMFCToolBarButton::OnAddToCustomizePage,](../../mfc/reference/cmfctoolbarbutton-class.md#onaddtocustomizepage)이 개체와 동일한 명령 ID를 가지고 있는 모든 도구 모음에서 첫 번째 날짜 및 시간 컨트롤에서 속성을 복사 하 여. 이 메서드는 이 개체와 동일한 명령 ID를 사용하는 날짜 및 시간 컨트롤이 있는 도구 모음이 없는 경우 아무 작업도 수행하지 않습니다.
+이 메서드는이 개체와 동일한 명령 ID를 가진 도구 모음에 있는 첫 번째 날짜 및 시간 컨트롤에서 속성을 복사 하 여 기본 클래스 구현인 [CMFCToolBarButton:: OnAddToCustomizePage](../../mfc/reference/cmfctoolbarbutton-class.md#onaddtocustomizepage)를 확장 합니다. 이 개체와 동일한 명령 ID를 가진 날짜 및 시간 컨트롤이 도구 모음에 없으면이 메서드는 아무 작업도 수행 하지 않습니다.
 
-**사용자 지정** 대화 상자에 대한 자세한 내용은 [CMFCToolBar사용자 지정 Dialog 클래스](../../mfc/reference/cmfctoolbarscustomizedialog-class.md)를 참조하십시오.
+**사용자 지정** 대화 상자에 대 한 자세한 내용은 [CMFCToolBarsCustomizeDialog 클래스](../../mfc/reference/cmfctoolbarscustomizedialog-class.md)를 참조 하세요.
 
-## <a name="cmfctoolbardatetimectrlonchangeparentwnd"></a><a name="onchangeparentwnd"></a>CMFCToolBarDate타임Ctrl::OnChangeParentWnd
+## <a name="cmfctoolbardatetimectrlonchangeparentwnd"></a><a name="onchangeparentwnd"></a> CMFCToolBarDateTimeCtrl::OnChangeParentWnd
 
-단추를 새 도구 모음에 삽입할 때 프레임워크에서 호출됩니다.
+단추가 새 도구 모음에 삽입 될 때 프레임 워크에서 호출 됩니다.
 
 ```
 virtual void OnChangeParentWnd(CWnd* pWndParent);
@@ -394,15 +395,15 @@ virtual void OnChangeParentWnd(CWnd* pWndParent);
 ### <a name="parameters"></a>매개 변수
 
 *pWndParent*<br/>
-【인】 새 부모 창입니다.
+진행 새 부모 창입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 내부 `CMFCToolBarDateTimeCtrlImpl` 개체를 다시 만들어 기본 클래스 구현(CMFCToolBarButton::OnChangeParentWnd)을 재정의합니다. [CMFCToolBarButton::OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd)
+이 메서드는 내부 개체를 다시 만들어 기본 클래스 구현 ( [CMFCToolBarButton:: OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd))을 재정의 합니다 `CMFCToolBarDateTimeCtrlImpl` .
 
-## <a name="cmfctoolbardatetimectrlonclick"></a><a name="onclick"></a>CMFCToolBarDate시간Ctrl::OnClick
+## <a name="cmfctoolbardatetimectrlonclick"></a><a name="onclick"></a> CMFCToolBarDateTimeCtrl:: OnClick
 
-사용자가 컨트롤을 클릭할 때 프레임워크에서 호출됩니다.
+사용자가 컨트롤을 클릭할 때 프레임 워크에서 호출 됩니다.
 
 ```
 virtual BOOL OnClick(
@@ -413,22 +414,22 @@ virtual BOOL OnClick(
 ### <a name="parameters"></a>매개 변수
 
 *pWnd*<br/>
-【인】 하지 않는.
+진행 사용 되지 않는.
 
 *bDelay*<br/>
-【인】 하지 않는.
+진행 사용 되지 않는.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-버튼이 클릭 메시지를 처리하는 경우 비영; 그렇지 않으면 0.
+단추가 클릭 메시지를 처리 하는 경우 0이 아닙니다. 그렇지 않으면 0입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 기본 클래스 구현, [CMFCToolBarButton::OnClick](../../mfc/reference/cmfctoolbarbutton-class.md#onclick), 내부 `CMFCToolBarDateTimeCtrlImpl` 개체가 표시 되는 경우 비영값을 반환 하 여 재정의 합니다.
+이 메서드는 내부 개체가 표시 되는 경우 0이 아닌 값을 반환 하 여 기본 클래스 구현인 [CMFCToolBarButton:: OnClick](../../mfc/reference/cmfctoolbarbutton-class.md#onclick)을 재정의 합니다 `CMFCToolBarDateTimeCtrlImpl` .
 
-## <a name="cmfctoolbardatetimectrlonctlcolor"></a><a name="onctlcolor"></a>CMFCToolBarDate타임Ctrl::온CtlColor
+## <a name="cmfctoolbardatetimectrlonctlcolor"></a><a name="onctlcolor"></a> CMFCToolBarDateTimeCtrl::OnCtlColor
 
-상위 도구 모음에서 WM_CTLCOLOR 메시지를 처리할 때 프레임워크에서 호출합니다.
+부모 도구 모음이 WM_CTLCOLOR 메시지를 처리할 때 프레임 워크에서 호출 됩니다.
 
 ```
 virtual HBRUSH OnCtlColor(
@@ -438,25 +439,25 @@ virtual HBRUSH OnCtlColor(
 
 ### <a name="parameters"></a>매개 변수
 
-*pDC*<br/>
-【인】 단추를 표시 하는 장치 컨텍스트입니다.
+*컨트롤러가*<br/>
+진행 단추를 표시 하는 장치 컨텍스트입니다.
 
 *nCtlColor*<br/>
-【인】 하지 않는.
+진행 사용 되지 않는.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-프레임워크가 단추의 배경을 그리는 데 사용하는 전역 브러시에 대한 핸들입니다.
+프레임 워크에서 단추의 배경을 칠하는 데 사용 하는 전역 브러시에 대 한 핸들입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 기본 클래스 구현, [CMFCToolBarButton::OnCtlColor,](../../mfc/reference/cmfctoolbarbutton-class.md#onctlcolor)제공된 장치 컨텍스트의 텍스트 및 배경 색을 전역 텍스트 및 배경 색으로 각각 설정 하여 재정의합니다.
+이 메서드는 제공 된 장치 컨텍스트의 텍스트와 배경색을 각각 전역 텍스트 및 배경색으로 설정 하 여 기본 클래스 구현인 [CMFCToolBarButton:: OnCtlColor](../../mfc/reference/cmfctoolbarbutton-class.md#onctlcolor)를 재정의 합니다.
 
-응용 프로그램에서 사용할 수 있는 전역 옵션에 대한 자세한 내용은 [AFX_GLOBAL_DATA Structure](../../mfc/reference/afx-global-data-structure.md)를 참조하십시오.
+응용 프로그램에 사용할 수 있는 전역 옵션에 대 한 자세한 내용은 [AFX_GLOBAL_DATA 구조](../../mfc/reference/afx-global-data-structure.md)를 참조 하세요.
 
-## <a name="cmfctoolbardatetimectrlonglobalfontschanged"></a><a name="onglobalfontschanged"></a>CMFCToolBarDate타임Ctrl:::온글로벌폰트변경
+## <a name="cmfctoolbardatetimectrlonglobalfontschanged"></a><a name="onglobalfontschanged"></a> CMFCToolBarDateTimeCtrl::OnGlobalFontsChanged
 
-전역 글꼴이 변경된 경우 프레임워크에서 호출합니다.
+전역 글꼴이 변경 될 때 프레임 워크에서 호출 됩니다.
 
 ```
 virtual void OnGlobalFontsChanged();
@@ -464,13 +465,13 @@ virtual void OnGlobalFontsChanged();
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 기본 클래스 구현을 확장 [(CMFCToolBarButton::OnGlobalFonts변경)](../../mfc/reference/cmfctoolbarbutton-class.md#onglobalfontschanged)전역 글꼴의 컨트롤의 글꼴을 변경 하 여.
+이 메서드는 컨트롤의 글꼴을 전역 글꼴의 글꼴을 변경 하 여 기본 클래스 구현 ( [CMFCToolBarButton:: OnGlobalFontsChanged](../../mfc/reference/cmfctoolbarbutton-class.md#onglobalfontschanged))을 확장 합니다.
 
-응용 프로그램에서 사용할 수 있는 전역 옵션에 대한 자세한 내용은 [AFX_GLOBAL_DATA Structure](../../mfc/reference/afx-global-data-structure.md)를 참조하십시오.
+응용 프로그램에 사용할 수 있는 전역 옵션에 대 한 자세한 내용은 [AFX_GLOBAL_DATA 구조](../../mfc/reference/afx-global-data-structure.md)를 참조 하세요.
 
-## <a name="cmfctoolbardatetimectrlonmove"></a><a name="onmove"></a>CMFCToolBarDate타임Ctrl::OnMove
+## <a name="cmfctoolbardatetimectrlonmove"></a><a name="onmove"></a> CMFCToolBarDateTimeCtrl:: OnMove
 
-상위 도구 모음이 이동할 때 프레임워크에서 호출됩니다.
+부모 도구 모음이 이동 될 때 프레임 워크에서 호출 됩니다.
 
 ```
 virtual void OnMove();
@@ -478,11 +479,11 @@ virtual void OnMove();
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 내부 `CMFCToolBarDateTimeCtrlImpl` 개체의 위치를 업데이트하여 기본 클래스 구현(CMFCToolBarButton::OnMove)을 재정의합니다. [CMFCToolBarButton::OnMove](../../mfc/reference/cmfctoolbarbutton-class.md#onmove)
+이 메서드는 내부 개체의 위치를 업데이트 하 여 기본 클래스 구현 ( [CMFCToolBarButton:: OnMove](../../mfc/reference/cmfctoolbarbutton-class.md#onmove))을 재정의 합니다 `CMFCToolBarDateTimeCtrlImpl` .
 
-## <a name="cmfctoolbardatetimectrlonshow"></a><a name="onshow"></a>CMFC툴바데이트타임트럴::온쇼
+## <a name="cmfctoolbardatetimectrlonshow"></a><a name="onshow"></a> CMFCToolBarDateTimeCtrl:: OnShow
 
-단추를 표시 하거나 보이지 않는 될 때 프레임 워크에 의해 호출 됩니다.
+단추를 표시 하거나 숨길 때 프레임 워크에서 호출 됩니다.
 
 ```
 virtual void OnShow(BOOL bShow);
@@ -491,15 +492,15 @@ virtual void OnShow(BOOL bShow);
 ### <a name="parameters"></a>매개 변수
 
 *bShow*<br/>
-【인】 단추를 볼 수 있는지 여부를 지정합니다. 이 매개 변수가 TRUE이면 단추가 표시됩니다. 그렇지 않으면 단추가 표시되지 않습니다.
+진행 단추의 표시 여부를 지정 합니다. 이 매개 변수가 TRUE 이면 단추가 표시 됩니다. 그렇지 않으면 단추가 표시 되지 않습니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 기본 클래스 구현을 확장 [(CMFCToolBarButton::OnShow)](../../mfc/reference/cmfctoolbarbutton-class.md#onshow) *bShow* TRUE 인 경우 단추를 표시 하 여. 그렇지 않으면 이 메서드는 단추를 숨깁니다.
+이 메서드는 *Bshow* 가 TRUE 인 경우 단추를 표시 하 여 기본 클래스 구현 ( [CMFCToolBarButton:: onshow](../../mfc/reference/cmfctoolbarbutton-class.md#onshow))을 확장 합니다. 그렇지 않으면이 메서드는 단추를 숨깁니다.
 
-## <a name="cmfctoolbardatetimectrlonsize"></a><a name="onsize"></a>CMFCToolBarDate타임Ctrl::OnSize
+## <a name="cmfctoolbardatetimectrlonsize"></a><a name="onsize"></a> CMFCToolBarDateTimeCtrl:: OnSize
 
-상위 도구 모음의 크기 또는 위치를 변경하고 이 변경으로 인해 단추크기가 변경될 때 프레임워크에서 호출됩니다.
+부모 도구 모음이 크기나 위치를 변경 하 고이 변경으로 인해 크기가 변경 될 때 프레임 워크에서 호출 됩니다.
 
 ```
 virtual void OnSize(int iSize);
@@ -507,16 +508,16 @@ virtual void OnSize(int iSize);
 
 ### <a name="parameters"></a>매개 변수
 
-*아이 사이즈*<br/>
-【인】 단추의 새 너비(픽셀)입니다.
+*iSize*<br/>
+진행 단추의 새 너비 (픽셀)입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 내부 `CMFCToolBarDateTimeCtrlImpl` 개체의 크기와 위치를 업데이트하여 기본 클래스 구현(CMFCToolBarButton::OnSize)을 재정의합니다. [CMFCToolBarButton::OnSize](../../mfc/reference/cmfctoolbarbutton-class.md#onsize)
+이 메서드는 내부 개체의 크기와 위치를 업데이트 하 여 기본 클래스 구현 ( [CMFCToolBarButton:: OnSize](../../mfc/reference/cmfctoolbarbutton-class.md#onsize))을 재정의 합니다 `CMFCToolBarDateTimeCtrlImpl` .
 
-## <a name="cmfctoolbardatetimectrlonupdatetooltip"></a><a name="onupdatetooltip"></a>CMFCToolBarDate타임Ctrl::OnUpdateToolTip
+## <a name="cmfctoolbardatetimectrlonupdatetooltip"></a><a name="onupdatetooltip"></a> CMFCToolBarDateTimeCtrl:: OnUpdateToolTip
 
-상위 도구 모음이 도구 설명 텍스트를 업데이트할 때 프레임워크에서 호출됩니다.
+부모 도구 모음에서 도구 설명 텍스트를 업데이트할 때 프레임 워크에서 호출 됩니다.
 
 ```
 virtual BOOL OnUpdateToolTip(
@@ -529,28 +530,28 @@ virtual BOOL OnUpdateToolTip(
 ### <a name="parameters"></a>매개 변수
 
 *pWndParent*<br/>
-【인】 상위 창입니다.
+진행 부모 창입니다.
 
-*아이 버튼 인덱스*<br/>
-【인】 상위 단추 컬렉션에서 단추의 0 기반 인덱스입니다.
+*iButtonIndex*<br/>
+진행 부모 단추 컬렉션에 있는 단추의 인덱스 (0부터 시작)입니다.
 
 *wndToolTip*<br/>
-【인】 도구 설명 텍스트를 표시하는 컨트롤입니다.
+진행 도구 설명 텍스트를 표시 하는 컨트롤입니다.
 
-*Str*<br/>
-【아웃】 업데이트된 도구 설명 텍스트를 받는 `CString` 개체입니다.
+*str*<br/>
+제한이 `CString` 업데이트 된 도구 설명 텍스트를 받는 개체입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-메서드가 도구 설명 텍스트를 업데이트하는 경우 0이 아닙니다. 그렇지 않으면 0.
+메서드가 도구 설명 텍스트를 업데이트 하는 경우 0이 아닙니다. 그렇지 않으면 0입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 단추와 연결 된 도구 설명 텍스트를 표시 하 여 기본 클래스 구현 [(CMFCToolBarButton::OnUpdateToolTip)를](../../mfc/reference/cmfctoolbarbutton-class.md#onupdatetooltip)확장 합니다. 단추를 가로로 도킹되지 않은 경우 이 메서드는 아무 것도 수행하지 않고 FALSE를 반환합니다.
+이 메서드는 단추와 연결 된 도구 설명 텍스트를 표시 하 여 기본 클래스 구현 ( [CMFCToolBarButton:: OnUpdateToolTip](../../mfc/reference/cmfctoolbarbutton-class.md#onupdatetooltip))을 확장 합니다. 단추가 가로로 도킹 되지 않은 경우이 메서드는 아무 작업도 수행 하지 않고 FALSE를 반환 합니다.
 
-## <a name="cmfctoolbardatetimectrlsettime"></a><a name="settime"></a>CMFCToolBarDate시간Ctrl::설정 시간
+## <a name="cmfctoolbardatetimectrlsettime"></a><a name="settime"></a> CMFCToolBarDateTimeCtrl:: SetTime
 
-시간 선택기 컨트롤에서 시간과 날짜를 설정합니다.
+시간 선택 컨트롤에서 시간 및 날짜를 설정 합니다.
 
 ```
 BOOL SetTime(const COleDateTime& timeNew);
@@ -560,23 +561,23 @@ BOOL SetTime(LPSYSTEMTIME pTimeNew=NULL);
 
 ### <a name="parameters"></a>매개 변수
 
-*시간새*<br/>
-【인】 첫 번째 버전에서는 컨트롤이 설정되는 시간을 포함하는 [COleDateTime 클래스](../../atl-mfc-shared/reference/coledatetime-class.md) 개체에 대한 참조입니다. 두 번째 버전에서는 컨트롤을 설정할 시간을 포함하는 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 개체에 대한 포인터입니다.
+*Ti New*<br/>
+진행 첫 번째 버전에서 컨트롤이 설정 되는 시간을 포함 하는 [COleDateTime 클래스](../../atl-mfc-shared/reference/coledatetime-class.md) 개체에 대 한 참조입니다. 두 번째 버전에서 컨트롤이 설정 될 시간을 포함 하는 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 개체에 대 한 포인터입니다.
 
-*pTimeNew*<br/>
-【인】 컨트롤을 설정할 시간을 포함하는 [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) 구조에 대한 포인터입니다.
+*Ptia*<br/>
+진행 컨트롤이 설정 되는 시간을 포함 하는 [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) 구조체에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
 ### <a name="remarks"></a>설명
 
-[CDateTimeCtrl::SetTime을](../../mfc/reference/cdatetimectrl-class.md#settime)호출하여 날짜 및 시간 선택기 컨트롤의 시간을 설정합니다.
+[CDateTimeCtrl:: SetTime](../../mfc/reference/cdatetimectrl-class.md#settime)를 호출 하 여 날짜 및 시간 선택 컨트롤의 시간을 설정 합니다.
 
-## <a name="cmfctoolbardatetimectrlsettimeall"></a><a name="settimeall"></a>CMFCToolBarDateTimeCtrl::SetTimeAll
+## <a name="cmfctoolbardatetimectrlsettimeall"></a><a name="settimeall"></a> CMFCToolBarDateTimeCtrl:: SetTimeAll
 
-지정된 명령 ID가 있는 시간 선택 기 컨트롤의 모든 인스턴스에서 시간과 날짜를 설정합니다.
+지정 된 명령 ID를 가진 시간 선택 컨트롤의 모든 인스턴스에 대 한 시간 및 날짜를 설정 합니다.
 
 ```
 static BOOL SetTimeAll(
@@ -595,21 +596,21 @@ static BOOL SetTimeAll(
 ### <a name="parameters"></a>매개 변수
 
 *uiCmd*<br/>
-【인】 도구 모음 단추의 명령 ID를 지정합니다.
+진행 도구 모음 단추의 명령 ID를 지정 합니다.
 
-*시간새*<br/>
-【인】 첫 번째 버전에서는 컨트롤이 설정되는 시간을 포함하는 [COleDateTime 클래스](../../atl-mfc-shared/reference/coledatetime-class.md) 개체입니다. 두 번째 버전에서는 컨트롤을 설정할 시간을 포함하는 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 개체에 대한 포인터입니다.
+*Ti New*<br/>
+진행 첫 번째 버전에서 컨트롤이 설정 되는 시간을 포함 하는 [COleDateTime 클래스](../../atl-mfc-shared/reference/coledatetime-class.md) 개체입니다. 두 번째 버전에서 컨트롤이 설정 될 시간을 포함 하는 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 개체에 대 한 포인터입니다.
 
-*pTimeNew*<br/>
-【인】 컨트롤을 설정할 시간을 포함하는 [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) 구조에 대한 포인터입니다.
+*Ptia*<br/>
+진행 컨트롤이 설정 되는 시간을 포함 하는 [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) 구조체에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
 ### <a name="remarks"></a>설명
 
-지정된 명령 ID가 있는 도구 모음 단추를 찾고 [CMFCToolBarDateTimeCtrl::SetTime을](#settime)호출하여 날짜 및 시간 선택기 컨트롤의 시간을 설정합니다.
+지정 된 명령 ID를 사용 하 여 도구 모음 단추를 찾고 [CMFCToolBarDateTimeCtrl:: SetTime](#settime)를 호출 하 여 날짜 및 시간 선택 컨트롤의 시간을 설정 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

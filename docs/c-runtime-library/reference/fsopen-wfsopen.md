@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _fsopen, _wfsopen'
 title: _fsopen, _wfsopen
 ms.date: 4/2/2020
 api_name:
@@ -41,12 +42,12 @@ helpviewer_keywords:
 - _wfsopen function
 - file sharing [C++]
 ms.assetid: 5e4502ab-48a9-4bee-a263-ebac8d638dec
-ms.openlocfilehash: 7c7f079d8867416ab4f091d7c95a01ab9e40c0e8
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: c7b54a6735939e26c8ff0153abc640e3dc2c8b41
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910150"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318340"
 ---
 # <a name="_fsopen-_wfsopen"></a>_fsopen, _wfsopen
 
@@ -69,7 +70,7 @@ FILE *_wfsopen(
 
 ### <a name="parameters"></a>매개 변수
 
-*이름도*<br/>
+*filename*<br/>
 열 파일의 이름입니다.
 
 *mode*<br/>
@@ -78,15 +79,15 @@ FILE *_wfsopen(
 *shflag*<br/>
 허용되는 공유 유형입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-각 함수는 스트림에 대한 포인터를 반환합니다. null 포인터 값은 오류를 나타냅니다. *파일 이름* 또는 *모드가* **NULL** 이거나 빈 문자열인 경우 이러한 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **NULL** 을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
+각 함수는 스트림에 대한 포인터를 반환합니다. null 포인터 값은 오류를 나타냅니다. *파일 이름* 또는 *모드가* **NULL** 이거나 빈 문자열인 경우 이러한 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **NULL** 을 반환 하 고 **errno** 를 **EINVAL** 로 설정 합니다.
 
 이 오류 및 다른 오류 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-**_Fsopen** 함수는 파일 *이름* 으로 지정 된 파일을 스트림으로 열고 모드 및 *shflag* 인수에 정의 된 대로 후속 공유 읽기 또는 쓰기를 위해 파일을 준비 합니다. **_wfsopen** 은 **_fsopen**의 와이드 문자 버전입니다. **_wfsopen** 에 대 한 *파일 이름* 및 *모드* 인수는 와이드 문자 문자열입니다. **_wfsopen** 와 **_fsopen** 는 동일 하 게 동작 합니다.
+**_Fsopen** 함수는 파일 *이름* 으로 지정 된 파일을 스트림으로 열고 모드 및 *shflag* 인수에 정의 된 대로 후속 공유 읽기 또는 쓰기를 위해 파일을 준비 합니다. **_wfsopen** 은 **_fsopen** 의 와이드 문자 버전입니다. **_wfsopen** 에 대 한 *파일 이름* 및 *모드* 인수는 와이드 문자 문자열입니다. **_wfsopen** 와 **_fsopen** 는 동일 하 게 동작 합니다.
 
 문자열 *모드* 는 다음 표에 나와 있는 것 처럼 파일에 대해 요청 된 액세스 형식을 지정 합니다.
 
@@ -105,14 +106,14 @@ FILE *_wfsopen(
 
 |용어|정의|
 |----------|----------------|
-|**트**|파일을 텍스트(변환됨) 모드에서 엽니다. 이 모드에서 CR (캐리지 리턴-줄 바꿈) 조합은 입력 시 LF (단일 줄 바꿈)로 변환 되 고 LF 문자는 출력에서 CR-LF 조합으로 변환 됩니다. 또한 CTRL+Z는 입력 시 파일 끝 문자로 변환됩니다. 읽기 또는 읽기/쓰기용 **_fsopen** 으로 열려 있는 파일에서는 파일 끝에 CTRL + Z가 있는지 확인 하 고 가능한 경우이를 제거 합니다. 이 작업은 [fseek](fseek-fseeki64.md) 및 [fseek](ftell-ftelli64.md) 를 사용 하 여 CTRL + Z로 끝나는 파일 내에서 이동 하면 파일의 끝 부분에서 [fseek](fseek-fseeki64.md) 가 제대로 동작 하지 않을 수 있기 때문입니다.|
+|**t**|파일을 텍스트(변환됨) 모드에서 엽니다. 이 모드에서 CR (캐리지 리턴-줄 바꿈) 조합은 입력 시 LF (단일 줄 바꿈)로 변환 되 고 LF 문자는 출력에서 CR-LF 조합으로 변환 됩니다. 또한 CTRL+Z는 입력 시 파일 끝 문자로 변환됩니다. 읽기 또는 읽기/쓰기용 **_fsopen** 으로 열려 있는 파일에서는 파일 끝에 CTRL + Z가 있는지 확인 하 고 가능한 경우이를 제거 합니다. 이 작업은 [fseek](fseek-fseeki64.md) 및 [fseek](ftell-ftelli64.md) 를 사용 하 여 CTRL + Z로 끝나는 파일 내에서 이동 하면 파일의 끝 부분에서 [fseek](fseek-fseeki64.md) 가 제대로 동작 하지 않을 수 있기 때문입니다.|
 |**b**|이진(변환되지 않은) 모드에서 파일을 엽니다. 위에서 설명한 변환은 표시되지 않습니다.|
 |**S**|캐싱이 디스크에서 순차적 액세스를 위해 최적화되며 이에 제한되지 않습니다.|
 |**R**|캐싱이 디스크에서 임의 액세스를 위해 최적화되며 이에 제한되지 않습니다.|
 |**T**|파일을 임시 파일로 지정합니다. 가능하면 디스크에 플러시되지 않습니다.|
 |**D**|파일을 임시 파일로 지정합니다. 마지막 파일 포인터를 닫을 때 삭제됩니다.|
 
-*mode*에 **t** 또는 **b**가 지정되지 않은 경우 변환 모드는 기본 모드 변수 **_fmode**로 정의됩니다. **T** 또는 **b** 가 인수 앞에 있으면 함수가 실패 하 고 **NULL**을 반환 합니다. 텍스트 모드와 이진 모드에 대한 자세한 내용은 [텍스트 및 이진 모드 파일 I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md)를 참조하세요.
+*mode* 에 **t** 또는 **b** 가 지정되지 않은 경우 변환 모드는 기본 모드 변수 **_fmode** 로 정의됩니다. **T** 또는 **b** 가 인수 앞에 있으면 함수가 실패 하 고 **NULL** 을 반환 합니다. 텍스트 모드와 이진 모드에 대한 자세한 내용은 [텍스트 및 이진 모드 파일 I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md)를 참조하세요.
 
 *Shflag* 인수는 Share. h에 정의 된 다음 매니페스트 상수 중 하나로 구성 된 상수 식입니다.
 
@@ -134,7 +135,7 @@ FILE *_wfsopen(
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|필수 헤더|선택적 헤더|
+|함수|필수 헤더|선택적 헤더|
 |--------------|---------------------|----------------------|
 |**_fsopen**|\<stdio.h>|\<share.h><br /><br /> *Shflag* 매개 변수에 대 한 매니페스트 상수입니다.|
 |**_wfsopen**|\<stdio.h> 또는 \<wchar.h>|\<share.h><br /><br /> *Shflag* 매개 변수에 대 한 매니페스트 상수입니다.|
@@ -171,7 +172,7 @@ int main( void )
 No one else in the network can write to this file until we are done.
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [스트림 I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fclose, _fcloseall](fclose-fcloseall.md)<br/>

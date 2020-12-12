@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4114'
 title: 컴파일러 경고 (수준 1) C4114
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4114
 ms.assetid: 3983e1c6-e8bb-46dc-8894-e1827db48797
-ms.openlocfilehash: 8d2b0339ff3cce9a68dce57a5f2b4efac076c5c2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7d1d7696fabdf8e5114ba733f7bf6de53353bcb4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233316"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97267445"
 ---
 # <a name="compiler-warning-level-1-c4114"></a>컴파일러 경고 (수준 1) C4114
 

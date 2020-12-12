@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4109'
 title: 컴파일러 경고(수준 1) C4109
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4109
 ms.assetid: 9e8d95c6-e05d-47e0-bd87-78974b3cc06c
-ms.openlocfilehash: 04252f6100f0cabcd6bca0ff4145b55cfcadd234
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 2063b6d9f85e497892bad27bc1b553872a309b17
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80200124"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97267510"
 ---
 # <a name="compiler-warning-level-1-c4109"></a>컴파일러 경고(수준 1) C4109
 

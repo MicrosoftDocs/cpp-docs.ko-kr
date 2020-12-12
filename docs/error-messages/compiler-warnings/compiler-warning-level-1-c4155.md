@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4155'
 title: 컴파일러 경고(수준 1) C4155
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4155
 ms.assetid: ba233353-09e3-4195-8127-13a27ddd8d70
-ms.openlocfilehash: 74369ce9eae123143caf15434506acf6e6e2e50e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 04ea5ae01799fcda17c3591cf4dbc14daf4236ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223293"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97267302"
 ---
 # <a name="compiler-warning-level-1-c4155"></a>컴파일러 경고(수준 1) C4155
 

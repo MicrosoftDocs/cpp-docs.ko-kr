@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2989'
 title: 컴파일러 오류 C2989
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2989
 ms.assetid: 936303d8-eb3b-4746-82ec-2f18020a6f64
-ms.openlocfilehash: 585823c2114befa3e6d432e3cf8100fa14ed1a7d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 38838630f5be23698de099d8c40f7e9b96bc2b13
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80176730"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338606"
 ---
 # <a name="compiler-error-c2989"></a>컴파일러 오류 C2989
 

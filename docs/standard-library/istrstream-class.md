@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: istrstream 클래스'
 title: istrstream 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - istrstream class
 ms.assetid: c2d41c75-bd2c-4437-bd77-5939ce1b97af
-ms.openlocfilehash: 37118772f7cefd6f380ceb01908da55500ee7ab5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 45e60878c63c30daca85924a9d0091e202387b55
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228234"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306653"
 ---
 # <a name="istrstream-class"></a>istrstream 클래스
 
@@ -33,7 +34,7 @@ class istrstream : public istream
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[istrstream](#istrstream)|`istrstream` 형식의 개체를 생성합니다.|
 
@@ -50,7 +51,7 @@ class istrstream : public istream
 
 **네임스페이스:** std
 
-## <a name="istrstreamistrstream"></a><a name="istrstream"></a>istrstream:: istrstream
+## <a name="istrstreamistrstream"></a><a name="istrstream"></a> istrstream:: istrstream
 
 `istrstream` 형식의 개체를 생성합니다.
 
@@ -82,7 +83,7 @@ istrstream(
 
 모든 생성자는 [istream](../standard-library/istream-typedefs.md#istream)(**sb**)을 호출 하 여 기본 클래스를 초기화 `sb` 합니다. 여기서은 [strstreambuf](../standard-library/strstreambuf-class.md)클래스의 저장 된 개체입니다. 처음 두 생성자는를 `sb` 호출 하 여도 초기화 `strstreambuf( ( const char *) ptr, 0 )` 합니다. 나머지 두 생성자는 대신를 호출 `strstreambuf( ( const char *) ptr, count )` 합니다.
 
-## <a name="istrstreamrdbuf"></a><a name="rdbuf"></a>istrstream:: rdbuf
+## <a name="istrstreamrdbuf"></a><a name="rdbuf"></a> istrstream:: rdbuf
 
 스트림의 연결된 strstreambuf 개체에 대한 포인터를 반환합니다.
 
@@ -90,7 +91,7 @@ istrstream(
 strstreambuf *rdbuf() const
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 스트림의 연결된 strstreambuf 개체에 대한 포인터입니다.
 
@@ -102,7 +103,7 @@ strstreambuf *rdbuf() const
 
 `rdbuf`를 사용하는 샘플은 [strstreambuf::pcount](../standard-library/strstreambuf-class.md#pcount)를 참조하세요.
 
-## <a name="istrstreamstr"></a><a name="str"></a>istrstream:: str
+## <a name="istrstreamstr"></a><a name="str"></a> istrstream:: str
 
 [freeze](../standard-library/strstreambuf-class.md#freeze)를 호출한 다음 제어되는 시퀀스의 시작 부분에 대한 포인터를 반환합니다.
 
@@ -110,7 +111,7 @@ strstreambuf *rdbuf() const
 char *str();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 제어되는 시퀀스의 시작 부분에 대한 포인터입니다.
 

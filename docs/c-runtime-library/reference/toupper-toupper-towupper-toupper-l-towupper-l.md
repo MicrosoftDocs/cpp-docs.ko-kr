@@ -1,4 +1,5 @@
 ---
+description: Toupper, _toupper, towupper, _toupper_l, _towupper_l에 대해 자세히 알아보세요.
 title: toupper, _toupper, towupper, _toupper_l, _towupper_l
 ms.date: 4/2/2020
 api_name:
@@ -51,12 +52,12 @@ helpviewer_keywords:
 - characters, converting
 - toupper function
 ms.assetid: cdef1b0f-b19c-4d11-b7d2-cf6334c9b6cc
-ms.openlocfilehash: 943b66bf03420dc707415fd5da0ddf8cc3107d85
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: cb2a121d1fa96c0149a329520f5c71c1cc4f4d9b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913877"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318314"
 ---
 # <a name="toupper-_toupper-towupper-_toupper_l-_towupper_l"></a>toupper, _toupper, towupper, _toupper_l, _towupper_l
 
@@ -92,9 +93,9 @@ int _towupper_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-이러한 각 루틴은 가능한 경우 *c*의 복사본을 변환 하 고 결과를 반환 합니다.
+이러한 각 루틴은 가능한 경우 *c* 의 복사본을 변환 하 고 결과를 반환 합니다.
 
 *C* 가 **iswlower** 가 0이 아닌 와이드 문자이 고 [iswlower](isupper-isupper-l-iswupper-iswupper-l.md) 가 0이 아닌 해당 하는 와이드 문자가 있는 경우 **towupper** 는 해당 와이드 문자를 반환 합니다. 그렇지 않으면 **towupper** 는 *c* 를 변경 되지 않은 상태로 반환 합니다.
 
@@ -120,7 +121,7 @@ int _towupper_l(
 |**_totupper_l**|**_toupper_l**|**_mbctoupper_l**|**_towupper_l**|
 
 > [!NOTE]
-> **_toupper_l** 및 **_towupper_l** 에는 로캘 종속성이 없으며 직접 호출할 수 없습니다. **_Totupper_l**에서 내부용으로 제공 됩니다.
+> **_toupper_l** 및 **_towupper_l** 에는 로캘 종속성이 없으며 직접 호출할 수 없습니다. **_Totupper_l** 에서 내부용으로 제공 됩니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -136,9 +137,9 @@ int _towupper_l(
 
 [to 함수](../../c-runtime-library/to-functions.md)의 예제를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [is, isw 루틴](../../c-runtime-library/is-isw-routines.md)<br/>
 [to 함수](../../c-runtime-library/to-functions.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[멀티 바이트 문자 시퀀스 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[로캘](../../c-runtime-library/locale.md)<br/>
+[Multibyte-Character 시퀀스의 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>

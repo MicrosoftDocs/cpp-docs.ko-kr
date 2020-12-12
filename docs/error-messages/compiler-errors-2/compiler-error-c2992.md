@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2992'
 title: 컴파일러 오류 C2992
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2992
 ms.assetid: 01b16447-43fe-4e91-9a5a-af884a166a31
-ms.openlocfilehash: a51e87980eba90eb4e543a3d07a44c1b170334e9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b96ca202ee3d8128e3cbd27e4e114519f625aaf9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214557"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338613"
 ---
 # <a name="compiler-error-c2992"></a>컴파일러 오류 C2992
 

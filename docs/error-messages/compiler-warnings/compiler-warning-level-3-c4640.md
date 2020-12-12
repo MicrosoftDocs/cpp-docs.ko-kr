@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 3) C4640'
 title: 컴파일러 경고(수준 3) C4640
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4640
 ms.assetid: f76871f6-e436-4c35-9793-d2f22f7e1c7f
-ms.openlocfilehash: 00160a45e9597cfb125eaa8f50cde5fe5cfbc42d
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: f0fc41256d11c54742a157236e09e36277902b5e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991868"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338555"
 ---
 # <a name="compiler-warning-level-3-c4640"></a>컴파일러 경고(수준 3) C4640
 

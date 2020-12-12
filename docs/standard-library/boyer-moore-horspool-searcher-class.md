@@ -1,16 +1,17 @@
 ---
+description: Boyer_moore_horspool_searcher 클래스에 대해 자세히 알아보세요.
 title: boyer_moore_horspool_searcher 클래스
 ms.date: 08/03/2019
 f1_keywords:
 - functional/std::boyer_moore_horspool_searcher
 helpviewer_keywords:
 - std::boyer_moore_horspool_searcher [C++]
-ms.openlocfilehash: 1eb1f099ca2976dd4b0ea80ebdfb93a8b5c61f70
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 727af034dbb20bd1a0d09ae7de8f88da16a6ba36
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90039835"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325427"
 ---
 # <a name="boyer_moore_horspool_searcher-class"></a>boyer_moore_horspool_searcher 클래스
 
@@ -40,7 +41,7 @@ class boyer_moore_horspool_searcher
 
 ## <a name="members"></a>멤버
 
-| 멤버 | Description |
+| 멤버 | 설명 |
 | - | - |
 | **생성자** | |
 | [boyer_moore_horspool_searcher](#boyer-moore-horspool-searcher-constructor) | 검색자 인스턴스를 생성 합니다. |
@@ -75,7 +76,7 @@ boyer_moore_horspool_searcher(
 
 ### <a name="remarks"></a>설명
 
-*BinaryPredicate*, *hash*또는 *RandomAccessIterator* 형식의 복사 생성자 또는 *BinaryPredicate* 또는 *hash*의 호출 연산자에 의해 throw 된 예외를 throw 합니다.
+*BinaryPredicate*, *hash* 또는 *RandomAccessIterator* 형식의 복사 생성자 또는 *BinaryPredicate* 또는 *hash* 의 호출 연산자에 의해 throw 된 예외를 throw 합니다.
 
 이 클래스는 c + + 17의 새로운 클래스입니다.
 
@@ -100,7 +101,7 @@ pair<RandomAccessIterator2, RandomAccessIterator2> operator()(
 
 ### <a name="remarks"></a>설명
 
-검색 패턴이 비어 있으면 `[pat_first, pat_last)` 를 반환 `make_pair(first, first)` 합니다. 검색 패턴을 찾을 수 없는 경우는를 반환 `make_pair(last, last)` 합니다. 그렇지 않으면는 `[first, last)` 조건자 pred에 따라와 같은에 있는 시퀀스의 시작과 끝에 반복기 쌍을 반환 합니다 `[pat_first, pat_last)` . *pred*
+검색 패턴이 비어 있으면 `[pat_first, pat_last)` 를 반환 `make_pair(first, first)` 합니다. 검색 패턴을 찾을 수 없는 경우는를 반환 `make_pair(last, last)` 합니다. 그렇지 않으면는 `[first, last)` 조건자 pred에 따라와 같은에 있는 시퀀스의 시작과 끝에 반복기 쌍을 반환 합니다 `[pat_first, pat_last)` . 
 
 이 클래스는 c + + 17의 새로운 클래스입니다.
 

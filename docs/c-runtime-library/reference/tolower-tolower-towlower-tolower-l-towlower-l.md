@@ -1,4 +1,5 @@
 ---
+description: Tolower, _tolower, towlower, _tolower_l, _towlower_l에 대해 자세히 알아보세요.
 title: tolower, _tolower, towlower, _tolower_l, _towlower_l
 ms.date: 4/2/2020
 api_name:
@@ -52,12 +53,12 @@ helpviewer_keywords:
 - characters, converting
 - _towlower_l function
 ms.assetid: 86e0fc02-94ae-4472-9631-bf8e96f67b92
-ms.openlocfilehash: c8b27c4cc618d34d9da9b5884c6db2f525fd2388
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 5b686d9b511fe4864724f85be78ac511a6351ef7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910008"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318327"
 ---
 # <a name="tolower-_tolower-towlower-_tolower_l-_towlower_l"></a>tolower, _tolower, towlower, _tolower_l, _towlower_l
 
@@ -93,7 +94,7 @@ int _towlower_l(
 *locale*<br/>
 로캘별 변환에 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 이러한 각 루틴은 변환이 가능 하면 *c* 의 복사본을 소문자로 변환 하 고 결과를 반환 합니다. 오류를 나타내기 위해 예약된 반환 값은 없습니다.
 
@@ -113,7 +114,7 @@ int _towlower_l(
 |**_totlower_l**|**_tolower_l**|**_mbctolower_l**|**_towlower_l**|
 
 > [!NOTE]
-> **_tolower_l** 및 **_towlower_l** 에는 로캘 종속성이 없으며 직접 호출할 수 없습니다. **_Totlower_l**에서 내부용으로 제공 됩니다.
+> **_tolower_l** 및 **_towlower_l** 에는 로캘 종속성이 없으며 직접 호출할 수 없습니다. **_Totlower_l** 에서 내부용으로 제공 됩니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -129,10 +130,10 @@ int _towlower_l(
 
 [to 함수](../../c-runtime-library/to-functions.md)의 예제를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [데이터 변환](../../c-runtime-library/data-conversion.md)<br/>
 [is, isw 루틴](../../c-runtime-library/is-isw-routines.md)<br/>
 [to 함수](../../c-runtime-library/to-functions.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[멀티 바이트 문자 시퀀스 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[로캘](../../c-runtime-library/locale.md)<br/>
+[Multibyte-Character 시퀀스의 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>

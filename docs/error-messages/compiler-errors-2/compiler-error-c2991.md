@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2991'
 title: 컴파일러 오류 C2991
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2991
 ms.assetid: a87e4404-26e8-4927-b3ee-5d02b3b8bee1
-ms.openlocfilehash: 8a6cf04d89cd18cb5374f2d930b5395a297ce8f5
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 9f42d96a15869b656abfff21a921ec340aa6ce1f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74751510"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338597"
 ---
 # <a name="compiler-error-c2991"></a>컴파일러 오류 C2991
 

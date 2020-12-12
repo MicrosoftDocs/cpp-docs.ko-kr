@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 3) C4638'
 title: 컴파일러 경고(수준 3) C4638
 ms.date: 08/27/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4638
 ms.assetid: 2c07923a-e103-4e40-bd11-fdfed428a5ec
-ms.openlocfilehash: 3662116359f906ef6f0a004fada8efd6771d0a0a
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: fc771004ebbfeef436a456523e2e2fc87382a291
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80174130"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338567"
 ---
 # <a name="compiler-warning-level-3-c4638"></a>컴파일러 경고(수준 3) C4638
 
