@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 링커 도구 오류 및 경고 (LNKxxxx)'
 title: 링커 도구 오류 및 경고
 ms.date: 09/10/2019
 f1_keywords:
@@ -313,16 +314,16 @@ helpviewer_keywords:
 - linker [C++], errors and warnings
 - errors [C++], linker
 ms.assetid: d4b12c0f-4dae-48b2-9b9e-fedf94c94cb0
-ms.openlocfilehash: e845ba44476508892be63f0a99f8b2c2fedf0d8e
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 97d73a56469ac2337546859517d3057f1d078132
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79445467"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332088"
 ---
 # <a name="linker-tools-errors-and-warnings-lnkxxxx"></a>링커 도구 오류 및 경고(LNKxxxx)
 
-링커 도구 링크, LIB, DUMPBIN 및 EDITBIN은 이러한 오류 및 경고를 생성 하는 공통 실행 파일을 공유 합니다. 도구는 .LNK*xxxx*형식에 대 한 경고를 생성 합니다. 여기서 *xxxx* 는 네 자리 숫자입니다.
+링커 도구 링크, LIB, DUMPBIN 및 EDITBIN은 이러한 오류 및 경고를 생성 하는 공통 실행 파일을 공유 합니다. 도구는 .LNK *xxxx* 형식에 대 한 경고를 생성 합니다. 여기서 *xxxx* 는 네 자리 숫자입니다.
 
 [!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
@@ -455,4 +456,4 @@ ms.locfileid: "79445467"
 
 ## <a name="see-also"></a>참고 항목
 
-[C/C++ 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md)
+[C/C++ 컴파일러와 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md)

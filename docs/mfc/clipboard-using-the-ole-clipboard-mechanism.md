@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 클립보드: OLE 클립보드 메커니즘 사용'
 title: '클립보드: OLE 클립보드 메커니즘 사용'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - OLE Clipboard, formats
 - formats [MFC], Clipboard for OLE
 ms.assetid: 229cc610-5bb1-435e-bd20-2c8b9964d1af
-ms.openlocfilehash: da0b99e6c9c803f3c3a4c09d67853649a4bac314
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: f7005bd3e99ebb658b6aa38952a6689d4a9ba30c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626053"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338437"
 ---
 # <a name="clipboard-using-the-ole-clipboard-mechanism"></a>클립보드: OLE 클립보드 메커니즘 사용
 

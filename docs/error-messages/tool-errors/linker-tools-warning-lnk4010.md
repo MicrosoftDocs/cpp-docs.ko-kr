@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 링커 도구 경고 LNK4010'
 title: 링커 도구 경고 LNK4010
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4010
 ms.assetid: 2824cf99-4174-4b60-a6e2-c01e9f1ee52d
-ms.openlocfilehash: 5b2d5bd9b9d2fe0af488dad000638e7ae4f7624d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 4db4ea4a6f4ac6206cf34a77fc480ae1532283d9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80194306"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332006"
 ---
 # <a name="linker-tools-warning-lnk4010"></a>링커 도구 경고 LNK4010
 

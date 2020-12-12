@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: IDL 특성'
 title: IDL 특성 (c + + COM)
 ms.date: 10/02/2018
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - IDL files [C++], attributes
 - .idl files [C++]
 ms.assetid: 04c596f4-c97b-4952-8053-316678b1d0b6
-ms.openlocfilehash: 8cceae2f1c4880b72f1ffc30070d6aa6bf8e3a51
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1db49b6c68d0dd4e4f4c6c5dcfb148cafc39159d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211972"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275466"
 ---
 # <a name="idl-attributes"></a>IDL 특성
 
@@ -29,7 +30,7 @@ ms.locfileid: "87211972"
 
 [Idl_quote](idl-quote.md) 에서는 현재 버전의 Visual C++에서 지원 되지 않는 MIDL 구문을 사용할 수 있습니다. 이 특성과 [importlib](importlib.md) 및 [includelib](includelib-cpp.md) 와 같은 기타 특성을 사용 하면 현재 Visual Studio c + + 프로젝트에서 기존 .idl 파일을 사용 하는 데 도움이 됩니다.
 
-|attribute|설명|
+|특성|설명|
 |---------------|-----------------|
 |[aggregatable](aggregatable.md)|다른 컨트롤에서 컨트롤을 집계할 수 있음을 나타냅니다.|
 |[appobject](appobject.md)|Coclass를 전체 EXE 응용 프로그램과 연결 된 응용 프로그램 개체로 식별 하 고 coclass의 함수 및 속성을이 형식 라이브러리에서 전역적으로 사용할 수 있음을 나타냅니다.|
@@ -47,7 +48,7 @@ ms.locfileid: "87211972"
 |[defaultvtable](defaultvtable.md)|인터페이스를 컨트롤의 기본 vtable 인터페이스로 정의 합니다.|
 |[dispinterface](dispinterface.md)|.Idl 파일의 인터페이스를 디스패치 인터페이스로 배치합니다.|
 |[displaybind](displaybind.md)|사용자에 게 바인딩 가능으로 표시 해야 하는 속성을 나타냅니다.|
-|[dual](dual.md)|인터페이스를 .idl 파일에 이중 인터페이스로 배치 합니다.|
+|[복수](dual.md)|인터페이스를 .idl 파일에 이중 인터페이스로 배치 합니다.|
 |[엔트리의](entry.md)|DLL의 진입점을 식별 하 여 모듈에서 내보낸 함수 또는 상수를 지정 합니다.|
 |[first_is](first-is.md)|전송할 첫 번째 배열 요소의 인덱스를 지정 합니다.|
 |[helpcontext](helpcontext.md)|사용자가 도움말 파일에서이 요소에 대 한 정보를 볼 수 있는 컨텍스트 ID를 지정 합니다.|
@@ -69,7 +70,7 @@ ms.locfileid: "87211972"
 |[last_is](last-is.md)|전송할 마지막 배열 요소의 인덱스를 지정 합니다.|
 |[lcid](lcid.md)|로캘 식별자를 함수에 전달할 수 있습니다.|
 |[length_is](length-is.md)|전송할 배열 요소의 수를 지정 합니다.|
-|[licensed](licensed.md)|는 적용 되는 coclass가 사용이 허가 되 고를 사용 하 여 인스턴스화해야 함을 나타냅니다 `IClassFactory2` .|
+|[사용권이](licensed.md)|는 적용 되는 coclass가 사용이 허가 되 고를 사용 하 여 인스턴스화해야 함을 나타냅니다 `IClassFactory2` .|
 |[로컬](local-cpp.md)|인터페이스 헤더에서 사용 하는 경우 MIDL 컴파일러를 헤더 생성기로 사용할 수 있습니다. 개별 함수에서 사용 하는 경우 스텁이 생성 되지 않는 지역 프로시저를 지정 합니다.|
 |[max_is](max-is.md)|유효한 배열 인덱스에 대 한 최대값을 지정 합니다.|
 |[모듈](module-cpp.md)|.Idl 파일의 라이브러리 블록을 정의합니다.|

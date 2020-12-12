@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 3) C4792'
 title: 컴파일러 경고(수준 3) C4792
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4792
 ms.assetid: c047ce69-a622-44e1-9425-d41aa9261c61
-ms.openlocfilehash: f0efed41fad2648d7e681fa4e5575e7f36fb6aeb
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 37dc805477e3150eedaffe7eb5d900b7903b1d48
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991681"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332135"
 ---
 # <a name="compiler-warning-level-3-c4792"></a>컴파일러 경고(수준 3) C4792
 

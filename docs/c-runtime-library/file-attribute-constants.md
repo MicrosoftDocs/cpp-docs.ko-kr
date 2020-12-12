@@ -1,4 +1,5 @@
 ---
+description: 파일 특성 상수에 대해 자세히 알아보세요.
 title: 파일 특성 상수
 ms.date: 11/04/2016
 f1_keywords:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - _A_HIDDEN constant
 - _A_RDONLY constant
 ms.assetid: 8dc8ccb9-99f5-446b-876c-7ebecc2f764f
-ms.openlocfilehash: 271459c33cdcc1110222871bdca06d3f04edb497
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: 8b57549b4a21cc5d699f933009c575b3f3fca81d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57750886"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306367"
 ---
 # <a name="file-attribute-constants"></a>파일 특성 상수
 
@@ -40,7 +41,7 @@ ms.locfileid: "57750886"
 #include <io.h>
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 이러한 상수는 함수가 지정하는 디렉터리나 파일의 현재 속성을 지정합니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: idl_quote'
 title: idl_quote (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - idl_quote attribute
 ms.assetid: a370e1b7-948b-4e67-9a25-58facf24e4c9
-ms.openlocfilehash: 1d0aa80f64593ed347720b84e4059a0c32dce4be
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5aa389214283c188f71190eec41e22d396d887cf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844238"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275440"
 ---
 # <a name="idl_quote"></a>idl_quote
 
@@ -34,7 +35,7 @@ Microsoft c + + 컴파일러에서 컴파일러 오류를 반환 하지 않고 �
 
 ## <a name="example"></a>예제
 
-다음 코드에서는 지원 되는 **에서**를 사용 하 여 지원 되지 않는 특성을 지정 하 고 정의 되지 않은 .idl 구문을 정의 하 고 사용 하는 방법을 보여 줍니다.
+다음 코드에서는 지원 되는 **에서** 를 사용 하 여 지원 되지 않는 특성을 지정 하 고 정의 되지 않은 .idl 구문을 정의 하 고 사용 하는 방법을 보여 줍니다.
 
 ```cpp
 // cpp_attr_ref_idl_quote.cpp

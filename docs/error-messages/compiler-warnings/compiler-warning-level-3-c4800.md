@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4800'
 title: 컴파일러 경고 (수준 4) C4800
 ms.date: 03/14/2019
 f1_keywords:
@@ -6,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4800
 ms.assetid: 4f409799-a250-45ed-bb5f-657691b0d9f7
-ms.openlocfilehash: bcc98b9bb24f77e39a31332b8fbe2f7dcc5a7638
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: bb46807e6225d4b73b589f8b1b95ea777f69d5b2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924616"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332119"
 ---
 # <a name="compiler-warning-level-4-c4800"></a>컴파일러 경고 (수준 4) C4800
 
 ::: moniker range=">= msvc-160"
 Visual Studio 2019 이상:
-> ' *Type* '에서 bool로의 암시적 변환입니다. 가능한 정보 손실
+> '*Type*'에서 bool로의 암시적 변환입니다. 가능한 정보 손실
 ::: moniker-end
 
 C4800는 Visual Studio 2015 이전 버전의 수준 3 경고입니다.
-> ' *type* ': 값을 bool ' true ' 또는 ' f a l s e '로 강제 적용 합니다 (성능 경고).
+> '*type*': 값을 bool ' true ' 또는 ' f a l s e '로 강제 적용 합니다 (성능 경고).
 
 이 경고는 값이 암시적으로 형식으로 변환 될 때 생성 됩니다 **`bool`** . 일반적으로이 메시지는 변수에 변수와 **`int`** **`bool`** **`int`** 만 포함 되어 **`true`** **`false`** 있고 형식으로 다시 선언 될 수 있는 변수에 변수를 할당 하는 경우에 발생 합니다 **`bool`** . 형식을 사용 하도록 식을 다시 작성할 수 없는 경우 식에 ""를 추가 하 여 식 **`bool`** 형식을 지정할 수 있습니다 `!=0` **`bool`** . 식을 형식으로 캐스팅 하면 **`bool`** 경고가 발생 하지 않습니다.
 
