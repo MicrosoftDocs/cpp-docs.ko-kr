@@ -1,23 +1,24 @@
 ---
-title: 'TN066: 일반적인 MFC 3.x에서 4.0으로 이식 문제'
+description: 'TN066: 일반적인 MFC 3.x에서 4.0 포팅 문제에 대해 자세히 알아보세요.'
+title: 'TN066: 일반적인 MFC 3.x에서 4.0으로의 이식 문제'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - porting MFC, 3.x to 4.0
 - TN066 [MFC]
 - porting MFC
 ms.assetid: 88308897-8da8-496d-bdef-d34ab77cdd79
-ms.openlocfilehash: c481da114ec58164c7db199e459c6b20e5e65d24
-ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
+ms.openlocfilehash: 72f82438cd1a87a98e7dd1df55dbdd5f3945eb07
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65611277"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97214535"
 ---
-# <a name="tn066-common-mfc-3x-to-40-porting-issues"></a>TN066: 일반적인 MFC 3.x에서 4.0으로 이식 문제
+# <a name="tn066-common-mfc-3x-to-40-porting-issues"></a>TN066: 일반적인 MFC 3.x에서 4.0으로의 이식 문제
 
-이 기술 노트 MFC를 사용 하 여 작성 된 응용 프로그램을 이식 하는 동안 발생할 수 있는 가장 일반적인 문제를 설명 3.x (MFC 시각적 개체에 포함 된 C++ 2.x) MFC 4.0입니다.
+이 기술 정보에서는 mfc 3.x (Visual C++ 2.x에 포함 된 MFC)로 작성 된 응용 프로그램을 MFC 4.0로 이식 하려고 할 때 발생할 수 있는 가장 일반적인 문제에 대해 설명 했습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
+[번호로 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
 [범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)

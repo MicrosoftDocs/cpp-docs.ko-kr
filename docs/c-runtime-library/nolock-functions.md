@@ -1,18 +1,19 @@
 ---
+description: _Nolock 함수에 대해 자세히 알아보세요.
 title: _nolock 함수
 ms.date: 11/04/2016
 helpviewer_keywords:
 - _nolock functions
 - nolock functions
 ms.assetid: 7d651d87-38d2-4303-9897-fdb5f7a3e899
-ms.openlocfilehash: 7bd0592fb8dc43307a902714723d1b1e43207d1c
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: f4326f873ab16a368624b28dd70a8d39cb9a9ac9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57746411"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97213652"
 ---
-# <a name="nolock-functions"></a>_nolock 함수
+# <a name="_nolock-functions"></a>_nolock 함수
 
 다음은 잠금을 수행하지 않는 함수입니다. 최대 성능이 필요한 사용자에게 제공됩니다. [다중 스레드 라이브러리 성능](../c-runtime-library/multithreaded-libraries-performance.md)을 참조하세요.
 

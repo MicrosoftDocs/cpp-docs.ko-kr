@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: TN017: 창 개체 소멸'
 title: 'TN017: 창 개체 제거'
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - TN017
 - PostNcDestroy method [MFC]
 ms.assetid: 5bf208a5-5683-439b-92a1-547c5ded26cd
-ms.openlocfilehash: 2448a2661851f14fc6fe8747ca19495925442436
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 86ce1255055db98a247ac8997aa7d146eb135583
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226817"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97215913"
 ---
 # <a name="tn017-destroying-window-objects"></a>TN017: 창 개체 제거
 
@@ -39,11 +40,11 @@ ms.locfileid: "87226817"
 
 ## <a name="auto-cleanup-with-cwndpostncdestroy"></a>CWnd::P ostNcDestroy를 사용 하 여 자동 정리
 
-시스템이 Windows 창을 소멸 시킬 때 창으로 전송 된 마지막 Windows 메시지는 WM_NCDESTROY 됩니다. `CWnd`해당 메시지의 기본 처리기는 [CWnd:: OnNcDestroy](../mfc/reference/cwnd-class.md#onncdestroy)입니다. `OnNcDestroy`는 `HWND` c + + 개체에서를 분리 하 고 가상 함수를 호출 `PostNcDestroy` 합니다. 일부 클래스는이 함수를 재정의 하 여 c + + 개체를 삭제 합니다.
+시스템이 Windows 창을 소멸 시킬 때 창으로 전송 된 마지막 Windows 메시지는 WM_NCDESTROY 됩니다. `CWnd`해당 메시지의 기본 처리기는 [CWnd:: OnNcDestroy](../mfc/reference/cwnd-class.md#onncdestroy)입니다. `OnNcDestroy` 는 `HWND` c + + 개체에서를 분리 하 고 가상 함수를 호출 `PostNcDestroy` 합니다. 일부 클래스는이 함수를 재정의 하 여 c + + 개체를 삭제 합니다.
 
 의 기본 구현은 `CWnd::PostNcDestroy` 아무 작업도 수행 하지 않습니다 .이는 스택 프레임에 할당 되거나 다른 개체에 포함 된 창 개체에 적합 합니다. 이는 다른 개체 없이 힙에 할당 되도록 설계 된 창 개체에는 적합 하지 않습니다. 즉, 다른 c + + 개체에 포함 되지 않은 창 개체에는 적합 하지 않습니다.
 
-힙에서 단독으로 할당 되도록 디자인 된 클래스는 `PostNcDestroy` **삭제**를 수행 하는 메서드를 재정의 합니다. 이 문은 c + + 개체와 연결 된 모든 메모리를 해제 합니다. `CWnd` `DestroyWindow` *M_hWnd* 가 null이 아닌 경우 기본 소멸자가를 호출 하더라도 정리 단계 중에 핸들이 분리 되 고 null 인 경우에는 무한 재귀가 발생 하지 않습니다.
+힙에서 단독으로 할당 되도록 디자인 된 클래스는 `PostNcDestroy` **삭제** 를 수행 하는 메서드를 재정의 합니다. 이 문은 c + + 개체와 연결 된 모든 메모리를 해제 합니다. `CWnd` `DestroyWindow` *M_hWnd* 가 null이 아닌 경우 기본 소멸자가를 호출 하더라도 정리 단계 중에 핸들이 분리 되 고 null 인 경우에는 무한 재귀가 발생 하지 않습니다.
 
 > [!NOTE]
 > 일반적으로 시스템은 `CWnd::PostNcDestroy` Windows WM_NCDESTROY 메시지를 처리 한 후를 호출 하 고 `HWND` , 및 c + + 창 개체는 더 이상 연결 되지 않습니다. 또한 시스템은 `CWnd::PostNcDestroy` 오류가 발생 하는 경우 [CWnd:: Create](../mfc/reference/cwnd-class.md#create) 호출의 구현에서를 호출 합니다. 자동 정리 규칙은이 항목의 뒷부분에 설명 되어 있습니다.
@@ -72,7 +73,7 @@ ms.locfileid: "87226817"
 
 - 보기 창 (에서 직접 또는 간접적으로 파생 `CView` )
 
-이러한 규칙을 중단 하려면 `PostNcDestroy` 파생 클래스에서 메서드를 재정의 해야 합니다. 자동 정리를 클래스에 추가 하려면 기본 클래스를 호출한 다음 **삭제**를 수행 합니다. 클래스에서 자동 정리를 제거 하려면 `CWnd::PostNcDestroy` `PostNcDestroy` 직접 기본 클래스의 메서드 대신을 직접 호출 합니다.
+이러한 규칙을 중단 하려면 `PostNcDestroy` 파생 클래스에서 메서드를 재정의 해야 합니다. 자동 정리를 클래스에 추가 하려면 기본 클래스를 호출한 다음 **삭제** 를 수행 합니다. 클래스에서 자동 정리를 제거 하려면 `CWnd::PostNcDestroy` `PostNcDestroy` 직접 기본 클래스의 메서드 대신을 직접 호출 합니다.
 
 자동 정리 동작을 변경 하는 가장 일반적인 용도는 힙에 할당 될 수 있는 모덜리스 대화 상자를 만드는 것입니다.
 

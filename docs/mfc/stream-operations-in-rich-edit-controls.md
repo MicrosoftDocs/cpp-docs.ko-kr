@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: Rich Edit 컨트롤의 스트림 작업'
 title: Rich Edit 컨트롤의 스트림 작업
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - stream operations in CRichEditCtrl
 - stream storage and CRichEditCtrl
 ms.assetid: 110b4684-1e76-4ca6-9ef0-5bc8b2d93c78
-ms.openlocfilehash: 73277f59dc0ad4dfe21d481d0b893903ed407ea9
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 3f9dcfb837d9a4f26454a597507712293d3d895c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69512948"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97216485"
 ---
 # <a name="stream-operations-in-rich-edit-controls"></a>Rich Edit 컨트롤의 스트림 작업
 
@@ -24,7 +25,7 @@ ms.locfileid: "69512948"
 
 Rich edit 컨트롤의 콘텐츠를 저장 하려면 (즉, 데이터를 스트리밍하는 경우), [Streamout](../mfc/reference/cricheditctrl-class.md#streamout) 멤버 함수를 사용할 수 있습니다. 컨트롤이 버퍼에 쓰기를 반복한 후 애플리케이션에서 정의된 콜백 함수를 호출합니다. 각 호출마다 콜백 함수는 버퍼 내용을 저장합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [CRichEditCtrl 사용](../mfc/using-cricheditctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)

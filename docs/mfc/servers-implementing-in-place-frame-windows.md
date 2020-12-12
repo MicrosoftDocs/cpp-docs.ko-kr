@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 서버: In-Place 프레임 창 구현'
 title: '서버: 내부 프레임 창 구현'
 ms.date: 09/09/2019
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - frame windows [MFC], in-place
 - in-place frame windows
 ms.assetid: 09bde4d8-15e2-4fba-8d14-9b954d926b92
-ms.openlocfilehash: a082afe141a21e4175886f13a26043694ac0d426
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 859a31bf107162aea6adb4d40ccf7b7b87f485b5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230469"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97217356"
 ---
 # <a name="servers-implementing-in-place-frame-windows"></a>서버: 내부 프레임 창 구현
 
@@ -33,7 +34,7 @@ ms.locfileid: "87230469"
 
 1. 도구 모음이 있으면 frame-window 클래스에서 `CToolBar` 멤버를 선언합니다.
 
-   서버가 내부에서 활성 상태일 때 도구 모음을 만들도록 `OnCreateControlBars` 멤버 함수를 재정의합니다. 예를 들면 다음과 같습니다.
+   서버가 내부에서 활성 상태일 때 도구 모음을 만들도록 `OnCreateControlBars` 멤버 함수를 재정의합니다. 예를 들어:
 
    [!code-cpp[NVC_MFCOleServer#1](../mfc/codesnippet/cpp/servers-implementing-in-place-frame-windows_1.cpp)]
 
@@ -47,7 +48,7 @@ ms.locfileid: "87230469"
 
 도구 모음 비트맵 ID는 서버 애플리케이션에 정의된 다른 내부 리소스와 동일해야 합니다. 자세한 내용은 [메뉴 및 리소스: 서버 추가](../mfc/menus-and-resources-server-additions.md) 를 참조 하세요.
 
-자세한 내용은 *클래스 라이브러리 참조*에서 [COleIPFrameWnd](../mfc/reference/coleipframewnd-class.md), [COleResizeBar](../mfc/reference/coleresizebar-class.md)및 [cdoctemplate:: SetServerInfo](../mfc/reference/cdoctemplate-class.md#setserverinfo) 를 참조 하세요.
+자세한 내용은 *클래스 라이브러리 참조* 에서 [COleIPFrameWnd](../mfc/reference/coleipframewnd-class.md), [COleResizeBar](../mfc/reference/coleresizebar-class.md)및 [cdoctemplate:: SetServerInfo](../mfc/reference/cdoctemplate-class.md#setserverinfo) 를 참조 하세요.
 
 ## <a name="see-also"></a>참고 항목
 

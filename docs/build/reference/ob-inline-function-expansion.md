@@ -1,4 +1,5 @@
 ---
+description: 자세히 알아보기:/Ob (인라인 함수 확장)
 title: /Ob(인라인 함수 확장)
 ms.date: 08/08/2019
 f1_keywords:
@@ -24,28 +25,28 @@ helpviewer_keywords:
 - Ob0 compiler option [C++]
 - inline expansion, compiler option
 ms.assetid: f134e6df-e939-4980-a01d-47425dbc562a
-ms.openlocfilehash: 56a755de69b4f2ce6b659959eca5b25a6d75bfdc
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 9a003f83d27ca0517b427bab6f7ffda75ff51557
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92921193"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97214343"
 ---
 # <a name="ob-inline-function-expansion"></a>/Ob(인라인 함수 확장)
 
 함수의 인라인 확장을 제어합니다. 기본적으로 최적화할 때 확장은 컴파일러의 판단에 따라 *자동 인라이닝* 이라고 하는 모든 함수에서 발생 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ::: moniker range=">=msvc-160"
 
-> **/Ob** { **0** | **1** | **2** | **3** }
+> **/Ob**{**0** | **1** | **2** | **3**}
 
 ::: moniker-end
 
 ::: moniker range="<=msvc-150"
 
-> **/Ob** { **0** | **1** | **2** }
+> **/Ob**{**0** | **1** | **2**}
 
 ::: moniker-end
 
@@ -74,7 +75,7 @@ ms.locfileid: "92921193"
 인라인 확장의 후보로 고려 하지 않도록 함수를 제외 하려면 [__declspec (noinline)](../../cpp/noinline.md)를 사용 하거나 [#pragma auto_inline (off)](../../preprocessor/auto-inline.md) 지시문으로 표시 된 영역을 사용 하거나 [auto_inline (on)](../../preprocessor/auto-inline.md) 지시문을 #pragma 수 있습니다. 컴파일러에 인라인 힌트를 제공 하는 다른 방법에 대 한 자세한 내용은 [#pragma 내장](../../preprocessor/intrinsic.md) 지시문을 참조 하십시오.
 
 > [!NOTE]
-> 프로 파일링 테스트 실행에서 수집 되는 정보는 **/Ob** , **/os** 또는 **/ot** 를 지정 했기 때문에 다르게 적용 되는 최적화를 재정의 합니다. 자세한 내용은 [프로필 기반 최적화](../profile-guided-optimizations.md)를 참조하세요.
+> 프로 파일링 테스트 실행에서 수집 되는 정보는 **/Ob**, **/os** 또는 **/ot** 를 지정 했기 때문에 다르게 적용 되는 최적화를 재정의 합니다. 자세한 내용은 [프로필 기반 최적화](../profile-guided-optimizations.md)를 참조하세요.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 

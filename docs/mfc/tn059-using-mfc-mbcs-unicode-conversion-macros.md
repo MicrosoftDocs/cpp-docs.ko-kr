@@ -1,5 +1,6 @@
 ---
-title: 'TN059: MFC MBCS 사용-유니코드 변환 매크로'
+description: '자세히 알아보기: TN059: MFC m b c s/유니코드 변환 매크로 사용'
+title: 'TN059: MFC MBCS-Unicode 변환 매크로 사용'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MFCANS32.DLL
@@ -11,19 +12,19 @@ helpviewer_keywords:
 - macros [MFC], MBCS conversion macros
 - TN059
 ms.assetid: a2aab748-94d0-4e2f-8447-3bd07112a705
-ms.openlocfilehash: d689e87b8f2804fe99804c6ca37a48bac01df263
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c1b767a8d90f2c788a15c9e880056206e7d1326a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87182735"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97214769"
 ---
 # <a name="tn059-using-mfc-mbcsunicode-conversion-macros"></a>TN059: MFC MBCS/유니코드 변환 매크로 사용
 
 > [!NOTE]
 > 다음 기술 노트는 온라인 설명서에 먼저 포함되어 있었으므로 업데이트되지 않았습니다. 따라서 일부 절차 및 항목은 만료되거나 올바르지 않을 수 있습니다. 최신 정보를 보려면 온라인 설명서 색인에서 관심 있는 항목을 검색하는 것이 좋습니다.
 
-이 참고에서는 AFXPRIV.H에 정의 된 MBCS/Unicode 변환에 매크로를 사용 하는 방법에 대해 설명 합니다. 넣기. 이러한 매크로는 응용 프로그램이 OLE API를 직접 처리 하거나 어떤 이유로 든 종종 유니코드와 MBCS 간에 변환 해야 하는 경우에 유용 합니다.
+이 참고에서는 AFXPRIV.H에 정의 된 MBCS/Unicode 변환에 매크로를 사용 하는 방법에 대해 설명 합니다. 이러한 매크로는 응용 프로그램이 OLE API를 직접 처리 하거나 어떤 이유로 든 종종 유니코드와 MBCS 간에 변환 해야 하는 경우에 유용 합니다.
 
 ## <a name="overview"></a>개요
 
@@ -80,7 +81,7 @@ pI->SomeFunctionThatNeedsUnicode(T2OLE(lpszA));
 
 매크로에 임시 길이를 저장할 수 있는 공간이 있도록 하려면 변환 매크로를 사용 하는 각 함수에서이를 수행 하는 _convert 라는 지역 변수를 선언 해야 합니다. 이 작업은 위의 예제에서 볼 수 있듯이 USES_CONVERSION 매크로를 호출 하 여 수행 합니다.
 
-제네릭 변환 매크로와 OLE 관련 매크로가 모두 있습니다. 이러한 두 가지 매크로 집합에 대해서는 아래에서 설명 합니다. 모든 매크로는 AFXPRIV.H에 있습니다. 넣기.
+제네릭 변환 매크로와 OLE 관련 매크로가 모두 있습니다. 이러한 두 가지 매크로 집합에 대해서는 아래에서 설명 합니다. 모든 매크로는 AFXPRIV.H에 있습니다.
 
 ## <a name="generic-conversion-macros"></a>제네릭 변환 매크로
 
@@ -97,7 +98,7 @@ W2A      (LPCWSTR) -> (LPSTR)
 
 ## <a name="ole-conversion-macros"></a>OLE 변환 매크로
 
-OLE 변환 매크로는 **OLESTR** 문자를 필요로 하는 함수를 처리 하기 위해 특별히 설계 되었습니다. OLE 헤더를 검사 하는 경우 **Lpcolestr** 및 **OLECHAR**에 대 한 많은 참조가 표시 됩니다. 이러한 형식은 플랫폼에 한정 되지 않는 방식으로 OLE 인터페이스에 사용 되는 문자 유형을 참조 하는 데 사용 됩니다. **OLECHAR** 는 **`char`** Win16 및 Macintosh 플랫폼과 Win32의 **WCHAR** 에 매핑됩니다.
+OLE 변환 매크로는 **OLESTR** 문자를 필요로 하는 함수를 처리 하기 위해 특별히 설계 되었습니다. OLE 헤더를 검사 하는 경우 **Lpcolestr** 및 **OLECHAR** 에 대 한 많은 참조가 표시 됩니다. 이러한 형식은 플랫폼에 한정 되지 않는 방식으로 OLE 인터페이스에 사용 되는 문자 유형을 참조 하는 데 사용 됩니다. **OLECHAR** 는 **`char`** Win16 및 Macintosh 플랫폼과 Win32의 **WCHAR** 에 매핑됩니다.
 
 MFC 코드의 **#ifdef** 지시문 수를 최소한으로 유지 하기 위해 OLE 문자열이 관련 된 각 변환에 대 한 유사한 매크로가 있습니다. 가장 일반적으로 사용 되는 매크로는 다음과 같습니다.
 
@@ -138,7 +139,7 @@ void MuchBetterIterateCode(LPCTSTR lpsz)
 }
 ```
 
-문자열이 상수가 아니면 메서드 호출을 함수로 캡슐화 합니다. 이렇게 하면 매번 변환 버퍼를 해제할 수 있습니다. 예를 들면 다음과 같습니다.
+문자열이 상수가 아니면 메서드 호출을 함수로 캡슐화 합니다. 이렇게 하면 매번 변환 버퍼를 해제할 수 있습니다. 예를 들어:
 
 ```cpp
 void CallSomeMethod(int ii, LPCTSTR lpsz)
