@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CMFCPropertyGridCtrl 클래스'
 title: CMFCPropertyGridCtrl 클래스
 ms.date: 11/19/2018
 f1_keywords:
@@ -150,12 +151,12 @@ helpviewer_keywords:
 - CMFCPropertyGridCtrl [MFC], OnSelectCombo
 - CMFCPropertyGridCtrl [MFC], ValidateItemData
 ms.assetid: 95877cae-2311-4a2a-9031-0c8c3cf0a5f9
-ms.openlocfilehash: c20ab10ac95ab6788f34367a9d68cdc9eae685b5
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 26b7a16a0a890f669323dc514c863e81dd066c9b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562677"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290052"
 ---
 # <a name="cmfcpropertygridctrl-class"></a>CMFCPropertyGridCtrl 클래스
 
@@ -173,14 +174,14 @@ class CMFCPropertyGridCtrl : public CWnd
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CMFCPropertyGridCtrl:: CMFCPropertyGridCtrl](#cmfcpropertygridctrl)|`CMFCPropertyGridCtrl` 개체를 생성합니다.|
 |`CMFCPropertyGridCtrl::~CMFCPropertyGridCtrl`|소멸자|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |`CMFCPropertyGridCtrl::accHitTest`|화면의 지정된 지점에서 자식 요소나 자식 개체를 검색하기 위해 프레임워크에서 호출됩니다. ( [CWnd:: accHitTest](../../mfc/reference/cwnd-class.md#acchittest)를 재정의 합니다.)|
 |`CMFCPropertyGridCtrl::accLocation`|지정된 개체의 현재 화면 위치를 검색하기 위해 프레임워크에서 호출됩니다. ( [CWnd:: accLocation](../../mfc/reference/cwnd-class.md#acclocation)을 재정의 합니다.)|
@@ -253,7 +254,7 @@ class CMFCPropertyGridCtrl : public CWnd
 
 ### <a name="protected-methods"></a>Protected 메서드
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |[CMFCPropertyGridCtrl:: AdjustLayout](#adjustlayout)|속성 표 컨트롤 및 해당 속성을 다시 그립니다.|
 |[CMFCPropertyGridCtrl:: CompareProps](#compareprops)|속성을 정렬 하기 위해 속성 그리드 컨트롤에서 호출 됩니다.|
@@ -282,7 +283,7 @@ class CMFCPropertyGridCtrl : public CWnd
 
 다음 표에서는 네 개의 선택 속성 유형을 보여 줍니다.
 
-|클래스|Description|
+|클래스|설명|
 |-----------|-----------------|
 |[CMFCPropertyGridProperty 클래스](../../mfc/reference/cmfcpropertygridproperty-class.md)|문자열, 부울, 날짜 등의 값을 지정 하는 데 사용 되는 범용 속성입니다.|
 |[CMFCPropertyGridColorProperty 클래스](../../mfc/reference/cmfcpropertygridcolorproperty-class.md)|색 값을 선택 하는 데 사용 되는 속성입니다.|
@@ -332,7 +333,7 @@ virtual HRESULT accSelect(
 진행 *플래그*<br/>
 진행 *varChild*<br/>
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
@@ -358,7 +359,7 @@ int AddProperty(
 *bAdjustLayout*<br/>
 진행 속성의 텍스트 및 값을 그리는 방법을 다시 계산 하려면 TRUE이 고, 속성을 그리면입니다. FALSE 이면 기존 계산을 사용 하 여 속성을 그립니다. 기본값은 TRUE입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하면 속성 표 형태 컨트롤에서 속성이 추가 된 위치의 0부터 시작 하는 인덱스이 고, 그렇지 않으면-1입니다.
 
@@ -410,7 +411,7 @@ virtual void CloseColorPopup();
 CMFCPropertyGridCtrl();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
@@ -432,9 +433,9 @@ virtual int CompareProps(
 *pProp2*<br/>
 속성에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-|Return Value|설명|
+|반환 값|설명|
 |------------------|-----------------|
 |< 0|*PProp1* 매개 변수의 이름이 *pProp2* 매개 변수의 이름 보다 작은 경우|
 |0|*PProp1* 매개 변수의 이름은 *pProp2* 매개 변수의 이름과 같습니다.|
@@ -462,7 +463,7 @@ virtual BOOL Create(
 진행 [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles)의 비트 조합 (or)입니다.
 
 *rect*<br/>
-진행 *PParentWnd*의 클라이언트 좌표로 창의 크기와 위치를 지정 하는 경계 사각형입니다.
+진행 *PParentWnd* 의 클라이언트 좌표로 창의 크기와 위치를 지정 하는 경계 사각형입니다.
 
 *pParentWnd*<br/>
 진행 부모 창에 대 한 포인터입니다. NULL이 아니어야 합니다.
@@ -470,7 +471,7 @@ virtual BOOL Create(
 *nID*<br/>
 진행 자식 창의 ID입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 창이 성공적으로 만들어졌으면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -506,7 +507,7 @@ BOOL DeleteProperty(
 *bAdjustLayout*<br/>
 진행 속성 표 컨트롤에서 모든 텍스트, 이미지 및 항목을 그리는 방법을 다시 계산 하려면 TRUE로 설정 하 고 컨트롤을 그립니다. 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -520,7 +521,7 @@ BOOL DeleteProperty(
 BOOL DrawControlBarColors() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
@@ -542,7 +543,7 @@ virtual BOOL EditItem(
 *lptClick*<br/>
 진행 사용자가 편집 작업을 시작 하기 위해 클릭 한 속성 표 형태 컨트롤의 지점입니다. 지점은 컨트롤의 클라이언트 좌표에 있습니다. 기본값은 NULL입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -582,10 +583,10 @@ void EnableHeaderCtrl(
 진행 헤더 컨트롤을 사용 하려면 TRUE이 고, 그렇지 않으면입니다. FALSE 이면 헤더 컨트롤을 사용 하지 않습니다. 기본값은 TRUE입니다.
 
 *lpszLeftColumn*<br/>
-진행 헤더 컨트롤의 왼쪽 열 제목입니다. 기본값은 **속성**입니다.
+진행 헤더 컨트롤의 왼쪽 열 제목입니다. 기본값은 **속성** 입니다.
 
 *lpszRightColumn*<br/>
-진행 머리글 컨트롤의 오른쪽 열 제목입니다. 기본값은 **value**입니다.
+진행 머리글 컨트롤의 오른쪽 열 제목입니다. 기본값은 **value** 입니다.
 
 ## <a name="cmfcpropertygridctrlendedititem"></a><a name="endedititem"></a> CMFCPropertyGridCtrl:: EndEditItem
 
@@ -600,7 +601,7 @@ virtual BOOL EndEditItem(BOOL bUpdateData=TRUE);
 *데이터를*<br/>
 진행 편집 작업이 완료 될 때 수정 된 속성 데이터의 유효성을 검사 하도록 지정 하려면 TRUE로 설정 합니다. 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 편집 작업이 성공적으로 종료 되 면 TRUE이 고, 수정 된 속성 데이터가 유효 하지 않거나 편집 작업을 계속 해야 하면 FALSE입니다.
 
@@ -659,7 +660,7 @@ CMFCPropertyGridProperty* FindItemByData(
 *bSearchSubItems 항목*<br/>
 진행 속성 하위 항목을 검색 하려면 TRUE로 설정 합니다. 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하면 연결 된 속성 개체에 대 한 포인터입니다. 그렇지 않으면 NULL입니다.
 
@@ -677,7 +678,7 @@ virtual HRESULT get_accChildCount(long* pcountChildren);
 
 진행 *Pcountchildren*<br/>
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
@@ -691,7 +692,7 @@ virtual HRESULT get_accFocus(VARIANT* pvarChild);
 
 진행 *pvarChild*<br/>
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
@@ -708,7 +709,7 @@ virtual HRESULT get_accHelp(
 진행 *varChild*<br/>
 진행 *pszHelp*<br/>
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
@@ -727,7 +728,7 @@ virtual HRESULT get_accHelpTopic(
 진행 *varChild*<br/>
 진행 *pidTopic*<br/>
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
@@ -744,7 +745,7 @@ virtual HRESULT get_accKeyboardShortcut(
 진행 *varChild*<br/>
 진행 *pszKeyboardShortcut*<br/>
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
@@ -758,7 +759,7 @@ virtual HRESULT get_accSelection(VARIANT* pvarChildren);
 
 진행 *pvarChildren*<br/>
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
@@ -770,7 +771,7 @@ virtual HRESULT get_accSelection(VARIANT* pvarChildren);
 COLORREF GetBkColor() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 RGB 색 값입니다.
 
@@ -786,7 +787,7 @@ RGB 색 값입니다.
 CFont& GetBoldFont();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 굵은 글꼴의 특징을 설명 하는 [cfont](../../mfc/reference/cfont-class.md) 개체에 대 한 참조입니다.
 
@@ -798,7 +799,7 @@ CFont& GetBoldFont();
 CMFCPropertyGridProperty* GetCurSel() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 속성 표 컨트롤에서 선택한 항목에 해당 하는 속성 개체에 대 한 포인터입니다.
 
@@ -854,7 +855,7 @@ void GetCustomColors(
 int GetDescriptionHeight() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 설명 영역의 높이 (픽셀)입니다.
 
@@ -872,7 +873,7 @@ int GetDescriptionHeight() const;
 int GetDescriptionRows() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 속성 표 컨트롤의 설명 영역에 있는 행의 수입니다.
 
@@ -888,7 +889,7 @@ int GetDescriptionRows() const;
 virtual CMFCHeaderCtrl& GetHeaderCtrl();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `CMFCHeaderCtrl` 개체에 대한 참조입니다.
 
@@ -900,7 +901,7 @@ virtual CMFCHeaderCtrl& GetHeaderCtrl();
 int GetHeaderHeight() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 헤더의 높이 (픽셀)입니다.
 
@@ -914,7 +915,7 @@ int GetHeaderHeight() const;
 int GetLeftColumnWidth() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이름 열의 너비입니다.
 
@@ -930,7 +931,7 @@ int GetLeftColumnWidth() const;
 CRect GetListRect() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 속성 표 컨트롤의 경계 사각형입니다. 이 rectange에는 설명 영역 및 헤더가 포함 되어 있지 않습니다.
 
@@ -951,7 +952,7 @@ CMFCPropertyGridProperty* GetProperty(int nIndex) const;
 
 이 메서드는 *Nindex* 매개 변수가 0 보다 작거나 속성의 수보다 크거나 같은 경우를 어설션 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하는 경우 지정 된 인덱스에 해당 하는 속성 개체에 대 한 포인터입니다. 그렇지 않으면 `NULL` 입니다.
 
@@ -965,7 +966,7 @@ CMFCPropertyGridProperty* GetProperty(int nIndex) const;
 int GetPropertyColumnWidth() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 속성 값을 포함 하는 열의 현재 너비입니다.
 
@@ -981,7 +982,7 @@ int GetPropertyColumnWidth() const;
 int GetPropertyCount() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 속성의 수입니다.
 
@@ -995,7 +996,7 @@ int GetPropertyCount() const;
 int GetRowHeight() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 행의 높이입니다.
 
@@ -1016,7 +1017,7 @@ virtual CScrollBar* GetScrollBarCtrl(int nBar) const;
 *nBar*<br/>
 진행 SB_VERT 해야 하는 스크롤 막대의 방향입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 스크롤 막대 개체에 대 한 포인터 이거나, 스크롤 막대가 없거나 스크롤 막대 방향이 SB_HORZ 경우 NULL입니다.
 
@@ -1032,7 +1033,7 @@ virtual CScrollBar* GetScrollBarCtrl(int nBar) const;
 COLORREF GetTextColor() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 RGB 색 값입니다.
 
@@ -1062,7 +1063,7 @@ CMFCPropertyGridProperty* HitTest(
 *bPropsOnly*<br/>
 진행 속성 영역만 테스트 하려면 TRUE로 설정 합니다. FALSE 이면 지정 된 점이 속성 영역에 없는 경우 *설명 영역* 을 테스트 합니다. 기본값은 FALSE입니다. 설명 영역에 대 한 자세한 내용은 설명 부분을 참조 하십시오.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 *Bpropsonly* 매개 변수가 TRUE이 고 지정 된 점이 속성 영역에 있는 경우 반환 값은 해당 속성 개체에 대 한 포인터입니다. 또한 *pnarea* 매개 변수는 지정 된 지점을 포함 하는 특정 영역으로 설정 됩니다. 그렇지 않으면 반환 값이 NULL이 고 *Pnarea* 매개 변수는 수정 되지 않습니다.
 
@@ -1074,7 +1075,7 @@ CMFCPropertyGridProperty* HitTest(
 
 이 메서드는 *Pnarea* 매개 변수가 가리키는 변수의 값을 설정 합니다. 다음 표에서는 가능한 값과 해당 영역을 나열 합니다.
 
-|값|영역|
+|값|Area|
 |-----------|----------|
 |`ClickArea::ClickExpandBox`|속성 확장 상자 컨트롤입니다.|
 |`ClickArea::ClickName`|속성 이름입니다.|
@@ -1107,7 +1108,7 @@ virtual void InitHeader();
 BOOL IsAlphabeticMode() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 속성 표 컨트롤이 사전순 모드 이면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
@@ -1123,7 +1124,7 @@ BOOL IsAlphabeticMode() const;
 BOOL IsAlwaysShowUserToolTip() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
@@ -1135,7 +1136,7 @@ BOOL IsAlwaysShowUserToolTip() const;
 BOOL IsDescriptionArea() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 설명 영역이 표시 되 면 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
@@ -1151,7 +1152,7 @@ BOOL IsDescriptionArea() const;
 BOOL IsGroupNameFullWidth() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 그룹 이름이 속성 표 형태 컨트롤의 너비 전체에 표시 되 면 TRUE입니다. 컨트롤의 오른쪽 (값) 열을 기준으로 그룹 이름을 잘라내는 경우 FALSE입니다.
 
@@ -1167,7 +1168,7 @@ BOOL IsGroupNameFullWidth() const;
 BOOL IsHeaderCtrl() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 헤더 컨트롤이 표시 되 면 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
@@ -1183,7 +1184,7 @@ BOOL IsHeaderCtrl() const;
 BOOL IsMarkModifiedProperties() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 굵은 스타일을 사용 하 여 수정 된 속성을 표시 하는 경우 TRUE입니다. 수정 된 속성을 표시 하는 데 일반 스타일을 사용 하는 경우 FALSE입니다.
 
@@ -1197,7 +1198,7 @@ BOOL IsMarkModifiedProperties() const;
 BOOL IsShowDragContext() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 크기 조정 작업을 수행 하는 동안 프레임 워크에서 이름 및 값 열을 다시 그리면 TRUE입니다. 끌기 작업이 완료 된 후 프레임 워크에서 열을 다시 그리면 FALSE이 고,
 
@@ -1213,7 +1214,7 @@ BOOL IsShowDragContext() const;
 BOOL IsVSDotNetLook() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 속성 표 컨트롤이 Visual Studio .NET 스타일에 있으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
@@ -1350,7 +1351,7 @@ virtual int OnDrawProperty(
 *pProp*<br/>
 진행 속성 개체에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -1629,7 +1630,7 @@ virtual BOOL ValidateItemData(CMFCPropertyGridProperty* pProp);
 *pProp*\
 진행 속성에 대 한 포인터입니다. 이 매개 변수는 사용되지 않습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 항상 TRUE입니다.
 

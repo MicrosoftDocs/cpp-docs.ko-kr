@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: MFC의 예외 처리'
 title: MFC의 예외 처리
 ms.date: 11/19/2019
 helpviewer_keywords:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - function calls [MFC], results
 - out-of-memory exceptions [MFC]
 ms.assetid: 0926627d-2ba7-44a6-babe-d851a4a2517c
-ms.openlocfilehash: ef827af413513d1a1753f84b1cb69a66f41f690c
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 15b0a054d3b1c0353c60c1c8dda03c9e704c077e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618862"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290754"
 ---
 # <a name="exception-handling-in-mfc"></a>MFC의 예외 처리
 
@@ -65,7 +66,7 @@ MFC 예외 매크로를 사용 하 여 응용 프로그램을 이미 개발한 �
 
 - [예외에 대 한 추가 정보](#_core_further_reading_about_exceptions)
 
-## <a name="when-to-use-exceptions"></a><a name="_core_when_to_use_exceptions"></a>예외를 사용 하는 경우
+## <a name="when-to-use-exceptions"></a><a name="_core_when_to_use_exceptions"></a> 예외를 사용 하는 경우
 
 프로그램 실행 중에 함수가 호출 되는 경우 (일반적인 실행, 잘못 된 실행 또는 비정상적인 실행) 세 가지 범주의 결과가 발생할 수 있습니다. 각 범주는 아래에 설명 되어 있습니다.
 
@@ -83,9 +84,9 @@ MFC 예외 매크로를 사용 하 여 응용 프로그램을 이미 개발한 �
 
 예외를 사용 하는 것은 비정상적인 실행에 특히 적합 합니다.
 
-## <a name="mfc-exception-support"></a><a name="_core_mfc_exception_support"></a>MFC 예외 지원
+## <a name="mfc-exception-support"></a><a name="_core_mfc_exception_support"></a> MFC 예외 지원
 
-C + + 예외를 직접 사용 하거나 MFC 예외 매크로를 사용 하는 경우에 [CException Class](reference/cexception-class.md) 는 `CException` 프레임 워크 또는 응용 프로그램에서 throw 될 수 있는 cexception 클래스 또는 파생 개체를 사용 합니다.
+C + + 예외를 직접 사용 하거나 MFC 예외 매크로를 사용 하는 경우에 [](reference/cexception-class.md) 는 `CException` 프레임 워크 또는 응용 프로그램에서 throw 될 수 있는 cexception 클래스 또는 파생 개체를 사용 합니다.
 
 다음 표에서는 MFC에서 제공 하는 미리 정의 된 예외를 보여 줍니다.
 
@@ -104,7 +105,7 @@ C + + 예외를 직접 사용 하거나 MFC 예외 매크로를 사용 하는 �
 
 버전 3.0 이상에서는 MFC가 C++ 예외를 사용했으나 형식에서 C++ 예외와 유사한 이전 예외 처리 매크로를 여전히 지원합니다. 이러한 매크로는 새 프로그래밍에는 권장되지 않지만 여전히 역 호환성에 대해 지원됩니다. 매크로를 이미 사용하는 프로그램에서 자유롭게 C++ 예외를 사용할 수 있습니다. 전처리 하는 동안 매크로는 Visual C++ 버전 2.0에서 c + + 언어의 MSVC 구현에 정의 된 예외 처리 키워드로 평가 됩니다. C++ 예외를 사용하는 동안 기존 예외 매크로를 남겨둘 수 있습니다. 매크로와 c + + 예외 처리를 혼합 하 고 새 메커니즘을 사용 하기 위해 이전 코드를 변환 하는 방법에 대 한 자세한 내용은 [예외: Mfc 매크로 사용 및 c + + 예외](exceptions-using-mfc-macros-and-cpp-exceptions.md) 및 [예외: mfc 예외 매크로에서 변환](exceptions-converting-from-mfc-exception-macros.md)문서를 참조 하세요. 이전 MFC 예외 매크로를 계속 사용하는 경우 C++ 예외 키워드로 평가합니다. [예외: 버전 3.0의 예외 매크로에 대 한 변경 내용을](exceptions-changes-to-exception-macros-in-version-3-0.md)참조 하세요. MFC는 [구조적 예외 처리](/windows/win32/debug/structured-exception-handling)에 설명 된 대로 WINDOWS NT SEH (구조적 예외 처리기)를 직접 지원 하지 않습니다.
 
-## <a name="further-reading-about-exceptions"></a><a name="_core_further_reading_about_exceptions"></a>예외에 대 한 추가 정보
+## <a name="further-reading-about-exceptions"></a><a name="_core_further_reading_about_exceptions"></a> 예외에 대 한 추가 정보
 
 다음 문서에서는 예외 처리를 위해 MFC 라이브러리를 사용 하는 방법을 설명 합니다.
 
@@ -122,11 +123,11 @@ C + + 예외를 직접 사용 하거나 MFC 예외 매크로를 사용 하는 �
 
 다음 문서에서는 c + + 예외 키워드와 MFC 예외 매크로를 비교 하 고 코드를 조정 하는 방법을 설명 합니다.
 
-- [예외: 버전 3.0의 예외 매크로 변경 사항](exceptions-changes-to-exception-macros-in-version-3-0.md)
+- [예외: 버전 3.0의 예외 매크로에 대 한 변경 내용](exceptions-changes-to-exception-macros-in-version-3-0.md)
 
 - [예외: MFC 예외 매크로에서 변환](exceptions-converting-from-mfc-exception-macros.md)
 
-- [예외: MFC 매크로 및 C++ 예외 사용](exceptions-using-mfc-macros-and-cpp-exceptions.md)
+- [예외: MFC 매크로 및 c + + 예외 사용](exceptions-using-mfc-macros-and-cpp-exceptions.md)
 
 ## <a name="see-also"></a>참고 항목
 

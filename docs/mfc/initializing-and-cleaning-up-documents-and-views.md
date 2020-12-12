@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 문서 및 뷰 초기화 및 정리'
 title: 문서 및 뷰 초기화 및 정리
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - document objects [MFC], life cycle of
 - initializing views [MFC]
 ms.assetid: 95d6f09b-a047-4079-856a-ae7d0548e9d2
-ms.openlocfilehash: c5beed5618d4fa991160ad1688a5a686aeaa842f
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 023f81e46d67237d64836e843205c45558728b31
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626361"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290065"
 ---
 # <a name="initializing-and-cleaning-up-documents-and-views"></a>문서 및 뷰 초기화 및 정리
 

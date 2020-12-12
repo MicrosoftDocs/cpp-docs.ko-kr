@@ -1,4 +1,5 @@
 ---
+description: '예외: 예외에서 개체 해제에 대해 자세히 알아보세요.'
 title: '예외: 예외의 개체 해제'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - throwing exceptions [MFC], after destroying
 - exception handling [MFC], destroying objects
 ms.assetid: 3b14b4ee-e789-4ed2-b8e3-984950441d97
-ms.openlocfilehash: a02b71609ec19d6106153bf67e9d56b860cfdfff
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 47b10f3ecb96875ceee986eadda4595d2afbb77e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217937"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290559"
 ---
 # <a name="exceptions-freeing-objects-in-exceptions"></a>예외: 예외의 개체 해제
 
@@ -40,7 +41,7 @@ ms.locfileid: "87217937"
 
 위에서 작성 한 대로에서 `myPerson` 예외가 throw 되 면이 삭제 되지 않습니다 `SomeFunc` . 실행은 일반적인 함수 종료와 개체를 삭제 하는 코드를 무시 하 고 다음 외부 예외 처리기로 직접 이동 합니다. 예외가 함수를 떠날 때 개체에 대 한 포인터는 범위를 벗어납니다. 프로그램이 실행 되는 동안에는 개체가 차지 하는 메모리가 복구 되지 않습니다. 이는 메모리 누수입니다. 메모리 진단을 사용 하 여 검색할 수 있습니다.
 
-## <a name="handling-the-exception-locally"></a><a name="_core_handling_the_exception_locally"></a>로컬에서 예외 처리
+## <a name="handling-the-exception-locally"></a><a name="_core_handling_the_exception_locally"></a> 로컬에서 예외 처리
 
 **Try/catch** 패러다임은 메모리 누수를 방지 하 고 예외가 발생할 때 개체가 제거 되도록 하는 방어 프로그래밍 메서드를 제공 합니다. 예를 들어이 문서의 앞부분에 표시 된 예제를 다음과 같이 다시 작성할 수 있습니다.
 
@@ -48,7 +49,7 @@ ms.locfileid: "87217937"
 
 이 새 예제에서는 예외를 catch 하 고 로컬로 처리 하는 예외 처리기를 설정 합니다. 그런 다음 함수를 정상적으로 종료 하 고 개체를 소멸 시킵니다. 이 예제의 중요 한 측면은 예외를 catch 하는 컨텍스트가 **try/catch** 블록을 사용 하 여 설정 된다는 것입니다. 로컬 예외 프레임이 없으면 함수는 예외가 throw 되었음을 알 수 없으며 정상적으로 종료 하 고 개체를 삭제할 수 없습니다.
 
-## <a name="throwing-exceptions-after-destroying-objects"></a><a name="_core_throwing_exceptions_after_destroying_objects"></a>개체를 삭제 한 후 예외 throw
+## <a name="throwing-exceptions-after-destroying-objects"></a><a name="_core_throwing_exceptions_after_destroying_objects"></a> 개체를 삭제 한 후 예외 throw
 
 예외를 처리 하는 또 다른 방법은 다음 외부 예외 처리 컨텍스트에이를 전달 하는 것입니다. 블록에서 **`catch`** 로컬에 할당 된 개체를 정리 하 고 추가 처리를 위해 예외를 throw 할 수 있습니다.
 

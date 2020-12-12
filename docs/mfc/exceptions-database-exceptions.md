@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 예외: 데이터베이스 예외'
 title: '예외: 데이터베이스 예외'
 ms.date: 09/17/2019
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - databases [MFC], exception handling
 - error codes [MFC], database exception handling
 ms.assetid: 28daf260-f824-4be6-aecc-1f859e6dec26
-ms.openlocfilehash: aaed2a9f88c46a405b754b78242478f93cffda31
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3e45f887d51b4b81196cd08d11f426f4ee6d4481
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217963"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290650"
 ---
 # <a name="exceptions-database-exceptions"></a>예외: 데이터베이스 예외
 
@@ -26,7 +27,7 @@ ms.locfileid: "87217963"
 
 - [데이터베이스 예외 처리 예제](#_core_a_database_exception.2d.handling_example)
 
-## <a name="approaches-to-exception-handling"></a><a name="_core_approaches_to_exception_handling"></a>예외 처리 방법
+## <a name="approaches-to-exception-handling"></a><a name="_core_approaches_to_exception_handling"></a> 예외 처리 방법
 
 이 접근 방식은 DAO (사용 되지 않음) 또는 ODBC를 사용 하 여 작업 하는 경우와 동일 합니다.
 
@@ -36,7 +37,7 @@ ms.locfileid: "87217963"
 
 ### <a name="error-codes-used-for-odbc-exceptions"></a>ODBC 예외에 사용 되는 오류 코드
 
-**AFX_SQL_ERROR_XXX**형식의 이름이 있는 프레임 워크에서 정의 된 반환 코드 외에도 일부 [Cdbexceptions](reference/cdbexception-class.md) 는 [ODBC](../data/odbc/odbc-basics.md) 반환 코드를 기반으로 합니다. 이러한 예외에 대 한 반환 코드에는 **SQL_ERROR_XXX**형식의 이름이 있습니다.
+**AFX_SQL_ERROR_XXX** 형식의 이름이 있는 프레임 워크에서 정의 된 반환 코드 외에도 일부 [Cdbexceptions](reference/cdbexception-class.md) 는 [ODBC](../data/odbc/odbc-basics.md) 반환 코드를 기반으로 합니다. 이러한 예외에 대 한 반환 코드에는 **SQL_ERROR_XXX** 형식의 이름이 있습니다.
 
 데이터베이스 클래스에서 반환할 수 있는 프레임 워크 정의 및 ODBC 정의의 반환 코드는 클래스의 [m_nRetCode](reference/cdbexception-class.md#m_nretcode) 데이터 멤버 아래에 설명 되어 있습니다 `CDBException` . Odbc에서 정의한 반환 코드에 대 한 추가 정보는 [Odbc 프로그래머 참조](/sql/odbc/reference/odbc-programmer-s-reference)에서 사용할 수 있습니다.
 
@@ -46,13 +47,13 @@ DAO 예외의 경우 추가 정보를 일반적으로 사용할 수 있습니다
 
 - [m_pErrorInfo](reference/cdaoexception-class.md#m_perrorinfo) 에는 데이터베이스와 관련 된 DAO의 오류 개체 컬렉션에서 오류 정보를 캡슐화 하는 [CDaoErrorInfo](reference/cdaoerrorinfo-structure.md) 개체에 대 한 포인터가 포함 되어 있습니다.
 
-- [m_nAfxDaoError](reference/cdaoexception-class.md#m_nafxdaoerror) 에는 MFC DAO 클래스의 확장 된 오류 코드가 포함 되어 있습니다. **AFX_DAO_ERROR_XXX**형식의 이름을 가진 이러한 오류 코드는의 데이터 멤버 아래에 설명 되어 있습니다 `CDaoException` .
+- [m_nAfxDaoError](reference/cdaoexception-class.md#m_nafxdaoerror) 에는 MFC DAO 클래스의 확장 된 오류 코드가 포함 되어 있습니다. **AFX_DAO_ERROR_XXX** 형식의 이름을 가진 이러한 오류 코드는의 데이터 멤버 아래에 설명 되어 있습니다 `CDaoException` .
 
 - 해당 하는 경우 DAO **에서 OLE를** 포함 [m_scode](reference/cdaoexception-class.md#m_scode) 합니다. 그러나이 오류 코드로 작업 하는 것은 거의 필요 하지 않습니다. 일반적으로 다른 두 데이터 멤버에서 더 많은 정보를 사용할 수 있습니다. **값에 대 한 자세한 내용은** 데이터 멤버를 참조 하세요.
 
 DAO 오류, DAO 오류 개체 형식 및 DAO Errors 컬렉션에 대 한 추가 정보는 클래스 [CDaoException](reference/cdaoexception-class.md)에서 사용할 수 있습니다.
 
-## <a name="a-database-exception-handling-example"></a><a name="_core_a_database_exception.2d.handling_example"></a>데이터베이스 예외 처리 예제
+## <a name="a-database-exception-handling-example"></a><a name="_core_a_database_exception.2d.handling_example"></a> 데이터베이스 Exception-Handling 예제
 
 다음 예제에서는 연산자를 사용 하 여 힙에서 [CRecordset](reference/crecordset-class.md)에서 파생 된 개체를 생성 한 **`new`** 다음 레코드 집합 (ODBC 데이터 원본 용)을 엽니다. DAO 클래스에 대 한 유사한 예제는 아래의 "DAO 예외 예제"를 참조 하십시오.
 

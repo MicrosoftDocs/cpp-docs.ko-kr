@@ -1,4 +1,5 @@
 ---
+description: '예외: 예외 Catch 및 삭제에 대 한 자세한 정보'
 title: '예외: 예외 Catch 및 삭제'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - catch blocks [MFC], catching and deleting exceptions
 - execution [MFC], returns from within catch block
 ms.assetid: 7c233ff0-89de-4de0-a68a-9e9cdb164311
-ms.openlocfilehash: 5c1edd4c5d31d9a0e8e5270d074d25b5dd129a0f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 01f018694d211b4b60acc92c4121614d14769d6d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87184249"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290741"
 ---
 # <a name="exceptions-catching-and-deleting-exceptions"></a>예외: 예외 Catch 및 삭제
 

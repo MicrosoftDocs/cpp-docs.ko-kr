@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 예제: 메뉴 명령을 통해 대화 상자 표시'
 title: '예: 메뉴 명령을 통해 대화 상자 표시'
 ms.date: 09/07/2019
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - examples [MFC], dialog boxes
 - menu items [MFC], examples
 ms.assetid: e8692549-acd7-478f-9c5e-ba310ce8cccd
-ms.openlocfilehash: 1cada8124cd7ea71a24367626508782b522cc746
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: dcfa34eb05733d2f27176795a447e15949d6e274
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91506755"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290858"
 ---
 # <a name="example-displaying-a-dialog-box-via-a-menu-command"></a>예: 메뉴 명령을 통해 대화 상자 표시
 
@@ -44,7 +45,7 @@ ms.locfileid: "91506755"
 
 1. 대화 상자에 대 한 클래스를 추가 합니다. 자세한 내용은 [클래스 추가를](../ide/adding-a-class-visual-cpp.md) 참조 하세요.
 
-1. **클래스 뷰**에서 문서 클래스 (CDisplayDialogDoc)를 선택 합니다. **속성** 창에서 **이벤트** 단추를 클릭합니다. 메뉴 명령의 ID (ID_VIEW_TEST)를 두 번 클릭 합니다. 그런 다음 아래쪽 화살표를 클릭 하 고 ** \<Add> onviewtest**를 선택 합니다.
+1. **클래스 뷰** 에서 문서 클래스 (CDisplayDialogDoc)를 선택 합니다. **속성** 창에서 **이벤트** 단추를 클릭합니다. 메뉴 명령의 ID (ID_VIEW_TEST)를 두 번 클릭 합니다. 그런 다음 아래쪽 화살표를 클릭 하 고 **\<Add> onviewtest** 를 선택 합니다.
 
    MDI 응용 프로그램의 메인프레임에 메뉴 명령을 추가한 경우 응용 프로그램 클래스 (CDisplayDialogApp)를 대신 선택 합니다.
 

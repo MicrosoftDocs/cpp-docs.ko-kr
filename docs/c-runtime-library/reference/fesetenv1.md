@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: fesetenv'
 title: fesetenv
 ms.date: 04/05/2018
 api_name:
@@ -25,12 +26,12 @@ f1_keywords:
 helpviewer_keywords:
 - fesetenv function
 ms.assetid: ffc64fff-8ea7-4d59-9e04-ff96ef8cd012
-ms.openlocfilehash: 155b9f635f6e8c3dc5acb61126f41c49cd32601f
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 662634e467eb224af813f60ab4434d4857d21d50
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70941119"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289441"
 ---
 # <a name="fesetenv"></a>fesetenv
 
@@ -55,7 +56,7 @@ int fesetenv(
 
 ## <a name="remarks"></a>설명
 
-**Fesetenv** 함수는 *penv*가 가리키는 **fenv_t** 개체에 저장 된 값에서 현재 부동 소수점 환경을 설정 합니다. 부동 소수점 환경은 부동 소수점 계산에 영향을 미치는 상태 플래그 및 제어 모드의 집합입니다. 여기에는 부동 소수점 예외에 대한 상태 플래그와 반올림 모드가 포함됩니다.  *Penv* 가 **FE_DFL_ENV** 가 아니거나 유효한 **fenv_t** 개체를 가리키지 않는 경우 후속 동작이 정의 되지 않습니다.
+**Fesetenv** 함수는 *penv* 가 가리키는 **fenv_t** 개체에 저장 된 값에서 현재 부동 소수점 환경을 설정 합니다. 부동 소수점 환경은 부동 소수점 계산에 영향을 미치는 상태 플래그 및 제어 모드의 집합입니다. 여기에는 부동 소수점 예외에 대한 상태 플래그와 반올림 모드가 포함됩니다.  *Penv* 가 **FE_DFL_ENV** 되지 않았거나 유효한 **fenv_t** 개체를 가리키지 않는 경우 후속 동작이 정의 되지 않습니다.
 
 이 함수를 호출 하면 *penv* 개체에 있는 예외 상태 플래그가 설정 되지만 이러한 예외를 발생 시 키 지는 않습니다.
 
@@ -63,13 +64,13 @@ int fesetenv(
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|C 헤더|C++ 헤더|
+|함수|C 헤더|C++ 헤더|
 |--------------|--------------|------------------|
 |**fesetenv**|\<fenv.h>|\<cfenv>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [사전순 함수 참조](crt-alphabetical-function-reference.md)<br/>
 [fegetenv](fegetenv1.md)<br/>

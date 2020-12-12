@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: fgetc, fgetwc'
 title: fgetc, fgetwc
 ms.date: 4/2/2020
 api_name:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - reading characters from streams
 - fgetwc function
 ms.assetid: 13348b7b-dc86-421c-9d6c-611ca79c8338
-ms.openlocfilehash: 5f8d4b1fcdc2d4d4de712ee79742025db74b6452
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d9567c6d24fe0ae978a3680171167168061339f8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87189287"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289233"
 ---
 # <a name="fgetc-fgetwc"></a>fgetc, fgetwc
 
@@ -63,17 +64,17 @@ wint_t fgetwc(
 *스트림*<br/>
 **FILE** 구조체에 대한 포인터입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-**fgetc** 는로 읽은 문자를 반환 **`int`** 하거나 **EOF** 를 반환 하 여 오류 또는 파일의 끝을 표시 합니다. **fgetwc** 는 [wint_t](../../c-runtime-library/standard-types.md)로 반환 하거나, 오류 또는 파일의 끝을 나타내기 위해 **weof** 를 반환 하는 와이드 문자를 반환 합니다. 두 함수 모두에서 **feof** **ferror** 를 사용 하 여 오류와 파일 끝 조건을 구분 합니다. 읽기 오류가 발생하는 경우 스트림에 대한 오류 표시기가 설정됩니다. *Stream* 이 **NULL**인 경우 **Fgetc** 및 **fgetwc** 는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **errno** 를 **EINVAL** 로 설정 하 고 **EOF**를 반환 합니다.
+**fgetc** 는로 읽은 문자를 반환 **`int`** 하거나 **EOF** 를 반환 하 여 오류 또는 파일의 끝을 표시 합니다. **fgetwc** 는 [wint_t](../../c-runtime-library/standard-types.md)로 반환 하거나, 오류 또는 파일의 끝을 나타내기 위해 **weof** 를 반환 하는 와이드 문자를 반환 합니다. 두 함수 모두에서 **feof** **ferror** 를 사용 하 여 오류와 파일 끝 조건을 구분 합니다. 읽기 오류가 발생하는 경우 스트림에 대한 오류 표시기가 설정됩니다. *Stream* 이 **NULL** 인 경우 **Fgetc** 및 **fgetwc** 는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **errno** 를 **EINVAL** 로 설정 하 고 **EOF** 를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-이러한 각 함수는 *스트림과*연결 된 파일의 현재 위치에서 단일 문자를 읽습니다. 그러고 나서 다음 문자를 가리킬 연결된 파일 포인터(정의된 경우)를 늘립니다. 스트림이 파일 끝에 있는 경우 스트림에 대한 파일 끝 표시기가 설정됩니다.
+이러한 각 함수는 *스트림과* 연결 된 파일의 현재 위치에서 단일 문자를 읽습니다. 그러고 나서 다음 문자를 가리킬 연결된 파일 포인터(정의된 경우)를 늘립니다. 스트림이 파일 끝에 있는 경우 스트림에 대한 파일 끝 표시기가 설정됩니다.
 
-**fgetc** 는 **getc**와 동일 하지만 함수 및 매크로가 아닌 함수로만 구현 됩니다.
+**fgetc** 는 **getc** 와 동일 하지만 함수 및 매크로가 아닌 함수로만 구현 됩니다.
 
-**fgetwc** 는 **fgetc**의 와이드 문자 버전입니다. *스트림을* 텍스트 모드에서 열지 아니면 이진 모드로 열지에 따라 멀티 바이트 문자 또는 와이드 문자로 **c** 를 읽습니다.
+**fgetwc** 는 **fgetc** 의 와이드 문자 버전입니다. *스트림을* 텍스트 모드에서 열지 아니면 이진 모드로 열지에 따라 멀티 바이트 문자 또는 와이드 문자로 **c** 를 읽습니다.
 
 **_nolock** 접미사가 있는 버전은 다른 스레드에 의한 간섭에서 보호되지 않는 점을 제외하면 동일합니다.
 

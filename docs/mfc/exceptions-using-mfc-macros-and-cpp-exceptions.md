@@ -1,4 +1,5 @@
 ---
+description: '예외: MFC 매크로 및 c + + 예외 사용에 대 한 자세한 정보'
 title: '예외: MFC 매크로 및 C++ 예외 사용'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - heap corruption [MFC]
 - nested catch blocks [MFC]
 ms.assetid: d664a83d-879b-44d4-bdf0-029f0aca69e9
-ms.openlocfilehash: 9e97eb545dedd3ac38dd93471f82aecc382717ae
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4f46cdff236f37ccdccde8215c7937300014aca6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223176"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290451"
 ---
 # <a name="exceptions-using-mfc-macros-and-c-exceptions"></a>예외: MFC 매크로 및 C++ 예외 사용
 
@@ -33,7 +34,7 @@ ms.locfileid: "87223176"
 
 - [Catch 블록 내의 Try 블록](#_core_try_blocks_inside_catch_blocks)
 
-## <a name="mixing-exception-keywords-and-macros"></a><a name="_core_mixing_exception_keywords_and_macros"></a>예외 키워드 및 매크로 혼합
+## <a name="mixing-exception-keywords-and-macros"></a><a name="_core_mixing_exception_keywords_and_macros"></a> 예외 키워드 및 매크로 혼합
 
 동일한 프로그램에서 MFC 예외 매크로 및 c + + 예외 키워드를 혼합할 수 있습니다. 그러나 매크로는 범위를 벗어날 때 예외 개체를 자동으로 삭제 하는 반면 예외 처리 키워드를 사용 하는 코드는 예외를 제외 하 고 동일한 블록에서 c + + 예외 키워드와 함께 MFC 매크로를 혼합할 수 없습니다. 자세한 내용은 예외 [: 예외 catch 및 삭제](exceptions-catching-and-deleting-exceptions.md)문서를 참조 하세요.
 
@@ -47,7 +48,7 @@ ms.locfileid: "87223176"
 
 [!code-cpp[NVC_MFCExceptions#11](codesnippet/cpp/exceptions-using-mfc-macros-and-cpp-exceptions_2.cpp)]
 
-## <a name="try-blocks-inside-catch-blocks"></a><a name="_core_try_blocks_inside_catch_blocks"></a>Catch 블록 내의 Try 블록
+## <a name="try-blocks-inside-catch-blocks"></a><a name="_core_try_blocks_inside_catch_blocks"></a> Catch 블록 내의 Try 블록
 
 **`try`** **CATCH** 블록 내에 있는 블록 내에서 현재 예외를 다시 throw 할 수 없습니다. 다음 예제는 올바르지 않습니다.
 

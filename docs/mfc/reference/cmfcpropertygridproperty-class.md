@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CMFCPropertyGridProperty 클래스'
 title: CMFCPropertyGridProperty 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -166,12 +167,12 @@ helpviewer_keywords:
 - CMFCPropertyGridProperty [MFC], m_strFormatLong
 - CMFCPropertyGridProperty [MFC], m_strFormatShort
 ms.assetid: 36f3fabe-0efe-468b-8a0b-5a7956db38a2
-ms.openlocfilehash: cabff68a356bfa2d91d7c8db9c806e8a9f013705
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 7893d58933f9f13744a42b14fd6fa7c47bec56c2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562664"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289909"
 ---
 # <a name="cmfcpropertygridproperty-class"></a>CMFCPropertyGridProperty 클래스
 
@@ -189,14 +190,14 @@ class CMFCPropertyGridProperty : public CObject
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CMFCPropertyGridProperty:: CMFCPropertyGridProperty](#cmfcpropertygridproperty)|`CMFCPropertyGridProperty` 개체를 생성합니다.|
 |`CMFCPropertyGridProperty::~CMFCPropertyGridProperty`|소멸자|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CMFCPropertyGridProperty:: AddOption](#addoption)|속성 목록 컨트롤에 새 목록 항목을 추가 합니다.|
 |[CMFCPropertyGridProperty:: AddSubItem 항목](#addsubitem)|자식 항목을 속성에 추가 합니다.|
@@ -269,7 +270,7 @@ class CMFCPropertyGridProperty : public CObject
 
 ### <a name="protected-methods"></a>Protected 메서드
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |[CMFCPropertyGridProperty:: CreateCombo](#createcombo)|속성에 콤보 상자를 추가 하기 위해 프레임 워크에서 호출 됩니다.|
 |[CMFCPropertyGridProperty:: HasButton](#hasbutton)|속성이 단추를 포함 하는지 여부를 나타냅니다.|
@@ -282,7 +283,7 @@ class CMFCPropertyGridProperty : public CObject
 
 ### <a name="data-members"></a>데이터 멤버
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |[CMFCPropertyGridProperty::m_strFormatDouble](#m_strformatdouble)|Double 형식의 값에 대 한 형식 문자열입니다.|
 |[CMFCPropertyGridProperty::m_strFormatFloat](#m_strformatfloat)|Float 형식의 값에 대 한 형식 문자열입니다.|
@@ -329,7 +330,7 @@ BOOL AddOption(
 *bInsertUnique*<br/>
 진행 목록 항목이 아직 없는 경우에만 목록 항목을 추가 하려면 TRUE로 설정 합니다. 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 TRUE로 설정 하면 목록 항목이 추가 됩니다. 그렇지 않으면 FALSE입니다 .이는 *Binsertunique* 매개 변수가 TRUE이 고 *lpszOption* 매개 변수로 지정 된 목록 항목이 이미 존재 하기 때문에 목록 항목이 추가 되지 않았음을 의미 합니다.
 
@@ -348,7 +349,7 @@ BOOL AddSubItem(CMFCPropertyGridProperty* pProp);
 *pProp*<br/>
 진행 추가할 속성에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 지정 된 속성이 자식 속성으로 성공적으로 추가 되 면 TRUE입니다. 속성이 이미 부모 속성에서 발생 하므로 속성을 추가 하지 않으면 FALSE입니다.
 
@@ -394,7 +395,7 @@ virtual void AdjustInPlaceEditRect(
 
 ### <a name="remarks"></a>설명
 
-속성의 값 영역은 텍스트 상자와 스핀 단추 컨트롤과 같은 *옵션 단추로*구성 됩니다. 이 메서드는 텍스트 상자와 옵션 단추의 크기를 계산한 다음 지정 된 매개 변수에서 해당 값을 반환 합니다.
+속성의 값 영역은 텍스트 상자와 스핀 단추 컨트롤과 같은 *옵션 단추로* 구성 됩니다. 이 메서드는 텍스트 상자와 옵션 단추의 크기를 계산한 다음 지정 된 매개 변수에서 해당 값을 반환 합니다.
 
 ## <a name="cmfcpropertygridpropertyallowedit"></a><a name="allowedit"></a> CMFCPropertyGridProperty:: AllowEdit
 
@@ -480,7 +481,7 @@ virtual CComboBox* CreateCombo(
 *rect*<br/>
 진행 콤보 상자의 경계 사각형입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 새 [Ccombobox](../../mfc/reference/ccombobox-class.md) 개체에 대 한 포인터입니다.
 
@@ -504,15 +505,15 @@ virtual CWnd* CreateInPlaceEdit(
 *bDefaultFormat*<br/>
 진행 기본 속성 형식을 사용 하 여 편집 가능한 컨트롤의 텍스트를 설정 하려면 TRUE로 설정 합니다. 그렇지 않으면 FALSE입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하는 경우 편집 가능한 컨트롤에 대 한 포인터입니다. 그렇지 않으면 NULL입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 [Cmfcpropertygridproperty](../../mfc/reference/cmfcpropertygridproperty-class.md) 클래스 생성자에 지정 된 *varValue*, *lpszEditMask*, *lpszEditTemplate*및 *lpszValidChars* 매개 변수의 값을 사용 합니다. 기본적으로이 메서드는 *varValue* variant 형식을 지원 합니다. 여기에는 VT_BSTR, VT_R4, VT_R8, VT_UI1, VT_I2, VT_INT, VT_UINT, VT_I4, VT_UI2, VT_UI4, VT_BOOL가 포함 됩니다.
+이 메서드는 [Cmfcpropertygridproperty](../../mfc/reference/cmfcpropertygridproperty-class.md) 클래스 생성자에 지정 된 *varValue*, *lpszEditMask*, *lpszEditTemplate* 및 *lpszValidChars* 매개 변수의 값을 사용 합니다. 기본적으로이 메서드는 *varValue* variant 형식을 지원 합니다. 여기에는 VT_BSTR, VT_R4, VT_R8, VT_UI1, VT_I2, VT_INT, VT_UINT, VT_I4, VT_UI2, VT_UI4, VT_BOOL가 포함 됩니다.
 
-하나 이상의 *lpszEditMask*, *lpszEditTemplate*또는 *lpszValidChars* 매개 변수가 지정 된 경우이 메서드는 [있도록 cmfcmaskededit](../../mfc/reference/cmfcmaskededit-class.md) 컨트롤을 만듭니다. 그렇지 않으면 [CEdit](../../mfc/reference/cedit-class.md) 컨트롤을 만듭니다.
+하나 이상의 *lpszEditMask*, *lpszEditTemplate* 또는 *lpszValidChars* 매개 변수가 지정 된 경우이 메서드는 [있도록 cmfcmaskededit](../../mfc/reference/cmfcmaskededit-class.md) 컨트롤을 만듭니다. 그렇지 않으면 [CEdit](../../mfc/reference/cedit-class.md) 컨트롤을 만듭니다.
 
 ## <a name="cmfcpropertygridpropertycreatespincontrol"></a><a name="createspincontrol"></a> CMFCPropertyGridProperty:: CreateSpinControl
 
@@ -527,7 +528,7 @@ virtual CSpinButtonCtrl* CreateSpinControl(CRect rectSpin);
 *rectSpin*<br/>
 진행 편집 가능한 스핀 단추 컨트롤이 만들어지는 위치를 정의 하는 사각형입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 [CSpinButtonCtrl](../../mfc/reference/cspinbuttonctrl-class.md) 개체에 대 한 포인터로 캐스팅 되는 새 [CMFCSpinButtonCtrl](../../mfc/reference/cmfcspinbuttonctrl-class.md) 개체에 대 한 포인터입니다.
 
@@ -601,7 +602,7 @@ void Expand(BOOL bExpand=TRUE);
 virtual CString FormatProperty();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 속성 값의 텍스트 표현입니다.
 
@@ -617,7 +618,7 @@ virtual CString FormatProperty();
 DWORD_PTR GetData() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 DWORD 값입니다.
 
@@ -633,7 +634,7 @@ DWORD 값입니다.
 const CString& GetDescription() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 속성 설명을 포함 하는 텍스트 문자열입니다.
 
@@ -654,7 +655,7 @@ int GetExpandedSubItems(BOOL bIncludeHidden=TRUE) const;
 *bIncludeHidden*\
 진행 개수에 숨겨진 하위 항목을 포함 하려면 TRUE이 고, 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 확장 된 하위 항목 수입니다.
 
@@ -668,7 +669,7 @@ int GetExpandedSubItems(BOOL bIncludeHidden=TRUE) const;
 int GetHierarchyLevel() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 속성의 계층 수준입니다.
 
@@ -682,7 +683,7 @@ int GetHierarchyLevel() const;
 LPCTSTR GetName() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 속성의 이름을 포함 하는 문자열에 대 한 포인터입니다.
 
@@ -696,7 +697,7 @@ LPCTSTR GetName() const;
 virtual CString GetNameTooltip();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 속성 이름을 포함하는 문자열입니다. 기본적으로 반환 값은 빈 문자열입니다.
 
@@ -715,7 +716,7 @@ LPCTSTR GetOption(int nIndex) const;
 *nIndex*<br/>
 검색할 속성 목록 항목 (옵션)의 인덱스 (0부터 시작)입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 옵션 텍스트를 포함 하는 문자열에 대 한 포인터입니다.
 
@@ -729,7 +730,7 @@ LPCTSTR GetOption(int nIndex) const;
 int GetOptionCount() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 속성 컨트롤에 포함 된 속성 목록 항목 (옵션)의 수입니다.
 
@@ -745,7 +746,7 @@ int GetOptionCount() const;
 const COleVariant& GetOriginalValue() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 속성의 원래 값입니다.
 
@@ -763,7 +764,7 @@ const COleVariant& GetOriginalValue() const;
 CMFCPropertyGridProperty* GetParent() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 부모 속성 개체에 대 한 포인터 이거나 최상위 속성의 경우 NULL입니다.
 
@@ -777,7 +778,7 @@ CMFCPropertyGridProperty* GetParent() const;
 CRect GetRect() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 경계 사각형을 설명 하는 [Crect](../../atl-mfc-shared/reference/crect-class.md) 개체입니다.
 
@@ -796,7 +797,7 @@ CMFCPropertyGridProperty* GetSubItem(int nIndex) const;
 *nIndex*<br/>
 진행 검색할 속성의 인덱스 (0부터 시작)입니다. 이 매개 변수는 0 보다 작거나 하위 속성의 수보다 크거나 같은 경우 유효 하지 않습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 속성의 자식 항목인 속성 개체에 대 한 포인터입니다.
 
@@ -814,7 +815,7 @@ CMFCPropertyGridProperty* GetSubItem(int nIndex) const;
 int GetSubItemsCount() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 자식 항목 수입니다.
 
@@ -828,7 +829,7 @@ int GetSubItemsCount() const;
 virtual const _variant_t& GetValue() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 속성 값을 포함 하는 variant입니다.
 
@@ -842,7 +843,7 @@ virtual const _variant_t& GetValue() const;
 virtual CString GetValueTooltip();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `CString`속성 값의 텍스트 표현을 포함 하는 개체입니다. 기본적으로이 값은 빈 문자열입니다.
 
@@ -856,7 +857,7 @@ virtual CString GetValueTooltip();
 virtual BOOL HasButton() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 속성에 단추 (또는 속성 목록)가 포함 된 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
@@ -891,7 +892,7 @@ CMFCPropertyGridProperty* HitTest(
 *bPropsOnly*<br/>
 진행 속성 컨트롤의 모든 영역을 테스트 하려면 TRUE로 설정 합니다. 설명 영역만 테스트 하려면 FALSE로 설정 합니다. 기본값은 FALSE입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 속성 개체 또는 NULL에 대 한 포인터입니다.
 
@@ -901,7 +902,7 @@ CMFCPropertyGridProperty* HitTest(
 
 다음 표에서는 *Pnarea* 매개 변수로 반환 될 수 있는 값을 나열 합니다.
 
-|영역|Description|
+|영역|설명|
 |----------|-----------------|
 |`ClickArea::ClickExpandBox`|더하기 기호 (+)로 지정 된 확장 상자 컨트롤입니다.|
 |`ClickArea::ClickName`|속성 이름입니다.|
@@ -925,7 +926,7 @@ void Init();
 BOOL IsAllowEdit() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 속성을 편집할 수 있으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
@@ -939,7 +940,7 @@ BOOL IsAllowEdit() const;
 BOOL IsEnabled() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 속성이 설정 되어 있으면 TRUE이 고, 그렇지 않으면입니다. 속성을 사용할 수 없으면 FALSE입니다.
 
@@ -955,7 +956,7 @@ BOOL IsEnabled() const;
 BOOL IsExpanded() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 속성이 확장 되었으면 TRUE이 고, 그렇지 않으면입니다. 속성이 축소 되 면 FALSE입니다.
 
@@ -969,7 +970,7 @@ BOOL IsExpanded() const;
 BOOL IsGroup() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 속성 개체가 그룹을 나타내면 TRUE이 고, 그렇지 않으면입니다. 속성이 값을 나타내면 FALSE입니다.
 
@@ -985,7 +986,7 @@ BOOL IsGroup() const;
 BOOL IsInPlaceEditing() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 속성을 편집할 수 있으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
@@ -999,7 +1000,7 @@ BOOL IsInPlaceEditing() const;
 BOOL IsModified() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 속성이 수정 되었으면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -1013,7 +1014,7 @@ BOOL IsModified() const;
 BOOL IsParentExpanded() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 속성의 부모가 모두 확장 되 면 TRUE이 고, 그렇지 않으면입니다. 부모 속성이 축소 된 경우 FALSE입니다.
 
@@ -1027,7 +1028,7 @@ BOOL IsParentExpanded() const;
 virtual BOOL IsSelected() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 속성이 선택 되어 있으면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -1046,7 +1047,7 @@ BOOL IsSubItem(CMFCPropertyGridProperty* pProp) const;
 *pProp*<br/>
 진행 속성에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 지정 된 속성이 현재 속성의 하위 항목인 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
@@ -1058,7 +1059,7 @@ BOOL IsSubItem(CMFCPropertyGridProperty* pProp) const;
 virtual BOOL IsValueChanged() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 속성의 값이 변경 되었으면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -1072,7 +1073,7 @@ virtual BOOL IsValueChanged() const;
 BOOL IsVisible() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 속성이 표시 되 면 TRUE이 고, 그렇지 않으면입니다. 그렇지 허위.
 
@@ -1170,7 +1171,7 @@ virtual BOOL OnClickValue(
 *까지*<br/>
 진행 클라이언트 좌표로 나타낸 점입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 지정 된 마우스 메시지를 처리 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -1206,7 +1207,7 @@ virtual HBRUSH OnCtlColor(
 *nCtlColor*<br/>
 진행 이 매개 변수는 사용 되지 않습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하는 경우 브러시에 대 한 핸들입니다. 그렇지 않으면 NULL입니다.
 
@@ -1225,7 +1226,7 @@ virtual BOOL OnDblClk(CPoint point);
 *까지*<br/>
 진행 클라이언트 좌표로 나타낸 점입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -1360,7 +1361,7 @@ virtual BOOL OnEdit(LPPOINT lptClick);
 *lptClick*<br/>
 진행 이 매개 변수는 사용 되지 않습니다. 요소에 대 한 포인터 (클라이언트 좌표)입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 편집 작업이 성공적으로 시작 되 면 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
@@ -1376,7 +1377,7 @@ virtual BOOL OnEdit(LPPOINT lptClick);
 virtual BOOL OnEndEdit();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드는 항상 TRUE를 반환 합니다.
 
@@ -1397,7 +1398,7 @@ virtual BOOL OnKillFocus(CWnd*);
 *CWnd*\
 진행 (사용 되지 않음) 창에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드는 항상 TRUE를 반환 합니다.
 
@@ -1492,7 +1493,7 @@ virtual void OnSelectCombo();
 virtual BOOL OnSetCursor() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 속성이 variant 형식 또는 값 목록이 면 TRUE이 고,이 메서드는 삽입 지점 (I-보) 마우스 커서를 성공적으로 로드 합니다. 그렇지 않으면 FALSE입니다.
 
@@ -1522,7 +1523,7 @@ virtual void OnSetSelection CMFCPropertyGridProperty*);
 virtual BOOL OnUpdateValue();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -1541,7 +1542,7 @@ virtual BOOL PushChar(UINT nChar);
 *nChar*<br/>
 진행 문자입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 편집 작업이 계속 되 면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -1589,7 +1590,7 @@ BOOL RemoveSubItem(
 *bDelete*<br/>
 진행 *Pprop* 매개 변수로 지정 된 속성 개체를 삭제 하려면 TRUE로 설정 합니다. 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 

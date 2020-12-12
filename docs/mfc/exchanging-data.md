@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 데이터 교환'
 title: 데이터 교환
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - exchanging data with property sheets [MFC]
 - DDX (dialog data exchange) [MFC], property sheets
 ms.assetid: 689f02d0-51a9-455b-8ffb-5b44f0aefa28
-ms.openlocfilehash: 5be82567e02fd5e935d42f9eff5bdee20fa0d5a8
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 9163434d51e3fa248f858434aece8f420e63197d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622699"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290450"
 ---
 # <a name="exchanging-data"></a>데이터 교환
 

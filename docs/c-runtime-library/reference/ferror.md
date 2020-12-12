@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: ferror'
 title: ferror
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - streams, testing for errors
 - errors [C++], testing for stream
 ms.assetid: 528a34bc-f2aa-4c3f-b89a-5b148e6864f7
-ms.openlocfilehash: 8a5e0bfac2069ed016253de4276e772ea7912605
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: cc4034b1099bb4deed55f363b4a024371ad84e48
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920146"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289467"
 ---
 # <a name="ferror"></a>ferror
 
@@ -52,21 +53,21 @@ int ferror(
 *스트림*<br/>
 **FILE** 구조체에 대한 포인터입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-*스트림에서*오류가 발생 하지 않은 경우 **ferror** 는 0을 반환 합니다. 그렇지 않으면 0이 아닌 값을 반환합니다. Stream이 **NULL**인 경우 **Ferror** 는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **errno** 를 **EINVAL** 로 설정 하 고 0을 반환 합니다.
+*스트림에서* 오류가 발생 하지 않은 경우 **ferror** 는 0을 반환 합니다. 그렇지 않으면 0이 아닌 값을 반환합니다. Stream이 **NULL** 인 경우 **Ferror** 는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **errno** 를 **EINVAL** 로 설정 하 고 0을 반환 합니다.
 
 이러한 오류 코드 및 기타 오류 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-**Ferror** 루틴 (함수와 매크로 모두로 구현 됨)은 *스트림과*연결 된 파일에 대 한 읽기 또는 쓰기 오류를 테스트 합니다. 오류가 발생 한 경우 스트림에 대 한 오류 표시기는 스트림이 닫히거나 되감을 때까지 또는 **clearerr** 이 호출 될 때까지 설정 된 상태로 유지 됩니다.
+**Ferror** 루틴 (함수와 매크로 모두로 구현 됨)은 *스트림과* 연결 된 파일에 대 한 읽기 또는 쓰기 오류를 테스트 합니다. 오류가 발생 한 경우 스트림에 대 한 오류 표시기는 스트림이 닫히거나 되감을 때까지 또는 **clearerr** 이 호출 될 때까지 설정 된 상태로 유지 됩니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|필수 헤더|
+|함수|필수 헤더|
 |--------------|---------------------|
 |**ferror**|\<stdio.h>|
 
@@ -76,7 +77,7 @@ int ferror(
 
 [feof](feof.md)의 예제를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [오류 처리](../../c-runtime-library/error-handling-crt.md)<br/>
 [스트림 I/O](../../c-runtime-library/stream-i-o.md)<br/>

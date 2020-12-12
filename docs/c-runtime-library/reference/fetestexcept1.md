@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: fetestexcept'
 title: fetestexcept
 ms.date: 04/05/2018
 api_name:
@@ -25,12 +26,12 @@ f1_keywords:
 helpviewer_keywords:
 - fetestexept function
 ms.assetid: ca4dc43f-5573-440d-bc19-ead7571b13dc
-ms.openlocfilehash: e70ae1b74420b8186cccd8fc8a817423df618adf
-ms.sourcegitcommit: ba4180a2d79d7e391f2f705797505d4aedbc2a5e
+ms.openlocfilehash: 8a62ae33f2965916bd16e2e854555bf22d87a0cd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76972156"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289389"
 ---
 # <a name="fetestexcept"></a>fetestexcept
 
@@ -46,16 +47,16 @@ int fetestexcept(
 
 ### <a name="parameters"></a>매개 변수
 
-*excepts*<br/>
+*제외한*<br/>
 테스트할 부동 소수점 상태 플래그의 비트 OR입니다.
 
 ## <a name="return-value"></a>반환 값
 
 성공할 경우 현재 설정된 예외 상태 플래그에 해당하는 부동 소수점 예외 매크로의 비트 OR가 포함된 비트 마스크를 반환합니다. 예외가 설정되지 않은 경우 0을 반환합니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
-fetestexcept 함수를 사용하여 부동 소수점 작업을 통해 어떤 예외가 발생했는지 확인합니다. *제외한* 매개 변수를 사용 하 여 테스트할 예외 상태 플래그를 지정 합니다. **Fetestexcept** 함수는 *제외한* 의 \<fenv >에 정의 된 다음 예외 매크로와 반환 값을 사용 합니다.
+fetestexcept 함수를 사용하여 부동 소수점 작업을 통해 어떤 예외가 발생했는지 확인합니다. *제외한* 매개 변수를 사용 하 여 테스트할 예외 상태 플래그를 지정 합니다. **Fetestexcept** 함수는 \<fenv.h> *제외한* 및 반환 값에 정의 된 다음 예외 매크로를 사용 합니다.
 
 |예외 매크로|설명|
 |---------------------|-----------------|
@@ -72,13 +73,13 @@ fetestexcept 함수를 사용하여 부동 소수점 작업을 통해 어떤 예
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|C 헤더|C++ 헤더|
+|함수|C 헤더|C++ 헤더|
 |--------------|--------------|------------------|
 |**fetestexcept**|\<fenv.h>|\<cfenv>|
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [사전순 함수 참조](crt-alphabetical-function-reference.md)<br/>
 [feclearexcept](feclearexcept1.md)<br/>

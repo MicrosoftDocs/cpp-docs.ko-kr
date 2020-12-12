@@ -1,27 +1,28 @@
 ---
+description: '자세히 알아보기: 목록 컨트롤의 작업 영역 구현'
 title: 리스트 컨트롤의 작업 영역 구현
 ms.date: 11/04/2016
 helpviewer_keywords:
 - list controls [MFC], working areas
 - working areas in list control [MFC]
 ms.assetid: fbbb356b-3359-4348-8603-f1cb114cadde
-ms.openlocfilehash: abbf9dd823e13fab252b7af8f32338b0d801079b
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 04eb935531dff0ac1ee240dec8690bd7ce1378a2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626383"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290078"
 ---
 # <a name="implementing-working-areas-in-list-controls"></a>리스트 컨트롤의 작업 영역 구현
 
-기본적으로 목록 컨트롤은 모든 항목을 표준 그리드 방식으로 정렬 합니다. 그러나 다른 방법으로 목록 항목을 사각형 그룹으로 정렬 하는 작업 영역을 지원 합니다. 작업 영역을 구현 하는 목록 컨트롤의 이미지는 Windows SDK에서 목록 뷰 컨트롤 사용을 참조 하세요.
+기본적으로 목록 컨트롤은 모든 항목을 표준 그리드 방식으로 정렬 합니다. 그러나 다른 방법으로 목록 항목을 사각형 그룹으로 정렬 하는 작업 영역을 지원 합니다. 작업 영역을 구현 하는 목록 컨트롤의 이미지는 Windows SDK에서 List-View 컨트롤 사용을 참조 하세요.
 
 > [!NOTE]
 > 작업 영역은 목록 컨트롤이 아이콘 또는 작은 아이콘 모드일 때만 표시 됩니다. 그러나 보기가 보고서 또는 목록 모드로 전환 된 경우에는 현재 작업 영역이 유지 됩니다.
 
 작업 영역을 사용 하 여 빈 테두리 (항목의 왼쪽, 위쪽 및/또는 오른쪽)를 표시 하거나, 일반적으로가 아닌 경우 가로 스크롤 막대가 표시 되도록 할 수 있습니다. 또 다른 일반적인 사용법은 항목을 이동 하거나 삭제할 수 있는 여러 작업 영역을 만드는 것입니다. 이 방법을 사용 하면 의미가 다른 단일 보기에서 영역을 만들 수 있습니다. 그러면 사용자가 항목을 다른 영역에 배치 하 여 분류할 수 있습니다. 이에 대 한 예는 읽기/쓰기 파일의 영역과 읽기 전용 파일의 다른 영역이 있는 파일 시스템의 뷰입니다. 파일 항목이 읽기 전용 영역으로 이동 된 경우 자동으로 읽기 전용이 됩니다. 읽기 전용 영역에서 읽기/쓰기 영역으로 파일을 이동 하면 파일 읽기/쓰기가 가능 합니다.
 
-`CListCtrl`는 목록 컨트롤에서 작업 영역을 만들고 관리 하기 위한 여러 멤버 함수를 제공 합니다. [Get작업 영역](reference/clistctrl-class.md#getworkareas) 및 [set작업 영역](reference/clistctrl-class.md#setworkareas) `CRect` `RECT` 에서는 목록 컨트롤에 대해 현재 구현 된 작업 영역을 저장 하는 개체 (또는 구조체)의 배열을 검색 하 고 설정 합니다. 또한 [Getnumberof작업 영역](reference/clistctrl-class.md#getnumberofworkareas) 에서는 목록 컨트롤에 대 한 현재 작업 영역 수를 검색 합니다 (기본적으로 0).
+`CListCtrl` 는 목록 컨트롤에서 작업 영역을 만들고 관리 하기 위한 여러 멤버 함수를 제공 합니다. [Get작업 영역](reference/clistctrl-class.md#getworkareas) 및 [set작업 영역](reference/clistctrl-class.md#setworkareas) `CRect` `RECT` 에서는 목록 컨트롤에 대해 현재 구현 된 작업 영역을 저장 하는 개체 (또는 구조체)의 배열을 검색 하 고 설정 합니다. 또한 [Getnumberof작업 영역](reference/clistctrl-class.md#getnumberofworkareas) 에서는 목록 컨트롤에 대 한 현재 작업 영역 수를 검색 합니다 (기본적으로 0).
 
 ## <a name="items-and-working-areas"></a>항목 및 작업 영역
 

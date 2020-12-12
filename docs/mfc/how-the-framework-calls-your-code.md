@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 프레임 워크에서 코드를 호출 하는 방법'
 title: 프레임워크가 코드를 호출하는 방법
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - application-specific events [MFC]
 - command routing [MFC], MFC
 ms.assetid: 39e68189-a580-40d0-9e35-bf5cd24a8ecf
-ms.openlocfilehash: 318ca9558d705ca483d41867a1fe2ad46c36666f
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: eebc431d8ba4d0edf7eddfe113d6f6559087be70
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622600"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290377"
 ---
 # <a name="how-the-framework-calls-your-code"></a>프레임워크가 코드를 호출하는 방법
 

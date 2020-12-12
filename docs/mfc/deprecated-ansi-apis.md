@@ -1,15 +1,16 @@
 ---
+description: '자세히 알아보기: 사용 되지 않는 ANSI Api'
 title: 사용되지 않는 ANSI API
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC, ANSI deprecated methods
 ms.assetid: c7c5a6fd-95e4-4bee-b3d5-d3826c30947d
-ms.openlocfilehash: bbcae085b76e2dbce79265c0695c2b4e933553e2
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: b709e67a032a25335fe6d05b3662db264232193c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616994"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290988"
 ---
 # <a name="deprecated-ansi-apis"></a>사용되지 않는 ANSI API
 

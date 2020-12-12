@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CMFCPropertyGridToolTipCtrl 클래스'
 title: CMFCPropertyGridToolTipCtrl 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - CMFCPropertyGridToolTipCtrl [MFC], SetTextMargin
 - CMFCPropertyGridToolTipCtrl [MFC], Track
 ms.assetid: 84b436e5-6695-4da0-9569-1a875e087711
-ms.openlocfilehash: 82d5f021204628121be242845583797348d02120
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5e560d09756be99c00257c351b58223b37a6b5da
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840754"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289883"
 ---
 # <a name="cmfcpropertygridtooltipctrl-class"></a>CMFCPropertyGridToolTipCtrl 클래스
 
@@ -175,7 +176,7 @@ void Track(
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 *rect*에 의해 지정 된 위치와 크기에 대 한 도구 설명 컨트롤을 표시 합니다. 이 메서드가 마지막으로 호출 된 이후 위치, 크기 및 텍스트가 변경 되지 않은 경우이 메서드는 영향을 주지 않습니다.
+이 메서드는 *rect* 에 의해 지정 된 위치와 크기에 대 한 도구 설명 컨트롤을 표시 합니다. 이 메서드가 마지막으로 호출 된 이후 위치, 크기 및 텍스트가 변경 되지 않은 경우이 메서드는 영향을 주지 않습니다.
 
 ## <a name="see-also"></a>참고 항목
 

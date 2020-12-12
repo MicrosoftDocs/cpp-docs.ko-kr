@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Cmfc리본 표시줄 클래스'
 title: Cmfc리본 표시줄 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -188,12 +189,12 @@ helpviewer_keywords:
 - CMFCRibbonBar [MFC], ToggleMimimizeState
 - CMFCRibbonBar [MFC], TranslateChar
 ms.assetid: a65d06fa-1a28-4cc0-8971-bc9d7c9198fe
-ms.openlocfilehash: 26f130206a84c81120dce090ce65971f01a2dade
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 3a572a3615703abfda99b5ff61796175adfa4484
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836649"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289714"
 ---
 # <a name="cmfcribbonbar-class"></a>Cmfc리본 표시줄 클래스
 
@@ -975,7 +976,7 @@ int GetCategoryIndex(CMFCRibbonCategory* pCategory) const;
 
 ### <a name="return-value"></a>반환 값
 
-*Pcategory*로 지정 된 리본 범주의 인덱스 (0부터 시작)입니다. 리본 범주를 찾을 수 없으면-1입니다.
+*Pcategory* 로 지정 된 리본 범주의 인덱스 (0부터 시작)입니다. 리본 범주를 찾을 수 없으면-1입니다.
 
 ## <a name="cmfcribbonbargetcontextname"></a><a name="getcontextname"></a> Cmfc리본 표시줄:: GetContextName
 
@@ -1896,7 +1897,7 @@ void SetQuickAccessDefaultState(const CMFCRibbonQuickAccessToolBarDefaultState& 
 
 ### <a name="parameters"></a>매개 변수
 
-*상태*<br/>
+*state*<br/>
 진행 빠른 실행 도구 모음 기본 상태입니다.
 
 ### <a name="remarks"></a>설명
@@ -2075,7 +2076,7 @@ virtual BOOL LoadFromResource(
 리본 표시줄 정보를 사용 하 여 XML 문자열의 리소스 ID를 지정 합니다.
 
 *lpszResType*<br/>
-*UiXMLResID*에 있는 리소스의 유형을 지정 합니다.
+*UiXMLResID* 에 있는 리소스의 유형을 지정 합니다.
 
 *hInstance*<br/>
 실행 파일에 리소스가 포함 되어 있는 모듈에 대 한 핸들입니다. *Hinstance* 가 NULL 인 경우 시스템은 현재 프로세스를 만드는 데 사용 된 모듈에서 리소스를 로드 합니다.

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 유휴 루프 처리'
 title: 유휴 루프 처리
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - processing [MFC]
 - background processing [MFC]
 ms.assetid: 5c7c46c1-6107-4304-895f-480983bb1e44
-ms.openlocfilehash: 74ca89d91cf4e60b09a063551b526f177caed161
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 8972a2bafe5c9d35af2a5f4452082a7ca82f28dc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84624511"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290156"
 ---
 # <a name="idle-loop-processing"></a>유휴 루프 처리
 
@@ -35,16 +36,16 @@ ms.locfileid: "84624511"
 
 - 응용 프로그램의 다른 위치에 다른 **PeekMessage** 루프를 포함 합니다.
 
-## <a name="peekmessage-in-the-mfc-message-loop"></a><a name="_core_peekmessage_in_the_mfc_message_loop"></a>MFC 메시지 루프의 PeekMessage
+## <a name="peekmessage-in-the-mfc-message-loop"></a><a name="_core_peekmessage_in_the_mfc_message_loop"></a> MFC 메시지 루프의 PeekMessage
 
 MFC를 사용 하 여 개발한 응용 프로그램에서 클래스의 주 메시지 루프는 `CWinThread` [PeekMessage](/windows/win32/api/winuser/nf-winuser-peekmessagew) Win32 API를 호출 하는 메시지 루프를 포함 합니다. 또한이 루프는 `OnIdle` 메시지 간의 멤버 함수를 호출 합니다 `CWinThread` . 응용 프로그램은 함수를 재정의 하 여이 유휴 시간에 메시지를 처리할 수 있습니다 `OnIdle` .
 
 > [!NOTE]
 > `Run`, `OnIdle` 및 다른 특정 멤버 함수는 이제 클래스가 아닌 클래스의 멤버입니다 `CWinThread` `CWinApp` . `CWinApp`는 `CWinThread`에서 파생됩니다.
 
-유휴 처리를 수행 하는 방법에 대 한 자세한 내용은 *MFC 참조*에서 [OnIdle](reference/cwinthread-class.md#onidle) 을 참조 하세요.
+유휴 처리를 수행 하는 방법에 대 한 자세한 내용은 *MFC 참조* 에서 [OnIdle](reference/cwinthread-class.md#onidle) 을 참조 하세요.
 
-## <a name="peekmessage-elsewhere-in-your-application"></a><a name="_core_peekmessage_elsewhere_in_your_application"></a>응용 프로그램의 다른 위치에서 PeekMessage
+## <a name="peekmessage-elsewhere-in-your-application"></a><a name="_core_peekmessage_elsewhere_in_your_application"></a> 응용 프로그램의 다른 위치에서 PeekMessage
 
 응용 프로그램에서 유휴 처리를 수행 하는 또 다른 방법에는 함수 중 하나에 메시지 루프를 포함 하는 작업이 포함 됩니다. 이 메시지 루프는 [CWinThread:: Run](reference/cwinthread-class.md#run)에 있는 MFC의 주 메시지 루프와 매우 비슷합니다. 즉, MFC로 개발한 응용 프로그램의 이러한 루프는 주 메시지 루프와 동일한 많은 기능을 수행 해야 합니다. 다음 코드 조각에서는 MFC와 호환 되는 메시지 루프를 작성 하는 방법을 보여 줍니다.
 

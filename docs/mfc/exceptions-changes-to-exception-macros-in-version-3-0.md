@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 예외: 버전 3.0의 예외 매크로 변경 내용'
 title: '예외: 버전 3.0의 예외 매크로 변경 사항'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - exceptions [MFC], what's changed
 - THROW_LAST macro [MFC]
 ms.assetid: 3aa20d8c-229e-449c-995c-ab879eac84bc
-ms.openlocfilehash: 72b343641b0b43d408c5820ca2a2af1de94ce327
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3135e78885d0b4f14eb8588419b3b9d1852cf1c8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225061"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290728"
 ---
 # <a name="exceptions-changes-to-exception-macros-in-version-30"></a>예외: 버전 3.0의 예외 매크로 변경 사항
 
@@ -26,7 +27,7 @@ MFC 버전 3.0 이상에서 예외 처리 매크로는 c + + 예외를 사용 �
 
 - [예외 다시 throw](#_core_re.2d.throwing_exceptions)
 
-## <a name="exception-types-and-the-catch-macro"></a><a name="_core_exception_types_and_the_catch_macro"></a>예외 형식 및 CATCH 매크로
+## <a name="exception-types-and-the-catch-macro"></a><a name="_core_exception_types_and_the_catch_macro"></a> 예외 형식 및 CATCH 매크로
 
 이전 버전의 MFC에서 **CATCH** 매크로는 mfc 런타임 형식 정보를 사용 하 여 예외의 형식을 결정 합니다. 즉, 예외 형식이 catch 사이트에서 결정 됩니다. 그러나 c + + 예외를 사용 하는 경우 예외 형식은 항상 throw 되는 예외 개체의 형식으로 throw 사이트에서 결정 됩니다. 드물지만 throw 된 개체에 대 한 포인터의 형식이 throw 된 개체의 형식과 다른 경우에는 비 호환성 문제가 발생 합니다.
 
@@ -48,7 +49,7 @@ MFC 버전 3.0 이상에서 예외 처리 매크로는 c + + 예외를 사용 �
 
 이 문제를 해결 하려면 throw 식을 함수에서 호출 코드로 이동 하 고 예외가 생성 될 때 컴파일러에 알려진 실제 형식의 예외를 throw 합니다.
 
-## <a name="re-throwing-exceptions"></a><a name="_core_re.2d.throwing_exceptions"></a>예외 다시 Throw
+## <a name="re-throwing-exceptions"></a><a name="_core_re.2d.throwing_exceptions"></a> Re-Throwing 예외
 
 Catch 블록에서 catch 한 것과 동일한 예외 포인터를 throw 할 수 없습니다.
 

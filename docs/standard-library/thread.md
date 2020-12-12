@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: &lt; 스레드&gt;'
 title: '&lt;thread&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <thread>
 ms.assetid: 0c858405-4efb-449d-bf76-70d3693c9234
-ms.openlocfilehash: 251a423829a048e3d67b0bcf83107f52c3fdafca
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3387d96772f1ed3322ce79b744e17b6bf494140d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232848"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289623"
 ---
 # <a name="ltthreadgt"></a>&lt;thread&gt;
 
@@ -24,7 +25,7 @@ ms.locfileid: "87232848"
 ## <a name="remarks"></a>설명
 
 > [!NOTE]
-> **/Clr**을 사용 하 여 컴파일된 코드에서이 헤더는 차단 됩니다.
+> **/Clr** 을 사용 하 여 컴파일된 코드에서이 헤더는 차단 됩니다.
 
 `__STDCPP_THREADS__`이 헤더에서 스레드가 지원 되는지 여부를 나타내는 0이 아닌 값으로 매크로를 정의 합니다.
 
@@ -40,7 +41,7 @@ ms.locfileid: "87232848"
 
 |Name|설명|
 |----------|-----------------|
-|[hash 구조체(C++ 표준 라이브러리)](../standard-library/hash-structure-stl.md)|에 의해 고유 하 게 결정 되는 값을 반환 하는 멤버 함수를 정의 `thread::id` 합니다. 멤버 함수는 형식의 값 [hash](../standard-library/hash-class.md) `thread::id` 을 인덱스 값의 분포에 매핑하는 데 적합 한 해시 함수를 정의 합니다.|
+|[hash 구조체(C++ 표준 라이브러리)](../standard-library/hash-structure-stl.md)|에 의해 고유 하 게 결정 되는 값을 반환 하는 멤버 함수를 정의 `thread::id` 합니다. 멤버 함수는 형식의 값 [](../standard-library/hash-class.md) `thread::id` 을 인덱스 값의 분포에 매핑하는 데 적합 한 해시 함수를 정의 합니다.|
 
 ### <a name="public-functions"></a>Public 함수
 

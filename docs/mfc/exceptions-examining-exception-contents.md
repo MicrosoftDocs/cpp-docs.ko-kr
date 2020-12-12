@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 예외: 예외 내용 검사'
 title: '예외: 예외 내용 검사'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - try-catch exception handling [MFC], exception contents
 - throwing exceptions [MFC], exception contents
 ms.assetid: dfda4782-b969-4f60-b867-cc204ea7f33a
-ms.openlocfilehash: 7500db2a29f9d4ccef37b9265f5f2968c2d07993
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: aef28d79bd6cad1d810700015930b14b5fdedddc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217950"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290624"
 ---
 # <a name="exceptions-examining-exception-contents"></a>예외: 예외 내용 검사
 

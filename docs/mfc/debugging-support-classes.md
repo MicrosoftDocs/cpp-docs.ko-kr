@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 디버깅 지원 클래스'
 title: 디버깅 지원 클래스
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - debugging [MFC], memory leaks
 - memory leaks, MFC debug classes
 ms.assetid: d79e084a-8326-4251-8700-4efac07c511e
-ms.openlocfilehash: 46564cc3f2a10eb91ee3fff57a7d5f8bcafc8e49
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: ebd71d6c95dfa88173d1fca7a6bd19dcf3a103de
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622883"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97291066"
 ---
 # <a name="debugging-support-classes"></a>디버깅 지원 클래스
 
