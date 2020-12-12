@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 옵션'
 title: MSVC 컴파일러 옵션
 ms.date: 05/06/2019
 helpviewer_keywords:
@@ -8,49 +9,49 @@ helpviewer_keywords:
 - compiler options, C++
 - x64 MSVC compiler
 ms.assetid: ed3376c8-bef4-4c9a-80e9-3b5da232644c
-ms.openlocfilehash: ab41a5de027f28b361937e58fb179fd72db54e4e
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
-ms.translationtype: HT
+ms.openlocfilehash: a6b124fa5fce68844d53c1324da48c17ef5a9ccf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65221745"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97197025"
 ---
 # <a name="compiler-options"></a>컴파일러 옵션
 
-cl.exe는 Microsoft를 제어 하는 도구 C++ (MSVC) C 및 C++ 컴파일러 및 링커입니다. cl.exe는 Microsoft Visual Studio에 대 한 Windows를 지 원하는 운영 체제 에서만 실행할 수 있습니다.
+cl.exe는 Microsoft c + + (MSVC) C 및 c + + 컴파일러 및 링커를 제어 하는 도구입니다. cl.exe은 Windows 용 Microsoft Visual Studio를 지 원하는 운영 체제 에서만 실행할 수 있습니다.
 
 > [!NOTE]
-> Visual Studio 개발자 명령 프롬프트 에서만에서이 도구를 시작할 수 있습니다. 시스템 명령 프롬프트 또는 파일 탐색기에서는 시작할 수 없습니다. 자세한 내용은 [명령줄에서 MSVC 도구 집합을 사용 하 여](../building-on-the-command-line.md)입니다.
+> 이 도구는 Visual Studio 개발자 명령 프롬프트에서만 시작할 수 있습니다. 시스템 명령 프롬프트 또는 파일 탐색기에서는 시작할 수 없습니다. 자세한 내용은 [명령줄에서 MSVC 도구 집합 사용](../building-on-the-command-line.md)을 참조하세요.
 
-컴파일러는 COFF 공용 개체 파일 형식 () 개체 (.obj) 파일을 생성합니다. 링커는 실행 파일 (.exe) 또는 동적 연결 라이브러리 (Dll)를 생성 합니다.
+컴파일러는 COFF (Common Object File Format) 개체 (.obj) 파일을 생성 합니다. 링커는 실행 파일 (.exe) 또는 Dll (동적 연결 라이브러리)을 생성 합니다.
 
-모든 컴파일러 옵션은 대/소문자 구분를 참고 합니다. 두 슬래시를 사용할 수 있습니다 (`/`) 또는 대시 (`-`) 컴파일러 옵션을 지정 합니다.
+모든 컴파일러 옵션은 대/소문자를 구분 합니다. 슬래시 ( `/` ) 또는 대시 () 중 하나를 사용 하 여 `-` 컴파일러 옵션을 지정할 수 있습니다.
 
-연결 하지 않고 컴파일하면를 사용 합니다 [/c](c-compile-without-linking.md) 옵션입니다.
+연결 하지 않고 컴파일하려면 [/c](c-compile-without-linking.md) 옵션을 사용 합니다.
 
 ## <a name="find-a-compiler-option"></a>컴파일러 옵션 찾기
 
-특정 컴파일러 옵션을 보려면, 다음 목록 중 하나를 참조 하세요.
+특정 컴파일러 옵션을 찾으려면 다음 목록 중 하나를 참조 하세요.
 
 - [컴파일러 옵션 사전순 목록](compiler-options-listed-alphabetically.md)
 
 - [컴파일러 옵션 범주별 목록](compiler-options-listed-by-category.md)
 
-## <a name="specify-compiler-options"></a>컴파일러 옵션을 지정 합니다.
+## <a name="specify-compiler-options"></a>컴파일러 옵션 지정
 
-각 컴파일러 옵션에 대 한 설명 하는 방법을 개발 환경에서 설정할 수 있습니다. 개발 환경 밖에 서 옵션을 지정 하는 내용은 다음을 참조 하세요.
+각 컴파일러 옵션에 대 한 항목에서는 개발 환경에서이를 설정 하는 방법을 설명 합니다. 개발 환경 외부에서 옵션을 지정 하는 방법에 대 한 자세한 내용은 다음을 참조 하세요.
 
-- [MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)
+- [MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)
 
 - [CL 명령 파일](cl-command-files.md)
 
 - [CL 환경 변수](cl-environment-variables.md)
 
-## <a name="related-build-tools"></a>관련된 빌드 도구
+## <a name="related-build-tools"></a>관련 빌드 도구
 
-[MSVC 링커 옵션](linker-options.md) 또한 프로그램을 빌드하는 방법에 영향을 줍니다.
+[MSVC 링커 옵션](linker-options.md) 은 프로그램을 빌드하는 방법에도 영향을 줍니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [C/C++ 빌드 참조](c-cpp-building-reference.md)<br/>
-[CL에서의 링커 호출](cl-invokes-the-linker.md)
+[CL이 링커를 호출 합니다.](cl-invokes-the-linker.md)

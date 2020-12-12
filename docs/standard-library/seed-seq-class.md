@@ -1,4 +1,5 @@
 ---
+description: Seed_seq 클래스에 대해 자세히 알아보세요.
 title: seed_seq 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,18 +15,18 @@ helpviewer_keywords:
 - std::seed_seq [C++], size
 - std::seed_seq [C++], param
 ms.assetid: cba114f7-9ac6-4f2f-b773-9c84805401d6
-ms.openlocfilehash: d2dc561a9160188507a61ec3734cfbf9f3e74199
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: c92bda66b37162bcaaf9c614185f2c31f29d22c5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68450504"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97197038"
 ---
-# <a name="seedseq-class"></a>seed_seq 클래스
+# <a name="seed_seq-class"></a>seed_seq 클래스
 
 난수 엔진에 필요한 임의 시드를 공급할 수 있는 부호가 없는 정수 값의 벡터를 저장합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class seed_seq
@@ -118,7 +119,7 @@ void param(OutputIterator dest) const;
 
 ## <a name="example"></a>예제
 
-다음 코드 예제는 생성자 3개를 사용하여 배열에 할당된 경우 결과 `seed_seq` 인스턴스에서 출력을 생성합니다. 난수 생성기와 함께 `seed_seq`를 사용하는 예제는 [\<random>](../standard-library/random.md)을 참조하세요.
+다음 코드 예제는 생성자 3개를 사용하여 배열에 할당된 경우 결과 `seed_seq` 인스턴스에서 출력을 생성합니다. 난수 생성기와 함께를 사용 하는 예제는 `seed_seq` 를 참조 [\<random>](../standard-library/random.md) 하세요.
 
 ```cpp
 #include <iostream>
@@ -191,10 +192,10 @@ Generating a sequence of 5 elements into an array:
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<random>
+**헤더:**\<random>
 
 **네임스페이스:** std
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [\<random>](../standard-library/random.md)

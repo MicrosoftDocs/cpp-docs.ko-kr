@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: NMake 속성 페이지'
 title: NMake 속성 페이지(Windows C++) | Microsoft Docs
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,18 +10,18 @@ f1_keywords:
 helpviewer_keywords:
 - NMake property page
 ms.assetid: bd20cb52-9f1d-4240-b4fc-4f43205ac94b
-ms.openlocfilehash: c0dbe537635fe6698f814f3d8456f0caa9c8c796
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 58256ad8542e7d411769efb661970f9c41797ec3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62320606"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97196804"
 ---
 # <a name="nmake-property-page"></a>NMake 속성 페이지
 
-**NMake** 속성 페이지에서 NMake 프로젝트의 빌드 설정을 지정할 수 있습니다. (NMAKE의 Microsoft 구현인 [있도록](https://wikipedia.org/wiki/Make_(software)).)
+**NMake** 속성 페이지에서 NMake 프로젝트의 빌드 설정을 지정할 수 있습니다. NMAKE는의 Microsoft 구현 [입니다.](https://wikipedia.org/wiki/Make_(software))
 
-NMake 프로젝트에 대한 자세한 내용은 [메이크파일 프로젝트 만들기](creating-a-makefile-project.md)를 참조하세요. 비-Windows 메이크파일 프로젝트에 대 한 참조 [메이크파일 프로젝트 속성 (Linux C++)](../../linux/prop-pages/makefile-linux.md)합니다 [일반 프로젝트 속성 (Android C++ 메이크파일)](/visualstudio/cross-platform/general-makefile-android-prop-page) 하거나 [NMake 속성 (Android C++)](/visualstudio/cross-platform/nmake-android-prop-page).
+NMake 프로젝트에 대한 자세한 내용은 [메이크파일 프로젝트 만들기](creating-a-makefile-project.md)를 참조하세요. 비 Windows 메이크파일 프로젝트의 경우 [메이크파일 프로젝트 속성 (Linux c + +)](../../linux/prop-pages/makefile-linux.md), [일반 프로젝트 속성 (Android c + + 메이크파일)](/visualstudio/cross-platform/general-makefile-android-prop-page) 또는 [NMake 속성 (android c + +)](/visualstudio/cross-platform/nmake-android-prop-page)을 참조 하세요.
 
 **NMake** 속성 페이지에는 다음 속성이 포함되어 있습니다.
 
@@ -28,15 +29,15 @@ NMake 프로젝트에 대한 자세한 내용은 [메이크파일 프로젝트 �
 
 - **빌드 명령줄**
 
-   **빌드** 메뉴에서 **빌드**를 클릭할 때 실행할 명령을 지정합니다.
+   **빌드** 메뉴에서 **빌드** 를 클릭할 때 실행할 명령을 지정합니다.
 
 - **모두 다시 빌드 명령줄**
 
-   **빌드** 메뉴에서 **모두 다시 빌드**를 클릭할 때 실행할 명령을 지정합니다.
+   **빌드** 메뉴에서 **모두 다시 빌드** 를 클릭할 때 실행할 명령을 지정합니다.
 
 - **정리 명령줄**
 
-   **빌드** 메뉴에서 **정리**를 클릭할 때 실행할 명령을 지정합니다.
+   **빌드** 메뉴에서 **정리** 를 클릭할 때 실행할 명령을 지정합니다.
 
 - **출력**
 
@@ -66,10 +67,10 @@ NMake 프로젝트에 대한 자세한 내용은 [메이크파일 프로젝트 �
 
    IntelliSense가 C++ 파일을 구문 분석할 때 사용할 추가 컴파일러 스위치를 지정합니다.
 
-액세스 하는 방법에 대 한 자세한 합니다 **NMake** 속성 페이지를 참조 하세요 [설정 C++ Visual Studio에서 컴파일러 및 빌드 속성](../working-with-project-properties.md).
+**NMake** 속성 페이지에 액세스 하는 방법에 대 한 자세한 내용은 [Visual Studio에서 c + + 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조 하세요.
 
 이 개체의 멤버에 프로그래밍 방식으로 액세스하는 방법에 대한 자세한 내용은 <xref:Microsoft.VisualStudio.VCProjectEngine.VCNMakeTool>을 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [C++ 프로젝트 속성 페이지 참조](property-pages-visual-cpp.md)<br>

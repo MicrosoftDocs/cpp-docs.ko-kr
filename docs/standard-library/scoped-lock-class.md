@@ -1,16 +1,17 @@
 ---
+description: Scoped_lock 클래스에 대해 자세히 알아보세요.
 title: scoped_lock 클래스
 ms.date: 11/04/2016
 f1_keywords:
 - mutex/std::scoped_lock
-ms.openlocfilehash: 20b2faf0f1cb11e441dda0b14e35d023ae9ae1e6
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 929dadab1f476f4254a46fcd0dbec4b8e162228b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68269065"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97197116"
 ---
-# <a name="scopedlock-class"></a>scoped_lock 클래스
+# <a name="scoped_lock-class"></a>scoped_lock 클래스
 
 ## <a name="syntax"></a>구문
 
