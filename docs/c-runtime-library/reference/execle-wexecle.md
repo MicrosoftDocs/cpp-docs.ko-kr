@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _execle, _wexecle'
 title: _execle, _wexecle
 ms.date: 11/04/2016
 api_name:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - _wexecle function
 - _execle function
 ms.assetid: 75efa9c5-96b7-4e23-acab-06258901f63a
-ms.openlocfilehash: 3480b2220c71984dcc30cec54d00deac1f4dfbc7
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 28e05222d0ee91f44f96717056117a67afe5c0b4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70937383"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97304898"
 ---
 # <a name="_execle-_wexecle"></a>_execle, _wexecle
 
@@ -84,7 +85,7 @@ intptr_t _wexecle(
 |**EACCES**|지정한 파일이 잠금 또는 공유 위반이 되었습니다.|
 |**EINVAL**|잘못된 매개 변수입니다.|
 |**EMFILE**|너무 많은 파일이 열려 있습니다. 실행 파일인지 여부를 확인하려면 지정한 파일이 열려 있어야 합니다.|
-|**ENOENT**|파일 또는 경로를 찾을 수 없습니다.|
+|**ENOENT (**|파일 또는 경로를 찾을 수 없습니다.|
 |**ENOEXEC**|지정한 파일이 실행할 수 없거나 실행 파일 형식이 잘못되었습니다.|
 |**ENOMEM**|메모리가 부족하여 새 프로세스를 실행할 수 없습니다. 사용 가능한 메모리가 손상되었거나 잘못된 블록이 있습니다. 이는 호출 프로세스가 제대로 할당되지 않았음을 나타냅니다.|
 
@@ -98,7 +99,7 @@ intptr_t _wexecle(
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|필수 헤더|선택적 헤더|
+|함수|필수 헤더|선택적 헤더|
 |--------------|---------------------|---------------------|
 |**_execle**|\<process.h>|\<errno.h>|
 |**_wexecle**|\<process.h> 또는 \<wchar.h>|\<errno.h>|
@@ -109,11 +110,11 @@ intptr_t _wexecle(
 
 [_exec, _wexec 함수](../../c-runtime-library/exec-wexec-functions.md)의 예제를 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [프로세스 및 환경 제어](../../c-runtime-library/process-and-environment-control.md)<br/>
 [_exec, _wexec 함수](../../c-runtime-library/exec-wexec-functions.md)<br/>
-[abort](abort.md)<br/>
+[중단이](abort.md)<br/>
 [atexit](atexit.md)<br/>
 [exit, _Exit, _exit](exit-exit-exit.md)<br/>
 [_onexit, _onexit_m](onexit-onexit-m.md)<br/>

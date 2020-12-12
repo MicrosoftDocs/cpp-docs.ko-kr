@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _execlp, _wexeclp'
 title: _execlp, _wexeclp
 ms.date: 11/04/2016
 api_name:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - _wexeclp function
 - wexeclp function
 ms.assetid: 7b179163-4bcd-4d6a-8baf-68f886791928
-ms.openlocfilehash: 6ae1805dd00428aee0acca4bcb3ee221bce1d271
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: c1ef70975f5488c66928bb26e7eac4f4dcf3b0ed
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70937192"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97304833"
 ---
 # <a name="_execlp-_wexeclp"></a>_execlp, _wexeclp
 
@@ -79,7 +80,7 @@ intptr_t _wexeclp(
 |**EACCES**|지정한 파일이 잠금 또는 공유 위반이 되었습니다.|
 |**EINVAL**|잘못된 매개 변수입니다.|
 |**EMFILE**|실행 파일인지 여부를 확인하려면 지정한 파일이 열려 있어야 하지만, 열려 있는 파일이 너무 많습니다.|
-|**ENOENT**|파일 또는 경로를 찾을 수 없습니다.|
+|**ENOENT (**|파일 또는 경로를 찾을 수 없습니다.|
 |**ENOEXEC**|지정한 파일이 실행할 수 없거나 실행 파일 형식이 잘못되었습니다.|
 |**ENOMEM**|메모리가 부족하여 새 프로세스를 실행할 수 없습니다. 사용 가능한 메모리가 손상되었거나 잘못된 블록이 있습니다. 이는 호출 프로세스가 제대로 할당되지 않았음을 나타냅니다.|
 
@@ -93,22 +94,22 @@ intptr_t _wexeclp(
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|필수 헤더|선택적 헤더|
+|함수|필수 헤더|선택적 헤더|
 |--------------|---------------------|---------------------|
 |**_execlp**|\<process.h>|\<errno.h>|
 |**_wexeclp**|\<process.h> 또는 \<wchar.h>|\<errno.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
 [_exec, _wexec 함수](../../c-runtime-library/exec-wexec-functions.md)의 예제를 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [프로세스 및 환경 제어](../../c-runtime-library/process-and-environment-control.md)<br/>
 [_exec, _wexec 함수](../../c-runtime-library/exec-wexec-functions.md)<br/>
-[abort](abort.md)<br/>
+[중단이](abort.md)<br/>
 [atexit](atexit.md)<br/>
 [exit, _Exit, _exit](exit-exit-exit.md)<br/>
 [_onexit, _onexit_m](onexit-onexit-m.md)<br/>
