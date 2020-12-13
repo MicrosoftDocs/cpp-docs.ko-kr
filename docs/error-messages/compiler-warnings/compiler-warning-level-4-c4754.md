@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4754'
 title: 컴파일러 경고(수준 4) C4754
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4754
 ms.assetid: e0e4606a-754a-4f42-a274-21a34978d21d
-ms.openlocfilehash: 85c99feee72d94f50ec19394cf8aec7a3c9811bc
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: b997f81a7d922837ff3f1ea2e5d015e5267428dc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90684982"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330517"
 ---
 # <a name="compiler-warning-level-4-c4754"></a>컴파일러 경고(수준 4) C4754
 

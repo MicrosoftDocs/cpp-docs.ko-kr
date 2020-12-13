@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: importidl'
 title: importidl (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - importidl attribute
 ms.assetid: 4b0a4b55-6c57-4e6e-bc7b-a12cc8063941
-ms.openlocfilehash: 8f3c2c5c67ac216d096d1082814c561698f3f732
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b10caa9f4b1467727c70b6d968ca6aa33b58da0c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842249"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329878"
 ---
 # <a name="importidl"></a>importidl
 
@@ -32,7 +33,7 @@ ms.locfileid: "88842249"
 
 **Importidl** c + + 특성은 프로그램의 생성 된 .idl 파일 및 라이브러리 섹션 ( *idl_file*)에서 프로그램의 생성 된 .idl 파일의 라이브러리 섹션에 섹션을 배치 합니다 ( *idl_file*).
 
-예를 들어, 생성 된 .idl 파일에 직접 코딩 된 .idl 파일을 사용 하려는 경우 **importidl**를 사용할 수 있습니다.
+예를 들어, 생성 된 .idl 파일에 직접 코딩 된 .idl 파일을 사용 하려는 경우 **importidl** 를 사용할 수 있습니다.
 
 ## <a name="example"></a>예제
 

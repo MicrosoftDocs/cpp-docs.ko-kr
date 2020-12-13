@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: isgraph, iswgraph, _isgraph_l, _iswgraph_l'
 title: isgraph, iswgraph, _isgraph_l, _iswgraph_l
 ms.date: 4/2/2020
 api_name:
@@ -42,12 +43,12 @@ helpviewer_keywords:
 - _istgraph function
 - _ismbcgraph_l function
 ms.assetid: 531a5f34-4302-4d0a-8a4f-b7ea150ad941
-ms.openlocfilehash: 29fd8a4d9fcaded1f7750eaf9ba9dfbf28760cf7
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 165972af4c921abb9026c6a3297426910cbf49e6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82909635"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332688"
 ---
 # <a name="isgraph-iswgraph-_isgraph_l-_iswgraph_l"></a>isgraph, iswgraph, _isgraph_l, _iswgraph_l
 
@@ -77,7 +78,7 @@ int _iswgraph_l(
 *c*<br/>
 테스트할 정수입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 *C* 가 공백이 아닌 인쇄 가능한 문자의 특정 표현인 경우 이러한 각 루틴은 0이 아닌 값을 반환 합니다. *c* 가 공백이 아닌 인쇄 가능한 문자인 경우 **isgraph** 는 0이 아닌 값을 반환 합니다. *c* 가 와이드 문자 공간 이외의 인쇄 가능한 와이드 문자인 경우 **iswgraph** 는 0이 아닌 값을 반환 합니다. *C* 가 테스트 조건을 충족 하지 않는 경우 이러한 루틴은 각각 0을 반환 합니다.
 
@@ -107,8 +108,8 @@ int _iswgraph_l(
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [문자 분류](../../c-runtime-library/character-classification.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
+[로캘](../../c-runtime-library/locale.md)<br/>
 [is, isw 루틴](../../c-runtime-library/is-isw-routines.md)<br/>

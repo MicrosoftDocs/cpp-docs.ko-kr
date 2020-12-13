@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CMutex 클래스'
 title: CMutex 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,16 +9,16 @@ f1_keywords:
 helpviewer_keywords:
 - CMutex [MFC], CMutex
 ms.assetid: 6330c050-4f01-4195-a099-2029b92f8cf1
-ms.openlocfilehash: 2d6f637ab4828b3e70df205ebf359ae45a940d60
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 4890a99d52fb8142bac0cc25d6a23ef6dbcaed5b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81363287"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331492"
 ---
 # <a name="cmutex-class"></a>CMutex 클래스
 
-하나의 스레드가 리소스에 대해 상호 독점적으로 액세스할 수 있도록 허용하는 동기화 개체인 "뮤텍스"를 나타냅니다.
+한 스레드가 리소스에 상호 배타적으로 액세스할 수 있도록 하는 동기화 개체인 "뮤텍스"를 나타냅니다.
 
 ## <a name="syntax"></a>구문
 
@@ -29,21 +30,21 @@ class CMutex : public CSyncObject
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[CMutex:::CMutex](#cmutex)|`CMutex` 개체를 생성합니다.|
+|[CMutex:: CMutex](#cmutex)|`CMutex` 개체를 생성합니다.|
 
 ## <a name="remarks"></a>설명
 
-뮤텍스는 한 번에 하나의 스레드만 데이터 또는 다른 제어 된 리소스를 수정할 수 있는 경우에 유용합니다. 예를 들어 연결된 목록에 노드를 추가하는 것은 한 번에 하나의 스레드에서만 허용해야 하는 프로세스입니다. 개체를 `CMutex` 사용하여 연결된 목록을 제어하면 한 번에 하나의 스레드만 목록에 액세스할 수 있습니다.
+뮤텍스는 한 번에 하나의 스레드만 데이터 또는 다른 제어 된 리소스를 수정할 수 있는 경우에 유용 합니다. 예를 들어 연결 된 목록에 노드를 추가 하는 프로세스는 한 번에 하나의 스레드에서만 허용 해야 하는 프로세스입니다. 개체를 사용 하 여 `CMutex` 연결 된 목록을 제어 하면 한 번에 하나의 스레드만 목록에 액세스할 수 있습니다.
 
-개체를 `CMutex` 사용하려면 필요할 `CMutex` 때 개체를 생성합니다. 대기할 뮤텍스의 이름을 지정하고 응용 프로그램에서 처음에 해당 뮤텍스이름을 소유해야 합니다. 그런 다음 생성자가 반환될 때 뮤텍스에 액세스할 수 있습니다. [CSyncObject:::제어된](../../mfc/reference/csyncobject-class.md#unlock) 리소스에 액세스하는 작업이 완료되면 잠금을 해제합니다.
+개체를 사용 하려면 `CMutex` `CMutex` 필요한 경우 개체를 구성 합니다. 대기 하려는 뮤텍스의 이름을 지정 하 고 응용 프로그램에서 초기에 해당 뮤텍스를 소유 해야 합니다. 그런 다음 생성자가를 반환할 때 뮤텍스에 액세스할 수 있습니다. 제어 되는 리소스에 대 한 액세스가 완료 되 면 [CSyncObject:: Unlock](../../mfc/reference/csyncobject-class.md#unlock) 을 호출 합니다.
 
-개체를 사용하는 `CMutex` 다른 방법은 컨트롤하려는 클래스에 형식의 `CMutex` 변수를 데이터 멤버로 추가하는 것입니다. 제어된 개체를 구성하는 동안 뮤텍스가 `CMutex` 처음 소유되어 있는지, 뮤텍스의 이름(프로세스 경계를 넘어 사용되는 경우) 및 원하는 보안 특성을 지정하는 데이터 멤버의 생성자에게 호출합니다.
+개체를 사용 하는 다른 방법은 `CMutex` 제어 하려는 클래스에 형식의 변수를 데이터 멤버로 추가 하는 것입니다 `CMutex` . 제어 되는 개체를 생성 하는 동안 `CMutex` 뮤텍스를 처음 소유 하 고 있는지, 뮤텍스 이름 (프로세스 경계에서 사용 되는 경우) 및 필요한 보안 특성을 지정 하는 데이터 멤버의 생성자를 호출 합니다.
 
-이러한 방식으로 개체에 의해 제어되는 리소스에 `CMutex` 액세스하려면 먼저 리소스의 액세스 멤버 함수에서 [CSingleLock](../../mfc/reference/csinglelock-class.md) 또는 [CMultiLock](../../mfc/reference/cmultilock-class.md) 형식의 변수를 만듭니다. 그런 다음 lock 개체의 `Lock` 멤버 함수(예: [CSingleLock::Lock)를](../../mfc/reference/csinglelock-class.md#lock)호출합니다. 이 시점에서 스레드는 리소스에 대한 액세스 권한을 얻거나, 리소스가 해제될 때까지 기다렸다가 액세스 권한을 얻거나, 리소스가 해제되고 시간 시간이 지나갈 때까지 기다리며 리소스에 대한 액세스 권한을 얻지 못합니다. 어쨌든 리소스는 스레드에서 안전한 방식으로 액세스되었습니다. 리소스를 해제하려면 잠금 개체의 `Unlock` 멤버 함수(예: [CSingleLock::Unlock)를](../../mfc/reference/csinglelock-class.md#unlock)사용하거나 잠금 개체가 범위를 벗어나도록 허용합니다.
+이러한 방식으로 개체에 의해 제어 되는 리소스에 액세스 하려면 `CMutex` 먼저 리소스의 액세스 멤버 함수에 [Csinglelock](../../mfc/reference/csinglelock-class.md) 형식의 변수 또는 [CMultiLock](../../mfc/reference/cmultilock-class.md) 형식을 만듭니다. 그런 다음, lock 개체의 `Lock` 멤버 함수 (예 [: Csinglelock:: lock](../../mfc/reference/csinglelock-class.md#lock))를 호출 합니다. 이 시점에서 스레드는 리소스에 대 한 액세스 권한을 획득 하 고 리소스를 해제 하 고 액세스할 때까지 기다리거나 리소스가 해제 되 고 시간이 초과 될 때까지 대기 하 여 리소스에 대 한 액세스 권한을 얻을 수 없습니다. 어떤 경우 든 리소스는 스레드로부터 안전한 방식으로 액세스 됩니다. 리소스를 해제 하려면 lock 개체의 `Unlock` 멤버 함수 (예: [csinglelock:: Unlock](../../mfc/reference/csinglelock-class.md#unlock))를 사용 하거나 lock 개체가 범위를 벗어나는 것을 허용 합니다.
 
-개체 사용에 `CMutex` 대한 자세한 내용은 [다중 스레딩: 동기화 클래스 를 사용하는 방법을](../../parallel/multithreading-how-to-use-the-synchronization-classes.md)참조하십시오.
+개체를 사용 하는 방법에 대 한 자세한 내용은 `CMutex` [다중 스레딩: 동기화 클래스 사용 방법](../../parallel/multithreading-how-to-use-the-synchronization-classes.md)문서를 참조 하세요.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -55,11 +56,11 @@ class CMutex : public CSyncObject
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxmt.h
+**헤더:** afxmt
 
-## <a name="cmutexcmutex"></a><a name="cmutex"></a>CMutex:::CMutex
+## <a name="cmutexcmutex"></a><a name="cmutex"></a> CMutex:: CMutex
 
-명명된 개체 또는 `CMutex` 명명되지 않은 개체를 생성합니다.
+명명 되거나 명명 되지 않은 `CMutex` 개체를 생성 합니다.
 
 ```
 CMutex(
@@ -70,21 +71,21 @@ CMutex(
 
 ### <a name="parameters"></a>매개 변수
 
-*b처음 소유*<br/>
-`CMutex` 처음에 개체를 만드는 스레드가 뮤텍스에서 제어하는 리소스에 액세스할 수 있는지 지정합니다.
+*bInitiallyOwn*<br/>
+개체를 만드는 스레드에서 처음에 `CMutex` 뮤텍스를 통해 제어 되는 리소스에 액세스할 수 있는지 여부를 지정 합니다.
 
 *lpszName*<br/>
-`CMutex` 개체의 이름입니다. 이름이 같은 다른 뮤텍스가 있는 경우 개체가 프로세스 경계를 넘어 사용되는 경우 *lpszName을* 제공해야 합니다. **NULL이면**뮤텍스의 이름이 지정되지 않습니다. 이름이 기존 뮤텍스와 일치하면 생성자는 해당 `CMutex` 이름의 뮤텍스를 참조하는 새 개체를 빌드합니다. 이름이 뮤텍스가 아닌 기존 동기화 개체와 일치하면 생성이 실패합니다.
+`CMutex` 개체의 이름입니다. 동일한 이름을 가진 다른 뮤텍스가 있는 경우 해당 개체가 프로세스 경계를 넘어 사용 될 경우 *lpszName* 을 제공 해야 합니다. **NULL** 인 경우 뮤텍스의 이름이 지정 되지 않습니다. 이름이 기존 뮤텍스와 일치 하는 경우 생성자는 `CMutex` 해당 이름의 뮤텍스를 참조 하는 새 개체를 빌드합니다. 이름이 뮤텍스가 아닌 기존 동기화 개체와 일치 하는 경우 생성이 실패 합니다.
 
-*lpsa속성*<br/>
-뮤텍스 개체에 대한 보안 특성입니다. 이 구조에 대한 자세한 설명은 Windows SDK의 [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) 참조하세요.
+*lpsaAttribute*<br/>
+뮤텍스 개체의 보안 특성입니다. 이 구조에 대 한 자세한 내용은 Windows SDK [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) 을 참조 하십시오.
 
 ### <a name="remarks"></a>설명
 
-`CMutex` 개체에 액세스하거나 해제하려면 [CMultiLock](../../mfc/reference/cmultilock-class.md) 또는 [CSingleLock](../../mfc/reference/csinglelock-class.md) 개체를 만들고 [잠금](../../mfc/reference/csinglelock-class.md#lock) 및 [잠금](../../mfc/reference/csinglelock-class.md#unlock) 해제 멤버 함수를 호출합니다. 개체가 `CMutex` 독립 실행형으로 사용되는 경우 `Unlock` 해당 멤버 함수를 호출하여 해제합니다.
+개체를 액세스 하거나 해제 하려면 `CMutex` [CMultiLock](../../mfc/reference/cmultilock-class.md) 또는 [csinglelock](../../mfc/reference/csinglelock-class.md) 개체를 만들고 해당 [잠금](../../mfc/reference/csinglelock-class.md#lock) 및 잠금 [해제](../../mfc/reference/csinglelock-class.md#unlock) 멤버 함수를 호출 합니다. `CMutex`개체가 독립 실행형으로 사용 되는 경우 해당 멤버 함수를 호출 하 여 해당 개체를 `Unlock` 해제 합니다.
 
 > [!IMPORTANT]
-> 개체를 `CMutex` 만든 후 [GetLastError를](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) 사용하여 뮤텍스가 아직 존재하지 않았는지 확인합니다. 뮤텍스가 예기치 않게 존재한 경우 불량 프로세스가 쪼그리고 있음을 나타낼 수 있으며 뮤텍스를 악의적으로 사용하려고 할 수 있습니다. 이 경우 권장되는 보안 에 민감한 절차는 핸들을 닫고 개체를 만드는 데 실패한 것처럼 계속하는 것입니다.
+> 개체를 만든 후 `CMutex` 에는 [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) 를 사용 하 여 뮤텍스가 아직 존재 하지 않는지 확인 합니다. 뮤텍스가 예기치 않게 존재 하는 경우 rogue 프로세스가 squatting을 나타낼 수 있으며 뮤텍스를 악의적으로 사용 하려고 할 수 있습니다. 이 경우에 권장 되는 보안 인식 절차는 핸들을 닫고 개체를 만드는 동안 오류가 발생 한 것 처럼 계속 진행 하는 것입니다.
 
 ## <a name="see-also"></a>참고 항목
 

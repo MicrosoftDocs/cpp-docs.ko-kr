@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 도킹 및 부동 도구 모음'
 title: 도구 모음 고정 및 고정 해제
 ms.date: 11/04/2016
 f1_keywords:
@@ -21,12 +22,12 @@ helpviewer_keywords:
 - toolbars [MFC], wrapping
 - floating palettes
 ms.assetid: b7f9f9d4-f629-47d2-a3c4-2b33fa6b51e4
-ms.openlocfilehash: f40d8860f2e514bf3c9e9364a664326250c9627a
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 0cd4595dcc9353255408ce0bd1d3bb23e9b005f2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615842"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330306"
 ---
 # <a name="docking-and-floating-toolbars"></a>도구 모음 고정 및 고정 해제
 
@@ -52,23 +53,23 @@ MFC 라이브러리는 도킹 가능한 도구 모음을 지원 합니다. 도�
 
 예제는 MFC 일반 샘플 [DOCKTOOL](../overview/visual-cpp-samples.md) 을 참조 하세요.
 
-## <a name="enabling-docking-in-a-frame-window"></a><a name="_core_enabling_docking_in_a_frame_window"></a>프레임 창에서 도킹 사용
+## <a name="enabling-docking-in-a-frame-window"></a><a name="_core_enabling_docking_in_a_frame_window"></a> 프레임 창에서 도킹 사용
 
 프레임 창에 도구 모음을 도킹 하려면 도킹을 허용 하도록 프레임 창 (또는 대상)을 설정 해야 합니다. 이 작업은 [CFrameWnd:: EnableDocking](reference/cframewnd-class.md#enabledocking) 함수를 사용 하 여 수행 됩니다 .이 함수에는 도킹을 허용 하는 프레임 창에서 사용 되는 스타일 비트 집합을 나타내는 *DWORD* 매개 변수 하나를 사용 합니다. 도구 모음이 도킹 되 고 여러 면에 도킹할 수 있는 경우에 전달 된 매개 변수에 표시 되는 면은 `EnableDocking` top, bottom, left, right 순서로 사용 됩니다. 컨트롤 막대를 어디에 나 도킹할 수 있도록 하려면 **CBRS_ALIGN_ANY** 를에 전달 `EnableDocking` 합니다.
 
-## <a name="enabling-docking-for-a-toolbar"></a><a name="_core_enabling_docking_for_a_toolbar"></a>도구 모음에 대 한 도킹 사용
+## <a name="enabling-docking-for-a-toolbar"></a><a name="_core_enabling_docking_for_a_toolbar"></a> 도구 모음에 대 한 도킹 사용
 
 도킹 대상의 준비를 완료 한 후에는 도구 모음 (또는 원본)을 비슷한 방식으로 준비 해야 합니다. 도킹할 각 도구 모음에 대해 [Ccontrolbar:: enabledocking](reference/ccontrolbar-class.md#enabledocking) 를 호출 하 여 도구 모음을 도킹할 대상 쪽을 지정 합니다. 호출에서 지정 된 면 `CControlBar::EnableDocking` 이 프레임 창에서 도킹에 사용할 수 있는 면과 일치 하지 않는 경우 도구 모음은 도킹할 수 없습니다. 부동 도구 모음은 부동 도구 모음으로 유지 되므로 프레임 창에 도킹할 수 없습니다.
 
 원하는 효과가 영구적으로 부동 도구 모음 인 경우 `EnableDocking` 0의 매개 변수를 사용 하 여를 호출 합니다. 그런 다음 [CFrameWnd:: FloatControlBar](reference/cframewnd-class.md#floatcontrolbar)를 호출 합니다. 도구 모음은 부동 상태로 유지 되며, 아무 곳에 나 고정할 수 없습니다.
 
-## <a name="docking-the-toolbar"></a><a name="_core_docking_the_toolbar"></a>도구 모음 도킹
+## <a name="docking-the-toolbar"></a><a name="_core_docking_the_toolbar"></a> 도구 모음 도킹
 
 프레임 워크는 사용자가 도킹을 허용 하는 프레임 창의 측면에서 도구 모음을 삭제 하려고 할 때 [CFrameWnd::D ockControlBar](reference/cframewnd-class.md#dockcontrolbar) 를 호출 합니다.
 
 또한 언제 든 지이 함수를 호출 하 여 컨트롤 막대를 프레임 창에 도킹할 수 있습니다. 일반적으로 초기화 하는 동안 수행 됩니다. 두 개 이상의 도구 모음을 프레임 창의 특정 면에 도킹할 수 있습니다.
 
-## <a name="floating-the-toolbar"></a><a name="_core_floating_the_toolbar"></a>도구 모음 부동
+## <a name="floating-the-toolbar"></a><a name="_core_floating_the_toolbar"></a> 도구 모음 부동
 
 프레임 창에서 도킹 가능한 도구 모음을 분리 하는 것을 도구 모음의 부동 이라고 합니다. 이 작업을 수행 하려면 [CFrameWnd:: FloatControlBar](reference/cframewnd-class.md#floatcontrolbar) 를 호출 합니다. 도구 모음을 부동 도구 모음이 가로 또는 세로 인지 여부를 결정 하는 정렬 스타일, 부동 도구 모음을 배치할 위치를 지정 합니다.
 
@@ -76,17 +77,17 @@ MFC 라이브러리는 도킹 가능한 도구 모음을 지원 합니다. 도�
 
 도킹 가능한 도구 모음의 MFC 구현에서는 도킹 가능한 도구 모음을 지 원하는 일부 응용 프로그램에서 제공 하는 일부 확장 된 기능을 제공 하지 않습니다. 사용자 지정 가능한 도구 모음과 같은 기능은 제공 되지 않습니다.
 
-## <a name="dynamically-resizing-the-toolbar"></a><a name="_core_dynamically_resizing_the_toolbar"></a>동적으로 도구 모음 크기 조정
+## <a name="dynamically-resizing-the-toolbar"></a><a name="_core_dynamically_resizing_the_toolbar"></a> 동적으로 도구 모음 크기 조정
 
 Visual C++ 버전 4.0을 통해 응용 프로그램 사용자가 부동 도구 모음을 동적으로 크기를 조정할 수 있습니다. 일반적으로 도구 모음은 긴 선형 셰이프를 가로로 표시 합니다. 그러나 도구 모음의 방향과 셰이프를 변경할 수 있습니다. 예를 들어 사용자가 프레임 창의 세로 가장자리 중 하나에 대해 도구 모음을 도킹 하면 모양이 세로 레이아웃으로 변경 됩니다. 또한 도구 모음을 여러 행의 단추를 포함 하는 사각형으로 변형할 수 있습니다.
 
-다음을 수행할 수 있습니다.
+다음과 같습니다.
 
 - 동적 크기 조정을 도구 모음 특징으로 지정 합니다.
 
 - 고정 크기 조정을 도구 모음 특징으로 지정 합니다.
 
-이러한 지원을 제공 하기 위해 [CToolBar:: Create](reference/ctoolbar-class.md#create) 멤버 함수를 호출 하는 데 사용할 수 있는 두 가지 새 도구 모음 스타일이 있습니다. 아래에 이 계정과 키의 예제가 나와 있습니다.
+이러한 지원을 제공 하기 위해 [CToolBar:: Create](reference/ctoolbar-class.md#create) 멤버 함수를 호출 하는 데 사용할 수 있는 두 가지 새 도구 모음 스타일이 있습니다. 관련 토폴로지는 다음과 같습니다.
 
 - **CBRS_SIZE_DYNAMIC** 컨트롤 막대는 동적입니다.
 
@@ -98,7 +99,7 @@ Visual C++ 버전 4.0을 통해 응용 프로그램 사용자가 부동 도구 �
 
 [CToolBar:: GetButtonStyle](reference/ctoolbar-class.md#getbuttonstyle) 을 사용 하 여 도구 모음에 있는 단추에 대 한 상태 및 스타일을 반환할 수도 있습니다. 단추의 스타일은 단추가 표시 되는 방법 및 사용자 입력에 응답 하는 방법을 결정 합니다. 상태는 단추가 래핑된 상태 인지 여부를 나타냅니다.
 
-## <a name="setting-wrap-positions-for-a-fixed-style-toolbar"></a><a name="_core_setting_wrap_positions_for_a_fixed_style_toolbar"></a>고정 스타일 도구 모음의 줄 바꿈 위치 설정
+## <a name="setting-wrap-positions-for-a-fixed-style-toolbar"></a><a name="_core_setting_wrap_positions_for_a_fixed_style_toolbar"></a> Fixed-Style 도구 모음에 대 한 줄 바꿈 위치 설정
 
 크기가 고정 된 도구 모음의 경우 도구 모음이 줄 바꿈되는 도구 모음 단추 인덱스를 지정 합니다. 다음 코드는 주 프레임 창의 재정의에서이 작업을 수행 하는 방법을 보여 줍니다 `OnCreate` .
 

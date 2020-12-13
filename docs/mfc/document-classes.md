@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 문서 클래스'
 title: 문서 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - document classes [MFC]
 ms.assetid: 4bf19b02-0a4f-4319-b68e-cddcba2705cb
-ms.openlocfilehash: 012d107d7bcc630c4bc02a9dc697172080787eac
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 7f5bd3011dec84cad20b10668e0a997838e79dbb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615797"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330289"
 ---
 # <a name="document-classes"></a>문서 클래스
 
@@ -32,7 +33,7 @@ ms.locfileid: "84615797"
 Rich edit 컨트롤에 있는 OLE 클라이언트 항목의 목록을 유지 관리 합니다. [CRichEditView](reference/cricheditview-class.md) 및 [CRichEditCntrItem](reference/cricheditcntritem-class.md)와 함께 사용 됩니다.
 
 [COleServerDoc](reference/coleserverdoc-class.md)<br/>
-서버 응용 프로그램 문서 클래스의 기본 클래스로 사용 됩니다. `COleServerDoc`개체는 [COleServerItem](reference/coleserveritem-class.md) 개체와의 상호 작용을 통해 대량의 서버 지원을 제공 합니다. 시각적 편집 기능은 클래스 라이브러리의 문서/뷰 아키텍처를 사용 하 여 제공 됩니다.
+서버 응용 프로그램 문서 클래스의 기본 클래스로 사용 됩니다. `COleServerDoc` 개체는 [COleServerItem](reference/coleserveritem-class.md) 개체와의 상호 작용을 통해 대량의 서버 지원을 제공 합니다. 시각적 편집 기능은 클래스 라이브러리의 문서/뷰 아키텍처를 사용 하 여 제공 됩니다.
 
 [CHtmlEditDoc](reference/chtmleditdoc-class.md)<br/>
 MFC 문서 뷰 아키텍처 컨텍스트 내에서 WebBrowser HTML 편집 플랫폼의 기능을 [CHtmlEditView](reference/chtmleditview-class.md)와 함께 제공 합니다.
@@ -44,7 +45,7 @@ MFC 문서 뷰 아키텍처 컨텍스트 내에서 WebBrowser HTML 편집 플랫
 [CArchive](reference/carchive-class.md)<br/>
 Serialization을 통해 개체에 대 한 영구 저장소를 구현 하려면 [CFile](reference/cfile-class.md) 개체와 협력 합니다 ( [CObject:: Serialize](reference/cobject-class.md#serialize)참조).
 
-문서에는 OLE 개체도 포함 될 수 있습니다. `CDocItem`는 서버 및 클라이언트 항목의 기본 클래스입니다.
+문서에는 OLE 개체도 포함 될 수 있습니다. `CDocItem` 는 서버 및 클라이언트 항목의 기본 클래스입니다.
 
 [CDocItem](reference/cdocitem-class.md)<br/>
 [COleClientItem](reference/coleclientitem-class.md) 및 [COleServerItem](reference/coleserveritem-class.md)의 추상 기본 클래스입니다. 에서 파생 된 클래스의 개체는 `CDocItem` 문서의 일부를 나타냅니다.

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4365'
 title: 컴파일러 경고(수준 4) C4365
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4365
 ms.assetid: af4b4191-bdfd-4dbb-8229-3ba4405df257
-ms.openlocfilehash: a9be67c8148b85167d10cd53318f5ef3b41b1340
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: d7316e6b32bd90b95f5f9277a565455733185d72
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74990926"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330609"
 ---
 # <a name="compiler-warning-level-4-c4365"></a>컴파일러 경고(수준 4) C4365
 

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _except_handler3'
 title: _except_handler3
 ms.date: 11/04/2016
 api_name:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - _except_handler3 function
 - except_handler3 function
 ms.assetid: b0c64898-0ae5-48b7-9724-80135a0813e2
-ms.openlocfilehash: 5e1dbab97e0f193d4ff59c19229d2c00e2cd7d6a
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
-ms.translationtype: HT
+ms.openlocfilehash: c6253152559516ea7162f887618df0bcbb4bc8ac
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70944476"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331132"
 ---
 # <a name="_except_handler3"></a>_except_handler3
 
@@ -49,16 +50,16 @@ int _except_handler3(
 *exception_record*<br/>
 [in] 특정 예외에 대한 자세한 정보입니다.
 
-*registration*<br/>
+*절차*<br/>
 [in] 예외 처리기를 찾는 데 어떤 범위 테이블을 사용해야 하는지를 나타내는 레코드입니다.
 
 *context*<br/>
 [in] 예약되어 있습니다.
 
-*dispatcher*<br/>
+*디스패처*<br/>
 [in] 예약되어 있습니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 예외를 해제해야 하는 경우 `DISPOSITION_DISMISS`를 반환합니다. 예외 캡슐화 처리기 수준까지 예외를 전달해야 하는 경우 `DISPOSITION_CONTINUE_SEARCH`를 반환합니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: _cscanf, _cscanf_l, _cwscanf, _cwscanf_l'
 title: _cscanf, _cscanf_l, _cwscanf, _cwscanf_l
 ms.date: 10/21/2019
 api_name:
@@ -48,12 +49,12 @@ helpviewer_keywords:
 - reading data [C++], from the console
 - _cwscanf_l function
 ms.assetid: dbfe7547-b577-4567-a1cb-893fa640e669
-ms.openlocfilehash: 45dcbd93ab689c8c86ab35e53552a65f561dfd18
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 65c025c7a02c0bd9493bcaf8d6ff0e29c6c7a217
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234252"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332920"
 ---
 # <a name="_cscanf-_cscanf_l-_cwscanf-_cwscanf_l"></a>_cscanf, _cscanf_l, _cwscanf, _cwscanf_l
 
@@ -99,15 +100,15 @@ int _cwscanf_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 성공적으로 변환되고 할당된 필드 수입니다. 읽혀졌지만 할당되지 않은 필드는 반환 값에 포함되지 않습니다. 파일의 끝에서 읽으려고 시도 하는 경우 반환 값은 **EOF** 입니다. 키보드 입력이 운영 체제 명령줄 수준에서 리디렉션될 때 발생할 수 있습니다. 반환 값이 0이면 할당된 필드가 없음을 의미합니다.
 
 ## <a name="remarks"></a>설명
 
-**_Cscanf** 함수는 콘솔에서 *인수로*지정 된 위치로 데이터를 직접 읽습니다. [_getche](getch-getwch.md) 함수는 문자를 읽는 데 사용합니다. 각 선택적 매개 변수 *는 형식의 형식*지정자에 해당 하는 형식의 변수에 대 한 포인터 여야 합니다. 이 형식은 입력 필드의 해석을 제어 하 고 [scanf](scanf-scanf-l-wscanf-wscanf-l.md) 함수의 *format* 매개 변수와 동일한 양식 및 기능을 포함 합니다. **_Cscanf** 는 일반적으로 입력 문자를 에코 하지만 마지막 호출이 **_ungetch**된 경우에는이를 수행 하지 않습니다.
+**_Cscanf** 함수는 콘솔에서 *인수로* 지정 된 위치로 데이터를 직접 읽습니다. [_getche](getch-getwch.md) 함수는 문자를 읽는 데 사용합니다. 각 선택적 매개 변수 *는 형식의 형식* 지정자에 해당 하는 형식의 변수에 대 한 포인터 여야 합니다. 이 형식은 입력 필드의 해석을 제어 하 고 [scanf](scanf-scanf-l-wscanf-wscanf-l.md) 함수의 *format* 매개 변수와 동일한 양식 및 기능을 포함 합니다. **_Cscanf** 는 일반적으로 입력 문자를 에코 하지만 마지막 호출이 **_ungetch** 된 경우에는이를 수행 하지 않습니다.
 
-이 함수는 해당 매개 변수의 유효성을 검사합니다. Format이 **NULL**인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 는 **EINVAL** 로 설정 되 고 함수는 **EOF**를 반환 합니다.
+이 함수는 해당 매개 변수의 유효성을 검사합니다. Format이 **NULL** 인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 는 **EINVAL** 로 설정 되 고 함수는 **EOF** 를 반환 합니다.
 
 **_L** 접미사가 있는 이러한 함수 버전은 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하 고는 동일 합니다.
 

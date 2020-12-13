@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 파일 사용 권한 상수'
 title: 파일 사용 권한 상수
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - _S_IWRITE constant
 - _S_IREAD constant
 ms.assetid: 593cad33-31d1-44d2-8941-8af7d210c88c
-ms.openlocfilehash: 9f6126b867e29ca37468c6ff383224a483639c78
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: a220ec404202b1f962a4c0bf51d20b7eea2720ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79443284"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331085"
 ---
 # <a name="file-permission-constants"></a>파일 사용 권한 상수
 
@@ -30,7 +31,7 @@ ms.locfileid: "79443284"
 
 `pmode` 인수는 파일의 사용 권한 설정을 다음과 같이 지정합니다.
 
-|지속적임|의미|
+|상수|의미|
 |--------------|-------------|
 |`_S_IREAD`|읽기 허용|
 |`_S_IWRITE`|쓰기 허용|
@@ -38,7 +39,7 @@ ms.locfileid: "79443284"
 
 `pmode` 인수를 `_umask`에 대해 사용하는 경우 매니페스트 상수는 다음과 같이 권한을 설정합니다.
 
-|지속적임|의미|
+|상수|의미|
 |--------------|-------------|
 |`_S_IREAD`|쓰기가 허용되지 않음(읽기 전용)|
 |`_S_IWRITE`|읽기가 허용되지 않음(쓰기 전용)|

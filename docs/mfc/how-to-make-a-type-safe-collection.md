@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 방법: Type-Safe 컬렉션 만들기'
 title: '방법: 형식이 안전한 컬렉션 만들기'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - serialization [MFC], collection classes
 - collection classes [MFC], deriving from nontemplate
 ms.assetid: 7230b2db-4283-4083-b098-eb231bf5b89e
-ms.openlocfilehash: 7e6b0a4181607feaf6e92f5d92d95cb055761aa4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6c4e474979a6ea5e17a771e2340df71782a59bab
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228624"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330176"
 ---
 # <a name="how-to-make-a-type-safe-collection"></a>방법: 형식이 안전한 컬렉션 만들기
 
@@ -29,15 +30,15 @@ ms.locfileid: "87228624"
 
 MFC 라이브러리은 c + + 템플릿을 기반으로 하는 미리 정의 된 형식 안전 컬렉션을 제공 합니다. 이러한 클래스는 템플릿 이므로 이러한 클래스를 사용 하면 형식 캐스팅 및 비템플릿 클래스 사용과 관련 된 기타 추가 작업 없이 형식 안전 성과 사용 편의성을 향상 시킬 수 있습니다. MFC 샘플 [수집](../overview/visual-cpp-samples.md) 에서는 mfc 응용 프로그램에서 템플릿 기반 컬렉션 클래스를 사용 하는 방법을 보여 줍니다. 일반적으로 새 컬렉션 코드를 작성할 때마다 이러한 클래스를 사용 합니다.
 
-## <a name="using-template-based-classes-for-type-safety"></a><a name="_core_using_template.2d.based_classes_for_type_safety"></a>형식 안전성을 위해 템플릿 기반 클래스 사용
+## <a name="using-template-based-classes-for-type-safety"></a><a name="_core_using_template.2d.based_classes_for_type_safety"></a> 형식 안전성을 위해 Template-Based 클래스 사용
 
 #### <a name="to-use-template-based-classes"></a>템플릿 기반 클래스를 사용 하려면
 
-1. 컬렉션 클래스 형식의 변수를 선언 합니다. 예를 들면 다음과 같습니다.
+1. 컬렉션 클래스 형식의 변수를 선언 합니다. 예를 들어:
 
    [!code-cpp[NVC_MFCCollections#7](codesnippet/cpp/how-to-make-a-type-safe-collection_1.cpp)]
 
-1. 컬렉션 개체의 멤버 함수를 호출 합니다. 예를 들면 다음과 같습니다.
+1. 컬렉션 개체의 멤버 함수를 호출 합니다. 예를 들어:
 
    [!code-cpp[NVC_MFCCollections#8](codesnippet/cpp/how-to-make-a-type-safe-collection_2.cpp)]
 
@@ -45,11 +46,11 @@ MFC 라이브러리은 c + + 템플릿을 기반으로 하는 미리 정의 된 
 
 이 예제에서는 정수 목록의 선언을 보여 줍니다. 1 단계의 첫 번째 매개 변수는 목록의 요소로 저장 된 데이터의 형식입니다. 두 번째 매개 변수는 컬렉션 클래스의 멤버 함수 (예: 및)에서 데이터를 전달 하 고 반환 하는 방법을 지정 합니다 `Add` `GetAt` .
 
-## <a name="implementing-helper-functions"></a><a name="_core_implementing_helper_functions"></a>도우미 함수 구현
+## <a name="implementing-helper-functions"></a><a name="_core_implementing_helper_functions"></a> 도우미 함수 구현
 
-템플릿 기반 컬렉션 클래스 `CArray` , 및에서는 `CList` `CMap` 파생 컬렉션 클래스에 대해 필요에 따라 사용자 지정할 수 있는 5 개의 전역 도우미 함수를 사용 합니다. 이러한 도우미 함수에 대 한 자세한 내용은 *MFC 참조*의 [컬렉션 클래스 도우미](reference/collection-class-helpers.md) 를 참조 하세요. 대부분의 템플릿 기반 컬렉션 클래스를 사용 하려면 serialization 함수를 구현 해야 합니다.
+템플릿 기반 컬렉션 클래스 `CArray` , 및에서는 `CList` `CMap` 파생 컬렉션 클래스에 대해 필요에 따라 사용자 지정할 수 있는 5 개의 전역 도우미 함수를 사용 합니다. 이러한 도우미 함수에 대 한 자세한 내용은 *MFC 참조* 의 [컬렉션 클래스 도우미](reference/collection-class-helpers.md) 를 참조 하세요. 대부분의 템플릿 기반 컬렉션 클래스를 사용 하려면 serialization 함수를 구현 해야 합니다.
 
-### <a name="serializing-elements"></a><a name="_core_serializing_elements"></a>요소 serialize
+### <a name="serializing-elements"></a><a name="_core_serializing_elements"></a> 요소 serialize
 
 `CArray`, `CList` 및 클래스를 호출 하 여 `CMap` `SerializeElements` 보관 파일에서 컬렉션 요소를 저장 하거나 읽습니다.
 
@@ -61,7 +62,7 @@ MFC 라이브러리은 c + + 템플릿을 기반으로 하는 미리 정의 된 
 
 `CArchive` `CObject::Serialize` 각 개체에 대 한 호출 (또는 해당 함수의 재정의)에 대해 오버 로드 된 삽입 연산자입니다 `CPerson` .
 
-## <a name="using-nontemplate-collection-classes"></a><a name="_core_using_nontemplate_collection_classes"></a>비템플릿 컬렉션 클래스 사용
+## <a name="using-nontemplate-collection-classes"></a><a name="_core_using_nontemplate_collection_classes"></a> 비템플릿 컬렉션 클래스 사용
 
 Mfc는 MFC 버전 1.0에 도입 된 컬렉션 클래스도 지원 합니다. 이러한 클래스는 템플릿을 기반으로 하지 않습니다. 지원 되는 형식인,, 및의 데이터를 포함 하는 데 사용할 수 있습니다 `CObject*` `UINT` `DWORD` `CString` . 이러한 미리 정의 된 컬렉션 (예: `CObList` )을 사용 하 여에서 파생 된 개체의 컬렉션을 유지할 수 있습니다 `CObject` . 또한 MFC는 `UINT` 및 void 포인터 ()와 같은 기본 형식을 포함 하는 미리 정의 된 다른 컬렉션을 제공 **`void*`** 합니다. 그러나 일반적으로 보다 구체적인 클래스와 해당 파생 클래스의 개체를 저장 하는 고유한 형식 안전 컬렉션을 정의 하는 것이 유용한 경우가 많습니다. 템플릿을 기반으로 하지 않는 컬렉션 클래스를 사용 하 여이 작업을 수행 하는 것은 템플릿 기반 클래스를 사용 하는 것 보다 더 복잡 합니다.
 

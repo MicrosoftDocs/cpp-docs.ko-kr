@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2688'
 title: 컴파일러 오류 C2688
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2688
 ms.assetid: 168c9e9d-8f65-4664-af86-db71d3e6ee46
-ms.openlocfilehash: cc871467e1e3fb23edc6231c3adb182f5e26c0d8
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 17219fe6f4358b73ace0435e60d8fc2b7a9b6df8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74760246"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330690"
 ---
 # <a name="compiler-error-c2688"></a>컴파일러 오류 C2688
 
 ' C2:: fgrv ': varargs 함수에 대해 다중 또는 가상 상속이 지원 되지 않으므로 공변 (covariant)을 반환 합니다.
 
-함수가 가변 인수를 포함 하는 경우 C++ 에는 시각적 개체에서 공변 (Covariant) 반환 형식이 지원 되지 않습니다.
+함수에 가변 인수가 포함 된 경우에는 Visual C++에서 공변 (Covariant) 반환 형식이 지원 되지 않습니다.
 
 이 오류를 해결 하려면 변수 인수를 사용 하거나 모든 가상 함수에 대해 반환 값을 동일 하 게 설정 하지 않도록 함수를 정의 합니다.
 

@@ -1,4 +1,5 @@
 ---
+description: Iscntrl, iswcntrl, _iscntrl_l, _iswcntrl_l에 대해 자세히 알아보세요.
 title: iscntrl, iswcntrl, _iscntrl_l, _iswcntrl_l
 ms.date: 4/2/2020
 api_name:
@@ -41,12 +42,12 @@ helpviewer_keywords:
 - iswcntrl function
 - _istcntrl_l function
 ms.assetid: 616eebf9-aed4-49ba-ba2c-8677c8fe6fb5
-ms.openlocfilehash: 24267a663af1aa68099861bfec1b0e5c18aa83be
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: b4dcba09b139d1ad1c80e495477a6b7b2283e3f2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919742"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332706"
 ---
 # <a name="iscntrl-iswcntrl-_iscntrl_l-_iswcntrl_l"></a>iscntrl, iswcntrl, _iscntrl_l, _iswcntrl_l
 
@@ -79,7 +80,7 @@ int _iswcntrl_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 *C* 가 제어 문자의 특정 표현인 경우 이러한 각 루틴은 0이 아닌 값을 반환 합니다. *c* 가 제어 문자 (0X00-0X1F 또는 0x7f) 인 경우 **iscntrl** 는 0이 아닌 값을 반환 합니다. *c* 가 컨트롤 와이드 문자인 경우 **iswcntrl** 는 0이 아닌 값을 반환 합니다. *C* 가 테스트 조건을 충족 하지 않는 경우 이러한 루틴은 각각 0을 반환 합니다.
 
@@ -109,8 +110,8 @@ int _iswcntrl_l(
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [문자 분류](../../c-runtime-library/character-classification.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
+[로캘](../../c-runtime-library/locale.md)<br/>
 [is, isw 루틴](../../c-runtime-library/is-isw-routines.md)<br/>

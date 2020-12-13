@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2449'
 title: 컴파일러 오류 C2449
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2449
 ms.assetid: 544bf0b6-daa0-40e8-9f21-8e583d472a2d
-ms.openlocfilehash: 6fd62813fdf3b50c0e329fc423e100d55a36ae12
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: cea4218d71b01a5f93b4c9409175449f78e3211f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75299025"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332454"
 ---
 # <a name="compiler-error-c2449"></a>컴파일러 오류 C2449
 

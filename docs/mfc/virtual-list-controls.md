@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 가상 목록 컨트롤'
 title: 가상 목록 컨트롤
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - list controls [MFC], List view
 - virtual list controls
 ms.assetid: 319f841f-e426-423a-8276-d93f965b0b45
-ms.openlocfilehash: 12200697af90a3c83fea3df676bd4d2488598d45
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1d441fc74ab6b1ae395ce0b23bcba08c1703213f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215922"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331356"
 ---
 # <a name="virtual-list-controls"></a>가상 목록 컨트롤
 
@@ -21,7 +22,7 @@ ms.locfileid: "87215922"
 > [!NOTE]
 > MFC는의 가상 목록 기능을 제공 하는 것 외에 `CListCtrl` 도 [CListView](../mfc/reference/clistview-class.md) 클래스에서 동일한 기능을 제공 합니다.
 
-가상 목록 컨트롤을 개발할 때 알아야 할 몇 가지 호환성 문제가 있습니다. 자세한 내용은 Windows SDK에서 목록 뷰 컨트롤 항목의 호환성 문제 섹션을 참조 하세요.
+가상 목록 컨트롤을 개발할 때 알아야 할 몇 가지 호환성 문제가 있습니다. 자세한 내용은 Windows SDK의 List-View 컨트롤 항목에서 호환성 문제 섹션을 참조 하세요.
 
 ## <a name="handling-the-lvn_getdispinfo-notification"></a>LVN_GETDISPINFO 알림 처리
 
@@ -55,7 +56,7 @@ LVN_GETDISPINFO 알림 메시지에 대 한 처리기에서 요청 된 정보 �
 
 [!code-cpp[NVC_MFCControlLadenDialog#25](../mfc/codesnippet/cpp/virtual-list-controls_3.cpp)]
 
-캐시를 준비 하 고 유지 관리 하는 방법에 대 한 자세한 내용은 Windows SDK에서 목록 뷰 컨트롤 항목의 캐시 관리 섹션을 참조 하십시오.
+캐시를 준비 하 고 유지 관리 하는 방법에 대 한 자세한 내용은 Windows SDK의 List-View 컨트롤 항목에서 캐시 관리 섹션을 참조 하세요.
 
 ## <a name="finding-specific-items"></a>특정 항목 찾기
 

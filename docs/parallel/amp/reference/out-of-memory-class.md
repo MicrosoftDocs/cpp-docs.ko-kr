@@ -1,4 +1,5 @@
 ---
+description: Out_of_memory 클래스에 대해 자세히 알아보세요.
 title: out_of_memory 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,16 +9,16 @@ f1_keywords:
 helpviewer_keywords:
 - out_of_memory class
 ms.assetid: 3aa7e682-8f13-4ae6-9188-31fb423956e4
-ms.openlocfilehash: e716d4952bdb9634cc0d195285d3a65c5c06b0a1
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: bb7ba1db5be5921111b1fba2e12ea5cf6a5bea1b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81336813"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329922"
 ---
 # <a name="out_of_memory-class"></a>out_of_memory 클래스
 
-시스템 또는 장치 메모리 부족으로 인해 메서드가 실패할 때 throw되는 예외입니다.
+시스템이 나 장치 메모리 부족으로 인해 메서드가 실패 하는 경우 throw 되는 예외입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -29,7 +30,7 @@ class out_of_memory : public runtime_exception;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
 |[out_of_memory 생성자](#ctor)|`out_of_memory` 클래스의 새 인스턴스를 초기화합니다.|
 
@@ -43,11 +44,11 @@ class out_of_memory : public runtime_exception;
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** 앰프.h
+**헤더:** amprt. h
 
 **네임스페이스:** 동시성
 
-## <a name="out_of_memory"></a><a name="ctor"></a>out_of_memory
+## <a name="out_of_memory"></a><a name="ctor"></a> out_of_memory
 
 클래스의 새 인스턴스를 초기화합니다.
 
@@ -65,10 +66,10 @@ out_of_memory () throw();
 *_Message*<br/>
 오류에 대한 설명입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `out_of_memory` 클래스의 새 인스턴스입니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[동시성 네임스페이스(C++ AMP)](concurrency-namespace-cpp-amp.md)
+[동시성 네임 스페이스 (C++ AMP)](concurrency-namespace-cpp-amp.md)

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _lock'
 title: _lock
 ms.date: 11/04/2016
 api_name:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - lock function
 - _lock function
 ms.assetid: 29f77c37-30de-4b3d-91b6-030216e645a6
-ms.openlocfilehash: 9ab7cab2209dc2e02cacca6d540927aa39dc3965
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 9b95c8b7ad0f0ce84348f9581d9acb611373a27b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81745379"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331043"
 ---
 # <a name="_lock"></a>_lock
 
@@ -58,7 +59,7 @@ void __cdecl _lock
 
 **소스:** mlock.c
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [사전순 함수 참조](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [_unlock](../c-runtime-library/unlock.md)

@@ -1,4 +1,5 @@
 ---
+description: Int_3 클래스에 대해 자세히 알아보세요.
 title: int_3 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -72,12 +73,12 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::int_3::xz
 - amp_short_vectors/Concurrency::graphics::int_3::set_yz
 ms.assetid: d4af182f-30f1-455c-b16d-aa99cd314038
-ms.openlocfilehash: bc35562466ee33585be03739695d24da043415c2
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: fbdbb436e503bc00239875b92b2b1065956af23c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77127818"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330019"
 ---
 # <a name="int_3-class"></a>int_3 클래스
 
@@ -89,123 +90,123 @@ ms.locfileid: "77127818"
 class int_3;
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 
-### <a name="public-typedefs"></a>공용 형식 정의
+### <a name="public-typedefs"></a>공용 Typedefs
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |`value_type`||
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[int_3 생성자](#ctor)|오버로드되었습니다. 기본 생성자는 0으로 모든 요소를 초기화 합니다.|
+|[int_3 생성자](#ctor)|오버로드됨. 기본 생성자는 0으로 모든 요소를 초기화 합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|int_3::get_x||
-|int_3::get_xy||
-|int_3::get_xyz||
-|int_3::get_xz||
-|int_3::get_xzy||
-|int_3::get_y||
-|int_3::get_yx||
-|int_3::get_yxz||
-|int_3::get_yz||
-|int_3::get_yzx||
-|int_3::get_z||
-|int_3::get_zx||
-|int_3::get_zxy||
-|int_3::get_zy||
-|int_3::get_zyx||
-|int_3::ref_b||
-|int_3::ref_g||
-|int_3::ref_r||
-|int_3::ref_x||
-|int_3::ref_y||
-|int_3::ref_z||
-|int_3::set_x||
-|int_3::set_xy||
-|int_3::set_xyz||
-|int_3::set_xz||
-|int_3::set_xzy||
-|int_3::set_y||
-|int_3::set_yx||
-|int_3::set_yxz||
-|int_3::set_yz||
-|int_3::set_yzx||
-|int_3::set_z||
-|int_3::set_zx||
-|int_3::set_zxy||
-|int_3::set_zy||
-|int_3::set_zyx||
+|int_3:: get_x||
+|int_3:: get_xy||
+|int_3:: get_xyz||
+|int_3:: get_xz||
+|int_3:: get_xzy||
+|int_3:: get_y||
+|int_3:: get_yx||
+|int_3:: get_yxz||
+|int_3:: get_yz||
+|int_3:: get_yzx||
+|int_3:: get_z||
+|int_3:: get_zx||
+|int_3:: get_zxy||
+|int_3:: get_zy||
+|int_3:: get_zyx||
+|int_3:: ref_b||
+|int_3:: ref_g||
+|int_3:: ref_r||
+|int_3:: ref_x||
+|int_3:: ref_y||
+|int_3:: ref_z||
+|int_3:: set_x||
+|int_3:: set_xy||
+|int_3:: set_xyz||
+|int_3:: set_xz||
+|int_3:: set_xzy||
+|int_3:: set_y||
+|int_3:: set_yx||
+|int_3:: set_yxz||
+|int_3:: set_yz||
+|int_3:: set_yzx||
+|int_3:: set_z||
+|int_3:: set_zx||
+|int_3:: set_zxy||
+|int_3:: set_zy||
+|int_3:: set_zyx||
 
 ### <a name="public-operators"></a>Public 연산자
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|int_3::operator-||
-|int_3::operator--||
-|int_3::operator%=||
-|int_3::operator&=||
-|int_3::operator*=||
-|int_3::operator/=||
-|int_3::operator^=||
-|int_3::operator&#124;=||
-|int_3::operator~||
-|int_3::operator++||
-|int_3::operator+=||
-|int_3:: operator <\<=||
-|int_3::operator=||
-|int_3::operator-=||
-|int_3::operator>>=||
+|int_3:: operator-||
+|int_3:: operator--||
+|int_3:: operator% =||
+|int_3:: operator&=||
+|int_3:: operator * =||
+|int_3:: operator/=||
+|int_3:: operator ^ =||
+|int_3:: operator&#124;=||
+|int_3:: operator ~||
+|int_3:: operator + +||
+|int_3:: operator + =||
+|int_3:: operator<\<=||
+|int_3:: operator =||
+|int_3:: operator-=||
+|int_3:: operator>>=||
 
 ### <a name="public-constants"></a>공용 상수
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |[크기 상수](#size)||
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|int_3::b||
-|int_3::bg||
-|int_3::bgr||
-|int_3::br||
-|int_3::brg||
-|int_3::g||
-|int_3::gb||
-|int_3::gbr||
-|int_3::gr||
-|int_3::grb||
-|int_3::r||
-|int_3::rb||
-|int_3::rbg||
-|int_3::rg||
-|int_3::rgb||
-|int_3::x||
-|int_3::xy||
-|int_3::xyz||
-|int_3::xz||
-|int_3::xzy||
-|int_3::y||
-|int_3::yx||
-|int_3::yxz||
-|int_3::yz||
-|int_3::yzx||
-|int_3::z||
-|int_3::zx||
-|int_3::zxy||
-|int_3::zy||
-|int_3::zyx||
+|int_3:: b||
+|int_3:: bg||
+|int_3:: bgr로||
+|int_3:: br||
+|int_3:: brg||
+|int_3:: g||
+|int_3:: gb||
+|int_3:: gbr||
+|int_3:: gr||
+|int_3:: grb||
+|int_3:: r||
+|int_3:: rb||
+|int_3:: rbg||
+|int_3:: rg||
+|int_3:: rgb||
+|int_3:: x||
+|int_3:: xy||
+|int_3:: xyz||
+|int_3:: xz||
+|int_3:: xzy||
+|int_3:: y||
+|int_3:: yx||
+|int_3:: yxz||
+|int_3:: yz||
+|int_3:: yzx||
+|int_3:: z||
+|int_3:: zx||
+|int_3:: zxy||
+|int_3:: zy||
+|int_3:: zyx||
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `int_3`
 
@@ -215,7 +216,7 @@ class int_3;
 
 **네임 스페이스:** Concurrency:: graphics
 
-## <a name="ctor"></a>int_3
+## <a name="int_3"></a><a name="ctor"></a> int_3
 
 기본 생성자는 0으로 모든 요소를 초기화 합니다.
 
@@ -268,7 +269,7 @@ explicit inline int_3(
 *_Other*<br/>
 을 초기화 하는 데 사용 되는 개체입니다.
 
-## <a name="size"></a>크기가
+## <a name="size"></a><a name="size"></a> 크기가
 
 ### <a name="syntax"></a>구문
 

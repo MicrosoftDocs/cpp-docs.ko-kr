@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 방법: 상태 표시줄에 명령 정보 표시'
 title: '방법: 상태 표시줄에 명령 정보 표시'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - status bars [MFC], message area
 - status bars [MFC], displaying command information
 ms.assetid: de895cbe-61ee-46bf-9787-76b247527d6d
-ms.openlocfilehash: bff5d5b20ecc9b20b7b1e8335cda34d582441425
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 568e8d356659d5267e8c4947f2981cd6243a7056
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622540"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330226"
 ---
 # <a name="how-to-display-command-information-in-the-status-bar"></a>방법: 상태 표시줄에 명령 정보 표시
 
@@ -20,7 +21,7 @@ ms.locfileid: "84622540"
 
 프로그램에 추가 하는 메뉴 항목에 대 한 프롬프트 문자열을 정의 하 여이 상태 표시줄 도움말에를 추가할 수 있습니다. 이렇게 하려면 메뉴 편집기에서 메뉴 항목의 속성을 편집할 때 프롬프트 문자열을 제공 합니다. 사용자가 정의 하는 문자열은 응용 프로그램 리소스 파일에 저장 됩니다. 설명 하는 명령과 동일한 Id를 가집니다.
 
-기본적으로 응용 프로그램 마법사는 표준 "준비" 메시지에 대 한 ID 인 **AFX_IDS_IDLEMESSAGE**를 추가 합니다 .이 메시지는 프로그램이 새 메시지를 대기 하 고 있을 때 표시 됩니다. 응용 프로그램 마법사에서 상황에 맞는 도움말 옵션을 지정 하면 메시지가 "도움말을 보려면 F1 키를 누릅니다."로 변경 됩니다.
+기본적으로 응용 프로그램 마법사는 표준 "준비" 메시지에 대 한 ID 인 **AFX_IDS_IDLEMESSAGE** 를 추가 합니다 .이 메시지는 프로그램이 새 메시지를 대기 하 고 있을 때 표시 됩니다. 응용 프로그램 마법사에서 Context-Sensitive 도움말 옵션을 지정 하면 메시지가 "도움말을 보려면 F1 키를 누릅니다."로 변경 됩니다.
 
 ## <a name="see-also"></a>참고 항목
 

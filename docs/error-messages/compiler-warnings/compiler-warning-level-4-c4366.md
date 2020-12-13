@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4366'
 title: 컴파일러 경고(수준 4) C4366
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4366
 ms.assetid: 65d2942f-3741-42f4-adf2-4920d5a055ca
-ms.openlocfilehash: fb4cead9367c5ef69627f607c521f480ad94271f
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 9fa703d64ca48090d3bf6c2f5d9e21668d9acd71
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991059"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330594"
 ---
 # <a name="compiler-warning-level-4-c4366"></a>컴파일러 경고(수준 4) C4366
 

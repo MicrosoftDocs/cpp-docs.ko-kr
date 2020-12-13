@@ -1,5 +1,6 @@
 ---
-title: Locale
+description: '자세히 알아보기: 로캘'
+title: 로캘
 ms.date: 04/11/2018
 f1_keywords:
 - c.international
@@ -10,16 +11,16 @@ helpviewer_keywords:
 - setlocale function
 - locale routines
 ms.assetid: 442f8112-9288-44d7-be3c-15d22652093a
-ms.openlocfilehash: a747c60994afbf4293aca8e4a3290d20b4bc18a3
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 660a4fb0103de8c1ac06272c711e02fcd6d12289
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87189586"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331074"
 ---
-# <a name="locale"></a>Locale
+# <a name="locale"></a>로캘
 
-*로캘*은 프로그램을 사용자 지정하는 데 사용할 수 있는 국가/지역 및 언어 설정을 참조합니다. 일부 로캘 종속 범주는 날짜 및 통화 값의 표시 형식을 포함합니다. 자세한 내용은 [로캘 범주](../c-runtime-library/locale-categories.md)를 참조하세요.
+*로캘* 은 프로그램을 사용자 지정하는 데 사용할 수 있는 국가/지역 및 언어 설정을 참조합니다. 일부 로캘 종속 범주는 날짜 및 통화 값의 표시 형식을 포함합니다. 자세한 내용은 [로캘 범주](../c-runtime-library/locale-categories.md)를 참조하세요.
 
 **_l** 접미사가 없는 함수를 사용하면서 현재 프로그램 또는 스레드 로캘 정보의 일부 또는 모두를 변경하거나 쿼리하려면 [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) 함수를 사용합니다. **_l** 접미사가 있는 함수는 특정 함수만 실행하는 동안 해당 로캘 정보에 대해 전달되는 로캘 매개 변수를 사용합니다. **_l** 접미사가 있는 함수와 함께 사용할 로캘을 만들려면 [_create_locale](../c-runtime-library/reference/create-locale-wcreate-locale.md)을 사용합니다. 이 로캘을 해제하려면 [_free_locale](../c-runtime-library/reference/free-locale.md)을 사용합니다. 현재 로캘을 가져오려면 [_get_current_locale](../c-runtime-library/reference/get-current-locale.md)을 사용합니다.
 
@@ -29,7 +30,7 @@ ms.locfileid: "87189586"
 
 ## <a name="locale-dependent-routines"></a>로캘 종속 루틴
 
-|루틴에서 반환된 값|Windows Server Update Services와 함께|**setlocale** 범주 설정 종속성|
+|루틴에서 반환된 값|기능|**setlocale** 범주 설정 종속성|
 |-------------|---------|---------------------------------------------|
 |[atof, _atof_l, _wtof, _wtof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|문자를 부동 소수점 값으로 변환합니다.|**LC_NUMERIC**|
 |[atoi, _atoi_l, _wtoi, _wtoi_l](../c-runtime-library/reference/atoi-atoi-l-wtoi-wtoi-l.md)|문자를 정수 값으로 변환합니다.|**LC_NUMERIC**|
@@ -51,9 +52,9 @@ ms.locfileid: "87189586"
 |[strcoll, wcscoll, _mbscoll, _strcoll_l, _wcscoll_l, _mbscoll_l](../c-runtime-library/reference/strcoll-wcscoll-mbscoll-strcoll-l-wcscoll-l-mbscoll-l.md)|두 문자열의 문자를 비교합니다.|**LC_COLLATE**|
 |[_stricmp, _wcsicmp, _mbsicmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l](../c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md)|대/소문자에 상관없이 두 문자열을 비교합니다.|**LC_CTYPE**|
 |[_stricoll, _wcsicoll, _mbsicoll, _stricoll_l, _wcsicoll_l, _mbsicoll_l](../c-runtime-library/reference/stricoll-wcsicoll-mbsicoll-stricoll-l-wcsicoll-l-mbsicoll-l.md)|두 문자열의 문자를 비교합니다(대/소문자 구분 없음).|**LC_COLLATE**|
-|[_strncoll, _wcsncoll, _mbsncoll, _strncoll_l, _wcsncoll_l, _mbsncoll_l](../c-runtime-library/reference/strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md)|두 문자열의 처음 **n**개 문자를 비교합니다.|**LC_COLLATE**|
+|[_strncoll, _wcsncoll, _mbsncoll, _strncoll_l, _wcsncoll_l, _mbsncoll_l](../c-runtime-library/reference/strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md)|두 문자열의 처음 **n** 개 문자를 비교합니다.|**LC_COLLATE**|
 |[_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](../c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)|대/소문자에 상관없이 두 문자열의 문자를 비교합니다.|**LC_CTYPE**|
-|[_strnicoll, _wcsnicoll, _mbsnicoll, _strnicoll_l, _wcsnicoll_l, _mbsnicoll_l](../c-runtime-library/reference/strnicoll-wcsnicoll-mbsnicoll-strnicoll-l-wcsnicoll-l-mbsnicoll-l.md)|두 문자열의 처음 **n**개 문자를 비교합니다(대/소문자 구분 없음).|**LC_COLLATE**|
+|[_strnicoll, _wcsnicoll, _mbsnicoll, _strnicoll_l, _wcsnicoll_l, _mbsnicoll_l](../c-runtime-library/reference/strnicoll-wcsnicoll-mbsnicoll-strnicoll-l-wcsnicoll-l-mbsnicoll-l.md)|두 문자열의 처음 **n** 개 문자를 비교합니다(대/소문자 구분 없음).|**LC_COLLATE**|
 |[strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)|제공된 **format** 인수에 따라 날짜 및 시간 값의 형식을 지정합니다.|**LC_TIME**|
 |[_strlwr, _wcslwr, _mbslwr, _strlwr_l, _wcslwr_l, _mbslwr_l](../c-runtime-library/reference/strlwr-wcslwr-mbslwr-strlwr-l-wcslwr-l-mbslwr-l.md),[_strlwr_s, _strlwr_s_l, _mbslwr_s, _mbslwr_s_l, _wcslwr_s, _wcslwr_s_l](../c-runtime-library/reference/strlwr-s-strlwr-s-l-mbslwr-s-mbslwr-s-l-wcslwr-s-wcslwr-s-l.md)|현재 위치에서 제공된 문자열의 각 대문자를 소문자로 변환합니다.|**LC_CTYPE**|
 |[strtod, _strtod_l, wcstod, _wcstod_l](../c-runtime-library/reference/strtod-strtod-l-wcstod-wcstod-l.md)|문자열을 값으로 변환 합니다. **`double`**|**LC_NUMERIC**(기수 문자 인식 여부 결정)|
@@ -67,7 +68,7 @@ ms.locfileid: "87189586"
 |[wctomb, _wctomb_l](../c-runtime-library/reference/wctomb-wctomb-l.md),[wctomb_s, _wctomb_s_l](../c-runtime-library/reference/wctomb-s-wctomb-s-l.md)|와이드 문자를 해당되는 멀티바이트 문자로 변환합니다.|**LC_CTYPE**|
 
 > [!NOTE]
-> 멀티바이트 루틴의 경우 멀티바이트 코드 페이지는 [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)로 설정된 로캘과 동일해야 합니다. **_MB_CP_LOCALE**의 인수를 사용하는 [_setmbcp](../c-runtime-library/reference/setmbcp.md)는 멀티바이트 코드 페이지를 **setlocale** 코드 페이지와 동일하게 만듭니다.
+> 멀티바이트 루틴의 경우 멀티바이트 코드 페이지는 [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)로 설정된 로캘과 동일해야 합니다. **_MB_CP_LOCALE** 의 인수를 사용하는 [_setmbcp](../c-runtime-library/reference/setmbcp.md)는 멀티바이트 코드 페이지를 **setlocale** 코드 페이지와 동일하게 만듭니다.
 
 ## <a name="see-also"></a>참고 항목
 

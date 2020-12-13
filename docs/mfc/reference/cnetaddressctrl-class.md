@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CNetAddressCtrl 클래스'
 title: CNetAddressCtrl 클래스
 ms.date: 11/19/2018
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - CNetAddressCtrl [MFC], GetAllowType
 - CNetAddressCtrl [MFC], SetAllowType
 ms.assetid: cb4c6aca-3f49-4b52-b76c-65f57096155b
-ms.openlocfilehash: e92ea79727248afd84dd08058ea8f23cc8d14f44
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 66f2bb647d02b262f9264d5a99f84a3fb23fc119
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90686589"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331504"
 ---
 # <a name="cnetaddressctrl-class"></a>CNetAddressCtrl 클래스
 
@@ -41,13 +42,13 @@ class CNetAddressCtrl : public CEdit
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CNetAddressCtrl::CNetAddressCtrl](#cnetaddressctrl)|`CNetAddressCtrl` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CNetAddressCtrl:: Create](#create)|지정 된 스타일을 사용 하 여 네트워크 주소 컨트롤을 만들고 현재 개체에 연결 `CNetAddressCtrl` 합니다.|
 |[CNetAddressCtrl::CreateEx](#createex)|지정 된 확장 스타일을 사용 하 여 네트워크 주소 컨트롤을 만들고 현재 개체에 연결 `CNetAddressCtrl` 합니다.|
@@ -254,7 +255,7 @@ HRESULT SetAllowType(DWORD dwAddrMask);
 
 이 메시지는 Windows SDK에 설명 된 [NetAddr_SetAllowType](/windows/win32/api/shellapi/nf-shellapi-netaddr_setallowtype) 매크로를 호출 합니다. 해당 매크로는 NCM_SETALLOWTYPE 메시지를 보냅니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [CNetAddressCtrl 클래스](../../mfc/reference/cnetaddressctrl-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

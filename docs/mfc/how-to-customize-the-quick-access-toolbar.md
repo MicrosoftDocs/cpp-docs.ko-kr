@@ -1,15 +1,16 @@
 ---
+description: '자세히 알아보기: 방법: 빠른 실행 도구 모음 사용자 지정'
 title: '방법: 빠른 실행 도구 모음 사용자 지정'
 ms.date: 09/07/2019
 helpviewer_keywords:
 - quick access toolbar [MFC], customization
 ms.assetid: 2554099b-0c89-4605-9249-31bf9cbcefe0
-ms.openlocfilehash: 5d168fc395e27eea3705fc8e69c88569ecb0f7ee
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: cb7935f9e340734f8af0e7ec9197e139c30af894
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84620027"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330233"
 ---
 # <a name="how-to-customize-the-quick-access-toolbar"></a>방법: 빠른 실행 도구 모음 사용자 지정
 
@@ -21,11 +22,11 @@ QAT(빠른 실행 도구 모음)는 애플리케이션 단추 옆 또는 범주 
 
 ### <a name="to-open-the-quick-access-toolbar-in-the-properties-window"></a>속성 창에서 빠른 실행 도구 모음을 열려면
 
-1. Visual Studio의 **보기** 메뉴에서 **리소스 뷰**를 클릭 합니다.
+1. Visual Studio의 **보기** 메뉴에서 **리소스 뷰** 를 클릭 합니다.
 
-1. **리소스 뷰**에서 리본 리소스를 두 번 클릭 하 여 디자인 화면에 표시 합니다.
+1. **리소스 뷰** 에서 리본 리소스를 두 번 클릭 하 여 디자인 화면에 표시 합니다.
 
-1. 디자인 화면에서 빠른 실행 도구 모음 메뉴를 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 클릭 합니다.
+1. 디자인 화면에서 빠른 실행 도구 모음 메뉴를 마우스 오른쪽 단추로 클릭 한 다음 **속성** 을 클릭 합니다.
 
 ## <a name="quick-access-toolbar-properties"></a>빠른 실행 도구 모음 속성
 
@@ -38,7 +39,7 @@ QAT(빠른 실행 도구 모음)는 애플리케이션 단추 옆 또는 범주 
 
 #### <a name="to-add-or-remove-commands-on-the-quick-access-toolbar"></a>빠른 실행 도구 모음에서 명령을 추가 또는 제거하려면
 
-1. **속성** 창에서 **QAT Items**를 클릭 한 다음 줄임표 단추 **(...)** 를 클릭 합니다.
+1. **속성** 창에서 **QAT Items** 를 클릭 한 다음 줄임표 단추 **(...)** 를 클릭 합니다.
 
 1. **QAT Items 편집기** 대화 상자에서 **추가** 및 **제거** 단추를 사용 하 여 빠른 실행 도구 모음의 명령 목록을 수정 합니다.
 
@@ -50,8 +51,8 @@ QAT(빠른 실행 도구 모음)는 애플리케이션 단추 옆 또는 범주 
 
 #### <a name="to-preview-the-ribbon-control"></a>리본 컨트롤을 미리 보려면
 
-- **리본 편집기 도구 모음**에서 **테스트 리본**을 클릭 합니다.
+- **리본 편집기 도구 모음** 에서 **테스트 리본** 을 클릭 합니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[리본 디자이너(MFC)](ribbon-designer-mfc.md)
+[리본 디자이너 (MFC)](ribbon-designer-mfc.md)

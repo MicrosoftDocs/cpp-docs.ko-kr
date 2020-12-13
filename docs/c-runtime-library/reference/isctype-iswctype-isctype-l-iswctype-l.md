@@ -1,4 +1,5 @@
 ---
+description: _Isctype, iswctype, _isctype_l, _iswctype_l에 대해 자세히 알아보세요.
 title: _isctype, iswctype, _isctype_l, _iswctype_l
 ms.date: 4/2/2020
 api_name:
@@ -46,16 +47,16 @@ helpviewer_keywords:
 - isctype function
 - _iswctype function
 ms.assetid: cf7509b7-12fc-4d95-8140-ad2eb98173d3
-ms.openlocfilehash: 2261eab574a8bc206a02f9e505beff88cf4c7fcf
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 2b8bd10cd4240e4382d17cb8028589ddf4dd8b2d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918959"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332674"
 ---
 # <a name="_isctype-iswctype-_isctype_l-_iswctype_l"></a>_isctype, iswctype, _isctype_l, _iswctype_l
 
-*Desc* 인수로 지정 된 ctype 속성에 대해 *c* 를 테스트 합니다. *Desc*의 유효한 각 값에 대해 해당 하는 와이드 문자 분류 루틴이 있습니다.
+*Desc* 인수로 지정 된 ctype 속성에 대해 *c* 를 테스트 합니다. *Desc* 의 유효한 각 값에 대해 해당 하는 와이드 문자 분류 루틴이 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -91,7 +92,7 @@ int _iswctype_l(
 *locale*<br/>
 모든 로캘 종속 테스트에 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 *c* 에 현재 로캘의 *desc* 로 지정 된 속성이 있으면 **_isctype** 및 **iswctype** 는 0이 아닌 값을 반환 하 고 그렇지 않으면 0을 반환 합니다. **_L** 접미사가 있는 이러한 함수 버전은 로캘 종속 동작에 현재 로캘 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
@@ -123,8 +124,8 @@ int _iswctype_l(
 
 모든 버전의 [C 런타임 라이브러리](../../c-runtime-library/crt-library-features.md)입니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [문자 분류](../../c-runtime-library/character-classification.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
+[로캘](../../c-runtime-library/locale.md)<br/>
 [is, isw 루틴](../../c-runtime-library/is-isw-routines.md)<br/>

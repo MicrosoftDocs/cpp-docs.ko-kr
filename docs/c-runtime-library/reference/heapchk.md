@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _heapchk'
 title: _heapchk
 ms.date: 4/2/2020
 api_name:
@@ -31,12 +32,12 @@ helpviewer_keywords:
 - heaps, checking consistency
 - _heapchk function
 ms.assetid: 859619a5-1e35-4f02-9e09-11d9fa266ec0
-ms.openlocfilehash: 2ddbdaec5861d48cc23a7cbcd28332e8c06ebbfe
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 57cde789c8d6e6b8c8da91adf4a6f274ce557ed7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916206"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332797"
 ---
 # <a name="_heapchk"></a>_heapchk
 
@@ -60,11 +61,11 @@ int _heapchk( void );
 | **_HEAPEMPTY** | 힙이 초기화되지 않았습니다. |
 | **_HEAPOK** | 힙이 일치하는 것 같습니다. |
 
-또한 오류가 발생 하는 경우에는 **_heapchk** **errno** 를 **ENOSYS**로 설정 합니다.
+또한 오류가 발생 하는 경우에는 **_heapchk** **errno** 를 **ENOSYS** 로 설정 합니다.
 
 ## <a name="remarks"></a>설명
 
-**_Heapchk** 함수는 힙의 최소 일관성을 검사 하 여 힙 관련 문제를 디버그 하는 데 도움이 됩니다. 운영 체제에서 **_heapchk**(예: Windows 98)를 지원 하지 않는 경우 함수는 **_HEAPOK** 을 반환 하 고 **errno** 를 **ENOSYS**로 설정 합니다.
+**_Heapchk** 함수는 힙의 최소 일관성을 검사 하 여 힙 관련 문제를 디버그 하는 데 도움이 됩니다. 운영 체제에서 **_heapchk**(예: Windows 98)를 지원 하지 않는 경우 함수는 **_HEAPOK** 을 반환 하 고 **errno** 를 **ENOSYS** 로 설정 합니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -119,7 +120,7 @@ int main( void )
 OK - heap is fine
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [메모리 할당](../../c-runtime-library/memory-allocation.md)<br/>
 [_heapadd](../../c-runtime-library/heapadd.md)<br/>

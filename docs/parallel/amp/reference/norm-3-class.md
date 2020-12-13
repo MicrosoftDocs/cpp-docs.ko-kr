@@ -1,4 +1,5 @@
 ---
+description: Norm_3 클래스에 대해 자세히 알아보세요.
 title: norm_3 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -72,12 +73,12 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::norm_3::set_zx
 - amp_short_vectors/Concurrency::graphics::norm_3::bgr
 ms.assetid: 17081060-14ce-477e-a71a-9801b0f1d9e4
-ms.openlocfilehash: f7123f047a92c377dedefbc5be11e30f5d77db46
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: ac5419ac8bfaa0f0359d15399f163307cf4a6859
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142159"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329971"
 ---
 # <a name="norm_3-class"></a>norm_3 클래스
 
@@ -89,116 +90,116 @@ ms.locfileid: "77142159"
 class norm_3;
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 
-### <a name="public-typedefs"></a>공용 형식 정의
+### <a name="public-typedefs"></a>공용 Typedefs
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |`value_type`||
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[norm_3 생성자](#ctor)|오버로드되었습니다. 기본 생성자는 0으로 모든 요소를 초기화 합니다.|
+|[norm_3 생성자](#ctor)|오버로드됨. 기본 생성자는 0으로 모든 요소를 초기화 합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|norm_3::get_x||
-|norm_3::get_xy||
-|norm_3::get_xyz||
-|norm_3::get_xz||
-|norm_3::get_xzy||
-|norm_3::get_y||
-|norm_3::get_yx||
-|norm_3::get_yxz||
-|norm_3::get_yz||
-|norm_3::get_yzx||
-|norm_3::get_z||
-|norm_3::get_zx||
-|norm_3::get_zxy||
-|norm_3::get_zy||
-|norm_3::get_zyx||
-|norm_3::ref_b||
-|norm_3::ref_g||
-|norm_3::ref_r||
-|norm_3::ref_x||
-|norm_3::ref_y||
-|norm_3::ref_z||
-|norm_3::set_x||
-|norm_3::set_xy||
-|norm_3::set_xyz||
-|norm_3::set_xz||
-|norm_3::set_xzy||
-|norm_3::set_y||
-|norm_3::set_yx||
-|norm_3::set_yxz||
-|norm_3::set_yz||
-|norm_3::set_yzx||
-|norm_3::set_z||
-|norm_3::set_zx||
-|norm_3::set_zxy||
-|norm_3::set_zy||
-|norm_3::set_zyx||
+|norm_3:: get_x||
+|norm_3:: get_xy||
+|norm_3:: get_xyz||
+|norm_3:: get_xz||
+|norm_3:: get_xzy||
+|norm_3:: get_y||
+|norm_3:: get_yx||
+|norm_3:: get_yxz||
+|norm_3:: get_yz||
+|norm_3:: get_yzx||
+|norm_3:: get_z||
+|norm_3:: get_zx||
+|norm_3:: get_zxy||
+|norm_3:: get_zy||
+|norm_3:: get_zyx||
+|norm_3:: ref_b||
+|norm_3:: ref_g||
+|norm_3:: ref_r||
+|norm_3:: ref_x||
+|norm_3:: ref_y||
+|norm_3:: ref_z||
+|norm_3:: set_x||
+|norm_3:: set_xy||
+|norm_3:: set_xyz||
+|norm_3:: set_xz||
+|norm_3:: set_xzy||
+|norm_3:: set_y||
+|norm_3:: set_yx||
+|norm_3:: set_yxz||
+|norm_3:: set_yz||
+|norm_3:: set_yzx||
+|norm_3:: set_z||
+|norm_3:: set_zx||
+|norm_3:: set_zxy||
+|norm_3:: set_zy||
+|norm_3:: set_zyx||
 
 ### <a name="public-operators"></a>Public 연산자
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|norm_3::operator-||
-|norm_3::operator--||
-|norm_3::operator*=||
-|norm_3::operator/=||
-|norm_3::operator++||
-|norm_3::operator+=||
-|norm_3::operator=||
-|norm_3::operator-=||
+|norm_3:: operator-||
+|norm_3:: operator--||
+|norm_3:: operator * =||
+|norm_3:: operator/=||
+|norm_3:: operator + +||
+|norm_3:: operator + =||
+|norm_3:: operator =||
+|norm_3:: operator-=||
 
 ### <a name="public-constants"></a>공용 상수
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |[크기 상수](#size)||
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|norm_3::b||
-|norm_3::bg||
-|norm_3::bgr||
-|norm_3::br||
-|norm_3::brg||
-|norm_3::g||
-|norm_3::gb||
-|norm_3::gbr||
-|norm_3::gr||
-|norm_3::grb||
-|norm_3::r||
-|norm_3::rb||
-|norm_3::rbg||
-|norm_3::rg||
-|norm_3::rgb||
-|norm_3::x||
-|norm_3::xy||
-|norm_3::xyz||
-|norm_3::xz||
-|norm_3::xzy||
-|norm_3::y||
-|norm_3::yx||
-|norm_3::yxz||
-|norm_3::yz||
-|norm_3::yzx||
-|norm_3::z||
-|norm_3::zx||
-|norm_3::zxy||
-|norm_3::zy||
-|norm_3::zyx||
+|norm_3:: b||
+|norm_3:: bg||
+|norm_3:: bgr로||
+|norm_3:: br||
+|norm_3:: brg||
+|norm_3:: g||
+|norm_3:: gb||
+|norm_3:: gbr||
+|norm_3:: gr||
+|norm_3:: grb||
+|norm_3:: r||
+|norm_3:: rb||
+|norm_3:: rbg||
+|norm_3:: rg||
+|norm_3:: rgb||
+|norm_3:: x||
+|norm_3:: xy||
+|norm_3:: xyz||
+|norm_3:: xz||
+|norm_3:: xzy||
+|norm_3:: y||
+|norm_3:: yx||
+|norm_3:: yxz||
+|norm_3:: yz||
+|norm_3:: yzx||
+|norm_3:: z||
+|norm_3:: zx||
+|norm_3:: zxy||
+|norm_3:: zy||
+|norm_3:: zyx||
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `norm_3`
 
@@ -208,7 +209,7 @@ class norm_3;
 
 **네임 스페이스:** Concurrency:: graphics
 
-## <a name="ctor"></a>norm_3 생성자
+## <a name="norm_3-constructor"></a><a name="ctor"></a> norm_3 생성자
 
 기본 생성자는 0으로 모든 요소를 초기화 합니다.
 
@@ -274,7 +275,7 @@ explicit inline norm_3(
 *_Other*<br/>
 을 초기화 하는 데 사용 되는 개체입니다.
 
-## <a name="a-namesize-size-constant"></a><a name="size"> size 상수
+## <a name="a-namesize-size-constant"></a><a name="size"> 크기 상수
 
 ### <a name="syntax"></a>구문
 

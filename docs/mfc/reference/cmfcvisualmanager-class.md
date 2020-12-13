@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CMFCVisualManager 클래스'
 title: CMFCVisualManager 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -344,12 +345,12 @@ helpviewer_keywords:
 - CMFCVisualManager [MFC], SetMenuShadowDepth
 - CMFCVisualManager [MFC], SetShadowHighlightedImage
 ms.assetid: beed80f7-36a2-4d64-9f09-e807cfefc3fe
-ms.openlocfilehash: bf6c663b6c841f4bc06255845d924cab58d87f1f
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: ae915c74ec97c2e9ec65da2c24674dd38637ba60
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90683912"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331686"
 ---
 # <a name="cmfcvisualmanager-class"></a>CMFCVisualManager 클래스
 
@@ -367,13 +368,13 @@ class CMFCVisualManager : public CMFCBaseVisualManager
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |`CMFCVisualManager::CMFCVisualManager`|기본 생성자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CMFCVisualManager:: AdjustFrames](#adjustframes)||
 |[CMFCVisualManager:: AdjustToolbars](#adjusttoolbars)||
@@ -392,7 +393,7 @@ class CMFCVisualManager : public CMFCBaseVisualManager
 |[CMFCVisualManager:: GetMDITabsBordersSize](#getmditabsborderssize)|MDITabs 창의 테두리 크기를 검색 하기 위해 프레임 워크에서 호출 됩니다.|
 |[CMFCVisualManager:: GetMenuItemTextColor](#getmenuitemtextcolor)||
 |[CMFCVisualManager:: GetMenuShadowDepth](#getmenushadowdepth)|메뉴 그림자의 너비와 높이를 결정 하는 값을 반환 합니다.|
-|[CMFCVisualManager:: GetNcBtnSize](#getncbtnsize)|현재 비주얼 관리자를 기반으로 시스템 단추의 크기를 결정 하기 위해 프레임 워크에서 호출 됩니다. 시스템 단추는 **닫기**, **최소화**, **최대화**및 **복원**명령에 매핑되는 주 프레임 캡션의 단추입니다.|
+|[CMFCVisualManager:: GetNcBtnSize](#getncbtnsize)|현재 비주얼 관리자를 기반으로 시스템 단추의 크기를 결정 하기 위해 프레임 워크에서 호출 됩니다. 시스템 단추는 **닫기**, **최소화**, **최대화** 및 **복원** 명령에 매핑되는 주 프레임 캡션의 단추입니다.|
 |[CMFCVisualManager:: GetPopupMenuBorderSize](#getpopupmenubordersize)|팝업 메뉴의 테두리 크기를 검색 하기 위해 프레임 워크에서 호출 됩니다.|
 |[CMFCVisualManager:: GetPropertyGridGroupColor](#getpropertygridgroupcolor)|속성 목록의 배경색을 검색 하기 위해 프레임 워크에서 호출 됩니다.|
 |[CMFCVisualManager:: GetPropertyGridGroupTextColor](#getpropertygridgrouptextcolor)|속성 목록의 텍스트 색을 검색 하기 위해 프레임 워크에서 호출 됩니다.|
@@ -447,7 +448,7 @@ class CMFCVisualManager : public CMFCBaseVisualManager
 |[CMFCVisualManager:: OnDrawMenuResizeBar](#ondrawmenuresizebar)||
 |[CMFCVisualManager:: OnDrawMenuScrollButton](#ondrawmenuscrollbutton)|메뉴 스크롤 단추를 그릴 때 프레임 워크에서 호출 됩니다.|
 |[CMFCVisualManager:: OnDrawMenuShadow](#ondrawmenushadow)||
-|[CMFCVisualManager:: OnDrawMenuSystemButton](#ondrawmenusystembutton)|메뉴 시스템 단추 **닫기**, **최소화**, **최대화**및 **복원을**그릴 때 프레임 워크에서 호출 됩니다.|
+|[CMFCVisualManager:: OnDrawMenuSystemButton](#ondrawmenusystembutton)|메뉴 시스템 단추 **닫기**, **최소화**, **최대화** 및 **복원을** 그릴 때 프레임 워크에서 호출 됩니다.|
 |[CMFCVisualManager:: Ondraw미니 프레임 테두리](#ondrawminiframeborder)||
 |[CMFCVisualManager:: OnDrawOutlookBarSplitter](#ondrawoutlookbarsplitter)|Outlook 표시줄의 분할자를 그릴 때 프레임 워크에서 호출 됩니다. 분할자는 컨트롤을 그룹화 하는 데 사용 되는 가로 막대형입니다.|
 |[CMFCVisualManager:: OnDrawOutlookPageButtonBorder](#ondrawoutlookpagebuttonborder)|Outlook 페이지 단추의 테두리를 그릴 때 프레임 워크에서 호출 됩니다. Outlook 페이지 단추는 Outlook 표시줄 창에 표시할 수 있는 것 보다 많은 단추가 포함 된 경우에 나타납니다.|
@@ -475,13 +476,13 @@ class CMFCVisualManager : public CMFCBaseVisualManager
 |[CMFCVisualManager:: OnDrawRibbonGalleryButton](#ondrawribbongallerybutton)||
 |[CMFCVisualManager:: Ondraw리본 Keytip](#ondrawribbonkeytip)||
 |[CMFCVisualManager:: Ondraw리본 레이블](#ondrawribbonlabel)|리본 레이블을 그릴 때 프레임 워크에서 호출 됩니다.|
-|[CMFCVisualManager:: OnDrawRibbonMainPanelButtonBorder](#ondrawribbonmainpanelbuttonborder)|**주** 패널에 배치 되는 리본 단추의 테두리를 그릴 때 프레임 워크에서 호출 됩니다. **주** 패널은 사용자가 **기본 단추**를 클릭할 때 표시 되는 패널입니다.|
+|[CMFCVisualManager:: OnDrawRibbonMainPanelButtonBorder](#ondrawribbonmainpanelbuttonborder)|**주** 패널에 배치 되는 리본 단추의 테두리를 그릴 때 프레임 워크에서 호출 됩니다. **주** 패널은 사용자가 **기본 단추** 를 클릭할 때 표시 되는 패널입니다.|
 |[CMFCVisualManager:: OnDrawRibbonMainPanelFrame](#ondrawribbonmainpanelframe)|**주** 패널 주위에 프레임을 그릴 때 프레임 워크에서 호출 됩니다.|
 |[CMFCVisualManager:: Ondraw리본 Menucheckframe](#ondrawribbonmenucheckframe)||
 |[CMFCVisualManager:: Ondraw리본 패널](#ondrawribbonpanel)|리본 패널을 그릴 때 프레임 워크에서 호출 됩니다.|
 |[CMFCVisualManager:: OnDrawRibbonPanelCaption](#ondrawribbonpanelcaption)|리본 패널의 캡션을 그릴 때 프레임 워크에서 호출 됩니다.|
 |[CMFCVisualManager:: Ondraw리본 Progressbar](#ondrawribbonprogressbar)|[Cmfc리본 progressbar](../../mfc/reference/cmfcribbonprogressbar-class.md) 개체를 그릴 때 프레임 워크에서 호출 됩니다.|
-|[CMFCVisualManager:: OnDrawRibbonQuickAccessToolBarSeparator](#ondrawribbonquickaccesstoolbarseparator)|리본 메뉴의 **빠른 액세스 도구 모음**에 구분 기호를 그릴 때 프레임 워크에서 호출 됩니다.|
+|[CMFCVisualManager:: OnDrawRibbonQuickAccessToolBarSeparator](#ondrawribbonquickaccesstoolbarseparator)|리본 메뉴의 **빠른 액세스 도구 모음** 에 구분 기호를 그릴 때 프레임 워크에서 호출 됩니다.|
 |[CMFCVisualManager:: OnDrawRibbonRecentFilesFrame](#ondrawribbonrecentfilesframe)|최근 파일 목록 주위에 프레임을 그릴 때 프레임 워크에서 호출 됩니다.|
 |[CMFCVisualManager:: OnDrawRibbonSliderChannel](#ondrawribbonsliderchannel)|[Cmfc리본 슬라이더](../../mfc/reference/cmfcribbonslider-class.md) 개체의 채널을 그릴 때 프레임 워크에서 호출 됩니다.|
 |[CMFCVisualManager:: OnDrawRibbonSliderThumb](#ondrawribbonsliderthumb)|개체의 엄지 단추를 그릴 때 프레임 워크에서 호출 `CMFCRibbonSlider` 됩니다.|
@@ -788,7 +789,7 @@ virtual COLORREF GetAutoHideButtonTextColor(CMFCAutoHideButton* pButton);
 
 ### <a name="return-value"></a>반환 값
 
-*Pbutton*의 텍스트 색을 지정 하는 [colorref](/windows/win32/gdi/colorref) 매개 변수입니다.
+*Pbutton* 의 텍스트 색을 지정 하는 [colorref](/windows/win32/gdi/colorref) 매개 변수입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -825,7 +826,7 @@ virtual COLORREF GetCaptionBarTextColor(CMFCCaptionBar* pBar);
 
 ### <a name="return-value"></a>반환 값
 
-*Pbar*의 텍스트 색을 나타내는 [colorref](/windows/win32/gdi/colorref) 매개 변수입니다.
+*Pbar* 의 텍스트 색을 나타내는 [colorref](/windows/win32/gdi/colorref) 매개 변수입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -979,7 +980,7 @@ virtual CSize GetNcBtnSize(BOOL bSmall) const;
 
 ### <a name="remarks"></a>설명
 
-시스템 단추는 **닫기**, **최소화**, **최대화**및 **복원**명령에 매핑되는 프레임 창의 캡션에 있는 단추입니다. 이러한 단추의 크기는 현재 비주얼 관리자에 따라 다릅니다. 응용 프로그램의 시스템 단추 크기를 사용자 지정 하려면이 메서드를 재정의 합니다.
+시스템 단추는 **닫기**, **최소화**, **최대화** 및 **복원** 명령에 매핑되는 프레임 창의 캡션에 있는 단추입니다. 이러한 단추의 크기는 현재 비주얼 관리자에 따라 다릅니다. 응용 프로그램의 시스템 단추 크기를 사용자 지정 하려면이 메서드를 재정의 합니다.
 
 ## <a name="cmfcvisualmanagergetpopupmenubordersize"></a><a name="getpopupmenubordersize"></a> CMFCVisualManager:: GetPopupMenuBorderSize
 
@@ -1022,7 +1023,7 @@ virtual COLORREF GetPropertyGridGroupColor(CMFCPropertyGridCtrl* pPropList);
 
 ### <a name="return-value"></a>반환 값
 
-*PPropList*의 배경색을 나타내는 [colorref](/windows/win32/gdi/colorref) 매개 변수입니다.
+*PPropList* 의 배경색을 나타내는 [colorref](/windows/win32/gdi/colorref) 매개 변수입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1409,12 +1410,12 @@ virtual COLORREF GetToolbarButtonTextColor(
 *pButton*<br/>
 진행 도구 모음 단추에 대 한 포인터입니다.
 
-*상태*<br/>
+*state*<br/>
 진행 도구 모음 단추의 상태입니다.
 
 ### <a name="return-value"></a>반환 값
 
-*상태가*표시 된 상태를 포함 하는 경우 *pbutton* 의 텍스트 색입니다.
+*상태가* 표시 된 상태를 포함 하는 경우 *pbutton* 의 텍스트 색입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1820,7 +1821,7 @@ virtual BOOL OnDrawBrowseButton(
 *pEdit*<br/>
 진행 편집 컨트롤에 대 한 포인터입니다. 시각적 관리자가이 편집 컨트롤에 대 한 찾아보기 단추를 그립니다.
 
-*상태*<br/>
+*state*<br/>
 진행 단추의 상태를 지정 하는 열거형 값입니다.
 
 *clrText*<br/>
@@ -1857,7 +1858,7 @@ virtual void OnDrawButtonBorder(
 *rect*<br/>
 진행 도구 모음 단추의 경계를 지정 하는 사각형입니다.
 
-*상태*<br/>
+*state*<br/>
 진행 도구 모음 단추의 현재 상태를 지정 하는 열거형 데이터 형식입니다.
 
 ### <a name="remarks"></a>설명
@@ -2001,7 +2002,7 @@ virtual void OnDrawCaptionButton (
 진행 캡션 단추를 사용할 수 없는지 여부를 지정 하는 부울 매개 변수입니다.
 
 *nImageID*<br/>
-진행 단추에 사용할 아이콘의 이미지 인덱스입니다. *NImageID* 가-1 인 경우이 메서드는 *pbutton*에 기록 된 이미지 인덱스를 사용 합니다.
+진행 단추에 사용할 아이콘의 이미지 인덱스입니다. *NImageID* 가-1 인 경우이 메서드는 *pbutton* 에 기록 된 이미지 인덱스를 사용 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -2258,7 +2259,7 @@ virtual void OnDrawFloatingToolbarBorder(
 
 부동 도구 모음은 미니 프레임 창으로 표시 되는 도구 모음입니다. 일반적으로이는 사용자가 더 이상 도킹 되지 않도록 도구 모음을 끌 때 발생 합니다.
 
-테두리의 크기는 *rectBorderSize*의 해당 매개 변수에 의해 지정 됩니다. 예를 들어 도구 모음의 위쪽 테두리 너비는로 지정 됩니다 `rectBorderSize.top` .
+테두리의 크기는 *rectBorderSize* 의 해당 매개 변수에 의해 지정 됩니다. 예를 들어 도구 모음의 위쪽 테두리 너비는로 지정 됩니다 `rectBorderSize.top` .
 
 파생 된 비주얼 관리자에서이 메서드를 재정의 하 여 부동 도구 모음의 테두리 모양을 사용자 지정 합니다.
 
@@ -2544,7 +2545,7 @@ virtual void OnDrawMenuSystemButton(
 
 ### <a name="remarks"></a>설명
 
-메뉴 시스템 단추는 제목 표시줄에 있는 **닫기**, **최소화**, **최대화**및 **복원** 단추입니다.
+메뉴 시스템 단추는 제목 표시줄에 있는 **닫기**, **최소화**, **최대화** 및 **복원** 단추입니다.
 
 이 메서드의 기본 구현에서는 DFC_CAPTION 형식의 [CDC::D rawframecontrol](../../mfc/reference/cdc-class.md#drawframecontrol) 를 호출 합니다. 파생 된 visual manager 클래스에서이 메서드를 재정의 하 여 시스템 단추의 모양을 사용자 지정 합니다.
 
@@ -2773,7 +2774,7 @@ virtual void OnDrawRibbonApplicationButton(
 
 ### <a name="remarks"></a>설명
 
-**주 단추의**모양을 사용자 지정 하려면 파생 된 visual manager에서이 메서드를 재정의 합니다.
+**주 단추의** 모양을 사용자 지정 하려면 파생 된 visual manager에서이 메서드를 재정의 합니다.
 
 ## <a name="cmfcvisualmanagerondrawribbonbuttonborder"></a><a name="ondrawribbonbuttonborder"></a> CMFCVisualManager:: Ondraw리본 Buttonborder
 
@@ -3350,7 +3351,7 @@ virtual void OnDrawRibbonQuickAccessToolBarSeparator(
 
 ### <a name="remarks"></a>설명
 
-**빠른 실행 도구 모음**에서 리본 구분 기호의 모양을 사용자 지정 하려면 파생 클래스에서이 메서드를 재정의 합니다.
+**빠른 실행 도구 모음** 에서 리본 구분 기호의 모양을 사용자 지정 하려면 파생 클래스에서이 메서드를 재정의 합니다.
 
 ## <a name="cmfcvisualmanagerondrawribbonrecentfilesframe"></a><a name="ondrawribbonrecentfilesframe"></a> CMFCVisualManager:: OnDrawRibbonRecentFilesFrame
 
@@ -3782,7 +3783,7 @@ virtual void OnDrawStatusBarProgress(
 진행 진행률 표시줄의 초기 색을 나타내는 [Colorref](/windows/win32/gdi/colorref) 매개 변수입니다. 값은 색 그라데이션의 시작 또는 진행률 표시줄의 전체 색 중 하나입니다.
 
 *clrProgressBarDest*<br/>
-진행 진행률 표시줄에 대 한 색 그라데이션의 끝을 나타내는 COLORREF 매개 변수입니다. *ClrProgressBarDest* 가-1 인 경우 프레임 워크는 진행률 표시줄을 색 그라데이션으로 그리지 않습니다. 대신, 전체 진행률 표시줄을 *Clrbar*에 지정 된 색으로 채웁니다.
+진행 진행률 표시줄에 대 한 색 그라데이션의 끝을 나타내는 COLORREF 매개 변수입니다. *ClrProgressBarDest* 가-1 인 경우 프레임 워크는 진행률 표시줄을 색 그라데이션으로 그리지 않습니다. 대신, 전체 진행률 표시줄을 *Clrbar* 에 지정 된 색으로 채웁니다.
 
 *clrProgressText*<br/>
 진행 현재 진행률에 대 한 텍스트 표현의 텍스트 색을 나타내는 COLORREF 매개 변수입니다. *BProgressText* 가 FALSE로 설정 되어 있으면이 매개 변수는 무시 됩니다.
@@ -3892,7 +3893,7 @@ virtual void OnDrawTabCloseButton(
 
 ### <a name="remarks"></a>설명
 
-파생 된 비주얼 관리자에서이 메서드를 재정의 하 여 *pTabWnd*의 활성 탭에 있는 **닫기** 단추의 모양을 사용자 지정 합니다.
+파생 된 비주얼 관리자에서이 메서드를 재정의 하 여 *pTabWnd* 의 활성 탭에 있는 **닫기** 단추의 모양을 사용자 지정 합니다.
 
 ## <a name="cmfcvisualmanagerondrawtabcontent"></a><a name="ondrawtabcontent"></a> CMFCVisualManager:: OnDrawTabContent
 
@@ -3998,7 +3999,7 @@ virtual void OnDrawTask(
 
 ### <a name="remarks"></a>설명
 
-프레임 워크는 작업 표시줄에 아이콘 및 텍스트로 작업을 표시 합니다. 이 *매개 변수* 는 *ptask*로 표시 된 작업에 대 한 아이콘을 포함 합니다.
+프레임 워크는 작업 표시줄에 아이콘 및 텍스트로 작업을 표시 합니다. 이 *매개 변수* 는 *ptask* 로 표시 된 작업에 대 한 아이콘을 포함 합니다.
 
 작업 표시줄에서 작업의 모양을 사용자 지정 하려면 파생 클래스에서이 메서드를 재정의 합니다.
 
@@ -4327,7 +4328,7 @@ virtual void OnFillBarBackground(
 
 이 메서드의 기본 구현에서는 막대의 배경을 전역 변수의 3d 배경색으로 채웁니다 `afxGlobalData` . 파생 된 비주얼 관리자에서이 메서드를 재정의 하 여 창의 배경을 사용자 지정 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 다음 예제에서는 클래스에서를 사용 하는 방법을 보여 줍니다 `OnFillBarBackground` `CMFCVisualManager` . 이 코드 조각은 [Outlook Demo 샘플](../../overview/visual-cpp-samples.md)의 일부입니다.
 
@@ -4356,7 +4357,7 @@ virtual void OnFillButtonInterior(
 *rect*<br/>
 진행 도구 모음 단추의 경계를 지정 하는 사각형입니다.
 
-*상태*<br/>
+*state*<br/>
 진행 도구 모음 단추의 상태입니다.
 
 ### <a name="remarks"></a>설명
@@ -4853,7 +4854,7 @@ virtual void OnHighlightMenuItem(
 
 ### <a name="remarks"></a>설명
 
-이 메서드의 기본 구현에서는 *Pbutton* 또는 *clrtext*매개 변수를 사용 하지 않습니다. *Rect* 에 지정 된 사각형을 표준 배경색으로 채웁니다.
+이 메서드의 기본 구현에서는 *Pbutton* 또는 *clrtext* 매개 변수를 사용 하지 않습니다. *Rect* 에 지정 된 사각형을 표준 배경색으로 채웁니다.
 
 파생 된 visual manager에서이 메서드를 재정의 하 여 강조 표시 된 메뉴 항목의 모양을 사용자 지정 합니다. *Clrtext* 매개 변수를 사용 하 여 강조 표시 된 메뉴 항목의 텍스트 색을 수정할 수 있습니다.
 
@@ -5090,7 +5091,7 @@ void SetShadowHighlightedImage(BOOL bShadow = TRUE);
 
 기본적으로이 기능은 사용할 수 없습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

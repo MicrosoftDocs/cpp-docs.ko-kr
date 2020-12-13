@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 방법: 코드에서 추적 구현'
 title: '방법: 코드에서 추적 구현'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CRectTracker class [MFC], implementing trackers
 ms.assetid: baaeca2c-5114-485f-bf58-8807db1bc973
-ms.openlocfilehash: 3d71543261021c7e20041d317401b7b7b8d0616e
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 1b9211978c6ba5169a2d55e272b7e3ddf0678fd6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84621664"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330210"
 ---
 # <a name="how-to-implement-tracking-in-your-code"></a>방법: 코드에서 추적 구현
 
@@ -27,7 +28,7 @@ OLE 항목을 추적 하려면 항목을 클릭 하거나 문서 보기를 업�
 |해치 테두리|항목이 현재 활성 상태입니다.|
 |해칭 패턴 오버레이 항목|항목의 서버가 열려 있습니다.|
 
-OLE 항목의 상태를 확인 하 고 적절 한 스타일을 설정 하는 프로시저를 사용 하 여이 초기화를 쉽게 처리할 수 있습니다. `SetupTracker`OCLIENT 샘플에 있는 함수는 추적기 초기화를 보여 줍니다. 이 함수에 대 한 매개 변수는 tracker ( *ptracker*;)의 주소입니다. tracker와 관련 된 클라이언트 항목에 대 한 포인터입니다. *Pitem*; *pTrueRect*사각형에 대 한 포인터입니다. 이 함수의 전체 예제는 MFC OLE 샘플 [OCLIENT](../overview/visual-cpp-samples.md)를 참조 하세요.
+OLE 항목의 상태를 확인 하 고 적절 한 스타일을 설정 하는 프로시저를 사용 하 여이 초기화를 쉽게 처리할 수 있습니다. `SetupTracker`OCLIENT 샘플에 있는 함수는 추적기 초기화를 보여 줍니다. 이 함수에 대 한 매개 변수는 tracker ( *ptracker*;)의 주소입니다. tracker와 관련 된 클라이언트 항목에 대 한 포인터입니다. *Pitem*; *pTrueRect* 사각형에 대 한 포인터입니다. 이 함수의 전체 예제는 MFC OLE 샘플 [OCLIENT](../overview/visual-cpp-samples.md)를 참조 하세요.
 
 **Setuptracker** 코드 예제는 단일 함수를 제공 합니다. 함수의 줄은 함수의 기능에 대 한 설명과 함께 제공 됩니다.
 
@@ -55,4 +56,4 @@ OLE 항목의 상태를 확인 하 고 적절 한 스타일을 설정 하는 프
 
 ## <a name="see-also"></a>참고 항목
 
-[추적기: OLE 애플리케이션에서 추적기 구현](trackers-implementing-trackers-in-your-ole-application.md)
+[추적기: OLE 응용 프로그램에서 추적기 구현](trackers-implementing-trackers-in-your-ole-application.md)

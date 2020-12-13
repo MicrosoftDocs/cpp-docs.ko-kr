@@ -1,15 +1,16 @@
 ---
+description: Document-Template 클래스에 대해 자세히 알아보세요.
 title: 문서 템플릿 클래스
 ms.date: 11/04/2016
 helpviewer_keywords:
 - document templates [MFC], classes
 ms.assetid: 901749e9-8048-44a0-b5e2-361554650a73
-ms.openlocfilehash: dffde80093f98fc1c81a6c20dfaf92b82e3b4c78
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: f9e67cc8f6a115345f6b1f42c2064fcbed7be47e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618991"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330276"
 ---
 # <a name="document-template-classes"></a>문서 템플릿 클래스
 

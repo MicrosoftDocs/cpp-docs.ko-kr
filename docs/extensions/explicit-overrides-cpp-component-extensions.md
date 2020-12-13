@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 명시적 재정의 (c + +/CLI 및 c + +/CX)'
 title: 명시적 재정의(C++/CLI 및 C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - overriding, override [C++]
 ms.assetid: 4ec3eaf5-163b-4df8-8f16-7a2ec04c3d0f
-ms.openlocfilehash: c199301794daaa140ede2fd99b0ae755cea70f97
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a24460f8135ff5379f14533dbaff83bde8918e4c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80172375"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330336"
 ---
 # <a name="explicit-overrides--ccli-and-ccx"></a>명시적 재정의(C++/CLI 및 C++/CX)
 
@@ -61,7 +62,7 @@ overriding-function-declarator = function { overriding-function-definition }
 
 컴파일러 옵션: `/clr`
 
-### <a name="examples"></a>예
+### <a name="examples"></a>예제
 
 다음 코드 예제에서는 명시적 재정의를 사용하지 않는, 기본 인터페이스 멤버의 간단한 암시적 재정의 및 구현을 보여 줍니다.
 
@@ -174,4 +175,4 @@ public:
 
 ## <a name="see-also"></a>참고 항목
 
-[.NET 및 UWP용 구성 요소 확장](component-extensions-for-runtime-platforms.md)
+[.NET 및 UWP 용 구성 요소 확장](component-extensions-for-runtime-platforms.md)

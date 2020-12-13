@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4816'
 title: 컴파일러 경고(수준 4) C4816
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4816
 ms.assetid: 60f730ae-d942-4db9-ab97-41d4a874d8da
-ms.openlocfilehash: e96cb81d78b0e49e6978ff6ec78cdbfcfdc89e6d
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: b48f6f0141966a75a9a15f3f172a32fd81a52354
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74990065"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330501"
 ---
 # <a name="compiler-warning-level-4-c4816"></a>컴파일러 경고(수준 4) C4816
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: concurrency 네임 스페이스 열거형'
 title: concurrency 네임스페이스 열거형
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ f1_keywords:
 - CONCRT/concurrency::join_type
 - CONCRT/concurrency::message_status Enumeration
 ms.assetid: a40e3b2d-ad21-4229-9880-2cfa84f7ab8f
-ms.openlocfilehash: 8b9aec0a3464b921ca80f731ac4a3c26e72ef34e
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9d4f5e2fcdb2beb19d65f96687b53e52ba03ed8c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832245"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331299"
 ---
 # <a name="concurrency-namespace-enums"></a>concurrency 네임스페이스 열거형
 
@@ -54,7 +55,7 @@ enum agent_status;
 
 ### <a name="values"></a>값
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |`agent_canceled`|`agent`을 취소했습니다.|
 |`agent_created`|`agent`이 만들어졌지만 시작 되지 않았습니다.|
@@ -80,7 +81,7 @@ enum Agents_EventType;
 
 ### <a name="values"></a>값
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |`AGENTS_EVENT_CREATE`|개체의 생성을 나타내는 이벤트 형식입니다.|
 |`AGENTS_EVENT_DESTROY`|개체의 제거를 나타내는 이벤트 형식입니다.|
@@ -105,7 +106,7 @@ enum ConcRT_EventType;
 
 ### <a name="values"></a>값
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |`CONCRT_EVENT_ATTACH`|스케줄러에 연결 하는 동작을 나타내는 이벤트 형식입니다.|
 |`CONCRT_EVENT_BLOCK`|컨텍스트 차단의 동작을 나타내는 이벤트 형식입니다.|
@@ -131,7 +132,7 @@ enum Concrt_TraceFlags;
 
 ### <a name="values"></a>값
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |`AgentEventFlag`||
 |`AllEventsFlag`||
@@ -155,7 +156,7 @@ enum CriticalRegionType;
 
 ### <a name="values"></a>값
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |`InsideCriticalRegion`|컨텍스트가 위험 영역 내에 있음을 나타냅니다. 중요 한 지역 내에 있는 경우 비동기 일시 중단 스케줄러에서 숨겨집니다. 이러한 일시 중단이 발생 하면 리소스 관리자 스레드가 실행 될 때까지 기다렸다가 스케줄러를 다시 호출 하는 대신 다시 시작 합니다. 이러한 지역 내에서 수행 되는 모든 잠금은 매우 신중 하 게 수행 해야 합니다.|
 |`InsideHyperCriticalRegion`|컨텍스트가 매우 중요 한 영역 내에 있음을 나타냅니다. 중요 한 영역 내에 있는 경우 동기 및 비동기 일시 중단 모두 스케줄러에서 숨겨집니다. 이러한 일시 중단 또는 차단이 발생 해야 하는 경우 resource manager는 스레드가 실행 될 때까지 기다린 후 스케줄러를 다시 호출 하는 대신 다시 시작 하면 됩니다. 이러한 지역 내에서 수행 되는 잠금은 이러한 지역 외부에서 실행 되는 코드와 공유 되어서는 안 됩니다. 이렇게 하면 예기치 않은 교착 상태가 발생 합니다.|
@@ -175,7 +176,7 @@ enum DynamicProgressFeedbackType;
 
 ### <a name="values"></a>값
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |`ProgressFeedbackDisabled`|스케줄러는 진행률 정보를 수집 하지 않습니다. 균형 재조정은 기본 하드웨어 스레드의 구독 수준에 따라서만 수행 됩니다. 구독 수준에 대 한 자세한 내용은 [Iexecutionresource:: CurrentSubscriptionLevel](IExecutionResource-structure.md)을 참조 하세요.<br /><br /> 이 값은 런타임에 사용 하도록 예약 되어 있습니다.|
 |`ProgressFeedbackEnabled`|Scheduler는 진행률 정보를 수집 하 여 resource manager에 전달 합니다. 리소스 관리자는이 통계 정보를 활용 하 여 기본 하드웨어 스레드의 구독 수준 외에도 스케줄러를 대신 하 여 리소스의 균형을 조정 합니다. 구독 수준에 대 한 자세한 내용은 [Iexecutionresource:: CurrentSubscriptionLevel](IExecutionResource-structure.md)을 참조 하세요.|
@@ -190,7 +191,7 @@ enum join_type;
 
 ### <a name="values"></a>값
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |`greedy`|Greedy `join` 메시징 블록은 전파 시 즉시 메시지를 수락 합니다. 이는 보다 효율적 이지만 네트워크 구성에 따라 라이브 잠금이 발생할 수 있습니다.|
 |`non_greedy`|Non-greedy `join` 메시징 블록은 메시지를 연기 하 고 모두 도착 한 후에 시도 하 여 사용 합니다. 이러한 작업은 작동 하지만 속도가 느립니다.|
@@ -209,7 +210,7 @@ enum message_status;
 
 ### <a name="values"></a>값
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |`accepted`|대상에서 메시지를 수락 했습니다.|
 |`declined`|대상이 메시지를 수락 하지 않았습니다.|
@@ -230,7 +231,7 @@ enum PolicyElementKey;
 
 ### <a name="values"></a>값
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |`ContextPriority`|스케줄러에서 각 컨텍스트의 운영 체제 스레드 우선 순위입니다. 이 키가 값으로 설정 되 면 `INHERIT_THREAD_PRIORITY` 스케줄러의 컨텍스트가 스케줄러를 만든 스레드의 우선 순위를 상속 하 게 됩니다.<br /><br /> 유효한 값: Windows `SetThreadPriority` 함수와 특수 값에 대 한 유효한 값 `INHERIT_THREAD_PRIORITY`<br /><br /> 기본값: `THREAD_PRIORITY_NORMAL`|
 |`ContextStackSize`|스케줄러에서 각 컨텍스트의 예약 된 스택 크기 (kb)입니다.<br /><br /> 유효한 값: 양의 정수<br /><br /> 기본값 `0` 은 스택 크기에 대 한 프로세스의 기본값을 사용 함을 나타냅니다.|
@@ -258,7 +259,7 @@ enum SchedulerType;
 
 ### <a name="values"></a>값
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |`ThreadScheduler`|일반 Win32 스레드의 명시적 요청을 나타냅니다.|
 |`UmsThreadDefault`|UMS (사용자 모드 예약 가능) 스레드는 Visual Studio 2013 동시성 런타임에서 지원 되지 않습니다. `UmsThreadDefault`를 `SchedulerType` 정책의 값으로 사용하면 오류가 발생하지 않습니다. 그러나 해당 정책을 사용하여 만들어진 스케줄러는 기본적으로 Win32 스레드를 사용합니다.|
@@ -277,7 +278,7 @@ enum SchedulingProtocolType;
 
 ### <a name="values"></a>값
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |`EnhanceForwardProgress`|스케줄러는 각 작업을 실행 한 후 일정 그룹을 통해 라운드 로빈을 선호 합니다. 차단을 해제 한 컨텍스트는 일반적으로 FIFO (선입 선출) 방식으로 예약 됩니다. 가상 프로세서는 차단 해제 컨텍스트를 캐시 하지 않습니다.|
 |`EnhanceScheduleGroupLocality`|스케줄러는 다른 일정 그룹으로 이동 하기 전에 현재 일정 그룹 내의 작업에 대 한 작업을 계속 하는 것을 선호 합니다. 차단 해제 된 컨텍스트는 가상 프로세서당 캐시 되며 일반적으로이를 차단 해제 하는 가상 프로세서에 의해 LIFO (선입 authentication) 방식으로 예약 됩니다.|
@@ -296,7 +297,7 @@ enum SwitchingProxyState;
 
 ### <a name="values"></a>값
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |`Blocking`|호출 스레드가 협조적으로 차단 되며 이후에 다시 실행 되 고 다른 작업을 수행할 때까지 호출자가 독점적으로 소유 해야 함을 나타냅니다.|
 |`Idle`|는 호출 스레드가 스케줄러에서 더 이상 필요 하지 않으며 리소스 관리자 반환 되 고 있음을 나타냅니다. 디스패치할 컨텍스트는 더 이상 리소스 관리자에서 활용할 수 없습니다.|
@@ -318,7 +319,7 @@ enum task_group_status;
 
 ### <a name="values"></a>값
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |`canceled`|`task_group` 또는 `structured_task_group` 개체가 취소되었습니다. 하나 이상의 작업이 실행되지 않았을 수 있습니다.|
 |`completed`|`task_group` 또는 `structured_task_group` 개체의 큐에 대기 중인 작업이 성공적으로 완료되었습니다.|
@@ -338,7 +339,7 @@ enum WinRTInitializationType;
 
 ### <a name="values"></a>값
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |`DoNotInitializeWinRT`|애플리케이션이 Windows 8 또는 그 이상 버전의 운영 체제에서 실행될 경우 스케줄러 내의 스레드는 Windows 런타임을 초기화하지 않습니다.|
 |`InitializeWinRTAsMTA`|애플리케이션이 Windows 8 또는 그 이상 버전의 운영 체제에서 실행할 경우 스케줄러 내의 각 스레드는 Windows 런타임을 초기화하고 이것을 멀티스레드의 일부로 선언합니다.|

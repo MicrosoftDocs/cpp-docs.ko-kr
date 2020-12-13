@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: _cscanf_s, _cscanf_s_l, _cwscanf_s, _cwscanf_s_l'
 title: _cscanf_s, _cscanf_s_l, _cwscanf_s, _cwscanf_s_l
 ms.date: 11/04/2016
 api_name:
@@ -51,12 +52,12 @@ helpviewer_keywords:
 - _tcscanf_s function
 - tcscanf_s_l function
 ms.assetid: 9ccab74d-916f-42a6-93d8-920525efdf4b
-ms.openlocfilehash: a869ae4ab1b5f81c4198f620662604b79f19c2ab
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e379d454b9acd9cda75eb41721f55f0818004858
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234239"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332936"
 ---
 # <a name="_cscanf_s-_cscanf_s_l-_cwscanf_s-_cwscanf_s_l"></a>_cscanf_s, _cscanf_s_l, _cwscanf_s, _cwscanf_s_l
 
@@ -99,20 +100,20 @@ int _cwscanf_s_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 성공적으로 변환되고 할당된 필드 수입니다. 읽혀졌지만 할당되지 않은 필드는 반환 값에 포함되지 않습니다. 파일의 끝에서 읽으려고 시도 하는 경우 반환 값은 **EOF** 입니다. 키보드 입력이 운영 체제 명령줄 수준에서 리디렉션될 때 발생할 수 있습니다. 반환 값이 0이면 할당된 필드가 없음을 의미합니다.
 
-이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. *Format* 이 null 포인터인 경우 이러한 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **EOF** 를 반환 하 고 **errno** 는 **EINVAL**로 설정 됩니다.
+이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. *Format* 이 null 포인터인 경우 이러한 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **EOF** 를 반환 하 고 **errno** 는 **EINVAL** 로 설정 됩니다.
 
 ## <a name="remarks"></a>설명
 
-**_Cscanf_s** 함수는 콘솔에서 *인수로*지정 된 위치로 데이터를 직접 읽습니다. [_getche](getch-getwch.md) 함수는 문자를 읽는 데 사용합니다. 각 선택적 매개 변수 *는 형식의 형식*지정자에 해당 하는 형식의 변수에 대 한 포인터 여야 합니다. 이 형식은 입력 필드의 해석을 제어 하 고 [scanf_s](scanf-scanf-l-wscanf-wscanf-l.md) 함수에 대 한 *형식* 매개 변수와 동일한 형식 및 기능을 가집니다. **_Cscanf_s** 는 일반적으로 입력 문자를 에코 하지만 마지막 호출이 **_ungetch**된 경우에는이를 수행 하지 않습니다.
+**_Cscanf_s** 함수는 콘솔에서 *인수로* 지정 된 위치로 데이터를 직접 읽습니다. [_getche](getch-getwch.md) 함수는 문자를 읽는 데 사용합니다. 각 선택적 매개 변수 *는 형식의 형식* 지정자에 해당 하는 형식의 변수에 대 한 포인터 여야 합니다. 이 형식은 입력 필드의 해석을 제어 하 고 [scanf_s](scanf-scanf-l-wscanf-wscanf-l.md) 함수에 대 한 *형식* 매개 변수와 동일한 형식 및 기능을 가집니다. **_Cscanf_s** 는 일반적으로 입력 문자를 에코 하지만 마지막 호출이 **_ungetch** 된 경우에는이를 수행 하지 않습니다.
 
-**Scanf** 패밀리에 있는 다른 보안 버전의 함수와 마찬가지로 **_cscanf_s** 및 **_cswscanf_s** 에는 형식 필드 문자 **c**, **c**, **s**, **s**및 **[** 에 대 한 크기 인수가 필요 합니다. 자세한 내용은 [scanf 너비 사양](../../c-runtime-library/scanf-width-specification.md)을 참조하세요.
+**Scanf** 패밀리에 있는 다른 보안 버전의 함수와 마찬가지로 **_cscanf_s** 및 **_cswscanf_s** 에는 형식 필드 문자 **c**, **c**, **s**, **s** 및 **[** 에 대 한 크기 인수가 필요 합니다. 자세한 내용은 [scanf 너비 사양](../../c-runtime-library/scanf-width-specification.md)을 참조하세요.
 
 > [!NOTE]
-> Size 매개 변수는 size_t이 **`unsigned`** 아니라 형식 **size_t**입니다.
+> Size 매개 변수는 size_t이 **`unsigned`** 아니라 형식 입니다.
 
 **_L** 접미사가 있는 이러한 함수 버전은 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하 고는 동일 합니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2883'
 title: 컴파일러 오류 C2883
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2883
 ms.assetid: 5c6d689d-ed42-41ad-b5c0-e9c2e0b8c356
-ms.openlocfilehash: fcd97a2f362e50ec856e53da2603c29e07595670
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2ff905f5f1ca8fea4f175799e576e4538bbab164
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233472"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332346"
 ---
 # <a name="compiler-error-c2883"></a>컴파일러 오류 C2883
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 출력 (장치 컨텍스트) 클래스'
 title: 출력(디바이스 컨텍스트) 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - painting classes [MFC]
 - output classes [MFC]
 ms.assetid: 35fd6435-a38e-42c6-a3fa-cd6f39370fc3
-ms.openlocfilehash: b15f5034604f9d6b67574288140b79b144692478
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: e148999f2423165e7026bf68970fe9fc145930d0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615357"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331782"
 ---
 # <a name="output-device-context-classes"></a>출력(디바이스 컨텍스트) 클래스
 

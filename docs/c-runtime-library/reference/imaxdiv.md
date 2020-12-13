@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: imaxdiv'
 title: imaxdiv
 ms.date: 04/05/2018
 api_name:
@@ -24,12 +25,12 @@ f1_keywords:
 helpviewer_keywords:
 - imaxdiv function
 ms.assetid: 7d90126f-fdc2-4986-9cdf-94e4c9123d26
-ms.openlocfilehash: 298356da8e8e76c132b963ef4f71db6a3d0e74f7
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 3e1f417c1fb45b452b3cd07560bfec68d21fd1a8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91505635"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332776"
 ---
 # <a name="imaxdiv"></a>imaxdiv
 
@@ -58,7 +59,7 @@ imaxdiv_t imaxdiv(
 
 ## <a name="remarks"></a>설명
 
-**Imaxdiv** 함수는 *숫자로* 을 *denom* 로 나눈 다음 몫과 나머지를 계산 합니다. **Imaxdiv_t** 구조체에는 몫, **intmax_t** **q**및 나머지 **intmax_t** **rem**이 포함 됩니다. 몫의 부호는 수학적 몫의 부호와 동일 합니다. 몫의 절대 값은 수학적 몫의 절대 값보다 작은 가장 큰 정수입니다. 분모가 0이면 프로그램이 종료되고 오류 메시지가 표시됩니다.
+**Imaxdiv** 함수는 *숫자로* 을 *denom* 로 나눈 다음 몫과 나머지를 계산 합니다. **Imaxdiv_t** 구조체에는 몫, **intmax_t** **q** 및 나머지 **intmax_t** **rem** 이 포함 됩니다. 몫의 부호는 수학적 몫의 부호와 동일 합니다. 몫의 절대 값은 수학적 몫의 절대 값보다 작은 가장 큰 정수입니다. 분모가 0이면 프로그램이 종료되고 오류 메시지가 표시됩니다.
 
 ## <a name="requirements"></a>요구 사항
 

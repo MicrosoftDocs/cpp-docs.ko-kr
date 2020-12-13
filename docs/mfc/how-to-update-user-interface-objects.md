@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 방법: User-Interface 개체 업데이트'
 title: '방법: 사용자 인터페이스 개체 업데이트'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - commands [MFC], updating UI
 - enabling menus [MFC]
 ms.assetid: 82f09773-c978-427b-b321-05a6143b7369
-ms.openlocfilehash: aec4067a7b5854ef872cfcef19a15db8438dd795
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 32d7c033d03ba679fa295237c1c49c5060c731ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626396"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330169"
 ---
 # <a name="how-to-update-user-interface-objects"></a>방법: 사용자 인터페이스 개체 업데이트
 
@@ -32,7 +33,7 @@ ms.locfileid: "84626396"
 
 다음 항목에서는 업데이트 처리기를 사용 하는 방법을 설명 합니다.
 
-- [업데이트 처리기가 호출 되는 경우](when-update-handlers-are-called.md)
+- [업데이트 처리기가 호출되는 시점](when-update-handlers-are-called.md)
 
 - [ON_UPDATE_COMMAND_UI 매크로](on-update-command-ui-macro.md)
 

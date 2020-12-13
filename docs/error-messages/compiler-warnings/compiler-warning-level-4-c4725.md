@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4725'
 title: 컴파일러 경고(수준 4) C4725
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4725
 ms.assetid: effa0335-71c3-4b3b-8618-da4b9b46a95d
-ms.openlocfilehash: c86d1a5351adf5ba29752613f2301a11fb1b93ce
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 636f6fb18c3ffb18a2f4b845a4584324cf59d72a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74989513"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330561"
 ---
 # <a name="compiler-warning-level-4-c4725"></a>컴파일러 경고(수준 4) C4725
 

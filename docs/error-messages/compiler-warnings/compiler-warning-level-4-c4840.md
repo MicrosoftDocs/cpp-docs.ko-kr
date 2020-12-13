@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4840'
 title: 컴파일러 경고 (수준 4) C4840
 ms.date: 09/13/2018
 f1_keywords:
 - C4840
 helpviewer_keywords:
 - C4840
-ms.openlocfilehash: 649083d66d0c7a0ef11c742e56cbfb70e2e9b75f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a365dc38aff1ab9811407924f7f6e554d91c6f1e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80185206"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330466"
 ---
 # <a name="compiler-warning-level-4-c4840"></a>컴파일러 경고 (수준 4) C4840
 
@@ -49,7 +50,7 @@ int main()
 }
 ```
 
-`CStringW`를 사용 하 여 작성 및 관리 되는 문자열의 경우 제공 된 `operator LPCWSTR()`를 사용 하 여 `CStringW` 개체를 서식 문자열에 필요한 C 스타일 문자열 포인터로 캐스팅 해야 합니다.
+를 사용 하 여 작성 및 관리 되는 문자열의 경우 `CStringW` 제공 된를 `operator LPCWSTR()` 사용 하 여 `CStringW` 개체를 서식 문자열에 필요한 C 스타일 문자열 포인터로 캐스팅 해야 합니다.
 
 ```cpp
     CStringW str1;

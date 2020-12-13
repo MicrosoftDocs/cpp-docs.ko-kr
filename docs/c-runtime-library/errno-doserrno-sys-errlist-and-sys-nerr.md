@@ -1,4 +1,5 @@
 ---
+description: Errno, _doserrno, _sys_errlist 및 _sys_nerr에 대해 자세히 알아보세요.
 title: errno, _doserrno, _sys_errlist 및 _sys_nerr
 ms.date: 11/04/2016
 api_name:
@@ -24,12 +25,12 @@ helpviewer_keywords:
 - _sys_nerr global variable
 - sys_nerr global variable
 ms.assetid: adbec641-6d91-4e19-8398-9a34046bd369
-ms.openlocfilehash: 5b10d98dab41151290d4e44e031f659108b0c73c
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
-ms.translationtype: HT
+ms.openlocfilehash: b15091ebfffec891b09f5024b14a8ca7fe0d02e1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70944562"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331172"
 ---
 # <a name="errno-_doserrno-_sys_errlist-and-_sys_nerr"></a>errno, _doserrno, _sys_errlist 및 _sys_nerr
 
@@ -56,16 +57,16 @@ ms.locfileid: "70944562"
 |------------------|----------------------------|
 |`_doserrno`|[_get_doserrno](../c-runtime-library/reference/get-doserrno.md), [_set_doserrno](../c-runtime-library/reference/set-doserrno.md)|
 |`errno`|[_get_errno](../c-runtime-library/reference/get-errno.md), [_set_errno](../c-runtime-library/reference/set-errno.md)|
-|`_sys_errlist`, `_sys_nerr`|[strerror_s, _strerror_s, _wcserror_s, \__wcserror_s](../c-runtime-library/reference/strerror-s-strerror-s-wcserror-s-wcserror-s.md)|
+|`_sys_errlist`, `_sys_nerr`|[strerror_s, _strerror_s, _wcserror_s, \_ _wcserror_s](../c-runtime-library/reference/strerror-s-strerror-s-wcserror-s-wcserror-s.md)|
 
 라이브러리 수학 루틴이 [_matherr](../c-runtime-library/reference/matherr.md)을 호출하여 `errno`를 설정합니다. 수학 오류를 다르게 처리하려면 `_matherr` 참조 설명에 따라 고유한 루틴을 작성하고 이름을 `_matherr`로 지정합니다.
 
-다음 표에 있는 모든 `errno` 값은 \<errno.h>에서 미리 정의된 상수이며 UNIX와 호환됩니다. `ERANGE`, `EILSEQ` 및 `EDOM`만 ISO C99 표준에 지정되어 있습니다.
+`errno`다음 표의 모든 값은에서 미리 정의 된 상수 \<errno.h> 이며 UNIX와 호환 됩니다. `ERANGE`, `EILSEQ` 및 `EDOM`만 ISO C99 표준에 지정되어 있습니다.
 
 |상수|시스템 오류 메시지|값|
 |--------------|--------------------------|-----------|
 |`EPERM`|작업이 허용되지 않음|1|
-|`ENOENT`|해당 파일 또는 디렉터리 없음|2|
+|`ENOENT`|해당하는 파일이나 디렉터리가 없습니다.|2|
 |`ESRCH`|해당 프로세스 없음|3|
 |`EINTR`|중단된 함수|4|
 |`EIO`|I/O 오류|5|
@@ -79,7 +80,7 @@ ms.locfileid: "70944562"
 |`EACCES`|사용 권한이 거부됨|13|
 |`EFAULT`|잘못된 주소|14|
 |`EBUSY`|디바이스 또는 리소스 사용 중|16|
-|`EEXIST`|파일이 있음|17|
+|`EEXIST`|파일 존재 여부|17|
 |`EXDEV`|디바이스 간 연결|18|
 |`ENODEV`|해당 디바이스 없음|19|
 |`ENOTDIR`|디렉터리가 아님|20|
@@ -109,18 +110,18 @@ ms.locfileid: "70944562"
 
 |전역 매크로|필수 헤더|선택적 헤더|
 |------------------|---------------------|---------------------|
-|`errno`|\<errno.h> 또는 \<stdlib.h>, \<cerrno> 또는 \<cstdlib>(C++)||
-|`_doserrno`, `_sys_errlist`, `_sys_nerr`|\<stdlib.h>, \<cstdlib>(C++)|\<errno.h>, \<cerrno>(C++)|
+|`errno`|\<errno.h> or \<stdlib.h> , \<cerrno> or \<cstdlib> (c + +)||
+|`_doserrno`, `_sys_errlist`, `_sys_nerr`|\<stdlib.h>, \<cstdlib> (C + +)|\<errno.h>, \<cerrno> (C + +)|
 
-`_doserrno`, `_sys_errlist` 및 `_sys_nerr` 매크로는 Microsoft 확장입니다. 호환성에 대한 자세한 내용은 [호환성](../c-runtime-library/compatibility.md)을 참조하세요.
+`_doserrno`, `_sys_errlist` 및 `_sys_nerr` 매크로는 Microsoft 확장입니다. 호환성에 대한 자세한 내용은 [Compatibility](../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
 [전역 변수](../c-runtime-library/global-variables.md)<br/>
 [errno 상수](../c-runtime-library/errno-constants.md)<br/>
 [perror, _wperror](../c-runtime-library/reference/perror-wperror.md)<br/>
-[strerror, _strerror, _wcserror, \__wcserror](../c-runtime-library/reference/strerror-strerror-wcserror-wcserror.md)<br/>
-[strerror_s, _strerror_s, _wcserror_s, \__wcserror_s](../c-runtime-library/reference/strerror-s-strerror-s-wcserror-s-wcserror-s.md)<br/>
+[strerror, _strerror, _wcserror, \_ _wcserror](../c-runtime-library/reference/strerror-strerror-wcserror-wcserror.md)<br/>
+[strerror_s, _strerror_s, _wcserror_s, \_ _wcserror_s](../c-runtime-library/reference/strerror-s-strerror-s-wcserror-s-wcserror-s.md)<br/>
 [_get_doserrno](../c-runtime-library/reference/get-doserrno.md)<br/>
 [_set_doserrno](../c-runtime-library/reference/set-doserrno.md)<br/>
 [_get_errno](../c-runtime-library/reference/get-errno.md)<br/>

@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 방법: MFC 응용 프로그램에서 리본 리소스 로드'
 title: '방법: MFC 애플리케이션에서 리본 리소스 로드'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ribbon resource [MFC], loading
 ms.assetid: 1c76bb8f-6345-414a-9f3f-128815ceadc5
-ms.openlocfilehash: 47a3b94bbcb14c6c2923524db1f6a83b687e50e8
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 231acbd475bf84b2623eb44f9a3500ab94145d06
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626409"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330194"
 ---
 # <a name="how-to-load-a-ribbon-resource-from-an-mfc-application"></a>방법: MFC 애플리케이션에서 리본 리소스 로드
 
@@ -39,4 +40,4 @@ ms.locfileid: "84626409"
 
 ## <a name="see-also"></a>참고 항목
 
-[리본 디자이너(MFC)](ribbon-designer-mfc.md)
+[리본 디자이너 (MFC)](ribbon-designer-mfc.md)

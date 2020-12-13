@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: isinf'
 title: isinf
 ms.date: 01/31/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 - math/isinf
 helpviewer_keywords:
 - isinf function
-ms.openlocfilehash: 7366f340477bf1bb50ebe1e53bcec1f3e16e0863
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f174855ddbb8cc43fd7338d4254c0f03bf53967d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234096"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332645"
 ---
 # <a name="isinf"></a>isinf
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: isascii, __isascii, iswascii'
 title: isascii, __isascii, iswascii
 ms.date: 4/2/2020
 api_name:
@@ -39,12 +40,12 @@ helpviewer_keywords:
 - istascii function
 - iswascii function
 ms.assetid: ba4325ad-7cb3-4fb9-b096-58906d67971a
-ms.openlocfilehash: 3e04b85c9ce7519593802c21311315d534dce6a5
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 0d0a7964ba5b9a3133f100ea94fd4bac95407627
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919782"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332727"
 ---
 # <a name="isascii-__isascii-iswascii"></a>isascii, __isascii, iswascii
 
@@ -68,7 +69,7 @@ int iswascii(
 *c*<br/>
 테스트할 정수입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 **C** 가 ASCII 문자의 특정 표현인 경우 이러한 각 루틴은 0이 아닌 값을 반환 합니다. **c** 가 ASCII 문자 (0X00-0x7f 범위) 인 경우 **__isascii** 은 0이 아닌 값을 반환 합니다. **c** 가 ASCII 문자의 와이드 문자 표현인 경우 **iswascii** 는 0이 아닌 값을 반환 합니다. **C** 가 테스트 조건을 충족 하지 않는 경우 이러한 루틴은 각각 0을 반환 합니다.
 
@@ -90,13 +91,13 @@ int iswascii(
 
 |루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
-|**isascii**, **__isascii**|C: \<ctype.h><br /><br /> C++: \<cctype> 또는 \<ctype.h>|
-|**iswascii**|C: \<wctype.h>, \<ctype.h> 또는 \<wchar.h><br /><br /> C++: \<cwctype>, \<cctype>, \<wctype.h>, \<ctype.h> 또는 \<wchar.h>|
+|**isascii**, **__isascii**|C \<ctype.h><br /><br /> C + +: \<cctype> 또는 \<ctype.h>|
+|**iswascii**|C: \<wctype.h> , \<ctype.h> 또는 \<wchar.h><br /><br /> C + +: \<cwctype> ,, \<cctype> \<wctype.h> , \<ctype.h> 또는 \<wchar.h>|
 
 **Isascii**, **__isascii** 및 **Iswascii** 함수는 Microsoft 전용입니다. 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [문자 분류](../../c-runtime-library/character-classification.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
+[로캘](../../c-runtime-library/locale.md)<br/>
 [is, isw 루틴](../../c-runtime-library/is-isw-routines.md)<br/>

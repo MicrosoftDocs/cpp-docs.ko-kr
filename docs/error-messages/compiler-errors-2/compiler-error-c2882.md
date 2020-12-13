@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2882'
 title: 컴파일러 오류 C2882
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2882
 ms.assetid: 617018ee-5a0d-4b8d-9612-77e8ae52679b
-ms.openlocfilehash: a1c6f20ae33a545ae2e6bd7b373ecf2444e0d1d8
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: b060fbc741bc768c2f27625c25345f5e8ed1a484
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74736167"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332357"
 ---
 # <a name="compiler-error-c2882"></a>컴파일러 오류 C2882
 

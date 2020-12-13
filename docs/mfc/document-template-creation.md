@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 문서 템플릿 만들기'
 title: 문서 템플릿 만들기
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - MFC, document templates
 - templates [MFC], document templates
 ms.assetid: c87f1821-7cbf-442e-9690-f126ae7fb783
-ms.openlocfilehash: 952a383792eb3a4d0a4ed1b3e24dd82f7fa644cf
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 60f85cf0a1c16e1aaa6057160c5b986001e18d84
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615794"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330256"
 ---
 # <a name="document-template-creation"></a>문서 템플릿 만들기
 
@@ -23,7 +24,7 @@ ms.locfileid: "84615794"
 
 [!code-cpp[NVC_MFCDocView#7](codesnippet/cpp/document-template-creation_1.cpp)]
 
-새 개체에 대 한 포인터는 `CMultiDocTemplate` [Adddoctemplate](reference/cwinapp-class.md#adddoctemplate)에 대 한 인수로 사용 됩니다. 생성자에 대 한 인수에는 `CMultiDocTemplate` 문서 형식의 메뉴 및 액셀러레이터와 연결 된 리소스 ID와 [RUNTIME_CLASS](reference/run-time-object-model-services.md#runtime_class) 매크로의 세 가지 사용이 포함 됩니다. `RUNTIME_CLASS`이라는 c + + 클래스에 대 한 [CRuntimeClass](reference/cruntimeclass-structure.md) 개체를 인수로 반환 합니다. `CRuntimeClass`문서 템플릿 생성자에 전달 된 세 개체는 문서를 만드는 과정에서 지정 된 클래스의 새 개체를 만드는 데 필요한 정보를 제공 합니다. 이 예제에서는 `CScribDoc` 개체가 연결 된 개체를 만드는 문서 템플릿 생성을 보여 줍니다 `CScribView` . 뷰는 표준 MDI 자식 프레임 창에 의해 프레임으로 묶여 있습니다.
+새 개체에 대 한 포인터는 `CMultiDocTemplate` [Adddoctemplate](reference/cwinapp-class.md#adddoctemplate)에 대 한 인수로 사용 됩니다. 생성자에 대 한 인수에는 `CMultiDocTemplate` 문서 형식의 메뉴 및 액셀러레이터와 연결 된 리소스 ID와 [RUNTIME_CLASS](reference/run-time-object-model-services.md#runtime_class) 매크로의 세 가지 사용이 포함 됩니다. `RUNTIME_CLASS` 이라는 c + + 클래스에 대 한 [CRuntimeClass](reference/cruntimeclass-structure.md) 개체를 인수로 반환 합니다. `CRuntimeClass`문서 템플릿 생성자에 전달 된 세 개체는 문서를 만드는 과정에서 지정 된 클래스의 새 개체를 만드는 데 필요한 정보를 제공 합니다. 이 예제에서는 `CScribDoc` 개체가 연결 된 개체를 만드는 문서 템플릿 생성을 보여 줍니다 `CScribView` . 뷰는 표준 MDI 자식 프레임 창에 의해 프레임으로 묶여 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 

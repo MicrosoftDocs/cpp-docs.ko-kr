@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 C4961'
 title: 컴파일러 경고 C4961
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4961
 ms.assetid: fe22d99f-5a12-45d3-a7cf-867773a71e16
-ms.openlocfilehash: 6b41874fdab6502a5afa73710b0da45247cd2fd8
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d22868780f80630f1794c9f46d4bd47ca27d9c38
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80164861"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332311"
 ---
 # <a name="compiler-warning-c4961"></a>컴파일러 경고 C4961
 

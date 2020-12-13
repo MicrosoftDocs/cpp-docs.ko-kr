@@ -1,4 +1,5 @@
 ---
+description: Atoll, _atoll_l, _wtoll, _wtoll_l에 대해 자세히 알아보세요.
 title: atoll, _atoll_l, _wtoll, _wtoll_l
 ms.date: 4/2/2020
 api_name:
@@ -41,12 +42,12 @@ helpviewer_keywords:
 - _wtoll function
 - _atoll_l function
 ms.assetid: 5e85fcac-b351-4882-bff2-6e7c469b7fa8
-ms.openlocfilehash: f18fb618909b2dfd4bcd1b4d759fe7a895724896
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d9476588e937dba3b6452d1c51a1ada518ff0459
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218717"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331015"
 ---
 # <a name="atoll-_atoll_l-_wtoll-_wtoll_l"></a>atoll, _atoll_l, _wtoll, _wtoll_l
 
@@ -79,13 +80,13 @@ long long _wtoll_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 각 함수는 **`long long`** 입력 문자를 숫자로 해석 하 여 생성 된 값을 반환 합니다. **Atoll** 의 반환 값은 입력을 해당 형식의 값으로 변환할 수 없는 경우 0입니다.
 
-큰 양의 정수 값을 사용 하는 오버플로의 경우 **atoll** 는 **LLONG_MAX**을 반환 하 고, 큰 음의 정수 값을 사용 하는 오버플로의 경우 **LLONG_MIN**을 반환 합니다.
+큰 양의 정수 값을 사용 하는 오버플로의 경우 **atoll** 는 **LLONG_MAX** 을 반환 하 고, 큰 음의 정수 값을 사용 하는 오버플로의 경우 **LLONG_MIN** 을 반환 합니다.
 
-범위를 벗어난 모든 경우에는 **errno** 가 **ERANGE**로 설정 됩니다. 전달 된 매개 변수가 **NULL**인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **errno** 를 **EINVAL** 로 설정 하 고 0을 반환 합니다.
+범위를 벗어난 모든 경우에는 **errno** 가 **ERANGE** 로 설정 됩니다. 전달 된 매개 변수가 **NULL** 인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **errno** 를 **EINVAL** 로 설정 하 고 0을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 

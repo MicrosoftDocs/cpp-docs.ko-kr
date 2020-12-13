@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: isalpha, iswalpha, _isalpha_l, _iswalpha_l'
 title: isalpha, iswalpha, _isalpha_l, _iswalpha_l
 ms.date: 4/2/2020
 api_name:
@@ -44,12 +45,12 @@ helpviewer_keywords:
 - istalpha function
 - _istalpha function
 ms.assetid: ed6cc2be-c4b0-4475-87ac-bc06d8c23064
-ms.openlocfilehash: abce570aecc307efd4986fab78d45954d7a79588
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 044564d64c9f7d358633a866c53a25e6ab16d26a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919793"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332756"
 ---
 # <a name="isalpha-iswalpha-_isalpha_l-_iswalpha_l"></a>isalpha, iswalpha, _isalpha_l, _iswalpha_l
 
@@ -82,9 +83,9 @@ int _iswalpha_l(
 *locale*<br/>
 현재 로캘 대신 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-*C* 가 영문자의 특정 표현인 경우 이러한 각 루틴은 0이 아닌 값을 반환 합니다. *c* 가 a-z 또는 a-z 범위 내에 있는 경우 **isalpha** 는 0이 아닌 값을 반환 합니다. **iswalpha** 는 [iswupper](isupper-isupper-l-iswupper-iswupper-l.md) 또는 **iswupper** 가 0이 아닌 와이드 문자에 대해서만 0이 아닌 값을 반환 합니다. 즉, **iswcntrl**, **iswdigit**, **iswpunct**또는 **iswdigit** 가 0이 아닌 구현에 정의 된 집합 중 하나인 와이드 문자에 대해입니다. *C* 가 테스트 조건을 충족 하지 않는 경우 이러한 루틴은 각각 0을 반환 합니다.
+*C* 가 영문자의 특정 표현인 경우 이러한 각 루틴은 0이 아닌 값을 반환 합니다. *c* 가 a-z 또는 a-z 범위 내에 있는 경우 **isalpha** 는 0이 아닌 값을 반환 합니다. **iswalpha** 는 [iswupper](isupper-isupper-l-iswupper-iswupper-l.md) 또는 **iswupper** 가 0이 아닌 와이드 문자에 대해서만 0이 아닌 값을 반환 합니다. 즉, **iswcntrl**, **iswdigit**, **iswpunct** 또는 **iswdigit** 가 0이 아닌 구현에 정의 된 집합 중 하나인 와이드 문자에 대해입니다. *C* 가 테스트 조건을 충족 하지 않는 경우 이러한 루틴은 각각 0을 반환 합니다.
 
 **_L** 접미사가 있는 이러한 함수 버전은 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
@@ -112,8 +113,8 @@ int _iswalpha_l(
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [문자 분류](../../c-runtime-library/character-classification.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
+[로캘](../../c-runtime-library/locale.md)<br/>
 [is, isw 루틴](../../c-runtime-library/is-isw-routines.md)<br/>

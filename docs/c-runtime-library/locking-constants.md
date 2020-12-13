@@ -1,4 +1,5 @@
 ---
+description: _Locking 상수에 대해 자세히 알아보세요.
 title: _locking 상수
 ms.date: 11/04/2016
 f1_keywords:
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - _LK_RLCK constant
 - LK_LOCK constant
 ms.assetid: c3dc92c8-60e3-4d29-9f50-5d217627c8ad
-ms.openlocfilehash: 8cfc1f933179e043f464a69f3ac5cf4ca25763e0
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 143c1416dada19e0bd35f1607d77826d98817879
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88830828"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331029"
 ---
 # <a name="_locking-constants"></a>_locking 상수
 

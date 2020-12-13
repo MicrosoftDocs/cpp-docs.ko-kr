@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CObList 클래스'
 title: CObList 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -50,12 +51,12 @@ helpviewer_keywords:
 - CObList [MFC], RemoveTail
 - CObList [MFC], SetAt
 ms.assetid: 80699c93-33d8-4f8b-b8cf-7b58aeab64ca
-ms.openlocfilehash: a13363ef9b200051c26781ab6e9870a10de06d88
-ms.sourcegitcommit: 19016630f9d35f365e9ba249e0f3617515d7ca33
+ms.openlocfilehash: edfa476780e07b41f4f1e0abede24244ad837578
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92274579"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331458"
 ---
 # <a name="coblist-class"></a>CObList 클래스
 
@@ -316,7 +317,7 @@ POSITION FindIndex(INT_PTR nIndex) const;
 
 ### <a name="remarks"></a>설명
 
-목록의 헤드에서 순차적 검색을 시작 하 고 *n*번째 요소에서 중지 합니다.
+목록의 헤드에서 순차적 검색을 시작 하 고 *n* 번째 요소에서 중지 합니다.
 
 다음 표에서는와 유사한 다른 멤버 함수를 보여 줍니다 `CObList::FindIndex` .
 
@@ -452,7 +453,7 @@ POSITION GetHeadPosition() const;
 
 ## <a name="coblistgetnext"></a><a name="getnext"></a> CObList:: GetNext
 
-*Rposition*으로 식별 되는 목록 요소를 가져온 다음 *rposition* 을 `POSITION` 목록의 다음 항목 값으로 설정 합니다.
+*Rposition* 으로 식별 되는 목록 요소를 가져온 다음 *rposition* 을 `POSITION` 목록의 다음 항목 값으로 설정 합니다.
 
 ```
 CObject*& GetNext(POSITION& rPosition);
@@ -503,7 +504,7 @@ a CAge at $46C0 21
 
 ## <a name="coblistgetprev"></a><a name="getprev"></a> CObList:: GetPrev
 
-*Rposition*으로 식별 되는 목록 요소를 가져온 다음 *rposition* 을 목록에 있는 이전 항목의 위치 값으로 설정 합니다.
+*Rposition* 으로 식별 되는 목록 요소를 가져온 다음 *rposition* 을 목록에 있는 이전 항목의 위치 값으로 설정 합니다.
 
 ```
 CObject*& GetPrev(POSITION& rPosition);
@@ -917,7 +918,7 @@ a CAge at $4D98 40
 a CAge at $4DB8 65
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

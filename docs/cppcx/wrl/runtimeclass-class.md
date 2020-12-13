@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: RuntimeClass 클래스'
 title: RuntimeClass 클래스
 ms.date: 09/11/2018
 ms.topic: reference
@@ -29,18 +30,18 @@ helpviewer_keywords:
 - Microsoft::WRL::RuntimeClass::RuntimeClass, constructor
 - Microsoft::WRL::RuntimeClass::~RuntimeClass, destructor
 ms.assetid: d52f9d1a-98e5-41f2-a143-8fb629dd0727
-ms.openlocfilehash: 64b4124ba3c60fdcb53fc29c7b791c0f73a49579
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: f62eec0b5ac9b8fc8ecac390ea07077743fdcb51
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81376226"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330756"
 ---
 # <a name="runtimeclass-class"></a>RuntimeClass 클래스
 
-지정된 인터페이스를 상속 하 고 지정 된 Windows 런타임, 클래식 COM 및 약한 참조 지원을 제공 하는 WinRT 또는 COM 클래스를 나타냅니다.
+지정 된 인터페이스를 상속 하 고 지정 된 Windows 런타임, 클래식 COM 및 약한 참조 지원을 제공 하는 WinRT 또는 COM 클래스를 나타냅니다.
 
-이 클래스는 WinRT 및 COM 클래스의 상용구 구현을 `AddRef` `Release` 제공하여 모듈의 `QueryInterface`참조 수를 관리하고 활성화 가능한 개체에 대한 클래스 팩터리 제공을 지원합니다.
+이 클래스는 WinRT 및 COM 클래스의 상용구 구현을 제공 하 고, 등의 구현을 제공 하 여 `QueryInterface` `AddRef` `Release` 모듈의 참조 횟수를 관리 하며 활성화 가능한 개체에 대해 클래스 팩터리를 제공 하도록 지원 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -51,37 +52,37 @@ template <unsigned int classFlags, typename ...TInterfaces> class RuntimeClass;
 
 ### <a name="parameters"></a>매개 변수
 
-*클래스 플래그*<br/>
-선택적 매개 변수. 하나 이상의 [런타임클래스Type](runtimeclasstype-enumeration.md) 열거 형 열거 값의 조합입니다. 매크로는 `__WRL_CONFIGURATION_LEGACY__` 프로젝트의 모든 런타임 클래스에 대한 classFlags의 기본값을 변경하도록 정의할 수 있습니다. 정의된 경우 RuntimeClass 인스턴스는 기본적으로 애자일하지 않습니다. 정의되지 않은 경우 RuntimeClass 인스턴스는 기본적으로 민첩합니다. 모호성을 방지하려면 항상 `Microsoft::WRL::FtmBase` 를 `TInterfaces` `RuntimeClassType::InhibitFtmBase`지정하거나 . 참고, inhibitFtmBase 및 FtmBase 둘 다 사용 하는 경우 개체 민첩 한 될 것입니다.
+*classFlags*<br/>
+선택적 매개 변수입니다. 하나 이상의 [RuntimeClassType](runtimeclasstype-enumeration.md) 열거형 값의 조합입니다. `__WRL_CONFIGURATION_LEGACY__`매크로를 정의 하 여 프로젝트의 모든 런타임 클래스에 대 한 classFlags의 기본값을 변경할 수 있습니다. 정의 된 경우 RuntimeClass 인스턴스는 기본적으로 agile이 아닙니다. 정의 되지 않은 경우 RuntimeClass 인스턴스는 기본적으로 agile입니다. 모호성을 방지 하려면 또는에서 항상를 지정 합니다 `Microsoft::WRL::FtmBase` `TInterfaces` `RuntimeClassType::InhibitFtmBase` . InhibitFtmBase 및 FtmBase를 모두 사용 하는 경우 개체는 agile이 됩니다.
 
 *TInterfaces*<br/>
-개체가 구현하는 `IUnknown`인터페이스 목록 `IInspectable` 또는 [RuntimeClassType에](runtimeclasstype-enumeration.md)의해 제어되는 다른 인터페이스. 또한 개체를 민첩하게 만들고 구현하도록 `Microsoft::WRL::FtmBase` `IMarshal`하기 위해 파생될 다른 클래스를 나열할 수도 있습니다.
+개체에서 구현 하는 인터페이스 목록 `IUnknown` `IInspectable` 또는 [RuntimeClassType](runtimeclasstype-enumeration.md)에서 제어 하는 다른 인터페이스입니다. 또한 개체를 agile로 만들고 구현 하도록 하는 등에서 파생 될 다른 클래스를 나열할 수도 있습니다 `Microsoft::WRL::FtmBase` `IMarshal` .
 
 ## <a name="members"></a>멤버
 
 `RuntimeClassInitialize`<br/>
-`MakeAndInitialize` 템플릿 함수가 개체를 생성하는 데 사용되는 경우 개체를 초기화하는 함수입니다. 개체가 성공적으로 초기화되었는지 S_OK 초기화가 실패한 경우 COM 오류 코드가 반환됩니다. COM 오류 코드는 `MakeAndInitialize`의 반환 값으로 전파됩니다. `Make` 템플릿 함수가 개체를 `RuntimeClassInitialize` 생성하는 데 사용되는 경우 메서드가 호출되지 않습니다.
+`MakeAndInitialize`템플릿 함수를 사용 하 여 개체를 생성 하는 경우 개체를 초기화 하는 함수입니다. 개체가 성공적으로 초기화 된 경우 S_OK을 반환 하 고, 초기화에 실패 한 경우 COM 오류 코드를 반환 합니다. COM 오류 코드는의 반환 값으로 전파 됩니다 `MakeAndInitialize` . `RuntimeClassInitialize` `Make` 템플릿 함수를 사용 하 여 개체를 생성 하는 경우 메서드가 호출 되지 않습니다.
 
 ### <a name="public-constructors"></a>Public 생성자
 
-| 속성                                               | Description                                                     |
+| 이름                                               | 설명                                                     |
 | -------------------------------------------------- | --------------------------------------------------------------- |
-| [런타임 클래스::런타임클래스](#runtimeclass)        | 클래스의 현재 인스턴스를 `RuntimeClass` 초기화합니다.   |
-| [런타임 클래스::~런타임클래스](#tilde-runtimeclass) | 클래스의 현재 인스턴스를 초기화합니다. `RuntimeClass` |
+| [RuntimeClass:: RuntimeClass](#runtimeclass)        | 클래스의 현재 인스턴스를 초기화 `RuntimeClass` 합니다.   |
+| [RuntimeClass:: ~ RuntimeClass](#tilde-runtimeclass) | 클래스의 현재 인스턴스를 초기화 `RuntimeClass` 합니다. |
 
 ### <a name="public-methods"></a>Public 메서드
 
-| 속성                                                      | Description                                                                                        |
+| 이름                                                      | 설명                                                                                        |
 | --------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| [런타임 클래스::추가](#addref)                           | 현재 `RuntimeClass` 개체에 대한 참조 수를 증가합니다.                              |
-| [런타임 클래스::D:Decrecrereference](#decrementreference)   | 현재 `RuntimeClass` 개체에 대한 참조 수를 감소시입니다.                              |
-| [런타임 클래스::GetIids](#getiids)                         | 현재 `RuntimeClass` 개체에서 구현한 인터페이스 ID를 포함할 수 있는 배열을 가져옵니다. |
-| [런타임 클래스::겟런타임클래스이름](#getruntimeclassname) | 현재 `RuntimeClass` 개체의 런타임 클래스 이름을 가져옵니다.                                  |
-| [런타임 클래스::GetTrustLevel](#gettrustlevel)             | 현재 `RuntimeClass` 개체의 신뢰 수준을 가져옵니다.                                         |
-| [런타임 클래스::GetWeak참조](#getweakreference)       | 현재 `RuntimeClass` 개체에 대한 약한 참조 개체에 대한 포인터를 가져옵니다.                 |
-| [런타임 클래스::내부 애드레프](#internaladdref)           | 참조 수를 현재 `RuntimeClass` 개체에 증분합니다.                               |
-| [런타임 클래스::쿼리 인터페이스](#queryinterface)           | 지정된 인터페이스 ID에 대한 포인터를 검색합니다.                                                 |
-| [런타임 클래스::릴리스](#release)                         | 현재 `RuntimeClass` 개체에서 COM 릴리스 작업을 수행합니다.                             |
+| [RuntimeClass:: AddRef](#addref)                           | 현재 개체의 참조 횟수를 증가 시킵니다 `RuntimeClass` .                              |
+| [RuntimeClass::D ecrementReference](#decrementreference)   | 현재 개체의 참조 횟수를 감소 시킵니다 `RuntimeClass` .                              |
+| [RuntimeClass:: GetIids](#getiids)                         | 현재 개체에서 구현 하는 인터페이스 Id를 포함할 수 있는 배열을 가져옵니다 `RuntimeClass` . |
+| [RuntimeClass:: GetRuntimeClassName](#getruntimeclassname) | 현재 개체의 런타임 클래스 이름을 가져옵니다 `RuntimeClass` .                                  |
+| [RuntimeClass:: GetTrustLevel](#gettrustlevel)             | 현재 개체의 신뢰 수준을 가져옵니다 `RuntimeClass` .                                         |
+| [RuntimeClass:: GetWeakReference](#getweakreference)       | 현재 개체에 대 한 약한 참조 개체에 대 한 포인터를 가져옵니다 `RuntimeClass` .                 |
+| [RuntimeClass:: InternalAddRef](#internaladdref)           | 참조 횟수를 현재 `RuntimeClass` 개체로 늘립니다.                               |
+| [RuntimeClass:: QueryInterface](#queryinterface)           | 지정 된 인터페이스 ID에 대 한 포인터를 검색 합니다.                                                 |
+| [RuntimeClass:: Release](#release)                         | 현재 개체에서 COM 해제 작업을 수행 `RuntimeClass` 합니다.                             |
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -89,21 +90,21 @@ template <unsigned int classFlags, typename ...TInterfaces> class RuntimeClass;
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** implements.h
+**헤더:** .h를 구현 합니다.
 
 **네임스페이스:** Microsoft::WRL
 
-## <a name="runtimeclassruntimeclass"></a><a name="tilde-runtimeclass"></a>런타임 클래스::~런타임클래스
+## <a name="runtimeclassruntimeclass"></a><a name="tilde-runtimeclass"></a> RuntimeClass:: ~ RuntimeClass
 
-클래스의 현재 인스턴스를 초기화합니다. `RuntimeClass`
+클래스의 현재 인스턴스를 초기화 `RuntimeClass` 합니다.
 
 ```cpp
 virtual ~RuntimeClass();
 ```
 
-## <a name="runtimeclassaddref"></a><a name="addref"></a>런타임 클래스::추가
+## <a name="runtimeclassaddref"></a><a name="addref"></a> RuntimeClass:: AddRef
 
-현재 `RuntimeClass` 개체에 대한 참조 수를 증가합니다.
+현재 개체의 참조 횟수를 증가 시킵니다 `RuntimeClass` .
 
 ```cpp
 STDMETHOD_(
@@ -112,25 +113,25 @@ STDMETHOD_(
 )();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 S_OK이고, 그렇지 않으면 오류를 나타내는 HRESULT입니다.
 
-## <a name="runtimeclassdecrementreference"></a><a name="decrementreference"></a>런타임 클래스::D:Decrecrereference
+## <a name="runtimeclassdecrementreference"></a><a name="decrementreference"></a> RuntimeClass::D ecrementReference
 
-현재 `RuntimeClass` 개체에 대한 참조 수를 감소시입니다.
+현재 개체의 참조 횟수를 감소 시킵니다 `RuntimeClass` .
 
 ```cpp
 ULONG DecrementReference();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 S_OK이고, 그렇지 않으면 오류를 나타내는 HRESULT입니다.
 
-## <a name="runtimeclassgetiids"></a><a name="getiids"></a>런타임 클래스::GetIids
+## <a name="runtimeclassgetiids"></a><a name="getiids"></a> RuntimeClass:: GetIids
 
-현재 `RuntimeClass` 개체에서 구현한 인터페이스 ID를 포함할 수 있는 배열을 가져옵니다.
+현재 개체에서 구현 하는 인터페이스 Id를 포함할 수 있는 배열을 가져옵니다 `RuntimeClass` .
 
 ```cpp
 STDMETHOD(
@@ -142,19 +143,19 @@ STDMETHOD(
 
 ### <a name="parameters"></a>매개 변수
 
-*이드 카운트*<br/>
-이 작업이 완료되면 배열 *iids의*총 요소 수가 됩니다.
+*iidCount*<br/>
+이 작업이 완료 되 면 배열 *iid* 의 총 요소 수입니다.
 
-*아이드 (이드)*<br/>
+*iid*<br/>
 이 작업이 완료될 때 인터페이스 ID 배열에 대한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 S_OK이고, 그렇지 않으면 E_OUTOFMEMORY입니다.
 
-## <a name="runtimeclassgetruntimeclassname"></a><a name="getruntimeclassname"></a>런타임 클래스::겟런타임클래스이름
+## <a name="runtimeclassgetruntimeclassname"></a><a name="getruntimeclassname"></a> RuntimeClass:: GetRuntimeClassName
 
-현재 `RuntimeClass` 개체의 런타임 클래스 이름을 가져옵니다.
+현재 개체의 런타임 클래스 이름을 가져옵니다 `RuntimeClass` .
 
 ```cpp
 STDMETHOD( GetRuntimeClassName )(
@@ -164,20 +165,20 @@ STDMETHOD( GetRuntimeClassName )(
 
 ### <a name="parameters"></a>매개 변수
 
-*런타임 이름*<br/>
-이 작업이 완료되면 런타임 클래스 이름이 지정됩니다.
+*Runti을 Ame*<br/>
+이 작업이 완료 되 면 런타임 클래스 이름입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 S_OK이고, 그렇지 않으면 오류를 나타내는 HRESULT입니다.
 
 ### <a name="remarks"></a>설명
 
-어설션 오류가 `__WRL_STRICT__` 정의되거나 `__WRL_FORCE_INSPECTABLE_CLASS_MACRO__` 정의되지 않은 경우 내보내입니다.
+`__WRL_STRICT__`또는이 정의 되지 않은 경우 assert 오류가 내보내집니다 `__WRL_FORCE_INSPECTABLE_CLASS_MACRO__` .
 
-## <a name="runtimeclassgettrustlevel"></a><a name="gettrustlevel"></a>런타임 클래스::GetTrustLevel
+## <a name="runtimeclassgettrustlevel"></a><a name="gettrustlevel"></a> RuntimeClass:: GetTrustLevel
 
-현재 `RuntimeClass` 개체의 신뢰 수준을 가져옵니다.
+현재 개체의 신뢰 수준을 가져옵니다 `RuntimeClass` .
 
 ```cpp
 STDMETHOD(GetTrustLevel)(
@@ -187,20 +188,20 @@ STDMETHOD(GetTrustLevel)(
 
 ### <a name="parameters"></a>매개 변수
 
-*트러스트Lvl*<br/>
-이 작업이 완료되면 현재 `RuntimeClass` 개체의 신뢰 수준이 됩니다.
+*trustLvl*<br/>
+이 작업이 완료 되 면 현재 개체의 신뢰 수준 `RuntimeClass` 입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-항상 S_OK.
+항상 S_OK 합니다.
 
 ### <a name="remarks"></a>설명
 
-어설션 오류가 `__WRL_STRICT__` 정의되거나 `__WRL_FORCE_INSPECTABLE_CLASS_MACRO__` 정의되지 않은 경우 내보내입니다.
+`__WRL_STRICT__`또는이 정의 되지 않은 경우 assert 오류가 내보내집니다 `__WRL_FORCE_INSPECTABLE_CLASS_MACRO__` .
 
-## <a name="runtimeclassgetweakreference"></a><a name="getweakreference"></a>런타임 클래스::GetWeak참조
+## <a name="runtimeclassgetweakreference"></a><a name="getweakreference"></a> RuntimeClass:: GetWeakReference
 
-현재 `RuntimeClass` 개체에 대한 약한 참조 개체에 대한 포인터를 가져옵니다.
+현재 개체에 대 한 약한 참조 개체에 대 한 포인터를 가져옵니다 `RuntimeClass` .
 
 ```cpp
 STDMETHOD(
@@ -210,28 +211,28 @@ STDMETHOD(
 
 ### <a name="parameters"></a>매개 변수
 
-*약한 참조*<br/>
-이 작업이 완료되면 약한 참조 개체에 대한 포인터가 됩니다.
+*weakReference*<br/>
+이 작업이 완료 되 면 약한 참조 개체에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-항상 S_OK.
+항상 S_OK 합니다.
 
-## <a name="runtimeclassinternaladdref"></a><a name="internaladdref"></a>런타임 클래스::내부 애드레프
+## <a name="runtimeclassinternaladdref"></a><a name="internaladdref"></a> RuntimeClass:: InternalAddRef
 
-참조 수를 현재 `RuntimeClass` 개체에 증분합니다.
+참조 횟수를 현재 `RuntimeClass` 개체로 늘립니다.
 
 ```cpp
 ULONG InternalAddRef();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-결과 참조 수입니다.
+결과 참조 횟수입니다.
 
-## <a name="runtimeclassqueryinterface"></a><a name="queryinterface"></a>런타임 클래스::쿼리 인터페이스
+## <a name="runtimeclassqueryinterface"></a><a name="queryinterface"></a> RuntimeClass:: QueryInterface
 
-지정된 인터페이스 ID에 대한 포인터를 검색합니다.
+지정 된 인터페이스 ID에 대 한 포인터를 검색 합니다.
 
 ```cpp
 STDMETHOD(
@@ -247,15 +248,15 @@ STDMETHOD(
 인터페이스 ID입니다.
 
 *ppvObject*<br/>
-이 피연산이 완료되면 *riid* 매개 변수에 의해 지정된 인터페이스에 대한 포인터가 됩니다.
+이 작업이 완료 되 면 *riid* 매개 변수로 지정 된 인터페이스에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 S_OK이고, 그렇지 않으면 오류를 나타내는 HRESULT입니다.
 
-## <a name="runtimeclassrelease"></a><a name="release"></a>런타임 클래스::릴리스
+## <a name="runtimeclassrelease"></a><a name="release"></a> RuntimeClass:: Release
 
-현재 `RuntimeClass` 개체에서 COM 릴리스 작업을 수행합니다.
+현재 개체에서 COM 해제 작업을 수행 `RuntimeClass` 합니다.
 
 ```cpp
 STDMETHOD_(
@@ -264,17 +265,17 @@ STDMETHOD_(
 )();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 S_OK이고, 그렇지 않으면 오류를 나타내는 HRESULT입니다.
 
 ### <a name="remarks"></a>설명
 
-참조 수가 0이 되면 `RuntimeClass` 개체가 삭제됩니다.
+참조 횟수가 0이 되 면 `RuntimeClass` 개체가 삭제 됩니다.
 
-## <a name="runtimeclassruntimeclass"></a><a name="runtimeclass"></a>런타임 클래스::런타임클래스
+## <a name="runtimeclassruntimeclass"></a><a name="runtimeclass"></a> RuntimeClass:: RuntimeClass
 
-클래스의 현재 인스턴스를 `RuntimeClass` 초기화합니다.
+클래스의 현재 인스턴스를 초기화 `RuntimeClass` 합니다.
 
 ```cpp
 RuntimeClass();

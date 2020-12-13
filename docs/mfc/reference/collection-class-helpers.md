@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: Collection 클래스 도우미'
 title: 컬렉션 클래스 도우미
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,16 +9,16 @@ helpviewer_keywords:
 - collection classes [MFC], helper functions
 - helper functions collection class [MFC]
 ms.assetid: bc3a2368-9edd-4748-9e6a-13cba79517ca
-ms.openlocfilehash: 04b142cde12a9795f217559f875eef7fcec3b0f2
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9d3838ba0ba05441debb183e47d7df4e39229742
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841430"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331390"
 ---
 # <a name="collection-class-helpers"></a>컬렉션 클래스 도우미
 
-컬렉션 클래스 `CMap` , `CList` 및는 `CArray` 요소 비교, 복사 및 직렬화와 같은 목적으로 템플릿 기반 전역 도우미 함수를 사용 합니다. , 및를 기반으로 하는 클래스 구현의 일환으로 `CMap` , `CList` `CArray` 맵, 목록 또는 배열에 저장 된 데이터 형식에 맞게 조정 된 버전을 사용 하 여 필요에 따라 이러한 함수를 재정의 해야 합니다. 와 같은 도우미 함수를 재정의 하는 방법에 대 한 자세한 내용은 `SerializeElements` [컬렉션: 형식 안전 컬렉션을 만드는 방법](../../mfc/how-to-make-a-type-safe-collection.md)을 참조 하세요. 및는 `ConstructElements` `DestructElements` 더 이상 사용 되지 않습니다.
+컬렉션 클래스 `CMap` , `CList` 및는 `CArray` 요소 비교, 복사 및 직렬화와 같은 목적으로 템플릿 기반 전역 도우미 함수를 사용 합니다. , 및를 기반으로 하는 클래스 구현의 일환으로 `CMap` , `CList` `CArray` 맵, 목록 또는 배열에 저장 된 데이터 형식에 맞게 조정 된 버전을 사용 하 여 필요에 따라 이러한 함수를 재정의 해야 합니다. 와 같은 도우미 함수를 재정의 하는 방법에 대 한 자세한 내용은 컬렉션 `SerializeElements` [: Type-Safe 컬렉션을 만드는 방법](../../mfc/how-to-make-a-type-safe-collection.md)을 참조 하세요. 및는 `ConstructElements` `DestructElements` 더 이상 사용 되지 않습니다.
 
 MFC 라이브러리는 컬렉션 클래스를 사용자 지정할 수 있도록 afxtempl.h에서 다음 전역 함수를 제공 합니다.
 
@@ -59,13 +60,13 @@ CompareElements(
 
 ### <a name="return-value"></a>반환 값
 
-*PElement1* 가 가리키는 개체가 *pElement2*가 가리키는 개체와 같으면 0이 아닙니다. 그렇지 않으면 0입니다.
+*PElement1* 가 가리키는 개체가 *pElement2* 가 가리키는 개체와 같으면 0이 아닙니다. 그렇지 않으면 0입니다.
 
 ### <a name="remarks"></a>설명
 
-`CMap`호출에서는 `CMap` 템플릿 매개 변수 *키* 와 *ARG_KEY*를 사용 합니다.
+`CMap`호출에서는 `CMap` 템플릿 매개 변수 *키* 와 *ARG_KEY* 를 사용 합니다.
 
-기본 구현에서는 * \* pElement1* 및 * \* pElement2*비교 결과를 반환 합니다. 응용 프로그램에 적합 한 방식으로 요소를 비교 하도록이 함수를 재정의 합니다.
+기본 구현에서는 *\* pElement1* 및 *\* pElement2* 비교 결과를 반환 합니다. 응용 프로그램에 적합 한 방식으로 요소를 비교 하도록이 함수를 재정의 합니다.
 
 C + + 언어는 `==` 단순 형식 (,, 등)에 대 한 비교 연산자 ()를 정의 **`char`** **`int`** **`float`** 하지만 클래스 및 구조체에 대 한 비교 연산자를 정의 하지 않습니다. 또는를 사용 하 여이를 사용 하 `CompareElements` 는 컬렉션 클래스 중 하나를 인스턴스화하려면 `CompareElements` 적절 한 값을 반환 하는 버전을 사용 하 여 비교 연산자 또는 오버 로드를 정의 해야 합니다.
 
@@ -103,7 +104,7 @@ void AFXAPI CopyElements(
 
 기본 구현에서는 단순 할당 연산자 ()를 사용 **=** 하 여 복사 작업을 수행 합니다. 복사할 형식에 오버 로드 된 연산자 =가 없으면 기본 구현에서 비트 복사를 수행 합니다.
 
-이 도우미 함수 및 다른 도우미 함수를 구현 하는 방법에 대 한 자세한 내용은 [컬렉션: 형식 안전 컬렉션을 만드는 방법](../how-to-make-a-type-safe-collection.md)을 참조 하세요.
+이 도우미 함수 및 다른 도우미 함수를 구현 하는 방법에 대 한 자세한 내용은 컬렉션 [: Type-Safe 컬렉션을 만드는 방법](../how-to-make-a-type-safe-collection.md)을 참조 하세요.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -201,7 +202,7 @@ void AFXAPI SerializeElements(CArchive& ar, TYPE* pElements, INT_PTR nCount);
 *TYPE*<br/>
 요소의 형식을 지정 하는 템플릿 매개 변수입니다.
 
-*방어력*<br/>
+*ar*<br/>
 보관 하거나 보관할 보관 개체입니다.
 
 *pElements*<br/>
@@ -214,11 +215,11 @@ void AFXAPI SerializeElements(CArchive& ar, TYPE* pElements, INT_PTR nCount);
 
 기본 구현은 비트 읽기 또는 쓰기를 수행 합니다.
 
-이 도우미 함수 및 다른 도우미 함수를 구현 하는 방법에 대 한 자세한 내용은 [컬렉션: 형식 안전 컬렉션을 만드는 방법](../how-to-make-a-type-safe-collection.md)을 참조 하세요.
+이 도우미 함수 및 다른 도우미 함수를 구현 하는 방법에 대 한 자세한 내용은 컬렉션 [: Type-Safe 컬렉션을 만드는 방법](../how-to-make-a-type-safe-collection.md)을 참조 하세요.
 
 ### <a name="example"></a>예제
 
-문서 [컬렉션: 형식 안전 컬렉션을 만드는 방법](../how-to-make-a-type-safe-collection.md)을 참조 하세요.
+컬렉션 [Type-Safe 컬렉션을 만드는 방법](../how-to-make-a-type-safe-collection.md)문서에서 예제를 참조 하세요.
 
 ### <a name="requirements"></a>요구 사항
 

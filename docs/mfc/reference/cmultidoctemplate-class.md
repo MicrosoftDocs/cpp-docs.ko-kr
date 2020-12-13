@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CMultiDocTemplate 클래스'
 title: CMultiDocTemplate 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - CMultiDocTemplate [MFC], CMultiDocTemplate
 ms.assetid: 5b8aa328-e461-41d0-b388-00594535e119
-ms.openlocfilehash: af950d188c4e02a38a39ed3c672f0f8c4161bee8
-ms.sourcegitcommit: 8fd49f8ac20457710ceb5403ca46fc73cb3f95f8
+ms.openlocfilehash: 70b77c04fed41da3b5f025f6a600b9ecfd4bc89b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85737478"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331565"
 ---
 # <a name="cmultidoctemplate-class"></a>CMultiDocTemplate 클래스
 
@@ -37,7 +38,7 @@ class CMultiDocTemplate : public CDocTemplate
 
 ## <a name="remarks"></a>설명
 
-MDI 응용 프로그램은 주 프레임 창을 사용자가 문서를 표시 하는 0 개 이상의 문서 프레임 창을 열 수 있는 작업 영역으로 사용 합니다. MDI에 대 한 자세한 설명은 *소프트웨어 디자인을 위한 Windows 인터페이스 지침*을 참조 하세요.
+MDI 응용 프로그램은 주 프레임 창을 사용자가 문서를 표시 하는 0 개 이상의 문서 프레임 창을 열 수 있는 작업 영역으로 사용 합니다. MDI에 대 한 자세한 설명은 *소프트웨어 디자인을 위한 Windows 인터페이스 지침* 을 참조 하세요.
 
 문서 템플릿은 다음과 같은 세 가지 유형의 클래스 간 관계를 정의 합니다.
 
@@ -69,7 +70,7 @@ MDI 응용 프로그램은 둘 이상의 문서 형식을 지원할 수 있으�
 
 **헤더:** afxwin.h
 
-## <a name="cmultidoctemplatecmultidoctemplate"></a><a name="cmultidoctemplate"></a>CMultiDocTemplate:: CMultiDocTemplate
+## <a name="cmultidoctemplatecmultidoctemplate"></a><a name="cmultidoctemplate"></a> CMultiDocTemplate:: CMultiDocTemplate
 
 `CMultiDocTemplate` 개체를 생성합니다.
 
@@ -86,7 +87,7 @@ CMultiDocTemplate(
 *nIDResource*<br/>
 문서 유형과 함께 사용 되는 리소스의 ID를 지정 합니다. 여기에는 메뉴, 아이콘, 액셀러레이터 키 테이블 및 문자열 리소스가 포함 될 수 있습니다.
 
-문자열 리소스는 ' \n ' 문자로 구분 된 최대 7 개의 부분 문자열로 구성 됩니다. 부분 문자열이 포함 되지 않은 경우 ' \n ' 문자는 자리 표시자로 필요 하지만 후행 ' \n ' 문자는 필요 하지 않습니다. 이러한 부분 문자열은 문서 유형을 설명 합니다. 부분 문자열에 대 한 자세한 내용은 [Cdoctemplate:: GetDocString](../../mfc/reference/cdoctemplate-class.md#getdocstring)을 참조 하세요. 이 문자열 리소스는 응용 프로그램의 리소스 파일에 있습니다. 예를 들면 다음과 같습니다.
+문자열 리소스는 ' \n ' 문자로 구분 된 최대 7 개의 부분 문자열로 구성 됩니다. 부분 문자열이 포함 되지 않은 경우 ' \n ' 문자는 자리 표시자로 필요 하지만 후행 ' \n ' 문자는 필요 하지 않습니다. 이러한 부분 문자열은 문서 유형을 설명 합니다. 부분 문자열에 대 한 자세한 내용은 [Cdoctemplate:: GetDocString](../../mfc/reference/cdoctemplate-class.md#getdocstring)을 참조 하세요. 이 문자열 리소스는 응용 프로그램의 리소스 파일에 있습니다. 예를 들어:
 
 ```RC
 // MYCALC.RC

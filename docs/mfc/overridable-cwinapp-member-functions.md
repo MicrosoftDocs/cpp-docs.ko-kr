@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 재정의 가능 CWinApp 멤버 함수'
 title: 재정의 가능 CWinApp 멤버 함수
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - application class [MFC]
 - CWinApp class [MFC], overridables
 ms.assetid: 07183d5e-734b-45d9-a8b6-9dde4adac0b4
-ms.openlocfilehash: 7ae72a52c37582f8398ebc03f404ff105fe14650
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 3958ad0edc1fbdb77e1f6ce3252fd03d7595344a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84624008"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330100"
 ---
 # <a name="overridable-cwinapp-member-functions"></a>재정의 가능 CWinApp 멤버 함수
 
@@ -19,7 +20,7 @@ ms.locfileid: "84624008"
 
 - [InitInstance](initinstance-member-function.md)
 
-- [실행](run-member-function.md)
+- [Run](run-member-function.md)
 
 - [ExitInstance](exitinstance-member-function.md)
 
@@ -29,4 +30,4 @@ ms.locfileid: "84624008"
 
 ## <a name="see-also"></a>참고 항목
 
-[CWinApp: 애플리케이션 클래스](cwinapp-the-application-class.md)
+[CWinApp: 응용 프로그램 클래스](cwinapp-the-application-class.md)

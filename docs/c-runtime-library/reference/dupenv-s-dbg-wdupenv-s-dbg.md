@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _dupenv_s_dbg, _wdupenv_s_dbg'
 title: _dupenv_s_dbg, _wdupenv_s_dbg
 ms.date: 11/04/2016
 api_name:
@@ -32,12 +33,12 @@ helpviewer_keywords:
 - wdupenv_s_dbg function
 - _dupenv_s_dbg function
 ms.assetid: e3d81148-e24e-46d0-a21d-fd87b5e6256c
-ms.openlocfilehash: 6c61986184f93c6cf6e83b33f77dce2bd017cfae
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: a12e5adc55cd69b8336b3f9f50d982f80ec1b070
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70937685"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332901"
 ---
 # <a name="_dupenv_s_dbg-_wdupenv_s_dbg"></a>_dupenv_s_dbg, _wdupenv_s_dbg
 
@@ -66,39 +67,39 @@ errno_t _wdupenv_s_dbg(
 
 ### <a name="parameters"></a>매개 변수
 
-*buffer*<br/>
+*버퍼*<br/>
 변수 값을 저장하는 버퍼입니다.
 
-*numberOfElements*<br/>
-*버퍼*의 크기입니다.
+*이면 numberofelements 이벤트가*<br/>
+*버퍼* 의 크기입니다.
 
 *varname*<br/>
 환경 변수 이름입니다.
 
 *blockType*<br/>
-메모리 블록의 요청 된 유형: **_CLIENT_BLOCK** 또는 **_NORMAL_BLOCK**.
+메모리 블록의 요청 된 형식: **_CLIENT_BLOCK** 또는 **_NORMAL_BLOCK**.
 
 *filename*<br/>
-소스 파일의 이름에 대 한 포인터 이거나 **NULL**입니다.
+소스 파일의 이름에 대 한 포인터 이거나 **NULL** 입니다.
 
 *linenumber*<br/>
-소스 파일의 줄 번호 또는 **NULL**입니다.
+소스 파일의 줄 번호 또는 **NULL** 입니다.
 
 ## <a name="return-value"></a>반환 값
 
 성공 시 0, 실패 시 오류 코드가 나타납니다.
 
-이러한 함수는 해당 매개 변수의 유효성을 검사 합니다. *buffer* 또는 *varname* 이 **NULL**인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **errno** 를 **EINVAL** 로 설정 하 고 **EINVAL**를 반환 합니다.
+이러한 함수는 해당 매개 변수의 유효성을 검사 합니다. *buffer* 또는 *varname* 이 **NULL** 인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **errno** 를 **EINVAL** 로 설정 하 고 **EINVAL** 를 반환 합니다.
 
-이러한 함수는 충분 한 메모리를 할당할 수 없는 경우 *버퍼* 를 **NULL** 로 설정 하 고 *numberofelements* 를 0으로 설정 하 고 **enomem**을 반환 합니다.
+이러한 함수는 충분 한 메모리를 할당할 수 없는 경우 *버퍼* 를 **NULL** 로 설정 하 고 *numberofelements* 를 0으로 설정 하 고 **enomem** 을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-**_Dupenv_s_dbg** 및 **_Wdupenv_s_dbg** 함수는 **_debug** 가 정의 되 면 이러한 함수가 [malloc](malloc.md), [_malloc_dbg](malloc-dbg.md), 디버그 버전을 사용 한다는 점을 제외 하 고 **_dupenv_s** 및 **_wdupenv_s** 와 동일 합니다. 환경 변수의 값에 대해 메모리를 할당 하려면입니다. **_Malloc_dbg**의 디버깅 기능에 대 한 자세한 내용은 [_malloc_dbg](malloc-dbg.md)를 참조 하세요.
+**_Dupenv_s_dbg** 및 **_wdupenv_s_dbg** 함수는 **_dupenv_s** 및 **_wdupenv_s** 와 동일 합니다. 단, **_DEBUG** 가 정의 되 면 이러한 함수는 [malloc](malloc.md), [_malloc_dbg](malloc-dbg.md)의 디버그 버전을 사용 하 여 환경 변수 값에 대 한 메모리를 할당 합니다. **_Malloc_dbg** 의 디버깅 기능에 대 한 자세한 내용은 [_malloc_dbg](malloc-dbg.md)을 참조 하세요.
 
-대부분의 경우 이러한 함수를 명시적으로 호출할 필요가 없습니다. 대신 **_CRTDBG_MAP_ALLOC**플래그를 정의할 수 있습니다. **_CRTDBG_MAP_ALLOC** 가 정의 되 면 **_dupenv_s** 및 **_wdupenv_s** 에 대 한 호출은 각각 **_wdupenv_s_dbg**로 설정 된 *blocktype* 을 사용 하 여 **_dupenv_s_dbg** 및 **_NORMAL_BLOCK**에 다시 매핑됩니다. 따라서 힙 블록을 **_CLIENT_BLOCK**로 표시 하려는 경우가 아니면 이러한 함수를 명시적으로 호출할 필요가 없습니다. 블록 형식에 대한 자세한 내용은 [디버그 힙의 블록 형식](/visualstudio/debugger/crt-debug-heap-details)을 참조하세요.
+대부분의 경우 이러한 함수를 명시적으로 호출할 필요가 없습니다. 대신 **_CRTDBG_MAP_ALLOC** 플래그를 정의할 수 있습니다. **_CRTDBG_MAP_ALLOC** 가 정의 되 면 **_dupenv_s** 및 **_wdupenv_s** 에 대 한 호출이 각각 **_Dupenv_s_dbg** 및 **_wdupenv_s_dbg** 다시 매핑되고, *블록 형식이* **_NORMAL_BLOCK** 로 설정 됩니다. 따라서 힙 블록을 **_CLIENT_BLOCK** 으로 표시 하려는 경우가 아니면 이러한 함수를 명시적으로 호출할 필요가 없습니다. 블록 형식에 대한 자세한 내용은 [디버그 힙의 블록 형식](/visualstudio/debugger/crt-debug-heap-details)을 참조하세요.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -111,7 +112,7 @@ errno_t _wdupenv_s_dbg(
 |**_dupenv_s_dbg**|\<crtdbg.h>|
 |**_wdupenv_s_dbg**|\<crtdbg.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
@@ -142,7 +143,7 @@ pathext = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.pl
 nonexistentvariable = (null)
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [프로세스 및 환경 제어](../../c-runtime-library/process-and-environment-control.md)<br/>
 [환경 상수](../../c-runtime-library/environmental-constants.md)<br/>

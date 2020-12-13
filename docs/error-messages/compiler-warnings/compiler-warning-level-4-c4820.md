@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4820'
 title: 컴파일러 경고(수준 4) C4820
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4820
 ms.assetid: 17aa29f4-c287-49b8-bc43-8ed82ffed5ea
-ms.openlocfilehash: ac97a943e6a8178e930d93a097071b0e3da09773
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 778bf605d6ee1441e9efd68380c64d231df03b69
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74989055"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330477"
 ---
 # <a name="compiler-warning-level-4-c4820"></a>컴파일러 경고(수준 4) C4820
 

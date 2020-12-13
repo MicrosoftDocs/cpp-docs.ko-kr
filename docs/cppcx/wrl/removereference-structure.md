@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: RemoveReference Structure'
 title: RemoveReference 구조체
 ms.date: 10/03/2018
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - RemoveReference structure
 ms.assetid: 43ff91bb-815a-440e-b9fb-7dcbb7c863af
-ms.openlocfilehash: 7753c1ad41f12fa8c14d2f10c9e2f91e043a5846
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 0bcf3685e44b756ce324adc8301d7afb5b4b3f40
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213605"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332505"
 ---
 # <a name="removereference-structure"></a>RemoveReference 구조체
 
@@ -36,19 +37,19 @@ struct RemoveReference<T&&>;
 *T*<br/>
 클래스입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 지정 된 클래스 템플릿 매개 변수에서 참조 또는 rvalue 참조 특성을 제거 합니다.
 
 ## <a name="members"></a>멤버
 
-### <a name="public-typedefs"></a>공용 형식 정의
+### <a name="public-typedefs"></a>공용 Typedefs
 
-|이름|설명|
+|Name|설명|
 |----------|-----------------|
 |`Type`|클래스 템플릿 매개 변수의 동의어입니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `RemoveReference`
 
@@ -60,4 +61,4 @@ struct RemoveReference<T&&>;
 
 ## <a name="see-also"></a>참고 항목
 
-[Microsoft::WRL::Details 네임스페이스](microsoft-wrl-details-namespace.md)
+[Microsoft:: WRL::D etails 네임 스페이스](microsoft-wrl-details-namespace.md)

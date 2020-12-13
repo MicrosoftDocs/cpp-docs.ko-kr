@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4918'
 title: 컴파일러 경고(수준 4) C4918
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4918
 ms.assetid: 1bcf6d35-3467-4aa8-b2ef-cb33f4e70238
-ms.openlocfilehash: 801c22a45037492dc609d93c6339ab8feff30494
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 268fbff753ff5ed0cc2d63df6ba8422cdf073662
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988809"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330445"
 ---
 # <a name="compiler-warning-level-4-c4918"></a>컴파일러 경고(수준 4) C4918
 

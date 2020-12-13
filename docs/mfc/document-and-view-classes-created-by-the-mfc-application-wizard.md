@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: MFC 응용 프로그램 마법사에서 만든 문서 및 뷰 클래스'
 title: MFC 애플리케이션 마법사에서 만든 문서 및 뷰 클래스
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - application wizards [MFC], document/view classes created
 - view classes [MFC], created by application wizards
 ms.assetid: 70c34a60-2701-4981-acea-c08a5787d8e6
-ms.openlocfilehash: 766fe4efb37c199c5babb75ce2cb08ebf676cca6
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: f182278ebdd971364e3e35e15e51b6ea5e7aaf68
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616046"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330319"
 ---
 # <a name="document-and-view-classes-created-by-the-mfc-application-wizard"></a>MFC 애플리케이션 마법사에서 만든 문서 및 뷰 클래스
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _mkdir, _wmkdir'
 title: _mkdir, _wmkdir
 ms.date: 4/2/2020
 api_name:
@@ -39,12 +40,12 @@ helpviewer_keywords:
 - _mkdir function
 - _tmkdir function
 ms.assetid: 7f22d01d-63a5-4712-a6e7-d34878b2d840
-ms.openlocfilehash: f4714e3e763b827772a7d2eb61ae2e14f0aece02
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 75be13432a5ba0cdc2aa47d2c0e8cbb35e8f982e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919155"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330982"
 ---
 # <a name="_mkdir-_wmkdir"></a>_mkdir, _wmkdir
 
@@ -67,7 +68,7 @@ int _wmkdir(
 *dirname*<br/>
 새 디렉터리에 대한 경로입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 이러한 각 함수는 새 디렉터리가 만들어진 경우 0을 반환합니다. 오류가 발생 하면 함수는-1을 반환 하 고 **errno** 를 다음과 같이 설정 합니다.
 
@@ -81,7 +82,7 @@ int _wmkdir(
 
 **_Mkdir** 함수는 지정 된 이름을 사용 하 여 새 디렉터리를 만듭니다 *.* **_mkdir** 는 각 호출에 새 디렉터리를 하나만 만들 수 있으므로 새 *디렉터리의 이름을* 마지막으로 지정할 수 있습니다. **_mkdir** 은 경로 구분 기호를 변환 하지 않습니다. Windows NT에서 백슬래시(\\)와 슬래시(/)는 런타임 루틴의 문자열에 사용할 수 있는 경로 구분 기호입니다.
 
-**_wmkdir** 은 **_mkdir**의 와이드 문자 버전입니다. **_wmkdir** 에 대 한 대상 *이름* 인수는 와이드 문자열입니다. **_wmkdir** 와 **_mkdir** 는 동일 하 게 동작 합니다.
+**_wmkdir** 은 **_mkdir** 의 와이드 문자 버전입니다. **_wmkdir** 에 대 한 대상 *이름* 인수는 와이드 문자열입니다. **_wmkdir** 와 **_mkdir** 는 동일 하 게 동작 합니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -145,7 +146,7 @@ Directory of C:\testtmp
 Directory '\testtmp' was successfully removed
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [디렉터리 제어](../../c-runtime-library/directory-control.md)<br/>
 [_chdir, _wchdir](chdir-wchdir.md)<br/>

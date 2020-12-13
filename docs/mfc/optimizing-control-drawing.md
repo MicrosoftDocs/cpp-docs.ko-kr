@@ -1,21 +1,22 @@
 ---
+description: '자세히 알아보기: 컨트롤 그리기 최적화'
 title: 컨트롤 그리기 최적화
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], optimizing
 ms.assetid: 29ff985d-9bf5-4678-b62d-aad12def75fb
-ms.openlocfilehash: 17cb7318e667fe4e16416d51e7e7fba02553cfe6
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 93e948d4a572f4e02c8676b2af1b6f8943004f26
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84621010"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331808"
 ---
 # <a name="optimizing-control-drawing"></a>컨트롤 그리기 최적화
 
 컨테이너 공급 디바이스 컨텍스트에 컨트롤을 그리게 되는 경우 일반적으로 디바이스 컨텍스트에 GDI 개체(예: 펜, 브러시, 글꼴 등)를 선택하고 해당 그리기 작업을 수행하고, 이전의 GDI 개체를 복원합니다. 컨테이너에 동일한 디바이스 컨텍스트로 그려지는 여러 컨트롤이 있고 각 컨트롤이 필요한 GDI 개체를 선택하는 경우 컨트롤이 이전에 선택한 개체를 개별적으로 복원하지 않으면 시간을 절약할 수 있습니다. 모든 컨트롤이 그려진 후 컨테이너에서는 원래 개체를 자동으로 복원할 수 있습니다.
 
-컨테이너에서이 기술을 지원 하는지 여부를 검색 하기 위해 컨트롤은 [COleControl:: IsOptimizedDraw](reference/colecontrol-class.md#isoptimizeddraw) 멤버 함수를 호출할 수 있습니다. 이 함수가 **TRUE**를 반환 하는 경우 컨트롤은 이전에 선택한 개체를 복원 하는 일반적인 단계를 건너뛸 수 있습니다.
+컨테이너에서이 기술을 지원 하는지 여부를 검색 하기 위해 컨트롤은 [COleControl:: IsOptimizedDraw](reference/colecontrol-class.md#isoptimizeddraw) 멤버 함수를 호출할 수 있습니다. 이 함수가 **TRUE** 를 반환 하는 경우 컨트롤은 이전에 선택한 개체를 복원 하는 일반적인 단계를 건너뛸 수 있습니다.
 
 다음 `OnDraw` 함수(최적화되지 않음)가 있는 컨트롤을 가정합니다.
 

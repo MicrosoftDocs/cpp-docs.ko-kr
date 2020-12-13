@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: 일반 규칙 및 제한 사항'
 title: 일반 규칙 및 제한 사항
 ms.date: 11/04/2016
 ms.assetid: 6c48902d-4259-4761-95d4-e421d69aa050
-ms.openlocfilehash: 8d21f627f461dce90af93ca5c1af8c4a28098539
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 935befff4cce7f87217e1a05e8ca92835c82565d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213413"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332537"
 ---
 # <a name="general-rules-and-limitations"></a>일반 규칙 및 제한 사항
 
@@ -25,7 +26,7 @@ ms.locfileid: "87213413"
                                      // dllexport takes precedence.
     ```
 
-- C + +에서는 특성을 사용 하 여 선언 된 데이터 개체의 주소를 사용 하 여 전역적으로 선언 되거나 정적 로컬 데이터 포인터를 초기화할 수 있습니다 **`dllimport`** . 그러면 c에서 오류가 생성 됩니다. 또한 특성을 사용 하 여 선언 된 함수의 주소를 사용 하 여 정적 로컬 함수 포인터를 초기화할 수 있습니다 **`dllimport`** . C에서는 이러한 대입으로 인해 포인터가 함수의 주소 대신 DLL 가져오기 썽크(함수로 제어를 전송하는 코드 스텁)의 주소로 설정됩니다. C++에서는 포인터가 함수의 주소로 설정됩니다. 예를 들면 다음과 같습니다.
+- C + +에서는 특성을 사용 하 여 선언 된 데이터 개체의 주소를 사용 하 여 전역적으로 선언 되거나 정적 로컬 데이터 포인터를 초기화할 수 있습니다 **`dllimport`** . 그러면 c에서 오류가 생성 됩니다. 또한 특성을 사용 하 여 선언 된 함수의 주소를 사용 하 여 정적 로컬 함수 포인터를 초기화할 수 있습니다 **`dllimport`** . C에서는 이러한 대입으로 인해 포인터가 함수의 주소 대신 DLL 가져오기 썽크(함수로 제어를 전송하는 코드 스텁)의 주소로 설정됩니다. C++에서는 포인터가 함수의 주소로 설정됩니다. 예를 들어:
 
     ```cpp
     __declspec( dllimport ) void func1( void );
@@ -61,7 +62,7 @@ ms.locfileid: "87213413"
 
 - **`dllexport`** 로 표시 되지 않은 기본 클래스를 포함 하는 일반 클래스에 적용 하는 경우 **`dllexport`** 컴파일러는 C4275을 생성 합니다.
 
-   컴파일러는 기본 클래스가 클래스 템플릿의 특수화인 경우 동일한 경고를 생성합니다. 이 문제를 해결 하려면 기본 클래스를로 표시 합니다 **`dllexport`** . 클래스 템플릿의 특수화와 관련 된 문제는를 어디에 배치할지를 표시 하는 데 **`__declspec(dllexport)`** 사용할 수 있습니다. 대신, 명시적으로 클래스 템플릿을 인스턴스화하고이 명시적 인스턴스화를로 표시 **`dllexport`** 합니다. 예를 들면 다음과 같습니다.
+   컴파일러는 기본 클래스가 클래스 템플릿의 특수화인 경우 동일한 경고를 생성합니다. 이 문제를 해결 하려면 기본 클래스를로 표시 합니다 **`dllexport`** . 클래스 템플릿의 특수화와 관련 된 문제는를 어디에 배치할지를 표시 하는 데 **`__declspec(dllexport)`** 사용할 수 있습니다. 대신, 명시적으로 클래스 템플릿을 인스턴스화하고이 명시적 인스턴스화를로 표시 **`dllexport`** 합니다. 예를 들어:
 
     ```cpp
     template class __declspec(dllexport) B<int>;
@@ -69,7 +70,7 @@ ms.locfileid: "87213413"
     // ...
     ```
 
-   템플릿 인수가 파생 클래스일 경우 이 해결 방법은 실패합니다. 예를 들면 다음과 같습니다.
+   템플릿 인수가 파생 클래스일 경우 이 해결 방법은 실패합니다. 예를 들어:
 
     ```cpp
     class __declspec(dllexport) D : public B<D> {

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: CObject 클래스'
 title: CObject 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - CObject [MFC], IsSerializable
 - CObject [MFC], Serialize
 ms.assetid: 95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a
-ms.openlocfilehash: ce745e0717e36a3c9acb5323d04545c59750add7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bd093307f159a6d7abe83d9fdd9ad6898a19e4ae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222903"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331469"
 ---
 # <a name="cobject-class"></a>CObject 클래스
 
@@ -65,7 +66,7 @@ class AFX_NOVTABLE CObject
 
 ## <a name="remarks"></a>설명
 
-및와 같은 라이브러리 클래스 뿐만 아니라 사용자가 작성 하는 클래스에 대 한 루트 역할을 합니다 `CFile` `CObList` . `CObject`다음을 포함 하 여 기본 서비스를 제공 합니다.
+및와 같은 라이브러리 클래스 뿐만 아니라 사용자가 작성 하는 클래스에 대 한 루트 역할을 합니다 `CFile` `CObList` . `CObject` 다음을 포함 하 여 기본 서비스를 제공 합니다.
 
 - Serialization 지원
 
@@ -93,7 +94,7 @@ class AFX_NOVTABLE CObject
 
 **헤더:** afx
 
-## <a name="cobjectassertvalid"></a><a name="assertvalid"></a>CObject:: AssertValid
+## <a name="cobjectassertvalid"></a><a name="assertvalid"></a> CObject:: AssertValid
 
 이 개체의 무결성을 검사 합니다.
 
@@ -103,7 +104,7 @@ virtual void AssertValid() const;
 
 ### <a name="remarks"></a>설명
 
-`AssertValid`내부 상태를 확인 하 여이 개체에 대 한 유효성 검사를 수행 합니다. 라이브러리의 디버그 버전에서는 `AssertValid` 어설션이 실패 한 줄 번호와 파일 이름을 나열 하는 메시지를 사용 하 여 프로그램을 어설션 하 고 종료할 수 있습니다.
+`AssertValid` 내부 상태를 확인 하 여이 개체에 대 한 유효성 검사를 수행 합니다. 라이브러리의 디버그 버전에서는 `AssertValid` 어설션이 실패 한 줄 번호와 파일 이름을 나열 하는 메시지를 사용 하 여 프로그램을 어설션 하 고 종료할 수 있습니다.
 
 사용자 고유의 클래스를 작성 하는 경우 함수를 재정의 `AssertValid` 하 여 클래스의 사용자 및 다른 사용자에 게 진단 서비스를 제공 해야 합니다. 재정의 된는 `AssertValid` 일반적으로 `AssertValid` 파생 클래스에 고유한 데이터 멤버를 확인 하기 전에 기본 클래스의 함수를 호출 합니다.
 
@@ -119,7 +120,7 @@ virtual void AssertValid() const;
 
 다른 예제를 보려면 [AfxDoForAllObjects](diagnostic-services.md#afxdoforallobjects)를 참조 하세요.
 
-## <a name="cobjectcobject"></a><a name="cobject"></a>CObject:: CObject
+## <a name="cobjectcobject"></a><a name="cobject"></a> CObject:: CObject
 
 이러한 함수는 표준 `CObject` 생성자입니다.
 
@@ -131,7 +132,7 @@ CObject(const CObject& objectSrc);
 ### <a name="parameters"></a>매개 변수
 
 *objectSrc*<br/>
-다른에 대 한 참조`CObject`
+다른에 대 한 참조 `CObject`
 
 ### <a name="remarks"></a>설명
 
@@ -147,7 +148,7 @@ CObject(const CObject& objectSrc);
 
 [!code-cpp[NVC_MFCCObjectSample#8](../../mfc/codesnippet/cpp/cobject-class_2.cpp)]
 
-## <a name="cobjectdump"></a><a name="dump"></a>CObject::D ump
+## <a name="cobjectdump"></a><a name="dump"></a> CObject::D ump
 
 개체의 내용을 [CDumpContext](../../mfc/reference/cdumpcontext-class.md) 개체에 덤프 합니다.
 
@@ -162,18 +163,18 @@ virtual void Dump(CDumpContext& dc) const;
 
 ### <a name="remarks"></a>설명
 
-사용자 고유의 클래스를 작성 하는 경우 함수를 재정의 `Dump` 하 여 클래스의 사용자 및 다른 사용자에 게 진단 서비스를 제공 해야 합니다. 재정의 된는 `Dump` 일반적으로 `Dump` 파생 클래스에 고유한 데이터 멤버를 인쇄 하기 전에 기본 클래스의 함수를 호출 합니다. `CObject::Dump`클래스에서 또는 IMPLEMENT_SERIAL 매크로를 사용 하는 경우 클래스 이름을 인쇄 합니다 `IMPLEMENT_DYNAMIC` .
+사용자 고유의 클래스를 작성 하는 경우 함수를 재정의 `Dump` 하 여 클래스의 사용자 및 다른 사용자에 게 진단 서비스를 제공 해야 합니다. 재정의 된는 `Dump` 일반적으로 `Dump` 파생 클래스에 고유한 데이터 멤버를 인쇄 하기 전에 기본 클래스의 함수를 호출 합니다. `CObject::Dump` 클래스에서 또는 IMPLEMENT_SERIAL 매크로를 사용 하는 경우 클래스 이름을 인쇄 합니다 `IMPLEMENT_DYNAMIC` .
 
 > [!NOTE]
 > `Dump`함수는 출력의 끝 부분에서 줄 바꿈 문자를 인쇄 하면 안 됩니다.
 
-`Dump`호출은 MFC 라이브러리의 디버그 버전 에서만 의미가 있습니다. **#ifdef _DEBUG** /  `#endif` 조건부 컴파일에 대 한 #ifdef _DEBUG 문으로 호출, 함수 선언 및 함수 구현을 묶습니다.
+`Dump` 호출은 MFC 라이브러리의 디버그 버전 에서만 의미가 있습니다.  /  `#endif` 조건부 컴파일에 대 한 #ifdef _DEBUG 문으로 호출, 함수 선언 및 함수 구현을 묶습니다.
 
 `Dump`는 함수 이므로 **`const`** 덤프 중에 개체 상태를 변경할 수 없습니다.
 
 [CDumpContext 삽입 (<<) 연산자](../../mfc/reference/cdumpcontext-class.md#operator_lt_lt) 는 `Dump` 포인터가 삽입 될 때를 호출 합니다 `CObject` .
 
-`Dump`개체의 "비순환" 덤프만 허용 합니다. 예를 들어 개체 목록을 덤프할 수 있지만 개체 중 하나가 목록 자체인 경우 스택을 오버플로 하 게 됩니다.
+`Dump` 개체의 "비순환" 덤프만 허용 합니다. 예를 들어 개체 목록을 덤프할 수 있지만 개체 중 하나가 목록 자체인 경우 스택을 오버플로 하 게 됩니다.
 
 ### <a name="example"></a>예제
 
@@ -181,7 +182,7 @@ virtual void Dump(CDumpContext& dc) const;
 
 [!code-cpp[NVC_MFCCObjectSample#9](../../mfc/codesnippet/cpp/cobject-class_3.cpp)]
 
-## <a name="cobjectgetruntimeclass"></a><a name="getruntimeclass"></a>CObject:: GetRuntimeClass
+## <a name="cobjectgetruntimeclass"></a><a name="getruntimeclass"></a> CObject:: GetRuntimeClass
 
 `CRuntimeClass`이 개체의 클래스에 해당 하는 구조체를 반환 합니다.
 
@@ -189,9 +190,9 @@ virtual void Dump(CDumpContext& dc) const;
 virtual CRuntimeClass* GetRuntimeClass() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-이 개체의 클래스에 해당 하는 [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) 구조체에 대 한 포인터입니다. **NULL**이 아닙니다.
+이 개체의 클래스에 해당 하는 [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) 구조체에 대 한 포인터입니다. **NULL** 이 아닙니다.
 
 ### <a name="remarks"></a>설명
 
@@ -203,11 +204,11 @@ virtual CRuntimeClass* GetRuntimeClass() const;
 
 - **UINT m_wSchema** 스키마 번호 (serialize 할 수 없는 클래스의 경우-1)입니다. 스키마 번호에 대 한 설명은 [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial) 매크로를 참조 하세요.
 
-- **CObject \* (파스칼 \* m_pfnCreateObject) ()** 클래스의 개체를 만드는 기본 생성자에 대 한 함수 포인터입니다. 클래스에서 동적 생성을 지 원하는 경우에만 유효 합니다. 그렇지 않으면 **NULL**을 반환 합니다.
+- **CObject \* (파스칼 \* m_pfnCreateObject) ()** 클래스의 개체를 만드는 기본 생성자에 대 한 함수 포인터입니다. 클래스에서 동적 생성을 지 원하는 경우에만 유효 합니다. 그렇지 않으면 **NULL** 을 반환 합니다.
 
 - **CRuntimeClass \* (파스칼 \* m_pfn_GetBaseClass) ()** 응용 프로그램이 AFXDLL 버전의 MFC에 동적으로 연결 된 경우 `CRuntimeClass` 기본 클래스의 구조를 반환 하는 함수에 대 한 포인터입니다.
 
-- CRuntimeClass는 응용 프로그램이 정적으로 MFC에 링크 된 경우 기본 클래스의 구조에 대 한 포인터를 ** \* m_pBaseClass** `CRuntimeClass` 합니다.
+- CRuntimeClass는 응용 프로그램이 정적으로 MFC에 링크 된 경우 기본 클래스의 구조에 대 한 포인터를 **\* m_pBaseClass** `CRuntimeClass` 합니다.
 
 이 함수를 사용 하려면 클래스 구현에서 [IMPLEMENT_DYNAMIC](run-time-object-model-services.md#implement_dynamic), [IMPLEMENT_DYNCREATE](run-time-object-model-services.md#implement_dyncreate)또는 [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial) 매크로를 사용 해야 합니다. 그렇지 않으면 잘못 된 결과를 얻게 됩니다.
 
@@ -217,7 +218,7 @@ virtual CRuntimeClass* GetRuntimeClass() const;
 
 [!code-cpp[NVC_MFCCObjectSample#10](../../mfc/codesnippet/cpp/cobject-class_4.cpp)]
 
-## <a name="cobjectiskindof"></a><a name="iskindof"></a>CObject:: IsKindOf
+## <a name="cobjectiskindof"></a><a name="iskindof"></a> CObject:: IsKindOf
 
 지정 된 클래스에 대 한이 개체의 관계를 테스트 합니다.
 
@@ -230,7 +231,7 @@ BOOL IsKindOf(const CRuntimeClass* pClass) const;
 *pClass*<br/>
 파생 클래스와 연결 된 [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) 구조체에 대 한 포인터 `CObject` 입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 개체가 클래스에 해당 하는 경우 0이 아닌 값입니다. 그렇지 않으면 0입니다.
 
@@ -246,7 +247,7 @@ BOOL IsKindOf(const CRuntimeClass* pClass) const;
 
 [!code-cpp[NVC_MFCCObjectSample#11](../../mfc/codesnippet/cpp/cobject-class_5.cpp)]
 
-## <a name="cobjectisserializable"></a><a name="isserializable"></a>CObject:: IsSerializable
+## <a name="cobjectisserializable"></a><a name="isserializable"></a> CObject:: IsSerializable
 
 이 개체가 직렬화에 적합 한지 여부를 테스트 합니다.
 
@@ -254,7 +255,7 @@ BOOL IsKindOf(const CRuntimeClass* pClass) const;
 BOOL IsSerializable() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 개체를 serialize 할 수 있는 경우 0이 아닙니다. 그렇지 않으면 0입니다.
 
@@ -271,7 +272,7 @@ BOOL IsSerializable() const;
 
 [!code-cpp[NVC_MFCCObjectSample#12](../../mfc/codesnippet/cpp/cobject-class_6.cpp)]
 
-## <a name="cobjectoperator-delete"></a><a name="operator_delete"></a>CObject:: operator delete
+## <a name="cobjectoperator-delete"></a><a name="operator_delete"></a> CObject:: operator delete
 
 라이브러리의 릴리스 버전에서 연산자는 연산자에 **`delete`** 의해 할당 된 메모리를 해제 **`new`** 합니다.
 
@@ -308,7 +309,7 @@ void PASCAL operator delete(
 
 [!code-cpp[NVC_MFCCObjectSample#15](../../mfc/codesnippet/cpp/cobject-class_8.cpp)]
 
-## <a name="cobjectoperator-new"></a><a name="operator_new"></a>CObject:: operator new
+## <a name="cobjectoperator-new"></a><a name="operator_new"></a> CObject:: operator new
 
 라이브러리의 릴리스 버전에서는 연산자가 **`new`** 와 비슷한 방식으로 최적의 메모리 할당을 수행 `malloc` 합니다.
 
@@ -343,7 +344,7 @@ void* PASCAL operator new(
 
 [!code-cpp[NVC_MFCCObjectSample#16](../../mfc/codesnippet/cpp/cobject-class_9.h)]
 
-## <a name="cobjectserialize"></a><a name="serialize"></a>CObject:: Serialize
+## <a name="cobjectserialize"></a><a name="serialize"></a> CObject:: Serialize
 
 이 개체를 보관 저장소에서 읽어오거나 보관 저장소에 씁니다.
 
@@ -353,7 +354,7 @@ virtual void Serialize(CArchive& ar);
 
 ### <a name="parameters"></a>매개 변수
 
-*방어력*<br/>
+*ar*<br/>
 `CArchive`Serialize 하거나에서 serialize 할 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -364,7 +365,7 @@ virtual void Serialize(CArchive& ar);
 
 [Carchive:: IsLoading](../../mfc/reference/carchive-class.md#isloading) 또는 [Carchive:: isloading](../../mfc/reference/carchive-class.md#isstoring) 을 사용 하 여 보관 파일의 로드 또는 저장 여부를 확인 합니다.
 
-`Serialize`는 [carchive:: ReadObject](../../mfc/reference/carchive-class.md#readobject) 및 [Carchive:: WriteObject](../../mfc/reference/carchive-class.md#writeobject)에 의해 호출 됩니다. 이러한 함수는 `CArchive` 삽입 연산자 ()와 연결 됩니다 **<\<**) and extraction operator ( **>>** .
+`Serialize` 는 [carchive:: ReadObject](../../mfc/reference/carchive-class.md#readobject) 및 [Carchive:: WriteObject](../../mfc/reference/carchive-class.md#writeobject)에 의해 호출 됩니다. 이러한 함수는 `CArchive` 삽입 연산자 ()와 연결 됩니다 **<\<**) and extraction operator ( **>>** .
 
 Serialization 예제는 [serialization: 개체 serialize](../../mfc/serialization-serializing-an-object.md)문서를 참조 하세요.
 

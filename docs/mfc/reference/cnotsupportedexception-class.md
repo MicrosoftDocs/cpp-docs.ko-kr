@@ -1,5 +1,6 @@
 ---
-title: CNot지원 예외 클래스
+description: '자세히 알아보기: CNotSupportedException 클래스'
+title: CNotSupportedException 클래스
 ms.date: 11/04/2016
 f1_keywords:
 - CNotSupportedException
@@ -8,14 +9,14 @@ f1_keywords:
 helpviewer_keywords:
 - CNotSupportedException [MFC], CNotSupportedException
 ms.assetid: e517391b-eb94-4c39-ae32-87b45bf7d624
-ms.openlocfilehash: b859b939baef018e69b245e597eea90e608253ca
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 61bf729753897e1d30c5a12bc371489ba6f2d64f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81363187"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331478"
 ---
-# <a name="cnotsupportedexception-class"></a>CNot지원 예외 클래스
+# <a name="cnotsupportedexception-class"></a>CNotSupportedException 클래스
 
 지원되지 않는 기능을 요청한 결과인 예외를 나타냅니다.
 
@@ -29,15 +30,15 @@ class CNotSupportedException : public CSimpleException
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[CNot지원 예외::CNot지원 예외](#cnotsupportedexception)|`CNotSupportedException` 개체를 생성합니다.|
+|[CNotSupportedException::CNotSupportedException](#cnotsupportedexception)|`CNotSupportedException` 개체를 생성합니다.|
 
 ## <a name="remarks"></a>설명
 
-더 이상의 자격이 필요하지 않거나 불가능합니다.
+더 이상 정규화를 수행할 필요가 없습니다.
 
-사용에 `CNotSupportedException`대한 자세한 내용은 [MFC(예외 처리)](../../mfc/exception-handling-in-mfc.md)문서를 참조하십시오.
+사용에 대 한 자세한 내용은 `CNotSupportedException` [예외 처리 (MFC)](../../mfc/exception-handling-in-mfc.md)문서를 참조 하세요.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -51,9 +52,9 @@ class CNotSupportedException : public CSimpleException
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afx.h
+**헤더:** afx
 
-## <a name="cnotsupportedexceptioncnotsupportedexception"></a><a name="cnotsupportedexception"></a>CNot지원 예외::CNot지원 예외
+## <a name="cnotsupportedexceptioncnotsupportedexception"></a><a name="cnotsupportedexception"></a> CNotSupportedException::CNotSupportedException
 
 `CNotSupportedException` 개체를 생성합니다.
 
@@ -63,7 +64,7 @@ CNotSupportedException();
 
 ### <a name="remarks"></a>설명
 
-이 생성자는 직접 사용하지 말고 전역 함수 [AfxThrowNotSupportedException을](exception-processing.md#afxthrownotsupportedexception)호출합니다. 예외 처리에 대한 자세한 내용은 [MFC의 예외 처리](../exception-handling-in-mfc.md)문서를 참조하십시오.
+이 생성자는 직접 사용 하지 말고 [AfxThrowNotSupportedException](exception-processing.md#afxthrownotsupportedexception)전역 함수를 호출 합니다. 예외 처리에 대 한 자세한 내용은 [MFC의 예외 처리](../exception-handling-in-mfc.md)문서를 참조 하세요.
 
 ## <a name="see-also"></a>참고 항목
 

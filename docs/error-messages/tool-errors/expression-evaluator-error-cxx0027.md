@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 식 계산기 오류 CXX0027'
 title: 식 계산기 오류 CXX0027
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - CAN0027
 - CXX0027
 ms.assetid: 0127cfc0-c292-4923-a58b-25542343cdad
-ms.openlocfilehash: e68a0236145203bd37906e7f4645b1828d803779
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e9d97be5b4a74ce1606e28cb4a7b8298b1bf0c86
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80195736"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330421"
 ---
 # <a name="expression-evaluator-error-cxx0027"></a>식 계산기 오류 CXX0027
 

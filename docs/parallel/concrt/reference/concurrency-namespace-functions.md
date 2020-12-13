@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 동시성 네임 스페이스 함수'
 title: concurrency 네임스페이스 함수
 ms.date: 11/04/2016
 f1_keywords:
@@ -33,12 +34,12 @@ f1_keywords:
 - ppltasks/concurrency::when_all
 - ppltasks/concurrency::when_any
 ms.assetid: 520a6dff-9324-4df2-990d-302e3050af6a
-ms.openlocfilehash: 25cd74e20102bbc1a75e4b4efe1bf234845f7fcb
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: db49a58084e8e6fbbe4e3ea1ccd9253c7743baea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840182"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331281"
 ---
 # <a name="concurrency-namespace-functions"></a>concurrency 네임스페이스 함수
 
@@ -802,7 +803,7 @@ void parallel_for(
 각 반복에서 실행할 함수입니다. 이는 람다 식, 함수 포인터 또는 시그니처와 함께 함수 호출 연산자의 버전을 지 원하는 모든 개체 일 수 있습니다 `void operator()(_Index_type)` .
 
 *_Part*<br/>
-partitioner 개체에 대한 참조입니다. 인수는 **`const`** [auto_partitioner](auto-partitioner-class.md) `&` , **`const`** [static_partitioner](static-partitioner-class.md) `&` , simple_partitioner 또는 affinity_partitioner 중 하나일 수 있습니다 **`const`** [simple_partitioner](simple-partitioner-class.md) `&` [affinity_partitioner](affinity-partitioner-class.md) `&` . [affinity_partitioner](affinity-partitioner-class.md) 개체를 사용 하는 경우에는 참조가 const l-value 참조가 아니어야 하므로 알고리즘에서 이후 루프를 다시 사용 하기 위한 상태를 저장할 수 있습니다.
+partitioner 개체에 대한 참조입니다. 인수는 **`const`** [auto_partitioner](auto-partitioner-class.md) `&` , **`const`** [static_partitioner](static-partitioner-class.md) `&` , simple_partitioner 또는 affinity_partitioner 중 하나일 수 있습니다 **`const`** [](simple-partitioner-class.md) `&` [](affinity-partitioner-class.md) `&` . [affinity_partitioner](affinity-partitioner-class.md) 개체를 사용 하는 경우에는 참조가 const l-value 참조가 아니어야 하므로 알고리즘에서 이후 루프를 다시 사용 하기 위한 상태를 저장할 수 있습니다.
 
 ### <a name="remarks"></a>설명
 
@@ -846,7 +847,7 @@ void parallel_for_each(
 범위의 각 요소에 적용 되는 사용자 정의 함수 개체입니다.
 
 *_Part*<br/>
-partitioner 개체에 대한 참조입니다. 인수는 **`const`** [auto_partitioner](auto-partitioner-class.md) `&` , **`const`** [static_partitioner](static-partitioner-class.md) `&` , simple_partitioner 또는 affinity_partitioner 중 하나일 수 있습니다 **`const`** [simple_partitioner](simple-partitioner-class.md) `&` [affinity_partitioner](affinity-partitioner-class.md) `&` . [affinity_partitioner](affinity-partitioner-class.md) 개체를 사용 하는 경우에는 참조가 const l-value 참조가 아니어야 하므로 알고리즘에서 이후 루프를 다시 사용 하기 위한 상태를 저장할 수 있습니다.
+partitioner 개체에 대한 참조입니다. 인수는 **`const`** [auto_partitioner](auto-partitioner-class.md) `&` , **`const`** [static_partitioner](static-partitioner-class.md) `&` , simple_partitioner 또는 affinity_partitioner 중 하나일 수 있습니다 **`const`** [](simple-partitioner-class.md) `&` [](affinity-partitioner-class.md) `&` . [affinity_partitioner](affinity-partitioner-class.md) 개체를 사용 하는 경우에는 참조가 const l-value 참조가 아니어야 하므로 알고리즘에서 이후 루프를 다시 사용 하기 위한 상태를 저장할 수 있습니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1360,7 +1361,7 @@ first2,
 소스 범위의 각 요소에 적용되는 사용자 정의 단항 함수 개체입니다.
 
 *_Part*<br/>
-partitioner 개체에 대한 참조입니다. 인수는 **`const`** [auto_partitioner](auto-partitioner-class.md) `&` , **`const`** [static_partitioner](static-partitioner-class.md) `&` , simple_partitioner 또는 affinity_partitioner 중 하나일 수 있습니다 **`const`** [simple_partitioner](simple-partitioner-class.md) `&` [affinity_partitioner](affinity-partitioner-class.md) `&` . [affinity_partitioner](affinity-partitioner-class.md) 개체를 사용 하는 경우에는 참조가 const l-value 참조가 아니어야 하므로 알고리즘에서 이후 루프를 다시 사용 하기 위한 상태를 저장할 수 있습니다.
+partitioner 개체에 대한 참조입니다. 인수는 **`const`** [auto_partitioner](auto-partitioner-class.md) `&` , **`const`** [static_partitioner](static-partitioner-class.md) `&` , simple_partitioner 또는 affinity_partitioner 중 하나일 수 있습니다 **`const`** [](simple-partitioner-class.md) `&` [](affinity-partitioner-class.md) `&` . [affinity_partitioner](affinity-partitioner-class.md) 개체를 사용 하는 경우에는 참조가 const l-value 참조가 아니어야 하므로 알고리즘에서 이후 루프를 다시 사용 하기 위한 상태를 저장할 수 있습니다.
 
 *first2*<br/>
 작업을 수행할 두 번째 소스 범위에서 첫 번째 요소의 위치를 주소 지정하는 입력 반복기입니다.
@@ -1432,7 +1433,7 @@ T receive(
 
 ### <a name="remarks"></a>설명
 
-매개 변수에 `_Timeout` 상수가 아닌 값이 있으면 `COOPERATIVE_TIMEOUT_INFINITE` 메시지가 수신 되기 전에 지정 된 시간이 만료 되 면 예외가 throw 됩니다 [operation_timed_out](operation-timed-out-class.md) . 길이가 0 인 시간 제한이 필요한 경우 시간 제한 [try_receive](concurrency-namespace-functions.md) `receive` `0` (0)을 사용 하 여를 호출 하는 대신 try_receive 함수를 사용 해야 합니다.
+매개 변수에 `_Timeout` 상수가 아닌 값이 있으면 `COOPERATIVE_TIMEOUT_INFINITE` 메시지가 수신 되기 전에 지정 된 시간이 만료 되 면 예외가 throw 됩니다 [operation_timed_out](operation-timed-out-class.md) . 길이가 0 인 시간 제한이 필요한 경우 시간 제한 [](concurrency-namespace-functions.md) `receive` `0` (0)을 사용 하 여를 호출 하는 대신 try_receive 함수를 사용 해야 합니다.
 
 자세한 내용은 [메시지 전달 함수](../../../parallel/concrt/message-passing-functions.md)를 참조 하세요.
 

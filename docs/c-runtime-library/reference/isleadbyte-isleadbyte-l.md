@@ -1,4 +1,5 @@
 ---
+description: Isleadbyte, _isleadbyte_l에 대해 자세히 알아보세요.
 title: isleadbyte, _isleadbyte_l
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - istleadbyte function
 - isleadbyte function
 ms.assetid: 3b2bcf09-d82b-4803-9e80-59d04942802a
-ms.openlocfilehash: 1d2202bd1ca59ee42287c398da429df132e24fcb
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 544adda1b794db6a003e3ae7d51b15456574f875
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234083"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332657"
 ---
 # <a name="isleadbyte-_isleadbyte_l"></a>isleadbyte, _isleadbyte_l
 
@@ -60,7 +61,7 @@ int _isleadbyte_l( int c );
 *c*<br/>
 테스트할 정수입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 **isleadbyte** 는 인수가 테스트 조건을 충족 하는 경우 0이 아닌 값을 반환 하 고 그렇지 않으면 0을 반환 합니다. "C" 로캘과 SBCS (싱글바이트 문자 집합) 로캘에서 **isleadbyte** 는 항상 0을 반환 합니다.
 
