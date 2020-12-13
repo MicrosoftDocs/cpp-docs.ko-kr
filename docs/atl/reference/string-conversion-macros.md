@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 문자열 변환 매크로'
 title: 문자열 변환 매크로
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ f1_keywords:
 - atlconv/ATL::DEVMODEW2A
 - atlconv/ATL::TEXTMETRICW2A
 ms.assetid: 2ff7c0b6-2bde-45fe-897f-6128e18e0c27
-ms.openlocfilehash: 60cccebf4e1db8369ea5a88f04a37b96838ff49f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: a7717f7876d9dbe23c0b95fd68b4bcd971e81267
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835157"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97138777"
 ---
 # <a name="string-conversion-macros"></a>문자열 변환 매크로
 
@@ -57,9 +58,9 @@ and:
 |적용되는 컴파일러 지시문|T의 변경 결과|OLE의 변경 결과|
 |----------------------------------|---------------|-----------------|
 |없음|**A**|**W**|
-|**\_UNICODE**|**W**|**W**|
+|**\_유니코드**|**W**|**W**|
 |**OLE2ANSI**|**A**|**A**|
-|** \_ 유니코드** 및 **OLE2ANSI**|**W**|**A**|
+|**\_ 유니코드** 및 **OLE2ANSI**|**W**|**A**|
 
 다음 표에서는 `DEVMODE` 및 `TEXTMETRIC` 문자열 변환 매크로를 보여 줍니다.
 

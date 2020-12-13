@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: ML 심각 하지 않은 오류 A2031'
 title: ML 심각하지 않은 오류 A2031
 ms.date: 12/17/2019
 ms.custom: error-reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - A2031
 ms.assetid: d5b11f58-4a00-42be-9062-8fa8728e6306
-ms.openlocfilehash: 4764f7296e28e2128fc4fc80e64f39ceb2a8ed8c
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: 8c92b4e3439a4e660c7c128e52bcadc668778189
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75317073"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97129222"
 ---
 # <a name="ml-nonfatal-error-a2031"></a>ML 심각하지 않은 오류 A2031
 
@@ -27,6 +28,6 @@ ms.locfileid: "75317073"
 [bl]
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [ML 오류 메시지](ml-error-messages.md)

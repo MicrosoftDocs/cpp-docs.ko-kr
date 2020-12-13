@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: ML 심각한 오류 A1005'
 title: ML 심각한 오류 A1005
 ms.date: 12/17/2019
 ms.custom: error-reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - A1005
 ms.assetid: 42c7a6c5-277d-417c-acc1-d84c370e8d24
-ms.openlocfilehash: 3dd64d5bc9fdd0ea6d9c53a425ba922a81df6193
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: a4105f1577d31532e64d760f1bcc5bc6f01c2fae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75313147"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97129560"
 ---
 # <a name="ml-fatal-error-a1005"></a>ML 심각한 오류 A1005
 
@@ -22,6 +23,6 @@ ms.locfileid: "75313147"
 
 더 짧거나 더 작은 이름을 정의 하거나 불필요 한 매크로를 제거 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [ML 오류 메시지](ml-error-messages.md)

@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 방법: c + +/CLI에서 safe_cast 사용'
 title: '방법: C++/CLI에서 safe_cast 사용'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - safe_cast keyword [C++], upcasting
 ms.assetid: 0fbc87d8-ecdf-4cd5-81f4-0d8cc18e2aff
-ms.openlocfilehash: 56ac19871bcdc5162b959f6d60103387551ac2a8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f921371f97f967f9517121aaa163f79769781211
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225659"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97145576"
 ---
 # <a name="how-to-use-safe_cast-in-ccli"></a>방법: C++/CLI에서 safe_cast 사용
 

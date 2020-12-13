@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 구문 분석 트리 이해'
 title: ATL 등록자 및 구문 분석 트리
 ms.date: 11/04/2016
 helpviewer_keywords:
 - parse trees
 ms.assetid: 668ce2dd-a1c3-4ca0-8135-b25267cb6a85
-ms.openlocfilehash: ff74ff879e757a569232ff19244d3f7598063465
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: cae5256bf932478135db747f80816378e61429a0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040290"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97138244"
 ---
 # <a name="understanding-parse-trees"></a>구문 분석 트리 이해
 

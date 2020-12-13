@@ -1,16 +1,17 @@
 ---
+description: '자세히 알아보기: Pixel/HIMETRIC 변환 전역 함수'
 title: 픽셀-HIMETRIC 변환 전역 함수
 ms.date: 11/04/2016
 f1_keywords:
 - atlwin/ATL::AtlHiMetricToPixel
 - atlwin/ATL::AtlPixelToHiMetric
 ms.assetid: ecb1b1b2-7e9d-4fbc-a855-16252d2d794c
-ms.openlocfilehash: e71dccbccbe43ea7df3b6a7005da138a8e31aeb3
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 53753ff92b04466a94b821fdc4b4f221117c6ade
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834689"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97138985"
 ---
 # <a name="pixelhimetric-conversion-global-functions"></a>Pixel/HIMETRIC 변환 전역 함수
 

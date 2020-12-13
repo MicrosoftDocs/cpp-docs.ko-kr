@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: COM 맵 전역 함수'
 title: COM 맵 전역 함수
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - COM interfaces, COM map global functions
 ms.assetid: b9612d30-eb23-46ef-8093-d56f237d3cf1
-ms.openlocfilehash: adf4e06eb46aed74d08071dccce1db549ca31226
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: ee502a68a0a3b21849d2fabdadcc9ecbbcc1602d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833597"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141338"
 ---
 # <a name="com-map-global-functions"></a>COM 맵 전역 함수
 
 이러한 함수는 COM 맵 구현을 지원 `IUnknown` 합니다.
 
-|기능|설명|
+|함수|설명|
 |-|-|
 |[AtlInternalQueryInterface](#atlinternalqueryinterface)|집계할 수 없는 개체의에 대 한 대리자입니다 `IUnknown` .|
 |[InlineIsEqualIUnknown](#inlineisequaliunknown)|인터페이스를 비교 하기 위한 효율적인 코드를 생성 `IUnknown` 합니다.|
@@ -51,7 +52,7 @@ HRESULT AtlInternalQueryInterface(
 진행 요청 되는 인터페이스의 GUID입니다.
 
 *ppvObject*<br/>
-제한이 *Iid*에 지정 된 인터페이스 포인터에 대 한 포인터 이거나, 인터페이스를 찾을 수 없는 경우 NULL입니다.
+제한이 *Iid* 에 지정 된 인터페이스 포인터에 대 한 포인터 이거나, 인터페이스를 찾을 수 없는 경우 NULL입니다.
 
 ### <a name="return-value"></a>반환 값
 

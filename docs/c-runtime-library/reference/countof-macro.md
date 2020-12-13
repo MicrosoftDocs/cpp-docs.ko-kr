@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 매크로 _countof'
 title: _countof 매크로
 ms.date: 03/22/2018
 api_location:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - countof macro
 - _countof macro
 ms.assetid: 86198767-f7e5-4beb-898d-3cbbf60350a3
-ms.openlocfilehash: 3debd63da7d218e29f31847034c69d89b4691643
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 190f47aa7bb6bcf6bbd9478cce9df90aca81b437
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70942681"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146460"
 ---
 # <a name="_countof-macro"></a>_countof 매크로
 
@@ -47,13 +48,13 @@ ms.locfileid: "70942681"
 
 ## <a name="return-value"></a>반환 값
 
-**Size_t**로 표현 된 배열의 요소 수입니다.
+**Size_t** 로 표현 된 배열의 요소 수입니다.
 
 ## <a name="remarks"></a>설명
 
-**_countof** 는 함수 형태의 전처리기 매크로로 구현 됩니다. 버전 C++ 에는 정적으로 선언 된 배열 대신 포인터가 전달 되는 경우 컴파일 타임에 검색할 추가 템플릿 기계가 있습니다.
+**_countof** 는 함수 형태의 전처리기 매크로로 구현 됩니다. C + + 버전에는 정적으로 선언 된 배열 대신 포인터가 전달 되는 경우 컴파일 타임에 검색할 추가 템플릿 기계가 있습니다.
 
-*배열이* 실제로 포인터가 아니라 배열 인지 확인 합니다. C에서 **_countof** 는 *배열이* 포인터인 경우 잘못 된 결과를 생성 합니다. 에서 C++ *배열이* 포인터인 경우 **의 _countof는** 컴파일되지 않습니다.  함수에 매개 변수로 전달 되는 배열 *decays는 포인터에 대*한 매개 변수로 전달 됩니다. 즉, 함수 내에서 **_countof** 를 사용 하 여 배열의 범위를 확인할 수 없습니다.
+*배열이* 실제로 포인터가 아니라 배열 인지 확인 합니다. C에서는 *배열이* 포인터인 경우 **_countof** 에서 잘못 된 결과를 생성 합니다. C + +에서는 *배열이* 포인터인 경우 **_countof** 컴파일되지 않습니다.  Decays 함수에 매개 변수로 전달 되는 배열은 *포인터로* 전달 됩니다. 즉, 함수 내에서 **_countof** 를 사용 하 여 배열의 범위를 확인할 수 없습니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -88,6 +89,6 @@ sizeof(arr) = 40 bytes
 _countof(arr) = 20 elements
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [sizeof 연산자](../../cpp/sizeof-operator.md)<br/>

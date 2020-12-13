@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CDialogImpl 클래스'
 title: CDialogImpl 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - dialog boxes, ATL
 - CDialogImpl class
 ms.assetid: d430bc7b-8a28-4ad3-9507-277bdd2c2c2e
-ms.openlocfilehash: b92b5130b31e88565d79b59a24b2bd377d0d84c0
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 228a63edde7eb66960a0acad5d60088d909946a7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834728"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141858"
 ---
 # <a name="cdialogimpl-class"></a>CDialogImpl 클래스
 
@@ -51,7 +52,7 @@ template <class T,
 
 ### <a name="methods"></a>메서드
 
-|기능|Description|
+|함수|Description|
 |-|-|
 |[만들기](#create)|모덜리스 대화 상자를 만듭니다.|
 |[DestroyWindow](#destroywindow)|모덜리스 대화 상자를 소멸 시킵니다.|
@@ -60,7 +61,7 @@ template <class T,
 
 ### <a name="cdialogimplbaset-methods"></a>CDialogImplBaseT 메서드
 
-|기능|설명|
+|함수|설명|
 |-|-|
 |[GetDialogProc](#getdialogproc)|현재 대화 상자 프로시저를 반환 합니다.|
 |[MapDialogRect](#mapdialogrect)|지정 된 사각형의 대화 상자 단위를 화면 단위 (픽셀)에 매핑합니다.|
@@ -68,7 +69,7 @@ template <class T,
 
 ### <a name="static-functions"></a>정적 함수
 
-|기능|설명|
+|함수|설명|
 |-|-|
 |[DialogProc](#dialogproc)|대화 상자에 전송 된 메시지를 처리 합니다.|
 |[StartDialogProc](#startdialogproc)|대화 상자로 보낸 메시지를 처리 하기 위해 첫 번째 메시지를 받을 때 호출 됩니다.|

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CDefaultHashTraits 클래스'
 title: CDefaultHashTraits 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,16 +9,16 @@ f1_keywords:
 helpviewer_keywords:
 - CDefaultHashTraits class
 ms.assetid: d8ec4b37-6d58-447b-a0c1-8580c5b1ab85
-ms.openlocfilehash: 43932092621d44cfc8b07270df92e2765665f23f
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 85cc881466be03931d435d91a48548456d74305b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81327081"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141884"
 ---
 # <a name="cdefaulthashtraits-class"></a>CDefaultHashTraits 클래스
 
-이 클래스는 해시 값을 계산하기 위한 정적 함수를 제공합니다.
+이 클래스는 해시 값을 계산 하는 정적 함수를 제공 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -29,29 +30,29 @@ class CDefaultHashTraits
 #### <a name="parameters"></a>매개 변수
 
 *T*<br/>
-컬렉션에 저장할 데이터 유형입니다.
+컬렉션에 저장 되는 데이터의 형식입니다.
 
 ## <a name="members"></a>멤버
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[CDefault해시해협::해시](#hash)|(정적) 지정된 요소에 대한 해시 값을 계산하려면 이 함수를 호출합니다.|
+|[CDefaultHashTraits:: Hash](#hash)|정적인 지정 된 요소에 대 한 해시 값을 계산 하려면이 함수를 호출 합니다.|
 
 ## <a name="remarks"></a>설명
 
-이 클래스에는 지정된 요소에 대한 해시 값을 반환하는 단일 정적 함수가 포함되어 있습니다. 이 클래스는 [CDefaultElementTraits 클래스에서](../../atl/reference/cdefaultelementtraits-class.md)사용됩니다.
+이 클래스에는 지정 된 요소에 대 한 해시 값을 반환 하는 단일 정적 함수가 포함 되어 있습니다. 이 클래스는 [Cdefaul지 수 Ement특성 클래스](../../atl/reference/cdefaultelementtraits-class.md)에서 활용 됩니다.
 
-자세한 내용은 [ATL 컬렉션 클래스를](../../atl/atl-collection-classes.md)참조하십시오.
+자세한 내용은 [ATL 컬렉션 클래스](../../atl/atl-collection-classes.md)를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** 아틀콜.h
+**헤더:** atlcoll
 
-## <a name="cdefaulthashtraitshash"></a><a name="hash"></a>CDefault해시해협::해시
+## <a name="cdefaulthashtraitshash"></a><a name="hash"></a> CDefaultHashTraits:: Hash
 
-지정된 요소에 대한 해시 값을 계산하려면 이 함수를 호출합니다.
+지정 된 요소에 대 한 해시 값을 계산 하려면이 함수를 호출 합니다.
 
 ```
 static ULONG Hash(const T& element) throw();
@@ -59,16 +60,16 @@ static ULONG Hash(const T& element) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*요소*<br/>
+*요소인*<br/>
 요소입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-해시 값을 반환합니다.
+해시 값을 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-기본 해싱 알고리즘은 매우 간단합니다: 반환 값은 요소 번호입니다. 더 복잡한 알고리즘이 필요한 경우 이 함수를 재정의합니다.
+기본 해시 알고리즘은 매우 간단 합니다. 반환 값은 요소 번호입니다. 더 복잡 한 알고리즘이 필요한 경우이 함수를 재정의 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

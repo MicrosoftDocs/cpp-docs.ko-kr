@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 리소스 파일 작업'
 title: 리소스 파일에 대한 작업(C++)
 ms.date: 02/14/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - resources [C++], about resource files
 - resource files [C++], about resource files
 ms.assetid: 2699a539-b369-4b78-80f0-df03eb7b6780
-ms.openlocfilehash: 3e387a1cefb6577760a34c7957d4f5019b1d49ef
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: c8e1a891839ee19201a98f9beb5e538e24c1d3f0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502912"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135800"
 ---
 # <a name="working-with-resource-files"></a>리소스 파일에 대한 작업
 
@@ -47,7 +48,7 @@ ms.locfileid: "91502912"
 [리소스 편집기](../windows/resource-editors.md)<br/>
 Visual Studio에서 제공 하는 리소스 편집기와 각 편집기로 수정할 수 있는 리소스 형식을 설명 합니다. 또한 각 편집기를 사용 하는 방법에 대 한 자세한 정보 링크를 제공 합니다.
 
-## <a name="related-sections"></a>관련 섹션
+## <a name="related-sections"></a>관련 단원
 
 [Visual Studio의 C++](../overview/visual-cpp-in-visual-studio.md)<br/>
 Visual C++ 설명서에 대한 링크를 제공합니다.

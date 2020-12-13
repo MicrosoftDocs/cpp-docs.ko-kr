@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 심각한 오류 C1084'
 title: 심각한 오류 C1084
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1084
 ms.assetid: b2f273ef-3a14-4d5f-8ce0-7a11a0388fe6
-ms.openlocfilehash: 649686857000b2bee469f0e3ec551d49717c1d7b
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6a3221bb894c0b320642a923d9552a207a2ff9ed
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80204076"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97145316"
 ---
 # <a name="fatal-error-c1084"></a>심각한 오류 C1084
 
@@ -25,7 +26,7 @@ ms.locfileid: "80204076"
 
 - 지정한 파일에 액세스하는 데 적절한 권한이 설정되어 있는지 확인합니다.
 
-- 명령줄 구문이 [컴파일러 명령줄 구문](../../build/reference/compiler-command-line-syntax.md)에 설명 된 규칙을 준수 하는지 확인 합니다.
+- 명령줄 구문이 [컴파일러 Command-Line 구문](../../build/reference/compiler-command-line-syntax.md)에 설명 된 규칙을 준수 하는지 확인 합니다.
 
 - 이러한 환경 변수가 참조 하는 디렉터리에 액세스 하기 위해 환경 변수 **TMP** 및 **TEMP** 가 적절 하 게 설정 되었는지 확인 하 고 적절 한 사용 권한을 확인 합니다. 또한 **TMP** 및 **TEMP** 환경 변수에 의해 참조 되는 드라이브에 사용 가능한 공간이 충분 한지 확인 합니다.
 

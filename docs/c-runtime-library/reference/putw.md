@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _putw'
 title: _putw
 ms.date: 4/2/2020
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - streams, writing integers to
 - _putw function
 ms.assetid: 83d63644-249d-4a39-87e5-3b7aa313968d
-ms.openlocfilehash: 12f54c54b59e43d9a2861489171dd6c9c9436a8a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e49240d7410f47042f515f310ba79f9a9eb38398
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232432"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146395"
 ---
 # <a name="_putw"></a>_putw
 
@@ -57,15 +58,15 @@ int _putw(
 *스트림*<br/>
 **FILE** 구조체에 대한 포인터입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-작성된 값을 반환합니다. **EOF** 의 반환 값은 오류를 나타낼 수 있습니다. **EOF** 도 올바른 정수 값 이므로 **ferror** 를 사용 하 여 오류를 확인 합니다. *Stream* 이 null 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **errno** 를 **EINVAL** 로 설정 하 고 **EOF**를 반환 합니다.
+작성된 값을 반환합니다. **EOF** 의 반환 값은 오류를 나타낼 수 있습니다. **EOF** 도 올바른 정수 값 이므로 **ferror** 를 사용 하 여 오류를 확인 합니다. *Stream* 이 null 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **errno** 를 **EINVAL** 로 설정 하 고 **EOF** 를 반환 합니다.
 
 이 오류 및 다른 오류 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-**_Putw** 함수는 **`int`** 스트림의 현재 위치에 형식의 이진 값을 씁니다 *.* **_putw** 은 스트림의 항목 맞춤에 영향을 주지 않으며 특수 한 맞춤을 가정 하지도 않습니다. **_putw** 는 주로 이전 라이브러리와의 호환성을 위해 사용 됩니다. 의 크기 **_putw** **`int`** 와 내의 바이트 순서가 **`int`** 시스템 마다 다르기 때문에 _putw에서 이식성 문제가 발생할 수 있습니다.
+**_Putw** 함수는 **`int`** 스트림의 현재 위치에 형식의 이진 값을 씁니다 *.* **_putw** 은 스트림의 항목 맞춤에 영향을 주지 않으며 특수 한 맞춤을 가정 하지도 않습니다. **_putw** 는 주로 이전 라이브러리와의 호환성을 위해 사용 됩니다. 의 크기  **`int`** 와 내의 바이트 순서가 **`int`** 시스템 마다 다르기 때문에 _putw에서 이식성 문제가 발생할 수 있습니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
