@@ -1,15 +1,16 @@
 ---
+description: '자세히 알아보기: Concurrency:: graphics 네임 스페이스'
 title: Concurrency::graphics 네임스페이스
 ms.date: 11/04/2016
 f1_keywords:
 - AMP_GRAPHICS/Concurrency
 ms.assetid: 4529d3b1-d7da-4ffb-82bf-080915e0f23e
-ms.openlocfilehash: 942b3bbace85fa297bba6cd4b509f67006a4aed3
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f4ab25a6bc6e7bfd318ea58bb6a7efe403c51a89
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226739"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97132836"
 ---
 # <a name="concurrencygraphics-namespace"></a>Concurrency::graphics 네임스페이스
 
@@ -71,12 +72,12 @@ namespace graphics;
 |[short_vector_traits 구조체](short-vector-traits-structure.md)|짧은 벡터의 길이와 형식에 대 한 검색을 제공 합니다.|
 |[texture_view 클래스](texture-view-class.md)|질감에 대 한 읽기 권한 및 쓰기 권한을 제공 합니다.|
 
-### <a name="functions"></a>Functions
+### <a name="functions"></a>함수
 
 |Name|설명|
 |----------|-----------------|
-|[copy](concurrency-graphics-namespace-functions.md#copy)|오버로드되었습니다. 원본 질감의 내용을 대상 호스트 버퍼에 복사 합니다.|
-|[copy_async](concurrency-graphics-namespace-functions.md#copy_async)|오버로드되었습니다. 소스 질감의 내용을 대상 호스트 버퍼에 비동기적으로 복사 합니다.|
+|[copy](concurrency-graphics-namespace-functions.md#copy)|오버로드됨. 원본 질감의 내용을 대상 호스트 버퍼에 복사 합니다.|
+|[copy_async](concurrency-graphics-namespace-functions.md#copy_async)|오버로드됨. 소스 질감의 내용을 대상 호스트 버퍼에 비동기적으로 복사 합니다.|
 
 ## <a name="requirements"></a>요구 사항
 
