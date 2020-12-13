@@ -1,16 +1,17 @@
 ---
+description: '자세히 알아보기: C++ Core Guidelines 검사기 참조'
 title: C++ Core Guidelines 검사기 참조
 ms.date: 03/22/2018
 ms.topic: reference
 helpviewer_keywords:
 - code analysis, C++ core check
 ms.assetid: f1429463-136e-41ed-8a75-a8dbf0b4fd89
-ms.openlocfilehash: a4dc50395a1da0eda68148123651123cf1607184
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 40d0e713d8064a952c785ca44ac5a7ba60f41b61
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91503393"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97151582"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>C++ Core Guidelines 검사기 참조
 
@@ -25,7 +26,7 @@ ms.locfileid: "91503393"
 이동 생성자가 있는 경우 힙 할당 대신 범위 개체를 반환 합니다. [C++ Core Guidelines R. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr)을 참조 하세요.
 
 [C26403 RESET_OR_DELETE_OWNER](C26403.md)\
-' Variable ' 소유자 포인터를 다시 설정 하거나 명시적으로 삭제 \<T> 하십시오.*variable* [C++ Core Guidelines R. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr)을 참조 하세요.
+' Variable ' 소유자 포인터를 다시 설정 하거나 명시적으로 삭제 \<T> 하십시오. [C++ Core Guidelines R. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr)을 참조 하세요.
 
 [C26404 DONT_DELETE_INVALID](C26404.md)\
 잘못 된 상태일 수 있는 소유자를 삭제 하지 마십시오 \<T> . [C++ Core Guidelines R. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr)을 참조 하세요.

@@ -1,4 +1,5 @@
 ---
+description: Tile_static 키워드에 대해 자세히 알아보세요.
 title: tile_static 키워드
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - tile_static keyword
 ms.assetid: d78384d4-65d9-45cf-b3df-7e904f489d06
-ms.openlocfilehash: 9476c0c446463c04084f46ed17a8ada7fb01fd7e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: c719ab61fd6247800b7e1b6b8ac1a58dd51c6ac5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80188131"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97151413"
 ---
 # <a name="tile_static-keyword"></a>tile_static 키워드
 
@@ -27,7 +28,7 @@ ms.locfileid: "80188131"
 
 - 초기화 되지 않은 **tile_static** 변수의 값이 정의 되지 않았습니다.
 
-- `parallel_for_each`에 대 한 바둑판식으로 배열 되지 않은 호출을 기반으로 하는 호출 그래프에 **tile_static** 변수가 선언 된 경우 경고가 생성 되 고 변수의 동작이 정의 되지 않습니다.
+- 에 대 한 비 바둑판식 호출을 기반으로 하는 호출 그래프에 **tile_static** 변수가 선언 된 경우 `parallel_for_each` 경고가 생성 되 고 변수의 동작이 정의 되지 않습니다.
 
 ## <a name="example"></a>예제
 
@@ -148,5 +149,5 @@ for (int i = 0; i < 4; i++) {
 
 [Microsoft 전용 한정자](../cpp/microsoft-specific-modifiers.md)<br/>
 [C++ AMP 개요](../parallel/amp/cpp-amp-overview.md)<br/>
-[parallel_for_each 함수 (C++ AMP)](../parallel/amp/reference/concurrency-namespace-functions-amp.md#parallel_for_each)<br/>
-[연습: 매트릭스 곱](../parallel/amp/walkthrough-matrix-multiplication.md)
+[parallel_for_each 함수(C++ AMP)](../parallel/amp/reference/concurrency-namespace-functions-amp.md#parallel_for_each)<br/>
+[연습: 행렬 곱하기](../parallel/amp/walkthrough-matrix-multiplication.md)

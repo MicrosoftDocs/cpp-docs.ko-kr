@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2079'
 title: 컴파일러 오류 C2079
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2079
 ms.assetid: ca58d6d5-eccd-40b7-ba14-c003223c5bc7
-ms.openlocfilehash: ea158d8dada013f6b90d0fbe1e7502665c1c24da
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 73ca5d334ac3bf3157b61a1b2a9489282ae1fe00
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757724"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97151218"
 ---
 # <a name="compiler-error-c2079"></a>컴파일러 오류 C2079
 
@@ -32,7 +33,7 @@ int main() {
 }
 ```
 
-가능한 해결 방법:
+해결 방법:
 
 ```cpp
 // C2079b.cpp
@@ -56,7 +57,7 @@ class B {
 class A {};
 ```
 
-가능한 해결 방법:
+해결 방법:
 
 ```cpp
 // C2079d.cpp

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2862'
 title: 컴파일러 오류 C2862
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2862
 ms.assetid: c04d8499-b799-48a1-9fb4-7902a0b0ac8e
-ms.openlocfilehash: cd14f310a00202dce73f091dee46a4605858b698
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 80b2a3d597c3289024d025bac35f5e0aeab44c58
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74755085"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97151114"
 ---
 # <a name="compiler-error-c2862"></a>컴파일러 오류 C2862
 

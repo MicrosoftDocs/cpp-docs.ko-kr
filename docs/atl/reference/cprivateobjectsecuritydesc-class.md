@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CPrivateObjectSecurityDesc 클래스'
 title: CPrivateObjectSecurityDesc 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - CPrivateObjectSecurityDesc class
 ms.assetid: 2c4bbb13-bf99-4833-912a-197f6815bb5d
-ms.openlocfilehash: f62d289418280a05f390bf9cdec23ea30632aed2
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 339105d2a6356150c7a7ce8ccf04bc17d3df4911
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833506"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141065"
 ---
 # <a name="cprivateobjectsecuritydesc-class"></a>CPrivateObjectSecurityDesc 클래스
 
@@ -173,7 +174,7 @@ bool Create(
 새 개체가 다른 개체를 포함할 수 있는지 여부를 지정 합니다. True 값은 새 개체가 컨테이너 임을 나타냅니다. False 값은 새 개체가 컨테이너가 아님을 나타냅니다.
 
 *AutoInheritFlags*<br/>
-Ace (액세스 제어 항목)가 *Pparent*에서 상속 되는 방식을 제어 하는 비트 플래그 집합입니다. 자세한 내용은 [CreatePrivateObjectSecurityEx](/windows/win32/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurityex) 를 참조 하세요.
+Ace (액세스 제어 항목)가 *Pparent* 에서 상속 되는 방식을 제어 하는 비트 플래그 집합입니다. 자세한 내용은 [CreatePrivateObjectSecurityEx](/windows/win32/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurityex) 를 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -200,7 +201,7 @@ bool Get(
 
 ### <a name="parameters"></a>매개 변수
 
-*i*<br/>
+*si*<br/>
 검색할 보안 설명자의 파트를 나타내는 비트 플래그 집합입니다. 이 값은 [SECURITY_INFORMATION](/windows/win32/SecAuthZ/security-information) 비트 플래그의 조합일 수 있습니다.
 
 *pResult*<br/>
@@ -252,7 +253,7 @@ bool Set(
 
 ### <a name="parameters"></a>매개 변수
 
-*i*<br/>
+*si*<br/>
 설정할 보안 설명자의 부분을 나타내는 비트 플래그 집합입니다. 이 값은 [SECURITY_INFORMATION](/windows/win32/SecAuthZ/security-information) 비트 플래그의 조합일 수 있습니다.
 
 *수정*<br/>
@@ -265,7 +266,7 @@ bool Set(
 개체를 만들고 있는 클라이언트 프로세스에 대 한 [CAccessToken](../../atl/reference/caccesstoken-class.md) 개체에 대 한 참조입니다.
 
 *AutoInheritFlags*<br/>
-Ace (액세스 제어 항목)가 *Pparent*에서 상속 되는 방식을 제어 하는 비트 플래그 집합입니다. 자세한 내용은 [CreatePrivateObjectSecurityEx](/windows/win32/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurityex) 를 참조 하세요.
+Ace (액세스 제어 항목)가 *Pparent* 에서 상속 되는 방식을 제어 하는 비트 플래그 집합입니다. 자세한 내용은 [CreatePrivateObjectSecurityEx](/windows/win32/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurityex) 를 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 

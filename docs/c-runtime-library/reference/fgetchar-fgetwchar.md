@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _fgetchar, _fgetwchar'
 title: _fgetchar, _fgetwchar
 ms.date: 4/2/2020
 api_name:
@@ -38,16 +39,16 @@ helpviewer_keywords:
 - standard input, reading from
 - fgetchar function
 ms.assetid: 8bce874c-701a-41a3-b1b2-feff266fb5b9
-ms.openlocfilehash: 99febac7de2c2fa4e6587654e854b32b702d299e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 316948485e0ef024bc726da7f333fd4ee329c7f6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232536"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97151816"
 ---
 # <a name="_fgetchar-_fgetwchar"></a>_fgetchar, _fgetwchar
 
-**Stdin**에서 문자를 읽습니다.
+**Stdin** 에서 문자를 읽습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -58,13 +59,13 @@ wint_t _fgetwchar( void );
 
 ## <a name="return-value"></a>Return Value
 
-** \_ fgetchar** 는로 읽은 문자를 반환 **`int`** 하거나, `EOF` 오류 또는 파일의 끝을 나타내기 위해를 반환 합니다. ** \_ fgetwchar** 는 [wint_t](../../c-runtime-library/standard-types.md) `WEOF` 파일의 오류 또는 끝을 나타내기 위해 읽기 또는 반환 된 문자에 해당 하는 와이드 문자를 wint_t 반환 합니다. 두 함수 모두에서 **feof** **ferror** 를 사용 하 여 오류와 파일 끝 조건을 구분 합니다.
+**\_ fgetchar** 는로 읽은 문자를 반환 **`int`** 하거나, `EOF` 오류 또는 파일의 끝을 나타내기 위해를 반환 합니다. **\_ fgetwchar** 는 [](../../c-runtime-library/standard-types.md) `WEOF` 파일의 오류 또는 끝을 나타내기 위해 읽기 또는 반환 된 문자에 해당 하는 와이드 문자를 wint_t 반환 합니다. 두 함수 모두에서 **feof** **ferror** 를 사용 하 여 오류와 파일 끝 조건을 구분 합니다.
 
 ## <a name="remarks"></a>설명
 
-이러한 함수는 **stdin**에서 단일 문자를 읽습니다. 그러고 나서 다음 문자를 가리킬 연결된 파일 포인터(정의된 경우)를 늘립니다. 스트림이 파일 끝에 있는 경우 스트림에 대한 파일 끝 표시기가 설정됩니다.
+이러한 함수는 **stdin** 에서 단일 문자를 읽습니다. 그러고 나서 다음 문자를 가리킬 연결된 파일 포인터(정의된 경우)를 늘립니다. 스트림이 파일 끝에 있는 경우 스트림에 대한 파일 끝 표시기가 설정됩니다.
 
-**_fgetchar** 는와 동일 `fgetc( stdin )` 합니다. **Getchar**와 동일 하지만 함수 및 매크로가 아닌 함수로만 구현 됩니다. **_fgetwchar** 은 **_fgetchar**의 와이드 문자 버전입니다.
+**_fgetchar** 는와 동일 `fgetc( stdin )` 합니다. **Getchar** 와 동일 하지만 함수 및 매크로가 아닌 함수로만 구현 됩니다. **_fgetwchar** 은 **_fgetchar** 의 와이드 문자 버전입니다.
 
 이러한 함수는 ANSI 표준과 호환되지 않습니다.
 
@@ -83,7 +84,7 @@ wint_t _fgetwchar( void );
 |**_fgetchar**|\<stdio.h>|
 |**_fgetwchar**|\<stdio.h> 또는 \<wchar.h>|
 
-이 콘솔은 UWP (유니버설 Windows 플랫폼) 앱에서 지원 되지 않습니다. 콘솔에 연결 된 표준 스트림 핸들 (**stdin**, **stdout**및 **stderr**)은 C 런타임 함수가 UWP 앱에서 사용할 수 있도록 리디렉션해야 합니다. 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
+이 콘솔은 UWP (유니버설 Windows 플랫폼) 앱에서 지원 되지 않습니다. 콘솔에 연결 된 표준 스트림 핸들 (**stdin**, **stdout** 및 **stderr**)은 C 런타임 함수가 UWP 앱에서 사용할 수 있도록 리디렉션해야 합니다. 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 

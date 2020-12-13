@@ -1,4 +1,5 @@
 ---
+description: 자세히 알아보기:/Yl (디버그 라이브러리에 PCH 참조 넣기)
 title: /Yl(디버그 라이브러리에 PCH 참조 넣기)
 ms.date: 01/29/2018
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - Yl compiler option [C++]
 - /Yl compiler option [C++]
 ms.assetid: 8e4a396a-6790-4a9f-8387-df015a3220e7
-ms.openlocfilehash: 816ba66c94e616407a8891cd149a41e44e29358d
-ms.sourcegitcommit: 6b749db14b4cf3a2b8d581fda6fdd8cb98bc3207
+ms.openlocfilehash: f1d05b4e0c38377233e9aaf6299227f7fbaebd55
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82825719"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97151855"
 ---
 # <a name="yl-inject-pch-reference-for-debug-library"></a>/Yl(디버그 라이브러리에 PCH 참조 넣기)
 
 **/Yl** 옵션을 사용 하면 미리 컴파일된 헤더 파일에 고유한 기호가 생성 되 고,이 기호에 대 한 참조는 미리 컴파일된 헤더를 사용 하는 모든 개체 파일에 삽입 됩니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 >**/Yl**\
 >**/Yl**_이름_\
@@ -37,7 +38,7 @@ ms.locfileid: "82825719"
 
 **/Yl** 컴파일러 옵션은 [/yc](yc-create-precompiled-header-file.md) 옵션을 사용 하 여 만든 미리 컴파일된 헤더 파일에 고유한 기호 정의를 만듭니다. 이 기호에 대 한 참조는 [/yu](yu-use-precompiled-header-file.md) 컴파일러 옵션을 사용 하 여 미리 컴파일된 헤더를 포함 하는 모든 파일에 자동으로 삽입 됩니다. 미리 컴파일된 헤더 파일을 만드는 데 **/yc** 를 사용 하는 경우 **/Yl** 옵션은 기본적으로 사용 하도록 설정 됩니다.
 
-**/Yl**_name_ 옵션은 미리 컴파일된 헤더 파일에 식별할 수 있는 기호를 만드는 데 사용 됩니다. 컴파일러는에서 만든 *name* `__@@_PchSym_@00@...@name`데코레이팅된 기호 이름의 일부로 name 인수를 사용 합니다. 여기서 줄임표 (...)는 고유한 컴파일러 생성 문자열을 나타냅니다. *Name* 인수를 생략 하면 컴파일러가 기호 이름을 자동으로 생성 합니다. 일반적으로 기호의 이름을 알 필요가 없습니다. 그러나 프로젝트에서 미리 컴파일된 헤더 파일을 둘 이상 사용 하는 경우 **/Yl**_name_ 옵션은 미리 컴파일된 헤더를 사용 하는 개체 파일을 확인 하는 데 유용할 수 있습니다. *이름을* 검색 문자열로 사용 하 여 덤프 파일에서 기호 참조를 찾을 수 있습니다.
+**/Yl**_name_ 옵션은 미리 컴파일된 헤더 파일에 식별할 수 있는 기호를 만드는 데 사용 됩니다. 컴파일러는에서 만든 데코레이팅된 기호 이름의 일부로 *name* 인수를 사용 합니다 `__@@_PchSym_@00@...@name` . 여기서 줄임표 (...)는 고유한 컴파일러 생성 문자열을 나타냅니다. *Name* 인수를 생략 하면 컴파일러가 기호 이름을 자동으로 생성 합니다. 일반적으로 기호의 이름을 알 필요가 없습니다. 그러나 프로젝트에서 미리 컴파일된 헤더 파일을 둘 이상 사용 하는 경우 **/Yl**_name_ 옵션은 미리 컴파일된 헤더를 사용 하는 개체 파일을 확인 하는 데 유용할 수 있습니다. *이름을* 검색 문자열로 사용 하 여 덤프 파일에서 기호 참조를 찾을 수 있습니다.
 
 **/Yl-** 는 기본 동작을 사용 하지 않도록 설정 하 고 미리 컴파일된 헤더 파일에 식별 기호를 넣지 않습니다. 이 미리 컴파일된 헤더를 포함 하는 컴파일된 파일은 일반적인 기호 참조를 가져오지 않습니다.
 
@@ -47,17 +48,17 @@ ms.locfileid: "82825719"
 
 미리 컴파일된 헤더에 대 한 자세한 내용은 다음을 참조 하세요.
 
-- [/Y(미리 컴파일된 헤더)](y-precompiled-headers.md)
+- [/Y (미리 컴파일된 헤더)](y-precompiled-headers.md)
 
 - [미리 컴파일된 헤더 파일](../creating-precompiled-header-files.md)
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. **구성 속성** > **C/c + +** > **명령줄** 속성 페이지를 선택 합니다.
+1. **구성 속성**  >  **C/c + +**  >  **명령줄** 속성 페이지를 선택 합니다.
 
-1. **추가 옵션** 상자에 **/Yl**_name_ 컴파일러 옵션을 추가 합니다. **확인**을 선택하여 변경 내용을 저장합니다.
+1. **추가 옵션** 상자에 **/Yl**_name_ 컴파일러 옵션을 추가 합니다. **확인** 을 선택하여 변경 내용을 저장합니다.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면
 
@@ -66,4 +67,4 @@ ms.locfileid: "82825719"
 ## <a name="see-also"></a>참고 항목
 
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
-[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)
+[MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)

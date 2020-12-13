@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CAxWindow2T 클래스'
 title: CAxWindow2T 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAxWindow2 class
 ms.assetid: b87bc943-7991-4537-b902-2138d7f4d837
-ms.openlocfilehash: e29c30e95116ad68d3498f3f8d3231a63c92c0a7
-ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
+ms.openlocfilehash: b29ad7bc9a8df17905ef6bc8fc08ebf75e9f847d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91353066"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97152401"
 ---
 # <a name="caxwindow2t-class"></a>CAxWindow2T 클래스
 
@@ -43,13 +44,13 @@ template <class TBase = CWindow>
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CAxWindow2T::CAxWindow2T](#caxwindow2t)|`CAxWindow2T` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CAxWindow2T:: Create](#create)|호스트 창을 만듭니다.|
 |[CAxWindow2T::CreateControlLic](#createcontrollic)|사용 허가를 받은 ActiveX 컨트롤을 만들고 초기화하며 지정한 창에 호스팅합니다.|
@@ -58,7 +59,7 @@ template <class TBase = CWindow>
 
 ### <a name="public-operators"></a>Public 연산자
 
-|Name|Description|
+|Name|설명|
 |----------|-----------------|
 |[CAxWindow2T:: operator =](#operator_eq)|기존 개체에 HWND를 할당 `CAxWindow2T` 합니다.|
 
@@ -203,7 +204,7 @@ HRESULT CreateControlLicEx(
 static LPCTSTR GetWndClassName();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `AtlAxWinLic80`사용이 허가 되거나 허가 되지 않은 ActiveX 컨트롤을 호스팅할 수 있는 창 클래스 ()의 이름을 포함 하는 문자열에 대 한 포인터입니다.
 

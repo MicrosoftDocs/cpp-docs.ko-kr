@@ -1,23 +1,24 @@
 ---
-title: '방법: 추적 참조 사용 C++/CLI'
+description: '자세한 정보: 방법: c + +/CLI에서 추적 참조 사용'
+title: '방법: C++/CLI에서 추적 참조 사용'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CLR types, passing by reference
 ms.assetid: d91e471c-34ff-4786-9e0d-c6db0494b946
-ms.openlocfilehash: 8be575bd39bc3b2e6512ba1bcb40d9206731f83a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c17101b5711feb503ad727d78b427e8766146960
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387138"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97151387"
 ---
-# <a name="how-to-use-tracking-references-in-ccli"></a>방법: 추적 참조 사용 C++/CLI
+# <a name="how-to-use-tracking-references-in-ccli"></a>방법: C++/CLI에서 추적 참조 사용
 
-이 문서에서는 추적 참조 (%)를 사용 하는 방법을 보여 줍니다. C++/CLI 공용 언어 런타임 (CLR) 형식 참조로 전달 합니다.
+이 문서에서는 추적 참조 (%)를 사용 하는 방법을 보여 줍니다. c + +/CLI에서는 CLR (공용 언어 런타임) 형식을 참조로 전달 합니다.
 
-## <a name="to-pass-clr-types-by-reference"></a>CLR 형식을 참조로 전달 하려면
+## <a name="to-pass-clr-types-by-reference"></a>참조로 CLR 형식을 전달 하려면
 
-다음 샘플에는 CLR 형식을 참조로 전달 하는 추적 참조를 사용 하는 방법을 보여 줍니다.
+다음 샘플에서는 추적 참조를 사용 하 여 CLR 형식을 참조로 전달 하는 방법을 보여 줍니다.
 
 ```cpp
 // tracking_reference_handles.cpp
@@ -70,7 +71,7 @@ int main() {
 zip == 20100
 ```
 
-다음 예제를 보여 줍니다는 수행 추적 참조의 주소를 반환 합니다는 [interior_ptr (C++/CLI)](../extensions/interior-ptr-cpp-cli.md), 수정 및 추적 참조를 통해 데이터에 액세스 하는 방법을 보여줍니다.
+다음 샘플에서는 추적 참조의 주소를 가져와 [interior_ptr (c + +/cli)](../extensions/interior-ptr-cpp-cli.md)를 반환 하 고 추적 참조를 통해 데이터를 수정 하 고 액세스 하는 방법을 보여 줍니다.
 
 ```cpp
 // tracking_reference_data.cpp
@@ -122,9 +123,9 @@ ctor: R(int)
 ctor: N(int i)
 ```
 
-## <a name="tracking-references-and-interior-pointers"></a>추적 참조 및 내부 포인터
+## <a name="tracking-references-and-interior-pointers"></a>참조 및 내부 포인터 추적
 
-다음 코드 샘플에서는 추적 참조 및 내부 포인터 간에 변환할 수 있는지를 보여 줍니다.
+다음 코드 샘플에서는 추적 참조와 내부 포인터 간에 변환할 수 있음을 보여 줍니다.
 
 ```cpp
 // tracking_reference_interior_ptr.cpp
@@ -194,7 +195,7 @@ int main() {
 }
 ```
 
-다음 샘플에서는 추적 참조 및 값 형식에 대 한 기본 참조는 있음을 보여 줍니다.
+다음 샘플에서는 추적 참조와 값 형식에 대 한 네이티브 참조를 모두 포함할 수 있음을 보여 줍니다.
 
 ```cpp
 // tracking_reference_valuetypes_2.cpp
@@ -219,7 +220,7 @@ int main() {
 13
 ```
 
-다음 샘플에서는 값 형식 및 네이티브 형식 함께 추적 참조를 사용할 수 있습니다.
+다음 샘플에서는 값 형식 및 네이티브 형식과 함께 추적 참조를 사용할 수 있다는 것을 보여 줍니다.
 
 ```cpp
 // tracking_reference_valuetypes_3.cpp
@@ -254,7 +255,7 @@ int main() {
 5
 ```
 
-이 샘플을 보여 줍니다 가비지 수집 힙에 값 형식에 대 한 추적 참조를 바인딩할 수 있습니다.
+이 샘플에서는 가비지 수집 힙의 값 형식에 추적 참조를 바인딩할 수 있음을 보여 줍니다.
 
 ```cpp
 // tracking_reference_valuetypes_4.cpp
@@ -292,9 +293,9 @@ Boxed new copy V: 1
 Original V: 4, Reference to handle of originally boxed V: 1
 ```
 
-## <a name="template-functions-that-take-native-value-or-reference-parameters"></a>네이티브를 사용 하는 템플릿 함수, 값 또는 참조 매개 변수
+## <a name="template-functions-that-take-native-value-or-reference-parameters"></a>네이티브 매개 변수, 값 매개 변수 또는 참조 매개 변수를 사용 하는 템플릿 함수
 
-템플릿 함수의 서명에서 추적 참조를 사용 하면 매개 변수는 기본 형식이, CLR 값 또는 CLR 참조로 함수를 호출할 수 있습니다.
+템플릿 함수의 시그니처에서 추적 참조를 사용 하 여 형식이 네이티브, CLR 값 또는 CLR 참조 인 매개 변수로 함수를 호출할 수 있는지 확인 합니다.
 
 ```cpp
 // tracking_reference_template.cpp
@@ -341,6 +342,6 @@ T %
 T &
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [추적 참조 연산자](../extensions/tracking-reference-operator-cpp-component-extensions.md)
