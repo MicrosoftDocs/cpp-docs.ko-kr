@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 프레임 워크가 처리기를 호출 하는 방법'
 title: 프레임워크가 처리기를 호출하는 방법
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - command handling [MFC], calling handlers and code in MFC
 - command routing [MFC], MFC
 ms.assetid: d79bceba-4ff6-417a-9d52-6b6af62a909d
-ms.openlocfilehash: 3fcfcbdd224db66550e7f0ff27de6313c85f856a
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 97bdf47d239c4b4d9cb4ca7ad26d4f688f864168
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618522"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97343557"
 ---
 # <a name="how-the-framework-calls-a-handler"></a>프레임워크가 처리기를 호출하는 방법
 
@@ -20,11 +21,11 @@ ms.locfileid: "84618522"
 
 - [메시지 보내기 및 받기](message-sending-and-receiving.md)
 
-- [명령이 아닌 메시지가 해당 처리기에 도달 하는 방법](how-noncommand-messages-reach-their-handlers.md)
+- [명령이 아닌 메시지가 해당 처리기에 도달하는 방법](how-noncommand-messages-reach-their-handlers.md)
 
 - [명령 라우팅](command-routing.md)
 
-- [명령 라우팅 설명](command-routing-illustration.md)
+- [명령 라우팅 그림](command-routing-illustration.md)
 
 - [OnCmdMsg 처리기](oncmdmsg-handler.md)
 

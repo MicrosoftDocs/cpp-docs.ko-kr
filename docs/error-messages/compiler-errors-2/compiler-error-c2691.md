@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2691'
 title: 컴파일러 오류 C2691
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2691
 ms.assetid: 6925f8f3-ea60-4909-91e6-b781492c645d
-ms.openlocfilehash: 73fd3188fd1ee4c95d8444bea0f3c05beefa478f
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 575651d1da871a0514585fea010ef3fe98e8a3cd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74760232"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344330"
 ---
 # <a name="compiler-error-c2691"></a>컴파일러 오류 C2691
 

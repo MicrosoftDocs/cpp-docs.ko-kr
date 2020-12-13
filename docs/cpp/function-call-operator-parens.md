@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 함수 호출 연산자: ()'
 title: '함수 호출 연산자: ()'
 ms.date: 06/11/2020
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 50c92e59-a4bf-415a-a6ab-d66c679ee80a
 no-loc:
 - opt
-ms.openlocfilehash: 5bb87795d3e91d853dc0d269ee9d2aa3ba025c0e
-ms.sourcegitcommit: 83ea5df40917885e261089b103d5de3660314104
+ms.openlocfilehash: 351674f345c7213a3c164ff88e9a165775088c68
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85813552"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344564"
 ---
 # <a name="function-call-operator-"></a>함수 호출 연산자: ()
 

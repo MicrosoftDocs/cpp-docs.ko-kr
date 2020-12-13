@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 3) C4240'
 title: 컴파일러 경고(수준 3) C4240
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4240
 ms.assetid: a2657cdb-18e1-493f-882b-4e10c0bca71d
-ms.openlocfilehash: 9e4d33bd0151e4355903c7d10b667ced405a2471
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 95e704b6ad91ff77c4def0b4fa1fe8fad002e5ae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80161570"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344200"
 ---
 # <a name="compiler-warning-level-3-c4240"></a>컴파일러 경고(수준 3) C4240
 

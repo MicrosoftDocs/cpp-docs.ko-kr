@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: isxdigit, iswxdigit, _isxdigit_l, _iswxdigit_l'
 title: isxdigit, iswxdigit, _isxdigit_l, _iswxdigit_l
 ms.date: 4/2/2020
 api_name:
@@ -41,12 +42,12 @@ helpviewer_keywords:
 - hexadecimal characters
 - iswxdigit function
 ms.assetid: c8bc5146-0b58-4e3f-bee3-f2318dd0f829
-ms.openlocfilehash: 3aefa39d9fabb2b8a3124955f3ab0787e9e174f3
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 87e9e8d07f9a0da38bc6590f27fcb770fc2b789b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916591"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344850"
 ---
 # <a name="isxdigit-iswxdigit-_isxdigit_l-_iswxdigit_l"></a>isxdigit, iswxdigit, _isxdigit_l, _iswxdigit_l
 
@@ -79,7 +80,7 @@ int _iswxdigit_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 *C* 가 16 진수의 특정 표현인 경우 이러한 각 루틴은 0이 아닌 값을 반환 합니다. *c* 가 16 진수 (a-f, a-f 또는 0-9) 인 경우 **isxdigit** 는 0이 아닌 값을 반환 합니다. **iswxdigit** 는 *c* 가 16 진수 문자에 해당 하는 와이드 문자인 경우 0이 아닌 값을 반환 합니다. *C* 가 테스트 조건을 충족 하지 않는 경우 이러한 루틴은 각각 0을 반환 합니다.
 
@@ -110,8 +111,8 @@ int _iswxdigit_l(
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [문자 분류](../../c-runtime-library/character-classification.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
+[로캘](../../c-runtime-library/locale.md)<br/>
 [is, isw 루틴](../../c-runtime-library/is-isw-routines.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __vmx_vmresume'
 title: __vmx_vmresume
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - __vmx_vmresume intrinsic
 - VMRESUME instruction
 ms.assetid: 233fe1b6-c727-493a-a484-1b2363732281
-ms.openlocfilehash: 34d0e6814dd00da07076e644513400bd5be36bd3
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 35c1ca7eeca847b14d16c451752a186c63a59749
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219445"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97343780"
 ---
 # <a name="__vmx_vmresume"></a>__vmx_vmresume
 
@@ -43,15 +44,15 @@ unsigned char __vmx_vmresume(
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`__vmx_vmresume`|X64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)\
 [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md)\

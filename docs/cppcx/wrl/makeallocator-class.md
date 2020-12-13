@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: MakeAllocator 클래스'
 title: MakeAllocator 클래스
 ms.date: 10/03/2018
 ms.topic: reference
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::MakeAllocator::MakeAllocator, constructor
 - Microsoft::WRL::Details::MakeAllocator::~MakeAllocator, destructor
 ms.assetid: a1114615-abd7-4a56-9bc3-750c118f0fa1
-ms.openlocfilehash: 19d3ab294df8adc059424c97e5733ae9ebb75c9c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c4e550dec37096a5ff6a41eccd4eb41968721a7d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218379"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344525"
 ---
 # <a name="makeallocator-class"></a>MakeAllocator 클래스
 
@@ -58,13 +59,13 @@ class MakeAllocator<T, true>;
 
 클래스를 재정의 `MakeAllocator` 하 여 사용자 정의 메모리 할당 모델을 구현 합니다.
 
-`MakeAllocator`는 일반적으로 생성 중에 개체가 throw 되는 경우 메모리 누수를 방지 하는 데 사용 됩니다.
+`MakeAllocator` 는 일반적으로 생성 중에 개체가 throw 되는 경우 메모리 누수를 방지 하는 데 사용 됩니다.
 
 ## <a name="members"></a>멤버
 
 ### <a name="public-constructors"></a>Public 생성자
 
-Name                                                  | 설명
+이름                                                  | 설명
 ----------------------------------------------------- | ----------------------------------------------------------------
 [MakeAllocator:: MakeAllocator](#makeallocator)        | `MakeAllocator` 클래스의 새 인스턴스를 초기화합니다.
 [MakeAllocator:: ~ MakeAllocator](#tilde-makeallocator) | 클래스의 현재 인스턴스를 초기화 `MakeAllocator` 합니다.
@@ -86,7 +87,7 @@ Name                                                  | 설명
 
 **네임 스페이스:** Microsoft:: WRL::D etails
 
-## <a name="makeallocatorallocate"></a><a name="allocate"></a>MakeAllocator:: Allocate
+## <a name="makeallocatorallocate"></a><a name="allocate"></a> MakeAllocator:: Allocate
 
 WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
 
@@ -94,7 +95,7 @@ WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습
 __forceinline void* Allocate();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 할당 된 메모리에 대 한 포인터입니다. 그렇지 않으면 **`nullptr`** 입니다.
 
@@ -106,7 +107,7 @@ __forceinline void* Allocate();
 
 개발자는 메서드를 재정의 하 여 `Allocate()` 다른 메모리 할당 모델을 구현 해야 합니다.
 
-## <a name="makeallocatordetach"></a><a name="detach"></a>MakeAllocator::D etach
+## <a name="makeallocatordetach"></a><a name="detach"></a> MakeAllocator::D etach
 
 WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
 
@@ -120,7 +121,7 @@ __forceinline void Detach();
 
 를 호출 하는 경우 `Detach()` 메서드에서 제공 하는 메모리를 삭제 해야 `Allocate` 합니다.
 
-## <a name="makeallocatormakeallocator"></a><a name="makeallocator"></a>MakeAllocator:: MakeAllocator
+## <a name="makeallocatormakeallocator"></a><a name="makeallocator"></a> MakeAllocator:: MakeAllocator
 
 WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
 
@@ -132,7 +133,7 @@ MakeAllocator();
 
 `MakeAllocator` 클래스의 새 인스턴스를 초기화합니다.
 
-## <a name="makeallocatormakeallocator"></a><a name="tilde-makeallocator"></a>MakeAllocator:: ~ MakeAllocator
+## <a name="makeallocatormakeallocator"></a><a name="tilde-makeallocator"></a> MakeAllocator:: ~ MakeAllocator
 
 WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
 

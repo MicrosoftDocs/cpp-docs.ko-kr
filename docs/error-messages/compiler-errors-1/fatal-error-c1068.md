@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 심각한 오류 C1068'
 title: 심각한 오류 C1068
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1068
 ms.assetid: 3b4abd16-4552-4900-84be-54f6ebb6c785
-ms.openlocfilehash: c2cea6e059737d245a216c33418e60e9040e4f9c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f166312e83d8c821f8b66824432509e3ea32f549
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80204336"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344408"
 ---
 # <a name="fatal-error-c1068"></a>심각한 오류 C1068
 

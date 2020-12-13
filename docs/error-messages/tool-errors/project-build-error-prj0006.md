@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 프로젝트 빌드 오류 PRJ0006'
 title: 프로젝트 빌드 오류 PRJ0006
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0006
 ms.assetid: ce092be4-1652-414f-8cb5-b97ef5841f89
-ms.openlocfilehash: 816355276a203adba1401841ce02eb94a18085b6
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a78646c843a6c6df3b4e2847076670492a9efb6b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80192785"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97343927"
 ---
 # <a name="project-build-error-prj0006"></a>프로젝트 빌드 오류 PRJ0006
 
 ' File ' 임시 파일을 열 수 없습니다. 파일이 있으며 디렉터리가 쓰기 금지 되어 있는지 확인 하십시오.
 
-Visual C++ 은 빌드 프로세스 중에 임시 파일을 만들 수 없습니다. 이러한 이유는 다음과 같습니다.
+Visual C++ 빌드 프로세스 중에 임시 파일을 만들 수 없습니다. 이러한 이유는 다음과 같습니다.
 
 - 임시 디렉터리가 없습니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: NMAKE 심각한 오류 U1099'
 title: NMAKE 심각한 오류 U1099
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - U1099
 ms.assetid: 6688a805-43e6-4247-a2d0-14be082f0b13
-ms.openlocfilehash: c963180059a48d9aa0b09103df1ed54f82b8a2f1
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 8044010cf967e4fe27b2235968022023d66ae1c3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80193396"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345318"
 ---
 # <a name="nmake-fatal-error-u1099"></a>NMAKE 심각한 오류 U1099
 
@@ -21,6 +22,6 @@ ms.locfileid: "80193396"
 
 NMAKE의 스택 할당을 늘리려면 더 큰 스택 옵션을 사용 하 여 [editbin/stack](../../build/reference/stack.md) 유틸리티를 실행 합니다.
 
-**editbin/STACK: reserve NMAKE. CONVERT.EXE**
+**editbin/STACK: reserve NMAKE.EXE**
 
 여기서 *reserve* 는 NMAKE의 현재 스택 할당 보다 큰 숫자입니다.

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 링커 도구 오류 LNK1143'
 title: 링커 도구 오류 LNK1143
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1143
 ms.assetid: 5dc6b634-d142-4448-b5ea-48e8fb10c10a
-ms.openlocfilehash: 13152ab7c806965e7cd3141e4f97931e7de7aa4f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 4a419567826989067d34da8340c39f0693da5669
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80184179"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97343979"
 ---
 # <a name="linker-tools-error-lnk1143"></a>링커 도구 오류 LNK1143
 

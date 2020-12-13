@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: ConvertStringToBSTR'
 title: ConvertStringToBSTR
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - ConvertStringToBSTR function
 ms.assetid: 071f9b3b-9643-4e06-a1e5-de96ed15bab2
-ms.openlocfilehash: 2065011ee6bbf98ce2c83be494f1e6631af9f7cf
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 7348fdec3448d17b51fd77385297422a8f10fd05
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80170711"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344603"
 ---
 # <a name="convertstringtobstr"></a>ConvertStringToBSTR
 
@@ -28,7 +29,7 @@ BSTR __stdcall ConvertStringToBSTR(const char* pSrc)
 #### <a name="parameters"></a>매개 변수
 
 *.Psrc*<br/>
-`char *` 변수입니다.
+`char *`변수입니다.
 
 ## <a name="example"></a>예제
 
@@ -60,7 +61,7 @@ BSTR text: Test
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<comutil. h >
+**헤더:**\<comutil.h>
 
 **Lib:** comsuppw 또는 comsuppw .lib (자세한 내용은 [/zc: Wchar_t (wchar_t 네이티브 형식)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) 참조)
 

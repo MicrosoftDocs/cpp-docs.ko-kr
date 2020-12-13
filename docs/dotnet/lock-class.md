@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: lock 클래스'
 title: lock 클래스
 ms.date: 01/16/2019
 ms.topic: reference
@@ -14,12 +15,12 @@ f1_keywords:
 helpviewer_keywords:
 - msclr::lock class
 ms.assetid: 5123edd9-6aed-497d-9a0b-f4b6d6c0d666
-ms.openlocfilehash: 7b2f187ec940af95523d0bbfb9265d7d9d6f69e8
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: d00614e814d171664a75ec61b9227942806b8cca
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91508652"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344499"
 ---
 # <a name="lock-class"></a>lock 클래스
 
@@ -41,14 +42,14 @@ ref class lock;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|설명|
+|Name|설명|
 |---------|-----------|
 |[lock::lock](#lock)|`lock`지정 된 시간 동안 또는 지정 된 시간 동안 잠금 상태를 영구적으로 얻기 위해 대기 하는 개체를 생성 합니다.|
 |[lock:: ~ lock](#tilde-lock)|개체를 Destructs `lock` 합니다.|
 
 ### <a name="public-methods"></a>public 메서드
 
-|속성|설명|
+|Name|설명|
 |---------|-----------|
 |[lock::acquire](#acquire)|개체에 대 한 잠금을 획득 하 고, 선택적으로 잠금을 획득 하기 위해 대기 하는 경우 지정 된 시간 동안 또는 전혀 발생 하지 않도록 대기 합니다.|
 |[lock::is_locked](#is-locked)|잠금을 보유 하 고 있는지 여부를 나타냅니다.|
@@ -57,7 +58,7 @@ ref class lock;
 
 ### <a name="public-operators"></a>Public 연산자
 
-|속성|설명|
+|Name|설명|
 |---------|-----------|
 |[lock:: operator &nbsp; bool](#operator-bool)|조건식에 사용 하기 위한 연산자 `lock` 입니다.|
 |[lock:: operator = =](#operator-equality)|같음 연산자입니다.|

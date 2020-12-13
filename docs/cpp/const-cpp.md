@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: const (c + +)'
 title: const (C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - const keyword [C++]
 ms.assetid: b21c0271-1ad0-40a0-b21c-5e812bba0318
-ms.openlocfilehash: db79e228f1fabc4b2da0a7778126a1b576a67768
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 35943a9b417029e92fe478d375423901c201b810
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229040"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344655"
 ---
 # <a name="const-c"></a>const (C++)
 
 데이터 선언을 수정할 때 **`const`** 키워드는 개체 또는 변수를 수정할 수 없도록 지정 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 const declaration ;
@@ -168,4 +169,4 @@ C++ 컴파일러에 의한 이름 변환을 방지해야 합니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[C++ 키워드](../cpp/keywords-cpp.md)
+[키워드](../cpp/keywords-cpp.md)

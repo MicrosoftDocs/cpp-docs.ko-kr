@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: const 및 volatile 포인터'
 title: const 및 volatile 포인터
 ms.date: 11/19/2019
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - pointers, and volatile
 - const keyword [C++], volatile pointers
 ms.assetid: 0c92dc6c-400e-4342-b345-63ddfe649d7e
-ms.openlocfilehash: a8fd25777d1169ba281fbee173c1c8f5673c8b56
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 142c6b83c242af969c5f6e1494a56e9598cf537d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227571"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344681"
 ---
 # <a name="const-and-volatile-pointers"></a>const 및 volatile 포인터
 
@@ -43,7 +44,7 @@ const char cch = 'A';
 char ch = 'B';
 ```
 
-위의 두 개체 ( `cch` **const char**형식의, 및 형식의 경우)에 대 한 이전 선언이 `ch` 있을 **char)** 경우 다음과 같은 선언/초기화가 유효 합니다.
+위의 두 개체 ( `cch` **const char** 형식의, 및 형식의 경우)에 대 한 이전 선언이 `ch` 있을 경우 다음과 같은 선언/초기화가 유효 합니다.
 
 ```cpp
 const char *pch1 = &cch;
@@ -87,7 +88,7 @@ errno_t strcpy_s( char *strDestination, size_t numberOfElements, const char *str
 앞의 문은 함수 ( [strcpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md))를 선언 합니다 .이 함수는 세 개의 인수 중 두 개는에 대 한 포인터 형식입니다 **`char`** . 인수가 값이 아닌 참조로 전달 되기 때문에 함수는를 모두 수정할 수 있으며,가 `strDestination` `strSource` `strSource` 로 선언 되지 않은 경우에는를 자유롭게 수정할 수 있습니다 **`const`** . As를 선언 `strSource` 하면 **`const`** `strSource` 호출 된 함수에 의해 변경 될 수 없는 호출자가 보장 됩니다.
 
 > [!NOTE]
-> *Typename* 에서 typename으로 표준 변환이 있으므로 <strong>\*</strong> **`const`** *typename* <strong>\*</strong> strcpy_s 형식의 인수를 전달할 수 있습니다 `char *` . [strcpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md) 그러나 반대의 경우도 마찬가지입니다. 개체 또는 포인터에서 특성을 제거할 수 있는 암시적 변환은 없습니다 **`const`** .
+> *Typename* 에서 typename으로 표준 변환이 있으므로 <strong>\*</strong> **`const`**  <strong>\*</strong> strcpy_s 형식의 인수를 전달할 수 있습니다 `char *` . [](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md) 그러나 반대의 경우도 마찬가지입니다. 개체 또는 포인터에서 특성을 제거할 수 있는 암시적 변환은 없습니다 **`const`** .
 
 **`const`** 지정 된 형식의 포인터는 같은 형식의 포인터에 할당할 수 있습니다. 그러나 포인터에는 **`const`** 포인터를 할당할 수 없습니다 **`const`** . 다음 코드는 올바른 할당과 잘못된 할당을 보여 줍니다.
 

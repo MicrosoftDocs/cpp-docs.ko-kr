@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 심각한 오류 C1074'
 title: 심각한 오류 C1074
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1074
 ms.assetid: 979d4ab2-0f1a-472a-85f8-71f48297274f
-ms.openlocfilehash: eab6dfa27382d1a9319f4370c555be131ae45066
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: b0b99f8403c0ad643cfc163fe5eea7d951c82526
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80204206"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344356"
 ---
 # <a name="fatal-error-c1074"></a>심각한 오류 C1074
 

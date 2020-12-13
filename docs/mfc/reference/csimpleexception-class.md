@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CSimpleException 클래스'
 title: CSimpleException 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - CSimpleException [MFC], CSimpleException
 - CSimpleException [MFC], GetErrorMessage
 ms.assetid: be0eb8ef-e5b9-47d6-b0fb-efaff2d1e666
-ms.openlocfilehash: afd83c1ddd6f68b10c5cc8c47c0e939bbd01b6c2
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 8070604e05fa59f7fcdfef6dcaad12ab0497da9f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840715"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342820"
 ---
 # <a name="csimpleexception-class"></a>CSimpleException 클래스
 
@@ -31,13 +32,13 @@ class AFX_NOVTABLE CSimpleException : public CException
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CSimpleException::CSimpleException](#csimpleexception)|생성자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CSimpleException:: GetErrorMessage](#geterrormessage)|발생 한 오류에 대 한 텍스트를 제공 합니다.|
 
@@ -45,7 +46,7 @@ class AFX_NOVTABLE CSimpleException : public CException
 
 `CSimpleException` 는 리소스에 중요 한 MFC 예외의 기본 클래스 이며 오류 메시지의 소유권 및 초기화를 처리 합니다. 다음 클래스는를 `CSimpleException` 기본 클래스로 사용 합니다.
 
-|이름|Description|
+|Name|설명|
 |-|-|
 |[CMemoryException 클래스](../../mfc/reference/cmemoryexception-class.md)|메모리 부족 예외|
 |[CNotSupportedException 클래스](../../mfc/reference/cnotsupportedexception-class.md)|지원 되지 않는 작업에 대 한 요청|

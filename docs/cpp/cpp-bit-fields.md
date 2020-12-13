@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: c + + 비트 필드'
 title: C++ 비트 필드
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -6,18 +7,18 @@ helpviewer_keywords:
 - fields [C++], bit
 - bit fields
 ms.assetid: 6f4b62e3-cc1d-4e5d-bf34-05904104f71a
-ms.openlocfilehash: 7c2dbb6e2932265984c8cb4e1e34504921e5d666
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3cf1eb3e3beb0da69a4c148a48e7c68e23804d1b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221785"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344590"
 ---
 # <a name="c-bit-fields"></a>C++ 비트 필드
 
 클래스와 구조체는 정수 형식보다 작은 스토리지 공간을 차지하는 멤버를 포함할 수 있습니다. 이러한 멤버는 비트 필드로 지정됩니다. 비트 필드 *멤버-선언 자* 사양의 구문은 다음과 같습니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 *선언 자* **:** *상수 식*
 
@@ -85,6 +86,6 @@ struct Date {
 
 - **`const`** 비트 필드를 사용 하 여 참조가 아닌를 초기화 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [클래스 및 구조체](../cpp/classes-and-structs-cpp.md)

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l'
 title: strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l
 ms.date: 4/2/2020
 api_name:
@@ -57,19 +58,19 @@ helpviewer_keywords:
 - strlen function
 - _mbslen function
 ms.assetid: 16462f2a-1e0f-4eb3-be55-bf1c83f374c2
-ms.openlocfilehash: 4dc50decb3c7c72aaa89b729b30d4581d32164c9
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 54001a90003ff3a6931f43687fc08366607caf2e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919970"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344837"
 ---
 # <a name="strlen-wcslen-_mbslen-_mbslen_l-_mbstrlen-_mbstrlen_l"></a>strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l
 
 현재 로캘 또는 지정된 로캘을 사용하여 문자열의 길이를 가져옵니다. 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [strnlen, strnlen_s, wcsnlen, wcsnlen_s, _mbsnlen, _mbsnlen_l, _mbstrnlen, _mbstrnlen_l](strnlen-strnlen-s.md)을 참조하세요.
 
 > [!IMPORTANT]
-> **_mbslen**, **_mbslen_l**, **_mbstrlen**및 **_mbstrlen_l** 는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> **_mbslen**, **_mbslen_l**, **_mbstrlen** 및 **_mbstrlen_l** 는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -98,19 +99,19 @@ size_t _mbstrlen_l(
 
 ### <a name="parameters"></a>매개 변수
 
-*문자열*<br/>
+*str*<br/>
 Null 종료 문자열입니다.
 
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-이러한 각 함수는 터미널 null을 제외 하 고 *str*의 문자 수를 반환 합니다. 문자열에 잘못 된 멀티 바이트 문자가 포함 된 경우를 반환 `((size_t)(-1))` 하는 **_mbstrlen** 및 **_mbstrlen_l**를 제외 하 고 오류를 나타내기 위해 예약 된 반환 값은 없습니다.
+이러한 각 함수는 터미널 null을 제외 하 고 *str* 의 문자 수를 반환 합니다. 문자열에 잘못 된 멀티 바이트 문자가 포함 된 경우를 반환 하는 **_mbstrlen** 및 **_mbstrlen_l** 를 제외 하 고 오류를 나타내기 위해 예약 된 반환 값은 없습니다 `((size_t)(-1))` .
 
 ## <a name="remarks"></a>설명
 
-**strlen** 은 문자열을 싱글바이트 문자열로 해석 하므로 문자열에 멀티 바이트 문자가 포함 되어 있더라도 해당 반환 값은 항상 바이트 수와 동일 합니다. **wcslen** 는 **strlen**의 와이드 문자 버전입니다. **wcslen** 의 인수는 와이드 문자열이 고 문자 수는 와이드 문자 (2 바이트)입니다. **wcslen** 및 **strlen** 은 동일 하 게 작동 하지 않습니다.
+**strlen** 은 문자열을 싱글바이트 문자열로 해석 하므로 문자열에 멀티 바이트 문자가 포함 되어 있더라도 해당 반환 값은 항상 바이트 수와 동일 합니다. **wcslen** 는 **strlen** 의 와이드 문자 버전입니다. **wcslen** 의 인수는 와이드 문자열이 고 문자 수는 와이드 문자 (2 바이트)입니다. **wcslen** 및 **strlen** 은 동일 하 게 작동 하지 않습니다.
 
 **보안 정보** 이러한 함수는 버퍼 오버런 문제로 인해 발생하는 잠재적인 위협을 일으킵니다. 버퍼 오버런 문제는 자주 사용되는 시스템 공격 방법으로, 불필요한 권한 상승을 초래합니다. 자세한 내용은 [버퍼 오버런 방지](/windows/win32/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
@@ -124,7 +125,7 @@ Null 종료 문자열입니다.
 |**_tcsclen**|**strlen**|**_mbslen**|**wcslen**|
 |**_tcsclen_l**|**strlen**|**_mbslen_l**|**wcslen**|
 
-**_mbslen** 및 **_mbslen_l** 는 멀티 바이트 문자열의 멀티 바이트 문자 수를 반환 하지만 멀티 바이트 문자의 유효성을 테스트 하지는 않습니다. 멀티 바이트 문자의 유효성을 테스트 하 고 멀티 바이트 문자 시퀀스를 인식 하는 **_mbstrlen** 및 **_mbstrlen_l** 합니다. **_Mbstrlen** 또는 **_mbstrlen_l** 에 전달 된 문자열에 코드 페이지에 대해 잘못 된 멀티 바이트 문자가 포함 된 경우 함수는-1을 반환 하 고 **errno** 를 **eilseq**로 설정 합니다.
+**_mbslen** 및 **_mbslen_l** 는 멀티 바이트 문자열의 멀티 바이트 문자 수를 반환 하지만 멀티 바이트 문자의 유효성을 테스트 하지는 않습니다. 멀티 바이트 문자의 유효성을 테스트 하 고 멀티 바이트 문자 시퀀스를 인식 하는 **_mbstrlen** 및 **_mbstrlen_l** 합니다. **_Mbstrlen** 또는 **_mbstrlen_l** 에 전달 된 문자열에 코드 페이지에 대해 잘못 된 멀티 바이트 문자가 포함 된 경우 함수는-1을 반환 하 고 **errno** 를 **eilseq** 로 설정 합니다.
 
 출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_l** 접미사가 없는 이러한 함수 버전은 이 로캘 종속 동작에 현재 로캘을 사용하며, **_l** 접미사가 있는 버전은 전달된 로캘 매개 변수를 대신 사용하는 경우를 제외하고는 동일합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
@@ -202,11 +203,11 @@ Length of 'ABCァD' : 5
 Bytes in 'ABCァD' : 6
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [문자열 조작](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[멀티 바이트 문자 시퀀스 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
+[Multibyte-Character 시퀀스의 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[로캘](../../c-runtime-library/locale.md)<br/>
 [setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>
 [strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)<br/>
 [strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>

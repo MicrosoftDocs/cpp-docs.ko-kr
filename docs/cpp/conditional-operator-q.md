@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 조건 연산자: &quest; :'
 title: '조건 연산자: &quest; :'
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - conditional operators [C++]
 - '? : operator'
 ms.assetid: 88643ee8-7100-4f86-880a-705ec22b6271
-ms.openlocfilehash: 1f2c58d5b7c31e9c29a72aea0e62494549fc10a9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: fac9a6553af428664535ca4ce5e6e201a1819d6b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232328"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344694"
 ---
 # <a name="conditional-operator-quest-"></a>조건 연산자: &quest; :
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: _strlwr_s, _strlwr_s_l, _mbslwr_s, _mbslwr_s_l, _wcslwr_s, _wcslwr_s_l'
 title: _strlwr_s, _strlwr_s_l, _mbslwr_s, _mbslwr_s_l, _wcslwr_s, _wcslwr_s_l
 ms.date: 4/2/2020
 api_name:
@@ -70,12 +71,12 @@ helpviewer_keywords:
 - tcslwr_s_l function
 - strings [C++], converting case
 ms.assetid: 4883d31b-bdac-4049-83a1-91dfdeceee79
-ms.openlocfilehash: 42333433277e1ac593bb2662967b73907ed13c92
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: d2a5b0ba3fb8868a4f88c8ee96ecc5fad69c9114
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919949"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344824"
 ---
 # <a name="_strlwr_s-_strlwr_s_l-_mbslwr_s-_mbslwr_s_l-_wcslwr_s-_wcslwr_s_l"></a>_strlwr_s, _strlwr_s_l, _mbslwr_s, _mbslwr_s_l, _wcslwr_s, _wcslwr_s_l
 
@@ -145,7 +146,7 @@ errno_t _wcslwr_s_l(
 
 ### <a name="parameters"></a>매개 변수
 
-*문자열*<br/>
+*str*<br/>
 소문자로 변환할 Null 종료 문자열입니다.
 
 *이면 numberofelements 이벤트가*<br/>
@@ -154,15 +155,15 @@ errno_t _wcslwr_s_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 정상적으로 실행되는 경우 0이고 오류가 발생하는 경우 0이 아닌 오류 코드입니다.
 
-이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. *Str* 이 올바른 null 종료 문자열이 아니면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 함수는 **EINVAL** 를 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다. *Numberofelements* 가 문자열의 길이 보다 작은 경우에도 함수는 **EINVAL** 을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
+이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. *Str* 이 올바른 null 종료 문자열이 아니면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 함수는 **EINVAL** 를 반환 하 고 **errno** 를 **EINVAL** 로 설정 합니다. *Numberofelements* 가 문자열의 길이 보다 작은 경우에도 함수는 **EINVAL** 을 반환 하 고 **errno** 를 **EINVAL** 로 설정 합니다.
 
 ## <a name="remarks"></a>설명
 
-**_Strlwr_s** 함수는 현재 위치의 모든 *대문자를 소문자로* 변환 합니다. **_mbslwr_s** 은 **_strlwr_s**의 멀티 바이트 문자 버전입니다. **_wcslwr_s** 은 **_strlwr_s**의 와이드 문자 버전입니다.
+**_Strlwr_s** 함수는 현재 위치의 모든 *대문자를 소문자로* 변환 합니다. **_mbslwr_s** 은 **_strlwr_s** 의 멀티 바이트 문자 버전입니다. **_wcslwr_s** 은 **_strlwr_s** 의 와이드 문자 버전입니다.
 
 출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_l** 접미사가 없는 이러한 함수 버전은 이 로캘 종속 동작에 현재 로캘을 사용하며, **_l** 접미사가 있는 버전은 전달된 로캘 매개 변수를 대신 사용하는 경우를 제외하고는 동일합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
@@ -227,9 +228,9 @@ Lower: the string to end all strings!
 Upper: THE STRING TO END ALL STRINGS!
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [문자열 조작](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[멀티 바이트 문자 시퀀스 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[로캘](../../c-runtime-library/locale.md)<br/>
+[Multibyte-Character 시퀀스의 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_strupr_s, _strupr_s_l, _mbsupr_s, _mbsupr_s_l, _wcsupr_s, _wcsupr_s_l](strupr-s-strupr-s-l-mbsupr-s-mbsupr-s-l-wcsupr-s-wcsupr-s-l.md)<br/>

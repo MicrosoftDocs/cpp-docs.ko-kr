@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4080'
 title: 컴파일러 경고(수준 1) C4080
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4080
 ms.assetid: 964fb3f4-b9fd-450b-aa23-35cece126172
-ms.openlocfilehash: a4e216ff455404514e1cd5f76b820111dba83a6d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 05dcb119d0c028446f038a2cbd796432c688a8c9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80200319"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344291"
 ---
 # <a name="compiler-warning-level-1-c4080"></a>컴파일러 경고(수준 1) C4080
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 심각한 오류 C1075'
 title: 심각한 오류 C1075
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1075
 ms.assetid: 69a74e3d-b53f-4526-a440-2c94e6403355
-ms.openlocfilehash: 2701cebb7c1da7d737930af11d6c6336fe4e9aa2
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 92dcac82de643262b1f4b2c92c86e39aec50739a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80204167"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344343"
 ---
 # <a name="fatal-error-c1075"></a>심각한 오류 C1075
 

@@ -1,4 +1,5 @@
-﻿---
+---
+description: '자세히 알아보기: ConvertBSTRToString'
 title: ConvertBSTRToString
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - ConvertBSTRToString function
 ms.assetid: ab6ce555-3d75-4e9c-9cb8-ada6d8ce43b1
-ms.openlocfilehash: 1d0ad8727dd4d5ec06a45ec26c67dd3ad268f524
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 72d6033003f186f358d9b4143498df65858ee354
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80189526"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344616"
 ---
 # <a name="convertbstrtostring"></a>ConvertBSTRToString
 
@@ -30,7 +31,7 @@ char* __stdcall ConvertBSTRToString(BSTR pSrc);
 *.Psrc*<br/>
 BSTR 변수입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 **ConvertBSTRToString** 는 삭제 해야 하는 문자열을 할당 합니다.
 
@@ -64,7 +65,7 @@ char * text: Test
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<comutil. h >
+**헤더:**\<comutil.h>
 
 **Lib:** comsuppw 또는 comsuppw .lib (자세한 내용은 [/zc: Wchar_t (wchar_t 네이티브 형식)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) 참조)
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 관리 되는 형식 (c + +/CLI)'
 title: 관리되는 형식(C++/CLI)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -17,18 +18,18 @@ helpviewer_keywords:
 - exceptions, diagnosing odd behavior
 - compatibility, between assemblies
 ms.assetid: 679b8ed3-d966-4a0c-b627-2a3f3ec96b74
-ms.openlocfilehash: c542151bda780e5306db35049d988e6514fffd62
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ccf126152216cfddb9a78cb5abc608f23cc3ba80
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225607"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344460"
 ---
 # <a name="managed-types-ccli"></a>관리되는 형식(C++/CLI)
 
 Visual C++를 사용 하면 공용 언어 런타임의 기능에 대 한 지원을 제공 하는 관리 되는 형식을 통해 .NET 기능에 액세스할 수 있으며 런타임의 장점과 제한 사항이 적용 됩니다.
 
-## <a name="managed-types-and-the-main-function"></a><a name="main_functions"></a>관리 되는 형식 및 main 함수
+## <a name="managed-types-and-the-main-function"></a><a name="main_functions"></a> 관리 되는 형식 및 main 함수
 
 를 사용 하 여 응용 프로그램을 작성할 때는 **`/clr`** **main ()** 함수의 인수를 관리 되는 형식으로 지정할 수 없습니다.
 
@@ -40,7 +41,7 @@ Visual C++를 사용 하면 공용 언어 런타임의 기능에 대 한 지원�
 int main(int, char*[], char*[]) {}
 ```
 
-## <a name="net-framework-equivalents-to-c-native-types"></a><a name="dotnet"></a>C + + 네이티브 형식에 해당 하는 .NET Framework
+## <a name="net-framework-equivalents-to-c-native-types"></a><a name="dotnet"></a> C + + 네이티브 형식에 해당 하는 .NET Framework
 
 다음 표에서는 **System** 네임 스페이스에 있는 미리 정의 된 형식의 별칭인 기본 제공 Visual C++ 형식에 대 한 키워드를 보여 줍니다.
 
@@ -53,16 +54,16 @@ int main(int, char*[], char*[]) {}
 |**`wchar_t`**|<xref:System.Char?displayProperty=nameWithType>|
 |**`short`** 및 **`signed short`**|<xref:System.Int16?displayProperty=nameWithType>|
 |**`unsigned short`**|<xref:System.UInt16?displayProperty=nameWithType>|
-|**`int`**, **`signed int`** , **`long`** 및**`signed long`**|<xref:System.Int32?displayProperty=nameWithType>|
+|**`int`**, **`signed int`** , **`long`** 및 **`signed long`**|<xref:System.Int32?displayProperty=nameWithType>|
 |**`unsigned int`** 및 **`unsigned long`**|<xref:System.UInt32?displayProperty=nameWithType>|
 |**`__int64`** 및 **`signed __int64`**|<xref:System.Int64?displayProperty=nameWithType>|
 |**`unsigned __int64`**|<xref:System.UInt64?displayProperty=nameWithType>|
 |**`float`**|<xref:System.Single?displayProperty=nameWithType>|
 |**`double`** 및 **`long double`**|<xref:System.Double?displayProperty=nameWithType>|
 
-컴파일러 옵션을 또는로 기본으로 하는 방법에 대 한 자세한 내용은을 **`signed char`** **`unsigned char`** 참조 하세요. [ `/J` 기본 **`char`** 형식은입니다 **`unsigned`** ](../build/reference/j-default-char-type-is-unsigned.md).
+컴파일러 옵션을 또는로 기본으로 하는 방법에 대 한 자세한 내용은을 **`signed char`** **`unsigned char`** 참조 하세요. [ `/J` 기본 **`char`** 형식은입니다 **`unsigned`**](../build/reference/j-default-char-type-is-unsigned.md).
 
-## <a name="version-issues-for-value-types-nested-in-native-types"></a><a name="version_issues"></a>네이티브 형식에 중첩 된 값 형식의 버전 문제
+## <a name="version-issues-for-value-types-nested-in-native-types"></a><a name="version_issues"></a> 네이티브 형식에 중첩 된 값 형식의 버전 문제
 
 클라이언트 어셈블리를 빌드하는 데 사용 되는 서명 된 (강력한 이름) 어셈블리 구성 요소를 고려 합니다. 구성 요소에는 클라이언트에서 네이티브 공용 구조체, 클래스 또는 배열의 멤버에 대 한 형식으로 사용 되는 값 형식이 포함 되어 있습니다. 이후 버전의 구성 요소에서 값 형식의 크기 또는 레이아웃을 변경 하는 경우 클라이언트를 다시 컴파일해야 합니다.
 
@@ -123,11 +124,11 @@ S.i = 10
 S.i = 11
 ```
 
-### <a name="comments"></a>주석
+### <a name="comments"></a>의견
 
 그러나 nested_value_types의에 다른 멤버를 추가 하 `struct S` 고 (예: `double d;` ) 클라이언트를 다시 컴파일하지 않고 구성 요소를 다시 컴파일하면 결과가 처리 되지 않은 예외 (형식)로 표시 됩니다 <xref:System.IO.FileLoadException?displayProperty=fullName> .
 
-## <a name="how-to-test-for-equality"></a><a name="test_equality"></a>방법: 같음 여부 테스트
+## <a name="how-to-test-for-equality"></a><a name="test_equality"></a> 방법: 같음 여부 테스트
 
 다음 샘플에서는 Managed Extensions for C++를 사용 하는 같음 테스트는 핸들이 참조 하는 내용을 기반으로 합니다.
 
@@ -152,7 +153,7 @@ IL_0012:  call       bool [mscorlib]System.String::op_Equality(string,
                                                                string)
 ```
 
-## <a name="how-to-diagnose-and-fix-assembly-compatibility-problems"></a><a name="diagnose_fix"></a>방법: 어셈블리 호환성 문제 진단 및 해결
+## <a name="how-to-diagnose-and-fix-assembly-compatibility-problems"></a><a name="diagnose_fix"></a> 방법: 어셈블리 호환성 문제 진단 및 해결
 
 이 항목에서는 컴파일 시간에 참조 되는 어셈블리 버전이 런타임에 참조 되는 어셈블리의 버전과 일치 하지 않을 때 발생할 수 있는 작업 및 문제를 방지 하는 방법을 설명 합니다.
 

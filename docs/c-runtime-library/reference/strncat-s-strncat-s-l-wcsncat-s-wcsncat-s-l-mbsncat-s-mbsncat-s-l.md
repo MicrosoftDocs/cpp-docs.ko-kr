@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l'
 title: strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l
 ms.date: 4/2/2020
 api_name:
@@ -56,12 +57,12 @@ helpviewer_keywords:
 - wcsncat_s_l function
 - mbsncat_s function
 ms.assetid: de77eca2-4d9c-4e66-abf2-a95fefc21e5a
-ms.openlocfilehash: 4aba4a2bd843fe0946c2e444b305f776065a57be
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: c260c1a77908962441dba094686578e61db0e386
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919338"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344785"
 ---
 # <a name="strncat_s-_strncat_s_l-wcsncat_s-_wcsncat_s_l-_mbsncat_s-_mbsncat_s_l"></a>strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l
 
@@ -170,7 +171,7 @@ Null 종료 소스 문자열입니다.
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 정상적으로 실행되는 경우 0을 반환하고 오류 시에는 오류 코드를 반환합니다.
 
@@ -179,12 +180,12 @@ Null 종료 소스 문자열입니다.
 |*strDestination*|*이면 numberofelements 이벤트가*|*strSource*|반환 값|*Strdestination* 의 내용|
 |----------------------|------------------------|-----------------|------------------|----------------------------------|
 |**NULL** 또는 종결 되지 않음|any|any|**EINVAL**|수정 안 됨|
-|any|any|**N**|**EINVAL**|수정 안 됨|
+|any|any|**NULL**|**EINVAL**|수정 안 됨|
 |any|0 또는 너무 작음|any|**ERANGE**|수정 안 됨|
 
 ## <a name="remarks"></a>설명
 
-이러한 함수는 *Strsource* 의 첫 *D* 문자를 *strsource*의 끝에 추가 합니다. 여기서 *D* 는 개수와 *strsource*의 길이 중 더 작은 *수* 입니다. 이러한 *D* 문자를 추가 하는 것이 *Strdest* (크기가 *numberofelements*로 제공 됨) 내에 포함 되 고 여전히 null 종결자에 대 한 공간을 유지 하는 경우 *strdest*의 원래 종료 null에서 시작 하 여 해당 문자가 추가 되 고 새 종료 null이 추가 됩니다. 그렇지 않으면 *Strdest*[0]이 null 문자로 설정 되 고 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다.
+이러한 함수는 *Strsource* 의 첫 *D* 문자를 *strsource* 의 끝에 추가 합니다. 여기서 *D* 는 개수와 *strsource* 의 길이 중 더 작은 *수* 입니다. 이러한 *D* 문자를 추가 하는 것이 *Strdest* (크기가 *numberofelements* 로 제공 됨) 내에 포함 되 고 여전히 null 종결자에 대 한 공간을 유지 하는 경우 *strdest* 의 원래 종료 null에서 시작 하 여 해당 문자가 추가 되 고 새 종료 null이 추가 됩니다. 그렇지 않으면 *Strdest*[0]이 null 문자로 설정 되 고 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다.
 
 위 단락의 설명에는 예외가 적용됩니다. *Count* 가 [_TRUNCATE](../../c-runtime-library/truncate.md) 인 경우에는 해당 하 *는 것은 끝 null* 을 추가할 수 있는 공간을 유지 하면서 *strsource* 에 자동으로 추가 됩니다.
 
@@ -212,9 +213,9 @@ strncat_s(dst, _countof(dst), "34567", _countof(dst)-strlen(dst)-1);
 
 모든 경우 결과 문자열은 null 문자로 종료됩니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
 
-*Strsource* 또는 *Strsource* 가 **NULL**이거나 *Numberofelements* 가 0 이면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 함수는 매개 변수를 수정 하지 않고 **EINVAL** 를 반환 합니다.
+*Strsource* 또는 *Strsource* 가 **NULL** 이거나 *Numberofelements* 가 0 이면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 함수는 매개 변수를 수정 하지 않고 **EINVAL** 를 반환 합니다.
 
-**wcsncat_s** 및 **_mbsncat_s** 는 **strncat_s**의 와이드 문자 및 멀티 바이트 문자 버전입니다. **Wcsncat_s** 문자열 인수와 반환 값은 와이드 문자열입니다. **_mbsncat_s** 의 이러한 문자열은 멀티 바이트 문자열입니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
+**wcsncat_s** 및 **_mbsncat_s** 는 **strncat_s** 의 와이드 문자 및 멀티 바이트 문자 버전입니다. **Wcsncat_s** 문자열 인수와 반환 값은 와이드 문자열입니다. **_mbsncat_s** 의 이러한 문자열은 멀티 바이트 문자열입니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
 
 출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_l** 접미사가 없는 이러한 함수 버전은 이 로캘 종속 동작에 현재 로캘을 사용하며, **_l** 접미사가 있는 버전은 전달된 로캘 매개 변수를 대신 사용하는 경우를 제외하고는 동일합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
@@ -231,7 +232,7 @@ C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 �
 |**_tcsncat_s**|**strncat_s**|**_mbsnbcat_s**|**wcsncat_s**|
 |**_tcsncat_s_l**|**_strncat_s_l**|**_mbsnbcat_s_l**|**_wcsncat_s_l**|
 
-**_strncat_s_l** 및 **_wcsncat_s_l** 에는 로캘 종속성이 없습니다. **_tcsncat_s_l**에 대해서만 제공 됩니다.
+**_strncat_s_l** 및 **_wcsncat_s_l** 에는 로캘 종속성이 없습니다. **_tcsncat_s_l** 에 대해서만 제공 됩니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -380,11 +381,11 @@ Invalid parameter handler invoked: (L"Buffer is too small" && 0)
     new contents of dest: ''
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [문자열 조작](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[멀티 바이트 문자 시퀀스 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[로캘](../../c-runtime-library/locale.md)<br/>
+[Multibyte-Character 시퀀스의 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbsnbcat, _mbsnbcat_l](mbsnbcat-mbsnbcat-l.md)<br/>
 [strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)<br/>
 [strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 3) C4243'
 title: 컴파일러 경고(수준 3) C4243
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4243
 ms.assetid: ca72f9ad-ce0b-43a9-a68c-106e1f8b90ef
-ms.openlocfilehash: 5900202a88eb7dc0575c5e97a58b20b0ef290a49
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: af82629d3f7282dd3b649f8dc35ad8bbb84174b6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80161557"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344187"
 ---
 # <a name="compiler-warning-level-3-c4243"></a>컴파일러 경고(수준 3) C4243
 

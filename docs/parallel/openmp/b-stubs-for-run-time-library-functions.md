@@ -1,20 +1,21 @@
 ---
+description: '다음에 대해 자세히 알아보기: b. 런타임 라이브러리 함수에 대 한 스텁'
 title: B. 런타임 라이브러리 함수의 스텁
 ms.date: 01/22/2019
 ms.assetid: fdfdabe0-f678-4551-80d5-827b62354427
-ms.openlocfilehash: 9089bd6ef1f0a8f2f2ed94a7c496943c9bdd5e64
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e6ccb4e03d9fc74eede80f035090a814d7669918
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80215061"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342519"
 ---
 # <a name="b-stubs-for-run-time-library-functions"></a>B. 런타임 라이브러리 함수의 스텁
 
-이 섹션에서는 OpenMP C와 C++ API에 정의된 런타임 라이브러리 함수에 대한 스텁을 제공합니다. 스텁은 OpenMP C 및 C ++ API를 지원하지 않는 플랫폼으로 이식성을 제공하기 위해 제공됩니다. 이러한 플랫폼에서 OpenMP 프로그램은 스텁 기능이 포함된 라이브러리와 연결되어야 합니다. 스텁 함수는 OpenMP 프로그램의 지시문이 무시된다고 가정합니다. 따라서 직렬 의미론을 에뮬레이트 합니다.
+이 섹션에서는 OpenMP C 및 c + + API에 정의 된 런타임 라이브러리 함수에 대 한 스텁을 제공 합니다. OpenMP C 및 c + + API를 지원 하지 않는 플랫폼에 이식성을 사용할 수 있도록 스텁이 제공 됩니다. 이러한 플랫폼에서 OpenMP 프로그램은 이러한 스텁 함수를 포함 하는 라이브러리와 연결 되어야 합니다. 스텁 함수는 OpenMP 프로그램의 지시문이 무시 된다고 가정 합니다. 따라서 직렬 의미 체계를 에뮬레이트합니다.
 
 > [!NOTE]
-> Lock 함수에 표시되는 잠금 변수의 이러한 함수를 통해 배타적으로 액세스할 수 있어야 합니다. 사용자 프로그램에서 초기화하거나 달리 수정해서는 안됩니다. 사용자는 OpenMP C 및 C++ 구현에서 스텁 함수가 사용하는 체계를 기반으로 잠금을 구현하는 데 사용하는 메커니즘에 대해 가정해서는 안됩니다.
+> Lock 함수에 표시 되는 잠금 변수는 이러한 함수를 통해 단독으로 액세스 해야 합니다. 사용자 프로그램에서 초기화 되거나 다른 방법으로 수정 되어서는 안 됩니다. 사용자는 OpenMP C 및 c + + 구현에서 스텁 함수에 사용 되는 체계를 기반으로 잠금을 구현 하는 데 사용 되는 메커니즘에 대해 가정 하지 않아야 합니다.
 
 ## <a name="code"></a>코드
 

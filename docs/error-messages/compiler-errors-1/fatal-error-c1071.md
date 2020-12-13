@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 심각한 오류 C1071'
 title: 심각한 오류 C1071
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1071
 ms.assetid: 489f1786-370e-4ecd-af67-538fe6e5bd4e
-ms.openlocfilehash: 2f39359d55b5564c6379c84f07e942cf3484e011
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: c4a6734dcb515b6d495eac720f83ba39be3c3677
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74747412"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344382"
 ---
 # <a name="fatal-error-c1071"></a>심각한 오류 C1071
 

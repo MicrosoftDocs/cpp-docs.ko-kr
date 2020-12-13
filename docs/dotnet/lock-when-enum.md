@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: 열거형 lock_when'
 title: lock_when 열거형
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - lock_when enum
 ms.assetid: 6b87bbe9-63cd-450d-a02e-bb91ffd0dcea
-ms.openlocfilehash: 991cce4cfa6810f35c2ccb3ec1ed45adf2d849ac
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 5fcc0e428056f5076803ec1ba82bb20207e37189
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91508687"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344486"
 ---
 # <a name="lock_when-enum"></a>lock_when 열거형
 

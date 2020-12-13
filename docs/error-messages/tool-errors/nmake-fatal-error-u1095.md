@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: NMAKE 심각한 오류 U1095'
 title: NMAKE 심각한 오류 U1095
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - U1095
 ms.assetid: a392582b-06db-4568-9c13-450293a4fbda
-ms.openlocfilehash: 55c7ca7d237655b7e20406e7f28e5b2471bdec53
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 047c4aaca15917b884a44bd1e3e156bf8825274f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80193461"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345344"
 ---
 # <a name="nmake-fatal-error-u1095"></a>NMAKE 심각한 오류 U1095
 

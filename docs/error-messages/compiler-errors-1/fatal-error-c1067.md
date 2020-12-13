@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 심각한 오류 C1067'
 title: 심각한 오류 C1067
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1067
 ms.assetid: e2c94be6-4573-4571-aac9-73d657fe9f96
-ms.openlocfilehash: 3b016790220d409435ff7ea53c6f48899a9e8f1c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ef50719740de99f85e7e94f99cf0e14531608b22
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80204349"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344421"
 ---
 # <a name="fatal-error-c1067"></a>심각한 오류 C1067
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l'
 title: strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l
 ms.date: 4/2/2020
 api_name:
@@ -64,12 +65,12 @@ helpviewer_keywords:
 - _mbsncat_l function
 - tcsncat function
 ms.assetid: de67363b-68c6-4ca5-91e3-478610ad8159
-ms.openlocfilehash: 98f13967d8abbe079934d0c09ab71c5e279d2b7f
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 509afe42e4fbf4cec9f0a7a077f0bf4ce0a1423e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918145"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344772"
 ---
 # <a name="strncat-_strncat_l-wcsncat-_wcsncat_l-_mbsncat-_mbsncat_l"></a>strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l
 
@@ -143,18 +144,18 @@ Null 종료 소스 문자열입니다.
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 대상 문자열에 대한 포인터를 반환합니다. 반환 값 없음은 오류를 나타내는 데 예약되어 있습니다.
 
 ## <a name="remarks"></a>설명
 
-**Strncat** 함수는 *strsource* 의 처음 *카운트* 문자를 *strsource*에 추가 합니다. *Strsource* 의 초기 문자는 *strsource*의 null 종결 문자를 덮어씁니다. *Count* 문자가 추가 되기 전에 *strsource* 에 null 문자가 표시 되는 경우 **strncat** 는 *strsource*의 모든 문자를 null 문자까지 추가 합니다. *Count* 가 *strsource*의 길이 보다 큰 경우 *strsource* 의 길이가 *count*대신 사용 됩니다. 모든 경우 결과 문자열은 null 문자로 종료됩니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
+**Strncat** 함수는 *strsource* 의 처음 *카운트* 문자를 *strsource* 에 추가 합니다. *Strsource* 의 초기 문자는 *strsource* 의 null 종결 문자를 덮어씁니다. *Count* 문자가 추가 되기 전에 *strsource* 에 null 문자가 표시 되는 경우 **strncat** 는 *strsource* 의 모든 문자를 null 문자까지 추가 합니다. *Count* 가 *strsource* 의 길이 보다 큰 경우 *strsource* 의 길이가 *count* 대신 사용 됩니다. 모든 경우 결과 문자열은 null 문자로 종료됩니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
 
 > [!IMPORTANT]
-> **strncat** 는 *strdest*에 충분 한 공간을 확인 하지 않습니다. 따라서 버퍼 오버런의 잠재적 원인이 될 수 있습니다. *Count* 는 추가 되는 문자 수를 제한 한다는 점에 유의 하십시오. *Strdest*의 크기에는 제한이 없습니다. 아래 예제를 참조하세요. 자세한 내용은 [버퍼 오버런 방지](/windows/win32/SecBP/avoiding-buffer-overruns)를 참조하세요.
+> **strncat** 는 *strdest* 에 충분 한 공간을 확인 하지 않습니다. 따라서 버퍼 오버런의 잠재적 원인이 될 수 있습니다. *Count* 는 추가 되는 문자 수를 제한 한다는 점에 유의 하십시오. *Strdest* 의 크기에는 제한이 없습니다. 아래 예제를 참조하세요. 자세한 내용은 [버퍼 오버런 방지](/windows/win32/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
-**wcsncat** 및 **_mbsncat** 는 **strncat**의 와이드 문자 및 멀티 바이트 문자 버전입니다. **Wcsncat** 의 문자열 인수와 반환 값은 와이드 문자 문자열입니다. **_mbsncat** 의 이러한 문자열은 멀티 바이트 문자열입니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
+**wcsncat** 및 **_mbsncat** 는 **strncat** 의 와이드 문자 및 멀티 바이트 문자 버전입니다. **Wcsncat** 의 문자열 인수와 반환 값은 와이드 문자 문자열입니다. **_mbsncat** 의 이러한 문자열은 멀티 바이트 문자열입니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
 
 출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_l** 접미사가 없는 이러한 함수 버전은 이 로캘 종속 동작에 현재 로캘을 사용하며, **_l** 접미사가 있는 버전은 전달된 로캘 매개 변수를 대신 사용하는 경우를 제외하고는 동일합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
@@ -170,7 +171,7 @@ C++에서 이러한 함수에는 템플릿 오버로드가 있습니다. 자세�
 |**_tcsncat_l**|**_strncat_l**|**_mbsnbcat_l**|**_wcsncat_l**|
 
 > [!NOTE]
-> **_strncat_l** 및 **_wcsncat_l** 에는 로캘 종속성이 없으며 직접 호출할 수 없습니다. **_Tcsncat_l**에서 내부용으로 제공 됩니다.
+> **_strncat_l** 및 **_wcsncat_l** 에는 로캘 종속성이 없으며 직접 호출할 수 없습니다. **_Tcsncat_l** 에서 내부용으로 제공 됩니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -232,7 +233,7 @@ After GoodAppend:  This is the initial string!Extra text t (39 chars)
 
 **Badappend** 로 인해 버퍼 오버런이 발생 했습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [문자열 조작](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [_mbsnbcat, _mbsnbcat_l](mbsnbcat-mbsnbcat-l.md)<br/>
@@ -245,5 +246,5 @@ After GoodAppend:  This is the initial string!Extra text t (39 chars)
 [strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>
 [_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)<br/>
 [strspn, wcsspn, _mbsspn, _mbsspn_l](strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[멀티 바이트 문자 시퀀스 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[로캘](../../c-runtime-library/locale.md)<br/>
+[Multibyte-Character 시퀀스의 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
