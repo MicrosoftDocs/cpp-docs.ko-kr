@@ -1,4 +1,5 @@
 ---
+description: Shared_ptr 클래스에 대해 자세히 알아보세요.
 title: shared_ptr 클래스
 ms.date: 07/29/2019
 f1_keywords:
@@ -31,12 +32,12 @@ helpviewer_keywords:
 - std::shared_ptr [C++], unique
 - std::shared_ptr [C++], use_count
 ms.assetid: 1469fc51-c658-43f1-886c-f4530dd84860
-ms.openlocfilehash: e41c76e7bd3e77b34ad38d3998ee1d38cdc2fee4
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 973bda9cb769eff339a02cbc43838e8c94516408
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846214"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97154047"
 ---
 # <a name="shared_ptr-class"></a>shared_ptr 클래스
 
@@ -132,7 +133,7 @@ null 포인터를 사용하여 초기화된 `shared_ptr` 개체에는 제어 블
 | **생성자** | |
 |[shared_ptr](#shared_ptr)|`shared_ptr`를 생성합니다.|
 |[~ shared_ptr](#dtorshared_ptr)|`shared_ptr`을 삭제합니다.|
-| **정의** | |
+| **Typedefs** | |
 |[element_type](#element_type)|요소의 형식입니다.|
 |[weak_type](#weak_type)|요소에 대 한 약한 포인터의 형식입니다.|
 | **멤버 함수** | |
@@ -329,7 +330,7 @@ shared_ptr& operator=(unique_ptr<Other, Deleter>&& up);
 소유권을 적용할 개체에 대 한 고유 포인터입니다. *up* 은 호출 후 개체를 소유 하지 않습니다.
 
 *다른*\
-*Sp*, *ap*또는 *up*에서 가리키는 개체의 형식입니다.
+*Sp*, *ap* 또는 *up* 에서 가리키는 개체의 형식입니다.
 
 *Deleter*\
 나중에 개체를 삭제 하기 위해 저장 된 소유 개체의 deleter 형식입니다.
@@ -737,7 +738,7 @@ void swap(shared_ptr& sp) noexcept;
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 이후 sp에서 소유 하 여 원래 소유 한 리소스를 유지 하 **`*this`** 고, 원래 *sp* 가 소유한 리소스를 이후에 소유 *sp* **`*this`** 합니다. 함수는 두 리소스의 참조 개수를 변경하지 않으며 예외도 throw하지 않습니다.
+멤버 함수는 이후 sp에서 소유 하 여 원래 소유 한 리소스를 유지 하 **`*this`** 고, 원래 *sp* 가 소유한 리소스를 이후에 소유  **`*this`** 합니다. 함수는 두 리소스의 참조 개수를 변경하지 않으며 예외도 throw하지 않습니다.
 
 ### <a name="example"></a>예제
 

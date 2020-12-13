@@ -1,34 +1,35 @@
 ---
-title: 집계 개체 만들기
+description: '자세히 알아보기: 집계 개체 만들기'
+title: 집계 된 개체 만들기
 ms.date: 11/04/2016
 helpviewer_keywords:
 - aggregation [C++], creating aggregated objects
 - aggregate objects [C++], creating
 ms.assetid: fc29d7aa-fd53-4276-9c2f-37379f71b179
-ms.openlocfilehash: 4be8d0e852da91b58125dc01d44eed4560b2b8d9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e6efbf63e28d0477730a2d7c31ec91e9b75520e4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62250760"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97153228"
 ---
-# <a name="creating-an-aggregated-object"></a>집계 개체 만들기
+# <a name="creating-an-aggregated-object"></a>집계 된 개체 만들기
 
-집계는 `IUnknown` 호출을 위임하여 외부 개체의 `IUnknown`에 대한 포인터를 내부 개체에 제공합니다.
+집계는 `IUnknown` 호출을 위임 하 고 외부 개체에 대 한 포인터를 `IUnknown` 내부 개체에 제공 합니다.
 
-## <a name="to-create-an-aggregated-object"></a>집계 개체를 만들려면
+## <a name="to-create-an-aggregated-object"></a>집계 된 개체를 만들려면
 
-1. 클래스 개체에 `IUnknown` 포인터를 추가하고 생성자에서 NULL로 초기화합니다.
+1. `IUnknown`클래스 개체에 포인터를 추가 하 고 생성자에서 NULL로 초기화 합니다.
 
-1. [FinalConstruct](../atl/reference/ccomobjectrootex-class.md#finalconstruct)를 재정의하여 집계를 만듭니다.
+1. 합계 [구문을](../atl/reference/ccomobjectrootex-class.md#finalconstruct) 재정의 하 여 집계를 만듭니다.
 
-1. 1단계에서 정의된 `IUnknown` 포인터를 [COM_INTERFACE_ENTRY_AGGREGATE](reference/com-interface-entry-macros.md#com_interface_entry_aggregate) 매크로의 두번째 매개 변수로 사용합니다.
+1. `IUnknown`1 단계에서 정의한 포인터를 [COM_INTERFACE_ENTRY_AGGREGATE](reference/com-interface-entry-macros.md#com_interface_entry_aggregate) 매크로에 대 한 두 번째 매개 변수로 사용 합니다.
 
-1. [FinalRelease](../atl/reference/ccomobjectrootex-class.md#finalrelease)를 재정의하여 `IUnknown` 포인터를 해제합니다.
+1. 포인터를 해제 하려면 [버전 릴리스](../atl/reference/ccomobjectrootex-class.md#finalrelease) 를 재정의 `IUnknown` 합니다.
 
 > [!NOTE]
-> `FinalConstruct` 수행 중 집계된 개체의 인터페이스를 사용하고 해제하는 경우 클래스 개체의 정의에 [DECLARE_PROTECT_FINAL_CONSTRUCT](reference/aggregation-and-class-factory-macros.md#declare_protect_final_construct) 매크로를 추가해야 합니다.
+> 중에 집계 된 개체의 인터페이스를 사용 하 고 해제 하는 경우에는 `FinalConstruct` 클래스 개체의 정의에 [DECLARE_PROTECT_FINAL_CONSTRUCT](reference/aggregation-and-class-factory-macros.md#declare_protect_final_construct) 매크로를 추가 해야 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[ATL COM 개체 기본 사항](../atl/fundamentals-of-atl-com-objects.md)
+[ATL COM 개체의 기본 사항](../atl/fundamentals-of-atl-com-objects.md)

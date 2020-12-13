@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 예제: 속성 페이지 구현'
 title: 속성 페이지(ATL) 구현
 ms.date: 05/09/2019
 helpviewer_keywords:
 - property pages, implementing
 ms.assetid: c30b67fe-ce08-4249-ae29-f3060fa8d61e
-ms.openlocfilehash: 82c2bd3765802f87025eaf2dfbda8f7467bbe9a0
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: b5f05d4e47187a8d3c2fe10ca7a00808095a713a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92921245"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97152964"
 ---
 # <a name="example-implementing-a-property-page"></a>예제: 속성 페이지 구현
 

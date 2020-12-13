@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: &lt; shared_mutex>'
 title: '&lt;shared_mutex&gt;'
 ms.date: 03/27/2019
 f1_keywords:
@@ -45,12 +46,12 @@ f1_keywords:
 - shared_mutex/std::shared_timed_mutex::try_lock_shared_until
 - shared_mutex/std::shared_timed_mutex::unlock_shared
 ms.assetid: 0b37a97d-ee5d-4050-b29f-09db9f76beb3
-ms.openlocfilehash: f33a9c5fe4c5058d039feff896f7e53fe40cbf31
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 97446b3709dd71b49389fa63ac067f7cc9ccf820
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217482"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97154066"
 ---
 # <a name="ltshared_mutex"></a>&lt;shared_mutex>
 
@@ -64,7 +65,7 @@ ms.locfileid: "87217482"
 |[shared_timed_mutex 클래스](#class_shared_timed_mutex)|에이전트 하나가 독점적으로 잠그거나 여러 에이전트가 비독점적으로 공유할 수 있는 시간이 지정된 공유 뮤텍스 형식입니다.|
 |[shared_lock 클래스](#class_shared_lock)|시간이 지정 된 잠금 작업을 지원 하 고 여러 에이전트가 배타로 공유 하지 않도록 공유 뮤텍스를 래핑하는 클래스 템플릿입니다.|
 
-|Functions|설명|
+|함수|설명|
 |---------------|-----------------|
 |[스왑을](#function_swap)|함수 매개 변수에서 참조하는 공유 뮤텍스 개체의 콘텐츠를 교환합니다.|
 
@@ -83,7 +84,7 @@ void swap(shared_lock<Mutex>& x, shared_lock<Mutex>& y) noexcept;
 
 ## <a name="remarks"></a>설명
 
-클래스 `shared_mutex`의 인스턴스는 범위 내 뮤텍스의 공유 소유권을 제어하는 형식인 *공유 뮤텍스 형식*입니다. 공유 뮤텍스 형식은 뮤텍스 형식의 모든 요구 사항을 충족할 뿐 아니라 비독점적 공유 소유권 지원을 위한 구성원도 포함합니다.
+클래스 `shared_mutex`의 인스턴스는 범위 내 뮤텍스의 공유 소유권을 제어하는 형식인 *공유 뮤텍스 형식* 입니다. 공유 뮤텍스 형식은 뮤텍스 형식의 모든 요구 사항을 충족할 뿐 아니라 비독점적 공유 소유권 지원을 위한 구성원도 포함합니다.
 
 공유 뮤텍스 형식은 추가 메서드 `lock_shared`, `unlock_shared` 및 `try_lock_shared`를 지원합니다.
 
@@ -93,7 +94,7 @@ void swap(shared_lock<Mutex>& x, shared_lock<Mutex>& y) noexcept;
 
 - `try_lock_shared` 메서드는 차단 없이 뮤텍스에 대한 공유 소유권을 가져오려고 시도합니다. 반환 형식은로 변환할 수 **`bool`** 있으며, **`true`** 메서드가 소유권을 가져오면이 고, 그렇지 않으면입니다 **`false`** .
 
-`shared_timed_mutex` 클래스는 공유 뮤텍스 형식과 시간이 지정된 뮤텍스 형식의 요구 사항을 모두 충족하는 *시간이 지정된 공유 뮤텍스 형식*입니다.
+`shared_timed_mutex` 클래스는 공유 뮤텍스 형식과 시간이 지정된 뮤텍스 형식의 요구 사항을 모두 충족하는 *시간이 지정된 공유 뮤텍스 형식* 입니다.
 
 시간이 지정된 공유 뮤텍스 형식은 추가 메서드 `try_lock_shared_for` 및 `try_lock_shared_until`을 지원합니다.
 
@@ -108,7 +109,7 @@ void swap(shared_lock<Mutex>& x, shared_lock<Mutex>& y) noexcept;
 
 ## <a name="classes"></a>클래스
 
-### <a name="shared_mutex-class"></a><a name="class_shared_mutex"></a>shared_mutex 클래스
+### <a name="shared_mutex-class"></a><a name="class_shared_mutex"></a> shared_mutex 클래스
 
 `shared_mutex` 클래스는 공유 소유권 의미 체계를 사용한 비재귀적 뮤텍스를 구현합니다.
 
@@ -213,9 +214,9 @@ private:
    };
 ```
 
-## <a name="functions"></a>Functions
+## <a name="functions"></a>함수
 
-### <a name="swap"></a><a name="function_swap"></a>스왑을
+### <a name="swap"></a><a name="function_swap"></a> 스왑을
 
 `shared_lock` 개체를 교환합니다.
 

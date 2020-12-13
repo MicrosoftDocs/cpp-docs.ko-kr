@@ -1,15 +1,16 @@
 ---
+description: '다음에 대 한 자세한 정보: &lt; a m &gt; 함수'
 title: '&lt;sstream&gt; 함수'
 ms.date: 11/04/2016
 f1_keywords:
 - sstream/std::swap
 ms.assetid: bc9607e8-7c6b-44ef-949b-19e917b450ad
-ms.openlocfilehash: 43fcffe12afe50a94f06a18e7ee06729bc85854e
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 81fd6f392ca1fde26cf150d8079650c748e670ed
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90039900"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97153839"
 ---
 # <a name="ltsstreamgt-functions"></a>&lt;sstream&gt; 함수
 

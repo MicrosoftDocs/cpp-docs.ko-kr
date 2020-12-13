@@ -1,17 +1,18 @@
 ---
+description: '다음에 대 한 자세한 정보: space_info 구조체'
 title: space_info 구조체
 ms.date: 09/10/2018
 f1_keywords:
 - filesystem/std::tr2::sys::space_info
 ms.assetid: f2b35b42-06ff-45bd-8617-39a0f5358a54
-ms.openlocfilehash: 2a9856746a8bbc796871663a81bd8911d34dcd4a
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 254866a0eb225b4ed7bcfe4e06a734c5c9d0e3ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68457550"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97153878"
 ---
-# <a name="spaceinfo-structure"></a>space_info 구조체
+# <a name="space_info-structure"></a>space_info 구조체
 
 볼륨에 대한 정보를 보관합니다.
 
@@ -30,7 +31,7 @@ struct space_info
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|이름|설명|
+|Name|설명|
 |----------|-----------------|
 |`unsigned long long capacity`|볼륨이 나타낼 수 있는 총 바이트 수를 나타냅니다.|
 |`unsigned long long free`|볼륨의 데이터를 나타내는 데 사용되지 않는 바이트 수를 나타냅니다.|
@@ -38,11 +39,11 @@ struct space_info
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<파일 시스템 >
+**헤더:**\<filesystem>
 
 **네임스페이스:** std::experimental::filesystem
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
 [\<filesystem>](../standard-library/filesystem.md)\

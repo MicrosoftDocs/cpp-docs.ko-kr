@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: &lt; 유틸리티&gt;'
 title: '&lt;utility&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - utility header
 ms.assetid: c4491103-5da9-47a1-9c2b-ed8bc64b0599
-ms.openlocfilehash: 1beade28ceec0f1552def4bc70c2e95e6b2aa24d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 67472492acdb0ddbc1de957a69c01b1aafaf9367
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215441"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97153436"
 ---
 # <a name="ltutilitygt"></a>&lt;utility&gt;
 
@@ -34,7 +35,7 @@ ms.locfileid: "87215441"
 
 ### <a name="classes"></a>클래스
 
-|Type|설명|
+|형식|설명|
 |-|-|
 |[chars_format](../standard-library/chars-format-class.md)|기본 숫자 변환을 위한 부동 소수점 형식입니다.|
 |[tuple_element](../standard-library/tuple-element-class-tuple.md)|`pair` 요소의 형식을 래핑하는 클래스입니다.|

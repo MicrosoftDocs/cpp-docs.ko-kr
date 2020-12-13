@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 삽입 연산자 사용 및 형식 제어'
 title: 삽입 연산자 사용 및 형식 제어
 ms.date: 11/04/2016
 helpviewer_keywords:
 - insertion operators
 ms.assetid: cdefe986-6548-4cd1-8a67-b431d7d36a1c
-ms.openlocfilehash: 0d6a2afb320f91e51e2a89156a6e6732c6be90e0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0ed0e850cb578b66ea9131d135891cbbd26da4b7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215463"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97153566"
 ---
 # <a name="using-insertion-operators-and-controlling-format"></a>삽입 연산자 사용 및 형식 제어
 
@@ -66,13 +67,13 @@ for (int i = 0; i <4; i++)
 }
 ```
 
-`endl` 조작자는 줄 바꿈 문자(`'\n'`)를 대체합니다. 출력은 다음과 같이 표시됩니다.
+`endl` 조작자는 줄 바꿈 문자(`'\n'`)를 대체합니다. 출력은 다음과 같습니다.
 
 ```Output
 ******1.23
 *****35.36
 *****653.7
-***4358.24
+**_4358.24
 ```
 
 동일한 줄의 데이터 요소에 대한 너비를 지정하려면 `setw` 조작자를 사용합니다.
@@ -87,7 +88,7 @@ using namespace std;
 int main( )
 {
    double values[] = { 1.23, 35.36, 653.7, 4358.24 };
-   char *names[] = { "Zoot", "Jimmy", "Al", "Stan" };
+   char _names[] = { "Zoot", "Jimmy", "Al", "Stan" };
    for( int i = 0; i < 4; i++ )
       cout << setw( 7 )  << names[i]
            << setw( 10 ) << values[i] << endl;
@@ -105,7 +106,7 @@ int main( )
 
 `setw`및은 `width` 값을 잘리지 않습니다. 형식이 지정된 출력이 너비를 초과할 경우 전체 값이 출력되고 스트림의 전체 자릿수 설정이 적용됩니다. `setw`및 `width` 는 모두 다음 필드에만 영향을 줍니다. 한 필드가 출력된 후 필드 너비가 기본 동작(필요한 너비)으로 돌아갑니다. 그러나 다른 스트림 형식 옵션은 변경될 때까지 적용된 상태로 유지됩니다.
 
-## <a name="alignment"></a><a name="vclrfalignmentanchor4"></a>할당
+## <a name="alignment"></a><a name="vclrfalignmentanchor4"></a> 할당
 
 출력 스트림은 기본적으로 오른쪽 맞춤 텍스트로 설정됩니다. 앞의 예제에서 이름을 왼쪽에 맞추고 숫자를 오른쪽에 맞추려면 루프를 다음과 같이 바꿉니다 **`for`** .
 
@@ -117,7 +118,7 @@ for (int i = 0; i <4; i++)
          << setw(10) << values[i] << endl;
 ```
 
-출력은 다음과 같이 표시됩니다.
+출력은 다음과 같습니다.
 
 ```Output
 Zoot        1.23
@@ -128,7 +129,7 @@ Stan     4358.24
 
 왼쪽 맞춤 플래그는 `left` 열거자와 함께 [setiosflags](../standard-library/iomanip-functions.md#setiosflags) 조작자를 사용하여 설정됩니다. 이 열거자는 [ios](../standard-library/basic-ios-class.md) 클래스에서 정의되므로 해당 참조에 **ios::** 접두사가 포함되어야 합니다. [resetiosflags](../standard-library/iomanip-functions.md#resetiosflags) 조작자는 왼쪽 맞춤 플래그를 해제합니다. 및와 달리 `width` `setw` 및의 효과 `setiosflags` 는 `resetiosflags` 영구적입니다.
 
-## <a name="precision"></a><a name="vclrfprecisionanchor5"></a>소수
+## <a name="precision"></a><a name="vclrfprecisionanchor5"></a> 소수
 
 부동 소수점 전체 자릿수의 기본값은 6입니다. 예를 들어 숫자 3466.9768은 3466.98로 출력됩니다. 이 값이 출력되는 방법을 변경하려면 [setprecision](../standard-library/iomanip-functions.md#setprecision) 조작자를 사용합니다. 조작자에는 [fixed](../standard-library/ios-functions.md#fixed) 및 [scientific](../standard-library/ios-functions.md#scientific)의 두 플래그가 있습니다. [fixed](../standard-library/ios-functions.md#fixed)를 설정하면 숫자가 3466.976800으로 출력됩니다. `scientific`가 설정 된 경우 설정 하면 3.4669773 + 003으로 출력 됩니다.
 
@@ -181,7 +182,7 @@ Stan    4.4e+03
 
 다시 소수점 이하 1자리로 출력됩니다. 또는 중 `ios::fixed` 하나 `ios::scientific` 를 설정 하면 전체 자릿수 값에 따라 소수점이 하 자릿수가 결정 됩니다. 두 플래그를 모두 설정하지 않으면 전체 자릿수 값에 따라 전체 유효 자릿수가 결정됩니다. `resetiosflags` 조작자는 이러한 플래그를 지웁니다.
 
-## <a name="radix"></a><a name="vclrfradixanchor6"></a>기 수
+## <a name="radix"></a><a name="vclrfradixanchor6"></a> 기 수
 
 `dec`, `oct` 및 조작자는 `hex` 입력 및 출력에 대 한 기본 기 기를 설정 합니다. 예를 들어 조작자를 출력 스트림에 삽입 하는 경우 `hex` 개체가 정수의 내부 데이터 표현을 16 진수 출력 형식으로 올바르게 변환 합니다. [uppercase](../standard-library/ios-functions.md#uppercase) 플래그를 지우면(기본값) 숫자가 소문자 a에서 f까지의 숫자로 표시되고, 그렇지 않으면 대문자로 표시됩니다. 기본 기 수는 `dec` (10 진수)입니다.
 

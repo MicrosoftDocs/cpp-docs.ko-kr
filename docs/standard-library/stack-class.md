@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: stack 클래스'
 title: stack 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - std::stack [C++], size
 - std::stack [C++], top
 ms.assetid: 02151c1e-eab0-41b8-be94-a839ead78ecf
-ms.openlocfilehash: f1d44a4242542ac6856fd7208fe423c43ae79997
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 6caec52124b247e405299d45f55a86c20f991abc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844303"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97153865"
 ---
 # <a name="stack-class"></a>stack 클래스
 
@@ -64,21 +65,21 @@ class stack
 
 ### <a name="constructors"></a>생성자
 
-|속성|Description|
+|속성|설명|
 |-|-|
 |[겹치기](#stack)|비어 있거나 기본 컨테이너 개체의 복사본인 `stack`을 생성합니다.|
 
 ### <a name="typedefs"></a>Typedefs
 
-|이름|Description|
+|Name|설명|
 |-|-|
 |[container_type](#container_type)|`stack`에서 조정할 기본 컨테이너를 제공하는 형식입니다.|
 |[size_type](#size_type)|`stack`에서 요소 수를 표현할 수 있는 부호 없는 정수 형식입니다.|
 |[value_type](#value_type)|`stack`에 있는 요소로 저장된 개체의 형식을 나타내는 형식입니다.|
 
-### <a name="functions"></a>Functions
+### <a name="functions"></a>함수
 
-|이름|Description|
+|Name|설명|
 |-|-|
 |[empty](#empty)|`stack`이 비어 있는지를 테스트합니다.|
 |[창을](#pop)|`stack`의 맨 위에 있는 요소를 제거합니다.|

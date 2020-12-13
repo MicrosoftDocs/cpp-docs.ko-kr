@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CAutoPtrArray 클래스'
 title: CAutoPtrArray 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAutoPtrArray class
 ms.assetid: 880a70da-8c81-4427-8ac6-49aa8d424244
-ms.openlocfilehash: 11f39eac8b8d080fd840f6454f393e33ebcb9e1c
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: 55f9382c82a1e242342d0d740c369a571c43f9ba
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82167665"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97152582"
 ---
 # <a name="cautoptrarray-class"></a>CAutoPtrArray 클래스
 
@@ -33,14 +34,14 @@ class CAutoPtrArray : public CAtlArray<
 
 ### <a name="parameters"></a>매개 변수
 
-*우표*<br/>
+*E*<br/>
 포인터 형식입니다.
 
 ## <a name="members"></a>멤버
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
 |[CAutoPtrArray::CAutoPtrArray](#cautoptrarray)|생성자입니다.|
 
@@ -60,7 +61,7 @@ class CAutoPtrArray : public CAtlArray<
 
 **헤더:** atlcoll
 
-## <a name="cautoptrarraycautoptrarray"></a><a name="cautoptrarray"></a>CAutoPtrArray::CAutoPtrArray
+## <a name="cautoptrarraycautoptrarray"></a><a name="cautoptrarray"></a> CAutoPtrArray::CAutoPtrArray
 
 생성자입니다.
 

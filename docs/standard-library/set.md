@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: &lt; 설정&gt;'
 title: '&lt;set&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - set header
 ms.assetid: 43cb1ab2-6383-48cf-8bdc-2b96d7203596
-ms.openlocfilehash: 4ac5c0bbf94c4d17389efb424d2e12b84717c4a9
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 821e48fd6c5760900a955fe10d94a873d7454dc4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846227"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97154112"
 ---
 # <a name="ltsetgt"></a>&lt;set&gt;
 

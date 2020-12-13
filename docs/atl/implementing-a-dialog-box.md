@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 대화 상자 구현'
 title: 대화 상자 구현
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - CAxDialogImpl class, implementing dialog boxes in ATL
 - ATL, dialog boxes
 ms.assetid: 478525f2-aa6a-435a-b162-68fc8aa98a8e
-ms.openlocfilehash: fa7b4122b513d48194dedeb39daecd1dfd7223eb
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 736619b39d06cffc28bc9723c94d0c5367dd51d4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91499579"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97152912"
 ---
 # <a name="implementing-a-dialog-box"></a>대화 상자 구현
 
@@ -20,7 +21,7 @@ Atl 프로젝트에 대화 상자를 추가 하는 방법에는 다음 두 가�
 
 ## <a name="adding-a-dialog-box-with-the-atl-dialog-wizard"></a>ATL 대화 상자 마법사를 사용 하 여 대화 상자 추가
 
-[클래스 추가 대화 상자](../ide/adding-a-class-visual-cpp.md#add-class-dialog-box)에서 atl 대화 상자 개체를 선택 하 여 atl 프로젝트에 대화 상자를 추가 합니다. ATL 대화 상자 마법사를 적절 하 게 입력 하 고 **마침**을 클릭 합니다. 마법사는 [Caxdialogimpl](../atl/reference/caxdialogimpl-class.md) 파생 된 클래스를 프로젝트에 추가 합니다. **보기** 메뉴에서 **리소스 뷰** 를 열고 대화 상자를 찾은 다음 두 번 클릭 하 여 리소스 편집기에서 엽니다.
+[클래스 추가 대화 상자](../ide/adding-a-class-visual-cpp.md#add-class-dialog-box)에서 atl 대화 상자 개체를 선택 하 여 atl 프로젝트에 대화 상자를 추가 합니다. ATL 대화 상자 마법사를 적절 하 게 입력 하 고 **마침** 을 클릭 합니다. 마법사는 [Caxdialogimpl](../atl/reference/caxdialogimpl-class.md) 파생 된 클래스를 프로젝트에 추가 합니다. **보기** 메뉴에서 **리소스 뷰** 를 열고 대화 상자를 찾은 다음 두 번 클릭 하 여 리소스 편집기에서 엽니다.
 
 > [!NOTE]
 > 에서 파생 된 대화 상자는 `CAxDialogImpl` ActiveX 컨트롤과 Windows 컨트롤을 모두 호스팅할 수 있습니다. 대화 상자 클래스에서 ActiveX 컨트롤 지원의 오버 헤드를 원하지 않는 경우 대신 [CSimpleDialog](../atl/reference/csimpledialog-class.md) 또는 [cdialogimpl](../atl/reference/cdialogimpl-class.md) 사용 됩니다.

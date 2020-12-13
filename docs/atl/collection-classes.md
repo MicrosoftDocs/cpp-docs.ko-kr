@@ -1,16 +1,17 @@
 ---
+description: '자세히 알아보기: 컬렉션 클래스'
 title: ATL의 컬렉션 클래스
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - collection classes
 ms.assetid: eff95de6-78ef-4212-9d7d-1dacbdd4cc58
-ms.openlocfilehash: a93810b91cefd897b55cae4760ade32374900eb3
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: bf0b8cf1e45673dd64b1b1d60a56ed9889bb6cff
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041421"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97153319"
 ---
 # <a name="collection-classes"></a>컬렉션 클래스
 
@@ -60,11 +61,11 @@ ms.locfileid: "90041421"
 
 - [CPrimitiveElementTraits](../atl/reference/cprimitiveelementtraits-class.md) 이 클래스는 기본 데이터 형식으로 구성 된 컬렉션 클래스에 대 한 기본 메서드 및 함수를 제공 합니다.
 
-- [Crbmap](../atl/reference/crbmap-class.md) 이 클래스는 빨강 검정 이진 트리를 사용 하는 매핑 구조를 나타냅니다.
+- [Crbmap](../atl/reference/crbmap-class.md) 이 클래스는 Red-Black 이진 트리를 사용 하 여 매핑 구조를 나타냅니다.
 
-- [CRBMultiMap](../atl/reference/crbmultimap-class.md) 이 클래스는 빨강 검정 이진 트리를 사용 하 여 각 키를 둘 이상의 값에 연결할 수 있는 매핑 구조를 나타냅니다.
+- [CRBMultiMap](../atl/reference/crbmultimap-class.md) 이 클래스는 Red-Black 이진 트리를 사용 하 여 각 키를 둘 이상의 값에 연결할 수 있는 매핑 구조를 나타냅니다.
 
-- [CRBTree](../atl/reference/crbtree-class.md) 이 클래스는 빨강 검정 트리를 만들고 활용 하기 위한 메서드를 제공 합니다.
+- [CRBTree](../atl/reference/crbtree-class.md) 이 클래스는 Red-Black 트리를 만들고 활용 하기 위한 메서드를 제공 합니다.
 
 - [CSimpleArray](../atl/reference/csimplearray-class.md) 이 클래스는 간단한 배열을 관리 하기 위한 메서드를 제공 합니다.
 

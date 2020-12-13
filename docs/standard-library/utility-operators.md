@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: &lt; 유틸리티 &gt; 운영자'
 title: '&lt;utility&gt; 연산자'
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,19 +17,19 @@ helpviewer_keywords:
 - std::operator&lt; (utility)
 - std::operator&lt;= (utility)
 - std::operator== (utility)
-ms.openlocfilehash: 7146c31e33b514b20703b280a7194f639c387c26
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0db6f5b18708052964353687190295084886c928
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215462"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97153462"
 ---
 # <a name="ltutilitygt-operators"></a>&lt;utility&gt; 연산자
 
 > [!NOTE]
 > 를 사용 하 `Type&` 는 연산자는 아래에 포함 됩니다 `namespace rel_ops` .
 
-## <a name="operator"></a><a name="op_neq"></a>연산자! =
+## <a name="operator"></a><a name="op_neq"></a> 연산자! =
 
 연산자의 좌변에 있는 pair 개체가 우변에 있는 pair 개체와 같지 않은지 테스트합니다.
 
@@ -48,7 +49,7 @@ template <class T, class U>
 *오른쪽*\
 `pair` 형식의 개체입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 쌍이 같지 않으면이 고, 그렇지 않으면입니다. **`false`** 쌍이 같으면입니다.
 
@@ -103,7 +104,7 @@ The pairs p1 and p2 are not equal.
 The pairs p1 and p3 are equal.
 ```
 
-## <a name="operator"></a><a name="op_eq_eq"></a>연산자 = =
+## <a name="operator"></a><a name="op_eq_eq"></a> 연산자 = =
 
 연산자의 좌변에 있는 pair 개체가 우변에 있는 pair 개체와 같은지 테스트합니다.
 
@@ -120,7 +121,7 @@ constexpr bool operator==(const pair<T, U>& left, const pair<T, U>& right);
 *오른쪽*\
 `pair` 형식의 개체입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 쌍이 같으면이 고, 그렇지 않으면입니다. **`false`** `pair` 가와 같지 않으면입니다.
 
@@ -166,7 +167,7 @@ int main( )
 }
 ```
 
-## <a name="operatorlt"></a><a name="op_lt"></a>연산자&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a> 연산자&lt;
 
 연산자의 좌변에 있는 pair 개체가 우변에 있는 pair 개체보다 작은지 테스트합니다.
 
@@ -183,13 +184,13 @@ constexpr bool operator<(const pair<T, U>& left, const pair<T, U>& right);
 *오른쪽*\
 연산자의 우변에 있는 `pair` 형식의 개체입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`**`pair`연산자 좌 변의가 연산자 우변의 보다 엄격 하 게 작으면이 고, `pair` 그렇지 않으면 **`false`** 입니다.
 
 ### <a name="remarks"></a>설명
 
-`left` `pair` `right` `pair` *Left* 가 *오른쪽*보다 작고 같지 않으면 개체는 개체 보다 엄격 하 게 작아야 합니다.
+`left` `pair` `right` `pair` *Left* 가 *오른쪽* 보다 작고 같지 않으면 개체는 개체 보다 엄격 하 게 작아야 합니다.
 
 쌍의 비교에서 두 쌍에서 값의 첫 번째 요소가 가장 높은 우선 순위를 갖습니다. 서로 다르면 해당 비교 결과가 쌍의 비교 결과로 사용됩니다. 첫 번째 요소 값이 다르지 않으면 두 번째 요소 값이 비교되고 해당 비교 결과가 쌍의 비교 결과로 사용됩니다.
 
@@ -240,7 +241,7 @@ The pair p1 is less than the pair p2.
 The pair p1 is not less than the pair p3.
 ```
 
-## <a name="operatorlt"></a><a name="op_lt_eq"></a>연산자&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a> 연산자&lt;=
 
 연산자의 좌변에 있는 pair 개체가 우변에 있는 pair 개체보다 작은지 테스트합니다.
 
@@ -260,7 +261,7 @@ constexpr bool operator<=(const pair<T, U>& left, const pair<T, U>& right);
 *오른쪽*\
 연산자의 우변에 있는 `pair` 형식의 개체입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`**`pair`연산자 좌 변의가 연산자 우변의 보다 작거나 같으면이 고, `pair` 그렇지 않으면 **`false`** 입니다.
 
@@ -325,7 +326,7 @@ The pair p1 is greater than the pair p3.
 The pair p1 is less than or equal to the pair p4.
 ```
 
-## <a name="operatorgt"></a><a name="op_gt"></a>연산자&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a> 연산자&gt;
 
 연산자의 좌변에 있는 pair 개체가 우변에 있는 pair 개체보다 큰지 테스트합니다.
 
@@ -345,13 +346,13 @@ constexpr bool operator>(const pair<T, U>& left, const pair<T, U>& right);
 *오른쪽*\
 연산자의 우변에 있는 `pair` 형식의 개체입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`**`pair`연산자 좌 변의가 연산자 우변의 보다 엄격 하 게 크면이 고, `pair` 그렇지 않으면 **`false`** 입니다.
 
 ### <a name="remarks"></a>설명
 
-`left` `pair` `right` `pair` *Left* 가 *오른쪽*보다 크고 같지 않으면 개체는 개체 보다 엄격 하 게 커야 합니다.
+`left` `pair` `right` `pair` *Left* 가 *오른쪽* 보다 크고 같지 않으면 개체는 개체 보다 엄격 하 게 커야 합니다.
 
 쌍의 비교에서 두 쌍에서 값의 첫 번째 요소가 가장 높은 우선 순위를 갖습니다. 서로 다르면 해당 비교 결과가 쌍의 비교 결과로 사용됩니다. 첫 번째 요소 값이 다르지 않으면 두 번째 요소 값이 비교되고 해당 비교 결과가 쌍의 비교 결과로 사용됩니다.
 
@@ -412,7 +413,7 @@ The pair p1 is greater than the pair p3.
 The pair p1 is not greater than the pair p4.
 ```
 
-## <a name="operatorgt"></a><a name="op_gt_eq"></a>연산자&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a> 연산자&gt;=
 
 연산자의 좌변에 있는 pair 개체가 우변에 있는 pair 개체보다 크거나 같은지 테스트합니다.
 
@@ -432,7 +433,7 @@ template <class T, class U>
 *오른쪽*\
 연산자의 우변에 있는 `pair` 형식의 개체입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`**`pair`연산자 좌 변의가 연산자 우변의 보다 크거나 같으면이 고, `pair` 그렇지 않으면 **`false`** 입니다.
 
