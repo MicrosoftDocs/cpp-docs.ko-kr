@@ -1,4 +1,5 @@
 ---
+description: __Incfsbyte, __incfsword, __incfsdword에 대해 자세히 알아보세요.
 title: __incfsbyte, __incfsword, __incfsdword
 ms.date: 09/02/2019
 f1_keywords:
@@ -13,18 +14,18 @@ helpviewer_keywords:
 - __incfsdword intrinsic
 - __incfsbyte intrinsic
 ms.assetid: 820457fb-e35e-42d3-bcb6-725da3281c64
-ms.openlocfilehash: 43824829043304f5762d049b5c75a72b57e2102c
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 29d86de51ad282789cb19b72ca953f65af2dc19d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222133"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336972"
 ---
 # <a name="__incfsbyte-__incfsword-__incfsdword"></a>__incfsbyte, __incfsword, __incfsdword
 
 **Microsoft 전용**
 
-`FS` 세그먼트의 시작을 기준으로 하는 오프셋으로 지정 된 메모리 위치에 있는 값에 하나를 추가 합니다.
+세그먼트의 시작을 기준으로 하는 오프셋으로 지정 된 메모리 위치에 있는 값에 하나를 추가 `FS` 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -43,17 +44,17 @@ void __incfsdword(
 ### <a name="parameters"></a>매개 변수
 
 *이동*\
-진행 의 `FS`시작 부분부터의 오프셋입니다.
+진행 의 시작 부분부터의 오프셋 `FS` 입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`__incfsbyte`|x86|
 |`__incfsword`|x86|
 |`__incfsdword`|x86|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 ## <a name="remarks"></a>설명
 
@@ -61,9 +62,9 @@ void __incfsdword(
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[\__addfsbyte, \__addfsbyte, \__addfsdword](../intrinsics/addfsbyte-addfsword-addfsdword.md)\
-[\__readfsbyte, \__readfsdword, \__readfsqword, \__readfsbyte](../intrinsics/readfsbyte-readfsdword-readfsqword-readfsword.md)\
-[\__writefsbyte, \_ \__writefsdword, _writefsqword, \__writefsbyte](../intrinsics/writefsbyte-writefsdword-writefsqword-writefsword.md)\
+[\__addfsbyte, \_ _addfsword, \_ _addfsdword](../intrinsics/addfsbyte-addfsword-addfsdword.md)\
+[\__readfsbyte, \_ _readfsdword, \_ _readfsqword, \_ _readfsword](../intrinsics/readfsbyte-readfsdword-readfsqword-readfsword.md)\
+[\__writefsbyte, \_ _writefsdword, \_ _writefsqword, \_ _writefsword](../intrinsics/writefsbyte-writefsdword-writefsqword-writefsword.md)\
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

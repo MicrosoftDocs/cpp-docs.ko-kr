@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _ismbbkprint, _ismbbkprint_l'
 title: _ismbbkprint, _ismbbkprint_l
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - ismbbkprint function
 - _ismbbkprint_l function
 ms.assetid: 8d1d3258-1e34-4365-81ed-97c95de25475
-ms.openlocfilehash: 183a883d259fd322c5ecd6712bba676b7ffe080c
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 2d48f77143ffb14b142380cf0c3d2f3b4ceb3675
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915713"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337772"
 ---
 # <a name="_ismbbkprint-_ismbbkprint_l"></a>_ismbbkprint, _ismbbkprint_l
 
@@ -65,9 +66,9 @@ int _ismbbkprint_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-정수 *c* 가 ascii가 아닌 텍스트 또는 ascii가 아닌 문장 부호 기호 이면 **_ismbbkprint** 0이 아닌 값을 반환 하 고 그렇지 않으면 0을 반환 합니다. 예를 들어 **_ismbbkprint**는 932 코드 페이지에서만 가타카나 영숫자 또는 가타카나 문장 부호를 테스트합니다(범위: 0xA1 – 0xDF). **_ismbbkprint** 은 로캘 종속 문자 설정에 대 한 현재 로캘을 사용 합니다. **_ismbbkprint_l** 은 전달 된 로캘을 사용 한다는 점을 제외 하 고 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+정수 *c* 가 ascii가 아닌 텍스트 또는 ascii가 아닌 문장 부호 기호 이면 **_ismbbkprint** 0이 아닌 값을 반환 하 고 그렇지 않으면 0을 반환 합니다. 예를 들어 **_ismbbkprint** 는 932 코드 페이지에서만 가타카나 영숫자 또는 가타카나 문장 부호를 테스트합니다(범위: 0xA1 – 0xDF). **_ismbbkprint** 은 로캘 종속 문자 설정에 대 한 현재 로캘을 사용 합니다. **_ismbbkprint_l** 은 전달 된 로캘을 사용 한다는 점을 제외 하 고 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
@@ -82,7 +83,7 @@ int _ismbbkprint_l(
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [바이트 분류](../../c-runtime-library/byte-classification.md)<br/>
 [_ismbb 루틴](../../c-runtime-library/ismbb-routines.md)<br/>

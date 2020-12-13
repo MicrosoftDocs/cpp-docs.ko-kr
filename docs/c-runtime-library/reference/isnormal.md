@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: isnormal'
 title: isnormal
 ms.date: 01/31/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 - math/isnormal
 helpviewer_keywords:
 - isnormal function
-ms.openlocfilehash: 2e12cabb57f2e51c08b4d93af33dae85164d016b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3afae5196a7a6b2b149028ad347f95baa27b1544
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213530"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337756"
 ---
 # <a name="isnormal"></a>isnormal
 
@@ -37,7 +38,7 @@ inline bool isnormal(
 
 ## <a name="return-value"></a>반환 값
 
-**isnormal** 은 0이 아닌 값 ( **`true`** c + + 코드의 경우 *x* )을 반환 합니다. 그렇지 않은 경우 **isnormal** 은 0 ( **`false`** c + + 코드의 경우)을 반환 합니다.
+**isnormal** 은 0이 아닌 값 ( **`true`** c + + 코드의 경우  )을 반환 합니다. 그렇지 않은 경우 **isnormal** 은 0 ( **`false`** c + + 코드의 경우)을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 

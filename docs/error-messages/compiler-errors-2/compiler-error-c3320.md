@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3320'
 title: 컴파일러 오류 C3320
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3320
 ms.assetid: 2ef72d9a-1f1d-4b2e-b244-9fd3f3e70cb6
-ms.openlocfilehash: 98af3c84b48aa8e69ad883bf73299f2697618ce1
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 2dde804792dec4f7a1564c680a45c78adf60eedf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91501335"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337371"
 ---
 # <a name="compiler-error-c3320"></a>컴파일러 오류 C3320
 

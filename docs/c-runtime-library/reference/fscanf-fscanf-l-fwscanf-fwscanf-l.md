@@ -1,4 +1,5 @@
 ---
+description: Fscanf, _fscanf_l, fwscanf, _fwscanf_l에 대해 자세히 알아보세요.
 title: fscanf, _fscanf_l, fwscanf, _fwscanf_l
 ms.date: 11/04/2016
 api_name:
@@ -43,12 +44,12 @@ helpviewer_keywords:
 - _ftscanf function
 - fwscanf_l function
 ms.assetid: 9004e978-6c5f-4bb2-98fd-51e5948933f2
-ms.openlocfilehash: 1c143cbc1bf642e7efc6f10b9615fdaca8a236d1
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: fbdcffa7492d8a4f5d465ac0a62eefecca2e5c84
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70956628"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336520"
 ---
 # <a name="fscanf-_fscanf_l-fwscanf-_fwscanf_l"></a>fscanf, _fscanf_l, fwscanf, _fwscanf_l
 
@@ -83,7 +84,7 @@ int _fwscanf_l(
 
 ### <a name="parameters"></a>매개 변수
 
-*stream*<br/>
+*스트림*<br/>
 **FILE** 구조체에 대한 포인터입니다.
 
 *format*<br/>
@@ -97,19 +98,19 @@ int _fwscanf_l(
 
 ## <a name="return-value"></a>반환 값
 
-이러한 각 함수는 모두 성공적으로 변환되고 할당된 필드 수를 반환합니다. 이때 읽혀졌지만 할당되지 않은 필드는 반환 값에 포함되지 않습니다. 반환 값이 0이면 할당된 필드가 없음을 나타냅니다. 오류가 발생 하거나 첫 번째 변환 전에 파일 스트림의 끝에 도달 하는 경우 반환 값은 **fscanf** 및 **fwscanf**에 대 한 **EOF** 입니다.
+이러한 각 함수는 모두 성공적으로 변환되고 할당된 필드 수를 반환합니다. 이때 읽혀졌지만 할당되지 않은 필드는 반환 값에 포함되지 않습니다. 반환 값이 0이면 할당된 필드가 없음을 나타냅니다. 오류가 발생 하거나 첫 번째 변환 전에 파일 스트림의 끝에 도달 하는 경우 반환 값은 **fscanf** 및 **fwscanf** 에 대 한 **EOF** 입니다.
 
-이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. *Stream* 또는 *format* 이 Null 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **EOF** 를 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
+이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. *Stream* 또는 *format* 이 Null 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **EOF** 를 반환 하 고 **errno** 를 **EINVAL** 로 설정 합니다.
 
 ## <a name="remarks"></a>설명
 
-**Fscanf** 함수는 *스트림의* 현재 위치에서 *인수* (있는 경우)로 지정 된 위치로 데이터를 읽습니다. 각 *인수* 는 *형식의 형식*지정자에 해당 하는 형식의 변수에 대 한 포인터 여야 합니다. *format* 은 입력 필드의 해석을 제어 하 고 **scanf**에 대 한 *format* 인수와 동일한 양식 및 기능을 포함 합니다. *형식*에 대 한 설명은 [scanf](scanf-scanf-l-wscanf-wscanf-l.md) 를 참조 하세요.
+**Fscanf** 함수는 *스트림의* 현재 위치에서 *인수* (있는 경우)로 지정 된 위치로 데이터를 읽습니다. 각 *인수* 는 *형식의 형식* 지정자에 해당 하는 형식의 변수에 대 한 포인터 여야 합니다. *format* 은 입력 필드의 해석을 제어 하 고 **scanf** 에 대 한 *format* 인수와 동일한 양식 및 기능을 포함 합니다. *형식* 에 대 한 설명은 [scanf](scanf-scanf-l-wscanf-wscanf-l.md) 를 참조 하세요.
 
-**fwscanf** 는 **fscanf**의 와이드 문자 버전입니다. **fwscanf** 에 대 한 format 인수는 와이드 문자열입니다. 스트림이 ANSI 모드에서 열리는 경우 이러한 함수는 동일하게 작동합니다. **fscanf** 는 현재 유니코드 스트림의 입력을 지원 하지 않습니다.
+**fwscanf** 는 **fscanf** 의 와이드 문자 버전입니다. **fwscanf** 에 대 한 format 인수는 와이드 문자열입니다. 스트림이 ANSI 모드에서 열리는 경우 이러한 함수는 동일하게 작동합니다. **fscanf** 는 현재 유니코드 스트림의 입력을 지원 하지 않습니다.
 
-**_L** 접미사가 있는 이러한 함수 버전은 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 하는 경우를 제외 하 고는 동일 합니다.
+**_L** 접미사가 있는 이러한 함수 버전은 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하 고는 동일 합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -120,12 +121,12 @@ int _fwscanf_l(
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|필수 헤더|
+|함수|필수 헤더|
 |--------------|---------------------|
 |**fscanf**, **_fscanf_l**|\<stdio.h>|
 |**fwscanf**, **_fwscanf_l**|\<stdio.h> 또는 \<wchar.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
@@ -186,7 +187,7 @@ a-string
 x
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [스트림 I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [_cscanf, _cscanf_l, _cwscanf, _cwscanf_l](cscanf-cscanf-l-cwscanf-cwscanf-l.md)<br/>

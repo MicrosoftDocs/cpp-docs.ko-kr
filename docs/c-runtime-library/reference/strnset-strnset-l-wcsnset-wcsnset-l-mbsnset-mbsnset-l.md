@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: _strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l'
 title: _strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l
 ms.date: 4/2/2020
 api_name:
@@ -73,12 +74,12 @@ helpviewer_keywords:
 - strings [C++], initializing
 - tcsnset_l function
 ms.assetid: 3f306489-5763-48e5-b939-aefee7c94ef5
-ms.openlocfilehash: eb23e63fa5eba7ab79fc45b8c8cb6ea350685a7e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: dc0ca21ff23cbbf016b53ec55ed3e1960fbe2fb6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231327"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336446"
 ---
 # <a name="_strnset-_strnset_l-_wcsnset-_wcsnset_l-_mbsnset-_mbsnset_l"></a>_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l
 
@@ -139,17 +140,17 @@ unsigned char *_mbsnset_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 변경된 문자열에 대한 포인터를 반환합니다.
 
 ## <a name="remarks"></a>설명
 
-**_Strnset** 함수는 *str* 의 처음 *카운트* 문자를 최대 *c* (로 변환)로 설정 합니다 **`char`** . *Count* 가 *str*의 길이 보다 크면 *count*대신 *str* 의 길이가 사용 됩니다.
+**_Strnset** 함수는 *str* 의 처음 *카운트* 문자를 최대 *c* (로 변환)로 설정 합니다 **`char`** . *Count* 가 *str* 의 길이 보다 크면 *count* 대신 *str* 의 길이가 사용 됩니다.
 
-**_wcsnset** 및 **_mbsnset** 는 **_strnset**의 와이드 문자 및 멀티 바이트 문자 버전입니다. **_Wcsnset** 문자열 인수와 반환 값은 와이드 문자열입니다. **_mbsnset** 의 이러한 문자열은 멀티 바이트 문자열입니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
+**_wcsnset** 및 **_mbsnset** 는 **_strnset** 의 와이드 문자 및 멀티 바이트 문자 버전입니다. **_Wcsnset** 문자열 인수와 반환 값은 와이드 문자열입니다. **_mbsnset** 의 이러한 문자열은 멀티 바이트 문자열입니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
 
-**_mbsnset** 은 해당 매개 변수의 유효성을 검사 합니다. *str* 이 null 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 **_Mbsnset** **NULL** 을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다. **_strnset** 및 **_wcsnset** 는 매개 변수의 유효성을 검사 하지 않습니다.
+**_mbsnset** 은 해당 매개 변수의 유효성을 검사 합니다. *str* 이 null 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 **_Mbsnset** **NULL** 을 반환 하 고 **errno** 를 **EINVAL** 로 설정 합니다. **_strnset** 및 **_wcsnset** 는 매개 변수의 유효성을 검사 하지 않습니다.
 
 출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_l** 접미사가 없는 이러한 함수 버전은 이 로캘 종속 동작에 현재 로캘을 사용하며, **_l** 접미사가 있는 버전은 전달된 로캘 매개 변수를 대신 사용하는 경우를 제외하고는 동일합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
@@ -202,7 +203,7 @@ After:  **** is a test
 
 [문자열 조작](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [로캘](../../c-runtime-library/locale.md)<br/>
-[멀티 바이트 문자 시퀀스 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Multibyte-Character 시퀀스의 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)<br/>
 [strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>
 [strcpy, wcscpy, _mbscpy](strcpy-wcscpy-mbscpy.md)<br/>

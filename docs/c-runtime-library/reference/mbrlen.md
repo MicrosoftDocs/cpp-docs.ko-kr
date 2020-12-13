@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: mbrlen'
 title: mbrlen
 ms.date: 4/2/2020
 api_name:
@@ -26,12 +27,12 @@ f1_keywords:
 helpviewer_keywords:
 - mbrlen function
 ms.assetid: dde8dee9-e091-4c4c-81b3-639808885ae1
-ms.openlocfilehash: 2e0e0ec9d92744fc904bae5ac7f91db8049de4cd
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 1a485090c056cb1e5f075bfd226ac7d4717ec0ec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842119"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336493"
 ---
 # <a name="mbrlen"></a>mbrlen
 
@@ -49,14 +50,14 @@ size_t mbrlen(
 
 ### <a name="parameters"></a>매개 변수
 
-*문자열*<br/>
+*str*<br/>
 멀티바이트 문자열에서 검사할 다음 바이트에 대한 포인터입니다.
 
 *count*<br/>
 검사할 최대 바이트 수입니다.
 
 *mbstate*<br/>
-*Str*의 초기 바이트의 현재 이동 상태에 대 한 포인터입니다.
+*Str* 의 초기 바이트의 현재 이동 상태에 대 한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -75,7 +76,7 @@ size_t mbrlen(
 
 **Mbrlen** 함수는 *mbstate* 매개 변수에서 불완전 한 멀티 바이트 문자의 이동 상태를 저장 하 고 사용 합니다. 이를 통해 **mbrlen** 은 필요한 경우 멀티 바이트 문자 중간에서 다시 시작 하 여 최대 *카운트* 바이트를 검사 하는 기능을 제공 합니다. *Mbstate* 가 null 포인터인 경우 **mbrlen** 은 내부 정적 **mbstate_t** 개체를 사용 하 여 이동 상태를 저장 합니다. 내부 **mbstate_t** 개체는 스레드로부터 안전 하지 않으므로 항상 고유한 *mbstate* 매개 변수를 할당 하 고 전달 하는 것이 좋습니다.
 
-**Mbrlen** 함수는 다시 시작할에 의해 [_mblen_l _mbclen mblen](mbclen-mblen-mblen-l.md) 다릅니다. 동일 하거나 다른 다시 시작 가능 함수에 대 한 후속 호출의 경우 이동 상태가 *mbstate* 에 저장 됩니다. 다시 시작할 수 있는 함수와 다시 시작할 수 없는 함수를 함께 사용할 때는 결과가 정의되지 않습니다.  예를 들어 **wcstombs**대신 **wcsrtombs** 에 대 한 후속 호출을 사용 하는 경우 응용 프로그램은 **wcslen** 대신 **wcsrlen** 을 사용 해야 합니다.
+**Mbrlen** 함수는 다시 시작할에 의해 [_mblen_l _mbclen mblen](mbclen-mblen-mblen-l.md) 다릅니다. 동일 하거나 다른 다시 시작 가능 함수에 대 한 후속 호출의 경우 이동 상태가 *mbstate* 에 저장 됩니다. 다시 시작할 수 있는 함수와 다시 시작할 수 없는 함수를 함께 사용할 때는 결과가 정의되지 않습니다.  예를 들어 **wcstombs** 대신 **wcsrtombs** 에 대 한 후속 호출을 사용 하는 경우 응용 프로그램은 **wcslen** 대신 **wcsrlen** 을 사용 해야 합니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -95,7 +96,7 @@ size_t mbrlen(
 
 ## <a name="example"></a>예제
 
-이 예제에서는 멀티 바이트 문자의 해석이 현재 코드 페이지에 따라 달라 지는 방법과 **mbrlen**의 다시 시작 기능을 보여 줍니다.
+이 예제에서는 멀티 바이트 문자의 해석이 현재 코드 페이지에 따라 달라 지는 방법과 **mbrlen** 의 다시 시작 기능을 보여 줍니다.
 
 ```C
 // crt_mbrlen.c

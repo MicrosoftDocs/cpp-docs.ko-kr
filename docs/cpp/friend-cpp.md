@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: friend (c + +)'
 title: friend (C++)
 ms.date: 07/15/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - friend classes [C++]
 - friend keyword [C++]
 ms.assetid: 8fe9ee55-d56f-40cd-9075-d9fb1375aff4
-ms.openlocfilehash: 772eada8257917a6127b15ea2e50946aebb3bc74
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6e25beb10a727d0dcefce15e96059b49c5661601
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227467"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337738"
 ---
 # <a name="friend-c"></a>friend (C++)
 
 일부 환경에서는 클래스의 멤버가 아닌 함수 또는 별도의 클래스에 있는 모든 멤버에 대 한 멤버 수준 액세스 권한을 부여 하는 것이 더 편리 합니다. 클래스 구현자만 이 클래스의 friend를 선언할 수 있습니다. 함수 또는 클래스는 자신을 클래스의 friend로 선언할 수 없습니다. 클래스 정의에서 **`friend`** 키워드와 비멤버 함수 또는 기타 클래스의 이름을 사용 하 여 클래스의 전용 및 보호 된 멤버에 대 한 액세스 권한을 부여 합니다. 템플릿 정의에서 형식 매개 변수를 friend로 선언할 수 있습니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 class friend F
@@ -155,7 +156,7 @@ int main()
 
 ## <a name="class-members-as-friends"></a>Friend 클래스 멤버
 
-클래스 멤버 함수는 다른 클래스에서 friend로 선언될 수 있습니다. 다음과 같은 예제를 참조하세요.
+클래스 멤버 함수는 다른 클래스에서 friend로 선언될 수 있습니다. 다음 예제를 참조하세요.
 
 ```cpp
 // classes_as_friends1.cpp
@@ -239,4 +240,4 @@ Friend 함수는 클래스 선언 내에서 함수 본문을 지정 하 여 정�
 
 ## <a name="see-also"></a>참고 항목
 
-[C++ 키워드](../cpp/keywords-cpp.md)
+[키워드](../cpp/keywords-cpp.md)

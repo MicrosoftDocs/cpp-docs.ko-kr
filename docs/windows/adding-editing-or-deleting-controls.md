@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 방법: 컨트롤 추가, 편집 또는 삭제 (c + +)'
 title: '방법: 컨트롤 추가, 편집 또는 삭제 (c + +)'
 ms.date: 02/15/2019
 f1_keywords:
@@ -42,27 +43,27 @@ helpviewer_keywords:
 - RichEdit 1.0 control
 - rich edit controls [C++], RichEdit 1.0
 ms.assetid: 73cef03f-5c8c-456a-87d1-1458dff185cf
-ms.openlocfilehash: be2923c98ed1b92d4aeb2692591abcaf9f13c5ec
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 4ff0f3bdf7e4da935cba3437900e2319218de771
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91508833"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337820"
 ---
 # <a name="how-to-add-edit-or-delete-controls-c"></a>방법: 컨트롤 추가, 편집 또는 삭제 (c + +)
 
-대화 상자 **편집기**를 사용 하 여 대화 상자에서 컨트롤을 추가, 크기 조정, 편집 및 삭제할 수 있습니다. 컨트롤의 ID와 같은 컨트롤의 속성을 편집 하거나 런타임에 초기에 표시할지 여부를 편집할 수도 있습니다.
+대화 상자 **편집기** 를 사용 하 여 대화 상자에서 컨트롤을 추가, 크기 조정, 편집 및 삭제할 수 있습니다. 컨트롤의 ID와 같은 컨트롤의 속성을 편집 하거나 런타임에 초기에 표시할지 여부를 편집할 수도 있습니다.
 
-대화 **상자 편집기에서**작업 하는 경우 대화 상자 **편집기** 탭이 [도구 상자 창](/visualstudio/ide/reference/toolbox) 에 표시 됩니다. 쉽게 사용할 수 있도록 **도구 상자** 창을 사용자 지정할 수도 있습니다. 자세한 내용은 [도구 상자 사용](/visualstudio/ide/using-the-toolbox) 및 [도구 상자 창 표시/숨기기](./dialog-editor.md)를 참조 하세요.
+대화 **상자 편집기에서** 작업 하는 경우 대화 상자 **편집기** 탭이 [도구 상자 창](/visualstudio/ide/reference/toolbox) 에 표시 됩니다. 쉽게 사용할 수 있도록 **도구 상자** 창을 사용자 지정할 수도 있습니다. 자세한 내용은 [도구 상자 사용](/visualstudio/ide/using-the-toolbox) 및 [도구 상자 창 표시/숨기기](./dialog-editor.md)를 참조 하세요.
 
 > [!TIP]
-> 대부분의 경우 **대화 상자 편집기**를 사용 하는 동안 마우스 오른쪽 단추를 선택 하 여 자주 사용 하는 명령의 바로 가기 메뉴를 표시할 수 있습니다.
+> 대부분의 경우 **대화 상자 편집기** 를 사용 하는 동안 마우스 오른쪽 단추를 선택 하 여 자주 사용 하는 명령의 바로 가기 메뉴를 표시할 수 있습니다.
 
 ## <a name="add-controls"></a>컨트롤 추가
 
 ### <a name="to-add-a-control"></a>컨트롤을 추가 하려면
 
-1. 대화 상자 탭 창이 편집기 프레임에서 현재 문서인지 확인합니다. 대화 상자가 현재 문서가 아닌 경우 **도구 상자**에 **대화 상자 편집기 탭** 이 표시 되지 않습니다.
+1. 대화 상자 탭 창이 편집기 프레임에서 현재 문서인지 확인합니다. 대화 상자가 현재 문서가 아닌 경우 **도구 상자** 에 **대화 상자 편집기 탭** 이 표시 되지 않습니다.
 
 1. **도구 상자** 창의 **대화 상자 편집기** 탭에서 원하는 컨트롤을 선택 하 고 다음 중 하나를 선택 합니다.
 
@@ -112,18 +113,18 @@ ms.locfileid: "91508833"
 1. [속성 창](/visualstudio/ide/reference/properties-window)에서 컨트롤의 속성을 변경 합니다.
 
    > [!NOTE]
-   > 단추, 라디오 단추 또는 확인란 컨트롤에 대 한 **Bitmap** 속성을 **True**로 설정 하면 컨트롤에 대 한 스타일 BS_BITMAP 구현 됩니다. 자세한 내용은 [단추 스타일](../mfc/reference/styles-used-by-mfc.md#button-styles)을 참조 하세요. 비트맵을 컨트롤과 연결 하는 예제는 [Cbutton:: SetBitmap](../mfc/reference/cbutton-class.md#setbitmap)을 참조 하세요. **대화 상자 편집기**에서 비트맵은 컨트롤에 나타나지 않습니다.
+   > 단추, 라디오 단추 또는 확인란 컨트롤에 대 한 **Bitmap** 속성을 **True** 로 설정 하면 컨트롤에 대 한 스타일 BS_BITMAP 구현 됩니다. 자세한 내용은 [단추 스타일](../mfc/reference/styles-used-by-mfc.md#button-styles)을 참조 하세요. 비트맵을 컨트롤과 연결 하는 예제는 [Cbutton:: SetBitmap](../mfc/reference/cbutton-class.md#setbitmap)을 참조 하세요. **대화 상자 편집기** 에서 비트맵은 컨트롤에 나타나지 않습니다.
 
 ### <a name="to-undo-changes-to-the-properties-of-a-control"></a>컨트롤의 속성에 대 한 변경 내용을 취소 하려면
 
-1. **대화 상자 편집기**에서 컨트롤에 포커스가 있는지 확인 합니다.
+1. **대화 상자 편집기** 에서 컨트롤에 포커스가 있는지 확인 합니다.
 
-1. 메뉴 **편집**  >  **취소**로 이동 합니다. 컨트롤에 포커스가 없으면 **실행 취소** 명령을 사용할 수 없습니다.
+1. 메뉴 **편집**  >  **취소** 로 이동 합니다. 컨트롤에 포커스가 없으면 **실행 취소** 명령을 사용할 수 없습니다.
 
 ### <a name="to-define-a-member-variable-for-a-non-button-dialog-box-control"></a>(단추 이외의) 대화 상자 컨트롤에 대해 멤버 변수를 정의하려면
 
 > [!NOTE]
-> 이 프로세스는 MFC 프로젝트의 대화 상자 컨트롤에만 적용 됩니다. ATL 프로젝트는 **새 Windows 메시지 및 이벤트 처리기** 대화 상자를 사용 해야 합니다. 자세한 내용은 [사용자 인터페이스 개체에 연결 된 메시지 유형](../mfc/reference/message-types-associated-with-user-interface-objects.md), [메시지 처리기 편집](../mfc/reference/editing-a-message-handler.md)및 [리플렉션된 메시지의 메시지 처리기 정의](../mfc/reference/defining-a-message-handler-for-a-reflected-message.md)를 참조 하세요.
+> 이 프로세스는 MFC 프로젝트의 대화 상자 컨트롤에만 적용 됩니다. ATL 프로젝트는 **새 Windows 메시지 및 이벤트 처리기** 대화 상자를 사용 해야 합니다. 자세한 내용은 [User-Interface 개체와 연결 된 메시지 유형](../mfc/reference/message-types-associated-with-user-interface-objects.md), [메시지 처리기 편집](../mfc/reference/editing-a-message-handler.md)및 [리플렉션된 메시지의 메시지 처리기 정의](../mfc/reference/defining-a-message-handler-for-a-reflected-message.md)를 참조 하세요.
 
 1. [대화 상자 편집기](dialog-editor.md)에서 컨트롤을 선택 합니다.
 
@@ -133,7 +134,7 @@ ms.locfileid: "91508833"
 
 1. **멤버 변수 추가** 마법사에서 적절 한 정보를 입력 합니다. 자세한 내용은 [대화 상자 데이터 교환](../mfc/dialog-data-exchange.md)을 참조 하세요.
 
-1. **확인** 을 선택 하 여 **대화 상자 편집기**로 돌아갑니다.
+1. **확인** 을 선택 하 여 **대화 상자 편집기** 로 돌아갑니다.
 
 > [!TIP]
 > 대화 상자 컨트롤에서 기존 처리기로 이동하려면 컨트롤을 두 번 클릭합니다.
@@ -142,13 +143,13 @@ ms.locfileid: "91508833"
 
 ## <a name="delete-controls"></a>컨트롤 삭제
 
-대화 상자에서 컨트롤을 선택한 다음 **delete** 키를 누르거나 메뉴에서 삭제 **편집**으로 이동  >  **Delete**합니다.
+대화 상자에서 컨트롤을 선택한 다음 **delete** 키를 누르거나 메뉴에서 삭제 **편집** 으로 이동  >  합니다.
 
 ## <a name="other-issues"></a>기타 이슈
 
 ### <a name="troubleshooting"></a>문제 해결
 
-대화 상자에 공용 컨트롤이 나 rich edit 컨트롤을 추가한 후에는 대화 상자를 테스트할 때 표시 되지 않습니다. 또는 대화 자체가 나타나지 않습니다. 다음은 그 예입니다.
+대화 상자에 공용 컨트롤이 나 rich edit 컨트롤을 추가한 후에는 대화 상자를 테스트할 때 표시 되지 않습니다. 또는 대화 자체가 나타나지 않습니다. 예를 들어:
 
 1. Win32 프로젝트를 만들고 응용 프로그램 설정을 수정 하 여 콘솔 앱이 아닌 Windows 응용 프로그램을 만듭니다.
 
@@ -217,13 +218,13 @@ Visual Studio에서는 ActiveX 컨트롤을 대화 상자에 삽입할 수 있�
 
 ### <a name="to-add-an-activex-control"></a>ActiveX 컨트롤을 추가 하려면
 
-1. **대화 상자 편집기**에서 대화 상자를 엽니다.
+1. **대화 상자 편집기** 에서 대화 상자를 엽니다.
 
-1. 대화 상자의 본문에서 아무 곳 이나 마우스 오른쪽 단추로 클릭 하 고 **ActiveX 컨트롤 삽입**을 선택 합니다.
+1. 대화 상자의 본문에서 아무 곳 이나 마우스 오른쪽 단추로 클릭 하 고 **ActiveX 컨트롤 삽입** 을 선택 합니다.
 
    시스템의 모든 ActiveX 컨트롤을 표시 하는 **Activex 컨트롤 삽입** 대화 상자가 나타납니다. 대화 상자 아래쪽에 ActiveX 컨트롤 파일 경로가 표시됩니다.
 
-1. 대화 상자에 추가할 컨트롤을 선택 하 고 **확인**을 선택 합니다.
+1. 대화 상자에 추가할 컨트롤을 선택 하 고 **확인** 을 선택 합니다.
 
    컨트롤이 대화 상자에 표시되고, 이 대화 상자에서 컨트롤을 편집하거나 다른 컨트롤처럼 컨트롤용 처리기를 만들 수 있습니다.
 

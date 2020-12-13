@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: 컴파일러 내장 함수 및 어셈블리 언어'
 title: 컴파일러 내장 및 어셈블리 언어
 ms.date: 09/02/2019
 ms.assetid: ddd51620-d01b-44cf-853b-e11420d13137
-ms.openlocfilehash: 36feb6971a8f5e4affd4f71b6afc1d508b2802f1
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 0207921a951345ca3a9091803294ec5df668fcb6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80171686"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337137"
 ---
 # <a name="compiler-intrinsics-and-assembly-language"></a>컴파일러 내장 및 어셈블리 언어
 
@@ -15,7 +16,7 @@ ms.locfileid: "80171686"
 
 ## <a name="related-articles"></a>관련 문서
 
-|제목|Description|
+|제목|설명|
 |-----------|-----------------|
 |[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)|x86용 Microsoft C 및 C++, ARM 및 x64 아키텍처에 사용할 수 있는 내장 함수에 대해 설명합니다.|
 |[인라인 어셈블러](../assembler/inline/inline-assembler.md)|x86 프로세서에서 Visual C/C++ 인라인 어셈블러를 사용하는 방법을 설명합니다.|

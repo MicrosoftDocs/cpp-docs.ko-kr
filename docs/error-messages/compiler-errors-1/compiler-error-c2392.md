@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2392'
 title: 컴파일러 오류 C2392
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2392
 ms.assetid: 98ced473-6383-46ed-b79c-21857d65dcb2
-ms.openlocfilehash: 15fa4a19cdd791ddb3636f30a636cc084bdc4a5f
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 0a367ed1416b28bb27fc5d79d4a474de219e48e6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74745007"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337566"
 ---
 # <a name="compiler-error-c2392"></a>컴파일러 오류 C2392
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3340'
 title: 컴파일러 오류 C3340
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3340
 ms.assetid: 23b12298-b92a-4717-8380-f165c998cb8a
-ms.openlocfilehash: aa52170f2f2a2e1fa8019a451c1322a4b1d8eac3
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 3c944d8d61a93fb3985e85e946f147eecd56624a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91506812"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337314"
 ---
 # <a name="compiler-error-c3340"></a>컴파일러 오류 C3340
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3333'
 title: 컴파일러 오류 C3333
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3333
 ms.assetid: 51693978-fba6-435a-a696-74735cc875de
-ms.openlocfilehash: f0ccab0b676bf388ba5b94c151de5e18f842aac7
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 67cc9714fdd04edfb4a0d48cfd71f54985323d59
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80201248"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337349"
 ---
 # <a name="compiler-error-c3333"></a>컴파일러 오류 C3333
 

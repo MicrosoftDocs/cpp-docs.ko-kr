@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _bittestandset, _bittestandset64'
 title: _bittestandset, _bittestandset64
 ms.date: 09/02/2019
 f1_keywords:
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - _bittestandset intrinsic
 - _bittestandset64 intrinsic
 ms.assetid: 6d6c8670-fea0-4c1c-9aad-2bb842715203
-ms.openlocfilehash: d54be5688acfb1e3cfc9d79514c39f665efdd9fd
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 69d1c8569a228ed4994343e12ef769710bd06ad5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70216891"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337150"
 ---
 # <a name="_bittestandset-_bittestandset64"></a>_bittestandset, _bittestandset64
 
 **Microsoft 전용**
 
-`b` 주소`a`의 비트를 검사 하 고 현재 값을 반환 하 고 비트를 1로 설정 하는 명령을 생성 합니다.
+주소의 비트를 검사 하 `b` `a` 고 현재 값을 반환 하 고 비트를 1로 설정 하는 명령을 생성 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -51,12 +52,12 @@ unsigned char _bittestandset64(
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`_bittestandset`|x86, ARM, x64, ARM64|
 |`_bittestandset64`|x64, ARM64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 ## <a name="remarks"></a>설명
 
@@ -149,6 +150,6 @@ Flags: 0x0
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

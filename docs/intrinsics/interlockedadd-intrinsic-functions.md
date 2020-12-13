@@ -1,4 +1,5 @@
 ---
+description: _InterlockedAdd 내장 함수에 대해 자세히 알아보세요.
 title: _InterlockedAdd 내장 함수
 ms.date: 09/02/2019
 f1_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - _InterlockedAdd_acq intrinsic
 - _InterlockedAdd64_rel intrinsic
 ms.assetid: 3d319603-ea9c-4fdd-ae61-e52430ccc3b1
-ms.openlocfilehash: c611a22e696b9dda0c6910cd4aac84399cc7d20a
-ms.sourcegitcommit: ced5ff1431ffbd25b20d106901955532723bd188
+ms.openlocfilehash: b467cc855e674a50899999c6e945321390735b00
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92135556"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336889"
 ---
 # <a name="_interlockedadd-intrinsic-functions"></a>_InterlockedAdd 내장 함수
 

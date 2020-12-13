@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _bittestandreset, _bittestandreset64'
 title: _bittestandreset, _bittestandreset64
 ms.date: 09/02/2019
 f1_keywords:
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - _bittestandreset intrinsic
 - _bittestandreset64 intrinsic
 ms.assetid: 8dad63bb-a051-4cd7-a793-3357537dfeaf
-ms.openlocfilehash: 9e0c869b926b2f9f3c04fd648f84ef33b8d16fcd
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 5d0b6133b981a7008bbe4979ee123cebd5ef99fb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70216928"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337168"
 ---
 # <a name="_bittestandreset-_bittestandreset64"></a>_bittestandreset, _bittestandreset64
 
 **Microsoft 전용**
 
-`b` 주소`a`의 비트를 검사 하 고 현재 값을 반환 하 고 비트를 0으로 다시 설정 하는 명령을 생성 합니다.
+주소의 비트를 검사 하 고 `b` `a` 현재 값을 반환 하 고 비트를 0으로 다시 설정 하는 명령을 생성 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -51,12 +52,12 @@ unsigned char _bittestandreset64(
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`_bittestandreset`|x86, ARM, x64, ARM64|
 |`_bittestandreset64`|x64, ARM64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 ## <a name="remarks"></a>설명
 
@@ -101,6 +102,6 @@ The number was negative.
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 목록 컨트롤 및 목록 뷰'
 title: 목록 컨트롤 및 목록 뷰
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - list views [MFC]
 - list controls [MFC], List view
 ms.assetid: 7aee1c48-b158-4399-be0b-be366993665e
-ms.openlocfilehash: d308cfe83f02dcfe3687790c6638d268cc69fc24
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 582957cb59bc28797849d45f56fc2be95b8cc2b3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84621435"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336814"
 ---
 # <a name="list-control-and-list-view"></a>목록 컨트롤 및 목록 뷰
 
@@ -23,7 +24,7 @@ ms.locfileid: "84621435"
 
 - 클래스 [CListView](reference/clistview-class.md)를 사용 하 여 간접적으로
 
-`CListView`를 사용 하면 list 컨트롤과 MFC 문서/뷰 아키텍처를 쉽게 통합할 수 있으므로 [Ceditview](reference/ceditview-class.md) 가 편집 컨트롤을 캡슐화 하는 만큼 컨트롤을 캡슐화 합니다. 컨트롤이 mfc 뷰의 전체 노출 영역을 채웁니다. 뷰는로 캐스팅 되는 컨트롤 *입니다* `CListView` .
+`CListView` 를 사용 하면 list 컨트롤과 MFC 문서/뷰 아키텍처를 쉽게 통합할 수 있으므로 [Ceditview](reference/ceditview-class.md) 가 편집 컨트롤을 캡슐화 하는 만큼 컨트롤을 캡슐화 합니다. 컨트롤이 mfc 뷰의 전체 노출 영역을 채웁니다. 뷰는로 캐스팅 되는 컨트롤 *입니다* `CListView` .
 
 `CListView`개체는 [CCtrlView](reference/cctrlview-class.md) 및 해당 기본 클래스에서 상속 되며 멤버 함수를 추가 하 여 기본 목록 컨트롤을 검색 합니다. 뷰 멤버를 사용 하 여 뷰로 작업할 수 있습니다. [Getlistctrl](reference/clistview-class.md#getlistctrl) 멤버 함수를 사용 하 여 목록 컨트롤의 멤버 함수에 대 한 액세스 권한을 얻습니다. 이러한 멤버를 사용 하 여 다음을 수행 합니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: __emul, __emulu'
 title: __emul, __emulu
 ms.date: 09/02/2019
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - __emul intrinsic
 - __emulu intrinsic
 ms.assetid: 79545236-cca2-40b8-a4e1-8abce9b26311
-ms.openlocfilehash: 16b2b38f6f44b99c9f5b9370ba586342a860684e
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: cdcbd14e4e72bcaf7d2c7fd5f098a291e32227cc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70216749"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337060"
 ---
 # <a name="__emul-__emulu"></a>__emul, __emulu
 
@@ -50,18 +51,18 @@ unsigned __int64 __emulu(
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`__emul`|x86, x64|
 |`__emulu`|x86, x64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 ## <a name="remarks"></a>설명
 
-`__emul`2 32 비트의 부호 있는 값을 사용 하 고 곱셈 결과를 64 비트 부호 있는 정수 값으로 반환 합니다.
+`__emul` 2 32 비트의 부호 있는 값을 사용 하 고 곱셈 결과를 64 비트 부호 있는 정수 값으로 반환 합니다.
 
-`__emulu`2 32 비트 부호 없는 정수 값을 사용 하 고 곱셈 결과를 64 비트 부호 없는 정수 값으로 반환 합니다.
+`__emulu` 2 32 비트 부호 없는 정수 값을 사용 하 고 곱셈 결과를 64 비트 부호 없는 정수 값으로 반환 합니다.
 
 ## <a name="example"></a>예제
 
@@ -104,6 +105,6 @@ int main()
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

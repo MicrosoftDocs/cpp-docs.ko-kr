@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: __incgsbyte, __incgsword, __incgsdword, __incgsqword'
 title: __incgsbyte, __incgsword, __incgsdword, __incgsqword
 ms.date: 09/02/2019
 f1_keywords:
@@ -16,18 +17,18 @@ helpviewer_keywords:
 - __incgsqword intrinsic
 - __incgsdword intrinsic
 ms.assetid: 06bfdf4f-7643-4fe0-8455-60ce3068073e
-ms.openlocfilehash: 8b4e88b4ccd2cf1d2a3130e3a535de1c9a434320
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: a19c266c936875765c5681a47845be1a53f18c83
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217800"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336938"
 ---
 # <a name="__incgsbyte-__incgsword-__incgsdword-__incgsqword"></a>__incgsbyte, __incgsword, __incgsdword, __incgsqword
 
 **Microsoft 전용**
 
-`GS` 세그먼트의 시작을 기준으로 하는 오프셋으로 지정 된 메모리 위치에 있는 값에 하나를 추가 합니다.
+세그먼트의 시작을 기준으로 하는 오프셋으로 지정 된 메모리 위치에 있는 값에 하나를 추가 `GS` 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -49,18 +50,18 @@ void __incgsqword(
 ### <a name="parameters"></a>매개 변수
 
 *이동*\
-진행 의 `GS`시작 부분부터의 오프셋입니다.
+진행 의 시작 부분부터의 오프셋 `GS` 입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`__incgsbyte`|X64|
 |`__incgsword`|X64|
 |`__incgsdword`|X64|
 |`__incgsqword`|X64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 ## <a name="remarks"></a>설명
 
@@ -68,9 +69,9 @@ void __incgsqword(
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[\__addgsbyte, \_ \__addgsbyte, _addgsdword, \__addgsqword](../intrinsics/addgsbyte-addgsword-addgsdword-addgsqword.md)\
-[\__readgsbyte, \_ \__readgsdword, _readgsqword, \__readgsbyte](../intrinsics/readgsbyte-readgsdword-readgsqword-readgsword.md)\
-[\_\_ _writ,_ricccarinmfword\_,_writ \_](../intrinsics/writegsbyte-writegsdword-writegsqword-writegsword.md)\
+[\__addgsbyte, \_ _addgsword, \_ _addgsdword, \_ _addgsqword](../intrinsics/addgsbyte-addgsword-addgsdword-addgsqword.md)\
+[\__readgsbyte, \_ _readgsdword, \_ _readgsqword, \_ _readgsword](../intrinsics/readgsbyte-readgsdword-readgsqword-readgsword.md)\
+[\__writegsbyte, \_ _writegsdword, \_ _writegsqword, \_ _writegsword](../intrinsics/writegsbyte-writegsdword-writegsqword-writegsword.md)\
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

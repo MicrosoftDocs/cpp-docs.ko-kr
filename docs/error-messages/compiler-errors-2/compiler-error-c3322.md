@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3322'
 title: 컴파일러 오류 C3322
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3322
 ms.assetid: d8a0ad95-30df-4337-b0c8-4747de0bef50
-ms.openlocfilehash: bc60831ff98c9538378aa226782d63dda70f55c2
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ad55377def2cd8bc9f1379d0177e171e1af1cc2b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80201294"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337361"
 ---
 # <a name="compiler-error-c3322"></a>컴파일러 오류 C3322
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _bittest, _bittest64'
 title: _bittest, _bittest64
 ms.date: 09/02/2019
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - _bittest64 intrinsic
 - bt instruction
 ms.assetid: 15e62afb-abea-4ee7-a6b1-13efa2034937
-ms.openlocfilehash: 37d96cc008d0da018355a2eca63c6c592ab50f12
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 50c0f1637fefab9bd39fcbca2cd18571c7769bd8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70216898"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337203"
 ---
 # <a name="_bittest-_bittest64"></a>_bittest, _bittest64
 
@@ -51,7 +52,7 @@ unsigned char _bittest64(
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|헤더|
+|Intrinsic|Architecture|헤더|
 |---------------|------------------|------------|
 |`_bittest`|x86, ARM, x64, ARM64|\<intrin.h>|
 |`_bittest64`|ARM64, x64|\<intrin.h>|
@@ -102,6 +103,6 @@ Binary representation:
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

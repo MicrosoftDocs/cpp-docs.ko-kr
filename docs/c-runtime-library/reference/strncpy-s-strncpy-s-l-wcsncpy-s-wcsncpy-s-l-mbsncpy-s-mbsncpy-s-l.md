@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l'
 title: strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l
 ms.date: 4/2/2020
 api_name:
@@ -54,12 +55,12 @@ helpviewer_keywords:
 - _tcsncpy_s function
 - wcsncpy_s_l function
 ms.assetid: a971c800-94d1-4d88-92f3-a2fe236a4546
-ms.openlocfilehash: 08921ff44d2d69ab77eb210b2123016ea61c4f67
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: eb4ea7c5f7b288640fe0797d9f6c5428fe28e0af
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008281"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336484"
 ---
 # <a name="strncpy_s-_strncpy_s_l-wcsncpy_s-_wcsncpy_s_l-_mbsncpy_s-_mbsncpy_s_l"></a>strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l
 
@@ -183,11 +184,11 @@ errno_t _mbsncpy_s_l(
 
 ## <a name="remarks"></a>설명
 
-이러한 함수는 *strsource* 의 첫 *D* 문자를 *strsource*로 복사 하려고 합니다. *여기서 D* 는 count와 *strsource*의 길이 중 더 작은 *수* 입니다. 이러한 *D* 문자를 *strdest* 에 맞추고 (크기가 *numberofelements*로 지정 된 경우) null 종결자를 위한 공간을 남겨 두려면 해당 문자가 복사 되 고 종료 null이 추가 됩니다. 그렇지 않으면 *Strdest*[0]이 null 문자로 설정 되 고 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다.
+이러한 함수는 *strsource* 의 첫 *D* 문자를 *strsource* 로 복사 하려고 합니다. *여기서 D* 는 count와 *strsource* 의 길이 중 더 작은 *수* 입니다. 이러한 *D* 문자를 *strdest* 에 맞추고 (크기가 *numberofelements* 로 지정 된 경우) null 종결자를 위한 공간을 남겨 두려면 해당 문자가 복사 되 고 종료 null이 추가 됩니다. 그렇지 않으면 *Strdest*[0]이 null 문자로 설정 되 고 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다.
 
-위 단락의 설명에는 예외가 적용됩니다. *Count* 가 **_TRUNCATE**이면 *strsource* 에 맞는 만큼의 *strsource* 는 항상 추가 되는 종료 null에 대 한 공간을 유지 하면서 복사 됩니다.
+위 단락의 설명에는 예외가 적용됩니다. *Count* 가 **_TRUNCATE** 이면 *strsource* 에 맞는 만큼의 *strsource* 는 항상 추가 되는 종료 null에 대 한 공간을 유지 하면서 복사 됩니다.
 
-예를 들면
+예를 들면 다음과 같습니다.
 
 ```C
 char dst[5];
@@ -203,13 +204,13 @@ strncpy_s(dst, 5, "a long string", _TRUNCATE);
 strncpy_s(dst, 5, "a long string", 4);
 ```
 
-**Strncpy**와 달리 *Count* 가 *strsource*의 길이 보다 큰 경우 대상 문자열은 null 문자를 포함 하 *여 최대 길이*까지 채워지지 않습니다.
+**Strncpy** 와 달리 *Count* 가 *strsource* 의 길이 보다 큰 경우 대상 문자열은 null 문자를 포함 하 *여 최대 길이* 까지 채워지지 않습니다.
 
 원본 및 대상 문자열이 겹치면 **strncpy_s** 의 동작이 정의 되지 않습니다.
 
-*Strdest* 또는 *Strdest* 가 **NULL**이거나 *numberofelements* 가 0 이면 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **EINVAL** 를 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
+*Strdest* 또는 *Strdest* 가 **NULL** 이거나 *numberofelements* 가 0 이면 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **EINVAL** 를 반환 하 고 **errno** 를 **EINVAL** 로 설정 합니다.
 
-**wcsncpy_s** 및 **_mbsncpy_s** 는 **strncpy_s**의 와이드 문자 및 멀티 바이트 문자 버전입니다. **Wcsncpy_s** 및 **mbsncpy_s** 의 인수 및 반환 값은 그에 따라 다릅니다. 그 외의 경우에는 이들 6개 함수가 동일하게 작동합니다.
+**wcsncpy_s** 및 **_mbsncpy_s** 는 **strncpy_s** 의 와이드 문자 및 멀티 바이트 문자 버전입니다. **Wcsncpy_s** 및 **mbsncpy_s** 의 인수 및 반환 값은 그에 따라 다릅니다. 그 외의 경우에는 이들 6개 함수가 동일하게 작동합니다.
 
 출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_l** 접미사가 없는 이러한 함수 버전은 이 로캘 종속 동작에 현재 로캘을 사용하며, **_l** 접미사가 있는 버전은 전달된 로캘 매개 변수를 대신 사용하는 경우를 제외하고는 동일합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
@@ -410,7 +411,7 @@ After strncpy_s (with null-termination):
    'mice'
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [문자열 조작](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [로캘](../../c-runtime-library/locale.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: '에 대 한 자세한 정보: atoi, _atoi_l, _wtoi, _wtoi_l'
 title: atoi, _atoi_l, _wtoi, _wtoi_l
 ms.date: 4/2/2020
 api_name:
@@ -49,12 +50,12 @@ helpviewer_keywords:
 - atoi function
 - wtoi function
 ms.assetid: ad7fda30-28ab-421f-aaad-ef0b8868663a
-ms.openlocfilehash: 49e8569ceec005680f97faa9bc64783a097db36a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5b74924434dcea2c1d8801bfe23c45f15980c445
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232575"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336538"
 ---
 # <a name="atoi-_atoi_l-_wtoi-_wtoi_l"></a>atoi, _atoi_l, _wtoi, _wtoi_l
 
@@ -87,11 +88,11 @@ int _wtoi_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-각 함수는 **`int`** 입력 문자를 숫자로 해석 하 여 생성 된 값을 반환 합니다. 입력을 해당 형식의 값으로 변환할 수 없는 경우 반환 값은 **atoi** 및 **_wtoi**에 대해 0입니다.
+각 함수는 **`int`** 입력 문자를 숫자로 해석 하 여 생성 된 값을 반환 합니다. 입력을 해당 형식의 값으로 변환할 수 없는 경우 반환 값은 **atoi** 및 **_wtoi** 에 대해 0입니다.
 
-긴 음의 정수 값을 사용 하는 오버플로의 경우 **LONG_MIN** 반환 됩니다. **atoi** and **_wtoi** 는 이러한 조건에 대해 **INT_MAX** 및 **INT_MIN** 를 반환 합니다. 범위를 벗어난 모든 경우에는 **errno** 가 **ERANGE**로 설정 됩니다. 전달 된 매개 변수가 **NULL**인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **errno** 를 **EINVAL** 로 설정 하 고 0을 반환 합니다.
+긴 음의 정수 값을 사용 하는 오버플로의 경우 **LONG_MIN** 반환 됩니다. **atoi** and **_wtoi** 는 이러한 조건에 대해 **INT_MAX** 및 **INT_MIN** 를 반환 합니다. 범위를 벗어난 모든 경우에는 **errno** 가 **ERANGE** 로 설정 됩니다. 전달 된 매개 변수가 **NULL** 인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **errno** 를 **EINVAL** 로 설정 하 고 0을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __indword'
 title: __indword
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - in instruction
 - __indword intrinsic
 ms.assetid: 1068d686-586e-4e36-b962-d1d7c3315260
-ms.openlocfilehash: 790b65c8a565124df92b82b7ea17174788086a96
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: bd637027ee930b551f08508874554e2b19f22461
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222110"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336926"
 ---
 # <a name="__indword"></a>__indword
 
 **Microsoft 전용**
 
-`in` 명령을 사용 하 여 지정 된 포트에서 한 개의 double 단어로 데이터를 읽습니다.
+명령을 사용 하 여 지정 된 포트에서 한 개의 double 단어로 데이터를 읽습니다 `in` .
 
 ## <a name="syntax"></a>구문
 
@@ -40,11 +41,11 @@ unsigned long __indword(
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`__indword`|x86, x64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 ## <a name="remarks"></a>설명
 
@@ -52,6 +53,6 @@ unsigned long __indword(
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

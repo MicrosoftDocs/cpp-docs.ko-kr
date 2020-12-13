@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: &lt; 임의&gt;'
 title: '&lt;random&gt;'
 ms.date: 08/24/2017
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - random header
 ms.assetid: 60afc25c-b162-4811-97c1-1b65398d4c57
-ms.openlocfilehash: e66ffbfba7a7cc4a7dfebbc2dcc074842de3c1ac
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 4080e305620dbe4b8fa1674762c27ece4eccd0a1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831440"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337963"
 ---
 # <a name="ltrandomgt"></a>&lt;random&gt;
 
@@ -28,11 +29,11 @@ ms.locfileid: "88831440"
 
 ## <a name="summary"></a>요약
 
-*난수 생성기*는 의사 난수 값의 시퀀스를 생성하는 개체입니다. 지정된 범위에 균등하게 분포하는 값을 생성하는 생성기를 URNG(*균등 난수 생성기*)라고 합니다. 이 문서의 뒷부분에서 설명 하는 특정 공통 특성이 있는 경우 URNG로 작동 하도록 디자인 된 클래스 템플릿을 *엔진* 이라고 합니다. URNG는 일반적으로 URNG를 *분포*의 `operator()`에 인수로 전달함으로써 분포와 결합하여 분포에 정의된 방식으로 분포된 값을 생성합니다.
+*난수 생성기* 는 의사 난수 값의 시퀀스를 생성하는 개체입니다. 지정된 범위에 균등하게 분포하는 값을 생성하는 생성기를 URNG(*균등 난수 생성기*)라고 합니다. 이 문서의 뒷부분에서 설명 하는 특정 공통 특성이 있는 경우 URNG로 작동 하도록 디자인 된 클래스 템플릿을 *엔진* 이라고 합니다. URNG는 일반적으로 URNG를 *분포* 의 `operator()`에 인수로 전달함으로써 분포와 결합하여 분포에 정의된 방식으로 분포된 값을 생성합니다.
 
 다음 링크는 이 문서의 주요 섹션으로 이동합니다.
 
-- [예](#code)
+- [예제](#code)
 
 - [범주화 된 목록](#listing)
 
@@ -357,7 +358,7 @@ URNG는 일반적으로 다음과 같은 속성 측면에서 설명합니다.
 |-|-|
 |[cauchy_distribution 클래스](../standard-library/cauchy-distribution-class.md)|실수(부동 소수점) 값의 코시 분포를 생성합니다.|
 |[chi_squared_distribution 클래스](../standard-library/chi-squared-distribution-class.md)|실수(부동 소수점) 값의 카이 제곱 분포를 생성합니다.|
-|[fisher_f_distribution 클래스](../standard-library/fisher-f-distribution-class.md)|실수 (부동 소수점) 값의 F 분포 (Fisher-snedecor 분포 라고도의 F 분포 또는 피셔-Fisher-snedecor 분포 라고도 분포 라고도 함)를 생성 합니다.|
+|[fisher_f_distribution 클래스](../standard-library/fisher-f-distribution-class.md)|실수 (부동 소수점) 값의 F 분포 (Fisher-snedecor 분포 라고도의 F 분포 또는 Fisher-Snedecor 분포 라고도 함)를 생성 합니다.|
 |[lognormal_distribution 클래스](../standard-library/lognormal-distribution-class.md)|실수(부동 소수점) 값의 대수 정규 분포를 생성합니다.|
 |[normal_distribution 클래스](../standard-library/normal-distribution-class.md)|실수(부동 소수점) 값의 정규(가우스) 분포를 생성합니다.|
 |[student_t_distribution 클래스](../standard-library/student-t-distribution-class.md)|실수값(부동 소수점)의 Student *t* 분포를 생성합니다.|
@@ -419,7 +420,7 @@ URNG는 일반적으로 다음과 같은 속성 측면에서 설명합니다.
 
 [템플릿 엔진](#eng) 및 [엔진 어댑터 템플릿](#engadapt)은 해당 매개 변수가 작성된 발생기를 사용자 지정하는 템플릿입니다.
 
-*엔진* 은 인스턴스 (생성기)가 최소값과 최대값 사이에서 균등 하 게 분포 된 난수 소스로 작동 하는 클래스 또는 클래스 템플릿입니다. *엔진 어댑터*는 몇 가지 다른 난수 엔진에서 생성한 값을 가져와 이러한 값에 몇 가지 종류의 알고리즘을 적용하여 여러 임의성 속성을 갖는 값의 시퀀스를 제공합니다.
+*엔진* 은 인스턴스 (생성기)가 최소값과 최대값 사이에서 균등 하 게 분포 된 난수 소스로 작동 하는 클래스 또는 클래스 템플릿입니다. *엔진 어댑터* 는 몇 가지 다른 난수 엔진에서 생성한 값을 가져와 이러한 값에 몇 가지 종류의 알고리즘을 적용하여 여러 임의성 속성을 갖는 값의 시퀀스를 제공합니다.
 
 모든 엔진 및 엔진 어댑터에는 다음 멤버가 있습니다.
 
@@ -441,7 +442,7 @@ URNG는 일반적으로 다음과 같은 속성 측면에서 설명합니다.
 
 - `void discard(unsigned long long count)` 시간을 효과적으로 호출 `operator()` `count` 하 고 각 값을 삭제 합니다.
 
-**엔진 어댑터**는 다음 구성원를 추가적으로 지원합니다. `Engine`은 엔진 어댑터의 첫 번째 템플릿 매개 변수로, 기본 엔진의 형식을 지정합니다.
+**엔진 어댑터** 는 다음 구성원를 추가적으로 지원합니다. `Engine`은 엔진 어댑터의 첫 번째 템플릿 매개 변수로, 기본 엔진의 형식을 지정합니다.
 
 - 기본 엔진의 기본 생성자에서 생성기를 초기화하는 기본 생성자입니다.
 
@@ -453,7 +454,7 @@ URNG는 일반적으로 다음과 같은 속성 측면에서 설명합니다.
 
 - 생성기를 생성하는 데 사용된 기본 엔진을 반환하는 `const Engine& base()` 속성 함수입니다.
 
-모든 엔진은 `operator()`에 대한 후속 호출로 생성되는 값의 시퀀스를 결정하는 *상태*를 유지 관리합니다. 동일한 형식의 엔진에서 인스턴스화된 두 생성기의 상태는 `operator==` 및 `operator!=`를 사용하여 비교할 수 있습니다. 비교한 결과 두 상태가 동일하면 두 생성기는 동일한 값의 시퀀스를 생성합니다. 개체의 상태는 생성기의 `operator<<`를 사용하여 32비트 부호 없는 값의 시퀀스로 스트림에 저장할 수 있습니다. 상태를 저장하더라도 상태는 변경되지 않습니다. 저장된 상태는 `operator>>`를 사용하여 동일한 형식의 엔진에서 인스턴스화된 생성기로 읽을 수 있습니다.
+모든 엔진은 `operator()`에 대한 후속 호출로 생성되는 값의 시퀀스를 결정하는 *상태* 를 유지 관리합니다. 동일한 형식의 엔진에서 인스턴스화된 두 생성기의 상태는 `operator==` 및 `operator!=`를 사용하여 비교할 수 있습니다. 비교한 결과 두 상태가 동일하면 두 생성기는 동일한 값의 시퀀스를 생성합니다. 개체의 상태는 생성기의 `operator<<`를 사용하여 32비트 부호 없는 값의 시퀀스로 스트림에 저장할 수 있습니다. 상태를 저장하더라도 상태는 변경되지 않습니다. 저장된 상태는 `operator>>`를 사용하여 동일한 형식의 엔진에서 인스턴스화된 생성기로 읽을 수 있습니다.
 
 ### <a name="distributions"></a>배포
 
@@ -461,7 +462,7 @@ URNG는 일반적으로 다음과 같은 속성 측면에서 설명합니다.
 
 - **`typedef`** 는 `numeric-type` `result_type` 분포의에서 반환 하는 형식입니다 `operator()` . `numeric-type`은 인스턴스화할 때 템플릿 매개 변수로 전달됩니다.
 
-- `template <class URNG> result_type operator()(URNG& gen)`는 `gen`을 균등하게 분포된 난수 값의 소스와 저장된 *분포 매개 변수*로 사용하여 분포 정의에 따라 분포된 값을 반환합니다.
+- `template <class URNG> result_type operator()(URNG& gen)`는 `gen`을 균등하게 분포된 난수 값의 소스와 저장된 *분포 매개 변수* 로 사용하여 분포 정의에 따라 분포된 값을 반환합니다.
 
 - `template <class URNG> result_type operator()(URNG& gen, param_type p)`는 `gen`을 균등하게 분포된 난수 값의 소스와 매개 변수 구조 `p`로 사용하여 분포 정의에 따라 분포된 값을 반환합니다.
 

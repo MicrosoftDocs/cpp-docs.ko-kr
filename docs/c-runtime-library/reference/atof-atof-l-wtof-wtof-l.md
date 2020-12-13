@@ -1,4 +1,5 @@
 ---
+description: Atof, _atof_l, _wtof, _wtof_l에 대해 자세히 알아보세요.
 title: atof, _atof_l, _wtof, _wtof_l
 ms.date: 4/2/2020
 api_name:
@@ -54,12 +55,12 @@ helpviewer_keywords:
 - _wtof function
 - string conversion, to floating point values
 ms.assetid: eb513241-c9a9-4f5c-b7e7-a49b14abfb75
-ms.openlocfilehash: 8eee8db691b3b652768980237fc90bd675bac89b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b583b4d443264d82fa83124f4dacd597fe8829b6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232588"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337781"
 ---
 # <a name="atof-_atof_l-_wtof-_wtof_l"></a>atof, _atof_l, _wtof, _wtof_l
 
@@ -92,11 +93,11 @@ double _wtof_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 각 함수는 **`double`** 입력 문자를 숫자로 해석 하 여 생성 된 값을 반환 합니다. 입력이 이 형식의 값으로 변환될 수 없는 경우 반환 값은 0.0입니다.
 
-범위를 벗어난 모든 경우에는 **errno** 가 **ERANGE**로 설정 됩니다. 전달 된 매개 변수가 **NULL**인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **errno** 를 **EINVAL** 로 설정 하 고 0을 반환 합니다.
+범위를 벗어난 모든 경우에는 **errno** 가 **ERANGE** 로 설정 됩니다. 전달 된 매개 변수가 **NULL** 인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **errno** 를 **EINVAL** 로 설정 하 고 0을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
@@ -108,7 +109,7 @@ double _wtof_l(
 
 [*공백*] [*sign*] [*숫자*] [__.__ *숫자*] [{**e** &#124; **e** } [*sign*]*숫자*]
 
-공백은 무시 되는 공백 또는 탭 *문자로 구성 됩니다* . *sign* 은 더하기 (+) 또는 빼기 (-) 중 하나입니다. 및 *숫자* 는 하나 이상의 10 진수입니다. 소수점 앞에 숫자가 없는 경우 소수점 뒤에는 하나 이상 있어야 합니다. 10 진수 뒤에는 기본 문자 (**e**또는 **e**)와 선택적으로 부호 있는 10 진수 정수로 구성 된 지수가 올 수 있습니다.
+공백은 무시 되는 공백 또는 탭 *문자로 구성 됩니다* . *sign* 은 더하기 (+) 또는 빼기 (-) 중 하나입니다. 및 *숫자* 는 하나 이상의 10 진수입니다. 소수점 앞에 숫자가 없는 경우 소수점 뒤에는 하나 이상 있어야 합니다. 10 진수 뒤에는 기본 문자 (**e** 또는 **e**)와 선택적으로 부호 있는 10 진수 정수로 구성 된 지수가 올 수 있습니다.
 
 이러한 함수의 버전 간 RT 버전은 포트란 스타일 (**d** 또는 **d**) 지 수 문자의 변환을 지원 하지 않습니다. 이러한 비표준 확장은 CRT의 이전 버전에서 지원되었으므로 코드에 대한 중요한 변경 사항일 수 있습니다.
 
@@ -127,8 +128,8 @@ double _wtof_l(
 
 |루틴|필수 헤더|
 |------------------|---------------------|
-|**atof**, **_atof_l**|C: \<math.h> 또는 \<stdlib.h> c + +: \<cstdlib> , \<stdlib.h> \<cmath> 또는\<math.h>|
-|**_wtof**, **_wtof_l**|C: \<stdlib.h> 또는 \<wchar.h> c + +: \<cstdlib> , \<stdlib.h> 또는\<wchar.h>|
+|**atof**, **_atof_l**|C: \<math.h> 또는 \<stdlib.h> c + +: \<cstdlib> , \<stdlib.h> \<cmath> 또는 \<math.h>|
+|**_wtof**, **_wtof_l**|C: \<stdlib.h> 또는 \<wchar.h> c + +: \<cstdlib> , \<stdlib.h> 또는 \<wchar.h>|
 
 ## <a name="example"></a>예제
 

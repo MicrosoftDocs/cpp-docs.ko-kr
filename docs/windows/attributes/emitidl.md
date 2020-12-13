@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: emitidl'
 title: emitidl (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - emitidl attribute
 ms.assetid: 85b80c56-578e-4392-ac03-8443c74ebb7d
-ms.openlocfilehash: 32362f287320e69d1680cbe07ca050143b507514
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 21c4f7fc067eb37b8816bdedd1f338908950566e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846331"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337801"
 ---
 # <a name="emitidl"></a>emitidl
 
@@ -25,10 +26,10 @@ ms.locfileid: "88846331"
 
 ### <a name="parameters"></a>매개 변수
 
-*상태*<br/>
+*state*<br/>
 이러한 가능한 값 중 하나는 **`true`** , **`false`** , `forced` , `restricted` , `push` 또는 `pop` 입니다.
 
-- 인 경우 **`true`** 소스 코드 파일에서 발생 하는 모든 idl 범주 특성이 생성 된 .idl 파일에 배치 됩니다. **Emitidl**에 대 한 기본 설정입니다.
+- 인 경우 **`true`** 소스 코드 파일에서 발생 하는 모든 idl 범주 특성이 생성 된 .idl 파일에 배치 됩니다. **Emitidl** 에 대 한 기본 설정입니다.
 
 - 인 경우 **`false`** 소스 코드 파일에서 발생 하는 모든 idl 범주 특성은 생성 된 .idl 파일에 배치 되지 않습니다.
 

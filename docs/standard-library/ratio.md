@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: &lt; 비율&gt;'
 title: '&lt;ratio&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -31,18 +32,18 @@ f1_keywords:
 - ratio/std::deci
 - ratio/std::deca
 ms.assetid: 8543e912-2d84-45ea-b3c0-bd7bfacee405
-ms.openlocfilehash: 5f6919c84c3fb125e149ba6bcd69b6b7f996d17f
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 8fab74cde47e4078781b665044bc2becd0a9dac3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72687057"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337944"
 ---
 # <a name="ltratiogt"></a>&lt;ratio&gt;
 
-표준 헤더 \<ratio>를 포함하여 컴파일 시간에 유리수를 저장하고 조작하는 데 사용되는 상수와 템플릿을 정의합니다.
+\<ratio>컴파일 시간에 유리수를 저장 하 고 조작 하는 데 사용 되는 상수와 템플릿을 정의 하려면 표준 헤더를 포함 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 #include <ratio>
@@ -60,17 +61,17 @@ struct ratio // holds the ratio of Numerator to Denominator
 }
 ```
 
-템플릿 `ratio`는 정적 상수 `num` 정의 하 고 `den` `num`  /  `den` = = 분자/분모와 `num` 및 `den`에는 공통적인 요소가 없습니다. `num`  /  `den`는 클래스 템플릿으로 표시 되는 값입니다. 따라서 `type`는 인스턴스화 `ratio<num, den>`를 지정 합니다.
+이 템플릿에서는 `ratio` `num` `den` `num`  /  `den` = = 분자/분모 및에 `num` 공통 된 `den` 요소가 없는 정적 상수를 정의 합니다. `num` / `den` 는 클래스 템플릿으로 표시 되는 값입니다. 따라서 `type` 는 인스턴스화를 지정 `ratio<num, den>` 합니다.
 
 ### <a name="specializations"></a>특수화
 
-\<ratio>는 다음 형식으로 된 `ratio` 특수화도 정의합니다.
+\<ratio> 는 다음과 같은 형식의 특수화도 정의 `ratio` 합니다.
 
 `template <class R1, class R2> struct ratio_specialization`
 
 각 특수화에서는 템플릿 매개 변수 두 개를 사용하는데, 이 두 매개 변수 역시 `ratio`의 특수화여야 합니다. `type`의 값은 관련 논리 연산을 통해 결정됩니다.
 
-|name|`type` 값|
+|Name|`type` 값|
 |----------|------------------|
 |`ratio_add`|`R1 + R2`|
 |`ratio_divide`|`R1 / R2`|
@@ -106,6 +107,6 @@ typedef ratio<1000000000000000, 1> peta;
 typedef ratio<1000000000000000000, 1> exa;
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)

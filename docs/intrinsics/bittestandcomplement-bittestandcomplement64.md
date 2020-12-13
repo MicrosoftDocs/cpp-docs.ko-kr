@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _bittestandcomplement, _bittestandcomplement64'
 title: _bittestandcomplement, _bittestandcomplement64
 ms.date: 09/02/2019
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - _bittestandcomplement intrinsic
 - _bittestandcomplement64 intrinsic
 ms.assetid: 53fa12dd-835e-4e5d-baec-a431c8678806
-ms.openlocfilehash: b1dcfe86aad18c8261029c9111681e1882bc96f5
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 8a701b2a38dcfa2e6efe3044b63a78533a7a6efa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222211"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337188"
 ---
 # <a name="_bittestandcomplement-_bittestandcomplement64"></a>_bittestandcomplement, _bittestandcomplement64
 
@@ -51,12 +52,12 @@ unsigned char _bittestandcomplement64(
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`_bittestandcomplement`|x86, ARM, x64, ARM64|
 |`_bittestandcomplement64`|x64, ARM64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 ## <a name="remarks"></a>설명
 
@@ -102,6 +103,6 @@ Value changed to 0, Result: 1
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

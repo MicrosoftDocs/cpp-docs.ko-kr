@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2855'
 title: 컴파일러 오류 C2855
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2855
 ms.assetid: bfcd2619-f1e4-4016-95ee-5bdabe26fbad
-ms.openlocfilehash: a385c5df8614a52826c8a167f159dad278865f5a
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 45d39ce2d388dbda0d37a9c0d68243d931a0defd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80201906"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337541"
 ---
 # <a name="compiler-error-c2855"></a>컴파일러 오류 C2855
 

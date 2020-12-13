@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __inbytestring'
 title: __inbytestring
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - rep insb instruction
 - __inbytestring intrinsic
 ms.assetid: fe549556-e7a3-4af3-8ebf-8a7dc3cb233b
-ms.openlocfilehash: cb6e811c809c6069c47415e87804641f30a3897b
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: cf529fe0049a9bdd22341fcf492b40e2e92cec48
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217805"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336959"
 ---
 # <a name="__inbytestring"></a>__inbytestring
 
 **Microsoft 전용**
 
-`rep insb` 명령을 사용 하 여 지정 된 포트에서 데이터를 읽습니다.
+명령을 사용 하 여 지정 된 포트에서 데이터를 읽습니다 `rep insb` .
 
 ## <a name="syntax"></a>구문
 
@@ -44,11 +45,11 @@ void __inbytestring(
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`__inbytestring`|x86, x64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 ## <a name="remarks"></a>설명
 
@@ -56,6 +57,6 @@ void __inbytestring(
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

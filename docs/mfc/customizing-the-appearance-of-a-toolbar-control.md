@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: Toolbar 컨트롤의 모양 사용자 지정'
 title: 도구 모음 컨트롤의 모양 사용자 지정
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - CToolBarCtrl class [MFC], object styles
 - toolbar controls [MFC], style
 ms.assetid: fd0a73db-7ad1-4fe4-889b-02c3980f49e8
-ms.openlocfilehash: ddccb5f05152d95377b430d7492ede3c86926e37
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 715062484f5856da92e0668740bb6f8ac8f9d363
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619291"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336832"
 ---
 # <a name="customizing-the-appearance-of-a-toolbar-control"></a>도구 모음 컨트롤의 모양 사용자 지정
 
