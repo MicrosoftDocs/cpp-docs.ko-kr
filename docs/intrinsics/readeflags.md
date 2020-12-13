@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __readeflags'
 title: __readeflags
 ms.date: 09/02/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - __readeflags intrinsic
 ms.assetid: f9d2f4d8-c428-491f-b8de-04d0566b2b6b
-ms.openlocfilehash: 6afdc0f20a3ae72865a80ba2eb7f896f79f63171
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: e74864f522ba411f44b4a264e9c0e1fd16aa84ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74857907"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340998"
 ---
 # <a name="__readeflags"></a>__readeflags
 
@@ -30,17 +31,17 @@ unsigned __int64 __readeflags(void); /* x64 */
 
 EFLAGS 레지스터의 값입니다. 반환 값은 32 비트 플랫폼의 32 비트 길이 이며 64 비트 플랫폼에서는 64 비트가 깁니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 이러한 루틴은 내장 함수 에서만 사용할 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`__readeflags`|x86, x64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 **Microsoft 전용 종료**
 

@@ -1,5 +1,6 @@
 ---
-title: CMFC쉘트리트럴 클래스
+description: '자세히 알아보기: CMFCShellTreeCtrl 클래스'
+title: CMFCShellTreeCtrl 클래스
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCShellTreeCtrl
@@ -28,18 +29,18 @@ helpviewer_keywords:
 - CMFCShellTreeCtrl [MFC], SetFlags
 - CMFCShellTreeCtrl [MFC], SetRelatedList
 ms.assetid: 3d1da715-9554-4ed7-968c-055c48146267
-ms.openlocfilehash: c6f5856e92c2aca1d23ee6a37b99ea9700ea6db0
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 86b18d1cb919eaa36c3aed0d6e1623bab530a0aa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81753438"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339672"
 ---
-# <a name="cmfcshelltreectrl-class"></a>CMFC쉘트리트럴 클래스
+# <a name="cmfcshelltreectrl-class"></a>CMFCShellTreeCtrl 클래스
 
-클래스는 `CMFCShellTreeCtrl` 셸 항목의 계층 구조를 표시 하여 [CTreeCtrl 클래스](../../mfc/reference/ctreectrl-class.md) 기능을 확장 합니다.
+`CMFCShellTreeCtrl`클래스는 셸 항목의 계층을 표시 하 여 [CTreeCtrl 클래스](../../mfc/reference/ctreectrl-class.md) 기능을 확장 합니다.
 
-자세한 내용은 Visual Studio 설치의 **\\VC\\atlmfc\\src mfc** 폴더에 있는 소스 코드를 참조하십시오.
+자세한 내용은 Visual Studio 설치의 **VC \\ s\mfc \\ src \\ mfc** 폴더에 있는 소스 코드를 참조 하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -51,23 +52,23 @@ class CMFCShellTreeCtrl : public CTreeCtrl
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[CMFC쉘트리Ctrl::인에이블쉘컨텍스트메뉴](#enableshellcontextmenu)|바로 가기 메뉴를 사용하거나 사용하지 않도록 설정합니다.|
-|[CMFC쉘트리Ctrl::겟플래그](#getflags)|[IShellFolder::열거](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellfolder-enumobjects)객체에 전달되는 플래그의 조합을 반환합니다.|
-|[CMFC쉘트리Ctrl::겟아이템패스](#getitempath)|항목에 대한 경로를 검색합니다.|
-|[CMFC쉘트리Ctrl::관련 목록](#getrelatedlist)|이 `CMFCShellTreeCtrl` 개체와 함께 사용되는 [CMFCShellListCtrl 클래스 개체에](../../mfc/reference/cmfcshelllistctrl-class.md) 대한 포인터를 반환하여 탐색기와 같은 창을 만듭니다.|
-|[CMFC쉘트리Ctrl::에차일드 알림](#onchildnotify)|이 멤버 함수는 이 창에 적용되는 알림 메시지를 받을 때 이 창의 부모 창에서 호출됩니다. [(CWnd 재정의::OnChildNotify.)](../../mfc/reference/cwnd-class.md#onchildnotify)|
-|[CMFC쉘트리Ctrl::온겟아이템아이콘](#ongetitemicon)||
-|[CMFC쉘트리Ctrl:::온겟항목텍스트](#ongetitemtext)||
-|[CMFC쉘트리Ctrl::새로 고침](#refresh)|현재 `CMFCShellTreeCtrl` 개체를 새로 고치고 다시 그립니다.|
-|[CMFC쉘트리Ctrl::셀렉트 패스](#selectpath)|제공된 PIDL 또는 문자열 경로를 기반으로 적절한 트리 제어 항목을 선택합니다.|
-|[CMFC쉘트리Ctrl::세트 플래그](#setflags)|트리 컨텍스트를 필터링하는 플래그를 설정합니다(사용 되는 플래그와 `IShellFolder::EnumObjects`유사).|
-|[CMFC쉘트리Ctrl:::세트 관련 목록](#setrelatedlist)|현재 `CMFCShellTreeCtrl` 개체와 개체 간의 `CMFCShellListCtrl` 관계를 설정합니다.|
+|[CMFCShellTreeCtrl::EnableShellContextMenu](#enableshellcontextmenu)|바로 가기 메뉴를 사용 하거나 사용 하지 않도록 설정 합니다.|
+|[CMFCShellTreeCtrl:: GetFlags](#getflags)|[IShellFolder:: EnumObjects](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellfolder-enumobjects)에 전달 되는 플래그의 조합을 반환 합니다.|
+|[CMFCShellTreeCtrl::GetItemPath](#getitempath)|항목에 대 한 경로를 검색 합니다.|
+|[CMFCShellTreeCtrl::GetRelatedList](#getrelatedlist)|이 개체와 함께 사용 되어 탐색기와 같은 창을 만드는 [Cmfcshelllistctrl 클래스](../../mfc/reference/cmfcshelllistctrl-class.md) 개체에 대 한 포인터를 반환 합니다 `CMFCShellTreeCtrl` .|
+|[CMFCShellTreeCtrl:: OnChildNotify](#onchildnotify)|이 멤버 함수는이 창에 적용 되는 알림 메시지를 받을 때이 창의 부모 창에서 호출 됩니다. ( [CWnd:: OnChildNotify](../../mfc/reference/cwnd-class.md#onchildnotify)를 재정의 합니다.)|
+|[CMFCShellTreeCtrl:: OnGetItemIcon](#ongetitemicon)||
+|[CMFCShellTreeCtrl:: OnGetItemText](#ongetitemtext)||
+|[CMFCShellTreeCtrl:: Refresh](#refresh)|현재 개체를 새로 고치고 다시 그립니다 `CMFCShellTreeCtrl` .|
+|[CMFCShellTreeCtrl:: SelectPath](#selectpath)|제공 된 PIDL 또는 문자열 경로를 기반으로 적절 한 트리 컨트롤 항목을 선택 합니다.|
+|[CMFCShellTreeCtrl::SetFlags](#setflags)|에서 사용 하는 플래그와 유사 하 게 트리 컨텍스트를 필터링 할 플래그를 설정 `IShellFolder::EnumObjects` 합니다.|
+|[CMFCShellTreeCtrl::SetRelatedList](#setrelatedlist)|현재 개체와 개체 간의 관계를 설정 합니다 `CMFCShellTreeCtrl` `CMFCShellListCtrl` .|
 
 ## <a name="remarks"></a>설명
 
-이 클래스는 `CTreeCtrl` 프로그램에서 트리에 Windows 셸 항목을 포함하도록 설정하여 클래스를 확장합니다. 이 클래스는 `CMFCShellListCtrl` 개체와 연결하여 전체 탐색기 창을 만들 수 있습니다. 그런 다음 트리에서 항목을 선택하면 연결된 목록에 Windows 셸 항목 목록이 표시됩니다.
+이 클래스는 `CTreeCtrl` 프로그램에서 트리에 Windows 셸 항목을 포함 하도록 설정 하 여 클래스를 확장 합니다. 이 클래스는 개체와 연결 `CMFCShellListCtrl` 하 여 전체 탐색기 창을 만들 수 있습니다. 그런 다음 트리에서 항목을 선택 하면 연결 된 목록에 Windows 셸 항목의 목록이 표시 됩니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -83,18 +84,18 @@ class CMFCShellTreeCtrl : public CTreeCtrl
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxshelltreeCtrl.h
+**헤더:** afxshelltreeCtrl
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 `CMFCShellTreeCtrl` 클래스의 개체를 만드는 방법을 보여 줍니다. 이 코드 조각은 [탐색기 샘플의](../../overview/visual-cpp-samples.md)일부입니다.
+다음 예제에서는 `CMFCShellTreeCtrl` 클래스의 개체를 만드는 방법을 보여 줍니다. 이 코드 조각은 [탐색기 샘플](../../overview/visual-cpp-samples.md)의 일부입니다.
 
 [!code-cpp[NVC_MFC_Explorer#4](../../mfc/reference/codesnippet/cpp/cmfcshelltreectrl-class_1.h)]
 [!code-cpp[NVC_MFC_Explorer#5](../../mfc/reference/codesnippet/cpp/cmfcshelltreectrl-class_2.cpp)]
 
-## <a name="cmfcshelltreectrlenableshellcontextmenu"></a><a name="enableshellcontextmenu"></a>CMFC쉘트리Ctrl::인에이블쉘컨텍스트메뉴
+## <a name="cmfcshelltreectrlenableshellcontextmenu"></a><a name="enableshellcontextmenu"></a> CMFCShellTreeCtrl::EnableShellContextMenu
 
-바로 가기 메뉴를 활성화합니다.
+바로 가기 메뉴를 사용 하도록 설정 합니다.
 
 ```cpp
 void EnableShellContextMenu(BOOL bEnable = TRUE);
@@ -103,27 +104,27 @@ void EnableShellContextMenu(BOOL bEnable = TRUE);
 ### <a name="parameters"></a>매개 변수
 
 *bEnable*<br/>
-【인】 바로 가기 메뉴를 사용하도록 설정할지 여부를 지정하는 부울입니다.
+진행 바로 가기 메뉴를 사용할지 여부를 지정 하는 부울입니다.
 
-## <a name="cmfcshelltreectrlgetflags"></a><a name="getflags"></a>CMFC쉘트리Ctrl::겟플래그
+## <a name="cmfcshelltreectrlgetflags"></a><a name="getflags"></a> CMFCShellTreeCtrl:: GetFlags
 
-[CMFCShellTreeCtrl 클래스](../../mfc/reference/cmfcshelltreectrl-class.md) 개체에 대해 설정된 플래그를 반환합니다.
+[CMFCShellTreeCtrl 클래스](../../mfc/reference/cmfcshelltreectrl-class.md) 개체에 대해 설정 된 플래그를 반환 합니다.
 
 ```
 DWORD GetFlags() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-현재 설정된 플래그의 조합을 지정하는 DWORD 값입니다.
+현재 설정 된 플래그의 조합을 지정 하는 DWORD 값입니다.
 
 ### <a name="remarks"></a>설명
 
-에 설정된 `CMFCShellTreeCtrl` 플래그는 개체를 새로 고칠 때마다 [IShellFolder::EnumObjects](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellfolder-enumobjects) 메서드로 전송됩니다. [CMFCShellTreeCtrl:SetFlags](#setflags) 메서드를 사용하여 플래그를 변경할 수 있습니다.
+에 설정 된 플래그는 `CMFCShellTreeCtrl` 개체를 새로 고칠 때마다 [IShellFolder:: enumobjects](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellfolder-enumobjects) 메서드로 전송 됩니다. [CMFCShellTreeCtrl:: SetFlags](#setflags) 메서드를 사용 하 여 플래그를 변경할 수 있습니다.
 
-## <a name="cmfcshelltreectrlgetitempath"></a><a name="getitempath"></a>CMFC쉘트리Ctrl::겟아이템패스
+## <a name="cmfcshelltreectrlgetitempath"></a><a name="getitempath"></a> CMFCShellTreeCtrl::GetItemPath
 
-[CMFCShellTreeCtrl 클래스](../../mfc/reference/cmfcshelltreectrl-class.md) 개체에서 항목의 경로를 검색합니다.
+[CMFCShellTreeCtrl Class](../../mfc/reference/cmfcshelltreectrl-class.md) 개체의 항목 경로를 검색 합니다.
 
 ```
 BOOL GetItemPath(
@@ -133,39 +134,39 @@ BOOL GetItemPath(
 
 ### <a name="parameters"></a>매개 변수
 
-*스트라스 (strpath)*<br/>
-【아웃】 문자열 매개 변수에 대한 참조입니다. 메서드는 이 매개 변수에 항목의 경로를 기록합니다.
+*strPath*<br/>
+제한이 문자열 매개 변수에 대 한 참조입니다. 메서드는 항목의 경로를이 매개 변수에 씁니다.
 
-*htree항목*<br/>
-【인】 메서드는 이 트리 컨트롤 항목에 대 한 경로를 검색합니다.
+*htreeItem*<br/>
+진행 메서드는이 트리 컨트롤 항목의 경로를 검색 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하는 경우 0이 아닌 값입니다. 그렇지 않은 경우 0입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드가 실패하면 *strPath에는* 빈 문자열이 포함됩니다.
+이 메서드가 실패 하면 *Strpath* 에 빈 문자열이 포함 됩니다.
 
-*hTreeItem을*지정하지 않으면 이 메서드는 현재 선택한 항목에 대한 문자열을 가져오려고 시도합니다. 항목을 선택하지 않고 *hTreeItem이* NULL인 경우 이 메서드가 실패합니다.
+*HTreeItem* 를 지정 하지 않으면이 메서드는 현재 선택 된 항목에 대 한 문자열을 가져오려고 시도 합니다. 항목을 선택 하지 않고 *hTreeItem* 가 NULL 이면이 메서드는 실패 합니다.
 
-## <a name="cmfcshelltreectrlgetrelatedlist"></a><a name="getrelatedlist"></a>CMFC쉘트리Ctrl::관련 목록
+## <a name="cmfcshelltreectrlgetrelatedlist"></a><a name="getrelatedlist"></a> CMFCShellTreeCtrl::GetRelatedList
 
-이 [CMFCShellTreeCtrl 개체와 연결된 CMFCShellListCtrl 클래스 개체에](../../mfc/reference/cmfcshelllistctrl-class.md) 대한 [포인터를](../../mfc/reference/cmfcshelltreectrl-class.md) 반환합니다.
+이 [CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md) 개체와 연결 된 [Cmfcshelllistctrl 클래스](../../mfc/reference/cmfcshelllistctrl-class.md) 개체에 대 한 포인터를 반환 합니다.
 
 ```
 CMFCShellListCtrl* GetRelatedList() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-이 트리 `CMFCShellListCtrl` 컨트롤 개체와 연결된 개체에 대한 포인터입니다.
+`CMFCShellListCtrl`이 트리 컨트롤 개체와 연결 된 개체에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
-개체와 `CMFCShellListCtrl` 함께 `CMFCShellTreeCtrl` 개체를 사용 하 여 탐색기 같은 창을 만들 수 있습니다. [CMFCShellTreeCtrl::SetRelatedList](#setrelatedlist) 메서드를 사용하여 두 클래스를 연결합니다. 연관된 후 프레임워크는 변경 중인 `CMFCShellListCtrl` if를 자동으로 `CMFCShellTreeCtrl` 업데이트합니다.
+개체와 개체를 함께 사용 하 여 `CMFCShellListCtrl` `CMFCShellTreeCtrl` 탐색기와 같은 창을 만들 수 있습니다. [CMFCShellTreeCtrl:: SetRelatedList](#setrelatedlist) 메서드를 사용 하 여 두 클래스를 연결 합니다. 연결 된 후 프레임 워크는의 선택 항목이 변경 되 면 자동으로를 업데이트 합니다 `CMFCShellListCtrl` `CMFCShellTreeCtrl` .
 
-## <a name="cmfcshelltreectrlonchildnotify"></a><a name="onchildnotify"></a>CMFC쉘트리Ctrl::에차일드 알림
+## <a name="cmfcshelltreectrlonchildnotify"></a><a name="onchildnotify"></a> CMFCShellTreeCtrl:: OnChildNotify
 
 ```
 virtual BOOL OnChildNotify(
@@ -177,16 +178,16 @@ virtual BOOL OnChildNotify(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *메시지*<br/>
-【인】 *wParam*<br/>
-【인】 *l파라임*<br/>
-【인】 *pL결과*<br/>
+진행 *메시지*<br/>
+진행 *wParam*<br/>
+진행 *lParam*<br/>
+진행 *Plresult*<br/>
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcshelltreectrlongetitemicon"></a><a name="ongetitemicon"></a>CMFC쉘트리Ctrl::온겟아이템아이콘
+## <a name="cmfcshelltreectrlongetitemicon"></a><a name="ongetitemicon"></a> CMFCShellTreeCtrl:: OnGetItemIcon
 
 ```
 virtual int OnGetItemIcon(
@@ -196,14 +197,14 @@ virtual int OnGetItemIcon(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *p항목*<br/>
-【인】 *b 선택됨*<br/>
+진행 *Pitem*<br/>
+진행 *Bselected*<br/>
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcshelltreectrlongetitemtext"></a><a name="ongetitemtext"></a>CMFC쉘트리Ctrl:::온겟항목텍스트
+## <a name="cmfcshelltreectrlongetitemtext"></a><a name="ongetitemtext"></a> CMFCShellTreeCtrl:: OnGetItemText
 
 ```
 virtual CString OnGetItemText(LPAFX_SHELLITEMINFO pItem);
@@ -211,15 +212,15 @@ virtual CString OnGetItemText(LPAFX_SHELLITEMINFO pItem);
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *p항목*<br/>
+진행 *Pitem*<br/>
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cmfcshelltreectrlrefresh"></a><a name="refresh"></a>CMFC쉘트리Ctrl::새로 고침
+## <a name="cmfcshelltreectrlrefresh"></a><a name="refresh"></a> CMFCShellTreeCtrl:: Refresh
 
-[CMFCShellTreeCtrl을](../../mfc/reference/cmfcshelltreectrl-class.md)새로 고치고 다시 칠합니다.
+[CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md)를 새로 고치고 다시 그립니다.
 
 ```cpp
 void Refresh();
@@ -227,11 +228,11 @@ void Refresh();
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 호출하여 에 표시된 항목의 계층 구조를 새로 고칩니다. `CMFCShellTreeCtrl`
+에 표시 된 항목의 계층 구조를 새로 고치려면이 메서드를 호출 `CMFCShellTreeCtrl` 합니다.
 
-## <a name="cmfcshelltreectrlselectpath"></a><a name="selectpath"></a>CMFC쉘트리Ctrl::셀렉트 패스
+## <a name="cmfcshelltreectrlselectpath"></a><a name="selectpath"></a> CMFCShellTreeCtrl:: SelectPath
 
-제공된 경로에 따라 [CMFCShellTreeCtrl 클래스에서](../../mfc/reference/cmfcshelltreectrl-class.md) 항목을 선택합니다.
+제공 된 경로를 기반으로 [CMFCShellTreeCtrl 클래스](../../mfc/reference/cmfcshelltreectrl-class.md) 에서 항목을 선택 합니다.
 
 ```
 BOOL SelectPath(LPCTSTR lpszPath);
@@ -241,18 +242,18 @@ BOOL SelectPath(LPCITEMIDLIST lpidl);
 ### <a name="parameters"></a>매개 변수
 
 *lpszPath*<br/>
-【인】 항목의 경로를 지정하는 문자열입니다.
+진행 항목의 경로를 지정 하는 문자열입니다.
 
 *lpidl*<br/>
-【인】 항목을 지정하는 PIDL
+진행 항목을 지정 하는 PIDL
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-성공하면 S_OK; 그렇지 않으면 E_FAIL.
+성공 하면 S_OK 합니다. 그렇지 않으면 E_FAIL 합니다.
 
-## <a name="cmfcshelltreectrlsetflags"></a><a name="setflags"></a>CMFC쉘트리Ctrl::세트 플래그
+## <a name="cmfcshelltreectrlsetflags"></a><a name="setflags"></a> CMFCShellTreeCtrl::SetFlags
 
-트리 컨텍스트를 필터링하는 플래그를 설정합니다.
+트리 컨텍스트를 필터링 할 플래그를 설정 합니다.
 
 ```cpp
 void SetFlags(
@@ -263,18 +264,18 @@ void SetFlags(
 ### <a name="parameters"></a>매개 변수
 
 *dwFlags*<br/>
-【인】 설정할 플래그입니다.
+진행 설정할 플래그입니다.
 
-*b 새로 고침*<br/>
-【인】 즉시 새로 `CMFCShellTreeCtrl` 고쳐야 하는지 여부를 지정하는 부울입니다.
+*bRefresh*<br/>
+진행 을 즉시 새로 고칠지 여부를 지정 하는 부울입니다 `CMFCShellTreeCtrl`  .
 
 ### <a name="remarks"></a>설명
 
-모든 `CMFCShellTreeCtrl` 설정 플래그를 [IShellFolder::열거형](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellfolder-enumobjects)개체로 전달합니다. 다른 플래그의 값에 대한 자세한 내용은 [IShellFolder::열거형](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellfolder-enumobjects)개체 를 참조하십시오.
+는 `CMFCShellTreeCtrl` 모든 set 플래그를 [IShellFolder:: enumobjects](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellfolder-enumobjects)에 전달 합니다. 다른 플래그의 값에 대 한 자세한 내용은 [IShellFolder:: EnumObjects](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellfolder-enumobjects)를 참조 하세요.
 
-## <a name="cmfcshelltreectrlsetrelatedlist"></a><a name="setrelatedlist"></a>CMFC쉘트리Ctrl:::세트 관련 목록
+## <a name="cmfcshelltreectrlsetrelatedlist"></a><a name="setrelatedlist"></a> CMFCShellTreeCtrl::SetRelatedList
 
-[CMFC쉘리스트Ctrl](../../mfc/reference/cmfcshelllistctrl-class.md) 개체를 [CMFC쉘트리Ctrl](../../mfc/reference/cmfcshelltreectrl-class.md) 개체와 연결합니다.
+[Cmfcshelllistctrl](../../mfc/reference/cmfcshelllistctrl-class.md) 개체를 [CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md) 개체와 연결 합니다.
 
 ```cpp
 void SetRelatedList(CMFCShellListCtrl* pShellList);
@@ -282,18 +283,18 @@ void SetRelatedList(CMFCShellListCtrl* pShellList);
 
 ### <a name="parameters"></a>매개 변수
 
-*p셸리스트*<br/>
-【인】 개체에 대한 `CMFCShellListCtrl` 포인터입니다.
+*pShellList*<br/>
+진행 개체에 대 한 포인터 `CMFCShellListCtrl` 입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 `CMFCShellListCtrl` a를 연결합니다. `CMFCShellTreeCtrl` 이러한 개체는 탐색기와 같은 창으로 `CMFCShellTreeCtrl` `CMFCShellListCtrl` 표시될 수 있습니다.
+이 메서드는를 `CMFCShellListCtrl` 와 연결 `CMFCShellTreeCtrl` 합니다. 이러한 개체는 탐색기와 같은 창으로 표시 될 수 있습니다. 사용자가에서 개체를 선택 하면의 `CMFCShellTreeCtrl` 연결 된 항목이 `CMFCShellListCtrl` 자동으로 업데이트 됩니다.
 
-[CMFCShellTreeCtrl](#getrelatedlist) 메서드를 `CMFCShellTreeCtrl`사용하여:GetRelatedList를 `CMFCShellListCtrl` 사용하여 와 관련된 을 검색합니다.
+[CMFCShellTreeCtrl:: GetRelatedList](#getrelatedlist) 메서드를 사용 하 여와 연결 된를 검색 `CMFCShellListCtrl` `CMFCShellTreeCtrl` 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
 [CTreeCtrl 클래스](../../mfc/reference/ctreectrl-class.md)<br/>
-[CMFC쉘리스트Ctrl 클래스](../../mfc/reference/cmfcshelllistctrl-class.md)
+[CMFCShellListCtrl 클래스](../../mfc/reference/cmfcshelllistctrl-class.md)

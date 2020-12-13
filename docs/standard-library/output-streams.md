@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 출력 스트림'
 title: Output Streams
 ms.date: 11/04/2016
 helpviewer_keywords:
 - output streams
 ms.assetid: b49410e3-5caa-4153-9d0d-c4266408dc83
-ms.openlocfilehash: e650f9fd0bbc7ad483363706e632686e8ec3749e
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: ec09a6bee1bcd2f329522b61950f3d051fb57889
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68450171"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340868"
 ---
 # <a name="output-streams"></a>Output Streams
 
@@ -37,17 +38,17 @@ ms.locfileid: "68450171"
 
 [삽입 연산자 사용 및 형식 제어](../standard-library/using-insertion-operators-and-controlling-format.md)
 
-[출력 파일 스트림 구성원 함수](../standard-library/output-file-stream-member-functions.md)
+[출력 파일 스트림 멤버 함수](../standard-library/output-file-stream-member-functions.md)
 
 [버퍼링 효과](../standard-library/effects-of-buffering.md)
 
 [이진 출력 파일](../standard-library/binary-output-files.md)
 
-[고유 클래스에 대해 << 연산자 오버로드](../standard-library/overloading-the-output-operator-for-your-own-classes.md)
+[클래스에 대 한 << 연산자 오버 로드](../standard-library/overloading-the-output-operator-for-your-own-classes.md)
 
 [인수 없이 고유 조작자 작성](../standard-library/writing-your-own-manipulators-without-arguments.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [ofstream](../standard-library/basic-ofstream-class.md)\
 [ostringstream](../standard-library/basic-ostringstream-class.md)\

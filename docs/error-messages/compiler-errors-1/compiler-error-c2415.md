@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2415'
 title: 컴파일러 오류 C2415
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2415
 ms.assetid: f225c913-2bea-46b1-b096-3d358ac94a15
-ms.openlocfilehash: a0cdd528eca8ea267c62e6d44752d29ae16830c4
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 21bbeabe0a5eacea55d2a38ab515429e6468ba57
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80205623"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340348"
 ---
 # <a name="compiler-error-c2415"></a>컴파일러 오류 C2415
 

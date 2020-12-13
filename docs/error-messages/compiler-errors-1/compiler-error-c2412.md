@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2412'
 title: 컴파일러 오류 C2412
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2412
 ms.assetid: d1842b89-da09-4c35-89a1-84dc844a9f3e
-ms.openlocfilehash: 5ef35ff0692f12d872be0c6f63dee4cf016cfee6
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 832fc541c6036676622700c1a2ab9d04fea946f0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80205714"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340374"
 ---
 # <a name="compiler-error-c2412"></a>컴파일러 오류 C2412
 

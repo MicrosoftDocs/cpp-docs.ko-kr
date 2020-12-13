@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 기본 인수'
 title: 기본 인수
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - arguments [C++], default
 - defaults [C++], arguments
 ms.assetid: d32cf516-05cb-4d4d-b169-92f5649fdfa2
-ms.openlocfilehash: ef0c81501fe37bd27a23daf2dd1c58b3e6a4f6c0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7926070c4fa521dd190a7a9eff626e1c21463d06
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221733"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339490"
 ---
 # <a name="default-arguments"></a>기본 인수
 
@@ -106,7 +107,7 @@ print( d, 0 ); // Override default argument to achieve other
 
 - 이후 선언에서 기본 인수를 더 추가할 수 있습니다.
 
-- 함수에 대한 포인터에 기본 인수를 제공할 수 있습니다. 예:
+- 함수에 대한 포인터에 기본 인수를 제공할 수 있습니다. 예를 들어:
 
     ```cpp
     int (*pShowIntVal)( int i = 0 );

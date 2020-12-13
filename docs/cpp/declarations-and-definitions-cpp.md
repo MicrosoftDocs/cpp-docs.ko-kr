@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: 선언 및 정의 (c + +)'
 title: 선언 및 정의 (c + +)
 ms.date: 12/12/2019
 ms.assetid: 678f1424-e12f-45e0-a957-8169e5fef6cb
-ms.openlocfilehash: 688c1960e37fe74edecabebc4cb8090af9d0dd58
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 00d86e4df70e150a2e9f2417050b47b943a054ed
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228962"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339516"
 ---
 # <a name="declarations-and-definitions-c"></a>선언 및 정의 (c + +)
 
@@ -40,17 +41,17 @@ namespace N {
 }
 ```
 
-줄 5에서는 `main` 함수가 선언 됩니다. 7 줄에서 **`const`** 라는 변수가 `pi` 선언 되 고 *초기화*됩니다. 줄 8에서 정수는 `i` 함수에 의해 생성 된 값으로 선언 되 고 초기화 됩니다 `f` . 이 이름은 `f` 줄 3의 *전방 선언* 으로 인해 컴파일러에 표시 됩니다.
+줄 5에서는 `main` 함수가 선언 됩니다. 7 줄에서 **`const`** 라는 변수가 `pi` 선언 되 고 *초기화* 됩니다. 줄 8에서 정수는 `i` 함수에 의해 생성 된 값으로 선언 되 고 초기화 됩니다 `f` . 이 이름은 `f` 줄 3의 *전방 선언* 으로 인해 컴파일러에 표시 됩니다.
 
 9 번 줄에서 `obj` 형식의 변수가 `C` 선언 됩니다. 그러나이 선언에서는이 `C` 프로그램의 뒷부분에서 선언 되지 않고 앞으로 선언 되지 않기 때문에 오류가 발생 합니다. 오류를 해결 하려면 이전에의 전체 *정의* 를 이동 `C` `main` 하거나 앞으로 선언을 추가 합니다. 이 동작은 소스 파일의 선언 지점 앞에서 함수 및 클래스를 사용할 수 있는 c #과 같은 다른 언어와는 다릅니다.
 
-10 번 줄에서 형식의 변수를 `str` `std::string` 선언 합니다. 이 이름은 `std::string` `string` 줄 1의 소스 파일에 병합 된 [헤더 파일](header-files-cpp.md) 에 도입 되기 때문에 표시 됩니다. `std`는 클래스를 선언 하는 네임 스페이스입니다 `string` .
+10 번 줄에서 형식의 변수를 `str` `std::string` 선언 합니다. 이 이름은 `std::string` `string` 줄 1의 소스 파일에 병합 된 [헤더 파일](header-files-cpp.md) 에 도입 되기 때문에 표시 됩니다. `std` 는 클래스를 선언 하는 네임 스페이스입니다 `string` .
 
 줄 11에서 이름이 선언 되지 않았기 때문에 오류가 발생 `j` 합니다. JavaScript와 같은 다른 언어와 달리 선언은 형식을 제공 해야 합니다. 12 번 줄에서 **`auto`** 키워드가 사용 됩니다 .이 키워드는 `k` 초기화 된 값을 기준으로 형식을 유추 하도록 컴파일러에 지시 합니다. 이 경우 컴파일러는 **`int`** 형식에 대해를 선택 합니다.  
 
 ## <a name="declaration-scope"></a>선언 범위
 
-선언에 의해 도입 된 이름은 선언이 발생 하는 *범위* 내에서 유효 합니다. 이전 예제에서 함수 내에 선언 된 변수는 `main` *지역 변수*입니다. 전역 범위에서 main 외부에 라는 또 다른 변수를 선언할 수 `i` 있으며 완전히 별개의 엔터티입니다. *global scope* 그러나 이러한 이름의 중복은 프로그래머의 혼동 및 오류를 일으킬 수 있으므로 피해 야 합니다. 21 줄에서 클래스는 `C` 네임 스페이스의 범위에서 선언 됩니다 `N` . 네임 스페이스를 사용 하면 *이름 충돌*을 방지할 수 있습니다. 대부분의 c + + 표준 라이브러리 이름은 네임 스페이스 내에서 선언 됩니다 `std` . 범위 규칙이 선언과 상호 작용 하는 방법에 대 한 자세한 내용은 [범위](../cpp/scope-visual-cpp.md)를 참조 하세요.
+선언에 의해 도입 된 이름은 선언이 발생 하는 *범위* 내에서 유효 합니다. 이전 예제에서 함수 내에 선언 된 변수는 `main` *지역 변수* 입니다. 전역 범위에서 main 외부에 라는 또 다른 변수를 선언할 수 `i` 있으며 완전히 별개의 엔터티입니다.  그러나 이러한 이름의 중복은 프로그래머의 혼동 및 오류를 일으킬 수 있으므로 피해 야 합니다. 21 줄에서 클래스는 `C` 네임 스페이스의 범위에서 선언 됩니다 `N` . 네임 스페이스를 사용 하면 *이름 충돌* 을 방지할 수 있습니다. 대부분의 c + + 표준 라이브러리 이름은 네임 스페이스 내에서 선언 됩니다 `std` . 범위 규칙이 선언과 상호 작용 하는 방법에 대 한 자세한 내용은 [범위](../cpp/scope-visual-cpp.md)를 참조 하세요.
 
 ## <a name="definitions"></a>정의
 
@@ -102,7 +103,7 @@ C + + 프로그램에는 둘 이상의 [컴파일 단위가](header-files-cpp.md
 [`extern`](extern-cpp.md)<br/>
 [이니셜라이저](initializers.md)<br/>
 [별칭 및 typedef](aliases-and-typedefs-cpp.md)<br/>
-[`using`선언한](using-declaration.md)<br/>
+[`using` 선언한](using-declaration.md)<br/>
 [`volatile`](volatile-cpp.md)<br/>
 [`decltype`](decltype-cpp.md)<br/>
 [C + +의 특성](attributes.md)<br/>

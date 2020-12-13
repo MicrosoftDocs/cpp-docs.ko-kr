@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: return 문 (c + +)'
 title: return 문 (C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - return keyword [C++], syntax
 - return keyword [C++]
 ms.assetid: a498903a-056a-4df0-a6cf-72f633a62210
-ms.openlocfilehash: 6a1ed4f374f133abd0233826d1b58896d49576cf
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bb847900a0a9fc4c5d723d1b0392f27b6b5cf667
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225867"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340478"
 ---
 # <a name="return-statement-c"></a>return 문 (C++)
 
@@ -59,4 +60,4 @@ int main()
 ## <a name="see-also"></a>참고 항목
 
 [점프 문](../cpp/jump-statements-cpp.md)<br/>
-[C++ 키워드](../cpp/keywords-cpp.md)
+[키워드](../cpp/keywords-cpp.md)

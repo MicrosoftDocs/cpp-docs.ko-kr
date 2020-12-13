@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 단일 인수를 사용 하는 출력 스트림 조작자 (int 또는 long)'
 title: 하나의 인수를 포함하는 출력 스트림 조작자(int 또는 long)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - output streams, int or long argument manipulators
 ms.assetid: 338f3164-b5e2-4c5a-a605-7d9dc3629ca1
-ms.openlocfilehash: 203797eef95e3dab0c079e35baefcea99c3b966d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e04486f7d207731d9fbf7ba8083ffcb02a82ba8a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217664"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340894"
 ---
 # <a name="output-stream-manipulators-with-one-argument-int-or-long"></a>하나의 인수를 포함하는 출력 스트림 조작자(int 또는 long)
 

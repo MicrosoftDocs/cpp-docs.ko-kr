@@ -1,5 +1,6 @@
 ---
-title: 문서-뷰 아키텍처
+description: '자세히 알아보기: 문서/뷰 아키텍처'
+title: Document-View 아키텍처
 ms.date: 11/19/2018
 helpviewer_keywords:
 - CView class [MFC], view architecture
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - documents [MFC], MFC document/view model
 - document objects [MFC], document/view architecture
 ms.assetid: 6127768a-553f-462a-b01b-a5ee6068c81e
-ms.openlocfilehash: a74aeba651d385cf3a5386e94ec20e4e56b7cd57
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: ef6746a77a3f8a482c347d61685fccad3e6b4dfb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84624782"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339724"
 ---
 # <a name="documentview-architecture"></a>문서/뷰 아키텍처
 
@@ -64,7 +65,7 @@ MFC 문서/뷰 아키텍처를 사용 하면 여러 뷰, 여러 문서 형식, �
 
 - [문서/뷰 아키텍처에 대 한 대안](alternatives-to-the-document-view-architecture.md)
 
-- [단일 문서에 뷰 여러 개 추가](adding-multiple-views-to-a-single-document.md)
+- [단일 문서에 여러 뷰 추가](adding-multiple-views-to-a-single-document.md)
 
 - [문서 사용](using-documents.md)
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4358'
 title: 컴파일러 경고(수준 1) C4358
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4358
 ms.assetid: a9848f84-14b3-405e-81bf-ee3e91a51511
-ms.openlocfilehash: 7722acbd1d2a7d9582dbf3e42d544ec3bd0d418c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 2e3f548f5b464f712f6e5d0e20dc6da9edfdfd3e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80187117"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339984"
 ---
 # <a name="compiler-warning-level-1-c4358"></a>컴파일러 경고(수준 1) C4358
 

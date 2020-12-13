@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _strdate, _wstrdate'
 title: _strdate, _wstrdate
 ms.date: 4/2/2020
 api_name:
@@ -39,12 +40,12 @@ helpviewer_keywords:
 - _tstrdate function
 - copying dates
 ms.assetid: de8e4097-58f8-42ba-9dcd-cb4d9a9f1696
-ms.openlocfilehash: ea3aec8c007a6c0cae76de2f76d8ca2bafad2241
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 1e0daab087653edf57b3f268aa14192ab145cac6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911860"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340569"
 ---
 # <a name="_strdate-_wstrdate"></a>_strdate, _wstrdate
 
@@ -74,19 +75,19 @@ wchar_t *_wstrdate(
 *datestr*<br/>
 형식이 지정된 날짜 문자열을 포함하는 버퍼에 대한 포인터입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-이러한 각 함수는 결과 문자열 *datestr*에 대 한 포인터를 반환 합니다.
+이러한 각 함수는 결과 문자열 *datestr* 에 대 한 포인터를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [_strdate_s, _wstrdate_s](strdate-s-wstrdate-s.md)를 참조하세요. 가능한 경우에는 항상 더 안전한 함수를 사용하는 것이 좋습니다.
 
-**_Strdate** 함수는 **mm**/**dd**/**yy**로 지정 된 *datestr*에 의해 가리키는 버퍼에 현재 시스템 날짜를 복사 합니다. 여기서 **mm** 은 월을 나타내는 두 자리 **숫자, a 1은 일** 을 나타내는 두 자리 숫자, **yy** 는 연도의 마지막 두 자리 숫자입니다. 예를 들어, **12/05/99** 문자열은 1999 년 12 월 5 일을 나타냅니다. 버퍼는 9바이트 이상이어야 합니다.
+**_Strdate** 함수는 **mm** dd yy로 지정 된 *datestr* 에 의해 가리키는 버퍼에 현재 시스템 날짜를 복사 합니다. /  / 여기서 **mm** 은 월을 나타내는 두 자리 **숫자, a** 1은 일을 나타내는 두 자리 숫자, **yy** 는 연도의 마지막 두 자리 숫자입니다. 예를 들어, **12/05/99** 문자열은 1999 년 12 월 5 일을 나타냅니다. 버퍼는 9바이트 이상이어야 합니다.
 
-*Datestr* 가 **NULL** 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는-1을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
+*Datestr* 가 **NULL** 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는-1을 반환 하 고 **errno** 를 **EINVAL** 로 설정 합니다.
 
-**_wstrdate** 은 **_strdate**의 와이드 문자 버전입니다. **_wstrdate** 의 인수 및 반환 값은 와이드 문자 문자열입니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다.
+**_wstrdate** 은 **_strdate** 의 와이드 문자 버전입니다. **_wstrdate** 의 인수 및 반환 값은 와이드 문자 문자열입니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다.
 
 C++에서 이러한 함수는 보다 최신의 보안 대응 함수를 호출하는 템플릿 오버로드를 갖고 있습니다. 자세한 내용은 [안전한 템플릿 오버로드](../../c-runtime-library/secure-template-overloads.md)를 참조하세요.
 
@@ -133,7 +134,7 @@ int main()
 OS date: 04/25/03
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [시간 관리](../../c-runtime-library/time-management.md)<br/>
 [asctime, _wasctime](asctime-wasctime.md)<br/>

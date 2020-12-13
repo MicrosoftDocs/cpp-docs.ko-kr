@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3739'
 title: 컴파일러 오류 C3739
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3739
 ms.assetid: acffe894-08b8-4bf2-9249-9501e6e2bad3
-ms.openlocfilehash: 7235d86ed00663b81aaddb87fdeae957c0f73053
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: dd08b171503d7c5c4c7d46b9d06d4372513e2e73
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500426"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340296"
 ---
 # <a name="compiler-error-c3739"></a>컴파일러 오류 C3739
 

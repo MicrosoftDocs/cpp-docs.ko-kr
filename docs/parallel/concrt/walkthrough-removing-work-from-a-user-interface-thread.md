@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 연습: User-Interface 스레드에서 작업 제거'
 title: '연습: 사용자 인터페이스 스레드에서 작업 제거'
 ms.date: 08/19/2019
 helpviewer_keywords:
 - user-interface threads, removing work from [Concurrency Runtime]
 - removing work from user-interface threads [Concurrency Runtime]
 ms.assetid: a4a65cc2-b3bc-4216-8fa8-90529491de02
-ms.openlocfilehash: 003678f3c79f2abfa7ceb0c67fecd69cf178f442
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 816e8446771cda907397f43386c33476cf3665b8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222695"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340920"
 ---
 # <a name="walkthrough-removing-work-from-a-user-interface-thread"></a>연습: 사용자 인터페이스 스레드에서 작업 제거
 
@@ -34,7 +35,7 @@ ms.locfileid: "87222695"
 
 또한이 연습을 시작 하기 전에 MFC 응용 프로그램 개발 및 GDI +의 기본 사항을 이해 하는 것이 좋습니다. MFC에 대 한 자세한 내용은 [Mfc 데스크톱 응용 프로그램](../../mfc/mfc-desktop-applications.md)을 참조 하세요. GDI +에 대 한 자세한 내용은 [Gdi +](/windows/win32/gdiplus/-gdiplus-gdi-start)를 참조 하세요.
 
-## <a name="sections"></a><a name="top"></a>섹션이
+## <a name="sections"></a><a name="top"></a> 섹션이
 
 이 연습에는 다음과 같은 섹션이 있습니다.
 
@@ -42,13 +43,13 @@ ms.locfileid: "87222695"
 
 - [만델브로트 응용 프로그램의 일련 버전 구현](#serial)
 
-- [사용자 인터페이스 스레드에서 작업 제거](#removing-work)
+- [User-Interface 스레드에서 작업 제거](#removing-work)
 
 - [그리기 성능 향상](#performance)
 
 - [취소 지원 추가](#cancellation)
 
-## <a name="creating-the-mfc-application"></a><a name="application"></a>MFC 응용 프로그램 만들기
+## <a name="creating-the-mfc-application"></a><a name="application"></a> MFC 응용 프로그램 만들기
 
 이 섹션에서는 기본 MFC 응용 프로그램을 만드는 방법을 설명 합니다.
 
@@ -56,21 +57,21 @@ ms.locfileid: "87222695"
 
 1. **Mfc 응용 프로그램 마법사** 를 사용 하 여 모든 기본 설정을 사용 하 여 mfc 응용 프로그램을 만듭니다. 사용 중인 Visual Studio 버전에 대 한 마법사를 여는 방법에 대 한 지침은 [연습: 새 MFC 셸 컨트롤 사용](../../mfc/walkthrough-using-the-new-mfc-shell-controls.md) 을 참조 하세요.
 
-1. 프로젝트 이름 (예:)을 입력 한 `Mandelbrot` 다음 **확인** 을 클릭 하 여 **MFC 응용 프로그램 마법사**를 표시 합니다.
+1. 프로젝트 이름 (예:)을 입력 한 `Mandelbrot` 다음 **확인** 을 클릭 하 여 **MFC 응용 프로그램 마법사** 를 표시 합니다.
 
-1. **응용 프로그램 종류** 창에서 **단일 문서**를 선택 합니다. **문서/뷰 아키텍처 지원** 확인란이 선택 취소 되어 있는지 확인 합니다.
+1. **응용 프로그램 종류** 창에서 **단일 문서** 를 선택 합니다. **문서/뷰 아키텍처 지원** 확인란이 선택 취소 되어 있는지 확인 합니다.
 
-1. **마침** 을 클릭 하 여 프로젝트를 만들고 **MFC 응용 프로그램 마법사**를 닫습니다.
+1. **마침** 을 클릭 하 여 프로젝트를 만들고 **MFC 응용 프로그램 마법사** 를 닫습니다.
 
-   응용 프로그램을 빌드하고 실행 하 여 성공적으로 만들어졌는지 확인 합니다. 응용 프로그램을 빌드하려면 **빌드** 메뉴에서 **솔루션 빌드**를 클릭 합니다. 응용 프로그램이 성공적으로 빌드되면 **디버그** 메뉴에서 **디버깅 시작** 을 클릭 하 여 응용 프로그램을 실행 합니다.
+   응용 프로그램을 빌드하고 실행 하 여 성공적으로 만들어졌는지 확인 합니다. 응용 프로그램을 빌드하려면 **빌드** 메뉴에서 **솔루션 빌드** 를 클릭 합니다. 응용 프로그램이 성공적으로 빌드되면 **디버그** 메뉴에서 **디버깅 시작** 을 클릭 하 여 응용 프로그램을 실행 합니다.
 
-## <a name="implementing-the-serial-version-of-the-mandelbrot-application"></a><a name="serial"></a>만델브로트 응용 프로그램의 일련 버전 구현
+## <a name="implementing-the-serial-version-of-the-mandelbrot-application"></a><a name="serial"></a> 만델브로트 응용 프로그램의 일련 버전 구현
 
 이 섹션에서는 만델브로트 프랙탈을 그리는 방법을 설명 합니다. 이 버전은 만델브로트 프랙탈을 GDI + [비트맵](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-bitmap) 개체에 그린 다음 해당 비트맵의 내용을 클라이언트 창에 복사 합니다.
 
 #### <a name="to-implement-the-serial-version-of-the-mandelbrot-application"></a>만델브로트 응용 프로그램의 일련 버전을 구현 하려면
 
-1. *Pch .h* (Visual Studio 2017 및 이전 버전의*stdafx.h* )에서 다음 지시문을 추가 합니다. `#include`
+1. *Pch .h* (Visual Studio 2017 및 이전 버전의 *stdafx.h* )에서 다음 지시문을 추가 합니다. `#include`
 
    [!code-cpp[concrt-mandelbrot#1](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_1.h)]
 
@@ -114,7 +115,7 @@ ms.locfileid: "87222695"
 
 [[맨 위로](#top)이동]
 
-## <a name="removing-work-from-the-ui-thread"></a><a name="removing-work"></a>UI 스레드에서 작업 제거
+## <a name="removing-work-from-the-ui-thread"></a><a name="removing-work"></a> UI 스레드에서 작업 제거
 
 이 섹션에서는 만델브로트 응용 프로그램의 UI 스레드에서 그리기 작업을 제거 하는 방법을 보여 줍니다. Ui 스레드에서 작업자 스레드로 그리기 작업을 이동 하면 작업자 스레드가 백그라운드에서 이미지를 생성할 때 UI 스레드가 메시지를 처리할 수 있습니다.
 
@@ -124,7 +125,7 @@ ms.locfileid: "87222695"
 
 #### <a name="to-remove-the-drawing-work-from-the-ui-thread"></a>UI 스레드에서 그리기 작업을 제거 하려면
 
-1. *Pch .h* (Visual Studio 2017 및 이전 버전의*stdafx.h* )에서 다음 지시문을 추가 합니다. `#include`
+1. *Pch .h* (Visual Studio 2017 및 이전 버전의 *stdafx.h* )에서 다음 지시문을 추가 합니다. `#include`
 
    [!code-cpp[concrt-mandelbrot#101](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_9.h)]
 
@@ -152,7 +153,7 @@ ms.locfileid: "87222695"
 
 [[맨 위로](#top)이동]
 
-## <a name="improving-drawing-performance"></a><a name="performance"></a>그리기 성능 향상
+## <a name="improving-drawing-performance"></a><a name="performance"></a> 그리기 성능 향상
 
 각 픽셀의 계산은 다른 모든 계산과 독립적 이기 때문에 만델브로트 프랙탈 생성은 병렬 처리에 적합 한 후보입니다. 그리기 프로시저를 병렬화 하려면 **`for`** `CChildView::DrawMandelbrot` 다음과 같이 메서드의 외부 루프를 [concurrency::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for) 알고리즘에 대 한 호출로 변환 합니다.
 
@@ -162,7 +163,7 @@ ms.locfileid: "87222695"
 
 [[맨 위로](#top)이동]
 
-## <a name="adding-support-for-cancellation"></a><a name="cancellation"></a>취소 지원 추가
+## <a name="adding-support-for-cancellation"></a><a name="cancellation"></a> 취소 지원 추가
 
 이 섹션에서는 창 크기 조정을 처리 하는 방법과 창이 소멸 될 때 활성화 된 그리기 작업을 취소 하는 방법을 설명 합니다.
 

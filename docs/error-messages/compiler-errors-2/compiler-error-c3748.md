@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3748'
 title: 컴파일러 오류 C3748
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3748
 ms.assetid: 6fe71a0a-dd93-4ce6-9729-b9616360cf34
-ms.openlocfilehash: 1b7da734b72acfda4efd55c518b1cc356ff49cce
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: f4cb51cfbb331867c18c0f892bd9527309fb4d63
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74761857"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340192"
 ---
 # <a name="compiler-error-c3748"></a>컴파일러 오류 C3748
 

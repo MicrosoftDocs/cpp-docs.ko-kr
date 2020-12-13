@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: decltype (c + +)'
 title: decltype(C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - operators [C++], type of an expression
 - operators [C++], deduce expression type
 ms.assetid: 6dcf8888-8196-4f13-af50-51e3797255d4
-ms.openlocfilehash: 9e769bbef66bd1b55b9d445874f00d37a736025e
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: e581436a43fc9632961fcb888dfb0b23974fc2df
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90683483"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339503"
 ---
 # <a name="decltype--c"></a>decltype(C++)
 
@@ -39,11 +40,11 @@ ms.locfileid: "90683483"
 
 컴파일러는 다음 규칙을 사용 하 여 *식* 매개 변수의 형식을 결정 합니다.
 
-- *Expression* 매개 변수가 식별자 또는 [클래스 멤버 액세스](../cpp/member-access-operators-dot-and.md)인 경우 `decltype(expression)` 은 *식*으로 이름이 지정 된 엔터티의 형식입니다. 이러한 엔터티가 없거나 *식* 매개 변수가 오버 로드 된 함수 집합의 이름을 가진 경우 컴파일러는 오류 메시지를 생성 합니다.
+- *Expression* 매개 변수가 식별자 또는 [클래스 멤버 액세스](../cpp/member-access-operators-dot-and.md)인 경우 `decltype(expression)` 은 *식* 으로 이름이 지정 된 엔터티의 형식입니다. 이러한 엔터티가 없거나 *식* 매개 변수가 오버 로드 된 함수 집합의 이름을 가진 경우 컴파일러는 오류 메시지를 생성 합니다.
 
 - *식* 매개 변수가 함수 또는 오버 로드 된 연산자 함수를 호출 하는 경우 `decltype(expression)` 은 함수의 반환 형식입니다. 오버로드된 연산자를 묶는 괄호는 무시됩니다.
 
-- *식* 매개 변수가 [rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md)인 경우 `decltype(expression)` 은 *식*의 형식입니다. *식* 매개 변수가 [lvalue](../cpp/lvalues-and-rvalues-visual-cpp.md)인 경우 `decltype(expression)` 은 *식*형식에 대 한 [lvalue 참조](../cpp/lvalue-reference-declarator-amp.md) 입니다.
+- *식* 매개 변수가 [rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md)인 경우 `decltype(expression)` 은 *식* 의 형식입니다. *식* 매개 변수가 [lvalue](../cpp/lvalues-and-rvalues-visual-cpp.md)인 경우 `decltype(expression)` 은 *식* 형식에 대 한 [lvalue 참조](../cpp/lvalue-reference-declarator-amp.md) 입니다.
 
 다음 코드 예제에서는 형식 지정자의 일부를 사용 하는 방법을 보여 줍니다 **`decltype`** . 먼저 다음 문을 코딩한 것으로 가정합니다.
 
@@ -76,11 +77,11 @@ UNKNOWN func(T&& t, U&& u){ return t + u; };
 
 형식 지정자를 도입 하면 **`decltype`** 개발자가 템플릿 함수가 반환 하는 식의 형식을 가져올 수 있습니다. 나중에 표시 되는 *대체 함수 선언 구문* , **`auto`** 키워드 및 형식 지정자를 사용 **`decltype`** 하 여 *런타임에 지정* 된 반환 형식을 선언 합니다. 컴파일하면 지정되는 반환 형식은 코딩 시가 아니라 선언이 컴파일될 때 결정됩니다.
 
-다음 프로토타입에서는 대체 함수 선언의 구문을 보여 줍니다. **`const`** 및 **`volatile`** 한정자와 **`throw`** [예외 사양](../cpp/exception-specifications-throw-cpp.md) 은 선택 사항입니다. *Function_body* 자리 표시자는 함수가 수행 하는 작업을 지정 하는 복합 문을 나타냅니다. 모범 사례에 따라 문의 *식* 자리 표시자는 **`decltype`** **`return`** *function_body*에서 문에 지정 된 식 (있는 경우)과 일치 해야 합니다.
+다음 프로토타입에서는 대체 함수 선언의 구문을 보여 줍니다. **`const`** 및 **`volatile`** 한정자와 **`throw`** [예외 사양](../cpp/exception-specifications-throw-cpp.md) 은 선택 사항입니다. *Function_body* 자리 표시자는 함수가 수행 하는 작업을 지정 하는 복합 문을 나타냅니다. 모범 사례에 따라 문의 *식* 자리 표시자는 **`decltype`** **`return`** *function_body* 에서 문에 지정 된 식 (있는 경우)과 일치 해야 합니다.
 
-**`auto`***function_name* **`(`** *매개 변수*<sub>옵트인</sub> 옵트인 **`)`** **`const`** <sub>opt</sub> **`volatile`** <sub>opt</sub> **`->`** **`decltype(`** *식* **`)`** **`noexcept`** <sub>옵트인</sub> **`{`** *function_body***`};`**
+**`auto`***function_name* **`(`** *매개 변수*<sub>옵트인</sub> 옵트인 **`)`** **`const`** <sub></sub> **`volatile`** <sub></sub> **`->`** **`decltype(`** *식* **`)`** **`noexcept`** <sub>옵트인</sub> **`{`** *function_body***`};`**
 
-다음 코드 예제에서는 `myFunc` 템플릿 함수의 컴파일하면 지정되는 반환 형식이 `t` 및 `u` 템플릿 인수의 형식에 따라 결정됩니다. 모범 사례에 따라 코드 예제에서는 rvalue 참조 및 `forward` 함수 템플릿을 사용 하 여 *완벽 한 전달을*지원 합니다. 자세한 내용은 [RValue 참조 선언자: &&](../cpp/rvalue-reference-declarator-amp-amp.md)를 참조하세요.
+다음 코드 예제에서는 `myFunc` 템플릿 함수의 컴파일하면 지정되는 반환 형식이 `t` 및 `u` 템플릿 인수의 형식에 따라 결정됩니다. 모범 사례에 따라 코드 예제에서는 rvalue 참조 및 `forward` 함수 템플릿을 사용 하 여 *완벽 한 전달을* 지원 합니다. 자세한 내용은 [RValue 참조 선언자: &&](../cpp/rvalue-reference-declarator-amp-amp.md)를 참조하세요.
 
 ```cpp
 //C++11

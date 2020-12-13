@@ -1,4 +1,5 @@
 ---
+description: Poisson_distribution 클래스에 대해 자세히 알아보세요.
 title: poisson_distribution 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - std::poisson_distribution [C++], param_type
 - std::poisson_distribution [C++], param_type
 ms.assetid: 09614281-349a-45f7-8e95-c0196be0a937
-ms.openlocfilehash: bf5cd289ab0ee02d6c9e09e95d01008191899cd6
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b640517a63665ebec4573da8aff9e537412de589
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832648"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340673"
 ---
 # <a name="poisson_distribution-class"></a>poisson_distribution 클래스
 
@@ -77,7 +78,7 @@ public:
 [poisson_distribution](#poisson_distribution)\
 [param_type](#param_type)
 
-속성 함수 `mean()`은 저장된 분포 매개 변수 *mean*의 값을 반환합니다.
+속성 함수 `mean()`은 저장된 분포 매개 변수 *mean* 의 값을 반환합니다.
 
 속성 멤버 `param()`은 `param_type`으로 저장된 분포 매개 변수 패키지를 설정하거나 반환합니다.
 
@@ -215,9 +216,9 @@ explicit binomial_distribution(const param_type& parm);
 
 **사전 조건:**`0.0 < mean`
 
-첫 번째 생성자는 저장된 `mean` 값이*mean* 값을 보유하는 개체를 생성합니다.
+첫 번째 생성자는 저장된 `mean` 값이 *mean* 값을 보유하는 개체를 생성합니다.
 
-두 번째 생성자는 저장된 매개 변수가 *parm*에서 초기화되는 개체를 생성합니다. `param()` 멤버 함수를 호출하여 기존 분포의 현재 매개 변수를 가져와 설정할 수 있습니다.
+두 번째 생성자는 저장된 매개 변수가 *parm* 에서 초기화되는 개체를 생성합니다. `param()` 멤버 함수를 호출하여 기존 분포의 현재 매개 변수를 가져와 설정할 수 있습니다.
 
 ## <a name="poisson_distributionparam_type"></a><a name="param_type"></a> poisson_distribution::p aram_type
 

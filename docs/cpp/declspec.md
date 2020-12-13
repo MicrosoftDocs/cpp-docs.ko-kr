@@ -1,4 +1,5 @@
 ---
+description: 다음에 대해 자세히 알아보세요. `__declspec`
 title: __declspec
 ms.date: 03/21/2019
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 - _declspec
 helpviewer_keywords:
 - __declspec keyword [C++]
-ms.openlocfilehash: 06af67a24b7514b22e34852dc2c6ee3f35daa24e
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: d0567c522e0e21f70b9ed8acfa428c3374fd09f6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87521124"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339542"
 ---
 # `__declspec`
 
@@ -64,13 +65,13 @@ ms.locfileid: "87521124"
 
 **`__declspec`** 키워드는 간단한 선언의 시작 부분에 배치 해야 합니다. 컴파일러는 **`__declspec`** * 또는 & 뒤에 배치 된 키워드와 선언에서 변수 식별자 앞에 있는 모든 키워드를 무시 합니다.
 
-**`__declspec`** 사용자 정의 형식 선언의 시작 부분에 지정 된 특성은 해당 형식의 변수에 적용 됩니다. 예를 들면 다음과 같습니다.
+**`__declspec`** 사용자 정의 형식 선언의 시작 부분에 지정 된 특성은 해당 형식의 변수에 적용 됩니다. 예를 들어:
 
 ```cpp
 __declspec(dllimport) class X {} varX;
 ```
 
-이 경우 특성이 `varX`에 적용됩니다. **`__declspec`** 또는 키워드 뒤에 배치 되는 특성은 **`class`** **`struct`** 사용자 정의 형식에 적용 됩니다. 예를 들면 다음과 같습니다.
+이 경우 특성이 `varX`에 적용됩니다. **`__declspec`** 또는 키워드 뒤에 배치 되는 특성은 **`class`** **`struct`** 사용자 정의 형식에 적용 됩니다. 예를 들어:
 
 ```cpp
 class __declspec(dllimport) X {};
@@ -82,7 +83,7 @@ class __declspec(dllimport) X {};
 
 *decl-지정자-시퀀스* *init-선언 목록*
 
-*Decl 지정자-시퀀스* 는 기타 항목 (예:,, **`int`** **`float`** **`typedef`** 또는 클래스 이름), 저장소 클래스 (예:, **`static`** **`extern`** ) 또는 **`__declspec`** 확장을 포함 해야 합니다. *Init 선언 자 목록* 에는 선언의 포인터 부분을 포함 해야 합니다. 예를 들면 다음과 같습니다.
+*Decl 지정자-시퀀스* 는 기타 항목 (예:,, **`int`** **`float`** **`typedef`** 또는 클래스 이름), 저장소 클래스 (예:, **`static`** **`extern`** ) 또는 **`__declspec`** 확장을 포함 해야 합니다. *Init 선언 자 목록* 에는 선언의 포인터 부분을 포함 해야 합니다. 예를 들어:
 
 ```cpp
 __declspec(selectany) int * pi1 = 0;   //Recommended, selectany & int both part of decl-specifier
@@ -101,5 +102,5 @@ __declspec( thread ) int tls_i = 1;
 
 ## <a name="see-also"></a>참조
 
-[C++ 키워드](../cpp/keywords-cpp.md)<br/>
+[키워드](../cpp/keywords-cpp.md)<br/>
 [C 확장 스토리지 클래스 특성](../c-language/c-extended-storage-class-attributes.md)

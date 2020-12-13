@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 상속 키워드'
 title: 상속 키워드
 ms.date: 11/04/2016
 f1_keywords:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - derived classes [C++], declaring
 - inheritance, keywords
 ms.assetid: bb810f56-7720-4fea-b8b6-9499edd141df
-ms.openlocfilehash: bc9afdcb7971c478c1cad9185cece57ea6326a48
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 05d13303064c2857780af62b1b4beba00483b72e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233732"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340465"
 ---
 # <a name="inheritance-keywords"></a>상속 키워드
 
@@ -35,12 +36,12 @@ class [__multiple_inheritance] class-name;
 class [__virtual_inheritance] class-name;
 ```
 
-각 항목이 나타내는 의미는 다음과 같습니다.
+여기서
 
 *클래스-이름*<br/>
 선언되는 클래스의 이름입니다.
 
-C++를 사용하면 클래스의 정의 이전에 클래스 멤버에 대한 포인터를 선언할 수 있습니다. 예를 들면 다음과 같습니다.
+C++를 사용하면 클래스의 정의 이전에 클래스 멤버에 대한 포인터를 선언할 수 있습니다. 예를 들어:
 
 ```cpp
 class S;
@@ -74,10 +75,10 @@ int S::*p;
 > [!NOTE]
 > 클래스 멤버 포인터 표현의 동일한 정방향 선언이 해당 클래스의 멤버에 대한 포인터를 선언하는 각 변환 단위에서 발생해야 하며, 이 선언은 멤버에 대한 포인터가 선언되기 전에 발생해야 합니다.
 
-이전 버전과의 호환성을 위해 **_single_inheritance**, **_multiple_inheritance**및 **_virtual_inheritance** 는 **`__single_inheritance`** **`__multiple_inheritance`** **`__virtual_inheritance`** 컴파일러 옵션 [/za \( 사용 안 함 언어 확장](../build/reference/za-ze-disable-language-extensions.md) 을 지정 하지 않는 경우, 및에 대 한 동의어입니다.
+이전 버전과의 호환성을 위해 **_single_inheritance**, **_multiple_inheritance** 및 **_virtual_inheritance** 는 **`__single_inheritance`** **`__multiple_inheritance`** **`__virtual_inheritance`** 컴파일러 옵션 [/za \( 사용 안 함 언어 확장](../build/reference/za-ze-disable-language-extensions.md) 을 지정 하지 않는 경우, 및에 대 한 동의어입니다.
 
 **Microsoft 전용 종료**
 
 ## <a name="see-also"></a>참조
 
-[C++ 키워드](../cpp/keywords-cpp.md)
+[키워드](../cpp/keywords-cpp.md)

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 자동화 서버'
 title: 자동화 서버
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - dispatch maps [MFC], Automation servers
 - servers, Automation
 ms.assetid: 523fd155-51ce-4f91-b986-b74bdbdd7d92
-ms.openlocfilehash: 4c2ef77e20b7dccfa8cd6830c090111601331642
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: e97bcf524b96e459cd1a3caddec7cdaf0c030962
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619411"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339828"
 ---
 # <a name="automation-servers"></a>자동화 서버
 
@@ -27,7 +28,7 @@ ms.locfileid: "84619411"
 
 자동화를 통해 잘 정의 된 공용 인터페이스를 통해 응용 프로그램 기능을 노출 함으로써 다양 한 응용 프로그램 관련 매크로 언어가 아닌 Microsoft Visual Basic 같은 단일 일반 프로그래밍 언어로 응용 프로그램을 빌드할 수 있습니다.
 
-## <a name="support-for-automation-servers"></a><a name="_core_support_for_automation_servers"></a>Automation 서버 지원
+## <a name="support-for-automation-servers"></a><a name="_core_support_for_automation_servers"></a> Automation 서버 지원
 
 Visual C++ 및 MFC 프레임 워크는 자동화 서버에 대 한 광범위 한 지원을 제공 합니다. 자동화 서버를 만드는 데 필요한 많은 오버 헤드를 처리 하므로 응용 프로그램의 기능에 대 한 노력을 집중할 수 있습니다.
 
@@ -54,4 +55,4 @@ MFC 응용 프로그램 마법사는 자동화 서버 응용 프로그램을 시
 ## <a name="see-also"></a>참고 항목
 
 [Automation](automation.md)<br/>
-[MFC 애플리케이션 마법사](reference/mfc-application-wizard.md)
+[MFC 응용 프로그램 마법사](reference/mfc-application-wizard.md)

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4391'
 title: 컴파일러 경고(수준 1) C4391
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4391
 ms.assetid: 95c6182c-fae9-4174-8f7b-98aa352e68ca
-ms.openlocfilehash: 6dc5e2c7a40a276e225d030bc0340fb0bfe25bb5
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 89c3babcf78dd47188cb03afa629a5aeda923fc7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80162727"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339914"
 ---
 # <a name="compiler-warning-level-1-c4391"></a>컴파일러 경고(수준 1) C4391
 

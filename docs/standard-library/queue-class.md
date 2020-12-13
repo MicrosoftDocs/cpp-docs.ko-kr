@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: queue 클래스'
 title: queue 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - std::queue [C++], push
 - std::queue [C++], size
 ms.assetid: 28c20ab0-3a72-4185-9e0f-5a44eea0e204
-ms.openlocfilehash: e0bfa4ab037b52b237bd674d5f705de4e9699383
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b2b30e7a564fa1889d9adc2bb99e48ec1a623c25
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832609"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340621"
 ---
 # <a name="queue-class"></a>queue 클래스
 
@@ -80,7 +81,7 @@ C++ 표준 라이브러리를 통해 정의되는 컨테이너 어댑터에는 s
 |[size_type](#size_type)|`queue`에서 요소 수를 표현할 수 있는 부호 없는 정수 형식입니다.|
 |[value_type](#value_type)|`queue`에 있는 요소로 저장된 개체의 형식을 나타내는 형식입니다.|
 
-### <a name="functions"></a>Functions
+### <a name="functions"></a>함수
 
 |Name|설명|
 |-|-|

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 데이터 형식 범위'
 title: 데이터 형식 범위
 ms.date: 05/28/2020
 helpviewer_keywords:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - long int keyword [C++]
 - unsigned long int [C++]
 ms.assetid: 3691ceca-05fb-4b82-b1ae-5c4618cda91a
-ms.openlocfilehash: f7658d0c0a61180193de268414e214595198e8fa
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8d4ae1b6aae3a4dbf12180248df6000085103efe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228975"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339529"
 ---
 # <a name="data-type-ranges"></a>데이터 형식 범위
 
@@ -79,7 +80,7 @@ Microsoft c + + 32 비트 및 64 비트 컴파일러는이 문서의 뒷부분�
 |**`__int64`**|8|**`long long`**, **`signed long long`**|–9,223,372,036,854,775,808 ~ 9,223,372,036,854,775,807|
 |**`unsigned __int64`**|8|**`unsigned long long`**|0 ~ 18,446,744,073,709,551,615|
 |**`bool`**|1|없음|**`false`** 또는 **`true`**|
-|**`char`**|1|없음|기본적으로-128 ~ 127<br /><br /> 을 사용 하 여 컴파일한 경우 0에서 255[`/J`](../build/reference/j-default-char-type-is-unsigned.md)|
+|**`char`**|1|없음|기본적으로-128 ~ 127<br /><br /> 을 사용 하 여 컴파일한 경우 0에서 255 [`/J`](../build/reference/j-default-char-type-is-unsigned.md)|
 |**`signed char`**|1|없음|-128 ~ 127|
 |**`unsigned char`**|1|없음|0 ~ 255|
 |**`short`**|2|**`short int`**, **`signed short int`**|–32,768 ~ 32,767|
@@ -91,7 +92,7 @@ Microsoft c + + 32 비트 및 64 비트 컴파일러는이 문서의 뒷부분�
 |**`enum`**|다름|없음| |
 |**`float`**|4|없음|3.4E+/-38(7개의 자릿수)|
 |**`double`**|8|없음|1.7E+/-308(15개의 자릿수)|
-|**`long double`**|와 동일 합니다.**`double`**|없음|와 동일 합니다.**`double`**|
+|**`long double`**|와 동일 합니다. **`double`**|없음|와 동일 합니다. **`double`**|
 |**`wchar_t`**|2|**`__wchar_t`**|0 ~ 65,535|
 
 변수는 사용 방법에 따라 **`__wchar_t`** 와이드 문자 형식 또는 멀티 바이트 문자 형식을 지정 합니다. 문자 또는 문자열 상수 앞에 `L` 접두사를 사용하여 와이드 문자 형식 상수를 지정합니다.
@@ -108,5 +109,5 @@ Visual Studio의 C/C++에서도 크기가 지정된 정수 형식을 지원합�
 
 ## <a name="see-also"></a>참고 항목
 
-[C++ 키워드](../cpp/keywords-cpp.md)<br/>
+[키워드](../cpp/keywords-cpp.md)<br/>
 [기본 제공 형식](../cpp/fundamental-types-cpp.md)

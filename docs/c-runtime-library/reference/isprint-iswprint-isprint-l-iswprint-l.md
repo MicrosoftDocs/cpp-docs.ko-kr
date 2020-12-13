@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: isprint 프린트, iswprint, _isprint_l, _iswprint_l'
 title: isprint, iswprint, _isprint_l, _iswprint_l
 ms.date: 4/2/2020
 api_name:
@@ -40,12 +41,12 @@ helpviewer_keywords:
 - iswprint_l function
 - _isprint_l function
 ms.assetid: a8bbcdb0-e8d0-4d8c-ae4e-56d3bdee6ca3
-ms.openlocfilehash: 9921164220bc5289a7ae4a211c88107b4dac8e9c
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: e5d0ee00fbdbc6e5dd0778da5008b026a7c0e23f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918514"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339607"
 ---
 # <a name="isprint-iswprint-_isprint_l-_iswprint_l"></a>isprint, iswprint, _isprint_l, _iswprint_l
 
@@ -78,7 +79,7 @@ int _iswprint_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 *C* 가 인쇄 가능한 문자의 특정 표현인 경우 이러한 각 루틴은 0이 아닌 값을 반환 합니다. *c* 가 인쇄 가능한 문자인 경우 **isprint 프린트** 는 0이 아닌 값을 반환 합니다. 여기에는 공백 문자 (0x20-0x7e)가 포함 됩니다. *c* 가 인쇄 가능한 와이드 문자인 경우 **iswprint** 는 0이 아닌 값을 반환 합니다. 여기에는 공백 와이드 문자가 포함 됩니다. *C* 가 테스트 조건을 충족 하지 않는 경우 이러한 루틴은 각각 0을 반환 합니다.
 
@@ -107,8 +108,8 @@ int _iswprint_l(
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [문자 분류](../../c-runtime-library/character-classification.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
+[로캘](../../c-runtime-library/locale.md)<br/>
 [is, isw 루틴](../../c-runtime-library/is-isw-routines.md)<br/>

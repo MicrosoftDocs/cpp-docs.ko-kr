@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4383'
 title: 컴파일러 경고(수준 1) C4383
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4383
 ms.assetid: 96c0e52d-874e-4b57-a154-0e49b6a00fae
-ms.openlocfilehash: 1c4a7ca806430c73c8e8396e596782253cc06f09
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f6ece51ed497919cf444952f42130cc3a4bfb4a2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80162740"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339932"
 ---
 # <a name="compiler-warning-level-1-c4383"></a>컴파일러 경고(수준 1) C4383
 
@@ -21,7 +22,7 @@ ms.locfileid: "80162740"
 
 자세한 내용은 [개체 연산자 (^)](../../extensions/handle-to-object-operator-hat-cpp-component-extensions.md) 및 [추적 참조 연산자](../../extensions/tracking-reference-operator-cpp-component-extensions.md)에 대 한 핸들을 참조 하십시오.
 
-또한 인스턴스 연산자는 참조 된 메타 데이터를 통해 다른 언어 컴파일러에서 사용할 수 없습니다. 자세한 내용은 [사용자 정의 연산자 (C++/cli)](../../dotnet/user-defined-operators-cpp-cli.md)를 참조 하세요.
+또한 인스턴스 연산자는 참조 된 메타 데이터를 통해 다른 언어 컴파일러에서 사용할 수 없습니다. 자세한 내용은 [사용자 정의 연산자 (c + +/cli)](../../dotnet/user-defined-operators-cpp-cli.md)를 참조 하세요.
 
 ## <a name="example"></a>예제
 

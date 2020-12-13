@@ -1,4 +1,5 @@
 ---
+description: Piecewise_linear_distribution 클래스에 대해 자세히 알아보세요.
 title: piecewise_linear_distribution 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - std::piecewise_linear_distribution [C++], param_type
 - std::piecewise_linear_distribution [C++], param_type
 ms.assetid: cd141152-7163-4754-8f98-c6d6500005e0
-ms.openlocfilehash: 57c6e19bc56068c98f6c85978c7af68e56cb4f2a
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 8ba2a0707599c8510488290c5d0c227d464588ff
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832687"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340738"
 ---
 # <a name="piecewise_linear_distribution-class"></a>piecewise_linear_distribution 클래스
 
@@ -266,7 +267,7 @@ explicit piecewise_linear_distribution(const param_type& parm);
 분포 범위의 가장 작은 값입니다.
 
 *xmax*\
-분포 범위의 가장 큰 값입니다. *xmin*보다 커야 합니다.
+분포 범위의 가장 큰 값입니다. *xmin* 보다 커야 합니다.
 
 *weightfunc*\
 분포의 확률 함수를 나타내는 개체입니다. 매개 변수와 반환 값은 모두로 변환할 수 있어야 합니다 **`double`** .
@@ -288,7 +289,7 @@ piecewise_linear_distribution(
     InputIteratorW firstW);
 ```
 
-시퀀스 [ `firstI` , `lastI` ) 및 *firstw*에서 시작 하는 일치 하는 가중치 시퀀스를 통해 반복기의 간격과를 사용 하 여 분포 개체를 생성 합니다.
+시퀀스 [ `firstI` , `lastI` ) 및 *firstw* 에서 시작 하는 일치 하는 가중치 시퀀스를 통해 반복기의 간격과를 사용 하 여 분포 개체를 생성 합니다.
 
 다음 이니셜라이저 목록 생성자는
 
@@ -299,7 +300,7 @@ piecewise_linear_distribution(
     UnaryOperation weightfunc);
 ```
 
-이니셜라이저 목록 *간격* 및 *weightfunc*함수에서 생성 된 가중치에서 간격을 사용 하 여 분포 개체를 생성 합니다.
+이니셜라이저 목록 *간격* 및 *weightfunc* 함수에서 생성 된 가중치에서 간격을 사용 하 여 분포 개체를 생성 합니다.
 
 다음과 같이 정의된 생성자는
 
@@ -312,7 +313,7 @@ piecewise_linear_distribution(
     UnaryOperation weightfunc);
 ```
 
-weightfunc 함수에 따라 각 간격 가중치를 할당 하 여 []에 대해 균등 하 게 분포 된 *개수* 간격으로 분포 개체를 생성 하 `xmin,xmax` 고, *weightfunc* 는 하나의 매개 변수를 사용 하 고 반환 값을 가져야 합니다 .이 두 값은 모두로 변환할 수 있습니다 *weightfunc* **`double`** . **사전 조건:** `xmin < xmax` .
+weightfunc 함수에 따라 각 간격 가중치를 할당 하 여 []에 대해 균등 하 게 분포 된 *개수* 간격으로 분포 개체를 생성 하 `xmin,xmax` 고, *weightfunc* 는 하나의 매개 변수를 사용 하 고 반환 값을 가져야 합니다 .이 두 값은 모두로 변환할 수 있습니다  **`double`** . **사전 조건:** `xmin < xmax` .
 
 다음과 같이 정의된 생성자는
 

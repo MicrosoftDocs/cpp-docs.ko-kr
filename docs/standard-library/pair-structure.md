@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: pair Structure'
 title: pair 구조체
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - pair class
 ms.assetid: 539d3d67-80a2-4170-b347-783495d42109
-ms.openlocfilehash: 0a78d5074c37f4fbbfb736125626fa4b7fc7e275
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 052dd0e95125726f377e9d74585cfad6cc7e8c0f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91505753"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340816"
 ---
 # <a name="pair-structure"></a>pair 구조체
 

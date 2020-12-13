@@ -1,4 +1,5 @@
 ---
+description: Piecewise_constant_distribution 클래스에 대해 자세히 알아보세요.
 title: piecewise_constant_distribution 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - std::piecewise_constant_distribution [C++], param_type
 - std::piecewise_constant_distribution [C++], param_type
 ms.assetid: 2c9a21fa-623e-4d63-b827-3f1556b6dedb
-ms.openlocfilehash: 59911d8a61a05de9ec92f4152b2835da3cf82f7f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 92558f407073dab2d9cc5e8dd788ab3fba8998fb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832726"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340764"
 ---
 # <a name="piecewise_constant_distribution-class"></a>piecewise_constant_distribution 클래스
 
@@ -265,7 +266,7 @@ explicit piecewise_constant_distribution(const param_type& parm);
 분포 범위의 가장 작은 값입니다.
 
 *xmax*\
-분포 범위의 가장 큰 값입니다. *xmin*보다 커야 합니다.
+분포 범위의 가장 큰 값입니다. *xmin* 보다 커야 합니다.
 
 *weightfunc*\
 분포의 확률 함수를 나타내는 개체입니다. 매개 변수와 반환 값은 모두로 변환할 수 있어야 합니다 **`double`** .
@@ -296,7 +297,7 @@ intervals,
     UnaryOperation weightfunc);
 ```
 
-이니셜라이저 목록 *간격* 및 *weightfunc*함수에서 생성 된 가중치에서 간격을 사용 하 여 분포 개체를 생성 합니다.
+이니셜라이저 목록 *간격* 및 *weightfunc* 함수에서 생성 된 가중치에서 간격을 사용 하 여 분포 개체를 생성 합니다.
 
 다음과 같이 정의된 생성자는
 
@@ -306,7 +307,7 @@ piecewise_constant_distribution(size_t count, result_type xmin, result_type xmax
     UnaryOperation weightfunc);
 ```
 
-weightfunc 함수에 따라 각 간격 가중치를 할당 하 여 []에 대해 균등 하 게 분포 된 *개수* 간격으로 분포 개체를 생성 하 `xmin,xmax` 고, *weightfunc* 는 하나의 매개 변수를 사용 하 고 반환 값을 가져야 합니다 .이 두 값은 모두로 변환할 수 있습니다 *weightfunc* **`double`** . **사전 조건:**`xmin < xmax`
+weightfunc 함수에 따라 각 간격 가중치를 할당 하 여 []에 대해 균등 하 게 분포 된 *개수* 간격으로 분포 개체를 생성 하 `xmin,xmax` 고, *weightfunc* 는 하나의 매개 변수를 사용 하 고 반환 값을 가져야 합니다 .이 두 값은 모두로 변환할 수 있습니다  **`double`** . **사전 조건:**`xmin < xmax`
 
 다음과 같이 정의된 생성자는
 

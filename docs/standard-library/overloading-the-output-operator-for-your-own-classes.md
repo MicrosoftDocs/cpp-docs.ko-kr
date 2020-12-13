@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: &lt; &lt; 클래스에 대 한 연산자 오버 로드'
 title: 고유 클래스에 대해 &lt;&lt; 연산자 오버로드
 ms.date: 11/04/2016
 helpviewer_keywords:
 - operator<<, overloading for your own classes
 - operator <<, overloading for your own classes
 ms.assetid: ad1d2c49-d84e-48a8-9c09-121f28b10bf0
-ms.openlocfilehash: c470bb7335a5997ae26327f99b8c5f31d20b4edb
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 206d6ccb50c7cb3706c66adeb6c1429a04775fc1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68452061"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340842"
 ---
 # <a name="overloading-the-ltlt-operator-for-your-own-classes"></a>고유 클래스에 대해 &lt;&lt; 연산자 오버로드
 
@@ -70,6 +71,6 @@ int main()
 cout <<"The date is" <<dt <<flush;
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [출력 스트림](../standard-library/output-streams.md)

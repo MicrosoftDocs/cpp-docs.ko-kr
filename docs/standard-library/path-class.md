@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: path 클래스'
 title: path 클래스
 ms.date: 09/27/2018
 f1_keywords:
 - filesystem/std::experimental::filesystem::path
 ms.assetid: 8a1227ca-aeb2-4e0e-84aa-86e34e4f4fe8
-ms.openlocfilehash: fb56afbc1d29f1d321b394342382f89b06768720
-ms.sourcegitcommit: b5854134553db1d99a5761bec131841c374a3098
+ms.openlocfilehash: 469d594800036b165f8693162ca11ca161736cf0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91958661"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340777"
 ---
 # <a name="path-class"></a>path 클래스
 
@@ -17,7 +18,7 @@ ms.locfileid: "91958661"
 
 자세한 내용 및 코드 예제를 보려면 [파일 시스템 탐색(C++)](../standard-library/file-system-navigation.md)을 참조하세요.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class path;
@@ -34,7 +35,7 @@ class path;
 |형식 이름|설명|
 |-|-|
 |[const_iterator](#const_iterator)|`iterator`의 동의어입니다.|
-|[반복](#iterator)|의 구성 요소를 지정 하는 양방향 상수 반복기입니다 `path` `myname` .|
+|[iterator](#iterator)|의 구성 요소를 지정 하는 양방향 상수 반복기입니다 `path` `myname` .|
 |[string_type](#string_type)|이 형식은 `basic_string<value_type>`의 동의어입니다.|
 
 ### <a name="member-functions"></a>멤버 함수
@@ -89,7 +90,7 @@ class path;
 
 ### <a name="operators"></a>연산자
 
-|연산자|Description|
+|연산자|설명|
 |-|-|
 |[연산자 =](#op_as)|경로의 요소를 다른 경로의 복사본으로 바꿉니다.|
 |[operator + =](#op_add)|다양 한 `concat` 식입니다.|
@@ -835,6 +836,6 @@ typedef char value_type;
 wstring wstring() const;
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)

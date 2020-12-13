@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 콜백 항목 및 콜백 마스크'
 title: 콜백 항목 및 콜백 마스크
 ms.date: 11/04/2016
 helpviewer_keywords:
 - callback items in CListCtrl class [MFC]
 - CListCtrl class [MFC], callback item and callback mask
 ms.assetid: 67c1f76f-6144-453e-9376-6712f89430ae
-ms.openlocfilehash: 1c46f6edb44e4898c0245209ca837cd0eb716304
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 0740afbee61f3173e2005fd927982c94786f03f2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84624966"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339763"
 ---
 # <a name="callback-items-and-the-callback-mask"></a>콜백 항목 및 콜백 마스크
 

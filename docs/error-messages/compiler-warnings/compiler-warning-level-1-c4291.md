@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4291'
 title: 컴파일러 경고(수준 1) C4291
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4291
 ms.assetid: c2b95dea-38f2-4609-9104-707c30798da4
-ms.openlocfilehash: e45856702eef7f24595d10b81f39047d8f9a08b2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 190fbb1ed91c5524dcd83a0a02a0b0280e264891
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221005"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340114"
 ---
 # <a name="compiler-warning-level-1-c4291"></a>컴파일러 경고(수준 1) C4291
 
@@ -23,7 +24,7 @@ Placement [delete](../../cpp/delete-operator-cpp.md)가 없는 경우 placement 
 
 추가 인수 없이 연산자를 사용 하 **`new`** 고 [/Gx](../../build/reference/gx-enable-exception-handling.md), [/EHs](../../build/reference/eh-exception-handling-model.md)또는/eha 옵션으로 컴파일하여 예외 처리를 사용 하도록 설정 하는 경우 생성자가 예외를 throw 하는 경우 컴파일러는 연산자를 호출 하는 코드를 생성 합니다 **`delete`** .
 
-연산자의 배치 형태를 사용 하는 경우 **`new`** (할당 크기 외에 인수를 포함 하는 폼), 개체의 생성자가 예외를 throw 하는 경우 컴파일러는 연산자를 호출 하는 코드를 생성 **`delete`** 하지만, 연산자의 배치 형식이 **`delete`** **`new`** 메모리를 할당 한 연산자의 배치 형식과 일치 하는 경우에만이 작업을 수행 합니다. 예를 들면 다음과 같습니다.
+연산자의 배치 형태를 사용 하는 경우 **`new`** (할당 크기 외에 인수를 포함 하는 폼), 개체의 생성자가 예외를 throw 하는 경우 컴파일러는 연산자를 호출 하는 코드를 생성 **`delete`** 하지만, 연산자의 배치 형식이 **`delete`** **`new`** 메모리를 할당 한 연산자의 배치 형식과 일치 하는 경우에만이 작업을 수행 합니다. 예를 들어:
 
 ```cpp
 // C4291.cpp
@@ -74,7 +75,7 @@ int main(void)
 }
 ```
 
-위의 예에서는 연산자 **`delete`** 의 배치 형태와 일치 하는 연산자의 배치 형식이 정의 되어 있지 않기 때문에 경고 C4291을 생성 합니다 **`new`** . 문제를 해결 하려면 **main**위에 다음 코드를 삽입 합니다. 오버 로드 된 모든 연산자 **`delete`** 함수 매개 변수는 **`new`** 첫 번째 매개 변수를 제외 하 고 오버 로드 된 연산자의 매개 변수와 일치 합니다.
+위의 예에서는 연산자 **`delete`** 의 배치 형태와 일치 하는 연산자의 배치 형식이 정의 되어 있지 않기 때문에 경고 C4291을 생성 합니다 **`new`** . 문제를 해결 하려면 **main** 위에 다음 코드를 삽입 합니다. 오버 로드 된 모든 연산자 **`delete`** 함수 매개 변수는 **`new`** 첫 번째 매개 변수를 제외 하 고 오버 로드 된 연산자의 매개 변수와 일치 합니다.
 
 ```cpp
 void operator delete(void* pMem, char* pszFilename, int nLine)

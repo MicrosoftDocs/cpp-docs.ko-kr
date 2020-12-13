@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2004'
 title: 컴파일러 오류 C2004
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2004
 ms.assetid: d81526dd-3a00-4593-87b0-d910d3d29bca
-ms.openlocfilehash: c4f099ba241b56291074202e6c03ad98ee97f756
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: f418d2c2c372b228cc50b82237d8ebc56321e2c7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90743505"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340387"
 ---
 # <a name="compiler-error-c2004"></a>컴파일러 오류 C2004
 

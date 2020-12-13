@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: __readfsbyte, __readfsdword, __readfsqword, __readfsword'
 title: __readfsbyte, __readfsdword, __readfsqword, __readfsword
 ms.date: 09/02/2019
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - readfsqword intrinsic
 - __readfsqword intrinsic
 ms.assetid: f6ee7203-4179-402c-a464-0746c84ce6ac
-ms.openlocfilehash: 30040b33fe8c686bc0cda585c525ae2926cdf314
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 2b733ced12045253c78e823379c10a5e70f65143
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222367"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340985"
 ---
 # <a name="__readfsbyte-__readfsdword-__readfsqword-__readfsword"></a>__readfsbyte, __readfsdword, __readfsqword, __readfsword
 
@@ -49,22 +50,22 @@ unsigned __int64 __readfsqword(
 ### <a name="parameters"></a>매개 변수
 
 *이동*\
-진행 에서 읽을의 `FS` 시작 부분부터의 오프셋입니다.
+진행 에서 읽을의 시작 부분부터의 오프셋 `FS` 입니다.
 
 ## <a name="return-value"></a>반환 값
 
-위치 `FS:[Offset]`에서 호출 되는 함수 이름으로 표시 되는 바이트, 단어, 더블 워드 또는 쿼드 워드의 메모리 내용입니다.
+위치에서 호출 되는 함수 이름으로 표시 되는 바이트, 단어, 더블 워드 또는 쿼드 워드의 메모리 내용입니다 `FS:[Offset]` .
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`__readfsbyte`|x86|
 |`__readfsdword`|x86|
 |`__readfsqword`|x86|
 |`__readfsword`|x86|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 ## <a name="remarks"></a>설명
 
@@ -72,7 +73,7 @@ unsigned __int64 __readfsqword(
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[__writefsbyte, \__writefsdword, \__writefsqword, \__writefsword](../intrinsics/writefsbyte-writefsdword-writefsqword-writefsword.md)\
+[__writefsbyte, \_ _writefsdword, \_ _writefsqword, \_ _writefsword](../intrinsics/writefsbyte-writefsdword-writefsqword-writefsword.md)\
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

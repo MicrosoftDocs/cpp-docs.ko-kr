@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 시스템 호출'
 title: 시스템 호출
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - Windows [C++], system calls
 - system calls
 ms.assetid: 0255f2ec-a5a0-487e-8b09-9dad001d81ed
-ms.openlocfilehash: 2d86a35718ab6c1aab941149c9707004b1532d24
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: 440ddfcccfd078f63e93e1c0d7f7a426ff6ec89d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57749206"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339555"
 ---
 # <a name="system-calls"></a>시스템 호출
 
@@ -31,4 +32,4 @@ ms.locfileid: "57749206"
 [범주별 유버니설 C 런타임 루틴](../c-runtime-library/run-time-routines-by-category.md)<br/>
 [파일 처리](../c-runtime-library/file-handling.md)<br/>
 [디렉터리 제어](../c-runtime-library/directory-control.md)<br/>
-[하위 수준 I/O](../c-runtime-library/low-level-i-o.md)<br/>
+[하위 수준 i/o](../c-runtime-library/low-level-i-o.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: __readgsbyte, __readgsdword, __readgsqword, __readgsword'
 title: __readgsbyte, __readgsdword, __readgsqword, __readgsword
 ms.date: 09/02/2019
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - __readgsqword intrinsic
 - __readgsbyte intrinsic
 ms.assetid: f822632d-854c-4558-a71b-cdfc3eea2236
-ms.openlocfilehash: 278f1de33a7e01c5893217ddd8aaa22e68cf0c94
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: fb1faf0e785f0d0983d7d3611e68a7515298e61c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222354"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340972"
 ---
 # <a name="__readgsbyte-__readgsdword-__readgsqword-__readgsword"></a>__readgsbyte, __readgsdword, __readgsqword, __readgsword
 
@@ -45,22 +46,22 @@ unsigned __int64 __readgsqword(
 ### <a name="parameters"></a>매개 변수
 
 *이동*\
-진행 에서 읽을의 `GS` 시작 부분부터의 오프셋입니다.
+진행 에서 읽을의 시작 부분부터의 오프셋 `GS` 입니다.
 
 ## <a name="return-value"></a>반환 값
 
-위치 `GS:[Offset]`에서 호출 되는 함수 이름으로 표시 되는 바이트, 단어, 더블 워드 또는 쿼드 워드의 메모리 내용입니다.
+위치에서 호출 되는 함수 이름으로 표시 되는 바이트, 단어, 더블 워드 또는 쿼드 워드의 메모리 내용입니다 `GS:[Offset]` .
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`__readgsbyte`|X64|
 |`__readgsdword`|X64|
 |`__readgsqword`|X64|
 |`__readgsword`|X64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 ## <a name="remarks"></a>설명
 
@@ -68,7 +69,7 @@ unsigned __int64 __readgsqword(
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[__writegsbyte, \__writegsdword, \__writegsqword, \__writegsword](../intrinsics/writegsbyte-writegsdword-writegsqword-writegsword.md)\
+[__writegsbyte, \_ _writegsdword, \_ _writegsqword, \_ _writegsword](../intrinsics/writegsbyte-writegsdword-writegsqword-writegsword.md)\
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

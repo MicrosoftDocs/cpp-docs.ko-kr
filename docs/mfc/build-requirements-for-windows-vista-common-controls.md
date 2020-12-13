@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: Windows 공용 컨트롤에 대 한 빌드 요구 사항'
 title: Windows 공용 컨트롤에 대 한 빌드 요구 사항
 ms.date: 08/19/2019
 helpviewer_keywords:
 - Common Controls (MFC), build requirements
 - Common Controls (MFC)
 ms.assetid: 025f7d55-55a2-4dcd-8f62-02424e3dcc04
-ms.openlocfilehash: cf2139e04d2f72feb7951010caa351d67ccc5a93
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 4d11b4da2fb1ff616ab077390c2d603e76382313
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619736"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339802"
 ---
 # <a name="build-requirements-for-windows-common-controls"></a>Windows 공용 컨트롤에 대 한 빌드 요구 사항
 

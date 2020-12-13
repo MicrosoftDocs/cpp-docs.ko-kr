@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3741'
 title: 컴파일러 오류 C3741
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3741
 ms.assetid: ed311315-cc32-49c9-97fa-01b293d81526
-ms.openlocfilehash: e551fa3dbf67d2158081bea9d19051d4703d9c43
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 158555995449416da23120cafe16262cbb1a6208
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91501304"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340257"
 ---
 # <a name="compiler-error-c3741"></a>컴파일러 오류 C3741
 

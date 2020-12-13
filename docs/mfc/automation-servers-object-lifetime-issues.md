@@ -1,4 +1,5 @@
 ---
+description: '자동화 서버: Object-Lifetime 문제에 대 한 자세한 정보'
 title: '자동화 서버: 개체 수명 문제'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - Automation servers, object lifetime
 - servers, lifetime of Automation
 ms.assetid: 342baacf-4015-4a0e-be2f-321424f1cb43
-ms.openlocfilehash: 8031902318a091b0ed5f340b454a14b9df195069
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: dd6f60766880f20715cd44f8531639ab78bcc86b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225087"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339854"
 ---
 # <a name="automation-servers-object-lifetime-issues"></a>자동화 서버: 개체 수명 문제
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 목록 컨트롤 스타일 변경'
 title: 목록 컨트롤 스타일 변경
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - CListCtrl class [MFC], styles
 - CListCtrl class [MFC], changing styles
 ms.assetid: be74a005-0795-417c-9056-f6342aa74b26
-ms.openlocfilehash: e515f56f00aa45a14c24bcd635770e803f7f8e70
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: a6712baf5ea1e161ec1fd73e25ea01fedd650670
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615980"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339737"
 ---
 # <a name="changing-list-control-styles"></a>목록 컨트롤 스타일 변경
 
@@ -19,7 +20,7 @@ ms.locfileid: "84615980"
 
 예를 들어 사용자가 메뉴 항목을 선택할 때 [Getwindowlong](/windows/win32/api/winuser/nf-winuser-getwindowlongw) 을 호출 하 여 컨트롤의 현재 스타일을 검색 한 다음 [setwindowlong](/windows/win32/api/winuser/nf-winuser-setwindowlongw) 을 호출 하 여 스타일을 다시 설정할 수 있습니다. 자세한 내용은 Windows SDK에서 [목록 뷰 컨트롤 사용](/windows/win32/Controls/using-list-view-controls) 을 참조 하세요.
 
-사용 가능한 스타일은 [만들기](reference/clistctrl-class.md#create)에 나열 됩니다. 스타일 **LVS_ICON**, **LVS_SMALLICON**, **LVS_LIST**및 **LVS_REPORT** 는 네 개의 목록 컨트롤 뷰를 지정 합니다.
+사용 가능한 스타일은 [만들기](reference/clistctrl-class.md#create)에 나열 됩니다. 스타일 **LVS_ICON**, **LVS_SMALLICON**, **LVS_LIST** 및 **LVS_REPORT** 는 네 개의 목록 컨트롤 뷰를 지정 합니다.
 
 ## <a name="extended-styles"></a>확장 스타일
 

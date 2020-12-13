@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4369'
 title: 컴파일러 경고(수준 1) C4369
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4369
 ms.assetid: ade87e84-36be-4e00-be99-2930af848feb
-ms.openlocfilehash: b0d99792e3e0ea372c8629319553dd9a59ad4b47
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 97f7882438124e8788559ec1453bd84d3ec371d2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80187065"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339971"
 ---
 # <a name="compiler-warning-level-1-c4369"></a>컴파일러 경고(수준 1) C4369
 

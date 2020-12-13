@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: &gt; &gt; 클래스에 대 한 연산자 오버 로드'
 title: 고유 클래스에 대해 &gt;&gt; 연산자 오버로드
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - operator>>, overloading for your own classes
 - operator >>, overloading for your own classes
 ms.assetid: 40dab4e0-3f97-4745-9cc8-b86e740fa246
-ms.openlocfilehash: 672dfb7ec40b2f18cbde0adc92522d3194a5e738
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 4de7c16dd1c42f85f169da50f11a514eb245b47c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68450132"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340855"
 ---
 # <a name="overloading-the-gtgt-operator-for-your-own-classes"></a>고유 클래스에 대해 &gt;&gt; 연산자 오버로드
 
@@ -27,6 +28,6 @@ istream& operator>> (istream& is, Date& dt)
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [입력 스트림](../standard-library/input-streams.md)

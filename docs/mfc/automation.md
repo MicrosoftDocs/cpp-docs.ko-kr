@@ -1,5 +1,6 @@
 ---
-title: Automation
+description: '자세히 알아보기: 자동화'
+title: 자동화
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Automation servers, about Automation servers
@@ -20,14 +21,14 @@ helpviewer_keywords:
 - MFC COM, Automation
 - methods [MFC], Automation
 ms.assetid: 329117f0-c1aa-4680-a901-bfb71277dfba
-ms.openlocfilehash: e5790be14f26f59c2b51b339c8bee7c5eca7d692
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 8a038a3590c3db9c90c8f99eaaa6f98d2c4e20cc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616523"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339841"
 ---
-# <a name="automation"></a>Automation
+# <a name="automation"></a>자동화
 
 자동화(이전의 OLE 자동화) 기술은 한 애플리케이션에서 다른 애플리케이션에 구현된 개체를 조작하거나 개체를 조작할 수 있도록 노출시키는 것을 가능하게 하는 기술입니다.
 

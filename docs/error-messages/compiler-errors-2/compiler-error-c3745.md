@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3745'
 title: 컴파일러 오류 C3745
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3745
 ms.assetid: 1e64aec5-7e53-47e5-bc7d-3905230cfc66
-ms.openlocfilehash: e7e6bde7ce07edf7a75f38c37f3e4cbb3c6c3486
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: f34d3945761b8d0ba233f3963db9392c3dbcd7c6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74752459"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340218"
 ---
 # <a name="compiler-error-c3745"></a>컴파일러 오류 C3745
 
