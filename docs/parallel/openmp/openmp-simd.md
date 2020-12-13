@@ -1,31 +1,32 @@
 ---
+description: '자세한 정보: SIMD 확장'
 title: SIMD 확장
 ms.date: 03/20/2019
 helpviewer_keywords:
 - SIMD
 - OpenMP in Visual C++, new features
 - explicit parallelization, new features
-ms.openlocfilehash: 0a7f1142a3a432628795341f4885b76a5c144990
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 58a3f29002c4e517a2019454dfe741dfb5352a3e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81366461"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342428"
 ---
 # <a name="simd-extension"></a>SIMD 확장
 
-Visual C++는 현재 OpenMP 2.0 표준을 지원하지만 Visual Studio 2019는 이제 SIMD 기능도 제공합니다.
+Visual C++ 현재 OpenMP 2.0 표준을 지원 하지만 Visual Studio 2019도 이제 SIMD 기능을 제공 합니다.
 
 > [!NOTE]
-> SIMD를 사용하려면 스위치를 `-openmp:experimental` 사용할 때 추가 OpenMP 기능을 `-openmp` 사용할 수 없는 스위치로 컴파일합니다.
+> SIMD를 사용 하려면 스위치를 사용할 `-openmp:experimental` 때 사용할 수 없는 추가 OpenMP 기능을 사용 하도록 설정 하는 스위치를 사용 하 여 컴파일합니다 `-openmp` .
 >
-> `-openmp:experimental` 모든 OpenMP `-openmp`2.0 기능을 의미하는 스위치 서브섬이 사용에 포함되어 있습니다.
+> `-openmp:experimental`스위치 클래임의는 `-openmp` 모든 OpenMP 2.0 기능이 사용에 포함 됨을 의미 합니다.
 
-자세한 내용은 [비주얼 스튜디오에서 C++ OpenMP에 대한 SIMD 확장을](https://devblogs.microsoft.com/cppblog/simd-extension-to-c-openmp-in-visual-studio/)참조하십시오.
+자세한 내용은 [Visual Studio에서 c + + OpenMP 확장](https://devblogs.microsoft.com/cppblog/simd-extension-to-c-openmp-in-visual-studio/)(영문)을 참조 하세요.
 
-## <a name="openmp-simd-in-visual-c"></a>비주얼 C++ OpenMP SIMD
+## <a name="openmp-simd-in-visual-c"></a>Visual C++의 OpenMP SIMD
 
-OpenMP 4.0 표준에 도입된 OpenMP SIMD는 벡터 친화적 인 루프를 만드는 것을 목표로합니다. 컴파일러는 `simd` 루프 전에 지시문을 사용하여 벡터 종속성을 무시하고 루프를 가능한 한 벡터 친화적으로 만들고 여러 루프 반복을 동시에 실행하려는 사용자의 의도를 존중할 수 있습니다.
+Openmp 4.0 표준에서 도입 된 OpenMP SIMD는 벡터 친화적인 루프를 만드는 대상입니다. 루프 앞에 지시문을 사용 하 여 `simd` 컴파일러는 벡터 종속성을 무시 하 고, 가능한 한 벡터에 맞게 루프를 설정 하 고, 사용자가 여러 루프 반복을 동시에 실행 하도록 할 수 있습니다.
 
 ```c
     #pragma omp simd
@@ -37,15 +38,15 @@ OpenMP 4.0 표준에 도입된 OpenMP SIMD는 벡터 친화적 인 루프를 만
     }
 ```
 
-Visual C++는 유사한 비OpenMP 루프 `#pragma vector` pragmas를 제공하며 `#pragma ivdep`OpenMP SIMD를 사용하면 컴파일러가 다음과 같이 더 많은 작업을 수행할 수 있습니다.
+Visual C++는 및과 비슷한 OpenMP 이외의 루프 pragma를 제공 `#pragma vector` `#pragma ivdep` 하지만 openmp SIMD를 사용 하면 컴파일러는 다음과 같이 더 많은 작업을 수행할 수 있습니다.
 
-- 항상 현재 벡터 종속성을 무시할 수 있습니다.
-- `/fp:fast`루프 내에서 활성화됩니다.
-- 함수 호출이 있는 외부 루프 및 루프는 벡터 친화적입니다.
-- 중첩 루프는 하나의 루프로 결합하여 벡터 친화적으로 만들 수 있습니다.
-- 거친 그레인 멀티 스레딩 및 세분화된 `#pragma omp for simd` 벡터를 가능하게 하는 하이브리드 가속.  
+- 항상 제공 된 vector 종속성을 무시할 수 있습니다.
+- `/fp:fast` 는 루프 내에서 사용 하도록 설정 됩니다.
+- 함수 호출을 사용 하는 외부 루프와 루프는 벡터에 편리 합니다.
+- 중첩 된 루프를 하나의 루프로 병합 하 고 벡터에 편리 하 게 만들 수 있습니다.
+- `#pragma omp for simd`정교 하지 않은 다중 스레딩 및 세분화 된 벡터를 사용 하기 위한 하이브리드 가속.  
 
-벡터 친화적인 루프의 경우 벡터 지원 로그 스위치를 사용하지 않는 한 컴파일러는 자동으로 유지됩니다.
+벡터 친화적인 루프의 경우 벡터 지원 로그 스위치를 사용 하지 않으면 컴파일러는 자동으로 유지 됩니다.
 
 ```cmd
     cl -O2 -openmp:experimental -Qvec-report:2 mycode.cpp
@@ -57,7 +58,7 @@ Visual C++는 유사한 비OpenMP 루프 `#pragma vector` pragmas를 제공하�
     mycode.cpp(96) : info C5001: Omp simd loop vectorized
 ```
 
-벡터 친화적이지 않은 루프의 경우 컴파일러는 각 메시지를 발행합니다.
+벡터가 아닌 루프의 경우 컴파일러는 각 메시지를 발급 합니다.
 
 ```cmd
     cl -O2 -openmp:experimental mycode.cpp
@@ -70,23 +71,23 @@ Visual C++는 유사한 비OpenMP 루프 `#pragma vector` pragmas를 제공하�
 
 ### <a name="clauses"></a>절
 
-OpenMP SIMD 지시문은 벡터 지원을 향상시키기 위해 다음 절을 취할 수도 있습니다.
+OpenMP SIMD 지시어는 다음 절을 사용 하 여 벡터 지원을 향상 시킬 수도 있습니다.
 
-|지시문|Description|
+|지시문|설명|
 |---|---|
-|`simdlen(length)`|벡터 차선 수를 지정합니다.|
-|`safelen(length)`|벡터 종속성 거리를 지정합니다.|
+|`simdlen(length)`|벡터 레인 수를 지정 합니다.|
+|`safelen(length)`|벡터 종속성 거리를 지정 합니다.|
 |`linear(list[ : linear-step]`)|루프 유도 변수에서 배열 구독으로의 선형 매핑입니다.|
-|`aligned(list[ : alignment])`|데이터 정렬입니다.|
-|`private(list)`|데이터 민영화를 지정합니다.|
-|`lastprivate(list)`|마지막 반복에서 최종 값으로 데이터 민영화를 지정합니다.|
-|`reduction(reduction-identifier:list)`|사용자 지정된 감소 작업을 지정합니다.|
-|`collapse(n)`|결합 루프 둥지.|
+|`aligned(list[ : alignment])`|데이터 맞춤입니다.|
+|`private(list)`|데이터 개인화를 지정 합니다.|
+|`lastprivate(list)`|마지막 반복에서 최종 값을 사용 하 여 데이터 개인화를 지정 합니다.|
+|`reduction(reduction-identifier:list)`|사용자 지정 된 감소 작업을 지정 합니다.|
+|`collapse(n)`|병합 루프 중첩.|
 
 > [!NOTE]
-> 비유효 SIMD 절은 경고와 함께 컴파일러에 의해 구문 분석되고 무시됩니다.
+> 유효 하지 않은 SIMD 절은 컴파일러에서 경고를 사용 하 여 구문 분석 되 고 무시 됩니다.
 >
-> 예를 들어 다음 코드를 사용하면 다음과 같은 경고가 발생합니다.
+> 예를 들어 다음 코드를 사용 하면 경고가 발생 합니다.
 >
 > ```c
 >    #pragma omp simd simdlen(8)
@@ -104,9 +105,9 @@ OpenMP SIMD 지시문은 벡터 지원을 향상시키기 위해 다음 절을 �
 
 ### <a name="example"></a>예제
   
-OpenMP SIMD 지시문은 컴파일러가 벡터 친화적인 루프를 만드는 방법을 사용자에게 제공합니다. OpenMP SIMD 지시문으로 루프에 추가하면 여러 루프 반복이 동시에 실행됩니다.
+OpenMP SIMD 지시어는 컴파일러에서 벡터 친화적인 루프를 지정 하는 방법을 사용자에 게 제공 합니다. 루프에 OpenMP SIMD 지시문에 주석을 추가 하면 사용자는 여러 루프 반복을 동시에 실행 하려고 합니다.
 
-예를 들어 다음 루프는 OpenMP SIMD 지시문으로 추가됩니다. [i]에서 a[i]로 의 역속성이 있기 때문에 루프 반복 간에 완벽한 병렬 처리는 없지만 SIMD 지시문으로 인해 컴파일러는 여전히 첫 번째 문의 연속 반복을 하나의 벡터 명령으로 압축하고 병렬로 실행할 수 있습니다.
+예를 들어 다음 루프에는 OpenMP SIMD 지시문이 주석으로 추가 되어 있습니다. [I]에서 [i-1] (으)로의 역방향 종속성이 있기 때문에 루프 반복 간에 완벽 한 병렬 처리가 수행 되지 않지만 SIMD 지시문 때문에 컴파일러는 여전히 첫 번째 문의 연속 반복을 하나의 벡터 명령으로 압축 하 여 병렬로 실행할 수 있습니다.
 
 ```c
     #pragma omp simd
@@ -118,7 +119,7 @@ OpenMP SIMD 지시문은 컴파일러가 벡터 친화적인 루프를 만드는
     }
 ```
 
-따라서 컴파일러가 각 원래 루프 반복의 순차적 동작을 유지하므로 루프의 다음 변환된 벡터 형식은 **합법적입니다.** 즉, `a[i]` `a[-1]`다음에 `b[i]` 실행되고 마지막으로 `a[i]` `bar` 발생하는 호출이 수행됩니다.
+따라서 컴파일러가 원래 루프 반복의 순차적 동작을 유지 하기 때문에 다음과 같이 변환 된 루프의 벡터 형식이 **유효** 합니다. 즉,가 이후에 `a[i]` 실행 되 `a[-1]` 고, `b[i]` 가 이후이 `a[i]` 고,에 대 한 호출이 `bar` 마지막에 발생 합니다.
 
 ```c
     for (i = 0; i < count; i+=4)
@@ -132,7 +133,7 @@ OpenMP SIMD 지시문은 컴파일러가 벡터 친화적인 루프를 만드는
     }
 ```
 
-메모리 `*c` 참조를 루프 에서 이동하는 것은 `a[i]` `b[i]` **불법입니다.** 순차적 종속성을 깨뜨리면 하나의 원래 반복 내에서 명령문을 다시 정렬하는 것도 불법입니다. 예를 들어 다음과 같은 변환된 루프는 합법적이지 않습니다.
+또는로 별칭을 사용 하는 경우 루프에서 메모리 참조를 이동할 수 **없습니다** `*c` `a[i]` `b[i]` . 또한 순차적 종속성이 중단 되는 경우 하나의 원래 반복 내에서 문을 다시 정렬할 수 없습니다. 예를 들어 다음 변환 된 루프는 유효 하지 않습니다.
 
 ```c
     c = b;
@@ -150,4 +151,4 @@ OpenMP SIMD 지시문은 컴파일러가 벡터 친화적인 루프를 만드는
 
 ## <a name="see-also"></a>참고 항목
 
-[/openmp(OpenMP 2.0 지원 사용)](../../build/reference/openmp-enable-openmp-2-0-support.md)<br/>
+[/openmp (OpenMP 2.0 지원 사용)](../../build/reference/openmp-enable-openmp-2-0-support.md)<br/>
