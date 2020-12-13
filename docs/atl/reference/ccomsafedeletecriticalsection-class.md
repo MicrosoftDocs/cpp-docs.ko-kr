@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CComSafeDeleteCriticalSection 클래스'
 title: CComSafeDeleteCriticalSection 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComSafeDeleteCriticalSection class
 ms.assetid: 4d2932c4-ba8f-48ec-8664-1db8bed01314
-ms.openlocfilehash: 115cbd466f51db271f4be65ce708fe54c7f2b2ce
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 73e27fb267cbfc8cde248c7ac896d29de2a91f77
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833636"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97142171"
 ---
 # <a name="ccomsafedeletecriticalsection-class"></a>CComSafeDeleteCriticalSection 클래스
 

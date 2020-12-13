@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CComTearOffObject 클래스'
 title: CComTearOffObject 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - tear-off interfaces
 - CComTearOffObject class
 ms.assetid: d974b598-c6b2-42b1-8360-9190d9d0fbf3
-ms.openlocfilehash: 3eee1d33d5eded75d8805584a24e6b6f396a8369
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b9fe9e7a790a004aec1de059415bd5f47572455b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833623"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97142157"
 ---
 # <a name="ccomtearoffobject-class"></a>CComTearOffObject 클래스
 
@@ -59,7 +60,7 @@ ATL은 두 단계에서 분리 인터페이스를 구현 합니다 `CComTearOffO
 
 ### <a name="ccomtearoffobjectbase-methods"></a>CComTearOffObjectBase 메서드
 
-|기능|설명|
+|함수|설명|
 |-|-|
 |[CComTearOffObjectBase](#ccomtearoffobjectbase)|생성자입니다.|
 
@@ -146,7 +147,7 @@ CComTearOffObjectBase();
 
 ## <a name="ccomtearoffobjectm_powner"></a><a name="m_powner"></a> CComTearOffObject:: m_pOwner
 
-*Owner*에서 파생 된 [CComObject](../../atl/reference/ccomobject-class.md) 개체에 대 한 포인터입니다.
+*Owner* 에서 파생 된 [CComObject](../../atl/reference/ccomobject-class.md) 개체에 대 한 포인터입니다.
 
 ```
 CComObject<Owner>* m_pOwner;
@@ -175,7 +176,7 @@ STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 진행 요청 되는 인터페이스의 IID입니다.
 
 *ppvObject*<br/>
-제한이 *Iid*로 식별 되는 인터페이스 포인터에 대 한 포인터 이거나, 인터페이스를 찾을 수 없는 경우 NULL입니다.
+제한이 *Iid* 로 식별 되는 인터페이스 포인터에 대 한 포인터 이거나, 인터페이스를 찾을 수 없는 경우 NULL입니다.
 
 ### <a name="return-value"></a>반환 값
 

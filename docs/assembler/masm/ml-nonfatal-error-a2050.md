@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: ML 심각 하지 않은 오류 A2050'
 title: ML 심각하지 않은 오류 A2050
 ms.date: 12/17/2019
 ms.custom: error-reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - A2050
 ms.assetid: 16f3a58f-4bde-48f1-b0e3-2ed9612780a5
-ms.openlocfilehash: 311aedd0cc739fd862efb0a18cc444b3fb75b165
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: 9ae38353d3c2e2a2e25e3e5c4a87e3b3b6888781
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75316982"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97129001"
 ---
 # <a name="ml-nonfatal-error-a2050"></a>ML 심각하지 않은 오류 A2050
 
@@ -26,8 +27,8 @@ ms.locfileid: "75316982"
 
 - 실수를 사용 하 여 [DWORD](dword.md), [qword(64](qword.md)또는 [1tb](tbyte.md)이외의 지시어를 초기화 했습니다.
 
-- BCD가 `TBYTE`이외의 지시어를 초기화 하는 데 사용 되었습니다.
+- BCD를 사용 하 여 이외의 지시문을 초기화 했습니다 `TBYTE` .
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [ML 오류 메시지](ml-error-messages.md)

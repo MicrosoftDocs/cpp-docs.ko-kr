@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: ML 심각 하지 않은 오류 A2206'
 title: ML 심각하지 않은 오류 A2206
 ms.date: 12/17/2019
 ms.custom: error-reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - A2206
 ms.assetid: 711846d0-5a09-4353-8857-60588c25526a
-ms.openlocfilehash: 6590d294b967d33bb016078f187c7aeb0649719d
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: 40912f6dadbd708dd15f45a14cd1a799e61ec6a8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75316787"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97128429"
 ---
 # <a name="ml-nonfatal-error-a2206"></a>ML 심각하지 않은 오류 A2206
 
@@ -26,6 +27,6 @@ ms.locfileid: "75316787"
 value1 = ( 1 + 2 ) 3
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [ML 오류 메시지](ml-error-messages.md)

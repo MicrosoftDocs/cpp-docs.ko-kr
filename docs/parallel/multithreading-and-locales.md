@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 다중 스레딩 및 로캘'
 title: 다중 스레딩 및 로캘
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - threading [C++], locales
 - per-thread locale
 ms.assetid: d6fb159a-eaca-4130-a51a-f95d62f71485
-ms.openlocfilehash: 82b410c592e5b68737514dda5a864c7bd15f6dc3
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: 246eb6c9be7046a77770de701d15754579b66055
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008591"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97149983"
 ---
 # <a name="multithreading-and-locales"></a>다중 스레딩 및 로캘
 
@@ -435,7 +436,7 @@ unsigned __stdcall RunThreadB(void *params)
 [Thread main] locale::global is set to "French_France.1252"
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [이전 코드에 대 한 다중 스레딩 지원 (Visual C++)](multithreading-support-for-older-code-visual-cpp.md)<br/>
 [_beginthread, _beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md)<br/>

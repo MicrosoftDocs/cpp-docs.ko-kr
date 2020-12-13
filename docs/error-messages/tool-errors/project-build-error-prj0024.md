@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 프로젝트 빌드 오류 PRJ0024'
 title: 프로젝트 빌드 오류 PRJ0024
 ms.date: 08/27/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0024
 ms.assetid: 8bde6368-6c1b-4e04-bc5e-3c6d0b8fa1d7
-ms.openlocfilehash: bcfdcce54618acca0e22daa54e95083cf3ee9d50
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e42df62181d02cf8d4696cc4f48afcec52cd4d76
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80192616"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97150464"
 ---
 # <a name="project-build-error-prj0024"></a>프로젝트 빌드 오류 PRJ0024
 

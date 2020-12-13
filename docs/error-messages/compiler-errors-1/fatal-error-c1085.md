@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 심각한 오류 C1085'
 title: 심각한 오류 C1085
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1085
 ms.assetid: f2766365-d09b-4299-8a98-12e5aca98568
-ms.openlocfilehash: e9b6cc63894607de94c8da455754f98937e92677
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: cee0747744082cbceb10c0d493d38d513245809d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80204063"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97145290"
 ---
 # <a name="fatal-error-c1085"></a>심각한 오류 C1085
 

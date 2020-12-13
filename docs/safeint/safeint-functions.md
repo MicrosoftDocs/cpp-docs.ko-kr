@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: SafeInt 함수'
 title: SafeInt 함수
 ms.date: 06/23/2020
 ms.topic: reference
@@ -31,12 +32,12 @@ helpviewer_keywords:
 - SafeNotEquals function
 - SafeSubtract function
 ms.assetid: fdc208e5-5d8a-41a9-8271-567fd438958d
-ms.openlocfilehash: c968601d95403dd63540a7a8ec2190a199fa1c5a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0dc195742b4f848dd6f05bae1537dc0a4fa5ead5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219341"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97149606"
 ---
 # <a name="safeint-functions"></a>SafeInt 함수
 
@@ -65,10 +66,10 @@ SafeInt 라이브러리는 [SafeInt 클래스](safeint-class.md) 인스턴스를
 
 섹션                                                  | Description
 -------------------------------------------------------- | ----------------------------------------------------
-[SafeInt](safeint-class.md)                   | `SafeInt` 클래스입니다.
+[SafeInt](safeint-class.md)                   | `SafeInt` 클래스
 [SafeIntException](safeintexception-class.md) | SafeInt 라이브러리와 관련된 예외 클래스입니다.
 
-## <a name="safeadd"></a><a name="safeadd"></a>SafeAdd
+## <a name="safeadd"></a><a name="safeadd"></a> SafeAdd
 
 오버플로를 방지하는 방식으로 두 숫자를 더합니다.
 
@@ -83,7 +84,7 @@ inline bool SafeAdd (
 
 ### <a name="parameters"></a>매개 변수
 
-*트*<br/>
+*t*<br/>
 [in] 더할 첫 번째 숫자입니다. T 형식이어야 합니다.
 
 *u*<br/>
@@ -92,11 +93,11 @@ inline bool SafeAdd (
 *result*<br/>
 [out] `SafeAdd`에서 결과를 저장하는 매개 변수입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 오류가 발생 하지 않는 경우 **`false`** 오류가 발생 하면입니다.
 
-## <a name="safecast"></a><a name="safecast"></a>SafeCast
+## <a name="safecast"></a><a name="safecast"></a> SafeCast
 
 한 형식의 숫자를 다른 형식으로 캐스팅합니다.
 
@@ -116,11 +117,11 @@ inline bool SafeCast (
 *수행할 작업*<br/>
 [out] 새 숫자 형식에 대한 참조입니다. `U` 형식이어야 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 오류가 발생 하지 않는 경우 **`false`** 오류가 발생 하면입니다.
 
-## <a name="safedivide"></a><a name="safedivide"></a>SafeDivide
+## <a name="safedivide"></a><a name="safedivide"></a> SafeDivide
 
 0으로 나누기를 방지하는 방식으로 두 숫자를 나눕니다.
 
@@ -135,7 +136,7 @@ inline bool SafeDivide (
 
 ### <a name="parameters"></a>매개 변수
 
-*트*<br/>
+*t*<br/>
 [in] 피제수입니다. T 형식이어야 합니다.
 
 *u*<br/>
@@ -144,11 +145,11 @@ inline bool SafeDivide (
 *result*<br/>
 [out] `SafeDivide`에서 결과를 저장하는 매개 변수입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 오류가 발생 하지 않는 경우 **`false`** 오류가 발생 하면입니다.
 
-## <a name="safeequals"></a><a name="safeequals"></a>SafeEquals
+## <a name="safeequals"></a><a name="safeequals"></a> SafeEquals
 
 두 숫자를 비교 하 여 같은지 여부를 확인 합니다.
 
@@ -162,13 +163,13 @@ inline bool SafeEquals (
 
 ### <a name="parameters"></a>매개 변수
 
-*트*<br/>
+*t*<br/>
 [in] 비교할 첫 번째 숫자입니다. T 형식이어야 합니다.
 
 *u*<br/>
 [in] 비교할 두 번째 숫자입니다. U 형식이어야 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`***t* 와 *u* 가 같으면이 고, 그렇지 않으면입니다. 그렇지 않으면 **`false`** 입니다.
 
@@ -176,7 +177,7 @@ inline bool SafeEquals (
 
 `==`가 두 가지 다른 형식의 숫자를 비교할 수 있게 해주기 때문에 이 메서드는 `SafeEquals`을 향상시켜 줍니다.
 
-## <a name="safegreaterthan"></a><a name="safegreaterthan"></a>SafeGreaterThan
+## <a name="safegreaterthan"></a><a name="safegreaterthan"></a> SafeGreaterThan
 
 두 숫자를 비교합니다.
 
@@ -190,21 +191,21 @@ inline bool SafeGreaterThan (
 
 ### <a name="parameters"></a>매개 변수
 
-*트*<br/>
+*t*<br/>
 [in] 비교할 첫 번째 숫자입니다. `T` 형식이어야 합니다.
 
 *u*<br/>
 [in] 비교할 두 번째 숫자입니다. `U` 형식이어야 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-**`true`***t* 가 *u*보다 크면이 고, 그렇지 않으면입니다. 그렇지 않으면 **`false`** 입니다.
+**`true`***t* 가 *u* 보다 크면이 고, 그렇지 않으면입니다. 그렇지 않으면 **`false`** 입니다.
 
 ### <a name="remarks"></a>설명
 
 `SafeGreaterThan`는 서로 다른 두 형식의 숫자를 비교할 수 있도록 하여 일반 비교 연산자를 확장합니다.
 
-## <a name="safegreaterthanequals"></a><a name="safegreaterthanequals"></a>SafeGreaterThanEquals
+## <a name="safegreaterthanequals"></a><a name="safegreaterthanequals"></a> SafeGreaterThanEquals
 
 두 숫자를 비교합니다.
 
@@ -218,21 +219,21 @@ inline bool SafeGreaterThanEquals (
 
 ### <a name="parameters"></a>매개 변수
 
-*트*<br/>
+*t*<br/>
 [in] 비교할 첫 번째 숫자입니다. `T` 형식이어야 합니다.
 
 *u*<br/>
 [in] 비교할 두 번째 숫자입니다. `U` 형식이어야 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-**`true`***t* 가 *u*보다 크거나 같은 경우 그렇지 않으면 **`false`** 입니다.
+**`true`***t* 가 *u* 보다 크거나 같은 경우 그렇지 않으면 **`false`** 입니다.
 
 ### <a name="remarks"></a>설명
 
 `SafeGreaterThanEquals`는 서로 다른 두 형식의 숫자를 비교할 수 있기 때문에 표준 비교 연산자를 개선합니다.
 
-## <a name="safelessthan"></a><a name="safelessthan"></a>SafeLessThan
+## <a name="safelessthan"></a><a name="safelessthan"></a> SafeLessThan
 
 한 숫자가 다른 숫자보다 작은지 여부를 확인합니다.
 
@@ -246,21 +247,21 @@ inline bool SafeLessThan (
 
 ### <a name="parameters"></a>매개 변수
 
-*트*<br/>
+*t*<br/>
 [in] 첫 번째 숫자입니다. `T` 형식이어야 합니다.
 
 *u*<br/>
 진행 두 번째 숫자입니다. `U` 형식이어야 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-**`true`***t* 가 *u*보다 작은 경우 그렇지 않으면 **`false`** 입니다.
+**`true`***t* 가 *u* 보다 작은 경우 그렇지 않으면 **`false`** 입니다.
 
 ### <a name="remarks"></a>설명
 
 이 메서드는 `SafeLessThan`을 사용하여 서로 다른 두 형식의 숫자를 비교할 수 있기 때문에 표준 비교 연산자를 개선합니다.
 
-## <a name="safelessthanequals"></a><a name="safelessthanequals"></a>SafeLessThanEquals
+## <a name="safelessthanequals"></a><a name="safelessthanequals"></a> SafeLessThanEquals
 
 두 숫자를 비교합니다.
 
@@ -274,21 +275,21 @@ inline bool SafeLessThanEquals (
 
 ### <a name="parameters"></a>매개 변수
 
-*트*<br/>
+*t*<br/>
 [in] 비교할 첫 번째 숫자입니다. `T` 형식이어야 합니다.
 
 *u*<br/>
 [in] 비교할 두 번째 숫자입니다. `U` 형식이어야 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-**`true`***t* 가 *u*보다 작거나 같은 경우 그렇지 않으면 **`false`** 입니다.
+**`true`***t* 가 *u* 보다 작거나 같은 경우 그렇지 않으면 **`false`** 입니다.
 
 ### <a name="remarks"></a>설명
 
 `SafeLessThanEquals`는 서로 다른 두 형식의 숫자를 비교할 수 있도록 하여 일반 비교 연산자를 확장합니다.
 
-## <a name="safemodulus"></a><a name="safemodulus"></a>SafeModulus
+## <a name="safemodulus"></a><a name="safemodulus"></a> SafeModulus
 
 두 숫자의 모듈러스 연산을 수행합니다.
 
@@ -303,7 +304,7 @@ inline bool SafeModulus (
 
 ### <a name="parameters"></a>매개 변수
 
-*트*<br/>
+*t*<br/>
 [in] 제수입니다. `T` 형식이어야 합니다.
 
 *u*<br/>
@@ -312,11 +313,11 @@ inline bool SafeModulus (
 *result*<br/>
 [out] `SafeModulus`에서 결과를 저장하는 매개 변수입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 오류가 발생 하지 않는 경우 **`false`** 오류가 발생 하면입니다.
 
-## <a name="safemultiply"></a><a name="safemultiply"></a>SafeMultiply
+## <a name="safemultiply"></a><a name="safemultiply"></a> SafeMultiply
 
 두 숫자를 곱하고 오버플로를 방지합니다.
 
@@ -331,7 +332,7 @@ inline bool SafeMultiply (
 
 ### <a name="parameters"></a>매개 변수
 
-*트*<br/>
+*t*<br/>
 [in] 곱할 첫 번째 숫자입니다. `T` 형식이어야 합니다.
 
 *u*<br/>
@@ -340,11 +341,11 @@ inline bool SafeMultiply (
 *result*<br/>
 [out] `SafeMultiply`에서 결과를 저장하는 매개 변수입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 오류가 발생 하지 않는 경우 **`false`** 오류가 발생 하면입니다.
 
-## <a name="safenotequals"></a><a name="safenotequals"></a>SafeNotEquals
+## <a name="safenotequals"></a><a name="safenotequals"></a> SafeNotEquals
 
 두 숫자가 같지 않은 지 여부를 확인 합니다.
 
@@ -358,13 +359,13 @@ inline bool SafeNotEquals (
 
 ### <a name="parameters"></a>매개 변수
 
-*트*<br/>
+*t*<br/>
 [in] 비교할 첫 번째 숫자입니다. `T` 형식이어야 합니다.
 
 *u*<br/>
 [in] 비교할 두 번째 숫자입니다. `U` 형식이어야 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`***t* 와 *u* 가 같지 않으면이 고, 그렇지 않으면입니다. 그렇지 않으면 **`false`** 입니다.
 
@@ -372,7 +373,7 @@ inline bool SafeNotEquals (
 
 `!=`가 두 가지 다른 형식의 숫자를 비교할 수 있게 해주기 때문에 이 메서드는 `SafeNotEquals`을 향상시켜 줍니다.
 
-## <a name="safesubtract"></a><a name="safesubtract"></a>SafeSubtract
+## <a name="safesubtract"></a><a name="safesubtract"></a> SafeSubtract
 
 오버플로를 방지하는 방식으로 두 숫자를 뺍니다.
 
@@ -387,15 +388,15 @@ inline bool SafeSubtract (
 
 ### <a name="parameters"></a>매개 변수
 
-*트*<br/>
+*t*<br/>
 [in] 빼기의 첫 번째 숫자입니다. `T` 형식이어야 합니다.
 
 *u*<br/>
-[in] *t*에서 뺄 숫자입니다. `U` 형식이어야 합니다.
+[in] *t* 에서 뺄 숫자입니다. `U` 형식이어야 합니다.
 
 *result*<br/>
 [out] `SafeSubtract`에서 결과를 저장하는 매개 변수입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 오류가 발생 하지 않는 경우 **`false`** 오류가 발생 하면입니다.

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 연습: join을 사용 하 여 교착 상태 방지'
 title: '연습: join을 사용하여 교착 상태 방지'
 ms.date: 04/25/2019
 helpviewer_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - non-greedy joins, example
 - join class, example
 ms.assetid: d791f697-bb93-463e-84bd-5df1651b7446
-ms.openlocfilehash: 5bdd6cd81051d224714dd66d4604cbdec4ddb552
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b74a7cd3f5f2326bb73ece13e16be95d6677bdd0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217885"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97150152"
 ---
 # <a name="walkthrough-using-join-to-prevent-deadlock"></a>연습: join을 사용하여 교착 상태 방지
 
-이 항목에서는 만찬 문제를 사용 하 여 [concurrency:: join](../../parallel/concrt/reference/join-class.md) 클래스를 사용 하 여 응용 프로그램의 교착 상태를 방지 하는 방법을 설명 합니다. 소프트웨어 애플리케이션에서 *교착 상태*는 두 개 이상의 프로세스가 각각 리소스를 보유하고 함께 다른 프로세스가 다른 리소스를 해제할 때까지 대기하는 경우 발생합니다.
+이 항목에서는 만찬 문제를 사용 하 여 [concurrency:: join](../../parallel/concrt/reference/join-class.md) 클래스를 사용 하 여 응용 프로그램의 교착 상태를 방지 하는 방법을 설명 합니다. 소프트웨어 애플리케이션에서 *교착 상태* 는 두 개 이상의 프로세스가 각각 리소스를 보유하고 함께 다른 프로세스가 다른 리소스를 해제할 때까지 대기하는 경우 발생합니다.
 
 식탁 (만찬) 문제는 여러 동시 프로세스 간에 리소스 집합을 공유할 때 발생할 수 있는 일반적인 문제 집합의 특정 예입니다.
 
@@ -26,7 +27,7 @@ ms.locfileid: "87217885"
 
 - [비동기 에이전트](../../parallel/concrt/asynchronous-agents.md)
 
-- [연습: 에이전트 기반 응용 프로그램 만들기](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md)
+- [연습: Agent-Based 응용 프로그램 만들기](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md)
 
 - [비동기 메시지 블록](../../parallel/concrt/asynchronous-message-blocks.md)
 
@@ -34,7 +35,7 @@ ms.locfileid: "87217885"
 
 - [동기화 데이터 구조](../../parallel/concrt/synchronization-data-structures.md)
 
-## <a name="sections"></a><a name="top"></a>섹션이
+## <a name="sections"></a><a name="top"></a> 섹션이
 
 이 연습에는 다음과 같은 섹션이 있습니다.
 
@@ -44,7 +45,7 @@ ms.locfileid: "87217885"
 
 - [Join을 사용 하 여 교착 상태 방지](#solution)
 
-## <a name="the-dining-philosophers-problem"></a><a name="problem"></a>식탁 만찬 문제
+## <a name="the-dining-philosophers-problem"></a><a name="problem"></a> 식탁 만찬 문제
 
 만찬 문제는 응용 프로그램에서 교착 상태가 발생 하는 방식을 보여 줍니다. 이 문제에서 5 개의 만찬가 둥근 테이블에 있습니다. 모든 philosopher는 사고와 시기 사이를 대체 합니다. 모든 philosopher는 인접 한 chopstick를 왼쪽에, 다른 chopstick는 오른쪽에 있는를 공유 해야 합니다. 다음 그림에서는이 레이아웃을 보여 줍니다.
 
@@ -54,7 +55,7 @@ Philosopher는 두 가지 젓가락를 보유 해야 합니다. 모든 philosoph
 
 [[맨 위로](#top)이동]
 
-## <a name="a-nave-implementation"></a><a name="deadlock"></a>Naive 구현
+## <a name="a-nave-implementation"></a><a name="deadlock"></a> Naive 구현
 
 다음 예제에서는 naive의 식탁 구현을 보여 줍니다. `philosopher` [Concurrency:: agent](../../parallel/concrt/reference/agent-class.md)에서 파생 되는 클래스를 사용 하면 각 philosopher가 독립적으로 작동할 수 있습니다. 이 예제에서는 [concurrency:: critical_section](../../parallel/concrt/reference/critical-section-class.md) 개체의 공유 배열을 사용 하 여 각 `philosopher` 개체에 젓가락 쌍에 대 한 단독 액세스를 제공 합니다.
 
@@ -76,7 +77,7 @@ Philosopher는 두 가지 젓가락를 보유 해야 합니다. 모든 philosoph
 
 [[맨 위로](#top)이동]
 
-## <a name="using-join-to-prevent-deadlock"></a><a name="solution"></a>Join을 사용 하 여 교착 상태 방지
+## <a name="using-join-to-prevent-deadlock"></a><a name="solution"></a> Join을 사용 하 여 교착 상태 방지
 
 이 섹션에서는 메시지 버퍼 및 메시지 전달 함수를 사용 하 여 교착 상태의 가능성을 제거 하는 방법을 보여 줍니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 옵션, ATL 속성 페이지 마법사'
 title: 옵션, ATL 속성 페이지 마법사
 ms.date: 05/09/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - ATL Property Page Wizard, options
 ms.assetid: a7107779-b2ea-4f99-b84b-7f3e0c504bc8
-ms.openlocfilehash: 74cf72feedd8dc8e1186d54a8abe840195964620
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: ea7508f49e48c2ef1387fb4b48b816f4e16cdb99
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92923657"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97138998"
 ---
 # <a name="options-atl-property-page-wizard"></a>옵션, ATL 속성 페이지 마법사
 
@@ -31,16 +32,16 @@ Visual Studio 2019 이상에서는 ATL 속성 페이지 마법사를 사용할 �
 
    자세한 내용은 [프로젝트의 스레딩 모델 지정](../../atl/specifying-the-threading-model-for-a-project-atl.md)을 참조하세요.
 
-   |옵션|Description|
+   |옵션|설명|
    |------------|-----------------|
    |**Single**|속성 페이지가 주 COM 스레드에서만 실행됩니다.|
    |**아파트로**|모든 단일 스레드 아파트에서 속성 페이지를 만들 수 있습니다. 기본값입니다.|
 
-- **요약**
+- **집계**
 
    만드는 속성 페이지에 대한 집계 지원을 추가합니다. 자세한 내용은 [집계](../../atl/aggregation.md)를 참조하세요.
 
-   |옵션|Description|
+   |옵션|설명|
    |------------|-----------------|
    |**예**|집계할 수 있는 속성 페이지를 만듭니다.|
    |**아니요**|집계할 수 없는 속성 페이지를 만듭니다.|

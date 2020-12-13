@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4639'
 title: 컴파일러 경고(수준 4) C4639
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4639
 ms.assetid: f94f7392-cdbb-4bf4-8a00-20dc90d3efe9
-ms.openlocfilehash: d379b159cd7fd67629ea74c47a9e55f1167dc74a
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a2ce6a190b7b59905746e029a2c99ed843136caa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80198252"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97134149"
 ---
 # <a name="compiler-warning-level-4-c4639"></a>컴파일러 경고(수준 4) C4639
 

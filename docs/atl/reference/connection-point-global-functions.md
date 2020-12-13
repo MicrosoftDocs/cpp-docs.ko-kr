@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 연결 지점 전역 함수'
 title: 연결 지점 전역 함수
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - connection points [C++], global functions
 ms.assetid: bcb4bf50-2155-4e20-b8bb-f2908b03a6e7
-ms.openlocfilehash: 1a648f49b0f3715fd322b1099dcebbf194f57a10
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 33a9f81b086b572bb31f730e4a6ce1bac0fb45d2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833532"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141143"
 ---
 # <a name="connection-point-global-functions"></a>연결 지점 전역 함수
 
@@ -22,7 +23,7 @@ ms.locfileid: "88833532"
 > [!IMPORTANT]
 > 다음 표에 나열 된 함수는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.
 
-|기능|설명|
+|함수|설명|
 |-|-|
 |[AtlAdvise](#atladvise)|개체의 연결 지점과 클라이언트의 싱크 간에 연결을 만듭니다.|
 |[AtlUnadvise](#atlunadvise)|를 통해 설정 된 연결을 종료 `AtlAdvise` 합니다.|

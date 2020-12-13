@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 레지스트리 및 TypeLib 전역 함수'
 title: 레지스트리 및 TypeLib 전역 함수
 ms.date: 03/27/2019
 f1_keywords:
@@ -17,12 +18,12 @@ f1_keywords:
 helpviewer_keywords:
 - RegistryDataExchange function, global functions
 ms.assetid: d58b8a4e-975c-4417-8b34-d3c847f679b3
-ms.openlocfilehash: 0f29f8cac62a7452781e8fde697cdf992db00b8c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d7420dbbb472f1fc8b01329e9ded4c887e2bd71d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834620"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97138889"
 ---
 # <a name="registry-and-typelib-global-functions"></a>레지스트리 및 TypeLib 전역 함수
 
@@ -77,7 +78,7 @@ ATLINLINE ATLAPI AtlGetPerUserRegistration(bool* pEnabled);
 
 ### <a name="remarks"></a>설명
 
-레지스트리 리디렉션은 기본적으로 사용 되지 않습니다. 이 옵션을 사용 하도록 설정 하면 레지스트리 액세스가 **HKEY_CURRENT_USER \\\\\C\\c\\cc\\c\**
+레지스트리 리디렉션은 기본적으로 사용 되지 않습니다. 이 옵션을 사용 하도록 설정 하면 레지스트리 액세스가 **HKEY_CURRENT_USER\Software\Classes** 으로 리디렉션됩니다.
 
 리디렉션이 전역이 아닙니다. 이 레지스트리 리디렉션의 MFC 및 ATL 프레임 워크도 영향을 받습니다.
 
@@ -309,7 +310,7 @@ ATLINLINE ATLAPI AtlSetPerUserRegistration(bool bEnable);
 
 ### <a name="remarks"></a>설명
 
-레지스트리 리디렉션은 기본적으로 사용 되지 않습니다. 이 옵션을 사용 하도록 설정 하면 레지스트리 액세스가 **HKEY_CURRENT_USER \\\\\C\\c\\cc\\c\**
+레지스트리 리디렉션은 기본적으로 사용 되지 않습니다. 이 옵션을 사용 하도록 설정 하면 레지스트리 액세스가 **HKEY_CURRENT_USER\Software\Classes** 으로 리디렉션됩니다.
 
 리디렉션이 전역이 아닙니다. 이 레지스트리 리디렉션의 MFC 및 ATL 프레임 워크도 영향을 받습니다.
 
@@ -383,7 +384,7 @@ ATLINLINE ATLAPI AtlLoadTypeLib(
 
 ### <a name="remarks"></a>설명
 
-이 도우미 함수는 AtlUnRegisterTypeLib [Registertypelib](#atlregistertypelib) 및 [AtlUnRegisterTypeLib](#atlunregistertypelib)에서 활용 됩니다.
+이 도우미 함수는 AtlUnRegisterTypeLib [Registertypelib](#atlregistertypelib) 및 [](#atlunregistertypelib)에서 활용 됩니다.
 
 ## <a name="atlupdateregistryfromresourced"></a><a name="atlupdateregistryfromresourced"></a> AtlUpdateRegistryFromResourceD
 
@@ -427,7 +428,7 @@ HRESULT RegistryDataExchange(
 
 함수에서 수행 해야 하는 작업을 나타내는 열거형 값은 다음 표에 나와 있습니다.
 
-|열거형 값|작업(Operation)|
+|열거형 값|연산|
 |----------------|---------------|
 |eReadFromReg|레지스트리에서 데이터를 읽습니다.|
 |eWriteToReg|레지스트리에 데이터를 씁니다.|

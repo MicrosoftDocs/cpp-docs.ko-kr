@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: vtordisp pragma'
 title: vtordisp pragma
 ms.date: 08/29/2019
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - pragmas, vtordisp
 - vtordisp pragma
 ms.assetid: 05b7d73c-43fa-4b62-8c8a-170a9e427391
-ms.openlocfilehash: a6ffc5c0323389d812e659ff68555a8c8c993126
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2cbb8b09584224a454dfe23d5dfd4500f09a1d9b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219367"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97149645"
 ---
 # <a name="vtordisp-pragma"></a>vtordisp pragma
 
@@ -21,7 +22,7 @@ ms.locfileid: "87219367"
 
 숨겨진 `vtordisp` 생성/소멸 치환 멤버의 추가를 제어 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **#pragma vtordisp (** [ **push,** ] *n* **)**\
 > **pop (#pragma vtordisp)**\
@@ -31,7 +32,7 @@ ms.locfileid: "87219367"
 ### <a name="parameters"></a>매개 변수
 
 **누르기**\
-`vtordisp`내부 컴파일러 스택에 현재 설정을 푸시하고 새 `vtordisp` 설정을 *n*으로 설정 합니다.  *N* 을 지정 하지 않으면 현재 `vtordisp` 설정이 변경 되지 않습니다.
+`vtordisp`내부 컴파일러 스택에 현재 설정을 푸시하고 새 `vtordisp` 설정을 *n* 으로 설정 합니다.  *N* 을 지정 하지 않으면 현재 `vtordisp` 설정이 변경 되지 않습니다.
 
 **창을**\
 내부 컴파일러 스택에서 상위 레코드를 제거 하 고 `vtordisp` 설정을 제거 된 값으로 복원 합니다.
@@ -51,9 +52,9 @@ ms.locfileid: "87219367"
 
 **Vtordisp** pragma는 뒤에 오는 클래스의 레이아웃에 영향을 줍니다. `/vd0`, `/vd1` 및 옵션은 `/vd2` 전체 모듈에 대해 동일한 동작을 지정 합니다. 0 또는 **off** 를 지정 하면 숨겨진 멤버가 표시 되지 않습니다 `vtordisp` . 클래스의 생성자 및 소멸자가 포인터가 가리키는 개체에 대해 가상 함수를 호출할 가능성이 없는 경우에만 **vtordisp** 를 해제 **`this`** 합니다.
 
-기본값인 1 또는 **on**을 지정 하면 필요한 경우 숨겨진 멤버를 사용할 수 있습니다 `vtordisp` .
+기본값인 1 또는 **on** 을 지정 하면 필요한 경우 숨겨진 멤버를 사용할 수 있습니다 `vtordisp` .
 
-2를 지정 하면 `vtordisp` 가상 함수를 사용 하는 모든 가상 기본에 대해 숨겨진 멤버를 사용할 수 있습니다.  `#pragma vtordisp(2)`는 **`dynamic_cast`** 부분적으로 생성 된 개체에 대 한의 올바른 성능을 보장 하기 위해 필요할 수 있습니다. 자세한 내용은 [컴파일러 경고 (수준 1) C4436](../error-messages/compiler-warnings/compiler-warning-level-1-c4436.md)를 참조 하세요.
+2를 지정 하면 `vtordisp` 가상 함수를 사용 하는 모든 가상 기본에 대해 숨겨진 멤버를 사용할 수 있습니다.  `#pragma vtordisp(2)` 는 **`dynamic_cast`** 부분적으로 생성 된 개체에 대 한의 올바른 성능을 보장 하기 위해 필요할 수 있습니다. 자세한 내용은 [컴파일러 경고 (수준 1) C4436](../error-messages/compiler-warnings/compiler-warning-level-1-c4436.md)를 참조 하세요.
 
 `#pragma vtordisp()`인수 없이는 `vtordisp` 설정을 초기 설정으로 복원 합니다.
 

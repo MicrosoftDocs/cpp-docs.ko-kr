@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 인터넷의 액티브 기술'
 title: 인터넷의 액티브 기술
 ms.date: 09/12/2018
 helpviewer_keywords:
 - Internet applications [MFC], Active technology
 ms.assetid: 6f782aa1-5c2f-47a2-9e63-ddd0829d5a08
-ms.openlocfilehash: 2cd087c99c1ebdcaa8b4a44524e7691984877f20
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 4f8035e0af233eac55c00a84679f79d214978219
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84625148"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97150243"
 ---
 # <a name="active-technology-on-the-internet"></a>인터넷의 액티브 기술
 
@@ -38,4 +39,4 @@ VBScript 및 기타 스크립팅 언어는 컨트롤을 연결 하 고 웹 페�
 
 [MFC 인터넷 프로그래밍 기본 사항](mfc-internet-programming-basics.md)<br/>
 [인터넷의 ActiveX 컨트롤](activex-controls-on-the-internet.md)<br/>
-[Win32 인터넷 확장명(WinInet)](win32-internet-extensions-wininet.md)
+[Win32 인터넷 확장 (WinInet)](win32-internet-extensions-wininet.md)

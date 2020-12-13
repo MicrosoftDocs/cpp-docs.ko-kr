@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: OLE 배경'
 title: OLE 백그라운드
 ms.date: 11/04/2016
 helpviewer_keywords:
 - OLE, about OLE
 ms.assetid: 5f654eb5-66b1-40c9-9215-bb85356a67f8
-ms.openlocfilehash: baa2bca8b2e06fd55591c3a4fa2a9752abbb5355
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 89d8e3b6e1a84082fabdf954971e75ab86366622
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88830789"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97150230"
 ---
 # <a name="ole-background"></a>OLE 백그라운드
 
@@ -28,7 +29,7 @@ OLE는 응용 프로그램 간의 원활한 상호 작용 목표를 달성 하�
 
    링크 및 포함은 다른 응용 프로그램에서 만든 OLE 문서 내에 생성 된 항목을 저장 하는 두 가지 방법입니다. 두 방법 간의 차이점에 대 한 일반적인 정보는 [OLE 배경: 연결 및 포함](ole-background-linking-and-embedding.md)문서를 참조 하세요. 자세한 내용은 [컨테이너](containers.md) 및 [서버](servers.md)문서를 참조 하세요.
 
-- 내부 활성화 (비주얼 편집)
+- 활성화 In-Place (비주얼 편집)
 
    컨테이너 문서의 컨텍스트에서 포함 된 항목을 활성화 하는 것을 내부 활성화 또는 시각적 편집 이라고 합니다. 컨테이너 응용 프로그램의 인터페이스는 포함 된 항목을 만든 구성 요소 응용 프로그램의 기능을 통합 하도록 변경 됩니다. 연결 된 항목은 링크를 포함 하는 응용 프로그램의 컨텍스트에서 항목의 실제 데이터가 별도의 파일에 포함 되어 있으므로 내부에서 활성화 되지 않습니다. 내부 활성화에 대 한 자세한 내용은 [활성화](activation-cpp.md)문서를 참조 하세요.
 

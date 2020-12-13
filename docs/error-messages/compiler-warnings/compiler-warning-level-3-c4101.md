@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 3) C4101'
 title: 컴파일러 경고 (수준 3) C4101
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4101
 ms.assetid: d98563cd-9dce-4aae-8f12-bd552a4ea677
-ms.openlocfilehash: f9d3875fdc17def1e7d3bcb72149c5faf90f656a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c5e358bea4e9a584242376ed86d1bb5af2deb734
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220056"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97150633"
 ---
 # <a name="compiler-warning-level-3-c4101"></a>컴파일러 경고 (수준 3) C4101
 

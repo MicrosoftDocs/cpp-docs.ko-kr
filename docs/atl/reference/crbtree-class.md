@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CRBTree 클래스'
 title: CRBTree 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -27,16 +28,16 @@ f1_keywords:
 helpviewer_keywords:
 - CRBTree class
 ms.assetid: a1b1cb63-38e4-4fc2-bb28-f774d1721760
-ms.openlocfilehash: 7b8e47b5cd0ac278711947abc867956333371be3
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 3c45c8b05429ba75905912d76f87605a07ff49e1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833493"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97140974"
 ---
 # <a name="crbtree-class"></a>CRBTree 클래스
 
-이 클래스는 빨강 검정 트리를 만들고 활용 하기 위한 메서드를 제공 합니다.
+이 클래스는 Red-Black 트리를 만들고 활용 하기 위한 메서드를 제공 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -50,10 +51,10 @@ class CRBTree
 
 #### <a name="parameters"></a>매개 변수
 
-*시계의*<br/>
+*K*<br/>
 키 요소 형식입니다.
 
-*Hyper-v*<br/>
+*V*<br/>
 값 요소 형식입니다.
 
 *KTraits*<br/>
@@ -108,7 +109,7 @@ class CRBTree
 
 ## <a name="remarks"></a>설명
 
-빨강-검정 트리는 노드당 추가 비트 정보를 사용 하는 이진 검색 트리로, 트리 높이가 불균형 하 게 크게 증가 하 고 성능에 영향을 줄 수 있도록 합니다.
+Red-Black 트리는 노드당 추가 비트 정보를 사용 하는 이진 검색 트리로, 트리 높이가 불균형 하 게 크게 증가 하 고 성능에 영향을 줄 수 있도록 하기 위해 노드당 추가 비트 정보를 사용 합니다.
 
 이 템플릿 클래스는 [Crbmap](../../atl/reference/crbmap-class.md) 및 [CRBMultiMap](../../atl/reference/crbmultimap-class.md)에서 사용 하도록 설계 되었습니다. 이러한 파생 클래스를 구성 하는 메서드는 대부분에서 제공 됩니다 `CRBTree` .
 
@@ -317,7 +318,7 @@ const K& GetNextKey(POSITION& pos) const throw();
 
 ### <a name="remarks"></a>설명
 
-현재 위치 카운터, *pos*를 업데이트 합니다. 트리에 항목이 더 이상 없으면 position 카운터가 NULL로 설정 됩니다.
+현재 위치 카운터, *pos* 를 업데이트 합니다. 트리에 항목이 더 이상 없으면 position 카운터가 NULL로 설정 됩니다.
 
 ## <a name="crbtreegetnextvalue"></a><a name="getnextvalue"></a> CRBTree::GetNextValue
 
@@ -339,7 +340,7 @@ V& GetNextValue(POSITION& pos) throw();
 
 ### <a name="remarks"></a>설명
 
-현재 위치 카운터, *pos*를 업데이트 합니다. 트리에 항목이 더 이상 없으면 position 카운터가 NULL로 설정 됩니다.
+현재 위치 카운터, *pos* 를 업데이트 합니다. 트리에 항목이 더 이상 없으면 position 카운터가 NULL로 설정 됩니다.
 
 ## <a name="crbtreegetprev"></a><a name="getprev"></a> CRBTree:: GetPrev
 
@@ -361,7 +362,7 @@ CPair* GetPrev(POSITION& pos) throw();
 
 ### <a name="remarks"></a>설명
 
-현재 위치 카운터, *pos*를 업데이트 합니다. 트리에 항목이 더 이상 없으면 position 카운터가 NULL로 설정 됩니다.
+현재 위치 카운터, *pos* 를 업데이트 합니다. 트리에 항목이 더 이상 없으면 position 카운터가 NULL로 설정 됩니다.
 
 ## <a name="crbtreegettailposition"></a><a name="gettailposition"></a> CRBTree::GetTailPosition
 

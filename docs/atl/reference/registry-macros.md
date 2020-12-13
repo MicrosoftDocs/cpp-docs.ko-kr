@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 레지스트리 매크로'
 title: 레지스트리 매크로
 ms.date: 08/19/2019
 f1_keywords:
@@ -12,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - registry, ATL macros
 ms.assetid: 3ee041da-c63b-42a4-89cf-2a4b2a6f81ae
-ms.openlocfilehash: dac1c187bae0eb55b954fc02cd4fb4c981f272f4
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: e1f85e43f64dd34455cb9ec453ab3719b07f67f1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834520"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97138890"
 ---
 # <a name="registry-macros"></a>레지스트리 매크로
 
@@ -29,7 +30,7 @@ ms.locfileid: "88834520"
 |[DECLARE_LIBID](#declare_libid)|ATL이 형식 라이브러리의 *libid* 를 가져오는 방법을 제공 합니다.|
 |[DECLARE_NO_REGISTRY](#declare_no_registry)|기본 ATL 등록을 방지 합니다.|
 |[DECLARE_REGISTRY](#declare_registry)|시스템 레지스트리에서 주 개체의 항목을 입력 하거나 제거 합니다.|
-|[DECLARE_REGISTRY_APPID_RESOURCEID](#declare_registry_appid_resourceid)|*Appid*를 자동으로 등록 하는 데 필요한 정보를 지정 합니다.|
+|[DECLARE_REGISTRY_APPID_RESOURCEID](#declare_registry_appid_resourceid)|*Appid* 를 자동으로 등록 하는 데 필요한 정보를 지정 합니다.|
 |[DECLARE_REGISTRY_RESOURCE](#declare_registry_resource)|명명 된 리소스를 찾고 그 안에 있는 레지스트리 스크립트를 실행 합니다.|
 |[DECLARE_REGISTRY_RESOURCEID](#declare_registry_resourceid)|ID 번호로 식별 되는 리소스를 찾아서 그 안에 있는 레지스트리 스크립트를 실행 합니다.|
 
@@ -118,7 +119,7 @@ ATL 클래스 추가 마법사를 사용 하 여 개체 또는 컨트롤을 만�
 
 ## <a name="declare_registry_appid_resourceid"></a><a name="declare_registry_appid_resourceid"></a> DECLARE_REGISTRY_APPID_RESOURCEID
 
-*Appid*를 자동으로 등록 하는 데 필요한 정보를 지정 합니다.
+*Appid* 를 자동으로 등록 하는 데 필요한 정보를 지정 합니다.
 
 ```
 DECLARE_REGISTRY_APPID_RESOURCEID(
@@ -129,7 +130,7 @@ DECLARE_REGISTRY_APPID_RESOURCEID(
 ### <a name="parameters"></a>매개 변수
 
 *resid로*<br/>
-*Appid*에 대 한 정보가 포함 된 .rgs 파일의 리소스 id입니다.
+*Appid* 에 대 한 정보가 포함 된 .rgs 파일의 리소스 id입니다.
 
 *appid*<br/>
 GUID
@@ -159,7 +160,7 @@ DECLARE_REGISTRY_RESOURCE( x )
 
 ATL 프로젝트 마법사를 사용 하 여 개체 또는 컨트롤을 만드는 경우 마법사는 스크립트 기반 레지스트리 지원을 자동으로 구현 하 고 DECLARE_REGISTRY_RESOURCE와 유사한 [DECLARE_REGISTRY_RESOURCEID](#declare_registry_resourceid) 매크로를 파일에 추가 합니다.
 
-최적화 된 레지스트리 액세스를 위해 ATL 레지스트리 구성 요소 (등록자)에 정적으로 연결할 수 있습니다. 등록자 코드에 정적으로 연결 하려면 *.pch* 파일 (Visual Studio 2017 및 이전 버전의*stdafx.h* )에 다음 줄을 추가 합니다.
+최적화 된 레지스트리 액세스를 위해 ATL 레지스트리 구성 요소 (등록자)에 정적으로 연결할 수 있습니다. 등록자 코드에 정적으로 연결 하려면 *.pch* 파일 (Visual Studio 2017 및 이전 버전의 *stdafx.h* )에 다음 줄을 추가 합니다.
 
 [!code-cpp[NVC_ATL_COM#56](../../atl/codesnippet/cpp/registry-macros_2.h)]
 

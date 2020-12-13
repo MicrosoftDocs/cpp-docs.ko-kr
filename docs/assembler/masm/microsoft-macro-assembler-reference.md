@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Microsoft 매크로 어셈블러 참조'
 title: Microsoft 매크로 어셈블러 참조
 ms.date: 12/17/2019
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - MASM (Microsoft Macro Assembler)
 - MASM (Microsoft Macro Assembler), documentation overview
 ms.assetid: 1446d55f-e2e7-4fd1-a9b8-b15cf7d4e47c
-ms.openlocfilehash: a9804d3212c6b4d24167478d9a9a12168c3677d5
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: 8e334ccd304f0b248e5036fa5d73413d091dd504
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75312653"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97129690"
 ---
 # <a name="microsoft-macro-assembler-reference"></a>Microsoft 매크로 어셈블러 참조
 
@@ -20,7 +21,7 @@ Microsoft 매크로 어셈블러(MASM)는 인라인 어셈블리보다 여러 �
 
 ## <a name="in-this-section"></a>섹션 내용
 
-[ML 및 ml64.exe 명령줄 옵션](ml-and-ml64-command-line-reference.md)\
+[ML 및 ML64.EXE 명령줄 옵션](ml-and-ml64-command-line-reference.md)\
 ML.exe 및 ML64.exe 명령줄 옵션을 설명합니다.
 
 [ML 오류 메시지](ml-error-messages.md)\
@@ -45,12 +46,12 @@ x64용 출력 파일을 만드는 방법에 대한 정보.
 
 X 64 용 MASM의 공식 BNF 설명입니다.
 
-## <a name="related-sections"></a>관련 섹션
+## <a name="related-sections"></a>관련 단원
 
-Visual Studio\에서 [ C++ ](../../overview/visual-cpp-in-visual-studio.md)
+[Visual Studio의 c + +](../../overview/visual-cpp-in-visual-studio.md)\
 Visual Studio 및 Visual C++ 설명서의 여러 영역에 대한 링크를 제공합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [컴파일러 내장 함수](../../intrinsics/compiler-intrinsics.md)\
 [x86Intrinsics](../../intrinsics/x86-intrinsics-list.md)\

@@ -1,4 +1,5 @@
 ---
+description: COM_INTERFACE_ENTRY 매크로에 대 한 자세한 정보
 title: COM 인터페이스 항목 매크로
 ms.date: 03/28/2017
 f1_keywords:
@@ -18,12 +19,12 @@ f1_keywords:
 helpviewer_keywords:
 - COM interfaces, COM interface entry macros
 ms.assetid: 19dcb768-2e1f-4b8d-a618-453a01a4bd00
-ms.openlocfilehash: 1358a51f6bcb65f9c54c2006a6a467cf96593b5f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 0564c1e4ba6b9778865442d281453ff3a4a56d7c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834702"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141364"
 ---
 # <a name="com_interface_entry-macros"></a>COM_INTERFACE_ENTRY 매크로
 
@@ -36,15 +37,15 @@ ms.locfileid: "88834702"
 |[COM_INTERFACE_ENTRY_IID](#com_interface_entry_iid)|이 매크로를 사용 하 여 COM 맵에 인터페이스를 입력 하 고 해당 IID를 지정 합니다.|
 |[COM_INTERFACE_ENTRY2_IID](#com_interface_entry2_iid)|[COM_INTERFACE_ENTRY2](#com_interface_entry2)와 동일 합니다. 단, 다른 IID는 지정할 수 있습니다.|
 |[COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate)|*Iid* 로 식별 된 인터페이스가에 대해 쿼리 되 면에 `COM_INTERFACE_ENTRY_AGGREGATE` 전달 됩니다 `punk` .|
-|[COM_INTERFACE_ENTRY_AGGREGATE_BLIND](#com_interface_entry_aggregate_blind)|IID 쿼리를 *punk*로 전달 하는 경우를 제외 하 고 [COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate)와 동일 합니다.|
+|[COM_INTERFACE_ENTRY_AGGREGATE_BLIND](#com_interface_entry_aggregate_blind)|IID 쿼리를 *punk* 로 전달 하는 경우를 제외 하 고 [COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate)와 동일 합니다.|
 |[COM_INTERFACE_ENTRY_AUTOAGGREGATE](#com_interface_entry_autoaggregate)|*Punk* 가 NULL 인 경우를 제외 *하 고는* [COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate)와 동일 합니다.|
-|[COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](#com_interface_entry_autoaggregate_blind)|*Punk*에 쿼리를 전달 하는 IID를 쿼리 하는 경우를 제외 하 고, *punk* 가 NULL 인 경우 *clsid*에서 설명 하는 집계를 자동으로 만드는 것을 제외 하 고 [COM_INTERFACE_ENTRY_AUTOAGGREGATE](#com_interface_entry_autoaggregate)와 동일 합니다.|
+|[COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](#com_interface_entry_autoaggregate_blind)|*Punk* 에 쿼리를 전달 하는 IID를 쿼리 하는 경우를 제외 하 고, *punk* 가 NULL 인 경우 *clsid* 에서 설명 하는 집계를 자동으로 만드는 것을 제외 하 고 [COM_INTERFACE_ENTRY_AUTOAGGREGATE](#com_interface_entry_autoaggregate)와 동일 합니다.|
 |[COM_INTERFACE_ENTRY_BREAK](#com_interface_entry_break)|지정 된 인터페이스를 쿼리할 때 프로그램에서 [Debugbreak](/windows/win32/api/debugapi/nf-debugapi-debugbreak) 를 호출 하도록 합니다.|
 |[COM_INTERFACE_ENTRY_CACHED_TEAR_OFF](#com_interface_entry_cached_tear_off)|모든 인스턴스에 대 한 인터페이스 관련 데이터를 저장 합니다.|
 |[COM_INTERFACE_ENTRY_TEAR_OFF](#com_interface_entry_tear_off)|는 분리 인터페이스를 노출 합니다.|
 |[COM_INTERFACE_ENTRY_CHAIN](#com_interface_entry_chain)|처리가 COM 맵의이 항목에 도달할 때 기본 클래스의 COM 맵을 처리 합니다.|
 |[COM_INTERFACE_ENTRY_FUNC](#com_interface_entry_func)|ATL의 논리에 후크 하기 위한 일반적인 메커니즘 `QueryInterface` 입니다.|
-|[COM_INTERFACE_ENTRY_FUNC_BLIND](#com_interface_entry_func_blind)|IID를 쿼리하여 *FUNC*를 호출 한다는 점을 제외 하 고 [COM_INTERFACE_ENTRY_FUNC](#com_interface_entry_func)와 동일 합니다.|
+|[COM_INTERFACE_ENTRY_FUNC_BLIND](#com_interface_entry_func_blind)|IID를 쿼리하여 *FUNC* 를 호출 한다는 점을 제외 하 고 [COM_INTERFACE_ENTRY_FUNC](#com_interface_entry_func)와 동일 합니다.|
 |[COM_INTERFACE_ENTRY_NOINTERFACE](#com_interface_entry_nointerface)|지정 된 인터페이스를 쿼리할 때 E_NOINTERFACE을 반환 하 고 COM 맵 처리를 종료 합니다.|
 
 ## <a name="requirements"></a>요구 사항
@@ -122,7 +123,7 @@ COM_INTERFACE_ENTRY_IID(iid, x)
 진행 노출 된 인터페이스의 GUID입니다.
 
 *x*<br/>
-진행 Vtable이 *iid*에 의해 식별 되는 인터페이스로 노출 되는 클래스의 이름입니다.
+진행 Vtable이 *iid* 에 의해 식별 되는 인터페이스로 노출 되는 클래스의 이름입니다.
 
 ### <a name="example"></a>예제
 
@@ -149,7 +150,7 @@ COM_INTERFACE_ENTRY2_IID(iid, x, x2)
 
 ## <a name="com_interface_entry_aggregate"></a><a name="com_interface_entry_aggregate"></a> COM_INTERFACE_ENTRY_AGGREGATE
 
-*Iid* 에 의해 식별 된 인터페이스가에 대해 쿼리 되 면 *punk*으로 전달 COM_INTERFACE_ENTRY_AGGREGATE.
+*Iid* 에 의해 식별 된 인터페이스가에 대해 쿼리 되 면 *punk* 으로 전달 COM_INTERFACE_ENTRY_AGGREGATE.
 
 ```
 COM_INTERFACE_ENTRY_AGGREGATE(iid, punk)
@@ -173,7 +174,7 @@ COM_INTERFACE_ENTRY_AGGREGATE(iid, punk)
 
 ## <a name="com_interface_entry_aggregate_blind"></a><a name="com_interface_entry_aggregate_blind"></a> COM_INTERFACE_ENTRY_AGGREGATE_BLIND
 
-IID 쿼리를 *punk*로 전달 하는 경우를 제외 하 고 [COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate)와 동일 합니다.
+IID 쿼리를 *punk* 로 전달 하는 경우를 제외 하 고 [COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate)와 동일 합니다.
 
 ```
 COM_INTERFACE_ENTRY_AGGREGATE_BLIND(punk)
@@ -219,7 +220,7 @@ COM_INTERFACE_ENTRY_AUTOAGGREGATE(iid, punk, clsid)
 
 ## <a name="com_interface_entry_autoaggregate_blind"></a><a name="com_interface_entry_autoaggregate_blind"></a> COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND
 
-*Punk*에 쿼리를 전달 하는 IID를 쿼리 하는 경우를 제외 하 고, *punk* 가 NULL 인 경우 *clsid*에서 설명 하는 집계를 자동으로 만드는 것을 제외 하 고 [COM_INTERFACE_ENTRY_AUTOAGGREGATE](#com_interface_entry_autoaggregate)와 동일 합니다.
+*Punk* 에 쿼리를 전달 하는 IID를 쿼리 하는 경우를 제외 하 고, *punk* 가 NULL 인 경우 *clsid* 에서 설명 하는 집계를 자동으로 만드는 것을 제외 하 고 [COM_INTERFACE_ENTRY_AUTOAGGREGATE](#com_interface_entry_autoaggregate)와 동일 합니다.
 
 ```
 COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND(punk, clsid)
@@ -346,10 +347,10 @@ COM_INTERFACE_ENTRY_FUNC(iid, dw, func)
 진행 노출 된 인터페이스의 GUID입니다.
 
 *dw*<br/>
-진행 *Func*로 전달 되는 매개 변수입니다.
+진행 *Func* 로 전달 되는 매개 변수입니다.
 
 *func*<br/>
-진행 *Iid*를 반환 하는 함수 포인터입니다.
+진행 *Iid* 를 반환 하는 함수 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -361,7 +362,7 @@ COM_INTERFACE_ENTRY_FUNC(iid, dw, func)
 
 ## <a name="com_interface_entry_func_blind"></a><a name="com_interface_entry_func_blind"></a> COM_INTERFACE_ENTRY_FUNC_BLIND
 
-IID를 쿼리하여 *FUNC*를 호출 한다는 점을 제외 하 고 [COM_INTERFACE_ENTRY_FUNC](#com_interface_entry_func)와 동일 합니다.
+IID를 쿼리하여 *FUNC* 를 호출 한다는 점을 제외 하 고 [COM_INTERFACE_ENTRY_FUNC](#com_interface_entry_func)와 동일 합니다.
 
 ```
 COM_INTERFACE_ENTRY_FUNC_BLIND(dw, func)
@@ -370,7 +371,7 @@ COM_INTERFACE_ENTRY_FUNC_BLIND(dw, func)
 ### <a name="parameters"></a>매개 변수
 
 *dw*<br/>
-진행 *Func*로 전달 되는 매개 변수입니다.
+진행 *Func* 로 전달 되는 매개 변수입니다.
 
 *func*<br/>
 진행 COM 맵의이 항목이 처리 될 때 호출 되는 함수입니다.

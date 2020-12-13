@@ -1,19 +1,20 @@
 ---
+description: '자세히 알아보기: 타일 사용'
 title: 타일 사용
 ms.date: 11/19/2018
 ms.assetid: acb86a86-2b7f-43f1-8fcf-bcc79b21d9a8
-ms.openlocfilehash: edef9154b0c4da6f53c8ac40ee84e55e9b38a9b7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6277faf867cd64e5ea0e4503bb36f8e1d4a8bc74
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228468"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97150165"
 ---
 # <a name="using-tiles"></a>타일 사용
 
-바둑판식 배열을 사용 하 여 앱의 가속을 최대화할 수 있습니다. 바둑판식 배열은 스레드를 동일한 사각형 하위 집합 또는 *타일로*나눕니다. 적절 한 타일 크기와 바둑판식 알고리즘을 사용 하는 경우 C++ AMP 코드에서 훨씬 더 많은 가속을 얻을 수 있습니다. 바둑판식 배열의 기본 구성 요소는 다음과 같습니다.
+바둑판식 배열을 사용 하 여 앱의 가속을 최대화할 수 있습니다. 바둑판식 배열은 스레드를 동일한 사각형 하위 집합 또는 *타일로* 나눕니다. 적절 한 타일 크기와 바둑판식 알고리즘을 사용 하는 경우 C++ AMP 코드에서 훨씬 더 많은 가속을 얻을 수 있습니다. 바둑판식 배열의 기본 구성 요소는 다음과 같습니다.
 
-- `tile_static`변수. 바둑판식 배열의 주요 이점은 액세스의 성능 향상입니다 `tile_static` . 메모리의 데이터에 대 한 액세스는 `tile_static` 전역 공간 ( `array` 또는 개체)의 데이터에 액세스 하는 것 보다 훨씬 빠를 수 있습니다 `array_view` . `tile_static`각 타일에 대해 변수의 인스턴스가 생성 되 고 타일의 모든 스레드가 변수에 액세스할 수 있습니다. 일반적인 바둑판식 알고리즘에서 데이터는 `tile_static` 전역 메모리에서 한 번 메모리에 복사 된 다음 메모리에서 여러 번 액세스 됩니다 `tile_static` .
+- `tile_static` 변수. 바둑판식 배열의 주요 이점은 액세스의 성능 향상입니다 `tile_static` . 메모리의 데이터에 대 한 액세스는 `tile_static` 전역 공간 ( `array` 또는 개체)의 데이터에 액세스 하는 것 보다 훨씬 빠를 수 있습니다 `array_view` . `tile_static`각 타일에 대해 변수의 인스턴스가 생성 되 고 타일의 모든 스레드가 변수에 액세스할 수 있습니다. 일반적인 바둑판식 알고리즘에서 데이터는 `tile_static` 전역 메모리에서 한 번 메모리에 복사 된 다음 메모리에서 여러 번 액세스 됩니다 `tile_static` .
 
 - [tile_barrier:: Wait 메서드](reference/tile-barrier-class.md#wait) 에 대 한 호출은 `tile_barrier::wait` 동일한 타일의 모든 스레드가에 대 한 호출에 도달할 때까지 현재 스레드의 실행을 일시 중단 `tile_barrier::wait` 합니다. 스레드가 실행 되는 순서를 보장할 수 없으며, `tile_barrier::wait` 모든 스레드가 호출에 도달할 때까지에 대 한 호출을 통해 타일의 스레드가 실행 되지 않습니다. 즉, 메서드를 사용 하 여 스레드 단위로 작업을 수행 하는 것이 아니라 타일 별로 `tile_barrier::wait` 작업을 수행할 수 있습니다. 일반적인 바둑판식 배열 알고리즘에는 `tile_static` 에 대 한 호출을 통해 전체 타일에 대 한 메모리를 초기화 하는 코드가 있습니다 `tile_barrier::wait` . 다음 코드에는 `tile_barrier::wait` 모든 값에 액세스 해야 하는 계산이 포함 되어 있습니다 `tile_static` .
 

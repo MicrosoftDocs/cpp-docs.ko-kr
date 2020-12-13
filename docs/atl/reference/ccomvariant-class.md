@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CComVariant 클래스'
 title: CComVariant 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - CComVariant class
 - VARIANT macro, ATL
 ms.assetid: 4d31149c-d005-44b5-a509-10f84afa2b61
-ms.openlocfilehash: 40315077ceba3d87e12c8ab426560deef4928793
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: e618e7e68704d2fd8b69aecd58cbf986bb704c53
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833610"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97142131"
 ---
 # <a name="ccomvariant-class"></a>CComVariant 클래스
 
@@ -150,7 +151,7 @@ CComVariant(const CComBSTR& bstrSrc);
 진행 **`bool`** 개체를 초기화 하는 데 사용 되는 `CComVariant` 입니다. **`bool`** 인수는 저장 되기 전에 VARIANT_BOOL로 변환 됩니다. 개체의 형식은 `CComVariant` VT_BOOL 됩니다.
 
 *nSrc*<br/>
-진행 **`int`** 개체를 **BYTE** **`short`** **`long`** **`unsigned short`** **`unsigned long`** **`unsigned int`** 초기화 하는 데 사용 되는, 바이트,,, ULONGLONG long,,, 또는 `CComVariant` 입니다. 개체의 유형은 `CComVariant` 각각 VT_I4, VT_UI1, VT_I2, VT_I4, VT_I8, VT_UI8, VT_UI2, VT_UI4 또는 VT_UI4입니다.
+진행 **`int`** 개체를  **`short`** **`long`** **`unsigned short`** **`unsigned long`** **`unsigned int`** 초기화 하는 데 사용 되는, 바이트,,, ULONGLONG long,,, 또는 `CComVariant` 입니다. 개체의 유형은 `CComVariant` 각각 VT_I4, VT_UI1, VT_I2, VT_I4, VT_I8, VT_UI8, VT_UI2, VT_UI4 또는 VT_UI4입니다.
 
 *vtSrc*<br/>
 진행 변형 유형입니다. 첫 번째 매개 변수가 이면 **`int`** 유효한 형식이 VT_I4 되 고 VT_INT 됩니다. 첫 번째 매개 변수가 이면 **`long`** 유효한 형식이 VT_I4 되 고 VT_ERROR 됩니다. 첫 번째 매개 변수가 이면 **`double`** 유효한 형식이 VT_R8 되 고 VT_DATE 됩니다. 첫 번째 매개 변수가 이면 **`unsigned int`** 유효한 형식이 VT_UI4 되 고 VT_UINT 됩니다.
@@ -213,7 +214,7 @@ HRESULT ChangeType(VARTYPE vtNew, const VARIANT* pSrc = NULL);
 
 ### <a name="remarks"></a>설명
 
-*Psrc*의 값을 전달 하는 경우 `ChangeType` 는 변환의 원본으로이 VARIANT를 사용 합니다. 그렇지 않으면 `CComVariant` 개체가 원본이 됩니다.
+*Psrc* 의 값을 전달 하는 경우 `ChangeType` 는 변환의 원본으로이 VARIANT를 사용 합니다. 그렇지 않으면 `CComVariant` 개체가 원본이 됩니다.
 
 ## <a name="ccomvariantclear"></a><a name="clear"></a> CComVariant:: Clear
 
@@ -411,7 +412,7 @@ bool operator<(const VARIANT& varSrc) const throw();
 
 ### <a name="remarks"></a>설명
 
-개체의 값 `CComVariant` 이 *varsrc*의 값 보다 작은 경우 TRUE를 반환 합니다. 그렇지 않으면 FALSE입니다. 연산자는 사용자의 기본 로캘을 사용 하 여 비교를 수행 합니다.
+개체의 값 `CComVariant` 이 *varsrc* 의 값 보다 작은 경우 TRUE를 반환 합니다. 그렇지 않으면 FALSE입니다. 연산자는 사용자의 기본 로캘을 사용 하 여 비교를 수행 합니다.
 
 ## <a name="ccomvariantoperator-gt"></a><a name="operator_gt"></a> CComVariant:: operator &gt;
 
@@ -423,7 +424,7 @@ bool operator>(const VARIANT& varSrc) const throw();
 
 ### <a name="remarks"></a>설명
 
-개체의 값 `CComVariant` 이 *varsrc*값 보다 크면 TRUE를 반환 합니다. 그렇지 않으면 FALSE입니다. 연산자는 사용자의 기본 로캘을 사용 하 여 비교를 수행 합니다.
+개체의 값 `CComVariant` 이 *varsrc* 값 보다 크면 TRUE를 반환 합니다. 그렇지 않으면 FALSE입니다. 연산자는 사용자의 기본 로캘을 사용 하 여 비교를 수행 합니다.
 
 ## <a name="ccomvariantreadfromstream"></a><a name="readfromstream"></a> CComVariant:: ReadFromStream
 

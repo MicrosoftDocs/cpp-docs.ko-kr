@@ -1,5 +1,6 @@
 ---
-title: CCRT힙 클래스
+description: '자세히 알아보기: CCRTHeap 클래스'
+title: CCRTHeap 클래스
 ms.date: 11/04/2016
 f1_keywords:
 - CCRTHeap
@@ -11,16 +12,16 @@ f1_keywords:
 helpviewer_keywords:
 - CCRTHeap class
 ms.assetid: 321bd6c5-1856-4ff7-8590-95044a1209f7
-ms.openlocfilehash: caf5508079332689c2fff42f130951375dc35512
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: c256139f37a4b0caa0a60f1a87fd71b6a3a8de3b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81327156"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97142014"
 ---
-# <a name="ccrtheap-class"></a>CCRT힙 클래스
+# <a name="ccrtheap-class"></a>CCRTHeap 클래스
 
-이 클래스는 CRT 힙 함수를 사용하여 [IAtlMemgr을](../../atl/reference/iatlmemmgr-class.md) 구현합니다.
+이 클래스는 CRT 힙 함수를 사용 하 여 [Iatlmemmgr](../../atl/reference/iatlmemmgr-class.md) 을 구현 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -32,20 +33,20 @@ class CCRTHeap : public IAtlMemMgr
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[CCRTHeap::할당](#allocate)|메모리 블록을 할당하려면 이 메서드를 호출합니다.|
-|[CCRTHeap::무료](#free)|이 메서드를 호출하여 이 메모리 관리자가 할당한 메모리 블록을 해제합니다.|
-|[CCRTHeap::GetSize](#getsize)|이 메서드를 호출하여 이 메모리 관리자가 할당한 메모리 블록의 크기를 가져옵니다.|
-|[CCRTHeap::재할당](#reallocate)|이 메모리 관리자에 의해 할당된 메모리를 다시 할당하려면 이 메서드를 호출합니다.|
+|[CCRTHeap:: Allocate](#allocate)|메모리 블록을 할당하려면 이 메서드를 호출합니다.|
+|[CCRTHeap:: Free](#free)|이 메서드를 호출 하 여이 메모리 관리자에서 할당 한 메모리 블록을 해제 합니다.|
+|[CCRTHeap:: GetSize](#getsize)|이 메서드를 호출 하 여이 메모리 관리자에서 할당 한 메모리 블록의 할당 된 크기를 가져옵니다.|
+|[CCRTHeap:: 재할당](#reallocate)|이 메모리 관리자에 의해 할당된 메모리를 다시 할당하려면 이 메서드를 호출합니다.|
 
 ## <a name="remarks"></a>설명
 
-`CCRTHeap`[malloc,](../../c-runtime-library/reference/malloc.md) [free,](../../c-runtime-library/reference/free.md) [realloc](../../c-runtime-library/reference/realloc.md)및 [_msize](../../c-runtime-library/reference/msize.md)포함하여 CRT 힙 함수를 사용하여 메모리 할당 기능을 구현합니다.
+`CCRTHeap`[malloc](../../c-runtime-library/reference/malloc.md), [free](../../c-runtime-library/reference/free.md), [realloc](../../c-runtime-library/reference/realloc.md)및 [_msize](../../c-runtime-library/reference/msize.md)를 포함 하 여 CRT 힙 함수를 사용 하 여 메모리 할당 함수를 구현 합니다.
 
 ## <a name="example"></a>예제
 
-[IAtlMemgr](../../atl/reference/iatlmemmgr-class.md)에 대한 예제를 참조하십시오.
+[Iatlmemmgr](../../atl/reference/iatlmemmgr-class.md)의 예제를 참조 하세요.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -55,9 +56,9 @@ class CCRTHeap : public IAtlMemMgr
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** 아틀렘.h
+**헤더:**
 
-## <a name="ccrtheapallocate"></a><a name="allocate"></a>CCRTHeap::할당
+## <a name="ccrtheapallocate"></a><a name="allocate"></a> CCRTHeap:: Allocate
 
 메모리 블록을 할당하려면 이 메서드를 호출합니다.
 
@@ -67,22 +68,22 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*n바이트*<br/>
+*nBytes*<br/>
 새 메모리 블록의 요청된 바이트 수입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 새로 할당된 메모리 블록의 시작 부분에 대한 포인터를 반환합니다.
 
 ### <a name="remarks"></a>설명
 
-[CCRTHeap 호출::무료](#free) 또는 [CCRTHeap::이](#reallocate) 메서드에 의해 할당 된 메모리를 해제 하려면 재할당.
+이 메서드에 의해 할당 된 메모리를 해제 하려면 [Ccrtheap:: Free](#free) 또는 [Ccrtheap:: 재할당](#reallocate) 을 호출 합니다.
 
-[malloc.](../../c-runtime-library/reference/malloc.md)
+[Malloc](../../c-runtime-library/reference/malloc.md)를 사용 하 여 구현 됩니다.
 
-## <a name="ccrtheapfree"></a><a name="free"></a>CCRTHeap::무료
+## <a name="ccrtheapfree"></a><a name="free"></a> CCRTHeap:: Free
 
-이 메서드를 호출하여 이 메모리 관리자가 할당한 메모리 블록을 해제합니다.
+이 메서드를 호출 하 여이 메모리 관리자에서 할당 한 메모리 블록을 해제 합니다.
 
 ```
 virtual void Free(void* p) throw();
@@ -90,16 +91,16 @@ virtual void Free(void* p) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*P*<br/>
-이 메모리 관리자에 의해 이전에 할당된 메모리에 대한 포인터입니다. NULL은 유효한 값이며 아무 것도 하지 않습니다.
+*®*<br/>
+이 메모리 관리자에 의해 이전에 할당된 메모리에 대한 포인터입니다. NULL은 유효한 값 이며 아무 작업도 수행 하지 않습니다.
 
 ### <a name="remarks"></a>설명
 
-[무료를](../../c-runtime-library/reference/free.md)사용하여 구현 .
+[Free](../../c-runtime-library/reference/free.md)를 사용 하 여 구현 됩니다.
 
-## <a name="ccrtheapgetsize"></a><a name="getsize"></a>CCRTHeap::GetSize
+## <a name="ccrtheapgetsize"></a><a name="getsize"></a> CCRTHeap:: GetSize
 
-이 메서드를 호출하여 이 메모리 관리자가 할당한 메모리 블록의 크기를 가져옵니다.
+이 메서드를 호출 하 여이 메모리 관리자에서 할당 한 메모리 블록의 할당 된 크기를 가져옵니다.
 
 ```
 virtual size_t GetSize(void* p) throw();
@@ -107,18 +108,18 @@ virtual size_t GetSize(void* p) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*P*<br/>
+*®*<br/>
 이 메모리 관리자에 의해 이전에 할당된 메모리에 대한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-할당된 메모리 블록의 크기를 바이트로 반환합니다.
+할당 된 메모리 블록의 크기 (바이트)를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-[_msize](../../c-runtime-library/reference/msize.md)을 사용하여 구현되었습니다.
+[_Msize](../../c-runtime-library/reference/msize.md)를 사용 하 여 구현 됩니다.
 
-## <a name="ccrtheapreallocate"></a><a name="reallocate"></a>CCRTHeap::재할당
+## <a name="ccrtheapreallocate"></a><a name="reallocate"></a> CCRTHeap:: 재할당
 
 이 메모리 관리자에 의해 할당된 메모리를 다시 할당하려면 이 메서드를 호출합니다.
 
@@ -128,19 +129,19 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*P*<br/>
+*®*<br/>
 이 메모리 관리자에 의해 이전에 할당된 메모리에 대한 포인터입니다.
 
-*n바이트*<br/>
+*nBytes*<br/>
 새 메모리 블록의 요청된 바이트 수입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 새로 할당된 메모리 블록의 시작 부분에 대한 포인터를 반환합니다.
 
 ### <a name="remarks"></a>설명
 
-[CCRTHeap ::이](#free) 메서드에 의해 할당 된 메모리를 해제 무료 호출합니다. [realloc](../../c-runtime-library/reference/realloc.md).
+이 메서드에 의해 할당 된 메모리를 해제 하려면 [Ccrtheap:: Free](#free) 를 호출 합니다. [Realloc](../../c-runtime-library/reference/realloc.md)를 사용 하 여 구현 됩니다.
 
 ## <a name="see-also"></a>참고 항목
 

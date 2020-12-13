@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CColorDialog 클래스'
 title: CColorDialog 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - CColorDialog [MFC], OnColorOK
 - CColorDialog [MFC], m_cc
 ms.assetid: d013dc25-9290-4b5d-a97e-95ad7208e13b
-ms.openlocfilehash: 54fd987d683a9236531baee3afbb9ee61be623e2
-ms.sourcegitcommit: 13f42c339fb7af935e3a93ac80e350d5e784c9f1
+ms.openlocfilehash: d9af49d4986f0619211ed4fd2dc9174acea27d0c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87470760"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97150139"
 ---
 # <a name="ccolordialog-class"></a>CColorDialog 클래스
 
@@ -41,13 +42,13 @@ class CColorDialog : public CCommonDialog
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CColorDialog::CColorDialog](#ccolordialog)|`CColorDialog` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CColorDialog::D oModal](#domodal)|색 대화 상자를 표시 하 고 사용자가 선택할 수 있게 합니다.|
 |[CColorDialog:: GetColor](#getcolor)|`COLORREF`선택한 색의 값을 포함 하는 구조체를 반환 합니다.|
@@ -56,13 +57,13 @@ class CColorDialog : public CCommonDialog
 
 ### <a name="protected-methods"></a>Protected 메서드
 
-|이름|Description|
+|Name|설명|
 |----------|-----------------|
 |[CColorDialog:: OnColorOK](#oncolorok)|대화 상자에 입력 된 색의 유효성을 검사 하려면를 재정의 합니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|이름|Description|
+|Name|설명|
 |----------|-----------------|
 |[CColorDialog:: m_cc](#m_cc)|대화 상자의 설정을 사용자 지정 하는 데 사용 되는 구조체입니다.|
 
@@ -74,13 +75,13 @@ class CColorDialog : public CCommonDialog
 
 대화 상자를 생성 한 후에는 [m_cc](#m_cc) 구조체의 값을 설정 하거나 수정 하 여 대화 상자의 컨트롤 값을 초기화할 수 있습니다. *M_cc* 구조체의 형식은 [사용자가 choosecolor](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1)입니다.
 
-대화 상자의 컨트롤을 초기화 한 후 `DoModal` 멤버 함수를 호출 하 여 대화 상자를 표시 하 고 사용자가 색을 선택할 수 있습니다. `DoModal`대화 상자의 OK (IDOK) 또는 Cancel (IDCANCEL) 단추 중에서 사용자가 선택한 항목을 반환 합니다.
+대화 상자의 컨트롤을 초기화 한 후 `DoModal` 멤버 함수를 호출 하 여 대화 상자를 표시 하 고 사용자가 색을 선택할 수 있습니다. `DoModal` 대화 상자의 OK (IDOK) 또는 Cancel (IDCANCEL) 단추 중에서 사용자가 선택한 항목을 반환 합니다.
 
 `DoModal`에서 IDOK를 반환 하는 경우의 `CColorDialog` 멤버 함수 중 하나를 사용 하 여 사용자가 입력 한 정보를 검색할 수 있습니다.
 
 Windows [CommDlgExtendedError](/windows/win32/api/commdlg/nf-commdlg-commdlgextendederror) 함수를 사용 하 여 대화 상자를 초기화 하는 동안 오류가 발생 했는지 확인 하 고 오류에 대해 자세히 알아볼 수 있습니다.
 
-`CColorDialog`는 Windows 버전 3.1 이상과 함께 제공 되는 COMMDLG.DLL 파일을 기반으로 합니다.
+`CColorDialog` 는 Windows 버전 3.1 이상과 함께 제공 되는 COMMDLG.DLL 파일을 기반으로 합니다.
 
 대화 상자를 사용자 지정 하려면에서 클래스를 파생 시키고 `CColorDialog` , 사용자 지정 대화 상자 템플릿을 제공 하 고, 확장 된 컨트롤에서 알림 메시지를 처리 하는 메시지 맵을 추가 합니다. 처리 되지 않은 모든 메시지는 기본 클래스에 전달 되어야 합니다.
 
@@ -109,7 +110,7 @@ Windows [CommDlgExtendedError](/windows/win32/api/commdlg/nf-commdlg-commdlgexte
 
 **헤더:** afxdlgs
 
-## <a name="ccolordialogccolordialog"></a><a name="ccolordialog"></a>CColorDialog::CColorDialog
+## <a name="ccolordialogccolordialog"></a><a name="ccolordialog"></a> CColorDialog::CColorDialog
 
 `CColorDialog` 개체를 생성합니다.
 
@@ -135,7 +136,7 @@ CColorDialog(
 
 [!code-cpp[NVC_MFCDocView#49](../../mfc/codesnippet/cpp/ccolordialog-class_1.cpp)]
 
-## <a name="ccolordialogdomodal"></a><a name="domodal"></a>CColorDialog::D oModal
+## <a name="ccolordialogdomodal"></a><a name="domodal"></a> CColorDialog::D oModal
 
 이 함수를 호출 하 여 Windows 일반 색 대화 상자를 표시 하 고 사용자가 색을 선택할 수 있습니다.
 
@@ -143,7 +144,7 @@ CColorDialog(
 virtual INT_PTR DoModal();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 IDOK 또는 IDCANCEL. IDCANCEL이 반환 되는 경우 Windows [CommDlgExtendedError](/windows/win32/api/commdlg/nf-commdlg-commdlgextendederror) 함수를 호출 하 여 오류가 발생 했는지 여부를 확인 합니다.
 
@@ -159,7 +160,7 @@ IDOK 및 IDCANCEL는 사용자가 확인 또는 취소 단추를 선택 했는�
 
   [CColorDialog:: CColorDialog](#ccolordialog)의 예제를 참조 하세요.
 
-## <a name="ccolordialoggetcolor"></a><a name="getcolor"></a>CColorDialog:: GetColor
+## <a name="ccolordialoggetcolor"></a><a name="getcolor"></a> CColorDialog:: GetColor
 
 `DoModal`사용자가 선택한 색에 대 한 정보를 검색 하려면를 호출한 후이 함수를 호출 합니다.
 
@@ -167,7 +168,7 @@ IDOK 및 IDCANCEL는 사용자가 확인 또는 취소 단추를 선택 했는�
 COLORREF GetColor() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 색 대화 상자에서 선택한 색의 RGB 정보를 포함 하는 [Colorref](/windows/win32/gdi/colorref) 값입니다.
 
@@ -175,15 +176,15 @@ COLORREF GetColor() const;
 
 [!code-cpp[NVC_MFCDocView#50](../../mfc/codesnippet/cpp/ccolordialog-class_2.cpp)]
 
-## <a name="ccolordialoggetsavedcustomcolors"></a><a name="getsavedcustomcolors"></a>CColorDialog::GetSavedCustomColors
+## <a name="ccolordialoggetsavedcustomcolors"></a><a name="getsavedcustomcolors"></a> CColorDialog::GetSavedCustomColors
 
-`CColorDialog`개체를 사용 하면 색을 선택 하는 것 외에 사용자가 최대 16 개의 사용자 지정 색을 정의할 수 있습니다.
+`CColorDialog` 개체를 사용 하면 색을 선택 하는 것 외에 사용자가 최대 16 개의 사용자 지정 색을 정의할 수 있습니다.
 
 ```
 static COLORREF* PASCAL GetSavedCustomColors();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 사용자가 만든 사용자 지정 색을 저장 하는 16 개의 RGB 색 값 배열에 대 한 포인터입니다.
 
@@ -197,7 +198,7 @@ static COLORREF* PASCAL GetSavedCustomColors();
 
 [!code-cpp[NVC_MFCDocView#51](../../mfc/codesnippet/cpp/ccolordialog-class_3.cpp)]
 
-## <a name="ccolordialogm_cc"></a><a name="m_cc"></a>CColorDialog:: m_cc
+## <a name="ccolordialogm_cc"></a><a name="m_cc"></a> CColorDialog:: m_cc
 
 해당 멤버가 대화 상자의 특성 및 값을 저장 하는 [사용자가 choosecolor](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1)형식의 구조체입니다.
 
@@ -213,7 +214,7 @@ CHOOSECOLOR m_cc;
 
 [!code-cpp[NVC_MFCDocView#53](../../mfc/codesnippet/cpp/ccolordialog-class_4.cpp)]
 
-## <a name="ccolordialogoncolorok"></a><a name="oncolorok"></a>CColorDialog:: OnColorOK
+## <a name="ccolordialogoncolorok"></a><a name="oncolorok"></a> CColorDialog:: OnColorOK
 
 대화 상자에 입력 된 색의 유효성을 검사 하려면를 재정의 합니다.
 
@@ -221,7 +222,7 @@ CHOOSECOLOR m_cc;
 virtual BOOL OnColorOK();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 대화 상자를 해제할 수 없으면 0이 아닙니다. 그렇지 않으면 0은 입력 된 색을 그대로 적용 합니다.
 
@@ -245,9 +246,9 @@ virtual BOOL OnColorOK();
 
 [!code-cpp[NVC_MFCDocView#52](../../mfc/codesnippet/cpp/ccolordialog-class_5.cpp)]
 
-## <a name="ccolordialogsetcurrentcolor"></a><a name="setcurrentcolor"></a>CColorDialog::SetCurrentColor
+## <a name="ccolordialogsetcurrentcolor"></a><a name="setcurrentcolor"></a> CColorDialog::SetCurrentColor
 
-를 호출한 후이 함수를 호출 `DoModal` 하 여 현재 색 선택을 *clr*에 지정 된 색 값으로 강제로 적용 합니다.
+를 호출한 후이 함수를 호출 `DoModal` 하 여 현재 색 선택을 *clr* 에 지정 된 색 값으로 강제로 적용 합니다.
 
 ```cpp
 void SetCurrentColor(COLORREF clr);

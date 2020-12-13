@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: MFC ActiveX 컨트롤: ActiveX 컨트롤 지역화'
 title: 'MFC ActiveX 컨트롤: ActiveX 컨트롤 지역화'
 ms.date: 09/12/2018
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - LocaleID ambient property [MFC]
 - LOCALIZE sample [MFC]
 ms.assetid: a44b839a-c652-4ec5-b824-04392708a5f9
-ms.openlocfilehash: a85ec5cbed797b756afd93cd8423c58d138a0625
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 830fecd316b48f61da4f90136dd29455801ec725
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615430"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97150217"
 ---
 # <a name="mfc-activex-controls-localizing-an-activex-control"></a>MFC ActiveX 컨트롤: ActiveX 컨트롤 지역화
 
@@ -42,7 +43,7 @@ ActiveX 컨트롤을 국제 시장에 맞게 조정 하려는 경우 컨트롤�
 
 이 문서의 나머지 부분에서는 두 가지 지역화 전략에 대해 설명 합니다. 첫 번째 전략은 [컨트롤의 프로그래밍 인터페이스](#_core_localizing_your_control.92.s_programmability_interface) (속성, 메서드 및 이벤트 이름)를 문제의 합니다. 두 번째 전략은 컨테이너의 앰비언트 LocaleID 속성을 사용 하 여 [컨트롤의 사용자 인터페이스를 문제의](#_core_localizing_the_control.92.s_user_interface)합니다. 컨트롤 지역화에 대 한 데모는 MFC ActiveX 컨트롤 샘플 [지역화](../overview/visual-cpp-samples.md)를 참조 하세요.
 
-## <a name="localizing-the-controls-programmability-interface"></a><a name="_core_localizing_your_control.92.s_programmability_interface"></a>컨트롤의 프로그래밍 인터페이스 지역화
+## <a name="localizing-the-controls-programmability-interface"></a><a name="_core_localizing_your_control.92.s_programmability_interface"></a> 컨트롤의 프로그래밍 인터페이스 지역화
 
 컨트롤의 프로그래밍 인터페이스 (프로그래머가 컨트롤을 사용 하는 응용 프로그램을 작성 하는 데 사용 하는 인터페이스)를 지역화할 때 컨트롤의 수정 된 버전을 만들어야 합니다. 지원 하려는 각 언어에 대 한 IDL 파일 (컨트롤 형식 라이브러리를 빌드하기 위한 스크립트)입니다. 이는 컨트롤 속성 이름을 지역화 하는 데 필요한 유일한 장소입니다.
 
@@ -50,13 +51,13 @@ ActiveX 컨트롤을 국제 시장에 맞게 조정 하려는 경우 컨트롤�
 
 [!code-cpp[NVC_MFC_AxLoc#1](codesnippet/cpp/mfc-activex-controls-localizing-an-activex-control_1.idl)]
 
-SAMPLEFR에서 속성 이름을 변경 합니다. 해당 프랑스어에 해당 하는 IDL로 이동한 다음 MKTYPLIB를 사용 합니다. EXE를 실행 하 여 프랑스어 형식 라이브러리 SAMPLEFR을 생성 합니다. TLB.
+SAMPLEFR에서 속성 이름을 변경 합니다. 해당 프랑스어에 해당 하는 IDL로 이동한 다음 MKTYPLIB.EXE을 사용 하 여 프랑스어 형식 라이브러리 SAMPLEFR을 생성 합니다. TLB.
 
 지역화 된 형식 라이브러리를 여러 개 만들려면 지역화 된 형식 라이브러리를 추가할 수 있습니다. IDL 파일은 프로젝트에 자동으로 빌드됩니다.
 
 #### <a name="to-add-an-idl-file-to-your-activex-control-project"></a>를 추가 합니다. ActiveX 컨트롤 프로젝트에 대 한 IDL 파일
 
-1. 컨트롤 프로젝트를 열고 **프로젝트** 메뉴에서 **기존 항목 추가**를 클릭 합니다.
+1. 컨트롤 프로젝트를 열고 **프로젝트** 메뉴에서 **기존 항목 추가** 를 클릭 합니다.
 
    **기존 항목 추가** 대화 상자가 나타납니다.
 
@@ -80,7 +81,7 @@ SAMPLEFR에서 속성 이름을 변경 합니다. 해당 프랑스어에 해당 
 
 컨트롤이 등록 되 면 `AfxOleRegisterTypeLib` 함수는 지정 된를 자동으로 찾습니다. 컨트롤과 동일한 디렉터리에 있는 TLB 파일을 Windows 등록 데이터베이스에 등록 합니다. 이면이 고, 그렇지 않으면입니다. TLB 파일이 없으므로 함수는 영향을 주지 않습니다.
 
-## <a name="localizing-the-controls-user-interface"></a><a name="_core_localizing_the_control.92.s_user_interface"></a>컨트롤의 사용자 인터페이스 지역화
+## <a name="localizing-the-controls-user-interface"></a><a name="_core_localizing_the_control.92.s_user_interface"></a> 컨트롤의 사용자 인터페이스 지역화
 
 컨트롤의 사용자 인터페이스를 지역화 하려면 모든 컨트롤의 사용자가 볼 수 있는 리소스 (예: 속성 페이지 및 오류 메시지)를 언어별 리소스 Dll에 저장 합니다. 그런 다음 컨테이너의 앰비언트 LocaleID 속성을 사용 하 여 사용자의 로캘에 적합 한 DLL을 선택할 수 있습니다.
 

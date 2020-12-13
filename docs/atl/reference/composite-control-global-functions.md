@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 복합 컨트롤 전역 함수'
 title: 복합 컨트롤 전역 함수
 ms.date: 11/04/2016
 f1_keywords:
@@ -18,12 +19,12 @@ f1_keywords:
 helpviewer_keywords:
 - composite controls, global functions
 ms.assetid: 536884cd-e863-4c7a-ab0a-604dc60a0bbe
-ms.openlocfilehash: fe9d9a3a0538e2e5744987adcd64e67562711ea8
-ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
+ms.openlocfilehash: fa46cc46247d409b85772e6c1aab229d97fd1c36
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91353118"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141247"
 ---
 # <a name="composite-control-global-functions"></a>복합 컨트롤 전역 함수
 
@@ -32,7 +33,7 @@ ms.locfileid: "91353118"
 > [!IMPORTANT]
 > 다음 표에 나열 된 함수는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.
 
-|함수|Description|
+|함수|설명|
 |-|-|
 |[AtlAxDialogBox](#atlaxdialogbox)|사용자가 제공한 대화 상자 템플릿에서 모달 대화 상자를 만듭니다. 결과 대화 상자에는 ActiveX 컨트롤이 포함 될 수 있습니다.|
 |[AtlAxCreateDialog](#atlaxcreatedialog)|사용자가 제공한 대화 상자 템플릿에서 모덜리스 대화 상자를 만듭니다. 결과 대화 상자에는 ActiveX 컨트롤이 포함 될 수 있습니다.|
@@ -82,7 +83,7 @@ ATLAPI_(int) AtlAxDialogBox(
 *dwInitParam*<br/>
 진행 WM_INITDIALOG 메시지의 *lParam* 매개 변수에서 대화 상자에 전달할 값을 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 표준 HRESULT 값 중 하나입니다.
 
@@ -129,7 +130,7 @@ ATLAPI_(HWND) AtlAxCreateDialog(
 *dwInitParam*<br/>
 진행 WM_INITDIALOG 메시지의 *lParam* 매개 변수에서 대화 상자에 전달할 값을 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 표준 HRESULT 값 중 하나입니다.
 
@@ -178,7 +179,7 @@ ATLAPI AtlAxCreateControl(
 *ppUnkContainer*<br/>
 제한이 컨테이너의를 받는 포인터의 주소입니다 `IUnknown` . NULL일 수 있습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 표준 HRESULT 값 중 하나입니다.
 
@@ -239,7 +240,7 @@ ATLAPI AtlAxCreateControlEx(
 *punkSink*<br/>
 `IUnknown`포함 된 개체가 성공적으로 생성 된 후 포함 된 개체에서 *iidsink* 로 지정 된 연결 지점에 연결할 싱크 개체의 인터페이스에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 표준 HRESULT 값 중 하나입니다.
 
@@ -292,7 +293,7 @@ ATLAPI AtlAxCreateControlLic(
 *bstrLic*<br/>
 컨트롤의 라이선스를 포함 하는 BSTR입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 표준 HRESULT 값 중 하나입니다.
 
@@ -355,7 +356,7 @@ ATLAPI AtlAxCreateControlLicEx(
 *bstrLic*<br/>
 컨트롤의 라이선스를 포함 하는 BSTR입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 표준 HRESULT 값 중 하나입니다.
 
@@ -389,7 +390,7 @@ ATLAPI AtlAxAttachControl(
 *ppUnkContainer*<br/>
 제한이 컨테이너 개체의에 대 한 포인터에 대 한 포인터입니다 `IUnknown` .
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 표준 HRESULT 값 중 하나입니다.
 
@@ -416,7 +417,7 @@ ATLAPI AtlAxGetHost(HWND h, IUnknown** pp);
 *페이지*<br/>
 제한이 `IUnknown` 컨트롤의 컨테이너에 대 한입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 표준 HRESULT 값 중 하나입니다.
 
@@ -436,7 +437,7 @@ ATLAPI AtlAxGetControl(HWND h, IUnknown** pp);
 *페이지*<br/>
 제한이 `IUnknown` 호스트 되는 컨트롤의입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 표준 HRESULT 값 중 하나입니다.
 
@@ -456,7 +457,7 @@ HRESULT AtlSetChildSite(IUnknown* punkChild, IUnknown* punkParent);
 *punkParent*<br/>
 진행 부모의 인터페이스에 대 한 포인터입니다 `IUnknown` .
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 표준 HRESULT 값입니다.
 
@@ -468,7 +469,7 @@ HRESULT AtlSetChildSite(IUnknown* punkChild, IUnknown* punkParent);
 ATLAPI_(BOOL) AtlAxWinInit();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 컨트롤 호스팅 코드의 초기화가 성공 하면 0이 아닌 값입니다. 그렇지 않으면 FALSE입니다.
 
@@ -484,7 +485,7 @@ ATL 컨트롤 호스팅 API를 사용 하기 전에이 함수를 호출 해야 �
 inline BOOL AtlAxWinTerm();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 항상 TRUE를 반환 합니다.
 
@@ -524,7 +525,7 @@ ATLAPI AtlGetObjectSourceInterface(
 *pdwMinor*<br/>
 제한이 원본 인터페이스의 정의를 포함 하는 형식 라이브러리의 부 버전 번호에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 표준 HRESULT 값입니다.
 
