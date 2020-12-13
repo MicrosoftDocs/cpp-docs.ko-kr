@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2069'
 title: 컴파일러 오류 C2069
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2069
 ms.assetid: 0c87445a-9eed-4917-a733-f08217f2d64d
-ms.openlocfilehash: 2a1dfd3f72fe4ed01a50a426f2c2bb22d13d9337
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2fb69ecf6174266d11ccb86ed8262808c3d9dbf0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214804"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336304"
 ---
 # <a name="compiler-error-c2069"></a>컴파일러 오류 C2069
 
