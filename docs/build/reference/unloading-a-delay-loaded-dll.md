@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: Delay-Loaded DLL 언로드'
 title: 지연 로드된 DLL 언로드
 ms.date: 11/04/2016
 helpviewer_keywords:
 - __FUnloadDelayLoadedDLL2
 - delayed loading of DLLs, unloading
 ms.assetid: 6463bc71-020e-4aff-a4ca-90360411c54e
-ms.openlocfilehash: 1895bf12cb195ef7b4555d400badf112d377547b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: fd733bfa02a6d90eecb1b617288d368d33766282
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211920"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97178942"
 ---
 # <a name="unloading-a-delay-loaded-dll"></a>지연 로드된 DLL 언로드
 
@@ -45,7 +46,7 @@ PUnloadInfo __puiHead;
 
 UnloadInfo 구조체는 **Localalloc** 및 **LocalFree** 구현을 각각 연산자와 연산자로 사용 하는 c + + 클래스를 사용 하 여 구현 됩니다 **`new`** **`delete`** . 이러한 옵션은 __puiHead를 사용 하 여 목록의 맨 위에 있는 표준 연결 된 목록에 유지 됩니다.
 
-__FUnloadDelayLoadedDLL를 호출 하면 로드 된 Dll 목록에서 제공 하는 이름을 찾으려고 합니다. 정확한 일치는 필수 항목입니다. 발견 된 경우 pUnloadIAT의 IAT 복사본이 실행 중인 IAT의 맨 위에 복사 되어 썽크 포인터가 복원 되며, 라이브러리가 **Freelibrary**로 해제 되 고, 일치 하는 **UnloadInfo** 레코드가 목록에서 연결 해제 되 고, TRUE가 반환 됩니다.
+__FUnloadDelayLoadedDLL를 호출 하면 로드 된 Dll 목록에서 제공 하는 이름을 찾으려고 합니다. 정확한 일치는 필수 항목입니다. 발견 된 경우 pUnloadIAT의 IAT 복사본이 실행 중인 IAT의 맨 위에 복사 되어 썽크 포인터가 복원 되며, 라이브러리가 **Freelibrary** 로 해제 되 고, 일치 하는 **UnloadInfo** 레코드가 목록에서 연결 해제 되 고, TRUE가 반환 됩니다.
 
 __FUnloadDelayLoadedDLL2 함수에 대 한 인수는 대/소문자를 구분 합니다. 예를 들어 다음을 지정 합니다.
 

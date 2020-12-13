@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: ref 클래스 및 ref 구조체 (c + +/CLI 및 c + +/CX)'
 title: ref class 및 ref struct(C++/CLI 및 C++/CX)
 ms.date: 05/30/2019
 ms.topic: reference
@@ -13,16 +14,16 @@ helpviewer_keywords:
 - value struct keyword [C++]
 - ref struct keyword [C++]
 ms.assetid: 5c360764-b229-49c6-9357-66213afbc372
-ms.openlocfilehash: 1ec29dcc09cd338136102c0f3b769055d5143973
-ms.sourcegitcommit: b492516cc65120250b9ea23f96f7f63f37f99fae
+ms.openlocfilehash: 633314e27118cfceddef449ab944c6dd0dbc4f9a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075805"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176979"
 ---
 # <a name="ref-class-and-ref-struct--ccli-and-ccx"></a>ref class 및 ref struct(C++/CLI 및 C++/CX)
 
-**ref class** 또는 **ref struct** 확장은 ‘개체 수명’이 자동 관리되는 클래스나 구조체를 선언합니다.** 개체에 더 이상 액세스할 수 없거나 개체가 범위를 벗어나면 메모리가 해제됩니다.
+**ref class** 또는 **ref struct** 확장은 ‘개체 수명’이 자동 관리되는 클래스나 구조체를 선언합니다. 개체에 더 이상 액세스할 수 없거나 개체가 범위를 벗어나면 메모리가 해제됩니다.
 
 ## <a name="all-runtimes"></a>모든 런타임
 
@@ -47,7 +48,7 @@ class_access value struct name modifier : inherit_access base_type {};
 (선택 사항) 유효한 한정자는 [abstract](abstract-cpp-component-extensions.md) 및 [sealed](sealed-cpp-component-extensions.md)입니다.
 
 *inherit_access*<br/>
-(선택 사항) *base_type*의 접근성입니다. 유일 하 게 허용 되는 액세스 가능성은 이며 기본값은입니다 **`public`** **`public`** .
+(선택 사항) *base_type* 의 접근성입니다. 유일 하 게 허용 되는 액세스 가능성은 이며 기본값은입니다 **`public`** **`public`** .
 
 *base_type*<br/>
 (선택 사항) 기본 형식입니다. 그러나 값 형식은 기본 형식으로 작동할 수 없습니다.
@@ -60,7 +61,7 @@ class_access value struct name modifier : inherit_access base_type {};
 
 참조 형식이 다른 참조 형식에서 상속받는 경우 기본 클래스의 가상 함수는 [override](override-cpp-component-extensions.md)를 사용하여 명시적으로 재정의하거나 [new(vtable의 새 슬롯)](new-new-slot-in-vtable-cpp-component-extensions.md)를 사용하여 숨겨야 합니다. 파생 클래스 함수도 명시적으로로 표시 되어야 합니다 **`virtual`** .
 
-컴파일 시간에 형식이 **ref class**, **ref struct**, **value class**, **value struct**인지 여부를 검색하려면 `__is_ref_class (type)`, `__is_value_class (type)` 또는 `__is_simple_value_class (type)`를 사용합니다. 자세한 내용은 [형식 특성에 대한 컴파일러 지원](compiler-support-for-type-traits-cpp-component-extensions.md)을 참조하세요.
+컴파일 시간에 형식이 **ref class**, **ref struct**, **value class**, **value struct** 인지 여부를 검색하려면 `__is_ref_class (type)`, `__is_value_class (type)` 또는 `__is_simple_value_class (type)`를 사용합니다. 자세한 내용은 [형식 특성에 대한 컴파일러 지원](compiler-support-for-type-traits-cpp-component-extensions.md)을 참조하세요.
 
 클래스 및 구조체에 대한 자세한 내용은 다음을 참조하세요.
 
@@ -89,7 +90,7 @@ class_access value struct name modifier : inherit_access base_type {};
 ### <a name="parameters"></a>매개 변수
 
 *base_type*<br/>
-(선택 사항) 기본 형식입니다. **ref class** 또는 **ref struct**는 0개 이상의 인터페이스와 0개 또는 한 개의 **ref** 형식에서 상속받을 수 있습니다. **value class** 또는 **value struct**는 0개 이상의 인터페이스에서만 상속받을 수 있습니다.
+(선택 사항) 기본 형식입니다. **ref class** 또는 **ref struct** 는 0개 이상의 인터페이스와 0개 또는 한 개의 **ref** 형식에서 상속받을 수 있습니다. **value class** 또는 **value struct** 는 0개 이상의 인터페이스에서만 상속받을 수 있습니다.
 
 **ref class** 또는 **ref struct** 키워드를 사용하여 개체를 선언하면 개체 핸들, 즉 개체에 대한 참조 카운터 포인터가 이 개체에 액세스합니다. 선언된 변수가 범위를 벗어나면 컴파일러가 자동으로 내부 개체를 삭제합니다. 개체가 호출에서 매개 변수로 사용되거나 변수에 저장되면 개체 핸들이 실제로 전달되거나 저장됩니다.
 
@@ -108,7 +109,7 @@ class_access value struct name modifier : inherit_access base_type {};
 ### <a name="parameters"></a>매개 변수
 
 *base_type*<br/>
-(선택 사항) 기본 형식입니다. **ref class** 또는 **ref struct**는 0개 이상의 관리형 인터페이스와 0개 또는 한 개의 ref 형식에서 상속받을 수 있습니다. **value class** 또는 **value struct**는 0개 이상의 관리형 인터페이스에서만 상속받을 수 있습니다.
+(선택 사항) 기본 형식입니다. **ref class** 또는 **ref struct** 는 0개 이상의 관리형 인터페이스와 0개 또는 한 개의 ref 형식에서 상속받을 수 있습니다. **value class** 또는 **value struct** 는 0개 이상의 관리형 인터페이스에서만 상속받을 수 있습니다.
 
 **ref class** 및 **ref struct** 키워드는 클래스 또는 구조체를 힙에 할당하도록 컴파일러에 지시합니다. 개체가 호출에서 매개 변수로 사용되거나 변수에 저장되면 개체 참조가 실제로 전달되거나 저장됩니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 유틸리티 (STL/CLR)'
 title: utility(STL/CLR)
 ms.date: 11/04/2016
 ms.topic: reference
@@ -39,18 +40,18 @@ helpviewer_keywords:
 - operator<= member [STL/CLR]
 - operator< member [STL/CLR]
 ms.assetid: fb48cb75-d5ef-47ce-b526-bf60dc86c552
-ms.openlocfilehash: faf7f607f9433fa3e4813957b24220a5e66e1e49
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: cb55acec88ca7b687ca7ad7790c4b0073944c0c4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008619"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97177993"
 ---
 # <a name="utility-stlclr"></a>utility(STL/CLR)
 
 STL/CLR 헤더를 포함 `<cliext/utility>` 하 여 템플릿 클래스 `pair` 및 여러 지원 템플릿 함수를 정의 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 #include <utility>
@@ -77,7 +78,7 @@ STL/CLR 헤더를 포함 `<cliext/utility>` 하 여 템플릿 클래스 `pair` �
 |[연산자> (쌍) (STL/CLR)](#op_gt)|페어링 보다 큼 비교입니다.|
 |[연산자>= (쌍) (STL/CLR)](#op_gteq)|쌍 보다 크거나 같음 비교입니다.|
 
-|기능|설명|
+|함수|설명|
 |--------------|-----------------|
 |[make_pair(STL/CLR)](#make_pair)|값 쌍의 쌍을 만듭니다.|
 
@@ -95,13 +96,13 @@ template<typename Value1,
 
 #### <a name="parameters"></a>매개 변수
 
-*Value1*<br/>
+*값1*<br/>
 래핑된 첫 번째 값의 형식입니다.
 
-*Value2*<br/>
+*값2*<br/>
 래핑된 두 번째 값의 형식입니다.
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 
 |형식 정의|설명|
 |---------------------|-----------------|
@@ -175,7 +176,7 @@ typedef Value1 first_type;
 
 ### <a name="remarks"></a>설명
 
-이 형식은 템플릿 매개 변수 *Value1*의 동의어입니다.
+이 형식은 템플릿 매개 변수 *Value1* 의 동의어입니다.
 
 ### <a name="example"></a>예제
 
@@ -217,7 +218,7 @@ pair<Value1, Value2>% operator=(pair<Value1, Value2>% right);
 
 ### <a name="remarks"></a>설명
 
-멤버 연산자는 개체에 대해 *를 복사 하 고를 반환* **`*this`** 합니다. 이를 사용 하 여 저장 된 값 쌍을 *오른쪽*에 저장 된 값 쌍의 복사본으로 바꿉니다.
+멤버 연산자는 개체에 대해 *를 복사 하 고를 반환* **`*this`** 합니다. 이를 사용 하 여 저장 된 값 쌍을 *오른쪽* 에 저장 된 값 쌍의 복사본으로 바꿉니다.
 
 ### <a name="example"></a>예제
 
@@ -290,7 +291,7 @@ pair(Value1 val1, Value2 val2);
 
 `pair(Value1 val1, Value2 val2);`
 
-*val1* 및 *val2*를 사용 하 여 저장 된 쌍을 초기화 합니다.
+*val1* 및 *val2* 를 사용 하 여 저장 된 쌍을 초기화 합니다.
 
 ### <a name="example"></a>예제
 
@@ -378,7 +379,7 @@ typedef Value2 second_type;
 
 ### <a name="remarks"></a>설명
 
-형식은 템플릿 매개 변수 *Value2*의 동의어입니다.
+형식은 템플릿 매개 변수 *Value2* 의 동의어입니다.
 
 ### <a name="example"></a>예제
 
@@ -420,7 +421,7 @@ void swap(pair<Value1, Value2>% right);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는와 오른쪽 사이에 저장 된 값 쌍을 바꿉니다 **`*this`** . *right*
+멤버 함수는와 오른쪽 사이에 저장 된 값 쌍을 바꿉니다 **`*this`** . 
 
 ### <a name="example"></a>예제
 
@@ -486,10 +487,10 @@ template<typename Value1,
 
 #### <a name="parameters"></a>매개 변수
 
-*Value1*<br/>
+*값1*<br/>
 래핑된 첫 번째 값의 형식입니다.
 
-*Value2*<br/>
+*값2*<br/>
 래핑된 두 번째 값의 형식입니다.
 
 *first*<br/>

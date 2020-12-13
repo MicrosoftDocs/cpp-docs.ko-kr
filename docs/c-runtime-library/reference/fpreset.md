@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _fpreset'
 title: _fpreset
 ms.date: 04/05/2018
 api_name:
@@ -27,12 +28,12 @@ helpviewer_keywords:
 - floating-point numbers, resetting math package
 - _fpreset function
 ms.assetid: f31c6a04-b464-4f07-a7c4-42133360e328
-ms.openlocfilehash: 842b9c794d04d71f8f6ca97e35fb3cac2f7bb1ec
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 7818e0f02f6165c5041245e342a81b1dde25b091
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70957007"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97178695"
 ---
 # <a name="_fpreset"></a>_fpreset
 
@@ -46,17 +47,17 @@ void _fpreset( void );
 
 ## <a name="remarks"></a>설명
 
-**_Fpreset** 함수는 부동 소수점 수학 패키지를 다시 초기화 합니다. **_fpreset** 은 일반적으로 **signal**, **system**또는 **_exec** 또는 **_fpreset** 함수에서 사용 됩니다. 프로그램이 **신호**를 사용 하 여 부동 소수점 오류 신호 (**SIGFPE**)를 트래핑 하는 경우 **_fpreset** 를 호출 하 고 **prjmp**를 사용 하 여 부동 소수점 오류 로부터 안전 하 게 복구할 수 있습니다.
+**_Fpreset** 함수는 부동 소수점 수학 패키지를 다시 초기화 합니다. **_fpreset** 은 일반적으로 **신호**, **시스템** 또는 **_exec** 또는 **_spawn** 함수와 함께 사용 됩니다. 프로그램이 **신호** 를 사용 하 여 부동 소수점 오류 신호 (**SIGFPE**)를 트래핑 하는 경우 **_fpreset** 를 호출 하 고 고가를 사용 하 여 부동 소수점 오류를 안전 하 게 복구할 수 있습니다.
 
 공용 언어 런타임이 기본 부동 소수점 전체 자릿수를 지원 하기 때문에 [/clr (공용 언어 런타임 컴파일)](../../build/reference/clr-common-language-runtime-compilation.md) 을 사용 하 여 컴파일할 때이 함수는 사용 되지 않습니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|필수 헤더|
+|함수|필수 헤더|
 |--------------|---------------------|
 |**_fpreset**|\<float.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
@@ -172,7 +173,7 @@ Dividing    5 by    0...
 Error 131: Divide by zero
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [부동 소수점 지원](../../c-runtime-library/floating-point-support.md)<br/>
 [_exec, _wexec 함수](../../c-runtime-library/exec-wexec-functions.md)<br/>

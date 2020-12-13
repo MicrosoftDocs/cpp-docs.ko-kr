@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 벡터화 및 평행 화 도우미 메시지'
 title: 벡터화 도우미 및 병렬화 도우미 메시지
 ms.date: 04/17/2019
 f1_keywords:
@@ -8,18 +9,18 @@ f1_keywords:
 - C5001
 - C5012
 ms.assetid: d8f4844a-f414-42ab-b9a5-925a5da9d365
-ms.openlocfilehash: 1cdbb40d06d2b3da7e6444e3a6743c6e6ae1c874
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 54465331b3301c8f792763b9d7d1e29b8d62b1a0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86405002"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97177135"
 ---
 # <a name="vectorizer-and-parallelizer-messages"></a>벡터화 도우미 및 병렬화 도우미 메시지
 
 Microsoft c + + 컴파일러 옵션 [/Qpar-report](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md) 및 [/Qvec-report](../../build/reference/qvec-report-auto-vectorizer-reporting-level.md) 를 사용 하 여 [자동 병렬화 및 자동 벡터화](../../parallel/auto-parallelization-and-auto-vectorization.md) 를 설정 하 여 해당 활동에 대 한 이유 코드 및 정보 메시지를 출력할 수 있습니다. 이 문서는 이유 코드 및 메시지를 설명합니다.
 
-## <a name="informational-messages"></a><a name="BKMK_InformationalMessages"></a>정보 메시지
+## <a name="informational-messages"></a><a name="BKMK_InformationalMessages"></a> 정보 메시지
 
 지정한 보고 수준에 따라 각 루프에 대해 다음과 같은 정보 메시지 중 하나가 표시됩니다.
 
@@ -35,9 +36,9 @@ Microsoft c + + 컴파일러 옵션 [/Qpar-report](../../build/reference/qpar-re
 
 다음 섹션에서는 평행 화 도우미 및 벡터화에 대 한 가능한 이유 코드를 나열 합니다.
 
-## <a name="5xx-reason-codes"></a><a name="BKMK_ReasonCode50x"></a>5xx 이유 코드
+## <a name="5xx-reason-codes"></a><a name="BKMK_ReasonCode50x"></a> 5xx 이유 코드
 
-5*xx* 이유 코드는 평행 화 도우미 및 벡터화에 모두 적용 됩니다.
+5 *xx* 이유 코드는 평행 화 도우미 및 벡터화에 모두 적용 됩니다.
 
 |이유 코드|설명|
 |-----------------|-----------------|
@@ -198,9 +199,9 @@ void code_504(int *A) {
 }
 ```
 
-## <a name="10xx-reason-codes"></a><a name="BKMK_ReasonCode100x"></a>10xx 이유 코드
+## <a name="10xx-reason-codes"></a><a name="BKMK_ReasonCode100x"></a> 10xx 이유 코드
 
-10*xx* 이유 코드는 평행 화 도우미에 적용 됩니다.
+10 *xx* 이유 코드는 평행 화 도우미에 적용 됩니다.
 
 |이유 코드|설명|
 |-----------------|-----------------|
@@ -407,9 +408,9 @@ void code_1010()
 }
 ```
 
-## <a name="11xx-reason-codes"></a><a name="BKMK_ReasonCode110x"></a>11xx 이유 코드
+## <a name="11xx-reason-codes"></a><a name="BKMK_ReasonCode110x"></a> 11xx 이유 코드
 
-11*xx* 이유 코드는 벡터화에 적용 됩니다.
+11 *xx* 이유 코드는 벡터화에 적용 됩니다.
 
 |이유 코드|설명|
 |-----------------|-----------------|
@@ -555,9 +556,9 @@ void code_1106(int *A)
 }
 ```
 
-## <a name="12xx-reason-codes"></a><a name="BKMK_ReasonCode120x"></a>12xx 이유 코드
+## <a name="12xx-reason-codes"></a><a name="BKMK_ReasonCode120x"></a> 12xx 이유 코드
 
-12*xx* 이유 코드는 벡터화에 적용 됩니다.
+12 *xx* 이유 코드는 벡터화에 적용 됩니다.
 
 |이유 코드|설명|
 |-----------------|-----------------|
@@ -630,9 +631,9 @@ void code_1203(int *A)
 }
 ```
 
-## <a name="13xx-reason-codes"></a><a name="BKMK_ReasonCode130x"></a>13xx 이유 코드
+## <a name="13xx-reason-codes"></a><a name="BKMK_ReasonCode130x"></a> 13xx 이유 코드
 
-13*xx* 이유 코드는 벡터화에 적용 됩니다.
+13 *xx* 이유 코드는 벡터화에 적용 됩니다.
 
 |이유 코드|설명|
 |-----------------|-----------------|
@@ -762,9 +763,9 @@ void code_1305( S_1305 *s, S_1305 x)
 }
 ```
 
-## <a name="14xx-reason-codes"></a><a name="BKMK_ReasonCode140x"></a>14xx 이유 코드
+## <a name="14xx-reason-codes"></a><a name="BKMK_ReasonCode140x"></a> 14xx 이유 코드
 
-14*xx* 이유 코드는 벡터화와 호환 되지 않는 일부 옵션이 지정 된 경우에 발생 합니다.
+14 *xx* 이유 코드는 벡터화와 호환 되지 않는 일부 옵션이 지정 된 경우에 발생 합니다.
 
 |이유 코드|설명|
 |-----------------|-----------------|
@@ -834,9 +835,9 @@ void code_1404(int *A)
 }
 ```
 
-## <a name="15xx-reason-codes"></a><a name="BKMK_ReasonCode150x"></a>15xx 이유 코드
+## <a name="15xx-reason-codes"></a><a name="BKMK_ReasonCode150x"></a> 15xx 이유 코드
 
-15*xx* 이유 코드는 앨리어싱에 적용 됩니다. 앨리어싱은 메모리의 한 영역에 두 가지 다른 이름으로 접근할 때 일어납니다.
+15 *xx* 이유 코드는 앨리어싱에 적용 됩니다. 앨리어싱은 메모리의 한 영역에 두 가지 다른 이름으로 접근할 때 일어납니다.
 
 |이유 코드|설명|
 |-----------------|-----------------|

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: csqrt, csqrtf, csqrtl'
 title: csqrt, csqrtf, csqrtl
 ms.date: 11/04/2016
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - csqrtf function
 - csqrtl function
 ms.assetid: b65f086b-0f55-4622-a7a3-4e79d9c9c05c
-ms.openlocfilehash: 1afc79f0fba9663ec5fbb0a556da52c3a1c55ca6
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: c9c18002f353f0dedf5a02ffe80e061651f41fa3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70941997"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97178747"
 ---
 # <a name="csqrt-csqrtf-csqrtl"></a>csqrt, csqrtf, csqrtl
 
@@ -71,7 +72,7 @@ _Lcomplex csqrtl(
 
 ## <a name="return-value"></a>반환 값
 
-*Z*의 제곱근입니다. 결과는 오른쪽 반평면에 있습니다.
+*Z* 의 제곱근입니다. 결과는 오른쪽 반평면에 있습니다.
 
 |입력|SEH 예외|**_matherr** 발생할|
 |-----------|-------------------|--------------------------|
@@ -80,7 +81,7 @@ _Lcomplex csqrtl(
 
 ## <a name="remarks"></a>설명
 
-는 C++ 오버 로드를 허용 하므로 **_Fcomplex** 및 **_fcomplex** 값을 사용 하 고 반환 하는 **csqrt** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **csqrt** 는 항상 **_dcomplex** 값을 사용 하 고 반환 합니다.
+C + +에서는 오버 로드를 허용 하므로 **_Fcomplex** 및 **_Lcomplex** 값을 사용 하 고 반환 하는 **csqrt** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **csqrt** 는 항상 **_Dcomplex** 값을 사용 하 고 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -88,9 +89,9 @@ _Lcomplex csqrtl(
 |-------------|--------------|------------------|
 |**csqrt**,               **csqrtf**, **csqrtl**|\<complex.h>|\<ccomplex>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [사전순 함수 참조](crt-alphabetical-function-reference.md)<br/>
 [catanh, catanhf, catanhl](catanh-catanhf-catanhl.md)<br/>

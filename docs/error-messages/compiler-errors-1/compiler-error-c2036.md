@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2036'
 title: 컴파일러 오류 C2036
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2036
 ms.assetid: 895821a9-65d1-44b5-bde1-dae827f3e486
-ms.openlocfilehash: 06d292224108434065dfdca2a75d38fd3bb0243c
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 53e036ea1bf27fd9502a3c21353b450962bc0db9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90742699"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97175393"
 ---
 # <a name="compiler-error-c2036"></a>컴파일러 오류 C2036
 

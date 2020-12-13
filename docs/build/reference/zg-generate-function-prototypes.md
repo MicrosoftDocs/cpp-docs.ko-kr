@@ -1,4 +1,5 @@
 ---
+description: 자세한 정보:/Zg (함수 프로토타입 생성)
 title: /Zg(함수 프로토타입 생성)
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - -Zg compiler option [C++]
 - generate function prototypes compiler option
 ms.assetid: c8df1b46-24ff-46f2-8356-e0a144b21dd2
-ms.openlocfilehash: 591460b78a461aa2e33f873b79d6dcec0277f99f
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
-ms.translationtype: HT
+ms.openlocfilehash: ee0bed48f15acae867d344a60a6d42f3b17c7e85
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65446204"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97178877"
 ---
 # <a name="zg-generate-function-prototypes"></a>/Zg(함수 프로토타입 생성)
 
@@ -29,7 +30,7 @@ ms.locfileid: "65446204"
 
 ## <a name="remarks"></a>설명
 
-이 컴파일러 옵션은 더 이상 사용할 수 없습니다. Visual Studio 2015에서 제거 되었습니다. 이 페이지는 이전 버전의 Visual Studio의 사용자를 위해 남아 있습니다.
+이 컴파일러 옵션은 더 이상 사용할 수 없습니다. Visual Studio 2015에서 제거 되었습니다. 이 페이지는 이전 버전의 Visual Studio 사용자를 위해 유지 됩니다.
 
 함수 프로토타입에는 함수 반환 형식 및 인수 형식 목록이 포함되어 있습니다. 인수 형식 목록은 함수의 정식 매개 변수 형식에서 만들어집니다. 소스 파일에 이미 있는 모든 함수 프로토타입은 무시됩니다.
 
@@ -44,7 +45,7 @@ typedef struct MyStruct { int i; } T2;
 void f2(T2 * t) {}
 ```
 
-합니다 **/Zg** 옵션 Visual Studio 2005에서 사용 되지 않으며 Visual Studio 2015에서 제거 되었습니다. MSVC 컴파일러에는 이전 C 스타일 코드에 대 한 지원을 제거 했습니다. 사용 되지 않는 컴파일러 옵션의 목록을 참조 하세요 **컴파일러 옵션 및 사용 되지 않음** 에 [컴파일러 옵션 범주별 목록](compiler-options-listed-by-category.md)합니다.
+**/Zg** 옵션은 visual studio 2005에서 더 이상 사용 되지 않으며 visual studio 2015에서 제거 되었습니다. MSVC 컴파일러는 이전의 C 스타일 코드에 대 한 지원을 제거 했습니다. 사용 되지 않는 컴파일러 옵션의 목록은 [컴파일러 옵션 범주별](compiler-options-listed-by-category.md)목록에서 **사용 되지 않는 컴파일러 옵션** 을 참조 하세요.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
@@ -60,7 +61,7 @@ void f2(T2 * t) {}
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
-[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)
+[MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2039'
 title: 컴파일러 오류 C2039
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2039
 ms.assetid: f9dfd521-9b36-4454-a69c-d63f45b606bb
-ms.openlocfilehash: 6dc79db11f08ce00cdb86e930173c052cd5187ed
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 2872e01e14106f157bbddb0c1557f9bf5acc7a25
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90742686"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97175380"
 ---
 # <a name="compiler-error-c2039"></a>컴파일러 오류 C2039
 

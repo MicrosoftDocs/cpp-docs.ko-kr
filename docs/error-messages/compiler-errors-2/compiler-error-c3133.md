@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3133'
 title: 컴파일러 오류 C3133
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - C3133
 ms.assetid: 4a709405-b67b-4061-8a2a-19fa5fb34a2a
-ms.openlocfilehash: 003befa97b033eec38d7187966da15e4a275f310
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 3559e5864ea5f8d5e690a77899d6314ee2b65519
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74760714"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97177382"
 ---
 # <a name="compiler-error-c3133"></a>컴파일러 오류 C3133
 
-Varargs에 특성을 C++ 적용할 수 없습니다.
+C + + varargs에 특성을 적용할 수 없습니다.
 
 특성이 올바르게 적용되었습니다. 변수 인수를 나타내는 줄임표에는 특성을 적용할 수 없습니다.
 

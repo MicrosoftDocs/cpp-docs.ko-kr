@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2162'
 title: 컴파일러 오류 C2162
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2162
 ms.assetid: 34923628-d35e-48ab-9072-b95e3b5f6b45
-ms.openlocfilehash: 4b4efd609aaa1f1c5bc50460ff653b36b12061e4
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 39b7cc4828cad50e9ac5056e489de319a7eb7db8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74755696"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97177967"
 ---
 # <a name="compiler-error-c2162"></a>컴파일러 오류 C2162
 

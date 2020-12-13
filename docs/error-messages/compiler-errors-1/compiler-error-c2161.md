@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2161'
 title: 컴파일러 오류 C2161
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2161
 ms.assetid: d6798821-13bb-4e60-924f-85f7bf955387
-ms.openlocfilehash: dd75fb4ba035f21a71fff1f345c0c397415bc0ec
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: bafbcceee5f09f6d0d29d3a501dc94929d69b9eb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74758426"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97177980"
 ---
 # <a name="compiler-error-c2161"></a>컴파일러 오류 C2161
 

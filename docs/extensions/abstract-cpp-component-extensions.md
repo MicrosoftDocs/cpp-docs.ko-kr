@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: abstract (c + +/CLI 및 c + +/CX)'
 title: abstract(C++/CLI 및 C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - abstract keyword [C++]
 ms.assetid: cbae3408-0378-4ac8-b70d-c016b381a6d5
-ms.openlocfilehash: 1e729589f78c56111717a87a27f9c7370dca7b90
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e40d0d0c03bbf97b684d9e011f4bf614f6a44332
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214297"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97177122"
 ---
 # <a name="abstract--ccli-and-ccx"></a>abstract(C++/CLI 및 C++/CX)
 
@@ -25,7 +26,7 @@ ms.locfileid: "87214297"
 
 ## <a name="all-platforms"></a>모든 플랫폼
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 *class-declaration* *class-identifier* **abstract {}**
 
@@ -33,7 +34,7 @@ ms.locfileid: "87214297"
 
 ### <a name="remarks"></a>설명
 
-첫 번째 예제 구문에서는 클래스를 추상으로 선언합니다. *클래스 선언* 구성 요소는 네이티브 c + + 선언 (* * * * 또는) 이거나 또는 컴파일러 옵션이 지정 된 경우** `class` **`struct`** c + + 확장 선언 (** ref 클래스 * * 또는 **ref 구조체**) 일 수 있습니다 `/ZW` `/clr` .
+첫 번째 예제 구문에서는 클래스를 추상으로 선언합니다. *클래스 선언* 구성 요소는 네이티브 c + + 선언 (* * * * 또는) 이거나 또는 컴파일러 옵션이 지정 된 경우 **`class` **`struct`** c + + 확장 선언 (** ref 클래스 * * 또는 **ref 구조체**) 일 수 있습니다 `/ZW` `/clr` .
 
 두 번째 예제 구문에서는 가상 멤버 함수를 추상으로 선언합니다. 함수를 추상으로 선언하는 것은 함수를 순수 가상 함수로 선언하는 것과 같습니다. 멤버 함수를 추상으로 선언하면 바깥쪽 클래스가 추상으로 선언됩니다.
 
@@ -59,7 +60,7 @@ ms.locfileid: "87214297"
 
 ### <a name="examples"></a>예제
 
-다음 코드 예제에서는 `X` 클래스가 **abstract**로 표시되었기 때문에 오류가 발생합니다.
+다음 코드 예제에서는 `X` 클래스가 **abstract** 로 표시되었기 때문에 오류가 발생합니다.
 
 ```cpp
 // abstract_keyword.cpp
@@ -74,7 +75,7 @@ int main() {
 }
 ```
 
-다음 코드 예제에서는 **abstract**로 표시된 네이티브 클래스를 인스턴스화하기 때문에 오류가 발생합니다. 이 오류는 `/clr` 컴파일러 옵션 사용 여부와 관계없이 발생합니다.
+다음 코드 예제에서는 **abstract** 로 표시된 네이티브 클래스를 인스턴스화하기 때문에 오류가 발생합니다. 이 오류는 `/clr` 컴파일러 옵션 사용 여부와 관계없이 발생합니다.
 
 ```cpp
 // abstract_keyword_2.cpp
@@ -88,7 +89,7 @@ int main() {
                     // cannot be instantiated. See declaration of 'X'}
 ```
 
-다음 코드 예제에서는 `f` 함수가 정의를 포함하지만 **abstract**로 표시되었기 때문에 오류가 발생합니다. 예제의 마지막 문에서는 추상 가상 함수를 선언하는 것이 순수 가상 함수를 선언하는 것과 일치함을 보여 줍니다.
+다음 코드 예제에서는 `f` 함수가 정의를 포함하지만 **abstract** 로 표시되었기 때문에 오류가 발생합니다. 예제의 마지막 문에서는 추상 가상 함수를 선언하는 것이 순수 가상 함수를 선언하는 것과 일치함을 보여 줍니다.
 
 ```cpp
 // abstract_keyword_3.cpp

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 3) C4404'
 title: 컴파일러 경고(수준 3) C4404
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4404
 ms.assetid: 78ce9985-0ccd-4ec2-92bf-289475109cdd
-ms.openlocfilehash: 3337302d001b6540ab3c242537128201327c74f7
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 85932049d0af037124d12a121e7542c59f93a25c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80185635"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97177187"
 ---
 # <a name="compiler-warning-level-3-c4404"></a>컴파일러 경고(수준 3) C4404
 
