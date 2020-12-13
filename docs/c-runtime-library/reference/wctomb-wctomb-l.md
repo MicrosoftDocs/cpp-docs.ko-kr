@@ -1,4 +1,5 @@
 ---
+description: Wctomb, _wctomb_l에 대해 자세히 알아보세요.
 title: wctomb, _wctomb_l
 ms.date: 4/2/2020
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - characters, converting
 - string conversion, multibyte character strings
 ms.assetid: 4a543f0e-5516-4d81-8ff2-3c5206f02ed5
-ms.openlocfilehash: 0a95d61c50af5f49e69df8ae20efccfd3fb8ff5f
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: f49915d062aa602ab361084cbcc7a9a034599de2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910422"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97136814"
 ---
 # <a name="wctomb-_wctomb_l"></a>wctomb, _wctomb_l
 
@@ -68,15 +69,15 @@ int _wctomb_l(
 *wchar*<br/>
 와이드 문자입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-**Wctomb** 는 와이드 문자를 멀티 바이트 문자로 변환 하는 경우 와이드 문자의 바이트 수 ( **MB_CUR_MAX**보다 크지 않음)를 반환 합니다. *Wchar* 가 와이드 문자 null 문자 (L ' \ 0 ') 이면 **wctomb** 는 1을 반환 합니다. 대상 포인터 *mbchar* 가 **NULL**인 경우 **wctomb** 는 0을 반환 합니다. 현재 로캘에서 변환할 수 없는 경우 **wctomb** 는-1을 반환 하 고 **Errno** 는 **eilseq**로 설정 됩니다.
+**Wctomb** 는 와이드 문자를 멀티 바이트 문자로 변환 하는 경우 와이드 문자의 바이트 수 ( **MB_CUR_MAX** 보다 크지 않음)를 반환 합니다. *Wchar* 가 와이드 문자 null 문자 (L ' \ 0 ') 이면 **wctomb** 는 1을 반환 합니다. 대상 포인터 *mbchar* 가 **NULL** 인 경우 **wctomb** 는 0을 반환 합니다. 현재 로캘에서 변환할 수 없는 경우 **wctomb** 는-1을 반환 하 고 **Errno** 는 **eilseq** 로 설정 됩니다.
 
 ## <a name="remarks"></a>설명
 
-**Wctomb** 함수는 *wchar* 인수를 해당 멀티 바이트 문자로 변환 하 고 결과를 *mbchar*에 저장 합니다. 모든 프로그램에서 언제든지 이 함수를 호출할 수 있습니다. **wctomb** 는 로캘 종속 동작에 대해 현재 로캘을 사용 합니다. **_wctomb_l** 은 전달 된 로캘을 대신 사용 한다는 점을 제외 하 고 **wctomb** 와 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**Wctomb** 함수는 *wchar* 인수를 해당 멀티 바이트 문자로 변환 하 고 결과를 *mbchar* 에 저장 합니다. 모든 프로그램에서 언제든지 이 함수를 호출할 수 있습니다. **wctomb** 는 로캘 종속 동작에 대해 현재 로캘을 사용 합니다. **_wctomb_l** 은 전달 된 로캘을 대신 사용 한다는 점을 제외 하 고 **wctomb** 와 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-**wctomb** 은 매개 변수의 유효성을 검사 합니다. *Mbchar* 가 **NULL**인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 은 **EINVAL** 로 설정 되 고 함수는-1을 반환 합니다.
+**wctomb** 은 매개 변수의 유효성을 검사 합니다. *Mbchar* 가 **NULL** 인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 은 **EINVAL** 로 설정 되 고 함수는-1을 반환 합니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -118,10 +119,10 @@ Convert a wide character:
    Multibyte character: a
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [데이터 변환](../../c-runtime-library/data-conversion.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
+[로캘](../../c-runtime-library/locale.md)<br/>
 [_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>
 [mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)<br/>
 [mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>

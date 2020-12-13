@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3296'
 title: 컴파일러 오류 C3296
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3296
 ms.assetid: fc4c9dcd-16cf-4eee-a1ac-c43e7c29e443
-ms.openlocfilehash: c6821fc1bafa5110fe9a3db2da9a69ad6c1e57f2
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 18c4cd35cda096cbb9e335e30da8d0631d247f60
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74760099"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97144614"
 ---
 # <a name="compiler-error-c3296"></a>컴파일러 오류 C3296
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3662'
 title: 컴파일러 오류 C3662
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3662
 ms.assetid: 61bd3e41-a86b-42c0-be89-d992d3906ff1
-ms.openlocfilehash: 48fe8bd4a6872ff214d185ac77553debab78ab20
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: a62ffc4d5dc6083f36bab1e4e0712d942f70facf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74758192"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97134292"
 ---
 # <a name="compiler-error-c3662"></a>컴파일러 오류 C3662
 

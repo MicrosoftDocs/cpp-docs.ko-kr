@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _setmode'
 title: _setmode
 ms.date: 4/2/2020
 api_name:
@@ -31,12 +32,12 @@ helpviewer_keywords:
 - files [C++], translation
 - setmode function
 ms.assetid: 996ff7cb-11d1-43f4-9810-f6097182642a
-ms.openlocfilehash: abedba6f1d414191732859e3e44b54cc16acc4e9
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: 305e9a247410d762821ed0e3e004505adc1a4034
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008415"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146382"
 ---
 # <a name="_setmode"></a>_setmode
 
@@ -63,20 +64,20 @@ int _setmode (
 
 성공하면 이전 변환 모드를 반환합니다.
 
-함수에 잘못된 매개 변수를 전달하면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 계속 해 서 실행 하도록 허용한 경우이 함수는-1을 반환 하 고 **errno** 를 **ebadf**로 설정 합니다 .이는 잘못 된 파일 설명자를 나타내는 EINVAL 이거나 잘못 된 *모드* 인수를 나타내는 **EINVAL**입니다.
+함수에 잘못된 매개 변수를 전달하면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 계속 해 서 실행 하도록 허용한 경우이 함수는-1을 반환 하 고 **errno** 를 **ebadf** 로 설정 합니다 .이는 잘못 된 파일 설명자를 나타내는 EINVAL 이거나 잘못 된 *모드* 인수를 나타내는 입니다.
 
 이러한 반환 코드 및 기타 반환 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-**_Setmode** 함수는 *fd*에서 지정 된 파일의 변환 모드를 *모드로* 설정 합니다. **_O_TEXT** *모드로* 전달 하면 텍스트 (즉, 변환 된) 모드가 설정 됩니다. 입력 시 캐리지 리턴-줄 바꿈 (CR-LF) 조합이 단일 줄 바꿈 문자로 변환 됩니다. 줄 바꿈 문자는 출력 시 CR-LF 조합으로 변환됩니다. **_O_BINARY** 전달 하면 이러한 번역이 억제 되는 이진 (변환 되지 않은) 모드가 설정 됩니다.
+**_Setmode** 함수는 *fd* 에서 지정 된 파일의 변환 모드를 *모드로* 설정 합니다. **_O_TEXT** *모드로* 전달 하면 텍스트 (즉, 변환 된) 모드가 설정 됩니다. 입력 시 캐리지 리턴-줄 바꿈 (CR-LF) 조합이 단일 줄 바꿈 문자로 변환 됩니다. 줄 바꿈 문자는 출력 시 CR-LF 조합으로 변환됩니다. **_O_BINARY** 전달 하면 이러한 번역이 억제 되는 이진 (변환 되지 않은) 모드가 설정 됩니다.
 
-이 문서의 뒷부분에 나오는 두 번째 예제에서 설명한 대로 **_O_U16TEXT**, **_O_U8TEXT**또는 **_O_WTEXT** 를 전달 하 여 유니코드 모드를 사용 하도록 설정할 수도 있습니다.
+이 문서의 뒷부분에 나오는 두 번째 예제에서 설명한 대로 **_O_U16TEXT**, **_O_U8TEXT** 또는 **_O_WTEXT** 를 전달 하 여 유니코드 모드를 사용 하도록 설정할 수도 있습니다.
 
 > [!CAUTION]
 > 유니코드 모드는 와이드 인쇄 기능 (예:)을 위한 것 `wprintf` 이며 좁은 인쇄 함수에는 지원 되지 않습니다. 유니코드 모드 스트림에서 좁은 인쇄 함수를 사용 하면 어설션이 트리거됩니다.
 
-**_setmode** 은 일반적으로 **stdin** 및 **stdout**의 기본 변환 모드를 수정 하는 데 사용 되지만 모든 파일에서 사용할 수 있습니다. 스트림의 파일 설명자에 **_setmode** 를 적용 하는 경우 스트림에 대 한 입력 또는 출력 작업을 수행 하기 전에 **_setmode** 를 호출 합니다.
+**_setmode** 은 일반적으로 **stdin** 및 **stdout** 의 기본 변환 모드를 수정 하는 데 사용 되지만 모든 파일에서 사용할 수 있습니다. 스트림의 파일 설명자에 **_setmode** 를 적용 하는 경우 스트림에 대 한 입력 또는 출력 작업을 수행 하기 전에 **_setmode** 를 호출 합니다.
 
 > [!CAUTION]
 > 파일 스트림에 데이터를 쓰는 경우 **_setmode** 를 사용 하 여 모드를 변경 하기 전에 [fflush](fflush.md) 를 사용 하 여 코드를 명시적으로 플러시합니다. 코드를 플러시하지 않은 경우 예기치 않은 동작이 발생할 수 있습니다. 스트림에 데이터를 쓰지 않을 경우 코드를 플러시할 필요가 없습니다.
@@ -139,7 +140,7 @@ int main(void) {
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [파일 처리](../../c-runtime-library/file-handling.md)<br/>
 [_creat, _wcreat](creat-wcreat.md)<br/>

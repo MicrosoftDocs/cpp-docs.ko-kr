@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2552'
 title: 컴파일러 오류 C2552
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2552
 ms.assetid: 0e0ab759-788a-4faf-9337-80d4b9e2e8c9
-ms.openlocfilehash: b15ee67e39631926b7061826369e855bc3714a96
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: bd028af17ac5535eb1f72acf053dda193d4cc636
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81374187"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97134526"
 ---
 # <a name="compiler-error-c2552"></a>컴파일러 오류 C2552
 
@@ -19,7 +20,7 @@ ms.locfileid: "81374187"
 
 집합체 식별자가 잘못 초기화되었습니다.
 
-[집계는](../../c-language/initializing-aggregate-types.md) 다음과 같이 정의됩니다.
+[집계](../../c-language/initializing-aggregate-types.md) 는 다음과 같이 정의 됩니다.
 
 - 배열
 

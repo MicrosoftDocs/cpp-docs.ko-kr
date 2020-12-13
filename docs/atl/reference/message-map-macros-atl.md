@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 메시지 맵 매크로 (ATL)'
 title: 메시지 맵 매크로 (ATL)
 ms.date: 11/04/2016
 f1_keywords:
@@ -37,12 +38,12 @@ f1_keywords:
 - atlwin/ATL::REFLECTED_NOTIFY_RANGE_CODE_HANDLER
 - atlwin/ATL::REFLECTED_NOTIFY_RANGE_HANDLER
 ms.assetid: eefdd546-8934-4a30-b263-9c06a8addcbd
-ms.openlocfilehash: 9917f31dbb115552cf9dc9bde24f7b6921611750
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5efe2a6b5aaeb2fbbf3cb5b54ce376ebf00c3b75
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835300"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97139076"
 ---
 # <a name="message-map-macros-atl"></a>메시지 맵 매크로 (ATL)
 
@@ -104,7 +105,7 @@ ALT_MSG_MAP(msgMapID)
 
 ### <a name="remarks"></a>설명
 
-ATL은 각 메시지 맵을 숫자로 식별 합니다. BEGIN_MSG_MAP 매크로를 사용 하 여 선언 된 기본 메시지 맵은 0으로 식별 됩니다. 대체 메시지 맵은 *Msgmapid*로 식별 됩니다.
+ATL은 각 메시지 맵을 숫자로 식별 합니다. BEGIN_MSG_MAP 매크로를 사용 하 여 선언 된 기본 메시지 맵은 0으로 식별 됩니다. 대체 메시지 맵은 *Msgmapid* 로 식별 됩니다.
 
 메시지 맵은 창에 전송 된 메시지를 처리 하는 데 사용 됩니다. 예를 들어 [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md) 를 사용 하면 포함 하는 개체에서 메시지 맵의 식별자를 지정할 수 있습니다. [CContainedWindow:: WindowProc](ccontainedwindowt-class.md#windowproc) 는이 메시지 맵을 사용 하 여 포함 된 창의 메시지를 적절 한 처리기 함수 또는 다른 메시지 맵으로 보냅니다. 처리기 함수를 선언 하는 매크로 목록은 [BEGIN_MSG_MAP](#begin_msg_map)를 참조 하세요.
 
@@ -145,7 +146,7 @@ BEGIN_MSG_MAP(theClass)
 
 [CWindowImpl:: WindowProc](cwindowimpl-class.md#windowproc) 는 기본 메시지 맵을 사용 하 여 창에 전송 된 메시지를 처리 합니다. 메시지 맵은 메시지를 적절 한 처리기 함수 또는 다른 메시지 맵으로 보냅니다.
 
-다음 매크로는 메시지를 처리기 함수에 매핑합니다. 이 함수는 *Theclass*에서 정의 해야 합니다.
+다음 매크로는 메시지를 처리기 함수에 매핑합니다. 이 함수는 *Theclass* 에서 정의 해야 합니다.
 
 |매크로|설명|
 |-----------|-----------------|
@@ -318,7 +319,7 @@ CHAIN_MSG_MAP_DYNAMIC(dynaChainID)
 
 ### <a name="remarks"></a>설명
 
-CHAIN_MSG_MAP_DYNAMIC는 런타임에 메시지를 다른 개체의 기본 메시지 맵으로 보냅니다. 개체와 해당 메시지 맵은 [Cdynamicchain:: SetChainEntry](cdynamicchain-class.md#setchainentry)를 통해 정의 하는 *dynaChainID*와 연결 됩니다. CHAIN_MSG_MAP_DYNAMIC를 사용 하려면에서 클래스를 파생 해야 합니다 `CDynamicChain` . 예제는 [Cdynamicchain](../../atl/reference/cdynamicchain-class.md) 개요를 참조 하세요.
+CHAIN_MSG_MAP_DYNAMIC는 런타임에 메시지를 다른 개체의 기본 메시지 맵으로 보냅니다. 개체와 해당 메시지 맵은 [Cdynamicchain:: SetChainEntry](cdynamicchain-class.md#setchainentry)를 통해 정의 하는 *dynaChainID* 와 연결 됩니다. CHAIN_MSG_MAP_DYNAMIC를 사용 하려면에서 클래스를 파생 해야 합니다 `CDynamicChain` . 예제는 [Cdynamicchain](../../atl/reference/cdynamicchain-class.md) 개요를 참조 하세요.
 
 > [!NOTE]
 > 항상 [BEGIN_MSG_MAP](#begin_msg_map)를 사용 하 여 메시지 맵을 시작 합니다. 그런 다음 ALT_MSG_MAP를 사용 하 여 후속 대체 메시지 맵을 선언할 수 있습니다. [END_MSG_MAP](#end_msg_map) 매크로는 메시지 맵의 끝을 표시 합니다. 모든 메시지 맵에는 정확히 하나의 BEGIN_MSG_MAP와 END_MSG_MAP 인스턴스가 있어야 합니다.

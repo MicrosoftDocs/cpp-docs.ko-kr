@@ -1,4 +1,5 @@
 ---
+description: Wcstombs, _wcstombs_l에 대해 자세히 알아보세요.
 title: wcstombs, _wcstombs_l
 ms.date: 4/2/2020
 api_name:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - characters, converting
 - string conversion, multibyte character strings
 ms.assetid: 91234252-9ea1-423a-af99-e9d0ce4a40e3
-ms.openlocfilehash: 33c7554f1ab5c9822a1908a4b50d0ee0764615ae
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 070ba4dbf574ccd6b1afaec074dc9eb9f311e728
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910631"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97136840"
 ---
 # <a name="wcstombs-_wcstombs_l"></a>wcstombs, _wcstombs_l
 
@@ -90,19 +91,19 @@ size_t _wcstombs_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-**Wcstombs** 가 멀티 바이트 문자열을 성공적으로 변환 하는 경우에는 종료 null (있는 경우)을 제외 하 고 멀티 바이트 출력 문자열에 쓴 바이트 수를 반환 합니다. *Mbstr* 인수가 **NULL**이면 **wcstombs** 는 대상 문자열의 필요한 크기 (바이트)를 반환 합니다. **Wcstombs** 가 멀티 바이트 문자로 변환할 수 없는 와이드 문자를 발견 하는 경우 **size_t** 형식으로-1 캐스트를 반환 하 고 **errno** 를 **eilseq**로 설정 합니다.
+**Wcstombs** 가 멀티 바이트 문자열을 성공적으로 변환 하는 경우에는 종료 null (있는 경우)을 제외 하 고 멀티 바이트 출력 문자열에 쓴 바이트 수를 반환 합니다. *Mbstr* 인수가 **NULL** 이면 **wcstombs** 는 대상 문자열의 필요한 크기 (바이트)를 반환 합니다. **Wcstombs** 가 멀티 바이트 문자로 변환할 수 없는 와이드 문자를 발견 하는 경우 **size_t** 형식으로-1 캐스트를 반환 하 고 **errno** 를 **eilseq** 로 설정 합니다.
 
 ## <a name="remarks"></a>설명
 
-**Wcstombs** 함수는 *wcstr* 가 가리키는 와이드 문자 문자열을 해당 멀티 바이트 문자로 변환 하 고 그 결과를 *mbstr* 배열에 저장 합니다. *Count* 매개 변수는 멀티 바이트 출력 문자열 ( *mbstr*의 크기)에 저장할 수 있는 최대 바이트 수를 나타냅니다. 일반적으로는 와이드 문자열을 변환할 때 필요한 바이트의 수를 알 수 없습니다. 출력 문자열에서 1바이트만 사용하면 되면 되는 와이드 문자도 있고 2바이트를 사용해야 하는 문자도 있습니다. 와이드 문자 null을 포함 하 여 입력 문자열의 모든 와이드 문자에 대해 멀티 바이트 출력 문자열에 2 바이트가 있으면 결과가 일치 하도록 보장 됩니다.
+**Wcstombs** 함수는 *wcstr* 가 가리키는 와이드 문자 문자열을 해당 멀티 바이트 문자로 변환 하 고 그 결과를 *mbstr* 배열에 저장 합니다. *Count* 매개 변수는 멀티 바이트 출력 문자열 ( *mbstr* 의 크기)에 저장할 수 있는 최대 바이트 수를 나타냅니다. 일반적으로는 와이드 문자열을 변환할 때 필요한 바이트의 수를 알 수 없습니다. 출력 문자열에서 1바이트만 사용하면 되면 되는 와이드 문자도 있고 2바이트를 사용해야 하는 문자도 있습니다. 와이드 문자 null을 포함 하 여 입력 문자열의 모든 와이드 문자에 대해 멀티 바이트 출력 문자열에 2 바이트가 있으면 결과가 일치 하도록 보장 됩니다.
 
 **Wcstombs** 가 발생 하기 전이나 후에 와이드 문자 null 문자 (L ' \ 0 ')를 발견 *하면이* 를 8 비트 0으로 변환 하 고 중지 합니다. 따라서 **wcstombs** 는 변환 중에 와이드 문자 null 문자를 발견 하는 경우에만 *mbstr* 의 멀티 바이트 문자열을 null로 종료 합니다. *Wcstr* 및 *mbstr* 가 가리키는 시퀀스가 겹치면 **wcstombs** 의 동작이 정의 되지 않습니다.
 
-*Mbstr* 인수가 **NULL**이면 **wcstombs** 는 대상 문자열의 필요한 크기 (바이트)를 반환 합니다.
+*Mbstr* 인수가 **NULL** 이면 **wcstombs** 는 대상 문자열의 필요한 크기 (바이트)를 반환 합니다.
 
-**wcstombs** 은 매개 변수의 유효성을 검사 합니다. *Wcstr* 가 **NULL**이거나 *count* 가 **INT_MAX**보다 큰 경우이 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **errno** 를 **EINVAL** 로 설정 하 고-1을 반환 합니다.
+**wcstombs** 은 매개 변수의 유효성을 검사 합니다. *Wcstr* 가 **NULL** 이거나 *count* 가 **INT_MAX** 보다 큰 경우이 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **errno** 를 **EINVAL** 로 설정 하 고-1을 반환 합니다.
 
 **wcstombs** 는 로캘 종속 동작에 대해 현재 로캘을 사용 합니다. **_wcstombs_l** 은 전달 된 로캘을 대신 사용 한다는 점을 제외 하 고 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
@@ -161,10 +162,10 @@ Convert wide-character string:
     Multibyte character: Hello, world.
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [데이터 변환](../../c-runtime-library/data-conversion.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
+[로캘](../../c-runtime-library/locale.md)<br/>
 [_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>
 [mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)<br/>
 [mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>

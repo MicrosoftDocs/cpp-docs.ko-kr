@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 루틴 매핑'
 title: 루틴 매핑
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - TCHAR.H data types, list of routine mappings
 - generic-text mappings
 ms.assetid: 38f33d3b-0f7b-430d-8a4f-75e27c6f1c42
-ms.openlocfilehash: 245a44a6722bdf704a5ce750dd285eb3eac66609
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 22febc86d47ca435e9667015f1130b472e515946
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79444864"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97136801"
 ---
 # <a name="routine-mappings"></a>루틴 매핑
 
@@ -21,7 +22,7 @@ ms.locfileid: "79444864"
 
 자세한 내용은 [tchar.h의 제네릭 텍스트 매핑](../text/generic-text-mappings-in-tchar-h.md)을 참조하세요.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
 
 |제네릭 텍스트 루틴 이름|SBCS(_UNICODE 및 MBCS가 정의되지 않음)|_MBCS 정의됨|_UNICODE 정의됨|
 |--------------------------------|-------------------------------------------|--------------------|-----------------------|
@@ -265,5 +266,5 @@ ms.locfileid: "79444864"
 [일반 텍스트 매핑](../c-runtime-library/generic-text-mappings.md)<br/>
 [데이터 형식 매핑](../c-runtime-library/data-type-mappings.md)<br/>
 [상수 및 전역 변수 매핑](../c-runtime-library/constant-and-global-variable-mappings.md)<br/>
-[샘플 일반 텍스트 프로그램](../c-runtime-library/a-sample-generic-text-program.md)<br/>
-[일반 텍스트 매핑 사용](../c-runtime-library/using-generic-text-mappings.md)
+[샘플 Generic-Text 프로그램](../c-runtime-library/a-sample-generic-text-program.md)<br/>
+[Generic-Text 매핑 사용](../c-runtime-library/using-generic-text-mappings.md)

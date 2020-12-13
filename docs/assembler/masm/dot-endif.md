@@ -1,4 +1,5 @@
 ---
+description: 에 대해 자세히 알아보세요. ENDIF (32 비트 MASM)
 title: .ENDIF
 ms.date: 11/05/2019
 f1_keywords:
@@ -6,24 +7,24 @@ f1_keywords:
 helpviewer_keywords:
 - .ENDIF directive
 ms.assetid: b9f25ed5-6634-40f7-bcbc-d3135f09cce6
-ms.openlocfilehash: bcd8b5b2423abf982f999548a50208dfe8e83f6e
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: a1ca05127aae29d9a8bd3788b30a561af90e7b5b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75313823"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97132056"
 ---
 # <a name="endif-32-bit-masm"></a>. ENDIF (32 비트 MASM)
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
-> **.ENDIF**
+> **. ENDIF**
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 (32 비트 MASM에만 해당) [을 참조 하세요. 이면이](dot-if.md)고,
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [지시문 참조](directives-reference.md)\
 [MASM BNF 문법](masm-bnf-grammar.md)

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: ML 심각 하지 않은 오류 A2107'
 title: ML 심각하지 않은 오류 A2107
 ms.date: 12/17/2019
 ms.custom: error-reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - A2107
 ms.assetid: 0385b9f2-36df-4e30-a905-ab49bdc504d1
-ms.openlocfilehash: fd9371d314c3960a9057c096c7c61fdff2208afd
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: 2a3893246f56dfc41293cb3e51a2ccca9616d00e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75312601"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97128494"
 ---
 # <a name="ml-nonfatal-error-a2107"></a>ML 심각하지 않은 오류 A2107
 
@@ -20,6 +21,6 @@ ms.locfileid: "75312601"
 
 다른 세그먼트의 근거리 레이블를 암시적으로 이동 하거나 호출 하려고 했습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [ML 오류 메시지](ml-error-messages.md)

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2275'
 title: 컴파일러 오류 C2275
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2275
 ms.assetid: c1eafa71-48de-46e0-82f3-b575538ef205
-ms.openlocfilehash: f9ab2e16992333aed914f2f68967f75cb01e8bd9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c6bc03c630a859c2f0913fd482f463071a21758c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220368"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97134552"
 ---
 # <a name="compiler-error-c2275"></a>컴파일러 오류 C2275
 

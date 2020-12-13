@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2254'
 title: 컴파일러 오류 C2254
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2254
 ms.assetid: 49bb3d7e-3bdf-4af6-937c-fa627be412a9
-ms.openlocfilehash: 0be867d577b158ffc852ed7a751f99ded6e2482e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f649bcf46af3830881893e2520fabd3a4c2308ea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214700"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97134799"
 ---
 # <a name="compiler-error-c2254"></a>컴파일러 오류 C2254
 

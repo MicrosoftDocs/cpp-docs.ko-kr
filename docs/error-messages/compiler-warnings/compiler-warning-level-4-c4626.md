@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4626'
 title: 컴파일러 경고(수준 4) C4626
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4626
 ms.assetid: 7f822ff4-a4a3-4f17-b45b-e8b7b4659a14
-ms.openlocfilehash: 665a21d9f0221b2cf3db111142576669a3b5d728
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d528cab5a62abb7e91d4b7bb1487368bd44c6b41
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80198266"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97134214"
 ---
 # <a name="compiler-warning-level-4-c4626"></a>컴파일러 경고(수준 4) C4626
 

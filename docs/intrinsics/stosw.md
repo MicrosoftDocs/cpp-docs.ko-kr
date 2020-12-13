@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __stosw'
 title: __stosw
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - __stosw intrinsic
 - rep stosw instruction
 ms.assetid: 7620fd1d-dba5-40e3-8e07-01aa68895133
-ms.openlocfilehash: 5fd29bbf1aebba115670fc1bc35e0d8cbe29c7ad
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 2995276fb255858d6c3dd9f438487726e75fdf1e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219932"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97143691"
 ---
 # <a name="__stosw"></a>__stosw
 
 **Microsoft 전용**
 
-저장소 문자열 명령 (`rep stosw`)을 생성 합니다.
+저장소 문자열 명령 ()을 생성 `rep stosw` 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -36,7 +37,7 @@ void __stosw(
 *대상이*\
 제한이 작업의 대상입니다.
 
-*데이터로*\
+*데이터*\
 진행 저장할 데이터입니다.
 
 *수*\
@@ -44,11 +45,11 @@ void __stosw(
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`__stosw`|x86, x64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 ## <a name="remarks"></a>설명
 
@@ -82,6 +83,6 @@ int main()
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

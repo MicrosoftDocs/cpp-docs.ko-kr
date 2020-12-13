@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 연습: MFC Scribble 응용 프로그램 업데이트 (1 부)'
 title: '연습: MFC Scribble 응용 프로그램 업데이트 (1 부)'
 ms.date: 09/09/2019
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - MFC Feature Pack, update existing application
 - walkthroughs [MFC], update existing application
 ms.assetid: aa6330d3-6cfc-4c79-8fcb-0282263025f7
-ms.openlocfilehash: 2abcb509a3d7a0045ad33bedccdd61fd1e0e58f8
-ms.sourcegitcommit: d8f65b1ddc9ea32e877c67e2c8f0ea7501183fc7
+ms.openlocfilehash: bb60e535031670eddc84e7170431ad6622d434b3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93291075"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97142976"
 ---
 # <a name="walkthrough-updating-the-mfc-scribble-application-part-1"></a>연습: MFC Scribble 응용 프로그램 업데이트 (1 부)
 
@@ -22,7 +23,7 @@ ms.locfileid: "93291075"
 
 이 연습에서는 마우스를 사용하여 줄 그리기를 만들 수 있는 클래식 Scribble 1.0 MFC 샘플을 수정합니다. 이 연습 부분에서는 리본 표시줄에 표시되도록 Scribble 샘플을 수정하는 방법을 보여 줍니다. [2 부](../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md) 는 리본 표시줄에 더 많은 단추를 추가 합니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 요구 사항
 
 [Scribble 1.0 MFC 샘플](https://github.com/microsoft/VCSamples/tree/master/VC2010Samples/MFC/general/Scribble)입니다. Visual Studio 2017 이상으로 변환 하는 방법에 대 한 도움말은 [포팅 가이드: MFC Scribble](../porting/porting-guide-mfc-scribble.md)을 참조 하세요.
 
@@ -165,13 +166,13 @@ ms.locfileid: "93291075"
 
 1. **리소스 추가** 대화 상자에서 **리본** 을 선택한 다음 **새로 만들기** 를 클릭 합니다.
 
-   Visual Studio에서는 리본 리소스를 만들어 디자인 뷰에서 엽니다. 리본 리소스 ID는 리소스 뷰 표시 되는입니다 `IDR_RIBBON1` . **Resource View** 리본에는 범주 하나와 패널 하나가 포함되어 있습니다.
+   Visual Studio에서는 리본 리소스를 만들어 디자인 뷰에서 엽니다. 리본 리소스 ID는 리소스 뷰 표시 되는입니다 `IDR_RIBBON1` .  리본에는 범주 하나와 패널 하나가 포함되어 있습니다.
 
 1. 속성을 수정 하 여 **응용 프로그램** 단추를 사용자 지정할 수 있습니다. 이 코드에 사용되는 메시지 ID는 Scribble 1.0에 대한 메뉴에 이미 정의되어 있습니다.
 
 1. 디자인 뷰에서 **응용 프로그램** 단추를 클릭 하 여 해당 속성을 표시 합니다. 속성 값을 다음과 같이 변경 합니다. **이미지** - `IDB_RIBBON_MAIN` , **프롬프트** `File` , **키** , `f` **큼 이미지** `IDB_RIBBON_FILELARGE` 및 **작은 이미지** `IDB_RIBBON_FILESMALL` .
 
-1. 다음과 같이 수정 하면 사용자가 **응용 프로그램** 단추를 클릭할 때 표시 되는 메뉴가 만들어집니다. **주 항목** 옆에 있는 줄임표 ( **...** )를 클릭 하 여 **항목 편집기** 를 엽니다.
+1. 다음과 같이 수정 하면 사용자가 **응용 프로그램** 단추를 클릭할 때 표시 되는 메뉴가 만들어집니다. **주 항목** 옆에 있는 줄임표 (**...**)를 클릭 하 여 **항목 편집기** 를 엽니다.
 
    1. **항목** 유형 **단추** 를 선택 하 고 **추가** 를 클릭 하 여 단추를 추가 합니다. **캡션** 을 `&New` , **ID** 에서로 `ID_FILE_NEW` , **이미지** 를로 `0` , **이미지를 큼** 으로 변경 `0` 합니다.
 
@@ -200,7 +201,7 @@ ms.locfileid: "93291075"
 1. 다음 수정 내용은 **응용 프로그램** 단추 메뉴의 아래쪽에 표시 되는 종료 단추를 만듭니다.
 
    1. **솔루션 탐색기** 에서 **리소스 뷰** 탭을 선택 합니다.
-   1. **속성** 창에서 **단추** 옆에 있는 줄임표 ( **...** )를 클릭 하 여 **항목 편집기** 를 엽니다.
+   1. **속성** 창에서 **단추** 옆에 있는 줄임표 (**...**)를 클릭 하 여 **항목 편집기** 를 엽니다.
 
    1. **항목** 유형 **단추** 를 선택 하 고 **추가** 를 클릭 하 여 단추를 추가 합니다. **캡션** 을로 `E&xit` , **ID** 를로 `ID_APP_EXIT` , **이미지** 를로 변경 `8` 합니다.
 
@@ -245,7 +246,7 @@ ms.locfileid: "93291075"
 
 1. **편집** 패널에 문서의 내용 지우기를 담당 하는 단추를 추가 합니다. 이 단추에 대 한 메시지 ID가 이미 메뉴 리소스에 정의 되어 있습니다 `IDR_SCRIBBTYPE` . 단추 `Clear All` 텍스트와 단추를 데코레이팅하는 비트맵의 인덱스로를 지정 합니다. **도구 상자** 를 연 다음 **단추** 를 **편집** 패널로 끕니다. 단추를 클릭 한 다음 **캡션** 을 `Clear All` , **ID** 를 `ID_EDIT_CLEAR_ALL` , **이미지 인덱스** 를 `0` , **초대형 이미지 인덱스** 를로 변경 `0` 합니다.
 
-1. 변경 사항을 저장한 다음 애플리케이션을 빌드하고 실행합니다. Scribble 애플리케이션은 표시되어야 하며 메뉴 모음 대신 창의 위쪽에 리본 표시줄이 있어야 합니다. 리본 표시줄에는 하나의 범주, **홈** 이 있어야 하 고, **홈** 패널은 **편집** 이 있어야 합니다. 추가한 리본 단추는 기존 이벤트 처리기와 연결 되어야 하며 **열기** , **닫기** , **저장** , **인쇄** 및 **모두 지우기** 단추가 예상 대로 작동 해야 합니다.
+1. 변경 사항을 저장한 다음 애플리케이션을 빌드하고 실행합니다. Scribble 애플리케이션은 표시되어야 하며 메뉴 모음 대신 창의 위쪽에 리본 표시줄이 있어야 합니다. 리본 표시줄에는 하나의 범주, **홈** 이 있어야 하 고, **홈** 패널은 **편집** 이 있어야 합니다. 추가한 리본 단추는 기존 이벤트 처리기와 연결 되어야 하며 **열기**, **닫기**, **저장**, **인쇄** 및 **모두 지우기** 단추가 예상 대로 작동 해야 합니다.
 
 ## <a name="setting-the-look-of-the-application"></a><a name="setlook"></a> 응용 프로그램의 모양 설정
 

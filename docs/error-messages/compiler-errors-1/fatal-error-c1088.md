@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 심각한 오류 C1088'
 title: 심각한 오류 C1088
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1088
 ms.assetid: e61ebbb4-ab50-4a66-b2f6-3cc4400d8511
-ms.openlocfilehash: 145056c79b36a4570be4b8b2f7d4d21e92a2903b
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 1e679992961fce6e6479481466e8a9fbf6f5c49b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80203920"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97145251"
 ---
 # <a name="fatal-error-c1088"></a>심각한 오류 C1088
 

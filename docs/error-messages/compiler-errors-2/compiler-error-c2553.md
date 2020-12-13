@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2553'
 title: 컴파일러 오류 C2553
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2553
 ms.assetid: 64bc1e9a-627f-4ce9-b7bc-dc911bdb9180
-ms.openlocfilehash: aa3e97d576e994878ab5b080363c4c09b79f42ed
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 5f5e3eb9d94935aa8e6974f72517e7193ba07db3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756788"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97134500"
 ---
 # <a name="compiler-error-c2553"></a>컴파일러 오류 C2553
 

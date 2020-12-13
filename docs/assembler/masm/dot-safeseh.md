@@ -1,4 +1,5 @@
 ---
+description: 에 대해 자세히 알아보세요. SAFESEH (32 비트 MASM)
 title: .SAFESEH
 ms.date: 11/05/2019
 f1_keywords:
@@ -8,24 +9,24 @@ helpviewer_keywords:
 - SAFESEH directive
 - .SAFESEH directive
 ms.assetid: 6eaac8c4-c46f-47ae-8a66-f5cfeb267e43
-ms.openlocfilehash: 5953ad6bdf1d9d1b0070ce83dd1d764799b7440a
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: f0b44477d20aa024689df5e2901cc3e179596a79
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75317567"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97131211"
 ---
 # <a name="safeseh-32-bit-masm"></a>. SAFESEH (32 비트 MASM)
 
 함수를 구조화 된 예외 처리기로 등록 합니다. (32 비트 MASM에만 해당)
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **. SAFESEH** *식별자*
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
-*식별자* 는 로컬로 정의 된 [Proc](proc.md) 또는 [extrn](extrn.md) PROC의 ID 여야 합니다. [레이블은](label-masm.md) 허용 되지 않습니다. 여. SAFESEH 지시문을 사용 하려면 [/safeseh](ml-and-ml64-command-line-reference.md) ml 명령줄 옵션이 필요 합니다.
+*식별자* 는 로컬로 정의 된 [Proc](proc.md) 또는 [extrn](extrn.md) PROC의 ID 여야 합니다. [레이블은](label-masm.md) 허용 되지 않습니다. 여. SAFESEH 지시문에는 [/safeseh](ml-and-ml64-command-line-reference.md) ml.exe 명령줄 옵션이 필요 합니다.
 
 구조적 예외 처리기에 대 한 자세한 내용은 [/safeseh](../../build/reference/safeseh-image-has-safe-exception-handlers.md)를 참조 하십시오.
 
@@ -39,7 +40,7 @@ MyHandler   proto
 end
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [지시문 참조](directives-reference.md)\
 [MASM BNF 문법](masm-bnf-grammar.md)

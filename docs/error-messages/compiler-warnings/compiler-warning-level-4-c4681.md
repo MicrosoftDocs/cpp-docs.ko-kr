@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4681'
 title: 컴파일러 경고(수준 4) C4681
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4681
 ms.assetid: a4e6d85f-3e21-4b45-a551-c23d3c554d3f
-ms.openlocfilehash: 97fbaf03b8c505f8d0a9e01ed7b85a6b42c25667
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: be49b05aaaabb9e247ea65834d478bb1a4863776
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91510021"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97133889"
 ---
 # <a name="compiler-warning-level-4-c4681"></a>컴파일러 경고(수준 4) C4681
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2259'
 title: 컴파일러 오류 C2259
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2259
 ms.assetid: e458236f-bdea-4786-9aa6-a98d8bffa5f4
-ms.openlocfilehash: 403d674eae696eb42a837aef9d6e97c4b5b8f6c2
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 640349f5870cd818019029c7f04db3e33a068ec9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74758790"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97134695"
 ---
 # <a name="compiler-error-c2259"></a>컴파일러 오류 C2259
 
@@ -50,7 +51,7 @@ B b;  // OK, B defines func()
 
 - 파생 클래스에 구현 된 인터페이스 메서드에 대해 범위 확인 연산자를 사용 하 여 구현 된 메서드 이름을 인터페이스 이름으로 한정 합니다.
 
-C2259는 Visual Studio 2005에서 수행 된 규칙 작업의 결과로 발생할 수도 있습니다. **/zc: wchar_t** 는 현재 기본적으로 on입니다. 이러한 상황에서 C2599는 **/zc: wchar_t-** 를 사용 하 여 컴파일하여 이전 버전에서의 동작을 얻거나 호환 되도록 형식을 업데이트 하 여 해결할 수 있습니다. 자세한 내용은 [/Zc:wchar_t(wchar_t는 네이티브 형식임)](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md)를 참조하세요.
+C2259는 Visual Studio 2005에서 수행 된 규칙 작업의 결과로 발생할 수도 있습니다. **/zc: wchar_t** 는 현재 기본적으로 on입니다. 이러한 상황에서 C2599는 **/zc: wchar_t-** 를 사용 하 여 컴파일하여 이전 버전에서의 동작을 얻거나 호환 되도록 형식을 업데이트 하 여 해결할 수 있습니다. 자세한 내용은 [/zc: wchar_t (Wchar_t 네이티브 형식)](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md)를 참조 하세요.
 
 다음 샘플에서는 C2259를 생성 합니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2166'
 title: 컴파일러 오류 C2166
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2166
 ms.assetid: 12789c3a-cc76-48bb-ae2e-64283e0964ed
-ms.openlocfilehash: a292a7d654861c265457ad26b009ae6f4b9cb54e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 195782fca62b9bf69d17fa1aa382df2127b594e1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216338"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97145519"
 ---
 # <a name="compiler-error-c2166"></a>컴파일러 오류 C2166
 

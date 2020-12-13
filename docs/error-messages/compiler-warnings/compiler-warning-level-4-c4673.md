@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4673'
 title: 컴파일러 경고(수준 4) C4673
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4673
 ms.assetid: 95626ec6-f05b-43c7-8b9a-a60a6f98dd30
-ms.openlocfilehash: e361077a5584ba97c7efe22b99ec46567fc9ba4e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 557a8a0049a5870b0ae824f96a96c12ee01c0842
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228741"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97134006"
 ---
 # <a name="compiler-warning-level-4-c4673"></a>컴파일러 경고(수준 4) C4673
 

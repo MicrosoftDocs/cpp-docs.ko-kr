@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CComObject 클래스'
 title: CComObject 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComObject class
 ms.assetid: e2b6433b-6349-4749-b4bc-acbd7a22c8b0
-ms.openlocfilehash: 81246ad8bd6281d0b7578932cd431609a1ec4ac5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 086383172d5bb239bbac8ed90e9118838aea1254
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224255"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146525"
 ---
 # <a name="ccomobject-class"></a>CComObject 클래스
 
@@ -39,7 +40,7 @@ class CComObject : public Base
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[CComObject:: CComObject](#ccomobject)|생성자입니다.|
 |[CComObject:: ~ CComObject](#dtor)|소멸자입니다.|
@@ -55,7 +56,7 @@ class CComObject : public Base
 
 ## <a name="remarks"></a>설명
 
-`CComObject`집계할 때가 아닌 개체에 대해 [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) 을 구현 합니다. 그러나, 및에 대 한 호출은 `QueryInterface` `AddRef` `Release` 에 위임 됩니다 `CComObjectRootEx` .
+`CComObject` 집계할 때가 아닌 개체에 대해 [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) 을 구현 합니다. 그러나, 및에 대 한 호출은 `QueryInterface` `AddRef` `Release` 에 위임 됩니다 `CComObjectRootEx` .
 
 를 사용 하는 방법에 대 한 자세한 내용은 `CComObject` [ATL COM 개체의 기본 사항](../../atl/fundamentals-of-atl-com-objects.md)문서를 참조 하세요.
 
@@ -69,7 +70,7 @@ class CComObject : public Base
 
 **헤더:**
 
-## <a name="ccomobjectaddref"></a><a name="addref"></a>CComObject:: AddRef
+## <a name="ccomobjectaddref"></a><a name="addref"></a> CComObject:: AddRef
 
 개체의 참조 횟수를 증가 시킵니다.
 
@@ -77,11 +78,11 @@ class CComObject : public Base
 STDMETHOD_(ULONG, AddRef)();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 함수는 개체에 대 한 새 증가 된 참조 횟수를 반환 합니다. 이 값은 진단 또는 테스트에 유용할 수 있습니다.
 
-## <a name="ccomobjectccomobject"></a><a name="ccomobject"></a>CComObject:: CComObject
+## <a name="ccomobjectccomobject"></a><a name="ccomobject"></a> CComObject:: CComObject
 
 생성자는 모듈 잠금 횟수를 증가 시킵니다.
 
@@ -100,7 +101,7 @@ CComObject(void* = NULL);
 
 연산자를 `CComObject` 사용 하 여 파생 개체가 성공적으로 생성 되 면 **`new`** 초기 참조 수는 0입니다. 참조 횟수를 적절 한 값 (1)으로 설정 하려면 [AddRef](#addref) 함수를 호출 합니다.
 
-## <a name="ccomobjectccomobject"></a><a name="dtor"></a>CComObject:: ~ CComObject
+## <a name="ccomobjectccomobject"></a><a name="dtor"></a> CComObject:: ~ CComObject
 
 소멸자입니다.
 
@@ -112,9 +113,9 @@ CComObject();
 
 할당 된 모든 리소스를 해제 하 고, 전체 [릴리스](ccomobjectrootex-class.md#finalrelease)를 호출 하 고, 모듈 잠금 횟수를 감소 시킵니다.
 
-## <a name="ccomobjectcreateinstance"></a><a name="createinstance"></a>CComObject:: CreateInstance
+## <a name="ccomobjectcreateinstance"></a><a name="createinstance"></a> CComObject:: CreateInstance
 
-이 정적 함수를 사용 하면 **CComObject<** `Base` **>** [CoCreateInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance)의 오버 헤드 없이 새 CComObject<개체를 만들 수 있습니다.
+이 정적 함수를 사용 하면  `Base` **>** [CoCreateInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance)의 오버 헤드 없이 새 CComObject<개체를 만들 수 있습니다.
 
 ```
 static HRESULT WINAPI CreateInstance(CComObject<Base>** pp);
@@ -125,7 +126,7 @@ static HRESULT WINAPI CreateInstance(CComObject<Base>** pp);
 *페이지*<br/>
 제한이 **CComObject<** 포인터에 대 한 포인터 `Base` **>** 입니다. `CreateInstance`가 실패 하면 *PP* 가 NULL로 설정 됩니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 표준 HRESULT 값입니다.
 
@@ -141,7 +142,7 @@ static HRESULT WINAPI CreateInstance(CComObject<Base>** pp);
 
 [!code-cpp[NVC_ATL_COM#39](../../atl/codesnippet/cpp/ccomobject-class_2.cpp)]
 
-## <a name="ccomobjectqueryinterface"></a><a name="queryinterface"></a>CComObject:: QueryInterface
+## <a name="ccomobjectqueryinterface"></a><a name="queryinterface"></a> CComObject:: QueryInterface
 
 요청된 인터페이스에 대한 포인터를 검색합니다.
 
@@ -157,16 +158,16 @@ HRESULT STDMETHODCALLTYPE QueryInterface(Q** pp);
 진행 요청 되는 인터페이스의 식별자입니다.
 
 *ppvObject*<br/>
-제한이 *Iid*로 식별 되는 인터페이스 포인터에 대 한 포인터입니다. 개체가이 인터페이스를 지원 하지 않으면 *Ppvobject* 가 NULL로 설정 됩니다.
+제한이 *Iid* 로 식별 되는 인터페이스 포인터에 대 한 포인터입니다. 개체가이 인터페이스를 지원 하지 않으면 *Ppvobject* 가 NULL로 설정 됩니다.
 
 *페이지*<br/>
 제한이 형식으로 식별 되는 인터페이스 포인터에 대 한 포인터 `Q` 입니다. 개체가이 인터페이스를 지원 하지 않는 경우 *pp* 가 NULL로 설정 됩니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 표준 HRESULT 값입니다.
 
-## <a name="ccomobjectrelease"></a><a name="release"></a>CComObject:: Release
+## <a name="ccomobjectrelease"></a><a name="release"></a> CComObject:: Release
 
 개체의 참조 횟수를 감소 시킵니다.
 
@@ -174,7 +175,7 @@ HRESULT STDMETHODCALLTYPE QueryInterface(Q** pp);
 STDMETHOD_(ULONG, Release)();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 함수는 개체에 대 한 새 감소 된 참조 횟수를 반환 합니다. 디버그 빌드에서 반환 값은 진단 또는 테스트에 유용할 수 있습니다. 디버그가 아닌 빌드에서는 `Release` 항상 0을 반환 합니다.
 

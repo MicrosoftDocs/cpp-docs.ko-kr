@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2200'
 title: 컴파일러 오류 C2200
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2200
 ms.assetid: a04139a6-ce18-404b-9bfd-2369fc0af3cb
-ms.openlocfilehash: 9629ba7b7aa8464a59da0d68559985bd9229559a
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: fa9d58cddc7afc88e5f116be4b6e2f4643a25131
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80206767"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97145498"
 ---
 # <a name="compiler-error-c2200"></a>컴파일러 오류 C2200
 
