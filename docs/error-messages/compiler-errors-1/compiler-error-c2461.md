@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2461'
 title: 컴파일러 오류 C2461
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2461
 ms.assetid: e64ba651-f441-4fdb-b5cb-4209bbbe4db4
-ms.openlocfilehash: 3d290bd2288f76d0ddefa2057e3e01c9edc3cbc7
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 788c8e475bd38b829ca8426137569a5d8a083f18
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80205324"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341830"
 ---
 # <a name="compiler-error-c2461"></a>컴파일러 오류 C2461
 
@@ -19,7 +20,7 @@ ms.locfileid: "80205324"
 
 클래스에 대 한 생성자는 정식 매개 변수를 지정 하지 않습니다. 생성자 선언에는 형식 매개 변수 목록을 지정 해야 합니다. 목록은 비워 둘 수 있습니다.
 
-이 문제를 해결 하려면 *클래스*::**클래스*의 선언 뒤에 괄호 쌍을 추가 합니다.
+이 문제를 해결 하려면 *클래스*::**클래스* 의 선언 뒤에 괄호 쌍을 추가 합니다.
 
 ## <a name="example"></a>예제
 

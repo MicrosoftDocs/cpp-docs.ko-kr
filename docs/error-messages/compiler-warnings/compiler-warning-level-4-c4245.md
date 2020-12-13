@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4245'
 title: 컴파일러 경고(수준 4) C4245
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4245
 ms.assetid: 85083d53-9cc2-4d12-b58c-6dad28f15cbe
-ms.openlocfilehash: 15105bb82409edd7bb7ca9ddd10b831b6dc3be94
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8e75c82ca775881d3ac2771a19f0f68b789e1940
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87196138"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341700"
 ---
 # <a name="compiler-warning-level-4-c4245"></a>컴파일러 경고(수준 4) C4245
 

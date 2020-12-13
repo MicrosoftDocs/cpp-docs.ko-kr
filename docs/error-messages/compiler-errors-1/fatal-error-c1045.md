@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 심각한 오류 C1045'
 title: 심각한 오류 C1045
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1045
 ms.assetid: 766c2f89-4ecd-4281-adaa-14b270cc0829
-ms.openlocfilehash: 677575c95e3e46d4bbb1bf04f8657e98f1e0a06b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 95ce81d4f8107b6169472fbf8579286c23dd638c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220329"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341219"
 ---
 # <a name="fatal-error-c1045"></a>심각한 오류 C1045
 

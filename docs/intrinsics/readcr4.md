@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __readcr4'
 title: __readcr4
 ms.date: 09/02/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - __readcr4 intrinsic
 ms.assetid: b841a27b-fe0d-4ee9-b76b-f91d3eb061fa
-ms.openlocfilehash: 4d43b5204d412de40284f89cfd4d74f1c1f9d86d
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 3e1d3999f488d4b7c155fd2c475a2070f29f6cda
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70216724"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341037"
 ---
 # <a name="__readcr4"></a>__readcr4
 
@@ -31,11 +32,11 @@ CR4 레지스터의 값입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`__readcr4`|x86, x64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 ## <a name="remarks"></a>설명
 
@@ -43,6 +44,6 @@ CR4 레지스터의 값입니다.
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: 정적 라이브러리 (c + +/CX)'
 title: 정적 라이브러리(C++/CX)
 ms.date: 02/03/2017
 ms.assetid: 7faf53c8-fa21-42cc-8246-d32533ef9dfa
-ms.openlocfilehash: 756f8d2c1af2c6be414ad39b4a96fa6cc7ccfb02
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 0e8a0100e2822719e4105ed4e9b1029a4ff488da
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924709"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341934"
 ---
 # <a name="static-libraries-ccx"></a>정적 라이브러리(C++/CX)
 

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __readdr'
 title: __readdr
 ms.date: 09/02/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - __readdr intrinsic
 ms.assetid: 061b05da-c85e-4052-b392-106f14bb84f1
-ms.openlocfilehash: fbaf9e761f9f1450ccd12dc378ab6e498aa0df08
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: b3b5952d940db91b278344ab45edb3e8b914c094
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74857881"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341011"
 ---
 # <a name="__readdr"></a>__readdr
 
@@ -28,24 +29,24 @@ unsigned __int64 __readdr(unsigned int DebugRegister); /* x64 */
 
 ### <a name="parameters"></a>매개 변수
 
-*Debugregister*\
+*DebugRegister*\
 진행 디버그 레지스터를 식별 하는 0부터 7 까지의 상수입니다.
 
 ## <a name="return-value"></a>반환 값
 
 지정 된 디버그 레지스터의 값입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 이러한 내장 함수는 커널 모드 에서만 사용할 수 있으며 루틴은 내장 함수 에서만 사용할 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`__readdr`|x86, x64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 **Microsoft 전용 종료**
 

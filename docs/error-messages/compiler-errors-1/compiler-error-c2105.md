@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2105'
 title: 컴파일러 오류 C2105
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2105
 ms.assetid: 19b7f7bc-a9da-4d23-8193-005b6d09274f
-ms.openlocfilehash: cbd09dda2b81bb34d395df6d8cdccb48b28c3025
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: aaf00390e13bcc432251731c347b963ba3c3dc16
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74752212"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341271"
 ---
 # <a name="compiler-error-c2105"></a>컴파일러 오류 C2105
 

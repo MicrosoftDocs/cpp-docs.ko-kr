@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: end 함수'
 title: end 함수
 ms.date: 01/22/2017
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - end Function
 ms.assetid: fb837bff-fc76-4bae-9096-facf0e03041c
-ms.openlocfilehash: c46c601be2b2ed78cf79641a7fcf5324e615a771
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e29595e7eb403af85abdbfa18782adf1c33c308e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62375810"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341973"
 ---
 # <a name="end-function"></a>end 함수
 
@@ -44,10 +45,10 @@ template <typename T>
 템플릿 형식 매개 변수입니다.
 
 *v*<br/>
-벡터의 컬렉션인\<T > 또는 VectorView\<T >를 IVector로 액세스할 수 있는 개체\<T >, 또는 IVectorView\<T > 인터페이스입니다.
+\<T> \<T> IVector \<T> 또는 IVectorView 인터페이스에서 액세스 하는 Vector 또는 VectorView 개체의 컬렉션입니다 \<T> .
 
 *i*<br/>
-개체는 IIterable 액세스 되는 Windows 런타임 arbitraty 컬렉션\<T > 인터페이스입니다.
+Iiterable<t> 인터페이스를 통해 액세스 되는 arbitraty Windows 런타임 개체의 컬렉션입니다 \<T> .
 
 ### <a name="return-value"></a>반환 값
 
@@ -61,10 +62,10 @@ template <typename T>
 
 ### <a name="requirements"></a>요구 사항
 
-**헤더:** collection.h
+**헤더:** collection .h
 
 **네임스페이스:** Windows::Foundation::Collections
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[Windows::Foundation::Collections 네임스페이스](../cppcx/windows-foundation-collections-namespace-c-cx.md)
+[Windows:: Foundation:: Collections 네임 스페이스](../cppcx/windows-foundation-collections-namespace-c-cx.md)

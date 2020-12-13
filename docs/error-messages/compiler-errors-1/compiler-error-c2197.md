@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2197'
 title: 컴파일러 오류 C2197
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2197
 ms.assetid: 6dd5a6ec-bc80-41b9-a4ac-46f80eaca42d
-ms.openlocfilehash: 16bc1b17b13cb9c7507a769f644eb34faa4989de
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: a82a39eba23cae617cf910101f5550fd0f9f0ad4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75301849"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341921"
 ---
 # <a name="compiler-error-c2197"></a>컴파일러 오류 C2197
 

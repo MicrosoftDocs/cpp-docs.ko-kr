@@ -1,13 +1,14 @@
 ---
+description: '컬렉션에 대 한 자세한 정보: 컬렉션 (c + +/CX)'
 title: 컬렉션(C++/CX)
 ms.date: 11/19/2018
 ms.assetid: 914da30b-aac5-4cd7-9da3-a5ac08cdd72c
-ms.openlocfilehash: 84c6ecad5ffb4920972faf5aa564103ec1f5b5df
-ms.sourcegitcommit: 65fead53d56d531d71be42216056aca5f44def11
+ms.openlocfilehash: 4843441b5d5091bea36ff8c74bd84bddd5f7fa4d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88610948"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342051"
 ---
 # <a name="collections-ccx"></a>컬렉션(C++/CX)
 
@@ -57,7 +58,7 @@ Windows 런타임는 컬렉션 및 관련 형식에 대 한 인터페이스를 �
 
 ## <a name="vectorproxy-elements"></a>VectorProxy 요소
 
-[Platform:: collections:: VectorIterator](../cppcx/platform-collections-vectoriterator-class.md) 및 [Platform:: Collections:: VectorViewIterator](../cppcx/platform-collections-vectorviewiterator-class.md) 를 사용 하면 `range for` [IVector \<T> ](/uwp/api/windows.foundation.collections.ivector-1) 컨테이너에서 [std:: sort](../standard-library/algorithm-functions.md#sort) 와 같은 루프 및 알고리즘을 사용할 수 있습니다. 그러나 `IVector` 요소는 C++ 포인터 역참조를 통해 액세스할 수 없습니다. 이 요소는 [GetAt](/uwp/api/windows.foundation.collections.ivector-1.getat) 및 [SetAt](/uwp/api/windows.foundation.collections.ivector-1.setat) 메서드를 통해서만 액세스할 수 있습니다. 따라서 이러한 반복기는 `Platform::Details::VectorProxy<T>` `Platform::Details::ArrowProxy<T>` 표준 라이브러리에서 요구 하는 대로 프록시 클래스 및를 사용 하 여 __\*__ , __->__ 및 __ \[ ]__ 연산자를 통해 개별 요소에 대 한 액세스를 제공 합니다. 엄밀히 말해 `IVector<Person^> vec`지정 시 `*begin(vec)` 의 형식은 `VectorProxy<Person^>`입니다. 그러나 프록시 개체는 사용자 코드에 거의 표시되지 않습니다. 이러한 프록시 개체는 내부적으로 반복기에만 사용되므로 문서화되지 않지만 메커니즘의 작동 방식을 알면 유용합니다.
+[Platform:: collections:: VectorIterator](../cppcx/platform-collections-vectoriterator-class.md) 및 [Platform:: Collections:: VectorViewIterator](../cppcx/platform-collections-vectorviewiterator-class.md) 를 사용 하면 `range for` [IVector \<T> ](/uwp/api/windows.foundation.collections.ivector-1) 컨테이너에서 [std:: sort](../standard-library/algorithm-functions.md#sort) 와 같은 루프 및 알고리즘을 사용할 수 있습니다. 그러나 `IVector` 요소는 C++ 포인터 역참조를 통해 액세스할 수 없습니다. 이 요소는 [GetAt](/uwp/api/windows.foundation.collections.ivector-1.getat) 및 [SetAt](/uwp/api/windows.foundation.collections.ivector-1.setat) 메서드를 통해서만 액세스할 수 있습니다. 따라서 이러한 반복기는 `Platform::Details::VectorProxy<T>` `Platform::Details::ArrowProxy<T>` 표준 라이브러리에서 요구 하는 대로 프록시 클래스 및를 사용 하 여 __\*__ , __->__ 및 __\[ ]__ 연산자를 통해 개별 요소에 대 한 액세스를 제공 합니다. 엄밀히 말해 `IVector<Person^> vec`지정 시 `*begin(vec)` 의 형식은 `VectorProxy<Person^>`입니다. 그러나 프록시 개체는 사용자 코드에 거의 표시되지 않습니다. 이러한 프록시 개체는 내부적으로 반복기에만 사용되므로 문서화되지 않지만 메커니즘의 작동 방식을 알면 유용합니다.
 
 `range for` 컨테이너에 대해 `IVector` 루프를 사용할 때는 반복기 변수가 `auto&&` 요소에 올바르게 바인딩되도록 `VectorProxy` 를 사용합니다. 또는를 사용 하는 경우 **`auto`** `auto&` 컴파일러 경고 c 4239이 발생 하 고 `VectoryProxy` 경고 텍스트에 언급 됩니다.
 
@@ -98,7 +99,7 @@ void FindButton(UIElementCollection^ col)
 
 컬렉션은 네 가지 범주로 구분됩니다(수정 가능한 버전 및 읽기 전용 버전의 시퀀스 컬렉션과 연결 컬렉션). 또한 c + +/CX는 컬렉션에 대 한 액세스를 간소화 하는 세 가지 반복기 클래스를 제공 하 여 컬렉션을 향상 시킵니다.
 
-수정 가능한 컬렉션의 요소는 변경할 수 있지만 읽기 전용 컬렉션( *뷰*라고 함)의 요소는 읽을 수만 있습니다. [Platform:: collections:: Vector](../cppcx/platform-collections-vector-class.md) 또는[Platform:: Collections:: VectorView](../cppcx/platform-collections-vectorview-class.md) collection의 요소는 반복기 또는 컬렉션의 [Vector:: GetAt](../cppcx/platform-collections-vector-class.md#getat) 및 인덱스를 사용 하 여 액세스할 수 있습니다. 결합형 컬렉션의 요소는 컬렉션의 [Map:: Lookup](../cppcx/platform-collections-map-class.md#lookup) 및 키를 사용 하 여 액세스할 수 있습니다.
+수정 가능한 컬렉션의 요소는 변경할 수 있지만 읽기 전용 컬렉션( *뷰* 라고 함)의 요소는 읽을 수만 있습니다. [Platform:: collections:: Vector](../cppcx/platform-collections-vector-class.md) 또는[Platform:: Collections:: VectorView](../cppcx/platform-collections-vectorview-class.md) collection의 요소는 반복기 또는 컬렉션의 [Vector:: GetAt](../cppcx/platform-collections-vector-class.md#getat) 및 인덱스를 사용 하 여 액세스할 수 있습니다. 결합형 컬렉션의 요소는 컬렉션의 [Map:: Lookup](../cppcx/platform-collections-map-class.md#lookup) 및 키를 사용 하 여 액세스할 수 있습니다.
 
 [Platform:: Collections:: Map 클래스](../cppcx/platform-collections-map-class.md)<br/>
 수정 가능한 연결 컬렉션입니다. 맵 요소는 키/값 쌍입니다. 키를 조회하여 연결된 값을 검색하고 모든 키/값 쌍에서 반복하는 작업이 둘 다 지원됩니다.
@@ -129,7 +130,7 @@ STL 사용으로 `Vector` ,`VectorView`, `Map`, `MapView` 및 임의 `Windows::F
 
 다음 표에서는 사용 가능한 반복기 및 함수를 보여 줍니다.
 
-|Iterators|Functions|
+|Iterators|함수|
 |---------------|---------------|
 |[Platform:: Collections:: VectorIterator\<T>](../cppcx/platform-collections-vectoriterator-class.md)<br /><br /> (내부적으로 [Windows:: Foundation:: Collections:: IVector \<T> ](/uwp/api/windows.foundation.collections.ivector-1) 및 int 저장)|[시작](../cppcx/begin-function.md) /  [end](../cppcx/end-function.md)([Windows:: Foundation:: Collections:: IVector \<T> ](/uwp/api/windows.foundation.collections.ivector-1))|
 |[Platform:: Collections:: VectorViewIterator\<T>](../cppcx/platform-collections-vectorviewiterator-class.md)<br /><br /> (내부적으로 [Ivectorview \<T> ](/uwp/api/windows.foundation.collections.ivectorview-1)^ 및 int 저장)|[시작](../cppcx/begin-function.md) /  [end](../cppcx/end-function.md) ([ivectorview \<T> ](/uwp/api/windows.foundation.collections.ivectorview-1)^)|

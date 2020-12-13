@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4613'
 title: 컴파일러 경고(수준 1) C4613
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4613
 ms.assetid: 399f521b-651c-4997-bc91-f40198e9a4d4
-ms.openlocfilehash: bb3883d318ccd885d19469e7722362485f782144
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: b9c7e81595a4c17df32ddb5223e386ec22c295fd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80185947"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341713"
 ---
 # <a name="compiler-warning-level-1-c4613"></a>컴파일러 경고(수준 1) C4613
 

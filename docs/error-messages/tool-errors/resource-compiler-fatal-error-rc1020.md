@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 리소스 컴파일러 심각한 오류 RC1020'
 title: 리소스 컴파일러 심각한 오류 RC1020
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - RC1020
 ms.assetid: 3e073ebf-9136-4bf8-ac6a-3c642ed64594
-ms.openlocfilehash: ff4cc5564f59d0adf74ae86149130dd5d017a9ae
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a3ee2bd319cce9663c27030b523dd9e389158e45
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80182684"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341089"
 ---
 # <a name="resource-compiler-fatal-error-rc1020"></a>리소스 컴파일러 심각한 오류 RC1020
 
 예기치 않은 ' #endif '
 
-짝이 되는 `#if`, **#ifdef**또는 **#ifndef** 지시문이 없으면 `#endif` 지시문이 표시 됩니다.
+`#endif`짝 `#if` 이 되는, **#ifdef** 또는 **#ifndef** 지시문 없이 지시어가 나타났습니다.
 
-각 `#if`, **#ifdef**및 **#ifndef** 문에 대해 일치 하는 `#endif` 있는지 확인 합니다.
+`#endif`각 `#if` , **#ifdef** 및 **#ifndef** 문에 대해 일치 하는 항목을 확인 해야 합니다.

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 심각한 오류 C 1047'
 title: 심각한 오류 C1047
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1047
 ms.assetid: e1bbbc6b-a5bc-4c23-8203-488120a0ec78
-ms.openlocfilehash: 5ab98c46d60d15cdcb6de22aa922d62453d41880
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e3aa85fb777850ce6ee754ee89b9e351b5eba975
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80204494"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341193"
 ---
 # <a name="fatal-error-c1047"></a>심각한 오류 C1047
 

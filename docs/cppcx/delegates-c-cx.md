@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: 대리자 (c + +/CX)'
 title: 대리자(C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 3175bf1c-86d8-4eda-8d8f-c5b6753d8e38
-ms.openlocfilehash: 4944efc10b4590f8dc682230968d9c97ef91cb5c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3d62b48d76319d79707330e874e6ceddcc22284e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225776"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342012"
 ---
 # <a name="delegates-ccx"></a>대리자(C++/CX)
 

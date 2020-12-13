@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2054'
 title: 컴파일러 오류 C2054
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2054
 ms.assetid: 37f7c612-0d7d-4728-9e67-ac4160555f48
-ms.openlocfilehash: e7d90d684c1d95f540f6357bf61ee7c6f889ad3f
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: b86c805a5687679cfa4bb5ed667c3bcf3adbad94
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75302057"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341362"
 ---
 # <a name="compiler-error-c2054"></a>컴파일러 오류 C2054
 
@@ -28,7 +29,7 @@ ms.locfileid: "75302057"
 int array1[] { 1, 2, 3 };   // C2054, missing =
 ```
 
-가능한 해결 방법:
+해결 방법:
 
 ```c
 // C2054b.c

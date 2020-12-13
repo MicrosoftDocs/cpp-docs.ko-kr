@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2116'
 title: 컴파일러 오류 C2116
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2116
 ms.assetid: 0089a23f-e6bd-4956-9b58-3bcca09ab5ad
-ms.openlocfilehash: d68451d28a9324d9fb9aaeee8a0a142713228b62
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: c17a16443e9b9b4528abe46a3e6921c5cc9c99ed
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80207443"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341232"
 ---
 # <a name="compiler-error-c2116"></a>컴파일러 오류 C2116
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2464'
 title: 컴파일러 오류 C2464
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2464
 ms.assetid: ace953d6-b414-49ee-bfef-90578a8da00c
-ms.openlocfilehash: b2d2766b11d15bdb666baa207591cc9ff279a280
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2e30166529616809478927dbfe6ff1f1efb3002a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225477"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341843"
 ---
 # <a name="compiler-error-c2464"></a>컴파일러 오류 C2464
 

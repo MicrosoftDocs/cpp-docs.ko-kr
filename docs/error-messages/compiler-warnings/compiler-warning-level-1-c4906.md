@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4906'
 title: 컴파일러 경고(수준 1) C4906
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4906
 ms.assetid: 05318e74-799b-412a-9dce-f02b8161d762
-ms.openlocfilehash: 88671dea6b0d96f33ad6a84611b0ded9746c699f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 069926f01d6bf58a92d46275ddacef85f6e80be0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80174807"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341128"
 ---
 # <a name="compiler-warning-level-1-c4906"></a>컴파일러 경고(수준 1) C4906
 

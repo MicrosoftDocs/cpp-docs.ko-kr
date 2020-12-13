@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2860'
 title: 컴파일러 오류 C2860
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2860
 ms.assetid: ccc83553-90ed-4e94-b5e9-38b58ae38e31
-ms.openlocfilehash: 25ae5f0ffee659dee2e0ac388da207a5165ecc8e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 27474577e31cdc046769f9fc26686d3aaa7f3e64
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214570"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341167"
 ---
 # <a name="compiler-error-c2860"></a>컴파일러 오류 C2860
 

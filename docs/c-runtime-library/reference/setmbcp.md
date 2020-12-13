@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _setmbcp'
 title: _setmbcp
 ms.date: 4/2/2020
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - _setmbcp function
 - multibyte code pages
 ms.assetid: cfde53b5-0b73-4684-81b1-a8d3aafc85de
-ms.openlocfilehash: 9a981c40b9e525ba1ffc1f2198f2b6a859fd9ac7
-ms.sourcegitcommit: b51703a96ee35ee2376d5f0775b70f03ccbe6d9a
+ms.openlocfilehash: fe69360de2e6e0ebdea8c700ab398d56e669f022
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88086970"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342220"
 ---
 # <a name="_setmbcp"></a>_setmbcp
 
@@ -50,12 +51,12 @@ int _setmbcp(
 
 ### <a name="parameters"></a>매개 변수
 
-*코드 페이지*<br/>
+*codepage*<br/>
 로캘 독립적인 멀티바이트 루틴에 대한 새 코드 페이지 설정입니다.
 
 ## <a name="return-value"></a>반환 값
 
-코드 페이지가 올바르게 설정되면 0을 반환합니다. *코드 페이지에 대해 잘못*된 코드 페이지 값이 제공 된 경우는-1을 반환 하 고 코드 페이지 설정은 변경 되지 않습니다. 메모리 할당 오류가 발생 하는 경우 **errno** 을 **EINVAL** 로 설정 합니다.
+코드 페이지가 올바르게 설정되면 0을 반환합니다. *코드 페이지에 대해 잘못* 된 코드 페이지 값이 제공 된 경우는-1을 반환 하 고 코드 페이지 설정은 변경 되지 않습니다. 메모리 할당 오류가 발생 하는 경우 **errno** 을 **EINVAL** 로 설정 합니다.
 
 ## <a name="remarks"></a>설명
 
@@ -69,9 +70,9 @@ int _setmbcp(
 
 - **_MB_CP_OEM** 프로그램 시작 시 운영 체제에서 가져온 OEM 코드 페이지를 사용 합니다.
 
-- **_MB_CP_SBCS** 싱글바이트 코드 페이지를 사용 합니다. 코드 페이지가 **_MB_CP_SBCS**로 설정 된 경우 [_ismbblead](ismbblead-ismbblead-l.md) 와 같은 루틴은 항상 false를 반환 합니다.
+- **_MB_CP_SBCS** 싱글바이트 코드 페이지를 사용 합니다. 코드 페이지가 **_MB_CP_SBCS** 로 설정 된 경우 [_ismbblead](ismbblead-ismbblead-l.md) 와 같은 루틴은 항상 false를 반환 합니다.
 
-- **_MB_CP_UTF8** U t f-8을 사용 합니다.  코드 페이지가 **_MB_CP_UTF8**로 설정 된 경우 [_ismbblead](ismbblead-ismbblead-l.md) 와 같은 루틴은 항상 false를 반환 합니다.
+- **_MB_CP_UTF8** U t f-8을 사용 합니다.  코드 페이지가 **_MB_CP_UTF8** 로 설정 된 경우 [_ismbblead](ismbblead-ismbblead-l.md) 와 같은 루틴은 항상 false를 반환 합니다.
 
 - 다른 모든 유효한 코드 페이지 값은 값이 ANSI, OEM 또는 기타 운영 체제 지원 코드 페이지 (지원 되지 않는 u t f-7 제외) 인지 여부에 관계 없이 모든 유효한 코드 페이지 값입니다.
 

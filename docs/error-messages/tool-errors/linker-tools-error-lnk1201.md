@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 링커 도구 오류 LNK1201'
 title: 링커 도구 오류 LNK1201
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1201
 ms.assetid: 64c3f496-a428-4b54-981e-faa82ef9c8a1
-ms.openlocfilehash: 8d02743333c02c7cdff3b75e4a16bfecda442fa9
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 2817e8f84d0a5d28aa012de5459eb7e09f383172
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80195112"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341635"
 ---
 # <a name="linker-tools-error-lnk1201"></a>링커 도구 오류 LNK1201
 

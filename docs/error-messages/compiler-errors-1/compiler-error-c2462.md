@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2462'
 title: 컴파일러 오류 C2462
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2462
 ms.assetid: a8601bf8-f5ce-41de-9117-e2632bd4996b
-ms.openlocfilehash: 8db79bf9813d9701b45d9a0427f68cfbecc3eba4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f85d8f2e38c38043765b29b6e766c0cbd4fef1fd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214674"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341817"
 ---
 # <a name="compiler-error-c2462"></a>컴파일러 오류 C2462
 

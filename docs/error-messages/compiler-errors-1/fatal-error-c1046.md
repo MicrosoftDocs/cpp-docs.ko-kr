@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 심각한 오류 C1046'
 title: 심각한 오류 C1046
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1046
 ms.assetid: 822ec5f5-b0b0-4711-99e1-fc237b619af6
-ms.openlocfilehash: c299648ccb709fd88733f588ca1ded2cbdd17911
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0251d717ba86405a90ed34b170af39e0b9eacea1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220316"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341206"
 ---
 # <a name="fatal-error-c1046"></a>심각한 오류 C1046
 

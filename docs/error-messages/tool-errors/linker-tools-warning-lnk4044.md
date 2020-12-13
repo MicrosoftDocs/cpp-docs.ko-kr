@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 링커 도구 경고 LNK4044'
 title: 링커 도구 경고 LNK4044
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4044
 ms.assetid: f3a67a15-98c0-42ed-afcb-f5f9540e2671
-ms.openlocfilehash: ed82176f96633d8915016f9b1ad6656a2aecda75
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 7293bf017c5552467c2c188f62a123e621748f9d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80194163"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341102"
 ---
 # <a name="linker-tools-warning-lnk4044"></a>링커 도구 경고 LNK4044
 

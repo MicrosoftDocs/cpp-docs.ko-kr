@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: wcrtomb_s'
 title: wcrtomb_s
 ms.date: 4/2/2020
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - multibyte characters
 - characters, converting
 ms.assetid: 9a8a1bd0-1d60-463d-a3a2-d83525eaf656
-ms.openlocfilehash: 51985b008565cbe550065b85261b8beb53ed6f89
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 6f716c6eccf1c8e9fe3afbc9271bc69976d87d73
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915970"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342077"
 ---
 # <a name="wcrtomb_s"></a>wcrtomb_s
 
@@ -76,17 +77,17 @@ errno_t wcrtomb_s(
 *mbstate*<br/>
 **Mbstate_t** 개체에 대 한 포인터입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 오류가 발생 하는 경우 0 또는 **errno** 값을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-**Wcrtomb_s** 함수는 *mbstate*에 포함 된 지정 된 변환 상태에서 시작 하 여 *wchar*에 포함 된 값에서 *mbstate*로 표시 되는 주소로 와이드 문자를 변환 합니다. *PReturnValue* 값은 변환 된 바이트 수 이지만 **MB_CUR_MAX** 바이트를 초과 하지 않습니다. 오류가 발생 한 경우에는-1입니다.
+**Wcrtomb_s** 함수는 *mbstate* 에 포함 된 지정 된 변환 상태에서 시작 하 여 *wchar* 에 포함 된 값에서 *mbstate* 로 표시 되는 주소로 와이드 문자를 변환 합니다. *PReturnValue* 값은 변환 된 바이트 수 이지만 **MB_CUR_MAX** 바이트를 초과 하지 않습니다. 오류가 발생 한 경우에는-1입니다.
 
-*Mbstate* 가 null 이면 내부 **mbstate_t** 변환 상태가 사용 됩니다. *Wchar* 에 포함 된 문자에 해당 하는 멀티 바이트 문자가 없으면 *pReturnValue* 값은-1이 고 함수는 **eilseq**의 **errno** 값을 반환 합니다.
+*Mbstate* 가 null 이면 내부 **mbstate_t** 변환 상태가 사용 됩니다. *Wchar* 에 포함 된 문자에 해당 하는 멀티 바이트 문자가 없으면 *pReturnValue* 값은-1이 고 함수는 **eilseq** 의 **errno** 값을 반환 합니다.
 
-**Wcrtomb_s** 함수는 다시 시작할에 의해 [_wctomb_s_l wctomb_s](wctomb-s-wctomb-s-l.md) 와 다릅니다. 동일 하거나 다른 다시 시작 가능 함수에 대 한 후속 호출의 경우 변환 상태가 *mbstate* 에 저장 됩니다. 다시 시작할 수 있는 함수와 다시 시작할 수 없는 함수를 함께 사용할 때는 결과가 정의되지 않습니다. 예를 들어, **wcstombs_s**대신 **wcsrtombs_s** 에 대 한 후속 호출을 사용 하는 경우 응용 프로그램은 **wcslen**이 아닌 **wcsrlen** 을 사용 합니다.
+**Wcrtomb_s** 함수는 다시 시작할에 의해 [_wctomb_s_l wctomb_s](wctomb-s-wctomb-s-l.md) 와 다릅니다. 동일 하거나 다른 다시 시작 가능 함수에 대 한 후속 호출의 경우 변환 상태가 *mbstate* 에 저장 됩니다. 다시 시작할 수 있는 함수와 다시 시작할 수 없는 함수를 함께 사용할 때는 결과가 정의되지 않습니다. 예를 들어, **wcstombs_s** 대신 **wcsrtombs_s** 에 대 한 후속 호출을 사용 하는 경우 응용 프로그램은 **wcslen** 이 아닌 **wcsrlen** 을 사용 합니다.
 
 C++에서는 템플릿 오버로드로 인해 이러한 함수를 간편하게 사용할 수 있습니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으며(크기 인수를 지정할 필요가 없어짐), 기존의 비보안 함수를 보다 최신의 보안 대응 함수로 자동으로 바꿀 수 있습니다. 자세한 내용은 [안전한 템플릿 오버로드](../../c-runtime-library/secure-template-overloads.md)를 참조하세요.
 
@@ -146,9 +147,9 @@ The corresponding wide character "Q" was converted to a the "Q" multibyte charac
 |-------------|---------------------|
 |**wcrtomb_s**|\<wchar.h>|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [데이터 변환](../../c-runtime-library/data-conversion.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[멀티 바이트 문자 시퀀스 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[로캘](../../c-runtime-library/locale.md)<br/>
+[Multibyte-Character 시퀀스의 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [mbsinit](mbsinit.md)<br/>
