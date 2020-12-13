@@ -1,4 +1,5 @@
 ---
+description: Max_unbounded 클래스에 대해 자세히 알아보세요.
 title: max_unbounded 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,18 +17,18 @@ helpviewer_keywords:
 - stdext::max_unbounded [C++], released
 - stdext::max_unbounded [C++], saved
 ms.assetid: e34627a9-c231-4031-a483-cbb0514fff46
-ms.openlocfilehash: e0254563cc60db4a171527735b373c2954a5a9e5
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 64501d9028b5adba0f9e3059f3581ad57d00ea27
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561962"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97149242"
 ---
 # <a name="max_unbounded-class"></a>max_unbounded 클래스
 
 [freelist](../standard-library/freelist-class.md) 개체의 최대 길이를 제한하지 않는 [max 클래스](../standard-library/allocators-header.md) 개체를 설명합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class max_unbounded
@@ -91,7 +92,7 @@ void deallocated(std::size_t _Nx = 1);
 bool full();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 멤버 함수는 항상 **`false`** 를 반환 합니다.
 

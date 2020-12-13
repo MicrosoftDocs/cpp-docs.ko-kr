@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: &lt; 원자성 &gt; 열거형'
 title: '&lt;atomic&gt; enums'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 ms.assetid: cd3a81c5-a19e-448f-952a-c34c717f21a9
 helpviewer_keywords:
 - std::memory_order
-ms.openlocfilehash: d8a4e9196e27933c75a32c256114e968b55678a6
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5144b936cbea8e16b5bf344f6fb776eefa6b09ff
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834897"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97149528"
 ---
 # <a name="ltatomicgt-enums"></a>&lt;atomic&gt; enums
 

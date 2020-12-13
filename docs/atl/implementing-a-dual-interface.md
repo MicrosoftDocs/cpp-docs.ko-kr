@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 이중 인터페이스 구현'
 title: 이중 인터페이스 구현 (ATL)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - IDispatchImpl class, implementing dual interfaces
 - dual interfaces, implementing
 ms.assetid: d1da3633-b445-4dcd-8a0a-3efdafada3ea
-ms.openlocfilehash: 97d8cd912c85a74f3550a9ca6c7b87a9717d4075
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: e20bbe293cb7d6e7ae0f4d0482f1003571178ab9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91499552"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97147799"
 ---
 # <a name="implementing-a-dual-interface"></a>이중 인터페이스 구현
 

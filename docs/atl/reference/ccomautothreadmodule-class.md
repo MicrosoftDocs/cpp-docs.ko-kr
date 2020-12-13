@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CComAutoThreadModule 클래스'
 title: CComAutoThreadModule 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - CComAutoThreadModule class
 - apartment model modules
 ms.assetid: 13063ea5-a57e-4aac-97d3-227137262811
-ms.openlocfilehash: 405b05548cda2b2d379b849d9278293b8d747d2e
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: fe6ded878a054bdcdc2569c8ca347e2ac20410b9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833792"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146941"
 ---
 # <a name="ccomautothreadmodule-class"></a>CComAutoThreadModule 클래스
 
@@ -47,13 +48,13 @@ class CComAutoThreadModule : public CComModule
 
 ### <a name="methods"></a>메서드
 
-|기능|설명|
+|함수|설명|
 |-|-|
 |[CreateInstance](#createinstance)|스레드를 선택한 다음 연결 된 아파트에서 개체를 만듭니다.|
 |[GetDefaultThreads](#getdefaultthreads)|정적인 프로세서 수를 기준으로 모듈의 스레드 수를 동적으로 계산 합니다.|
 |[Init](#init)|모듈의 스레드를 만듭니다.|
 |[잠금](#lock)|모듈 및 현재 스레드에서 잠금 횟수를 증가 시킵니다.|
-|[잠금을](#unlock)|모듈 및 현재 스레드에서 잠금 횟수를 감소 시킵니다.|
+|[잠금 해제](#unlock)|모듈 및 현재 스레드에서 잠금 횟수를 감소 시킵니다.|
 
 ### <a name="data-members"></a>데이터 멤버
 
@@ -117,7 +118,7 @@ HRESULT CreateInstance(
 진행 요청 된 인터페이스의 IID입니다.
 
 *ppvObj*<br/>
-제한이 *Riid*로 식별 되는 인터페이스 포인터에 대 한 포인터입니다. 개체가이 인터페이스를 지원 하지 않으면 *Ppvobj* 가 NULL로 설정 됩니다.
+제한이 *Riid* 로 식별 되는 인터페이스 포인터에 대 한 포인터입니다. 개체가이 인터페이스를 지원 하지 않으면 *Ppvobj* 가 NULL로 설정 됩니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -183,7 +184,7 @@ HRESULT Init(
 
 ### <a name="remarks"></a>설명
 
-데이터 멤버를 초기화 하 고 *nthreads*로 지정 된 스레드 수를 만듭니다.
+데이터 멤버를 초기화 하 고 *nthreads* 로 지정 된 스레드 수를 만듭니다.
 
 ## <a name="ccomautothreadmodulelock"></a><a name="lock"></a> CComAutoThreadModule:: Lock
 

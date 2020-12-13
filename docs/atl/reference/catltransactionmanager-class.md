@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CAtlTransactionManager 클래스'
 title: CAtlTransactionManager 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -25,12 +26,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlTransactionManager class
 ms.assetid: b01732dc-1d16-4b42-bfac-b137fca2b740
-ms.openlocfilehash: 74afc1a82c12d6138198f5696d300825e06aba1e
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 25d5ea7e9b4838f483dd7f9ee408cdd5bd4c88cb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562218"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97147188"
 ---
 # <a name="catltransactionmanager-class"></a>CAtlTransactionManager 클래스
 
@@ -49,14 +50,14 @@ class CAtlTransactionManager;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[~ CAtlTransactionManager](#dtor)|CAtlTransactionManager 소멸자입니다.|
 |[CAtlTransactionManager](#catltransactionmanager)|CAtlTransactionManager 생성자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[닫기](#close)|트랜잭션 핸들 하나를 닫습니다.|
 |[커밋](#commit)|트랜잭션이 커밋되는 것을 요청 합니다.|
@@ -72,12 +73,12 @@ class CAtlTransactionManager;
 |[RegCreateKeyEx](#regcreatekeyex)|지정 된 레지스트리 키를 만들고 트랜잭션과 연결 합니다. 키가 이미 있는 경우 함수에서 키를 엽니다.|
 |[RegDeleteKey](#regdeletekey)|레지스트리의 지정 된 플랫폼별 뷰에서 하위 키와 해당 값을 트랜잭션 작업으로 삭제 합니다.|
 |[RegOpenKeyEx](#regopenkeyex)|지정 된 레지스트리 키를 열고 트랜잭션과 연결 합니다.|
-|[롤백해야](#rollback)|트랜잭션이 롤백되는 것을 요청 합니다.|
+|[롤백](#rollback)|트랜잭션이 롤백되는 것을 요청 합니다.|
 |[SetFileAttributes](#setfileattributes)|파일이 나 디렉터리에 대 한 특성을 트랜잭션 작업으로 설정 합니다.|
 
 ### <a name="protected-data-members"></a>보호된 데이터 멤버
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |[m_bFallback](#m_bfallback)|대체 (fallback)가 지원 되 면 TRUE입니다. 그렇지 않으면 FALSE입니다.|
 |[m_hTransaction](#m_htransaction)|트랜잭션 핸들입니다.|
@@ -130,7 +131,7 @@ TRUE는 트랜잭션 처리기가 생성자에 자동으로 생성 됨을 나타
 inline BOOL Close();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 TRUE이고, 실패하면 FALSE입니다.
 
@@ -146,7 +147,7 @@ inline BOOL Close();
 inline BOOL Commit();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 TRUE이고, 실패하면 FALSE입니다.
 
@@ -162,7 +163,7 @@ inline BOOL Commit();
 inline BOOL Create();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 TRUE이고, 실패하면 FALSE입니다.
 
@@ -206,9 +207,9 @@ inline HANDLE CreateFile(
 파일 특성 및 플래그입니다. 이 매개 변수는 사용 가능한 파일 특성 (FILE_ATTRIBUTE_ *)의 조합을 포함할 수 있습니다. 다른 모든 파일 특성은 FILE_ATTRIBUTE_NORMAL를 재정의 합니다. 이 매개 변수에는 \* 버퍼링 동작, 액세스 모드 및 기타 특수 용도의 플래그를 제어 하기 위한 플래그 (FILE_FLAG_) 조합이 포함 될 수도 있습니다. 이러한 값은 모든 FILE_ATTRIBUTE_ \* 값과 결합 됩니다.
 
 *H템플릿 파일*<br/>
-GENERIC_READ 액세스 권한이 있는 템플릿 파일에 대 한 올바른 핸들입니다. 템플릿 파일은 생성 되는 파일에 대 한 파일 특성 및 확장 특성을 제공 합니다. 이 매개 변수는 NULL 일 수 있습니다.
+GENERIC_READ 액세스 권한이 있는 템플릿 파일에 대 한 올바른 핸들입니다. 템플릿 파일은 생성 되는 파일에 대 한 파일 특성 및 확장 특성을 제공 합니다. 이 매개 변수는 NULL일 수 있습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 개체에 액세스 하는 데 사용할 수 있는 핸들을 반환 합니다.
 
@@ -251,7 +252,7 @@ inline HANDLE FindFirstFile(
 *pNextInfo*<br/>
 찾은 파일이 나 하위 디렉터리에 대 한 정보를 수신 하는 WIN32_FIND_DATA 구조체에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 함수가 성공 하면 반환 값은 또는에 대 한 후속 호출에 사용 되는 검색 핸들 `FindNextFile` 입니다 `FindClose` . 함수가 실패 하거나 *Lpfilename* 매개 변수의 검색 문자열에서 파일을 찾지 못한 경우 반환 값은 INVALID_HANDLE_VALUE입니다.
 
@@ -296,7 +297,7 @@ inline BOOL GetFileAttributesEx(
 검색할 특성 정보의 수준입니다.
 
 *lpFileInformation*<br/>
-특성 정보를 받는 버퍼에 대 한 포인터입니다. 이 버퍼에 저장 되는 특성 정보 유형은 *fInfoLevelId*의 값에 따라 결정 됩니다. *FInfoLevelId* 매개 변수가 GetFileExInfoStandard 인 경우이 매개 변수는 WIN32_FILE_ATTRIBUTE_DATA 구조체를 가리킵니다.
+특성 정보를 받는 버퍼에 대 한 포인터입니다. 이 버퍼에 저장 되는 특성 정보 유형은 *fInfoLevelId* 의 값에 따라 결정 됩니다. *FInfoLevelId* 매개 변수가 GetFileExInfoStandard 인 경우이 매개 변수는 WIN32_FILE_ATTRIBUTE_DATA 구조체를 가리킵니다.
 
 ### <a name="remarks"></a>설명
 
@@ -310,7 +311,7 @@ inline BOOL GetFileAttributesEx(
 HANDLE GetHandle() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 클래스에 대 한 트랜잭션 핸들을 반환 합니다. `CAtlTransactionManager`가 핸들에 연결 되지 않은 경우 NULL을 반환 합니다.
 
@@ -324,7 +325,7 @@ HANDLE GetHandle() const;
 BOOL IsFallback() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 클래스에서 대체 호출을 지원 하면 TRUE를 반환 합니다. 그렇지 않으면 FALSE입니다.
 
@@ -399,7 +400,7 @@ inline LSTATUS RegCreateKeyEx(
 이 매개 변수는 예약 되어 있으며 0 이어야 합니다.
 
 *lpClass*<br/>
-이 키의 사용자 정의 클래스입니다. 이 매개 변수는 무시 해도 됩니다. 이 매개 변수는 NULL 일 수 있습니다.
+이 키의 사용자 정의 클래스입니다. 이 매개 변수는 무시 해도 됩니다. 이 매개 변수는 NULL일 수 있습니다.
 
 *dwOptions*<br/>
 이 매개 변수는 REG_OPTION_BACKUP_RESTORE, REG_OPTION_NON_VOLATILE 또는 REG_OPTION_VOLATILE 값 중 하나일 수 있습니다.
@@ -416,7 +417,7 @@ inline LSTATUS RegCreateKeyEx(
 *Lstwstgga*<br/>
 REG_CREATED_NEW_KEY 또는 REG_OPENED_EXISTING_KEY 처리 값 중 하나를 받는 변수에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 함수가 성공 하면 반환 값은 ERROR_SUCCESS입니다. 함수가 실패 하면 반환 값은 Winerror.h에 정의 된 0이 아닌 오류 코드입니다.
 
@@ -440,7 +441,7 @@ inline LSTATUS RegDeleteKeyEx(HKEY hKey, LPCTSTR lpSubKey);
 *lpSubKey*\
 삭제할 키의 이름입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 함수가 성공 하면 반환 값은 ERROR_SUCCESS입니다. 함수가 실패 하면 반환 값은 Winerror.h에 정의 된 0이 아닌 오류 코드입니다.
 
@@ -478,7 +479,7 @@ inline LSTATUS RegOpenKeyEx(
 *phkResult*<br/>
 열리거나 만든 키에 대 한 핸들을 받는 변수에 대 한 포인터입니다. 키가 미리 정의 된 레지스트리 키 중 하나가 아닌 경우 `RegCloseKey` 핸들 사용을 마친 후 함수를 호출 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 함수가 성공 하면 반환 값은 ERROR_SUCCESS입니다. 함수가 실패 하면 반환 값은 Winerror.h에 정의 된 0이 아닌 오류 코드입니다.
 
@@ -494,7 +495,7 @@ inline LSTATUS RegOpenKeyEx(
 inline BOOL Rollback();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 TRUE이고, 실패하면 FALSE입니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CComSafeArrayBound 클래스'
 title: CComSafeArrayBound 클래스
 ms.date: 05/06/2019
 f1_keywords:
@@ -12,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComSafeArrayBound class
 ms.assetid: dd6299db-5f84-4630-bbf0-f5add5318437
-ms.openlocfilehash: 9adee1e8b6a46c239aaf6a3c404277b34efd00e2
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 09672e4a74db8998b887a093e0f15202903cfcf9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834754"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97142250"
 ---
 # <a name="ccomsafearraybound-class"></a>CComSafeArrayBound 클래스
 
@@ -33,7 +34,7 @@ class CComSafeArrayBound : public SAFEARRAYBOUND
 
 ### <a name="methods"></a>메서드
 
-|기능|설명|
+|함수|설명|
 |-|-|
 |[CComSafeArrayBound](#ccomsafearraybound)|생성자입니다.|
 |[GetCount](#getcount)|요소 수를 반환 하려면이 메서드를 호출 합니다.|

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: SafeIntException 클래스'
 title: SafeIntException 클래스
 ms.date: 10/22/2018
 ms.topic: reference
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - SafeIntException class
 - SafeIntException, constructor
 ms.assetid: 88bef958-1f48-4d55-ad4f-d1f9581a293a
-ms.openlocfilehash: 8149a5e1216e26fafc1e0cd4a489cdad0551607c
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 6a7be21b0dfa42a23ba60eac7eb3f4ebbf1629ef
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615417"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97149580"
 ---
 # <a name="safeintexception-class"></a>SafeIntException 클래스
 
@@ -35,7 +36,7 @@ class SafeIntException;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-이름                                                    | Description
+이름                                                    | 설명
 ------------------------------------------------------- | ------------------------------------
 [SafeIntException:: SafeIntException](#safeintexception) | `SafeIntException` 개체를 만듭니다.
 
@@ -53,7 +54,7 @@ class SafeIntException;
 
 **네임스페이스:** msl::utilities
 
-## <a name="safeintexceptionsafeintexception"></a><a name="safeintexception"></a>SafeIntException:: SafeIntException
+## <a name="safeintexceptionsafeintexception"></a><a name="safeintexception"></a> SafeIntException:: SafeIntException
 
 `SafeIntException` 개체를 만듭니다.
 

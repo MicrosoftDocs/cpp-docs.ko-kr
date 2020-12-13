@@ -1,4 +1,5 @@
 ---
+description: 자세한 내용은 Profile-Guided 최적화 경고 PG1087를 확인 하세요.
 title: 프로필 기반 최적화 경고 PG1087
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - PG1087
 ms.assetid: 50785d68-17a2-4d82-bee2-8c514faf61c6
-ms.openlocfilehash: 1d0d908e53812a666cf354976aca416e9f2736da
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 7da0519a2f4d9fa159f5cec4b71184a446be9490
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80193032"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97136086"
 ---
 # <a name="profile-guided-optimization-warning-pg1087"></a>프로필 기반 최적화 경고 PG1087
 

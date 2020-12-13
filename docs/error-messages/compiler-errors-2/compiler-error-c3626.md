@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3626'
 title: 컴파일러 오류 C3626
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3626
 ms.assetid: 43926e2b-1ba9-4a43-9343-c58449cbb336
-ms.openlocfilehash: 7d86f0f650f6a13ac764497d6d5b52f001f5c35d
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 8db976a5f072db618ac4270df3bd1d8edf0ab15c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757672"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97144419"
 ---
 # <a name="compiler-error-c3626"></a>컴파일러 오류 C3626
 

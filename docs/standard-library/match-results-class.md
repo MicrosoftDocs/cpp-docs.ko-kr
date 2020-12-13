@@ -1,4 +1,5 @@
 ---
+description: Match_results 클래스에 대해 자세히 알아보세요.
 title: match_results 클래스
 ms.date: 09/10/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - match_results class
 ms.assetid: b504fdca-e5dd-429d-9960-6e27c9167fa6
-ms.openlocfilehash: 8ce9ed987baf63f2cc9f095e2955a8165e977193
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 55c73f558f4355c66a6c6180007bee0d83045a51
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212217"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97149333"
 ---
 # <a name="match_results-class"></a>match_results 클래스
 
@@ -38,7 +39,7 @@ class match_results
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[match_results](#match_results)|개체를 생성합니다.|
 
@@ -51,7 +52,7 @@ class match_results
 |[const_iterator](#const_iterator)|부분 일치에 대한 상수 반복기 형식입니다.|
 |[const_reference](#const_reference)|요소 const 참조의 형식입니다.|
 |[difference_type](#difference_type)|반복기 차이의 형식입니다.|
-|[반복](#iterator)|부분 일치에 대한 반복기 형식입니다.|
+|[iterator](#iterator)|부분 일치에 대한 반복기 형식입니다.|
 |[reference](#reference)|요소 참조의 형식입니다.|
 |[size_type](#size_type)|부분 일치 수의 형식입니다.|
 |[string_type](#string_type)|문자열의 형식입니다.|
@@ -63,16 +64,16 @@ class match_results
 |-|-|
 |[시작](#begin)|부분 일치 시퀀스의 시작을 지정합니다.|
 |[empty](#empty)|부분 일치가 없는지 테스트합니다.|
-|[종단](#end)|부분 일치 시퀀스의 끝을 지정합니다.|
+|[end](#end)|부분 일치 시퀀스의 끝을 지정합니다.|
 |[format](#format)|부분 일치의 서식을 지정합니다.|
 |[get_allocator](#get_allocator)|저장된 할당자를 반환합니다.|
 |[length](#length)|부분 일치의 길이를 반환합니다.|
 |[max_size](#max_size)|부분 일치의 최대 수를 가져옵니다.|
-|[놓을](#position)|하위 그룹의 시작 오프셋을 가져옵니다.|
+|[position](#position)|하위 그룹의 시작 오프셋을 가져옵니다.|
 |[prefix](#prefix)|첫 번째 부분 일치 전의 시퀀스를 가져옵니다.|
 |[size](#size)|부분 일치 수를 계산합니다.|
 |[str](#str)|부분 일치 항목을 반환합니다.|
-|[접미어](#suffix)|마지막 부분 일치 후 시퀀스를 가져옵니다.|
+|[접미사](#suffix)|마지막 부분 일치 후 시퀀스를 가져옵니다.|
 |[스왑을](#swap)|두 match_results 개체를 바꿉니다.|
 
 ### <a name="operators"></a>연산자
@@ -188,7 +189,7 @@ next submatch: matched == false
 empty == false
 ```
 
-## <a name="match_resultsallocator_type"></a><a name="allocator_type"></a>match_results:: allocator_type
+## <a name="match_resultsallocator_type"></a><a name="allocator_type"></a> match_results:: allocator_type
 
 스토리지 관리를 위한 할당자의 형식입니다.
 
@@ -198,9 +199,9 @@ typedef Alloc allocator_type;
 
 ### <a name="remarks"></a>설명
 
-Typedef는 템플릿 인수 *할당*의 동의어입니다.
+Typedef는 템플릿 인수 *할당* 의 동의어입니다.
 
-## <a name="match_resultsbegin"></a><a name="begin"></a>match_results:: begin
+## <a name="match_resultsbegin"></a><a name="begin"></a> match_results:: begin
 
 부분 일치 시퀀스의 시작을 지정합니다.
 
@@ -212,7 +213,7 @@ const_iterator begin() const;
 
 멤버 함수는 시퀀스의 첫 번째 요소(또는 빈 시퀀스의 끝 바로 다음)를 가리키는 임의 액세스 반복기를 반환합니다.
 
-## <a name="match_resultschar_type"></a><a name="char_type"></a>match_results:: char_type
+## <a name="match_resultschar_type"></a><a name="char_type"></a> match_results:: char_type
 
 요소의 형식입니다.
 
@@ -224,7 +225,7 @@ typedef typename iterator_traits<BidIt>::value_type char_type;
 
 typedef는 `iterator_traits<BidIt>::value_type`형식의 동의어로, 검색된 문자 시퀀스의 요소 형식입니다.
 
-## <a name="match_resultsconst_iterator"></a><a name="const_iterator"></a>match_results:: const_iterator
+## <a name="match_resultsconst_iterator"></a><a name="const_iterator"></a> match_results:: const_iterator
 
 부분 일치에 대한 상수 반복기 형식입니다.
 
@@ -236,7 +237,7 @@ typedef T0 const_iterator;
 
 typedef는 제어되는 시퀀스의 상수 임의 액세스 반복기로 사용될 수 있는 개체를 설명합니다.
 
-## <a name="match_resultsconst_reference"></a><a name="const_reference"></a>match_results:: const_reference
+## <a name="match_resultsconst_reference"></a><a name="const_reference"></a> match_results:: const_reference
 
 요소 const 참조의 형식입니다.
 
@@ -248,7 +249,7 @@ typedef const typename Alloc::const_reference const_reference;
 
 typedef는 제어되는 시퀀스의 요소에 대한 상수 참조로 사용될 수 있는 개체를 설명합니다.
 
-## <a name="match_resultsdifference_type"></a><a name="difference_type"></a>match_results::d ifference_type
+## <a name="match_resultsdifference_type"></a><a name="difference_type"></a> match_results::d ifference_type
 
 반복기 차이의 형식입니다.
 
@@ -260,7 +261,7 @@ typedef typename iterator_traits<BidIt>::difference_type difference_type;
 
 typedef는 `iterator_traits<BidIt>::difference_type`형식의 동의어이며, 제어되는 시퀀스의 요소를 가리키는 두 반복기 사이의 차이를 나타낼 수 있는 개체에 대해 설명합니다.
 
-## <a name="match_resultsempty"></a><a name="empty"></a>match_results:: empty
+## <a name="match_resultsempty"></a><a name="empty"></a> match_results:: empty
 
 부분 일치가 없는지 테스트합니다.
 
@@ -272,7 +273,7 @@ bool empty() const;
 
 멤버 함수는 정규식 검색에 실패한 경우에만 true를 반환합니다.
 
-## <a name="match_resultsend"></a><a name="end"></a>match_results:: end
+## <a name="match_resultsend"></a><a name="end"></a> match_results:: end
 
 부분 일치 시퀀스의 끝을 지정합니다.
 
@@ -284,7 +285,7 @@ const_iterator end() const;
 
 멤버 함수는 시퀀스 끝의 바로 다음을 가리키는 반복기를 반환합니다.
 
-## <a name="match_resultsformat"></a><a name="format"></a>match_results:: format
+## <a name="match_resultsformat"></a><a name="format"></a> match_results:: format
 
 부분 일치의 서식을 지정합니다.
 
@@ -305,18 +306,18 @@ string_type format(const string_type& fmt, match_flag_type flags = format_defaul
 쓸 출력 스트림입니다.
 
 *bcp.fmt*\
-형식 문자열입니다.
+서식 문자열입니다.
 
 *flags*\
 서식 플래그입니다.
 
 ### <a name="remarks"></a>설명
 
-각 멤버 함수는 *fmt*형식의 컨트롤 아래에 서식 있는 텍스트를 생성 합니다. 첫 번째 멤버 함수는 해당 인수에 의해 정의 된 시퀀스에 서식 있는 텍스트를 *쓰고를 반환* *합니다.* 두 번째 멤버 함수는 서식 있는 텍스트의 복사본을 포함 하는 문자열 개체를 반환 합니다.
+각 멤버 함수는 *fmt* 형식의 컨트롤 아래에 서식 있는 텍스트를 생성 합니다. 첫 번째 멤버 함수는 해당 인수에 의해 정의 된 시퀀스에 서식 있는 텍스트를 *쓰고를 반환* *합니다.* 두 번째 멤버 함수는 서식 있는 텍스트의 복사본을 포함 하는 문자열 개체를 반환 합니다.
 
 서식 있는 텍스트를 생성하려면 서식 문자열의 리터럴 텍스트를 일반적으로 대상 시퀀스로 복사합니다. 서식 문자열의 각 이스케이프 시퀀스가 대표 텍스트로 대체됩니다. 복사 및 교체 정보는 함수에 전달된 서식 플래그에서 제어합니다.
 
-## <a name="match_resultsget_allocator"></a><a name="get_allocator"></a>match_results:: get_allocator
+## <a name="match_resultsget_allocator"></a><a name="get_allocator"></a> match_results:: get_allocator
 
 저장된 할당자를 반환합니다.
 
@@ -328,7 +329,7 @@ allocator_type get_allocator() const;
 
 멤버 함수는에서 **`*this`** 개체를 할당 하는 데 사용 하는 할당자 개체의 복사본을 반환 합니다 `sub_match` .
 
-## <a name="match_resultsiterator"></a><a name="iterator"></a>match_results:: iterator
+## <a name="match_resultsiterator"></a><a name="iterator"></a> match_results:: iterator
 
 부분 일치에 대한 반복기 형식입니다.
 
@@ -340,7 +341,7 @@ typedef const_iterator iterator;
 
 이 형식은 제어되는 시퀀스의 임의 액세스 반복기로 사용될 수 있는 개체를 설명합니다.
 
-## <a name="match_resultslength"></a><a name="length"></a>match_results:: length
+## <a name="match_resultslength"></a><a name="length"></a> match_results:: length
 
 부분 일치의 길이를 반환합니다.
 
@@ -357,7 +358,7 @@ difference_type length(size_type sub = 0) const;
 
 멤버 함수는 `(*this)[sub].length()`를 반환합니다.
 
-## <a name="match_resultsmatch_results"></a><a name="match_results"></a>match_results:: match_results
+## <a name="match_resultsmatch_results"></a><a name="match_results"></a> match_results:: match_results
 
 개체를 생성합니다.
 
@@ -377,9 +378,9 @@ match_results(const match_results& right);
 
 ### <a name="remarks"></a>설명
 
-첫 번째 생성자는 부분 일치 항목을 보유하지 않는 `match_results` 개체를 구성합니다. 두 번째 생성자는 `match_results` *오른쪽*의 복사본 인 개체를 생성 합니다.
+첫 번째 생성자는 부분 일치 항목을 보유하지 않는 `match_results` 개체를 구성합니다. 두 번째 생성자는 `match_results` *오른쪽* 의 복사본 인 개체를 생성 합니다.
 
-## <a name="match_resultsmax_size"></a><a name="max_size"></a>match_results:: max_size
+## <a name="match_resultsmax_size"></a><a name="max_size"></a> match_results:: max_size
 
 부분 일치의 최대 수를 가져옵니다.
 
@@ -391,7 +392,7 @@ size_type max_size() const;
 
 멤버 함수는 개체가 제어할 수 있는 가장 긴 시퀀스의 길이를 반환합니다.
 
-## <a name="match_resultsoperator"></a><a name="op_eq"></a>match_results:: operator =
+## <a name="match_resultsoperator"></a><a name="op_eq"></a> match_results:: operator =
 
 match_results 개체를 복사합니다.
 
@@ -406,9 +407,9 @@ match_results& operator=(const match_results& right);
 
 ### <a name="remarks"></a>설명
 
-멤버 연산자는로 제어 되는 시퀀스를 **`*this`** *right*로 제어 되는 시퀀스의 복사본으로 바꿉니다.
+멤버 연산자는로 제어 되는 시퀀스를 **`*this`** *right* 로 제어 되는 시퀀스의 복사본으로 바꿉니다.
 
-## <a name="match_resultsoperator"></a><a name="op_at"></a>match_results:: operator []
+## <a name="match_resultsoperator"></a><a name="op_at"></a> match_results:: operator []
 
 하위 개체에 액세스합니다.
 
@@ -425,7 +426,7 @@ const_reference operator[](size_type n) const;
 
 멤버 함수는 제어 되는 시퀀스의 요소 *n* 에 대 한 참조를 반환 하거나, `sub_match` `size() <= n` 캡처 그룹 *n* 이 일치 항목의 일부가 아닌 경우 빈 개체에 대 한 참조를 반환 합니다.
 
-## <a name="match_resultsposition"></a><a name="position"></a>match_results::p o
+## <a name="match_resultsposition"></a><a name="position"></a> match_results::p o
 
 하위 그룹의 시작 오프셋을 가져옵니다.
 
@@ -442,7 +443,7 @@ difference_type position(size_type sub = 0) const;
 
 멤버 함수는 `std::distance(prefix().first, (*this)[sub].first)`, 즉 대상 시퀀스의 첫 번째 문자부터 제어되는 시퀀스의 `n` 요소가 가리키는 부분 일치의 첫 번째 문자까지 거리를 반환합니다.
 
-## <a name="match_resultsprefix"></a><a name="prefix"></a>match_results::p 접두어
+## <a name="match_resultsprefix"></a><a name="prefix"></a> match_results::p 접두어
 
 첫 번째 부분 일치 전의 시퀀스를 가져옵니다.
 
@@ -454,7 +455,7 @@ const_reference prefix() const;
 
 멤버 함수는 대상 시퀀스의 시작에서 시작되고 `sub_match<BidIt>` 에서 끝나는 문자 시퀀스 즉, 일치하는 하위 시퀀스 앞에 오는 텍스트를 가리키는 `(*this)[0].first`형식의 개체에 대한 참조를 반환합니다.
 
-## <a name="match_resultsreference"></a><a name="reference"></a>match_results:: reference
+## <a name="match_resultsreference"></a><a name="reference"></a> match_results:: reference
 
 요소 참조의 형식입니다.
 
@@ -466,7 +467,7 @@ typedef const_reference reference;
 
 이 형식은 `const_reference`형식의 동의어입니다.
 
-## <a name="match_resultssize"></a><a name="size"></a>match_results:: size
+## <a name="match_resultssize"></a><a name="size"></a> match_results:: size
 
 부분 일치 수를 계산합니다.
 
@@ -478,7 +479,7 @@ size_type size() const;
 
 멤버 함수는 검색에 사용된 정규식에서 캡처 그룹 수보다 1이 큰 수를 반환하고, 검색되지 않은 경우 0을 반환합니다.
 
-## <a name="match_resultssize_type"></a><a name="size_type"></a>match_results:: size_type
+## <a name="match_resultssize_type"></a><a name="size_type"></a> match_results:: size_type
 
 부분 일치 수의 형식입니다.
 
@@ -490,7 +491,7 @@ typedef typename Alloc::size_type size_type;
 
 이 형식은 `Alloc::size_type`형식의 동의어입니다.
 
-## <a name="match_resultsstr"></a><a name="str"></a>match_results:: str
+## <a name="match_resultsstr"></a><a name="str"></a> match_results:: str
 
 부분 일치 항목을 반환합니다.
 
@@ -507,7 +508,7 @@ string_type str(size_type sub = 0) const;
 
 멤버 함수는 `string_type((*this)[sub])`를 반환합니다.
 
-## <a name="match_resultsstring_type"></a><a name="string_type"></a>match_results:: string_type
+## <a name="match_resultsstring_type"></a><a name="string_type"></a> match_results:: string_type
 
 문자열의 형식입니다.
 
@@ -519,7 +520,7 @@ typedef basic_string<char_type> string_type;
 
 이 형식은 `basic_string<char_type>`형식의 동의어입니다.
 
-## <a name="match_resultssuffix"></a><a name="suffix"></a>match_results:: suffix
+## <a name="match_resultssuffix"></a><a name="suffix"></a> match_results:: suffix
 
 마지막 부분 일치 후 시퀀스를 가져옵니다.
 
@@ -531,7 +532,7 @@ const_reference suffix() const;
 
 멤버 함수는 `sub_match<BidIt>` 에서 시작되고 대상 시퀀스의 끝에서 끝나는 문자 시퀀스 즉, 일치하는 하위 시퀀스 뒤에 오는 텍스트를 가리키는 `(*this)[size() - 1].second` 형식의 개체에 대한 참조를 반환합니다.
 
-## <a name="match_resultsswap"></a><a name="swap"></a>match_results:: swap
+## <a name="match_resultsswap"></a><a name="swap"></a> match_results:: swap
 
 두 match_results 개체를 바꿉니다.
 
@@ -546,9 +547,9 @@ void swap(const match_results& right) throw();
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 및의 내용을 **`*this`** 일정 한 *right* 시간 내에 교환 하 고 예외를 throw 하지 않습니다.
+멤버 함수는 및의 내용을 **`*this`** 일정 한  시간 내에 교환 하 고 예외를 throw 하지 않습니다.
 
-## <a name="match_resultsvalue_type"></a><a name="value_type"></a>match_results:: value_type
+## <a name="match_resultsvalue_type"></a><a name="value_type"></a> match_results:: value_type
 
 부분 일치의 형식입니다.
 

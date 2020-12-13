@@ -1,13 +1,14 @@
 ---
+description: UWP 앱, Windows 런타임 및 C Run-Time에 대해 자세히 알아보세요.
 title: UWP 앱, Windows 런타임 및 C 런타임
 ms.date: 02/02/2019
 ms.assetid: 356d6d8d-76ee-4181-9ad0-6f24b2fede38
-ms.openlocfilehash: 932b5388f2d1bf87f0d77ae1330fa3e613c9dca7
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: cfbbdbde19b882fb51b8fd8782b20e4205bdb00b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57738670"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97136749"
 ---
 # <a name="uwp-apps-the-windows-runtime-and-the-c-run-time"></a>UWP 앱, Windows 런타임 및 C 런타임
 
@@ -42,6 +43,6 @@ UWP 앱에서 사용할 수 없는 CRT 함수의 전체 목록 및 대체 기능
 ## <a name="see-also"></a>참고 항목
 
 [호환성](../c-runtime-library/compatibility.md)<br/>
-[Windows 런타임 지원되지 않는 CRT 함수](../c-runtime-library/windows-runtime-unsupported-crt-functions.md)<br/>
+[지원 되지 않는 CRT 함수 Windows 런타임](../c-runtime-library/windows-runtime-unsupported-crt-functions.md)<br/>
 [범주별 유버니설 C 런타임 루틴](../c-runtime-library/run-time-routines-by-category.md)<br/>
 [유니버설 Windows 플랫폼 콘솔 앱 만들기](/windows/uwp/launch-resume/console-uwp)

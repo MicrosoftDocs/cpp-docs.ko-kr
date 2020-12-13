@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: ClassFactory 클래스'
 title: ClassFactory 클래스
 ms.date: 10/03/2018
 ms.topic: reference
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - Microsoft::WRL::ClassFactory::QueryInterface method
 - Microsoft::WRL::ClassFactory::Release method
 ms.assetid: f13e6bce-722b-4f18-b7cf-3ffa6345c1db
-ms.openlocfilehash: bbf20e2269e6d62206e06e748174d7b88898cd68
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e6503cba1060c432b2cb85020799b83f0ee16c6d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87198101"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135306"
 ---
 # <a name="classfactory-class"></a>ClassFactory 클래스
 
@@ -73,7 +74,7 @@ class ClassFactory :
 
 ### <a name="public-constructors"></a>Public 생성자
 
-Name                                        | 설명
+이름                                        | 설명
 ------------------------------------------- | -----------
 [ClassFactory:: ClassFactory](#classfactory) |
 
@@ -114,7 +115,7 @@ Name                                        | 설명
 
 **네임스페이스:** Microsoft::WRL
 
-## <a name="classfactoryaddref"></a><a name="addref"></a>ClassFactory:: AddRef
+## <a name="classfactoryaddref"></a><a name="addref"></a> ClassFactory:: AddRef
 
 현재 개체의 참조 횟수를 증가 시킵니다 `ClassFactory` .
 
@@ -125,17 +126,17 @@ STDMETHOD_(
 )();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 S_OK이고, 그렇지 않으면 실패를 설명하는 HRESULT가 발생합니다.
 
-## <a name="classfactoryclassfactory"></a><a name="classfactory"></a>ClassFactory:: ClassFactory
+## <a name="classfactoryclassfactory"></a><a name="classfactory"></a> ClassFactory:: ClassFactory
 
 ```cpp
 WRL_NOTHROW ClassFactory();
 ```
 
-## <a name="classfactorylockserver"></a><a name="lockserver"></a>ClassFactory:: LockServer
+## <a name="classfactorylockserver"></a><a name="lockserver"></a> ClassFactory:: LockServer
 
 현재 개체가 추적 하는 기본 개체의 수를 늘리거나 줄입니다 `ClassFactory` .
 
@@ -150,7 +151,7 @@ STDMETHOD(
 *fLock*<br/>
 **`true`** 추적 된 개체 수를 증가 시킵니다. **`false`** 추적 된 개체 수를 감소 시킵니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 S_OK이고, 그렇지 않으면 E_FAIL입니다.
 
@@ -158,7 +159,7 @@ STDMETHOD(
 
 `ClassFactory`[Module](module-class.md) 클래스의 기본 인스턴스에서 개체를 추적 합니다.
 
-## <a name="classfactoryqueryinterface"></a><a name="queryinterface"></a>ClassFactory:: QueryInterface
+## <a name="classfactoryqueryinterface"></a><a name="queryinterface"></a> ClassFactory:: QueryInterface
 
 매개 변수로 지정 된 인터페이스에 대 한 포인터를 검색 합니다.
 
@@ -174,13 +175,13 @@ STDMETHOD(
 인터페이스 ID입니다.
 
 *ppvObject*<br/>
-이 작업이 완료 되 면 매개 변수 *riid*에서 지정 하는 인터페이스에 대 한 포인터입니다.
+이 작업이 완료 되 면 매개 변수 *riid* 에서 지정 하는 인터페이스에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 S_OK이고, 그렇지 않으면 실패를 설명하는 HRESULT가 발생합니다.
 
-## <a name="classfactoryrelease"></a><a name="release"></a>ClassFactory:: Release
+## <a name="classfactoryrelease"></a><a name="release"></a> ClassFactory:: Release
 
 현재 개체의 참조 횟수를 감소 시킵니다 `ClassFactory` .
 
@@ -191,6 +192,6 @@ STDMETHOD_(
 )();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 S_OK이고, 그렇지 않으면 실패를 설명하는 HRESULT가 발생합니다.

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CComSingleThreadModel 클래스'
 title: CComSingleThreadModel 클래스
 ms.date: 2/29/2020
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - CComSingleThreadModel class
 - single-threaded applications, ATL
 ms.assetid: e5dc30c7-405a-4ba4-8ae9-51937243fce8
-ms.openlocfilehash: 05ef787764045ec7e17f5cdfdb0d4611cb2ac900
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 42f1111590dd8e03a541ecc7a71b461e34a08f0b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229976"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97142209"
 ---
 # <a name="ccomsinglethreadmodel-class"></a>CComSingleThreadModel 클래스
 
@@ -50,7 +51,7 @@ class CComSingleThreadModel
 
 ## <a name="remarks"></a>설명
 
-`CComSingleThreadModel`변수의 값을 증가 및 감소 시키는 메서드를 제공 합니다. [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) 및 [CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md)와 달리 이러한 메서드는 스레드로부터 안전 하지 않습니다.
+`CComSingleThreadModel` 변수의 값을 증가 및 감소 시키는 메서드를 제공 합니다. [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) 및 [CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md)와 달리 이러한 메서드는 스레드로부터 안전 하지 않습니다.
 
 일반적으로 `CComSingleThreadModel` **`typedef`** [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel) 또는 [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)의 두 이름 중 하나를 사용 합니다. 각에서 참조 하는 클래스는 **`typedef`** 다음 표에 나와 있는 것 처럼 사용 된 스레딩 모델에 따라 달라 집니다.
 
@@ -59,15 +60,15 @@ class CComSingleThreadModel
 |`CComObjectThreadModel`|S|S|M|
 |`CComGlobalsThreadModel`|S|M|M|
 
-S = `CComSingleThreadModel` ; M =`CComMultiThreadModel`
+S = `CComSingleThreadModel` ; M = `CComMultiThreadModel`
 
-`CComSingleThreadModel`자체는 세 개의 **`typedef`** 이름을 정의 합니다. `ThreadModelNoCS`참조 `CComSingleThreadModel` . `AutoCriticalSection`및 `CriticalSection` 참조 클래스 [CComFakeCriticalSection](../../atl/reference/ccomfakecriticalsection-class.md)는 임계 영역에 대 한 소유권을 가져오고 해제 하는 것과 관련 된 빈 메서드를 제공 합니다.
+`CComSingleThreadModel` 자체는 세 개의 **`typedef`** 이름을 정의 합니다. `ThreadModelNoCS` 참조 `CComSingleThreadModel` . `AutoCriticalSection` 및 `CriticalSection` 참조 클래스 [CComFakeCriticalSection](../../atl/reference/ccomfakecriticalsection-class.md)는 임계 영역에 대 한 소유권을 가져오고 해제 하는 것과 관련 된 빈 메서드를 제공 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
 **헤더:** 서 기. h
 
-## <a name="ccomsinglethreadmodelautocriticalsection"></a><a name="autocriticalsection"></a>CComSingleThreadModel::AutoCriticalSection
+## <a name="ccomsinglethreadmodelautocriticalsection"></a><a name="autocriticalsection"></a> CComSingleThreadModel::AutoCriticalSection
 
 를 사용 하 `CComSingleThreadModel` 는 경우 **`typedef`** 이름이 `AutoCriticalSection` [CComFakeCriticalSection](../../atl/reference/ccomfakecriticalsection-class.md)클래스를 참조 합니다.
 
@@ -93,7 +94,7 @@ typedef CComFakeCriticalSection AutoCriticalSection;
 
 [CComMultiThreadModel:: AutoCriticalSection](../../atl/reference/ccommultithreadmodel-class.md#autocriticalsection)를 참조 하세요.
 
-## <a name="ccomsinglethreadmodelcriticalsection"></a><a name="criticalsection"></a>CComSingleThreadModel:: CriticalSection
+## <a name="ccomsinglethreadmodelcriticalsection"></a><a name="criticalsection"></a> CComSingleThreadModel:: CriticalSection
 
 를 사용 하 `CComSingleThreadModel` 는 경우 **`typedef`** 이름이 `CriticalSection` [CComFakeCriticalSection](../../atl/reference/ccomfakecriticalsection-class.md)클래스를 참조 합니다.
 
@@ -119,9 +120,9 @@ typedef CComFakeCriticalSection CriticalSection;
 
 [CComMultiThreadModel:: AutoCriticalSection](../../atl/reference/ccommultithreadmodel-class.md#autocriticalsection)를 참조 하세요.
 
-## <a name="ccomsinglethreadmodeldecrement"></a><a name="decrement"></a>CComSingleThreadModel::D ecrement
+## <a name="ccomsinglethreadmodeldecrement"></a><a name="decrement"></a> CComSingleThreadModel::D ecrement
 
-이 정적 함수는 *p*가 가리키는 변수의 값을 감소 시킵니다.
+이 정적 함수는 *p* 가 가리키는 변수의 값을 감소 시킵니다.
 
 ```
 static ULONG WINAPI Decrement(LPLONG p) throw();
@@ -132,13 +133,13 @@ static ULONG WINAPI Decrement(LPLONG p) throw();
 *®*<br/>
 진행 감소 시킬 변수에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 감소의 결과입니다.
 
-## <a name="ccomsinglethreadmodelincrement"></a><a name="increment"></a>CComSingleThreadModel:: 증가값
+## <a name="ccomsinglethreadmodelincrement"></a><a name="increment"></a> CComSingleThreadModel:: 증가값
 
-이 정적 함수는 *p*가 가리키는 변수의 값을 증가 시킵니다.
+이 정적 함수는 *p* 가 가리키는 변수의 값을 증가 시킵니다.
 
 ```
 static ULONG WINAPI Increment(LPLONG p) throw();
@@ -149,11 +150,11 @@ static ULONG WINAPI Increment(LPLONG p) throw();
 *®*<br/>
 진행 증가 시킬 변수에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 증가값의 결과입니다.
 
-## <a name="ccomsinglethreadmodelthreadmodelnocs"></a><a name="threadmodelnocs"></a>CComSingleThreadModel:: ThreadModelNoCS
+## <a name="ccomsinglethreadmodelthreadmodelnocs"></a><a name="threadmodelnocs"></a> CComSingleThreadModel:: ThreadModelNoCS
 
 를 사용 하 `CComSingleThreadModel` 는 경우 **`typedef`** 이름은를 `ThreadModelNoCS` 참조 하기만 `CComSingleThreadModel` 합니다.
 

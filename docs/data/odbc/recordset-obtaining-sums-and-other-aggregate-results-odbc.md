@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 레코드 집합: 합계 및 다른 집계 결과 가져오기 (ODBC)'
 title: '레코드 집합: 합계 및 다른 집계 결과 구하기(ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - SQL Server projects, retrieving aggregate values from recordsets
 - SQL aggregate values, retrieving from recordsets
 ms.assetid: 94500662-22a4-443e-82d7-acbe6eca447b
-ms.openlocfilehash: b9e70716ad90a14bbed552d47f48d5a3317e5a62
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 10a2ef3b013d9eba0d9733cc321591ae8d6681f2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225711"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97136489"
 ---
 # <a name="recordset-obtaining-sums-and-other-aggregate-results-odbc"></a>레코드 집합: 합계 및 다른 집계 결과 구하기(ODBC)
 
@@ -39,7 +40,7 @@ ms.locfileid: "87225711"
 이러한 SQL 함수를 사용하여 데이터 원본에서 레코드를 추출하는 대신 데이터 원본의 레코드에 대한 통계 정보를 가져옵니다. 일반적으로 만든 레코드 집합은 값을 포함하는 단일 레코드(모든 열이 집계된 경우)로 구성됩니다. **GROUP by** 절을 사용 하는 경우 두 개 이상의 레코드가 있을 수 있습니다. 이 값은 SQL 함수에서 수행 하는 계산 또는 추출의 결과입니다.
 
 > [!TIP]
-> SQL **GROUP BY** 절(및 가능하면 **HAVING** 절)을 SQL 문에 추가하려면 `m_strFilter`의 끝에 추가합니다. 예를 들면 다음과 같습니다.
+> SQL **GROUP BY** 절(및 가능하면 **HAVING** 절)을 SQL 문에 추가하려면 `m_strFilter`의 끝에 추가합니다. 예를 들어:
 
 ```
 m_strFilter = "sales > 10 GROUP BY SALESPERSON_ID";
@@ -52,9 +53,9 @@ m_strFilter = "sales > 10 GROUP BY SALESPERSON_ID";
 
 - **SUM** 및 **AVG** 는 다음으로 큰 데이터 형식을 반환할 수 있습니다. 예를 들어를 호출 하면 **`int`** **LONG** 또는가 반환 **`double`** 됩니다.
 
-- **COUNT**는 일반적으로 대상 열 유형에 관계없이 **LONG**을 반환합니다.
+- **COUNT** 는 일반적으로 대상 열 유형에 관계없이 **LONG** 을 반환합니다.
 
-- **MAX** 및 **MIN**은 계산하는 열과 동일한 데이터 형식을 반환합니다.
+- **MAX** 및 **MIN** 은 계산하는 열과 동일한 데이터 형식을 반환합니다.
 
      예를 들어 **클래스 추가** 마법사는 **`long`** `m_lSales` Sales 열을 수용 하기 위해를 만들지만이를 `double m_dblSumSales` 데이터 멤버로 바꿔서 집계 결과를 수용 해야 합니다. 다음 예제를 참조하세요.
 

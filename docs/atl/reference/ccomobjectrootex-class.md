@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CComObjectRootEx 클래스'
 title: CComObjectRootEx 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ f1_keywords:
 helpviewer_keywords:
 - reference counting
 ms.assetid: 894a3d7c-2daf-4fd0-8fa4-e6a05bcfb631
-ms.openlocfilehash: b4dbc42cb0c6fe2c9c6692e0db37267ce3fff361
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9fe0140944e3da5ddf70e0da38d054a35bb648ff
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833649"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97142482"
 ---
 # <a name="ccomobjectrootex-class"></a>CComObjectRootEx 클래스
 
@@ -47,17 +48,17 @@ class CComObjectRootEx : public CComObjectRootBase
 
 ### <a name="methods"></a>메서드
 
-|기능|설명|
+|함수|설명|
 |-|-|
 |[CComObjectRootEx](#ccomobjectrootex)|생성자입니다.|
 |[InternalAddRef](#internaladdref)|집계할 수 없는 개체에 대 한 참조 횟수를 늘립니다.|
 |[InternalRelease](#internalrelease)|집계할 수 없는 개체의 참조 횟수를 감소 시킵니다.|
 |[잠금](#lock)|스레드 모델이 다중 스레드 인 경우 임계 영역 개체의 소유권을 가져옵니다.|
-|[잠금을](#unlock)|스레드 모델이 다중 스레드 인 경우는 임계 영역 개체의 소유권을 해제 합니다.|
+|[잠금 해제](#unlock)|스레드 모델이 다중 스레드 인 경우는 임계 영역 개체의 소유권을 해제 합니다.|
 
 ### <a name="ccomobjectrootbase-methods"></a>CComObjectRootBase 메서드
 
-|기능|설명|
+|함수|설명|
 |-|-|
 |[모든 구문](#finalconstruct)|클래스에서를 재정의 하 여 개체에 필요한 초기화를 수행 합니다.|
 |[버전 릴리스](#finalrelease)|클래스에서를 재정의 하 여 개체에 필요한 정리를 수행 합니다.|
@@ -67,7 +68,7 @@ class CComObjectRootEx : public CComObjectRootBase
 
 ### <a name="static-functions"></a>정적 함수
 
-|기능|설명|
+|함수|설명|
 |-|-|
 |[InternalQueryInterface](#internalqueryinterface)|집계할 수 없는 개체의에 대 한 대리자입니다 `IUnknown` .|
 |[ObjectMain](#objectmain)|개체 맵에 나열 된 파생 클래스에 대해 모듈을 초기화 하 고 종료 하는 동안 호출 됩니다.|
@@ -83,7 +84,7 @@ class CComObjectRootEx : public CComObjectRootBase
 
 `CComObjectRootEx` 집계할 수 없는 개체와 집계 된 개체 모두에 대 한 개체 참조 수 관리를 처리 합니다. 개체를 집계할 수 없는 경우 개체 참조 횟수를 유지 하 고, 개체를 집계할 때 외부 unknown에 대 한 포인터를 보유 합니다. 집계 된 개체의 경우 메서드를 사용 하 여 `CComObjectRootEx` 생성할 내부 개체의 오류를 처리 하 고 내부 인터페이스가 해제 되거나 내부 개체가 삭제 될 때 외부 개체가 삭제 되지 않도록 보호할 수 있습니다.
 
-COM 서버를 구현 하는 클래스는 또는 CComObjectRoot에서 상속 되어야 합니다 `CComObjectRootEx` . [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md)
+COM 서버를 구현 하는 클래스는 또는 CComObjectRoot에서 상속 되어야 합니다 `CComObjectRootEx` . [](../../atl/reference/ccomobjectroot-class.md)
 
 클래스 정의에서 [DECLARE_POLY_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_poly_aggregatable) 매크로를 지정 하는 경우 ATL `CComPolyObject<CYourClass>` 은가 호출 될 때의 인스턴스를 만듭니다 `IClassFactory::CreateInstance` . 생성 하는 동안 알 수 없는 외부 값이 확인 됩니다. NULL 인 경우 `IUnknown` 는 집계할 수 없는 개체에 대해 구현 됩니다. 외부 unknown이 NULL이 아닌 경우는 `IUnknown` 집계 된 개체에 대해 구현 됩니다.
 
@@ -205,7 +206,7 @@ static HRESULT InternalQueryInterface(
 진행 요청 되는 인터페이스의 GUID입니다.
 
 *ppvObject*<br/>
-제한이 *Iid*에 지정 된 인터페이스 포인터에 대 한 포인터 이거나, 인터페이스를 찾을 수 없는 경우 NULL입니다.
+제한이 *Iid* 에 지정 된 인터페이스 포인터에 대 한 포인터 이거나, 인터페이스를 찾을 수 없는 경우 NULL입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -337,7 +338,7 @@ HRESULT OuterQueryInterface(REFIID iid, void** ppvObject);
 진행 요청 되는 인터페이스의 GUID입니다.
 
 *ppvObject*<br/>
-제한이 *Iid*에 지정 된 인터페이스 포인터에 대 한 포인터 이거나, 집계가 인터페이스를 지원 하지 않는 경우 NULL입니다.
+제한이 *Iid* 에 지정 된 인터페이스 포인터에 대 한 포인터 이거나, 집계가 인터페이스를 지원 하지 않는 경우 NULL입니다.
 
 ### <a name="return-value"></a>반환 값
 

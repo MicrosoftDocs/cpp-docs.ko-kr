@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 연습: 새 MFC 셸 컨트롤 사용'
 title: '연습: 새 MFC 셸 컨트롤 사용'
 ms.date: 04/25/2019
 helpviewer_keywords:
 - shell controls (MFC)
 ms.assetid: f0015caa-199d-4aaf-9501-5a239fce9095
-ms.openlocfilehash: 0d8db9044a64305bd7bb9ef6fe10de9ecef1ce51
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 26b2d5afbf3f74d98df122b00e5471f2a88563b2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924747"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97142911"
 ---
 # <a name="walkthrough-using-the-new-mfc-shell-controls"></a>연습: 새 MFC 셸 컨트롤 사용
 
@@ -47,7 +48,7 @@ ms.locfileid: "92924747"
 
    1. **사용자 인터페이스 기능** 창에서 **메뉴 모음 및 도구 모음 사용** 옵션을 선택 했는지 확인 합니다. 다른 모든 옵션은 그대로 둡니다.
 
-   1. **고급 기능** 창에서 **ActiveX 컨트롤** , **공용 컨트롤 매니페스트** 및 **탐색 창** 옵션을 선택 합니다. 다른 모든 항목은 그대로 둡니다. **탐색 창** 옵션을 사용 하면 마법사가 창의 왼쪽에 이미 포함 된 창을 만들 수 `CMFCShellTreeCtrl` 있습니다.
+   1. **고급 기능** 창에서 **ActiveX 컨트롤**, **공용 컨트롤 매니페스트** 및 **탐색 창** 옵션을 선택 합니다. 다른 모든 항목은 그대로 둡니다. **탐색 창** 옵션을 사용 하면 마법사가 창의 왼쪽에 이미 포함 된 창을 만들 수 `CMFCShellTreeCtrl` 있습니다.
 
    1. **생성 된 클래스** 창을 변경할 필요가 없으므로 **마침** 을 클릭 하 여 새 MFC 프로젝트를 만듭니다.
 
@@ -206,7 +207,7 @@ ms.locfileid: "92924747"
 
 - 마법사에서 **폴더** 창과 **달력** 창이 모두 포함 된 Outlook 표시줄을 만들었습니다. **탐색기** 창에 **달력** 창을 포함 하는 것이 적합 하지 않을 수 있으므로 이제 해당 창을 제거 합니다.
 
-- 에서는 `CMFCShellListCtrl` 여러 가지 모드에서 파일을 볼 수 있습니다. 예를 들어, 작은 **아이콘,** **작은 아이콘** , **목록** 및 **세부 정보** 를 볼 수 있습니다. 응용 프로그램을 업데이트 하 여이 기능을 구현 합니다. 힌트: [Visual C++ 샘플](../overview/visual-cpp-samples.md)을 참조 하세요.
+- 에서는 `CMFCShellListCtrl` 여러 가지 모드에서 파일을 볼 수 있습니다. 예를 들어, 작은 **아이콘,** **작은 아이콘**, **목록** 및 **세부 정보** 를 볼 수 있습니다. 응용 프로그램을 업데이트 하 여이 기능을 구현 합니다. 힌트: [Visual C++ 샘플](../overview/visual-cpp-samples.md)을 참조 하세요.
 
 ## <a name="see-also"></a>참고 항목
 

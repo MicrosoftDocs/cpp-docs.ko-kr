@@ -1,4 +1,5 @@
 ---
+description: Rts_alloc 클래스에 대해 자세히 알아보세요.
 title: rts_alloc 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - stdext::rts_alloc [C++], deallocate
 - stdext::rts_alloc [C++], equals
 ms.assetid: ab41bffa-83d1-4a1c-87b9-5707d516931f
-ms.openlocfilehash: 04a6578c7abd07ff84f4c0a5cee68cfd7ec8ef04
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: b2fe4bf3fe3f54e8fe1de3d89605280b2ba2b857
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88560558"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97148943"
 ---
 # <a name="rts_alloc-class"></a>rts_alloc 클래스
 
@@ -66,13 +67,13 @@ void *allocate(std::size_t count);
 *수*\
 할당할 배열의 요소 수입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 할당된 개체에 대한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는를 반환 합니다 `caches[_IDX].allocate(count)` . 여기서 인덱스는 `_IDX` 요청 된 블록 크기 *수*에 의해 결정 되거나, *개수가* 너무 크면를 반환 `operator new(count)` 합니다. `cache`를 반환합니다.
+멤버 함수는를 반환 합니다 `caches[_IDX].allocate(count)` . 여기서 인덱스는 `_IDX` 요청 된 블록 크기 *수* 에 의해 결정 되거나, *개수가* 너무 크면를 반환 `operator new(count)` 합니다. `cache`를 반환합니다.
 
 ## <a name="rts_allocdeallocate"></a><a name="deallocate"></a> rts_alloc::d eallocate
 
@@ -92,7 +93,7 @@ void deallocate(void* ptr, std::size_t count);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는를 호출 합니다 `caches[_IDX].deallocate(ptr, count)` . 여기서 인덱스는 `_IDX` 요청 된 블록 크기 *수*에 의해 결정 되거나, *개수가* 너무 크면를 반환 `operator delete(ptr)` 합니다.
+멤버 함수는를 호출 합니다 `caches[_IDX].deallocate(ptr, count)` . 여기서 인덱스는 `_IDX` 요청 된 블록 크기 *수* 에 의해 결정 되거나, *개수가* 너무 크면를 반환 `operator delete(ptr)` 합니다.
 
 ## <a name="rts_allocequals"></a><a name="equals"></a> rts_alloc:: equals
 

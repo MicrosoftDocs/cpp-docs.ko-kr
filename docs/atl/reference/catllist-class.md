@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CAtlList 클래스'
 title: CAtlList 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -37,12 +38,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlList class
 ms.assetid: 09e98053-64b2-4efa-99ab-d0542caaf981
-ms.openlocfilehash: 15830a30e8236a13f3911d1b84d3727d3246fc0b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 79ad0ab8e1a3cd1fb528776fa868aa806746b9da
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226674"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97147357"
 ---
 # <a name="catllist-class"></a>CAtlList 클래스
 
@@ -57,7 +58,7 @@ class CAtlList
 
 ### <a name="parameters"></a>매개 변수
 
-*우표*<br/>
+*E*<br/>
 요소 형식입니다.
 
 *ETraits*<br/>
@@ -73,7 +74,7 @@ class CAtlList
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[CAtlList:: CAtlList](#catllist)|생성자입니다.|
 |[표시 되는 목록:: ~ Clllist](#dtor)|소멸자입니다.|
@@ -113,9 +114,9 @@ class CAtlList
 
 ## <a name="remarks"></a>설명
 
-`CAtlList`클래스는 순차적으로 또는 값으로 액세스할 수 있는 고유 하지 않은 개체의 순서가 지정 된 목록을 지원 합니다. `CAtlList`목록은 이중으로 연결 된 목록 처럼 동작 합니다. 각 목록에는 head와 tail이 있으며 새 요소 (또는 경우에 따라 목록)를 목록의 끝에 추가 하거나 특정 요소 앞 이나 뒤에 삽입할 수 있습니다.
+`CAtlList`클래스는 순차적으로 또는 값으로 액세스할 수 있는 고유 하지 않은 개체의 순서가 지정 된 목록을 지원 합니다. `CAtlList` 목록은 이중으로 연결 된 목록 처럼 동작 합니다. 각 목록에는 head와 tail이 있으며 새 요소 (또는 경우에 따라 목록)를 목록의 끝에 추가 하거나 특정 요소 앞 이나 뒤에 삽입할 수 있습니다.
 
-대부분의 `CAtlList` 메서드는 위치 값을 사용 합니다. 이 값은 메서드가 요소를 저장 하는 실제 메모리 위치를 참조 하는 데 사용 되며 직접 계산 하거나 예측 해서는 안 됩니다. 목록에서 *n*번째 요소에 액세스 해야 하는 경우, [다음](#findindex) 메서드는 지정 된 인덱스에 대 한 해당 위치 값을 반환 합니다. [GetNext](#getnext) 및 catllist:: [getprev](#getprev) 메서드를 사용 하 여 목록의 개체를 반복할 수 있습니다.
+대부분의 `CAtlList` 메서드는 위치 값을 사용 합니다. 이 값은 메서드가 요소를 저장 하는 실제 메모리 위치를 참조 하는 데 사용 되며 직접 계산 하거나 예측 해서는 안 됩니다. 목록에서 *n* 번째 요소에 액세스 해야 하는 경우, [다음](#findindex) 메서드는 지정 된 인덱스에 대 한 해당 위치 값을 반환 합니다. [GetNext](#getnext) 및 catllist:: [getprev](#getprev) 메서드를 사용 하 여 목록의 개체를 반복할 수 있습니다.
 
 ATL에서 사용할 수 있는 컬렉션 클래스에 대 한 자세한 내용은 [Atl 컬렉션 클래스](../../atl/atl-collection-classes.md)를 참조 하세요.
 
@@ -123,7 +124,7 @@ ATL에서 사용할 수 있는 컬렉션 클래스에 대 한 자세한 내용�
 
 **헤더:** atlcoll
 
-## <a name="catllistaddhead"></a><a name="addhead"></a>이상 목록:: AddHead
+## <a name="catllistaddhead"></a><a name="addhead"></a> 이상 목록:: AddHead
 
 목록의 맨 위에 요소를 추가 하려면이 메서드를 호출 합니다.
 
@@ -137,7 +138,7 @@ POSITION AddHead(INARGTYPE element);
 *요소인*<br/>
 새 요소입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 새로 추가 된 요소의 위치를 반환 합니다.
 
@@ -149,7 +150,7 @@ POSITION AddHead(INARGTYPE element);
 
 [!code-cpp[NVC_ATL_Utilities#13](../../atl/codesnippet/cpp/catllist-class_1.cpp)]
 
-## <a name="catllistaddheadlist"></a><a name="addheadlist"></a>이상 목록:: Add헤드 목록
+## <a name="catllistaddheadlist"></a><a name="addheadlist"></a> 이상 목록:: Add헤드 목록
 
 목록의 맨 위에 기존 목록을 추가 하려면이 메서드를 호출 합니다.
 
@@ -170,7 +171,7 @@ void AddHeadList(const CAtlList<E, ETraits>* plNew);
 
 [!code-cpp[NVC_ATL_Utilities#14](../../atl/codesnippet/cpp/catllist-class_2.cpp)]
 
-## <a name="catllistaddtail"></a><a name="addtail"></a>가산 Llist:: AddTail
+## <a name="catllistaddtail"></a><a name="addtail"></a> 가산 Llist:: AddTail
 
 이 목록의 꼬리에 요소를 추가 하려면이 메서드를 호출 합니다.
 
@@ -184,7 +185,7 @@ POSITION AddTail(INARGTYPE element);
 *요소인*<br/>
 추가할 요소입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 새로 추가 된 요소의 위치를 반환 합니다.
 
@@ -196,7 +197,7 @@ POSITION AddTail(INARGTYPE element);
 
 [!code-cpp[NVC_ATL_Utilities#15](../../atl/codesnippet/cpp/catllist-class_3.cpp)]
 
-## <a name="catllistaddtaillist"></a><a name="addtaillist"></a>자세한 목록:: AddTailList
+## <a name="catllistaddtaillist"></a><a name="addtaillist"></a> 자세한 목록:: AddTailList
 
 이 메서드를 호출 하 여이 목록의 꼬리에 기존 목록을 추가 합니다.
 
@@ -217,7 +218,7 @@ void AddTailList(const CAtlList<E, ETraits>* plNew);
 
 [!code-cpp[NVC_ATL_Utilities#16](../../atl/codesnippet/cpp/catllist-class_4.cpp)]
 
-## <a name="catllistassertvalid"></a><a name="assertvalid"></a>자세한 목록:: AssertValid
+## <a name="catllistassertvalid"></a><a name="assertvalid"></a> 자세한 목록:: AssertValid
 
 목록이 유효한 지 확인 하려면이 메서드를 호출 합니다.
 
@@ -233,7 +234,7 @@ void AssertValid() const;
 
 [!code-cpp[NVC_ATL_Utilities#17](../../atl/codesnippet/cpp/catllist-class_5.cpp)]
 
-## <a name="catllistcatllist"></a><a name="catllist"></a>CAtlList:: CAtlList
+## <a name="catllistcatllist"></a><a name="catllist"></a> CAtlList:: CAtlList
 
 생성자입니다.
 
@@ -254,7 +255,7 @@ CAtlList(UINT nBlockSize = 10) throw();
 
 [!code-cpp[NVC_ATL_Utilities#18](../../atl/codesnippet/cpp/catllist-class_6.cpp)]
 
-## <a name="catllistcatllist"></a><a name="dtor"></a>표시 되는 목록:: ~ Clllist
+## <a name="catllistcatllist"></a><a name="dtor"></a> 표시 되는 목록:: ~ Clllist
 
 소멸자입니다.
 
@@ -268,7 +269,7 @@ CAtlList(UINT nBlockSize = 10) throw();
 
 디버그 빌드에서에 대 한 호출 후에도 목록에 일부 요소가 포함 되 면 어설션 오류가 발생 `RemoveAll` 합니다.
 
-## <a name="catllistfind"></a><a name="find"></a>자세한 목록:: Find
+## <a name="catllistfind"></a><a name="find"></a> 자세한 목록:: Find
 
 목록에서 지정 된 요소를 검색 하려면이 메서드를 호출 합니다.
 
@@ -284,7 +285,7 @@ POSITION Find(INARGTYPE element, POSITION posStartAfter = NULL) const throw();
 *posStartAfter*<br/>
 검색의 시작 위치입니다. 값을 지정 하지 않으면 검색은 head 요소로 시작 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 요소가 있으면 요소의 위치 값을 반환 하 고, 그렇지 않으면 NULL을 반환 합니다.
 
@@ -296,7 +297,7 @@ POSITION Find(INARGTYPE element, POSITION posStartAfter = NULL) const throw();
 
 [!code-cpp[NVC_ATL_Utilities#19](../../atl/codesnippet/cpp/catllist-class_7.cpp)]
 
-## <a name="catllistfindindex"></a><a name="findindex"></a>CAtlList:: FindIndex
+## <a name="catllistfindindex"></a><a name="findindex"></a> CAtlList:: FindIndex
 
 인덱스 값이 지정 된 경우이 메서드를 호출 하 여 요소의 위치를 가져옵니다.
 
@@ -309,13 +310,13 @@ POSITION FindIndex(size_t iElement) const throw();
 *iElement*<br/>
 필수 목록 요소의 인덱스 (0부터 시작)입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 해당 위치 값을 반환 하거나, *iElement* 가 범위를 벗어난 경우 NULL을 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 지정 된 인덱스 값에 해당 하는 위치를 반환 하 여 목록의 *n*번째 요소에 대 한 액세스를 허용 합니다.
+이 메서드는 지정 된 인덱스 값에 해당 하는 위치를 반환 하 여 목록의 *n* 번째 요소에 대 한 액세스를 허용 합니다.
 
 디버그 빌드에서는 목록 개체가 유효 하지 않을 경우 어설션 오류가 발생 합니다.
 
@@ -323,7 +324,7 @@ POSITION FindIndex(size_t iElement) const throw();
 
 [!code-cpp[NVC_ATL_Utilities#20](../../atl/codesnippet/cpp/catllist-class_8.cpp)]
 
-## <a name="catllistgetat"></a><a name="getat"></a>자세한 목록:: GetAt
+## <a name="catllistgetat"></a><a name="getat"></a> 자세한 목록:: GetAt
 
 목록의 지정 된 위치에 있는 요소를 반환 하려면이 메서드를 호출 합니다.
 
@@ -337,7 +338,7 @@ const E& GetAt(POSITION pos) const throw();
 *pos*<br/>
 특정 요소를 지정 하는 위치 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 요소에 대 한 참조 또는의 복사본입니다.
 
@@ -353,7 +354,7 @@ const E& GetAt(POSITION pos) const throw();
 
 [Catllist:: FindIndex](#findindex)의 예제를 참조 하세요.
 
-## <a name="catllistgetcount"></a><a name="getcount"></a>CAtlList:: GetCount
+## <a name="catllistgetcount"></a><a name="getcount"></a> CAtlList:: GetCount
 
 목록에 있는 개체의 수를 반환 하려면이 메서드를 호출 합니다.
 
@@ -361,7 +362,7 @@ const E& GetAt(POSITION pos) const throw();
 size_t GetCount() const throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 목록에 있는 요소 수를 반환합니다.
 
@@ -369,7 +370,7 @@ size_t GetCount() const throw();
 
 [Catllist:: Find](#find)의 예제를 참조 하세요.
 
-## <a name="catllistgethead"></a><a name="gethead"></a>자세한 목록:: GetHead
+## <a name="catllistgethead"></a><a name="gethead"></a> 자세한 목록:: GetHead
 
 목록의 맨 위에 있는 요소를 반환 하려면이 메서드를 호출 합니다.
 
@@ -378,7 +379,7 @@ E& GetHead() throw();
 const E& GetHead() const throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 목록의 맨 위에 있는 요소의 복사본에 대 한 참조를 반환 합니다.
 
@@ -394,7 +395,7 @@ const E& GetHead() const throw();
 
 [Catllist:: AddHead](#addhead)의 예제를 참조 하세요.
 
-## <a name="catllistgetheadposition"></a><a name="getheadposition"></a>Gellist:: Geadposition
+## <a name="catllistgetheadposition"></a><a name="getheadposition"></a> Gellist:: Geadposition
 
 목록 헤드의 위치를 가져오려면이 메서드를 호출 합니다.
 
@@ -402,7 +403,7 @@ const E& GetHead() const throw();
 POSITION GetHeadPosition() const throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 목록 헤드의 요소에 해당 하는 위치 값을 반환 합니다.
 
@@ -414,7 +415,7 @@ POSITION GetHeadPosition() const throw();
 
 [!code-cpp[NVC_ATL_Utilities#21](../../atl/codesnippet/cpp/catllist-class_9.cpp)]
 
-## <a name="catllistgetnext"></a><a name="getnext"></a>자세한 목록:: GetNext
+## <a name="catllistgetnext"></a><a name="getnext"></a> 자세한 목록:: GetNext
 
 목록에서 다음 요소를 반환 하려면이 메서드를 호출 합니다.
 
@@ -428,7 +429,7 @@ const E& GetNext(POSITION& pos) const throw();
 *pos*<br/>
 에 대 한 이전 호출에서 반환 되는 위치 값으로, `GetNext` [gellist:: Geor adposition](#getheadposition)또는 기타 `CAtlList` 메서드입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 목록이 이면 목록에서 **`const`** `GetNext` 다음 요소의 복사본을 반환 합니다. 이를 통해 메서드를 대입문의 오른쪽 에서만 사용 하 고 목록을 수정 하지 않도록 보호할 수 있습니다.
 
@@ -442,7 +443,7 @@ POSITION 카운터 ( *pos*)는 목록의 다음 요소를 가리키도록 업데
 
 [Gellist:: Ge의 Adposition](#getheadposition)의 예제를 참조 하세요.
 
-## <a name="catllistgetprev"></a><a name="getprev"></a>CAtlList:: GetPrev
+## <a name="catllistgetprev"></a><a name="getprev"></a> CAtlList:: GetPrev
 
 목록에서 이전 요소를 반환 하려면이 메서드를 호출 합니다.
 
@@ -456,7 +457,7 @@ const E& GetPrev(POSITION& pos) const throw();
 *pos*<br/>
 에 대 한 이전 호출에서 반환 되는 위치 값 ( `GetPrev` [GetTailPosition](#gettailposition)) 또는 기타 `CAtlList` 메서드입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 목록이 인 경우 **`const`** `GetPrev` 목록 요소의 복사본을 반환 합니다. 이를 통해 메서드를 대입문의 오른쪽 에서만 사용 하 고 목록을 수정 하지 않도록 보호할 수 있습니다.
 
@@ -470,7 +471,7 @@ POSITION 카운터 ( *pos*)는 목록의 이전 요소를 가리키도록 업데
 
 [GetTailPosition](#gettailposition)의 예제를 참조 하세요.
 
-## <a name="catllistgettail"></a><a name="gettail"></a>CAtlList:: GetTail
+## <a name="catllistgettail"></a><a name="gettail"></a> CAtlList:: GetTail
 
 목록의 끝에 있는 요소를 반환 하려면이 메서드를 호출 합니다.
 
@@ -479,7 +480,7 @@ E& GetTail() throw();
 const E& GetTail() const throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 목록의 끝에 있는 요소 또는의 복사본에 대 한 참조를 반환 합니다.
 
@@ -495,7 +496,7 @@ const E& GetTail() const throw();
 
 [Catllist:: AddTail](#addtail)의 예제를 참조 하세요.
 
-## <a name="catllistgettailposition"></a><a name="gettailposition"></a>자세한 목록:: GetTailPosition
+## <a name="catllistgettailposition"></a><a name="gettailposition"></a> 자세한 목록:: GetTailPosition
 
 목록의 꼬리 위치를 가져오려면이 메서드를 호출 합니다.
 
@@ -503,7 +504,7 @@ const E& GetTail() const throw();
 POSITION GetTailPosition() const throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 목록의 끝에 있는 요소에 해당 하는 위치 값을 반환 합니다.
 
@@ -515,7 +516,7 @@ POSITION GetTailPosition() const throw();
 
 [!code-cpp[NVC_ATL_Utilities#22](../../atl/codesnippet/cpp/catllist-class_10.cpp)]
 
-## <a name="catllistinargtype"></a><a name="inargtype"></a>CAtlList:: INARGTYPE
+## <a name="catllistinargtype"></a><a name="inargtype"></a> CAtlList:: INARGTYPE
 
 요소가 입력 인수로 전달 될 때 사용 되는 형식입니다.
 
@@ -523,7 +524,7 @@ POSITION GetTailPosition() const throw();
 typedef ETraits::INARGTYPE INARGTYPE;
 ```
 
-## <a name="catllistinsertafter"></a><a name="insertafter"></a>자세한 목록:: InsertAfter
+## <a name="catllistinsertafter"></a><a name="insertafter"></a> 자세한 목록:: InsertAfter
 
 목록에서 지정 된 위치 뒤에 새 요소를 삽입 하려면이 메서드를 호출 합니다.
 
@@ -539,7 +540,7 @@ POSITION InsertAfter(POSITION pos, INARGTYPE element);
 *요소인*<br/>
 삽입할 요소입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 새 요소의 위치 값을 반환 합니다.
 
@@ -551,7 +552,7 @@ POSITION InsertAfter(POSITION pos, INARGTYPE element);
 
 [!code-cpp[NVC_ATL_Utilities#23](../../atl/codesnippet/cpp/catllist-class_11.cpp)]
 
-## <a name="catllistinsertbefore"></a><a name="insertbefore"></a>자세한 목록:: InsertBefore
+## <a name="catllistinsertbefore"></a><a name="insertbefore"></a> 자세한 목록:: InsertBefore
 
 지정 된 위치 앞의 목록에 새 요소를 삽입 하려면이 메서드를 호출 합니다.
 
@@ -567,7 +568,7 @@ POSITION InsertBefore(POSITION pos, INARGTYPE element);
 *요소인*<br/>
 삽입할 요소입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 새 요소의 위치 값을 반환 합니다.
 
@@ -579,7 +580,7 @@ POSITION InsertBefore(POSITION pos, INARGTYPE element);
 
 [!code-cpp[NVC_ATL_Utilities#24](../../atl/codesnippet/cpp/catllist-class_12.cpp)]
 
-## <a name="catllistisempty"></a><a name="isempty"></a>자세한 목록:: IsEmpty
+## <a name="catllistisempty"></a><a name="isempty"></a> 자세한 목록:: IsEmpty
 
 목록이 비어 있는지 확인 하려면이 메서드를 호출 합니다.
 
@@ -587,7 +588,7 @@ POSITION InsertBefore(POSITION pos, INARGTYPE element);
 bool IsEmpty() const throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 목록에 개체가 포함 되어 있지 않으면 true를 반환 하 고, 그렇지 않으면 false를 반환 합니다.
 
@@ -595,7 +596,7 @@ bool IsEmpty() const throw();
 
 [!code-cpp[NVC_ATL_Utilities#25](../../atl/codesnippet/cpp/catllist-class_13.cpp)]
 
-## <a name="catllistmovetohead"></a><a name="movetohead"></a>자세한 목록:: MoveToHead
+## <a name="catllistmovetohead"></a><a name="movetohead"></a> 자세한 목록:: MoveToHead
 
 지정 된 요소를 목록의 헤드로 이동 하려면이 메서드를 호출 합니다.
 
@@ -616,7 +617,7 @@ void MoveToHead(POSITION pos) throw();
 
 [!code-cpp[NVC_ATL_Utilities#26](../../atl/codesnippet/cpp/catllist-class_14.cpp)]
 
-## <a name="catllistmovetotail"></a><a name="movetotail"></a>자세한 목록:: MoveToTail
+## <a name="catllistmovetotail"></a><a name="movetotail"></a> 자세한 목록:: MoveToTail
 
 지정 된 요소를 목록의 꼬리 부분으로 이동 하려면이 메서드를 호출 합니다.
 
@@ -637,7 +638,7 @@ void MoveToTail(POSITION pos) throw();
 
 [MoveToHead](#movetohead)의 예제를 참조 하세요.
 
-## <a name="catllistremoveall"></a><a name="removeall"></a>자세한 목록:: RemoveAll
+## <a name="catllistremoveall"></a><a name="removeall"></a> 자세한 목록:: RemoveAll
 
 목록에서 모든 요소를 제거 하려면이 메서드를 호출 합니다.
 
@@ -653,7 +654,7 @@ void RemoveAll() throw();
 
 [IsEmpty](#isempty)의 예제를 참조 하세요.
 
-## <a name="catllistremoveat"></a><a name="removeat"></a>CAtlList:: RemoveAt
+## <a name="catllistremoveat"></a><a name="removeat"></a> CAtlList:: RemoveAt
 
 목록에서 단일 요소를 제거 하려면이 메서드를 호출 합니다.
 
@@ -676,7 +677,7 @@ void RemoveAt(POSITION pos) throw();
 
 [!code-cpp[NVC_ATL_Utilities#27](../../atl/codesnippet/cpp/catllist-class_15.cpp)]
 
-## <a name="catllistremovehead"></a><a name="removehead"></a>CAtlList:: RemoveHead
+## <a name="catllistremovehead"></a><a name="removehead"></a> CAtlList:: RemoveHead
 
 목록의 맨 위에 있는 요소를 제거 하려면이 메서드를 호출 합니다.
 
@@ -684,7 +685,7 @@ void RemoveAt(POSITION pos) throw();
 E RemoveHead();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 목록의 맨 위에 있는 요소를 반환 합니다.
 
@@ -696,7 +697,7 @@ E RemoveHead();
 
 [!code-cpp[NVC_ATL_Utilities#28](../../atl/codesnippet/cpp/catllist-class_16.cpp)]
 
-## <a name="catllistremoveheadnoreturn"></a><a name="removeheadnoreturn"></a>자세한 목록:: RemoveHeadNoReturn
+## <a name="catllistremoveheadnoreturn"></a><a name="removeheadnoreturn"></a> 자세한 목록:: RemoveHeadNoReturn
 
 값을 반환 하지 않고 목록 맨 위에 있는 요소를 제거 하려면이 메서드를 호출 합니다.
 
@@ -712,7 +713,7 @@ void RemoveHeadNoReturn() throw();
 
 [IsEmpty](#isempty)의 예제를 참조 하세요.
 
-## <a name="catllistremovetail"></a><a name="removetail"></a>자세한 목록:: RemoveTail
+## <a name="catllistremovetail"></a><a name="removetail"></a> 자세한 목록:: RemoveTail
 
 목록의 끝에 있는 요소를 제거 하려면이 메서드를 호출 합니다.
 
@@ -720,7 +721,7 @@ void RemoveHeadNoReturn() throw();
 E RemoveTail();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 목록의 끝에 있는 요소를 반환 합니다.
 
@@ -732,7 +733,7 @@ Tail 요소가 목록에서 삭제 되 고 메모리가 해제 됩니다. 요소
 
 [!code-cpp[NVC_ATL_Utilities#29](../../atl/codesnippet/cpp/catllist-class_17.cpp)]
 
-## <a name="catllistremovetailnoreturn"></a><a name="removetailnoreturn"></a>자세한 목록:: RemoveTailNoReturn
+## <a name="catllistremovetailnoreturn"></a><a name="removetailnoreturn"></a> 자세한 목록:: RemoveTailNoReturn
 
 값을 반환 하지 않고 목록 끝에 있는 요소를 제거 하려면이 메서드를 호출 합니다.
 
@@ -748,7 +749,7 @@ Tail 요소가 목록에서 삭제 되 고 메모리가 해제 됩니다. 디버
 
 [IsEmpty](#isempty)의 예제를 참조 하세요.
 
-## <a name="catllistsetat"></a><a name="setat"></a>CAtlList:: SetAt
+## <a name="catllistsetat"></a><a name="setat"></a> CAtlList:: SetAt
 
 목록의 지정 된 위치에 있는 요소의 값을 설정 하려면이 메서드를 호출 합니다.
 
@@ -766,13 +767,13 @@ void SetAt(POSITION pos, INARGTYPE element);
 
 ### <a name="remarks"></a>설명
 
-기존 값을 *요소로*바꿉니다. 디버그 빌드에서는 *pos* 가 NULL 인 경우 어설션 오류가 발생 합니다.
+기존 값을 *요소로* 바꿉니다. 디버그 빌드에서는 *pos* 가 NULL 인 경우 어설션 오류가 발생 합니다.
 
 ### <a name="example"></a>예제
 
 [!code-cpp[NVC_ATL_Utilities#30](../../atl/codesnippet/cpp/catllist-class_18.cpp)]
 
-## <a name="catllistswapelements"></a><a name="swapelements"></a>CAtlList:: SwapElements
+## <a name="catllistswapelements"></a><a name="swapelements"></a> CAtlList:: SwapElements
 
 목록에서 요소를 교환 하려면이 메서드를 호출 합니다.
 

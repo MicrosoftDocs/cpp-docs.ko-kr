@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CAxWindow 클래스'
 title: CAxWindow 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - CAxWindow class
 - ATL, hosting ActiveX controls
 ms.assetid: 85e79261-43e4-4770-bde0-1ff87f222b0f
-ms.openlocfilehash: b74ecb9af2decf92f873cef8d016907b6c9474cf
-ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
+ms.openlocfilehash: 0b1cdabbce4fd6a36f6f3e9fb15b3f28249065c3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91353079"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146993"
 ---
 # <a name="caxwindow-class"></a>CAxWindow 클래스
 
@@ -40,7 +41,7 @@ class CAxWindow : public CWindow
 
 ### <a name="methods"></a>메서드
 
-|함수|Description|
+|함수|설명|
 |-|-|
 |[AttachControl](#attachcontrol)|기존 ActiveX 컨트롤을 개체에 연결 `CAxWindow` 합니다.|
 |[CAxWindow](#caxwindow)|`CAxWindow` 개체를 생성합니다.|
@@ -54,7 +55,7 @@ class CAxWindow : public CWindow
 
 ### <a name="operators"></a>연산자
 
-|연산자|Description|
+|연산자|설명|
 |-|-|
 |[연산자 =](#operator_eq)|기존 개체에 HWND를 할당 `CAxWindow` 합니다.|
 
@@ -90,7 +91,7 @@ HRESULT AttachControl(
 *ppUnkContainer*<br/>
 제한이 호스트의에 대 한 포인터 `IUnknown` `AxWin` 입니다 (개체).
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 표준 HRESULT 값입니다.
 
@@ -154,13 +155,13 @@ HRESULT CreateControl(
 *dwResID*<br/>
 HTML 리소스의 리소스 ID입니다. 지정 된 리소스를 사용 하 여 WebBrowser 컨트롤이 만들어지고 로드 됩니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 표준 HRESULT 값입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드의 두 번째 버전을 사용 하는 경우 HTML 컨트롤이 만들어지고 *dwResID*으로 식별 되는 리소스에 바인딩됩니다.
+이 메서드의 두 번째 버전을 사용 하는 경우 HTML 컨트롤이 만들어지고 *dwResID* 으로 식별 되는 리소스에 바인딩됩니다.
 
 이 메서드는를 호출 하는 것과 동일한 결과를 제공 합니다.
 
@@ -225,12 +226,12 @@ HRESULT CreateControlEx(
 진행 포함 된 개체의 송신 인터페이스에 대 한 인터페이스 식별자입니다. IID_NULL 수 있습니다.
 
 *punkSink*<br/>
-진행 `IUnknown` *Iidsink*에서 지정한 포함 된 개체의 연결 지점에 연결할 싱크 개체의 인터페이스에 대 한 포인터입니다.
+진행 `IUnknown` *Iidsink* 에서 지정한 포함 된 개체의 연결 지점에 연결할 싱크 개체의 인터페이스에 대 한 포인터입니다.
 
 *dwResID*<br/>
 진행 HTML 리소스의 리소스 ID입니다. 지정 된 리소스를 사용 하 여 WebBrowser 컨트롤이 만들어지고 로드 됩니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 표준 HRESULT 값입니다.
 
@@ -252,7 +253,7 @@ HRESULT CreateControlEx(
 static LPCTSTR GetWndClassName();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 사용이 허가 되지 않은 ActiveX 컨트롤을 호스팅할 수 있는 창 클래스의 이름을 포함 하는 문자열에 대 한 포인터입니다.
 
@@ -269,7 +270,7 @@ CAxWindow<TBase>& operator=(HWND hWnd);
 *hWnd*<br/>
 기존 창에 대 한 핸들입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 개체에 대 한 참조를 반환 합니다 `CAxWindow` .
 
@@ -291,10 +292,10 @@ HRESULT QueryControl(Q** ppUnk);
 *ppUnk*<br/>
 제한이 컨트롤의 인터페이스에 대 한 포인터입니다. 이 메서드의 템플릿 버전에서는 연결 된 UUID를 사용 하는 형식화 된 인터페이스가 전달 되는 한 참조 ID가 필요 하지 않습니다.
 
-*대답*<br/>
+*Q*<br/>
 진행 쿼리 되는 인터페이스입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 표준 HRESULT 값입니다.
 
@@ -316,10 +317,10 @@ HRESULT QueryHost(Q** ppUnk);
 *ppUnk*<br/>
 제한이 호스트의 인터페이스에 대 한 포인터입니다. 이 메서드의 템플릿 버전에서는 연결 된 UUID를 사용 하는 형식화 된 인터페이스가 전달 되는 한 참조 ID가 필요 하지 않습니다.
 
-*대답*<br/>
+*Q*<br/>
 진행 쿼리 되는 인터페이스입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 표준 HRESULT 값입니다.
 
@@ -340,7 +341,7 @@ HRESULT SetExternalDispatch(IDispatch* pDisp);
 *pDisp*<br/>
 진행 인터페이스에 대 한 포인터 `IDispatch` 입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 표준 HRESULT 값입니다.
 
@@ -357,7 +358,7 @@ HRESULT SetExternalUIHandler(IDocHostUIHandlerDispatch* pUIHandler);
 *pUIHandler*<br/>
 진행 인터페이스에 대 한 포인터 `IDocHostUIHandlerDispatch` 입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 표준 HRESULT 값입니다.
 

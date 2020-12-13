@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 연습: 설치 프로젝트를 사용 하 여 Visual C++ 응용 프로그램 배포'
 title: 설치 프로젝트를 사용하여 Visual C++ 애플리케이션 배포
 ms.date: 04/25/2019
 helpviewer_keywords:
 - deployment for Visual C++
 ms.assetid: 66735cda-8fe3-4211-a19a-2cf717a12a3f
-ms.openlocfilehash: 4ded30695647b3e9377bc35227283f367816edfa
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 3815ce7a489440d6ae7db6bc73a1c17d02d46ae3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92918853"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135995"
 ---
 # <a name="walkthrough-deploying-a-visual-c-application-by-using-a-setup-project"></a>연습: 설치 프로젝트를 사용하여 Visual C++ 애플리케이션 배포
 
@@ -41,17 +42,17 @@ ms.locfileid: "92918853"
 
 1. **만들기** 단추를 선택하여 클라이언트 프로젝트를 만듭니다. **MFC 응용 프로그램 마법사** 가 나타나면 모든 기본값을 적용 합니다.
 
-1. 활성 솔루션 구성을 **릴리스** 로 변경합니다. **빌드** 메뉴에서 **Configuration Manger** 를 선택합니다. **Configuration Manager** 대화 상자의 **활성 솔루션 구성** 드롭다운 상자 목록에서 **릴리스** 를 선택합니다. **닫기** 를 클릭합니다.
+1. 활성 솔루션 구성을 **릴리스로** 변경 합니다. **빌드** 메뉴에서 **Configuration Manger** 를 선택합니다. **Configuration Manager** 대화 상자의 **활성 솔루션 구성** 드롭다운 상자 목록에서 **릴리스** 를 선택합니다. **닫기** 를 클릭합니다.
 
 1. **Ctrl** + **Shift** + **B** 를 눌러 응용 프로그램을 빌드합니다. 또는 **빌드** 메뉴에서 **솔루션 빌드** 를 클릭합니다. 애플리케이션을 빌드하면 설치 프로젝트가 이 MFC 애플리케이션 프로젝트의 출력을 사용할 수 있습니다.
 
-1. 아직 수행 하지 않은 경우 Microsoft Visual Studio 설치 관리자 프로젝트 확장을 다운로드 합니다. 확장은 Visual Studio 개발자를 위한 무료 버전이며 설치 및 배포 프로젝트 템플릿 기능을 Visual Studio에 추가합니다. 인터넷에 연결 되어 있는 경우 Visual Studio에서 **확장**  >  **확장 관리** 를 선택 합니다. Under the <bpt id="p1">**</bpt>Extensions and Updates<ept id="p1">**</ept> dialog, select the <bpt id="p2">**</bpt>Online<ept id="p2">**</ept> tab and type <bpt id="p3">*</bpt>Microsoft Visual Studio Installer Projects<ept id="p3">*</ept> in the search box. **Enter** 키를 누르고 **Microsoft Visual Studio \<version> 설치 관리자 프로젝트** 를 선택한 다음 **다운로드** 를 클릭 합니다. 확장을 선택하여 실행하고 설치한 후 Visual Studio를 다시 시작합니다.
+1. 아직 다운로드하지 않은 경우 Microsoft Visual Studio 설치 관리자 프로젝트 확장을 다운로드합니다. 확장은 Visual Studio 개발자를 위한 무료 버전이며 설치 및 배포 프로젝트 템플릿 기능을 Visual Studio에 추가합니다. 인터넷에 연결되면 Visual Studio에서 **확장** > **확장 관리** 를 선택합니다. **확장 및 업데이트** 대화 상자에서 **온라인** 탭을 선택하고 검색 상자에 ‘Microsoft Visual Studio 설치 관리자 프로젝트’를 입력합니다. **Enter** 키를 누르고 **Microsoft Visual Studio \<version> 설치 관리자 프로젝트** 를 선택한 다음 **다운로드** 를 클릭 합니다. 확장을 선택하여 실행하고 설치한 후 Visual Studio를 다시 시작합니다.
 
    ![Visual Studio 설치 프로젝트](media/vs2019-extension-dialog-installer-project.png "클라이언트 프로젝트 이름 지정")
 
 1. Visual Studio 메뉴 모음에서 **파일** > **최근에 사용한 프로젝트 및 솔루션** 을 선택한 다음, 프로젝트를 선택하여 다시 엽니다.
 
-1. 메뉴 모음에서 **파일**  >  **새로** 만들기  >  **프로젝트** 를 선택 하 여 **새 프로젝트 만들기** 대화 상자를 엽니다. 검색 상자에 "Setup"을 입력하고 결과 목록에서 **설치 프로젝트** 를 선택합니다.
+1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트** 를 선택하여 **새 프로젝트 만들기** 대화 상자를 엽니다. 검색 상자에 "Setup"을 입력하고 결과 목록에서 **설치 프로젝트** 를 선택합니다.
 
 1. **이름** 상자에 설치 프로젝트의 이름을 입력합니다. **솔루션** 드롭다운 목록에서 **솔루션에 추가** 를 선택합니다. **확인** 단추를 선택하여 설치 프로젝트를 만듭니다. 편집기 창에 **파일 도우미(ProjectName)** 탭이 열립니다.
 
@@ -63,16 +64,16 @@ ms.locfileid: "92918853"
 
 1. 새 프로젝트를 만듭니다. **파일** 메뉴에서 **새로 만들기** 를 가리킨 다음 **프로젝트** 를 클릭합니다.
 
-1. **MFC 응용 프로그램 마법사** 를 사용 하 여 새 Visual Studio 솔루션을 만듭니다. 마법사를 찾으려면 **새 프로젝트** 대화 상자에서 **Visual C++** 노드를 확장하고, **MFC** 를 선택하고, **MFC 애플리케이션** 을 선택하고, 프로젝트의 이름을 입력한 다음, **확인** 을 클릭합니다. **마침** 을 클릭합니다.
+1. **MFC 응용 프로그램 마법사** 를 사용 하 여 새 Visual Studio 솔루션을 만듭니다. 마법사를 찾으려면 **새 프로젝트** 대화 상자에서 **Visual C++** 노드를 확장하고, **MFC** 를 선택하고, **MFC 애플리케이션** 을 선택하고, 프로젝트의 이름을 입력한 다음, **확인** 을 클릭합니다. **Finish** 를 클릭합니다.
 
    > [!NOTE]
    > **MFC 응용 프로그램** 형식이 없는 경우 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Studio 설치 관리자 열기** 를 선택 합니다. **선택적** 구성 요소 섹션의 **C++를 사용한 데스크톱 개발** 아래에 있는 옵션인 **x86 및 x64용 Visual C++ MFC** 를 설치합니다.
 
-1. 활성 솔루션 구성을 **릴리스** 로 변경합니다. **빌드** 메뉴에서 **Configuration Manger** 를 선택합니다. **Configuration Manager** 대화 상자의 **활성 솔루션 구성** 드롭다운 상자 목록에서 **릴리스** 를 선택합니다. **닫기** 를 클릭합니다.
+1. 활성 솔루션 구성을 **릴리스로** 변경 합니다. **빌드** 메뉴에서 **Configuration Manger** 를 선택합니다. **Configuration Manager** 대화 상자의 **활성 솔루션 구성** 드롭다운 상자 목록에서 **릴리스** 를 선택합니다. **닫기** 를 클릭합니다.
 
 1. **Ctrl** + **Shift** + **B** 를 눌러 응용 프로그램을 빌드합니다. 또는 **빌드** 메뉴에서 **솔루션 빌드** 를 클릭합니다. 애플리케이션을 빌드하면 설치 프로젝트가 이 MFC 애플리케이션 프로젝트의 출력을 사용할 수 있습니다.
 
-1. 아직 수행 하지 않은 경우 Microsoft Visual Studio 설치 관리자 프로젝트 확장을 다운로드 합니다. 확장은 Visual Studio 개발자를 위한 무료 버전이며 설치 및 배포 프로젝트 템플릿 기능을 Visual Studio에 추가합니다. 인터넷에 연결 되어 있는 경우 Visual Studio에서 **도구**  >  **확장 및 업데이트** 를 선택 합니다. Under the <bpt id="p1">**</bpt>Extensions and Updates<ept id="p1">**</ept> dialog, select the <bpt id="p2">**</bpt>Online<ept id="p2">**</ept> tab and type <bpt id="p3">*</bpt>Microsoft Visual Studio Installer Projects<ept id="p3">*</ept> in the search box. **Enter** 키를 누르고 **Microsoft Visual Studio \<version> 설치 관리자 프로젝트** 를 선택한 다음 **다운로드** 를 클릭 합니다. 확장을 선택하여 실행하고 설치한 후 Visual Studio를 다시 시작합니다.
+1. 아직 다운로드하지 않은 경우 Microsoft Visual Studio 설치 관리자 프로젝트 확장을 다운로드합니다. 확장은 Visual Studio 개발자를 위한 무료 버전이며 설치 및 배포 프로젝트 템플릿 기능을 Visual Studio에 추가합니다. 인터넷에 연결 되어 있는 경우 Visual Studio에서 **도구**  >  **확장 및 업데이트** 를 선택 합니다. **확장 및 업데이트** 대화 상자에서 **온라인** 탭을 선택하고 검색 상자에 ‘Microsoft Visual Studio 설치 관리자 프로젝트’를 입력합니다. **Enter** 키를 누르고 **Microsoft Visual Studio \<version> 설치 관리자 프로젝트** 를 선택한 다음 **다운로드** 를 클릭 합니다. 확장을 선택하여 실행하고 설치한 후 Visual Studio를 다시 시작합니다.
 
 1. 메뉴 모음에서 **파일** > **최근에 사용한 프로젝트 및 솔루션** 을 선택한 후 프로젝트를 선택하여 다시 엽니다.
 
@@ -88,16 +89,16 @@ ms.locfileid: "92918853"
 
 1. 새 프로젝트를 만듭니다. **파일** 메뉴에서 **새로 만들기** 를 가리킨 다음 **프로젝트** 를 클릭합니다.
 
-1. **MFC 응용 프로그램 마법사** 를 사용 하 여 새 Visual Studio 솔루션을 만듭니다. 마법사를 찾으려면 **새 프로젝트** 대화 상자에서 **Visual C++** 노드를 확장하고, **MFC** 를 선택하고, **MFC 애플리케이션** 을 선택하고, 프로젝트의 이름을 입력한 다음, **확인** 을 클릭합니다. **마침** 을 클릭합니다.
+1. **MFC 응용 프로그램 마법사** 를 사용 하 여 새 Visual Studio 솔루션을 만듭니다. 마법사를 찾으려면 **새 프로젝트** 대화 상자에서 **Visual C++** 노드를 확장하고, **MFC** 를 선택하고, **MFC 애플리케이션** 을 선택하고, 프로젝트의 이름을 입력한 다음, **확인** 을 클릭합니다. **Finish** 를 클릭합니다.
 
    > [!NOTE]
    > **MFC 응용 프로그램** 형식이 없는 경우 Windows 시작 단추를 클릭 하 고 **프로그램 추가/제거** 를 입력 합니다. 결과 목록에서 프로그램을 열고 설치된 프로그램 목록에서 Microsoft Visual Studio 2015 설치를 찾습니다. 이를 두 번 클릭한 후 **수정** 을 선택하고 **Visual C++** 에서 **Microsoft Foundation Classes** 구성 요소를 선택합니다.
 
-1. 활성 솔루션 구성을 **릴리스** 로 변경합니다. **빌드** 메뉴에서 **Configuration Manager** 를 선택 합니다. **Configuration Manager** 대화 상자의 **활성 솔루션 구성** 드롭다운 상자 목록에서 **릴리스** 를 선택합니다. **닫기** 를 클릭합니다.
+1. 활성 솔루션 구성을 **릴리스로** 변경 합니다. **빌드** 메뉴에서 **Configuration Manager** 를 선택 합니다. **Configuration Manager** 대화 상자의 **활성 솔루션 구성** 드롭다운 상자 목록에서 **릴리스** 를 선택합니다. **닫기** 를 클릭합니다.
 
 1. **Ctrl** + **Shift** + **B** 를 눌러 응용 프로그램을 빌드합니다. 또는 **빌드** 메뉴에서 **솔루션 빌드** 를 클릭합니다. 애플리케이션을 빌드하면 설치 프로젝트가 이 MFC 애플리케이션 프로젝트의 출력을 사용할 수 있습니다.
 
-1. 아직 수행 하지 않은 경우 Microsoft Visual Studio 설치 관리자 프로젝트 확장을 다운로드 합니다. 확장은 Visual Studio 개발자를 위한 무료 버전이며 설치 및 배포 프로젝트 템플릿 기능을 Visual Studio에 추가합니다. 인터넷에 연결 되어 있는 경우 Visual Studio에서 **도구**  >  **확장 및 업데이트** 를 선택 합니다. Under the <bpt id="p1">**</bpt>Extensions and Updates<ept id="p1">**</ept> dialog, select the <bpt id="p2">**</bpt>Online<ept id="p2">**</ept> tab and type <bpt id="p3">*</bpt>Microsoft Visual Studio Installer Projects<ept id="p3">*</ept> in the search box. **Enter** 키를 누르고 **Microsoft Visual Studio \<version> 설치 관리자 프로젝트** 를 선택한 다음 **다운로드** 를 클릭 합니다. 확장을 선택하여 실행하고 설치한 후 Visual Studio를 다시 시작합니다.
+1. 아직 다운로드하지 않은 경우 Microsoft Visual Studio 설치 관리자 프로젝트 확장을 다운로드합니다. 확장은 Visual Studio 개발자를 위한 무료 버전이며 설치 및 배포 프로젝트 템플릿 기능을 Visual Studio에 추가합니다. 인터넷에 연결 되어 있는 경우 Visual Studio에서 **도구**  >  **확장 및 업데이트** 를 선택 합니다. **확장 및 업데이트** 대화 상자에서 **온라인** 탭을 선택하고 검색 상자에 ‘Microsoft Visual Studio 설치 관리자 프로젝트’를 입력합니다. **Enter** 키를 누르고 **Microsoft Visual Studio \<version> 설치 관리자 프로젝트** 를 선택한 다음 **다운로드** 를 클릭 합니다. 확장을 선택하여 실행하고 설치한 후 Visual Studio를 다시 시작합니다.
 
 1. 메뉴 모음에서 **파일** > **최근에 사용한 프로젝트 및 솔루션** 을 선택한 후 프로젝트를 선택하여 다시 엽니다.
 
@@ -117,7 +118,7 @@ ms.locfileid: "92918853"
 
 1. 메뉴 모음에서 **빌드** > **구성 관리자** 를 선택합니다. **프로젝트** 테이블의 **빌드** 열 아래에서 배포 프로젝트의 확인란을 선택합니다. **닫기** 를 클릭합니다.
 
-1. 메뉴 모음에서 빌드 **Build**  >  **솔루션** 빌드를 선택 하 여 MFC 프로젝트와 배포 프로젝트를 빌드합니다.
+1. 메뉴 모음에서 빌드   >  **솔루션** 빌드를 선택 하 여 MFC 프로젝트와 배포 프로젝트를 빌드합니다.
 
 1. 솔루션 폴더에서, 배포 프로젝트에서 빌드된 setup.exe 프로그램을 찾습니다. 이 파일(및 .msi 파일)을 복사하여 다른 컴퓨터에 애플리케이션 및 기타 필요한 라이브러리 파일을 설치할 수 있습니다. Visual C++ 라이브러리가 없는 두 번째 컴퓨터에서 설치 프로그램을 실행합니다.
 

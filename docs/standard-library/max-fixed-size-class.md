@@ -1,4 +1,5 @@
 ---
+description: Max_fixed_size 클래스에 대해 자세히 알아보세요.
 title: max_fixed_size 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - stdext::max_fixed_size [C++], released
 - stdext::max_fixed_size [C++], saved
 ms.assetid: 8c8f4588-37e9-4579-8168-ba3553800914
-ms.openlocfilehash: e62884c83d71b4e9f1902fa4bc7f52f5e0a4e0ee
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 3238013547078640af42914fa21dddec622a9973
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561689"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97149281"
 ---
 # <a name="max_fixed_size-class"></a>max_fixed_size 클래스
 
@@ -103,7 +104,7 @@ void deallocated(std::size_t _Nx = 1);
 bool full();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 이면 `Max <= _Nblocks` 이 고, 그렇지 않으면 **`false`** 입니다.
 

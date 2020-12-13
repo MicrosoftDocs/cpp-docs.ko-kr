@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3909'
 title: 컴파일러 오류 C3909
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3909
 ms.assetid: 0a443132-e53f-42dc-a58b-f086da3e7bfd
-ms.openlocfilehash: 69613a1058bd5178ea4c03931664dd00bad7a101
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: a85e0201e192caae1e4f170a12544177cbb2d7f9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74748998"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97144159"
 ---
 # <a name="compiler-error-c3909"></a>컴파일러 오류 C3909
 

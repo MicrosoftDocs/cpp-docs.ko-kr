@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CAtlPreviewCtrlImpl 클래스'
 title: CAtlPreviewCtrlImpl 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlPreviewCtrlImpl class
 ms.assetid: 39b3299e-07e4-4abc-9b6e-b54bfa3b0802
-ms.openlocfilehash: fd94d0d6fe43d80b45def3f747c7b7d558de31d4
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: 52263a4c65af1b791ca5da64eff235e93006ab52
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82167879"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97147214"
 ---
 # <a name="catlpreviewctrlimpl-class"></a>CAtlPreviewCtrlImpl 클래스
 
@@ -44,14 +45,14 @@ class CAtlPreviewCtrlImpl : public CWindowImpl<CAtlPreviewCtrlImpl>, public IPre
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
 |[CAtlPreviewCtrlImpl:: ~ CAtlPreviewCtrlImpl](#dtor)|Destructs 미리 보기 컨트롤 개체입니다.|
 |[CAtlPreviewCtrlImpl::CAtlPreviewCtrlImpl](#catlpreviewctrlimpl)|미리 보기 컨트롤 개체를 생성 합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
 |[CAtlPreviewCtrlImpl:: Create](#create)|Windows 창을 만들기 위해 풍부한 미리 보기 처리기에서 호출 됩니다.|
 |[CAtlPreviewCtrlImpl::D estroy](#destroy)|이 컨트롤을 제거 해야 할 때 풍부한 미리 보기 처리기에서 호출 됩니다.|
@@ -64,19 +65,19 @@ class CAtlPreviewCtrlImpl : public CWindowImpl<CAtlPreviewCtrlImpl>, public IPre
 
 ### <a name="protected-methods"></a>Protected 메서드
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |[CAtlPreviewCtrlImpl::D oPaint](#dopaint)|미리 보기를 렌더링 하기 위해 프레임 워크에서 호출 됩니다.|
 
 ### <a name="protected-constants"></a>Protected 상수
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |[CAtlPreviewCtrlImpl:: m_plf](#m_plf)|미리 보기 창에 텍스트를 표시 하는 데 사용 되는 글꼴입니다.|
 
 ### <a name="protected-data-members"></a>보호된 데이터 멤버
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |[CAtlPreviewCtrlImpl:: m_clrBack](#m_clrback)|미리 보기 창의 배경색입니다.|
 |[CAtlPreviewCtrlImpl:: m_clrText](#m_clrtext)|미리 보기 창의 텍스트 색입니다.|
@@ -103,7 +104,7 @@ class CAtlPreviewCtrlImpl : public CWindowImpl<CAtlPreviewCtrlImpl>, public IPre
 
 **헤더:** atlpreviewctrlimpl
 
-## <a name="catlpreviewctrlimplcatlpreviewctrlimpl"></a><a name="catlpreviewctrlimpl"></a>CAtlPreviewCtrlImpl::CAtlPreviewCtrlImpl
+## <a name="catlpreviewctrlimplcatlpreviewctrlimpl"></a><a name="catlpreviewctrlimpl"></a> CAtlPreviewCtrlImpl::CAtlPreviewCtrlImpl
 
 미리 보기 컨트롤 개체를 생성 합니다.
 
@@ -114,7 +115,7 @@ CAtlPreviewCtrlImpl(void) : m_clrText(0),
 
 ### <a name="remarks"></a>설명
 
-## <a name="catlpreviewctrlimplcatlpreviewctrlimpl"></a><a name="dtor"></a>CAtlPreviewCtrlImpl:: ~ CAtlPreviewCtrlImpl
+## <a name="catlpreviewctrlimplcatlpreviewctrlimpl"></a><a name="dtor"></a> CAtlPreviewCtrlImpl:: ~ CAtlPreviewCtrlImpl
 
 Destructs 미리 보기 컨트롤 개체입니다.
 
@@ -124,7 +125,7 @@ virtual ~CAtlPreviewCtrlImpl(void);
 
 ### <a name="remarks"></a>설명
 
-## <a name="catlpreviewctrlimplcreate"></a><a name="create"></a>CAtlPreviewCtrlImpl:: Create
+## <a name="catlpreviewctrlimplcreate"></a><a name="create"></a> CAtlPreviewCtrlImpl:: Create
 
 Windows 창을 만들기 위해 풍부한 미리 보기 처리기에서 호출 됩니다.
 
@@ -140,13 +141,13 @@ virtual BOOL Create(HWND hWndParent, const RECT* prc);
 *prc*<br/>
 창의 초기 크기와 위치를 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 TRUE이고, 실패하면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-## <a name="catlpreviewctrlimpldestroy"></a><a name="destroy"></a>CAtlPreviewCtrlImpl::D estroy
+## <a name="catlpreviewctrlimpldestroy"></a><a name="destroy"></a> CAtlPreviewCtrlImpl::D estroy
 
 이 컨트롤을 제거 해야 할 때 풍부한 미리 보기 처리기에서 호출 됩니다.
 
@@ -156,7 +157,7 @@ virtual void Destroy();
 
 ### <a name="remarks"></a>설명
 
-## <a name="catlpreviewctrlimpldopaint"></a><a name="dopaint"></a>CAtlPreviewCtrlImpl::D oPaint
+## <a name="catlpreviewctrlimpldopaint"></a><a name="dopaint"></a> CAtlPreviewCtrlImpl::D oPaint
 
 미리 보기를 렌더링 하기 위해 프레임 워크에서 호출 됩니다.
 
@@ -171,7 +172,7 @@ virtual void DoPaint(HDC hdc);
 
 ### <a name="remarks"></a>설명
 
-## <a name="catlpreviewctrlimplfocus"></a><a name="focus"></a>CAtlPreviewCtrlImpl:: Focus
+## <a name="catlpreviewctrlimplfocus"></a><a name="focus"></a> CAtlPreviewCtrlImpl:: Focus
 
 이 컨트롤에 입력 포커스를 설정합니다.
 
@@ -181,7 +182,7 @@ virtual void Focus();
 
 ### <a name="remarks"></a>설명
 
-## <a name="catlpreviewctrlimplm_clrback"></a><a name="m_clrback"></a>CAtlPreviewCtrlImpl:: m_clrBack
+## <a name="catlpreviewctrlimplm_clrback"></a><a name="m_clrback"></a> CAtlPreviewCtrlImpl:: m_clrBack
 
 미리 보기 창의 배경색입니다.
 
@@ -191,7 +192,7 @@ COLORREF m_clrBack;
 
 ### <a name="remarks"></a>설명
 
-## <a name="catlpreviewctrlimplm_clrtext"></a><a name="m_clrtext"></a>CAtlPreviewCtrlImpl:: m_clrText
+## <a name="catlpreviewctrlimplm_clrtext"></a><a name="m_clrtext"></a> CAtlPreviewCtrlImpl:: m_clrText
 
 미리 보기 창의 텍스트 색입니다.
 
@@ -201,7 +202,7 @@ COLORREF m_clrText;
 
 ### <a name="remarks"></a>설명
 
-## <a name="catlpreviewctrlimplm_plf"></a><a name="m_plf"></a>CAtlPreviewCtrlImpl:: m_plf
+## <a name="catlpreviewctrlimplm_plf"></a><a name="m_plf"></a> CAtlPreviewCtrlImpl:: m_plf
 
 미리 보기 창에 텍스트를 표시 하는 데 사용 되는 글꼴입니다.
 
@@ -211,7 +212,7 @@ const LOGFONTW* m_plf;
 
 ### <a name="remarks"></a>설명
 
-## <a name="catlpreviewctrlimplonpaint"></a><a name="onpaint"></a>CAtlPreviewCtrlImpl:: OnPaint
+## <a name="catlpreviewctrlimplonpaint"></a><a name="onpaint"></a> CAtlPreviewCtrlImpl:: OnPaint
 
 WM_PAINT 메시지를 처리 합니다.
 
@@ -237,13 +238,13 @@ WM_PAINT로 설정 합니다.
 *bHandled*<br/>
 이 함수는 반환 될 때 TRUE를 포함 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 항상 0을 반환합니다.
 
 ### <a name="remarks"></a>설명
 
-## <a name="catlpreviewctrlimplredraw"></a><a name="redraw"></a>CAtlPreviewCtrlImpl:: 다시 그리기
+## <a name="catlpreviewctrlimplredraw"></a><a name="redraw"></a> CAtlPreviewCtrlImpl:: 다시 그리기
 
 이 컨트롤에 다시 그리도록 지시 합니다.
 
@@ -253,7 +254,7 @@ virtual void Redraw();
 
 ### <a name="remarks"></a>설명
 
-## <a name="catlpreviewctrlimplsethost"></a><a name="sethost"></a>CAtlPreviewCtrlImpl::SetHost
+## <a name="catlpreviewctrlimplsethost"></a><a name="sethost"></a> CAtlPreviewCtrlImpl::SetHost
 
 이 컨트롤에 대 한 새 부모를 설정 합니다.
 
@@ -268,7 +269,7 @@ virtual void SetHost(HWND hWndParent);
 
 ### <a name="remarks"></a>설명
 
-## <a name="catlpreviewctrlimplsetpreviewvisuals"></a><a name="setpreviewvisuals"></a>CAtlPreviewCtrlImpl::SetPreviewVisuals
+## <a name="catlpreviewctrlimplsetpreviewvisuals"></a><a name="setpreviewvisuals"></a> CAtlPreviewCtrlImpl::SetPreviewVisuals
 
 풍부한 미리 보기 콘텐츠의 시각적 개체를 설정 해야 하는 경우 풍부한 미리 보기 처리기에서 호출 됩니다.
 
@@ -292,7 +293,7 @@ virtual void SetPreviewVisuals(
 
 ### <a name="remarks"></a>설명
 
-## <a name="catlpreviewctrlimplsetrect"></a><a name="setrect"></a>CAtlPreviewCtrlImpl:: SetRect
+## <a name="catlpreviewctrlimplsetrect"></a><a name="setrect"></a> CAtlPreviewCtrlImpl:: SetRect
 
 이 컨트롤에 대 한 새 경계 사각형을 설정 합니다.
 

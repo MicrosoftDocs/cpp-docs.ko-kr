@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: SRWLockSharedTraits 구조'
 title: SRWLockSharedTraits 구조체
 ms.date: 09/27/2018
 ms.topic: reference
@@ -11,16 +12,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HandleTraits::SRWLockSharedTraits::GetInvalidValue method
 - Microsoft::WRL::Wrappers::HandleTraits::SRWLockSharedTraits::Unlock method
 ms.assetid: 709cb51e-d70c-40b6-bdb4-d8eacf3af495
-ms.openlocfilehash: 0dc43d4b9c16145ed7a5abe03cddb598c59b1e94
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 2cdfbd584adeffc9dedd8504d9183d6c5d4c1a95
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81374295"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135124"
 ---
 # <a name="srwlocksharedtraits-structure"></a>SRWLockSharedTraits 구조체
 
-공유 잠금 모드에서 `SRWLock` 클래스의 일반적인 특성을 설명합니다.
+공유 잠금 모드의 클래스에 대 한 일반적인 특성을 설명 `SRWLock` 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -32,16 +33,16 @@ struct SRWLockSharedTraits;
 
 ### <a name="public-typedefs"></a>공용 Typedefs
 
-속성   | Description
+Name   | 설명
 ------ | --------------------------------------------------------------------------
-`Type` | [SRWLOCK](srwlock-class.md) 클래스에 대한 포인터의 동의어입니다.
+`Type` | [Srwlock](srwlock-class.md) 클래스에 대 한 포인터의 동의어입니다.
 
 ### <a name="public-methods"></a>Public 메서드
 
-속성                                                     | Description
+이름                                                     | 설명
 -------------------------------------------------------- | -----------------------------------------------------------------
-[SRWLock공유 해협::GetInvalid값](#getinvalidvalue) | 항상 유효하지 않은 `SRWLockSharedTraits` 개체를 검색합니다.
-[SRWLock공유 해협::잠금 해제](#unlock)                   | 지정된 개체의 단독 `SRWLock` 컨트롤을 해제합니다.
+[SRWLockSharedTraits:: GetInvalidValue](#getinvalidvalue) | `SRWLockSharedTraits`항상 유효 하지 않은 개체를 검색 합니다.
+[SRWLockSharedTraits:: Unlock](#unlock)                   | 지정 된 개체의 단독 제어를 해제 `SRWLock` 합니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -49,25 +50,25 @@ struct SRWLockSharedTraits;
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** 코어래퍼.h
+**헤더:** corewrappers.h
 
-**네임스페이스:** 마이크로소프트::WRL::래퍼::핸들 트레이츠
+**네임 스페이스:** Microsoft:: WRL:: 래퍼:: 핸드
 
-## <a name="srwlocksharedtraitsgetinvalidvalue"></a><a name="getinvalidvalue"></a>SRWLock공유 해협::GetInvalid값
+## <a name="srwlocksharedtraitsgetinvalidvalue"></a><a name="getinvalidvalue"></a> SRWLockSharedTraits:: GetInvalidValue
 
-항상 유효하지 않은 `SRWLockSharedTraits` 개체를 검색합니다.
+`SRWLockSharedTraits`항상 유효 하지 않은 개체를 검색 합니다.
 
 ```cpp
 inline static Type GetInvalidValue();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-개체에 대한 `SRWLockSharedTraits` 핸들입니다.
+개체에 대 한 핸들 `SRWLockSharedTraits` 입니다.
 
-## <a name="srwlocksharedtraitsunlock"></a><a name="unlock"></a>SRWLock공유 해협::잠금 해제
+## <a name="srwlocksharedtraitsunlock"></a><a name="unlock"></a> SRWLockSharedTraits:: Unlock
 
-지정된 개체의 단독 `SRWLock` 컨트롤을 해제합니다.
+지정 된 개체의 단독 제어를 해제 `SRWLock` 합니다.
 
 ```cpp
 inline static void Unlock(
@@ -77,5 +78,5 @@ inline static void Unlock(
 
 ### <a name="parameters"></a>매개 변수
 
-*스워록*<br/>
-개체에 대한 `SRWLock` 핸들입니다.
+*srwlock*<br/>
+개체에 대 한 핸들 `SRWLock` 입니다.

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: TerminateMap 함수'
 title: TerminateMap 함수
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - TerminateMap function
 ms.assetid: 1c314a61-da5d-49bb-ac44-c34ee3c23b66
-ms.openlocfilehash: 2aa4d6733d2a4e458ff8abff192778d52a4522b2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 919759d0b4b7f67cf3aff83c3e83678860d0badc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233498"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135065"
 ---
 # <a name="terminatemap-function"></a>TerminateMap 함수
 
@@ -32,13 +33,13 @@ inline bool TerminateMap(
 *모듈*<br/>
 [모듈](module-class.md)입니다.
 
-*서버*<br/>
-매개 변수 *모듈로*지정 된 모듈에 있는 클래스 팩터리의 하위 집합 이름입니다.
+*serverName*<br/>
+매개 변수 *모듈로* 지정 된 모듈에 있는 클래스 팩터리의 하위 집합 이름입니다.
 
 *forceTerminate*<br/>
 **`true`** 활성 상태에 관계 없이 클래스 팩터리를 종료 하려면 **`false`** 팩터리가 활성 상태인 경우 클래스 팩터리를 종료 하지 않으려면입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 **`true`** 모든 클래스 팩터리가 종료 되었으면이 고, 그렇지 않으면입니다. 그렇지 않으면 **`false`** 입니다.
 

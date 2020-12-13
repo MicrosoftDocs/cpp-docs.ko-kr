@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: atomic_flag 구조체'
 title: atomic_flag 구조체
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 - atomic/std::atomic_flag::clear
 - atomic/std::atomic_flag::test_and_set
 ms.assetid: 17f0c2f5-fd39-4a44-873a-b569720a670e
-ms.openlocfilehash: ff60e05c7d14104e164e8251a9146f8b0d0dcde3
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f78e3fa8521d230cc119dd7c464653cb6e123733
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87203925"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97149502"
 ---
 # <a name="atomic_flag-structure"></a>atomic_flag 구조체
 
@@ -29,7 +30,7 @@ struct atomic_flag;
 
 |이름|설명|
 |----------|-----------------|
-|[해제](#clear)|저장 된 플래그를로 설정 합니다 **`false`** .|
+|[clear](#clear)|저장 된 플래그를로 설정 합니다 **`false`** .|
 |[test_and_set](#test_and_set)|저장 된 플래그를로 설정 하 **`true`** 고 초기 플래그 값을 반환 합니다.|
 
 ## <a name="remarks"></a>설명
@@ -42,7 +43,7 @@ struct atomic_flag;
 
 **네임스페이스:** std
 
-## <a name="atomic_flagclear"></a><a name="clear"></a>atomic_flag:: clear
+## <a name="atomic_flagclear"></a><a name="clear"></a> atomic_flag:: clear
 
 지정 된 **`bool`** **`*this`** **`false`** [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 제약 조건 내에서에 저장 된 플래그를로 설정 합니다.
 
@@ -56,7 +57,7 @@ void atomic_flag::clear(memory_order Order = memory_order_seq_cst) noexcept;
 *주문을*\
 [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
-## <a name="atomic_flagtest_and_set"></a><a name="test_and_set"></a>atomic_flag:: test_and_set
+## <a name="atomic_flagtest_and_set"></a><a name="test_and_set"></a> atomic_flag:: test_and_set
 
 지정 된 **`bool`** **`*this`** **`true`** [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 제약 조건 내에서에 저장 된 플래그를로 설정 합니다.
 
@@ -70,7 +71,7 @@ bool atomic_flag::test_and_set(memory_order Order = memory_order_seq_cst) noexce
 *주문을*\
 [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 에 저장 된 플래그의 초기 값입니다 **`*this`** .
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3347'
 title: 컴파일러 오류 C3347
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3347
 ms.assetid: e939ad29-0b78-4681-9618-9bdae5675cee
-ms.openlocfilehash: 105c34fff8b118682ae736683fae5f64a7323c81
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: b7703865af7b081c362c110e07c2b1d3d8471129
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504833"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97144562"
 ---
 # <a name="compiler-error-c3347"></a>컴파일러 오류 C3347
 

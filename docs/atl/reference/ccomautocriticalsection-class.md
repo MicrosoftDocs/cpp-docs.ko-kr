@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CComAutoCriticalSection 클래스'
 title: CComAutoCriticalSection 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,16 +9,16 @@ f1_keywords:
 helpviewer_keywords:
 - CComAutoCriticalSection class
 ms.assetid: 491a9d90-3398-4f90-88f5-fd2172a46b30
-ms.openlocfilehash: 26b43fa4adc40993a44318c67be990c781b5cdf6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2441c714b95a3bbefed4a699055d14c6915cffda
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226635"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146967"
 ---
 # <a name="ccomautocriticalsection-class"></a>CComAutoCriticalSection 클래스
 
-`CComAutoCriticalSection`임계 영역 개체의 소유권을 가져오고 해제 하는 메서드를 제공 합니다.
+`CComAutoCriticalSection` 임계 영역 개체의 소유권을 가져오고 해제 하는 메서드를 제공 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -38,7 +39,7 @@ class CComAutoCriticalSection : public CComCriticalSection
 
 `CComAutoCriticalSection`는 생성자에서 임계영역 개체를 자동으로 초기화 하는 것을 `CComAutoCriticalSection`제외하고는 [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md) 클래스와 유사합니다.
 
-일반적으로 `CComAutoCriticalSection` AutoCriticalSection 이름을 통해를 **`typedef`** 사용 [AutoCriticalSection](ccommultithreadmodel-class.md#autocriticalsection)합니다. [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md)를 사용하는 경우 이 이름은 `CComAutoCriticalSection`를 참조합니다.
+일반적으로 `CComAutoCriticalSection` AutoCriticalSection 이름을 통해를 **`typedef`** 사용 [](ccommultithreadmodel-class.md#autocriticalsection)합니다. [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md)를 사용하는 경우 이 이름은 `CComAutoCriticalSection`를 참조합니다.
 
 `Init` `Term` 이 클래스를 사용 하는 경우 [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md) 의 및 메서드를 사용할 수 없습니다.
 
@@ -52,7 +53,7 @@ class CComAutoCriticalSection : public CComCriticalSection
 
 **헤더:**
 
-## <a name="ccomautocriticalsectionccomautocriticalsection"></a><a name="ccomautocriticalsection"></a>CComAutoCriticalSection::CComAutoCriticalSection
+## <a name="ccomautocriticalsectionccomautocriticalsection"></a><a name="ccomautocriticalsection"></a> CComAutoCriticalSection::CComAutoCriticalSection
 
 생성자입니다.
 
@@ -64,7 +65,7 @@ CComAutoCriticalSection();
 
 는 임계 영역 개체를 초기화 하는 Win32 함수 [InitializeCriticalSection](/windows/win32/api/synchapi/nf-synchapi-initializecriticalsection)를 호출 합니다.
 
-## <a name="ccomautocriticalsectionccomautocriticalsection"></a><a name="dtor"></a>CComAutoCriticalSection:: ~ CComAutoCriticalSection
+## <a name="ccomautocriticalsectionccomautocriticalsection"></a><a name="dtor"></a> CComAutoCriticalSection:: ~ CComAutoCriticalSection
 
 소멸자입니다.
 

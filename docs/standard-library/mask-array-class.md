@@ -1,4 +1,5 @@
 ---
+description: Mask_array 클래스에 대해 자세히 알아보세요.
 title: mask_array 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - mask_array class
 ms.assetid: c49bed6a-3000-4f39-bff6-cb9a453acb0b
-ms.openlocfilehash: 12398203d61f2c3ea155b5f6e6e7b118d4a13c75
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: d3eb105c7779ff54ddbec3d68a518dc74d089903
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72689400"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97149359"
 ---
 # <a name="mask_array-class"></a>mask_array 클래스
 
@@ -19,13 +20,13 @@ ms.locfileid: "72689400"
 
 ## <a name="syntax"></a>구문
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
-클래스는 **> \<Type** [valarray](../standard-library/valarray-class.md) 클래스의 `va` 개체에 대 한 참조를 저장 하는 개체를 설명 합니다 .이 개체는 [valarray \<bool](../standard-library/valarray-bool-class.md)클래스의 `ba` 개체와 함께 선택할 요소의 시퀀스를 설명 합니다. `valarray<Type>` 개체에서
+이 클래스는 `va` [](../standard-library/valarray-class.md) **\<Type>** `ba` 개체에서 선택할 요소의 시퀀스를 설명 하는 [ \<bool> valarray](../standard-library/valarray-bool-class.md)클래스의 개체와 함께 valarray 클래스의 개체에 대 한 참조를 저장 하는 개체를 설명 합니다 `valarray<Type>` .
 
-[Va&#91;ba&#93;](../standard-library/valarray-class.md#op_at)형식의 식을 작성 하 여 `mask_array<Type>` 개체를 구성 합니다. Mask_array 클래스의 멤버 함수는 선택한 요소의 시퀀스에만 영향을 주는 점을 제외 하 고 `valarray<Type>`에 대해 정의 된 해당 함수 서명 처럼 동작 합니다.
+`mask_array<Type>` [Va&#91;ba&#93;](../standard-library/valarray-class.md#op_at)형식의 식을 작성 하 여 개체를 생성 합니다. 그런 다음 클래스 mask_array의 멤버 함수는 `valarray<Type>` 선택한 요소의 시퀀스에만 영향을 주는 점을 제외 하 고에 대해 정의 된 해당 함수 서명 처럼 동작 합니다.
 
-시퀀스는 최대 `ba.size` 요소로 구성 됩니다. 요소 *J* 는 **ba**[ *J*]가 true인 경우에만 포함됩니다. 따라서 `ba`에 true 요소가 있으므로 시퀀스에 요소가 많이 있습니다. @No__t_0 `ba`에서 가장 낮은 true 요소의 인덱스인 경우 **va**[`I`]는 선택한 시퀀스의 요소 0입니다.
+시퀀스는 대부분의 요소로 구성 됩니다 `ba.size` . 요소 *J* 는 **ba**[ *J*]가 true 인 경우에만 포함 됩니다. 따라서에 참인 요소가 있으므로 시퀀스에 요소가 많이 있습니다 `ba` . `I`이에서 가장 낮은 true 요소의 인덱스인 경우 `ba` **va**[ `I` ]는 선택한 시퀀스의 요소 0입니다.
 
 ## <a name="example"></a>예제
 
@@ -61,7 +62,7 @@ int main( )
 }
 ```
 
-### <a name="output"></a>Output
+### <a name="output"></a>출력
 
 ```Output
 The initial operand valarray is:  (0 -1 2 -1 4 -1 6 -1 8 -1).
@@ -70,10 +71,10 @@ The modified operand valarray is:  (0 -1 2 -1 10 -1 10 -1 10 -1).
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<valarray>
+**헤더:**\<valarray>
 
 **네임스페이스:** std
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[C + + 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)
