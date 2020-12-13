@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3291'
 title: 컴파일러 오류 C3291
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3291
 ms.assetid: ed2e9f89-8dbc-4387-bc26-cc955e840858
-ms.openlocfilehash: 4e8bc312bc10fb5ddc82d811f686004f08603d06
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4fcaa080167ae8ef63ffd7b1b180a74e29ac6411
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228871"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97144744"
 ---
 # <a name="compiler-error-c3291"></a>컴파일러 오류 C3291
 

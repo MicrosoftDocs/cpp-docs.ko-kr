@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CSecurityAttributes 클래스'
 title: CSecurityAttributes 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,19 +10,19 @@ f1_keywords:
 helpviewer_keywords:
 - CSecurityAttributes class
 ms.assetid: a094880c-52e1-4a28-97ff-752d5869908e
-ms.openlocfilehash: e0ac813008a028bb233adfb4c7409a0ad62a6b78
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 8cb772e574aef4ad941feef1cb838fb91d937576
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81746498"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97140818"
 ---
 # <a name="csecurityattributes-class"></a>CSecurityAttributes 클래스
 
-이 클래스는 보안 특성 구조에 대한 씬 래퍼입니다.
+이 클래스는 보안 특성 구조에 대 한 씬 래퍼입니다.
 
 > [!IMPORTANT]
-> 이 클래스와 해당 멤버는 Windows 런타임에서 실행되는 응용 프로그램에서 사용할 수 없습니다.
+> 이 클래스와 해당 멤버는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,21 +34,21 @@ class CSecurityAttributes : public SECURITY_ATTRIBUTES
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[C보안특성::C보안특성](#csecurityattributes)|생성자입니다.|
+|[CSecurityAttributes:: CSecurityAttributes](#csecurityattributes)|생성자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[C보안 특성::설정](#set)|`CSecurityAttributes` 이 메서드를 호출하여 개체의 특성을 설정합니다.|
+|[CSecurityAttributes:: Set](#set)|개체의 특성을 설정 하려면이 메서드를 호출 `CSecurityAttributes` 합니다.|
 
 ## <a name="remarks"></a>설명
 
-구조체에는 `SECURITY_ATTRIBUTES` 개체 생성에 사용되는 [보안 설명자가](/windows/win32/api/winnt/ns-winnt-security_descriptor) 포함되어 있으며 이 구조를 지정하여 검색된 핸들이 상속 가능한지 여부를 지정합니다.
+구조체에는 `SECURITY_ATTRIBUTES` 개체를 만드는 데 사용 되는 [보안 설명자](/windows/win32/api/winnt/ns-winnt-security_descriptor) 가 포함 되어 있으며이 구조를 지정 하 여 검색 된 핸들이 상속 가능한 지 여부를 지정 합니다.
 
-Windows의 액세스 제어 모델에 대한 자세한 내용은 Windows SDK의 [액세스 제어를](/windows/win32/SecAuthZ/access-control) 참조하십시오.
+Windows의 액세스 제어 모델에 대 한 소개는 Windows SDK [Access Control](/windows/win32/SecAuthZ/access-control) 를 참조 하세요.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -57,9 +58,9 @@ Windows의 액세스 제어 모델에 대한 자세한 내용은 Windows SDK의 
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** atlsecurity.h
+**헤더:.**
 
-## <a name="csecurityattributescsecurityattributes"></a><a name="csecurityattributes"></a>C보안특성::C보안특성
+## <a name="csecurityattributescsecurityattributes"></a><a name="csecurityattributes"></a> CSecurityAttributes:: CSecurityAttributes
 
 생성자입니다.
 
@@ -70,15 +71,15 @@ explicit CSecurityAttributes(const CSecurityDesc& rSecurityDescriptor, bool bInh
 
 ### <a name="parameters"></a>매개 변수
 
-*r보안 설명자*<br/>
+*rSecurityDescriptor*<br/>
 보안 설명자에 대한 참조입니다.
 
-*b상속핸들*<br/>
+*bInheritsHandle*<br/>
 새 프로세스가 만들어질 때 반환된 핸들의 상속 여부를 지정합니다. 이 멤버가 true이면 새 프로세스가 핸들을 상속합니다.
 
-## <a name="csecurityattributesset"></a><a name="set"></a>C보안 특성::설정
+## <a name="csecurityattributesset"></a><a name="set"></a> CSecurityAttributes:: Set
 
-`CSecurityAttributes` 이 메서드를 호출하여 개체의 특성을 설정합니다.
+개체의 특성을 설정 하려면이 메서드를 호출 `CSecurityAttributes` 합니다.
 
 ```cpp
 void Set(const CSecurityDesc& rSecurityDescriptor, bool bInheritHandle = false) throw(...);
@@ -86,20 +87,20 @@ void Set(const CSecurityDesc& rSecurityDescriptor, bool bInheritHandle = false) 
 
 ### <a name="parameters"></a>매개 변수
 
-*r보안 설명자*<br/>
+*rSecurityDescriptor*<br/>
 보안 설명자에 대한 참조입니다.
 
-*b상속핸들*<br/>
+*bInheritHandle*<br/>
 새 프로세스가 만들어질 때 반환된 핸들의 상속 여부를 지정합니다. 이 멤버가 true이면 새 프로세스가 핸들을 상속합니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 생성자에서 `CSecurityAttributes` 개체를 초기화하는 데 사용됩니다.
+이 메서드는 생성자에서 개체를 초기화 하는 데 사용 됩니다 `CSecurityAttributes` .
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [보안 샘플](../../overview/visual-cpp-samples.md)<br/>
 [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\))<br/>
 [보안 설명자](/windows/win32/api/winnt/ns-winnt-security_descriptor)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)<br/>
-[보안 글로벌 기능](../../atl/reference/security-global-functions.md)
+[보안 전역 함수](../../atl/reference/security-global-functions.md)

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Windows 데스크톱 마법사'
 title: Windows 데스크톱 마법사
 ms.date: 03/29/2019
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Windows Desktop Wizard
 - Win32 Project Wizard
 ms.assetid: 5d7b3a5e-8461-479a-969a-67b7883725b9
-ms.openlocfilehash: 47984b4c4416bf129efb226381fe778659aa16ca
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: b80a5fb23bd9ce2428bee17b9c4ca6fd9401d1e4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91503516"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135930"
 ---
 # <a name="windows-desktop-wizard"></a>Windows 데스크톱 마법사
 
@@ -53,7 +54,7 @@ Windows 바탕 화면 마법사는 Visual Studio 2017 이상에서 Win32 응용 
 |------------|-----------------|
 |**콘솔 응용 프로그램**|콘솔 애플리케이션을 만듭니다. 또한 Visual C++ [런타임 라이브러리](../c-runtime-library/c-run-time-library-reference.md) 는 및와 같은 표준 i/o 함수를 사용 하 여 콘솔 창에서 출력과 입력을 제공 합니다 `printf_s()` `scanf_s()` . 콘솔 응용 프로그램에는 그래픽 사용자 인터페이스가 없습니다. .Exe 파일로 컴파일되며 명령줄에서 독립 실행형 응용 프로그램으로 실행 될 수 있습니다.<br /><br /> 콘솔 응용 프로그램에 MFC 및 ATL 지원을 추가할 수 있습니다.|
 |**Windows 응용 프로그램**|Win32 프로그램을 만듭니다. Win32 프로그램은 C 또는 c + +로 작성 된 실행 가능 응용 프로그램 (EXE)로, Win32 API에 대 한 호출을 사용 하 여 그래픽 사용자 인터페이스를 만듭니다.<br /><br /> MFC 또는 ATL 지원을 Windows 응용 프로그램에 추가할 수 없습니다.|
-|**동적 연결 라이브러리**|Win32 DLL (동적 연결 라이브러리)을 만듭니다. Win32 DLL은 C 또는 c + +로 작성 된 이진 파일로, MFC 클래스가 아닌 Win32 API에 대 한 호출을 사용 하 고 여러 응용 프로그램에서 동시에 사용할 수 있는 함수 공유 라이브러리 역할을 합니다.<br /><br /> 이 마법사를 사용 하 여 만든 DLL 응용 프로그램에 MFC 또는 ATL 지원을 추가할 수는 없지만 **새 > 프로젝트 > MFC dll**을 선택 하 여 mfc dll을 만들 수 있습니다.|
+|**동적 연결 라이브러리**|Win32 DLL (동적 연결 라이브러리)을 만듭니다. Win32 DLL은 C 또는 c + +로 작성 된 이진 파일로, MFC 클래스가 아닌 Win32 API에 대 한 호출을 사용 하 고 여러 응용 프로그램에서 동시에 사용할 수 있는 함수 공유 라이브러리 역할을 합니다.<br /><br /> 이 마법사를 사용 하 여 만든 DLL 응용 프로그램에 MFC 또는 ATL 지원을 추가할 수는 없지만 **새 > 프로젝트 > MFC dll** 을 선택 하 여 mfc dll을 만들 수 있습니다.|
 |**정적 라이브러리**|정적 라이브러리를 만듭니다. 정적 라이브러리는 실행 파일을 빌드할 때 프로그램에 연결 되는 개체와 해당 함수 및 데이터를 포함 하는 파일입니다. 이 항목에서는 정적 라이브러리에 대 한 시작 파일 및 [프로젝트 속성](../build/reference/property-pages-visual-cpp.md) 을 만드는 방법에 대해 설명 합니다. 정적 라이브러리 파일은 다음과 같은 이점을 제공 합니다.<br /><br />-Win32 정적 라이브러리는 작업 중인 응용 프로그램이 MFC 클래스가 아닌 Win32 API를 호출 하는 경우에 유용 합니다.<br />-연결 프로세스는 나머지 Windows 응용 프로그램이 C + +로 작성 되었는지 여부에 관계 없이 동일 합니다.<br />-정적 라이브러리를 MFC 기반 프로그램 또는 비 MFC 프로그램에 연결할 수 있습니다.|
 
 ## <a name="additional-options"></a>추가 옵션
@@ -83,7 +84,7 @@ Windows 데스크톱 애플리케이션을 만들었으면 [제네릭](../ide/ad
 > [!NOTE]
 > ATL 클래스는 추가할 수 없으며 MFC 클래스는 MFC를 지원하는 Windows 데스크톱 애플리케이션 형식(이전 표 참조)에만 추가할 수 있습니다.
 
-마법사에서 프로젝트용으로 만든 파일은 **솔루션 탐색기**에서 볼 수 있습니다. 마법사에서 프로젝트용으로 만드는 파일에 대 한 자세한 내용은 프로젝트 생성 파일을 참조 하십시오 `ReadMe.txt` . 파일 형식에 대 한 자세한 내용은 [Visual Studio c + + 프로젝트용으로 만들어지는 파일 형식](../build/reference/file-types-created-for-visual-cpp-projects.md)을.
+마법사에서 프로젝트용으로 만든 파일은 **솔루션 탐색기** 에서 볼 수 있습니다. 마법사에서 프로젝트용으로 만드는 파일에 대 한 자세한 내용은 프로젝트 생성 파일을 참조 하십시오 `ReadMe.txt` . 파일 형식에 대 한 자세한 내용은 [Visual Studio c + + 프로젝트용으로 만들어지는 파일 형식](../build/reference/file-types-created-for-visual-cpp-projects.md)을.
 
 ## <a name="see-also"></a>참조
 

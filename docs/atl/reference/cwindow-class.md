@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CWindow 클래스'
 title: CWindow 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -153,12 +154,12 @@ f1_keywords:
 helpviewer_keywords:
 - CWindow class
 ms.assetid: fefa00c8-f053-4bcf-87bc-dc84f5386683
-ms.openlocfilehash: 98bda96ba1d1b81400c4e628f16ad5ebb83a349e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e9fe56f4876fa680258ee5399a49ef573b7582c4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229950"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97140142"
 ---
 # <a name="cwindow-class"></a>CWindow 클래스
 
@@ -177,7 +178,7 @@ class CWindow
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[CWindow:: CWindow](#cwindow)|생성자입니다.|
 
@@ -345,7 +346,7 @@ class CWindow
 
 ## <a name="remarks"></a>설명
 
-`CWindow`ATL에서 창을 조작 하는 기본 기능을 제공 합니다. 대부분의 `CWindow` 메서드는 Win32 API 함수 중 하나를 래핑합니다. 예를 들어 및에 대 한 프로토타입을 비교 합니다 `CWindow::ShowWindow` `ShowWindow` .
+`CWindow` ATL에서 창을 조작 하는 기본 기능을 제공 합니다. 대부분의 `CWindow` 메서드는 Win32 API 함수 중 하나를 래핑합니다. 예를 들어 및에 대 한 프로토타입을 비교 합니다 `CWindow::ShowWindow` `ShowWindow` .
 
 |CWindow 메서드|Win32 함수|
 |--------------------|--------------------|
@@ -356,11 +357,11 @@ class CWindow
 > [!NOTE]
 > 모든 창 관련 Win32 함수는로 래핑되는 것이 아니라 `CWindow` 모든 `CWindow` 메서드가 win32 함수를 래핑하는 것은 아닙니다.
 
-`CWindow::m_hWnd`창을 식별 하는 HWND를 저장 합니다. HWND는 다음과 같은 경우 개체에 연결 됩니다.
+`CWindow::m_hWnd` 창을 식별 하는 HWND를 저장 합니다. HWND는 다음과 같은 경우 개체에 연결 됩니다.
 
 - 의 생성자에서 HWND를 지정 `CWindow` 합니다.
 
-- `CWindow::Attach`를 호출합니다.
+- `CWindow::Attach`을 호출합니다.
 
 - `CWindow` **연산자 =** 를 사용 합니다.
 
@@ -378,7 +379,7 @@ Windows에 대 한 자세한 내용은 Windows SDK의 [windows](/windows/win32/w
 
 **헤더:.**
 
-## <a name="cwindowarrangeiconicwindows"></a><a name="arrangeiconicwindows"></a>CWindow:: ArrangeIconicWindows
+## <a name="cwindowarrangeiconicwindows"></a><a name="arrangeiconicwindows"></a> CWindow:: ArrangeIconicWindows
 
 최소화 된 모든 자식 창을 정렬 합니다.
 
@@ -390,7 +391,7 @@ UINT ArrangeIconicWindows() throw();
 
 Windows SDK에서 [ArrangeIconicWindows](/windows/win32/api/winuser/nf-winuser-arrangeiconicwindows) 을 참조 하세요.
 
-## <a name="cwindowattach"></a><a name="attach"></a>CWindow:: Attach
+## <a name="cwindowattach"></a><a name="attach"></a> CWindow:: Attach
 
 *HWndNew* 로 식별 되는 창을 개체에 연결 합니다 `CWindow` .
 
@@ -407,7 +408,7 @@ void Attach(HWND hWndNew) throw();
 
 [!code-cpp[NVC_ATL_Windowing#1](../../atl/codesnippet/cpp/cwindow-class_1.cpp)]
 
-## <a name="cwindowbeginpaint"></a><a name="beginpaint"></a>CWindow:: BeginPaint
+## <a name="cwindowbeginpaint"></a><a name="beginpaint"></a> CWindow:: BeginPaint
 
 창을 그릴 준비를 합니다.
 
@@ -423,7 +424,7 @@ Windows SDK에서 [Beginpaint](/windows/win32/api/winuser/nf-winuser-beginpaint)
 
 [!code-cpp[NVC_ATL_Windowing#2](../../atl/codesnippet/cpp/cwindow-class_2.cpp)]
 
-## <a name="cwindowbringwindowtotop"></a><a name="bringwindowtotop"></a>CWindow:: BringWindowToTop
+## <a name="cwindowbringwindowtotop"></a><a name="bringwindowtotop"></a> CWindow:: BringWindowToTop
 
 창을 Z 순서의 맨 위로 가져옵니다.
 
@@ -439,7 +440,7 @@ Windows SDK에서 [Bringwindowtotop](/windows/win32/api/winuser/nf-winuser-bring
 
 [!code-cpp[NVC_ATL_Windowing#3](../../atl/codesnippet/cpp/cwindow-class_3.cpp)]
 
-## <a name="cwindowcenterwindow"></a><a name="centerwindow"></a>CWindow:: 가운데 창
+## <a name="cwindowcenterwindow"></a><a name="centerwindow"></a> CWindow:: 가운데 창
 
 지정 된 창에 창을 가운데 맞춤 합니다.
 
@@ -452,7 +453,7 @@ BOOL CenterWindow(HWND hWndCenter = NULL) throw();
 *hWndCenter*<br/>
 진행 가운데에 맞출 창의 핸들입니다. 이 매개 변수가 NULL (기본값) 이면 메서드는 자식 창인 경우 창의 부모 창에 *hWndCenter* 를 설정 합니다. 그렇지 않으면 *hWndCenter* 를 창의 소유자 창으로 설정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 창이 성공적으로 가운데에 있으면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -460,7 +461,7 @@ BOOL CenterWindow(HWND hWndCenter = NULL) throw();
 
 [!code-cpp[NVC_ATL_Windowing#4](../../atl/codesnippet/cpp/cwindow-class_4.cpp)]
 
-## <a name="cwindowchangeclipboardchain"></a><a name="changeclipboardchain"></a>CWindow:: ChangeClipboardChain
+## <a name="cwindowchangeclipboardchain"></a><a name="changeclipboardchain"></a> CWindow:: ChangeClipboardChain
 
 클립보드 뷰어 체인에서 창을 제거 합니다.
 
@@ -472,7 +473,7 @@ BOOL ChangeClipboardChain(HWND hWndNewNext) throw();
 
 Windows SDK에서 [ChangeClipboardChain](/windows/win32/api/winuser/nf-winuser-changeclipboardchain) 을 참조 하세요.
 
-## <a name="cwindowcheckdlgbutton"></a><a name="checkdlgbutton"></a>CWindow:: CheckDlgButton
+## <a name="cwindowcheckdlgbutton"></a><a name="checkdlgbutton"></a> CWindow:: CheckDlgButton
 
 지정 된 단추의 선택 상태를 변경 합니다.
 
@@ -484,7 +485,7 @@ BOOL CheckDlgButton(int nIDButton, UINT nCheck) throw();
 
 Windows SDK에서 [CheckDlgButton](/windows/win32/api/winuser/nf-winuser-checkdlgbutton) 을 참조 하세요.
 
-## <a name="cwindowcheckradiobutton"></a><a name="checkradiobutton"></a>CWindow:: CheckRadioButton
+## <a name="cwindowcheckradiobutton"></a><a name="checkradiobutton"></a> CWindow:: CheckRadioButton
 
 지정 된 라디오 단추를 확인 합니다.
 
@@ -499,7 +500,7 @@ BOOL CheckRadioButton(
 
 Windows SDK에서 [Checkradiobutton](/windows/win32/api/winuser/nf-winuser-checkradiobutton) 을 참조 하세요.
 
-## <a name="cwindowchildwindowfrompoint"></a><a name="childwindowfrompoint"></a>CWindow:: ChildWindowFromPoint
+## <a name="cwindowchildwindowfrompoint"></a><a name="childwindowfrompoint"></a> CWindow:: ChildWindowFromPoint
 
 지정 된 지점을 포함 하는 자식 창을 검색 합니다.
 
@@ -511,7 +512,7 @@ HWND ChildWindowFromPoint(POINT point) const throw();
 
 Windows SDK에서 [Childwindowfrompoint](/windows/win32/api/winuser/nf-winuser-childwindowfrompoint) 를 참조 하세요.
 
-## <a name="cwindowchildwindowfrompointex"></a><a name="childwindowfrompointex"></a>CWindow:: ChildWindowFromPointEx
+## <a name="cwindowchildwindowfrompointex"></a><a name="childwindowfrompointex"></a> CWindow:: ChildWindowFromPointEx
 
 지정 된 지점을 포함 하는 특정 형식의 자식 창을 검색 합니다.
 
@@ -523,7 +524,7 @@ HWND ChildWindowFromPoint(POINT point, UINT uFlags) const throw();
 
 Windows SDK에서 [Childwindowfrompointex](/windows/win32/api/winuser/nf-winuser-childwindowfrompointex) 를 참조 하세요.
 
-## <a name="cwindowclienttoscreen"></a><a name="clienttoscreen"></a>CWindow:: ClientToScreen
+## <a name="cwindowclienttoscreen"></a><a name="clienttoscreen"></a> CWindow:: ClientToScreen
 
 클라이언트 좌표를 화면 좌표로 변환 합니다.
 
@@ -538,7 +539,7 @@ Windows SDK의 [Clienttoscreen](/windows/win32/api/winuser/nf-winuser-clienttosc
 
 이 메서드의 두 번째 버전에서는 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조의 좌표를 변환할 수 있습니다.
 
-## <a name="cwindowcreate"></a><a name="create"></a>CWindow:: Create
+## <a name="cwindowcreate"></a><a name="create"></a> CWindow:: Create
 
 창을 만듭니다.
 
@@ -580,7 +581,7 @@ HWND Create(
 *lpCreateParam*<br/>
 [Createstruct](/windows/win32/api/winuser/ns-winuser-createstructw) 구조체에 포함 된 창 생성 데이터에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 [m_hWnd](#m_hwnd)에서 지정한 새로 만든 창에 대 한 핸들입니다. 그렇지 않으면 NULL입니다.
 
@@ -592,7 +593,7 @@ HWND Create(
 
 **참고** *MenuOrID* 매개 변수에 대 한 값으로 0을 사용 하는 경우 컴파일러 오류를 방지 하려면 해당 값을 0u (기본값)로 지정 해야 합니다.
 
-## <a name="cwindowcreatecaret"></a><a name="createcaret"></a>CWindow:: CreateCaret
+## <a name="cwindowcreatecaret"></a><a name="createcaret"></a> CWindow:: CreateCaret
 
 시스템 캐럿에 대 한 새 셰이프를 만듭니다.
 
@@ -604,7 +605,7 @@ BOOL CreateCaret(HBITMAP pBitmap) throw();
 
 Windows SDK에서 [CreateCaret](/windows/win32/api/winuser/nf-winuser-createcaret) 을 참조 하세요.
 
-## <a name="cwindowcreategraycaret"></a><a name="creategraycaret"></a>CWindow:: CreateGrayCaret
+## <a name="cwindowcreategraycaret"></a><a name="creategraycaret"></a> CWindow:: CreateGrayCaret
 
 시스템 캐럿에 대 한 회색 사각형을 만듭니다.
 
@@ -618,7 +619,7 @@ Windows SDK에서 [CreateCaret](/windows/win32/api/winuser/nf-winuser-createcare
 
 비트맵 핸들 매개 변수에 대 한 HBITMAP () 1을 Win32 함수로 전달 합니다.
 
-## <a name="cwindowcreatesolidcaret"></a><a name="createsolidcaret"></a>CWindow:: CreateSolidCaret
+## <a name="cwindowcreatesolidcaret"></a><a name="createsolidcaret"></a> CWindow:: CreateSolidCaret
 
 시스템 캐럿의 실선 사각형을 만듭니다.
 
@@ -632,7 +633,7 @@ Windows SDK에서 [CreateCaret](/windows/win32/api/winuser/nf-winuser-createcare
 
 비트맵 핸들 매개 변수의 경우 Win32 함수로 (HBITMAP) 0을 전달 합니다.
 
-## <a name="cwindowcwindow"></a><a name="cwindow"></a>CWindow:: CWindow
+## <a name="cwindowcwindow"></a><a name="cwindow"></a> CWindow:: CWindow
 
 생성자입니다.
 
@@ -647,12 +648,12 @@ CWindow(HWND hWnd = NULL) throw();
 
 ### <a name="remarks"></a>설명
 
-기본적으로 NULL 인 *hWnd*로 [m_hWnd](#m_hwnd) 멤버를 초기화 합니다.
+기본적으로 NULL 인 *hWnd* 로 [m_hWnd](#m_hwnd) 멤버를 초기화 합니다.
 
 > [!NOTE]
-> `CWindow::CWindow`창을 만들지 않습니다. [CWindowImpl](../../atl/reference/cwindowimpl-class.md), [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md)및 [cdialogimpl](../../atl/reference/cdialogimpl-class.md) 모두에서 파생 되는 클래스는 `CWindow` 창 또는 대화 상자를 만들 수 있는 메서드를 제공 하며,이를에 할당 `CWindow::m_hWnd` 합니다. 또한 [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) Win32 함수를 사용할 수 있습니다.
+> `CWindow::CWindow` 창을 만들지 않습니다. [CWindowImpl](../../atl/reference/cwindowimpl-class.md), [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md)및 [cdialogimpl](../../atl/reference/cdialogimpl-class.md) 모두에서 파생 되는 클래스는 `CWindow` 창 또는 대화 상자를 만들 수 있는 메서드를 제공 하며,이를에 할당 `CWindow::m_hWnd` 합니다. 또한 [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) Win32 함수를 사용할 수 있습니다.
 
-## <a name="cwindowdeferwindowpos"></a><a name="deferwindowpos"></a>CWindow::D eferWindowPos
+## <a name="cwindowdeferwindowpos"></a><a name="deferwindowpos"></a> CWindow::D eferWindowPos
 
 지정 된 창에 대 한 지정 된 다중 창 위치 구조를 업데이트 합니다.
 
@@ -671,7 +672,7 @@ HDWP DeferWindowPos(
 
 Windows SDK에서 [DeferWindowPos](/windows/win32/api/winuser/nf-winuser-deferwindowpos) 을 참조 하세요.
 
-## <a name="cwindowdestroywindow"></a><a name="destroywindow"></a>CWindow::D estroyWindow
+## <a name="cwindowdestroywindow"></a><a name="destroywindow"></a> CWindow::D estroyWindow
 
 개체와 연결 된 창을 소멸 `CWindow` 하 고 [M_HWND](#m_hwnd) 를 NULL로 설정 합니다.
 
@@ -689,7 +690,7 @@ Windows SDK에서 [DestroyWindow](/windows/win32/api/winuser/nf-winuser-destroyw
 
 [!code-cpp[NVC_ATL_Windowing#5](../../atl/codesnippet/cpp/cwindow-class_5.cpp)]
 
-## <a name="cwindowdetach"></a><a name="detach"></a>CWindow::D etach
+## <a name="cwindowdetach"></a><a name="detach"></a> CWindow::D etach
 
 개체에서 [m_hWnd](#m_hwnd) 를 분리 하 `CWindow` 고 `m_hWnd` 를 NULL로 설정 합니다.
 
@@ -697,7 +698,7 @@ Windows SDK에서 [DestroyWindow](/windows/win32/api/winuser/nf-winuser-destroyw
 HWND Detach() throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 개체와 연결 된 HWND `CWindow` 입니다.
 
@@ -705,7 +706,7 @@ HWND Detach() throw();
 
 [!code-cpp[NVC_ATL_Windowing#6](../../atl/codesnippet/cpp/cwindow-class_6.cpp)]
 
-## <a name="cwindowdlgdirlist"></a><a name="dlgdirlist"></a>CWindow::D lgDirList
+## <a name="cwindowdlgdirlist"></a><a name="dlgdirlist"></a> CWindow::D lgDirList
 
 지정 된 경로 또는 파일 이름과 일치 하는 모든 파일의 이름으로 목록 상자를 채웁니다.
 
@@ -721,7 +722,7 @@ int DlgDirList(
 
 Windows SDK에서 [DlgDirList](/windows/win32/api/winuser/nf-winuser-dlgdirlistw) 을 참조 하세요.
 
-## <a name="cwindowdlgdirlistcombobox"></a><a name="dlgdirlistcombobox"></a>CWindow::D lgDirListComboBox
+## <a name="cwindowdlgdirlistcombobox"></a><a name="dlgdirlistcombobox"></a> CWindow::D lgDirListComboBox
 
 지정 된 경로 또는 파일 이름과 일치 하는 모든 파일의 이름으로 콤보 상자를 채웁니다.
 
@@ -737,7 +738,7 @@ int DlgDirListComboBox(
 
 Windows SDK에서 [DlgDirListComboBox](/windows/win32/api/winuser/nf-winuser-dlgdirlistcomboboxw) 을 참조 하세요.
 
-## <a name="cwindowdlgdirselect"></a><a name="dlgdirselect"></a>CWindow::D lgDirSelect
+## <a name="cwindowdlgdirselect"></a><a name="dlgdirselect"></a> CWindow::D lgDirSelect
 
 목록 상자에서 현재 선택 영역을 검색합니다.
 
@@ -752,7 +753,7 @@ BOOL DlgDirSelect(
 
 Windows SDK에서 [DlgDirSelectEx](/windows/win32/api/winuser/nf-winuser-dlgdirselectexw) 을 참조 하세요.
 
-## <a name="cwindowdlgdirselectcombobox"></a><a name="dlgdirselectcombobox"></a>CWindow::D lgDirSelectComboBox
+## <a name="cwindowdlgdirselectcombobox"></a><a name="dlgdirselectcombobox"></a> CWindow::D lgDirSelectComboBox
 
 콤보 상자에서 현재 선택 영역을 검색 합니다.
 
@@ -767,7 +768,7 @@ BOOL DlgDirSelectComboBox(
 
 Windows SDK에서 [DlgDirSelectComboBoxEx](/windows/win32/api/winuser/nf-winuser-dlgdirselectcomboboxexw) 을 참조 하세요.
 
-## <a name="cwindowdragacceptfiles"></a><a name="dragacceptfiles"></a>CWindow::D ragAcceptFiles
+## <a name="cwindowdragacceptfiles"></a><a name="dragacceptfiles"></a> CWindow::D ragAcceptFiles
 
 창에서 끌어서 놓은 파일을 허용 하는지 여부를 등록 합니다.
 
@@ -779,7 +780,7 @@ void DragAcceptFiles(BOOL bAccept = TRUE);
 
 Windows SDK에서 [Dragacceptfiles](/windows/win32/api/shellapi/nf-shellapi-dragacceptfiles) 를 참조 하세요.
 
-## <a name="cwindowdrawmenubar"></a><a name="drawmenubar"></a>CWindow::D rawMenuBar
+## <a name="cwindowdrawmenubar"></a><a name="drawmenubar"></a> CWindow::D rawMenuBar
 
 창의 메뉴 모음을 다시 그립니다.
 
@@ -791,7 +792,7 @@ BOOL DrawMenuBar() throw();
 
 Windows SDK의 [Drawmenubar 모음](/windows/win32/api/winuser/nf-winuser-drawmenubar) 을 참조 하세요.
 
-## <a name="cwindowenablescrollbar"></a><a name="enablescrollbar"></a>CWindow:: EnableScrollBar
+## <a name="cwindowenablescrollbar"></a><a name="enablescrollbar"></a> CWindow:: EnableScrollBar
 
 스크롤 막대 화살표를 사용 하거나 사용 하지 않도록 설정 합니다.
 
@@ -803,7 +804,7 @@ BOOL EnableScrollBar(UINT uSBFlags, UINT uArrowFlags = ESB_ENABLE_BOTH) throw();
 
 Windows SDK에서 [EnableScrollBar](/windows/win32/api/winuser/nf-winuser-enablescrollbar) 을 참조 하세요.
 
-## <a name="cwindowenablewindow"></a><a name="enablewindow"></a>CWindow:: EnableWindow
+## <a name="cwindowenablewindow"></a><a name="enablewindow"></a> CWindow:: EnableWindow
 
 입력을 사용 하거나 사용 하지 않도록 설정 합니다.
 
@@ -819,7 +820,7 @@ Windows SDK에서 [Enablewindow](/windows/win32/api/winuser/nf-winuser-enablewin
 
 [!code-cpp[NVC_ATL_Windowing#7](../../atl/codesnippet/cpp/cwindow-class_7.cpp)]
 
-## <a name="cwindowendpaint"></a><a name="endpaint"></a>CWindow:: EndPaint
+## <a name="cwindowendpaint"></a><a name="endpaint"></a> CWindow:: EndPaint
 
 그리기의 끝을 표시합니다.
 
@@ -835,7 +836,7 @@ Windows SDK에서 [Endpaint](/windows/win32/api/winuser/nf-winuser-endpaint) 를
 
 [!code-cpp[NVC_ATL_Windowing#2](../../atl/codesnippet/cpp/cwindow-class_2.cpp)]
 
-## <a name="cwindowflashwindow"></a><a name="flashwindow"></a>CWindow:: FlashWindow
+## <a name="cwindowflashwindow"></a><a name="flashwindow"></a> CWindow:: FlashWindow
 
 창을 한 번 깜박입니다.
 
@@ -847,7 +848,7 @@ BOOL FlashWindow(BOOL bInvert) throw();
 
 Windows SDK에서 [FlashWindow](/windows/win32/api/winuser/nf-winuser-flashwindow) 을 참조 하세요.
 
-## <a name="cwindowgetclientrect"></a><a name="getclientrect"></a>CWindow:: GetClientRect
+## <a name="cwindowgetclientrect"></a><a name="getclientrect"></a> CWindow:: GetClientRect
 
 클라이언트 영역의 좌표를 검색 합니다.
 
@@ -863,7 +864,7 @@ Windows SDK [Getclientrect](/windows/win32/api/winuser/nf-winuser-getclientrect)
 
 [!code-cpp[NVC_ATL_Windowing#8](../../atl/codesnippet/cpp/cwindow-class_8.cpp)]
 
-## <a name="cwindowgetdc"></a><a name="getdc"></a>CWindow:: GetDC
+## <a name="cwindowgetdc"></a><a name="getdc"></a> CWindow:: GetDC
 
 클라이언트 영역에 대 한 장치 컨텍스트를 검색 합니다.
 
@@ -879,7 +880,7 @@ Windows SDK에서 [GetDC](/windows/win32/api/winuser/nf-winuser-getdc) 을 참�
 
 [!code-cpp[NVC_ATL_Windowing#9](../../atl/codesnippet/cpp/cwindow-class_9.cpp)]
 
-## <a name="cwindowgetdcex"></a><a name="getdcex"></a>CWindow:: GetDCEx
+## <a name="cwindowgetdcex"></a><a name="getdcex"></a> CWindow:: GetDCEx
 
 클라이언트 영역에 대 한 장치 컨텍스트를 검색 하 고 클리핑 옵션을 허용 합니다.
 
@@ -891,7 +892,7 @@ HDC GetDCEx(HRGN hRgnClip, DWORD flags) throw();
 
 Windows SDK의 [Getdcex](/windows/win32/api/winuser/nf-winuser-getdcex) 를 참조 하세요.
 
-## <a name="cwindowgetdescendantwindow"></a><a name="getdescendantwindow"></a>CWindow:: GetDescendantWindow
+## <a name="cwindowgetdescendantwindow"></a><a name="getdescendantwindow"></a> CWindow:: GetDescendantWindow
 
 지정 된 식별자로 지정 된 하위 창을 찾습니다.
 
@@ -904,15 +905,15 @@ HWND GetDescendantWindow(int nID) const throw();
 *nID*<br/>
 진행 검색할 하위 창의 식별자입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 하위 창에 대 한 핸들입니다.
 
 ### <a name="remarks"></a>설명
 
-`GetDescendantWindow`직계 자식인 창이 아니라 자식 창의 전체 트리를 검색 합니다.
+`GetDescendantWindow` 직계 자식인 창이 아니라 자식 창의 전체 트리를 검색 합니다.
 
-## <a name="cwindowgetdlgcontrol"></a><a name="getdlgcontrol"></a>CWindow:: GetDlgControl
+## <a name="cwindowgetdlgcontrol"></a><a name="getdlgcontrol"></a> CWindow:: GetDlgControl
 
 복합 컨트롤이 나 컨트롤 호스팅 대화 상자에서 호스팅하는 ActiveX 컨트롤의 인터페이스에 대 한 포인터를 가져오려면이 함수를 호출 합니다.
 
@@ -934,15 +935,15 @@ HRESULT GetDlgControl(
 *ppCtrl*<br/>
 제한이 인터페이스에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-성공 시 S_OK 또는 모든 유효한 오류 HRESULT를 반환 합니다. 예를 들어 *nID* 로 지정 된 컨트롤을 찾을 수 없는 경우 함수는 E_FAIL을 반환 하 고 컨트롤을 찾을 수 있지만 *iid*에서 지정 된 인터페이스를 지원 하지 않는 경우 E_NOINTERFACE을 반환 합니다.
+성공 시 S_OK 또는 모든 유효한 오류 HRESULT를 반환 합니다. 예를 들어 *nID* 로 지정 된 컨트롤을 찾을 수 없는 경우 함수는 E_FAIL을 반환 하 고 컨트롤을 찾을 수 있지만 *iid* 에서 지정 된 인터페이스를 지원 하지 않는 경우 E_NOINTERFACE을 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
 이 포인터를 사용 하 여 인터페이스에서 메서드를 호출할 수 있습니다.
 
-## <a name="cwindowgetdlgctrlid"></a><a name="getdlgctrlid"></a>CWindow:: GetDlgCtrlID
+## <a name="cwindowgetdlgctrlid"></a><a name="getdlgctrlid"></a> CWindow:: GetDlgCtrlID
 
 창 식별자를 검색 합니다 (자식 창에만 해당).
 
@@ -954,7 +955,7 @@ int GetDlgCtrlID() const throw();
 
 Windows SDK에서 [GetDlgCtrlID](/windows/win32/api/winuser/nf-winuser-getdlgctrlid) 을 참조 하세요.
 
-## <a name="cwindowgetdlghost"></a><a name="getdlghost"></a>CWindow:: GetDlgHost
+## <a name="cwindowgetdlghost"></a><a name="getdlghost"></a> CWindow:: GetDlgHost
 
 ATL 컨트롤 호스팅 컨테이너에 대 한 인터페이스 포인터를 검색 합니다.
 
@@ -976,7 +977,7 @@ HRESULT GetDlgHost(
 *ppHost*<br/>
 제한이 인터페이스에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 *Iid* 로 지정 된 창이 컨트롤 컨테이너이 고 요청 된 인터페이스를 검색할 수 있는 경우 S_OK을 반환 합니다. 창이 컨트롤 컨테이너가 아니거나 요청한 인터페이스를 검색할 수 없는 경우 E_FAIL를 반환 합니다. 지정 된 ID의 창을 찾을 수 없는 경우 반환 값은 HRESULT_FROM_WIN32 (ERROR_CONTROL_ID_NOT_FOUND)와 같습니다.
 
@@ -984,7 +985,7 @@ HRESULT GetDlgHost(
 
 이 포인터를 사용 하 여 인터페이스에서 메서드를 호출할 수 있습니다.
 
-## <a name="cwindowgetdlgitem"></a><a name="getdlgitem"></a>CWindow:: GetDlgItem
+## <a name="cwindowgetdlgitem"></a><a name="getdlgitem"></a> CWindow:: GetDlgItem
 
 지정 된 자식 창을 검색 합니다.
 
@@ -996,7 +997,7 @@ HWND GetDlgItem(int nID) const throw();
 
 Windows SDK에서 [GetDlgItem](/windows/win32/api/winuser/nf-winuser-getdlgitem) 을 참조 하세요.
 
-## <a name="cwindowgetdlgitemint"></a><a name="getdlgitemint"></a>CWindow:: GetDlgItemInt
+## <a name="cwindowgetdlgitemint"></a><a name="getdlgitemint"></a> CWindow:: GetDlgItemInt
 
 컨트롤의 텍스트를 정수로 변환 합니다.
 
@@ -1011,7 +1012,7 @@ UINT GetDlgItemInt(
 
 Windows SDK에서 [GetDlgItemInt](/windows/win32/api/winuser/nf-winuser-getdlgitemint) 을 참조 하세요.
 
-## <a name="cwindowgetdlgitemtext"></a><a name="getdlgitemtext"></a>CWindow:: GetDlgItemText
+## <a name="cwindowgetdlgitemtext"></a><a name="getdlgitemtext"></a> CWindow:: GetDlgItemText
 
 컨트롤의 텍스트를 검색 합니다.
 
@@ -1034,7 +1035,7 @@ Windows SDK에서 [GetDlgItemText](/windows/win32/api/winuser/nf-winuser-getdlgi
 
 이 메서드의 두 번째 버전에서는 컨트롤의 텍스트를 BSTR에 복사할 수 있습니다. 이 버전은 텍스트가 성공적으로 복사 된 경우 TRUE를 반환 합니다. 그렇지 않으면 FALSE입니다.
 
-## <a name="cwindowgetexstyle"></a><a name="getexstyle"></a>CWindow:: GetExStyle
+## <a name="cwindowgetexstyle"></a><a name="getexstyle"></a> CWindow:: GetExStyle
 
 창의 확장 창 스타일을 검색 합니다.
 
@@ -1042,7 +1043,7 @@ Windows SDK에서 [GetDlgItemText](/windows/win32/api/winuser/nf-winuser-getdlgi
 DWORD GetExStyle() const throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 창의 확장 스타일입니다.
 
@@ -1054,7 +1055,7 @@ DWORD GetExStyle() const throw();
 
 [!code-cpp[NVC_ATL_Windowing#10](../../atl/codesnippet/cpp/cwindow-class_10.cpp)]
 
-## <a name="cwindowgetfont"></a><a name="getfont"></a>CWindow:: GetFont
+## <a name="cwindowgetfont"></a><a name="getfont"></a> CWindow:: GetFont
 
 창에 [WM_GETFONT](/windows/win32/winmsg/wm-getfont) 메시지를 보내 창의 현재 글꼴을 검색 합니다.
 
@@ -1062,11 +1063,11 @@ DWORD GetExStyle() const throw();
 HFONT GetFont() const throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 글꼴 핸들입니다.
 
-## <a name="cwindowgethotkey"></a><a name="gethotkey"></a>CWindow:: GetHotKey
+## <a name="cwindowgethotkey"></a><a name="gethotkey"></a> CWindow:: GetHotKey
 
 WM_GETHOTKEY 메시지를 전송 하 여 창과 연결 된 바로 가기 키를 확인 합니다.
 
@@ -1074,11 +1075,11 @@ WM_GETHOTKEY 메시지를 전송 하 여 창과 연결 된 바로 가기 키를 
 DWORD GetHotKey() const throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 창과 연결 된 바로 가기 키의 가상 키 코드 및 한정자입니다. 가능한 한정자 목록은 Windows SDK에서 [WM_GETHOTKEY](/windows/win32/inputdev/wm-gethotkey) 을 참조 하세요. 표준 가상 키 코드의 목록은 Winuser.h를 참조 하세요.
 
-## <a name="cwindowgeticon"></a><a name="geticon"></a>CWindow:: GetIcon
+## <a name="cwindowgeticon"></a><a name="geticon"></a> CWindow:: GetIcon
 
 창의 크거나 작은 아이콘에 대 한 핸들을 검색 합니다.
 
@@ -1091,15 +1092,15 @@ HICON GetIcon(BOOL bBigIcon = TRUE) const;
 *bBigIcon*<br/>
 진행 TRUE (기본값) 이면 메서드가 큼 아이콘을 반환 합니다. 그렇지 않으면 작은 아이콘을 반환 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 아이콘 핸들입니다.
 
 ### <a name="remarks"></a>설명
 
-`GetIcon`창에 [WM_GETICON](/windows/win32/winmsg/wm-geticon) 메시지를 보냅니다.
+`GetIcon` 창에 [WM_GETICON](/windows/win32/winmsg/wm-geticon) 메시지를 보냅니다.
 
-## <a name="cwindowgetlastactivepopup"></a><a name="getlastactivepopup"></a>CWindow:: GetLastActivePopup
+## <a name="cwindowgetlastactivepopup"></a><a name="getlastactivepopup"></a> CWindow:: GetLastActivePopup
 
 가장 최근에 활성화 된 팝업 창을 검색 합니다.
 
@@ -1111,7 +1112,7 @@ HWND GetLastActivePopup() const throw();
 
 Windows SDK에서 [GetLastActivePopup](/windows/win32/api/winuser/nf-winuser-getlastactivepopup) 을 참조 하세요.
 
-## <a name="cwindowgetmenu"></a><a name="getmenu"></a>CWindow:: GetMenu
+## <a name="cwindowgetmenu"></a><a name="getmenu"></a> CWindow:: GetMenu
 
 창의 메뉴를 검색 합니다.
 
@@ -1123,7 +1124,7 @@ HMENU GetMenu() const throw();
 
 Windows SDK의 [Getmenu](/windows/win32/api/winuser/nf-winuser-getmenu) 를 참조 하세요.
 
-## <a name="cwindowgetnextdlggroupitem"></a><a name="getnextdlggroupitem"></a>CWindow:: GetNextDlgGroupItem
+## <a name="cwindowgetnextdlggroupitem"></a><a name="getnextdlggroupitem"></a> CWindow:: GetNextDlgGroupItem
 
 컨트롤 그룹에서 이전 또는 다음 컨트롤을 검색 합니다.
 
@@ -1135,7 +1136,7 @@ HWND GetNextDlgGroupItem(HWND hWndCtl, BOOL bPrevious = FALSE) const throw();
 
 Windows SDK에서 [GetNextDlgGroupItem](/windows/win32/api/winuser/nf-winuser-getnextdlggroupitem) 을 참조 하세요.
 
-## <a name="cwindowgetnextdlgtabitem"></a><a name="getnextdlgtabitem"></a>CWindow:: GetNextDlgTabItem
+## <a name="cwindowgetnextdlgtabitem"></a><a name="getnextdlgtabitem"></a> CWindow:: GetNextDlgTabItem
 
 WS_TABSTOP 스타일이 있는 이전 또는 다음 컨트롤을 검색 합니다.
 
@@ -1147,7 +1148,7 @@ HWND GetNextDlgTabItem(HWND hWndCtl, BOOL bPrevious = FALSE) const throw();
 
 Windows SDK에서 [GetNextDlgTabItem](/windows/win32/api/winuser/nf-winuser-getnextdlgtabitem) 을 참조 하세요.
 
-## <a name="cwindowgetparent"></a><a name="getparent"></a>CWindow:: GetParent
+## <a name="cwindowgetparent"></a><a name="getparent"></a> CWindow:: GetParent
 
 직계 부모 창을 검색 합니다.
 
@@ -1163,7 +1164,7 @@ Windows SDK의 [Getparent](/windows/win32/api/winuser/nf-winuser-getparent) 를 
 
 [!code-cpp[NVC_ATL_Windowing#11](../../atl/codesnippet/cpp/cwindow-class_11.cpp)]
 
-## <a name="cwindowgetscrollinfo"></a><a name="getscrollinfo"></a>CWindow:: GetScrollInfo
+## <a name="cwindowgetscrollinfo"></a><a name="getscrollinfo"></a> CWindow:: GetScrollInfo
 
 스크롤 막대의 매개 변수를 검색 합니다.
 
@@ -1175,7 +1176,7 @@ BOOL GetScrollInfo(int nBar, LPSCROLLINFO lpScrollInfo) throw();
 
 Windows SDK에서 [GetScrollInfo](/windows/win32/api/winuser/nf-winuser-getscrollinfo) 을 참조 하세요.
 
-## <a name="cwindowgetscrollpos"></a><a name="getscrollpos"></a>CWindow:: GetScrollPos
+## <a name="cwindowgetscrollpos"></a><a name="getscrollpos"></a> CWindow:: GetScrollPos
 
 스크롤 상자의 위치를 검색 합니다.
 
@@ -1187,7 +1188,7 @@ int GetScrollPos(int nBar) const throw();
 
 Windows SDK에서 [GetScrollPos](/windows/win32/api/winuser/nf-winuser-getscrollpos) 을 참조 하세요.
 
-## <a name="cwindowgetscrollrange"></a><a name="getscrollrange"></a>CWindow:: GetScrollRange
+## <a name="cwindowgetscrollrange"></a><a name="getscrollrange"></a> CWindow:: GetScrollRange
 
 스크롤 막대 범위를 검색 합니다.
 
@@ -1202,7 +1203,7 @@ BOOL GetScrollRange(
 
 Windows SDK에서 [GetScrollRange](/windows/win32/api/winuser/nf-winuser-getscrollrange) 을 참조 하세요.
 
-## <a name="cwindowgetstyle"></a><a name="getstyle"></a>CWindow:: GetStyle
+## <a name="cwindowgetstyle"></a><a name="getstyle"></a> CWindow:: GetStyle
 
 창의 창 스타일을 검색 합니다.
 
@@ -1210,7 +1211,7 @@ Windows SDK에서 [GetScrollRange](/windows/win32/api/winuser/nf-winuser-getscro
 DWORD GetStyle() const throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 창의 스타일입니다.
 
@@ -1222,7 +1223,7 @@ DWORD GetStyle() const throw();
 
 [!code-cpp[NVC_ATL_Windowing#12](../../atl/codesnippet/cpp/cwindow-class_12.cpp)]
 
-## <a name="cwindowgetsystemmenu"></a><a name="getsystemmenu"></a>CWindow:: GetSystemMenu
+## <a name="cwindowgetsystemmenu"></a><a name="getsystemmenu"></a> CWindow:: GetSystemMenu
 
 수정할 시스템 메뉴의 복사본을 만듭니다.
 
@@ -1234,7 +1235,7 @@ HMENU GetSystemMenu(BOOL bRevert) const throw();
 
 Windows SDK의 [Getsystemmenu](/windows/win32/api/winuser/nf-winuser-getsystemmenu) 를 참조 하세요.
 
-## <a name="cwindowgettoplevelparent"></a><a name="gettoplevelparent"></a>CWindow:: GetTopLevelParent
+## <a name="cwindowgettoplevelparent"></a><a name="gettoplevelparent"></a> CWindow:: GetTopLevelParent
 
 창의 최상위 부모 창을 검색 합니다.
 
@@ -1242,11 +1243,11 @@ Windows SDK의 [Getsystemmenu](/windows/win32/api/winuser/nf-winuser-getsystemme
 HWND GetTopLevelParent() const throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 최상위 부모 창에 대 한 핸들입니다.
 
-## <a name="cwindowgettoplevelwindow"></a><a name="gettoplevelwindow"></a>CWindow:: GetTopLevelWindow
+## <a name="cwindowgettoplevelwindow"></a><a name="gettoplevelwindow"></a> CWindow:: GetTopLevelWindow
 
 창의 최상위 부모 또는 소유자 창을 검색 합니다.
 
@@ -1254,11 +1255,11 @@ HWND GetTopLevelParent() const throw();
 HWND GetTopLevelWindow() const throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 최상위 소유자 창에 대 한 핸들입니다.
 
-## <a name="cwindowgettopwindow"></a><a name="gettopwindow"></a>CWindow:: GetTopWindow
+## <a name="cwindowgettopwindow"></a><a name="gettopwindow"></a> CWindow:: GetTopWindow
 
 최상위 자식 창을 검색 합니다.
 
@@ -1274,7 +1275,7 @@ Windows SDK [Gettopwindow](/windows/win32/api/winuser/nf-winuser-gettopwindow) �
 
 [!code-cpp[NVC_ATL_Windowing#13](../../atl/codesnippet/cpp/cwindow-class_13.cpp)]
 
-## <a name="cwindowgetupdaterect"></a><a name="getupdaterect"></a>CWindow:: GetUpdateRect
+## <a name="cwindowgetupdaterect"></a><a name="getupdaterect"></a> CWindow:: GetUpdateRect
 
 업데이트 영역을 완전히 둘러싸는 가장 작은 사각형의 좌표를 검색 합니다.
 
@@ -1286,7 +1287,7 @@ BOOL GetUpdateRect(LPRECT lpRect, BOOL bErase = FALSE) throw();
 
 Windows SDK에서 [GetUpdateRect](/windows/win32/api/winuser/nf-winuser-getupdaterect) 을 참조 하세요.
 
-## <a name="cwindowgetupdatergn"></a><a name="getupdatergn"></a>CWindow:: GetUpdateRgn
+## <a name="cwindowgetupdatergn"></a><a name="getupdatergn"></a> CWindow:: GetUpdateRgn
 
 업데이트 영역을 검색 하 여 지정 된 영역에 복사 합니다.
 
@@ -1298,7 +1299,7 @@ int GetUpdateRgn(HRGN hRgn, BOOL bErase = FALSE) throw();
 
 Windows SDK에서 [GetUpdateRgn](/windows/win32/api/winuser/nf-winuser-getupdatergn) 을 참조 하세요.
 
-## <a name="cwindowgetwindow"></a><a name="getwindow"></a>CWindow:: GetWindow
+## <a name="cwindowgetwindow"></a><a name="getwindow"></a> CWindow:: GetWindow
 
 지정 된 창을 검색 합니다.
 
@@ -1310,7 +1311,7 @@ HWND GetWindow(UINT nCmd) const throw();
 
 `GetWindow`Windows SDK에서을 참조 하세요.
 
-## <a name="cwindowgetwindowcontexthelpid"></a><a name="getwindowcontexthelpid"></a>CWindow:: GetWindowContextHelpId
+## <a name="cwindowgetwindowcontexthelpid"></a><a name="getwindowcontexthelpid"></a> CWindow:: GetWindowContextHelpId
 
 창의 도움말 컨텍스트 식별자를 검색 합니다.
 
@@ -1322,7 +1323,7 @@ DWORD GetWindowContextHelpId() const throw();
 
 Windows SDK에서 [GetWindowContextHelpId](/windows/win32/api/winuser/nf-winuser-getwindowcontexthelpid) 을 참조 하세요.
 
-## <a name="cwindowgetwindowdc"></a><a name="getwindowdc"></a>CWindow:: GetWindowDC
+## <a name="cwindowgetwindowdc"></a><a name="getwindowdc"></a> CWindow:: GetWindowDC
 
 전체 창의 장치 컨텍스트를 검색 합니다.
 
@@ -1338,7 +1339,7 @@ Windows SDK의 [Getwindowdc](/windows/win32/api/winuser/nf-winuser-getwindowdc) 
 
 [!code-cpp[NVC_ATL_Windowing#14](../../atl/codesnippet/cpp/cwindow-class_14.cpp)]
 
-## <a name="cwindowgetwindowlong"></a><a name="getwindowlong"></a>CWindow:: GetWindowLong
+## <a name="cwindowgetwindowlong"></a><a name="getwindowlong"></a> CWindow:: GetWindowLong
 
 추가 창 메모리의 지정 된 오프셋 위치에서 32 비트 값을 검색 합니다.
 
@@ -1353,7 +1354,7 @@ Windows SDK [Getwindowlong](/windows/win32/api/winuser/nf-winuser-getwindowlongw
 > [!NOTE]
 > 32 비트 및 64 비트 버전의 Windows와 호환 되는 코드를 작성 하려면 [CWindow:: GetWindowLongPtr](#getwindowlongptr)를 사용 합니다.
 
-## <a name="cwindowgetwindowlongptr"></a><a name="getwindowlongptr"></a>CWindow:: GetWindowLongPtr
+## <a name="cwindowgetwindowlongptr"></a><a name="getwindowlongptr"></a> CWindow:: GetWindowLongPtr
 
 지정 된 창에 대 한 정보를 검색 합니다. 여기에는 추가 창 메모리의 지정 된 오프셋 값이 포함 됩니다.
 
@@ -1374,7 +1375,7 @@ Windows SDK에서 [GetWindowLongPtr](/windows/win32/api/winuser/nf-winuser-getwi
 
 32 비트 및 64 비트 버전의 Windows와 호환 되는 코드를 작성 하려면를 사용 `CWindow::GetWindowLongPtr` 합니다.
 
-## <a name="cwindowgetwindowplacement"></a><a name="getwindowplacement"></a>CWindow:: GetWindowPlacement
+## <a name="cwindowgetwindowplacement"></a><a name="getwindowplacement"></a> CWindow:: GetWindowPlacement
 
 표시 상태 및 위치를 검색 합니다.
 
@@ -1386,7 +1387,7 @@ BOOL GetWindowPlacement(WINDOWPLACEMENT FAR* lpwndpl) const throw();
 
 Windows SDK의 [Getwindowplacement](/windows/win32/api/winuser/nf-winuser-getwindowplacement) 를 참조 하세요.
 
-## <a name="cwindowgetwindowprocessid"></a><a name="getwindowprocessid"></a>CWindow:: GetWindowProcessID
+## <a name="cwindowgetwindowprocessid"></a><a name="getwindowprocessid"></a> CWindow:: GetWindowProcessID
 
 창을 만든 프로세스의 식별자를 검색 합니다.
 
@@ -1402,7 +1403,7 @@ Windows SDK [Getwindowthreadprocessid](/windows/win32/api/winuser/nf-winuser-get
 
 [!code-cpp[NVC_ATL_Windowing#15](../../atl/codesnippet/cpp/cwindow-class_15.cpp)]
 
-## <a name="cwindowgetwindowrect"></a><a name="getwindowrect"></a>CWindow:: GetWindowRect
+## <a name="cwindowgetwindowrect"></a><a name="getwindowrect"></a> CWindow:: GetWindowRect
 
 창의 경계 크기를 검색 합니다.
 
@@ -1414,7 +1415,7 @@ BOOL GetWindowRect(LPRECT lpRect) const throw();
 
 Windows SDK [Getwindowrect](/windows/win32/api/winuser/nf-winuser-getwindowrect) 를 참조 하세요.
 
-## <a name="cwindowgetwindowrgn"></a><a name="getwindowrgn"></a>CWindow:: GetWindowRgn
+## <a name="cwindowgetwindowrgn"></a><a name="getwindowrgn"></a> CWindow:: GetWindowRgn
 
 창 영역에 대 한 복사본을 가져옵니다.
 
@@ -1426,7 +1427,7 @@ int GetWindowRgn(HRGN hRgn) throw();
 
 Windows SDK에서 [GetWindowRgn](/windows/win32/api/winuser/nf-winuser-getwindowrgn) 을 참조 하세요.
 
-## <a name="cwindowgetwindowtext"></a><a name="getwindowtext"></a>CWindow:: GetWindowText
+## <a name="cwindowgetwindowtext"></a><a name="getwindowtext"></a> CWindow:: GetWindowText
 
 창의 텍스트를 검색합니다.
 
@@ -1450,7 +1451,7 @@ int GetWindowText(CSimpleString& strText) const;
 *strText*<br/>
 창 텍스트를 저장할 `CString`입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 텍스트가 성공적으로 복사되면 반환 값은 TRUE이고, 그렇지 않으면 반환 값은 FALSE입니다.
 
@@ -1460,7 +1461,7 @@ Windows SDK [Getwindowtext](/windows/win32/api/winuser/nf-winuser-getwindowtextw
 
 이 메서드의 두 번째 버전에서는 BSTR에 텍스트를 저장할 수 있습니다. 세 번째 버전에서는의 기본 클래스 이므로 [CString](../../atl-mfc-shared/reference/cstringt-class.md)에 결과를 저장할 수 있습니다 `CSimpleString` `CString` .
 
-## <a name="cwindowgetwindowtextlength"></a><a name="getwindowtextlength"></a>CWindow:: GetWindowTextLength
+## <a name="cwindowgetwindowtextlength"></a><a name="getwindowtextlength"></a> CWindow:: GetWindowTextLength
 
 창 텍스트의 길이를 검색 합니다.
 
@@ -1472,7 +1473,7 @@ int GetWindowTextLength() const throw();
 
 Windows SDK [Getwindowtextlength](/windows/win32/api/winuser/nf-winuser-getwindowtextlengthw) 를 참조 하세요.
 
-## <a name="cwindowgetwindowthreadid"></a><a name="getwindowthreadid"></a>CWindow:: GetWindowThreadID
+## <a name="cwindowgetwindowthreadid"></a><a name="getwindowthreadid"></a> CWindow:: GetWindowThreadID
 
 지정 된 창을 만든 스레드의 식별자를 검색 합니다.
 
@@ -1488,7 +1489,7 @@ Windows SDK [Getwindowthreadprocessid](/windows/win32/api/winuser/nf-winuser-get
 
 [!code-cpp[NVC_ATL_Windowing#16](../../atl/codesnippet/cpp/cwindow-class_16.cpp)]
 
-## <a name="cwindowgetwindowword"></a><a name="getwindowword"></a>CWindow:: GetWindowWord
+## <a name="cwindowgetwindowword"></a><a name="getwindowword"></a> CWindow:: GetWindowWord
 
 추가 창 메모리의 지정 된 오프셋 위치에서 16 비트 값을 검색 합니다.
 
@@ -1500,7 +1501,7 @@ WORD GetWindowWord(int nIndex) const throw();
 
 Windows SDK [Getwindowlong](/windows/win32/api/winuser/nf-winuser-getwindowlongw) 을 참조 하세요.
 
-## <a name="cwindowgotodlgctrl"></a><a name="gotodlgctrl"></a>CWindow:: GotoDlgCtrl
+## <a name="cwindowgotodlgctrl"></a><a name="gotodlgctrl"></a> CWindow:: GotoDlgCtrl
 
 대화 상자의 컨트롤에 키보드 포커스를 설정 합니다.
 
@@ -1512,7 +1513,7 @@ void GotoDlgCtrl(HWND hWndCtrl) const throw();
 
 Windows SDK [WM_NEXTDLGCTL](/windows/win32/dlgbox/wm-nextdlgctl) 를 참조 하세요.
 
-## <a name="cwindowhidecaret"></a><a name="hidecaret"></a>CWindow:: HideCaret
+## <a name="cwindowhidecaret"></a><a name="hidecaret"></a> CWindow:: HideCaret
 
 시스템 캐럿을 숨깁니다.
 
@@ -1528,7 +1529,7 @@ Windows SDK에서 [HideCaret](/windows/win32/api/winuser/nf-winuser-hidecaret) �
 
 [!code-cpp[NVC_ATL_Windowing#17](../../atl/codesnippet/cpp/cwindow-class_17.cpp)]
 
-## <a name="cwindowhilitemenuitem"></a><a name="hilitemenuitem"></a>CWindow:: HiliteMenuItem
+## <a name="cwindowhilitemenuitem"></a><a name="hilitemenuitem"></a> CWindow:: HiliteMenuItem
 
 최상위 메뉴 항목에서 강조 표시 하거나 제거 합니다.
 
@@ -1543,7 +1544,7 @@ BOOL HiliteMenuItem(
 
 Windows SDK에서 [HiliteMenuItem](/windows/win32/api/winuser/nf-winuser-hilitemenuitem) 을 참조 하세요.
 
-## <a name="cwindowinvalidate"></a><a name="invalidate"></a>CWindow:: 무효화
+## <a name="cwindowinvalidate"></a><a name="invalidate"></a> CWindow:: 무효화
 
 전체 클라이언트 영역을 무효화합니다.
 
@@ -1561,7 +1562,7 @@ Windows SDK에서 [InvalidateRect](/windows/win32/api/winuser/nf-winuser-invalid
 
 [!code-cpp[NVC_ATL_Windowing#18](../../atl/codesnippet/cpp/cwindow-class_18.cpp)]
 
-## <a name="cwindowinvalidaterect"></a><a name="invalidaterect"></a>CWindow:: InvalidateRect
+## <a name="cwindowinvalidaterect"></a><a name="invalidaterect"></a> CWindow:: InvalidateRect
 
 지정 된 사각형 내에서 클라이언트 영역을 무효화 합니다.
 
@@ -1573,7 +1574,7 @@ BOOL InvalidateRect(LPCRECT lpRect, BOOL bErase = TRUE) throw();
 
 Windows SDK에서 [InvalidateRect](/windows/win32/api/winuser/nf-winuser-invalidaterect) 을 참조 하세요.
 
-## <a name="cwindowinvalidatergn"></a><a name="invalidatergn"></a>CWindow:: InvalidateRgn
+## <a name="cwindowinvalidatergn"></a><a name="invalidatergn"></a> CWindow:: InvalidateRgn
 
 지정 된 영역 내에서 클라이언트 영역을 무효화 합니다.
 
@@ -1589,7 +1590,7 @@ Windows SDK에서 [InvalidateRgn](/windows/win32/api/winuser/nf-winuser-invalida
 
 는 **`void`** 반환 형식을 지정 하는 반면 `InvalidateRgn` Win32 함수는 항상 TRUE를 반환 합니다.
 
-## <a name="cwindowischild"></a><a name="ischild"></a>CWindow:: IsChild
+## <a name="cwindowischild"></a><a name="ischild"></a> CWindow:: IsChild
 
 지정 된 창이 자식 창 인지 여부를 확인 합니다.
 
@@ -1601,7 +1602,7 @@ BOOL IsChild(const HWND hWnd) const throw();
 
 Windows SDK [Ischild](/windows/win32/api/winuser/nf-winuser-ischild) 를 참조 하십시오.
 
-## <a name="cwindowisdialogmessage"></a><a name="isdialogmessage"></a>CWindow:: IsDialogMessage
+## <a name="cwindowisdialogmessage"></a><a name="isdialogmessage"></a> CWindow:: IsDialogMessage
 
 지정 된 대화 상자에 대해 메시지를 사용할 것인지 여부를 결정 합니다.
 
@@ -1613,7 +1614,7 @@ BOOL IsDialogMessage(LPMSG lpMsg) throw();
 
 Windows SDK에서 [IsDialogMessage](/windows/win32/api/winuser/nf-winuser-isdialogmessagew) 을 참조 하세요.
 
-## <a name="cwindowisdlgbuttonchecked"></a><a name="isdlgbuttonchecked"></a>CWindow:: IsDlgButtonChecked
+## <a name="cwindowisdlgbuttonchecked"></a><a name="isdlgbuttonchecked"></a> CWindow:: IsDlgButtonChecked
 
 단추의 확인 상태를 결정 합니다.
 
@@ -1625,7 +1626,7 @@ UINT IsDlgButtonChecked(int nIDButton) const throw();
 
 Windows SDK에서 [IsDlgButtonChecked](/windows/win32/api/winuser/nf-winuser-isdlgbuttonchecked) 을 참조 하세요.
 
-## <a name="cwindowisiconic"></a><a name="isiconic"></a>CWindow:: IsIconic
+## <a name="cwindowisiconic"></a><a name="isiconic"></a> CWindow:: IsIconic
 
 창이 최소화 되었는지 여부를 확인 합니다.
 
@@ -1641,7 +1642,7 @@ Windows SDK에서 [IsIconic](/windows/win32/api/winuser/nf-winuser-isiconic) 을
 
 [!code-cpp[NVC_ATL_Windowing#19](../../atl/codesnippet/cpp/cwindow-class_19.cpp)]
 
-## <a name="cwindowisparentdialog"></a><a name="isparentdialog"></a>CWindow:: IsParentDialog
+## <a name="cwindowisparentdialog"></a><a name="isparentdialog"></a> CWindow:: IsParentDialog
 
 컨트롤의 부모 창이 대화 상자 창 인지 여부를 확인 합니다.
 
@@ -1649,11 +1650,11 @@ Windows SDK에서 [IsIconic](/windows/win32/api/winuser/nf-winuser-isiconic) 을
 BOOL IsParentDialog() throw();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 부모 창이 대화 상자 이면 TRUE, 그렇지 않으면 FALSE를 반환 합니다.
 
-## <a name="cwindowiswindow"></a><a name="iswindow"></a>CWindow:: IsWindow
+## <a name="cwindowiswindow"></a><a name="iswindow"></a> CWindow:: IsWindow
 
 지정 된 창 핸들이 기존 창을 식별 하는지 여부를 확인 합니다.
 
@@ -1669,7 +1670,7 @@ Windows SDK [Iswindow](/windows/win32/api/winuser/nf-winuser-iswindow) 을 참�
 
 [!code-cpp[NVC_ATL_Windowing#20](../../atl/codesnippet/cpp/cwindow-class_20.cpp)]
 
-## <a name="cwindowiswindowenabled"></a><a name="iswindowenabled"></a>CWindow:: IsWindowEnabled
+## <a name="cwindowiswindowenabled"></a><a name="iswindowenabled"></a> CWindow:: IsWindowEnabled
 
 창에 입력을 사용할 수 있는지 여부를 확인 합니다.
 
@@ -1685,7 +1686,7 @@ Windows SDK에서 [Iswindowenabled](/windows/win32/api/winuser/nf-winuser-iswind
 
 [!code-cpp[NVC_ATL_Windowing#21](../../atl/codesnippet/cpp/cwindow-class_21.cpp)]
 
-## <a name="cwindowiswindowvisible"></a><a name="iswindowvisible"></a>CWindow:: IsWindowVisible
+## <a name="cwindowiswindowvisible"></a><a name="iswindowvisible"></a> CWindow:: IsWindowVisible
 
 창의 표시 상태를 결정 합니다.
 
@@ -1701,7 +1702,7 @@ Windows SDK에서 [표시 되는 Iswindowvisible](/windows/win32/api/winuser/nf-
 
 [!code-cpp[NVC_ATL_Windowing#22](../../atl/codesnippet/cpp/cwindow-class_22.cpp)]
 
-## <a name="cwindowiswindowunicode"></a><a name="iswindowunicode"></a>CWindow:: IsWindowUnicode
+## <a name="cwindowiswindowunicode"></a><a name="iswindowunicode"></a> CWindow:: IsWindowUnicode
 
 지정 된 창이 네이티브 유니코드 창 인지 여부를 확인 합니다.
 
@@ -1717,7 +1718,7 @@ Windows SDK의 [Iswindowunicode](/windows/win32/api/winuser/nf-winuser-iswindowu
 
 [!code-cpp[NVC_ATL_Windowing#23](../../atl/codesnippet/cpp/cwindow-class_23.cpp)]
 
-## <a name="cwindowiszoomed"></a><a name="iszoomed"></a>CWindow:: IsZoomed
+## <a name="cwindowiszoomed"></a><a name="iszoomed"></a> CWindow:: IsZoomed
 
 창이 최대화 되었는지 여부를 확인 합니다.
 
@@ -1729,7 +1730,7 @@ BOOL IsZoomed() const throw();
 
 Windows SDK의 [Iszoomed](/windows/win32/api/winuser/nf-winuser-iszoomed) 를 참조 하세요.
 
-## <a name="cwindowkilltimer"></a><a name="killtimer"></a>CWindow:: KillTimer
+## <a name="cwindowkilltimer"></a><a name="killtimer"></a> CWindow:: KillTimer
 
 에서 만든 타이머 이벤트를 소멸 시킵니다 `CWindow::SetTimer` .
 
@@ -1741,7 +1742,7 @@ BOOL KillTimer(UINT nIDEvent) throw();
 
 Windows SDK에서 [KillTimer](/windows/win32/api/winuser/nf-winuser-killtimer) 을 참조 하세요.
 
-## <a name="cwindowlockwindowupdate"></a><a name="lockwindowupdate"></a>CWindow:: LockWindowUpdate
+## <a name="cwindowlockwindowupdate"></a><a name="lockwindowupdate"></a> CWindow:: LockWindowUpdate
 
 [Lockwindowupdate](/windows/win32/api/winuser/nf-winuser-lockwindowupdate) Win32 함수를 호출 하 여 창에서 그리기를 사용 하지 않거나 사용 하도록 설정 합니다.
 
@@ -1754,7 +1755,7 @@ BOOL LockWindowUpdate(BOOL bLock = TRUE) throw();
 *거부*<br/>
 진행 TRUE (기본값) 이면 창이 잠깁니다. 그렇지 않으면 잠금이 해제 됩니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 창이 성공적으로 잠기면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -1762,7 +1763,7 @@ BOOL LockWindowUpdate(BOOL bLock = TRUE) throw();
 
 *BLock* 이 TRUE 이면이 메서드는 [m_hWnd](#m_hwnd) 를 Win32 함수로 전달 합니다. 그렇지 않으면 NULL을 전달 합니다.
 
-## <a name="cwindowm_hwnd"></a><a name="m_hwnd"></a>CWindow:: m_hWnd
+## <a name="cwindowm_hwnd"></a><a name="m_hwnd"></a> CWindow:: m_hWnd
 
 개체와 연결 된 창에 대 한 핸들을 포함 `CWindow` 합니다.
 
@@ -1770,7 +1771,7 @@ BOOL LockWindowUpdate(BOOL bLock = TRUE) throw();
 HWND m_hWnd throw() throw();
 ```
 
-## <a name="cwindowmapwindowpoints"></a><a name="mapwindowpoints"></a>CWindow:: MapWindowPoints
+## <a name="cwindowmapwindowpoints"></a><a name="mapwindowpoints"></a> CWindow:: MapWindowPoints
 
 요소 집합을 창의 좌표 공간에서 다른 창의 좌표 공간으로 변환 합니다.
 
@@ -1791,7 +1792,7 @@ Windows SDK의 [Mapwindowpoints](/windows/win32/api/winuser/nf-winuser-mapwindow
 
 이 메서드의 두 번째 버전에서는 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조의 좌표를 변환할 수 있습니다.
 
-## <a name="cwindowmessagebox"></a><a name="messagebox"></a>CWindow:: MessageBox
+## <a name="cwindowmessagebox"></a><a name="messagebox"></a> CWindow:: MessageBox
 
 메시지 상자를 표시합니다.
 
@@ -1810,7 +1811,7 @@ Windows SDK [MessageBox](/windows/win32/api/winuser/nf-winuser-messagebox) 를 �
 
 [!code-cpp[NVC_ATL_Windowing#24](../../atl/codesnippet/cpp/cwindow-class_24.cpp)]
 
-## <a name="cwindowmodifystyle"></a><a name="modifystyle"></a>CWindow:: ModifyStyle
+## <a name="cwindowmodifystyle"></a><a name="modifystyle"></a> CWindow:: ModifyStyle
 
 개체의 창 스타일을 수정 `CWindow` 합니다.
 
@@ -1832,7 +1833,7 @@ BOOL ModifyStyle(
 *nFlags*<br/>
 진행 창 위치 플래그입니다. 가능한 값 목록은 Windows SDK의 [Setwindowpos](/windows/win32/api/winuser/nf-winuser-setwindowpos) 함수를 참조 하세요.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 창 스타일이 수정 되 면 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
@@ -1856,7 +1857,7 @@ BOOL ModifyStyle(
 
 [!code-cpp[NVC_ATL_Windowing#25](../../atl/codesnippet/cpp/cwindow-class_25.cpp)]
 
-## <a name="cwindowmodifystyleex"></a><a name="modifystyleex"></a>CWindow:: ModifyStyleEx
+## <a name="cwindowmodifystyleex"></a><a name="modifystyleex"></a> CWindow:: ModifyStyleEx
 
 개체의 확장 창 스타일을 수정 합니다 `CWindow` .
 
@@ -1878,7 +1879,7 @@ BOOL ModifyStyleEx(
 *nFlags*<br/>
 진행 창 위치 플래그입니다. 가능한 값 목록은 Windows SDK의 [Setwindowpos](/windows/win32/api/winuser/nf-winuser-setwindowpos) 함수를 참조 하세요.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 확장 창 스타일이 수정 되 면 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
@@ -1902,7 +1903,7 @@ BOOL ModifyStyleEx(
 
 [!code-cpp[NVC_ATL_Windowing#26](../../atl/codesnippet/cpp/cwindow-class_26.cpp)]
 
-## <a name="cwindowmovewindow"></a><a name="movewindow"></a>CWindow:: MoveWindow
+## <a name="cwindowmovewindow"></a><a name="movewindow"></a> CWindow:: MoveWindow
 
 창의 크기와 위치를 변경 합니다.
 
@@ -1925,7 +1926,7 @@ BOOL MoveWindow(
 
 이 메서드의 두 번째 버전은 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조체를 사용 하 여 창의 새 위치, 너비 및 높이를 확인 합니다.
 
-## <a name="cwindownextdlgctrl"></a><a name="nextdlgctrl"></a>CWindow:: NextDlgCtrl
+## <a name="cwindownextdlgctrl"></a><a name="nextdlgctrl"></a> CWindow:: NextDlgCtrl
 
 대화 상자의 다음 컨트롤로 키보드 포커스를 설정 합니다.
 
@@ -1937,7 +1938,7 @@ void NextDlgCtrl() const throw();
 
 Windows SDK [WM_NEXTDLGCTL](/windows/win32/dlgbox/wm-nextdlgctl) 를 참조 하세요.
 
-## <a name="cwindowopenclipboard"></a><a name="openclipboard"></a>CWindow:: OpenClipboard
+## <a name="cwindowopenclipboard"></a><a name="openclipboard"></a> CWindow:: OpenClipboard
 
 클립보드를 엽니다.
 
@@ -1949,7 +1950,7 @@ BOOL OpenClipboard() throw();
 
 Windows SDK의 [Openclipboard](/windows/win32/api/winuser/nf-winuser-openclipboard) 를 참조 하세요.
 
-## <a name="cwindowoperator-hwnd"></a><a name="operator_hwnd"></a>CWindow:: operator HWND
+## <a name="cwindowoperator-hwnd"></a><a name="operator_hwnd"></a> CWindow:: operator HWND
 
 개체를 `CWindow` HWND로 변환 합니다.
 
@@ -1957,7 +1958,7 @@ Windows SDK의 [Openclipboard](/windows/win32/api/winuser/nf-winuser-openclipboa
 operator HWND() const throw();
 ```
 
-## <a name="cwindowoperator-"></a><a name="operator_eq"></a>CWindow:: operator =
+## <a name="cwindowoperator-"></a><a name="operator_eq"></a> CWindow:: operator =
 
 `CWindow` [M_hWnd](#m_hwnd) 멤버를로 설정 하 여 개체에 HWND를 할당 `hWnd` 합니다.
 
@@ -1965,7 +1966,7 @@ operator HWND() const throw();
 CWindow& operator= (HWND hWnd) throw();
 ```
 
-## <a name="cwindowpostmessage"></a><a name="postmessage"></a>CWindow::P ostMessage
+## <a name="cwindowpostmessage"></a><a name="postmessage"></a> CWindow::P ostMessage
 
 창을 만든 스레드와 연결 된 메시지 큐에 메시지를 배치 합니다.
 
@@ -1986,7 +1987,7 @@ Windows SDK에서 [PostMessage](/windows/win32/api/winuser/nf-winuser-postmessag
 
 [!code-cpp[NVC_ATL_Windowing#27](../../atl/codesnippet/cpp/cwindow-class_27.cpp)]
 
-## <a name="cwindowprevdlgctrl"></a><a name="prevdlgctrl"></a>CWindow::P revDlgCtrl
+## <a name="cwindowprevdlgctrl"></a><a name="prevdlgctrl"></a> CWindow::P revDlgCtrl
 
 대화 상자의 이전 컨트롤로 키보드 포커스를 설정 합니다.
 
@@ -1998,7 +1999,7 @@ void PrevDlgCtrl() const throw();
 
 Windows SDK [WM_NEXTDLGCTL](/windows/win32/dlgbox/wm-nextdlgctl) 를 참조 하세요.
 
-## <a name="cwindowprint"></a><a name="print"></a>CWindow::P rint
+## <a name="cwindowprint"></a><a name="print"></a> CWindow::P rint
 
 지정 된 장치 컨텍스트에서 자신을 그리도록 요청 하는 [WM_PRINT](/windows/win32/gdi/wm-print) 메시지를 창으로 보냅니다.
 
@@ -2026,7 +2027,7 @@ void Print(HDC hDC, DWORD dwFlags) const throw();
 
 - 소유 하 고 있는 모든 창을 PRF_OWNED 그립니다.
 
-## <a name="cwindowprintclient"></a><a name="printclient"></a>CWindow::P rintClient
+## <a name="cwindowprintclient"></a><a name="printclient"></a> CWindow::P rintClient
 
 지정 된 장치 컨텍스트에서 클라이언트 영역을 그리도록 요청 하는 [WM_PRINTCLIENT](/windows/win32/gdi/wm-printclient) 메시지를 창에 보냅니다.
 
@@ -2054,7 +2055,7 @@ void PrintClient(HDC hDC, DWORD dwFlags) const throw();
 
 - 소유 하 고 있는 모든 창을 PRF_OWNED 그립니다.
 
-## <a name="cwindowrcdefault"></a><a name="rcdefault"></a>CWindow:: rcDefault
+## <a name="cwindowrcdefault"></a><a name="rcdefault"></a> CWindow:: rcDefault
 
 기본 창 크기를 포함 합니다.
 
@@ -2062,7 +2063,7 @@ void PrintClient(HDC hDC, DWORD dwFlags) const throw();
 static RECT rcDefault;
 ```
 
-## <a name="cwindowredrawwindow"></a><a name="redrawwindow"></a>CWindow:: RedrawWindow
+## <a name="cwindowredrawwindow"></a><a name="redrawwindow"></a> CWindow:: RedrawWindow
 
 클라이언트 영역에서 지정 된 사각형이 나 영역을 업데이트 합니다.
 
@@ -2083,7 +2084,7 @@ Windows SDK에서 [Redrawwindow](/windows/win32/api/winuser/nf-winuser-redrawwin
 
 [!code-cpp[NVC_ATL_Windowing#28](../../atl/codesnippet/cpp/cwindow-class_28.cpp)]
 
-## <a name="cwindowreleasedc"></a><a name="releasedc"></a>CWindow:: ReleaseDC
+## <a name="cwindowreleasedc"></a><a name="releasedc"></a> CWindow:: ReleaseDC
 
 장치 컨텍스트를 해제 합니다.
 
@@ -2099,7 +2100,7 @@ Windows SDK에서 [Releasedc](/windows/win32/api/winuser/nf-winuser-releasedc) �
 
 [!code-cpp[NVC_ATL_Windowing#9](../../atl/codesnippet/cpp/cwindow-class_9.cpp)]
 
-## <a name="cwindowresizeclient"></a><a name="resizeclient"></a>CWindow:: ResizeClient
+## <a name="cwindowresizeclient"></a><a name="resizeclient"></a> CWindow:: ResizeClient
 
 지정 된 클라이언트 영역 크기로 창의 크기를 조정 합니다.
 
@@ -2121,7 +2122,7 @@ BOOL ResizeClient(
 *bRedraw*<br/>
 변경 내용을 다시 그릴지 여부를 나타내는 플래그입니다. 기본값은 FALSE 이며 창이 변경 내용을 다시 그리게 함을 나타냅니다.
 
-## <a name="cwindowscreentoclient"></a><a name="screentoclient"></a>CWindow:: ScreenToClient
+## <a name="cwindowscreentoclient"></a><a name="screentoclient"></a> CWindow:: ScreenToClient
 
 화면 좌표를 클라이언트 좌표로 변환 합니다.
 
@@ -2136,7 +2137,7 @@ Windows SDK에서 [ScreenToClient](/windows/win32/api/winuser/nf-winuser-screent
 
 이 메서드의 두 번째 버전에서는 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조의 좌표를 변환할 수 있습니다.
 
-## <a name="cwindowscrollwindow"></a><a name="scrollwindow"></a>CWindow:: ScrollWindow
+## <a name="cwindowscrollwindow"></a><a name="scrollwindow"></a> CWindow:: ScrollWindow
 
 지정 된 클라이언트 영역을 스크롤합니다.
 
@@ -2152,7 +2153,7 @@ BOOL ScrollWindow(
 
 Windows SDK에서 [ScrollWindow](/windows/win32/api/winuser/nf-winuser-scrollwindow) 을 참조 하세요.
 
-## <a name="cwindowscrollwindowex"></a><a name="scrollwindowex"></a>CWindow:: ScrollWindowEx
+## <a name="cwindowscrollwindowex"></a><a name="scrollwindowex"></a> CWindow:: ScrollWindowEx
 
 지정 된 클라이언트 영역을 추가 기능으로 스크롤합니다.
 
@@ -2171,7 +2172,7 @@ int ScrollWindowEx(
 
 Windows SDK에서 [ScrollWindowEx](/windows/win32/api/winuser/nf-winuser-scrollwindowex) 을 참조 하세요.
 
-## <a name="cwindowsenddlgitemmessage"></a><a name="senddlgitemmessage"></a>CWindow:: SendDlgItemMessage
+## <a name="cwindowsenddlgitemmessage"></a><a name="senddlgitemmessage"></a> CWindow:: SendDlgItemMessage
 
 컨트롤에 메시지를 보냅니다.
 
@@ -2187,7 +2188,7 @@ LRESULT SendDlgItemMessage(
 
 Windows SDK에서 [SendDlgItemMessage](/windows/win32/api/winuser/nf-winuser-senddlgitemmessagew) 을 참조 하세요.
 
-## <a name="cwindowsendmessage"></a><a name="sendmessage"></a>CWindow:: SendMessage
+## <a name="cwindowsendmessage"></a><a name="sendmessage"></a> CWindow:: SendMessage
 
 창으로 메시지를 보내고 창 프로시저에서 메시지를 처리할 때까지 반환 하지 않습니다.
 
@@ -2212,7 +2213,7 @@ Windows SDK에서 [SendMessage](/windows/win32/api/winuser/nf-winuser-sendmessag
 
 [!code-cpp[NVC_ATL_Windowing#29](../../atl/codesnippet/cpp/cwindow-class_29.cpp)]
 
-## <a name="cwindowsendmessagetodescendants"></a><a name="sendmessagetodescendants"></a>CWindow:: SendMessageToDescendants
+## <a name="cwindowsendmessagetodescendants"></a><a name="sendmessagetodescendants"></a> CWindow:: SendMessageToDescendants
 
 지정 된 메시지를 개체의 모든 직계 자식으로 보냅니다 `CWindow` .
 
@@ -2242,7 +2243,7 @@ void SendMessageToDescendants(
 
 *Bdeep* 이 TRUE 이면 메시지가 다른 모든 하위 창에 추가로 전송 됩니다.
 
-## <a name="cwindowsendnotifymessage"></a><a name="sendnotifymessage"></a>CWindow:: SendNotifyMessage
+## <a name="cwindowsendnotifymessage"></a><a name="sendnotifymessage"></a> CWindow:: SendNotifyMessage
 
 창에 메시지를 보냅니다.
 
@@ -2259,7 +2260,7 @@ Windows SDK에서 [SendNotifyMessage](/windows/win32/api/winuser/nf-winuser-send
 
 호출 스레드에서 창을 만든 경우 `SendNotifyMessage` 창 프로시저에서 메시지를 처리할 때까지이 반환 되지 않습니다. 그렇지 않으면 즉시 반환 됩니다.
 
-## <a name="cwindowsetactivewindow"></a><a name="setactivewindow"></a>CWindow:: SetActiveWindow
+## <a name="cwindowsetactivewindow"></a><a name="setactivewindow"></a> CWindow:: SetActiveWindow
 
 창을 활성화합니다.
 
@@ -2275,7 +2276,7 @@ Windows SDK에서 [SetActiveWindow](/windows/win32/api/winuser/nf-winuser-setact
 
 [!code-cpp[NVC_ATL_Windowing#30](../../atl/codesnippet/cpp/cwindow-class_30.cpp)]
 
-## <a name="cwindowsetcapture"></a><a name="setcapture"></a>CWindow:: SetCapture
+## <a name="cwindowsetcapture"></a><a name="setcapture"></a> CWindow:: SetCapture
 
 모든 후속 마우스 입력을 창으로 보냅니다.
 
@@ -2287,7 +2288,7 @@ HWND SetCapture() throw();
 
 Windows SDK의 [Setcapture](/windows/win32/api/winuser/nf-winuser-setcapture) 를 참조 하세요.
 
-## <a name="cwindowsetclipboardviewer"></a><a name="setclipboardviewer"></a>CWindow:: SetClipboardViewer
+## <a name="cwindowsetclipboardviewer"></a><a name="setclipboardviewer"></a> CWindow:: SetClipboardViewer
 
 클립보드 뷰어 체인에 창을 추가 합니다.
 
@@ -2299,7 +2300,7 @@ HWND SetClipboardViewer() throw();
 
 Windows SDK에서 [SetClipboardViewer](/windows/win32/api/winuser/nf-winuser-setclipboardviewer) 을 참조 하세요.
 
-## <a name="cwindowsetdlgctrlid"></a><a name="setdlgctrlid"></a>CWindow:: SetDlgCtrlID
+## <a name="cwindowsetdlgctrlid"></a><a name="setdlgctrlid"></a> CWindow:: SetDlgCtrlID
 
 창의 식별자를 지정 된 값으로 설정 합니다.
 
@@ -2312,11 +2313,11 @@ int SetDlgCtrlID(int nID) throw();
 *nID*<br/>
 진행 창 식별자에 대해 설정할 새 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 창의 이전 식별자이 고, 그렇지 않으면입니다. 그렇지 않으면 0입니다.
 
-## <a name="cwindowsetdlgitemint"></a><a name="setdlgitemint"></a>CWindow:: SetDlgItemInt
+## <a name="cwindowsetdlgitemint"></a><a name="setdlgitemint"></a> CWindow:: SetDlgItemInt
 
 컨트롤의 텍스트를 정수 값의 문자열 표현으로 변경 합니다.
 
@@ -2331,7 +2332,7 @@ BOOL SetDlgItemInt(
 
 Windows SDK에서 [SetDlgItemInt](/windows/win32/api/winuser/nf-winuser-setdlgitemint) 을 참조 하세요.
 
-## <a name="cwindowsetdlgitemtext"></a><a name="setdlgitemtext"></a>CWindow:: SetDlgItemText
+## <a name="cwindowsetdlgitemtext"></a><a name="setdlgitemtext"></a> CWindow:: SetDlgItemText
 
 컨트롤의 텍스트를 변경 합니다.
 
@@ -2343,7 +2344,7 @@ BOOL SetDlgItemText(int nID, LPCTSTR lpszString) throw();
 
 Windows SDK에서 [SetDlgItemText](/windows/win32/api/winuser/nf-winuser-setdlgitemtextw) 을 참조 하세요.
 
-## <a name="cwindowsetfocus"></a><a name="setfocus"></a>CWindow:: SetFocus
+## <a name="cwindowsetfocus"></a><a name="setfocus"></a> CWindow:: SetFocus
 
 창에 입력 포커스를 설정 합니다.
 
@@ -2359,7 +2360,7 @@ Windows SDK [SetFocus](/windows/win32/api/winuser/nf-winuser-setfocus) 를 참�
 
 [!code-cpp[NVC_ATL_Windowing#31](../../atl/codesnippet/cpp/cwindow-class_31.cpp)]
 
-## <a name="cwindowsetfont"></a><a name="setfont"></a>CWindow:: SetFont
+## <a name="cwindowsetfont"></a><a name="setfont"></a> CWindow:: SetFont
 
 창에 [WM_SETFONT](/windows/win32/winmsg/wm-setfont) 메시지를 보내 창의 현재 글꼴을 변경 합니다.
 
@@ -2375,7 +2376,7 @@ void SetFont(HFONT hFont, BOOL bRedraw = TRUE) throw();
 *bRedraw*<br/>
 진행 TRUE (기본값) 이면 창이 다시 그려집니다. 그렇지 않으면 False입니다.
 
-## <a name="cwindowsethotkey"></a><a name="sethotkey"></a>CWindow:: SetHotKey
+## <a name="cwindowsethotkey"></a><a name="sethotkey"></a> CWindow:: SetHotKey
 
 WM_SETHOTKEY 메시지를 전송 하 여 창에 바로 가기 키를 연결 합니다.
 
@@ -2391,13 +2392,13 @@ int SetHotKey(WORD wVirtualKeyCode, WORD wModifiers) throw();
 *wModifiers*<br/>
 진행 핫 키의 한정자입니다. 가능한 값 목록은 Windows SDK에서 WM_SETHOTKEY을 참조 하세요.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 가능한 반환 값 목록은 Windows SDK에서 [WM_SETHOTKEY](/windows/win32/inputdev/wm-sethotkey) 을 참조 하세요.
 
-## <a name="cwindowseticon"></a><a name="seticon"></a>CWindow:: SetIcon
+## <a name="cwindowseticon"></a><a name="seticon"></a> CWindow:: SetIcon
 
-창의 크거나 작은 아이콘을 *Hicon*으로 식별 되는 아이콘으로 설정 합니다.
+창의 크거나 작은 아이콘을 *Hicon* 으로 식별 되는 아이콘으로 설정 합니다.
 
 ```
 HICON SetIcon(HICON hIcon, BOOL bBigIcon = TRUE) throw();
@@ -2411,15 +2412,15 @@ HICON SetIcon(HICON hIcon, BOOL bBigIcon = TRUE) throw();
 *bBigIcon*<br/>
 진행 TRUE (기본값) 이면 메서드가 큼 아이콘을 설정 합니다. 그렇지 않으면 작은 아이콘을 설정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이전 아이콘에 대 한 핸들입니다.
 
 ### <a name="remarks"></a>설명
 
-`SetIcon`창에 [WM_SETICON](/windows/win32/winmsg/wm-seticon) 메시지를 보냅니다.
+`SetIcon` 창에 [WM_SETICON](/windows/win32/winmsg/wm-seticon) 메시지를 보냅니다.
 
-## <a name="cwindowsetmenu"></a><a name="setmenu"></a>CWindow:: SetMenu
+## <a name="cwindowsetmenu"></a><a name="setmenu"></a> CWindow:: SetMenu
 
 창의 현재 메뉴를 변경 합니다.
 
@@ -2431,7 +2432,7 @@ BOOL SetMenu(HMENU hMenu) throw();
 
 Windows SDK의 [Setmenu](/windows/win32/api/winuser/nf-winuser-setmenu) 를 참조 하세요.
 
-## <a name="cwindowsetparent"></a><a name="setparent"></a>CWindow:: SetParent
+## <a name="cwindowsetparent"></a><a name="setparent"></a> CWindow:: SetParent
 
 부모 창을 변경합니다.
 
@@ -2447,7 +2448,7 @@ Windows SDK의 [Setparent](/windows/win32/api/winuser/nf-winuser-setparent) 를 
 
 [!code-cpp[NVC_ATL_Windowing#32](../../atl/codesnippet/cpp/cwindow-class_32.cpp)]
 
-## <a name="cwindowsetredraw"></a><a name="setredraw"></a>CWindow:: SetRedraw 그리기
+## <a name="cwindowsetredraw"></a><a name="setredraw"></a> CWindow:: SetRedraw 그리기
 
 창에 [WM_SETREDRAW](/windows/win32/gdi/wm-setredraw) 메시지를 전송 하 여 다시 그리기 플래그를 설정 하거나 취소 합니다.
 
@@ -2468,7 +2469,7 @@ void SetRedraw(BOOL bRedraw = TRUE) throw();
 
 [!code-cpp[NVC_ATL_Windowing#33](../../atl/codesnippet/cpp/cwindow-class_33.cpp)]
 
-## <a name="cwindowsetscrollinfo"></a><a name="setscrollinfo"></a>CWindow:: SetScrollInfo
+## <a name="cwindowsetscrollinfo"></a><a name="setscrollinfo"></a> CWindow:: SetScrollInfo
 
 스크롤 막대의 매개 변수를 설정 합니다.
 
@@ -2483,7 +2484,7 @@ int SetScrollInfo(
 
 Windows SDK에서 [SetScrollInfo](/windows/win32/api/winuser/nf-winuser-setscrollinfo) 을 참조 하세요.
 
-## <a name="cwindowsetscrollpos"></a><a name="setscrollpos"></a>CWindow:: SetScrollPos
+## <a name="cwindowsetscrollpos"></a><a name="setscrollpos"></a> CWindow:: SetScrollPos
 
 스크롤 상자의 위치를 변경 합니다.
 
@@ -2498,7 +2499,7 @@ int SetScrollPos(
 
 Windows SDK에서 [SetScrollPos](/windows/win32/api/winuser/nf-winuser-setscrollpos) 을 참조 하세요.
 
-## <a name="cwindowsetscrollrange"></a><a name="setscrollrange"></a>CWindow:: SetScrollRange
+## <a name="cwindowsetscrollrange"></a><a name="setscrollrange"></a> CWindow:: SetScrollRange
 
 스크롤 막대 범위를 변경 합니다.
 
@@ -2514,7 +2515,7 @@ BOOL SetScrollRange(
 
 Windows SDK에서 [SetScrollRange](/windows/win32/api/winuser/nf-winuser-setscrollrange) 을 참조 하세요.
 
-## <a name="cwindowsettimer"></a><a name="settimer"></a>CWindow:: SetTimer
+## <a name="cwindowsettimer"></a><a name="settimer"></a> CWindow:: SetTimer
 
 타이머 이벤트를 만듭니다.
 
@@ -2529,7 +2530,7 @@ UINT SetTimer(
 
 Windows SDK의 [Settimer](/windows/win32/api/winuser/nf-winuser-settimer) 를 참조 하세요.
 
-## <a name="cwindowsetwindowcontexthelpid"></a><a name="setwindowcontexthelpid"></a>CWindow:: SetWindowContextHelpId
+## <a name="cwindowsetwindowcontexthelpid"></a><a name="setwindowcontexthelpid"></a> CWindow:: SetWindowContextHelpId
 
 창의 도움말 컨텍스트 식별자를 설정 합니다.
 
@@ -2541,7 +2542,7 @@ BOOL SetWindowContextHelpId(DWORD dwContextHelpId) throw();
 
 Windows SDK에서 [SetWindowContextHelpId](/windows/win32/api/winuser/nf-winuser-setwindowcontexthelpid) 을 참조 하세요.
 
-## <a name="cwindowsetwindowlong"></a><a name="setwindowlong"></a>CWindow:: SetWindowLong
+## <a name="cwindowsetwindowlong"></a><a name="setwindowlong"></a> CWindow:: SetWindowLong
 
 지정 된 오프셋에서 추가 창 메모리로 32 비트 값을 설정 합니다.
 
@@ -2556,7 +2557,7 @@ Windows SDK의 [Setwindowlong](/windows/win32/api/winuser/nf-winuser-setwindowlo
 > [!NOTE]
 > 32 비트 및 64 비트 버전의 Windows와 호환 되는 코드를 작성 하려면 [CWindow:: SetWindowLongPtr](#setwindowlongptr)를 사용 합니다.
 
-## <a name="cwindowsetwindowlongptr"></a><a name="setwindowlongptr"></a>CWindow:: SetWindowLongPtr
+## <a name="cwindowsetwindowlongptr"></a><a name="setwindowlongptr"></a> CWindow:: SetWindowLongPtr
 
 지정 된 창의 특성을 변경 하 고 추가 창 메모리의 지정 된 오프셋에 값을 설정 합니다.
 
@@ -2570,7 +2571,7 @@ Windows SDK에서 [SetWindowLongPtr](/windows/win32/api/winuser/nf-winuser-setwi
 
 이 함수는 메서드를 대체 `CWindow::SetWindowLong` 합니다. 32 비트 및 64 비트 버전의 Windows와 호환 되는 코드를 작성 하려면를 사용 `CWindow::SetWindowLongPtr` 합니다.
 
-## <a name="cwindowsetwindowplacement"></a><a name="setwindowplacement"></a>CWindow:: SetWindowPlacement
+## <a name="cwindowsetwindowplacement"></a><a name="setwindowplacement"></a> CWindow:: SetWindowPlacement
 
 표시 상태와 위치를 설정 합니다.
 
@@ -2582,7 +2583,7 @@ BOOL SetWindowPlacement(const WINDOWPLACEMENT FAR* lpwndpl);
 
 Windows SDK의 [Setwindowplacement](/windows/win32/api/winuser/nf-winuser-setwindowplacement) 를 참조 하세요.
 
-## <a name="cwindowsetwindowpos"></a><a name="setwindowpos"></a>CWindow:: SetWindowPos
+## <a name="cwindowsetwindowpos"></a><a name="setwindowpos"></a> CWindow:: SetWindowPos
 
 크기, 위치 및 Z 순서를 설정 합니다.
 
@@ -2607,7 +2608,7 @@ Windows SDK의 [Setwindowpos](/windows/win32/api/winuser/nf-winuser-setwindowpos
 
 이 메서드의 두 번째 버전은 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조체를 사용 하 여 창의 새 위치, 너비 및 높이를 설정 합니다.
 
-## <a name="cwindowsetwindowrgn"></a><a name="setwindowrgn"></a>CWindow:: SetWindowRgn
+## <a name="cwindowsetwindowrgn"></a><a name="setwindowrgn"></a> CWindow:: SetWindowRgn
 
 창의 창 영역을 설정 합니다.
 
@@ -2619,7 +2620,7 @@ int SetWindowRgn(HRGN hRgn, BOOL bRedraw = FALSE) throw();
 
 Windows SDK에서 [SetWindowRgn](/windows/win32/api/winuser/nf-winuser-setwindowrgn) 을 참조 하세요.
 
-## <a name="cwindowsetwindowtext"></a><a name="setwindowtext"></a>CWindow:: SetWindowText
+## <a name="cwindowsetwindowtext"></a><a name="setwindowtext"></a> CWindow:: SetWindowText
 
 창의 텍스트를 변경 합니다.
 
@@ -2635,7 +2636,7 @@ Windows SDK의 [Setwindowtext](/windows/win32/api/winuser/nf-winuser-setwindowte
 
 [!code-cpp[NVC_ATL_Windowing#34](../../atl/codesnippet/cpp/cwindow-class_34.cpp)]
 
-## <a name="cwindowsetwindowword"></a><a name="setwindowword"></a>CWindow:: SetWindowWord
+## <a name="cwindowsetwindowword"></a><a name="setwindowword"></a> CWindow:: SetWindowWord
 
 지정 된 오프셋에서 추가 창 메모리로 16 비트 값을 설정 합니다.
 
@@ -2647,7 +2648,7 @@ WORD SetWindowWord(int nIndex, WORD wNewWord) throw();
 
 Windows SDK의 [Setwindowlong](/windows/win32/api/winuser/nf-winuser-setwindowlongw) 을 참조 하세요.
 
-## <a name="cwindowshowcaret"></a><a name="showcaret"></a>CWindow:: ShowCaret
+## <a name="cwindowshowcaret"></a><a name="showcaret"></a> CWindow:: ShowCaret
 
 시스템 캐럿을 표시 합니다.
 
@@ -2663,7 +2664,7 @@ Windows SDK에서 [ShowCaret](/windows/win32/api/winuser/nf-winuser-showcaret) �
 
 [!code-cpp[NVC_ATL_Windowing#35](../../atl/codesnippet/cpp/cwindow-class_35.cpp)]
 
-## <a name="cwindowshowownedpopups"></a><a name="showownedpopups"></a>CWindow:: ShowOwnedPopups
+## <a name="cwindowshowownedpopups"></a><a name="showownedpopups"></a> CWindow:: ShowOwnedPopups
 
 창이 소유 하는 팝업 창을 표시 하거나 숨깁니다.
 
@@ -2675,7 +2676,7 @@ BOOL ShowOwnedPopups(BOOL bShow = TRUE) throw();
 
 Windows SDK에서 [ShowOwnedPopups](/windows/win32/api/winuser/nf-winuser-showownedpopups) 을 참조 하세요.
 
-## <a name="cwindowshowscrollbar"></a><a name="showscrollbar"></a>CWindow:: ShowScrollBar
+## <a name="cwindowshowscrollbar"></a><a name="showscrollbar"></a> CWindow:: ShowScrollBar
 
 스크롤 막대를 표시 하거나 숨깁니다.
 
@@ -2687,7 +2688,7 @@ BOOL ShowScrollBar(UINT nBar, BOOL bShow = TRUE) throw();
 
 Windows SDK의 [Showscrollbar](/windows/win32/api/winuser/nf-winuser-showscrollbar) 를 참조 하세요.
 
-## <a name="cwindowshowwindow"></a><a name="showwindow"></a>CWindow:: ShowWindow
+## <a name="cwindowshowwindow"></a><a name="showwindow"></a> CWindow:: ShowWindow
 
 창의 표시 상태를 설정 합니다.
 
@@ -2703,7 +2704,7 @@ Windows SDK에서 [ShowWindow](/windows/win32/api/winuser/nf-winuser-showwindow)
 
 [!code-cpp[NVC_ATL_Windowing#36](../../atl/codesnippet/cpp/cwindow-class_36.cpp)]
 
-## <a name="cwindowshowwindowasync"></a><a name="showwindowasync"></a>CWindow:: ShowWindowAsync
+## <a name="cwindowshowwindowasync"></a><a name="showwindowasync"></a> CWindow:: ShowWindowAsync
 
 다른 스레드에서 만든 창의 표시 상태를 설정 합니다.
 
@@ -2715,7 +2716,7 @@ BOOL ShowWindowAsync(int nCmdShow) throw();
 
 Windows SDK의 [Showwindowasync](/windows/win32/api/winuser/nf-winuser-showwindowasync) 를 참조 하세요.
 
-## <a name="cwindowupdatewindow"></a><a name="updatewindow"></a>CWindow:: UpdateWindow
+## <a name="cwindowupdatewindow"></a><a name="updatewindow"></a> CWindow:: UpdateWindow
 
 클라이언트 영역을 업데이트합니다.
 
@@ -2731,7 +2732,7 @@ Windows SDK [Updatewindow](/windows/win32/api/winuser/nf-winuser-updatewindow) �
 
 [!code-cpp[NVC_ATL_Windowing#37](../../atl/codesnippet/cpp/cwindow-class_37.cpp)]
 
-## <a name="cwindowvalidaterect"></a><a name="validaterect"></a>CWindow:: ValidateRect
+## <a name="cwindowvalidaterect"></a><a name="validaterect"></a> CWindow:: ValidateRect
 
 지정 된 사각형 내에서 클라이언트 영역의 유효성을 검사 합니다.
 
@@ -2743,7 +2744,7 @@ BOOL ValidateRect(LPCRECT lpRect) throw();
 
 Windows SDK에서 [ValidateRect](/windows/win32/api/winuser/nf-winuser-validaterect) 을 참조 하세요.
 
-## <a name="cwindowvalidatergn"></a><a name="validatergn"></a>CWindow:: ValidateRgn
+## <a name="cwindowvalidatergn"></a><a name="validatergn"></a> CWindow:: ValidateRgn
 
 지정 된 영역 내에서 클라이언트 영역의 유효성을 검사 합니다.
 
@@ -2755,7 +2756,7 @@ BOOL ValidateRgn(HRGN hRgn) throw();
 
 Windows SDK에서 [ValidateRgn](/windows/win32/api/winuser/nf-winuser-validatergn) 을 참조 하세요.
 
-## <a name="cwindowwinhelp"></a><a name="winhelp"></a>CWindow:: WinHelp
+## <a name="cwindowwinhelp"></a><a name="winhelp"></a> CWindow:: WinHelp
 
 Windows 도움말을 시작 합니다.
 

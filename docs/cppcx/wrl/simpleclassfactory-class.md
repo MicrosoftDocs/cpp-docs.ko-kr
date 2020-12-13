@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: SimpleClassFactory 클래스'
 title: SimpleClassFactory 클래스
 ms.date: 09/7/2018
 ms.topic: reference
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - Microsoft::WRL::SimpleClassFactory class
 - Microsoft::WRL::SimpleClassFactory::CreateInstance method
 ms.assetid: 6edda1b2-4e44-4e14-9364-72f519249962
-ms.openlocfilehash: 66794789e51a2635fae646cca49e4fae8385dfe0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cd771909790f80048d8fee678b842f820e2f7be2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211153"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135202"
 ---
 # <a name="simpleclassfactory-class"></a>SimpleClassFactory 클래스
 
@@ -78,7 +79,7 @@ class SimpleClassFactory : public ClassFactory<>;
 
 **네임스페이스:** Microsoft::WRL
 
-## <a name="simpleclassfactorycreateinstance-method"></a><a name="createinstance"></a>SimpleClassFactory:: CreateInstance 메서드
+## <a name="simpleclassfactorycreateinstance-method"></a><a name="createinstance"></a> SimpleClassFactory:: CreateInstance 메서드
 
 지정 된 인터페이스의 인스턴스를 만듭니다.
 
@@ -103,7 +104,7 @@ SimpleClassFactory는 집계를 지원 하지 않습니다. 집계가 지원 되
 *ppvObject*<br/>
 이 작업이 완료 되 면 *riid* 매개 변수로 지정 된 개체의 인스턴스에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 S_OK이고, 그렇지 않으면 오류를 나타내는 HRESULT입니다.
 

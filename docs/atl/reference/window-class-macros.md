@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 창 클래스 매크로'
 title: 창 클래스 매크로
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 - atlwin/ATL::DECLARE_WND_SUPERCLASS
 - atlwin/ATL::DECLARE_WND_CLASS_EX
 ms.assetid: ce18681a-2bab-4453-9895-0f3ea47c2b24
-ms.openlocfilehash: ca19eba1632ef3754b704c82ad5a872160ae0c91
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: eb1abcdfea2f3f7e3a8859473d3fabe734906afe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834468"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97138687"
 ---
 # <a name="window-class-macros"></a>창 클래스 매크로
 
@@ -95,7 +96,7 @@ DECLARE_WND_SUPERCLASS( WndClassName, OrigWndClassName )
 ### <a name="parameters"></a>매개 변수
 
 *WndClassName*<br/>
-진행 슈퍼 클래스에서 *OrigWndClassName*하는 창 클래스의 이름입니다. NULL 인 경우 ATL은 창 클래스 이름을 생성 합니다.
+진행 슈퍼 클래스에서 *OrigWndClassName* 하는 창 클래스의 이름입니다. NULL 인 경우 ATL은 창 클래스 이름을 생성 합니다.
 
 *OrigWndClassName*<br/>
 진행 기존 창 클래스의 이름입니다.

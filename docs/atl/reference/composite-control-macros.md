@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 합성 컨트롤 매크로'
 title: 복합 컨트롤 매크로
 ms.date: 05/06/2019
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - composite controls, macros
 ms.assetid: 17f2dd5e-07e6-4aa6-b965-7a361c78c45e
-ms.openlocfilehash: 7ac13a11646faca53b38ec610dc0388bdd14d251
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 0107f91350516bd0f7e35cf82a49f79ff3c5797e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833545"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141195"
 ---
 # <a name="composite-control-macros"></a>복합 컨트롤 매크로
 
@@ -72,7 +73,7 @@ ActiveX 이벤트 싱크에 대 한 CE ATL 구현은 이벤트 처리기 메서�
 
 ## <a name="sink_entry"></a><a name="sink_entry"></a> SINK_ENTRY
 
-*Id*로 식별 되는 컨트롤의 지정 된 이벤트 (*dispid*)에 대해 처리기 함수 (*fn*)를 선언 합니다.
+*Id* 로 식별 되는 컨트롤의 지정 된 이벤트 (*dispid*)에 대해 처리기 함수 (*fn*)를 선언 합니다.
 
 ```
 SINK_ENTRY( id, dispid, fn )
@@ -99,7 +100,7 @@ ActiveX 이벤트 싱크에 대 한 CE ATL 구현은 이벤트 처리기 메서�
 
 ## <a name="sink_entry_ex-and-sink_entry_ex_p"></a><a name="sink_entry_ex"></a> SINK_ENTRY_EX 및 SINK_ENTRY_EX_P
 
-*Id*로 식별 되는 컨트롤에 대해*iid*(디스패치 인터페이스)의 지정 된 이벤트 (*dispid*)에 대 한 처리기 함수 (*fn*)를 선언 합니다.
+*Id* 로 식별 되는 컨트롤에 대해 *iid*(디스패치 인터페이스)의 지정 된 이벤트 (*dispid*)에 대 한 처리기 함수 (*fn*)를 선언 합니다.
 
 ```
 SINK_ENTRY_EX( id, iid, dispid, fn )

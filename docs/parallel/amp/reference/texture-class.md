@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 질감 클래스'
 title: texture 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -17,12 +18,12 @@ f1_keywords:
 - AMP_GRAPHICS/concurrency::graphics::texture::depth_pitch
 - AMP_GRAPHICS/concurrency::graphics::texture::row_pitch
 ms.assetid: 16e85d4d-e80a-474a-995d-8bf63fbdf34c
-ms.openlocfilehash: b8a37293166ec21aeb9410f05fb70c9753ec4f22
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d8712f0d8ef3a66c921b63ae938f575e982d3d97
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230417"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97142755"
 ---
 # <a name="texture-class"></a>texture 클래스
 
@@ -54,7 +55,7 @@ class texture;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[질감 생성자](#ctor)|`texture` 클래스의 새 인스턴스를 초기화합니다.|
 |[~ 텍스처 소멸자](#ctor)|개체를 소멸 시킵니다 `texture` .|
@@ -105,7 +106,7 @@ class texture;
 
 **네임 스페이스:** Concurrency:: graphics
 
-## <a name="texture"></a><a name="dtor"></a>~ 텍스처
+## <a name="texture"></a><a name="dtor"></a> ~ 텍스처
 
 개체를 소멸 시킵니다 `texture` .
 
@@ -113,7 +114,7 @@ class texture;
 ~texture() restrict(cpu);
 ```
 
-## <a name="associated_accelerator_view"></a><a name="associated_accelerator_view"></a>associated_accelerator_view
+## <a name="associated_accelerator_view"></a><a name="associated_accelerator_view"></a> associated_accelerator_view
 
 이 질감을 복사할 기본 대상인 [accelerator_view](accelerator-view-class.md) 가져옵니다.
 
@@ -121,7 +122,7 @@ class texture;
 __declspec(property(get= get_associated_accelerator_view)) Concurrency::accelerator_view associated_accelerator_view;
 ```
 
-## <a name="copy_to"></a><a name="copy_to"></a>copy_to
+## <a name="copy_to"></a><a name="copy_to"></a> copy_to
 
 `texture`전체 복사를 수행 하 여 개체를 대상에 복사 합니다.
 
@@ -151,11 +152,11 @@ void* data() restrict(cpu);
 const void* data() const restrict(cpu);
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 질감의 원시 데이터에 대 한 포인터입니다.
 
-## <a name="depth_pitch"></a><a name="depth_pitch"></a>depth_pitch
+## <a name="depth_pitch"></a><a name="depth_pitch"></a> depth_pitch
 
 CPU의 3D 스테이징 텍스처에서 각 깊이 조각 사이의 바이트 수를 가져옵니다.
 
@@ -163,7 +164,7 @@ CPU의 3D 스테이징 텍스처에서 각 깊이 조각 사이의 바이트 수
 __declspec(property(get= get_depth_pitch)) unsigned int depth_pitch;
 ```
 
-## <a name="get"></a><a name="get"></a>가져오기
+## <a name="get"></a><a name="get"></a> 가져오기
 
 지정 된 인덱스에 있는 요소의 값을 반환 합니다.
 
@@ -176,11 +177,11 @@ const value_type get(const index<_Rank>& _Index) const restrict(amp);
 *_Index*<br/>
 요소의 인덱스입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 지정된 인덱스에 있는 요소의 값입니다.
 
-## <a name="get_associated_accelerator_view"></a><a name="get_associated_accelerator_view"></a>get_associated_accelerator_view
+## <a name="get_associated_accelerator_view"></a><a name="get_associated_accelerator_view"></a> get_associated_accelerator_view
 
 이 질감을 복사할 기본 대상인 accelerator_view 반환 합니다.
 
@@ -188,11 +189,11 @@ const value_type get(const index<_Rank>& _Index) const restrict(amp);
 Concurrency::accelerator_view get_associated_accelerator_view() const restrict(cpu);
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 질감을 복사할 기본 대상인 [accelerator_view](accelerator-view-class.md) 입니다.
 
-## <a name="get_depth_pitch"></a><a name="get_depth_pitch"></a>get_depth_pitch
+## <a name="get_depth_pitch"></a><a name="get_depth_pitch"></a> get_depth_pitch
 
 CPU의 3D 스테이징 텍스처에서 각 깊이 조각 사이의 바이트 수를 반환 합니다.
 
@@ -200,11 +201,11 @@ CPU의 3D 스테이징 텍스처에서 각 깊이 조각 사이의 바이트 수
 unsigned int get_depth_pitch() const restrict(cpu);
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 CPU의 3D 스테이징 텍스처에서 각 깊이 조각 사이의 바이트 수입니다.
 
-## <a name="get_row_pitch"></a><a name="get_row_pitch"></a>get_row_pitch
+## <a name="get_row_pitch"></a><a name="get_row_pitch"></a> get_row_pitch
 
 2 차원 스테이징 질감에서 각 행 사이의 바이트 수 또는 3 차원 스테이징 질감에서 깊이 조각의 각 행 사이의 바이트 수를 반환 합니다.
 
@@ -212,11 +213,11 @@ CPU의 3D 스테이징 텍스처에서 각 깊이 조각 사이의 바이트 수
 unsigned int get_row_pitch() const restrict(cpu);
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 2 차원 스테이징 질감에서 각 행 사이의 바이트 수 또는 3 차원 스테이징 질감에서 깊이 조각의 각 행 사이의 바이트 수입니다.
 
-## <a name="operator"></a><a name="operator_call"></a>연산자 ()
+## <a name="operator"></a><a name="operator_call"></a> 연산자 ()
 
 매개 변수로 지정 된 요소 값을 반환 합니다.
 
@@ -254,11 +255,11 @@ const value_type operator() (
 *_Rank*<br/>
 인덱스의 순위입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 매개 변수로 지정 된 요소 값입니다.
 
-## <a name="operator"></a><a name="operator_at"></a>연산자 []
+## <a name="operator"></a><a name="operator_at"></a> operator[]
 
 지정 된 인덱스에 있는 요소를 반환 합니다.
 
@@ -276,11 +277,11 @@ const value_type operator[] (int _I0) const restrict(amp);
 *_I0*<br/>
 인덱스입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 지정 된 인덱스에 있는 요소입니다.
 
-## <a name="operator"></a><a name="operator_eq"></a>연산자 =
+## <a name="operator"></a><a name="operator_eq"></a> 연산자 =
 
 지정 된 [텍스처](texture-class.md) 개체를이 개체에 복사 합니다.
 
@@ -297,11 +298,11 @@ texture& operator= (
 *_Other*<br/>
 `texture`복사할 개체입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 개체에 대 한 참조 `texture` 입니다.
 
-## <a name="rank"></a><a name="rank"></a>배열
+## <a name="rank"></a><a name="rank"></a> 배열
 
 개체의 순위를 가져옵니다 `texture` .
 
@@ -309,7 +310,7 @@ texture& operator= (
 static const int rank = _Rank;
 ```
 
-## <a name="row_pitch"></a><a name="row_pitch"></a>row_pitch
+## <a name="row_pitch"></a><a name="row_pitch"></a> row_pitch
 
 CPU의 2D 또는 3D 스테이징 질감에서 각 행 사이의 바이트 수를 가져옵니다.
 
@@ -317,7 +318,7 @@ CPU의 2D 또는 3D 스테이징 질감에서 각 행 사이의 바이트 수를
 __declspec(property(get= get_row_pitch)) unsigned int row_pitch;
 ```
 
-## <a name="set"></a><a name="set"></a>설정
+## <a name="set"></a><a name="set"></a> 설정
 
 지정 된 인덱스에 있는 요소의 값을 설정 합니다.
 
@@ -338,7 +339,7 @@ void set(
 *value*<br/>
 요소의 새 값입니다.
 
-## <a name="texture"></a><a name="ctor"></a>질감
+## <a name="texture"></a><a name="ctor"></a> 질감
 
 `texture` 클래스의 새 인스턴스를 초기화합니다.
 

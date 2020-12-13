@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3919'
 title: 컴파일러 오류 C3919
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3919
 ms.assetid: 5f8eddda-d751-478b-930d-e18f7191ddfb
-ms.openlocfilehash: 78a42b264129ee365e664b1242c8aa58dd1244bd
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 9f09c9ca29d247162da8f107ceb2ba47ee26bacc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74758478"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97143899"
 ---
 # <a name="compiler-error-c3919"></a>컴파일러 오류 C3919
 

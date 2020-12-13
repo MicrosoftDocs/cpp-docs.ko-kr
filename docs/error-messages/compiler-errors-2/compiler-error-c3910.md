@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3910'
 title: 컴파일러 오류 C3910
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3910
 ms.assetid: cfcbe620-b463-463b-95ea-2d60ad33ebb5
-ms.openlocfilehash: ef63b8f5d1ee4b3f094bed3549eec8157a950e91
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 802aac0d27e230920a906b96afc78100296c75de
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74748881"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97144146"
 ---
 # <a name="compiler-error-c3910"></a>컴파일러 오류 C3910
 

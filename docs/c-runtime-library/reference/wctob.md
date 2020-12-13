@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: wctob'
 title: wctob
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - wctob function
 - characters, converting
 ms.assetid: 46aec98b-c2f2-4e9d-9d89-7db99ba8a9a6
-ms.openlocfilehash: 3740e4bebcc63f0f664d40b2e048f19c2aa24c99
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 184c9858aebcdecf3b5d9857980f27be45a5d2d9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215090"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97136867"
 ---
 # <a name="wctob"></a>wctob
 
@@ -52,13 +53,13 @@ int wctob(
 *wchar*<br/>
 변환할 값입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 **Wctob** 가 와이드 문자를 성공적으로 변환 하는 경우 멀티 바이트 문자의 길이가 정확히 1 바이트 인 경우에만 멀티 바이트 문자 표현을 반환 합니다. **Wctob** 가 멀티 바이트 문자로 변환할 수 없는 와이드 문자를 발견 하거나 멀티 바이트 문자의 길이가 정확히 1 바이트는 아닌 경우-1을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-**Wctob** 함수는 *wchar* **`int`** 멀티 바이트 문자의 길이가 정확히 1 바이트 이면 wchar에 포함 된 와이드 문자를 반환 값으로 전달 된 해당 멀티 바이트 문자로 변환 합니다.
+**Wctob** 함수는  **`int`** 멀티 바이트 문자의 길이가 정확히 1 바이트 이면 wchar에 포함 된 와이드 문자를 반환 값으로 전달 된 해당 멀티 바이트 문자로 변환 합니다.
 
 **Wctob** 이 실패 하 고 해당 하는 멀티 바이트 문자를 찾을 수 없는 경우 함수는 **Errno** 를 **eilseq** 로 설정 하 고-1을 반환 합니다.
 

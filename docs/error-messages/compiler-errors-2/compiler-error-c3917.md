@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3917'
 title: 컴파일러 오류 C3917
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3917
 ms.assetid: a24cd0c9-262f-46e5-9488-1c01f945933d
-ms.openlocfilehash: 3d527f8447306ff74606a0aa733014d45f985dc0
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3e30e93f650e1b835aafd6639687560aa7349c1f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80165472"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97143938"
 ---
 # <a name="compiler-error-c3917"></a>컴파일러 오류 C3917
 

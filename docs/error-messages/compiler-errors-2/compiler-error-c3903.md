@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3903'
 title: 컴파일러 오류 C3903
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3903
 ms.assetid: cf47d7ad-a3bd-4f75-a253-71586e7a3be6
-ms.openlocfilehash: 585fb82c2838b2bc8aebbfbab7bdda744ba38da8
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: a8d0cb8e9629bc2099c73b83367aa602315e26a8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74749076"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97144250"
 ---
 # <a name="compiler-error-c3903"></a>컴파일러 오류 C3903
 
 ' property ': set 또는 get 메서드가 없습니다.
 
-속성에는 적어도 `get` 또는 `set` 메서드가 있어야 합니다. 자세한 내용은 [property](../../extensions/property-cpp-component-extensions.md)을 참조하세요.
+속성에는 또는 메서드가 하나 이상 있어야 합니다 `get` `set` . 자세한 내용은 [property](../../extensions/property-cpp-component-extensions.md)을 참조하세요.
 
 다음 샘플에서는 C3903를 생성 합니다.
 

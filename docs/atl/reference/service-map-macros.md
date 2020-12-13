@@ -1,4 +1,5 @@
 ---
+description: 서비스 맵 매크로에 대 한 자세한 정보
 title: 서비스 맵 매크로
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,18 +8,18 @@ f1_keywords:
 - atlcom/ATL::SERVICE_ENTRY
 - atlcom/ATL::SERVICE_ENTRY_CHAIN
 ms.assetid: ca02a125-454a-4cf6-aac2-1c5585025ed4
-ms.openlocfilehash: 1fa163098d89dd949c17ee7cd5e4ddc46cd2a091
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 08a26ac4043b62f8377ca9b4728eb262494f1aa1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835209"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97138829"
 ---
 # <a name="service-map-macros"></a>서비스 맵 매크로
 
 이러한 매크로는 서비스 맵과 항목을 정의 합니다.
 
-|이름|Description|
+|Name|설명|
 |-|-|
 |[BEGIN_SERVICE_MAP](#begin_service_map)|ATL 서비스 맵의 시작을 표시 합니다.|
 |[END_SERVICE_MAP](#end_service_map)|ATL 서비스 맵의 끝을 표시 합니다.|
@@ -68,7 +69,7 @@ END_SERVICE_MAP()
 
 ## <a name="service_entry"></a><a name="service_entry"></a> SERVICE_ENTRY
 
-개체가 *SID*로 지정 된 서비스 id를 지원함을 나타냅니다.
+개체가 *SID* 로 지정 된 서비스 id를 지원함을 나타냅니다.
 
 ```
 SERVICE_ENTRY( SID )
@@ -85,7 +86,7 @@ SERVICE_ENTRY( SID )
 
 ## <a name="service_entry_chain"></a><a name="service_entry_chain"></a> SERVICE_ENTRY_CHAIN
 
-*Punk*에 지정 된 개체에 연결 하도록 [Iserviceproviderimpl::](#queryservice) 에 지시 합니다.
+*Punk* 에 지정 된 개체에 연결 하도록 [Iserviceproviderimpl::](#queryservice) 에 지시 합니다.
 
 ```
 SERVICE_ENTRY_CHAIN( punk )

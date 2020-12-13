@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 심각한 오류 C1091'
 title: 심각한 오류 C1091
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1091
 ms.assetid: 812d4201-9154-48b0-b9af-5959c082ca33
-ms.openlocfilehash: 76492be7abab6deb740f1670b85274b8c296c783
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3863600e10dcfbef274424559e2cda0ca791406b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80203894"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97145173"
 ---
 # <a name="fatal-error-c1091"></a>심각한 오류 C1091
 
