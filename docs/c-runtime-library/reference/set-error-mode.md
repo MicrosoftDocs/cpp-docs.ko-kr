@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _set_error_mode'
 title: _set_error_mode
 ms.date: 11/04/2016
 api_name:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - _set_error_mode function
 - set_error_mode function
 ms.assetid: f0807be5-73d1-4a32-a701-3c9bdd139c5c
-ms.openlocfilehash: c1bb617e0f3792f2ac41d59df13d184423d56a9e
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: f21983702adb0ae080443e5869485fe581a65f85
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562040"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334086"
 ---
 # <a name="_set_error_mode"></a>_set_error_mode
 
@@ -53,19 +54,19 @@ int _set_error_mode(
 *mode_val*<br/>
 오류 메시지의 대상입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 오류가 발생하면 이전 설정 또는 -1을 반환합니다.
 
 ## <a name="remarks"></a>설명
 
-**__Error_mode**값을 설정 하 여 오류 출력 싱크를 제어 합니다. 예를 들어 출력을 표준 오류로 보내거나 **MessageBox** API를 사용할 수 있습니다.
+**__Error_mode** 값을 설정 하 여 오류 출력 싱크를 제어 합니다. 예를 들어 출력을 표준 오류로 보내거나 **MessageBox** API를 사용할 수 있습니다.
 
 *Mode_val* 매개 변수는 다음 값 중 하나로 설정할 수 있습니다.
 
-|값|Description|
+|값|설명|
 |---------------|-----------------|
-|**_OUT_TO_DEFAULT**|오류 싱크는 **__app_type**에 의해 결정 됩니다.|
+|**_OUT_TO_DEFAULT**|오류 싱크는 **__app_type** 에 의해 결정 됩니다.|
 |**_OUT_TO_STDERR**|오류 싱크가 표준 오류입니다.|
 |**_OUT_TO_MSGBOX**|오류 싱크가 메시지 상자입니다.|
 |**_REPORT_ERRMODE**|현재 **__error_mode** 값을 보고 합니다.|

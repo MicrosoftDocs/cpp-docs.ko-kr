@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 사용자 지정 (c + +)'
 title: custom(C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - custom attributes, defining
 ms.assetid: 3abac928-4d55-4ea6-8cf6-8427a4ad79f1
-ms.openlocfilehash: 7a1d9bd64a28fa7c08477c6011dc0e8236b7bcf6
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 7771230fd6eed5f567fb2e74e8cd869a0b3618f0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87521254"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333142"
 ---
 # <a name="custom-c"></a>custom(C++)
 
@@ -45,13 +46,13 @@ ms.locfileid: "87521254"
 ### <a name="attribute-context"></a>특성 컨텍스트
 
 - **적용 대상**: 비 COM `interface` , `idl_module` 메서드, 인터페이스 멤버, 인터페이스 매개 변수,,,, **`typedef`** **`class`** **`enum`** **`union`** 및 **`struct`** 형식입니다.
-- **반복**가능: 예.
+- **반복** 가능: 예.
 - **필수 특성**: **coclass** (클래스에서 사용 되는 경우).
 - **잘못 된 특성**: 없음.
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [IDL 특성](idl-attributes.md)<br/>
 [독립형 특성](stand-alone-attributes.md)<br/>

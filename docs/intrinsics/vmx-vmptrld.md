@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __vmx_vmptrld'
 title: __vmx_vmptrld
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - __vmx_vmptrld intrinsic
 - VMPTRLD instruction
 ms.assetid: 95c9ec5b-1a81-41ba-983e-327bd6a65fcb
-ms.openlocfilehash: 79b5a8b34b652ae1f011e89c793a7157c9e435ee
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 850311e4423940ebd34a203e6d43ec961b3258f4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219499"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333536"
 ---
 # <a name="__vmx_vmptrld"></a>__vmx_vmptrld
 
@@ -35,13 +36,13 @@ int __vmx_vmptrld(
 
 ## <a name="return-value"></a>반환 값
 
-0\
+0
 작업에 성공했습니다.
 
-1\
+1(sp1)
 현재 VMCS의 `VM-instruction error field` 에서 사용할 수 있는 확장된 상태로 작업이 실패했습니다.
 
-2\
+sr-2
 사용 가능한 상태 없이 작업이 실패했습니다.
 
 ## <a name="remarks"></a>설명
@@ -52,15 +53,15 @@ VMCS 포인터는 64 비트 실제 주소입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`__vmx_vmptrld`|X64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)\
 [__vmx_vmptrst](../intrinsics/vmx-vmptrst.md)

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4002'
 title: 컴파일러 경고(수준 1) C4002
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4002
 ms.assetid: 6bda1dfe-e2e4-4771-9794-5a404c466dd5
-ms.openlocfilehash: cb1e36a606f5c8bb0a1622260d64124264f0db32
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 5a0150c10e6a80604b97528dcedfc15b2cf4d0e0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80164770"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336007"
 ---
 # <a name="compiler-warning-level-1-c4002"></a>컴파일러 경고(수준 1) C4002
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _ismbbblank, _ismbbblank_l'
 title: _ismbbblank, _ismbbblank_l
 ms.date: 4/2/2020
 api_name:
@@ -24,12 +25,12 @@ api_type:
 topic_type:
 - apiref
 ms.assetid: d21b2e41-7206-41f5-85bb-9c9ab4f3e21b
-ms.openlocfilehash: 8285a3ae34c3b0fd678e447c76a28495b6f4ffb3
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 3d604b377ff874418dab11405ad2c891792a5bda
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82909534"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335642"
 ---
 # <a name="_ismbbblank-_ismbbblank_l"></a>_ismbbblank, _ismbbblank_l
 
@@ -58,7 +59,7 @@ int _ismbbblank_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 *c* 가 공백 (0x20) 문자, 가로 탭 (0x09) 문자 또는 **isspace** 가 true 인 텍스트 줄 내에서 단어를 구분 하는 데 사용 되는 로캘별 문자를 나타내는 경우에는 0이 아닌 값을 반환 합니다. **_ismbbblank** 그렇지 않으면 0을 반환 합니다. **_ismbbblank** 은 모든 로캘 종속 동작에 현재 로캘을 사용 합니다. **_ismbbblank_l** 은 전달 된 로캘을 대신 사용 한다는 점을 제외 하 고 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
@@ -75,7 +76,7 @@ int _ismbbblank_l(
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [바이트 분류](../../c-runtime-library/byte-classification.md)<br/>
 [_ismbb 루틴](../../c-runtime-library/ismbb-routines.md)<br/>

@@ -1,16 +1,17 @@
 ---
+description: '자세히 알아보기: CMFCPrintPreviewToolBar 클래스'
 title: CMFCPrintPreviewToolBar 클래스
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CMFCPrintPreviewToolBar class [MFC]
 - CMFCPrintPreviewToolBar class [MFC], destructor
 ms.assetid: 7b9f641b-d402-4339-8815-e5247237e7e5
-ms.openlocfilehash: ee66c5faf12a8fd651c481f058c24b649a6c2fb4
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 69fef1ff5cc2a1ec8be99bdc896491fdbae19184
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838648"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334721"
 ---
 # <a name="cmfcprintpreviewtoolbar-class"></a>CMFCPrintPreviewToolBar 클래스
 

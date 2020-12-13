@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4234'
 title: 컴파일러 경고(수준 4) C4234
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4234
 ms.assetid: f7fecd5c-8248-4fde-8446-502aedc357ca
-ms.openlocfilehash: c27f16f7d2933ca1860b304afa6e04f96f0687f0
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 98a3f5bc2c13dec3822342a669f7c9de3dc452fc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80173909"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334905"
 ---
 # <a name="compiler-warning-level-4-c4234"></a>컴파일러 경고(수준 4) C4234
 

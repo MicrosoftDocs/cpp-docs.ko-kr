@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2183'
 title: 컴파일러 오류 C2183
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2183
 ms.assetid: 03d2d010-a276-4ac3-820c-159abd8b1222
-ms.openlocfilehash: 3ba545e38603c6584c47beaa3cfca9a1d88856fe
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 536f90d5c76638fc5ddfd2535a25f4a3644b194c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80206910"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335161"
 ---
 # <a name="compiler-error-c2183"></a>컴파일러 오류 C2183
 

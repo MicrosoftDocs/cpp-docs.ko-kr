@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2271'
 title: 컴파일러 오류 C2271
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2271
 ms.assetid: ea47bf57-f55d-4171-8e98-95a71d62820e
-ms.openlocfilehash: 8972b055020e5b28e8e33cd37ec964069ecc7dc6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 750af0551aadc274ea2c90f265fe9df9e0e9ab6b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220407"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336277"
 ---
 # <a name="compiler-error-c2271"></a>컴파일러 오류 C2271
 

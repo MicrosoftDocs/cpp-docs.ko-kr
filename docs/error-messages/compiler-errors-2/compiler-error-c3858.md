@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3858'
 title: 컴파일러 오류 C3858
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3858
 ms.assetid: 46e178d5-a55f-4ac6-a9dc-561fbcba5c1f
-ms.openlocfilehash: e7fcc59ed6708cdf9d20db8d24e008f081e3eb6c
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 16547372e30d20f961f1c7f011894b021d96d587
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74754799"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336126"
 ---
 # <a name="compiler-error-c3858"></a>컴파일러 오류 C3858
 

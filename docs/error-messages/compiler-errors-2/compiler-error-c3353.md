@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3353'
 title: 컴파일러 오류 C3353
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3353
 ms.assetid: 5699c04b-d504-46ce-bf71-c200318fed71
-ms.openlocfilehash: 332e0b253aed53f2adadf448b6a9c0681abc825e
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 50ff7a6b104f3e16ce17f1398da49a146c0d41a4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74747453"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335038"
 ---
 # <a name="compiler-error-c3353"></a>컴파일러 오류 C3353
 

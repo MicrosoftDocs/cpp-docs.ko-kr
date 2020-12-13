@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _ismbbalpha, _ismbbalpha_l'
 title: _ismbbalpha, _ismbbalpha_l
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - _ismbbalpha function
 - _ismbbalpha_l function
 ms.assetid: 8e54cb92-fc2b-41f5-8ab4-b22ac8aa9ad0
-ms.openlocfilehash: 1fa92d8e0f0ed331110666add1015fbdacf20f07
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 93ae26ff54af4cdee5f99e51c8f85d14ec51ae4e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917493"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335663"
 ---
 # <a name="_ismbbalpha-_ismbbalpha_l"></a>_ismbbalpha, _ismbbalpha_l
 
@@ -64,13 +65,13 @@ int _ismbbalpha_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 식이 다음과 같이 0이 아닌 값을 반환 **_ismbbalpha**
 
 `isalpha(c) || _ismbbkalnum(c)`
 
-*c*의 경우 0이 아니고, 그렇지 않으면 0입니다. **_ismbbalpha** 은 모든 로캘 종속 문자 설정에 대해 현재 로캘을 사용 합니다. **_ismbbalpha_l** 은 전달 된 로캘을 사용 한다는 점을 제외 하 고 동일 합니다.
+*c* 의 경우 0이 아니고, 그렇지 않으면 0입니다. **_ismbbalpha** 은 모든 로캘 종속 문자 설정에 대해 현재 로캘을 사용 합니다. **_ismbbalpha_l** 은 전달 된 로캘을 사용 한다는 점을 제외 하 고 동일 합니다.
 
 ## <a name="remarks"></a>설명
 
@@ -89,7 +90,7 @@ int _ismbbalpha_l(
 
 모든 버전의 [C 런타임 라이브러리](../../c-runtime-library/crt-library-features.md)입니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [바이트 분류](../../c-runtime-library/byte-classification.md)<br/>
 [_ismbb 루틴](../../c-runtime-library/ismbb-routines.md)<br/>

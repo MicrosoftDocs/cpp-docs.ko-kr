@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 C4959'
 title: 컴파일러 경고 C4959
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4959
 ms.assetid: 3a128f3e-4d8a-4565-ba1a-5d32fdeb5982
-ms.openlocfilehash: 13d2ed705bff7b42eb3c348692a5829bd54158b0
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3a4fae04ee654caf23776a7bf4d6b073853bd03a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80164874"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336086"
 ---
 # <a name="compiler-warning-c4959"></a>컴파일러 경고 C4959
 
@@ -21,7 +22,7 @@ ms.locfileid: "80164874"
 
 관리되지 않는 형식의 멤버에 액세스하면 확인할 수 없는 (peverify.exe) 이미지가 생성됩니다.
 
-자세한 내용은 [순수형 및 안정형 코드C++(/cli)](../../dotnet/pure-and-verifiable-code-cpp-cli.md)를 참조 하세요.
+자세한 내용은 [순수형 및 안정형 코드 (c + +/cli)](../../dotnet/pure-and-verifiable-code-cpp-cli.md)를 참조 하세요.
 
 **/Clr: safe** 컴파일러 옵션은 visual studio 2015에서 더 이상 사용 되지 않으며 visual studio 2017에서는 지원 되지 않습니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 기본 클래스'
 title: 기본 클래스
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - virtual base classes [C++]
 - base classes [C++]
 ms.assetid: 6e6d54d0-6f21-4a16-9103-22935d98f596
-ms.openlocfilehash: 50bddef3ea1ee1462d8cf115c0980270c8deab25
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 914a09817c29683123823acfff80c0428da6b2d7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80181475"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335611"
 ---
 # <a name="base-classes"></a>기본 클래스
 

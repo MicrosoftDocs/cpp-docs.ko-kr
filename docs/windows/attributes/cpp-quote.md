@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: cpp_quote'
 title: cpp_quote (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - cpp_quote attribute
 ms.assetid: f75327ff-42bd-498b-9177-7ffa25427e1f
-ms.openlocfilehash: 27be83d123b5433f79c4c8a702197fc6f9f1a753
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: fe8424fd16cb75e320f8c1a1f8e3e444cf2185ea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833168"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333169"
 ---
 # <a name="cpp_quote"></a>cpp_quote
 
@@ -38,7 +39,7 @@ C 명령입니다.
 
 ## <a name="example"></a>예제
 
-예제를 보려면 예제를 사용 하는 방법 [예제를 참조](dual.md) 하십시오. **cpp_quote**를 사용 하는 방법을 사용 합니다.
+예제를 보려면 예제를 사용 하는 방법 [예제를 참조](dual.md) 하십시오. **cpp_quote** 를 사용 하는 방법을 사용 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

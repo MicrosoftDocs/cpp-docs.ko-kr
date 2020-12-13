@@ -1,14 +1,15 @@
 ---
+description: '자세한 정보: Windows 런타임 c + + 템플릿 라이브러리 (WRL)'
 title: Windows 런타임 C++ 템플릿 라이브러리(WRL)
 ms.date: 11/04/2016
 ms.topic: overview
 ms.assetid: b915afce-553b-44a7-b8dc-0ab601758eb0
-ms.openlocfilehash: 12bda00d6687340fbddfb8f81bbb83b6c2bd98a6
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: cc94f907964efdf4bf93e8d92922f69373740d85
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509802"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333918"
 ---
 # <a name="windows-runtime-c-template-library-wrl"></a>Windows 런타임 C++ 템플릿 라이브러리(WRL)
 
@@ -115,7 +116,7 @@ Windows 런타임 c + + 템플릿 라이브러리는 몇 가지 기본 개념을
 
 [RuntimeClass](runtimeclass-class.md) 는 지정된 인터페이스 집합을 상속받는 인스턴스화된 클래스를 나타냅니다. `RuntimeClass`개체는 하나 이상의 WINDOWS 런타임 COM 인터페이스에 대 한 지원 또는 구성 요소에 대 한 약한 참조의 조합을 제공할 수 있습니다.
 
-### <a name="module"></a>모듈
+### <a name="module"></a>Module
 
 [Module](module-class.md) 은 관련 개체의 컬렉션을 나타냅니다. `Module` 개체는 개체를 생성하는 클래스 팩터리와, 다른 애플리케이션이 개체를 사용할 수 있도록 하는 등록을 관리합니다.
 
@@ -137,7 +138,7 @@ Windows 런타임 c + + 템플릿 라이브러리는 몇 가지 기본 개념을
 
 ### <a name="weakref"></a>WeakRef
 
-[WeakRef](weakref-class.md) 는 액세스할 수 있거나 액세스하지 못할 수 있는 개체를 참조하는 *약한 참조*를 나타내는 스마트 포인터 형식입니다. `WeakRef`개체는 클래식 COM이 아닌 Windows 런타임 에서만 사용할 수 있습니다.
+[WeakRef](weakref-class.md) 는 액세스할 수 있거나 액세스하지 못할 수 있는 개체를 참조하는 *약한 참조* 를 나타내는 스마트 포인터 형식입니다. `WeakRef`개체는 클래식 COM이 아닌 Windows 런타임 에서만 사용할 수 있습니다.
 
 `WeakRef` 개체는 일반적으로 외부 스레드나 애플리케이션에서 제어하는 개체를 나타냅니다. 예를 들어 `WeakRef` 개체는 파일 개체를 참조할 수 있습니다. 파일을 열면 `WeakRef` 가 유효해지고 참조 파일을 액세스할 수 있게 됩니다. 하지만 파일이 닫히면 `WeakRef` 가 무효가 되고 파일을 액세스할 수 없게 됩니다.
 

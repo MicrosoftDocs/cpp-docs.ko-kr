@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 입력 및 출력'
 title: 입력 및 출력
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - I/O [CRT], routines
 - output routines
 ms.assetid: 1c177301-e341-4ca0-aedc-0a87fe1c75ae
-ms.openlocfilehash: 2669ed3437fe0eea7dd648367feabe66ae6ed6d4
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: 0edd66765f1633dc0adf12b311faf81d3a030512
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57738521"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334289"
 ---
 # <a name="input-and-output"></a>입력 및 출력
 

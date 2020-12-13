@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 클래스 템플릿'
 title: 클래스 템플릿
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,16 +7,16 @@ helpviewer_keywords:
 - class templates
 - templates, class templates
 ms.assetid: 633a53c8-24ee-4c23-8c88-e7c3cb0b7ac3
-ms.openlocfilehash: 36c5263213b5ef348bb341a83da097db7dbb1d9d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3b82cb03fb6f33b8895a6877de98665419902333
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80180916"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335574"
 ---
 # <a name="class-templates"></a>클래스 템플릿
 
-이 항목에서는 C++ 클래스 템플릿과 관련된 규칙을 설명합니다.
+이 항목에서는 c + + 클래스 템플릿과 관련 된 규칙을 설명 합니다.
 
 ## <a name="member-functions-of-class-templates"></a>클래스 템플릿의 멤버 함수
 

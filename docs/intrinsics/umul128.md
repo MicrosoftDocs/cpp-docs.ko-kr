@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _umul128'
 title: _umul128
 ms.date: 09/02/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - __umul128 intrinsic
 ms.assetid: 13684df3-3ac7-467c-b258-a0e93bc490b5
-ms.openlocfilehash: 205f0f7f9046ede624bb09e18d8ede32fadbc3de
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 7fd126b169bd01fc4d51d186879e019f8d86f008
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219698"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333603"
 ---
 # <a name="_umul128"></a>_umul128
 
@@ -46,7 +47,7 @@ unsigned __int64 _umul128(
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|헤더|
+|Intrinsic|Architecture|헤더|
 |---------------|------------------|------------|
 |`_umul128`|X64|\<intrin.h>|
 
@@ -79,6 +80,6 @@ int main()
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

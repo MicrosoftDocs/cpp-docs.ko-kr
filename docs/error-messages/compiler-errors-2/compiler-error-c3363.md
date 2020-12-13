@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3363'
 title: 컴파일러 오류 C3363
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3363
 ms.assetid: 41aa922f-608e-4f7a-ba66-451fc1161935
-ms.openlocfilehash: 44b41dd706c7eb290c71d7312464d688cbcf08d3
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: b746a4c1e220ee05f96f3f2ceae524d5747550d7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757360"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335029"
 ---
 # <a name="compiler-error-c3363"></a>컴파일러 오류 C3363
 

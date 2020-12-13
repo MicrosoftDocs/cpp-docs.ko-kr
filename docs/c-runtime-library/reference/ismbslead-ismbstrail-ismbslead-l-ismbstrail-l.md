@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: _ismbslead, _ismbstrail, _ismbslead_l, _ismbstrail_l'
 title: _ismbslead, _ismbstrail, _ismbslead_l, _ismbstrail_l
 ms.date: 4/2/2020
 api_name:
@@ -48,12 +49,12 @@ helpviewer_keywords:
 - ismbstrail_l function
 - _ismbstrail_l function
 ms.assetid: 86d2cd7a-3cff-443a-b713-14cc17a231e9
-ms.openlocfilehash: 892545ba0ac66604b0ea1c5adcfa32dd64b68973
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 54745c2db33a68b35236c5b6169280e5e7dacfef
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919169"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334130"
 ---
 # <a name="_ismbslead-_ismbstrail-_ismbslead_l-_ismbstrail_l"></a>_ismbslead, _ismbstrail, _ismbslead_l, _ismbstrail_l
 
@@ -87,7 +88,7 @@ int _ismbstrail_l(
 
 ### <a name="parameters"></a>매개 변수
 
-*문자열*<br/>
+*str*<br/>
 문자열의 시작이나 알려진 이전 선행 바이트를 가리키는 포인터입니다.
 
 *현재*<br/>
@@ -96,9 +97,9 @@ int _ismbstrail_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-문자는 선행 바이트 이면-1을 반환 하 고 **_ismbstrail** 문자가 후행 바이트인 경우에는-1을 반환 **_ismbslead** . 입력 문자열이 유효하지만 선행 바이트나 후행 바이트가 아닌 경우 이러한 함수는 0을 반환합니다. 두 인수 중 하나가 **NULL**이면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **NULL** 을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
+문자는 선행 바이트 이면-1을 반환 하 고 **_ismbstrail** 문자가 후행 바이트인 경우에는-1을 반환 **_ismbslead** . 입력 문자열이 유효하지만 선행 바이트나 후행 바이트가 아닌 경우 이러한 함수는 0을 반환합니다. 두 인수 중 하나가 **NULL** 이면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **NULL** 을 반환 하 고 **errno** 를 **EINVAL** 로 설정 합니다.
 
 ## <a name="remarks"></a>설명
 
@@ -121,7 +122,7 @@ int _ismbstrail_l(
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [문자 분류](../../c-runtime-library/character-classification.md)<br/>
 [_ismbc 루틴](../../c-runtime-library/ismbc-routines.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4235'
 title: 컴파일러 경고(수준 4) C4235
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4235
 ms.assetid: d4214799-d62c-4674-b4e2-9e201c303303
-ms.openlocfilehash: df80bec2294929be463425d74d4bf00421b368e6
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 011586efb311cab1da5cd4452bbbc03a942a5045
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80198434"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334892"
 ---
 # <a name="compiler-warning-level-4-c4235"></a>컴파일러 경고(수준 4) C4235
 

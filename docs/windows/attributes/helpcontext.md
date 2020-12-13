@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: helpcontext'
 title: helpcontext (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - helpcontext attribute
 ms.assetid: 6fbb022d-a4b7-4989-a02f-7f18a9b0ad96
-ms.openlocfilehash: 60e6bf66e088872a357751e4a7b7e043cd9b4dfc
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: cfedec2f7650490dd266331e6853ba47265aa4ec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845252"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335721"
 ---
 # <a name="helpcontext"></a>helpcontext
 
@@ -26,7 +27,7 @@ ms.locfileid: "88845252"
 ### <a name="parameters"></a>매개 변수
 
 *id*<br/>
-도움말 항목의 컨텍스트 ID입니다. 컨텍스트 Id에 대 한 자세한 내용은 [HTML 도움말: 프로그램에 대 한 상황](../../mfc/html-help-context-sensitive-help-for-your-programs.md) 에 맞는 도움말을 참조 하세요.
+도움말 항목의 컨텍스트 ID입니다. 컨텍스트 Id에 대 한 자세한 내용은 [HTML 도움말: 프로그램에 대 한 도움말 Context-Sensitive](../../mfc/html-help-context-sensitive-help-for-your-programs.md) 를 참조 하세요.
 
 ## <a name="remarks"></a>설명
 
@@ -34,7 +35,7 @@ ms.locfileid: "88845252"
 
 ## <a name="example"></a>예제
 
-**Helpcontext**를 사용 하는 방법에 대 한 예제는 [defaultvalue](defaultvalue.md) 의 예제를 참조 하세요.
+**Helpcontext** 를 사용 하는 방법에 대 한 예제는 [defaultvalue](defaultvalue.md) 의 예제를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 

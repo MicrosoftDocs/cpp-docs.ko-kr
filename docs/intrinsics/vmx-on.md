@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __vmx_on'
 title: __vmx_on
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - VMXON instruction
 - __vmx_on intrinsic
 ms.assetid: 16804991-6a75-4adf-8ec2-bc95acfa4801
-ms.openlocfilehash: b6041711d9b6806362b856475151f2c4f63750cb
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: a1e9171fe64a239b592f0d27ec49d4159b46523d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219583"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333576"
 ---
 # <a name="__vmx_on"></a>__vmx_on
 
@@ -43,18 +44,18 @@ unsigned char __vmx_on(
 
 ## <a name="remarks"></a>설명
 
-함수 `__vmx_on` 는 `VMXON` 컴퓨터 명령에 해당 합니다. 이 함수는 게스트 운영 체제 및 해당 애플리케이션과 호스트 가상 머신 모니터의 상호 작용을 지원합니다. 자세한 내용을 보려면 [Intel Corporation](https://software.intel.com/articles/intel-sdm) 사이트에서 "IA-32 Intel 아키텍처용 Intel 가상화 기술 사양" 문서 번호 C97063-002 문서를 검색 하십시오.
+`__vmx_on`함수는 `VMXON` 컴퓨터 명령에 해당 합니다. 이 함수는 게스트 운영 체제 및 해당 애플리케이션과 호스트 가상 머신 모니터의 상호 작용을 지원합니다. 자세한 내용을 보려면 [Intel Corporation](https://software.intel.com/articles/intel-sdm) 사이트에서 "IA-32 Intel 아키텍처용 Intel 가상화 기술 사양" 문서 번호 C97063-002 문서를 검색 하십시오.
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`__vmx_on`|X64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

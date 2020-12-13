@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: db_table'
 title: db_table (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - db_table attribute
 ms.assetid: ff9eb957-4e6d-4175-afcc-fd8ea916cec0
-ms.openlocfilehash: dfdf012550359d0658d53b3f67c0619a124b6309
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 3d871961a8ded6070127e5e562615018a4320162
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834195"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333049"
 ---
 # <a name="db_table"></a>db_table
 
@@ -41,7 +42,7 @@ OLE DB 테이블을 엽니다.
 
 **db_table** 는 OLE DB 소비자가 테이블을 여는 데 사용 하는 [CTable](../../data/oledb/ctable-class.md) 개체를 만듭니다. 이 특성은 클래스 수준 에서만 사용할 수 있습니다. 인라인에서는 사용할 수 없습니다. `db_column`를 사용 하 여 테이블 열을 변수에 바인딩한 다음를 사용 하 여 `db_param` 매개 변수 형식을 구분 (설정) 합니다.
 
-소비자 특성 공급자가 클래스에 이 특성을 적용하는 경우 컴파일러는 클래스의 이름을 _\_*YourClassName*Accessor로 바꿉니다. 여기서 *YourClassName*은 클래스에 지정한 이름입니다. 컴파일러는 또한 \_*YourClassName*Accessor에서 파생되는 *YourClassName*이라는 클래스를 만듭니다.  클래스 뷰에 두 클래스 모두 표시됩니다.
+소비자 특성 공급자가 클래스에 이 특성을 적용하는 경우 컴파일러는 클래스의 이름을 _\_*YourClassName* Accessor로 바꿉니다. 여기서 *YourClassName* 은 클래스에 지정한 이름입니다. 컴파일러는 또한 \_*YourClassName* Accessor에서 파생되는 *YourClassName* 이라는 클래스를 만듭니다.  클래스 뷰에 두 클래스 모두 표시됩니다.
 
 ## <a name="example"></a>예제
 

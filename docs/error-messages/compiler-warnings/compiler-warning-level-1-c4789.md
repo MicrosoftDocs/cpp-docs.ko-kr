@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4789'
 title: 컴파일러 경고(수준 1) C4789
 ms.date: 03/25/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4789
 ms.assetid: 5800c301-5afb-4af0-85c1-ceb54d775234
-ms.openlocfilehash: 1e089c45598a53ff337e389feb2a6983a2997041
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: c08264b1790788c2eaba7857f473a5bff42a2da3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90684627"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334965"
 ---
 # <a name="compiler-warning-level-1-c4789"></a>컴파일러 경고(수준 1) C4789
 

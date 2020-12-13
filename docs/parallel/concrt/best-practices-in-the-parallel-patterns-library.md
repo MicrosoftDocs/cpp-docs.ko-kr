@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 병렬 패턴 라이브러리의 모범 사례'
 title: 병렬 패턴 라이브러리의 유용한 정보
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - best practices, Parallel Patterns Library
 - Parallel Patterns Library, best practices
 ms.assetid: e43e0304-4d54-4bd8-a3b3-b8673559a9d7
-ms.openlocfilehash: 0bd49dda881df402a8c511714c22be37da3a50c4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 72b0ff36532decbc55ae792ee407b3b711bd54a5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231730"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334691"
 ---
 # <a name="best-practices-in-the-parallel-patterns-library"></a>병렬 패턴 라이브러리의 유용한 정보
 
@@ -20,7 +21,7 @@ ms.locfileid: "87231730"
 
 PPL에 대 한 자세한 내용은 [ppl (병렬 패턴 라이브러리)](../../parallel/concrt/parallel-patterns-library-ppl.md)을 참조 하세요.
 
-## <a name="sections"></a><a name="top"></a>섹션이
+## <a name="sections"></a><a name="top"></a> 섹션이
 
 이 문서는 다음 섹션으로 구성됩니다.
 
@@ -44,7 +45,7 @@ PPL에 대 한 자세한 내용은 [ppl (병렬 패턴 라이브러리)](../../p
 
 - [작업의 전체 수명 동안 변수가 유효한지 확인](#lifetime)
 
-## <a name="do-not-parallelize-small-loop-bodies"></a><a name="small-loops"></a>작은 루프 본문을 병렬화 하지 않음
+## <a name="do-not-parallelize-small-loop-bodies"></a><a name="small-loops"></a> 작은 루프 본문을 병렬화 하지 않음
 
 비교적 작은 루프 본문을 평행화하면 관련된 예약 오버헤드가 병렬 처리의 이점보다 더 커질 수 있습니다. 두 배열에 각 요소 쌍을 추가하는 다음 예제를 고려해 보세요.
 
@@ -54,7 +55,7 @@ PPL에 대 한 자세한 내용은 [ppl (병렬 패턴 라이브러리)](../../p
 
 [[맨 위로](#top)이동]
 
-## <a name="express-parallelism-at-the-highest-possible-level"></a><a name="highest"></a>가능한 가장 높은 수준에서 병렬 처리
+## <a name="express-parallelism-at-the-highest-possible-level"></a><a name="highest"></a> 가능한 가장 높은 수준에서 병렬 처리
 
 낮은 수준에서만 코드를 병렬 처리하는 경우 프로세서 수가 증가할 때 크기가 조정되지 않는 분기-조인 구문이 도입될 수 있습니다. *포크 조인* 구문은 한 태스크에서 작업을 더 작은 병렬 하위 작업으로 나누고 해당 하위 작업이 완료 될 때까지 대기 하는 구문입니다. 각 하위 작업은 재귀적으로 추가 하위 작업으로 나뉠 수 있습니다.
 
@@ -76,11 +77,11 @@ PPL에 대 한 자세한 내용은 [ppl (병렬 패턴 라이브러리)](../../p
 
 [!code-cpp[concrt-image-processing-filter#22](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-parallel-patterns-library_5.cpp)]
 
-파이프라인을 사용 하 여 이미지 처리를 병렬로 수행 하는 비슷한 예제는 [연습: 이미지 처리 네트워크 만들기](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)를 참조 하세요.
+파이프라인을 사용 하 여 동시에 이미지 처리를 수행 하는 비슷한 예제는 [연습: Image-Processing 네트워크 만들기](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)를 참조 하세요.
 
 [[맨 위로](#top)이동]
 
-## <a name="use-parallel_invoke-to-solve-divide-and-conquer-problems"></a><a name="divide-and-conquer"></a>Parallel_invoke를 사용 하 여 나누기 및 정복 문제 해결
+## <a name="use-parallel_invoke-to-solve-divide-and-conquer-problems"></a><a name="divide-and-conquer"></a> Parallel_invoke를 사용 하 여 나누기 및 정복 문제 해결
 
 *나누기 및* 해결 문제는 재귀를 사용 하 여 작업을 하위 작업으로 나누는 포크 조인 구문의 형태입니다. Concurrency: [: task_group](reference/task-group-class.md) 및 [concurrency:: structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) 클래스 외에도 [concurrency::p arallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) 알고리즘을 사용 하 여 분할 및 문제를 해결할 수 있습니다. `parallel_invoke` 알고리즘은 작업 그룹 개체보다 구문이 더 간결하며 고정된 개수의 병렬 작업이 있는 경우에 유용합니다.
 
@@ -94,7 +95,7 @@ PPL에 대 한 자세한 내용은 [ppl (병렬 패턴 라이브러리)](../../p
 
 [[맨 위로](#top)이동]
 
-## <a name="use-cancellation-or-exception-handling-to-break-from-a-parallel-loop"></a><a name="breaking-loops"></a>취소 또는 예외 처리를 사용 하 여 병렬 루프 중단
+## <a name="use-cancellation-or-exception-handling-to-break-from-a-parallel-loop"></a><a name="breaking-loops"></a> 취소 또는 예외 처리를 사용 하 여 병렬 루프 중단
 
 PPL은 작업 그룹 또는 병렬 알고리즘에서 수행하는 병렬 작업을 취소하는 두 가지 방법을 제공합니다. 한 가지 방법은 [concurrency:: task_group](reference/task-group-class.md) 및 [concurrency:: structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) 클래스에서 제공 하는 취소 메커니즘을 사용 하는 것입니다. 다른 방법은 작업 함수의 본문에서 예외를 발생시키는 것입니다. 병렬 작업 트리를 취소하는 경우 취소 메커니즘이 예외 처리보다 더 효율적입니다. *병렬 작업 트리* 는 일부 작업 그룹이 다른 작업 그룹을 포함 하는 관련 작업 그룹의 그룹입니다. 취소 메커니즘은 하향식으로 작업 그룹 및 자식 작업 그룹을 취소합니다. 반대로 예외 처리는 상향식으로 작동하고 예외가 위쪽으로 전파될 때 각 자식 작업 그룹을 개별적으로 취소해야 합니다.
 
@@ -118,7 +119,7 @@ PPL에서 제공 하는 취소 및 예외 처리 메커니즘에 대 한 일반�
 
 [[맨 위로](#top)이동]
 
-## <a name="understand-how-cancellation-and-exception-handling-affect-object-destruction"></a><a name="object-destruction"></a>취소 및 예외 처리가 개체 소멸에 미치는 영향 이해
+## <a name="understand-how-cancellation-and-exception-handling-affect-object-destruction"></a><a name="object-destruction"></a> 취소 및 예외 처리가 개체 소멸에 미치는 영향 이해
 
 병렬 작업 트리에서 취소된 작업은 자식 작업이 실행되지 않도록 합니다. 따라서 자식 작업 중 하나가 리소스 해제와 같이 애플리케이션에 중요한 작업을 수행하는 경우 문제가 발생할 수 있습니다. 또한 작업 취소로 인해 예외가 개체 소멸자를 통해 전파되고 애플리케이션에서 정의되지 않은 동작이 발생할 수 있습니다.
 
@@ -148,7 +149,7 @@ Container 1: Freeing resources...Exiting program...
 
 [[맨 위로](#top)이동]
 
-## <a name="do-not-block-repeatedly-in-a-parallel-loop"></a><a name="repeated-blocking"></a>병렬 루프에서 반복적으로 차단 하지 않습니다.
+## <a name="do-not-block-repeatedly-in-a-parallel-loop"></a><a name="repeated-blocking"></a> 병렬 루프에서 반복적으로 차단 하지 않습니다.
 
 블로킹 작업으로 인해 발생 하는 [동시성::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for) 또는 [동시성::p arallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) 와 같은 병렬 루프는 런타임에서 짧은 시간 동안 많은 스레드를 만들 수 있습니다.
 
@@ -164,7 +165,7 @@ Container 1: Freeing resources...Exiting program...
 
 [[맨 위로](#top)이동]
 
-## <a name="do-not-perform-blocking-operations-when-you-cancel-parallel-work"></a><a name="blocking"></a>병렬 작업을 취소할 때 차단 작업 수행 안 함
+## <a name="do-not-perform-blocking-operations-when-you-cancel-parallel-work"></a><a name="blocking"></a> 병렬 작업을 취소할 때 차단 작업 수행 안 함
 
 가능 하면 [concurrency:: task_group:: cancel](reference/task-group-class.md#cancel) 또는 [concurrency:: structured_task_group:: cancel](reference/structured-task-group-class.md#cancel) 메서드를 호출 하 여 병렬 작업을 취소 하기 전에 차단 작업을 수행 하지 마십시오.
 
@@ -182,7 +183,7 @@ Container 1: Freeing resources...Exiting program...
 
 [[맨 위로](#top)이동]
 
-## <a name="do-not-write-to-shared-data-in-a-parallel-loop"></a><a name="shared-writes"></a>병렬 루프에서 공유 데이터에 쓰지 않음
+## <a name="do-not-write-to-shared-data-in-a-parallel-loop"></a><a name="shared-writes"></a> 병렬 루프에서 공유 데이터에 쓰지 않음
 
 동시성 런타임는 공유 데이터에 대 한 동시 액세스를 동기화 하는 여러 데이터 구조 (예: [Concurrency:: critical_section](../../parallel/concrt/reference/critical-section-class.md))를 제공 합니다. 이러한 데이터 구조는 여러 작업이 가끔 리소스에 대한 공유 액세스를 요구하는 경우 등 여러 경우에서 유용합니다.
 
@@ -202,7 +203,7 @@ PPL은 [concurrency:: 결합할](../../parallel/concrt/reference/combinable-clas
 
 [[맨 위로](#top)이동]
 
-## <a name="when-possible-avoid-false-sharing"></a><a name="false-sharing"></a>가능 하면 거짓 공유 방지
+## <a name="when-possible-avoid-false-sharing"></a><a name="false-sharing"></a> 가능 하면 거짓 공유 방지
 
 *False 공유* 는 별도의 프로세서에서 실행 되는 여러 동시 태스크가 동일한 캐시 줄에 있는 변수에 쓰는 경우에 발생 합니다. 한 작업이 변수 중 하나에 쓰는 경우 두 변수에 대한 캐시 라인이 모두 무효화됩니다. 캐시 라인이 무효화될 때마다 각 프로세서가 캐시 라인을 다시 로드해야 합니다. 따라서 거짓 공유로 인해 애플리케이션 성능이 저하될 수 있습니다.
 
@@ -224,7 +225,7 @@ PPL은 [concurrency:: 결합할](../../parallel/concrt/reference/combinable-clas
 
 [[맨 위로](#top)이동]
 
-## <a name="make-sure-that-variables-are-valid-throughout-the-lifetime-of-a-task"></a><a name="lifetime"></a>변수가 작업의 수명 내내 유효 하는지 확인 합니다.
+## <a name="make-sure-that-variables-are-valid-throughout-the-lifetime-of-a-task"></a><a name="lifetime"></a> 변수가 작업의 수명 내내 유효 하는지 확인 합니다.
 
 작업 그룹 또는 병렬 알고리즘에 람다 식을 제공하는 경우 캡처 절은 람다 식의 본문이 값이나 참조로 바깥쪽 범위의 변수에 액세스하는지를 지정합니다. 변수를 참조로 람다 식에 전달하는 경우 작업이 완료될 때까지 해당 변수의 수명이 유지되도록 보장해야 합니다.
 
@@ -264,7 +265,7 @@ PPL은 [concurrency:: 결합할](../../parallel/concrt/reference/combinable-clas
 [병렬 알고리즘](../../parallel/concrt/parallel-algorithms.md)<br/>
 [PPL에서의 취소](cancellation-in-the-ppl.md)<br/>
 [예외 처리](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)<br/>
-[연습: 이미지 처리 네트워크 만들기](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)<br/>
+[연습: Image-Processing 네트워크 만들기](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)<br/>
 [방법: parallel_invoke를 사용 하 여 병렬 정렬 루틴 작성](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md)<br/>
 [방법: 취소를 사용 하 여 병렬 루프 중단](../../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md)<br/>
 [방법: 결합을 사용 하 여 성능 향상](../../parallel/concrt/how-to-use-combinable-to-improve-performance.md)<br/>

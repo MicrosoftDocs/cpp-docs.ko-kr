@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4003'
 title: 컴파일러 경고 (수준 1) C4003
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4003
 ms.assetid: 0ed1c285-4428-4c90-8131-86897e31f115
-ms.openlocfilehash: 3bf1eea1b8ad0529d6603a2388e61b9107304f43
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d8a581e9cf6152a3e0e92832b36e5f61a94277f1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80164744"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335988"
 ---
 # <a name="compiler-warning-level-1-c4003"></a>컴파일러 경고 (수준 1) C4003
 

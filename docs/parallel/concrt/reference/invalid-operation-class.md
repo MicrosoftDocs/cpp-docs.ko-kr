@@ -1,4 +1,5 @@
 ---
+description: Invalid_operation 클래스에 대해 자세히 알아보세요.
 title: invalid_operation 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - invalid_operation class
 ms.assetid: 26ba07dc-fcdf-44cb-b748-a31d35205b52
-ms.openlocfilehash: e17d530569d16ba0084a58bf0be00d4a8423b7f6
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: f3050d487f2c374f66f264b6e568fce5244d25ba
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77140877"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334541"
 ---
 # <a name="invalid_operation-class"></a>invalid_operation 클래스
 
@@ -29,7 +30,7 @@ class invalid_operation : public std::exception;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
 |[invalid_operation](#ctor)|오버로드됨. `invalid_operation` 개체를 생성합니다.|
 
@@ -37,7 +38,7 @@ class invalid_operation : public std::exception;
 
 이 예외를 throw하는 다양한 메서드는 일반적으로 어떤 상황에서 이를 throw할지 문서화합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `exception`
 
@@ -47,9 +48,9 @@ class invalid_operation : public std::exception;
 
 **헤더:** concrt .h
 
-**네임스페이스:** 동시성
+**네임 스페이스:** 동시성
 
-## <a name="ctor"></a>invalid_operation
+## <a name="invalid_operation"></a><a name="ctor"></a> invalid_operation
 
 `invalid_operation` 개체를 생성합니다.
 
@@ -66,4 +67,4 @@ invalid_operation() throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[concurrency 네임스페이스](concurrency-namespace.md)
+[concurrency 네임 스페이스](concurrency-namespace.md)

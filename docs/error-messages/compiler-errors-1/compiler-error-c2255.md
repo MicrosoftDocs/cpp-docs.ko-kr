@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2255'
 title: 컴파일러 오류 C2255
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2255
 ms.assetid: 67dc4cb0-de6b-4405-bd64-d47736367a93
-ms.openlocfilehash: 2cb2fd5a673fd44e2b06f8675cfc3ae8e418c290
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9c7898ede43c9c25175854faeab5ee279a9c5635
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87208748"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333854"
 ---
 # <a name="compiler-error-c2255"></a>컴파일러 오류 C2255
 

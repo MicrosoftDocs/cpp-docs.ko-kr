@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 방법: parallel_invoke를 사용 하 여 병렬 작업 실행'
 title: '방법: parallel_invoke를 사용하여 병렬 작업 실행'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - parallel_invoke function, example
 - calling multiple functions in parallel [Concurrency Runtime]
 ms.assetid: a6aea69b-d647-4b7e-bf3b-e6a6a9880072
-ms.openlocfilehash: 62781b2915704c4104bd7e8a13e48e43d81955c6
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: e31cc19a1670cf7ccf9d664ffbed33fea98134a7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008344"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334663"
 ---
 # <a name="how-to-use-parallel_invoke-to-execute-parallel-operations"></a>방법: parallel_invoke를 사용하여 병렬 작업 실행
 
@@ -76,7 +77,7 @@ The following palindromes appear in the text:
 
 > **cl.exe/EHsc/MD/DUNICODE/D_AFXDLL parallel-word-mining**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [병렬 알고리즘](../../parallel/concrt/parallel-algorithms.md)<br/>
 [parallel_invoke 함수](reference/concurrency-namespace-functions.md#parallel_invoke)

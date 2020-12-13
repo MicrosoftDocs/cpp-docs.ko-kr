@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2755'
 title: 컴파일러 오류 C2755
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2755
 ms.assetid: 8ee4eeb6-4757-4efe-9100-38ff4a96f1de
-ms.openlocfilehash: fcd4bb5d49f6f6e807ad240c377debb220138c93
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: dcf597505afb170aaf87644a7482a56dc2fdc73c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74759557"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336210"
 ---
 # <a name="compiler-error-c2755"></a>컴파일러 오류 C2755
 

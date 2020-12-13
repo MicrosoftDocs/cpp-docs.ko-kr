@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: ITarget 클래스'
 title: ITarget 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - ITarget class
 ms.assetid: 5678db25-112a-4f72-be13-42e16b67c48b
-ms.openlocfilehash: 39aebd9d82f098225c1275ac6f43d64fc1ce3ba8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6a1e900fa67ac5ee72305f18679e7a0fc38a2386
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231717"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334405"
 ---
 # <a name="itarget-class"></a>ITarget 클래스
 
@@ -47,7 +48,7 @@ class ITarget;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[~ ITarget 소멸자](#dtor)|개체를 소멸 시킵니다 `ITarget` .|
 
@@ -81,7 +82,7 @@ class ITarget;
 
 **네임 스페이스:** 동시성
 
-## <a name="itarget"></a><a name="dtor"></a>~ ITarget
+## <a name="itarget"></a><a name="dtor"></a> ~ ITarget
 
 개체를 소멸 시킵니다 `ITarget` .
 
@@ -89,7 +90,7 @@ class ITarget;
 virtual ~ITarget();
 ```
 
-## <a name="link_source"></a><a name="link_source"></a>link_source
+## <a name="link_source"></a><a name="link_source"></a> link_source
 
 파생 클래스에서 재정의 되는 경우 지정 된 소스 블록을이 블록에 연결 `ITarget` 합니다.
 
@@ -106,7 +107,7 @@ virtual void link_source(_Inout_ ISource<T>* _PSource) = 0;
 
 이 함수는 블록에서 직접 호출 하면 안 됩니다 `ITarget` . 블록에서 메서드를 사용 하 여 블록을 함께 연결 해야 합니다 `link_target` `ISource` . 그러면 `link_source` 해당 대상에서 메서드를 호출 합니다.
 
-## <a name="propagate"></a><a name="propagate"></a>배포할
+## <a name="propagate"></a><a name="propagate"></a> 배포할
 
 파생 클래스에서 재정의 되는 경우 소스 블록에서이 대상 블록으로 메시지를 비동기적으로 전달 합니다.
 
@@ -124,15 +125,15 @@ virtual message_status propagate(
 *_PSource*<br/>
 메시지를 제공 하는 소스 블록에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 대상에서 메시지를 사용 하 여 수행 하기로 결정 한 내용을 나타내는 [message_status](concurrency-namespace-enums.md) 입니다.
 
 ### <a name="remarks"></a>설명
 
-메서드는 [invalid_argument](../../../standard-library/invalid-argument-class.md) `_PMessage` 또는 `_PSource` 매개 변수가 인 경우 invalid_argument 예외를 throw 합니다 `NULL` .
+메서드는 [](../../../standard-library/invalid-argument-class.md) `_PMessage` 또는 `_PSource` 매개 변수가 인 경우 invalid_argument 예외를 throw 합니다 `NULL` .
 
-## <a name="send"></a><a name="send"></a>보내기
+## <a name="send"></a><a name="send"></a> 보내기
 
 파생 클래스에서 재정의 되는 경우 메시지를 대상 블록에 동기적으로 전달 합니다.
 
@@ -150,19 +151,19 @@ virtual message_status send(
 *_PSource*<br/>
 메시지를 제공 하는 소스 블록에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 대상에서 메시지를 사용 하 여 수행 하기로 결정 한 내용을 나타내는 [message_status](concurrency-namespace-enums.md) 입니다.
 
 ### <a name="remarks"></a>설명
 
-메서드는 [invalid_argument](../../../standard-library/invalid-argument-class.md) `_PMessage` 또는 `_PSource` 매개 변수가 인 경우 invalid_argument 예외를 throw 합니다 `NULL` .
+메서드는 [](../../../standard-library/invalid-argument-class.md) `_PMessage` 또는 `_PSource` 매개 변수가 인 경우 invalid_argument 예외를 throw 합니다 `NULL` .
 
 `send`메시지 시작 외부에서 메서드를 사용 하 고 네트워크 내의 메시지를 전파 하는 것은 위험 하며 교착 상태가 발생할 수 있습니다.
 
 가 `send` 반환 되 면 메시지가 이미 수락 되었고 대상 블록으로 전송 되었거나 대상에 의해 거부 된 것입니다.
 
-## <a name="supports_anonymous_source"></a><a name="supports_anonymous_source"></a>supports_anonymous_source
+## <a name="supports_anonymous_source"></a><a name="supports_anonymous_source"></a> supports_anonymous_source
 
 파생 클래스에서 재정의된 경우, 연결되지 않은 소스에서 제공하는 메시지를 메시지 블록이 수락할지 여부에 따라 true 또는 false를 반환합니다. 재정의 된 메서드가을 반환 하는 경우 **`true`** 나중에 연기 된 메시지를 사용 하려면 소스를 해당 소스 link 레지스트리에서 확인 해야 합니다.
 
@@ -170,11 +171,11 @@ virtual message_status send(
 virtual bool supports_anonymous_source();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 블록에 연결 되지 않은 소스에서 메시지를 수락할 수 있으면이 고 **`false`** , 그렇지 않으면입니다.
 
-## <a name="unlink_source"></a><a name="unlink_source"></a>unlink_source
+## <a name="unlink_source"></a><a name="unlink_source"></a> unlink_source
 
 파생 클래스에서 재정의 되는 경우이 블록에서 지정 된 소스 블록을 해제 `ITarget` 합니다.
 
@@ -191,7 +192,7 @@ virtual void unlink_source(_Inout_ ISource<T>* _PSource) = 0;
 
 이 함수는 블록에서 직접 호출 하면 안 됩니다 `ITarget` . 블록의 또는 메서드를 사용 하 여 블록의 연결을 해제 해야 합니다 `unlink_target` `unlink_targets` `ISource` `unlink_source` . 그러면 해당 대상에서 메서드를 호출 합니다.
 
-## <a name="unlink_sources"></a><a name="unlink_sources"></a>unlink_sources
+## <a name="unlink_sources"></a><a name="unlink_sources"></a> unlink_sources
 
 파생 클래스에서 재정의 되는 경우이 블록에서 모든 소스 블록을 해제 `ITarget` 합니다.
 

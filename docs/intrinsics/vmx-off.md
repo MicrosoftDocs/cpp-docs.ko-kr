@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __vmx_off'
 title: __vmx_off
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - VMXOFF instruction
 - __vmx_off intrinsic
 ms.assetid: 78a32d46-9291-406c-b982-a550855aff18
-ms.openlocfilehash: 226b5111c2f4f6771ac75d165c80c3e8ae2336af
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: d36b9079165dd68b207658d6141bdf11bd9747cb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219589"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333589"
 ---
 # <a name="__vmx_off"></a>__vmx_off
 
@@ -32,14 +33,14 @@ void __vmx_off();
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`__vmx_off`|x86, x64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

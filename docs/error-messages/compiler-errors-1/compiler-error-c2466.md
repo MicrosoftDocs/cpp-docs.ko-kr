@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2466'
 title: 컴파일러 오류 C2466
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2466
 ms.assetid: 75b251d1-7d0b-4a86-afca-26adedf74486
-ms.openlocfilehash: aba4de518b9296fadc4746540e4e738c74908617
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 68ff57de2c0287f24ac84466ac8053bf73f88a95
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74743824"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333837"
 ---
 # <a name="compiler-error-c2466"></a>컴파일러 오류 C2466
 

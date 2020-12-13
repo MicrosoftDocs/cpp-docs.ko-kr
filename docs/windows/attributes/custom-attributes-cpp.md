@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 사용자 지정 특성 (c + +)'
 title: 사용자 지정 특성(C++)
 ms.date: 10/02/2018
 helpviewer_keywords:
 - custom attributes
 - custom attributes, defining
 ms.assetid: af9998a5-aa12-4b94-9a43-97ce99026e29
-ms.openlocfilehash: 7053917ebb3cebfe298e9d89f28e357dc7fdbd83
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6eef897ce15fce6cb9c3783f6a974b2b243a3fb7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214905"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333153"
 ---
 # <a name="custom-attributes-c"></a>사용자 지정 특성(C++)
 
@@ -24,5 +25,5 @@ ms.locfileid: "80214905"
 
 ## <a name="see-also"></a>참고 항목
 
-[attribute](attribute.md)<br/>
+[특성도](attribute.md)<br/>
 [사용자 지정 특성(C++)](custom-attributes-cpp.md)

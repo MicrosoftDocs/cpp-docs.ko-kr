@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2124'
 title: 컴파일러 오류 C2124
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2124
 ms.assetid: 93392aaa-5582-4d68-8cc5-bd9c62a0ae7e
-ms.openlocfilehash: 5da04b100fdeaebb6b07d3f8c01e5ec8341ae1cf
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 3ccfba5dfa45cfe0b190a03b84f8b753caec681c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74748244"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335205"
 ---
 # <a name="compiler-error-c2124"></a>컴파일러 오류 C2124
 

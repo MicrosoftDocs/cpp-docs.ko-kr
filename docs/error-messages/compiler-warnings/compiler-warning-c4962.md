@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 C4962'
 title: 컴파일러 경고 C4962
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4962
 ms.assetid: 62b156fe-04e5-4a6e-9339-6ab148185f87
-ms.openlocfilehash: a600c1875040e1076978bb80c467e6232303cd82
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a263f89c0b57eca07f0ab27758163052586eda03
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80164848"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336075"
 ---
 # <a name="compiler-warning-c4962"></a>컴파일러 경고 C4962
 

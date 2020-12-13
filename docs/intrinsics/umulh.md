@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __umulh'
 title: __umulh
 ms.date: 09/02/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - __umulh intrinsic
 ms.assetid: d241b53a-e6f7-4af1-9f6e-84e149158f03
-ms.openlocfilehash: bf098657d1bd5b7ef8a4ffc21f487d2ce619a04e
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 1d727d72155bdfb5cd5da1ee56c514af26b5ae89
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219670"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333612"
 ---
 # <a name="__umulh"></a>__umulh
 
@@ -42,11 +43,11 @@ unsigned __int64 __umulh(
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`__umulh`|X64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 ## <a name="remarks"></a>설명
 
@@ -80,6 +81,6 @@ int main()
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 대리자 (c + +/CLI 및 c + +/CX)'
 title: delegate(C++/CLI 및 C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - delegate keyword [C++]
 ms.assetid: 03caf23d-7873-4a23-9b34-becf42aaf429
-ms.openlocfilehash: 77cd17eb8c164a08af9ec783f8aba422785609b6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 92cd46980775a340e6bf0d6857ace91645d65a7d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219731"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333728"
 ---
 # <a name="delegate--ccli-and-ccx"></a>delegate(C++/CLI 및 C++/CX)
 
@@ -25,7 +26,7 @@ Windows 런타임과 공용 언어 런타임에서 모두, 대리자를 지원�
 
 ### <a name="remarks"></a>설명
 
-**delegate**는 상황에 맞는 키워드입니다. 자세한 내용은 [상황에 맞는 키워드](context-sensitive-keywords-cpp-component-extensions.md)를 참조하세요.
+**delegate** 는 상황에 맞는 키워드입니다. 자세한 내용은 [상황에 맞는 키워드](context-sensitive-keywords-cpp-component-extensions.md)를 참조하세요.
 
 컴파일 시간에 형식이 대리자인지 여부를 검색하려면 `__is_delegate()` 형식 특성을 사용합니다. 자세한 내용은 [형식 특성에 대한 컴파일러 지원](compiler-support-for-type-traits-cpp-component-extensions.md)을 참조하세요.
 
@@ -61,7 +62,7 @@ delegate-type-identifier
 
 ### <a name="remarks"></a>설명
 
-대리자와 동일한 프로토타입을 가진 이벤트를 선언하려면 *delegate-type-identifier*를 사용합니다. 자세한 내용은 [대리자(C++/CX)](../cppcx/delegates-c-cx.md)를 참조하세요.
+대리자와 동일한 프로토타입을 가진 이벤트를 선언하려면 *delegate-type-identifier* 를 사용합니다. 자세한 내용은 [대리자(C++/CX)](../cppcx/delegates-c-cx.md)를 참조하세요.
 
 ### <a name="requirements"></a>요구 사항
 

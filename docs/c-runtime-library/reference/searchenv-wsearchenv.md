@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _searchenv, _wsearchenv'
 title: _searchenv, _wsearchenv
 ms.date: 4/2/2020
 api_name:
@@ -40,12 +41,12 @@ helpviewer_keywords:
 - searchenv function
 - environment paths
 ms.assetid: 9c944a27-d326-409b-aee6-410e8762d9d3
-ms.openlocfilehash: 83ba5663d569d449a0024db5abe2eb3ee903123b
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 411cb2b909d3ed948adcce97c41ace1a806f2f02
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913216"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334123"
 ---
 # <a name="_searchenv-_wsearchenv"></a>_searchenv, _wsearchenv
 
@@ -83,7 +84,7 @@ void _wsearchenv(
 
 ### <a name="parameters"></a>매개 변수
 
-*이름도*<br/>
+*filename*<br/>
 검색할 파일의 이름입니다.
 
 *varname*<br/>
@@ -94,17 +95,17 @@ void _wsearchenv(
 
 ## <a name="remarks"></a>설명
 
-**_Searchenv** 루틴은 지정 된 도메인에서 대상 파일을 검색 합니다. *Varname* 변수는 디렉터리 경로 목록을 지정 하는 모든 환경 변수 또는 사용자 정의 변수 (예: **경로**, **LIB**또는 **포함**) 일 수 있습니다. **_Searchenv** 는 대/소문자를 구분 하므로 *varname* 은 환경 변수의 대/소문자와 일치 해야 합니다.
+**_Searchenv** 루틴은 지정 된 도메인에서 대상 파일을 검색 합니다. *Varname* 변수는 디렉터리 경로 목록을 지정 하는 모든 환경 변수 또는 사용자 정의 변수 (예: **경로**, **LIB** 또는 **포함**) 일 수 있습니다. **_Searchenv** 는 대/소문자를 구분 하므로 *varname* 은 환경 변수의 대/소문자와 일치 해야 합니다.
 
-루틴은 먼저 현재 작업 디렉터리에서 파일을 검색합니다. 파일을 찾을 수 없는 경우 환경 변수에 지정된 디렉터리에서 찾습니다. 대상 파일이 이러한 디렉터리 중 하나에 있으면 새로 만든 경로가 *pathname*에 복사 됩니다. 파일 *이름* 파일을 찾을 수 없는 경우 *경로 이름* 에 빈 null 종료 문자열이 포함 됩니다.
+루틴은 먼저 현재 작업 디렉터리에서 파일을 검색합니다. 파일을 찾을 수 없는 경우 환경 변수에 지정된 디렉터리에서 찾습니다. 대상 파일이 이러한 디렉터리 중 하나에 있으면 새로 만든 경로가 *pathname* 에 복사 됩니다. 파일 *이름* 파일을 찾을 수 없는 경우 *경로 이름* 에 빈 null 종료 문자열이 포함 됩니다.
 
 *경로* 이름 버퍼는 생성 된 경로 이름의 전체 길이를 수용할 수 있도록 **_MAX_PATH** 자 이상 이어야 합니다. 그렇지 않으면 **_searchenv** *경로 이름* 버퍼를 오버런 하 여 예기치 않은 동작이 발생할 수 있습니다.
 
-**_wsearchenv** 은 **_searchenv**의 와이드 문자 버전 이며 **_wsearchenv** 에 대 한 인수는 와이드 문자 문자열입니다. **_wsearchenv** 와 **_searchenv** 는 동일 하 게 동작 합니다.
+**_wsearchenv** 은 **_searchenv** 의 와이드 문자 버전 이며 **_wsearchenv** 에 대 한 인수는 와이드 문자 문자열입니다. **_wsearchenv** 와 **_searchenv** 는 동일 하 게 동작 합니다.
 
 *Filename* 이 빈 문자열인 경우 이러한 함수는 **enoent (** 을 반환 합니다.
 
-*Filename* 또는 *pathname* 이 **NULL** 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는-1을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
+*Filename* 또는 *pathname* 이 **NULL** 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는-1을 반환 하 고 **errno** 를 **EINVAL** 로 설정 합니다.
 
 **Errno** 및 오류 코드에 대 한 자세한 내용은 [errno 상수](../../c-runtime-library/errno-constants.md)를 참조 하십시오.
 
@@ -159,7 +160,7 @@ Path for CL.EXE:
 C:\Program Files\Microsoft Visual Studio 8\VC\BIN\CL.EXE
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [디렉터리 제어](../../c-runtime-library/directory-control.md)<br/>
 [getenv, _wgetenv](getenv-wgetenv.md)<br/>

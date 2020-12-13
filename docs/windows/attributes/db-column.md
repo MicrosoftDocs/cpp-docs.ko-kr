@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: db_column'
 title: db_column (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - db_column attribute
 ms.assetid: 58da4afc-f69c-4ae6-af9a-3f9515f56081
-ms.openlocfilehash: 05f734a9b083d93f2501172d9455b7889c65a5a6
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 931a285d28752273ecb1941702ff1cb32b42740c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91503545"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333084"
 ---
 # <a name="db_column"></a>db_column
 
@@ -43,7 +44,7 @@ ms.locfileid: "91503545"
 필드 열 항목에 사용할 소수 자릿수입니다. 자세한 내용은 `bScale` [DBBINDING 구조체](/previous-versions/windows/desktop/ms716845(v=vs.85)) 의 요소에 대 한 설명을 참조 하세요.
 
 *status*<br/>
-필드 이 열의 상태를 유지 하는 데 사용 되는 멤버 변수입니다. 상태는 열 값이 데이터 값 인지 아니면 다른 값 (예: NULL) 인지를 나타냅니다. 가능한 값은 *OLE DB 프로그래머 참조*의 [상태](/previous-versions/windows/desktop/ms722617(v=vs.85)) 를 참조 하세요.
+필드 이 열의 상태를 유지 하는 데 사용 되는 멤버 변수입니다. 상태는 열 값이 데이터 값 인지 아니면 다른 값 (예: NULL) 인지를 나타냅니다. 가능한 값은 *OLE DB 프로그래머 참조* 의 [상태](/previous-versions/windows/desktop/ms722617(v=vs.85)) 를 참조 하세요.
 
 *length*<br/>
 필드 열 크기를 저장 하는 데 사용 되는 멤버 변수 (바이트)입니다.
@@ -54,11 +55,11 @@ ms.locfileid: "91503545"
 
 [Db_table](db-table.md) 또는 [db_command](db-command.md) 특성과 함께 **db_column** 를 사용 합니다.
 
-소비자 특성 공급자가 클래스에 이 특성을 적용하는 경우 컴파일러는 클래스의 이름을 _\_*YourClassName*Accessor로 바꿉니다. 여기서 *YourClassName*은 클래스에 지정한 이름입니다. 컴파일러는 또한 \_*YourClassName*Accessor에서 파생되는 *YourClassName*이라는 클래스를 만듭니다.  클래스 뷰에 두 클래스 모두 표시됩니다.
+소비자 특성 공급자가 클래스에 이 특성을 적용하는 경우 컴파일러는 클래스의 이름을 _\_*YourClassName* Accessor로 바꿉니다. 여기서 *YourClassName* 은 클래스에 지정한 이름입니다. 컴파일러는 또한 \_*YourClassName* Accessor에서 파생되는 *YourClassName* 이라는 클래스를 만듭니다.  클래스 뷰에 두 클래스 모두 표시됩니다.
 
 응용 프로그램에서 사용 되는이 특성의 예는 [Multiread](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer)를 참조 하세요.
 
-## <a name="examples"></a>예
+## <a name="examples"></a>예제
 
 이 샘플은 테이블의 열을 **`long`** 데이터 멤버에 바인딩하고 상태 및 길이 필드를 지정 합니다.
 

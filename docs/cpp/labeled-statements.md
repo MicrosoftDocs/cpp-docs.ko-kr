@@ -1,16 +1,17 @@
 ---
+description: 레이블 문에 대해 자세히 알아보세요.
 title: 레이블 문
 ms.date: 11/04/2016
 helpviewer_keywords:
 - labeled statement
 - statements, labeled
 ms.assetid: 456a26d5-0fcc-4d1a-b71f-fa9ff3d73b91
-ms.openlocfilehash: a10d071e46c79f49abf7e3eba498fae0487ccdc7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: dcedce1e67c712102be2d8ebb697c1839f3f53c8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213361"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333972"
 ---
 # <a name="labeled-statements"></a>레이블 문
 

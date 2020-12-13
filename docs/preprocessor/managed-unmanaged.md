@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 관리 되는 관리 되지 않는 pragma'
 title: 관리, 관리되지 않는 pragmas
 ms.date: 08/29/2019
 f1_keywords:
@@ -12,22 +13,22 @@ helpviewer_keywords:
 - pragmas, managed
 - unmanaged pragma
 ms.assetid: f072ddcc-e1ec-408a-8ce1-326ddb60e4a4
-ms.openlocfilehash: 4c13155d1c84966a593df11baf525a0c3539f02c
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 10f632b009c9922f67f4321acc862142d895e7ae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70218806"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333390"
 ---
 # <a name="managed-unmanaged-pragmas"></a>관리, 관리되지 않는 pragmas
 
 함수 수준 제어를 사용 하 여 함수를 관리 되거나 관리 되지 않는 것으로 컴파일합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **관리 #pragma**\
 > **#pragma 관리 되지 않음**\
-> **#pragma 관리 (** [ **push,** ] { **on** | **off** } **)** \
+> **#pragma 관리 (** [ **push,** ] { **on**  |  **off** } **)**\
 > **#pragma 관리 (pop)**
 
 ## <a name="remarks"></a>설명
@@ -42,9 +43,9 @@ ms.locfileid: "70218806"
 
 - 함수 본문 내에서가 아니라 함수 앞에 pragma를 추가 합니다.
 
-- `#include` 문 다음에 pragma를 추가합니다. 문 앞 `#include` 에 이러한 pragma를 사용 하지 마세요.
+- `#include` 문 다음에 pragma를 추가합니다. 문 앞에 이러한 pragma를 사용 하지 마세요 `#include` .
 
-컴파일에 사용 되지 않는 경우 `/clr` 컴파일러는 **관리 되** 는 및 **관리 되지 않는** pragma를 무시 합니다.
+컴파일에 사용 되지 않는 경우 컴파일러는 **관리 되** 는 및 **관리 되지 않는** pragma를 무시 합니다 `/clr` .
 
 템플릿 함수를 인스턴스화하면 템플릿이 정의 될 때 pragma 상태가 관리 되는지 또는 관리 되지 않는 지를 결정 합니다.
 
@@ -86,6 +87,6 @@ In managed function.
 In unmanaged function.
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [Pragma 지시문 및 __pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

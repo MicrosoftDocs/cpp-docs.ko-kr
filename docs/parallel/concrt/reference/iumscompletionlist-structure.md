@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Iums이상 목록 구조'
 title: IUMSCompletionList 구조체
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - IUMSCompletionList structure
 ms.assetid: 81b5250e-3065-492c-b20d-2cdabf12271a
-ms.openlocfilehash: c388cc98aedbd35b2d0e00a4653a85a47abcb838
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: b54766e8b1c6f2e7c0afbb5e4e9a8efc0c455b4d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368116"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334351"
 ---
 # <a name="iumscompletionlist-structure"></a>IUMSCompletionList 구조체
 
@@ -29,13 +30,13 @@ struct IUMSCompletionList;
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[IUMS완성 목록::GetUn블록 알림](#getunblocknotifications)|이 메서드가 `IUMSUnblockNotification` 마지막으로 호출된 이후 연결된 스레드 프록시가 차단 해제된 실행 컨텍스트를 나타내는 인터페이스 체인을 검색합니다.|
+|[IumsGetUnblockNotifications List::](#getunblocknotifications)|`IUMSUnblockNotification`이 메서드가 마지막으로 호출 된 이후 연결 된 스레드 프록시가 차단 해제 된 실행 컨텍스트를 나타내는 인터페이스 체인을 검색 합니다.|
 
 ## <a name="remarks"></a>설명
 
-스케줄러는 이 인터페이스를 사용하여 완료 목록에서 항목을 큐에 넣은 후 수행되는 작업에 대해 매우 주의해야 합니다. 항목은 스케줄러의 실행 가능한 컨텍스트 목록에 배치해야 하며 일반적으로 가능한 한 빨리 액세스할 수 있어야 합니다. 큐에 추가된 항목 중 하나에 임의 잠금의 소유권이 부여되었을 수 있습니다. 스케줄러는 항목을 큐 제거하기 위한 호출과 일반적으로 스케줄러 내에서 액세스할 수 있는 목록에 해당 항목의 배치 사이에서 차단할 수 있는 임의의 함수 호출을 만들 수 없습니다.
+스케줄러는이 인터페이스를 활용 하 여 완료 목록에서 항목을 큐에서 제거 하는 작업에 대해 상당히 주의 해야 합니다. 항목은 스케줄러의 실행 가능한 컨텍스트 목록에 배치 해야 하며, 일반적으로 가능한 한 빨리 액세스할 수 있어야 합니다. 큐에서 제거 된 항목 중 하나에 임의 잠금의 소유권이 지정 되어 있을 수 있습니다. Scheduler는 큐에서 제거 항목에 대 한 호출과, 일반적으로 스케줄러 내에서 액세스할 수 있는 목록에 있는 항목의 배치 사이에서 차단할 수 있는 임의 함수 호출을 수행할 수 없습니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -43,28 +44,28 @@ struct IUMSCompletionList;
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** concrtrm.h
+**헤더:** concrtrm. h
 
-**네임스페이스:** 동시성
+**네임 스페이스:** 동시성
 
-## <a name="iumscompletionlistgetunblocknotifications-method"></a><a name="getunblocknotifications"></a>IUMS완성 목록::GetUnblockNotifications 방법
+## <a name="iumscompletionlistgetunblocknotifications-method"></a><a name="getunblocknotifications"></a> IumsGetUnblockNotifications List:: 메서드
 
-이 메서드가 `IUMSUnblockNotification` 마지막으로 호출된 이후 연결된 스레드 프록시가 차단 해제된 실행 컨텍스트를 나타내는 인터페이스 체인을 검색합니다.
+`IUMSUnblockNotification`이 메서드가 마지막으로 호출 된 이후 연결 된 스레드 프록시가 차단 해제 된 실행 컨텍스트를 나타내는 인터페이스 체인을 검색 합니다.
 
 ```cpp
 virtual IUMSUnblockNotification *GetUnblockNotifications() = 0;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-인터페이스 체인입니다. `IUMSUnblockNotification`
+`IUMSUnblockNotification`인터페이스 체인입니다.
 
 ### <a name="remarks"></a>설명
 
-실행 컨텍스트가 다시 예약되면 반환된 알림이 유효하지 않습니다.
+반환 된 알림은 실행 컨텍스트를 다시 예약 하 고 나면 유효 하지 않습니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[동시성 네임스페이스](concurrency-namespace.md)<br/>
+[concurrency 네임 스페이스](concurrency-namespace.md)<br/>
 [IUMSScheduler 구조체](iumsscheduler-structure.md)<br/>
 [IUMSUnblockNotification 구조체](iumsunblocknotification-structure.md)

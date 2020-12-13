@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 람다 식 구문'
 title: 람다 식 구문
 ms.date: 05/07/2019
 helpviewer_keywords:
 - lambda expressions [C++], syntax
 ms.assetid: 5d6154a4-f34d-4a15-970d-7e7de45f54e9
-ms.openlocfilehash: 8db094dd14e63c08fbe8514f245c1777922224cf
-ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
+ms.openlocfilehash: 522f9afd1b4d500e42bd5a5ff2adb4ae25cb7c19
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352715"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333947"
 ---
 # <a name="lambda-expression-syntax"></a>람다 식 구문
 

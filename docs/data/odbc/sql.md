@@ -1,4 +1,5 @@
 ---
+description: '자세한 내용: SQL'
 title: SQL
 ms.date: 05/09/2019
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - SQL [C++], ODBC
 - ODBC [C++], SQL implementation
 ms.assetid: e3923bc4-b317-4e0b-afd8-3cd403eb0faf
-ms.openlocfilehash: cdceec9f4a6a39e9e1a50fc002d4220801e8d15a
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 01a559b959d0f9a8c37f13a79855d55c5890f20e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86404270"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333915"
 ---
 # <a name="sql"></a>SQL
 
@@ -21,7 +22,7 @@ SQL(구조적 쿼리 언어)은 데이터를 정의, 쿼리, 수정 및 제어�
 > [!NOTE]
 > 이 정보는 MFC ODBC 클래스에 적용됩니다. MFC DAO 클래스를 사용하여 작업하는 경우 DAO 도움말의 Microsoft Jet Database Engine SQL과 ANSI SQL 비교 항목을 참조하세요.
 
-SQL 문은 **CREATE** 또는 **SELECT**와 같은 키워드 동사로 시작합니다. SQL은 매우 강력한 언어입니다. 단일 명령문이 전체 테이블에 영향을 줄 수 있습니다.
+SQL 문은 **CREATE** 또는 **SELECT** 와 같은 키워드 동사로 시작합니다. SQL은 매우 강력한 언어입니다. 단일 명령문이 전체 테이블에 영향을 줄 수 있습니다.
 
 여러 버전의 SQL이 있으며 각각은 특정 DBMS를 염두에 두고 개발되었습니다. MFC 데이터베이스 클래스는 X/Open 및 SQL Access Group CAE(공통 애플리케이션 환경) SQL 초안 사양(1991)에 해당하는 SQL 문 세트를 인식합니다. 이러한 문의 구문에 대 한 자세한 내용은 [ODBC 프로그래머 참조](/sql/odbc/reference/odbc-programmer-s-reference) 설명서의 부록 C를 참조 하십시오.
 
@@ -33,7 +34,7 @@ SQL 문은 **CREATE** 또는 **SELECT**와 같은 키워드 동사로 시작합�
 
 - [데이터베이스 클래스에서 SQL을 사용 하는 방법](#_core_how_the_database_classes_use_sql)
 
-## <a name="open-database-connectivity-odbc"></a><a name="_core_open_database_connectivity_.28.odbc.29"></a>ODBC (Open Database Connectivity)
+## <a name="open-database-connectivity-odbc"></a><a name="_core_open_database_connectivity_.28.odbc.29"></a> ODBC (Open Database Connectivity)
 
 데이터베이스 클래스는 ODBC에서 구현되며 코드에 SQL 명령을 포함하는 대신 호출 수준 인터페이스에서 SQL을 사용합니다. ODBC는 SQL을 사용하여 ODBC 드라이버를 통해 [데이터 원본](../../data/odbc/data-source-odbc.md)과 통신합니다. 이러한 드라이버는 SQL을 해석하고 필요한 경우 Microsoft Access와 같은 특정 데이터베이스 형식으로 사용하기 위해 변환합니다. ODBC에서 SQL을 사용 하는 방법에 대 한 자세한 내용은 [odbc](../../data/odbc/odbc-basics.md) 및 [odbc 프로그래머 참조](/sql/odbc/reference/odbc-programmer-s-reference) 설명서를 참조 하십시오.
 
@@ -42,7 +43,7 @@ SQL 문은 **CREATE** 또는 **SELECT**와 같은 키워드 동사로 시작합�
 > [!NOTE]
 > Visual Studio 2019 이상에서는 MFC ODBC 소비자 마법사를 사용할 수 없습니다. 여전히 수동으로 소비자를 만들 수 있습니다.
 
-데이터베이스 클래스는 기존 [데이터 원본](../../data/odbc/data-source-odbc.md)의 데이터를 조작하고 업데이트할 수 있도록 설계되었습니다. [MFC 애플리케이션 마법사](../../mfc/reference/database-support-mfc-application-wizard.md), [MFC ODBC 소비자 마법사](../../mfc/reference/adding-an-mfc-odbc-consumer.md)(**클래스 추가**를 통해 액세스됨) 및 데이터베이스 클래스가 대부분의 SQL 문을 구성합니다.
+데이터베이스 클래스는 기존 [데이터 원본](../../data/odbc/data-source-odbc.md)의 데이터를 조작하고 업데이트할 수 있도록 설계되었습니다. [MFC 애플리케이션 마법사](../../mfc/reference/database-support-mfc-application-wizard.md), [MFC ODBC 소비자 마법사](../../mfc/reference/adding-an-mfc-odbc-consumer.md)(**클래스 추가** 를 통해 액세스됨) 및 데이터베이스 클래스가 대부분의 SQL 문을 구성합니다.
 
 데이터베이스 클래스는 DML(데이터 조작 언어)로 알려진 SQL 부분을 사용합니다. 이러한 명령을 사용하면 데이터 원본의 전체 또는 일부를 작업하고, 새 레코드를 추가하고, 레코드를 편집하고, 레코드를 삭제할 수 있습니다. 다음 표에는 가장 일반적인 SQL 키워드 및 데이터베이스 클래스에서 사용하는 방법이 나열되어 있습니다.
 

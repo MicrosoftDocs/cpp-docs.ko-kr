@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 파일 변환 상수'
 title: 파일 변환 상수
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - constants [C++], file translation mode
 - file translation [C++]
 ms.assetid: 49b13bf3-442e-4d19-878b-bd1029fa666a
-ms.openlocfilehash: 363d95e744ccdb45cf06b8303ae4b60c9ecd58c1
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 75bb54c7e038efd41ed22ec941d871f6fbc54b7c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79443268"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332991"
 ---
 # <a name="file-translation-constants"></a>파일 변환 상수
 
@@ -26,7 +27,7 @@ ms.locfileid: "79443268"
 
 ## <a name="remarks"></a>설명
 
-이러한 상수는 변환 모드( **"b"** 또는 **"t"** )를 지정합니다. 이 모드는 액세스 형식( **"r"** , **"w"** , **"a"** , **"r+"** , **"w+"** , **"a+"** )을 지정하는 문자열에 포함됩니다.
+이러한 상수는 변환 모드(**"b"** 또는 **"t"**)를 지정합니다. 이 모드는 액세스 형식(**"r"**, **"w"**, **"a"**, **"r+"**, **"w+"**, **"a+"**)을 지정하는 문자열에 포함됩니다.
 
 변환 모드는 다음과 같습니다.
 
@@ -41,7 +42,7 @@ ms.locfileid: "79443268"
 
    이진(변환되지 않음) 모드에서 엽니다. 위 변환은 표시되지 않습니다.
 
-**mode**에 **t** 또는 *b*가 지정되지 않은 경우 변환 모드는 기본 모드 변수 [_fmode](../c-runtime-library/fmode.md)로 정의됩니다. 텍스트 모드와 이진 모드 사용에 대한 자세한 내용은 [텍스트 및 이진 모드 파일 I/O](../c-runtime-library/text-and-binary-mode-file-i-o.md)를 참조하세요.
+*mode* 에 **t** 또는 **b** 가 지정되지 않은 경우 변환 모드는 기본 모드 변수 [_fmode](../c-runtime-library/fmode.md)로 정의됩니다. 텍스트 모드와 이진 모드 사용에 대한 자세한 내용은 [텍스트 및 이진 모드 파일 I/O](../c-runtime-library/text-and-binary-mode-file-i-o.md)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

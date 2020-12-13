@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4794'
 title: 컴파일러 경고(수준 1) C4794
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4794
 ms.assetid: badc9c36-fa1a-4fec-929b-7bfda7a7b79f
-ms.openlocfilehash: 7f7ea7555937069caf5f83c9bf00f0fa980ef020
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: bd43a9fb1f7f2433a4e1d337d49c1921211a9e5d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80175118"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334953"
 ---
 # <a name="compiler-warning-level-1-c4794"></a>컴파일러 경고(수준 1) C4794
 

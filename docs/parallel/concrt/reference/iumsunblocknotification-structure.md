@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: IUMSUnblockNotification Structure'
 title: IUMSUnblockNotification 구조체
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - IUMSUnblockNotification structure
 ms.assetid: eaca9529-c1cc-472b-8ec6-722a1ff0fa2a
-ms.openlocfilehash: 0b88ddd4184e982a5e07c536efc301eaa16f4a41
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: bec40ee1e7326ad37e205c3035f965cb3f0ec8d4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368067"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334319"
 ---
 # <a name="iumsunblocknotification-structure"></a>IUMSUnblockNotification 구조체
 
@@ -30,10 +31,10 @@ struct IUMSUnblockNotification;
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[IUMSUn차단 알림::GetContext](#getcontext)|차단 `IExecutionContext` 해제된 스레드 프록시와 연결된 실행 컨텍스트에 대한 인터페이스를 반환합니다. 메서드에 대 `IThreadProxy::SwitchTo` 한 호출을 통해 이 메서드가 반환 되 고 기본 실행 컨텍스트를 다시 예약 하면 이 인터페이스는 더 이상 유효 하지 않습니다.|
-|[IUMSUn차단 알림::GetNextUn차단 알림](#getnextunblocknotification)|메서드에서 `IUMSCompletionList::GetUnblockNotifications` `IUMSUnblockNotification` 반환된 체인의 다음 인터페이스를 반환합니다.|
+|[IUMSUnblockNotification:: GetContext](#getcontext)|`IExecutionContext`차단 해제 된 스레드 프록시와 연결 된 실행 컨텍스트에 대 한 인터페이스를 반환 합니다. 이 메서드가 반환 되 고 메서드 호출을 통해 기본 실행 컨텍스트가 다시 예약 된 후에 `IThreadProxy::SwitchTo` 는이 인터페이스가 더 이상 유효 하지 않습니다.|
+|[IUMSUnblockNotification:: GetNextUnblockNotification](#getnextunblocknotification)|`IUMSUnblockNotification`메서드에서 반환 된 체인의 다음 인터페이스를 반환 합니다 `IUMSCompletionList::GetUnblockNotifications` .|
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -41,36 +42,36 @@ struct IUMSUnblockNotification;
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** concrtrm.h
+**헤더:** concrtrm. h
 
-**네임스페이스:** 동시성
+**네임 스페이스:** 동시성
 
-## <a name="iumsunblocknotificationgetcontext-method"></a><a name="getcontext"></a>IUMSUn차단 알림::GetContext 방법
+## <a name="iumsunblocknotificationgetcontext-method"></a><a name="getcontext"></a> IUMSUnblockNotification:: GetContext 메서드
 
-차단 `IExecutionContext` 해제된 스레드 프록시와 연결된 실행 컨텍스트에 대한 인터페이스를 반환합니다. 메서드에 대 `IThreadProxy::SwitchTo` 한 호출을 통해 이 메서드가 반환 되 고 기본 실행 컨텍스트를 다시 예약 하면 이 인터페이스는 더 이상 유효 하지 않습니다.
+`IExecutionContext`차단 해제 된 스레드 프록시와 연결 된 실행 컨텍스트에 대 한 인터페이스를 반환 합니다. 이 메서드가 반환 되 고 메서드 호출을 통해 기본 실행 컨텍스트가 다시 예약 된 후에 `IThreadProxy::SwitchTo` 는이 인터페이스가 더 이상 유효 하지 않습니다.
 
 ```cpp
 virtual IExecutionContext* GetContext() = 0;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-차단이 해제된 스레드 프록시에 대한 실행 컨텍스트에 대한 `IExecutionContext` 인터페이스입니다.
+`IExecutionContext`차단 해제 된 스레드 프록시에 대 한 실행 컨텍스트에 대 한 인터페이스입니다.
 
-## <a name="iumsunblocknotificationgetnextunblocknotification-method"></a><a name="getnextunblocknotification"></a>IUMSUn차단 알림::GetNextUn블록 알림 방법
+## <a name="iumsunblocknotificationgetnextunblocknotification-method"></a><a name="getnextunblocknotification"></a> IUMSUnblockNotification:: GetNextUnblockNotification 메서드
 
-메서드에서 `IUMSCompletionList::GetUnblockNotifications` `IUMSUnblockNotification` 반환된 체인의 다음 인터페이스를 반환합니다.
+`IUMSUnblockNotification`메서드에서 반환 된 체인의 다음 인터페이스를 반환 합니다 `IUMSCompletionList::GetUnblockNotifications` .
 
 ```cpp
 virtual IUMSUnblockNotification* GetNextUnblockNotification() = 0;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-체인의 `IUMSUnblockNotification` 다음 인터페이스는 메서드에서 `IUMSCompletionList::GetUnblockNotifications`반환됩니다.
+`IUMSUnblockNotification`메서드에서 반환 된 체인의 다음 인터페이스 `IUMSCompletionList::GetUnblockNotifications` 입니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[동시성 네임스페이스](concurrency-namespace.md)<br/>
+[concurrency 네임 스페이스](concurrency-namespace.md)<br/>
 [IUMSScheduler 구조체](iumsscheduler-structure.md)<br/>
 [IUMSCompletionList 구조체](iumscompletionlist-structure.md)

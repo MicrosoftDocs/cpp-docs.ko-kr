@@ -1,17 +1,18 @@
 ---
-title: 데이터 멤버 특성 (C++ COM)
+description: '자세한 정보: 데이터 멤버 특성'
+title: 데이터 멤버 특성 (c + + COM)
 ms.date: 10/02/2018
 helpviewer_keywords:
 - attributes [C++/CLI], reference topics
 - data members [C++], attributes
 - data members [C++]
 ms.assetid: 95b2397d-1daf-4ae4-8cd0-06956d005b13
-ms.openlocfilehash: f23ca0963c63212ea2a8a70362b8e76fa0819fc7
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 2bc5878b927ee8f80721928cdc6d9dbc3b095ea5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214879"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333129"
 ---
 # <a name="data-member-attributes"></a>데이터 멤버 특성
 
@@ -19,7 +20,7 @@ ms.locfileid: "80214879"
 
 |특성|설명|
 |---------------|-----------------|
-|[db_accessor](db-accessor.md)|`IAccessor`기반 바인딩에 참여 하는 `db_column` 특성을 그룹화 합니다.|
+|[db_accessor](db-accessor.md)|`db_column`기반 바인딩에 참여 하는 특성을 그룹화 `IAccessor` 합니다.|
 |[db_column](db-column.md)|지정 된 열을 행 집합에 바인딩합니다.|
 |[db_command](db-command.md)|OLE DB 명령을 만듭니다.|
 |[db_param](db-param.md)|지정 된 멤버 변수를 입력 또는 출력 매개 변수와 연결 하 고 변수를 구분 합니다.|
@@ -35,4 +36,4 @@ ms.locfileid: "80214879"
 
 ## <a name="see-also"></a>참고 항목
 
-[용도별 특성](attributes-by-usage.md)
+[사용 별 특성](attributes-by-usage.md)

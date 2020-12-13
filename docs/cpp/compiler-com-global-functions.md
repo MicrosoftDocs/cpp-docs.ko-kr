@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 컴파일러 COM 전역 함수'
 title: 컴파일러 COM 전역 함수
 ms.date: 11/04/2016
 helpviewer_keywords:
 - cl.exe compiler, COM support
 - COM, compiler support
 ms.assetid: 74449d26-50a2-47c7-b175-7cf2cf83533e
-ms.openlocfilehash: c0a9c742ad9dcbb05ed2d78c954d5a597e3b57cb
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d678372bdc5703aa05fdf093b84075b7286c4b9d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80189782"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335555"
 ---
 # <a name="compiler-com-global-functions"></a>컴파일러 COM 전역 함수
 
@@ -27,7 +28,7 @@ ms.locfileid: "80189782"
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [컴파일러 COM 지원 클래스](../cpp/compiler-com-support-classes.md)<br/>
 [컴파일러 COM 지원](../cpp/compiler-com-support.md)

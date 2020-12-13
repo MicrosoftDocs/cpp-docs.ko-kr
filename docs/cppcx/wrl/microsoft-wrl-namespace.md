@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Microsoft:: WRL 네임 스페이스'
 title: Microsoft::WRL 네임스페이스
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,16 +15,16 @@ f1_keywords:
 helpviewer_keywords:
 - WRL namespace
 ms.assetid: 01118a8f-f564-4859-b87e-9444848585a1
-ms.openlocfilehash: c92251dacbfa17e8f1ac0cbdc41aa9b06118ac91
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: fdf7f0fbdca5cd5d95772052dd5dfb5018cabb18
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213774"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335538"
 ---
 # <a name="microsoftwrl-namespace"></a>Microsoft::WRL 네임스페이스
 
-Windows 런타임 C++ 템플릿 라이브러리를 구성 하는 기본 형식을 정의 합니다.
+Windows 런타임 c + + 템플릿 라이브러리를 구성 하는 기본 형식을 정의 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -35,7 +36,7 @@ namespace Microsoft::WRL;
 
 ### <a name="typedefs"></a>Typedefs
 
-|이름|설명|
+|Name|설명|
 |----------|-----------------|
 |`InhibitWeakReferencePolicy`|`RuntimeClassFlags<WinRt | InhibitWeakReference>`|
 
@@ -56,33 +57,33 @@ namespace Microsoft::WRL;
 |[SimpleClassFactory 클래스](simpleclassfactory-class.md)|기본 클래스를 만드는 기본적인 메커니즘을 제공합니다.|
 |[WeakRef 클래스](weakref-class.md)|클래식 COM이 아닌 Windows 런타임에서만 사용할 수 있는 *약한 참조* 를 나타냅니다. 약한 참조는 액세스할 수 있거나 액세스할 수 없는 개체를 나타냅니다.|
 
-### <a name="structures"></a>구조
+### <a name="structures"></a>구조체
 
-|이름|설명|
+|Name|설명|
 |----------|-----------------|
 |[ChainInterfaces 구조체](chaininterfaces-structure.md)|인터페이스 ID 집합에 적용할 수 있는 확인 및 초기화 함수를 지정합니다.|
-|[CloakedIid 구조체](cloakediid-structure.md)|IID 목록에서 지정 된 인터페이스에 액세스할 수 없는 `RuntimeClass`, `Implements` 및 `ChainInterfaces` 템플릿을 나타냅니다.|
-|[Implements 구조체](implements-structure.md)|지정 된 인터페이스에 대 한 `QueryInterface` 및 `GetIid`을 구현 합니다.|
+|[CloakedIid 구조체](cloakediid-structure.md)|`RuntimeClass`지정 된 인터페이스를 `Implements` `ChainInterfaces` IID 목록에서 액세스할 수 없는 및 템플릿에 대 한를 나타냅니다.|
+|[Implements 구조체](implements-structure.md)|`QueryInterface` `GetIid` 지정 된 인터페이스에 대해 및을 구현 합니다.|
 |[MixIn 구조체](mixin-structure.md)|런타임 클래스가 Windows 런타임 인터페이스에서 파생되었는지 확인한 다음 있는 경우 클래식 COM 인터페이스를 확인합니다.|
 |[RuntimeClassFlags 구조체](runtimeclassflags-structure.md)|[RuntimeClass](runtimeclass-class.md)인스턴스의 유형을 포함 합니다.|
 
 ### <a name="enumerations"></a>열거형
 
-|이름|설명|
+|Name|설명|
 |----------|-----------------|
-|[AsyncResultType 열거형](asyncresulttype-enumeration.md)|`GetResults()` 메서드에서 반환 하는 결과의 형식을 지정 합니다.|
+|[AsyncResultType 열거형](asyncresulttype-enumeration.md)|메서드에서 반환 하는 결과의 형식을 지정 합니다 `GetResults()` .|
 |[ModuleType 열거형](moduletype-enumeration.md)|모듈이 in-process 서버를 지원하는지 out-of-process 서버를 지원해야 하는지 여부를 지정합니다.|
 |[RuntimeClassType 열거형](runtimeclasstype-enumeration.md)|지원 되는 [RuntimeClass](runtimeclass-class.md) 인스턴스의 유형을 지정 합니다.|
 
 ### <a name="functions"></a>함수
 
-|이름|설명|
+|Name|설명|
 |----------|-----------------|
 |[AsWeak 함수](asweak-function.md)|지정된 인스턴스에 대한 약한 참조를 가져옵니다.|
-|[콜백 함수(WRL)](callback-function-wrl.md)|멤버 함수가 콜백 메서드인 개체를 만듭니다.|
+|[콜백 함수 (WRL)](callback-function-wrl.md)|멤버 함수가 콜백 메서드인 개체를 만듭니다.|
 |[CreateActivationFactory 함수](createactivationfactory-function.md)|Windows 런타임으로 활성화할 수 있는 지정된 클래스의 인스턴스를 생성하는 팩터리를 만듭니다.|
 |[CreateClassFactory 함수](createclassfactory-function.md)|지정된 클래스의 인스턴스를 생성하는 팩터리를 만듭니다.|
-|[Make 함수](make-function.md)|지정 된 Windows 런타임 클래스를 초기화 합니다.|
+|[함수 만들기](make-function.md)|지정 된 Windows 런타임 클래스를 초기화 합니다.|
 
 ## <a name="requirements"></a>요구 사항
 
@@ -92,4 +93,4 @@ namespace Microsoft::WRL;
 
 ## <a name="see-also"></a>참고 항목
 
-[Microsoft::WRL::Wrappers 네임스페이스](microsoft-wrl-wrappers-namespace.md)
+[Microsoft:: WRL:: 래퍼 네임 스페이스](microsoft-wrl-wrappers-namespace.md)

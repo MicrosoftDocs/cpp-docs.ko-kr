@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: pragma optimize'
 title: 최적화 pragma
 ms.date: 08/29/2019
 f1_keywords:
@@ -8,20 +9,20 @@ helpviewer_keywords:
 - pragmas, optimize
 - optimize pragma
 ms.assetid: cb13c1cc-186a-45bc-bee7-95a8de7381cc
-ms.openlocfilehash: 6d7b99b7a72c133d56a209cf42fa9ef670a4a7f9
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 9c7f07e44a31144c469bb13c936bc16d5fda39df
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70220508"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333210"
 ---
 # <a name="optimize-pragma"></a>최적화 pragma
 
 함수 별로 최적화를 지정 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
-> **#pragma optimize ("** [ *최적화-목록* ] **",** { **on** | **off** } **)**
+> **#pragma optimize ("** [ *최적화-목록* ] **",** { **on**  |  **off** } **)**
 
 ## <a name="remarks"></a>설명
 
@@ -43,9 +44,9 @@ ms.locfileid: "70220508"
 #pragma optimize( "s", on )
 ```
 
-**Optimize** pragma를 빈 문자열 ( **""** )과 함께 사용 하는 것은 특별 한 형태의 지시문입니다.
+**Optimize** pragma를 빈 문자열 (**""**)과 함께 사용 하는 것은 특별 한 형태의 지시문입니다.
 
-**Off** 매개 변수를 사용 하는 경우 모든 최적화, **g**, **s**, **t**및 **y**가 해제 됩니다.
+**Off** 매개 변수를 사용 하는 경우 모든 최적화, **g**, **s**, **t** 및 **y** 가 해제 됩니다.
 
 On 매개 변수를 사용 하는 경우 **에** 는 [/o](../build/reference/o-options-optimize-code.md) 컴파일러 옵션을 사용 하 여 지정한 대로 최적화를 다시 설정 합니다.
 
@@ -55,6 +56,6 @@ On 매개 변수를 사용 하는 경우 **에** 는 [/o](../build/reference/o-o
 #pragma optimize( "", on )
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [Pragma 지시문 및 __pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

@@ -1,4 +1,5 @@
 ---
+description: Invalid_link_target 클래스에 대해 자세히 알아보세요.
 title: invalid_link_target 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - invalid_link_target class
 ms.assetid: 33b64885-34d8-4d4e-a893-02e9f19c958e
-ms.openlocfilehash: bd3d82c06c174c69c60dec33592110f4de72ac99
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: d080886c3aab0ecc120d4ce13f5f75f2eecfea8f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77141045"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334586"
 ---
 # <a name="invalid_link_target-class"></a>invalid_link_target 클래스
 
@@ -29,11 +30,11 @@ class invalid_link_target : public std::exception;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
 |[invalid_link_target](#ctor)|오버로드됨. `invalid_link_target` 개체를 생성합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `exception`
 
@@ -43,9 +44,9 @@ class invalid_link_target : public std::exception;
 
 **헤더:** concrt .h
 
-**네임스페이스:** 동시성
+**네임 스페이스:** 동시성
 
-## <a name="ctor"></a>invalid_link_target
+## <a name="invalid_link_target"></a><a name="ctor"></a> invalid_link_target
 
 `invalid_link_target` 개체를 생성합니다.
 
@@ -62,5 +63,5 @@ invalid_link_target() throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[concurrency 네임스페이스](concurrency-namespace.md)<br/>
+[concurrency 네임 스페이스](concurrency-namespace.md)<br/>
 [비동기 메시지 블록](../../../parallel/concrt/asynchronous-message-blocks.md)

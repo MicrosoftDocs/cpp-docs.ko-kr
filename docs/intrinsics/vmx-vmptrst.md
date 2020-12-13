@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __vmx_vmptrst'
 title: __vmx_vmptrst
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - __vmx_vmptrst intrinsic
 - VMPTRST instruction
 ms.assetid: 8dc66e47-03a0-41b0-8e25-c1485f42817a
-ms.openlocfilehash: e559746be9e2a3fe5e81afa4d290265394db3e36
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 216da453acf5c04e4189271185567841327571ec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219490"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333520"
 ---
 # <a name="__vmx_vmptrst"></a>__vmx_vmptrst
 
@@ -41,15 +42,15 @@ VMCS 포인터는 64 비트 실제 주소입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`__vmx_vmptrst`|x86, x64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)\
 [__vmx_vmptrld](../intrinsics/vmx-vmptrld.md)

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: ISource 클래스'
 title: ISource 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ f1_keywords:
 helpviewer_keywords:
 - ISource class
 ms.assetid: c7b73463-42f6-4dcc-801a-81379b12d35a
-ms.openlocfilehash: df592e965b436ed5a1d60702f9e57088887d5a94
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 86a55c9ca056c0aebb98e00c12518293b316bcb6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222708"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334438"
 ---
 # <a name="isource-class"></a>ISource 클래스
 
@@ -49,7 +50,7 @@ class ISource;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[~ ISource 소멸자](#dtor)|개체를 소멸 시킵니다 `ISource` .|
 
@@ -81,7 +82,7 @@ class ISource;
 
 **네임 스페이스:** 동시성
 
-## <a name="accept"></a><a name="accept"></a>수락할
+## <a name="accept"></a><a name="accept"></a> 수락할
 
 파생 클래스에서 재정의 되는 경우이 블록이 제공한 메시지를 수락 하 여 `ISource` 소유권을 호출자에 게 전송 합니다.
 
@@ -99,7 +100,7 @@ virtual message<T>* accept(
 *_PTarget*<br/>
 메서드를 호출 하는 대상 블록에 대 한 포인터입니다 `accept` .
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 호출자에 게 소유권이 있는 메시지에 대 한 포인터입니다.
 
@@ -107,7 +108,7 @@ virtual message<T>* accept(
 
 `accept`이 블록에서 메시지를 제공 하는 동안 대상에서 메서드를 호출 합니다 `ISource` . `propagate` `ITarget` 이 소스가 메시지의 복사본을 만들도록 결정 한 경우 반환 되는 메시지 포인터는 블록의 메서드에 전달 된 것과 다를 수 있습니다.
 
-## <a name="acquire_ref"></a><a name="acquire_ref"></a>acquire_ref
+## <a name="acquire_ref"></a><a name="acquire_ref"></a> acquire_ref
 
 파생 클래스에서 재정의 되는 경우 `ISource` 삭제를 방지 하기 위해이 블록의 참조 횟수를 가져옵니다.
 
@@ -124,7 +125,7 @@ virtual void acquire_ref(_Inout_ ITarget<T>* _PTarget) = 0;
 
 이 메서드는 메서드를 실행 하는 `ITarget` 동안이 소스에 연결 되는 개체에 의해 호출 됩니다 `link_target` .
 
-## <a name="consume"></a><a name="consume"></a>활용
+## <a name="consume"></a><a name="consume"></a> 활용
 
 파생 클래스에서 재정의 되는 경우이 블록에서 이전에 제공 `ISource` 하 고 대상에 의해 성공적으로 예약 된 메시지를 사용 하 여 호출자에 게 소유권을 전송 합니다.
 
@@ -142,7 +143,7 @@ virtual message<T>* consume(
 *_PTarget*<br/>
 메서드를 호출 하는 대상 블록에 대 한 포인터입니다 `consume` .
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `message`호출자가 소유 하 고 있는 개체에 대 한 포인터입니다.
 
@@ -150,7 +151,7 @@ virtual message<T>* consume(
 
 `consume`메서드는와 유사 `accept` 하지만 항상 `reserve` 반환 되는를 호출 해야 합니다 **`true`** .
 
-## <a name="isource"></a><a name="dtor"></a>~ ISource
+## <a name="isource"></a><a name="dtor"></a> ~ ISource
 
 개체를 소멸 시킵니다 `ISource` .
 
@@ -158,7 +159,7 @@ virtual message<T>* consume(
 virtual ~ISource();
 ```
 
-## <a name="link_target"></a><a name="link_target"></a>link_target
+## <a name="link_target"></a><a name="link_target"></a> link_target
 
 파생 클래스에서 재정의 되는 경우 대상 블록을이 블록에 연결 `ISource` 합니다.
 
@@ -171,7 +172,7 @@ virtual void link_target(_Inout_ ITarget<T>* _PTarget) = 0;
 *_PTarget*<br/>
 이 블록에 연결 되는 대상 블록에 대 한 포인터 `ISource` 입니다.
 
-## <a name="release"></a><a name="release"></a>릴리스
+## <a name="release"></a><a name="release"></a> 릴리스
 
 파생 클래스에서 재정의 되는 경우 이전의 성공적인 메시지 예약을 해제 합니다.
 
@@ -189,7 +190,7 @@ virtual void release(
 *_PTarget*<br/>
 메서드를 호출 하는 대상 블록에 대 한 포인터입니다 `release` .
 
-## <a name="release_ref"></a><a name="release_ref"></a>release_ref
+## <a name="release_ref"></a><a name="release_ref"></a> release_ref
 
 파생 클래스에서 재정의 되는 경우이 블록에서 참조 횟수를 해제 `ISource` 합니다.
 
@@ -206,7 +207,7 @@ virtual void release_ref(_Inout_ ITarget<T>* _PTarget) = 0;
 
 이 메서드는이 소스에서 연결을 해제 하는 개체에 의해 호출 됩니다 `ITarget` . 소스 블록은 대상 블록에 예약 된 모든 리소스를 해제할 수 있습니다.
 
-## <a name="reserve"></a><a name="reserve"></a>두기
+## <a name="reserve"></a><a name="reserve"></a> 두기
 
 파생 클래스에서 재정의 되는 경우이 블록에서 이전에 제공 된 메시지를 예약 `ISource` 합니다.
 
@@ -224,7 +225,7 @@ virtual bool reserve(
 *_PTarget*<br/>
 메서드를 호출 하는 대상 블록에 대 한 포인터입니다 `reserve` .
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 메시지가 성공적으로 예약 되었으면이 고, **`false`** 그렇지 않으면입니다. 예약은 메시지를 이미 다른 대상이 예약했거나 수락한 경우, 소스에서 예약을 거부한 경우 등과 같은 다양한 이유로 실패할 수 있습니다.
 
@@ -232,7 +233,7 @@ virtual bool reserve(
 
 를 호출한 후에 `reserve` 성공 하면 또는을 호출 `consume` 하 여 `release` 메시지를 각각 소유 하거나 제공 해야 합니다.
 
-## <a name="unlink_target"></a><a name="unlink_target"></a>unlink_target
+## <a name="unlink_target"></a><a name="unlink_target"></a> unlink_target
 
 파생 클래스에서 재정의 되는 경우이 블록에서 대상 블록의 `ISource` 연결을 끊습니다 (이전에 연결 된 경우).
 
@@ -245,7 +246,7 @@ virtual void unlink_target(_Inout_ ITarget<T>* _PTarget) = 0;
 *_PTarget*<br/>
 이 블록에서 연결이 해제 되는 대상 블록에 대 한 포인터 `ISource` 입니다.
 
-## <a name="unlink_targets"></a><a name="unlink_targets"></a>unlink_targets
+## <a name="unlink_targets"></a><a name="unlink_targets"></a> unlink_targets
 
 파생 클래스에서 재정의 되는 경우이 블록에서 모든 대상 블록을 해제 `ISource` 합니다.
 

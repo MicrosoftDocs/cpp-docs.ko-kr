@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: pack pragma'
 title: pack pragma
 ms.date: 07/22/2020
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - pragmas, pack
 - pack pragma
 ms.assetid: e4209cbb-5437-4b53-b3fe-ac264501d404
-ms.openlocfilehash: 72f94520516cce2ae36b70795fb29e3d4d8068df
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d4e4cbba13efabd148fdd61f59eebb15c56b1c41
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219393"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333193"
 ---
 # <a name="pack-pragma"></a>pack pragma
 
 구조체, 공용 구조체 및 클래스 멤버에 대 한 압축 맞춤을 지정 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **`#pragma pack( show )`**\
 > **`#pragma pack( push`** [ **`,`** *`identifier`* ] [ **`,`** *`n`* ] **`)`**\
@@ -32,7 +33,7 @@ ms.locfileid: "87219393"
 필드 압축 맞춤을 위한 현재 바이트 값을 표시 합니다. 경고 메시지에 값이 표시됩니다.
 
 **`push`**\
-필드 현재 압축 맞춤 값을 내부 컴파일러 스택에 푸시하고 현재 압축 맞춤 값을 *n*으로 설정 합니다. *N* 을 지정 하지 않으면 현재 압축 맞춤 값이 푸시됩니다.
+필드 현재 압축 맞춤 값을 내부 컴파일러 스택에 푸시하고 현재 압축 맞춤 값을 *n* 으로 설정 합니다. *N* 을 지정 하지 않으면 현재 압축 맞춤 값이 푸시됩니다.
 
 **`pop`**\
 필드 내부 컴파일러 스택의 맨 위에서 레코드를 제거 합니다. *N* 이 지정 되지 않은 경우에는 **`pop`** 스택의 맨 위에 있는 결과 레코드와 연결 된 압축 값이 새로운 압축 맞춤 값입니다. 예를 들어 *n* 이 지정 된 경우 `#pragma pack(pop, 16)` *n* 은 새 압축 맞춤 값이 됩니다. 를 사용 하는 경우 (예:)를 사용 하는 경우 *`identifier`* `#pragma pack(pop, r1)` 에는가 있는 레코드를 찾을 때까지 스택의 모든 레코드가 팝 됩니다 *`identifier`* . 해당 레코드가 팝 되 고 스택의 맨 위에 있는 레코드와 연결 된 압축 값이 새로운 압축 맞춤 값이 됩니다. 스택의 레코드에 없는를 사용 하는 경우 *`identifier`* **`pop`** 이 무시 됩니다.
@@ -47,7 +48,7 @@ ms.locfileid: "87219393"
 
 ## <a name="remarks"></a>설명
 
-클래스를 *압축* 하려면 해당 멤버를 메모리에서 서로 직접 추가 합니다. 이는 대상 아키텍처의 기본 맞춤 보다 작은 경계에 일부 또는 모든 멤버를 정렬할 수 있음을 의미할 수 있습니다. **`pack`** 데이터 선언 수준에서 컨트롤을 제공 합니다. [`/Zp`](../build/reference/zp-struct-member-alignment.md)모듈 수준 제어만 제공 하는 컴파일러 옵션과는 다릅니다. **pack** pragma가 표시 된 후에는 첫 번째 **`struct`** , **`union`** 또는 선언에서 팩이 적용 **`class`** 됩니다. **`pack`** 정의에는 영향을 주지 않습니다. **`pack`** 인수 없이를 호출 하면 *`n`* 컴파일러 옵션에 설정 된 값으로 설정 **`/Zp`** 됩니다. 컴파일러 옵션이 설정 되지 않은 경우 기본값은 x86, ARM 및 ARM64의 경우 8입니다. 기본값은 x64 native의 경우 16입니다.
+클래스를 *압축* 하려면 해당 멤버를 메모리에서 서로 직접 추가 합니다. 이는 대상 아키텍처의 기본 맞춤 보다 작은 경계에 일부 또는 모든 멤버를 정렬할 수 있음을 의미할 수 있습니다. **`pack`** 데이터 선언 수준에서 컨트롤을 제공 합니다. [`/Zp`](../build/reference/zp-struct-member-alignment.md)모듈 수준 제어만 제공 하는 컴파일러 옵션과는 다릅니다.  pragma가 표시 된 후에는 첫 번째 **`struct`** , **`union`** 또는 선언에서 팩이 적용 **`class`** 됩니다. **`pack`** 정의에는 영향을 주지 않습니다. **`pack`** 인수 없이를 호출 하면 *`n`* 컴파일러 옵션에 설정 된 값으로 설정 **`/Zp`** 됩니다. 컴파일러 옵션이 설정 되지 않은 경우 기본값은 x86, ARM 및 ARM64의 경우 8입니다. 기본값은 x64 native의 경우 16입니다.
 
 구조체의 맞춤을 변경 하는 경우 메모리에 공간을 많이 사용 하지 않을 수 있습니다. 그러나 성능이 저하 되거나 정렬 되지 않은 액세스에 대 한 하드웨어 생성 예외가 발생할 수 있습니다. 을 사용 하 여이 예외 동작을 수정할 수 있습니다 [`SetErrorMode`](/windows/win32/api/errhandlingapi/nf-errhandlingapi-seterrormode) .
 
@@ -102,7 +103,7 @@ int main() {
 0 4 6
 ```
 
-다음 샘플에서는 *push*, *pop*및 *show* 구문을 사용 하는 방법을 보여 줍니다.
+다음 샘플에서는 *push*, *pop* 및 *show* 구문을 사용 하는 방법을 보여 줍니다.
 
 ```cpp
 // pragma_directives_pack_2.cpp

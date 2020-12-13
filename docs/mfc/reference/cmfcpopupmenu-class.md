@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CMFCPopupMenu 클래스'
 title: CMFCPopupMenu 클래스
 ms.date: 10/18/2018
 f1_keywords:
@@ -160,12 +161,12 @@ helpviewer_keywords:
 - CMFCPopupMenu [MFC], OnChangeHot
 - CMFCPopupMenu [MFC], OnChooseItem
 ms.assetid: 9555dca1-8c9c-44c9-af72-0659ddad128e
-ms.openlocfilehash: 89089559916419bc27b0528430fe7ad12ca804b0
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 97429da34643945ff75b2a16e7bbaf6df439e425
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841027"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334752"
 ---
 # <a name="cmfcpopupmenu-class"></a>CMFCPopupMenu 클래스
 
@@ -228,7 +229,7 @@ class CMFCPopupMenu : public CMiniFrameWnd
 |[CMFCPopupMenu:: InsertSeparator](#insertseparator)|지정 된 위치에 있는 팝업 메뉴에 구분 기호를 삽입 합니다.|
 |[CMFCPopupMenu:: IsAlwaysClose](#isalwaysclose)||
 |[CMFCPopupMenu:: IsAlwaysShowEmptyToolsEntry](#isalwaysshowemptytoolsentry)||
-|[CMFCPopupMenu:: IsCustomizePane](#iscustomizepane)|팝업 메뉴가 **QuickCustomizePane**작동 하는지 여부를 나타냅니다.|
+|[CMFCPopupMenu:: IsCustomizePane](#iscustomizepane)|팝업 메뉴가 **QuickCustomizePane** 작동 하는지 여부를 나타냅니다.|
 |[CMFCPopupMenu:: IsEscClose](#isescclose)||
 |[CMFCPopupMenu:: IsIdle](#isidle)|팝업 메뉴가 현재 유휴 상태 인지 여부를 나타냅니다.|
 |[CMFCPopupMenu:: IsMenuSound](#ismenusound)||
@@ -447,7 +448,7 @@ virtual BOOL Create(
 
 ### <a name="remarks"></a>설명
 
-*Bownmessage* 가 TRUE 이면 프레임 워크는 모든 메뉴 메시지를 *pWndParent*로 라우팅합니다. *Bownmessage* 가 TRUE 이면 *pWndParent* 는 NULL이 아니어야 합니다. *Bownmessage* 가 FALSE 인 경우 프레임 워크는 메뉴 메시지를 부모 팝업 메뉴로 라우팅합니다.
+*Bownmessage* 가 TRUE 이면 프레임 워크는 모든 메뉴 메시지를 *pWndParent* 로 라우팅합니다. *Bownmessage* 가 TRUE 이면 *pWndParent* 는 NULL이 아니어야 합니다. *Bownmessage* 가 FALSE 인 경우 프레임 워크는 메뉴 메시지를 부모 팝업 메뉴로 라우팅합니다.
 
 ### <a name="example"></a>예제
 
@@ -906,7 +907,7 @@ int InsertItem(
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 현재 팝업 메뉴에 있는 항목 수보다 큰 정수와 같은 *Iinsertat*에 대해 잘못 된 값을 제공 하는 경우 실패 합니다.
+이 메서드는 현재 팝업 메뉴에 있는 항목 수보다 큰 정수와 같은 *Iinsertat* 에 대해 잘못 된 값을 제공 하는 경우 실패 합니다.
 
 ## <a name="cmfcpopupmenuinsertseparator"></a><a name="insertseparator"></a> CMFCPopupMenu:: InsertSeparator
 
@@ -953,7 +954,7 @@ static BOOL __stdcall IsAlwaysShowEmptyToolsEntry();
 
 ## <a name="cmfcpopupmenuiscustomizepane"></a><a name="iscustomizepane"></a> CMFCPopupMenu:: IsCustomizePane
 
-팝업 메뉴가 **QuickCustomizePane**작동 하는지 여부를 나타냅니다.
+팝업 메뉴가 **QuickCustomizePane** 작동 하는지 여부를 나타냅니다.
 
 ```
 BOOL IsCustomizePane();
@@ -961,7 +962,7 @@ BOOL IsCustomizePane();
 
 ### <a name="return-value"></a>반환 값
 
-팝업이 **QuckCustomizePane**경우 TRUE입니다. 그렇지 않으면 FALSE입니다.
+팝업이 **QuckCustomizePane** 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1255,7 +1256,7 @@ static void SetAnimationType(CMFCPopupMenu::ANIMATION_TYPE type);
 
 ### <a name="remarks"></a>설명
 
-*형식*에 대 한 유효한 값 목록은 [CMFCPopupMenu:: get](#getanimationtype) 를 참조 하세요.
+*형식* 에 대 한 유효한 값 목록은 [CMFCPopupMenu:: get](#getanimationtype) 를 참조 하세요.
 
 ## <a name="cmfcpopupmenusetautodestroy"></a><a name="setautodestroy"></a> CMFCPopupMenu:: SetAutoDestroy
 

@@ -1,4 +1,5 @@
 ---
+description: Invalid_oversubscribe_operation 클래스에 대해 자세히 알아보세요.
 title: invalid_oversubscribe_operation 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - invalid_oversubscribe_operation class
 ms.assetid: 0a9c5f08-d5e6-4ad0-90a9-517472b3ac28
-ms.openlocfilehash: 0c95d234fee412c1dacb014dd135ca56fc73bf5e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 435e3ce0eba29188711c51aa9253060fc08ac62c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87193967"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334523"
 ---
 # <a name="invalid_oversubscribe_operation-class"></a>invalid_oversubscribe_operation 클래스
 
@@ -31,7 +32,7 @@ class invalid_oversubscribe_operation : public std::exception;
 
 |이름|설명|
 |----------|-----------------|
-|[invalid_oversubscribe_operation](#ctor)|오버로드되었습니다. `invalid_oversubscribe_operation` 개체를 생성합니다.|
+|[invalid_oversubscribe_operation](#ctor)|오버로드됨. `invalid_oversubscribe_operation` 개체를 생성합니다.|
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -45,7 +46,7 @@ class invalid_oversubscribe_operation : public std::exception;
 
 **네임 스페이스:** 동시성
 
-## <a name="invalid_oversubscribe_operation"></a><a name="ctor"></a>invalid_oversubscribe_operation
+## <a name="invalid_oversubscribe_operation"></a><a name="ctor"></a> invalid_oversubscribe_operation
 
 `invalid_oversubscribe_operation` 개체를 생성합니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: db_param'
 title: db_param (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - db_param attribute
 ms.assetid: a28315f5-4722-459e-92ef-32e83c0b205a
-ms.openlocfilehash: 008a7f1ea07e6c23ad6d812ac4fbf3b30ef1da89
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 27666b4cdf027e24b54326a3acc5fe701b9f6f44
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833077"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333112"
 ---
 # <a name="db_param"></a>db_param
 
@@ -25,7 +26,7 @@ ms.locfileid: "88833077"
 
 ### <a name="parameters"></a>매개 변수
 
-*ordinal*<br/>
+*순서로*<br/>
 데이터를 바인딩할 행 집합의 필드에 해당 하는 열 번호 (DBCOLUMNINFO ordinal)입니다.
 
 *가 paramtype과*<br/>
@@ -47,7 +48,7 @@ ms.locfileid: "88833077"
 필드 열 항목에 사용할 소수 자릿수입니다. 자세한 내용은 `bScale` [DBBINDING 구조체](/previous-versions/windows/desktop/ms716845(v=vs.85)) 의 요소에 대 한 설명을 참조 하세요.
 
 *status*<br/>
-필드 이 열의 상태를 유지 하는 데 사용 되는 멤버 변수입니다. 상태는 열 값이 데이터 값 인지 아니면 다른 값 (예: NULL) 인지를 나타냅니다. 가능한 값은 *OLE DB 프로그래머 참조*의 [상태](/previous-versions/windows/desktop/ms722617(v=vs.85)) 를 참조 하세요.
+필드 이 열의 상태를 유지 하는 데 사용 되는 멤버 변수입니다. 상태는 열 값이 데이터 값 인지 아니면 다른 값 (예: NULL) 인지를 나타냅니다. 가능한 값은 *OLE DB 프로그래머 참조* 의 [상태](/previous-versions/windows/desktop/ms722617(v=vs.85)) 를 참조 하세요.
 
 *length*<br/>
 필드 열 크기를 저장 하는 데 사용 되는 멤버 변수 (바이트)입니다.
@@ -60,7 +61,7 @@ ms.locfileid: "88833077"
 
 **db_param** 은 [db_table](db-table.md) 또는 [db_command](db-command.md) 특성과 함께 사용 됩니다.
 
-소비자 특성 공급자가 클래스에 이 특성을 적용하는 경우 컴파일러는 클래스의 이름을 _\_*YourClassName*Accessor로 바꿉니다. 여기서 *YourClassName*은 클래스에 지정한 이름입니다. 컴파일러는 또한 \_*YourClassName*Accessor에서 파생되는 *YourClassName*이라는 클래스를 만듭니다.  클래스 뷰에 두 클래스 모두 표시됩니다.
+소비자 특성 공급자가 클래스에 이 특성을 적용하는 경우 컴파일러는 클래스의 이름을 _\_*YourClassName* Accessor로 바꿉니다. 여기서 *YourClassName* 은 클래스에 지정한 이름입니다. 컴파일러는 또한 \_*YourClassName* Accessor에서 파생되는 *YourClassName* 이라는 클래스를 만듭니다.  클래스 뷰에 두 클래스 모두 표시됩니다.
 
 ## <a name="example"></a>예제
 

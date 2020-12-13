@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2182'
 title: 컴파일러 오류 C2182
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2182
 ms.assetid: dfd8d47d-9606-496e-bd96-4bf41ba1f857
-ms.openlocfilehash: 0312a1144b3afec52b2041cc25374b691ed97d0c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c8ad265810d287a32b4bffe3aa133c1437420ec7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87209879"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335173"
 ---
 # <a name="compiler-error-c2182"></a>컴파일러 오류 C2182
 
