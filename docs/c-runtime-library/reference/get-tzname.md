@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _get_tzname'
 title: _get_tzname
 ms.date: 4/2/2020
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - time zones
 - get_tzname function
 ms.assetid: df0065ff-095f-4237-832c-2fe9ab913875
-ms.openlocfilehash: bf63b0ade0adc0a2dfa471bbfbeebc0cb2d04911
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: b98a068d6f2d2643df43078c5a274fd761ac8e95
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919677"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338951"
 ---
 # <a name="_get_tzname"></a>_get_tzname
 
@@ -57,7 +58,7 @@ errno_t _get_tzname(
 Null 종결자를 포함 하는 *Timezonename* 의 문자열 길이입니다.
 
 *timeZoneName*<br/>
-*인덱스*에 따라 표준 시간대 이름 또는 일광 표준 시간대 이름 (DST) 표현에 대 한 문자열의 주소입니다.
+*인덱스* 에 따라 표준 시간대 이름 또는 일광 표준 시간대 이름 (DST) 표현에 대 한 문자열의 주소입니다.
 
 *sizeInBytes*<br/>
 *Timezonename* 문자열의 크기 (바이트)입니다.
@@ -73,25 +74,25 @@ Null 종결자를 포함 하는 *Timezonename* 의 문자열 길이입니다.
 
 런타임에 값을 명시적으로 변경하는 경우가 아니면 기본값은 각각 "PST" 및 "PDT"입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 성공 하면 0이 고, 그렇지 않으면 **errno** 형식 값입니다.
 
-*Timezonename* 이 **NULL**이거나 *sizeinbytes* 가 0 이거나 0 보다 작은 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **errno** 를 **EINVAL** 로 설정 하 고 **EINVAL**를 반환 합니다.
+*Timezonename* 이 **NULL** 이거나 *sizeinbytes* 가 0 이거나 0 보다 작은 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **errno** 를 **EINVAL** 로 설정 하 고 **EINVAL** 를 반환 합니다.
 
 ### <a name="error-conditions"></a>오류 조건
 
 |*pReturnValue*|*timeZoneName*|*sizeInBytes*|*index*|반환 값|*Timezonename* 의 내용|
 |--------------------|--------------------|-------------------|-------------|------------------|--------------------------------|
-|TZ 이름의 크기|**N**|0|0 또는 1|0|수정 안 됨|
+|TZ 이름의 크기|**NULL**|0|0 또는 1|0|수정 안 됨|
 |TZ 이름의 크기|any|> 0|0 또는 1|0|TZ 이름|
-|수정 안 됨|**N**|> 0|any|**EINVAL**|수정 안 됨|
+|수정 안 됨|**NULL**|> 0|any|**EINVAL**|수정 안 됨|
 |수정 안 됨|any|0|any|**EINVAL**|수정 안 됨|
 |수정 안 됨|any|> 0|> 1|**EINVAL**|수정 안 됨|
 
 ## <a name="remarks"></a>설명
 
-**_Get_tzname** 함수는 현재 표준 시간대 이름 또는 일광 표준 시간대 이름 (DST)의 문자열 표현을 *pReturnValue*의 문자열 크기와 함께 인덱스 값에 따라 *timezonename* 의 주소로 검색 합니다. *Timezonename* 이 **NULL** 이 고 *sizeinbytes* 가 0 인 경우에는 지정 된 표준 시간대를 보유 하는 데 필요한 문자열의 크기와 *pReturnValue*에서 종료 NULL을 바이트 단위로 반환 합니다. 인덱스 값은 표준 시간대의 경우 0 또는 일광 표준 시간대의 경우 1 이어야 합니다. *인덱스* 의 다른 값은 결과를 결정 하지 않습니다.
+**_Get_tzname** 함수는 현재 표준 시간대 이름 또는 일광 표준 시간대 이름 (DST)의 문자열 표현을 *pReturnValue* 의 문자열 크기와 함께 인덱스 값에 따라 *timezonename* 의 주소로 검색 합니다. *Timezonename* 이 **NULL** 이 고 *sizeinbytes* 가 0 인 경우에는 지정 된 표준 시간대를 보유 하는 데 필요한 문자열의 크기와 *pReturnValue* 에서 종료 NULL을 바이트 단위로 반환 합니다. 인덱스 값은 표준 시간대의 경우 0 또는 일광 표준 시간대의 경우 1 이어야 합니다. *인덱스* 의 다른 값은 결과를 결정 하지 않습니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -147,7 +148,7 @@ The current Daylight standard time zone name is PDT.
 
 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [시간 관리](../../c-runtime-library/time-management.md)<br/>
 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)<br/>

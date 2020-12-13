@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4255'
 title: 컴파일러 경고(수준 4) C4255
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4255
 ms.assetid: 2087b635-4b4c-4182-8a01-c26770d2bb88
-ms.openlocfilehash: 49d3965ed7190e6a763e135bb1307a0b847697d7
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 31c5a121c944a65a0a5c3cd13d3e6201c3ad43a0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80161115"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339166"
 ---
 # <a name="compiler-warning-level-4-c4255"></a>컴파일러 경고(수준 4) C4255
 

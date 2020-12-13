@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 사용 되지 않음 (c + +)'
 title: 사용되지 않음 (C++)
 ms.date: 03/28/2017
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - __declspec keyword [C++], deprecated
 - deprecated __declspec keyword
 ms.assetid: beef1129-9434-4cb3-8392-f1eb29e04805
-ms.openlocfilehash: 44cb33bae43b32b12dda95423aec5484f61aa596
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: cd7bc3acbe6a61e87a1766025bcc174268190c48
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90683418"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339425"
 ---
 # <a name="deprecated-c"></a>사용되지 않음 (C++)
 
@@ -68,7 +69,7 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [__declspec](../cpp/declspec.md)<br/>
-[C++ 키워드](../cpp/keywords-cpp.md)
+[키워드](../cpp/keywords-cpp.md)

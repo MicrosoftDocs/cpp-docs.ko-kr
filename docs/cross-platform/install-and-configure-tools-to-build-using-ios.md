@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: iOS를 사용 하 여 빌드할 도구 설치 및 구성'
 title: iOS를 사용하여 빌드할 도구 설치 및 구성
 ms.date: 10/17/2019
 ms.assetid: d0c311c9-9eb9-42c5-ba07-25604362cd28
-ms.openlocfilehash: 26dea080f3d3f05885f348dcaf1c66a0db2a36b5
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: e6d91dc679d86085c1886cab0d330a4fafb3c617
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041993"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339464"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>iOS를 사용하여 빌드할 도구 설치 및 구성
 
@@ -42,7 +43,7 @@ iOS를 사용하여 빌드하는 도구를 설치한 경우 Visual Studio 및 Ma
 
 - Xcode에서 앱을 서명하는 서명 ID로 구성된 Apple ID 계정
 
-   Xcode에서 서명 ID를 보거나 설정하려면 **Xcode** 메뉴를 열고 **기본 설정**을 선택합니다. **계정** 을 선택하고 Apple ID를 선택한 다음 **세부 정보 보기** 단추를 선택합니다. 자세한 지침은 [Apple ID 계정 추가](https://help.apple.com/xcode/mac/current/#/devaf282080a)를 참조하세요.
+   Xcode에서 서명 ID를 보거나 설정하려면 **Xcode** 메뉴를 열고 **기본 설정** 을 선택합니다. **계정** 을 선택하고 Apple ID를 선택한 다음 **세부 정보 보기** 단추를 선택합니다. 자세한 지침은 [Apple ID 계정 추가](https://help.apple.com/xcode/mac/current/#/devaf282080a)를 참조하세요.
 
    서명 요구 사항에 대한 자세한 내용은 [앱 서명이란](https://help.apple.com/xcode/mac/current/#/dev3a05256b8)을 참조하세요.
 
@@ -121,7 +122,7 @@ Visual Studio에서 호스트 이름을 사용하여 원격 에이전트를 구�
 
 #### <a name="to-stop-the-remote-agent"></a>원격 에이전트를 중지하려면
 
-- 터미널 창이 `vcremote` 에서 실행 되 고 있는 경우 **컨트롤** + **C**를 입력 합니다.
+- 터미널 창이 `vcremote` 에서 실행 되 고 있는 경우 **컨트롤** + **C** 를 입력 합니다.
 
 ## <a name="configure-the-remote-agent-in-visual-studio"></a><a name="ConfigureVS"></a> Visual Studio에서 원격 에이전트 구성
 
@@ -135,9 +136,9 @@ Visual Studio에서 원격 에이전트에 연결하려면 Visual Studio 옵션�
 
    터미널 창에서 **ifconfig** 명령을 사용하여 IP 주소를 가져올 수 있습니다. 활성 네트워크 인터페이스 아래에 나열된 inet 주소를 사용합니다.
 
-1. Visual Studio 메뉴 모음에서 **도구**, **옵션**을 차례로 선택합니다.
+1. Visual Studio 메뉴 모음에서 **도구**, **옵션** 을 차례로 선택합니다.
 
-1. **옵션** 대화 상자에서 **플랫폼 간**, **C++**, **iOS**를 확장합니다.
+1. **옵션** 대화 상자에서 **플랫폼 간**, **C++**, **iOS** 를 확장합니다.
 
 1. **호스트 이름** 및 **포트** 필드에서 시작할 때 원격 에이전트에 의해 지정된 값을 입력합니다. 호스트 이름은 Mac의 DNS 이름 또는 IP 주소일 수 있습니다. 기본 포트는 3030입니다.
 
@@ -146,7 +147,7 @@ Visual Studio에서 원격 에이전트에 연결하려면 Visual Studio 옵션�
 
 1. 기본 보안된 연결 모드에서 원격 에이전트를 사용하는 경우 **보안** 확인란을 선택한 다음 **Pin** 필드에 원격 에이전트에 의해 지정된 PIN 값을 입력합니다. 보안되지 않은 연결 모드에서 원격 에이전트를 사용하는 경우 **보안** 확인란을 선택 취소하고 **Pin** 필드를 비워 둡니다.
 
-1. **연결**을 선택하여 연결을 사용하도록 설정합니다.
+1. **연결** 을 선택하여 연결을 사용하도록 설정합니다.
 
    ![iOS 빌드에 대한 vcremote 연결 구성](../cross-platform/media/cppmdd-options-ios.png "iOS 빌드에 대한 vcremote 연결 구성")
 

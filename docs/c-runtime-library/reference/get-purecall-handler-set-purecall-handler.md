@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _get_purecall_handler, _set_purecall_handler'
 title: _get_purecall_handler, _set_purecall_handler
 ms.date: 11/04/2016
 api_name:
@@ -37,12 +38,12 @@ helpviewer_keywords:
 - _set_purecall_handler_m function
 - _get_purecall_handler function
 ms.assetid: 2759b878-8afa-4129-86e7-72afc2153d9c
-ms.openlocfilehash: 9f21258fa1f6ecd2d1717b00ef2cecaee9c865e2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7971847c4ce0861db272ea3c722666b0ba0318d0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216949"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339015"
 ---
 # <a name="_get_purecall_handler-_set_purecall_handler"></a>_get_purecall_handler, _set_purecall_handler
 
@@ -63,9 +64,9 @@ _purecall_handler __cdecl _set_purecall_handler(
 *function*<br/>
 순수 가상 함수 호출 시 호출되는 함수입니다. **_Purecall_handler** 함수에는 void 반환 형식이 있어야 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-이전 **_purecall_handler**입니다. **`nullptr`** 이전 처리기가 없으면를 반환 합니다.
+이전 **_purecall_handler** 입니다. **`nullptr`** 이전 처리기가 없으면를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 

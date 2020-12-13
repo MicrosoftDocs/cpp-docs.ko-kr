@@ -1,4 +1,5 @@
 ---
+description: Is_rvalue_reference 클래스에 대해 자세히 알아보세요.
 title: is_rvalue_reference 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - is_rvalue_reference class
 - is_rvalue_reference
 ms.assetid: 40a97072-7b5c-4274-9154-298d3dcf064a
-ms.openlocfilehash: 58cbf5709eda4f41d2edab7ddac1e0a04a9c74cf
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 1fb3de556f3a8b1b9aa70034a23e5e487336cd56
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68455664"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339028"
 ---
-# <a name="isrvaluereference-class"></a>is_rvalue_reference 클래스
+# <a name="is_rvalue_reference-class"></a>is_rvalue_reference 클래스
 
 형식이 rvalue 참조인지 테스트합니다.
 
@@ -36,11 +37,11 @@ struct is_rvalue_reference;
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<type_traits>
+**헤더:**\<type_traits>
 
 **네임스페이스:** std
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [<type_traits>](../standard-library/type-traits.md)\
-[Lvalue 및 Rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md)
+[Lvalues 및 Rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md)

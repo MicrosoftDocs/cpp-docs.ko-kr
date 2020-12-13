@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: &lt; numeric&gt;'
 title: '&lt;numeric&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - <numeric> header
 ms.assetid: 6d6ccb94-48cc-479b-b4a9-bd9c78d4896a
-ms.openlocfilehash: ee1e26d3f174d21ab1ad2c847d292ad075cc0f71
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5ff2a0ff2b765afbb60d117745976ad3919dd18f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88830594"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338041"
 ---
 # <a name="ltnumericgt"></a>&lt;numeric&gt;
 
@@ -43,7 +44,7 @@ ms.locfileid: "88830594"
 |[inner_product](../standard-library/numeric-functions.md#inner_product)|두 범위의 요소 전체의 곱의 합을 계산하여 지정된 초기값에 추가하거나 합 및 곱의 연산을 지정된 다른 이진 연산으로 대체한 일반화된 절차의 결과를 계산합니다.|
 |[iota](../standard-library/numeric-functions.md#iota)|시작 값을 저장하고, 첫 번째 요소부터 시작하여 간격 `value++`의 각 요소에서 값의 연속적 증분(`[first, last)`)으로 채웁니다.|
 |[lcm](../standard-library/numeric-functions.md#lcm)||
-|[partial_sum](../standard-library/numeric-functions.md#partial_sum)|첫 번째 요소부터 *i*번째 요소까지 입력 범위에서 일련의 합계를 계산하고 각 합계의 결과를 대상 범위의 *i*번째 요소에 저장하거나 합 연산을 지정된 다른 이진 연산으로 대체한 일반화된 절차 결과를 계산합니다.|
+|[partial_sum](../standard-library/numeric-functions.md#partial_sum)|첫 번째 요소부터 *i* 번째 요소까지 입력 범위에서 일련의 합계를 계산하고 각 합계의 결과를 대상 범위의 *i* 번째 요소에 저장하거나 합 연산을 지정된 다른 이진 연산으로 대체한 일반화된 절차 결과를 계산합니다.|
 |[줄이십시오](../standard-library/numeric-functions.md#reduce)||
 |[transform_exclusive_scan](../standard-library/numeric-functions.md#transform_exclusive_scan)||
 |[transform_inclusive_scan](../standard-library/numeric-functions.md#transform_inclusive_scan)||

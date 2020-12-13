@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2558'
 title: 컴파일러 오류 C2558
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2558
 ms.assetid: 822b701e-dcae-423a-b21f-47f36aff9c90
-ms.openlocfilehash: 2504b42f49ccb040f676f0aead8f243d33c7dd1a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 12f75294f02b6586a90515f381b37c8c346f4567
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87207747"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338722"
 ---
 # <a name="compiler-error-c2558"></a>컴파일러 오류 C2558
 

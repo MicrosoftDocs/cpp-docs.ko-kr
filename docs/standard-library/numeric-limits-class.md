@@ -1,4 +1,5 @@
 ---
+description: Numeric_limits 클래스에 대해 자세히 알아보세요.
 title: numeric_limits 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -70,12 +71,12 @@ helpviewer_keywords:
 - std::numeric_limits [C++], tinyness_before
 - std::numeric_limits [C++], traps
 ms.assetid: 9e817177-0e91-48e6-b680-0531c4b26625
-ms.openlocfilehash: eb2ee9bc6bc887ff6739c3da1bf2566dbdcbc016
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: c0f3532b80eb2cba03a7c230d7b16aa8d3c6b616
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88830685"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338061"
 ---
 # <a name="numeric_limits-class"></a>numeric_limits 클래스
 
@@ -297,7 +298,7 @@ static constexpr Type epsilon() throw();
 
 #### <a name="remarks"></a>설명
 
-형식에 대 한 값은 FLT_EPSILON입니다 **`float`** . `epsilon`형식에 대 한는 *n*n을 표현할 수 있는 가장 작은 양의 부동 소수점 숫자 *n* 입니다  +  `epsilon`  +  *N* .
+형식에 대 한 값은 FLT_EPSILON입니다 **`float`** . `epsilon`형식에 대 한는 *n* n을 표현할 수 있는 가장 작은 양의 부동 소수점 숫자 *n* 입니다  +  `epsilon`  +   .
 
 #### <a name="example"></a>예제
 
@@ -441,7 +442,7 @@ static constexpr bool has_infinity = false;
 
 #### <a name="remarks"></a>설명
 
-Is_iec559 이면 멤버가 **`true`** 를 [is_iec559](#is_iec559) 반환 합니다 **`true`** .
+Is_iec559 이면 멤버가 **`true`** 를 [](#is_iec559) 반환 합니다 **`true`** .
 
 #### <a name="example"></a>예제
 
@@ -487,7 +488,7 @@ static constexpr bool has_quiet_NaN = false;
 
 #### <a name="remarks"></a>설명
 
-자동 NAN은 식에 포함되어 있다는 신호를 보내지 않는 숫자가 아닌 항목에 대한 인코딩입니다. Is_iec559 true 이면 반환 값은입니다 **`true`** . [is_iec559](#is_iec559)
+자동 NAN은 식에 포함되어 있다는 신호를 보내지 않는 숫자가 아닌 항목에 대한 인코딩입니다. Is_iec559 true 이면 반환 값은입니다 **`true`** . [](#is_iec559)
 
 #### <a name="example"></a>예제
 
@@ -533,7 +534,7 @@ static constexpr bool has_signaling_NaN = false;
 
 #### <a name="remarks"></a>설명
 
-신호 NAN은 식에 포함되어 있다는 신호를 보내는 숫자가 아닌 항목에 대한 인코딩입니다. Is_iec559 true 이면 반환 값은입니다 **`true`** . [is_iec559](#is_iec559)
+신호 NAN은 식에 포함되어 있다는 신호를 보내는 숫자가 아닌 항목에 대한 인코딩입니다. Is_iec559 true 이면 반환 값은입니다 **`true`** . [](#is_iec559)
 
 #### <a name="example"></a>예제
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: getc, getwc'
 title: getc, getwc
 ms.date: 4/2/2020
 api_name:
@@ -38,12 +39,12 @@ helpviewer_keywords:
 - getwc function
 - gettc function
 ms.assetid: 354ef514-d0c7-404b-92f5-995f6a834bb3
-ms.openlocfilehash: 6248dd2287b2f11db72f64df1241affe8deec22d
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 0d48b0d1549009d6eb36f37f2f08cb393fde6ecb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919657"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338919"
 ---
 # <a name="getc-getwc"></a>getc, getwc
 
@@ -65,15 +66,15 @@ wint_t getwc(
 *스트림*<br/>
 입력 스트림입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-읽은 문자를 반환합니다. 읽기 오류 또는 파일 끝 조건을 나타내기 위해 **getc** 는 **EOF**를 반환 하 고 **getwc** **는 weof**를 반환 합니다. **Getc**의 경우 **ferror** 또는 **feof** 를 사용 하 여 오류 또는 파일 끝을 확인 합니다. *Stream* 이 **NULL**인 경우 **Getc** 및 **getwc** 는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **EOF** **(또는** **getwc**)를 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
+읽은 문자를 반환합니다. 읽기 오류 또는 파일 끝 조건을 나타내기 위해 **getc** 는 **EOF** 를 반환 하 고 **getwc** **는 weof** 를 반환 합니다. **Getc** 의 경우 **ferror** 또는 **feof** 를 사용 하 여 오류 또는 파일 끝을 확인 합니다. *Stream* 이 **NULL** 인 경우 **Getc** 및 **getwc** 는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **EOF** **(또는** **getwc**)를 반환 하 고 **errno** 를 **EINVAL** 로 설정 합니다.
 
 이러한 오류 코드 및 기타 오류 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-각 루틴은 파일에서 현재 위치의 단일 문자를 읽고 다음 문자를 가리킬 연결된 파일 포인터(정의된 경우)를 늘립니다. 파일이 *스트림과*연결 되어 있습니다.
+각 루틴은 파일에서 현재 위치의 단일 문자를 읽고 다음 문자를 가리킬 연결된 파일 포인터(정의된 경우)를 늘립니다. 파일이 *스트림과* 연결 되어 있습니다.
 
 이러한 함수는 호출 스레드를 잠그므로 스레드로부터 안전합니다. 잠기지 않는 버전의 경우 [_getc_nolock, _getwc_nolock](getc-nolock-getwc-nolock.md)을 참조하세요.
 
@@ -81,8 +82,8 @@ wint_t getwc(
 
 |루틴에서 반환된 값|설명|
 |-------------|-------------|
-|**getc**|**Fgetc**와 동일 하지만 함수 및 매크로로 구현 됩니다.|
-|**getwc**|**Getc**의 와이드 문자 버전입니다. *스트림이* 텍스트 모드 또는 이진 모드로 열리는지 여부에 따라 멀티 바이트 문자 또는 와이드 문자를 읽습니다.|
+|**getc**|**Fgetc** 와 동일 하지만 함수 및 매크로로 구현 됩니다.|
+|**getwc**|**Getc** 의 와이드 문자 버전입니다. *스트림이* 텍스트 모드 또는 이진 모드로 열리는지 여부에 따라 멀티 바이트 문자 또는 와이드 문자를 읽습니다.|
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 

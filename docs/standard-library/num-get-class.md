@@ -1,4 +1,5 @@
 ---
+description: Num_get 클래스에 대해 자세히 알아보세요.
 title: num_get 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - std::num_get [C++], do_get
 - std::num_get [C++], get
 ms.assetid: 9933735d-3918-4b17-abad-5fca2adc62d7
-ms.openlocfilehash: d5a88e904c437e79eabfa854a196aa48dbad955e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0236aac2e7c7859f966430bd276b4dffc42820b5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228169"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338084"
 ---
 # <a name="num_get-class"></a>num_get 클래스
 
@@ -42,11 +43,11 @@ class num_get : public locale::facet;
 
 ## <a name="remarks"></a>설명
 
-모든 로캘 패싯과 마찬가지로, 고정 개체 ID에는 초기값 0이 저장되어 있습니다. 저장된 값에 액세스를 처음 시도하면 **id**에 고유한 양수 값이 저장됩니다.
+모든 로캘 패싯과 마찬가지로, 고정 개체 ID에는 초기값 0이 저장되어 있습니다. 저장된 값에 액세스를 처음 시도하면 **id** 에 고유한 양수 값이 저장됩니다.
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[num_get](#num_get)|시퀀스에서 숫자 값을 추출하는 데 사용되는 `num_get` 형식의 개체에 대한 생성자입니다.|
 
@@ -70,7 +71,7 @@ class num_get : public locale::facet;
 
 **네임스페이스:** std
 
-## <a name="num_getchar_type"></a><a name="char_type"></a>num_get:: char_type
+## <a name="num_getchar_type"></a><a name="char_type"></a> num_get:: char_type
 
 로캘에서 사용하는 문자를 설명하기 위해 사용하는 형식입니다.
 
@@ -80,9 +81,9 @@ typedef CharType char_type;
 
 ### <a name="remarks"></a>설명
 
-이 형식은 템플릿 매개 변수 **Chartype**의 동의어입니다.
+이 형식은 템플릿 매개 변수 **Chartype** 의 동의어입니다.
 
-## <a name="num_getdo_get"></a><a name="do_get"></a>num_get::d o_get
+## <a name="num_getdo_get"></a><a name="do_get"></a> num_get::d o_get
 
 문자 시퀀스에서 숫자 또는 부울 값을 추출하기 위해 호출하는 가상 함수입니다.
 
@@ -182,7 +183,7 @@ virtual iter_type do_get(
 *짧은*\
 읽은 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 값을 읽은 후의 반복기입니다.
 
@@ -199,7 +200,7 @@ virtual iter_type do_get(
     long& val) const;
 ```
 
-는 *first* `[first, last)` 비어 있지 않은 완전 한 정수 입력 필드를 인식할 때까지 시퀀스의 처음부터 시작 하는 순차적 요소와 일치 합니다. 성공 하는 경우이 필드를 형식과 동일한 값으로 변환 **`long`** 하 고 결과를 *val*에 저장 합니다. 이 함수는 숫자 입력 필드를 벗어난 범위에 있는 첫 번째 요소를 지정하는 반복기를 반환합니다. 그렇지 않으면 함수는 *val* 에 아무 것도 저장 하지 않으며 `ios_base::failbit` 에는를 설정 `state` 합니다. 그리고 유효한 정수 입력 필드의 접두사를 벗어난 범위에 있는 첫 번째 요소를 지정하는 반복기를 반환합니다. 두 경우 모두 반환 값이 `last`와 같으면 함수는 `state`에서 `ios_base::eofbit`를 설정합니다.
+는  `[first, last)` 비어 있지 않은 완전 한 정수 입력 필드를 인식할 때까지 시퀀스의 처음부터 시작 하는 순차적 요소와 일치 합니다. 성공 하는 경우이 필드를 형식과 동일한 값으로 변환 **`long`** 하 고 결과를 *val* 에 저장 합니다. 이 함수는 숫자 입력 필드를 벗어난 범위에 있는 첫 번째 요소를 지정하는 반복기를 반환합니다. 그렇지 않으면 함수는 *val* 에 아무 것도 저장 하지 않으며 `ios_base::failbit` 에는를 설정 `state` 합니다. 그리고 유효한 정수 입력 필드의 접두사를 벗어난 범위에 있는 첫 번째 요소를 지정하는 반복기를 반환합니다. 두 경우 모두 반환 값이 `last`와 같으면 함수는 `state`에서 `ios_base::eofbit`를 설정합니다.
 
 정수 입력 필드는 파일의 일련의 요소를 일치 및 변환 하기 위해 검색 함수에서 사용 하는 것과 동일한 규칙에 의해 변환 됩니다 **`char`** . 이러한 각 **`char`** 요소는 `Elem` 간단한 일대일 매핑을 통해 형식의 동등한 요소에 매핑되는 것으로 간주 됩니다. 해당 하는 검색 변환 사양은 다음과 같이 결정 됩니다.
 
@@ -211,7 +212,7 @@ virtual iter_type do_get(
 
 그렇지 않으면 변환 사양은 `ld`입니다.
 
-정수 입력 필드의 형식은 [locale facet](../standard-library/locale-class.md#facet_class) `fac` 호출 [use_facet](../standard-library/locale-functions.md#use_facet) `<` [numpunct](../standard-library/numpunct-class.md) `<Elem>(iosbase.` [ios_base:: getloc](../standard-library/ios-base-class.md#getloc)에 의해 반환 되는 로캘 패싯에 따라 결정 됩니다 `())` . 특히:
+정수 입력 필드의 형식은 [](../standard-library/locale-class.md#facet_class) `fac` 호출 [use_facet](../standard-library/locale-functions.md#use_facet) `<` [numpunct](../standard-library/numpunct-class.md) `<Elem>(iosbase.` [ios_base:: getloc](../standard-library/ios-base-class.md#getloc)에 의해 반환 되는 로캘 패싯에 따라 결정 됩니다 `())` . 특히 다음 사항에 주의하세요.
 
 `fac.`[numpunct:: grouping](../standard-library/numpunct-class.md#grouping) `()` 소수점 왼쪽의 숫자를 그룹화 하는 방법을 결정 합니다.
 
@@ -230,7 +231,7 @@ virtual iter_type do_get(
     unsigned long& val) const;
 ```
 
-이 함수는 `ld`의 변환 사양을 `lu`로 대체한다는 점을 제외하면 첫 번째 함수와 동일하게 동작합니다. 성공 하면 숫자 입력 필드를 형식의 값으로 변환 하 **`unsigned long`** 고 해당 값을 *val*에 저장 합니다.
+이 함수는 `ld`의 변환 사양을 `lu`로 대체한다는 점을 제외하면 첫 번째 함수와 동일하게 동작합니다. 성공 하면 숫자 입력 필드를 형식의 값으로 변환 하 **`unsigned long`** 고 해당 값을 *val* 에 저장 합니다.
 
 다섯 번째 보호된 가상 구성원 함수는 다음 코드와 같습니다.
 
@@ -243,7 +244,7 @@ virtual iter_type do_get(
     long long& val) const;
 ```
 
-이 함수는 `ld`의 변환 사양을 `lld`로 대체한다는 점을 제외하면 첫 번째 함수와 동일하게 동작합니다. 성공 하면 숫자 입력 필드를 형식의 값으로 변환 하 **`long long`** 고 해당 값을 *val*에 저장 합니다.
+이 함수는 `ld`의 변환 사양을 `lld`로 대체한다는 점을 제외하면 첫 번째 함수와 동일하게 동작합니다. 성공 하면 숫자 입력 필드를 형식의 값으로 변환 하 **`long long`** 고 해당 값을 *val* 에 저장 합니다.
 
 여섯 번째 보호된 가상 구성원 함수는 다음 코드와 같습니다.
 
@@ -256,7 +257,7 @@ virtual iter_type do_get(
     unsigned long long& val) const;
 ```
 
-이 함수는 `ld`의 변환 사양을 `llu`로 대체한다는 점을 제외하면 첫 번째 함수와 동일하게 동작합니다. 성공 하면 숫자 입력 필드를 형식의 값으로 변환 하 **`unsigned long long`** 고 해당 값을 *val*에 저장 합니다.
+이 함수는 `ld`의 변환 사양을 `llu`로 대체한다는 점을 제외하면 첫 번째 함수와 동일하게 동작합니다. 성공 하면 숫자 입력 필드를 형식의 값으로 변환 하 **`unsigned long long`** 고 해당 값을 *val* 에 저장 합니다.
 
 일곱 번째 보호된 가상 구성원 함수는 다음 코드와 같습니다.
 
@@ -321,7 +322,7 @@ virtual iter_type do_get(
     bool& val) const;
 ```
 
-이 함수는 비어 있지 않은 완전한 부울 입력 필드와의 일치를 시도한다는 점을 제외하면 첫 번째 함수와 동일하게 동작합니다. 성공 하면 부울 입력 필드를 형식의 값으로 변환 하 **`bool`** 고 해당 값을 *val*에 저장 합니다.
+이 함수는 비어 있지 않은 완전한 부울 입력 필드와의 일치를 시도한다는 점을 제외하면 첫 번째 함수와 동일하게 동작합니다. 성공 하면 부울 입력 필드를 형식의 값으로 변환 하 **`bool`** 고 해당 값을 *val* 에 저장 합니다.
 
 부울 입력 필드는 두 가지 형식 중 하나를 사용합니다. `iosbase.flags() & ios_base::`[boolalpha](../standard-library/ios-functions.md#boolalpha)가 false인 경우 변환된 값이 0(false의 경우) 또는 1(true의 경우)이어야 한다는 점을 제외하면 정수 입력 필드와 동일합니다. 그렇지 않으면 시퀀스는 `fac.` [numpunct:: falsename](../standard-library/numpunct-class.md#falsename) `()` (false의 경우) 또는 `fac.` [numpunct:: truename](../standard-library/numpunct-class.md#truename) `()` (true의 경우)과 일치 해야 합니다.
 
@@ -329,7 +330,7 @@ virtual iter_type do_get(
 
 `do_get`에 의해 가상 구성원 함수가 호출되는 [get](#get)의 예제를 참조하세요.
 
-## <a name="num_getget"></a><a name="get"></a>num_get:: get
+## <a name="num_getget"></a><a name="get"></a> num_get:: get
 
 문자 시퀀스에서 숫자 또는 부울 값을 추출합니다.
 
@@ -429,7 +430,7 @@ iter_type get(
 *짧은*\
 읽은 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 값을 읽은 후의 반복기입니다.
 
@@ -437,11 +438,11 @@ iter_type get(
 
 모든 멤버 함수는 [do_get](#do_get) `( first, last, iosbase, state, val)` 를 반환 합니다.
 
-첫 번째 보호된 가상 구성원 함수는 비어 있지 않은 완전한 정수 입력 필드를 인식할 때까지 시퀀스 [ `first`, `last`)에서 처음 시작되는 순차 요소 일치를 시도합니다. 성공 하면이 필드를 형식과 동일한 값으로 변환 **`long`** 하 고 결과를 *val*에 저장 합니다. 이 함수는 숫자 입력 필드를 벗어난 범위에 있는 첫 번째 요소를 지정하는 반복기를 반환합니다. 그렇지 않으면 함수는 *val* 에 아무 것도 저장 하지 않으며 `ios_base::failbit` *상태*를 설정 합니다. 그리고 유효한 정수 입력 필드의 접두사를 벗어난 범위에 있는 첫 번째 요소를 지정하는 반복기를 반환합니다. 두 경우 모두 반환 값이 *last*와 같으면 함수는 `ios_base::eofbit` *상태*를 설정 합니다.
+첫 번째 보호된 가상 구성원 함수는 비어 있지 않은 완전한 정수 입력 필드를 인식할 때까지 시퀀스 [ `first`, `last`)에서 처음 시작되는 순차 요소 일치를 시도합니다. 성공 하면이 필드를 형식과 동일한 값으로 변환 **`long`** 하 고 결과를 *val* 에 저장 합니다. 이 함수는 숫자 입력 필드를 벗어난 범위에 있는 첫 번째 요소를 지정하는 반복기를 반환합니다. 그렇지 않으면 함수는 *val* 에 아무 것도 저장 하지 않으며 `ios_base::failbit` *상태* 를 설정 합니다. 그리고 유효한 정수 입력 필드의 접두사를 벗어난 범위에 있는 첫 번째 요소를 지정하는 반복기를 반환합니다. 두 경우 모두 반환 값이 *last* 와 같으면 함수는 `ios_base::eofbit` *상태* 를 설정 합니다.
 
 정수 입력 필드는 파일의 일련의 요소를 일치 및 변환 하기 위해 검색 함수에서 사용 하는 것과 동일한 규칙에 의해 변환 됩니다 **`char`** . 이러한 각 **`char`** 요소는 간단한 일대일 매핑으로 형식의 동등한 요소에 매핑되는 것으로 간주 됩니다 `CharType` . 동일한 스캔 변환 사양은 다음과 같이 결정됩니다.
 
-- `iosbase.` [flags](../standard-library/ios-base-class.md#flags) `& ios_base::basefield == ios_base::` [10 진수로](../standard-library/ios-functions.md#oct)플래그를 지정 하는 경우 변환 사양은 `lo` 입니다.
+- `iosbase.` [](../standard-library/ios-base-class.md#flags) `& ios_base::basefield == ios_base::` [10 진수로](../standard-library/ios-functions.md#oct)플래그를 지정 하는 경우 변환 사양은 `lo` 입니다.
 
 - `iosbase.flags & ios_base::basefield == ios_base::`[hex](../standard-library/ios-functions.md#hex)이면 변환 사양은 `lx`입니다.
 
@@ -449,7 +450,7 @@ iter_type get(
 
 - 그렇지 않으면 변환 사양은 `ld`입니다.
 
-정수 입력 필드의 형식은 [locale facet](../standard-library/locale-class.md#facet_class) `fac` [use_facet](../standard-library/locale-functions.md#use_facet) `<` [`numpunct`](../standard-library/numpunct-class.md) `<Elem>(iosbase.` [getloc](../standard-library/ios-base-class.md#getloc)호출에서 반환 되는 로캘 패싯에 따라 결정 됩니다 `())` . 특히:
+정수 입력 필드의 형식은 [](../standard-library/locale-class.md#facet_class) `fac` [use_facet](../standard-library/locale-functions.md#use_facet) `<` [`numpunct`](../standard-library/numpunct-class.md) `<Elem>(iosbase.` [getloc](../standard-library/ios-base-class.md#getloc)호출에서 반환 되는 로캘 패싯에 따라 결정 됩니다 `())` . 특히 다음 사항에 주의하세요.
 
 - `fac.`[그룹화](../standard-library/numpunct-class.md#grouping) 는 소수점이 하 자릿수의 왼쪽으로 숫자를 그룹화 하는 방법을 결정 합니다.
 
@@ -467,7 +468,7 @@ virtual iter_type do_get(iter_type first,
     unsigned long& val) const;
 ```
 
-이 함수는 `ld`의 변환 사양을 `lu`로 대체한다는 점을 제외하면 첫 번째 함수와 동일하게 동작합니다. 성공 하는 경우 숫자 입력 필드를 형식의 값으로 변환 하 **`unsigned long`** 고 *val*에 해당 값을 저장 합니다.
+이 함수는 `ld`의 변환 사양을 `lu`로 대체한다는 점을 제외하면 첫 번째 함수와 동일하게 동작합니다. 성공 하는 경우 숫자 입력 필드를 형식의 값으로 변환 하 **`unsigned long`** 고 *val* 에 해당 값을 저장 합니다.
 
 세 번째 보호된 가상 구성원 함수는 다음 코드와 같습니다.
 
@@ -515,7 +516,7 @@ virtual iter_type do_get(iter_type first,
     bool& val) const;
 ```
 
-이 함수는 비어 있지 않은 완전한 부울 입력 필드와의 일치를 시도한다는 점을 제외하면 첫 번째 함수와 동일하게 동작합니다. 성공 하면 부울 입력 필드를 형식의 값으로 변환 하 **`bool`** 고 해당 값을 *val*에 저장 합니다.
+이 함수는 비어 있지 않은 완전한 부울 입력 필드와의 일치를 시도한다는 점을 제외하면 첫 번째 함수와 동일하게 동작합니다. 성공 하면 부울 입력 필드를 형식의 값으로 변환 하 **`bool`** 고 해당 값을 *val* 에 저장 합니다.
 
 부울 입력 필드는 두 가지 형식 중 하나를 사용합니다. `iosbase.flags & ios_base::` [Boolalpha](../standard-library/ios-functions.md#boolalpha) 가 인 경우 **`false`** 변환 된 값이 0 (의 경우 **`false`** ) 또는 1 (의 경우) 이어야 한다는 점을 제외 하면 정수 입력 필드와 동일 합니다 **`true`** . 그렇지 않으면 시퀀스는 `fac.` [falsename](../standard-library/numpunct-class.md#falsename) (의 경우 **`false`** ) 또는 `fac.` [truename](../standard-library/numpunct-class.md#truename) (의 경우)와 일치 해야 합니다 **`true`** .
 
@@ -551,7 +552,7 @@ int main( )
 }
 ```
 
-## <a name="num_getiter_type"></a><a name="iter_type"></a>num_get:: iter_type
+## <a name="num_getiter_type"></a><a name="iter_type"></a> num_get:: iter_type
 
 입력 반복기에 대해 설명하는 형식입니다.
 
@@ -563,7 +564,7 @@ typedef InputIterator iter_type;
 
 이 형식은 템플릿 매개 변수 `InputIterator`의 동의어입니다.
 
-## <a name="num_getnum_get"></a><a name="num_get"></a>num_get:: num_get
+## <a name="num_getnum_get"></a><a name="num_get"></a> num_get:: num_get
 
 시퀀스에서 숫자 값을 추출하는 데 사용되는 `num_get` 형식의 개체에 대한 생성자입니다.
 
@@ -584,11 +585,11 @@ explicit num_get(size_t refs = 0);
 
 - 1: 개체의 수명을 수동으로 관리해야 합니다.
 
-- \>1: 이러한 값은 정의 되지 않습니다.
+- \> 1: 이러한 값은 정의 되지 않습니다.
 
 소멸자는 보호되므로 직접적인 예제는 확인할 수 없습니다.
 
-생성자는 패싯을 사용 하 여 해당 기준 개체를 초기화 `locale::` [facet](../standard-library/locale-class.md#facet_class) `(refs)` 합니다.
+생성자는 패싯을 사용 하 여 해당 기준 개체를 초기화 `locale::` [](../standard-library/locale-class.md#facet_class) `(refs)` 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2804'
 title: 컴파일러 오류 C2804
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2804
 ms.assetid: b066e563-cca4-450c-8ba7-3b0d7a89f3ea
-ms.openlocfilehash: bdd1b4155d30dd2513d87ac217ca20ca7baabd8a
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: c9281b93a67260e079b72ea70e7febc6a73faff3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90743167"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339250"
 ---
 # <a name="compiler-error-c2804"></a>컴파일러 오류 C2804
 

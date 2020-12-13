@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 2) C4307'
 title: 컴파일러 경고(수준 2) C4307
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4307
 ms.assetid: 7cca11e9-be61-49e4-8b15-88b84f0cbf07
-ms.openlocfilehash: d0179dc5f5cb9367ee83a7f40f8b9ceb368474fa
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5de4279d430f3275d61c6dca3d9db161c4ac5f11
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218132"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339202"
 ---
 # <a name="compiler-warning-level-2-c4307"></a>컴파일러 경고(수준 2) C4307
 

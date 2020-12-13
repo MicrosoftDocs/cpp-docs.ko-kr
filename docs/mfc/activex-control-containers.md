@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: ActiveX 컨트롤 컨테이너'
 title: ActiveX 컨트롤 컨테이너
 ms.date: 09/12/2018
 helpviewer_keywords:
 - ActiveX control containers [MFC]
 - OLE controls [MFC], containers
 ms.assetid: 0eb1a713-e607-4c79-a0c7-67c5f1fd5fab
-ms.openlocfilehash: 42fa18c41ebd960aa8de080df00556ad5c909d40
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 6de379cc152ff35e16366c1b5e920bf3548f4cd4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84620750"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339110"
 ---
 # <a name="activex-control-containers"></a>ActiveX 컨트롤 컨테이너
 
@@ -31,11 +32,11 @@ ActiveX 컨트롤 컨테이너는 노출 된 [메서드](mfc-activex-controls-me
 
 - [MFC ActiveX 컨트롤 컨테이너 만들기](reference/creating-an-mfc-activex-control-container.md)
 
-- [ActiveX 컨트롤에 대한 컨테이너](containers-for-activex-controls.md)
+- [ActiveX 컨트롤용 컨테이너](containers-for-activex-controls.md)
 
-- [ActiveX 컨트롤 컨테이너: ActiveX 컨트롤 포함 수동 설정](activex-control-containers-manually-enabling-activex-control-containment.md)
+- [ActiveX 컨트롤 컨테이너: ActiveX 컨트롤 포함 수동 사용](activex-control-containers-manually-enabling-activex-control-containment.md)
 
-- [ActiveX 컨트롤 컨테이너: 컨트롤 컨테이너 애플리케이션에 컨트롤 삽입](inserting-a-control-into-a-control-container-application.md)
+- [ActiveX 컨트롤 컨테이너: 컨트롤 컨테이너 응용 프로그램에 컨트롤 삽입](inserting-a-control-into-a-control-container-application.md)
 
 - [ActiveX 컨트롤 컨테이너: ActiveX 컨트롤을 멤버 변수에 연결](activex-control-containers-connecting-an-activex-control-to-a-member-variable.md)
 
@@ -43,7 +44,7 @@ ActiveX 컨트롤 컨테이너는 노출 된 [메서드](mfc-activex-controls-me
 
 - [ActiveX 컨트롤 컨테이너: 컨트롤 속성 보기 및 수정](activex-control-containers-viewing-and-modifying-control-properties.md)
 
-- [ActiveX 컨트롤 컨테이너: ActiveX 컨트롤 컨테이너에서 ActiveX 컨트롤 프로그래밍](programming-activex-controls-in-a-activex-control-container.md)
+- [ActiveX 컨트롤 컨테이너: activex 컨트롤 컨테이너에서 ActiveX 컨트롤 프로그래밍](programming-activex-controls-in-a-activex-control-container.md)
 
 - [ActiveX 컨트롤 컨테이너: 대화 상자가 아닌 컨테이너에서 컨트롤 사용](activex-control-containers-using-controls-in-a-non-dialog-container.md)
 

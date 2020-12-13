@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: _atoi64, _atoi64_l, _wtoi64, _wtoi64_l'
 title: _atoi64, _atoi64_l, _wtoi64, _wtoi64_l
 ms.date: 4/2/2020
 api_name:
@@ -54,12 +55,12 @@ helpviewer_keywords:
 - _wtoi64 function
 - _atoi64 function
 ms.assetid: 2c3e30fd-545d-4222-8364-0c5905df9526
-ms.openlocfilehash: 44b1abf816020258240d653cfbf8cd806fcb7dd1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4980206a13baccdd510ee2532d37cf3556bd46db
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232562"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338995"
 ---
 # <a name="_atoi64-_atoi64_l-_wtoi64-_wtoi64_l"></a>_atoi64, _atoi64_l, _wtoi64, _wtoi64_l
 
@@ -92,13 +93,13 @@ __int64 _wtoi64_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 각 함수는 **`__int64`** 입력 문자를 숫자로 해석 하 여 생성 된 값을 반환 합니다. 입력을 해당 형식의 값으로 변환할 수 없는 경우 **_atoi64** 의 반환 값은 0입니다.
 
 큰 양의 정수 값을 사용 하는 오버플로의 경우 **_atoi64** 은 **I64_MAX** 을 반환 하 고, 큰 음의 정수 값을 사용 하 여 오버플로가 발생할 경우 **I64_MIN** 합니다.
 
-범위를 벗어난 모든 경우에는 **errno** 가 **ERANGE**로 설정 됩니다. 전달 된 매개 변수가 **NULL**인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **errno** 를 **EINVAL** 로 설정 하 고 0을 반환 합니다.
+범위를 벗어난 모든 경우에는 **errno** 가 **ERANGE** 로 설정 됩니다. 전달 된 매개 변수가 **NULL** 인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **errno** 를 **EINVAL** 로 설정 하 고 0을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
@@ -106,7 +107,7 @@ __int64 _wtoi64_l(
 
 입력 문자열은 지정된 형식의 숫자 값으로 해석될 수 있는 문자 시퀀스입니다. 함수는 숫자의 일부로 인식할 수 없는 첫 번째 문자에서 입력 문자열 읽기를 중지합니다. 이 문자는 문자열을 종결하는 null 문자('\0' 또는 L'\0')일 수 있습니다.
 
-_Atoi64 *str* 인수 형식은 **_atoi64** 다음과 같습니다.
+_Atoi64 *str* 인수 형식은  다음과 같습니다.
 
 > [*공백*] [*sign*] [*숫자*]
 

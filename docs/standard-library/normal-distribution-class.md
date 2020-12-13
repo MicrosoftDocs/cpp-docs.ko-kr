@@ -1,4 +1,5 @@
 ---
+description: Normal_distribution 클래스에 대해 자세히 알아보세요.
 title: normal_distribution 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - std::normal_distribution [C++], param_type
 - std::normal_distribution [C++], param_type
 ms.assetid: bf92cdbd-bc72-4d4a-b588-173d748f0d7d
-ms.openlocfilehash: 0fed268b6c3f318b3e308f90e94862fdf969e3fa
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: eb27debf104df3e33a324a0297624769af4860b3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836402"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338137"
 ---
 # <a name="normal_distribution-class"></a>normal_distribution 클래스
 
@@ -211,7 +212,7 @@ explicit normal_distribution(const param_type& parm);
 
 첫 번째 생성자는 저장된 `mean` 값이 *mean* 값을 보유하고 저장된 `stddev` 값이 *stddev* 값을 보유하고 있는 개체를 생성합니다.
 
-두 번째 생성자는 저장된 매개 변수가 *parm*에서 초기화되는 개체를 생성합니다. `param()` 멤버 함수를 호출하여 기존 분포의 현재 매개 변수를 가져와 설정할 수 있습니다.
+두 번째 생성자는 저장된 매개 변수가 *parm* 에서 초기화되는 개체를 생성합니다. `param()` 멤버 함수를 호출하여 기존 분포의 현재 매개 변수를 가져와 설정할 수 있습니다.
 
 ## <a name="normal_distributionparam_type"></a><a name="param_type"></a> normal_distribution::p aram_type
 

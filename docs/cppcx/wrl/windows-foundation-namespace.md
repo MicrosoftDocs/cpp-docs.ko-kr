@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Windows:: Foundation 네임 스페이스'
 title: Windows::Foundation 네임스페이스
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - Foundation namespace
 ms.assetid: 96a6b5e0-ddee-4b21-ae4e-da5feeb945c3
-ms.openlocfilehash: 4c8bc578fd9657fb964bc6148e3acc24b0cb5328
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ae0c8353758b7d8a08d351619e7f1e4c284f68a1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213527"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339399"
 ---
 # <a name="windowsfoundation-namespace"></a>Windows::Foundation 네임스페이스
 
@@ -27,11 +28,11 @@ namespace Windows::Foundation;
 
 ## <a name="members"></a>멤버
 
-### <a name="functions"></a>함수
+### <a name="functions"></a>Functions
 
-|이름|설명|
+|Name|설명|
 |----------|-----------------|
-|[ActivateInstance 함수](activateinstance-function.md)|지정 된 클래스 ID에 정의 된 지정 된 형식의 인스턴스를 등록 하 고 검색 합니다.|
+|[기능 인스턴스 함수](activateinstance-function.md)|지정 된 클래스 ID에 정의 된 지정 된 형식의 인스턴스를 등록 하 고 검색 합니다.|
 |[GetActivationFactory 함수](getactivationfactory-function.md)|템플릿 매개 변수로 지정 된 형식에 대 한 활성화 팩터리를 검색 합니다.|
 
 ## <a name="requirements"></a>요구 사항

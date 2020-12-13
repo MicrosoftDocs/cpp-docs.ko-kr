@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _kbhit'
 title: _kbhit
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - _kbhit function
 - keyboards, checking input
 ms.assetid: e82a1cc9-bbec-4150-b678-a7e433220fe4
-ms.openlocfilehash: bfe26a988c491c4d137bfc1badc093d56cde4010
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 439c3ef6a738bdd7802580eeef1056d0ea02ed58
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916543"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338894"
 ---
 # <a name="_kbhit"></a>_kbhit
 
@@ -109,6 +110,6 @@ Hit me!! Hit me!! Hit me!! Hit me!! Hit me!! Hit me!! Hit me!!
 Key struck was 'q'
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[콘솔 및 포트 I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
+[콘솔 및 포트 i/o](../../c-runtime-library/console-and-port-i-o.md)<br/>

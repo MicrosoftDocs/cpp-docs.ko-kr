@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 컨트롤에 열 추가 (보고서 뷰)'
 title: 컨트롤에 열 추가(보고서 뷰)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - columns [MFC], adding to CListCtrl
 - CListCtrl class [MFC], report view
 ms.assetid: 7392c0d7-f8a5-4e7b-9ae7-b53dc9dd80ae
-ms.openlocfilehash: 119f0f9cb92d724058ce97fbf477143739ec111e
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 62e874f77d326b80a362791888e75df0a92781d6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84617305"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339099"
 ---
 # <a name="adding-columns-to-the-control-report-view"></a>컨트롤에 열 추가(보고서 뷰)
 
