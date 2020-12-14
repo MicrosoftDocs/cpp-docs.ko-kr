@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3532'
 title: 컴파일러 오류 C3532
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3532
 ms.assetid: 51067853-eda8-4f59-86e8-8924e16d3a95
-ms.openlocfilehash: b8d516074b79704b10d27dd4638585a5ada08323
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 754f69bd3ee24b94be6725864a5e9cd3993d2148
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91510125"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97315311"
 ---
 # <a name="compiler-error-c3532"></a>컴파일러 오류 C3532
 
@@ -25,7 +26,7 @@ ms.locfileid: "91510125"
 
 1. 배열 또는 메서드 반환 형식을 선언 하지 않도록 합니다.
 
-## <a name="examples"></a>예
+## <a name="examples"></a>예제
 
 다음 예제에서는 **`auto`** 키워드가 메서드 반환 형식을 선언할 수 없기 때문에 C3532를 생성 합니다.
 

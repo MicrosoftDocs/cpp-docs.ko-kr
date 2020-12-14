@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 방법: c + + Interop를 사용 하 여 구조체 마샬링'
 title: '방법: C++ Interop를 사용하여 구조체 마샬링'
 ms.custom: get-started-article
 ms.date: 11/04/2016
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - interop [C++], structures
 - marshaling [C++], structures
 ms.assetid: c2080200-f983-4d6e-a557-cd870f060a54
-ms.openlocfilehash: 8ca53761647c1f3d5ea059ddf381cb334cd2a993
-ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
+ms.openlocfilehash: 96622c48034ddf3126e68867ad5a4bd8ab25fa43
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91413842"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97302545"
 ---
 # <a name="how-to-marshal-structures-using-c-interop"></a>방법: C++ Interop를 사용하여 구조체 마샬링
 

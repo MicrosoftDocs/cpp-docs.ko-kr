@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3466'
 title: 컴파일러 오류 C3466
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3466
 ms.assetid: 69a877d9-a749-474b-bfc3-8d3fd53ba8fd
-ms.openlocfilehash: 689a0ca837cf305840d6f080e615527f01879225
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 53280a5295676fb6b5cee1d25f5fc96f5b906ebc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90742842"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97315714"
 ---
 # <a name="compiler-error-c3466"></a>컴파일러 오류 C3466
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3530'
 title: 컴파일러 오류 C3530
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3530
 ms.assetid: 21be81ce-b699-4c74-81bc-80a0c34d2d5a
-ms.openlocfilehash: 152157824cb270f32b1233f39225abab7741eda5
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 74cd9ade2805ba26c700d476c53f87ea86a3baba
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91507054"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97315376"
 ---
 # <a name="compiler-error-c3530"></a>컴파일러 오류 C3530
 
@@ -25,7 +26,7 @@ ms.locfileid: "91507054"
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 C3530가 `x` 키워드와 형식을 모두 사용 하 여 선언 되 **`auto`** **`int`** 고이 예제가 **/zc: auto**를 사용 하 여 컴파일되기 때문에를 생성 합니다.
+다음 예제에서는 C3530가 `x` 키워드와 형식을 모두 사용 하 여 선언 되 **`auto`** **`int`** 고이 예제가 **/zc: auto** 를 사용 하 여 컴파일되기 때문에를 생성 합니다.
 
 ```cpp
 // C3530.cpp

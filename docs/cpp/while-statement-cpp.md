@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: while 문 (c + +)'
 title: while 문 (C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - while keyword [C++]
 - while keyword [C++], syntax
 ms.assetid: 358dbe76-5e5e-4af5-b575-c2293c636899
-ms.openlocfilehash: 168b1fc20d165c44c3230a8d1094c99b689ddbb9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3001760372410222651366416ac74d0cba59f23b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233550"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97302831"
 ---
 # <a name="while-statement-c"></a>while 문 (C++)
 
@@ -65,7 +66,7 @@ int main()
 ## <a name="see-also"></a>참고 항목
 
 [반복 문](../cpp/iteration-statements-cpp.md)<br/>
-[C++ 키워드](../cpp/keywords-cpp.md)<br/>
+[키워드](../cpp/keywords-cpp.md)<br/>
 [do-while 문(C++)](../cpp/do-while-statement-cpp.md)<br/>
 [for 문 (c + +)](../cpp/for-statement-cpp.md)<br/>
 [범위 기반 for 문(C++)](../cpp/range-based-for-statement-cpp.md)

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2529'
 title: 컴파일러 오류 C2529
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2529
 ms.assetid: 73a99e55-b91e-488d-9b72-cc80faaeb436
-ms.openlocfilehash: f5a10131fe03bd98078e87f71d07bf02c51d34f4
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 007fa64332e9f7b5eb993f722e66924584d9c342
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74760415"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97302272"
 ---
 # <a name="compiler-error-c2529"></a>컴파일러 오류 C2529
 

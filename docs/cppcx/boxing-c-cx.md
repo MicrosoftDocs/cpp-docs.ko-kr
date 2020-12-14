@@ -1,17 +1,18 @@
 ---
+description: '자세한 정보: Boxing (c + +/CX)'
 title: Boxing(C++/CX)
 ms.date: 12/30/2016
 ms.assetid: edfb12fa-2a9b-42f6-bdac-d4d76cb8274e
-ms.openlocfilehash: 59c7f8ec56a912ed993316fba093b87bd85e16b1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 50b7f3f071fcd0109a85fb24985024666bd8fad3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233537"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97302740"
 ---
 # <a name="boxing-ccx"></a>Boxing(C++/CX)
 
-*Boxing* 은 변수가 Platform:: Object ^을 해당 입력 형식으로 사용 하는 메서드에 전달 될 때 [Windows:: Foundation::D atetime](/uwp/api/windows.foundation.datetime)또는와 같은 기본 스칼라 형식 등의 값 형식 변수를 **`int`** ref 클래스에 래핑합니다. [Platform::Object^](../cppcx/platform-object-class.md)
+*Boxing* 은 변수가 Platform:: Object ^을 해당 입력 형식으로 사용 하는 메서드에 전달 될 때 [Windows:: Foundation::D atetime](/uwp/api/windows.foundation.datetime)또는와 같은 기본 스칼라 형식 등의 값 형식 변수를 **`int`** ref 클래스에 래핑합니다. [](../cppcx/platform-object-class.md)
 
 ## <a name="passing-a-value-type-to-an-object-parameter"></a>Object^ 매개 변수에 값 형식 전달
 

@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 예외 처리기 작성'
 title: 예외 처리기 작성
 ms.date: 11/04/2016
 helpviewer_keywords:
 - structured exception handling [C++], exception handlers
 - exception handling [C++], exception handlers
 ms.assetid: 71473fee-f773-4a34-bf12-82a3af79579c
-ms.openlocfilehash: 201dcaa6a90584d1f9535df11d5722a37bdceb89
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 174ab77240fc405e7c1175806167b6ec68f08c82
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80187286"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97302805"
 ---
 # <a name="writing-an-exception-handler"></a>예외 처리기 작성
 
@@ -20,7 +21,7 @@ ms.locfileid: "80187286"
 
 ## <a name="what-do-you-want-to-know-more-about"></a>추가 정보
 
-- [Try except 문](../cpp/try-except-statement.md)
+- [try-except 문](../cpp/try-except-statement.md)
 
 - [예외 필터 작성](../cpp/writing-an-exception-filter.md)
 
@@ -28,7 +29,7 @@ ms.locfileid: "80187286"
 
 - [하드웨어 예외](../cpp/hardware-exceptions.md)
 
-- [예외 처리기에 대 한 제한 사항](../cpp/restrictions-on-exception-handlers.md)
+- [예외 처리기에 대한 제한](../cpp/restrictions-on-exception-handlers.md)
 
 ## <a name="see-also"></a>참고 항목
 

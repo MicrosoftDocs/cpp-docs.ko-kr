@@ -1,13 +1,14 @@
 ---
+description: '자세히 알아보기: Array 및 WriteOnlyArray (c + +/CX)'
 title: Array 및 WriteOnlyArray(C++/CX)
 ms.date: 01/22/2017
 ms.assetid: ef7cc5f9-cae6-4636-8220-f789e5b6aea4
-ms.openlocfilehash: 1980fbcd1e2fa8cdaa48e00d2e7de9e45ac96a92
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4c4f9415f401f1180786608288e33691c82fbdfa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231028"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97302792"
 ---
 # <a name="array-and-writeonlyarray-ccx"></a>Array 및 WriteOnlyArray(C++/CX)
 
@@ -21,7 +22,7 @@ ms.locfileid: "87231028"
 
 1. `Platform::WriteOnlyArray`
 
-1. 반환 값`Platform::Array^`
+1. 반환 값 `Platform::Array^`
 
 이러한 배열 형식을 사용 하 여 Windows 런타임에서 정의 된 세 가지 배열 패턴을 구현 합니다.
 
@@ -36,7 +37,7 @@ ReceiveArray
 
 ## <a name="passarray-pattern"></a>PassArray 패턴
 
-클라이언트 코드에서 c + + 메서드에 배열을 전달 하 고 메서드가 수정 하지 않는 경우이 메서드는 배열을로 받아들입니다 `const Array^` . ABI (Windows 런타임 응용 프로그램 이진 인터페이스) 수준에서이를 *PassArray*이라고 합니다. 다음 예제에서는 JavaScript에서 할당된 배열을 이 배열을 읽는 C++ 함수에 전달하는 방법을 보여 줍니다.
+클라이언트 코드에서 c + + 메서드에 배열을 전달 하 고 메서드가 수정 하지 않는 경우이 메서드는 배열을로 받아들입니다 `const Array^` . ABI (Windows 런타임 응용 프로그램 이진 인터페이스) 수준에서이를 *PassArray* 이라고 합니다. 다음 예제에서는 JavaScript에서 할당된 배열을 이 배열을 읽는 C++ 함수에 전달하는 방법을 보여 줍니다.
 
 [!code-javascript[cx_arrays#101](../cppcx/codesnippet/JavaScript/array-and-writeonlyarray-c-_1.js)]
 

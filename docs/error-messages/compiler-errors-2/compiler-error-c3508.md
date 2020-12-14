@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3508'
 title: 컴파일러 오류 C3508
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3508
 ms.assetid: 16d08f89-2f32-44eb-9421-68acecddf49b
-ms.openlocfilehash: 1478753f78a54c712e6f18f09b45645dc8f7ed37
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 74dff625c3c1855fa828f0fc492d9839e5c7f67c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74753772"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97315441"
 ---
 # <a name="compiler-error-c3508"></a>컴파일러 오류 C3508
 
