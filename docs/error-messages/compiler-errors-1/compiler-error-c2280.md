@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2280'
 title: 컴파일러 오류 C2280
 ms.date: 04/25/2017
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2280
 ms.assetid: e6c5b1fb-2b9b-4554-8ff9-775eeb37161b
-ms.openlocfilehash: 9ee5b8105241ee347812a0dcc083a4f1cc7dca49
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 74ed554006faa20046571971e080e0c0a2054b72
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87208410"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97295057"
 ---
 # <a name="compiler-error-c2280"></a>컴파일러 오류 C2280
 

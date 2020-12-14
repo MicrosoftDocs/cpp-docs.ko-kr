@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 심각한 오류 C1351'
 title: 심각한 오류 C1351
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1351
 ms.assetid: 1f8502e4-1049-49c7-bbe3-fa101c79021e
-ms.openlocfilehash: 079f17106f3515b332352c2370371e175e72d7a7
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 034f519c5f7d17558a56adf5d5969d624b111fbf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80203140"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97276571"
 ---
 # <a name="fatal-error-c1351"></a>심각한 오류 C1351
 

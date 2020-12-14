@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4286'
 title: 컴파일러 경고(수준 1) C4286
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4286
 ms.assetid: 93eadd6c-6f36-413b-ba91-c9aa2314685a
-ms.openlocfilehash: 27e7765c68b0bb6fb8c289260b16af1f3fe27054
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 52a17f66c20efc52f3d12da3a9cfbd041e5f262d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80175807"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97311775"
 ---
 # <a name="compiler-warning-level-1-c4286"></a>컴파일러 경고(수준 1) C4286
 

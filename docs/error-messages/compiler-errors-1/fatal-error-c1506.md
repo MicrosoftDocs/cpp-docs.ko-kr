@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 심각한 오류 C1506'
 title: 심각한 오류 C1506
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1506
 ms.assetid: c73d5702-c898-4a32-b0fa-a118601a1e14
-ms.openlocfilehash: b6799b86b362e3eb0642acaa392adf1ea4e0039c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 78086b0c4258c187b25b99669b19add19f26c9e9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80203023"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97276483"
 ---
 # <a name="fatal-error-c1506"></a>심각한 오류 C1506
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: _com_ptr_t:: operator ='
 title: _com_ptr_t::operator =
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - _com_ptr_t [C++]
 ms.assetid: 46849455-371c-4d0f-bae4-c1f737d2ca4a
-ms.openlocfilehash: 489d2a3f098d5d1bf1df56cca7eaf6ac8ae776b1
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: fae995ea20aa579c380ec5c10766e830708dcc0f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80170698"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97295395"
 ---
 # <a name="_com_ptr_toperator-"></a>_com_ptr_t::operator =
 
@@ -59,12 +60,12 @@ _com_ptr_t& operator=( int null );
 _com_ptr_t& operator=( const _variant_t& varSrc );
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 이 `_com_ptr_t` 개체에 인터페이스 포인터를 할당합니다.
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [_com_ptr_t 클래스](../cpp/com-ptr-t-class.md)

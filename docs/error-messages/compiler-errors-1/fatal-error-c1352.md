@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 심각한 오류 C1352'
 title: 심각한 오류 C1352
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1352
 ms.assetid: d044e8b0-b6ef-4d57-8eb5-6254071be707
-ms.openlocfilehash: 07bd0f28e35dd2992ca537dbe744d756cc2afe80
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6838d3e095616d576ff1a709d4d82f879eb9e464
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80203127"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97276558"
 ---
 # <a name="fatal-error-c1352"></a>심각한 오류 C1352
 

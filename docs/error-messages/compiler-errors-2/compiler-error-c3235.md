@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3235'
 title: 컴파일러 오류 C3235
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3235
 ms.assetid: 0554d6c7-e1dc-4c99-8934-cbcf491c8203
-ms.openlocfilehash: e284cf0d7742e60ceb5d381777ac68e9d0ea89be
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 5e478e9104599f833d3f63abb042660816425028
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74759401"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97311905"
 ---
 # <a name="compiler-error-c3235"></a>컴파일러 오류 C3235
 

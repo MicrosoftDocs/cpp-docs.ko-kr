@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4276'
 title: 컴파일러 경고(수준 1) C4276
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4276
 ms.assetid: 9d738c2d-29e5-408a-b9ff-be1a850b2238
-ms.openlocfilehash: c1de07cd65bbc9f02a979ceebe31be4143af70ad
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 14b13b2eb1e13d28f2b208e52ef71e1c729fe5e0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80175820"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97311788"
 ---
 # <a name="compiler-warning-level-1-c4276"></a>컴파일러 경고(수준 1) C4276
 

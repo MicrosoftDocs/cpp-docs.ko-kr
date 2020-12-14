@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __wbinvd'
 title: __wbinvd
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,20 +8,20 @@ helpviewer_keywords:
 - __wbinvd intrinsic
 - wbinvd instruction
 ms.assetid: 628d0981-39e5-49e1-bd43-706d123af121
-ms.openlocfilehash: fe888ef578f0c2e077911537d401890b63372a0b
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: b40e1b618e49ab317a7b9cdeea647bcd58df7912
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219377"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97257266"
 ---
 # <a name="__wbinvd"></a>__wbinvd
 
 **Microsoft 전용**
 
-Write Back 및 무효화할 Cache (`wbinvd`) 명령을 생성 합니다.
+Write Back 및 무효화할 Cache ( `wbinvd` ) 명령을 생성 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```C
 void __wbinvd(void);
@@ -28,11 +29,11 @@ void __wbinvd(void);
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`__wbinvd`|x86, x64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 ## <a name="remarks"></a>설명
 
@@ -40,6 +41,6 @@ void __wbinvd(void);
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

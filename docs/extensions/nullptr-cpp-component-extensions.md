@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: nullptr (c + +/CLI 및 c + +/CX)'
 title: nullptr(C++/CLI 및 C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -6,16 +7,16 @@ helpviewer_keywords:
 - __nullptr keyword (C++)
 - nullptr keyword [C++]
 ms.assetid: 594cfbf7-06cb-4366-9ede-c0b703e1d095
-ms.openlocfilehash: 7e9cf88fdc0444f736f1cfac0d06dfc675a162cc
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: cf531e81e31af2e3f3790b9f57b54278ad574733
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008352"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97257643"
 ---
 # <a name="nullptr--ccli-and-ccx"></a>nullptr(C++/CLI 및 C++/CX)
 
-**`nullptr`** 키워드가 *null 포인터 값*을 나타냅니다. Null 포인터 값은 개체 핸들, 내부 포인터 또는 네이티브 포인터 형식이 개체를 가리키지 않음을 나타내는 데 사용합니다.
+**`nullptr`** 키워드가 *null 포인터 값* 을 나타냅니다. Null 포인터 값은 개체 핸들, 내부 포인터 또는 네이티브 포인터 형식이 개체를 가리키지 않음을 나타내는 데 사용합니다.
 
 **`nullptr`** 관리 코드 또는 네이티브 코드와 함께 사용 합니다. 컴파일러는 관리형 및 네이티브 Null 포인터 값에 대해 서로 다른 적절한 명령을 내보냅니다. 이 키워드의 ISO 표준 C++ 버전을 사용하는 방법에 대한 자세한 내용은 [nullptr](../cpp/nullptr.md)을 참조하세요.
 
@@ -223,7 +224,7 @@ int main() {
 
 컴파일러 옵션: (필수 아님, 및를 비롯 한 모든 코드 생성 옵션에서 지원 됨 `/ZW` `/clr` )
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [.NET 및 UWP 용 구성 요소 확장](component-extensions-for-runtime-platforms.md)<br/>
 [nullptr](../cpp/nullptr.md)

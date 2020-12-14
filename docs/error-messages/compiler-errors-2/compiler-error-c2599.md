@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2599'
 title: 컴파일러 오류 C2599
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2599
 ms.assetid: 88515f36-7589-47e2-862e-0de8b18d6668
-ms.openlocfilehash: c722335660653df7e533ec25d4708f42c16846ef
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: e1365ee2570d4af524f7e4dbd36a411916efb9c1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74740769"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97312048"
 ---
 # <a name="compiler-error-c2599"></a>컴파일러 오류 C2599
 

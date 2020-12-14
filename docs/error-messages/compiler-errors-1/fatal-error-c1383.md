@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 심각한 오류 C1383'
 title: 심각한 오류 C1383
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1383
 ms.assetid: ca224d14-d687-4fd6-80c2-8b82f28924ea
-ms.openlocfilehash: 6c0be830cb56b760f1397ea2b2f81b42a87e9ba6
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: df20ac07cb3a6c94ff04b42b48ce23f168bb78c9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80203088"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97276506"
 ---
 # <a name="fatal-error-c1383"></a>심각한 오류 C1383
 
