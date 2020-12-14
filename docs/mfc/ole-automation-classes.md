@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: OLE 자동화 클래스'
 title: OLE 자동화 클래스
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Automation classes [MFC]
 - OLE Automation [MFC]
 ms.assetid: 96e5372b-ff8a-4da1-933b-4d9bbf4dceb3
-ms.openlocfilehash: 04cb93b8ce3699b579342d33c0dae77176878379
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 588c684d17eb358183097cd4ed62432f334e3f0f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84625307"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275570"
 ---
 # <a name="ole-automation-classes"></a>OLE 자동화 클래스
 

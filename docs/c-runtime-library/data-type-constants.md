@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 데이터 형식 상수'
 title: 데이터 형식 상수
 ms.date: 06/25/2018
 f1_keywords:
@@ -139,12 +140,12 @@ helpviewer_keywords:
 - SIZE_MAX constant
 - RSIZE_MAX constant
 ms.assetid: c0f1c405-0465-41d5-b5ff-e81cdb6f1622
-ms.openlocfilehash: d9d053611fb733d55424d01be2bab030fc49e6e0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: eb1c16cb730ea40a60a5929867fa8a36b17190ec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215168"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258839"
 ---
 # <a name="data-type-constants"></a>데이터 형식 상수
 
@@ -163,13 +164,13 @@ ms.locfileid: "87215168"
 
 |상수|값|설명|
 |--------------|-----------|-------------|
-|**CHAR_BIT**|8|의 비트 수**`char`**|
+|**CHAR_BIT**|8|의 비트 수 **`char`**|
 |**SCHAR_MIN**|(-128)|최 솟 **`signed char`** 값|
 |**SCHAR_MAX**|127|최 댓 **`signed char`** 값|
 |**UCHAR_MAX**|255(0Xff)|최 댓 **`unsigned char`** 값|
 |**CHAR_MIN**|(-128) (옵션을 **`/J`** 사용 하는 경우 0)|최 솟 **`char`** 값|
 |**CHAR_MAX**|127 (255 **`/J`** 옵션을 사용한 경우)|최 댓 **`char`** 값|
-|**MB_LEN_MAX**|5|멀티 바이트의 최대 바이트 수**`char`**|
+|**MB_LEN_MAX**|5|멀티 바이트의 최대 바이트 수 **`char`**|
 |**SHRT_MIN**|-32768|최 솟 **`signed short`** 값|
 |**SHRT_MAX**|32767|최 댓 **`signed short`** 값|
 |**USHRT_MAX**|65535(0xffff)|최 댓 **`unsigned short`** 값|
@@ -197,7 +198,7 @@ ms.locfileid: "87215168"
 |**_I128_MIN**|(-170141183460469231731687303715884105727i128 - 1)|최소 signed 128비트 값|
 |**_I128_MAX**|170141183460469231731687303715884105727i128|최대 signed 128비트 값|
 |**_UI128_MAX**|0xffffffffffffffffffffffffffffffffui128|최대 unsigned 128비트 값|
-|**SIZE_MAX**|**_WIN64**가 정의된 경우 **_UI64_MAX**와 동일하거나, **UINT_MAX**|최대 기본 정수 크기|
+|**SIZE_MAX**|**_WIN64** 가 정의된 경우 **_UI64_MAX** 와 동일하거나, **UINT_MAX**|최대 기본 정수 크기|
 |**RSIZE_MAX**|(**SIZE_MAX** >> 1)와 동일|최대 보안 라이브러리 정수 크기|
 
 ## <a name="floating-point-type-constants"></a>부동 소수점 형식 상수
@@ -215,7 +216,7 @@ ms.locfileid: "87215168"
 |**DBL_EPSILON**|2.2204460492503131e-016|1.0 + **DBL_EPSILON** ! = 1.0인 최솟값|
 |**DBL_HAS_SUBNORM**|1|형식은 비정상(비정규) 숫자를 지원함|
 |**DBL_MANT_DIG**|53|유효 숫자(가수)의 비트 수(#)|
-|**DBL_MAX**|1.7976931348623158e+308|최댓값|
+|**DBL_MAX**|1.7976931348623158e+308|최대값|
 |**DBL_MAX_10_EXP**|308|최대 10진수 지수|
 |**DBL_MAX_EXP**|1024|최대 이진 지수|
 |**DBL_MIN**|2.2250738585072014e-308|최소 정규화된 양수 값|
@@ -228,7 +229,7 @@ ms.locfileid: "87215168"
 |**FLT_EPSILON**|1.192092896e-07F|1.0 + **FLT_EPSILON** ! = 1.0인 최솟값|
 |**FLT_HAS_SUBNORM**|1|형식은 비정상(비정규) 숫자를 지원함|
 |**FLT_MANT_DIG**|24|유효 숫자(가수)의 비트 수|
-|**FLT_MAX**|3.402823466e+38F|최댓값|
+|**FLT_MAX**|3.402823466e+38F|최대값|
 |**FLT_MAX_10_EXP**|38|최대 10진수 지수|
 |**FLT_MAX_EXP**|128|최대 이진 지수|
 |**FLT_MIN**|1.175494351e-38F|최소 정규화된 양수 값|
@@ -240,7 +241,7 @@ ms.locfileid: "87215168"
 |**LDBL_EPSILON**|2.2204460492503131e-016|1.0 + **LDBL_EPSILON** ! = 1.0인 최솟값|
 |**LDBL_HAS_SUBNORM**|1|형식은 비정상(비정규) 숫자를 지원함|
 |**LDBL_MANT_DIG**|53|유효 숫자(가수)의 비트 수(#)|
-|**LDBL_MAX**|1.7976931348623158e+308|최댓값|
+|**LDBL_MAX**|1.7976931348623158e+308|최대값|
 |**LDBL_MAX_10_EXP**|308|최대 10진수 지수|
 |**LDBL_MAX_EXP**|1024|최대 이진 지수|
 |**LDBL_MIN**|2.2250738585072014e-308|최소 정규화된 양수 값|
@@ -248,7 +249,7 @@ ms.locfileid: "87215168"
 |**LDBL_MIN_EXP**|(-1021)|최소 이진 지수|
 |**_LDBL_RADIX**|2|지수 기수|
 |**LDBL_TRUE_MIN**|4.9406564584124654e-324|최소 비정상 양수 값|
-|**DECIMAL_DIG**|**DBL_DECIMAL_DIG**와 동일|반올림한 소수점 이하 기본(double) 자릿수|
+|**DECIMAL_DIG**|**DBL_DECIMAL_DIG** 와 동일|반올림한 소수점 이하 기본(double) 자릿수|
 
 ## <a name="see-also"></a>참고 항목
 

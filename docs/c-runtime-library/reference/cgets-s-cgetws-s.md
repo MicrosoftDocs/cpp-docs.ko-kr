@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _cgets_s, _cgetws_s'
 title: _cgets_s, _cgetws_s
 ms.date: 4/2/2020
 api_name:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - _cgetws_s function
 - cgetws_s function
 ms.assetid: 38b74897-afe6-4dd9-a43f-36a3c0d72c5c
-ms.openlocfilehash: 6e48602eee3d2135d4624b28d88661ac00f65542
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 827f3c8b155f58fe13396f5dc0c66e8999b5f942
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917093"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275089"
 ---
 # <a name="_cgets_s-_cgetws_s"></a>_cgets_s, _cgetws_s
 
@@ -86,7 +87,7 @@ errno_t _cgetws_s(
 *pSizeRead*<br/>
 실제로 읽은 문자 수입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 성공할 경우 반환 값은 0이고, 그렇지 않고 오류가 발생할 경우 오류 코드를 반환합니다.
 
@@ -94,13 +95,13 @@ errno_t _cgetws_s(
 
 |*버퍼*|*이면 numberofelements 이벤트가*|*pSizeRead*|반환 값|*버퍼* 의 내용|
 |--------------|------------------------|-----------------|------------|--------------------------|
-|**N**|any|any|**EINVAL**|해당 없음|
+|**NULL**|any|any|**EINVAL**|해당 없음|
 |**NULL** 이 아님|0|any|**EINVAL**|수정 안 됨|
-|**NULL** 이 아님|any|**N**|**EINVAL**|빈 문자열|
+|**NULL** 이 아님|any|**NULL**|**EINVAL**|빈 문자열|
 
 ## <a name="remarks"></a>설명
 
-**_cgets_s** 및 **_cgetws_s** 콘솔에서 문자열을 읽고 null 종결자를 사용 하 여 문자열을 *버퍼*에 복사 합니다. **_cgetws_s** 은 함수의 와이드 문자 버전입니다. 문자 크기를 제외 하 고 이러한 두 함수의 동작은 동일 합니다. 읽을 문자열의 최대 크기는 *Numberofelements* 매개 변수로 전달 됩니다. 이 크기는 종료 null에 대한 추가 문자를 포함해야 합니다. 읽은 실제 문자 수는 *pSizeRead*에 배치 됩니다.
+**_cgets_s** 및 **_cgetws_s** 콘솔에서 문자열을 읽고 null 종결자를 사용 하 여 문자열을 *버퍼* 에 복사 합니다. **_cgetws_s** 은 함수의 와이드 문자 버전입니다. 문자 크기를 제외 하 고 이러한 두 함수의 동작은 동일 합니다. 읽을 문자열의 최대 크기는 *Numberofelements* 매개 변수로 전달 됩니다. 이 크기는 종료 null에 대한 추가 문자를 포함해야 합니다. 읽은 실제 문자 수는 *pSizeRead* 에 배치 됩니다.
 
 작업 중이나 매개 변수의 유효성을 검사할 때 오류가 발생하면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 계속 해 서 실행 하도록 허용 된 경우 **errno** 가 **EINVAL** 로 설정 되 고 **EINVAL** 이 반환 됩니다.
 
@@ -125,7 +126,7 @@ C++에서는 템플릿 오버로드를 통해 이러한 함수를 사용하는 �
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[콘솔 및 포트 I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
+[콘솔 및 포트 i/o](../../c-runtime-library/console-and-port-i-o.md)<br/>
 [_getch, _getwch](getch-getwch.md)<br/>

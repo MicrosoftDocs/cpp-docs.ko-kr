@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: OLE 백그라운드: 구현 전략'
 title: OLE 백그라운드 구현 전략
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - OLE applications [MFC], implementing OLE
 - applications [OLE], implementing OLE
 ms.assetid: 0875ddae-99df-488c-82c6-164074a81058
-ms.openlocfilehash: 90517f9b37872dd7de0ce1a2d08da94c93e6f8f8
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: fe492adf755f9163586832f5c7aa7dfc5470349f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619892"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275479"
 ---
 # <a name="ole-background-implementation-strategies"></a>OLE 백그라운드 구현 전략
 
@@ -37,7 +38,7 @@ ms.locfileid: "84619892"
 
 ## <a name="see-also"></a>참고 항목
 
-[OLE 백그라운드](ole-background.md)<br/>
+[OLE 배경](ole-background.md)<br/>
 [컨테이너: 컨테이너 구현](containers-implementing-a-container.md)<br/>
 [서버: 서버 구현](servers-implementing-a-server.md)<br/>
-[MFC 애플리케이션 마법사](reference/mfc-application-wizard.md)
+[MFC 응용 프로그램 마법사](reference/mfc-application-wizard.md)
