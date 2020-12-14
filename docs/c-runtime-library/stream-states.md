@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 스트림 상태'
 title: 스트림 상태
 ms.date: 11/19/2018
 helpviewer_keywords:
 - streams, states
 ms.assetid: 5f28c968-f132-403f-968c-8417ff315e52
-ms.openlocfilehash: f725fa16e8d669975dbc02c6eefd727085bbeb7c
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: c691c1fd01feb9f78ff0929775505f08cb625ecc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743355"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97224181"
 ---
 # <a name="stream-states"></a>스트림 상태
 
@@ -19,7 +20,7 @@ ms.locfileid: "57743355"
 
 각 원은 안정적인 상태를 나타냅니다. 각 줄은 스트림에서 동작하는 함수 호출의 결과로 일어날 수 있는 전환을 나타냅니다. 5개 그룹의 함수가 상태 전환을 일으킬 수 있습니다.
 
-처음 세 개 그룹의 함수는 \<stdio.h>에 선언되어 있습니다.
+처음 세 그룹의 함수는에 선언 됩니다 \<stdio.h> .
 
 - 바이트 읽기 함수 - [fgetc](../c-runtime-library/reference/fgetc-fgetwc.md), [fgets](../c-runtime-library/reference/fgets-fgetws.md), [fread](../c-runtime-library/reference/fread.md), [fscanf](../c-runtime-library/reference/fscanf-fscanf-l-fwscanf-fwscanf-l.md), [getc](../c-runtime-library/reference/getc-getwc.md), [getchar](../c-runtime-library/reference/getc-getwc.md), [gets](../c-runtime-library/gets-getws.md), [scanf](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md) 및 [ungetc](../c-runtime-library/reference/ungetc-ungetwc.md)
 
@@ -27,7 +28,7 @@ ms.locfileid: "57743355"
 
 - 위치 함수 - [fflush](../c-runtime-library/reference/fflush.md), [fseek](../c-runtime-library/reference/fseek-fseeki64.md), [fsetpos](../c-runtime-library/reference/fsetpos.md) 및 [rewind](../c-runtime-library/reference/rewind.md)
 
-나머지 두 그룹의 함수는 \<wchar.h>에 선언되어 있습니다.
+나머지 두 그룹의 함수는에 선언 됩니다 \<wchar.h> .
 
 - 와이드 읽기 함수 - [fgetwc](../c-runtime-library/reference/fgetc-fgetwc.md), [fgetws](../c-runtime-library/reference/fgets-fgetws.md), [fwscanf](../c-runtime-library/reference/fscanf-fscanf-l-fwscanf-fwscanf-l.md), [getwc](../c-runtime-library/reference/getc-getwc.md), [getwchar](../c-runtime-library/reference/getc-getwc.md), [ungetwc](../c-runtime-library/reference/ungetc-ungetwc.md) 및 [wscanf](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)
 

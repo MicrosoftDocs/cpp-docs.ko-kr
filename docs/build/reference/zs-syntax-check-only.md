@@ -1,4 +1,5 @@
 ---
+description: 자세히 알아보기:/Zs (구문 검사만 해당)
 title: /Zs(구문만 검사)
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,16 +10,16 @@ helpviewer_keywords:
 - Zs compiler option
 - /Zs compiler option [C++]
 ms.assetid: b4b41e6a-3f41-4d09-9cb6-fde5aa2cfecf
-ms.openlocfilehash: e3713312b71c4cd539d40e09a3eaa821a2e5caed
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a4f5e2227104003a637db1d921fd959ea0a11ad7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62315419"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97224298"
 ---
 # <a name="zs-syntax-check-only"></a>/Zs(구문만 검사)
 
-만 명령줄에 있는 소스 파일의 구문을 검사 하려면 컴파일러에 지시 합니다.
+명령줄에서 소스 파일의 구문만 확인 하도록 컴파일러에 지시 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -28,9 +29,9 @@ ms.locfileid: "62315419"
 
 ## <a name="remarks"></a>설명
 
-이 옵션을 사용 하는 경우 출력 파일이 만들어지고 오류 메시지는 표준 출력에 기록 됩니다.
+이 옵션을 사용 하면 출력 파일이 생성 되지 않고 오류 메시지가 표준 출력에 기록 됩니다.
 
-합니다 **/Zs** 옵션을 찾고 구문 오류를 수정 하 여 컴파일 및 소스 파일을 연결 하기 전에 빠른 방법을 제공 합니다.
+**/Zs** 옵션은 소스 파일을 컴파일 및 연결 하기 전에 구문 오류를 찾고 수정 하는 빠른 방법을 제공 합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
@@ -46,7 +47,7 @@ ms.locfileid: "62315419"
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
-[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)
+[MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)

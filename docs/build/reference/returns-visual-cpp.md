@@ -1,5 +1,6 @@
 ---
-title: '&lt;> 반환 (C++ 설명서 주석)'
+description: '자세한 정보: &lt; 반환&gt;'
+title: '&lt;> 반환 (c + + 문서 주석)'
 ms.date: 11/04/2016
 f1_keywords:
 - returns
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - returns C++ XML tag
 - <returns> C++ XML tag
 ms.assetid: 5e3b0ed9-838d-4953-a93e-76d2d0a19fb9
-ms.openlocfilehash: 1315ec09271c2c97f7bcaf3fb6f9c75f514b5d2d
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: c07439610fa0259a38a4c1993ead7f0f06023e5e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988638"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97225052"
 ---
 # <a name="ltreturnsgt"></a>&lt;returns&gt;
 
@@ -30,9 +31,9 @@ ms.locfileid: "74988638"
 *description*<br/>
 반환 값에 대한 설명입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
-[/doc](doc-process-documentation-comments-c-cpp.md)로 컴파일하여 문서 주석을 파일로 처리합니다.
+[/Doc](doc-process-documentation-comments-c-cpp.md) 를 사용 하 여 컴파일하여 문서 주석을 파일로 처리 합니다.
 
 ## <a name="example"></a>예제
 
@@ -49,6 +50,6 @@ public:
 };
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [XML 문서](xml-documentation-visual-cpp.md)

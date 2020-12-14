@@ -1,4 +1,5 @@
 ---
+description: 자세히 알아보기:/Zl (기본 라이브러리 이름 생략)
 title: /Zl(기본 라이브러리 이름 생략)
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - /Zl compiler option [C++]
 - default libraries, omitting names
 ms.assetid: b27d39d0-44d6-498c-84ae-27c1326fee59
-ms.openlocfilehash: c72377314abf755469075c7a4b431f4b8a64ee7f
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: eaf39b7bfe1a2b7f2d2c7754cccf8061543e4c7c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79438626"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97224428"
 ---
 # <a name="zl-omit-default-library-name"></a>/Zl(기본 라이브러리 이름 생략)
 
@@ -30,7 +31,7 @@ ms.locfileid: "79438626"
 
 ## <a name="remarks"></a>설명
 
-기본 라이브러리에 대 한 자세한 내용은 [런타임 라이브러리 사용](md-mt-ld-use-run-time-library.md)을 참조 하세요.
+기본 라이브러리에 대 한 자세한 내용은 [Use Run-Time library](md-mt-ld-use-run-time-library.md)를 참조 하세요.
 
 **/Zl** 을 사용 하 여 라이브러리에 넣으려는 .obj 파일을 컴파일할 수 있습니다. 라이브러리 이름을 생략 하면 단일 .obj 파일의 공간만 저장 되지만, 저장 된 총 공간은 많은 개체 모듈을 포함 하는 라이브러리에서 중요 합니다.
 
@@ -40,7 +41,7 @@ ms.locfileid: "79438626"
 
 자세한 내용은 [CRT 라이브러리 기능](../../c-runtime-library/crt-library-features.md)을 참조하세요.
 
-**/Zl**로 컴파일하는 경우 `_VC_NODEFAULTLIB` 정의 됩니다.  다음은 그 예입니다.
+**/Zl** 로 컴파일하는 경우 `_VC_NODEFAULTLIB` 이 정의 됩니다.  예를 들어:
 
 ```cpp
 // vc_nodefaultlib.cpp
@@ -71,4 +72,4 @@ void Test() {
 ## <a name="see-also"></a>참고 항목
 
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
-[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)
+[MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)

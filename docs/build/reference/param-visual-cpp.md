@@ -1,5 +1,6 @@
 ---
-title: '&lt;매개 변수 > (C++ 문서 주석)'
+description: '자세한 정보: &lt; param&gt;'
+title: '&lt;param> (c + + 문서 주석)'
 ms.date: 11/04/2016
 f1_keywords:
 - param
@@ -8,16 +9,16 @@ helpviewer_keywords:
 - param C++ XML tag
 - <param> C++ XML tag
 ms.assetid: 66c1a1c3-4f98-4bcf-8c7d-9a40308982fb
-ms.openlocfilehash: d8ea4feddbe1ec2d5898f8ef698cc2d69d255933
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7c3baabc6aef9a4cabdd7c7a9023fb628bd53793
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62320008"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97226144"
 ---
 # <a name="ltparamgt"></a>&lt;param&gt;
 
-\<param> 태그는 메서드의 매개 변수 중 하나를 설명하기 위해 메서드 선언에 대한 주석에 사용해야 합니다.
+\<param> 태그는 메서드의 매개 변수 중 하나를 설명하기 위해 메서드 선언에 대한 주석에서 사용해야 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -35,9 +36,9 @@ ms.locfileid: "62320008"
 
 ## <a name="remarks"></a>설명
 
-\<param> 태그에 대한 텍스트는 IntelliSense, [개체 브라우저](/visualstudio/ide/viewing-the-structure-of-code) 및 코드 주석 웹 보고서에 표시됩니다.
+태그에 대 한 텍스트는 \<param> IntelliSense, [개체 브라우저](/visualstudio/ide/viewing-the-structure-of-code)및 코드 주석 웹 보고서에 표시 됩니다.
 
-[/doc](doc-process-documentation-comments-c-cpp.md)로 컴파일하여 문서 주석을 파일로 처리합니다.
+[/Doc](doc-process-documentation-comments-c-cpp.md) 를 사용 하 여 컴파일하여 문서 주석을 파일로 처리 합니다.
 
 ## <a name="example"></a>예제
 
@@ -53,6 +54,6 @@ public ref class MyClass {
 };
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [XML 문서](xml-documentation-visual-cpp.md)

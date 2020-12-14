@@ -1,5 +1,6 @@
 ---
-title: '&lt;설명 > (C++ 문서 주석)'
+description: '자세히 알아보기: &lt; 설명&gt;'
+title: '&lt;설명> (c + + 문서 주석)'
 ms.date: 11/04/2016
 f1_keywords:
 - remarks
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - <remarks> C++ XML tag
 - remarks C++ XML tag
 ms.assetid: c820083b-3192-40ab-9ec8-1472c55b4247
-ms.openlocfilehash: 096280526b12feff33377a705f7c03548a1f0f13
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 0c919ba3101282fd755450489eacc6c0800fb437
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988654"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97225221"
 ---
 # <a name="ltremarksgt"></a>&lt;설명&gt;
 
@@ -30,9 +31,9 @@ ms.locfileid: "74988654"
 *description*<br/>
 멤버에 대한 설명입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
-[/doc](doc-process-documentation-comments-c-cpp.md)로 컴파일하여 문서 주석을 파일로 처리합니다.
+[/Doc](doc-process-documentation-comments-c-cpp.md) 를 사용 하 여 컴파일하여 문서 주석을 파일로 처리 합니다.
 
 ## <a name="example"></a>예제
 
@@ -52,6 +53,6 @@ using namespace System;
 public ref class MyClass {};
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [XML 문서](xml-documentation-visual-cpp.md)
