@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 심각한 오류 C1602'
 title: 심각한 오류 C1602
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1602
 ms.assetid: a9365c58-fe66-49c4-a702-9bb75429cc1a
-ms.openlocfilehash: 4bb4c6bfa2508afa56fde7c27b08e5446c60ff85
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3fc1a62451c50850b614216bb764f2559c388dc8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80202906"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97276337"
 ---
 # <a name="fatal-error-c1602"></a>심각한 오류 C1602
 
