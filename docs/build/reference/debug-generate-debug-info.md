@@ -1,4 +1,5 @@
 ---
+description: 자세히 알아보기:/DEBUG (디버그 정보 생성)
 title: /DEBUG(디버깅 정보 생성)
 ms.date: 05/16/2019
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - debugging [C++], linker option
 - program databases [C++]
 ms.assetid: 1af389ae-3f8b-4d76-a087-1cdf861e9103
-ms.openlocfilehash: 2ec466a6356ace437d32eb517bf2da291938f5db
-ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
+ms.openlocfilehash: b0ef30fe7cb5eb5af0c46d6f6a8f3533d2e7d6ea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65837151"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97201822"
 ---
 # <a name="debug-generate-debug-info"></a>/DEBUG(디버깅 정보 생성)
 
@@ -29,7 +30,7 @@ ms.locfileid: "65837151"
 /DEBUG[:{FASTLINK|FULL|NONE}]
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 **/DEBUG** 옵션은 실행 파일에 대한 디버깅 정보를 만듭니다.
 
@@ -43,7 +44,7 @@ ms.locfileid: "65837151"
 
 **/DEBUG:NONE** 옵션은 PDB를 생성하지 않습니다.
 
-추가 옵션 없이 **/DEBUG**를 지정하면 명령줄 및 메이크파일 빌드, Visual Studio IDE의 릴리스 빌드, Visual Studio 2015 이전 버전의 디버그 및 릴리스 빌드에서 링커가 기본적으로 **/DEBUG:FULL**로 지정됩니다. Visual Studio 2017부터는 디버그 빌드에 **/DEBUG**를 지정하면 IDE의 빌드 시스템이 기본적으로 **/DEBUG:FASTLINK**로 지정됩니다. 나머지 기본값은 이전 버전과의 호환성을 유지하기 위해 변경되지 않았습니다.
+추가 옵션 없이 **/DEBUG** 를 지정하면 명령줄 및 메이크파일 빌드, Visual Studio IDE의 릴리스 빌드, Visual Studio 2015 이전 버전의 디버그 및 릴리스 빌드에서 링커가 기본적으로 **/DEBUG:FULL** 로 지정됩니다. Visual Studio 2017부터는 디버그 빌드에 **/DEBUG** 를 지정하면 IDE의 빌드 시스템이 기본적으로 **/DEBUG:FASTLINK** 로 지정됩니다. 나머지 기본값은 이전 버전과의 호환성을 유지하기 위해 변경되지 않았습니다.
 
 컴파일러의 [C7 호환](z7-zi-zi-debug-information-format.md)(/Z7) 옵션을 사용하면 컴파일러가 디버깅 정보를 .obj 파일에 유지합니다. [프로그램 데이터베이스](z7-zi-zi-debug-information-format.md)(/Zi) 컴파일러 옵션을 사용하여 디버깅 정보를 .obj 파일의 PDB에 저장할 수도 있습니다. 링커는 .obj 파일에 작성된 절대 경로에서 개체의 PDB를 찾은 다음, .obj 파일이 포함된 디렉터리에서 찾습니다. 개체의 PDB 파일 이름 또는 위치를 링커로 지정할 수 없습니다.
 
@@ -55,7 +56,7 @@ ms.locfileid: "65837151"
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. **Linker** 폴더를 클릭합니다.
 

@@ -1,16 +1,17 @@
 ---
+description: '자세히 알아보기: CToolTipCtrl를 사용 하 여 CToolTipCtrl 개체 만들기 및 조작'
 title: CToolTipCtrl을 사용하여 CToolTipCtrl 개체 만들기 및 조작
 ms.date: 11/04/2016
 helpviewer_keywords:
 - tool tips [MFC], creating
 - CToolTipCtrl class [MFC], using
 ms.assetid: 0a34583f-f66d-46a1-a239-31b80ea395ad
-ms.openlocfilehash: 37dc7bc5a411ebab3737b87fd6977b26cff68178
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 363d46ce078b71cf88d742ae390ab674a73ab935
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79442213"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97202342"
 ---
 # <a name="using-ctooltipctrl-to-create-and-manipulate-a-ctooltipctrl-object"></a>CToolTipCtrl을 사용하여 CToolTipCtrl 개체 만들기 및 조작
 
@@ -20,7 +21,7 @@ ms.locfileid: "79442213"
 
 1. `CToolTipCtrl` 개체를 생성합니다.
 
-1. [Create](../mfc/reference/ctooltipctrl-class.md#create) 를 호출 하 여 Windows 도구 설명 공용 컨트롤을 만들고 `CToolTipCtrl` 개체에 연결 합니다.
+1. [Create](../mfc/reference/ctooltipctrl-class.md#create) 를 호출 하 여 Windows 도구 설명 공용 컨트롤을 만들고 개체에 연결 `CToolTipCtrl` 합니다.
 
 1. 도구에 커서가 있을 때 도구 설명에 저장 된 정보가 표시 되도록 [Addtool](../mfc/reference/ctooltipctrl-class.md#addtool) 을 호출 하 여 도구를 도구 설명 컨트롤에 등록 합니다.
 

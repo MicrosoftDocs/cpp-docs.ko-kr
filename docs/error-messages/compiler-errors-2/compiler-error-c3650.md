@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3650'
 title: 컴파일러 오류 C3650
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3650
 ms.assetid: ca4d8de4-b027-4d13-9b9f-03ca62905c33
-ms.openlocfilehash: 2b1b769ed7e27e9c8c3edbe6b08452f3ec964727
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 02230eed0f1e3448bfc91d331611f28a7b6b7531
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756359"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97203733"
 ---
 # <a name="compiler-error-c3650"></a>컴파일러 오류 C3650
 

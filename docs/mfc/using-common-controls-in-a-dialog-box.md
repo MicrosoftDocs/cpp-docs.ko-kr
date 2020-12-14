@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 대화 상자에서 공용 컨트롤 사용'
 title: 대화 상자에서 공용 컨트롤 사용
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - dialog box controls [MFC], common controls
 - Windows common controls [MFC], in dialog boxes
 ms.assetid: 17713caf-09f8-484a-bf54-5f48bf09cce9
-ms.openlocfilehash: 1a3dcb7151952b52affcfeb838ced15f0d116fce
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 73395ae5b3542f338f3783fd5f0c41116821fed6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500346"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97202407"
 ---
 # <a name="using-common-controls-in-a-dialog-box"></a>대화 상자에서 공용 컨트롤 사용
 
@@ -23,7 +24,7 @@ ms.locfileid: "91500346"
 
 1. 대화 상자 [편집기를 사용 하 여](../mfc/using-the-dialog-editor-to-add-controls.md)대화 상자 템플릿에 컨트롤을 놓습니다.
 
-1. 컨트롤을 나타내는 멤버 변수를 대화 상자 클래스에 추가합니다. **멤버 변수 추가** 대화 상자에서 **제어 변수** 를 선택 하 고 **범주**에 대해 **컨트롤** 을 선택 했는지 확인 합니다.
+1. 컨트롤을 나타내는 멤버 변수를 대화 상자 클래스에 추가합니다. **멤버 변수 추가** 대화 상자에서 **제어 변수** 를 선택 하 고 **범주** 에 대해 **컨트롤** 을 선택 했는지 확인 합니다.
 
 1. 공용 컨트롤이 프로그램에 입력을 제공하는 경우, 대화 상자 클래스에서 추가 멤버 변수를 선언하여 해당 입력 값을 처리합니다.
 

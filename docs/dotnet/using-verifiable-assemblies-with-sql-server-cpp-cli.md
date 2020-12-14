@@ -1,32 +1,33 @@
 ---
+description: '자세한 정보: SQL Server에서 안정형 어셈블리 사용 (c + +/CLI)'
 title: SQL Server에 안정형 어셈블리 사용(C++/CLI)
 ms.date: 10/17/2018
 helpviewer_keywords:
 - verifiable assemblies [C++], with SQL Server
 ms.assetid: 5248a60d-aa88-4ff3-b30a-b791c3ea2de9
-ms.openlocfilehash: 27dec67cc0932a784cdd041ba346bb8c635b280d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b155fb0360fb373f5931f51de3af557d06858a71
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384415"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97204201"
 ---
 # <a name="using-verifiable-assemblies-with-sql-server-ccli"></a>SQL Server에 안정형 어셈블리 사용(C++/CLI)
 
-시각적 개체를 사용 하 여 개발 하는 함수를 통해 SQL Server 기능을 확장 하는 방법을 제공 확장 저장된 프로시저, 동적 연결 라이브러리 (Dll)로 패키지 C++입니다. 확장된 저장된 프로시저 Dll 내의 함수로 구현 됩니다. 함수 외에 확장된 저장된 프로시저를 정의할 수도 [사용자 정의 형식](../cpp/classes-and-structs-cpp.md) 와 집계 함수 (예: SUM 또는 AVG).
+Dll (동적 연결 라이브러리)로 패키지 된 확장 저장 프로시저는 Visual C++를 사용 하 여 개발 된 함수를 통해 SQL Server 기능을 확장 하는 방법을 제공 합니다. 확장 저장 프로시저는 Dll 내에서 함수로 구현 됩니다. 확장 저장 프로시저는 함수 외에도 [사용자 정의 형식](../cpp/classes-and-structs-cpp.md) 및 집계 함수 (예: SUM 또는 AVG)를 정의할 수 있습니다.
 
-클라이언트는 확장된 저장된 프로시저를 실행 하는 경우 DLL에 대 한 SQL Server 검색 확장된 저장된 프로시저를 사용 하 여 연결 하 고 DLL을 로드 합니다. 요청 된 확장된 저장된 프로시저를 호출 하 고 지정 된 보안 컨텍스트에서 실행 하는 SQL Server입니다. 확장 저장 프로시저는 전달 결과 설정 하 고 서버에 다시 매개 변수를 반환 합니다.
+클라이언트에서 확장 저장 프로시저를 실행 하면 SQL Server 확장 저장 프로시저와 연결 된 DLL을 검색 하 여 DLL을 로드 합니다. SQL Server는 요청한 확장 저장 프로시저를 호출 하 고 지정 된 보안 컨텍스트에서 실행 합니다. 그런 다음 확장 저장 프로시저는 결과 집합을 전달 하 고 매개 변수를 서버에 다시 반환 합니다.
 
-SQL Server transact-sql (T-SQL)을 SQL Server에 안정형 어셈블리를 설치할 수 있도록 확장을 제공 합니다. SQL Server 사용 권한 집합에는 다음과 같은 수준의 보안을 사용 하 여 보안 컨텍스트를 지정합니다.
+SQL Server는 Transact-sql (T-sql)에 대 한 확장을 제공 하 여 SQL Server에 확인할 수 있는 어셈블리를 설치할 수 있습니다. SQL Server 권한 집합은 보안 컨텍스트를 지정 하며 보안 수준은 다음과 같습니다.
 
-- 무제한 모드: 사용자 고유의 위험이; 코드를 실행 합니다. 코드 형식 안전성이 될 필요가 없습니다.
+- 무제한 모드: 사용자의 위험에 따라 코드를 실행 합니다. 코드는 형식이 안전 해야 합니다.
 
-- 안전 모드: 형식이 안전한 코드를 실행 /clr: safe를 사용 하 여 컴파일됩니다.
+- 안전 모드: 안정형 형식 안전 코드를 실행 합니다. /clr: safe를 사용 하 여 컴파일됩니다.
 
 > [!IMPORTANT]
-> 사용 되지 않는 visual Studio 2015 및 Visual Studio 2017을 지원 하지 않습니다 합니다 **/clr: pure** 및 **/clr: safe** 검증할 수 있는 프로젝트를 만들 합니다. 검증할 수 있는 코드를 필요로 하는 경우에 C# 코드를 변환 하는 것이 좋습니다.
+> Visual Studio 2015는 사용 되지 않으며 Visual Studio 2017은 안정형 프로젝트의 **/clr: pure** 및 **/clr: safe** 생성을 지원 하지 않습니다. 안정형 코드가 필요한 경우 코드를 c #으로 변환 하는 것이 좋습니다.
 
-를 만들고 SQL Server에 안정형 어셈블리를 로드 하려면 다음과 같이 CREATE ASSEMBLY 문과 DROP ASSEMBLY TRANSACT-SQL 명령을 사용 합니다.
+안정형 어셈블리를 만들어 SQL Server으로 로드 하려면 다음과 같이 Transact-sql commands CREATE ASSEMBLY 및 DROP ASSEMBLY를 사용 합니다.
 
 ```sql
 CREATE ASSEMBLY <assemblyName> FROM <'Assembly UNC Path'> WITH
@@ -34,9 +35,9 @@ CREATE ASSEMBLY <assemblyName> FROM <'Assembly UNC Path'> WITH
 DROP ASSEMBLY <assemblyName>
 ```
 
-PERMISSION_SET 명령을 보안 컨텍스트를 지정 및 제한 없음, 안전 또는 확장 값을 가질 수 있습니다.
+PERMISSION_SET 명령은 보안 컨텍스트를 지정 하며, 제한 없음, 안전 또는 확장 값을 가질 수 있습니다.
 
-또한 클래스에 메서드 이름에 바인딩할 CREATE FUNCTION 명령을 사용할 수 있습니다.
+또한 함수 만들기 명령을 사용 하 여 클래스의 메서드 이름에 바인딩할 수 있습니다.
 
 ```sql
 CREATE FUNCTION <FunctionName>(<FunctionParams>)
@@ -46,7 +47,7 @@ RETURNS returnType
 
 ## <a name="example"></a>예제
 
-SQL Server에 어셈블리를 로드 하 고 클래스의 메서드를 사용할 수 있도록 하는 다음 SQL 스크립트 (예를 들어, 명명 된 "MyScript.sql"):
+다음 SQL 스크립트 (예: "MyScript")는 어셈블리를 SQL Server로 로드 하 고 클래스의 메서드를 사용할 수 있도록 합니다.
 
 ```sql
 -- Create assembly without external access
@@ -70,12 +71,12 @@ select dbo.GetQuoteNoEA('MSFT')
 go
 ```
 
-SQL 쿼리 분석기 또는 sqlcmd.exe 유틸리티를 사용 하 여 명령줄에서 SQL 스크립트를 대화형으로 실행할 수 있습니다. 다음 명령줄 MyServer 연결, 기본 데이터베이스를 사용 하 여, 트러스트 된 연결을 사용 하 여, MyScript.sql, 입력 및 MyResult.txt 출력 합니다.
+Sql 스크립트는 SQL 쿼리 분석기에서 대화형으로 실행 하거나 명령줄에서 sqlcmd.exe 유틸리티를 사용 하 여 실행할 수 있습니다. 다음 명령줄은 MyServer에 연결 하 고, 기본 데이터베이스를 사용 하며, 신뢰할 수 있는 연결 MyScript를 사용 하 고, MyResult.txt 출력 합니다.
 
 ```cmd
 sqlcmd -S MyServer -E -i myScript.sql -o myResult.txt
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[클래스 및 구조체(C++)](../cpp/classes-and-structs-cpp.md)
+[클래스 및 구조체](../cpp/classes-and-structs-cpp.md)

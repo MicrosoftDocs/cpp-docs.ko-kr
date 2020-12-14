@@ -1,4 +1,5 @@
 ---
+description: Missing_wait 클래스에 대해 자세히 알아보세요.
 title: missing_wait 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - missing_wait class
 ms.assetid: ff981875-bd43-47e3-806f-b03c9f418b18
-ms.openlocfilehash: cf81d1ee6c144da210da5b1f37aca7910ae37bc8
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: bfbfdf4c2a52573d08c048bac278386aed1dc5a8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142382"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97202186"
 ---
 # <a name="missing_wait-class"></a>missing_wait 클래스
 
@@ -29,15 +30,15 @@ class missing_wait : public std::exception;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
 |[missing_wait](#ctor)|오버로드됨. `missing_wait` 개체를 생성합니다.|
 
 ## <a name="remarks"></a>설명
 
-예외 흐름이 없는 경우 해당 개체의 소멸을 허용 하기 전에 `task_group` 또는 `structured_task_group` 개체의 `wait` 또는 `run_and_wait` 메서드를 호출 해야 합니다. 런타임에서는 `wait` 또는 `run_and_wait` 메서드를 호출 하지 않았음을 나타내는 것으로이 예외를 throw 합니다.
+예외 흐름이 `wait` `run_and_wait` 없는 경우 또는 개체의 또는 메서드를 호출 하 여 `task_group` `structured_task_group` 해당 개체의 소멸을 허용 해야 합니다. 런타임에서는 또는 메서드를 호출 하지 않았음을 나타내는 것으로이 예외를 throw 합니다 `wait` `run_and_wait` .
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `exception`
 
@@ -47,9 +48,9 @@ class missing_wait : public std::exception;
 
 **헤더:** concrt .h
 
-**네임스페이스:** 동시성
+**네임 스페이스:** 동시성
 
-## <a name="ctor"></a>missing_wait
+## <a name="missing_wait"></a><a name="ctor"></a> missing_wait
 
 `missing_wait` 개체를 생성합니다.
 
@@ -66,7 +67,7 @@ missing_wait() throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[concurrency 네임스페이스](concurrency-namespace.md)<br/>
+[concurrency 네임 스페이스](concurrency-namespace.md)<br/>
 [task_group 클래스](task-group-class.md)<br/>
 [대기한](task-group-class.md)<br/>
 [run_and_wait](task-group-class.md)<br/>

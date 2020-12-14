@@ -1,4 +1,5 @@
 ---
+description: Multi_link_registry 클래스에 대해 자세히 알아보세요.
 title: multi_link_registry 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ f1_keywords:
 helpviewer_keywords:
 - multi_link_registry class
 ms.assetid: b2aa73a8-e8a6-4255-b117-d07530c328b2
-ms.openlocfilehash: 777b3f5206b4a595b5dcac653d608255e92f4ef6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a5d5e6c7e837f76a422c3f2879f74d1af36d64d6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231704"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97202134"
 ---
 # <a name="multi_link_registry-class"></a>multi_link_registry 클래스
 
@@ -41,7 +42,7 @@ class multi_link_registry : public network_link_registry<_Block>;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[multi_link_registry](#ctor)|`multi_link_registry` 개체를 생성합니다.|
 |[~ multi_link_registry 소멸자](#dtor)|개체를 소멸 시킵니다 `multi_link_registry` .|
@@ -69,7 +70,7 @@ class multi_link_registry : public network_link_registry<_Block>;
 
 **네임 스페이스:** 동시성
 
-## <a name="add"></a><a name="add"></a>추가
+## <a name="add"></a><a name="add"></a> 추가
 
 개체에 대 한 링크를 추가 `multi_link_registry` 합니다.
 
@@ -86,7 +87,7 @@ virtual void add(_EType _Link);
 
 이 메서드는 레지스트리에 링크가 이미 있는 경우 또는 바인딩된가 이미 함수를 사용 하 여 설정 되어 있고 링크가 제거 된 후에는 [invalid_link_target](invalid-link-target-class.md) 예외를 throw 합니다 `set_bound` .
 
-## <a name="begin"></a><a name="begin"></a>시작
+## <a name="begin"></a><a name="begin"></a> begin
 
 개체의 첫 번째 요소에 대 한 반복기를 반환 `multi_link_registry` 합니다.
 
@@ -94,7 +95,7 @@ virtual void add(_EType _Link);
 virtual iterator begin();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 개체의 첫 번째 요소를 주소 지정 하는 반복기 `multi_link_registry` 입니다.
 
@@ -102,7 +103,7 @@ virtual iterator begin();
 
 End 상태는 링크로 표시 됩니다 `NULL` .
 
-## <a name="contains"></a><a name="contains"></a>에서는
+## <a name="contains"></a><a name="contains"></a> 에서는
 
 지정 된 `multi_link_registry` 블록에 대 한 개체를 검색 합니다.
 
@@ -115,11 +116,11 @@ virtual bool contains(_EType _Link);
 *_Link*<br/>
 개체에서 검색할 블록에 대 한 포인터입니다 `multi_link_registry` .
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 지정 된 블록이 발견 되었으면이 고, **`false`** 그렇지 않으면입니다.
 
-## <a name="count"></a><a name="count"></a>수
+## <a name="count"></a><a name="count"></a> 수
 
 개체의 항목 수를 셉니다 `multi_link_registry` .
 
@@ -127,11 +128,11 @@ virtual bool contains(_EType _Link);
 virtual size_t count();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `multi_link_registry` 개체에 있는 항목 수입니다.
 
-## <a name="multi_link_registry"></a><a name="ctor"></a>multi_link_registry
+## <a name="multi_link_registry"></a><a name="ctor"></a> multi_link_registry
 
 `multi_link_registry` 개체를 생성합니다.
 
@@ -139,7 +140,7 @@ virtual size_t count();
 multi_link_registry();
 ```
 
-## <a name="multi_link_registry"></a><a name="dtor"></a>~ multi_link_registry
+## <a name="multi_link_registry"></a><a name="dtor"></a> ~ multi_link_registry
 
 개체를 소멸 시킵니다 `multi_link_registry` .
 
@@ -151,7 +152,7 @@ virtual ~multi_link_registry();
 
 메서드는 모든 링크가 제거 되기 전에 호출 되는 경우 [invalid_operation](invalid-operation-class.md) 예외를 throw 합니다.
 
-## <a name="remove"></a><a name="remove"></a>삭제
+## <a name="remove"></a><a name="remove"></a> 삭제
 
 개체에서 링크를 제거 합니다 `multi_link_registry` .
 
@@ -164,11 +165,11 @@ virtual bool remove(_EType _Link);
 *_Link*<br/>
 제거 될 블록에 대 한 포인터입니다 (있는 경우).
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 링크를 찾아 제거 했으면이 고, **`false`** 그렇지 않으면입니다.
 
-## <a name="set_bound"></a><a name="set_bound"></a>set_bound
+## <a name="set_bound"></a><a name="set_bound"></a> set_bound
 
 개체가 보유할 수 있는 링크 수의 상한을 설정 `multi_link_registry` 합니다.
 

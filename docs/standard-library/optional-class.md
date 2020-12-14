@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 선택적 클래스'
 title: 선택적 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,20 +14,20 @@ helpviewer_keywords:
 - optional/std::optional::reset
 - optional/std::optional::value
 - optional/std::optional::value_or
-ms.openlocfilehash: b1e77325cc485da1caec91316ce5d46cfa6357dc
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: fc0f14eb8bffc55c10db73b9b2f1ea5bcfdf6995
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841937"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97201939"
 ---
 # <a name="optional-class"></a>선택적 클래스
 
-클래스 템플릿은 `optional<T>` `T` 포함 된 *값*이라고 하는 형식의 값을 포함 하거나 포함 하지 않을 수 있는 개체를 설명 합니다.
+클래스 템플릿은 `optional<T>` `T` 포함 된 *값* 이라고 하는 형식의 값을 포함 하거나 포함 하지 않을 수 있는 개체를 설명 합니다.
 
 인스턴스에 `optional<T>` 값이 포함 된 경우 포함 된 값은 `optional` 형식에 대해 적절 하 게 정렬 된 지역에서 개체의 저장소 내에 할당 됩니다 `T` . `optional<T>`가로 변환 되 면 **`bool`** **`true`** 개체에 값이 포함 되어 있으면이 고, 그렇지 않으면 **`false`** 입니다.
 
-포함 된 개체 형식은 `T` [in_place_t](in-place-t-struct.md) 하거나 [nullopt_t](nullopt-t-structure.md)하지 않아야 합니다. `T`*소멸 가능한*이어야 합니다. 즉, 해당 소멸자는 소유 된 모든 리소스를 회수 해야 하며 예외를 throw 하지 않을 수 있습니다.
+포함 된 개체 형식은 `T` [in_place_t](in-place-t-struct.md) 하거나 [nullopt_t](nullopt-t-structure.md)하지 않아야 합니다. `T`*소멸 가능한* 이어야 합니다. 즉, 해당 소멸자는 소유 된 모든 리소스를 회수 해야 하며 예외를 throw 하지 않을 수 있습니다.
 
 `optional`클래스는 c + + 17의 새로운 클래스입니다.
 

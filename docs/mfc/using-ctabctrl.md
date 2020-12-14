@@ -1,16 +1,17 @@
 ---
+description: '자세히 알아보기: CTabCtrl 사용'
 title: CTabCtrl 사용
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CTabCtrl class [MFC], using
 - tab controls [MFC], using
 ms.assetid: 6bda6798-0085-4c09-a5ea-fe0e97af5c95
-ms.openlocfilehash: af61b33d592589f557afe13a319696a0f0f5f456
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 6bb88d5446731248a2e7d83644f7f8c340105f4b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79442257"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97202355"
 ---
 # <a name="using-ctabctrl"></a>CTabCtrl 사용
 
@@ -18,13 +19,13 @@ ms.locfileid: "79442257"
 
 탭 컨트롤에 대 한 자세한 내용은 Windows SDK [탭 컨트롤](/windows/win32/Controls/tab-controls) 을 참조 하세요.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아야 할 내용
 
 - [탭 컨트롤 및 속성 시트](../mfc/tab-controls-and-property-sheets.md)
 
 - [탭 및 탭 컨트롤 특성](../mfc/tabs-and-tab-control-attributes.md)
 
-- [소유자가 그린 탭으로 정의](../mfc/making-owner-drawn-tabs.md)
+- [Owner-Drawn 탭 만들기](../mfc/making-owner-drawn-tabs.md)
 
 - [탭 컨트롤 사용](../mfc/working-with-a-tab-control.md)
 

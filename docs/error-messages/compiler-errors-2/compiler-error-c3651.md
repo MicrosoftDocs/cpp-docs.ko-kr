@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3651'
 title: 컴파일러 오류 C3651
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3651
 ms.assetid: a03e692e-c219-4654-9827-8415cfa5a22d
-ms.openlocfilehash: 9468b1e9193bfa52ed133f6fdfa398e02e40c4ef
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 03845059c1c99db7a228d2678148f768cb2e2c1f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756320"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97203720"
 ---
 # <a name="compiler-error-c3651"></a>컴파일러 오류 C3651
 

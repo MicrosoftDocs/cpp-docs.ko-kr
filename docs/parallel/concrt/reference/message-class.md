@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: message 클래스'
 title: message 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - message class
 ms.assetid: 3e1f3505-6c0c-486c-8191-666d0880ec62
-ms.openlocfilehash: 700d052b6f22c970387a3ab45d299538a5b74e1b
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 0e15dafd9606e68f7a6ed1bed3795791c0f6870c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77139536"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97202316"
 ---
 # <a name="message-class"></a>message 클래스
 
@@ -35,40 +36,40 @@ class message : public ::Concurrency::details::_Runtime_object;
 *T*<br/>
 메시지 내 페이로드의 데이터 형식입니다.
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 
-### <a name="public-typedefs"></a>공용 형식 정의
+### <a name="public-typedefs"></a>공용 Typedefs
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|`type`|`T`에 대 한 형식 별칭입니다.|
+|`type`|에 대 한 형식 별칭 `T` 입니다.|
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|Description|
 |----------|-----------------|
-|[message](#ctor)|오버로드되었습니다. `message` 개체를 생성합니다.|
-|[~ 메시지 소멸자](#dtor)|`message` 개체를 소멸 시킵니다.|
+|[message](#ctor)|오버로드됨. `message` 개체를 생성합니다.|
+|[~ 메시지 소멸자](#dtor)|개체를 소멸 시킵니다 `message` .|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[add_ref](#add_ref)|`message` 개체에 대 한 참조 횟수에를 추가 합니다. 메시지 수명을 확인 하기 위해 참조 계산이 필요한 메시지 블록에 사용 됩니다.|
-|[msg_id](#msg_id)|`message` 개체의 ID를 반환 합니다.|
-|[remove_ref](#remove_ref)|`message` 개체에 대 한 참조 횟수에서 뺍니다. 메시지 수명을 확인 하기 위해 참조 계산이 필요한 메시지 블록에 사용 됩니다.|
+|[add_ref](#add_ref)|개체의 참조 횟수에를 추가 `message` 합니다. 메시지 수명을 확인 하기 위해 참조 계산이 필요한 메시지 블록에 사용 됩니다.|
+|[msg_id](#msg_id)|개체의 ID를 반환 합니다 `message` .|
+|[remove_ref](#remove_ref)|개체의 참조 횟수에서 뺍니다 `message` . 메시지 수명을 확인 하기 위해 참조 계산이 필요한 메시지 블록에 사용 됩니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|[payload](#payload)|`message` 개체의 페이로드입니다.|
+|[페이로드와](#payload)|개체의 페이로드 `message` 입니다.|
 
 ## <a name="remarks"></a>설명
 
 자세한 내용은 [비동기 메시지 블록](../../../parallel/concrt/asynchronous-message-blocks.md)을 참조 하세요.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `message`
 
@@ -76,21 +77,21 @@ class message : public ::Concurrency::details::_Runtime_object;
 
 **헤더:** agents.h
 
-**네임스페이스:** 동시성
+**네임 스페이스:** 동시성
 
-## <a name="add_ref"></a>add_ref
+## <a name="add_ref"></a><a name="add_ref"></a> add_ref
 
-`message` 개체에 대 한 참조 횟수에를 추가 합니다. 메시지 수명을 확인 하기 위해 참조 계산이 필요한 메시지 블록에 사용 됩니다.
+개체의 참조 횟수에를 추가 `message` 합니다. 메시지 수명을 확인 하기 위해 참조 계산이 필요한 메시지 블록에 사용 됩니다.
 
 ```cpp
 long add_ref();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 참조 횟수의 새 값입니다.
 
-## <a name="ctor"></a>메시지
+## <a name="message"></a><a name="ctor"></a> 메시지
 
 `message` 개체를 생성합니다.
 
@@ -118,52 +119,52 @@ message(
 이 메시지의 고유 ID입니다.
 
 *_Msg*<br/>
-`message` 개체에 대 한 참조 또는 포인터입니다.
+개체에 대 한 참조 또는 포인터 `message` 입니다.
 
 ### <a name="remarks"></a>설명
 
-`message` 개체에 대 한 포인터를 인수로 사용 하는 생성자는 매개 변수 `_Msg` `NULL`경우 [invalid_argument](../../../standard-library/invalid-argument-class.md) 예외를 throw 합니다.
+매개 변수가 인 경우 개체에 대 한 포인터를 인수로 사용 하는 생성자는 `message` [invalid_argument](../../../standard-library/invalid-argument-class.md) 예외를 throw 합니다 `_Msg` `NULL` .
 
-## <a name="dtor"></a>~ 메시지
+## <a name="message"></a><a name="dtor"></a> ~ 메시지
 
-`message` 개체를 소멸 시킵니다.
+개체를 소멸 시킵니다 `message` .
 
 ```cpp
 virtual ~message();
 ```
 
-## <a name="msg_id"></a>msg_id
+## <a name="msg_id"></a><a name="msg_id"></a> msg_id
 
-`message` 개체의 ID를 반환 합니다.
+개체의 ID를 반환 합니다 `message` .
 
 ```cpp
 runtime_object_identity msg_id() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `runtime_object_identity` 개체의 `message`입니다.
 
-## <a name="payload"></a>페이로드와
+## <a name="payload"></a><a name="payload"></a> 페이로드와
 
-`message` 개체의 페이로드입니다.
+개체의 페이로드 `message` 입니다.
 
 ```cpp
 T const payload;
 ```
 
-## <a name="remove_ref"></a>remove_ref
+## <a name="remove_ref"></a><a name="remove_ref"></a> remove_ref
 
-`message` 개체에 대 한 참조 횟수에서 뺍니다. 메시지 수명을 확인 하기 위해 참조 계산이 필요한 메시지 블록에 사용 됩니다.
+개체의 참조 횟수에서 뺍니다 `message` . 메시지 수명을 확인 하기 위해 참조 계산이 필요한 메시지 블록에 사용 됩니다.
 
 ```cpp
 long remove_ref();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 참조 횟수의 새 값입니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[concurrency 네임스페이스](concurrency-namespace.md)
+[concurrency 네임 스페이스](concurrency-namespace.md)
