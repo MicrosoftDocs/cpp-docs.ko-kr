@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4031'
 title: 컴파일러 경고 (수준 1) C4031
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4031
 ms.assetid: 8ac4965d-75e2-42db-9763-3f6ae707e1e1
-ms.openlocfilehash: dc7211c990fe9817ad015880dcd2324632aa9d4c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e9294bfe9eb1e10e4a1b70a52c78d4bb75533c21
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80164367"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97241393"
 ---
 # <a name="compiler-warning-level-1-c4031"></a>컴파일러 경고 (수준 1) C4031
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3900'
 title: 컴파일러 오류 C3900
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3900
 ms.assetid: a94cc561-8fa8-4344-9e01-e81ff462fae5
-ms.openlocfilehash: f1289fb9a4d60f2c75b54fd573c83064f1517282
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 7b210eb6369b8953f36821d45690de8656113af2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74749102"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97238936"
 ---
 # <a name="compiler-error-c3900"></a>컴파일러 오류 C3900
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 2) C4244'
 title: 컴파일러 경고(수준 2) C4244
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4244
 ms.assetid: 2c19d157-21d1-42c2-a6c0-3f30f2ce3813
-ms.openlocfilehash: a07adf37314a11cceb72d6675a66d82f7554bbb6
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: b51af5179c9afbf01529f545bbc602ac9c9fac6d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80162064"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97238130"
 ---
 # <a name="compiler-warning-level-2-c4244"></a>컴파일러 경고(수준 2) C4244
 

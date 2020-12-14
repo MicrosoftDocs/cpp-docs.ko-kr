@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3707'
 title: 컴파일러 오류 C3707
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3707
 ms.assetid: ac63a5dd-7a4b-48d2-9f2a-be9cb090134c
-ms.openlocfilehash: a09bf080c72e154a37cec5cdb75e714c12dd7150
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 77a1193eae9b9d0158065978438b5af1d2176d12
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91507975"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97241848"
 ---
 # <a name="compiler-error-c3707"></a>컴파일러 오류 C3707
 

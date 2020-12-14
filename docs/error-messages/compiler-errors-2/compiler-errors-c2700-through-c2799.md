@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2700 ~ C2799'
 title: 컴파일러 오류 C2700 ~ C2799
 ms.date: 04/21/2019
 f1_keywords:
@@ -40,12 +41,12 @@ helpviewer_keywords:
 - C2796
 - C2799
 ms.assetid: 6ee257bb-94bc-42b9-af2c-3c73926afba4
-ms.openlocfilehash: 174f6a9c8ec9e44deadfca090ba492cb32d53e9f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f9093c7cbdc884b23bef77fb8206a80e081dc4f2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87197516"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97238858"
 ---
 # <a name="compiler-errors-c2700-through-c2799"></a>컴파일러 오류 C2700 ~ C2799
 
@@ -71,7 +72,7 @@ ms.locfileid: "87197516"
 |[컴파일러 오류 C2711](compiler-error-c2711.md)|'*function*':이 함수를 관리 되는 것으로 컴파일할 수 없습니다. 관리 되지 않는 #pragma를 사용 하십시오.|
 |[컴파일러 오류 C2712](compiler-error-c2712.md)|개체 해제가 필요한 함수에 __try를 사용할 수 없습니다.|
 |[컴파일러 오류 C2713](compiler-error-c2713.md)|함수 별로 허용 되는 한 가지 형태의 예외 처리|
-|[컴파일러 오류 C2714](compiler-error-c2714.md)| `alignof(void)`허용 되지 않음|
+|[컴파일러 오류 C2714](compiler-error-c2714.md)| `alignof(void)` 허용 되지 않음|
 |[컴파일러 오류 C2715](compiler-error-c2715.md)|'*type*':이 형식을 throw 하거나 catch 할 수 없습니다.|
 |컴파일러 오류 C2716|사용되지 않습니다.|
 |컴파일러 오류 C2717|사용되지 않습니다.|

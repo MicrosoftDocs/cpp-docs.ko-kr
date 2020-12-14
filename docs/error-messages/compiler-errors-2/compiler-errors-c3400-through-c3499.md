@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3400 ~ C3499'
 title: 컴파일러 오류 C3400 ~ C3499
 ms.date: 04/21/2019
 f1_keywords:
@@ -94,12 +95,12 @@ helpviewer_keywords:
 - C3494
 - C3497
 ms.assetid: a5651dfb-c402-4e01-b3ae-28f371e51d6a
-ms.openlocfilehash: f4aff80178033d34cf051a14d89736b2b8347dd0
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: a6aaf04c397232195749512c6943cc096350d444
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79446840"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97238585"
 ---
 # <a name="compiler-errors-c3400-through-c3499"></a>컴파일러 오류 C3400 ~ C3499
 
@@ -122,19 +123,19 @@ ms.locfileid: "79446840"
 |[컴파일러 오류 C3408](compiler-error-c3408.md)|'*attribute*': 특성을 템플릿 정의에 사용할 수 없습니다.|
 |[컴파일러 오류 C3409](compiler-error-c3409.md)|빈 특성 블록은 사용할 수 없습니다.|
 |컴파일러 오류 C3410|'*identifier*': 명시적 인스턴스화 '*type*'의 형식이 '*type*' 변수 템플릿의 형식과 일치 하지 않습니다.|
-|컴파일러 오류 C3411|'*t r u e '는*정수 형식이 아니므로 배열 크기로 사용할 수 없습니다.|
+|컴파일러 오류 C3411|'*t r u e '는* 정수 형식이 아니므로 배열 크기로 사용할 수 없습니다.|
 |[컴파일러 오류 C3412](compiler-error-c3412.md)|'*특수화*': 현재 범위에서 템플릿을 특수화할 수 없습니다.|
 |[컴파일러 오류 C3413](compiler-error-c3413.md)|'*template*': 잘못 된 명시적 인스턴스화입니다.|
 |[컴파일러 오류 C3414](compiler-error-c3414.md)|'*function*': 가져온 멤버 함수를 정의할 수 없습니다.|
-|[컴파일러 오류 C3415](compiler-error-c3415.md)|여러 '*section*' 섹션이 다른 특성 (' 0x*value*')을 사용 하 여 검색 되었습니다.|
-|컴파일러 오류 C 3416|더 이상 사용되지 않습니다.|
+|[컴파일러 오류 C3415](compiler-error-c3415.md)|여러 '*section*' 섹션이 다른 특성 (' 0x *value*')을 사용 하 여 검색 되었습니다.|
+|컴파일러 오류 C 3416|사용되지 않습니다.|
 |[컴파일러 오류 C3417](compiler-error-c3417.md)|'*선언 자*': 값 형식은 사용자 정의 특수 멤버 함수를 포함할 수 없습니다.|
 |[컴파일러 오류 C3418](compiler-error-c3418.md)|액세스 지정자 '*지정자*'는 지원 되지 않습니다.|
-|컴파일러 오류 C3419|더 이상 사용되지 않습니다.|
+|컴파일러 오류 C3419|사용되지 않습니다.|
 |[컴파일러 오류 C3420](compiler-error-c3420.md)|'*function*': 종료자는 virtual 일 수 없습니다.|
 |[컴파일러 오류 C3421](compiler-error-c3421.md)|'*function*':이 클래스의 종료자는 액세스할 수 없거나 존재 하지 않으므로 호출할 수 없습니다.|
 |컴파일러 오류 C3422|'*선언*': '*type*' 및 '*type*' 형식이 일치 하지 않습니다.|
-|컴파일러 오류 C3423|더 이상 사용되지 않습니다.|
+|컴파일러 오류 C3423|사용되지 않습니다.|
 |컴파일러 오류 C3424|'*type*': 배열 형식으로의 함수 스타일 캐스트는 허용 되지 않습니다.|
 |컴파일러 오류 C3425|불완전 한 '*type*' 형식의 개체에 대 한 포인터를 throw 할 수 없습니다.|
 |컴파일러 오류 C3426|불완전 한 '*type*' 형식의 개체를 throw 할 수 없습니다.|
@@ -155,19 +156,19 @@ ms.locfileid: "79446840"
 |컴파일러 오류 C3441|'*선언*': 클래스를 정의한 후에는 '*keyword*'를 적용할 수 없습니다.|
 |컴파일러 오류 C3442|Union의 여러 멤버를 초기화 하는 중: '*member1*' 및 '*member2*'|
 |컴파일러 오류 C3443|'*Class*'의 기본 멤버 이니셜라이저가 재귀적입니다.|
-|컴파일러 오류 C3444|'*Class*'의 빈 집계 클래스는 '{}'로 초기화 해야 합니다.|
+|컴파일러 오류 C3444|' T *r u e '* 의 빈 집계 클래스는 ' '로 초기화 해야 합니다. {}|
 |[컴파일러 오류 C3445](compiler-error-c3445.md)|'*type*'의 복사 목록 초기화는 명시적 생성자를 사용할 수 없습니다.|
 |[컴파일러 오류 C3446](compiler-error-c3446.md)|'*class*': 값 클래스의 멤버에는 기본 멤버 이니셜라이저를 사용할 수 없습니다.|
-|컴파일러 오류 C3447|더 이상 사용되지 않습니다.|
-|컴파일러 오류 C3448|더 이상 사용되지 않습니다.|
-|컴파일러 오류 C3449|더 이상 사용되지 않습니다.|
+|컴파일러 오류 C3447|사용되지 않습니다.|
+|컴파일러 오류 C3448|사용되지 않습니다.|
+|컴파일러 오류 C3449|사용되지 않습니다.|
 |[컴파일러 오류 C3450](compiler-error-c3450.md)|'*type*': 특성이 아닙니다. [System:: AttributeUsageAttribute]/[Windows:: Foundation:: Metadata:: AttributeUsageAttribute]를 지정할 수 없습니다.|
 |[컴파일러 오류 C3451](compiler-error-c3451.md)|'*attribute*': '*type*'에 관리 되지 않는 특성을 적용할 수 없습니다.|
 |[컴파일러 오류 C3452](compiler-error-c3452.md)|목록 인수 멤버가 상수가 아닙니다.|
 |[컴파일러 오류 C3453](compiler-error-c3453.md)|'*attribute*': '*한정자*' 한정자가 일치 하지 않아 특성이 적용 되지 않았습니다.|
 |[컴파일러 오류 C3454](compiler-error-c3454.md)|[attribute]는 클래스 선언에 사용할 수 없습니다.|
 |[컴파일러 오류 C3455](compiler-error-c3455.md)|'*attribute*': 인수와 일치 하는 특성 생성자가 없습니다.|
-|[컴파일러 오류 C3456](compiler-error-c3456.md)|[소스\_annotation_attribute]은 (는) 관리 되는/WinRT 클래스 선언에서 사용할 수 없습니다.|
+|[컴파일러 오류 C3456](compiler-error-c3456.md)|[source \_ annotation_attribute]은 (는) 관리 되는/WinRT 클래스 선언에서 사용할 수 없습니다.|
 |[컴파일러 오류 C3457](compiler-error-c3457.md)|'*attribute*': 특성은 명명 되지 않은 인수를 지원 하지 않습니다.|
 |[컴파일러 오류 C3458](compiler-error-c3458.md)|' [*attribute*] ': ' [*attribute*] ' 특성이 '*identifier*'에 대해 이미 지정 되었습니다.|
 |[컴파일러 오류 C3459](compiler-error-c3459.md)|' [*attribute*] ': 특성은 클래스 인덱서 (인덱싱된 기본 속성)에만 사용할 수 있습니다.|
@@ -197,10 +198,10 @@ ms.locfileid: "79446840"
 |[컴파일러 오류 C3483](compiler-error-c3483.md)|'*identifier*'는 이미 람다 캡처 목록의 일부입니다.|
 |[컴파일러 오류 C3484](compiler-error-c3484.md)|구문 오류: 반환 형식 앞에 '-> '가 필요 합니다.|
 |[컴파일러 오류 C3485](compiler-error-c3485.md)|람다 정의에 cv 한정자를 사용할 수 없습니다.|
-|컴파일러 오류 3486|더 이상 사용되지 않습니다.|
+|컴파일러 오류 3486|사용되지 않습니다.|
 |[컴파일러 오류 C3487](compiler-error-c3487.md)|'*type*': 모든 반환 식은 같은 형식으로 추론 되어야 합니다. 이전에는 '*t r u e '* 였습니다.|
-|[컴파일러 오류 C 3488](compiler-error-c3488.md)|기본 캡처 모드가 참조 인 경우에는 ' &*identifier*'를 사용할 수 없습니다.|
-|[컴파일러 오류 C 3489](compiler-error-c3489.md)|기본 캡처 모드를 복사할 때 ' &*식별자*'가 필요 합니다.|
+|[컴파일러 오류 C3488](compiler-error-c3488.md)|기본 캡처 모드가 참조 인 경우에는 ' &*identifier*'를 사용할 수 없습니다.|
+|[컴파일러 오류 C3489](compiler-error-c3489.md)|기본 캡처 모드를 복사할 때 ' &*식별자*'가 필요 합니다.|
 |[컴파일러 오류 C3490](compiler-error-c3490.md)|'*identifier*'는 const 개체를 통해 액세스 되 고 있으므로 수정할 수 없습니다.|
 |[컴파일러 오류 C3491](compiler-error-c3491.md)|'*identifier*': 변경 불가능 한 람다에서 복사 방식 캡처를 수정할 수 없습니다.|
 |[컴파일러 오류 C3492](compiler-error-c3492.md)|'*identifier*': 익명 공용 구조체의 멤버를 캡처할 수 없습니다.|
@@ -214,5 +215,5 @@ ms.locfileid: "79446840"
 
 ## <a name="see-also"></a>참고 항목
 
-[C/C++ 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md) \
-[컴파일러 오류 C2000-C3999](../compiler-errors-1/compiler-errors-c2000-c3999.md)
+[C/c + + 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md) \
+[컴파일러 오류 C2000 ~ C3999](../compiler-errors-1/compiler-errors-c2000-c3999.md)

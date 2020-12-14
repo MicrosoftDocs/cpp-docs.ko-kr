@@ -1,13 +1,14 @@
 ---
+description: '자세히 알아보기: 속성 (c + +/CX)'
 title: 속성(C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 64c7bc56-3191-4cd5-bdf4-476d07d285d5
-ms.openlocfilehash: fdff2bf5abd3177eda962b7cc55ace1078522f32
-ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
+ms.openlocfilehash: 5c56dabb080404b074408f60b6c06535558c1d82
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70741104"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97239716"
 ---
 # <a name="properties-ccx"></a>속성(C++/CX)
 
@@ -15,13 +16,13 @@ Windows 런타임 형식은 공용 데이터를 속성으로 노출 합니다. �
 
 ### <a name="remarks"></a>설명
 
-속성 값은 속성과 형식이 동일한 *백업 저장소*라고 하는 전용 변수에 포함됩니다. 속성에는 백업 저장소에 값을 할당하는 set 접근자와 백업 저장소의 값을 검색하는 get 접근자가 모두 포함될 수 있습니다. 속성은 get 접근자만 제공하는 경우 읽기 전용이고, set 접근자만 제공하는 경우 쓰기 전용이며 두 접근자를 모두 제공하는 경우 읽기/쓰기(수정 가능) 속성입니다.
+속성 값은 속성과 형식이 동일한 *백업 저장소* 라고 하는 전용 변수에 포함됩니다. 속성에는 백업 저장소에 값을 할당하는 set 접근자와 백업 저장소의 값을 검색하는 get 접근자가 모두 포함될 수 있습니다. 속성은 get 접근자만 제공하는 경우 읽기 전용이고, set 접근자만 제공하는 경우 쓰기 전용이며 두 접근자를 모두 제공하는 경우 읽기/쓰기(수정 가능) 속성입니다.
 
 *trivial* 속성은 컴파일러가 접근자 및 백업 저장소를 자동으로 구현하는 읽기/쓰기 속성입니다. 컴파일러의 구현에 액세스할 필요가 없습니다. 그러나 사용자 지정 속성을 선언하고 접근자 및 백업 저장소를 명시적으로 선언할 수 있습니다. 접근자 내에서 set 접근자에 대한 입력 유효성 검사, 속성 값 계산, 데이터베이스 액세스 또는 속성이 변경될 때 이벤트 발생과 같이 필요한 모든 논리를 수행할 수 있습니다.
 
 C++/CX ref 클래스가 인스턴스화되면 생성자가 호출되기 전에 메모리가 0으로 초기화되므로 선언 시점에서 모든 속성에 기본값 0 또는 nullptr이 할당됩니다.
 
-### <a name="examples"></a>예
+### <a name="examples"></a>예제
 
 다음 코드 예제에서는 속성을 선언하고 액세스하는 방법을 보여 줍니다. 첫 번째 속성 `Name`은 *trivial* 속성이라고도 합니다. 컴파일러가 자동으로 `set` accessor, `get` 접근자와 백업 저장소를 생성하기 때문입니다.
 
@@ -35,8 +36,8 @@ C++/CX ref 클래스가 인스턴스화되면 생성자가 호출되기 전에 �
 
 [!code-cpp[cx_properties#01](../cppcx/codesnippet/CPP/cx_properties/class1.h#01)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[형식 시스템](../cppcx/type-system-c-cx.md)<br/>
-[C++/CX 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)<br/>
-[네임스페이스 참조](../cppcx/namespaces-reference-c-cx.md)
+[유형 시스템](../cppcx/type-system-c-cx.md)<br/>
+[C + +/CX 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[네임 스페이스 참조](../cppcx/namespaces-reference-c-cx.md)

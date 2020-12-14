@@ -1,4 +1,5 @@
 ---
+description: 다음에 대 한 자세한 정보:/UMS
 title: /SUMMARY
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - /SUMMARY dumpbin option
 - SUMMARY dumpbin option
 ms.assetid: f33f244c-1f23-4e94-bd85-b26c97a19e6a
-ms.openlocfilehash: fd9923e22b5cb11981a3037ae3f30ef541445e98
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 59b287001a8b98767a72a5cd25efb6c07b00a04a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62317746"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240405"
 ---
 # <a name="summary"></a>/SUMMARY
 
@@ -23,10 +24,10 @@ ms.locfileid: "62317746"
 
 ## <a name="remarks"></a>설명
 
-이 옵션에는 총 크기 등의 섹션에 대 한 최소한의 정보만을 표시 합니다. 이 옵션이 없는 다른 옵션을 지정 하는 경우 기본 옵션입니다.
+이 옵션은 총 크기를 비롯 한 섹션에 대 한 최소 정보를 표시 합니다. 다른 옵션을 지정 하지 않은 경우이 옵션은 기본값입니다.
 
-[/HEADERS](headers.md) DUMPBIN 옵션은 [/GL](gl-whole-program-optimization.md) 컴파일러 옵션으로 만든 파일에만 사용할 수 있습니다.
+[/GL](gl-whole-program-optimization.md) 컴파일러 옵션으로 생성된 파일에서는 [/HEADERS](headers.md) DUMPBIN옵션만 사용할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [DUMPBIN 옵션](dumpbin-options.md)

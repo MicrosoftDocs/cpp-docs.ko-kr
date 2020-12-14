@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4020'
 title: 컴파일러 경고 (수준 1) C4020
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4020
 ms.assetid: 8c4cd6be-9371-4c8c-b0ff-a5ad367bbab0
-ms.openlocfilehash: 2136e94a261b2f767165e43acfd66583e8d15e9f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 454bab1eb8a3d1da6d0fe8bf508de8c466d22001
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80164588"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97241575"
 ---
 # <a name="compiler-warning-level-1-c4020"></a>컴파일러 경고 (수준 1) C4020
 
@@ -30,7 +31,7 @@ int main() {
 }
 ```
 
-가능한 해결 방법:
+해결 방법:
 
 ```c
 // C4020b.c

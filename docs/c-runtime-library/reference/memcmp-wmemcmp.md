@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: memcmp, wmemcmp'
 title: memcmp, wmemcmp
 ms.date: 11/04/2016
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - wmemcmp function
 - memcmp function
 ms.assetid: 0c21c3e3-8ee4-40e5-add1-eb26d225fd8d
-ms.openlocfilehash: b18479e50d5b35c8de3dfd11eb34d0d21d45f223
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 65489d99e0c17e4971a4fa7cf849990b860ad361
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232458"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97239989"
 ---
 # <a name="memcmp-wmemcmp"></a>memcmp, wmemcmp
 
@@ -63,9 +64,9 @@ int wmemcmp(
 두 번째 버퍼입니다.
 
 *count*<br/>
-비교할 문자 수입니다. ( **Wmemcmp**의 경우 바이트, **memcmp**의 경우 와이드 문자)를 비교 합니다.
+비교할 문자 수입니다. ( **Wmemcmp** 의 경우 바이트, **memcmp** 의 경우 와이드 문자)를 비교 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 반환 값은 부분 문자열 간의 관계를 나타냅니다.
 
@@ -77,7 +78,7 @@ int wmemcmp(
 
 ## <a name="remarks"></a>설명
 
-*Buffer1* 및 *buffer2* 의 첫 번째 *카운트* 문자를 비교 하 고 해당 관계를 나타내는 값을 반환 합니다. 0이 아닌 반환 값의 부호는 버퍼에서 첫 번째 서로 다른 값 쌍의 차이에 대한 부호입니다. 값은 **`unsigned char`** **memcmp**의 경우 및 **`wchar_t`** **wmemcmp**의 경우로 해석 됩니다.
+*Buffer1* 및 *buffer2* 의 첫 번째 *카운트* 문자를 비교 하 고 해당 관계를 나타내는 값을 반환 합니다. 0이 아닌 반환 값의 부호는 버퍼에서 첫 번째 서로 다른 값 쌍의 차이에 대한 부호입니다. 값은 **`unsigned char`** **memcmp** 의 경우 및 **`wchar_t`** **wmemcmp** 의 경우로 해석 됩니다.
 
 ## <a name="requirements"></a>요구 사항
 

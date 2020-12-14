@@ -1,4 +1,5 @@
 ---
+description: Regex_traits &lt; wchar_t 클래스에 대해 자세히 알아보세요. &gt;
 title: regex_traits&lt;wchar_t&gt; 클래스
 ms.date: 09/10/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - regex_traits<wchar_t> class
 ms.assetid: 288d6fdb-fb8e-4a4d-904a-53916be7f95b
-ms.openlocfilehash: dd0b54470f026635c1e09829f37d02bbe8b3f0c0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d02d0abf5b6ca3f428bc94e153f93e428bec7c56
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217560"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240457"
 ---
 # <a name="regex_traitsltwchar_tgt-class"></a>regex_traits&lt;wchar_t&gt; 클래스
 
@@ -39,9 +40,9 @@ class regex_traits<wchar_t>
 [\<regex>](../standard-library/regex.md)\
 [regex_constants 클래스](../standard-library/regex-constants-class.md)\
 [regex_error 클래스](../standard-library/regex-error-class.md)\
-[\<regex>역함수](../standard-library/regex-functions.md)\
+[\<regex> 역함수](../standard-library/regex-functions.md)\
 [regex_iterator 클래스](../standard-library/regex-iterator-class.md)\
-[\<regex>작업자](../standard-library/regex-operators.md)\
+[\<regex> 작업자](../standard-library/regex-operators.md)\
 [regex_token_iterator 클래스](../standard-library/regex-token-iterator-class.md)\
 [regex_traits 클래스](../standard-library/regex-traits-class.md)\
-[\<regex>정의](../standard-library/regex-typedefs.md)
+[\<regex> 정의](../standard-library/regex-typedefs.md)

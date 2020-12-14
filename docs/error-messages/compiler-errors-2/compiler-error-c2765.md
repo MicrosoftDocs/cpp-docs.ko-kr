@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2765'
 title: 컴파일러 오류 C2765
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2765
 ms.assetid: 47ad86f3-a7e0-47ad-85ff-0f5534458cb9
-ms.openlocfilehash: 0c646d0ab28b97b546721180e46b0f22ea376f7d
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 496f28645dddc0ac426716cc80ee0d6760042ad7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74759830"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97239547"
 ---
 # <a name="compiler-error-c2765"></a>컴파일러 오류 C2765
 

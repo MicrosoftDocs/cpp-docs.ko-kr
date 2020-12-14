@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _memccpy'
 title: _memccpy
 ms.date: 11/04/2016
 api_name:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - _memccpy function
 - memccpy function
 ms.assetid: 9a2337df-6e85-4eba-b247-dd0532f45ddb
-ms.openlocfilehash: 097cefb504ffcdbfbe6bf131d5e8b1837d11a47a
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: f3cbfbd1e112c724d6223a6c6d28f0915dcd7ca0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70951973"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240093"
 ---
 # <a name="_memccpy"></a>_memccpy
 
@@ -63,11 +64,11 @@ void *_memccpy(
 
 ## <a name="return-value"></a>반환 값
 
-*C* 문자를 복사 하면 **_memccpy** 는 문자 바로 다음에 오는 *dest* 의 char에 대 한 포인터를 반환 합니다. *C* 를 복사 하지 않으면 **NULL**이 반환 됩니다.
+*C* 문자를 복사 하면 **_memccpy** 는 문자 바로 다음에 오는 *dest* 의 char에 대 한 포인터를 반환 합니다. *C* 를 복사 하지 않으면 **NULL** 이 반환 됩니다.
 
 ## <a name="remarks"></a>설명
 
-**_Memccpy** 함수는 *src* 의 0 개 이상의 문자를 *dest*로 복사 하 여 *c* 문자를 복사 하거나 *count* 문자가 복사 될 때를 중지 합니다.
+**_Memccpy** 함수는 *src* 의 0 개 이상의 문자를 *dest* 로 복사 하 여 *c* 문자를 복사 하거나 *count* 문자가 복사 될 때를 중지 합니다.
 
 **보안 정보** 대상 버퍼의 크기가 소스 버퍼의 크기보다 크거나 같아야 합니다. 자세한 내용은 [버퍼 오버런 방지](/windows/win32/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
@@ -77,7 +78,7 @@ void *_memccpy(
 |-------------|---------------------|
 |**_memccpy**|\<memory.h> 또는 \<string.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="libraries"></a>라이브러리
 
@@ -117,7 +118,7 @@ Result: The quick brown dog jumps
 Length: 25 characters
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [버퍼 조작](../../c-runtime-library/buffer-manipulation.md)<br/>
 [memchr, wmemchr](memchr-wmemchr.md)<br/>

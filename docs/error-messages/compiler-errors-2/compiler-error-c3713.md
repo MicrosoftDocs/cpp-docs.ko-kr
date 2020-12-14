@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3713'
 title: 컴파일러 오류 C3713
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3713
 ms.assetid: 75c6b9b6-955b-49bd-9bc8-ced88b496a1f
-ms.openlocfilehash: d78d1fb3028e8618035c1c6f7bb3eb0f65409dd2
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 83a3e22e6b58d13b419bcd5c586fe18a888f6779
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74753356"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97241679"
 ---
 # <a name="compiler-error-c3713"></a>컴파일러 오류 C3713
 

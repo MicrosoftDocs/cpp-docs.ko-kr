@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3137'
 title: 컴파일러 오류 C3137
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3137
 ms.assetid: 70bb1313-2e87-43ed-a0d8-33fa6ff475e4
-ms.openlocfilehash: 43c006a5be624d95c4d86bb97819c7ec5834e20d
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 7c4954e66eb019eaa11e8e17b760926e5396c0ef
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74761288"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97239326"
 ---
 # <a name="compiler-error-c3137"></a>컴파일러 오류 C3137
 

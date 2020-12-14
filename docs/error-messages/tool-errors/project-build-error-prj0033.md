@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 프로젝트 빌드 오류 PRJ0033'
 title: 프로젝트 빌드 오류 PRJ0033
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0033
 ms.assetid: 84d4a052-0586-4b78-9315-81c1e8386c1e
-ms.openlocfilehash: 141355ac49ec4722e85b5d4c25240e8048a72c9a
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 7faf69cd9aaed6f90d9c546c4fc2383fd6808419
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80192197"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97241133"
 ---
 # <a name="project-build-error-prj0033"></a>프로젝트 빌드 오류 PRJ0033
 

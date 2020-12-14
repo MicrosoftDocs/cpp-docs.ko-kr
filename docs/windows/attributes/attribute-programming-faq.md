@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 특성 프로그래밍 FAQ'
 title: 특성 프로그래밍 FAQ
 ms.date: 10/02/2018
 ms.topic: conceptual
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - attributes [C++/CLI], frequently asked questions
 - FAQs (frequently asked questions), attributed programming [C++]
 ms.assetid: a1b8349f-7f51-43c4-95ea-4edb6e5f243f
-ms.openlocfilehash: 70fbcc47884214fb998eb63ebfe50e445dbe95b8
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 7a3bdfc8749297d11c5bc33b706265a1f5913a69
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843146"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240431"
 ---
 # <a name="attribute-programming-faq"></a>특성 프로그래밍 FAQ
 
@@ -40,7 +41,7 @@ ms.locfileid: "88843146"
 
 HRESULT는 일반적으로 특성 및 ATL에서 반환 값으로 자주 사용 되는 단순 데이터 형식입니다. 다음 표에서는 다양 한 값에 대해 설명 합니다. 추가 값은 헤더 파일 winerror.h에 포함 되어 있습니다.
 
-|Name|Description|값|
+|Name|설명|값|
 |----------|-----------------|-----------|
 |S_OK|작업이 성공했습니다.|0x00000000|
 |E_UNEXPECTED|예기치 않은 오류|0x8000FFFF|

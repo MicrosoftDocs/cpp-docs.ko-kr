@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _mbsnbcpy_s, _mbsnbcpy_s_l'
 title: _mbsnbcpy_s, _mbsnbcpy_s_l
 ms.date: 4/2/2020
 api_name:
@@ -38,12 +39,12 @@ helpviewer_keywords:
 - _mbsnbcpy_s_l function
 - _tcsncpy_s function
 ms.assetid: dfff64ab-fe6f-49c4-99ba-75014e2b0cd6
-ms.openlocfilehash: 670055ca67e8196805851767596f56028350e32a
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 12233d0f83094934250a04b18582feff0cb7310e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911882"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240288"
 ---
 # <a name="_mbsnbcpy_s-_mbsnbcpy_s_l"></a>_mbsnbcpy_s, _mbsnbcpy_s_l
 
@@ -100,13 +101,13 @@ errno_t _mbsnbcpy_s_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 성공 하면 0입니다. 잘못 된 매개 변수가 전달 된 경우 **EINVAL** 입니다.
 
 ## <a name="remarks"></a>설명
 
-**_Mbsnbcpy_s** 함수는 *Strsource* 에서 *strsource*의 *카운트* 바이트를 복사 합니다. *Count* 가 *strdest*크기를 초과 하는 경우 입력 문자열 중 하나가 Null 포인터 이거나 *sizeinbytes* 또는 *Count* 가 0 인 경우 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **EINVAL**를 반환 합니다. 원본 및 대상 문자열이 겹치면 **_mbsnbcpy_s** 의 동작이 정의 되지 않습니다.
+**_Mbsnbcpy_s** 함수는 *Strsource* 에서 *strsource* 의 *카운트* 바이트를 복사 합니다. *Count* 가 *strdest* 크기를 초과 하는 경우 입력 문자열 중 하나가 Null 포인터 이거나 *sizeinbytes* 또는 *Count* 가 0 인 경우 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **EINVAL** 를 반환 합니다. 원본 및 대상 문자열이 겹치면 **_mbsnbcpy_s** 의 동작이 정의 되지 않습니다.
 
 출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_l** 접미사가 없는 이러한 함수 버전은 이 로캘 종속 동작에 현재 로캘을 사용하며, **_l** 접미사가 있는 버전은 전달된 로캘 매개 변수를 대신 사용하는 경우를 제외하고는 동일합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
@@ -135,7 +136,7 @@ C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 �
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [문자열 조작](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [_mbsnbcat, _mbsnbcat_l](mbsnbcat-mbsnbcat-l.md)<br/>

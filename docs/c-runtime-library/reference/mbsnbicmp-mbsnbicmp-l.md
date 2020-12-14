@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _mbsnbicmp, _mbsnbicmp_l'
 title: _mbsnbicmp, _mbsnbicmp_l
 ms.date: 4/2/2020
 api_name:
@@ -40,12 +41,12 @@ helpviewer_keywords:
 - mbsnbicmp function
 - _wcsnicmp function
 ms.assetid: ddb44974-8b0c-42f0-90d0-56c9350bae0c
-ms.openlocfilehash: e84e6b367c428dc26a1864db80f6828f7ec9c176
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 9cc833061ceca899af78da4c50610ed101dcd2d1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911827"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240275"
 ---
 # <a name="_mbsnbicmp-_mbsnbicmp_l"></a>_mbsnbicmp, _mbsnbicmp_l
 
@@ -72,7 +73,7 @@ int _mbsnbicmp(
 *count*<br/>
 비교할 바이트 수입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 반환 값은 부분 문자열 간의 관계를 나타냅니다.
 
@@ -82,11 +83,11 @@ int _mbsnbicmp(
 |0|문자열 *1 부분 문자열이 문자열이 아닌* *부분 문자열과 같습니다* .|
 |> 0|*문자열이 아닌 부분* 문자열이 *문자열 문자열의 하위 문자열 보다 큽니다* .|
 
-오류가 발생 하는 경우에는 문자열과 Mbstrom.h에 정의 된 **_NLSCMPERROR**을 반환 **_mbsnbicmp** .
+오류가 발생 하는 경우에는 문자열과 Mbstrom.h에 정의 된 **_NLSCMPERROR** 을 반환 **_mbsnbicmp** .
 
 ## <a name="remarks"></a>설명
 
-**_Mbsnbicmp** 함수는 *문자열* 1과 *문자열*1의 최대 *개수* 바이트 수에 대 한 서 수 비교를 수행 합니다. 각 문자를 소문자로 변환 하 여 비교를 수행 합니다. [_mbsnbcmp](mbsnbcmp-mbsnbcmp-l.md) 는 대/소문자를 구분 하는 **_mbsnbicmp**버전입니다. *Count* 문자를 비교 하기 전에 두 문자열 중 하나에서 종결 null 문자에 도달 하면 비교가 종료 됩니다. *Count* 문자를 비교 하기 전에 문자열 중 하나에서 종결 null 문자에 도달할 때 문자열이 같으면 문자열이 낮을수록 짧습니다.
+**_Mbsnbicmp** 함수는 *문자열* 1과 *문자열* 1의 최대 *개수* 바이트 수에 대 한 서 수 비교를 수행 합니다. 각 문자를 소문자로 변환 하 여 비교를 수행 합니다. [_mbsnbcmp](mbsnbcmp-mbsnbcmp-l.md) 는 대/소문자를 구분 하는 **_mbsnbicmp** 버전입니다. *Count* 문자를 비교 하기 전에 두 문자열 중 하나에서 종결 null 문자에 도달 하면 비교가 종료 됩니다. *Count* 문자를 비교 하기 전에 문자열 중 하나에서 종결 null 문자에 도달할 때 문자열이 같으면 문자열이 낮을수록 짧습니다.
 
 **_mbsnbicmp** 는 문자가 아닌 바이트 *수* 까지 문자열을 비교 한다는 점을 제외 하 고는 [_mbsnbcmp](mbsnbcmp-mbsnbcmp-l.md)와 비슷합니다.
 
@@ -94,7 +95,7 @@ ASCII 테이블의 'Z'와 'a' 사이에 있는 문자('[', '\\', ']', '^', '_' �
 
 **_mbsnbicmp** 는 현재 사용 중인 [멀티 바이트 코드 페이지](../../c-runtime-library/code-pages.md) 에 따라 멀티 바이트 문자 시퀀스를 인식 합니다. 현재 로캘 설정은 적용되지 않습니다.
 
-String1 또는 *string1* 이 null 포인터인 경우 **_Mbsnbicmp** 는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 *설명 된 대로* 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 함수는 **_NLSCMPERROR** 을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
+String1 또는 *string1* 이 null 포인터인 경우 **_Mbsnbicmp** 는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 *설명 된 대로* 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 함수는 **_NLSCMPERROR** 을 반환 하 고 **errno** 를 **EINVAL** 로 설정 합니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -117,7 +118,7 @@ String1 또는 *string1* 이 null 포인터인 경우 **_Mbsnbicmp** 는 [매개
 
 [_mbsnbcmp, _mbsnbcmp_l](mbsnbcmp-mbsnbcmp-l.md)에 대한 예제를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [문자열 조작](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [_mbsnbcat, _mbsnbcat_l](mbsnbcat-mbsnbcat-l.md)<br/>

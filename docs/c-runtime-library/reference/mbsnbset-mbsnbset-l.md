@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _mbsnbset, _mbsnbset_l'
 title: _mbsnbset, _mbsnbset_l
 ms.date: 4/2/2020
 api_name:
@@ -38,12 +39,12 @@ helpviewer_keywords:
 - tcsnset_l function
 - mbsnbset function
 ms.assetid: 8e46ef75-9a56-42d2-a522-a08450c67c19
-ms.openlocfilehash: 6af5dd101de74c9f25451c7b72ee561db35505d4
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: a99e92cec8b15c9534cec981652ce7c78fa31923
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915546"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240262"
 ---
 # <a name="_mbsnbset-_mbsnbset_l"></a>_mbsnbset, _mbsnbset_l
 
@@ -70,7 +71,7 @@ unsigned char *_mbsnbset_l(
 
 ### <a name="parameters"></a>매개 변수
 
-*문자열*<br/>
+*str*<br/>
 변경할 문자열입니다.
 
 *c*<br/>
@@ -82,17 +83,17 @@ unsigned char *_mbsnbset_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 **_mbsnbset** 는 변경 된 문자열에 대 한 포인터를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-**_Mbsnbset** 및 **_mbsnbset_l** 함수는 *str* 의 처음 *카운트* 바이트를 *c*로 설정 합니다. *Count* 가 *str*의 길이 보다 크면 *count*대신 *str* 의 길이가 사용 됩니다. *C* 가 멀티 바이트 문자이 고 *count*로 지정 된 마지막 바이트로 완전히 설정할 수 없는 경우 마지막 바이트는 빈 문자로 채워집니다. **_mbsnbset** 및 **_mbsnbset_l** 은 *str*의 끝에 종료 null을 삽입 하지 않습니다.
+**_Mbsnbset** 및 **_mbsnbset_l** 함수는 *str* 의 처음 *카운트* 바이트를 *c* 로 설정 합니다. *Count* 가 *str* 의 길이 보다 크면 *count* 대신 *str* 의 길이가 사용 됩니다. *C* 가 멀티 바이트 문자이 고 *count* 로 지정 된 마지막 바이트로 완전히 설정할 수 없는 경우 마지막 바이트는 빈 문자로 채워집니다. **_mbsnbset** 및 **_mbsnbset_l** 은 *str* 의 끝에 종료 null을 삽입 하지 않습니다.
 
-**_mbsnbset** 및 **_mbsnbset_l** 는 *c*의 *카운트* 문자 대신 *count* 바이트를 설정 한다는 점을 제외 하 고 **_mbsnset**와 비슷합니다.
+**_mbsnbset** 및 **_mbsnbset_l** 는 *c* 의 *카운트* 문자 대신 *count* 바이트를 설정 한다는 점을 제외 하 고 **_mbsnset** 와 비슷합니다.
 
-*Str* 이 **NULL** 이거나 *개수가* 0 인 경우이 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 예외를 생성 합니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 은 **EINVAL** 로 설정 되 고 함수는 **NULL**을 반환 합니다. 또한 *c* 가 유효한 멀티 바이트 문자가 아닌 경우에는 **errno** 가 **EINVAL** 로 설정 되 고 대신 공백이 사용 됩니다.
+*Str* 이 **NULL** 이거나 *개수가* 0 인 경우이 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 예외를 생성 합니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 은 **EINVAL** 로 설정 되 고 함수는 **NULL** 을 반환 합니다. 또한 *c* 가 유효한 멀티 바이트 문자가 아닌 경우에는 **errno** 가 **EINVAL** 로 설정 되 고 대신 공백이 사용 됩니다.
 
 출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. 이 함수의 **_mbsnbset** 버전은이 로캘 종속 동작에 현재 로캘을 사용 합니다. **_mbsnbset_l** 버전은 전달 된 로캘 매개 변수를 대신 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 

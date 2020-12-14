@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CD2DRoundedRect 클래스'
 title: CD2DRoundedRect 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - CD2DRoundedRect [MFC], CD2DRoundedRect
 ms.assetid: 06207fb5-e92b-41c0-bceb-b45d8f466531
-ms.openlocfilehash: 5189f3d824c008845570eac6eead4a35be1e483d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 13c1b0910c9d78f615d64e3eecba8bb813916413
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369082"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240665"
 ---
 # <a name="cd2droundedrect-class"></a>CD2DRoundedRect 클래스
 
@@ -29,23 +30,23 @@ class CD2DRoundedRect : public D2D1_ROUNDED_RECT;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[CD2DRounded렉트::CD2DRounded렉트](#cd2droundedrect)|오버로드되었습니다. 개체에서 `D2D1_ROUNDED_RECT` `CD2DRoundedRect` 개체를 생성합니다.|
+|[CD2DRoundedRect:: CD2DRoundedRect](#cd2droundedrect)|오버로드됨. `CD2DRoundedRect`개체에서 개체를 생성 `D2D1_ROUNDED_RECT` 합니다.|
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `D2D1_ROUNDED_RECT`
 
-[CD2DRounded렉트](../../mfc/reference/cd2droundedrect-class.md)
+[CD2DRoundedRect](../../mfc/reference/cd2droundedrect-class.md)
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxrendertarget.h
+**헤더:** afxrendertarget
 
-## <a name="cd2droundedrectcd2droundedrect"></a><a name="cd2droundedrect"></a>CD2DRounded렉트::CD2DRounded렉트
+## <a name="cd2droundedrectcd2droundedrect"></a><a name="cd2droundedrect"></a> CD2DRoundedRect:: CD2DRoundedRect
 
-CD2DRectF 개체에서 CD2DRoundedRect 개체를 생성합니다.
+CD2DRectF 개체에서 CD2DRoundedRect 개체를 생성 합니다.
 
 ```
 CD2DRoundedRect(
@@ -58,10 +59,10 @@ CD2DRoundedRect(const D2D1_ROUNDED_RECT* rectIn);
 
 ### <a name="parameters"></a>매개 변수
 
-*정사각형*<br/>
+*rectIn*<br/>
 소스 사각형
 
-*크기경수경*<br/>
+*sizeRadius*<br/>
 반경 크기
 
 ## <a name="see-also"></a>참고 항목

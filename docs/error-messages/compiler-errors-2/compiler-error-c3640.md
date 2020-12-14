@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3640'
 title: 컴파일러 오류 C3640
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3640
 ms.assetid: fcc56894-0f98-48af-8561-3bf7c7b2b93f
-ms.openlocfilehash: 73f353aff42afdee649104d9f578c9061d236d1f
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 7f26a824cc39f2b5509c6d935a95cbc5af48aca0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74742485"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97239183"
 ---
 # <a name="compiler-error-c3640"></a>컴파일러 오류 C3640
 

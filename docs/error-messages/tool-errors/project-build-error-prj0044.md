@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 프로젝트 빌드 오류 PRJ0044'
 title: 프로젝트 빌드 오류 PRJ0044
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0044
 ms.assetid: 5d78c45a-f9e9-4d2b-a3b6-5a5d1421ab84
-ms.openlocfilehash: ab2fd5f6562ac85c9c86cafc851315c21cd28da3
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 26781bad89bbc9eb4c70b487ba9ef61358488101
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80192105"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240938"
 ---
 # <a name="project-build-error-prj0044"></a>프로젝트 빌드 오류 PRJ0044
 
@@ -23,4 +24,4 @@ ms.locfileid: "80192105"
 
 ## <a name="see-also"></a>참고 항목
 
-[프로젝트 빌드 오류 및 경고(PRJxxxx)](../../error-messages/tool-errors/project-build-errors-and-warnings-prjxxxx.md)
+[프로젝트 빌드 오류 및 경고 (PRJxxxx)](../../error-messages/tool-errors/project-build-errors-and-warnings-prjxxxx.md)

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 프로젝트 빌드 오류 PRJ0032'
 title: 프로젝트 빌드 오류 PRJ0032
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0032
 ms.assetid: bc6acbea-4041-4237-8b5a-f0434705d89f
-ms.openlocfilehash: 62efa0e72c6fbe4bd38983ff0507923392427c04
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 25c8f9480e63a8afee23c880912e17632111a4c2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80192486"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97241146"
 ---
 # <a name="project-build-error-prj0032"></a>프로젝트 빌드 오류 PRJ0032
 

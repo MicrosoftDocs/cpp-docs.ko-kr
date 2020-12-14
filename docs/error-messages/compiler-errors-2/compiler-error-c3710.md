@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3710'
 title: 컴파일러 오류 C3710
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - C3710
 ms.assetid: 18bec009-5b6f-464a-a21e-5d58a6936504
-ms.openlocfilehash: 3c060d5b01c0d918071681996e76258eba0ce943
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 6e9e146f5ec7370043756998cd162c3e57839671
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74753421"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97241705"
 ---
 # <a name="compiler-error-c3710"></a>컴파일러 오류 C3710
 
-' function ': __hook/\_에서 이벤트 처리기를 지정 하기 위한 구문이 잘못 되었습니다 _unhook
+' function ': __hook/_unhook에서 이벤트 처리기를 지정 하기 위한 구문이 잘못 되었습니다. \_
 
 [__Hook](../../cpp/hook.md) 또는 [__unhook](../../cpp/unhook.md)를 사용 하 여 이벤트 처리기를 지정 하는 경우 처리기는 유효한 방법 이어야 합니다.
 

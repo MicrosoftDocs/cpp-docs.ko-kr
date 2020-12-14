@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: memchr, wmemchr'
 title: memchr, wmemchr
 ms.date: 03/31/2019
 api_name:
@@ -27,12 +28,12 @@ helpviewer_keywords:
 - memchr function
 - wmemchr function
 ms.assetid: 5a348581-28f1-4256-8434-687245f7fc9f
-ms.openlocfilehash: b4640004526eda4ff26e9601e15298bcb8ba3c79
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 695973fd9551758de6c0638493057b31e9a74aab
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232471"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240002"
 ---
 # <a name="memchr-wmemchr"></a>memchr, wmemchr
 
@@ -84,13 +85,13 @@ const wchar_t *wmemchr(
 *count*<br/>
 검사할 문자 수입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-성공 하면 *버퍼*에서 *c* 의 첫 번째 위치에 대 한 포인터를 반환 합니다. 그렇지 않으면 NULL을 반환 합니다.
+성공 하면 *버퍼* 에서 *c* 의 첫 번째 위치에 대 한 포인터를 반환 합니다. 그렇지 않으면 NULL을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-`memchr``wmemchr` *버퍼*의 첫 번째 *카운트* 문자에서 처음 발견 되는 *c* 를 찾습니다. *C* 를 찾거나 첫 번째 *카운트* 문자를 확인 한 경우 중지 합니다.
+`memchr``wmemchr` *버퍼* 의 첫 번째 *카운트* 문자에서 처음 발견 되는 *c* 를 찾습니다. *C* 를 찾거나 첫 번째 *카운트* 문자를 확인 한 경우 중지 합니다.
 
 C에서 이러한 함수는 **`const`** 첫 번째 인수에 대 한 포인터를 사용 합니다. C++에서는 두 오버로드를 모두 사용할 수 있습니다. 포인터를 사용 하는 오버 로드는에 대 한 포인터를 반환 합니다 .가 아닌에 대 한 포인터를 사용 하는 **`const`** **`const`** 버전은가 **`const`** 아닌에 대 한 포인터를 반환 합니다 **`const`** . \_ \_ \_ \_ **`const`** 이러한 함수의 및 비 버전을 모두 **`const`** 사용할 수 있는 경우 매크로 CRT CONST 올바른 오버 로드를 정의 합니다. **`const`** C + +에서 두 c + + 오버 로드에 대 한 동작이 필요 하지 않은 경우에는 CONST 반환 기호를 정의 \_ \_ 합니다.
 
