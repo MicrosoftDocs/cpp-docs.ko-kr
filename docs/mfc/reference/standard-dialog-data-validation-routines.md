@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 표준 대화 상자 데이터 유효성 검사 루틴'
 title: 표준 대화 상자 데이터 유효성 검사 루틴
 ms.date: 11/04/2016
 helpviewer_keywords:
 - standard dialog, data validation routines
 ms.assetid: 44dbc222-a897-4949-925e-7660e8964ccd
-ms.openlocfilehash: 19d1858d67802a7c464a9be783e4c1fb96fe3fae
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d2b39381610c51f661e98256c39b580df256ebaa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844485"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97218851"
 ---
 # <a name="standard-dialog-data-validation-routines"></a>표준 대화 상자 데이터 유효성 검사 루틴
 
@@ -40,7 +41,7 @@ ms.locfileid: "88844485"
 
 ## <a name="ddv_maxchars"></a><a name="ddv_maxchars"></a> DDV_MaxChars
 
-`DDV_MaxChars`를 호출 하 여 *값* 과 연결 된 컨트롤의 문자 크기가 *nchars*를 초과 하지 않는지 확인 합니다.
+`DDV_MaxChars`를 호출 하 여 *값* 과 연결 된 컨트롤의 문자 크기가 *nchars* 를 초과 하지 않는지 확인 합니다.
 
 ```cpp
 void AFXAPI DDV_MaxChars(
@@ -70,7 +71,7 @@ DDV에 대 한 자세한 내용은 [대화 상자 데이터 교환 및 유효성
 
 ## <a name="ddv_minmaxbyte"></a><a name="ddv_minmaxbyte"></a> DDV_MinMaxByte
 
-`DDV_MinMaxByte`을 호출 하 여 *값* 과 연결 된 컨트롤의 값이 *minval* 과 *maxval*사이에 있는지 확인 합니다.
+`DDV_MinMaxByte`을 호출 하 여 *값* 과 연결 된 컨트롤의 값이 *minval* 과 *maxval* 사이에 있는지 확인 합니다.
 
 ```cpp
 void AFXAPI DDV_MinMaxByte(
@@ -104,7 +105,7 @@ DDV에 대 한 자세한 내용은 [대화 상자 데이터 교환 및 유효성
 
 ## <a name="ddv_minmaxdatetime"></a><a name="ddv_minmaxdatetime"></a> DDV_MinMaxDateTime
 
-`DDV_MinMaxDateTime`을 호출 하 여 *refvalue* 와 연결 된 날짜 및 시간 선택 컨트롤 ( [CDateTimeCtrl](../../mfc/reference/cdatetimectrl-class.md))의 시간/날짜 값이 *refMinRange* 와 *refMaxRange*사이에 있는지 확인 합니다.
+`DDV_MinMaxDateTime`을 호출 하 여 *refvalue* 와 연결 된 날짜 및 시간 선택 컨트롤 ( [CDateTimeCtrl](../../mfc/reference/cdatetimectrl-class.md))의 시간/날짜 값이 *refMinRange* 와 *refMaxRange* 사이에 있는지 확인 합니다.
 
 ```cpp
 void AFXAPI DDV_MinMaxDateTime(
@@ -144,7 +145,7 @@ DDV에 대 한 자세한 내용은 [대화 상자 데이터 교환 및 유효성
 
 ## <a name="ddv_minmaxdouble"></a><a name="ddv_minmaxdouble"></a> DDV_MinMaxDouble
 
-`DDV_MinMaxDouble`을 호출 하 여 *값* 과 연결 된 컨트롤의 값이 *minval* 과 *maxval*사이에 있는지 확인 합니다.
+`DDV_MinMaxDouble`을 호출 하 여 *값* 과 연결 된 컨트롤의 값이 *minval* 과 *maxval* 사이에 있는지 확인 합니다.
 
 ```cpp
 void AFXAPI DDV_MinMaxDouble(
@@ -178,7 +179,7 @@ DDV에 대 한 자세한 내용은 [대화 상자 데이터 교환 및 유효성
 
 ## <a name="ddv_minmaxdword"></a><a name="ddv_minmaxdword"></a> DDV_MinMaxDWord
 
-`DDV_MinMaxDWord`을 호출 하 여 *값* 과 연결 된 컨트롤의 값이 *minval* 과 *maxval*사이에 있는지 확인 합니다.
+`DDV_MinMaxDWord`을 호출 하 여 *값* 과 연결 된 컨트롤의 값이 *minval* 과 *maxval* 사이에 있는지 확인 합니다.
 
 ```cpp
 void AFXAPI DDV_MinMaxDWord(
@@ -212,7 +213,7 @@ DDV에 대 한 자세한 내용은 [대화 상자 데이터 교환 및 유효성
 
 ## <a name="ddv_minmaxfloat"></a><a name="ddv_minmaxfloat"></a> DDV_MinMaxFloat
 
-`DDV_MinMaxFloat`을 호출 하 여 *값* 과 연결 된 컨트롤의 값이 *minval* 과 *maxval*사이에 있는지 확인 합니다.
+`DDV_MinMaxFloat`을 호출 하 여 *값* 과 연결 된 컨트롤의 값이 *minval* 과 *maxval* 사이에 있는지 확인 합니다.
 
 ```cpp
 void AFXAPI DDV_MinMaxFloat(
@@ -246,7 +247,7 @@ DDV에 대 한 자세한 내용은 [대화 상자 데이터 교환 및 유효성
 
 ## <a name="ddv_minmaxint"></a><a name="ddv_minmaxint"></a> DDV_MinMaxInt
 
-`DDV_MinMaxInt`을 호출 하 여 *값* 과 연결 된 컨트롤의 값이 *minval* 과 *maxval*사이에 있는지 확인 합니다.
+`DDV_MinMaxInt`을 호출 하 여 *값* 과 연결 된 컨트롤의 값이 *minval* 과 *maxval* 사이에 있는지 확인 합니다.
 
 ```cpp
 void AFXAPI DDV_MinMaxInt(
@@ -280,7 +281,7 @@ DDV에 대 한 자세한 내용은 [대화 상자 데이터 교환 및 유효성
 
 ## <a name="ddv_minmaxlong"></a><a name="ddv_minmaxlong"></a> DDV_MinMaxLong
 
-`DDV_MinMaxLong`을 호출 하 여 *값* 과 연결 된 컨트롤의 값이 *minval* 과 *maxval*사이에 있는지 확인 합니다.
+`DDV_MinMaxLong`을 호출 하 여 *값* 과 연결 된 컨트롤의 값이 *minval* 과 *maxval* 사이에 있는지 확인 합니다.
 
 ```cpp
 void AFXAPI DDV_MinMaxLong(
@@ -314,7 +315,7 @@ DDV에 대 한 자세한 내용은 [대화 상자 데이터 교환 및 유효성
 
 ## <a name="ddv_minmaxlonglong"></a><a name="ddv_minmaxlonglong"></a> DDV_MinMaxLongLong
 
-`DDV_MinMaxLongLong`을 호출 하 여 *값* 과 연결 된 컨트롤의 값이 *minval* 과 *maxval*사이에 있는지 확인 합니다.
+`DDV_MinMaxLongLong`을 호출 하 여 *값* 과 연결 된 컨트롤의 값이 *minval* 과 *maxval* 사이에 있는지 확인 합니다.
 
 ```cpp
 void AFXAPI DDV_MinMaxLongLong(
@@ -348,7 +349,7 @@ DDV에 대 한 자세한 내용은 [대화 상자 데이터 교환 및 유효성
 
 ## <a name="ddv_minmaxmonth"></a><a name="ddv_minmaxmonth"></a> DDV_MinMaxMonth
 
-`DDV_MinMaxMonth`을 호출 하 여 *refvalue* 와 연결 된 month Calendar 컨트롤 ( [cmonthcalctrl](../../mfc/reference/cmonthcalctrl-class.md))의 시간/날짜 값이 *refMinRange* 과 *refMaxRange*사이에 있는지 확인 합니다.
+`DDV_MinMaxMonth`을 호출 하 여 *refvalue* 와 연결 된 month Calendar 컨트롤 ( [cmonthcalctrl](../../mfc/reference/cmonthcalctrl-class.md))의 시간/날짜 값이 *refMinRange* 과 *refMaxRange* 사이에 있는지 확인 합니다.
 
 ```cpp
 void AFXAPI DDV_MinMaxMonth(
@@ -388,7 +389,7 @@ DDV에 대 한 자세한 내용은 [대화 상자 데이터 교환 및 유효성
 
 ## <a name="ddv_minmaxshort"></a><a name="ddv_minmaxshort"></a> DDV_MinMaxShort
 
-`DDV_MinMaxShort`을 호출 하 여 *값* 과 연결 된 컨트롤의 값이 *minval* 과 *maxval*사이에 있는지 확인 합니다.
+`DDV_MinMaxShort`을 호출 하 여 *값* 과 연결 된 컨트롤의 값이 *minval* 과 *maxval* 사이에 있는지 확인 합니다.
 
 ```cpp
 void AFXAPI DDV_MinMaxShort(
@@ -422,7 +423,7 @@ DDV에 대 한 자세한 내용은 [대화 상자 데이터 교환 및 유효성
 
 ## <a name="ddv_minmaxslider"></a><a name="ddv_minmaxslider"></a> DDV_MinMaxSlider
 
-`DDV_MinMaxSlider`을 호출 하 여 *값* 과 연결 된 컨트롤의 값이 *minval* 과 *maxval*사이에 있는지 확인 합니다.
+`DDV_MinMaxSlider`을 호출 하 여 *값* 과 연결 된 컨트롤의 값이 *minval* 과 *maxval* 사이에 있는지 확인 합니다.
 
 ```cpp
 void AFXAPI DDV_MinMaxSlider(
@@ -456,7 +457,7 @@ DDV에 대 한 자세한 내용은 [대화 상자 데이터 교환 및 유효성
 
 ## <a name="ddv_minmaxuint"></a><a name="ddv_minmaxuint"></a> DDV_MinMaxUInt
 
-`DDV_MinMaxUInt`을 호출 하 여 *값* 과 연결 된 컨트롤의 값이 *minval* 과 *maxval*사이에 있는지 확인 합니다.
+`DDV_MinMaxUInt`을 호출 하 여 *값* 과 연결 된 컨트롤의 값이 *minval* 과 *maxval* 사이에 있는지 확인 합니다.
 
 ```cpp
 void AFXAPI DDV_MinMaxUInt(
@@ -490,7 +491,7 @@ DDV에 대 한 자세한 내용은 [대화 상자 데이터 교환 및 유효성
 
 ## <a name="ddv_minmaxulonglong"></a><a name="ddv_minmaxulonglong"></a> DDV_MinMaxULongLong
 
-`DDV_MinMaxULongLong`을 호출 하 여 *값* 과 연결 된 컨트롤의 값이 *minval* 과 *maxval*사이에 있는지 확인 합니다.
+`DDV_MinMaxULongLong`을 호출 하 여 *값* 과 연결 된 컨트롤의 값이 *minval* 과 *maxval* 사이에 있는지 확인 합니다.
 
 ```cpp
 void AFXAPI DDV_MinMaxULongLong(
@@ -524,7 +525,7 @@ DDV에 대 한 자세한 내용은 [대화 상자 데이터 교환 및 유효성
 
 ## <a name="ddv_minmaxunsigned"></a>DDV_MinMaxUnsigned
 
-`DDV_MinMaxUnsigned`을 호출 하 여 *값* 과 연결 된 컨트롤의 값이 *minval* 과 *maxval*사이에 있는지 확인 합니다.
+`DDV_MinMaxUnsigned`을 호출 하 여 *값* 과 연결 된 컨트롤의 값이 *minval* 과 *maxval* 사이에 있는지 확인 합니다.
 
 ### <a name="syntax"></a>구문
 

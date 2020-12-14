@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 인터넷 URL 전역 및 도우미 구문 분석'
 title: 전역 및 도우미를 구문 분석 하는 인터넷 URL
 ms.date: 04/03/2017
 helpviewer_keywords:
 - parsing, URLs
 - URLs, parsing
 ms.assetid: 46c6384f-e4a6-4dbd-9196-219c19040ec5
-ms.openlocfilehash: c7ce6eeee6deb4537d09e102b925a742ada04650
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 4dca0946686759a3880c73aa425edcc724d8772d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837166"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219501"
 ---
 # <a name="internet-url-parsing-globals-and-helpers"></a>전역 및 도우미를 구문 분석 하는 인터넷 URL
 
@@ -109,7 +110,7 @@ URL 문자열을 구문 분석 하 고 서비스 및 해당 구성 요소의 형
 *Dwservicetype* = = #service
 
 > [!NOTE]
-> 이 함수를 호출 하려면 프로젝트에 AFXINET.H를 포함 해야 합니다. 넣기.
+> 이 함수를 호출 하려면 프로젝트에 AFXINET.H를 포함 해야 합니다.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -206,7 +207,7 @@ URL이 성공적으로 구문 분석 되 면 0이 아닌 값입니다. 그렇지
 URL 문자열을 구문 분석 하 고 서비스 및 해당 구성 요소의 유형과 사용자의 이름과 암호를 제공 합니다. 플래그는 안전 하지 않은 문자를 처리 하는 방법을 표시 합니다.
 
 > [!NOTE]
-> 이 함수를 호출 하려면 프로젝트에 AFXINET.H를 포함 해야 합니다. 넣기.
+> 이 함수를 호출 하려면 프로젝트에 AFXINET.H를 포함 해야 합니다.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -229,7 +230,7 @@ DWORD AFXAPI AfxGetInternetHandleType(  HINTERNET hQuery );
 
 ### <a name="return-value"></a>반환 값
 
-WININET에서 정의한 인터넷 서비스 유형입니다. 넣기. 이러한 인터넷 서비스 목록은 설명 섹션을 참조 하세요. 핸들이 NULL 이거나 인식 되지 않는 경우 함수는 AFX_INET_SERVICE_UNK을 반환 합니다.
+WININET에서 정의한 인터넷 서비스 유형입니다. 이러한 인터넷 서비스 목록은 설명 섹션을 참조 하세요. 핸들이 NULL 이거나 인식 되지 않는 경우 함수는 AFX_INET_SERVICE_UNK을 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -262,7 +263,7 @@ WININET에서 정의한 인터넷 서비스 유형입니다. 넣기. 이러한 �
 - INTERNET_HANDLE_TYPE_HTTP_REQUEST
 
 > [!NOTE]
-> 이 함수를 호출 하려면 프로젝트에 AFXINET.H를 포함 해야 합니다. 넣기.
+> 이 함수를 호출 하려면 프로젝트에 AFXINET.H를 포함 해야 합니다.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -291,7 +292,7 @@ WININET에서 정의한 인터넷 서비스 유형입니다. 넣기. 이러한 �
 운영 체제 오류 코드를 기반으로 원인을 결정 해야 합니다.
 
 > [!NOTE]
-> 이 함수를 호출 하려면 프로젝트에 AFXINET.H를 포함 해야 합니다. 넣기.
+> 이 함수를 호출 하려면 프로젝트에 AFXINET.H를 포함 해야 합니다.
 
 ### <a name="requirements"></a>요구 사항
 

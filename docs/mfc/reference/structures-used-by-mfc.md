@@ -1,16 +1,17 @@
 ---
+description: '자세히 알아보기: MFC에서 사용 하는 구조체'
 title: MFC에서 사용하는 구조체
 ms.date: 12/03/2018
 helpviewer_keywords:
 - structures
 - structures, MFC
 ms.assetid: 2168fcc6-e800-4814-aabf-0bca86ff790d
-ms.openlocfilehash: cce51a5bb9a2d63b09e3db1270a1b93bdc712bbe
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: fecf5312c155f8b113126a53b242663a4ec86301
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844472"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97218747"
 ---
 # <a name="structures-used-by-mfc"></a>MFC에서 사용하는 구조체
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 창 클래스 등록'
 title: 창 클래스 등록
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,27 +15,27 @@ helpviewer_keywords:
 - WinMain method [MFC]
 - registering window classes [MFC]
 ms.assetid: 30994bc4-a362-43da-bcc5-1bf67a3fc929
-ms.openlocfilehash: 7c459b909a60fff2b7aeded9ea8d79a39ced24e4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e31f83b691ad12d845afca6a3a5f18d9ba64b0e6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62309085"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97218194"
 ---
 # <a name="registering-window-classes"></a>창 클래스 등록
 
-"클래스"의 특성을 정의 하는 Windows에 대 한 일반적인 프로그래밍의 "classes" 창 (없습니다는 C++ 클래스)에서 임의 개수의 windows 만들 수 있습니다는. 이러한 종류의 클래스는 템플릿 또는 windows를 만들기 위한 모델.
+Windows 용 기존 프로그래밍의 "클래스" 창에서는 많은 수의 창을 만들 수 있는 "클래스" (c + + 클래스가 아님)의 특성을 정의 합니다. 이러한 종류의 클래스는 창을 만들기 위한 템플릿 또는 모델입니다.
 
-## <a name="window-class-registration-in-traditional-programs-for-windows"></a>Windows에 대 한 기존 프로그램에서 창 클래스 등록
+## <a name="window-class-registration-in-traditional-programs-for-windows"></a>Windows 용 기존 프로그램의 창 클래스 등록
 
-MFC 없이 Windows에 대 한 기존 프로그램에서 자체 "창 프로시저"에서 창에 모든 메시지를 처리 하거나 "`WndProc`." `WndProc` "창 클래스 등록" 프로세스를 사용 하 여 창에 연결 됩니다. 주 창에 등록 되는 `WinMain` 함수 하지만 windows의 다른 클래스에에서 등록할 수 있습니다 어디서 나 응용 프로그램입니다. 등록에 대 한 포인터를 포함 하는 구조에 따라 달라 집니다는 `WndProc` 배경 브러시 커서에 대 한 사양을 함께 함수 및 등입니다. 구조에 대 한 이전 호출에서 클래스의 문자열 이름 함께 매개 변수로 전달 되는 `RegisterClass` 함수입니다. 따라서 등록 클래스는 여러 windows에서 공유할 수 있습니다.
+MFC를 사용 하지 않고 Windows 용 기존 프로그램에서 "창 프로시저" 또는 ""의 창에 모든 메시지를 처리 `WndProc` 합니다. 는 `WndProc` "창 클래스 등록" 프로세스를 통해 창과 연결 됩니다. 주 창은 함수에 등록 `WinMain` 되지만 다른 windows 클래스는 응용 프로그램의 어느 위치에 나 등록할 수 있습니다. 등록은 `WndProc` 커서, 배경 브러시 등의 사양과 함께 함수에 대 한 포인터를 포함 하는 구조에 따라 달라 집니다. 구조체는 함수에 대 한 이전 호출에서 클래스의 문자열 이름과 함께 매개 변수로 전달 됩니다 `RegisterClass` . 따라서 여러 windows에서 등록 클래스를 공유할 수 있습니다.
 
 ## <a name="window-class-registration-in-mfc-programs"></a>MFC 프로그램의 창 클래스 등록
 
-반면, 대부분의 창 클래스 등록 작업은 MFC 프레임 워크 프로그램에서 자동으로 수행 됩니다. MFC를 사용 하는 경우 일반적으로 파생 되는 C++ 창 클래스는 보통을 사용 하 여 기존 라이브러리 클래스에서 C++ 클래스 상속에 대 한 구문입니다. 프레임 워크는 여전히 기존 사용 "등록 클래스" 하며 필요한 경우에 등록 하는 몇 표준 도구를 제공 합니다. 호출 하 여 추가 등록 클래스를 등록할 수 있습니다 합니다 [AfxRegisterWndClass](../mfc/reference/application-information-and-management.md#afxregisterwndclass) 전역 함수 및 등록 된 클래스를 전달 합니다 `Create` 멤버 함수 `CWnd`합니다. 여기에서 설명한 대로, 기존의 Windows에서 "등록 class"를 않습니다 혼동을 C++ 클래스.
+반면 대부분의 window 클래스 등록 활동은 MFC 프레임 워크 프로그램에서 자동으로 수행 됩니다. MFC를 사용 하는 경우 일반적으로 클래스 상속에 대 한 일반 c + + 구문을 사용 하 여 기존 라이브러리 클래스에서 c + + 창 클래스를 파생 시킵니다. 프레임 워크는 기존 "등록 클래스"를 계속 사용 하며, 필요할 때 사용자를 위해 등록 된 여러 표준 클래스를 제공 합니다. [AfxRegisterWndClass](../mfc/reference/application-information-and-management.md#afxregisterwndclass) global 함수를 호출 하 고 등록 된 클래스를의 멤버 함수에 전달 하 여 추가 등록 클래스를 등록할 수 있습니다 `Create` `CWnd` . 여기에 설명 된 대로 Windows의 기존 "등록 클래스"는 c + + 클래스와 혼동 하지 않습니다.
 
-자세한 내용은 [기술 참고 1](../mfc/tn001-window-class-registration.md)합니다.
+자세한 내용은 [Technical Note 1](../mfc/tn001-window-class-registration.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [창 만들기](../mfc/creating-windows.md)

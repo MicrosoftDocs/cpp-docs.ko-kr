@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 스핀 단추 스타일'
 title: 스핀 단추 스타일
 ms.date: 09/09/2019
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - styles [MFC], spin button control
 - spin button control, styles
 ms.assetid: fb4a7f6f-9182-47be-bccf-0728fdc5332f
-ms.openlocfilehash: 1aae4b7e4c63929ebe03c97d50f05754bc13ec26
-ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
+ms.openlocfilehash: c08c878843ba68a46727cc2c54034bb42e5e5d41
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70907853"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97216771"
 ---
 # <a name="spin-button-styles"></a>스핀 단추 스타일
 
@@ -29,13 +30,13 @@ ms.locfileid: "70907853"
 - **천 단위 없음** 는 버디 창의 캡션에 있는 값에 천 단위 구분 기호를 삽입 하지 않습니다. UDS_NOTHOUSANDS 스타일과 연결 됩니다.
 
     > [!NOTE]
-    >  DDX (대화 상자 데이터 교환)를 사용 하 여 버디 컨트롤에서 정수 값을 가져오려면이 스타일을 설정 합니다. `DDX_Text`포함 된 천 단위 구분 기호를 허용 하지 않습니다.
+    >  DDX (대화 상자 데이터 교환)를 사용 하 여 버디 컨트롤에서 정수 값을 가져오려면이 스타일을 설정 합니다. `DDX_Text` 포함 된 천 단위 구분 기호를 허용 하지 않습니다.
 
 - **줄 바꿈** 값이 컨트롤의 범위를 벗어나 증가 하거나 감소 하므로 위치가 "wrap"으로 설정 됩니다. UDS_WRAP 스타일과 연결 됩니다.
 
 - **화살표 키** 위쪽 화살표 및 아래쪽 화살표 키를 누를 때 스핀 단추가 위치를 증가 시키거나 감소 시킵니다. UDS_ARROWKEYS 스타일과 연결 됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [CSpinButtonCtrl 사용](../mfc/using-cspinbuttonctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)

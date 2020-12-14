@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 메시지 맵 매크로 (MFC)'
 title: 메시지 맵 매크로(MFC)
 ms.date: 03/27/2019
 f1_keywords:
@@ -28,18 +29,18 @@ helpviewer_keywords:
 - ranges, message map
 - message map ranges
 ms.assetid: 531b15ce-32b5-4ca0-a849-bb519616c731
-ms.openlocfilehash: 33b5d2eaefa11f9ccf6459aa05b4e24138731e80
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: ece09b915da9e6f88191e90056158be82651e9ff
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840273"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219397"
 ---
 # <a name="message-map-macros-mfc"></a>메시지 맵 매크로(MFC)
 
 메시지 맵을 지원 하기 위해 MFC는 다음 매크로를 제공 합니다.
 
-### <a name="message-map-declaration-and-demarcation-macros"></a>메시지 맵 선언 및 경계 매크로
+### <a name="message-map-declaration-and-demarcation-macros"></a>Message-Map 선언 및 경계 매크로
 
 |Name|설명|
 |-|-|
@@ -48,7 +49,7 @@ ms.locfileid: "88840273"
 |[BEGIN_TEMPLATE_MESSAGE_MAP](#begin_template_message_map)|단일 템플릿 인수를 포함 하는 클래스 형식에 대 한 메시지 맵의 정의를 시작 합니다. |
 |[END_MESSAGE_MAP](#end_message_map)|메시지 맵의 정의를 끝냅니다 (클래스 구현에서 사용 되어야 함).|
 
-### <a name="message-mapping-macros"></a>메시지 매핑 매크로
+### <a name="message-mapping-macros"></a>Message-Mapping 매크로
 
 |Name|설명|
 |-|-|
@@ -62,7 +63,7 @@ ms.locfileid: "88840273"
 |[ON_THREAD_MESSAGE](#on_thread_message)|클래스가 있을 때 사용자 정의 메시지를 처리할 함수를 나타냅니다 `CWinThread` .|
 |[ON_UPDATE_COMMAND_UI](#on_update_command_ui)|지정 된 사용자 인터페이스 업데이트 명령 메시지를 처리할 함수를 나타냅니다.|
 
-### <a name="message-map-range-macros"></a>메시지 맵 범위 매크로
+### <a name="message-map-range-macros"></a>Message-Map 범위 매크로
 
 |Name|설명|
 |-|-|
@@ -70,7 +71,7 @@ ms.locfileid: "88840273"
 |[ON_UPDATE_COMMAND_UI_RANGE](#on_update_command_ui_range)|매크로에 대 한 처음 두 매개 변수에 지정 된 명령 Id의 범위를 처리 하는 업데이트 처리기를 나타냅니다.|
 |[ON_CONTROL_RANGE](#on_control_range)|매크로에 대 한 두 번째 및 세 번째 매개 변수에 지정 된 컨트롤 Id 범위에서 알림을 처리할 함수를 나타냅니다. 첫 번째 매개 변수는 BN_CLICKED와 같은 컨트롤 알림 메시지입니다.|
 
-메시지 맵, 메시지 맵 선언 및 경계 매크로 및 메시지 매핑 매크로에 대 한 자세한 내용은 [메시지 맵](../../mfc/reference/message-maps-mfc.md) 및 [메시지 처리 및 매핑 항목](../../mfc/message-handling-and-mapping.md)을 참조 하세요. 메시지 맵 범위에 대 한 자세한 내용은 [메시지 맵 범위에 대 한 처리기](../../mfc/handlers-for-message-map-ranges.md)를 참조 하세요.
+메시지 맵, 메시지 맵 선언 및 경계 매크로 및 메시지 매핑 매크로에 대 한 자세한 내용은 [메시지 맵](../../mfc/reference/message-maps-mfc.md) 및 [메시지 처리 및 매핑 항목](../../mfc/message-handling-and-mapping.md)을 참조 하세요. 메시지 맵 범위에 대 한 자세한 내용은 [Message-Map 범위에 대 한 처리기](../../mfc/handlers-for-message-map-ranges.md)를 참조 하세요.
 
 ## <a name="begin_message_map"></a><a name="begin_message_map"></a> BEGIN_MESSAGE_MAP
 
@@ -88,7 +89,7 @@ BEGIN_MESSAGE_MAP( theClass, baseClass )
 메시지 맵이 있는 클래스의 이름을 지정 합니다.
 
 *baseClass*<br/>
-*Theclass*의 기본 클래스 이름을 지정 합니다.
+*Theclass* 의 기본 클래스 이름을 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -127,7 +128,7 @@ BEGIN_TEMPLATE_MESSAGE_MAP( theClass, type_name, baseClass )
 클래스에 대해 지정 된 템플릿 매개 변수의 이름입니다.
 
 *baseClass*<br/>
-*Theclass*의 기본 클래스 이름을 지정 합니다.
+*Theclass* 의 기본 클래스 이름을 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -619,9 +620,9 @@ ON_COMMAND_RANGE( id1, id2, memberFxn )
 
 ### <a name="remarks"></a>설명
 
-Id의 범위는 *id1* 로 시작 하 고 *id2*로 끝납니다.
+Id의 범위는 *id1* 로 시작 하 고 *id2* 로 끝납니다.
 
-ON_COMMAND_RANGE를 사용 하 여 일련의 명령 Id를 하나의 멤버 함수에 매핑할 수 있습니다. [ON_COMMAND](#on_command) 를 사용 하 여 단일 명령을 멤버 함수에 매핑할 수 있습니다. 하나의 메시지 맵 항목만 지정 된 명령 ID와 일치할 수 있습니다. 즉, 명령을 둘 이상의 처리기에 매핑할 수 없습니다. 메시지 범위 매핑에 대 한 자세한 내용은 [메시지 맵 범위에 대 한 처리기](../../mfc/handlers-for-message-map-ranges.md)를 참조 하세요.
+ON_COMMAND_RANGE를 사용 하 여 일련의 명령 Id를 하나의 멤버 함수에 매핑할 수 있습니다. [ON_COMMAND](#on_command) 를 사용 하 여 단일 명령을 멤버 함수에 매핑할 수 있습니다. 하나의 메시지 맵 항목만 지정 된 명령 ID와 일치할 수 있습니다. 즉, 명령을 둘 이상의 처리기에 매핑할 수 없습니다. 메시지 범위 매핑에 대 한 자세한 내용은 [Message-Map 범위에 대 한 처리기](../../mfc/handlers-for-message-map-ranges.md)를 참조 하세요.
 
 메시지 맵 범위에 대 한 자동 지원은 없으므로 매크로를 직접 입력 해야 합니다.
 
@@ -674,7 +675,7 @@ ON_UPDATE_COMMAND_UI_RANGE( id1, id2, memberFxn )
 
 ### <a name="remarks"></a>설명
 
-메시지 처리기 업데이트 명령과 연결 된 메뉴 항목 및 도구 모음 단추의 상태를 업데이트 합니다. Id의 범위는 *id1* 로 시작 하 고 *id2*로 끝납니다.
+메시지 처리기 업데이트 명령과 연결 된 메뉴 항목 및 도구 모음 단추의 상태를 업데이트 합니다. Id의 범위는 *id1* 로 시작 하 고 *id2* 로 끝납니다.
 
 메시지 맵 범위에 대 한 자동 지원은 없으므로 매크로를 직접 입력 해야 합니다.
 
@@ -708,11 +709,11 @@ ON_CONTROL_RANGE( wNotifyCode, id1, id2, memberFxn )
 
 ### <a name="remarks"></a>설명
 
-Id의 범위는 *id1* 로 시작 하 고 *id2*로 끝납니다. 매핑된 컨트롤에서 들어오는 지정 된 알림에 대해 처리기가 호출 됩니다.
+Id의 범위는 *id1* 로 시작 하 고 *id2* 로 끝납니다. 매핑된 컨트롤에서 들어오는 지정 된 알림에 대해 처리기가 호출 됩니다.
 
 메시지 맵 범위에 대 한 자동 지원은 없으므로 매크로를 직접 입력 해야 합니다.
 
-컨트롤 Id 범위에 대 한 처리기 함수를 구현 하는 방법에 대 한 자세한 내용은 [메시지 맵 범위에 대 한 처리기](../../mfc/handlers-for-message-map-ranges.md)를 참조 하세요.
+컨트롤 Id 범위에 대 한 처리기 함수를 구현 하는 방법에 대 한 자세한 내용은 [Message-Map 범위에 대 한 처리기](../../mfc/handlers-for-message-map-ranges.md)를 참조 하세요.
 
 ### <a name="requirements"></a>요구 사항
 

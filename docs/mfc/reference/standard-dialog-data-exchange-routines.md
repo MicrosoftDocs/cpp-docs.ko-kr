@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 표준 대화 상자 데이터 교환 루틴'
 title: 표준 대화 상자 데이터 교환 루틴
 ms.date: 11/04/2016
 helpviewer_keywords:
 - standard dialog, data exchange routines
 ms.assetid: c6adb7f3-f9af-4cc5-a9ea-315c5b60ad1a
-ms.openlocfilehash: bed60094b25bcc3b1994aa904a8c20324be2abae
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f1d5cb0726168b90e0ba2a7891ce0ffa55b73f10
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844498"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97218864"
 ---
 # <a name="standard-dialog-data-exchange-routines"></a>표준 대화 상자 데이터 교환 루틴
 
@@ -175,7 +176,7 @@ DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 
 
 ## <a name="ddx_control"></a><a name="ddx_control"></a> DDX_Control
 
-`DDX_Control`함수는 대화 상자, 폼 뷰 또는 컨트롤 뷰 개체의 *nidc*에 의해 지정 된 컨트롤을 하위 클래스로 지정 합니다.
+`DDX_Control`함수는 대화 상자, 폼 뷰 또는 컨트롤 뷰 개체의 *nidc* 에 의해 지정 된 컨트롤을 하위 클래스로 지정 합니다.
 
 ```cpp
 void AFXAPI DDX_Control(
@@ -239,7 +240,7 @@ void AFXAPI DDX_DateTimeCtrl(
 
 ### <a name="remarks"></a>설명
 
-`DDX_DateTimeCtrl`가 호출 되 면 *값* 이 날짜 및 시간 선택 컨트롤의 현재 상태로 설정 되거나 exchange의 방향에 따라 컨트롤이 *값*으로 설정 됩니다.
+`DDX_DateTimeCtrl`가 호출 되 면 *값* 이 날짜 및 시간 선택 컨트롤의 현재 상태로 설정 되거나 exchange의 방향에 따라 컨트롤이 *값* 으로 설정 됩니다.
 
 위의 세 번째 버전에서는 `DDX_DateTimeCtrl` `CString` 컨트롤 뷰 개체의 날짜/시간 컨트롤과 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 데이터 멤버 간의 데이터 전송을 관리 합니다. 문자열은 날짜 및 시간 형식을 지정 하기 위해 현재 로캘의 규칙을 사용 하 여 형식이 지정 됩니다.
 
@@ -571,7 +572,7 @@ DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 
 
 ## <a name="ddx_text"></a><a name="ddx_text"></a> DDX_Text
 
-함수는 대화 상자, `DDX_Text` **`int`** **UINT** **`long`** `CString` **`float`** **`double`** 폼 뷰 또는 컨트롤 뷰의 편집 컨트롤과 대화 상자, 폼 뷰 또는 컨트롤 뷰 개체의 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 데이터 멤버 사이에서, UINT,, DWORD,, 또는 데이터의 전송을 관리 합니다.
+함수는 대화 상자, `DDX_Text` **`int`**  **`long`** `CString` **`float`** **`double`** 폼 뷰 또는 컨트롤 뷰의 편집 컨트롤과 대화 상자, 폼 뷰 또는 컨트롤 뷰 개체의 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 데이터 멤버 사이에서, UINT,, DWORD,, 또는 데이터의 전송을 관리 합니다.
 
 ```cpp
 void AFXAPI DDX_Text(

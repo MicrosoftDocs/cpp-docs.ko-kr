@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: IView 인터페이스'
 title: IView 인터페이스
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - IView class [MFC]
 - views [MFC], classes
 ms.assetid: 9321f299-486e-4551-bee9-d2c4a7b91548
-ms.openlocfilehash: 9233ee5a8330c4b2c79ebc7b79e0616612c00204
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: e0229d61d12638935d7e4d928626a4bd7f5a830a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90743427"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219449"
 ---
 # <a name="iview-interface"></a>IView 인터페이스
 
@@ -33,7 +34,7 @@ interface class IView
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[IView:: OnActivateView](#onactivateview)|뷰가 활성화 또는 비활성화 될 때 MFC에서 호출 됩니다.|
 |[IView:: OnInitialUpdate](#oninitialupdate)|뷰가 문서에 처음 연결 된 후 뷰가 처음 표시 되기 전에 프레임 워크에서 호출 됩니다.|
@@ -61,7 +62,7 @@ void OnActivateView(bool activate);
 
 ## <a name="parameters"></a>매개 변수
 
-*활성화*<br/>
+*제품*<br/>
 뷰가 활성화 또는 비활성화 되는지 여부를 나타냅니다.
 
 ## <a name="iviewoninitialupdate"></a><a name="oninitialupdate"></a> IView:: OnInitialUpdate
@@ -84,7 +85,7 @@ void OnUpdate();
 
 이 함수를 사용 하면 뷰가 수정을 반영 하도록 표시를 업데이트할 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [CWinFormsView 클래스](../../mfc/reference/cwinformsview-class.md)<br/>
 [CView 클래스](../../mfc/reference/cview-class.md)

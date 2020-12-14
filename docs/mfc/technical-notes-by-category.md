@@ -1,13 +1,14 @@
 ---
+description: '자세히 알아보기: 범주별 기술 참고 사항'
 title: 범주별 기술 참고 사항
 ms.date: 11/04/2016
 ms.assetid: b9f1c953-233d-4d64-9e8e-ca69b79460b8
-ms.openlocfilehash: 4f12946efdb57293038e59c078a68b2614b05ba7
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 4787b73c9a9039336beba709aa7ddb5aaf761f65
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041850"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97216342"
 ---
 # <a name="technical-notes-by-category"></a>범주별 기술 참고 사항
 
@@ -70,20 +71,20 @@ ms.locfileid: "90041850"
 
 [TN038: MFC/OLE IUnknown 구현](../mfc/tn038-mfc-ole-iunknown-implementation.md)\
 [TN039: MFC/OLE 자동화 구현](../mfc/tn039-mfc-ole-automation-implementation.md)\
-[TN040: MFC/OLE 내부 크기 조정 및 확대/축소](../mfc/tn040-mfc-ole-in-place-resizing-and-zooming.md)\
+[TN040: MFC/OLE In-Place 크기 조정 및 확대/축소](../mfc/tn040-mfc-ole-in-place-resizing-and-zooming.md)\
 [TN041: mfc/OLE2에 대 한 MFC/OLE1 마이그레이션](../mfc/tn041-mfc-ole1-migration-to-mfc-ole-2.md)\
 [TN049: MFC/OLE MBCS에서 유니코드로의 변환 계층 (MFCANS32)](../mfc/tn049-mfc-ole-mbcs-to-unicode-translation-layer-mfcans32.md)\
 [TN050: MFC/OLE 일반 대화 상자 (MFCUIx32)](../mfc/tn050-mfc-ole-common-dialogs-mfcuix32.md)\
-[TN064: OLE 컨트롤의 아파트 모델 스레딩](../mfc/tn064-apartment-model-threading-in-activex-controls.md)\
-[TN065: OLE 자동화 서버에 대 한 이중 인터페이스 지원](../mfc/tn065-dual-interface-support-for-ole-automation-servers.md)\
+[TN064: OLE 컨트롤의 Apartment-Model 스레딩](../mfc/tn064-apartment-model-threading-in-activex-controls.md)\
+[TN065: OLE 자동화 서버에 대 한 Dual-Interface 지원](../mfc/tn065-dual-interface-support-for-ole-automation-servers.md)\
 [TN071: MFC IOleCommandTarget 구현](../mfc/tn071-mfc-iolecommandtarget-implementation.md)
 
 ### <a name="mfc-resources"></a>MFC 리소스
 
 [TN020: ID 명명 및 번호 매기기 규칙](../mfc/tn020-id-naming-and-numbering-conventions.md)\
 [TN023: 표준 MFC 리소스](../mfc/tn023-standard-mfc-resources.md)\
-[TN024: MFC에서 정의한 메시지 및 리소스](../mfc/tn024-mfc-defined-messages-and-resources.md)\
-[TN028: 상황에 맞는 도움말 지원](../mfc/tn028-context-sensitive-help-support.md)\
+[TN024: MFC-Defined 메시지 및 리소스](../mfc/tn024-mfc-defined-messages-and-resources.md)\
+[TN028: Context-Sensitive 도움말 지원](../mfc/tn028-context-sensitive-help-support.md)\
 [TN035: Visual C++에서 여러 리소스 파일 및 헤더 파일 사용](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md)\
 [TN036: 응용 프로그램 마법사 및 클래스 마법사에서 CFormView 사용](../mfc/tn036-using-cformview-with-appwizard-and-classwizard.md)\
 [TN070: MFC 창 클래스 이름](../mfc/tn070-mfc-window-class-names.md)

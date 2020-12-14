@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: OLE 컨트롤 등록'
 title: OLE 컨트롤 등록
 ms.date: 11/04/2016
 helpviewer_keywords:
 - registering OLE controls
 - OLE controls [MFC], registering
 ms.assetid: 73c45b7f-7dbc-43f5-bd17-dd77c6acec72
-ms.openlocfilehash: 5468f3d4b730cc0b81a6ab814d495b061d292f20
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 2556d67e509f7c4217a726ed097bbb69788af7fb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843575"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97218929"
 ---
 # <a name="registering-ole-controls"></a>OLE 컨트롤 등록
 
@@ -77,7 +78,7 @@ BOOL AFXAPI AfxOleRegisterControlClass(
    두 플래그를 결합 하 `afxRegApartmentThreading` 고 `afxRegFreeThreading` ThreadingModel =를 설정할 수 있습니다. 스레딩 모델 등록에 대 한 자세한 내용은 Windows SDK의 [InprocServer32](/windows/win32/com/inprocserver32) 를 참조 하세요.
 
 > [!NOTE]
-> MFC 4.2 이전 MFC 버전에서 **`int`** *nregflags* 매개 변수는 개체 삽입 대화 상자에서 삽입할 컨트롤을 허용 하거나 허용 하지 않는 부울 매개 변수 *binsertable*입니다.
+> MFC 4.2 이전 MFC 버전에서 **`int`** *nregflags* 매개 변수는 개체 삽입 대화 상자에서 삽입할 컨트롤을 허용 하거나 허용 하지 않는 부울 매개 변수 *binsertable* 입니다.
 
 *dwMiscStatus*<br/>
 다음 상태 플래그 중 하나 이상을 포함 합니다. 플래그에 대 한 설명은 Windows SDK에서 OLEMISC 열거를 참조 하세요.

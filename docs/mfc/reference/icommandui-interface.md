@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: ICommandUI 인터페이스'
 title: ICommandUI 인터페이스
 ms.date: 09/07/2019
 f1_keywords:
@@ -14,12 +15,12 @@ f1_keywords:
 helpviewer_keywords:
 - ICommandUI interface [MFC]
 ms.assetid: 134afe8d-dcdf-47ca-857a-a166a6b665dd
-ms.openlocfilehash: 0c185e873f526403e86cb5a80f6e0631f8654284
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 26ddd4366994c9e0cecba2b4902a36e1038896c2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90743440"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219540"
 ---
 # <a name="icommandui-interface"></a>ICommandUI 인터페이스
 
@@ -35,7 +36,7 @@ interface class ICommandUI
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[icommandui__Check](#check)|이 명령에 대 한 사용자 인터페이스 항목을 적절 한 검사 상태로 설정 합니다.|
 |[ICommandUI::ContinueRouting](#continuerouting)|현재 메시지를 처리기 체인으로 계속 라우팅하는 명령 라우팅 메커니즘에 지시 합니다.|
@@ -47,7 +48,7 @@ interface class ICommandUI
 
 ### <a name="remarks"></a>설명
 
-이 인터페이스는 사용자 인터페이스 명령을 관리 하는 메서드와 속성을 제공 합니다. `ICommandUI`는 [CCmdUI Class](../../mfc/reference/ccmdui-class.md) `ICommandUI` .net 구성 요소와 상호 운용 되는 MFC 응용 프로그램에 사용 된다는 점을 제외 하 고는 CCmdUI 클래스와 유사 합니다.
+이 인터페이스는 사용자 인터페이스 명령을 관리 하는 메서드와 속성을 제공 합니다. `ICommandUI`는 [](../../mfc/reference/ccmdui-class.md) `ICommandUI` .net 구성 요소와 상호 운용 되는 MFC 응용 프로그램에 사용 된다는 점을 제외 하 고는 CCmdUI 클래스와 유사 합니다.
 
 `ICommandUI` 는 [ICommandTarget](../../mfc/reference/icommandtarget-interface.md)파생 클래스의 ON_UPDATE_COMMAND_UI 처리기 내에서 사용 됩니다. 응용 프로그램의 사용자가 메뉴를 활성화 (선택 또는 클릭) 하면 각 메뉴 항목이 사용 또는 사용 안 함으로 표시 됩니다. 각 메뉴 명령의 대상은 ON_UPDATE_COMMAND_UI 처리기를 구현 하 여이 정보를 제공 합니다. 응용 프로그램의 각 명령 사용자 인터페이스 개체에 대해 [클래스 마법사](mfc-class-wizard.md) 를 사용 하 여 각 처리기에 대 한 메시지 맵 항목 및 함수 프로토타입을 만듭니다.
 
@@ -149,6 +150,6 @@ property String^ Text;
 
 **헤더:** afxwinforms (어셈블리 atlmfc\lib\mfcmifc80.dll에 정의 됨)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [CCmdUI 클래스](../../mfc/reference/ccmdui-class.md)
