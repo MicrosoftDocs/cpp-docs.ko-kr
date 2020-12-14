@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 대화 상자'
 title: 대화 상자
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - CDialog class [MFC], MFC dialog boxes
 - MFC dialog boxes
 ms.assetid: e4feea1a-8360-4ccb-9b84-507f1ccd9ef3
-ms.openlocfilehash: da6a2eca7c2366e519b9bf2e809b042dc3ee2e50
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 4ae034c1eaf6d0cf1842218ecb09a96cd35e3ffc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616866"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97261452"
 ---
 # <a name="dialog-boxes"></a>대화 상자
 
@@ -35,7 +36,7 @@ Windows 용 응용 프로그램은 대화 상자를 통해 사용자와 통신 �
 
 - [예: 메뉴 명령을 통해 대화 상자 표시](example-displaying-a-dialog-box-via-a-menu-command.md)
 
-- [프레임 워크의 대화 상자 구성 요소](dialog-box-components-in-the-framework.md)
+- [프레임워크의 대화 상자 구성 요소](dialog-box-components-in-the-framework.md)
 
 - [모달 및 모덜리스 대화 상자](modal-and-modeless-dialog-boxes.md)
 
@@ -53,9 +54,9 @@ Windows 용 응용 프로그램은 대화 상자를 통해 사용자와 통신 �
 
 - [클래스에 Windows 메시지 매핑](mapping-windows-messages-to-your-class.md)
 
-- [일반적으로 재정의되는 멤버 함수](commonly-overridden-member-functions.md)
+- [일반적으로 재정의 되는 멤버 함수](commonly-overridden-member-functions.md)
 
-- [일반적으로 추가되는 멤버 함수](commonly-added-member-functions.md)
+- [일반적으로 추가 되는 멤버 함수](commonly-added-member-functions.md)
 
 - [일반 대화 상자 클래스](common-dialog-classes.md)
 

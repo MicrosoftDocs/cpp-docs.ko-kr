@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 대화 상자 데이터 교환 및 유효성 검사'
 title: 대화 상자 데이터 교환 및 유효성 검사
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - dialog boxes [MFC], retrieving data
 - retrieving dialog box data
 ms.assetid: 7d373554-7330-43ae-abf1-4bb14e437b4a
-ms.openlocfilehash: 9e4b203a5f7ae452d4d81e52a50b2004baa6ea7c
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 4b905fc0d9c28ad65ac84047005d25914c5eb818
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91507028"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97261439"
 ---
 # <a name="dialog-data-exchange-and-validation"></a>대화 상자 데이터 교환 및 유효성 검사
 

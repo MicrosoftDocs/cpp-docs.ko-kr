@@ -1,16 +1,17 @@
 ---
+description: '자세히 알아보기: CObject에서 새 클래스를 파생 시켜야 하나요?'
 title: CObject에서 새 클래스를 파생시켜야 합니까?
 ms.date: 11/04/2016
 helpviewer_keywords:
 - derived classes [MFC], from CObject
 - CObject class [MFC], when to use
 ms.assetid: 26021031-feaf-424c-80d1-9547c4409d6a
-ms.openlocfilehash: 371ede0f0921182c066b4cb224e66b18eb6f1208
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: d37570cb62f1ee274e4cea85fc95a9221c95fd8a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616736"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97261309"
 ---
 # <a name="do-i-have-to-derive-new-classes-from-cobject"></a>CObject에서 새 클래스를 파생시켜야 합니까?
 
