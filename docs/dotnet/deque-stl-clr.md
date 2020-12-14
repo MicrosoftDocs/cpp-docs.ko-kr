@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: deque (STL/CLR)'
 title: deque(STL/CLR)
 ms.date: 11/04/2016
 ms.topic: reference
@@ -98,12 +99,12 @@ helpviewer_keywords:
 - operator> member [STL/CLR]
 - operator>= member [STL/CLR]
 ms.assetid: dd669da3-3c0e-45e9-8596-f6b483720941
-ms.openlocfilehash: 75c83240b9125628fd5121368af547a5266bfb5c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 98ad68c3220424a30b6cc75363e5ff92fbc0f965
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221499"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97252209"
 ---
 # <a name="deque-stlclr"></a>deque(STL/CLR)
 
@@ -225,7 +226,7 @@ Deque iterator는 지정 된 요소에 대 한 바이어스와 함께 연결 된
 
 ## <a name="members"></a>멤버
 
-## <a name="dequeassign-stlclr"></a><a name="assign"></a>deque:: assign (STL/CLR)
+## <a name="dequeassign-stlclr"></a><a name="assign"></a> deque:: assign (STL/CLR)
 
 모든 요소를 바꿉니다.
 
@@ -257,11 +258,11 @@ void assign(System::Collections::Generic::IEnumerable<Value>^ right);
 
 ### <a name="remarks"></a>설명
 
-첫 번째 멤버 함수는 제어 되는 시퀀스를 값 *val*의 *count* 요소 반복으로 바꿉니다. 이를 사용 하 여 동일한 값을 갖는 요소로 컨테이너를 채웁니다.
+첫 번째 멤버 함수는 제어 되는 시퀀스를 값 *val* 의 *count* 요소 반복으로 바꿉니다. 이를 사용 하 여 동일한 값을 갖는 요소로 컨테이너를 채웁니다.
 
 `InIt`가 정수 형식이 면 두 번째 멤버 함수는와 동일 하 게 동작 합니다 `assign((size_type)first, (value_type)last)` . 그렇지 않으면 제어 되는 시퀀스를 [ `first` ,) 시퀀스로 바꿉니다 `last` . 이를 사용 하 여 제어 되는 시퀀스를 다른 시퀀스로 복사 합니다.
 
-세 번째 멤버 함수는 제어 되는 시퀀스를 열거자 *오른쪽*으로 지정 된 시퀀스로 바꿉니다. 이를 사용 하 여 제어 되는 시퀀스를 열거자에서 설명 하는 시퀀스의 복사본으로 만듭니다.
+세 번째 멤버 함수는 제어 되는 시퀀스를 열거자 *오른쪽* 으로 지정 된 시퀀스로 바꿉니다. 이를 사용 하 여 제어 되는 시퀀스를 열거자에서 설명 하는 시퀀스의 복사본으로 만듭니다.
 
 ### <a name="example"></a>예제
 
@@ -306,7 +307,7 @@ a b
 a b c
 ```
 
-## <a name="dequeat-stlclr"></a><a name="at"></a>deque:: at (STL/CLR)
+## <a name="dequeat-stlclr"></a><a name="at"></a> deque:: at (STL/CLR)
 
 지정된 위치에 있는 요소에 액세스합니다.
 
@@ -323,7 +324,7 @@ reference at(size_type pos);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 위치 *pos*에서 제어 되는 시퀀스의 요소에 대 한 참조를 반환 합니다. 이를 사용 하 여 위치를 알고 있는 요소를 읽거나 쓸 수 있습니다.
+멤버 함수는 위치 *pos* 에서 제어 되는 시퀀스의 요소에 대 한 참조를 반환 합니다. 이를 사용 하 여 위치를 알고 있는 요소를 읽거나 쓸 수 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -358,7 +359,7 @@ a b c
 a x c
 ```
 
-## <a name="dequeback-stlclr"></a><a name="back"></a>deque:: back (STL/CLR)
+## <a name="dequeback-stlclr"></a><a name="back"></a> deque:: back (STL/CLR)
 
 마지막 요소에 액세스합니다.
 
@@ -409,7 +410,7 @@ back() = c
 a b x
 ```
 
-## <a name="dequeback_item-stlclr"></a><a name="back_item"></a>deque:: back_item (STL/CLR)
+## <a name="dequeback_item-stlclr"></a><a name="back_item"></a> deque:: back_item (STL/CLR)
 
 마지막 요소에 액세스합니다.
 
@@ -460,7 +461,7 @@ back_item = c
 a b x
 ```
 
-## <a name="dequebegin-stlclr"></a><a name="begin"></a>deque:: begin (STL/CLR)
+## <a name="dequebegin-stlclr"></a><a name="begin"></a> deque:: begin (STL/CLR)
 
 제어되는 시퀀스의 시작을 지정합니다.
 
@@ -515,7 +516,7 @@ a b c
 x y c
 ```
 
-## <a name="dequeclear-stlclr"></a><a name="clear"></a>deque:: clear (STL/CLR)
+## <a name="dequeclear-stlclr"></a><a name="clear"></a> deque:: clear (STL/CLR)
 
 모든 요소를 제거합니다.
 
@@ -572,7 +573,7 @@ a b
 size() = 0
 ```
 
-## <a name="dequeconst_iterator-stlclr"></a><a name="const_iterator"></a>deque:: const_iterator (STL/CLR)
+## <a name="dequeconst_iterator-stlclr"></a><a name="const_iterator"></a> deque:: const_iterator (STL/CLR)
 
 제어되는 시퀀스에 대한 상수 반복기의 형식입니다.
 
@@ -613,7 +614,7 @@ int main()
 a b c
 ```
 
-## <a name="dequeconst_reference-stlclr"></a><a name="const_reference"></a>deque:: const_reference (STL/CLR)
+## <a name="dequeconst_reference-stlclr"></a><a name="const_reference"></a> deque:: const_reference (STL/CLR)
 
 요소에 대한 상수 참조의 형식입니다.
 
@@ -657,7 +658,7 @@ int main()
 a b c
 ```
 
-## <a name="dequeconst_reverse_iterator-stlclr"></a><a name="const_reverse_iterator"></a>deque:: const_reverse_iterator (STL/CLR)
+## <a name="dequeconst_reverse_iterator-stlclr"></a><a name="const_reverse_iterator"></a> deque:: const_reverse_iterator (STL/CLR)
 
 제어 되는 시퀀스에 대 한 상수 역방향 반복기의 형식입니다.
 
@@ -699,7 +700,7 @@ int main()
 c b a
 ```
 
-## <a name="dequedeque-stlclr"></a><a name="deque"></a>deque::d (STL/CLR)
+## <a name="dequedeque-stlclr"></a><a name="deque"></a> deque::d (STL/CLR)
 
 컨테이너 개체를 만듭니다.
 
@@ -745,7 +746,7 @@ deque(System::Collections::Generic::IEnumerable<Value>^ right);
 
 `deque(deque<Value>% right);`
 
-시퀀스 [,)를 사용 하 여 제어 되는 시퀀스를 초기화 `right.begin()` `right.end()` 합니다. 이를 사용 하 여 deque 개체 *오른쪽*에 의해 제어 되는 시퀀스의 복사본 인 초기 제어 되는 시퀀스를 지정 합니다. 반복기에 대 한 자세한 내용은 [deque:: begin (stl/clr)](#begin) 및 [deque:: end (stl/clr)](#end)를 참조 하세요.
+시퀀스 [,)를 사용 하 여 제어 되는 시퀀스를 초기화 `right.begin()` `right.end()` 합니다. 이를 사용 하 여 deque 개체 *오른쪽* 에 의해 제어 되는 시퀀스의 복사본 인 초기 제어 되는 시퀀스를 지정 합니다. 반복기에 대 한 자세한 내용은 [deque:: begin (stl/clr)](#begin) 및 [deque:: end (stl/clr)](#end)를 참조 하세요.
 
 생성자는 다음과 같습니다.
 
@@ -763,7 +764,7 @@ deque(System::Collections::Generic::IEnumerable<Value>^ right);
 
 `deque(size_type count, value_type val);`
 
-각 값이 *val*인 *count* 요소를 사용 하 여 제어 되는 시퀀스를 초기화 합니다. 이를 사용 하 여 동일한 값을 갖는 요소로 컨테이너를 채웁니다.
+각 값이 *val* 인 *count* 요소를 사용 하 여 제어 되는 시퀀스를 초기화 합니다. 이를 사용 하 여 동일한 값을 갖는 요소로 컨테이너를 채웁니다.
 
 생성자는 다음과 같습니다.
 
@@ -777,7 +778,7 @@ deque(System::Collections::Generic::IEnumerable<Value>^ right);
 
 `deque(System::Collections::Generic::IEnumerable<Value>^ right);`
 
-열거자 *권한*으로 지정 된 시퀀스를 사용 하 여 제어 되는 시퀀스를 초기화 합니다. 이를 사용 하 여 제어 되는 시퀀스를 열거자에서 설명한 다른 시퀀스의 복사본으로 만듭니다.
+열거자 *권한* 으로 지정 된 시퀀스를 사용 하 여 제어 되는 시퀀스를 초기화 합니다. 이를 사용 하 여 제어 되는 시퀀스를 열거자에서 설명한 다른 시퀀스의 복사본으로 만듭니다.
 
 ### <a name="example"></a>예제
 
@@ -844,7 +845,7 @@ x x x x x x
 x x x x x x
 ```
 
-## <a name="dequedifference_type-stlclr"></a><a name="difference_type"></a>deque::d ifference_type (STL/CLR)
+## <a name="dequedifference_type-stlclr"></a><a name="difference_type"></a> deque::d ifference_type (STL/CLR)
 
 두 요소 사이의 부호가 있는 거리의 형식입니다.
 
@@ -898,7 +899,7 @@ end()-begin() = 3
 begin()-end() = -3
 ```
 
-## <a name="dequeempty-stlclr"></a><a name="empty"></a>deque:: empty (STL/CLR)
+## <a name="dequeempty-stlclr"></a><a name="empty"></a> deque:: empty (STL/CLR)
 
 요소가 있는지 여부를 테스트합니다.
 
@@ -949,7 +950,7 @@ size() = 0
 empty() = True
 ```
 
-## <a name="dequeend-stlclr"></a><a name="end"></a>deque:: end (STL/CLR)
+## <a name="dequeend-stlclr"></a><a name="end"></a> deque:: end (STL/CLR)
 
 제어되는 시퀀스의 끝을 지정합니다.
 
@@ -1005,7 +1006,7 @@ a b c
 a x y
 ```
 
-## <a name="dequeerase-stlclr"></a><a name="erase"></a>deque:: erase (STL/CLR)
+## <a name="dequeerase-stlclr"></a><a name="erase"></a> deque:: erase (STL/CLR)
 
 지정된 위치에 있는 요소를 제거합니다.
 
@@ -1029,7 +1030,7 @@ iterator erase(iterator first, iterator last);
 
 ### <a name="remarks"></a>설명
 
-첫 번째 멤버 함수는 where가 가리키는 제어 *되*는 시퀀스의 요소를 제거 합니다. 단일 요소를 제거 하는 데 사용 합니다.
+첫 번째 멤버 함수는 where가 가리키는 제어 *되* 는 시퀀스의 요소를 제거 합니다. 단일 요소를 제거 하는 데 사용 합니다.
 
 두 번째 멤버 함수는 [`first`, `last`]의 범위에서 제어되는 시퀀스의 요소를 제거합니다. 연속 된 요소를 0 개 이상 제거 하는 데 사용 합니다.
 
@@ -1084,7 +1085,7 @@ erase(begin(), end()-1) = e
 size() = 1
 ```
 
-## <a name="dequefront-stlclr"></a><a name="front"></a>deque:: front (STL/CLR)
+## <a name="dequefront-stlclr"></a><a name="front"></a> deque:: front (STL/CLR)
 
 첫 번째 요소에 액세스합니다.
 
@@ -1135,7 +1136,7 @@ front() = a
 x b c
 ```
 
-## <a name="dequefront_item-stlclr"></a><a name="front_item"></a>deque:: front_item (STL/CLR)
+## <a name="dequefront_item-stlclr"></a><a name="front_item"></a> deque:: front_item (STL/CLR)
 
 첫 번째 요소에 액세스합니다.
 
@@ -1186,7 +1187,7 @@ front_item = a
 x b c
 ```
 
-## <a name="dequegeneric_container-stlclr"></a><a name="generic_container"></a>deque:: generic_container (STL/CLR)
+## <a name="dequegeneric_container-stlclr"></a><a name="generic_container"></a> deque:: generic_container (STL/CLR)
 
 컨테이너에 대 한 제네릭 인터페이스의 형식입니다.
 
@@ -1252,7 +1253,7 @@ a b c d
 a b c d e
 ```
 
-## <a name="dequegeneric_iterator-stlclr"></a><a name="generic_iterator"></a>deque:: generic_iterator (STL/CLR)
+## <a name="dequegeneric_iterator-stlclr"></a><a name="generic_iterator"></a> deque:: generic_iterator (STL/CLR)
 
 컨테이너의 제네릭 인터페이스와 함께 사용할 반복기의 형식입니다.
 
@@ -1309,7 +1310,7 @@ a b c
 a a c
 ```
 
-## <a name="dequegeneric_reverse_iterator-stlclr"></a><a name="generic_reverse_iterator"></a>deque:: generic_reverse_iterator (STL/CLR)
+## <a name="dequegeneric_reverse_iterator-stlclr"></a><a name="generic_reverse_iterator"></a> deque:: generic_reverse_iterator (STL/CLR)
 
 컨테이너의 제네릭 인터페이스와 함께 사용할 역방향 반복기의 형식입니다.
 
@@ -1366,7 +1367,7 @@ a b c
 a c c
 ```
 
-## <a name="dequegeneric_value-stlclr"></a><a name="generic_value"></a>deque:: generic_value (STL/CLR)
+## <a name="dequegeneric_value-stlclr"></a><a name="generic_value"></a> deque:: generic_value (STL/CLR)
 
 컨테이너의 제네릭 인터페이스와 함께 사용할 요소의 형식입니다.
 
@@ -1422,7 +1423,7 @@ a b c
 a a c
 ```
 
-## <a name="dequeinsert-stlclr"></a><a name="insert"></a>deque:: insert (STL/CLR)
+## <a name="dequeinsert-stlclr"></a><a name="insert"></a> deque:: insert (STL/CLR)
 
 지정 된 위치에 요소를 추가 합니다.
 
@@ -1463,13 +1464,13 @@ void insert(iterator where,
 
 첫 번째 멤버 함수는 값 *val* 을 사용 하 여 요소를 삽입 하 고 새로 삽입 된 요소를 지정 하는 반복기를 반환 합니다. 이를 사용 하 여 반복기에서 지정 된 장소 앞에 단일 요소를 삽입 합니다.
 
-두 번째 멤버 함수는 값 *val*의 *count* 요소 반복을 삽입 합니다. 동일한 값의 모든 복사본 인 연속 요소를 0 개 이상 삽입 하는 데 사용 합니다.
+두 번째 멤버 함수는 값 *val* 의 *count* 요소 반복을 삽입 합니다. 동일한 값의 모든 복사본 인 연속 요소를 0 개 이상 삽입 하는 데 사용 합니다.
 
 `InIt`가 정수 형식이면 세 번째 멤버 함수는 `insert(where, (size_type)first, (value_type)last)`와 동일하게 동작합니다. 그렇지 않으면 [,) 시퀀스를 `first` 삽입 `last` 합니다. 이를 사용 하 여 다른 시퀀스에서 복사 된 0 개 이상의 연속 요소를 삽입 합니다.
 
-네 번째 멤버 함수는 *오른쪽*에 지정 된 시퀀스를 삽입 합니다. 이를 사용 하 여 열거자에서 설명 하는 시퀀스를 삽입 합니다.
+네 번째 멤버 함수는 *오른쪽* 에 지정 된 시퀀스를 삽입 합니다. 이를 사용 하 여 열거자에서 설명 하는 시퀀스를 삽입 합니다.
 
-단일 요소를 삽입할 때 요소 복사본의 수는 삽입 지점과 시퀀스의 가까운 끝 사이에 있는 요소 수의 선형입니다. 시퀀스의 한쪽 끝에 하나 이상의 요소를 삽입 하는 경우 요소 복사는 발생 하지 않습니다. `InIt`가 입력 반복기 인 경우 세 번째 멤버 함수는 시퀀스의 각 요소에 대 한 단일 삽입을 효과적으로 수행 합니다. 그렇지 않은 경우 `N` 요소를 삽입할 때 요소 복사본의 수는 선형이 `N` 고 삽입 지점과 시퀀스의 끝 부분 사이에 있는 요소 수를 더한 값입니다.
+단일 요소를 삽입할 때 요소 복사본의 수는 삽입 지점과 시퀀스의 가까운 끝 사이에 있는 요소 수의 선형입니다. 시퀀스의 한쪽 끝에 하나 이상의 요소를 삽입 하는 경우 요소 복사는 발생 하지 않습니다. `InIt` 가 입력 반복기 인 경우 세 번째 멤버 함수는 시퀀스의 각 요소에 대 한 단일 삽입을 효과적으로 수행 합니다. 그렇지 않은 경우 `N` 요소를 삽입할 때 요소 복사본의 수는 선형이 `N` 고 삽입 지점과 시퀀스의 끝 부분 사이에 있는 요소 수를 더한 값입니다.
 
 ### <a name="example"></a>예제
 
@@ -1531,7 +1532,7 @@ y y a x b
 a x b c y y a x b
 ```
 
-## <a name="dequeiterator-stlclr"></a><a name="iterator"></a>deque:: iterator (STL/CLR)
+## <a name="dequeiterator-stlclr"></a><a name="iterator"></a> deque:: iterator (STL/CLR)
 
 제어되는 시퀀스에 대한 반복기의 형식입니다.
 
@@ -1580,7 +1581,7 @@ a b c
 x b c
 ```
 
-## <a name="dequeoperator-stlclr"></a><a name="op_neq"></a>deque:: operator! = (STL/CLR)
+## <a name="dequeoperator-stlclr"></a><a name="op_neq"></a> deque:: operator! = (STL/CLR)
 
 Deque 같지 않음 비교.
 
@@ -1649,7 +1650,7 @@ a b d
 [a b c] != [a b d] is True
 ```
 
-## <a name="dequeoperatorstlclr"></a><a name="operator"></a>deque:: operator (STL/CLR)
+## <a name="dequeoperatorstlclr"></a><a name="operator"></a> deque:: operator (STL/CLR)
 
 지정된 위치에 있는 요소에 액세스합니다.
 
@@ -1666,7 +1667,7 @@ reference operator[](size_type pos);
 
 ### <a name="remarks"></a>설명
 
-멤버 연산자는 위치 *pos*의 요소에 대 한 referene를 반환 합니다. 이를 사용 하 여 위치를 알고 있는 요소에 액세스 합니다.
+멤버 연산자는 위치 *pos* 의 요소에 대 한 referene를 반환 합니다. 이를 사용 하 여 위치를 알고 있는 요소에 액세스 합니다.
 
 ### <a name="example"></a>예제
 
@@ -1701,7 +1702,7 @@ a b c
 a x c
 ```
 
-## <a name="dequepop_back-stlclr"></a><a name="pop_back"></a>deque::p op_back (STL/CLR)
+## <a name="dequepop_back-stlclr"></a><a name="pop_back"></a> deque::p op_back (STL/CLR)
 
 마지막 요소를 제거 합니다.
 
@@ -1748,7 +1749,7 @@ a b c
 a b
 ```
 
-## <a name="dequepop_front-stlclr"></a><a name="pop_front"></a>deque::p op_front (STL/CLR)
+## <a name="dequepop_front-stlclr"></a><a name="pop_front"></a> deque::p op_front (STL/CLR)
 
 첫 번째 요소를 제거 합니다.
 
@@ -1795,7 +1796,7 @@ a b c
 b c
 ```
 
-## <a name="dequepush_back-stlclr"></a><a name="push_back"></a>deque::p ush_back (STL/CLR)
+## <a name="dequepush_back-stlclr"></a><a name="push_back"></a> deque::p ush_back (STL/CLR)
 
 새 마지막 요소를 추가 합니다.
 
@@ -1835,7 +1836,7 @@ int main()
 a b c
 ```
 
-## <a name="dequepush_front-stlclr"></a><a name="push_front"></a>deque::p ush_front (STL/CLR)
+## <a name="dequepush_front-stlclr"></a><a name="push_front"></a> deque::p ush_front (STL/CLR)
 
 새 첫 번째 요소를 추가 합니다.
 
@@ -1875,7 +1876,7 @@ int main()
 c b a
 ```
 
-## <a name="dequerbegin-stlclr"></a><a name="rbegin"></a>deque:: rbegin (STL/CLR)
+## <a name="dequerbegin-stlclr"></a><a name="rbegin"></a> deque:: rbegin (STL/CLR)
 
 제어되는 역방향 시퀀스의 시작을 지정합니다.
 
@@ -1930,7 +1931,7 @@ a b c
 a y x
 ```
 
-## <a name="dequereference-stlclr"></a><a name="reference"></a>deque:: reference (STL/CLR)
+## <a name="dequereference-stlclr"></a><a name="reference"></a> deque:: reference (STL/CLR)
 
 요소에 대한 참조의 형식입니다.
 
@@ -1985,7 +1986,7 @@ a b c
 A B C
 ```
 
-## <a name="dequerend-stlclr"></a><a name="rend"></a>deque:: rend (STL/CLR)
+## <a name="dequerend-stlclr"></a><a name="rend"></a> deque:: rend (STL/CLR)
 
 제어되는 역방향 시퀀스의 끝을 지정합니다.
 
@@ -2041,7 +2042,7 @@ a b c
 y x c
 ```
 
-## <a name="dequeresize-stlclr"></a><a name="resize"></a>deque:: resize (STL/CLR)
+## <a name="dequeresize-stlclr"></a><a name="resize"></a> deque:: resize (STL/CLR)
 
 요소 수를 변경합니다.
 
@@ -2062,7 +2063,7 @@ void resize(size_type new_size, value_type val);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 [deque:: size (STL/CLR)](#size) `()` 예측이가 *new_size*를 반환 하는지 확인 합니다. 제어 되는 시퀀스를 더 길게 만들어야 하는 경우 첫 번째 멤버 함수는 값 `value_type()` 이 인 요소를 추가 하는 반면 두 번째 멤버 함수는 값 *val*을 사용 하 여 요소를 추가 합니다. 제어 되는 시퀀스를 더 짧게 만들기 위해 두 멤버 함수는 마지막 요소인 [deque:: size (STL/CLR)](#size) 시간을 효과적으로 지웁니다 `() -` `new_size` . 이를 사용 하 여 제어 되는 시퀀스의 크기 *new_size*현재 제어 되는 시퀀스를 트리밍 또는 패딩 하 여 확인 합니다.
+멤버 함수는 [deque:: size (STL/CLR)](#size) `()` 예측이가 *new_size* 를 반환 하는지 확인 합니다. 제어 되는 시퀀스를 더 길게 만들어야 하는 경우 첫 번째 멤버 함수는 값 `value_type()` 이 인 요소를 추가 하는 반면 두 번째 멤버 함수는 값 *val* 을 사용 하 여 요소를 추가 합니다. 제어 되는 시퀀스를 더 짧게 만들기 위해 두 멤버 함수는 마지막 요소인 [deque:: size (STL/CLR)](#size) 시간을 효과적으로 지웁니다 `() -` `new_size` . 이를 사용 하 여 제어 되는 시퀀스의 크기 *new_size* 현재 제어 되는 시퀀스를 트리밍 또는 패딩 하 여 확인 합니다.
 
 ### <a name="example"></a>예제
 
@@ -2101,7 +2102,7 @@ size() = 0
 x x x x x
 ```
 
-## <a name="dequereverse_iterator-stlclr"></a><a name="reverse_iterator"></a>deque:: reverse_iterator (STL/CLR)
+## <a name="dequereverse_iterator-stlclr"></a><a name="reverse_iterator"></a> deque:: reverse_iterator (STL/CLR)
 
 제어되는 시퀀스에 대한 반대 반복기의 형식입니다.
 
@@ -2150,7 +2151,7 @@ c b a
 x b a
 ```
 
-## <a name="dequesize-stlclr"></a><a name="size"></a>deque:: size (STL/CLR)
+## <a name="dequesize-stlclr"></a><a name="size"></a> deque:: size (STL/CLR)
 
 요소 수를 계산합니다.
 
@@ -2203,7 +2204,7 @@ size() = 0 after clearing
 size() = 2 after adding 2
 ```
 
-## <a name="dequesize_type-stlclr"></a><a name="size_type"></a>deque:: size_type (STL/CLR)
+## <a name="dequesize_type-stlclr"></a><a name="size_type"></a> deque:: size_type (STL/CLR)
 
 두 요소 사이의 부호가 있는 거리의 형식입니다.
 
@@ -2248,7 +2249,7 @@ a b c
 end()-begin() = 3
 ```
 
-## <a name="dequeswap-stlclr"></a><a name="swap"></a>deque:: swap (STL/CLR)
+## <a name="dequeswap-stlclr"></a><a name="swap"></a> deque:: swap (STL/CLR)
 
 두 컨테이너의 내용을 바꿉니다.
 
@@ -2265,7 +2266,7 @@ void swap(deque<Value>% right);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 제어 되는 시퀀스를 **`*this`** 과 *오른쪽*으로 바꿉니다. 일정 한 시간에이를 수행 하 고 예외를 throw 하지 않습니다. 이를 사용 하 여 두 컨테이너의 콘텐츠를 신속 하 게 교환할 수 있습니다.
+멤버 함수는 제어 되는 시퀀스를 **`*this`** 과 *오른쪽* 으로 바꿉니다. 일정 한 시간에이를 수행 하 고 예외를 throw 하지 않습니다. 이를 사용 하 여 두 컨테이너의 콘텐츠를 신속 하 게 교환할 수 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -2312,7 +2313,7 @@ x x x x x
 a b c
 ```
 
-## <a name="dequeto_array-stlclr"></a><a name="to_array"></a>deque:: to_array (STL/CLR)
+## <a name="dequeto_array-stlclr"></a><a name="to_array"></a> deque:: to_array (STL/CLR)
 
 제어 되는 시퀀스를 새 배열에 복사 합니다.
 
@@ -2361,7 +2362,7 @@ a b c d
 a b c
 ```
 
-## <a name="dequevalue_type-stlclr"></a><a name="value_type"></a>deque:: value_type (STL/CLR)
+## <a name="dequevalue_type-stlclr"></a><a name="value_type"></a> deque:: value_type (STL/CLR)
 
 요소의 형식입니다.
 
@@ -2373,7 +2374,7 @@ typedef Value value_type;
 
 ### <a name="remarks"></a>설명
 
-형식은 템플릿 매개 변수 *값*의 동의어입니다.
+형식은 템플릿 매개 변수 *값* 의 동의어입니다.
 
 ### <a name="example"></a>예제
 
@@ -2406,7 +2407,7 @@ int main()
 a b c
 ```
 
-## <a name="operatorlt-deque-stlclr"></a><a name="op_lt"></a>연산자 &lt; (deque) (STL/CLR)
+## <a name="operatorlt-deque-stlclr"></a><a name="op_lt"></a> 연산자 &lt; (deque) (STL/CLR)
 
 Deque 보다 작음 비교입니다.
 
@@ -2475,7 +2476,7 @@ a b d
 [a b c] < [a b d] is True
 ```
 
-## <a name="operatorlt-deque-stlclr"></a><a name="op_lteq"></a>operator &lt; = (deque) (STL/CLR)
+## <a name="operatorlt-deque-stlclr"></a><a name="op_lteq"></a> operator &lt; = (deque) (STL/CLR)
 
 Deque 보다 작거나 같음 비교입니다.
 
@@ -2544,7 +2545,7 @@ a b d
 [a b d] <= [a b c] is False
 ```
 
-## <a name="operator-deque-stlclr"></a><a name="op_as"></a>operator = (deque) (STL/CLR)
+## <a name="operator-deque-stlclr"></a><a name="op_as"></a> operator = (deque) (STL/CLR)
 
 제어되는 시퀀스를 바꿉니다.
 
@@ -2561,7 +2562,7 @@ deque<Value>% operator=(deque<Value>% right);
 
 ### <a name="remarks"></a>설명
 
-멤버 연산자는 개체에 대해 *를 복사 하 고를 반환* **`*this`** 합니다. 이를 사용 하 여 제어 되는 시퀀스를 *오른쪽*에 있는 제어 되는 시퀀스의 복사본으로 바꿉니다.
+멤버 연산자는 개체에 대해 *를 복사 하 고를 반환* **`*this`** 합니다. 이를 사용 하 여 제어 되는 시퀀스를 *오른쪽* 에 있는 제어 되는 시퀀스의 복사본으로 바꿉니다.
 
 ### <a name="example"></a>예제
 
@@ -2597,7 +2598,7 @@ a b c
 a b c
 ```
 
-## <a name="operator-deque-stlclr"></a><a name="op_eq"></a>operator = = (deque) (STL/CLR)
+## <a name="operator-deque-stlclr"></a><a name="op_eq"></a> operator = = (deque) (STL/CLR)
 
 Deque 같은 비교.
 
@@ -2666,7 +2667,7 @@ a b d
 [a b c] == [a b d] is False
 ```
 
-## <a name="operatorgt-deque-stlclr"></a><a name="op_gt"></a>연산자 &gt; (deque) (STL/CLR)
+## <a name="operatorgt-deque-stlclr"></a><a name="op_gt"></a> 연산자 &gt; (deque) (STL/CLR)
 
 Deque 보다 큼 비교입니다.
 
@@ -2735,7 +2736,7 @@ a b d
 [a b d] > [a b c] is True
 ```
 
-## <a name="operatorgt-deque-stlclr"></a><a name="op_gteq"></a>operator &gt; = (deque) (STL/CLR)
+## <a name="operatorgt-deque-stlclr"></a><a name="op_gteq"></a> operator &gt; = (deque) (STL/CLR)
 
 Deque 보다 크거나 같음 비교입니다.
 

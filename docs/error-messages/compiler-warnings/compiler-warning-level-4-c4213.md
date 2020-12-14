@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4213'
 title: 컴파일러 경고(수준 4) C4213
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4213
 ms.assetid: 59fc3f61-ebd2-499e-99d7-f57bec11eda1
-ms.openlocfilehash: e462fcc2d0283d2519796127612123f7d792d00e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 400cd650542bfd7a71640947467e8340f63bb3df
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80161297"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97297345"
 ---
 # <a name="compiler-warning-level-4-c4213"></a>컴파일러 경고(수준 4) C4213
 

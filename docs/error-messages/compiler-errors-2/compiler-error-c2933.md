@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2933'
 title: 컴파일러 오류 C2933
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2933
 ms.assetid: 394891e3-6b52-4b61-83d2-a1c5125d9bd5
-ms.openlocfilehash: 51889ababd646edebbaf1d0d1a1c608e7b068009
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: be815b24b892cc1ef835654df81c7d47483f3730
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233420"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97297423"
 ---
 # <a name="compiler-error-c2933"></a>컴파일러 오류 C2933
 

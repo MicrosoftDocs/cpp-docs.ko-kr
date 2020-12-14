@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 3) C4521'
 title: 컴파일러 경고(수준 3) C4521
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4521
 ms.assetid: 057d770c-ebcf-44cd-b943-1b1bb1ceaa8c
-ms.openlocfilehash: 79e0866262b2db18424355de0702288d0f24592d
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: ff4f565fb243fb5dd2df165ed5f3e3b1baf40c5a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992071"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97297410"
 ---
 # <a name="compiler-warning-level-3-c4521"></a>컴파일러 경고(수준 3) C4521
 
