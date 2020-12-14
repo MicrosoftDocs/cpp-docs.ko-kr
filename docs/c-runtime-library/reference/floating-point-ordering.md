@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: isgreater, isgreaterequal, isgreater, islessequal, islessgreater, isgreater'
 title: isgreater, isgreaterequal, isless, islessequal, islessgreater, isunordered
 ms.date: 01/31/2019
 f1_keywords:
@@ -21,12 +22,12 @@ helpviewer_keywords:
 - islessequal function
 - islessgreater function
 - isunordered function
-ms.openlocfilehash: 907b26f4e1824d7ef5c7c1a36b4e4d8ccb74c978
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 90e01de2caeb5a73b1b48a0c78678d975cdca6e1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220719"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97262973"
 ---
 # <a name="isgreater-isgreaterequal-isless-islessequal-islessgreater-isunordered"></a>isgreater, isgreaterequal, isless, islessequal, islessgreater, isunordered
 
@@ -109,15 +110,15 @@ inline bool isunordered(
 *x*, *y*<br/>
 비교할 부동 소수점 값입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 모든 비교에서 동일한 부호 비교는 동일 하 게 무한대. 음의 무한대는 유한 값 또는 양의 무한대 보다 낮습니다. 양의 무한대는 유한 값 또는 음의 무한대 보다 큽니다. 0은 부호에 관계 없이 동일 합니다. Nan는 다른 NaN을 포함 하 여 값 보다 작거나, 같거나, 커야 합니다.
 
-인수가 NaN이 아니면 정렬 매크로 **isgreater**, **isgreater**및 **isgreater** **islessequal** 가 0이 아닌 값을 반환 합니다 .이 값은 *x* 와 *y* 사이의 지정 된 정렬 관계가 true 인 경우에는 0이 아닌 값을 반환 합니다. 이러한 매크로는 두 인수 중 하나 또는 모두 Nan 이거나 정렬 관계가 false 인 경우 0을 반환 합니다. 함수 forms는 동일한 방식으로 동작 하지만 또는를 반환 합니다 **`true`** **`false`** .
+인수가 NaN이 아니면 정렬 매크로 **isgreater**, **isgreater** 및  **islessequal** 가 0이 아닌 값을 반환 합니다 .이 값은 *x* 와 *y* 사이의 지정 된 정렬 관계가 true 인 경우에는 0이 아닌 값을 반환 합니다. 이러한 매크로는 두 인수 중 하나 또는 모두 Nan 이거나 정렬 관계가 false 인 경우 0을 반환 합니다. 함수 forms는 동일한 방식으로 동작 하지만 또는를 반환 합니다 **`true`** **`false`** .
 
-**Islessgreater** 매크로는 *x* 와 *y* 가 nan이 아니고 *x* 가 *y*보다 작거나 같은 경우 0이 아닌 값을 반환 합니다. 두 인수 중 하나 또는 둘 다 Nan 경우 0을 반환 하 고, 값이 같으면 0을 반환 합니다. 함수 폼은 동일한 방식으로 동작 하지만 또는를 반환 합니다 **`true`** **`false`** .
+**Islessgreater** 매크로는 *x* 와 *y* 가 nan이 아니고 *x* 가 *y* 보다 작거나 같은 경우 0이 아닌 값을 반환 합니다. 두 인수 중 하나 또는 둘 다 Nan 경우 0을 반환 하 고, 값이 같으면 0을 반환 합니다. 함수 폼은 동일한 방식으로 동작 하지만 또는를 반환 합니다 **`true`** **`false`** .
 
-*X*, *y*중 하나 또는 둘 다가 nan 경우 **isunordered** 지정 되지 않은 매크로는 0이 아닌 값을 반환 합니다. 그렇지 않으면 0을 반환합니다. 함수 폼은 동일한 방식으로 동작 하지만 또는를 반환 합니다 **`true`** **`false`** .
+*X*, *y* 중 하나 또는 둘 다가 nan 경우 **isunordered** 지정 되지 않은 매크로는 0이 아닌 값을 반환 합니다. 그렇지 않으면 0을 반환합니다. 함수 폼은 동일한 방식으로 동작 하지만 또는를 반환 합니다 **`true`** **`false`** .
 
 ## <a name="remarks"></a>설명
 

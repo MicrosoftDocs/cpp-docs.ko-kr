@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Platform:: InvalidCastException 클래스'
 title: Platform::InvalidCastException 클래스
 ms.date: 12/30/2016
 ms.topic: reference
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::InvalidCastException
 ms.assetid: 0215131d-1251-4913-9561-824410e045b6
-ms.openlocfilehash: 6e502346cb373d9dec5450987c4807b445234b28
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 187e6d5026edd241e88e4ba1c25d58b835650780
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62301460"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97262908"
 ---
 # <a name="platforminvalidcastexception-class"></a>Platform::InvalidCastException 클래스
 
@@ -35,10 +36,10 @@ public ref class InvalidCastException : COMException,    IException,    IPrintab
 
 **지원 되는 최소 서버:** Windows Server 2012
 
-**네임스페이스:** 플랫폼
+**네임스페이스:** Platform
 
-**메타데이터:** platform.winmd
+**메타 데이터:** platform.object
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[Platform::COMException 클래스](../cppcx/platform-comexception-class.md)
+[Platform:: COMException 클래스](../cppcx/platform-comexception-class.md)

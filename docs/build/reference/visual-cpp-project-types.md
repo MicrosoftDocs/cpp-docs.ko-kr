@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: c + + 프로젝트 템플릿'
 title: Visual C++ 프로젝트 형식
 ms.date: 08/13/2019
 helpviewer_keywords:
@@ -10,25 +11,25 @@ helpviewer_keywords:
 - applications [C++], projects
 - C++ projects, types
 ms.assetid: 7337987e-1e7b-4120-9a4b-94f0401f15e7
-ms.openlocfilehash: e929142181ebd849c820ad50e5ce64c2d4f5ab44
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 924e53e0d977b4f9b3b40bf7444f8495dbe1d451
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509325"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97253171"
 ---
 # <a name="c-project-templates"></a>C++ 프로젝트 템플릿
 
 Visual Studio 프로젝트 템플릿은 만들려는 프로젝트 종류에 적절 한 소스 코드 파일, 컴파일러 옵션, 메뉴, 도구 모음, 아이콘, 참조 및 `#include` 문을 생성 합니다. Visual Studio에는 다양 한 종류의 c + + 프로젝트 템플릿이 포함 되어 있으며, 프로젝트를 만들 때 프로젝트를 사용자 지정할 수 있도록 다양 한 마법사를 제공 합니다. 프로젝트를 만든 직후에 애플리케이션을 빌드하고 실행할 수 있으므로, 애플리케이션을 개발하면서 간간이 빌드하는 것이 좋습니다.
 
 > [!NOTE]
-> C++ 프로젝트 템플릿을 사용하여 C 언어 프로젝트를 만들 수 있습니다. 생성된 프로젝트에서 파일 이름 확장명이 .cpp인 파일을 찾아 확장명을 .c로 변경합니다. 그런 다음 솔루션이 아닌 프로젝트의 **프로젝트 속성** 페이지에서 **구성 속성**, **C/C++** 를 차례로 확장하고 **고급**을 선택합니다. **컴파일 옵션** 설정을 **C 코드로 컴파일(/TC)** 로 변경합니다.
+> C++ 프로젝트 템플릿을 사용하여 C 언어 프로젝트를 만들 수 있습니다. 생성된 프로젝트에서 파일 이름 확장명이 .cpp인 파일을 찾아 확장명을 .c로 변경합니다. 그런 다음 솔루션이 아닌 프로젝트의 **프로젝트 속성** 페이지에서 **구성 속성**, **C/C++** 를 차례로 확장하고 **고급** 을 선택합니다. **컴파일 옵션** 설정을 **C 코드로 컴파일(/TC)** 로 변경합니다.
 
 ## <a name="project-templates"></a>프로젝트 템플릿
 
 Visual Studio에 포함된 프로젝트 템플릿은 설치한 제품 버전 및 워크로드에 따라 다릅니다. C + +를 사용한 데스크톱 개발 워크 로드를 설치한 경우 Visual Studio에는 이러한 c + + 프로젝트 템플릿이 있습니다.
 
-### <a name="windows-desktop"></a>Windows 데스크톱
+### <a name="windows-desktop"></a>Windows Desktop
 
 |프로젝트 템플릿|설명|
 |----------------------|-----------------------------|

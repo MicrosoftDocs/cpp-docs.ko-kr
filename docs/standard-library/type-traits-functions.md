@@ -1,4 +1,5 @@
 ---
+description: '&lt;Type_traits 함수에 대해 자세히 알아보세요. &gt;'
 title: '&lt;type_traits&gt; 함수'
 ms.date: 11/04/2016
 ms.assetid: dce4492f-f3e4-4d5e-bdb4-5875321254ec
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - std::is_trivially_copy_assignable
 - std::is_trivially_move_assignable
 - std::is_trivially_move_constructible
-ms.openlocfilehash: 11defadff0b1785f6e4c5aba6356f7b68a78b9fc
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: a1608ddc9d846ca9e8e851ef67d390aebb6f840e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841781"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97253327"
 ---
 # <a name="lttype_traitsgt-functions"></a>&lt;type_traits&gt; 함수
 
@@ -56,7 +57,7 @@ struct is_assignable;
 
 ### <a name="remarks"></a>설명
 
-평가되지 않은 `declval<To>() = declval<From>()` 식은 올바른 형식이어야 합니다. 및 *둘 다 완전 한 형식* , *To* **`void`** 또는 범위를 알 수 없는 배열 이어야 합니다.
+평가되지 않은 `declval<To>() = declval<From>()` 식은 올바른 형식이어야 합니다. 및 *둘 다 완전 한 형식* ,  **`void`** 또는 범위를 알 수 없는 배열 이어야 합니다.
 
 ## <a name="is_copy_assignable"></a><a name="is_copy_assignable"></a> is_copy_assignable
 

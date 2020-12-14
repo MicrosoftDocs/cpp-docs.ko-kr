@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: &lt; regex &gt; 연산자'
 title: '&lt;regex&gt; 연산자'
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ f1_keywords:
 - regex/std::operator==
 - regex/std::operator<<
 ms.assetid: ec623e65-c186-491f-aa18-6b12b47e1127
-ms.openlocfilehash: f3117ce7e962468855172a463c375392930e7c81
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: bc0eddc9f3c7db600c49e317335a131bc6646a5d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833233"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97254281"
 ---
 # <a name="ltregexgt-operators"></a>&lt;regex&gt; 연산자
 
@@ -200,7 +201,7 @@ bool operator<(const sub_match<BidIt>& left,
 
 ### <a name="remarks"></a>설명
 
-각 템플릿 연산자는 해당 인수를 문자열 형식으로 변환 하 고, *왼쪽* 의 변환 된 값이 *오른쪽*의 변환 된 값 보다 작음을 비교 하는 경우에만 true를 반환 합니다.
+각 템플릿 연산자는 해당 인수를 문자열 형식으로 변환 하 고, *왼쪽* 의 변환 된 값이 *오른쪽* 의 변환 된 값 보다 작음을 비교 하는 경우에만 true를 반환 합니다.
 
 ### <a name="example"></a>예제
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 심각한 오류 C1013'
 title: 심각한 오류 C1013
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1013
 ms.assetid: 5514a679-efe7-4055-bdd3-5693ca0c332f
-ms.openlocfilehash: 88b748aa81580191088e0c1f3f9d09664af67013
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 87b2f5662a47b40b97bd65b871a4db819d3c88ab
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80204778"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97262479"
 ---
 # <a name="fatal-error-c1013"></a>심각한 오류 C1013
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 심각한 오류 C1007'
 title: 심각한 오류 C1007
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1007
 ms.assetid: 224f7e2c-4522-4e09-b455-8d293bdb799d
-ms.openlocfilehash: 6f85a79b02d8b44cb28cf03a0b6bc60dfb7094ce
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 61c97934943aab18c7ffc3e69e195d3b523ae41c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80204856"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97262609"
 ---
 # <a name="fatal-error-c1007"></a>심각한 오류 C1007
 

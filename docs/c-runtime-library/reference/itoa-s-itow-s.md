@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _itoa_s, _ltoa_s, _ultoa_s, _i64toa_s, _ui64toa_s, _itow_s, _ltow_s, _ultow_s, _i64tow_s, _ui64tow_s'
 title: _itoa_s, _itow_s 함수
 ms.date: 4/2/2020
 api_name:
@@ -90,12 +91,12 @@ helpviewer_keywords:
 - _ui64tot_s function
 - _i64toa_s function
 ms.assetid: eb746581-bff3-48b5-a973-bfc0a4478ecf
-ms.openlocfilehash: 5cc3706abd07e11c819d4b2d37ff89e9b9137a22
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: c02ca2e6090c9396a3a6c91cd6353604d5df8096
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916568"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97254237"
 ---
 # <a name="_itoa_s-_ltoa_s-_ultoa_s-_i64toa_s-_ui64toa_s-_itow_s--_ltow_s--_ultow_s-_i64tow_s-_ui64tow_s"></a>_itoa_s, _ltoa_s, _ultoa_s, _i64toa_s, _ui64toa_s, _itow_s, _ltow_s, _ultow_s, _i64tow_s, _ui64tow_s
 
@@ -156,7 +157,7 @@ errno_t _ultow_s( unsigned long value, wchar_t (&buffer)[size], int radix );
 문자 또는 와이드 문자 단위의 *버퍼* 크기입니다.
 
 *기 수*<br/>
-*값*을 변환 하는 데 사용할 기 수 또는 숫자 기준으로, 2-36 범위 내에 있어야 합니다.
+*값* 을 변환 하는 데 사용할 기 수 또는 숫자 기준으로, 2-36 범위 내에 있어야 합니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -166,14 +167,14 @@ errno_t _ultow_s( unsigned long value, wchar_t (&buffer)[size], int radix );
 
 |값|buffer|크기|radix|반환 값|
 |-----------|------------|----------------------|-----------|------------|
-|any|**N**|any|any|**EINVAL**|
+|any|**NULL**|any|any|**EINVAL**|
 |any|any|<=0|any|**EINVAL**|
 |any|any|<= length of the result string required|any|**EINVAL**|
 |any|any|any|*기* < 2 개 또는 *기* > 36|**EINVAL**|
 
 ### <a name="security-issues"></a>보안 문제
 
-이러한 함수는 *버퍼가* 유효한 메모리를 가리키지 않거나 **NULL**이 아닌 경우 또는 버퍼의 길이가 결과 문자열을 저장할 만큼 길지 않은 경우 액세스 위반을 생성할 수 있습니다.
+이러한 함수는 *버퍼가* 유효한 메모리를 가리키지 않거나 **NULL** 이 아닌 경우 또는 버퍼의 길이가 결과 문자열을 저장할 만큼 길지 않은 경우 액세스 위반을 생성할 수 있습니다.
 
 ## <a name="remarks"></a>설명
 
@@ -276,7 +277,7 @@ base 3: 11112220022122120101211020120210210211220 (41 chars)
 base 2: 1111111111111111111111111111111111111111111111111111111111111111 (64 chars)
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [데이터 변환](../../c-runtime-library/data-conversion.md)<br/>
 [_itoa, _itow 함수](itoa-itow.md)<br/>

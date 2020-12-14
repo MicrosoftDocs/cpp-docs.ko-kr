@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _spawnlpe, _wspawnlpe'
 title: _spawnlpe, _wspawnlpe
 ms.date: 11/04/2016
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - processes, executing new
 - process creation
 ms.assetid: e171ebfa-70e7-4c44-8331-2a291fc17bd6
-ms.openlocfilehash: 8e5e20827ef67d83b008a055505ec95abbde7d49
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: ebe51a8268bb8b641492ef40bd37e55e19bef0c7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844173"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97262960"
 ---
 # <a name="_spawnlpe-_wspawnlpe"></a>_spawnlpe, _wspawnlpe
 
@@ -79,14 +80,14 @@ intptr_t _wspawnlpe(
 실행할 파일의 경로입니다.
 
 *arg0*, *arg1*, ... *argn*<br/>
-인수에 대한 포인터 목록입니다. *Arg0* 인수는 일반적으로 *cmdname*에 대 한 포인터입니다. *Argn* 에 대 한 인수 *arg1* 은 새 인수 목록을 구성 하는 문자열에 대 한 포인터입니다. *Argn*다음에는 인수 목록의 끝을 표시 하는 **NULL** 포인터가 있어야 합니다.
+인수에 대한 포인터 목록입니다. *Arg0* 인수는 일반적으로 *cmdname* 에 대 한 포인터입니다. *Argn* 에 대 한 인수 *arg1* 은 새 인수 목록을 구성 하는 문자열에 대 한 포인터입니다. *Argn* 다음에는 인수 목록의 끝을 표시 하는 **NULL** 포인터가 있어야 합니다.
 
 *envp*<br/>
 환경 설정에 대한 포인터 배열입니다.
 
 ## <a name="return-value"></a>반환 값
 
-동기 **_spawnlpe** 또는 **_wspawnlpe** ( *모드*에 대해 지정 된 **_P_WAIT** )의 반환 값은 새 프로세스의 종료 상태입니다. 비동기 **_spawnlpe** 또는 **_wspawnlpe** ( *모드*에 지정 된 **_P_NOWAIT** 또는 **_P_NOWAITO** )의 반환 값은 프로세스 핸들입니다. 프로세스가 정상적으로 종료되는 경우 종료 상태는 0입니다. 생성 된 프로세스가 0이 아닌 인수를 사용 하 여 **종료** 루틴을 호출 하는 경우 종료 상태를 0이 아닌 값으로 설정할 수 있습니다. 새 프로세스가 양수 값의 종료 상태를 명시적으로 설정하지 않은 경우, 양수 값의 종료 상태는 중단 또는 인터럽트로 인한 비정상적인 종료를 나타냅니다. 반환 값-1은 오류를 나타냅니다 (새 프로세스가 시작 되지 않음). 이 경우 **errno** 는 다음 값 중 하나로 설정 됩니다.
+동기 **_spawnlpe** 또는 **_wspawnlpe** ( *모드* 에 대해 지정 된 **_P_WAIT** )의 반환 값은 새 프로세스의 종료 상태입니다. 비동기 **_spawnlpe** 또는 **_wspawnlpe** ( *모드* 에 지정 된 **_P_NOWAIT** 또는 **_P_NOWAITO** )의 반환 값은 프로세스 핸들입니다. 프로세스가 정상적으로 종료되는 경우 종료 상태는 0입니다. 생성 된 프로세스가 0이 아닌 인수를 사용 하 여 **종료** 루틴을 호출 하는 경우 종료 상태를 0이 아닌 값으로 설정할 수 있습니다. 새 프로세스가 양수 값의 종료 상태를 명시적으로 설정하지 않은 경우, 양수 값의 종료 상태는 중단 또는 인터럽트로 인한 비정상적인 종료를 나타냅니다. 반환 값-1은 오류를 나타냅니다 (새 프로세스가 시작 되지 않음). 이 경우 **errno** 는 다음 값 중 하나로 설정 됩니다.
 
 | 값 | 설명 |
 |-|-|
@@ -102,7 +103,7 @@ intptr_t _wspawnlpe(
 
 이러한 각 함수는 새 프로세스를 만들어 실행하고, 각 명령줄 인수를 별도의 매개 변수로 전달하고, 포인터 배열을 환경 설정으로 전달합니다. 이러한 함수는 **PATH** 환경 변수를 사용 하 여 실행할 파일을 찾습니다.
 
-이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. *Cmdname* 또는 *arg0* 가 빈 문자열 또는 Null 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **errno** 를 **EINVAL**로 설정 하 고-1을 반환 합니다. 새로운 프로세스가 생성되지 않습니다.
+이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. *Cmdname* 또는 *arg0* 가 빈 문자열 또는 Null 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **errno** 를 **EINVAL** 로 설정 하 고-1을 반환 합니다. 새로운 프로세스가 생성되지 않습니다.
 
 ## <a name="requirements"></a>요구 사항
 

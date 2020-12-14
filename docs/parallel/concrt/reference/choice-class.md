@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: choice 클래스'
 title: choice 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ f1_keywords:
 helpviewer_keywords:
 - choice class
 ms.assetid: 4157a539-d5c2-4161-b1ab-536ce2888397
-ms.openlocfilehash: a5b9bc26b6d9ec66dc74e7adaad31eea1eece118
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a7597a3bd530185e316cdc42ebbc4696162d498f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224983"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97254471"
 ---
 # <a name="choice-class"></a>choice 클래스
 
@@ -55,9 +56,9 @@ class choice: public ISource<size_t>;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
-|[choice](#ctor)|오버로드되었습니다. `choice` 메시징 블록을 생성합니다.|
+|[choice](#ctor)|오버로드됨. `choice` 메시징 블록을 생성합니다.|
 |[~ choice 소멸자](#dtor)|메시징 블록을 소멸 시킵니다 `choice` .|
 
 ### <a name="public-methods"></a>Public 메서드
@@ -95,7 +96,7 @@ class choice: public ISource<size_t>;
 
 **네임 스페이스:** 동시성
 
-## <a name="accept"></a><a name="accept"></a>수락할
+## <a name="accept"></a><a name="accept"></a> 수락할
 
 `choice`호출자에 게 소유권을 전송 하는이 블록에서 제공 된 메시지를 수락 합니다.
 
@@ -113,11 +114,11 @@ virtual message<size_t>* accept(
 *_PTarget*<br/>
 메서드를 호출 하는 대상 블록에 대 한 포인터입니다 `accept` .
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 호출자에 게 소유권이 있는 메시지에 대 한 포인터입니다.
 
-## <a name="acquire_ref"></a><a name="acquire_ref"></a>acquire_ref
+## <a name="acquire_ref"></a><a name="acquire_ref"></a> acquire_ref
 
 `choice`삭제를 방지 하기 위해이 메시징 블록의 참조 횟수를 가져옵니다.
 
@@ -134,7 +135,7 @@ virtual void acquire_ref(_Inout_ ITarget<size_t>* _PTarget);
 
 이 메서드는 메서드를 실행 하는 `ITarget` 동안이 소스에 연결 되는 개체에 의해 호출 됩니다 `link_target` .
 
-## <a name="choice"></a><a name="ctor"></a>적절
+## <a name="choice"></a><a name="ctor"></a> 적절
 
 `choice` 메시징 블록을 생성합니다.
 
@@ -174,7 +175,7 @@ choice(
 
 잠금이 있는 경우 이동 생성은 수행되지 않습니다. 즉, 이동하는 중에 간단한 작업이 실행되고 있지 않은지 확인할 책임은 사용자에게 있습니다. 그러지 않으면 수많은 레이스가 발생하여 예외가 발생하거나 일관성 없는 상태가 될 수 있습니다.
 
-## <a name="choice"></a><a name="dtor"></a>~ choice
+## <a name="choice"></a><a name="dtor"></a> ~ choice
 
 메시징 블록을 소멸 시킵니다 `choice` .
 
@@ -182,7 +183,7 @@ choice(
 ~choice();
 ```
 
-## <a name="consume"></a><a name="consume"></a>활용
+## <a name="consume"></a><a name="consume"></a> 활용
 
 이 메시징 블록에서 이전에 제공 하 고 대상에 의해 성공적으로 예약 된 메시지를 사용 하 여 `choice` 호출자에 게 소유권을 전송 합니다.
 
@@ -200,7 +201,7 @@ virtual message<size_t>* consume(
 *_PTarget*<br/>
 메서드를 호출 하는 대상 블록에 대 한 포인터입니다 `consume` .
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `message`호출자가 소유 하 고 있는 개체에 대 한 포인터입니다.
 
@@ -208,7 +209,7 @@ virtual message<size_t>* consume(
 
 `consume`메서드는와 유사 `accept` 하지만 항상 `reserve` 반환 되는를 호출 해야 합니다 **`true`** .
 
-## <a name="has_value"></a><a name="has_value"></a>has_value
+## <a name="has_value"></a><a name="has_value"></a> has_value
 
 이 `choice` 메시징 블록이 아직 값을 사용 하 여 초기화 되었는지 여부를 확인 합니다.
 
@@ -216,11 +217,11 @@ virtual message<size_t>* consume(
 bool has_value() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 블록에서 값을 받았으면이 고, **`false`** 그렇지 않으면입니다.
 
-## <a name="index"></a><a name="index"></a>인덱싱할
+## <a name="index"></a><a name="index"></a> 인덱싱할
 
 `tuple`메시징 블록에서 선택한 요소를 나타내는에 대 한 인덱스를 반환 합니다 `choice` .
 
@@ -228,7 +229,7 @@ bool has_value() const;
 size_t index();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 메시지 인덱스입니다.
 
@@ -236,7 +237,7 @@ size_t index();
 
 메시지 페이로드는 메서드를 사용 하 여 추출할 수 있습니다 `get` .
 
-## <a name="link_target"></a><a name="link_target"></a>link_target
+## <a name="link_target"></a><a name="link_target"></a> link_target
 
 대상 블록을이 `choice` 메시징 블록에 연결 합니다.
 
@@ -249,7 +250,7 @@ virtual void link_target(_Inout_ ITarget<size_t>* _PTarget);
 *_PTarget*<br/>
 `ITarget`이 메시징 블록에 연결할 블록에 대 한 포인터 `choice` 입니다.
 
-## <a name="release"></a><a name="release"></a>릴리스
+## <a name="release"></a><a name="release"></a> 릴리스
 
 이전의 성공적인 메시지 예약을 해제 합니다.
 
@@ -267,7 +268,7 @@ virtual void release(
 *_PTarget*<br/>
 메서드를 호출 하는 대상 블록에 대 한 포인터입니다 `release` .
 
-## <a name="release_ref"></a><a name="release_ref"></a>release_ref
+## <a name="release_ref"></a><a name="release_ref"></a> release_ref
 
 이 메시징 블록에서 참조 횟수를 해제 `choice` 합니다.
 
@@ -284,7 +285,7 @@ virtual void release_ref(_Inout_ ITarget<size_t>* _PTarget);
 
 이 메서드는이 소스에서 연결을 해제 하는 개체에 의해 호출 됩니다 `ITarget` . 소스 블록은 대상 블록에 예약 된 모든 리소스를 해제할 수 있습니다.
 
-## <a name="reserve"></a><a name="reserve"></a>두기
+## <a name="reserve"></a><a name="reserve"></a> 두기
 
 이 메시징 블록에 의해 이전에 제공 된 메시지를 예약 `choice` 합니다.
 
@@ -302,7 +303,7 @@ virtual bool reserve(
 *_PTarget*<br/>
 메서드를 호출 하는 대상 블록에 대 한 포인터입니다 `reserve` .
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 메시지가 성공적으로 예약 되었으면이 고, **`false`** 그렇지 않으면입니다. 예약은 메시지를 이미 다른 대상이 예약했거나 수락한 경우, 소스에서 예약을 거부한 경우 등과 같은 다양한 이유로 실패할 수 있습니다.
 
@@ -310,7 +311,7 @@ virtual bool reserve(
 
 를 호출한 후에 `reserve` 성공 하면 또는을 호출 `consume` 하 여 `release` 메시지를 각각 소유 하거나 제공 해야 합니다.
 
-## <a name="unlink_target"></a><a name="unlink_target"></a>unlink_target
+## <a name="unlink_target"></a><a name="unlink_target"></a> unlink_target
 
 이 메시징 블록에서 대상 블록을 해제 `choice` 합니다.
 
@@ -323,7 +324,7 @@ virtual void unlink_target(_Inout_ ITarget<size_t>* _PTarget);
 *_PTarget*<br/>
 `ITarget`이 메시징 블록에서 연결을 해제할 블록에 대 한 포인터 `choice` 입니다.
 
-## <a name="unlink_targets"></a><a name="unlink_targets"></a>unlink_targets
+## <a name="unlink_targets"></a><a name="unlink_targets"></a> unlink_targets
 
 이 메시징 블록에서 모든 대상을 해제 `choice` 합니다.
 
@@ -351,7 +352,7 @@ _Payload_type const& value();
 *_Payload_type*<br/>
 메시지 페이로드의 유형입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 메시지의 페이로드입니다.
 

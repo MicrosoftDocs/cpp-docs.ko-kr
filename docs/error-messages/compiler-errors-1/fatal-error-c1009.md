@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 심각한 오류 C1009'
 title: 심각한 오류 C1009
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1009
 ms.assetid: dcc8383c-3362-4c47-9c26-25d2451ebd53
-ms.openlocfilehash: df298db97e81be0f1f7ab89c89855d9b0f5c569c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: fc16b45a57f7d28c62fab99f13ce53c1d8477951
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80204830"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97262583"
 ---
 # <a name="fatal-error-c1009"></a>심각한 오류 C1009
 

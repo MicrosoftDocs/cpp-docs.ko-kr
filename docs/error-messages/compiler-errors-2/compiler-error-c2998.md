@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2998'
 title: 컴파일러 오류 C2998
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2998
 ms.assetid: 8193d491-b5d9-4477-acb1-cf166889c070
-ms.openlocfilehash: 2a9b4190cab9589fbe7419cba7ec94e49bb6d9ba
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 43370ee8659335f6d14a2850ba0b874434786ca0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74742407"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97253613"
 ---
 # <a name="compiler-error-c2998"></a>컴파일러 오류 C2998
 

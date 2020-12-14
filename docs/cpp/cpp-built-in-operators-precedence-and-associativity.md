@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: c + + 기본 제공 연산자, 우선 순위 및 결합성'
 title: C + + 기본 제공 연산자, 우선 순위 및 결합성
 ms.date: 07/23/2020
 helpviewer_keywords:
@@ -12,18 +13,18 @@ helpviewer_keywords:
 - evaluation order
 - hierarchy, operator
 ms.assetid: 95c1f0ba-dad8-4034-b039-f79a904f112f
-ms.openlocfilehash: 10c9e5db569ba211ed8d42386816b4f6bb71ee29
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ff8ae84a62ef47449364d0815922326d7b8566d4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221772"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97253964"
 ---
 # <a name="c-built-in-operators-precedence-and-associativity"></a>C + + 기본 제공 연산자, 우선 순위 및 결합성
 
 C++ 언어는 모든 C 연산자를 포함하며 몇 가지 새로운 연산자를 추가합니다. 연산자는 둘 이상의 피연산자에 대해 수행할 평가를 지정합니다.
 
-## <a name="precedence-and-associativity"></a>우선 순위 및 결합성
+## <a name="precedence-and-associativity"></a>우선 순위 및 연관성
 
 연산자 *우선 순위* 는 연산자가 둘 이상 포함 된 식의 작업 순서를 지정 합니다. 연산자 *결합성* 은 우선 순위가 같은 여러 연산자를 포함 하는 식에서 피연산자가 왼쪽 또는 오른쪽에 있는 연산자와 함께 그룹화 되는지 여부를 지정 합니다.
 
@@ -40,7 +41,7 @@ C + +에서는 일부 연산자에 대 한 대체 철자를 지정 합니다. C�
 | **그룹 1 우선 순위, 결합성 없음** |
 | [범위 확인](../cpp/scope-resolution-operator.md) | [`::`](../cpp/scope-resolution-operator.md) |
 | **그룹 2 우선 순위, 왼쪽에서 오른쪽으로의 결합성** |
-| [멤버 선택(개체 또는 포인터)](../cpp/member-access-operators-dot-and.md) | [`.`디스크나`->`](../cpp/member-access-operators-dot-and.md) |
+| [멤버 선택(개체 또는 포인터)](../cpp/member-access-operators-dot-and.md) | [`.` 디스크나 `->`](../cpp/member-access-operators-dot-and.md) |
 | [배열 첨자](../cpp/subscript-operator.md) | [`[]`](../cpp/subscript-operator.md) |
 | [함수 호출](../cpp/function-call-operator-parens.md) | [`()`](../cpp/function-call-operator-parens.md) |
 | [후위 증가](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md) | [`++`](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md) |
@@ -64,13 +65,13 @@ C + +에서는 일부 연산자에 대 한 대체 철자를 지정 합니다. C�
 | [개체 삭제](../cpp/delete-operator-cpp.md) | [`delete`](../cpp/delete-operator-cpp.md) |
 | [캐스팅이](../cpp/cast-operator-parens.md) | [`()`](../cpp/cast-operator-parens.md) |
 | **그룹 4 우선 순위, 왼쪽에서 오른쪽으로 결합성** |
-| [멤버 포인터(개체 또는 포인터)](../cpp/pointer-to-member-operators-dot-star-and-star.md) | [`.*`디스크나`->*`](../cpp/pointer-to-member-operators-dot-star-and-star.md) |
+| [멤버 포인터(개체 또는 포인터)](../cpp/pointer-to-member-operators-dot-star-and-star.md) | [`.*` 디스크나 `->*`](../cpp/pointer-to-member-operators-dot-star-and-star.md) |
 | **그룹 5 우선 순위, 왼쪽에서 오른쪽으로 결합성** |
-| [곱하기](../cpp/multiplicative-operators-and-the-modulus-operator.md) | [`*`](../cpp/multiplicative-operators-and-the-modulus-operator.md) |
+| [*](../cpp/multiplicative-operators-and-the-modulus-operator.md) | [`*`](../cpp/multiplicative-operators-and-the-modulus-operator.md) |
 | [사업부](../cpp/multiplicative-operators-and-the-modulus-operator.md) | [`/`](../cpp/multiplicative-operators-and-the-modulus-operator.md) |
-| [Modulus](../cpp/multiplicative-operators-and-the-modulus-operator.md) | [`%`](../cpp/multiplicative-operators-and-the-modulus-operator.md) |
+| [모듈러스](../cpp/multiplicative-operators-and-the-modulus-operator.md) | [`%`](../cpp/multiplicative-operators-and-the-modulus-operator.md) |
 | **그룹 6 우선 순위, 왼쪽에서 오른쪽으로 결합성** |
-| [더하기](../cpp/additive-operators-plus-and.md) | [`+`](../cpp/additive-operators-plus-and.md) |
+| [또한](../cpp/additive-operators-plus-and.md) | [`+`](../cpp/additive-operators-plus-and.md) |
 | [빼기](../cpp/additive-operators-plus-and.md) | [`-`](../cpp/additive-operators-plus-and.md) |
 | **그룹 7 우선 순위, 왼쪽에서 오른쪽으로의 결합성** |
 | [왼쪽 시프트](../cpp/left-shift-and-right-shift-operators-input-and-output.md) | [`<<`](../cpp/left-shift-and-right-shift-operators-input-and-output.md) |
@@ -79,9 +80,9 @@ C + +에서는 일부 연산자에 대 한 대체 철자를 지정 합니다. C�
 | [보다 작음](../cpp/relational-operators-equal-and-equal.md) | [`<`](../cpp/relational-operators-equal-and-equal.md) |
 | [보다 큼](../cpp/relational-operators-equal-and-equal.md) | [`>`](../cpp/relational-operators-equal-and-equal.md) |
 | [작거나 같음](../cpp/relational-operators-equal-and-equal.md) | [`<=`](../cpp/relational-operators-equal-and-equal.md) |
-| [다음보다 크거나 같음](../cpp/relational-operators-equal-and-equal.md) | [`>=`](../cpp/relational-operators-equal-and-equal.md) |
+| [크거나 같음](../cpp/relational-operators-equal-and-equal.md) | [`>=`](../cpp/relational-operators-equal-and-equal.md) |
 | **그룹 9 우선 순위, 왼쪽에서 오른쪽으로의 결합성** |
-| [등호](../cpp/equality-operators-equal-equal-and-exclpt-equal.md) | [`==`](../cpp/equality-operators-equal-equal-and-exclpt-equal.md) |
+| [같음](../cpp/equality-operators-equal-equal-and-exclpt-equal.md) | [`==`](../cpp/equality-operators-equal-equal-and-exclpt-equal.md) |
 | [같지 않음](../cpp/equality-operators-equal-equal-and-exclpt-equal.md) | [`!=`](../cpp/equality-operators-equal-equal-and-exclpt-equal.md) | **`not_eq`** |
 | **그룹 10 우선 순위 왼쪽에서 오른쪽 결합성** |
 | [비트 AND](../cpp/bitwise-and-operator-amp.md) | [`&`](../cpp/bitwise-and-operator-amp.md) | **`bitand`** |
@@ -110,7 +111,7 @@ C + +에서는 일부 연산자에 대 한 대체 철자를 지정 합니다. C�
 | **그룹 17 우선 순위, 오른쪽에서 왼쪽으로의 연관성** |
 | [throw 식](../cpp/try-throw-and-catch-statements-cpp.md) | [`throw`](../cpp/try-throw-and-catch-statements-cpp.md) |
 | **그룹 18 우선 순위, 왼쪽에서 오른쪽으로의 결합성** |
-| [쉼표로](../cpp/comma-operator.md) | [,](../cpp/comma-operator.md) |
+| [쉼표](../cpp/comma-operator.md) | [,](../cpp/comma-operator.md) |
 
 ## <a name="see-also"></a>참고 항목
 

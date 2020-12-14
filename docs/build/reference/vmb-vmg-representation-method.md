@@ -1,4 +1,5 @@
 ---
+description: 자세히 알아보기:/vmb,/vmg (표시 메서드)
 title: /vmb, /vmg(표시 메서드)
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,20 +14,20 @@ helpviewer_keywords:
 - representation method compiler options [C++]
 - /vmg compiler option [C++]
 ms.assetid: ecdb391c-7dab-40b1-916b-673d10889fd4
-ms.openlocfilehash: 25d24d7f92537f16e36213b8a8fd7b945fda7f5a
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: 19d183ef8d1dd152043d7249d907c9d5b48de230
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66504305"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97254287"
 ---
 # <a name="vmb-vmg-representation-method"></a>/vmb, /vmg(표시 메서드)
 
-컴파일러는 클래스 멤버에 대 한 포인터를 나타내는 데 사용 하는 메서드를 선택 합니다.
+컴파일러가 클래스 멤버에 대 한 포인터를 나타내는 데 사용 하는 메서드를 선택 합니다.
 
-사용 하 여 **/vmb** 정의 하는 경우 클래스는 클래스의 멤버에 대 한 포인터를 선언 하기 전에 합니다.
+클래스 멤버에 대 한 포인터를 선언 하기 전에 항상 클래스를 정의 하는 경우 **/vmb** 를 사용 합니다.
 
-사용 하 여 **/vmg** 클래스를 정의 하기 전에 클래스의 멤버에 대 한 포인터를 선언 합니다. 이 서로 참조 하는 두 개의 서로 다른 클래스에 멤버를 정의 하는 경우에 발생할 수 있습니다. 이러한 상호 참조 클래스에 대 한 정의 되기 전에 하나의 클래스를 참조 해야 합니다.
+클래스를 정의 하기 전에 **/vmg** 를 사용 하 여 클래스의 멤버에 대 한 포인터를 선언 합니다. 서로 다른 두 클래스에서 멤버를 정의 하는 경우 이러한 요구 사항이 발생할 수 있습니다. 상호 참조 하는 이러한 클래스의 경우 정의 되기 전에 한 클래스를 참조 해야 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -37,7 +38,7 @@ ms.locfileid: "66504305"
 
 ## <a name="remarks"></a>설명
 
-사용할 수도 있습니다 [pointers_to_members](../../preprocessor/pointers-to-members.md) 하거나 [상속 키워드](../../cpp/inheritance-keywords.md) 사용자 코드에 대 한 포인터 표현을 지정 합니다.
+코드에서 [pointers_to_members](../../preprocessor/pointers-to-members.md) 또는 [상속 키워드](../../cpp/inheritance-keywords.md) 를 사용 하 여 포인터 표현을 지정할 수도 있습니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
@@ -53,7 +54,7 @@ ms.locfileid: "66504305"
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
-[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)
+[MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)

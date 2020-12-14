@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 심각한 오류 C1008'
 title: 심각한 오류 C1008
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1008
 ms.assetid: 7de729e3-b2ca-4a68-95ab-8a1c920f3f2c
-ms.openlocfilehash: 614fbcd0fe938ecb845112f07357040f5084e59f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6ae9878b6e2178c469060d2df8ce563125c75923
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80204843"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97262596"
 ---
 # <a name="fatal-error-c1008"></a>심각한 오류 C1008
 

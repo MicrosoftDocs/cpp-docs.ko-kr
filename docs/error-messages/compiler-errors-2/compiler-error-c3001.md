@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3001'
 title: 컴파일러 오류 C3001
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3001
 ms.assetid: d0e03478-1b44-47e5-8f5b-70415fa1f8bc
-ms.openlocfilehash: 737754eb314b577ac73e91a5aab1ad31773fc5f3
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: cf8acec3fb95553787e14968b9ce3e608da83916
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75302213"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97253600"
 ---
 # <a name="compiler-error-c3001"></a>컴파일러 오류 C3001
 

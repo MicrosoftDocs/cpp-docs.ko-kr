@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3755'
 title: 컴파일러 오류 C3755
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3755
 ms.assetid: 9317b55e-a52e-4b87-b915-5a208d6eda38
-ms.openlocfilehash: cc4e5423dc8fc53a8f749e2392ff23658a0cb0f1
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 24d6af223b6a15cbf1740bf67144250007c2091d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90685117"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97253587"
 ---
 # <a name="compiler-error-c3755"></a>컴파일러 오류 C3755
 

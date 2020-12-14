@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 심각한 오류 C999 ~ C1999)'
 title: 심각한 컴파일러 오류 C999 ~ C1999
 ms.date: 04/21/2019
 f1_keywords:
@@ -50,16 +51,16 @@ helpviewer_keywords:
 - C1505
 - C1901
 ms.assetid: 6c8df109-7594-48ed-987a-97d9fe2b04af
-ms.openlocfilehash: 395d7403ef4fe04b671a84a61d320b27ad8ad1c7
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: 93b1e9d3998a3ad29d45e2b1c197807bf61e4176
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73626561"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97262843"
 ---
 # <a name="compiler-fatal-errors-c999-through-c1999"></a>심각한 컴파일러 오류 C999 ~ C1999
 
-설명서의이 섹션에 있는 문서에서는 Microsoft C/C++ 컴파일러로 생성 되는 오류 메시지의 하위 집합을 설명 합니다.
+설명서의이 섹션에 있는 문서에서는 Microsoft C/c + + 컴파일러에서 생성 되는 오류 메시지의 하위 집합을 설명 합니다.
 
 [!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
@@ -70,13 +71,13 @@ ms.locfileid: "73626561"
 |[심각한 오류 C999](../../error-messages/compiler-errors-1/fatal-error-c999.md)|알 수 없는 메시지. 자세한 내용을 보려면 Visual C++ [도움말] 메뉴에서 [기술 지원] 명령을 선택하거나 기술 지원 도움말 파일을 참조하세요.|
 |[심각한 오류 C1001](../../error-messages/compiler-errors-1/fatal-error-c1001.md)|컴파일러에서 내부 오류가 발생했습니다.<br /> (컴파일러 파일 '*file*', 줄 *number*)<br /> 이 문제를 해결하려면 위 목록에 나오는 위치 부근의 프로그램을 단순화하거나 변경하세요. 자세한 내용을 보려면 Visual C++ [도움말] 메뉴에서 [기술 지원] 명령을 선택하거나 기술 지원 도움말 파일을 참조하세요.|
 |[심각한 오류 C1002](../../error-messages/compiler-errors-1/fatal-error-c1002.md)|2번 패스에서 컴파일러의 힙 공간이 부족합니다.|
-|[심각한 오류 C1003](../../error-messages/compiler-errors-1/fatal-error-c1003.md)|오류 수가 *number*개를 초과했습니다. 컴파일을 중지합니다.|
+|[심각한 오류 C1003](../../error-messages/compiler-errors-1/fatal-error-c1003.md)|오류 수가 *number* 개를 초과 합니다. 컴파일 중지|
 |[심각한 오류 C1004](../../error-messages/compiler-errors-1/fatal-error-c1004.md)|예기치 않은 파일의 끝이 나타났습니다.|
 |[심각한 오류 C1005](../../error-messages/compiler-errors-1/fatal-error-c1005.md)|버퍼에 비해 문자열이 너무 깁니다.|
 |[심각한 오류 C1007](../../error-messages/compiler-errors-1/fatal-error-c1007.md)|인식할 수 없는 플래그 '*string*'이 '*option*'에 있습니다.|
 |[심각한 오류 C1008](../../error-messages/compiler-errors-1/fatal-error-c1008.md)|입력 파일을 지정하지 않았습니다.|
 |[심각한 오류 C1009](../../error-messages/compiler-errors-1/fatal-error-c1009.md)|컴파일러 한계: 매크로가 너무 많이 중첩되었습니다.|
-|[심각한 오류 C1010](../../error-messages/compiler-errors-1/fatal-error-c1010.md)|미리 컴파일된 헤더를 찾는 동안 예기치 않은 파일의 끝이 나타났습니다. 원본에 ' #include \<*파일*> '을 (를) 추가 하는 것을 잊은 경우|
+|[심각한 오류 C1010](../../error-messages/compiler-errors-1/fatal-error-c1010.md)|미리 컴파일된 헤더를 찾는 동안 예기치 않은 파일의 끝이 나타났습니다. ' #Include \<*file*> '를 소스에 추가 하는 것을 잊은 경우|
 |[심각한 오류 C1012](fatal-error-c1012.md)|괄호가 짝이 맞지 않습니다. '*character*"가 없습니다.|
 |[심각한 오류 C1013](fatal-error-c1013.md)|컴파일러 한계: 여는 괄호가 너무 많습니다.|
 |[심각한 오류 C1014](fatal-error-c1014.md)|포함 파일이 너무 많습니다. 수준 = *number*|
@@ -118,8 +119,8 @@ ms.locfileid: "73626561"
 |[심각한 오류 C1070](fatal-error-c1070.md)|'*file*' 파일에서 #if/#endif 쌍이 짝이 맞지 않습니다.|
 |[심각한 오류 C1071](../../error-messages/compiler-errors-1/fatal-error-c1071.md)|주석에서 예기치 않은 파일의 끝이 나타났습니다.|
 |[심각한 오류 C1073](../../error-messages/compiler-errors-1/fatal-error-c1073.md)|증분 컴파일과 관련된 내부 오류입니다(컴파일러 파일 '*file*', 줄 *number*).|
-|[심각한 오류 C1074](fatal-error-c1074.md)|'IDB'는 PDB 파일 *file*에 적합한 확장명이 아닙니다.|
-|[심각한 오류 C1075](../../error-messages/compiler-errors-1/fatal-error-c1075.md)|파일 끝에 있는 왼쪽 *token* 의 짝이 맞지 않습니다.|
+|[심각한 오류 C1074](fatal-error-c1074.md)|'IDB'는 PDB 파일 *file* 에 적합한 확장명이 아닙니다.|
+|[심각한 오류 C1075](../../error-messages/compiler-errors-1/fatal-error-c1075.md)|파일 끝에서 왼쪽 *토큰이* 일치 하지 않습니다.|
 |[심각한 오류 C1076](../../error-messages/compiler-errors-1/fatal-error-c1076.md)|컴파일러 한계: 내부 힙 한계에 도달했습니다. /Zm을 사용하여 한계를 더 높게 지정하세요.|
 |[심각한 오류 C1077](fatal-error-c1077.md)|컴파일러 한계: 명령줄 옵션을 *number* 개보다 많이 지정할 수 없습니다.|
 |[심각한 오류 C1079](../../error-messages/compiler-errors-1/fatal-error-c1079.md)|컴파일러 한계: PCH 파일 크기 한계를 초과했습니다.|
@@ -137,14 +138,14 @@ ms.locfileid: "73626561"
 |[심각한 오류 C1091](fatal-error-c1091.md)|컴파일러 한계: 문자열 길이가 *number* 바이트를 초과합니다.|
 |[심각한 오류 C1092](../../error-messages/compiler-errors-1/fatal-error-c1092.md)|편집하며 계속하기는 데이터 형식에 대한 변경 내용은 지원하지 않습니다. 빌드해야 합니다.|
 |[심각한 오류 C1093](../../error-messages/compiler-errors-1/fatal-error-c1093.md)|'*function*' API 호출이 '*HRESULT*'에서 실패했습니다 : '*description*'|
-|[심각한 오류 C1094](../../error-messages/compiler-errors-1/fatal-error-c1094.md)|'-Zm*number*': 명령줄 옵션이 미리 컴파일된 헤더('-Zm*number*')를 빌드하는 데 사용한 값과 일치하지 않습니다.|
+|[심각한 오류 C1094](../../error-messages/compiler-errors-1/fatal-error-c1094.md)|'-Zm *number*': 명령줄 옵션이 미리 컴파일된 헤더('-Zm *number*')를 빌드하는 데 사용한 값과 일치하지 않습니다.|
 |[심각한 오류 C1098](fatal-error-c1098.md)|버전이 편집하며 계속하기 엔진과 일치하지 않습니다.|
 |[심각한 오류 C1099](fatal-error-c1099.md)|편집하며 계속하기 엔진이 컴파일을 종료하고 있습니다.|
 |[심각한 오류 C1100](fatal-error-c1100.md)|OLE를 초기화할 수 없습니다. *error*|
 |심각한 오류 C1101|'*identifier*' 특성에 대한 처리기를 만들 수 없습니다.|
 |심각한 오류 C1102|초기화할 수 없습니다. *error*|
-|[심각한 오류 C1103](fatal-error-c1103.md)|progid를 가져오는 동안 심각한 오류가 발생했습니다. '*message*'|
-|[심각한 오류 C1104](fatal-error-c1104.md)|libid를 가져오는 동안 심각한 오류가 발생했습니다. '*message*'|
+|[심각한 오류 C1103](fatal-error-c1103.md)|progid를 가져오는 동안 심각한 오류가 발생 했습니다. '*message*'|
+|[심각한 오류 C1104](fatal-error-c1104.md)|libid를 가져오는 동안 심각한 오류가 발생 했습니다. '*message*'|
 |심각한 오류 C1105|*message*: *error*|
 |[심각한 오류 C1107](../../error-messages/compiler-errors-1/fatal-error-c1107.md)|'*assembly*' 어셈블리를 찾을 수 없습니다. /AI를 사용하거나 LIBPATH 환경 변수를 설정하여 어셈블리 검색 경로를 지정하세요.|
 |[심각한 오류 C1108](fatal-error-c1108.md)|'*file*' DLL을 찾을 수 없습니다.|
@@ -156,9 +157,9 @@ ms.locfileid: "73626561"
 |심각한 오류 C1114|'*file*': WinRT는 관리되는 어셈블리의 #using을 지원하지 않습니다.|
 |[심각한 오류 C1120](../../error-messages/compiler-errors-1/fatal-error-c1120.md)|'*function*'에 대한 GetProcAddress 호출이 실패했습니다.|
 |[심각한 오류 C1121](../../error-messages/compiler-errors-1/fatal-error-c1121.md)|CryptoAPI에 대한 호출이 실패했습니다.|
-|[심각한 오류 C1126](../../error-messages/compiler-errors-1/fatal-error-c1126.md)|자동 할당이 *size*를 초과합니다.|
+|[심각한 오류 C1126](../../error-messages/compiler-errors-1/fatal-error-c1126.md)|자동 할당이 *size* 를 초과합니다.|
 |[심각한 오류 C1128](../../error-messages/compiler-errors-1/fatal-error-c1128.md)|섹션 수가 개체 파일 형식 한도를 초과했습니다. /bigobj를 사용하여 컴파일하세요.|
-|[심각한 오류 C1189](../../error-messages/compiler-errors-1/fatal-error-c1189.md)|#error: *message*|
+|[심각한 오류 C1189](../../error-messages/compiler-errors-1/fatal-error-c1189.md)|#error: *메시지*|
 |[심각한 오류 C1190](fatal-error-c1190.md)|관리되는 대상 코드에는 '/clr' 옵션을 사용해야 합니다.|
 |[심각한 오류 C1191](../../error-messages/compiler-errors-1/fatal-error-c1191.md)|전역 범위에서만 '*file*'을 가져올 수 있습니다.|
 |[심각한 오류 C1192](../../error-messages/compiler-errors-1/fatal-error-c1192.md)|#using이 '*file*'에서 실패했습니다.|
@@ -176,15 +177,15 @@ ms.locfileid: "73626561"
 |[심각한 오류 C1210](fatal-error-c1210.md)|설치된 런타임 버전에서는 /clr:pure 및 /clr:safe가 지원되지 않습니다.|
 |[심각한 오류 C1211](fatal-error-c1211.md)|설치된 런타임 버전에서는 TypeForwardedTo 사용자 지정 특성이 지원되지 않습니다.|
 |심각한 오류 C1300|*file* (*message*) 프로그램 데이터베이스에 액세스하는 동안 오류가 발생했습니다.|
-|심각한 오류 C1301|*file*프로그램 데이터베이스에 액세스하는 동안 오류가 발생했습니다. 형식이 잘못되었습니다. 삭제한 다음 다시 빌드하세요.|
+|심각한 오류 C1301|*file* 프로그램 데이터베이스에 액세스하는 동안 오류가 발생했습니다. 형식이 잘못되었습니다. 삭제한 다음 다시 빌드하세요.|
 |심각한 오류 C1302|'*module*' 모듈의 프로필 데이터가 '*file*' 프로필 데이터베이스에 없습니다.|
 |[심각한 오류 C1305](../../error-messages/compiler-errors-1/fatal-error-c1305.md)|'*file*' 프로필 데이터베이스는 다른 아키텍처용입니다.|
 |심각한 오류 C1306|'*file*' 프로필 데이터베이스의 마지막 변경 내용이 최적화 분석이 아닙니다. 최적화 결정 기간이 만료되었습니다.|
 |[심각한 오류 C1307](../../error-messages/compiler-errors-1/fatal-error-c1307.md)|프로필 데이터가 수집된 이후 프로그램이 편집되었습니다.|
 |[심각한 오류 C1308](../../error-messages/compiler-errors-1/fatal-error-c1308.md)|*file*: 링크 어셈블리는 지원되지 않습니다.|
-|[심각한 오류 C1309](../../error-messages/compiler-errors-1/fatal-error-c1309.md)|C2.DLL과 pgodb*ver*.DLL의 버전이 일치하지 않습니다.|
+|[심각한 오류 C1309](../../error-messages/compiler-errors-1/fatal-error-c1309.md)|C2.DLL과 pgodb *ver*.DLL의 버전이 일치하지 않습니다.|
 |[심각한 오류 C1310](fatal-error-c1310.md)|OpenMP에서는 프로필 기반 최적화를 사용할 수 없습니다.|
-|[심각한 오류 C1311](../../error-messages/compiler-errors-1/fatal-error-c1311.md)|COFF 형식은*number*바이트의 주소를 사용하여 ' *symbol* '을 정적으로 초기화할 수 없습니다.|
+|[심각한 오류 C1311](../../error-messages/compiler-errors-1/fatal-error-c1311.md)|COFF 형식은 *number* 바이트의 주소를 사용하여 ' *symbol* '을 정적으로 초기화할 수 없습니다.|
 |[심각한 오류 C1312](fatal-error-c1312.md)|함수에 조건부 분기가 너무 많습니다.  소스 코드를 단순화하거나 리팩터링하세요.|
 |[심각한 오류 C1313](../../error-messages/compiler-errors-1/fatal-error-c1313.md)|컴파일러 한도: *type* 블록은 *number* 보다 깊은 수준으로 중첩될 수 없습니다.|
 |[심각한 오류 C1350](../../error-messages/compiler-errors-1/fatal-error-c1350.md)|'*file*' dll을 로드하는 동안 오류가 발생했습니다. dll을 찾을 수 없습니다.|
@@ -210,9 +211,9 @@ ms.locfileid: "73626561"
 |심각한 오류 C1901|내부 메모리 관리 오류입니다.|
 |[심각한 오류 C1902](../../error-messages/compiler-errors-1/fatal-error-c1902.md)|프로그램 데이터베이스 관리자가 일치하지 않습니다. 설치를 확인하세요.|
 |[심각한 오류 C1903](fatal-error-c1903.md)|이전 오류를 복구할 수 없습니다. 컴파일이 중지됩니다.|
-|[심각한 오류 C1904](fatal-error-c1904.md)|잘못된 공급자 상호 작용: '*file*'|
+|[심각한 오류 C1904](fatal-error-c1904.md)|잘못 된 공급자 상호 작용: '*file*'|
 |[심각한 오류 C1905](../../error-messages/compiler-errors-1/fatal-error-c1905.md)|프런트 엔드와 백 엔드가 호환되지 않습니다. 같은 프로세서를 대상으로 해야 합니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[C/C++ 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md)
+[C/C++ 컴파일러와 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md)

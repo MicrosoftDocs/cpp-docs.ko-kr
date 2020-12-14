@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 심각한 오류 C1004'
 title: 심각한 오류 C1004
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1004
 ms.assetid: dbe034b0-6eb0-41b4-a50c-2fccf9e78ad4
-ms.openlocfilehash: 82a1a3e410505be53d4356e46d5521aebb72763c
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: f21978f5ff314a8273dde60428dc89ca0c5767b0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756970"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97262687"
 ---
 # <a name="fatal-error-c1004"></a>심각한 오류 C1004
 
@@ -31,7 +32,7 @@ ms.locfileid: "74756970"
 
 - 기본 디스크 드라이브에 임시 파일의 공간이 부족 하 여 원본 파일 만큼 공간이 두 배 정도 필요 합니다.
 
-- False로 계산 되는 `#if` 지시문에는 closing `#endif` 지시문이 없습니다.
+- `#if`False로 평가 되는 지시문에는 닫는 `#endif` 지시문이 없습니다.
 
 - 원본 파일이 캐리지 리턴 및 줄 바꿈으로 끝나지 않습니다.
 
@@ -44,7 +45,7 @@ int main() {}
 // C1004
 ```
 
-가능한 해결 방법:
+해결 방법:
 
 ```cpp
 // C1004b.cpp

@@ -1,4 +1,5 @@
 ---
+description: 자세한 정보:/Z7,/Zi,/ZI (디버그 정보 형식)
 title: /Z7, /Zi, /ZI(디버깅 정보 형식)
 ms.date: 07/06/2020
 f1_keywords:
@@ -23,11 +24,12 @@ helpviewer_keywords:
 - line numbers only compiler option [C++]
 - cl.exe compiler, debugging options
 - -Z7 compiler option [C++]
-ms.openlocfilehash: bc3fd9c065219a128e29290084b1e1fb51fc773e
-ms.sourcegitcommit: 85d96eeb1ce41d9e1dea947f65ded672e146238b
+ms.openlocfilehash: 604c34cac5c3cd049f23e21f5db033c0ecc8c480
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86058596"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97263233"
 ---
 # <a name="z7-zi-zi-debug-information-format"></a>/Z7, /Zi, /ZI(디버깅 정보 형식)
 
@@ -71,7 +73,7 @@ ms.locfileid: "86058596"
 
 옵션은와 **`/ZI`** 유사 **`/Zi`** 하지만 [편집 하며 계속 하기](/visualstudio/debugger/edit-and-continue-visual-cpp) 기능을 지 원하는 형식으로 PDB 파일을 생성 합니다. 편집 하며 계속 하기 디버깅 기능을 사용 하려면이 옵션을 사용 해야 합니다. 편집 하며 계속 하기 기능은 개발자 생산성에 유용 하지만 코드 크기, 성능 및 컴파일러 규칙에서 문제를 일으킬 수 있습니다. 대부분의 최적화는 편집 하며 계속 하기와 호환 되지 않으므로를 사용 하면 **`/ZI`** `#pragma optimize` 코드에서 문을 사용할 수 없습니다. **`/ZI`** 이 옵션은 [ `__LINE__` 미리 정의 된 매크로](../../preprocessor/predefined-macros.md)의 사용과 호환 되지 않습니다 .를 사용 하 여 컴파일된 코드는 **`/ZI`** `__LINE__` 형식이 아닌 템플릿 인수로 사용할 수 없지만 `__LINE__` 매크로 확장에는 사용할 수 있습니다.
 
-**`/ZI`** 옵션은 컴파일에 사용할 [ `/Gy` (함수 수준 링크 사용)](gy-enable-function-level-linking.md) 및 [ `/FC` (진단의 소스 코드 파일의 전체 경로)](fc-full-path-of-source-code-file-in-diagnostics.md) 옵션을 모두 강제로 적용 합니다.
+**`/ZI`** 옵션은 컴파일에 사용 될 [ `/Gy` (Function-Level 연결 사용)](gy-enable-function-level-linking.md) 및 [ `/FC` (진단의 소스 코드 파일의 전체 경로)](fc-full-path-of-source-code-file-in-diagnostics.md) 옵션을 모두 강제로 적용 합니다.
 
 **`/ZI`** 는 [ `/clr` (공용 언어 런타임 컴파일)](clr-common-language-runtime-compilation.md)와 호환 되지 않습니다.
 
@@ -84,13 +86,13 @@ ms.locfileid: "86058596"
 
 1. **구성 속성**  >  **C/c + +**  >  **일반** 속성 페이지를 엽니다.
 
-1. **디버그 정보 형식** 속성을 수정 합니다. **확인**을 선택하여 변경 내용을 저장합니다.
+1. **디버그 정보 형식** 속성을 수정 합니다. **확인** 을 선택하여 변경 내용을 저장합니다.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.DebugInformationFormat%2A>을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
 [MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

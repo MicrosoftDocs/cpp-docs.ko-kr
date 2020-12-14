@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4032'
 title: 컴파일러 경고 (수준 4) C4032
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4032
 ms.assetid: 70dd0c85-0239-43f9-bb06-507f6a57d206
-ms.openlocfilehash: 84bfef28de2899a216616a6a5d9fb15422f2afec
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 1c150bff398bbd2d6e5f1a8d21211f4c6b4cb6bd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80185414"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97262102"
 ---
 # <a name="compiler-warning-level-4-c4032"></a>컴파일러 경고 (수준 4) C4032
 

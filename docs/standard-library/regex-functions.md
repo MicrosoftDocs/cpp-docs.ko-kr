@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: &lt; regex &gt; 함수'
 title: '&lt;regex&gt; 함수'
 ms.date: 09/10/2018
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - std::regex_search [C++]
 - std::swap [C++]
 - std::swap [C++]
-ms.openlocfilehash: fd7087025939a0aacf17153f201e37fc377653f9
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: aa2186d7b394d1b603d5600d1977efa8d268a32f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842873"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97253340"
 ---
 # <a name="ltregexgt-functions"></a>&lt;regex&gt; 함수
 
@@ -124,11 +125,11 @@ bool regex_match(
 일치 항목을 찾을 정규식입니다. 및의 경우를 입력 `regex` `string` `char*` `wregex` 하 고, 및의 경우을 입력 `wstring` `wchar_t*` 합니다.
 
 *문자열*\
-일치하는 문자열입니다. *Elem*형식에 해당 합니다.
+일치하는 문자열입니다. *Elem* 형식에 해당 합니다.
 
 ### <a name="remarks"></a>설명
 
-각 템플릿 함수는 전체 피연산자 시퀀스 *str* 이 정규식 인수 *re*와 정확히 일치 하는 경우에만 true를 반환 합니다. [Regex_search](../standard-library/regex-functions.md#regex_search) 를 사용 하 여 대상 시퀀스 내에서 부분 문자열을 일치 시키고 `regex_iterator` 여러 개의 일치 항목을 찾습니다. `match_results` 개체를 사용하는 함수는 일치에 성공했는지 여부를 반영하도록 멤버를 설정하고 그런 경우 정규식의 다양한 캡처 그룹이 캡처됩니다.
+각 템플릿 함수는 전체 피연산자 시퀀스 *str* 이 정규식 인수 *re* 와 정확히 일치 하는 경우에만 true를 반환 합니다. [Regex_search](../standard-library/regex-functions.md#regex_search) 를 사용 하 여 대상 시퀀스 내에서 부분 문자열을 일치 시키고 `regex_iterator` 여러 개의 일치 항목을 찾습니다. `match_results` 개체를 사용하는 함수는 일치에 성공했는지 여부를 반영하도록 멤버를 설정하고 그런 경우 정규식의 다양한 캡처 그룹이 캡처됩니다.
 
 `match_results` 개체를 사용하는 함수는 일치에 성공했는지 여부를 반영하도록 멤버를 설정하고 그런 경우 정규식의 다양한 캡처 그룹이 캡처됩니다.
 
@@ -258,7 +259,7 @@ basic_string<Elem> regex_replace(
 
 ### <a name="remarks"></a>설명
 
-첫 번째 함수는 [Regex_iterator 클래스](../standard-library/regex-iterator-class.md) 개체를 생성 하 고이 개체를 사용 하 여 `iter(first, last, re, flags)` 입력 범위를 `[first, last)` 일련의 버킷이라고로 분할 `T0 M0 T1 M1...TN-1 MN-1 TN` `Mn` 합니다. 여기서은 반복기에서 검색 한 n 번째 일치 항목입니다. 일치하는 항목이 없으면 `T0`은 전체 입력 범위이고 `N`은 0입니다. `(flags & format_first_only) != 0`이면 첫 번째 일치 항목만 사용되고 `T1`은 일치 항목 뒤에 오는 모든 입력 텍스트이며 `N`은 1입니다. 범위에 있는 각에 대해 `i` `[0, N)` `(flags & format_no_copy) == 0` 범위의 텍스트를 `Ti` 반복기 *출력*에 복사 하는 경우입니다. 그런 다음 `m.format(out, fmt, flags)` 를 호출 `m` 합니다. 여기서는 `match_results` `iter` 하위 시퀀스에 대 한 iterator 개체에서 반환 `Mi` 되는 개체입니다. 마지막으로, `(flags & format_no_copy) == 0` 범위의 텍스트를 `TN` 반복기 *out*에 복사 합니다. 함수는를 *반환 합니다*.
+첫 번째 함수는 [Regex_iterator 클래스](../standard-library/regex-iterator-class.md) 개체를 생성 하 고이 개체를 사용 하 여 `iter(first, last, re, flags)` 입력 범위를 `[first, last)` 일련의 버킷이라고로 분할 `T0 M0 T1 M1...TN-1 MN-1 TN` `Mn` 합니다. 여기서은 반복기에서 검색 한 n 번째 일치 항목입니다. 일치하는 항목이 없으면 `T0`은 전체 입력 범위이고 `N`은 0입니다. `(flags & format_first_only) != 0`이면 첫 번째 일치 항목만 사용되고 `T1`은 일치 항목 뒤에 오는 모든 입력 텍스트이며 `N`은 1입니다. 범위에 있는 각에 대해 `i` `[0, N)` `(flags & format_no_copy) == 0` 범위의 텍스트를 `Ti` 반복기 *출력* 에 복사 하는 경우입니다. 그런 다음 `m.format(out, fmt, flags)` 를 호출 `m` 합니다. 여기서는 `match_results` `iter` 하위 시퀀스에 대 한 iterator 개체에서 반환 `Mi` 되는 개체입니다. 마지막으로, `(flags & format_no_copy) == 0` 범위의 텍스트를 `TN` 반복기 *out* 에 복사 합니다. 함수는를 *반환 합니다*.
 
 두 번째 함수는 형식 `basic_string<charT>`의 지역 변수 `result`를 생성하고 `regex_replace(back_inserter(result), str.begin(), str.end(), re, fmt, flags)`를 호출합니다. `result`를 반환합니다.
 

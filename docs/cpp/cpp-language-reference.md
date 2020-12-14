@@ -1,16 +1,17 @@
-﻿---
+---
+description: '자세한 정보: c + + 언어 참조'
 title: C++ 언어 참조
 ms.custom: index-page
 ms.date: 12/10/2019
 helpviewer_keywords:
 - C++, language reference
 ms.assetid: 4be9cacb-c862-4391-894a-3a118c9c93ce
-ms.openlocfilehash: 7b0d1227419aef3174d4f18b11cdc334879383b1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 67d1adf6105d0f90a7ef29402624148dbcf8ea53
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221746"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97253925"
 ---
 # <a name="c-language-reference"></a>C++ 언어 참조
 
@@ -69,10 +70,10 @@ C++의 연산자입니다.
 [예외 처리](../cpp/exception-handling-in-visual-cpp.md)<br/>
 C++ 예외 처리, SEH(구조적 예외 처리), 예외 처리 문을 작성하는 데 사용되는 키워드입니다.
 
-[어설션 및 사용자 제공 메시지](../cpp/assertion-and-user-supplied-messages-cpp.md)<br/>
-`#error`지시문, **`static_assert`** 키워드, `assert` 매크로.
+[어설션 및 User-Supplied 메시지](../cpp/assertion-and-user-supplied-messages-cpp.md)<br/>
+`#error` 지시문, **`static_assert`** 키워드, `assert` 매크로.
 
-[모음](../cpp/templates-cpp.md)<br/>
+[템플릿](../cpp/templates-cpp.md)<br/>
 템플릿 사양, 함수 템플릿, 클래스 템플릿, **`typename`** 키워드, 템플릿 및 매크로, 템플릿 및 스마트 포인터
 
 [이벤트 처리](../cpp/event-handling.md)<br/>
@@ -87,13 +88,13 @@ Microsoft C++ 전용 한정자입니다. 메모리 주소 지정, 호출 규칙,
 [컴파일러 COM 지원](../cpp/compiler-com-support.md)<br/>
 COM 형식을 지원하는 데 사용되는 Microsoft 전용 클래스 및 전역 함수에 대한 참조입니다.
 
-[Microsoft 확장](../cpp/microsoft-extensions.md)<br/>
+[Microsoft 확장명](../cpp/microsoft-extensions.md)<br/>
 C++에 대한 Microsoft 확장입니다.
 
 [비표준 동작](../cpp/nonstandard-behavior.md)<br/>
 Microsoft c + + 컴파일러의 비표준 동작에 대 한 정보입니다.
 
-[C++ 시작하기](welcome-back-to-cpp-modern-cpp.md)<br/>
+[C + +를 다시 시작 합니다.](welcome-back-to-cpp-modern-cpp.md)<br/>
 안전 하 고 정확 하며 효율적인 프로그램을 작성 하기 위한 최신 c + + 프로그래밍 방법에 대 한 개요입니다.
 
 ## <a name="related-sections"></a>관련 단원

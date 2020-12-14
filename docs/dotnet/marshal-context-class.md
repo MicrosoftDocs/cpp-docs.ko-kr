@@ -1,4 +1,5 @@
 ---
+description: Marshal_context 클래스에 대해 자세히 알아보세요.
 title: marshal_context 클래스
 ms.date: 01/16/2019
 ms.topic: reference
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - msclr::marshal_context class [C++]
 ms.assetid: 241b0cf6-4ca4-4812-aaee-d671c11dc034
-ms.openlocfilehash: aa5935332cfa12c02e8084136a311a7593a4f3b9
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 6fa625ed52ac69682574d52c423e54d200461e73
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91508583"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97253653"
 ---
 # <a name="marshal_context-class"></a>marshal_context 클래스
 
@@ -35,14 +36,14 @@ class marshal_context
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|설명|
+|Name|설명|
 |---------|-----------|
 |[marshal_context::marshal_context](#marshal-context)|`marshal_context`관리 되는 형식과 네이티브 데이터 형식 간의 데이터 변환에 사용할 개체를 생성 합니다.|
 |[marshal_context:: ~ marshal_context](#tilde-marshal-context)|`marshal_context` 개체를 제거합니다.|
 
 ### <a name="public-methods"></a>public 메서드
 
-|속성|설명|
+|Name|설명|
 |---------|-----------|
 |[marshal_context::marshal_as](#marshal-as)|특정 데이터 개체에 대 한 마샬링을 수행 하 여 관리 되는 형식과 네이티브 데이터 형식 간에 변환 합니다.|
 

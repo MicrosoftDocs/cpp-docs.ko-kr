@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: isfinite, _finite, _finitef'
 title: isfinite, _finite, _finitef
 ms.date: 01/31/2019
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - _finite function
 - _finitef function
 ms.assetid: 5a7d7ca7-befb-4e1f-831d-28713c6eb805
-ms.openlocfilehash: 7e15a6619e584ff52c07048fcf591835b799587f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ef0747c88d62445c1cbd31f5c7afe6a651f50880
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218704"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97263116"
 ---
 # <a name="isfinite-_finite-_finitef"></a>isfinite, _finite, _finitef
 
@@ -78,7 +79,7 @@ int _finitef(
 
 ## <a name="remarks"></a>설명
 
-`isfinite`는 C로 컴파일된 매크로 이며 c + +로 컴파일된 인라인 템플릿 함수입니다. `_finite`및 `_finitef` 함수는 Microsoft 전용입니다. `_finitef` 함수는 x86, ARM 또는 ARM64 플랫폼용으로 컴파일된 경우에만 사용할 수 있습니다.
+`isfinite` 는 C로 컴파일된 매크로 이며 c + +로 컴파일된 인라인 템플릿 함수입니다. `_finite`및 `_finitef` 함수는 Microsoft 전용입니다. `_finitef` 함수는 x86, ARM 또는 ARM64 플랫폼용으로 컴파일된 경우에만 사용할 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 

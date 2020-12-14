@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: wctype'
 title: wctype
 ms.date: 11/04/2016
 api_name:
@@ -24,12 +25,12 @@ helpviewer_keywords:
 - wctype function
 - wide characters
 ms.assetid: 14aded12-4087-4123-bc48-db4e10999223
-ms.openlocfilehash: f77082bbcc5f3cd9d82fb40993c3ac678e7e7ba2
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 0791d4f048dfa5d6804db14d577b1370ffbf8754
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70957787"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97254198"
 ---
 # <a name="wctype"></a>wctype
 
@@ -45,12 +46,12 @@ wctype_t wctype(
 
 ### <a name="parameters"></a>매개 변수
 
-*속성*<br/>
+*property*<br/>
 속성 문자열입니다.
 
 ## <a name="return-value"></a>반환 값
 
-현재 로캘의 **LC_CTYPE** 범주가 이름이 속성 문자열 *속성과*일치 하는 분류 규칙을 정의 하지 않는 경우이 함수는 0을 반환 합니다. 그렇지 않으면 이 함수는 [towctrans](towctrans.md)에 대한 후속 호출에 두 번째 인수로 사용할 수 있는 0이 아닌 값을 반환합니다.
+현재 로캘의 **LC_CTYPE** 범주가 이름이 속성 문자열 *속성과* 일치 하는 분류 규칙을 정의 하지 않는 경우이 함수는 0을 반환 합니다. 그렇지 않으면 이 함수는 [towctrans](towctrans.md)에 대한 후속 호출에 두 번째 인수로 사용할 수 있는 0이 아닌 값을 반환합니다.
 
 ## <a name="remarks"></a>설명
 
@@ -58,17 +59,17 @@ wctype_t wctype(
 
 |함수|다음과 같이 사용|
 |--------------|-------------|
-|iswalnum(c)|iswctype(c, wctype( "alnum" ) )|
-|iswalpha(c)|iswctype(c, wctype( "alpha" ) )|
-|iswcntrl(c)|iswctype(c, wctype( "cntrl" ) )|
-|iswdigit(c)|iswctype(c, wctype( "digit" ) )|
-|iswgraph(c)|iswctype(c, wctype( "graph" ) )|
-|iswlower(c)|iswctype(c, wctype( "lower" ) )|
-|iswprint(c)|iswctype(c, wctype( "print" ) )|
-|iswpunct(c)|iswctype(c, wctype( "punct" ) )|
-|iswspace(c)|iswctype(c, wctype( "space" ) )|
-|iswupper(c)|iswctype(c, wctype( "upper" ) )|
-|iswxdigit(c)|iswctype(c, wctype( "xdigit" ) )|
+|iswalnum (c)|iswctype (c, wctype ("alnum"))|
+|iswalpha (c)|iswctype (c, wctype ("alpha"))|
+|iswcntrl (c)|iswctype (c, wctype ("cntrl"))|
+|iswdigit (c)|iswctype (c, wctype ("digit"))|
+|iswgraph (c)|iswctype (c, wctype ("graph"))|
+|iswlower (c)|iswctype (c, wctype ("lower"))|
+|iswprint (c)|iswctype (c, wctype ("print"))|
+|iswpunct (c)|iswctype (c, wctype ("punct"))|
+|iswspace (c)|iswctype (c, wctype ("space"))|
+|iswupper (c)|iswctype (c, wctype ("upper"))|
+|iswxdigit (c)|iswctype (c, wctype ("xdigit"))|
 
 ## <a name="requirements"></a>요구 사항
 
@@ -76,9 +77,9 @@ wctype_t wctype(
 |-------------|---------------------|
 |**wctype**|\<wctype.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [데이터 변환](../../c-runtime-library/data-conversion.md)<br/>
 [setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>

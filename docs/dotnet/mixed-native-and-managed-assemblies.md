@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 혼합형 (네이티브 및 관리) 어셈블리'
 title: 혼합형(네이티브 및 관리) 어셈블리
 ms.date: 09/18/2018
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - mixed assemblies [C++]
 - native code [C++], .NET interoperatibility
 ms.assetid: 4299dfce-392f-4933-8bf0-5da2f0d1c282
-ms.openlocfilehash: eee54a6101a83a64c221ae016f69931e7fd7829b
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: b96ccb5a521cf009f7feabef01a292ac805b0b4e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86403701"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97253640"
 ---
 # <a name="mixed-native-and-managed-assemblies"></a>혼합형(네이티브 및 관리형) 어셈블리
 
@@ -53,7 +54,7 @@ Visual C++ **/clr** 컴파일러 옵션을 사용 하 여 혼합 된 관리 되�
 관리 되는 함수에 대 한 네이티브 진입점의 성능 영향에 대해 설명 합니다.
 
 [/Clr을 사용 하 여 빌드한 COM 개체를 사용할 때 CLR 종료 시 예외 방지](../dotnet/avoiding-exceptions-on-clr-shutdown-when-consuming-com-objects-built-with-clr.md)<br/>
-**/Clr**을 사용 하 여 컴파일된 COM 개체를 사용 하는 관리 되는 응용 프로그램의 적절 한 종료를 보장 하는 방법을 설명 합니다.
+**/Clr** 을 사용 하 여 컴파일된 COM 개체를 사용 하는 관리 되는 응용 프로그램의 적절 한 종료를 보장 하는 방법을 설명 합니다.
 
 [방법: CRT 라이브러리 DLL에 대 한 종속성을 제거 하 여 부분적으로 신뢰할 수 있는 응용 프로그램 만들기](../dotnet/create-a-partially-trusted-application.md)<br/>
 msvcm90.dll 종속성을 제거 하 여 Visual C++를 사용 하 여 부분적으로 신뢰할 수 있는 공용 언어 런타임 응용 프로그램을 만드는 방법을 설명 합니다.
