@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3354'
 title: 컴파일러 오류 C3354
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3354
 ms.assetid: 185de401-231e-4999-a149-172ee4c69d84
-ms.openlocfilehash: fdc5de7493decf1f44617ab22a00fb5e8852116f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cb2c110471b95010e56677608725e5d6abeaa5e7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231977"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97245319"
 ---
 # <a name="compiler-error-c3354"></a>컴파일러 오류 C3354
 

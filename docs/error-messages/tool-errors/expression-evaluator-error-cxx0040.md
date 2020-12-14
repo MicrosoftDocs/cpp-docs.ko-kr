@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 식 계산기 오류 CXX0040'
 title: 식 계산기 오류 CXX0040
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - CXX0040
 - CAN0040
 ms.assetid: 1914e605-d80b-4abc-9e8f-dbcbefec095b
-ms.openlocfilehash: a1e3d0f5794517dc48f7ab46ac93a3c7c8ea0a0c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 19415d1a38235fb1d5b6988d3a0879530875f043
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80185102"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97244695"
 ---
 # <a name="expression-evaluator-error-cxx0040"></a>식 계산기 오류 CXX0040
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 수학 오류 M6102'
 title: 수학 오류 M6102
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - M6102
 ms.assetid: dbd2241f-6595-431e-9597-d9dbdb3a0ca2
-ms.openlocfilehash: 146ca1f51b15ee87475bc2007d63259d70450f38
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: fd401fcf15eb10db5e3acd1280f7d51a57d77d9f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80173766"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97244396"
 ---
 # <a name="math-error-m6102"></a>수학 오류 M6102
 

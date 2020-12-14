@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2530'
 title: 컴파일러 오류 C2530
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2530
 ms.assetid: b790a312-48df-4a6a-9e27-be2c5f32f16c
-ms.openlocfilehash: 4eca5579f6bf132452a813d8dd99193df5f76b92
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 07980fb6d87b4e84bc0b253ccd317eba02fa81af
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500546"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258111"
 ---
 # <a name="compiler-error-c2530"></a>컴파일러 오류 C2530
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3372'
 title: 컴파일러 오류 C3372
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3372
 ms.assetid: 38ee39ed-03ff-4e6d-9104-f1977b96645d
-ms.openlocfilehash: 3ce3424559ff58dd36d6f2544a9d85c958f2ab3a
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 6da2517585f4d50251884810f5c4a951f93ff257
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74758595"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97245241"
 ---
 # <a name="compiler-error-c3372"></a>컴파일러 오류 C3372
 

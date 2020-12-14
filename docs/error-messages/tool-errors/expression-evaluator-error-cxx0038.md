@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 식 계산기 오류 CXX0038'
 title: 식 계산기 오류 CXX0038
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - CXX0038
 - CAN0038
 ms.assetid: 3327dc4e-1726-4924-a519-6ffd766a389c
-ms.openlocfilehash: 06105064db9f696784aaaef2d41d978935eac896
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: df1003c7812a24dcaf45a1c01d5bb57890a5280c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80185115"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97244825"
 ---
 # <a name="expression-evaluator-error-cxx0038"></a>식 계산기 오류 CXX0038
 

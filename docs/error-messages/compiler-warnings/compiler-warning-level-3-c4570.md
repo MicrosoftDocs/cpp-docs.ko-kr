@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 3) C4570'
 title: 컴파일러 경고(수준 3) C4570
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4570
 ms.assetid: feec1225-e6ad-4995-8d96-c22e864a77bd
-ms.openlocfilehash: 13767cdbd34c72953568181c15ad33119bf5179a
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: aa776654b77f8d548f197ac2dc35bd4474e92068
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991934"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97257773"
 ---
 # <a name="compiler-warning-level-3-c4570"></a>컴파일러 경고(수준 3) C4570
 

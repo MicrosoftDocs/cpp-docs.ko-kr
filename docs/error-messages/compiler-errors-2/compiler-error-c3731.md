@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3731'
 title: 컴파일러 오류 C3731
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3731
 ms.assetid: 45f89fcd-464c-4bc8-8a42-edcb5416d26c
-ms.openlocfilehash: 9acf80eec0d36db64fa070d691533e7085754ac0
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 8a7ad836083a8c103df7becd7605a0dfd0efeea7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74752953"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97245085"
 ---
 # <a name="compiler-error-c3731"></a>컴파일러 오류 C3731
 
