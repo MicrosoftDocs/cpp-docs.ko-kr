@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 액티브 문서 컨테이너 응용 프로그램 만들기'
 title: 액티브 문서 컨테이너 애플리케이션 만들기
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - MFC COM, active document containment
 - applications [MFC], active document container
 ms.assetid: 14e2d022-a6c5-4249-8712-706b0f4433f7
-ms.openlocfilehash: 860a8531a96a0671c808dba13523b492026eafe0
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 9bf00a73e7520cde45d4e43ae79813896d4c1129
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616348"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97309994"
 ---
 # <a name="creating-an-active-document-container-application"></a>액티브 문서 컨테이너 애플리케이션 만들기
 
@@ -21,13 +22,13 @@ ms.locfileid: "84616348"
 
 #### <a name="to-create-an-active-document-container-application"></a>액티브 문서 컨테이너 애플리케이션을 만들려면
 
-1. **파일** 메뉴의 **새** 하위 메뉴에서 **프로젝트**를 클릭 합니다.
+1. **파일** 메뉴의 **새** 하위 메뉴에서 **프로젝트** 를 클릭 합니다.
 
 1. 왼쪽 창에서 **Visual C++** 프로젝트 형식을 클릭 합니다.
 
 1. 오른쪽 창에서 **MFC 응용 프로그램** 을 선택 합니다.
 
-1. 프로젝트 이름을 *Myproj*로 선택 하 고 **확인**을 클릭 합니다.
+1. 프로젝트 이름을 *Myproj* 로 선택 하 고 **확인** 을 클릭 합니다.
 
 1. **복합 문서 지원** 페이지를 선택 합니다.
 
@@ -35,13 +36,13 @@ ms.locfileid: "84616348"
 
 1. **액티브 문서 컨테이너** 확인란을 선택 합니다.
 
-1. **Finish**를 클릭합니다.
+1. **Finish** 를 클릭합니다.
 
 1. MFC 애플리케이션 마법사에서 애플리케이션 생성이 완료되면 솔루션 탐색기를 사용해서 다음 파일을 엽니다.
 
    - *MyProjview.cpp*
 
-1. *MyProjview*에서 다음과 같이 변경 합니다.
+1. *MyProjview* 에서 다음과 같이 변경 합니다.
 
    - `CMyProjView::OnPreparePrinting`에서 함수 내용을 다음 코드로 바꿉니다.
 

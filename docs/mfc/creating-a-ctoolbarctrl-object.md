@@ -1,16 +1,17 @@
 ---
+description: '자세히 알아보기: CToolBarCtrl 개체 만들기'
 title: CToolBarCtrl 개체 만들기
 ms.date: 11/04/2016
 helpviewer_keywords:
 - toolbar controls [MFC], creating
 - CToolBarCtrl class [MFC], creating toolbars
 ms.assetid: a4f6bf0c-0195-4dbf-a09e-aee503e19dc3
-ms.openlocfilehash: 2627f9aaceeab7760e15b23435233e124c5ea6f0
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 2ea6f1c170fd82a18d4ceb9d5ca9e7fbadfcdbc5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618994"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97310111"
 ---
 # <a name="creating-a-ctoolbarctrl-object"></a>CToolBarCtrl 개체 만들기
 

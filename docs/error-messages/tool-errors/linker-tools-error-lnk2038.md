@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 링커 도구 오류 LNK2038'
 title: 링커 도구 오류 LNK2038
 ms.date: 12/15/2017
 f1_keywords:
 - LNK2038
 helpviewer_keywords:
 - LNK2038
-ms.openlocfilehash: ea1509d846c0bc5a85f0f0252b611dfd38496bcb
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 17fa86010b4248b68234292dd909fe50f6379c7e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91506013"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275661"
 ---
 # <a name="linker-tools-error-lnk2038"></a>링커 도구 오류 LNK2038
 
@@ -30,7 +31,7 @@ Visual Studio는 런타임 오류 또는 기타 예기치 않은 동작을 일�
 
 - `_ITERATOR_DEBUG_LEVEL` C + + 표준 라이브러리에서 사용 되는 보안 및 디버깅 기능 수준을 나타냅니다. 이러한 기능은 특정 C++ 표준 라이브러리 개체의 표현을 변경할 수 있으며, 그 결과 다른 보안 및 디버깅 기능을 사용하는 개체와 호환되지 않을 수 있습니다. 자세한 내용은 [_ITERATOR_DEBUG_LEVEL](../../standard-library/iterator-debug-level.md)을 참조하세요.
 
-- `RuntimeLibrary` 응용 프로그램 또는 라이브러리에서 사용 되는 c + + 표준 라이브러리 및 C 런타임의 버전을 나타냅니다. C++ 표준 라이브러리 또는 C 런타임 버전 중 하나를 사용하는 코드는 다른 버전을 사용하는 코드와 호환되지 않습니다. 자세한 내용은 [/md,/mt,/LD (런타임 라이브러리 사용)](../../build/reference/md-mt-ld-use-run-time-library.md)를 참조 하세요.
+- `RuntimeLibrary` 응용 프로그램 또는 라이브러리에서 사용 되는 c + + 표준 라이브러리 및 C 런타임의 버전을 나타냅니다. C++ 표준 라이브러리 또는 C 런타임 버전 중 하나를 사용하는 코드는 다른 버전을 사용하는 코드와 호환되지 않습니다. 자세한 내용은 [/md,/mt,/LD (Run-Time 라이브러리 사용)](../../build/reference/md-mt-ld-use-run-time-library.md)를 참조 하세요.
 
 - `_PPLTASKS_WITH_WINRT`[PPL (병렬 패턴 라이브러리)](../../parallel/concrt/parallel-patterns-library-ppl.md) 을 사용 하는 코드가 [/zw](../../build/reference/zw-windows-runtime-compilation.md) 컴파일러 옵션에 대해 다른 설정을 사용 하 여 컴파일된 개체에 연결 됨을 나타냅니다. (**/Zw** 는 c + +/cx 지원) PPL을 사용 하거나 PPL에 의존 하는 코드는 응용 프로그램의 나머지 부분에서 사용 되는 것과 동일한 **/Zw** 설정을 사용 하 여 컴파일해야 합니다.
 

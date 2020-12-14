@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 항목'
 title: entry (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - entry attribute
 ms.assetid: ba4843e3-d7ad-4b86-9a15-0b4192f0f698
-ms.openlocfilehash: 63e5ccebb1d3844af8dd11b4b094abe96e3e257c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: fbceea4c23d730ceba780ce68398a9d78fa9c33b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845317"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97259229"
 ---
 # <a name="entry"></a>entry
 
@@ -34,7 +35,7 @@ DLL의 진입점을 식별 하 여 모듈에서 내보낸 함수 또는 상수�
 
 ## <a name="example"></a>예제
 
-**항목**을 사용 하는 예제는 [idl_module](idl-module.md) 의 예제를 참조 하세요.
+**항목** 을 사용 하는 예제는 [idl_module](idl-module.md) 의 예제를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 

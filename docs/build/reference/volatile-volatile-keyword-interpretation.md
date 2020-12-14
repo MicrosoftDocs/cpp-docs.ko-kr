@@ -1,4 +1,5 @@
 ---
+description: 자세히 알아보기:/volatile (volatile 키워드 해석)
 title: /volatile(volatile 키워드 해석)
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,18 +14,18 @@ helpviewer_keywords:
 - volatile compiler option
 - -volatile compiler option [C++]
 ms.assetid: 9d08fcc6-5bda-44c8-8151-8d8d54f164b8
-ms.openlocfilehash: 7c2c1cd477b424f56e66bd9246e7bde76ad06120
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e75a9932cff59748cf75b89a3a85e89130de84f5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223787"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97259216"
 ---
 # <a name="volatile-volatile-keyword-interpretation"></a>/volatile(volatile 키워드 해석)
 
 [Volatile](../../cpp/volatile-cpp.md) 키워드를 해석 하는 방법을 지정 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **/volatile:**{**iso** | **ms**}
 
@@ -56,4 +57,4 @@ ms.locfileid: "87223787"
 
 [volatile](../../cpp/volatile-cpp.md)<br/>
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
-[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)
+[MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)

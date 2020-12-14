@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 코드 마법사로 대화 상자 클래스 만들기'
 title: 코드 마법사로 대화 상자 클래스 만들기
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,20 +8,20 @@ helpviewer_keywords:
 - code wizards
 - dialog classes [MFC], creating
 ms.assetid: a7157b9d-f1a8-4381-a4cf-180cd2c7f1b2
-ms.openlocfilehash: 5c534219ec656318e2e70a47df8536ddfbe26ab7
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 06015f72e051a8bac9d20fa802378ada0092328e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616330"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97310085"
 ---
 # <a name="creating-a-dialog-class-with-code-wizards"></a>코드 마법사로 대화 상자 클래스 만들기
 
 다음 표에서는 코드 마법사에서 관리 하는 데 도움이 되는 대화 상자 관련 태스크를 보여 줍니다.
 
-### <a name="dialog-related-tasks"></a>대화 상자 관련 작업
+### <a name="dialog-related-tasks"></a>작업 Dialog-Related
 
-|Task|적용 대상 . .|
+|작업|적용 대상 . .|
 |----------|--------------------|
 |대화 상자를 관리 하 [는 새 CDialog 파생 클래스를 만듭니다](creating-your-dialog-class.md) .|각 대화 상자.|
 |[Windows 메시지](handling-windows-messages-in-your-dialog-box.md) 를 대화 상자 클래스에 매핑합니다.|처리 하려는 각 메시지입니다.|
