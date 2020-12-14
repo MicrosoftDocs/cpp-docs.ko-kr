@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 링커 도구 오류 LNK1164'
 title: 링커 도구 오류 LNK1164
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1164
 ms.assetid: da89765c-affa-4f88-b170-6d6b19a577cf
-ms.openlocfilehash: 5f32fbd455faff449f57cfb9bb38009b03005913
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e4b9b1ae5bb7b15f192869fc8f633abf63cc9507
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80184036"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97281147"
 ---
 # <a name="linker-tools-error-lnk1164"></a>링커 도구 오류 LNK1164
 

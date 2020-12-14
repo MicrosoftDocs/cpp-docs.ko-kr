@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3244'
 title: 컴파일러 오류 C3244
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3244
 ms.assetid: dae6c49b-5212-4206-8f61-d4010c0b9969
-ms.openlocfilehash: 11de2ac8a652687d9826319f13b7c531534d5fe3
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 2c74efd321d87d6451d7949c72f1f50ebb6dface
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74754539"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97307224"
 ---
 # <a name="compiler-error-c3244"></a>컴파일러 오류 C3244
 

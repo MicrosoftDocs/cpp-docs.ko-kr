@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 링커 도구 오류 LNK1106'
 title: 링커 도구 오류 LNK1106
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1106
 ms.assetid: 528f7e65-04be-4966-b8af-9276837c7cda
-ms.openlocfilehash: 091d4e173bfb2eff8ffee2b5c30647f4d5e3bc04
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 85f353b6424cdd9ad12a99b29fec4f6119472cdb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80195372"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97281407"
 ---
 # <a name="linker-tools-error-lnk1106"></a>링커 도구 오류 LNK1106
 
 잘못 된 파일 또는 디스크가 꽉 찼습니다. 위치를 찾을 수 없습니다.
 
-도구가 메모리 매핑된 파일의 `location`를 읽거나 쓸 수 없습니다.
+도구가 `location` 메모리 매핑된 파일에서 읽거나 쓸 수 없습니다.
 
 ### <a name="to-fix-by-checking-the-following-possible-causes"></a>다음과 같은 가능한 원인을 확인하여 수정하려면
 

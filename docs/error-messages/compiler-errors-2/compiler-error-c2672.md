@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2672'
 title: 컴파일러 오류 C2672
 ms.date: 10/24/2017
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2672
 ms.assetid: 7e86338a-2d4b-40fe-9dd2-ac6886f3f31a
-ms.openlocfilehash: 9f844b54285a7df69bfb4387a7afcc82dfef9252
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 2de901eaa416f3ee675c7b09c342de74dc7207fe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80177133"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97282083"
 ---
 # <a name="compiler-error-c2672"></a>컴파일러 오류 C2672
 
@@ -19,7 +20,7 @@ ms.locfileid: "80177133"
 
 컴파일러가 지정 된 함수와 일치 하는 오버 로드 된 함수를 찾을 수 없습니다. 일치 하는 매개 변수를 사용 하는 함수가 없거나, 일치 하는 함수가 컨텍스트에서 필요한 액세스 가능성을가지고 있지 않습니다.
 
-특정 표준 라이브러리 컨테이너 또는 알고리즘에서 사용 하는 경우 형식은 액세스 가능한 멤버나 컨테이너 또는 알고리즘의 요구 사항을 충족 하는 friend 함수를 제공 해야 합니다. 예를 들어 반복기 형식은 `std::iterator<>`에서 파생 되어야 합니다. 컨테이너 요소 형식에 대해 비교 작업 또는 다른 연산자를 사용 하려면 형식이 왼쪽 피연산자와 오른쪽 피연산자로 모두 고려 되어야 합니다. 형식을 오른쪽 피연산자로 사용 하려면 연산자의 구현이 형식의 멤버가 아닌 함수로 구현 되어야 합니다.
+특정 표준 라이브러리 컨테이너 또는 알고리즘에서 사용 하는 경우 형식은 액세스 가능한 멤버나 컨테이너 또는 알고리즘의 요구 사항을 충족 하는 friend 함수를 제공 해야 합니다. 예를 들어 반복기 형식은에서 파생 되어야 `std::iterator<>` 합니다. 컨테이너 요소 형식에 대해 비교 작업 또는 다른 연산자를 사용 하려면 형식이 왼쪽 피연산자와 오른쪽 피연산자로 모두 고려 되어야 합니다. 형식을 오른쪽 피연산자로 사용 하려면 연산자의 구현이 형식의 멤버가 아닌 함수로 구현 되어야 합니다.
 
 ## <a name="example"></a>예제
 

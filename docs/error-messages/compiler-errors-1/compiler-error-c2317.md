@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2317'
 title: 컴파일러 오류 C2317
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2317
 ms.assetid: e44d129b-8d3e-4ce9-9d79-6791ee77f25e
-ms.openlocfilehash: 95444951106d74d01efe84f829b606eb2c547c99
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e83a69086c22349d12d041e3b6dc2fd97a227272
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221265"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97282226"
 ---
 # <a name="compiler-error-c2317"></a>컴파일러 오류 C2317
 

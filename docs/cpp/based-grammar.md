@@ -1,15 +1,16 @@
 ---
+description: __Based 문법에 대해 자세히 알아보세요.
 title: __based 문법
 ms.date: 11/04/2016
 helpviewer_keywords:
 - based addressing
 ms.assetid: a68ff750-c7fa-4c0c-8d5f-2df76e4686c5
-ms.openlocfilehash: 539ccef65477bafe2c46ce328bdaf65f52aff1b9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9c449c45700c57d0c6f6018ca47e40d42c4b2ad0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229157"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97304521"
 ---
 # <a name="__based-grammar"></a>__based 문법
 

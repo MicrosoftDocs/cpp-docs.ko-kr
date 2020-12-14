@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _tzset'
 title: _tzset
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - time environment variables
 - environment variables, setting time
 ms.assetid: 3f6ed537-b414-444d-b272-5dd377481930
-ms.openlocfilehash: 0791fe6002b751906c6bc6f83dafe1ccf202bc8b
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 3841acf0a0fa13b23a8c41dcf955feec76bc82d3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562027"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97304534"
 ---
 # <a name="_tzset"></a>_tzset
 
@@ -50,7 +51,7 @@ void _tzset( void );
 
 ## <a name="remarks"></a>설명
 
-**_Tzset** 함수는 **TZ** 환경 변수의 현재 설정을 사용 하 여 세 개의 전역 변수 **_daylight**, **_timezone**및 **_tzname**에 값을 할당 합니다. 이러한 변수는 [_ftime](ftime-ftime32-ftime64.md) 및 [LOCALTIME](localtime-localtime32-localtime64.md) 함수에서 utc (협정 세계시)를 현지 시간으로 수정 하는 데 사용 되 고 [시간](time-time32-time64.md) 함수는 시스템 시간에서 utc를 계산 하는 데 사용 됩니다. 다음 구문을 사용 하 여 **TZ** 환경 변수를 설정 합니다.
+**_Tzset** 함수는 **TZ** 환경 변수의 현재 설정을 사용 하 여 세 개의 전역 변수 **_daylight**, **_timezone** 및 **_tzname** 에 값을 할당 합니다. 이러한 변수는 [_ftime](ftime-ftime32-ftime64.md) 및 [LOCALTIME](localtime-localtime32-localtime64.md) 함수에서 utc (협정 세계시)를 현지 시간으로 수정 하는 데 사용 되 고 [시간](time-time32-time64.md) 함수는 시스템 시간에서 utc를 계산 하는 데 사용 됩니다. 다음 구문을 사용 하 여 **TZ** 환경 변수를 설정 합니다.
 
 > **set TZ =**_tzn_ \[ **+**&#124;**-** ]*hh* \[ **:**_mm_ \[ **:**_ss_]] [*dzn*]
 
@@ -67,7 +68,7 @@ void _tzset( void );
  초. *Mm* 에서 콜론 (**:**)으로 구분 합니다.
 
  *dzn* \
- 3자의 일광 절약 시간 표준 시간대(예: PDT)입니다. 표준 시간대에 일광 절약 시간이 적용 되지 않는 경우에는 *dzn*에 대 한 값 없이 **TZ** 를 설정 합니다. C 런타임 라이브러리에서는 DST(일광 절약 시간) 계산 구현을 위한 미국의 규칙이 사용된다고 가정합니다.
+ 3자의 일광 절약 시간 표준 시간대(예: PDT)입니다. 표준 시간대에 일광 절약 시간이 적용 되지 않는 경우에는 *dzn* 에 대 한 값 없이 **TZ** 를 설정 합니다. C 런타임 라이브러리에서는 DST(일광 절약 시간) 계산 구현을 위한 미국의 규칙이 사용된다고 가정합니다.
 
 > [!NOTE]
 > 계산할 때는 시간 차이의 부호에 주의해야 합니다. 시간 차이는 현지 시간에서 UTC로의 오프셋(역방향 아님)이므로 부호가 직관적으로 예상하는 것과 반대일 수 있습니다. UTC보다 빠른 표준 시간대의 경우 시간 차이가 음수이고, UTC보다 늦은 표준 시간대의 경우 차이가 양수입니다.
@@ -80,9 +81,9 @@ void _tzset( void );
 
 **TZ** 값이 설정 되지 않은 경우 **_tzset** 는 운영 체제에서 지정한 표준 시간대 정보를 사용 하려고 시도 합니다. Windows 운영 체제에서 이 정보는 제어판의 날짜/시간 애플리케이션에 지정되어 있습니다. **_Tzset** 이 정보를 얻을 수 없는 경우 기본적으로 태평양 표준 시간대를 의미 하는 PST8PDT를 사용 합니다.
 
-**TZ** 환경 변수 값에 따라 **_tzset** 를 호출할 때 **_daylight**, **_timezone**및 **_tzname** 전역 변수에 다음 값이 할당 됩니다.
+**TZ** 환경 변수 값에 따라 **_tzset** 를 호출할 때 **_daylight**, **_timezone** 및 **_tzname** 전역 변수에 다음 값이 할당 됩니다.
 
-|전역 변수|Description|기본값|
+|전역 변수|설명|기본값|
 |---------------------|-----------------|-------------------|
 |**_daylight**|**TZ** 설정에서 일광 절약 시간 표준 시간대를 지정 하는 경우 0이 아닌 값입니다. 그렇지 않으면 0입니다.|1|
 |**_timezone**|현지 시간과 UTC 사이의 차이(초)입니다.|28800(28800초 = 8시간)|

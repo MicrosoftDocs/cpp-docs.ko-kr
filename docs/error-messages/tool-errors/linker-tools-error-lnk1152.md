@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 링커 도구 오류 LNK1152'
 title: 링커 도구 오류 LNK1152
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1152
 ms.assetid: 2523b61a-1359-4612-9c16-7d1f705f32e6
-ms.openlocfilehash: 1c7cf650505314745b168c3a191b2e608d50e080
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 070a49c1794c4f4974631c64ff6dfc375cccbd0c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80184075"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97281173"
 ---
 # <a name="linker-tools-error-lnk1152"></a>링커 도구 오류 LNK1152
 

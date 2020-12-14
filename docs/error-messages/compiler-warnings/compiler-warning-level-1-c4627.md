@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4627'
 title: 컴파일러 경고(수준 1) C4627
 ms.date: 09/09/2018
 f1_keywords:
@@ -6,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4627
 ms.assetid: 8840f3e6-b496-423a-8635-eb55d5f854a2
-ms.openlocfilehash: 06db3d7e585dfe49b2e0854973f63834648613b7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fc4c6c3931775b090dfd4c7c2fd5fd97441d40d3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62221380"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97281446"
 ---
 # <a name="compiler-warning-level-1-c4627"></a>컴파일러 경고(수준 1) C4627
 
-> '*header_file*': 미리 컴파일된 헤더 사용을 찾을 때 건너뛰었습니다
+> '*header_file*': 미리 컴파일된 헤더 사용을 찾을 때 건너뛰었습니다.
 
-현재 소스 파일에는 [/Yu \(미리 컴파일된 헤더 파일을 사용 하 여)](../../build/reference/yu-use-precompiled-header-file.md) 미리 컴파일된 헤더를 포함 하기 전에 컴파일러가 무시 파일의 모든 항목 집합 옵션입니다. 경고 **C4627** 하는 경우 Visual Studio 2015 및 이전 버전에서 생성 됩니다 *header_file* 미리 컴파일된 헤더 파일, 전에 포함 된 미리 컴파일된 헤더 도포함되지않은경우및*header_file*합니다.
+현재 소스 파일에 [/Yu \( Use 미리 컴파일된 헤더 파일 사용)](../../build/reference/yu-use-precompiled-header-file.md) 옵션이 설정 된 경우 컴파일러는 미리 컴파일된 헤더를 포함 하기 전에 파일의 모든 항목을 무시 합니다. **C4627** 는 미리 컴파일된 헤더 파일 앞에 *header_file* 포함 되어 있고 미리 컴파일된 헤더에 *header_file* 도 포함 되지 않은 경우 Visual Studio 2015 이전 버전에서 생성 됩니다.
 
 ## <a name="example"></a>예제
 
-이 예제는 방법을 보여 주는 오류가 발생할 수 있습니다를 해결 하는 방법을 보여 줍니다.
+이 샘플은 오류가 발생 하는 방법을 보여 주고 문제를 해결 하는 방법을 보여 줍니다.
 
 ```cpp
 // c4627.cpp
@@ -34,6 +35,6 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [미리 컴파일된 헤더 파일 만들기](../../build/creating-precompiled-header-files.md)

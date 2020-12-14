@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 링커 도구 오류 LNK1141'
 title: 링커 도구 오류 LNK1141
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1141
 ms.assetid: 83b78606-6dd3-43a7-88e2-152f5359cbd8
-ms.openlocfilehash: 2564cbb557f818aa3ef06e0032335b534daf7188
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 4cfebb579def0ebec51eb60c1f4c5b978c7959be
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80184205"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97281186"
 ---
 # <a name="linker-tools-error-lnk1141"></a>링커 도구 오류 LNK1141
 
@@ -25,4 +26,4 @@ ms.locfileid: "80184205"
 
 ## <a name="see-also"></a>참고 항목
 
-[링커 입력 파일로 사용하는 .Exp 파일](../../build/reference/dot-exp-files-as-linker-input.md)
+[. 링커 입력 파일로 서의 Exp 파일](../../build/reference/dot-exp-files-as-linker-input.md)

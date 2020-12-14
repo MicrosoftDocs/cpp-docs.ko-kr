@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2673'
 title: 컴파일러 오류 C2673
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2673
 ms.assetid: 780230c0-619b-4a78-b01d-ff5886306741
-ms.openlocfilehash: 1a27b41c11905a509889d46da655900b69070445
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1b7d634e4c1b62860a648ef5327ffd8b888c7d7f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216117"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97282070"
 ---
 # <a name="compiler-error-c2673"></a>컴파일러 오류 C2673
 
