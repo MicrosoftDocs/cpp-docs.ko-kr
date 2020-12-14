@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2017'
 title: 컴파일러 오류 C2017
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2017
 ms.assetid: 1083eed9-9906-4a97-883c-54e52d7e82cd
-ms.openlocfilehash: 3911ef9af2eb0fab7d0f9296ddce8a0f9b32ae0d
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: c70bd39cb15a0eff5d209a6fc76e3dc44b990d8e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74751055"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97220905"
 ---
 # <a name="compiler-error-c2017"></a>컴파일러 오류 C2017
 

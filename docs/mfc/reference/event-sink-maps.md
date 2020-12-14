@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 이벤트 싱크 맵'
 title: 이벤트 싱크 맵
 ms.date: 11/04/2016
 helpviewer_keywords:
 - event sink maps [MFC]
 ms.assetid: a9757eb2-5f4a-45ec-a2cd-ce5eec85b16f
-ms.openlocfilehash: 2cbfbc70ae14ccda95c377cb1587bf9d2a1ad3e6
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: df18cdbba849ff0c8d7be5b038f997b6cc5df849
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837266"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219839"
 ---
 # <a name="event-sink-maps"></a>이벤트 싱크 맵
 
@@ -43,7 +44,7 @@ BEGIN_EVENTSINK_MAP(theClass, baseClass)
 이벤트 싱크가이를 매핑하는 컨트롤 클래스의 이름을 지정 합니다.
 
 *baseClass*<br/>
-*Theclass*의 기본 클래스 이름을 지정 합니다.
+*Theclass* 의 기본 클래스 이름을 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -105,7 +106,7 @@ OLE 컨트롤의 컨트롤 ID입니다.
 컨트롤에서 발생 한 이벤트의 디스패치 ID입니다.
 
 *pfnHandler*<br/>
-이벤트를 처리 하는 멤버 함수에 대 한 포인터입니다. 이 함수에는 BOOL 반환 형식 및 이벤트의 매개 변수와 일치 하는 매개 변수 형식이 있어야 합니다 ( *vtsParams*참조). 이벤트를 처리 했음을 나타내려면 함수에서 TRUE를 반환 해야 합니다. 그렇지 않으면 FALSE입니다.
+이벤트를 처리 하는 멤버 함수에 대 한 포인터입니다. 이 함수에는 BOOL 반환 형식 및 이벤트의 매개 변수와 일치 하는 매개 변수 형식이 있어야 합니다 ( *vtsParams* 참조). 이벤트를 처리 했음을 나타내려면 함수에서 TRUE를 반환 해야 합니다. 그렇지 않으면 FALSE입니다.
 
 *vtsParams*<br/>
 이벤트에 대 한 매개 변수의 형식을 지정 하는 **VTS_** 상수 시퀀스입니다. 이러한 상수는 DISP_FUNCTION와 같은 디스패치 맵 항목에서 사용 되는 상수와 동일 합니다.
@@ -147,7 +148,7 @@ ON_EVENT_RANGE(theClass, idFirst, idLast, dispid, pfnHandler,  vtsParams)
 컨트롤에서 발생 한 이벤트의 디스패치 ID입니다.
 
 *pfnHandler*<br/>
-이벤트를 처리 하는 멤버 함수에 대 한 포인터입니다. 이 함수에는 BOOL 반환 형식, UINT 형식의 첫 번째 매개 변수 (컨트롤 ID의 경우) 및 이벤트의 매개 변수와 일치 하는 추가 매개 변수 형식이 있어야 합니다 ( *vtsParams*참조). 이벤트를 처리 했음을 나타내려면 함수에서 TRUE를 반환 해야 합니다. 그렇지 않으면 FALSE입니다.
+이벤트를 처리 하는 멤버 함수에 대 한 포인터입니다. 이 함수에는 BOOL 반환 형식, UINT 형식의 첫 번째 매개 변수 (컨트롤 ID의 경우) 및 이벤트의 매개 변수와 일치 하는 추가 매개 변수 형식이 있어야 합니다 ( *vtsParams* 참조). 이벤트를 처리 했음을 나타내려면 함수에서 TRUE를 반환 해야 합니다. 그렇지 않으면 FALSE입니다.
 
 *vtsParams*<br/>
 이벤트에 대 한 매개 변수의 형식을 지정 하는 **VTS_** 상수 시퀀스입니다. 첫 번째 상수는 컨트롤 ID의 VTS_I4 형식 이어야 합니다. 이러한 상수는 DISP_FUNCTION와 같은 디스패치 맵 항목에서 사용 되는 상수와 동일 합니다.
@@ -193,7 +194,7 @@ ON_EVENT_REFLECT(theClass,  dispid, pfnHandler,  vtsParams)
 컨트롤에서 발생 한 이벤트의 디스패치 ID입니다.
 
 *pfnHandler*<br/>
-이벤트를 처리 하는 멤버 함수에 대 한 포인터입니다. 이 함수에는 이벤트의 매개 변수와 일치 하는 부울 반환 형식 및 매개 변수 형식이 있어야 합니다 ( *vtsParams*참조). 이벤트를 처리 했음을 나타내려면 함수에서 TRUE를 반환 해야 합니다. 그렇지 않으면 FALSE입니다.
+이벤트를 처리 하는 멤버 함수에 대 한 포인터입니다. 이 함수에는 이벤트의 매개 변수와 일치 하는 부울 반환 형식 및 매개 변수 형식이 있어야 합니다 ( *vtsParams* 참조). 이벤트를 처리 했음을 나타내려면 함수에서 TRUE를 반환 해야 합니다. 그렇지 않으면 FALSE입니다.
 
 *vtsParams*<br/>
 이벤트에 대 한 매개 변수의 형식을 지정 하는 **VTS_** 상수 시퀀스입니다. 이러한 상수는 DISP_FUNCTION와 같은 디스패치 맵 항목에서 사용 되는 상수와 동일 합니다.

@@ -1,15 +1,16 @@
-﻿---
+---
+description: '자세한 정보: 방법: shared_ptr 인스턴스 만들기 및 사용'
 title: '방법: shared_ptr 인스턴스 만들기 및 사용'
 ms.custom: how-to
 ms.date: 11/19/2019
 ms.topic: conceptual
 ms.assetid: 7d6ebb73-fa0d-4b0b-a528-bf05de96518e
-ms.openlocfilehash: 44d375f72cf409df1e67b72dd76e196051dacf93
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b98a9a349f7f33805bd86c58e854b1d988733da2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87187961"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97221256"
 ---
 # <a name="how-to-create-and-use-shared_ptr-instances"></a>방법: shared_ptr 인스턴스 만들기 및 사용
 
@@ -70,7 +71,7 @@ int main()
 }
 ```
 
-## <a name="example-1"></a>예제 1
+## <a name="example-1"></a>예 1
 
 가능하면 메모리 리소스를 처음으로 만들 때 [make_shared](../standard-library/memory-functions.md#make_shared) 함수를 사용하여 `shared_ptr`을 만듭니다. `make_shared`는 예외로부터 안전합니다. 동일한 호출을 사용하여 제어 블록 및 리소스에 대한 메모리를 할당하므로 생성 오버헤드가 감소됩니다. 를 사용 하지 않는 경우 `make_shared` **`new`** 생성자에 전달 하기 전에 명시적 식을 사용 하 여 개체를 만들어야 합니다 `shared_ptr` . 다음 예제에서는 새 개체와 함께 `shared_ptr`을 선언하고 초기화하는 다양한 방법을 보여 줍니다.
 

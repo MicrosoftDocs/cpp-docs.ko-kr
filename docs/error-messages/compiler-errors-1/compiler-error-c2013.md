@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2013'
 title: 컴파일러 오류 C2013
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2013
 ms.assetid: 6b5c955c-53da-48ee-8533-64ef5b905173
-ms.openlocfilehash: 3dd8c315351ccf38989fc113e7ee31b25e38a07f
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 2f883c24be5e02c58553ca6f7abe4f588ae8a2da
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757412"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97220970"
 ---
 # <a name="compiler-error-c2013"></a>컴파일러 오류 C2013
 
@@ -26,7 +27,7 @@ ms.locfileid: "74757412"
 #include <stdio.h    // C2013
 ```
 
-가능한 해결 방법:
+해결 방법:
 
 ```cpp
 // C2013b.cpp

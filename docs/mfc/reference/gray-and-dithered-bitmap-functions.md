@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 회색 및 디더링된 비트맵 함수'
 title: 회색 및 디더링된 비트맵 함수
 ms.date: 11/19/2018
 f1_keywords:
@@ -9,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - gray and dithered bitmap functions [MFC]
 ms.assetid: cb139a77-b85e-4504-9d93-24156ad77a41
-ms.openlocfilehash: 57f163fd36c0f25508d94a84495fcaf1956e277d
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 20391f0ee7227827e1d9d6e18c2379be1fd43612
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837205"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219735"
 ---
 # <a name="gray-and-dithered-bitmap-functions"></a>회색 및 디더링된 비트맵 함수
 

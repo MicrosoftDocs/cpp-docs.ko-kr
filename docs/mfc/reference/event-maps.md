@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 이벤트 맵'
 title: 이벤트 맵
 ms.date: 09/07/2019
 helpviewer_keywords:
 - event maps [MFC]
 ms.assetid: 1ed53aee-bc53-43cd-834a-6fb935c0d29b
-ms.openlocfilehash: aa11dbe1a0a3dc45893d1a05cda0ef1addb9e665
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f3a6e949a4dc40927fc8946610707fbb404a400b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837348"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219852"
 ---
 # <a name="event-maps"></a>이벤트 맵
 
@@ -81,7 +82,7 @@ BEGIN_EVENT_MAP(theClass,  baseClass)
 이벤트 맵이 있는 컨트롤 클래스의 이름을 지정 합니다.
 
 *baseClass*<br/>
-*Theclass*의 기본 클래스 이름을 지정 합니다.
+*Theclass* 의 기본 클래스 이름을 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -143,7 +144,7 @@ RGB 색 값을 나타내는 32 비트 정수를 포함 하 고 `IFontDisp` OLE �
 |VTS_COLOR|OLE_COLOR|
 |VTS_CY|통화|
 |VTS_DATE|DATE|
-|VTS_BSTR|**`const`**__char \* __|
+|VTS_BSTR|**`const`**__char \*__|
 |VTS_DISPATCH|LPDISPATCH|
 |VTS_FONT|`IFontDispatch*`|
 |VTS_HANDLE|HANDLE|
@@ -173,7 +174,7 @@ RGB 색 값을 나타내는 32 비트 정수를 포함 하 고 `IFontDisp` OLE �
 
 ## <a name="event_custom_id"></a><a name="event_custom_id"></a> EVENT_CUSTOM_ID
 
-*Dispid*로 지정 된 디스패치 ID에 속하는 사용자 지정 이벤트에 대 한 이벤트 발생 함수를 정의 합니다.
+*Dispid* 로 지정 된 디스패치 ID에 속하는 사용자 지정 이벤트에 대 한 이벤트 발생 함수를 정의 합니다.
 
 ```cpp
 EVENT_CUSTOM_ID(
@@ -240,7 +241,7 @@ BOOL memberFxn(
    LPCRECT  lpRect);
 ```
 
-*Lpmsg*, *hWndParent*및 *lpRect* 매개 변수의 값은 멤버 함수의 해당 매개 변수에서 가져옵니다 `IOleObject::DoVerb` .
+*Lpmsg*, *hWndParent* 및 *lpRect* 매개 변수의 값은 멤버 함수의 해당 매개 변수에서 가져옵니다 `IOleObject::DoVerb` .
 
 ### <a name="requirements"></a>요구 사항
 

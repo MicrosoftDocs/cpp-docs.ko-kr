@@ -1,14 +1,15 @@
 ---
+description: '자세히 알아보기: enum 클래스 (c + +/CLI 및 c + +/CX)'
 title: enum class(C++/CLI 및 C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 ms.assetid: 8010fa8c-bad6-45b4-8214-b4db64d7ffe1
-ms.openlocfilehash: 9acf93976b2f7751e85bf3ed0ddd2735c29e121c
-ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
+ms.openlocfilehash: 309a1defa7288ec13ca058cc366d9cb8deac01ed
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91590318"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97220671"
 ---
 # <a name="enum-class--ccli-and-ccx"></a>enum class(C++/CLI 및 C++/CX)
 
@@ -18,7 +19,7 @@ ms.locfileid: "91590318"
 
 ### <a name="remarks"></a>설명
 
-C++/CX 및 C++/CLI에서는 표준 C++ **enum class**와 유사하지만 접근성 지정자가 추가된 **public enum class** 및 **private enum class**를 지원합니다. **/clr**에서는 C++11 **enum class** 형식이 허용되지만, C++/CX 및 C++/CLI 형식이 아닌 ISO 열거형 형식을 사용할 것인지 확인하는 경고 C4472가 생성됩니다. ISO 표준 c + + 키워드에 대 한 자세한 내용은 **`enum`** [열거형](../cpp/enumerations-cpp.md)을 참조 하세요.
+C++/CX 및 C++/CLI에서는 표준 C++ **enum class** 와 유사하지만 접근성 지정자가 추가된 **public enum class** 및 **private enum class** 를 지원합니다. **/clr** 에서는 C++11 **enum class** 형식이 허용되지만, C++/CX 및 C++/CLI 형식이 아닌 ISO 열거형 형식을 사용할 것인지 확인하는 경고 C4472가 생성됩니다. ISO 표준 c + + 키워드에 대 한 자세한 내용은 **`enum`** [열거형](../cpp/enumerations-cpp.md)을 참조 하세요.
 
 ## <a name="windows-runtime"></a>Windows 런타임
 
@@ -48,7 +49,7 @@ accessenum structenumeration-identifier[:underlying-type] { enumerator-list } [v
 *열거자 목록*<br/>
 열거자 이름의 쉼표로 구분된 목록입니다.
 
-각 열거자의 값은 컴파일러에 의해 암시적으로 정의 되거나 notation *열거자* `=` *상수 식*에 의해 명시적으로 정의 되는 상수 식입니다. 기본적으로 첫 번째 열거자의 값은 암시적으로 정의된 경우 0입니다. 암시적으로 정의된 각 후속 열거자의 값은 이전 열거자의 값 + 1입니다.
+각 열거자의 값은 컴파일러에 의해 암시적으로 정의 되거나 notation *열거자* `=` *상수 식* 에 의해 명시적으로 정의 되는 상수 식입니다. 기본적으로 첫 번째 열거자의 값은 암시적으로 정의된 경우 0입니다. 암시적으로 정의된 각 후속 열거자의 값은 이전 열거자의 값 + 1입니다.
 
 *var*<br/>
 (선택 사항) 열거형 형식의 변수 이름입니다.
@@ -57,7 +58,7 @@ accessenum structenumeration-identifier[:underlying-type] { enumerator-list } [v
 
 자세한 내용과 예제는 [열거형](../cppcx/enums-c-cx.md)을 참조하세요.
 
-컴파일러는 열거자의 값을 정의하는 상수 식을 *underlying-type*으로 표현할 수 없는 경우 오류 메시지를 내보냅니다.  그러나 컴파일러는 내부 형식에 적합하지 않은 값에 대해 오류를 보고하지 않습니다. 예를 들면 다음과 같습니다.
+컴파일러는 열거자의 값을 정의하는 상수 식을 *underlying-type* 으로 표현할 수 없는 경우 오류 메시지를 내보냅니다.  그러나 컴파일러는 내부 형식에 적합하지 않은 값에 대해 오류를 보고하지 않습니다. 예를 들어:
 
 - *기본 형식이* 숫자이 고 열거자가 해당 형식의 최대값을 지정 하는 경우 다음 암시적으로 정의 된 열거형의 값을 나타낼 수 없습니다.
 
@@ -92,7 +93,7 @@ accessenum structname [:type] { enumerator-list } var;
 열거형의 이름입니다. 관리되는 익명 열거형은 허용되지 않습니다.
 
 *type*<br/>
-(선택 사항) ‘식별자’의 기본 형식입니다.** 이는 서명 되거나 서명 되지 않은 버전의, 또는와 같은 스칼라 형식일 수 있습니다 **`int`** **`short`** **`long`** .  **`bool`** 또는 **`char`** 도 사용할 수 있습니다.
+(선택 사항) ‘식별자’의 기본 형식입니다. 이는 서명 되거나 서명 되지 않은 버전의, 또는와 같은 스칼라 형식일 수 있습니다 **`int`** **`short`** **`long`** .  **`bool`** 또는 **`char`** 도 사용할 수 있습니다.
 
 *var*<br/>
 (선택 사항) 열거형 형식의 변수 이름입니다.

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2687'
 title: 컴파일러 오류 C2687
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2687
 ms.assetid: 1d24b24a-cd0f-41cc-975c-b08dcfb7f402
-ms.openlocfilehash: f3e728033a3230d628242aab341377be2f6670ca
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 38996f2f31998ef96dd848915686adb1bf46c987
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74760259"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97220762"
 ---
 # <a name="compiler-error-c2687"></a>컴파일러 오류 C2687
 
@@ -31,7 +32,7 @@ int main() {
 }
 ```
 
-가능한 해결 방법:
+해결 방법:
 
 ```cpp
 // C2687b.cpp

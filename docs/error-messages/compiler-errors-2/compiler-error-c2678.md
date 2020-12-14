@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C 2678'
 title: 컴파일러 오류 C 2678
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2678
 ms.assetid: 1f0a4e26-b429-44f5-9f94-cb66441220c8
-ms.openlocfilehash: c8f5b06e6c2f9966d714f4a360525617dbff400f
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 9314d3d0201e38c2ce13b48f59356e04e0925a3d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90743180"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97220866"
 ---
 # <a name="compiler-error-c2678"></a>컴파일러 오류 C 2678
 

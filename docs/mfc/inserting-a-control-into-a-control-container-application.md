@@ -1,16 +1,17 @@
 ---
+description: '다음에 대 한 자세한 정보: ActiveX 컨트롤 컨테이너: 컨트롤 컨테이너 응용 프로그램에 컨트롤 삽입'
 title: 'ActiveX 컨트롤 컨테이너: 컨트롤 컨테이너 애플리케이션에 컨트롤 삽입'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ActiveX control containers [MFC], inserting controls
 - ActiveX controls [MFC], adding to projects
 ms.assetid: bbb617ff-872f-43d8-b4d6-c49adb16b148
-ms.openlocfilehash: e8426fd7a420ef06650930e547d06c78cc094975
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 14e1895c39aeea788ab83b8a18be6d8b0ef6c20c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91503103"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97220606"
 ---
 # <a name="activex-control-containers-inserting-a-control-into-a-control-container-application"></a>ActiveX 컨트롤 컨테이너: 컨트롤 컨테이너 애플리케이션에 컨트롤 삽입
 

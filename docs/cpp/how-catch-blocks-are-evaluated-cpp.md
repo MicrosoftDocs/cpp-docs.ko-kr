@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: Catch 블록을 평가 하는 방법 (c + +)'
 title: Catch 블록 평가 방법 (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - exception handling, catching and deleting exceptions
 - types [C++], exception handling
 ms.assetid: 202dbf07-8ace-4b3b-b3ae-4b45c275e0b4
-ms.openlocfilehash: 21d68b25fa3695a9b5637dcace081424f99911d8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ec4544bb88eea0ee03b7b5b0ab139e267da0552d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87188104"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97221295"
 ---
 # <a name="how-catch-blocks-are-evaluated-c"></a>Catch 블록 평가 방법 (C++)
 
@@ -39,7 +40,7 @@ throw된 예외의 형식이 하나의 기본 클래스 또는 여러 개의 클
 
 - throw된 포인터 개체가 표준 포인터 변환 규칙을 통해 변환될 수 있는 대상 포인터를 허용하는 처리기.
 
-**`catch`** 지정 된 블록에 대 한 처리기가 모양 순서 대로 검사 되기 때문에 처리기가 표시 되는 순서는 중요 합니다 **`try`** . 예를 들어 파생 클래스의 처리기 앞에 기본 클래스의 처리기를 배치하면 오류가 발생합니다. 일치 처리기를 찾은 후에는 **`catch`** 후속 처리기가 검사 되지 않습니다. 결과적으로, 줄임표 처리기는 **`catch`** 해당 블록의 마지막 처리기 여야 합니다 **`try`** . 예를 들면 다음과 같습니다.
+**`catch`** 지정 된 블록에 대 한 처리기가 모양 순서 대로 검사 되기 때문에 처리기가 표시 되는 순서는 중요 합니다 **`try`** . 예를 들어 파생 클래스의 처리기 앞에 기본 클래스의 처리기를 배치하면 오류가 발생합니다. 일치 처리기를 찾은 후에는 **`catch`** 후속 처리기가 검사 되지 않습니다. 결과적으로, 줄임표 처리기는 **`catch`** 해당 블록의 마지막 처리기 여야 합니다 **`try`** . 예를 들어:
 
 ```cpp
 // ...

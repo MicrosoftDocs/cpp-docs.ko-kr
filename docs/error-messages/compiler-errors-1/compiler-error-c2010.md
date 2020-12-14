@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2010'
 title: 컴파일러 오류 C2010
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2010
 ms.assetid: 5795ed1d-e206-410b-b7b4-528d125c67b4
-ms.openlocfilehash: 7341c77ecf2863431fa3e5c0a454077c89601b6b
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 8a96c30103d46c23f3b678a2fa84abf34445dd11
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74752433"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97221035"
 ---
 # <a name="compiler-error-c2010"></a>컴파일러 오류 C2010
 

@@ -1,18 +1,19 @@
 ---
+description: '자세히 알아보기: 스마트 포인터 (최신 c + +)'
 title: 스마트 포인터(최신 C++)
 ms.date: 11/19/2019
 ms.topic: conceptual
 ms.assetid: 909ef870-904c-49b6-b8cd-e9d0b7dc9435
-ms.openlocfilehash: e511cc513cdb35b06b976ce022c5e4edea35040b
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: b26b038b040f1bed5197fc1cd9b5518249c0ad95
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500679"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97221217"
 ---
 # <a name="smart-pointers-modern-c"></a>스마트 포인터(최신 C++)
 
-최신 c + + 프로그래밍에서 표준 라이브러리에는 프로그램이 메모리 및 리소스 누수를 방지 하 고 예외를 안전 하 게 유지 하는 데 사용 되는 *스마트 포인터가*포함 되어 있습니다.
+최신 c + + 프로그래밍에서 표준 라이브러리에는 프로그램이 메모리 및 리소스 누수를 방지 하 고 예외를 안전 하 게 유지 하는 데 사용 되는 *스마트 포인터가* 포함 되어 있습니다.
 
 ## <a name="uses-for-smart-pointers"></a>스마트 포인터 용도
 
@@ -118,4 +119,4 @@ C [malloc](../c-runtime-library/reference/malloc.md) 함수를 사용 하 여 �
 
 [포인터](pointers-cpp.md)<br/>
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
-[C + + 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)
+[C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)

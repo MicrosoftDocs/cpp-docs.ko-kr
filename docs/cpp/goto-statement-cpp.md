@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: goto 문 (c + +)'
 title: goto 문 (C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - goto keyword [C++]
 ms.assetid: 724c5deb-2de1-42d8-8ef1-23589d9bf5ed
-ms.openlocfilehash: e56ebfadea0d643ac68e2ace722a39587bd01312
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c8f94a5c2dfbd6ff3bd33223944180a4d1642b0a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223709"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97221386"
 ---
 # <a name="goto-statement-c"></a>goto 문 (C++)
 
@@ -100,4 +101,4 @@ Jumped to stop. i = 3
 ## <a name="see-also"></a>참고 항목
 
 [점프 문](../cpp/jump-statements-cpp.md)<br/>
-[C++ 키워드](../cpp/keywords-cpp.md)
+[키워드](../cpp/keywords-cpp.md)

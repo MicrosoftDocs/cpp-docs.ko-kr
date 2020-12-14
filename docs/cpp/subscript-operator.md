@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 아래 첨자 연산자 []'
 title: 첨자 연산자 []
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - '[] operator'
 - subscript operator [C++], syntax
 ms.assetid: 69c31494-52da-4dd0-8bbe-6ccbfd50f197
-ms.openlocfilehash: a4eb878a18aa38b7047104903d10d96d66cc6720
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e11e94bdf516d830020c4844be2a4c3bfc4a8774
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231093"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97221204"
 ---
 # <a name="subscript-operator-"></a>첨자 연산자 []
 
@@ -42,7 +43,7 @@ cout << 2[nArray] << endl;            // prints "2"
 
 `*((e2) + (e1))`
 
-식으로 생성 되는 주소는 *e1*주소에서 *e2* 바이트가 아닙니다. 대신 주소는 *e2*배열에서 다음 개체를 생성 하도록 크기를 조정 합니다. 예를 들면 다음과 같습니다.
+식으로 생성 되는 주소는 *e1* 주소에서 *e2* 바이트가 아닙니다. 대신 주소는 *e2* 배열에서 다음 개체를 생성 하도록 크기를 조정 합니다. 예를 들어:
 
 ```cpp
 double aDbl[2];
@@ -54,7 +55,7 @@ double aDbl[2];
 
 *expression1* **[** *식 2* **] [** *expression3* **]** ...
 
-첨자 식은 왼쪽에서 오른쪽으로 연결합니다. 맨 왼쪽 첨자 식인 *expression1* **[** *expression2* **]** 이 먼저 계산됩니다. *expression1* 및 *expression2*를 추가한 결과인 주소는 포인터 식을 형성합니다. 그런 다음 이 포인터 식에 *expression3*이 추가되어 새 포인터 식을 형성하고 마지막 첨자 식이 추가될 때까지 계속됩니다. <strong>\*</strong>마지막 포인터 값이 배열 형식의 주소를 지정 하지 않는 한 간접 참조 연산자 ()는 마지막 첨자 식이 계산 된 후에 적용 됩니다.
+첨자 식은 왼쪽에서 오른쪽으로 연결합니다. 맨 왼쪽 첨자 식인 *expression1* **[** *expression2* **]** 이 먼저 계산됩니다. *expression1* 및 *expression2* 를 추가한 결과인 주소는 포인터 식을 형성합니다. 그런 다음 이 포인터 식에 *expression3* 이 추가되어 새 포인터 식을 형성하고 마지막 첨자 식이 추가될 때까지 계속됩니다. <strong>\*</strong>마지막 포인터 값이 배열 형식의 주소를 지정 하지 않는 한 간접 참조 연산자 ()는 마지막 첨자 식이 계산 된 후에 적용 됩니다.
 
 여러 첨자가 포함된 식은 다차원 배열의 요소를 참조합니다. 다차원 배열은 요소가 배열인 배열입니다. 예를 들어 3차원 배열의 첫 번째 요소는 2차원 배열입니다. 다음 예제에서는 간단한 2차원 문자 배열을 선언 및 초기화합니다.
 

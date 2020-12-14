@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 예외 처리'
 title: 예외 처리
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - MFC, exceptions
 - exceptions [MFC], MFC throwing functions
 ms.assetid: 26d4457c-8350-48f5-916e-78f919787c30
-ms.openlocfilehash: 9d6a1c30ca0811085124a5fb5994c5f35d412ae7
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: add942991a4792cb88e82dee0bfd033612b68eb2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837191"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219826"
 ---
 # <a name="exception-processing"></a>예외 처리
 
@@ -48,7 +49,7 @@ MFC 라이브러리 포함 된 여러 매크로는 예외 처리기를 설정 �
 |[THROW](#throw)|지정 된 예외를 throw 합니다.|
 |[THROW_LAST](#throw_last)|현재 처리 된 예외를 다음 외부 처리기에 throw 합니다.|
 
-### <a name="exception-throwing-functions"></a>예외 Throw 함수
+### <a name="exception-throwing-functions"></a>Exception-Throwing 함수
 
 |Name|설명|
 |-|-|
@@ -133,7 +134,7 @@ CATCH(exception_class, exception_object_pointer_name)
 예외 개체 포인터는 매크로에 의해 생성 됩니다. 사용자가 직접 선언 하지 않아도 됩니다.
 
 > [!NOTE]
-> **CATCH** 블록은 중괄호로 구분 되는 c + + 범위로 정의 됩니다. 이 범위에서 변수를 선언하면 해당 범위 내에서만 액세스할 수 있습니다. 이는 *exception_object_pointer_name*에도 적용 됩니다.
+> **CATCH** 블록은 중괄호로 구분 되는 c + + 범위로 정의 됩니다. 이 범위에서 변수를 선언하면 해당 범위 내에서만 액세스할 수 있습니다. 이는 *exception_object_pointer_name* 에도 적용 됩니다.
 
 예외 및 CATCH 매크로에 대 한 자세한 내용은 [예외](../../mfc/exception-handling-in-mfc.md)문서를 참조 하세요.
 
@@ -156,7 +157,7 @@ CATCH_ALL(exception_object_pointer_name)
 
 ### <a name="remarks"></a>설명
 
-예외 처리 코드는 필요한 경우 예외 개체를 확인하여 예외의 특정 원인에 대한 추가 정보를 가져올 수 있습니다. `THROW_LAST` 매크로를 호출하여 다음 외부 예외 프레임으로 처리를 이동합니다. **CATCH_ALL**사용 하는 경우 END_CATCH_ALL 매크로를 사용 하 여 **TRY** 블록을 종료 합니다.
+예외 처리 코드는 필요한 경우 예외 개체를 확인하여 예외의 특정 원인에 대한 추가 정보를 가져올 수 있습니다. `THROW_LAST` 매크로를 호출하여 다음 외부 예외 프레임으로 처리를 이동합니다. **CATCH_ALL** 사용 하는 경우 END_CATCH_ALL 매크로를 사용 하 여 **TRY** 블록을 종료 합니다.
 
 > [!NOTE]
 > **CATCH_ALL** 블록은 중괄호로 구분 된 c + + 범위로 정의 됩니다. 이 범위에서 변수를 선언하면 해당 범위 내에서만 액세스할 수 있습니다.
@@ -291,7 +292,7 @@ THROW_LAST()
 
 ### <a name="remarks"></a>설명
 
-이 매크로를 사용 하 여 로컬로 만든 예외를 throw 할 수 있습니다. 방금 catch 한 예외를 throw 하려고 하면 일반적으로 범위를 벗어난 후 삭제 됩니다. **THROW_LAST**를 사용 하면 예외가 다음 **CATCH** 처리기에 올바르게 전달 됩니다.
+이 매크로를 사용 하 여 로컬로 만든 예외를 throw 할 수 있습니다. 방금 catch 한 예외를 throw 하려고 하면 일반적으로 범위를 벗어난 후 삭제 됩니다. **THROW_LAST** 를 사용 하면 예외가 다음 **CATCH** 처리기에 올바르게 전달 됩니다.
 
 자세한 내용은 [예외](../../mfc/exception-handling-in-mfc.md)문서를 참조 하세요.
 
@@ -313,7 +314,7 @@ void  AfxThrowArchiveException(int cause, LPCTSTR lpszArchiveName);
 
 ### <a name="parameters"></a>매개 변수
 
-*일으키지*<br/>
+*cause*<br/>
 예외에 대 한 이유를 나타내는 정수를 지정 합니다. 가능한 값 목록은 [CArchiveException:: m_cause](../../mfc/reference/carchiveexception-class.md#m_cause)를 참조 하세요.
 
 *lpszArchiveName*<br/>
@@ -336,7 +337,7 @@ void AfxThrowFileException(
 
 ### <a name="parameters"></a>매개 변수
 
-*일으키지*<br/>
+*cause*<br/>
 예외에 대 한 이유를 나타내는 정수를 지정 합니다. 가능한 값 목록은 [Cfileexception:: m_cause](../../mfc/reference/cfileexception-class.md#m_cause)를 참조 하세요.
 
 *lOsError*<br/>

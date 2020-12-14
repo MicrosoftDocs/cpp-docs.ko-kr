@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Platform:: Collections:: Vector 클래스'
 title: Platform::Collections::Vector 클래스
 ms.date: 12/04/2019
 ms.topic: reference
@@ -21,12 +22,12 @@ f1_keywords:
 helpviewer_keywords:
 - Vector Class (C++/Cx)
 ms.assetid: aee8c076-9700-47c3-99b6-799fd3edb0ca
-ms.openlocfilehash: dc467b8db3cd6ec88395554eef7f109877f10d41
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b13221c6280e0e94572cb4b6710bb59fbd7db4c1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839090"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97221191"
 ---
 # <a name="platformcollectionsvector-class"></a>Platform::Collections::Vector 클래스
 
@@ -44,8 +45,8 @@ template <typename T, typename E>
 *T*<br/>
 Vector 개체에 포함된 요소의 형식입니다.
 
-*우표*<br/>
-*T*형식의 값과 같은지 테스트 하기 위한 이진 조건자를 지정 합니다. 기본값은 `std::equal_to<T>` 입니다.
+*E*<br/>
+*T* 형식의 값과 같은지 테스트 하기 위한 이진 조건자를 지정 합니다. 기본값은 `std::equal_to<T>` 입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -126,7 +127,7 @@ Vector에 삽입할 항목입니다. *항목* 의 형식은 *T* 형식 이름으
 
 현재 Vector의 모든 요소를 삭제합니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 virtual void Clear();
@@ -257,7 +258,7 @@ virtual void InsertAt(unsigned int index, T item)
 Vector 개체의 특정 요소를 지정하는 0부터 시작하는 부호 없는 정수입니다.
 
 *item*<br/>
-*인덱스로*지정 된 요소에서 벡터에 삽입할 항목입니다. *항목* 의 형식은 *T* 형식 이름으로 정의 됩니다.
+*인덱스로* 지정 된 요소에서 벡터에 삽입할 항목입니다. *항목* 의 형식은 *T* 형식 이름으로 정의 됩니다.
 
 ## <a name="vectorremoveat-method"></a><a name="removeat"></a> Vector:: RemoveAt 메서드
 
@@ -278,7 +279,7 @@ Vector 개체의 특정 요소를 지정하는 0부터 시작하는 부호 없�
 
 현재 Vector의 끝에 있는 요소를 삭제합니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 virtual void RemoveAtEnd();
@@ -377,17 +378,17 @@ Vector의 요소 수입니다.
 *value*<br/>
 현재 Vector의 각 요소를 초기화하는 데 사용되는 값입니다.
 
-*hyper-v*<br/>
+*v*<br/>
 현재 Vector를 초기화 하는 데 사용 되는 [std:: vector](../standard-library/vector-class.md) 에 대 [한 Lvalues 및 rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md) 입니다.
 
 *ptr*<br/>
 현재 Vector를 초기화하는 데 사용되는 `std::vector`에 대한 포인터입니다.
 
 *first*<br/>
-현재 Vector를 초기화하는 데 사용되는 개체 시퀀스의 첫 번째 요소입니다. *첫 번째* 형식은 *완벽 한 전달*을 통해 전달 됩니다. 자세한 내용은 [RValue 참조 선언자: &&](../cpp/rvalue-reference-declarator-amp-amp.md)를 참조하세요.
+현재 Vector를 초기화하는 데 사용되는 개체 시퀀스의 첫 번째 요소입니다. *첫 번째* 형식은 *완벽 한 전달* 을 통해 전달 됩니다. 자세한 내용은 [RValue 참조 선언자: &&](../cpp/rvalue-reference-declarator-amp-amp.md)를 참조하세요.
 
 *last*<br/>
-현재 Vector를 초기화하는 데 사용되는 개체 시퀀스의 마지막 요소입니다. *마지막* 의 형식은 *완벽 한 전달*방법으로 전달 됩니다. 자세한 내용은 [RValue 참조 선언자: &&](../cpp/rvalue-reference-declarator-amp-amp.md)를 참조하세요.
+현재 Vector를 초기화하는 데 사용되는 개체 시퀀스의 마지막 요소입니다. *마지막* 의 형식은 *완벽 한 전달* 방법으로 전달 됩니다. 자세한 내용은 [RValue 참조 선언자: &&](../cpp/rvalue-reference-declarator-amp-amp.md)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
