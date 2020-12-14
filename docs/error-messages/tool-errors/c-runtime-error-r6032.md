@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: C 런타임 오류 R6032'
 title: C 런타임 오류 R6032
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - R6032
 ms.assetid: 52092a63-cc51-444a-bfc3-fad965a3558e
-ms.openlocfilehash: b29b946d08cff903cf0ca398ba0d7589cb5d54ea
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: b0fbc7730867fb6e9045adf4e5e2b8667f741784
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80197095"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275895"
 ---
 # <a name="c-runtime-error-r6032"></a>C 런타임 오류 R6032
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: getchar, getwchar'
 title: getchar, getwchar
 ms.date: 06/23/2020
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - _gettchar function
 - standard input, reading from
 ms.assetid: 19fda588-3e33-415c-bb60-dd73c028086a
-ms.openlocfilehash: c6a02f16c3ee3d3e3bc4f86026719a1bd2885416
-ms.sourcegitcommit: 8645408c7929558b8162f781776d0908d790a41c
+ms.openlocfilehash: d8480d179cc31d30d68c07fbe92bf389226ccd53
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85334970"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256759"
 ---
 # <a name="getchar-getwchar"></a>getchar, getwchar
 
@@ -55,7 +56,7 @@ wint_t getwchar();
 
 읽은 문자를 반환합니다. 이러한 함수는 입력을 대기 하 고 입력을 사용할 수 있을 때까지 반환 되지 않습니다.
 
-읽기 오류 또는 파일 끝 조건을 나타내려면 **getchar** 은 **EOF**를 반환 하 고 **getwchar** 는 **weof**를 반환 합니다. **Getchar**의 경우 **ferror** 또는 **feof** 를 사용 하 여 오류 또는 파일 끝을 확인 합니다.
+읽기 오류 또는 파일 끝 조건을 나타내려면 **getchar** 은 **EOF** 를 반환 하 고 **getwchar** 는 **weof** 를 반환 합니다. **Getchar** 의 경우 **ferror** 또는 **feof** 를 사용 하 여 오류 또는 파일 끝을 확인 합니다.
 
 ## <a name="remarks"></a>설명
 
@@ -78,7 +79,7 @@ wint_t getwchar();
 |**getchar**|\<stdio.h>|
 |**getwchar**|\<stdio.h> 또는 \<wchar.h>|
 
-이 콘솔은 UWP (유니버설 Windows 플랫폼) 앱에서 지원 되지 않습니다. 콘솔, **stdin**, **stdout**및 **stderr**에 연결 된 표준 스트림 핸들은 C 런타임 함수가 UWP 앱에서 사용할 수 있으려면 먼저 리디렉션해야 합니다. 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
+이 콘솔은 UWP (유니버설 Windows 플랫폼) 앱에서 지원 되지 않습니다. 콘솔, **stdin**, **stdout** 및 **stderr** 에 연결 된 표준 스트림 핸들은 C 런타임 함수가 UWP 앱에서 사용할 수 있으려면 먼저 리디렉션해야 합니다. 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
@@ -110,7 +111,7 @@ int main()
 This textInput was: This text
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [스트림 I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [getc, getwc](getc-getwc.md)<br/>

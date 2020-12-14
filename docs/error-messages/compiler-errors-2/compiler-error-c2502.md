@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2502'
 title: 컴파일러 오류 C2502
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2502
 ms.assetid: affa0b86-15fc-4e17-b7f2-6aad4a3771c4
-ms.openlocfilehash: bb0e9cc16d403439dc74ae7c93cfe51e370b199a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6ee501a5fa3601ef5e4b97d4be5a8e59463ce797
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218210"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275934"
 ---
 # <a name="compiler-error-c2502"></a>컴파일러 오류 C2502
 

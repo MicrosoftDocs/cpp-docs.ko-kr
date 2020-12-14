@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: not_eq'
 title: not_eq
 ms.date: 11/04/2016
 api_location:
@@ -23,12 +24,12 @@ f1_keywords:
 helpviewer_keywords:
 - not_eq function
 ms.assetid: d87ad299-8b50-4393-a57f-06f70e1f23fb
-ms.openlocfilehash: acce0e6bc50e50c8c5aadbcdf7ebf9b35a6aca00
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: fcc7a9b63398393900b123b9f7b9ffc24923dff5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80168761"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256276"
 ---
 # <a name="not_eq"></a>not_eq
 
@@ -73,4 +74,4 @@ a is not equal to b
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<iso646 >
+**헤더:**\<iso646.h>

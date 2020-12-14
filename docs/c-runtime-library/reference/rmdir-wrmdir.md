@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _rmdir, _wrmdir'
 title: _rmdir, _wrmdir
 ms.date: 4/2/2020
 api_name:
@@ -39,12 +40,12 @@ helpviewer_keywords:
 - _wrmdir function
 - wrmdir function
 ms.assetid: 652c2a5a-b0ac-4493-864e-1edf484333c5
-ms.openlocfilehash: c0c5055a499614f364370b7aa90697898dc510ab
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: c17324d5d2125f4f664140684c4f082181742700
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916922"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97250310"
 ---
 # <a name="_rmdir-_wrmdir"></a>_rmdir, _wrmdir
 
@@ -66,7 +67,7 @@ int _wrmdir(
 *dirname*<br/>
 제거할 디렉터리의 경로입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 디렉터리가 정상적으로 삭제되면 이러한 각 함수는 0을 반환합니다. 반환 값-1은 오류를 나타내고 **errno** 은 다음 값 중 하나로 설정 됩니다.
 
@@ -80,9 +81,9 @@ int _wrmdir(
 
 ## <a name="remarks"></a>설명
 
-**_Rmdir** 함수는 *이름*으로 지정 된 디렉터리를 삭제 합니다. 디렉터리는 비어 있어야 하고, 현재 작업 디렉터리나 루트 디렉터리가 아니어야 합니다.
+**_Rmdir** 함수는 *이름* 으로 지정 된 디렉터리를 삭제 합니다. 디렉터리는 비어 있어야 하고, 현재 작업 디렉터리나 루트 디렉터리가 아니어야 합니다.
 
-**_wrmdir** 은 **_rmdir**의 와이드 문자 버전입니다. **_wrmdir** 에 대 한 대상 *이름* 인수는 와이드 문자열입니다. **_wrmdir** 와 **_rmdir** 는 동일 하 게 동작 합니다.
+**_wrmdir** 은 **_rmdir** 의 와이드 문자 버전입니다. **_wrmdir** 에 대 한 대상 *이름* 인수는 와이드 문자열입니다. **_wrmdir** 와 **_rmdir** 는 동일 하 게 동작 합니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -109,7 +110,7 @@ int _wrmdir(
 
 [_mkdir](mkdir-wmkdir.md)의 예제를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [디렉터리 제어](../../c-runtime-library/directory-control.md)<br/>
 [_chdir, _wchdir](chdir-wchdir.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 일반, normf, 안 ml'
 title: norm, normf, norml
 ms.date: 04/05/2018
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - normf function
 - norml function
 ms.assetid: 9786ecfe-0019-4553-b378-0af6c691e15c
-ms.openlocfilehash: 38e7283ca5acd5571589d3ef0b19c626806e4bca
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 175cff5f9c0e31a56a86a96c3262e2c3c546fe4a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234057"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256304"
 ---
 # <a name="norm-normf-norml"></a>norm, normf, norml
 
@@ -59,12 +60,12 @@ long double norm( _Lcomplex z );  // C++ only
 
 ### <a name="parameters"></a>매개 변수
 
-*-*<br/>
+*z*<br/>
 복소수입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-*Z*의 제곱 크기입니다.
+*Z* 의 제곱 크기입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -76,7 +77,7 @@ C + +에서는 오버 로드를 허용 하므로 **_Fcomplex** 또는 **_Lcomple
 |-------------|--------------|------------------|
 |일반, **normf** **, 없음** **ml**|\<complex.h>|\<complex.h>|
 
-**_Fcomplex**, **_Dcomplex**및 **_Lcomplex** 형식은 각각 Microsoft에서 구현 되지 않은 네이티브 C99 유형 **float _Complex**, **double _Complex**및 **long double _Complex**에 해당 합니다.  호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
+**_Fcomplex**, **_Dcomplex** 및 **_Lcomplex** 형식은 각각 Microsoft에서 구현 되지 않은 네이티브 C99 유형 **float _Complex**, **double _Complex** 및 **long double _Complex** 에 해당 합니다.  호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

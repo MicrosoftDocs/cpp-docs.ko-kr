@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 식 계산기 오류 CXX0031'
 title: 식 계산기 오류 CXX0031
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - CAN0031
 - CXX0031
 ms.assetid: adafbcb7-982f-495f-a34d-72e95d7e54c7
-ms.openlocfilehash: bd4b0d744f9fc101ec4a7bc3a2a01f1d14cfbf7b
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e4c3d51cd681863e2e8bd90d4b9a8c9c008f6697
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80195593"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275882"
 ---
 # <a name="expression-evaluator-error-cxx0031"></a>식 계산기 오류 CXX0031
 

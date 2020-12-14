@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _ismbbtrail, _ismbbtrail_l'
 title: _ismbbtrail, _ismbbtrail_l
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - _ismbbtrail_l function
 - ismbbtrail function
 ms.assetid: dfdd0292-960b-4c1d-bf11-146e0fc80247
-ms.openlocfilehash: 08229b4a35634193810f7c24a3f8749fba034872
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 4c9737cb0d4c3e4d1acf35e0c0cbea18ccba3f69
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918687"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256434"
 ---
 # <a name="_ismbbtrail-_ismbbtrail_l"></a>_ismbbtrail, _ismbbtrail_l
 
@@ -65,7 +66,7 @@ int _ismbbtrail_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 정수 *c* 가 멀티 바이트 문자의 두 번째 바이트인 경우 **_ismbbtrail** 은 0이 아닌 값을 반환 합니다. 예를 들어 코드 페이지 932에 한해 유효 범위는 0x40-0x7E 및 0x80-0xFC입니다.
 
@@ -86,7 +87,7 @@ int _ismbbtrail_l(
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [바이트 분류](../../c-runtime-library/byte-classification.md)<br/>
 [_ismbb 루틴](../../c-runtime-library/ismbb-routines.md)<br/>
