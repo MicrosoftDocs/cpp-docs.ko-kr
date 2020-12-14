@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: OpenMP 함수'
 title: OpenMP 함수
 ms.date: 03/20/2019
 f1_keywords:
@@ -50,12 +51,12 @@ helpviewer_keywords:
 - omp_unset_lock OpenMP function
 - omp_unset_nest_lock OpenMP function
 ms.assetid: a55a2e5c-a260-44ee-bbd6-de7e2351b384
-ms.openlocfilehash: 660d786148738c8ce998ad5d78645efdb444ea47
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 16495be2631a26721d33d5cbbd5f21ea21de7c50
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91503705"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342376"
 ---
 # <a name="openmp-functions"></a>OpenMP 함수
 
@@ -698,7 +699,7 @@ void omp_set_lock(
 
 자세한 내용은 [3.2.3 omp_set_lock 및 omp_set_nest_lock 함수](../3-run-time-library-functions.md#323-omp_set_lock-and-omp_set_nest_lock-functions)를 참조 하세요.
 
-### <a name="examples"></a>예
+### <a name="examples"></a>예제
 
 을 사용 하는 예제는 [omp_init_lock](#omp-init-lock) 를 참조 하세요 `omp_set_lock` .
 
@@ -721,7 +722,7 @@ void omp_set_nest_lock(
 
 자세한 내용은 [3.2.3 omp_set_lock 및 omp_set_nest_lock 함수](../3-run-time-library-functions.md#323-omp_set_lock-and-omp_set_nest_lock-functions)를 참조 하세요.
 
-### <a name="examples"></a>예
+### <a name="examples"></a>예제
 
 을 사용 하는 예제는 [omp_init_nest_lock](#omp-init-nest-lock) 를 참조 하세요 `omp_set_nest_lock` .
 

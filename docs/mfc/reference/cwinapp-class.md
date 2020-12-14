@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CWinApp 클래스'
 title: CWinApp 클래스
 ms.date: 07/15/2019
 f1_keywords:
@@ -192,12 +193,12 @@ helpviewer_keywords:
 - CWinApp [MFC], m_nAutosaveInterval
 - CWinApp [MFC], m_pDataRecoveryHandler
 ms.assetid: e426a3cd-0d15-40d6-bd55-beaa5feb2343
-ms.openlocfilehash: f8ca4ad2023902d40a1f63c881a8dd2fd38a9ae9
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 60ea2ea2ef1545a814406da047d1aef42b49a7a0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837608"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344941"
 ---
 # <a name="cwinapp-class"></a>CWinApp 클래스
 
@@ -252,10 +253,10 @@ class CWinApp : public CWinThread
 |[CWinApp:: IsTaskbarInteractionEnabled](#istaskbarinteractionenabled)|Windows 7 작업 표시줄 상호 작용이 사용 되는지 여부를 나타냅니다.|
 |[CWinApp:: LoadCursor](#loadcursor)|커서 리소스를 로드 합니다.|
 |[CWinApp:: LoadIcon](#loadicon)|아이콘 리소스를 로드 합니다.|
-|[CWinApp:: LoadOEMCursor](#loadoemcursor)|**OCR_** 상수가 windows에서 지정 하는 windows OEM 미리 정의 된 커서를 로드 합니다. 넣기.|
-|[CWinApp:: LoadOEMIcon](#loadoemicon)|**OIC_** 상수가 windows에서 지정 하는 windows OEM 미리 정의 된 아이콘을 로드 합니다. 넣기.|
-|[CWinApp:: LoadStandardCursor](#loadstandardcursor)|**IDC_** 상수가 windows에서 지정 하는 windows 미리 정의 된 커서를 로드 합니다. 넣기.|
-|[CWinApp:: LoadStandardIcon](#loadstandardicon)|WINDOWS에서 **IDI_** 상수가 지정 하는 windows 미리 정의 된 아이콘을 로드 합니다. 넣기.|
+|[CWinApp:: LoadOEMCursor](#loadoemcursor)|**OCR_** 상수가 windows에서 지정 하는 windows OEM 미리 정의 된 커서를 로드 합니다.|
+|[CWinApp:: LoadOEMIcon](#loadoemicon)|**OIC_** 상수가 windows에서 지정 하는 windows OEM 미리 정의 된 아이콘을 로드 합니다.|
+|[CWinApp:: LoadStandardCursor](#loadstandardcursor)|**IDC_** 상수가 windows에서 지정 하는 미리 정의 된 windows 커서를 로드 합니다.|
+|[CWinApp:: LoadStandardIcon](#loadstandardicon)|**IDI_** 상수가 windows에서 지정 하는 미리 정의 된 windows 아이콘을 로드 합니다.|
 |[CWinApp:: OnDDECommand](#onddecommand)|DDE (동적 데이터 교환) 실행 명령에 대 한 응답으로 프레임 워크에서 호출 됩니다.|
 |[CWinApp:: OnIdle](#onidle)|응용 프로그램별 유휴 시간 처리를 수행 하려면를 재정의 합니다.|
 |[CWinApp:: OpenDocumentFile](#opendocumentfile)|파일에서 문서를 열기 위해 프레임 워크에서 호출 됩니다.|
@@ -816,7 +817,7 @@ AFX_HELP_TYPE GetHelpMode();
 
 ## <a name="cwinappgetnextdoctemplate"></a><a name="getnextdoctemplate"></a> CWinApp:: GetNextDocTemplate
 
-*Pos*로 식별 된 문서 템플릿을 가져온 다음 *pos* 를 POSITION 값으로 설정 합니다.
+*Pos* 로 식별 된 문서 템플릿을 가져온 다음 *pos* 를 POSITION 값으로 설정 합니다.
 
 ```
 CDocTemplate* GetNextDocTemplate(POSITION& pos) const;
@@ -899,7 +900,7 @@ BOOL GetProfileBinary(
 이 멤버 함수는 대/소문자를 구분 하지 않으므로 *lpszSection* 및 *lpszEntry* 매개 변수의 문자열은 대/소문자가 다를 수 있습니다.
 
 > [!NOTE]
-> `GetProfileBinary` 버퍼를 할당 하 고 해당 주소를 \* *ppdata*로 반환 합니다. 호출자는 **delete []** 를 사용 하 여 버퍼를 해제 해야 합니다.
+> `GetProfileBinary` 버퍼를 할당 하 고 해당 주소를 \* *ppdata* 로 반환 합니다. 호출자는 **delete []** 를 사용 하 여 버퍼를 해제 해야 합니다.
 
 > [!IMPORTANT]
 > 이 함수에서 반환된 데이터는 NULL로 끝나지 않아도 되며 호출자는 유효성 검사를 수행해야 합니다. 자세한 내용은 [버퍼 오버런 방지](/windows/win32/SecBP/avoiding-buffer-overruns)를 참조하세요.
@@ -1146,7 +1147,7 @@ HICON LoadIcon(LPCTSTR lpszResourceName) const;  HICON LoadIcon(UINT nIDResource
 
 ## <a name="cwinapploadoemcursor"></a><a name="loadoemcursor"></a> CWinApp:: LoadOEMCursor
 
-*NIDCursor*로 지정 된 Windows 미리 정의 된 커서 리소스를 로드 합니다.
+*NIDCursor* 로 지정 된 Windows 미리 정의 된 커서 리소스를 로드 합니다.
 
 ```
 HCURSOR LoadOEMCursor(UINT nIDCursor) const;
@@ -1155,7 +1156,7 @@ HCURSOR LoadOEMCursor(UINT nIDCursor) const;
 ### <a name="parameters"></a>매개 변수
 
 *nIDCursor*<br/>
-미리 정의 된 Windows 커서를 지정 하는 **OCR_** 매니페스트 상수 식별자입니다. `#define OEMRESOURCE` `#include \<afxwin.h>` WINDOWS에서 **OCR_** 상수에 액세스 하려면 먼저가 있어야 합니다. 넣기.
+미리 정의 된 Windows 커서를 지정 하는 **OCR_** 매니페스트 상수 식별자입니다. `#define OEMRESOURCE` `#include \<afxwin.h>` WINDOWS의 **OCR_** 상수에 대 한 액세스 권한을 얻으려면 먼저가 있어야 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1173,7 +1174,7 @@ HCURSOR LoadOEMCursor(UINT nIDCursor) const;
 
 ## <a name="cwinapploadoemicon"></a><a name="loadoemicon"></a> CWinApp:: LoadOEMIcon
 
-*NIDIcon*로 지정 된 Windows 미리 정의 된 아이콘 리소스를 로드 합니다.
+*NIDIcon* 로 지정 된 Windows 미리 정의 된 아이콘 리소스를 로드 합니다.
 
 ```
 HICON LoadOEMIcon(UINT nIDIcon) const;
@@ -1182,7 +1183,7 @@ HICON LoadOEMIcon(UINT nIDIcon) const;
 ### <a name="parameters"></a>매개 변수
 
 *nIDIcon*<br/>
-미리 정의 된 Windows 아이콘을 지정 하는 **OIC_** 매니페스트 상수 식별자입니다. `#define OEMRESOURCE` `#include \<afxwin.h>` WINDOWS에서 **OIC_** 상수에 액세스 하려면 먼저가 있어야 합니다. 넣기.
+미리 정의 된 Windows 아이콘을 지정 하는 **OIC_** 매니페스트 상수 식별자입니다. `#define OEMRESOURCE` `#include \<afxwin.h>` WINDOWS .h의 **OIC_** 상수에 액세스 하려면 먼저가 있어야 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1203,7 +1204,7 @@ HCURSOR LoadStandardCursor(LPCTSTR lpszCursorName) const;
 ### <a name="parameters"></a>매개 변수
 
 *lpszCursorName*<br/>
-미리 정의 된 Windows 커서를 지정 하는 **IDC_** 매니페스트 상수 식별자입니다. 이러한 식별자는 WINDOWS에서 정의 됩니다. 넣기. 다음 목록에서는 *lpszCursorName*에 대해 가능한 미리 정의 된 값과 의미를 보여 줍니다.
+미리 정의 된 Windows 커서를 지정 하는 **IDC_** 매니페스트 상수 식별자입니다. 이러한 식별자는 WINDOWS에 정의 되어 있습니다. 다음 목록에서는 *lpszCursorName* 에 대해 가능한 미리 정의 된 값과 의미를 보여 줍니다.
 
 - IDC_ARROW 표준 화살표 커서
 
@@ -1252,7 +1253,7 @@ HICON LoadStandardIcon(LPCTSTR lpszIconName) const;
 ### <a name="parameters"></a>매개 변수
 
 *lpszIconName*<br/>
-미리 정의 된 창 아이콘을 지정 하는 매니페스트 상수 식별자입니다. 이러한 식별자는 WINDOWS에서 정의 됩니다. 넣기. 사용할 수 있는 미리 정의 된 값 및 해당 설명의 목록은 Windows SDK의 [Loadicon](/windows/win32/api/winuser/nf-winuser-loadiconw) 에서 *Lpiconname* 매개 변수를 참조 하세요.
+미리 정의 된 창 아이콘을 지정 하는 매니페스트 상수 식별자입니다. 이러한 식별자는 WINDOWS에 정의 되어 있습니다. 사용할 수 있는 미리 정의 된 값 및 해당 설명의 목록은 Windows SDK의 [Loadicon](/windows/win32/api/winuser/nf-winuser-loadiconw) 에서 *Lpiconname* 매개 변수를 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1433,7 +1434,7 @@ LPCTSTR m_pszAppName;
 
 응용 프로그램 이름은 [CWinApp](#cwinapp) 생성자에 전달 된 매개 변수에서 가져올 수 있으며, 지정 되지 않은 경우 ID가 AFX_IDS_APP_TITLE 인 리소스 문자열로 가져올 수 있습니다. 리소스에서 응용 프로그램 이름을 찾을 수 없는 경우 프로그램의에서 가져옵니다. EXE 파일 이름입니다.
 
-전역 함수 [AfxGetAppName](application-information-and-management.md#afxgetappname)에서 반환 됩니다. `m_pszAppName`는 **const char**형식의 공용 변수입니다 <strong>\*</strong> .
+전역 함수 [AfxGetAppName](application-information-and-management.md#afxgetappname)에서 반환 됩니다. `m_pszAppName`는 **const char** 형식의 공용 변수입니다 <strong>\*</strong> .
 
 > [!NOTE]
 > 에 값을 할당 하는 경우 `m_pszAppName` 힙에 동적으로 할당 되어야 합니다. `CWinApp`소멸자는 this 포인터를 사용 하 여 **free**()를 호출 합니다. `_tcsdup`() 런타임 라이브러리 함수를 사용 하 여 할당을 수행 하려고 합니다. 또한 새 값을 할당 하기 전에 현재 포인터와 연결 된 메모리를 해제 합니다. 예를 들어:
@@ -1454,7 +1455,7 @@ LPCTSTR m_pszExeName;
 
 ### <a name="remarks"></a>설명
 
-[M_pszAppName](#m_pszappname)와 달리이 이름에는 공백을 사용할 수 없습니다. `m_pszExeName`는 **const char**형식의 공용 변수입니다 <strong>\*</strong> .
+[M_pszAppName](#m_pszappname)와 달리이 이름에는 공백을 사용할 수 없습니다. `m_pszExeName`는 **const char** 형식의 공용 변수입니다 <strong>\*</strong> .
 
 > [!NOTE]
 > 에 값을 할당 하는 경우 `m_pszExeName` 힙에 동적으로 할당 되어야 합니다. `CWinApp`소멸자는 this 포인터를 사용 하 여 **free**()를 호출 합니다. `_tcsdup`() 런타임 라이브러리 함수를 사용 하 여 할당을 수행 하려고 합니다. 또한 새 값을 할당 하기 전에 현재 포인터와 연결 된 메모리를 해제 합니다. 예를 들어:
@@ -1471,7 +1472,7 @@ LPCTSTR m_pszHelpFilePath;
 
 ### <a name="remarks"></a>설명
 
-기본적으로 프레임 워크는 `m_pszHelpFilePath` "를 사용 하 여 응용 프로그램의 이름으로 초기화 됩니다. .HLP "가 추가 되었습니다. 도움말 파일의 이름을 변경 하려면 `m_pszHelpFilePath` 원하는 도움말 파일의 전체 이름이 포함 된 문자열을 가리키도록 설정 합니다. 이 작업을 수행 하는 편리한 장소는 응용 프로그램의 [InitInstance](#initinstance) 함수입니다. `m_pszHelpFilePath`는 **const char**형식의 공용 변수입니다 <strong>\*</strong> .
+기본적으로 프레임 워크는 `m_pszHelpFilePath` "를 사용 하 여 응용 프로그램의 이름으로 초기화 됩니다. .HLP "가 추가 되었습니다. 도움말 파일의 이름을 변경 하려면 `m_pszHelpFilePath` 원하는 도움말 파일의 전체 이름이 포함 된 문자열을 가리키도록 설정 합니다. 이 작업을 수행 하는 편리한 장소는 응용 프로그램의 [InitInstance](#initinstance) 함수입니다. `m_pszHelpFilePath`는 **const char** 형식의 공용 변수입니다 <strong>\*</strong> .
 
 > [!NOTE]
 > 에 값을 할당 하는 경우 `m_pszHelpFilePath` 힙에 동적으로 할당 되어야 합니다. `CWinApp`소멸자는 this 포인터를 사용 하 여 **free**()를 호출 합니다. `_tcsdup`() 런타임 라이브러리 함수를 사용 하 여 할당을 수행 하려고 합니다. 또한 새 값을 할당 하기 전에 현재 포인터와 연결 된 메모리를 해제 합니다. 예를 들어:
@@ -1488,7 +1489,7 @@ LPCTSTR m_pszProfileName;
 
 ### <a name="remarks"></a>설명
 
-`m_pszProfileName`는 **const char**형식의 공용 변수입니다 <strong>\*</strong> .
+`m_pszProfileName`는 **const char** 형식의 공용 변수입니다 <strong>\*</strong> .
 
 > [!NOTE]
 > 에 값을 할당 하는 경우 `m_pszProfileName` 힙에 동적으로 할당 되어야 합니다. `CWinApp`소멸자는 this 포인터를 사용 하 여 **free**()를 호출 합니다. `_tcsdup`() 런타임 라이브러리 함수를 사용 하 여 할당을 수행 하려고 합니다. 또한 새 값을 할당 하기 전에 현재 포인터와 연결 된 메모리를 해제 합니다. 예를 들어:
@@ -1828,7 +1829,7 @@ Windows [MSG](/windows/win32/api/winuser/ns-winuser-msg)t)에 대 한 포인터�
 
 ## <a name="cwinappprocessshellcommand"></a><a name="processshellcommand"></a> CWinApp::P rocessShellCommand
 
-이 멤버 함수는 [InitInstance](#initinstance) `CCommandLineInfo` *rcmdinfo*로 식별 되는 개체에서 전달 되는 매개 변수를 수락 하 고 표시 된 작업을 수행 하기 위해 InitInstance에서 호출 됩니다.
+이 멤버 함수는 [](#initinstance) `CCommandLineInfo` *rcmdinfo* 로 식별 되는 개체에서 전달 되는 매개 변수를 수락 하 고 표시 된 작업을 수행 하기 위해 InitInstance에서 호출 됩니다.
 
 ```
 BOOL ProcessShellCommand(CCommandLineInfo& rCmdInfo);
@@ -1981,7 +1982,7 @@ virtual HRESULT RegisterWithRestartManager(
 진행 복구 콜백 함수가 반환 될 때까지 다시 시작 관리자가 대기 하는 시간입니다. 이 매개 변수는 밀리초 단위입니다.
 
 *dwCallbackFlags*\
-진행 복구 콜백 함수에 전달 된 플래그입니다. 나중에 사용하기 위해 예약되어 있습니다.
+진행 복구 콜백 함수에 전달 된 플래그입니다. 다음에 사용하도록 예약됩니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1991,7 +1992,7 @@ virtual HRESULT RegisterWithRestartManager(
 
 응용 프로그램에서 작업 파일에 대 한 기본 MFC 구현을 사용 하는 경우의 간단한 버전을 사용 해야 합니다 `RegisterWithRestartManager` . `RegisterWithRestartManager`응용 프로그램의 자동 저장 동작을 사용자 지정 하려면의 복합 버전을 사용 합니다.
 
-*StrRestartIdentifier*에 대 한 빈 문자열을 사용 하 여이 메서드를 호출 하는 경우는 `RegisterWithRestartManager` 다시 시작 관리자의이 인스턴스에 대 한 고유 식별자 문자열을 만듭니다.
+*StrRestartIdentifier* 에 대 한 빈 문자열을 사용 하 여이 메서드를 호출 하는 경우는 `RegisterWithRestartManager` 다시 시작 관리자의이 인스턴스에 대 한 고유 식별자 문자열을 만듭니다.
 
 응용 프로그램이 예기치 않게 종료 되 면 다시 시작 관리자가 명령줄에서 응용 프로그램을 다시 시작 하 고 고유한 다시 시작 식별자를 선택적 인수로 제공 합니다. 이 시나리오에서 프레임 워크는 `RegisterWithRestartManager` 두 번 호출 합니다. 첫 번째 호출은 [CWinApp:: InitInstance](#initinstance) 에서 문자열 식별자에 대 한 빈 문자열을 가져옵니다. 그런 다음 [CWinApp::P](#processshellcommand) 메서드는 `RegisterWithRestartManager` 고유한 다시 시작 식별자를 사용 하 여 rocessshellcommand를 호출 합니다.
 
@@ -2063,7 +2064,7 @@ virtual int Run();
 
 ### <a name="remarks"></a>설명
 
-`Run` 응용 프로그램이 WM_QUIT 메시지를 받을 때까지 Windows 메시지를 가져와 디스패치합니다. 응용 프로그램의 메시지 큐에 현재 메시지가 없으면 OnIdle을 `Run` 호출 [OnIdle](#onidle) 하 여 유휴 시간 처리를 수행 합니다. 들어오는 메시지는 특수 처리를 위해 [PreTranslateMessage](#pretranslatemessage) 멤버 함수로 이동 하 고 `TranslateMessage` 표준 키보드 변환의 경우 windows 함수로 이동 합니다. 마지막으로 `DispatchMessage` windows 함수가 호출 됩니다.
+`Run` 응용 프로그램이 WM_QUIT 메시지를 받을 때까지 Windows 메시지를 가져와 디스패치합니다. 응용 프로그램의 메시지 큐에 현재 메시지가 없으면 OnIdle을 `Run` 호출 [](#onidle) 하 여 유휴 시간 처리를 수행 합니다. 들어오는 메시지는 특수 처리를 위해 [PreTranslateMessage](#pretranslatemessage) 멤버 함수로 이동 하 고 `TranslateMessage` 표준 키보드 변환의 경우 windows 함수로 이동 합니다. 마지막으로 `DispatchMessage` windows 함수가 호출 됩니다.
 
 `Run` 는 거의 재정의 되지 않지만 특수 동작을 제공 하도록 재정의할 수 있습니다.
 
@@ -2179,7 +2180,7 @@ void SetRegistryKey(UINT nIDRegistryKey);
 
 ### <a name="remarks"></a>설명
 
-이 함수는 *m_pszRegistryKey* `GetProfileInt` 의,, `GetProfileString` `WriteProfileInt` 및 `WriteProfileString` 멤버 함수 `CWinApp` 에서 사용 되는 m_pszRegistryKey를 설정 합니다. 이 함수가 호출 되 면 가장 최근에 사용한 (MRU) 파일의 목록도 레지스트리에 저장 됩니다. 레지스트리 키는 일반적으로 회사의 이름입니다. 이 파일은 다음 형식의 키에 저장 됩니다. HKEY_CURRENT_USER \Software \\<회사 이름 \> \\<응용 프로그램 이름 \> \\<섹션 이름 \> \\<값 이름 \> 입니다.
+이 함수는  `GetProfileInt` 의,, `GetProfileString` `WriteProfileInt` 및 `WriteProfileString` 멤버 함수 `CWinApp` 에서 사용 되는 m_pszRegistryKey를 설정 합니다. 이 함수가 호출 되 면 가장 최근에 사용한 (MRU) 파일의 목록도 레지스트리에 저장 됩니다. 레지스트리 키는 일반적으로 회사의 이름입니다. 이 파일은 HKEY_CURRENT_USER\Software\\<회사 이름 \> \\<응용 프로그램 이름 \> \\<섹션 이름 \> \\<값 이름과 \> 같은 형식의 키에 저장 됩니다.
 
 ## <a name="cwinappsupportsapplicationrecovery"></a><a name="supportsapplicationrecovery"></a> CWinApp:: SupportsApplicationRecovery
 

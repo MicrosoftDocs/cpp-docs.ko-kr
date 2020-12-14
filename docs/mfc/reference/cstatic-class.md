@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CStatic 클래스'
 title: CStatic 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - CStatic [MFC], SetEnhMetaFile
 - CStatic [MFC], SetIcon
 ms.assetid: e7c94cd9-5ebd-428a-aa30-b3e51f8efb95
-ms.openlocfilehash: 1f6aac50b2143a4d5296baac906b1ebd0ef542f5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: fa151382cc1342151e937662781a625739e82bd3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215961"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342662"
 ---
 # <a name="cstatic-class"></a>CStatic 클래스
 
@@ -49,7 +50,7 @@ class CStatic : public CWnd
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[CStatic:: CStatic](#cstatic)|`CStatic` 개체를 생성합니다.|
 
@@ -92,7 +93,7 @@ class CStatic : public CWnd
 
 **헤더:** afxwin.h
 
-## <a name="cstaticcreate"></a><a name="create"></a>CStatic:: Create
+## <a name="cstaticcreate"></a><a name="create"></a> CStatic:: Create
 
 Windows 정적 컨트롤을 만들고이를 개체에 연결 `CStatic` 합니다.
 
@@ -122,7 +123,7 @@ virtual BOOL Create(
 *nID*<br/>
 정적 컨트롤의 컨트롤 ID를 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -154,7 +155,7 @@ virtual BOOL Create(
 
 [!code-cpp[NVC_MFC_CStatic#1](../../mfc/reference/codesnippet/cpp/cstatic-class_1.cpp)]
 
-## <a name="cstaticcstatic"></a><a name="cstatic"></a>CStatic:: CStatic
+## <a name="cstaticcstatic"></a><a name="cstatic"></a> CStatic:: CStatic
 
 `CStatic` 개체를 생성합니다.
 
@@ -166,7 +167,7 @@ CStatic();
 
 [!code-cpp[NVC_MFC_CStatic#2](../../mfc/reference/codesnippet/cpp/cstatic-class_2.cpp)]
 
-## <a name="cstaticdrawitem"></a><a name="drawitem"></a>CStatic::D rawItem
+## <a name="cstaticdrawitem"></a><a name="drawitem"></a> CStatic::D rawItem
 
 소유자가 그린 정적 컨트롤을 그리기 위해 프레임 워크에서 호출 됩니다.
 
@@ -183,7 +184,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 
 소유자가 그린 개체에 대 한 그리기를 구현 하려면이 함수를 재정의 합니다 `CStatic` (컨트롤에 스타일 SS_OWNERDRAW 있음).
 
-## <a name="cstaticgetbitmap"></a><a name="getbitmap"></a>CStatic:: GetBitmap
+## <a name="cstaticgetbitmap"></a><a name="getbitmap"></a> CStatic:: GetBitmap
 
 이전에 [Setbitmap](#setbitmap)을 사용 하 여 설정 된 비트맵의 핸들을 가져옵니다 `CStatic` .
 
@@ -191,7 +192,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 HBITMAP GetBitmap() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 비트맵에 대 한 핸들 이거나, 비트맵이 설정 되지 않은 경우 NULL입니다.
 
@@ -199,7 +200,7 @@ HBITMAP GetBitmap() const;
 
 [!code-cpp[NVC_MFC_CStatic#3](../../mfc/reference/codesnippet/cpp/cstatic-class_3.cpp)]
 
-## <a name="cstaticgetcursor"></a><a name="getcursor"></a>CStatic:: GetCursor
+## <a name="cstaticgetcursor"></a><a name="getcursor"></a> CStatic:: GetCursor
 
 이전에 [Setcursor](#setcursor)를 사용 하 여 설정 된 커서의 핸들을 가져옵니다 `CStatic` .
 
@@ -207,7 +208,7 @@ HBITMAP GetBitmap() const;
 HCURSOR GetCursor();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 커서에 대 한 핸들 이거나, 커서가 설정 되지 않은 경우 NULL입니다.
 
@@ -215,7 +216,7 @@ HCURSOR GetCursor();
 
 [!code-cpp[NVC_MFC_CStatic#4](../../mfc/reference/codesnippet/cpp/cstatic-class_4.cpp)]
 
-## <a name="cstaticgetenhmetafile"></a><a name="getenhmetafile"></a>CStatic:: GetEnhMetaFile
+## <a name="cstaticgetenhmetafile"></a><a name="getenhmetafile"></a> CStatic:: GetEnhMetaFile
 
 에 연결 된, 이전에 [SetEnhMetafile](#setenhmetafile)를 사용 하 여 설정한 확장 메타 파일의 핸들을 가져옵니다 `CStatic` .
 
@@ -223,7 +224,7 @@ HCURSOR GetCursor();
 HENHMETAFILE GetEnhMetaFile() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 향상 된 메타 파일에 대 한 핸들 이거나, 확장 메타 파일이 설정 되지 않은 경우 NULL입니다.
 
@@ -231,7 +232,7 @@ HENHMETAFILE GetEnhMetaFile() const;
 
 [!code-cpp[NVC_MFC_CStatic#5](../../mfc/reference/codesnippet/cpp/cstatic-class_5.cpp)]
 
-## <a name="cstaticgeticon"></a><a name="geticon"></a>CStatic:: GetIcon
+## <a name="cstaticgeticon"></a><a name="geticon"></a> CStatic:: GetIcon
 
 이전에 [Seticon](#seticon)을 사용 하 여 설정 된 아이콘의 핸들을 가져옵니다 `CStatic` .
 
@@ -239,7 +240,7 @@ HENHMETAFILE GetEnhMetaFile() const;
 HICON GetIcon() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 아이콘에 대 한 핸들 이거나, 아이콘이 설정 되지 않은 경우 NULL입니다.
 
@@ -247,7 +248,7 @@ HICON GetIcon() const;
 
 [!code-cpp[NVC_MFC_CStatic#6](../../mfc/reference/codesnippet/cpp/cstatic-class_6.cpp)]
 
-## <a name="cstaticsetbitmap"></a><a name="setbitmap"></a>CStatic:: SetBitmap
+## <a name="cstaticsetbitmap"></a><a name="setbitmap"></a> CStatic:: SetBitmap
 
 새 비트맵을 정적 컨트롤에 연결 합니다.
 
@@ -260,7 +261,7 @@ HBITMAP SetBitmap(HBITMAP hBitmap);
 *hBitmap*<br/>
 정적 컨트롤에 그릴 비트맵의 핸들입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이전에 정적 컨트롤과 연결 된 비트맵의 핸들 이거나, 정적 컨트롤과 연결 된 비트맵이 없으면 NULL입니다.
 
@@ -276,7 +277,7 @@ HBITMAP SetBitmap(HBITMAP hBitmap);
 
 - MFC는 `CBitmap` Win32 함수를 호출 하는 것이 아니라 비트맵 이미지를 사용 하 여 더 많은 작업을 수행 해야 하는 경우 사용할 수 있는 클래스를 제공 합니다 `LoadBitmap` . `CBitmap`한 종류의 GDI 개체를 포함 하는는 `CStatic` `CWnd` 그래픽 개체를 정적 컨트롤로 표시 하는 데 사용 되는 클래스인와 협력 하는 데 주로 사용 됩니다.
 
-`CImage`는 DIB (장치 독립적 비트맵)를 더 쉽게 사용할 수 있게 해 주는 ATL/MFC 클래스입니다. 자세한 내용은 [CImage 클래스](../../atl-mfc-shared/reference/cimage-class.md)를 참조 하세요.
+`CImage` 는 DIB (장치 독립적 비트맵)를 더 쉽게 사용할 수 있게 해 주는 ATL/MFC 클래스입니다. 자세한 내용은 [CImage 클래스](../../atl-mfc-shared/reference/cimage-class.md)를 참조 하세요.
 
 - 일반적인 사용법은 `CStatic::SetBitmap` 또는 개체의 HBITMAP 연산자에 의해 반환 되는 GDI 개체를 제공 하는 것입니다 `CBitmap` `CImage` . 이 작업을 수행 하는 코드는 다음 줄과 유사 합니다.
 
@@ -290,7 +291,7 @@ MyStaticControl.SetBitmap(HBITMAP(MyBitmap));
 
 [!code-cpp[NVC_MFC_CStatic#3](../../mfc/reference/codesnippet/cpp/cstatic-class_3.cpp)]
 
-## <a name="cstaticsetcursor"></a><a name="setcursor"></a>CStatic:: SetCursor
+## <a name="cstaticsetcursor"></a><a name="setcursor"></a> CStatic:: SetCursor
 
 새 커서 이미지를 정적 컨트롤과 연결 합니다.
 
@@ -303,7 +304,7 @@ HCURSOR SetCursor(HCURSOR hCursor);
 *hCursor*<br/>
 정적 컨트롤에 그릴 커서의 핸들입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 정적 컨트롤에 이전에 연결 된 커서의 핸들 이거나, 정적 컨트롤과 연결 된 커서가 없으면 NULL입니다.
 
@@ -321,7 +322,7 @@ HCURSOR SetCursor(HCURSOR hCursor);
 
 [!code-cpp[NVC_MFC_CStatic#4](../../mfc/reference/codesnippet/cpp/cstatic-class_4.cpp)]
 
-## <a name="cstaticsetenhmetafile"></a><a name="setenhmetafile"></a>CStatic:: SetEnhMetaFile
+## <a name="cstaticsetenhmetafile"></a><a name="setenhmetafile"></a> CStatic:: SetEnhMetaFile
 
 새 확장 메타 파일 이미지를 정적 컨트롤과 연결 합니다.
 
@@ -334,7 +335,7 @@ HENHMETAFILE SetEnhMetaFile(HENHMETAFILE hMetaFile);
 *hMetaFile 파일*<br/>
 정적 컨트롤에 그릴 향상 된 메타 파일의 핸들입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 정적 컨트롤에 이전에 연결 된 확장 메타 파일의 핸들 이거나, 정적 컨트롤과 연결 된 확장 메타 파일이 없으면 NULL입니다.
 
@@ -350,7 +351,7 @@ HENHMETAFILE SetEnhMetaFile(HENHMETAFILE hMetaFile);
 
 [!code-cpp[NVC_MFC_CStatic#5](../../mfc/reference/codesnippet/cpp/cstatic-class_5.cpp)]
 
-## <a name="cstaticseticon"></a><a name="seticon"></a>CStatic:: SetIcon
+## <a name="cstaticseticon"></a><a name="seticon"></a> CStatic:: SetIcon
 
 새 아이콘 이미지를 정적 컨트롤과 연결 합니다.
 
@@ -363,7 +364,7 @@ HICON SetIcon(HICON hIcon);
 *hIcon*<br/>
 정적 컨트롤에 그릴 아이콘의 핸들입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 정적 컨트롤에 이전에 연결 된 아이콘의 핸들 이거나, 정적 컨트롤과 연결 된 아이콘이 없는 경우 NULL입니다.
 

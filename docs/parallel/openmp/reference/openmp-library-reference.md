@@ -1,40 +1,41 @@
-﻿---
+---
+description: '자세히 알아보기: OpenMP 라이브러리 참조'
 title: OpenMP 라이브러리 참조
 ms.date: 12/02/2019
 ms.assetid: a25188c6-edde-43d0-84b5-780e797b08fc
-ms.openlocfilehash: b61eb356b782b3cd17557827734a706e0761a2a8
-ms.sourcegitcommit: 8762a3f9b5476b4dee03f0ee8064ea606550986e
+ms.openlocfilehash: fa1f654835afef94b0e00f52bebb0b7300d205be
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74810744"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342363"
 ---
 # <a name="openmp-library-reference"></a>OpenMP 라이브러리 참조
 
-OpenMP API에서 사용하는 구문에 대한 링크를 제공합니다.
+OpenMP API에서 사용 되는 생성자에 대 한 링크를 제공 합니다.
 
-OpenMP 표준의 Visual C++ 구현에는 다음 구문이 포함됩니다.
+OpenMP 표준의 Visual C++ 구현에는 다음 구문이 포함 됩니다.
 
-|생성|설명|
+|구문|설명|
 |---------------|-----------------|
-|[지시문](openmp-directives.md)|OpenMP API에서 사용되는 지시문에 대한 링크를 제공합니다.|
-|[절](openmp-clauses.md)|OpenMP API에서 사용되는 절에 대한 링크를 제공합니다.|
-|[함수](openmp-functions.md)|OpenMP API에서 사용되는 함수에 대한 링크를 제공합니다.|
-|[환경 변수](openmp-environment-variables.md)|OpenMP API에서 사용되는 환경 변수에 대한 링크를 제공합니다.|
+|[지시문](openmp-directives.md)|OpenMP API에서 사용 되는 지시문에 대 한 링크를 제공 합니다.|
+|[절](openmp-clauses.md)|OpenMP API에서 사용 되는 절에 대 한 링크를 제공 합니다.|
+|[함수](openmp-functions.md)|OpenMP API에서 사용 되는 함수에 대 한 링크를 제공 합니다.|
+|[환경 변수](openmp-environment-variables.md)|OpenMP API에서 사용 되는 환경 변수에 대 한 링크를 제공 합니다.|
 
 Visual C++ OpenMP 런타임 라이브러리 함수는 다음 라이브러리에 포함 되어 있습니다.
 
 |OpenMP 런타임 라이브러리|특징|
 |------------------------------|---------------------|
-|VCOMP.LIB|다중 스레드, 동적 링크 (VCOMP140에 대 한 가져오기 라이브러리) DLL).|
-|VCOMPD.LIB|다중 스레드, 동적 링크 (VCOMP140D에 대 한 가져오기 라이브러리) DLL) (디버그)|
+|VCOMP. LIB|다중 스레드, 동적 링크 (VCOMP140.DLL에 대 한 가져오기 라이브러리)|
+|VCOMPD. LIB|다중 스레드, 동적 링크 (VCOMP140D.DLL에 대 한 가져오기 라이브러리) (디버그)|
 
-_Debug가 컴파일에서 정의되어 있고 `#include <omp.h>`가 소스코드에 있는 경우 VCOMPD.LIB가 기본 라이브러리가 되고, 그렇지 않은 경우 VCOMP.LIB가 사용됩니다.
+_DEBUG이 컴파일에서 정의 되 고 `#include <omp.h>` 가 소스 코드에 있는 경우 VCOMPD입니다. LIB는 기본 lib가 됩니다 (그렇지 않은 경우 VCOMP). LIB가 사용 됩니다.
 
-[/NODEFAULTLIB (라이브러리 무시)](../../../build/reference/nodefaultlib-ignore-libraries.md)를 사용하여 기본 라이브러리를 제거하고 원하는 라이브러리와 명시적으로 연결할 수 있습니다.
+[/Nodefaultlib (라이브러리 무시)](../../../build/reference/nodefaultlib-ignore-libraries.md) 를 사용 하 여 기본 lib를 제거 하 고 원하는 lib와 명시적으로 연결할 수 있습니다.
 
-OpenMP Dll은 Visual C++ 재배포 패키지 디렉터리에 있으며 OpenMP를 사용하는 응용 프로그램과 함께 배포해야 합니다.
+OpenMP Dll은 Visual C++ 재배포 가능 디렉터리에 있으며 OpenMP를 사용 하는 응용 프로그램과 함께 배포 해야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [OpenMP](../../../parallel/openmp/openmp-in-visual-cpp.md)

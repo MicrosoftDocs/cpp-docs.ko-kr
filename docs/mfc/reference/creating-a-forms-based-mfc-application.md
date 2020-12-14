@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Forms-Based MFC 응용 프로그램 만들기'
 title: 폼 기반 MFC 애플리케이션 만들기
 ms.date: 09/09/2019
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - applications [MFC], forms-based
 - forms-based applications [MFC]
 ms.assetid: 048d2f7d-b60d-4386-ad8e-71d49af9c05e
-ms.openlocfilehash: 1dbbc5c29f85ced846cb3e07a02a5d6a55c94b20
-ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
+ms.openlocfilehash: 2023f4f2c074ef1d0e3adf936cd4c31bd334b795
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70908050"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97343240"
 ---
 # <a name="creating-a-forms-based-mfc-application"></a>폼 기반 MFC 애플리케이션 만들기
 
@@ -28,11 +29,11 @@ SDI, MDI 및 다중 최상위 문서 응용 프로그램은 모두 폼 기반 �
 
 모든 대화 상자 기반 응용 프로그램은 정의에 따라 폼을 기반으로 합니다. 대화 상자 기반 응용 프로그램은 문서/뷰 아키텍처를 사용 하지 않으므로 고유한 추가 폼에 대 한 만들기 및 액세스 방법을 관리 해야 합니다.
 
-폼 기반 응용 프로그램의 기본 클래스는 [CFormView](cformview-class.md)입니다. 응용 프로그램에 데이터베이스 지원이 있는 경우에서 `CFormView`파생 되는 클래스를 선택할 수도 있습니다. 폼은에서 `CFormView`상속 되는 모든 `CFormView` 클래스에서 파생 되는 창입니다.
+폼 기반 응용 프로그램의 기본 클래스는 [CFormView](cformview-class.md)입니다. 응용 프로그램에 데이터베이스 지원이 있는 경우에서 파생 되는 클래스를 선택할 수도 있습니다 `CFormView` . 폼은에서 상속 되는 모든 클래스에서 파생 되는 창입니다 `CFormView` `CFormView` .
 
-[CView](cview-class.md)와 같은 기본 클래스를 사용 하는 경우에도 나중에에서 `CFormView`파생 된 [MFC 클래스를 추가](adding-an-mfc-class.md) 하 여 응용 프로그램을 폼 기반으로 만들 수 있습니다.
+[CView](cview-class.md)와 같은 기본 클래스를 사용 하는 경우에도 나중에에서 파생 된 [MFC 클래스를 추가](adding-an-mfc-class.md) 하 여 응용 프로그램을 폼 기반으로 만들 수 있습니다 `CFormView` .
 
-마법사를 완료 한 후 프로젝트가 열리고 또는에서 `CFormView` `CFormView`상속 되는 클래스를 기본 클래스로 선택 하거나 대화 상자 기반 응용 프로그램을 만든 경우 시각적 개체 C++ 는 대화 상자 편집기를 엽니다. 이때 첫 번째 폼을 디자인할 준비가 되었습니다.
+마법사를 완료 한 후 프로젝트가 열리고 `CFormView` 또는에서 상속 되는 클래스를 `CFormView` 기본 클래스로 선택 하거나 대화 상자 기반 응용 프로그램을 만든 경우에는 Visual C++ 대화 상자 편집기를 엽니다. 이때 첫 번째 폼을 디자인할 준비가 되었습니다.
 
 ### <a name="to-begin-creating-a-forms-based-mfc-executable"></a>폼 기반 MFC 실행 파일 만들기를 시작 하려면
 
@@ -40,10 +41,10 @@ SDI, MDI 및 다중 최상위 문서 응용 프로그램은 모두 폼 기반 �
 
 1. MFC 응용 프로그램 마법사 [응용 프로그램 유형](application-type-mfc-application-wizard.md) 페이지에서 **문서/뷰 아키텍처 지원** 확인란을 선택 합니다.
 
-1. **단일 문서**, **여러 문서**또는 **여러 최상위 문서**를 선택 합니다.
+1. **단일 문서**, **여러 문서** 또는 **여러 최상위 문서** 를 선택 합니다.
 
     > [!NOTE]
-    >  SDI, MDI 또는 다중 최상위 문서 인터페이스 응용 프로그램을 선택한 경우 마법사의 [생성 된 클래스](generated-classes-mfc-application-wizard.md) 페이지에서 `CView` 응용 프로그램 뷰에 대 한 기본 클래스로가 기본적으로 설정 됩니다. 폼 기반 응용 프로그램을 만들려면를 응용 프로그램 보기의 `CFormView` 기본 클래스로 선택 해야 합니다. 마법사는 폼 기반 응용 프로그램에 대 한 인쇄 지원을 제공 하지 않습니다.
+    >  SDI, MDI 또는 다중 최상위 문서 인터페이스 응용 프로그램을 선택한 경우 `CView` 마법사의 [생성 된 클래스](generated-classes-mfc-application-wizard.md) 페이지에서 응용 프로그램 뷰에 대 한 기본 클래스로가 기본적으로 설정 됩니다. 폼 기반 응용 프로그램을 만들려면를 `CFormView` 응용 프로그램 보기의 기본 클래스로 선택 해야 합니다. 마법사는 폼 기반 응용 프로그램에 대 한 인쇄 지원을 제공 하지 않습니다.
 
 1. 마법사의 다른 페이지에서 원하는 다른 프로젝트 옵션을 설정 합니다.
 
@@ -55,11 +56,11 @@ SDI, MDI 및 다중 최상위 문서 응용 프로그램은 모두 폼 기반 �
 
 - [문서/뷰 아키텍처에 대 한 대안](../alternatives-to-the-document-view-architecture.md)
 
-- [애플리케이션 디자인 선택](../application-design-choices.md)
+- [응용 프로그램 디자인 선택](../application-design-choices.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [MFC 응용 프로그램 마법사](mfc-application-wizard.md)<br/>
-[폼 보기](../form-views-mfc.md)<br/>
-[파일 탐색기 스타일 MFC 응용 프로그램 만들기](creating-a-file-explorer-style-mfc-application.md)<br/>
-[웹 브라우저 스타일 MFC 응용 프로그램 만들기](creating-a-web-browser-style-mfc-application.md)
+[폼 뷰](../form-views-mfc.md)<br/>
+[MFC 응용 프로그램 Explorer-Style 파일 만들기](creating-a-file-explorer-style-mfc-application.md)<br/>
+[웹 Browser-Style MFC 응용 프로그램 만들기](creating-a-web-browser-style-mfc-application.md)

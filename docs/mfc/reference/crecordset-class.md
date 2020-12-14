@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CRecordset 클래스'
 title: CRecordset 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -130,12 +131,12 @@ helpviewer_keywords:
 - CRecordset [MFC], m_strFilter
 - CRecordset [MFC], m_strSort
 ms.assetid: dd89a21d-ef39-4aab-891b-1e373d67c855
-ms.openlocfilehash: d00764205b3b81e9f01dbe53d0c67372ebb2532e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 26d886dc9ec5b4421f5b9cf4a223d03a24820e60
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219627"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97343056"
 ---
 # <a name="crecordset-class"></a>CRecordset 클래스
 
@@ -151,7 +152,7 @@ class CRecordset : public CObject
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[CRecordset:: CRecordset](#crecordset)|`CRecordset` 개체를 생성합니다. 파생 클래스에서이를 호출 하는 생성자를 제공 해야 합니다.|
 
@@ -261,7 +262,7 @@ class CRecordset : public CObject
 
 **헤더:** afxdb
 
-## <a name="crecordsetaddnew"></a><a name="addnew"></a>CRecordset:: AddNew
+## <a name="crecordsetaddnew"></a><a name="addnew"></a> CRecordset:: AddNew
 
 테이블에 새 레코드를 추가할 준비를 합니다.
 
@@ -271,12 +272,12 @@ virtual void AddNew();
 
 ### <a name="remarks"></a>설명
 
-[Requery](#requery) 멤버 함수를 호출 하 여 새로 추가 된 레코드를 확인 해야 합니다. 레코드의 필드는 처음에 Null입니다. (데이터베이스 용어에서 Null은 "값을 갖지 않음"을 의미 하 고 c + +의 경우 NULL과 같지 않습니다.) 작업을 완료 하려면 [Update](#update) 멤버 함수를 호출 해야 합니다. `Update`데이터 원본에 대 한 변경 내용을 저장 합니다.
+[Requery](#requery) 멤버 함수를 호출 하 여 새로 추가 된 레코드를 확인 해야 합니다. 레코드의 필드는 처음에 Null입니다. (데이터베이스 용어에서 Null은 "값을 갖지 않음"을 의미 하 고 c + +의 경우 NULL과 같지 않습니다.) 작업을 완료 하려면 [Update](#update) 멤버 함수를 호출 해야 합니다. `Update` 데이터 원본에 대 한 변경 내용을 저장 합니다.
 
 > [!NOTE]
 > 대량 행 페치를 구현한 경우에는를 호출할 수 없습니다 `AddNew` . 이로 인해 어설션이 실패 합니다. 클래스 `CRecordset` 는 대량 데이터 행을 업데이트 하는 메커니즘을 제공 하지 않지만 ODBC API 함수를 사용 하 여 고유한 함수를 작성할 수 있습니다 `SQLSetPos` . 대량 행 페치에 대한 자세한 내용은 [레코드 집합: 대량 레코드 페치(ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)문서를 참조하세요.
 
-`AddNew`레코드 집합의 필드 데이터 멤버를 사용 하 여 비어 있는 새 레코드를 준비 합니다. 를 호출한 후에 `AddNew` 는 레코드 집합의 필드 데이터 멤버에서 원하는 값을 설정 합니다. 이 목적을 위해 [Edit](#edit) 멤버 함수를 호출할 필요가 없습니다 `Edit` . 기존 레코드에만를 사용 하십시오. 이후에를 호출 하면 `Update` 필드 데이터 멤버의 변경 된 값이 데이터 원본에 저장 됩니다.
+`AddNew` 레코드 집합의 필드 데이터 멤버를 사용 하 여 비어 있는 새 레코드를 준비 합니다. 를 호출한 후에 `AddNew` 는 레코드 집합의 필드 데이터 멤버에서 원하는 값을 설정 합니다. 이 목적을 위해 [Edit](#edit) 멤버 함수를 호출할 필요가 없습니다 `Edit` . 기존 레코드에만를 사용 하십시오. 이후에를 호출 하면 `Update` 필드 데이터 멤버의 변경 된 값이 데이터 원본에 저장 됩니다.
 
 > [!CAUTION]
 > 를 호출 하기 전에 새 레코드로 스크롤하면 `Update` 새 레코드가 손실 되 고 경고가 제공 되지 않습니다.
@@ -284,7 +285,7 @@ virtual void AddNew();
 데이터 원본에서 트랜잭션을 지 원하는 경우 트랜잭션의 호출을 수행할 수 있습니다 `AddNew` . 트랜잭션에 대 한 자세한 내용은 클래스 [CDatabase](../../mfc/reference/cdatabase-class.md)를 참조 하세요. 를 호출 하기 전에 [CDatabase:: BeginTrans](../../mfc/reference/cdatabase-class.md#begintrans) 를 호출 해야 `AddNew` 합니다.
 
 > [!NOTE]
-> 다이너셋은 새 레코드가 레코드 집합에 마지막 레코드로 추가 됩니다. 추가 된 레코드는 스냅숏에 추가 되지 않습니다. `Requery`을 호출 하 여 레코드 집합을 새로 고쳐야 합니다.
+> 다이너셋은 새 레코드가 레코드 집합에 마지막 레코드로 추가 됩니다. 추가 된 레코드는 스냅숏에 추가 되지 않습니다. `Requery` 을 호출 하 여 레코드 집합을 새로 고쳐야 합니다.
 
 `AddNew`멤버 함수가 호출 되지 않은 레코드 집합에 대해를 호출할 수 `Open` 없습니다. 에 추가할 수 없는 `CDBException` `AddNew` 레코드 집합에 대해를 호출 하면이 throw 됩니다. [CanAppend](#canappend)를 호출 하 여 레코드 집합을 업데이트할 수 있는지 여부를 확인할 수 있습니다.
 
@@ -294,7 +295,7 @@ virtual void AddNew();
 
 [트랜잭션: 레코드 집합에서 트랜잭션 수행 (ODBC)](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md)문서를 참조 하세요.
 
-## <a name="crecordsetcanappend"></a><a name="canappend"></a>CRecordset:: CanAppend
+## <a name="crecordsetcanappend"></a><a name="canappend"></a> CRecordset:: CanAppend
 
 이전에 열린 레코드 집합에서 새 레코드를 추가할 수 있는지 여부를 확인 합니다.
 
@@ -302,11 +303,11 @@ virtual void AddNew();
 BOOL CanAppend() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-레코드 집합에서 새 레코드 추가를 허용 하는 경우 0이 아닙니다. 그렇지 않으면 0입니다. `CanAppend`는 레코드 집합을 읽기 전용으로 연 경우 0을 반환 합니다.
+레코드 집합에서 새 레코드 추가를 허용 하는 경우 0이 아닙니다. 그렇지 않으면 0입니다. `CanAppend` 는 레코드 집합을 읽기 전용으로 연 경우 0을 반환 합니다.
 
-## <a name="crecordsetcanbookmark"></a><a name="canbookmark"></a>CRecordset:: CanBookmark
+## <a name="crecordsetcanbookmark"></a><a name="canbookmark"></a> CRecordset:: CanBookmark
 
 레코드 집합에서 책갈피를 사용 하 여 레코드를 표시할 수 있는지 여부를 결정 합니다.
 
@@ -314,20 +315,20 @@ BOOL CanAppend() const;
 BOOL CanBookmark() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 레코드 집합에서 책갈피를 지 원하는 경우 0이 아닙니다. 그렇지 않으면 0입니다.
 
 ### <a name="remarks"></a>설명
 
-이 함수는 `CRecordset::useBookmarks` [Open](#open) 멤버 함수의 *dwOptions* 매개 변수에 있는 옵션과는 독립적입니다. `CanBookmark`지정 된 ODBC 드라이버 및 커서 유형이 책갈피를 지원 하는지 여부를 나타냅니다. `CRecordset::useBookmarks`책갈피를 사용할 수 있는지 여부를 나타냅니다.
+이 함수는 `CRecordset::useBookmarks` [Open](#open) 멤버 함수의 *dwOptions* 매개 변수에 있는 옵션과는 독립적입니다. `CanBookmark` 지정 된 ODBC 드라이버 및 커서 유형이 책갈피를 지원 하는지 여부를 나타냅니다. `CRecordset::useBookmarks` 책갈피를 사용할 수 있는지 여부를 나타냅니다.
 
 > [!NOTE]
 > 책갈피는 앞 으로만 이동 가능한 레코드 집합에서 지원 되지 않습니다.
 
 책갈피 및 레코드 집합 탐색에 대 한 자세한 내용은 [레코드 집합: 책갈피 및 절대 위치 (odbc)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md) 및 [레코드 집합: 스크롤 (odbc)](../../data/odbc/recordset-scrolling-odbc.md)문서를 참조 하세요.
 
-## <a name="crecordsetcancel"></a><a name="cancel"></a>CRecordset:: Cancel
+## <a name="crecordsetcancel"></a><a name="cancel"></a> CRecordset:: Cancel
 
 데이터 소스에서 진행 중인 비동기 작업이 나 두 번째 스레드의 프로세스를 취소 하도록 요청 합니다.
 
@@ -337,9 +338,9 @@ void Cancel();
 
 ### <a name="remarks"></a>설명
 
-MFC ODBC 클래스는 더 이상 비동기 처리를 사용 하지 않습니다. 보조적 작업을 수행 하려면 ODBC API 함수를 직접 호출 해야 합니다 `SQLSetConnectOption` . 자세한 내용은 *ODBC SDK 프로그래머 가이드*의 "비동기적으로 함수 실행" 항목을 참조 하세요.
+MFC ODBC 클래스는 더 이상 비동기 처리를 사용 하지 않습니다. 보조적 작업을 수행 하려면 ODBC API 함수를 직접 호출 해야 합니다 `SQLSetConnectOption` . 자세한 내용은 *ODBC SDK 프로그래머 가이드* 의 "비동기적으로 함수 실행" 항목을 참조 하세요.
 
-## <a name="crecordsetcancelupdate"></a><a name="cancelupdate"></a>CRecordset:: CancelUpdate
+## <a name="crecordsetcancelupdate"></a><a name="cancelupdate"></a> CRecordset:: CancelUpdate
 
 [업데이트](#update) 를 호출 하기 전에 [편집](#edit) 또는 [AddNew](#addnew) 작업으로 인해 보류 중인 모든 업데이트를 취소 합니다.
 
@@ -356,7 +357,7 @@ void CancelUpdate();
 
 데이터 업데이트에 대 한 자세한 내용은 레코드 [집합: 레코드 추가, 업데이트 및 삭제 (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)문서를 참조 하세요.
 
-## <a name="crecordsetcanrestart"></a><a name="canrestart"></a>CRecordset:: CanRestart
+## <a name="crecordsetcanrestart"></a><a name="canrestart"></a> CRecordset:: CanRestart
 
 멤버 함수를 호출 하 여 레코드 집합에서 쿼리를 다시 시작 하 여 해당 레코드를 새로 고칠 수 있는지 여부를 결정 합니다 `Requery` .
 
@@ -364,11 +365,11 @@ void CancelUpdate();
 BOOL CanRestart() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 Requery가 허용 되는 경우 0이 아닙니다. 그렇지 않으면 0입니다.
 
-## <a name="crecordsetcanscroll"></a><a name="canscroll"></a>CRecordset:: CanScroll
+## <a name="crecordsetcanscroll"></a><a name="canscroll"></a> CRecordset:: CanScroll
 
 레코드 집합을 스크롤할 수 있는지 여부를 결정 합니다.
 
@@ -376,7 +377,7 @@ Requery가 허용 되는 경우 0이 아닙니다. 그렇지 않으면 0입니�
 BOOL CanScroll() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 레코드 집합에서 스크롤을 허용 하는 경우 0이 아닙니다. 그렇지 않으면 0입니다.
 
@@ -384,7 +385,7 @@ BOOL CanScroll() const;
 
 스크롤에 대 한 자세한 내용은 [레코드 집합: 스크롤 (ODBC)](../../data/odbc/recordset-scrolling-odbc.md)문서를 참조 하세요.
 
-## <a name="crecordsetcantransact"></a><a name="cantransact"></a>CRecordset:: CanTransact
+## <a name="crecordsetcantransact"></a><a name="cantransact"></a> CRecordset:: CanTransact
 
 레코드 집합에서 트랜잭션을 허용 하는지 여부를 확인 합니다.
 
@@ -392,7 +393,7 @@ BOOL CanScroll() const;
 BOOL CanTransact() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 레코드 집합에서 트랜잭션을 허용 하는 경우 0이 아닙니다. 그렇지 않으면 0입니다.
 
@@ -400,7 +401,7 @@ BOOL CanTransact() const;
 
 자세한 내용은 [트랜잭션 (ODBC)](../../data/odbc/transaction-odbc.md)문서를 참조 하세요.
 
-## <a name="crecordsetcanupdate"></a><a name="canupdate"></a>CRecordset:: CanUpdate
+## <a name="crecordsetcanupdate"></a><a name="canupdate"></a> CRecordset:: CanUpdate
 
 레코드 집합을 업데이트할 수 있는지 여부를 확인 합니다.
 
@@ -408,7 +409,7 @@ BOOL CanTransact() const;
 BOOL CanUpdate() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 레코드 집합을 업데이트할 수 있는 경우 0이 아닙니다. 그렇지 않으면 0입니다.
 
@@ -416,7 +417,7 @@ BOOL CanUpdate() const;
 
 기본 데이터 원본이 읽기 전용 이거나 `CRecordset::readOnly` 레코드 집합을 열 때 *dwOptions* 매개 변수에서 지정한 경우에는 레코드 집합이 읽기 전용일 수 있습니다.
 
-## <a name="crecordsetcheckrowseterror"></a><a name="checkrowseterror"></a>CRecordset:: CheckRowsetError
+## <a name="crecordsetcheckrowseterror"></a><a name="checkrowseterror"></a> CRecordset:: CheckRowsetError
 
 레코드를 인출 하는 동안 생성 된 오류를 처리 하기 위해 호출 됩니다.
 
@@ -433,7 +434,7 @@ ODBC API 함수 반환 코드입니다. 자세한 내용은 설명을 참조하�
 
 이 가상 멤버 함수는 레코드를 반입할 때 발생 하는 오류를 처리 하며 대량 행 페치 중에 유용 합니다. 재정의를 고려 하 여 `CheckRowsetError` 고유한 오류 처리를 구현할 수 있습니다.
 
-`CheckRowsetError`는 `Open` , `Requery` 또는 모든 작업과 같은 커서 탐색 작업에서 자동으로 호출 됩니다 `Move` . ODBC API 함수의 반환 값이 전달 됩니다 `SQLExtendedFetch` . 다음 표에서는 *nRetCode* 매개 변수에 사용할 수 있는 값을 보여 줍니다.
+`CheckRowsetError` 는 `Open` , `Requery` 또는 모든 작업과 같은 커서 탐색 작업에서 자동으로 호출 됩니다 `Move` . ODBC API 함수의 반환 값이 전달 됩니다 `SQLExtendedFetch` . 다음 표에서는 *nRetCode* 매개 변수에 사용할 수 있는 값을 보여 줍니다.
 
 |nRetCode|설명|
 |--------------|-----------------|
@@ -446,7 +447,7 @@ ODBC API 함수 반환 코드입니다. 자세한 내용은 설명을 참조하�
 
 에 대 한 자세한 내용은 `SQLError` Windows SDK를 참조 하세요. 대량 행 페치에 대한 자세한 내용은 [레코드 집합: 대량 레코드 페치(ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)문서를 참조하세요.
 
-## <a name="crecordsetclose"></a><a name="close"></a>CRecordset:: Close
+## <a name="crecordsetclose"></a><a name="close"></a> CRecordset:: Close
 
 레코드 집합을 닫습니다.
 
@@ -464,7 +465,7 @@ ODBC HSTMT 및 레코드 집합에 할당 된 프레임 워크의 모든 메모�
 
 [!code-cpp[NVC_MFCDatabase#17](../../mfc/codesnippet/cpp/crecordset-class_1.cpp)]
 
-## <a name="crecordsetcrecordset"></a><a name="crecordset"></a>CRecordset:: CRecordset
+## <a name="crecordsetcrecordset"></a><a name="crecordset"></a> CRecordset:: CRecordset
 
 `CRecordset` 개체를 생성합니다.
 
@@ -490,7 +491,7 @@ CRecordset(CDatabase* pDatabase = NULL);
 
 자세한 내용은 [레코드 집합: 테이블에 대 한 클래스 선언 (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)문서를 참조 하세요.
 
-## <a name="crecordsetdelete"></a><a name="delete"></a>CRecordset::D e)
+## <a name="crecordsetdelete"></a><a name="delete"></a> CRecordset::D e)
 
 현재 레코드를 삭제합니다.
 
@@ -516,7 +517,7 @@ virtual void Delete();
 
 [!code-cpp[NVC_MFCDatabase#18](../../mfc/codesnippet/cpp/crecordset-class_2.cpp)]
 
-## <a name="crecordsetdobulkfieldexchange"></a><a name="dobulkfieldexchange"></a>CRecordset::D oBulkFieldExchange
+## <a name="crecordsetdobulkfieldexchange"></a><a name="dobulkfieldexchange"></a> CRecordset::D oBulkFieldExchange
 
 데이터 원본에서 레코드 집합으로 데이터의 대량 행을 교환 하기 위해 호출 됩니다. 대량 RFX (대량 레코드 필드 교환)를 구현 합니다.
 
@@ -531,12 +532,12 @@ virtual void DoBulkFieldExchange(CFieldExchange* pFX);
 
 ### <a name="remarks"></a>설명
 
-대량 행 페치를 구현 하는 경우 프레임 워크는이 멤버 함수를 호출 하 여 데이터 원본에서 레코드 집합 개체로 데이터를 자동으로 전송 합니다. `DoBulkFieldExchange`는 또한 매개 변수 데이터 멤버 (있는 경우)를 레코드 집합의 선택에 대 한 SQL 문 문자열의 매개 변수 자리 표시자에 바인딩합니다.
+대량 행 페치를 구현 하는 경우 프레임 워크는이 멤버 함수를 호출 하 여 데이터 원본에서 레코드 집합 개체로 데이터를 자동으로 전송 합니다. `DoBulkFieldExchange` 는 또한 매개 변수 데이터 멤버 (있는 경우)를 레코드 집합의 선택에 대 한 SQL 문 문자열의 매개 변수 자리 표시자에 바인딩합니다.
 
 대량 행 페치를 구현 하지 않는 경우 프레임 워크는 [DoFieldExchange](#dofieldexchange)를 호출 합니다. 대량 행 페치를 구현 하려면 `CRecordset::useMultiRowFetch` [Open](#open) 멤버 함수에서 *dwOptions* 매개 변수의 옵션을 지정 해야 합니다.
 
 > [!NOTE]
-> `DoBulkFieldExchange`는에서 파생 된 클래스를 사용 하는 경우에만 사용할 수 있습니다 `CRecordset` . 에서 직접 레코드 집합 개체를 만든 경우 `CRecordset` [GetFieldValue](#getfieldvalue) 멤버 함수를 호출 하 여 데이터를 검색 해야 합니다.
+> `DoBulkFieldExchange` 는에서 파생 된 클래스를 사용 하는 경우에만 사용할 수 있습니다 `CRecordset` . 에서 직접 레코드 집합 개체를 만든 경우 `CRecordset` [GetFieldValue](#getfieldvalue) 멤버 함수를 호출 하 여 데이터를 검색 해야 합니다.
 
 대량 RFX (대량 레코드 필드 교환)는 RFX (레코드 필드 교환)와 유사 합니다. 데이터는 데이터 원본에서 레코드 집합 개체로 자동으로 전송 됩니다. 그러나,, 또는를 `AddNew` 호출 `Edit` `Delete` 하 여 `Update` 변경 내용을 데이터 원본으로 다시 전송할 수는 없습니다. 클래스는 `CRecordset` 현재 대량 데이터 행을 업데이트 하는 메커니즘을 제공 하지 않습니다. 그러나 ODBC API 함수를 사용 하 여 고유한 함수를 작성할 수 있습니다 `SQLSetPos` .
 
@@ -544,7 +545,7 @@ virtual void DoBulkFieldExchange(CFieldExchange* pFX);
 
 대량 행 페치에 대한 자세한 내용은 [레코드 집합: 대량 레코드 페치(ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)문서를 참조하세요. 관련 정보는 [RFX (레코드 필드 교환)](../../data/odbc/record-field-exchange-rfx.md)문서를 참조 하세요.
 
-## <a name="crecordsetdofieldexchange"></a><a name="dofieldexchange"></a>CRecordset::D oFieldExchange
+## <a name="crecordsetdofieldexchange"></a><a name="dofieldexchange"></a> CRecordset::D oFieldExchange
 
 레코드 집합의 필드 데이터 멤버와 데이터 소스에 있는 해당 레코드 사이에서 데이터를 양방향으로 교환 하기 위해 호출 됩니다. RFX (레코드 필드 교환)를 구현 합니다.
 
@@ -559,12 +560,12 @@ virtual void DoFieldExchange(CFieldExchange* pFX);
 
 ### <a name="remarks"></a>설명
 
-대량 행 페치를 구현 하지 않는 경우 프레임 워크는이 멤버 함수를 호출 하 여 레코드 집합 개체의 필드 데이터 멤버와 데이터 소스에 있는 현재 레코드의 해당 열 간에 데이터를 자동으로 교환 합니다. `DoFieldExchange`는 또한 매개 변수 데이터 멤버 (있는 경우)를 레코드 집합의 선택에 대 한 SQL 문 문자열의 매개 변수 자리 표시자에 바인딩합니다.
+대량 행 페치를 구현 하지 않는 경우 프레임 워크는이 멤버 함수를 호출 하 여 레코드 집합 개체의 필드 데이터 멤버와 데이터 소스에 있는 현재 레코드의 해당 열 간에 데이터를 자동으로 교환 합니다. `DoFieldExchange` 는 또한 매개 변수 데이터 멤버 (있는 경우)를 레코드 집합의 선택에 대 한 SQL 문 문자열의 매개 변수 자리 표시자에 바인딩합니다.
 
 대량 행 페치를 구현 하는 경우 프레임 워크는 [DoBulkFieldExchange](#dobulkfieldexchange)을 호출 합니다. 대량 행 페치를 구현 하려면 `CRecordset::useMultiRowFetch` [Open](#open) 멤버 함수에서 *dwOptions* 매개 변수의 옵션을 지정 해야 합니다.
 
 > [!NOTE]
-> `DoFieldExchange`는에서 파생 된 클래스를 사용 하는 경우에만 사용할 수 있습니다 `CRecordset` . 에서 직접 레코드 집합 개체를 만든 경우 `CRecordset` [GetFieldValue](#getfieldvalue) 멤버 함수를 호출 하 여 데이터를 검색 해야 합니다.
+> `DoFieldExchange` 는에서 파생 된 클래스를 사용 하는 경우에만 사용할 수 있습니다 `CRecordset` . 에서 직접 레코드 집합 개체를 만든 경우 `CRecordset` [GetFieldValue](#getfieldvalue) 멤버 함수를 호출 하 여 데이터를 검색 해야 합니다.
 
 RFX (레코드 필드 교환) 라고 하는 필드 데이터 교환은 레코드 집합 개체의 필드 데이터 멤버와 데이터 원본에 있는 레코드 필드, 데이터 원본의 레코드에서 레코드 집합 개체로의 양방향으로 작동 합니다.
 
@@ -578,7 +579,7 @@ RFX 함수에 대 한 자세한 내용은 [레코드 필드 교환 함수](../..
 
 에 대 한 추가 예제 및 세부 정보 `DoFieldExchange` 는 [레코드 필드 교환: RFX 작동 방식](../../data/odbc/record-field-exchange-how-rfx-works.md)문서를 참조 하세요. RFX에 대 한 일반 정보는 [레코드 필드 교환](../../data/odbc/record-field-exchange-rfx.md)문서를 참조 하세요.
 
-## <a name="crecordsetedit"></a><a name="edit"></a>CRecordset:: Edit
+## <a name="crecordsetedit"></a><a name="edit"></a> CRecordset:: Edit
 
 현재 레코드를 변경할 수 있습니다.
 
@@ -593,7 +594,7 @@ virtual void Edit();
 > [!NOTE]
 > 대량 행 페치를 구현한 경우에는를 호출할 수 없습니다 `Edit` . 이로 인해 어설션이 실패 합니다. 클래스 `CRecordset` 는 대량 데이터 행을 업데이트 하는 메커니즘을 제공 하지 않지만 ODBC API 함수를 사용 하 여 고유한 함수를 작성할 수 있습니다 `SQLSetPos` . 대량 행 페치에 대한 자세한 내용은 [레코드 집합: 대량 레코드 페치(ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)문서를 참조하세요.
 
-`Edit`레코드 집합의 데이터 멤버 값을 저장 합니다. 을 호출 하는 경우 `Edit` 를 변경 하 고를 다시 호출 하면 `Edit` 레코드의 값이 첫 번째 호출 이전의 항목으로 복원 됩니다 `Edit` .
+`Edit` 레코드 집합의 데이터 멤버 값을 저장 합니다. 을 호출 하는 경우 `Edit` 를 변경 하 고를 다시 호출 하면 `Edit` 레코드의 값이 첫 번째 호출 이전의 항목으로 복원 됩니다 `Edit` .
 
 일부 경우에는 데이터를 포함 하지 않는 열을 Null로 설정 하 여 열을 업데이트 하는 것이 좋습니다. 이렇게 하려면 TRUE의 매개 변수를 사용 하 여 [SetFieldNull](#setfieldnull) 를 호출 하 여 필드를 Null로 표시 합니다. 이로 인해 열도 업데이트 됩니다. 값이 변경 되지 않은 경우에도 데이터 소스에 필드를 기록 하려면 TRUE의 매개 변수를 사용 하 여 [SetFieldDirty](#setfielddirty) 를 호출 합니다. 필드의 값이 Null 인 경우에도 작동 합니다.
 
@@ -609,7 +610,7 @@ virtual void Edit();
 
 [!code-cpp[NVC_MFCDatabase#20](../../mfc/codesnippet/cpp/crecordset-class_4.cpp)]
 
-## <a name="crecordsetflushresultset"></a><a name="flushresultset"></a>CRecordset:: FlushResultSet
+## <a name="crecordsetflushresultset"></a><a name="flushresultset"></a> CRecordset:: FlushResultSet
 
 결과 집합이 여러 개 있는 경우 미리 정의 된 쿼리 (저장 프로시저)의 다음 결과 집합을 검색 합니다.
 
@@ -617,7 +618,7 @@ virtual void Edit();
 BOOL FlushResultSet();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 검색할 결과 집합이 더 있는 경우 0이 아닙니다. 그렇지 않으면 0입니다.
 
@@ -627,7 +628,7 @@ BOOL FlushResultSet();
 
 미리 정의 된 쿼리가 출력 매개 변수 또는 입/출력 매개 변수를 사용 하는 경우 `FlushResultSet` `FALSE` 이러한 매개 변수 값을 얻기 위해 (값 0)을 반환 하기 전에를 호출 해야 합니다.
 
-`FlushResultSet`ODBC API 함수를 호출 `SQLMoreResults` 합니다. `SQLMoreResults`가 SQL_ERROR 또는 SQL_INVALID_HANDLE를 반환 하면에서 `FlushResultSet` 예외를 throw 합니다. 에 대 한 자세한 내용은 `SQLMoreResults` Windows SDK를 참조 하세요.
+`FlushResultSet` ODBC API 함수를 호출 `SQLMoreResults` 합니다. `SQLMoreResults`가 SQL_ERROR 또는 SQL_INVALID_HANDLE를 반환 하면에서 `FlushResultSet` 예외를 throw 합니다. 에 대 한 자세한 내용은 `SQLMoreResults` Windows SDK를 참조 하세요.
 
 을 호출 하려는 경우에는 저장 프로시저에 바인딩된 필드가 있어야 `FlushResultSet` 합니다.
 
@@ -639,7 +640,7 @@ BOOL FlushResultSet();
 
 [!code-cpp[NVC_MFCDatabase#22](../../mfc/codesnippet/cpp/crecordset-class_6.cpp)]
 
-## <a name="crecordsetgetbookmark"></a><a name="getbookmark"></a>CRecordset:: GetBookmark
+## <a name="crecordsetgetbookmark"></a><a name="getbookmark"></a> CRecordset:: GetBookmark
 
 현재 레코드에 대 한 책갈피 값을 가져옵니다.
 
@@ -659,14 +660,14 @@ void GetBookmark(CDBVariant& varBookmark);
 > [!NOTE]
 > 책갈피를 지원 하지 않거나 사용할 수 없는 경우를 호출 하면 `GetBookmark` 예외가 throw 됩니다. 책갈피는 앞 으로만 이동 가능한 레코드 집합에서 지원 되지 않습니다.
 
-`GetBookmark`현재 레코드의 책갈피 값을 개체에 할당 합니다 `CDBVariant` . 다른 레코드로 이동한 후 언제 든 지 해당 레코드로 돌아가려면 [Setbookmark](#setbookmark) 를 해당 `CDBVariant` 개체로 호출 합니다.
+`GetBookmark` 현재 레코드의 책갈피 값을 개체에 할당 합니다 `CDBVariant` . 다른 레코드로 이동한 후 언제 든 지 해당 레코드로 돌아가려면 [Setbookmark](#setbookmark) 를 해당 `CDBVariant` 개체로 호출 합니다.
 
 > [!NOTE]
 > 특정 레코드 집합 작업 후 책갈피는 더 이상 유효 하지 않을 수 있습니다. 예를 들어를 호출 하는 경우 `GetBookmark` `Requery` 를 사용 하 여 레코드에 반환 하지 못할 수 있습니다 `SetBookmark` . [CDatabase:: Get책갈피 지 속성](../../mfc/reference/cdatabase-class.md#getbookmarkpersistence) 을 호출 하 여 안전 하 게 호출할 수 있는지 여부를 확인 `SetBookmark` 합니다.
 
 책갈피 및 레코드 집합 탐색에 대 한 자세한 내용은 [레코드 집합: 책갈피 및 절대 위치 (odbc)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md) 및 [레코드 집합: 스크롤 (odbc)](../../data/odbc/recordset-scrolling-odbc.md)문서를 참조 하세요.
 
-## <a name="crecordsetgetdefaultconnect"></a><a name="getdefaultconnect"></a>CRecordset:: GetDefaultConnect
+## <a name="crecordsetgetdefaultconnect"></a><a name="getdefaultconnect"></a> CRecordset:: GetDefaultConnect
 
 기본 연결 문자열을 가져오기 위해 호출 됩니다.
 
@@ -674,7 +675,7 @@ void GetBookmark(CDBVariant& varBookmark);
 virtual CString GetDefaultConnect();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `CString`기본 연결 문자열을 포함 하는입니다.
 
@@ -682,7 +683,7 @@ virtual CString GetDefaultConnect();
 
 프레임 워크는이 멤버 함수를 호출 하 여 레코드 집합의 기반이 되는 데이터 원본에 대 한 기본 연결 문자열을 가져옵니다. 클래스 마법사는 테이블 및 열에 대 한 정보를 가져오기 위해 클래스 마법사에서 사용 하는 것과 동일한 데이터 원본을 식별 하 여이 함수를 구현 합니다. 응용 프로그램을 개발 하는 동안이 기본 연결을 사용 하는 것이 편리할 수 있습니다. 그러나 기본 연결은 응용 프로그램 사용자에 게 적합 하지 않을 수 있습니다. 해당 하는 경우이 함수를 다시 구현 하 여 클래스 마법사의 버전을 삭제 해야 합니다. 연결 문자열에 대 한 자세한 내용은 [데이터 원본 (ODBC)](../../data/odbc/data-source-odbc.md)문서를 참조 하세요.
 
-## <a name="crecordsetgetdefaultsql"></a><a name="getdefaultsql"></a>CRecordset:: GetDefaultSQL
+## <a name="crecordsetgetdefaultsql"></a><a name="getdefaultsql"></a> CRecordset:: GetDefaultSQL
 
 실행할 기본 SQL 문자열을 가져오기 위해 호출 됩니다.
 
@@ -690,7 +691,7 @@ virtual CString GetDefaultConnect();
 virtual CString GetDefaultSQL();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `CString`기본 SQL 문을 포함 하는입니다.
 
@@ -707,7 +708,7 @@ virtual CString GetDefaultSQL();
 > [!CAUTION]
 > 프레임 워크에서 테이블 이름을 확인할 수 없거나, 여러 테이블 이름이 제공 된 경우 또는 **CALL** 문을 해석할 수 없는 경우에는 테이블 이름이 비어 있게 됩니다. **Call** 문을 사용 하는 경우 중괄호와 **CALL** 키워드 사이에 공백을 삽입 해서는 안 되 고, 중괄호 앞 이나 **select** 문에서 **select** 키워드 앞에 공백을 삽입 하지 않아야 합니다.
 
-## <a name="crecordsetgetfieldvalue"></a><a name="getfieldvalue"></a>CRecordset:: GetFieldValue
+## <a name="crecordsetgetfieldvalue"></a><a name="getfieldvalue"></a> CRecordset:: GetFieldValue
 
 현재 레코드에서 필드 데이터를 검색 합니다.
 
@@ -736,7 +737,7 @@ void GetFieldValue(
 *lpszName*<br/>
 필드의 이름입니다.
 
-*varValu*e 필드의 값을 저장 하는 [cdbvariant](../../mfc/reference/cdbvariant-class.md) 개체에 대 한 참조입니다.
+*varValu* e 필드의 값을 저장 하는 [cdbvariant](../../mfc/reference/cdbvariant-class.md) 개체에 대 한 참조입니다.
 
 *nFieldType*<br/>
 필드의 ODBC C 데이터 형식입니다. 기본값 DEFAULT_FIELD_TYPE를 사용 하면에서 `GetFieldValue` 다음 테이블을 기반으로 하 여 SQL 데이터 형식에서 C 데이터 형식을 결정 합니다. 그렇지 않은 경우 데이터 형식을 직접 지정 하거나 호환 되는 데이터 형식을 선택할 수 있습니다. 예를 들어 모든 데이터 형식을 SQL_C_CHAR에 저장할 수 있습니다.
@@ -772,7 +773,7 @@ ODBC 데이터 형식에 대 한 자세한 내용은 Windows SDK 부록 D의 "SQ
 > [!NOTE]
 > 에서 파생 하지 않고 레코드 집합 개체를 선언 하는 경우 `CRecordset` ODBC 커서 라이브러리를 로드 하지 마십시오. 커서 라이브러리를 사용 하려면 레코드 집합에 바인딩된 열이 하나 이상 있어야 합니다. 그러나를 직접 사용 하는 경우에는 `CRecordset` 열이 바인딩되지 않습니다. 멤버 함수 [CDatabase:: microsoft.office.interop.visio.documents.openex](../../mfc/reference/cdatabase-class.md#openex) 및 [Cdatabase:: Open](../../mfc/reference/cdatabase-class.md#open) 은 커서 라이브러리를 로드할지 여부를 제어 합니다.
 
-`GetFieldValue`ODBC API 함수를 호출 `SQLGetData` 합니다. 드라이버가 필드 값의 실제 길이에 SQL_NO_TOTAL 값을 출력 하면에서 `GetFieldValue` 예외를 throw 합니다. 에 대 한 자세한 내용은 `SQLGetData` Windows SDK를 참조 하세요.
+`GetFieldValue` ODBC API 함수를 호출 `SQLGetData` 합니다. 드라이버가 필드 값의 실제 길이에 SQL_NO_TOTAL 값을 출력 하면에서 `GetFieldValue` 예외를 throw 합니다. 에 대 한 자세한 내용은 `SQLGetData` Windows SDK를 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -785,7 +786,7 @@ ODBC 데이터 형식에 대 한 자세한 내용은 Windows SDK 부록 D의 "SQ
 
 대량 행 페치에 대한 자세한 내용은 [레코드 집합: 대량 레코드 페치(ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)문서를 참조하세요.
 
-## <a name="crecordsetgetodbcfieldcount"></a><a name="getodbcfieldcount"></a>CRecordset:: GetODBCFieldCount
+## <a name="crecordsetgetodbcfieldcount"></a><a name="getodbcfieldcount"></a> CRecordset:: GetODBCFieldCount
 
 레코드 집합 개체의 총 필드 수를 검색 합니다.
 
@@ -793,7 +794,7 @@ ODBC 데이터 형식에 대 한 자세한 내용은 Windows SDK 부록 D의 "SQ
 short GetODBCFieldCount() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 레코드 집합의 필드 수입니다.
 
@@ -801,7 +802,7 @@ short GetODBCFieldCount() const;
 
 레코드 집합을 만드는 방법에 대 한 자세한 내용은 [레코드 집합: 레코드 집합 만들기 및 닫기 (ODBC)](../../data/odbc/recordset-creating-and-closing-recordsets-odbc.md)문서를 참조 하세요.
 
-## <a name="crecordsetgetodbcfieldinfo"></a><a name="getodbcfieldinfo"></a>CRecordset:: GetODBCFieldInfo
+## <a name="crecordsetgetodbcfieldinfo"></a><a name="getodbcfieldinfo"></a> CRecordset:: GetODBCFieldInfo
 
 레코드 집합의 필드에 대 한 정보를 가져옵니다.
 
@@ -834,7 +835,7 @@ void GetODBCFieldInfo(
 
 레코드 집합을 만드는 방법에 대 한 자세한 내용은 [레코드 집합: 레코드 집합 만들기 및 닫기 (ODBC)](../../data/odbc/recordset-creating-and-closing-recordsets-odbc.md)문서를 참조 하세요.
 
-## <a name="crecordsetgetrecordcount"></a><a name="getrecordcount"></a>CRecordset:: GetRecordCount
+## <a name="crecordsetgetrecordcount"></a><a name="getrecordcount"></a> CRecordset:: GetRecordCount
 
 레코드 집합의 크기를 결정 합니다.
 
@@ -842,7 +843,7 @@ void GetODBCFieldInfo(
 long GetRecordCount() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 레코드 집합의 레코드 수입니다. 레코드 집합이 레코드를 포함 하지 않는 경우 0입니다. 레코드 수를 확인할 수 없으면-1입니다.
 
@@ -851,7 +852,7 @@ long GetRecordCount() const;
 > [!CAUTION]
 > 레코드 수는 "상위 워터 마크"로 유지 관리 되며, 사용자가 레코드를 이동할 때 가장 높은 번호의 레코드가 표시 됩니다. 총 레코드 수는 사용자가 마지막 레코드를 벗어나 이동한 후에만 알 수 있습니다. 성능상의 이유로를 호출할 때 수가 업데이트 되지 않습니다 `MoveLast` . 레코드를 직접 계산 하려면 `MoveNext` `IsEOF` 이 0이 아닌 값을 반환할 때까지 반복적으로 호출 합니다. 를 통해 레코드를 추가 `CRecordset:AddNew` 하 고 `Update` 개수를 늘리는 경우를 통해 레코드를 삭제 하면 `CRecordset::Delete` 개수가 줄어듭니다.
 
-## <a name="crecordsetgetrowsetsize"></a><a name="getrowsetsize"></a>CRecordset:: GetRowsetSize
+## <a name="crecordsetgetrowsetsize"></a><a name="getrowsetsize"></a> CRecordset:: GetRowsetSize
 
 지정 된 인출 중에 검색 하려는 행 수에 대 한 현재 설정을 가져옵니다.
 
@@ -859,7 +860,7 @@ long GetRecordCount() const;
 DWORD GetRowsetSize() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 지정 된 인출 중에 검색할 행의 수입니다.
 
@@ -871,7 +872,7 @@ DWORD GetRowsetSize() const;
 
 대량 행 페치에 대한 자세한 내용은 [레코드 집합: 대량 레코드 페치(ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)문서를 참조하세요.
 
-## <a name="crecordsetgetrowsfetched"></a><a name="getrowsfetched"></a>CRecordset:: GetRowsFetched
+## <a name="crecordsetgetrowsfetched"></a><a name="getrowsfetched"></a> CRecordset:: GetRowsFetched
 
 인출 후 실제로 검색 된 레코드 수를 결정 합니다.
 
@@ -879,7 +880,7 @@ DWORD GetRowsetSize() const;
 DWORD GetRowsFetched() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 지정 된 페치 후 데이터 원본에서 검색 된 행 수입니다.
 
@@ -895,7 +896,7 @@ DWORD GetRowsFetched() const;
 
 [!code-cpp[NVC_MFCDatabase#24](../../mfc/codesnippet/cpp/crecordset-class_8.cpp)]
 
-## <a name="crecordsetgetrowstatus"></a><a name="getrowstatus"></a>CRecordset:: GetRowStatus
+## <a name="crecordsetgetrowstatus"></a><a name="getrowstatus"></a> CRecordset:: GetRowStatus
 
 현재 행 집합에 있는 행의 상태를 가져옵니다.
 
@@ -908,26 +909,26 @@ WORD GetRowStatus(WORD wRow) const;
 *wRow*<br/>
 현재 행 집합에서 한 행의 위치입니다. 이 값의 범위는 1에서 행 집합의 크기입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 행의 상태 값입니다. 자세한 내용은 설명을 참조하세요.
 
 ### <a name="remarks"></a>설명
 
-`GetRowStatus`데이터 원본에서 데이터를 마지막으로 검색 한 이후 행의 상태가 변경 되었거나 *Wrow* 에 해당 하는 행이 인출 되지 않았음을 나타내는 값을 반환 합니다. 다음 표에서는 가능한 반환 값을 보여 줍니다.
+`GetRowStatus` 데이터 원본에서 데이터를 마지막으로 검색 한 이후 행의 상태가 변경 되었거나 *Wrow* 에 해당 하는 행이 인출 되지 않았음을 나타내는 값을 반환 합니다. 다음 표에서는 가능한 반환 값을 보여 줍니다.
 
-|상태 값|설명|
+|상태 값|Description|
 |------------------|-----------------|
 |SQL_ROW_SUCCESS|행이 변경 되지 않았습니다.|
 |SQL_ROW_UPDATED|행이 업데이트 되었습니다.|
 |SQL_ROW_DELETED|행이 삭제된 경우|
 |SQL_ROW_ADDED|행이 추가 되었습니다.|
 |SQL_ROW_ERROR|오류로 인해 행이 unretrievable 됩니다.|
-|SQL_ROW_NOROW|*Wrow*에 해당 하는 행이 없습니다.|
+|SQL_ROW_NOROW|*Wrow* 에 해당 하는 행이 없습니다.|
 
 자세한 내용은 Windows SDK의 ODBC API 함수를 참조 하십시오 `SQLExtendedFetch` .
 
-## <a name="crecordsetgetstatus"></a><a name="getstatus"></a>CRecordset:: GetStatus
+## <a name="crecordsetgetstatus"></a><a name="getstatus"></a> CRecordset:: GetStatus
 
 레코드 집합에서 현재 레코드의 인덱스를 확인 하 고 마지막 레코드가 표시 되는지 여부를 확인 합니다.
 
@@ -938,11 +939,11 @@ void GetStatus(CRecordsetStatus& rStatus) const;
 ### <a name="parameters"></a>매개 변수
 
 *rStatus*<br/>
-`CRecordsetStatus` 개체에 대한 참조입니다. 자세한 내용은 주의 섹션을 참조하십시오.
+`CRecordsetStatus` 개체에 대한 참조입니다. 자세한 내용은 설명 부분을 참조하세요.
 
 ### <a name="remarks"></a>설명
 
-`CRecordset`인덱스를 추적 하려고 하지만 경우에 따라이를 수행할 수 없습니다. 설명은 [Getrecordcount](#getrecordcount) 를 참조 하세요.
+`CRecordset` 인덱스를 추적 하려고 하지만 경우에 따라이를 수행할 수 없습니다. 설명은 [Getrecordcount](#getrecordcount) 를 참조 하세요.
 
 `CRecordsetStatus`구조체의 형식은 다음과 같습니다.
 
@@ -956,11 +957,11 @@ struct CRecordsetStatus
 
 의 두 멤버에는 `CRecordsetStatus` 다음과 같은 의미가 있습니다.
 
-- `m_lCurrentRecord`레코드 집합의 현재 레코드에 대 한 0부터 시작 하는 인덱스를 포함 합니다 (알려진 경우). 인덱스를 확인할 수 없으면이 멤버에 AFX_CURRENT_RECORD_UNDEFINED (-2)가 포함 됩니다. `IsBOF`이 TRUE (빈 레코드 집합 또는 첫 번째 레코드 앞으로 스크롤 하려고 시도) 이면 `m_lCurrentRecord` 가 AFX_CURRENT_RECORD_BOF (-1)로 설정 됩니다. 첫 번째 레코드의 경우 0, 두 번째 레코드 1 등으로 설정 됩니다.
+- `m_lCurrentRecord` 레코드 집합의 현재 레코드에 대 한 0부터 시작 하는 인덱스를 포함 합니다 (알려진 경우). 인덱스를 확인할 수 없으면이 멤버에 AFX_CURRENT_RECORD_UNDEFINED (-2)가 포함 됩니다. `IsBOF`이 TRUE (빈 레코드 집합 또는 첫 번째 레코드 앞으로 스크롤 하려고 시도) 이면 `m_lCurrentRecord` 가 AFX_CURRENT_RECORD_BOF (-1)로 설정 됩니다. 첫 번째 레코드의 경우 0, 두 번째 레코드 1 등으로 설정 됩니다.
 
-- `m_bRecordCountFinal`레코드 집합의 총 레코드 수가 확인 된 경우 0이 아닙니다. 일반적으로이를 위해서는 먼저 레코드 집합의 시작 부분에서 시작 하 고 `MoveNext` 가 `IsEOF` 0이 아닌 값을 반환할 때까지를 호출 해야 합니다. 이 멤버가 0 이면에 의해 반환 되는 레코드 수가 `GetRecordCount` -1이 아닌 경우 레코드의 "상위 워터 마크" 수만 있습니다.
+- `m_bRecordCountFinal` 레코드 집합의 총 레코드 수가 확인 된 경우 0이 아닙니다. 일반적으로이를 위해서는 먼저 레코드 집합의 시작 부분에서 시작 하 고 `MoveNext` 가 `IsEOF` 0이 아닌 값을 반환할 때까지를 호출 해야 합니다. 이 멤버가 0 이면에 의해 반환 되는 레코드 수가 `GetRecordCount` -1이 아닌 경우 레코드의 "상위 워터 마크" 수만 있습니다.
 
-## <a name="crecordsetgetsql"></a><a name="getsql"></a>CRecordset:: GetSQL
+## <a name="crecordsetgetsql"></a><a name="getsql"></a> CRecordset:: GetSQL
 
 이 멤버 함수를 호출 하 여 레코드를 열 때 레코드 집합의 레코드를 선택 하는 데 사용 된 SQL 문을 가져옵니다.
 
@@ -968,7 +969,7 @@ struct CRecordsetStatus
 const CString& GetSQL() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`const`** SQL 문이 포함 된에 대 한 참조입니다 `CString` .
 
@@ -981,7 +982,7 @@ const CString& GetSQL() const;
 > [!NOTE]
 > [Open](#open)을 호출한 후에만이 멤버 함수를 호출 합니다.
 
-## <a name="crecordsetgettablename"></a><a name="gettablename"></a>CRecordset:: GetTableName
+## <a name="crecordsetgettablename"></a><a name="gettablename"></a> CRecordset:: GetTableName
 
 레코드 집합 쿼리의 기반이 되는 SQL 테이블의 이름을 가져옵니다.
 
@@ -989,18 +990,18 @@ const CString& GetSQL() const;
 const CString& GetTableName() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`const`** `CString` 레코드 집합이 테이블을 기반으로 하는 경우 테이블 이름이 포함 된에 대 한 참조이 고, 그렇지 않으면 빈 문자열입니다.
 
 ### <a name="remarks"></a>설명
 
-`GetTableName`는 레코드 집합이 여러 테이블이 나 미리 정의 된 쿼리 (저장 프로시저)의 조인이 아니라 테이블을 기반으로 하는 경우에만 유효 합니다. 이름은 읽기 전용입니다.
+`GetTableName` 는 레코드 집합이 여러 테이블이 나 미리 정의 된 쿼리 (저장 프로시저)의 조인이 아니라 테이블을 기반으로 하는 경우에만 유효 합니다. 이름은 읽기 전용입니다.
 
 > [!NOTE]
 > [Open](#open)을 호출한 후에만이 멤버 함수를 호출 합니다.
 
-## <a name="crecordsetisbof"></a><a name="isbof"></a>CRecordset:: IsBOF
+## <a name="crecordsetisbof"></a><a name="isbof"></a> CRecordset:: IsBOF
 
 레코드 집합이 첫 번째 레코드 앞에 배치 되 면 0이 아닌 값을 반환 합니다. 현재 레코드가 없습니다.
 
@@ -1008,7 +1009,7 @@ const CString& GetTableName() const;
 BOOL IsBOF() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 레코드 집합이 레코드를 포함 하지 않거나 첫 번째 레코드 앞으로 스크롤한 경우 0이 아닌 값입니다. 그렇지 않으면 0입니다.
 
@@ -1024,7 +1025,7 @@ BOOL IsBOF() const;
 
 [!code-cpp[NVC_MFCDatabase#25](../../mfc/codesnippet/cpp/crecordset-class_9.cpp)]
 
-## <a name="crecordsetisdeleted"></a><a name="isdeleted"></a>CRecordset:: IsDeleted
+## <a name="crecordsetisdeleted"></a><a name="isdeleted"></a> CRecordset:: IsDeleted
 
 현재 레코드가 삭제 되었는지 여부를 확인 합니다.
 
@@ -1032,7 +1033,7 @@ BOOL IsBOF() const;
 BOOL IsDeleted() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 레코드 집합을 삭제 된 레코드에 배치 하는 경우 0이 아닙니다. 그렇지 않으면 0입니다.
 
@@ -1047,7 +1048,7 @@ BOOL IsDeleted() const;
 > [!NOTE]
 > 대량 행 페치를 구현한 경우에는를 호출 하면 안 `IsDeleted` 됩니다. 대신 [GetRowStatus](#getrowstatus) 멤버 함수를 호출 합니다. 대량 행 페치에 대한 자세한 내용은 [레코드 집합: 대량 레코드 페치(ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)문서를 참조하세요.
 
-## <a name="crecordsetiseof"></a><a name="iseof"></a>CRecordset:: IsEOF
+## <a name="crecordsetiseof"></a><a name="iseof"></a> CRecordset:: IsEOF
 
 레코드 집합이 마지막 레코드 뒤에 배치 된 경우 0이 아닌 값을 반환 합니다. 현재 레코드가 없습니다.
 
@@ -1055,7 +1056,7 @@ BOOL IsDeleted() const;
 BOOL IsEOF() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 레코드 집합이 레코드를 포함 하지 않거나 마지막 레코드를 넘어 스크롤 된 경우 0이 아닌 값입니다. 그렇지 않으면 0입니다.
 
@@ -1069,7 +1070,7 @@ BOOL IsEOF() const;
 
 [IsBOF](#isbof)의 예제를 참조 하세요.
 
-## <a name="crecordsetisfielddirty"></a><a name="isfielddirty"></a>CRecordset:: IsFieldDirty
+## <a name="crecordsetisfielddirty"></a><a name="isfielddirty"></a> CRecordset:: IsFieldDirty
 
 [편집](#edit) 이나 [AddNew](#addnew) 가 호출 된 이후 지정 된 필드 데이터 멤버가 변경 되었는지 여부를 확인 합니다.
 
@@ -1082,7 +1083,7 @@ BOOL IsFieldDirty(void* pv);
 *pv*<br/>
 상태를 확인할 필드 데이터 멤버에 대 한 포인터 이거나, 필드가 커밋되지 않았는지 여부를 확인 하는 NULL입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 또는를 호출한 후 지정 된 필드 데이터 멤버가 변경 된 경우 0이 아닌 `AddNew` `Edit` 값이 고, 그렇지 않으면 0입니다.
 
@@ -1095,11 +1096,11 @@ BOOL IsFieldDirty(void* pv);
 
 를 호출 `IsFieldDirty` 하면 필드의 더티 상태가 다시 계산 되기 때문에 [SetFieldDirty](#setfielddirty) 에 대 한 이전 호출의 효과를 다시 설정 합니다. `AddNew`이 경우 현재 필드 값이 의사 null 값과 다른 경우 필드 상태는 더티로 설정 됩니다. `Edit`필드 값이 캐시 된 값과 다른 경우 필드 상태가 더티로 설정 됩니다.
 
-`IsFieldDirty`는 [DoFieldExchange](#dofieldexchange)를 통해 구현 됩니다.
+`IsFieldDirty` 는 [DoFieldExchange](#dofieldexchange)를 통해 구현 됩니다.
 
 더티 플래그에 대 한 자세한 내용은 [레코드 집합: 레코드 집합의 레코드 선택 방법 (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)문서를 참조 하세요.
 
-## <a name="crecordsetisfieldnull"></a><a name="isfieldnull"></a>CRecordset:: IsFieldNull
+## <a name="crecordsetisfieldnull"></a><a name="isfieldnull"></a> CRecordset:: IsFieldNull
 
 현재 레코드의 지정 된 필드가 Null (값이 없는 경우) 인 경우 0이 아닌 값을 반환 합니다.
 
@@ -1112,7 +1113,7 @@ BOOL IsFieldNull(void* pv);
 *pv*<br/>
 상태를 확인할 필드 데이터 멤버에 대 한 포인터 이거나, 필드가 Null 인지 여부를 확인 하는 NULL입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 지정 된 필드 데이터 멤버가 Null로 플래그가 지정 된 경우 0이 아닙니다. 그렇지 않으면 0입니다.
 
@@ -1123,9 +1124,9 @@ BOOL IsFieldNull(void* pv);
 > [!NOTE]
 > 이 멤버 함수는 대량 행 페치를 사용 하는 레코드 집합에는 적용 되지 않습니다. 대량 행 페치를 구현한 경우 `IsFieldNull` 는 항상 FALSE를 반환 하 고 어설션이 실패 합니다. 대량 행 페치에 대한 자세한 내용은 [레코드 집합: 대량 레코드 페치(ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)문서를 참조하세요.
 
-`IsFieldNull`는 [DoFieldExchange](#dofieldexchange)를 통해 구현 됩니다.
+`IsFieldNull` 는 [DoFieldExchange](#dofieldexchange)를 통해 구현 됩니다.
 
-## <a name="crecordsetisfieldnullable"></a><a name="isfieldnullable"></a>CRecordset:: IsFieldNullable
+## <a name="crecordsetisfieldnullable"></a><a name="isfieldnullable"></a> CRecordset:: IsFieldNullable
 
 현재 레코드의 지정 된 필드를 Null로 설정할 수 있으면 0이 아닌 값을 반환 합니다.
 
@@ -1159,9 +1160,9 @@ Null 일 수 없는 필드에는 값이 있어야 합니다. 레코드를 추가
 
 즉 `param` , 필드를 사용할 수 있는 것 처럼 모든 필드를 NULL로 설정할 수 없습니다 `outputColumn` .
 
-`IsFieldNullable`는 [DoFieldExchange](#dofieldexchange)를 통해 구현 됩니다.
+`IsFieldNullable` 는 [DoFieldExchange](#dofieldexchange)를 통해 구현 됩니다.
 
-## <a name="crecordsetisopen"></a><a name="isopen"></a>CRecordset:: IsOpen
+## <a name="crecordsetisopen"></a><a name="isopen"></a> CRecordset:: IsOpen
 
 레코드 집합이 이미 열려 있는지 여부를 확인 합니다.
 
@@ -1169,11 +1170,11 @@ Null 일 수 없는 필드에는 값이 있어야 합니다. 레코드를 추가
 BOOL IsOpen() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 레코드 집합 개체의 [Open](#open) 또는 [Requery](#requery) 멤버 함수가 이전에 호출 되었고 레코드 집합이 닫히지 않은 경우 0이 아닙니다. 그렇지 않으면 0입니다.
 
-## <a name="crecordsetm_hstmt"></a><a name="m_hstmt"></a>CRecordset:: m_hstmt
+## <a name="crecordsetm_hstmt"></a><a name="m_hstmt"></a> CRecordset:: m_hstmt
 
 레코드 집합과 연결 된 HSTMT 형식의 ODBC 문 데이터 구조에 대 한 핸들을 포함 합니다.
 
@@ -1186,7 +1187,7 @@ ODBC 데이터 원본에 대 한 각 쿼리는 HSTMT와 연결 됩니다.
 
 일반적으로는 HSTMT에 직접 액세스할 필요가 없지만 SQL 문을 직접 실행 하는 데 필요할 수 있습니다. `ExecuteSQL`클래스의 멤버 함수는를 `CDatabase` 사용 하는 예제를 제공 합니다 `m_hstmt` .
 
-## <a name="crecordsetm_nfields"></a><a name="m_nfields"></a>CRecordset:: m_nFields
+## <a name="crecordsetm_nfields"></a><a name="m_nfields"></a> CRecordset:: m_nFields
 
 레코드 집합 클래스의 필드 데이터 멤버 수를 포함 합니다. 즉, 데이터 원본의 레코드 집합에서 선택한 열의 수입니다.
 
@@ -1207,7 +1208,7 @@ ODBC 데이터 원본에 대 한 각 쿼리는 HSTMT와 연결 됩니다.
 
 [레코드 필드 교환: RFX 사용](../../data/odbc/record-field-exchange-using-rfx.md)문서를 참조 하세요.
 
-## <a name="crecordsetm_nparams"></a><a name="m_nparams"></a>CRecordset:: m_nParams
+## <a name="crecordsetm_nparams"></a><a name="m_nparams"></a> CRecordset:: m_nParams
 
 레코드 집합 클래스의 매개 변수 데이터 멤버 수를 포함 합니다. 즉, 레코드 집합의 쿼리와 함께 전달 되는 매개 변수 수입니다.
 
@@ -1218,13 +1219,13 @@ ODBC 데이터 원본에 대 한 각 쿼리는 HSTMT와 연결 됩니다.
 프레임 워크는이 숫자를 사용 하 여 레코드 집합의 쿼리를 매개 변수화 합니다.
 
 > [!CAUTION]
-> 이 숫자는 `DoFieldExchange` `DoBulkFieldExchange` 매개 변수 값 [SetFieldType](../../mfc/reference/cfieldexchange-class.md#setfieldtype) `CFieldExchange::inputParam` ,, 또는를 사용 하 여 SetFieldType를 호출한 후에 등록 된 "params"의 수와 일치 `CFieldExchange::param` `CFieldExchange::outputParam` 해야 합니다 `CFieldExchange::inoutParam` .
+> 이 숫자는 `DoFieldExchange` `DoBulkFieldExchange` 매개 변수 값 [](../../mfc/reference/cfieldexchange-class.md#setfieldtype) `CFieldExchange::inputParam` ,, 또는를 사용 하 여 SetFieldType를 호출한 후에 등록 된 "params"의 수와 일치 `CFieldExchange::param` `CFieldExchange::outputParam` 해야 합니다 `CFieldExchange::inoutParam` .
 
 ### <a name="example"></a>예제
 
   레코드 [집합: 레코드 집합 매개 변수화 (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md) 및 [레코드 필드 교환: RFX 사용](../../data/odbc/record-field-exchange-using-rfx.md)문서를 참조 하세요.
 
-## <a name="crecordsetm_pdatabase"></a><a name="m_pdatabase"></a>CRecordset:: m_pDatabase
+## <a name="crecordsetm_pdatabase"></a><a name="m_pdatabase"></a> CRecordset:: m_pDatabase
 
 `CDatabase`레코드 집합을 데이터 소스에 연결 하는 데 사용할 개체에 대 한 포인터를 포함 합니다.
 
@@ -1234,7 +1235,7 @@ ODBC 데이터 원본에 대 한 각 쿼리는 HSTMT와 연결 됩니다.
 
 일반적으로에 저장 된 포인터를 직접 사용 하지 않아도 됩니다 `m_pDatabase` . 그러나에 대 한 고유한 확장을 작성 하 `CRecordset` 는 경우 포인터를 사용 해야 할 수 있습니다. 예를 들어 사용자가를 throw 하는 경우 포인터가 필요할 수 있습니다 `CDBException` . 또는 트랜잭션 실행과 같은 개체를 사용 하 여 작업을 수행 해야 하거나 `CDatabase` 시간 제한을 설정 하거나 `ExecuteSQL` 클래스의 멤버 함수를 호출 하 여 `CDatabase` SQL 문을 직접 실행 해야 하는 경우 필요할 수 있습니다.
 
-## <a name="crecordsetm_strfilter"></a><a name="m_strfilter"></a>CRecordset:: m_strFilter
+## <a name="crecordsetm_strfilter"></a><a name="m_strfilter"></a> CRecordset:: m_strFilter
 
 레코드 집합 개체를 생성 한 후 해당 멤버 함수를 호출 하기 전에 `Open` 이 데이터 멤버를 사용 하 여 `CString` SQL **WHERE** 절이 포함 된을 저장 합니다.
 
@@ -1254,7 +1255,7 @@ SQL **WHERE** 절에 대 한 자세한 내용은 [sql](../../data/odbc/sql.md)�
 
 [!code-cpp[NVC_MFCDatabase#30](../../mfc/codesnippet/cpp/crecordset-class_12.cpp)]
 
-## <a name="crecordsetm_strsort"></a><a name="m_strsort"></a>CRecordset:: m_strSort
+## <a name="crecordsetm_strsort"></a><a name="m_strsort"></a> CRecordset:: m_strSort
 
 레코드 집합 개체를 생성 한 후 해당 멤버 함수를 호출 하기 전에 `Open` 이 데이터 멤버를 사용 하 여 `CString` SQL **ORDER by** 절이 포함 된을 저장 합니다.
 
@@ -1274,7 +1275,7 @@ SQL 절에 대 한 자세한 내용은 [sql](../../data/odbc/sql.md)문서를 �
 
 [!code-cpp[NVC_MFCDatabase#31](../../mfc/codesnippet/cpp/crecordset-class_13.cpp)]
 
-## <a name="crecordsetmove"></a><a name="move"></a>CRecordset:: Move
+## <a name="crecordsetmove"></a><a name="move"></a> CRecordset:: Move
 
 현재 레코드 포인터를 앞 이나 뒤로 이동 하 여 레코드 집합 내에서 이동 합니다.
 
@@ -1294,16 +1295,16 @@ virtual void Move(
 
 ### <a name="remarks"></a>설명
 
-*Nrows*에 대해 0 값을 전달 하면에서 `Move` 현재 레코드를 새로 고치고, `Move` 현재 `AddNew` 또는 `Edit` 모드를 종료 하 고, 또는가 호출 되기 전에 현재 레코드의 값을 복원 `AddNew` `Edit` 합니다.
+*Nrows* 에 대해 0 값을 전달 하면에서 `Move` 현재 레코드를 새로 고치고, `Move` 현재 `AddNew` 또는 `Edit` 모드를 종료 하 고, 또는가 호출 되기 전에 현재 레코드의 값을 복원 `AddNew` `Edit` 합니다.
 
 > [!NOTE]
 > 레코드 집합을 이동 하는 경우 삭제 된 레코드를 건너뛸 수 없습니다. 자세한 내용은 [CRecordset:: IsDeleted](#isdeleted) 를 참조 하세요. 옵션 집합을 사용 하 여를 열면 `CRecordset` `skipDeletedRecords` `Move` *nrows* 매개 변수가 0 이면 어설션 합니다. 이 동작은 동일한 데이터를 사용 하 여 다른 클라이언트 응용 프로그램에서 삭제 되는 행을 새로 고칠 수 없도록 합니다. 에 대 한 설명은 [Open](#open) 의 *dwoption* 매개 변수를 참조 하세요 `skipDeletedRecords` .
 
-`Move`행 집합을 기준으로 레코드 집합을 위치를 합니다. *Nrows* 및 *wfetchtype*의 값에 따라 `Move` 는 적절 한 행 집합을 인출 한 다음 해당 행 집합의 첫 번째 레코드를 현재 레코드로 만듭니다. 대량 행 페치를 구현 하지 않은 경우 행 집합 크기는 항상 1입니다. 행 집합을 인출 하는 경우는 `Move` [CheckRowsetError](#checkrowseterror) 멤버 함수를 직접 호출 하 여 인출 결과로 발생 하는 오류를 처리 합니다.
+`Move` 행 집합을 기준으로 레코드 집합을 위치를 합니다. *Nrows* 및 *wfetchtype* 의 값에 따라 `Move` 는 적절 한 행 집합을 인출 한 다음 해당 행 집합의 첫 번째 레코드를 현재 레코드로 만듭니다. 대량 행 페치를 구현 하지 않은 경우 행 집합 크기는 항상 1입니다. 행 집합을 인출 하는 경우는 `Move` [CheckRowsetError](#checkrowseterror) 멤버 함수를 직접 호출 하 여 인출 결과로 발생 하는 오류를 처리 합니다.
 
 전달 하는 값에 따라 `Move` 는 다른 `CRecordset` 멤버 함수와 동일 합니다. 특히 *Wfetchtype* 의 값은 보다 직관적이 고 종종 현재 레코드를 이동 하는 기본 방법 인 멤버 함수를 나타낼 수 있습니다.
 
-다음 표에서는 *wfetchtype*에 사용할 수 있는 값, `Move` *Wfetchtype* 및 *nrows*에 따라 페치할 행 집합 및 *wfetchtype*에 해당 하는 모든 동등 멤버 함수를 나열 합니다.
+다음 표에서는 *wfetchtype* 에 사용할 수 있는 값, `Move` *Wfetchtype* 및 *nrows* 에 따라 페치할 행 집합 및 *wfetchtype* 에 해당 하는 모든 동등 멤버 함수를 나열 합니다.
 
 |wFetchType|인출 행 집합|동급 멤버 함수|
 |----------------|--------------------|--------------------------------|
@@ -1313,10 +1314,10 @@ virtual void Move(
 |SQL_FETCH_FIRST|레코드 집합의 첫 번째 행 집합입니다. *Nrows* 는 무시 됩니다.|[MoveFirst](#movefirst)|
 |SQL_FETCH_LAST|레코드 집합의 마지막 전체 행 집합입니다. *Nrows* 는 무시 됩니다.|[MoveLast](#movelast)|
 |SQL_FETCH_ABSOLUTE|*Nrows* 가 0 > 경우 레코드 집합의 처음부터 *nrows* 행을 시작 하는 행 집합입니다. *Nrows* 가 0 < 경우 행 집합은 레코드 집합의 끝부터 *nrows* 행을 시작 합니다. *Nrows* = 0 인 경우 파일의 시작 (BOF) 조건이 반환 됩니다.|[SetAbsolutePosition](#setabsoluteposition)|
-|SQL_FETCH_BOOKMARK|책갈피 값이 *Nrows*에 해당 하는 행에서 시작 하는 행 집합입니다.|[SetBookmark](#setbookmark)|
+|SQL_FETCH_BOOKMARK|책갈피 값이 *Nrows* 에 해당 하는 행에서 시작 하는 행 집합입니다.|[SetBookmark](#setbookmark)|
 
 > [!NOTE]
-> 전방 전용 레코드 집합의 경우 `Move` 는 *Wfetchtype*에 대해 SQL_FETCH_NEXT 값만 사용할 수 있습니다.
+> 전방 전용 레코드 집합의 경우 `Move` 는 *Wfetchtype* 에 대해 SQL_FETCH_NEXT 값만 사용할 수 있습니다.
 
 > [!CAUTION]
 > 레코드 `Move` 집합에 레코드가 없는 경우를 호출 하면 예외가 throw 됩니다. 레코드 집합에 레코드가 있는지 여부를 확인 하려면 [IsBOF](#isbof) 및 [IsEOF](#iseof)를 호출 합니다.
@@ -1333,7 +1334,7 @@ virtual void Move(
 
 [!code-cpp[NVC_MFCDatabase#28](../../mfc/codesnippet/cpp/crecordset-class_14.cpp)]
 
-## <a name="crecordsetmovefirst"></a><a name="movefirst"></a>CRecordset:: MoveFirst
+## <a name="crecordsetmovefirst"></a><a name="movefirst"></a> CRecordset:: MoveFirst
 
 첫 번째 행 집합의 첫 번째 레코드를 현재 레코드로 설정 합니다.
 
@@ -1365,7 +1366,7 @@ void MoveFirst();
 
   [IsBOF](#isbof)의 예제를 참조 하세요.
 
-## <a name="crecordsetmovelast"></a><a name="movelast"></a>CRecordset:: MoveLast
+## <a name="crecordsetmovelast"></a><a name="movelast"></a> CRecordset:: MoveLast
 
 마지막으로 완료 된 행 집합의 첫 번째 레코드를 현재 레코드로 설정 합니다.
 
@@ -1395,7 +1396,7 @@ void MoveLast();
 
   [IsBOF](#isbof)의 예제를 참조 하세요.
 
-## <a name="crecordsetmovenext"></a><a name="movenext"></a>CRecordset:: MoveNext
+## <a name="crecordsetmovenext"></a><a name="movenext"></a> CRecordset:: MoveNext
 
 다음 행 집합의 첫 번째 레코드를 현재 레코드로 설정 합니다.
 
@@ -1425,7 +1426,7 @@ void MoveNext();
 
   [IsBOF](#isbof)의 예제를 참조 하세요.
 
-## <a name="crecordsetmoveprev"></a><a name="moveprev"></a>CRecordset:: MovePrev
+## <a name="crecordsetmoveprev"></a><a name="moveprev"></a> CRecordset:: MovePrev
 
 이전 행 집합의 첫 번째 레코드를 현재 레코드로 설정 합니다.
 
@@ -1458,7 +1459,7 @@ void MovePrev();
 
   [IsBOF](#isbof)의 예제를 참조 하세요.
 
-## <a name="crecordsetonsetoptions"></a><a name="onsetoptions"></a>CRecordset:: OnSetOptions
+## <a name="crecordsetonsetoptions"></a><a name="onsetoptions"></a> CRecordset:: OnSetOptions
 
 지정 된 ODBC 문에 옵션 (선택에 사용 됨)을 설정 하기 위해 호출 됩니다.
 
@@ -1473,13 +1474,13 @@ virtual void OnSetOptions(HSTMT hstmt);
 
 ### <a name="remarks"></a>설명
 
-`OnSetOptions`을 호출 하 여 지정 된 ODBC 문에 옵션 (선택에 사용 됨)을 설정 합니다. 프레임 워크는이 멤버 함수를 호출 하 여 레코드 집합에 대 한 초기 옵션을 설정 합니다. `OnSetOptions`스크롤 가능 커서 및 커서 동시성에 대 한 데이터 소스의 지원을 결정 하 고 그에 따라 레코드 집합의 옵션을 설정 합니다. `OnSetOptions`는 선택 작업에 사용 되는 반면는 `OnSetUpdateOptions` 업데이트 작업에 사용 됩니다.
+`OnSetOptions`을 호출 하 여 지정 된 ODBC 문에 옵션 (선택에 사용 됨)을 설정 합니다. 프레임 워크는이 멤버 함수를 호출 하 여 레코드 집합에 대 한 초기 옵션을 설정 합니다. `OnSetOptions` 스크롤 가능 커서 및 커서 동시성에 대 한 데이터 소스의 지원을 결정 하 고 그에 따라 레코드 집합의 옵션을 설정 합니다. `OnSetOptions`는 선택 작업에 사용 되는 반면는 `OnSetUpdateOptions` 업데이트 작업에 사용 됩니다.
 
 `OnSetOptions`드라이버 또는 데이터 원본에 특정 한 옵션을 설정 하려면를 재정의 합니다. 예를 들어 데이터 원본에서 단독 액세스용 열기를 지 원하는 경우를 재정의 `OnSetOptions` 하 여 해당 기능을 활용할 수 있습니다.
 
 커서에 대 한 자세한 내용은 [ODBC](../../data/odbc/odbc-basics.md)문서를 참조 하세요.
 
-## <a name="crecordsetonsetupdateoptions"></a><a name="onsetupdateoptions"></a>CRecordset:: OnSetUpdateOptions
+## <a name="crecordsetonsetupdateoptions"></a><a name="onsetupdateoptions"></a> CRecordset:: OnSetUpdateOptions
 
 지정 된 ODBC 문에 대해 옵션 (update에 사용 됨)을 설정 하기 위해 호출 됩니다.
 
@@ -1500,7 +1501,7 @@ virtual void OnSetUpdateOptions(HSTMT hstmt);
 
 커서에 대 한 자세한 내용은 [ODBC](../../data/odbc/odbc-basics.md)문서를 참조 하세요.
 
-## <a name="crecordsetopen"></a><a name="open"></a>CRecordset:: Open
+## <a name="crecordsetopen"></a><a name="open"></a> CRecordset:: Open
 
 테이블을 검색 하거나 레코드 집합에서 나타내는 쿼리를 수행 하 여 레코드 집합을 엽니다.
 
@@ -1516,13 +1517,13 @@ virtual BOOL Open(
 *nOpenType*<br/>
 AFX_DB_USE_DEFAULT_TYPE 기본값을 그대로 사용 하거나에서 다음 값 중 하나를 사용 합니다 `enum OpenType` .
 
-- `CRecordset::dynaset`양방향 스크롤이 포함 된 레코드 집합입니다. 레코드의 멤버 자격과 순서는 레코드 집합을 열 때 결정 되지만, 다른 사용자가 데이터 값에 적용 한 변경 내용은 fetch 작업 후에 표시 됩니다. 다이너셋은 키 집합 기반 레코드 집합으로도 알려져 있습니다.
+- `CRecordset::dynaset` 양방향 스크롤이 포함 된 레코드 집합입니다. 레코드의 멤버 자격과 순서는 레코드 집합을 열 때 결정 되지만, 다른 사용자가 데이터 값에 적용 한 변경 내용은 fetch 작업 후에 표시 됩니다. 다이너셋은 키 집합 기반 레코드 집합으로도 알려져 있습니다.
 
-- `CRecordset::snapshot`양방향 스크롤이 있는 정적 레코드 집합입니다. 레코드의 멤버 자격과 순서는 레코드 집합을 열 때 결정 됩니다. 데이터 값은 레코드를 반입할 때 결정 됩니다. 레코드 집합을 닫은 후 다시 열 때까지 다른 사용자가 변경한 내용을 볼 수 없습니다.
+- `CRecordset::snapshot` 양방향 스크롤이 있는 정적 레코드 집합입니다. 레코드의 멤버 자격과 순서는 레코드 집합을 열 때 결정 됩니다. 데이터 값은 레코드를 반입할 때 결정 됩니다. 레코드 집합을 닫은 후 다시 열 때까지 다른 사용자가 변경한 내용을 볼 수 없습니다.
 
-- `CRecordset::dynamic`양방향 스크롤이 포함 된 레코드 집합입니다. 다른 사용자가 멤버 자격, 순서 지정 및 데이터 값에 적용 한 변경 내용은 fetch 작업 후에 표시 됩니다. 많은 ODBC 드라이버는 이러한 유형의 레코드 집합을 지원 하지 않습니다.
+- `CRecordset::dynamic` 양방향 스크롤이 포함 된 레코드 집합입니다. 다른 사용자가 멤버 자격, 순서 지정 및 데이터 값에 적용 한 변경 내용은 fetch 작업 후에 표시 됩니다. 많은 ODBC 드라이버는 이러한 유형의 레코드 집합을 지원 하지 않습니다.
 
-- `CRecordset::forwardOnly`전방 스크롤만 있는 읽기 전용 레코드 집합입니다.
+- `CRecordset::forwardOnly` 전방 스크롤만 있는 읽기 전용 레코드 집합입니다.
 
    의 경우 `CRecordset` 기본값은 `CRecordset::snapshot` 입니다. 기본 값 메커니즘을 사용 하면 Visual C++ 마법사가 `CRecordset` 다른 기본값이 있는 ODBC 및 DAO와 상호 작용할 수 있습니다 `CDaoRecordset` .
 
@@ -1548,33 +1549,33 @@ AFX_DB_USE_DEFAULT_TYPE 기본값을 그대로 사용 하거나에서 다음 값
 > 결과 집합의 열 순서는 [DoFieldExchange](#dofieldexchange) 또는 [DoBulkFieldExchange](#dobulkfieldexchange) 함수 재정의에서 rfx 또는 Bulk rfx 함수 호출의 순서와 일치 해야 합니다.
 
 *dwOptions*<br/>
-아래에 나열 된 값의 조합을 지정할 수 있는 비트 마스크입니다. 이러한 일부는 함께 사용할 수 없습니다. 기본값은 **none**입니다.
+아래에 나열 된 값의 조합을 지정할 수 있는 비트 마스크입니다. 이러한 일부는 함께 사용할 수 없습니다. 기본값은 **none** 입니다.
 
-- `CRecordset::none`옵션이 설정 되지 않았습니다. 이 매개 변수 값은 다른 모든 값과 함께 사용할 수 없습니다. 기본적으로 레코드 집합은 [편집](#edit) 또는 [삭제](#delete) 를 사용 하 여 업데이트할 수 있으며 [AddNew](#addnew)를 사용 하 여 새 레코드를 추가할 수 있습니다. 업데이트 가능성은 데이터 원본 뿐만 아니라 지정한 *nOpenType* 옵션에 따라 다릅니다. 대량 추가를 위한 최적화를 사용할 수 없습니다. 대량 행 페치는 구현 되지 않습니다. 레코드 집합 탐색 중에는 삭제 된 레코드를 건너뛰지 않습니다. 책갈피를 사용할 수 없습니다. 더티 필드 자동 검사가 구현 되었습니다.
+- `CRecordset::none` 옵션이 설정 되지 않았습니다. 이 매개 변수 값은 다른 모든 값과 함께 사용할 수 없습니다. 기본적으로 레코드 집합은 [편집](#edit) 또는 [삭제](#delete) 를 사용 하 여 업데이트할 수 있으며 [AddNew](#addnew)를 사용 하 여 새 레코드를 추가할 수 있습니다. 업데이트 가능성은 데이터 원본 뿐만 아니라 지정한 *nOpenType* 옵션에 따라 다릅니다. 대량 추가를 위한 최적화를 사용할 수 없습니다. 대량 행 페치는 구현 되지 않습니다. 레코드 집합 탐색 중에는 삭제 된 레코드를 건너뛰지 않습니다. 책갈피를 사용할 수 없습니다. 더티 필드 자동 검사가 구현 되었습니다.
 
 - `CRecordset::appendOnly``Edit` `Delete` 레코드 집합에서 또는을 허용 하지 않습니다. `AddNew`만 허용 합니다. 이 옵션은와 함께 사용할 수 없습니다 `CRecordset::readOnly` .
 
-- `CRecordset::readOnly`레코드 집합을 읽기 전용으로 엽니다. 이 옵션은와 함께 사용할 수 없습니다 `CRecordset::appendOnly` .
+- `CRecordset::readOnly` 레코드 집합을 읽기 전용으로 엽니다. 이 옵션은와 함께 사용할 수 없습니다 `CRecordset::appendOnly` .
 
-- `CRecordset::optimizeBulkAdd`준비 된 SQL 문을 사용 하 여 한 번에 많은 레코드를 추가 하도록 최적화 합니다. ODBC API 함수를 사용 하 여 레코드 집합을 업데이트 하지 않는 경우에만 적용 됩니다 `SQLSetPos` . 첫 번째 업데이트는 변경 된 것으로 표시 된 필드를 결정 합니다. 이 옵션은와 함께 사용할 수 없습니다 `CRecordset::useMultiRowFetch` .
+- `CRecordset::optimizeBulkAdd` 준비 된 SQL 문을 사용 하 여 한 번에 많은 레코드를 추가 하도록 최적화 합니다. ODBC API 함수를 사용 하 여 레코드 집합을 업데이트 하지 않는 경우에만 적용 됩니다 `SQLSetPos` . 첫 번째 업데이트는 변경 된 것으로 표시 된 필드를 결정 합니다. 이 옵션은와 함께 사용할 수 없습니다 `CRecordset::useMultiRowFetch` .
 
-- `CRecordset::useMultiRowFetch`단일 인출 작업에서 여러 행을 검색할 수 있도록 대량 행 페치를 구현 합니다. 이는 성능을 향상 시키기 위해 설계 된 고급 기능입니다. 그러나 클래스 마법사에서는 대량 레코드 필드 교환을 지원 하지 않습니다. 이 옵션은와 함께 사용할 수 없습니다 `CRecordset::optimizeBulkAdd` . 을 지정 하는 경우이 `CRecordset::useMultiRowFetch` 옵션은 `CRecordset::noDirtyFieldCheck` 자동으로 설정 됩니다 (이중 버퍼링을 사용할 수 없음). 앞 으로만 이동 가능한 레코드 집합에서는 옵션이 `CRecordset::useExtendedFetch` 자동으로 설정 됩니다. 대량 행 페치에 대한 자세한 내용은 [레코드 집합: 대량 레코드 페치(ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)문서를 참조하세요.
+- `CRecordset::useMultiRowFetch` 단일 인출 작업에서 여러 행을 검색할 수 있도록 대량 행 페치를 구현 합니다. 이는 성능을 향상 시키기 위해 설계 된 고급 기능입니다. 그러나 클래스 마법사에서는 대량 레코드 필드 교환을 지원 하지 않습니다. 이 옵션은와 함께 사용할 수 없습니다 `CRecordset::optimizeBulkAdd` . 을 지정 하는 경우이 `CRecordset::useMultiRowFetch` 옵션은 `CRecordset::noDirtyFieldCheck` 자동으로 설정 됩니다 (이중 버퍼링을 사용할 수 없음). 앞 으로만 이동 가능한 레코드 집합에서는 옵션이 `CRecordset::useExtendedFetch` 자동으로 설정 됩니다. 대량 행 페치에 대한 자세한 내용은 [레코드 집합: 대량 레코드 페치(ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)문서를 참조하세요.
 
-- `CRecordset::skipDeletedRecords`레코드 집합을 탐색할 때 삭제 된 레코드를 모두 건너뜁니다. 이렇게 하면 특정 상대적 페치의 성능이 저하 됩니다. 이 옵션은 전방 전용 레코드 집합에서 유효 하지 않습니다. *Nrows* 매개 변수를 0으로 설정 하 고 옵션을 설정 하 여 [Move](#move) 를 호출 하면 `CRecordset::skipDeletedRecords` `Move` 가 어설션 됩니다. 는 `CRecordset::skipDeletedRecords` *드라이버*압축과 유사 합니다. 즉, 삭제 된 행이 레코드 집합에서 제거 됩니다. 그러나 드라이버가 레코드를 압축 하는 경우 삭제 하는 레코드만 건너뜁니다. 레코드 집합이 열려 있는 동안에는 다른 사용자가 삭제 한 레코드를 건너뛰지 않습니다. `CRecordset::skipDeletedRecords`는 다른 사용자가 삭제 한 행을 건너뜁니다.
+- `CRecordset::skipDeletedRecords` 레코드 집합을 탐색할 때 삭제 된 레코드를 모두 건너뜁니다. 이렇게 하면 특정 상대적 페치의 성능이 저하 됩니다. 이 옵션은 전방 전용 레코드 집합에서 유효 하지 않습니다. *Nrows* 매개 변수를 0으로 설정 하 고 옵션을 설정 하 여 [Move](#move) 를 호출 하면 `CRecordset::skipDeletedRecords` `Move` 가 어설션 됩니다. 는 `CRecordset::skipDeletedRecords` *드라이버* 압축과 유사 합니다. 즉, 삭제 된 행이 레코드 집합에서 제거 됩니다. 그러나 드라이버가 레코드를 압축 하는 경우 삭제 하는 레코드만 건너뜁니다. 레코드 집합이 열려 있는 동안에는 다른 사용자가 삭제 한 레코드를 건너뛰지 않습니다. `CRecordset::skipDeletedRecords` 는 다른 사용자가 삭제 한 행을 건너뜁니다.
 
-- `CRecordset::useBookmarks`지원 되는 경우 레코드 집합에서 책갈피를 사용할 수 있습니다. 책갈피는 데이터 검색 속도는 느리지만 데이터 탐색의 성능은 향상 됩니다. 앞 으로만 이동 가능한 레코드 집합에서는 유효 하지 않습니다. 자세한 내용은 [레코드 집합: 책갈피 및 절대 위치 (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md)문서를 참조 하세요.
+- `CRecordset::useBookmarks` 지원 되는 경우 레코드 집합에서 책갈피를 사용할 수 있습니다. 책갈피는 데이터 검색 속도는 느리지만 데이터 탐색의 성능은 향상 됩니다. 앞 으로만 이동 가능한 레코드 집합에서는 유효 하지 않습니다. 자세한 내용은 [레코드 집합: 책갈피 및 절대 위치 (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md)문서를 참조 하세요.
 
-- `CRecordset::noDirtyFieldCheck`자동 더티 필드 확인 (이중 버퍼링)을 해제 합니다. 이렇게 하면 성능이 향상 됩니다. 그러나 `SetFieldDirty` 및 멤버 함수를 호출 하 여 필드를 변경 되지 않은 상태로 수동으로 표시 해야 합니다 `SetFieldNull` . 클래스의 이중 버퍼링 `CRecordset` 은 클래스의 이중 버퍼링과 비슷합니다 `CDaoRecordset` . 그러나에서는 개별 필드에 이중 버퍼링을 사용 하도록 설정할 수 없습니다. 모든 필드에 대해이를 `CRecordset` 사용 하도록 설정 하거나 모든 필드에 대해 사용 하지 않도록 설정 합니다. 옵션을 지정 하는 경우는 `CRecordset::useMultiRowFetch` `CRecordset::noDirtyFieldCheck` 자동으로 설정 되지만 `SetFieldDirty` `SetFieldNull` 대량 행 페치를 구현 하는 레코드 집합에서는 및을 사용할 수 없습니다.
+- `CRecordset::noDirtyFieldCheck` 자동 더티 필드 확인 (이중 버퍼링)을 해제 합니다. 이렇게 하면 성능이 향상 됩니다. 그러나 `SetFieldDirty` 및 멤버 함수를 호출 하 여 필드를 변경 되지 않은 상태로 수동으로 표시 해야 합니다 `SetFieldNull` . 클래스의 이중 버퍼링 `CRecordset` 은 클래스의 이중 버퍼링과 비슷합니다 `CDaoRecordset` . 그러나에서는 개별 필드에 이중 버퍼링을 사용 하도록 설정할 수 없습니다. 모든 필드에 대해이를 `CRecordset` 사용 하도록 설정 하거나 모든 필드에 대해 사용 하지 않도록 설정 합니다. 옵션을 지정 하는 경우는 `CRecordset::useMultiRowFetch` `CRecordset::noDirtyFieldCheck` 자동으로 설정 되지만 `SetFieldDirty` `SetFieldNull` 대량 행 페치를 구현 하는 레코드 집합에서는 및을 사용할 수 없습니다.
 
-- `CRecordset::executeDirect`준비 된 SQL 문을 사용 하지 마십시오. 성능 향상을 위해 멤버 함수를 호출 하지 않을 경우이 옵션을 지정 `Requery` 합니다.
+- `CRecordset::executeDirect` 준비 된 SQL 문을 사용 하지 마십시오. 성능 향상을 위해 멤버 함수를 호출 하지 않을 경우이 옵션을 지정 `Requery` 합니다.
 
 - `CRecordset::useExtendedFetch``SQLExtendedFetch`대신을 구현 `SQLFetch` 합니다. 이는 앞 으로만 이동 가능한 레코드 집합에서 대량 행 페치를 구현 하기 위한 것입니다. `CRecordset::useMultiRowFetch`앞 으로만 이동 가능한 레코드 집합에서 옵션을 지정 하면 `CRecordset::useExtendedFetch` 가 자동으로 설정 됩니다.
 
-- `CRecordset::userAllocMultiRowBuffers`사용자는 데이터에 대 한 저장소 버퍼를 할당 합니다. 사용자 고유의 저장소를 할당 하려는 경우와 함께이 옵션을 사용 합니다. `CRecordset::useMultiRowFetch` 그렇지 않으면 프레임 워크에서 필요한 저장소를 자동으로 할당 합니다. 자세한 내용은 [레코드 집합: 대량 레코드 페치 (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)문서를 참조 하세요. 을 `CRecordset::userAllocMultiRowBuffers` 지정 하지 않고 `CRecordset::useMultiRowFetch` 를 지정 하면 어설션이 실패 합니다.
+- `CRecordset::userAllocMultiRowBuffers` 사용자는 데이터에 대 한 저장소 버퍼를 할당 합니다. 사용자 고유의 저장소를 할당 하려는 경우와 함께이 옵션을 사용 합니다. `CRecordset::useMultiRowFetch` 그렇지 않으면 프레임 워크에서 필요한 저장소를 자동으로 할당 합니다. 자세한 내용은 [레코드 집합: 대량 레코드 페치 (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)문서를 참조 하세요. 을 `CRecordset::userAllocMultiRowBuffers` 지정 하지 않고 `CRecordset::useMultiRowFetch` 를 지정 하면 어설션이 실패 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-`CRecordset`개체가 성공적으로 열려 있으면 0이 아니고, 그렇지 않으면 [CDatabase::Open](../../mfc/reference/cdatabase-class.md#open) 0이 반환 됩니다.
+`CRecordset`개체가 성공적으로 열려 있으면 0이 아니고, 그렇지 않으면 [](../../mfc/reference/cdatabase-class.md#open) 0이 반환 됩니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1613,7 +1614,7 @@ AFX_DB_USE_DEFAULT_TYPE 기본값을 그대로 사용 하거나에서 다음 값
 
 [!code-cpp[NVC_MFCDatabase#16](../../mfc/codesnippet/cpp/crecordset-class_15.cpp)]
 
-## <a name="crecordsetrefreshrowset"></a><a name="refreshrowset"></a>CRecordset:: RefreshRowset
+## <a name="crecordsetrefreshrowset"></a><a name="refreshrowset"></a> CRecordset:: RefreshRowset
 
 현재 행 집합의 행에 대 한 데이터와 상태를 업데이트 합니다.
 
@@ -1633,11 +1634,11 @@ void RefreshRowset(
 
 ### <a name="remarks"></a>설명
 
-*Wrow*에 대해 0 값을 전달 하면 행 집합의 모든 행이 새로 고쳐집니다.
+*Wrow* 에 대해 0 값을 전달 하면 행 집합의 모든 행이 새로 고쳐집니다.
 
 을 사용 하려면 `RefreshRowset` `CRecordset::useMulitRowFetch` [Open](#open) 멤버 함수에서 옵션을 지정 하 여 대량 행 페치를 구현 해야 합니다.
 
-`RefreshRowset`ODBC API 함수를 호출 `SQLSetPos` 합니다. *Wlocktype* 매개 변수는가 실행 된 후 행의 잠금 상태를 지정 합니다 `SQLSetPos` . 다음 표에서는 *Wlocktype*에 사용할 수 있는 값에 대해 설명 합니다.
+`RefreshRowset` ODBC API 함수를 호출 `SQLSetPos` 합니다. *Wlocktype* 매개 변수는가 실행 된 후 행의 잠금 상태를 지정 합니다 `SQLSetPos` . 다음 표에서는 *Wlocktype* 에 사용할 수 있는 값에 대해 설명 합니다.
 
 |wLockType|설명|
 |---------------|-----------------|
@@ -1647,7 +1648,7 @@ void RefreshRowset(
 
 에 대 한 자세한 내용은 `SQLSetPos` Windows SDK를 참조 하세요. 대량 행 페치에 대한 자세한 내용은 [레코드 집합: 대량 레코드 페치(ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)문서를 참조하세요.
 
-## <a name="crecordsetrequery"></a><a name="requery"></a>CRecordset:: Requery
+## <a name="crecordsetrequery"></a><a name="requery"></a> CRecordset:: Requery
 
 레코드 집합을 다시 작성 (새로 고침) 합니다.
 
@@ -1655,7 +1656,7 @@ void RefreshRowset(
 virtual BOOL Requery();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 레코드 집합이 성공적으로 다시 작성 된 경우 0이 아닌 값입니다. 그렇지 않으면 0입니다.
 
@@ -1667,7 +1668,7 @@ virtual BOOL Requery();
 
 다이너셋 또는 스냅숏의 경우 `Requery` 언제 든 지 새 필터나 정렬 또는 새 매개 변수 값을 사용 하 여 레코드 집합을 다시 작성 하려는 경우를 호출 합니다. 를 `m_strFilter` 호출 하기 전에 및에 새 값을 할당 하 여 새 필터 또는 정렬 속성을 설정 합니다 `m_strSort` `Requery` . 를 호출 하기 전에 매개 변수 데이터 멤버에 새 값을 할당 하 여 새 매개 변수를 설정 `Requery` 합니다. 필터 및 정렬 문자열이 변경 되지 않은 경우 쿼리를 다시 사용 하 여 성능을 향상 시킬 수 있습니다.
 
-레코드 집합을 다시 작성 하려는 시도가 실패 하면 레코드 집합은 닫힙니다. 를 호출 하기 전에 `Requery` 멤버 함수를 호출 하 여 레코드 집합을 확인할 수 있는지 여부를 확인할 수 있습니다 `CanRestart` . `CanRestart`는이 성공할 것임을 보장 하지 않습니다 `Requery` .
+레코드 집합을 다시 작성 하려는 시도가 실패 하면 레코드 집합은 닫힙니다. 를 호출 하기 전에 `Requery` 멤버 함수를 호출 하 여 레코드 집합을 확인할 수 있는지 여부를 확인할 수 있습니다 `CanRestart` . `CanRestart` 는이 성공할 것임을 보장 하지 않습니다 `Requery` .
 
 > [!CAUTION]
 > `Requery` [Open](#open)을 호출한 후에만를 호출 합니다.
@@ -1678,7 +1679,7 @@ virtual BOOL Requery();
 
 [!code-cpp[NVC_MFCDatabase#29](../../mfc/codesnippet/cpp/crecordset-class_16.cpp)]
 
-## <a name="crecordsetsetabsoluteposition"></a><a name="setabsoluteposition"></a>CRecordset:: SetAbsolutePosition
+## <a name="crecordsetsetabsoluteposition"></a><a name="setabsoluteposition"></a> CRecordset:: SetAbsolutePosition
 
 지정 된 레코드 번호에 해당 하는 레코드에 레코드 집합을 배치 합니다.
 
@@ -1693,7 +1694,7 @@ void SetAbsolutePosition(long nRows);
 
 ### <a name="remarks"></a>설명
 
-`SetAbsolutePosition`이 서 수 위치를 기준으로 현재 레코드 포인터를 이동 합니다.
+`SetAbsolutePosition` 이 서 수 위치를 기준으로 현재 레코드 포인터를 이동 합니다.
 
 > [!NOTE]
 > 이 멤버 함수는 앞 으로만 이동 가능한 레코드 집합에서 사용할 수 없습니다.
@@ -1707,7 +1708,7 @@ ODBC 레코드 집합의 경우 절대 위치 설정인 1은 레코드 집합의
 
 레코드 집합 탐색 및 책갈피에 대 한 자세한 내용은 [레코드 집합: 스크롤 (odbc)](../../data/odbc/recordset-scrolling-odbc.md) 및 [레코드 집합: 책갈피와 절대 위치 (odbc)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md)문서를 참조 하세요.
 
-## <a name="crecordsetsetbookmark"></a><a name="setbookmark"></a>CRecordset:: SetBookmark
+## <a name="crecordsetsetbookmark"></a><a name="setbookmark"></a> CRecordset:: SetBookmark
 
 지정 된 책갈피를 포함 하는 레코드에 레코드 집합을 배치 합니다.
 
@@ -1734,7 +1735,7 @@ void SetBookmark(const CDBVariant& varBookmark);
 
 책갈피 및 레코드 집합 탐색에 대 한 자세한 내용은 [레코드 집합: 책갈피 및 절대 위치 (odbc)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md) 및 [레코드 집합: 스크롤 (odbc)](../../data/odbc/recordset-scrolling-odbc.md)문서를 참조 하세요.
 
-## <a name="crecordsetsetfielddirty"></a><a name="setfielddirty"></a>CRecordset:: SetFieldDirty
+## <a name="crecordsetsetfielddirty"></a><a name="setfielddirty"></a> CRecordset:: SetFieldDirty
 
 레코드 집합의 필드 데이터 멤버를 변경 되거나 변경 되지 않은 것으로 플래그를 만듭니다.
 
@@ -1774,7 +1775,7 @@ void SetFieldDirty(void* pv, BOOL bDirty = TRUE);
 
 즉 `param` , 필드를 사용할 수 있는 것 처럼 모든 필드를 NULL로 설정할 수 없습니다 `outputColumn` .
 
-## <a name="crecordsetsetfieldnull"></a><a name="setfieldnull"></a>CRecordset:: SetFieldNull
+## <a name="crecordsetsetfieldnull"></a><a name="setfieldnull"></a> CRecordset:: SetFieldNull
 
 레코드 집합의 필드 데이터 멤버에 Null (구체적으로는 값 없음) 또는 Null이 아닌 값으로 플래그를 만듭니다.
 
@@ -1817,9 +1818,9 @@ void SetFieldNull(void* pv, BOOL bNull = TRUE);
 > [!NOTE]
 > 매개 변수를 Null로 설정 하는 경우 `SetFieldNull` 레코드 집합을 열기 전에를 호출 하면 어설션이 발생 합니다. 이 경우 [Setparamnull](#setparamnull)을 호출 합니다.
 
-`SetFieldNull`는 [DoFieldExchange](#dofieldexchange)를 통해 구현 됩니다.
+`SetFieldNull` 는 [DoFieldExchange](#dofieldexchange)를 통해 구현 됩니다.
 
-## <a name="crecordsetsetlockingmode"></a><a name="setlockingmode"></a>CRecordset:: SetLockingMode
+## <a name="crecordsetsetlockingmode"></a><a name="setlockingmode"></a> CRecordset:: SetLockingMode
 
 잠금 모드를 "낙관적" 잠금 (기본값) 또는 "비관적" 잠금으로 설정 합니다. 업데이트를 위해 레코드를 잠그는 방법을 결정 합니다.
 
@@ -1832,15 +1833,15 @@ void SetLockingMode(UINT nMode);
 *nMode*<br/>
 에서 다음 값 중 하나를 포함 합니다 `enum LockMode` .
 
-- `optimistic`낙관적 잠금은를 호출 하는 동안에만 업데이트 되는 레코드를 잠급니다 `Update` .
+- `optimistic` 낙관적 잠금은를 호출 하는 동안에만 업데이트 되는 레코드를 잠급니다 `Update` .
 
-- `pessimistic`비관적 잠금은가 호출 되는 즉시 레코드를 잠그고 `Edit` `Update` 호출이 완료 되거나 새 레코드로 이동할 때까지 잠깁니다.
+- `pessimistic` 비관적 잠금은가 호출 되는 즉시 레코드를 잠그고 `Edit` `Update` 호출이 완료 되거나 새 레코드로 이동할 때까지 잠깁니다.
 
 ### <a name="remarks"></a>설명
 
 레코드 집합에서 업데이트에 사용 하는 두 개의 레코드 잠금 전략을 지정 해야 하는 경우이 멤버 함수를 호출 합니다. 기본적으로 레코드 집합의 잠금 모드는 `optimistic` 입니다. 이를 보다 주의 해 서 잠금 전략으로 변경할 수 있습니다 `pessimistic` . `SetLockingMode`레코드 집합 개체를 생성 하 고 연 다음를 호출 하기 전에를 호출 `Edit` 합니다.
 
-## <a name="crecordsetsetparamnull"></a><a name="setparamnull"></a>CRecordset:: SetParamNull
+## <a name="crecordsetsetparamnull"></a><a name="setparamnull"></a> CRecordset:: SetParamNull
 
 매개 변수를 Null (구체적으로는 값 없음) 또는 Null이 아닌 값으로 플래그를 만듭니다.
 
@@ -1862,9 +1863,9 @@ TRUE (기본값) 이면 매개 변수에 Null로 플래그가 지정 됩니다. 
 
 [SetFieldNull](#setfieldnull)와 달리 `SetParamNull` 레코드 집합을 열기 전에를 호출할 수 있습니다.
 
-`SetParamNull`는 일반적으로 미리 정의 된 쿼리 (저장 프로시저)와 함께 사용 됩니다.
+`SetParamNull` 는 일반적으로 미리 정의 된 쿼리 (저장 프로시저)와 함께 사용 됩니다.
 
-## <a name="crecordsetsetrowsetcursorposition"></a><a name="setrowsetcursorposition"></a>CRecordset:: SetRowsetCursorPosition
+## <a name="crecordsetsetrowsetcursorposition"></a><a name="setrowsetcursorposition"></a> CRecordset:: SetRowsetCursorPosition
 
 현재 행 집합 내의 행으로 커서를 이동 합니다.
 
@@ -1886,7 +1887,7 @@ void SetRowsetCursorPosition(WORD wRow, WORD wLockType = SQL_LOCK_NO_CHANGE);
 
 을 사용 하려면 `SetRowsetCursorPosition` `CRecordset::useMultiRowFetch` [Open](#open) 멤버 함수에서 *dwOptions* 매개 변수의 옵션을 지정 하 여 대량 행 페치를 구현 해야 합니다.
 
-`SetRowsetCursorPosition`ODBC API 함수를 호출 `SQLSetPos` 합니다. *Wlocktype* 매개 변수는가 실행 된 후 행의 잠금 상태를 지정 합니다 `SQLSetPos` . 다음 표에서는 *Wlocktype*에 사용할 수 있는 값에 대해 설명 합니다.
+`SetRowsetCursorPosition` ODBC API 함수를 호출 `SQLSetPos` 합니다. *Wlocktype* 매개 변수는가 실행 된 후 행의 잠금 상태를 지정 합니다 `SQLSetPos` . 다음 표에서는 *Wlocktype* 에 사용할 수 있는 값에 대해 설명 합니다.
 
 |wLockType|설명|
 |---------------|-----------------|
@@ -1896,7 +1897,7 @@ void SetRowsetCursorPosition(WORD wRow, WORD wLockType = SQL_LOCK_NO_CHANGE);
 
 에 대 한 자세한 내용은 `SQLSetPos` Windows SDK를 참조 하세요. 대량 행 페치에 대한 자세한 내용은 [레코드 집합: 대량 레코드 페치(ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)문서를 참조하세요.
 
-## <a name="crecordsetsetrowsetsize"></a><a name="setrowsetsize"></a>CRecordset:: SetRowsetSize
+## <a name="crecordsetsetrowsetsize"></a><a name="setrowsetsize"></a> CRecordset:: SetRowsetSize
 
 인출 하는 동안 검색 하려는 레코드 수를 지정 합니다.
 
@@ -1925,7 +1926,7 @@ virtual void SetRowsetSize(DWORD dwNewRowsetSize);
 
 대량 행 페치에 대한 자세한 내용은 [레코드 집합: 대량 레코드 페치(ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)문서를 참조하세요.
 
-## <a name="crecordsetupdate"></a><a name="update"></a>CRecordset:: Update
+## <a name="crecordsetupdate"></a><a name="update"></a> CRecordset:: Update
 
 `AddNew` `Edit` 새 데이터 또는 편집 된 데이터를 데이터 소스에 저장 하 여 또는 작업을 완료 합니다.
 
@@ -1933,7 +1934,7 @@ virtual void SetRowsetSize(DWORD dwNewRowsetSize);
 virtual BOOL Update();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 하나의 레코드가 성공적으로 업데이트 된 경우 0이 아님 열이 변경 되지 않은 경우 0입니다. 업데이트 된 레코드가 없거나 둘 이상의 레코드가 업데이트 된 경우 예외가 throw 됩니다. 데이터 원본에서 다른 오류가 발생 하는 경우에도 예외가 throw 됩니다.
 
@@ -1944,7 +1945,7 @@ virtual BOOL Update();
 > [!NOTE]
 > 대량 행 페치를 구현한 경우에는를 호출할 수 없습니다 `Update` . 이로 인해 어설션이 실패 합니다. 클래스 `CRecordset` 는 대량 데이터 행을 업데이트 하는 메커니즘을 제공 하지 않지만 ODBC API 함수를 사용 하 여 고유한 함수를 작성할 수 있습니다 `SQLSetPos` . 대량 행 페치에 대한 자세한 내용은 [레코드 집합: 대량 레코드 페치(ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)문서를 참조하세요.
 
-및는 모두 `AddNew` `Edit` 데이터 원본에 저장 하기 위해 추가 되거나 편집 된 데이터를 저장 하는 편집 버퍼를 준비 합니다. `Update`데이터를 저장 합니다. 변경 된 것으로 표시 되거나 검색 된 필드만 업데이트 됩니다.
+및는 모두 `AddNew` `Edit` 데이터 원본에 저장 하기 위해 추가 되거나 편집 된 데이터를 저장 하는 편집 버퍼를 준비 합니다. `Update` 데이터를 저장 합니다. 변경 된 것으로 표시 되거나 검색 된 필드만 업데이트 됩니다.
 
 데이터 원본에서 트랜잭션을 지 원하는 경우 `Update` 트랜잭션에 대 한 호출 및 해당 또는 호출을 수행할 수 있습니다 `AddNew` `Edit` . 트랜잭션에 대 한 자세한 내용은 [트랜잭션 (ODBC)](../../data/odbc/transaction-odbc.md)문서를 참조 하세요.
 

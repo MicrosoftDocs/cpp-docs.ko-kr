@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CTypedPtrMap 클래스'
 title: CTypedPtrMap 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - CTypedPtrMap [MFC], RemoveKey
 - CTypedPtrMap [MFC], SetAt
 ms.assetid: 9f377385-c6e9-4471-8b40-8fe220c50164
-ms.openlocfilehash: 410f0101fd0f8cda271fe0f2353b06b9e8d773b8
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 25476a9195fe4a522ed31937dc1e2c5156ef6792
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81754368"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344993"
 ---
 # <a name="ctypedptrmap-class"></a>CTypedPtrMap 클래스
 
@@ -35,38 +36,38 @@ class CTypedPtrMap : public BASE_CLASS
 #### <a name="parameters"></a>매개 변수
 
 *BASE_CLASS*<br/>
-형식이 있는 포인터 맵 클래스의 기본 클래스입니다. 포인터 맵 클래스 `CMapPtrToPtr`(, `CMapPtrToWord` `CMapWordToPtr`또는)여야 `CMapStringToPtr`합니다.
+형식화 된 포인터 맵 클래스의 기본 클래스입니다. 는 포인터 맵 클래스 ( `CMapPtrToPtr` , `CMapPtrToWord` , `CMapWordToPtr` 또는) 여야 합니다 `CMapStringToPtr` .
 
-*키*<br/>
-맵의 키로 사용되는 개체의 클래스입니다.
+*KEY*<br/>
+맵에 키로 사용 되는 개체의 클래스입니다.
 
-*값*<br/>
-맵에 저장된 개체의 클래스입니다.
+*VALUE*<br/>
+맵에 저장 된 개체의 클래스입니다.
 
 ## <a name="members"></a>멤버
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[CTypedPtrMap::GetNextAssoc](#getnextassoc)|반복에 대한 다음 요소를 가져옵니다.|
-|[CTypedPtrMap::조회](#lookup)|을 `KEY` 기반으로 를 `VALUE`반환합니다.|
-|[CTypedPtrMap::제거키](#removekey)|키에 의해 지정된 요소를 제거합니다.|
-|[CTypedPtrMap::SetAt](#setat)|요소를 맵에 삽입합니다. 일치하는 키가 발견되면 기존 요소를 대체합니다.|
+|[CTypedPtrMap:: GetNextAssoc](#getnextassoc)|반복할 다음 요소를 가져옵니다.|
+|[CTypedPtrMap:: Lookup](#lookup)|`KEY`에 따라를 반환 `VALUE` 합니다.|
+|[CTypedPtrMap:: RemoveKey](#removekey)|키로 지정 된 요소를 제거 합니다.|
+|[CTypedPtrMap:: SetAt](#setat)|지도에 요소를 삽입 합니다. 일치 하는 키가 있는 경우 기존 요소를 바꿉니다.|
 
 ### <a name="public-operators"></a>Public 연산자
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|[CTypedPtrMap::연산자 \[\]](#operator_at)|맵에 요소를 삽입합니다.|
+|[CTypedPtrMap:: operator \[\]](#operator_at)|지도에 요소를 삽입 합니다.|
 
 ## <a name="remarks"></a>설명
 
-사용 시 `CTypedPtrMap`C++ 형식 검사 기능을 사용하면 일치하지 않는 포인터 유형으로 인한 오류를 제거할 수 있습니다.
+를 사용 하 `CTypedPtrMap` 는 경우 c + + 형식 검사 기능을 사용 하면 일치 하지 않는 포인터 형식으로 인 한 오류를 방지할 수 있습니다.
 
-모든 `CTypedPtrMap` 함수가 인라인이기 때문에 이 템플릿을 사용하면 코드의 크기 나 속도에 큰 영향을 미치지 않습니다.
+모든 `CTypedPtrMap` 함수가 인라인 이므로이 템플릿을 사용 하면 코드의 크기나 속도가 크게 영향을 받지 않습니다.
 
-사용에 `CTypedPtrMap`대한 자세한 내용은 [문서 컬렉션](../../mfc/collections.md) 및 템플릿 기반 [클래스를](../../mfc/template-based-classes.md)참조하십시오.
+사용에 대 한 자세한 내용은 `CTypedPtrMap` 문서 [컬렉션](../../mfc/collections.md) 및 [템플릿 기반 클래스](../../mfc/template-based-classes.md)를 참조 하세요.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -78,9 +79,9 @@ class CTypedPtrMap : public BASE_CLASS
 
 **헤더:** afxtempl.h
 
-## <a name="ctypedptrmapgetnextassoc"></a><a name="getnextassoc"></a>CTypedPtrMap::GetNextAssoc
+## <a name="ctypedptrmapgetnextassoc"></a><a name="getnextassoc"></a> CTypedPtrMap:: GetNextAssoc
 
-에서 `rNextPosition`맵 요소를 검색한 `rNextPosition` 다음 업데이트하여 맵의 다음 요소를 참조합니다.
+에서 지도 요소를 검색 `rNextPosition` 한 다음 `rNextPosition` map의 다음 요소를 참조 하도록 업데이트 합니다.
 
 ```cpp
 void GetNextAssoc(
@@ -92,31 +93,31 @@ void GetNextAssoc(
 ### <a name="parameters"></a>매개 변수
 
 *rPosition*<br/>
-이전 `GetNextAssoc` 또는 `BASE_CLASS` **::GetStartPosition** 호출에서 반환된 위치 값에 대한 참조를 지정합니다.
+Previous `GetNextAssoc` 또는 `BASE_CLASS` **:: getstartposition** 호출에서 반환 된 위치 값에 대 한 참조를 지정 합니다.
 
-*키*<br/>
-맵 키의 유형을 지정하는 템플릿 매개 변수입니다.
+*KEY*<br/>
+지도 키의 유형을 지정 하는 템플릿 매개 변수입니다.
 
 *rKey*<br/>
-검색된 요소의 반환된 키를 지정합니다.
+검색 된 요소의 반환 된 키를 지정 합니다.
 
-*값*<br/>
-맵 값의 유형을 지정하는 템플릿 매개 변수입니다.
+*VALUE*<br/>
+지도 값의 유형을 지정 하는 템플릿 매개 변수입니다.
 
-*Rvalue*<br/>
-검색된 요소의 반환된 값을 지정합니다.
+*rValue*<br/>
+검색 된 요소의 반환 값을 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 함수는 맵의 모든 요소를 반복하는 데 가장 유용합니다. 위치 시퀀스가 반드시 키 값 시퀀스와 같지는 않습니다.
+이 함수는 맵의 모든 요소를 반복 하는 데 가장 유용 합니다. 위치 시퀀스는 키 값 시퀀스와 동일할 필요는 없습니다.
 
-검색된 요소가 맵의 마지막 요소인 경우 새 `rNextPosition` 값은 NULL로 설정됩니다.
+검색 된 요소가 맵의 마지막 이면의 새 값은 `rNextPosition` NULL로 설정 됩니다.
 
-이 인라인 `BASE_CLASS`함수는 **::GetNextAssoc**.
+이 인라인 함수는 `BASE_CLASS` **:: GetNextAssoc** 를 호출 합니다.
 
-## <a name="ctypedptrmaplookup"></a><a name="lookup"></a>CTypedPtrMap::조회
+## <a name="ctypedptrmaplookup"></a><a name="lookup"></a> CTypedPtrMap:: Lookup
 
-`Lookup`해싱 알고리즘을 사용하여 정확히 일치하는 키가 있는 맵 요소를 빠르게 찾습니다.
+`Lookup` 는 해싱 알고리즘을 사용 하 여 정확 하 게 일치 하는 키로 지도 요소를 빠르게 찾습니다.
 
 ```
 BOOL Lookup(BASE_CLASS ::BASE_ARG_KEY key, VALUE& rValue) const;
@@ -125,28 +126,28 @@ BOOL Lookup(BASE_CLASS ::BASE_ARG_KEY key, VALUE& rValue) const;
 ### <a name="parameters"></a>매개 변수
 
 *BASE_CLASS*<br/>
-이 맵 클래스의 기본 클래스를 지정하는 템플릿 매개 변수입니다.
+이 맵의 클래스의 기본 클래스를 지정 하는 템플릿 매개 변수입니다.
 
 *key*<br/>
-살펴볼 요소의 키입니다.
+조회할 요소의 키입니다.
 
-*값*<br/>
-이 맵에 저장된 값의 유형을 지정하는 템플릿 매개 변수입니다.
+*VALUE*<br/>
+이 맵에 저장 된 값의 형식을 지정 하는 템플릿 매개 변수입니다.
 
-*Rvalue*<br/>
-검색된 요소의 반환된 값을 지정합니다.
+*rValue*<br/>
+검색 된 요소의 반환 값을 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-요소가 발견된 경우 0이 아닙니다. 그렇지 않으면 0.
+요소가 발견 되 면 0이 아닌 값입니다. 그렇지 않으면 0입니다.
 
 ### <a name="remarks"></a>설명
 
-이 인라인 `BASE_CLASS`함수는 **::Lookup을**호출합니다.
+이 인라인 함수는 `BASE_CLASS` **:: Lookup** 을 호출 합니다.
 
-## <a name="ctypedptrmapoperator--"></a><a name="operator_at"></a>CTypedPtrMap::연산자 [
+## <a name="ctypedptrmapoperator--"></a><a name="operator_at"></a> CTypedPtrMap:: operator []
 
-이 연산자는 할당 문(l-값)의 왼쪽에서만 사용할 수 있습니다.
+이 연산자는 대입문 (l-value)의 왼쪽에만 사용할 수 있습니다.
 
 ```
 VALUE& operator[ ](base_class ::base_arg_key key);
@@ -154,22 +155,22 @@ VALUE& operator[ ](base_class ::base_arg_key key);
 
 ### <a name="parameters"></a>매개 변수
 
-*값*<br/>
-이 맵에 저장된 값의 유형을 지정하는 템플릿 매개 변수입니다.
+*VALUE*<br/>
+이 맵에 저장 된 값의 형식을 지정 하는 템플릿 매개 변수입니다.
 
 *BASE_CLASS*<br/>
-이 맵 클래스의 기본 클래스를 지정하는 템플릿 매개 변수입니다.
+이 맵의 클래스의 기본 클래스를 지정 하는 템플릿 매개 변수입니다.
 
 *key*<br/>
-맵에서 조회하거나 생성할 요소의 키입니다.
+맵에서 조회 하거나 만들 요소의 키입니다.
 
 ### <a name="remarks"></a>설명
 
-지정된 키가 있는 맵 요소가 없는 경우 새 요소가 만들어집니다. 맵에서 키가 찾을 수 없기 때문에 이 연산자와 동등한 "오른쪽"(r-value)이 없습니다. 요소 `Lookup` 검색을 위해 멤버 함수를 사용합니다.
+지정 된 키를 가진 지도 요소가 없으면 새 요소가 생성 됩니다. 지도에서 키를 찾을 수 없기 때문에이 연산자에 해당 하는 "right side" (r-value)가 없습니다. `Lookup`요소 검색에 멤버 함수를 사용 합니다.
 
-## <a name="ctypedptrmapremovekey"></a><a name="removekey"></a>CTypedPtrMap::제거키
+## <a name="ctypedptrmapremovekey"></a><a name="removekey"></a> CTypedPtrMap:: RemoveKey
 
-이 멤버 `BASE_CLASS`함수는 **::RemoveKey**를 호출합니다.
+이 멤버 함수는 `BASE_CLASS` **:: removekey** 를 호출 합니다.
 
 ```
 BOOL RemoveKey(KEY key);
@@ -177,23 +178,23 @@ BOOL RemoveKey(KEY key);
 
 ### <a name="parameters"></a>매개 변수
 
-*키*<br/>
-맵 키의 유형을 지정하는 템플릿 매개 변수입니다.
+*KEY*<br/>
+지도 키의 유형을 지정 하는 템플릿 매개 변수입니다.
 
 *key*<br/>
-제거할 요소에 대한 키입니다.
+제거할 요소의 키입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-항목이 발견되어 성공적으로 제거된 경우 비영; 그렇지 않으면 0.
+항목이 발견 되어 성공적으로 제거 되 면 0이 아닌 값입니다. 그렇지 않으면 0입니다.
 
 ### <a name="remarks"></a>설명
 
-더 자세한 설명은 [CMapStringToOb::RemoveKey](../../mfc/reference/cmapstringtoob-class.md#removekey)를 참조하십시오.
+자세한 내용은 [CMapStringToOb:: RemoveKey](../../mfc/reference/cmapstringtoob-class.md#removekey)를 참조 하세요.
 
-## <a name="ctypedptrmapsetat"></a><a name="setat"></a>CTypedPtrMap::SetAt
+## <a name="ctypedptrmapsetat"></a><a name="setat"></a> CTypedPtrMap:: SetAt
 
-이 멤버 `BASE_CLASS`함수는 **::SetAt 를 호출합니다.**
+이 멤버 함수는 `BASE_CLASS` **:: setat** 를 호출 합니다.
 
 ```cpp
 void SetAt(KEY key, VALUE newValue);
@@ -201,24 +202,24 @@ void SetAt(KEY key, VALUE newValue);
 
 ### <a name="parameters"></a>매개 변수
 
-*키*<br/>
-맵 키의 유형을 지정하는 템플릿 매개 변수입니다.
+*KEY*<br/>
+지도 키의 유형을 지정 하는 템플릿 매개 변수입니다.
 
 *key*<br/>
-newValue의 키 값을 지정합니다.
+NewValue의 키 값을 지정 합니다.
 
 *newValue*<br/>
-새 요소의 값인 개체 포인터를 지정합니다.
+새 요소의 값인 개체 포인터를 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
-더 자세한 설명은 [CMapStringToOb::SetAt](../../mfc/reference/cmapstringtoob-class.md#setat)를 참조하십시오.
+자세한 내용은 [CMapStringToOb:: SetAt](../../mfc/reference/cmapstringtoob-class.md#setat)을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [MFC 샘플 수집](../../overview/visual-cpp-samples.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
-[C맵프트르토프트어 클래스](../../mfc/reference/cmapptrtoptr-class.md)<br/>
+[CMapPtrToPtr 클래스](../../mfc/reference/cmapptrtoptr-class.md)<br/>
 [CMapPtrToWord 클래스](../../mfc/reference/cmapptrtoword-class.md)<br/>
-[C맵워드토프트르 클래스](../../mfc/reference/cmapwordtoptr-class.md)<br/>
-[C맵스트링토프트 클래스](../../mfc/reference/cmapstringtoptr-class.md)
+[CMapWordToPtr 클래스](../../mfc/reference/cmapwordtoptr-class.md)<br/>
+[CMapStringToPtr 클래스](../../mfc/reference/cmapstringtoptr-class.md)

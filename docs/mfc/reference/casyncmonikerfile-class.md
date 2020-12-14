@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CAsyncMonikerFile 클래스'
 title: CAsyncMonikerFile 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -32,12 +33,12 @@ helpviewer_keywords:
 - CAsyncMonikerFile [MFC], OnStartBinding
 - CAsyncMonikerFile [MFC], OnStopBinding
 ms.assetid: 17378b66-a49a-4b67-88e3-7756ad26a2fc
-ms.openlocfilehash: 259d31b9c1e198b326ba616481dbbf5315225546
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 559ffd5ed3a8b7100d9901dc70fe4f5349c05f7f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845941"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97343531"
 ---
 # <a name="casyncmonikerfile-class"></a>CAsyncMonikerFile 클래스
 
@@ -281,16 +282,16 @@ virtual void OnProgress(
 ### <a name="parameters"></a>매개 변수
 
 *ulProgress*<br/>
-*UlProgressMax*에 표시 된 예상 최대값을 기준으로 바인딩 작업의 현재 진행률을 나타냅니다.
+*UlProgressMax* 에 표시 된 예상 최대값을 기준으로 바인딩 작업의 현재 진행률을 나타냅니다.
 
 *ulProgressMax*<br/>
-*ulProgress* `OnProgress` 이 작업에 대 한 호출 기간 동안 예상 되는 최대 진행률 값을 나타냅니다.
+ `OnProgress` 이 작업에 대 한 호출 기간 동안 예상 되는 최대 진행률 값을 나타냅니다.
 
 *ulStatusCode*<br/>
 바인딩 작업의 진행률에 대 한 추가 정보를 제공 합니다. 유효한 값은 열거형에서 가져옵니다 `BINDSTATUS` . 가능한 값에 대해서는 설명을 참조 하세요.
 
 *szStatusText*<br/>
-*Ulstatuscode*의 값에 따라 현재 진행에 대 한 정보입니다. 가능한 값에 대해서는 설명을 참조 하세요.
+*Ulstatuscode* 의 값에 따라 현재 진행에 대 한 정보입니다. 가능한 값에 대해서는 설명을 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
@@ -401,10 +402,10 @@ virtual BOOL Open(
 `IBindHost`잠재적 상대 경로 이름에서 모니커를 만드는 데 사용 되는 인터페이스에 대 한 포인터입니다. 바인딩 호스트가 잘못 되었거나 모니커를 제공 하지 않는 경우 호출의 기본값은 `Open(lpszFileName,pError)` 입니다. 인터페이스에 대 한 설명은 `IBindHost` Windows SDK를 참조 하세요.
 
 *pServiceProvider*<br/>
-관리되지 않는 개체의 `IServiceProvider` 인터페이스에 따라 특정 오류 HRESULT가 포함된 예외를 발생시킵니다. 서비스 공급자가 잘못 되었거나 서비스를 제공할 수 없는 경우 `IBindHost` 호출의 기본값은 `Open(lpszFileName,pError)` 입니다.
+`IServiceProvider` 인터페이스에 대한 포인터입니다. 서비스 공급자가 잘못 되었거나 서비스를 제공할 수 없는 경우 `IBindHost` 호출의 기본값은 `Open(lpszFileName,pError)` 입니다.
 
 *pUnknown*<br/>
-관리되지 않는 개체의 `IUnknown` 인터페이스에 따라 특정 오류 HRESULT가 포함된 예외를 발생시킵니다. `IServiceProvider`이 있으면 함수는를 쿼리 `IBindHost` 합니다. 서비스 공급자가 잘못 되었거나 서비스를 제공할 수 없는 경우 `IBindHost` 호출의 기본값은 `Open(lpszFileName,pError)` 입니다.
+`IUnknown` 인터페이스에 대한 포인터입니다. `IServiceProvider`이 있으면 함수는를 쿼리 `IBindHost` 합니다. 서비스 공급자가 잘못 되었거나 서비스를 제공할 수 없는 경우 `IBindHost` 호출의 기본값은 `Open(lpszFileName,pError)` 입니다.
 
 ### <a name="return-value"></a>반환 값
 

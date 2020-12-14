@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: MFC 응용 프로그램 만들기'
 title: MFC 애플리케이션 만들기
 ms.date: 08/28/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - MFC, creating applications
 - MFC applications
 ms.assetid: b8b8aa08-9c49-404c-8078-b42079ac18f0
-ms.openlocfilehash: dd4a0b8a7a06debdc3556d48e000fe09deccf857
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 3e6541c8887f3278ac2706cb5e5cc733857e7e90
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924422"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97343300"
 ---
 # <a name="creating-an-mfc-application"></a>MFC 애플리케이션 만들기
 

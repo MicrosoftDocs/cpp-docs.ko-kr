@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: CPtrList 클래스'
 title: CPtrList 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - CPtrList class [MFC]
 - generic lists
 ms.assetid: 4139a09c-4338-4f42-9eea-51336120b43c
-ms.openlocfilehash: d7da4fe52d25d9ffdf6371aa40f41d7082f1165c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 27849db4687860ab68feb548de1ed8ad209b73a6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226843"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97343253"
 ---
 # <a name="cptrlist-class"></a>CPtrList 클래스
 
@@ -37,7 +38,7 @@ class CPtrList : public CObject
 
 ## <a name="remarks"></a>설명
 
-`CPtrList`IMPLEMENT_DYNAMIC 매크로를 통합 하 여 런타임 형식 액세스를 지원 하 고 개체를 덤프 `CDumpContext` 합니다. 개별 포인터 목록 요소의 덤프가 필요한 경우 덤프 컨텍스트 깊이는 1보다 크게 설정해야 합니다.
+`CPtrList` IMPLEMENT_DYNAMIC 매크로를 통합 하 여 런타임 형식 액세스를 지원 하 고 개체를 덤프 `CDumpContext` 합니다. 개별 포인터 목록 요소의 덤프가 필요한 경우 덤프 컨텍스트 깊이는 1보다 크게 설정해야 합니다.
 
 포인터 목록은 serialize할 수 없습니다.
 

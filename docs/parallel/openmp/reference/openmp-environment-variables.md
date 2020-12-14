@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: OpenMP 환경 변수'
 title: OpenMP 환경 변수
 ms.date: 03/20/2019
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - OMP_NUM_THREADS OpenMP environment variable
 - OMP_SCHEDULE OpenMP environment variable
 ms.assetid: 2178ce2b-ffa1-45ec-a455-64437711d15d
-ms.openlocfilehash: 3f9117c531bdf0c5a0c94e0b18a055591f431036
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 58ca563033906f4e5e7e9d59089dc463396aa91c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91503754"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342389"
 ---
 # <a name="openmp-environment-variables"></a>OpenMP 환경 변수
 
@@ -29,7 +30,7 @@ OpenMP 표준의 Visual C++ 구현에는 다음과 같은 환경 변수가 포�
 
 |환경 변수|Description|
 |--------------------|-----------|
-|[OMP_SCHEDULE](#omp-schedule)|[schedule](openmp-clauses.md#schedule) `schedule(runtime)` 가 또는 지시문에 지정 된 경우 schedule 절의 동작을 수정 `for` 합니다 `parallel for` .|
+|[OMP_SCHEDULE](#omp-schedule)|[](openmp-clauses.md#schedule) `schedule(runtime)` 가 또는 지시문에 지정 된 경우 schedule 절의 동작을 수정 `for` 합니다 `parallel for` .|
 |[OMP_NUM_THREADS](#omp-num-threads)|[Omp_set_num_threads](openmp-functions.md#omp-set-num-threads) 또는 [num_threads](openmp-clauses.md#num-threads)에 의해 재정의 되지 않는 한 병렬 영역에 있는 최대 스레드 수를 설정 합니다.|
 |[OMP_DYNAMIC](#omp-dynamic)|OpenMP 런타임에서 병렬 영역의 스레드 수를 조정할 수 있는지 여부를 지정 합니다.|
 |[OMP_NESTED](#omp-nested)|중첩 된 병렬 처리를 사용 하거나 사용 하지 않도록 설정 하지 않는 한 중첩 된 병렬 처리를 사용할지 여부를 지정 합니다 `omp_set_nested` .|
@@ -131,7 +132,7 @@ set OMP_NUM_THREADS
 
 ## <a name="omp_schedule"></a><a name="omp-schedule"></a> OMP_SCHEDULE
 
-[schedule](openmp-clauses.md#schedule) `schedule(runtime)` 가 또는 지시문에 지정 된 경우 schedule 절의 동작을 수정 `for` 합니다 `parallel for` .
+[](openmp-clauses.md#schedule) `schedule(runtime)` 가 또는 지시문에 지정 된 경우 schedule 절의 동작을 수정 `for` 합니다 `parallel for` .
 
 ```cmd
 set OMP_SCHEDULE[=type[,size]]

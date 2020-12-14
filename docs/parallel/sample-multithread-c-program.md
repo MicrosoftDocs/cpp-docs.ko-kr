@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: 샘플 다중 스레드 C 프로그램'
 title: 샘플 다중 스레드 C 프로그램
 ms.date: 08/09/2019
 ms.assetid: 4706f6cd-ff9c-4dbf-99a2-1c999b568f17
-ms.openlocfilehash: 355024b995dc638b89a335983bd2e0f2cb0d96ce
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: a46bd370a309a29c6877eacaea428ff9fc42902e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924770"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342337"
 ---
 # <a name="sample-multithread-c-program"></a>샘플 다중 스레드 C 프로그램
 
@@ -23,7 +24,7 @@ ms.locfileid: "92924770"
 
 1. **파일** 메뉴에서 **새로 만들기** > **프로젝트** 를 선택합니다.
 
-1. **새 프로젝트 만들기** 대화 상자에서 **c + +** , **Windows** 및 **콘솔** 태그를 포함 하는 **콘솔 응용 프로그램** 템플릿을 선택 합니다. 계속 진행하려면 **다음** 을 선택합니다.
+1. **새 프로젝트 만들기** 대화 상자에서 **c + +**, **Windows** 및 **콘솔** 태그를 포함 하는 **콘솔 응용 프로그램** 템플릿을 선택 합니다. 계속 진행하려면 **다음** 을 선택합니다.
 
 1. **새 프로젝트 구성** 대화 상자에서 프로젝트 이름 (예: "바운스")을 입력 합니다. **만들기** 를 선택 하 여 계속 합니다.
 

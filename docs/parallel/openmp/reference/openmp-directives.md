@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: OpenMP 지시문'
 title: OpenMP 지시문
 ms.date: 03/20/2019
 f1_keywords:
@@ -27,12 +28,12 @@ helpviewer_keywords:
 - single OpenMP directive
 - threadprivate OpenMP directive
 ms.assetid: 0562c263-344c-466d-843e-de830d918940
-ms.openlocfilehash: 21270e8cdeb17b6d06d903d328962435c627759f
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 03730b1f5cda0972dbf86b345c6e44bdad4e949b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91503831"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342402"
 ---
 # <a name="openmp-directives"></a>OpenMP 지시문
 
@@ -78,7 +79,7 @@ Master 및 synchronization의 경우:
 ### <a name="parameters"></a>매개 변수
 
 *expression*<br/>
-하나 이상의 쓰기 로부터 보호 하려는 메모리 위치를 포함 하는 *lvalue*를 포함 하는 문입니다.
+하나 이상의 쓰기 로부터 보호 하려는 메모리 위치를 포함 하는 *lvalue* 를 포함 하는 문입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -714,7 +715,7 @@ write output
 
 프로세스를 시작할 때 정적으로 로드 되는 DLL에서는를 사용할 수 있지만/DELAYLOAD를 사용 하 여 로드 되는 dll `threadprivate` `threadprivate` (예: [로드 지연 가져오기)](../../../build/reference/delayload-delay-load-import.md)과 같은 [LoadLibrary](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryw) 를 통해 로드 되는 dll에서는를 사용할 수 없습니다 `LoadLibrary` .
 
-`threadprivate` *소멸 가능한* 형식의 변수는 해당 소멸자를 호출 하는 것이 보장 되지 않습니다. 다음은 그 예입니다.
+`threadprivate` *소멸 가능한* 형식의 변수는 해당 소멸자를 호출 하는 것이 보장 되지 않습니다. 예를 들어:
 
 ```cpp
 struct MyType

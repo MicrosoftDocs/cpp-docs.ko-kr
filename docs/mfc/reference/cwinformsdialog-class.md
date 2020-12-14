@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CWinFormsDialog 클래스'
 title: CWinFormsDialog 클래스
 ms.date: 03/27/2019
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - CWinFormsDialog [MFC], GetControlHandle
 - CWinFormsDialog [MFC], OnInitDialog
 ms.assetid: e3cec000-a578-448e-b06a-8af256312f61
-ms.openlocfilehash: a25823982b9276309e99a2a26cef8d6fe2e764bd
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 501f9c354bd6f0b7a628aabb93f4680155f74a69
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040667"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342623"
 ---
 # <a name="cwinformsdialog-class"></a>CWinFormsDialog 클래스
 
@@ -42,13 +43,13 @@ MFC 응용 프로그램에 표시 되는 .NET Framework 사용자 정의 컨트�
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CWinFormsDialog:: CWinFormsDialog](#cwinformsdialog)|`CWinFormsDialog` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CWinFormsDialog:: GetControl](#getcontrol)|Windows Forms 사용자 정의 컨트롤에 대 한 참조를 검색 합니다.|
 |[CWinFormsDialog:: GetControlHandle](#getcontrolhandle)|Windows Forms 사용자 정의 컨트롤에 대 한 창 핸들을 검색 합니다.|
@@ -56,7 +57,7 @@ MFC 응용 프로그램에 표시 되는 .NET Framework 사용자 정의 컨트�
 
 ### <a name="public-operators"></a>Public 연산자
 
-|Name|Description|
+|Name|설명|
 |----------|-|
 |[CWinFormsDialog:: operator-&gt;](#operator_-_gt)|식에서 [CWinFormsDialog:: GetControl](#getcontrol) 을 바꿉니다.|
 |[CWinFormsDialog:: operator TManagedControl ^](#operator-tmanagedcontrol-hat)|형식을 Windows Forms 사용자 정의 컨트롤에 대 한 참조로 캐스팅 합니다.|
@@ -122,7 +123,7 @@ virtual BOOL OnInitDialog();
 
 ### <a name="remarks"></a>설명
 
-DoModal [에서 상속](../../mfc/reference/cdialog-class.md)된 [Create](../../mfc/reference/cdialog-class.md#create), [createindirect](../../mfc/reference/cdialog-class.md#createindirect)또는 [DoModal](../../mfc/reference/cdialog-class.md#domodal) 메서드를 사용 하 여 MFC 대화 상자를 만들면 WM_INITDIALOG 메시지가 전송 되 고이 메서드가 호출 됩니다. 대화 상자에 Windows Forms 컨트롤의 인스턴스를 만들고 사용자 정의 컨트롤의 크기에 맞게 대화 상자의 크기를 조정 합니다. 그런 다음 MFC 대화 상자에서 새 컨트롤을 호스팅합니다.
+DoModal [에서 상속](../../mfc/reference/cdialog-class.md)된 [Create](../../mfc/reference/cdialog-class.md#create), [createindirect](../../mfc/reference/cdialog-class.md#createindirect)또는 [](../../mfc/reference/cdialog-class.md#domodal) 메서드를 사용 하 여 MFC 대화 상자를 만들면 WM_INITDIALOG 메시지가 전송 되 고이 메서드가 호출 됩니다. 대화 상자에 Windows Forms 컨트롤의 인스턴스를 만들고 사용자 정의 컨트롤의 크기에 맞게 대화 상자의 크기를 조정 합니다. 그런 다음 MFC 대화 상자에서 새 컨트롤을 호스팅합니다.
 
 대화 상자가 초기화 될 때 특수 처리를 수행 해야 하는 경우이 멤버 함수를 재정의 합니다. 이 메서드를 사용 하는 방법에 대 한 자세한 내용은 [CDialog:: OnInitDialog](../../mfc/reference/cdialog-class.md#oninitdialog)를 참조 하세요.
 

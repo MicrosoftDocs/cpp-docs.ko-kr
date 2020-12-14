@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CSplitterWnd 클래스'
 title: CSplitterWnd 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -72,12 +73,12 @@ helpviewer_keywords:
 - CSplitterWnd [MFC], OnDrawSplitter
 - CSplitterWnd [MFC], OnInvertTracker
 ms.assetid: fd0de258-6dbe-4552-9e47-a39de0471d51
-ms.openlocfilehash: 0f6d940ca123483f381231e6d34d98eebe101bf7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4888a9e0085895dd1a323f797c7e90bfbf7226d6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212386"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342649"
 ---
 # <a name="csplitterwnd-class"></a>CSplitterWnd 클래스
 
@@ -93,7 +94,7 @@ class CSplitterWnd : public CWnd
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[CSplitterWnd:: CSplitterWnd](#csplitterwnd)|를 호출 하 여 `CSplitterWnd` 개체를 생성 합니다.|
 
@@ -193,7 +194,7 @@ class CSplitterWnd : public CWnd
 
 **헤더:** afxext.h
 
-## <a name="csplitterwndactivatenext"></a><a name="activatenext"></a>CSplitterWnd:: ActivateNext
+## <a name="csplitterwndactivatenext"></a><a name="activatenext"></a> CSplitterWnd:: ActivateNext
 
 다음 창이 나 이전 창 명령을 수행 하기 위해 프레임 워크에서 호출 됩니다.
 
@@ -210,7 +211,7 @@ virtual void ActivateNext(BOOL bPrev = FALSE);
 
 이 멤버 함수는 [CView](../../mfc/reference/cview-class.md) 클래스가 구현에 위임 하는 데 사용 하는 높은 수준의 명령입니다 `CSplitterWnd` .
 
-## <a name="csplitterwndcanactivatenext"></a><a name="canactivatenext"></a>CSplitterWnd:: CanActivateNext
+## <a name="csplitterwndcanactivatenext"></a><a name="canactivatenext"></a> CSplitterWnd:: CanActivateNext
 
 다음 창이 나 이전 창 명령이 현재 가능한 지 확인 하기 위해 프레임 워크에서 호출 됩니다.
 
@@ -223,7 +224,7 @@ virtual BOOL CanActivateNext(BOOL bPrev = FALSE);
 *bPrev*<br/>
 활성화할 창을 나타냅니다. 이전의 경우 **TRUE** 입니다. 다음의 경우 **FALSE** 입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -231,7 +232,7 @@ virtual BOOL CanActivateNext(BOOL bPrev = FALSE);
 
 이 멤버 함수는 [CView](../../mfc/reference/cview-class.md) 클래스가 구현에 위임 하는 데 사용 하는 높은 수준의 명령입니다 `CSplitterWnd` .
 
-## <a name="csplitterwndcreate"></a><a name="create"></a>CSplitterWnd:: Create
+## <a name="csplitterwndcreate"></a><a name="create"></a> CSplitterWnd:: Create
 
 동적 분할자 창을 만들려면 `Create` 멤버 함수를 호출 합니다.
 
@@ -269,7 +270,7 @@ virtual BOOL Create(
 *nID*<br/>
 창의 자식 창 ID입니다. 분할자 창이 다른 분할자 창 안에 중첩 되지 않은 경우 ID를 AFX_IDW_PANE_FIRST 수 있습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -293,7 +294,7 @@ virtual BOOL Create(
 
 [!code-cpp[NVC_MFCWindowing#125](../../mfc/reference/codesnippet/cpp/csplitterwnd-class_1.cpp)]
 
-## <a name="csplitterwndcreatescrollbarctrl"></a><a name="createscrollbarctrl"></a>CSplitterWnd:: CreateScrollBarCtrl
+## <a name="csplitterwndcreatescrollbarctrl"></a><a name="createscrollbarctrl"></a> CSplitterWnd:: CreateScrollBarCtrl
 
 공유 스크롤 막대 컨트롤을 만들기 위해 프레임 워크에서 호출 됩니다.
 
@@ -311,7 +312,7 @@ virtual BOOL CreateScrollBarCtrl(
 *nID*<br/>
 창의 자식 창 ID입니다. 분할자 창이 다른 분할자 창 안에 중첩 되지 않은 경우 ID를 AFX_IDW_PANE_FIRST 수 있습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -319,7 +320,7 @@ virtual BOOL CreateScrollBarCtrl(
 
 `CreateScrollBarCtrl`스크롤 막대 옆에 있는 추가 컨트롤을 포함 하도록를 재정의 합니다. 기본 동작은 일반 Windows scroll bar 컨트롤을 만드는 것입니다.
 
-## <a name="csplitterwndcreatestatic"></a><a name="createstatic"></a>CSplitterWnd:: CreateStatic
+## <a name="csplitterwndcreatestatic"></a><a name="createstatic"></a> CSplitterWnd:: CreateStatic
 
 정적 분할자 창을 만들려면 `CreateStatic` 멤버 함수를 호출 합니다.
 
@@ -349,7 +350,7 @@ virtual BOOL CreateStatic(
 *nID*<br/>
 창의 자식 창 ID입니다. 분할자 창이 다른 분할자 창 안에 중첩 되지 않은 경우 ID를 AFX_IDW_PANE_FIRST 수 있습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -369,11 +370,11 @@ virtual BOOL CreateStatic(
 
 정적 분할자 창의 초기 최소 행 높이 및 열 너비는 0입니다. 창이 너무 작아 완전히 표시 되지 않는 경우를 확인 하는 이러한 최소값은 [Setrowinfo](#setrowinfo) 및 [setcolumninfo](#setcolumninfo) 멤버 함수를 사용 하 여 변경할 수 있습니다.
 
-정적 분할자 창에 스크롤 막대를 추가 하려면 WS_HSCROLL 및 WS_VSCROLL 스타일을 *Dwstyle*에 추가 합니다.
+정적 분할자 창에 스크롤 막대를 추가 하려면 WS_HSCROLL 및 WS_VSCROLL 스타일을 *Dwstyle* 에 추가 합니다.
 
 정적 분할자 창에 대 한 자세한 내용은 [여러 문서 형식, 뷰 및 프레임 창](../../mfc/multiple-document-types-views-and-frame-windows.md), [Technical Note 29](../../mfc/tn029-splitter-windows.md)및 클래스 개요 문서의 "분할자 창"을 참조 하십시오 `CSplitterWnd` .
 
-## <a name="csplitterwndcreateview"></a><a name="createview"></a>CSplitterWnd:: CreateView
+## <a name="csplitterwndcreateview"></a><a name="createview"></a> CSplitterWnd:: CreateView
 
 정적 분할자 창의 창을 만듭니다.
 
@@ -388,7 +389,7 @@ virtual BOOL CreateView(
 
 ### <a name="parameters"></a>매개 변수
 
-*행당*<br/>
+*행*<br/>
 새 뷰를 놓을 분할자 창 행을 지정 합니다.
 
 *col*<br/>
@@ -403,7 +404,7 @@ virtual BOOL CreateView(
 *pContext*<br/>
 뷰를 만드는 데 사용 되는 생성 컨텍스트에 대 한 포인터입니다. 일반적으로 분할자 창이 만들어지는 부모 프레임의 재정의 된 [CFrameWnd:: OnCreateClient](../../mfc/reference/cframewnd-class.md#oncreateclient) 멤버 함수에 전달 되는 *pContext* 입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -417,7 +418,7 @@ virtual BOOL CreateView(
 
 [!code-cpp[NVC_MFCWindowing#4](../../mfc/reference/codesnippet/cpp/csplitterwnd-class_2.cpp)]
 
-## <a name="csplitterwndcsplitterwnd"></a><a name="csplitterwnd"></a>CSplitterWnd:: CSplitterWnd
+## <a name="csplitterwndcsplitterwnd"></a><a name="csplitterwnd"></a> CSplitterWnd:: CSplitterWnd
 
 를 호출 하 여 `CSplitterWnd` 개체를 생성 합니다.
 
@@ -429,7 +430,7 @@ CSplitterWnd();
 
 `CSplitterWnd`두 단계로 개체를 생성 합니다. 먼저 개체를 만든 `CSplitterWnd` 다음 [Create](#create) member 함수를 호출 하는 생성자를 호출 합니다 .이 함수는 분할자 창을 만들고 개체에 연결 `CSplitterWnd` 합니다.
 
-## <a name="csplitterwnddeletecolumn"></a><a name="deletecolumn"></a>CSplitterWnd::D eleteColumn
+## <a name="csplitterwnddeletecolumn"></a><a name="deletecolumn"></a> CSplitterWnd::D eleteColumn
 
 분할자 창에서 열을 삭제 합니다.
 
@@ -446,7 +447,7 @@ virtual void DeleteColumn(int colDelete);
 
 이 멤버 함수는 동적 분할자 창의 논리를 구현 하기 위해 프레임 워크에서 호출 됩니다. 즉, 분할자 창에 SPLS_DYNAMIC_SPLIT 스타일이 있는 경우입니다. 가상 함수 [Createview](#createview)와 함께 사용자 지정 하 여 고급 동적 분할자를 구현할 수 있습니다.
 
-## <a name="csplitterwnddeleterow"></a><a name="deleterow"></a>CSplitterWnd::D eleteRow
+## <a name="csplitterwnddeleterow"></a><a name="deleterow"></a> CSplitterWnd::D eleteRow
 
 분할자 창에서 행을 삭제 합니다.
 
@@ -463,7 +464,7 @@ virtual void DeleteRow(int rowDelete);
 
 이 멤버 함수는 동적 분할자 창의 논리를 구현 하기 위해 프레임 워크에서 호출 됩니다. 즉, 분할자 창에 SPLS_DYNAMIC_SPLIT 스타일이 있는 경우입니다. 가상 함수 [Createview](#createview)와 함께 사용자 지정 하 여 고급 동적 분할자를 구현할 수 있습니다.
 
-## <a name="csplitterwnddeleteview"></a><a name="deleteview"></a>CSplitterWnd::D eleteView
+## <a name="csplitterwnddeleteview"></a><a name="deleteview"></a> CSplitterWnd::D eleteView
 
 분할자 창에서 뷰를 삭제 합니다.
 
@@ -475,7 +476,7 @@ virtual void DeleteView(
 
 ### <a name="parameters"></a>매개 변수
 
-*행당*<br/>
+*행*<br/>
 뷰를 삭제할 분할자 창 행을 지정 합니다.
 
 *col*<br/>
@@ -487,7 +488,7 @@ virtual void DeleteView(
 
 이 멤버 함수는 동적 분할자 창의 논리를 구현 하기 위해 프레임 워크에서 호출 됩니다. 즉, 분할자 창에 SPLS_DYNAMIC_SPLIT 스타일이 있는 경우입니다. 가상 함수 [Createview](#createview)와 함께 사용자 지정 하 여 고급 동적 분할자를 구현할 수 있습니다.
 
-## <a name="csplitterwnddokeyboardsplit"></a><a name="dokeyboardsplit"></a>CSplitterWnd::D oKeyboardSplit
+## <a name="csplitterwnddokeyboardsplit"></a><a name="dokeyboardsplit"></a> CSplitterWnd::D oKeyboardSplit
 
 일반적으로 "창 분할"의 키보드 분할 명령을 수행 합니다.
 
@@ -495,7 +496,7 @@ virtual void DeleteView(
 virtual BOOL DoKeyboardSplit();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -503,7 +504,7 @@ virtual BOOL DoKeyboardSplit();
 
 이 멤버 함수는 [CView](../../mfc/reference/cview-class.md) 클래스가 구현에 위임 하는 데 사용 하는 높은 수준의 명령입니다 `CSplitterWnd` .
 
-## <a name="csplitterwnddoscroll"></a><a name="doscroll"></a>CSplitterWnd::D oScroll
+## <a name="csplitterwnddoscroll"></a><a name="doscroll"></a> CSplitterWnd::D oScroll
 
 분할 창의 동기화 된 스크롤을 수행 합니다.
 
@@ -537,7 +538,7 @@ virtual BOOL DoScroll(
 *bDoScroll*<br/>
 지정 된 스크롤 동작이 발생 하는지 여부를 확인 합니다. *Bdoscroll* 이 TRUE 이면 (즉, 자식 창이 있고 분할 창에 스크롤 범위가 있으면) 지정 된 스크롤 동작이 수행 될 수 있습니다. *Bdoscroll* 이 FALSE 이면 (즉, 자식 창이 없거나 분할 뷰에 스크롤 범위가 없는 경우) 스크롤이 수행 되지 않습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 동기화 된 스크롤이 발생 하는 경우 0이 아닙니다. 그렇지 않으면 0입니다.
 
@@ -545,7 +546,7 @@ virtual BOOL DoScroll(
 
 이 멤버 함수는 뷰가 스크롤 메시지를 받을 때 분할 창의 동기화 된 스크롤을 수행 하기 위해 프레임 워크에서 호출 됩니다. 동기화 된 스크롤이 허용 되기 전에 사용자가 작업을 수행 하도록 하려면를 재정의 합니다.
 
-## <a name="csplitterwnddoscrollby"></a><a name="doscrollby"></a>CSplitterWnd::D oScrollBy
+## <a name="csplitterwnddoscrollby"></a><a name="doscrollby"></a> CSplitterWnd::D oScrollBy
 
 지정 된 픽셀 수 만큼 분할 창을 스크롤합니다.
 
@@ -567,17 +568,17 @@ virtual BOOL DoScrollBy(
 *bDoScroll*<br/>
 지정 된 스크롤 동작이 발생 하는지 여부를 확인 합니다. *Bdoscroll* 이 TRUE 이면 (즉, 자식 창이 있고 분할 창에 스크롤 범위가 있으면) 지정 된 스크롤 동작이 수행 될 수 있습니다. *Bdoscroll* 이 FALSE 이면 (즉, 자식 창이 없거나 분할 뷰에 스크롤 범위가 없는 경우) 스크롤이 수행 되지 않습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 동기화 된 스크롤이 발생 하는 경우 0이 아닙니다. 그렇지 않으면 0입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 *sizeScroll*로 표시 되는 크기에 따라 분할 창의 동기화 된 스크롤을 수행 하기 위해 스크롤 메시지에 대 한 응답으로 프레임 워크에서 호출 됩니다. 양수 값은 아래로 스크롤하고 오른쪽으로 스크롤 하는 것을 의미 합니다. 음수 값은 위쪽 및 왼쪽으로 스크롤 하는 것을 의미 합니다.
+이 멤버 함수는 *sizeScroll* 로 표시 되는 크기에 따라 분할 창의 동기화 된 스크롤을 수행 하기 위해 스크롤 메시지에 대 한 응답으로 프레임 워크에서 호출 됩니다. 양수 값은 아래로 스크롤하고 오른쪽으로 스크롤 하는 것을 의미 합니다. 음수 값은 위쪽 및 왼쪽으로 스크롤 하는 것을 의미 합니다.
 
 Scroll을 허용 하기 전에 사용자가 작업을 수행 하도록 하려면를 재정의 합니다.
 
-## <a name="csplitterwndgetactivepane"></a><a name="getactivepane"></a>CSplitterWnd:: Getactivepgea
+## <a name="csplitterwndgetactivepane"></a><a name="getactivepane"></a> CSplitterWnd:: Getactivepgea
 
 프레임의 포커스 또는 활성 뷰에서 활성 창을 결정 합니다.
 
@@ -595,7 +596,7 @@ virtual CWnd* GetActivePane(
 *pCol*<br/>
 **`int`** 활성 창의 열 번호를 검색 하는에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 활성 창에 대 한 포인터입니다. 활성 창이 없으면 NULL입니다.
 
@@ -603,7 +604,7 @@ virtual CWnd* GetActivePane(
 
 이 멤버 함수는 분할자 창에서 활성 창을 확인 하기 위해 프레임 워크에서 호출 됩니다. 활성 창을 가져오기 전에 사용자가 작업을 수행 하도록 하려면를 재정의 합니다.
 
-## <a name="csplitterwndgetcolumncount"></a><a name="getcolumncount"></a>CSplitterWnd:: GetColumnCount
+## <a name="csplitterwndgetcolumncount"></a><a name="getcolumncount"></a> CSplitterWnd:: GetColumnCount
 
 현재 창 열 수를 반환 합니다.
 
@@ -611,11 +612,11 @@ virtual CWnd* GetActivePane(
 int GetColumnCount() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 분할자의 현재 열 수를 반환 합니다. 정적 분할자의 경우이 값은 최대 열 수 이기도 합니다.
 
-## <a name="csplitterwndgetcolumninfo"></a><a name="getcolumninfo"></a>CSplitterWnd:: GetColumnInfo
+## <a name="csplitterwndgetcolumninfo"></a><a name="getcolumninfo"></a> CSplitterWnd:: GetColumnInfo
 
 지정 된 열에 대 한 정보를 반환 합니다.
 
@@ -637,7 +638,7 @@ void GetColumnInfo(
 *cxMin*<br/>
 **`int`** 열의 현재 최소 너비에 설정할에 대 한 참조입니다.
 
-## <a name="csplitterwndgetpane"></a><a name="getpane"></a>CSplitterWnd:: GetPane
+## <a name="csplitterwndgetpane"></a><a name="getpane"></a> CSplitterWnd:: GetPane
 
 지정 된 행과 열에 있는 창을 반환 합니다.
 
@@ -649,17 +650,17 @@ CWnd* GetPane(
 
 ### <a name="parameters"></a>매개 변수
 
-*행당*<br/>
+*행*<br/>
 행을 지정 합니다.
 
 *col*<br/>
 열을 지정합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 지정 된 행과 열에 있는 창을 반환 합니다. 반환 된 창은 일반적으로 [CView](../../mfc/reference/cview-class.md)파생 클래스입니다.
 
-## <a name="csplitterwndgetrowcount"></a><a name="getrowcount"></a>CSplitterWnd:: GetRowCount
+## <a name="csplitterwndgetrowcount"></a><a name="getrowcount"></a> CSplitterWnd:: GetRowCount
 
 현재 창 행 수를 반환 합니다.
 
@@ -667,11 +668,11 @@ CWnd* GetPane(
 int GetRowCount() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 분할자 창의 현재 행 수를 반환 합니다. 정적 분할자 창의 경우이는 최대 행 수 이기도 합니다.
 
-## <a name="csplitterwndgetrowinfo"></a><a name="getrowinfo"></a>CSplitterWnd:: GetRowInfo
+## <a name="csplitterwndgetrowinfo"></a><a name="getrowinfo"></a> CSplitterWnd:: GetRowInfo
 
 지정 된 행에 대 한 정보를 반환 합니다.
 
@@ -684,7 +685,7 @@ void GetRowInfo(
 
 ### <a name="parameters"></a>매개 변수
 
-*행당*<br/>
+*행*<br/>
 행을 지정 합니다.
 
 *cyCur*<br/>
@@ -697,7 +698,7 @@ void GetRowInfo(
 
 이 멤버 함수를 호출 하 여 지정 된 행에 대 한 정보를 가져옵니다. *CyCur* 매개 변수는 지정 된 행의 현재 높이로 채워지고 *cyMin* 은 행의 최소 높이로 채워집니다.
 
-## <a name="csplitterwndgetscrollstyle"></a><a name="getscrollstyle"></a>CSplitterWnd:: GetScrollStyle
+## <a name="csplitterwndgetscrollstyle"></a><a name="getscrollstyle"></a> CSplitterWnd:: GetScrollStyle
 
 분할자 창의 공유 스크롤 막대 스타일을 반환 합니다.
 
@@ -705,7 +706,7 @@ void GetRowInfo(
 DWORD GetScrollStyle() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하는 경우 다음 windows 스타일 플래그 중 하나 이상입니다.
 
@@ -715,7 +716,7 @@ DWORD GetScrollStyle() const;
 
 0 인 경우 분할자 창은 현재 공유 스크롤 막대를 관리 하지 않습니다.
 
-## <a name="csplitterwndidfromrowcol"></a><a name="idfromrowcol"></a>CSplitterWnd:: IdFromRowCol
+## <a name="csplitterwndidfromrowcol"></a><a name="idfromrowcol"></a> CSplitterWnd:: IdFromRowCol
 
 지정 된 행 및 열에서 창의 자식 창 ID를 가져옵니다.
 
@@ -727,13 +728,13 @@ int IdFromRowCol(
 
 ### <a name="parameters"></a>매개 변수
 
-*행당*<br/>
+*행*<br/>
 분할자 창 행을 지정 합니다.
 
 *col*<br/>
 분할자 창 열을 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 창의 자식 창 ID입니다.
 
@@ -745,7 +746,7 @@ int IdFromRowCol(
 
 [!code-cpp[NVC_MFCWindowing#5](../../mfc/reference/codesnippet/cpp/csplitterwnd-class_3.cpp)]
 
-## <a name="csplitterwndischildpane"></a><a name="ischildpane"></a>CSplitterWnd:: IsChildPane
+## <a name="csplitterwndischildpane"></a><a name="ischildpane"></a> CSplitterWnd:: IsChildPane
 
 *PWnd* 가 현재이 분할자 창의 자식 창 인지 여부를 확인 합니다.
 
@@ -767,7 +768,7 @@ BOOL IsChildPane(
 *pCol*<br/>
 열 번호를 저장할에 대 한 포인터 **`int`** 입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 0이 아니면 *pWnd* 는 현재이 분할자 창의 자식 창이 고 *Prow* 와 *pcol* 은 분할자 창에서 창의 위치로 채워집니다. *PWnd* 가이 분할자 창의 자식 창이 아닌 경우 0이 반환 됩니다.
 
@@ -779,7 +780,7 @@ BOOL IsChildPane(
 
 이 버전은 이제 사용 되지 않으며 사용 하지 않아야 합니다.
 
-## <a name="csplitterwndistracking"></a><a name="istracking"></a>CSplitterWnd:: IsTracking
+## <a name="csplitterwndistracking"></a><a name="istracking"></a> CSplitterWnd:: IsTracking
 
 이 멤버 함수를 호출 하 여 창의 분할자 막대가 현재 이동 중인지 여부를 확인 합니다.
 
@@ -787,11 +788,11 @@ BOOL IsChildPane(
 BOOL IsTracking();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 분할자 작업이 진행 중인 경우 0이 아닙니다. 그렇지 않으면 0입니다.
 
-## <a name="csplitterwndondrawsplitter"></a><a name="ondrawsplitter"></a>CSplitterWnd:: OnDrawSplitter
+## <a name="csplitterwndondrawsplitter"></a><a name="ondrawsplitter"></a> CSplitterWnd:: OnDrawSplitter
 
 분할 창의 이미지를 렌더링 합니다.
 
@@ -810,13 +811,13 @@ virtual void OnDrawSplitter(
 *nType*<br/>
 값으로 `enum ESplitType` , 다음 중 하나일 수 있습니다.
 
-- `splitBox`분할자 끌기 상자입니다.
+- `splitBox` 분할자 끌기 상자입니다.
 
-- `splitBar`분할 된 두 창 사이에 표시 되는 막대입니다.
+- `splitBar` 분할 된 두 창 사이에 표시 되는 막대입니다.
 
-- `splitIntersection`분할 창의 교집합입니다. 이 요소는 Windows 95/98에서 실행 될 때 호출 되지 않습니다.
+- `splitIntersection` 분할 창의 교집합입니다. 이 요소는 Windows 95/98에서 실행 될 때 호출 되지 않습니다.
 
-- `splitBorder`분할 창 테두리입니다.
+- `splitBorder` 분할 창 테두리입니다.
 
 *rect*<br/>
 분할 창의 크기와 모양을 지정 하는 [Crect](../../atl-mfc-shared/reference/crect-class.md) 개체에 대 한 참조입니다.
@@ -827,7 +828,7 @@ virtual void OnDrawSplitter(
 
 동적 분할자 창에 대 한 자세한 내용은 [여러 문서 형식, 뷰 및 프레임 창](../../mfc/multiple-document-types-views-and-frame-windows.md), [기술 참고 29](../../mfc/tn029-splitter-windows.md)및 클래스 개요 문서의 "분할자 창"을 참조 하십시오 `CSplitterWnd` .
 
-## <a name="csplitterwndoninverttracker"></a><a name="oninverttracker"></a>CSplitterWnd:: OnInvertTracker
+## <a name="csplitterwndoninverttracker"></a><a name="oninverttracker"></a> CSplitterWnd:: OnInvertTracker
 
 분할 창의 이미지를 프레임 창과 같은 크기 및 모양으로 렌더링 합니다.
 
@@ -846,7 +847,7 @@ virtual void OnInvertTracker(const CRect& rect);
 
 동적 분할자 창에 대 한 자세한 내용은 [여러 문서 형식, 뷰 및 프레임 창](../../mfc/multiple-document-types-views-and-frame-windows.md), [기술 참고 29](../../mfc/tn029-splitter-windows.md)및 클래스 개요 문서의 "분할자 창"을 참조 하십시오 `CSplitterWnd` .
 
-## <a name="csplitterwndrecalclayout"></a><a name="recalclayout"></a>CSplitterWnd:: RecalcLayout
+## <a name="csplitterwndrecalclayout"></a><a name="recalclayout"></a> CSplitterWnd:: RecalcLayout
 
 을 호출 하 여 행 또는 열 크기를 조정한 후 분할자 창을 다시 표시 합니다.
 
@@ -864,7 +865,7 @@ virtual void RecalcLayout();
 
   [CSplitterWnd:: SetColumnInfo](#setcolumninfo)의 예제를 참조 하세요.
 
-## <a name="csplitterwndsetactivepane"></a><a name="setactivepane"></a>CSplitterWnd:: setactivep\
+## <a name="csplitterwndsetactivepane"></a><a name="setactivepane"></a> CSplitterWnd:: setactivep\
 
 프레임의 활성 창이 되도록 창을 설정 합니다.
 
@@ -877,7 +878,7 @@ virtual void SetActivePane(
 
 ### <a name="parameters"></a>매개 변수
 
-*행당*<br/>
+*행*<br/>
 *PWnd* 가 NULL 인 경우 활성 상태가 되는 창의 행을 지정 합니다.
 
 *col*<br/>
@@ -890,9 +891,9 @@ virtual void SetActivePane(
 
 이 멤버 함수는 프레임 창 내에서 사용자가 포커스를 창으로 변경 하는 경우 창을 활성으로 설정 하기 위해 프레임 워크에서 호출 됩니다. 를 명시적으로 호출 `SetActivePane` 하 여 포커스를 지정 된 뷰로 변경할 수 있습니다.
 
-행과 열 중 하나를 제공 **하거나** *pWnd*을 제공 하 여 창을 지정 합니다.
+행과 열 중 하나를 제공 **하거나** *pWnd* 을 제공 하 여 창을 지정 합니다.
 
-## <a name="csplitterwndsetcolumninfo"></a><a name="setcolumninfo"></a>CSplitterWnd:: SetColumnInfo
+## <a name="csplitterwndsetcolumninfo"></a><a name="setcolumninfo"></a> CSplitterWnd:: SetColumnInfo
 
 을 호출 하 여 지정 된 열 정보를 설정 합니다.
 
@@ -924,7 +925,7 @@ void SetColumnInfo(
 
 [!code-cpp[NVC_MFCWindowing#6](../../mfc/reference/codesnippet/cpp/csplitterwnd-class_4.cpp)]
 
-## <a name="csplitterwndsetrowinfo"></a><a name="setrowinfo"></a>CSplitterWnd:: SetRowInfo
+## <a name="csplitterwndsetrowinfo"></a><a name="setrowinfo"></a> CSplitterWnd:: SetRowInfo
 
 을 호출 하 여 지정 된 행 정보를 설정 합니다.
 
@@ -937,7 +938,7 @@ void SetRowInfo(
 
 ### <a name="parameters"></a>매개 변수
 
-*행당*<br/>
+*행*<br/>
 분할자 창 행을 지정 합니다.
 
 *cyIdeal*<br/>
@@ -952,7 +953,7 @@ void SetRowInfo(
 
 프레임 워크에서 분할자 창을 표시 하면 왼쪽 위에서 분할자 창의 클라이언트 영역 오른쪽 아래 모서리로 작업 하 여 이상적인 차원에 따라 열과 행에 창이 배치 됩니다.
 
-## <a name="csplitterwndsetscrollstyle"></a><a name="setscrollstyle"></a>CSplitterWnd:: SetScrollStyle
+## <a name="csplitterwndsetscrollstyle"></a><a name="setscrollstyle"></a> CSplitterWnd:: SetScrollStyle
 
 분할자 창의 공유 스크롤 막대 지원에 대 한 새 스크롤 스타일을 지정 합니다.
 
@@ -973,7 +974,7 @@ void SetScrollStyle(DWORD dwStyle);
 
 스크롤 막대를 만든 후에는 해당 스타일 없이를 호출한 경우에도 제거 되지 않습니다 `SetScrollStyle` . 대신 해당 스크롤 막대가 숨겨집니다. 이렇게 하면 스크롤 막대가 숨겨진 경우에도 해당 상태를 유지할 수 있습니다. 호출 후 `SetScrollStyle` 모든 변경 내용을 적용 하려면 [RecalcLayout](#recalclayout) 를 호출 해야 합니다.
 
-## <a name="csplitterwndsplitcolumn"></a><a name="splitcolumn"></a>CSplitterWnd:: SplitColumn
+## <a name="csplitterwndsplitcolumn"></a><a name="splitcolumn"></a> CSplitterWnd:: SplitColumn
 
 프레임 창이 세로로 분할 되는 위치를 나타냅니다.
 
@@ -986,17 +987,17 @@ virtual BOOL SplitColumn(int cxBefore);
 *cxBefore*<br/>
 분할이 발생 하는 위치 (픽셀)입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 세로 분할자 창을 만들 때 호출 됩니다. `SplitColumn`분할이 발생 하는 기본 위치를 나타냅니다.
+이 멤버 함수는 세로 분할자 창을 만들 때 호출 됩니다. `SplitColumn` 분할이 발생 하는 기본 위치를 나타냅니다.
 
-`SplitColumn`는 동적 분할자 창의 논리를 구현 하기 위해 프레임 워크에서 호출 됩니다. 즉, 분할자 창에 SPLS_DYNAMIC_SPLIT 스타일이 있는 경우입니다. 가상 함수 [Createview](#createview)와 함께 사용자 지정 하 여 고급 동적 분할자를 구현할 수 있습니다.
+`SplitColumn` 는 동적 분할자 창의 논리를 구현 하기 위해 프레임 워크에서 호출 됩니다. 즉, 분할자 창에 SPLS_DYNAMIC_SPLIT 스타일이 있는 경우입니다. 가상 함수 [Createview](#createview)와 함께 사용자 지정 하 여 고급 동적 분할자를 구현할 수 있습니다.
 
-## <a name="csplitterwndsplitrow"></a><a name="splitrow"></a>CSplitterWnd:: SplitRow
+## <a name="csplitterwndsplitrow"></a><a name="splitrow"></a> CSplitterWnd:: SplitRow
 
 프레임 창이 가로로 분할 되는 위치를 나타냅니다.
 
@@ -1009,17 +1010,17 @@ virtual BOOL SplitRow(int cyBefore);
 *cyBefore*<br/>
 분할이 발생 하는 위치 (픽셀)입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 가로 분할자 창을 만들 때 호출 됩니다. `SplitRow`분할이 발생 하는 기본 위치를 나타냅니다.
+이 멤버 함수는 가로 분할자 창을 만들 때 호출 됩니다. `SplitRow` 분할이 발생 하는 기본 위치를 나타냅니다.
 
-`SplitRow`는 동적 분할자 창의 논리를 구현 하기 위해 프레임 워크에서 호출 됩니다. 즉, 분할자 창에 SPLS_DYNAMIC_SPLIT 스타일이 있는 경우입니다. 가상 함수 [Createview](#createview)와 함께 사용자 지정 하 여 고급 동적 분할자를 구현할 수 있습니다.
+`SplitRow` 는 동적 분할자 창의 논리를 구현 하기 위해 프레임 워크에서 호출 됩니다. 즉, 분할자 창에 SPLS_DYNAMIC_SPLIT 스타일이 있는 경우입니다. 가상 함수 [Createview](#createview)와 함께 사용자 지정 하 여 고급 동적 분할자를 구현할 수 있습니다.
 
-## <a name="csplitterwndondraw"></a><a name="ondraw"></a>CSplitterWnd:: OnDraw
+## <a name="csplitterwndondraw"></a><a name="ondraw"></a> CSplitterWnd:: OnDraw
 
 분할자 창을 그리기 위해 프레임 워크에서 호출 됩니다.
 

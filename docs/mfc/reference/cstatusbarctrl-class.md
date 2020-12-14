@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CStatusBarCtrl 클래스'
 title: CStatusBarCtrl 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -44,12 +45,12 @@ helpviewer_keywords:
 - CStatusBarCtrl [MFC], SetText
 - CStatusBarCtrl [MFC], SetTipText
 ms.assetid: 8504ad38-7b91-4746-aede-ac98886eb47b
-ms.openlocfilehash: d2440eb05a1367b7d4980494e3d7f5de646d5fd0
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 424edbd2d78fc82c7c78315dea1d430c6ea9459d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562651"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342636"
 ---
 # <a name="cstatusbarctrl-class"></a>CStatusBarCtrl 클래스
 
@@ -65,13 +66,13 @@ class CStatusBarCtrl : public CWnd
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CStatusBarCtrl:: CStatusBarCtrl](#cstatusbarctrl)|`CStatusBarCtrl` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CStatusBarCtrl:: Create](#create)|상태 표시줄 컨트롤을 만들고이를 개체에 연결 `CStatusBarCtrl` 합니다.|
 |[CStatusBarCtrl:: CreateEx](#createex)|지정 된 Windows 확장 스타일을 사용 하 여 상태 표시줄 컨트롤을 만들고이를 `CStatusBarCtrl` 개체에 연결 합니다.|
@@ -140,7 +141,7 @@ virtual BOOL Create(
 *nID*<br/>
 상태 표시줄 컨트롤의 ID를 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하는 경우 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -178,7 +179,7 @@ virtual BOOL CreateEx(
 상태 표시줄 컨트롤의 스타일을 지정 합니다. Windows SDK의 [공용 컨트롤 스타일](/windows/win32/Controls/common-control-styles) 에 나열 된 상태 표시줄 컨트롤 스타일의 조합을 적용 합니다. 이 매개 변수는 WS_CHILD 스타일을 포함 해야 합니다. 또한 WS_VISIBLE 스타일을 포함 해야 합니다.
 
 *rect*<br/>
-*PParentWnd*의 클라이언트 좌표에서 만들 창의 크기와 위치를 설명 하는 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조체에 대 한 참조입니다.
+*PParentWnd* 의 클라이언트 좌표에서 만들 창의 크기와 위치를 설명 하는 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조체에 대 한 참조입니다.
 
 *pParentWnd*<br/>
 컨트롤의 부모 창에 대 한 포인터입니다.
@@ -186,7 +187,7 @@ virtual BOOL CreateEx(
 *nID*<br/>
 컨트롤의 자식 창 ID입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -250,7 +251,7 @@ BOOL GetBorders(
 *n 간격*<br/>
 사각형 사이의 테두리 너비를 받는 정수에 대 한 참조입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하는 경우 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -275,7 +276,7 @@ HICON GetIcon(int iPart) const;
 *iPart*\
 진행 검색할 아이콘이 포함 된 파트의 인덱스 (0부터 시작)입니다. 이 매개 변수가-1 인 경우 상태 표시줄은 단순 모드 상태 표시줄 이라고 가정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 메서드가 성공한 경우 아이콘에 대 한 핸들입니다. 그렇지 않으면 NULL입니다.
 
@@ -313,9 +314,9 @@ int GetParts(
 좌표를 검색할 파트의 수입니다. 이 매개 변수가 컨트롤의 파트 수보다 크면 메시지는 기존 파트의 좌표를 검색 합니다.
 
 *pParts*<br/>
-*Nparts*에서 지정한 파트 수와 동일한 수의 요소를 포함 하는 정수 배열의 주소입니다. 배열의 각 요소는 해당 파트의 오른쪽 가장자리에 대 한 클라이언트 좌표를 수신 합니다. 요소가-1로 설정 된 경우 해당 파트에 대 한 오른쪽 가장자리의 위치는 상태 표시줄의 오른쪽 가장자리로 확장 됩니다.
+*Nparts* 에서 지정한 파트 수와 동일한 수의 요소를 포함 하는 정수 배열의 주소입니다. 배열의 각 요소는 해당 파트의 오른쪽 가장자리에 대 한 클라이언트 좌표를 수신 합니다. 요소가-1로 설정 된 경우 해당 파트에 대 한 오른쪽 가장자리의 위치는 상태 표시줄의 오른쪽 가장자리로 확장 됩니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 컨트롤의 부분 수이 고, 그렇지 않으면 0입니다.
 
@@ -345,7 +346,7 @@ BOOL GetRect(
 *lpRect*<br/>
 경계 사각형을 받는 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조체의 주소입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하는 경우 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -387,7 +388,7 @@ int GetText(
 
 - SBT_OWNERDRAW 텍스트가 SBT_OWNERDRAW 그리기 형식이 면 *Ptype* 은이 메시지를 받고 길이 및 작업 형식 대신 텍스트와 연결 된 32 비트 값을 반환 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 텍스트 또는 현재 텍스트를 포함 하는 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 의 길이 (문자)입니다.
 
@@ -421,7 +422,7 @@ int GetTextLength(
 
 - 상태 표시줄의 평면 보다 위쪽에 표시 되는 테두리를 사용 하 여 텍스트를 그린 SBT_POPOUT 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 텍스트의 길이 (문자)입니다.
 
@@ -442,7 +443,7 @@ CString GetTipText(int nPane) const;
 *nPane*<br/>
 도구 설명 텍스트를 받을 상태 표시줄 창의 인덱스 (0부터 시작)입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 도구 설명에 사용할 텍스트를 포함 하는 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 개체입니다.
 
@@ -462,7 +463,7 @@ CString GetTipText(int nPane) const;
 BOOL IsSimple() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 상태 창 컨트롤이 단순 모드 이면 0이 아닌 값입니다. 그렇지 않으면 0입니다.
 
@@ -483,7 +484,7 @@ COLORREF SetBkColor(COLORREF cr);
 *cr*<br/>
 새 배경색을 지정 하는 COLORREF 값입니다. 상태 표시줄의 기본 배경색을 사용 하 여 CLR_DEFAULT 값을 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이전 기본 배경색을 나타내는 [Colorref](/windows/win32/gdi/colorref) 값입니다.
 
@@ -513,7 +514,7 @@ BOOL SetIcon(
 *hIcon*<br/>
 설정할 아이콘에 대 한 핸들입니다. 이 값이 NULL 이면 파트에서 아이콘이 제거 됩니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하는 경우 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -562,9 +563,9 @@ BOOL SetParts(
 설정할 파트의 수입니다. 파트 수는 255 보다 클 수 없습니다.
 
 *pWidths*<br/>
-*Nparts*에서 지정한 부분과 동일한 수의 요소를 포함 하는 정수 배열의 주소입니다. 배열의 각 요소는 해당 파트의 오른쪽 가장자리의 위치 (클라이언트 좌표)를 지정 합니다. 요소가-1 인 경우 해당 파트에 대 한 오른쪽 가장자리의 위치는 컨트롤의 오른쪽 가장자리로 확장 됩니다.
+*Nparts* 에서 지정한 부분과 동일한 수의 요소를 포함 하는 정수 배열의 주소입니다. 배열의 각 요소는 해당 파트의 오른쪽 가장자리의 위치 (클라이언트 좌표)를 지정 합니다. 요소가-1 인 경우 해당 파트에 대 한 오른쪽 가장자리의 위치는 컨트롤의 오른쪽 가장자리로 확장 됩니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하는 경우 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -585,7 +586,7 @@ BOOL SetSimple(BOOL bSimple = TRUE);
 *bSimple*<br/>
 진행 표시 유형 플래그입니다. 이 매개 변수가 TRUE 이면 컨트롤은 단순 텍스트를 표시 합니다. FALSE 인 경우 여러 부분을 표시 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 항상 0을 반환합니다.
 
@@ -615,7 +616,7 @@ BOOL SetText(
 *nType*<br/>
 그리기 작업의 형식입니다. 가능한 값 목록은 [SB_SETTEXT 메시지](/windows/win32/Controls/sb-settext) 를 참조 하세요.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하는 경우 0이 아니고, 그렇지 않으면 0입니다.
 
