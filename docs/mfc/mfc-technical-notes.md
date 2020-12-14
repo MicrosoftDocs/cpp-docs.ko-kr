@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: MFC 기술 참고 사항'
 title: MFC 기술 참고 사항
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - technical notes, MFC
 - technical notes [MFC]
 ms.assetid: 8aa01d66-0b07-4d0a-a080-4bb00c7baaac
-ms.openlocfilehash: 251c37f687c0176256f74c7e4dc14cff7f25c99c
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 297b571dbd1faaa05d8f972f7d0d468704460c1c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84617934"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97251182"
 ---
 # <a name="mfc-technical-notes"></a>MFC 기술 참고 사항
 
@@ -27,4 +28,4 @@ ms.locfileid: "84617934"
 
 ## <a name="see-also"></a>참고 항목
 
-[MFC 데스크톱 애플리케이션](mfc-desktop-applications.md)
+[MFC 데스크톱 응용 프로그램](mfc-desktop-applications.md)

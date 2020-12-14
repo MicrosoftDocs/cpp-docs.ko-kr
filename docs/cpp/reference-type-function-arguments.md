@@ -1,4 +1,5 @@
-﻿---
+---
+description: '자세한 정보: 함수 인수 Reference-Type'
 title: 참조 형식 함수 인수
 ms.date: 08/27/2018
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - function arguments [C++], reference-type
 - passing parameters [C++], reference-type arguments
 ms.assetid: 0a70e831-9e76-46c0-821d-aeba13d73cc0
-ms.openlocfilehash: 2a0bd21023bd1c6bc14b1f587c85960cf1e8b820
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2e290160b1b897eadbf77f0c8a805f927a26c02f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62244184"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97260334"
 ---
 # <a name="reference-type-function-arguments"></a>참조 형식 함수 인수
 
@@ -67,9 +68,9 @@ int main()
 }
 ```
 
-앞의 코드는 포인터 멤버 선택 연산자( **–>** ) 대신에 멤버 선택 연산자( **.** )를 사용하여 참조에 의해 전달되는 구조체의 멤버에 액세스하는 방법을 보여 줍니다.
+위의 코드는 포인터 멤버 선택 연산자 () 대신 멤버 선택 연산자 (**.**)를 사용 하 여 참조로 전달 되는 구조체의 멤버에 액세스 하는 것을 보여 줍니다 **->** .
 
-참조 형식으로 전달된 인수는 포인터가 아닌 형식의 구문을 준수하지만 **const**에서 정의되지 않은 경우 수정할 수 있다는 포인터 형식의 중요한 한 가지 특성을 유지합니다. 이 코드에는 `date` 개체를 수정할 의도가 없기 때문에 더 적절한 함수 프로토타입은 다음과 같습니다.
+참조 형식으로 전달 된 인수는 포인터가 아닌 형식의 구문을 관찰 하지만 포인터 형식의 중요 한 특성을 유지 합니다 .이는로 선언 되지 않은 경우 수정할 수 있습니다. **`const`** 이 코드에는 `date` 개체를 수정할 의도가 없기 때문에 더 적절한 함수 프로토타입은 다음과 같습니다.
 
 ```cpp
 long DateOfYear( const Date& date );
@@ -77,7 +78,7 @@ long DateOfYear( const Date& date );
 
 이 프로토타입은 `DateOfYear` 함수가 인수를 변경하지 않도록 합니다.
 
-참조 형식으로 프로토타입된 모든 함수는 *typename*에서 *typename* **&**으로의 표준 변환이 있기 때문에 해당 위치에서 같은 형식의 개체를 받을 수 있습니다.
+참조 형식으로 프로토타입 된 모든 함수는 *typename* 에서 *typename* 으로의 표준 변환이 있기 때문에 해당 형식의 개체를 사용할 수 있습니다 <strong>&</strong> .
 
 ## <a name="see-also"></a>참고 항목
 

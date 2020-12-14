@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: MFC 도구 모음 구현'
 title: MFC 도구 모음 구현
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - toolbars [MFC]
 - toolbars [MFC], implementing MFC toolbars
 ms.assetid: af3319ad-c430-4f90-8361-e6a2c06fd084
-ms.openlocfilehash: 7876e9403389c19a24e5a482534d0f223eaa4bf5
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 0e6ecf0536c55163dd63d5f05e4c5c9f24f2c4cd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626120"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97251156"
 ---
 # <a name="mfc-toolbar-implementation"></a>MFC 도구 모음 구현
 
@@ -51,13 +52,13 @@ MFC는 도구 설명도 지원 합니다. 단추 위에 마우스를 놓으면 �
 
 - [도구 모음 비트맵](#_core_the_toolbar_bitmap)
 
-## <a name="toolbar-buttons"></a><a name="_core_toolbar_buttons"></a>도구 모음 단추
+## <a name="toolbar-buttons"></a><a name="_core_toolbar_buttons"></a> 도구 모음 단추
 
 도구 모음의 단추는 메뉴의 항목과 유사 합니다. 두 종류의 사용자 인터페이스 개체는 모두 처리기 함수를 제공 하 여 프로그램에서 처리 하는 명령을 생성 합니다. 일반적으로 도구 모음 단추는 메뉴 명령의 기능을 복제 하 여 동일한 기능에 대 한 대체 사용자 인터페이스를 제공 합니다. 이러한 중복은 단추와 메뉴 항목에 동일한 ID를 제공 하 여 간단히 정렬 됩니다.
 
 도구 모음에서 단추가 표시 되 고 누름 단추, 확인란 또는 라디오 단추로 동작 하도록 할 수 있습니다. 자세한 내용은 클래스 [CToolBar](reference/ctoolbar-class.md)를 참조 하세요.
 
-## <a name="docking-and-floating-toolbars"></a><a name="_core_docking_and_floating_toolbars"></a>도킹 및 부동 도구 모음
+## <a name="docking-and-floating-toolbars"></a><a name="_core_docking_and_floating_toolbars"></a> 도킹 및 부동 도구 모음
 
 MFC 도구 모음에서 다음을 수행할 수 있습니다.
 
@@ -71,11 +72,11 @@ MFC 도구 모음에서 다음을 수행할 수 있습니다.
 
 자세한 내용은 [도킹 및 부동 도구 모음](docking-and-floating-toolbars.md)문서를 참조 하세요.
 
-## <a name="toolbars-and-tool-tips"></a><a name="_core_toolbars_and_tool_tips"></a>도구 모음 및 도구 설명
+## <a name="toolbars-and-tool-tips"></a><a name="_core_toolbars_and_tool_tips"></a> 도구 모음 및 도구 설명
 
 MFC 도구 모음에는 도구 모음 단추의 용도에 대 한 간단한 텍스트 설명을 포함 하는 작은 팝업 창을 "도구 설명"으로 표시 하도록 설정할 수도 있습니다. 사용자가 도구 모음 단추 위로 마우스를 이동 하면 도구 설명 창이 표시 되어 힌트를 제공 합니다. 자세한 내용은 [도구 모음 도구 설명](toolbar-tool-tips.md)을 참조 하세요.
 
-## <a name="the-ctoolbar-and-ctoolbarctrl-classes"></a><a name="_core_the_ctoolbar_and_ctoolbarctrl_classes"></a>CToolBar 및 CToolBarCtrl 클래스
+## <a name="the-ctoolbar-and-ctoolbarctrl-classes"></a><a name="_core_the_ctoolbar_and_ctoolbarctrl_classes"></a> CToolBar 및 CToolBarCtrl 클래스
 
 [CToolBar](reference/ctoolbar-class.md)클래스를 통해 응용 프로그램의 도구 모음을 관리할 수 있습니다. MFC 버전 4.0에서,는 `CToolBar` windows 95 이상 및 WINDOWS NT 버전 3.51 이상에서 사용할 수 있는 도구 모음 공용 컨트롤을 사용 하도록 다시 구현 되었습니다.
 
@@ -86,7 +87,7 @@ MFC 도구 모음에는 도구 모음 단추의 용도에 대 한 간단한 텍�
 
 또한 MFC 일반 샘플 [DOCKTOOL](../overview/visual-cpp-samples.md)을 참조 하세요.
 
-## <a name="the-toolbar-bitmap"></a><a name="_core_the_toolbar_bitmap"></a>도구 모음 비트맵
+## <a name="the-toolbar-bitmap"></a><a name="_core_the_toolbar_bitmap"></a> 도구 모음 비트맵
 
 구성 된 개체는 `CToolBar` 각 단추에 대해 하나의 이미지를 포함 하는 단일 비트맵을 로드 하 여 도구 모음 이미지를 만듭니다. 응용 프로그램 마법사는 Visual C++ [도구 모음 편집기](../windows/toolbar-editor.md)를 사용 하 여 사용자 지정할 수 있는 표준 도구 모음 비트맵을 만듭니다.
 

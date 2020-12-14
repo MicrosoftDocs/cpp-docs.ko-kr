@@ -1,14 +1,15 @@
 ---
+description: Sequenced_policy 클래스에 대해 자세히 알아보세요.
 title: sequenced_policy 클래스
 ms.date: 04/18/2019
 f1_keywords:
 - execution/std::execution::sequenced_policy
-ms.openlocfilehash: 5647f20b560828016231a9bbd38977c51211e6bb
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: e4d19e3649e3c768e8efc062baaf735e28a8fc22
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79444920"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97250415"
 ---
 # <a name="sequenced_policy-class"></a>sequenced_policy 클래스
 
@@ -22,4 +23,4 @@ class execution::sequenced_policy;
 
 ## <a name="remarks"></a>설명
 
-`execution::sequenced_policy` 정책을 사용 하 여 병렬 알고리즘을 실행 하는 동안 요소 액세스 함수 호출이 catch 되지 않은 예외를 통해 종료 되는 경우 `terminate()`를 호출 해야 합니다.
+정책을 사용 하 여 병렬 알고리즘을 실행 하는 동안 `execution::sequenced_policy` 요소 액세스 함수 호출이 catch 되지 않은 예외를 통해 종료 되는 경우가 `terminate()` 호출 됩니다.

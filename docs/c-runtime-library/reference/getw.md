@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _getw'
 title: _getw
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - integers, getting from streams
 - getw function
 ms.assetid: ef75facc-b84e-470f-9f5f-8746c90822a0
-ms.openlocfilehash: 786246afbb8ce4f733f733af75af3a70ce33006d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2f951305351b4693b9787b6eac926c719afd3f3e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226218"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97296539"
 ---
 # <a name="_getw"></a>_getw
 
@@ -52,13 +53,13 @@ int _getw(
 *스트림*<br/>
 **FILE** 구조체에 대한 포인터입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-**_getw** 읽은 정수 값을 반환 합니다. **EOF** 의 반환 값은 오류 또는 파일 끝을 나타냅니다. 그러나 **EOF** 값도 올바른 정수 값 이므로 **feof** **ferror** 를 사용 하 여 파일 끝 또는 오류 조건을 확인 합니다. *Stream* 이 **NULL**인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 는 **EINVAL** 로 설정 되 고 함수는 **EOF**를 반환 합니다.
+**_getw** 읽은 정수 값을 반환 합니다. **EOF** 의 반환 값은 오류 또는 파일 끝을 나타냅니다. 그러나 **EOF** 값도 올바른 정수 값 이므로 **feof** **ferror** 를 사용 하 여 파일 끝 또는 오류 조건을 확인 합니다. *Stream* 이 **NULL** 인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 는 **EINVAL** 로 설정 되 고 함수는 **EOF** 를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-**_Getw** 함수는 스트림과 연결 된 파일에서 형식의 다음 이진 값을 읽고 **`int`** 읽지 *stream* 않은 다음 문자를 가리키도록 연결 된 파일 포인터 (있는 경우)를 증가 시킵니다. **_getw** 는 스트림의 항목에 대 한 특별 한 맞춤을 가정 하지 않습니다. **_getw** **`int`** 형식의 크기와 형식 내 바이트의 순서가 시스템 마다 다르기 때문에 _getw를 사용 하는 데 문제가 발생할 수 있습니다 **`int`** .
+**_Getw** 함수는 스트림과 연결 된 파일에서 형식의 다음 이진 값을 읽고 **`int`** 읽지  않은 다음 문자를 가리키도록 연결 된 파일 포인터 (있는 경우)를 증가 시킵니다. **_getw** 는 스트림의 항목에 대 한 특별 한 맞춤을 가정 하지 않습니다.  **`int`** 형식의 크기와 형식 내 바이트의 순서가 시스템 마다 다르기 때문에 _getw를 사용 하는 데 문제가 발생할 수 있습니다 **`int`** .
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 리소스 컴파일러 오류 RW2002'
 title: 리소스 컴파일러 오류 RW2002
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - RW2002
 ms.assetid: b1d1a49b-b50b-4b0b-9f09-c7762e2dbe8f
-ms.openlocfilehash: 31962e3e7e4af63ec07ad569f7f72782b194032c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ae973b826a42aa844e879c0947af1090f7eaa711
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225178"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97259697"
 ---
 # <a name="resource-compiler-error-rw2002"></a>리소스 컴파일러 오류 RW2002
 
@@ -97,7 +98,7 @@ ms.locfileid: "87225178"
 
 1. **숫자 대화 상자 상수가 필요 합니다.**
 
-   **DIALOG** 문에는 *x, y, width*및 *height* 필드의 정수 값이 필요 합니다. 이러한 값이 **DIALOG** 키워드 뒤에 포함 되 고 음수가 아닌지 확인 합니다.
+   **DIALOG** 문에는 *x, y, width* 및 *height* 필드의 정수 값이 필요 합니다. 이러한 값이 **DIALOG** 키워드 뒤에 포함 되 고 음수가 아닌지 확인 합니다.
 
 1. **STRINGTABLE에 문자열이 필요 합니다.**
 

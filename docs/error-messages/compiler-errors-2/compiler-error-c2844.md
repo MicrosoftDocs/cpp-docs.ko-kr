@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2844'
 title: 컴파일러 오류 C2844
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2844
 ms.assetid: dcaf4cd2-21b0-4280-ae42-0a706c524d83
-ms.openlocfilehash: fdfd2200503f80addb120117ce06f5f837d6b9f2
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 030d8526e7bfd85e7bcca1c115f1b5ce5d45c3aa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74752017"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97260281"
 ---
 # <a name="compiler-error-c2844"></a>컴파일러 오류 C2844
 

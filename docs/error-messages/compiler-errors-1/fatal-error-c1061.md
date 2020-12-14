@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 심각한 오류 C1061'
 title: 심각한 오류 C1061
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1061
 ms.assetid: 9366c0bc-96e0-4967-aa7d-4ebf098de806
-ms.openlocfilehash: 049adb38dd8f33de7dbdd02d8420eba284ca2ca1
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 58cdff5ae4878961ae69814c144402f8c93217a6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80204414"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97251546"
 ---
 # <a name="fatal-error-c1061"></a>심각한 오류 C1061
 

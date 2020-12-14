@@ -1,14 +1,15 @@
 ---
+description: '자세히 알아보기: 형식 변환 및 형식 안전성'
 title: 형식 변환 및 형식 안전성
 ms.date: 11/19/2019
 ms.topic: conceptual
 ms.assetid: 629b361a-2ce1-4700-8b5d-ab4f57b245d5
-ms.openlocfilehash: 28adbc261b5b4376f947e00695fe66650739438d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ce83837a8aec06063b2a4e50c445fe7756b5c076
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223540"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97312191"
 ---
 # <a name="type-conversions-and-type-safety"></a>형식 변환 및 형식 안전성
 
@@ -26,7 +27,7 @@ C++ 프로그램을 작성하는 경우 형식 안전이 확인되어야 합니�
 
 확대 변환에서 작은 변수의 값은 데이터의 손실 없이 큰 변수에 할당됩니다. 확대 변환은 항상 안전하므로 컴파일러에서 확대 변환이 자동으로 수행되고 경고가 발생하지 않습니다. 다음 변환은 확대 변환입니다.
 
-|From|받는 사람|
+|From|대상|
 |----------|--------|
 |**`signed`** **`unsigned`** 또는를 제외한 정수 계열 형식 또는 **`long long`****`__int64`**|**`double`**|
 |**`bool`** 또는 **`char`**|다른 기본 제공 형식|
@@ -179,6 +180,6 @@ C 스타일 캐스트 연산자는 호출 연산자 ()와 동일하므로 코드
 ## <a name="see-also"></a>참고 항목
 
 [C + + 형식 시스템](../cpp/cpp-type-system-modern-cpp.md)<br/>
-[C + +를 다시 시작 합니다.](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++ 시작하기](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
-[C + + 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)
+[C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)

@@ -1,16 +1,17 @@
 ---
+description: '자세히 알아보기: 클립보드: 데이터 복사 및 붙여넣기'
 title: '클립보드: 데이터 복사 및 붙여넣기'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Clipboard, copying data to
 - Clipboard, pasting
 ms.assetid: 580e10be-241f-4f9f-94cf-8302edc5beef
-ms.openlocfilehash: ed3056ec4fb3d3098870a03522d3bf17f41fbe34
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: fdc102cf7a92bc78df83419269bb5de828dc9d19
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84620700"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97251234"
 ---
 # <a name="clipboard-copying-and-pasting-data"></a>클립보드: 데이터 복사 및 붙여넣기
 
@@ -18,7 +19,7 @@ ms.locfileid: "84620700"
 
 복사 또는 붙여넣기를 구현 하려면 먼저 편집 메뉴의 복사, 잘라내기 및 붙여넣기 옵션을 처리 하는 함수를 제공 해야 합니다.
 
-## <a name="copying-or-cutting-data"></a><a name="_core_copying_or_cutting_data"></a>데이터 복사 또는 잘라내기
+## <a name="copying-or-cutting-data"></a><a name="_core_copying_or_cutting_data"></a> 데이터 복사 또는 잘라내기
 
 #### <a name="to-copy-data-to-the-clipboard"></a>클립보드에 데이터를 복사 하려면
 
@@ -34,7 +35,7 @@ ms.locfileid: "84620700"
 
 이 시퀀스의 예제를 보려면 `OnEditCut` `OnEditCopy` MFC OLE 샘플 프로그램 [OCLIENT](../overview/visual-cpp-samples.md) 및 [HIERSVR](../overview/visual-cpp-samples.md)의 및 함수를 참조 하세요. 이러한 샘플에서는 현재 선택 된 데이터에 대 한 포인터를 유지 하므로 1 단계가 이미 완료 되었습니다.
 
-## <a name="pasting-data"></a><a name="_core_pasting_data"></a>데이터 붙여넣기
+## <a name="pasting-data"></a><a name="_core_pasting_data"></a> 데이터 붙여넣기
 
 데이터를 붙여 넣는 것은 응용 프로그램에 데이터를 붙여 넣는 데 사용할 형식을 선택 해야 하기 때문에 복사 하는 것 보다 더 복잡 합니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CDaoErrorInfo Structure'
 title: CDaoErrorInfo 구조체
 ms.date: 09/17/2019
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - CDaoErrorInfo structure [MFC]
 - DAO (Data Access Objects), Errors collection
 ms.assetid: cd37ef71-b0b3-401d-bc2b-540c9147f532
-ms.openlocfilehash: 8d731c8e8bea1adc850ab3c00c7688b9f8c9b819
-ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
+ms.openlocfilehash: 3d8ae4bd133c96ef1853c8d087904c7c6eba810d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74304230"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97250961"
 ---
 # <a name="cdaoerrorinfo-structure"></a>CDaoErrorInfo 구조체
 
-`CDaoErrorInfo` 구조에는 DAO (data access objects)에 대해 정의 된 오류 개체에 대 한 정보가 포함 되어 있습니다. DAO 3.6은 최종 버전이 며 사용 되지 않는 것으로 간주 됩니다.
+구조에는 `CDaoErrorInfo` DAO (data access objects)에 대해 정의 된 오류 개체에 대 한 정보가 포함 되어 있습니다. DAO 3.6은 최종 버전이 며 사용 되지 않는 것으로 간주 됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -48,13 +49,13 @@ Microsoft Windows 도움말 파일의 정규화 된 경로입니다. 자세한 �
 *m_lHelpContext*<br/>
 Microsoft Windows 도움말 파일의 항목에 대 한 컨텍스트 ID입니다. 자세한 내용은 DAO 도움말에서 "HelpContext, HelpFile Properties" 항목을 참조 하십시오.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
-MFC는 클래스의 DAO 오류 개체를 캡슐화 하지 않습니다. 대신, [CDaoException](../../mfc/reference/cdaoexception-class.md) 클래스는 모든 작업 영역을 포함 하는 개체인 DAO `DBEngine` 개체에 포함 된 Errors 컬렉션에 액세스 하기 위한 인터페이스를 제공 합니다. MFC DAO 작업에서 catch 한 `CDaoException` 개체를 throw 하는 경우 MFC는 `CDaoErrorInfo` 구조를 채우고 예외 개체의 [m_pErrorInfo](../../mfc/reference/cdaoexception-class.md#m_perrorinfo) 멤버에 저장 합니다. (DAO를 직접 호출 하도록 선택 하는 경우 예외 개체의 [Geterrorinfo](../../mfc/reference/cdaoexception-class.md#geterrorinfo) 멤버 함수를 직접 호출 하 여 `m_pErrorInfo`채워야 합니다.)
+MFC는 클래스의 DAO 오류 개체를 캡슐화 하지 않습니다. 대신, [CDaoException](../../mfc/reference/cdaoexception-class.md) 클래스는 `DBEngine` 모든 작업 영역을 포함 하는 개체인 DAO 개체에 포함 된 Errors 컬렉션에 액세스 하기 위한 인터페이스를 제공 합니다. MFC DAO 작업에서 catch 한 개체를 throw 하는 경우 `CDaoException` mfc는 구조체를 채우고 `CDaoErrorInfo` 예외 개체의 [m_pErrorInfo](../../mfc/reference/cdaoexception-class.md#m_perrorinfo) 멤버에 저장 합니다. DAO를 직접 호출 하도록 선택 하는 경우 예외 개체의 [Geterrorinfo](../../mfc/reference/cdaoexception-class.md#geterrorinfo) 멤버 함수를 직접 호출 하 여 채워야 합니다 `m_pErrorInfo` .
 
 DAO 오류를 처리 하는 방법에 대 한 자세한 내용은 [예외: 데이터베이스 예외](../../mfc/exceptions-database-exceptions.md)문서를 참조 하세요. 관련 내용은 DAO 도움말의 "오류 개체" 항목을 참조 하십시오.
 
-[CDaoException:: GetErrorInfo](../../mfc/reference/cdaoexception-class.md#geterrorinfo) 멤버 함수에서 검색 한 정보는 `CDaoErrorInfo` 구조에 저장 됩니다. 예외 처리기에서 catch 한 [ 개체에서 ](../../mfc/reference/cdaoexception-class.md#m_perrorinfo)m_pErrorInfo`CDaoException` 데이터 멤버를 검사하거나 직접 호출 중에 발생했을 수 있는 오류를 확인하기 위해 명시적으로 만든 `GetErrorInfo` 개체에서 `CDaoException`를 호출합니다. DAO 인터페이스를 대상으로 합니다. 또한 `CDaoErrorInfo`는 디버그 빌드에서 `Dump` 멤버 함수를 정의 합니다. `Dump`를 사용 하 여 `CDaoErrorInfo` 개체의 콘텐츠를 덤프할 수 있습니다.
+[CDaoException:: GetErrorInfo](../../mfc/reference/cdaoexception-class.md#geterrorinfo) 멤버 함수에서 검색 된 정보는 구조체에 저장 됩니다 `CDaoErrorInfo` . 예외 처리기에서 catch 한 `CDaoException` 개체에서 [m_pErrorInfo](../../mfc/reference/cdaoexception-class.md#m_perrorinfo) 데이터 멤버를 검사하거나 직접 호출 중에 발생했을 수 있는 오류를 확인하기 위해 명시적으로 만든 `CDaoException` 개체에서 `GetErrorInfo`를 호출합니다. DAO 인터페이스를 대상으로 합니다. `CDaoErrorInfo` 또한 `Dump` 디버그 빌드에서 멤버 함수를 정의 합니다. `Dump`를 사용 하 여 개체의 콘텐츠를 덤프할 수 있습니다 `CDaoErrorInfo` .
 
 ## <a name="requirements"></a>요구 사항
 

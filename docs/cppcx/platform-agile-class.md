@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: Platform:: Agile 클래스'
 title: Platform::Agile 클래스
 ms.date: 12/30/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Agile
 ms.assetid: e34459a9-c429-4c79-97fd-030c43ca4155
-ms.openlocfilehash: d39270b7bf05e820ea376a40310abeb8add2c5ad
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 6407bbfecdc84cdb47024e09f632a6e574439814
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90742959"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97312178"
 ---
 # <a name="platformagile-class"></a>Platform::Agile 클래스
 
@@ -39,20 +40,20 @@ Agile이 아닌 클래스의 형식 이름입니다.
 
 Windows 런타임의 대부분 클래스는 agile입니다. Agile 개체는 같거나 다른 스레드의 in-proc 또는 out-of-proc 개체를 호출하거나 해당 개체에서 호출될 수 있습니다. 개체가 agile이 아니면 agile인 `Agile<T>` 개체에서 agile이 아닌 개체를 래핑합니다. 그러고 나서 `Agile<T>` 개체를 마샬링할 수 있고 기본 agile이 아닌 개체를 사용할 수 있습니다.
 
-`Agile<T>` 클래스는 네이티브 표준 C++ 클래스이고 `agile.h`가 필요합니다. Agile이 아닌 개체 및 Agile 개체의 *컨텍스트*를 나타냅니다. 컨텍스트는 agile 개체의 스레딩 모델 및 마샬링 동작을 지정합니다. 운영 체제에서는 컨텍스트를 사용하여 개체를 마샬링하는 방법을 결정합니다.
+`Agile<T>` 클래스는 네이티브 표준 C++ 클래스이고 `agile.h`가 필요합니다. Agile이 아닌 개체 및 Agile 개체의 *컨텍스트* 를 나타냅니다. 컨텍스트는 agile 개체의 스레딩 모델 및 마샬링 동작을 지정합니다. 운영 체제에서는 컨텍스트를 사용하여 개체를 마샬링하는 방법을 결정합니다.
 
 ### <a name="members"></a>멤버
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[Agile:: Agile](#ctor)|Agile 클래스의 새 인스턴스를 초기화합니다.|
 |[Agile::~Agile 소멸자](#dtor)|Agile 클래스의 현재 인스턴스를 제거합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[Agile::Get](#get)|현재 Agile 개체가 나타내는 개체에 대한 핸들을 반환합니다.|
 |[Agile::GetAddressOf](#getaddressof)|현재 Agile 개체를 다시 초기화하고 핸들 주소를 `T`형식 개체에 반환합니다.|
@@ -61,7 +62,7 @@ Windows 런타임의 대부분 클래스는 agile입니다. Agile 개체는 같�
 
 ### <a name="public-operators"></a>Public 연산자
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |[Agile:: operator->](#operator-arrow)|현재 Agile 개체가 나타내는 개체에 대한 핸들을 검색합니다.|
 |[Agile::operator=](#operator-assign)|지정한 값을 현재 Agile 개체에 할당합니다.|
@@ -135,7 +136,7 @@ T^ Get() const;
 
 현재 Agile 개체가 나타내는 개체에 대한 핸들입니다.
 
-반환 값의 형식은 실제로 알려지지 않은 내부 형식입니다. 반환 값을 보유 하는 편리한 방법은 형식 추론 키워드를 사용 하 여 선언 된 변수에 할당 하는 것입니다 **`auto`** . 예들 들어 `auto x = myAgileTvariable->Get();`입니다.
+반환 값의 형식은 실제로 알려지지 않은 내부 형식입니다. 반환 값을 보유 하는 편리한 방법은 형식 추론 키워드를 사용 하 여 선언 된 변수에 할당 하는 것입니다 **`auto`** . 예: `auto x = myAgileTvariable->Get();`.
 
 ## <a name="agilegetaddressof-method"></a><a name="getaddressof"></a> Agile:: GetAddressOf 메서드
 
@@ -247,6 +248,6 @@ T^ operator=( IUnknown* lp ) throw();
 
 할당 연산은 현재 Agile 개체의 컨텍스트를 자동으로 유지합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [Platform 네임 스페이스](platform-namespace-c-cx.md)

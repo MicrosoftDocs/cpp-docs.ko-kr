@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _commit'
 title: _commit
 ms.date: 4/2/2020
 api_name:
@@ -31,12 +32,12 @@ helpviewer_keywords:
 - _commit function
 - committing files to disk
 ms.assetid: d0c74d3a-4f2d-4fb0-b140-2d687db3d233
-ms.openlocfilehash: 217bccbc4ebc937b89bca5cc127de72b7118481c
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 9ec0a6dad2e1dc7531d99e386adf41e4c444b8d0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918525"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97260685"
 ---
 # <a name="_commit"></a>_commit
 
@@ -55,7 +56,7 @@ int _commit(
 *fd*<br/>
 열려 있는 파일을 참조하는 파일 설명자입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 파일이 디스크에 성공적으로 플러시되 면 **_commit** 에서 0을 반환 합니다. 반환 값-1은 오류를 나타냅니다.
 
@@ -63,7 +64,7 @@ int _commit(
 
 **_Commit** 함수를 사용 하면 운영 체제에서 *fd* 와 연결 된 파일을 디스크에 쓸 수 있습니다. 이 호출은 지정된 파일이 운영 체제의 결정을 따르지 않고 즉시 플러시되도록 합니다.
 
-*Fd* 가 잘못 된 파일 설명자 인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 함수는-1을 반환 하 고 **errno** 는 **ebadf**로 설정 됩니다.
+*Fd* 가 잘못 된 파일 설명자 인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 함수는-1을 반환 하 고 **errno** 는 **ebadf** 로 설정 됩니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -75,9 +76,9 @@ int _commit(
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[하위 수준 I/O](../../c-runtime-library/low-level-i-o.md)<br/>
+[하위 수준 i/o](../../c-runtime-library/low-level-i-o.md)<br/>
 [_creat, _wcreat](creat-wcreat.md)<br/>
 [_open, _wopen](open-wopen.md)<br/>
 [_read](read.md)<br/>

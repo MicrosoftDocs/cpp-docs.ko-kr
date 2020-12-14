@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: 샘플 컨테이너 Typedef'
 title: Sample Container Typedefs
 ms.date: 11/04/2016
 ms.assetid: 9fc02c4c-d835-4266-a391-f12b40ba43fa
-ms.openlocfilehash: 127f4df3e4226d1156766ed584cf1629e681ac3e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 70767d5c60eed62e06d58bea321ea8875aa02ec4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62348330"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97250428"
 ---
 # <a name="sample-container-typedefs"></a>Sample Container Typedefs
 

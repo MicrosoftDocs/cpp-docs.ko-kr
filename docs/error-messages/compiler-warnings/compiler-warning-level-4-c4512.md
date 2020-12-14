@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4512'
 title: 컴파일러 경고(수준 4) C4512
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4512
 ms.assetid: afb68995-684a-4be5-a73a-38d7a16dc030
-ms.openlocfilehash: 068bdb2c7c87e8fe7cd3e482f53934de098a6166
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 63753c816fe07d94274f2c27054f5becc458dda9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218093"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97251286"
 ---
 # <a name="compiler-warning-level-4-c4512"></a>컴파일러 경고(수준 4) C4512
 

@@ -1,22 +1,23 @@
 ---
+description: '다음에 대 한 자세한 정보: &lt; &gt; 열거형 system_error'
 title: '&lt;system_error&gt; 열거형'
 ms.date: 11/04/2016
 f1_keywords:
 - system_error/std::errc
 - system_error/std::io_errc
 ms.assetid: b21321b7-404a-40de-8777-a85b77c6fa58
-ms.openlocfilehash: cff8a58545409c4358cd303e41d27520edd5d552
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 63126c8fde91d44dbecf52cca1240c4f8b44b88a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79427562"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97259450"
 ---
 # <a name="ltsystem_errorgt-enums"></a>&lt;system_error&gt; 열거형
 
-## <a name="errc"></a>errc
+## <a name="errc"></a><a name="errc"></a> errc
 
-`<errno.h>`에서 POSIX에 의해 정의 된 모든 오류 코드 매크로에 대해 기호화 된 이름을 제공 합니다.
+에서 POSIX에 의해 정의 된 모든 오류 코드 매크로에 대해 기호화 된 이름을 제공 `<errno.h>` 합니다.
 
 ```cpp
 class errc {
@@ -103,9 +104,9 @@ class errc {
 
 ### <a name="remarks"></a>설명
 
-## <a name="io_errc"></a>io_errc
+## <a name="io_errc"></a><a name="io_errc"></a> io_errc
 
-\<iostream>의 오류 조건에 대한 심볼 이름을 제공합니다. [ios_base::failure](../standard-library/error-condition-class.md)[ 함수가 반환하는 값과 비교할 ](../standard-library/ios-base-class.md#failure)error_condition`code()` 개체를 만드는 데 사용할 수 있습니다.
+의 오류 조건에 대 한 기호화 된 이름을 제공 \<iostream> 합니다. [ios_base::failure](../standard-library/ios-base-class.md#failure)`code()` 함수가 반환하는 값과 비교할 [error_condition](../standard-library/error-condition-class.md) 개체를 만드는 데 사용할 수 있습니다.
 
 ```cpp
 class io_errc {
