@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C 2659'
 title: 컴파일러 오류 C 2659
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2659
 ms.assetid: b0883600-4d27-4ca7-a931-8ca6bd48654d
-ms.openlocfilehash: 818d4e63278bc07fad9290dc0c7d4685886bdce6
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 6a0f6c84e6bc279d9db75c423fdfc0d99b5ea769
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756073"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97249674"
 ---
 # <a name="compiler-error-c2659"></a>컴파일러 오류 C 2659
 

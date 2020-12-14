@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: coclass'
 title: coclass (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - coclass attribute
 ms.assetid: 42da6a10-3af9-4b43-9a1d-689d00b61eb3
-ms.openlocfilehash: 12f7af195f2282955cb16c1f38d4e512ca0f86cb
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9ff2198807407a7dfc56649ed80cb1fa2bafc17c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838882"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97247373"
 ---
 # <a name="coclass"></a>coclass
 
@@ -29,7 +30,7 @@ Com 인터페이스를 구현할 수 있는 COM 개체를 만듭니다.
 
 Coclass를 정의할 때 [uuid](uuid-cpp-attributes.md), [version](version-cpp.md), [스레딩](threading-cpp.md), [vi_progid](vi-progid.md)및 [progid](progid.md) 특성도 지정할 수 있습니다. 이러한 항목 중 하나를 지정 하지 않으면 생성 됩니다.
 
-두 헤더 파일에 **coclass** 특성이 있는 클래스가 포함 되어 있고 GUID를 지정 하지 않는 경우 컴파일러는 두 클래스에 동일한 GUID를 사용 하 고이로 인해 MIDL 오류가 발생 합니다.  따라서 `uuid` **coclass**를 사용 하는 경우 특성을 사용 해야 합니다.
+두 헤더 파일에 **coclass** 특성이 있는 클래스가 포함 되어 있고 GUID를 지정 하지 않는 경우 컴파일러는 두 클래스에 동일한 GUID를 사용 하 고이로 인해 MIDL 오류가 발생 합니다.  따라서 `uuid` **coclass** 를 사용 하는 경우 특성을 사용 해야 합니다.
 
 **ATL 프로젝트**
 

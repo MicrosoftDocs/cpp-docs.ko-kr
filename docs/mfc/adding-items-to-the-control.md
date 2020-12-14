@@ -1,15 +1,16 @@
 ---
+description: '자세히 알아보기: 컨트롤에 항목 추가'
 title: 컨트롤에 항목 추가
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CListCtrl class [MFC], adding items
 ms.assetid: 715994bd-340d-4ad2-9882-411654137830
-ms.openlocfilehash: 5cc1c7a921cf6d6ba2c0f968012b48bfcaef0658
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 44a553564aa9a98806cd8e4d9551c9474421105f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84623374"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97249024"
 ---
 # <a name="adding-items-to-the-control"></a>컨트롤에 항목 추가
 
@@ -21,7 +22,7 @@ ms.locfileid: "84623374"
 
 다른 버전의는 `InsertItem` 구조체의 멤버에 해당 하는 하나 이상의 개별 값을 사용 하 여 `LVITEM` 지원 하려는 멤버만 초기화할 수 있도록 합니다. 일반적으로 목록 컨트롤은 목록 항목의 저장소를 관리 하지만 "콜백 항목"을 사용 하 여 응용 프로그램에 일부 정보를 저장할 수 있습니다. 자세한 내용은이 항목의 콜백 [항목 및 콜백 마스크](callback-items-and-the-callback-mask.md) 와 Windows SDK의 콜백 [항목 및 콜백 마스크](/windows/win32/Controls/using-list-view-controls) 를 참조 하세요.
 
-자세한 내용은 [목록-뷰 항목 및 하위 항목 추가](/windows/win32/Controls/using-list-view-controls)를 참조 하세요.
+자세한 내용은 [List-View 항목 및 하위 항목 추가](/windows/win32/Controls/using-list-view-controls)를 참조 하세요.
 
 ## <a name="see-also"></a>참고 항목
 

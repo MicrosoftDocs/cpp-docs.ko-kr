@@ -1,4 +1,5 @@
 ---
+description: One-Stage 및 Two-Stage 개체 생성에 대해 자세히 알아보세요.
 title: 1단계 및 2단계 개체 생성
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - objects [MFC], graphic objects
 - one-stage and two-stage construction of objects [MFC]
 ms.assetid: 5a1c410c-4a4b-4dd9-a2ec-ced831aa7f21
-ms.openlocfilehash: 07e006d5b326486c54f23990c604a7d2ee0e4c83
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: d46a8d380c263c4ce18671f02b11d5b058bc8410
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84625283"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97243915"
 ---
 # <a name="one-stage-and-two-stage-construction-of-objects"></a>1단계 및 2단계 개체 생성
 
@@ -37,9 +38,9 @@ ms.locfileid: "84625283"
 
 - [그래픽 개체](graphic-objects.md)
 
-- [장치 컨텍스트에 그래픽 개체 선택](selecting-a-graphic-object-into-a-device-context.md)
+- [그래픽 개체를 선택하여 디바이스 컨텍스트로 넣기](selecting-a-graphic-object-into-a-device-context.md)
 
-- [장치 컨텍스트](device-contexts.md)
+- [디바이스 컨텍스트](device-contexts.md)
 
 - [뷰에 그리기](drawing-in-a-view.md)
 

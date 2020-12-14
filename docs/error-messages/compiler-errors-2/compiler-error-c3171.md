@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3171'
 title: 컴파일러 오류 C3171
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3171
 ms.assetid: 1ce26997-7ef1-4c9f-84da-003ea1a4251e
-ms.openlocfilehash: 14f0cedc5448005a29d74f05ae3e68e74eb5cf1c
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 65e7e1db9a864b894a0bce825df09a372489a79d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91508302"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97242199"
 ---
 # <a name="compiler-error-c3171"></a>컴파일러 오류 C3171
 

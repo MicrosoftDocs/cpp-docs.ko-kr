@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: MFC 메시지 처리기 추가'
 title: MFC 메시지 처리기 추가
 ms.date: 09/06/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - message handling [MFC], adding handlers
 ms.assetid: 4251cfce-76ca-443d-bd2f-6303afa6d942
-ms.openlocfilehash: c5ec71083c82a71c2b2aaa86a3e9dca37fc37b2b
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: c28327635e3e0cdd047c9f993b9d3d7582c0c748
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502995"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97248335"
 ---
 # <a name="adding-an-mfc-message-handler"></a>MFC 메시지 처리기 추가
 

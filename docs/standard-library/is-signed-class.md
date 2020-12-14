@@ -1,4 +1,5 @@
 ---
+description: Is_signed 클래스에 대해 자세히 알아보세요.
 title: is_signed 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - is_signed class
 - is_signed
 ms.assetid: 20ae44d9-22ad-4fbd-b26a-f18c62689451
-ms.openlocfilehash: 153970412f324f070bb66ae4a1bb6a8c204a5886
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: fefdf5e178bfbb5d2d77220ba51e36b2574606ba
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68457500"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97247685"
 ---
-# <a name="issigned-class"></a>is_signed 클래스
+# <a name="is_signed-class"></a>is_signed 클래스
 
 형식이 부호 있는 정수인지 테스트합니다.
 
@@ -71,11 +72,11 @@ is_signed<float> == true
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<type_traits>
+**헤더:**\<type_traits>
 
 **네임스페이스:** std
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [<type_traits>](../standard-library/type-traits.md)\
 [is_unsigned 클래스](../standard-library/is-unsigned-class.md)

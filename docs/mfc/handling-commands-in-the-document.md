@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 문서에서 명령 처리'
 title: 문서에서 명령 처리
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - command handling [MFC], commands in documents
 - documents [MFC], handling messages in
 ms.assetid: c7375584-27af-4275-b2fd-afea476785d0
-ms.openlocfilehash: ed2ef635437408cacfd600d6cdba4b3731d575b4
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 4d8252cb16eee0e1c5c802e5839ec925a7879cc5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84625737"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97248894"
 ---
 # <a name="handling-commands-in-the-document"></a>문서에서 명령 처리
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: OLE 서버 클래스'
 title: OLE 서버 클래스
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - COM components, classes [MFC]
 - component classes [MFC]
 ms.assetid: 8e9b67a2-c0ff-479c-a8d6-19b36c5e6fc6
-ms.openlocfilehash: 06f5cf0985756506e42c7ad9fde24641b5a0ce93
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: a2f60f148d6a24323ca6546e633c30103b315ee2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619858"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97243993"
 ---
 # <a name="ole-server-classes"></a>OLE 서버 클래스
 
@@ -20,10 +21,10 @@ ms.locfileid: "84619858"
 
 `COleServerItem`클래스는 다른 문서에 포함 되거나에 연결 될 수 있는 문서 또는 문서 부분을 나타냅니다.
 
-`COleIPFrameWnd`및은 `COleResizeBar` 개체가 컨테이너에 있는 동안 내부 편집을 지원 하 고 `COleTemplateServer` 다른 응용 프로그램의 OLE 개체를 편집할 수 있도록 문서/뷰 쌍 만들기를 지원 합니다.
+`COleIPFrameWnd` 및은 `COleResizeBar` 개체가 컨테이너에 있는 동안 내부 편집을 지원 하 고 `COleTemplateServer` 다른 응용 프로그램의 OLE 개체를 편집할 수 있도록 문서/뷰 쌍 만들기를 지원 합니다.
 
 [COleServerDoc](reference/coleserverdoc-class.md)<br/>
-서버 응용 프로그램 문서 클래스의 기본 클래스로 사용 됩니다. `COleServerDoc`개체는 개체와의 상호 작용을 통해 대량의 서버 지원을 제공 `COleServerItem` 합니다. 시각적 편집 기능은 클래스 라이브러리의 문서/뷰 아키텍처를 사용 하 여 제공 됩니다.
+서버 응용 프로그램 문서 클래스의 기본 클래스로 사용 됩니다. `COleServerDoc` 개체는 개체와의 상호 작용을 통해 대량의 서버 지원을 제공 `COleServerItem` 합니다. 시각적 편집 기능은 클래스 라이브러리의 문서/뷰 아키텍처를 사용 하 여 제공 됩니다.
 
 [CDocItem](reference/cdocitem-class.md)<br/>
 및의 추상 기본 `COleClientItem` 클래스 `COleServerItem` 입니다. 에서 파생 된 클래스의 개체는 `CDocItem` 문서의 일부를 나타냅니다.

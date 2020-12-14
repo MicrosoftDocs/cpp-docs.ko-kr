@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 리소스 관리 클래스'
 title: 리소스 관리 클래스
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - resource management, C++ classes
 - resources [C++], management
 ms.assetid: 1040e813-f1cd-4b13-83b6-d329f8e75d2e
-ms.openlocfilehash: b5fd88bf359cbc3221a8f2a259d031bdbd6b581f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5550b614c9557f06273b6b1305d610c291a668e2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835014"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97242446"
 ---
 # <a name="resource-management-classes"></a>리소스 관리 클래스
 

@@ -1,4 +1,5 @@
 ---
+description: Unique_ptr 클래스에 대해 자세히 알아보세요.
 title: unique_ptr 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - std::unique_ptr [C++], reset
 - std::unique_ptr [C++], swap
 ms.assetid: acdf046b-831e-4a4a-83aa-6d4ee467db9a
-ms.openlocfilehash: 4e6c7d8dd9835545c4aaa677a39f5e3149743d14
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 888229c4e07a0b2189e46bcecd562e0177cfd67e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835677"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97243694"
 ---
 # <a name="unique_ptr-class"></a>unique_ptr 클래스
 
@@ -137,7 +138,7 @@ public:
 |[element_type](#element_type)|템플릿 매개 변수 `T`의 동의어.|
 |[놓고](#pointer)|`Del::pointer`의 동의어(정의된 경우)이며 그렇지 않은 경우 `T *`.|
 
-### <a name="functions"></a>Functions
+### <a name="functions"></a>함수
 
 |Name|설명|
 |-|-|
@@ -313,9 +314,9 @@ void reset(nullptr_t ptr);
 
 #### <a name="remarks"></a>설명
 
-를 사용 하 여 `reset` 가 [pointer](#pointer) 소유한 저장 된 포인터 `unique_ptr` 를 *ptr* 로 변경한 다음 원래 저장 된 포인터를 삭제 합니다. `unique_ptr`이 비어 있지 않으면 `reset`은 원래 저장된 포인터에서 [get_deleter](#get_deleter)가 반환하는 deleter 함수를 호출합니다.
+를 사용 하 여 `reset` 가 [](#pointer) 소유한 저장 된 포인터 `unique_ptr` 를 *ptr* 로 변경한 다음 원래 저장 된 포인터를 삭제 합니다. `unique_ptr`이 비어 있지 않으면 `reset`은 원래 저장된 포인터에서 [get_deleter](#get_deleter)가 반환하는 deleter 함수를 호출합니다.
 
-는 `reset` 먼저 새 포인터 *ptr*을 저장 한 다음 원래 저장 된 포인터를 삭제 하므로 `reset` 원래 저장 된 포인터와 동일한 경우 *ptr* 을 즉시 삭제할 수 있습니다.
+는 `reset` 먼저 새 포인터 *ptr* 을 저장 한 다음 원래 저장 된 포인터를 삭제 하므로 `reset` 원래 저장 된 포인터와 동일한 경우 *ptr* 을 즉시 삭제할 수 있습니다.
 
 ### <a name="swap"></a><a name="swap"></a> 스왑을
 

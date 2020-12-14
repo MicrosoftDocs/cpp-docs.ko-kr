@@ -1,15 +1,16 @@
 ---
+description: Unique_lock 클래스에 대해 자세히 알아보세요.
 title: unique_lock 클래스
 ms.date: 11/04/2016
 f1_keywords:
 - mutex/std::unique_lock
 ms.assetid: f4ed8ba9-c8af-446f-8ef0-0b356bad14bd
-ms.openlocfilehash: be53f66296612f1b44790393907028bfc4d062ff
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 6e7f5ddadce00814196e630b27570e21176c0e62
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834221"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97243720"
 ---
 # <a name="unique_lock-class"></a>unique_lock 클래스
 
@@ -24,7 +25,7 @@ class unique_lock;
 
 ## <a name="remarks"></a>설명
 
-템플릿 인수 `Mutex`는 *뮤텍스 형식*의 이름을 지정해야 합니다.
+템플릿 인수 `Mutex`는 *뮤텍스 형식* 의 이름을 지정해야 합니다.
 
 내부적으로는 `unique_lock` 연결 된 개체에 대 한 포인터 `mutex` 와 **`bool`** 현재 스레드가를 소유 하는지 여부를 나타내는를 저장 `mutex` 합니다.
 
@@ -289,7 +290,7 @@ unique_lock(mutex_type& Mtx,
 
 첫 번째 생성자는 연결된 뮤텍스 포인터 값 0이 포함된 개체를 생성합니다.
 
-두 번째 생성자는 연결 된 뮤텍스 상태를 *다른*생성자로 이동 합니다. 이동 후 *다른* 는 더 이상 뮤텍스와 연결 되지 않습니다.
+두 번째 생성자는 연결 된 뮤텍스 상태를 *다른* 생성자로 이동 합니다. 이동 후 *다른* 는 더 이상 뮤텍스와 연결 되지 않습니다.
 
 나머지 생성자는 저장 된 포인터로 & *mtx.exe* 를 저장 합니다 `mutex` . `mutex`의 소유권은 두 번째 인수(있는 경우)에 의해 결정됩니다.
 

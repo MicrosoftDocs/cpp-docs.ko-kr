@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3172'
 title: 컴파일러 오류 C3172
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3172
 ms.assetid: 1834e2fd-6036-4c33-aff2-b51bc7c99441
-ms.openlocfilehash: ca0eab35f6e60d81a324156905619ceb7ace8830
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: d8ce88960e725266723c3c37cd9bfbbbd342027b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91508290"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97242173"
 ---
 # <a name="compiler-error-c3172"></a>컴파일러 오류 C3172
 
 ' module_name ': 프로젝트에서 다른 idl_module 특성을 지정할 수 없습니다.
 
-[idl_module](../../windows/attributes/idl-module.md) `dllname` `version` 컴파일할 때 파일 중 두 개에서 이름이 같지만 매개 변수가 다른 idl_module 특성을 찾았습니다. `idl_module`컴파일 당 고유한 특성을 하나만 지정할 수 있습니다.
+[](../../windows/attributes/idl-module.md) `dllname` `version` 컴파일할 때 파일 중 두 개에서 이름이 같지만 매개 변수가 다른 idl_module 특성을 찾았습니다. `idl_module`컴파일 당 고유한 특성을 하나만 지정할 수 있습니다.
 
 둘 `idl_module` 이상의 소스 코드 파일에 동일한 특성을 지정할 수 있습니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: DirectX를 사용 하 여 c + + 게임을 만들기 위한 리소스'
 title: DirectX를 사용 하 여 c + + 게임을 만들기 위한 리소스
 ms.date: 06/08/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - Windows applications [C++], games
 - DirectX [C++]
 ms.assetid: 863090ed-6091-45db-aabb-7fd02f76c1df
-ms.openlocfilehash: 95dfb0b21432835b983f88599f4b3d50cbe39e0f
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 558e0e87d485b73c801c8b528bc4132ed846b5fa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91506966"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97247256"
 ---
 # <a name="resources-for-creating-a-c-game-using-directx"></a>DirectX를 사용 하 여 c + + 게임을 만들기 위한 리소스
 

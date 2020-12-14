@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3160'
 title: 컴파일러 오류 C3160
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3160
 ms.assetid: a250c433-8adf-43b9-8dee-c3794e09b0a5
-ms.openlocfilehash: 4d6f415c8b3c8275ac45ef4d4313021100d9a833
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 863670f30a6a911977ead0d541dcba825e4f124a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74755150"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97242329"
 ---
 # <a name="compiler-error-c3160"></a>컴파일러 오류 C3160
 

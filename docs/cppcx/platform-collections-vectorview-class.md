@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Platform:: Collections:: VectorView 클래스'
 title: Platform::Collections::VectorView 클래스
 ms.date: 12/30/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - VectorView Class
 ms.assetid: 05cd461d-dce7-49d3-b0e7-2e5c78ed8192
-ms.openlocfilehash: 207f5d517eaae475af1c65a284a3d1ebe50621af
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f0d1244ed5331fa9732bdfef1f1b7e2133f99442
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218392"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97250038"
 ---
 # <a name="platformcollectionsvectorview-class"></a>Platform::Collections::VectorView 클래스
 
@@ -35,7 +36,7 @@ template <typename T, typename E>
 *T*<br/>
 `VectorView` 개체에 포함된 요소의 형식입니다.
 
-*우표*<br/>
+*E*<br/>
 `T`형식의 값을 사용하여 같음을 테스트하기 위한 이진 조건자를 지정합니다. 기본값은 `std::equal_to<T>`입니다.
 
 ### <a name="remarks"></a>설명
@@ -46,7 +47,7 @@ template <typename T, typename E>
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[VectorView:: VectorView](#ctor)|VectorView 클래스의 새 인스턴스를 초기화합니다.|
 
@@ -70,7 +71,7 @@ template <typename T, typename E>
 
 **네임스페이스:** Platform::Collections
 
-## <a name="vectorviewfirst-method"></a><a name="first"></a>VectorView:: First 메서드
+## <a name="vectorviewfirst-method"></a><a name="first"></a> VectorView:: First 메서드
 
 VectorView의 첫 번째 요소를 지정하는 반복기를 반환합니다.
 
@@ -88,9 +89,9 @@ VectorView의 첫 번째 요소를 지정하는 반복기입니다.
 
 ### <a name="remarks"></a>설명
 
-First ()에서 반환 된 반복기를 편리 하 게 유지 하는 방법은 형식 추론 키워드를 사용 하 여 선언 된 변수에 반환 값을 할당 하는 것입니다 **`auto`** . 예들 들어 `auto x = myVectorView->First();`입니다.
+First ()에서 반환 된 반복기를 편리 하 게 유지 하는 방법은 형식 추론 키워드를 사용 하 여 선언 된 변수에 반환 값을 할당 하는 것입니다 **`auto`** . 예: `auto x = myVectorView->First();`.
 
-## <a name="vectorviewgetat-method"></a><a name="getat"></a>VectorView:: GetAt 메서드
+## <a name="vectorviewgetat-method"></a><a name="getat"></a> VectorView:: GetAt 메서드
 
 지정된 인덱스가 나타내는 현재 VectorView의 요소를 검색합니다.
 
@@ -108,11 +109,11 @@ T GetAt(
 *index*<br/>
 VectorView 개체의 특정 요소를 지정하는 0부터 시작하는 부호 없는 정수입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-`index` 매개 변수로 지정된 요소입니다. 요소 형식은 VectorView 템플릿 매개 변수 *T*로 지정 됩니다.
+`index` 매개 변수로 지정된 요소입니다. 요소 형식은 VectorView 템플릿 매개 변수 *T* 로 지정 됩니다.
 
-## <a name="vectorviewgetmany-method"></a><a name="getmany"></a>VectorView:: GetMany 메서드
+## <a name="vectorviewgetmany-method"></a><a name="getmany"></a> VectorView:: GetMany 메서드
 
 현재 VectorView에서 지정된 인덱스부터 시작하여 일련의 항목을 검색합니다.
 
@@ -134,11 +135,11 @@ virtual unsigned int GetMany(
 *dest*<br/>
 이 작업이 완료되면 `startIndex`로 지정된 요소에서 시작해 VectorView의 마지막 요소에서 끝나는 항목의 배열입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 검색된 항목의 수입니다.
 
-## <a name="vectorviewindexof-method"></a><a name="indexof"></a>VectorView:: IndexOf 메서드
+## <a name="vectorviewindexof-method"></a><a name="indexof"></a> VectorView:: IndexOf 메서드
 
 현재 VectorView에서 지정한 항목을 검색하고 있는 경우 항목의 인덱스를 반환합니다.
 
@@ -162,11 +163,11 @@ virtual bool IndexOf(
 
 항목이의 첫 번째 요소 이거나 항목을 찾을 수 없는 경우에는 *인덱스* 매개 변수가 0입니다 `VectorView` . 반환 값이 이면 **`true`** 항목이 검색 되 고 첫 번째 요소 이면이 고, 그렇지 않으면 항목을 찾을 수 없습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 지정 된 항목이 있으면이 고, 그렇지 않으면입니다. 그렇지 않으면 **`false`** 입니다.
 
-## <a name="vectorviewsize-method"></a><a name="size"></a>VectorView:: Size 메서드
+## <a name="vectorviewsize-method"></a><a name="size"></a> VectorView:: Size 메서드
 
 현재 VectorView 개체의 요소 수를 반환합니다.
 
@@ -181,7 +182,7 @@ virtual property unsigned int Size;
 
 현재 VectorView의 요소 수입니다.
 
-## <a name="vectorviewvectorview-constructor"></a><a name="ctor"></a>VectorView:: VectorView 생성자
+## <a name="vectorviewvectorview-constructor"></a><a name="ctor"></a> VectorView:: VectorView 생성자
 
 VectorView 클래스의 새 인스턴스를 초기화합니다.
 
@@ -256,7 +257,7 @@ VectorView의 요소 수입니다.
 *value*<br/>
 현재 VectorView의 각 요소를 초기화하는 데 사용되는 값입니다.
 
-*hyper-v*<br/>
+*v*<br/>
 현재 VectorView를 초기화 하는 데 사용 되는 [std:: vector](../standard-library/vector-class.md) 에 대 [한 Lvalues 및 rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md) 입니다.
 
 *ptr*<br/>
@@ -269,10 +270,10 @@ VectorView의 요소 수입니다.
 현재 VectorView를 초기화 하는 데 사용 되는 [std:: array](../standard-library/array-class-stl.md) 개체입니다.
 
 *first*<br/>
-현재 VectorView를 초기화하는 데 사용되는 개체 시퀀스의 첫 번째 요소입니다. 의 형식은 `first` *완벽 한 전달*수단으로 전달 됩니다. 자세한 내용은 [RValue 참조 선언자: &&](../cpp/rvalue-reference-declarator-amp-amp.md)를 참조하세요.
+현재 VectorView를 초기화하는 데 사용되는 개체 시퀀스의 첫 번째 요소입니다. 의 형식은 `first` *완벽 한 전달* 수단으로 전달 됩니다. 자세한 내용은 [RValue 참조 선언자: &&](../cpp/rvalue-reference-declarator-amp-amp.md)를 참조하세요.
 
 *last*<br/>
-현재 VectorView를 초기화하는 데 사용되는 개체 시퀀스의 마지막 요소입니다. 의 형식은 `last` *완벽 한 전달*수단으로 전달 됩니다. 자세한 내용은 [RValue 참조 선언자: &&](../cpp/rvalue-reference-declarator-amp-amp.md)를 참조하세요.
+현재 VectorView를 초기화하는 데 사용되는 개체 시퀀스의 마지막 요소입니다. 의 형식은 `last` *완벽 한 전달* 수단으로 전달 됩니다. 자세한 내용은 [RValue 참조 선언자: &&](../cpp/rvalue-reference-declarator-amp-amp.md)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

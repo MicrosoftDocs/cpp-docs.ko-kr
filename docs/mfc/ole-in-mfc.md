@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: MFC의 OLE'
 title: MFC의 OLE
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - applications [OLE], about OLE
 - OLE component object model (COM)
 ms.assetid: 5193479d-1239-4697-aea4-e82f92c707ab
-ms.openlocfilehash: 529b6d0eaedaee200da547ef9ed980aab51ea233
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 125a2ad8e900747d859c03b57df33f2e7e5f1c28
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622166"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97244097"
 ---
 # <a name="ole-in-mfc"></a>MFC의 OLE
 
@@ -38,7 +39,7 @@ ms.locfileid: "84622166"
 
 ## <a name="in-this-section"></a>섹션 내용
 
-[OLE 백그라운드](ole-background.md)<br/>
+[OLE 배경](ole-background.md)<br/>
 OLE에 대해 설명 하 고 작동 방법에 대 한 개념 정보를 제공 합니다.
 
 [활성화](activation-cpp.md)<br/>
@@ -62,12 +63,12 @@ MFC OLE 문서 응용 프로그램에서 메뉴 및 리소스를 사용 하는 �
 [서버](servers.md)<br/>
 컨테이너 응용 프로그램에서 사용 하기 위해 OLE 항목 (또는 구성 요소)을 만드는 방법을 설명 합니다.
 
-[추적기](trackers.md)<br/>
+[Trackers](trackers.md)<br/>
 `CRectTracker`사용자가 OLE 클라이언트 항목을 조작할 수 있도록 그래픽 인터페이스를 제공 하는 클래스에 대 한 정보를 제공 합니다.
 
 ## <a name="related-sections"></a>관련 단원
 
-[연결 지점](connection-points.md)<br/>
+[연결 요소](connection-points.md)<br/>
 MFC 클래스 및를 사용 하 여 연결 요소 (이전의 OLE 연결점)를 구현 하는 방법에 대해 설명 합니다 `CCmdTarget` `CConnectionPoint` .
 
 [컨테이너/서버 COM 구성 요소](containers-advanced-features.md)<br/>

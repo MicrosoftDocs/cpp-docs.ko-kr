@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4715'
 title: 컴파일러 경고(수준 1) C4715
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4715
 ms.assetid: 1c819bf7-0d8b-4f5e-b338-9cc292870439
-ms.openlocfilehash: 7dba86d591f18fd7c9c562078204916000d47384
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 41682beae6e32ba397f3c9dae43d57a182b09b65
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80175326"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97249102"
 ---
 # <a name="compiler-warning-level-1-c4715"></a>컴파일러 경고(수준 1) C4715
 
@@ -62,4 +63,4 @@ int glue()
 }
 ```
 
-컴파일러는 `fatal` 반환 되지 않는다는 것을 인식 하지 못하기 때문에이 코드는 경고를 생성 합니다. 이 코드가 오류 메시지를 생성 하지 않도록 하려면 [__declspec (noreturn)](../../cpp/noreturn.md)를 사용 하 여 `fatal`를 선언 합니다.
+컴파일러가를 반환 하지 않는다는 것을 알지 못하기 때문에이 코드는 경고를 생성 합니다 `fatal` . 이 코드가 오류 메시지를 생성 하지 않도록 하려면 `fatal` [__declspec (noreturn)](../../cpp/noreturn.md)를 사용 하 여 선언 합니다.

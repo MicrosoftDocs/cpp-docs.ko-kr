@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: Owner-Drawn 헤더 컨트롤 만들기'
 title: 소유자가 그린 헤더 컨트롤 만들기
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - controls [MFC], header
 - owner-drawn header controls [MFC]
 ms.assetid: 455c113b-e8d0-400c-8690-dbb92cba0d05
-ms.openlocfilehash: bf2ba6208d6be7e6296b00886cee419a0c658d36
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: bd9236d5987c5cf94e0bbc89d7785c413c259591
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84621367"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97244240"
 ---
 # <a name="making-owner-drawn-header-controls"></a>소유자가 그린 헤더 컨트롤 만들기
 

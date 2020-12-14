@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: OLE 컨트롤 클래스'
 title: OLE 컨트롤 클래스
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - OLE control classes [MFC]
 - reusable component classes [MFC]
 ms.assetid: 96495ec3-319e-4163-b839-1af0428ed9dd
-ms.openlocfilehash: 5aa3899dca5a42cf789dc6dfd4701547495ec618
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: da59fcd66fa21602ad864deecac9f568bd5123bc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84617761"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97244149"
 ---
 # <a name="ole-control-classes"></a>OLE 컨트롤 클래스
 

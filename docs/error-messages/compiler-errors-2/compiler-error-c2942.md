@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C 2942'
 title: 컴파일러 오류 C2942
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2942
 ms.assetid: 13abf744-8fa1-450d-886d-e5717c04956e
-ms.openlocfilehash: 98bb0d9945068042e00c7c48c0304314e281fa8f
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: d68db30f1b70aed20e2501c88bddaf00bb330149
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74758361"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97249596"
 ---
 # <a name="compiler-error-c2942"></a>컴파일러 오류 C2942
 

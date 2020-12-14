@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: call_as'
 title: call_as (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - call_as attribute
 ms.assetid: a09d7f1f-353b-4870-9b45-f0284161695d
-ms.openlocfilehash: 9ae620ed6f2b01cc52e4a9c76217f044db925f11
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: de407da1401479327185c6133c625d61e1e221cf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838922"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97247451"
 ---
 # <a name="call_as"></a>call_as
 

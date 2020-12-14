@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 참조 (c + +)'
 title: 참조 (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - references, declaring
 - referencing objects, declarator syntax
 ms.assetid: 68156f7f-97a0-4b66-b26d-b25ade5e3bd8
-ms.openlocfilehash: 8a771b8bfc067966c3c054700538ebf180a5eb23
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1f49e089d8992a32f30e1a384d5f0c36fa327c0f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233615"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97250051"
 ---
 # <a name="references-c"></a>참조 (C++)
 
@@ -52,7 +53,7 @@ ms.locfileid: "87233615"
 
 배열 및 함수에 대 한 포인터의 더 복잡 한 선언 자 형식은 배열 및 함수에 대 한 참조에도 적용 됩니다. 자세한 내용은 [포인터](../cpp/pointers-cpp.md)를 참조 하세요.
 
-여러 선언자와 이니셜라이저가 단일 선언 지정자 뒤에 쉼표로 구분된 목록으로 나타날 수 있습니다. 예를 들면 다음과 같습니다.
+여러 선언자와 이니셜라이저가 단일 선언 지정자 뒤에 쉼표로 구분된 목록으로 나타날 수 있습니다. 예를 들어:
 
 ```cpp
 int &i;

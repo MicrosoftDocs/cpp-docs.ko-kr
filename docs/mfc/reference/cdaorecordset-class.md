@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CDaoRecordset 클래스'
 title: CDaoRecordset 클래스
 ms.date: 08/27/2018
 f1_keywords:
@@ -166,12 +167,12 @@ helpviewer_keywords:
 - CDaoRecordset [MFC], m_strFilter
 - CDaoRecordset [MFC], m_strSort
 ms.assetid: 2322067f-1027-4662-a5d7-aa2fc7488630
-ms.openlocfilehash: 4a1026c6b652bc5141855670db3b1ee34e7974b9
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: cc24894c0efc61ae37d57ff3c01ca43e71beddf3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040277"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97248213"
 ---
 # <a name="cdaorecordset-class"></a>CDaoRecordset 클래스
 
@@ -187,13 +188,13 @@ class CDaoRecordset : public CObject
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CDaoRecordset:: CDaoRecordset](#cdaorecordset)|`CDaoRecordset` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CDaoRecordset:: AddNew](#addnew)|새 레코드를 추가할 준비를 합니다. [업데이트](#update) 를 호출 하 여 추가를 완료 합니다.|
 |[CDaoRecordset:: CanAppend](#canappend)|[AddNew](#addnew) 멤버 함수를 통해 레코드 집합에 새 레코드를 추가할 수 있는 경우 0이 아닌 값을 반환 합니다.|
@@ -270,7 +271,7 @@ class CDaoRecordset : public CObject
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|Name|Description|
+|Name|설명|
 |----------|-----------------|
 |[CDaoRecordset:: m_bCheckCacheForDirtyFields](#m_bcheckcachefordirtyfields)|필드를 자동으로 변경 된 것으로 표시할지 여부를 나타내는 플래그를 포함 합니다.|
 |[CDaoRecordset:: m_nFields](#m_nfields)|레코드 집합 클래스의 필드 데이터 멤버 수와 데이터 원본의 레코드 집합에서 선택한 열 수를 포함 합니다.|
@@ -360,7 +361,7 @@ virtual void AddNew();
 
 `AddNew` [Open](#open) 멤버 함수가 호출 되지 않은 레코드 집합에 대해를 호출할 수 없습니다. 추가할 수 없는 `CDaoException` `AddNew` 레코드 집합에 대해를 호출 하면이 throw 됩니다. [CanAppend](#canappend)를 호출 하 여 레코드 집합을 업데이트할 수 있는지 여부를 확인할 수 있습니다.
 
-이 프레임 워크는 변경 된 필드 데이터 멤버를 표시 하 여 DAO 레코드 필드 교환 (DFX) 메커니즘에 의해 데이터 원본의 레코드에 기록 되도록 합니다. 필드의 값을 변경 하는 것은 일반적으로 자동으로 필드를 설정 하지 않으므로 사용자가 직접 [SetFieldDirty](#setfielddirty) 를 호출할 필요가 없지만 필드 데이터 멤버의 값에 관계 없이 열이 명시적으로 업데이트 되거나 삽입 되도록 할 수도 있습니다. 또한 DFX 메커니즘은 **의사 (PSEUDO) NULL**을 사용 합니다. 자세한 내용은 [CDaoFieldExchange:: m_nOperation](../../mfc/reference/cdaofieldexchange-class.md#m_noperation)를 참조 하세요.
+이 프레임 워크는 변경 된 필드 데이터 멤버를 표시 하 여 DAO 레코드 필드 교환 (DFX) 메커니즘에 의해 데이터 원본의 레코드에 기록 되도록 합니다. 필드의 값을 변경 하는 것은 일반적으로 자동으로 필드를 설정 하지 않으므로 사용자가 직접 [SetFieldDirty](#setfielddirty) 를 호출할 필요가 없지만 필드 데이터 멤버의 값에 관계 없이 열이 명시적으로 업데이트 되거나 삽입 되도록 할 수도 있습니다. 또한 DFX 메커니즘은 **의사 (PSEUDO) NULL** 을 사용 합니다. 자세한 내용은 [CDaoFieldExchange:: m_nOperation](../../mfc/reference/cdaofieldexchange-class.md#m_noperation)를 참조 하세요.
 
 이중 버퍼링 메커니즘이 사용 되지 않는 경우 필드의 값을 변경 해도 필드가 더티로 자동 설정 되지 않습니다. 이 경우 필드를 명확 하 게 설정 해야 합니다. [M_bCheckCacheForDirtyFields](#m_bcheckcachefordirtyfields) 에 포함 된 플래그는이 자동 필드 검사를 제어 합니다.
 
@@ -438,7 +439,7 @@ BOOL CanRestart();
 
 테이블 형식 레코드 집합은를 지원 하지 않습니다 `Requery` .
 
-`Requery`가 지원 되지 않는 경우 [Close](#close) 를 호출 [Open](#open) 하 여 데이터를 새로 고칩니다. `Requery`매개 변수 값이 변경 된 후를 호출 하 여 레코드 집합 개체의 기본 매개 변수 쿼리를 업데이트할 수 있습니다.
+`Requery`가 지원 되지 않는 경우 [Close](#close) 를 호출 [](#open) 하 여 데이터를 새로 고칩니다. `Requery`매개 변수 값이 변경 된 후를 호출 하 여 레코드 집합 개체의 기본 매개 변수 쿼리를 업데이트할 수 있습니다.
 
 관련 내용은 DAO 도움말의 "다시 시작 가능한 속성" 항목을 참조 하십시오.
 
@@ -528,7 +529,7 @@ virtual void Close();
 
 는 `Close` 개체를 삭제 하지 않으므로 `CDaoRecordset` `Open` 동일한 데이터 소스 또는 다른 데이터 소스에서를 호출 하 여 개체를 다시 사용할 수 있습니다.
 
-보류 중인 모든 [AddNew](#addnew) 또는 [Edit](#edit) 문이 취소 되 고 보류 중인 모든 트랜잭션이 롤백됩니다. 보류 중인 추가 또는 편집 내용을 유지 하려면 [Update](#update) `Close` 각 레코드 집합에 대해를 호출 하기 전에 Update를 호출 합니다.
+보류 중인 모든 [AddNew](#addnew) 또는 [Edit](#edit) 문이 취소 되 고 보류 중인 모든 트랜잭션이 롤백됩니다. 보류 중인 추가 또는 편집 내용을 유지 하려면 [](#update) `Close` 각 레코드 집합에 대해를 호출 하기 전에 Update를 호출 합니다.
 
 를 호출한 후을 다시 호출할 수 있습니다 `Open` `Close` . 이렇게 하면 레코드 집합 개체를 다시 사용할 수 있습니다. 더 나은 방법은 [Requery](#requery)를 호출 하는 것입니다 (가능한 경우).
 
@@ -597,7 +598,7 @@ virtual void Edit();
 
 일부 경우에는 데이터를 포함 하지 않는 열을 Null로 설정 하 여 열을 업데이트 하는 것이 좋습니다. 이렇게 하려면 `SetFieldNull` TRUE의 매개 변수를 사용 하 여를 호출 하 여 필드를 Null로 표시 합니다. 이렇게 하면 열도 업데이트 됩니다. 값이 변경 되지 않은 경우에도 데이터 소스에 필드를 기록 하려면 `SetFieldDirty` TRUE의 매개 변수를 사용 하 여를 호출 합니다. 필드의 값이 Null 인 경우에도 작동 합니다.
 
-이 프레임 워크는 변경 된 필드 데이터 멤버를 표시 하 여 DAO 레코드 필드 교환 (DFX) 메커니즘에 의해 데이터 원본의 레코드에 기록 되도록 합니다. 필드의 값을 변경 하는 것은 일반적으로 자동으로 필드를 설정 하지 않으므로 사용자가 직접 [SetFieldDirty](#setfielddirty) 를 호출할 필요가 없지만 필드 데이터 멤버의 값에 관계 없이 열이 명시적으로 업데이트 되거나 삽입 되도록 할 수도 있습니다. 또한 DFX 메커니즘은 **의사 (PSEUDO) NULL**을 사용 합니다. 자세한 내용은 [CDaoFieldExchange:: m_nOperation](../../mfc/reference/cdaofieldexchange-class.md#m_noperation)를 참조 하세요.
+이 프레임 워크는 변경 된 필드 데이터 멤버를 표시 하 여 DAO 레코드 필드 교환 (DFX) 메커니즘에 의해 데이터 원본의 레코드에 기록 되도록 합니다. 필드의 값을 변경 하는 것은 일반적으로 자동으로 필드를 설정 하지 않으므로 사용자가 직접 [SetFieldDirty](#setfielddirty) 를 호출할 필요가 없지만 필드 데이터 멤버의 값에 관계 없이 열이 명시적으로 업데이트 되거나 삽입 되도록 할 수도 있습니다. 또한 DFX 메커니즘은 **의사 (PSEUDO) NULL** 을 사용 합니다. 자세한 내용은 [CDaoFieldExchange:: m_nOperation](../../mfc/reference/cdaofieldexchange-class.md#m_noperation)를 참조 하세요.
 
 이중 버퍼링 메커니즘이 사용 되지 않는 경우 필드의 값을 변경 해도 필드가 더티로 자동 설정 되지 않습니다. 이 경우 필드를 명확 하 게 설정 해야 합니다. [M_bCheckCacheForDirtyFields](#m_bcheckcachefordirtyfields) 에 포함 된 플래그는이 자동 필드 검사를 제어 합니다.
 
@@ -678,7 +679,7 @@ virtual BOOL Find(
 - 일치 하는 문자열의 마지막 위치를 찾을 AFX_DAO_LAST.
 
 *lpszFilter*<br/>
-레코드를 찾는 데 사용 되는 **where**라는 단어가 없는 SQL 문의 **where** 절과 같은 문자열 식입니다. 다음은 그 예입니다. 
+레코드를 찾는 데 사용 되는 **where** 라는 단어가 없는 SQL 문의 **where** 절과 같은 문자열 식입니다. 예를 들어:
 
 [!code-cpp[NVC_MFCDatabase#3](../../mfc/codesnippet/cpp/cdaorecordset-class_3.cpp)]
 
@@ -708,7 +709,7 @@ BOOL FindFirst(LPCTSTR lpszFilter);
 ### <a name="parameters"></a>매개 변수
 
 *lpszFilter*<br/>
-레코드를 찾는 데 사용 되는 **where**라는 단어가 없는 SQL 문의 **where** 절과 같은 문자열 식입니다.
+레코드를 찾는 데 사용 되는 **where** 라는 단어가 없는 SQL 문의 **where** 절과 같은 문자열 식입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -762,7 +763,7 @@ BOOL FindLast(LPCTSTR lpszFilter);
 ### <a name="parameters"></a>매개 변수
 
 *lpszFilter*<br/>
-레코드를 찾는 데 사용 되는 **where**라는 단어가 없는 SQL 문의 **where** 절과 같은 문자열 식입니다.
+레코드를 찾는 데 사용 되는 **where** 라는 단어가 없는 SQL 문의 **where** 절과 같은 문자열 식입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -804,7 +805,7 @@ BOOL FindNext(LPCTSTR lpszFilter);
 ### <a name="parameters"></a>매개 변수
 
 *lpszFilter*<br/>
-레코드를 찾는 데 사용 되는 **where**라는 단어가 없는 SQL 문의 **where** 절과 같은 문자열 식입니다.
+레코드를 찾는 데 사용 되는 **where** 라는 단어가 없는 SQL 문의 **where** 절과 같은 문자열 식입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -846,7 +847,7 @@ BOOL FindPrev(LPCTSTR lpszFilter);
 ### <a name="parameters"></a>매개 변수
 
 *lpszFilter*<br/>
-레코드를 찾는 데 사용 되는 **where**라는 단어가 없는 SQL 문의 **where** 절과 같은 문자열 식입니다.
+레코드를 찾는 데 사용 되는 **where** 라는 단어가 없는 SQL 문의 **where** 절과 같은 문자열 식입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1077,7 +1078,7 @@ short GetEditMode();
 
 ### <a name="remarks"></a>설명
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |`dbEditNone`|편집 작업이 진행 되 고 있지 않습니다.|
 |`dbEditInProgress`|`Edit`가 호출된 경우|
@@ -1754,7 +1755,7 @@ SQL 문의 **WHERE** 절을 생성 하는 데 사용 되는 문자열을 포함 
 
 ## <a name="cdaorecordsetm_strsort"></a><a name="m_strsort"></a> CDaoRecordset:: m_strSort
 
-예약 된 단어 **orderby**를 사용 하지 않고 SQL 문의 **orderby** 절을 포함 하는 문자열을 포함 합니다.
+예약 된 단어 **orderby** 를 사용 하지 않고 SQL 문의 **orderby** 절을 포함 하는 문자열을 포함 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -2113,7 +2114,7 @@ BOOL Seek(
 
 유니코드 레코드 집합을 만들지 않는 경우 `COleVariant` 개체를 명시적으로 ANSI로 선언 해야 합니다. 이 작업을 수행 하려면 *vtSrc* 가 (ANSI)로 설정 된 생성자의 [COleVariant:: COleVariant](../../mfc/reference/colevariant-class.md#colevariant)**(** *lpszSrc* **,** *vtSrc* **)** `VT_BSTRT` 또는 `COleVariant` *lpszSrc* 가로 설정 된 [setstring](../../mfc/reference/colevariant-class.md#setstring)**(** *vtSrc* **,** *vtSrc* **)** 함수를 사용 합니다 `VT_BSTRT` .
 
-를 호출 하 `Seek` 는 경우 하나 이상의 키 값과 비교 연산자 ("<", " \<=", "=", "> =" 또는 ">")를 전달 합니다. `Seek` 지정 된 키 필드를 검색 하 고 *lpszComparison* 및 *pKey1*에 지정 된 조건을 충족 하는 첫 번째 레코드를 찾습니다. 이 항목이 발견 되 면 `Seek` 0이 아닌 값을 반환 하 고 해당 레코드를 current로 만듭니다. `Seek`에서 일치 하는 항목을 찾지 못하면는 `Seek` 0을 반환 하 고 현재 레코드는 정의 되지 않습니다. DAO를 직접 사용 하는 경우 NoMatch 속성을 명시적으로 확인 해야 합니다.
+를 호출 하 `Seek` 는 경우 하나 이상의 키 값과 비교 연산자 ("<", " \<=", "=", "> =" 또는 ">")를 전달 합니다. `Seek` 지정 된 키 필드를 검색 하 고 *lpszComparison* 및 *pKey1* 에 지정 된 조건을 충족 하는 첫 번째 레코드를 찾습니다. 이 항목이 발견 되 면 `Seek` 0이 아닌 값을 반환 하 고 해당 레코드를 current로 만듭니다. `Seek`에서 일치 하는 항목을 찾지 못하면는 `Seek` 0을 반환 하 고 현재 레코드는 정의 되지 않습니다. DAO를 직접 사용 하는 경우 NoMatch 속성을 명시적으로 확인 해야 합니다.
 
 `lpszComparison`가 "=", ">=" 또는 ">" 이면 `Seek` 인덱스의 시작 부분에서 시작 합니다. *LpszComparison* 이 "<" 또는 "<=" 이면는 `Seek` 인덱스 끝에서 시작 하 고 끝에 중복 된 인덱스 항목이 없으면 뒤로 검색 합니다. 이 경우는 `Seek` 인덱스 끝의 중복 인덱스 항목 중 임의의 항목에서 시작 합니다.
 
@@ -2284,7 +2285,7 @@ void SetFieldDirty(
 
 `outputColumn`필드만 NULL로 설정 됩니다. **param** 필드는 영향을 받지 않습니다.
 
-**매개 변수**를 사용 하려면 작업할 개별 **매개** 변수의 실제 주소를 제공 해야 합니다. 예를 들어 다음과 같습니다.
+**매개 변수** 를 사용 하려면 작업할 개별 **매개** 변수의 실제 주소를 제공 해야 합니다. 예를 들어 다음과 같습니다.
 
 [!code-cpp[NVC_MFCDatabase#7](../../mfc/codesnippet/cpp/cdaorecordset-class_7.cpp)]
 
@@ -2516,7 +2517,7 @@ virtual void Update();
 데이터 원본에서 트랜잭션을 지 원하는 경우 `Update` 트랜잭션에 대 한 호출 및 해당 또는 호출을 수행할 수 있습니다 `AddNew` `Edit` .
 
 > [!CAUTION]
-> `Update`또는 중 하나를 먼저 호출 하지 않고를 호출 하면 `AddNew` `Edit` 이 `Update` throw `CDaoException` 됩니다. `AddNew`또는를 호출 하 `Edit` 는 경우 MoveNext를 `Update` 호출 하기 전에 [MoveNext](#movenext) 를 호출 하거나 레코드 집합 또는 데이터 원본 연결을 닫아야 합니다. 그렇지 않으면 알림 없이 변경 내용이 손실 됩니다.
+> `Update`또는 중 하나를 먼저 호출 하지 않고를 호출 하면 `AddNew` `Edit` 이 `Update` throw `CDaoException` 됩니다. `AddNew`또는를 호출 하 `Edit` 는 경우 MoveNext를 `Update` 호출 하기 전에 [](#movenext) 를 호출 하거나 레코드 집합 또는 데이터 원본 연결을 닫아야 합니다. 그렇지 않으면 알림 없이 변경 내용이 손실 됩니다.
 
 다중 사용자 환경에서 레코드 집합 개체가 pessimistically 되 면 `Edit` 업데이트가 완료 될 때까지 해당 레코드는 해당 시점에서 잠긴 상태로 유지 됩니다. 레코드 집합이 낙관적으로 잠겨 있으면 레코드는 잠기고 데이터베이스에서 업데이트 되기 직전에 미리 편집 된 레코드와 비교 됩니다. 를 호출한 후에 레코드가 변경 된 경우 `Edit` `Update` 작업이 실패 하 고 MFC에서 예외가 throw 됩니다. 를 사용 하 여 잠금 모드를 변경할 수 있습니다 `SetLockingMode` .
 

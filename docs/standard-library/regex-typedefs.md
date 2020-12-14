@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: &lt; regex &gt; 형식 정의'
 title: '&lt;regex&gt; 형식 정의'
 ms.date: 11/04/2016
 f1_keywords:
@@ -21,12 +22,12 @@ f1_keywords:
 - regex/std::wsregex_token_iterator
 - regex/std::wssub_match
 ms.assetid: e6a69067-106c-4a24-9e08-7c867a3a2260
-ms.openlocfilehash: 49c2bb3f09b352413fd9f471a5ff887caa7e0238
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 7814bd32e167d66c63c5ebf67221f461bc438c1c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839753"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97243798"
 ---
 # <a name="ltregexgt-typedefs"></a>&lt;regex&gt; 형식 정의
 

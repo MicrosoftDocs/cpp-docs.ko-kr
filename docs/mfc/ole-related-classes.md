@@ -1,4 +1,5 @@
 ---
+description: OLE-Related 클래스에 대해 자세히 알아보세요.
 title: OLE 관련 클래스
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - OLE classes [MFC]
 - OLE [MFC], classes
 ms.assetid: 2135cf54-1d9d-4e0e-91b4-943b3440effa
-ms.openlocfilehash: 6f6db6ce133b440a5ed86e7c1642396888744540
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: c54ebbedabc2e44095d06b0e842f7c73d5dbb43e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84621027"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97244032"
 ---
 # <a name="ole-related-classes"></a>OLE 관련 클래스
 

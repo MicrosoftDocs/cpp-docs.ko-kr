@@ -1,20 +1,21 @@
 ---
+description: '자세한 정보: Platform:: Collections:: UnorderedMap 클래스'
 title: Platform::Collections::UnorderedMap 클래스
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
 - collection/Platform::Collections::UnorderedMap
 ms.assetid: dc84f261-b13c-4c0a-9b57-30dcb9e3065e
-ms.openlocfilehash: ec458f5d4a47b6eced939c4fe346d5d0414ea7c2
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 51acfa7e411f96addd8a33024224779c32ebcda0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839129"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97242537"
 ---
 # <a name="platformcollectionsunorderedmap-class"></a>Platform::Collections::UnorderedMap 클래스
 
-키-값 쌍의 컬렉션인 순서가 지정되지 않은 *맵*을 나타냅니다.
+키-값 쌍의 컬렉션인 순서가 지정되지 않은 *맵* 을 나타냅니다.
 
 ## <a name="syntax"></a>구문
 
@@ -29,10 +30,10 @@ ref class Map sealed;
 
 #### <a name="parameters"></a>매개 변수
 
-*시계의*<br/>
+*K*<br/>
 키/값 쌍의 키 형식입니다.
 
-*Hyper-v*<br/>
+*V*<br/>
 키/값 쌍의 값 형식입니다.
 
 *C*<br/>
@@ -97,7 +98,7 @@ ref class Map sealed;
 
 현재 UnorderedMap 개체에서 모든 키-값 쌍을 제거합니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 virtual void Clear();
@@ -152,7 +153,7 @@ bool HasKey(
 ### <a name="parameters"></a>매개 변수
 
 *key*<br/>
-UnorderedMap 요소를 찾는 데 사용되는 키입니다. *키* 의 형식은 형식 이름 *K*입니다.
+UnorderedMap 요소를 찾는 데 사용되는 키입니다. *키* 의 형식은 형식 이름 *K* 입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -174,14 +175,14 @@ virtual bool Insert(
 ### <a name="parameters"></a>매개 변수
 
 *key*<br/>
-키-값 쌍의 키 부분입니다. *키* 의 형식은 형식 이름 *K*입니다.
+키-값 쌍의 키 부분입니다. *키* 의 형식은 형식 이름 *K* 입니다.
 
 *value*<br/>
-키-값 쌍의 값 부분입니다. *값* 의 형식은 형식 이름 *V*입니다.
+키-값 쌍의 값 부분입니다. *값* 의 형식은 형식 이름 *V* 입니다.
 
 ### <a name="return-value"></a>반환 값
 
-**`true`** 현재 Map의 기존 요소 키가 *키* 와 일치 하 고 해당 요소의 값 부분이 *value*로 설정 되어 있으면입니다. **`false`** 현재 Map의 기존 요소가 *키* 와 일치 하지 않고 키 및 *값* 매개 *변수를 키* -값 쌍으로 만든 다음 현재 UnorderedMap에 추가 하면입니다.
+**`true`** 현재 Map의 기존 요소 키가 *키* 와 일치 하 고 해당 요소의 값 부분이 *value* 로 설정 되어 있으면입니다. **`false`** 현재 Map의 기존 요소가 *키* 와 일치 하지 않고 키 및 *값* 매개 *변수를 키* -값 쌍으로 만든 다음 현재 UnorderedMap에 추가 하면입니다.
 
 ## <a name="unorderedmaplookup-method"></a><a name="lookup"></a> UnorderedMap:: Lookup 메서드
 
@@ -198,17 +199,17 @@ V Lookup(
 ### <a name="parameters"></a>매개 변수
 
 *key*<br/>
-UnorderedMap에서 요소를 찾는 데 사용되는 키입니다. *키* 의 형식은 형식 이름 *K*입니다.
+UnorderedMap에서 요소를 찾는 데 사용되는 키입니다. *키* 의 형식은 형식 이름 *K* 입니다.
 
 ### <a name="return-value"></a>반환 값
 
-*키*와 쌍으로 연결 된 값입니다. 반환 값의 형식은 형식 이름 *V*입니다.
+*키* 와 쌍으로 연결 된 값입니다. 반환 값의 형식은 형식 이름 *V* 입니다.
 
 ## <a name="unorderedmapmapchanged"></a><a name="mapchanged"></a> UnorderedMap:: MapChanged
 
 맵에서 항목이 삽입되거나 제거될 때 발생합니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 event Windows::Foundation::Collections::MapChangedEventHandler<K,V>^ MapChanged;
@@ -236,7 +237,7 @@ virtual void Remove(
 ### <a name="parameters"></a>매개 변수
 
 *key*<br/>
-키-값 쌍의 키 부분입니다. *키* 의 형식은 형식 이름 *K*입니다.
+키-값 쌍의 키 부분입니다. *키* 의 형식은 형식 이름 *K* 입니다.
 
 ## <a name="unorderedmapsize-method"></a><a name="size"></a> UnorderedMap:: Size 메서드
 

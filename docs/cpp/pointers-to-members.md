@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 멤버에 대 한 포인터'
 title: pointers_to_members
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - members [C++], pointers to
 - pointers, declarations
 ms.assetid: f42ddb79-9721-4e39-95b1-c56b55591f68
-ms.openlocfilehash: fe92f848c5d5240f1afc657f5fb176513c8f9d88
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e9c40ac8903aa61a808468ca18fa379c84f2fb81
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213296"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97250116"
 ---
 # <a name="pointers-to-members"></a>pointers_to_members
 

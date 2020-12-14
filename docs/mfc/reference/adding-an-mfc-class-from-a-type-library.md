@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 형식 라이브러리에서 MFC 클래스 추가'
 title: 형식 라이브러리에서 MFC 클래스 추가
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - MFC, adding classes from type libraries
 - type libraries, adding MFC classes from
 ms.assetid: aba40476-3cfb-47af-990e-ae2e9e0d79cf
-ms.openlocfilehash: 45bad00155cc1587980e6f3b25843a7a22e7e754
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: b5a9979e2581eb3a560736c57c4b1eac4a7e1e81
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91503043"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97248374"
 ---
 # <a name="adding-an-mfc-class-from-a-type-library"></a>형식 라이브러리에서 MFC 클래스 추가
 
@@ -26,9 +27,9 @@ ms.locfileid: "91503043"
 
 1. **솔루션 탐색기** 또는 [클래스 뷰](/visualstudio/ide/viewing-the-structure-of-code)에서 클래스를 추가 하려는 프로젝트의 이름을 마우스 오른쪽 단추로 클릭 합니다.
 
-1. 바로 가기 메뉴에서 **추가**를 클릭한 다음, **클래스 추가**를 클릭합니다.
+1. 바로 가기 메뉴에서 **추가** 를 클릭한 다음, **클래스 추가** 를 클릭합니다.
 
-1. [클래스 추가](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) 대화 상자의 템플릿 창에서 **Typelib의 MFC 클래스**를 클릭 한 다음 **열기** 를 클릭 하 여 [typelib에서 클래스 추가 마법사](../../mfc/reference/add-class-from-typelib-wizard.md)를 표시 합니다.
+1. [클래스 추가](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) 대화 상자의 템플릿 창에서 **Typelib의 MFC 클래스** 를 클릭 한 다음 **열기** 를 클릭 하 여 [typelib에서 클래스 추가 마법사](../../mfc/reference/add-class-from-typelib-wizard.md)를 표시 합니다.
 
 마법사에서 형식 라이브러리에 둘 이상의 클래스를 추가할 수 있습니다. 마찬가지로, 단일 마법사 세션에서 두 개 이상의 형식 라이브러리에 있는 클래스를 추가할 수 있습니다.
 

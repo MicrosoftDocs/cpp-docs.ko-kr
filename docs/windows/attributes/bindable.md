@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: 바인딩 가능'
 title: 바인딩 가능 (c + + COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - bindable attribute
 ms.assetid: a2360f92-927b-4af8-98cc-6eca7f4ec954
-ms.openlocfilehash: 27f44259401a42dcef7e2add370d95091d10879d
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 2427becd3353488cc1b62347c04d7ed62e523352
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838973"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97247490"
 ---
 # <a name="bindable"></a>bindable
 
@@ -27,9 +28,9 @@ ms.locfileid: "88838973"
 
 **바인딩** 가능한 c + + 특성에는 [바인딩](/windows/win32/Midl/bindable) 가능한 MIDL 특성과 동일한 기능이 있습니다. [Propget](propget.md), [propput](propput.md)또는 [propputref](propputref.md) 특성으로 정의 된 속성에 사용할 수도 있고, 바인딩 가능한 메서드를 수동으로 정의할 수도 있습니다.
 
-다음 MFC 샘플에서는 **바인딩**가능를 사용 하는 방법을 보여 줍니다.
+다음 MFC 샘플에서는 **바인딩** 가능를 사용 하는 방법을 보여 줍니다.
 
-- [컨트롤 샘플: MFC 기반 ActiveX 컨트롤](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls)
+- [컨트롤 샘플: ActiveX 컨트롤 MFC-Based](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls)
 
 - [CIRC 샘플: ActiveX 컨트롤](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls)
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3834'
 title: 컴파일러 오류 C3834
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3834
 ms.assetid: 059e0dc4-300b-4e74-b6c2-41a57831fe2a
-ms.openlocfilehash: 1dac75ca5bea868823eba8e344fb4ec043fae1ad
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 4cf0bc5e3587e77d8ad31fc4e2fd2cf0130aa781
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74741536"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97249180"
 ---
 # <a name="compiler-error-c3834"></a>컴파일러 오류 C3834
 

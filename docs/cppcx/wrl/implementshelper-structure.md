@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: ImplementsHelper Structure'
 title: ImplementsHelper 구조체
 ms.date: 10/03/2018
 ms.topic: reference
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::ImplementsHelper::FillArrayWithIid method
 - Microsoft::WRL::Details::ImplementsHelper::IidCount constant
 ms.assetid: b857ba80-81bd-4e53-92b6-210991954243
-ms.openlocfilehash: d7908670b67df7dbf7b2b74e98f8b59cf30f8e96
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 142cc532a89758c35c3387c398311acd077b8385
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87184945"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97249817"
 ---
 # <a name="implementshelper-structure"></a>ImplementsHelper 구조체
 
@@ -42,7 +43,7 @@ friend struct Details::ImplementsHelper;
 인터페이스 Id의 목록입니다.
 
 *IsDelegateToClass*<br/>
-**`true`** 의 현재 인스턴스가 `Implements` *ilst*의 첫 번째 인터페이스 ID의 기본 클래스 이면를 지정 하 고 그렇지 않으면를 지정 **`false`** 합니다.
+**`true`** 의 현재 인스턴스가 `Implements` *ilst* 의 첫 번째 인터페이스 ID의 기본 클래스 이면를 지정 하 고 그렇지 않으면를 지정 **`false`** 합니다.
 
 ## <a name="remarks"></a>설명
 
@@ -71,7 +72,7 @@ Name                                                    | 설명
 
 **네임 스페이스:** Microsoft:: WRL::D etails
 
-## <a name="implementshelpercancastto"></a><a name="cancastto"></a>ImplementsHelper:: CanCastTo
+## <a name="implementshelpercancastto"></a><a name="cancastto"></a> ImplementsHelper:: CanCastTo
 
 WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
 
@@ -93,12 +94,12 @@ HRESULT CanCastTo(
 인터페이스 ID에 대 한 참조입니다.
 
 *ppv*<br/>
-이 작업이 성공적으로 수행 되 면 *riid* 또는 *iid*에 의해 지정 된 인터페이스에 대 한 포인터입니다.
+이 작업이 성공적으로 수행 되 면 *riid* 또는 *iid* 에 의해 지정 된 인터페이스에 대 한 포인터입니다.
 
 *iid*<br/>
 인터페이스 ID에 대 한 참조입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 S_OK이고, 그렇지 않으면 오류를 나타내는 HRESULT입니다.
 
@@ -106,7 +107,7 @@ HRESULT CanCastTo(
 
 지정 된 인터페이스 ID에 대 한 포인터를 가져옵니다.
 
-## <a name="implementshelpercasttounknown"></a><a name="casttounknown"></a>ImplementsHelper:: CastToUnknown
+## <a name="implementshelpercasttounknown"></a><a name="casttounknown"></a> ImplementsHelper:: CastToUnknown
 
 WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
 
@@ -114,7 +115,7 @@ WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습
 IUnknown* CastToUnknown();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 기본 인터페이스에 대 한 포인터 `IUnknown` 입니다.
 
@@ -122,7 +123,7 @@ IUnknown* CastToUnknown();
 
 `IUnknown`현재 구조체의 기본 인터페이스에 대 한 포인터를 가져옵니다 `Implements` .
 
-## <a name="implementshelperfillarraywithiid"></a><a name="fillarraywithiid"></a>ImplementsHelper:: FillArrayWithIid
+## <a name="implementshelperfillarraywithiid"></a><a name="fillarraywithiid"></a> ImplementsHelper:: FillArrayWithIid
 
 WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
 
@@ -144,7 +145,7 @@ Iid 형식의 배열입니다.
 
 현재 0 번째 template 매개 변수에 지정 된 인터페이스 ID를 지정 된 배열 요소에 삽입 합니다.
 
-## <a name="implementshelperiidcount"></a><a name="iidcount"></a>ImplementsHelper:: IidCount
+## <a name="implementshelperiidcount"></a><a name="iidcount"></a> ImplementsHelper:: IidCount
 
 WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
 

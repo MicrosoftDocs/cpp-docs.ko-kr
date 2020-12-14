@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: final 지정자'
 title: final 지정자
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - final Identifier
 ms.assetid: 649866d0-79d4-449f-ab74-f84b911b79a3
-ms.openlocfilehash: 93e8d9b0b445d1120ec15911eb763ae1d7d2d359
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 5fd6ee3c23a455c4316593cc089c26c34477709d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80188661"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97242615"
 ---
 # <a name="final-specifier"></a>final 지정자
 
@@ -24,11 +25,11 @@ function-declaration final;
 class class-name final base-classes
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 **final** 은 컨텍스트를 구분 하며 함수 선언 또는 클래스 이름 다음에 사용 되는 경우에만 특별 한 의미가 있습니다. 그렇지 않으면 예약 된 키워드가 아닙니다.
 
-**Final** 이 클래스 선언에 사용 되는 경우 `base-classes`은 선언의 선택적 부분입니다.
+**Final** 이 클래스 선언에 사용 되는 경우 `base-classes` 는 선언의 선택적 부분입니다.
 
 ## <a name="example"></a>예제
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 리소스 편집기 (c + +)'
 title: 리소스 편집기 (c + +)
 ms.date: 02/14/2019
 f1_keywords:
@@ -21,12 +22,12 @@ helpviewer_keywords:
 - properties [C++], resources
 - resources [C++], properties
 ms.assetid: e20a29ec-d6fb-4ead-98f3-431a0e23aaaf
-ms.openlocfilehash: f854f3cc6e61e3022e784befc738bf28c1adeb6c
-ms.sourcegitcommit: 30792632548d1c71894f9fecbe2f554294b86020
+ms.openlocfilehash: b867f34c5195864a22212ec079bf0de8ace20407
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91765248"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97247243"
 ---
 # <a name="resource-editors-c"></a>리소스 편집기 (c + +)
 
@@ -35,18 +36,18 @@ ms.locfileid: "91765248"
 리소스를 만들거나 열면 적절한 편집기가 자동으로 열립니다.
 
 > [!NOTE]
-> 관리 되는 프로젝트는 리소스 스크립트 파일을 사용 하지 않으므로 **솔루션 탐색기**에서 리소스를 열어야 합니다. 관리 되는 프로젝트에서 리소스 파일로 작업 하려면 [이미지 편집기](../windows/image-editor-for-icons.md) 및 [바이너리 편집기](binary-editor.md) 를 사용할 수 있습니다. 편집할 관리되는 리소스는 연결된 리소스여야 합니다. Visual Studio 리소스 편집기에서는 포함된 리소스를 편집할 수 없습니다.
+> 관리 되는 프로젝트는 리소스 스크립트 파일을 사용 하지 않으므로 **솔루션 탐색기** 에서 리소스를 열어야 합니다. 관리 되는 프로젝트에서 리소스 파일로 작업 하려면 [이미지 편집기](../windows/image-editor-for-icons.md) 및 [바이너리 편집기](binary-editor.md) 를 사용할 수 있습니다. 편집할 관리되는 리소스는 연결된 리소스여야 합니다. Visual Studio 리소스 편집기에서는 포함된 리소스를 편집할 수 없습니다.
 
 |사용...|편집...|
 |----------------|----------------|
 |[액셀러레이터 키 편집기](../windows/accelerator-editor.md)|Visual Studio c + + 프로젝트의 액셀러레이터 키 테이블입니다.|
 |[바이너리 편집기](binary-editor.md)|Visual C++, Visual Basic 또는 Visual C# 프로젝트의 이진 데이터 정보 및 사용자 지정 리소스입니다.|
 |[대화 상자 편집기](../windows/dialog-editor.md)|Visual Studio c + + 프로젝트의 대화 상자|
-|[이미지 편집기](../windows/image-editor-for-icons.md)|Visual C++, Visual Basic 또는 Visual C# 프로젝트의 비트맵, 아이콘, 커서 및 기타 이미지 파일입니다.|
+|[Image Editor](../windows/image-editor-for-icons.md)|Visual C++, Visual Basic 또는 Visual C# 프로젝트의 비트맵, 아이콘, 커서 및 기타 이미지 파일입니다.|
 |[메뉴 편집기](../windows/menu-editor.md)|Visual Studio c + + 프로젝트의 메뉴 리소스입니다.|
 |[리본 편집기](../mfc/ribbon-designer-mfc.md)|MFC 프로젝트의 리본 리소스입니다.|
 |[문자열 편집기](../windows/string-editor.md)|Visual Studio c + + 프로젝트의 문자열 테이블|
-|[도구 모음 편집기](../windows/toolbar-editor.md)|Visual Studio c + + 프로젝트의 도구 모음 리소스입니다. **도구 모음 편집기** 는 **이미지 편집기**의 일부입니다.|
+|[도구 모음 편집기](../windows/toolbar-editor.md)|Visual Studio c + + 프로젝트의 도구 모음 리소스입니다. **도구 모음 편집기** 는 **이미지 편집기** 의 일부입니다.|
 |[버전 정보 편집기](../windows/version-information-editor.md)|Visual Studio c + + 프로젝트의 버전 정보입니다.|
 
 > [!NOTE]
@@ -63,7 +64,7 @@ ms.locfileid: "91765248"
 > [!NOTE]
 > **속성** 창을 사용 하 여 리소스의 속성을 수정할 수 있습니다.
 
-- 리소스의 속성을 편집 하려면 [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources)에서 편집 하려는 리소스를 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 합니다.  그런 다음 [속성 창](/visualstudio/ide/reference/properties-window)에서 리소스의 속성을 변경 합니다.
+- 리소스의 속성을 편집 하려면 [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources)에서 편집 하려는 리소스를 마우스 오른쪽 단추로 클릭 하 고 **속성** 을 선택 합니다.  그런 다음 [속성 창](/visualstudio/ide/reference/properties-window)에서 리소스의 속성을 변경 합니다.
 
 - 리소스 속성에 대 한 변경 내용을 취소 하려면 리소스가 **리소스 뷰** 에 포커스를 갖고 있는지 확인 하 고 **편집** 메뉴에서 **실행 취소** 를 선택 합니다.
 
@@ -73,32 +74,32 @@ ms.locfileid: "91765248"
 
 #### <a name="to-view-a-win32-resource-in-a-resource-editor"></a>리소스 편집기에서 Win32 리소스를 보려면
 
-1. 메뉴 **보기**  >  **다른 창**  >  **리소스 뷰**로 이동 합니다.
+1. 메뉴 **보기**  >  **다른 창**  >  **리소스 뷰** 로 이동 합니다.
 
 1. **리소스 뷰** 창이 맨 위 창이 아닌 경우 **리소스 뷰** 탭을 선택 하 여 맨 위로 이동 합니다.
 
-1. **리소스 뷰**에서 보려는 리소스를 포함 하는 프로젝트의 폴더를 확장 합니다. 예를 들어 대화 상자 리소스를 보려면 **대화 상자** 폴더를 확장 합니다.
+1. **리소스 뷰** 에서 보려는 리소스를 포함 하는 프로젝트의 폴더를 확장 합니다. 예를 들어 대화 상자 리소스를 보려면 **대화 상자** 폴더를 확장 합니다.
 
 1. 리소스를 두 번 클릭 합니다 (예: **IDD_ABOUTBOX**).
 
-   리소스가 해당 편집기에서 열립니다. 예를 들어, 대화 상자 리소스의 경우 리소스가 **대화 상자 편집기**내부에서 열립니다.
+   리소스가 해당 편집기에서 열립니다. 예를 들어, 대화 상자 리소스의 경우 리소스가 **대화 상자 편집기** 내부에서 열립니다.
 
 #### <a name="to-delete-an-existing-win32-resource"></a>기존 Win32 리소스를 삭제 하려면
 
-1. **리소스 뷰**에서 리소스 종류에 대 한 노드를 확장 합니다.
+1. **리소스 뷰** 에서 리소스 종류에 대 한 노드를 확장 합니다.
 
-1. 삭제 하려는 리소스를 마우스 오른쪽 단추로 클릭 하 고 **삭제**를 선택 합니다.
+1. 삭제 하려는 리소스를 마우스 오른쪽 단추로 클릭 하 고 **삭제** 를 선택 합니다.
 
 > [!TIP]
 > .Rc 파일이 프로젝트 외부의 문서 창에 열려 있는 경우에도이 메서드를 사용할 수 있습니다.
 
 ### <a name="managed-project-resources"></a>관리 되는 프로젝트 리소스
 
-관리 되는 프로젝트는 리소스 스크립트 파일을 사용 하지 않으므로 **솔루션 탐색기**에서 리소스를 열어야 합니다. 관리 되는 프로젝트에서 리소스 파일로 작업 하려면 [이미지 편집기](../windows/image-editor-for-icons.md) 및 [바이너리 편집기](binary-editor.md) 를 사용 합니다. 편집 하려는 관리 되는 리소스는 연결 된 리소스 여야 하며 Visual Studio 리소스 편집기는 포함 된 리소스 편집을 지원 하지 않습니다.
+관리 되는 프로젝트는 리소스 스크립트 파일을 사용 하지 않으므로 **솔루션 탐색기** 에서 리소스를 열어야 합니다. 관리 되는 프로젝트에서 리소스 파일로 작업 하려면 [이미지 편집기](../windows/image-editor-for-icons.md) 및 [바이너리 편집기](binary-editor.md) 를 사용 합니다. 편집 하려는 관리 되는 리소스는 연결 된 리소스 여야 하며 Visual Studio 리소스 편집기는 포함 된 리소스 편집을 지원 하지 않습니다.
 
-- 리소스 편집기에서 관리 되는 리소스를 보려면 **솔루션 탐색기**에서 *Bitmap1.bmp*와 같은 리소스를 두 번 클릭 하면 해당 편집기에서 리소스가 열립니다.
+- 리소스 편집기에서 관리 되는 리소스를 보려면 **솔루션 탐색기** 에서 *Bitmap1.bmp* 와 같은 리소스를 두 번 클릭 하면 해당 편집기에서 리소스가 열립니다.
 
-- 기존 관리 되는 리소스를 삭제 하려면 **솔루션 탐색기**에서 삭제 하려는 리소스를 마우스 오른쪽 단추로 클릭 하 고 **삭제**를 선택 합니다.
+- 기존 관리 되는 리소스를 삭제 하려면 **솔루션 탐색기** 에서 삭제 하려는 리소스를 마우스 오른쪽 단추로 클릭 하 고 **삭제** 를 선택 합니다.
 
 ## <a name="preview-resources"></a>리소스 미리 보기
 
@@ -118,7 +119,7 @@ ms.locfileid: "91765248"
 1. [속성 창](/visualstudio/ide/reference/properties-window)에서 **속성 페이지** 단추를 선택 합니다.
 
    > [!TIP]
-   > 바로 가기를 사용 하 여 메뉴 **보기**  >  **속성 페이지**로 이동 합니다.
+   > 바로 가기를 사용 하 여 메뉴 **보기**  >  **속성 페이지** 로 이동 합니다.
 
    리소스의 **속성** 페이지가 열리고 해당 리소스의 미리 보기가 표시 됩니다. **위쪽** 및 **아래쪽** 화살표 키를 사용 하 여 **리소스 뷰** 또는 문서 창에서 트리 컨트롤을 탐색할 수 있습니다. **속성** 페이지는 열린 상태로 유지 되 고 포커스가 있고 미리 볼 수 있는 모든 리소스를 표시 합니다.
 
@@ -126,7 +127,7 @@ ms.locfileid: "91765248"
 
 없음
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [리소스 파일 작업](../windows/working-with-resource-files.md)<br/>
 [리소스 파일](../windows/resource-files-visual-studio.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2940'
 title: 컴파일러 오류 C2940
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2940
 ms.assetid: af6bf2bf-8de6-4cfd-bbf0-4c6b32a30edf
-ms.openlocfilehash: b951b7f50c5735f59692582486c9bf57b2f67cd4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2601e32d2e52d332e4f6443dde23b544d955aac1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233394"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97249687"
 ---
 # <a name="compiler-error-c2940"></a>컴파일러 오류 C2940
 

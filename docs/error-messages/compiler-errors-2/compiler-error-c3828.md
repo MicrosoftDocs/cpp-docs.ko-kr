@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3828'
 title: 컴파일러 오류 C3828
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3828
 ms.assetid: 8d9cee75-9504-4bc8-88b6-2413618a3f45
-ms.openlocfilehash: 4b47ddbf0775cab2bd7214f68d1b4ed6e06e6eea
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 90c731ffc636355b5c9a1963facbcccabf356700
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74741705"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97249323"
 ---
 # <a name="compiler-error-c3828"></a>컴파일러 오류 C3828
 

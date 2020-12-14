@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 심각한 오류 C1023'
 title: 심각한 오류 C1023
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1023
 ms.assetid: 727b4070-7474-420b-ab11-6530f96c794f
-ms.openlocfilehash: 8c0b4a38ded93e99fa60e0979e079ab4c02db11d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 70377c84c649970bf2baba09f9e0ff07c837d168
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80204718"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97249726"
 ---
 # <a name="fatal-error-c1023"></a>심각한 오류 C1023
 

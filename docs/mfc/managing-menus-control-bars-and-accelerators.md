@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 메뉴, 컨트롤 막대 및 액셀러레이터 관리'
 title: 메뉴, 컨트롤 막대 및 액셀러레이터 관리
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - frame windows [MFC], updating
 - status bars [MFC], updating
 ms.assetid: 97ca1997-06df-4373-b023-4f7ecd81047b
-ms.openlocfilehash: 9945dc68ffd46bbf5e114a79467299e4b67e3659
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 21c3791bff00c33db50efbe391863169606fde80
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84621323"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97244175"
 ---
 # <a name="managing-menus-control-bars-and-accelerators"></a>메뉴, 컨트롤 막대 및 액셀러레이터 관리
 
@@ -25,7 +26,7 @@ ms.locfileid: "84621323"
 
 ## <a name="managing-menus"></a>메뉴 관리
 
-프레임 창은 [사용자 인터페이스 개체를 업데이트 하는 방법](how-to-update-user-interface-objects.md)에서 설명 하는 ON_UPDATE_COMMAND_UI 메커니즘을 사용 하 여 사용자 인터페이스 항목 업데이트에 참여 합니다. 도구 모음 및 기타 컨트롤 막대의 단추는 유휴 루프 중에 업데이트 됩니다. 메뉴 모음의 드롭다운 메뉴에 있는 메뉴 항목은 메뉴가 축소 되기 직전에 업데이트 됩니다.
+프레임 창은 [User-Interface 개체를 업데이트 하는 방법](how-to-update-user-interface-objects.md)에 설명 된 ON_UPDATE_COMMAND_UI 메커니즘을 사용 하 여 사용자 인터페이스 항목 업데이트에 참여 합니다. 도구 모음 및 기타 컨트롤 막대의 단추는 유휴 루프 중에 업데이트 됩니다. 메뉴 모음의 드롭다운 메뉴에 있는 메뉴 항목은 메뉴가 축소 되기 직전에 업데이트 됩니다.
 
 MDI 응용 프로그램의 경우 MDI 프레임 창은 메뉴 모음과 캡션을 관리 합니다. MDI 프레임 창은 활성 MDI 자식 창이 없는 경우 메뉴 모음으로 사용 되는 기본 메뉴를 하나 소유 합니다. 활성 자식이 있으면 MDI 프레임 창의 메뉴 모음이 활성 MDI 자식 창에 대 한 메뉴에 표시 됩니다. MDI 응용 프로그램에서 차트 및 워크시트 문서와 같은 여러 문서 유형을 지 원하는 경우 각 유형은 메뉴 모음에 자체 메뉴를 배치 하 고 주 프레임 창의 캡션을 변경 합니다.
 

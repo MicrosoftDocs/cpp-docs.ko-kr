@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: FtmBase 클래스'
 title: FtmBase 클래스
 ms.date: 10/03/2018
 ms.topic: reference
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - Microsoft::WRL::FtmBase::ReleaseMarshalData method
 - Microsoft::WRL::FtmBase::UnmarshalInterface method
 ms.assetid: 275f3b71-2975-4f92-89e7-d351e96496df
-ms.openlocfilehash: b28b7ee0038e4f828f43fcc3f0d49a2d9e092315
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: dc7ae3768233dd51d34b48da8c12a2d4b6bed773
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844043"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97250090"
 ---
 # <a name="ftmbase-class"></a>FtmBase 클래스
 
@@ -318,7 +319,7 @@ STDMETHODIMP UnmarshalInterface(
 역마샬링 할 인터페이스의 식별자에 대 한 참조입니다.
 
 *ppv*<br/>
-이 작업이 완료 되 면 *riid*에서 요청 된 인터페이스 포인터를 받는 포인터 변수의 주소입니다. 이 작업이 성공적으로 수행 되 면 **ppv* 는 역마샬링 될 인터페이스의 요청 된 인터페이스 포인터를 포함 합니다.
+이 작업이 완료 되 면 *riid* 에서 요청 된 인터페이스 포인터를 받는 포인터 변수의 주소입니다. 이 작업이 성공적으로 수행 되 면 **ppv* 는 역마샬링 될 인터페이스의 요청 된 인터페이스 포인터를 포함 합니다.
 
 ### <a name="return-value"></a>반환 값
 

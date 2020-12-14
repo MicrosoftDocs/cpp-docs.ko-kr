@@ -1,16 +1,17 @@
 ---
+description: OLE DB 클래스에 대해 자세히 알아보세요.
 title: OLE DB 클래스
 ms.date: 11/04/2016
 helpviewer_keywords:
 - OLE DB consumers, support
 - COleDBRecordView class [MFC]
 ms.assetid: 65245d26-8743-4efd-9a72-90e19aef3c3a
-ms.openlocfilehash: c2b8b60508f6f477d09ca658fd0c154456271dd6
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: c3b985b8e2cd718c997dd5ebd36c2b502ed0b890
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84617751"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97244123"
 ---
 # <a name="ole-db-classes"></a>OLE DB 클래스
 
