@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l'
 title: strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l
 ms.date: 6/24/2020
 api_name:
@@ -53,12 +54,12 @@ helpviewer_keywords:
 - _tcstok_l function
 - strtok_l function
 ms.assetid: 904cb734-f0d7-4d77-ba81-4791ddf461ae
-ms.openlocfilehash: bf59d34c17165f9f5165a5a4bdb82ad5a82c737e
-ms.sourcegitcommit: 8fd49f8ac20457710ceb5403ca46fc73cb3f95f8
+ms.openlocfilehash: 8172a049c95f2ef7b436c23b94099c61cde96cde
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85737519"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288687"
 ---
 # <a name="strtok-_strtok_l-wcstok-_wcstok_l-_mbstok-_mbstok_l"></a>strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l
 
@@ -116,22 +117,22 @@ unsigned char *_mbstok_l(
 사용할 로캘입니다.
 
 *context*<br/>
-는 파서의 내부 상태를 저장 하는 데 사용 되는 메모리를 가리키며 다음에 **wcstok**를 호출할 때 중단 된 위치에서 파서를 계속할 수 있습니다.
+는 파서의 내부 상태를 저장 하는 데 사용 되는 메모리를 가리키며 다음에 **wcstok** 를 호출할 때 중단 된 위치에서 파서를 계속할 수 있습니다.
 
 ## <a name="return-value"></a>반환 값
 
-*Strtoken*에서 찾은 다음 토큰에 대 한 포인터를 반환 합니다. 토큰을 더 이상 찾을 수 없는 경우이 함수는 **NULL** 을 반환 합니다. 각 호출은 반환 된 토큰 후에 발생 하는 첫 번째 구분 기호로 null 문자를 대체 하 여 *Strtoken* 을 수정 합니다.
+*Strtoken* 에서 찾은 다음 토큰에 대 한 포인터를 반환 합니다. 토큰을 더 이상 찾을 수 없는 경우이 함수는 **NULL** 을 반환 합니다. 각 호출은 반환 된 토큰 후에 발생 하는 첫 번째 구분 기호로 null 문자를 대체 하 여 *Strtoken* 을 수정 합니다.
 
 ## <a name="remarks"></a>설명
 
-**Strtok** 함수는 *strtoken*에서 다음 토큰을 찾습니다. *Strdelimit* 의 문자 집합은 현재 호출에 대 한 *strdelimit* 에서 찾을 수 있는 토큰의 가능한 구분 기호를 지정 합니다. **wcstok** 및 **_mbstok** 는 **strtok**의 와이드 문자 및 멀티 바이트 문자 버전입니다. **Wcstok** 의 인수와 반환 값은 와이드 문자 문자열입니다. **_mbstok** 의 이러한 문자열은 멀티 바이트 문자열입니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
+**Strtok** 함수는 *strtoken* 에서 다음 토큰을 찾습니다. *Strdelimit* 의 문자 집합은 현재 호출에 대 한 *strdelimit* 에서 찾을 수 있는 토큰의 가능한 구분 기호를 지정 합니다. **wcstok** 및 **_mbstok** 는 **strtok** 의 와이드 문자 및 멀티 바이트 문자 버전입니다. **Wcstok** 의 인수와 반환 값은 와이드 문자 문자열입니다. **_mbstok** 의 이러한 문자열은 멀티 바이트 문자열입니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
 
 **Wcstok** 의 두 인수 버전은 표준이 아닙니다. 해당 버전을 사용 해야 하는 경우 `_CRT_NON_CONFORMING_WCSTOK` 먼저 (또는)를 정의 해야 `#include <wchar.h>` `#include <string.h>` 합니다.
 
 > [!IMPORTANT]
 > 이러한 함수는 버퍼 오버런 문제로 인해 발생하는 잠재적인 위협을 일으킵니다. 버퍼 오버런 문제는 자주 사용되는 시스템 공격 방법으로, 불필요한 권한 상승을 초래합니다. 자세한 내용은 [버퍼 오버런 방지](/windows/win32/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
-**Strtok**에 대 한 첫 번째 호출에서 함수는 선행 구분 기호를 건너뛰고 *strtoken*의 첫 번째 토큰에 대 한 포인터를 반환 하 여 null 문자로 토큰을 종료 합니다. **Strtok**에 대 한 일련의 호출을 통해 *strtoken* 의 나머지 부분에서 더 많은 토큰을 분할할 수 있습니다. **Strtok** 에 대 한 각 호출에서는 해당 호출에서 반환 된 **토큰** 뒤에 null 문자를 삽입 하 여 *strtoken* 을 수정 합니다. *Strtoken*에서 다음 토큰을 읽으려면 *strtoken* 인수에 대해 **NULL** 값을 사용 하 여 **strtok** 를 호출 합니다. **NULL** *strtoken* 인수를 설정 하면 **Strtok** 는 수정 된 *strtoken*에서 다음 토큰을 검색 합니다. *Strdelimit* 인수는 구분 기호 집합이 다를 수 있도록 다음에 대 한 호출에서 임의의 값을 사용할 수 있습니다.
+**Strtok** 에 대 한 첫 번째 호출에서 함수는 선행 구분 기호를 건너뛰고 *strtoken* 의 첫 번째 토큰에 대 한 포인터를 반환 하 여 null 문자로 토큰을 종료 합니다. **Strtok** 에 대 한 일련의 호출을 통해 *strtoken* 의 나머지 부분에서 더 많은 토큰을 분할할 수 있습니다. **Strtok** 에 대 한 각 호출에서는 해당 호출에서 반환 된 **토큰** 뒤에 null 문자를 삽입 하 여 *strtoken* 을 수정 합니다. *Strtoken* 에서 다음 토큰을 읽으려면 *strtoken* 인수에 대해 **NULL** 값을 사용 하 여 **strtok** 를 호출 합니다. **NULL** *strtoken* 인수를 설정 하면 **Strtok** 는 수정 된 *strtoken* 에서 다음 토큰을 검색 합니다. *Strdelimit* 인수는 구분 기호 집합이 다를 수 있도록 다음에 대 한 호출에서 임의의 값을 사용할 수 있습니다.
 
 출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따라 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요.
 
@@ -209,7 +210,7 @@ tokens
 ## <a name="see-also"></a>참고 항목
 
 [문자열 조작](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[로캘을](../../c-runtime-library/locale.md)<br/>
-[멀티 바이트 문자 시퀀스 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[로캘](../../c-runtime-library/locale.md)<br/>
+[Multibyte-Character 시퀀스의 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strcspn, wcscspn, _mbscspn, _mbscspn_l](strcspn-wcscspn-mbscspn-mbscspn-l.md)<br/>
 [strspn, wcsspn, _mbsspn, _mbsspn_l](strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: strtold, _strtold_l, wcstold, _wcstold_l'
 title: strtold, _strtold_l, wcstold, _wcstold_l
 ms.date: 4/2/2020
 api_name:
@@ -35,12 +36,12 @@ f1_keywords:
 - _strtold_l
 - wcstold
 ms.assetid: 928c0c9a-bc49-445b-8822-100eb5954115
-ms.openlocfilehash: 14d67153eda851edc543e6eb2ad441ef35132ee5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c20550e93d45838c39e799a2ebf2f2cd368d059c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213491"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288661"
 ---
 # <a name="strtold-_strtold_l-wcstold-_wcstold_l"></a>strtold, _strtold_l, wcstold, _wcstold_l
 
@@ -80,17 +81,17 @@ long double wcstold_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-**strtold** 는 표현이 오버플로를 발생 시키는 경우를 제외 하 고 부동 소수점 숫자의 값을로 반환 합니다 **`long double`** .이 경우 함수는 +/-**HUGE_VALL**을 반환 합니다. **HUGE_VALL** 부호는 표현할 수 없는 값의 부호와 일치 합니다. 변환을 수행할 수 없거나 언더플로가 발생 하는 경우 **strtold** 에서 0을 반환 합니다.
+**strtold** 는 표현이 오버플로를 발생 시키는 경우를 제외 하 고 부동 소수점 숫자의 값을로 반환 합니다 **`long double`** .이 경우 함수는 +/-**HUGE_VALL** 을 반환 합니다. **HUGE_VALL** 부호는 표현할 수 없는 값의 부호와 일치 합니다. 변환을 수행할 수 없거나 언더플로가 발생 하는 경우 **strtold** 에서 0을 반환 합니다.
 
-**wcstold** 은 **strtold**와 유사 값을 반환 합니다. 두 함수 모두 오버플로 또는 언더플로가 발생 하면 **errno** 가 **ERANGE** 로 설정 되 고 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다.
+**wcstold** 은 **strtold** 와 유사 값을 반환 합니다. 두 함수 모두 오버플로 또는 언더플로가 발생 하면 **errno** 가 **ERANGE** 로 설정 되 고 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다.
 
 반환 코드에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-각 함수는 입력 문자열 *Strsource* 를로 변환 **`long double`** 합니다. **Strtold** 함수는 숫자의 일부분으로 인식할 수 없는 첫 번째 문자에서 문자열 *strtold* 읽기를 중지 합니다. 이 문자는 종료 null 문자일 수 있습니다. **Strtold** 의 와이드 문자 버전은 **wcstold**입니다. *Strsource* 인수는 와이드 문자 문자열입니다. 그 외의 경우에는 이들 함수가 동일하게 동작합니다.
+각 함수는 입력 문자열 *Strsource* 를로 변환 **`long double`** 합니다. **Strtold** 함수는 숫자의 일부분으로 인식할 수 없는 첫 번째 문자에서 문자열 *strtold* 읽기를 중지 합니다. 이 문자는 종료 null 문자일 수 있습니다. **Strtold** 의 와이드 문자 버전은 **wcstold** 입니다. *Strsource* 인수는 와이드 문자 문자열입니다. 그 외의 경우에는 이들 함수가 동일하게 동작합니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -101,9 +102,9 @@ long double wcstold_l(
 |**_tcstold**|**strtold**|**strtold**|**wcstold**|
 |**_tcstold_l**|**_strtold_l**|**_strtold_l**|**_wcstold_l**|
 
-현재 로캘의 **LC_NUMERIC** 범주 설정은 *strsource*의 기 하 문자 인식 여부를 결정 합니다. 자세한 내용은 [setlocale, _wsetlocale](setlocale-wsetlocale.md)을 참조하세요. **_L** 접미사가 없는 함수는 현재 로캘을 사용 합니다. **_strtold_l** 및 **_wcstold_l** 은 전달 된 로캘을 대신 사용 한다는 점을 제외 하 고 **_strtold** 및 **_wcstold** 와 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+현재 로캘의 **LC_NUMERIC** 범주 설정은 *strsource* 의 기 하 문자 인식 여부를 결정 합니다. 자세한 내용은 [setlocale, _wsetlocale](setlocale-wsetlocale.md)을 참조하세요. **_L** 접미사가 없는 함수는 현재 로캘을 사용 합니다. **_strtold_l** 및 **_wcstold_l** 은 전달 된 로캘을 대신 사용 한다는 점을 제외 하 고 **_strtold** 및 **_wcstold** 와 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-*Endptr* 이 **NULL**이 아닌 경우 검색을 중지 한 문자에 대 한 포인터는 *endptr*에서 가리키는 위치에 저장 됩니다. 올바른 숫자를 찾을 수 없거나 잘못 된 밑수를 지정 하 여 변환을 수행할 수 없는 경우 *Strsource* 의 값은 *endptr*에서 가리키는 위치에 저장 됩니다.
+*Endptr* 이 **NULL** 이 아닌 경우 검색을 중지 한 문자에 대 한 포인터는 *endptr* 에서 가리키는 위치에 저장 됩니다. 올바른 숫자를 찾을 수 없거나 잘못 된 밑수를 지정 하 여 변환을 수행할 수 없는 경우 *Strsource* 의 값은 *endptr* 에서 가리키는 위치에 저장 됩니다.
 
 **Strtold** 는 다음과 같은 형식의 문자열을 가리키는 *strtold* 가 필요 합니다.
 
@@ -155,7 +156,7 @@ string = 3.1415926535898This stopped it
 
 [데이터 변환](../../c-runtime-library/data-conversion.md)<br/>
 [부동 소수점 지원](../../c-runtime-library/floating-point-support.md)<br/>
-[멀티 바이트 문자 시퀀스 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Multibyte-Character 시퀀스의 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [로캘](../../c-runtime-library/locale.md)<br/>
 [문자열-숫자 값 함수](../../c-runtime-library/string-to-numeric-value-functions.md)<br/>
 [strtod, _strtod_l, wcstod, _wcstod_l](strtod-strtod-l-wcstod-wcstod-l.md)<br/>
