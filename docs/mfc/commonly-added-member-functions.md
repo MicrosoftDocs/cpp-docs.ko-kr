@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 일반적으로 추가 되는 멤버 함수'
 title: 일반적으로 추가되는 멤버 함수
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - MFC dialog boxes [MFC], control-notification messages
 - dialog classes [MFC], commonly added member functions
 ms.assetid: f6bd50e8-872a-4039-9996-a85bfccea18d
-ms.openlocfilehash: 2c6fabc64551610bd20a3956b17f55b574d3d826
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 09aea9d7d81867e5ba89200d32f7813517a77c87
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619670"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97310618"
 ---
 # <a name="commonly-added-member-functions"></a>일반적으로 추가되는 멤버 함수
 
@@ -21,4 +22,4 @@ ms.locfileid: "84619670"
 
 [대화 상자](dialog-boxes.md)<br/>
 [MFC에서 대화 상자를 통해 작업](life-cycle-of-a-dialog-box.md)<br/>
-[일반적으로 재정의되는 멤버 함수](commonly-overridden-member-functions.md)
+[일반적으로 재정의 되는 멤버 함수](commonly-overridden-member-functions.md)

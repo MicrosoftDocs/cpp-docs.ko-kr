@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CTypedPtrArray 클래스'
 title: CTypedPtrArray 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - CTypedPtrArray [MFC], SetAt
 - CTypedPtrArray [MFC], SetAtGrow
 ms.assetid: e3ecdf1a-a889-4156-92dd-ddbd36ccd919
-ms.openlocfilehash: db24e3992e5db70895ccc2908dba108de843bcdc
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 07d254072a51a56759a3dbe569c36ff65d199cfe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215948"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345006"
 ---
 # <a name="ctypedptrarray-class"></a>CTypedPtrArray 클래스
 
@@ -89,9 +90,9 @@ class CTypedPtrArray : public BASE_CLASS
 
 **헤더:** afxtempl.h
 
-## <a name="ctypedptrarrayadd"></a><a name="add"></a>CTypedPtrArray:: Add
+## <a name="ctypedptrarrayadd"></a><a name="add"></a> CTypedPtrArray:: Add
 
-이 멤버 함수는 `BASE_CLASS` **:: Add**를 호출 합니다.
+이 멤버 함수는 `BASE_CLASS` **:: Add** 를 호출 합니다.
 
 ```
 INT_PTR Add(TYPE newElement);
@@ -105,7 +106,7 @@ INT_PTR Add(TYPE newElement);
 *newElement*<br/>
 이 배열에 추가할 요소입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 추가 된 요소의 인덱스입니다.
 
@@ -113,7 +114,7 @@ INT_PTR Add(TYPE newElement);
 
 자세한 내용은 [CObArray:: Add](../../mfc/reference/cobarray-class.md#add)를 참조 하세요.
 
-## <a name="ctypedptrarrayappend"></a><a name="append"></a>CTypedPtrArray:: Append
+## <a name="ctypedptrarrayappend"></a><a name="append"></a> CTypedPtrArray:: Append
 
 이 멤버 함수는 `BASE_CLASS` :: Append * *를 호출 합니다.
 
@@ -132,7 +133,7 @@ INT_PTR Append(const CTypedPtrArray<BASE_CLASS, TYPE>& src);
 *src*<br/>
 배열에 추가할 요소의 원본입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 추가 된 첫 번째 요소의 인덱스입니다.
 
@@ -140,9 +141,9 @@ INT_PTR Append(const CTypedPtrArray<BASE_CLASS, TYPE>& src);
 
 자세한 내용은 [CObArray:: Append](../../mfc/reference/cobarray-class.md#append)를 참조 하세요.
 
-## <a name="ctypedptrarraycopy"></a><a name="copy"></a>CTypedPtrArray:: Copy
+## <a name="ctypedptrarraycopy"></a><a name="copy"></a> CTypedPtrArray:: Copy
 
-이 멤버 함수는 `BASE_CLASS` **:: Copy**를 호출 합니다.
+이 멤버 함수는 `BASE_CLASS` **:: Copy** 를 호출 합니다.
 
 ```cpp
 void Copy(const CTypedPtrArray<BASE_CLASS, TYPE>& src);
@@ -163,9 +164,9 @@ void Copy(const CTypedPtrArray<BASE_CLASS, TYPE>& src);
 
 자세한 내용은 [CObArray:: Copy](../../mfc/reference/cobarray-class.md#copy)를 참조 하세요.
 
-## <a name="ctypedptrarrayelementat"></a><a name="elementat"></a>CTypedPtrArray:: ElementAt
+## <a name="ctypedptrarrayelementat"></a><a name="elementat"></a> CTypedPtrArray:: ElementAt
 
-이 인라인 함수는 `BASE_CLASS` **:: elementat**를 호출 합니다.
+이 인라인 함수는 `BASE_CLASS` **:: elementat** 를 호출 합니다.
 
 ```
 TYPE& ElementAt(INT_PTR nIndex);
@@ -177,19 +178,19 @@ TYPE& ElementAt(INT_PTR nIndex);
 이 배열에 저장 된 요소의 형식을 지정 하는 템플릿 매개 변수입니다.
 
 *nIndex*<br/>
-0 보다 크거나 같고 `BASE_CLASS` **:: system.array.getupperbound**에서 반환 된 값 보다 작거나 같은 정수 인덱스입니다.
+0 보다 크거나 같고 `BASE_CLASS` **:: system.array.getupperbound** 에서 반환 된 값 보다 작거나 같은 정수 인덱스입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-*Nindex*로 지정 된 위치에 있는 요소에 대 한 임시 참조입니다. 이 요소는 템플릿 매개 변수 *형식*으로 지정 된 유형입니다.
+*Nindex* 로 지정 된 위치에 있는 요소에 대 한 임시 참조입니다. 이 요소는 템플릿 매개 변수 *형식* 으로 지정 된 유형입니다.
 
 ### <a name="remarks"></a>설명
 
 자세한 내용은 [CObArray:: ElementAt](../../mfc/reference/cobarray-class.md#elementat)을 참조 하세요.
 
-## <a name="ctypedptrarraygetat"></a><a name="getat"></a>CTypedPtrArray:: GetAt
+## <a name="ctypedptrarraygetat"></a><a name="getat"></a> CTypedPtrArray:: GetAt
 
-이 인라인 함수는 `BASE_CLASS` **:: GetAt**를 호출 합니다.
+이 인라인 함수는 `BASE_CLASS` **:: GetAt** 를 호출 합니다.
 
 ```
 TYPE GetAt(INT_PTR nIndex) const;
@@ -201,19 +202,19 @@ TYPE GetAt(INT_PTR nIndex) const;
 배열에 저장 된 요소의 형식을 지정 하는 템플릿 매개 변수입니다.
 
 *nIndex*<br/>
-0 보다 크거나 같고 `BASE_CLASS` **:: system.array.getupperbound**에서 반환 된 값 보다 작거나 같은 정수 인덱스입니다.
+0 보다 크거나 같고 `BASE_CLASS` **:: system.array.getupperbound** 에서 반환 된 값 보다 작거나 같은 정수 인덱스입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-*Nindex*로 지정 된 위치에 있는 요소의 복사본입니다. 이 요소는 템플릿 매개 변수 *형식*으로 지정 된 유형입니다.
+*Nindex* 로 지정 된 위치에 있는 요소의 복사본입니다. 이 요소는 템플릿 매개 변수 *형식* 으로 지정 된 유형입니다.
 
 ### <a name="remarks"></a>설명
 
 자세한 내용은 [CObArray:: GetAt](../../mfc/reference/cobarray-class.md#getat) 를 참조 하세요.
 
-## <a name="ctypedptrarrayinsertat"></a><a name="insertat"></a>CTypedPtrArray:: InsertAt
+## <a name="ctypedptrarrayinsertat"></a><a name="insertat"></a> CTypedPtrArray:: InsertAt
 
-이 멤버 함수는 `BASE_CLASS` **:: insertat**를 호출 합니다.
+이 멤버 함수는 `BASE_CLASS` **:: insertat** 를 호출 합니다.
 
 ```cpp
 void InsertAt(
@@ -253,7 +254,7 @@ void InsertAt(
 
 자세한 내용은 [CObArray:: InsertAt](../../mfc/reference/cobarray-class.md#insertat)을 참조 하세요.
 
-## <a name="ctypedptrarrayoperator--"></a><a name="operator_at"></a>CTypedPtrArray:: operator []
+## <a name="ctypedptrarrayoperator--"></a><a name="operator_at"></a> CTypedPtrArray:: operator []
 
 이러한 인라인 연산자는: `BASE_CLASS` **: operator []** 를 호출 합니다.
 
@@ -268,7 +269,7 @@ TYPE operator[ ](int_ptr nindex) const;
 배열에 저장 된 요소의 형식을 지정 하는 템플릿 매개 변수입니다.
 
 *nIndex*<br/>
-0 보다 크거나 같고 `BASE_CLASS` **:: system.array.getupperbound**에서 반환 된 값 보다 작거나 같은 정수 인덱스입니다.
+0 보다 크거나 같고 `BASE_CLASS` **:: system.array.getupperbound** 에서 반환 된 값 보다 작거나 같은 정수 인덱스입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -276,9 +277,9 @@ TYPE operator[ ](int_ptr nindex) const;
 
 라이브러리의 디버그 버전은 대입문 (대입문의 왼쪽 또는 오른쪽)이 범위를 벗어난 경우 어설션 합니다.
 
-## <a name="ctypedptrarraysetat"></a><a name="setat"></a>CTypedPtrArray:: SetAt
+## <a name="ctypedptrarraysetat"></a><a name="setat"></a> CTypedPtrArray:: SetAt
 
-이 멤버 함수는 `BASE_CLASS` **:: setat**를 호출 합니다.
+이 멤버 함수는 `BASE_CLASS` **:: setat** 를 호출 합니다.
 
 ```cpp
 void SetAt(
@@ -301,9 +302,9 @@ N 인덱스의 배열에 삽입할 요소에 대 한 포인터입니다. NULL �
 
 자세한 내용은 [CObArray:: SetAt](../../mfc/reference/cobarray-class.md#setat)을 참조 하세요.
 
-## <a name="ctypedptrarraysetatgrow"></a><a name="setatgrow"></a>CTypedPtrArray:: SetAtGrow
+## <a name="ctypedptrarraysetatgrow"></a><a name="setatgrow"></a> CTypedPtrArray:: SetAtGrow
 
-이 멤버 함수는 `BASE_CLASS` **:: SetAtGrow**를 호출 합니다.
+이 멤버 함수는 `BASE_CLASS` **:: SetAtGrow** 를 호출 합니다.
 
 ```cpp
 void SetAtGrow(

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2495'
 title: 컴파일러 오류 C2495
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2495
 ms.assetid: bb7066fe-3549-4901-97e4-157f3c04dd57
-ms.openlocfilehash: 5e16404e8c23a902a2cdbfc436cecdff21e68b6a
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 03f7102cff8b41415c1d845595bb443717cffd43
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757022"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97283631"
 ---
 # <a name="compiler-error-c2495"></a>컴파일러 오류 C2495
 

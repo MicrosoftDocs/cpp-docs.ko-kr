@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CToolTipCtrl 클래스'
 title: CToolTipCtrl Class
 ms.date: 11/04/2016
 f1_keywords:
@@ -72,12 +73,12 @@ helpviewer_keywords:
 - CToolTipCtrl [MFC], Update
 - CToolTipCtrl [MFC], UpdateTipText
 ms.assetid: 8973f70c-b73a-46c7-908d-758f364b9a97
-ms.openlocfilehash: a4c2644ff7a9b2ae60cc166247d27d7a25305b97
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: bd263d0ada7ad85169eb551dd136f81b480534e8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561845"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345032"
 ---
 # <a name="ctooltipctrl-class"></a>CToolTipCtrl Class
 
@@ -93,13 +94,13 @@ class CToolTipCtrl : public CWnd
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CToolTipCtrl:: CToolTipCtrl](#ctooltipctrl)|`CToolTipCtrl` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CToolTipCtrl:: Activate](#activate)|도구 설명 컨트롤을 활성화 하 고 비활성화 합니다.|
 |[CToolTipCtrl:: AddTool](#addtool)|도구 설명 컨트롤을 사용 하 여 도구를 등록 합니다.|
@@ -210,7 +211,7 @@ BOOL AddTool(
 도구의 텍스트를 포함 하는 문자열 리소스의 ID입니다.
 
 *lpRectTool*<br/>
-도구의 경계 사각형의 좌표를 포함 하는 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조체에 대 한 포인터입니다. 좌표는 *pWnd*으로 식별 되는 창 클라이언트 영역의 왼쪽 위 모퉁이를 기준으로 합니다.
+도구의 경계 사각형의 좌표를 포함 하는 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조체에 대 한 포인터입니다. 좌표는 *pWnd* 으로 식별 되는 창 클라이언트 영역의 왼쪽 위 모퉁이를 기준으로 합니다.
 
 *nIDTool*<br/>
 도구의 ID입니다.
@@ -218,7 +219,7 @@ BOOL AddTool(
 *lpszText*<br/>
 도구의 텍스트에 대 한 포인터입니다. 이 매개 변수에 LPSTR_TEXTCALLBACK 값이 포함 된 경우 TTN_NEEDTEXT 알림 메시지는 *pWnd* 가 가리키는 창의 부모로 이동 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -253,7 +254,7 @@ BOOL AdjustRect(
 *bLarger*<br/>
 TRUE 이면 *lprc* 가 텍스트 표시 사각형을 지정 하는 데 사용 되 고 해당 창 사각형이 수신 됩니다. FALSE 이면 *lprc* 가 창 사각형을 지정 하는 데 사용 되 고 해당 텍스트 표시 사각형을 수신 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 사각형이 성공적으로 조정 되 면 0이 아닌 값입니다. 그렇지 않으면 0입니다.
 
@@ -279,7 +280,7 @@ virtual BOOL Create(CWnd* pParentWnd, DWORD dwStyle = 0);
 *dwStyle*<br/>
 도구 설명 컨트롤의 스타일을 지정 합니다. 자세한 내용은 **설명** 부분을 참조 하세요.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `CToolTipCtrl`개체가 성공적으로 생성 되 면 0이 아닌 값이 고, 그렇지 않으면 0입니다.
 
@@ -324,7 +325,7 @@ virtual BOOL CreateEx(
 *dwStyleEx*<br/>
 만들려는 컨트롤의 확장 스타일을 지정 합니다. 확장 된 Windows 스타일의 목록에 대해서는 Windows SDK의 [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) 에 대 한 *dwexstyle* 매개 변수를 참조 하세요.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공 하면 0이 아닌 값이 고, 그렇지 않으면 0입니다.
 
@@ -379,7 +380,7 @@ CSize GetBubbleSize(LPTOOLINFO lpToolInfo) const;
 *lpToolInfo*<br/>
 도구 설명의 [Toolinfo](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) 구조에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 도구 설명의 크기입니다.
 
@@ -400,7 +401,7 @@ BOOL GetCurrentTool(LPTOOLINFO lpToolInfo) const;
 *lpToolInfo*\
 제한이 현재 도구 설명 창에 대 한 정보를 수신 하는 [Toolinfo](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) 구조체에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 정보가 성공적으로 검색 되 면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
@@ -433,7 +434,7 @@ int GetDelayTime(DWORD dwDuration) const;
 
 - 포인터를 한 도구에서 다른 도구로 이동할 때 다음 도구 설명 창이 표시 되는 데 걸리는 시간을 TTDT_RESHOW 검색 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 지정 된 지연 시간 (밀리초)입니다.
 
@@ -473,7 +474,7 @@ void GetMargin(LPRECT lprc) const;
 int GetMaxTipWidth() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 도구 설명 창의 최대 너비입니다.
 
@@ -494,7 +495,7 @@ void GetText(
 
 ### <a name="parameters"></a>매개 변수
 
-*문자열*<br/>
+*str*<br/>
 도구의 텍스트를 받는 개체에 대 한 참조 `CString` 입니다.
 
 *pWnd*<br/>
@@ -515,7 +516,7 @@ void GetText(
 COLORREF GetTipBkColor() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 배경색을 나타내는 [Colorref](/windows/win32/gdi/colorref) 값입니다.
 
@@ -531,7 +532,7 @@ COLORREF GetTipBkColor() const;
 COLORREF GetTipTextColor() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 텍스트 색을 나타내는 [Colorref](/windows/win32/gdi/colorref) 값입니다.
 
@@ -564,7 +565,7 @@ void GetTitle(PTTGETTITLE pttgt) const;
 int GetToolCount() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 도구 설명 컨트롤에 등록 된 도구 수입니다.
 
@@ -590,7 +591,7 @@ BOOL GetToolInfo(
 *nIDTool*<br/>
 도구의 ID입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -620,7 +621,7 @@ BOOL HitTest(
 *lpToolInfo*<br/>
 도구에 대 한 정보를 포함 하는 [Toolinfo](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) 구조체에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 적중 테스트 정보로 지정 된 점이 도구의 경계 사각형 내에 있는 경우 0이 아닙니다. 그렇지 않으면 0입니다.
 
@@ -764,7 +765,7 @@ int SetMaxTipWidth(int iWidth);
 *iWidth*<br/>
 설정할 최대 도구 설명 창 너비입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이전의 최대 팁 너비입니다.
 
@@ -824,7 +825,7 @@ Windows SDK에서 [TTM_SETTITLE](/windows/win32/Controls/ttm-settitle) *아이�
 *lpstrTitle*<br/>
 제목 문자열에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -880,7 +881,7 @@ HRESULT SetWindowTheme(LPCWSTR pszSubAppName);
 *pszSubAppName*<br/>
 설정할 비주얼 스타일을 포함 하는 유니코드 문자열에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 반환 값은 사용 되지 않습니다.
 

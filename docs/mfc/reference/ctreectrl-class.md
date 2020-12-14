@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CTreeCtrl 클래스'
 title: CTreeCtrl Class
 ms.date: 11/04/2016
 f1_keywords:
@@ -162,12 +163,12 @@ helpviewer_keywords:
 - CTreeCtrl [MFC], SortChildren
 - CTreeCtrl [MFC], SortChildrenCB
 ms.assetid: 96e20031-6161-4143-8c12-8d1816c66d90
-ms.openlocfilehash: 6a824aceae39d5aa6685176354c48a9457a40e9e
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: e126863bebcc3cb8f878a8ece41ee8d9385c0afe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837621"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345019"
 ---
 # <a name="ctreectrl-class"></a>CTreeCtrl Class
 
@@ -361,7 +362,7 @@ virtual BOOL CreateEx(
 Tree view 컨트롤의 스타일을 지정 합니다. [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww)에 설명 된 창 스타일을 적용 하 고 Windows SDK에 설명 된 대로 [트리 뷰 컨트롤 스타일](/windows/win32/Controls/tree-view-control-window-styles) 의 조합을 적용 합니다.
 
 *rect*<br/>
-*PParentWnd*의 클라이언트 좌표에서 만들 창의 크기와 위치를 설명 하는 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조체에 대 한 참조입니다.
+*PParentWnd* 의 클라이언트 좌표에서 만들 창의 크기와 위치를 설명 하는 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조체에 대 한 참조입니다.
 
 *pParentWnd*<br/>
 컨트롤의 부모 창에 대 한 포인터입니다.
@@ -591,7 +592,7 @@ BOOL GetCheck(HTREEITEM hItem) const;
 
 ## <a name="ctreectrlgetchilditem"></a><a name="getchilditem"></a> CTreeCtrl:: GetChildItem
 
-*Hitem*으로 지정 된 항목의 자식인 트리 뷰 항목을 검색 하려면이 함수를 호출 합니다.
+*Hitem* 으로 지정 된 항목의 자식인 트리 뷰 항목을 검색 하려면이 함수를 호출 합니다.
 
 ```
 HTREEITEM GetChildItem(HTREEITEM hItem) const;
@@ -789,7 +790,7 @@ DWORD_PTR GetItemData(HTREEITEM hItem) const;
 
 ### <a name="return-value"></a>반환 값
 
-*Hitem*으로 지정 된 항목과 연결 된 포인터 크기의 응용 프로그램 관련 값입니다.
+*Hitem* 으로 지정 된 항목과 연결 된 포인터 크기의 응용 프로그램 관련 값입니다.
 
 ### <a name="example"></a>예제
 
@@ -888,7 +889,7 @@ BOOL GetItemPartRect(
 진행 파트의 식별자입니다. TVGIPR_BUTTON으로 설정 해야 합니다.
 
 *lpRect*\
-제한이 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조체에 대 한 포인터입니다. 이 메서드가 성공적으로 수행 되 면 구조는 *Hitem* 및 *npart*로 지정 된 파트의 사각형 좌표를 수신 합니다.
+제한이 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조체에 대 한 포인터입니다. 이 메서드가 성공적으로 수행 되 면 구조는 *Hitem* 및 *npart* 로 지정 된 파트의 사각형 좌표를 수신 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -896,7 +897,7 @@ BOOL GetItemPartRect(
 
 ### <a name="remarks"></a>설명
 
-각 트리 컨트롤 항목은 그래픽 사각형에 의해 제한 됩니다. 해당 사각형의 특정 지점을 클릭할 때마다 항목이 *적중*된 것으로 간주 됩니다. 이 메서드는 사각형의 점이 클릭 될 때 *Hitem* 매개 변수로 식별 되는 항목이 적중 되도록 가장 큰 사각형을 반환 합니다.
+각 트리 컨트롤 항목은 그래픽 사각형에 의해 제한 됩니다. 해당 사각형의 특정 지점을 클릭할 때마다 항목이 *적중* 된 것으로 간주 됩니다. 이 메서드는 사각형의 점이 클릭 될 때 *Hitem* 매개 변수로 식별 되는 항목이 적중 되도록 가장 큰 사각형을 반환 합니다.
 
 이 메서드는 Windows SDK에서 설명 하는 TVM_GETITEMPARTRECT 메시지를 보냅니다. 자세한 내용은 [TreeView_GetItemPartRect](/windows/win32/api/commctrl/nf-commctrl-treeview_getitempartrect) 매크로를 참조 하세요.
 
@@ -936,7 +937,7 @@ Tree view 컨트롤 항목의 핸들입니다.
 
 ### <a name="return-value"></a>반환 값
 
-항목이 표시 되는 경우 0이 아니며, 경계 사각형은 *lpRect*에 포함 됩니다. 그렇지 않으면 0이 *lpRect* 초기화 되지 않습니다.
+항목이 표시 되는 경우 0이 아니며, 경계 사각형은 *lpRect* 에 포함 됩니다. 그렇지 않으면 0이 *lpRect* 초기화 되지 않습니다.
 
 ### <a name="example"></a>예제
 
@@ -944,7 +945,7 @@ Tree view 컨트롤 항목의 핸들입니다.
 
 ## <a name="ctreectrlgetitemstate"></a><a name="getitemstate"></a> CTreeCtrl:: GetItemState
 
-*Hitem*으로 지정 된 항목의 상태를 반환 합니다.
+*Hitem* 으로 지정 된 항목의 상태를 반환 합니다.
 
 ```
 UINT GetItemState(
@@ -958,7 +959,7 @@ UINT GetItemState(
 상태를 검색할 항목의 핸들입니다.
 
 *nStateMask*<br/>
-검색할 하나 이상의 상태를 나타내는 마스크입니다. *NStateMask*의 가능한 값에 대 한 자세한 내용은 `state` 및 `stateMask` Windows SDK에서 [tvitem](/windows/win32/api/commctrl/ns-commctrl-tvitemw) 구조의 및 멤버에 대 한 설명을 참조 하세요.
+검색할 하나 이상의 상태를 나타내는 마스크입니다. *NStateMask* 의 가능한 값에 대 한 자세한 내용은 `state` 및 `stateMask` Windows SDK에서 [tvitem](/windows/win32/api/commctrl/ns-commctrl-tvitemw) 구조의 및 멤버에 대 한 설명을 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -991,7 +992,7 @@ UINT GetItemStateEx(HTREEITEM hItem) const;
 
 ## <a name="ctreectrlgetitemtext"></a><a name="getitemtext"></a> CTreeCtrl:: GetItemText
 
-*Hitem*으로 지정 된 항목의 텍스트를 반환 합니다.
+*Hitem* 으로 지정 된 항목의 텍스트를 반환 합니다.
 
 ```
 CString GetItemText(HTREEITEM hItem) const;
@@ -1056,7 +1057,7 @@ COLORREF GetLineColor() const;
 
 ## <a name="ctreectrlgetnextitem"></a><a name="getnextitem"></a> CTreeCtrl:: GetNextItem
 
-*Ncode* 매개 변수로 표시 되는 지정 된 관계를 포함 하는 트리 뷰 항목을 *hitem*으로 검색 하려면이 함수를 호출 합니다.
+*Ncode* 매개 변수로 표시 되는 지정 된 관계를 포함 하는 트리 뷰 항목을 *hitem* 으로 검색 하려면이 함수를 호출 합니다.
 
 ```
 HTREEITEM GetNextItem(
@@ -1070,7 +1071,7 @@ HTREEITEM GetNextItem(
 트리 항목의 핸들입니다.
 
 *nCode*<br/>
-*Hitem*에 대 한 관계 유형을 나타내는 플래그입니다. 이 플래그는 다음 값 중 하나일 수 있습니다.
+*Hitem* 에 대 한 관계 유형을 나타내는 플래그입니다. 이 플래그는 다음 값 중 하나일 수 있습니다.
 
 - TVGN_CARET 현재 선택 된 항목을 검색 합니다.
 
@@ -1110,7 +1111,7 @@ HTREEITEM GetNextItem(
 
 ## <a name="ctreectrlgetnextsiblingitem"></a><a name="getnextsiblingitem"></a> CTreeCtrl:: GetNextSiblingItem
 
-*Hitem*의 다음 형제를 검색 하려면이 함수를 호출 합니다.
+*Hitem* 의 다음 형제를 검색 하려면이 함수를 호출 합니다.
 
 ```
 HTREEITEM GetNextSiblingItem(HTREEITEM hItem) const;
@@ -1131,7 +1132,7 @@ HTREEITEM GetNextSiblingItem(HTREEITEM hItem) const;
 
 ## <a name="ctreectrlgetnextvisibleitem"></a><a name="getnextvisibleitem"></a> CTreeCtrl:: GetNextVisibleItem
 
-이 함수를 호출 하 여 *Hitem*의 다음 표시 항목을 검색 합니다.
+이 함수를 호출 하 여 *Hitem* 의 다음 표시 항목을 검색 합니다.
 
 ```
 HTREEITEM GetNextVisibleItem(HTREEITEM hItem) const;
@@ -1152,7 +1153,7 @@ HTREEITEM GetNextVisibleItem(HTREEITEM hItem) const;
 
 ## <a name="ctreectrlgetparentitem"></a><a name="getparentitem"></a> CTreeCtrl:: GetParentItem
 
-*Hitem*의 부모를 검색 하려면이 함수를 호출 합니다.
+*Hitem* 의 부모를 검색 하려면이 함수를 호출 합니다.
 
 ```
 HTREEITEM GetParentItem(HTREEITEM hItem) const;
@@ -1177,7 +1178,7 @@ HTREEITEM GetParentItem(HTREEITEM hItem) const;
 
 ## <a name="ctreectrlgetprevsiblingitem"></a><a name="getprevsiblingitem"></a> CTreeCtrl:: GetPrevSiblingItem
 
-*Hitem*의 이전 형제를 검색 하려면이 함수를 호출 합니다.
+*Hitem* 의 이전 형제를 검색 하려면이 함수를 호출 합니다.
 
 ```
 HTREEITEM GetPrevSiblingItem(HTREEITEM hItem) const;
@@ -1198,7 +1199,7 @@ HTREEITEM GetPrevSiblingItem(HTREEITEM hItem) const;
 
 ## <a name="ctreectrlgetprevvisibleitem"></a><a name="getprevvisibleitem"></a> CTreeCtrl:: GetPrevVisibleItem
 
-이 함수를 호출 하 여 *Hitem*의 이전 표시 항목을 검색 합니다.
+이 함수를 호출 하 여 *Hitem* 의 이전 표시 항목을 검색 합니다.
 
 ```
 HTREEITEM GetPrevVisibleItem(HTREEITEM hItem) const;
@@ -1968,7 +1969,7 @@ BOOL SetItemData(
 데이터를 검색할 항목의 핸들입니다.
 
 *dwData*<br/>
-*Hitem*으로 지정 된 항목과 연결 된 포인터 크기의 응용 프로그램 관련 값입니다.
+*Hitem* 으로 지정 된 항목과 연결 된 포인터 크기의 응용 프로그램 관련 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2002,7 +2003,7 @@ BOOL SetItemExpandedImageIndex(
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 Windows SDK에서 설명 하는 [TVM_SETITEM](/windows/win32/Controls/tvm-setitem) 메시지를 보냅니다. 이 메서드는 TVITEMEX 구조체의 멤버에 *iExpandedImage* 매개 변수를 할당 한 `iExpandedImage` 다음 메시지에서 해당 구조를 사용 합니다. [TVITEMEX](/windows/win32/api/commctrl/ns-commctrl-tvitemexw)
+이 메서드는 Windows SDK에서 설명 하는 [TVM_SETITEM](/windows/win32/Controls/tvm-setitem) 메시지를 보냅니다. 이 메서드는 TVITEMEX 구조체의 멤버에 *iExpandedImage* 매개 변수를 할당 한 `iExpandedImage` 다음 메시지에서 해당 구조를 사용 합니다. [](/windows/win32/api/commctrl/ns-commctrl-tvitemexw)
 
 ### <a name="example"></a>예제
 
@@ -2077,7 +2078,7 @@ Tree view 컨트롤의 각 항목에는 연결 된 비트맵 이미지 쌍이 �
 
 ## <a name="ctreectrlsetitemstate"></a><a name="setitemstate"></a> CTreeCtrl:: SetItemState
 
-*Hitem*으로 지정 된 항목의 상태를 설정 합니다.
+*Hitem* 으로 지정 된 항목의 상태를 설정 합니다.
 
 ```
 BOOL SetItemState(
@@ -2133,7 +2134,7 @@ BOOL SetItemStateEx(
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 Windows SDK에서 설명 하는 [TVM_SETITEM](/windows/win32/Controls/tvm-setitem) 메시지를 보냅니다. 이 메서드는 TVITEMEX 구조체의 멤버에 *uStateEx* 매개 변수를 할당 한 `uStateEx` 다음 메시지에서 해당 구조를 사용 합니다. [TVITEMEX](/windows/win32/api/commctrl/ns-commctrl-tvitemexw)
+이 메서드는 Windows SDK에서 설명 하는 [TVM_SETITEM](/windows/win32/Controls/tvm-setitem) 메시지를 보냅니다. 이 메서드는 TVITEMEX 구조체의 멤버에 *uStateEx* 매개 변수를 할당 한 `uStateEx` 다음 메시지에서 해당 구조를 사용 합니다. [](/windows/win32/api/commctrl/ns-commctrl-tvitemexw)
 
 ### <a name="example"></a>예제
 
@@ -2149,7 +2150,7 @@ BOOL SetItemStateEx(
 
 ## <a name="ctreectrlsetitemtext"></a><a name="setitemtext"></a> CTreeCtrl:: SetItemText
 
-*Hitem*으로 지정 된 항목의 텍스트를 설정 합니다.
+*Hitem* 으로 지정 된 항목의 텍스트를 설정 합니다.
 
 ```
 BOOL SetItemText(

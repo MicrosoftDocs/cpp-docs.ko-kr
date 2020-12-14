@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3138'
 title: 컴파일러 오류 C3138
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3138
 ms.assetid: 364ee9e8-9358-410e-bd35-9c4a226a3753
-ms.openlocfilehash: aca5c78c07852317308427d935eef5942523512b
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 07fa48cc4c14773eeb41420eb63d659028de8caf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91501405"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97304261"
 ---
 # <a name="compiler-error-c3138"></a>컴파일러 오류 C3138
 

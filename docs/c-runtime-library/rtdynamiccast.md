@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __RTDynamicCast'
 title: __RTDynamicCast
 ms.date: 11/04/2016
 api_name:
@@ -20,12 +21,12 @@ f1_keywords:
 helpviewer_keywords:
 - __RTDynamicCast
 ms.assetid: 56aa2d7a-aa47-46ef-830d-e37175611239
-ms.openlocfilehash: 238310791baebc941ad23b798adc1ea2e7fffcbb
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8e9cb906468c02ac065601e8f093b0e97c1b70bd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218509"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97284488"
 ---
 # <a name="__rtdynamiccast"></a>__RTDynamicCast
 
@@ -60,9 +61,9 @@ PVOID __RTDynamicCast (
 *isReference*<br/>
 **`true`** input이 참조 이면이 고, **`false`** 입력이 포인터인 경우입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-성공 하는 경우 적절 한 하위 개체에 대 한 포인터 그렇지 않으면 **NULL**입니다.
+성공 하는 경우 적절 한 하위 개체에 대 한 포인터 그렇지 않으면 **NULL** 입니다.
 
 ## <a name="exceptions"></a>예외
 

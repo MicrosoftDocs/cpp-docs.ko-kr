@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 연결 맵'
 title: 연결 맵
 ms.date: 11/04/2016
 helpviewer_keywords:
 - connection maps
 ms.assetid: 1f25a9bc-6d09-4614-99cf-dc38e8ddfa73
-ms.openlocfilehash: 517017e9e60b86e96daa24f7822538e91c609fb4
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 61d2e7023ab97aa00952aee4786b34e60ba57af7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841417"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345253"
 ---
 # <a name="connection-maps"></a>연결 맵
 
@@ -136,7 +137,7 @@ BEGIN_CONNECTION_MAP(theClass, theBase)
 이 연결을 매핑할 컨트롤 클래스의 이름을 지정합니다.
 
 *theBase*<br/>
-*Theclass*의 기본 클래스 이름을 지정 합니다.
+*Theclass* 의 기본 클래스 이름을 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -191,7 +192,7 @@ CONNECTION_PART(theClass, iid, localClass)
 
 ## <a name="afxconnectionadvise"></a><a name="afxconnectionadvise"></a> AfxConnectionAdvise
 
-*PUnkSrc*에 의해 지정 된 소스와 *pUnkSink*에 의해 지정 된 싱크로 연결을 설정 하려면이 함수를 호출 합니다.
+*PUnkSrc* 에 의해 지정 된 소스와 *pUnkSink* 에 의해 지정 된 싱크로 연결을 설정 하려면이 함수를 호출 합니다.
 
 ```
 BOOL AFXAPI AfxConnectionAdvise(
@@ -233,7 +234,7 @@ TRUE로 설정 하면 연결을 만들 때 *pUnkSink* 의 참조 수가 증가 �
 
 ## <a name="afxconnectionunadvise"></a><a name="afxconnectionunadvise"></a> AfxConnectionUnadvise
 
-*PUnkSrc*에 의해 지정 된 소스와 *pUnkSink*에 의해 지정 된 싱크로 연결의 연결을 끊으려면이 함수를 호출 합니다.
+*PUnkSrc* 에 의해 지정 된 소스와 *pUnkSink* 에 의해 지정 된 싱크로 연결의 연결을 끊으려면이 함수를 호출 합니다.
 
 ```
 BOOL AFXAPI AfxConnectionUnadvise(

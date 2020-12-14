@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CStringList 클래스'
 title: CStringList 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -50,12 +51,12 @@ helpviewer_keywords:
 - CStringList [MFC], RemoveTail
 - CStringList [MFC], SetAt
 ms.assetid: 310a7edb-263c-4bd2-ac43-0bfbfddc5a33
-ms.openlocfilehash: 9eb7a713fc02cd3e51135d1985a41688d4c885d9
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: c9043ef648f50e880f3b5946c1912deca3de6714
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79447555"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345071"
 ---
 # <a name="cstringlist-class"></a>CStringList 클래스
 
@@ -67,9 +68,9 @@ ms.locfileid: "79447555"
 class CStringList : public CObject
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 
-`CStringList`의 멤버 함수는 [CObList](../../mfc/reference/coblist-class.md)클래스의 멤버 함수와 비슷합니다. 이처럼 두 함수가 비슷하므로 `CObList` 참조 설명서에서 멤버 함수 관련 사항을 확인할 수 있습니다. `CObject` 포인터가 반환 값으로 표시 되는 경우에는 `CString` 포인터가 아닌 `CString` 대체 합니다. `CObject` 포인터가 함수 매개 변수로 표시 되는 경우 `LPCTSTR`로 대체 합니다.
+의 멤버 함수는 `CStringList` [CObList](../../mfc/reference/coblist-class.md)클래스의 멤버 함수와 비슷합니다. 이처럼 두 함수가 비슷하므로 `CObList` 참조 설명서에서 멤버 함수 관련 사항을 확인할 수 있습니다. `CObject`포인터가 반환 값으로 표시 되는 경우에는 `CString` (포인터가 아님)로 대체 `CString` 합니다. `CObject`포인터가 함수 매개 변수로 표시 되는 경우를 대체 `LPCTSTR` 합니다.
 
 `CObject*& CObList::GetHead() const;`
 
@@ -77,7 +78,7 @@ class CStringList : public CObject
 
 `CString& CStringList::GetHead() const;`
 
-and
+및
 
 `POSITION AddHead( CObject* <newElement> );`
 
@@ -87,13 +88,13 @@ and
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
 |[CStringList::CStringList](../../mfc/reference/coblist-class.md#coblist)|빈 목록을 생성 합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
 |[CStringList:: AddHead](../../mfc/reference/coblist-class.md#addhead)|요소 (또는 다른 목록의 모든 요소)를 목록의 헤드에 추가 합니다 (새 헤드를 만듭니다).|
 |[CStringList:: AddTail](../../mfc/reference/coblist-class.md#addtail)|요소 (또는 다른 목록의 모든 요소)를 목록 끝에 추가 합니다 (새 꼬리를 만듭니다).|
@@ -121,13 +122,13 @@ and
 
 모든 비교는 값으로 수행 됩니다. 즉, 문자열의 문자는 문자열의 주소 대신 비교 됩니다.
 
-`CStringList`는 IMPLEMENT_SERIAL 매크로를 통합 하 여 요소의 serialization 및 덤프를 지원 합니다. `CString` 개체 목록이 오버 로드 된 삽입 연산자나 `Serialize` 멤버 함수를 사용 하 여 보관에 저장 된 경우 각 `CString` 요소가 차례로 serialize 됩니다.
+`CStringList` 는 IMPLEMENT_SERIAL 매크로를 통합 하 여 요소의 serialization 및 덤프를 지원 합니다. `CString`오버 로드 된 삽입 연산자나 멤버 함수를 사용 하 여 개체 목록을 보관에 저장 하면 `Serialize` 각 `CString` 요소가 차례로 직렬화 됩니다.
 
-개별 `CString` 요소에 대 한 덤프가 필요한 경우 덤프 컨텍스트의 깊이를 1 이상으로 설정 해야 합니다.
+개별 요소의 덤프가 필요한 경우 `CString` 덤프 컨텍스트의 깊이를 1 이상으로 설정 해야 합니다.
 
-`CStringList`사용에 대 한 자세한 내용은 [컬렉션](../../mfc/collections.md)문서를 참조 하세요.
+사용에 대 한 자세한 내용은 `CStringList` [컬렉션](../../mfc/collections.md)문서를 참조 하세요.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 

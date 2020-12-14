@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: signbit'
 title: signbit
 ms.date: 01/31/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 - math/signbit
 helpviewer_keywords:
 - signbit function
-ms.openlocfilehash: 7f8399c16d2abc70a50740b0629bc5d9b3a1f067
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7f6416647db67a49bd6950c011575b72f4c43f10
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216741"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97303468"
 ---
 # <a name="signbit"></a>signbit
 
@@ -44,7 +45,7 @@ inline bool signbit(
 
 ## <a name="return-value"></a>반환 값
 
-인수가 음수 또는 음의 무한대 인 경우 **signbit** 는 0이 아닌 값 ( **`true`** c + +의 경우)을 반환 합니다. *x* **`false`** 인수가 음수가 아니거나 양의 무한대 또는 NAN 인 경우 0 (c + +)을 반환 합니다.
+인수가 음수 또는 음의 무한대 인 경우 **signbit** 는 0이 아닌 값 ( **`true`** c + +의 경우)을 반환 합니다.  **`false`** 인수가 음수가 아니거나 양의 무한대 또는 NAN 인 경우 0 (c + +)을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 

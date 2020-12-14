@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CPagerCtrl 클래스'
 title: CPagerCtrl 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -48,12 +49,12 @@ helpviewer_keywords:
 - CPagerCtrl [MFC], SetChild
 - CPagerCtrl [MFC], SetScrollPos
 ms.assetid: 65ac58dd-4f5e-4b7e-b15c-e0d435a7e884
-ms.openlocfilehash: 9b3af31e7d352e93144cde0c321620693111e145
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: ba01d07ebd6d638a1d505d555e44e9562e4bd27b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561910"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345227"
 ---
 # <a name="cpagerctrl-class"></a>CPagerCtrl 클래스
 
@@ -69,13 +70,13 @@ class CPagerCtrl : public CWnd
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CPagerCtrl:: CPagerCtrl](#cpagerctrl)|`CPagerCtrl` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CPagerCtrl:: Create](#create)|지정 된 스타일을 사용 하 여 페이저 컨트롤을 만들고 현재 개체에 연결 `CPagerCtrl` 합니다.|
 |[CPagerCtrl:: CreateEx](#createex)|지정 된 확장 스타일을 사용 하 여 페이저 컨트롤을 만들고 현재 개체에 연결 `CPagerCtrl` 합니다.|
@@ -158,7 +159,7 @@ virtual BOOL Create(
 *nID*\
 진행 컨트롤의 ID입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -202,7 +203,7 @@ virtual BOOL CreateEx(
 *nID*\
 진행 컨트롤의 ID입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -235,7 +236,7 @@ void ForwardMouse(BOOL bForward);
 int GetBorder() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 테두리 크기 (픽셀)입니다.
 
@@ -257,7 +258,7 @@ int GetBorder() const;
 COLORREF GetBkColor() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 페이저 컨트롤의 현재 배경색을 포함 하는 [Colorref](/windows/win32/gdi/colorref) 값입니다.
 
@@ -279,7 +280,7 @@ COLORREF GetBkColor() const;
 int GetButtonSize() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 단추 크기 (픽셀)입니다.
 
@@ -302,7 +303,7 @@ DWORD GetButtonState(int iButton) const;
 *iButton*\
 진행 상태를 검색할 단추를 나타냅니다. 페이저 컨트롤 스타일이 PGS_HORZ 이면 왼쪽 단추에 PGB_TOPORLEFT를 지정 하 고 오른쪽 단추에 PGB_BOTTOMORRIGHT 합니다. 페이저 컨트롤 스타일이 PGS_VERT 경우 맨 위에 있는 단추에 대해 PGB_TOPORLEFT를 지정 하 고 아래쪽 단추에 PGB_BOTTOMORRIGHT 합니다. 자세한 내용은 [Pager 컨트롤 스타일](/windows/win32/Controls/pager-control-styles)을 참조 하세요.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 *Ibutton* 매개 변수로 지정 된 단추의 상태입니다. 상태는 PGF_INVISIBLE, PGF_NORMAL, PGF_GRAYED, PGF_DEPRESSED 또는 PGF_HOT입니다. 자세한 내용은 [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) 메시지의 반환 값 섹션을 참조 하십시오.
 
@@ -318,7 +319,7 @@ DWORD GetButtonState(int iButton) const;
 IDropTarget* GetDropTarget() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `IDropTarget`현재 페이저 컨트롤의 인터페이스에 대 한 포인터입니다.
 
@@ -336,7 +337,7 @@ IDropTarget* GetDropTarget() const;
 int GetScrollPos() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 현재 스크롤 위치 (픽셀)입니다.
 
@@ -363,7 +364,7 @@ BOOL IsButtonDepressed(int iButton) const;
 *iButton*\
 진행 상태를 검색할 단추를 나타냅니다. 페이저 컨트롤 스타일이 PGS_HORZ 이면 왼쪽 단추에 PGB_TOPORLEFT를 지정 하 고 오른쪽 단추에 PGB_BOTTOMORRIGHT 합니다. 페이저 컨트롤 스타일이 PGS_VERT 경우 맨 위에 있는 단추에 대해 PGB_TOPORLEFT를 지정 하 고 아래쪽 단추에 PGB_BOTTOMORRIGHT 합니다. 자세한 내용은 [Pager 컨트롤 스타일](/windows/win32/Controls/pager-control-styles)을 참조 하세요.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 지정 된 단추가 눌러진 상태 이면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
@@ -384,7 +385,7 @@ BOOL IsButtonGrayed(int iButton) const;
 *iButton*\
 진행 상태를 검색할 단추를 나타냅니다. 페이저 컨트롤 스타일이 PGS_HORZ 이면 왼쪽 단추에 PGB_TOPORLEFT를 지정 하 고 오른쪽 단추에 PGB_BOTTOMORRIGHT 합니다. 페이저 컨트롤 스타일이 PGS_VERT 경우 맨 위에 있는 단추에 대해 PGB_TOPORLEFT를 지정 하 고 아래쪽 단추에 PGB_BOTTOMORRIGHT 합니다. 자세한 내용은 [Pager 컨트롤 스타일](/windows/win32/Controls/pager-control-styles)을 참조 하세요.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 지정 된 단추가 회색 상태 이면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
@@ -405,7 +406,7 @@ BOOL IsButtonHot(int iButton) const;
 *iButton*\
 진행 상태를 검색할 단추를 나타냅니다. 페이저 컨트롤 스타일이 PGS_HORZ 이면 왼쪽 단추에 PGB_TOPORLEFT를 지정 하 고 오른쪽 단추에 PGB_BOTTOMORRIGHT 합니다. 페이저 컨트롤 스타일이 PGS_VERT 경우 맨 위에 있는 단추에 대해 PGB_TOPORLEFT를 지정 하 고 아래쪽 단추에 PGB_BOTTOMORRIGHT 합니다. 자세한 내용은 [Pager 컨트롤 스타일](/windows/win32/Controls/pager-control-styles)을 참조 하세요.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 지정 된 단추가 활성 상태 이면 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
@@ -426,7 +427,7 @@ BOOL IsButtonInvisible(int iButton) const;
 *iButton*\
 진행 상태를 검색할 단추를 나타냅니다. 페이저 컨트롤 스타일이 PGS_HORZ 이면 왼쪽 단추에 PGB_TOPORLEFT를 지정 하 고 오른쪽 단추에 PGB_BOTTOMORRIGHT 합니다. 페이저 컨트롤 스타일이 PGS_VERT 경우 맨 위에 있는 단추에 대해 PGB_TOPORLEFT를 지정 하 고 아래쪽 단추에 PGB_BOTTOMORRIGHT 합니다. 자세한 내용은 [Pager 컨트롤 스타일](/windows/win32/Controls/pager-control-styles)을 참조 하세요.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 지정 된 단추가 보이지 않는 상태 이면 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
@@ -455,7 +456,7 @@ BOOL IsButtonNormal(int iButton) const;
 *iButton*\
 진행 상태를 검색할 단추를 나타냅니다. 페이저 컨트롤 스타일이 PGS_HORZ 이면 왼쪽 단추에 PGB_TOPORLEFT를 지정 하 고 오른쪽 단추에 PGB_BOTTOMORRIGHT 합니다. 페이저 컨트롤 스타일이 PGS_VERT 경우 맨 위에 있는 단추에 대해 PGB_TOPORLEFT를 지정 하 고 아래쪽 단추에 PGB_BOTTOMORRIGHT 합니다. 자세한 내용은 [Pager 컨트롤 스타일](/windows/win32/Controls/pager-control-styles)을 참조 하세요.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 지정 된 단추가 표준 상태 이면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
@@ -500,7 +501,7 @@ COLORREF SetBkColor(COLORREF clrBk);
 *clrBk*\
 진행 페이저 컨트롤의 새 배경색을 포함 하는 [Colorref](/windows/win32/gdi/colorref) 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 Pager 컨트롤의 이전 배경색을 포함 하는 [Colorref](/windows/win32/gdi/colorref) 값입니다.
 
@@ -527,7 +528,7 @@ int SetBorder(int iBorder);
 *iBorder*\
 진행 새 테두리 크기 (픽셀)입니다. *Iborder* 매개 변수가 음수 이면 테두리 크기가 0으로 설정 됩니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이전 테두리 크기 (픽셀)입니다.
 
@@ -554,7 +555,7 @@ int SetButtonSize(int iButtonSize);
 *iButtonSize*\
 진행 새 단추 크기 (픽셀)입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이전 단추 크기 (픽셀)입니다.
 

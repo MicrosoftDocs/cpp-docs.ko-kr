@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CSplitButton 클래스'
 title: CSplitButton 클래스
 ms.date: 11/19/2018
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - CSplitButton [MFC], SetDropDownMenu
 - CSplitButton [MFC], OnDropDown
 ms.assetid: 6844d0a9-6408-4e44-9b5f-57628ed8bad6
-ms.openlocfilehash: 484cef2787c9e5c166a7b20b017251b559d7221c
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: e73273bbeb0d03dc5ca2a3a2e6daa1be05936280
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562547"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345123"
 ---
 # <a name="csplitbutton-class"></a>CSplitButton 클래스
 
@@ -35,20 +36,20 @@ class CSplitButton : public CButton
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CSplitButton:: CSplitButton](#csplitbutton)|`CSplitButton` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CSplitButton:: Create](#create)|지정 된 스타일을 사용 하 여 분할 단추 컨트롤을 만들고 현재 개체에 연결 `CSplitButton` 합니다.|
 |[CSplitButton:: SetDropDownMenu](#setdropdownmenu)|사용자가 현재 분할 단추 컨트롤의 드롭다운 화살표를 클릭할 때 표시 되는 드롭다운 메뉴를 설정 합니다.|
 
 ### <a name="protected-methods"></a>Protected 메서드
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
 |[CSplitButton:: OnDropDown](#ondropdown)|사용자가 현재 분할 단추 컨트롤의 드롭다운 화살표를 클릭할 때 시스템이 보내는 BCN_DROPDOWN 알림을 처리 합니다.|
 
@@ -106,7 +107,7 @@ virtual BOOL Create(
 *nID*\
 진행 컨트롤의 ID입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
