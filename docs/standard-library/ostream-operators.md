@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: &lt; ostream &gt; 연산자'
 title: '&lt;ostream&gt; 연산자'
 ms.date: 11/04/2016
 f1_keywords:
 - ostream/std::operator&lt;&lt;
 ms.assetid: 9282a62e-a3d1-4371-a284-fbc9515bb9a2
-ms.openlocfilehash: a4dfee6c70f068e5a61294e6b2863a8a12a9c378
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 51422031de786d560b70a8ccaf8a072151630bbe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90039770"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97193060"
 ---
 # <a name="ltostreamgt-operators"></a>&lt;ostream&gt; 연산자
 
@@ -113,7 +114,7 @@ basic_ostream<Elem, _Tr>& operator<<(
     const Elem *str);
 ```
 
-`traits_type::`str에서 시작 하는 시퀀스의 N = [길이](../standard-library/char-traits-struct.md#length)() 길이를 결정 `str` 하 고 시퀀스를 삽입 합니다. *str* N < `_Ostr.`[width](../standard-library/ios-base-class.md#width)인 경우 함수는 `_Ostr.width` - N 채우기 문자의 반복도 삽입합니다. 반복은 ( `_Ostr` . [flags](../standard-library/ios-base-class.md#flags)  &  플래그 `adjustfield` ! = [left](../standard-library/ios-functions.md#left). 그렇지 않은 경우에는 반복이 시퀀스 뒤에 옵니다. 함수는 *_Ostr*를 반환 합니다.
+`traits_type::`str에서 시작 하는 시퀀스의 N = [길이](../standard-library/char-traits-struct.md#length)() 길이를 결정 `str` 하 고 시퀀스를 삽입 합니다.  N < `_Ostr.`[width](../standard-library/ios-base-class.md#width)인 경우 함수는 `_Ostr.width` - N 채우기 문자의 반복도 삽입합니다. 반복은 ( `_Ostr` . [](../standard-library/ios-base-class.md#flags)  &  플래그 `adjustfield` ! = [left](../standard-library/ios-functions.md#left). 그렇지 않은 경우에는 반복이 시퀀스 뒤에 옵니다. 함수는 *_Ostr* 를 반환 합니다.
 
 다음 템플릿 함수는
 
@@ -124,7 +125,7 @@ basic_ostream<Elem, _Tr>& operator<<(
     Elem _Ch);
 ```
 
-`_Ch` 요소를 삽입합니다. 1 < `_Ostr.width`인 경우 함수는 `_Ostr.width` - 1 채우기 문자의 반복도 삽입합니다. `_Ostr.flags & adjustfield != left`인 경우 반복은 시퀀스 앞에 옵니다. 그렇지 않은 경우에는 반복이 시퀀스 뒤에 옵니다. *_Ostr*를 반환 합니다.
+`_Ch` 요소를 삽입합니다. 1 < `_Ostr.width`인 경우 함수는 `_Ostr.width` - 1 채우기 문자의 반복도 삽입합니다. `_Ostr.flags & adjustfield != left`인 경우 반복은 시퀀스 앞에 옵니다. 그렇지 않은 경우에는 반복이 시퀀스 뒤에 옵니다. *_Ostr* 를 반환 합니다.
 
 다음 템플릿 함수는
 
@@ -144,7 +145,7 @@ basic_ostream<Elem, _Tr>& operator<<(
     const Elem *str);
 ```
 
-*str* 에서 시작 하는 시퀀스의 각 요소가 *_Ch* `Elem` `_Ostr.` [put](../standard-library/basic-ostream-class.md#put)( `_Ostr.` [넓히기](../standard-library/basic-ios-class.md#widen)())을 호출 하 여 형식의 개체로 변환 된다는 점을 제외 하 고 _Ch `_Ch` .
+*str* 에서 시작 하는 시퀀스의 각 요소가  `Elem` `_Ostr.` [put](../standard-library/basic-ostream-class.md#put)( `_Ostr.` [넓히기](../standard-library/basic-ios-class.md#widen)())을 호출 하 여 형식의 개체로 변환 된다는 점을 제외 하 고 _Ch `_Ch` .
 
 다음 템플릿 함수는
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 메모리 관리: 프레임 할당'
 title: '메모리 관리: 프레임 할당'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - frame allocation [MFC]
 - frame variables [MFC]
 ms.assetid: 945a211a-6f4f-4679-bb6a-b0f2a0d4a6c1
-ms.openlocfilehash: cb66a0c0aea16f7e6831b6a1aff1a125df355210
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1763d332275f17ee082b891830641ebc61cad054
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225048"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97193437"
 ---
 # <a name="memory-management-frame-allocation"></a>메모리 관리: 프레임 할당
 

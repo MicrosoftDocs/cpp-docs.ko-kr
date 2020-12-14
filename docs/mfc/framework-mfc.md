@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 프레임 워크 (MFC)'
 title: 프레임워크(MFC)
 ms.date: 09/17/2019
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - Windows API [MFC], encapsulation by MFC
 - encapsulated Win32 API [MFC]
 ms.assetid: 3be0fec8-9843-4119-ae42-ece993ef500b
-ms.openlocfilehash: b02d5a1862a278f46591895f20f58a97367b5ab2
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 12e5a28e231dfadec867213ebf1cea6fd6ae7300
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618793"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97193489"
 ---
 # <a name="framework-mfc"></a>프레임워크(MFC)
 
@@ -31,7 +32,7 @@ MFC (Microsoft Foundation Class) 라이브러리 프레임 워크를 사용 하�
 
 [SDI 및 MDI](sdi-and-mdi.md)
 
-[문서, 뷰 및 프레임워크](documents-views-and-the-framework.md)
+[문서, 뷰 및 프레임 워크](documents-views-and-the-framework.md)
 
 [마법사 및 리소스 편집기](wizards-and-the-resource-editors.md)
 
@@ -39,9 +40,9 @@ MFC (Microsoft Foundation Class) 라이브러리 프레임 워크를 사용 하�
 
 [프레임 워크를 기반으로 빌드](building-on-the-framework.md)
 
-[프레임워크가 코드를 호출하는 방법](how-the-framework-calls-your-code.md)
+[프레임 워크가 코드를 호출 하는 방법](how-the-framework-calls-your-code.md)
 
-[CWinApp: 애플리케이션 클래스](cwinapp-the-application-class.md)
+[CWinApp: 응용 프로그램 클래스](cwinapp-the-application-class.md)
 
 [문서 템플릿 및 문서/뷰 만들기 프로세스](document-templates-and-the-document-view-creation-process.md)
 
@@ -51,4 +52,4 @@ MFC (Microsoft Foundation Class) 라이브러리 프레임 워크를 사용 하�
 
 ## <a name="see-also"></a>참고 항목
 
-[클래스를 사용하여 Windows 애플리케이션 작성](using-the-classes-to-write-applications-for-windows.md)
+[클래스를 사용 하 여 Windows 용 응용 프로그램 작성](using-the-classes-to-write-applications-for-windows.md)

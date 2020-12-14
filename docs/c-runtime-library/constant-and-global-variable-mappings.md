@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 상수 및 전역 변수 매핑'
 title: 상수 및 전역 변수 매핑
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - _tenviron function
 - _tfinddata_t function
 ms.assetid: 3af4fd3e-9ed5-4ed9-96fd-7031e5126fd1
-ms.openlocfilehash: 1bd96c7a305f588a24b0c6d31b2a0132d6546574
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: 6078564a5f9d6ef28de704f4991264b5de58041b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57750198"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97195764"
 ---
 # <a name="constant-and-global-variable-mappings"></a>상수 및 전역 변수 매핑
 
@@ -38,5 +39,5 @@ ms.locfileid: "57750198"
 [일반 텍스트 매핑](../c-runtime-library/generic-text-mappings.md)<br/>
 [데이터 형식 매핑](../c-runtime-library/data-type-mappings.md)<br/>
 [루틴 매핑](../c-runtime-library/routine-mappings.md)<br/>
-[샘플 일반 텍스트 프로그램](../c-runtime-library/a-sample-generic-text-program.md)<br/>
-[일반 텍스트 매핑 사용](../c-runtime-library/using-generic-text-mappings.md)
+[샘플 Generic-Text 프로그램](../c-runtime-library/a-sample-generic-text-program.md)<br/>
+[Generic-Text 매핑 사용](../c-runtime-library/using-generic-text-mappings.md)

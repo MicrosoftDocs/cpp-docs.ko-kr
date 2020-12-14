@@ -1,14 +1,15 @@
 ---
+description: '자세한 정보: Microsoft:: WRL::D etails 네임 스페이스'
 title: Microsoft::WRL::Details 네임스페이스
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: d71fe149-d804-4c6f-961d-43fe21ef8630
-ms.openlocfilehash: 50208242d77d7b54951bcb44608f1a20b5147efc
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c82d7389c80d35aa041dccc7c6bc8d202fba9c29
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223475"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97195114"
 ---
 # <a name="microsoftwrldetails-namespace"></a>Microsoft::WRL::Details 네임스페이스
 
@@ -41,7 +42,7 @@ namespace Microsoft::WRL::Details;
 |----------|-----------------|
 |[ArgTraits 구조체](argtraits-structure.md)|지정 된 대리자 인터페이스와 지정 된 수의 매개 변수를 포함 하는 익명 멤버 함수를 선언 합니다.|
 |[ArgTraitsHelper 구조체](argtraitshelper-structure.md)|대리자 인수의 일반적인 특성을 정의 하는 데 도움이 됩니다.|
-|[BoolStruct 구조체](boolstruct-structure.md)|가 `ComPtr` 인터페이스의 개체 수명을 관리 하는지 여부를 정의 합니다. `BoolStruct`은 [BoolType ()](comptr-class.md#operator-microsoft-wrl-details-booltype) 연산자에 의해 내부적으로 사용 됩니다.|
+|[BoolStruct 구조체](boolstruct-structure.md)|가 `ComPtr` 인터페이스의 개체 수명을 관리 하는지 여부를 정의 합니다. `BoolStruct` 은 [BoolType ()](comptr-class.md#operator-microsoft-wrl-details-booltype) 연산자에 의해 내부적으로 사용 됩니다.|
 |[CreatorMap 구조체](creatormap-structure.md)|개체를 초기화, 등록 및 등록 취소 하는 방법에 대 한 정보를 포함 합니다.|
 |[DerefHelper 구조체](derefhelper-structure.md)|템플릿 매개 변수에 대 한 역참조 된 포인터를 나타냅니다 `T*` .|
 |[EnableIf 구조체](enableif-structure.md)|첫 번째 템플릿 매개 변수가로 평가 될 경우 두 번째 템플릿 매개 변수로 지정 된 형식의 데이터 멤버를 정의 합니다 **`true`** .|
@@ -56,7 +57,7 @@ namespace Microsoft::WRL::Details;
 |[IsSame 구조체](issame-structure.md)|지정 된 형식이 다른 지정 된 형식과 동일한 지 테스트 합니다.|
 |[Nil 구조체](nil-structure.md)|지정 되지 않은 선택적 템플릿 매개 변수를 나타내는 데 사용 됩니다.|
 |[RemoveReference 구조체](removereference-structure.md)|지정 된 클래스 템플릿 매개 변수에서 참조 또는 rvalue 참조 특성을 제거 합니다.|
-|[RuntimeClassBase 구조체](runtimeclassbase-structure.md)|함수에서를 검색 하는 데 사용 `RuntimeClass` 됩니다. [Make](make-function.md)|
+|[RuntimeClassBase 구조체](runtimeclassbase-structure.md)|함수에서를 검색 하는 데 사용 `RuntimeClass` 됩니다. [](make-function.md)|
 |[RuntimeClassBaseT 구조체](runtimeclassbaset-structure.md)|작업 및 인터페이스 Id 가져오기에 대 한 도우미 메서드를 제공 `QueryInterface` 합니다.|
 |[VerifyInheritanceHelper 구조체](verifyinheritancehelper-structure.md)|한 인터페이스가 다른 인터페이스에서 파생 되는지 테스트 합니다.|
 |[VerifyInterfaceHelper 구조체](verifyinterfacehelper-structure.md)|템플릿 매개 변수로 지정 된 인터페이스가 특정 요구 사항을 충족 하는지 확인 합니다.|
@@ -67,7 +68,7 @@ namespace Microsoft::WRL::Details;
 |----------|-----------------|
 |[AsyncStatusInternal 열거형](asyncstatusinternal-enumeration.md)|비동기 작업의 상태와 열거형의 내부 열거형 간 매핑을 지정 합니다 `Windows::Foundation::AsyncStatus` .|
 
-### <a name="functions"></a>Functions
+### <a name="functions"></a>함수
 
 |Name|설명|
 |----------|-----------------|

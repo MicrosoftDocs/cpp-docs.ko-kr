@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: &lt; 배열&gt;'
 title: '&lt;array&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - array header
 ms.assetid: 084147c1-e805-478e-8201-76846020f187
-ms.openlocfilehash: b515578e658d658722f92e48a7ac5ab78727c465
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: c7c593fec9cf240ae28f8d05e1c56c743a7a3e42
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834949"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97193073"
 ---
 # <a name="ltarraygt"></a>&lt;array&gt;
 
@@ -47,7 +48,7 @@ ms.locfileid: "88834949"
 |[연산자>](../standard-library/array-operators.md#op_gt)|배열 비교, 보다 큼|
 |[연산자<=](../standard-library/array-operators.md#op_lt_eq)|배열 비교, 보다 작거나 같음|
 
-### <a name="functions"></a>Functions
+### <a name="functions"></a>함수
 
 |Name|설명|
 |-|-|

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Platform:: Guid 값 클래스'
 title: Platform::Guid 값 클래스
 ms.date: 01/15/2019
 ms.topic: reference
@@ -7,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Guid Struct
 ms.assetid: 25c0bfb2-7f93-44d8-bdf4-ef4fbac3424a
-ms.openlocfilehash: 7c3b89ff238b1cb5ee9fbb71e83d20f571e656a3
-ms.sourcegitcommit: 89d9e1cb08fa872483d1cde98bc2a7c870e505e9
+ms.openlocfilehash: 4c2ffc5096e6b40266fef0934acc562edf721c24
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "82031539"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97195192"
 ---
 # <a name="platformguid-value-class"></a>Platform::Guid 값 클래스
 
-Represents a [GUID](/windows/win32/api/guiddef/ns-guiddef-guid type in the Windows Runtime type system.
+Windows 런타임 형식 시스템의 [GUID] (/windows/win32/api/guiddef/ns-guiddef-guid 형식)를 나타냅니다.
 
 ## <a name="syntax"></a>구문
 
@@ -26,31 +27,31 @@ public value struct Guid
 
 ### <a name="members"></a>멤버
 
-`Platform::Guid`의 `Equals()`에서 `GetHashCode()`의 `ToString()` 이 및 메서드는 [플랫폼 ::Object 클래스](../cppcx/platform-object-class.md)및 [플랫폼::Type 클래스에서](../cppcx/platform-type-class.md)파생된 `GetTypeCode()` 메서드입니다. `Platform::Guid`또한 다음과 같은 회원이 있습니다.
+`Platform::Guid` 에는 `Equals()` `GetHashCode()` `ToString()` [Platform:: Object 클래스](../cppcx/platform-object-class.md)에서 파생 된, 및 메서드와 `GetTypeCode()` [platform:: Type 클래스](../cppcx/platform-type-class.md)에서 파생 된 메서드가 있습니다. `Platform::Guid` 또한에는 다음과 같은 멤버도 있습니다.
 
-|멤버|Description|
+|멤버|설명|
 |------------|-----------------|
-|[Guid](#ctor)|`Platform::Guid`의 새 인스턴스를 초기화합니다.|
-|[연산자==](#operator-equality)|같음 연산자입니다.|
-|[연산자!=](#operator-inequality)|같지 않음 연산자입니다.|
+|[Eid](#ctor)|`Platform::Guid`의 새 인스턴스를 초기화합니다.|
+|[연산자 = =](#operator-equality)|같음 연산자입니다.|
+|[연산자! =](#operator-inequality)|같지 않음 연산자입니다.|
 |[연산자&lt;](#operator-less)|보다 작음 연산자입니다.|
-|[연산자()](#operator-call)|`Platform::Guid` 를 `GUID`로 변환합니다.|
+|[연산자 ()](#operator-call)|`Platform::Guid` 를 `GUID`로 변환합니다.|
 
 ### <a name="remarks"></a>설명
 
-새 `Platform::Guid`를 생성 하려면 [Windows::기초::GuidHelp::CreateNewGuid](/uwp/api/windows.foundation.guidhelper.createnewguid) 정적 메서드를 사용 합니다.
+새을 생성 하려면 `Platform::Guid` [Windows:: Foundation:: GuidHelper:: CreateNewGuid](/uwp/api/windows.foundation.guidhelper.createnewguid) 정적 메서드를 사용 합니다.
 
 ### <a name="requirements"></a>요구 사항
 
-**지원되는 최소 클라이언트:** 윈도우 8
+**지원 되는 최소 클라이언트:** Windows 8
 
-**지원되는 최소 서버:** 윈도우 서버 2012
+**지원 되는 최소 서버:** Windows Server 2012
 
 **네임스페이스:** Platform
 
-**메타데이터:** 플랫폼.winmd
+**메타 데이터:** platform.object
 
-## <a name="guidguid-constructors"></a><a name="ctor"></a>Guid::Guid 생성자
+## <a name="guidguid-constructors"></a><a name="ctor"></a> Guid:: Guid 생성자
 
 `Platform::Guid`의 새 인스턴스를 초기화합니다.
 
@@ -81,46 +82,46 @@ Guid(
 
 ### <a name="parameters"></a>매개 변수
 
-*a.*<br/>
-의 처음 4 바이트. `GUID`
+*은*<br/>
+의 처음 4 바이트입니다 `GUID` .
 
-*B*<br/>
-의 다음 2 바이트. `GUID`
+*b*<br/>
+의 다음 2 바이트입니다 `GUID` .
 
-*C*<br/>
-의 다음 2 바이트. `GUID`
+*c*<br/>
+의 다음 2 바이트입니다 `GUID` .
 
-*D*<br/>
+*d*<br/>
 `GUID`의 다음 바이트입니다.
 
-*전자*<br/>
+*e*<br/>
 `GUID`의 다음 바이트입니다.
 
-*F*<br/>
+*f*<br/>
 `GUID`의 다음 바이트입니다.
 
-*G*<br/>
+*g*<br/>
 `GUID`의 다음 바이트입니다.
 
-*H*<br/>
+*h*<br/>
 `GUID`의 다음 바이트입니다.
 
-*Ⅰ*<br/>
+*i*<br/>
 `GUID`의 다음 바이트입니다.
 
-*J*<br/>
+*j*<br/>
 `GUID`의 다음 바이트입니다.
 
-*k*<br/>
+*시계의*<br/>
 `GUID`의 다음 바이트입니다.
 
-*M*<br/>
-A는 `GUID` GUID [구조를](/windows/win32/api/guiddef/ns-guiddef-guid)형성한다.
+*m*<br/>
+`GUID` [GUID 구조체](/windows/win32/api/guiddef/ns-guiddef-guid)를 형성 하는의입니다.
 
 *n*<br/>
-의 나머지 8 바이트. `GUID`
+의 나머지 8 바이트입니다 `GUID` .
 
-## <a name="guidoperator-operator"></a><a name="operator-equality"></a>Guid::연산자== 연산자
+## <a name="guidoperator-operator"></a><a name="operator-equality"></a> Guid:: operator = = 연산자
 
 두 `Platform::Guid` 인스턴스가 같은지 비교합니다.
 
@@ -138,15 +139,15 @@ static bool Platform::Guid::operator==(Platform::Guid guid1, Platform::Guid guid
 *guid2*<br/>
 비교할 두 번째 `Platform::Guid`입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-두 `Platform::Guid` 인스턴스가 같으면 true입니다.
+두 `Platform::Guid` 인스턴스가 같으면 True입니다.
 
 ### <a name="remarks"></a>설명
 
-`==` [Windows::Foundation::GuidHelper::정적](/uwp/api/windows.foundation.guidhelper.equals) 메서드와 동일합니다.
+`==` [Windows:: Foundation:: GuidHelper:: Equals](/uwp/api/windows.foundation.guidhelper.equals) 정적 메서드 대신 연산자를 사용 하는 것이 좋습니다.
 
-## <a name="guidoperator-operator"></a><a name="operator-inequality"></a>Guid::연산자!= 연산자
+## <a name="guidoperator-operator"></a><a name="operator-inequality"></a> Guid:: operator! = 연산자
 
 두 `Platform::Guid` 인스턴스가 다른지 비교합니다.
 
@@ -164,13 +165,13 @@ static bool Platform::Guid::operator!=(Platform::Guid guid1, Platform::Guid guid
 *guid2*<br/>
 비교할 두 번째 `Platform::Guid`입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-두 `Platform::Guid` 인스턴스가 같지 않은 경우 true입니다.
+두 `Platform::Guid` 인스턴스가 같지 않으면 True입니다.
 
-## <a name="guidoperatorlt-operator"></a><a name="operator-less"></a>Guid::연산자&lt;
+## <a name="guidoperatorlt-operator"></a><a name="operator-less"></a> Guid:: operator &lt; 연산자
 
-순서를 `Platform::Guid` 정할 두 인스턴스를 비교합니다.
+두 `Platform::Guid` 인스턴스의 순서를 비교 합니다.
 
 ### <a name="syntax"></a>구문
 
@@ -186,15 +187,15 @@ static bool Platform::Guid::operator<(Platform::Guid guid1, Platform::Guid guid2
 *guid2*<br/>
 비교할 두 번째 `Platform::Guid`입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-*guid1이* *guid2*전에 주문된 경우 true입니다. 순서는 각각 `Platform::Guid` 32비트 서명되지 않은 값 4개배열인 것처럼 처리한 후 사전순입니다. 이는 SQL Server 또는 .NET Framework에서 사용하는 순서가 아니며 문자열 표현에 의한 사전 순서와 동일하지도 않습니다.
+*Guid1* 가 *guid2* 앞에 정렬 되 면 True입니다. 사전적는 `Platform::Guid` 4 32 비트 부호 없는 값의 배열인 것 처럼 각를 처리 한 후에 정렬 됩니다. 이는 SQL Server 또는 .NET Framework에서 사용 되는 순서가 아니라 문자열 표현에 따라 사전순으로 정렬 하는 것과 동일 하지 않습니다.
 
-이 연산자는 `Guid` C++ 표준 라이브러리에서 개체를 보다 쉽게 사용할 수 있도록 제공됩니다.
+이 연산자는 `Guid` c + + 표준 라이브러리에서 개체를 더 쉽게 사용할 수 있도록 제공 됩니다.
 
-## <a name="guidoperator-operator"></a><a name="operator-call"></a>Guid::연산자() 연산자
+## <a name="guidoperator-operator"></a><a name="operator-call"></a> Guid:: operator () 연산자
 
-암시적으로 a를 `Platform::Guid` [GUID 구조로](/windows/win32/api/guiddef/ns-guiddef-guid)변환합니다.
+는를 `Platform::Guid` [GUID 구조체로](/windows/win32/api/guiddef/ns-guiddef-guid)암시적으로 변환 합니다.
 
 ### <a name="syntax"></a>구문
 
@@ -204,8 +205,8 @@ const GUID& Platform::Guid::operator();
 
 ### <a name="return-value"></a>Return Value
 
-[GUID 구조.](/windows/win32/api/guiddef/ns-guiddef-guid)
+[GUID 구조체](/windows/win32/api/guiddef/ns-guiddef-guid)입니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [Platform 네임스페이스](../cppcx/platform-namespace-c-cx.md)

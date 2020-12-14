@@ -1,4 +1,5 @@
 ---
+description: 자세히 알아보기:/D (전처리기 정의)
 title: /D(전처리기 정의)
 ms.date: 09/18/2019
 f1_keywords:
@@ -13,18 +14,18 @@ helpviewer_keywords:
 - -D compiler option [C++]
 - D compiler option [C++]
 ms.assetid: b53fdda7-8da1-474f-8811-ba7cdcc66dba
-ms.openlocfilehash: 7c8a500820c8cc4655c409f4628d72a69acafa5a
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 6ae7dcd81e1821d4c3a8a2f6d5c1b711c0faa9f2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040940"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97196830"
 ---
 # <a name="d-preprocessor-definitions"></a>/D(전처리기 정의)
 
 소스 파일에 대한 전처리 기호를 정의합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **/D** \[ ]_name_ \[ `=` \| `#` \[ { *string* \| *number* }]] \
 > **/D** \[ ] `"` _name_ \[ `=` \| `#` \[ { *string* \| *number* }]]`"`
@@ -71,11 +72,11 @@ CL /DTEST=%% TEST.C
 
 1. 프로젝트 **속성 페이지** 대화 상자를 엽니다. 자세한 정보는 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조하세요.
 
-1. 왼쪽 창에서 **구성 속성**, **C/c + +**, **전처리기**를 선택 합니다.
+1. 왼쪽 창에서 **구성 속성**, **C/c + +**, **전처리기** 를 선택 합니다.
 
-1. 오른쪽 창에서 **전처리기 정의** 속성의 오른쪽 열에 있는 드롭다운 메뉴를 열고 **편집**을 선택 합니다.
+1. 오른쪽 창에서 **전처리기 정의** 속성의 오른쪽 열에 있는 드롭다운 메뉴를 열고 **편집** 을 선택 합니다.
 
-1. **전처리기 정의** 대화 상자에서 하나 이상의 정의를 한 줄에 하나씩 추가 하거나, 수정 하거나, 삭제 합니다. **확인**을 선택하여 변경 내용을 저장합니다.
+1. **전처리기 정의** 대화 상자에서 하나 이상의 정의를 한 줄에 하나씩 추가 하거나, 수정 하거나, 삭제 합니다. **확인** 을 선택하여 변경 내용을 저장합니다.
 
    여기에서 지정 하는 정의에 '/D ' 옵션 접두사를 포함할 필요가 없습니다. 속성 페이지에서 정의는 세미콜론 ()으로 구분 됩니다 `;` .
 
@@ -107,7 +108,7 @@ TEST defined 1
 ## <a name="see-also"></a>참고 항목
 
 [MSVC 컴파일러 옵션](compiler-options.md)\
-[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)\
+[MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)\
 [/FI (강제 포함 파일 이름)](fi-name-forced-include-file.md)\
 [/U,/u (기호 정의 해제)](u-u-undefine-symbols.md)\
 [#undef 지시문 (C/c + +)](../../preprocessor/hash-undef-directive-c-cpp.md)\
