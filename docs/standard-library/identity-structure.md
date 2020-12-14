@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: id 구조'
 title: identity 구조체
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - identity class
 - identity structure
 ms.assetid: 990756fd-7969-4b39-ad7e-0878e8dac8fd
-ms.openlocfilehash: 49b2c1eb3ca03f9bf9199bdbca49348866ff0a7e
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 753a3b697eb2a77dd102f681403fd23d7062cb36
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68246159"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97231760"
 ---
 # <a name="identity-structure"></a>identity 구조체
 
@@ -29,11 +30,11 @@ struct identity {
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽*\
+*비어*\
 식별할 값입니다.
 
 ## <a name="remarks"></a>설명
 
 클래스에는 템플릿 매개 변수 Type과 동일한 public 형식 정의 `type`이 포함되어 있습니다. 템플릿 함수 [forward](../standard-library/utility-functions.md#forward)와 함께 사용되어 함수 매개 변수가 원하는 형식을 갖도록 합니다.
 
-이전 코드와 호환성을 위해 클래스 정의 identity 함수 `operator()` 인수로 반환 *왼쪽*합니다.
+이전 코드와의 호환성을 위해 클래스는 인수를 왼쪽으로 `operator()` 반환 하는 id 함수도 정의 합니다.

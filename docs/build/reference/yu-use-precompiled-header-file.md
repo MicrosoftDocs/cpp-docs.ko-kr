@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: `/Yu` (미리 컴파일된 헤더 파일 사용)'
 title: /Yu(미리 컴파일된 헤더 파일 사용)
 ms.date: 07/31/2020
 f1_keywords:
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - .pch files, use existing
 - precompiled header files, use existing
 ms.assetid: 24f1bd0e-b624-4296-a17e-d4b53e374e1f
-ms.openlocfilehash: 8cccce39949f23e4ceb72807ecaef3597ab733c4
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 7076a3a4dd9183a3a0072fa6211acbb0b95a4865
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520464"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97229965"
 ---
-# <a name="yu-use-precompiled-header-file"></a>`/Yu`(미리 컴파일된 헤더 파일 사용)
+# <a name="yu-use-precompiled-header-file"></a>`/Yu` (미리 컴파일된 헤더 파일 사용)
 
 컴파일러가 현재 컴파일에서 기존의 미리 컴파일된 헤더 () 파일을 사용 하도록 지시 *`.pch`* 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **`/Yu`**\[*파일 이름*]
 
@@ -39,21 +40,21 @@ ms.locfileid: "87520464"
 
 를 *`.pch`* 사용 하 여 파일을 만들어야 합니다 **`/Yc`** .
 
-컴파일러는 .h 파일 이전에 발생 하는 모든 코드를 미리 컴파일된 것으로 처리 합니다. 이 `#include` 지시문은 파일에 연결 된 지시문 바로 다음에 *`.h`* 파일에 포함 된 코드를 사용 하 *`.pch`* 고 파일 *이름*뒤에 모든 코드를 컴파일하는 것으로 건너뜁니다.
+컴파일러는 .h 파일 이전에 발생 하는 모든 코드를 미리 컴파일된 것으로 처리 합니다. 이 `#include` 지시문은 파일에 연결 된 지시문 바로 다음에 *`.h`* 파일에 포함 된 코드를 사용 하 *`.pch`* 고 파일 *이름* 뒤에 모든 코드를 컴파일하는 것으로 건너뜁니다.
 
-명령줄에서 **`/Yu`** 및 *파일 이름*사이에는 공백이 허용 되지 않습니다.
+명령줄에서 **`/Yu`** 및 *파일 이름* 사이에는 공백이 허용 되지 않습니다.
 
 파일 이름 없이 옵션을 지정 하는 경우 **`/Yu`** 소스 프로그램에는 [`#pragma hdrstop`](../../preprocessor/hdrstop.md) 미리 컴파일된 헤더 파일의 파일 이름을 지정 하는 pragma가 포함 되어 있어야 합니다 *`.pch`* . 이 경우 컴파일러는에 의해 이름이 지정 된 미리 컴파일된 헤더 (파일)를 사용 합니다 *`.pch`* [`/Fp (Name .pch file)`](fp-name-dot-pch-file.md) . 컴파일러가 해당 pragma의 위치로 건너뛰고 지정 된 미리 컴파일된 헤더 파일에서 컴파일된 상태를 복원 합니다. 그런 다음 pragma 다음에 오는 코드만 컴파일합니다. `#pragma hdrstop`에서 파일 이름을 지정 하지 않은 경우 컴파일러는 확장명이 인 소스 파일의 기본 이름에서 파생 된 이름을 사용 하 여 파일을 찾습니다 *`.pch`* . 옵션을 사용 하 여 **`/Fp`** 다른 파일을 지정할 수도 있습니다 *`.pch`* .
 
 **`/Yu`** 파일 이름 없이 옵션을 지정 하 고 pragma를 지정 하지 않으면 `hdrstop` 오류 메시지가 생성 되 고 컴파일이 실패 합니다.
 
-**`/Yc`** _filename_ **`/Yu`** 같은 명령줄에서 파일 이름 및 _파일_ 이름 옵션을 사용 하 고 둘 다 동일한 파일 이름을 참조 하는 경우 파일 이름에 우선 순위를 지정 하 여 명명 된 파일을 포함 하 여 **`/Yc`** _filename_ 모든 코드를 미리 컴파일하는 것입니다. 이 기능은 메이크파일 작성을 간소화 합니다.
+**`/Yc`**  **`/Yu`** 같은 명령줄에서 파일 이름 및 _파일_ 이름 옵션을 사용 하 고 둘 다 동일한 파일 이름을 참조 하는 경우 파일 이름에 우선 순위를 지정 하 여 명명 된 파일을 포함 하 여 **`/Yc`**  모든 코드를 미리 컴파일하는 것입니다. 이 기능은 메이크파일 작성을 간소화 합니다.
 
 파일에는 *`.pch`* 컴퓨터 환경 및 프로그램에 대 한 메모리 주소 정보에 대 한 정보가 포함 되어 있으므로 파일을 만든 컴퓨터 에서만 파일을 사용 해야 합니다 *`.pch`* .
 
 미리 컴파일된 헤더에 대 한 자세한 내용은 다음을 참조 하세요.
 
-- [`/Y`(미리 컴파일된 헤더)](y-precompiled-headers.md)
+- [`/Y` (미리 컴파일된 헤더)](y-precompiled-headers.md)
 
 - [미리 컴파일된 헤더 파일](../creating-precompiled-header-files.md)
 
@@ -92,7 +93,7 @@ CL /YuMYAPP.H /FpMYPCH.pch PROG.CPP
 
 이 명령은 이라는 미리 컴파일된 헤더 파일을 지정 합니다 *`MYPCH.pch`* . 컴파일러는 해당 콘텐츠를 사용 하 여 모든 헤더 파일의 미리 컴파일된 상태를까지 복원 *`MYAPP.h`* 합니다. 그런 다음 컴파일러는 * 지시문 후에 발생 하는 코드를 컴파일합니다 `#include "MYAPP.h"` .
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
 [MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

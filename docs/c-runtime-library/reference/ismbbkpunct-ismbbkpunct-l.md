@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _ismbbkpunct, _ismbbkpunct_l'
 title: _ismbbkpunct, _ismbbkpunct_l
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - ismbbkpunct function
 - _ismbbkpunct function
 ms.assetid: a04c59cd-5ca7-4296-bec0-2b0d7f04edd0
-ms.openlocfilehash: 8cf2d0d38466c370d0110b71a302471679e64657
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: da17df927b337e67df553baec8d56491db10a3d3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915690"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97229732"
 ---
 # <a name="_ismbbkpunct-_ismbbkpunct_l"></a>_ismbbkpunct, _ismbbkpunct_l
 
@@ -65,9 +66,9 @@ int _ismbbkpunct_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-정수 *c* 가 ASCII가 아닌 문장 부호 기호 이면 **_ismbbkpunct** 0이 아닌 값을 반환 하 고 그렇지 않으면 0을 반환 합니다. 예를 들어 **_ismbbkpunct**는 932 코드 페이지에서만 가타카나 문장 부호를 테스트합니다. **_ismbbkpunct** 은 모든 로캘 종속 문자 설정에 대해 현재 로캘을 사용 합니다. **_ismbbkpunct_l** 은 전달 된 로캘을 사용 한다는 점을 제외 하 고 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+정수 *c* 가 ASCII가 아닌 문장 부호 기호 이면 **_ismbbkpunct** 0이 아닌 값을 반환 하 고 그렇지 않으면 0을 반환 합니다. 예를 들어 **_ismbbkpunct** 는 932 코드 페이지에서만 가타카나 문장 부호를 테스트합니다. **_ismbbkpunct** 은 모든 로캘 종속 문자 설정에 대해 현재 로캘을 사용 합니다. **_ismbbkpunct_l** 은 전달 된 로캘을 사용 한다는 점을 제외 하 고 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
@@ -82,7 +83,7 @@ int _ismbbkpunct_l(
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [바이트 분류](../../c-runtime-library/byte-classification.md)<br/>
 [_ismbb 루틴](../../c-runtime-library/ismbb-routines.md)<br/>

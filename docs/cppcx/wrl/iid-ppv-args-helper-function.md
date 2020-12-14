@@ -1,4 +1,5 @@
 ---
+description: IID_PPV_ARGS_Helper 함수에 대해 자세히 알아보세요.
 title: IID_PPV_ARGS_Helper 함수
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - IID_PPV_ARGS_Helper function
 ms.assetid: afee9b23-8df1-4575-903f-e9ba748418f0
-ms.openlocfilehash: 6b1ab2e8e93fda194532fbc8d6f484aaa91249d8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7003a3270a6fdb2070055e0059b106f55324c63e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212971"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97229147"
 ---
 # <a name="iid_ppv_args_helper-function"></a>IID_PPV_ARGS_Helper 함수
 
@@ -33,12 +34,12 @@ void** IID_PPV_ARGS_Helper(
 ### <a name="parameters"></a>매개 변수
 
 *T*<br/>
-인수 *pp*의 유형입니다.
+인수 *pp* 의 유형입니다.
 
 *페이지*<br/>
 이중 간접 포인터입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 인수 *pp* 를에 대 한 포인터 포인터에 캐스팅 **`void`** 합니다.
 

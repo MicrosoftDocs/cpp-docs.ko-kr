@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: &lt; type_traits&gt;'
 title: '&lt;type_traits&gt;'
 ms.date: 02/21/2019
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - typetrait header
 - type_traits
 ms.assetid: 2260b51f-8160-4c66-a82f-00b534cb60d4
-ms.openlocfilehash: 42c94daf331fd9a17e050067e4c4e495af180b0c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: cf7bb4a5bf73eb49526926c151ffbbd0b55fda5b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841703"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97226495"
 ---
 # <a name="lttype_traitsgt"></a>&lt;type_traits&gt;
 
@@ -28,9 +29,9 @@ ms.locfileid: "88841703"
 
 의 클래스 및 템플릿은 \<type_traits> 컴파일 시간에 형식 유추, 분류 및 변환을 지 원하는 데 사용 됩니다. 또한 형식 관련 오류를 감지 하 고 일반 코드를 최적화 하는 데 사용 됩니다. 단항 형식 특성은 형식의 속성을 설명 하 고, 이진 형식 특성은 형식 간의 관계를 설명 하며, 변환 특성은 형식의 속성을 수정 합니다.
 
-도우미 클래스 `integral_constant` 와 해당 템플릿 특수화 `true_type` 및 `false_type` 형식 조건자의 기본 클래스를 구성 합니다. *형식 조건자*는 형식 인수를 하나 이상 사용하는 템플릿입니다. 형식 조건자가 *true 이면* [true_type](../standard-library/type-traits-typedefs.md#true_type)에서 직접 또는 간접적으로 공개적으로 파생 됩니다. 형식 조건자가 *false*이면 [false_type](../standard-library/type-traits-typedefs.md#false_type)에서 직접 또는 간접적으로 공개적으로 파생 됩니다.
+도우미 클래스 `integral_constant` 와 해당 템플릿 특수화 `true_type` 및 `false_type` 형식 조건자의 기본 클래스를 구성 합니다. *형식 조건자* 는 형식 인수를 하나 이상 사용하는 템플릿입니다. 형식 조건자가 *true 이면* [true_type](../standard-library/type-traits-typedefs.md#true_type)에서 직접 또는 간접적으로 공개적으로 파생 됩니다. 형식 조건자가 *false* 이면 [false_type](../standard-library/type-traits-typedefs.md#false_type)에서 직접 또는 간접적으로 공개적으로 파생 됩니다.
 
-*형식 한정자* 또는 *변환 특성*은 템플릿 인수를 하나 이상 사용하며 수정된 형식과 동일한 의미인 단일 구성원(`type`)를 포함하는 템플릿입니다.
+*형식 한정자* 또는 *변환 특성* 은 템플릿 인수를 하나 이상 사용하며 수정된 형식과 동일한 의미인 단일 구성원(`type`)를 포함하는 템플릿입니다.
 
 ### <a name="alias-templates"></a>별칭 템플릿
 

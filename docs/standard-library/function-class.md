@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 함수 클래스'
 title: function 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - std::function [C++], target
 - std::function [C++], target_type
 ms.assetid: 7b5ca76b-9ca3-4d89-8fcf-cad70a4aeae6
-ms.openlocfilehash: 052cbba69aa99d33de963a3e360e6951a6006bec
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 30e81e297791691ba5736b4e116fc08ab4229f0a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831465"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232176"
 ---
 # <a name="function-class"></a>function 클래스
 
@@ -117,7 +118,7 @@ public:
 |-|-|
 |[result_type](#result_type)|호출 가능 개체의 반환 형식입니다.|
 
-### <a name="functions"></a>Functions
+### <a name="functions"></a>함수
 
 |Name|설명|
 |-|-|
@@ -163,7 +164,7 @@ template <class Fx, class Alloc>
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 각각에 있는를로 `callable object` **`*this`** 전달 된 호출 가능 개체로 바꿉니다 `operand` . 둘 다 할당자 개체 *Ax*를 사용 하 여 저장소를 할당 합니다.
+멤버 함수는 각각에 있는를로 `callable object` **`*this`** 전달 된 호출 가능 개체로 바꿉니다 `operand` . 둘 다 할당자 개체 *Ax* 를 사용 하 여 저장소를 할당 합니다.
 
 ## <a name="function"></a><a name="function"></a> 함수
 
@@ -514,7 +515,7 @@ void swap(function& right);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 대상 개체를 **`*this`** 와 *오른쪽*으로 바꿉니다. 일정한 시간에 이 작업을 수행하고 예외를 throw하지 않습니다.
+멤버 함수는 대상 개체를 **`*this`** 와 *오른쪽* 으로 바꿉니다. 일정한 시간에 이 작업을 수행하고 예외를 throw하지 않습니다.
 
 ### <a name="example"></a>예제
 

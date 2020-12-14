@@ -1,17 +1,18 @@
 ---
+description: '자세한 정보: 구조 및 상수 정의'
 title: 구조체 및 상수 정의
 ms.date: 11/04/2016
 ms.assetid: 1df7cf46-b853-4788-a257-100d5c37997f
-ms.openlocfilehash: ea7aa1ec25bcd0e8531ef63848de26da164da668
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5a9e372815e25883cf69497c77388002a7015572
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62317863"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230330"
 ---
 # <a name="structure-and-constant-definitions"></a>구조체 및 상수 정의
 
-여러 구조를 사용 하 여 후크 함수를 사용 하 여 및 예외 중 전달 하기 위해 기본 도우미 루틴. 다음과 같습니다. 알림 및 오류 값을, 정보 구조 및 후크에 전달 된 포인터를 후크 함수 형식
+기본 도우미 루틴은 여러 구조체를 사용 하 여 후크 함수와 통신 하 고 모든 예외를 처리 합니다. 다음은 후크에 전달 되는 알림 및 오류 값, 정보 구조 및 포인터 대 후크 함수 형식입니다.
 
 ```
 //
@@ -69,6 +70,6 @@ typedef struct ImgDelayDescr {
     } ImgDelayDescr, * PImgDelayDescr;
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [도우미 함수 이해](understanding-the-helper-function.md)

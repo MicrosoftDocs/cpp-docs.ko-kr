@@ -1,4 +1,5 @@
 ---
+description: Is_pointer 클래스에 대해 자세히 알아보세요.
 title: is_pointer 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - is_pointer class
 - is_pointer
 ms.assetid: 44e0a403-7241-4e0a-8922-32877bcb9a4c
-ms.openlocfilehash: 3429875f53d65de0161c4d6f87fde7a335bb369e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 003f25a40edd3f4c0b80a8402d38027cd81949cc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222344"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230642"
 ---
 # <a name="is_pointer-class"></a>is_pointer 클래스
 

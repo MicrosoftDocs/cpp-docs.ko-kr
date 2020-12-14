@@ -1,5 +1,6 @@
 ---
-title: C임계 섹션 클래스
+description: '자세히 알아보기: CCriticalSection 클래스'
+title: CCriticalSection 클래스
 ms.date: 11/04/2016
 f1_keywords:
 - CCriticalSection
@@ -14,16 +15,16 @@ helpviewer_keywords:
 - CCriticalSection [MFC], Unlock
 - CCriticalSection [MFC], m_sect
 ms.assetid: f776f74b-5b0b-4f32-9c13-2b8e4a0d7b2b
-ms.openlocfilehash: d79199a332f6930619e6b4995b04bc590b6ea580
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 0041eea4453ec02159b26805bd5e7a264a410504
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369373"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227795"
 ---
-# <a name="ccriticalsection-class"></a>C임계 섹션 클래스
+# <a name="ccriticalsection-class"></a>CCriticalSection 클래스
 
-한 번에 하나의 스레드가 리소스 또는 코드 섹션에 액세스할 수 있도록 하는 동기화 개체인 "중요 섹션"을 나타냅니다.
+한 번에 한 스레드만 리소스 또는 코드 섹션에 액세스할 수 있도록 하는 동기화 개체인 "임계 섹션"을 나타냅니다.
 
 ## <a name="syntax"></a>구문
 
@@ -35,47 +36,47 @@ class CCriticalSection : public CSyncObject
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[C임계 섹션::C임계 섹션](#ccriticalsection)|`CCriticalSection` 개체를 생성합니다.|
+|[CCriticalSection::CCriticalSection](#ccriticalsection)|`CCriticalSection` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[C임계 섹션::잠금](#lock)|`CCriticalSection` 개체에 대한 액세스 권한을 얻는 데 사용합니다.|
-|[C임계 섹션::잠금 해제](#unlock)|`CCriticalSection` 개체를 해제합니다.|
+|[CCriticalSection:: Lock](#lock)|를 사용 하 여 개체에 대 한 액세스 권한을 얻습니다 `CCriticalSection` .|
+|[CCriticalSection:: Unlock](#unlock)|`CCriticalSection` 개체를 해제합니다.|
 
 ### <a name="public-operators"></a>Public 연산자
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|[C임계 섹션::연산자 CRITICAL_SECTION*](#operator_critical_section_star)|내부 CRITICAL_SECTION 개체에 대한 포인터를 검색합니다.|
+|[CCriticalSection:: operator CRITICAL_SECTION *](#operator_critical_section_star)|내부 CRITICAL_SECTION 개체에 대 한 포인터를 검색 합니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|[C임계 섹션::m_sect](#m_sect)|CRITICAL_SECTION 개체입니다.|
+|[CCriticalSection:: m_sect](#m_sect)|CRITICAL_SECTION 개체입니다.|
 
 ## <a name="remarks"></a>설명
 
-중요한 섹션은 한 번에 하나의 스레드만 데이터 또는 다른 제어된 리소스를 수정할 수 있는 경우에 유용합니다. 예를 들어 연결된 목록에 노드를 추가하는 것은 한 번에 하나의 스레드에서만 허용해야 하는 프로세스입니다. 개체를 `CCriticalSection` 사용하여 연결된 목록을 제어하면 한 번에 하나의 스레드만 목록에 액세스할 수 있습니다.
+중요 섹션은 한 번에 하나의 스레드만 데이터 또는 다른 제어 된 리소스를 수정할 수 있는 경우에 유용 합니다. 예를 들어 연결 된 목록에 노드를 추가 하는 프로세스는 한 번에 하나의 스레드에서만 허용 해야 하는 프로세스입니다. 개체를 사용 하 여 `CCriticalSection` 연결 된 목록을 제어 하면 한 번에 하나의 스레드만 목록에 액세스할 수 있습니다.
 
 > [!NOTE]
-> `CCriticalSection` 클래스의 기능은 실제 Win32 CRITICAL_SECTION 개체에 의해 제공됩니다.
+> 클래스의 기능은 `CCriticalSection` 실제 Win32 CRITICAL_SECTION 개체에서 제공 됩니다.
 
-중요 섹션은 속도가 중요하고 프로세스가 경계를 넘어 리소스가 사용되지 않을 때 뮤텍스 대신 [사용됩니다(CMutex](../../mfc/reference/cmutex-class.md)참조).
+중요 섹션은 속도가 중요 하 고 프로세스 경계에서 리소스가 사용 되지 않을 때 뮤텍스 ( [Cmutex](../../mfc/reference/cmutex-class.md)참조) 대신 사용 됩니다.
 
-개체를 `CCriticalSection` 사용하는 방법에는 독립 실행형 및 클래스에 포함된 두 가지 방법이 있습니다.
+개체를 사용 하는 방법에는 `CCriticalSection` 독립 실행형과 클래스에 포함 된 두 가지 방법이 있습니다.
 
-- 독립 실행형 메서드 독립 실행형 `CCriticalSection` 개체를 `CCriticalSection` 사용 하려면 필요할 때 개체를 생성 합니다. 생성자에서 성공적으로 반환된 후 [Lock](#lock)을 호출하여 개체를 명시적으로 잠급전지 임계 섹션에 액세스가 완료되면 [잠금 해제를](#unlock) 호출합니다. 이 방법은 소스 코드를 읽는 사람에게 는 명확하지만 액세스 전후에 중요한 섹션을 잠그고 잠금을 해제해야 하므로 오류가 발생하기 쉽습니다.
+- 독립 실행형 메서드 독립 실행형 개체를 사용 하 여 `CCriticalSection` `CCriticalSection` 필요한 경우 개체를 생성 합니다. 생성자에서 성공적으로 반환 된 후 [잠금](#lock)에 대 한 호출을 사용 하 여 개체를 명시적으로 잠급니다. 임계 영역에 대 한 액세스가 완료 되 면 [잠금 해제](#unlock) 를 호출 합니다. 이 메서드는 소스 코드를 읽는 사람에 게는 액세스 전후에 임계 영역을 잠그거나 잠금 해제 하는 것을 염두에 두어야 하므로 오류가 발생 하기 쉽습니다.
 
-   보다 바람직한 방법은 [CSingleLock](../../mfc/reference/csinglelock-class.md) 클래스를 사용하는 것입니다. 또한 `Lock` 메서드와 `Unlock` 메서드가 있지만 예외가 발생하면 리소스 잠금 해제에 대해 걱정할 필요가 없습니다.
+   더 나은 방법은 [Csinglelock](../../mfc/reference/csinglelock-class.md) 클래스를 사용 하는 것입니다. 또한 `Lock` 및 `Unlock` 메서드가 있지만 예외가 발생 하는 경우 리소스의 잠금을 해제 하는 것에 대해 걱정 하지 않아도 됩니다.
 
-- 포함된 메서드 클래스에 -type 데이터 멤버를 `CCriticalSection`추가하고 필요할 때 데이터 멤버를 잠그면 여러 스레드와 클래스를 공유할 수도 있습니다.
+- 포함 된 메서드 `CCriticalSection` -형식 데이터 멤버를 클래스에 추가 하 고 필요한 경우 데이터 멤버를 잠가 여러 스레드를 사용 하 여 클래스를 공유할 수도 있습니다.
 
-개체 사용에 `CCriticalSection` 대한 자세한 내용은 [다중 스레딩: 동기화 클래스 를 사용하는 방법을](../../parallel/multithreading-how-to-use-the-synchronization-classes.md)참조하십시오.
+개체를 사용 하는 방법에 대 한 자세한 내용은 `CCriticalSection` [다중 스레딩: 동기화 클래스 사용 방법](../../parallel/multithreading-how-to-use-the-synchronization-classes.md)문서를 참조 하세요.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -87,9 +88,9 @@ class CCriticalSection : public CSyncObject
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxmt.h
+**헤더:** afxmt
 
-## <a name="ccriticalsectionccriticalsection"></a><a name="ccriticalsection"></a>C임계 섹션::C임계 섹션
+## <a name="ccriticalsectionccriticalsection"></a><a name="ccriticalsection"></a> CCriticalSection::CCriticalSection
 
 `CCriticalSection` 개체를 생성합니다.
 
@@ -99,17 +100,17 @@ CCriticalSection();
 
 ### <a name="remarks"></a>설명
 
-개체에 `CCriticalSection` 액세스하거나 해제하려면 [CSingleLock](../../mfc/reference/csinglelock-class.md) 개체를 만들고 [잠금](../../mfc/reference/csinglelock-class.md#lock) 및 [잠금](../../mfc/reference/csinglelock-class.md#unlock) 해제 멤버 함수를 호출합니다. 개체가 `CCriticalSection` 독립 실행형으로 사용되는 경우 [Unlock](#unlock) 멤버 함수를 호출하여 해제합니다.
+개체에 액세스 하거나 해제 하려면 `CCriticalSection` [csinglelock](../../mfc/reference/csinglelock-class.md) 개체를 만들고 해당 [잠금](../../mfc/reference/csinglelock-class.md#lock) 및 잠금 [해제](../../mfc/reference/csinglelock-class.md#unlock) 멤버 함수를 호출 합니다. `CCriticalSection`개체가 독립 실행형으로 사용 되는 경우 해당 [잠금 해제](#unlock) 멤버 함수를 호출 하 여 해제 합니다.
 
-생성자가 필요한 시스템 메모리를 할당하지 못하면 메모리 [예외(CMemoryException](../../mfc/reference/cmemoryexception-class.md)형식)가 자동으로 throw됩니다.
+생성자가 필요한 시스템 메모리를 할당 하지 못하면 [Cmemoryexception](../../mfc/reference/cmemoryexception-class.md)형식의 메모리 예외가 자동으로 throw 됩니다.
 
 ### <a name="example"></a>예제
 
-  [CCriticalSection::Lock](#lock)에 대한 예제를 참조하십시오.
+  [CCriticalSection:: Lock](#lock)의 예제를 참조 하세요.
 
-## <a name="ccriticalsectionlock"></a><a name="lock"></a>C임계 섹션::잠금
+## <a name="ccriticalsectionlock"></a><a name="lock"></a> CCriticalSection:: Lock
 
-이 멤버 함수를 호출하여 임계 섹션 개체에 액세스합니다.
+이 멤버 함수를 호출 하 여 임계 영역 개체에 대 한 액세스 권한을 얻습니다.
 
 ```
 BOOL Lock();
@@ -118,38 +119,38 @@ BOOL Lock(DWORD dwTimeout);
 
 ### <a name="parameters"></a>매개 변수
 
-*dw타임아웃*<br/>
-`Lock`이 매개 변수 값을 무시합니다.
+*dwTimeout*<br/>
+`Lock` 이 매개 변수 값을 무시 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-함수가 성공한 경우 0이 아닙니다. 그렇지 않으면 0.
+함수가 성공 하면 0이 아닌 값입니다. 그렇지 않으면 0입니다.
 
 ### <a name="remarks"></a>설명
 
-`Lock`는 임계 섹션 개체가 신호(사용 가능)가 될 때까지 반환되지 않는 차단 호출입니다.
+`Lock` 는 임계 영역 개체를 신호 받음 (사용할 수 있음) 할 때까지 반환 되지 않는 차단 호출입니다.
 
-시간 대기가 필요한 경우 개체 대신 [CMutex](../../mfc/reference/cmutex-class.md) 개체를 `CCriticalSection` 사용할 수 있습니다.
+시간이 지정 된 대기 시간이 필요한 경우에는 개체 대신 [Cmutex](../../mfc/reference/cmutex-class.md) 개체를 사용할 수 있습니다 `CCriticalSection` .
 
-필요한 `Lock` 시스템 메모리를 할당하지 못하면 메모리 예외(CMemoryException 형식)가 자동으로 throw됩니다. [CMemoryException](../../mfc/reference/cmemoryexception-class.md)
+에서 `Lock` 필요한 시스템 메모리를 할당 하지 못하면 [cmemoryexception](../../mfc/reference/cmemoryexception-class.md)형식의 메모리 예외가 자동으로 throw 됩니다.
 
 ### <a name="example"></a>예제
 
-이 예제에서는 공유 `_strShared` `CCriticalSection` 개체를 사용하여 공유 리소스(정적 개체)에 대한 액세스를 제어하여 중첩된 임계 섹션 접근 방식을 보여 줍니다. 이 `SomeMethod` 함수는 안전한 방식으로 공유 리소스를 업데이트하는 것을 보여 줍니다.
+이 예제에서는 공유 개체를 사용 하 여 공유 리소스 (정적 개체)에 대 한 액세스를 제어 하 여 중첩 된 임계 영역 접근 방식을 보여 줍니다 `_strShared` `CCriticalSection` . `SomeMethod`함수는 안전한 방식으로 공유 리소스를 업데이트 하는 방법을 보여 줍니다.
 
 [!code-cpp[NVC_MFC_Utilities#11](../../mfc/codesnippet/cpp/ccriticalsection-class_1.h)]
 
-## <a name="ccriticalsectionm_sect"></a><a name="m_sect"></a>C임계 섹션::m_sect
+## <a name="ccriticalsectionm_sect"></a><a name="m_sect"></a> CCriticalSection:: m_sect
 
-모든 `CCriticalSection` 메서드에서 사용되는 임계 섹션 개체를 포함합니다.
+모든 메서드에서 사용 하는 임계 영역 개체를 포함 `CCriticalSection` 합니다.
 
 ```
 CRITICAL_SECTION m_sect;
 ```
 
-## <a name="ccriticalsectionoperator-critical_section"></a><a name="operator_critical_section_star"></a>C임계 섹션::연산자 CRITICAL_SECTION*
+## <a name="ccriticalsectionoperator-critical_section"></a><a name="operator_critical_section_star"></a> CCriticalSection:: operator CRITICAL_SECTION *
 
-CRITICAL_SECTION 개체를 검색합니다.
+CRITICAL_SECTION 개체를 검색 합니다.
 
 ```
 operator CRITICAL_SECTION*();
@@ -157,27 +158,27 @@ operator CRITICAL_SECTION*();
 
 ### <a name="remarks"></a>설명
 
-이 함수를 호출하여 내부 CRITICAL_SECTION 개체에 대한 포인터를 검색합니다.
+내부 CRITICAL_SECTION 개체에 대 한 포인터를 검색 하려면이 함수를 호출 합니다.
 
-## <a name="ccriticalsectionunlock"></a><a name="unlock"></a>C임계 섹션::잠금 해제
+## <a name="ccriticalsectionunlock"></a><a name="unlock"></a> CCriticalSection:: Unlock
 
-다른 `CCriticalSection` 스레드에서 사용할 개체를 해제합니다.
+`CCriticalSection`다른 스레드에서 사용할 개체를 해제 합니다.
 
 ```
 BOOL Unlock();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-개체가 스레드에 `CCriticalSection` 의해 소유되고 릴리스가 성공한 경우 Nonzero입니다. 그렇지 않으면 0.
+`CCriticalSection`스레드가 개체를 소유 하 고 있으며 릴리스가 성공적으로 수행 되었으면 0이 아닌 값이 고, 그렇지 않으면 0입니다.
 
 ### <a name="remarks"></a>설명
 
-`CCriticalSection` 독립 실행형으로 사용되는 경우 `Unlock` 임계 섹션에 의해 제어되는 리소스 사용을 완료한 직후에 호출해야 합니다. [CSingleLock](../../mfc/reference/csinglelock-class.md) 개체를 사용 하는 `CCriticalSection::Unlock` 경우 잠금 개체의 `Unlock` 멤버 함수에 의해 호출 됩니다.
+이 독립 실행형으로 사용 되는 경우 `CCriticalSection` 에는 `Unlock` 임계 영역에서 제어 하는 리소스의 사용을 완료 한 후 즉시를 호출 해야 합니다. [Csinglelock](../../mfc/reference/csinglelock-class.md) 개체를 사용 하는 경우 `CCriticalSection::Unlock` 은 잠금 개체의 멤버 함수에 의해 호출 됩니다 `Unlock` .
 
 ### <a name="example"></a>예제
 
-  [CCriticalSection::Lock](#lock)에 대한 예제를 참조하십시오.
+  [CCriticalSection:: Lock](#lock)의 예제를 참조 하세요.
 
 ## <a name="see-also"></a>참고 항목
 

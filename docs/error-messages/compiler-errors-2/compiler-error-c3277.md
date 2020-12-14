@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3277'
 title: 컴파일러 오류 C3277
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3277
 ms.assetid: 8ac5f476-e30c-4879-92c6-f03cdbd74045
-ms.openlocfilehash: 30dea992ae2c59ddc932395de40e9b15f30b6a20
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: ca04074dd077c63355f7da9a6a5feabcc0d03fac
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74753811"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97228991"
 ---
 # <a name="compiler-error-c3277"></a>컴파일러 오류 C3277
 

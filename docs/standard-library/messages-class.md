@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: messages 클래스'
 title: messages 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -22,16 +23,16 @@ helpviewer_keywords:
 - std::messages [C++], get
 - std::messages [C++], open
 ms.assetid: c4c71f40-4f24-48ab-9f7c-daccd8d5bd83
-ms.openlocfilehash: deb9eaedba3c99bb2fcb8399ac412ccedb11545f
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: fe8dcc9cd580f967a3d07a4744598dff72360d44
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375918"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230512"
 ---
 # <a name="messages-class"></a>messages 클래스
 
-클래스 템플릿은 지정된 로캘에 대한 국제화된 메시지 카탈로그에서 지역화된 메시지를 검색하는 로캘 페이싯역할을 할 수 있는 개체를 설명합니다.
+클래스 템플릿은 지정 된 로캘에 대 한 국제화 된 메시지의 카탈로그에서 지역화 된 메시지를 검색 하기 위해 로캘 패싯으로 사용할 수 있는 개체를 설명 합니다.
 
 현재 메시지 클래스가 구현되는 동안 메시지가 없습니다.
 
@@ -44,12 +45,12 @@ class messages : public messages_base;
 
 ### <a name="parameters"></a>매개 변수
 
-*Chartype*\
+*CharType*\
 로캘의 문자를 인코딩하기 위해 프로그램 내 사용하는 형식입니다.
 
 ## <a name="remarks"></a>설명
 
-모든 로캘 패싯과 마찬가지로, 고정 개체 ID에는 초기값 0이 저장되어 있습니다. 저장된 값에 액세스를 처음 시도하면 **id**에 고유한 양수 값이 저장됩니다.
+모든 로캘 패싯과 마찬가지로, 고정 개체 ID에는 초기값 0이 저장되어 있습니다. 저장된 값에 액세스를 처음 시도하면 **id** 에 고유한 양수 값이 저장됩니다.
 
 이 패싯은 기본적으로 기본 클래스 messages_base에 정의된 메시지의 카탈로그를 열고, 필요한 정보를 검색하며, 카탈로그를 닫습니다.
 
@@ -57,11 +58,11 @@ class messages : public messages_base;
 
 |생성자|Description|
 |-|-|
-|[메시지](#messages)|메시지 패싯 생성자 함수입니다.|
+|[messages](#messages)|메시지 패싯 생성자 함수입니다.|
 
 ### <a name="typedefs"></a>Typedefs
 
-|형식 이름|Description|
+|형식 이름|설명|
 |-|-|
 |[char_type](#char_type)|메시지를 표시하는 데 사용하는 문자 형식입니다.|
 |[string_type](#string_type)|`basic_string` 형식의 문자가 포함된 `CharType` 형식의 문자열을 설명하는 형식입니다.|
@@ -70,7 +71,7 @@ class messages : public messages_base;
 
 |멤버 함수|Description|
 |-|-|
-|[가까이](#close)|메시지 카탈로그를 닫습니다.|
+|[close](#close)|메시지 카탈로그를 닫습니다.|
 |[do_close](#do_close)|메시지 카탈로그를 닫기 위해 호출하는 가상 함수입니다.|
 |[do_get](#do_get)|메시지 카탈로그를 검색하기 위해 호출하는 가상 함수입니다.|
 |[do_open](#do_open)|메시지 카탈로그를 열기 위해 호출하는 가상 함수입니다.|
@@ -79,11 +80,11 @@ class messages : public messages_base;
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<locale>
+**헤더:**\<locale>
 
 **네임스페이스:** std
 
-## <a name="messageschar_type"></a><a name="char_type"></a>메시지::char_type
+## <a name="messageschar_type"></a><a name="char_type"></a> 메시지:: char_type
 
 메시지를 표시하는 데 사용하는 문자 형식입니다.
 
@@ -93,9 +94,9 @@ typedef CharType char_type;
 
 ### <a name="remarks"></a>설명
 
-형식은 템플릿 매개 변수 **CharType의**동의어입니다.
+이 형식은 템플릿 매개 변수 **Chartype** 의 동의어입니다.
 
-## <a name="messagesclose"></a><a name="close"></a>메시지::닫기
+## <a name="messagesclose"></a><a name="close"></a> 메시지:: close
 
 메시지 카탈로그를 닫습니다.
 
@@ -112,7 +113,7 @@ void close(catalog _Catval) const;
 
 멤버 함수는 [do_close](#do_close)(_ *Catval*)을 호출합니다.
 
-## <a name="messagesdo_close"></a><a name="do_close"></a>메시지::do_close
+## <a name="messagesdo_close"></a><a name="do_close"></a> 메시지::d o_close
 
 메시지 카탈로그를 닫기 위해 호출하는 가상 함수입니다.
 
@@ -127,15 +128,15 @@ virtual void do_close(catalog _Catval) const;
 
 ### <a name="remarks"></a>설명
 
-보호된 멤버 함수는 [do_open](#do_open)대한 이전 호출에 의해 열린 메시지 카탈로그 *_Catval*닫습니다.
+Protected 멤버 함수는 [do_open](#do_open)에 대 한 이전 호출에 의해 열려 있어야 하는 메시지 카탈로그 *_Catval* 를 닫습니다.
 
-*_Catval*은 닫히지 않은 이전에 연 카탈로그에서 가져와야 합니다.
+*_Catval* 은 닫히지 않은 이전에 연 카탈로그에서 가져와야 합니다.
 
 ### <a name="example"></a>예제
 
 `do_close`를 호출하는 [close](#close)에 대한 예제를 참조하세요.
 
-## <a name="messagesdo_get"></a><a name="do_get"></a>메시지::do_get
+## <a name="messagesdo_get"></a><a name="do_get"></a> 메시지::d o_get
 
 메시지 카탈로그를 검색하기 위해 호출하는 가상 함수입니다.
 
@@ -161,19 +162,19 @@ virtual string_type do_get(
 *_Dfault*\
 오류 시 반환할 문자열입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-실패 시 *_Dfault* 복사본을 반환합니다. 그렇지 않으면 지정된 메시지 시퀀스의 복사본을 반환합니다.
+실패 한 *_Dfault* 의 복사본을 반환 합니다. 그렇지 않으면 지정된 메시지 시퀀스의 복사본을 반환합니다.
 
 ### <a name="remarks"></a>설명
 
-보호된 멤버 함수는 *_Catval*메시지 카탈로그에서 메시지 시퀀스를 가져오려고 시도합니다. *_Set,* *_Message,* *_Dfault* 활용할 수 있습니다.
+Protected 멤버 함수는 메시지 카탈로그 *_Catval* 에서 메시지 시퀀스를 가져오려고 시도 합니다. *_Set*, *_Message* 및 *_Dfault* 를 사용할 수 있습니다.
 
 ### <a name="example"></a>예제
 
 `do_get`을 호출하는 [get](#get)에 대한 예제를 참조하세요.
 
-## <a name="messagesdo_open"></a><a name="do_open"></a>메시지::do_open
+## <a name="messagesdo_open"></a><a name="do_open"></a> 메시지::d o_open
 
 메시지 카탈로그를 열기 위해 호출하는 가상 함수입니다.
 
@@ -191,13 +192,13 @@ virtual catalog do_open(
 *_Loc*\
 카탈로그에서 검색되는 로캘입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 오류 시 0보다 작은 것으로 비교되는 값을 반환합니다. 그렇지 않으면 반환된 값은 나중에 [get](#get)을 호출할 때 첫 번째 인수로 사용할 수 있습니다.
 
 ### <a name="remarks"></a>설명
 
-보호된 멤버 함수는 이름이 *_Catname*메시지 카탈로그를 열려고 시도합니다. *로캘을* 사용할 수 _Loc
+Protected 멤버 함수는 이름이 *_Catname* 인 메시지 카탈로그를 열려고 시도 합니다. 이 작업을 수행 하는 동안 로캘을 *_Loc* 사용할 수 있습니다.
 
 반환 값은 나중에 [close](#close)를 호출할 때 인수로 사용해야 합니다.
 
@@ -205,7 +206,7 @@ virtual catalog do_open(
 
 `do_open`을 호출하는 [open](#open)에 대한 예제를 참조하세요.
 
-## <a name="messagesget"></a><a name="get"></a>메시지::get
+## <a name="messagesget"></a><a name="get"></a> 메시지:: get
 
 메시지 카탈로그를 불러옵니다.
 
@@ -231,15 +232,15 @@ string_type get(
 *_Dfault*\
 오류 시 반환할 문자열입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-실패 시 *_Dfault* 복사본을 반환합니다. 그렇지 않으면 지정된 메시지 시퀀스의 복사본을 반환합니다.
+실패 한 *_Dfault* 의 복사본을 반환 합니다. 그렇지 않으면 지정된 메시지 시퀀스의 복사본을 반환합니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 [do_get](#do_get)do_get `_Catval` `_Set`반환합니다. `_Message` `_Dfault`
+멤버 함수는 [do_get](#do_get)( `_Catval` , `_Set` , `_Message` , `_Dfault` )를 반환 합니다.
 
-## <a name="messagesmessages"></a><a name="messages"></a>메시지::메시지
+## <a name="messagesmessages"></a><a name="messages"></a> messages:: messages
 
 메시지 패싯 생성자 함수입니다.
 
@@ -262,19 +263,19 @@ protected: messages(
 
 ### <a name="remarks"></a>설명
 
-*_Refs* 매개 변수와 그 중요성에 대한 가능한 값은 다음과 같습니다.
+*_Refs* 매개 변수에 사용할 수 있는 값과 해당 의미는 다음과 같습니다.
 
 - 0: 개체를 포함하는 로캘에 의해 개체의 수명이 관리됩니다.
 
 - 1: 개체의 수명을 수동으로 관리해야 합니다.
 
-- \>1: 이러한 값은 정의되지 않습니다.
+- \> 1: 이러한 값은 정의 되지 않습니다.
 
 소멸자는 보호되므로 직접적인 예제는 확인할 수 없습니다.
 
-생성자는 기본 개체를 **로캘::**[facet](../standard-library/locale-class.md#facet_class)()로 `_Refs`초기화합니다.
+생성자는 **locale::**[facet](../standard-library/locale-class.md#facet_class)()를 사용 하 여 해당 기본 개체를 초기화 `_Refs` 합니다.
 
-## <a name="messagesopen"></a><a name="open"></a>메시지::열기
+## <a name="messagesopen"></a><a name="open"></a> messages:: open
 
 메시지 카탈로그를 엽니다.
 
@@ -292,15 +293,15 @@ catalog open(
 *_Loc*\
 카탈로그에서 검색되는 로캘입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 오류 시 0보다 작은 것으로 비교되는 값을 반환합니다. 그렇지 않으면 반환된 값은 나중에 [get](#get)을 호출할 때 첫 번째 인수로 사용할 수 있습니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 [do_open](#do_open)do_open `_Catname` `_Loc`(, )를 반환합니다.
+멤버 함수는 [do_open](#do_open)(,)를 반환 합니다 `_Catname` `_Loc` .
 
-## <a name="messagesstring_type"></a><a name="string_type"></a>메시지::string_type
+## <a name="messagesstring_type"></a><a name="string_type"></a> 메시지:: string_type
 
 `basic_string` 형식의 문자가 포함된 `CharType` 형식의 문자열을 설명하는 형식입니다.
 
@@ -310,10 +311,10 @@ typedef basic_string<CharType, Traits, Allocator> string_type;
 
 ### <a name="remarks"></a>설명
 
-형식은 개체가 메시지 시퀀스의 복사본을 저장할 수 [있는 클래스](../standard-library/basic-string-class.md) 템플릿 basic_string 전문화에 대해 설명합니다.
+이 형식은 개체가 메시지 시퀀스의 복사본을 저장할 수 있는 클래스 템플릿 [basic_string](../standard-library/basic-string-class.md) 의 특수화를 설명 합니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[\<로캘>](../standard-library/locale.md)\
+[\<locale>](../standard-library/locale.md)\
 [messages_base 클래스](../standard-library/messages-base-class.md)\
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[C + + 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

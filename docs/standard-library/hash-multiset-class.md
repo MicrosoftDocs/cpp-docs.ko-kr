@@ -1,4 +1,5 @@
 ---
+description: Hash_multiset 클래스에 대해 자세히 알아보세요.
 title: hash_multiset 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -86,12 +87,12 @@ helpviewer_keywords:
 - stdext::hash_multiset::upper_bound
 - stdext::hash_multiset::value_comp
 ms.assetid: 0580397a-a76e-40ad-aea2-5c6f3a9d0a21
-ms.openlocfilehash: d4722a9c535207b21098db4e33810340d99e6b6a
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 567eef22098b99cf3a3109bfd911ecbcd518876b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561442"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97231812"
 ---
 # <a name="hash_multiset-class"></a>hash_multiset 클래스
 
@@ -162,7 +163,7 @@ hash_multiset 클래스에서 제공하는 반복기는 양방향 반복기이�
 |[const_reference](#const_reference)|**`const`** `hash_multiset` 작업을 읽고 수행 하기 위해에 저장 된 요소에 대 한 참조를 제공 하는 형식입니다 **`const`** .|
 |[const_reverse_iterator](#const_reverse_iterator)|의 모든 요소를 읽을 수 있는 양방향 반복기를 제공 하는 형식입니다 **`const`** `hash_multiset` .|
 |[difference_type](#difference_type)|동일한 `hash_multiset` 안에서 요소를 다루는 두 반복기 사이의 차이를 제공하는 부호 있는 정수 형식입니다.|
-|[반복](#iterator)|`hash_multiset`에 있는 모든 요소를 읽거나 수정할 수 있는 양방향 반복기를 제공하는 형식입니다.|
+|[iterator](#iterator)|`hash_multiset`에 있는 모든 요소를 읽거나 수정할 수 있는 양방향 반복기를 제공하는 형식입니다.|
 |[key_compare](#key_compare)|`hash_multiset`의 두 요소간 상대적 순서를 결정하는 두 정렬 키를 비교할 수 있는 함수 개체를 제공하는 형식입니다.|
 |[key_type](#key_type)|해당 용량 내 `hash_set` 요소로 저장된 개체를 정렬 키로 설명하는 형식입니다.|
 |[놓고](#pointer)|`hash_multiset`의 요소에 대한 포인터를 제공하는 형식입니다.|
@@ -179,14 +180,14 @@ hash_multiset 클래스에서 제공하는 반복기는 양방향 반복기이�
 |[시작](#begin)|`hash_multiset`의 첫 번째 요소를 주소 지정하는 반복기를 반환합니다.|
 |[cbegin](#cbegin)|`hash_multiset`의 첫 번째 요소를 주소 지정하는 상수 반복기를 반환합니다.|
 |[cend](#cend)|`hash_multiset`에서 마지막 요소 다음에 나오는 위치를 주소 지정하는 상수 반복기를 반환합니다.|
-|[해제](#clear)|`hash_multiset`의 모든 요소를 지웁니다.|
+|[clear](#clear)|`hash_multiset`의 모든 요소를 지웁니다.|
 |[count](#count)|키가 매개 변수로 지정된 키와 일치하는 `hash_multiset`의 요소 수를 반환합니다.|
 |[crbegin](#crbegin)|역순 `hash_multiset`에서 첫 번째 요소를 주소 지정하는 상수 반복기를 반환합니다.|
 |[crend](#crend)|역순 `hash_multiset`에서 마지막 요소 다음에 나오는 위치를 주소 지정하는 상수 반복기를 반환합니다.|
 |[emplace](#emplace)|생성된 요소를 `hash_multiset`에 삽입합니다.|
 |[emplace_hint](#emplace_hint)|배치 힌트를 사용하여 생성된 요소를 `hash_multiset`에 삽입합니다.|
 |[empty](#empty)|`hash_multiset`가 비어 있는지 여부를 테스트합니다.|
-|[종단](#end)|`hash_multiset`에서 마지막 요소 다음에 나오는 위치를 주소 지정하는 반복기를 반환합니다.|
+|[end](#end)|`hash_multiset`에서 마지막 요소 다음에 나오는 위치를 주소 지정하는 반복기를 반환합니다.|
 |[equal_range](#equal_range)|지정된 키보다 더 큰 키를 가진 `hash_multiset`의 첫 번째 요소와 지정된 키보다 더 크거나 같은 키를 가진 `hash_multiset`의 첫 번째 요소에 반복기의 쌍을 각각 반환합니다.|
 |[erase](#erase)|지정된 위치에서 `hash_multiset`의 요소 또는 요소의 범위를 제거하거나 지정된 키와 일치하는 요소를 제거합니다.|
 |[find](#find)|지정된 키와 같은 키를 가진 `hash_multiset` 내 요소의 위치를 가리키는 반복기를 반환합니다.|
@@ -204,7 +205,7 @@ hash_multiset 클래스에서 제공하는 반복기는 양방향 반복기이�
 
 ### <a name="operators"></a>연산자
 
-|연산자|Description|
+|연산자|설명|
 |-|-|
 |[hash_multiset:: operator =](#op_eq)|hash_multiset의 요소를 다른 hash_multiset의 복사본으로 바꿉니다.|
 
@@ -242,7 +243,7 @@ const_iterator begin() const;
 iterator begin();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 hash_multiset의 첫 번째 요소 또는 빈 hash_multiset 다음의 위치 주소를 지정하는 양방향 반복기입니다.
 
@@ -301,7 +302,7 @@ hash_multiset의 첫 번째 요소를 주소 지정하는 상수 반복기를 �
 const_iterator cbegin() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 [hash_multiset](../standard-library/hash-multiset-class.md)의 첫 번째 요소 또는 빈 `hash_multiset` 다음의 위치 주소를 지정하는 상수 양방향 반복기입니다.
 
@@ -348,7 +349,7 @@ hash_multiset에서 마지막 요소 다음에 나오는 위치를 주소 지정
 const_iterator cend() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 [hash_multiset](../standard-library/hash-multiset-class.md)에서 마지막 요소 다음에 나오는 위치의 주소를 지정하는 상수 양방향 반복기입니다. `hash_multiset`이 비어 있으면 `hash_multiset::cend == hash_multiset::begin`입니다.
 
@@ -547,7 +548,7 @@ size_type count(const Key& key) const;
 *키인지*\
 hash_multiset에서 일치하는지 확인할 요소의 키입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 hash_multiset에서 개 변수로 지정된 키가 있는 요소 수입니다.
 
@@ -605,7 +606,7 @@ The number of elements in hms1 with a sort key of 2 is: 0.
 const_reverse_iterator crbegin() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 역방향 [hash_multiset](../standard-library/hash-multiset-class.md)에서 첫 번째 요소 또는 정방향 `hash_multiset`에서 마지막 요소의 주소를 지정하는 상수 역방향 양방향 반복기입니다.
 
@@ -657,7 +658,7 @@ The first element in the reversed hash_multiset is 30.
 const_reverse_iterator crend() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 역방향 [hash_multiset](../standard-library/hash-multiset-class.md)에서 마지막 요소 다음의 위치(정방향 `hash_multiset`의 첫 번째 요소 앞의 위치) 주소를 지정하는 상수 역방향 양방향 반복기입니다.
 
@@ -796,7 +797,7 @@ iterator insert(ValTy&& val);
 *짧은*\
 `hash_multiset`이 해당 요소(또는 더 일반적으로는 키가 동등하게 정렬된 요소)를 이미 포함하고 있지 않을 경우 [hash_multiset](../standard-library/hash-multiset-class.md)에 삽입될 요소의 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `emplace` 멤버 함수는 새 요소가 삽입된 위치를 가리키는 반복기를 반환합니다.
 
@@ -850,13 +851,13 @@ iterator insert(
 *위치*\
 올바른 삽입 지점 검색을 시작할 위치입니다. 삽입 지점이 바로 뒤에 오는 경우에는 로그 시간 대신 분할 상환 일정 시간에 삽입이 발생할 수 *있습니다.*
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 [hash_multiset::emplace](#emplace) 멤버 함수는 새 요소를 `hash_multiset`에 삽입한 위치를 가리키는 반복기를 반환합니다.
 
 ### <a name="remarks"></a>설명
 
-삽입 지점이 *바로 뒤에*오면 로그 시간 대신 분할 상환 상수 시간에 삽입이 발생할 수 있습니다.
+삽입 지점이 *바로 뒤에* 오면 로그 시간 대신 분할 상환 상수 시간에 삽입이 발생할 수 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -895,7 +896,7 @@ hash_multiset이 비어 있는지 테스트합니다.
 bool empty() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** hash_multiset 비어 있으면이 고, 그렇지 않으면입니다. **`false`** hash_multiset 비어 있지 않으면입니다.
 
@@ -946,7 +947,7 @@ const_iterator end() const;
 iterator end();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 hash_multiset에서 마지막 요소 다음에 나오는 위치의 주소를 지정하는 양방향 반복기입니다. hash_multiset이 비어 있으면 hash_multiset::end == hash_multiset::begin입니다.
 
@@ -1014,7 +1015,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 *키인지*\
 검색 중인 hash_multiset에서 요소의 정렬 키와 비교할 인수 키입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 반복기 쌍. 여기서 첫 번째 반복기는 키의 [lower_bound](#lower_bound)이고 두 번째 반복기는 키의 [upper_bound](#upper_bound)입니다.
 
@@ -1112,7 +1113,7 @@ hash_multiset에서 제거된 마지막 요소 바로 뒤의 위치입니다.
 *키인지*\
 hash_multiset에서 제거할 요소의 키입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 처음 두 멤버 함수의 경우 제거된 요소 뒤에 남은 첫 번째 요소를 지정하는 양방향 반복기이거나 이러한 요소가 없을 경우 hash_multiset의 끝에 대한 포인터입니다. 세 번째 멤버 함수의 경우 hash_multiset에서 제거된 요소의 수입니다.
 
@@ -1224,7 +1225,7 @@ const_iterator find(const Key& key) const;
 *키인지*\
 검색 중인 hash_multiset에서 요소의 정렬 키와 일치 여부를 확인할 인수 키입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 지정된 키에 해당하는 요소의 위치 또는 해당 키와 일치하는 항목이 없는 경우 hash_multiset의 마지막 요소 다음 위치에 대한 주소를 지정하는 [iterator](#iterator) 또는 [const_iterator](#const_iterator)입니다.
 
@@ -1295,7 +1296,7 @@ hash_multiset을 생성하는 데 사용되는 할당자 개체의 복사본을 
 Allocator get_allocator() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 hash_multiset에서 메모리를 관리하는 데 사용하는 할당자(클래스의 템플릿 매개 변수 `Allocator`)입니다.
 
@@ -1504,7 +1505,7 @@ hash_multiset에서 복사할 마지막 요소 바로 다음 위치입니다.
 *IList*\
 복사할 요소가 포함된 initializer_list입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 처음 두 insert 멤버 함수는 새 요소가 삽입된 위치를 가리키는 반복기를 반환합니다.
 
@@ -1514,7 +1515,7 @@ hash_multiset에서 복사할 마지막 요소 바로 다음 위치입니다.
 
 ### <a name="remarks"></a>설명
 
-삽입 지점이 *바로 뒤에*오면 로그 시간 대신 insert의 힌트 버전에 대 한 분할 상환 상수 시간에 삽입이 발생할 수 있습니다.
+삽입 지점이 *바로 뒤에* 오면 로그 시간 대신 insert의 힌트 버전에 대 한 분할 상환 상수 시간에 삽입이 발생할 수 있습니다.
 
 ## <a name="hash_multisetiterator"></a><a name="iterator"></a> hash_multiset:: iterator
 
@@ -1546,9 +1547,9 @@ hash_multiset에서 키를 정렬하기 위해 사용하는 비교 개체의 복
 key_compare key_comp() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-컨테이너의 요소를 해시 하 고 정렬 하는 데 사용 되는 함수 개체를 포함 하는 hash_multiset 템플릿 매개 변수 *특성*을 반환 합니다.
+컨테이너의 요소를 해시 하 고 정렬 하는 데 사용 되는 함수 개체를 포함 하는 hash_multiset 템플릿 매개 변수 *특성* 을 반환 합니다.
 
 *특성* 에 대 한 자세한 내용은 [hash_multiset 클래스](../standard-library/hash-multiset-class.md) 항목을 참조 하세요.
 
@@ -1560,7 +1561,7 @@ key_compare key_comp() const;
 
 **`true`** `_xVal` 가 보다 앞에 있고가 정렬 순서에서와 같지 않으면를 반환 합니다 `_yVal` .
 
-[key_compare](#key_compare)와 [value_compare](#value_compare)는 둘 다 템플릿 매개 변수 *Traits*와 동일한 의미입니다. 두 형식 모두 hash_multiset 및 hash_multiset 클래스용으로 제공되며 이러한 클래스에 사용되는 경우에는 동일하지만, hash_map 및 hash_multimap 클래스와의 호환성을 위해 제공되는 경우에는 서로 다릅니다.
+[key_compare](#key_compare)와 [value_compare](#value_compare)는 둘 다 템플릿 매개 변수 *Traits* 와 동일한 의미입니다. 두 형식 모두 hash_multiset 및 hash_multiset 클래스용으로 제공되며 이러한 클래스에 사용되는 경우에는 동일하지만, hash_map 및 hash_multimap 클래스와의 호환성을 위해 제공되는 경우에는 서로 다릅니다.
 
 ### <a name="example"></a>예제
 
@@ -1624,11 +1625,11 @@ typedef Traits key_compare;
 
 ### <a name="remarks"></a>설명
 
-`key_compare` 는 템플릿 매개 변수 *특성*의 동의어입니다.
+`key_compare` 는 템플릿 매개 변수 *특성* 의 동의어입니다.
 
 *특성* 에 대 한 자세한 내용은 [hash_multiset 클래스](../standard-library/hash-multiset-class.md) 항목을 참조 하세요.
 
-`key_compare` 및 value_compare는 둘 다 템플릿 매개 변수 *Traits*와 동일한 의미입니다. 두 형식 모두 hash_set 및 hash_multiset 클래스용으로 제공되며 이러한 클래스에 사용되는 경우에는 동일하지만, hash_map 및 hash_multimap 클래스와의 호환성을 위해 제공되는 경우에는 서로 다릅니다.
+`key_compare` 및 value_compare는 둘 다 템플릿 매개 변수 *Traits* 와 동일한 의미입니다. 두 형식 모두 hash_set 및 hash_multiset 클래스용으로 제공되며 이러한 클래스에 사용되는 경우에는 동일하지만, hash_map 및 hash_multimap 클래스와의 호환성을 위해 제공되는 경우에는 서로 다릅니다.
 
 ### <a name="example"></a>예제
 
@@ -1647,11 +1648,11 @@ typedef Key key_type;
 
 ### <a name="remarks"></a>설명
 
-`key_type` 는 템플릿 매개 변수 *키*의 동의어입니다.
+`key_type` 는 템플릿 매개 변수 *키* 의 동의어입니다.
 
-`key_type` 및 [value_type](../standard-library/hash-set-class.md#value_type)은 둘 다 템플릿 매개 변수 *Key*의 동의어입니다. 두 형식 모두 set 및 multiset 클래스용으로 제공되며 이러한 클래스에 사용되는 경우에는 동일하지만, map 및 multimap 클래스와의 호환성을 위해 제공되는 경우에는 서로 다릅니다.
+`key_type` 및 [value_type](../standard-library/hash-set-class.md#value_type)은 둘 다 템플릿 매개 변수 *Key* 의 동의어입니다. 두 형식 모두 set 및 multiset 클래스용으로 제공되며 이러한 클래스에 사용되는 경우에는 동일하지만, map 및 multimap 클래스와의 호환성을 위해 제공되는 경우에는 서로 다릅니다.
 
-*키*에 대 한 자세한 내용은 [hash_multiset 클래스](../standard-library/hash-multiset-class.md) 항목의 설명 섹션을 참조 하세요.
+*키* 에 대 한 자세한 내용은 [hash_multiset 클래스](../standard-library/hash-multiset-class.md) 항목의 설명 섹션을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -1675,7 +1676,7 @@ iterator lower_bound(const Key& key);
 *키인지*\
 검색 중인 hash_multiset에서 요소의 정렬 키와 비교할 인수 키입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 인수 키보다 크거나 같은 키가 들어 있는 hash_multiset 내 첫 번째 요소의 위치 주소를 지정하거나, 키와 일치하는 항목이 없는 경우 hash_multiset에서 마지막 요소 다음 위치의 주소를 지정하는 [iterator](#iterator) 또는 [const_iterator](#const_iterator)입니다.
 
@@ -1735,7 +1736,7 @@ hash_multiset의 최대 길이를 반환합니다.
 size_type max_size() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 hash_multiset의 최대 허용 길이입니다.
 
@@ -1782,7 +1783,7 @@ hash_multiset& operator=(hash_multiset&& right);
 
 ### <a name="remarks"></a>설명
 
-에서 기존 요소를 지운 후에 `hash_multiset` 는 `operator=` 의 내용을로 복사 하거나 이동 *right* `hash_multiset` 합니다.
+에서 기존 요소를 지운 후에 `hash_multiset` 는 `operator=` 의 내용을로 복사 하거나 이동  `hash_multiset` 합니다.
 
 ### <a name="example"></a>예제
 
@@ -1852,7 +1853,7 @@ const_reverse_iterator rbegin() const;
 reverse_iterator rbegin();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 역방향 hash_multiset에서 첫 번째 요소 또는 정방향 hash_multiset에서 마지막 요소의 주소를 지정하는 역방향 양방향 반복기입니다.
 
@@ -1985,7 +1986,7 @@ const_reverse_iterator rend() const;
 reverse_iterator rend();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 역방향 hash_multiset에서 마지막 요소 다음의 위치(정방향 hash_multiset의 첫 번째 요소 앞의 위치) 주소를 지정하는 역방향 양방향 반복기입니다.
 
@@ -2088,7 +2089,7 @@ hash_multiset에 있는 요소 수를 반환합니다.
 size_type size() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 hash_multiset의 현재 길이입니다.
 
@@ -2233,7 +2234,7 @@ iterator upper_bound(const Key& key);
 *키인지*\
 검색 중인 hash_multiset에서 요소의 정렬 키와 비교할 인수 키입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 인수 키보다 큰 키가 들어 있는 hash_multiset 내 첫 번째 요소의 위치 주소를 지정하거나, 키와 일치하는 항목이 없는 경우 hash_multiset에서 마지막 요소 다음 위치의 주소를 지정하는 [iterator](#iterator) 또는 [const_iterator](#const_iterator)입니다.
 
@@ -2304,9 +2305,9 @@ hash_multiset에서 요소 값의 정렬에 사용되는 비교 개체의 복사
 value_compare value_comp() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-컨테이너의 요소를 해시 하 고 정렬 하는 데 사용 되는 함수 개체를 포함 하는 hash_multiset 템플릿 매개 변수 *특성*을 반환 합니다.
+컨테이너의 요소를 해시 하 고 정렬 하는 데 사용 되는 함수 개체를 포함 하는 hash_multiset 템플릿 매개 변수 *특성* 을 반환 합니다.
 
 *특성* 에 대 한 자세한 내용은 [hash_multiset 클래스](../standard-library/hash-multiset-class.md) 항목을 참조 하세요.
 
@@ -2318,7 +2319,7 @@ value_compare value_comp() const;
 
 **`true`** `_xVal` 가 보다 앞에 있고가 정렬 순서에서와 같지 않으면를 반환 합니다 `_yVal` .
 
-[key_compare](#key_compare)와 [value_compare](#value_compare)는 둘 다 템플릿 매개 변수 *Traits*와 동일한 의미입니다. 두 형식 모두 hash_multiset 및 hash_multiset 클래스용으로 제공되며 이러한 클래스에 사용되는 경우에는 동일하지만, hash_map 및 hash_multimap 클래스와의 호환성을 위해 제공되는 경우에는 서로 다릅니다.
+[key_compare](#key_compare)와 [value_compare](#value_compare)는 둘 다 템플릿 매개 변수 *Traits* 와 동일한 의미입니다. 두 형식 모두 hash_multiset 및 hash_multiset 클래스용으로 제공되며 이러한 클래스에 사용되는 경우에는 동일하지만, hash_map 및 hash_multimap 클래스와의 호환성을 위해 제공되는 경우에는 서로 다릅니다.
 
 ### <a name="example"></a>예제
 
@@ -2387,11 +2388,11 @@ typedef key_compare value_compare;
 
 ### <a name="remarks"></a>설명
 
-`value_compare` 는 템플릿 매개 변수 *특성*의 동의어입니다.
+`value_compare` 는 템플릿 매개 변수 *특성* 의 동의어입니다.
 
 *특성* 에 대 한 자세한 내용은 [hash_multiset 클래스](../standard-library/hash-multiset-class.md) 항목을 참조 하세요.
 
-[Key_compare](#key_compare) 와는 모두 `value_compare` 템플릿 매개 변수 *특성*의 동의어입니다. 두 형식 모두 set 및 multiset 클래스용으로 제공되며 이러한 클래스에 사용되는 경우에는 동일하지만, map 및 multimap 클래스와의 호환성을 위해 제공되는 경우에는 서로 다릅니다.
+[Key_compare](#key_compare) 와는 모두 `value_compare` 템플릿 매개 변수 *특성* 의 동의어입니다. 두 형식 모두 set 및 multiset 클래스용으로 제공되며 이러한 클래스에 사용되는 경우에는 동일하지만, map 및 multimap 클래스와의 호환성을 위해 제공되는 경우에는 서로 다릅니다.
 
 ### <a name="example"></a>예제
 

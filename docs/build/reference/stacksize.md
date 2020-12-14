@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: STACKSIZE'
 title: STACKSIZE
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - STACKSIZE .def file statement
 ms.assetid: 4d8c79bd-1cb4-4e4d-90f2-b5a7a4d20e7a
-ms.openlocfilehash: 2d27b4fd596098f4abc5bb0d804d87bd08f70a60
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b5d52bccc09979084b9023d380e86fe90e4def32
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62318358"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230343"
 ---
 # <a name="stacksize"></a>STACKSIZE
 
@@ -23,10 +24,10 @@ STACKSIZE reserve[,commit]
 
 ## <a name="remarks"></a>설명
 
-해당 스택 설정 방법은 합니다 [스택 할당](stack-stack-allocations.md) (/stack) 옵션입니다. 에 대 한 세부 정보에 대해이 옵션에 대 한 설명서를 참조 합니다 *예약할* 및 `commit` 인수.
+스택을 설정 하는 동일한 방법은 [Stack 할당](stack-stack-allocations.md) (/STACK) 옵션을 사용 하는 것입니다. *예약* 및 인수에 대 한 자세한 내용은 해당 옵션에 대 한 설명서를 참조 하세요 `commit` .
 
-이 옵션은 Dll에 대 한 영향을 주지 않습니다.
+이 옵션은 Dll에는 영향을 주지 않습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[모듈 정의 문의 규칙](rules-for-module-definition-statements.md)
+[Module-Definition 문에 대 한 규칙](rules-for-module-definition-statements.md)

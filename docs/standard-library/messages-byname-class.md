@@ -1,4 +1,5 @@
 ---
+description: Messages_byname 클래스에 대해 자세히 알아보세요.
 title: messages_byname 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - messages_byname class
 ms.assetid: c6c64841-3e80-43c8-b54c-fed41833ad6b
-ms.openlocfilehash: 56d8931cb404d9c0f3f5113f8b2ca0f1158209f2
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 960db9dd411e4ac42f81a0027e91ae1001b7877d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72689336"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230525"
 ---
 # <a name="messages_byname-class"></a>messages_byname 클래스
 
@@ -39,22 +40,22 @@ protected:
 
 ### <a name="parameters"></a>매개 변수
 
-*_Locname* \
+*_Locname*\
 명명된 로캘입니다.
 
-*참조 (_s)* \
-초기 참조 횟수
+*_Refs*\
+초기 참조 개수입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
-해당 동작은 명명 된 로캘 *_Locname*에 의해 결정 됩니다. 각 생성자는 [messages](../standard-library/messages-class.md#messages)\<CharType>( `_Refs`)를 통해 기본 개체를 초기화합니다.
+해당 동작은 명명 된 로캘 *_Locname* 에 의해 결정 됩니다. 각 생성자는 [메시지](../standard-library/messages-class.md#messages)()를 사용 하 여 해당 기준 개체를 초기화 \<CharType> `_Refs` 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<locale>
+**헤더:**\<locale>
 
 **네임스페이스:** std
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[C + + 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

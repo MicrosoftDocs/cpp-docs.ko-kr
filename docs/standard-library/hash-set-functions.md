@@ -1,16 +1,17 @@
 ---
+description: '&lt;Hash_set 함수에 대해 자세히 알아보세요. &gt;'
 title: '&lt;hash_set&gt; 함수'
 ms.date: 11/04/2016
 f1_keywords:
 - hash_set/std::swap
 - hash_set/std::swap (hash_multiset)
 ms.assetid: 557a0162-3728-4537-97dc-f9f6cc7ece94
-ms.openlocfilehash: 1774b0b29c7750e716f1f56def5d29ac329abec0
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 7040325f3af26052306b1ebd90f1919d96dcbf19
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845811"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97231798"
 ---
 # <a name="lthash_setgt-functions"></a>&lt;hash_set&gt; 함수
 
@@ -33,10 +34,10 @@ void swap(
 ### <a name="parameters"></a>매개 변수
 
 *오른쪽*\
-교환할 요소를 제공 하는 hash_set 또는 hash_set *왼쪽*에 있는 요소를 교환할 hash_set입니다.
+교환할 요소를 제공 하는 hash_set 또는 hash_set *왼쪽* 에 있는 요소를 교환할 hash_set입니다.
 
 *비어*\
-Hash_set *오른쪽*의 요소와 교환할 요소를 포함 하는 hash_set입니다.
+Hash_set *오른쪽* 의 요소와 교환할 요소를 포함 하는 hash_set입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -64,10 +65,10 @@ void swap(hash_multiset <Key, Traits, Allocator>& left, hash_multiset <Key, Trai
 ### <a name="parameters"></a>매개 변수
 
 *오른쪽*\
-교환할 요소를 제공 하는 hash_multiset 또는 hash_multiset *왼쪽*에 있는 요소를 교환할 hash_multiset입니다.
+교환할 요소를 제공 하는 hash_multiset 또는 hash_multiset *왼쪽* 에 있는 요소를 교환할 hash_multiset입니다.
 
 *비어*\
-Hash_multiset *오른쪽*의 요소와 교환할 요소를 포함 하는 hash_multiset입니다.
+Hash_multiset *오른쪽* 의 요소와 교환할 요소를 포함 하는 hash_multiset입니다.
 
 ### <a name="remarks"></a>설명
 

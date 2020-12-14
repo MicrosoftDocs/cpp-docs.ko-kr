@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: fpos 클래스'
 title: fpos 클래스
 ms.date: 03/27/2019
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - std::fpos [C++], seekpos
 - std::fpos [C++], state
 ms.assetid: ffd0827c-fa34-47f4-b10e-5cb707fcde47
-ms.openlocfilehash: 37536443455ca4ddc40568e15951b814982d4ad9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 22b9a5e69b179ef4206a0664b51b92cc55d4320d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87193304"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232332"
 ---
 # <a name="fpos-class"></a>fpos 클래스
 
@@ -42,7 +43,7 @@ class fpos
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[fpos](#fpos)|스트림 내의 위치(오프셋)에 대한 정보를 포함하는 개체를 만듭니다.|
 
@@ -51,7 +52,7 @@ class fpos
 |멤버 함수|Description|
 |-|-|
 |[seekpos](#seekpos)|C++ 표준 라이브러리에서만 내부적으로 사용됩니다. 사용자 코드에서 이 메서드를 호출하지 마세요.|
-|[상태](#state)|변환 상태를 설정하거나 반환합니다.|
+|[state](#state)|변환 상태를 설정하거나 반환합니다.|
 
 ### <a name="operators"></a>연산자
 
@@ -71,7 +72,7 @@ class fpos
 
 **네임스페이스:** std
 
-## <a name="fposfpos"></a><a name="fpos"></a>fpos:: fpos
+## <a name="fposfpos"></a><a name="fpos"></a> fpos:: fpos
 
 스트림 내의 위치(오프셋)에 대한 정보를 포함하는 개체를 만듭니다.
 
@@ -94,11 +95,11 @@ fpos(Statetype _State, fpos_t _Filepos);
 
 ### <a name="remarks"></a>설명
 
-첫 번째 생성자는 파일의 시작과 초기 변환 상태 (해당 하는 경우)를 기준으로 하는 오프셋 *_Off*저장 합니다. *_Off* -1 인 경우 결과 개체는 잘못 된 스트림 위치를 나타냅니다.
+첫 번째 생성자는 파일의 시작과 초기 변환 상태 (해당 하는 경우)를 기준으로 하는 오프셋 *_Off* 저장 합니다. *_Off* -1 인 경우 결과 개체는 잘못 된 스트림 위치를 나타냅니다.
 
-두 번째 생성자는 0 오프셋과 *_State*개체를 저장 합니다.
+두 번째 생성자는 0 오프셋과 *_State* 개체를 저장 합니다.
 
-## <a name="fposoperator"></a><a name="op_neq"></a>fpos:: operator! =
+## <a name="fposoperator"></a><a name="op_neq"></a> fpos:: operator! =
 
 파일 위치 표시기가 같지 않은지 테스트합니다.
 
@@ -111,7 +112,7 @@ bool operator!=(const fpos<Statetype>& right) const;
 *오른쪽*\
 비교할 파일 위치 표시기입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 파일 위치 표시기가 같지 않으면이 고, 그렇지 않으면 **`false`** 입니다.
 
@@ -171,7 +172,7 @@ int main( )
 }
 ```
 
-## <a name="fposoperator"></a><a name="op_add"></a>fpos:: operator +
+## <a name="fposoperator"></a><a name="op_add"></a> fpos:: operator +
 
 파일 위치 표시기를 증가시킵니다.
 
@@ -184,7 +185,7 @@ fpos<Statetype> operator+(streamoff _Off) const;
 *_Off*\
 파일 위치 표시기를 증분시킬 기준 오프셋입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 파일 내 위치입니다.
 
@@ -196,7 +197,7 @@ fpos<Statetype> operator+(streamoff _Off) const;
 
 `operator+` 사용에 대한 샘플은 [operator!=](#op_neq)을 참조하세요.
 
-## <a name="fposoperator"></a><a name="op_add_eq"></a>fpos:: operator + =
+## <a name="fposoperator"></a><a name="op_add_eq"></a> fpos:: operator + =
 
 파일 위치 표시기를 증가시킵니다.
 
@@ -209,19 +210,19 @@ fpos<Statetype>& operator+=(streamoff _Off);
 *_Off*\
 파일 위치 표시기를 증분시킬 기준 오프셋입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 파일 내 위치입니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 저장 된 오프셋 멤버 개체에 *_Off* 을 추가한 다음 ** \* 이**를 반환 합니다. 파일 내 위치를 지정할 경우 결과는 일반적으로 상태 종속적 인코딩이 없는 이진 스트림의 경우에만 유효합니다.
+멤버 함수는 저장 된 오프셋 멤버 개체에 *_Off* 을 추가한 다음 **\* 이** 를 반환 합니다. 파일 내 위치를 지정할 경우 결과는 일반적으로 상태 종속적 인코딩이 없는 이진 스트림의 경우에만 유효합니다.
 
 ### <a name="example"></a>예제
 
 `operator+=` 사용에 대한 샘플은 [operator!=](#op_neq)을 참조하세요.
 
-## <a name="fposoperator-"></a><a name="operator-"></a>fpos:: operator-
+## <a name="fposoperator-"></a><a name="operator-"></a> fpos:: operator-
 
 파일 위치 표시기를 감소시킵니다.
 
@@ -239,7 +240,7 @@ fpos<Statetype> operator-(streamoff _Off) const;
 *_Off*\
 스트림 오프셋입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 첫 번째 멤버 함수는 `(streamoff)*this - (streamoff) right`을 반환합니다. 두 번째 멤버 함수는 `fpos(*this) -= _Off`를 반환합니다.
 
@@ -247,7 +248,7 @@ fpos<Statetype> operator-(streamoff _Off) const;
 
 `operator-` 사용에 대한 샘플은 [operator!=](#op_neq)을 참조하세요.
 
-## <a name="fposoperator-"></a><a name="operator-_eq"></a>fpos:: operator-=
+## <a name="fposoperator-"></a><a name="operator-_eq"></a> fpos:: operator-=
 
 파일 위치 표시기를 감소시킵니다.
 
@@ -260,7 +261,7 @@ fpos<Statetype>& operator-=(streamoff _Off);
 *_Off*\
 스트림 오프셋입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 멤버 함수는 `fpos(*this) -= _Off`를 반환합니다.
 
@@ -272,7 +273,7 @@ fpos<Statetype>& operator-=(streamoff _Off);
 
 `operator-=` 사용에 대한 샘플은 [operator!=](#op_neq)을 참조하세요.
 
-## <a name="fposoperator"></a><a name="op_eq_eq"></a>fpos:: operator = =
+## <a name="fposoperator"></a><a name="op_eq_eq"></a> fpos:: operator = =
 
 파일 위치 표시기가 같은지 테스트합니다.
 
@@ -285,7 +286,7 @@ bool operator==(const fpos<Statetype>& right) const;
 *오른쪽*\
 비교할 파일 위치 표시기입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 파일 위치 표시기가 같으면이 고, 그렇지 않으면입니다. 그렇지 않으면 **`false`** 입니다.
 
@@ -297,7 +298,7 @@ bool operator==(const fpos<Statetype>& right) const;
 
 `operator+=` 사용에 대한 샘플은 [operator!=](#op_neq)을 참조하세요.
 
-## <a name="fposoperator-streamoff"></a><a name="op_streamoff"></a>fpos:: operator streamoff
+## <a name="fposoperator-streamoff"></a><a name="op_streamoff"></a> fpos:: operator streamoff
 
 `fpos` 형식 개체를 `streamoff` 형식 개체로 캐스트합니다.
 
@@ -336,7 +337,7 @@ int main( )
 0
 ```
 
-## <a name="fposseekpos"></a><a name="seekpos"></a>fpos:: seekpos
+## <a name="fposseekpos"></a><a name="seekpos"></a> fpos:: seekpos
 
 이 메서드는 C++ 표준 라이브러리에서만 내부적으로 사용됩니다. 사용자 코드에서 이 메서드를 호출하지 마세요.
 
@@ -344,7 +345,7 @@ int main( )
 fpos_t seekpos() const;
 ```
 
-## <a name="fposstate"></a><a name="state"></a>fpos:: 상태
+## <a name="fposstate"></a><a name="state"></a> fpos:: 상태
 
 변환 상태를 설정하거나 반환합니다.
 
@@ -359,7 +360,7 @@ void state(Statetype _State);
 *_State*\
 새로운 변환 상태입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 변환 상태입니다.
 

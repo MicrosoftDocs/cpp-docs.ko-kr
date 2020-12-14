@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: &lt; &gt; 함수 함수'
 title: '&lt;functional&gt; 함수'
 ms.date: 02/21/2019
 f1_keywords:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - std::bit_xor [C++]
 - std::cref [C++]
 ms.assetid: c34d0b45-50a7-447a-9368-2210d06339a4
-ms.openlocfilehash: 5e3aa35395c8fd5a42d7127d0b6072a3edf4ace5
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f3ae9fca75801555c0341923d0fc42db94546cd1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838089"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232163"
 ---
 # <a name="ltfunctionalgt-functions"></a>&lt;functional&gt; 함수
 
@@ -171,7 +172,7 @@ template <class Operation, class Type>
 
 ### <a name="return-value"></a>반환 값
 
-이항 함수 개체의 첫 번째 인수를 *왼쪽*값에 바인딩하여 생성 되는 단항 함수 개체입니다.
+이항 함수 개체의 첫 번째 인수를 *왼쪽* 값에 바인딩하여 생성 되는 단항 함수 개체입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -265,7 +266,7 @@ template <class Operation, class Type>
 
 ### <a name="return-value"></a>반환 값
 
-이항 함수 개체의 두 번째 인수를 *right*에 바인딩한 단항 함수 개체의 결과입니다.
+이항 함수 개체의 두 번째 인수를 *right* 에 바인딩한 단항 함수 개체의 결과입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -368,10 +369,10 @@ struct bit_and<void>
 지정되었거나 유추된 형식의 피연산자를 가져오는 `operator&`를 지원하는 모든 형식입니다.
 
 *비어*\
-비트 AND 연산의 왼쪽 피연산자입니다. 특수화 되지 않은 *템플릿은 형식의 lvalue*참조 인수를 사용 합니다. 특수화 된 템플릿은 유추 형식 *T*의 lvalue 및 rvalue 참조 인수를 완벽 하 게 전달 합니다.
+비트 AND 연산의 왼쪽 피연산자입니다. 특수화 되지 않은 *템플릿은 형식의 lvalue* 참조 인수를 사용 합니다. 특수화 된 템플릿은 유추 형식 *T* 의 lvalue 및 rvalue 참조 인수를 완벽 하 게 전달 합니다.
 
 *오른쪽*\
-비트 AND 연산의 오른쪽 피연산자입니다. 특수화 되지 않은 *템플릿은 형식의 lvalue*참조 인수를 사용 합니다. 특수화 된 템플릿은 유추 형식 *U*의 lvalue 및 rvalue 참조 인수를 완벽 하 게 전달 합니다.
+비트 AND 연산의 오른쪽 피연산자입니다. 특수화 되지 않은 *템플릿은 형식의 lvalue* 참조 인수를 사용 합니다. 특수화 된 템플릿은 유추 형식 *U* 의 lvalue 및 rvalue 참조 인수를 완벽 하 게 전달 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -407,7 +408,7 @@ struct bit_not<void>
 이항 `operator~`를 지원하는 형식입니다.
 
 *오른쪽*\
-비트 보수 연산의 피연산자입니다. 특수화 되지 않은 *템플릿은 형식의 lvalue*참조 인수를 사용 합니다. 특수화 된 템플릿은 유추 형식 *형식의*lvalue 또는 rvalue 참조 인수를 완벽 하 게 전달 합니다.
+비트 보수 연산의 피연산자입니다. 특수화 되지 않은 *템플릿은 형식의 lvalue* 참조 인수를 사용 합니다. 특수화 된 템플릿은 유추 형식 *형식의* lvalue 또는 rvalue 참조 인수를 완벽 하 게 전달 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -445,10 +446,10 @@ struct bit_or<void>
 지정되었거나 유추된 형식의 피연산자를 가져오는 `operator|`를 지원하는 모든 형식입니다.
 
 *비어*\
-비트 OR 연산의 왼쪽 피연산자입니다. 특수화 되지 않은 *템플릿은 형식의 lvalue*참조 인수를 사용 합니다. 특수화 된 템플릿은 유추 형식 *T*의 lvalue 및 rvalue 참조 인수를 완벽 하 게 전달 합니다.
+비트 OR 연산의 왼쪽 피연산자입니다. 특수화 되지 않은 *템플릿은 형식의 lvalue* 참조 인수를 사용 합니다. 특수화 된 템플릿은 유추 형식 *T* 의 lvalue 및 rvalue 참조 인수를 완벽 하 게 전달 합니다.
 
 *오른쪽*\
-비트 OR 연산의 오른쪽 피연산자입니다. 특수화 되지 않은 *템플릿은 형식의 lvalue*참조 인수를 사용 합니다. 특수화 된 템플릿은 유추 형식 *U*의 lvalue 및 rvalue 참조 인수를 완벽 하 게 전달 합니다.
+비트 OR 연산의 오른쪽 피연산자입니다. 특수화 되지 않은 *템플릿은 형식의 lvalue* 참조 인수를 사용 합니다. 특수화 된 템플릿은 유추 형식 *U* 의 lvalue 및 rvalue 참조 인수를 완벽 하 게 전달 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -486,10 +487,10 @@ struct bit_xor<void>
 지정되었거나 유추된 형식의 피연산자를 가져오는 `operator^`를 지원하는 모든 형식입니다.
 
 *비어*\
-비트 XOR 연산의 왼쪽 피연산자입니다. 특수화 되지 않은 *템플릿은 형식의 lvalue*참조 인수를 사용 합니다. 특수화 된 템플릿은 유추 형식 *T*의 lvalue 및 rvalue 참조 인수를 완벽 하 게 전달 합니다.
+비트 XOR 연산의 왼쪽 피연산자입니다. 특수화 되지 않은 *템플릿은 형식의 lvalue* 참조 인수를 사용 합니다. 특수화 된 템플릿은 유추 형식 *T* 의 lvalue 및 rvalue 참조 인수를 완벽 하 게 전달 합니다.
 
 *오른쪽*\
-비트 XOR 연산의 오른쪽 피연산자입니다. 특수화 되지 않은 *템플릿은 형식의 lvalue*참조 인수를 사용 합니다. 특수화 된 템플릿은 유추 형식 *U*의 lvalue 및 rvalue 참조 인수를 완벽 하 게 전달 합니다.
+비트 XOR 연산의 오른쪽 피연산자입니다. 특수화 되지 않은 *템플릿은 형식의 lvalue* 참조 인수를 사용 합니다. 특수화 된 템플릿은 유추 형식 *U* 의 lvalue 및 rvalue 참조 인수를 완벽 하 게 전달 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -584,7 +585,7 @@ invoke_result_t<Callable, Args...>
 
 ### <a name="remarks"></a>설명
 
-매개 변수 *인수*를 사용 하 여 호출 가능 개체 *fn* 을 호출 합니다. 실제로 `INVOKE(std::forward<Callable>(fn), std::forward<Args>(args)...)` 의사 (pseudo) 함수는 `INVOKE(f, t1, t2, ..., tN)` 다음 중 하나를 의미 합니다.
+매개 변수 *인수* 를 사용 하 여 호출 가능 개체 *fn* 을 호출 합니다. 실제로 `INVOKE(std::forward<Callable>(fn), std::forward<Args>(args)...)` 의사 (pseudo) 함수는 `INVOKE(f, t1, t2, ..., tN)` 다음 중 하나를 의미 합니다.
 
 - `f`가 `T` 클래스의 멤버 함수에 대한 포인터이고, `t1`이 `T` 형식의 개체이거나 `T` 형식의 개체에 대한 참조 또는 `T`에서 파생된 형식의 개체에 대한 참조인 경우 `(t1.*f)(t2, ..., tN)`입니다. 즉,가 true 인 경우입니다 `std::is_base_of<T, std::decay_t<decltype(t1)>>::value` .
 
@@ -697,9 +698,9 @@ unspecified mem_fn(RTy Ty::*pm);
 
 템플릿 함수는 약한 결과 형식의 간단한 호출 래퍼를 반환 합니다 .이는 `cw` 식이 `cw(t, a2, ..., aN)` 와 동일 합니다 `INVOKE(pm, t, a2, ..., aN)` . 예외를 throw 하지 않습니다.
 
-반환 된 호출 래퍼는 해당 `std::unary_function<cv Ty*, RTy>` `result_type` *RTy* `argument_type` `cv Ty*` 형식이 인수 *를* `cv` 사용 하지 않는 cv 한정자를 사용 하는 멤버 함수에 대 한 포인터인 경우에만에서 파생 되 고 중첩 된 형식을 rty 및 중첩 형식의 동의어로 정의 합니다.
+반환 된 호출 래퍼는 해당 `std::unary_function<cv Ty*, RTy>` `result_type`  `argument_type` `cv Ty*` 형식이 인수 *를* `cv` 사용 하지 않는 cv 한정자를 사용 하는 멤버 함수에 대 한 포인터인 경우에만에서 파생 되 고 중첩 된 형식을 rty 및 중첩 형식의 동의어로 정의 합니다.
 
-반환 된 호출 래퍼는 `std::binary_function<cv Ty*, T2, RTy>` `result_type` *RTy* `first argument_type` `cv Ty*` `second argument_type` `T2` *Ty* 형식이 형식의 `cv` 인수 하나를 사용 하는 cv 한정자를 사용 하는 멤버 함수에 대 한 포인터인 경우에만 `T2` (및에서 중첩 된 형식을 rty의 동의어로, 중첩 된 형식을의 동의어로, 중첩 된 형식을의 동의어로 정의)에서 파생 됩니다.
+반환 된 호출 래퍼는 `std::binary_function<cv Ty*, T2, RTy>` `result_type`  `first argument_type` `cv Ty*` `second argument_type` `T2` *Ty* 형식이 형식의 `cv` 인수 하나를 사용 하는 cv 한정자를 사용 하는 멤버 함수에 대 한 포인터인 경우에만 `T2` (및에서 중첩 된 형식을 rty의 동의어로, 중첩 된 형식을의 동의어로, 중첩 된 형식을의 동의어로 정의)에서 파생 됩니다.
 
 ### <a name="example"></a>예제
 

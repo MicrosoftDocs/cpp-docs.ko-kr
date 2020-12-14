@@ -1,4 +1,5 @@
 ---
+description: Is_destructible 클래스에 대해 자세히 알아보세요.
 title: is_destructible 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - is_destructible
 ms.assetid: 3bb9b718-1ad5-49ae-93cc-92b93b546b4d
-ms.openlocfilehash: cd3c54684fe08a77d3a8774cd6a2554db9fb0c9c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: fcd41c292c0054553b165529a85e7b23312d3c2e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215688"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97231162"
 ---
 # <a name="is_destructible-class"></a>is_destructible 클래스
 

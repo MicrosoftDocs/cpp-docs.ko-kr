@@ -1,4 +1,5 @@
 ---
+description: Is_convertible 클래스에 대해 자세히 알아보세요.
 title: is_convertible 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - is_convertible class
 - is_convertible
 ms.assetid: 75614008-1894-42ea-bd57-974399628536
-ms.openlocfilehash: c90fe5687992e4df49e8655387cfdd14b40aa529
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 4f5c9413eb33dd38d68929fe6b92f4581eced521
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68454620"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97231201"
 ---
-# <a name="isconvertible-class"></a>is_convertible 클래스
+# <a name="is_convertible-class"></a>is_convertible 클래스
 
 한 가지 형식을 다른 형식으로 변환할 수 있는지 여부를 테스트합니다.
 
@@ -71,11 +72,11 @@ is_convertible<char, int> == true
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<type_traits>
+**헤더:**\<type_traits>
 
 **네임스페이스:** std
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [<type_traits>](../standard-library/type-traits.md)\
 [is_base_of 클래스](../standard-library/is-base-of-class.md)

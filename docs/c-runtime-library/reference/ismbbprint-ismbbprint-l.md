@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _ismbbprint, _ismbbprint_l'
 title: _ismbbprint, _ismbbprint_l
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - _ismbbprint function
 - _ismbbprint_l function
 ms.assetid: d08a061c-18a8-48f2-a75d-bff4870aec9d
-ms.openlocfilehash: 63aa7d9af3b756bc7807cae55fe969d492ec43cf
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: e168e90b3372c220011ffdbe4e795570e9ffc1ae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918645"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97229680"
 ---
 # <a name="_ismbbprint-_ismbbprint_l"></a>_ismbbprint, _ismbbprint_l
 
@@ -65,13 +66,13 @@ int _ismbbprint_l(
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 식이 다음과 같이 0이 아닌 값을 반환 **_ismbbprint**
 
 `isprint(c) || _ismbbkprint(c)`
 
-*c*의 경우 0이 아니고, 그렇지 않으면 0입니다. **_ismbbprint** 은 모든 로캘 종속 동작에 현재 로캘을 사용 합니다. **_ismbbprint_l** 은 전달 된 로캘을 대신 사용 한다는 점을 제외 하 고 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+*c* 의 경우 0이 아니고, 그렇지 않으면 0입니다. **_ismbbprint** 은 모든 로캘 종속 동작에 현재 로캘을 사용 합니다. **_ismbbprint_l** 은 전달 된 로캘을 대신 사용 한다는 점을 제외 하 고 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
@@ -86,7 +87,7 @@ int _ismbbprint_l(
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [바이트 분류](../../c-runtime-library/byte-classification.md)<br/>
 [_ismbb 루틴](../../c-runtime-library/ismbb-routines.md)<br/>

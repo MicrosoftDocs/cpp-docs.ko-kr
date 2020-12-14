@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 전역 변수'
 title: 전역 변수
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - variables, global
 - global variables, Microsoft run-time library
 ms.assetid: 01d1551c-2f0c-4f72-935c-6442caccf84f
-ms.openlocfilehash: dfa78bd2c7aae7cc6059443066cbef58512755ce
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: 8029f058b39cb2e069c83279b361b79f3c8f5515
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57744373"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97229888"
 ---
 # <a name="global-variables"></a>전역 변수
 
@@ -21,7 +22,7 @@ Microsoft C 런타임 라이브러리는 다음 전역 변수 또는 매크로�
 
 |변수|설명|
 |--------------|-----------------|
-|[__argc, \__argv, \__wargv](../c-runtime-library/argc-argv-wargv.md)|명령줄 인수가 포함되어 있습니다.|
+|[__argc, \_ _argv, \_ _wargv](../c-runtime-library/argc-argv-wargv.md)|명령줄 인수가 포함되어 있습니다.|
 |[_daylight, _dstbias, _timezone 및 _tzname](../c-runtime-library/daylight-dstbias-timezone-and-tzname.md)|더 이상 사용되지 않습니다. 대신 `_get_daylight`, `_get_dstbias`, `_get_timezone` 및 `_get_tzname`을 사용합니다.<br /><br /> 현지 시간을 조정하고 일부 날짜 및 시간 함수에 사용합니다.|
 |[errno, _doserrno, _sys_errlist 및 _sys_nerr](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)|더 이상 사용되지 않습니다. 대신 `_get_errno`, `_set_errno`, `_get_doserrno`, `_set_doserrno`, `perror` 및 `strerror`를 사용합니다.<br /><br /> 오류 코드 및 관련 정보를 저장합니다.|
 |[_environ, _wenviron](../c-runtime-library/environ-wenviron.md)|더 이상 사용되지 않습니다. 대신 `getenv_s`, `_wgetenv_s`, `_dupenv_s`, `_wdupenv_s`, `_putenv_s` 및 `_wputenv_s`를 사용합니다.<br /><br /> 프로세스 환경 문자열에 대한 포인터의 배열에 대한 포인터입니다. 시작 시 초기화됩니다.|
@@ -32,9 +33,9 @@ Microsoft C 런타임 라이브러리는 다음 전역 변수 또는 매크로�
 
 ## <a name="see-also"></a>참고 항목
 
-[C 런타임 라이브러리 참조](../c-runtime-library/c-run-time-library-reference.md)<br/>
+[C Run-Time 라이브러리 참조](../c-runtime-library/c-run-time-library-reference.md)<br/>
 [전역 상수](../c-runtime-library/global-constants.md)<br/>
-[__argc, \__argv, \__wargv](../c-runtime-library/argc-argv-wargv.md)<br/>
+[__argc, \_ _argv, \_ _wargv](../c-runtime-library/argc-argv-wargv.md)<br/>
 [_get_daylight](../c-runtime-library/reference/get-daylight.md)<br/>
 [_get_dstbias](../c-runtime-library/reference/get-dstbias.md)<br/>
 [_get_timezone](../c-runtime-library/reference/get-timezone.md)<br/>

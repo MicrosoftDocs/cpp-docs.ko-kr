@@ -1,4 +1,5 @@
 ---
+description: Gamma_distribution 클래스에 대해 자세히 알아보세요.
 title: gamma_distribution 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - std::gamma_distribution [C++], param_type
 - std::gamma_distribution [C++], param_type
 ms.assetid: 2a6798ac-6152-41d7-8ef6-d684d92f1572
-ms.openlocfilehash: 37b4661cf14fe4302d50557472ce03c120eb2741
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b010a5fc74f98d27c50377bf6b5f84fb84b7bb75
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837926"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232098"
 ---
 # <a name="gamma_distribution-class"></a>gamma_distribution 클래스
 
@@ -212,7 +213,7 @@ explicit gamma_distribution(const param_type& parm);
 
 첫 번째 생성자는 저장된 `alpha` 값이 *alpha* 값을 갖고 저장된 `beta` 값이 *beta* 값을 갖는 개체를 생성합니다.
 
-두 번째 생성자는 저장된 매개 변수가 *parm*에서 초기화되는 개체를 생성합니다. `param()` 멤버 함수를 호출하여 기존 분포의 현재 매개 변수를 가져와 설정할 수 있습니다.
+두 번째 생성자는 저장된 매개 변수가 *parm* 에서 초기화되는 개체를 생성합니다. `param()` 멤버 함수를 호출하여 기존 분포의 현재 매개 변수를 가져와 설정할 수 있습니다.
 
 ## <a name="gamma_distributionparam_type"></a><a name="param_type"></a> gamma_distribution::p aram_type
 

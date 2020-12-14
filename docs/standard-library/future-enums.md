@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: &lt; 미래 &gt; 열거형'
 title: '&lt;future&gt; 열거형'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 - future/std::future_status
 - future/std::launch
 ms.assetid: 8c675645-db47-4cab-bc0e-7b87f8a302df
-ms.openlocfilehash: 45dc3277b3f14b7f9dbb043cf9db1f1865d4e4c9
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 473533d5d22ac5708af7a86cc58a57ac033545af
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838024"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232137"
 ---
 # <a name="ltfuturegt-enums"></a>&lt;future&gt; 열거형
 

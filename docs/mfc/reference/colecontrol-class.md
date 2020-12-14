@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: COleControl 클래스'
 title: COleControl 클래스
 ms.date: 08/27/2018
 f1_keywords:
@@ -334,12 +335,12 @@ helpviewer_keywords:
 - COleControl [MFC], IsInvokeAllowed
 - COleControl [MFC], SetInitialDataFormats
 ms.assetid: 53e95299-38e8-447b-9c5f-a381d27f5123
-ms.openlocfilehash: 074b0e1df5a8d70c8b32ee03dcb073c26c13be9b
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 6cc5e1896d186f1fa87eee34565819d518f9d4d0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841001"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227548"
 ---
 # <a name="colecontrol-class"></a>COleControl 클래스
 
@@ -918,7 +919,7 @@ virtual void DisplayError(
 
 ### <a name="remarks"></a>설명
 
-기본 동작은 *lpszDescription*에 포함 된 오류에 대 한 설명을 포함 하는 메시지 상자를 표시 합니다.
+기본 동작은 *lpszDescription* 에 포함 된 오류에 대 한 설명을 포함 하는 메시지 상자를 표시 합니다.
 
 오류가 표시 되는 방식을 사용자 지정 하려면이 함수를 재정의 합니다.
 
@@ -1253,7 +1254,7 @@ void FireKeyPress(USHORT* pnChar);
 
 이 이벤트가 사용자 지정 이벤트로 정의 된 경우 이벤트가 발생 하는 시점을 결정 합니다.
 
-이벤트의 수신자는 *Pnchar*를 수정할 수 있습니다. 예를 들어 모든 소문자를 대문자로 변환 합니다. 수정 된 문자를 검사 하려면를 재정의 `OnKeyPressEvent` 합니다.
+이벤트의 수신자는 *Pnchar* 를 수정할 수 있습니다. 예를 들어 모든 소문자를 대문자로 변환 합니다. 수정 된 문자를 검사 하려면를 재정의 `OnKeyPressEvent` 합니다.
 
 KeyPress 이벤트가 자동으로 발생 하려면 컨트롤의 이벤트 맵에 스톡 KeyPress 이벤트가 정의 되어 있어야 합니다.
 
@@ -1502,10 +1503,10 @@ BOOL GetAmbientProperty(
 원하는 앰비언트 속성의 디스패치 ID입니다.
 
 *vtProp*<br/>
-*PvProp*에서 반환 될 값의 형식을 지정 하는 variant 형식 태그입니다.
+*PvProp* 에서 반환 될 값의 형식을 지정 하는 variant 형식 태그입니다.
 
 *pvProp*<br/>
-속성 값 이나 반환 값을 받을 변수의 주소에 대 한 포인터입니다. 이 포인터의 실제 형식은 *vtProp*에 지정 된 형식과 일치 해야 합니다.
+속성 값 이나 반환 값을 받을 변수의 주소에 대 한 포인터입니다. 이 포인터의 실제 형식은 *vtProp* 에 지정 된 형식과 일치 해야 합니다.
 
 |vtProp|PvProp의 형식|
 |------------|--------------------|
@@ -1860,7 +1861,7 @@ OLE 컨트롤의 창 핸들입니다 (있는 경우). 그렇지 않으면 NULL�
 
 ## <a name="colecontrolgetmessagestring"></a><a name="getmessagestring"></a> COleControl:: GetMessageString
 
-*NID*로 식별 되는 메뉴 항목의 용도를 설명 하는 간단한 문자열을 가져오기 위해 프레임 워크에서 호출 됩니다.
+*NID* 로 식별 되는 메뉴 항목의 용도를 설명 하는 간단한 문자열을 가져오기 위해 프레임 워크에서 호출 됩니다.
 
 ```
 virtual void GetMessageString(
@@ -1878,7 +1879,7 @@ virtual void GetMessageString(
 
 ### <a name="remarks"></a>설명
 
-메뉴 항목을 강조 표시 하는 동안 상태 표시줄에 표시할 메시지를 가져오는 데 사용할 수 있습니다. 기본 구현에서는 *nID*로 식별 된 문자열 리소스를 로드 하려고 합니다.
+메뉴 항목을 강조 표시 하는 동안 상태 표시줄에 표시할 메시지를 가져오는 데 사용할 수 있습니다. 기본 구현에서는 *nID* 로 식별 된 문자열 리소스를 로드 하려고 합니다.
 
 ## <a name="colecontrolgetnotsupported"></a><a name="getnotsupported"></a> COleControl:: GetNotSupported
 
@@ -2394,7 +2395,7 @@ virtual void OnDraw(
 
 ### <a name="remarks"></a>설명
 
-`OnDraw` 는 일반적으로 화면 표시를 위해 호출 되며, 화면 장치 컨텍스트를 *pDC*로 전달 합니다. *Rcbounds* 매개 변수는 현재 매핑 모드를 기준으로 대상 장치 컨텍스트의 사각형을 식별 합니다. *Rcinvalid* 매개 변수가 잘못 된 실제 사각형입니다. 어떤 경우에는 *Rcbounds*보다 작은 영역입니다.
+`OnDraw` 는 일반적으로 화면 표시를 위해 호출 되며, 화면 장치 컨텍스트를 *pDC* 로 전달 합니다. *Rcbounds* 매개 변수는 현재 매핑 모드를 기준으로 대상 장치 컨텍스트의 사각형을 식별 합니다. *Rcinvalid* 매개 변수가 잘못 된 실제 사각형입니다. 어떤 경우에는 *Rcbounds* 보다 작은 영역입니다.
 
 ## <a name="colecontrolondrawmetafile"></a><a name="ondrawmetafile"></a> COleControl:: OnDrawMetafile 파일
 
@@ -2568,7 +2569,7 @@ virtual BOOL OnGetColorSet(
 그림이 렌더링 되어야 하는 대상 장치를 가리킵니다. 이 값이 NULL 이면 그림이 기본 대상 장치 (일반적으로 디스플레이 장치)에 대해 렌더링 됩니다.
 
 *hicTargetDev*<br/>
-*Ptd*로 표시 되는 대상 장치에 대 한 정보 컨텍스트를 지정 합니다. 이 매개 변수는 장치 컨텍스트가 될 수 있지만 반드시 그럴 필요는 없습니다. *Ptd* 가 Null 이면 *hicTargetDev* 도 null 이어야 합니다.
+*Ptd* 로 표시 되는 대상 장치에 대 한 정보 컨텍스트를 지정 합니다. 이 매개 변수는 장치 컨텍스트가 될 수 있지만 반드시 그럴 필요는 없습니다. *Ptd* 가 Null 이면 *hicTargetDev* 도 null 이어야 합니다.
 
 *ppColorSet*<br/>
 사용할 색 집합을 복사 해야 하는 위치에 대 한 포인터입니다. 함수에서 색 집합을 반환 하지 않는 경우 NULL이 반환 됩니다.
@@ -2604,7 +2605,7 @@ virtual void OnGetControlInfo(LPCONTROLINFO pControlInfo);
 
 ## <a name="colecontrolongetdisplaystring"></a><a name="ongetdisplaystring"></a> COleControl:: OnGetDisplayString
 
-*Dispid*로 식별 되는 속성의 현재 값을 나타내는 문자열을 가져오기 위해 프레임 워크에서 호출 됩니다.
+*Dispid* 로 식별 되는 속성의 현재 값을 나타내는 문자열을 가져오기 위해 프레임 워크에서 호출 됩니다.
 
 ```
 virtual BOOL OnGetDisplayString(
@@ -2725,11 +2726,11 @@ virtual BOOL OnGetPredefinedStrings(
 
 ### <a name="return-value"></a>반환 값
 
-요소가 *Pstringarray* 및 *pCookieArray*에 추가 된 경우 0이 아닙니다.
+요소가 *Pstringarray* 및 *pCookieArray* 에 추가 된 경우 0이 아닙니다.
 
 ### <a name="remarks"></a>설명
 
-컨트롤에 문자열로 표현할 수 있는 가능한 값 집합이 포함 된 속성이 있는 경우이 함수를 재정의 합니다. *Pstringarray*에 추가 된 각 요소에 대해 해당 "cookie" 요소를 pCookieArray에 추가 해야 합니다 *.* 이러한 "쿠키" 값은 나중에 프레임 워크에서 함수에 전달 될 수 있습니다 `COleControl::OnGetPredefinedValue` .
+컨트롤에 문자열로 표현할 수 있는 가능한 값 집합이 포함 된 속성이 있는 경우이 함수를 재정의 합니다. *Pstringarray* 에 추가 된 각 요소에 대해 해당 "cookie" 요소를 pCookieArray에 추가 해야 합니다 *.* 이러한 "쿠키" 값은 나중에 프레임 워크에서 함수에 전달 될 수 있습니다 `COleControl::OnGetPredefinedValue` .
 
 ## <a name="colecontrolongetpredefinedvalue"></a><a name="ongetpredefinedvalue"></a> COleControl:: OnGetPredefinedValue
 
@@ -2755,7 +2756,7 @@ virtual BOOL OnGetPredefinedValue(
 
 ### <a name="return-value"></a>반환 값
 
-값이 *Lpvarout*에서 반환 된 경우 0이 아닙니다. 그렇지 않으면 0입니다.
+값이 *Lpvarout* 에서 반환 된 경우 0이 아닙니다. 그렇지 않으면 0입니다.
 
 ## <a name="colecontrolongetviewextent"></a><a name="ongetviewextent"></a> COleControl:: OnGetViewExtent
 
@@ -3023,7 +3024,7 @@ virtual BOOL OnMapPropertyToPage(
 
 ### <a name="return-value"></a>반환 값
 
-*Lpclsid*에 클래스 ID가 반환 되 면 0이 아닌 값입니다. 그렇지 않으면 0입니다.
+*Lpclsid* 에 클래스 ID가 반환 되 면 0이 아닌 값입니다. 그렇지 않으면 0입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -3188,7 +3189,7 @@ virtual BOOL OnRenderData(
 
 지정 된 형식은 이전에 지연 된 렌더링을 위해 [delayrenderdata](../../mfc/reference/coledatasource-class.md#delayrenderdata) 또는 [delayrenderfiledata](../../mfc/reference/coledatasource-class.md#delayrenderfiledata) 멤버 함수를 사용 하 여 컨트롤 개체에 배치 되었습니다. 이 함수의 기본 구현은 `OnRenderFileData` `OnRenderGlobalData` 제공 된 저장소 미디어가 파일 또는 메모리 일 경우 각각 또는를 호출 합니다. 요청 된 형식이 CF_METAFILEPICT 또는 영구 속성 집합 형식인 경우 기본 구현은 적절 한 데이터를 렌더링 하 고 0이 아닌 값을 반환 합니다. 그렇지 않으면 0을 반환 하 고 아무 작업도 수행 하지 않습니다.
 
-*LpStgMedium->tymed* 이 TYMED_NULL 경우 *lpFormatEtc->tymed*에 지정 된 대로 STGMEDIUM를 할당 하 고 채워야 합니다. TYMED_NULL 하지 않으면 데이터를 사용 하 여 STGMEDIUM를 채워야 합니다.
+*LpStgMedium->tymed* 이 TYMED_NULL 경우 *lpFormatEtc->tymed* 에 지정 된 대로 STGMEDIUM를 할당 하 고 채워야 합니다. TYMED_NULL 하지 않으면 데이터를 사용 하 여 STGMEDIUM를 채워야 합니다.
 
 요청 된 형식 및 중간에 데이터를 제공 하려면이 함수를 재정의 합니다. 데이터에 따라이 함수의 다른 버전 중 하나를 대신 재정의할 수 있습니다. 데이터가 작고 크기가 고정 되어 있으면를 재정의 `OnRenderGlobalData` 합니다. 데이터가 파일에 있거나 가변 크기인 경우를 재정의 `OnRenderFileData` 합니다.
 
@@ -3250,7 +3251,7 @@ virtual BOOL OnRenderGlobalData(
 
 지정 된 형식은 이전에 지연 렌더링을 위해 [Delayrenderdata](../../mfc/reference/coledatasource-class.md#delayrenderdata) 멤버 함수를 사용 하 여 컨트롤 개체에 배치 되었습니다. 이 함수의 기본 구현은 단순히 FALSE를 반환 합니다.
 
-*Phglobal* 이 NULL 인 경우 새 HGLOBAL을 할당 하 고 *phglobal*에 반환 해야 합니다. 그렇지 않으면 *Phglobal* 로 지정 된 HGLOBAL 데이터를 채워야 합니다. HGLOBAL에 배치 되는 데이터의 양은 메모리 블록의 현재 크기를 초과 하면 안 됩니다. 또한 블록을 더 큰 크기에 다시 할당할 수 없습니다.
+*Phglobal* 이 NULL 인 경우 새 HGLOBAL을 할당 하 고 *phglobal* 에 반환 해야 합니다. 그렇지 않으면 *Phglobal* 로 지정 된 HGLOBAL 데이터를 채워야 합니다. HGLOBAL에 배치 되는 데이터의 양은 메모리 블록의 현재 크기를 초과 하면 안 됩니다. 또한 블록을 더 큰 크기에 다시 할당할 수 없습니다.
 
 요청 된 형식 및 중간에 데이터를 제공 하려면이 함수를 재정의 합니다. 데이터에 따라이 함수의 다른 버전 중 하나를 대신 재정의할 수 있습니다. 여러 저장소 미디어를 처리 하려면를 재정의 `OnRenderData` 합니다. 데이터가 파일에 있거나 가변 크기인 경우를 재정의 `OnRenderFileData` 합니다.
 
@@ -3736,7 +3737,7 @@ void SerializeExtent(CArchive& ar);
 
 ### <a name="parameters"></a>매개 변수
 
-*방어력*<br/>
+*ar*<br/>
 `CArchive`Serialize 하거나에서 serialize 할 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -3757,7 +3758,7 @@ void SerializeStockProps(CArchive& ar);
 
 ### <a name="parameters"></a>매개 변수
 
-*방어력*<br/>
+*ar*<br/>
 `CArchive`Serialize 하거나에서 serialize 할 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -3779,7 +3780,7 @@ DWORD SerializeVersion(
 
 ### <a name="parameters"></a>매개 변수
 
-*방어력*<br/>
+*ar*<br/>
 `CArchive`Serialize 하거나에서 serialize 할 개체입니다.
 
 *dwVersionDefault*<br/>
@@ -4003,7 +4004,7 @@ void SetModifiedFlag(BOOL bModified = TRUE);
 
 ### <a name="remarks"></a>설명
 
-컨트롤의 영구 상태에 영향을 주는 변경이 발생할 때마다이 함수를 호출 합니다. 예를 들어, 영구 속성의 값이 변경 되는 경우 *Bmodified* **TRUE**를 사용 하 여이 함수를 호출 합니다.
+컨트롤의 영구 상태에 영향을 주는 변경이 발생할 때마다이 함수를 호출 합니다. 예를 들어, 영구 속성의 값이 변경 되는 경우 *Bmodified* **TRUE** 를 사용 하 여이 함수를 호출 합니다.
 
 ## <a name="colecontrolsetnotpermitted"></a><a name="setnotpermitted"></a> COleControl:: SetNotPermitted 됨
 

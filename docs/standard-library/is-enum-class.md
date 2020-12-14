@@ -1,4 +1,5 @@
 ---
+description: Is_enum 클래스에 대해 자세히 알아보세요.
 title: is_enum 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - is_enum class
 - is_enum
 ms.assetid: df3b00b7-4f98-4b3a-96ce-10ad958ee69c
-ms.openlocfilehash: 4c8ac69bacf72cc9a281e239263a14a42f4a0efe
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 6eaffc4258dd7741e177718ed39a3d8c3f75f96f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68452676"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97231149"
 ---
-# <a name="isenum-class"></a>is_enum 클래스
+# <a name="is_enum-class"></a>is_enum 클래스
 
 형식이 열거형인지 테스트합니다.
 
@@ -32,7 +33,7 @@ struct is_enum;
 
 ## <a name="remarks"></a>설명
 
-형식 조건자의 인스턴스는 *Ty* 형식이 열거형 형식 이거나 `cv-qualified` 열거형 형식의 형식인 경우 true이 고 그렇지 않은 경우 false입니다.
+형식 조건자의 인스턴스는 *Ty* 형식이 열거형 형식 이거나 열거형 형식의 형식인 경우 true `cv-qualified` 이 고 그렇지 않은 경우 false입니다.
 
 ## <a name="example"></a>예제
 
@@ -71,11 +72,11 @@ is_enum<int> == false
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<type_traits>
+**헤더:**\<type_traits>
 
 **네임스페이스:** std
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [<type_traits>](../standard-library/type-traits.md)\
 [is_integral 클래스](../standard-library/is-integral-class.md)

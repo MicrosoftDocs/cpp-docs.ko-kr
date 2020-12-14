@@ -1,4 +1,5 @@
 ---
+description: Forward_list 클래스에 대해 자세히 알아보세요.
 title: forward_list 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -79,12 +80,12 @@ helpviewer_keywords:
 - std::forward_list::splice_after
 - std::forward_list::swap
 - std::forward_list::unique
-ms.openlocfilehash: 16471f0986d58e38fed436b2921ce3f8a3e89325
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 3d9cb038123b093f81f5eb4fca49db77885ff1d2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835781"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232410"
 ---
 # <a name="forward_list-class"></a>forward_list 클래스
 
@@ -134,13 +135,13 @@ forward_list의 메모리 할당 및 할당 취소에 대한 세부 정보를 �
 |[const_pointer](#const_pointer)|전방 목록의 요소에 대 한 포인터를 제공 하는 형식입니다 **`const`** .|
 |[const_reference](#const_reference)|정방향 목록의 요소에 대한 상수 참조를 제공하는 형식입니다.|
 |[difference_type](#difference_type)|반복기가 가리키는 요소 사이의 범위에 있는 정방향 목록의 요소 수를 나타내는 데 사용할 수 있는 부호 있는 정수 형식입니다.|
-|[반복](#iterator)|정방향 목록에 대한 반복기를 제공하는 형식입니다.|
+|[iterator](#iterator)|정방향 목록에 대한 반복기를 제공하는 형식입니다.|
 |[놓고](#pointer)|정방향 목록의 요소에 대한 포인터를 제공하는 형식입니다.|
 |[reference](#reference)|정방향 목록의 요소에 대한 참조를 제공하는 형식입니다.|
 |[size_type](#size_type)|두 요소 사이의 부호가 없는 거리를 나타내는 형식입니다.|
 |[value_type](#value_type)|정방향 목록에 저장된 요소의 형식을 나타내는 형식입니다.|
 
-### <a name="functions"></a>Functions
+### <a name="functions"></a>함수
 
 |Name|설명|
 |-|-|
@@ -150,11 +151,11 @@ forward_list의 메모리 할당 및 할당 취소에 대한 세부 정보를 �
 |[cbefore_begin](#cbefore_begin)|정방향 목록에서 첫 번째 요소 앞의 위치에 주소를 지정하는 const 반복기를 반환합니다.|
 |[cbegin](#cbegin)|정방향 목록에서 첫 번째 요소의 주소를 지정하는 const 반복기를 반환합니다.|
 |[cend](#cend)|정방향 목록에서 마지막 요소 다음에 나오는 위치의 주소를 지정하는 const 반복기를 반환합니다.|
-|[해제](#clear)|정방향 목록의 모든 요소를 지웁니다.|
+|[clear](#clear)|정방향 목록의 모든 요소를 지웁니다.|
 |[emplace_after](#emplace_after)|이동 후 지정된 위치 뒤에 새 요소를 생성합니다.|
 |[emplace_front](#emplace_front)|생성된 요소를 목록 시작 부분에 추가합니다.|
 |[empty](#empty)|정방향 목록이 비어 있는지 테스트합니다.|
-|[종단](#end)|정방향 목록에서 마지막 요소 다음에 나오는 위치의 주소를 지정하는 반복기를 반환합니다.|
+|[end](#end)|정방향 목록에서 마지막 요소 다음에 나오는 위치의 주소를 지정하는 반복기를 반환합니다.|
 |[erase_after](#erase_after)|정방향 목록의 지정된 위치 뒤에서 요소를 제거합니다.|
 |[앞뒤](#front)|정방향 목록의 첫 번째 요소에 대한 참조를 반환합니다.|
 |[get_allocator](#get_allocator)|정방향 목록을 생성하는 데 사용되는 할당자 개체의 복사본을 반환합니다.|
@@ -221,7 +222,7 @@ void assign(InputIterator First, InputIterator Last);
 각 요소에 할당할 값입니다.
 
 *입력할*\
-값의 유형입니다.
+값의 형식입니다.
 
 *IList*\
 복사할 initializer_list입니다.
@@ -249,7 +250,7 @@ iterator before_begin();
 
 ### <a name="remarks"></a>설명
 
-## <a name="begin"></a><a name="begin"></a> 시작
+## <a name="begin"></a><a name="begin"></a> begin
 
 정방향 목록에서 첫 번째 요소의 주소를 지정하는 반복기를 반환합니다.
 
@@ -445,7 +446,7 @@ bool empty() const;
 
 **`true`** 전방 목록이 비어 있으면이 고, 그렇지 않으면입니다. 그렇지 않으면 **`false`** 입니다.
 
-## <a name="end"></a><a name="end"></a> 종단
+## <a name="end"></a><a name="end"></a> end
 
 정방향 목록에서 마지막 요소 다음에 나오는 위치의 주소를 지정하는 반복기를 반환합니다.
 
@@ -484,7 +485,7 @@ iterator erase_after(const_iterator first, const_iterator last);
 
 ### <a name="remarks"></a>설명
 
-첫 번째 멤버 함수는 제어 되는 시퀀스의 요소를 *Where*바로 뒤에서 제거 합니다.
+첫 번째 멤버 함수는 제어 되는 시퀀스의 요소를 *Where* 바로 뒤에서 제거 합니다.
 
 두 번째 멤버 함수는 `( first,  last)` 범위(끝점은 포함되지 않음)에 있는 제어되는 시퀀스의 요소를 제거합니다.
 
@@ -538,15 +539,15 @@ forward_list(InputIterator First, InputIterator Last, const Allocator& Al);
 
 ### <a name="remarks"></a>설명
 
-모든 생성자는 [할당자](../standard-library/allocator-class.md)를 저장하고 제어되는 시퀀스를 초기화합니다. 할당자 개체는 *Al*인수입니다 (있는 경우). 복사 생성자의 경우 `right.get_allocator()`입니다. 그렇지 않으면 `Allocator()`입니다.
+모든 생성자는 [할당자](../standard-library/allocator-class.md)를 저장하고 제어되는 시퀀스를 초기화합니다. 할당자 개체는 *Al* 인수입니다 (있는 경우). 복사 생성자의 경우 `right.get_allocator()`입니다. 그렇지 않으면 `Allocator()`입니다.
 
 처음 두 생성자는 빈 초기 제어되는 시퀀스를 지정합니다.
 
 세 번째 생성자는 값의 *Count* 요소 반복을 지정 합니다 `Type()` .
 
-네 번째 및 다섯 번째 생성자는 값 *Val*의 *Count* 요소 반복을 지정 합니다.
+네 번째 및 다섯 번째 생성자는 값 *Val* 의 *Count* 요소 반복을 지정 합니다.
 
-여섯 번째 생성자는 *Right*로 제어 되는 시퀀스의 복사본을 지정 합니다. `InputIterator`가 정수 형식이면 다음 두 생성자가 `(Type)Last` 값의 `(size_type)First` 요소 반복을 지정합니다. 그렇지 않으면 다음 두 생성자는 시퀀스 `[First, Last)`를 지정합니다.
+여섯 번째 생성자는 *Right* 로 제어 되는 시퀀스의 복사본을 지정 합니다. `InputIterator`가 정수 형식이면 다음 두 생성자가 `(Type)Last` 값의 `(size_type)First` 요소 반복을 지정합니다. 그렇지 않으면 다음 두 생성자는 시퀀스 `[First, Last)`를 지정합니다.
 
 아홉 번째 및 열 번째 생성자는 여섯 번째와 같지만 [rvalue](../cpp/rvalue-reference-declarator-amp-amp.md) 참조를 포함합니다.
 
@@ -620,7 +621,7 @@ template <class InputIterator>
 
 첫 번째 멤버 함수는 값 *Val* 이 있는 요소를 삽입 하 고 새로 삽입 된 요소를 지정 하는 반복기를 반환 합니다.
 
-두 번째 멤버 함수는 값 *Val*의 *Count* 요소 반복을 삽입 합니다.
+두 번째 멤버 함수는 값 *Val* 의 *Count* 요소 반복을 삽입 합니다.
 
 `InputIterator`가 정수 형식이면 세 번째 멤버 함수는 `insert(it, (size_type)First, (Type)Last)`와 동일하게 동작합니다. 그렇지 않으면 시퀀스 `[First, Last)`를 삽입합니다. 대체 시퀀스는 초기 제어되는 시퀀스와 겹치면 안 됩니다.
 
@@ -706,7 +707,7 @@ forward_list& operator=(forward_list&& right);
 
 ### <a name="remarks"></a>설명
 
-첫 번째 멤버 연산자는 제어 되는 시퀀스를 *right*로 제어 되는 시퀀스의 복사본으로 바꿉니다.
+첫 번째 멤버 연산자는 제어 되는 시퀀스를 *right* 로 제어 되는 시퀀스의 복사본으로 바꿉니다.
 
 두 번째 멤버 연산자는 `initializer_list<Type>` 클래스 개체의 제어되는 시퀀스를 대체합니다.
 
@@ -818,7 +819,7 @@ void resize(size_type _Newsize, const Type& val);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 예측이 목록에 있는 요소 수가 *_Newsize*되는지 확인 합니다. 제어 되는 시퀀스를 더 길게 만들어야 하는 경우 첫 번째 멤버 함수는 값 `Type()` 이 인 요소를 추가 하는 반면 두 번째 멤버 함수는 값 *val*을 사용 하 여 요소를 추가 합니다. 제어되는 시퀀스 길이를 줄이기 위해 두 멤버 함수는 모두 실제로 `erase_after(begin() + _Newsize - 1, end())`를 호출합니다.
+멤버 함수는 예측이 목록에 있는 요소 수가 *_Newsize* 되는지 확인 합니다. 제어 되는 시퀀스를 더 길게 만들어야 하는 경우 첫 번째 멤버 함수는 값 `Type()` 이 인 요소를 추가 하는 반면 두 번째 멤버 함수는 값 *val* 을 사용 하 여 요소를 추가 합니다. 제어되는 시퀀스 길이를 줄이기 위해 두 멤버 함수는 모두 실제로 `erase_after(begin() + _Newsize - 1, end())`를 호출합니다.
 
 ## <a name="reverse"></a><a name="reverse"></a> 되돌립니다
 
@@ -909,11 +910,11 @@ void splice_after(
 
 ### <a name="remarks"></a>설명
 
-멤버 함수의 첫 번째 쌍은 *원본* 으로 제어 되는 시퀀스를 Where가 가리키는 제어 *되*는 시퀀스의 요소 바로 뒤에 삽입 합니다. 또한 *소스*에서 모든 요소를 제거 합니다. `&Source`와 같지 않아야 **`this`** 합니다.
+멤버 함수의 첫 번째 쌍은 *원본* 으로 제어 되는 시퀀스를 Where가 가리키는 제어 *되* 는 시퀀스의 요소 바로 뒤에 삽입 합니다. 또한 *소스* 에서 모든 요소를 제거 합니다. `&Source`와 같지 않아야 **`this`** 합니다.
 
-멤버 함수의 두 번째 쌍은 *소스* 에 의해 제어 되는 시퀀스에서 *Iter* 바로 뒤에 있는 요소를 제거 하 여 제어 *되*는 시퀀스에서가 가리키는 요소 바로 뒤에 삽입 합니다. `Where == Iter || Where == ++Iter`인 경우 아무 것도 변경되지 않습니다.
+멤버 함수의 두 번째 쌍은 *소스* 에 의해 제어 되는 시퀀스에서 *Iter* 바로 뒤에 있는 요소를 제거 하 여 제어 *되* 는 시퀀스에서가 가리키는 요소 바로 뒤에 삽입 합니다. `Where == Iter || Where == ++Iter`인 경우 아무 것도 변경되지 않습니다.
 
-멤버 함수 (원거리 스플라이스)의 세 번째 쌍은가 `(First, Last)` 가리키는 제어 *되*는 시퀀스의 요소 바로 뒤에 *소스로* 제어 되는 하위 범위를 삽입 합니다. 또한 *원본*으로 제어 되는 시퀀스에서 원래 하위 범위를 제거 합니다. 인 경우 `&Source == this` 범위는 `(First, Last)` *Where*가 가리키는 요소를 포함 하지 않아야 합니다.
+멤버 함수 (원거리 스플라이스)의 세 번째 쌍은가 `(First, Last)` 가리키는 제어 *되* 는 시퀀스의 요소 바로 뒤에 *소스로* 제어 되는 하위 범위를 삽입 합니다. 또한 *원본* 으로 제어 되는 시퀀스에서 원래 하위 범위를 제거 합니다. 인 경우 `&Source == this` 범위는 `(First, Last)` *Where* 가 가리키는 요소를 포함 하지 않아야 합니다.
 
 범위가 지정된 스플라이스가 `N`개 요소 및 `&Source != this`를 삽입하면 [iterator](#iterator) 클래스의 개체가 `N`배 증분됩니다.
 
@@ -1007,7 +1008,7 @@ void swap(forward_list& right);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 제어 되는 시퀀스를 **`*this`** 과 *오른쪽*으로 바꿉니다. `get_allocator() ==  right.get_allocator()`인 경우 일정한 시간에 이 작업을 수행하고, 예외를 throw하지 않고, 두 개의 제어되는 시퀀스에서 요소를 지정하는 참조, 포인터 또는 반복기를 무효화하지 않습니다. 그렇지 않으면 두 개의 제어되는 시퀀스에 있는 요소 수에 비례하여 많은 요소 할당 및 생성자 호출을 수행합니다.
+멤버 함수는 제어 되는 시퀀스를 **`*this`** 과 *오른쪽* 으로 바꿉니다. `get_allocator() ==  right.get_allocator()`인 경우 일정한 시간에 이 작업을 수행하고, 예외를 throw하지 않고, 두 개의 제어되는 시퀀스에서 요소를 지정하는 참조, 포인터 또는 반복기를 무효화하지 않습니다. 그렇지 않으면 두 개의 제어되는 시퀀스에 있는 요소 수에 비례하여 많은 요소 할당 및 생성자 호출을 수행합니다.
 
 ## <a name="unique"></a><a name="unique"></a> 고유
 

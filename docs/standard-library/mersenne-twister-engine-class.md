@@ -1,4 +1,5 @@
 ---
+description: Mersenne_twister_engine 클래스에 대해 자세히 알아보세요.
 title: mersenne_twister_engine 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - mersenne_twister_engine class
 ms.assetid: 7ee968fa-a1cc-450f-890f-7305de062685
-ms.openlocfilehash: 24663b12efaef66f29c7f755ab45df5ef973755c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 7f5a2d74493194cb07bb4dd628cf3e483b1fd99b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846422"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230629"
 ---
 # <a name="mersenne_twister_engine-class"></a>mersenne_twister_engine 클래스
 
@@ -71,11 +72,11 @@ class mersenne_twister_engine;
 
 ## <a name="remarks"></a>설명
 
-이 클래스 템플릿은 종결 된 간격 [ `0` , `2` <sup>W</sup>  -  ]에 대 한 값을 반환 하는 난수 엔진을 설명 합니다 `1` . 여기에는 `W * (N - 1) + R`비트의 큰 정수 값이 들어 있습니다. 이 값에서 한 번에 *W* 비트를 추출 하 고 모든 비트를 사용 하는 경우 추출할 새 비트 집합이 있도록 비트를 이동 하 고 혼합 하 여 많은 값을 트위스트 합니다. 엔진의 상태는 `N` `W` 가 적어도 N 번 호출 된 경우 사용 된 마지막 비트 값이 고 `operator()` , 그렇지 않으면 사용 된 *N* `M` `W` 비트 값과 `N - M` 초기값의 마지막 값입니다.
+이 클래스 템플릿은 종결 된 간격 [ `0` , `2` <sup>W</sup>  -  ]에 대 한 값을 반환 하는 난수 엔진을 설명 합니다 `1` . 여기에는 `W * (N - 1) + R`비트의 큰 정수 값이 들어 있습니다. 이 값에서 한 번에 *W* 비트를 추출 하 고 모든 비트를 사용 하는 경우 추출할 새 비트 집합이 있도록 비트를 이동 하 고 혼합 하 여 많은 값을 트위스트 합니다. 엔진의 상태는 `N` `W` 가 적어도 N 번 호출 된 경우 사용 된 마지막 비트 값이 고 `operator()` , 그렇지 않으면 사용 된  `M` `W` 비트 값과 `N - M` 초기값의 마지막 값입니다.
 
-생성기는 이동 값 *N* 및 *M*, 비틀기 값 *R*및 조건부 XOR 마스크 *a*로 정의 된 꼬인 일반화 된 사용자 의견 이동 레지스터를 사용 하 여 보유 한 트위스트 큼 값을 사용 합니다. 또한 *U*, *D*, *S*, *B*, *T*, *C*및 *L*값으로 정의 된 비트 암호화 매트릭스에 따라 원시 시프트 레지스터의 비트 (변조)가 스크램블 됩니다.
+생성기는 이동 값 *N* 및 *M*, 비틀기 값 *R* 및 조건부 XOR 마스크 *a* 로 정의 된 꼬인 일반화 된 사용자 의견 이동 레지스터를 사용 하 여 보유 한 트위스트 큼 값을 사용 합니다. 또한 *U*, *D*, *S*, *B*, *T*, *C* 및 *L* 값으로 정의 된 비트 암호화 매트릭스에 따라 원시 시프트 레지스터의 비트 (변조)가 스크램블 됩니다.
 
-템플릿 인수는 `UIntType` 최대 W 값을 보유할 수 있을 만큼 커야 합니다 `2` <sup>W</sup>  -  `1` . 다른 템플릿 인수의 값은 다음 요구 사항을 충족해야 합니다. `2u < W, 0 < M, M ≤ N, R ≤ W, U ≤ W, S ≤ W, T ≤ W, L ≤ W, W ≤ numeric_limits<UIntType>::digits, A ≤ (1u<<W) - 1u, B ≤ (1u<<W) - 1u, C ≤ (1u<<W) - 1u, D ≤ (1u<<W) - 1u, and F ≤ (1u<<W) - 1u`.
+템플릿 인수는 `UIntType` 최대 W 값을 보유할 수 있을 만큼 커야 합니다 `2` <sup></sup>  -  `1` . 다른 템플릿 인수의 값은 다음 요구 사항을 충족해야 합니다. `2u < W, 0 < M, M ≤ N, R ≤ W, U ≤ W, S ≤ W, T ≤ W, L ≤ W, W ≤ numeric_limits<UIntType>::digits, A ≤ (1u<<W) - 1u, B ≤ (1u<<W) - 1u, C ≤ (1u<<W) - 1u, D ≤ (1u<<W) - 1u, and F ≤ (1u<<W) - 1u`.
 
 이 엔진에서 직접 생성기를 생성할 수 있더라도 다음의 미리 정의된 형식 정의 중 하나를 사용하는 것이 좋습니다.
 

@@ -1,4 +1,5 @@
 ---
+description: 자세히 알아보기:/TLBOUT (이름. TLB 파일)
 title: /TLBOUT(.TLB 파일 이름 지정)
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - .tlb files, renaming
 - -TLBOUT linker option
 ms.assetid: 0df6d078-2e48-46c9-a1a5-02674d85dce8
-ms.openlocfilehash: 62913eaadd0f0a88f05ce347a6778062a1e66f17
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 4e99f3b5a036ddbc424732e771f7bab27aeb228d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509333"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230005"
 ---
 # <a name="tlbout-name-tlb-file"></a>/TLBOUT(.TLB 파일 이름 지정)
 
@@ -38,7 +39,7 @@ MIDL 컴파일러에 의해 생성 된 .tlb 파일의 이름을 지정 합니다
 
 MIDL 컴파일러는 [module](../../windows/attributes/module-cpp.md) 특성을 포함 하는 프로젝트를 연결할 때 MSVC 링커에서 호출 합니다.
 
-/TLBOUT를 지정 하지 않으면 .tlb 파일은 [/IDLOUT](idlout-name-midl-output-files.md) *filename*에서 이름을 가져옵니다. /IDLOUT를 지정 하지 않으면 .tlb 파일이 vc70로 호출 됩니다.
+/TLBOUT를 지정 하지 않으면 .tlb 파일은 [/IDLOUT](idlout-name-midl-output-files.md) *filename* 에서 이름을 가져옵니다. /IDLOUT를 지정 하지 않으면 .tlb 파일이 vc70로 호출 됩니다.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 

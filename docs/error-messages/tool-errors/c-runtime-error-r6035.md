@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: C 런타임 오류 R6035'
 title: C 런타임 오류 R6035
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - R6035
 ms.assetid: f8fb50b8-18bf-4258-b96a-b0a9de468d16
-ms.openlocfilehash: 9b92b1e2e123201d4f50422754b77f62b2ec943b
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: f316586bbfb5aa9d8b3fb1d30b5dea65bff19d26
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86404400"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97228393"
 ---
 # <a name="c-runtime-error-r6035"></a>C 런타임 오류 R6035
 

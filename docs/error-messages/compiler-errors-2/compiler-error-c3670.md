@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3670'
 title: 컴파일러 오류 C3670
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3670
 ms.assetid: d0fa9c6e-8f90-48c7-9066-31b4fa5942eb
-ms.openlocfilehash: 1b52f58f47027d88d9b0e150ebd2bf4588161553
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 499ef1a8f0638da7693ccdbdc0b02c0d5c86c59b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74758127"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97228939"
 ---
 # <a name="compiler-error-c3670"></a>컴파일러 오류 C3670
 

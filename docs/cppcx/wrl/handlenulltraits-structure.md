@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: HANDLENullTraits Structure'
 title: HANDLENullTraits 구조체
 ms.date: 09/27/2018
 ms.topic: reference
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits::Close method
 - Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits::GetInvalidValue method
 ms.assetid: 88a29a14-c516-40cb-a0ca-ee897a668623
-ms.openlocfilehash: a7ce730b8d723a839c5b509c825cff84111ca613
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 14d5eaab36be24b5450b66c35c9cf5cbba39ea4d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226921"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97229251"
 ---
 # <a name="handlenulltraits-structure"></a>HANDLENullTraits 구조체
 
@@ -53,7 +54,7 @@ Name   | 설명
 
 **네임 스페이스:** Microsoft:: WRL:: 래퍼:: 핸드
 
-## <a name="handlenulltraitsclose"></a><a name="close"></a>HANDLENullTraits:: Close
+## <a name="handlenulltraitsclose"></a><a name="close"></a> HANDLENullTraits:: Close
 
 지정 된 핸들을 닫습니다.
 
@@ -68,11 +69,11 @@ inline static bool Close(
 *h*<br/>
 닫을 핸들입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`***핸들을* 성공적으로 닫았습니다. 그렇지 않으면 **`false`** 입니다.
 
-## <a name="handlenulltraitsgetinvalidvalue"></a><a name="getinvalidvalue"></a>HANDLENullTraits:: GetInvalidValue
+## <a name="handlenulltraitsgetinvalidvalue"></a><a name="getinvalidvalue"></a> HANDLENullTraits:: GetInvalidValue
 
 는 잘못 된 핸들을 나타냅니다.
 
@@ -80,6 +81,6 @@ inline static bool Close(
 inline static Type GetInvalidValue();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 항상 **`nullptr`** 를 반환 합니다.

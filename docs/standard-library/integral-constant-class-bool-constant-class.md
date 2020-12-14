@@ -1,4 +1,5 @@
 ---
+description: Integral_constant 클래스, bool_constant 클래스에 대해 자세히 알아보세요.
 title: integral_constant 클래스, bool_constant 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - std::integral_constant [C++]
 - std::bool_constant [C++]
 ms.assetid: 11c002c6-4d31-4042-9341-f2543f43e108
-ms.openlocfilehash: 30e00fdc166b4a6f2db64a3552a3bb87335c7e32
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a910581af81742c32f4eb32a1f8f625cbc6cd346
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233147"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97231539"
 ---
 # <a name="integral_constant-class-bool_constant-class"></a>integral_constant 클래스, bool_constant 클래스
 
@@ -46,7 +47,7 @@ struct integral_constant {
 
 `integral_constant`정수 계열 형식 *T* 와 해당 형식의 값 *v* 를 사용 하 여 특수화 된 경우 클래스 템플릿은 지정 된 값을 사용 하 여 해당 정수 계열 형식의 상수를 보유 하는 개체를 나타냅니다. `type`이라는 멤버는 생성된 템플릿 특수화 형식에 대한 별칭이고, `value` 멤버는 특수화를 만드는 데 사용되는 *v* 값을 포함합니다.
 
-`bool_constant`클래스 템플릿은를 `integral_constant` T 인수로 사용 하는의 명시적 부분 특수화입니다 **`bool`** . *T*
+`bool_constant`클래스 템플릿은를 `integral_constant` T 인수로 사용 하는의 명시적 부분 특수화입니다 **`bool`** . 
 
 ## <a name="example"></a>예제
 

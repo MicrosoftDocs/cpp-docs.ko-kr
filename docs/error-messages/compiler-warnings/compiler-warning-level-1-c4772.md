@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4772'
 title: 컴파일러 경고(수준 1) C4772
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4772
 ms.assetid: dafe6fd8-9faf-41f5-9d66-a55838742c14
-ms.openlocfilehash: 89156b2f29fd21160e6abddc3ecb21efaee6dde1
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 41fcbf3074cb1e51e06ba21a01a27eaf8ded1b31
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80175135"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97228445"
 ---
 # <a name="compiler-warning-level-1-c4772"></a>컴파일러 경고(수준 1) C4772
 
 > \#가져오기는 누락 된 형식 라이브러리에서 형식을 참조 합니다. '*누락 된 형식*'이 자리 표시자로 사용 되었습니다.
 
-[#Import](../../preprocessor/hash-import-directive-cpp.md) 지시어를 사용 하 여 형식 라이브러리를 참조 했습니다. 그러나 형식 라이브러리에 `#import`로 참조 되지 않은 다른 형식 라이브러리에 대 한 참조가 포함 되어 있습니다. 이 다른 .tlb 파일을 컴파일러에서 찾지 못했습니다.
+[#Import](../../preprocessor/hash-import-directive-cpp.md) 지시어를 사용 하 여 형식 라이브러리를 참조 했습니다. 그러나 형식 라이브러리에는에서 참조 되지 않은 다른 형식 라이브러리에 대 한 참조가 포함 되어 `#import` 있습니다. 이 다른 .tlb 파일을 컴파일러에서 찾지 못했습니다.
 
 [/I (추가 포함 디렉터리)](../../build/reference/i-additional-include-directories.md) 컴파일러 옵션을 사용 하 여 해당 디렉터리를 지정 하는 경우 컴파일러는 다른 디렉터리에서 형식 라이브러리를 찾을 수 없습니다. 컴파일러가 다른 디렉터리에서 형식 라이브러리를 찾도록 하려면 해당 디렉터리를 PATH 환경 변수에 추가 합니다.
 

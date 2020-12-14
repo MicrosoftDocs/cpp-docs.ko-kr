@@ -1,4 +1,5 @@
 ---
+description: 다음에 대 한 자세한 정보:/VWRUN
 title: /SWAPRUN
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - -SWAPRUN editbin option
 - SWAPRUN editbin option
 ms.assetid: 6eefd7f3-ca47-48e3-8509-323d27cf4ae7
-ms.openlocfilehash: 83aa2cdb445ed1ac6bac5b1237f90a116986b0a9
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 68d53a8d5fa7337fb29f624e26b71790f78d29dd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79438851"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230174"
 ---
 # <a name="swaprun"></a>/SWAPRUN
 
