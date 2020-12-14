@@ -1,4 +1,5 @@
 ---
+description: Ctype_byname 클래스에 대해 자세히 알아보세요.
 title: ctype_byname 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - ctype_byname class
 ms.assetid: a5cec021-a1f8-425f-8757-08e6f064b604
-ms.openlocfilehash: dcaaff45fb33155710f788af4ceb657eff97464e
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: cc5f44e1c544d2088030621b684c9e070175d695
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72689740"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97233138"
 ---
 # <a name="ctype_byname-class"></a>ctype_byname 클래스
 
@@ -38,16 +39,16 @@ protected:
 };
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
-해당 동작은 명명된 로캘 `_Locname`에 따라 결정됩니다. 각 생성자는 [ctype](../standard-library/ctype-class.md)\<CharType>(`_Refs`)의 기본 개체 또는 기본 클래스 `ctype<char>`와 동등한 개체를 초기화합니다.
+해당 동작은 명명된 로캘 `_Locname`에 따라 결정됩니다. 각 생성자는 [ctype](../standard-library/ctype-class.md) \<CharType> ( `_Refs` ) 또는 기본 클래스에 대해 동일한를 사용 하 여 기본 개체를 초기화 `ctype<char>` 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<locale>
+**헤더:**\<locale>
 
 **네임스페이스:** std
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[C + + 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

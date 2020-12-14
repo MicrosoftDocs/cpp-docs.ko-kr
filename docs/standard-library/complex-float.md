@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 복잡 한 &lt; 부동 소수점&gt;'
 title: complex&lt;float&gt;
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - complex<float> function
 ms.assetid: 1178eb1e-39bd-4017-89cd-aea95f813939
-ms.openlocfilehash: 441006c977b4a4249270d0f4809da0fba0163395
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f3efa0425bbf7b6d1df4a6211d549ccf6693fd5c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230067"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97233853"
 ---
 # <a name="complexltfloatgt"></a>complex&lt;float&gt;
 
@@ -50,7 +51,7 @@ constexpr complex(
 *complexNum*\
 **`double`** **`long double`** 생성 되는 형식의 복소수를 초기화 하는 데 사용 되는 실수 및 허수 부분을 포함 하는 형식의 복소수입니다 **`float`** .
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 형식의 복소수입니다 **`float`** .
 
@@ -118,7 +119,7 @@ arg ( c3 ) = 0.927295 radians, which is 53.1301 degrees.
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더**:\<complex>
+**헤더**: \<complex>
 
 **네임스페이스:** std
 

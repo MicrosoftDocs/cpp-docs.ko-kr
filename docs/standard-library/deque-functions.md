@@ -1,15 +1,16 @@
 ---
+description: '자세히 알아보기: &lt; deque &gt; 함수'
 title: '&lt;deque&gt; 함수'
 ms.date: 11/04/2016
 f1_keywords:
 - deque/std::swap
 ms.assetid: 1d14be53-b0b7-4f66-90cc-65bdeac563fd
-ms.openlocfilehash: e1bbdb864aabf892ca34860911412e4cf737e8cd
-ms.sourcegitcommit: 19016630f9d35f365e9ba249e0f3617515d7ca33
+ms.openlocfilehash: 789ce9e38c787efb40a62aaa16b96b701ef6845a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92274672"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232852"
 ---
 # <a name="ltdequegt-functions"></a>&lt;deque&gt; 함수
 

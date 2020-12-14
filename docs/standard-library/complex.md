@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: &lt; 복합&gt;'
 title: '&lt;complex&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - complex header
 ms.assetid: 5e728995-3059-496a-9ce9-61d1bfbe4f2b
-ms.openlocfilehash: f63fe99238450b8dffbf459ab078a8ecf6623b77
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b16798cf1725ba6fa681b04f735d44f02a2b1b82
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831504"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97233840"
 ---
 # <a name="ltcomplexgt"></a>&lt;complex&gt;
 
@@ -42,13 +43,13 @@ ms.locfileid: "88831504"
 
    (*a/*(*a*<sup>2</sup>  +  *b*<sup>2</sup>),-*b*/(*a*<sup>2</sup>  +  *b*<sup>2</sup>))
 
-A 2 =-1 *형식의 복소수* *z* = (*a*, *b*)를 표시 하 여  =  *a*  +  *bi*실수 집합 *i*<sup>2</sup> 의 대 수에 대 한 규칙을 복소수 집합 및 해당 구성 요소에 적용할 수 있습니다. 예를 들어:
+A 2 =-1 *형식의 복소수* *z* = (*a*, *b*)를 표시 하 여  =    +  실수 집합 <sup></sup> 의 대 수에 대 한 규칙을 복소수 집합 및 해당 구성 요소에 적용할 수 있습니다. 예를 들어:
 
-   (1 + 2*i*) \* (2 + 3*i*) = 1 \* (2 + 3*i*) + 2*i* \* (2 + 3*i*) = (2 + 3*i*) + (4*i* + 6*i*<sup>2</sup>) = (2-6) + (3 + 4)*i* =-4 + 7*i*
+   (1 + 2 *i*) \* (2 + 3 *i*) = 1 \* (2 + 3 *i*) + 2 *i* \* (2 + 3 *i*) = (2 + 3 *i*) + (4 *i* + 6 *i*<sup>2</sup>) = (2-6) + (3 + 4)*i* =-4 + 7 *i*
 
 복소수 시스템은 필드이지만 순서가 지정된 필드가 아닙니다. 실수와 해당 하위 집합의 필드에 대 한 복소수 순서를 지정 하지 않으므로 같지 복소수에 적용 될 수 없습니다.
 
-복소수 *z*를 나타내는 일반적인 형태로는 다음과 같이 세 가지가 있습니다.
+복소수 *z* 를 나타내는 일반적인 형태로는 다음과 같이 세 가지가 있습니다.
 
 - 데카르트: *z*  =  *a*  +  *bi*
 
@@ -62,7 +63,7 @@ A 2 =-1 *형식의 복소수* *z* = (*a*, *b*)를 표시 하 여  =  *a*  +  *bi
 
 - 직각좌표 허수 성분 또는 허수부 *b*
 
-- 복소수 *r*의 모듈러스 또는 절대값입니다.
+- 복소수 *r* 의 모듈러스 또는 절대값입니다.
 
 - 라디안의 인수 또는 위상 각도 *p* 입니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: CAsyncSocket 클래스'
 title: CAsyncSocket 클래스
 ms.date: 06/25/2020
 f1_keywords:
@@ -74,12 +75,12 @@ helpviewer_keywords:
 - CAsyncSocket [MFC], OnSend
 - CAsyncSocket [MFC], m_hSocket
 ms.assetid: cca4d5a1-aa0f-48bd-843e-ef0e2d7fc00b
-ms.openlocfilehash: cac3a95734a60252f241ab3080c05c65a9e04723
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: a9b020a93d4d0f279b5b79fa76a9f6b94e4f9f03
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841651"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97234334"
 ---
 # <a name="casyncsocket-class"></a>CAsyncSocket 클래스
 
@@ -198,7 +199,7 @@ virtual BOOL Accept(
 네트워크에서 알 수 있는 연결 소켓의 주소를 수신 하는 [SOCKADDR](/windows/win32/winsock/sockaddr-2) 구조체에 대 한 포인터입니다. *LpSockAddr* 인수의 정확한 형식은 소켓이 생성 될 때 설정 된 주소 패밀리에 의해 결정 됩니다. *LpSockAddr* 및/또는 *lpSockAddrLen* 가 NULL 이면 허용 된 소켓의 원격 주소에 대 한 정보가 반환 되지 않습니다.
 
 *lpSockAddrLen*<br/>
-*LpSockAddr* 의 주소 길이에 대 한 포인터입니다 (바이트). *LpSockAddrLen* 는 값-결과 매개 변수입니다. 처음에는 *lpSockAddr*가 가리키는 공간의 크기가 포함 되어야 합니다. 반환 시 반환 되는 주소의 실제 길이 (바이트)를 포함 합니다.
+*LpSockAddr* 의 주소 길이에 대 한 포인터입니다 (바이트). *LpSockAddrLen* 는 값-결과 매개 변수입니다. 처음에는 *lpSockAddr* 가 가리키는 공간의 크기가 포함 되어야 합니다. 반환 시 반환 되는 주소의 실제 길이 (바이트)를 포함 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -226,7 +227,7 @@ virtual BOOL Accept(
 
 ### <a name="remarks"></a>설명
 
-이 루틴은 보류 중인 연결의 큐에 있는 첫 번째 연결을 추출 하 고,이 소켓과 동일한 속성을 사용 하 여 새 소켓을 만들고, *rConnectedSocket*에 연결 합니다. 보류 중인 연결이 큐에 없는 경우는 0을 `Accept` 반환 하 고 `GetLastError` 오류를 반환 합니다. 허용 되는 소켓 ( *rConnectedSocket)* 을 사용 하 여 더 많은 연결을 허용할 수 없습니다. 원래 소켓은 열려 있고 수신 대기 상태로 유지 됩니다.
+이 루틴은 보류 중인 연결의 큐에 있는 첫 번째 연결을 추출 하 고,이 소켓과 동일한 속성을 사용 하 여 새 소켓을 만들고, *rConnectedSocket* 에 연결 합니다. 보류 중인 연결이 큐에 없는 경우는 0을 `Accept` 반환 하 고 `GetLastError` 오류를 반환 합니다. 허용 되는 소켓 ( *rConnectedSocket)* 을 사용 하 여 더 많은 연결을 허용할 수 없습니다. 원래 소켓은 열려 있고 수신 대기 상태로 유지 됩니다.
 
 *LpSockAddr* 인수는 통신 계층에 알려진 연결 소켓의 주소로 채워지는 결과 매개 변수입니다. `Accept` 는 SOCK_STREAM와 같은 연결 기반 소켓 유형에 사용 됩니다.
 
@@ -580,7 +581,7 @@ BOOL CreateEx(
 
 ## <a name="casyncsocketdetach"></a><a name="detach"></a> CAsyncSocket::D etach
 
-개체에서 *m_hSocket* 데이터 멤버의 소켓 핸들을 분리 하 고 M_HSOCKET을 NULL로 설정 하려면이 멤버 함수를 호출 `CAsyncSocket` 합니다. *m_hSocket*
+개체에서 *m_hSocket* 데이터 멤버의 소켓 핸들을 분리 하 고 M_HSOCKET을 NULL로 설정 하려면이 멤버 함수를 호출 `CAsyncSocket` 합니다. 
 
 ```
 SOCKET Detach();
@@ -601,7 +602,7 @@ static CAsyncSocket* PASCAL FromHandle(SOCKET hSocket);
 
 ### <a name="return-value"></a>반환 값
 
-개체에 대 한 포인터 `CAsyncSocket` 이거나 `CAsyncSocket` *hsocket*에 연결 된 개체가 없는 경우 NULL입니다.
+개체에 대 한 포인터 `CAsyncSocket` 이거나 `CAsyncSocket` *hsocket* 에 연결 된 개체가 없는 경우 NULL입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -819,7 +820,7 @@ BOOL GetSockOpt(
 값을 검색할 소켓 옵션입니다.
 
 *lpOptionValue*<br/>
-요청 된 옵션의 값이 반환 될 버퍼에 대 한 포인터입니다. 선택한 옵션과 연결 된 값이 buffer *lpOptionValue*에서 반환 됩니다. *LpOptionLen* 가 가리키는 정수는 원래이 버퍼의 크기 (바이트)를 포함 해야 합니다. 반환 될 때 반환 되는 값의 크기로 설정 됩니다. SO_LINGER의 경우이는 구조의 크기가 됩니다 `LINGER` . 다른 모든 옵션의 경우 **`int`** 옵션에 따라 BOOL 또는의 크기가 됩니다. 설명 섹션에서 옵션 및 해당 크기의 목록을 참조 하세요.
+요청 된 옵션의 값이 반환 될 버퍼에 대 한 포인터입니다. 선택한 옵션과 연결 된 값이 buffer *lpOptionValue* 에서 반환 됩니다. *LpOptionLen* 가 가리키는 정수는 원래이 버퍼의 크기 (바이트)를 포함 해야 합니다. 반환 될 때 반환 되는 값의 크기로 설정 됩니다. SO_LINGER의 경우이는 구조의 크기가 됩니다 `LINGER` . 다른 모든 옵션의 경우 **`int`** 옵션에 따라 BOOL 또는의 크기가 됩니다. 설명 섹션에서 옵션 및 해당 크기의 목록을 참조 하세요.
 
 *lpOptionLen*<br/>
 *LpOptionValue* 버퍼의 크기에 대 한 포인터입니다 (바이트).
@@ -845,11 +846,11 @@ BOOL GetSockOpt(
 
 ### <a name="remarks"></a>설명
 
-`GetSockOpt` 모든 형식의 소켓과 연결 된 소켓 옵션에 대 한 현재 값을 검색 하 고 그 결과를 *lpOptionValue*에 저장 합니다. 옵션은 패킷 라우팅, 대역 외 데이터 전송 등의 소켓 작업에 영향을 줍니다.
+`GetSockOpt` 모든 형식의 소켓과 연결 된 소켓 옵션에 대 한 현재 값을 검색 하 고 그 결과를 *lpOptionValue* 에 저장 합니다. 옵션은 패킷 라우팅, 대역 외 데이터 전송 등의 소켓 작업에 영향을 줍니다.
 
-에 대해 지원 되는 옵션은 다음과 같습니다 `GetSockOpt` . 형식은 *lpOptionValue*로 주소를 지정 하는 데이터 형식을 식별 합니다. TCP_NODELAY 옵션은 수준 IPPROTO_TCP를 사용 합니다. 다른 모든 옵션은 수준 SOL_SOCKET를 사용 합니다.
+에 대해 지원 되는 옵션은 다음과 같습니다 `GetSockOpt` . 형식은 *lpOptionValue* 로 주소를 지정 하는 데이터 형식을 식별 합니다. TCP_NODELAY 옵션은 수준 IPPROTO_TCP를 사용 합니다. 다른 모든 옵션은 수준 SOL_SOCKET를 사용 합니다.
 
-|값|형식|의미|
+|값|Type|의미|
 |-----------|----------|-------------|
 |SO_ACCEPTCONN|BOOL|소켓이 수신 대기 중입니다.|
 |SO_BROADCAST|BOOL|소켓은 브로드캐스트 메시지의 전송에 대해 구성 됩니다.|
@@ -868,7 +869,7 @@ BOOL GetSockOpt(
 
 에 대해 지원 되지 않는 BSD (Berkeley Software 배포판) 옵션 `GetSockOpt` 은 다음과 같습니다.
 
-|값|형식|의미|
+|값|Type|의미|
 |-----------|----------|-------------|
 |SO_RCVLOWAT|**`int`**|낮은 워터 마크를 받습니다.|
 |SO_RCVTIMEO|**`int`**|수신 제한 시간입니다.|
@@ -895,7 +896,7 @@ BOOL IOCtl(
 소켓에서 수행할 명령입니다.
 
 *lpArgument*<br/>
-*Lcommand*에 대 한 매개 변수에 대 한 포인터입니다.
+*Lcommand* 에 대 한 매개 변수에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -905,7 +906,7 @@ BOOL IOCtl(
 
 - Windows 소켓 구현에서 네트워크 하위 시스템에 오류가 WSAENETDOWN 검색 되었습니다.
 
-- WSAEINVAL *Lcommand* 가 유효한 명령이 아니거나, *LpArgument* 가 *lcommand*에 사용할 수 있는 매개 변수가 아니거나, 제공 된 소켓 유형에 해당 명령이 적용 되지 않습니다.
+- WSAEINVAL *Lcommand* 가 유효한 명령이 아니거나, *LpArgument* 가 *lcommand* 에 사용할 수 있는 매개 변수가 아니거나, 제공 된 소켓 유형에 해당 명령이 적용 되지 않습니다.
 
 - Windows 소켓 차단 작업을 WSAEINPROGRESS 하는 중입니다.
 
@@ -915,7 +916,7 @@ BOOL IOCtl(
 
 이 루틴은 모든 상태의 모든 소켓에서 사용할 수 있습니다. 프로토콜 및 통신 하위 시스템과는 독립적으로 소켓과 연결 된 운영 매개 변수를 가져오거나 검색 하는 데 사용 됩니다. 지원되는 명령은 다음과 같습니다.
 
-- FIONBIO은 소켓에서 비블로킹 모드를 사용 하거나 사용 하지 않도록 설정 합니다. *LpArgument* 매개 변수는 `DWORD` 비블로킹 모드를 사용 하도록 설정 하는 경우 0이 아니고 사용 하지 않도록 설정 된 경우 0이 아닌을 가리킵니다. `AsyncSelect`가 소켓에서 실행 된 경우 WSAEINVAL를 사용 하 여 소켓을 `IOCtl` 차단 모드로 다시 설정 하려고 하면 실패 합니다. 소켓을 차단 모드로 설정 하 고 WSAEINVAL 오류를 방지 하려면 응용 프로그램에서 먼저 LEvent 매개 변수를 0으로 설정 하 여를 호출 하 고를 호출 하 여를 사용 하지 않도록 설정 해야 `AsyncSelect` `AsyncSelect` *lEvent* `IOCtl` 합니다.
+- FIONBIO은 소켓에서 비블로킹 모드를 사용 하거나 사용 하지 않도록 설정 합니다. *LpArgument* 매개 변수는 `DWORD` 비블로킹 모드를 사용 하도록 설정 하는 경우 0이 아니고 사용 하지 않도록 설정 된 경우 0이 아닌을 가리킵니다. `AsyncSelect`가 소켓에서 실행 된 경우 WSAEINVAL를 사용 하 여 소켓을 `IOCtl` 차단 모드로 다시 설정 하려고 하면 실패 합니다. 소켓을 차단 모드로 설정 하 고 WSAEINVAL 오류를 방지 하려면 응용 프로그램에서 먼저 LEvent 매개 변수를 0으로 설정 하 여를 호출 하 고를 호출 하 여를 사용 하지 않도록 설정 해야 `AsyncSelect` `AsyncSelect`  `IOCtl` 합니다.
 
 - FIONREAD는이 소켓에서 한 번의 호출로 읽을 수 있는 최대 바이트 수를 결정 합니다 `Receive` . *LpArgument* 매개 변수는 `DWORD` 에서 결과를 저장 하는를 가리킵니다 `IOCtl` . 이 소켓이 SOCK_STREAM 형식이 면 FIONREAD는 단일에서 읽을 수 있는 총 데이터 양을 반환 합니다 `Receive` . 일반적으로이 값은 소켓에서 큐에 대기 중인 총 데이터 양과 동일 합니다. 이 소켓이 SOCK_DGRAM 형식이 면 FIONREAD는 소켓에서 대기 중인 첫 번째 데이터 그램의 크기를 반환 합니다.
 
@@ -1254,7 +1255,7 @@ SOCK_STREAM 형식의 소켓의 경우 제공 된 버퍼의 크기까지 현재 
 
 ## <a name="casyncsocketreceivefrom"></a><a name="receivefrom"></a> CAsyncSocket:: ReceiveFrom
 
-이 멤버 함수를 호출 하 여 데이터 그램을 받고 원본 주소를 [SOCKADDR](/windows/win32/winsock/sockaddr-2) 구조체 또는 *rsocketaddress*에 저장 합니다.
+이 멤버 함수를 호출 하 여 데이터 그램을 받고 원본 주소를 [SOCKADDR](/windows/win32/winsock/sockaddr-2) 구조체 또는 *rsocketaddress* 에 저장 합니다.
 
 ```
 int ReceiveFrom(
@@ -1449,7 +1450,7 @@ virtual int Send(
 
 ### <a name="return-value"></a>반환 값
 
-오류가 발생 하지 않으면 `Send` 전송 된 총 문자 수를 반환 합니다. 이는 *Nbuflen*이 나타내는 숫자 보다 적을 수 있습니다. 그렇지 않으면 SOCKET_ERROR 값이 반환 되 고, [GetLastError](#getlasterror)를 호출 하 여 특정 오류 코드를 검색할 수 있습니다. 이 멤버 함수에는 다음 오류가 적용 됩니다.
+오류가 발생 하지 않으면 `Send` 전송 된 총 문자 수를 반환 합니다. 이는 *Nbuflen* 이 나타내는 숫자 보다 적을 수 있습니다. 그렇지 않으면 SOCKET_ERROR 값이 반환 되 고, [GetLastError](#getlasterror)를 호출 하 여 특정 오류 코드를 검색할 수 있습니다. 이 멤버 함수에는 다음 오류가 적용 됩니다.
 
 - 이 API를 사용 하기 전에 WSANOTINITIALISED 성공적인 [AfxSocketInit](../../mfc/reference/application-information-and-management.md#afxsocketinit) 이 발생 해야 합니다.
 
@@ -1471,7 +1472,7 @@ virtual int Send(
 
 - WSAEOPNOTSUPP MSG_OOB 지정 되었지만 소켓이 SOCK_STREAM 형식이 아닙니다.
 
-- WSAESHUTDOWN 소켓이 종료 되었습니다. `Send` `ShutDown` 가 1 또는 2로 설정 된 경우를 사용 하 여를 호출한 *nHow* 후 소켓에서를 호출할 수 없습니다.
+- WSAESHUTDOWN 소켓이 종료 되었습니다. `Send` `ShutDown` 가 1 또는 2로 설정 된 경우를 사용 하 여를 호출한  후 소켓에서를 호출할 수 없습니다.
 
 - WSAEWOULDBLOCK는 소켓이 비블로킹 상태로 표시 되 고 요청 된 작업이 차단 됩니다.
 
@@ -1544,7 +1545,7 @@ int SendTo(
 
 ### <a name="return-value"></a>반환 값
 
-오류가 발생 하지 않으면 `SendTo` 전송 된 총 문자 수를 반환 합니다. 이는 *Nbuflen*이 나타내는 숫자 보다 적을 수 있습니다. 그렇지 않으면 SOCKET_ERROR 값이 반환 되 고, [GetLastError](#getlasterror)를 호출 하 여 특정 오류 코드를 검색할 수 있습니다. 이 멤버 함수에는 다음 오류가 적용 됩니다.
+오류가 발생 하지 않으면 `SendTo` 전송 된 총 문자 수를 반환 합니다. 이는 *Nbuflen* 이 나타내는 숫자 보다 적을 수 있습니다. 그렇지 않으면 SOCKET_ERROR 값이 반환 되 고, [GetLastError](#getlasterror)를 호출 하 여 특정 오류 코드를 검색할 수 있습니다. 이 멤버 함수에는 다음 오류가 적용 됩니다.
 
 - 이 API를 사용 하기 전에 WSANOTINITIALISED 성공적인 [AfxSocketInit](../../mfc/reference/application-information-and-management.md#afxsocketinit) 이 발생 해야 합니다.
 
@@ -1568,7 +1569,7 @@ int SendTo(
 
 - WSAEOPNOTSUPP MSG_OOB 지정 되었지만 소켓이 SOCK_STREAM 형식이 아닙니다.
 
-- WSAESHUTDOWN 소켓이 종료 되었습니다. `SendTo` `ShutDown` 가 1 또는 2로 설정 된 경우를 사용 하 여를 호출한 *nHow* 후 소켓에서를 호출할 수 없습니다.
+- WSAESHUTDOWN 소켓이 종료 되었습니다. `SendTo` `ShutDown` 가 1 또는 2로 설정 된 경우를 사용 하 여를 호출한  후 소켓에서를 호출할 수 없습니다.
 
 - WSAEWOULDBLOCK는 소켓이 비블로킹 상태로 표시 되 고 요청 된 작업이 차단 됩니다.
 
@@ -1588,7 +1589,7 @@ int SendTo(
 
 ### <a name="remarks"></a>설명
 
-`SendTo` 는 데이터 그램 또는 스트림 소켓에서 사용 되며 소켓에서 나가는 데이터를 쓰는 데 사용 됩니다. 데이터 그램 소켓의 경우 기본 서브넷의 최대 IP 패킷 크기를 초과 하지 않도록 주의를 기울여야 합니다 .이 크기는 AfxSocketInit에서 `iMaxUdpDg` 입력 한 [WSADATA](/windows/win32/api/winsock2/ns-winsock2-wsadata) 구조의 요소에 의해 제공 [AfxSocketInit](../../mfc/reference/application-information-and-management.md#afxsocketinit)됩니다. 데이터가 너무 길어서 기본 프로토콜을 통해 원자 단위로 전달할 수 없는 경우 WSAEMSGSIZE 오류가 반환 되 고 데이터가 전송 되지 않습니다.
+`SendTo` 는 데이터 그램 또는 스트림 소켓에서 사용 되며 소켓에서 나가는 데이터를 쓰는 데 사용 됩니다. 데이터 그램 소켓의 경우 기본 서브넷의 최대 IP 패킷 크기를 초과 하지 않도록 주의를 기울여야 합니다 .이 크기는 AfxSocketInit에서 `iMaxUdpDg` 입력 한 [WSADATA](/windows/win32/api/winsock2/ns-winsock2-wsadata) 구조의 요소에 의해 제공 [](../../mfc/reference/application-information-and-management.md#afxsocketinit)됩니다. 데이터가 너무 길어서 기본 프로토콜을 통해 원자 단위로 전달할 수 없는 경우 WSAEMSGSIZE 오류가 반환 되 고 데이터가 전송 되지 않습니다.
 
 성공적으로 완료 되 면 `SendTo` 데이터가 성공적으로 배달 된 것으로 표시 되지 않습니다.
 
@@ -1634,7 +1635,7 @@ int SendToEx(
 
 ### <a name="return-value"></a>반환 값
 
-오류가 발생 하지 않으면 `SendToEx` 전송 된 총 문자 수를 반환 합니다. 이는 *Nbuflen*이 나타내는 숫자 보다 적을 수 있습니다. 그렇지 않으면 SOCKET_ERROR 값이 반환 되 고, [GetLastError](#getlasterror)를 호출 하 여 특정 오류 코드를 검색할 수 있습니다. 이 멤버 함수에는 다음 오류가 적용 됩니다.
+오류가 발생 하지 않으면 `SendToEx` 전송 된 총 문자 수를 반환 합니다. 이는 *Nbuflen* 이 나타내는 숫자 보다 적을 수 있습니다. 그렇지 않으면 SOCKET_ERROR 값이 반환 되 고, [GetLastError](#getlasterror)를 호출 하 여 특정 오류 코드를 검색할 수 있습니다. 이 멤버 함수에는 다음 오류가 적용 됩니다.
 
 - 이 API를 사용 하기 전에 WSANOTINITIALISED 성공적인 [AfxSocketInit](../../mfc/reference/application-information-and-management.md#afxsocketinit) 이 발생 해야 합니다.
 
@@ -1658,7 +1659,7 @@ int SendToEx(
 
 - WSAEOPNOTSUPP MSG_OOB 지정 되었지만 소켓이 SOCK_STREAM 형식이 아닙니다.
 
-- WSAESHUTDOWN 소켓이 종료 되었습니다. `SendToEx` `ShutDown` 가 1 또는 2로 설정 된 경우를 사용 하 여를 호출한 *nHow* 후 소켓에서를 호출할 수 없습니다.
+- WSAESHUTDOWN 소켓이 종료 되었습니다. `SendToEx` `ShutDown` 가 1 또는 2로 설정 된 경우를 사용 하 여를 호출한  후 소켓에서를 호출할 수 없습니다.
 
 - WSAEWOULDBLOCK는 소켓이 비블로킹 상태로 표시 되 고 요청 된 작업이 차단 됩니다.
 
@@ -1680,7 +1681,7 @@ int SendToEx(
 
 이 메서드는 IPv6 주소와 이전 프로토콜을 모두 처리 한다는 점을 제외 하 고 [Casyncsocket:: SendTo](#sendto) 와 동일 합니다.
 
-`SendToEx` 는 데이터 그램 또는 스트림 소켓에서 사용 되며 소켓에서 나가는 데이터를 쓰는 데 사용 됩니다. 데이터 그램 소켓의 경우 기본 서브넷의 최대 IP 패킷 크기를 초과 하지 않도록 주의를 기울여야 합니다 .이 크기는 AfxSocketInit에서 `iMaxUdpDg` 입력 한 [WSADATA](/windows/win32/api/winsock2/ns-winsock2-wsadata) 구조의 요소에 의해 제공 [AfxSocketInit](../../mfc/reference/application-information-and-management.md#afxsocketinit)됩니다. 데이터가 너무 길어서 기본 프로토콜을 통해 원자 단위로 전달할 수 없는 경우 WSAEMSGSIZE 오류가 반환 되 고 데이터가 전송 되지 않습니다.
+`SendToEx` 는 데이터 그램 또는 스트림 소켓에서 사용 되며 소켓에서 나가는 데이터를 쓰는 데 사용 됩니다. 데이터 그램 소켓의 경우 기본 서브넷의 최대 IP 패킷 크기를 초과 하지 않도록 주의를 기울여야 합니다 .이 크기는 AfxSocketInit에서 `iMaxUdpDg` 입력 한 [WSADATA](/windows/win32/api/winsock2/ns-winsock2-wsadata) 구조의 요소에 의해 제공 [](../../mfc/reference/application-information-and-management.md#afxsocketinit)됩니다. 데이터가 너무 길어서 기본 프로토콜을 통해 원자 단위로 전달할 수 없는 경우 WSAEMSGSIZE 오류가 반환 되 고 데이터가 전송 되지 않습니다.
 
 성공적으로 완료 되 면 `SendToEx` 데이터가 성공적으로 배달 된 것으로 표시 되지 않습니다.
 
@@ -1754,9 +1755,9 @@ TCP_NODELAY 옵션은 Nagle 알고리즘을 사용 하지 않도록 설정 합�
 
 응용 프로그램에서 SO_DEBUG 옵션이 설정 된 경우 Windows 소켓의 일부 구현에서 출력 디버그 정보를 제공 합니다.
 
-에 대해 지원 되는 옵션은 다음과 같습니다 `SetSockOpt` . 형식은 *lpOptionValue*로 주소를 지정 하는 데이터 형식을 식별 합니다.
+에 대해 지원 되는 옵션은 다음과 같습니다 `SetSockOpt` . 형식은 *lpOptionValue* 로 주소를 지정 하는 데이터 형식을 식별 합니다.
 
-|값|형식|의미|
+|값|Type|의미|
 |-----------|----------|-------------|
 |SO_BROADCAST|BOOL|소켓에서 브로드캐스트 메시지의 전송을 허용 합니다.|
 |SO_DEBUG|BOOL|디버깅 정보를 기록합니다.|
@@ -1772,7 +1773,7 @@ TCP_NODELAY 옵션은 Nagle 알고리즘을 사용 하지 않도록 설정 합�
 
 에 대해 지원 되지 않는 BSD (Berkeley Software 배포판) 옵션 `SetSockOpt` 은 다음과 같습니다.
 
-|값|형식|의미|
+|값|Type|의미|
 |-----------|----------|-------------|
 |SO_ACCEPTCONN|BOOL|소켓이 수신 대기 중입니다.|
 |SO_ERROR|**`int`**|오류 상태를 확인 하 고 선택을 취소 합니다.|

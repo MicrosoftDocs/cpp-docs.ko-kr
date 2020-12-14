@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2297'
 title: 컴파일러 오류 C2297
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2297
 ms.assetid: 65849fe5-17e1-4b7e-b50c-f508b05ddaa4
-ms.openlocfilehash: 5f07d522f7594d78df566b6a4be47ad0dadd4b3d
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: d9843592a366054d72b3cc179aec6da85843f105
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74759089"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97235205"
 ---
 # <a name="compiler-error-c2297"></a>컴파일러 오류 C2297
 
 ' operator ': 잘못 된 오른쪽 피연산자입니다.
 
-`operator`에 사용 된 오른쪽 피연산자가 잘못 되었습니다.
+에 사용 된 오른쪽 피연산자 `operator` 가 잘못 되었습니다.
 
 예를 들어 컴파일러는 함수 호출을 의도 한 선언을 볼 수 있습니다.
 

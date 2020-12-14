@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2338'
 title: 컴파일러 오류 C2338
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2338
 ms.assetid: 49bba575-1de4-4963-86c6-ce3226a2ba51
-ms.openlocfilehash: c92a95b97cb4c57d3ad5cfbf8fe1d9980d5362cd
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7bbbc7fd6240fce2def470a0d16aa0dba152a109
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221213"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97234802"
 ---
 # <a name="compiler-error-c2338"></a>컴파일러 오류 C2338
 
@@ -21,7 +22,7 @@ ms.locfileid: "87221213"
 
 이 오류 메시지는 컴파일러에 대 한 외부 공급자에 의해 생성 될 수도 있습니다. 대부분의 경우 이러한 오류는 특성 공급자 DLL (예: ATLPROV)에 의해 보고 됩니다. 이 메시지의 일반적인 형태는 다음과 같습니다.
 
-- '*attribute*' Atl 특성 공급자: 오류 atl*번호* *메시지*
+- '*attribute*' Atl 특성 공급자: 오류 atl *번호* *메시지*
 
 - '*Attribute*' 특성 사용이 잘못 되었습니다.
 

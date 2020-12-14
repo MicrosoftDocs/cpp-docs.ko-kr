@@ -1,4 +1,5 @@
 ---
+description: Condition_variable 클래스에 대해 자세히 알아보세요.
 title: condition_variable 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - std::condition_variable::wait
 - std::condition_variable::wait_for
 - std::condition_variable::wait_until
-ms.openlocfilehash: eef0e7ef013b4faeb6393cade67258a09eda5551
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f5987c050dece8536aef0f91731a0848b56d3a4b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842431"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97233814"
 ---
 # <a name="condition_variable-class"></a>condition_variable 클래스
 
@@ -45,7 +46,7 @@ class condition_variable;
 |-|-|
 |[condition_variable](#condition_variable)|`condition_variable` 개체를 생성합니다.|
 
-### <a name="functions"></a>Functions
+### <a name="functions"></a>함수
 
 |Name|설명|
 |-|-|
@@ -158,7 +159,7 @@ bool wait_for(
 
 첫 번째 메서드는 `cv_status::timeout` *Rel_time* 경과할 때 대기가 종료 될 경우를 반환 합니다. 그렇지 않은 경우 메서드는 `cv_status::no_timeout`를 반환합니다.
 
-두 번째 메서드는 *Pred*의 값을 반환 합니다.
+두 번째 메서드는 *Pred* 의 값을 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -216,7 +217,7 @@ bool wait_until(
 
 형식을 반환 하는 메서드는 `cv_status` `cv_status::timeout` *Abs_time* 경과할 때 대기가 종료 될 경우를 반환 합니다. 그렇지 않으면 메서드는 `cv_status::no_timeout`을 반환합니다.
 
-을 반환 하는 메서드는 **`bool`** *Pred*의 값을 반환 합니다.
+을 반환 하는 메서드는 **`bool`** *Pred* 의 값을 반환 합니다.
 
 ### <a name="remarks"></a>설명
 

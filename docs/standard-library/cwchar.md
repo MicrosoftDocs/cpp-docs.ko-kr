@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: &lt; cwchar&gt;'
 title: '&lt;cwchar&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - cwchar header
 ms.assetid: 7380b1bf-a220-46e5-b832-9f9f4e543aac
-ms.openlocfilehash: e1406bf154cb677be6400bf1cf4122627f64f2ad
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 54cc8996b0c64bf4a35c2caa2c5245061d7f79f5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68454170"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232982"
 ---
 # <a name="ltcwchargt"></a>&lt;cwchar&gt;
 
-표준 C 라이브러리 헤더 \<wchar.h>를 포함하고 `std` 네임스페이스에 연결된 이름을 추가합니다.
+표준 C 라이브러리 헤더를 포함 \<wchar.h> 하 고 네임 스페이스에 연결 된 이름을 추가 합니다 `std` .
 
 ## <a name="syntax"></a>구문
 
@@ -118,8 +119,8 @@ size_t mbsrtowcs(wchar_t* dst, const char** src, size_t len, mbstate_t* ps);
 size_t wcsrtombs(char* dst, const wchar_t** src, size_t len, mbstate_t* ps);
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
-[C++ 표준 라이브러리 개요](../standard-library/cpp-standard-library-overview.md)\
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[C + + 표준 라이브러리 개요](../standard-library/cpp-standard-library-overview.md)\
+[C + + 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

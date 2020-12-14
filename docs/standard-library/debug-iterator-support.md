@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 디버그 반복기 지원'
 title: Debug Iterator Support
 ms.date: 09/13/2018
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - incompatible iterators
 - debug iterator support
 ms.assetid: f3f5bd15-4be8-4d64-a4d0-8bc0761c68b6
-ms.openlocfilehash: a5773add9a26d647df6678ffa4f2681b73cff44f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bd2de8423cb7235fdb54a3d0cfe852081ea32b18
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231587"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232956"
 ---
 # <a name="debug-iterator-support"></a>Debug Iterator Support
 
@@ -148,7 +149,7 @@ int main() {
 
 ## <a name="destructors-for-debug-iterators"></a>디버그 반복기 용 소멸자
 
-디버그 반복기에 non-trivial 소멸자가 있습니다. 소멸자가 실행 되지 않지만 개체의 메모리가 해제 된 경우 액세스 위반 및 데이터 손상이 발생할 수 있습니다. 다음 예를 살펴보세요.
+디버그 반복기에 non-trivial 소멸자가 있습니다. 소멸자가 실행 되지 않지만 개체의 메모리가 해제 된 경우 액세스 위반 및 데이터 손상이 발생할 수 있습니다. 다음 예제를 고려해 보세요.
 
 ```cpp
 // iterator_debugging_5.cpp

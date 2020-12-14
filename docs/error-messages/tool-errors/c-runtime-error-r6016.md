@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: C 런타임 오류 R6016'
 title: C 런타임 오류 R6016
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - R6016
 ms.assetid: 7bd3f274-d9c4-4bc4-8252-80bf168c4c3a
-ms.openlocfilehash: 22bf4b7e8951215d1a013edb29af1ebff7517ffc
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 79339400436f21aefc0edea101b4642d443f5ce0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80197342"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97237688"
 ---
 # <a name="c-runtime-error-r6016"></a>C 런타임 오류 R6016
 
@@ -30,8 +31,8 @@ ms.locfileid: "80197342"
 
 **프로그래머를 위한 정보**
 
-이 오류는 프로그램이 운영 체제에서 [_beginthread](../../c-runtime-library/reference/beginthread-beginthreadex.md) 또는 `_beginthreadex` 호출을 완료 하기에 충분 한 메모리를 받지 못했거나 스레드 로컬 저장소가 `_beginthread` 또는 `_beginthreadex`에 의해 초기화 되지 않았기 때문에 발생 합니다.
+이 오류는 프로그램이 운영 체제에서 [_beginthread](../../c-runtime-library/reference/beginthread-beginthreadex.md) 또는 호출을 완료 하는 데 충분 한 메모리를 받지 못했거나 또는 `_beginthreadex` 에서 스레드 로컬 저장소가 초기화 되지 않았기 때문에 발생 합니다 `_beginthread` `_beginthreadex` .
 
 새 스레드가 시작되면 라이브러리는 해당 스레드에 대한 내부 데이터베이스를 만들어야 합니다. 데이터베이스가 운영 체제에서 제공한 메모리를 사용하여 확장할 수 없으면 스레드가 시작되지 않으며 호출 프로세스는 중지됩니다. 프로세스에 의해 너무 많은 스레드가 만들어졌거나 스레드 로컬 스토리지를 모두 사용한 경우 이러한 현상이 발생할 수 있습니다.
 
-CRT (C 런타임 라이브러리)를 호출 하는 실행 파일은 Windows API `CreateThread`가 아닌 스레드를 만들기 위해 `_beginthreadex`를 사용 하는 것이 좋습니다. `_beginthreadex`는 스레드 로컬 스토리지의 많은 CRT 함수에 의해 사용되는 내부 정적 스토리지를 초기화합니다. `CreateThread`를 사용하여 스레드를 만드는 경우 초기화된 내부 정적 스토리지가 필요한 CRT 함수를 호출할 때 CRT는 R6016으로 프로세스를 종료할 수 있습니다.
+CRT (C 런타임 라이브러리)를 호출 하는 실행 파일은 Windows API가 아닌 스레드를 만드는 데를 사용 하는 것이 좋습니다 `_beginthreadex` `CreateThread` . `_beginthreadex`는 스레드 로컬 스토리지의 많은 CRT 함수에 의해 사용되는 내부 정적 스토리지를 초기화합니다. `CreateThread`를 사용하여 스레드를 만드는 경우 초기화된 내부 정적 스토리지가 필요한 CRT 함수를 호출할 때 CRT는 R6016으로 프로세스를 종료할 수 있습니다.

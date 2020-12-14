@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: C 런타임 오류 R6008'
 title: C 런타임 오류 R6008
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - R6008
 ms.assetid: f0f304fc-709a-4843-bc7e-bad1ae0d1649
-ms.openlocfilehash: 214b6548cc7a3b880223503c2f3e9222d64212ca
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d74bd647a4a4d844bb0b9bf0fe2f2d53994dc9ab
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80197395"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97237780"
 ---
 # <a name="c-runtime-error-r6008"></a>C 런타임 오류 R6008
 

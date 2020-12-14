@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: &lt; cmath>&gt;'
 title: '&lt;cmath&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - cmath header
 ms.assetid: 80df1dba-60ca-4918-9c2e-fbf446eaa7d6
-ms.openlocfilehash: d01b02d8fa169aa7fddbc3e51d75e5328b400d2b
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 193961dab5e8825e15919fd325f1f199a3ad4fb3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68459271"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97234100"
 ---
 # <a name="ltcmathgt"></a>&lt;cmath&gt;
 
-표준 C 라이브러리 헤더 \<math.h>를 포함하고 `std` 네임스페이스에 연결된 이름을 추가합니다.
+표준 C 라이브러리 헤더를 포함 \<math.h> 하 고 네임 스페이스에 연결 된 이름을 추가 합니다 `std` .
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 #include <cmath>
@@ -573,8 +574,8 @@ long double sph_neumannl(unsigned n, long double x);
 
 이 헤더를 포함하는 경우 표준 C 라이브러리 헤더의 외부 링크를 사용하여 선언한 이름이 `std` 네임스페이스에도 선언됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
-[C++ 표준 라이브러리 개요](../standard-library/cpp-standard-library-overview.md)\
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[C + + 표준 라이브러리 개요](../standard-library/cpp-standard-library-overview.md)\
+[C + + 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

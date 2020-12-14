@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: exit, _Exit, _exit'
 title: exit, _Exit, _exit
 ms.date: 4/2/2020
 api_name:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - processes, terminating
 - function calls, terminating
 - process termination, calling
-ms.openlocfilehash: a1c0eeaa6d66e91b913ce7940d37409fc4f6ac29
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: b2d5a95f8a110e467016be828418050d77caa984
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82909678"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97236037"
 ---
 # <a name="exit-_exit-_exit"></a>exit, _Exit, _exit
 
@@ -71,11 +72,11 @@ void _exit(
 
 ## <a name="remarks"></a>설명
 
-**Exit**, **_Exit** 및 **_exit** 함수는 호출 프로세스를 종료 합니다. **Exit** 함수는 스레드 로컬 개체에 대해 소멸자를 호출한 다음 **atexit** 및 **_onexit**에 의해 등록 된 함수를 LIFO (last in first out) 순서로 호출 하 고 프로세스를 종료 하기 전에 모든 파일 버퍼를 플러시합니다. **_Exit** 및 **_exit** 함수는 스레드 로컬 개체를 삭제 하거나 **atexit** 또는 **_onexit** 함수를 처리 하지 않고 스트림 버퍼를 플러시하지 않고 프로세스를 종료 합니다.
+**Exit**, **_Exit** 및 **_exit** 함수는 호출 프로세스를 종료 합니다. **Exit** 함수는 스레드 로컬 개체에 대해 소멸자를 호출한 다음 **atexit** 및 **_onexit** 에 의해 등록 된 함수를 LIFO (last in first out) 순서로 호출 하 고 프로세스를 종료 하기 전에 모든 파일 버퍼를 플러시합니다. **_Exit** 및 **_exit** 함수는 스레드 로컬 개체를 삭제 하거나 **atexit** 또는 **_onexit** 함수를 처리 하지 않고 스트림 버퍼를 플러시하지 않고 프로세스를 종료 합니다.
 
-**Exit**, **_Exit** 및 **_exit** 호출은 값을 반환 하지 않지만 프로세스를 종료 한 후 호스트 환경 또는 호출 대기 중인 프로세스 (있는 경우)에 대 한 *상태* 값을 사용할 수 있습니다. 일반적으로 호출자는 *상태* 값을 0으로 설정 하 여 정상 종료를 나타내거나 다른 값으로 설정 하 여 오류를 표시 합니다. *상태* 값은 운영 체제 일괄 처리 명령 **ERRORLEVEL** 에 사용할 수 있으며 값 0을 나타내는 **EXIT_SUCCESS**또는 값 1을 나타내는 **EXIT_FAILURE**의 두 상수 중 하나로 표시 됩니다.
+**Exit**, **_Exit** 및 **_exit** 호출은 값을 반환 하지 않지만 프로세스를 종료 한 후 호스트 환경 또는 호출 대기 중인 프로세스 (있는 경우)에 대 한 *상태* 값을 사용할 수 있습니다. 일반적으로 호출자는 *상태* 값을 0으로 설정 하 여 정상 종료를 나타내거나 다른 값으로 설정 하 여 오류를 표시 합니다. *상태* 값은 운영 체제 일괄 처리 명령 **ERRORLEVEL** 에 사용할 수 있으며 값 0을 나타내는 **EXIT_SUCCESS** 또는 값 1을 나타내는 **EXIT_FAILURE** 의 두 상수 중 하나로 표시 됩니다.
 
-**Exit**, **_Exit**, **_exit**, **quick_exit**, **_cexit**및 **_c_exit** 함수는 다음과 같이 동작 합니다.
+**Exit**, **_Exit**, **_exit**, **quick_exit**, **_cexit** 및 **_c_exit** 함수는 다음과 같이 동작 합니다.
 
 |함수|설명|
 |--------------|-----------------|
@@ -86,7 +87,7 @@ void _exit(
 |**_cexit**|전체 C 라이브러리 종료 절차를 수행하고 호출자에게 반환됩니다. 프로세스를 종료하지 않습니다.|
 |**_c_exit**|최소 C 라이브러리 종료 절차를 수행하고 호출자에게 반환됩니다. 프로세스를 종료하지 않습니다.|
 
-**Exit**, **_Exit** 또는 **_exit** 함수를 호출 하는 경우 호출 시 존재 하는 임시 또는 자동 개체에 대 한 소멸자가 호출 되지 않습니다. 자동 개체는 함수에 정의 된 비정적 로컬 개체입니다. 임시 개체는 함수 호출에서 반환 되는 값과 같이 컴파일러에 의해 생성 되는 개체입니다. **Exit**, **_Exit**또는 **_exit**를 호출 하기 전에 자동 개체를 삭제 하려면 다음과 같이 개체에 대 한 소멸자를 명시적으로 호출 합니다.
+**Exit**, **_Exit** 또는 **_exit** 함수를 호출 하는 경우 호출 시 존재 하는 임시 또는 자동 개체에 대 한 소멸자가 호출 되지 않습니다. 자동 개체는 함수에 정의 된 비정적 로컬 개체입니다. 임시 개체는 함수 호출에서 반환 되는 값과 같이 컴파일러에 의해 생성 되는 개체입니다. **Exit**, **_Exit** 또는 **_exit** 를 호출 하기 전에 자동 개체를 삭제 하려면 다음과 같이 개체에 대 한 소멸자를 명시적으로 호출 합니다.
 
 ```cpp
 void last_fn() {}
@@ -97,13 +98,13 @@ void last_fn() {}
 }
 ```
 
-**DLL_PROCESS_ATTACH** 를 사용 하 여 **DllMain**에서 **exit** 를 호출 하지 마세요. **DLLMain** 함수를 종료 하려면 **DLL_PROCESS_ATTACH**에서 **FALSE** 를 반환 합니다.
+**DLL_PROCESS_ATTACH** 를 사용 하 여 **DllMain** 에서 **exit** 를 호출 하지 마세요. **DLLMain** 함수를 종료 하려면 **DLL_PROCESS_ATTACH** 에서 **FALSE** 를 반환 합니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|필수 헤더|
+|함수|필수 헤더|
 |--------------|---------------------|
 |**종료**, **_Exit**, **_exit**|\<process.h> 또는 \<stdlib.h>|
 
@@ -124,7 +125,7 @@ int main( void )
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [프로세스 및 환경 제어](../../c-runtime-library/process-and-environment-control.md)<br/>
 [중단이](abort.md)<br/>

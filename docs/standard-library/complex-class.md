@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 복합 클래스'
 title: complex 클래스
 ms.date: 03/27/2019
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - std::complex [C++], imag
 - std::complex [C++], real
 ms.assetid: d6492e1c-5eba-4bc5-835b-2a88001a5868
-ms.openlocfilehash: c7e2ca2c14ed0ac5f561fab446f6cd2dcc19649d
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 224b59e79119496ea7484378a010c4861f32e404
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836546"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97233905"
 ---
 # <a name="complex-class"></a>complex 클래스
 
@@ -56,7 +57,7 @@ class complex
 |-|-|
 |[value_type](#value_type)|복소수의 실수부와 허수부를 나타내는 데 사용되는 데이터 형식을 표시하는 형식입니다.|
 
-### <a name="functions"></a>Functions
+### <a name="functions"></a>함수
 
 |Name|설명|
 |-|-|
@@ -100,7 +101,7 @@ constexpr complex(
 
 ### <a name="remarks"></a>설명
 
-첫 번째 생성자는 저장 된 실제 부분을 * \_ realval로,* 로 초기화 하 고 저장 된 허수 부분을 * \_ imagval*로 초기화 합니다. 두 번째 생성자는 저장 된 실수 부분을로 초기화 하 `complexNum.real()` 고, 저장 된 허수 부분을로 초기화 합니다 `complexNum.imag()` .
+첫 번째 생성자는 저장 된 실제 부분을 *\_ realval로,* 로 초기화 하 고 저장 된 허수 부분을 *\_ imagval* 로 초기화 합니다. 두 번째 생성자는 저장 된 실수 부분을로 초기화 하 `complexNum.real()` 고, 저장 된 허수 부분을로 초기화 합니다 `complexNum.imag()` .
 
 이 구현에서 변환기가 멤버 템플릿 함수를 지원하지 않는 경우는 결과는 다음과 같습니다.
 
@@ -178,7 +179,7 @@ T imag(const T& right);
 
 ### <a name="remarks"></a>설명
 
-복소수 *a + bi*의 경우 허수 부분 또는 구성 요소는 *Im (a + bi) = b*입니다.
+복소수 *a + bi* 의 경우 허수 부분 또는 구성 요소는 *Im (a + bi) = b* 입니다.
 
 ### <a name="example"></a>예제
 
@@ -710,7 +711,7 @@ T real(const T& right);
 
 ### <a name="remarks"></a>설명
 
-복소수 *a + bi*의 경우 실제 부분 또는 구성 요소는 *Re (a + bi) = a*입니다.
+복소수 *a + bi* 의 경우 실제 부분 또는 구성 요소는 *Re (a + bi) = a* 입니다.
 
 ### <a name="example"></a>예제
 

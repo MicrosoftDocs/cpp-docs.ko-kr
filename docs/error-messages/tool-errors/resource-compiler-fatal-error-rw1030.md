@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 리소스 컴파일러 심각한 오류 RW1030'
 title: 리소스 컴파일러 심각한 오류 RW1030
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - RW1030
 ms.assetid: 10727997-9ded-4afc-93b3-58fb435c3da8
-ms.openlocfilehash: e10e12e110ddc766e0601b83941ecfd1ce02c74d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 77d4de4ae7002c1b5f949fb959cd2c6376e3572e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80182450"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97237168"
 ---
 # <a name="resource-compiler-fatal-error-rw1030"></a>리소스 컴파일러 심각한 오류 RW1030
 

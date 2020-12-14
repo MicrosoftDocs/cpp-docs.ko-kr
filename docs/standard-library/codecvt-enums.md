@@ -1,4 +1,5 @@
 ---
+description: '&lt;Codecvt 열거형에 대해 자세히 알아보세요. &gt;'
 title: '&lt;codecvt&gt; 열거형'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 ms.assetid: 46a8b073-01bc-46d3-b3d3-a8540f9422c1
 helpviewer_keywords:
 - std::codecvt_mode
-ms.openlocfilehash: e67290d8de0b8251191c4a93b66b7e19a293ed61
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: bcd40f72f563b3ecf91125f7167f206d4b1b6517
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81371935"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97234061"
 ---
 # <a name="ltcodecvtgt-enums"></a>&lt;codecvt&gt; 열거형
 
-## <a name="codecvt_mode-enumeration"></a><a name="codecvt_mode"></a>codecvt_mode 열거
+## <a name="codecvt_mode-enumeration"></a><a name="codecvt_mode"></a> codecvt_mode 열거형
 
-[로캘](../standard-library/locale-class.md) 면에 대한 구성 정보를 지정합니다.
+[로캘](../standard-library/locale-class.md) 패싯에 대 한 구성 정보를 지정 합니다.
 
 ```cpp
 enum codecvt_mode {
@@ -29,7 +30,7 @@ enum codecvt_mode {
 
 ### <a name="remarks"></a>설명
 
-열거형은 [ \<codecvt>](../standard-library/codecvt.md)선언된 로캘 면에 구성 정보를 제공하는 세 개의 상수를 정의합니다. 고유 값은 다음과 같습니다.
+열거형은에 선언 된 로캘 패싯에 구성 정보를 제공 하는 세 개의 상수를 정의 합니다 [\<codecvt>](../standard-library/codecvt.md) . 고유 값은 다음과 같습니다.
 
 - `consume_header` - 멀티바이트 시퀀스를 읽을 때 초기 헤더 시퀀스를 사용하고, 읽을 후속 멀티바이트 시퀀스의 엔디언(Endianness)을 결정할 경우
 
@@ -41,4 +42,4 @@ enum codecvt_mode {
 
 ## <a name="see-also"></a>참고 항목
 
-[\<코덱트>](../standard-library/codecvt.md)
+[\<codecvt>](../standard-library/codecvt.md)

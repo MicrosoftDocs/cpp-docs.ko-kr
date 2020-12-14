@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: BSCMAKE 경고 BK4504'
 title: BSCMAKE 경고 BK4504
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BK4504
 ms.assetid: b56ee2d4-ad44-40f4-98c0-75934ea44a6c
-ms.openlocfilehash: 57858827439ac8cc11e3718d7a484124ae8a6d74
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 8b07c15b03a040ea19ec368c6f869d02f3e36f79
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80197446"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97237831"
 ---
 # <a name="bscmake-warning-bk4504"></a>BSCMAKE 경고 BK4504
 

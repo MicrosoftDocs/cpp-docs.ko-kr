@@ -1,4 +1,5 @@
 ---
+description: Discrete_distribution 클래스에 대해 자세히 알아보세요.
 title: discrete_distribution 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - std::discrete_distribution [C++], param_type
 - std::discrete_distribution [C++], param_type
 ms.assetid: 8c8ba8f8-c06f-4f07-b354-f53950142fcf
-ms.openlocfilehash: 5dcac516da088a55d2ddc176275ec25941ad8949
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b84d174a653efdeba47fb0356c903b8c7dd2a8d6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846279"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232761"
 ---
 # <a name="discrete_distribution-class"></a>discrete_distribution 클래스
 
@@ -228,14 +229,14 @@ explicit discrete_distribution(const param_type& parm);
 
 *firstW* 및 *lastW* 매개 변수가 포함된 반복기 범위 생성자는 간격 시퀀스 [*firstW*, *lastW*)에 대해 반복기에서 가져온 가중치 값을 사용하여 분포 개체를 생성합니다.
 
-*Weightlist* 매개 변수가 있는 이니셜라이저 목록 생성자는 이니셜라이저 목록 *weightlist*의 가중치를 사용 하 여 분포 개체를 생성 합니다.
+*Weightlist* 매개 변수가 있는 이니셜라이저 목록 생성자는 이니셜라이저 목록 *weightlist* 의 가중치를 사용 하 여 분포 개체를 생성 합니다.
 
 *count*, *low*, *high* 및 *weightfunc* 매개 변수가 포함된 생성자는 다음 규칙에 따라 초기화된 분포 개체를 생성합니다.
 
 - *count* < 1, **n** = 1이라 기본 생성자와 같은 경우 항상 0을 생성합니다.
-- *count* > 0, **n** = *count*인 경우 D **= (** *높은*  -  *낮음*)/ **n** 이 0 보다 크면 **d** uniform 하위 범위을 사용 하 여 각 가중치가 다음과 같이 할당 됩니다. `weight[k] = weightfunc(x)` 여기서 **x**  =  *low*  +  **k**  *  **d**  +  **d** /2는 **k** = 0, ..., **n** -1입니다.
+- *count* > 0, **n** = *count* 인 경우 D **= (** *높은*  -  *낮음*)/ **n** 이 0 보다 크면 **d** uniform 하위 범위을 사용 하 여 각 가중치가 다음과 같이 할당 됩니다. `weight[k] = weightfunc(x)` 여기서 **x**  =  *low*  +  **k**  *  **d**  +  **d** /2는 **k** = 0, ..., **n** -1입니다.
 
-`param_type` 매개 변수 *parm*이 포함된 생성자는 *parm*을 사용하여 분포 개체를 저장된 매개 변수 구조체로 생성합니다.
+`param_type` 매개 변수 *parm* 이 포함된 생성자는 *parm* 을 사용하여 분포 개체를 저장된 매개 변수 구조체로 생성합니다.
 
 ## <a name="discrete_distributionparam_type"></a><a name="param_type"></a> discrete_distribution::p aram_type
 
@@ -276,7 +277,7 @@ struct param_type {
 분포를 생성할 [initializer_list](../cpp/initializers.md)입니다.
 
 *수*\
-분포 범위의 요소 수입니다. *count*가 0이면 기본 생성자와 같습니다(항상 0 생성).
+분포 범위의 요소 수입니다. *count* 가 0이면 기본 생성자와 같습니다(항상 0 생성).
 
 *거의*\
 분포 범위의 가장 작은 값입니다.

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2344'
 title: 컴파일러 오류 C2344
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2344
 ms.assetid: a84c7b37-c84e-4345-8691-c23abb2dc193
-ms.openlocfilehash: 7aa1d5dfad67120556c9f4a1f69cf22dfca9acd2
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 1ad4f1808f407a9f654f5bbf3a022c2dc7b0b3ff
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74760038"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97234763"
 ---
 # <a name="compiler-error-c2344"></a>컴파일러 오류 C2344
 

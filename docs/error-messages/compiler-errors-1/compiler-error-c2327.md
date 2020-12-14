@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2327'
 title: 컴파일러 오류 C2327
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2327
 ms.assetid: 95278c95-d1f9-4487-ad27-53311f5e8112
-ms.openlocfilehash: 36222b8469f5a51254c6a6172e20384ebafc89ab
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: bcbf3bff2a98fe5ec18a00a71c6f8b359ad6f6f0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74747776"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97234932"
 ---
 # <a name="compiler-error-c2327"></a>컴파일러 오류 C2327
 
@@ -19,7 +20,7 @@ ms.locfileid: "74747776"
 
 중첩 된 클래스 내의 코드는 형식 이름, 정적 멤버 또는 열거자가 아닌 바깥쪽 클래스의 멤버에 액세스 하려고 합니다.
 
-**/Clr**을 사용 하 여 컴파일할 때 C2327의 일반적인 원인은 속성 형식과 이름이 같은 속성입니다.
+**/Clr** 을 사용 하 여 컴파일할 때 C2327의 일반적인 원인은 속성 형식과 이름이 같은 속성입니다.
 
 다음 샘플에서는 C2327를 생성 합니다.
 

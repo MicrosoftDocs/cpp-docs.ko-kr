@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: C 런타임 오류 R6017'
 title: C 런타임 오류 R6017
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - R6017
 ms.assetid: df3ec5f5-6771-4648-ba06-0e26c6a1cc6a
-ms.openlocfilehash: 2d868939425c11f13dffd84e28c1afee45e3b11a
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 38c4b65ec3d577176485882d6f581bacd2ad007c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80197304"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97237649"
 ---
 # <a name="c-runtime-error-r6017"></a>C 런타임 오류 R6017
 
@@ -30,4 +31,4 @@ ms.locfileid: "80197304"
 
 시스템 리소스에 대 한 C 런타임 다중 스레드 잠금 액세스를 시도 하는 동안 프로세스에서 예기치 않은 오류가 발생 했습니다. 일반적으로이 오류는 프로세스가 런타임 힙 데이터를 실수로 변경 하는 경우에 발생 합니다. 그러나 런타임 라이브러리나 운영 체제 코드에서 내부 오류가 원인일 수도 있습니다.
 
-이 문제를 해결 하려면 코드에서 힙 손상 버그를 확인 합니다. 자세한 내용 및 예제는 [CRT 디버그 힙 정보](/visualstudio/debugger/crt-debug-heap-details)를 참조 하세요. 다음으로, 앱 배포에 대 한 최신 재배포 가능 패키지를 사용 하 고 있는지 확인 합니다. 자세한 내용은 [ C++Visual에서 배포 ](../../windows/deployment-in-visual-cpp.md)를 참조 하세요.
+이 문제를 해결 하려면 코드에서 힙 손상 버그를 확인 합니다. 자세한 내용 및 예제는 [CRT 디버그 힙 정보](/visualstudio/debugger/crt-debug-heap-details)를 참조 하세요. 다음으로, 앱 배포에 대 한 최신 재배포 가능 패키지를 사용 하 고 있는지 확인 합니다. 자세한 내용은 [Visual C++ 배포](../../windows/deployment-in-visual-cpp.md)를 참조 하세요.

@@ -1,22 +1,23 @@
 ---
+description: '다음에 대 한 자세한 정보: default_delete 구조체'
 title: default_delete 구조체
 ms.date: 04/04/2019
 f1_keywords:
 - memory/std::default_delete
 helpviewer_keywords:
 - default_delete struct
-ms.openlocfilehash: 8baa9f5d294cf083fd55414cd529e438f328d1a1
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5b7d652dbb556957acf96ba63ac9ce14b628fb7e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845083"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232969"
 ---
 # <a name="default_delete-struct"></a>default_delete 구조체
 
 인수에서 나누기 연산 ()을 수행 하는 미리 정의 된 함수 개체입니다 `operator/` .
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 template <class T>

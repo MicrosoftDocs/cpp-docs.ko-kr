@@ -1,15 +1,16 @@
 ---
+description: '다음에 대 한 자세한 정보: &lt; condition_variable&gt;'
 title: '&lt;condition_variable&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <condition_variable>
 ms.assetid: 8567f7cc-20bd-42a7-9137-87c46f878009
-ms.openlocfilehash: d13b58fc05055ceecb6472003d7682c41c76e23d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d3179677c1440777e0f9c1d5c6ff21ba13681aaa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222539"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97233801"
 ---
 # <a name="ltcondition_variablegt"></a>&lt;condition_variable&gt;
 
@@ -24,7 +25,7 @@ ms.locfileid: "87222539"
 **네임스페이스:** std
 
 > [!NOTE]
-> **/Clr**을 사용 하 여 컴파일된 코드에서이 헤더는 차단 됩니다.
+> **/Clr** 을 사용 하 여 컴파일된 코드에서이 헤더는 차단 됩니다.
 
 ### <a name="remarks"></a>설명
 
@@ -34,7 +35,7 @@ ms.locfileid: "87222539"
 
 이벤트를 대기하려면 먼저 뮤텍스를 잠근 후 조건 변수에 대한 `wait` 메서드 중 하나를 호출합니다. 다른 스레드가 조건 변수를 알릴 때까지 `wait`에서 블록을 호출합니다.
 
-조건 변수를 대기 중인 스레드가 적절한 알림 없이 차단 해제될 때 *의사 대기 모드 해제*가 발생합니다. 이러한 의사 대기 모드 해제를 인식하기 위해 대기 함수에서 코드가 반환될 때 조건이 true가 될 때까지 대기하는 코드에서 해당 조건을 명시적으로 확인해야 합니다. 이는 보통 루프를 사용하여 수행됩니다. `wait(unique_lock<mutex>& lock, Predicate pred)`를 사용하여 이 루프를 자동으로 수행할 수 있습니다.
+조건 변수를 대기 중인 스레드가 적절한 알림 없이 차단 해제될 때 *의사 대기 모드 해제* 가 발생합니다. 이러한 의사 대기 모드 해제를 인식하기 위해 대기 함수에서 코드가 반환될 때 조건이 true가 될 때까지 대기하는 코드에서 해당 조건을 명시적으로 확인해야 합니다. 이는 보통 루프를 사용하여 수행됩니다. `wait(unique_lock<mutex>& lock, Predicate pred)`를 사용하여 이 루프를 자동으로 수행할 수 있습니다.
 
 ```cpp
 while (condition is false)

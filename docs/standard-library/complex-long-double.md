@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: &lt; long double 복합&gt;'
 title: complex&lt;long double&gt;
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - complex<long double> function
 ms.assetid: 37591991-b385-46e9-b727-d534dbc10432
-ms.openlocfilehash: 73027ba76d608424b1a6da346e861b10c66989fe
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5dd3b50c28b889a2e1fafba37cc24fda832f5975
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228390"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97233827"
 ---
 # <a name="complexltlong-doublegt"></a>complex&lt;long double&gt;
 
@@ -47,7 +48,7 @@ complex(
 *complexNum*\
 **`double`** **`float`** 생성 되는 형식의 복소수를 초기화 하는 데 사용 되는 실수 및 허수 부분을 포함 하는 형식의 복소수입니다 **`long double`** .
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 형식의 복소수입니다 **`long double`** .
 
@@ -117,7 +118,7 @@ arg( c3 ) = 0.927295 radians, which is 53.1301 degrees.
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더**:\<complex>
+**헤더**: \<complex>
 
 **네임스페이스:** std
 

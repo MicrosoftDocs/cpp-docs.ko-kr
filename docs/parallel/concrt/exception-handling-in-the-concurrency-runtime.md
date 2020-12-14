@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 동시성 런타임에서 예외 처리'
 title: 동시성 런타임에서 예외 처리
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - agents, exception handling [Concurrency Runtime]
 - task groups, exception handling [Concurrency Runtime]
 ms.assetid: 4d1494fb-3089-4f4b-8cfb-712aa67d7a7a
-ms.openlocfilehash: f85bf5c96ef31944e84473f1fedb077123801153
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4613c2b11102c3468bfb3fa5976f8aeeeeb73be3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230404"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97234308"
 ---
 # <a name="exception-handling-in-the-concurrency-runtime"></a>동시성 런타임에서 예외 처리
 
@@ -33,7 +34,7 @@ ms.locfileid: "87230404"
 
 - 런타임에서는 경량 작업 및 에이전트에 대 한 예외를 관리 하지 않습니다.
 
-## <a name="in-this-document"></a><a name="top"></a>이 문서의
+## <a name="in-this-document"></a><a name="top"></a> 이 문서의
 
 - [작업 및 연속 작업](#tasks)
 
@@ -49,7 +50,7 @@ ms.locfileid: "87230404"
 
 - [비동기 에이전트](#agents)
 
-## <a name="tasks-and-continuations"></a><a name="tasks"></a>작업 및 연속
+## <a name="tasks-and-continuations"></a><a name="tasks"></a> 작업 및 연속
 
 이 섹션에서는 런타임이 [concurrency:: task](../../parallel/concrt/reference/task-class.md) 개체 및 해당 연속에서 throw 되는 예외를 처리 하는 방법을 설명 합니다. 태스크 및 연속 모델에 대 한 자세한 내용은 [작업 병렬 처리](../../parallel/concrt/task-parallelism-concurrency-runtime.md)를 참조 하세요.
 
@@ -81,7 +82,7 @@ ms.locfileid: "87230404"
 
 [[맨 위로](#top)이동]
 
-## <a name="task-groups-and-parallel-algorithms"></a><a name="task_groups"></a>작업 그룹 및 병렬 알고리즘
+## <a name="task-groups-and-parallel-algorithms"></a><a name="task_groups"></a> 작업 그룹 및 병렬 알고리즘
 
 이 섹션에서는 런타임에서 작업 그룹에 의해 throw 되는 예외를 처리 하는 방법을 설명 합니다. 이 섹션은 [동시성::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for)와 같은 병렬 알고리즘에도 적용 됩니다. 이러한 알고리즘은 작업 그룹에서 빌드됩니다.
 
@@ -106,7 +107,7 @@ X = 15, Y = 30Caught exception: point is NULL.
 
 [[맨 위로](#top)이동]
 
-## <a name="exceptions-thrown-by-the-runtime"></a><a name="runtime"></a>런타임에 의해 Throw 되는 예외
+## <a name="exceptions-thrown-by-the-runtime"></a><a name="runtime"></a> 런타임에 의해 Throw 되는 예외
 
 런타임에 대 한 호출에서 예외가 발생할 수 있습니다. [Concurrency:: task_canceled](../../parallel/concrt/reference/task-canceled-class.md) 및 [concurrency:: operation_timed_out](../../parallel/concrt/reference/operation-timed-out-class.md)를 제외 하 고 대부분의 예외 형식은 프로그래밍 오류를 표시 합니다. 일반적으로 이러한 오류는 복구할 수 없으므로 응용 프로그램 코드에서 catch 하거나 처리 해서는 안 됩니다. 프로그래밍 오류를 진단 해야 하는 경우 응용 프로그램 코드에서 복구할 수 없는 오류를 catch 하거나 처리 하는 것이 좋습니다. 그러나 런타임에 정의 된 예외 형식을 이해 하면 프로그래밍 오류를 진단 하는 데 도움이 될 수 있습니다.
 
@@ -126,7 +127,7 @@ The operation timed out.
 
 [[맨 위로](#top)이동]
 
-## <a name="multiple-exceptions"></a><a name="multiple"></a>여러 예외
+## <a name="multiple-exceptions"></a><a name="multiple"></a> 여러 예외
 
 작업 또는 병렬 알고리즘이 여러 예외를 수신 하는 경우 런타임은 이러한 예외 중 하나만 호출 컨텍스트로 마샬링합니다. 런타임에서는 마샬링할 예외를 보장 하지 않습니다.
 
@@ -142,19 +143,19 @@ The operation timed out.
 
 [[맨 위로](#top)이동]
 
-## <a name="cancellation"></a><a name="cancellation"></a>취소
+## <a name="cancellation"></a><a name="cancellation"></a> 취소
 
 모든 예외가 오류를 나타내는 것은 아닙니다. 예를 들어 검색 알고리즘은 예외 처리를 사용 하 여 결과를 찾을 때 연결 된 작업을 중지할 수 있습니다. 코드에서 취소 메커니즘을 사용 하는 방법에 대 한 자세한 내용은 [PPL에서의 취소](../../parallel/concrt/cancellation-in-the-ppl.md)를 참조 하세요.
 
 [[맨 위로](#top)이동]
 
-## <a name="lightweight-tasks"></a><a name="lwts"></a>간단한 작업
+## <a name="lightweight-tasks"></a><a name="lwts"></a> 간단한 작업
 
 간단한 작업은 [concurrency:: Scheduler](../../parallel/concrt/reference/scheduler-class.md) 개체에서 직접 예약 하는 작업입니다. 경량 작업은 일반 작업 보다 오버 헤드가 적습니다. 그러나 런타임에서는 간단한 작업에서 throw 되는 예외를 catch 하지 않습니다. 대신 처리 되지 않은 예외 처리기에서 예외를 catch 하며,이는 기본적으로 프로세스를 종료 합니다. 따라서 응용 프로그램에서 적절 한 오류 처리 메커니즘을 사용 합니다. 간단한 작업에 대 한 자세한 내용은 [작업 스케줄러](../../parallel/concrt/task-scheduler-concurrency-runtime.md)를 참조 하세요.
 
 [[맨 위로](#top)이동]
 
-## <a name="asynchronous-agents"></a><a name="agents"></a>비동기 에이전트
+## <a name="asynchronous-agents"></a><a name="agents"></a> 비동기 에이전트
 
 간단한 작업 처럼 런타임은 비동기 에이전트에서 throw 되는 예외를 관리 하지 않습니다.
 
@@ -191,5 +192,5 @@ the status of the agent is: done
 [작업 병렬 처리](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>
 [병렬 알고리즘](../../parallel/concrt/parallel-algorithms.md)<br/>
 [PPL에서의 취소](cancellation-in-the-ppl.md)<br/>
-[작업 스케줄러](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
+[작업 Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 [비동기 에이전트](../../parallel/concrt/asynchronous-agents.md)

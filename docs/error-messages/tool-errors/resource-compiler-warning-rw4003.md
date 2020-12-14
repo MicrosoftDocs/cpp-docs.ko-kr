@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 리소스 컴파일러 경고 RW4003'
 title: 리소스 컴파일러 오류 RW4003
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - RW4003
 ms.assetid: e9c289f2-c065-4f26-bc24-991953742abc
-ms.openlocfilehash: 20a59b2c79688567df8d84bb7933c1cc69043928
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 0c5ba652ea926b1d8a00e5f66813d2627162e627
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80182216"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97237012"
 ---
 # <a name="resource-compiler-warning-rw4003"></a>리소스 컴파일러 오류 RW4003
 

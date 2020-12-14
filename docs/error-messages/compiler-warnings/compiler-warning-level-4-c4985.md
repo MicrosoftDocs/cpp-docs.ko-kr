@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4985'
 title: 컴파일러 경고(수준 4) C4985
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4985
 ms.assetid: 832f001c-afe7-403d-a8b4-02334724c79e
-ms.openlocfilehash: 87537e960c858cc6741108cf191fbeb2a7a2a8d7
-ms.sourcegitcommit: 6e55aeb538b1c39af754f82d6f7738a18f5aa031
+ms.openlocfilehash: c00c6ebd16f5160ffed726eae5307d7f3642eb3d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87390015"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97234568"
 ---
 # <a name="compiler-warning-level-4-c4985"></a>컴파일러 경고(수준 4) C4985
 
