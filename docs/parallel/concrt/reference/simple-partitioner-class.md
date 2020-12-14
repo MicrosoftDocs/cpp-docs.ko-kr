@@ -1,4 +1,5 @@
 ---
+description: Simple_partitioner 클래스에 대해 자세히 알아보세요.
 title: simple_partitioner 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - simple_partitioner class
 ms.assetid: d7e997af-54d1-43f5-abe0-def72df6edb3
-ms.openlocfilehash: 503f36b90c5eb3319f9aa2d56528172ffa95bb11
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 76dcac6d7fc2dce5b69d0a9dbefaf01420f8bcde
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142505"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97188692"
 ---
 # <a name="simple_partitioner-class"></a>simple_partitioner 클래스
 
@@ -25,16 +26,16 @@ ms.locfileid: "77142505"
 class simple_partitioner;
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
 |[simple_partitioner](#ctor)|`simple_partitioner` 개체를 생성합니다.|
 |[~ simple_partitioner 소멸자](#dtor)|`simple_partitioner` 개체를 제거합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `simple_partitioner`
 
@@ -42,9 +43,9 @@ class simple_partitioner;
 
 **헤더:** ppl. h
 
-**네임스페이스:** 동시성
+**네임 스페이스:** 동시성
 
-## <a name="dtor"></a>~ simple_partitioner
+## <a name="simple_partitioner"></a><a name="dtor"></a> ~ simple_partitioner
 
 `simple_partitioner` 개체를 제거합니다.
 
@@ -52,7 +53,7 @@ class simple_partitioner;
 ~simple_partitioner();
 ```
 
-## <a name="ctor"></a>simple_partitioner
+## <a name="simple_partitioner"></a><a name="ctor"></a> simple_partitioner
 
 `simple_partitioner` 개체를 생성합니다.
 
@@ -67,4 +68,4 @@ explicit simple_partitioner(_Size_type _Chunk_size);
 
 ## <a name="see-also"></a>참고 항목
 
-[concurrency 네임스페이스](concurrency-namespace.md)
+[concurrency 네임 스페이스](concurrency-namespace.md)

@@ -1,4 +1,5 @@
 ---
+description: Static_partitioner 클래스에 대해 자세히 알아보세요.
 title: static_partitioner 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - static_partitioner class
 ms.assetid: 2b3dbdf0-6eb9-49f6-8639-03df1d974143
-ms.openlocfilehash: 7a58daa27bc7a2f51f78a3068a2f152979ffdd72
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: f75d2e620a66e0ed347d39d429f59e3e2715369a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142688"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97188497"
 ---
 # <a name="static_partitioner-class"></a>static_partitioner 클래스
 
@@ -29,12 +30,12 @@ class static_partitioner;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
 |[static_partitioner](#ctor)|`static_partitioner` 개체를 생성합니다.|
 |[~ static_partitioner 소멸자](#dtor)|`static_partitioner` 개체를 제거합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `static_partitioner`
 
@@ -42,9 +43,9 @@ class static_partitioner;
 
 **헤더:** ppl. h
 
-**네임스페이스:** 동시성
+**네임 스페이스:** 동시성
 
-## <a name="dtor"></a>~ static_partitioner
+## <a name="static_partitioner"></a><a name="dtor"></a> ~ static_partitioner
 
 `static_partitioner` 개체를 제거합니다.
 
@@ -52,7 +53,7 @@ class static_partitioner;
 ~static_partitioner();
 ```
 
-## <a name="ctor"></a>static_partitioner
+## <a name="static_partitioner"></a><a name="ctor"></a> static_partitioner
 
 `static_partitioner` 개체를 생성합니다.
 
@@ -62,4 +63,4 @@ static_partitioner();
 
 ## <a name="see-also"></a>참고 항목
 
-[concurrency 네임스페이스](concurrency-namespace.md)
+[concurrency 네임 스페이스](concurrency-namespace.md)

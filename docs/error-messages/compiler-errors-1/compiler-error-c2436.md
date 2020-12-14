@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2436'
 title: 컴파일러 오류 C2436
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2436
 ms.assetid: ca4cc813-bc1d-4c0a-9a2c-3a5fe673d084
-ms.openlocfilehash: 2fd910f18e8d863c6894a7fe99449d5ba213bf61
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 3858146d48006c1129f6dca1992e229603b70a79
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74744383"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97189914"
 ---
 # <a name="compiler-error-c2436"></a>컴파일러 오류 C2436
 

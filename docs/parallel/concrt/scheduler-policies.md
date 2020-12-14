@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: Scheduler 정책'
 title: Scheduler 정책
 ms.date: 11/04/2016
 helpviewer_keywords:
 - scheduler policies
 ms.assetid: 58fb68bd-4a57-40a8-807b-6edb6f083cd9
-ms.openlocfilehash: a962c00d23c41d97087e705d395b601afc7b1910
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 42b5fa951c320fcc3bab8fe5abe3bb4988e6c368
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90042045"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97188016"
 ---
 # <a name="scheduler-policies"></a>Scheduler 정책
 
@@ -26,7 +27,7 @@ ms.locfileid: "90042045"
 
 [Concurrency::P olicyelementkey](reference/concurrency-namespace-enums.md#policyelementkey) 열거형은 작업 스케줄러와 연결 된 정책 키를 정의 합니다. 다음 표에서는 런타임에서 각각에 대해 사용 하는 정책 키와 기본값에 대해 설명 합니다.
 
-| 정책 키 | Description | 기본값 |
+| 정책 키 | 설명 | 기본값 |
 |--|--|--|
 | `SchedulerKind` | 작업을 예약 하는 데 사용할 스레드 형식을 지정 하는 [concurrency:: SchedulerType](reference/concurrency-namespace-enums.md#schedulertype) 값입니다. | `ThreadScheduler`(일반 스레드 사용) 이 키에 유효한 유일한 값입니다. |
 | `MaxConcurrency` | **`unsigned int`** 스케줄러에서 사용 하는 최대 동시성 리소스 수를 지정 하는 값입니다. | [concurrency::MaxExecutionResources](reference/concurrency-namespace-constants1.md#maxexecutionresources) |

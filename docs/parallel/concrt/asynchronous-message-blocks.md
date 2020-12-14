@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 비동기 메시지 블록'
 title: 비동기 메시지 블록
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,20 +7,20 @@ helpviewer_keywords:
 - asynchronous message blocks
 - greedy join [Concurrency Runtime]
 ms.assetid: 79c456c0-1692-480c-bb67-98f2434c1252
-ms.openlocfilehash: 6697bdd296a3c71f03bc22986efa47dd586d5d9e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7447d30932693eebe22d0a6f7f0aad0fba2abf16
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217911"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97189147"
 ---
 # <a name="asynchronous-message-blocks"></a>비동기 메시지 블록
 
 에이전트 라이브러리는 여러 메시지 블록 형식을 제공 하 여 스레드로부터 안전한 방식으로 응용 프로그램 구성 요소 간에 메시지를 전파할 수 있습니다. 이러한 메시지 블록 형식은 [동시성:: send](reference/concurrency-namespace-functions.md#send), [concurrency:: asend](reference/concurrency-namespace-functions.md#asend), [concurrency:: receive](reference/concurrency-namespace-functions.md#receive)및 [concurrency:: try_receive](reference/concurrency-namespace-functions.md#try_receive)와 같은 다양 한 메시지 전달 루틴에서 주로 사용 됩니다. 에이전트 라이브러리에 의해 정의 되는 메시지 전달 루틴에 대 한 자세한 내용은 [메시지 전달 함수](../../parallel/concrt/message-passing-functions.md)를 참조 하세요.
 
-## <a name="sections"></a><a name="top"></a>섹션이
+## <a name="sections"></a><a name="top"></a> 섹션이
 
-이 항목에는 다음과 같은 섹션이 포함되어 있습니다.
+이 항목에는 다음과 같은 단원이 포함되어 있습니다.
 
 - [소스 및 대상](#sources_and_targets)
 
@@ -47,15 +48,15 @@ ms.locfileid: "87217911"
 
 - [메시지 예약](#reservation)
 
-## <a name="sources-and-targets"></a><a name="sources_and_targets"></a>원본 및 대상
+## <a name="sources-and-targets"></a><a name="sources_and_targets"></a> 원본 및 대상
 
-원본 및 대상은 메시지 전달 시 중요 한 두 참가자입니다. *소스* 는 메시지를 보내는 통신의 끝점을 참조 합니다. *대상은* 메시지를 수신 하는 통신의 끝점을 참조 합니다. 소스를에서 읽은 끝점으로 간주 하 고 대상을에 작성 하는 끝점으로 간주할 수 있습니다. 응용 프로그램은 원본 및 대상을 함께 연결 하 여 *메시징 네트워크*를 형성 합니다.
+원본 및 대상은 메시지 전달 시 중요 한 두 참가자입니다. *소스* 는 메시지를 보내는 통신의 끝점을 참조 합니다. *대상은* 메시지를 수신 하는 통신의 끝점을 참조 합니다. 소스를에서 읽은 끝점으로 간주 하 고 대상을에 작성 하는 끝점으로 간주할 수 있습니다. 응용 프로그램은 원본 및 대상을 함께 연결 하 여 *메시징 네트워크* 를 형성 합니다.
 
 에이전트 라이브러리는 두 개의 추상 클래스를 사용 하 여 소스 및 대상을 나타냅니다. [concurrency:: ISource](../../parallel/concrt/reference/isource-class.md) 및 [Concurrency:: ITarget](../../parallel/concrt/reference/itarget-class.md). 소스로 작동 하는 메시지 블록 형식은에서 파생 되며 `ISource` 대상으로 작동 하는 메시지 블록 형식은에서 파생 `ITarget` 됩니다. 소스 및 대상 역할을 하는 메시지 블록 형식은와 모두에서 파생 `ISource` `ITarget` 됩니다.
 
 [[맨 위로](#top)이동]
 
-## <a name="message-propagation"></a><a name="propagation"></a>메시지 전파
+## <a name="message-propagation"></a><a name="propagation"></a> 메시지 전파
 
 *메시지 전파* 는 한 구성 요소에서 다른 구성 요소로 메시지를 전송 하는 동작입니다. 메시지 블록에 메시지가 제공 되 면 해당 메시지를 수락, 거부 또는 연기할 수 있습니다. 모든 메시지 블록 형식은 다양 한 방법으로 메시지를 저장 하 고 전송 합니다. 예를 들어, `unbounded_buffer` 클래스는 무제한의 메시지를 저장 하 고, 클래스는 한 `overwrite_buffer` 번에 하나의 메시지를 저장 하며, 변환기 클래스는 각 메시지의 변경 된 버전을 저장 합니다. 이러한 메시지 블록 형식은이 문서의 뒷부분에서 자세히 설명 합니다.
 
@@ -67,7 +68,7 @@ ms.locfileid: "87217911"
 
 [[맨 위로](#top)이동]
 
-## <a name="overview-of-message-block-types"></a><a name="overview"></a>메시지 블록 형식 개요
+## <a name="overview-of-message-block-types"></a><a name="overview"></a> 메시지 블록 형식 개요
 
 다음 표에서는 중요 한 메시지 블록 형식의 역할에 대해 간략하게 설명 합니다.
 
@@ -109,21 +110,21 @@ ms.locfileid: "87217911"
 
 |메시지 블록 형식|전파 유형 (원본, 대상 또는 둘 다)|메시지 순서 지정 (정렬 또는 정렬 되지 않음)|원본 수|대상 개수|
 |------------------------|--------------------------------------------------|-----------------------------------------------|------------------|------------------|
-|`unbounded_buffer`|둘 다|주문됨|Unbounded|Unbounded|
-|`overwrite_buffer`|둘 다|주문됨|Unbounded|Unbounded|
-|`single_assignment`|둘 다|주문됨|Unbounded|Unbounded|
+|`unbounded_buffer`|모두|주문됨|Unbounded|Unbounded|
+|`overwrite_buffer`|모두|주문됨|Unbounded|Unbounded|
+|`single_assignment`|모두|주문됨|Unbounded|Unbounded|
 |`call`|대상|주문됨|Unbounded|해당 사항 없음|
-|`transformer`|둘 다|주문됨|Unbounded|1|
-|`choice`|둘 다|주문됨|10|1|
-|`join`|둘 다|주문됨|Unbounded|1|
-|`multitype_join`|둘 다|주문됨|10|1|
+|`transformer`|모두|주문됨|Unbounded|1|
+|`choice`|모두|주문됨|10|1|
+|`join`|모두|주문됨|Unbounded|1|
+|`multitype_join`|모두|주문됨|10|1|
 |`timer`|원본|해당 사항 없음|해당 사항 없음|1|
 
 다음 섹션에서는 메시지 블록 형식에 대해 자세히 설명 합니다.
 
 [[맨 위로](#top)이동]
 
-## <a name="unbounded_buffer-class"></a><a name="unbounded_buffer"></a>unbounded_buffer 클래스
+## <a name="unbounded_buffer-class"></a><a name="unbounded_buffer"></a> unbounded_buffer 클래스
 
 [Concurrency:: unbounded_buffer](reference/unbounded-buffer-class.md) 클래스는 범용 비동기 메시징 구조를 나타냅니다. 이 클래스는 여러 소스가 기록하거나 여러 대상이 읽을 수 있는 메시지의 FIFO(선입 선출) 큐를 저장합니다. 대상이 개체에서 메시지를 받으면 `unbounded_buffer` 해당 메시지는 메시지 큐에서 제거 됩니다. 따라서 `unbounded_buffer` 개체에 대상이 여러 개 있을 수 있지만 하나의 대상만 각 메시지를 받습니다. `unbounded_buffer` 클래스는 여러 메시지를 다른 구성 요소에 전달하려고 할 때 유용하고 해당 구성 요소는 각 메시지를 수신해야 합니다.
 
@@ -139,11 +140,11 @@ ms.locfileid: "87217911"
 334455
 ```
 
-클래스를 사용 하는 방법을 보여 주는 전체 예제는 `unbounded_buffer` [방법: 다양 한 생산자-소비자 패턴 구현](../../parallel/concrt/how-to-implement-various-producer-consumer-patterns.md)을 참조 하세요.
+클래스를 사용 하는 방법을 보여 주는 전체 예제는 `unbounded_buffer` [방법: 다양 한 Producer-Consumer 패턴 구현](../../parallel/concrt/how-to-implement-various-producer-consumer-patterns.md)을 참조 하세요.
 
 [[맨 위로](#top)이동]
 
-## <a name="overwrite_buffer-class"></a><a name="overwrite_buffer"></a>overwrite_buffer 클래스
+## <a name="overwrite_buffer-class"></a><a name="overwrite_buffer"></a> overwrite_buffer 클래스
 
 [Concurrency:: overwrite_buffer](../../parallel/concrt/reference/overwrite-buffer-class.md) 클래스는 클래스와 유사 `unbounded_buffer` 합니다. 단, `overwrite_buffer` 개체는 하나의 메시지만 저장 합니다. 또한 대상이 개체에서 메시지를 받으면 `overwrite_buffer` 해당 메시지는 버퍼에서 제거 되지 않습니다. 따라서 여러 대상이 하나의 메시지 복사본을 수신합니다.
 
@@ -161,11 +162,11 @@ ms.locfileid: "87217911"
 555555
 ```
 
-클래스를 사용 하는 방법을 보여 주는 전체 예제는 `overwrite_buffer` [방법: 다양 한 생산자-소비자 패턴 구현](../../parallel/concrt/how-to-implement-various-producer-consumer-patterns.md)을 참조 하세요.
+클래스를 사용 하는 방법을 보여 주는 전체 예제는 `overwrite_buffer` [방법: 다양 한 Producer-Consumer 패턴 구현](../../parallel/concrt/how-to-implement-various-producer-consumer-patterns.md)을 참조 하세요.
 
 [[맨 위로](#top)이동]
 
-## <a name="single_assignment-class"></a><a name="single_assignment"></a>single_assignment 클래스
+## <a name="single_assignment-class"></a><a name="single_assignment"></a> single_assignment 클래스
 
 [Concurrency:: single_assignment](../../parallel/concrt/reference/single-assignment-class.md) 클래스는 클래스와 유사 `overwrite_buffer` 합니다. 단, `single_assignment` 개체는 한 번만 쓸 수 있습니다. `overwrite_buffer` 클래스처럼 대상이 `single_assignment` 개체에서 메시지를 수신할 때 해당 메시지는 해당 개체에서 제거되지 않습니다. 따라서 여러 대상이 하나의 메시지 복사본을 수신합니다. `single_assignment`클래스는 여러 구성 요소에 메시지 하나를 브로드캐스팅하 려는 경우에 유용 합니다.
 
@@ -185,7 +186,7 @@ ms.locfileid: "87217911"
 
 [[맨 위로](#top)이동]
 
-## <a name="call-class"></a><a name="call"></a>call 클래스
+## <a name="call-class"></a><a name="call"></a> call 클래스
 
 [Concurrency:: call](../../parallel/concrt/reference/call-class.md) 클래스는 데이터를 받을 때 작업 함수를 수행 하는 메시지 수신자 역할을 합니다. 이 작업 함수는 람다 식, 함수 개체 또는 함수 포인터 일 수 있습니다. `call`개체는 메시지를 보내는 다른 구성 요소와 병렬로 동작 하기 때문에 일반 함수 호출과 다르게 동작 합니다. `call`개체가 메시지를 받을 때 작업을 수행 하는 경우 해당 메시지를 큐에 추가 합니다. 모든 `call` 개체는 대기열에 있는 메시지를 받은 순서 대로 처리 합니다.
 
@@ -205,7 +206,7 @@ ms.locfileid: "87217911"
 
 [[맨 위로](#top)이동]
 
-## <a name="transformer-class"></a><a name="transformer"></a>변환기 클래스
+## <a name="transformer-class"></a><a name="transformer"></a> 변환기 클래스
 
 [Concurrency:: 변환기](../../parallel/concrt/reference/transformer-class.md) 클래스는 메시지 수신자와 메시지 전송자 역할을 합니다. `transformer`클래스는 `call` 데이터를 받을 때 사용자 정의 작업 함수를 수행 하기 때문에 클래스와 유사 합니다. 그러나 클래스는 `transformer` 작업 함수의 결과를 수신자 개체에도 보냅니다. 개체와 마찬가지로 `call` 개체는 `transformer` 메시지를 보내는 다른 구성 요소와 병렬로 작동 합니다. `transformer`개체가 메시지를 받을 때 작업을 수행 하는 경우 해당 메시지를 큐에 추가 합니다. 모든 `transformer` 개체는 대기열에 있는 메시지를 받은 순서 대로 처리 합니다.
 
@@ -229,7 +230,7 @@ ms.locfileid: "87217911"
 
 [[맨 위로](#top)이동]
 
-## <a name="choice-class"></a><a name="choice"></a>choice 클래스
+## <a name="choice-class"></a><a name="choice"></a> choice 클래스
 
 [Concurrency:: choice](../../parallel/concrt/reference/choice-class.md) 클래스는 소스 집합에서 사용 가능한 첫 번째 메시지를 선택 합니다. `choice`클래스는 데이터 흐름 메커니즘 대신 제어 흐름 메커니즘을 나타냅니다. [비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md) 항목에서는 데이터 흐름 및 제어 흐름 간의 차이점을 설명 합니다.
 
@@ -259,7 +260,7 @@ fib35 received its value first. Result = 9227465
 
 [[맨 위로](#top)이동]
 
-## <a name="join-and-multitype_join-classes"></a><a name="join"></a>조인 및 multitype_join 클래스
+## <a name="join-and-multitype_join-classes"></a><a name="join"></a> 조인 및 multitype_join 클래스
 
 [Concurrency:: join](../../parallel/concrt/reference/join-class.md) 및 [concurrency:: multitype_join](../../parallel/concrt/reference/multitype-join-class.md) 클래스를 사용 하면 소스 집합의 각 멤버가 메시지를 받을 때까지 기다릴 수 있습니다. `join`클래스는 일반적인 메시지 유형을 가진 소스 개체에 대해 작동 합니다. `multitype_join`클래스는 서로 다른 메시지 유형을 가질 수 있는 소스 개체에 대해 작동 합니다.
 
@@ -291,7 +292,7 @@ fib35 = 9227465fib37 = 24157817half_of_fib42 = 1.33957e+008
 
 [[맨 위로](#top)이동]
 
-## <a name="timer-class"></a><a name="timer"></a>timer 클래스
+## <a name="timer-class"></a><a name="timer"></a> timer 클래스
 
 Concurrency::[timer 클래스](../../parallel/concrt/reference/timer-class.md) 는 메시지 원본 역할을 합니다. `timer`지정 된 시간이 경과 된 후 개체에서 대상으로 메시지를 보냅니다. `timer`클래스는 메시지 전송을 지연 하거나 메시지를 정기적으로 전송 하려는 경우에 유용 합니다.
 
@@ -317,7 +318,7 @@ Computing fib(42)..................................................result is 267
 
 [[맨 위로](#top)이동]
 
-## <a name="message-filtering"></a><a name="filtering"></a>메시지 필터링
+## <a name="message-filtering"></a><a name="filtering"></a> 메시지 필터링
 
 메시지 블록 개체를 만들 때 메시지 블록이 메시지를 수락 하거나 거부 하는지 여부를 결정 하는 *필터 함수* 를 제공할 수 있습니다. 필터 함수는 메시지 블록이 특정 값만 받도록 보장 하는 유용한 방법입니다.
 
@@ -340,11 +341,11 @@ bool (T const &)
 
 불필요 한 데이터 복사를 제거 하려면 값으로 전파 되는 집계 형식이 있는 경우 두 번째 형식을 사용 합니다.
 
-메시지 필터링은 구성 요소가 데이터를 받을 때 계산을 수행 하는 데이터 *흐름* 프로그래밍 모델을 지원 합니다. 필터 함수를 사용 하 여 네트워크를 통과 하는 메시지의 데이터 흐름을 제어 하는 예제는 [방법: 메시지 블록 필터 사용](../../parallel/concrt/how-to-use-a-message-block-filter.md), [연습: 데이터 흐름 에이전트 만들기](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md)및 [연습: 이미지 처리 네트워크 만들기](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)를 참조 하세요.
+메시지 필터링은 구성 요소가 데이터를 받을 때 계산을 수행 하는 데이터 *흐름* 프로그래밍 모델을 지원 합니다. 필터 함수를 사용 하 여 네트워크를 통과 하는 메시지의 데이터 흐름을 제어 하는 예제는 [방법: 메시지 블록 필터 사용](../../parallel/concrt/how-to-use-a-message-block-filter.md), [연습: 데이터 흐름 에이전트 만들기](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md)및 [연습: Image-Processing 네트워크 만들기](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)를 참조 하세요.
 
 [[맨 위로](#top)이동]
 
-## <a name="message-reservation"></a><a name="reservation"></a>메시지 예약
+## <a name="message-reservation"></a><a name="reservation"></a> 메시지 예약
 
 메시지 *예약* 을 사용 하면 메시지 블록에서 나중에 사용할 메시지를 예약할 수 있습니다. 일반적으로 메시지 예약은 직접 사용 되지 않습니다. 그러나 메시지 예약을 이해 하면 미리 정의 된 메시지 블록 형식의 동작을 보다 잘 이해할 수 있습니다.
 

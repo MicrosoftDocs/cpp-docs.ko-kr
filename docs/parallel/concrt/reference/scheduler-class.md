@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Scheduler 클래스'
 title: Scheduler 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -21,12 +22,12 @@ f1_keywords:
 helpviewer_keywords:
 - Scheduler class
 ms.assetid: 34cf7961-048d-4852-8a5c-a32f823e3506
-ms.openlocfilehash: 77ad876b8352ab1ae86fde622b05712ec5f2cea9
-ms.sourcegitcommit: 19016630f9d35f365e9ba249e0f3617515d7ca33
+ms.openlocfilehash: 2a509017c84f7f6c845c153c8c187f5885839035
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92274714"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97188900"
 ---
 # <a name="scheduler-class"></a>Scheduler 클래스
 
@@ -222,7 +223,7 @@ virtual unsigned int Reference() = 0 ;
 
 이는 일반적으로 컴퍼지션에 대 한 스케줄러의 수명을 관리 하는 데 사용 됩니다. 스케줄러의 참조 횟수가 0이 되면 스케줄러가 종료되고 스케줄러의 모든 작업이 완료된 후 자체적으로 소멸합니다.
 
-메서드는 메서드를 호출 [improper_scheduler_reference](improper-scheduler-reference-class.md) 하기 전의 참조 횟수가 `Reference` 0이 고 스케줄러가 소유 하지 않은 컨텍스트에서 호출 되는 경우 improper_scheduler_reference 예외를 throw 합니다.
+메서드는 메서드를 호출 [](improper-scheduler-reference-class.md) 하기 전의 참조 횟수가 `Reference` 0이 고 스케줄러가 소유 하지 않은 컨텍스트에서 호출 되는 경우 improper_scheduler_reference 예외를 throw 합니다.
 
 ## <a name="registershutdownevent"></a><a name="registershutdownevent"></a> RegisterShutdownEvent
 
@@ -330,7 +331,7 @@ static void __cdecl SetDefaultSchedulerPolicy(const SchedulerPolicy& _Policy);
 
 `SetDefaultSchedulerPolicy`프로세스 내에 기본 스케줄러가 이미 있을 때 메서드를 호출 하면 런타임에서 [default_scheduler_exists](default-scheduler-exists-class.md) 예외가 throw 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [concurrency 네임 스페이스](concurrency-namespace.md)<br/>
 [Scheduler 클래스](scheduler-class.md)<br/>

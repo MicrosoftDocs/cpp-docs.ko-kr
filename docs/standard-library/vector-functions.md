@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: &lt; 벡터 &gt; 함수'
 title: '&lt;vector&gt; 함수'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 ms.assetid: 6cdcf043-eef6-4330-83f0-4596fb9f968a
 helpviewer_keywords:
 - std::swap [vector]
-ms.openlocfilehash: bf28e44b4f603b1e4d6a87f0c28b42d6cc159980
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c59e2626a2062be90d2cb8201b058d5ee148ef55
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224554"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97187886"
 ---
 # <a name="ltvectorgt-functions"></a>&lt;vector&gt; 함수
 
-## <a name="swap"></a><a name="swap"></a>스왑을
+## <a name="swap"></a><a name="swap"></a> 스왑을
 
 두 벡터의 요소를 교환합니다.
 
@@ -27,10 +28,10 @@ void swap(vector<Type, Allocator>& left, vector<Type, Allocator>& right);
 ### <a name="parameters"></a>매개 변수
 
 *오른쪽*\
-교환할 요소를 제공 하는 벡터 또는 해당 요소를 *왼쪽*벡터의 요소와 교환할 벡터입니다.
+교환할 요소를 제공 하는 벡터 또는 해당 요소를 *왼쪽* 벡터의 요소와 교환할 벡터입니다.
 
 *비어*\
-해당 요소를 벡터 *오른쪽*벡터와 교환할 벡터입니다.
+해당 요소를 벡터 *오른쪽* 벡터와 교환할 벡터입니다.
 
 ### <a name="remarks"></a>설명
 

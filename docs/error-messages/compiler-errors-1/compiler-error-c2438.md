@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2438'
 title: 컴파일러 오류 C2438
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2438
 ms.assetid: 3a0ab3ba-d0e4-4d8f-971d-e503397cc827
-ms.openlocfilehash: da6443f3f319c864b53f6d077e8bf99faffc5888
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 1400ee013e5d507f7fdfe288b97db10ec8216085
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74744318"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97189888"
 ---
 # <a name="compiler-error-c2438"></a>컴파일러 오류 C2438
 

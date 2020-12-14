@@ -1,4 +1,5 @@
 ---
+description: Weak_ptr 클래스에 대해 자세히 알아보세요.
 title: weak_ptr 클래스
 ms.date: 07/29/2019
 f1_keywords:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - std::weak_ptr [C++], swap
 - std::weak_ptr [C++], use_count
 ms.assetid: 2db4afb2-c7be-46fc-9c20-34ec2f8cc7c2
-ms.openlocfilehash: 5a4989b9ac29e6a35e50479343d6bcf5a39ae1b0
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: a0434c57a70c40fc1fa1ae6b39837fd6112ba696
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831738"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97187808"
 ---
 # <a name="weak_ptr-class"></a>weak_ptr 클래스
 
@@ -68,7 +69,7 @@ template<class T> class weak_ptr;
 |[weak_ptr](#weak_ptr)|`weak_ptr`를 생성합니다.|
 | **소멸자** | |
 |[~ weak_ptr](#tilde-weak_ptr)|`weak_ptr`를 생성합니다.|
-| **정의** | |
+| **Typedefs** | |
 |[element_type](#element_type)|요소의 유형입니다.|
 | **멤버 함수** | |
 |[종료](#expired)|소유권이 만료되었는지 테스트합니다.|
@@ -239,7 +240,7 @@ weak_ptr& operator=(const shared_ptr<Other>& ptr) noexcept;
 
 ### <a name="remarks"></a>설명
 
-연산자는 모두 현재가 가리키는 리소스를 해제 **`*this`** 하 고 명명 된 리소스의 소유권을에 *ptr* 할당 **`*this`** 합니다. 연산자가 실패 하면 **`*this`** 변경 되지 않은 상태로 유지 됩니다. 각 연산자에는와 동일한 효과가 `weak_ptr(ptr).swap(*this)` 있습니다.
+연산자는 모두 현재가 가리키는 리소스를 해제 **`*this`** 하 고 명명 된 리소스의 소유권을에  할당 **`*this`** 합니다. 연산자가 실패 하면 **`*this`** 변경 되지 않은 상태로 유지 됩니다. 각 연산자에는와 동일한 효과가 `weak_ptr(ptr).swap(*this)` 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -292,7 +293,7 @@ bool owner_before(const weak_ptr<Other>& ptr) const noexcept;
 
 ### <a name="remarks"></a>설명
 
-**`true`** **`*this`** 가 *ptr*이전에 정렬 된 경우 템플릿 멤버 함수는를 반환 합니다.
+**`true`** **`*this`** 가 *ptr* 이전에 정렬 된 경우 템플릿 멤버 함수는를 반환 합니다.
 
 ## <a name="reset"></a><a name="reset"></a> 다시 설정
 
@@ -358,7 +359,7 @@ void swap(weak_ptr<T>& a, weak_ptr<T>& b) noexcept;
 
 ### <a name="remarks"></a>설명
 
-이후에 `swap` 가 처음 가리키는 리소스는 **`*this`** *wp*에서 가리키는 것 이며, 처음에는 *wp* 에서 가리키는 리소스는에서 가리킵니다 **`*this`** . 함수는 두 리소스에 대 한 참조 횟수를 변경 하지 않으며 예외를 throw 하지 않습니다. 템플릿 특수화의 효과는에 해당 합니다 `a.swap(b)` .
+이후에 `swap` 가 처음 가리키는 리소스는 **`*this`** *wp* 에서 가리키는 것 이며, 처음에는 *wp* 에서 가리키는 리소스는에서 가리킵니다 **`*this`** . 함수는 두 리소스에 대 한 참조 횟수를 변경 하지 않으며 예외를 throw 하지 않습니다. 템플릿 특수화의 효과는에 해당 합니다 `a.swap(b)` .
 
 ### <a name="example"></a>예제
 
@@ -469,7 +470,7 @@ weak_ptr(const shared_ptr<Other>& sp) noexcept;
 ### <a name="parameters"></a>매개 변수
 
 *다른*\
-인수 공유/취약 포인터에 의해 제어되는 형식입니다. 이러한 생성자는 오버 로드 확인에 참여 하지 않습니다. _그 외 \* _ 의 경우는와 호환 되지 않습니다 `element_type*` .
+인수 공유/취약 포인터에 의해 제어되는 형식입니다. 이러한 생성자는 오버 로드 확인에 참여 하지 않습니다. _그 외 \*_ 의 경우는와 호환 되지 않습니다 `element_type*` .
 
 *wp*\
 복사할 취약 포인터입니다.

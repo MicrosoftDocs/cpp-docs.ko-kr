@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 그래픽 개체'
 title: 그래픽 개체
 ms.date: 11/04/2016
 f1_keywords:
@@ -41,12 +42,12 @@ helpviewer_keywords:
 - painting and device context [MFC]
 - CPalette class [MFC], HPALETTE handle type
 ms.assetid: 41963b25-34b7-4343-8446-34ba516b83ca
-ms.openlocfilehash: a7d038a971fd1d280c100024f8af9a1ec74d8627
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 7fbb4b6a4eb7586773eff309daddf60d98c7ec3b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618645"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97189251"
 ---
 # <a name="graphic-objects"></a>그래픽 개체
 
@@ -98,9 +99,9 @@ Windows는 디바이스 컨텍스트에서 사용할 수 있는 다양한 그리
 
 - [1단계 및 2단계의 펜 생성 예제](one-stage-and-two-stage-construction-of-objects.md)
 
-- [그래픽 개체를 선택하여 디바이스 컨텍스트로 넣기](selecting-a-graphic-object-into-a-device-context.md)
+- [장치 컨텍스트에 그래픽 개체 선택](selecting-a-graphic-object-into-a-device-context.md)
 
-- [장치 컨텍스트](device-contexts.md)
+- [디바이스 컨텍스트](device-contexts.md)
 
 ## <a name="see-also"></a>참고 항목
 

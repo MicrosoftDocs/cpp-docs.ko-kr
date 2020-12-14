@@ -1,4 +1,5 @@
 ---
+description: Single_link_registry 클래스에 대해 자세히 알아보세요.
 title: single_link_registry 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - single_link_registry class
 ms.assetid: 09540a4e-c34e-4ff9-af49-21b8612b6ab3
-ms.openlocfilehash: 24f89a6b2fb998ba5e5a82dbb470accb45d0fd9f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 415dcaf8062eaf47a3e92cf4a949790eb364d0c4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219549"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97188640"
 ---
 # <a name="single_link_registry-class"></a>single_link_registry 클래스
 
@@ -40,7 +41,7 @@ class single_link_registry : public network_link_registry<_Block>;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[single_link_registry](#ctor)|`single_link_registry` 개체를 생성합니다.|
 |[~ single_link_registry 소멸자](#dtor)|개체를 소멸 시킵니다 `single_link_registry` .|
@@ -67,7 +68,7 @@ class single_link_registry : public network_link_registry<_Block>;
 
 **네임 스페이스:** 동시성
 
-## <a name="add"></a><a name="add"></a>추가
+## <a name="add"></a><a name="add"></a> 추가
 
 개체에 대 한 링크를 추가 `single_link_registry` 합니다.
 
@@ -84,7 +85,7 @@ virtual void add(_EType _Link);
 
 이 레지스트리에 이미 링크가 있는 경우 메서드는 [invalid_link_target](invalid-link-target-class.md) 예외를 throw 합니다.
 
-## <a name="begin"></a><a name="begin"></a>시작
+## <a name="begin"></a><a name="begin"></a> begin
 
 개체의 첫 번째 요소에 대 한 반복기를 반환 `single_link_registry` 합니다.
 
@@ -92,7 +93,7 @@ virtual void add(_EType _Link);
 virtual iterator begin();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 개체의 첫 번째 요소를 주소 지정 하는 반복기 `single_link_registry` 입니다.
 
@@ -100,7 +101,7 @@ virtual iterator begin();
 
 End 상태는 링크로 표시 됩니다 `NULL` .
 
-## <a name="contains"></a><a name="contains"></a>에서는
+## <a name="contains"></a><a name="contains"></a> 에서는
 
 지정 된 `single_link_registry` 블록에 대 한 개체를 검색 합니다.
 
@@ -113,11 +114,11 @@ virtual bool contains(_EType _Link);
 *_Link*<br/>
 개체에서 검색할 블록에 대 한 포인터입니다 `single_link_registry` .
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 링크를 찾았으면이 고, **`false`** 그렇지 않으면입니다.
 
-## <a name="count"></a><a name="count"></a>수
+## <a name="count"></a><a name="count"></a> 수
 
 개체의 항목 수를 셉니다 `single_link_registry` .
 
@@ -125,11 +126,11 @@ virtual bool contains(_EType _Link);
 virtual size_t count();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 `single_link_registry` 개체에 있는 항목 수입니다.
 
-## <a name="remove"></a><a name="remove"></a>삭제
+## <a name="remove"></a><a name="remove"></a> 삭제
 
 개체에서 링크를 제거 합니다 `single_link_registry` .
 
@@ -142,11 +143,11 @@ virtual bool remove(_EType _Link);
 *_Link*<br/>
 제거 될 블록에 대 한 포인터입니다 (있는 경우).
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 링크를 찾아 제거 했으면이 고, **`false`** 그렇지 않으면입니다.
 
-## <a name="single_link_registry"></a><a name="ctor"></a>single_link_registry
+## <a name="single_link_registry"></a><a name="ctor"></a> single_link_registry
 
 `single_link_registry` 개체를 생성합니다.
 
@@ -154,7 +155,7 @@ virtual bool remove(_EType _Link);
 single_link_registry();
 ```
 
-## <a name="single_link_registry"></a><a name="dtor"></a>~ single_link_registry
+## <a name="single_link_registry"></a><a name="dtor"></a> ~ single_link_registry
 
 개체를 소멸 시킵니다 `single_link_registry` .
 

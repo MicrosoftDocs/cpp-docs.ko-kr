@@ -1,4 +1,5 @@
 ---
+description: Task_completion_event 클래스에 대해 자세히 알아보세요.
 title: task_completion_event 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - task_completion_event class
 ms.assetid: fb19ed98-f245-48dc-9ba5-487ba879b28a
-ms.openlocfilehash: b63e8c6986508806cedc8c094a4e8844491dd2fa
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 791b68d6a67ea2f8a9697b69266e8744455f845c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219511"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97188367"
 ---
 # <a name="task_completion_event-class"></a>task_completion_event 클래스
 
@@ -40,7 +41,7 @@ class task_completion_event<void>;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[task_completion_event](#ctor)|`task_completion_event` 개체를 생성합니다.|
 
@@ -48,8 +49,8 @@ class task_completion_event<void>;
 
 |이름|설명|
 |----------|-----------------|
-|[set](#set)|오버로드되었습니다. 작업 완료 이벤트를 설정합니다.|
-|[set_exception](#set_exception)|오버로드되었습니다. 이 이벤트와 연결된 모든 작업에 대한 예외를 전파합니다.|
+|[set](#set)|오버로드됨. 작업 완료 이벤트를 설정합니다.|
+|[set_exception](#set_exception)|오버로드됨. 이 이벤트와 연결된 모든 작업에 대한 예외를 전파합니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -69,7 +70,7 @@ class task_completion_event<void>;
 
 **네임 스페이스:** 동시성
 
-## <a name="set"></a><a name="set"></a>설정
+## <a name="set"></a><a name="set"></a> 설정
 
 작업 완료 이벤트를 설정합니다.
 
@@ -84,7 +85,7 @@ bool set() const ;
 *_Result*<br/>
 이 이벤트를 설정 하는 결과입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 메서드는 **`true`** 이벤트 설정에 성공 하면를 반환 합니다. **`false`** 이벤트가 이미 설정 된 경우를 반환 합니다.
 
@@ -92,7 +93,7 @@ bool set() const ;
 
 를 여러 번 호출 하거나 동시에 호출 하는 경우 `set` 첫 번째 호출만 성공 하 고 해당 결과 (있는 경우)가 작업 완료 이벤트에 저장 됩니다. 나머지 집합은 무시 되 고 메서드에서 false를 반환 합니다. 작업 완료 이벤트를 설정 하면 해당 이벤트에서 생성 된 모든 작업이 즉시 완료 되 고 해당 연속 (있는 경우)이 예약 됩니다. 이외의가 있는 작업 완료 개체는 `_ResultType` **`void`** 해당 값을 연속에 전달 합니다.
 
-## <a name="set_exception"></a><a name="set_exception"></a>set_exception
+## <a name="set_exception"></a><a name="set_exception"></a> set_exception
 
 이 이벤트와 연결된 모든 작업에 대한 예외를 전파합니다.
 
@@ -114,9 +115,9 @@ __declspec(noinline) bool set_exception(std::exception_ptr _ExceptionPtr) const 
 *_ExceptionPtr*<br/>
 설정할 예외 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-## <a name="task_completion_event"></a><a name="ctor"></a>task_completion_event
+## <a name="task_completion_event"></a><a name="ctor"></a> task_completion_event
 
 `task_completion_event` 개체를 생성합니다.
 

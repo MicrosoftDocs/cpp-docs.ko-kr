@@ -1,4 +1,5 @@
 ---
+description: Weibull_distribution 클래스에 대해 자세히 알아보세요.
 title: weibull_distribution 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - std::weibull_distribution [C++], param_type
 - std::weibull_distribution [C++], param_type
 ms.assetid: f20b49d3-1b9a-41af-8db4-baf800eaa02b
-ms.openlocfilehash: d16c1f7f864d52222a7fd4e1e2a5e543b8c21809
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d6ab60a4c5442e13a00ff559cbc58e207335e5ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831699"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97187795"
 ---
 # <a name="weibull_distribution-class"></a>weibull_distribution 클래스
 
@@ -235,7 +236,7 @@ explicit weibull_distribution(const param_type& parm);
 
 첫 번째 생성자는 저장된 `a` 값이 *a* 값을 갖고 저장된 `b` 값이 *b* 값을 갖는 개체를 생성합니다.
 
-두 번째 생성자는 저장된 매개 변수가 *parm*에서 초기화되는 개체를 생성합니다. `param()` 멤버 함수를 호출하여 기존 분포의 현재 매개 변수를 가져와 설정할 수 있습니다.
+두 번째 생성자는 저장된 매개 변수가 *parm* 에서 초기화되는 개체를 생성합니다. `param()` 멤버 함수를 호출하여 기존 분포의 현재 매개 변수를 가져와 설정할 수 있습니다.
 
 ## <a name="weibull_distributionparam_type"></a><a name="param_type"></a> weibull_distribution::p aram_type
 

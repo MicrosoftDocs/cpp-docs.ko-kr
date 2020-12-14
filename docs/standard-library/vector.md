@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: &lt; 벡터&gt;'
 title: '&lt;vector&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - vector header
 ms.assetid: c1431ad8-c0b6-4dbb-89c4-5f651e432d7f
-ms.openlocfilehash: 7cecff1e5e0014c4f1a4294a5c6ba25c5d38da67
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 1f787afb00a3f94ba6b5148fe064badbc5d373ec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840013"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97187860"
 ---
 # <a name="ltvectorgt"></a>&lt;vector&gt;
 

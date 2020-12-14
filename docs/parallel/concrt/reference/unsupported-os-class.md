@@ -1,4 +1,5 @@
 ---
+description: Unsupported_os 클래스에 대해 자세히 알아보세요.
 title: unsupported_os 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - unsupported_os class
 ms.assetid: 6fa57636-341b-4b51-84cc-261d283ff736
-ms.openlocfilehash: 253cd76182e1b6f85be3701663bd10c86c10e6ba
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 1f9ee74db42d2b34c1b4e24a1951d84a442224bc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142350"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97188094"
 ---
 # <a name="unsupported_os-class"></a>unsupported_os 클래스
 
@@ -25,15 +26,15 @@ ms.locfileid: "77142350"
 class unsupported_os : public std::exception;
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[unsupported_os](#ctor)|오버로드되었습니다. `unsupported_os` 개체를 생성합니다.|
+|[unsupported_os](#ctor)|오버로드됨. `unsupported_os` 개체를 생성합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `exception`
 
@@ -43,9 +44,9 @@ class unsupported_os : public std::exception;
 
 **헤더:** concrt .h
 
-**네임스페이스:** 동시성
+**네임 스페이스:** 동시성
 
-## <a name="ctor"></a>unsupported_os
+## <a name="unsupported_os"></a><a name="ctor"></a> unsupported_os
 
 `unsupported_os` 개체를 생성합니다.
 
@@ -64,4 +65,4 @@ unsupported_os() throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[concurrency 네임스페이스](concurrency-namespace.md)
+[concurrency 네임 스페이스](concurrency-namespace.md)

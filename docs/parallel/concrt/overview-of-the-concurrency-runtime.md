@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 동시성 런타임 개요'
 title: 동시성 런타임 개요
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - Concurrency Runtime, overview
 - Concurrency Runtime, lambda expressions
 ms.assetid: 56237d96-10b0-494a-9cb4-f5c5090436c5
-ms.openlocfilehash: 11035f9e202d964ae91378560b9244cde6d1828b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b6ff531b1961b32056a7232b62eca05d7a8793b9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87194617"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97189160"
 ---
 # <a name="overview-of-the-concurrency-runtime"></a>동시성 런타임 개요
 
 이 문서에서는 동시성 런타임에 대한 개요를 제공합니다. 또한 동시성 런타임의 이점, 사용할 시기, 구성 요소가 서로 상호 작용하는 방식과 운영 체제 및 애플리케이션과 상호 작용하는 방식에 대해 설명합니다.
 
-## <a name="sections"></a><a name="top"></a>섹션이
+## <a name="sections"></a><a name="top"></a> 섹션이
 
 이 문서는 다음 섹션으로 구성됩니다.
 
@@ -32,7 +33,7 @@ ms.locfileid: "87194617"
 
 - [요구 사항](#requirements)
 
-## <a name="concurrency-runtime-implementation-history"></a><a name="dlls"></a>동시성 런타임 구현 기록
+## <a name="concurrency-runtime-implementation-history"></a><a name="dlls"></a> 동시성 런타임 구현 기록
 
 Visual Studio 2010 ~ 2013에서 동시성 런타임 msvcr120.dll를 통해 msvcr100.dll에 통합 되었습니다.  Visual Studio 2015에서 작업 중에 발생 한 DLL은 다음 세 부분으로 리팩터링 되었습니다.
 
@@ -44,9 +45,9 @@ Visual Studio 2010 ~ 2013에서 동시성 런타임 msvcr120.dll를 통해 msvcr
 
 Visual Studio 2015 이상에서는 동시성 런타임 작업 Scheduler가 더 이상 ppltasks.h에 있는 작업 클래스 및 관련 형식에 대한 Scheduler가 아닙니다. 이제 이러한 형식에서는 성능 향상 및 Windows 동기화 기본 형식과의 상호 운용성을 위해 Windows 스레드 풀을 사용합니다.
 
-## <a name="why-a-runtime-for-concurrency-is-important"></a><a name="runtime"></a>동시성 런타임이 중요 한 이유
+## <a name="why-a-runtime-for-concurrency-is-important"></a><a name="runtime"></a> 동시성 런타임이 중요 한 이유
 
-동시성 런타임은 동시에 실행되는 애플리케이션 및 애플리케이션 구성 요소에 통일성 및 예측 가능성을 제공합니다. 동시성 런타임의 이점에 대 한 두 가지 예는 *협조적 작업 예약* 및 *협조적 차단*입니다.
+동시성 런타임은 동시에 실행되는 애플리케이션 및 애플리케이션 구성 요소에 통일성 및 예측 가능성을 제공합니다. 동시성 런타임의 이점에 대 한 두 가지 예는 *협조적 작업 예약* 및 *협조적 차단* 입니다.
 
 동시성 런타임에서는 작업 가로채기 알고리즘을 구현하는 협조적 작업 스케줄러를 사용하여 컴퓨팅 리소스 간에 작업을 효율적으로 분산시킵니다. 예를 들어 두 스레드가 동일한 런타임에서 관리되는 애플리케이션을 살펴보겠습니다. 한 스레드가 예약된 작업을 완료하면 다른 스레드에서 작업을 오프로드할 수 있습니다. 이 메커니즘은 애플리케이션의 전체 작업을 분산시킵니다.
 
@@ -65,7 +66,7 @@ Visual Studio 2015 이상에서는 동시성 런타임 작업 Scheduler가 더 �
 > [!IMPORTANT]
 > 작업 스케줄러 및 리소스 관리자 구성 요소는 UWP (유니버설 Windows 플랫폼) 앱에서 사용할 수 없으며 ppltasks.h의 작업 클래스 또는 기타 형식을 사용 하는 경우에 사용할 수 없습니다.
 
-동시성 런타임은 매우 쉽게 *구성할*수 있습니다. 즉, 기존 기능을 결합 하 여 더 많은 작업을 수행할 수 있습니다. 동시성 런타임은 하위 수준의 구성 요소에서 병렬 알고리즘과 같은 많은 기능을 작성합니다.
+동시성 런타임은 매우 쉽게 *구성할* 수 있습니다. 즉, 기존 기능을 결합 하 여 더 많은 작업을 수행할 수 있습니다. 동시성 런타임은 하위 수준의 구성 요소에서 병렬 알고리즘과 같은 많은 기능을 작성합니다.
 
 또한 동시성 런타임은 협조적 차단을 사용하여 리소스에 대한 액세스를 동기화하는 동기화 기본 형식을 제공합니다. 이러한 동기화 기본 형식에 대 한 자세한 내용은 [동기화 데이터 구조](../../parallel/concrt/synchronization-data-structures.md)를 참조 하세요.
 
@@ -103,9 +104,9 @@ PPL(병렬 패턴 라이브러리)은 세부적인 병렬 처리를 수행하기
 
 [[맨 위로](#top)이동]
 
-## <a name="c-lambda-expressions"></a><a name="lambda"></a>C + + 람다 식
+## <a name="c-lambda-expressions"></a><a name="lambda"></a> C + + 람다 식
 
-동시성 런타임에 의해 정의되는 많은 형식 및 알고리즘은 C++ 템플릿으로 구현됩니다. 이러한 형식 및 알고리즘의 일부는 작업을 수행하는 루틴을 매개 변수로 사용합니다. 이러한 매개 변수는 람다 함수, 함수 개체 또는 함수 포인터일 수 있습니다. 이러한 엔터티를 *작업 함수* 또는 *작업 루틴이*라고도 합니다.
+동시성 런타임에 의해 정의되는 많은 형식 및 알고리즘은 C++ 템플릿으로 구현됩니다. 이러한 형식 및 알고리즘의 일부는 작업을 수행하는 루틴을 매개 변수로 사용합니다. 이러한 매개 변수는 람다 함수, 함수 개체 또는 함수 포인터일 수 있습니다. 이러한 엔터티를 *작업 함수* 또는 *작업 루틴이* 라고도 합니다.
 
 람다 식은 중요한 새 Visual C++ 언어 기능으로 병렬 처리를 위한 작업 함수를 정의하는 간단한 방법을 제공합니다. 함수 개체 및 함수 포인터를 사용하면 기존 코드에서 동시성 런타임을 사용할 수 있습니다. 그러나 제공되는 안전성 및 생산성 이점으로 인해 새 코드를 작성하는 경우에는 람다 식을 사용하는 것이 좋습니다.
 
@@ -138,7 +139,7 @@ C + +의 람다 함수에 대 한 자세한 내용은 [람다 식](../../cpp/lam
 |작업 Scheduler|concrt.h|
 |리소스 관리자|concrtrm.h|
 
-[동시성](../../parallel/concrt/reference/concurrency-namespace.md) 네임 스페이스에 동시성 런타임 선언 됩니다. 이 네임 스페이스의 별칭인 [concurrency](../../parallel/concrt/reference/concurrency-namespace.md)를 사용할 수도 있습니다. `concurrency::details`네임 스페이스는 동시성 런타임 프레임 워크를 지원 하며 사용자 코드에서 직접 사용 하기 위한 것이 아닙니다.
+[동시성](../../parallel/concrt/reference/concurrency-namespace.md) 네임 스페이스에 동시성 런타임 선언 됩니다. 이 네임 스페이스의 별칭인 [concurrency](../../parallel/concrt/reference/concurrency-namespace.md)를 사용할 수도 있습니다. `concurrency::details` 네임 스페이스는 동시성 런타임 프레임 워크를 지원 하며 사용자 코드에서 직접 사용 하기 위한 것이 아닙니다.
 
 동시성 런타임은 CRT(C 런타임 라이브러리)의 일부로 제공됩니다. CRT를 사용 하는 응용 프로그램을 빌드하는 방법에 대 한 자세한 내용은 [Crt 라이브러리 기능](../../c-runtime-library/crt-library-features.md)을 참조 하세요.
 

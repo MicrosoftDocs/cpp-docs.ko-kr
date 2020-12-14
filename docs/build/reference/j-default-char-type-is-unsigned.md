@@ -1,4 +1,5 @@
-﻿---
+---
+description: 자세한 정보:/J (부호 없는 기본 문자 형식)
 title: /J(부호 없는 기본 문자 형식)
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - J compiler option [C++]
 - default char type is unsigned
 ms.assetid: 50973667-6638-491e-9c41-bff73acae19f
-ms.openlocfilehash: d95fed3d9af81d89ac03a52a1e6433786118430e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0e6f09a05925fd0248f1e777d578570cd7b44946
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223839"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97191227"
 ---
 # <a name="j-default-char-type-is-unsigned"></a>/J(부호 없는 기본 문자 형식)
 
@@ -32,7 +33,7 @@ ms.locfileid: "87223839"
 
 ## <a name="remarks"></a>설명
 
-**`char`** 값이 명시적으로로 선언 된 경우/j 옵션은이 값에 영향을 주지 않으며, **`signed`** 값은 형식으로 확장 될 때 부호가 확장 **/J** 됩니다 **`int`** .
+**`char`** 값이 명시적으로로 선언 된 경우/j 옵션은이 값에 영향을 주지 않으며, **`signed`** 값은 형식으로 확장 될 때 부호가 확장  됩니다 **`int`** .
 
 **/J** 옵션은 `_CHAR_UNSIGNED` `#ifndef` 기본 형식의 범위를 정의 하기 위해 LIMITS 파일의와 함께 사용 되는을 정의 합니다. **`char`**
 
@@ -43,9 +44,9 @@ ANSI C 및 c + +에는 특정 형식의 구현이 필요 하지 않습니다 **`
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. **솔루션 탐색기**에서 프로젝트의 바로 가기 메뉴를 열고 **속성**을 선택합니다.
+1. **솔루션 탐색기** 에서 프로젝트의 바로 가기 메뉴를 열고 **속성** 을 선택합니다.
 
-1. 프로젝트 **속성 페이지** 대화 상자의 **구성 속성**아래에 있는 왼쪽 창에서 **C/c + +** 를 확장 하 고 **명령줄**을 선택 합니다.
+1. 프로젝트 **속성 페이지** 대화 상자의 **구성 속성** 아래에 있는 왼쪽 창에서 **C/c + +** 를 확장 하 고 **명령줄** 을 선택 합니다.
 
 1. **추가 옵션** 창에서 **/j** 컴파일러 옵션을 지정 합니다.
 
@@ -56,6 +57,5 @@ ANSI C 및 c + +에는 특정 형식의 구현이 필요 하지 않습니다 **`
 ## <a name="see-also"></a>참고 항목
 
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
-[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)<br/>
+[MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)<br/>
 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)
-

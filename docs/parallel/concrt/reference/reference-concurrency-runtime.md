@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 참조 (동시성 런타임)'
 title: 참조(동시성 런타임)
 ms.date: 11/04/2016
 f1_keywords:
@@ -452,25 +453,25 @@ helpviewer_keywords:
 - LPSECURITY_ATTRIBUTES typedef
 - HRESULT typedef
 ms.assetid: a057c776-7caa-4605-8f33-9815cf6f9b27
-ms.openlocfilehash: e1ae4616400069b44e23e30e3df69aae6dec6592
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: f5d07f856c37417da1ceddbbefa772b2e7f11fff
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79446285"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97188926"
 ---
 # <a name="reference-concurrency-runtime"></a>참조(동시성 런타임)
 
-이 섹션에서는 동시성 런타임에 대한 참조 정보를 포함합니다.
+이 섹션에는 동시성 런타임에 대 한 참조 정보가 포함 되어 있습니다.
 
 > [!Note]
-> C++ 언어 표준에서는 라이브러리와 같은 구현을 위해 밑줄(_) 문자로 시작하는 식별자의 사용이 예약됩니다. 코드에서는 이러한 이름을 사용하지 마세요. 해당 이름이 이 규칙을 따르는 코드 요소의 동작은 보장되지 않으며 이후 릴리스에서 변경될 수 있습니다. 이러한 이유로, 동시성 런타임에서 설명서에서 해당 코드 요소가 생략됩니다.
+> C + + 언어 표준에는 라이브러리와 같은 구현을 위해 밑줄 (_) 문자로 시작 하는 식별자의 사용이 예약 되어 있습니다. 코드에서는 이러한 이름을 사용하지 마세요. 해당 이름이 이 규칙을 따르는 코드 요소의 동작은 보장되지 않으며 이후 릴리스에서 변경될 수 있습니다. 이러한 이유로 이러한 코드 요소는 동시성 런타임 설명서에서 생략 됩니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 
-[concurrency 네임스페이스](concurrency-namespace.md)<br/>
-동시성 네임스페이스는 클래스 및 함수를 제공하여 C++를 위한 동시성 프로그래밍 프레임워크인 동시성 런타임에서 대한 액세스를 제공합니다. 자세한 내용은 [동시성 런타임](../concurrency-runtime.md)을 참조하세요.
+[concurrency 네임 스페이스](concurrency-namespace.md)<br/>
+Concurrency 네임 스페이스는 c + + 용 동시 프로그래밍 프레임 워크인 동시성 런타임에 대 한 액세스 권한을 제공 하는 클래스와 함수를 제공 합니다. 자세한 내용은 [Concurrency Runtime](../concurrency-runtime.md)을 참조하세요.
 
-[std 네임 스페이스](std-namespace.md)
+[std 네임스페이스](std-namespace.md)
 
-[stdx 네임 스페이스](stdx-namespace.md)
+[stdx 네임스페이스](stdx-namespace.md)

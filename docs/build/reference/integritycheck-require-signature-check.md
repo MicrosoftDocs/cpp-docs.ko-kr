@@ -1,13 +1,14 @@
 ---
+description: 다음에 대 한 자세한 정보:/INTEGRITYCHECK (서명 확인 필요)
 title: /INTEGRITYCHECK(시그니처 확인 필요)
 ms.date: 11/04/2016
 ms.assetid: 9e738825-2c98-40cd-8ad2-5d0d9c14893e
-ms.openlocfilehash: 1732c612501b66753635b272f94764975c555f75
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 650b5d6ae121a5e776f16797a869dfa15f443bf1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69492841"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97191266"
 ---
 # <a name="integritycheck-require-signature-check"></a>/INTEGRITYCHECK(시그니처 확인 필요)
 
@@ -25,17 +26,17 @@ ms.locfileid: "69492841"
 
 ### <a name="to-set-this-linker-option-in-visual-studio"></a>Visual Studio에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
+1. 프로젝트 **속성 페이지** 대화 상자를 엽니다. 자세한 정보는 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조하세요.
 
 1. **구성 속성** 노드를 확장합니다.
 
 1. **링커** 노드를 확장합니다.
 
-1. **명령줄** 속성 페이지를 선택합니다.
+1. **명령줄** 속성 페이지를 선택 합니다.
 
-1. **추가 옵션**에서 또는 `/INTEGRITYCHECK:NO`를 `/INTEGRITYCHECK` 입력 합니다.
+1. **추가 옵션** 에서 또는를 `/INTEGRITYCHECK` 입력 `/INTEGRITYCHECK:NO` 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [MSVC 링커 참조](linking.md)<br/>
 [MSVC 링커 옵션](linker-options.md)<br/>
