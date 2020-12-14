@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 전위 증가 및 감소 연산자: + + 및--'
 title: '접두사 증가 및 감소 연산자: ++ 및 --'
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - decrement operators [C++], syntax
 - decrement operators [C++]
 ms.assetid: 45ea7fc7-f279-4be9-a216-1d9a0ef9eb7b
-ms.openlocfilehash: 0b84360f41c665707a03ad453909c054ac741405
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e484dde59a2bb58e7c408ad28242fc0ab4290051
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231158"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97198644"
 ---
 # <a name="prefix-increment-and-decrement-operators--and---"></a>접두사 증가 및 감소 연산자: ++ 및 --
 
@@ -54,7 +55,7 @@ int main() {
 
 정수 계열 또는 부동 형식의 피연산자는 정수 값 1만큼 증가하거나 감소합니다. 결과 형식은 피연산자 형식과 동일합니다. 포인터 형식의 피연산자는 자신이 처리하는 개체의 크기만큼 증가하거나 감소합니다. 증가한 포인터는 다음 개체를 가리키고, 감소한 포인터는 이전 개체를 가리킵니다.
 
-증가 및 감소 연산자에 부작용이 있으므로 [전처리기 매크로](../preprocessor/macros-c-cpp.md) 에서 증가 또는 감소 연산자가 있는 식을 사용 하면 바람직하지 않은 결과가 발생할 수 있습니다. 다음 예를 살펴보세요.
+증가 및 감소 연산자에 부작용이 있으므로 [전처리기 매크로](../preprocessor/macros-c-cpp.md) 에서 증가 또는 감소 연산자가 있는 식을 사용 하면 바람직하지 않은 결과가 발생할 수 있습니다. 다음 예제를 고려해 보세요.
 
 ```cpp
 // expre_Increment_and_Decrement_Operators2.cpp

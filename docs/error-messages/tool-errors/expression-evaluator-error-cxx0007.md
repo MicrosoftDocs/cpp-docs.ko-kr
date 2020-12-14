@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 식 계산기 오류 CXX0007'
 title: 식 계산기 오류 CXX0007
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - CXX0007
 - CAN0007
 ms.assetid: 270a6d2d-ea6b-4a94-9871-841a6a133292
-ms.openlocfilehash: b4c2ce8812c7eb8be1b4eb9fd47267db5e6f20f1
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d27f40b08b20cda32829ea2dc64a585c0596877e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80196289"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97197935"
 ---
 # <a name="expression-evaluator-error-cxx0007"></a>식 계산기 오류 CXX0007
 

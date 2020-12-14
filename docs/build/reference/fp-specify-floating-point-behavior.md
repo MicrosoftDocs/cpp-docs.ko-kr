@@ -1,4 +1,5 @@
 ---
+description: 자세한 정보:/fp (부동 소수점 동작 지정)
 title: /fp(부동 소수점 동작 지정)
 ms.date: 11/09/2018
 f1_keywords:
@@ -11,20 +12,20 @@ helpviewer_keywords:
 - -fp compiler option [C++]
 - /fp compiler option [C++]
 ms.assetid: 10469d6b-e68b-4268-8075-d073f4f5d57e
-ms.openlocfilehash: 7a8ae885bbbf00ae916505bf5df646b32268a17a
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 5d57bae24af9cd415a2dcfde073e276f51ce3ea3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040914"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200444"
 ---
 # <a name="fp-specify-floating-point-behavior"></a>/fp(부동 소수점 동작 지정)
 
 컴파일러가 부동 소수점 식, 최적화 및 예외를 처리 하는 방법을 지정 합니다. **/Fp** 옵션은 생성 된 코드에서 부동 소수점 환경에서 반올림 모드, 예외 마스크 및 subnormal 동작을 변경할 수 있는지 여부와 부동 소수점 상태 검사에서 현재의 정확한 결과를 반환할지 여부를 지정 합니다. 이 클래스는 컴파일러가 소스 작업 및 식 순서를 유지 관리 하 고 NaN 전파를 위한 표준을 준수 하는 코드를 생성할지 여부를 제어 하거나, 작업의 순서를 변경 하거나 결합 하 고 표준에서 허용 되지 않는 대 수 변환을 간소화 하는 데 사용할 수 있는 보다 효율적인 코드를 생성 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
-> **/fp:**[**정확한**  |  **strict**  |  **fast**  |  **except**([ **-** ]] 제외)
+> **/fp:**[**정확한**  |  **strict**  |  **fast**  |  ([ **-** ]] 제외)
 
 ### <a name="arguments"></a>인수
 
@@ -69,7 +70,7 @@ ms.locfileid: "90040914"
 
 [/Za](za-ze-disable-language-extensions.md) (ANSI 호환성) 옵션은와 호환 되지 않습니다 `/fp` .
 
-### <a name="using-compiler-directives-to-control-floating-point-behavior"></a>컴파일러 지시문을 사용 하 여 부동 소수점 동작 제어
+### <a name="using-compiler-directives-to-control-floating-point-behavior"></a>컴파일러 지시문을 사용 하 여 Floating-Point 동작 제어
 
 컴파일러는 명령줄에 지정 된 부동 소수점 동작 [float_control](../../preprocessor/float-control.md), [fenv_access](../../preprocessor/fenv-access.md)및 [fp_contract](../../preprocessor/fp-contract.md)를 재정의 하는 세 가지 pragma 지시문을 제공 합니다. 이러한 지시문을 사용 하 여 함수 내에서가 아니라 함수 수준에서 부동 소수점 동작을 제어할 수 있습니다. 이러한 지시문은 옵션과 직접 일치 하지 않습니다 `/fp` . 다음 표에서는 `/fp` options 및 pragma 지시문이 서로 매핑되는 방법을 보여 줍니다. 자세한 내용은 개별 옵션 및 pragma 지시문에 대 한 설명서를 참조 하세요.
 
@@ -269,4 +270,4 @@ float casting(float a, float b)
 ## <a name="see-also"></a>참고 항목
 
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
-[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)<br/>
+[MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)<br/>

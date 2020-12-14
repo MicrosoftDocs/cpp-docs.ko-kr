@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: Visual C++ 문서 태그에 대 한 구분 기호'
 title: Visual C++ 문서 태그의 구분 기호
 ms.date: 11/04/2016
 helpviewer_keywords:
 - XML documentation, delimiters
 ms.assetid: debfbdd9-63fa-4c58-a18e-a4d203d241d7
-ms.openlocfilehash: e8e312eacb46d82270d7ca1782b04d06012b207d
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 7878fa0454af9eb09c4aa537a3e59d8af4a3ee87
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041538"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97201471"
 ---
 # <a name="delimiters-for-visual-c-documentation-tags"></a>Visual C++ 문서 태그의 구분 기호
 

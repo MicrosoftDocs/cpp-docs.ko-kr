@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2927'
 title: 컴파일러 오류 C2927
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2927
 ms.assetid: 3f75beec-ff5c-44e1-9085-990ecd55198d
-ms.openlocfilehash: 8f7c9ecdc178e98881d519c343372e99f7f03128
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 8e0f6bf2ddd2ed7d1e97e40202b27d22a1d78731
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80176952"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97198351"
 ---
 # <a name="compiler-error-c2927"></a>컴파일러 오류 C2927
 

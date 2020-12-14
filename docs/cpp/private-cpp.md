@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: private (c + +)'
 title: private (C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - private keyword [C++]
 ms.assetid: 94e99983-46a5-4e21-800c-28f8a7c6a8ff
-ms.openlocfilehash: 3b9df2ee2abcaca1c7c11c08ef73ae795a84310d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f9060dbbe32662a62fcda84b628877b52d87bdfc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232250"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97198624"
 ---
 # <a name="private-c"></a>private (C++)
 
@@ -84,4 +85,4 @@ int main() {
 ## <a name="see-also"></a>참고 항목
 
 [클래스 멤버에 대한 액세스 제어](member-access-control-cpp.md)<br/>
-[C++ 키워드](../cpp/keywords-cpp.md)
+[키워드](../cpp/keywords-cpp.md)

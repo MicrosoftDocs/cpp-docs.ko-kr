@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: RaiseException 함수'
 title: RaiseException 함수
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - RaiseException function
 ms.assetid: f9c74f6d-112a-4d2e-900f-622f795d5dbf
-ms.openlocfilehash: 3270057bf5b1b27a98bef1ab236291eab15d27ab
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: b5353757ff04ab12c0fc61da6b2e98b2df835ef0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213631"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97198442"
 ---
 # <a name="raiseexception-function"></a>RaiseException 함수
 
@@ -28,17 +29,17 @@ inline void __declspec(noreturn)   RaiseException(
 
 ### <a name="parameters"></a>매개 변수
 
-*hr*<br/>
+*시간*<br/>
 발생 하는 예외의 예외 코드입니다. 즉, 실패 한 작업의 HRESULT입니다.
 
 *dwExceptionFlags*<br/>
 비연속적 예외 (플래그 값이 0)를 나타내는 플래그 이거나, 계속할 수 없는 exception (플래그 값이 0이 아닌 경우)입니다. 기본적으로 예외는 계속할 수 없는입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 호출 스레드에서 예외를 발생 시킵니다.
 
-자세한 내용은 Windows `RaiseException` 함수를 참조 하세요.
+자세한 내용은 Windows 함수를 참조 하세요 `RaiseException` .
 
 ## <a name="requirements"></a>요구 사항
 
@@ -48,4 +49,4 @@ inline void __declspec(noreturn)   RaiseException(
 
 ## <a name="see-also"></a>참고 항목
 
-[Microsoft::WRL::Details 네임스페이스](microsoft-wrl-details-namespace.md)
+[Microsoft:: WRL::D etails 네임 스페이스](microsoft-wrl-details-namespace.md)

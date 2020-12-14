@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4821'
 title: 컴파일러 경고(수준 1) C4821
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4821
 ms.assetid: c7768e77-0ee5-491e-8aa4-3915bf5bcbdf
-ms.openlocfilehash: 4d679f352ca51564292d3db91ddf55a6b4f14b6e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 83d78be0b2d51399fb053946729cfdc26d382290
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80199422"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97198065"
 ---
 # <a name="compiler-warning-level-1-c4821"></a>컴파일러 경고(수준 1) C4821
 

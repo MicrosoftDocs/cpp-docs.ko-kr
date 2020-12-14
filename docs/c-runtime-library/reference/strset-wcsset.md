@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: strset, wcsset'
 title: strset, wcsset
 ms.date: 11/04/2016
 api_name:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - wcsset function
 - strset function
 ms.assetid: 20e132d8-4b6c-4341-b1eb-8e19b46047e2
-ms.openlocfilehash: 399f046d295c040c166ff7f7c1b5563e14976838
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 5c5957e1d03007fe5fad5be5f8cfb8d36dc70df6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80170126"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97198780"
 ---
 # <a name="strset-wcsset"></a>strset, wcsset
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 활성화 (c + +)'
 title: 활성화(C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - activation [MFC], embedded OLE items
 - OLE activation [MFC]
 ms.assetid: ed8357d9-e487-4aaa-aa6b-2edc4de25dfa
-ms.openlocfilehash: 47640a59180348bd3513013b65029a775545e211
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 726c64344f684c8ca9e79d9296daea80882af08f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619179"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97197726"
 ---
 # <a name="activation-c"></a>활성화(C++)
 
@@ -31,7 +32,7 @@ ms.locfileid: "84619179"
 
 별도의 창에서 포함 된 OLE 항목을 편집할 수도 있습니다. 이는 컨테이너 또는 서버 응용 프로그램에서 내부 활성화를 지원 하지 않는 경우에 발생 합니다. 이 경우 사용자가 포함 된 항목을 두 번 클릭 하면 서버 응용 프로그램이 별도의 창에서 시작 되 고 포함 된 항목이 자체 문서로 표시 됩니다. 사용자가이 창의 항목을 편집 합니다. 편집이 완료 되 면 사용자가 서버 응용 프로그램을 닫고 컨테이너 응용 프로그램으로 돌아갑니다.
 
-사용자가 **편집** 메뉴에서 ** \<object> 열기** 명령을 사용 하 여 "편집 열기"를 선택할 수도 있습니다. 이렇게 하면 개체가 별도의 창에서 열립니다.
+사용자가 **편집** 메뉴에서 **\<object> 열기** 명령을 사용 하 여 "편집 열기"를 선택할 수도 있습니다. 이렇게 하면 개체가 별도의 창에서 열립니다.
 
 > [!NOTE]
 > 별도의 창에 포함 된 항목을 편집 하는 것은 OLE 버전 1에서 표준 동작 이었습니다. 일부 OLE 응용 프로그램은이 스타일의 편집만 지원할 수 있습니다.

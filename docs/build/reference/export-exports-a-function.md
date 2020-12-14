@@ -1,4 +1,5 @@
 ---
+description: 자세히 알아보기:/EXPORT (함수 내보내기)
 title: /EXPORT(함수 내보내기)
 ms.date: 09/05/2018
 f1_keywords:
@@ -9,26 +10,26 @@ helpviewer_keywords:
 - EXPORT linker option
 - -EXPORT linker option
 ms.assetid: 0920fb44-a472-4091-a8e6-73051f494ca0
-ms.openlocfilehash: a55b2a4ce72de644fe426894ab389f62bd29b204
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a52ea79d0569d31c26eabd06d51ef58a10567119
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232692"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200808"
 ---
 # <a name="export-exports-a-function"></a>/EXPORT(함수 내보내기)
 
 프로그램에서 이름 또는 서 수 또는 데이터를 기준으로 함수를 내보냅니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
-> **/Export:**<em>entryname</em>[**, \@ **<em>ordinal</em>[**, NONAME**]] [**, DATA**]
+> **/Export:**<em>entryname</em>[**, \@**<em>ordinal</em>[**, NONAME**]] [**, DATA**]
 
 ## <a name="remarks"></a>설명
 
 **/Export** 옵션은 다른 프로그램에서 함수를 호출 하거나 데이터를 사용할 수 있도록 프로그램에서 내보낼 함수 또는 데이터 항목을 지정 합니다. 내보내기는 일반적으로 DLL에 정의 됩니다.
 
-*Entryname* 은 호출 프로그램에서 사용할 함수 또는 데이터 항목의 이름입니다. *서 수* 는 1에서 65535 사이의 내보내기 테이블에 인덱스를 지정 합니다. *서 수*를 지정 하지 않으면 LINK에서 1을 할당 합니다. **NONAME** 키워드는 *entryname*없이 서 수로만 함수를 내보냅니다.
+*Entryname* 은 호출 프로그램에서 사용할 함수 또는 데이터 항목의 이름입니다. *서 수* 는 1에서 65535 사이의 내보내기 테이블에 인덱스를 지정 합니다. *서 수* 를 지정 하지 않으면 LINK에서 1을 할당 합니다. **NONAME** 키워드는 *entryname* 없이 서 수로만 함수를 내보냅니다.
 
 **Data** 키워드는 내보낸 항목이 데이터 항목 임을 지정 합니다. 클라이언트 프로그램의 데이터 항목은 **dllimport (extern __declspec)** 를 사용 하 여 선언 해야 합니다.
 
@@ -60,7 +61,7 @@ BOOL CALLBACK PlainFuncName( Things * lpParams)
 
 1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. **구성 속성**  >  **링커**  >  **명령줄** 속성 페이지를 선택 합니다.
+1. **구성 속성** > **링커** > **명령줄** 속성 페이지를 선택합니다.
 
 1. **추가 옵션** 상자에 옵션을 입력 합니다.
 

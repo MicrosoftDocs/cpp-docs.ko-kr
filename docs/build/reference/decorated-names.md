@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 데코레이팅된 이름'
 title: 데코레이팅된 이름
 ms.date: 09/05/2018
 helpviewer_keywords:
@@ -6,16 +7,16 @@ helpviewer_keywords:
 - name decoration [C++]
 - names [C++], decorated
 ms.assetid: a4e9ae8e-b239-4454-b401-4102793cb344
-ms.openlocfilehash: 0cda21b1650fa660175248c15560a7ab0b251d07
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 65135b4f5b85cfae7a25513763b998d304e79a0c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504242"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97201718"
 ---
 # <a name="decorated-names"></a>데코레이팅된 이름
 
-C 및 C++ 프로그램의 함수, 데이터 및 개체는 내부적으로 데코레이트된 이름으로 표시됩니다. *데코레이팅된 이름은* 개체, 데이터 또는 함수 정의를 컴파일하는 동안 컴파일러에서 만든 인코딩된 문자열입니다. 호출 규칙, 형식, 함수 매개 변수 및 기타 정보를 이름과 함께 기록합니다. *이름*변환이 라고도 하는이 이름 데코레이션은 링커에서 실행 파일을 연결할 때 올바른 함수 및 개체를 찾는 데 도움이 됩니다.
+C 및 C++ 프로그램의 함수, 데이터 및 개체는 내부적으로 데코레이트된 이름으로 표시됩니다. *데코레이팅된 이름은* 개체, 데이터 또는 함수 정의를 컴파일하는 동안 컴파일러에서 만든 인코딩된 문자열입니다. 호출 규칙, 형식, 함수 매개 변수 및 기타 정보를 이름과 함께 기록합니다. *이름* 변환이 라고도 하는이 이름 데코레이션은 링커에서 실행 파일을 연결할 때 올바른 함수 및 개체를 찾는 데 도움이 됩니다.
 
 데코레이팅된 명명 규칙은 다양 한 버전의 Visual Studio에서 변경 되었으며 대상 아키텍처 마다 다를 수 있습니다. Visual Studio를 사용 하 여 만든 소스 파일에 올바르게 연결 하려면 동일한 컴파일러 도구 집합, 플래그 및 대상 아키텍처를 사용 하 여 C 및 c + + Dll 및 라이브러리를 컴파일해야 합니다.
 

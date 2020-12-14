@@ -1,5 +1,6 @@
 ---
-title: Visual Studio C++ 프로젝트용으로 생성 되는 파일 형식
+description: '자세한 정보: Visual Studio c + + 프로젝트용으로 만들어지는 파일 형식'
+title: Visual Studio C++ 프로젝트용으로 만든 파일 형식
 ms.date: 04/08/2019
 helpviewer_keywords:
 - header files [C++], Visual Studio projects
@@ -14,14 +15,14 @@ helpviewer_keywords:
 - .def files
 - licensing ActiveX controls
 ms.assetid: 2b0ee2e0-ae81-4185-9bb9-11da3c99a283
-ms.openlocfilehash: 27e15f8dec693c6b7e70f3e03f274dcbc4f04677
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: bd1dad365ea2635549322c886f00f4e08ff47942
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80169021"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200587"
 ---
-# <a name="file-types-created-for-visual-studio-c-projects"></a>Visual Studio C++ 프로젝트용으로 생성 되는 파일 형식
+# <a name="file-types-created-for-visual-studio-c-projects"></a>Visual Studio c + + 프로젝트용으로 만들어지는 파일 형식
 
 많은 형식의 파일이 클래식 데스크톱 응용 프로그램의 Visual Studio 프로젝트와 연결 되어 있습니다. 프로젝트 형식 및 마법사에서 선택한 옵션에 따라 프로젝트에 포함되는 실제 파일이 달라집니다.
 
@@ -47,7 +48,7 @@ Visual Studio 프로젝트를 만들 때 새 솔루션에서 프로젝트를 만
 
 다음 표에서는 Visual Studio 프로젝트의 공통 파일을 보여 주고 파일 확장명을 사용 하 여 해당 파일을 식별 합니다.
 
-|파일 확장명|Type|콘텐츠|
+|파일 확장명|형식|콘텐츠|
 |--------------------|----------|--------------|
 |.asmx|원본|배포 파일|
 |.asp|원본|Active Server Page 파일|
@@ -72,8 +73,8 @@ Visual Studio 프로젝트를 만들 때 새 솔루션에서 프로젝트를 만
 |.pch|디버그|미리 컴파일된 헤더 파일|
 |.rc, .rc2|리소스|리소스를 생성하는[리소스 스크립트 파일](../../windows/working-with-resource-files.md)|
 |.sbr|컴파일|소스 브라우저 중간 파일. [BSCMAKE](bscmake-options.md)의 입력 파일입니다.|
-|.sln|해결 방법|[솔루션](/visualstudio/ide/solutions-and-projects-in-visual-studio) 파일입니다.|
-|.suo|해결 방법|솔루션 옵션 파일입니다.|
+|.sln|해결 방법|[솔루션](/visualstudio/ide/solutions-and-projects-in-visual-studio) 파일|
+|.suo|해결 방법|솔루션 옵션 파일|
 |.txt|리소스|텍스트 파일(일반적으로 "추가 정보" 파일)|
 |.vap|Project|Visual Studio Analyzer 프로젝트 파일|
 |.vbg|해결 방법|호환 가능한 프로젝트 그룹 파일|
@@ -93,5 +94,5 @@ Visual Studio와 관련된 다른 파일에 대한 자세한 내용은 [Visual S
 
 ## <a name="see-also"></a>참고 항목
 
-[Visual Studio C++ 프로젝트 만들기 및 관리](../creating-and-managing-visual-cpp-projects.md)<br>
-[Visual Studio C++ 프로젝트 형식](visual-cpp-project-types.md)<br>
+[Visual Studio c + + 프로젝트 만들기 및 관리](../creating-and-managing-visual-cpp-projects.md)<br>
+[Visual Studio c + + 프로젝트 형식](visual-cpp-project-types.md)<br>

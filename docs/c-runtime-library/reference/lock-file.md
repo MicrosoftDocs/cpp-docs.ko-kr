@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _lock_file'
 title: _lock_file
 ms.date: 4/2/2020
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - _lock_file function
 - lock_file function
 ms.assetid: 75c7e0e6-efff-4747-b6ed-9bcf2b0894c3
-ms.openlocfilehash: e4f99203d5330a44b89239911e4a035a7958bf0b
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 1eba161b5083235c1ef0724284e74e6f0f7df0cd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911534"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97198832"
 ---
 # <a name="_lock_file"></a>_lock_file
 
@@ -48,12 +49,12 @@ void _lock_file( FILE* file );
 
 ### <a name="parameters"></a>매개 변수
 
-*파일과*<br/>
+*file*<br/>
 파일 핸들입니다.
 
 ## <a name="remarks"></a>설명
 
-**_Lock_file** 함수는 *file*에서 지정 된 **파일** 개체를 잠급니다. 기본 파일이 **_lock_file**에 의해 잠겨 있지 않습니다. 파일에 대한 잠금을 해제하려면 [_unlock_file](unlock-file.md)을 사용합니다. **_Lock_file** 및 **_unlock_file** 에 대 한 호출은 스레드에서 일치 해야 합니다.
+**_Lock_file** 함수는 *file* 에서 지정 된 **파일** 개체를 잠급니다. 기본 파일이 **_lock_file** 에 의해 잠겨 있지 않습니다. 파일에 대한 잠금을 해제하려면 [_unlock_file](unlock-file.md)을 사용합니다. **_Lock_file** 및 **_unlock_file** 에 대 한 호출은 스레드에서 일치 해야 합니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -140,7 +141,7 @@ tS
 eFciornsdt
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [파일 처리](../../c-runtime-library/file-handling.md)<br/>
 [_creat, _wcreat](creat-wcreat.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: strspn, wcsspn, _mbsspn, _mbsspn_l'
 title: strspn, wcsspn, _mbsspn, _mbsspn_l
 ms.date: 4/2/2020
 api_name:
@@ -47,12 +48,12 @@ helpviewer_keywords:
 - mbsspn_l function
 - _tcsspn function
 ms.assetid: d077284a-809f-4068-959e-c6d6262677eb
-ms.openlocfilehash: b63ca5f7d22b6522ca3e3c58ea5486d612b671ae
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 366e6f306c119ae7bc712fb3a97db6fbe210b5a2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911098"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97198845"
 ---
 # <a name="strspn-wcsspn-_mbsspn-_mbsspn_l"></a>strspn, wcsspn, _mbsspn, _mbsspn_l
 
@@ -85,7 +86,7 @@ size_t _mbsspn_l(
 
 ### <a name="parameters"></a>매개 변수
 
-*문자열*<br/>
+*str*<br/>
 검색할 Null 종료 문자열입니다.
 
 *strCharSet*<br/>
@@ -94,15 +95,15 @@ Null 종료 문자 집합입니다.
 *locale*<br/>
 사용할 로캘입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-*Strcharset*의 문자로 완전히 구성 된 *str* 의 부분 문자열 길이를 지정 하는 정수 값을 반환 합니다. *Str* 이 *strcharset*에 없는 문자로 시작 하는 경우 함수는 0을 반환 합니다.
+*Strcharset* 의 문자로 완전히 구성 된 *str* 의 부분 문자열 길이를 지정 하는 정수 값을 반환 합니다. *Str* 이 *strcharset* 에 없는 문자로 시작 하는 경우 함수는 0을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-**Strspn** 함수는 *strspn*의 문자 집합에 속하지 않는 *str* 의 첫 번째 문자 인덱스를 반환 합니다. 종료 null 문자는 검색에 포함되지 않습니다.
+**Strspn** 함수는 *strspn* 의 문자 집합에 속하지 않는 *str* 의 첫 번째 문자 인덱스를 반환 합니다. 종료 null 문자는 검색에 포함되지 않습니다.
 
-**wcsspn** 및 **_mbsspn** 는 **strspn**의 와이드 문자 및 멀티 바이트 문자 버전입니다. **Wcsspn** 의 인수는 와이드 문자 문자열입니다. **_mbsspn** 의 이러한 문자열은 멀티 바이트 문자열입니다. **_mbsspn** 은 해당 매개 변수의 유효성을 검사 합니다. *Str* 또는 *Strcharset* 이 **NULL**인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우에는 **_mbspn** **errno** 를 **EINVAL** 로 설정 하 고 0을 반환 합니다. **strspn** 및 **wcsspn** 은 매개 변수의 유효성을 검사 하지 않습니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
+**wcsspn** 및 **_mbsspn** 는 **strspn** 의 와이드 문자 및 멀티 바이트 문자 버전입니다. **Wcsspn** 의 인수는 와이드 문자 문자열입니다. **_mbsspn** 의 이러한 문자열은 멀티 바이트 문자열입니다. **_mbsspn** 은 해당 매개 변수의 유효성을 검사 합니다. *Str* 또는 *Strcharset* 이 **NULL** 인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우에는 **_mbspn** **errno** 를 **EINVAL** 로 설정 하 고 0을 반환 합니다. **strspn** 및 **wcsspn** 은 매개 변수의 유효성을 검사 하지 않습니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
 
 출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_l** 접미사가 없는 이러한 함수 버전은 이 로캘 종속 동작에 현재 로캘을 사용하며, **_l** 접미사가 있는 버전은 전달된 로캘 매개 변수를 대신 사용하는 경우를 제외하고는 동일합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
@@ -152,11 +153,11 @@ int main( void )
 The portion of 'cabbage' containing only a, b, or c is 5 bytes long
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [문자열 조작](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[멀티 바이트 문자 시퀀스 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[로캘](../../c-runtime-library/locale.md)<br/>
+[Multibyte-Character 시퀀스의 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_strspnp, _wcsspnp, _mbsspnp, _mbsspnp_l](strspnp-wcsspnp-mbsspnp-mbsspnp-l.md)<br/>
 [strcspn, wcscspn, _mbscspn, _mbscspn_l](strcspn-wcscspn-mbscspn-mbscspn-l.md)<br/>
 [strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)<br/>

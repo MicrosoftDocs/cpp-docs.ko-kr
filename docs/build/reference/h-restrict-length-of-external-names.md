@@ -1,4 +1,5 @@
 ---
+description: 다음에 대 한 자세한 정보:/H (외부 이름 길이 제한)
 title: /H(외부 이름 길이 제한)
 ms.date: 09/05/2018
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - external names
 - -H compiler option [C++]
 ms.assetid: de701dd3-ed04-4c88-8195-960d2520ec2e
-ms.openlocfilehash: 9a8976700cfb0f333c2715c573aa2d239e2a8e3a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5df4c4765cc4917e6914eab0b4818c34fceea853
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218990"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200080"
 ---
 # <a name="h-restrict-length-of-external-names"></a>/H(외부 이름 길이 제한)
 
 더 이상 사용되지 않습니다. 외부 이름의 길이를 제한 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **/H**<em>번호</em>
 
@@ -34,7 +35,7 @@ ms.locfileid: "87218990"
 
 기본적으로 외부 (공용) 이름의 길이는 2047 자입니다. 이는 C 및 c + + 프로그램에 적용 됩니다. **/H** 를 사용 하면 식별자의 허용 되는 최대 길이만 줄일 수 있고 증가 하지는 않습니다. **/H** 와 *number* 사이의 공백은 선택 사항입니다.
 
-프로그램에 *number*보다 긴 외부 이름이 포함 된 경우 추가 문자는 무시 됩니다. **/H** 를 사용 하지 않고 프로그램을 컴파일하는 경우 및 식별자에 2047 자 이상이 포함 되어 있으면 컴파일러는 [심각한 오류 C1064](../../error-messages/compiler-errors-1/fatal-error-c1064.md)를 생성 합니다.
+프로그램에 *number* 보다 긴 외부 이름이 포함 된 경우 추가 문자는 무시 됩니다. **/H** 를 사용 하지 않고 프로그램을 컴파일하는 경우 및 식별자에 2047 자 이상이 포함 되어 있으면 컴파일러는 [심각한 오류 C1064](../../error-messages/compiler-errors-1/fatal-error-c1064.md)를 생성 합니다.
 
 길이 제한에는 컴파일러에서 생성 된 선행 밑줄 ( **\_** ) 또는 기호 ()가 포함 됩니다 **\@** . 이러한 문자는 식별자의 일부 이며 중요 한 위치를 사용 합니다.
 
@@ -87,4 +88,4 @@ void func2(void) {}
 ## <a name="see-also"></a>참고 항목
 
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
-[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)
+[MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)

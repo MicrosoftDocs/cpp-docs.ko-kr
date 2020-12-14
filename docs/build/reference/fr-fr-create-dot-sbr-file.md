@@ -1,4 +1,5 @@
-﻿---
+---
+description: 자세히 알아보기:/FR,/Fr (Create. .Sbr 파일)
 title: /FR, /Fr(.Sbr 파일 만들기)
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - FR compiler option [C++]
 - symbolic browser information
 ms.assetid: 3fd8f88b-3924-4feb-9393-287036a28896
-ms.openlocfilehash: 58f55811f5d2bb81bc77da38a87c35bae91ce6cb
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 9142e7afedb55a7b0f4ed0cdb56e4288524d7afc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81320514"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200418"
 ---
 # <a name="fr-fr-create-sbr-file"></a>/FR, /Fr(.Sbr 파일 만들기)
 
@@ -51,7 +52,7 @@ ms.locfileid: "81320514"
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. 탐색 창에서 **C/C++**, **찾아보기 정보** 속성 페이지를 선택합니다.
 
@@ -63,7 +64,7 @@ ms.locfileid: "81320514"
 
 ## <a name="see-also"></a>참고 항목
 
-[출력 파일(/F) 옵션](output-file-f-options.md)<br/>
+[출력 파일 (/F) 옵션](output-file-f-options.md)<br/>
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
-[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)<br/>
+[MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)<br/>
 [경로 이름 지정](specifying-the-pathname.md)

@@ -1,5 +1,6 @@
 ---
-title: '&lt;예제 > (C++ 문서 주석)'
+description: '자세한 정보: &lt; 예제&gt;'
+title: '&lt;예제> (c + + 문서 주석)'
 ms.date: 11/04/2016
 f1_keywords:
 - <example>
@@ -8,16 +9,16 @@ helpviewer_keywords:
 - <example> C++ XML tag
 - example C++ XML tag
 ms.assetid: c821aaa7-7ea7-4bee-9922-6705ad57f877
-ms.openlocfilehash: 384e9b9808a49770887eeda69b1d24fdd3f06027
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 8ffa51be888fb631db6ec1ecd145177ea346084f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988311"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200834"
 ---
 # <a name="ltexamplegt"></a>&lt;example&gt;
 
-\<example> 태그를 사용하면 메서드 또는 기타 라이브러리 멤버를 사용하는 방법의 예제를 지정할 수 있습니다. 일반적으로 여기에는 [\<code>](code-visual-cpp.md) 태그의 사용도 포함됩니다.
+\<example> 태그를 사용하면 메서드 또는 기타 라이브러리 멤버를 사용하는 방법의 예제를 지정할 수 있습니다. 일반적으로이 경우에도 태그의 사용이 포함 됩니다 [\<code>](code-visual-cpp.md) .
 
 ## <a name="syntax"></a>구문
 
@@ -30,9 +31,9 @@ ms.locfileid: "74988311"
 *description*<br/>
 코드 샘플에 대한 설명입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
-[/doc](doc-process-documentation-comments-c-cpp.md)로 컴파일하여 문서 주석을 파일로 처리합니다.
+[/Doc](doc-process-documentation-comments-c-cpp.md) 를 사용 하 여 컴파일하여 문서 주석을 파일로 처리 합니다.
 
 ## <a name="example"></a>예제
 
@@ -61,6 +62,6 @@ public:
 };
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [XML 문서](xml-documentation-visual-cpp.md)

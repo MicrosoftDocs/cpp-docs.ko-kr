@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: &lt; list &gt; 및 &lt; listheader&gt;'
 title: '&lt;> 목록 (c + + 문서 주석)'
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - list C++ XML tag
 - <list> C++ XML tag
 ms.assetid: c792a10b-0451-422c-9aa0-604116e69d64
-ms.openlocfilehash: 24f9b17c67b8f951743fd51c04266b05dad235c7
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: cb34e4361c68be58297d0f2e063974a2f94de991
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041967"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97199209"
 ---
 # <a name="ltlistgt-and-ltlistheadergt"></a>&lt;목록 &gt; 및 &lt; listheader&gt;
 

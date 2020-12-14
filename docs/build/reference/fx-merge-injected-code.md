@@ -1,4 +1,5 @@
 ---
+description: 다음에 대 한 자세한 정보:/Fx (삽입 된 코드 병합)
 title: /Fx(삽입된 코드 병합)
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - merging injected code
 - /Fx compiler option [C++]
 ms.assetid: 14f0e301-3bab-45a3-bbdf-e7ce66f20560
-ms.openlocfilehash: b928ca63171f0f6d28859d049a1ed5008b908686
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 0c0aeea4c3a72f37848615d80c5ee6a5a807d838
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500098"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200353"
 ---
 # <a name="fx-merge-injected-code"></a>/Fx(삽입된 코드 병합)
 
@@ -78,4 +79,4 @@ ms.locfileid: "91500098"
 
 [출력 파일 (/F) 옵션](output-file-f-options.md)<br/>
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
-[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)
+[MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)

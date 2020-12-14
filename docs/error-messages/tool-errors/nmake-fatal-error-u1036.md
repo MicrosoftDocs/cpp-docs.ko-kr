@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: NMAKE 심각한 오류 U1036'
 title: NMAKE 심각한 오류 U1036
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - U1036
 ms.assetid: b1d03b6b-ce82-4bbb-9904-d392ba72b437
-ms.openlocfilehash: 31adf750db6f07919d86d403300b6d9bb8b25c8f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e7f4317222165d873538f24fa5d69ece02844e18
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80173337"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97197740"
 ---
 # <a name="nmake-fatal-error-u1036"></a>NMAKE 심각한 오류 U1036
 

@@ -1,4 +1,5 @@
 ---
+description: 다음에 대 한 자세한 정보:/LOADCONFIG
 title: /LOADCONFIG
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - -LOADCONFIG dumpbin option
 - /LOADCONFIG dumpbin option
 ms.assetid: 24667afe-9bee-4f6e-ae72-f534c0050428
-ms.openlocfilehash: 689fd64e3d13cd609f709a3e4d3e9035ca711274
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 3a8e23360fdf3fd21d33b5b5f8c3353b13970a39
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64342513"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97199157"
 ---
 # <a name="loadconfig"></a>/LOADCONFIG
 
@@ -23,10 +24,10 @@ ms.locfileid: "64342513"
 
 ## <a name="remarks"></a>설명
 
-이 옵션을 IMAGE_LOAD_CONFIG_DIRECTORY 구조, Windows NT 로더에 의해 사용 되 고 WINNT에 정의 된 선택적 구조를 덤프 합니다. 8.
+이 옵션은 Windows NT 로더에서 사용 되 고 WINNT.EXE에 정의 된 선택적 구조인 IMAGE_LOAD_CONFIG_DIRECTORY 구조를 덤프 합니다.
 
-[/HEADERS](headers.md) DUMPBIN 옵션은 [/GL](gl-whole-program-optimization.md) 컴파일러 옵션으로 만든 파일에만 사용할 수 있습니다.
+[/GL](gl-whole-program-optimization.md) 컴파일러 옵션으로 생성된 파일에서는 [/HEADERS](headers.md) DUMPBIN옵션만 사용할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [DUMPBIN 옵션](dumpbin-options.md)

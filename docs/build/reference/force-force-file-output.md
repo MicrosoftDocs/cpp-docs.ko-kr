@@ -1,4 +1,5 @@
 ---
+description: 자세히 알아보기:/FORCE (파일 출력 강제)
 title: /FORCE(파일 출력 강제)
 ms.date: 07/19/2019
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - /FORCE linker option
 - -FORCE linker option
 ms.assetid: b1e9a218-a5eb-4e60-a4a4-65b4be15e5da
-ms.openlocfilehash: d1d85174290faa95e73c63a25f7d80c554e83ace
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: d84810828eef85c4db3558b70953630c70f8f82e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80079623"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200457"
 ---
 # <a name="force-force-file-output"></a>/FORCE(파일 출력 강제)
 
@@ -23,7 +24,7 @@ ms.locfileid: "80079623"
 /FORCE:[MULTIPLE|UNRESOLVED]
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 /FORCE 옵션을 지정 하면 기호가 참조 되지만 정의 되지 않았거나 여러 번 정의 된 경우에도 올바른 .exe 파일이 나 DLL을 만들도록 링커에 지시 합니다.
 
@@ -37,11 +38,11 @@ ms.locfileid: "80079623"
 
 이 옵션을 사용 하 여 만든 파일은 예상 대로 실행 되지 않을 수 있습니다. /FORCE 옵션을 지정 하면 링커가 증분식으로 연결 되지 않습니다.
 
-모듈이 **/clr**을 사용 하 여 컴파일되면 **/force** 는 이미지를 만들지 않습니다.
+모듈이 **/clr** 을 사용 하 여 컴파일되면 **/force** 는 이미지를 만들지 않습니다.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 합니다.
+1. **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **속성** 을 선택 합니다.
 
 1. **Linker** 폴더를 클릭합니다.
 
@@ -49,7 +50,7 @@ ms.locfileid: "80079623"
 
 1. **추가 옵션** 상자에 옵션을 입력 합니다.
 
-자세한 내용은 [Visual Studio에서 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
+자세한 정보는 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조하세요.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>프로그래밍 방식으로 이 링커 옵션을 설정하려면
 

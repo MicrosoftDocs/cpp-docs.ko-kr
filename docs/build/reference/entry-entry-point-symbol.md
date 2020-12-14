@@ -1,4 +1,5 @@
 ---
+description: 자세히 알아보기:/ENTRY (진입점 기호)
 title: /ENTRY(진입점 기호)
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - /ENTRY linker option
 - ENTRY linker option
 ms.assetid: 26c62ba2-4f52-4882-a7bd-7046a0abf445
-ms.openlocfilehash: 80833980b64e8fdd2a2f57b2dc40eb21c784b6f9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e4966ef44922a3a90d5abb5a7ac23460d4155f92
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232705"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97201016"
 ---
 # <a name="entry-entry-point-symbol"></a>/ENTRY(진입점 기호)
 
@@ -39,8 +40,8 @@ ms.locfileid: "87232705"
 |함수 이름|기본|
 |-------------------|-----------------|
 |**mainCRTStartup** (또는 **wmainCRTStartup**)|/SUBSYSTEM: CONSOLE;를 사용 하는 응용 프로그램 호출 `main` (또는 `wmain` )|
-|**WinMainCRTStartup** (또는 **wWinMainCRTStartup**)|/SUBSYSTEM:**WINDOWS**;를 사용 하는 응용 프로그램 `WinMain` `wWinMain` 를 사용 하도록 정의 해야 하는 (또는)를 호출 합니다.**`__stdcall`**|
-|**_DllMainCRTStartup**|DLL, `DllMain`가 있는 경우를 호출 합니다 .이 경우에는를 사용 하도록 정의 해야 합니다.**`__stdcall`**|
+|**WinMainCRTStartup** (또는 **wWinMainCRTStartup**)|/SUBSYSTEM:**WINDOWS**;를 사용 하는 응용 프로그램 `WinMain` `wWinMain` 를 사용 하도록 정의 해야 하는 (또는)를 호출 합니다. **`__stdcall`**|
+|**_DllMainCRTStartup**|DLL, `DllMain` 가 있는 경우를 호출 합니다 .이 경우에는를 사용 하도록 정의 해야 합니다. **`__stdcall`**|
 
 [/Dll](dll-build-a-dll.md) 또는 [/SUBSYSTEM](subsystem-specify-subsystem.md) 옵션을 지정 하지 않으면 링커가 정의 되었는지 여부에 따라 하위 시스템 및 진입점을 선택 `main` `WinMain` 합니다.
 

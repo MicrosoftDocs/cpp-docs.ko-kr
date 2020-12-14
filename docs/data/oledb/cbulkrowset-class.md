@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CBulkRowset 클래스'
 title: CBulkRowset 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -95,12 +96,12 @@ helpviewer_keywords:
 - ReleaseRows method
 - SetRows method
 ms.assetid: c6bde426-c543-4022-a98a-9519d9e2ae59
-ms.openlocfilehash: 5c1c7bc381d30f701bad123807689b08ea47f65d
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 106a8ffb3d70a021adbdb03b426e53ca39285b02
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838466"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97198377"
 ---
 # <a name="cbulkrowset-class"></a>CBulkRowset 클래스
 
@@ -163,7 +164,7 @@ HRESULT AddRefRows() throw();
 
 새 개체를 만들고 `CBulkRowset` 기본 행 수를 10으로 설정 합니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 CBulkRowset();
@@ -246,7 +247,7 @@ HRESULT MoveToBookmark(const CBookmarkBase& bookmark,
 
 ### <a name="return-value"></a>반환 값
 
-*OLE DB 프로그래머 참조*에서 [IRowset:: GetData](/previous-versions/windows/desktop/ms716988(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [IRowset:: GetData](/previous-versions/windows/desktop/ms716988(v=vs.85)) 를 참조 하세요.
 
 ## <a name="cbulkrowsetmovetoratio"></a><a name="movetoratio"></a> C대량 행 집합:: MoveToRatio
 
@@ -277,7 +278,7 @@ HRESULT MoveToRatio(DBCOUNTITEM nNumerator,
 
 `(nNumerator *  RowsetSize ) / nDenominator`
 
-여기서 `RowsetSize` 는 행 단위로 측정 되는 행 집합의 크기입니다. 이 수식의 정확도는 특정 공급자에 따라 달라 집니다. 자세한 내용은 *OLE DB 프로그래머 참조*에서 [IRowsetScroll:: GetRowsAtRatio](/previous-versions/windows/desktop/ms709602(v=vs.85)) 를 참조 하세요.
+여기서 `RowsetSize` 는 행 단위로 측정 되는 행 집합의 크기입니다. 이 수식의 정확도는 특정 공급자에 따라 달라 집니다. 자세한 내용은 *OLE DB 프로그래머 참조* 에서 [IRowsetScroll:: GetRowsAtRatio](/previous-versions/windows/desktop/ms709602(v=vs.85)) 를 참조 하세요.
 
 ## <a name="cbulkrowsetreleaserows"></a><a name="releaserows"></a> C대량 행 집합:: ReleaseRows
 
