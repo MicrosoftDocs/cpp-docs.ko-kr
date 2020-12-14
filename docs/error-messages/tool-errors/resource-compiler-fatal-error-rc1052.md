@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 리소스 컴파일러 심각한 오류 RC1052'
 title: 리소스 컴파일러 심각한 오류 RC1052
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - RC1052
 ms.assetid: 59803673-492b-44fa-80fa-df93b8aaf9fb
-ms.openlocfilehash: ad0fe23b20870610c5979d6ad85fce55b4e506d3
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 41ef30cfde7d463337b1747b3f6141866e39e3be
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80182558"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97255082"
 ---
 # <a name="resource-compiler-fatal-error-rc1052"></a>리소스 컴파일러 심각한 오류 RC1052
 

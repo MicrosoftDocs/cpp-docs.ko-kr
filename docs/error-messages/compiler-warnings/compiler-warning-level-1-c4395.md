@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4395'
 title: 컴파일러 경고(수준 1) C4395
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4395
 ms.assetid: 8051469a-3a39-4677-80f7-1300fbffe8ea
-ms.openlocfilehash: 82c7ef9c20b62c0e082a7851bac0ec1e44a8f4c7
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 12a25f523a4f55bffc3bb68517538b4a9986407e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80186857"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97311294"
 ---
 # <a name="compiler-warning-level-1-c4395"></a>컴파일러 경고(수준 1) C4395
 
 ' function ': 멤버 함수가 initonly 데이터 멤버 ' member '의 복사본에 대해 호출 됩니다.
 
-멤버 함수가 [initonly (C++/cli)](../../dotnet/initonly-cpp-cli.md) 데이터 멤버에 대해 호출 되었습니다.  C4395는 함수에서 **initonly** 데이터 멤버를 수정할 수 없다는 경고를 표시 합니다.
+멤버 함수가 [initonly (c + +/cli)](../../dotnet/initonly-cpp-cli.md) 데이터 멤버에 대해 호출 되었습니다.  C4395는 함수에서 **initonly** 데이터 멤버를 수정할 수 없다는 경고를 표시 합니다.
 
 다음 샘플에서는 C4395를 생성 합니다.
 

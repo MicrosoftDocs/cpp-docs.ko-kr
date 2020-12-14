@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 링커 도구 오류 LNK2027'
 title: 링커 도구 오류 LNK2027
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK2027
 ms.assetid: e2f857a8-8e8a-4697-bbff-12ccb84a35c1
-ms.openlocfilehash: 0c531f70f98a017e8b75cceddc684f99d33bc554
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 006ca3b0c9d0ef85f118db9b562e8228c7cad238
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80194600"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275765"
 ---
 # <a name="linker-tools-error-lnk2027"></a>링커 도구 오류 LNK2027
 
@@ -23,7 +24,7 @@ LNK2027를 해결 하려면 다음 중 하나를 수행 합니다.
 
 - 모듈 종속성이 있는 파일을 링커에 전달 하지 마십시오.
 
-- **/ASSEMBLYMODULE**를 사용 하 여 모듈을 지정 합니다.
+- **/ASSEMBLYMODULE** 를 사용 하 여 모듈을 지정 합니다.
 
 - 모듈이 안전한 .netmodule인 경우 모듈을 링커에 직접 전달합니다.
 

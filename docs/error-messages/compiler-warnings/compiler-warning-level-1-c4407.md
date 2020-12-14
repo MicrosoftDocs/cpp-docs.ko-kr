@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4407'
 title: 컴파일러 경고(수준 1) C4407
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4407
 ms.assetid: 32bc2c21-363a-4bb8-b486-725faeaededc
-ms.openlocfilehash: 8dd78872d4edf82fb61c8ab93639dbcd93085754
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ea743c5df5f84e99ad89e44a08844b3e59593c1d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80162545"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97311099"
 ---
 # <a name="compiler-warning-level-1-c4407"></a>컴파일러 경고(수준 1) C4407
 

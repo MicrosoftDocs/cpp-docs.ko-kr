@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4440'
 title: 컴파일러 경고(수준 1) C4440
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4440
 ms.assetid: 78b9642a-a93e-401e-9d92-372f6451bc5d
-ms.openlocfilehash: dbb10a83e619af04334af268381b2286b037257a
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 9e0a126ea1461e0b98bcef5117b893ea232fe262
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80186779"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97311047"
 ---
 # <a name="compiler-warning-level-1-c4440"></a>컴파일러 경고(수준 1) C4440
 

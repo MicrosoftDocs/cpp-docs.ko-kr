@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 링커 도구 오류 LNK2020'
 title: 링커 도구 오류 LNK2020
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK2020
 ms.assetid: 4dd017d0-5e83-471b-ac8a-538ac1ed6870
-ms.openlocfilehash: 6fd4859e4f8cad657de57e8039bd647e5e2b99a9
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 61e999b2f451359e3a806bc2da5f2beb431e6fab
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90684640"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275856"
 ---
 # <a name="linker-tools-error-lnk2020"></a>링커 도구 오류 LNK2020
 

@@ -1,16 +1,17 @@
 ---
+description: '자세히 알아보기: 적용 단추 처리'
 title: 적용 단추 처리
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Apply button in property sheet
 - property sheets, Apply button
 ms.assetid: 7e977015-59b8-406f-b545-aad0bfd8d55b
-ms.openlocfilehash: cd1254a31491e713513f0db0d4cf87baddd9bb23
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: a626dcab04d68d19efba79465bfca46545ff6670
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618608"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97254939"
 ---
 # <a name="handling-the-apply-button"></a>적용 단추 처리
 

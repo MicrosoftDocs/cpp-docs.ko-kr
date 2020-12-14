@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 1) C4374'
 title: 컴파일러 경고(수준 1) C4374
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4374
 ms.assetid: 4ac9aaec-d815-4b6e-825f-fa872092dd3b
-ms.openlocfilehash: a0dbfbe931ec30c0bde2e82718e0817dcfa243b7
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 0b1d8eef5f168f12cc41f1108fcea24040f806ad
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80187039"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97311341"
 ---
 # <a name="compiler-warning-level-1-c4374"></a>컴파일러 경고(수준 1) C4374
 

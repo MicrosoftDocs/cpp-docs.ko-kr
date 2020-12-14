@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __readpmc'
 title: __readpmc
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - __readpmc intrinsic
 - rdpmc instruction
 ms.assetid: 14ed45a6-28b6-4635-8437-a597c04b43d4
-ms.openlocfilehash: af0f1874d991771423ddebfedd4624cd0b71760f
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: ceff8522d4895f69a47cf429e59d267c671e3a66
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70221027"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97294134"
 ---
 # <a name="__readpmc"></a>__readpmc
 
 **Microsoft 전용**
 
-*카운터에*지정 된 성능 모니터링 카운터를 읽는 명령을생성`rdpmc` 합니다.
+카운터에 `rdpmc` 지정 된 성능 모니터링 카운터를 읽는 명령을 생성 합니다 .
 
 ## <a name="syntax"></a>구문
 
@@ -40,11 +41,11 @@ unsigned __int64 __readpmc(
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`__readpmc`|x86, x64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 ## <a name="remarks"></a>설명
 
@@ -52,6 +53,6 @@ unsigned __int64 __readpmc(
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

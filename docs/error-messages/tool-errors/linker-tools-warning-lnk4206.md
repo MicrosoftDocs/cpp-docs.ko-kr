@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 링커 도구 경고 LNK4206'
 title: 링커 도구 경고 LNK4206
 ms.date: 12/05/2017
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4206
 ms.assetid: 6c108e33-00cf-4c5a-830d-d65d470930a7
-ms.openlocfilehash: 1758fffb72e183e8a186d115b2b3f3b30c32e047
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 40d7a8f18a835721ff747293696d0499c0a94ef3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80193880"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97294147"
 ---
 # <a name="linker-tools-warning-lnk4206"></a>링커 도구 경고 LNK4206
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 대화 상자에서 Windows 메시지 처리'
 title: 대화 상자에서 Windows 메시지 처리
 ms.date: 09/05/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - Windows messages [MFC], handling
 - message handling [MFC], in dialog boxes
 ms.assetid: 4af0c9cb-09da-4b15-97df-a1cfb89def79
-ms.openlocfilehash: 72ac1bdc84d1e657440e8cc4ee52eca3324167ed
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 05aa68c17e401dad02ab513e13c7ff735761041f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626433"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97254848"
 ---
 # <a name="handling-windows-messages-in-your-dialog-box"></a>대화 상자에서 Windows 메시지 처리
 

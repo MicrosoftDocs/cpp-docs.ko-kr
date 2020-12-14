@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: Rich Edit 컨트롤의 알림'
 title: Rich Edit 컨트롤에서 보내는 알림
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - rich edit controls [MFC], notifications
 - notifications [MFC], from CRichEditCtrl
 ms.assetid: eb5304fe-f4f3-4557-9ebf-3095dea383c4
-ms.openlocfilehash: 206fc02088f6531338bf2aa4cf272a1da096bae4
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 83f76c2b0bf8c27d30d8c113fc1607f3cbd718fc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622222"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97254796"
 ---
 # <a name="notifications-from-a-rich-edit-control"></a>Rich Edit 컨트롤에서 보내는 알림
 

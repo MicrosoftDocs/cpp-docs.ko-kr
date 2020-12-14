@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: OLE 백그라운드: 컨테이너 및 서버'
 title: 'OLE 백그라운드: 컨테이너 및 서버'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -14,16 +15,16 @@ helpviewer_keywords:
 - containers [MFC], OLE container applications
 - server applications [MFC]
 ms.assetid: dafbb31d-096c-4654-b774-12900d832919
-ms.openlocfilehash: 7c3130ab9d8dff6551ef0ecbec43e5422dbdc4c4
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 3ea578ce14165b16e84520b22bc545fc5d2a8882
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84617904"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97254779"
 ---
 # <a name="ole-background-containers-and-servers"></a>OLE 백그라운드: 컨테이너 및 서버
 
-컨테이너 응용 프로그램은 포함 된 항목 또는 연결 된 항목을 자체 문서에 통합할 수 있는 응용 프로그램입니다. 컨테이너 응용 프로그램에서 관리 하는 문서는 응용 프로그램 자체에서 만든 데이터 뿐만 아니라 OLE 문서 구성 요소를 저장 하 고 표시할 수 있어야 합니다. 또한 컨테이너 응용 프로그램은 사용자가 필요한 경우 서버 응용 프로그램을 활성화 하 여 새 항목을 삽입 하거나 기존 항목을 편집할 수 있도록 해야 합니다. 컨테이너 응용 프로그램의 사용자 인터페이스 요구 사항은 [컨테이너: 사용자 인터페이스 문제](containers-user-interface-issues.md)문서에 나열 되어 있습니다.
+컨테이너 응용 프로그램은 포함 된 항목 또는 연결 된 항목을 자체 문서에 통합할 수 있는 응용 프로그램입니다. 컨테이너 응용 프로그램에서 관리 하는 문서는 응용 프로그램 자체에서 만든 데이터 뿐만 아니라 OLE 문서 구성 요소를 저장 하 고 표시할 수 있어야 합니다. 또한 컨테이너 응용 프로그램은 사용자가 필요한 경우 서버 응용 프로그램을 활성화 하 여 새 항목을 삽입 하거나 기존 항목을 편집할 수 있도록 해야 합니다. 컨테이너 응용 프로그램의 사용자 인터페이스 요구 사항은 [컨테이너: User-Interface 문제](containers-user-interface-issues.md)문서에 나열 되어 있습니다.
 
 서버 응용 프로그램 또는 구성 요소 응용 프로그램은 컨테이너 응용 프로그램에서 사용할 OLE 문서 구성 요소를 만들 수 있는 응용 프로그램입니다. 서버 응용 프로그램은 일반적으로 컨테이너 응용 프로그램이 데이터를 포함 된 항목 또는 연결 된 항목으로 삽입할 수 있도록 데이터를 클립보드에 끌어서 놓거나 복사 하거나 복사할 수 있도록 지원 합니다. 응용 프로그램은 컨테이너와 서버 모두 일 수 있습니다.
 
@@ -35,7 +36,7 @@ ms.locfileid: "84617904"
 
 ## <a name="see-also"></a>참고 항목
 
-[OLE 백그라운드](ole-background.md)<br/>
+[OLE 배경](ole-background.md)<br/>
 [OLE 백그라운드: MFC 구현](ole-background-mfc-implementation.md)<br/>
 [컨테이너](containers.md)<br/>
 [서버](servers.md)<br/>

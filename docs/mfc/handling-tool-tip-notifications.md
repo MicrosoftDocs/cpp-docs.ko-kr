@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 도구 설명 알림 처리'
 title: 도구 설명 알림 처리
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - notifications [MFC], tool tips
 - tool tips [MFC], notifications
 ms.assetid: ddb93b5f-2e4f-4537-8053-3453c86e2bbb
-ms.openlocfilehash: 41e3dbfc2269f5fbf3c12dc00c19f8a2253fd16a
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 02bb1fb0760cf91c76e3c3be75fe097d5d57b71e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626439"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97254861"
 ---
 # <a name="handling-tool-tip-notifications"></a>도구 설명 알림 처리
 
