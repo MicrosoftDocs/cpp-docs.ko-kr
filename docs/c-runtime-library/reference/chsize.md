@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _chsize'
 title: _chsize
 ms.date: 4/2/2020
 api_name:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - files [C++], changing size
 - chsize function
 ms.assetid: b3e881c5-7b27-4837-a3d4-c51591ab10ff
-ms.openlocfilehash: 5b9b58cf3ca4e167b5d54f871ac31c5295adc48b
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 16a65c145e33a0fbafcc9d0f2b0fed3b9f2b516f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917195"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97274894"
 ---
 # <a name="_chsize"></a>_chsize
 
@@ -58,15 +59,15 @@ int _chsize(
 *size*<br/>
 파일의 새 길이(바이트)입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-파일 크기가 성공적으로 변경 되 면 **_chsize** 는 값 0을 반환 합니다. 반환 값-1은 오류를 나타냅니다. 지정 된 파일이 읽기 전용 이거나 지정 된 파일이 액세스에 대해 잠긴 경우 **errno** 이 **ecef** 로 설정 되 고, 설명자가 잘못 된 경우 **ebadf** 로 설정 되 고, 장치에 남아 있는 공간이 없는 경우 **ENOSPC** 또는 EINVAL *이 0 보다 작은 경우* **EINVAL** 로 설정 됩니다.
+파일 크기가 성공적으로 변경 되 면 **_chsize** 는 값 0을 반환 합니다. 반환 값-1은 오류를 나타냅니다. 지정 된 파일이 읽기 전용 이거나 지정 된 파일이 액세스에 대해 잠긴 경우 **errno** 이 **ecef** 로 설정 되 고, 설명자가 잘못 된 경우 **ebadf** 로 설정 되 고, 장치에 남아 있는 공간이 없는 경우 **ENOSPC** 또는 EINVAL *이 0 보다 작은 경우*  로 설정 됩니다.
 
 이러한 반환 코드 및 기타 반환 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-**_Chsize** 함수는 *fd* 와 연결 된 파일을 *size*로 지정 된 길이로 확장 하거나 자릅니다. 파일은 쓰기를 허용하는 모드로 열려 있어야 합니다. 파일이 확장되는 경우 Null 문자('\0')가 추가됩니다. 파일이 잘린 경우 짧아진 파일의 끝부터 파일의 원래 길이까지의 모든 데이터가 손실됩니다.
+**_Chsize** 함수는 *fd* 와 연결 된 파일을 *size* 로 지정 된 길이로 확장 하거나 자릅니다. 파일은 쓰기를 허용하는 모드로 열려 있어야 합니다. 파일이 확장되는 경우 Null 문자('\0')가 추가됩니다. 파일이 잘린 경우 짧아진 파일의 끝부터 파일의 원래 길이까지의 모든 데이터가 손실됩니다.
 
 이 함수는 해당 매개 변수의 유효성을 검사합니다. *Size* 가 0 보다 작거나 *fd* 가 잘못 된 파일 설명자 인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다.
 
@@ -120,7 +121,7 @@ Size successfully changed
 File length after:  329678
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [파일 처리](../../c-runtime-library/file-handling.md)<br/>
 [_close](close.md)<br/>

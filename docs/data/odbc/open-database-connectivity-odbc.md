@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 오픈 데이터베이스 연결 (ODBC)'
 title: ODBC(Open Database Connectivity)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - databases [C++], ODBC
 - data access [C++], ODBC
 ms.assetid: 56b6067a-651e-4c10-a24d-d4a6a17ca5e4
-ms.openlocfilehash: 12e4c0b74caa95af4dc4ed00dc77d46e47029b59
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: f28fe1dfd2d2cb4cb8d4ad70404209ae20ad1b9a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86403805"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97274699"
 ---
 # <a name="open-database-connectivity-odbc"></a>ODBC(Open Database Connectivity)
 

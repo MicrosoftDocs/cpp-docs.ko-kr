@@ -1,4 +1,5 @@
 ---
+description: '에 대 한 자세한 정보: msclr 네임 스페이스'
 title: msclr 네임스페이스
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,17 +15,17 @@ helpviewer_keywords:
 - C++ Support Library, namespace
 - msclr
 ms.assetid: 799460e2-9ae2-4b59-a81c-611df356834f
-ms.openlocfilehash: 0054d8086c8492c79723e6b4091f102062aa3c91
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: df9a19ea16b37717612cd883c372d79c9568fad2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384818"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97274647"
 ---
 # <a name="msclr-namespace"></a>msclr 네임스페이스
 
-`msclr` 네임스페이스는 C++ 지원 라이브러리의 모든 클래스를 포함합니다. 이 클래스에 대한 자세한 내용은 [C++ 지원 라이브러리](../dotnet/cpp-support-library.md)를 참조하세요.
+`msclr`네임 스페이스는 c + + 지원 라이브러리의 모든 클래스를 포함 합니다. 이러한 클래스에 대 한 자세한 내용은 [c + + 지원 라이브러리](../dotnet/cpp-support-library.md)를 참조 하십시오.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[C++ 지원 라이브러리](../dotnet/cpp-support-library.md)
+[C + + 지원 라이브러리](../dotnet/cpp-support-library.md)

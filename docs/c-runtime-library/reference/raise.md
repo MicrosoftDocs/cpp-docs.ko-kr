@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 올리기'
 title: raise
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - raise function
 - signals
 - programs [C++], sending signals to executing programs
-ms.openlocfilehash: 81b92404603820948a384b6ad33421251a27c13c
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: eb225e25ef0ff4e04f1ea8877a434c2af240cbfe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919557"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97274868"
 ---
 # <a name="raise"></a>raise
 
@@ -52,18 +53,18 @@ int raise(
 
 ### <a name="parameters"></a>매개 변수
 
-*sig*<br/>
+*시그니처로*<br/>
 생성할 신호입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-**raise**는 정상적으로 실행되면 0을 반환합니다. 그렇지 않으면 0이 아닌 값을 반환합니다.
+**raise** 는 정상적으로 실행되면 0을 반환합니다. 그렇지 않으면 0이 아닌 값을 반환합니다.
 
 ## <a name="remarks"></a>설명
 
-**raise** 함수는 *sig*를 실행 프로그램으로 보냅니다. 이전의 **signal** 호출에서 *sig*용 신호 처리 함수를 설치한 경우 **raise**는 해당 함수를 실행합니다. 처리기 함수가 설치되지 않은 경우에는 다음과 같이 신호 값 *sig*와 연결된 기본 작업이 수행됩니다.
+**raise** 함수는 *sig* 를 실행 프로그램으로 보냅니다. 이전의 **signal** 호출에서 *sig* 용 신호 처리 함수를 설치한 경우 **raise** 는 해당 함수를 실행합니다. 처리기 함수가 설치되지 않은 경우에는 다음과 같이 신호 값 *sig* 와 연결된 기본 작업이 수행됩니다.
 
-|Signal|의미|기본|
+|Signal|의미|기본값|
 |------------|-------------|-------------|
 |**SIGABRT**|비정상적인 종료|호출 프로그램을 종료하고 종료 코드 3을 생성합니다.|
 |**SIGFPE**|부동 소수점 오류|호출 프로그램을 종료합니다.|
@@ -84,7 +85,7 @@ int raise(
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [프로세스 및 환경 제어](../../c-runtime-library/process-and-environment-control.md)<br/>
 [중단이](abort.md)<br/>

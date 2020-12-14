@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: rand_s'
 title: rand_s
 ms.date: 4/2/2020
 api_name:
@@ -32,12 +33,12 @@ helpviewer_keywords:
 - cryptographically secure random numbers
 - pseudorandom numbers
 - numbers, generating pseudorandom
-ms.openlocfilehash: cad1740e64c7bbda553ac1a6c777d7e2295152ba
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 8894248bf924ef513dc916e10e47ce8ea7e95137
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919535"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97274829"
 ---
 # <a name="rand_s"></a>rand_s
 
@@ -54,9 +55,9 @@ errno_t rand_s(unsigned int* randomValue);
 *randomValue*<br/>
 생성 된 값을 보유할 정수에 대 한 포인터입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-정상적으로 실행되는 경우 0이고 그렇지 않으면 오류 코드입니다. 입력 포인터 _randomValue_ 가 null 포인터인 경우이 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **EINVAL** 를 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다. 다른 이유로 인해 함수가 실패 하면 *_randomValue_ 는 0으로 설정 됩니다.
+정상적으로 실행되는 경우 0이고 그렇지 않으면 오류 코드입니다. 입력 포인터 _randomValue_ 가 null 포인터인 경우이 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **EINVAL** 를 반환 하 고 **errno** 를 **EINVAL** 로 설정 합니다. 다른 이유로 인해 함수가 실패 하면 *_randomValue_ 는 0으로 설정 됩니다.
 
 ## <a name="remarks"></a>설명
 
@@ -157,7 +158,7 @@ int main( void )
 65.0712
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [부동 소수점 지원](../../c-runtime-library/floating-point-support.md)<br/>
 [rand](rand.md)<br/>

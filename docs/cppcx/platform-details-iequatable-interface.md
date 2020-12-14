@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Platform::D etails:: IEquatable Interface'
 title: Platform::Details::IEquatable 인터페이스
 ms.date: 12/30/2016
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Details::IEquatable Interface
 ms.assetid: 72f15f55-f7a4-4cca-aeba-2d5a9996818c
-ms.openlocfilehash: a0da4d82bc0d2a06fa73519aedf2e22ae89f3900
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ec808aae930ec0b1d382477cee5351cd97478271
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387632"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97274764"
 ---
 # <a name="platformdetailsiequatable-interface"></a>Platform::Details::IEquatable 인터페이스
 
@@ -34,10 +35,10 @@ interface class IEquatable;
 
 ### <a name="requirements"></a>요구 사항
 
-**메타데이터:** platform.winmd
+**메타 데이터:** platform.object
 
 **네임스페이스:** Platform::Details
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[플랫폼 Namespace](platform-namespace-c-cx.md)
+[Platform 네임 스페이스](platform-namespace-c-cx.md)

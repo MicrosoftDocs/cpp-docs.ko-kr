@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 방법: c + + Interop를 사용 하 여 ANSI 문자열 마샬링'
 title: '방법: C++ Interop를 사용하여 ANSI 문자열 마샬링'
 ms.custom: get-started-article
 ms.date: 11/04/2016
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - C++ Interop, strings
 - data marshaling [C++], strings
 ms.assetid: 5eda2eb6-5140-40f0-82cf-7ce171fffb45
-ms.openlocfilehash: 3bdffa761bef74b9956842122b913e8213c736e9
-ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
+ms.openlocfilehash: 7a06e045c3c097cb866c6d289ce24638a6965d1a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91414570"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258267"
 ---
 # <a name="how-to-marshal-ansi-strings-using-c-interop"></a>방법: C++ Interop를 사용하여 ANSI 문자열 마샬링
 

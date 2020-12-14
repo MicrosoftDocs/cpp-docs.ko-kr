@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 쉼표 연산자:,'
 title: '쉼표 연산자: ,'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - comma operator
 ms.assetid: 38e0238e-19da-42ba-ae62-277bfdab6090
-ms.openlocfilehash: 6ea2bd5c0e7653ba7f81531a5c39df2da41662a9
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 1429e2ce444e0f253bffca795f36f4e6194e0395
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80189769"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97274777"
 ---
 # <a name="comma-operator-"></a>쉼표 연산자: ,
 
@@ -23,15 +24,15 @@ ms.locfileid: "80189769"
 expression , expression
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 쉼표 연산자는 왼쪽에서 오른쪽으로 결합됩니다. 두 식은 쉼표로 구분되며 왼쪽에서 오른쪽으로 계산됩니다. 오른쪽 피연산자는 항상 왼쪽 피연산자가 실행되고, 모든 파생 작용이 완료된 후에 실행됩니다.
 
 쉼표는 함수 인수 목록과 같은 일부 컨텍스트에서 구분 기호로 사용될 수 있습니다. 쉼표를 구분 기호로 사용하는 경우와 연산자로 사용하는 경우는 완전히 다르기 때문에 둘을 혼동하지 않도록 주의해야 합니다.
 
-`e1, e2` 식을 참조하십시오. 식의 유형 및 값은 *e2*의 유형 및 값입니다. *e1* 평가 결과가 삭제 됩니다. 결과는 오른쪽 피연산자가 l-value인 경우 l-value입니다.
+`e1, e2` 식을 참조하십시오. 식의 유형 및 값은 *e2* 의 유형 및 값입니다. *e1* 평가 결과가 삭제 됩니다. 결과는 오른쪽 피연산자가 l-value인 경우 l-value입니다.
 
-쉼표가 일반적으로 구분 기호로 사용되는 경우(예: 함수에 대한 실제 인수 또는 집합체 이니셜라이저), 쉼표 연산자와 피연산자는 괄호로 묶어야 합니다. 예를 들면 다음과 같습니다.
+쉼표가 일반적으로 구분 기호로 사용되는 경우(예: 함수에 대한 실제 인수 또는 집합체 이니셜라이저), 쉼표 연산자와 피연산자는 괄호로 묶어야 합니다. 예를 들어:
 
 ```cpp
 func_one( x, y + 2, z );
@@ -64,4 +65,4 @@ int main () {
 
 [이항 연산자가 있는 식](../cpp/expressions-with-binary-operators.md)<br/>
 [C++ 기본 제공 연산자, 우선 순위 및 결합성](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[순차적 확인 연산자](../c-language/sequential-evaluation-operator.md)
+[순차적 계산 연산자](../c-language/sequential-evaluation-operator.md)

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3006'
 title: 컴파일러 오류 C3006
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3006
 ms.assetid: 449082ec-fd45-4c47-8ab3-ba6a719e4dc4
-ms.openlocfilehash: a851c9b84a858cd4ac5cee11f0da90f99200c789
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: e2c6372b86f7677f3beeaed5335798f10e01c82e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75301771"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97274556"
 ---
 # <a name="compiler-error-c3006"></a>컴파일러 오류 C3006
 

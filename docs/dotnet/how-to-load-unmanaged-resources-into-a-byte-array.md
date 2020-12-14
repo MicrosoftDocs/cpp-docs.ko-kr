@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 방법: 관리 되지 않는 리소스를 바이트 배열로 로드'
 title: '방법: 관리되지 않는 리소스를 바이트 배열로 로드'
 ms.custom: get-started-article
 ms.date: 11/04/2016
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - unmanaged resources, loading into Byte array
 - native resources
 ms.assetid: cdada6cd-6d42-437a-a90f-44a0b18d6a93
-ms.openlocfilehash: b2b98ff3c4bbd857e3f5d861c1e0e8e2bd2f357b
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: e5a7a88a505d3f02b8e9287d6407ddbe77b99dee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90685807"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258280"
 ---
 # <a name="how-to-load-unmanaged-resources-into-a-byte-array"></a>방법: 관리되지 않는 리소스를 바이트 배열로 로드
 
@@ -73,6 +74,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [C + + Interop 사용 (암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
