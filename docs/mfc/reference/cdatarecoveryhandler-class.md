@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CDataRecoveryHandler 클래스'
 title: CDataRecoveryHandler 클래스
 ms.date: 03/27/2019
 f1_keywords:
@@ -62,12 +63,12 @@ helpviewer_keywords:
 - CDataRecoveryHandler [MFC], SetShutdownByRestartManager
 - CDataRecoveryHandler [MFC], UpdateDocumentInfo
 ms.assetid: 7794802c-e583-4eba-90b9-2fed1a161f9c
-ms.openlocfilehash: 4bb4d4ddf291cb1efc01b887c54a6573c52df8dc
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 72189916f4555152ccc8997600d8426e188bb65c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842925"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97222140"
 ---
 # <a name="cdatarecoveryhandler-class"></a>CDataRecoveryHandler 클래스
 
@@ -201,7 +202,7 @@ virtual BOOL AutosaveDocumentInfo(
 
 *Pdocument* 가 유효한 개체가 아닌 경우이 메서드는 [ASSERT](diagnostic-services.md#assert) 매크로를 사용 하 여 예외를 throw `CDocument` 합니다.
 
-이 메서드를 사용 하려면 *m_dwRestartManagerSupportFlags*에서 AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART 또는 AFX_RESTARTMANAGER_AUTOSAVE_AT_INTERVAL를 설정 해야 합니다.
+이 메서드를 사용 하려면 *m_dwRestartManagerSupportFlags* 에서 AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART 또는 AFX_RESTARTMANAGER_AUTOSAVE_AT_INTERVAL를 설정 해야 합니다.
 
 ## <a name="cdatarecoveryhandlercdatarecoveryhandler"></a><a name="cdatarecoveryhandler"></a> CDataRecoveryHandler::CDataRecoveryHandler
 
@@ -223,7 +224,7 @@ CDataRecoveryHandler(
 
 ### <a name="remarks"></a>설명
 
-새 프로젝트 마법사를 사용 하면 MFC 프레임 워크에서 `CDataRecoveryHandler` 응용 프로그램에 대 **New Project** 한 개체를 자동으로 만듭니다. 데이터 복구 동작 또는 다시 시작 관리자를 사용자 지정 하지 않는 한 개체를 만들지 않아야 합니다 `CDataRecoveryHandler` .
+새 프로젝트 마법사를 사용 하면 MFC 프레임 워크에서 `CDataRecoveryHandler` 응용 프로그램에 대  한 개체를 자동으로 만듭니다. 데이터 복구 동작 또는 다시 시작 관리자를 사용자 지정 하지 않는 한 개체를 만들지 않아야 합니다 `CDataRecoveryHandler` .
 
 ## <a name="cdatarecoveryhandlercreatedocumentinfo"></a><a name="createdocumentinfo"></a> CDataRecoveryHandler:: CreateDocumentInfo
 
@@ -244,9 +245,9 @@ virtual BOOL CreateDocumentInfo(CDocument* pDocument);
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 문서를 추가 하기 전에 *Pdocument* 가 문서 목록에 이미 있는지 여부를 확인 합니다. *Pdocument* 가 목록에 이미 있는 경우이 메서드는 *pdocument*와 연결 된 자동 저장 된 파일을 삭제 합니다.
+이 메서드는 문서를 추가 하기 전에 *Pdocument* 가 문서 목록에 이미 있는지 여부를 확인 합니다. *Pdocument* 가 목록에 이미 있는 경우이 메서드는 *pdocument* 와 연결 된 자동 저장 된 파일을 삭제 합니다.
 
-이 메서드를 사용 하려면 *m_dwRestartManagerSupportFlags*에서 AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART 또는 AFX_RESTARTMANAGER_AUTOSAVE_AT_INTERVAL를 설정 해야 합니다.
+이 메서드를 사용 하려면 *m_dwRestartManagerSupportFlags* 에서 AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART 또는 AFX_RESTARTMANAGER_AUTOSAVE_AT_INTERVAL를 설정 해야 합니다.
 
 ## <a name="cdatarecoveryhandlerdeleteallautosavedfiles"></a><a name="deleteallautosavedfiles"></a> CDataRecoveryHandler::D eleteAllAutosavedFiles
 
@@ -296,7 +297,7 @@ virtual CString GenerateAutosaveFileName(const CString& strDocumentName) const;
 
 ### <a name="return-value"></a>반환 값
 
-*StrDocumentName*에서 생성 된 자동 저장 파일 이름입니다.
+*StrDocumentName* 에서 생성 된 자동 저장 파일 이름입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -341,11 +342,11 @@ virtual CString GetDocumentListName(CDocument* pDocument) const;
 
 ### <a name="return-value"></a>반환 값
 
-*Pdocument*의 문서 이름입니다.
+*Pdocument* 의 문서 이름입니다.
 
 ### <a name="remarks"></a>설명
 
-는 `CDataRecoveryHandler` *m_mapDocNameToAutosaveName*, *m_mapDocNameToDocumentPtr*및 *m_mapDocNameToRestoreBool*에서 문서 이름을 키로 사용 합니다. 이러한 매개 변수를 통해에서 `CDataRecoveryHandler` `CDocument` 개체, 자동 저장 파일 이름 및 자동 저장 설정을 모니터링할 수 있습니다.
+는 `CDataRecoveryHandler` *m_mapDocNameToAutosaveName*, *m_mapDocNameToDocumentPtr* 및 *m_mapDocNameToRestoreBool* 에서 문서 이름을 키로 사용 합니다. 이러한 매개 변수를 통해에서 `CDataRecoveryHandler` `CDocument` 개체, 자동 저장 파일 이름 및 자동 저장 설정을 모니터링할 수 있습니다.
 
 ## <a name="cdatarecoveryhandlergetnormaldocumenttitle"></a><a name="getnormaldocumenttitle"></a> CDataRecoveryHandler:: GetNormalDocumentTitle
 
@@ -463,7 +464,7 @@ virtual void QueryRestoreAutosavedDocuments();
 
 응용 프로그램이 Unicode 인 경우이 메서드는 사용자에 게 [Ctaskdialog](../../mfc/reference/ctaskdialog-class.md) 를 표시 합니다. 그렇지 않으면 프레임 워크는 [AfxMessageBox](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox) 을 사용 하 여 사용자를 쿼리 합니다.
 
-는 `QueryRestoreAutosavedDocuments` 사용자의 모든 응답을 수집한 후 *m_mapDocNameToRestoreBool*멤버 변수에 정보를 저장 합니다. 이 메서드는 자동 저장 된 문서를 복원 하지 않습니다.
+는 `QueryRestoreAutosavedDocuments` 사용자의 모든 응답을 수집한 후 *m_mapDocNameToRestoreBool* 멤버 변수에 정보를 저장 합니다. 이 메서드는 자동 저장 된 문서를 복원 하지 않습니다.
 
 ## <a name="cdatarecoveryhandlerreadopendocumentlist"></a><a name="readopendocumentlist"></a> CDataRecoveryHandler:: ReadOpenDocumentList
 
@@ -479,7 +480,7 @@ TRUE 이면 `ReadOpenDocumentList` 레지스트리에서 하나 이상의 문서
 
 ### <a name="remarks"></a>설명
 
-이 함수는 레지스트리에서 열린 문서 정보를 로드 하 고 *m_mapDocNameToAutosaveName*멤버 변수에 저장 합니다.
+이 함수는 레지스트리에서 열린 문서 정보를 로드 하 고 *m_mapDocNameToAutosaveName* 멤버 변수에 저장 합니다.
 
 `ReadOpenDocumentList`는 모든 데이터를 로드 한 후 레지스트리에서 문서 정보를 삭제 합니다.
 
@@ -506,7 +507,7 @@ virtual BOOL RemoveDocumentInfo(CDocument* pDocument);
 
 `RemoveDocumentInfo`에서 열린 문서 목록에 *pdocument* 를 찾을 수 없는 경우 아무 작업도 수행 하지 않고 TRUE를 반환 합니다.
 
-이 메서드를 사용 하려면 *m_dwRestartManagerSupportFlags*에서 AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES 설정 해야 합니다.
+이 메서드를 사용 하려면 *m_dwRestartManagerSupportFlags* 에서 AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES 설정 해야 합니다.
 
 ## <a name="cdatarecoveryhandlerreopenpreviousdocuments"></a><a name="reopenpreviousdocuments"></a> CDataRecoveryHandler::ReopenPreviousDocuments
 
@@ -524,7 +525,7 @@ virtual BOOL ReopenPreviousDocuments();
 
 이 메서드는 이전에 열린 문서를 가장 최근에 저장 한 것을 엽니다. 문서가 저장 되지 않았거나 자동으로 저장 되지 않은 경우 `ReopenPreviousDocuments` 는 해당 파일 형식에 대 한 템플릿을 기반으로 하는 빈 문서를 엽니다.
 
-이 메서드를 사용 하려면 *m_dwRestartManagerSupportFlags*에서 AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES 설정 해야 합니다. 이 매개 변수가 설정 되지 않은 경우는 `ReopenPreviousDocuments` 아무 작업도 수행 하지 않고 FALSE를 반환 합니다.
+이 메서드를 사용 하려면 *m_dwRestartManagerSupportFlags* 에서 AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES 설정 해야 합니다. 이 매개 변수가 설정 되지 않은 경우는 `ReopenPreviousDocuments` 아무 작업도 수행 하지 않고 FALSE를 반환 합니다.
 
 이전에 연 문서 목록에 문서를 저장 하지 않은 경우는 `ReopenPreviousDocuments` 아무 작업도 수행 하지 않고 FALSE를 반환 합니다.
 
@@ -662,7 +663,7 @@ virtual BOOL UpdateDocumentInfo(CDocument* pDocument);
 
 사용자가 문서를 저장 하면 응용 프로그램은 더 이상 필요 하지 않으므로 자동으로 저장 된 파일을 제거 합니다. `UpdateDocumentInfo`[CDataRecoveryHandler:: RemoveDocumentInfo](#removedocumentinfo)를 호출 하 여 자동 저장 된 파일을 삭제 합니다. `UpdateDocumentInfo` 그런 다음은 해당 정보를 삭제 하지만 저장 된 문서는 계속 열려 있기 때문에 현재 열려 있는 문서 목록에 *Pdocument* 의 정보를 추가 `RemoveDocumentInfo` 합니다.
 
-이 메서드를 사용 하려면 *m_dwRestartManagerSupportFlags*에서 AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES 설정 해야 합니다.
+이 메서드를 사용 하려면 *m_dwRestartManagerSupportFlags* 에서 AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES 설정 해야 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

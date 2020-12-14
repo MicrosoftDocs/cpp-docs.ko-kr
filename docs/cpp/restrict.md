@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 제한'
 title: restrict
 ms.date: 02/09/2018
 f1_keywords:
@@ -7,20 +8,20 @@ helpviewer_keywords:
 - __declspec keyword [C++], restrict
 - restrict __declspec keyword
 ms.assetid: f39cf632-68d8-4362-a497-2d4c15693689
-ms.openlocfilehash: a0108cff3d6b98fd929b7888d2ad718e7b6b3a64
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e2900e46d3b8e452661800c1c511418f936a5b0c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213257"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97223713"
 ---
 # <a name="restrict"></a>restrict
 
 **Microsoft 전용**
 
-포인터 형식을 반환 하는 함수 선언 또는 정의에 적용 되는 경우 **`restrict`** 함수는 *별칭이*지정 되지 않은 개체 (즉, 다른 포인터에서 참조 됨)를 반환 한다는 것을 컴파일러에 알립니다. 이렇게 하면 컴파일러가 추가 최적화를 수행할 수 있습니다.
+포인터 형식을 반환 하는 함수 선언 또는 정의에 적용 되는 경우 **`restrict`** 함수는 *별칭이* 지정 되지 않은 개체 (즉, 다른 포인터에서 참조 됨)를 반환 한다는 것을 컴파일러에 알립니다. 이렇게 하면 컴파일러가 추가 최적화를 수행할 수 있습니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 > **`__declspec(restrict)`***pointer_return_type* *함수*();
 
@@ -113,6 +114,6 @@ int main()
 
 ## <a name="see-also"></a>참조
 
-[C++ 키워드](../cpp/keywords-cpp.md)<br/>
+[키워드](../cpp/keywords-cpp.md)<br/>
 [__declspec](../cpp/declspec.md)<br/>
 [__declspec (noalias)](../cpp/noalias.md)

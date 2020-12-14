@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: &lt; streambuf &gt; typedef'
 title: '&lt;streambuf&gt; 형식 정의'
 ms.date: 11/04/2016
 f1_keywords:
 - iosfwd/std::streambuf
 - iosfwd/std::wstreambuf
 ms.assetid: 2678e18f-f0f0-4995-bc53-f1bc7dfc4ec6
-ms.openlocfilehash: f08c08de0d6449714f953f5a65fadd2e0279ed44
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: ae5394213143b05704d452e38eaae0b3581849cd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843198"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97221971"
 ---
 # <a name="ltstreambufgt-typedefs"></a>&lt;streambuf&gt; 형식 정의
 

@@ -1,22 +1,23 @@
 ---
+description: '자세한 정보: c + + 표준 라이브러리 컨테이너'
 title: C++ 표준 라이브러리 컨테이너
 ms.date: 11/04/2016
 helpviewer_keywords:
 - C++ Standard Library, class template containers
 - containers, C++ Standard Library
 ms.assetid: 8e915ca1-19ba-4f0d-93c8-e2c3bfd638eb
-ms.openlocfilehash: 01be754dd7b418f64cf495d7563f65b323265df8
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 3f95654b5b6f06e62621a5a325e794cf2a764af3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81376695"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97222049"
 ---
 # <a name="c-standard-library-containers"></a>C++ 표준 라이브러리 컨테이너
 
-표준 라이브러리는 관련 개체 컬렉션을 저장할, 형식이 안전한 다양한 컨테이너를 제공합니다. 컨테이너는 클래스 템플릿입니다. 컨테이너 변수를 선언할 때 컨테이너가 보유할 요소의 형식을 지정합니다. 컨테이너는 이니셜라이저 목록을 사용하여 생성할 수 있습니다. 요소를 추가 및 제거하고 다른 작업을 수행하기 위한 멤버 함수가 있습니다.
+표준 라이브러리는 관련 개체 컬렉션을 저장할, 형식이 안전한 다양한 컨테이너를 제공합니다. 컨테이너는 클래스 템플릿입니다. 컨테이너 변수를 선언할 때 컨테이너에 포함할 요소의 형식을 지정 합니다. 컨테이너는 이니셜라이저 목록을 사용하여 생성할 수 있습니다. 요소를 추가 및 제거 하 고 다른 작업을 수행 하기 위한 멤버 함수가 있습니다.
 
-[반복기](../standard-library/iterators.md)를 사용하여 컨테이너의 요소를 반복하고 개별 요소에 액세스합니다. 멤버 함수 및 연산자 및 전역 함수를 사용하여 이터레이터를 명시적으로 사용할 수 있습니다. 예를 들면 range-for 루프를 암시적으로 사용할 수도 있습니다. 모든 C++ 표준 라이브러리 컨테이너에 대한 반복기에 공통적인 인터페이스가 있지만 각 컨테이너에서 자체적으로 특수화된 반복기를 정의합니다.
+[반복기](../standard-library/iterators.md)를 사용하여 컨테이너의 요소를 반복하고 개별 요소에 액세스합니다. 해당 멤버 함수 및 연산자와 전역 함수를 사용 하 여 반복기를 명시적으로 사용할 수 있습니다. 예를 들면 range-for 루프를 암시적으로 사용할 수도 있습니다. 모든 C++ 표준 라이브러리 컨테이너에 대한 반복기에 공통적인 인터페이스가 있지만 각 컨테이너에서 자체적으로 특수화된 반복기를 정의합니다.
 
 컨테이너는 시퀀스 컨테이너, 연관 컨테이너 및 컨테이너 어댑터의 세 가지 범주로 나눌 수 있습니다.
 
@@ -26,11 +27,11 @@ ms.locfileid: "81376695"
 
 `vector` 컨테이너는 배열처럼 동작하지만 필요에 따라 자동으로 증가할 수 있습니다. 임의로 액세스되고 지속적으로 저장되며 길이가 매우 유연하게 조정됩니다. 따라서 `vector`는 대부분의 애플리케이션에 대한 기본 시퀀스 컨테이너입니다. 사용할 시퀀스 컨테이너의 종류에 대해 확실히 모르는 경우 벡터를 사용하여 시작합니다. 자세한 내용은 [vector 클래스](../standard-library/vector-class.md)를 참조하세요.
 
-`array` 컨테이너의 일부 장점은 `vector`있지만 길이는 유연하지 않습니다. 자세한 내용은 [array 클래스](../standard-library/array-class-stl.md)를 참조하세요.
+`array`컨테이너는의 일부 장점을 `vector` 갖지만 길이는 유연성이 아닙니다. 자세한 내용은 [array 클래스](../standard-library/array-class-stl.md)를 참조하세요.
 
-`deque`(양쪽구 큐) 컨테이너를 사용하면 컨테이너의 시작과 끝에 빠르게 삽입하고 삭제할 수 있습니다. 임의 액세스 및 유연한 길이의 `vector`장점을 공유하지만 연속적이지는 않습니다. 자세한 내용은 [deque 클래스](../standard-library/deque-class.md)를 참조하세요.
+`deque`(양쪽구 큐) 컨테이너를 사용하면 컨테이너의 시작과 끝에 빠르게 삽입하고 삭제할 수 있습니다. 의 임의 액세스 및 유연한 길이 장점을 공유 `vector` 하지만 인접 하지는 않습니다. 자세한 내용은 [deque 클래스](../standard-library/deque-class.md)를 참조하세요.
 
-`list` 컨테이너는 이중 으로 연결된 목록으로, 컨테이너의 아무 곳이나 양방향 액세스, 빠른 삽입 및 빠른 삭제를 가능하게 하지만 컨테이너의 요소에 임의로 액세스할 수는 없습니다. 자세한 내용은 [list 클래스](../standard-library/list-class.md)를 참조하세요.
+`list`컨테이너는 컨테이너의 모든 위치에서 양방향 액세스, 빠른 삽입 및 빠른 삭제가 가능한 이중 연결 목록 이지만, 컨테이너의 요소에 임의로 액세스할 수는 없습니다. 자세한 내용은 [list 클래스](../standard-library/list-class.md)를 참조하세요.
 
 `forward_list` 컨테이너는 `list`의 전방향 액세스 버전인 단일 연결 목록입니다. 자세한 내용은 [forward_list 클래스](../standard-library/forward-list-class.md)를 참조하세요.
 
@@ -44,11 +45,11 @@ ms.locfileid: "81376695"
 
 `map` 및 `set`를 사용하여 키 또는 요소의 인스턴스를 컨테이너에 하나만 삽입할 수 있습니다. 요소의 여러 인스턴스가 필요한 경우 `multimap` 또는 `multiset`를 사용하세요. 순서가 지정되지 않은 버전은 `unordered_multimap` 및 `unordered_multiset`입니다. 자세한 내용은 [multimap 클래스](../standard-library/multimap-class.md), [unordered_multimap 클래스](../standard-library/unordered-multimap-class.md), [multiset 클래스](../standard-library/multiset-class.md) 및 [unordered_multiset 클래스](../standard-library/unordered-multiset-class.md)를 참조하세요.
 
-순서가 지정된 맵 및 집합은 양방향 반복기를 지원하고 순서가 지정되지 않은 맵 및 집합은 정방향 반복기를 지원합니다. 자세한 내용은 [이터레이터](../standard-library/iterators.md)를 참조하십시오.
+순서가 지정된 맵 및 집합은 양방향 반복기를 지원하고 순서가 지정되지 않은 맵 및 집합은 정방향 반복기를 지원합니다. 자세한 내용은 [반복기](../standard-library/iterators.md)를 참조하세요.
 
 ### <a name="heterogeneous-lookup-in-associative-containers-c14"></a>연관 컨테이너의 유형이 다른 조회(C++14)
 
-정렬된 연관 컨테이너(맵, 멀티맵, 집합 및 다중 집합)는 이제 이기종 조회를 지원하므로, 더 이상 `find()` `lower_bound()`와 같은 멤버 함수의 키 또는 요소와 동일한 개체 유형을 전달할 필요가 없습니다. 대신, 오버로드된 `operator<`가 정의되어 있으며 키 형식 비교가 가능하다면 어떠한 형식도 전달할 수 있습니다.
+이제 정렬 된 연관 컨테이너 (map, multimap, set 및 multiset)가 유형이 다른 조회를 지원 합니다. 즉, 및와 같은 멤버 함수의 키 또는 요소와 정확히 같은 개체 형식을 전달할 필요가 없습니다 `find()` `lower_bound()` . 대신, 오버로드된 `operator<`가 정의되어 있으며 키 형식 비교가 가능하다면 어떠한 형식도 전달할 수 있습니다.
 
 컨테이너 변수를 선언할 때 다음과 같이 `std::less<>` 또는 `std::greater<>` "다이아몬드 함수자" 비교 연산자를 지정하면 유형이 다른 조회가 옵트인 방식으로 사용하도록 설정됩니다.
 
@@ -58,7 +59,7 @@ std::set<BigObject, std::less<>> myNewSet;
 
 기본 비교 연산자를 사용하는 경우 컨테이너는 C++11 이전의 경우와 똑같이 작동합니다.
 
-다음 예제에서는 각 개체의 `operator<` `std::set` `BigObject::id` 멤버와 비교할 수 있는 작은 문자열을 전달하기만 하면 a의 사용자가 조회를 수행할 수 있도록 오버로드하는 방법을 보여 주습니다.
+다음 예제에서는 `operator<` 의 사용자가 `std::set` 각 개체의 멤버와 비교할 수 있는 작은 문자열을 전달 하 여 조회를 수행할 수 있도록를 오버 로드 하는 방법을 보여 줍니다 `BigObject::id` .
 
 ```cpp
 #include <set>
@@ -119,7 +120,7 @@ int main()
 //Output: myNewSet element = 62F
 ```
 
-맵, 멀티맵, 세트 및 멀티셋의 다음 멤버 함수가 이기종 조회를 지원하기 위해 오버로드되었습니다.
+Map, multimap, set 및 multiset의 다음 멤버 함수는 유형이 다른 조회를 지원 하도록 오버 로드 되었습니다.
 
 1. 찾기
 
@@ -133,7 +134,7 @@ int main()
 
 ## <a name="container-adapters"></a>컨테이너 어댑터
 
-컨테이너 어댑터는 간단 명료하게 인터페이스를 제한하는 시퀀스 또는 연관 컨테이너의 변형입니다. 컨테이너 어댑터는 이터레이터를 지원하지 않습니다.
+컨테이너 어댑터는 간단 명료하게 인터페이스를 제한하는 시퀀스 또는 연관 컨테이너의 변형입니다. 컨테이너 어댑터는 반복기를 지원 하지 않습니다.
 
 `queue` 컨테이너는 FIFO(선입 선출) 의미 체계를 따릅니다. 큐에 *푸시*(삽입)되는 첫 번째 요소가 큐에서 처음으로 *팝*(제거)됩니다. 자세한 내용은 [queue 클래스](../standard-library/queue-class.md)를 참조하세요.
 
@@ -141,13 +142,13 @@ int main()
 
 `stack` 컨테이너는 LIFO(후입 선출) 의미 체계를 따릅니다. 스택에 푸시된 마지막 요소가 첫 번째 팝되는 요소입니다. 자세한 내용은 [stack 클래스](../standard-library/stack-class.md)를 참조하세요.
 
-컨테이너 어댑터는 이터레이터를 지원하지 않으므로 C++ 표준 라이브러리 알고리즘과 함께 사용할 수 없습니다. 자세한 내용은 [알고리즘](../standard-library/algorithms.md)을 참조하세요.
+컨테이너 어댑터는 반복기를 지원 하지 않기 때문에 c + + 표준 라이브러리 알고리즘과 함께 사용할 수 없습니다. 자세한 내용은 [알고리즘](../standard-library/algorithms.md)을 참조하세요.
 
 ## <a name="requirements-for-container-elements"></a>컨테이너 요소에 대한 요구 사항
 
 일반적으로 C++ 표준 라이브러리 컨테이너에 삽입되는 요소는 임의의 개체 형식에 대한 요소입니다(복사할 수 있는 경우). 이동 전용 요소(예: `vector<unique_ptr<T>>`을 사용하여 만든 `unique_ptr<>`)는 복사를 시도하는 멤버 함수를 호출하지 않는 한 작동합니다.
 
-소멸자는 예외를 throw할 수 없습니다.
+소멸자는 예외를 throw 할 수 없습니다.
 
 이 문서의 앞부분에서 설명한 순서가 지정된 연관 컨테이너는 공용 비교 연산자를 정의해야 합니다. 기본적으로 연산자는 `operator<`이지만 `operator<`를 사용하지 않는 형식도 지원됩니다.
 
@@ -155,21 +156,21 @@ int main()
 
 ## <a name="accessing-container-elements"></a>컨테이너 요소 액세스
 
-반복기를 사용하여 컨테이너 요소에 액세스합니다. 자세한 내용은 [이터레이터](../standard-library/iterators.md)를 참조하십시오.
+반복기를 사용하여 컨테이너 요소에 액세스합니다. 자세한 내용은 [반복기](../standard-library/iterators.md)를 참조하세요.
 
 > [!NOTE]
 > [range-based for 루프](../cpp/range-based-for-statement-cpp.md)를 사용하여 C++ 표준 라이브러리 컬렉션을 반복할 수도 있습니다.
 
 ## <a name="comparing-containers"></a>컨테이너 비교
 
-모든 컨테이너는 같은 요소 형식을 가진 같은 형식의 두 컨테이너를 비교하기 위해 == 연산자를 오버로드합니다. ==를\<사용하여 벡터 문자열> 다른\<벡터 문자열> 비교할 수 있지만>\<벡터 문자열을\<목록 문자열>\<또는 벡터\<문자열> 벡터 char*> 비교할 수는 없습니다.  C++98/03에서 [std::equal](algorithm-functions.md#equal) 또는 [std::mismatch를](algorithm-functions.md#mismatch) 사용하여 서로 다른 컨테이너 유형 및/또는 요소 유형을 비교할 수 있습니다. C ++11에서는 [std:is_permutation](algorithm-functions.md#is_permutation)사용할 수도 있습니다. 그러나 이러한 모든 경우에 함수는 컨테이너의 길이가 동일하다고 가정합니다. 두 번째 범위가 첫 번째 범위보다 짧은 경우 정의되지 않은 동작이 나타납니다. 두 번째 범위가 더 긴 경우에도 첫 번째 범위의 끝 이후에는 비교가 계속되지 않기 때문에 잘못된 결과가 나옵니다.
+모든 컨테이너는 같은 요소 형식을 가진 같은 형식의 두 컨테이너를 비교하기 위해 == 연산자를 오버로드합니다. = =를 사용 하 여 벡터를 \<string> 다른 벡터와 비교할 수 있지만 벡터를 \<string> 목록 또는 벡터와 비교 하는 데 사용할 수는 없습니다 \<string> \<string> \<string> \<char*> .  C + + 98/03에서는 [std:: equal](algorithm-functions.md#equal) 또는 [std:: 불일치](algorithm-functions.md#mismatch) 를 사용 하 여 다른 종류의 컨테이너 형식 및/또는 요소 형식을 비교할 수 있습니다. C + + 11에서는 [std:: is_permutation](algorithm-functions.md#is_permutation)를 사용할 수도 있습니다. 그러나 이러한 모든 경우에 함수는 컨테이너의 길이가 동일 하다 고 가정 합니다. 두 번째 범위가 첫 번째 범위보다 짧은 경우 정의되지 않은 동작이 나타납니다. 두 번째 범위가 더 긴 경우에도 첫 번째 범위의 끝 이후에는 비교가 계속되지 않기 때문에 잘못된 결과가 나옵니다.
 
 ### <a name="comparing-dissimilar-containers-c14"></a>다른 종류의 컨테이너 비교(C++14)
 
-C++14 이상에서는 두 개의 완전한 범위를 취하는 `std::equal`의 ? `std::mismatch`또는 `std::is_permutation` 함수 오버로드 중 하나를 사용하여 서로 다른 컨테이너 및/또는 서로 다른 요소 유형을 비교할 수 있습니다. 이러한 오버로드를 사용하면 길이가 서로 다른 컨테이너를 비교할 수 있습니다. 이 오버로드는 사용자 오류 취약성이 훨씬 덜하며 길이가 서로 다른 컨테이너를 비교할 때 일정한 시간에 false를 반환하도록 최적화되어 있습니다. 따라서 명확한 이유가 없거나 이중 범위 최적화의 이점을 얻지 못하는 [std::list](../standard-library/list-class.md) 컨테이너를 사용하지 않는 경우 이러한 오버로드를 사용하는 것이 좋습니다.
+C + + 14 이상에서는 `std::equal` `std::mismatch` `std::is_permutation` 두 개의 전체 범위를 사용 하는, 또는 함수 오버 로드 중 하나를 사용 하 여 다른 종류의 컨테이너 및/또는 서로 다른 요소 형식을 비교할 수 있습니다. 이러한 오버로드를 사용하면 길이가 서로 다른 컨테이너를 비교할 수 있습니다. 이 오버로드는 사용자 오류 취약성이 훨씬 덜하며 길이가 서로 다른 컨테이너를 비교할 때 일정한 시간에 false를 반환하도록 최적화되어 있습니다. 따라서 이러한 오버 로드를 사용 하지 않는 것이 좋습니다. 그렇지 않은 경우에는 이러한 오버 로드를 사용 하는 것이 좋습니다 .이는 이중 범위 최적화의 이점을 활용 하지 않는 [std:: list](../standard-library/list-class.md) 컨테이너를 사용 하는 것입니다.
 
 ## <a name="see-also"></a>참고 항목
 
 [병렬 컨테이너](../parallel/concrt/parallel-containers-and-objects.md)\
-[\<샘플 컨테이너>](../standard-library/sample-container.md)\
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[\<sample container>](../standard-library/sample-container.md)\
+[C + + 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

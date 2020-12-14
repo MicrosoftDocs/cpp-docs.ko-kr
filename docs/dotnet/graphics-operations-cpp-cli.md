@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 그래픽 작업 (c + +/CLI)'
 title: 그래픽 작업(C++/CLI)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -18,26 +19,26 @@ helpviewer_keywords:
 - GDI+ [C++], converting image file formats
 - graphics [C++], converting image file formats
 ms.assetid: bba27228-b9b3-4c9c-b31c-a04b76702a95
-ms.openlocfilehash: c7c6d62eb4059069e6e266544ce6323c63dd15c0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 84dbc75aa306219b8733848ece5c594ca40a0489
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62393742"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97223544"
 ---
 # <a name="graphics-operations-ccli"></a>그래픽 작업(C++/CLI)
 
 Windows SDK를 사용 하 여 이미지 조작을 보여 줍니다.
 
-다음 항목의 사용을 보여 줍니다.는 <xref:System.Drawing.Image?displayProperty=fullName> 이미지 조작을 수행 하는 클래스입니다.
+다음 항목에서는 클래스를 사용 하 여 <xref:System.Drawing.Image?displayProperty=fullName> 이미지 조작을 수행 하는 방법을 보여 줍니다.
 
-## <a name="display"></a> .NET Framework로 이미지 표시
+## <a name="display-images-with-the-net-framework"></a><a name="display"></a> .NET Framework를 사용 하 여 이미지 표시
 
-다음 코드 예제에서는 수정 OnPaint 이벤트 처리기에 대 한 포인터를 검색 하는 <xref:System.Drawing.Graphics> 기본 폼에 대 한 개체입니다. <xref:System.Windows.Forms.Form.OnPaint%2A> 함수 대부분 Visual Studio 응용 프로그램 마법사를 사용 하 여 만든 Windows Forms 응용 프로그램을 위한 것입니다.
+다음 코드 예제에서는 OnPaint 이벤트 처리기를 수정 하 여 <xref:System.Drawing.Graphics> 기본 폼의 개체에 대 한 포인터를 검색 합니다. <xref:System.Windows.Forms.Form.OnPaint%2A>함수는 Visual Studio 응용 프로그램 마법사를 사용 하 여 만들 가능성이 가장 높은 Windows Forms 응용 프로그램을 위한 것입니다.
 
-이미지 표시 됩니다는 <xref:System.Drawing.Image> 클래스입니다. 이미지 데이터를 사용 하 여.jpg 파일에서 로드 되는 <xref:System.Drawing.Image.FromFile%2A?displayProperty=fullName> 메서드. 폼에 이미지를 그릴, 전에 폼 이미지에 맞게 크기가 조정 됩니다. 이미지의 그리기 수행 되는 <xref:System.Drawing.Graphics.DrawImage%2A?displayProperty=fullName> 메서드.
+이미지는 클래스로 표현 됩니다 <xref:System.Drawing.Image> . 이미지 데이터는 메서드를 사용 하 여 .jpg 파일에서 로드 됩니다. <xref:System.Drawing.Image.FromFile%2A?displayProperty=fullName> 폼에 이미지를 그리기 전에 이미지 크기를 조정 하 여 이미지를 수용 합니다. 이미지 그리기는 메서드를 사용 하 여 수행 됩니다 <xref:System.Drawing.Graphics.DrawImage%2A?displayProperty=fullName> .
 
-합니다 <xref:System.Drawing.Graphics> 하 고 <xref:System.Drawing.Image> 클래스는 모두를 <xref:System.Drawing?displayProperty=fullName> 네임 스페이스입니다.
+<xref:System.Drawing.Graphics>및 <xref:System.Drawing.Image> 클래스는 모두 <xref:System.Drawing?displayProperty=fullName> 네임 스페이스에 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -57,9 +58,9 @@ virtual Void Form1::OnPaint(PaintEventArgs^ pe) override
 }
 ```
 
-## <a name="draw"></a> .NET Framework로 도형 그리기
+## <a name="draw-shapes-with-the-net-framework"></a><a name="draw"></a> .NET Framework를 사용 하 여 도형 그리기
 
-다음 코드 예제에서는 합니다 <xref:System.Drawing.Graphics> 수정 하는 클래스를 <xref:System.Windows.Forms.Form.OnPaint%2A> 이벤트 처리기에 대 한 포인터를 검색 하는 <xref:System.Drawing.Graphics> 기본 폼에 대 한 개체입니다. 이 포인터는 다음 폼의 배경색을 설정 하 고 줄 및 사용 하 여 호를 그릴 하는 데 사용 됩니다 합니다 <xref:System.Drawing.Graphics.DrawLine%2A?displayProperty=fullName> 고 <xref:System.Drawing.Graphics.DrawArc%2A> 메서드.
+다음 코드 예제에서는 클래스를 사용 하 여 <xref:System.Drawing.Graphics> 이벤트 처리기를 수정 하 여 <xref:System.Windows.Forms.Form.OnPaint%2A> <xref:System.Drawing.Graphics> 기본 폼의 개체에 대 한 포인터를 검색 합니다. 이 포인터는 폼의 배경색을 설정 하 고 및 메서드를 사용 하 여 선과 호를 그리는 데 사용 <xref:System.Drawing.Graphics.DrawLine%2A?displayProperty=fullName> 됩니다 <xref:System.Drawing.Graphics.DrawArc%2A> .
 
 ### <a name="example"></a>예제
 
@@ -91,9 +92,9 @@ virtual Void Form1::OnPaint(PaintEventArgs^ pe ) override
 }
 ```
 
-## <a name="rotate"></a> .NET Framework로 이미지 회전
+## <a name="rotate-images-with-the-net-framework"></a><a name="rotate"></a> .NET Framework를 사용 하 여 이미지 회전
 
-다음 코드 예제에서는 <xref:System.Drawing.Image?displayProperty=fullName> 클래스를 디스크에서 이미지를 로드, 90도 회전 및 새.jpg 파일로 저장 합니다.
+다음 코드 예제에서는 클래스를 사용 하 여 <xref:System.Drawing.Image?displayProperty=fullName> 디스크에서 이미지를 로드 하 고, 90도 회전 하 고, 새 .jpg 파일로 저장 하는 방법을 보여 줍니다.
 
 ### <a name="example"></a>예제
 
@@ -112,9 +113,9 @@ int main()
 }
 ```
 
-## <a name="convert"></a> .NET Framework로 이미지 파일 형식 변환
+## <a name="convert-image-file-formats-with-the-net-framework"></a><a name="convert"></a> 이미지 파일 형식을 .NET Framework 변환
 
-다음 코드 예제는 <xref:System.Drawing.Image?displayProperty=fullName> 클래스 및 <xref:System.Drawing.Imaging.ImageFormat?displayProperty=fullName> 변환 하 고 이미지 파일을 저장 하는 데 사용 하는 열거형입니다. 다음 코드는.jpg 파일에서 이미지를 로드 하 고.gif 및.bmp 파일 형식으로 저장 합니다.
+다음 코드 예제에서는 <xref:System.Drawing.Image?displayProperty=fullName> <xref:System.Drawing.Imaging.ImageFormat?displayProperty=fullName> 이미지 파일을 변환 및 저장 하는 데 사용 되는 클래스 및 열거형을 보여 줍니다. 다음 코드는 .jpg 파일에서 이미지를 로드 한 다음 .gif 및 .bmp 파일 형식으로 저장 합니다.
 
 ### <a name="example"></a>예제
 
@@ -139,10 +140,10 @@ int main()
 
 [그래픽 프로그래밍 시작](/dotnet/framework/winforms/advanced/getting-started-with-graphics-programming)
 
-[GDI + 관리 코드 정보](/dotnet/framework/winforms/advanced/about-gdi-managed-code)
+[GDI+ 관리 코드 정보](/dotnet/framework/winforms/advanced/about-gdi-managed-code)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[C++/CLI를 사용한 .NET 프로그래밍(Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+[C + +/CLI를 사용한 .NET 프로그래밍 (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
 
 <xref:System.Drawing>

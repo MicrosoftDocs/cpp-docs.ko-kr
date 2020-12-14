@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _cgets, _cgetws'
 title: _cgets, _cgetws
 ms.date: 4/2/2020
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - cgetws function
 - cgets function
 ms.assetid: 4d5e134a-58c3-4f62-befd-5d235b0212f4
-ms.openlocfilehash: 9ae7baaa01029dcf2c02f6ea80b6e816bb671596
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: ac712c7ee51c3f06dfe1dd4e881630768a7e6b20
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917436"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97221685"
 ---
 # <a name="_cgets-_cgetws"></a>_cgets, _cgetws
 
@@ -74,9 +75,9 @@ wchar_t *_cgetws(
 *버퍼*<br/>
 데이터의 스토리지 위치입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-`_cgets` 및 `_cgetws` 는 `buffer[2]`에서 문자열의 시작에 대한 포인터를 반환합니다. `buffer`이 **NULL**인 경우 이러한 함수는 [매개 변수 유효성 검사](../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기를 호출합니다. 계속해서 실행하도록 허용된 경우, 이러한 함수는 **NULL**을 반환하고 `errno`를 `EINVAL`로 설정합니다.
+`_cgets` 및 `_cgetws` 는 `buffer[2]`에서 문자열의 시작에 대한 포인터를 반환합니다. `buffer`이 **NULL** 인 경우 이러한 함수는 [매개 변수 유효성 검사](../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기를 호출합니다. 계속해서 실행하도록 허용된 경우, 이러한 함수는 **NULL** 을 반환하고 `errno`를 `EINVAL`로 설정합니다.
 
 ## <a name="remarks"></a>설명
 
@@ -147,7 +148,7 @@ Line Length = 16
 Text = A line of input.
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[콘솔 및 포트 I/O](../c-runtime-library/console-and-port-i-o.md)<br/>
+[콘솔 및 포트 i/o](../c-runtime-library/console-and-port-i-o.md)<br/>
 [_getch, _getwch](../c-runtime-library/reference/getch-getwch.md)

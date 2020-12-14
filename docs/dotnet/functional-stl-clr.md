@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 함수형 (STL/CLR)'
 title: functional(STL/CLR)
 ms.date: 11/04/2016
 ms.topic: reference
@@ -63,18 +64,18 @@ helpviewer_keywords:
 - unary_delegate_noreturn function [STL/CLR]
 - unary_negate function [STL/CLR]
 ms.assetid: 88738b8c-5d37-4375-970e-a4442bf5efde
-ms.openlocfilehash: 00d719df2fdba892d1d9362da2b2172bac9ca16f
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 48db11b7a30ae46eb52ff73cd961759e6be93fc5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91499704"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97223570"
 ---
 # <a name="functional-stlclr"></a>functional(STL/CLR)
 
 STL/CLR 헤더를 포함 `<cliext/functional>` 하 여 많은 템플릿 클래스와 관련 된 템플릿 대리자 및 함수를 정의 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 #include <functional>
@@ -390,7 +391,7 @@ int main()
 
 `binder1st`인수 및 함수에 대 한를 생성 합니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 template<typename Fun,
@@ -471,7 +472,7 @@ int main()
 
 `binder2nd`인수 및 함수에 대 한를 생성 합니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 template<typename Fun,
@@ -2154,7 +2155,7 @@ int main()
 
 `unary_negate`함수에 대해를 생성 합니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 template<typename Fun>
@@ -2226,7 +2227,7 @@ int main()
 
 `binary_negate`함수에 대해를 생성 합니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 template<typename Fun>

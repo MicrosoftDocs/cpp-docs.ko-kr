@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3698'
 title: 컴파일러 오류 C3698
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3698
 ms.assetid: 3c02fb08-7ba4-4637-a06f-19926cb2b5f1
-ms.openlocfilehash: 29c1df618d6a8a14f441c09a6db0f9457133910b
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 5156277d8e650b71b2f2722347a0d8ed14ff24ec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74758049"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97222972"
 ---
 # <a name="compiler-error-c3698"></a>컴파일러 오류 C3698
 

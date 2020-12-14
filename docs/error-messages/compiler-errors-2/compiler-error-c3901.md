@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3901'
 title: 컴파일러 오류 C3901
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3901
 ms.assetid: 19af4141-39ad-4c16-a68f-3ae76f648186
-ms.openlocfilehash: 43dc5e6e4e515bf5fea867ee61de00f98a60a602
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: b69897133dc787986dc8e1b750b64fdca35ad85f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74749089"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97222647"
 ---
 # <a name="compiler-error-c3901"></a>컴파일러 오류 C3901
 

@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _CIatan2'
 title: _CIatan2
 ms.date: 4/2/2020
 api_name:
@@ -25,16 +26,16 @@ helpviewer_keywords:
 - _CIatan2 intrinsic
 - CIatan2 intrinsic
 ms.assetid: 31f8cc78-b79f-4576-b73b-8add18e08680
-ms.openlocfilehash: 62baae97cec3c572f14a01f2f5c0ad189cb4dbfd
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 5b0c5f495b8bf5d47404cc04a69a8b2f31af39a4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918113"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97221646"
 ---
 # <a name="_ciatan2"></a>_CIatan2
 
-X와 *y* 가 스택의 맨 위에 *있는 값인* *x* / *y* 의 아크탄젠트를 계산 합니다.
+*X*  /  와 *y* 가 스택의 맨 위에 *있는* 값인 x *y* 의 아크탄젠트를 계산 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -54,7 +55,7 @@ void __cdecl _CIatan2();
 
 **플랫폼:** x86
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [사전순 함수 참조](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [atan, atanf, atanl, atan2, atan2f, atan2l](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)

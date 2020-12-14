@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __movsb'
 title: __movsb
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - rep movsb instruction
 - __movsb intrinsic
 ms.assetid: ba5469f6-f797-4cd2-bee8-74c7666c26d4
-ms.openlocfilehash: ca06fc9114f6e824a690cc4e612c21d705a485cd
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 6e4a9ba7482f7f614b80bd0596111874f0087c86
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217273"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97222452"
 ---
 # <a name="__movsb"></a>__movsb
 
 **Microsoft 전용**
 
-이동 문자열 (`rep movsb`) 명령을 생성 합니다.
+이동 문자열 ( `rep movsb` ) 명령을 생성 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -36,7 +37,7 @@ void __movsb(
 *대상이*\
 제한이 복사본의 대상에 대 한 포인터입니다.
 
-*Source*\
+*원본*\
 진행 복사본의 원본에 대 한 포인터입니다.
 
 *수*\
@@ -44,15 +45,15 @@ void __movsb(
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`__movsb`|x86, x64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 ## <a name="remarks"></a>설명
 
-그 결과에서 `Source` 가리키는 첫 번째 `Count` 바이트가 `Destination` 문자열에 복사 됩니다.
+그 결과에서 가리키는 첫 번째 `Count` 바이트가 `Source` 문자열에 복사 됩니다 `Destination` .
 
 이 루틴은 내장 루틴으로만 사용할 수 있습니다.
 
@@ -82,6 +83,6 @@ A big black dog. A big black dog.
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)
