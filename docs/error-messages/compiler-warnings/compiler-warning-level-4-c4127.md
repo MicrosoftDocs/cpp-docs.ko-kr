@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4127'
 title: 컴파일러 경고(수준 4) C4127
 ms.date: 10/16/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4127
 ms.assetid: f59ded9e-5227-45bd-ac43-2aa861581363
-ms.openlocfilehash: afca92602aa6033c56869d3f84192ca0f029a23e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 54c319c6894c0a82c99100c736498466a1c7c135
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218119"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97261894"
 ---
 # <a name="compiler-warning-level-4-c4127"></a>컴파일러 경고(수준 4) C4127
 

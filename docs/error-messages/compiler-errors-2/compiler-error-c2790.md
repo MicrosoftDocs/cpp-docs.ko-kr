@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2790'
 title: 컴파일러 오류 C2790
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2790
 ms.assetid: 38d4fce1-ba00-413d-8bc1-e8aa43d7bc1f
-ms.openlocfilehash: c63fe7bb3686692818337e890de7fe4c80a18158
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 0913b87f40e7f4ad2ecccb333e67bb0d76b4afde
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74739560"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97297805"
 ---
 # <a name="compiler-error-c2790"></a>컴파일러 오류 C2790
 

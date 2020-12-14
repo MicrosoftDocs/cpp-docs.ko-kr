@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2778'
 title: 컴파일러 오류 C2778
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2778
 ms.assetid: b24cb732-2914-42cc-8928-e2d87b393428
-ms.openlocfilehash: 247aba1b4dfe6b6d6db1e2b8f46f2aa08abf1a79
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: e614ed5ee94a4876a687bfa8257abc5bcd9d8587
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74739989"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97298073"
 ---
 # <a name="compiler-error-c2778"></a>컴파일러 오류 C2778
 
@@ -28,7 +29,7 @@ struct __declspec(uuid("00000000-0000-0000-0000-000000000000")) A {};
 struct __declspec(uuid("{00000000-0000-0000-0000-000000000000}")) B{};
 ```
 
-`uuid` 확장 특성은 중괄호 구분 기호를 사용 하거나 사용 하지 않고 [Clsidfromstring](/windows/win32/api/combaseapi/nf-combaseapi-clsidfromstring)에서 인식 하는 문자열을 허용 합니다.
+`uuid`확장 특성은 중괄호 구분 기호를 포함 하거나 포함 하지 않고 [Clsidfromstring](/windows/win32/api/combaseapi/nf-combaseapi-clsidfromstring)에서 인식 하는 문자열을 허용 합니다.
 
 다음 샘플에서는 C2778를 생성 합니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: OLE의 대화 상자'
 title: OLE의 대화 상자
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - dialog boxes [MFC], OLE
 - Insert object
 ms.assetid: 73c41eb8-738a-4d02-9212-d3395bb09a3a
-ms.openlocfilehash: b59ba16e6e68df2a539232636e8fe710750e3214
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 39353e75fafd65af1f3e5665afce28e3495a978b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616904"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97261504"
 ---
 # <a name="dialog-boxes-in-ole"></a>OLE의 대화 상자
 
@@ -30,7 +31,7 @@ ms.locfileid: "84616904"
 *아이콘 변경*<br/>
 이 대화 상자를 통해 사용자는 연결 된 항목 또는 포함 된 항목을 나타내기 위해 표시 되는 아이콘을 선택할 수 있습니다. 사용자가 편집 메뉴에서 변경 아이콘을 선택 하거나 붙여넣기 특수 또는 변환 대화 상자에서 아이콘 변경 단추를 선택 하면이 대화 상자를 표시 합니다. 사용자가 개체 삽입 대화 상자를 열고 아이콘으로 표시를 선택 하는 경우에도 표시 합니다. [COleChangeIconDialog](reference/colechangeicondialog-class.md) 클래스를 사용 하 여이 대화 상자를 표시 합니다.
 
-*변환할지*<br/>
+*변환*<br/>
 이 대화 상자를 사용 하 여 포함 되거나 연결 된 항목의 형식을 변경할 수 있습니다. 예를 들어 복합 문서에 메타 파일을 포함 하 고 나중에 다른 응용 프로그램을 사용 하 여 포함 된 메타 파일을 수정 하려는 경우 변환 대화 상자를 사용할 수 있습니다. 이 대화 상자는 일반적으로 편집 메뉴에서 *항목 유형* 개체를 클릭 한 다음 계단식 메뉴에서 변환을 클릭 하 여 표시 됩니다. [COleConvertDialog](reference/coleconvertdialog-class.md) 클래스를 사용 하 여이 대화 상자를 표시 합니다. 예제를 보려면 MFC OLE 샘플 [OCLIENT](../overview/visual-cpp-samples.md)를 실행 합니다.
 
 *링크 편집 또는 링크 업데이트*<br/>

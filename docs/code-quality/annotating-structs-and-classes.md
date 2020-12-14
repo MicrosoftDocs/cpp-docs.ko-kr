@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 구조체 및 클래스에 주석 달기'
 title: 구조체 및 클래스에 주석 지정
 ms.date: 06/28/2019
 ms.topic: conceptual
@@ -19,12 +20,12 @@ f1_keywords:
 - _Field_size_full_opt_
 - _Field_z_
 ms.assetid: b8278a4a-c86e-4845-aa2a-70da21a1dd52
-ms.openlocfilehash: fe177e6afea088b59b16bfbd0bff6fa00b526222
-ms.sourcegitcommit: 30792632548d1c71894f9fecbe2f554294b86020
+ms.openlocfilehash: b8e9a0cf3826de2beeb0a93f420216751d05d53e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91765117"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97279613"
 ---
 # <a name="annotating-structs-and-classes"></a>구조체 및 클래스에 주석 지정
 
@@ -54,7 +55,7 @@ ms.locfileid: "91765117"
 
 - `_Struct_size_bytes_(size)`
 
-     구조체 또는 클래스 선언에 적용 됩니다.  에서 지정 하는 바이트 수를 사용 하 여 해당 형식의 유효한 개체가 선언 된 형식 보다 클 수 있음을 나타냅니다 `size` .  예를 들면 다음과 같습니다.
+     구조체 또는 클래스 선언에 적용 됩니다.  에서 지정 하는 바이트 수를 사용 하 여 해당 형식의 유효한 개체가 선언 된 형식 보다 클 수 있음을 나타냅니다 `size` .  예를 들어:
 
     ```cpp
 
@@ -72,7 +73,7 @@ ms.locfileid: "91765117"
     min(pM->nSize, sizeof(MyStruct))
     ```
 
-## <a name="example"></a>예제: 
+## <a name="example"></a>예제
 
 ```cpp
 #include <sal.h>
@@ -104,7 +105,7 @@ struct MyBuffer
 - `_Field_range_` 의 `bufferSize` 값이 `bufferSize` 1과 `MaxBufferSize` (모두 포함) 범위 내에 있어야 함을 지정 합니다.
 - 및 주석의 최종 결과는 `_Struct_size_bytes_` `_Field_size_` 동일 합니다. 비슷한 레이아웃을 가진 구조 또는 클래스의 경우 `_Field_size_` 동일한 주석 보다 더 많은 참조와 계산이 있기 때문에 읽고 유지 관리 하기가 더 쉽습니다 `_Struct_size_bytes_` . `_Field_size_` 바이트 크기로 변환할 필요가 없습니다. 예를 들어, 바이트 크기가 void 포인터 필드의 유일한 옵션인 경우에 `_Field_size_bytes_` 는를 사용할 수 있습니다. 및가 모두 있는 경우 `_Struct_size_bytes_` `_Field_size_` 도구에서 둘 다 사용할 수 있습니다. 두 주석이 동의 하지 않는 경우에는이 도구를 통해 수행할 작업을 결정 해야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [C/c + + 코드 오류를 줄이기 위해 SAL 주석 사용](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [SAL 이해](../code-quality/understanding-sal.md)

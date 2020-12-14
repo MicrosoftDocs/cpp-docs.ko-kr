@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 잠금 동작에 주석 달기'
 title: 잠금 동작에 주석 지정
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -27,12 +28,12 @@ f1_keywords:
 - _Lock_level_order_
 - _Lock_kind_event_
 ms.assetid: 07769c25-9b97-4ab7-b175-d1c450308d7a
-ms.openlocfilehash: 371422275b965fd2ce12995b55221a011a4edae6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c26f33b9e2464f91786a6607cea9c3520b971824
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232367"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97279626"
 ---
 # <a name="annotating-locking-behavior"></a>잠금 동작에 주석 지정
 
@@ -62,7 +63,7 @@ SAL은 임계 영역, 뮤텍스, 스핀 잠금 및 기타 리소스 개체와 �
 
 다음 표에서는 잠금 주석을 보여 줍니다.
 
-|주석|설명|
+|Annotation|설명|
 |----------------|-----------------|
 |`_Acquires_exclusive_lock_(expr)`|함수에 주석을 달고 사후 상태에서 함수가 `expr`로 명명된 잠금 개체의 단독 잠금 수를 하나 증가시킴을 나타냅니다.|
 |`_Acquires_lock_(expr)`|함수에 주석을 달고 사후 상태에서 함수가 `expr`로 명명된 잠금 개체의 잠금 수를 하나 증가시킴을 나타냅니다.|
@@ -87,7 +88,7 @@ SAL은 임계 영역, 뮤텍스, 스핀 잠금 및 기타 리소스 개체와 �
 
 특정 잠금 개체는 연결된 잠금 함수의 구현에 의해 노출되지 않습니다.  다음 표에서는 이러한 노출되지 않는 잠금 개체에서 작동하는 함수에 주석을 사용하도록 설정하는 SAL 내장 변수를 보여 줍니다.
 
-|주석|설명|
+|Annotation|설명|
 |----------------|-----------------|
 |`_Global_cancel_spin_lock_`|취소 스핀 잠금을 설명합니다.|
 |`_Global_critical_region_`|임계 영역을 설명합니다.|
@@ -98,7 +99,7 @@ SAL은 임계 영역, 뮤텍스, 스핀 잠금 및 기타 리소스 개체와 �
 
 다음 표에서는 공유 데이터 액세스에 대한 주석을 보여 줍니다.
 
-|주석|설명|
+|Annotation|설명|
 |----------------|-----------------|
 |`_Guarded_by_(expr)`|변수에 주석을 추가하고 변수가 엑세스될 때마다 `expr`로 명명된 잠금 개체의 잠금 수가 1개 이상임을 나타냅니다.|
 |`_Interlocked_`|변수에 주석을 추가하며 `_Guarded_by_(_Global_interlock_)`와 동일합니다.|
@@ -109,7 +110,7 @@ SAL은 임계 영역, 뮤텍스, 스핀 잠금 및 기타 리소스 개체와 �
 
 스마트 잠금은 일반적으로 기본 잠금을 래핑하고 수명 주기를 관리 합니다. 다음 표에서는 의미 체계를 지 원하는 스마트 잠금과 RAII 코딩 패턴에서 사용할 수 있는 주석을 보여 줍니다 `move` .
 
-|주석|설명|
+|Annotation|설명|
 |----------------|-----------------|
 |`_Analysis_assume_smart_lock_acquired_`|분석기에 스마트 잠금을 획득 했다고 가정 합니다. 이 주석에는 참조 잠금 형식이 매개 변수로 필요 합니다.|
 |`_Analysis_assume_smart_lock_released_`|스마트 잠금이 해제 된 것으로 가정 하 여 분석기에 지시 합니다. 이 주석에는 참조 잠금 형식이 매개 변수로 필요 합니다.|

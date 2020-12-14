@@ -1,5 +1,6 @@
 ---
-title: '관계형 연산자: &lt; , &gt; , &lt; = 및&gt;='
+description: '자세한 정보: 관계형 연산자: &lt; , &gt; , &lt; = 및 &gt;='
+title: '관계형 연산자: &lt; , &gt; , &lt; = 및 &gt;='
 ms.date: 11/04/2016
 f1_keywords:
 - <
@@ -15,14 +16,14 @@ helpviewer_keywords:
 - less than or equal to operator
 - <= operator
 ms.assetid: d346b53d-f14d-4962-984f-89d39a17ca0f
-ms.openlocfilehash: 81421a135059b8804955d472365ebef9802d3210
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: dee784c5d93610b27a01ba4ecc36638b84a66885
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227116"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97252417"
 ---
-# <a name="relational-operators-lt-gt-lt-and-gt"></a>관계형 연산자: &lt; , &gt; , &lt; = 및&gt;=
+# <a name="relational-operators-lt-gt-lt-and-gt"></a>관계형 연산자: &lt; , &gt; , &lt; = 및 &gt;=
 
 ## <a name="syntax"></a>구문
 
@@ -84,9 +85,9 @@ int main() {
 
 형식이 같은 두 포인터가 같은 개체를 가리킬 경우 동일하다고 간주합니다. 개체의 비정적 멤버에 대한 두 포인터를 비교할 경우 다음 규칙이 적용됩니다.
 
-- 클래스 형식이이 아니고 **`union`** 두 멤버가, 또는와 같은 *액세스 지정자*로 구분 되지 않는 경우 **`public`** 마지막으로 선언 된 **`protected`** **`private`** 멤버에 대 한 포인터는 이전에 선언 된 멤버에 대 한 포인터 보다 큰 비교를 합니다.
+- 클래스 형식이이 아니고 **`union`** 두 멤버가, 또는와 같은 *액세스 지정자* 로 구분 되지 않는 경우 **`public`** 마지막으로 선언 된 **`protected`** **`private`** 멤버에 대 한 포인터는 이전에 선언 된 멤버에 대 한 포인터 보다 큰 비교를 합니다.
 
-- 두 멤버가 *액세스 지정자*로 분리 된 경우 결과가 정의 되지 않습니다.
+- 두 멤버가 *액세스 지정자* 로 분리 된 경우 결과가 정의 되지 않습니다.
 
 - 클래스 형식이 이면 **`union`** 의 다른 데이터 멤버에 대 한 포인터와 **`union`** 비교 합니다.
 

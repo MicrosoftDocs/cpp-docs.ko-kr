@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4061'
 title: 컴파일러 경고 (수준 4) C4061
 ms.date: 04/05/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4061
 ms.assetid: a99cf88e-7941-4519-8b1b-f6889d914b2f
-ms.openlocfilehash: 18c5a51e24af36c5a330e10a66ce3dcc38295fb1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9e76fd864e57e6d84ed28b1646e8950186945d11
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225282"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97262063"
 ---
 # <a name="compiler-warning-level-4-c4061"></a>컴파일러 경고 (수준 4) C4061
 

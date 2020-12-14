@@ -1,4 +1,5 @@
 ---
+description: 자세한 내용은 프레임 워크의 Dialog-Box 구성 요소를 확인 하세요.
 title: 프레임워크의 대화 상자 구성 요소
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - dialog templates [MFC], MFC framework
 - MFC dialog boxes [MFC], dialog resource
 ms.assetid: 592db160-0a8a-49be-ac72-ead278aca53f
-ms.openlocfilehash: b3290107337f60854e6abbd2f744aaa38af0b741
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 406ffda122c6663d698f008a25164f8836221a2f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616914"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97261543"
 ---
 # <a name="dialog-box-components-in-the-framework"></a>프레임워크의 대화 상자 구성 요소
 

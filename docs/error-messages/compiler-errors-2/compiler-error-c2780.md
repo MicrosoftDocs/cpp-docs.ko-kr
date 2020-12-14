@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2780'
 title: 컴파일러 오류 C2780
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2780
 ms.assetid: 423793d8-a3b2-4f35-85f8-ae1d043e2b69
-ms.openlocfilehash: cf327852da325940b1090e4f6199ac10c83ea09b
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 00b1117bdcae2559b7ec7c374f7b5ca403aa783c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74739963"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97298034"
 ---
 # <a name="compiler-error-c2780"></a>컴파일러 오류 C2780
 

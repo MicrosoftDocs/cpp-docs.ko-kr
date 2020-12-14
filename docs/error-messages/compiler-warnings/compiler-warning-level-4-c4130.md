@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4130'
 title: 컴파일러 경고(수준 4) C4130
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4130
 ms.assetid: 45e4c7b2-6b51-41c7-ba5e-941aa5c7d3dc
-ms.openlocfilehash: 7b2fbccfd3b124220d6e310c01adace1d3e112c1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e7096f471405b0b22bcb0a825dd9ccd0de4e3510
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219965"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97261816"
 ---
 # <a name="compiler-warning-level-4-c4130"></a>컴파일러 경고(수준 4) C4130
 

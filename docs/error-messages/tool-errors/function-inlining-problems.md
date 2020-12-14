@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 함수 인라이닝 문제'
 title: 함수 인라이닝 문제
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - -Ob2 C++ compiler option
 - function inlining problems
 ms.assetid: 65d59943-4b3c-4a43-aeb6-dccbf7686740
-ms.openlocfilehash: cb4653bd2f03683b9abad1eea0e9ffa88222090e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3c9c82c8b948acf7a64600c46fe87e17294fa844
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80184244"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97261738"
 ---
 # <a name="function-inlining-problems"></a>함수 인라이닝 문제
 
@@ -54,9 +55,9 @@ int main() {
 }
 ```
 
-`#pragma inline_depth` 컴파일러 지시문을 사용 하는 경우 값이 2 이상으로 설정 되어 있는지 확인 합니다. 0 값은 인라이닝을 해제 합니다. 또한 **/Pv1** 또는 **/ob2** 컴파일러 옵션을 사용 하 고 있는지 확인 합니다.
+컴파일러 지시문을 사용 하는 경우 `#pragma inline_depth` 값이 2 이상으로 설정 되어 있는지 확인 합니다. 0 값은 인라이닝을 해제 합니다. 또한 **/Pv1** 또는 **/ob2** 컴파일러 옵션을 사용 하 고 있는지 확인 합니다.
 
-여러 모듈에서 인라인 및 비 인라인 컴파일 옵션을 혼합 하면 문제가 발생할 수 있습니다. 함수 인라이닝 C++ 이 설정 된 ([/ob1](../../build/reference/ob-inline-function-expansion.md) 또는 [/o2](../../build/reference/ob-inline-function-expansion.md)) 함수를 사용 하 여 라이브러리를 만들었지만 함수를 설명 하는 해당 헤더 파일에 인라이닝이 해제 되어 있으면 (옵션 없음) 오류 LNK2001이 발생 합니다. 함수는 헤더 파일의 코드에 인라인 되지 않지만 라이브러리 파일에 있지 않기 때문에 참조를 확인 하는 주소가 없습니다.
+여러 모듈에서 인라인 및 비 인라인 컴파일 옵션을 혼합 하면 문제가 발생할 수 있습니다. 함수 인라이닝을 on으로 설정 하 여 c + + 라이브러리를 만든 경우 ([/Ob1](../../build/reference/ob-inline-function-expansion.md) 또는 [/dev2](../../build/reference/ob-inline-function-expansion.md)) 함수를 설명 하는 해당 헤더 파일에 인라인 해제 (옵션 없음)가 설정 되어 있으면 오류가 발생 합니다. 함수는 헤더 파일의 코드에 인라인 되지 않지만 라이브러리 파일에 있지 않기 때문에 참조를 확인 하는 주소가 없습니다.
 
 마찬가지로 함수 인라이닝을 사용 하는 프로젝트에서 헤더 파일 대신 .cpp 파일에 함수를 정의 하는 경우에도 LNK2019가 발생 합니다. 헤더 파일은 적절 하 게 간주 되는 모든 위치에 포함 되지만 .cpp 파일이 컴파일러를 통해 전달 될 때만 함수가 인라인 됩니다. 따라서 링커에서는 다른 모듈에서 사용 될 때 함수를 확인 되지 않은 외부 참조로 볼 수 있습니다.
 

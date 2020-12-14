@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4062'
 title: 컴파일러 경고(수준 4) C4062
 ms.date: 04/05/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4062
 ms.assetid: 36d1c6ae-c917-4b08-bf30-2eb49ee94169
-ms.openlocfilehash: efe021c9994e20f2630e31537bcc6099783b4308
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3aee4286fb8d06d98617ea6fa71929768cbd23c0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220004"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97262050"
 ---
 # <a name="compiler-warning-level-4-c4062"></a>컴파일러 경고(수준 4) C4062
 

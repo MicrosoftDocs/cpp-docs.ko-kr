@@ -1,17 +1,18 @@
 ---
+description: '자세한 정보: 식 계산기 오류 (CXXxxxx)'
 title: 식 계산기 오류
 ms.date: 04/16/2019
 ms.assetid: a47a9866-7fb2-4b21-978c-2b77402c7105
-ms.openlocfilehash: 04b0dde3fe60d2a00e9bb788386d6a242e210a52
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: 58cdae5ab7e8df0d8581e1afbbca888d220ece8f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64857186"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97261764"
 ---
 # <a name="expression-evaluator-errors-cxxxxxx"></a>식 계산기 오류(CXXxxxx)
 
-이 섹션은 디버거 및 진단 도구에서 생성 된 오류에 대 한 참조입니다. CXX 형식의 오류를 생성 하는 이러한 도구*xxxx* 수도*xxxx*여기서 *xxxx* 는 4 자리 숫자입니다.
+이 섹션은 디버거 및 진단 도구에서 생성 되는 오류에 대 한 참조입니다. 이러한 도구는 .CXX *xxxx* 또는 CAN *xxxx* 형식의 오류를 생성 합니다. 여기서 *xxxx* 는 네 자리 숫자입니다.
 
 [!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
@@ -85,6 +86,6 @@ ms.locfileid: "64857186"
 [식 계산기 오류 CXX0069](expression-evaluator-error-cxx0069.md) \
 [식 계산기 오류 CXX0072](expression-evaluator-error-cxx0072.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[C /C++ 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md)
+[C/C++ 컴파일러와 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md)

@@ -1,20 +1,21 @@
 ---
+description: '자세한 정보: Platform:: Collections:: UnorderedMapView 클래스'
 title: Platform::Collections::UnorderedMapView 클래스
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
 - collection/Platform::Collections::UnorderedMapView
 ms.assetid: 545a3725-2efd-4cc1-b590-4a7cd2351f61
-ms.openlocfilehash: acfc168959deb83244c98c5d361cf9e73c1388f2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 39f33fd75db92e81fa5321d8983b1b5ea9fce79a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213062"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97252378"
 ---
 # <a name="platformcollectionsunorderedmapview-class"></a>Platform::Collections::UnorderedMapView 클래스
 
-읽기 전용 보기를 키/값 쌍의 컬렉션인 *맵*으로 나타냅니다.
+읽기 전용 보기를 키/값 쌍의 컬렉션인 *맵* 으로 나타냅니다.
 
 ## <a name="syntax"></a>구문
 
@@ -28,10 +29,10 @@ ref class UnorderedMapView sealed;
 
 #### <a name="parameters"></a>매개 변수
 
-*시계의*<br/>
+*K*<br/>
 키/값 쌍의 키 형식입니다.
 
-*Hyper-v*<br/>
+*V*<br/>
 키/값 쌍의 값 형식입니다.
 
 *C*<br/>
@@ -45,7 +46,7 @@ UnorderedMapView는 ABI (응용 프로그램 이진 인터페이스)를 통해 �
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[UnorderedMapView:: UnorderedMapView](#ctor)|UnorderedMapView 클래스의 새 인스턴스를 초기화합니다.|
 
@@ -69,7 +70,7 @@ UnorderedMapView는 ABI (응용 프로그램 이진 인터페이스)를 통해 �
 
 **네임스페이스:** Platform::Collections
 
-## <a name="unorderedmapviewfirst-method"></a><a name="first"></a>UnorderedMapView:: First 메서드
+## <a name="unorderedmapviewfirst-method"></a><a name="first"></a> UnorderedMapView:: First 메서드
 
 순서가 지정 되지 않은 맵에서 첫 번째 [Windows:: Foundation:: Collections:: inputiterator<ikeyvaluepair<k \<K,V> ](/uwp/api/windows.foundation.collections.ikeyvaluepair-2) 요소를 지정 하는 반복기를 반환 합니다.
 
@@ -87,9 +88,9 @@ virtual Windows::Foundation::Collections::IIterator<
 
 ### <a name="remarks"></a>설명
 
-First ()에서 반환 된 반복기를 편리 하 게 유지 하는 방법은 형식 추론 키워드를 사용 하 여 선언 된 변수에 반환 값을 할당 하는 것입니다 **`auto`** . 예들 들어 `auto x = myMapView->First();`입니다.
+First ()에서 반환 된 반복기를 편리 하 게 유지 하는 방법은 형식 추론 키워드를 사용 하 여 선언 된 변수에 반환 값을 할당 하는 것입니다 **`auto`** . 예: `auto x = myMapView->First();`.
 
-## <a name="unorderedmapviewhaskey-method"></a><a name="haskey"></a>UnorderedMapView:: HasKey 메서드
+## <a name="unorderedmapviewhaskey-method"></a><a name="haskey"></a> UnorderedMapView:: HasKey 메서드
 
 현재 UnorderedMap에 지정한 키가 들어 있는지 여부를 확인합니다.
 
@@ -102,13 +103,13 @@ bool HasKey(K key);
 ### <a name="parameters"></a>매개 변수
 
 *key*<br/>
-요소를 찾는 데 사용되는 키입니다. 의 형식은 형식 `key` 이름 *K*입니다.
+요소를 찾는 데 사용되는 키입니다. 의 형식은 형식 `key` 이름 *K* 입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 **`true`** 키가 있으면이 고, 그렇지 않으면입니다. 그렇지 않으면 **`false`** 입니다.
 
-## <a name="unorderedmapviewlookup-method"></a><a name="lookup"></a>UnorderedMapView:: Lookup 메서드
+## <a name="unorderedmapviewlookup-method"></a><a name="lookup"></a> UnorderedMapView:: Lookup 메서드
 
 K 형식의 지정된 키와 연결된 V 형식의 값을 검색합니다.
 
@@ -121,13 +122,13 @@ V Lookup(K key);
 ### <a name="parameters"></a>매개 변수
 
 *key*<br/>
-UnorderedMapView에서 요소를 찾는 데 사용되는 키입니다. 의 형식은 형식 `key` 이름 *K*입니다.
+UnorderedMapView에서 요소를 찾는 데 사용되는 키입니다. 의 형식은 형식 `key` 이름 *K* 입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-`key`와 쌍을 이루는 값입니다. 반환 값의 형식은 형식 이름 *V*입니다.
+`key`와 쌍을 이루는 값입니다. 반환 값의 형식은 형식 이름 *V* 입니다.
 
-## <a name="unorderedmapviewsize-method"></a><a name="size"></a>UnorderedMapView:: Size 메서드
+## <a name="unorderedmapviewsize-method"></a><a name="size"></a> UnorderedMapView:: Size 메서드
 
 UnorderedMapView의 [Windows:: Foundation:: Collections:: inputiterator<ikeyvaluepair<k \<K,V> ](/uwp/api/windows.foundation.collections.ikeyvaluepair-2) 요소 수를 반환 합니다.
 
@@ -141,7 +142,7 @@ virtual property unsigned int Size;
 
 UnorderedMapView의 요소 수입니다.
 
-## <a name="unorderedmapviewsplit-method"></a><a name="split"></a>UnorderedMapView:: Split 메서드
+## <a name="unorderedmapviewsplit-method"></a><a name="split"></a> UnorderedMapView:: Split 메서드
 
 현재 UnorderedMapView 개체를 두 개의 UnorderedMapView 개체로 나눕니다. 이 메서드는 작동하지 않습니다.
 
@@ -167,7 +168,7 @@ void Split(
 
 이 메서드는 작동하지 않으며, 아무 작업도 수행하지 않습니다.
 
-## <a name="unorderedmapviewunorderedmapview-constructor"></a><a name="ctor"></a>UnorderedMapView:: UnorderedMapView 생성자
+## <a name="unorderedmapviewunorderedmapview-constructor"></a><a name="ctor"></a> UnorderedMapView:: UnorderedMapView 생성자
 
 UnorderedMapView 클래스의 새 인스턴스를 초기화합니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 대화 상자 클래스'
 title: 대화 상자 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - common dialog classes [MFC]
 - tab dialog boxes
 ms.assetid: db75da23-4eff-4c6c-beae-79cf046fbce9
-ms.openlocfilehash: 2399b27fc081dcc810277079729b0e62ef80d603
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 5c178bc6895e338bf4b2876be5233c1b80007abc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616945"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97261556"
 ---
 # <a name="dialog-box-classes"></a>대화 상자 클래스
 
@@ -60,7 +61,7 @@ Windows 인쇄 속성 시트를 제공 합니다.
 OLE는 창에 몇 가지 일반적인 대화 상자를 추가 합니다. 이러한 클래스는 OLE 일반 대화 상자를 캡슐화 합니다.
 
 [COleDialog](reference/coledialog-class.md)<br/>
-프레임 워크에서 모든 OLE 대화 상자에 대 한 일반적인 구현을 포함 하는 데 사용 됩니다. 사용자 인터페이스 범주의 모든 대화 상자 클래스는이 기본 클래스에서 파생 됩니다. `COleDialog`직접 사용할 수 없습니다.
+프레임 워크에서 모든 OLE 대화 상자에 대 한 일반적인 구현을 포함 하는 데 사용 됩니다. 사용자 인터페이스 범주의 모든 대화 상자 클래스는이 기본 클래스에서 파생 됩니다. `COleDialog` 직접 사용할 수 없습니다.
 
 [COleInsertDialog](reference/coleinsertdialog-class.md)<br/>
 새 OLE 연결 된 항목 또는 포함 된 항목을 삽입 하기 위한 표준 사용자 인터페이스인 개체 삽입 대화 상자를 표시 합니다.

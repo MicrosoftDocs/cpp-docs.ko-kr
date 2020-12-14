@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 (수준 4) C4092'
 title: 컴파일러 경고 (수준 4) C4092
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4092
 ms.assetid: 396ae826-a892-4327-bd66-f4762376d72b
-ms.openlocfilehash: 675e6ccbc516734a405620aa74eaa04ff2f75087
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 70b2d94304863610ede64a30bcb1bb6d407f2e12
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219991"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97262013"
 ---
 # <a name="compiler-warning-level-4-c4092"></a>컴파일러 경고 (수준 4) C4092
 
