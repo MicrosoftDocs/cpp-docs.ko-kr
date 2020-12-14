@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 데이터 형식 매핑'
 title: 데이터 형식 매핑
 ms.date: 11/04/2016
 f1_keywords:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - _TEXT type
 - _T type
 ms.assetid: 4e573c05-8800-468b-ae5f-76ff7409835e
-ms.openlocfilehash: d77ac4fa9afcd5a6b8f86261c7a3ba466adc64a4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9d76ecebc9bcb01e86cac2f199534ae2cda518c8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215155"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258780"
 ---
 # <a name="data-type-mappings"></a>데이터 형식 매핑
 
@@ -61,5 +62,5 @@ ms.locfileid: "87215155"
 [일반 텍스트 매핑](../c-runtime-library/generic-text-mappings.md)<br/>
 [상수 및 전역 변수 매핑](../c-runtime-library/constant-and-global-variable-mappings.md)<br/>
 [루틴 매핑](../c-runtime-library/routine-mappings.md)<br/>
-[샘플 일반 텍스트 프로그램](../c-runtime-library/a-sample-generic-text-program.md)<br/>
-[일반 텍스트 매핑 사용](../c-runtime-library/using-generic-text-mappings.md)
+[샘플 Generic-Text 프로그램](../c-runtime-library/a-sample-generic-text-program.md)<br/>
+[Generic-Text 매핑 사용](../c-runtime-library/using-generic-text-mappings.md)

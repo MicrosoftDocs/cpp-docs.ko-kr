@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 정규식 (c + +/CLI)'
 title: 정규식(C++/CLI)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -28,22 +29,22 @@ helpviewer_keywords:
 - data [C++], formatting
 - regular expressions [C++], validating data formatting
 ms.assetid: 838bab49-0dbc-4089-a604-ef146269ef5a
-ms.openlocfilehash: 24a278e4d5b208c5d8e3b95b9f5a0bd0306dbab3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 429a121ec7acad46437a344b089f5c6a1ce4243b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384664"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97245813"
 ---
 # <a name="regular-expressions-ccli"></a>정규식(C++/CLI)
 
-.NET Framework의 정규식 클래스를 사용 하는 다양 한 문자열 작업을 보여 줍니다.
+.NET Framework에서 정규식 클래스를 사용 하는 다양 한 문자열 작업을 보여 줍니다.
 
-다음 항목에서는.NET Framework의 사용을 보여 줍니다 <xref:System.Text.RegularExpressions> 네임 스페이스 (및 경우에는 <xref:System.String.Split%2A?displayProperty=fullName> 메서드)를 검색 하려면 구문 분석 및 문자열을 수정 합니다.
+다음 항목에서는 .NET Framework 네임 스페이스를 사용 하는 <xref:System.Text.RegularExpressions> 방법, 즉 메서드를 사용 <xref:System.String.Split%2A?displayProperty=fullName> 하 여 문자열을 검색, 구문 분석 및 수정 하는 방법을 보여 줍니다.
 
-## <a name="parse_regex"></a> 정규식을 사용 하 여 문자열 구문 분석
+## <a name="parse-strings-using-regular-expressions"></a><a name="parse_regex"></a> 정규식을 사용 하 여 문자열 구문 분석
 
-다음 코드 예제에서는 간단한 문자열을 사용 하 여 구문 분석 하는 방법을 보여 줍니다 합니다 <xref:System.Text.RegularExpressions.Regex> 클래스는 <xref:System.Text.RegularExpressions?displayProperty=fullName> 네임 스페이스입니다. 여러 유형의 단어 설명자를 포함 하는 문자열 생성 됩니다. 문자열 구문 분석 되를 사용 하는 <xref:System.Text.RegularExpressions.Regex> 클래스와 함께 <xref:System.Text.RegularExpressions.Match> 클래스입니다. 그런 다음 문장에서 각 단어는 별도로 표시 됩니다.
+다음 코드 예제에서는 <xref:System.Text.RegularExpressions.Regex> 네임 스페이스에서 클래스를 사용 하 여 간단한 문자열을 구문 분석 하는 방법을 보여 줍니다 <xref:System.Text.RegularExpressions?displayProperty=fullName> . 여러 형식의 word delineators을 포함 하는 문자열을 생성 합니다. 그런 다음 클래스와 함께 클래스를 사용 하 여 문자열을 구문 분석 합니다 <xref:System.Text.RegularExpressions.Regex> <xref:System.Text.RegularExpressions.Match> . 그러면 문장의 각 단어가 별도로 표시 됩니다.
 
 ### <a name="example"></a>예제
 
@@ -79,9 +80,9 @@ int main( )
 }
 ```
 
-## <a name="parse_split"></a> Split 메서드를 사용 하 여 문자열 구문 분석
+## <a name="parse-strings-using-the-split-method"></a><a name="parse_split"></a> Split 메서드를 사용 하 여 문자열 구문 분석
 
-다음 코드 예제는 <xref:System.String.Split%2A?displayProperty=fullName> 문자열에서 각 단어를 추출 하는 방법입니다. 여러 유형의 단어 설명자를 포함 하는 문자열 생성 되 고 호출 하 여 구문 분석 <xref:System.String.Split%2A> 설명자의 목록을 사용 하 여 합니다. 그런 다음 문장에서 각 단어는 별도로 표시 됩니다.
+다음 코드 예제에서는 메서드를 사용 하 여 <xref:System.String.Split%2A?displayProperty=fullName> 문자열에서 각 단어를 추출 하는 방법을 보여 줍니다. 여러 형식의 word delineators을 포함 하는 문자열은 생성 된 다음 <xref:System.String.Split%2A> delineators의 목록과 함께를 호출 하 여 구문 분석 됩니다. 그러면 문장의 각 단어가 별도로 표시 됩니다.
 
 ### <a name="example"></a>예제
 
@@ -108,9 +109,9 @@ int main()
 }
 ```
 
-## <a name="regex_simple"></a> 단순 일치에 정규식 사용
+## <a name="use-regular-expressions-for-simple-matching"></a><a name="regex_simple"></a> 단순 일치에 정규식 사용
 
-다음 코드 예제는 부분 문자열 정확히 일치 항목을 찾을 정규식을 사용 합니다. 정적 검색 하는지 <xref:System.Text.RegularExpressions.Regex.IsMatch%2A> 입력으로 두 문자열을 사용 하는 메서드. 첫 번째 문자열을 검색할 수 이며 두 번째 패턴에 대 한 검색입니다.
+다음 코드 예제에서는 정규식을 사용 하 여 정확히 일치 하는 부분 문자열을 찾습니다. 검색은 <xref:System.Text.RegularExpressions.Regex.IsMatch%2A> 두 문자열을 입력으로 사용 하는 정적 메서드를 통해 수행 됩니다. 첫 번째는 검색할 문자열이 고, 두 번째는 검색할 패턴입니다.
 
 ### <a name="example"></a>예제
 
@@ -146,9 +147,9 @@ int main()
 }
 ```
 
-## <a name="regex_extract"></a> 정규식을 사용 하 여 데이터 필드를 추출 하려면
+## <a name="use-regular-expressions-to-extract-data-fields"></a><a name="regex_extract"></a> 정규식을 사용 하 여 데이터 필드 추출
 
-다음 코드 예제에서는 서식이 지정 된 문자열에서 데이터를 추출 하는 정규식의 사용을 보여 줍니다. 다음 코드 예제에서는 <xref:System.Text.RegularExpressions.Regex> 전자 메일 주소에 해당 하는 패턴을 지정 하는 클래스입니다. 이 패턴이 사용자와 각 전자 메일 주소의 호스트 이름 부분을 검색할 수 있는 필드 식별자를 포함 합니다. <xref:System.Text.RegularExpressions.Match> 클래스 실제 패턴 일치를 수행 하는 데 사용 됩니다. 지정 된 전자 메일 주소를 유효한 경우 사용자 이름 및 호스트 이름을 추출 되 고 표시 합니다.
+다음 코드 예제에서는 정규식을 사용 하 여 서식이 지정 된 문자열에서 데이터를 추출 하는 방법을 보여 줍니다. 다음 코드 예제에서는 클래스를 사용 하 여 <xref:System.Text.RegularExpressions.Regex> 전자 메일 주소에 해당 하는 패턴을 지정 합니다. 이 patter에는 각 전자 메일 주소의 사용자 및 호스트 이름 부분을 검색 하는 데 사용할 수 있는 필드 식별자가 포함 되어 있습니다. <xref:System.Text.RegularExpressions.Match>클래스는 실제 패턴 일치를 수행 하는 데 사용 됩니다. 지정 된 전자 메일 주소가 유효 하면 사용자 이름 및 호스트 이름이 추출 되어 표시 됩니다.
 
 ### <a name="example"></a>예제
 
@@ -193,11 +194,11 @@ int main()
 }
 ```
 
-## <a name="regex_rearrange"></a> 정규식을 사용 하 여 데이터를 다시 정렬 하려면
+## <a name="use-regular-expressions-to-rearrange-data"></a><a name="regex_rearrange"></a> 정규식을 사용 하 여 데이터 다시 정렬
 
-다음 코드 예제를 다시 정렬 하거나 데이터의 서식을 다시 지정 하는.NET Framework 정규식 지원을 사용할 수 있는 방법을 보여 줍니다. 다음 코드 예제에서는 합니다 <xref:System.Text.RegularExpressions.Regex> 고 <xref:System.Text.RegularExpressions.Match> 첫 번째 이름과 마지막 이름 문자열에서 추출 하 고 그런 다음 이러한 이름 요소를 역순으로 표시 하는 클래스입니다.
+다음 코드 예제에서는 .NET Framework 정규식을 사용 하 여 데이터를 다시 정렬 하거나 서식을 다시 지정 하는 방법을 보여 줍니다. 다음 코드 예제에서는 및 클래스를 사용 하 여 <xref:System.Text.RegularExpressions.Regex> <xref:System.Text.RegularExpressions.Match> 문자열에서 성과 이름을 추출 하 고 이러한 이름 요소를 역순으로 표시 합니다.
 
-<xref:System.Text.RegularExpressions.Regex> 클래스 데이터의 현재 형식에 설명 하는 정규식을 생성 하는 데 사용 됩니다. 두 개의 이름을 쉼표로 구분 된 될 것으로 간주 됩니다 및 모든 양의 콤마 앞뒤에 공백을 사용할 수 있습니다. <xref:System.Text.RegularExpressions.Match> 메서드는 다음 각 문자열을 분석 하는 데 사용 됩니다. 성공 하면 첫 번째 이름과 마지막 이름에서 검색 된 <xref:System.Text.RegularExpressions.Match> 개체를 표시 합니다.
+<xref:System.Text.RegularExpressions.Regex>클래스는 데이터의 현재 형식을 설명 하는 정규식을 생성 하는 데 사용 됩니다. 두 이름은 쉼표로 구분 되는 것으로 간주 되며 쉼표를 기준으로 공백을 원하는 만큼 사용할 수 있습니다. <xref:System.Text.RegularExpressions.Match>그런 다음 메서드를 사용 하 여 각 문자열을 분석 합니다. 성공 하면 개체에서 성과 이름이 검색 되어 <xref:System.Text.RegularExpressions.Match> 표시 됩니다.
 
 ### <a name="example"></a>예제
 
@@ -237,11 +238,11 @@ int main()
 }
 ```
 
-## <a name="regex_search"></a> 찾기 및 바꾸기에 정규식을 사용 합니다.
+## <a name="use-regular-expressions-to-search-and-replace"></a><a name="regex_search"></a> 정규식을 사용 하 여 검색 및 바꾸기
 
-다음 코드 예제에서는 어떻게 정규식 클래스 <xref:System.Text.RegularExpressions.Regex> 찾기 및 바꾸기 수행 하기 위해 사용할 수 있습니다. 사용 하 여 <xref:System.Text.RegularExpressions.Regex.Replace%2A> 메서드. 두 문자열을 입력으로 사용 되는 버전: 수정할 문자열과 (있는 경우) 섹션 대신 삽입할 문자열에 지정 된 패턴과 일치 하는 <xref:System.Text.RegularExpressions.Regex> 개체.
+다음 코드 예제에서는 정규식 클래스를 사용 하 여 <xref:System.Text.RegularExpressions.Regex> 검색 및 바꾸기를 수행 하는 방법을 보여 줍니다. 이 작업은 메서드를 사용 하 여 수행 됩니다 <xref:System.Text.RegularExpressions.Regex.Replace%2A> . 사용 되는 버전은 두 문자열을 입력으로 사용 합니다. 수정할 문자열 및 개체에 지정 된 패턴과 일치 하는 섹션 (있는 경우) 대신 삽입할 문자열 <xref:System.Text.RegularExpressions.Regex> 입니다.
 
-이 코드는 밑줄 (_)를 사용 하 여 문자열의 모든 숫자를 대체 하 고 효과적으로 제거 하는 빈 문자열을 가진 다음으로 바꿉니다. 동일한 효과 한 번에 수행할 수 있습니다 하지만 두 단계는 여기 데모 용도로 사용 됩니다.
+이 코드는 문자열의 모든 숫자를 밑줄 (_)로 바꾼 다음 빈 문자열로 바꿔서 효과적으로 제거 합니다. 동일한 효과를 단일 단계로 수행할 수 있지만 여기서는 데모용으로 두 단계를 사용 합니다.
 
 ### <a name="example"></a>예제
 
@@ -269,9 +270,9 @@ int main()
 }
 ```
 
-## <a name="regex_validate"></a> 데이터 형식 유효성 검사에 정규식을 사용 합니다.
+## <a name="use-regular-expressions-to-validate-data-formatting"></a><a name="regex_validate"></a> 정규식을 사용 하 여 데이터 형식 유효성 검사
 
-다음 코드 예제에서는 정규식을 문자열의 서식을 확인을 사용 하는 방법을 보여 줍니다. 다음 코드 예제에서는 문자열 올바른 전화 번호를 포함 해야 합니다. 다음 코드 예제에서는 문자열 "\d{3}-\d{3}-\d{4}" 각 필드는 올바른 전화 번호를 나타내기 위해. 문자열에 "d" 숫자를 나타내며 각 "d" 뒤에 있는 인수 반드시 필요한 자릿수를 나타냅니다. 이 경우에 번호가 대시로 구분할 필요 합니다.
+다음 코드 예제에서는 정규식을 사용 하 여 문자열의 형식을 확인 하는 방법을 보여 줍니다. 다음 코드 예제에서는 문자열에 올바른 전화 번호가 포함 되어야 합니다. 다음 코드 예에서는 "\d {3} -\d-\d" 문자열을 사용 하 여 {3} {4} 각 필드가 올바른 전화 번호를 나타내는지 나타냅니다. 문자열의 "d"는 숫자를 나타내고 각 "d" 뒤의 인수는 표시 되어야 하는 자릿수를 나타냅니다. 이 경우 숫자를 대시로 구분 해야 합니다.
 
 ### <a name="example"></a>예제
 
@@ -316,6 +317,6 @@ int main()
 
 [.NET Framework 정규식](/dotnet/standard/base-types/regular-expressions)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[C++/CLI를 사용한 .NET 프로그래밍(Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+[C + +/CLI를 사용한 .NET 프로그래밍 (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

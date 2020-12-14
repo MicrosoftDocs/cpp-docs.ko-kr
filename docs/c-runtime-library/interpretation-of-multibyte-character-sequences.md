@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 멀티 바이트 문자 시퀀스 해석'
 title: 멀티바이트 문자 시퀀스 해석
 ms.date: 10/22/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - MBCS [C++], locale code page
 ms.assetid: da9150de-70ea-4d2f-90e6-ddb9202dd80b
-ms.openlocfilehash: 7431f0c63df60414af192ea38103318c775c430d
-ms.sourcegitcommit: 0a5518fdb9d87fcc326a8507ac755936285fcb94
+ms.openlocfilehash: 86ef62637e87fd204233ab87fa337c99c5d47a2d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72811080"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246718"
 ---
 # <a name="interpretation-of-multibyte-character-sequences"></a>멀티바이트 문자 시퀀스 해석
 
@@ -19,7 +20,7 @@ Microsoft 런타임 라이브러리에 있는 대부분의 멀티바이트 문�
 
 ## <a name="locale-dependent-multibyte-routines"></a>로캘 종속 멀티 바이트 루틴
 
-|루틴에서 반환된 값|관리 그룹을 연결하거나 연결된 관리 그룹의 속성을 편집하려면 관리 작업 영역의|
+|루틴에서 반환된 값|기능|
 |-------------|---------|
 |[_mbclen, mblen, _mblen_l](../c-runtime-library/reference/mbclen-mblen-mblen-l.md)|멀티바이트 문자의 바이트 수의 유효성을 검사하고 해당 수를 반환합니다.|
 |[strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l](../c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md)|멀티바이트 문자열: 문자열에 있는 각 문자의 유효성을 검사하고 문자열 길이를 반환합니다. 와이드 문자열: 문자열 길이를 반환합니다.|
@@ -30,12 +31,12 @@ Microsoft 런타임 라이브러리에 있는 대부분의 멀티바이트 문�
 
 ## <a name="locale-independent-multibyte-routines"></a>로캘 독립적인 멀티 바이트 루틴
 
-|루틴에서 반환된 값|관리 그룹을 연결하거나 연결된 관리 그룹의 속성을 편집하려면 관리 작업 영역의|
+|루틴에서 반환된 값|기능|
 |-------------|---------|
 |[mbrtoc16, mbrtoc32](../c-runtime-library/reference/mbrtoc16-mbrtoc323.md)|멀티 바이트 UTF-8 문자를 해당 하는 UTF-16 또는 32 UTF-8 문자로 변환 합니다.|
 |[c16rtomb, c32rtomb](../c-runtime-library/reference/c16rtomb-c32rtomb1.md)|UTF-16 또는 UTF-16 32 문자를 해당 하는 UTF-8 멀티 바이트 문자로 변환 합니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [국제화](../c-runtime-library/internationalization.md)\
 [범주별 유버니설 C 런타임 루틴](../c-runtime-library/run-time-routines-by-category.md)

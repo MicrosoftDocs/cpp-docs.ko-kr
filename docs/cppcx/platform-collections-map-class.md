@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Platform:: Collections:: Map 클래스'
 title: Platform::Collections::Map 클래스
 ms.date: 10/01/2019
 ms.topic: reference
@@ -15,16 +16,16 @@ f1_keywords:
 helpviewer_keywords:
 - Map Class (C++/Cx)
 ms.assetid: 2b8cf968-1167-4898-a149-1195b32c1785
-ms.openlocfilehash: 40b7d653b21cdc2b0fab4c852c9809ab1db46a12
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 8414328a178e4f9e2cfd7c4d97cca07ce7efcd9f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839142"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258501"
 ---
 # <a name="platformcollectionsmap-class"></a>Platform::Collections::Map 클래스
 
-키/값 쌍의 컬렉션인 *맵*을 나타냅니다. XAML [데이터 바인딩을](/windows/uwp/data-binding/data-binding-in-depth)지원 하기 위해 [Windows:: Foundation:: Collections:: IObservableMap](/uwp/api/windows.foundation.collections.iobservablemap-2) 을 구현 합니다.
+키/값 쌍의 컬렉션인 *맵* 을 나타냅니다. XAML [데이터 바인딩을](/windows/uwp/data-binding/data-binding-in-depth)지원 하기 위해 [Windows:: Foundation:: Collections:: IObservableMap](/uwp/api/windows.foundation.collections.iobservablemap-2) 을 구현 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -38,10 +39,10 @@ ref class Map sealed;
 
 ### <a name="parameters"></a>매개 변수
 
-*시계의*<br/>
+*K*<br/>
 키/값 쌍의 키 형식입니다.
 
-*Hyper-v*<br/>
+*V*<br/>
 키/값 쌍의 값 형식입니다.
 
 *C*<br/>
@@ -108,7 +109,7 @@ Map은 기본적으로 [std::map](../standard-library/map-class.md)에 대한 �
 
 현재 Map 개체에서 모든 키/값 쌍을 제거합니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 virtual void Clear();
@@ -160,7 +161,7 @@ bool HasKey(K key);
 ### <a name="parameters"></a>매개 변수
 
 *key*<br/>
-Map 요소를 찾는 데 사용되는 키입니다. *키* 의 형식은 형식 이름 *K*입니다.
+Map 요소를 찾는 데 사용되는 키입니다. *키* 의 형식은 형식 이름 *K* 입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -179,14 +180,14 @@ virtual bool Insert(K key, V value);
 ### <a name="parameters"></a>매개 변수
 
 *key*<br/>
-키-값 쌍의 키 부분입니다. *키* 의 형식은 형식 이름 *K*입니다.
+키-값 쌍의 키 부분입니다. *키* 의 형식은 형식 이름 *K* 입니다.
 
 *value*<br/>
-키-값 쌍의 값 부분입니다. *값* 의 형식은 형식 이름 *V*입니다.
+키-값 쌍의 값 부분입니다. *값* 의 형식은 형식 이름 *V* 입니다.
 
 ### <a name="return-value"></a>반환 값
 
-**`true`** 현재 Map의 기존 요소 키가 *키* 와 일치 하 고 해당 요소의 값 부분이 *value*로 설정 되어 있으면입니다. **`false`** 현재 Map의 기존 요소가 *키* 와 일치 하지 않고 *키 및* *값* 매개 변수가 키-값 쌍으로 만들어진 다음 현재 맵에 추가 되는 경우입니다.
+**`true`** 현재 Map의 기존 요소 키가 *키* 와 일치 하 고 해당 요소의 값 부분이 *value* 로 설정 되어 있으면입니다. **`false`** 현재 Map의 기존 요소가 *키* 와 일치 하지 않고 *키 및* *값* 매개 변수가 키-값 쌍으로 만들어진 다음 현재 맵에 추가 되는 경우입니다.
 
 ## <a name="maplookup-method"></a><a name="lookup"></a> Map:: Lookup 메서드
 
@@ -201,11 +202,11 @@ V Lookup(K key);
 ### <a name="parameters"></a>매개 변수
 
 *key*<br/>
-지도에서 요소를 찾는 데 사용되는 키입니다. *키* 의 형식은 형식 이름 *K*입니다.
+지도에서 요소를 찾는 데 사용되는 키입니다. *키* 의 형식은 형식 이름 *K* 입니다.
 
 ### <a name="return-value"></a>반환 값
 
-*키*와 쌍으로 연결 된 값입니다. 반환 값의 형식은 형식 이름 *V*입니다.
+*키* 와 쌍으로 연결 된 값입니다. 반환 값의 형식은 형식 이름 *V* 입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -249,7 +250,7 @@ Map(
 
 맵에서 항목이 삽입되거나 제거될 때 발생합니다.
 
-### <a name="syntax"></a>구문
+### <a name="syntax"></a>Syntax
 
 ```cpp
 event Windows::Foundation::Collections::MapChangedEventHandler<K,V>^ MapChanged;
@@ -276,7 +277,7 @@ virtual void Remove(K key);
 ### <a name="parameters"></a>매개 변수
 
 *key*<br/>
-키-값 쌍의 키 부분입니다. *키* 의 형식은 형식 이름 *K*입니다.
+키-값 쌍의 키 부분입니다. *키* 의 형식은 형식 이름 *K* 입니다.
 
 ## <a name="mapsize-method"></a><a name="size"></a> Map:: Size 메서드
 

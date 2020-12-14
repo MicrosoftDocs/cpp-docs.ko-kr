@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: Platform:: Collections:: MapView 클래스'
 title: Platform::Collections::MapView 클래스
 ms.date: 12/30/2016
 ms.topic: reference
@@ -12,16 +13,16 @@ f1_keywords:
 helpviewer_keywords:
 - MapView Class
 ms.assetid: 9577dde7-f599-43c6-b1e4-7d653706fd62
-ms.openlocfilehash: 693854499dafd23752337652ef298907fdecbcc2
-ms.sourcegitcommit: 65fead53d56d531d71be42216056aca5f44def11
+ms.openlocfilehash: 6011948bb3708329f7dcce0841f2bc34879760a7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88610896"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258488"
 ---
 # <a name="platformcollectionsmapview-class"></a>Platform::Collections::MapView 클래스
 
-읽기 전용 보기를 키/값 쌍의 컬렉션인 *맵*으로 나타냅니다.
+읽기 전용 보기를 키/값 쌍의 컬렉션인 *맵* 으로 나타냅니다.
 
 ## <a name="syntax"></a>구문
 
@@ -35,10 +36,10 @@ ref class MapView sealed;
 
 #### <a name="parameters"></a>매개 변수
 
-*시계의*<br/>
+*K*<br/>
 키/값 쌍의 키 형식입니다.
 
-*Hyper-v*<br/>
+*V*<br/>
 키/값 쌍의 값 형식입니다.
 
 *C*<br/>
@@ -48,17 +49,17 @@ ref class MapView sealed;
 
 MapView는 ABI (응용 프로그램 이진 인터페이스)를 통해 전달 되는 [Windows:: Foundation \<K,V> :: Collections:: IMapView](/uwp/api/windows.foundation.collections.imapview-2) 인터페이스의 구체적인 c + + 구현입니다. 자세한 내용은 [컬렉션(C++/CX)](../cppcx/collections-c-cx.md)을 참조하세요.
 
-### <a name="members"></a>구성원
+### <a name="members"></a>멤버
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[MapView:: MapView](#ctor)|MapView 클래스의 새 인스턴스를 초기화합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[MapView:: First](#first)|맵 뷰의 첫 번째 요소로 초기화하는 반복기를 반환합니다.|
 |[MapView:: HasKey](#haskey)|현재 MapView에 지정한 키가 들어 있는지 여부를 확인합니다.|
@@ -93,7 +94,7 @@ virtual Windows::Foundation::Collections::IIterator<
 
 ### <a name="remarks"></a>설명
 
-First ()에서 반환 된 반복기를 편리 하 게 유지 하는 방법은 형식 추론 키워드를 사용 하 여 선언 된 변수에 반환 값을 할당 하는 것입니다 **`auto`** . 예들 들어 `auto x = myMapView->First();`입니다.
+First ()에서 반환 된 반복기를 편리 하 게 유지 하는 방법은 형식 추론 키워드를 사용 하 여 선언 된 변수에 반환 값을 할당 하는 것입니다 **`auto`** . 예: `auto x = myMapView->First();`.
 
 ## <a name="mapviewhaskey-method"></a><a name="haskey"></a> MapView:: HasKey 메서드
 
@@ -109,7 +110,7 @@ bool HasKey(K key);
 ### <a name="parameters"></a>매개 변수
 
 *key*<br/>
-MapView 요소를 찾는 데 사용되는 키입니다. *키* 의 형식은 형식 이름 *K*입니다.
+MapView 요소를 찾는 데 사용되는 키입니다. *키* 의 형식은 형식 이름 *K* 입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -128,11 +129,11 @@ V Lookup(K key);
 ### <a name="parameters"></a>매개 변수
 
 *key*<br/>
-MapView에서 요소를 찾는 데 사용되는 키입니다. 의 형식은 형식 `key` 이름 *K*입니다.
+MapView에서 요소를 찾는 데 사용되는 키입니다. 의 형식은 형식 `key` 이름 *K* 입니다.
 
 ### <a name="return-value"></a>반환 값
 
-`key`와 쌍을 이루는 값입니다. 반환 값의 형식은 형식 이름 *V*입니다.
+`key`와 쌍을 이루는 값입니다. 반환 값의 형식은 형식 이름 *V* 입니다.
 
 ## <a name="mapviewmapview-constructor"></a><a name="ctor"></a> MapView:: MapView 생성자
 

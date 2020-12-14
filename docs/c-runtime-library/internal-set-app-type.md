@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __set_app_type'
 title: __set_app_type
 ms.date: 11/04/2016
 api_name:
@@ -22,12 +23,12 @@ f1_keywords:
 helpviewer_keywords:
 - __set_app_type
 ms.assetid: f0ac0f4d-70e6-4e96-9e43-eb9d1515490c
-ms.openlocfilehash: 8efe2159618f728cfaad33493dd482fbdd5375f7
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 19aafebc4f7fd848804e21193332fb693af56010
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80171491"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246768"
 ---
 # <a name="__set_app_type"></a>__set_app_type
 
@@ -44,9 +45,9 @@ void __set_app_type (
 #### <a name="parameters"></a>매개 변수
 
 *at*<br/>
-애플리케이션 형식을 나타내는 값입니다. 사용 가능한 값은
+애플리케이션 형식을 나타내는 값입니다. 가능한 값은 다음과 같습니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |_UNKNOWN_APP|알 수 없는 애플리케이션 형식입니다.|
 |_CONSOLE_APP|콘솔(명령줄) 애플리케이션입니다.|
@@ -56,6 +57,6 @@ void __set_app_type (
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |__set_app_type|internal.h|

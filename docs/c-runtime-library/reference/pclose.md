@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _pclose'
 title: _pclose
 ms.date: 4/2/2020
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - pclose function
 - pipes, closing
 ms.assetid: e2e31a9e-ba3a-4124-bcbb-c4040110b3d3
-ms.openlocfilehash: 6b35b8e3faa2f1a193dce102a6f8a11b9fcbb82b
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 529af8ccdd1c6cc27f9039adef5d75c8b977aa54
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910385"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258709"
 ---
 # <a name="_pclose"></a>_pclose
 
@@ -54,17 +55,17 @@ FILE *stream
 ### <a name="parameters"></a>매개 변수
 
 *스트림*<br/>
-**_Popen**에 대 한 이전 호출에서 반환 된 값입니다.
+**_Popen** 에 대 한 이전 호출에서 반환 된 값입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-종료 명령 프로세서의 종료 상태를 반환 하거나, 오류가 발생 하면-1을 반환 합니다. 반환 값의 형식은 하위 바이트와 상위 바이트를 교환 하는 것을 제외 하 고 **_cwait**와 동일 합니다. Stream이 _pclose **NULL**인 **_pclose** 경우 **errno** 를 **EINVAL** 로 설정 하 고-1을 반환 합니다.
+종료 명령 프로세서의 종료 상태를 반환 하거나, 오류가 발생 하면-1을 반환 합니다. 반환 값의 형식은 하위 바이트와 상위 바이트를 교환 하는 것을 제외 하 고 **_cwait** 와 동일 합니다. Stream이 _pclose **NULL** 인  경우 **errno** 를 **EINVAL** 로 설정 하 고-1을 반환 합니다.
 
 이 오류 및 다른 오류 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-**_Pclose** 함수는 연결 된 **_popen** 호출에 의해 시작 된 명령 프로세서 (CMD.EXE)의 프로세스 ID를 조회 하 고, 새 명령 프로세서에서 [_cwait](cwait.md) 호출을 실행 하 고, 연결 된 파이프에서 스트림을 닫습니다.
+**_Pclose** 함수는 연결 된 **_popen** 호출에 의해 시작 된 명령 프로세서 (Cmd.exe)의 프로세스 ID를 조회 하 고, 새 명령 프로세서에서 [_cwait](cwait.md) 호출을 실행 하 고, 연결 된 파이프에서 스트림을 닫습니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -80,7 +81,7 @@ FILE *stream
 
 모든 버전의 [C 런타임 라이브러리](../../c-runtime-library/crt-library-features.md)입니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [프로세스 및 환경 제어](../../c-runtime-library/process-and-environment-control.md)<br/>
 [_pipe](pipe.md)<br/>

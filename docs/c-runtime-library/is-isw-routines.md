@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: is, isw 루틴'
 title: is, isw 루틴
 ms.date: 11/04/2016
 api_location:
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - is routines
 - isw routines
 ms.assetid: 1e171a57-2cde-41f6-a75f-a080fa3c12e5
-ms.openlocfilehash: 632bd371f8a6da4b57eeb1ce88e2a37eb6923355
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d9229d2437ea7a7e57178acc5fd40ba2afea043b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839389"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246719"
 ---
 # <a name="is-isw-routines"></a>is, isw 루틴
 
@@ -114,7 +115,7 @@ ASCII 문자(0x00-0x7F)
 **isw** 루틴의 경우 지정된 조건의 테스트 결과는 로캘과 무관합니다. **isw** 함수에 대한 테스트 조건은 다음과 같습니다.
 
 `iswalnum`<br/>
-`iswalpha` 또는 `iswdigit`입니다.
+`iswalpha` 또는 `iswdigit`
 
 `iswalpha`<br/>
 `iswcntrl`, `iswdigit`, `iswpunct`, `iswspace`가 모두 0인 구현 시 정의된 집합 중 하나인 와이드 문자. `iswalpha`는 `iswupper` 또는 `iswlower`가 0이 아닌 와이드 문자에 대해서는 0이 아닌 값을 반환합니다.
@@ -355,5 +356,5 @@ int main( void )
 [문자 분류](../c-runtime-library/character-classification.md)<br/>
 [로캘](../c-runtime-library/locale.md)<br/>
 [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>
-[멀티 바이트 문자 시퀀스 해석](../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Multibyte-Character 시퀀스의 해석](../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [to 함수](../c-runtime-library/to-functions.md)

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2208'
 title: 컴파일러 오류 C2208
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2208
 ms.assetid: 9ae704bc-bf70-45f1-8e47-0470f21edd4e
-ms.openlocfilehash: 208e15e98a05089c0e9b1c98400f5267e4f3a48f
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 76452c504e5f90857b15c5fc9250923705d3d20c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74758933"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97245644"
 ---
 # <a name="compiler-error-c2208"></a>컴파일러 오류 C2208
 

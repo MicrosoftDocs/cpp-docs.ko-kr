@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: 후 위 식'
 title: 후위 식
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - postfix expressions
 - expressions [C++], postfix
 ms.assetid: 7ac62a57-06df-422f-b012-a75b37d7cb9b
-ms.openlocfilehash: 9a5c99c78623f2192b59a73f270f3ad5d2a34516
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c6c38fee6b2b44ab9ff390eed8d178bf40653df2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231171"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258527"
 ---
 # <a name="postfix-expressions"></a>후위 식
 
@@ -24,7 +25,7 @@ ms.locfileid: "87231171"
 |[첨자 연산자](../cpp/subscript-operator.md)|**[ ]**|
 |[함수 호출 연산자](../cpp/function-call-operator-parens.md)|**( )**|
 |[명시적 형식 변환 연산자](../cpp/explicit-type-conversion-operator-parens.md)|*유형-이름* **()**|
-|[멤버 액세스 연산자](../cpp/member-access-operators-dot-and.md)|**.** 디스크나**->**|
+|[멤버 액세스 연산자](../cpp/member-access-operators-dot-and.md)|**.** 디스크나 **->**|
 |[후위 증가 연산자](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md)|**++**|
 |[후위 감소 연산자](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md)|**--**|
 
@@ -55,7 +56,7 @@ simple-type-name ( expression-list )
 
 *Cast-키워드* 는, 또는 중 하나입니다 **`dynamic_cast`** **`static_cast`** **`reinterpret_cast`** .  자세한 내용은 [`dynamic_cast`](dynamic-cast-operator.md) , 및을 참조 하십시오 [`static_cast`](static-cast-operator.md) [`reinterpet_cast`](reinterpret-cast-operator.md) .
 
-**`typeid`** 연산자는 후 위 식으로 간주 됩니다.  **Typeid 연산자**를 참조 하세요.
+**`typeid`** 연산자는 후 위 식으로 간주 됩니다.  **Typeid 연산자** 를 참조 하세요.
 
 ## <a name="formal-and-actual-arguments"></a>형식 및 실제 인수
 
@@ -147,7 +148,7 @@ double& func2( double& d, const char *c ) {
 
 - 클래스 형식의 인수는 데이터 구조 값에 의해 전달됩니다. 사본은 클래스의 복사 생성자(있을 경우) 호출을 통해서가 아닌 이진 복사를 통해 만들어집니다.
 
-줄임표 (사용 되는 경우)를 인수 목록에서 마지막으로 선언 해야 합니다. 다양 한 인수를 전달 하는 방법에 대 한 자세한 내용은 *런타임 라이브러리 참조*에서 [va_arg, va_start 및 va_list](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md) 에 대 한 설명을 참조 하세요.
+줄임표 (사용 되는 경우)를 인수 목록에서 마지막으로 선언 해야 합니다. 다양 한 인수를 전달 하는 방법에 대 한 자세한 내용은 *런타임 라이브러리 참조* 에서 [va_arg, va_start 및 va_list](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md) 에 대 한 설명을 참조 하세요.
 
 CLR 프로그래밍의 기본 인수에 대 한 자세한 내용은 [가변 인수 목록 (...) (c + +/cli)](../extensions/variable-argument-lists-dot-dot-dot-cpp-cli.md)을 참조 하세요.
 
@@ -184,7 +185,7 @@ void print( const char *string, const char *terminator )
 }
 ```
 
-앞의 프로그램은 두 개의 인수를 사용하는 `print` 함수를 선언합니다. 그러나 두 번째 인수인 *종결자*는 기본값을 갖습니다 `"\n"` . 에서 `main` 처음 두 개의를 호출 하면 `print` 기본 두 번째 인수가 새 줄을 제공 하 여 인쇄 된 문자열을 종료할 수 있습니다. 세 번째 호출은 두 번째 인수에 대해 명시적 값을 지정합니다. 프로그램의 출력:
+앞의 프로그램은 두 개의 인수를 사용하는 `print` 함수를 선언합니다. 그러나 두 번째 인수인 *종결자* 는 기본값을 갖습니다 `"\n"` . 에서 `main` 처음 두 개의를 호출 하면 `print` 기본 두 번째 인수가 새 줄을 제공 하 여 인쇄 된 문자열을 종료할 수 있습니다. 세 번째 호출은 두 번째 인수에 대해 명시적 값을 지정합니다. 프로그램의 출력:
 
 ```Output
 hello,

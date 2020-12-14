@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _putch, _putwch'
 title: _putch, _putwch
 ms.date: 4/2/2020
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - putch function
 - console, writing characters to
 ms.assetid: 3babc7cf-e333-405d-8449-c788d61d51aa
-ms.openlocfilehash: 5d327030f816b4ad4d68e0366225d27fee00a7bf
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 242e7c69330cf86c9c369903812f277fe0018d50
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916183"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246346"
 ---
 # <a name="_putch-_putwch"></a>_putch, _putwch
 
@@ -66,15 +67,15 @@ wint_t _putwch(
 *c*<br/>
 출력할 문자입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-정상적으로 실행되면 *c*를 반환합니다. **_Putch** 실패 하면 **EOF**를 반환 합니다. **_putwch** 실패할 경우 **weof**를 반환 합니다.
+정상적으로 실행되면 *c* 를 반환합니다. **_Putch** 실패 하면 **EOF** 를 반환 합니다. **_putwch** 실패할 경우 **weof** 를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-이러한 함수는 *c* 문자를 버퍼링 하지 않고 콘솔에 직접 씁니다. Windows NT에서 **_putwch**는 현재 콘솔 로캘 설정을 사용하여 유니코드 문자를 씁니다.
+이러한 함수는 *c* 문자를 버퍼링 하지 않고 콘솔에 직접 씁니다. Windows NT에서 **_putwch** 는 현재 콘솔 로캘 설정을 사용하여 유니코드 문자를 씁니다.
 
-**_nolock** 접미사가 있는 버전은 다른 스레드에 의한 간섭에서 보호되지 않는 점을 제외하면 동일합니다. 자세한 내용은 **_putch_nolock**, **_putwch_nolock**을 참조 하세요.
+**_nolock** 접미사가 있는 버전은 다른 스레드에 의한 간섭에서 보호되지 않는 점을 제외하면 동일합니다. 자세한 내용은 **_putch_nolock**, **_putwch_nolock** 을 참조 하세요.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -101,8 +102,8 @@ wint_t _putwch(
 
 [_getch](getch-getwch.md)의 예제를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[콘솔 및 포트 I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
+[콘솔 및 포트 i/o](../../c-runtime-library/console-and-port-i-o.md)<br/>
 [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md)<br/>
 [_getch, _getwch](getch-getwch.md)<br/>

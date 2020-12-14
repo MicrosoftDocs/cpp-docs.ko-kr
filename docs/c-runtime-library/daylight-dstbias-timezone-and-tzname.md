@@ -1,4 +1,5 @@
 ---
+description: _Daylight, _dstbias, _timezone 및 _tzname에 대해 자세히 알아보세요.
 title: _daylight, _dstbias, _timezone 및 _tzname
 ms.date: 11/04/2016
 f1_keywords:
@@ -21,14 +22,14 @@ helpviewer_keywords:
 - tzname function
 - time-zone variables
 ms.assetid: d06c7292-6b99-4aba-b284-16a96570c856
-ms.openlocfilehash: 3f9f78d0798140399960cade7ead408f958450ba
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: aaa1d76276e4b4117d5f07695875481215c4122e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57748257"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258785"
 ---
-# <a name="daylight-dstbias-timezone-and-tzname"></a>_daylight, _dstbias, _timezone 및 _tzname
+# <a name="_daylight-_dstbias-_timezone-and-_tzname"></a>_daylight, _dstbias, _timezone 및 _tzname
 
 `_daylight`, `_dstbias`, `_timezone` 및 `_tzname`은 일부 시간 및 날짜 루틴에서 현지 시간을 조정하는 데 사용됩니다. 이러한 전역 변수는 전역 변수 대신 사용되어야 할 보안 기능이 보다 강화된 버전에 대해서는 더 이상 사용되지 않습니다.
 
@@ -50,7 +51,7 @@ extern long _timezone;
 extern char *_tzname[2];
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 `_ftime`, `localtime` 또는 `_tzset` 호출 시 `_daylight`, `_dstbias`, `_timezone` 및 `_tzname` 값은 `TZ` 환경 변수 값에 따라 결정됩니다. `TZ` 값을 명시적으로 설정하지 않으면 `_tzname[0]` 및 `_tzname[1]`에는 각각 기본 설정인 "PST" 및 "PDT"가 포함됩니다.  시간 조작 함수([_tzset](../c-runtime-library/reference/tzset.md), [_ftime](../c-runtime-library/reference/ftime-ftime32-ftime64.md) 및 [localtime](../c-runtime-library/reference/localtime-localtime32-localtime64.md))는 운영 체제에 각 변수의 기본값을 쿼리하여 `_daylight`, `_dstbias` 및 `_timezone` 값을 설정하려고 합니다. 시간대 전역 변수 값은 다음 표에 나와 있습니다.
 

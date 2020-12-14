@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 언어 문자열'
 title: Language Strings
 ms.date: 11/04/2016
 helpviewer_keywords:
 - language strings
 ms.assetid: bbee63b1-af0b-4e44-9eaf-dd3e265c05fd
-ms.openlocfilehash: dd0c55091d3dff641993fa593e656e2825da7c73
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 077a440981c9e39e87356310c40ae9b249d4662e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839254"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246580"
 ---
 # <a name="language-strings"></a>Language Strings
 
@@ -58,7 +59,7 @@ Microsoft C 런타임 라이브러리 구현은 다음 언어 문자열도 지�
 |german-swiss|de-CH|
 |irish-english|en-IE|
 |italian-swiss|it-CH|
-|노르웨이어|아니요|
+|노르웨이어|no|
 |norwegian-bokmal|nb-NO|
 |norwegian-nynorsk|nn-NO|
 |portuguese-brazilian|pt-BR|

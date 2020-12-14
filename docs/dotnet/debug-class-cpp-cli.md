@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: Debug 클래스 (c + +/CLI)'
 title: Debug 클래스(C++/CLI)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - .NET Framework [C++], Debug class
 - Debug class
 ms.assetid: 076bd528-1b6f-4e8a-a372-eb5849cf969a
-ms.openlocfilehash: 47e1b949cb6e998508a3bd362b1c74961cf4cc23
-ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
+ms.openlocfilehash: 255fe306684928faf836cd550005eea820d64ce5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91414154"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258436"
 ---
 # <a name="debug-class-ccli"></a>Debug 클래스(C++/CLI)
 
@@ -23,9 +24,9 @@ Visual C++ 응용 프로그램에서를 사용 하는 경우 <xref:System.Diagno
 
 ## <a name="example-always-executes-output-statements"></a>예: 항상 output 문 실행
 
-### <a name="description"></a>Description
+### <a name="description"></a>설명
 
-다음 샘플에서는 **/DDEBUG** 또는 **/DTRACE**를 사용 하 여 컴파일 하는지 여부에 관계 없이 항상 output 문을 실행 합니다.
+다음 샘플에서는 **/DDEBUG** 또는 **/DTRACE** 를 사용 하 여 컴파일 하는지 여부에 관계 없이 항상 output 문을 실행 합니다.
 
 ### <a name="code"></a>코드
 
@@ -60,7 +61,7 @@ test
 
 ## <a name="example-use-ifdef-and-endif-directives"></a>예: #ifdef 및 #endif 지시문 사용
 
-### <a name="description"></a>Description
+### <a name="description"></a>설명
 
 예상 되는 동작을 가져오려면 (즉, 릴리스 빌드에 대해 "테스트" 출력이 인쇄 되지 않음) 및 지시문을 사용 해야 합니다 `#ifdef` `#endif` . 위의 코드 샘플은이 수정 사항을 보여 주기 위해 아래에서 수정 되었습니다.
 

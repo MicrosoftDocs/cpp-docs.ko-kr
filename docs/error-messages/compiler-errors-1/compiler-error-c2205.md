@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C2205'
 title: 컴파일러 오류 C2205
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2205
 ms.assetid: bfc19840-4a48-4da5-8e69-7069989f1d2c
-ms.openlocfilehash: 096ea0dcb812bc6d0c5cdfc036583d43db69c1d5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7c0d108edd4d21d9e0186a55d8df3635fc0901bf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216299"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97245735"
 ---
 # <a name="compiler-error-c2205"></a>컴파일러 오류 C2205
 

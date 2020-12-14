@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 내부 CRT 전역 및 함수'
 title: 내부 CRT 전역 및 함수
 ms.date: 4/2/2020
 api_name:
@@ -930,12 +931,12 @@ helpviewer_keywords:
 - _Xbad_alloc
 - _Xlength_error
 ms.assetid: 99a27f11-fa5a-449e-bfbb-aab578d1cc4f
-ms.openlocfilehash: fe9b466ca839cb09011dc7cc38650b8b85037e86
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 0ace61d708744d6d7ef715158d7a4452a3bf5b03
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914166"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246728"
 ---
 # <a name="internal-crt-globals-and-functions"></a>내부 CRT 전역 및 함수
 
@@ -945,7 +946,7 @@ CRT(C 런타임) 라이브러리에는 공용 라이브러리 인터페이스를
 
 다음 전역 변수 및 매크로 정의는 CRT를 구현하는 데 사용됩니다.
 
-|속성|
+|Name|
 |----------|
 |__badioinfo|
 |[_acmdln](../c-runtime-library/acmdln-tcmdln-wcmdln.md)|
@@ -964,7 +965,7 @@ CRT(C 런타임) 라이브러리에는 공용 라이브러리 인터페이스를
 
 다음 함수 및 함수 매크로는 CRT 및 C++ 표준 라이브러리를 구현하는 데 사용됩니다.
 
-|속성|
+|Name|
 |----------|
 |__acrt_iob_func|
 |__AdjustPointer|
@@ -1170,14 +1171,14 @@ CRT(C 런타임) 라이브러리에는 공용 라이브러리 인터페이스를
 |__p&#95;&#95;_wargv|
 |__p&#95;&#95;_winitenv|
 |__p\__acmdln|
-|[__p\__commode](../c-runtime-library/p-commode.md)|
+|[__p \_ _commode](../c-runtime-library/p-commode.md)|
 |__p\__crtAssertBusy|
 |__p\__crtBreakAlloc|
 |__p\__crtDbgFlag|
 |__p\__daylight|
 |__p\__dstbias|
 |__p\__environ|
-|[__p\__fmode](../c-runtime-library/p-fmode.md)|
+|[__p \_ _fmode](../c-runtime-library/p-fmode.md)|
 |__p\__iob|
 |__p\__mbcasemap|
 |__p\__mbctype|
@@ -1270,6 +1271,6 @@ CRT(C 런타임) 라이브러리에는 공용 라이브러리 인터페이스를
 |_Xbad_alloc|
 |_Xlength_error|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [범주별 유버니설 C 런타임 루틴](../c-runtime-library/run-time-routines-by-category.md)<br/>
