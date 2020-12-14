@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 대화 상자의 컨트롤에 대 한 액세스 Type-Safe'
 title: 대화 상자의 컨트롤에 대한 형식이 안전한 액세스
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - type-safe access to dialog box controls
 - MFC dialog boxes [MFC], type-safe access to controls
 ms.assetid: 67021025-dd93-4d6a-8bed-a1348fe50685
-ms.openlocfilehash: 9b8e5aef61d1a7c7277f2a6bd37b81bd156bb837
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1c8b3482ee723e95142c9cd19fa6068f32f4ebd0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62181620"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97263831"
 ---
 # <a name="type-safe-access-to-controls-in-a-dialog-box"></a>대화 상자의 컨트롤에 대한 형식이 안전한 액세스
 
@@ -23,10 +24,10 @@ ms.locfileid: "62181620"
 
 `CDialog`에서 파생된 클래스에서 대화 상자의 컨트롤과 C++ 컨트롤 멤버 변수 간에 연결하기 위한 두 가지 방법은 다음과 같습니다.
 
-- [코드 마법사 없이](../mfc/type-safe-access-to-controls-without-code-wizards.md)
+- [코드 마법사를 사용하지 않는 경우](../mfc/type-safe-access-to-controls-without-code-wizards.md)
 
-- [코드 마법사를 사용 하 여](../mfc/type-safe-access-to-controls-with-code-wizards.md)
+- [코드 마법사를 사용하는 경우](../mfc/type-safe-access-to-controls-with-code-wizards.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [대화 상자](../mfc/dialog-boxes.md)

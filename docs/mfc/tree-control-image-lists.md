@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 트리 컨트롤 이미지 목록'
 title: 트리 컨트롤 이미지 목록
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - tree controls [MFC], image lists
 - CTreeCtrl class [MFC], image lists
 ms.assetid: f560c4f2-20d2-4d28-ac33-4017e65fb0a6
-ms.openlocfilehash: 8f9e323244657ea6a7cc132deab6deedfcd1a167
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: ce76cca5642208d4158b36c45c150202270258e4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69513366"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97264156"
 ---
 # <a name="tree-control-image-lists"></a>트리 컨트롤 이미지 목록
 
@@ -23,11 +24,11 @@ ms.locfileid: "69513366"
 
 상태 이미지 목록이 지정 된 경우 트리 컨트롤은 상태 이미지에 대 한 각 항목의 아이콘 왼쪽에 공간을 예약 합니다. 응용 프로그램은 선택 된 확인란 및 선택 취소와 같은 상태 이미지를 사용 하 여 응용 프로그램 정의 항목 상태를 나타낼 수 있습니다. 비트 12-15의 0이 아닌 값은 상태 이미지의 인덱스 (0은 상태 이미지를 표시 하지 않음)를 지정 합니다.
 
-이미지의 인덱스 대신 **I_IMAGECALLBACK** 값을 지정 하면 항목을 다시 그릴 때까지 선택 된 이미지 또는 nonselected 이미지를 지정 하는 것이 지연 될 수 있습니다. **I_IMAGECALLBACK** 는 [TVN_GETDISPINFO](/windows/win32/Controls/tvn-getdispinfo) 알림 메시지를 보내 응용 프로그램에 인덱스를 쿼리하도록 트리 컨트롤에 지시 합니다.
+이미지의 인덱스 대신 **I_IMAGECALLBACK** 값을 지정 하 여 항목을 다시 그릴 때까지 선택 된 이미지 또는 nonselected 이미지를 지정 하는 데 지연이 발생할 수 있습니다. **I_IMAGECALLBACK** 은 [TVN_GETDISPINFO](/windows/win32/Controls/tvn-getdispinfo) 알림 메시지를 보내 응용 프로그램에 인덱스를 쿼리하도록 트리 컨트롤에 지시 합니다.
 
-[Getimagelist](../mfc/reference/ctreectrl-class.md#getimagelist) 멤버 함수는 트리 컨트롤의 이미지 목록 핸들을 검색 합니다. 이 함수는 목록에 이미지를 더 추가 해야 하는 경우에 유용 합니다. 이미지 목록에 대 한 자세한 내용은 [CImageList 사용](../mfc/using-cimagelist.md), *MFC 참조*에서 [CImageList](../mfc/reference/cimagelist-class.md) 사용 및 Windows SDK의 [이미지 목록](/windows/win32/controls/image-lists) 을 참조 하세요.
+[Getimagelist](../mfc/reference/ctreectrl-class.md#getimagelist) 멤버 함수는 트리 컨트롤의 이미지 목록 핸들을 검색 합니다. 이 함수는 목록에 이미지를 더 추가 해야 하는 경우에 유용 합니다. 이미지 목록에 대 한 자세한 내용은 [CImageList 사용](../mfc/using-cimagelist.md), *MFC 참조* 에서 [CImageList](../mfc/reference/cimagelist-class.md) 사용 및 Windows SDK의 [이미지 목록](/windows/win32/controls/image-lists) 을 참조 하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [CTreeCtrl 사용](../mfc/using-ctreectrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)

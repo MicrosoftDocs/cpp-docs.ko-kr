@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 코드 마법사를 사용 하 여 컨트롤에 대 한 액세스 Type-Safe'
 title: 코드 마법사를 사용하여 컨트롤에 대한 형식이 안전한 액세스 수행
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - dialog boxes [MFC], access to controls
 - dialog box controls [MFC], accessing
 ms.assetid: b8874393-ee48-4124-8d78-e3648a7e29b9
-ms.openlocfilehash: ee7c49f75dcdc2b6c32f2b391ace7260b46d197b
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: b68331df61c1586f4cc63413f162ac1af107ce88
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91507897"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97263805"
 ---
 # <a name="type-safe-access-to-controls-with-code-wizards"></a>코드 마법사를 사용하여 컨트롤에 대한 형식이 안전한 액세스 수행
 
@@ -25,7 +26,7 @@ DDX 기능에 대해 잘 알고 있는 경우 [멤버 변수 추가 마법사](.
 > [!NOTE]
 > 지정 된 컨트롤의 경우 Value 속성을 사용 하는 여러 멤버 변수와 컨트롤 속성을 가진 멤버 변수가 최대 하나만 있을 수 있습니다. 컨트롤에 연결 된 여러 개체 또는 다른 창에는 메시지 맵의 모호성이 발생 하므로 하나의 MFC 개체만 컨트롤에 매핑할 수 있습니다.
 
-이 개체를 사용 하 여 컨트롤 개체에 대 한 멤버 함수를 호출할 수 있습니다. 이러한 호출은 대화 상자의 컨트롤에 영향을 줍니다. 예를 들어 형식 *m_Checkbox*변수로 표시 된 확인란 컨트롤의 경우 `CButton` 다음을 호출할 수 있습니다.
+이 개체를 사용 하 여 컨트롤 개체에 대 한 멤버 함수를 호출할 수 있습니다. 이러한 호출은 대화 상자의 컨트롤에 영향을 줍니다. 예를 들어 형식 *m_Checkbox* 변수로 표시 된 확인란 컨트롤의 경우 `CButton` 다음을 호출할 수 있습니다.
 
 [!code-cpp[NVC_MFCControlLadenDialog#52](../mfc/codesnippet/cpp/type-safe-access-to-controls-with-code-wizards_1.cpp)]
 
