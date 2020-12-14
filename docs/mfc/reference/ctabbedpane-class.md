@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CTabbedPane 클래스'
 title: CTabbedPane 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - CTabbedPane [MFC], m_bTabsAlwaysTop
 - CTabbedPane [MFC], m_pTabWndRTC
 ms.assetid: f4dc5215-b789-4f2d-8c62-477aceda3578
-ms.openlocfilehash: cfc0a3099b1d5ff9bd1093cc911745bd61cde64c
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: a337a68cdeadfec229b24e10a615ba49145ec1ad
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90686641"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97264481"
 ---
 # <a name="ctabbedpane-class"></a>CTabbedPane 클래스
 
@@ -51,13 +52,13 @@ class CTabbedPane : public CBaseTabbedPane
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |`CTabbedPane::CTabbedPane`|기본 생성자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CTabbedPane::DetachPane](#detachpane)|[:D CBaseTabbedPane](../../mfc/reference/cbasetabbedpane-class.md#detachpane)를 재정의 합니다.|
 |[CTabbedPane::EnableTabAutoColor](#enabletabautocolor)|탭의 자동 색 지정을 사용하거나 사용하지 않도록 설정합니다.|
@@ -71,7 +72,7 @@ class CTabbedPane : public CBaseTabbedPane
 
 ### <a name="data-members"></a>데이터 멤버
 
-|Name|Description|
+|Name|설명|
 |----------|-----------------|
 |[CTabbedPane::m_bTabsAlwaysTop](#m_btabsalwaystop)|애플리케이션에서 탭의 기본 위치입니다.|
 |[CTabbedPane::m_pTabWndRTC](#m_ptabwndrtc)|사용자 지정 `CMFCTabCtrl` 파생 개체에 대한 런타임 클래스 정보입니다.|
@@ -338,7 +339,7 @@ static void SetTabAutoColors(const CArray<COLORREF, COLORREF>& arColors);
 
 [CTabbedPane:: EnableTabAutoColor](#enabletabautocolor) 를 사용 하 여 자동 색 기능을 사용 하거나 사용 하지 않도록 설정할 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

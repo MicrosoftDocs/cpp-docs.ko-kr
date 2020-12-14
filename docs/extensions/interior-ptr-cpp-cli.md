@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: interior_ptr (c + +/CLI)'
 title: interior_ptr(C++/CLI)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -9,16 +10,16 @@ f1_keywords:
 helpviewer_keywords:
 - interior_ptr keyword [C++]
 ms.assetid: 25160f74-569e-492d-9e3c-67ece7486baa
-ms.openlocfilehash: affec6dcd88290b24a92cd9035a131baee38bcf1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1254746b76c5b217c03848d4b55253e40bcfd5a0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214271"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97265599"
 ---
 # <a name="interior_ptr-ccli"></a>interior_ptr(C++/CLI)
 
-*내부 포인터*는 개체 자체가 아닌 참조 형식 내부에 대한 포인터를 선언합니다. 내부 포인터는 참조 핸들, 값 형식, boxed 형식 핸들, 관리되는 형식의 멤버 또는 관리되는 배열의 요소를 가리킬 수 있습니다.
+*내부 포인터* 는 개체 자체가 아닌 참조 형식 내부에 대한 포인터를 선언합니다. 내부 포인터는 참조 핸들, 값 형식, boxed 형식 핸들, 관리되는 형식의 멤버 또는 관리되는 배열의 요소를 가리킬 수 있습니다.
 
 ## <a name="all-runtimes"></a>모든 런타임
 
@@ -48,7 +49,7 @@ cli::interior_ptr<cv_qualifier type> var = &initializer;
 **`const`** 또는 **`volatile`** 한정자입니다.
 
 *type*<br/>
-‘이니셜라이저’의 형식입니다.**
+‘이니셜라이저’의 형식입니다.
 
 *var*<br/>
 **interior_ptr** 변수의 이름입니다.
@@ -60,7 +61,7 @@ cli::interior_ptr<cv_qualifier type> var = &initializer;
 
 네이티브 포인터는 개체의 인스턴스를 이동시키는 가비지 수집기로부터 도출되는 관리되는 힙에서 위치를 변경하는 항목을 추적할 수 없습니다. 포인터가 인스턴스를 제대로 참조하려면 런타임은 포인터를 새로 위치가 지정된 개체로 업데이트해야 합니다.
 
-**interior_ptr**은 네이티브 포인터 기능의 상위 집합을 나타냅니다.  따라서 네이티브 포인터에 할당할 수 있으면 **interior_ptr**에도 할당할 수 있습니다.  내부 포인터는 네이티브 포인터로서 비교 및 포인터 산술을 포함한 동일한 일련의 작업을 수행할 수 있습니다.
+**interior_ptr** 은 네이티브 포인터 기능의 상위 집합을 나타냅니다.  따라서 네이티브 포인터에 할당할 수 있으면 **interior_ptr** 에도 할당할 수 있습니다.  내부 포인터는 네이티브 포인터로서 비교 및 포인터 산술을 포함한 동일한 일련의 작업을 수행할 수 있습니다.
 
 내부 포인터를 스택에만 선언할 수 있습니다.  내부 포인터를 클래스의 멤버로 선언할 수 없습니다.
 
@@ -70,7 +71,7 @@ cli::interior_ptr<cv_qualifier type> var = &initializer;
 
 가비지 수집된 힙에서 이동할 수 없는 개체를 가리키는 내부 포인터를 선언하는 방법에 대한 자세한 내용은 [pin_ptr](pin-ptr-cpp-cli.md)을 참조하세요.
 
-**interior_ptr**은 cli 네임스페이스에 있습니다.  자세한 내용은 [Platform, default 및 cli 네임스페이스](platform-default-and-cli-namespaces-cpp-component-extensions.md)를 참조하세요.
+**interior_ptr** 은 cli 네임스페이스에 있습니다.  자세한 내용은 [Platform, default 및 cli 네임스페이스](platform-default-and-cli-namespaces-cpp-component-extensions.md)를 참조하세요.
 
 내부 포인터에 대한 자세한 내용은 다음을 참조하십시오.
 

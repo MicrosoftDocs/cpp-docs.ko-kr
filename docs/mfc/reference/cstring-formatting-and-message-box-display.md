@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: CString 서식 지정 및 Message-Box 표시'
 title: CString 서식 지정 및 메시지 상자 표시
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CString objects [MFC], formatting and message boxes
 ms.assetid: d1068cf4-9cc5-4952-b9e7-d612c53cbc28
-ms.openlocfilehash: e346fe6ed5235f98f9e1206e92cb53c2fd5c929f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: a3c91a2a8a6f80235a834811433467797d5a37a7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831127"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97264520"
 ---
 # <a name="cstring-formatting-and-message-box-display"></a>CString 서식 지정 및 메시지 상자 표시
 
@@ -51,7 +52,7 @@ BOOL AFXAPI AfxExtractSubString (
 추출할 문자열의 전체 텍스트를 포함 하는 문자열입니다.
 
 *iSubString*<br/>
-*LpszFullString*에서 추출할 부분 문자열의 인덱스 (0부터 시작)입니다.
+*LpszFullString* 에서 추출할 부분 문자열의 인덱스 (0부터 시작)입니다.
 
 *chSep 월*<br/>
 부분 문자열을 구분 하는 데 사용 되는 구분 기호 문자입니다.
@@ -76,7 +77,7 @@ BOOL AFXAPI AfxExtractSubString (
 
 ## <a name="afxformatstring1"></a><a name="afxformatstring1"></a> AfxFormatString1
 
-*NIDS*로 식별 되는 템플릿 문자열 리소스에서 문자 "%1"의 모든 인스턴스에 대해 *lpsz1* 가 가리키는 문자열을 대체 합니다.
+*NIDS* 로 식별 되는 템플릿 문자열 리소스에서 문자 "%1"의 모든 인스턴스에 대해 *lpsz1* 가 가리키는 문자열을 대체 합니다.
 
 ```cpp
 void  AfxFormatString1(
@@ -98,7 +99,7 @@ void  AfxFormatString1(
 
 ### <a name="remarks"></a>설명
 
-새로 구성 된 문자열은 *Rstring*에 저장 됩니다. 예를 들어 문자열 테이블의 문자열이 "파일 %1을 (를) 찾을 수 없음"이 고 *lpsz1* 가 "C:\MYFILE.TXT" 이면 *Rstring* 에 "파일 C:\MYFILE.TXT 찾을 수 없음" 문자열이 포함 됩니다. 이 함수는 메시지 상자와 다른 창에 서식 지정 문자열을 전송하는 데 유용합니다.
+새로 구성 된 문자열은 *Rstring* 에 저장 됩니다. 예를 들어 문자열 테이블의 문자열이 "파일 %1을 (를) 찾을 수 없음"이 고 *lpsz1* 가 "C:\MYFILE.TXT" 이면 *Rstring* 에 "파일 C:\MYFILE.TXT 찾을 수 없음" 문자열이 포함 됩니다. 이 함수는 메시지 상자와 다른 창에 서식 지정 문자열을 전송하는 데 유용합니다.
 
 서식 문자 "%1"이(가) 두 번 이상 문자열에 나타나는 경우 대체가 여러 번 수행됩니다.
 
@@ -112,7 +113,7 @@ void  AfxFormatString1(
 
 ## <a name="afxformatstring2"></a><a name="afxformatstring2"></a> AfxFormatString2
 
-는 "%1" 문자 인스턴스에 대해 *lpsz1* 가 가리키는 문자열을, *nIDS*로 식별 되는 템플릿 문자열 리소스에서 문자 "%2"의 모든 인스턴스에 대해 *lpsz2* 가 가리키는 문자열을 대체 합니다.
+는 "%1" 문자 인스턴스에 대해 *lpsz1* 가 가리키는 문자열을, *nIDS* 로 식별 되는 템플릿 문자열 리소스에서 문자 "%2"의 모든 인스턴스에 대해 *lpsz2* 가 가리키는 문자열을 대체 합니다.
 
 ```cpp
 void AfxFormatString2(
@@ -138,7 +139,7 @@ void AfxFormatString2(
 
 ### <a name="remarks"></a>설명
 
-새로 구성 된 문자열은 *Rstring*에 저장 됩니다. 예를 들어 문자열 테이블의 문자열이 "%2 디렉터리에서 찾을 수 없는 파일" 인 경우 *lpsz1* 는 "MYFILE.TXT"을 가리키고 *lpsz2* 는 "c:\mydir"을 가리킵니다. *Rstring* 에는 "파일 MYFILE.TXT 디렉터리 c:\mydir에서 찾을 수 없습니다." 라는 문자열이 포함 됩니다.
+새로 구성 된 문자열은 *Rstring* 에 저장 됩니다. 예를 들어 문자열 테이블의 문자열이 "%2 디렉터리에서 찾을 수 없는 파일" 인 경우 *lpsz1* 는 "MYFILE.TXT"을 가리키고 *lpsz2* 는 "c:\mydir"을 가리킵니다. *Rstring* 에는 "파일 MYFILE.TXT 디렉터리 c:\mydir에서 찾을 수 없습니다." 라는 문자열이 포함 됩니다.
 
 서식 문자 "%1" 또는 "%2"이 (가) 문자열에 두 번 이상 표시 되는 경우 여러 대체가 수행 됩니다. 숫자 순서를 반드시 지정할 필요는 없습니다.
 
@@ -206,7 +207,7 @@ int AFXAPI AfxMessageBox(
 
 이 오버 로드 된 함수의 첫 번째 형태는 메시지 상자에서 *lpszText* 가 가리키는 텍스트 문자열을 표시 하 고 *nIDHelp* 를 사용 하 여 도움말 컨텍스트를 설명 합니다. 도움말 컨텍스트는 사용자가 도움말 키 (일반적으로 F1)를 누를 때 연결 된 도움말 항목으로 이동 하는 데 사용 됩니다.
 
-함수의 두 번째 형태는 ID *nIDPrompt* 문자열 리소스를 사용 하 여 메시지 상자에 메시지를 표시 합니다. *NIDHelp*의 값을 통해 연결 된 도움말 페이지를 찾을 수 있습니다. *NIDHelp* 의 기본값 (-1)을 사용 하는 경우에는 문자열 리소스 ID *nIDPrompt*가 도움말 컨텍스트에 사용 됩니다. 도움말 컨텍스트를 정의 하는 방법에 대 한 자세한 내용은 [Technical Note 28](../../mfc/tn028-context-sensitive-help-support.md)을 참조 하십시오.
+함수의 두 번째 형태는 ID *nIDPrompt* 문자열 리소스를 사용 하 여 메시지 상자에 메시지를 표시 합니다. *NIDHelp* 의 값을 통해 연결 된 도움말 페이지를 찾을 수 있습니다. *NIDHelp* 의 기본값 (-1)을 사용 하는 경우에는 문자열 리소스 ID *nIDPrompt* 가 도움말 컨텍스트에 사용 됩니다. 도움말 컨텍스트를 정의 하는 방법에 대 한 자세한 내용은 [Technical Note 28](../../mfc/tn028-context-sensitive-help-support.md)을 참조 하십시오.
 
 ### <a name="example"></a>예제
 
