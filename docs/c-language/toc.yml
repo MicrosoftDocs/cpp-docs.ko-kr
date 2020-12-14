@@ -270,6 +270,8 @@
                   href: ../c-language/string-literals-in-primary-expressions.md
                 - name: 괄호를 사용한 식
                   href: ../c-language/expressions-in-parentheses.md
+                - name: 일반 선택(C11)
+                  href: ../c-language/generic_selection.md
             - name: L-value 및 R-value 식
               href: ../c-language/l-value-and-r-value-expressions.md
             - name: C 상수 식
