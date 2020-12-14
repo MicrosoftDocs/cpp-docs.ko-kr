@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: MFC에서 사용할 수 있는 파생 뷰 클래스'
 title: MFC에서 사용할 수 있는 파생된 뷰 클래스
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - derived classes [MFC], view classes
 - view classes [MFC], derived
 ms.assetid: dba42178-7459-4ccc-b025-f3d9b8a4b737
-ms.openlocfilehash: dc0f0b10ea291db32c576a7d36b7fc19728fa6ce
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 669fb0f47cc2124fcf45d0eed3666869837f56f6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616977"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97211897"
 ---
 # <a name="derived-view-classes-available-in-mfc"></a>MFC에서 사용할 수 있는 파생된 뷰 클래스
 
@@ -20,11 +21,11 @@ ms.locfileid: "84616977"
 
 ### <a name="view-classes"></a>뷰 클래스
 
-|클래스|Description|
+|클래스|설명|
 |-----------|-----------------|
 |[CView](reference/cview-class.md)|모든 뷰의 기본 클래스입니다.|
 |[CCtrlView](reference/cctrlview-class.md)|,, 및의 기본 클래스 `CTreeView` `CListView` `CEditView` `CRichEditView` 입니다. 이러한 클래스를 사용 하면 표시 된 Windows 공용 컨트롤과 함께 문서/뷰 아키텍처를 사용할 수 있습니다.|
-|[CEditView](reference/ceditview-class.md)|Windows 편집 상자 컨트롤을 기반으로 하는 간단한 뷰입니다. 텍스트를 입력 하 고 편집할 수 있으며 간단한 텍스트 편집기 응용 프로그램의 기준으로 사용할 수 있습니다. `CRichEditView`도 참조하세요.|
+|[CEditView](reference/ceditview-class.md)|Windows 편집 상자 컨트롤을 기반으로 하는 간단한 뷰입니다. 텍스트를 입력 하 고 편집할 수 있으며 간단한 텍스트 편집기 응용 프로그램의 기준으로 사용할 수 있습니다. `CRichEditView`을 참조하세요.|
 |[CRichEditView](reference/cricheditview-class.md)|[CRichEditCtrl](reference/cricheditctrl-class.md) 개체를 포함 하는 뷰입니다. 이 클래스는와 유사 `CEditView` 하지만와는 `CEditView` 달리 `CRichEditView` 서식 지정 된 텍스트를 처리 합니다.|
 |[CListView](reference/clistview-class.md)|[CListCtrl](reference/clistctrl-class.md) 개체를 포함 하는 뷰입니다.|
 |[CTreeView](reference/ctreeview-class.md)|Visual C++의 솔루션 탐색기 창과 유사한 뷰에 대 한 [CTreeCtrl](reference/ctreectrl-class.md) 개체를 포함 하는 뷰입니다.|

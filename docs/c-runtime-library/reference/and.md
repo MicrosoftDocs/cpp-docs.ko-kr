@@ -1,5 +1,6 @@
 ---
-title: and
+description: '자세히 알아보기: 및'
+title: 를 갖는
 ms.date: 11/04/2016
 api_location:
 - msvcrt.dll
@@ -23,14 +24,14 @@ f1_keywords:
 helpviewer_keywords:
 - and macro
 ms.assetid: 2644ab57-8e1b-48f0-9021-cafe3e26bdc4
-ms.openlocfilehash: 1318139610cd99d22fa709a0ce8ad11c22775be1
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: addc54fe49c30d7d0f3499415d687eef0112a6f5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80170906"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97211338"
 ---
-# <a name="and"></a>and
+# <a name="and"></a>를 갖는
 
 && 연산자에 대한 대안입니다.
 
@@ -41,7 +42,7 @@ ms.locfileid: "80170906"
 #define and &&
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 매크로가 && 연산자를 생성합니다.
 
@@ -75,4 +76,4 @@ false
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<iso646 >
+**헤더:**\<iso646.h>

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: TN031: 컨트롤 막대'
 title: 'TN031: 컨트롤 막대'
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,23 +15,23 @@ helpviewer_keywords:
 - TN031
 - styles [MFC], control bars
 ms.assetid: 8cb895c0-40ea-40ef-90ee-1dd29f34cfd1
-ms.openlocfilehash: 37c3a15c281018260e65508dee3799ab0011dbfe
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 42dddf1afabdf2ab04ba8441208e7109eeacbd65
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81370301"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97215549"
 ---
 # <a name="tn031-control-bars"></a>TN031: 컨트롤 막대
 
 > [!NOTE]
 > 다음 기술 노트는 온라인 설명서에 먼저 포함되어 있었으므로 업데이트되지 않았습니다. 따라서 일부 절차 및 항목은 만료되거나 올바르지 않을 수 있습니다. 최신 정보를 보려면 온라인 설명서 색인에서 관심 있는 항목을 검색하는 것이 좋습니다.
 
-이 노트에서는 MFC의 [CControlBar](#_mfcnotes_ccontrolbar) [CDialogBar](#_mfcnotes_cdialogbar) `CDockBar`컨트롤 막대 클래스에 대해 [CStatusBar](#_mfcnotes_cstatusbar)설명합니다. [CToolBar](#_mfcnotes_ctoolbar)
+이 메모는 MFC의 컨트롤 막대 클래스에 대해 설명 합니다. 일반적인 [Ccontrolbar](#_mfcnotes_ccontrolbar), [cstatusbar](#_mfcnotes_cstatusbar), [CToolBar](#_mfcnotes_ctoolbar), [CDialogBar](#_mfcnotes_cdialogbar)및 `CDockBar` 입니다.
 
 ## <a name="ccontrolbar"></a><a name="_mfcnotes_ccontrolbar"></a> CControlBar
 
-A는 `ControlBar` `CWnd`다음과 같은 -파생 클래스입니다.
+는 `ControlBar` `CWnd` 다음과 같은 파생 클래스입니다.
 
 - 프레임 창의 위쪽 또는 아래쪽에 정렬됩니다.
 
@@ -38,11 +39,11 @@ A는 `ControlBar` `CWnd`다음과 같은 -파생 클래스입니다.
 
 컨트롤 막대는 추가 스타일을 지원합니다.
 
-- CBRS_TOP(기본값)은 컨트롤 막대를 맨 위에 고정합니다.
+- CBRS_TOP (기본값) 컨트롤 막대를 위쪽에 고정 합니다.
 
-- CBRS_BOTTOM 컨트롤 바를 아래쪽에 고정합니다.
+- 컨트롤 막대를 아래쪽에 고정 CBRS_BOTTOM 합니다.
 
-- CBRS_NOALIGN 부모의 크기를 조정할 때 컨트롤 막대의 위치를 조정하지 마십시오.
+- 부모의 크기가 조정 될 때 컨트롤 막대의 위치를 변경 하지 CBRS_NOALIGN 합니다.
 
 `CControlBar` 에서 파생된 클래스는 더 흥미로운 구현을 제공합니다.
 
@@ -52,7 +53,7 @@ A는 `ControlBar` `CWnd`다음과 같은 -파생 클래스입니다.
 
 - `CDialogBar` 표준 Windows 컨트롤(대화 상자 템플릿 리소스에서 생성됨)을 포함하는 도구 모음 같은 프레임
 
-- `CDockBar`다른 `CControlBar` 파생 개체에 대한 일반화된 도킹 영역입니다. 이 클래스에서 사용 가능한 특정 멤버 함수 및 변수는 이후 릴리스에서 변경될 수 있습니다.
+- `CDockBar` 다른 파생 개체에 대 한 일반화 된 도킹 영역 `CControlBar` 입니다. 이 클래스에서 사용 가능한 특정 멤버 함수 및 변수는 이후 릴리스에서 변경될 수 있습니다.
 
 모든 컨트롤 막대 개체/창은 일부 부모 프레임 창의 자식 창이 되며, 일반적으로 프레임의 클라이언트 영역(예: MDI 클라이언트 또는 뷰)에 형제로 추가됩니다. 컨트롤 막대의 자식 창 ID가 중요합니다. 컨트롤 막대의 기본 레이아웃은 ID가 AFX_IDW_CONTROLBAR_FIRST에서 AFX_IDW_CONTROLBAR_LAST 사이 범위에 속하는 컨트롤 막대에만 작동합니다. 256개의 컨트롤 막대 ID 범위가 있지만 이러한 컨트롤 막대 ID 중 처음 32개는 특별히 인쇄 미리 보기 아키텍처에서 지원됩니다.
 
@@ -64,10 +65,10 @@ A는 `ControlBar` `CWnd`다음과 같은 -파생 클래스입니다.
 
 - 파생된 클래스의 구현 지원
 
-C++ 컨트롤 막대 개체는 일반적으로 `CFrameWnd` 파생 클래스의 멤버로 포함되며, 부모 `HWND` 및 개체가 제거되면 삭제됩니다. 힙에 컨트롤 막대 개체를 할당해야 하는 경우 *가 제거될 때 컨트롤 막대에 "* delete this **"가 적용되도록** m_bAutoDestruct**멤버를**TRUE `HWND` 로 설정하기만 하면 됩니다.
+C++ 컨트롤 막대 개체는 일반적으로 `CFrameWnd` 파생 클래스의 멤버로 포함되며, 부모 `HWND` 및 개체가 제거되면 삭제됩니다. 힙에 컨트롤 막대 개체를 할당해야 하는 경우 *가 제거될 때 컨트롤 막대에 "* delete this **"가 적용되도록** m_bAutoDestruct **멤버를** TRUE `HWND` 로 설정하기만 하면 됩니다.
 
 > [!NOTE]
-> 의 또는 와 `CControlBar` `CStatusBar` `CToolBar`같은 `CDialogBar`MFC의 파생 클래스 중 하나를 사용하는 대신 사용자 고유의 파생 클래스를 만드는 경우 *m_dwStyle* 데이터 멤버를 설정해야 합니다. 이 작업은 다음의 `Create`재정의에서 수행할 수 있습니다.
+> `CControlBar`, 또는와 같은 MFC의 파생 클래스 중 하나를 사용 하는 대신 사용자가 직접 파생 된 클래스를 만드는 경우 `CStatusBar` `CToolBar` `CDialogBar` *m_dwStyle* 데이터 멤버를 설정 해야 합니다. 이 작업은 다음의 재정의에서 수행할 수 있습니다 `Create` .
 
 ```
 // CMyControlBar is derived from CControlBar
@@ -89,9 +90,9 @@ BOOL CMyControlBar::Create(CWnd* pParentWnd,
 
 자세한 내용은 `CWnd::RepositionBars` 및 `CFrameWnd::RecalcLayout` 을 참조하세요.
 
-WM_SIZEPARENT 포함한 MFC 개인 Windows 메시지는 [기술 참고 24에](../mfc/tn024-mfc-defined-messages-and-resources.md)설명되어 있습니다.
+WM_SIZEPARENT를 포함 한 MFC 개인 Windows 메시지는 [기술 참고 24](../mfc/tn024-mfc-defined-messages-and-resources.md)에 설명 되어 있습니다.
 
-## <a name="cstatusbar"></a><a name="_mfcnotes_cstatusbar"></a>CStatusBar
+## <a name="cstatusbar"></a><a name="_mfcnotes_cstatusbar"></a> CStatusBar
 
 상태 표시줄은 텍스트 출력 창 행이 있는 컨트롤 막대입니다. 텍스트 출력 창을 사용하는 두 가지 일반적인 방법은 다음과 같습니다.
 
@@ -116,21 +117,21 @@ WM_SIZEPARENT 포함한 MFC 개인 Windows 메시지는 [기술 참고 24에](..
 
 **CCmdUI의 CStatusBar 지원**
 
-지표가 일반적으로 업데이트되는 방식은 ON_UPDATE_COMMAND_UI 메커니즘을 통해서입니다. 유휴 시간에 상태 표시줄은 표시기 창의 문자열 ID를 사용 하 고 ON_UPDATE_COMMAND_UI 처리기를 호출 합니다.
+표시기는 일반적으로 ON_UPDATE_COMMAND_UI 메커니즘을 통해 업데이트 됩니다. 유휴 시간에 상태 표시줄은 표시기 창의 문자열 ID로 ON_UPDATE_COMMAND_UI 처리기를 호출 합니다.
 
 ON_UPDATE_COMMAND_UI 처리기는 다음을 호출할 수 있습니다.
 
-- `Enable`: 창을 활성화하거나 사용하지 않도록 설정합니다. 비활성화된 창은 정확히 활성화된 창처럼 표시되지만 텍스트가 보이지 않습니다(즉, 텍스트 표시기가 해제됨).
+- `Enable`: 창을 활성화 하거나 비활성화 합니다. 비활성화된 창은 정확히 활성화된 창처럼 표시되지만 텍스트가 보이지 않습니다(즉, 텍스트 표시기가 해제됨).
 
-- `SetText`: 텍스트를 변경합니다. 이를 사용할 때는 창 크기가 자동으로 조정되지 않으므로 주의해야 합니다.
+- `SetText`: 텍스트를 변경 합니다. 이를 사용할 때는 창 크기가 자동으로 조정되지 않으므로 주의해야 합니다.
 
 [만들기 및 사용자 지정 API에 대한 자세한 내용은](../mfc/reference/cstatusbar-class.md) 클래스 라이브러리 참조 *에서* CStatusBar `CStatusBar` 클래스를 참조하세요. 상태 표시줄의 사용자 지정은 대부분 상태 표시줄이 처음에 표시되기 전에 수행해야 합니다.
 
 상태 표시줄은 하나의 스트레치 창(일반적으로 첫 번째 창)만 지원합니다. 이 창의 크기는 실제로 최소 크기입니다. 상태 표시줄이 모든 창의 최소 크기보다 큰 경우 스트레치 창에 임의의 추가 너비가 제공됩니다. 상태 표시줄이 있는 기본 애플리케이션은 첫 번째 창이 스트레치이므로 CAP, NUM 및 SCRL에 대한 오른쪽 맞춤 표시기가 있습니다.
 
-## <a name="ctoolbar"></a><a name="_mfcnotes_ctoolbar"></a>Ctoolbar
+## <a name="ctoolbar"></a><a name="_mfcnotes_ctoolbar"></a> CToolBar
 
-도구 모음은 구분 기호를 포함할 수 있는 비트맵 단추 행이 있는 컨트롤 막대입니다. 두 가지 스타일의 단추, 즉 누름 단추 및 확인란 단추가 지원됩니다. 라디오 그룹 기능은 확인버튼과 ON_UPDATE_COMMAND_UI 함께 구축할 수 있습니다.
+도구 모음은 구분 기호를 포함할 수 있는 비트맵 단추 행이 있는 컨트롤 막대입니다. 두 가지 스타일의 단추, 즉 누름 단추 및 확인란 단추가 지원됩니다. 라디오 그룹 기능은 확인란 단추 및 ON_UPDATE_COMMAND_UI를 사용 하 여 빌드할 수 있습니다.
 
 도구 모음의 모든 비트맵 단추는 하나의 비트맵에서 가져옵니다. 이 비트맵은 각 단추에 대한 하나의 이미지 또는 문자 모양을 포함해야 합니다. 일반적으로 비트맵의 이미지/문자 모양 순서는 화면에 그려지는 순서와 동일합니다. 사용자 지정 API를 사용하여 이를 변경할 수 있습니다.
 
@@ -161,11 +162,11 @@ ON_UPDATE_COMMAND_UI 처리기는 다음을 호출할 수 있습니다.
 
 ## <a name="ccmdui-support-for-ctoolbar"></a>CCmdUI의 CToolBar 지원
 
-도구 모음 단추를 항상 업데이트하는 방법은 ON_UPDATE_COMMAND_UI 메커니즘을 통해서입니다. 유휴 시간에 도구 모음은 해당 단추의 명령 ID를 사용하여 ON_UPDATE_COMMAND_UI 처리기를 호출합니다. ON_UPDATE_COMMAND_UI 구분 기호에 대 한 호출 되지 않습니다., 하지만 푸시 버튼 및 확인 란 단에 대 한 호출 됩니다.
+도구 모음 단추가 항상 업데이트 되는 방식은 ON_UPDATE_COMMAND_UI 메커니즘을 통해 진행 됩니다. 유휴 시간에 도구 모음은 해당 단추의 명령 ID를 사용 하 여 ON_UPDATE_COMMAND_UI 처리기를 호출 합니다. ON_UPDATE_COMMAND_UI는 구분 기호에 대해 호출 되지 않지만 누름 단추 및 확인란 단추에 대해 호출 됩니다.
 
 ON_UPDATE_COMMAND_UI 처리기는 다음을 호출할 수 있습니다.
 
-- `Enable`: 버튼을 활성화하거나 비활성화합니다. 이는 누름 단추 및 확인란 단추에 대해 동일하게 작동합니다.
+- `Enable`: 단추를 사용 하거나 사용 하지 않도록 설정 합니다. 이는 누름 단추 및 확인란 단추에 대해 동일하게 작동합니다.
 
 - `SetCheck`: 단추의 선택 상태를 설정합니다. 도구 모음 단추에 대해 이를 호출하면 확인란 단추로 전환됩니다. `SetCheck` 에서 사용할 수 있는 매개 변수는 0(선택하지 않은 상태), 1(선택한 상태) 또는 2(비활성화 상태)입니다.
 
@@ -173,9 +174,9 @@ ON_UPDATE_COMMAND_UI 처리기는 다음을 호출할 수 있습니다.
 
 확인란 단추는 "자동" 확인란 단추입니다. 즉, 사용자가 누르면 상태가 즉시 변경됩니다. 선택한 상태는 눌러진 상태입니다. 기본 제공 사용자 인터페이스에는 단추를 "비활성화 상태"로 변경할 방법이 없습니다. 이는 코드를 통해 수행해야 합니다.
 
-사용자 지정 API를 사용하면 지정된 도구 모음 단추의 상태를 변경할 수 있으며 도구 모음 단추에서 나타내는 명령에 대해 ON_UPDATE_COMMAND_UI 처리기에서 이러한 상태를 변경하는 것이 좋습니다. 유휴 처리는 ON_UPDATE_COMMAND_UI 처리기를 사용하여 도구 모음 단추의 상태를 변경하므로 SetButtonStyle을 통해 이러한 상태가 변경되면 다음 유휴 상태가 손실될 수 있습니다.
+사용자 지정 Api는 지정 된 도구 모음 단추의 상태를 변경할 수 있도록 허용 합니다. 특히 도구 모음 단추가 나타내는 명령에 대 한 ON_UPDATE_COMMAND_UI 처리기에서 이러한 상태를 변경 해야 합니다. 유휴 처리는 ON_UPDATE_COMMAND_UI 처리기를 사용 하 여 도구 모음 단추의 상태를 변경 하므로 SetButtonStyle을 통해 수행 되는 이러한 상태 변경은 다음 유휴 상태 후에 손실 될 수 있습니다.
 
-도구 모음 단추는 일반 단추 또는 메뉴 항목과 같은 WM_COMMAND 메시지를 보내고 일반적으로 ON_UPDATE_COMMAND_UI 처리기를 제공하는 동일한 클래스의 ON_COMMAND 처리기에 의해 처리됩니다.
+도구 모음 단추는 일반 단추 또는 메뉴 항목과 같은 WM_COMMAND 메시지를 보내며, 일반적으로 ON_UPDATE_COMMAND_UI 처리기를 제공 하는 동일한 클래스의 ON_COMMAND 처리기에 의해 처리 됩니다.
 
 화면 표시 상태에 사용되는 도구 모음 단추 스타일(TBBS_ 값)에는 다음 4가지가 있습니다.
 
@@ -191,13 +192,13 @@ Windows 인터페이스 애플리케이션 디자인 가이드의 6가지 공식
 
 - 해제 = 0
 
-- 마우스 다운 = TBBS_PRESSED (다른 스타일과 &#124;)
+- 마우스 누름 = TBBS_PRESSED (다른 모든 스타일 &#124;)
 
 - 사용 안 함 = TBBS_DISABLED
 
 - 누름 = TBBS_CHECKED
 
-- 다운 비활성화 = TBBS_CHECKED &#124; TBBS_DISABLED
+- Down Disabled = TBBS_CHECKED &#124; TBBS_DISABLED
 
 - 비활성화 상태 = TBBS_INDETERMINATE
 
@@ -213,7 +214,7 @@ Windows 인터페이스 애플리케이션 디자인 가이드의 6가지 공식
 
 ## <a name="ccmdui-support-for-cdialogbar"></a>CCmdUI의 CDialogBar 지원
 
-대화 표시줄 단추는 ON_UPDATE_COMMAND_UI 처리기 메커니즘을 통해 업데이트되어야 합니다. 유휴 시간에 대화 상자 막대는 ID >= 0x8000 (즉, 명령 ID 범위)이있는 모든 단추의 명령 ID가있는 ON_UPDATE_COMMAND_UI 처리기를 호출합니다.
+대화 상자 표시줄 단추는 ON_UPDATE_COMMAND_UI 처리기 메커니즘을 통해 업데이트 해야 합니다. 유휴 시간에 대화 상자 모음은 ID >= 0x8000 (즉, 명령 Id 범위)이 있는 모든 단추의 명령 ID를 사용 하 여 ON_UPDATE_COMMAND_UI 처리기를 호출 합니다.
 
 ON_UPDATE_COMMAND_UI 처리기는 다음을 호출할 수 있습니다.
 
@@ -225,5 +226,5 @@ ON_UPDATE_COMMAND_UI 처리기는 다음을 호출할 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[숫자별 기술 노트](../mfc/technical-notes-by-number.md)<br/>
+[번호로 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
 [범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)

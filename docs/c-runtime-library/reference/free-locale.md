@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _free_locale'
 title: _free_locale
 ms.date: 4/2/2020
 api_name:
@@ -31,12 +32,12 @@ helpviewer_keywords:
 - locales, freeing
 - _free_locale function
 ms.assetid: 1f08d348-ab32-4028-a145-6cbd51b49af9
-ms.openlocfilehash: 8dbc424c00464966605cce5c44118b88eb5335d3
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 441686a1ee037097c164ae60b4ccc418f0d38ac8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920430"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97211273"
 ---
 # <a name="_free_locale"></a>_free_locale
 
@@ -57,7 +58,7 @@ void _free_locale(
 
 ## <a name="remarks"></a>설명
 
-**_Free_locale** 함수는 **_get_current_locale** 또는 **_create_locale**에 대 한 호출에서 얻은 로캘 개체를 해제 하는 데 사용 됩니다.
+**_Free_locale** 함수는 **_get_current_locale** 또는 **_create_locale** 에 대 한 호출에서 얻은 로캘 개체를 해제 하는 데 사용 됩니다.
 
 이 함수의 이전 이름인 **__free_locale** (선행 밑줄 두 개 포함)은 사용 되지 않습니다.
 
@@ -65,13 +66,13 @@ void _free_locale(
 
 ## <a name="requirements"></a>요구 사항
 
-|**일반**|필수 헤더|
+|**루틴에서 반환된 값**|필수 헤더|
 |---------------|---------------------|
 |**_free_locale**|\<locale.h>|
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [_get_current_locale](get-current-locale.md)<br/>
 [_create_locale, _wcreate_locale](create-locale-wcreate-locale.md)<br/>

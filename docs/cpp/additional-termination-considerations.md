@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 추가 종료 고려 사항'
 title: 추가 종료 고려 사항
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - exiting applications
 - programs [C++], terminating
 ms.assetid: acbe2332-9d8a-4a58-a471-dd652a837384
-ms.openlocfilehash: f4c8946d9cd714328e26fd268f110f5d09faa051
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 5c060ef85d75f0c53c1994605e311a7cdc579447
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91503279"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97211052"
 ---
 # <a name="additional-termination-considerations"></a>추가 종료 고려 사항
 

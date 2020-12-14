@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: TN016: MFC에서 c + + 다중 상속 사용'
 title: 'TN016: MFC에서 C++ 다중 상속 사용'
 ms.date: 06/28/2018
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - MI (Multiple Inheritance)
 - multiple inheritance, MFC support for
 ms.assetid: 4ee27ae1-1410-43a5-b111-b6af9b84535d
-ms.openlocfilehash: c44639e713f6d0b26d5b74e9f645f60c8627e0c8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ac4b082a5dc33e93098453714acd25fbd0c18438
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231769"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97215952"
 ---
 # <a name="tn016-using-c-multiple-inheritance-with-mfc"></a>TN016: MFC에서 C++ 다중 상속 사용
 
@@ -35,7 +36,7 @@ MFC의 지 속성 및 동적 개체 생성 메커니즘에서는 [CRuntimeClass]
 
 ## <a name="cobject---the-root-of-all-classes"></a>CObject-모든 클래스의 루트
 
-모든 중요 한 클래스는 클래스에서 직접 또는 간접적으로 파생 `CObject` 됩니다. `CObject`에는 멤버 데이터가 없지만 일부 기본 기능이 있습니다. MI를 사용 하는 경우 일반적으로 두 개 이상의 파생 클래스에서 상속 됩니다 `CObject` . 다음 예제에서는 클래스를 [CFrameWnd](../mfc/reference/cframewnd-class.md) 및 [CObList](../mfc/reference/coblist-class.md)에서 상속할 수 있는 방법을 보여 줍니다.
+모든 중요 한 클래스는 클래스에서 직접 또는 간접적으로 파생 `CObject` 됩니다. `CObject` 에는 멤버 데이터가 없지만 일부 기본 기능이 있습니다. MI를 사용 하는 경우 일반적으로 두 개 이상의 파생 클래스에서 상속 됩니다 `CObject` . 다음 예제에서는 클래스를 [CFrameWnd](../mfc/reference/cframewnd-class.md) 및 [CObList](../mfc/reference/coblist-class.md)에서 상속할 수 있는 방법을 보여 줍니다.
 
 ```cpp
 class CListWnd : public CFrameWnd, public CObList
@@ -80,7 +81,7 @@ public:
 
 거의 상속 하는 것이 함수 모호성 문제를 해결 하는 것 처럼 보일 수도 있지만 그렇지 않은 경우도 있습니다 `CObject` . 에는 멤버 데이터가 없으므로 `CObject` 기본 클래스 멤버 데이터의 여러 복사본을 방지 하기 위해 가상 상속이 필요 하지 않습니다. 이전에 표시 된 첫 번째 예제에서 `Dump` 가상 메서드는 및에서 다르게 구현 되기 때문에 여전히 모호 합니다 `CFrameWnd` `CObList` . 모호성을 제거 하는 가장 좋은 방법은 이전 섹션에 제공 된 권장 사항을 따르는 것입니다.
 
-## <a name="cobjectiskindof-and-run-time-typing"></a>CObject:: IsKindOf 및 런타임 입력
+## <a name="cobjectiskindof-and-run-time-typing"></a>CObject:: IsKindOf 및 Run-Time 입력
 
 에서 MFC가 지 원하는 런타임 입력 메커니즘은 `CObject` 매크로 DECLARE_DYNAMIC, IMPLEMENT_DYNAMIC, DECLARE_DYNCREATE, IMPLEMENT_DYNCREATE, DECLARE_SERIAL 및 IMPLEMENT_SERIAL를 사용 합니다. 이러한 매크로는 런타임 형식 검사를 수행 하 여 안전 다운 캐스트를 보장할 수 있습니다.
 
@@ -115,7 +116,7 @@ class CListEdit : public CObList, public CEdit
 
 ## <a name="a-sample-program-using-mi"></a>MI를 사용 하는 샘플 프로그램
 
-다음 샘플은 및 CWinApp에서 파생 된 클래스 하나를 구성 하는 독립 실행형 응용 프로그램입니다 `CFrameWnd` . [CWinApp](../mfc/reference/cwinapp-class.md) 이러한 방식으로 응용 프로그램을 구성 하는 것은 좋지 않지만,이는 클래스가 하나 있는 가장 작은 MFC 응용 프로그램의 예입니다.
+다음 샘플은 및 CWinApp에서 파생 된 클래스 하나를 구성 하는 독립 실행형 응용 프로그램입니다 `CFrameWnd` . [](../mfc/reference/cwinapp-class.md) 이러한 방식으로 응용 프로그램을 구성 하는 것은 좋지 않지만,이는 클래스가 하나 있는 가장 작은 MFC 응용 프로그램의 예입니다.
 
 ```cpp
 #include <afxwin.h>

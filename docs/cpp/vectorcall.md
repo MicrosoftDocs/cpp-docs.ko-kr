@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: __vectorcall'
 title: __vectorcall
 ms.date: 12/17/2018
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - __vectorcall keyword
 - __vectorcall
 ms.assetid: 1c95ed59-86c6-4857-b4ed-10519193f851
-ms.openlocfilehash: 313a5a1b3620120223fde6ab864dc36284e70fa1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 223576b7aec37434cb9574d744e9ebc1b9aa88f9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231054"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97210974"
 ---
 # <a name="__vectorcall"></a>__vectorcall
 
@@ -300,4 +301,4 @@ int __cdecl main( void )
 ## <a name="see-also"></a>참고 항목
 
 [인수 전달 및 명명 규칙](../cpp/argument-passing-and-naming-conventions.md)<br/>
-[C++ 키워드](../cpp/keywords-cpp.md)
+[키워드](../cpp/keywords-cpp.md)

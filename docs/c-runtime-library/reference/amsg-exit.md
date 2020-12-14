@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _amsg_exit'
 title: _amsg_exit
 ms.date: 11/04/2016
 api_name:
@@ -23,12 +24,12 @@ f1_keywords:
 helpviewer_keywords:
 - _amsg_exit
 ms.assetid: 146d4faf-d763-43a4-b264-12711196456b
-ms.openlocfilehash: 31979a3181dc57644f1e6877277884e55cebf733
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d00283f3222a217db8337129f66b377f7c0d494e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80170940"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97211403"
 ---
 # <a name="_amsg_exit"></a>_amsg_exit
 
@@ -47,10 +48,10 @@ void _amsg_exit ( int rterrnum );
 
 ## <a name="remarks"></a>설명
 
-이 함수는 콘솔 애플리케이션에 대한 런타임 오류 메시지를 **stderr**로 내보내거나 Windows 애플리케이션에 대한 메시지를 메시지 상자에 표시합니다. 디버그 모드에서 종료하기 전에 디버거를 호출하도록 선택할 수 있습니다.
+이 함수는 콘솔 애플리케이션에 대한 런타임 오류 메시지를 **stderr** 로 내보내거나 Windows 애플리케이션에 대한 메시지를 메시지 상자에 표시합니다. 디버그 모드에서 종료하기 전에 디버거를 호출하도록 선택할 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |_amsg_exit|internal.h|

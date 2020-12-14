@@ -1,4 +1,5 @@
 ---
+description: 'TN006: 메시지 맵에 대해 자세히 알아보세요.'
 title: 'TN006: 메시지 맵'
 ms.date: 06/25/2018
 f1_keywords:
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - ON_COMMAND_EX macro [MFC]
 - message maps [MFC], Windows messaging
 ms.assetid: af4b6794-4b40-4f1e-ad41-603c3b7409bb
-ms.openlocfilehash: 6b387b851f5a76cd0d11957a87e57307d624759e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f9331e5523015a670a2a874c9e9b3021d41eed09
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228533"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97216056"
 ---
 # <a name="tn006-message-maps"></a>TN006: 메시지 맵
 
@@ -44,13 +45,13 @@ MFC는 창에 전송 된 메시지를 처리 하기 위해 기존 Windows 기반
 
 [DECLARE_MESSAGE_MAP](reference/message-map-macros-mfc.md#declare_message_map) 매크로는 클래스에 대 한 세 개의 멤버를 선언 합니다.
 
-- *_MessageEntries*이라는 AFX_MSGMAP_ENTRY 항목의 전용 배열입니다.
+- *_MessageEntries* 이라는 AFX_MSGMAP_ENTRY 항목의 전용 배열입니다.
 
 - *_MessageEntries* 배열을 가리키는 *messagemap* 이라는 보호 된 AFX_MSGMAP 구조입니다.
 
-- `GetMessageMap` *Messagemap*주소를 반환 하는 라는 보호 된 가상 함수입니다.
+- `GetMessageMap` *Messagemap* 주소를 반환 하는 라는 보호 된 가상 함수입니다.
 
-이 매크로는 메시지 맵을 사용 하 여 클래스의 선언에 배치 해야 합니다. 규칙에 따라 클래스 선언의 끝에 있습니다. 예를 들면 다음과 같습니다.
+이 매크로는 메시지 맵을 사용 하 여 클래스의 선언에 배치 해야 합니다. 규칙에 따라 클래스 선언의 끝에 있습니다. 예를 들어:
 
 ```cpp
 class CMyWnd : public CMyParentWndClass
@@ -70,7 +71,7 @@ protected:
 
 메시지 맵의 테이블은 메시지 맵 항목으로 확장 되는 매크로 집합을 사용 하 여 정의 됩니다. 테이블은이 메시지 맵에 의해 처리 되는 클래스와 처리 되지 않은 메시지가 전달 되는 부모 클래스를 정의 하는 [BEGIN_MESSAGE_MAP](reference/message-map-macros-mfc.md#begin_message_map) 매크로 호출로 시작 합니다. 테이블이 [END_MESSAGE_MAP](reference/message-map-macros-mfc.md#end_message_map) 매크로 호출로 끝납니다.
 
-이러한 두 매크로 호출 사이에는이 메시지 맵에서 처리할 각 메시지에 대 한 항목이 있습니다. 모든 표준 Windows 메시지에는 해당 메시지에 대 한 항목을 생성 하는*MESSAGE_NAME* ON_WM_ 형태의 매크로가 있습니다.
+이러한 두 매크로 호출 사이에는이 메시지 맵에서 처리할 각 메시지에 대 한 항목이 있습니다. 모든 표준 Windows 메시지에는 해당 메시지에 대 한 항목을 생성 하는 *MESSAGE_NAME* ON_WM_ 형태의 매크로가 있습니다.
 
 각 Windows 메시지의 매개 변수를 압축 해제 하 고 형식 안전성을 제공 하는 표준 함수 시그니처가 정의 되었습니다. 이러한 서명은 [CWnd](../mfc/reference/cwnd-class.md)의 선언에 있는 afxwin.h 파일에서 찾을 수 있습니다. 각 항목은 쉽게 식별할 수 있도록 **afx_msg** 키워드로 표시 됩니다.
 
@@ -166,7 +167,7 @@ ON_COMMAND(id, memberFxn)
 ON_UPDATE_COMMAND_UI(id, memberFxn)
 ```
 
-고급 사용자는 명령 메시지 처리기의 확장 형식인 ON_COMMAND_EX 매크로를 사용할 수 있습니다. 매크로는 ON_COMMAND 기능의 상위 집합을 제공 합니다. 확장 된 명령 처리기 멤버 함수는 단일 매개 변수 (명령 ID를 포함 하는 **UINT** )를 사용 하 고 **BOOL**을 반환 합니다. 명령이 처리 되었음을 나타내려면 반환 값이 **TRUE** 여야 합니다. 그렇지 않으면 라우팅은 다른 명령 대상 개체로 계속 됩니다.
+고급 사용자는 명령 메시지 처리기의 확장 형식인 ON_COMMAND_EX 매크로를 사용할 수 있습니다. 매크로는 ON_COMMAND 기능의 상위 집합을 제공 합니다. 확장 된 명령 처리기 멤버 함수는 단일 매개 변수 (명령 ID를 포함 하는 **UINT** )를 사용 하 고 **BOOL** 을 반환 합니다. 명령이 처리 되었음을 나타내려면 반환 값이 **TRUE** 여야 합니다. 그렇지 않으면 라우팅은 다른 명령 대상 개체로 계속 됩니다.
 
 이러한 형태의 예는 다음과 같습니다.
 

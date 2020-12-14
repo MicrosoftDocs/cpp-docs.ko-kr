@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: isnan, _isnan, _isnanf'
 title: isnan, _isnan, _isnanf
 ms.date: 01/31/2019
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - Not a Number (NANs)
 - isnan function
 ms.assetid: 391fbc5b-89a4-4fba-997e-68f1131caf82
-ms.openlocfilehash: 5aebacd15000e0202a26f600614900390c1ba7a4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 819b53740c6717f0ba8d18376a38c91c80ee03c0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213543"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97211247"
 ---
 # <a name="isnan-_isnan-_isnanf"></a>isnan, _isnan, _isnanf
 
@@ -72,7 +73,7 @@ bool isnan(
 *x*<br/>
 테스트할 부동 소수점 값입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 C에서 **isnan** 매크로와 **_isnan** 및 **_ISNANF** 함수는 *x* 인수가 NAN 인 경우 0이 아닌 값을 반환 합니다. 그렇지 않으면 0을 반환 합니다.
 

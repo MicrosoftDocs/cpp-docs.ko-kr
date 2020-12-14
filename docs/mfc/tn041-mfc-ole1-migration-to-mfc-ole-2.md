@@ -1,4 +1,5 @@
 ---
+description: 'TN041: mfc/OLE 2로 MFC/OLE1 마이그레이션에 대해 자세히 알아보세요.'
 title: 'TN041: mfc로의 MFC-OLE1 마이그레이션-OLE 2'
 ms.date: 10/18/2018
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - upgrading Visual C++ applications [MFC], OLE1 to OLE2
 - TN041
 ms.assetid: 67f55552-4b04-4ddf-af0b-4d9eaf5da957
-ms.openlocfilehash: 7d0381983481278b1410ae0ff11463519d4cbb34
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 83bb9869d61ca9d2c92780fc6bed55ce3c3ff798
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90743154"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97215380"
 ---
 # <a name="tn041-mfcole1-migration-to-mfcole-2"></a>TN041: MFC/OLE 2로 MFC/OLE1 마이그레이션
 
@@ -227,7 +228,7 @@ BOOL CRectItem::SetItemRectToServer()
 \oclient\frame.cpp(50) : error C2064: term does not evaluate to a function
 ```
 
-대부분의 경우에는 OLE1이 기본적으로 비동기 이기 때문에, MFC/OLE1 동기 API는 컨테이너에서 서버로 호출을 *시뮬레이션*했습니다. 사용자의 명령을 처리 하기 전에 진행 중인 비동기 호출을 확인 해야 했습니다. MFC/OLE1에서이 `COleClientItem::InWaitForRelease` 작업을 수행 하는 함수를 제공 했습니다. MFC/OLE 2에서는이 작업이 필요 하지 않으므로 CMainFrame에서 OnCommand의 재정의를 함께 제거할 수 있습니다.
+대부분의 경우에는 OLE1이 기본적으로 비동기 이기 때문에, MFC/OLE1 동기 API는 컨테이너에서 서버로 호출을 *시뮬레이션* 했습니다. 사용자의 명령을 처리 하기 전에 진행 중인 비동기 호출을 확인 해야 했습니다. MFC/OLE1에서이 `COleClientItem::InWaitForRelease` 작업을 수행 하는 함수를 제공 했습니다. MFC/OLE 2에서는이 작업이 필요 하지 않으므로 CMainFrame에서 OnCommand의 재정의를 함께 제거할 수 있습니다.
 
 이 시점에서 OCLIENT는를 컴파일하고 연결 합니다.
 
@@ -559,7 +560,7 @@ BOOL CServerItem::OnDraw(CDC* pDC, CSize& rSize)
 }
 ```
 
-새 매개 변수는 ' rSize '입니다. 이렇게 하면 그리기의 크기를 채울 수 있습니다 (편리한 경우). 이 크기는 **HIMETRIC**에 있어야 합니다. 이 경우에서이 값을 입력 하는 것이 편리 하지 않으므로 프레임 워크가 익스텐트를 `OnGetExtent` 검색 하기 위해를 호출 합니다. 이 작업을 수행 하려면 다음을 구현 해야 합니다 `OnGetExtent` .
+새 매개 변수는 ' rSize '입니다. 이렇게 하면 그리기의 크기를 채울 수 있습니다 (편리한 경우). 이 크기는 **HIMETRIC** 에 있어야 합니다. 이 경우에서이 값을 입력 하는 것이 편리 하지 않으므로 프레임 워크가 익스텐트를 `OnGetExtent` 검색 하기 위해를 호출 합니다. 이 작업을 수행 하려면 다음을 구현 해야 합니다 `OnGetExtent` .
 
 ```cpp
 BOOL CServerItem::OnGetExtent(DVASPECT dwDrawAspect, CSize& rSize)
@@ -579,7 +580,7 @@ BOOL CServerItem::OnGetExtent(DVASPECT dwDrawAspect, CSize& rSize)
     int)__far const ' : cannot convert parameter 1 from 'int __far *' to 'struct ::tagPOINT __far *'
 ```
 
-CServerItem:: CalcNodeSize 함수에서 항목 크기는 **HIMETRIC** 로 변환 되 고 *m_rectBounds*에 저장 됩니다. 의 문서화 되지 않은 '*m_rectBounds*' 멤버가 없습니다 .이 멤버는 `COleServerItem` *m_sizeExtent*에 의해 부분적으로 대체 되었지만 OLE 2에서는이 멤버가 *m_rectBounds* 에서 사용 된 것과 약간 다른 방식으로 사용 됩니다. **HIMETRIC** 크기를이 멤버 변수로 설정 하는 대신 반환 합니다. 이 반환 값은 이전에 구현 된에 사용 됩니다 `OnGetExtent` .
+CServerItem:: CalcNodeSize 함수에서 항목 크기는 **HIMETRIC** 로 변환 되 고 *m_rectBounds* 에 저장 됩니다. 의 문서화 되지 않은 '*m_rectBounds*' 멤버가 없습니다 .이 멤버는 `COleServerItem` *m_sizeExtent* 에 의해 부분적으로 대체 되었지만 OLE 2에서는이 멤버가 *m_rectBounds* 에서 사용 된 것과 약간 다른 방식으로 사용 됩니다. **HIMETRIC** 크기를이 멤버 변수로 설정 하는 대신 반환 합니다. 이 반환 값은 이전에 구현 된에 사용 됩니다 `OnGetExtent` .
 
 ```cpp
 CSize CServerItem::CalcNodeSize()
@@ -684,7 +685,7 @@ pMenu->TrackPopupMenu(TPM_CENTERALIGN | TPM_RIGHTBUTTON,
 
 MFC 3.0의 HIERSVR 샘플도 서버 항목에 대해 약간 다른 디자인을 사용 합니다. 이렇게 하면 메모리를 절약 하 고 링크를 더욱 유연 하 게 만들 수 있습니다. 2.0 버전의 HIERSVR에서 트리의 각 노드는 *-a* `COleServerItem` 입니다. `COleServerItem` 는 이러한 각 노드에 반드시 필요한 것 보다 더 많은 오버 헤드를 전달 하지만 `COleServerItem` 각 활성 링크에는가 필요 합니다. 그러나 대부분의 경우에는 지정 된 시간에 활성 링크가 거의 없습니다. 이러한 작업을 더 효율적으로 수행 하기 위해이 버전의 MFC에서 HIERSVR는와 노드를 분리 합니다 `COleServerItem` . CServerNode와 클래스가 모두 있습니다 `CServerItem` . 에서 파생 된는 필요한 경우에 `CServerItem` `COleServerItem` 만 생성 됩니다. 컨테이너 (또는 컨테이너)가 특정 노드에 대 한 특정 링크를 사용 하지 않으면 Cserveritem와 연결 된 CServerItem 개체가 삭제 됩니다. 이 디자인은 보다 효율적이 고 유연 합니다. 여러 선택 링크를 처리할 때 유연성이 제공 됩니다. 이러한 두 버전의 HIERSVR는 여러 선택 영역을 지원 하지 않지만 MFC 3.0 버전의 MFC 버전을 사용 하 여 이러한 선택에 대 한 링크를 지원할 수 `COleServerItem` 있습니다 .이 네이티브 데이터와 분리 되기 때문입니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [번호로 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
 [범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)

@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CMFCColorPopupMenu 클래스'
 title: CMFCColorPopupMenu 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - CMFCColorPopupMenu [MFC], GetMenuBar
 - CMFCColorPopupMenu [MFC], SetPropList
 ms.assetid: 0bf9efe8-aed5-4ab7-b23b-eb284b4668be
-ms.openlocfilehash: 2964f250b25ad6c77c70e8f10cd92cca0c7d11da
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 1668064fa253ea17bdce1ba393bd892ef8769b71
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844563"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97211832"
 ---
 # <a name="cmfccolorpopupmenu-class"></a>CMFCColorPopupMenu 클래스
 
@@ -133,7 +134,7 @@ CMFCColorPopupMenu(
 *lpszAutoColor*<br/>
 진행 *자동* (기본) 색 단추의 텍스트 레이블이나 NULL입니다.
 
-자동 단추의 표준 레이블은 **자동**입니다.
+자동 단추의 표준 레이블은 **자동** 입니다.
 
 *lpszOtherColor*<br/>
 진행 추가 색을 선택 하거나 NULL을 표시 하는 *기타* 단추의 텍스트 레이블입니다.

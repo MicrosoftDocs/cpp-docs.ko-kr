@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _rotl8, _rotl16'
 title: _rotl8, _rotl16
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - _rotl8 intrinsic
 - _rotl16 intrinsic
 ms.assetid: 8c519ab6-aef9-4f07-a387-daee8408368f
-ms.openlocfilehash: 5dffde2d3f830b6ec4ad43865648c27b1defb593
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 71ef10bb6af750fc08955fbdf82975b1ed32fa94
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70218034"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97211910"
 ---
 # <a name="_rotl8-_rotl16"></a>_rotl8, _rotl16
 
@@ -36,7 +37,7 @@ unsigned short _rotl16(
 
 ### <a name="parameters"></a>매개 변수
 
-*value*\
+*기본값*\
 진행 회전할 값입니다.
 
 *교대조*\
@@ -48,12 +49,12 @@ unsigned short _rotl16(
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`_rotl8`|x86, ARM, x64, ARM64|
 |`_rotl16`|x86, ARM, x64, ARM64|
 
-**헤더 파일** \<intrin.h >
+**헤더 파일** \<intrin.h>
 
 ## <a name="remarks"></a>설명
 
@@ -100,7 +101,7 @@ Rotating unsigned short 0x12 left by 10 bits gives 0x4800
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [_rotr8, _rotr16](../intrinsics/rotr8-rotr16.md)\
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)
