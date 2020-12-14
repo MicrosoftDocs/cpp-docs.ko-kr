@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CMDITabInfo 클래스'
 title: CMDITabInfo 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - CMDITabInfo [MFC], m_style
 - CMDITabInfo [MFC], m_tabLocation
 ms.assetid: 988ae1b7-4f7f-4239-b88f-7e28b3291c5e
-ms.openlocfilehash: 8e4053bf16672d693adc104c9e88bb46a67ba7dd
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 4769bedc48e143e2dae6f35c50d2d1fef488e655
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845915"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336669"
 ---
 # <a name="cmditabinfo-class"></a>CMDITabInfo 클래스
 
@@ -183,7 +184,7 @@ BOOL m_bTabIcons;
 
 ### <a name="remarks"></a>설명
 
-TRUE 이면 각 MDI 탭에 아이콘이 표시 되 고, 그렇지 않으면 탭에 아이콘이 표시 되지 않습니다. 기본값은 FALSE입니다.
+TRUE 이면 각 MDI 탭에 아이콘이 표시 됩니다. 그렇지 않으면 아이콘이 탭에 표시 되지 않습니다. 기본값은 FALSE입니다.
 
 ## <a name="cmditabinfom_ntabbordersize"></a><a name="m_ntabbordersize"></a> CMDITabInfo:: m_nTabBorderSize
 
@@ -244,7 +245,7 @@ void Serialize(CArchive& ar);
 
 ### <a name="parameters"></a>매개 변수
 
-*방어력*<br/>
+*ar*<br/>
 진행 Serialize 할 [CArchive 클래스](../../mfc/reference/carchive-class.md) 개체입니다.
 
 ## <a name="see-also"></a>참고 항목

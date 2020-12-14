@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3456'
 title: 컴파일러 오류 C3456
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3456
 ms.assetid: 9f781919-aaf2-4725-94a4-44a0b80cc64a
-ms.openlocfilehash: d6890019507b06081d8817bf0c01279f4c732d3a
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d042566d0bf9c2938297ab3664dca8bb9b0e318b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80200904"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97315909"
 ---
 # <a name="compiler-error-c3456"></a>컴파일러 오류 C3456
 

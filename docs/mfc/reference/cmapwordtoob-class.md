@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CMapWordToOb 클래스'
 title: CMapWordToOb 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - CMapWordToOb [MFC], RemoveKey
 - CMapWordToOb [MFC], SetAt
 ms.assetid: 9c9bcd76-456f-4cf9-b03c-dd28b49d5e4f
-ms.openlocfilehash: f360760bb5c04400ed77ef49c5968f8e9e7a6e59
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: da21902c3789f1547055baffae5650fcb6b8c789
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222994"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336712"
 ---
 # <a name="cmapwordtoob-class"></a>CMapWordToOb 클래스
 
@@ -63,7 +64,7 @@ class CMapWordToOb : public CObject
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[CMapWordToOb::CMapWordToOb](../../mfc/reference/cmapstringtoob-class.md#cmapstringtoob)|생성자입니다.|
 
@@ -93,7 +94,7 @@ class CMapWordToOb : public CObject
 
 ## <a name="remarks"></a>설명
 
-`CMapWordToOb`는 IMPLEMENT_SERIAL 매크로를 통합 하 여 요소의 serialization 및 덤프를 지원 합니다. 각 요소는 맵이 오버 로드 된 삽입 ( **<<** ) 연산자를 사용 하거나 멤버 함수를 사용 하 여 보관 파일에 저장 되는 경우에 차례로 serialize 됩니다 `Serialize` .
+`CMapWordToOb` 는 IMPLEMENT_SERIAL 매크로를 통합 하 여 요소의 serialization 및 덤프를 지원 합니다. 각 요소는 맵이 오버 로드 된 삽입 ( **<<** ) 연산자를 사용 하거나 멤버 함수를 사용 하 여 보관 파일에 저장 되는 경우에 차례로 serialize 됩니다 `Serialize` .
 
 개별 단어 요소에 대 한 덤프가 필요한 경우 `CObject` 덤프 컨텍스트의 깊이를 1 이상으로 설정 해야 합니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: CMemoryException 클래스'
 title: CMemoryException 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - CMemoryException [MFC], CMemoryException
 ms.assetid: 9af0ed57-d12a-45ca-82b5-c910a60f7edf
-ms.openlocfilehash: 71b17e777db9d6351192da7cffd075b3a64553bd
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 694629d65c8b4cffc351873d5da3d8ed3c34cf8e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222929"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336655"
 ---
 # <a name="cmemoryexception-class"></a>CMemoryException 클래스
 
@@ -53,7 +54,7 @@ class CMemoryException : public CSimpleException
 
 **헤더:** afx
 
-## <a name="cmemoryexceptioncmemoryexception"></a><a name="cmemoryexception"></a>CMemoryException:: CMemoryException
+## <a name="cmemoryexceptioncmemoryexception"></a><a name="cmemoryexception"></a> CMemoryException:: CMemoryException
 
 `CMemoryException` 개체를 생성합니다.
 

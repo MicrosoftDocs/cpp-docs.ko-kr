@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: STL/CLR 라이브러리 참조'
 title: STL/CLR 라이브러리 참조
 ms.date: 09/18/2018
 ms.topic: reference
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - STL/CLR, redistribution
 - cliext directory
 ms.assetid: a9d9ca00-7bf2-48c1-b205-3ae6f8c25f82
-ms.openlocfilehash: e6804dab814eca4ecc5fd23c74cbbb21eac3be77
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: c051b58b76a70dd5ef3bd17b1f9bec1cbeeccebf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839701"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335323"
 ---
 # <a name="stlclr-library-reference"></a>STL/CLR 라이브러리 참조
 
@@ -77,4 +78,4 @@ C + + 어셈블리로 작성 된 여러 STL/CLR 컨테이너의 요소를 표시
 
 ## <a name="see-also"></a>참고 항목
 
-[C + + 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)
+[C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)

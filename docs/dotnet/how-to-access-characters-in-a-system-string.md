@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 방법: System:: String의 문자 액세스'
 title: '방법: System::String의 문자에 액세스'
 ms.custom: get-started-article
 ms.date: 11/04/2016
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - examples [C++], strings
 - strings [C++], accessing characters
 ms.assetid: cfc89756-aef3-4988-907e-fb236dcb7087
-ms.openlocfilehash: cb62eb0fecbee202e4d01635a60da565241822ee
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 1959293cc7a984cdce2e1258b2dc6fab0d832267
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90686797"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335437"
 ---
 # <a name="how-to-access-characters-in-a-systemstring"></a>방법: System::String의 문자에 액세스
 
@@ -95,6 +96,6 @@ void deleteNode( ListNode ^ list, Int32 e ) {
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [C + + Interop 사용 (암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

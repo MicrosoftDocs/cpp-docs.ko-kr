@@ -1,4 +1,5 @@
-﻿---
+---
+description: '자세한 정보: TLS (스레드 로컬 저장소)'
 title: TLS
 ms.date: 08/09/2019
 helpviewer_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - thread attribute
 - Thread Local Storage [C++]
 ms.assetid: 80801907-d792-45ca-b776-df0cf2e9f197
-ms.openlocfilehash: f677d7382a9747df63023bd83b104a6bb3b74c1f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1259f0c3af84f90fcd82483d3891124d1553eeb9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222656"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342324"
 ---
 # <a name="thread-local-storage-tls"></a>TLS
 
 TLS(스레드 로컬 스토리지)는 지정된 다중 스레드 프로세스의 각 스레드에서 스레드별 데이터를 저장하는 위치를 할당하는 방법입니다. 동적으로 바인딩된 (런타임) 스레드별 데이터는 TLS API ([TlsAlloc](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsalloc))를 통해 지원 됩니다. 이제 Win32 및 Microsoft c + + 컴파일러는 기존 API 구현 뿐만 아니라 스레드 단위 데이터에 대 한 정적 바인딩 (로드 시간)을 지원 합니다.
 
-## <a name="compiler-implementation-for-tls"></a><a name="_core_compiler_implementation_for_tls"></a>TLS에 대 한 컴파일러 구현
+## <a name="compiler-implementation-for-tls"></a><a name="_core_compiler_implementation_for_tls"></a> TLS에 대 한 컴파일러 구현
 
 **C + + 11:**  **`thread_local`** 저장소 클래스 지정자는 개체 및 클래스 멤버에 대 한 스레드 로컬 저장소를 지정 하는 데 권장 되는 방법입니다. 자세한 내용은 [저장소 클래스 (c + +)](../cpp/storage-classes-cpp.md)를 참조 하세요.
 
@@ -92,7 +93,7 @@ __declspec( thread ) int tls_i = 1;
 
    이 제한은 c + +에서 적용 되지 않습니다. C++에서는 모든 개체의 동적 초기화가 허용되기 때문에, 스레드 로컬 변수의 주소를 사용하는 식을 사용하여 개체를 초기화할 수 있습니다. 스레드 로컬 개체의 생성과 마찬가지로 수행 됩니다. 예를 들어 앞에 표시 된 코드는 c + + 소스 파일로 컴파일될 때 오류를 생성 하지 않습니다. 스레드 지역 변수의 주소는 주소가 사용 된 스레드가 존재 하는 동안에만 유효 합니다.
 
-- 표준 C에서는 비정적 범위의 개체에 한 해 자신에 대 한 참조를 포함 하는 식을 사용 하 여 개체 또는 변수를 초기화할 수 있습니다. C + +에서는 일반적으로 자신에 대 한 참조를 포함 하는 식으로 개체를 동적으로 초기화할 수 있지만 스레드 로컬 개체에서는 이러한 종류의 초기화가 허용 되지 않습니다. 예를 들면 다음과 같습니다.
+- 표준 C에서는 비정적 범위의 개체에 한 해 자신에 대 한 참조를 포함 하는 식을 사용 하 여 개체 또는 변수를 초기화할 수 있습니다. C + +에서는 일반적으로 자신에 대 한 참조를 포함 하는 식으로 개체를 동적으로 초기화할 수 있지만 스레드 로컬 개체에서는 이러한 종류의 초기화가 허용 되지 않습니다. 예를 들어:
 
     ```C
     __declspec( thread )int tls_i = tls_i;                // Error in C and C++
@@ -103,7 +104,7 @@ __declspec( thread ) int tls_i = 1;
    **`sizeof`** 초기화 되는 개체를 포함 하는 식은 자신에 대 한 참조를 나타내지 않으며 c 및 c + +에서 모두 사용할 수 있습니다.
 
    C + +는 스레드 로컬 저장소 기능에 대 한 향후 개선 사항으로 인해 스레드 데이터를 동적으로 초기화할 수 없습니다.
-   
+
 - Windows Vista 이전의 Windows 운영 체제에는 `__declspec( thread )` 몇 가지 제한 사항이 있습니다. DLL에서 데이터 또는 개체를로 선언 하는 경우 `__declspec( thread )` 동적으로 로드 되는 경우 보호 오류가 발생할 수 있습니다. DLL이 [LoadLibrary](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryw)로 로드 된 후에는 코드에서 데이터를 참조할 때마다 시스템 오류가 발생 합니다 `__declspec( thread )` . 런타임에 스레드에 대한 전역 변수 공간이 할당되기 때문에, 이 공간의 크기는 애플리케이션의 요구 사항과 정적으로 연결되는 모든 DLL의 요구 사항을 계산하여 결정됩니다. 를 사용 하 `LoadLibrary` 는 경우로 선언 된 스레드 지역 변수를 허용 하도록이 공간을 확장할 수 없습니다 `__declspec( thread )` . Dll이로 로드 될 수 있는 경우 DLL에서 [TlsAlloc](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsalloc)와 같은 tls api를 사용 하 여 tls를 할당 `LoadLibrary` 합니다.
 
 ## <a name="see-also"></a>참고 항목

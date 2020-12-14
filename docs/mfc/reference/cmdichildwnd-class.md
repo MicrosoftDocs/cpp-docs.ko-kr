@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CMDIChildWnd 클래스'
 title: CMDIChildWnd 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - CMDIChildWnd [MFC], MDIRestore
 - CMDIChildWnd [MFC], SetHandles
 ms.assetid: 6d07f5d4-9a3e-4723-9fa5-e65bb669fdd5
-ms.openlocfilehash: 0acd42db19151001d9e292561ef20e469f9e14ea
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4e9bf936cbb4f07401e8d54c56516f8846f2fc0d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222968"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336694"
 ---
 # <a name="cmdichildwnd-class"></a>CMDIChildWnd 클래스
 
@@ -43,7 +44,7 @@ class CMDIChildWnd : public CFrameWnd
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[CMDIChildWnd:: CMDIChildWnd](#cmdichildwnd)|`CMDIChildWnd` 개체를 생성합니다.|
 
@@ -77,7 +78,7 @@ MDI 자식 창을 생성 하는 방법에는 다음 세 가지가 있습니다.
 
 `Create`멤버 함수를 사용 하 여 프레임의 생성 매개 변수를 즉각적인 인수로 전달 합니다.
 
-`LoadFrame`는 보다 작은 인수 `Create` 를 사용 하며, 대신 프레임의 캡션, 아이콘, 액셀러레이터 키 테이블 및 메뉴를 포함 하 여 리소스에서 대부분의 기본값을 검색 합니다. 에서 액세스할 수 있도록 하려면 `LoadFrame` 이러한 모든 리소스의 리소스 ID가 같아야 합니다 (예: IDR_MAINFRAME).
+`LoadFrame` 는 보다 작은 인수 `Create` 를 사용 하며, 대신 프레임의 캡션, 아이콘, 액셀러레이터 키 테이블 및 메뉴를 포함 하 여 리소스에서 대부분의 기본값을 검색 합니다. 에서 액세스할 수 있도록 하려면 `LoadFrame` 이러한 모든 리소스의 리소스 ID가 같아야 합니다 (예: IDR_MAINFRAME).
 
 개체는 `CMDIChildWnd` 뷰 및 문서를 포함 하는 경우 프로그래머가 직접 생성 하지 않고 프레임 워크에 의해 간접적으로 생성 됩니다. `CDocTemplate`개체는 프레임 생성, 포함 하는 뷰의 생성 및 해당 문서에 대 한 뷰 연결을 오케스트레이션 합니다. 생성자의 매개 변수는 `CDocTemplate` 관련 된 `CRuntimeClass` 세 가지 클래스 (문서, 프레임 및 뷰)의를 지정 합니다. `CRuntimeClass`개체는 사용자가 지정 하는 경우 (예: 새 파일 명령 또는 MDI 창 새 명령 사용) 프레임 워크에서 동적으로 새 프레임을 만드는 데 사용 됩니다.
 
@@ -109,7 +110,7 @@ C + + 연산자를 사용 **`delete`** 하 여 프레임 창을 제거 하지 �
 
 **헤더:** afxwin.h
 
-## <a name="cmdichildwndcmdichildwnd"></a><a name="cmdichildwnd"></a>CMDIChildWnd:: CMDIChildWnd
+## <a name="cmdichildwndcmdichildwnd"></a><a name="cmdichildwnd"></a> CMDIChildWnd:: CMDIChildWnd
 
 를 호출 하 여 `CMDIChildWnd` 개체를 생성 합니다.
 
@@ -125,7 +126,7 @@ CMDIChildWnd();
 
   [CMDIChildWnd:: Create](#create)의 예제를 참조 하세요.
 
-## <a name="cmdichildwndcreate"></a><a name="create"></a>CMDIChildWnd:: Create
+## <a name="cmdichildwndcreate"></a><a name="create"></a> CMDIChildWnd:: Create
 
 이 멤버 함수를 호출 하 여 Windows MDI 자식 창을 만들고 개체에 연결 `CMDIChildWnd` 합니다.
 
@@ -157,9 +158,9 @@ Windows 클래스 ( [예: wndclassa](/windows/win32/api/winuser/ns-winuser-wndcl
 창의 부모를 지정 합니다. NULL 인 경우 주 응용 프로그램 창이 사용 됩니다.
 
 *pContext*<br/>
-[Ccreatecontext](../../mfc/reference/ccreatecontext-structure.md) 구조체를 지정 합니다. 이 매개 변수는 NULL 일 수 있습니다.
+[Ccreatecontext](../../mfc/reference/ccreatecontext-structure.md) 구조체를 지정 합니다. 이 매개 변수는 NULL일 수 있습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -183,7 +184,7 @@ Windows 클래스 ( [예: wndclassa](/windows/win32/api/winuser/ns-winuser-wndcl
 
 [!code-cpp[NVC_MFCWindowing#9](../../mfc/reference/codesnippet/cpp/cmdichildwnd-class_3.cpp)]
 
-## <a name="cmdichildwndgetmdiframe"></a><a name="getmdiframe"></a>CMDIChildWnd:: GetMDIFrame
+## <a name="cmdichildwndgetmdiframe"></a><a name="getmdiframe"></a> CMDIChildWnd:: GetMDIFrame
 
 이 함수를 호출 하 여 MDI 부모 프레임을 반환 합니다.
 
@@ -191,7 +192,7 @@ Windows 클래스 ( [예: wndclassa](/windows/win32/api/winuser/ns-winuser-wndcl
 CMDIFrameWnd* GetMDIFrame();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 MDI 부모 프레임 창에 대 한 포인터입니다.
 
@@ -203,7 +204,7 @@ MDI 부모 프레임 창에 대 한 포인터입니다.
 
   [CMDIFrameWnd:: MDISetMenu](../../mfc/reference/cmdiframewnd-class.md#mdisetmenu)의 예제를 참조 하세요.
 
-## <a name="cmdichildwndmdiactivate"></a><a name="mdiactivate"></a>CMDIChildWnd:: MDIActivate
+## <a name="cmdichildwndmdiactivate"></a><a name="mdiactivate"></a> CMDIChildWnd:: MDIActivate
 
 MDI 프레임 창과 별개로 MDI 자식 창을 활성화 하려면이 멤버 함수를 호출 합니다.
 
@@ -219,7 +220,7 @@ void MDIActivate();
 
   [CMDIFrameWnd:: GetWindowMenuPopup](../../mfc/reference/cmdiframewnd-class.md#getwindowmenupopup)의 예제를 참조 하세요.
 
-## <a name="cmdichildwndmdidestroy"></a><a name="mdidestroy"></a>CMDIChildWnd:: MDIDestroy
+## <a name="cmdichildwndmdidestroy"></a><a name="mdidestroy"></a> CMDIChildWnd:: MDIDestroy
 
 이 멤버 함수를 호출 하 여 MDI 자식 창을 제거 합니다.
 
@@ -235,7 +236,7 @@ void MDIDestroy();
 
 [!code-cpp[NVC_MFCWindowing#10](../../mfc/reference/codesnippet/cpp/cmdichildwnd-class_4.cpp)]
 
-## <a name="cmdichildwndmdimaximize"></a><a name="mdimaximize"></a>CMDIChildWnd:: MDIMaximize
+## <a name="cmdichildwndmdimaximize"></a><a name="mdimaximize"></a> CMDIChildWnd:: MDIMaximize
 
 MDI 자식 창을 최대화 하려면이 멤버 함수를 호출 합니다.
 
@@ -251,7 +252,7 @@ void MDIMaximize();
 
 [!code-cpp[NVC_MFCWindowing#11](../../mfc/reference/codesnippet/cpp/cmdichildwnd-class_5.cpp)]
 
-## <a name="cmdichildwndmdirestore"></a><a name="mdirestore"></a>CMDIChildWnd:: MDIRestore
+## <a name="cmdichildwndmdirestore"></a><a name="mdirestore"></a> CMDIChildWnd:: MDIRestore
 
 MDI 자식 창을 최대화 또는 최소화 된 크기로 복원 하려면이 멤버 함수를 호출 합니다.
 
@@ -263,7 +264,7 @@ void MDIRestore();
 
 [!code-cpp[NVC_MFCWindowing#12](../../mfc/reference/codesnippet/cpp/cmdichildwnd-class_6.cpp)]
 
-## <a name="cmdichildwndsethandles"></a><a name="sethandles"></a>CMDIChildWnd:: SetHandles
+## <a name="cmdichildwndsethandles"></a><a name="sethandles"></a> CMDIChildWnd:: SetHandles
 
 메뉴 및 액셀러레이터 리소스에 대 한 핸들을 설정 합니다.
 

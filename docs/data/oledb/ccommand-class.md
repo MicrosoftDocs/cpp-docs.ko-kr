@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CCommand 클래스'
 title: CCommand 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -49,12 +50,12 @@ helpviewer_keywords:
 - SetParameterInfo method
 - Unprepare method
 ms.assetid: 0760bfc5-b9ee-4aee-8e54-31bd78714d3a
-ms.openlocfilehash: 109998dd742828b3c41672fa2afa8716e4687f6a
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 150d543b666896964794503d185637680e6da8fb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91501003"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335511"
 ---
 # <a name="ccommand-class"></a>CCommand 클래스
 
@@ -99,7 +100,7 @@ class CCommand :
 
 ### <a name="inherited-methods"></a>상속된 메서드
 
-| 속성 | Description |
+| Name | Description |
 |-|-|
 |[만들기](#create)|지정 된 세션에 대 한 새 명령을 만든 다음 명령 텍스트를 설정 합니다.|
 |[CreateCommand](#createcommand)|새 명령을 만듭니다.|
@@ -168,7 +169,7 @@ HRESULT GetNextResult(DBROWCOUNT* pulRowsAffected,
 
 이전에 결과 집합을 인출 한 경우이 함수는 이전 결과 집합을 해제 하 고 열을 바인딩 해제 합니다. *Bbind* 가 인 경우 **`true`** 새 열을 바인딩합니다.
 
-`CCommand`템플릿 매개 변수 *tmultiple*을 설정 하 여 여러 결과를 지정한 경우에만이 함수를 호출 해야 합니다 = `CMultipleResults` .
+`CCommand`템플릿 매개 변수 *tmultiple* 을 설정 하 여 여러 결과를 지정한 경우에만이 함수를 호출 해야 합니다 = `CMultipleResults` .
 
 ## <a name="ccommandopen"></a><a name="open"></a> CCommand:: Open
 
@@ -222,13 +223,13 @@ HRESULT Open(DBPROPSET *pPropSet = NULL,
 진행 설정할 속성 및 값을 포함 하는 [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) 구조체의 배열에 대 한 포인터입니다. Windows SDK에서 *OLE DB 프로그래머 참조* 의 [속성 집합 및 속성 그룹](/previous-versions/windows/desktop/ms713696(v=vs.85)) 을 참조 하세요.
 
 *영향을 받는 prows*<br/>
-[in/out] 명령의 영향을 받는 행 수가 반환 되는 메모리에 대 한 포인터입니다. * \* 영향을 받는 PROWSAFFECTED* 가 NULL 이면 행 개수가 반환 되지 않습니다. 그렇지 않으면 `Open` 다음 조건에 따라 적용 되는 * \* prowsaffected* 을 설정 합니다.
+[in/out] 명령의 영향을 받는 행 수가 반환 되는 메모리에 대 한 포인터입니다. *\* 영향을 받는 PROWSAFFECTED* 가 NULL 이면 행 개수가 반환 되지 않습니다. 그렇지 않으면 `Open` 다음 조건에 따라 적용 되는 *\* prowsaffected* 을 설정 합니다.
 
 |조건|결과|
 |--------|----------|
-|`cParamSets`의 요소가 `pParams` 1 보다 큽니다.|* \* 영향 받는 영향을 받는* 모든 매개 변수 집합의 영향을 받는 행의 총 수를 나타냅니다.|
-|영향을 받는 행 수를 사용할 수 없습니다.|* \* 영향을 받는 prowsaffected* -1로 설정 됩니다.|
-|이 명령은 행을 업데이트, 삭제 또는 삽입 하지 않습니다.|* \* 영향을 받는 prowsaffected* 정의 되지 않습니다.|
+|`cParamSets`의 요소가 `pParams` 1 보다 큽니다.|*\* 영향 받는 영향을 받는* 모든 매개 변수 집합의 영향을 받는 행의 총 수를 나타냅니다.|
+|영향을 받는 행 수를 사용할 수 없습니다.|*\* 영향을 받는 prowsaffected* -1로 설정 됩니다.|
+|이 명령은 행을 업데이트, 삭제 또는 삽입 하지 않습니다.|*\* 영향을 받는 prowsaffected* 정의 되지 않습니다.|
 
 *guidCommand*<br/>
 진행 명령 텍스트를 구문 분석 하는 데 사용할 공급자의 구문과 일반 규칙을 지정 하는 GUID입니다. 자세한 내용은 *OLE DB 프로그래머 참조* 에서 [ICommandText:: Getcommandtext](/previous-versions/windows/desktop/ms709825(v=vs.85)) 및 [ICommandText:: setcommandtext](/previous-versions/windows/desktop/ms709757(v=vs.85)) 를 참조 하세요.
@@ -286,7 +287,7 @@ HRESULT CCommandBase::Create(const CSession& session,
 진행 명령 문자열의 ANSI 텍스트에 대 한 포인터입니다.
 
 *guidCommand*<br/>
-진행 명령 텍스트를 구문 분석 하는 데 사용할 공급자의 구문과 일반 규칙을 지정 하는 GUID입니다. 언어에 대 한 설명은 *OLE DB 프로그래머 참조*에서 [ICommandText:: getcommandtext](/previous-versions/windows/desktop/ms709825(v=vs.85)) 를 참조 하세요.
+진행 명령 텍스트를 구문 분석 하는 데 사용할 공급자의 구문과 일반 규칙을 지정 하는 GUID입니다. 언어에 대 한 설명은 *OLE DB 프로그래머 참조* 에서 [ICommandText:: getcommandtext](/previous-versions/windows/desktop/ms709825(v=vs.85)) 를 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -333,7 +334,7 @@ HRESULT CCommandBase::GetParameterInfo(DB_UPARAMS* pParams,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [ICommandWithParameters:: GetParameterInfo](/previous-versions/windows/desktop/ms714917(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [ICommandWithParameters:: GetParameterInfo](/previous-versions/windows/desktop/ms714917(v=vs.85)) 를 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -390,7 +391,7 @@ HRESULT CCommandBase::SetParameterInfo(DB_UPARAMS ulParams,
 
 #### <a name="parameters"></a>매개 변수
 
-*OLE DB 프로그래머 참조*에서 [ICommandWithParameters:: SetParameterInfo](/previous-versions/windows/desktop/ms725393(v=vs.85)) 를 참조 하세요.
+*OLE DB 프로그래머 참조* 에서 [ICommandWithParameters:: SetParameterInfo](/previous-versions/windows/desktop/ms725393(v=vs.85)) 를 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 

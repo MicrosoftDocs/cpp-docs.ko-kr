@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3393'
 title: 컴파일러 오류 C3393
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3393
 ms.assetid: d57f7c69-0a02-4fe3-9e45-bc62644fd77c
-ms.openlocfilehash: 0f6952de20c27a811b85694ae13892eff9231f83
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: d870498fe235fa1336ea784b7da1dcdd12f8c7cc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757542"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97316320"
 ---
 # <a name="compiler-error-c3393"></a>컴파일러 오류 C3393
 

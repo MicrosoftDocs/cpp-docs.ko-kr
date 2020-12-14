@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3451'
 title: 컴파일러 오류 C3451
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3451
 ms.assetid: a4897a69-e3e7-40bb-bb1c-598644904012
-ms.openlocfilehash: d6a0d1234d8f25c6a55fffa7170f37aae27f5817
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: a5cc37bf273474553c375edc940d160f0c1d023d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91501322"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97316012"
 ---
 # <a name="compiler-error-c3451"></a>컴파일러 오류 C3451
 

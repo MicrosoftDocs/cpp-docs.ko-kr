@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3458'
 title: 컴파일러 오류 C3458
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3458
 ms.assetid: 940202fd-8dcc-4042-9c96-3f9e9127d2f1
-ms.openlocfilehash: 98f3dc8ec880a2d134da4cc1438841744b8d9a94
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: d26f252cfbbff21ac355a84aea6556d2c761b6d2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756658"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97315922"
 ---
 # <a name="compiler-error-c3458"></a>컴파일러 오류 C3458
 

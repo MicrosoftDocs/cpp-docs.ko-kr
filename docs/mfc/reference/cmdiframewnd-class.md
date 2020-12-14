@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CMDIFrameWnd 클래스'
 title: CMDIFrameWnd 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - CMDIFrameWnd [MFC], MDISetMenu
 - CMDIFrameWnd [MFC], MDITile
 ms.assetid: fa8736e6-511b-4c51-8b4d-eba78378aeb9
-ms.openlocfilehash: 321ad0364257d7c20d54f9fdc884073381117c6f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 70192fb68710e54872f0aecbe862cfb00df14fcc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222955"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336678"
 ---
 # <a name="cmdiframewnd-class"></a>CMDIFrameWnd 클래스
 
@@ -55,7 +56,7 @@ class CMDIFrameWnd : public CFrameWnd
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[CMDIFrameWnd:: CMDIFrameWnd](#cmdiframewnd)|`CMDIFrameWnd`를 생성합니다.|
 
@@ -87,7 +88,7 @@ class CMDIFrameWnd : public CFrameWnd
 
 `Create`멤버 함수를 사용 하 여 프레임의 생성 매개 변수를 즉각적인 인수로 전달 합니다.
 
-`LoadFrame`는 보다 작은 인수 `Create` 를 사용 하며, 대신 프레임의 캡션, 아이콘, 액셀러레이터 키 테이블 및 메뉴를 포함 하 여 리소스에서 대부분의 기본값을 검색 합니다. 에서 액세스 하려면 `LoadFrame` 이러한 모든 리소스의 리소스 ID가 같아야 합니다 (예: IDR_MAINFRAME).
+`LoadFrame` 는 보다 작은 인수 `Create` 를 사용 하며, 대신 프레임의 캡션, 아이콘, 액셀러레이터 키 테이블 및 메뉴를 포함 하 여 리소스에서 대부분의 기본값을 검색 합니다. 에서 액세스 하려면 `LoadFrame` 이러한 모든 리소스의 리소스 ID가 같아야 합니다 (예: IDR_MAINFRAME).
 
 `MDIFrameWnd`가에서 파생 된 경우 `CFrameWnd` 에서 파생 되는 프레임 창 클래스는 `CMDIFrameWnd` 로 선언 하지 않아도 됩니다 `DECLARE_DYNCREATE` .
 
@@ -131,7 +132,7 @@ C + + 연산자를 사용 **`delete`** 하 여 프레임 창을 제거 하지 �
 
 **헤더:** afxwin.h
 
-## <a name="cmdiframewndcmdiframewnd"></a><a name="cmdiframewnd"></a>CMDIFrameWnd:: CMDIFrameWnd
+## <a name="cmdiframewndcmdiframewnd"></a><a name="cmdiframewnd"></a> CMDIFrameWnd:: CMDIFrameWnd
 
 `CMDIFrameWnd` 개체를 생성합니다.
 
@@ -147,7 +148,7 @@ CMDIFrameWnd();
 
 [!code-cpp[NVC_MFCWindowing#13](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_1.cpp)]
 
-## <a name="cmdiframewndcreateclient"></a><a name="createclient"></a>CMDIFrameWnd:: CreateClient
+## <a name="cmdiframewndcreateclient"></a><a name="createclient"></a> CMDIFrameWnd:: CreateClient
 
 개체를 관리 하는 MDI 클라이언트 창을 만듭니다 `CMDIChildWnd` .
 
@@ -165,7 +166,7 @@ virtual BOOL CreateClient(
 *pWindowMenu*<br/>
 창 팝업 메뉴에 대 한 포인터입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -177,7 +178,7 @@ virtual BOOL CreateClient(
 
 [!code-cpp[NVC_MFCWindowing#14](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_2.cpp)]
 
-## <a name="cmdiframewndcreatenewchild"></a><a name="createnewchild"></a>CMDIFrameWnd:: CreateNewChild
+## <a name="cmdiframewndcreatenewchild"></a><a name="createnewchild"></a> CMDIFrameWnd:: CreateNewChild
 
 새 자식 창을 만듭니다.
 
@@ -211,7 +212,7 @@ MDI 프레임 창의 자식 창을 만들려면이 함수를 사용 합니다.
 
 [!code-cpp[NVC_MFCWindowing#15](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_3.cpp)]
 
-## <a name="cmdiframewndgetwindowmenupopup"></a><a name="getwindowmenupopup"></a>CMDIFrameWnd:: GetWindowMenuPopup
+## <a name="cmdiframewndgetwindowmenupopup"></a><a name="getwindowmenupopup"></a> CMDIFrameWnd:: GetWindowMenuPopup
 
 이 멤버 함수를 호출 하 여 "Window" (MDI 창 관리용 메뉴 항목이 포함 된 팝업 메뉴) 라는 현재 팝업 메뉴에 대 한 핸들을 가져옵니다.
 
@@ -224,7 +225,7 @@ virtual HMENU GetWindowMenuPopup(HMENU hMenuBar);
 *hMenuBar*<br/>
 현재 메뉴 모음입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 창 팝업 메뉴가 있으면이 메뉴를 표시 합니다. 그렇지 않으면 NULL입니다.
 
@@ -238,7 +239,7 @@ virtual HMENU GetWindowMenuPopup(HMENU hMenuBar);
 
 [!code-cpp[NVC_MFCWindowing#16](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_4.cpp)]
 
-## <a name="cmdiframewndmdiactivate"></a><a name="mdiactivate"></a>CMDIFrameWnd:: MDIActivate
+## <a name="cmdiframewndmdiactivate"></a><a name="mdiactivate"></a> CMDIFrameWnd:: MDIActivate
 
 다른 MDI 자식 창을 활성화 합니다.
 
@@ -264,7 +265,7 @@ void MDIActivate(CWnd* pWndActivate);
 
 [CMDIFrameWnd:: GetWindowMenuPopup](#getwindowmenupopup)의 예제를 참조 하세요.
 
-## <a name="cmdiframewndmdicascade"></a><a name="mdicascade"></a>CMDIFrameWnd:: MDICascade
+## <a name="cmdiframewndmdicascade"></a><a name="mdicascade"></a> CMDIFrameWnd:: MDICascade
 
 모든 MDI 자식 창을 계단식 형식으로 정렬 합니다.
 
@@ -286,7 +287,7 @@ Cascade 플래그를 지정 합니다. 사용 하지 않도록 설정 된 MDI �
 
 [!code-cpp[NVC_MFCWindowing#17](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_5.cpp)]
 
-## <a name="cmdiframewndmdigetactive"></a><a name="mdigetactive"></a>CMDIFrameWnd:: MDIGetActive
+## <a name="cmdiframewndmdigetactive"></a><a name="mdigetactive"></a> CMDIFrameWnd:: MDIGetActive
 
 현재 활성 MDI 자식 창 및 자식 창이 최대화 되었는지 여부를 나타내는 플래그를 검색 합니다.
 
@@ -299,7 +300,7 @@ CMDIChildWnd* MDIGetActive(BOOL* pbMaximized = NULL) const;
 *P최대화*<br/>
 BOOL 반환 값에 대 한 포인터입니다. 창이 최대화 된 경우 반환에 대해 TRUE로 설정 합니다. 그렇지 않으면 FALSE입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 활성 MDI 자식 창에 대 한 포인터입니다.
 
@@ -307,7 +308,7 @@ BOOL 반환 값에 대 한 포인터입니다. 창이 최대화 된 경우 반�
 
 [CMDIChildWnd:: MDIMaximize](../../mfc/reference/cmdichildwnd-class.md#mdimaximize)의 예제를 참조 하세요.
 
-## <a name="cmdiframewndmdiiconarrange"></a><a name="mdiiconarrange"></a>CMDIFrameWnd:: MDIIconArrange
+## <a name="cmdiframewndmdiiconarrange"></a><a name="mdiiconarrange"></a> CMDIFrameWnd:: MDIIconArrange
 
 모든 최소화 된 문서 자식 창을 정렬 합니다.
 
@@ -323,7 +324,7 @@ void MDIIconArrange();
 
 [CMDIFrameWnd:: MDICascade](#mdicascade)의 예제를 참조 하세요.
 
-## <a name="cmdiframewndmdimaximize"></a><a name="mdimaximize"></a>CMDIFrameWnd:: MDIMaximize
+## <a name="cmdiframewndmdimaximize"></a><a name="mdimaximize"></a> CMDIFrameWnd:: MDIMaximize
 
 지정 된 MDI 자식 창을 최대화 합니다.
 
@@ -346,7 +347,7 @@ void MDIMaximize(CWnd* pWnd);
 
 [CMDIChildWnd:: MDIMaximize](../../mfc/reference/cmdichildwnd-class.md#mdimaximize)의 예제를 참조 하세요.
 
-## <a name="cmdiframewndmdinext"></a><a name="mdinext"></a>CMDIFrameWnd:: MDINext
+## <a name="cmdiframewndmdinext"></a><a name="mdinext"></a> CMDIFrameWnd:: MDINext
 
 현재 활성 자식 창 바로 뒤의 자식 창을 활성화 하 고 현재 활성 자식 창을 다른 모든 자식 창 뒤에 배치 합니다.
 
@@ -362,7 +363,7 @@ void MDINext();
 
 [!code-cpp[NVC_MFCWindowing#18](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_6.cpp)]
 
-## <a name="cmdiframewndmdiprev"></a><a name="mdiprev"></a>CMDIFrameWnd:: MDIPrev
+## <a name="cmdiframewndmdiprev"></a><a name="mdiprev"></a> CMDIFrameWnd:: MDIPrev
 
 이전 자식 창을 활성화 하 고 현재 활성 자식 창을 바로 뒤에 배치 합니다.
 
@@ -374,7 +375,7 @@ void MDIPrev();
 
 현재 활성화 된 MDI 자식 창이 최대화 된 경우 멤버 함수는 현재 활성 자식을 복원 하 고 새로 활성화 된 자식을 최대화 합니다.
 
-## <a name="cmdiframewndmdirestore"></a><a name="mdirestore"></a>CMDIFrameWnd:: MDIRestore
+## <a name="cmdiframewndmdirestore"></a><a name="mdirestore"></a> CMDIFrameWnd:: MDIRestore
 
 MDI 자식 창을 최대화 하거나 최소화 된 크기로 복원 합니다.
 
@@ -391,7 +392,7 @@ void MDIRestore(CWnd* pWnd);
 
 [CMDIChildWnd:: MDIRestore](../../mfc/reference/cmdichildwnd-class.md#mdirestore)의 예제를 참조 하세요.
 
-## <a name="cmdiframewndmdisetmenu"></a><a name="mdisetmenu"></a>CMDIFrameWnd:: MDISetMenu
+## <a name="cmdiframewndmdisetmenu"></a><a name="mdisetmenu"></a> CMDIFrameWnd:: MDISetMenu
 
 MDI 프레임 창, 창 팝업 메뉴 또는 둘 다의 메뉴를 대체 합니다.
 
@@ -409,7 +410,7 @@ CMenu* MDISetMenu(
 *pWindowMenu*<br/>
 새 창 팝업 메뉴의 메뉴를 지정 합니다. NULL 인 경우에는 메뉴가 변경 되지 않습니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메시지로 바뀐 프레임 창 메뉴에 대 한 포인터입니다. 해당 포인터는 임시적이며, 나중에 사용하려고 저장하면 안됩니다.
 
@@ -429,7 +430,7 @@ MDI 자식 창이 최대화 되 고이 호출이 MDI 프레임 창 메뉴를 대
 
 [!code-cpp[NVC_MFCWindowing#20](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_8.cpp)]
 
-## <a name="cmdiframewndmditile"></a><a name="mditile"></a>CMDIFrameWnd:: MDITile
+## <a name="cmdiframewndmditile"></a><a name="mditile"></a> CMDIFrameWnd:: MDITile
 
 모든 자식 창을 바둑판식으로 정렬 합니다.
 

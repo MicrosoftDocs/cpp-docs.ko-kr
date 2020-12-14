@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3460'
 title: 컴파일러 오류 C3460
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3460
 ms.assetid: adbf8775-10ca-4654-acdf-58dd765351cd
-ms.openlocfilehash: cb1dc84ea7b6666368708e9493349d9c7a9a0571
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: ee5bcb2396586d965f16d80ef006301c7bcd784f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90743076"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97315883"
 ---
 # <a name="compiler-error-c3460"></a>컴파일러 오류 C3460
 

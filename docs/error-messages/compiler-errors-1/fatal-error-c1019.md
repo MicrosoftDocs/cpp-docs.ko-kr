@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 심각한 오류 C1019'
 title: 심각한 오류 C1019
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1019
 ms.assetid: c4f8968b-bc62-4200-b3ca-69d06c163236
-ms.openlocfilehash: f33139393f7f6225edf0c4b3f992b93d35bd6afa
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: d11a4300b29e497fef2f148d07963997586781ec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756918"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97316390"
 ---
 # <a name="fatal-error-c1019"></a>심각한 오류 C1019
 
@@ -29,7 +30,7 @@ ms.locfileid: "74756918"
 int main() {}
 ```
 
-가능한 해결 방법:
+해결 방법:
 
 ```cpp
 // C1019b.cpp

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: STL/CLR 컨테이너'
 title: STL/CLR 컨테이너
 ms.date: 09/18/2018
 ms.topic: reference
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - STL/CLR, containers
 - containers, STL/CLR
 ms.assetid: 34ca8031-2041-46b9-aed9-29082d1972ea
-ms.openlocfilehash: 04ba56bf4f134ac5e9b906f7f84563c00ffe1b96
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 945533f616abe37763d9963d46d87f02a3c077fa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214869"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335343"
 ---
 # <a name="stlclr-containers"></a>STL/CLR 컨테이너
 

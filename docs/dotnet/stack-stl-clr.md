@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: stack (STL/CLR)'
 title: stack(STL/CLR)
 ms.date: 11/04/2016
 ms.topic: reference
@@ -53,12 +54,12 @@ helpviewer_keywords:
 - top_item member [STL/CLR]
 - value_type member [STL/CLR]
 ms.assetid: 6ee96b9f-8a33-4cf7-b7e0-6535c24bdefb
-ms.openlocfilehash: 316899aae024fbc8d9e568d6b5684ec4cfb11558
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 2903af3bce3f4eba09324202dbb071b11e440573
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91499660"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335375"
 ---
 # <a name="stack-stlclr"></a>stack(STL/CLR)
 
@@ -140,7 +141,7 @@ template<typename Value,
 
 ## <a name="remarks"></a>설명
 
-개체는 *값* 요소를 저장 하 고 요청 시 증가 하는 *컨테이너*형식의 기본 컨테이너를 통해 제어 하는 시퀀스에 대 한 저장소를 할당 하 고 해제 합니다. 개체는 마지막 요소만 푸시하는 데 대 한 액세스를 제한 하 여 LIFO 큐 또는 스택이 라고도 하는 마지막으로 실행 되는 큐를 구현 합니다.
+개체는 *값* 요소를 저장 하 고 요청 시 증가 하는 *컨테이너* 형식의 기본 컨테이너를 통해 제어 하는 시퀀스에 대 한 저장소를 할당 하 고 해제 합니다. 개체는 마지막 요소만 푸시하는 데 대 한 액세스를 제한 하 여 LIFO 큐 또는 스택이 라고도 하는 마지막으로 실행 되는 큐를 구현 합니다.
 
 ## <a name="members"></a>멤버
 
@@ -254,7 +255,7 @@ typedef Container value_type;
 
 ### <a name="remarks"></a>설명
 
-이 형식은 템플릿 매개 변수 *Container*의 동의어입니다.
+이 형식은 템플릿 매개 변수 *Container* 의 동의어입니다.
 
 ### <a name="example"></a>예제
 
@@ -576,7 +577,7 @@ stack <Value, Container>% operator=(stack <Value, Container>% right);
 
 ### <a name="remarks"></a>설명
 
-멤버 연산자는 개체에 대해 *를 복사 하 고를 반환* **`*this`** 합니다. 이를 사용 하 여 제어 되는 시퀀스를 *오른쪽*에 있는 제어 되는 시퀀스의 복사본으로 바꿉니다.
+멤버 연산자는 개체에 대해 *를 복사 하 고를 반환* **`*this`** 합니다. 이를 사용 하 여 제어 되는 시퀀스를 *오른쪽* 에 있는 제어 되는 시퀀스의 복사본으로 바꿉니다.
 
 ### <a name="example"></a>예제
 
@@ -887,7 +888,7 @@ explicit stack(container_type% wrapped);
 
 `stack(stack<Value, Container>% right);`
 
-의 복사본 인 래핑된 컨테이너를 만듭니다 `right.get_container()` . 이를 사용 하 여 stack 개체 *오른쪽*에 의해 제어 되는 시퀀스의 복사본 인 초기 제어 되는 시퀀스를 지정 합니다.
+의 복사본 인 래핑된 컨테이너를 만듭니다 `right.get_container()` . 이를 사용 하 여 stack 개체 *오른쪽* 에 의해 제어 되는 시퀀스의 복사본 인 초기 제어 되는 시퀀스를 지정 합니다.
 
 생성자는 다음과 같습니다.
 
@@ -1113,7 +1114,7 @@ typedef Value value_type;
 
 ### <a name="remarks"></a>설명
 
-형식은 템플릿 매개 변수 *값*의 동의어입니다.
+형식은 템플릿 매개 변수 *값* 의 동의어입니다.
 
 ### <a name="example"></a>예제
 

@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 표준 변환 및 암시적 Boxing'
 title: 표준 변환 및 암시적 boxing
 ms.date: 11/04/2016
 helpviewer_keywords:
 - boxing, implicit
 ms.assetid: 33f7fc7d-5674-44a2-a859-0e6a04fae519
-ms.openlocfilehash: bc2c804474be55a9aea7d590abb1e0ac2b72ad90
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 9775effdae92ac9689bc7c08f2ba7887e6b54dbc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "79545146"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335354"
 ---
 # <a name="standard-conversions-and-implicit-boxing"></a>표준 변환 및 암시적 boxing
 
@@ -40,4 +41,4 @@ int main() {
 
 ## <a name="see-also"></a>참고 항목
 
-[Boxing](../extensions/boxing-cpp-component-extensions.md)
+[boxing](../extensions/boxing-cpp-component-extensions.md)

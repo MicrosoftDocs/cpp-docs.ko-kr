@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: MFC 대화 상자로 Windows Form 사용자 정의 컨트롤 호스팅'
 title: Windows Form 사용자 정의 컨트롤을 MFC 대화 상자로 호스팅
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,18 +7,18 @@ helpviewer_keywords:
 - Windows Forms [C++], hosting as MFC Dialog
 - hosting Windows Forms control [C++]
 ms.assetid: 0434a9d7-8b14-48e6-ad69-9ba9a684677a
-ms.openlocfilehash: 7fc2aad1e0a550fb8f22b311518ae9fb16c076a5
-ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
+ms.openlocfilehash: 0139e26fee834d47bc0d513c3b64bf3c09368b22
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "79544798"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335462"
 ---
 # <a name="hosting-a-windows-form-user-control-as-an-mfc-dialog-box"></a>Windows Form 사용자 정의 컨트롤을 MFC 대화 상자로 호스팅
 
-MFC는 모달 또는 모덜리스 MFC 대화 상자에서 Windows Forms 사용자 정의 컨트롤 (<xref:System.Windows.Forms.UserControl>)을 호스팅할 수 있도록 템플릿 클래스 [CWinFormsDialog](../mfc/reference/cwinformsdialog-class.md) 를 제공 합니다. `CWinFormsDialog`는 MFC 클래스 [CDialog](../mfc/reference/cdialog-class.md)에서 파생 되므로 대화 상자를 모달 또는 모덜리스로 시작할 수 있습니다.
+MFC는 [](../mfc/reference/cwinformsdialog-class.md) <xref:System.Windows.Forms.UserControl> 모달 또는 모덜리스 MFC 대화 상자에서 Windows Forms 사용자 정의 컨트롤 ()을 호스팅할 수 있도록 템플릿 클래스 CWinFormsDialog를 제공 합니다. `CWinFormsDialog` 는 MFC 클래스 [CDialog](../mfc/reference/cdialog-class.md)에서 파생 되므로 대화 상자를 모달 또는 모덜리스로 시작할 수 있습니다.
 
-`CWinFormsDialog`에서 사용자 정의 컨트롤을 호스팅하는 프로세스는 [MFC 대화 상자에서 Windows Form 사용자 정의 컨트롤 호스팅](../dotnet/hosting-a-windows-form-user-control-in-an-mfc-dialog-box.md)에 설명 된 프로세스와 비슷합니다. 그러나 `CWinFormsDialog`는 사용자 정의 컨트롤의 초기화 및 호스팅을 관리 하므로 수동으로 프로그래밍할 필요가 없습니다.
+`CWinFormsDialog`를 사용 하 여 사용자 정의 컨트롤을 호스팅하는 프로세스는 [MFC 대화 상자에서 Windows Form 사용자 정의 컨트롤 호스팅](../dotnet/hosting-a-windows-form-user-control-in-an-mfc-dialog-box.md)에 설명 된 프로세스와 비슷합니다. 그러나는 `CWinFormsDialog` 수동으로 프로그래밍할 필요가 없도록 사용자 정의 컨트롤의 초기화 및 호스팅을 관리 합니다.
 
 MFC와 함께 사용 Windows Forms을 보여 주는 예제 응용 프로그램은 [mfc 및 Windows Forms 통합](https://www.microsoft.com/download/details.aspx?id=2113)을 참조 하세요.
 
@@ -25,33 +26,33 @@ MFC와 함께 사용 Windows Forms을 보여 주는 예제 응용 프로그램�
 
 1. MFC 응용 프로그램 프로젝트를 만듭니다.
 
-   **파일** 메뉴에서 **새로 만들기**를 선택한 다음 **프로젝트**를 클릭 합니다. **시각적 C++**  폴더에서 **MFC 응용 프로그램**을 선택 합니다.
+   **파일** 메뉴에서 **새로 만들기** 를 선택한 다음 **프로젝트** 를 클릭 합니다. **Visual C++** 폴더에서 **MFC 응용 프로그램** 을 선택 합니다.
 
-   **이름** 상자에 `MFC03`을 입력 하 고 솔루션 설정을 **솔루션에 추가**로 변경 합니다. **확인을**클릭 합니다.
+   **이름** 상자에을 입력 하 `MFC03` 고 솔루션 설정을 **솔루션에 추가** 로 변경 합니다. **확인을** 클릭 합니다.
 
-   **MFC 응용 프로그램 마법사**에서 모든 기본값을 적용 한 다음 **마침**을 클릭 합니다. 이렇게 하면 다중 문서 인터페이스를 사용 하 여 MFC 응용 프로그램을 만듭니다.
+   **MFC 응용 프로그램 마법사** 에서 모든 기본값을 적용 한 다음 **마침** 을 클릭 합니다. 이렇게 하면 다중 문서 인터페이스를 사용 하 여 MFC 응용 프로그램을 만듭니다.
 
 1. 프로젝트를 구성 합니다.
 
-   **솔루션 탐색기**에서 **MFC03** 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 합니다. **속성 페이지** 대화 상자가 나타납니다.
+   **솔루션 탐색기** 에서 **MFC03** 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **속성** 을 선택 합니다. **속성 페이지** 대화 상자가 나타납니다.
 
-   **속성 페이지** 대화 상자의 **구성 속성** 트리 컨트롤에서 **일반**을 선택한 다음 **프로젝트 기본값** 섹션에서 **공용 언어 런타임 지원** 을 **공용 언어 런타임 지원 (/clr)** 으로 설정 합니다. **확인**을 클릭합니다.
+   **속성 페이지** 대화 상자의 **구성 속성** 트리 컨트롤에서 **일반** 을 선택한 다음 **프로젝트 기본값** 섹션에서 **공용 언어 런타임 지원** 을 **공용 언어 런타임 지원 (/clr)** 으로 설정 합니다. **확인** 을 클릭합니다.
 
 1. .NET 컨트롤에 대 한 참조를 추가 합니다.
 
-   **솔루션 탐색기**에서 **MFC03** 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **추가**, **참조**를 선택 합니다. **속성 페이지**에서 **새 참조 추가**를 클릭 하 고 **프로젝트** 탭 아래에서 WindowsControlLibrary1을 선택한 다음 **확인**을 클릭 합니다. 그러면 프로그램에서 컴파일되도록 참조를 [/fu](../build/reference/fu-name-forced-hash-using-file.md) 컴파일러 옵션의 형태로 추가 합니다. 또한 WindowsControlLibrary1를 `MFC03` 프로젝트 디렉터리에 복사 하 여 프로그램이 실행 됩니다.
+   **솔루션 탐색기** 에서 **MFC03** 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **추가**, **참조** 를 선택 합니다. **속성 페이지** 에서 **새 참조 추가** 를 클릭 하 고 **프로젝트** 탭 아래에서 WindowsControlLibrary1을 선택한 다음 **확인** 을 클릭 합니다. 그러면 프로그램에서 컴파일되도록 참조를 [/fu](../build/reference/fu-name-forced-hash-using-file.md) 컴파일러 옵션의 형태로 추가 합니다. 또한 프로그램을 실행 하기 위해 WindowsControlLibrary1.dll를 `MFC03` 프로젝트 디렉터리로 복사 합니다.
 
-1. 기존 `#include` 문이 끝날 때 *.pch. h* (Visual Studio 2017이 하 버전의*stdafx.h* )에 `#include <afxwinforms.h>`를 추가 합니다.
+1. `#include <afxwinforms.h>`기존 문의 끝에 있는 *.Pch* (Visual Studio 2017 및 이전 버전의 *stdafx.h* )에를 추가 `#include` 합니다.
 
-1. 서브 클래스 `CDialog`새 클래스를 추가 합니다.
+1. 서브 클래스를 추가 하는 새 클래스를 추가 `CDialog` 합니다.
 
-   프로젝트 이름을 마우스 오른쪽 단추로 클릭 하 고 서브 클래스 `CDialog`하는 MFC 클래스 (CHostForWinForm 라고 함)를 추가 합니다. 대화 상자 리소스가 필요 하지 않으므로 리소스 ID를 삭제할 수 있습니다 ( **리소스 뷰**을 선택 하 고, **대화** 상자 폴더를 확장 하 고 `IDD_HOSTFORWINFORM` 리소스를 삭제 합니다.  그런 다음 코드에서 ID에 대 한 모든 참조를 제거 합니다.)
+   프로젝트 이름을 마우스 오른쪽 단추로 클릭 하 고 서브 클래스에 대 한 MFC 클래스 (CHostForWinForm 라고 함)를 추가 `CDialog` 합니다. 대화 상자 리소스가 필요 하지 않으므로 리소스 ID를 삭제할 수 있습니다 ( **리소스 뷰** 을 선택 하 고, **대화** 상자 폴더를 확장 하 고 리소스를 삭제 `IDD_HOSTFORWINFORM` 합니다.  그런 다음 코드에서 ID에 대 한 모든 참조를 제거 합니다.)
 
-1. CHostForWinForm 및 CHostForWinForm 파일의 `CDialog`를 `CWinFormsDialog<WindowsControlLibrary1::UserControl1>`으로 바꿉니다.
+1. `CDialog`CHostForWinForm 및 CHostForWinForm 파일에서를로 바꿉니다. `CWinFormsDialog<WindowsControlLibrary1::UserControl1>`
 
 1. CHostForWinForm 클래스에서 DoModal를 호출 합니다.
 
-   MFC03에서 `#include "HostForWinForm.h"`를 추가 합니다.
+   MFC03에서을 추가 `#include "HostForWinForm.h"` 합니다.
 
    CMFC03App:: InitInstance 정의에서 return 문 앞에 다음을 추가 합니다.
 
@@ -60,17 +61,17 @@ MFC와 함께 사용 Windows Forms을 보여 주는 예제 응용 프로그램�
     m_HostForWinForm.DoModal();
     ```
 
-1. 프로젝트를 빌드 및 실행합니다.
+1. 프로젝트를 빌드하고 실행합니다.
 
-   **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.
+   **빌드** 메뉴에서 **솔루션 빌드** 를 클릭합니다.
 
-   **디버그** 메뉴에서 **디버깅 하지 않고 시작**을 클릭 합니다.
+   **디버그** 메뉴에서 **디버깅 하지 않고 시작** 을 클릭 합니다.
 
    다음에는 MFC 응용 프로그램에서 Windows Forms 컨트롤의 상태를 모니터링 하는 코드를 추가 합니다.
 
 1. OnInitDialog에 대 한 처리기를 추가 합니다.
 
-   **속성** 창 (F4)을 표시 합니다. **클래스 뷰**에서 CHostForWinForm을 선택 합니다. **속성** 창에서 재정의를 선택 하 고 OnInitDialog에 대 한 행에서 왼쪽 열을 클릭 한 다음 > 추가 \< 선택 합니다. 이렇게 하면 CHostForWinForm에 다음 줄이 추가 됩니다.
+   **속성** 창 (F4)을 표시 합니다. **클래스 뷰** 에서 CHostForWinForm을 선택 합니다. **속성** 창에서 재정의를 선택 하 고 OnInitDialog에 대 한 행에서 왼쪽 열을 클릭 한 다음를 선택 \< Add > 합니다. 이렇게 하면 CHostForWinForm에 다음 줄이 추가 됩니다.
 
     ```cpp
     virtual BOOL OnInitDialog();
@@ -105,7 +106,7 @@ MFC와 함께 사용 Windows Forms을 보여 주는 예제 응용 프로그램�
     }
     ```
 
-1. 프로젝트를 빌드 및 실행합니다. Windows Form에 있는 단추를 클릭 하면 MFC 응용 프로그램의 코드가 실행 됩니다.
+1. 프로젝트를 빌드하고 실행합니다. Windows Form에 있는 단추를 클릭 하면 MFC 응용 프로그램의 코드가 실행 됩니다.
 
     다음으로는 MFC 코드에서 Windows Form의 텍스트 상자에 있는 값을 표시 하는 코드를 추가 합니다.
 
@@ -132,9 +133,9 @@ MFC와 함께 사용 Windows Forms을 보여 주는 예제 응용 프로그램�
     System::Windows::Forms::MessageBox::Show(z);
     ```
 
-1. 프로젝트를 빌드 및 실행합니다.
+1. 프로젝트를 빌드하고 실행합니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[MFC에서 Windows Form 사용자 정의 컨트롤을 사용 하 여](../dotnet/using-a-windows-form-user-control-in-mfc.md) <xref:System.Windows.Forms.UserControl?displayProperty=fullName>
-
+<xref:System.Windows.Forms.UserControl?displayProperty=fullName>
+[MFC에서 Windows Form 사용자 정의 컨트롤 사용](../dotnet/using-a-windows-form-user-control-in-mfc.md)
