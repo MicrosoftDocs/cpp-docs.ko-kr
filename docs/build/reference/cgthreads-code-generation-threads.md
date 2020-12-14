@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: `/cgthreads` (코드 생성 스레드)'
 title: /cgthreads(코드 생성 스레드)
 ms.date: 07/31/2020
 f1_keywords:
@@ -9,14 +10,14 @@ helpviewer_keywords:
 - cgthreads compiler option (C++)
 - cgthreads
 ms.assetid: 64bc768c-6caa-4baf-9dea-7cfa1ffb01c2
-ms.openlocfilehash: 319a42ab68f02df6019ff283f1039ef3d561c4a0
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 41f1e2ab6aa9263a2faf81e83d47db953819827a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520877"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97182478"
 ---
-# <a name="cgthreads-code-generation-threads"></a>`/cgthreads`(코드 생성 스레드)
+# <a name="cgthreads-code-generation-threads"></a>`/cgthreads` (코드 생성 스레드)
 
 최적화 및 코드 생성에 사용할 cl.exe 스레드 수를 설정합니다.
 
@@ -48,13 +49,13 @@ cl.exe에서 사용할 최대 스레드 수입니다. 여기서 *N* 은 1에서 
 
 1. **구성 속성**  >  **C/c + +**  >  **명령줄** 속성 페이지를 선택 합니다.
 
-1. 를 포함 하도록 **추가 옵션** 속성을 수정 **`cgthreadsN`** *`N`* 합니다. 여기서은 1에서 8 사이의 값입니다. 그런 다음 **확인**을 선택 합니다.
+1. 를 포함 하도록 **추가 옵션** 속성을 수정 **`cgthreadsN`** *`N`* 합니다. 여기서은 1에서 8 사이의 값입니다. 그런 다음 **확인** 을 선택 합니다.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
 [MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

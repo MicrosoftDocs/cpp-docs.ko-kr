@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: _chdir, _wchdir'
 title: _chdir, _wchdir
 ms.date: 4/2/2020
 api_name:
@@ -38,12 +39,12 @@ helpviewer_keywords:
 - chdir function
 - directories [C++], changing
 ms.assetid: 85e9393b-62ac-45d5-ab2a-fa2217f6152e
-ms.openlocfilehash: a54b42ee92392971fdb6979ee2dc3a3b9c65f184
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 190e9d6445417aed8c35843cb4c386d49535ebbd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917047"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97186716"
 ---
 # <a name="_chdir-_wchdir"></a>_chdir, _wchdir
 
@@ -65,13 +66,13 @@ int _wchdir(
 *dirname*<br/>
 새 작업 디렉터리의 경로입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-이러한 함수는 성공할 경우 0 값을 반환합니다. 반환 값-1은 실패를 나타냅니다. 지정 된 경로를 찾을 수 없는 경우 **errno** 가 **enoent (** 로 설정 됩니다. *이름 이름이* **NULL**인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 은 **EINVAL** 로 설정 되 고 함수는-1을 반환 합니다.
+이러한 함수는 성공할 경우 0 값을 반환합니다. 반환 값-1은 실패를 나타냅니다. 지정 된 경로를 찾을 수 없는 경우 **errno** 가 **enoent (** 로 설정 됩니다. *이름 이름이* **NULL** 인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 은 **EINVAL** 로 설정 되 고 함수는-1을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-**_Chdir** 함수는 현재 작업 디렉터리를 변경 되지 않은 *이름*으로 지정 된 디렉터리로 변경 합니다. *Diname* 매개 변수는 기존 디렉터리를 참조 해야 합니다. 이 함수는 모든 드라이브에서 현재 작업 디렉터리를 변경할 수 있습니다. 새 드라이브 문자를 *이름*에 지정 된 경우에는 기본 드라이브 문자도 변경 됩니다. 예를 들어 A가 기본 드라이브 문자이고 \BIN이 현재 작업 디렉터리이면 다음 호출에서 C 드라이브에 대한 현재 작업 디렉터리를 변경하고 C를 새 기본 드라이브로 설정합니다.
+**_Chdir** 함수는 현재 작업 디렉터리를 변경 되지 않은 *이름* 으로 지정 된 디렉터리로 변경 합니다. *Diname* 매개 변수는 기존 디렉터리를 참조 해야 합니다. 이 함수는 모든 드라이브에서 현재 작업 디렉터리를 변경할 수 있습니다. 새 드라이브 문자를 *이름* 에 지정 된 경우에는 기본 드라이브 문자도 변경 됩니다. 예를 들어 A가 기본 드라이브 문자이고 \BIN이 현재 작업 디렉터리이면 다음 호출에서 C 드라이브에 대한 현재 작업 디렉터리를 변경하고 C를 새 기본 드라이브로 설정합니다.
 
 ```C
 _chdir("c:\temp");
@@ -79,7 +80,7 @@ _chdir("c:\temp");
 
 경로에 선택적 백슬래시 문자 (**&#92;**)를 사용 하는 경우 단일 백슬래시 (**&#92;**)를 나타내려면 C 문자열 리터럴에 백슬래시 두 개 (**&#92;&#92;**)를 넣어야 합니다.
 
-**_wchdir** 은 **_chdir**의 와이드 문자 버전입니다. **_wchdir** 에 대 한 대상 *이름* 인수는 와이드 문자열입니다. **_wchdir** 와 **_chdir** 는 동일 하 게 동작 합니다.
+**_wchdir** 은 **_chdir** 의 와이드 문자 버전입니다. **_wchdir** 에 대 한 대상 *이름* 인수는 와이드 문자열입니다. **_wchdir** 와 **_chdir** 는 동일 하 게 동작 합니다.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -157,7 +158,7 @@ Directory of c:\windows
                0 Dir(s)  67,326,029,824 bytes free
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [디렉터리 제어](../../c-runtime-library/directory-control.md)<br/>
 [_mkdir, _wmkdir](mkdir-wmkdir.md)<br/>

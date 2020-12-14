@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: &lt; 메모리&gt;'
 title: '&lt;memory&gt;'
 ms.date: 08/04/2019
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 - std::<memory>
 helpviewer_keywords:
 - memory header
-ms.openlocfilehash: 0e3ce4a4411bd6d4c352802a96c97e93c66491df
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 27aea86d8329ee37c3aa1409b7dde7091cfe43bf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836467"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183778"
 ---
 # <a name="ltmemorygt"></a>&lt;memory&gt;
 
@@ -91,9 +92,9 @@ ms.locfileid: "88836467"
 
 |이름|설명|
 |-|-|
-|[allocator](../standard-library/allocator-class.md)|클래스 **템플릿은 형식 형식**개체의 배열에 대해 저장소 할당 및 해제를 관리 하는 개체를 설명 합니다.|
+|[allocator](../standard-library/allocator-class.md)|클래스 **템플릿은 형식 형식** 개체의 배열에 대해 저장소 할당 및 해제를 관리 하는 개체를 설명 합니다.|
 |[allocator_traits](../standard-library/allocator-traits-class.md)|할당자를 사용할 수 있는 컨테이너에 필요한 모든 정보를 확인하는 개체에 대해 설명합니다.|
-|[auto_ptr](../standard-library/auto-ptr-class.md)|클래스 템플릿은 **Type** <strong>\*</strong> 바깥쪽 auto_ptr 제거 될 때 요소가 가리키는 개체가 삭제 되도록 하는 형식 형식의 할당 된 개체에 대 한 포인터를 저장 하는 개체를 설명 합니다.|
+|[auto_ptr](../standard-library/auto-ptr-class.md)|클래스 템플릿은  <strong>\*</strong> 바깥쪽 auto_ptr 제거 될 때 요소가 가리키는 개체가 삭제 되도록 하는 형식 형식의 할당 된 개체에 대 한 포인터를 저장 하는 개체를 설명 합니다.|
 |[bad_weak_ptr](../standard-library/bad-weak-ptr-class.md)|불량 weak_ptr 예외를 보고합니다.|
 |[enabled_shared_from_this](../standard-library/enable-shared-from-this-class.md)|`shared_ptr`을 생성할 수 있습니다.|
 |[pointer_traits](../standard-library/pointer-traits-struct.md)|포인터 형식의 할당자를 설명 하기 위해 형식의 개체에 필요한 정보를 제공 `allocator_traits` `Ptr` 합니다.|

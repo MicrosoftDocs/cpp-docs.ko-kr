@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 스트림 정의'
 title: What a Stream Is
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - streams [C++], in iostream classes
 - streams [C++]
 ms.assetid: a7e661e9-6cd1-4543-a9a4-c58ee9fd32f3
-ms.openlocfilehash: 80f2d17d7de2ddca1ef1501cacdb44f41c06594b
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 3786fe05f25949129c1bce63bdbbd73a16209475
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68450934"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97187782"
 ---
 # <a name="what-a-stream-is"></a>What a Stream Is
 
@@ -24,6 +25,6 @@ C++에도 C와 마찬가지로 기본 제공 입력/출력 기능은 없습니�
 
 [입력/출력 대체](../standard-library/input-output-alternatives.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [iostream 프로그래밍](../standard-library/iostream-programming.md)

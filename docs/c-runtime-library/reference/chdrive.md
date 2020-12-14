@@ -1,4 +1,5 @@
 ---
+description: '다음에 대 한 자세한 정보: _chdrive'
 title: _chdrive
 ms.date: 4/2/2020
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - _chdrive function
 - chdrive function
 ms.assetid: 212a1a4b-4fa8-444e-9677-7fca4c8c47e3
-ms.openlocfilehash: a597a67c7d2083cf5860112f6ed55ff248053d17
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: d3935c64d8ae67c72f8516e4c2d21a7a0aa6e21b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917011"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97186690"
 ---
 # <a name="_chdrive"></a>_chdrive
 
@@ -56,15 +57,15 @@ int _chdrive(
 *드라이브나*<br/>
 현재 작업 드라이브를 지정하는 1부터 26까지의 정수입니다(1 = A, 2 = B 등).
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 현재 작업 드라이브가 변경된 경우 0이고, 변경되지 않으면 -1입니다.
 
 ## <a name="remarks"></a>설명
 
-*드라이브가* 1에서 26 사이에 있지 않은 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 **_chdrive** 함수는-1을 반환 하 고, **errno를 eacces** 로 설정 하 고, **_doserrno** 를 **ERROR_INVALID_DRIVE**로 설정 합니다. **EACCES**
+*드라이브가* 1에서 26 사이에 있지 않은 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 **_chdrive** 함수는-1을 반환 하 고, **errno를 eacces** 로 설정 하 고, **_doserrno** 를 **ERROR_INVALID_DRIVE** 로 설정 합니다. 
 
-**_chdrive** 함수는 그 자체가 스레드로부터 안전하지 않은 **SetCurrentDirectory** 함수에 종속되므로 스레드로부터 안전하지 않습니다. 다중 스레드 애플리케이션에서 **_chdrive**를 안전하게 사용하려면 고유한 스레드 동기화를 제공해야 합니다. 자세한 내용은 [SetCurrentDirectory](/windows/win32/api/winbase/nf-winbase-setcurrentdirectory)를 참조 하세요.
+**_chdrive** 함수는 그 자체가 스레드로부터 안전하지 않은 **SetCurrentDirectory** 함수에 종속되므로 스레드로부터 안전하지 않습니다. 다중 스레드 애플리케이션에서 **_chdrive** 를 안전하게 사용하려면 고유한 스레드 동기화를 제공해야 합니다. 자세한 내용은 [SetCurrentDirectory](/windows/win32/api/winbase/nf-winbase-setcurrentdirectory)를 참조 하세요.
 
 **_chdrive** 함수는 현재 작업 드라이브만 변경합니다. **_chdir** 함수는 현재 작업 디렉터리를 변경합니다.
 
@@ -82,7 +83,7 @@ int _chdrive(
 
 [_getdrive](getdrive.md)의 예제를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [디렉터리 제어](../../c-runtime-library/directory-control.md)<br/>
 [_chdir, _wchdir](chdir-wchdir.md)<br/>

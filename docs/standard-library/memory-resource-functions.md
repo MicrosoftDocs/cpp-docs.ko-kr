@@ -1,4 +1,5 @@
 ---
+description: '&lt;Memory_resource 함수에 대해 자세히 알아보세요. &gt;'
 title: '&lt;memory_resource &gt; 함수'
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - std::null_memory_resource [C++]
 - std::polymorphic_allocator [C++]
 - std::set_default_resource [C++]
-ms.openlocfilehash: 19d061b75a4f90a5779cad1a131e304623c4adf8
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: b49d13c30e14fbd3d14ec6040a44534b86b3547a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040589"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183830"
 ---
 # <a name="ltmemory_resourcegt-functions"></a>&lt;memory_resource &gt; 함수
 

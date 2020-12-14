@@ -1,16 +1,17 @@
 ---
+description: '다음에 대 한 자세한 정보: &lt; memory_resource&gt;'
 title: '&lt;memory_resource&gt;'
 ms.date: 04/04/2019
 f1_keywords:
 - <memory_resource>
 helpviewer_keywords:
 - memory_resource header
-ms.openlocfilehash: de88feb691d0ec1bc9bf9b9dc2bc40cbc31a1cfe
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d575d94323552fd75fb6217ced7933e5050ee8b7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831049"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183804"
 ---
 # <a name="ltmemory_resourcegt"></a>&lt;memory_resource&gt;
 
@@ -37,7 +38,7 @@ ms.locfileid: "88831049"
 |-|-|
 |[polymorphic_allocator](../standard-library/memory-resource-functions.md#poly_alloc)||
 
-### <a name="functions"></a>Functions
+### <a name="functions"></a>함수
 
 |Name|설명|
 |-|-|

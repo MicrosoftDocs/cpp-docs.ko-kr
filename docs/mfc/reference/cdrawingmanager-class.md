@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CDrawingManager 클래스'
 title: CDrawingManager 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -56,12 +57,12 @@ helpviewer_keywords:
 - CDrawingManager [MFC], SetPixel
 - CDrawingManager [MFC], SmartMixColors
 ms.assetid: 9e4775ca-101b-4aa9-a85a-4d047c701215
-ms.openlocfilehash: 1cc469b63e448e964dacc4d853905b22155dfe0e
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: b30218dd41e3591c4a39df078bb19e3ac653ba1b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561637"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184792"
 ---
 # <a name="cdrawingmanager-class"></a>CDrawingManager 클래스
 
@@ -77,14 +78,14 @@ class CDrawingManager : public CObject
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CDrawingManager::CDrawingManager](#cdrawingmanager)|`CDrawingManager` 개체를 생성합니다.|
 |`CDrawingManager::~CDrawingManager`|소멸자|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CDrawingManager:: CreateBitmap_32](#createbitmap_32)|응용 프로그램에서 직접 쓸 수 있는 32 비트 DIB (장치 독립적 비트맵)를 만듭니다.|
 |[CDrawingManager::D rawAlpha](#drawalpha)|투명 또는 반투명 픽셀의 비트맵이 표시 됩니다.|
@@ -166,7 +167,7 @@ static HBITMAP __stdcall CreateBitmap_32(
 *clrTransparent*\
 원래 비트맵의 투명 한 색을 지정 하는 RGB 값입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하면 새로 만든 DIB 비트맵에 대 한 핸들입니다. 그렇지 않으면 NULL입니다.
 
@@ -268,7 +269,7 @@ BOOL DrawGradientRing(
 *clrFace*<br/>
 진행 링의 내부 색입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
@@ -385,13 +386,13 @@ BOOL DrawShadow(
 *bRightShadow*<br/>
 진행 그림자를 그리는 방법을 나타내는 부울 매개 변수입니다. *BRightShadow* 가 인 경우는 `TRUE` `DrawShadow` 사각형의 오른쪽에 그림자를 그립니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
 ### <a name="remarks"></a>설명
 
-*Pbmpsavebottom* 및 *pBmpSaveRight*매개 변수를 사용 하 여 아래쪽과 오른쪽 그림자에 대 한 유효한 두 개의 비트맵을 제공할 수 있습니다. 이러한 [Cbitmap](../../mfc/reference/cbitmap-class.md) 개체에 연결 된 GDI 개체가 있으면에서 `DrawShadow` 해당 비트맵을 그림자로 사용 합니다. `CBitmap`매개 변수에 연결 된 GDI 개체가 없는 경우는 그림자를 `DrawShadow` 그리고 비트맵을 매개 변수에 연결 합니다. 이후 호출에서 `DrawShadow` 이러한 비트맵을 제공 하 여 그리기 프로세스의 속도를 높일 수 있습니다. 클래스 및 GDI 개체에 대 한 자세한 내용은 `CBitmap` [그래픽 개체](../../mfc/graphic-objects.md)를 참조 하세요.
+*Pbmpsavebottom* 및 *pBmpSaveRight* 매개 변수를 사용 하 여 아래쪽과 오른쪽 그림자에 대 한 유효한 두 개의 비트맵을 제공할 수 있습니다. 이러한 [Cbitmap](../../mfc/reference/cbitmap-class.md) 개체에 연결 된 GDI 개체가 있으면에서 `DrawShadow` 해당 비트맵을 그림자로 사용 합니다. `CBitmap`매개 변수에 연결 된 GDI 개체가 없는 경우는 그림자를 `DrawShadow` 그리고 비트맵을 매개 변수에 연결 합니다. 이후 호출에서 `DrawShadow` 이러한 비트맵을 제공 하 여 그리기 프로세스의 속도를 높일 수 있습니다. 클래스 및 GDI 개체에 대 한 자세한 내용은 `CBitmap` [그래픽 개체](../../mfc/graphic-objects.md)를 참조 하세요.
 
 이러한 매개 변수 중 하나가 이면 `NULL` 에서 `DrawShadow` 자동으로 그림자를 그립니다.
 
@@ -443,7 +444,7 @@ void Fill4ColorsGradient(
 
 ### <a name="remarks"></a>설명
 
-사각형을 두 개의 색 그라데이션으로 채우면 *Bhorz*의 값에 따라 서로 다른 색 그라데이션으로, 서로 인접 하 게 배치 됩니다. 각 색 그라데이션은 [CDrawingManager:: FillGradient](#fillgradient)메서드와 독립적으로 계산 됩니다.
+사각형을 두 개의 색 그라데이션으로 채우면 *Bhorz* 의 값에 따라 서로 다른 색 그라데이션으로, 서로 인접 하 게 배치 됩니다. 각 색 그라데이션은 [CDrawingManager:: FillGradient](#fillgradient)메서드와 독립적으로 계산 됩니다.
 
 *Npercentage* 0 보다 작거나 100 보다 많은 경우이 메서드는 어설션 오류를 생성 합니다.
 
@@ -549,13 +550,13 @@ BOOL GrayRect(
 *clrDisabled*<br/>
 진행 *Npercentage* -1로 설정 된 경우이 메서드가 채도 취소에 사용 하는 색입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-매개 변수 *Npercentage*의 경우 낮은 값은 더 짙은 색을 나타냅니다.
+매개 변수 *Npercentage* 의 경우 낮은 값은 더 짙은 색을 나타냅니다.
 
 *Npercentage* 의 최대값은 200입니다. 200 보다 큰 값은 사각형의 모양을 변경 하지 않습니다. 값이-1 인 경우이 메서드는 *Clrdisabled* 를 사용 하 여 사각형의 채도를 제한 합니다.
 
@@ -589,7 +590,7 @@ BOOL HighlightRect(
 *clrBlend*<br/>
 진행 혼합을 위한 기본 색입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -615,13 +616,13 @@ static COLORREF __stdcall HLStoRGB_ONE(
 *H*<br/>
 진행 색의 색상을 나타내는 0과 1 사이의 숫자입니다.
 
-*L-value*<br/>
+*L*<br/>
 진행 색의 명도를 나타내는 0에서 1 사이의 숫자입니다.
 
 *S*<br/>
 진행 색의 채도를 나타내는 0에서 1 사이의 숫자입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 제공 된 HLS 색의 RGB 표현입니다.
 
@@ -647,13 +648,13 @@ static COLORREF __stdcall HLStoRGB_TWO(
 *H*<br/>
 진행 색의 색상을 나타내는 0에서 360 사이의 숫자입니다.
 
-*L-value*<br/>
+*L*<br/>
 진행 색의 명도를 나타내는 0에서 1 사이의 숫자입니다.
 
 *S*<br/>
 진행 색의 채도를 나타내는 0에서 1 사이의 숫자입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 제공 된 HLS 색의 RGB 표현입니다.
 
@@ -685,7 +686,7 @@ static COLORREF __stdcall HSVtoRGB(
 *Hyper-v*\
 진행 색에 대 한 값을 나타내는 0과 1 사이의 숫자입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 제공 된 HSV 색의 RGB 표현입니다.
 
@@ -729,7 +730,7 @@ static BYTE __stdcall HueToRGB(
 *rh*<br/>
 진행 설명을 참조 하세요.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 제공 된 색상에 대 한 개별 빨간색, 녹색 또는 파랑 구성 요소입니다.
 
@@ -808,7 +809,7 @@ static COLORREF __stdcall PixelAlpha(
 *dstPixel*<br/>
 진행 픽셀의 기본 색입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 반투명 픽셀의 마지막 색입니다.
 
@@ -816,7 +817,7 @@ static COLORREF __stdcall PixelAlpha(
 
 이 클래스는 반투명 비트맵을 강조 하기 위한 도우미 클래스 이며 프로그래머가 직접 호출 하도록 설계 되지 않았습니다.
 
-*Dstpixel*를 사용 하는 메서드 버전을 사용 하는 경우 최종 색은 *Dstpixel* 및 *srcpixel*의 조합입니다. *Srcpixel* 색은 기본 색 *dstpixel*에 대 한 부분적으로 투명 한 색입니다.
+*Dstpixel* 를 사용 하는 메서드 버전을 사용 하는 경우 최종 색은 *Dstpixel* 및 *srcpixel* 의 조합입니다. *Srcpixel* 색은 기본 색 *dstpixel* 에 대 한 부분적으로 투명 한 색입니다.
 
 ## <a name="cdrawingmanagerprepareshadowmask"></a><a name="prepareshadowmask"></a> CDrawingManager::P repareShadowMask
 
@@ -844,7 +845,7 @@ static HBITMAP __stdcall PrepareShadowMask (
 *iMaxBrightness*<br/>
 진행 그림자의 최대 밝기입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하는 경우 생성 된 비트맵에 대 한 핸들입니다. 그렇지 않으면 NULL입니다.
 
@@ -907,7 +908,7 @@ static void __stdcall RGBtoHSV(
 *S*<br/>
 제한이 이 메서드가 색의 결과 채도를 저장 하는 double에 대 한 포인터입니다.
 
-*Hyper-v*<br/>
+*V*<br/>
 제한이 이 메서드가 색의 결과 값을 저장 하는 double에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
@@ -943,7 +944,7 @@ static void __stdcall SetAlphaPixel(
 *x*<br/>
 진행 색에 대 한 픽셀의 가로 좌표입니다.
 
-*x.y*<br/>
+*y*<br/>
 진행 색에 대 한 픽셀의 세로 좌표입니다.
 
 *수익률*<br/>
@@ -962,7 +963,7 @@ static void __stdcall SetAlphaPixel(
 
 이 메서드는 [CDrawingManager::D rawshadow](#drawshadow) 메서드에서 사용 하는 도우미 메서드입니다. 그림자를 그리려면 대신를 호출 하는 것이 좋습니다 `CDrawingManager::DrawShadow` .
 
-*BIsRight* 가 TRUE로 설정 된 경우 픽셀을 색으로 설정 하면 *사각형*의 오른쪽 가장자리에서 *x* 픽셀으로 측정 됩니다. FALSE 이면 *사각형*의 왼쪽 가장자리에서 색 *의 픽셀을 측정 합니다* .
+*BIsRight* 가 TRUE로 설정 된 경우 픽셀을 색으로 설정 하면 *사각형* 의 오른쪽 가장자리에서 *x* 픽셀으로 측정 됩니다. FALSE 이면 *사각형* 의 왼쪽 가장자리에서 색 *의 픽셀을 측정 합니다* .
 
 ## <a name="cdrawingmanagersetpixel"></a><a name="setpixel"></a> CDrawingManager::SetPixel
 
@@ -1028,7 +1029,7 @@ static COLORREF __stdcall SmartMixColors(
 *k2*\
 진행 두 번째 색의 가중치가 적용 된 비율입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 제공 된 색의 가중치가 혼합 된 색을 나타내는 색입니다.
 
@@ -1036,7 +1037,7 @@ static COLORREF __stdcall SmartMixColors(
 
 *K1* 또는 *k2* 가 0 보다 작은 경우이 메서드는 오류와 함께 실패 합니다. 두 매개 변수가 모두 0으로 설정 된 경우이 메서드는를 반환 `RGB(0, 0, 0)` 합니다.
 
-가중치가 적용 된 비율은 (color1 \* k1 + color2 \* k2)/(k1 + k2) 수식을 사용 하 여 계산 됩니다. 가중치가 적용 된 비율을 확인 한 후에는이 메서드는 혼합 색의 광도를 계산 합니다. 그런 다음 광도를 *dblLumRatio*곱합니다. 값이 1.0 보다 큰 경우이 메서드는 혼합 색의 광도를 새 값으로 설정 합니다. 그렇지 않으면 명도는 1.0로 설정 됩니다.
+가중치가 적용 된 비율은 (color1 \* k1 + color2 \* k2)/(k1 + k2) 수식을 사용 하 여 계산 됩니다. 가중치가 적용 된 비율을 확인 한 후에는이 메서드는 혼합 색의 광도를 계산 합니다. 그런 다음 광도를 *dblLumRatio* 곱합니다. 값이 1.0 보다 큰 경우이 메서드는 혼합 색의 광도를 새 값으로 설정 합니다. 그렇지 않으면 명도는 1.0로 설정 됩니다.
 
 ## <a name="cdrawingmanagerdrawrotated"></a><a name="drawrotated"></a> CDrawingManager::D rawRotated
 

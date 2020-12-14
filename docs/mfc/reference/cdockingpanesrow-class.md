@@ -1,5 +1,6 @@
 ---
-title: 도킹파네스로우 클래스
+description: '자세히 알아보기: CDockingPanesRow 클래스'
+title: CDockingPanesRow 클래스
 ms.date: 10/18/2018
 f1_keywords:
 - CDockingPanesRow
@@ -90,18 +91,18 @@ helpviewer_keywords:
 - CDockingPanesRow [MFC], ShowPane
 - CDockingPanesRow [MFC], UpdateVisibleState
 ms.assetid: e7a17832-0ebb-4bce-b799-cec9b60f76fe
-ms.openlocfilehash: d7535ae6c5246a372fd1a48573716bb166991d4e
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: bf031b19c25cde36705333feb3baa3af9e1932ae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81753318"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97185013"
 ---
-# <a name="cdockingpanesrow-class"></a>도킹파네스로우 클래스
+# <a name="cdockingpanesrow-class"></a>CDockingPanesRow 클래스
 
 도크 사이트의 동일한 수평 또는 수직 행(열)에 위치한 창 목록을 관리합니다.
 
-자세한 내용은 Visual Studio 설치의 **\\VC\\atlmfc\\src mfc** 폴더에 있는 소스 코드를 참조하십시오.
+자세한 내용은 Visual Studio 설치의 **VC \\ s\mfc \\ src \\ mfc** 폴더에 있는 소스 코드를 참조 하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -113,17 +114,17 @@ class CDockingPanesRow : public CObject
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
 |`CDockingPanesRow::CDockingPanesRow`|기본 생성자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
 |[CDockingPanesRow::AddPane](#addpane)||
 |[CDockingPanesRow::AddPaneFromRow](#addpanefromrow)||
-|[CDockingPanesRow::배열파네스](#arrangepanes)|지정된 여백 및 간격 매개 변수에 따라 창을 일렬로 정렬합니다.|
+|[CDockingPanesRow:: ArrangePanes](#arrangepanes)|지정된 여백 및 간격 매개 변수에 따라 창을 일렬로 정렬합니다.|
 |[CDockingPanesRow::CalcFixedLayout](#calcfixedlayout)||
 |[CDockingPanesRow::Create](#create)||
 |[CDockingPanesRow::ExpandStretchedPanes](#expandstretchedpanes)||
@@ -182,9 +183,9 @@ class CDockingPanesRow : public CObject
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxDockingPanesRow.h
+**헤더:** afxDockingPanesRow
 
-## <a name="cdockingpanesrowaddpane"></a><a name="addpane"></a>CDockingPanesRow::애드파네
+## <a name="cdockingpanesrowaddpane"></a><a name="addpane"></a> CDockingPanesRow:: AddPane
 
 ```
 virtual void AddPane(
@@ -196,17 +197,17 @@ virtual void AddPane(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *p컨트롤바*<br/>
+진행 *Pcontrolbar*<br/>
 
-【인】 *독 방법*<br/>
+진행 *dockMethod*<br/>
 
-【인】 *lpRect*<br/>
+진행 *lpRect*<br/>
 
-【인】 *bAddLast*<br/>
+진행 *Baddlast*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowaddpanefromrow"></a><a name="addpanefromrow"></a>CDockingPanesRow::애드파네From로우
+## <a name="cdockingpanesrowaddpanefromrow"></a><a name="addpanefromrow"></a> CDockingPanesRow:: AddPaneFromRow
 
 ```
 virtual void AddPaneFromRow(
@@ -216,15 +217,15 @@ virtual void AddPaneFromRow(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *p컨트롤바*<br/>
+진행 *Pcontrolbar*<br/>
 
-【인】 *독 방법*<br/>
+진행 *dockMethod*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowarrangepanes"></a><a name="arrangepanes"></a>CDockingPanesRow::배열파네스
+## <a name="cdockingpanesrowarrangepanes"></a><a name="arrangepanes"></a> CDockingPanesRow:: ArrangePanes
 
-지정된 여백 및 간격 매개변수에 따라 도킹 창을 행으로 정렬합니다.
+지정 된 여백 및 간격 매개 변수에 따라 행의 도킹 창을 정렬 합니다.
 
 ```
 virtual void ArrangePanes(
@@ -235,16 +236,16 @@ virtual void ArrangePanes(
 ### <a name="parameters"></a>매개 변수
 
 *nMargin*<br/>
-【인】 행의 왼쪽 위 모서리에서 첫 번째 창의 오프셋(픽셀)을 지정합니다.
+진행 행의 왼쪽 위 모퉁이에서 첫 번째 창의 오프셋 (픽셀)을 지정 합니다.
 
 *n 간격*<br/>
-【인】 창 사이의 간격을 픽셀 단위로 지정합니다.
+진행 창 사이의 간격 (픽셀)을 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 호출하여 도킹할 행을 정렬합니다. 이 메서드를 호출한 `CDockingPanesRow::FixupVirtualRects(FALSE, NULL)`후 을 호출해야 합니다.
+도킹 되는 행의 창을 정렬 하려면이 메서드를 호출 합니다. 이 메서드를 호출한 후에는를 호출 해야 `CDockingPanesRow::FixupVirtualRects(FALSE, NULL)` 합니다.
 
-## <a name="cdockingpanesrowcalcfixedlayout"></a><a name="calcfixedlayout"></a>CDockingPanesRow::석회화 레이아웃
+## <a name="cdockingpanesrowcalcfixedlayout"></a><a name="calcfixedlayout"></a> CDockingPanesRow:: CalcFixedLayout
 
 ```
 virtual CSize CalcFixedLayout(
@@ -254,15 +255,15 @@ virtual CSize CalcFixedLayout(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *b스트레치*<br/>
+진행 *Bstretch*<br/>
 
-【인】 *b호르츠 (주)*<br/>
+진행 *Bhorz*<br/>
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowcdockingpanesrow"></a><a name="cdockingpanesrow"></a>CDockingPanesRow::CDockingPanesRow
+## <a name="cdockingpanesrowcdockingpanesrow"></a><a name="cdockingpanesrow"></a> CDockingPanesRow:: CDockingPanesRow
 
 ```
 CDockingPanesRow(
@@ -273,25 +274,25 @@ CDockingPanesRow(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *p부모독바*<br/>
+진행 *pParentDockBar*<br/>
 
-【인】 *n오프셋*<br/>
+진행 *Noffset*<br/>
 
-【인】 *n높이*<br/>
+진행 *Nheight*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowcreate"></a><a name="create"></a>CDockingPanesRow::만들기
+## <a name="cdockingpanesrowcreate"></a><a name="create"></a> CDockingPanesRow:: Create
 
 ```
 virtual BOOL Create();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowexpandstretchedpanes"></a><a name="expandstretchedpanes"></a>CDockingPanesRow::확장늘보글
+## <a name="cdockingpanesrowexpandstretchedpanes"></a><a name="expandstretchedpanes"></a> CDockingPanesRow:: ExpandStretchedPanes
 
 ```cpp
 void ExpandStretchedPanes();
@@ -299,7 +300,7 @@ void ExpandStretchedPanes();
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowexpandstretchedpanesrect"></a><a name="expandstretchedpanesrect"></a>CDockingPanesRow::확장늘보글파네스렉트
+## <a name="cdockingpanesrowexpandstretchedpanesrect"></a><a name="expandstretchedpanesrect"></a> CDockingPanesRow:: ExpandStretchedPanesRect
 
 ```cpp
 void ExpandStretchedPanesRect();
@@ -307,7 +308,7 @@ void ExpandStretchedPanesRect();
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowfixupvirtualrects"></a><a name="fixupvirtualrects"></a>CDockingPanesRow::픽스업가상 수정
+## <a name="cdockingpanesrowfixupvirtualrects"></a><a name="fixupvirtualrects"></a> CDockingPanesRow:: FixupVirtualRects
 
 ```cpp
 void FixupVirtualRects(
@@ -317,13 +318,13 @@ void FixupVirtualRects(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *bMoveBackTo가상렉트*<br/>
+진행 *Bmovebacktovirtualrect*<br/>
 
-【인】 *pBarTo제외*<br/>
+진행 *P바 Toexclude*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowgetavailablelength"></a><a name="getavailablelength"></a>CDockingPanesRow::사용 가능 길이
+## <a name="cdockingpanesrowgetavailablelength"></a><a name="getavailablelength"></a> CDockingPanesRow:: GetAvailableLength
 
 ```
 virtual int GetAvailableLength(BOOL bUseVirtualRect = FALSE) const;
@@ -331,13 +332,13 @@ virtual int GetAvailableLength(BOOL bUseVirtualRect = FALSE) const;
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *bUse가상렉트*<br/>
+진행 *Busevirtualrect*<br/>
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowgetavailablespace"></a><a name="getavailablespace"></a>CDockingPanesRow::사용 가능 공간
+## <a name="cdockingpanesrowgetavailablespace"></a><a name="getavailablespace"></a> CDockingPanesRow:: GetAvailableSpace
 
 ```
 virtual void GetAvailableSpace(CRect& rect);
@@ -349,7 +350,7 @@ virtual void GetAvailableSpace(CRect& rect);
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowgetclientrect"></a><a name="getclientrect"></a>CDockingPanesRow::GetClientRect
+## <a name="cdockingpanesrowgetclientrect"></a><a name="getclientrect"></a> CDockingPanesRow:: GetClientRect
 
 ```cpp
 void GetClientRect(CRect& rect) const;
@@ -361,27 +362,27 @@ void GetClientRect(CRect& rect) const;
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowgetdocksite"></a><a name="getdocksite"></a>CDockingPanesRow::GetDockSite
+## <a name="cdockingpanesrowgetdocksite"></a><a name="getdocksite"></a> CDockingPanesRow:: GetDockSite
 
 ```
 CDockSite* GetDockSite() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowgetextraspace"></a><a name="getextraspace"></a>CDockingPanesRow::GetExtraSpace
+## <a name="cdockingpanesrowgetextraspace"></a><a name="getextraspace"></a> CDockingPanesRow:: GetExtraSpace
 
 ```
 int GetExtraSpace() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowgetgroupfrompane"></a><a name="getgroupfrompane"></a>CDockingPanesRow::겟그룹From파인
+## <a name="cdockingpanesrowgetgroupfrompane"></a><a name="getgroupfrompane"></a> CDockingPanesRow:: GetGroupFromPane
 
 ```cpp
 void GetGroupFromPane(
@@ -391,23 +392,23 @@ void GetGroupFromPane(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pBar*<br/>
+진행 *Pbar*<br/>
 
-【인】 *lst*<br/>
+진행 *.lst*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowgetid"></a><a name="getid"></a>CDockingPanesRow::GetID
+## <a name="cdockingpanesrowgetid"></a><a name="getid"></a> CDockingPanesRow:: GetID
 
 ```
 int GetID() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowgetmaxpanesize"></a><a name="getmaxpanesize"></a>CDockingPanesRow::겟맥스파네사이즈
+## <a name="cdockingpanesrowgetmaxpanesize"></a><a name="getmaxpanesize"></a> CDockingPanesRow:: Getmaxesize Esize
 
 ```
 int GetMaxPaneSize(BOOL bSkipHiddenBars = TRUE) const;
@@ -415,73 +416,73 @@ int GetMaxPaneSize(BOOL bSkipHiddenBars = TRUE) const;
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *b스킵히든바*<br/>
+진행 *bSkipHiddenBars*<br/>
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowgetpanecount"></a><a name="getpanecount"></a>CDockingPanesRow::겟파인카운트
+## <a name="cdockingpanesrowgetpanecount"></a><a name="getpanecount"></a> CDockingPanesRow:: Get팬 Ecount
 
 ```
 int GetPaneCount() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowgetpanelist"></a><a name="getpanelist"></a>CDockingPanesRow::GetPaneList
+## <a name="cdockingpanesrowgetpanelist"></a><a name="getpanelist"></a> CDockingPanesRow:: GetPaneList
 
 ```
 const CObList& GetPaneList() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowgetrowalignment"></a><a name="getrowalignment"></a>CDockingPanesRow::GetRow정렬
+## <a name="cdockingpanesrowgetrowalignment"></a><a name="getrowalignment"></a> CDockingPanesRow:: GetRowAlignment
 
 ```
 DWORD GetRowAlignment() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowgetrowheight"></a><a name="getrowheight"></a>CDockingPanesRow::GetRowHeight높이
+## <a name="cdockingpanesrowgetrowheight"></a><a name="getrowheight"></a> CDockingPanesRow:: GetRowHeight
 
 ```
 int GetRowHeight() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowgetrowoffset"></a><a name="getrowoffset"></a>CDockingPanesRow::GetRowoffset
+## <a name="cdockingpanesrowgetrowoffset"></a><a name="getrowoffset"></a> CDockingPanesRow:: GetRowOffset
 
 ```
 int GetRowOffset() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowgetvisiblecount"></a><a name="getvisiblecount"></a>CDockingPanesRow::GetVisibleCount
+## <a name="cdockingpanesrowgetvisiblecount"></a><a name="getvisiblecount"></a> CDockingPanesRow:: GetVisibleCount
 
 ```
 virtual int GetVisibleCount();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowgetwindowrect"></a><a name="getwindowrect"></a>CDockingPanesRow::GetWindowRect
+## <a name="cdockingpanesrowgetwindowrect"></a><a name="getwindowrect"></a> CDockingPanesRow:: GetWindowRect
 
 ```cpp
 void GetWindowRect(CRect& rect) const;
@@ -493,7 +494,7 @@ void GetWindowRect(CRect& rect) const;
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowhaspane"></a><a name="haspane"></a>코킹파네스로우::하스파네
+## <a name="cdockingpanesrowhaspane"></a><a name="haspane"></a> CDockingPanesRow:: HasPane
 
 ```
 BOOL HasPane(CBasePane* pControlBar);
@@ -501,53 +502,53 @@ BOOL HasPane(CBasePane* pControlBar);
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *p컨트롤바*<br/>
+진행 *Pcontrolbar*<br/>
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowisempty"></a><a name="isempty"></a>CDockingPanesRow::비어 있음
+## <a name="cdockingpanesrowisempty"></a><a name="isempty"></a> CDockingPanesRow:: IsEmpty
 
 ```
 virtual BOOL IsEmpty() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowisexclusiverow"></a><a name="isexclusiverow"></a>CDockingPanesRow::Is독점행
+## <a name="cdockingpanesrowisexclusiverow"></a><a name="isexclusiverow"></a> CDockingPanesRow:: IsExclusiveRow
 
 ```
 virtual BOOL IsExclusiveRow() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowishorizontal"></a><a name="ishorizontal"></a>CDockingPanesRow::Is수평
+## <a name="cdockingpanesrowishorizontal"></a><a name="ishorizontal"></a> CDockingPanesRow:: IsHorizontal
 
 ```
 bool IsHorizontal() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowisvisible"></a><a name="isvisible"></a>CDockingPanesRow::가보입니다.
+## <a name="cdockingpanesrowisvisible"></a><a name="isvisible"></a> CDockingPanesRow:: IsVisible
 
 ```
 virtual BOOL IsVisible() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowmove"></a><a name="move"></a>CDockingPanesRow::이동
+## <a name="cdockingpanesrowmove"></a><a name="move"></a> CDockingPanesRow:: Move
 
 ```
 virtual void Move(int nOffset);
@@ -555,11 +556,11 @@ virtual void Move(int nOffset);
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *n오프셋*<br/>
+진행 *Noffset*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowmovepane"></a><a name="movepane"></a>CDockingPanesRow::무브파네
+## <a name="cdockingpanesrowmovepane"></a><a name="movepane"></a> CDockingPanesRow:: movepmov
 
 ```cpp
 void MovePane(
@@ -587,25 +588,25 @@ void MovePane(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *p컨트롤바*<br/>
+진행 *Pcontrolbar*<br/>
 
-【인】 *ptOffset*<br/>
+진행 *Ptoffset*<br/>
 
-【인】 *b스왑컨트롤바*<br/>
+진행 *Bswapcontrolbars*<br/>
 
-【인】 *HDWP*<br/>
+진행 *hdwp*<br/>
 
-【인】 *정류 대상*<br/>
+진행 *rectTarget*<br/>
 
-【인】 *n오프셋*<br/>
+진행 *Noffset*<br/>
 
-【인】 *b앞으로*<br/>
+진행 *Bforward*<br/>
 
-【인】 *nAbsolut오프셋*<br/>
+진행 *nAbsolutOffset*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowonresizepane"></a><a name="onresizepane"></a>CDockingPanesRow::온리사이즈파네
+## <a name="cdockingpanesrowonresizepane"></a><a name="onresizepane"></a> CDockingPanesRow:: OnResizePane
 
 ```
 virtual void OnResizePane(CBasePane* pControlBar);
@@ -613,11 +614,11 @@ virtual void OnResizePane(CBasePane* pControlBar);
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *p컨트롤바*<br/>
+진행 *Pcontrolbar*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowredrawall"></a><a name="redrawall"></a>CDockingPanesRow::다시 그리기 모두
+## <a name="cdockingpanesrowredrawall"></a><a name="redrawall"></a> CDockingPanesRow:: RedrawAll
 
 ```cpp
 void RedrawAll();
@@ -625,7 +626,7 @@ void RedrawAll();
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowremovepane"></a><a name="removepane"></a>CDockingPanesRow::제거파네
+## <a name="cdockingpanesrowremovepane"></a><a name="removepane"></a> CDockingPanesRow:: RemovePane
 
 ```
 virtual void RemovePane(CPane* pControlBar);
@@ -633,11 +634,11 @@ virtual void RemovePane(CPane* pControlBar);
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *p컨트롤바*<br/>
+진행 *Pcontrolbar*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowreplacepane"></a><a name="replacepane"></a>CDockingPanesRow::대체파네
+## <a name="cdockingpanesrowreplacepane"></a><a name="replacepane"></a> CDockingPanesRow:: ReplacePane
 
 ```
 virtual BOOL ReplacePane(
@@ -647,15 +648,15 @@ virtual BOOL ReplacePane(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *pBarOld*<br/>
+진행 *P바 오래*<br/>
 
-【인】 *pBarNew*<br/>
+진행 *P바 새로운*<br/>
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowrepositionpanes"></a><a name="repositionpanes"></a>CDockingPanesRow::재배치파네
+## <a name="cdockingpanesrowrepositionpanes"></a><a name="repositionpanes"></a> CDockingPanesRow:: RepositionPanes
 
 ```
 virtual void RepositionPanes(
@@ -667,17 +668,17 @@ virtual void RepositionPanes(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *정류뉴부모바에어리어*<br/>
+진행 *rectNewParentBarArea*<br/>
 
-【인】 *nSide*<br/>
+진행 *Nside*<br/>
 
-【인】 *b확장*<br/>
+진행 *Bexpand*<br/>
 
-【인】 *n오프셋*<br/>
+진행 *Noffset*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowresize"></a><a name="resize"></a>CDockingPanesRow::크기 조정
+## <a name="cdockingpanesrowresize"></a><a name="resize"></a> CDockingPanesRow:: Resize
 
 ```
 virtual int Resize(int nOffset);
@@ -685,13 +686,13 @@ virtual int Resize(int nOffset);
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *n오프셋*<br/>
+진행 *Noffset*<br/>
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowresizebypanedivider"></a><a name="resizebypanedivider"></a>CDockingPanesRow::크기 조정파네 디바이더
+## <a name="cdockingpanesrowresizebypanedivider"></a><a name="resizebypanedivider"></a> CDockingPanesRow:: ResizeByPaneDivider
 
 ```
 virtual int ResizeByPaneDivider(int /*ignored*/);
@@ -699,13 +700,13 @@ virtual int ResizeByPaneDivider(int /*ignored*/);
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *무시됨*<br/>
+진행 *무시* 됨<br/>
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowscreentoclient"></a><a name="screentoclient"></a>CDockingPanesRow::스크린토클라이언트
+## <a name="cdockingpanesrowscreentoclient"></a><a name="screentoclient"></a> CDockingPanesRow:: ScreenToClient
 
 ```cpp
 void ScreenToClient(CRect& rect) const;
@@ -717,7 +718,7 @@ void ScreenToClient(CRect& rect) const;
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowsetextra"></a><a name="setextra"></a>CDockingPanesRow::세트엑스트라
+## <a name="cdockingpanesrowsetextra"></a><a name="setextra"></a> CDockingPanesRow:: SetExtra
 
 ```cpp
 void SetExtra(
@@ -727,13 +728,13 @@ void SetExtra(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *n엑스트라스페이스*<br/>
+진행 *nExtraSpace*<br/>
 
-【인】 *행엑스트라정렬*<br/>
+진행 *rowExtraAlign*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowshowdocksiterow"></a><a name="showdocksiterow"></a>CDockingPanesRow::쇼독사이트로우
+## <a name="cdockingpanesrowshowdocksiterow"></a><a name="showdocksiterow"></a> CDockingPanesRow:: ShowDockSiteRow
 
 ```
 virtual void ShowDockSiteRow(
@@ -743,13 +744,13 @@ virtual void ShowDockSiteRow(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *bShow*<br/>
+진행 *Bshow*<br/>
 
-【인】 *bDelay*<br/>
+진행 *Bdelay*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowshowpane"></a><a name="showpane"></a>도킹파네스로우::쇼파네
+## <a name="cdockingpanesrowshowpane"></a><a name="showpane"></a> CDockingPanesRow:: ShowPane
 
 ```
 virtual BOOL ShowPane(
@@ -760,17 +761,17 @@ virtual BOOL ShowPane(
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *p컨트롤바*<br/>
+진행 *Pcontrolbar*<br/>
 
-【인】 *bShow*<br/>
+진행 *Bshow*<br/>
 
-【인】 *bDelay*<br/>
+진행 *Bdelay*<br/>
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="cdockingpanesrowupdatevisiblestate"></a><a name="updatevisiblestate"></a>CDockingPanesRow::업데이트가 보이는 상태
+## <a name="cdockingpanesrowupdatevisiblestate"></a><a name="updatevisiblestate"></a> CDockingPanesRow:: UpdateVisibleState
 
 ```
 virtual void UpdateVisibleState(BOOL bDelay);
@@ -778,14 +779,14 @@ virtual void UpdateVisibleState(BOOL bDelay);
 
 ### <a name="parameters"></a>매개 변수
 
-【인】 *bDelay*<br/>
+진행 *Bdelay*<br/>
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
-[CDockSite Class](../../mfc/reference/cdocksite-class.md)<br/>
+[CDockSite 클래스](../../mfc/reference/cdocksite-class.md)<br/>
 [CPane 클래스](../../mfc/reference/cpane-class.md)

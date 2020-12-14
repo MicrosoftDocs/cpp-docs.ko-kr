@@ -1,18 +1,19 @@
 ---
+description: Memory_resource 클래스에 대해 자세히 알아보세요.
 title: memory_resource 클래스
 ms.date: 11/04/2016
 f1_keywords:
 - memory_resource/std::memory_resource
 helpviewer_keywords:
 - std::memory_resource
-ms.openlocfilehash: 637bc6a78308fcbdce6af96e65e41bde1bb84c84
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 5b4cf5171f9dd062374171d50daaf71c61523d67
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68268635"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183934"
 ---
-# <a name="memoryresource-class"></a>memory_resource 클래스
+# <a name="memory_resource-class"></a>memory_resource 클래스
 
 ## <a name="syntax"></a>구문
 

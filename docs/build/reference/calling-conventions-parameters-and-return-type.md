@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 호출 규칙, 매개 변수 및 반환 형식'
 title: 호출 규칙, 매개 변수, 반환 형식
 ms.date: 02/13/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - helper functions, calling conventions
 - helper functions, return types
 ms.assetid: 0ffa4558-6005-4803-be95-7a8ec8837660
-ms.openlocfilehash: 8813bab0cb55aa57792d0031433d96eefb095da4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f840ecbe3364f293e9445239984ad375eed48aac
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223917"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97182530"
 ---
 # <a name="calling-conventions-parameters-and-return-type"></a>호출 규칙, 매개 변수, 반환 형식
 
@@ -27,7 +28,7 @@ FARPROC WINAPI __delayLoadHelper2(
 ### <a name="parameters"></a>매개 변수
 
 *pidd*<br/>
-**`const`** `ImgDelayDescr` 다양 한 가져오기 관련 데이터의 오프셋, 바인딩 정보에 대 한 타임 스탬프 및 설명자 콘텐츠에 대 한 추가 정보를 제공 하는 특성 집합을 포함 하는에 대 한 포인터입니다. 현재 `dlattrRva` 설명자의 주소가 상대 가상 주소 임을 나타내는 특성은 하나 뿐입니다. 자세한 내용은 *delayimp.lib*의 선언을 참조 하세요.
+**`const`** `ImgDelayDescr` 다양 한 가져오기 관련 데이터의 오프셋, 바인딩 정보에 대 한 타임 스탬프 및 설명자 콘텐츠에 대 한 추가 정보를 제공 하는 특성 집합을 포함 하는에 대 한 포인터입니다. 현재 `dlattrRva` 설명자의 주소가 상대 가상 주소 임을 나타내는 특성은 하나 뿐입니다. 자세한 내용은 *delayimp.lib* 의 선언을 참조 하세요.
 
 구조체에 대 한 정의는 `PCImgDelayDescr` [구조체 및 상수 정의](structure-and-constant-definitions.md)를 참조 하세요.
 
@@ -54,7 +55,7 @@ FARPROC WINAPI __delayLoadHelper2(
 
 도우미 루틴을 알림 후크로 사용하지 않으려는 경우에는 지연 로드 도우미의 반환 값을 전달된 함수 포인터 위치에 저장해야 합니다. 이러한 경우 사용자 코드가 반환할 적절한 함수 포인터 찾기를 담당합니다. 그러면 링커가 생성한 썽크 코드가 해당 반환 값을 가져오기의 실제 대상으로 인식하여 해당 대상으로 직접 이동합니다.
 
-## <a name="sample"></a>예제
+## <a name="sample"></a>샘플
 
 다음 코드는 간단한 후크 함수를 구현하는 방법을 보여줍니다.
 

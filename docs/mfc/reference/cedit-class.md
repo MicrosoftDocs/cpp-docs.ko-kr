@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CEdit 클래스'
 title: CEdit Class
 ms.date: 09/12/2018
 f1_keywords:
@@ -94,12 +95,12 @@ helpviewer_keywords:
 - CEdit [MFC], ShowBalloonTip
 - CEdit [MFC], Undo
 ms.assetid: b1533c30-7f10-4663-88d3-8b7f2c9f7024
-ms.openlocfilehash: 0e15472ddaad214d575a7479680454ae6b4d3178
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 8dbf5ffd05473720682703a9f309f8483591f143
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561624"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184688"
 ---
 # <a name="cedit-class"></a>CEdit Class
 
@@ -115,13 +116,13 @@ class CEdit : public CWnd
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CEdit:: CEdit](#cedit)|`CEdit`컨트롤 개체를 생성 합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CEdit:: CanUndo](#canundo)|편집 제어 작업을 실행 취소할 수 있는지 여부를 결정 합니다.|
 |[CEdit:: CharFromPos](#charfrompos)|지정 된 위치에 가장 가까운 문자에 대 한 줄 및 문자 인덱스를 검색 합니다.|
@@ -239,7 +240,7 @@ class CEdit : public CWnd
 BOOL CanUndo() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 멤버 함수를 호출 하 여 마지막 편집 작업을 실행 취소할 수 있는 경우 0이 아닌 `Undo` 값이 고, 실행 취소할 수 없으면 0입니다.
 
@@ -280,7 +281,7 @@ int CharFromPos(CPoint pt) const;
 *pt*<br/>
 이 개체의 클라이언트 영역에 있는 점의 좌표 `CEdit` 입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 하위 단어의 문자 인덱스 및 상위 단어의 줄 인덱스입니다.
 
@@ -357,7 +358,7 @@ virtual BOOL Create(
 *nID*<br/>
 편집 컨트롤의 ID를 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 초기화에 성공 하면 0이 아닌 값입니다. 그렇지 않으면 0입니다.
 
@@ -438,7 +439,7 @@ BOOL FmtLines(BOOL bAddEOL);
 *bAddEOL*<br/>
 소프트 줄 바꿈 문자를 삽입할지 여부를 지정 합니다. TRUE 값은 문자를 삽입 합니다. FALSE 값은 해당 값을 제거 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 서식 지정이 발생 하는 경우 0이 아닙니다. 그렇지 않으면 0입니다.
 
@@ -476,7 +477,7 @@ CString GetCueBanner() const;
 *cchText*<br/>
 진행 받을 수 있는 문자 수입니다. 이 수는 NULL 종결 문자를 포함 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 첫 번째 오버 로드의 경우 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -494,7 +495,7 @@ CString GetCueBanner() const;
 int GetFirstVisibleLine() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 표시 되는 맨 위 줄의 인덱스 (0부터 시작)입니다. 한 줄 편집 컨트롤의 경우 반환 값은 0입니다.
 
@@ -514,7 +515,7 @@ int GetFirstVisibleLine() const;
 HLOCAL GetHandle() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 편집 컨트롤의 콘텐츠를 포함 하는 버퍼를 식별 하는 로컬 메모리 핸들입니다. 한 줄 편집 컨트롤에 메시지를 보내는 것과 같은 오류가 발생 하는 경우 반환 값은 0입니다.
 
@@ -553,7 +554,7 @@ BOOL GetHighlight(
 *그래픽 끝*\
 제한이 강조 표시 된 텍스트 범위에서 마지막 문자의 0부터 시작 하는 인덱스입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -569,7 +570,7 @@ BOOL GetHighlight(
 UINT GetLimitText() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 개체의 현재 텍스트 제한 (TCHARs) `CEdit` 입니다.
 
@@ -588,7 +589,7 @@ UINT GetLimitText() const;
 
 ## <a name="ceditgetline"></a><a name="getline"></a> CEdit:: GetLine
 
-편집 컨트롤에서 텍스트 줄을 검색 하 고 *lpszbuffer 변수가*에 배치 하려면이 함수를 호출 합니다.
+편집 컨트롤에서 텍스트 줄을 검색 하 고 *lpszbuffer 변수가* 에 배치 하려면이 함수를 호출 합니다.
 
 ```
 int GetLine(
@@ -612,7 +613,7 @@ int GetLine(
 *nMaxLength*<br/>
 버퍼에 복사할 수 있는 최대 TCHAR.H 문자 수를 지정 합니다. `GetLine` 는 Windows에 대 한 호출을 수행 하기 전에 *lpszbuffer 변수가* 의 첫 번째 단어에이 값을 배치 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 실제로 복사된 문자 수입니다. *Nindex* 로 지정 된 줄 번호가 편집 컨트롤의 줄 수보다 큰 경우 반환 값은 0입니다.
 
@@ -634,7 +635,7 @@ int GetLine(
 int GetLineCount() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 여러 줄 편집 컨트롤의 줄 수를 포함 하는 정수입니다. 편집 컨트롤에 입력 된 텍스트가 없는 경우 반환 값은 1입니다.
 
@@ -656,7 +657,7 @@ int GetLineCount() const;
 DWORD GetMargins() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 하위 단어에서 왼쪽 여백의 너비 이며, 상위 단어에서 오른쪽 여백의 너비입니다.
 
@@ -681,7 +682,7 @@ DWORD GetMargins() const;
 BOOL GetModify() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 편집 컨트롤 내용이 수정 되었으면 0이 아닌 값입니다. 변경 되지 않은 상태로 유지 되는 경우 0입니다.
 
@@ -703,7 +704,7 @@ Windows는 편집 컨트롤의 내용이 변경 되었는지 여부를 나타내
 TCHAR GetPasswordChar() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 사용자가 입력 한 문자 대신 표시할 문자를 지정 합니다. 암호 문자가 없는 경우 반환 값은 NULL입니다.
 
@@ -762,7 +763,7 @@ void GetSel(
 *nEndChar*<br/>
 현재 선택 영역의 끝을 지 나 첫 번째 nonselected 문자의 위치를 받는 정수에 대 한 참조입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 DWORD를 반환 하는 버전은 하위 단어에서 시작 위치를 포함 하는 값을 반환 하 고, 상위 단어에서 선택 영역 끝 다음의 첫 번째 nonselected 문자 위치를 반환 합니다.
 
@@ -782,7 +783,7 @@ DWORD를 반환 하는 버전은 하위 단어에서 시작 위치를 포함 하
 BOOL HideBalloonTip();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -801,7 +802,7 @@ void LimitText(int nChars = 0);
 ### <a name="parameters"></a>매개 변수
 
 *nChars*<br/>
-사용자가 입력할 수 있는 텍스트의 길이 (TCHARs)를 지정 합니다. 이 매개 변수가 0 이면 텍스트 길이가 UINT_MAX 바이트로 설정 됩니다. 기본 동작입니다.
+사용자가 입력할 수 있는 텍스트의 길이 (TCHARs)를 지정 합니다. 이 매개 변수가 0 이면 텍스트 길이가 UINT_MAX 바이트로 설정 됩니다. 이것은 기본적인 동작입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -829,9 +830,9 @@ int LineFromChar(int nIndex = -1) const;
 *nIndex*<br/>
 편집 컨트롤의 텍스트에 있는 원하는 문자에 대 한 0부터 시작 하는 인덱스 값을 포함 하거나-1을 포함 합니다. *Nindex* 가-1 인 경우 현재 줄, 즉 캐럿이 포함 된 줄을 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-*Nindex*로 지정 된 문자 인덱스를 포함 하는 줄의 줄 번호 (0부터 시작)입니다. *Nindex* 가-1 이면 선택의 첫 문자가 포함 된 줄 번호가 반환 됩니다. 선택 항목이 없으면 현재 줄 번호가 반환 됩니다.
+*Nindex* 로 지정 된 문자 인덱스를 포함 하는 줄의 줄 번호 (0부터 시작)입니다. *Nindex* 가-1 이면 선택의 첫 문자가 포함 된 줄 번호가 반환 됩니다. 선택 항목이 없으면 현재 줄 번호가 반환 됩니다.
 
 ### <a name="remarks"></a>설명
 
@@ -858,7 +859,7 @@ int LineIndex(int nLine = -1) const;
 *N 줄*<br/>
 편집 컨트롤의 텍스트에 있는 원하는 줄의 인덱스 값을 포함 하거나-1을 포함 합니다. *Nline* 이-1 이면 캐럿을 포함 하는 줄 인 현재 줄을 지정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 *Nline* 에 지정 된 줄의 문자 인덱스 이거나, 지정 된 줄 번호가 편집 컨트롤의 줄 수보다 크면-1입니다.
 
@@ -887,7 +888,7 @@ int LineLength(int nLine = -1) const;
 *N 줄*<br/>
 해당 길이를 검색할 줄에 있는 문자의 인덱스 (0부터 시작)입니다. 기본값은 -1입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 한 줄 편집 컨트롤의 경우 반환 값은 편집 컨트롤에 있는 텍스트의 길이 (TCHARs)입니다.
 
@@ -970,9 +971,9 @@ CPoint PosFromChar(UINT nChar) const;
 *nChar*<br/>
 지정 된 문자의 인덱스 (0부터 시작)입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-*NChar*로 지정 된 문자의 왼쪽 위 모퉁이에 대 한 좌표입니다.
+*NChar* 로 지정 된 문자의 왼쪽 위 모퉁이에 대 한 좌표입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -989,7 +990,7 @@ CPoint PosFromChar(UINT nChar) const;
 
 ## <a name="ceditreplacesel"></a><a name="replacesel"></a> CEdit:: ReplaceSel
 
-편집 컨트롤의 현재 선택 항목을 *lpszNewText*에 지정 된 텍스트로 바꾸려면이 함수를 호출 합니다.
+편집 컨트롤의 현재 선택 항목을 *lpszNewText* 에 지정 된 텍스트로 바꾸려면이 함수를 호출 합니다.
 
 ```cpp
 void ReplaceSel(LPCTSTR lpszNewText, BOOL bCanUndo = FALSE);
@@ -1039,7 +1040,7 @@ TRUE 이면 컨트롤에 포커스가 있을 때에도 큐 배너가 그려집�
 
 기본값은 FALSE입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -1207,7 +1208,7 @@ void SetPasswordChar(TCHAR ch);
 
 이 멤버 함수는 여러 줄 편집 컨트롤에는 영향을 주지 않습니다.
 
-`SetPasswordChar`멤버 함수를 호출 하면에서 `CEdit` *ch*로 지정 된 문자를 사용 하 여 표시 되는 모든 문자를 다시 그립니다.
+`SetPasswordChar`멤버 함수를 호출 하면에서 `CEdit` *ch* 로 지정 된 문자를 사용 하 여 표시 되는 모든 문자를 다시 그립니다.
 
 [ES_PASSWORD](styles-used-by-mfc.md#edit-styles) 스타일을 사용 하 여 편집 컨트롤을 만드는 경우 기본 암호 문자는 별표 ()로 설정 됩니다 <strong>\*</strong> . `SetPasswordChar` *Ch* 를 0으로 설정 하 여가 호출 되는 경우이 스타일은 제거 됩니다.
 
@@ -1230,7 +1231,7 @@ BOOL SetReadOnly(BOOL bReadOnly = TRUE);
 *bReadOnly*<br/>
 편집 컨트롤의 읽기 전용 상태를 설정 하거나 제거할지 여부를 지정 합니다. TRUE 값은 상태를 읽기 전용으로 설정 합니다. FALSE 값은 상태를 읽기/쓰기로 설정 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 작업이 성공 하면 0이 아닌 값이 고, 오류가 발생 하는 경우 0입니다.
 
@@ -1360,12 +1361,12 @@ BOOL SetTabStops(
 모든 *cxEachStop* 대화 상자 단위에서 탭 정지를 설정 하도록 지정 합니다.
 
 *nTabStops*<br/>
-*RgTabStops*에 포함 된 탭 정지의 수를 지정 합니다. 이 수는 1 보다 커야 합니다.
+*RgTabStops* 에 포함 된 탭 정지의 수를 지정 합니다. 이 수는 1 보다 커야 합니다.
 
 *rgTabStops*<br/>
 대화 상자 단위에서 탭 정지를 지정 하 여 부호 없는 정수의 배열을 가리킵니다. 대화 상자 단위는 가로 또는 세로 거리입니다. 한 개의 가로 대화 상자 단위는 현재 대화 상자 기본 너비 단위의 4 번째와 같으며 세로 대화 상자의 1 개는 현재 대화 상자 기본 높이 단위의 8-8과 같습니다. 대화 상자 기본 단위는 현재 시스템 글꼴의 높이와 너비를 기준으로 계산 됩니다. `GetDialogBaseUnits`Windows 함수는 현재 대화 상자 기본 단위 (픽셀)를 반환 합니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 탭이 설정 된 경우 0이 아닙니다. 그렇지 않으면 0입니다.
 
@@ -1412,7 +1413,7 @@ BOOL ShowBalloonTip(
 *ttiIcon*\
 진행 풍선 설명에 연결할 아이콘의 유형을 지정 하는 **INT** 입니다. 기본값은 TTI_NONE입니다. 자세한 내용은 `ttiIcon` [EDITBALLOONTIP](/windows/win32/api/commctrl/ns-commctrl-editballoontip) 구조체의 멤버를 참조 하십시오.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
@@ -1440,7 +1441,7 @@ BOOL ShowBalloonTip(
 BOOL Undo();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 한 줄 편집 컨트롤의 경우 반환 값은 항상 0이 아닙니다. 여러 줄 편집 컨트롤의 경우 실행 취소 작업이 성공 하면 0이 아닌 값이 반환 되 고, 실행 취소 작업이 실패 하는 경우 0이 반환 됩니다.
 

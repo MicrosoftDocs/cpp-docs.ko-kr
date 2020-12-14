@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 레코드 집합: 레코드 집합 만들기 및 닫기 (ODBC)'
 title: '레코드 집합: 레코드 집합 만들기 및 닫기(ODBC)'
 ms.date: 05/09/2019
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - ODBC recordsets, closing
 - ODBC recordsets, opening
 ms.assetid: 8d2aac23-4396-4ce2-8c60-5ecf1b360d3d
-ms.openlocfilehash: 1ff6f3050ff8ca0be746b91216300632323dcd85
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a8c79afe483ab9fcd03b2102ec93d6574092acf3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216520"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97186105"
 ---
 # <a name="recordset-creating-and-closing-recordsets-odbc"></a>레코드 집합: 레코드 집합 만들기 및 닫기(ODBC)
 

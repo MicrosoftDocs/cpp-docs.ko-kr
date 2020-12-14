@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CDocObjectServer 클래스'
 title: CDocObjectServer 클래스
 ms.date: 09/12/2018
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - CDocObjectServer [MFC], OnApplyViewState
 - CDocObjectServer [MFC], OnSaveViewState
 ms.assetid: 18cd0dff-0616-4472-b8d9-66c081bc383a
-ms.openlocfilehash: f415df35b13e50eee092f87eca0627e5cf143720
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 5a87363fef66a4819fc8efd504da96398cf3c89e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81753288"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184948"
 ---
 # <a name="cdocobjectserver-class"></a>CDocObjectServer 클래스
 
@@ -37,33 +38,33 @@ class CDocObjectServer : public CCmdTarget
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[CDocObjectServer::CDocObjectServer](#cdocobjectserver)|`CDocObjectServer` 개체를 생성합니다.|
+|[CDocObjectServer:: CDocObjectServer](#cdocobjectserver)|`CDocObjectServer` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[CDocObjectServer::활성화DocObject](#activatedocobject)|문서 개체 서버를 활성화하지만 표시되지는 않습니다.|
+|[CDocObjectServer:: Docobject](#activatedocobject)|문서 개체 서버를 활성화 하지만 표시 하지는 않습니다.|
 
 ### <a name="protected-methods"></a>Protected 메서드
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|[CDocObjectServer::온인스로이스뷰](#onactivateview)|DocObject 보기를 표시합니다.|
-|[CDocObjectServer::OnApplyViewState](#onapplyviewstate)|DocObject 보기의 상태를 복원합니다.|
-|[CDocObjectServer::온세이브뷰스테이트](#onsaveviewstate)|DocObject 보기의 상태를 저장합니다.|
+|[CDocObjectServer:: OnActivateView](#onactivateview)|DocObject 뷰를 표시 합니다.|
+|[CDocObjectServer:: OnApplyViewState](#onapplyviewstate)|DocObject 뷰의 상태를 복원 합니다.|
+|[CDocObjectServer:: OnSaveViewState](#onsaveviewstate)|DocObject 뷰의 상태를 저장 합니다.|
 
 ## <a name="remarks"></a>설명
 
-`CDocObjectServer`에서 파생 `CCmdTarget` 되고 `COleServerDoc` 인터페이스를 노출 하기 위해 밀접 하 게 작동 합니다.
+`CDocObjectServer` 는에서 파생 되며 `CCmdTarget` `COleServerDoc` 인터페이스를 노출 하는 데와 긴밀 하 게 연동 됩니다.
 
-DocObject 서버 문서에는 DocObject 항목에 대한 서버 인터페이스를 나타내는 [CDocObjectServerItem](../../mfc/reference/cdocobjectserveritem-class.md) 개체가 포함될 수 있습니다.
+DocObject 서버 문서는 DocObject 항목에 대 한 서버 인터페이스를 나타내는 [CDocObjectServerItem](../../mfc/reference/cdocobjectserveritem-class.md) 개체를 포함할 수 있습니다.
 
-DocObject 서버를 사용자 지정하려면 뷰 `CDocObjectServer` 설정 기능, [OnActivateView](#onactivateview), [OnApplyViewState](#onapplyviewstate)및 [OnSaveViewState](#onsaveviewstate)에서 고유한 클래스를 파생하고 재정의합니다. 프레임워크 호출에 대한 응답으로 클래스의 새 인스턴스를 제공해야 합니다.
+DocObject 서버를 사용자 지정 하려면에서 고유한 클래스를 파생 하 `CDocObjectServer` 고 해당 뷰 설정 함수, [Onactivateview](#onactivateview), [Onactivateview](#onapplyviewstate)및 [onactivateview](#onsaveviewstate)를 재정의 합니다. 프레임 워크 호출에 대 한 응답으로 클래스의 새 인스턴스를 제공 해야 합니다.
 
-DocObjects에 대한 자세한 내용은 *MFC 참조의* [CDocObjectServerItem](../../mfc/reference/cdocobjectserveritem-class.md) 및 [COleCmdUI를](../../mfc/reference/colecmdui-class.md) 참조하십시오.
+DocObjects에 대 한 자세한 내용은 *MFC 참조* 의 [CDocObjectServerItem](../../mfc/reference/cdocobjectserveritem-class.md) 및 [COleCmdUI](../../mfc/reference/colecmdui-class.md) 를 참조 하세요.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -75,11 +76,11 @@ DocObjects에 대한 자세한 내용은 *MFC 참조의* [CDocObjectServerItem](
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxdocob.h
+**헤더:** afxdocob
 
-## <a name="cdocobjectserveractivatedocobject"></a><a name="activatedocobject"></a>CDocObjectServer::활성화DocObject
+## <a name="cdocobjectserveractivatedocobject"></a><a name="activatedocobject"></a> CDocObjectServer:: Docobject
 
-이 함수를 호출하여 문서 개체 서버를 활성화(표시되지는 않음)합니다.
+문서 개체 서버를 활성화 (표시 하지 않음) 하려면이 함수를 호출 합니다.
 
 ```cpp
 void ActivateDocObject();
@@ -87,11 +88,11 @@ void ActivateDocObject();
 
 ### <a name="remarks"></a>설명
 
-`ActivateDocObject`의 `IOleDocumentSite` `ActivateMe` 메서드를 호출하지만 [CDocObjectServer::OnActivateView에](#onactivateview)대한 호출에서 제공된 뷰를 설정하고 표시하는 방법에 대한 특정 지침을 기다리기 때문에 뷰가 표시되지 않습니다.
+`ActivateDocObject` 는 `IOleDocumentSite` 의 `ActivateMe` 메서드를 호출 하지만 뷰를 설정 하 고 표시 하는 방법에 대 한 특정 지침이 [CDocObjectServer:: sign-on view](#onactivateview)에 대 한 호출에 제공 될 때까지 대기 하므로 뷰를 표시 하지 않습니다.
 
-함께 `ActivateDocObject` 활성화하고 `OnActivateView` DocObject 보기를 표시합니다. DocObject 활성화는 다른 종류의 OLE 내부 활성화와 다릅니다. DocObject 활성화는 내부 해치 테두리 및 개체 장식(예: 크기 조정 핸들)을 표시하고, 개체 범위 함수를 무시하고, 뷰 사각형 내에서 스크롤 막대를 그리는 것을 우회합니다(일반 내부 활성화와 같이).
+함께를 `ActivateDocObject` `OnActivateView` 활성화 하 고 docobject 뷰를 표시 합니다. DocObject 활성화는 다른 종류의 OLE 내부 활성화와 다릅니다. DocObject 활성화는 내부 해치 테두리와 개체 장식 (예: 크기 조정 핸들)의 표시를 우회 하 고, 개체 익스텐트 함수를 무시 하 고, 뷰 사각형 안에 그리기를 그리는 것과는 반대로 (일반적인 내부 활성화의 경우 처럼) 스크롤 막대를 그립니다.
 
-## <a name="cdocobjectservercdocobjectserver"></a><a name="cdocobjectserver"></a>CDocObjectServer::CDocObjectServer
+## <a name="cdocobjectservercdocobjectserver"></a><a name="cdocobjectserver"></a> CDocObjectServer:: CDocObjectServer
 
 `CDocObjectServer` 개체를 생성하고 초기화합니다.
 
@@ -103,35 +104,35 @@ explicit CDocObjectServer(
 
 ### <a name="parameters"></a>매개 변수
 
-*p 소유자*<br/>
-DocObject 서버의 클라이언트인 클라이언트 사이트 문서에 대한 포인터입니다.
+*pOwner*<br/>
+DocObject server에 대 한 클라이언트 사이트 문서에 대 한 포인터입니다.
 
 *pDocSite*<br/>
-컨테이너에 의해 `IOleDocumentSite` 구현된 인터페이스에 대한 포인터입니다.
+컨테이너에 의해 구현 되는 인터페이스에 대 한 포인터 `IOleDocumentSite` 입니다.
 
 ### <a name="remarks"></a>설명
 
-DocObject가 활성화되어 있는 경우 클라이언트 `IOleDocumentSite`사이트 OLE 인터페이스()는 DocObject 서버가 해당 클라이언트(컨테이너)와 통신할 수 있도록 하는 것입니다. DocObject 서버가 활성화되면 먼저 컨테이너가 인터페이스를 `IOleDocumentSite` 구현하는지 확인합니다. 이 경우 [COleServerDoc::GetDocObjectServer는](../../mfc/reference/coleserverdoc-class.md#getdocobjectserver) 컨테이너가 DocObjects를 지원하는지 확인하기 위해 호출됩니다. 기본적으로 NULL을 `GetDocObjectServer` 반환합니다. 컨테이너에 대한 `COleServerDoc::GetDocObjectServer` 포인터와 `CDocObjectServer` 해당 `IOleDocumentSite` 인터페이스를 생성자의 인수로 사용하여 새 개체 또는 파생 된 개체를 생성하려면 재정의해야 합니다. `COleServerDoc`
+DocObject가 활성 상태 이면 클라이언트 사이트 OLE 인터페이스 ()를 `IOleDocumentSite` 사용 하 여 docobject 서버가 클라이언트 (컨테이너)와 통신할 수 있습니다. DocObject 서버를 활성화 하면 먼저 컨테이너에서 인터페이스를 구현 하는지 확인 `IOleDocumentSite` 합니다. 이 경우 [COleServerDoc:: GetDocObjectServer](../../mfc/reference/coleserverdoc-class.md#getdocobjectserver) 를 호출 하 여 컨테이너가 DocObjects를 지원 하는지 확인 합니다. 기본적으로는 `GetDocObjectServer` NULL을 반환 합니다. `COleServerDoc::GetDocObjectServer` `CDocObjectServer` 컨테이너 및 해당 인터페이스에 대 한 포인터를 `COleServerDoc` 생성자에 대 한 인수로 사용 하 여 고유한 새 개체 또는 파생 개체를 생성 하려면를 재정의 해야 합니다 `IOleDocumentSite` .
 
-## <a name="cdocobjectserveronactivateview"></a><a name="onactivateview"></a>CDocObjectServer::온인스로이스뷰
+## <a name="cdocobjectserveronactivateview"></a><a name="onactivateview"></a> CDocObjectServer:: OnActivateView
 
-이 함수를 호출하여 DocObject 보기를 표시합니다.
+이 함수를 호출 하 여 DocObject 뷰를 표시 합니다.
 
 ```
 virtual HRESULT OnActivateView();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-오류 또는 경고 값을 반환합니다. 기본적으로 성공하면 NOERROR를 반환합니다. 그렇지 않으면, E_FAIL.
+오류 또는 경고 값을 반환 합니다. 성공 하면 기본적으로 NOERROR를 반환 합니다. 그렇지 않으면 E_FAIL 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 함수는 내부 프레임 창을 만들고, 뷰 내에서 스크롤 막대를 그리고, 서버가 컨테이너와 공유하는 메뉴를 설정하고, 프레임 컨트롤을 추가하고, 활성 개체를 설정한 다음, 마지막으로 내부 프레임 창을 표시하고 포커스를 설정합니다.
+이 함수는 내부 프레임 창을 만들고, 뷰 내에 스크롤 막대를 그리고, 서버가 컨테이너와 공유 하는 메뉴를 설정 하 고, 프레임 컨트롤을 추가 하 고, 활성 개체를 설정 하 고, 마지막으로 내부 프레임 창을 표시 하 고 포커스를 설정 합니다.
 
-## <a name="cdocobjectserveronapplyviewstate"></a><a name="onapplyviewstate"></a>CDocObjectServer::OnApplyViewState
+## <a name="cdocobjectserveronapplyviewstate"></a><a name="onapplyviewstate"></a> CDocObjectServer:: OnApplyViewState
 
-이 함수를 재정의하여 DocObject 뷰의 상태를 복원합니다.
+DocObject 뷰의 상태를 복원 하려면이 함수를 재정의 합니다.
 
 ```
 virtual void OnApplyViewState(CArchive& ar);
@@ -140,17 +141,17 @@ virtual void OnApplyViewState(CArchive& ar);
 ### <a name="parameters"></a>매개 변수
 
 *ar*<br/>
-뷰 `CArchive` 상태를 직렬화할 개체입니다.
+`CArchive`뷰 상태를 serialize 할 개체입니다.
 
 ### <a name="remarks"></a>설명
 
-이 함수는 뷰가 인스턴스화 후 처음으로 표시될 때 호출됩니다. `OnApplyViewState`View에서 이전에 `CArchive` [OnSaveViewState](#onsaveviewstate)로 저장된 개체의 데이터에 따라 자체 초기화하도록 지시합니다. 컨테이너가 `CArchive` 뷰 상태 데이터를 어떤 식으로든 해석하려고 시도하지 않기 때문에 뷰는 개체의 데이터의 유효성을 검사해야 합니다.
+이 함수는 뷰가 인스턴스화된 후 처음으로 표시 될 때 호출 됩니다. `OnApplyViewState``CArchive` [Onsaveviewstate](#onsaveviewstate)를 사용 하 여 이전에 저장 한 개체의 데이터에 따라 자신을 다시 초기화 하도록 지시 합니다. `CArchive`컨테이너에서 뷰 상태 데이터를 해석 하려고 시도 하지 않으므로 뷰가 개체의 데이터 유효성을 검사 해야 합니다.
 
-뷰의 `OnSaveViewState` 상태와 관련된 영구 정보를 저장하는 데 사용할 수 있습니다. 정보를 저장하기 `OnSaveViewState` 위해 재정의하는 경우 해당 `OnApplyViewState` 정보를 읽고 새로 활성화될 때 뷰에 적용하도록 재정의할 수 있습니다.
+를 사용 `OnSaveViewState` 하 여 보기 상태와 관련 한 영구 정보를 저장할 수 있습니다. 을 재정의 하 여 정보를 저장 하는 경우를 재정의 하 여 `OnSaveViewState` `OnApplyViewState` 해당 정보를 읽고 새로 활성화 될 때 보기에 적용할 수 있습니다.
 
-## <a name="cdocobjectserveronsaveviewstate"></a><a name="onsaveviewstate"></a>CDocObjectServer::온세이브뷰스테이트
+## <a name="cdocobjectserveronsaveviewstate"></a><a name="onsaveviewstate"></a> CDocObjectServer:: OnSaveViewState
 
-이 함수를 재정의하여 DocObject 보기에 대한 추가 상태 정보를 저장합니다.
+이 함수를 재정의 하 여 DocObject 보기에 대 한 추가 상태 정보를 저장 합니다.
 
 ```
 virtual void OnSaveViewState(CArchive& ar);
@@ -159,16 +160,16 @@ virtual void OnSaveViewState(CArchive& ar);
 ### <a name="parameters"></a>매개 변수
 
 *ar*<br/>
-뷰 `CArchive` 상태가 직렬화되는 개체입니다.
+`CArchive`뷰 상태가 serialize 되는 개체입니다.
 
 ### <a name="remarks"></a>설명
 
-상태에는 뷰 유형, 확대/축소 비율, 삽입 및 선택 점 등과 같은 속성이 포함될 수 있습니다. 컨테이너는 일반적으로 뷰를 비활성화하기 전에 이 함수를 호출합니다. 저장된 상태는 나중에 [OnApplyViewState](#onapplyviewstate)를 통해 복원할 수 있습니다.
+상태에는 보기 유형, 확대/축소 비율, 삽입 및 선택 지점과 같은 속성이 포함 될 수 있습니다. 컨테이너는 일반적으로 뷰를 비활성화 하기 전에이 함수를 호출 합니다. 저장 된 상태는 나중에 [Onapplyviewstate](#onapplyviewstate)를 통해 복원할 수 있습니다.
 
-뷰의 `OnSaveViewState` 상태와 관련된 영구 정보를 저장하는 데 사용할 수 있습니다. 정보를 저장하기 `OnSaveViewState` 위해 재정의하는 경우 해당 `OnApplyViewState` 정보를 읽고 새로 활성화될 때 뷰에 적용하도록 재정의할 수 있습니다.
+를 사용 `OnSaveViewState` 하 여 보기 상태와 관련 한 영구 정보를 저장할 수 있습니다. 을 재정의 하 여 정보를 저장 하는 경우를 재정의 하 여 `OnSaveViewState` `OnApplyViewState` 해당 정보를 읽고 새로 활성화 될 때 보기에 적용할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [CCmdTarget 클래스](../../mfc/reference/ccmdtarget-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
-[CDocObjectServer항목 클래스](../../mfc/reference/cdocobjectserveritem-class.md)
+[CDocObjectServerItem 클래스](../../mfc/reference/cdocobjectserveritem-class.md)

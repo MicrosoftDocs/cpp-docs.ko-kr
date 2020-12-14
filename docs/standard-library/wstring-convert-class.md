@@ -1,4 +1,5 @@
 ---
+description: Wstring_convert 클래스에 대해 자세히 알아보세요.
 title: wstring_convert 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - std::wstring_convert [C++], converted
 - std::wstring_convert [C++], state
 ms.assetid: e34f5b65-d572-4bdc-ac69-20778712e376
-ms.openlocfilehash: 01754ca4239d89a64fdb67a85e82b90c5a24872d
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 53c3e311967295294d158bb0342d365d45f5e031
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88560754"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97187743"
 ---
 # <a name="wstring_convert-class"></a>wstring_convert 클래스
 
@@ -86,7 +87,7 @@ class wstring_convert
 |[from_bytes](#from_bytes)|바이트 문자열을 와이드 문자열로 변환합니다.|
 |[to_bytes](#to_bytes)|와이드 문자열을 바이트 문자열로 변환합니다.|
 |[converted](#converted)|성공적인 변환 수를 반환합니다.|
-|[상태](#state)|변환의 상태를 나타내는 개체를 반환합니다.|
+|[state](#state)|변환의 상태를 나타내는 개체를 반환합니다.|
 
 ## <a name="requirements"></a>요구 사항
 
@@ -114,7 +115,7 @@ typedef std::basic_string<char> byte_string;
 size_t converted() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 성공적인 변환 수입니다.
 
@@ -150,7 +151,7 @@ wide_string from_bytes(const char* first, const char* last);
 *최신*\
 변환할 문자 범위의 마지막 문자입니다.
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 변환에서 생성되는 와이드 문자열 개체입니다.
 
@@ -180,7 +181,7 @@ typedef typename wide_string::traits_type::int_type int_type;
 state_type state() const;
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
 변환 상태를 나타내는 [변환 상태](../standard-library/wstring-convert-class.md) 개체입니다.
 
@@ -270,4 +271,4 @@ wstring_convert(const byte_string& _Berr, const wide_string& Werr = wide_string(
 
 ### <a name="remarks"></a>설명
 
-첫 번째 생성자는 [변환 개체](../standard-library/wstring-convert-class.md)에 *Pcvt_arg*를 저장합니다.
+첫 번째 생성자는 [변환 개체](../standard-library/wstring-convert-class.md)에 *Pcvt_arg* 를 저장합니다.

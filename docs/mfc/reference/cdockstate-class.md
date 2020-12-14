@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: CDockState 클래스'
 title: CDockState 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - CDockState [MFC], SaveState
 - CDockState [MFC], m_arrBarInfo
 ms.assetid: 09e7c10b-3abd-4cb2-ad36-42420fe6bc36
-ms.openlocfilehash: 9850486407ee7550ee866a10e656d45ad18fc196
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 4bdc17ec5a09b812609b8aa71e3f361603c1106f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81753264"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184961"
 ---
 # <a name="cdockstate-class"></a>CDockState 클래스
 
@@ -37,28 +38,28 @@ class CDockState : public CObject
 
 ### <a name="public-methods"></a>Public 메서드
 
-|속성|Description|
+|이름|설명|
 |----------|-----------------|
-|[CDockState::지우기](#clear)|도크 상태 정보를 지웁습니다.|
-|[CDockState::GetVersion](#getversion)|저장된 막대 상태의 버전 번호를 검색합니다.|
-|[CDockState::로드스테이트](#loadstate)|레지스트리 또는 에서 상태 정보를 검색합니다. INI 파일입니다.|
-|[CDockState::저장 상태](#savestate)|상태 정보를 레지스트리 또는 INI 파일에 저장합니다.|
+|[CDockState:: Clear](#clear)|도크 상태 정보를 지웁니다.|
+|[CDockState:: GetVersion](#getversion)|저장 된 막대 상태의 버전 번호를 검색 합니다.|
+|[CDockState:: LoadState](#loadstate)|레지스트리 또는에서 상태 정보를 검색 합니다. INI 파일.|
+|[CDockState:: SaveState](#savestate)|레지스트리 또는 INI 파일에 상태 정보를 저장 합니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|속성|Description|
+|Name|설명|
 |----------|-----------------|
-|[CDockState::m_arrBarInfo](#m_arrbarinfo)|저장된 도크 상태 정보에 대한 포인터 배열로 각 컨트롤 막대에 대해 하나의 항목이 있습니다.|
+|[CDockState:: m_arrBarInfo](#m_arrbarinfo)|각 컨트롤 막대에 대해 하나의 항목을 포함 하는 저장 된 도크 상태 정보에 대 한 포인터의 배열입니다.|
 
 ## <a name="remarks"></a>설명
 
-도크 상태에는 막대의 크기와 위치 및 도킹 여부가 포함됩니다. 저장된 도크 상태를 검색할 때 막대의 위치를 `CDockState` 확인하고 현재 화면 설정에서 막대가 `CDockState` 표시되지 않으면 막대의 위치를 배율 조정하여 표시합니다. 주요 `CDockState` 목적은 여러 컨트롤 바의 전체 상태를 유지하고 해당 상태를 레지스트리에 저장하고 로드할 수 있도록 하는 것입니다. INI 파일 또는 `CArchive` 개체 내용의 일부로 이진 형식으로 표시됩니다.
+Dock 상태는 막대의 크기 및 위치와 도킹 여부를 포함 합니다. 저장 된 dock 상태를 검색 하는 경우는 `CDockState` 막대의 위치를 확인 하 고, 현재 화면 설정에서 막대가 표시 되지 않으면 `CDockState` 표시 되도록 막대의 위치를 조정 합니다. 의 주요 목적은 `CDockState` 여러 컨트롤 막대의 전체 상태를 유지 하 고 해당 상태를 레지스트리에 저장 하 고 로드 하 여 응용 프로그램의에 저장 하는 것입니다. INI 파일 또는 개체 내용의 일부로 이진 형식으로 되어 `CArchive` 있습니다.
 
-막대는 도구 모음, 상태 표시줄 또는 대화 상자 막대를 포함하여 도킹 가능한 컨트롤 막대일 수 있습니다. `CDockState`개체는 `CArchive` 객체를 통해 파일로 쓰여지고 읽습니다.
+도구 모음, 상태 표시줄 또는 대화 상자 표시줄을 포함 하 여 도킹 가능한 모든 컨트롤 막대를 만들 수 있습니다. `CDockState` 개체는 개체를 통해 기록 되 고 파일에서 읽힙니다 `CArchive` .
 
-[CFrameWnd:GetDockState는](../../mfc/reference/cframewnd-class.md#getdockstate) 모든 프레임 창의 `CControlBar` 개체의 상태 정보를 검색하여 `CDockState` 개체에 넣습니다. 그런 다음 `CDockState` [직렬화](../../mfc/reference/cobject-class.md#serialize) 또는 [CDockState::SaveState](#savestate)를 사용하여 개체의 내용을 저장소에 쓸 수 있습니다. 나중에 프레임 창에서 컨트롤 막대의 상태를 복원하려는 경우 `Serialize` [CDockState::LoadState를](#loadstate)사용하여 상태를 로드한 다음 [CFrameWnd::SetDockState를](../../mfc/reference/cframewnd-class.md#setdockstate) 사용하여 저장된 상태를 프레임 창의 컨트롤 막대에 적용할 수 있습니다.
+[CFrameWnd:: GetDockState](../../mfc/reference/cframewnd-class.md#getdockstate) 는 모든 프레임 창의 개체에 대 한 상태 정보를 검색 `CControlBar` 하 여 개체에 배치 `CDockState` 합니다. 그런 다음 `CDockState` [Serialize](../../mfc/reference/cobject-class.md#serialize) 또는 [CDockState:: savestate](#savestate)를 사용 하 여 개체의 내용을 저장소에 쓸 수 있습니다. 나중에 프레임 창에서 컨트롤 막대의 상태를 복원 하려는 경우 `Serialize` 또는 [CDockState:: loadstate](#loadstate)를 사용 하 여 상태를 로드 한 다음 [CFrameWnd:: SetDockState](../../mfc/reference/cframewnd-class.md#setdockstate) 를 사용 하 여 저장 된 상태를 프레임 창의 컨트롤 모음에 적용할 수 있습니다.
 
-도킹 컨트롤 막대에 대한 자세한 내용은 [컨트롤 모음,](../../mfc/control-bars.md) [도구 모음: 도킹 및 부동](../../mfc/docking-and-floating-toolbars.md)및 [프레임 창](../../mfc/frame-windows.md)을 참조하십시오.
+도킹 컨트롤 막대에 대 한 자세한 내용은 [컨트롤 막대](../../mfc/control-bars.md), [도구 모음: 도킹 및 부동](../../mfc/docking-and-floating-toolbars.md)및 [프레임 창](../../mfc/frame-windows.md)문서를 참조 하세요.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -68,11 +69,11 @@ class CDockState : public CObject
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxadv.h
+**헤더:** afxadv
 
-## <a name="cdockstateclear"></a><a name="clear"></a>CDockState::지우기
+## <a name="cdockstateclear"></a><a name="clear"></a> CDockState:: Clear
 
-`CDockState` 이 함수를 호출하여 개체에 저장된 모든 도킹 정보를 지웁히 지웁습니다.
+개체에 저장 된 모든 도킹 정보를 지우려면이 함수를 호출 `CDockState` 합니다.
 
 ```cpp
 void Clear();
@@ -80,27 +81,27 @@ void Clear();
 
 ### <a name="remarks"></a>설명
 
-여기에는 막대가 도킹되었는지 여부뿐만 아니라 막대의 크기와 위치 및 표시 여부도 포함됩니다.
+여기에는 막대가 도킹 되는지 여부 뿐만 아니라 막대의 크기 및 위치와 표시 여부에 대 한 표시도 포함 됩니다.
 
-## <a name="cdockstategetversion"></a><a name="getversion"></a>CDockState::GetVersion
+## <a name="cdockstategetversion"></a><a name="getversion"></a> CDockState:: GetVersion
 
-저장된 막대 상태의 버전 번호를 검색하려면 이 함수를 호출합니다.
+저장 된 막대 상태의 버전 번호를 검색 하려면이 함수를 호출 합니다.
 
 ```
 DWORD GetVersion();
 ```
 
-### <a name="return-value"></a>Return Value
+### <a name="return-value"></a>반환 값
 
-1 저장된 막대 정보가 현재 막대 상태보다 오래된 경우; 2 저장된 막대 정보가 현재 막대 상태와 동일한 경우.
+저장 된 막대 정보가 현재 막대 상태 보다 오래 된 경우 1입니다. 저장 된 막대 정보가 현재 막대 상태와 같으면 2입니다.
 
 ### <a name="remarks"></a>설명
 
-버전 지원을 사용하면 수정된 막대를 사용하여 새 영구 속성을 추가하고 이전 버전의 막대에서 만든 영구 상태를 검색하고 로드할 수 있습니다.
+버전 지원을 통해 수정 된 막대를 사용 하 여 새 영구 속성을 추가 하 고 이전 버전의 막대에서 만든 영구적 상태를 검색 하 고 로드할 수 있습니다.
 
-## <a name="cdockstateloadstate"></a><a name="loadstate"></a>CDockState::로드스테이트
+## <a name="cdockstateloadstate"></a><a name="loadstate"></a> CDockState:: LoadState
 
-이 함수를 호출하여 레지스트리 또는 에서 상태 정보를 검색합니다. INI 파일입니다.
+레지스트리 또는에서 상태 정보를 검색 하려면이 함수를 호출 합니다. INI 파일.
 
 ```cpp
 void LoadState(LPCTSTR lpszProfileName);
@@ -109,23 +110,23 @@ void LoadState(LPCTSTR lpszProfileName);
 ### <a name="parameters"></a>매개 변수
 
 *lpszProfileName*<br/>
-초기화 파일의 섹션 이름을 지정하는 null teminated 문자열 또는 상태 정보가 저장되는 Windows 레지스트리의 키를 가리킵니다.
+초기화 파일의 섹션 이름을 지정 하는 null teminated 문자열을 가리키거나 상태 정보가 저장 되는 Windows 레지스트리의 키를 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
-프로필 이름은 응용 프로그램의 의 섹션입니다. INI 파일 또는 막대의 상태 정보가 포함된 레지스트리입니다. 컨트롤 막대 상태 정보를 레지스트리 또는 에 저장할 수 있습니다. INI 파일 `SaveState`.
+프로필 이름은 응용 프로그램의 섹션입니다. 막대의 상태 정보를 포함 하는 INI 파일 또는 레지스트리. 레지스트리 또는에 컨트롤 막대 상태 정보를 저장할 수 있습니다. 을 사용 하는 INI 파일 `SaveState`
 
-## <a name="cdockstatem_arrbarinfo"></a><a name="m_arrbarinfo"></a>CDockState::m_arrBarInfo
+## <a name="cdockstatem_arrbarinfo"></a><a name="m_arrbarinfo"></a> CDockState:: m_arrBarInfo
 
-`CPtrArray` 개체에 상태 정보를 저장 한 각 컨트롤 막대에 대 한 저장된 컨트롤 막대 정보에 대 한 포인터의 배열인 개체입니다. `CDockState`
+`CPtrArray`개체에 저장 된 상태 정보가 있는 각 컨트롤 막대의 저장 된 컨트롤 막대 정보에 대 한 포인터의 배열인 개체입니다 `CDockState` .
 
 ```
 CPtrArray m_arrBarInfo;
 ```
 
-## <a name="cdockstatesavestate"></a><a name="savestate"></a>CDockState::저장 상태
+## <a name="cdockstatesavestate"></a><a name="savestate"></a> CDockState:: SaveState
 
-이 함수를 호출하여 상태 정보를 레지스트리 또는 에 저장합니다. INI 파일입니다.
+레지스트리 또는에 상태 정보를 저장 하려면이 함수를 호출 합니다. INI 파일.
 
 ```cpp
 void SaveState(LPCTSTR lpszProfileName);
@@ -134,13 +135,13 @@ void SaveState(LPCTSTR lpszProfileName);
 ### <a name="parameters"></a>매개 변수
 
 *lpszProfileName*<br/>
-초기화 파일의 섹션 이름을 지정하는 null teminated 문자열 또는 상태 정보가 저장되는 Windows 레지스트리의 키를 가리킵니다.
+초기화 파일의 섹션 이름을 지정 하는 null teminated 문자열을 가리키거나 상태 정보가 저장 되는 Windows 레지스트리의 키를 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
-프로필 이름은 응용 프로그램의 의 섹션입니다. INI 파일 또는 컨트롤 막대의 상태 정보를 포함하는 레지스트리입니다. `SaveState`또한 현재 화면 크기를 저장합니다. 레지스트리 또는 에서 컨트롤 막대 정보를 검색할 수 있습니다. INI 파일 `LoadState`.
+프로필 이름은 응용 프로그램의 섹션입니다. 컨트롤 막대의 상태 정보를 포함 하는 INI 파일 또는 레지스트리. `SaveState` 또한 현재 화면 크기를 저장 합니다. 레지스트리 또는에서 컨트롤 막대 정보를 검색할 수 있습니다. 을 사용 하는 INI 파일 `LoadState`
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
