@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: vector &lt; bool &gt; 클래스'
 title: vector&lt;bool&gt; 클래스
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - std::vector [C++], flip
 - std::vector [C++], swap
 ms.assetid: 8028c8ed-ac9c-4f06-aba1-5de45c00aafb
-ms.openlocfilehash: 24a18197c6b335172b88d2db37e8ac7ed57f58b8
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: ecc7c083825a92aca429f9418d35ff9d4cf7dcca
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845421"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280510"
 ---
 # <a name="vectorltboolgt-class"></a>vector&lt;bool&gt; 클래스
 

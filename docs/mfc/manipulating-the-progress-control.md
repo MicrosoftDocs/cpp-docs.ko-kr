@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: 진행률 컨트롤 조작'
 title: 진행률 컨트롤 조작
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - controlling progress controls [MFC]
 - CProgressCtrl class [MFC], using
 ms.assetid: 9af561d1-980b-4003-a6da-ff79be15bf23
-ms.openlocfilehash: 3e3521a82854a85062f9b06bc33eb268d4b9c7a6
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: cfb89dee0047d910fb983546c71e4a1e4a618f56
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622428"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97281095"
 ---
 # <a name="manipulating-the-progress-control"></a>진행률 컨트롤 조작
 
@@ -32,11 +33,11 @@ ms.locfileid: "84622428"
 1. [Stit](reference/cprogressctrl-class.md#stepit) 멤버 함수를 사용 하 여 위치를 늘립니다. 이렇게 하면 컨트롤이 자체적으로 다시 그려집니다.
 
     > [!NOTE]
-    >  `StepIt`에서 위치가 래핑됩니다. 예를 들어 범위가 1 -100이 고, 20 단계와 90의 위치가 지정 된 경우 `StepIt` 위치를 10으로 설정 합니다.
+    >  `StepIt` 에서 위치가 래핑됩니다. 예를 들어 범위가 1 -100이 고, 20 단계와 90의 위치가 지정 된 경우 `StepIt` 위치를 10으로 설정 합니다.
 
 ### <a name="to-change-the-position-by-an-arbitrary-amount"></a>임의의 양만큼 위치를 변경 하려면
 
-1. [OffsetPos](reference/cprogressctrl-class.md#offsetpos) 멤버 함수를 사용 하 여 위치를 변경 합니다. `OffsetPos`음수 값을 허용 합니다.
+1. [OffsetPos](reference/cprogressctrl-class.md#offsetpos) 멤버 함수를 사용 하 여 위치를 변경 합니다. `OffsetPos` 음수 값을 허용 합니다.
 
     > [!NOTE]
     >  `OffsetPos`와 달리는 `StepIt` 위치를 래핑하지 않습니다. 새 위치는 범위 내에 유지 되도록 조정 됩니다.

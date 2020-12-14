@@ -1,20 +1,21 @@
 ---
+description: '자세한 정보: MDI 탭 그룹'
 title: MDI 탭 그룹
 ms.date: 11/04/2016
 helpviewer_keywords:
 - mdi [MFC], tabbed groups
 - tabbed grous [MFC]
 ms.assetid: 0a464f36-39b7-4e68-8b67-ec175de28377
-ms.openlocfilehash: 0c1bf925003d5081b2cdc837012a57585b1ace60
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: b859445c5cc1e14f19ec91c31b4d618237cfb9a9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84624358"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280770"
 ---
 # <a name="mdi-tabbed-groups"></a>MDI 탭 그룹
 
-Mdi (다중 문서 인터페이스) 탭 그룹 기능을 사용 하면 mdi (다중 문서 인터페이스)를 사용 하 여 mdi 클라이언트 영역에서 하나 이상의 탭 창 (또는 탭 *그룹*이라고 하는 탭 창의 그룹)을 표시할 수 있습니다. 탭 창은 세로 또는 가로로 정렬할 수 있습니다. 애플리케이션이 두 개 이상의 MDI 탭 그룹을 호스팅할 경우, 그룹이 분할자로 구분됩니다.
+Mdi (다중 문서 인터페이스) 탭 그룹 기능을 사용 하면 mdi (다중 문서 인터페이스)를 사용 하 여 mdi 클라이언트 영역에서 하나 이상의 탭 창 (또는 탭 *그룹* 이라고 하는 탭 창의 그룹)을 표시할 수 있습니다. 탭 창은 세로 또는 가로로 정렬할 수 있습니다. 애플리케이션이 두 개 이상의 MDI 탭 그룹을 호스팅할 경우, 그룹이 분할자로 구분됩니다.
 
 ## <a name="features"></a>기능
 

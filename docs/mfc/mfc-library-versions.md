@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: MFC 라이브러리 버전'
 title: MFC 라이브러리 버전
 ms.date: 05/08/2019
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - MFC libraries
 - MFC, library versions
 - libraries [MFC], versions
-ms.openlocfilehash: bf10d8b56f82714fa708b5409923e765206eb16d
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 26d17604ec201deffd5fd2d5e843269e67e3dd07
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626125"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280588"
 ---
 # <a name="mfc-library-versions"></a>MFC 라이브러리 버전
 
@@ -97,14 +98,14 @@ MFC에 대 한 정적 라이브러리는 다음 명명 규칙을 사용 합니�
 
 다음 표에 나열 된 모든 라이브러리는 지원 되는 빌드 아키텍처에 대 한 \atlmfc\lib 디렉터리에 미리 구성 되어 있습니다.
 
-|라이브러리|Description|
+|라이브러리|설명|
 |-------------|-----------------|
-|NAFXCW.LIB|MFC 정적 링크 라이브러리, 릴리스 버전|
-|NAFXCWD.LIB|MFC 정적 링크 라이브러리, 디버그 버전|
-|UAFXCW. LIB|유니코드를 지 원하는 MFC 정적 연결 라이브러리, 릴리스 버전|
-|UAFXCWD. LIB|유니코드를 지 원하는 MFC 정적 연결 라이브러리, 디버그 버전|
-|AFXNMCD. LIB|Mfc 대화 상자 컨트롤이 없는 MFC 정적 링크 라이브러리, 릴리스 버전|
-|AFXNMCDD. LIB|Mfc 대화 상자 컨트롤이 없는 MFC 정적 링크 라이브러리, 디버그 버전|
+|NAFXCW.LIB|MFC Static-Link 라이브러리, 릴리스 버전|
+|NAFXCWD.LIB|MFC Static-Link 라이브러리, 디버그 버전|
+|UAFXCW. LIB|유니코드를 지 원하는 MFC Static-Link 라이브러리, 릴리스 버전|
+|UAFXCWD. LIB|유니코드를 지 원하는 MFC Static-Link 라이브러리, 디버그 버전|
+|AFXNMCD. LIB|Mfc 대화 상자 컨트롤이 없는 MFC Static-Link 라이브러리, 릴리스 버전|
+|AFXNMCDD. LIB|Mfc 대화 상자 컨트롤이 없는 MFC Static-Link 라이브러리, 디버그 버전|
 
 기본 이름 및 .pdb 확장명을 가진 디버거 파일은 각 정적 라이브러리에도 사용할 수 있습니다.
 
@@ -114,20 +115,20 @@ MFC 공유 Dll도 구조화 된 명명 규칙을 따릅니다. 이렇게 하면 
 
 MFC Dll에는 이진 호환성을 나타내는 *버전* 번호가 있습니다. 다른 라이브러리와 동일한 버전의 MFC Dll 및 컴파일러 도구 집합을 사용 하 여 프로젝트 내에서 호환성을 보장 합니다.
 
-|DLL|Description|
+|DLL|설명|
 |---------|-----------------|
-|MFC*버전* GDIPLUS.DLL|MFC DLL, ANSI 또는 MBCS 릴리스 버전|
-|MFC*버전*.dll|MFC DLL, 유니코드 릴리스 버전|
-|MFC*버전*d. .dll|MFC DLL, ANSI 또는 MBCS 디버그 버전|
-|MFC*버전*UD. GDIPLUS.DLL|MFC DLL, 유니코드 디버그 버전|
-|MFCM*버전*입니다. GDIPLUS.DLL|Windows Forms 컨트롤, ANSI 또는 MBCS 릴리스 버전의 MFC DLL|
-|MFCM*버전*U .dll|Windows Forms 컨트롤, 유니코드 릴리스 버전의 MFC DLL|
-|MFCM*버전*d. .dll|Windows Forms 컨트롤, ANSI 또는 MBCS 디버그 버전을 사용 하는 MFC DLL|
-|MFCM*버전*UD. GDIPLUS.DLL|Windows Forms 컨트롤, 유니코드 디버그 버전을 사용 하는 MFC DLL|
+|MFC *버전* GDIPLUS.DLL|MFC DLL, ANSI 또는 MBCS 릴리스 버전|
+|MFC *버전* U.DLL|MFC DLL, 유니코드 릴리스 버전|
+|MFC *버전* D.DLL|MFC DLL, ANSI 또는 MBCS 디버그 버전|
+|MFC *버전* UD.DLL|MFC DLL, 유니코드 디버그 버전|
+|MFCM *버전* 입니다. GDIPLUS.DLL|Windows Forms 컨트롤, ANSI 또는 MBCS 릴리스 버전의 MFC DLL|
+|MFCM *버전* U.DLL|Windows Forms 컨트롤, 유니코드 릴리스 버전의 MFC DLL|
+|MFCM *버전* D.DLL|Windows Forms 컨트롤, ANSI 또는 MBCS 디버그 버전을 사용 하는 MFC DLL|
+|MFCM *버전* UD.DLL|Windows Forms 컨트롤, 유니코드 디버그 버전을 사용 하는 MFC DLL|
 
-이러한 공유 Dll을 사용 하는 응용 프로그램 또는 MFC 확장명 Dll을 빌드하는 데 필요한 가져오기 라이브러리에는 DLL과 동일한 기본 이름이 있지만 .lib 파일 이름 확장명이 있습니다. 공유 Dll을 사용 하는 경우 작은 정적 라이브러리를 여전히 코드와 연결 해야 합니다. 이 라이브러리의 이름은 MFCS*version*{U} {D}. D D}입니다.
+이러한 공유 Dll을 사용 하는 응용 프로그램 또는 MFC 확장명 Dll을 빌드하는 데 필요한 가져오기 라이브러리에는 DLL과 동일한 기본 이름이 있지만 .lib 파일 이름 확장명이 있습니다. 공유 Dll을 사용 하는 경우 작은 정적 라이브러리를 여전히 코드와 연결 해야 합니다. 이 라이브러리의 이름은 MFCS *version*{U} {D}. D D}입니다.
 
-응용 프로그램에서 든, MFC 확장명 DLL에서 든 상관 없이 MFC의 공유 DLL 버전에 동적으로 연결 하는 경우 일치 하는 MFC*버전*을 포함 해야 합니다. 제품을 배포할 때 DLL 또는 MFC*버전*.dll.
+응용 프로그램에서 든, MFC 확장명 DLL에서 든 상관 없이 MFC의 공유 DLL 버전에 동적으로 연결 하는 경우 일치 하는 MFC *버전* 을 포함 해야 합니다. 제품을 배포할 때 DLL 또는 MFC *버전* 을U.DLL 합니다.
 
 응용 프로그램과 함께 배포할 수 있는 Visual C++ Dll 목록은 [Microsoft Visual Studio 2017 및 Microsoft Visual Studio 2017 SDK 용 배포 가능 코드 (유틸리티 및 BuildServer 파일 포함)](/visualstudio/productinfo/2017-redistribution-vs) 또는 [Visual Studio 2019 용 배포 가능 코드](/visualstudio/releases/2019/redistribution)를 참조 하세요.
 
@@ -135,9 +136,9 @@ MFC의 MBCS 및 유니코드 지원에 대 한 자세한 내용은 [유니코드
 
 ## <a name="dynamic-link-library-support"></a>동적 연결 라이브러리 지원
 
-정적 또는 공유 동적 MFC 라이브러리를 사용 하 여 MFC 실행 파일이 나 mfc가 아닌 실행 파일에서 사용할 수 있는 Dll을 만들 수 있습니다. 이를 "일반 Dll" 또는 "일반 MFC Dll" 이라고 하며,이를 MFC 응용 프로그램 및 MFC Dll 에서만 사용할 수 있는 MFC 확장명 Dll과 구분할 수 있습니다. Mfc 정적 라이브러리를 사용 하 여 작성 된 DLL을 이전 참조의 USRDLL 라고도 합니다 .이는 MFC DLL 프로젝트가 전처리기 기호 ** \_ USRDLL**를 정의 하기 때문입니다. MFC 공유 Dll을 사용 하는 DLL은 전처리기 기호 ** \_ AFXDLL**를 정의 하기 때문에 이전 참조에서 AFXDLL 라고도 합니다.
+정적 또는 공유 동적 MFC 라이브러리를 사용 하 여 MFC 실행 파일이 나 mfc가 아닌 실행 파일에서 사용할 수 있는 Dll을 만들 수 있습니다. 이를 "일반 Dll" 또는 "일반 MFC Dll" 이라고 하며,이를 MFC 응용 프로그램 및 MFC Dll 에서만 사용할 수 있는 MFC 확장명 Dll과 구분할 수 있습니다. Mfc 정적 라이브러리를 사용 하 여 작성 된 DLL을 이전 참조의 USRDLL 라고도 합니다 .이는 MFC DLL 프로젝트가 전처리기 기호 **\_ USRDLL** 를 정의 하기 때문입니다. MFC 공유 Dll을 사용 하는 DLL은 전처리기 기호 **\_ AFXDLL** 를 정의 하기 때문에 이전 참조에서 AFXDLL 라고도 합니다.
 
-MFC 정적 라이브러리에 연결 하 여 DLL 프로젝트를 만드는 경우 MFC 공유 Dll 없이 DLL을 배포할 수 있습니다. DLL 프로젝트가 가져오기 라이브러리 MFC*버전*에 연결 되는 경우 LIB 또는 MFC*버전*의 .lib 인 경우 일치 하는 MFC 공유 DLL mfc*버전*을 배포 해야 합니다. Dll 또는 MFC*버전*.DLL을 dll과 함께 사용 합니다. 자세한 내용은 [dll](../build/dlls-in-visual-cpp.md)을 참조 하세요.
+MFC 정적 라이브러리에 연결 하 여 DLL 프로젝트를 만드는 경우 MFC 공유 Dll 없이 DLL을 배포할 수 있습니다. DLL 프로젝트가 가져오기 라이브러리 MFC *버전* 에 연결 되는 경우 LIB 또는 MFC *버전* 의 .lib 인 경우 일치 하는 MFC 공유 DLL mfc *버전* 을 배포 해야 합니다. Dll 또는 MFC *버전이* Dll과 함께U.DLL. 자세한 내용은 [dll](../build/dlls-in-visual-cpp.md)을 참조 하세요.
 
 ## <a name="see-also"></a>참고 항목
 

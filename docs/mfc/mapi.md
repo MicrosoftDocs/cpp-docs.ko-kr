@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: MAPI'
 title: MAPI
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - MAPI, MFC
 - enabling applications for mail [MFC]
 ms.assetid: 193449f7-b131-4ab0-9301-8d4f6cd1e7c4
-ms.openlocfilehash: 0008a2bc433401f3e048b6f5a92cded88114d08e
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 634d5d0b2dbbc8a262f624be2b7e294ef6069b96
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84625558"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280809"
 ---
 # <a name="mapi"></a>MAPI
 

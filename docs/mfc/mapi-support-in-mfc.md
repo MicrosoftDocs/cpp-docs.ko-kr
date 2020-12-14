@@ -1,4 +1,5 @@
 ---
+description: '자세히 알아보기: MFC의 MAPI 지원'
 title: MFC의 MAPI 지원
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - MAPI, MFC
 - OnFileSendMail method [MFC]
 ms.assetid: cafbecb1-0427-4077-b4b8-159bae5b49b8
-ms.openlocfilehash: 7eff22b2a7b4c838f2967fb5217b9dec96903d0e
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 289ad61894efd5c08d3a50d8c50e3ac6ee518a25
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84625563"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280757"
 ---
 # <a name="mapi-support-in-mfc"></a>MFC의 MAPI 지원
 
@@ -34,7 +35,7 @@ MAPI는 첨부 파일을 보내기 위해 파일을 읽어야 합니다. 함수 
 
 1. Visual C++ 메뉴 편집기를 사용 하 여 명령 ID가 ID_FILE_SEND_MAIL 인 메뉴 항목을 추가 합니다.
 
-   AFXRES.H의 프레임 워크에서이 명령 ID를 제공 합니다. 넣기. 이 명령은 모든 메뉴에 추가할 수 있지만 일반적으로 **파일** 메뉴에 추가 됩니다.
+   AFXRES.H의 프레임 워크에서이 명령 ID를 제공 합니다. 이 명령은 모든 메뉴에 추가할 수 있지만 일반적으로 **파일** 메뉴에 추가 됩니다.
 
 1. 문서의 메시지 맵에 다음을 수동으로 추가 합니다.
 

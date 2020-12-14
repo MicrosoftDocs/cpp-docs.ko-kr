@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 오류 C3895'
 title: 컴파일러 오류 C3895
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3895
 ms.assetid: 771b9fe5-d6d4-4297-bf57-e2f857722155
-ms.openlocfilehash: 633ffa86bce3579adb808dbba34127bb6f0665c9
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: ae963eb89ee8f0cefc9092e9d3b16aa40885e63c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74749414"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97315116"
 ---
 # <a name="compiler-error-c3895"></a>컴파일러 오류 C3895
 

@@ -1,14 +1,15 @@
-﻿---
+---
+description: '자세한 정보: MFC 개념'
 title: MFC 개념
 ms.date: 01/09/2018
 f1_keywords:
 - Concepts
-ms.openlocfilehash: b6f5e6bf84900a17b10104dbe9baf4b580ae5396
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 13d5b0b1943eb68e7b73fc5e935b98b0d104ab07
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615508"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280601"
 ---
 # <a name="mfc-concepts"></a>MFC 개념
 
@@ -28,7 +29,7 @@ MFC 라이브러리의 기술 세부 정보에 대해 설명 합니다.
 [날짜 및 시간](../atl-mfc-shared/date-and-time.md)<br/>
 MFC에서 날짜 및 시간을 사용 하는 방법을 설명 하는 항목의 링크를 제공 합니다.
 
-[Files](files-in-mfc.md)<br/>
+[파일](files-in-mfc.md)<br/>
 `CFile`MFC에서 파일을 처리 하는 방법과 방법을 설명 합니다.
 
 [메모리 관리 (MFC)](memory-management.md)<br/>

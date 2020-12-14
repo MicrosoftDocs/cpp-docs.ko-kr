@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: MFC COM'
 title: MFC COM
 ms.date: 09/12/2018
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - Active technology [MFC]
 - COM [MFC], MFC support
 ms.assetid: 7646bdcb-3a06-4ed5-9386-9b00f3979dcb
-ms.openlocfilehash: da194510938e3fe02eba5993182e811fdf2e1b7c
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: a7f4387aa692eb0610052f85870127ac54761437
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618008"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280666"
 ---
 # <a name="mfc-com"></a>MFC COM
 
@@ -54,7 +55,7 @@ MFC의 하위 집합은 COM을 지원 하도록 디자인 되었지만 대부분
 
 [Automation](automation.md)
 
-[연결 지점](connection-points.md)
+[연결 요소](connection-points.md)
 
 [MFC ActiveX 컨트롤](mfc-activex-controls.md)
 

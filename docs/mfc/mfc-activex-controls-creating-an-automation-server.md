@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: MFC ActiveX 컨트롤: 자동화 서버 만들기'
 title: 'MFC ActiveX 컨트롤: 자동화 서버 만들기'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - ActiveX controls [MFC], Automation server
 - MFC ActiveX controls [MFC], Automation server
 ms.assetid: e0c24ed2-d61c-49ad-a4fa-4e1098d1d39b
-ms.openlocfilehash: f2c941e43e810845560b4c35c558ec70248c21ed
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: ffac05d48a17e0f8b40f268709393fff392a3b95
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622378"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280731"
 ---
 # <a name="mfc-activex-controls-creating-an-automation-server"></a>MFC ActiveX 컨트롤: 자동화 서버 만들기
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 컴파일러 경고 C 4936'
 title: 컴파일러 경고 C4936
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4936
 ms.assetid: 6676de35-bf1b-4d0b-a70f-b5734130336c
-ms.openlocfilehash: 9b1c3d1de662451432fe4fa0f058c503dc1f7b39
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e12cb789d3d008ec61672591cde78f1b7dc61da6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220121"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97314986"
 ---
 # <a name="compiler-warning-c4936"></a>컴파일러 경고 C4936
 
