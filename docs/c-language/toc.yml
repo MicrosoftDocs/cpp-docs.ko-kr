@@ -138,6 +138,8 @@
           href: ../c-language/name-spaces.md
     - name: 선언 및 형식
       items:
+        - name: 맞춤(C11)
+          href: ../c-language/alignment-c.md
         - name: 선언 및 형식
           href: ../c-language/declarations-and-types.md
         - name: 선언 개요
