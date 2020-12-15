@@ -4,12 +4,12 @@ description: Microsoft C/c + + 컴파일러 명령줄 옵션의 사전순으로 
 ms.date: 07/29/2020
 helpviewer_keywords:
 - compiler options, C++
-ms.openlocfilehash: 81f2fbfe385e8655193c5862455e6ffca3719c96
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 532ee4aceef281f7aa52fee6cd405a3520409218
+ms.sourcegitcommit: 48b897797b3132ae934b1d191e3870c3c2466335
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520864"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97514554"
 ---
 # <a name="compiler-options-listed-alphabetically"></a>컴파일러 옵션 사전순 목록
 
@@ -40,7 +40,7 @@ ms.locfileid: "87520864"
 | [`/errorReport`](errorreport-report-internal-compiler-errors.md) | 더 이상 사용되지 않습니다. 오류 보고는 [WER (Windows 오류 보고)](/windows/win32/wer/windows-error-reporting) 설정에 의해 제어 됩니다. |
 | [`/execution-charset`](execution-charset-set-execution-character-set.md) | 실행 문자 집합을 설정 합니다. |
 | [`/experimental:module`](experimental-module.md) | 실험적 모듈 지원을 사용 하도록 설정 합니다. |
-| [`/experimental:preprocessor`](experimental-preprocessor.md) | 실험적 규격 전처리기 지원을 사용 하도록 설정 합니다. |
+| [`/experimental:preprocessor`](experimental-preprocessor.md) | 더 이상 사용되지 않습니다. 실험적 규격 전처리기 지원을 사용 하도록 설정 합니다. 사용 [`/Zc:preprocessor`](zc-preprocessor.md) |
 | [`/F`](f-set-stack-size.md) | 스택 크기를 설정합니다. |
 | [`/favor`](favor-optimize-for-architecture-specifics.md) | 특정 x64 아키텍처에 대해 최적화 된 코드를 생성 합니다. 또는 AMD64 아키텍처와 EM64T 아키텍처의 특정 마이크로 아키텍처에 해당 합니다. |
 | [`/FA`](fa-fa-listing-file.md) | 목록 파일을 만듭니다. |
@@ -77,7 +77,7 @@ ms.locfileid: "87520864"
 | [`/Gw`](gw-optimize-global-data.md) | 전체 프로그램 전역 데이터 최적화를 사용하도록 설정합니다. |
 | [`/GX`](gx-enable-exception-handling.md) | 더 이상 사용되지 않습니다. 동기 예외 처리를 사용합니다. [`/EH`](eh-exception-handling-model.md)대신를 사용 합니다. |
 | [`/Gy`](gy-enable-function-level-linking.md) | 함수 수준 링크를 사용합니다. |
-| [`/GZ`](gz-enable-stack-frame-run-time-error-checking.md) | 더 이상 사용되지 않습니다. 와 동일 [`/RTC1`](rtc-run-time-error-checks.md) 합니다. |
+| [`/GZ`](gz-enable-stack-frame-run-time-error-checking.md) | 더 이상 사용되지 않습니다. [`/RTC1`](rtc-run-time-error-checks.md) 와 같습니다. |
 | [`/Gz`](gd-gr-gv-gz-calling-convention.md) | **`__stdcall`** 호출 규칙을 사용 합니다 (x 86에만 해당). |
 | [`/H`](h-restrict-length-of-external-names.md) | 더 이상 사용되지 않습니다. 외부 공개 이름의 길이를 제한합니다. |
 | [`/HELP`](help-compiler-command-line-help.md) | 컴파일러 옵션을 나열합니다. |
@@ -119,7 +119,7 @@ ms.locfileid: "87520864"
 | [`/Qspectre`](qspectre.md) | 특정 스펙터 변형 1 보안 취약성을 완화하기 위한 컴파일러 생성 지침을 지정합니다. |
 | [`/Qspectre-load`](qspectre-load.md) | 로드 지침에 따라 스펙터 보안 취약점을 완화 하기 위한 직렬화 명령의 컴파일러 생성을 지정 합니다. |
 | [`/Qspectre-load-cf`](qspectre-load-cf.md) | 메모리를 로드 하는 제어 흐름 지침에 따라 스펙터 보안 취약점을 완화 하기 위해 컴파일러에서 직렬화 명령의 생성을 지정 합니다. |
-| [`/Qvec-report`(자동 벡터화 도우미 보고 수준)](qvec-report-auto-vectorizer-reporting-level.md) | 자동 벡터화에 대한 보고 수준을 사용하도록 설정합니다. |
+| [`/Qvec-report` (자동 벡터화 도우미 보고 수준)](qvec-report-auto-vectorizer-reporting-level.md) | 자동 벡터화에 대한 보고 수준을 사용하도록 설정합니다. |
 | [`/RTC`](rtc-run-time-error-checks.md) | 런타임 오류 검사를 사용합니다. |
 | [`/sdl`](sdl-enable-additional-security-checks.md) | 추가 보안 기능 및 경고를 사용하도록 설정합니다. |
 | [`/showIncludes`](showincludes-list-include-files.md) | 컴파일을 하는 동안 포함 파일 목록을 표시합니다. |
@@ -175,7 +175,7 @@ ms.locfileid: "87520864"
 | [`/Zs`](zs-syntax-check-only.md) | 구문만 확인합니다. |
 | [`/ZW`](zw-windows-runtime-compilation.md) | Windows 런타임에서 실행할 출력 파일을 생성 합니다. |
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [MSVC 컴파일러 옵션](compiler-options.md)\
 [MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

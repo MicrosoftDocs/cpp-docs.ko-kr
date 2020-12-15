@@ -5,12 +5,12 @@ ms.date: 07/29/2020
 helpviewer_keywords:
 - compiler options, C++
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
-ms.openlocfilehash: beb10404075d9541872ff4780a725e177356a3b8
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: bf12948658b5f7e3211c423b5302bc52d1b87729
+ms.sourcegitcommit: 48b897797b3132ae934b1d191e3870c3c2466335
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520955"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97514564"
 ---
 # <a name="compiler-options-listed-by-category"></a>컴파일러 옵션 범주별 목록
 
@@ -144,10 +144,10 @@ ms.locfileid: "87520955"
 | [`/LDd`](md-mt-ld-use-run-time-library.md) | 디버그 DLL(동적 연결 라이브러리)을 만듭니다. |
 | [`/link`](link-pass-options-to-linker.md) | 지정된 옵션을 LINK에 전달합니다. |
 | [`/LN`](ln-create-msil-module.md) | MSIL 모듈을 만듭니다. |
-| [`/MD`](md-mt-ld-use-run-time-library.md) | *Msvcrt.lib*를 사용 하 여 다중 스레드 DLL을 만들도록 컴파일합니다. |
-| [`/MDd`](md-mt-ld-use-run-time-library.md) | *Msvcrtd.lib*를 사용 하 여 디버그 다중 스레드 DLL을 만들도록 컴파일합니다. |
-| [`/MT`](md-mt-ld-use-run-time-library.md) | *Libcmt.lib*를 사용 하 여 다중 스레드 실행 파일을 만들기 위해 컴파일합니다. |
-| [`/MTd`](md-mt-ld-use-run-time-library.md) | *Libcmtd.lib*를 사용 하 여 디버그 다중 스레드 실행 파일을 만들기 위해 컴파일합니다. |
+| [`/MD`](md-mt-ld-use-run-time-library.md) | *Msvcrt.lib* 를 사용 하 여 다중 스레드 DLL을 만들도록 컴파일합니다. |
+| [`/MDd`](md-mt-ld-use-run-time-library.md) | *Msvcrtd.lib* 를 사용 하 여 디버그 다중 스레드 DLL을 만들도록 컴파일합니다. |
+| [`/MT`](md-mt-ld-use-run-time-library.md) | *Libcmt.lib* 를 사용 하 여 다중 스레드 실행 파일을 만들기 위해 컴파일합니다. |
+| [`/MTd`](md-mt-ld-use-run-time-library.md) | *Libcmtd.lib* 를 사용 하 여 디버그 다중 스레드 실행 파일을 만들기 위해 컴파일합니다. |
 
 ## <a name="miscellaneous"></a>기타
 
@@ -161,7 +161,7 @@ ms.locfileid: "87520955"
 | [`/cgthreads`](cgthreads-code-generation-threads.md) | 최적화 및 코드 생성에 사용할 *cl.exe* 스레드 수를 지정 합니다. |
 | [`/errorReport`](errorreport-report-internal-compiler-errors.md) | 더 이상 사용되지 않습니다. 오류 보고는 [WER (Windows 오류 보고)](/windows/win32/wer/windows-error-reporting) 설정에 의해 제어 됩니다. |
 | [`/FC`](fc-full-path-of-source-code-file-in-diagnostics.md) | 진단 텍스트에서 *cl.exe* 에 전달 된 소스 코드 파일의 전체 경로를 표시 합니다. |
-| [`/FS`](fs-force-synchronous-pdb-writes.md) | *MSPDBSRV.EXE*를 통해 SERIALIZE 될 PDB 파일에 대 한 쓰기를 강제로 수행 합니다. |
+| [`/FS`](fs-force-synchronous-pdb-writes.md) | *MSPDBSRV.EXE* 를 통해 SERIALIZE 될 PDB 파일에 대 한 쓰기를 강제로 수행 합니다. |
 | [`/H`](h-restrict-length-of-external-names.md) | 더 이상 사용되지 않습니다. 외부 공개 이름의 길이를 제한합니다. |
 | [`/HELP`](help-compiler-command-line-help.md) | 컴파일러 옵션을 나열합니다. |
 | [`/J`](j-default-char-type-is-unsigned.md) | 기본 형식을 변경 **`char`** 합니다. |
@@ -209,7 +209,7 @@ ms.locfileid: "87520955"
 | 옵션 | 용도 |
 |--|--|
 | [`/experimental:module`](experimental-module.md) | 실험적 모듈 지원을 사용 하도록 설정 합니다. |
-| [`/experimental:preprocessor`](experimental-preprocessor.md) | 실험적 규격 전처리기 지원을 사용 하도록 설정 합니다. |
+| [`/experimental:preprocessor`](experimental-preprocessor.md) | 더 이상 사용되지 않습니다. 실험적 규격 전처리기 지원을 사용 하도록 설정 합니다. 사용 [`/Zc:preprocessor`](zc-preprocessor.md) |
 
 ## <a name="deprecated-and-removed-compiler-options"></a>사용 되지 않고 제거 되는 컴파일러 옵션
 
@@ -232,7 +232,7 @@ ms.locfileid: "87520955"
 | [`/Ze`](za-ze-disable-language-extensions.md) | 더 이상 사용되지 않습니다. 언어 확장을 사용합니다. |
 | [`/Zg`](zg-generate-function-prototypes.md) | Visual Studio 2015에서 제거 되었습니다. 함수 프로토타입을 생성합니다. |
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [C/c + + 빌드 참조](c-cpp-building-reference.md)\
 [MSVC 컴파일러 옵션](compiler-options.md)\
