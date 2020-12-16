@@ -1,19 +1,18 @@
 ---
 title: '연습: 자체 동적 연결 라이브러리 만들기 및 사용(C++)'
 description: C++를 사용하여 Visual Studio에서 Windows DLL(동적 연결 라이브러리)을 만듭니다.
-ms.custom:
-- walkthrough
-- contperfq2
+ms.custom: contperf-fy21q2
+ms.topic: tutorial
 ms.date: 08/22/2019
 helpviewer_keywords:
 - libraries [C++], DLLs
 - DLLs [C++], walkthroughs
-ms.openlocfilehash: ca9aebd7103d36918940e52638b3c2cb52612c25
-ms.sourcegitcommit: 43a6ff739516dff62fee521d401eb4b1201cea8c
+ms.openlocfilehash: 985d187b88780c8b877f264fe76c1cdcac2a15db
+ms.sourcegitcommit: be469dd87453255b0e35e333712c8207b09b3dd4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94870690"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97412156"
 ---
 # <a name="walkthrough-create-and-use-your-own-dynamic-link-library-c"></a>연습: 자체 동적 연결 라이브러리 만들기 및 사용(C++)
 

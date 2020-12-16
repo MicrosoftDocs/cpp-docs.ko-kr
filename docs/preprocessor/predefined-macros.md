@@ -2,7 +2,7 @@
 title: 미리 정의된 매크로
 description: Microsoft C++ 컴파일러의 미리 정의된 전처리기 매크로가 나열 및 설명되어 있습니다.
 ms.custom: update_every_version
-ms.date: 09/11/2020
+ms.date: 12/14/2020
 f1_keywords:
 - _ATL_VER
 - __ATOM__
@@ -240,12 +240,12 @@ no-loc:
 - _WIN64
 - _WINRT_DLL
 - __func__
-ms.openlocfilehash: b5e2b34357456c4937d8ed17dee5661d36b7b0c0
-ms.sourcegitcommit: 25f6d52eb9e5d84bd0218c46372db85572af81da
+ms.openlocfilehash: e4577f7b74c6057df8ebe795ffa0056dbdeae298
+ms.sourcegitcommit: 48b897797b3132ae934b1d191e3870c3c2466335
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94448466"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97514533"
 ---
 # <a name="predefined-macros"></a>미리 정의된 매크로
 
@@ -525,7 +525,9 @@ MSVC는 아래의 미리 정의된 매크로도 추가로 지원합니다.
 
 - `__MSVC_RUNTIME_CHECKS`  [`/RTC`](../build/reference/rtc-run-time-error-checks.md)  컴파일러 옵션 중 하나가 설정된 경우 1로 정의됩니다. 그 이외의 경우에는 정의되지 않습니다.
 
-- `_MSVC_TRADITIONAL` 전처리기 규칙 모드  [`/experimental:preprocessor`](../build/reference/experimental-preprocessor.md)  컴파일러 옵션이 설정된 경우 0으로 정의됩니다. 기본적으로 또는  [`/experimental:preprocessor-`](../build/reference/experimental-preprocessor.md)  컴파일러 옵션이 설정된 경우 기존 전처리기가 사용 중임을 나타내도록 1로 정의됩니다. `_MSVC_TRADITIONAL` 매크로 및 [ **`/experimental:preprocessor`** (전처리기 적합성 모드 사용)](../build/reference/experimental-preprocessor.md) 컴파일러 옵션은 Visual Studio 2017 버전 15.8부터 사용할 수 있습니다.
+- `_MSVC_TRADITIONAL`:
+    - Visual Studio 2017 버전 15.8부터 사용 가능: 전처리기 규칙 모드 [`/experimental:preprocessor`](../build/reference/experimental-preprocessor.md) 컴파일러 옵션이 설정된 경우 0으로 정의됩니다. 기본적으로 또는  [`/experimental:preprocessor-`](../build/reference/experimental-preprocessor.md)  컴파일러 옵션이 설정된 경우 기존 전처리기가 사용 중임을 나타내도록 1로 정의됩니다.
+    - Visual Studio 2019 버전 16.5부터 사용 가능: 전처리기 규칙 모드 [`/Zc:preprocessor`](../build/reference/zc-preprocessor.md) 컴파일러 옵션이 설정된 경우 0으로 정의됩니다. 기본적으로 또는 `/Zc:preprocessor-` 컴파일러 옵션이 설정된 경우 기존 전처리기가 사용 중임을 나타내도록(기본적으로 `/Zc:preprocessor`가 사용되지 않는 `/experimental:preprocessor`를 대체함) 1로 정의됩니다.
 
    ```cpp
    #if defined(_MSVC_TRADITIONAL) && _MSVC_TRADITIONAL
