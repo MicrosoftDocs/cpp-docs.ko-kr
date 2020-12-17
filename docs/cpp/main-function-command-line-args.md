@@ -1,7 +1,7 @@
 ---
 title: '`main` 함수 및 명령줄 인수 (c + +)'
 description: '`main`함수는 c + + 프로그램의 진입점입니다.'
-ms.date: 11/19/2020
+ms.date: 12/16/2020
 no-loc:
 - main
 - wmain
@@ -18,16 +18,16 @@ no-loc:
 - char
 - wchar_t
 - extern
-ms.openlocfilehash: 8a5ed43bdacf5d9d6dd2cbc5d1c56783c82b8e9a
-ms.sourcegitcommit: b02c61667ff7f38e7add266d0aabd8463f2dbfa1
+ms.openlocfilehash: a9c68f199d4169c02260542a9730472e4ab397bd
+ms.sourcegitcommit: 387ce22a3b0137f99cbb856a772b5a910c9eba99
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95483219"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97645074"
 ---
 # <a name="no-locmain-function-and-command-line-arguments"></a>`main` 함수 및 명령줄 인수
 
-모든 c + + 프로그램에는 함수가 있어야 합니다 `main` . 함수 없이 c + + 프로그램을 컴파일하는 경우 `main` 컴파일러에서 오류가 발생 합니다. 동적 연결 라이브러리 및 static 라이브러리에는 `main` 함수가 없습니다. `main` 함수는 소스 코드의 실행을 시작 하지만 프로그램이 함수를 시작 하기 전에 `main` static 명시적 이니셜라이저가 없는 모든 클래스 멤버가 0으로 설정 됩니다. Microsoft c + +에서는 static 에 대 한 진입 전에 전역 개체도 초기화 됩니다 `main` . `main`다른 c + + 함수에는 적용 되지 않는 함수에는 몇 가지 제한 사항이 적용 됩니다. `main`함수는 다음과 같습니다.
+모든 c + + 프로그램에는 함수가 있어야 합니다 `main` . 함수 없이 c + + 프로그램을 컴파일하는 경우 `main` 컴파일러에서 오류가 발생 합니다. 동적 연결 라이브러리 및 static 라이브러리에는 `main` 함수가 없습니다. `main` 함수는 소스 코드의 실행을 시작 하지만 프로그램이 함수를 시작 하기 전에 `main` static 명시적 이니셜라이저가 없는 모든 클래스 멤버가 0으로 설정 됩니다. Microsoft c + +에서는 static 에 대 한 진입 전에 전역 개체도 초기화 됩니다 `main` . `main`다른 c + + 함수에는 적용 되지 않는 함수에는 몇 가지 제한 사항이 적용 됩니다. `main` 함수:
 
 - 오버 로드할 수 없습니다 ( [함수 오버 로드](./function-overloading.md)참조).
 - 는로 선언할 수 없습니다 **`inline`** .
@@ -109,19 +109,21 @@ int wmain(int argc, wchar_t* argv[], wchar_t* envp[]);
 #include <string.h>
 
 using namespace std;
-int main( int argc, char *argv[], char *envp[] ) {
-    int iNumberLines = 0;    // Default is no line numbers.
+int main( int argc, char *argv[], char *envp[] )
+{
+    bool numberLines = false;    // Default is no line numbers.
 
     // If /n is passed to the .exe, display numbered listing
     // of environment variables.
-
     if ( (argc == 2) && _stricmp( argv[1], "/n" ) == 0 )
-         iNumberLines = 1;
+         numberLines = true;
 
     // Walk through list of strings until a NULL is encountered.
-    for( int i = 0; envp[i] != NULL; ++i ) {
-        if( iNumberLines )
-            cout << i << ": " << envp[i] << "\n";
+    for ( int i = 0; envp[i] != NULL; ++i )
+    {
+        if ( numberLines )
+            cout << i << ": "; // Prefix with numbers if /n specified
+        cout << envp[i] << "\n";
     }
 }
 ```
@@ -186,15 +188,15 @@ int main( int argc,      // Number of strings in array argv
 
 명령줄 인수는 런타임 시작 코드의 내부 루틴에 의해 처리 되며, 기본적으로 문자열 배열의 개별 문자열로 와일드 카드를 확장 하지 않습니다 `argv` . *`setargv.obj`* *`wsetargv.obj`* `wmain` **`/link`** 컴파일러 옵션 또는 명령줄에 파일 (파일)을 포함 하 여 와일드 카드 확장을 사용 하도록 설정할 수 있습니다 **`LINK`** .
 
-런타임 시작 링커 옵션에 대 한 자세한 내용은 [Link options](../c-runtime-library/link-options.md)을 참조 하세요.
+런타임 시작 링커 옵션에 대한 자세한 내용은 [링크 옵션](../c-runtime-library/link-options.md)을 참조하세요.
 
 ## <a name="customize-c-command-line-processing"></a><a name="customize"/> C + + 명령줄 처리 사용자 지정
 
-프로그램에서 명령줄 인수를 사용 하지 않는 경우 명령줄 처리 루틴을 억제 하 여 적은 공간을 절약할 수 있습니다. 사용 하지 않으려면 *`noarg.obj`* `main` `wmain` **`/link`** 컴파일러 옵션 또는 명령줄에 파일 (및의 경우)을 포함 합니다 **`LINK`** .
+프로그램에서 명령줄 인수를 사용하지 않는 경우 명령줄 처리를 수행하는 루틴을 억제하여 약간의 공간을 절약할 수 있습니다. 사용을 억제하려면 **`/link`** 컴파일러 옵션이나 **`LINK`** 명령줄에 *`noarg.obj`* 파일(`main` 및 `wmain` 둘 다에 대해)을 포함합니다.
 
-마찬가지로 인수를 통해 환경 테이블에 액세스 하지 않는 경우 *`envp`* 내부 환경 처리 루틴을 표시 하지 않을 수 있습니다. 사용 하지 않으려면 *`noenv.obj`* `main` `wmain` **`/link`** 컴파일러 옵션 또는 명령줄에 파일 (및의 경우)을 포함 합니다 **`LINK`** .
+마찬가지로 *`envp`* 인수를 통해 환경 테이블에 액세스하지 않는 경우 내부 환경 처리 루틴 또한 억제할 수 있습니다. 사용을 억제하려면 **`/link`** 컴파일러 옵션이나 **`LINK`** 명령줄에 *`noenv.obj`* 파일(`main` 및 `wmain` 둘 다에 대해)을 포함합니다.
 
-프로그램은 `spawn` `exec` C 런타임 라이브러리에서 또는 루틴의 패밀리를 호출할 수 있습니다. 부모 프로세스에서 자식 프로세스로 환경을 전달 하는 데 사용 되므로 환경 처리 루틴을 억제 하면 안 됩니다.
+프로그램에서 C 런타임 라이브러리의 루틴 중 `spawn` 또는 `exec` 제품군을 호출할 수 있습니다. 이 경우 부모 프로세스에서 자식 프로세스로 환경을 전달하는 데 사용되므로 환경 처리 루틴을 억제하면 안 됩니다.
 
 ## <a name="see-also"></a>참조
 

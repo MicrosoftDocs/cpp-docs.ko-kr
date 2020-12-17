@@ -1,16 +1,16 @@
 ---
 title: C++ Core Guidelines 사용
 description: C++ Core Guidelines에 대 한 Microsoft c + + 코드 분석 규칙을 설정 하 고 사용 하는 방법입니다.
-ms.date: 07/27/2020
+ms.date: 12/16/2020
 ms.topic: conceptual
 dev_langs:
 - CPP
-ms.openlocfilehash: 4fb06b0f78c93e6b76e0b8d64d7dfbdc541cf299
-ms.sourcegitcommit: 12eb6a824dd7187a065d44fceca4c410f58e121e
+ms.openlocfilehash: 93b69839bc9e5ffd45a08da12e84028eea10aef4
+ms.sourcegitcommit: 387ce22a3b0137f99cbb856a772b5a910c9eba99
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "94334145"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97645165"
 ---
 # <a name="use-the-c-core-guidelines-checkers"></a>C++ Core Guidelines 검사기 사용
 
@@ -116,43 +116,43 @@ C++ Core Guidelines는 더 빠르고 안전한 코드를 작성 하는 데 도�
 
 C++ Core Guidelines 검사기에 새 규칙을 추가 하면 기존 코드에 대해 생성 되는 경고 수가 늘어날 수 있습니다. 미리 정의 된 규칙 집합을 사용 하 여 사용할 규칙의 종류를 필터링 할 수 있습니다. [Visual Studio C++ Core Check 참조](code-analysis-for-cpp-corecheck.md)에서 대부분의 규칙에 대 한 참조 문서를 찾을 수 있습니다.
 
-- **산술 규칙** : 산술 [오버플로](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-overflow), [부호 없는](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-unsigned)서명 된 작업 및 [비트 조작을](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-nonnegative)검색 하는 규칙입니다. <sup>15.6</sup>
+- **산술 규칙**: 산술 [오버플로](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-overflow), [부호 없는](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-unsigned)서명 된 작업 및 [비트 조작을](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-nonnegative)검색 하는 규칙입니다. <sup>15.6</sup>
 
-- **범위 규칙** : [C++ Core Guidelines의 범위 프로필](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile)을 적용 합니다. <sup>15.3</sup>
+- **범위 규칙**: [C++ Core Guidelines의 범위 프로필](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile)을 적용 합니다. <sup>15.3</sup>
 
-- **클래스 규칙** : 특수 멤버 함수 및 가상 사양의 적절 한 사용에 초점을 맞춘 몇 가지 규칙입니다. [클래스 및 클래스 계층 구조](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-class)에 대해 권장 하는 검사의 하위 집합입니다. <sup>15.5</sup>
+- **클래스 규칙**: 특수 멤버 함수 및 가상 사양의 적절 한 사용에 초점을 맞춘 몇 가지 규칙입니다. [클래스 및 클래스 계층 구조](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-class)에 대해 권장 하는 검사의 하위 집합입니다. <sup>15.5</sup>
 
-- **동시성 규칙** : 잘못 된 가드 개체 선언을 catch 하는 단일 규칙입니다. 자세한 내용은 [concurrency와 관련 된 지침](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency)을 참조 하세요. <sup>15.5</sup>
+- **동시성 규칙**: 잘못 된 가드 개체 선언을 catch 하는 단일 규칙입니다. 자세한 내용은 [concurrency와 관련 된 지침](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency)을 참조 하세요. <sup>15.5</sup>
 
-- **Const 규칙** : [C++ Core Guidelines에서 const 관련 검사를](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)적용 합니다. <sup>15.3</sup>
+- **Const 규칙**: [C++ Core Guidelines에서 const 관련 검사를](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)적용 합니다. <sup>15.3</sup>
 
-- **선언 규칙** : 전역 변수를 선언 하는 방법에 초점을 맞춘 [인터페이스 지침](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-interfaces) 의 몇 가지 규칙입니다. <sup>15.5</sup>
+- **선언 규칙**: 전역 변수를 선언 하는 방법에 초점을 맞춘 [인터페이스 지침](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-interfaces) 의 몇 가지 규칙입니다. <sup>15.5</sup>
 
-- **열거형 규칙** : 이러한 규칙 [은 C++ Core Guidelines에서 열거형 관련 검사를](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-enum)적용 합니다. <sup>16.3</sup>
+- **열거형 규칙**: 이러한 규칙 [은 C++ Core Guidelines에서 열거형 관련 검사를](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-enum)적용 합니다. <sup>16.3</sup>
 
 - **실험적 규칙** 이러한 규칙은 유용 하지만 일상적으로 사용할 준비가 되지 않은 실험적 C++ Core Check 규칙입니다. 사용해 보고 피드백을 [제공](https://aka.ms/feedback/suggest?space=62)하세요. <sup>16.0</sup>
 
-- **함수 규칙** : 지정자를 도입 하는 데 도움이 되는 두 가지 검사입니다 **`noexcept`** . [Clear 함수 디자인 및 구현](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-functions)에 대 한 지침의 일부입니다. <sup>15.5</sup>
+- **함수 규칙**: 지정자를 도입 하는 데 도움이 되는 두 가지 검사입니다 **`noexcept`** . [Clear 함수 디자인 및 구현](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-functions)에 대 한 지침의 일부입니다. <sup>15.5</sup>
 
-- **Gsl 규칙** : 이러한 규칙은 [C++ Core Guidelines에서 지침 지원 라이브러리](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-gsl)와 관련 된 검사를 적용 합니다. <sup>15.7</sup>
+- **Gsl 규칙**: 이러한 규칙은 [C++ Core Guidelines에서 지침 지원 라이브러리](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-gsl)와 관련 된 검사를 적용 합니다. <sup>15.7</sup>
 
-- **수명 규칙** : 이러한 규칙은 [C++ Core Guidelines의 수명 프로필](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prolifetime-lifetime-safety-profile)을 적용 합니다. <sup>15.7</sup>
+- **수명 규칙**: 이러한 규칙은 [C++ Core Guidelines의 수명 프로필](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prolifetime-lifetime-safety-profile)을 적용 합니다. <sup>15.7</sup>
 
-- **소유자 포인터 규칙** : [ \<T> C++ Core Guidelines 소유자 관련 리소스 관리 검사를](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)적용 합니다. <sup> 15.3</sup>
+- **소유자 포인터 규칙**: [ \<T> C++ Core Guidelines 소유자 관련 리소스 관리 검사를](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)적용 합니다.<sup> 15.3</sup>
 
-- **원시 포인터 규칙** : [C++ Core Guidelines에서 원시 포인터 관련 리소스 관리 검사를](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)적용 합니다. <sup>15.3</sup>
+- **원시 포인터 규칙**: [C++ Core Guidelines에서 원시 포인터 관련 리소스 관리 검사를](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)적용 합니다. <sup>15.3</sup>
 
-- **공유 포인터 규칙** : [리소스 관리](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-resource) 지침 적용의 일부입니다. <sup>15.5</sup> 공유 포인터가 함수로 전달 되거나 로컬로 사용 되는 방법과 관련 된 몇 가지 규칙을 추가 했습니다.
+- **공유 포인터 규칙**: [리소스 관리](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-resource) 지침 적용의 일부입니다. <sup>15.5</sup> 공유 포인터가 함수로 전달 되거나 로컬로 사용 되는 방법과 관련 된 몇 가지 규칙을 추가 했습니다.
 
-- **Stl 규칙** : 이러한 규칙 [은 C++ Core Guidelines에서 c + + 표준 라이브러리 (STL)](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-stdlib)와 관련 된 검사를 적용 합니다. <sup>15.7</sup>
+- **Stl 규칙**: 이러한 규칙 [은 C++ Core Guidelines에서 c + + 표준 라이브러리 (STL)](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-stdlib)와 관련 된 검사를 적용 합니다. <sup>15.7</sup>
 
-- **스타일 규칙** : [goto](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-goto)를 사용 하는 차단을는 간단 하지만 중요 한 검사입니다. <sup>15.5</sup> c + +에서 코딩 스타일과 식 및 문의 사용을 개선 하는 첫 번째 단계입니다.
+- **스타일 규칙**: [goto](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-goto)를 사용 하는 차단을는 간단 하지만 중요 한 검사입니다. <sup>15.5</sup> c + +에서 코딩 스타일과 식 및 문의 사용을 개선 하는 첫 번째 단계입니다.
 
-- **형식 규칙** : [C++ Core Guidelines의 형식 프로필](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile)을 적용 합니다. <sup>15.3</sup>
+- **형식 규칙**: [C++ Core Guidelines의 형식 프로필](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile)을 적용 합니다. <sup>15.3</sup>
 
-- **고유 포인터 규칙** : [C++ Core Guidelines의 고유 포인터 의미 체계를 사용 하 여 형식과 관련 된 리소스 관리 검사를](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)적용 합니다. <sup>15.3</sup>
+- **고유 포인터 규칙**: [C++ Core Guidelines의 고유 포인터 의미 체계를 사용 하 여 형식과 관련 된 리소스 관리 검사를](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)적용 합니다. <sup>15.3</sup>
 
-- **C++ Core Check 규칙** :이 규칙 집합은 실험적 규칙을 제외 하 고 [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c-core-guidelines)에서 현재 구현 된 모든 검사를 포함 합니다.
+- **C++ Core Check 규칙**:이 규칙 집합은 실험적 규칙을 제외 하 고 [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c-core-guidelines)에서 현재 구현 된 모든 검사를 포함 합니다.
 
 <sup>15.3</sup> 이러한 규칙은 Visual Studio 2017 버전 15.3 \에 먼저 나타났습니다.
 <sup>15.5</sup> 이러한 규칙은 Visual Studio 2017 버전 15.5 \에 먼저 나타났습니다.
@@ -246,9 +246,9 @@ Microsoft c + + 컴파일러는 특성을 제한적으로 지원 합니다 `[[gs
 
 1. C++ Core Guidelines 검사기를 사용 하 여 분석 하려는 파일로 이동 하 여 해당 속성을 엽니다.
 
-1. **구성 속성**  >  **C/c + +**  >  **명령줄**  >  **추가 옵션** 을 선택 하 고 추가 합니다. *`/analyze:plugin EspXEngine.dll`*
+1. **구성 속성**  >  **C/c + +**  >  **명령줄**  >  **추가 옵션** 을 선택 하 고 추가 합니다.*`/analyze:plugin EspXEngine.dll`*
 
-1. 미리 컴파일된 헤더를 사용 하지 않도록 설정 합니다 ( **구성 속성**  >  **C/c + +**  >  **미리 컴파일된 헤더** ). 확장 엔진이 미리 컴파일된 헤더 (PCH)에서 내부 정보를 읽으려고 할 수 있기 때문에이 작업이 필요 합니다. PCH가 기본 프로젝트 옵션을 사용 하 여 컴파일된 경우에는 호환 되지 않습니다.
+1. 미리 컴파일된 헤더를 사용 하지 않도록 설정 합니다 (**구성 속성**  >  **C/c + +**  >  **미리 컴파일된 헤더**). 확장 엔진이 미리 컴파일된 헤더 (PCH)에서 내부 정보를 읽으려고 할 수 있기 때문에이 작업이 필요 합니다. PCH가 기본 프로젝트 옵션을 사용 하 여 컴파일된 경우에는 호환 되지 않습니다.
 
 1. 프로젝트를 다시 빌드합니다. 모든 파일에서 일반적인 PREFast 검사를 실행 해야 합니다. C++ Core Guidelines 검사기는 기본적으로 사용 하도록 설정 되어 있지 않으므로이를 사용 하도록 구성 된 파일 에서만 실행 해야 합니다.
 
@@ -308,7 +308,7 @@ MSBuild를 사용 하지 않는 빌드 시스템을 사용 하는 경우에도 �
 
 ## <a name="use-the-guideline-support-library"></a>지침 지원 라이브러리 사용
 
-GSL (지침 지원 라이브러리)은 핵심 지침을 따르는 데 도움이 되도록 설계 되었습니다. GSL에는 오류가 발생 하기 쉬운 구문을 보다 안전한 대체 항목으로 바꿀 수 있는 정의가 포함 되어 있습니다. 예를 들어 `T*, length` 매개 변수 쌍을 형식으로 바꿀 수 있습니다 `span<T>` . GSL은에서 사용할 수 있습니다 [http://www.nuget.org/packages/Microsoft.Gsl](https://www.nuget.org/packages/Microsoft.Gsl) . 라이브러리는 오픈 소스 이므로 소스를 보거나 의견을 올리거나 참가할 수 있습니다. 프로젝트는에서 찾을 수 있습니다 [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL) .
+GSL (지침 지원 라이브러리)은 핵심 지침을 따르는 데 도움이 되도록 설계 되었습니다. GSL에는 오류가 발생 하기 쉬운 구문을 보다 안전한 대체 항목으로 바꿀 수 있는 정의가 포함 되어 있습니다. 예를 들어 `T*, length` 매개 변수 쌍을 형식으로 바꿀 수 있습니다 `span<T>` . GSL 프로젝트는 GitHub에서 사용할 수 있습니다 [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL) . 라이브러리는 오픈 소스 이므로 소스를 보거나 의견을 올리거나 참가할 수 있습니다. [Vcpkg](../build/vcpkg.md) 패키지 관리자를 사용 하 여 라이브러리를 로컬로 다운로드 하 고 설치할 수도 있습니다.
 
 ::: moniker range="msvc-140"
 
@@ -334,6 +334,6 @@ Visual Studio 2015 내에서 코드 분석 규칙이 로드 되는 방식 때문
 
 ::: moniker-end
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio C++ Core Check 참조](code-analysis-for-cpp-corecheck.md)
