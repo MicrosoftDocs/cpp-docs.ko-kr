@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 메모리 덮어쓰기 확인'
 title: 메모리 덮어쓰기 확인
 ms.date: 11/04/2016
 helpviewer_keywords:
 - memory, overwrites
 ms.assetid: da7c5d77-a267-415f-a8ab-ee5ce5bfc286
-ms.openlocfilehash: 2c59cb96d640df6dcd96b9e0eafbcd325ed475f5
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 53361a6aea3de54017be3c966f9500accd21ced1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64342249"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163173"
 ---
 # <a name="checking-for-memory-overwrites"></a>메모리 덮어쓰기 확인
 

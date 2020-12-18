@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 부동 소수점 형식에서 변환'
 title: 부동 소수점 형식에서 변환
 ms.date: 10/02/2019
 helpviewer_keywords:
 - converting floating point
 - floating-point conversion
 ms.assetid: 96804c8e-fa3b-4742-9006-0082ed9e57f2
-ms.openlocfilehash: 72d0f95a6e48dcf0a5e8fea3757e85f9a03bf7e4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2e2a78a68b39d9109a2304d78070bddef36e9b52
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227896"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97293237"
 ---
 # <a name="conversions-from-floating-point-types"></a>부동 소수점 형식에서 변환
 
@@ -44,23 +45,23 @@ Microsoft 컴파일러는 **`float`** 값에 IEEE-754 binary32 표현을 사용�
 |----------|--------|------------|
 |**`float`**|**`char`**|**`long`** 으로 변환, **`long`** 을 **`char`** 로 변환|
 |**`float`**|**`short`**|**`long`** 으로 변환, **`long`** 을 **`short`** 로 변환|
-|**`float`**|**`int`**|소수점에서 자릅니다. 결과가 커서 **`int`** 로 나타낼 수 없는 경우 결과가 정의되지 않습니다.|
+|**`float`**|**`int`**|소수점에서 자릅니다. 결과가 커서 **`int`** 으로 나타낼 수 없는 경우 결과가 정의되지 않습니다.|
 |**`float`**|**`long`**|소수점에서 자릅니다. 결과가 커서 **`long`** 으로 나타낼 수 없는 경우 결과가 정의되지 않습니다.|
 |**`float`**|**`long long`**|소수점에서 자릅니다. 결과가 커서 **`long long`** 으로 나타낼 수 없는 경우 결과가 정의되지 않습니다.|
 |**`float`**|**`unsigned char`**|**`long`** 으로 변환, **`long`** 을 **`unsigned char`** 로 변환|
 |**`float`**|**`unsigned short`**|**`long`** 으로 변환, **`long`** 을 **`unsigned short`** 로 변환|
-|**`float`**|**`unsigned`**|소수점에서 자릅니다. 결과가 커서 **`unsigned`** 로 나타낼 수 없는 경우 결과가 정의되지 않습니다.|
+|**`float`**|**`unsigned`**|소수점에서 자릅니다. 결과가 커서 **`unsigned`** 으로 나타낼 수 없는 경우 결과가 정의되지 않습니다.|
 |**`float`**|**`unsigned long`**|소수점에서 자릅니다. 결과가 커서 **`unsigned long`** 으로 나타낼 수 없는 경우 결과가 정의되지 않습니다.|
 |**`float`**|**`unsigned long long`**|소수점에서 자릅니다. 결과가 커서 **`unsigned long long`** 으로 나타낼 수 없는 경우 결과가 정의되지 않습니다.|
 |**`float`**|**`double`**|**`double`** 로 나타냅니다.|
 |**`float`**|**`long double`**|**`long double`** 로 나타냅니다.|
 |**`double`**|**`char`**|**`float`** 로 변환, **`float`** 를 **`char`** 로 변환|
-|**`double`**|**`short`**|**`float`** 로 변환, **`float`** 를 **`short`** 로 변환|
-|**`double`**|**`int`**|소수점에서 자릅니다. 결과가 커서 **`int`** 로 나타낼 수 없는 경우 결과가 정의되지 않습니다.|
+|**`double`**|**`short`**|**`float`** 으로 변환, **`float`** 을 **`short`** 로 변환|
+|**`double`**|**`int`**|소수점에서 자릅니다. 결과가 커서 **`int`** 으로 나타낼 수 없는 경우 결과가 정의되지 않습니다.|
 |**`double`**|**`long`**|소수점에서 자릅니다. 결과가 커서 **`long`** 으로 나타낼 수 없는 경우 결과가 정의되지 않습니다.|
 |**`double`**|**`unsigned char`**|**`long`** 으로 변환, **`long`** 을 **`unsigned char`** 로 변환|
 |**`double`**|**`unsigned short`**|**`long`** 으로 변환, **`long`** 을 **`unsigned short`** 로 변환|
-|**`double`**|**`unsigned`**|소수점에서 자릅니다. 결과가 커서 **`unsigned`** 로 나타낼 수 없는 경우 결과가 정의되지 않습니다.|
+|**`double`**|**`unsigned`**|소수점에서 자릅니다. 결과가 커서 **`unsigned`** 으로 나타낼 수 없는 경우 결과가 정의되지 않습니다.|
 |**`double`**|**`unsigned long`**|소수점에서 자릅니다. 결과가 커서 **`unsigned long`** 으로 나타낼 수 없는 경우 결과가 정의되지 않습니다.|
 |**`double`**|**`unsigned long long`**|소수점에서 자릅니다. 결과가 커서 **`unsigned long long`** 으로 나타낼 수 없는 경우 결과가 정의되지 않습니다.|
 |**`double`**|**`float`**|**`float`** 로 나타냅니다. **`double`** 값을 **`float`** 로 정확히 나타낼 수 없는 경우 정밀도가 손실됩니다. 값이 커서 **`float`** 로 나타낼 수 없는 경우 결과가 정의되지 않습니다.|

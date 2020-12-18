@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: PgoAutoSweep'
 title: PgoAutoSweep
 ms.date: 07/02/2019
 f1_keywords:
 - PgoAutoSweep
 - PogoAutoSweepA
 - PogoAutoSweepW
-ms.openlocfilehash: 57bcd1b2e9f0a3312867c4373fd1e50bcf91576e
-ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
+ms.openlocfilehash: 8310b86f8ef7db011ed7340cef4e42def79a0927
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67552237"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97179787"
 ---
 # <a name="pgoautosweep"></a>PgoAutoSweep
 
@@ -32,11 +33,11 @@ void PgoAutoSweep(const wchar_t* name); // UNICODE
 
 애플리케이션 실행 중 언제든지 애플리케이션에서 `PgoAutoSweep`를 호출하여 프로필 데이터를 저장하고 다시 설정할 수 있습니다. 계측된 빌드에서 `PgoAutoSweep`는 현재 프로파일링 데이터를 캡처하여 파일에 저장한 다음 프로필 카운터를 다시 설정합니다. 실행 파일의 특정 시점에 [pgosweep](pgosweep.md) 명령을 호출하는 것과 동일합니다. 최적화된 빌드에서는 `PgoAutoSweep`가 no-op입니다.
 
-저장된 프로필 카운터 데이터는 *base_name*-*name*!*value*.pgc라는 파일에 배치됩니다. 여기서 *base_name*은 실행 파일의 기본 이름이고, *name*은 `PgoAutoSweep`에 전달된 매개 변수이고, *value*는 고유한 값이며 파일 이름 충돌을 방지하기 위해 일반적으로 순차적으로 증가하는 숫자입니다.
+저장된 프로필 카운터 데이터는 *base_name*-*name*!*value*.pgc라는 파일에 배치됩니다. 여기서 *base_name* 은 실행 파일의 기본 이름이고, *name* 은 `PgoAutoSweep`에 전달된 매개 변수이고, *value* 는 고유한 값이며 파일 이름 충돌을 방지하기 위해 일반적으로 순차적으로 증가하는 숫자입니다.
 
 `PgoAutoSweep`에서 만든 `.pgc` 파일은 `.pgd` 파일에 병합하여 최적화된 실행 파일을 만드는 데 사용해야 합니다. [pgomgr](pgomgr.md) 명령을 사용하여 병합을 수행할 수 있습니다.
 
-최적화 빌드 중 [/USEPROFILE](reference/useprofile.md) 링커 옵션의 **PGD=** _filename_ 인수를 사용하거나 사용 중단된 **/PGD**링커 옵션을 사용하여 병합된 `.pgd` 파일의 이름을 링커에 전달할 수 있습니다. `.pgc` 파일을 *base_name*.pgd라는 파일에 병합하는 경우에는 링커에서 기본적으로 이 파일 이름을 선택하므로 명령줄에서 파일 이름을 지정할 필요가 없습니다.
+최적화 빌드 중 [/USEPROFILE](reference/useprofile.md) 링커 옵션의 **PGD=** _filename_ 인수를 사용하거나 사용 중단된 **/PGD** 링커 옵션을 사용하여 병합된 `.pgd` 파일의 이름을 링커에 전달할 수 있습니다. `.pgc` 파일을 *base_name*.pgd라는 파일에 병합하는 경우에는 링커에서 기본적으로 이 파일 이름을 선택하므로 명령줄에서 파일 이름을 지정할 필요가 없습니다.
 
 `PgoAutoSweep` 함수는 계측된 빌드를 만들 때 지정된 스레드로부터의 안전성 설정을 유지합니다. 기본 설정을 사용하거나 [/GENPROFILE 또는 /FASTGENPROFILE](reference/genprofile-fastgenprofile-generate-profiling-instrumented-build.md) 링커 옵션에 **NOEXACT** 인수를 지정하는 경우 `PgoAutoSweep` 호출은 스레드로부터 안전하지 않습니다. **EXACT** 인수는 스레드로부터 안전하고 더 정확하지만 느린 계측된 실행 파일을 만듭니다.
 

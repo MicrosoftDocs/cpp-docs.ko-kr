@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 단순 변수 선언'
 title: 단순 변수 선언
 ms.date: 11/04/2016
 helpviewer_keywords:
 - untyped variables
 - declaring variables, simple
 ms.assetid: b07adf9d-9e79-4b64-8a34-e6fe1c7eccec
-ms.openlocfilehash: 42547828e78566982053d22e8288fe1ccbe6e26b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ccb63ad3726d8a5ed5692abd5ec678a1b517614d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229534"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114626"
 ---
 # <a name="simple-variable-declarations"></a>단순 변수 선언
 

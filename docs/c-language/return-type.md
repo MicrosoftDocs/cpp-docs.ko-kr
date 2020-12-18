@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 반환 형식'
 title: 반환 형식
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - return keyword [C++], function return types
 - functions [C++], return types
 ms.assetid: 3e5b8a97-b341-48c5-8be8-8986980ef586
-ms.openlocfilehash: 1d905e02be02784b562b9d1a8f72a9bfa4057b9b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5f4c3c59dd5d89a3c9083eb177bb72e4049ab454
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226329"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97293029"
 ---
 # <a name="return-type"></a>반환 형식
 
@@ -26,7 +27,7 @@ ms.locfileid: "87226329"
 *function-definition*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*declaration-specifiers*<sub>opt</sub> *attribute-seq*<sub>opt</sub> *declarator* *declaration-list*<sub>opt</sub> *compound-statement*
 
-/\* *attribute-seq*는 Microsoft 전용임 \*/
+/\* *attribute-seq* 는 Microsoft 전용임 \*/
 
 *declaration-specifiers*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*storage-class-specifier* *declaration-specifiers*<sub>opt</sub><br/>
@@ -37,7 +38,7 @@ ms.locfileid: "87226329"
 &nbsp;&nbsp;&nbsp;&nbsp; **`void`**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; **`char`**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; **`short`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **`int`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`int`**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; **`__int8`**  /\* Microsoft 전용 \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; **`__int16`**  /\* Microsoft 전용 \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; **`__int32`**  /\* Microsoft 전용 \*/<br/>
@@ -46,12 +47,12 @@ ms.locfileid: "87226329"
 &nbsp;&nbsp;&nbsp;&nbsp; **`float`**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; **`double`**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; **`signed`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **`unsigned`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`unsigned`**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*struct-or-union-specifier*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*enum-specifier*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*typedef-name*
 
-*type-specifier*는 모든 기본, 구조체 또는 공용 구조체 형식을 지정할 수 있습니다. *type-specifier*를 포함하지 않는 경우 반환 형식은 **`int`** 로 간주됩니다.
+*type-specifier* 는 모든 기본, 구조체 또는 공용 구조체 형식을 지정할 수 있습니다. *type-specifier* 를 포함하지 않는 경우 반환 형식은 **`int`** 로 간주됩니다.
 
 함수 정의에 지정된 반환 형식은 프로그램의 다른 곳에서 선언된 함수의 반환 형식과 일치해야 합니다. 함수는 식을 포함하는 **`return`** 문이 실행될 때 값을 반환합니다. 식이 계산되고 반환 값 형식으로 변환되고(필요한 경우) 함수가 호출된 지점으로 돌아갑니다. 함수가 반환 형식 **`void`** 로 선언되는 경우 식이 포함된 Return 문은 경고를 발생시키고 식은 계산되지 않습니다.
 

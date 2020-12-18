@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 기본 식의 문자열 리터럴'
 title: 기본 식의 문자열 리터럴
 ms.date: 11/04/2016
 helpviewer_keywords:
 - string literals, in primary expressions
 ms.assetid: 3ec31278-527b-40d2-8c83-6b09e2d81ca6
-ms.openlocfilehash: 814bba9abcdda9b60460c68ae30d53dc8412c6c8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3305685038cfce5d3cc73cd8e4b8ee77b778f863
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226257"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97137269"
 ---
 # <a name="string-literals-in-primary-expressions"></a>기본 식의 문자열 리터럴
 

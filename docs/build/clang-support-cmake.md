@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: Visual Studio CMake 프로젝트의 Clang/LLVM 지원'
 title: Visual Studio CMake 프로젝트의 Clang/LLVM 지원
 ms.date: 07/01/2019
 ms.description: Configure a CMake project in Visual Studio to use the Clang/LLVM toolchain.
 helpviewer_keywords:
 - Clang support for C++ CMake projects
-ms.openlocfilehash: e23da02a0c3af624ddb30cec8dbb5afda55660c9
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 134a6c5edc62d826000752d3c2d1db370f338836
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92919581"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97157037"
 ---
 # <a name="clangllvm-support-in-visual-studio-cmake-projects"></a>Visual Studio CMake 프로젝트의 Clang/LLVM 지원
 
@@ -23,9 +24,9 @@ Clang 지원은 Visual Studio 2019에서 사용할 수 있습니다.
 
 Clang과 함께 Visual Studio를 사용하여 Windows 또는 Linux를 대상으로 하는 C++ CMake 프로젝트를 편집하고 디버그할 수 있습니다.
 
-**Windows** : Visual Studio 2019 버전 16.1에는 Windows를 대상으로 하는 CMake 프로젝트에서 Clang/LLVM으로 편집, 빌드 및 디버깅하는 기능에 대한 지원이 포함되어 있습니다.
+**Windows**: Visual Studio 2019 버전 16.1에는 Windows를 대상으로 하는 CMake 프로젝트에서 Clang/LLVM으로 편집, 빌드 및 디버깅하는 기능에 대한 지원이 포함되어 있습니다.
 
-**Linux** : Linux CMake 프로젝트의 경우 특별한 Visual Studio 지원이 필요 없습니다. 배포판의 패키지 관리자를 사용하여 Clang을 설치하고, CMakeLists.txt 파일에서 적절한 명령을 추가할 수 있습니다.
+**Linux**: Linux CMake 프로젝트의 경우 특별한 Visual Studio 지원이 필요 없습니다. 배포판의 패키지 관리자를 사용하여 Clang을 설치하고, CMakeLists.txt 파일에서 적절한 명령을 추가할 수 있습니다.
 
 ## <a name="install"></a>설치
 

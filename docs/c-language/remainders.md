@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: 나머지'
 title: 나머지
 ms.date: 11/04/2016
 ms.assetid: 79764580-a350-4151-b717-a4459c0f3368
-ms.openlocfilehash: 55b1ae0dc46be9c94fa243f6de25728cdd95819c
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 51aaa8dfea9167c0b7eeaacdff8a079ea00a3a0e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64343114"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97263168"
 ---
 # <a name="remainders"></a>나머지
 

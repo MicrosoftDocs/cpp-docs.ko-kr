@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: C 정수 상수'
 title: C 정수 상수
 ms.date: 02/27/2018
 helpviewer_keywords:
 - integer constants
 ms.assetid: fcf6b83c-2038-49ec-91ca-3d5ca1f83037
-ms.openlocfilehash: 48561599896bb8a6f9ee159630ff15df6c0454be
-ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
+ms.openlocfilehash: 1dbc22a2d4351dbd6d09f555a95380a1fd94619b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67400521"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97182192"
 ---
 # <a name="c-integer-constants"></a>C 정수 상수
 
@@ -68,11 +69,11 @@ ms.locfileid: "67400521"
 *64-bit-integer-suffix*: 다음 중 하나<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**i64 I64**
 
-**i64** 및 **I64**는 Microsoft 고유의 접미사입니다.
+**i64** 및 **I64** 는 Microsoft 고유의 접미사입니다.
 
 정수 상수는 빼기 기호( **-** )가 앞에 없는 경우 양수입니다. 빼기 기호는 단항 산술 부정 연산자로 해석됩니다. 이 연산자에 대한 자세한 내용은 [단항 산술 연산자](../c-language/unary-arithmetic-operators.md)를 참조하세요.
 
-정수 상수가 **0x** 또는 **0X**로 시작되는 경우 16진수이고, 숫자 **0**으로 시작되는 경우에는 8진수입니다. 두 경우에 해당하지 않으면 10진수로 간주됩니다.
+정수 상수가 **0x** 또는 **0X** 로 시작되는 경우 16진수이고, 숫자 **0** 으로 시작되는 경우에는 8진수입니다. 두 경우에 해당하지 않으면 10진수로 간주됩니다.
 
 다음 정수 상수는 같습니다.
 

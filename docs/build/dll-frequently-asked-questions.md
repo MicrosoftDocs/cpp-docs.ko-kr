@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: DLL 관련 질문과 대답'
 title: MFC DLL 관련 질문과 대답
 ms.date: 05/06/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - DLLs [C++], frequently asked questions
 - FAQs [C++], DLLs
 ms.assetid: 09dd068e-fc33-414e-82f7-289c70680256
-ms.openlocfilehash: e12817e016376d5b76ec67e8bd10fbd3e85dbdda
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 501ec5cb5c5a8f4993e4f54e5d0434e31a26af9e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229846"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156712"
 ---
 # <a name="dll-frequently-asked-questions"></a>DLL 관련 질문과 대답
 
@@ -29,7 +30,7 @@ ms.locfileid: "87229846"
 
 ## <a name="can-an-mfc-dll-create-multiple-threads"></a><a name="mfc_multithreaded_1"></a> MFC DLL은 여러 스레드를 만들 수 있습니까?
 
-초기화 도중을 제외하고, MFC DLL은 **TlsAlloc** 같은 Win32 TLS(스레드 로컬 스토리지) 함수를 사용하여 스레드 로컬 스토리지를 할당하는 동안 안전하게 여러 스레드를 만들 수 있습니다. 그러나 MFC DLL이 **`__declspec(thread)`** 을 사용하여 스레드 로컬 스토리지를 할당하는 경우 클라이언트 애플리케이션은 DLL에 암시적으로 연결되어야 합니다. 클라이언트 애플리케이션이 DLL에 명시적으로 연결하는 경우 **LoadLibrary**를 호출하면 DLL이 성공적으로 로드되지 않습니다. DLL의 스레드 로컬 변수에 대한 자세한 내용은 [스레드](../cpp/thread.md)를 참조하세요.
+초기화 도중을 제외하고, MFC DLL은 **TlsAlloc** 같은 Win32 TLS(스레드 로컬 스토리지) 함수를 사용하여 스레드 로컬 스토리지를 할당하는 동안 안전하게 여러 스레드를 만들 수 있습니다. 그러나 MFC DLL이 **`__declspec(thread)`** 을 사용하여 스레드 로컬 스토리지를 할당하는 경우 클라이언트 애플리케이션은 DLL에 암시적으로 연결되어야 합니다. 클라이언트 애플리케이션이 DLL에 명시적으로 연결하는 경우 **LoadLibrary** 를 호출하면 DLL이 성공적으로 로드되지 않습니다. DLL의 스레드 로컬 변수에 대한 자세한 내용은 [스레드](../cpp/thread.md)를 참조하세요.
 
 시작하는 동안 새 MFC 스레드를 만드는 MFC DLL은 애플리케이션에 의해 로드될 때 응답을 중지합니다. 여기에는 다음 내부에서 `AfxBeginThread` 또는 `CWinThread::CreateThread`를 호출하여 스레드를 만드는 경우가 모두 포함됩니다.
 

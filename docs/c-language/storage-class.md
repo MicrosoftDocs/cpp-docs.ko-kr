@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 스토리지 클래스'
 title: 스토리지 클래스
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - external linkage, storage-class specifiers
 - static storage class specifiers
 ms.assetid: 39a79ba6-edf5-42b6-8e45-f94227603dd6
-ms.openlocfilehash: 872a014dfc7c21b46f9af810f1cb3463016c7e09
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 87f53c38b2f71acc15499a496e98b1f9c7173210
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211686"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97296734"
 ---
 # <a name="storage-class"></a>스토리지 클래스
 
@@ -26,7 +27,7 @@ ms.locfileid: "87211686"
 *function-definition*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*declaration-specifiers*<sub>opt</sub> *attribute-seq*<sub>opt</sub> *declarator* *declaration-list*<sub>opt</sub> *compound-statement*
 
-/\* *attribute-seq*는 Microsoft 전용임 \*/
+/\* *attribute-seq* 는 Microsoft 전용임 \*/
 
 *declaration-specifiers*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*storage-class-specifier* *declaration-specifiers*<sub>opt</sub><br/>
@@ -35,11 +36,11 @@ ms.locfileid: "87211686"
 
 *storage-class-specifier*: /\* 함수 정의용 \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; **`extern`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **`static`**
+&nbsp;&nbsp;&nbsp;&nbsp;**`static`**
 
-함수 정의에 *storage-class-specifier*가 포함되지 않은 경우 스토리지 클래스의 기본값은 **`extern`** 입니다. 함수를 명시적으로 **`extern`** 으로 선언할 수 있지만 반드시 그렇게 할 필요는 없습니다.
+함수 정의에 *storage-class-specifier* 가 포함되지 않은 경우 스토리지 클래스의 기본값은 **`extern`** 입니다. 함수를 명시적으로 **`extern`** 으로 선언할 수 있지만 반드시 그렇게 할 필요는 없습니다.
 
-함수 선언에 *storage-class-specifier* **`extern`** 이 포함된 경우 식별자의 링크가 파일 범위를 포함하는 식별자의 모든 표시되는 선언의 링크와 동일합니다. 파일 범위를 포함하는 표시되는 선언이 없는 경우 식별자에 외부 링크가 있습니다. 식별자에 파일 범위가 있으며 *storage-class-specifier*는 없는 경우 식별자에 외부 링크가 있습니다. 외부 링크는 식별자의 각 인스턴스가 동일한 개체 또는 함수를 표시함을 의미합니다. 링크 및 파일 범위에 대한 자세한 내용은 [수명, 범위, 표시 유형 및 링크](../c-language/lifetime-scope-visibility-and-linkage.md)를 참조하세요.
+함수 선언에 *storage-class-specifier* **`extern`** 이 포함된 경우 식별자의 링크가 파일 범위를 포함하는 식별자의 모든 표시되는 선언의 링크와 동일합니다. 파일 범위를 포함하는 표시되는 선언이 없는 경우 식별자에 외부 링크가 있습니다. 식별자에 파일 범위가 있으며 *storage-class-specifier* 는 없는 경우 식별자에 외부 링크가 있습니다. 외부 링크는 식별자의 각 인스턴스가 동일한 개체 또는 함수를 표시함을 의미합니다. 링크 및 파일 범위에 대한 자세한 내용은 [수명, 범위, 표시 유형 및 링크](../c-language/lifetime-scope-visibility-and-linkage.md)를 참조하세요.
 
 **`extern`** 이 아닌 스토리지 클래스 지정자를 포함하는 블록 범위 함수 선언은 오류를 발생시킵니다.
 

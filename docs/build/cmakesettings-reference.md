@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: CMakeSettings.json 스키마 참조'
 title: CMakeSettings.json 스키마 참조
 ms.date: 11/22/2019
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: 61da0fd70ad68928872a2212b70377ab8a83a76a
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 2be5edb616764d56e7c08a51be19aab11a62f227
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92919399"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156907"
 ---
 # <a name="cmakesettingsjson-schema-reference"></a>CMakeSettings.json 스키마 참조
 
@@ -23,7 +24,7 @@ CMake 프로젝트는 Visual Studio 2017 이상에서 지원됩니다.
 
 **CMakeSettings.json** 파일에는 Visual Studio가 IntelliSense에 사용하는 정보가 포함되어 있으며, Visual Studio는 이 정보를 사용하여 지정된 *구성* 및 컴파일러 *환경* 에 대해 cmake.exe로 전달하는 명령줄 인수를 생성합니다. 구성에서는 특정 플랫폼 및 빌드 형식(예: `x86-Debug` 또는 `Linux-Release`)에 적용되는 속성을 지정합니다. 각 구성은 컴파일러 도구 집합에 대한 정보(예: MSVC, GCC 또는 Clang)를 캡슐화하는 환경을 지정합니다. CMake는 명령줄 인수를 사용하여 프로젝트에 대한 루트 *CMakeCache.txt* 파일 및 기타 프로젝트 파일을 다시 생성합니다. *CMakeLists.txt* 파일에서 값을 재정의할 수 있습니다.
 
-IDE에서 구성을 추가하거나 제거한 다음, JSON 파일에서 직접 편집하거나 **CMake 설정 편집기** (Visual Studio 2019 이상)를 사용할 수 있습니다. IDE에서 손쉬운 구성 간 전환을 통해 다양한 프로젝트 파일을 생성할 수 있습니다. 자세한 내용은 [Visual Studio에서 CMake 빌드 설정 사용자 지정](customize-cmake-settings.md)을 참조하세요.
+IDE에서 구성을 추가하거나 제거한 다음, JSON 파일에서 직접 편집하거나 **CMake 설정 편집기**(Visual Studio 2019 이상)를 사용할 수 있습니다. IDE에서 손쉬운 구성 간 전환을 통해 다양한 프로젝트 파일을 생성할 수 있습니다. 자세한 내용은 [Visual Studio에서 CMake 빌드 설정 사용자 지정](customize-cmake-settings.md)을 참조하세요.
 
 ## <a name="configurations"></a>구성
 
@@ -35,7 +36,7 @@ IDE에서 구성을 추가하거나 제거한 다음, JSON 파일에서 직접 �
 - `addressSanitizerRuntimeFlags`: ASAN_OPTIONS 환경 변수를 통해 AddressSanitizer에 전달되는 런타임 플래그입니다. 형식: flag1=value:flag2=value2.
 - `buildCommandArgs`: --빌드 -- 후 CMake로 전달되는 네이티브 빌드 스위치를 지정합니다. 예를 들어 Ninja 생성기를 사용하는 경우 -v를 전달하면 Ninja에서 명령줄을 출력하도록 강제합니다. Ninja 명령에 대한 자세한 정보는 [Ninja 명령줄 인수](#ninja)를 참조하세요.
 - `buildRoot`: CMake가 선택한 생성기에 대한 빌드 스크립트를 생성하는 디렉터리를 지정합니다.  **-DCMAKE_BINARY_DIR** 스위치에 매핑되고 *CMakeCache.txt* 가 만들어질 위치를 지정합니다. 폴더가 없으면 해당 폴더가 만들어집니다. 지원되는 매크로에는 `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, `${env.VARIABLE}`이 포함됩니다.
-- `cacheGenerationCommand`: 명령줄 도구 및 인수(예: *gencache.bat debug* )를 지정하여 캐시를 생성합니다. 사용자가 다시 생성을 명시적으로 요청하는 경우 구성에 대해 지정된 환경의 셸에서 명령이 실행되거나 CMakeLists.txt 또는 CMakeSettings.json 파일이 수정됩니다.
+- `cacheGenerationCommand`: 명령줄 도구 및 인수(예: *gencache.bat debug*)를 지정하여 캐시를 생성합니다. 사용자가 다시 생성을 명시적으로 요청하는 경우 구성에 대해 지정된 환경의 셸에서 명령이 실행되거나 CMakeLists.txt 또는 CMakeSettings.json 파일이 수정됩니다.
 - `cacheRoot`: CMake 캐시의 경로를 지정합니다. 이 디렉터리에는 기존 *CMakeCache.txt* 파일이 포함되어야 합니다.
 - `clangTidyChecks`: clang-tidy로 전달될 쉼표로 구분된 경고 목록입니다. 와일드카드가 허용되고 '-' 접두사가 검사를 제거합니다.
 - `cmakeCommandArgs`: 프로젝트 파일을 생성하기 위해 호출될 때 CMake로 전달되는 추가 명령줄 옵션을 지정합니다.
@@ -59,7 +60,7 @@ IDE에서 구성을 추가하거나 제거한 다음, JSON 파일에서 직접 �
   - Visual Studio 16 2019 Win64
   - Visual Studio 16 2019 ARM
 
-  **Visual Studio 2017 이상** :
+  **Visual Studio 2017 이상**:
   - Visual Studio 15 2017
   - Visual Studio 15 2017 Win64
   - Visual Studio 15 2017 ARM

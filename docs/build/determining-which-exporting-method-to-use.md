@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 사용할 내보내기 방법 결정'
 title: 사용할 내보내기 방법 결정
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - def files [C++], exporting from DLLs
 - .def files [C++], exporting from DLLs
 ms.assetid: 66d773ed-935c-45c2-ad03-1a060874b34d
-ms.openlocfilehash: 974c32cef87801599ba0d14fd146e84ad874467f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5d9e973d331ebd6190cd8e2a46601dfe2b057d09
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62273739"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97162978"
 ---
 # <a name="determine-which-exporting-method-to-use"></a>사용할 내보내기 방법 결정
 

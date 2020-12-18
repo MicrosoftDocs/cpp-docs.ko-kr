@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 집합체 형식 초기화'
 title: 집합체 형식 초기화
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - union keyword [C]
 - aggregates [C++], initializing
 ms.assetid: a8f8ed75-39db-4592-93b9-d3920d915810
-ms.openlocfilehash: b4b0dd82263781966760b6e21ef24ded56b06a01
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a17e55f01e6a8844252dc0926942a27d40a6c7c6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229625"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97137620"
 ---
 # <a name="initializing-aggregate-types"></a>집합체 형식 초기화
 
@@ -29,15 +30,15 @@ ms.locfileid: "87229625"
 &nbsp;&nbsp;&nbsp;&nbsp;*initializer*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*initializer-list*  **,**  *initializer*
 
-*initializer-list*는 쉼표로 구분된 이니셜라이저 목록입니다. 목록에서 각 이니셜라이저는 상수 식이거나 이니셜라이저 목록입니다. 따라서 이니셜라이저 목록은 중첩될 수 있습니다. 이 형식은 이 단원의 예제에서 나타난 것처럼 집합체 형식의 집합체 멤버를 초기화하는 데 유용합니다. 그러나 자동 식별자에 대한 이니셜라이저가 단일 식인 경우 상수 식일 필요가 없으며 단지 식별자에 할당하기 위한 올바른 형식을 가져야 합니다.
+*initializer-list* 는 쉼표로 구분된 이니셜라이저 목록입니다. 목록에서 각 이니셜라이저는 상수 식이거나 이니셜라이저 목록입니다. 따라서 이니셜라이저 목록은 중첩될 수 있습니다. 이 형식은 이 단원의 예제에서 나타난 것처럼 집합체 형식의 집합체 멤버를 초기화하는 데 유용합니다. 그러나 자동 식별자에 대한 이니셜라이저가 단일 식인 경우 상수 식일 필요가 없으며 단지 식별자에 할당하기 위한 올바른 형식을 가져야 합니다.
 
 각 이니셜라이저 목록의 경우 상수 식의 값은 순서대로 집합체 변수의 해당 멤버에 할당됩니다.
 
-*initializer-list*가 집합체 형식보다 적은 값을 갖는 경우 집합체 형식의 나머지 멤버 또는 요소는 0으로 초기화됩니다. 명시적으로 초기화되지 않은 자동 식별자의 초기값은 정의되지 않습니다. *initializer-list*가 집합체 형식보다 많은 값을 갖는 경우 오류가 발생합니다. 이러한 규칙은 각각 포함된 이니셜라이저 목록뿐 아니라 전체로써 집합체에도 적용됩니다.
+*initializer-list* 가 집합체 형식보다 적은 값을 갖는 경우 집합체 형식의 나머지 멤버 또는 요소는 0으로 초기화됩니다. 명시적으로 초기화되지 않은 자동 식별자의 초기값은 정의되지 않습니다. *initializer-list* 가 집합체 형식보다 많은 값을 갖는 경우 오류가 발생합니다. 이러한 규칙은 각각 포함된 이니셜라이저 목록뿐 아니라 전체로써 집합체에도 적용됩니다.
 
 구조체의 이니셜라이저는 동일한 형식의 식이거나 중괄호( **{ }** )로 묶인 멤버에 대한 이니셜라이저의 목록입니다. 명명되지 않은 비트 필드 멤버는 초기화되지 않습니다.
 
-공용 구조체가 초기화될 때 *initializer-list*는 단일 상수 식이어야 합니다. 상수 식의 값은 공용 구조체의 첫 번째 멤버에 할당됩니다.
+공용 구조체가 초기화될 때 *initializer-list* 는 단일 상수 식이어야 합니다. 상수 식의 값은 공용 구조체의 첫 번째 멤버에 할당됩니다.
 
 배열에 알 수 없는 크기가 있는 경우 이니셜라이저의 수는 배열의 크기를 결정하며 해당 형식은 완료됩니다. C에서 이니셜라이저의 반복을 지정하거나 모든 이전 값을 제공하지 않고 배열의 중간에서 요소를 초기화할 방법은 없습니다. 프로그램에서 이 작업이 필요한 경우 어셈블리 언어에서 루틴을 작성합니다.
 
@@ -51,7 +52,7 @@ int x[ ] = { 0, 1, 2 }
 
 **Microsoft 전용**
 
-배열의 최대 크기는 **size_t**에서 정의합니다. 헤더 파일 STDDEF.H에 정의된 **size_t**는 0x00000000~0x7CFFFFFF 범위의 **`unsigned int`** 입니다.
+배열의 최대 크기는 **size_t** 에서 정의합니다. 헤더 파일 STDDEF.H에 정의된 **size_t** 는 0x00000000~0x7CFFFFFF 범위의 **`unsigned int`** 입니다.
 
 **Microsoft 전용 종료**
 

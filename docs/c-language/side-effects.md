@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 파생 작업'
 title: 파생 작업
 ms.date: 11/04/2016
 helpviewer_keywords:
 - expression evaluation, side effects
 - side effects in expression evaluation
 ms.assetid: d9b3004a-830e-43a0-bea5-8989d501d670
-ms.openlocfilehash: de5e398afd8b95cfe5596f487a36b6a2d27e3287
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 78a08cb2c6290a3cb9c0c61a714cb2bcfe61a4cc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62158475"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97292782"
 ---
 # <a name="side-effects"></a>파생 작업
 

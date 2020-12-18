@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: 파일 액세스 제한'
 title: 파일 액세스 제한
 ms.date: 11/04/2016
 ms.assetid: ca2b5e64-b7b8-48d6-a0a4-a1b549314cda
-ms.openlocfilehash: a8d68c34434d0eea933767c6ba796b93e10fb60a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 414b73f93242a2a8c964ce41a7ee893aa9ba9024
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62233763"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97196245"
 ---
 # <a name="file-access-limits"></a>파일 액세스 제한
 

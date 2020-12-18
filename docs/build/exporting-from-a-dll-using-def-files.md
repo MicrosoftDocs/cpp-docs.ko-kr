@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: DEF 파일을 사용하여 DLL에서 내보내기'
 title: DEF 파일을 사용하여 DLL에서 내보내기
 ms.date: 05/06/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - .def files [C++], exporting from DLLs
 - exporting DLLs [C++], DEF files
 ms.assetid: 9d31eda2-184e-47de-a2ee-a93ebd603f8e
-ms.openlocfilehash: 8fdbb060502f339eb748306eef582d2f296b1f60
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5be5f2c4a5f6db5f1983da940d8a336f02c938f7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229833"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156530"
 ---
 # <a name="exporting-from-a-dll-using-def-files"></a>DEF 파일을 사용하여 DLL에서 내보내기
 
@@ -34,7 +35,7 @@ EXPORTS
    Min   @4
 ```
 
-[MFC DLL 마법사](../mfc/reference/mfc-dll-wizard.md)를 사용하여 MFC DLL을 만드는 경우 마법사는 기본 DEF 파일을 만들어 프로젝트에 자동으로 추가합니다. 이 파일로 내보낼 함수의 이름을 추가합니다. 비 MFC DLL의 경우 직접 DEF 파일을 만들어 프로젝트에 추가합니다. 그런 다음 **프로젝트** > **속성** > **링커** > **입력** > **모듈 정의 파일**로 이동하여 DEF 파일의 이름을 입력합니다. 각 구성 및 플랫폼에 대해 이 단계를 반복하거나 **구성 = 모든 구성** 및 **플랫폼 = 모든 플랫폼**을 선택하여 모든 구성 및 플랫폼에 대해 한 번에 이 단계를 수행합니다.
+[MFC DLL 마법사](../mfc/reference/mfc-dll-wizard.md)를 사용하여 MFC DLL을 만드는 경우 마법사는 기본 DEF 파일을 만들어 프로젝트에 자동으로 추가합니다. 이 파일로 내보낼 함수의 이름을 추가합니다. 비 MFC DLL의 경우 직접 DEF 파일을 만들어 프로젝트에 추가합니다. 그런 다음 **프로젝트** > **속성** > **링커** > **입력** > **모듈 정의 파일** 로 이동하여 DEF 파일의 이름을 입력합니다. 각 구성 및 플랫폼에 대해 이 단계를 반복하거나 **구성 = 모든 구성** 및 **플랫폼 = 모든 플랫폼** 을 선택하여 모든 구성 및 플랫폼에 대해 한 번에 이 단계를 수행합니다.
 
 C++ 파일에서 함수를 내보내는 경우 DEF 파일에 데코레이팅된 이름을 배치하거나 extern "C"를 사용하여 표준 C 연결로 내보낸 함수를 정의해야 합니다. DEF 파일에 데코레이팅된 이름을 배치해야 하는 경우 [DUMPBIN](../build/reference/dumpbin-reference.md) 도구를 사용하거나 링커 [/MAP](../build/reference/map-generate-mapfile.md) 옵션을 사용하여 가져올 수 있습니다. 컴파일러가 생성한 데코레이팅된 이름은 컴파일러마다 다릅니다. Microsoft C++ 컴파일러(MSVC)가 생성한 데코레이팅된 이름을 DEF 파일에 배치하는 경우 호출 애플리케이션의 데코레이팅된 이름이 DLL의 DEF 파일에 있는 내보낸 이름과 일치하도록 DLL에 연결되는 애플리케이션은 동일한 버전의 MSVC를 사용하여 빌드해야 합니다.
 

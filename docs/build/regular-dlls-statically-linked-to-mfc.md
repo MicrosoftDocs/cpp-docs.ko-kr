@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 정적으로 MFC에 연결된 기본 MFC DLL'
 title: 정적으로 MFC에 연결된 기본 MFC DLL
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - statically linked DLLs [C++]
 - regular MFC DLLs [C++], statically linked to MFC
 ms.assetid: 2eed531c-726a-4b8a-b936-f721dc00a7fa
-ms.openlocfilehash: 1f05b5e3c268935cf3161fb7184e04b3e3ea1446
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b213be6bf076557fc57a5bcac62cbf9767587bd3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62314782"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97273802"
 ---
 # <a name="regular-mfc-dlls-statically-linked-to-mfc"></a>정적으로 MFC에 연결된 기본 MFC DLL
 
@@ -62,7 +63,7 @@ C 런타임 라이브러리에서 할당한 메모리에 대한 포인터는 데
 
 또한 정적으로 MFC에 연결된 DLL은 공유 MFC DLL에 동적으로 연결할 수 없습니다. 정적으로 MFC에 연결된 DLL은 다른 DLL과 마찬가지로 애플리케이션에 동적으로 바인딩되며, 애플리케이션이 다른 DLL과 마찬가지로 이 DLL에 연결됩니다.
 
-표준 MFC 정적 연결 라이브러리는 [MFC DLL의 명명 규칙](../mfc/mfc-library-versions.md#mfc-static-library-naming-conventions)에 설명된 규칙에 따라 이름이 지정됩니다. 그러나 MFC 버전 3.0 이상에서는 연결하려는 MFC 라이브러리의 버전을 링커에 수동으로 지정할 필요가 없습니다. 대신, MFC 헤더 파일에서는 **\_DEBUG** 또는 **_UNICODE**와 같은 전처리기 정의를 기반으로 연결할 MFC 라이브러리의 올바른 버전을 자동으로 결정합니다. MFC 헤더 파일에 /DEFAULTLIB 지시문을 추가하여 링커가 특정 버전의 MFC 라이브러리에 링크하도록 합니다.
+표준 MFC 정적 연결 라이브러리는 [MFC DLL의 명명 규칙](../mfc/mfc-library-versions.md#mfc-static-library-naming-conventions)에 설명된 규칙에 따라 이름이 지정됩니다. 그러나 MFC 버전 3.0 이상에서는 연결하려는 MFC 라이브러리의 버전을 링커에 수동으로 지정할 필요가 없습니다. 대신, MFC 헤더 파일에서는 **\_DEBUG** 또는 **_UNICODE** 와 같은 전처리기 정의를 기반으로 연결할 MFC 라이브러리의 올바른 버전을 자동으로 결정합니다. MFC 헤더 파일에 /DEFAULTLIB 지시문을 추가하여 링커가 특정 버전의 MFC 라이브러리에 링크하도록 합니다.
 
 ## <a name="what-do-you-want-to-do"></a>원하는 작업을 선택하세요.
 

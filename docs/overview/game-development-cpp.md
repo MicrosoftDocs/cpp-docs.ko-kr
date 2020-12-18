@@ -1,12 +1,13 @@
 ---
+description: '자세한 정보: C++를 사용한 게임 개발'
 title: C++를 사용한 게임 개발
 ms.date: 02/26/2019
-ms.openlocfilehash: ddb50e948bc0ffaa46581a4bb59c5d0911437f0b
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: e8d78348fcac5ec25d5a37573f7264f38c609b15
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841365"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97207620"
 ---
 # <a name="game-development-with-c"></a>C++를 사용한 게임 개발
 

@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: 대문자와 소문자'
 title: 대문자와 소문자
 ms.date: 11/04/2016
 ms.assetid: f33caa65-15ce-4b06-97a6-d19b3ab4d5ad
-ms.openlocfilehash: 5dc8a85ceacbc039b0424d92eb947d6afd85bba5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7905e9d371ebb47ae6f74b3f63a855d5579a7501
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62290900"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318379"
 ---
 # <a name="uppercase-and-lowercase"></a>대문자와 소문자
 

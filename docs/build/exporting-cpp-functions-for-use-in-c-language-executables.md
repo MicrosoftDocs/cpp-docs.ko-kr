@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: C++ 함수를 C 언어 실행 파일에서 사용할 수 있도록 내보내기'
 title: C++ 함수를 C 언어 실행 파일에서 사용할 수 있도록 내보내기
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - exporting functions [C++], C++ functions in C executables
 - functions [C++], exporting
 ms.assetid: 80b9e982-f52d-4312-a891-f73cc69f3c2b
-ms.openlocfilehash: 38b13c1fc9c57354ba8160f6dbe0df6546fe7b5f
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: c11ee56afb6fc99dbdf5a795cb8551e54835cd67
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91506600"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156621"
 ---
 # <a name="exporting-c-functions-for-use-in-c-language-executables"></a>C++ 함수를 C 언어 실행 파일에서 사용할 수 있도록 내보내기
 

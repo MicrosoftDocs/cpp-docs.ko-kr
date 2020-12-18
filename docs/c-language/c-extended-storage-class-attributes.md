@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: C 확장 스토리지 클래스 특성'
 title: C 확장 스토리지 클래스 특성
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - extended storage-class attributes
 - storage class specifiers, C storage classes
 ms.assetid: 2580735c-f5bf-46ab-9468-0696893d82be
-ms.openlocfilehash: 5e1fe80f3bc1f581c6ea05c54409b1e76eacfce7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9dff43594ef97214609c6ed2195240d0e21648e4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87190223"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168763"
 ---
 # <a name="c-extended-storage-class-attributes"></a>C 확장 스토리지 클래스 특성
 
@@ -39,7 +40,7 @@ ms.locfileid: "87190223"
 &nbsp;&nbsp;&nbsp;&nbsp;**`dllimport`**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**`dllexport`**
 
-선언 한정자는 공백으로 구분됩니다. *extended-decl-modifier-seq*는 비워둘 수 없습니다. 비었을 경우 __declspec는 효과가 없습니다.
+선언 한정자는 공백으로 구분됩니다. *extended-decl-modifier-seq* 는 비워둘 수 없습니다. 비었을 경우 __declspec는 효과가 없습니다.
 
 thread, naked, dllimport 및 dllexport 스토리지 클래스 특성은 이들이 적용되어 있는 데이터 선언 또는 함수 선언의 속성일 뿐, 함수 자체의 형식 특성을 재정의하지 않습니다. thread 특성은 데이터에만 영향을 줍니다. naked 특성은 함수에만 영향을 줍니다. dllimport 및 dllexport 특성은 함수 및 데이터에 영향을 줍니다.
 

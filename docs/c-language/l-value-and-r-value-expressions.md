@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: L-Value 및 R-Value 식'
 title: L-Value 및 R-Value 식
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - R-value expressions
 - subscript expressions
 ms.assetid: b790303e-ec6f-4d0d-bc55-df42da267172
-ms.openlocfilehash: 0c287c45f2d7ea121c9c706b3b761ff7ce6ec232
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 84812e211ddd008226773436bc26e22f6150c852
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87199830"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97181815"
 ---
 # <a name="l-value-and-r-value-expressions"></a>L-Value 및 R-Value 식
 

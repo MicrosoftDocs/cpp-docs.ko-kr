@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: MFC 애플리케이션의 지역화된 리소스: 위성 DLL'
 title: 'MFC 애플리케이션의 지역화된 리소스: 위성 DLL'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -12,18 +13,18 @@ helpviewer_keywords:
 - resource-only DLLs [C++], MFC applications
 - satellite DLLs [C++]
 ms.assetid: 3a1100ae-a9c8-47b5-adbd-cbedef5992ef
-ms.openlocfilehash: 1f512cc17832564b5eb530b97f8bfb2642c43d43
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 4af771999c97af40ffe50399c77e91aec1af992a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220747"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176472"
 ---
 # <a name="localized-resources-in-mfc-applications-satellite-dlls"></a>MFC 애플리케이션의 지역화된 리소스: 위성 DLL
 
 MFC 버전 7.0 이상에서는 여러 언어로 지역화된 애플리케이션을 만드는 데 도움이 되는 위성 DLL에 대한 향상된 지원 기능을 제공합니다. 위성 DLL은 특정 언어로 지역화된 애플리케이션 리소스를 포함하는 [리소스 전용 DLL](creating-a-resource-only-dll.md)입니다. 애플리케이션 실행이 시작되면 MFC는 환경에 가장 적합한 지역화된 리소스를 자동으로 로드합니다. 예를 들어 영어 리소스를 사용하는 애플리케이션에 두 개의 위성 DLL이 있고, 각각 리소스의 프랑스어 번역과 독일어 번역이 포함되어 있을 수 있습니다. 이 애플리케이션을 영어 시스템에서 실행하면 영어 리소스가 사용됩니다. 프랑스어 시스템에서 실행하면 프랑스어 리소스, 독일어 시스템에서 실행하면 독일어 리소스가 사용됩니다.
 
-MFC 애플리케이션에서 지역화된 리소스를 지원하기 위해 MFC는 특정 언어로 지역화된 리소스를 포함하는 위성 DLL을 로드하려고 합니다. 위성 DLL은 *ApplicationNameXXX*로 이름이 지정됩니다. 여기서 *ApplicationName*은 MFC를 사용하는 .exe 또는 .dll의 이름이고, *XXX*는 리소스의 언어를 나타내는 세 문자 코드입니다(예: ‘ENU’ 또는 ‘DEU’).
+MFC 애플리케이션에서 지역화된 리소스를 지원하기 위해 MFC는 특정 언어로 지역화된 리소스를 포함하는 위성 DLL을 로드하려고 합니다. 위성 DLL은 *ApplicationNameXXX* 로 이름이 지정됩니다. 여기서 *ApplicationName* 은 MFC를 사용하는 .exe 또는 .dll의 이름이고, *XXX* 는 리소스의 언어를 나타내는 세 문자 코드입니다(예: ‘ENU’ 또는 ‘DEU’).
 
 MFC는 다음 각 언어의 리소스 DLL을 순서대로 로드하려고 하고 해당 DLL을 찾으면 중지합니다.
 

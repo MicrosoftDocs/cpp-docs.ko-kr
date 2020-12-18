@@ -1,4 +1,5 @@
-﻿---
+---
+description: '자세한 정보: 사용자 지정 빌드 단계 및 빌드 이벤트 이해'
 title: 사용자 지정 빌드 단계 및 빌드 이벤트 이해
 ms.date: 08/29/2019
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - build steps [C++], build events
 - builds [C++], custom build steps
 ms.assetid: beb2f017-3e9f-4b2c-9b57-2572fd2628e4
-ms.openlocfilehash: 386a12213814e3825ece8a81d61ac251c6793f43
-ms.sourcegitcommit: e10a5feea193c249ddc5a6faba48e7c6d8784e73
+ms.openlocfilehash: da7e9399a1502c3d7ddaccbfb10a4d2b71fb85cf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70177318"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277403"
 ---
 # <a name="understanding-custom-build-steps-and-build-events"></a>사용자 지정 빌드 단계 및 빌드 이벤트 이해
 
@@ -32,7 +33,7 @@ Visual C++ 개발 환경 내에서 빌드 프로세스를 사용자 지정하는
 
 - **빌드 이벤트**
 
-   빌드 이벤트를 사용하면 프로젝트의 빌드를 사용자 지정할 수 있습니다. 빌드 이벤트에는 *빌드 전*, *링크 전* 및 *빌드 후*의 세 가지 방법이 있습니다. 빌드 이벤트를 사용하면 빌드 프로세스의 특정 시간에 수행할 작업을 지정할 수 있습니다. 예를 들어 빌드 이벤트를 사용하여 프로젝트 빌드가 완료된 후 **regsvr32.exe**로 파일을 등록할 수 있습니다. 자세한 내용은 [빌드 이벤트 지정](specifying-build-events.md)을 참조하세요.
+   빌드 이벤트를 사용하면 프로젝트의 빌드를 사용자 지정할 수 있습니다. 빌드 이벤트에는 *빌드 전*, *링크 전* 및 *빌드 후* 의 세 가지 방법이 있습니다. 빌드 이벤트를 사용하면 빌드 프로세스의 특정 시간에 수행할 작업을 지정할 수 있습니다. 예를 들어 빌드 이벤트를 사용하여 프로젝트 빌드가 완료된 후 **regsvr32.exe** 로 파일을 등록할 수 있습니다. 자세한 내용은 [빌드 이벤트 지정](specifying-build-events.md)을 참조하세요.
 
 [빌드 사용자 지정 문제 해결](troubleshooting-build-customizations.md)은 사용자 지정 빌드 단계 및 빌드 이벤트가 예상대로 실행되도록 합니다.
 

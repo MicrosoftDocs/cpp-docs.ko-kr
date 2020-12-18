@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 포인터 형식과의 변환'
 title: 포인터 형식과의 변환
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - type casts, involving pointers
 - void pointers
 ms.assetid: 3facc56f-06d3-4570-b1a2-7d4927b83086
-ms.openlocfilehash: 6358216e72f054becf33d18aadb6a3a51bab8363
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8eb987358cb3e8375e62b9d03cd21a5e02b9f5c8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218899"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97293094"
 ---
 # <a name="conversions-to-and-from-pointer-types"></a>포인터 형식과의 변환
 

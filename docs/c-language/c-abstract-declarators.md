@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: C 추상 선언자'
 title: C 추상 선언자
 ms.date: 11/04/2016
 helpviewer_keywords:
 - declarators, abstract
 - abstract declarations
 ms.assetid: 6a556ad7-0555-421a-aa02-294d77cda8b5
-ms.openlocfilehash: 540b938e2c4121f189216942bc06630fc61ee19c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9af51d96ac50222b9148060147812aecdf114b7d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220862"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97211611"
 ---
 # <a name="c-abstract-declarators"></a>C 추상 선언자
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 스토리지 및 구조체의 맞춤'
 title: 스토리지 및 구조체의 맞춤
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - storing structures
 - packing structures
 ms.assetid: 60ff292f-2595-4f37-ae00-4c4b4f047196
-ms.openlocfilehash: 81f5b640585ec3b55e4e3d65b37ea0929a757473
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8cffc3ddfcc868a7ccb727a5092e2389dbf016a2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229482"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97213691"
 ---
 # <a name="storage-and-alignment-of-structures"></a>스토리지 및 구조체의 맞춤
 
@@ -20,7 +21,7 @@ ms.locfileid: "87229482"
 
 구조체 멤버는 선언된 순서에 따라 순차적으로 저장됩니다. 즉, 첫 멤버가 가장 낮은 메모리 주소를 갖고 마지막 멤버가 가장 높은 주소를 갖습니다.
 
-모든 데이터 개체에는 *alignment-requirement*가 있습니다. 구조체의 경우 요구 사항이 해당 멤버 중 가장 큽니다. 다음과 같이 되도록 모든 개체에 *오프셋*이 할당됩니다.
+모든 데이터 개체에는 *alignment-requirement* 가 있습니다. 구조체의 경우 요구 사항이 해당 멤버 중 가장 큽니다. 다음과 같이 되도록 모든 개체에 *오프셋* 이 할당됩니다.
 
 *offset* `%` *alignment-requirement* `==` 0
 
@@ -32,7 +33,7 @@ ms.locfileid: "87229482"
 min( n, sizeof( item ) )
 ```
 
-여기서 *n*은 /Zp[*n*] 옵션으로 표현되는 압축 크기이며 *item*은 구조체 멤버입니다. 기본 압축 크기는 /Zp8입니다.
+여기서 *n* 은 /Zp[*n*] 옵션으로 표현되는 압축 크기이며 *item* 은 구조체 멤버입니다. 기본 압축 크기는 /Zp8입니다.
 
 `pack` pragma를 사용하여 특정 구조체에 대해 명령줄에서 지정한 압축 이외의 압축을 지정하려면 압축 크기가 1, 2, 4, 8 또는 16인 `pack` pragma를 구조체 앞에 제공하십시오. 명령줄에서 지정한 압축을 복구하려면 `pack` pragma를 인수 없이 지정하십시오.
 

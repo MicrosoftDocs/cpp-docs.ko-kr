@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 피연산자 및 식'
 title: 피연산자 및 식
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - operands, definition
 - operands
 ms.assetid: 8453b095-a017-4c70-9a64-e3b2bd1e35e5
-ms.openlocfilehash: d7e389279c943d6343b28184e6933b62535daae0
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 1e18cf5a49e1cdcb410baae9a445966e1c655cb4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64343242"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97243200"
 ---
 # <a name="operands-and-expressions"></a>피연산자 및 식
 

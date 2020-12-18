@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: extern 스토리지 클래스 지정자'
 title: extern 스토리지 클래스 지정자
 ms.date: 07/10/2018
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - external linkage, storage-class specifiers
 - external linkage, extern modifier
 ms.assetid: 6e16d927-291f-49e4-986c-9d91a482a441
-ms.openlocfilehash: e3242f86e30dcf3227586400b83266ad366ec7e8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f3a4a583f21809761878a060a3131a000f57915f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217105"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97196310"
 ---
 # <a name="extern-storage-class-specifier"></a>extern 스토리지 클래스 지정자
 

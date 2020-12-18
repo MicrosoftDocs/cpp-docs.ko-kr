@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: 정의 위치 이동'
 title: 정의 위치 이동
 ms.date: 11/16/2016
 ms.assetid: c6d507ac-c61e-4da2-95c8-d504b42e2520
-ms.openlocfilehash: 7957e18732dfae92b7b3ae9cf7ecea441fc3a6b4
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 5c0ae4ed5e14a50f4d54226fb298c34099c8aec7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693207"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318717"
 ---
 # <a name="move-definition-location"></a>정의 위치 이동
 
@@ -25,9 +26,9 @@ ms.locfileid: "51693207"
 
 1. 다음 작업 중 하나를 수행합니다.
    * **키보드**
-     * **Ctrl+.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거하고 상황에 맞는 메뉴에서 **정의 위치 이동**을 선택합니다.
+     * **Ctrl+.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거하고 상황에 맞는 메뉴에서 **정의 위치 이동** 을 선택합니다.
    * **마우스**
-     * 마우스 오른쪽 단추를 클릭하고 **빠른 작업 및 리팩터링** 메뉴를 선택하고, 상황에 맞는 메뉴에서 **정의 위치 이동**을 선택합니다.
+     * 마우스 오른쪽 단추를 클릭하고 **빠른 작업 및 리팩터링** 메뉴를 선택하고, 상황에 맞는 메뉴에서 **정의 위치 이동** 을 선택합니다.
 
 1. 이 함수는 해당 헤더 파일로 이동되며, 팝업 미리 보기 창에 표시됩니다.  헤더 파일이 없는 경우 파일이 생성되어 프로젝트에 배치됩니다.
 

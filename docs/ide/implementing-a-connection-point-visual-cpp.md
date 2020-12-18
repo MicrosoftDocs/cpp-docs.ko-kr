@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 연결점 구현'
 title: 연결점 구현
 ms.date: 05/14/2019
 helpviewer_keywords:
 - connection points [C++], implementing
 - implement connection point wizard [C++]
 ms.assetid: 5b37e4f9-73c9-4bef-b26d-365bc0662260
-ms.openlocfilehash: 8a75a5fbbabd20f4591e3a119c175d68cdfb1f90
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: bee04d28036ca5a2dfb0f4913adf39f1fdcca565
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "66182603"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97281160"
 ---
 # <a name="implement-a-connection-point"></a>연결점 구현
 
@@ -30,11 +31,11 @@ ms.locfileid: "66182603"
 
 1. 클래스 뷰에서 ATL 개체의 클래스 이름을 마우스 오른쪽 단추로 클릭합니다.
 
-1. 바로 가기 메뉴에서 **추가**를 선택한 다음, **연결점 추가**를 선택하여 [연결점 구현 마법사](#implement-connection-point-wizard)를 표시합니다.
+1. 바로 가기 메뉴에서 **추가** 를 선택한 다음, **연결점 추가** 를 선택하여 [연결점 구현 마법사](#implement-connection-point-wizard)를 표시합니다.
 
-1. 적절한 형식 라이브러리에서 구현할 연결점 인터페이스를 선택하고 **마침**을 선택합니다.
+1. 적절한 형식 라이브러리에서 구현할 연결점 인터페이스를 선택하고 **마침** 을 선택합니다.
 
-1. 클래스 뷰에서 각 연결 지점에 대해 생성된 프록시 클래스를 검사합니다. 클래스는 CProxy*InterfaceName*\<T>로 나타나며 [IConnectionPointImpl](../atl/reference/iconnectionpointimpl-class.md)에서 파생됩니다.
+1. 클래스 뷰에서 각 연결 지점에 대해 생성된 프록시 클래스를 검사합니다. 클래스는 CProxy *InterfaceName*\<T>로 나타나며 [IConnectionPointImpl](../atl/reference/iconnectionpointimpl-class.md)에서 파생됩니다.
 
 1. 연결 지점 클래스를 두 번 클릭하여 연결 지점 클래스의 정의를 표시합니다.
 
@@ -53,7 +54,7 @@ ms.locfileid: "66182603"
 
    - 다른 인터페이스의 연결 지점을 구현하는 경우 각각 이름이 `Fire_`로 시작하는 인터페이스의 메서드가 정의에 포함됩니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 
 - [연결점 구현 마법사](#implement-connection-point-wizard)
 
@@ -69,7 +70,7 @@ ms.locfileid: "66182603"
 
 - **위치**
 
-  **사용 가능한 형식 라이브러리** 목록에서 현재 선택된 형식 라이브러리의 위치를 표시합니다.
+  **사용 가능한 형식 라이브러리** 목록에서 현재 선택한 형식 라이브러리의 위치를 표시합니다.
 
 - **인터페이스**
 
@@ -84,4 +85,4 @@ ms.locfileid: "66182603"
 
 - **연결 지점 구현**
 
-  **마침**을 선택하면 연결점을 구현할 인터페이스의 이름이 표시됩니다.
+  **마침** 을 선택하면 연결점을 구현할 인터페이스의 이름이 표시됩니다.

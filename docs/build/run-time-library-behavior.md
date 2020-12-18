@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: DLL 및 Visual C++ 런타임 라이브러리 동작'
 title: DLL 및 Visual C++ 런타임 라이브러리 동작
 ms.date: 08/19/2019
 f1_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - run-time [C++], DLL startup sequence
 - DLLs [C++], startup sequence
 ms.assetid: e06f24ab-6ca5-44ef-9857-aed0c6f049f2
-ms.openlocfilehash: 5af3efd733a5d682e33863b330b6a558e824c9b3
-ms.sourcegitcommit: 6284bca6549e7b4f199d4560c30df6c1278bd4a0
+ms.openlocfilehash: 5b76ec562b87969350b49d38e24c33ce7a4fabf8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95782981"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275453"
 ---
 # <a name="dlls-and-visual-c-run-time-library-behavior"></a>DLL 및 Visual C++ 런타임 라이브러리 동작
 

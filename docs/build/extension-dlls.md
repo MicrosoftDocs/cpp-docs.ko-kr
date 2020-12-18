@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: MFC 확장 DLL'
 title: 확장명 DLL
 ms.date: 05/06/2019
 helpviewer_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - extension DLLs [C++]
 - extension DLLs [C++], about MFC extension DLLs
 ms.assetid: f69ac3d4-e474-4b1c-87a1-6738843a135c
-ms.openlocfilehash: 55b1e55a9c7bdf6daaff98a7fe3f1a2a55f68334
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 6500d8ba3cfcc4311ef993064aa9516f27fa45d6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220769"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156478"
 ---
 # <a name="mfc-extension-dlls"></a>MFC 확장 DLL
 
@@ -102,7 +103,7 @@ head ->   DLLHUSK.EXE   - or -   DLLHUSK.EXE
             MFCxxD.DLL            MFCxx.DLL
 ```
 
-여기서 *xx*는 버전 번호입니다. 예를 들어 42는 버전 4.2를 나타냅니다.
+여기서 *xx* 는 버전 번호입니다. 예를 들어 42는 버전 4.2를 나타냅니다.
 
 MFCxx.dll은 일반적으로 리소스 및 클래스 목록의 마지막에 있습니다. Mfcxx.dll에는 모든 표준 명령 ID의 프롬프트 문자열을 비롯해 모든 표준 MFC 리소스가 포함되어 있습니다. 이 파일을 목록의 끝에 배치하여 DLL 및 클라이언트 애플리케이션에서 표준 MFC 리소스의 자체 복사본을 포함하지 않고 대신 Mfcxx.dll의 공유 리소스를 사용할 수 있습니다.
 
@@ -110,7 +111,7 @@ MFCxx.dll은 일반적으로 리소스 및 클래스 목록의 마지막에 있�
 
 [DLLHUSK](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/advanced/dllhusk) 샘플에서는 여러 헤더 파일을 사용하여 공유 리소스 이름 공간을 관리합니다.
 
-MFC 확장 DLL이 각 애플리케이션의 추가 데이터를 유지 관리해야 하는 경우 **CDynLinkLibrary**에서 새 클래스를 파생하고 `DllMain`에서 만들 수 있습니다. DLL은 실행될 때 현재 애플리케이션의 **CDynLinkLibrary** 개체 목록을 확인하여 해당하는 특정 MFC 확장 DLL의 개체를 찾을 수 있습니다.
+MFC 확장 DLL이 각 애플리케이션의 추가 데이터를 유지 관리해야 하는 경우 **CDynLinkLibrary** 에서 새 클래스를 파생하고 `DllMain`에서 만들 수 있습니다. DLL은 실행될 때 현재 애플리케이션의 **CDynLinkLibrary** 개체 목록을 확인하여 해당하는 특정 MFC 확장 DLL의 개체를 찾을 수 있습니다.
 
 ### <a name="what-do-you-want-to-do"></a>원하는 작업을 선택하세요.
 

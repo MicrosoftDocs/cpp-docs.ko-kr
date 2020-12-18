@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 선언자: 최대 수'
 title: '선언자: 최대 수'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - declarators, maximum number of
 ms.assetid: f8410673-e11a-4830-89a3-3ffb7bb6562d
-ms.openlocfilehash: c56f0169f1cccf21cdb46e0929c20ee5cca3eece
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e6562a6fb32f4bffffdc186fb37626c224205efe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62234522"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306393"
 ---
 # <a name="declarators-maximum-number"></a>선언자: 최대 수
 

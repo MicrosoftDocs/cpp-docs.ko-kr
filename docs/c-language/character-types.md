@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 문자 형식'
 title: 문자 형식
 ms.date: 11/04/2016
 helpviewer_keywords:
 - character data types [C]
 - types [C], character
 ms.assetid: d3ca8cda-c0d7-43af-9472-697e8ef015ce
-ms.openlocfilehash: 5b1306c70cdab423c8758bf3e6c9ac4e9d6507da
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 270c1831422d81fe88519a2aee3de8306727d0d1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226492"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97293536"
 ---
 # <a name="character-types"></a>문자 형식
 

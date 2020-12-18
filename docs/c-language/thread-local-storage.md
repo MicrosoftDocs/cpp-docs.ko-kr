@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 스레드 로컬 스토리지'
 title: 스레드 로컬 스토리지
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - thread-local storage
 - storage, thread local storage
 ms.assetid: a0f1b109-c953-4079-aa10-e47f5483173d
-ms.openlocfilehash: a1099228e072a772ee7d8e7e93253b674d0cd24b
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 188646ec6ae980cc61bd5882c15e2e9040e4a7ca
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69500284"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114340"
 ---
 # <a name="thread-local-storage"></a>스레드 로컬 스토리지
 

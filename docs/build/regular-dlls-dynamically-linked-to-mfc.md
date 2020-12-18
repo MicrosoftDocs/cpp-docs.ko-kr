@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 동적으로 MFC에 연결된 기본 MFC DLL'
 title: 동적으로 MFC에 연결된 기본 MFC DLL
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - shared DLL versions [C++]
 - dynamically linked DLLs [C++]
 ms.assetid: b4f7ab92-8723-42a5-890e-214f4e29dcd0
-ms.openlocfilehash: 3bfed5f75dab4c501708950fdb99f53c40ec142c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a16320427d881e2d37dd2afedc0566a759d59b9a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62315003"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97273866"
 ---
 # <a name="regular-mfc-dlls-dynamically-linked-to-mfc"></a>동적으로 MFC에 연결된 기본 MFC DLL
 
@@ -37,7 +38,7 @@ AFX_MANAGE_STATE(AfxGetStaticModuleState( ))
 
 동적으로 MFC에 연결된 기본 MFC DLL에는 다음과 같은 요구 사항이 있습니다.
 
-- 해당 DLL은 MFC DLL에 동적으로 연결되는 실행 파일과 마찬가지로 **_AFXDLL**을 정의하여 컴파일됩니다. 그러나 정적으로 MFC에 연결된 기본 MFC DLL과 마찬가지로 **_USRDLL**도 정의됩니다.
+- 해당 DLL은 MFC DLL에 동적으로 연결되는 실행 파일과 마찬가지로 **_AFXDLL** 을 정의하여 컴파일됩니다. 그러나 정적으로 MFC에 연결된 기본 MFC DLL과 마찬가지로 **_USRDLL** 도 정의됩니다.
 
 - 이 형식의 DLL은 `CWinApp` 파생 클래스를 인스턴스화해야 합니다.
 

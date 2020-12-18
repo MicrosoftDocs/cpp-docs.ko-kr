@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 상호 가져오기'
 title: 상호 가져오기
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - extension DLLs [C++], mutual imports
 - exporting DLLs [C++], mutual imports
 ms.assetid: 2cc29537-92ee-4d92-af39-8b8b3afd808f
-ms.openlocfilehash: 771ce7506359178c1b8346598e93c30a20329fe8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0015dfe69237ff46ecfbef9ee1f1649fcb04d689
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229794"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97187496"
 ---
 # <a name="mutual-imports"></a>상호 가져오기
 
@@ -48,9 +49,9 @@ ms.locfileid: "87229794"
 
 MFC 확장 DLL의 여러 계층이 없는 경우 MFC 확장 DLL에 `_AFXEXT` 전처리기 기호를 사용할 수 있습니다. MFC 클래스에서 파생되는 고유한 MFC 확장 DLL의 클래스를 호출하거나 해당 클래스에서 파생되는 MFC 확장 DLL이 있는 경우 모호성을 방지하기 위해 고유한 전처리기 기호를 사용해야 합니다.
 
-문제는 Win32에서 데이터를 DLL에서 내보내는 경우에는 명시적으로 **`__declspec(dllexport)`** 을 선언하고, 데이터를 DLL에서 가져오는 경우에는 명시적으로 **`__declspec(dllimport)`** 을 선언해야 한다는 것입니다. `_AFXEXT`를 정의할 때 MFC 헤더에서 **AFX_EXT_CLASS**를 올바로 정의해야 합니다.
+문제는 Win32에서 데이터를 DLL에서 내보내는 경우에는 명시적으로 **`__declspec(dllexport)`** 을 선언하고, 데이터를 DLL에서 가져오는 경우에는 명시적으로 **`__declspec(dllimport)`** 을 선언해야 한다는 것입니다. `_AFXEXT`를 정의할 때 MFC 헤더에서 **AFX_EXT_CLASS** 를 올바로 정의해야 합니다.
 
-여러 계층이 있는 경우 **AFX_EXT_CLASS**와 같은 하나의 기호로는 부족합니다. 왜냐하면 MFC 확장 DLL은 새 클래스를 내보낼 뿐 아니라 다른 MFC 확장 DLL에서 다른 클래스를 가져올 수도 있기 때문입니다. 이 문제를 해결하려면 DLL 자체를 빌드하고 있거나 DLL을 사용하고 있음을 나타내는 특수 전처리기 기호를 사용합니다. 예를 들어 두 개의 MFC 확장 DLL A.dll과 B.dll이 있다고 가정합니다. 두 DLL은 각각 A.h 및 B.h의 일부 클래스를 내보냅니다. B.dll은 A.dll의 클래스를 사용합니다. 헤더 파일은 다음과 같습니다.
+여러 계층이 있는 경우 **AFX_EXT_CLASS** 와 같은 하나의 기호로는 부족합니다. 왜냐하면 MFC 확장 DLL은 새 클래스를 내보낼 뿐 아니라 다른 MFC 확장 DLL에서 다른 클래스를 가져올 수도 있기 때문입니다. 이 문제를 해결하려면 DLL 자체를 빌드하고 있거나 DLL을 사용하고 있음을 나타내는 특수 전처리기 기호를 사용합니다. 예를 들어 두 개의 MFC 확장 DLL A.dll과 B.dll이 있다고 가정합니다. 두 DLL은 각각 A.h 및 B.h의 일부 클래스를 내보냅니다. B.dll은 A.dll의 클래스를 사용합니다. 헤더 파일은 다음과 같습니다.
 
 ```
 /* A.H */

@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 공백 문자'
 title: 공백 문자
 ms.date: 11/04/2016
 helpviewer_keywords:
 - white space, characters
 - characters, white space
 ms.assetid: 030ccbdc-2db3-4dd0-88c8-f5c2669ddebf
-ms.openlocfilehash: 3033fb072ad096a1eaf2b75d1c8c7cbc25a1a8e4
-ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
+ms.openlocfilehash: ffa98eebffa134e041fe1bd40fa2c1d51709b8be
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375812"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171935"
 ---
 # <a name="white-space-characters"></a>공백 문자
 

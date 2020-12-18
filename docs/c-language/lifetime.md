@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 수명'
 title: 수명
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - lifetime
 - global variables, lifetime
 ms.assetid: ff0b42cb-3f0f-49a3-a94f-d1d825d8ddfe
-ms.openlocfilehash: 752230db54727516e0c48c0621eaadc59486e2e4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 11db85cb6df76de320b78f274061499d838151da
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218847"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97243525"
 ---
 # <a name="lifetime"></a>수명
 
@@ -40,7 +41,7 @@ ms.locfileid: "87218847"
 
 전역 수명이 있는 식별자(예: 외부에서 선언된 변수 또는 **`static`** 키워드를 사용하여 선언된 지역 변수)가 소스 프로그램이 실행되는 동안 계속 존재하지만 프로그램의 일부 부분에서 표시되지 않을 수 있습니다. 표시 유형에 대한 자세한 내용은 [범위 및 표시 유형](../c-language/scope-and-visibility.md)을 참조하고, *스토리지 클래스 지정자* 비터미널에 대한 설명은 [스토리지 클래스](../c-language/c-storage-classes.md)를 참조하세요.
 
-메모리는 `malloc` 등의 특수 라이브러리 루틴을 사용하여 만들어지는 경우 필요에 따라(동적) 할당될 수 있습니다. 동적 메모리 할당은 라이브러리 루틴을 사용하므로 언어의 일부로 간주되지 않습니다. *런타임 라이브러리 참조*에서 [malloc](../c-runtime-library/reference/malloc.md) 함수를 참조하세요.
+메모리는 `malloc` 등의 특수 라이브러리 루틴을 사용하여 만들어지는 경우 필요에 따라(동적) 할당될 수 있습니다. 동적 메모리 할당은 라이브러리 루틴을 사용하므로 언어의 일부로 간주되지 않습니다. *런타임 라이브러리 참조* 에서 [malloc](../c-runtime-library/reference/malloc.md) 함수를 참조하세요.
 
 ## <a name="see-also"></a>참조
 

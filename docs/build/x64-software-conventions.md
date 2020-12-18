@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: x64 소프트웨어 규칙'
 title: x64 소프트웨어 규칙
 ms.date: 12/17/2018
 helpviewer_keywords:
 - x64 coding conventions
 - Visual C++, x64 calling conventions
 ms.assetid: 750f3d97-1706-4840-b2fc-41a007329a08
-ms.openlocfilehash: 94c44e4ee142249fefcc966febc471ce940ab86a
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 76ea8bcd133d7a057ee6712d72cedafd599c7ed2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90042175"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280328"
 ---
 # <a name="x64-software-conventions"></a>x64 소프트웨어 규칙
 

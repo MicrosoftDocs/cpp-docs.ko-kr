@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: float 형식'
 title: float 형식
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - IEEE floating-point representation
 - lengths, exponent
 ms.assetid: 706e332b-17a0-4a30-b7d8-5d6cd372524b
-ms.openlocfilehash: 61bfd094801165e0c3e41e5de6fcbfb0c5e59504
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4d2245db663885d084ee231d10b7dc944016ea4d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62346329"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97242836"
 ---
 # <a name="type-float"></a>float 형식
 
@@ -51,7 +52,7 @@ ms.locfileid: "62346329"
 
 위에서 설명한 스토리지 메서드 대신, 부동 소수점 패키지는 이진 부동 소수점 수를 비정규화된 수로 저장할 수 있습니다. "비정규화된 수"는 가수의 가장 중요한 비트가 0인 예약된 지수 값이 있는 0이 아닌 부동 소수점 수입니다. 비정규화된 형식을 사용함으로써 정밀도 대신 부동 소수점 수의 범위를 확장할 수 있습니다. 부동 소수점 수가 정규화된 형식 또는 비정규화된 형식으로 표현되는지 여부를 제어할 수 없습니다. 즉, 부동 소수점 패키지로 표현을 결정합니다. 지수가 정규화된 형식으로 표현될 수 있는 최소값보다 작아지지 않으면 부동 소수점 패키지는 비정규화된 형식을 사용하지 않습니다.
 
-다음 표에서는 각 부동 소수점 형식의 변수에 저장할 수 있는 최소값 및 최대값을 보여 줍니다. 이 표에 나열된 값은 정규화된 부동 소수점 수에만 적용되므로 비정규화된 부동 소수점 수의 최소값은 보다 작습니다. 80*x*87 레지스터에 유지되는 수는 항상 80비트의 정규화된 형식으로 표현됩니다. 수는 32비트 또는 64비트 부동 소수점 변수(float 형식 및 long 형식의 변수)에 저장될 때만 비정규화된 형식으로 표현될 수 있습니다.
+다음 표에서는 각 부동 소수점 형식의 변수에 저장할 수 있는 최소값 및 최대값을 보여 줍니다. 이 표에 나열된 값은 정규화된 부동 소수점 수에만 적용되므로 비정규화된 부동 소수점 수의 최소값은 보다 작습니다. 80 *x* 87 레지스터에 유지되는 수는 항상 80비트의 정규화된 형식으로 표현됩니다. 수는 32비트 또는 64비트 부동 소수점 변수(float 형식 및 long 형식의 변수)에 저장될 때만 비정규화된 형식으로 표현될 수 있습니다.
 
 ### <a name="range-of-floating-point-types"></a>부동 소수점 형식의 범위
 

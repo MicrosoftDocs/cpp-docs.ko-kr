@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 릴리스 빌드 문제 해결'
 title: 릴리스 빌드 문제 해결
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - troubleshooting Visual C++, release builds
 - troubleshooting release builds
 ms.assetid: a0c0818e-4c47-4fe0-a611-50d61a41bd88
-ms.openlocfilehash: 75dba6ecfc915fa22829491705fb5dc769ddf377
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 640cd8071206f2abfdea63af633630bbac6f37b1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62195288"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97162900"
 ---
 # <a name="fixing-release-build-problems"></a>릴리스 빌드 문제 해결
 

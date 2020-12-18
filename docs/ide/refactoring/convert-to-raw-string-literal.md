@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: 원시 문자열 리터럴로 변환'
 title: 원시 문자열 리터럴로 변환
 ms.date: 11/16/2016
 ms.assetid: fffbfee4-66ee-42ba-aeb9-df07fb702c51
-ms.openlocfilehash: 5636e00bfe8655d84fb2e4b64e0391324ab35d7d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
-ms.translationtype: MT
+ms.openlocfilehash: f83cb955bc2b30957306e1467a2d353377d5f33a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80171816"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97185559"
 ---
 # <a name="convert-to-raw-string-literal"></a>원시 문자열 리터럴로 변환
 
@@ -25,10 +26,10 @@ ms.locfileid: "80171816"
 
 1. 다음 작업 중 하나를 수행합니다.
    * **키보드**
-     * **Ctrl+.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거하고 상황에 맞는 메뉴에서 **원시 문자열 리터럴로 변환**을 선택합니다.
+     * **Ctrl+.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거하고 상황에 맞는 메뉴에서 **원시 문자열 리터럴로 변환** 을 선택합니다.
    * **마우스**
-     * 코드를 마우스 오른쪽 단추로 클릭하고, **빠른 작업 및 리팩터링** 메뉴를 선택하고, 상황에 맞는 메뉴에서 **원시 문자열 리터럴로 변환**을 선택합니다.
-     * 왼쪽 여백에 나타나는 ![Lightbulb](images/bulb.png) 아이콘을 클릭하고 상황에 맞는 메뉴에서 **원시 문자열 리터럴로 변환**을 선택합니다.
+     * 코드를 마우스 오른쪽 단추로 클릭하고, **빠른 작업 및 리팩터링** 메뉴를 선택하고, 상황에 맞는 메뉴에서 **원시 문자열 리터럴로 변환** 을 선택합니다.
+     * 왼쪽 여백에 나타나는 ![Lightbulb](images/bulb.png) 아이콘을 클릭하고 상황에 맞는 메뉴에서 **원시 문자열 리터럴로 변환** 을 선택합니다.
 
 1. 문자열은 즉시 원시 문자열 리터럴로 변환됩니다.
 

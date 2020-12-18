@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 연습: 프로젝트 및 솔루션 작업(C++)'
 title: '연습: 프로젝트 및 솔루션 작업(C++)'
 ms.date: 05/14/2019
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - projects [C++]
 - solutions [C++], about solutions
 ms.assetid: 93a3f290-e294-46e3-876e-e3084d9ae833
-ms.openlocfilehash: 46fd15e184b3a4fb1f84cde3e3207c03c692ad2e
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: f96c531a7a47e961b7e7da15ad455e3feefc6925
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92921882"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345279"
 ---
 # <a name="walkthrough-working-with-projects-and-solutions-c"></a>연습: 프로젝트 및 솔루션 작업(C++)
 

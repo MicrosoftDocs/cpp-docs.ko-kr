@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 명령줄에서 MSBuild 사용 - C++'
 title: 명령줄에서 MSBuild 사용 - C++
 ms.date: 12/12/2018
 helpviewer_keywords:
 - MSBuild
 ms.assetid: 7a1be7ff-0312-4669-adf2-5f5bf507d560
-ms.openlocfilehash: e95d99cf5c63c824bb9bade8e76bc3ca99079669
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 9d78c50b398b0ad97cfd75727fdb4219677c546b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220569"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97179852"
 ---
 # <a name="msbuild-on-the-command-line---c"></a>명령줄에서 MSBuild 사용 - C++
 
@@ -51,7 +52,7 @@ MSBuild에 대한 자세한 내용은 다음을 참조하세요.
 
 |용어|정의|
 |----------|----------------|
-|[연습: MSBuild를 사용하여 C++ 프로젝트 만들기](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)|**MSBuild**를 사용하여 C++ Visual Studio 프로젝트를 만드는 방법을 보여 줍니다.|
+|[연습: MSBuild를 사용하여 C++ 프로젝트 만들기](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)|**MSBuild** 를 사용하여 C++ Visual Studio 프로젝트를 만드는 방법을 보여 줍니다.|
 |[방법: MSBuild 프로젝트에서 빌드 이벤트 사용](how-to-use-build-events-in-msbuild-projects.md)|빌드 시작 전, 연결 단계 시작 전, 빌드 종료 후와 같은 빌드의 특정 단계에 수행되는 작업을 지정하는 방법을 보여 줍니다.|
 |[방법: MSBuild 프로젝트에 사용자 지정 빌드 단계 추가](how-to-add-a-custom-build-step-to-msbuild-projects.md)|빌드 순서에 사용자 정의 단계를 추가하는 방법을 보여 줍니다.|
 |[방법: MSBuild 프로젝트에 사용자 지정 빌드 도구 추가](how-to-add-custom-build-tools-to-msbuild-projects.md)|빌드 도구를 특정 파일에 연결하는 방법을 보여 줍니다.|

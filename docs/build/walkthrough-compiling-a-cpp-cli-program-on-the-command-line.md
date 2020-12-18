@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: 연습: 명령줄에서 C++/CLI 프로그램 컴파일'
 title: '연습: 명령줄에서 C++/CLI 프로그램 컴파일'
 ms.date: 04/23/2019
 ms.assetid: cef41c88-faf9-439d-8423-25aa3f5674dd
-ms.openlocfilehash: 8a5c5659367350a80725b365ef9c431bbec209d1
-ms.sourcegitcommit: 18d3b1e9cdb4fc3a76f7a650c31994bdbd2bde64
+ms.openlocfilehash: 075ac90f08f62fb75c9a220b398f34841eafa60d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64877449"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97199001"
 ---
 # <a name="walkthrough-compiling-a-ccli-program-on-the-command-line"></a>연습: 명령줄에서 C++/CLI 프로그램 컴파일
 
@@ -29,11 +30,11 @@ C++/CLI에 대해 컴파일을 사용하도록 설정하려면 [/clr](reference/
 
 1. **개발자 명령 프롬프트** 창을 엽니다. 특정 지침은 [개발자 명령 프롬프트 창을 열려면](building-on-the-command-line.md#developer_command_prompt)을 참조하세요.
 
-   컴퓨터 운영 체제 및 구성에 따라 코드를 정상적으로 컴파일하려면 관리자 자격 증명이 필요할 수 있습니다. 관리자 권한으로 명령 프롬프트 창을 실행하려면 마우스 오른쪽 단추를 클릭하여 명령 프롬프트의 바로 가기 메뉴를 연 다음 **기타** > **관리자 권한으로 실행**을 선택합니다.
+   컴퓨터 운영 체제 및 구성에 따라 코드를 정상적으로 컴파일하려면 관리자 자격 증명이 필요할 수 있습니다. 관리자 권한으로 명령 프롬프트 창을 실행하려면 마우스 오른쪽 단추를 클릭하여 명령 프롬프트의 바로 가기 메뉴를 연 다음 **기타** > **관리자 권한으로 실행** 을 선택합니다.
 
 1. 명령 프롬프트에서 `notepad basicclr.cpp`을 입력합니다.
 
-   파일을 만들 것인지 묻는 메시지가 나타나면 **예**를 선택합니다.
+   파일을 만들 것인지 묻는 메시지가 나타나면 **예** 를 선택합니다.
 
 1. 메모장에 다음 줄을 입력합니다.
 
@@ -44,7 +45,7 @@ C++/CLI에 대해 컴파일을 사용하도록 설정하려면 [/clr](reference/
    }
    ```
 
-1. 메뉴 모음에서 **파일** > **저장**을 차례로 선택합니다.
+1. 메뉴 모음에서 **파일** > **저장** 을 차례로 선택합니다.
 
    <xref:System> 네임스페이스에서 .NET Framework 클래스(<xref:System.Console>)를 사용하는 Visual C++ 소스 파일을 만들었습니다.
 

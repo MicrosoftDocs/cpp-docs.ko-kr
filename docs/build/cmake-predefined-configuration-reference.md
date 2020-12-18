@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: CMake 미리 정의된 빌드 구성'
 title: CMake 미리 정의된 구성 참조
 ms.description: Visual Studio provides several predefined build configurations for CMake projects on Linux, Windows, ARM, and IoT.
 ms.date: 06/12/2019
 helpviewer_keywords:
 - CMake redefined configurations
-ms.openlocfilehash: 3c957ebf92d038a9913b0fb9c4b06f1fae2da0a2
-ms.sourcegitcommit: 2a96750322bca43a8a29fdc400e14ca36132f9c1
+ms.openlocfilehash: cc4868234a4c71616d3244e9524c528fd66fe548
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93401045"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156920"
 ---
 # <a name="cmake-predefined-build-configurations"></a>CMake 미리 정의된 빌드 구성
 

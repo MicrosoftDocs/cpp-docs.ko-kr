@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: C 상수 식'
 title: C 상수 식
 ms.date: 06/14/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - constant expressions
 - expressions [C++], constant
 ms.assetid: d48a6c47-e44c-4be2-9c8b-7944c7ef8de7
-ms.openlocfilehash: 38d4eff6cf764a30bf409032ac692189d1300315
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 82da5150b35035d96b28ff1091e754cb7043a5ca
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213738"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289519"
 ---
 # <a name="c-constant-expressions"></a>C 상수 식
 

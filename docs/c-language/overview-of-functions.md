@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 함수 개요'
 title: 함수 개요
 ms.date: 11/04/2016
 helpviewer_keywords:
 - functions [C++]
 - control flow, function calls
 ms.assetid: b6f4637f-02b9-49d8-8601-1f886bd2cfb9
-ms.openlocfilehash: 89c9f24b049ee8e9a33557f3262cd6abcc624957
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b68591d9300cb1a2f63c37c78f4cc03406e9d68f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217066"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97243148"
 ---
 # <a name="overview-of-functions"></a>함수 개요
 

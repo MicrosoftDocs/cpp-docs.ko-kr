@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 부호 없는 정수 계열 형식에서 변환'
 title: 부호 없는 정수 계열 형식에서 변환
 ms.date: 10/02/2019
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - type conversion [C++], signed and unsigned integers
 - integral conversions, from unsigned
 ms.assetid: 60fb7e10-bff9-4a13-8a48-e19f25a36a02
-ms.openlocfilehash: 08b88b1343f56f8d79fc39c53505b26caecfe3c4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bb8f208a323083afeb4b5b88bc8d6514e1f8c99f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226466"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97293146"
 ---
 # <a name="conversions-from-unsigned-integral-types"></a>부호 없는 정수 계열 형식에서 변환
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: C 및 C++ 정수 제한'
 title: C 및 C++ 정수 제한
 ms.date: 10/21/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - limits, integer constants
 - integer limits
 ms.assetid: 0c23cbd6-29fb-4d9c-b689-5984e19748de
-ms.openlocfilehash: 1484b43719696578be437909351e24a550ec9869
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c9d15e5366acb482f688e1c5020c43ee83e4e802
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217118"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97292977"
 ---
 # <a name="c-and-c-integer-limits"></a>C 및 C++ 정수 제한
 

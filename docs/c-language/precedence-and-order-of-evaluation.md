@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 우선 순위 및 식 평가 순서'
 title: 우선 순위 및 식 평가 순서
 ms.date: 07/11/2019
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - data binding [C++], operator precedence
 - operators [C++], precedence
 ms.assetid: 201f7864-0c51-4c55-9d6f-39c5d013bcb0
-ms.openlocfilehash: c1a5feb4552dd43b26263ebd3080e18adef6cb32
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2e0046b8fefab99c29ac9c47322b7547ec573e63
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211738"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97312437"
 ---
 # <a name="precedence-and-order-of-evaluation"></a>우선 순위 및 식 평가 순서
 

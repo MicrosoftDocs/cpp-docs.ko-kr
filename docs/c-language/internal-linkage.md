@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 내부 링크'
 title: 내부 링크
 ms.date: 11/04/2016
 helpviewer_keywords:
 - internal linkage
 - linkage [C++], internal
 ms.assetid: 80be7b51-c930-43db-94d6-4f09a64077bf
-ms.openlocfilehash: 2871ee68b7ae880d6ec5c33ea69eb1bfcc3e284c
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: a22de598f119ec303cb7ea78255c2537c6ed306e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509910"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97181867"
 ---
 # <a name="internal-linkage"></a>내부 링크
 

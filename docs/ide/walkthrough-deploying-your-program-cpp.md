@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 연습: 프로그램 배포(C++)'
 title: '연습: 프로그램 배포(C++)'
 ms.date: 05/14/2019
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - projects [C++], deploying programs
 - application deployment [C++], walkthroughs
 ms.assetid: 79e6cc4e-dced-419d-aaf7-d62d1367603f
-ms.openlocfilehash: 6c5d98687d6b5a49fb7b4b90aecf345a739c34a3
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 7d3b35cfbf2c5398e153f038adfb49f1b95b442d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924681"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334778"
 ---
 # <a name="walkthrough-deploying-your-program-c"></a>연습: 프로그램 배포(C++)
 
@@ -84,7 +85,7 @@ ms.locfileid: "92924681"
 
 1. 활성 솔루션 구성을 릴리스로 변경합니다. 메뉴 모음에서 **빌드** > **구성 관리자** 를 선택합니다. **Configuration Manager** 대화 상자의 **활성 솔루션 구성** 드롭다운 상자 목록에서 **릴리스** 를 선택합니다. **닫기** 단추를 선택하여 구성을 저장합니다.
 
-1. 메뉴 모음에서 **파일** , >**새로 만들기**>, **프로젝트** 를 선택하여 **새 프로젝트** 대화 상자를 엽니다.
+1. 메뉴 모음에서 **파일**, >**새로 만들기**>, **프로젝트** 를 선택하여 **새 프로젝트** 대화 상자를 엽니다.
 
 1. 대화 상자의 왼쪽 창에서 **설치됨** > **기타 프로젝트 형식** 노드를 확장한 후 **Visual Studio 설치 관리자** 를 선택합니다. 가운데 창에서 **설치 프로젝트** 를 선택합니다.
 

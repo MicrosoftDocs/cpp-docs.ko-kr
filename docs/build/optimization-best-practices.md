@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 최적화에 유용한 정보'
 title: 최적화에 유용한 정보
 ms.date: 05/06/2019
 helpviewer_keywords:
 - C++, optimization
 - optimization, best practices
 ms.assetid: f3433148-7255-4ca6-8a4f-7c31aac88508
-ms.openlocfilehash: 425fa0bb6b7aab502ce493ced8b587fad8ce59a8
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 06588225838da3b52216fa0ae3eb51b7538ee58d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833350"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97179826"
 ---
 # <a name="optimization-best-practices"></a>최적화에 유용한 정보
 
@@ -40,7 +41,7 @@ Visual Studio에서는  PGO(프로필 기반 최적화)를 지원합니다. 이 
 
 **`/Op`** 컴파일러 옵션이 제거되었으며 부동 소수점 최적화를 처리하는 다음 네 가지 컴파일러 옵션이 추가되었습니다.
 
-|옵션|설명|
+|옵션|Description|
 |-|-|
 |**`/fp:precise`**|이 옵션은 기본 권장 사항이며 대부분의 경우 사용해야 합니다.|
 |**`/fp:fast`**|게임과 같이 성능이 가장 중요한 경우에 권장됩니다. 이 옵션을 사용하면 성능이 가장 빠릅니다.|

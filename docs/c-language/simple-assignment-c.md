@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 단순 할당 (C)'
 title: 단순 할당 (C)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - simple assignment operator
 - equal sign
 ms.assetid: e7140a0a-7104-4b3a-b293-7adcc1fdd52b
-ms.openlocfilehash: 64112a54828a9a6626e78e556e8fe6dc52a3300f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bf8637268c810ed6a75095774ca6ff7b7d3d9e67
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229547"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97229901"
 ---
 # <a name="simple-assignment-c"></a>단순 할당 (C)
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 형식 캐스팅 변환'
 title: 형식 캐스팅 변환
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - type casts [C++], about type-cast conversion
 - type-cast conversions [C++]
 ms.assetid: 57ab5902-f12f-4326-a2f6-6282f1d4025a
-ms.openlocfilehash: cc2b6d87d6fedf8d36373c901cdb6a6ba8b5f0e7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: dfa3e54320c416e4bd69cca06d2677def6244247
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231457"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97242914"
 ---
 # <a name="type-cast-conversions"></a>형식 캐스팅 변환
 
@@ -29,7 +30,7 @@ ms.locfileid: "87231457"
 *type-name*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*specifier-qualifier-list* *abstract-declarator*<sub>opt</sub>
 
-*type-name*은 형식이고 *cast-expression*은 해당 형식으로 변환할 값입니다. 형식 캐스팅을 사용하는 식은 l-value가 아닙니다. *cast-expression*은 *type-name* 형식의 변수에 할당된 것처럼 변환됩니다. 할당에 대한 변환 규칙([할당 변환](../c-language/assignment-conversions.md)에 개괄되어 있음)은 형식 캐스팅에도 적용됩니다. 다음 표에서는 임의의 형식으로 캐스팅될 수 있는 형식을 보여 줍니다.
+*type-name* 은 형식이고 *cast-expression* 은 해당 형식으로 변환할 값입니다. 형식 캐스팅을 사용하는 식은 l-value가 아닙니다. *cast-expression* 은 *type-name* 형식의 변수에 할당된 것처럼 변환됩니다. 할당에 대한 변환 규칙([할당 변환](../c-language/assignment-conversions.md)에 개괄되어 있음)은 형식 캐스팅에도 적용됩니다. 다음 표에서는 임의의 형식으로 캐스팅될 수 있는 형식을 보여 줍니다.
 
 ### <a name="legal-type-casts"></a>올바른 형식 캐스팅
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 네임스페이스'
 title: 네임스페이스
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - tags, structure tags
 - union keyword [C]
 ms.assetid: b4bda1d1-cb5e-4f60-ac2b-29af93d8a9a2
-ms.openlocfilehash: 28036219464e96ae20733473dedb4fab63f6de38
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 71080f3cec22d8b1c11726602eb9899e1cf6d2ca
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218821"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256954"
 ---
 # <a name="name-spaces"></a>네임스페이스
 

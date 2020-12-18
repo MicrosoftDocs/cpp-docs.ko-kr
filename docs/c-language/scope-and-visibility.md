@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 범위 및 표시 영역'
 title: 범위 및 표시 영역
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - visibility
 - file scope [C++]
 ms.assetid: a019eb7c-66ed-46a7-bc9f-89a963930a56
-ms.openlocfilehash: 354b354a72b5a96a190ce2322eb160b7d6bff1c2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 188fbedad87e370e8b5b1e7dabc475e301ca3f4f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87199401"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97292832"
 ---
 # <a name="scope-and-visibility"></a>범위 및 표시 영역
 

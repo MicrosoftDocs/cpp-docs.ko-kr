@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: C 형식 지정자'
 title: C 형식 지정자
 ms.date: 01/29/2018
 helpviewer_keywords:
 - type specifiers, C
 - specifiers, type
 ms.assetid: fbe13441-04c3-4829-b047-06d374adc2b6
-ms.openlocfilehash: 652388fdf345cab7878bbd8c054b769377b322a9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: afff33e385564f5ef8d04988255a239135be13b0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217157"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97214206"
 ---
 # <a name="c-type-specifiers"></a>C 형식 지정자
 
@@ -20,7 +21,7 @@ ms.locfileid: "87217157"
 
 *type-specifier*: &nbsp;&nbsp;&nbsp;&nbsp; **`void`** &nbsp;&nbsp;&nbsp;&nbsp; **`char`** &nbsp;&nbsp;&nbsp;&nbsp; **`short`** &nbsp;&nbsp;&nbsp;&nbsp; **`int`** &nbsp;&nbsp;&nbsp;&nbsp; **`long`** &nbsp;&nbsp;&nbsp;&nbsp; **`float`** &nbsp;&nbsp;&nbsp;&nbsp; **`double`** &nbsp;&nbsp;&nbsp;&nbsp; **`signed`** &nbsp;&nbsp;&nbsp;&nbsp; **`unsigned`** &nbsp;&nbsp;&nbsp;&nbsp;*struct-or-union-specifier* &nbsp;&nbsp;&nbsp;&nbsp;*enum-specifier* &nbsp;&nbsp;&nbsp;&nbsp;*typedef-name*
 
-**`signed char`** , **`signed int`** , **`signed short int`** 및 **signed long int** 형식은 해당 **`unsigned`** 대응 항목 및 **`enum`** 과 함께 정수 형식으로 호출됩니다. **`float`** , **`double`** 및 **`long double`** 형식 지정자는 부동 또는 부동 소수점 형식이라고 합니다. 변수 또는 함수 선언에서 정수 계열 또는 부동 소수점 형식 지정자를 사용할 수 있습니다. *type-specifier*가 선언에서 제공되지 않으면 **`int`** 로 간주됩니다.
+**`signed char`** , **`signed int`** , **`signed short int`** 및 **signed long int** 형식은 해당 **`unsigned`** 대응 항목 및 **`enum`** 과 함께 정수 형식으로 호출됩니다. **`float`** , **`double`** 및 **`long double`** 형식 지정자는 부동 또는 부동 소수점 형식이라고 합니다. 변수 또는 함수 선언에서 정수 계열 또는 부동 소수점 형식 지정자를 사용할 수 있습니다. *type-specifier* 가 선언에서 제공되지 않으면 **`int`** 로 간주됩니다.
 
 선택적 키워드 **`signed`** 및 **`unsigned`** 는 **`enum`** 을 제외한 정수 계열 형식의 앞이나 뒤에 올 수 있으며, 형식 지정자로 단독으로 사용될 수도 있는데 이 경우 각각 **`signed int`** 및 **`unsigned int`** 로 해석됩니다. 단독으로 사용되는 경우 **`int`** 키워드는 **`signed`** 로 간주됩니다. 단독으로 사용되는 경우 **`long`** 및 **`short`** 키워드는 **long int** 및 **`short int`** 로 해석됩니다.
 

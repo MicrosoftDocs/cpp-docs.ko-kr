@@ -1,4 +1,5 @@
-﻿---
+---
+description: '자세한 정보: 동적으로 MFC에 연결된 기본 MFC DLL의 모듈 상태'
 title: 동적으로 MFC에 연결된 기본 MFC DLL의 모듈 상태
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - module states [C++], regular MFC DLLs dynamically linked to
 - DLLs [C++], module states
 ms.assetid: b4493e79-d25e-4b7f-a565-60de5b32c723
-ms.openlocfilehash: cedce676f5586369446c9856fd33e4d16c237b27
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 4cf1720e7aff21f13b7486517e626307ef6731a6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220586"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97187509"
 ---
 # <a name="module-states-of-a-regular-mfc-dll-dynamically-linked-to-mfc"></a>동적으로 MFC에 연결된 기본 MFC DLL의 모듈 상태
 

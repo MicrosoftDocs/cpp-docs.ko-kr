@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 링크 없음'
 title: 링크 없음
 ms.date: 11/04/2016
 helpviewer_keywords:
 - no linkage
 - linkage [C++], none
 ms.assetid: 5a413082-1034-4e04-b76b-8d14668bf434
-ms.openlocfilehash: 69ead5d12d6689370e9ae04a54d5f5a8db06eca5
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: cf0e1ccbbea3b79bce66335e361f3c23162e6cb6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500751"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97243317"
 ---
 # <a name="no-linkage"></a>링크 없음
 

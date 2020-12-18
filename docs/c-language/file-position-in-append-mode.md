@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 추가 모드의 파일 위치'
 title: 추가 모드의 파일 위치
 ms.date: 11/04/2016
 helpviewer_keywords:
 - file pointers [C++], append mode
 ms.assetid: fca94e95-907c-4703-ad7d-2fcac1592168
-ms.openlocfilehash: b1a9b668786ffe82bd6390a6ac94171b41bffe41
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 86ff3f5402946ce417793293b6cf78c55ed24a2e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62233685"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97196141"
 ---
 # <a name="file-position-in-append-mode"></a>추가 모드의 파일 위치
 

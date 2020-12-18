@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 더하기(+)'
 title: 더하기(+)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - pointers, adding integers
 ms.assetid: b9014fee-825d-46ef-91db-5d46807081fc
-ms.openlocfilehash: 48672315960e32cb324aacc6c90d3d67891f3d39
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 33cc1284c9ab36988d9fcba2fcc9e27d052cb4cc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62313664"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280185"
 ---
 # <a name="addition-"></a>더하기(+)
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: C/C++ 격리된 애플리케이션 및 side-by-side 어셈블리 문제 해결'
 title: C/C++ 격리된 애플리케이션 및 side-by-side 어셈블리 문제 해결
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - troubleshooting isolated applications
 - troubleshooting Visual C++
 ms.assetid: 3257257a-1f0b-4ede-8564-9277a7113a35
-ms.openlocfilehash: 0dc8488acc90f1a38a4c0de0f052590ef4f398af
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: f3a93ec13ce36e67f88d772f1dcbad9443fca188
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81335446"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277416"
 ---
 # <a name="troubleshooting-cc-isolated-applications-and-side-by-side-assemblies"></a>C/C++ 격리된 애플리케이션 및 side-by-side 어셈블리 문제 해결
 
@@ -35,7 +36,7 @@ ms.locfileid: "81335446"
 
 1. 운영 체제 로더는 애플리케이션 매니페스트를 사용하여 애플리케이션이 종속된 어셈블리를 로드합니다. 매니페스트는 리소스로 이진 파일에 포함하거나 별도의 파일로 애플리케이션 폴더에 설치할 수 있습니다. 매니페스트가 이진 파일에 포함되어 있는지 확인하려면 Visual Studio에서 이진 파일을 열고 리소스 목록에서 RT_MANIFEST를 찾습니다. 포함된 매니페스트를 찾을 수 없는 경우 애플리케이션 폴더에서 이름이 <binary_name>.\<extension>.manifest와 같은 파일을 찾습니다.
 
-1. 애플리케이션이 side-by-side 어셈블리에 종속된 경우 매니페스트가 없으면 링커에서 프로젝트에 대한 매니페스트를 생성하도록 해야 합니다. 프로젝트의 **프로젝트 속성** 대화 상자에서 링커 옵션 **매니페스트 생성**을 클릭합니다.
+1. 애플리케이션이 side-by-side 어셈블리에 종속된 경우 매니페스트가 없으면 링커에서 프로젝트에 대한 매니페스트를 생성하도록 해야 합니다. 프로젝트의 **프로젝트 속성** 대화 상자에서 링커 옵션 **매니페스트 생성** 을 클릭합니다.
 
 1. 매니페스트가 이진 파일에 포함된 경우 RT_MANIFEST의 ID가 이 형식의 이진 파일에 적합한지 확인합니다. 사용할 리소스 ID에 대한 자세한 내용은 [Side-by-Side 어셈블리를 리소스로 사용(Windows)](/windows/win32/SbsCs/using-side-by-side-assemblies-as-a-resource)을 참조하세요. 매니페스트가 별도의 파일에 있는 경우 XML 편집기나 텍스트 편집기에서 엽니다. 매니페스트 및 배포 규칙에 대한 자세한 내용은 [매니페스트](/windows/win32/sbscs/manifests)를 참조하세요.
 

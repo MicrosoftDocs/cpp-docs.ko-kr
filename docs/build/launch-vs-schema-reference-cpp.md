@@ -1,29 +1,30 @@
 ---
+description: '자세한 정보: launch.vs.json 스키마 참조(C++)'
 title: launch.vs.json 스키마 참조(C++)
 ms.date: 08/20/2019
 helpviewer_keywords:
 - launch.vs.json file [C++]
-ms.openlocfilehash: 1e235b5f1ff4d7573ddbe57ac4e3c7c9bdbc2eb8
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: a7b18de57208017003717b3cda38fb214fad7f79
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91505667"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97172065"
 ---
 # <a name="launchvsjson-schema-reference-c"></a>launch.vs.json 스키마 참조(C++)
 
-*launch.vs.json* 파일을 사용해 디버깅 매개 변수를 구성합니다. 파일을 만들려면 **솔루션 탐색기**에서 실행 파일을 마우스 오른쪽 단추로 클릭하고 **디버깅 및 시작 설정**을 선택합니다. 프로젝트와 가장 많이 일치하는 옵션을 선택한 후 다음 속성을 사용하여 필요에 따라 구성을 수정합니다. CMake 프로젝트 디버깅에 대한 자세한 내용은 [CMake 디버깅 세션 구성](./configure-cmake-debugging-sessions.md)을 참조하세요.
+*launch.vs.json* 파일을 사용해 디버깅 매개 변수를 구성합니다. 파일을 만들려면 **솔루션 탐색기** 에서 실행 파일을 마우스 오른쪽 단추로 클릭하고 **디버깅 및 시작 설정** 을 선택합니다. 프로젝트와 가장 많이 일치하는 옵션을 선택한 후 다음 속성을 사용하여 필요에 따라 구성을 수정합니다. CMake 프로젝트 디버깅에 대한 자세한 내용은 [CMake 디버깅 세션 구성](./configure-cmake-debugging-sessions.md)을 참조하세요.
 
 ## <a name="default-properties"></a>기본 속성
 
 |속성|유형|Description|
 |-|-|-|
-|`name`|string|디버그 대상 드롭다운에서 항목 이름을 지정합니다.|
+|`name`|문자열|디버그 대상 드롭다운에서 항목 이름을 지정합니다.|
 |`type`|string|프로젝트가 dll인지, 아니면 .exe인지 여부를 지정합니다(기본값은 .exe).|
 |`project`|string|프로젝트 파일의 상대 경로를 지정합니다.|
 |`projectTarget`|string|`project`를 빌드할 때 호출되는 선택적 대상을 지정합니다. 이 `projectTarget`은 이미 있어야 하며 **디버그 대상** 드롭다운의 이름과 일치해야 합니다.|
 |`debugType`|string|코드의 형식(기본, 관리 또는 혼합)에 따라 디버깅 모드를 지정합니다. 이 매개 변수가 설정되어 있지 않으면 자동으로 검색됩니다. 허용되는 값: "기본", "관리", "혼합".|
-|`inheritEnvironments`|array|여러 원본에서 상속되는 환경 변수 집합을 지정합니다. *CMakeSettings.json* 또는 *CppProperties.json*과 같은 파일에 일부 변수를 정의하고 디버그 컨텍스트에 사용할 수 있도록 설정할 수 있습니다.  **Visual Studio 16.4:** : `env.VARIABLE_NAME` 구문을 사용하여 대상별로 환경 변수를 지정합니다. 변수를 설정 해제하려면 변수를 "Null"로 설정합니다.|
+|`inheritEnvironments`|array|여러 원본에서 상속되는 환경 변수 집합을 지정합니다. *CMakeSettings.json* 또는 *CppProperties.json* 과 같은 파일에 일부 변수를 정의하고 디버그 컨텍스트에 사용할 수 있도록 설정할 수 있습니다.  **Visual Studio 16.4:** : `env.VARIABLE_NAME` 구문을 사용하여 대상별로 환경 변수를 지정합니다. 변수를 설정 해제하려면 변수를 "Null"로 설정합니다.|
 |`args`|array|시작된 프로그램에 전달되는 명령줄 인수를 지정합니다.|
 |`currentDir`|string|빌드 대상의 전체 디렉터리 경로를 지정합니다. 이 매개 변수가 설정되어 있지 않으면 자동으로 검색됩니다.|
 |`noDebug`|boolean|시작된 프로그램을 디버그할지 여부를 지정합니다. 지정되지 않은 경우 이 매개 변수의 기본값은 **`false`** 입니다.|
@@ -37,7 +38,7 @@ ms.locfileid: "91505667"
 
 |속성|유형|Description|
 |-|-|-|
-|`program`|string|원격 컴퓨터의 프로그램 실행 파일에 대한 전체 경로입니다. CMake를 사용하는 경우 이 필드의 값으로 `${debugInfo.fullTargetPath}`라는 매크로를 사용할 수 있습니다.|
+|`program`|문자열|원격 컴퓨터의 프로그램 실행 파일에 대한 전체 경로입니다. CMake를 사용하는 경우 이 필드의 값으로 `${debugInfo.fullTargetPath}`라는 매크로를 사용할 수 있습니다.|
 |`processId`|integer|디버거를 연결할 선택적 프로세스 ID입니다.|
 |`sourceFileMap`|개체|디버그 엔진에 전달되는 선택적 소스 파일 매핑입니다. 형식: `{ "\<Compiler source location>": "\<Editor source location>" }` 또는 `{ "\<Compiler source location>": { "editorPath": "\<Editor source location>", "useForBreakpoints": true } }`. 예: `{ "/home/user/foo": "C:\\foo" }` 또는 `{ "/home/user/foo": { "editorPath": "c:\\foo", "useForBreakpoints": true } }`. [소스 파일 맵 옵션](#source_file_map_options)을 참조하세요.|
 |`additionalProperties`|string|sourceFileMapOptions 중 하나입니다. 다음을 참조하세요.|
@@ -77,7 +78,7 @@ externalConsole|boolean|true이면 디버기에 대해 콘솔이 시작됩니다
 
 |속성|유형|Description|
 |-|-|-|
-|`pipeCwd`|string|파이프 프로그램의 작업 디렉터리에 대한 정규화된 경로입니다.|
+|`pipeCwd`|문자열|파이프 프로그램의 작업 디렉터리에 대한 정규화된 경로입니다.|
 |`pipeProgram`|string|실행할 정규화된 파이프 명령입니다.|
 |`pipeArgs`|array|연결을 구성하기 위해 파이프 프로그램에 전달되는 명령줄 인수입니다.|
 |`debuggerPath`|string|대상 컴퓨터의 디버거에 대한 전체 경로(예: /usr/bin/gdb)입니다.|

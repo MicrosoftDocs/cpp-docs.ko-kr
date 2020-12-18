@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: Visual Studio 버전의 C++ 도구 및 기능'
 title: Visual Studio 버전의 C++ 도구 및 기능
 ms.date: 05/21/2019
 helpviewer_keywords:
 - tools and platforms [C++]
 ms.assetid: 3d88607b-9cc4-490a-8d4c-31ee7610a26f
-ms.openlocfilehash: c2ef6c539d5845beee044a963e0056d3287ba679
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 6253e52fa300cc60de4b2700b384fde6f5ffe1ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924807"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97254627"
 ---
 # <a name="c-tools-and-features-in-visual-studio-editions"></a>Visual Studio 버전의 C++ 도구 및 기능
 
@@ -19,7 +20,7 @@ ms.locfileid: "92924807"
 
 ## <a name="platforms"></a>플랫폼
 
-- Windows 바탕 화면
+- Windows Desktop
 - 유니버설 Windows 플랫폼((태블릿, PC, Xbox, IoT 및 HoloLens))
 - Linux
 - Android
@@ -204,7 +205,7 @@ Windows 데스크톱:
 
 유니버설 Windows 플랫폼(C++/CX):
 
-- 새 응용 프로그램
+- 빈 앱
 - DirectX 11 및 XAML 앱
 - DirectX 11 앱
 - DirectX 12 앱
@@ -301,7 +302,7 @@ Linux:
 - Microsoft Fakes(단위 테스트 격리)(Enterprise만 해당)
 - 코드 검사(Enterprise만 해당)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [Visual Studio 설치](/visualstudio/install/install-visual-studio)<br/>
 [Visual Studio의 새로운 기능](/visualstudio/ide/whats-new-in-visual-studio)<br/>
@@ -317,7 +318,7 @@ Linux:
 
 |플랫폼|Visual Studio Express for Windows 10|Visual Studio Express for Windows Desktop|Visual Studio Community/Professional|Visual Studio Enterprise|
 |-|-|-|-|-|
-|Windows 바탕 화면||X|X|X|
+|Windows Desktop||X|X|X|
 |범용 Windows 플랫폼(휴대폰, 태블릿, PC, Xbox, IoT 및 HoloLens)|X||X|X|
 |Linux|X|X|
 |Microsoft Store 8.1|||X|X|

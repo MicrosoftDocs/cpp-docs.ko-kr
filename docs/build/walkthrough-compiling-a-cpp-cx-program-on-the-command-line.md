@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: 연습: 명령줄에서 C++/CX 프로그램 컴파일'
 title: '연습: 명령줄에서 C++/CX 프로그램 컴파일'
 ms.date: 04/23/2019
 ms.assetid: 626f5544-69ed-4736-83a9-f11389b371b2
-ms.openlocfilehash: 8dcd27ca8fff826f33ee8bd752cd32f2d44d3691
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 10bee181f347864fdef1703f88ca002a6c7c40b9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836714"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97198949"
 ---
 # <a name="walkthrough-compiling-a-ccx-program-on-the-command-line"></a>연습: 명령줄에서 C++/CX 프로그램 컴파일
 
@@ -31,13 +32,13 @@ C++/CX를 컴파일할 수 있도록 설정하려면 [/ZW](reference/zw-windows-
 
 #### <a name="to-compile-a-ccx-application-on-the-command-line"></a>명령줄에서 C++/CX 애플리케이션을 컴파일하려면
 
-1. **개발자 명령 프롬프트** 창을 엽니다. (**시작** 창에서 **앱**을 엽니다. 사용 중인 Visual Studio 버전에서 **Visual Studio Tools** 폴더를 연 다음 **개발자 명령 프롬프트** 바로 가기를 선택합니다.) 개발자 명령 프롬프트 창을 여는 방법에 대한 자세한 내용은 [명령줄에서 MSVC 도구 집합 사용](building-on-the-command-line.md)을 참조하세요.
+1. **개발자 명령 프롬프트** 창을 엽니다. (**시작** 창에서 **앱** 을 엽니다. 사용 중인 Visual Studio 버전에서 **Visual Studio Tools** 폴더를 연 다음 **개발자 명령 프롬프트** 바로 가기를 선택합니다.) 개발자 명령 프롬프트 창을 여는 방법에 대한 자세한 내용은 [명령줄에서 MSVC 도구 집합 사용](building-on-the-command-line.md)을 참조하세요.
 
-   컴퓨터 운영 체제 및 구성에 따라 코드를 정상적으로 컴파일하려면 관리자 자격 증명이 필요할 수 있습니다. 관리자로 명령 프롬프트 창을 실행하려면 **개발자 명령 프롬프트**의 바로 가기 메뉴를 연 다음 **관리자 권한으로 실행**을 선택합니다.
+   컴퓨터 운영 체제 및 구성에 따라 코드를 정상적으로 컴파일하려면 관리자 자격 증명이 필요할 수 있습니다. 관리자로 명령 프롬프트 창을 실행하려면 **개발자 명령 프롬프트** 의 바로 가기 메뉴를 연 다음 **관리자 권한으로 실행** 을 선택합니다.
 
-1. 명령 프롬프트에 **notepad basiccx.cpp**를 입력합니다.
+1. 명령 프롬프트에 **notepad basiccx.cpp** 를 입력합니다.
 
-   파일을 만들지 묻는 메시지가 나타나면 **예**를 선택합니다.
+   파일을 만들지 묻는 메시지가 나타나면 **예** 를 선택합니다.
 
 1. 메모장에 다음 줄을 입력합니다.
 
@@ -50,13 +51,13 @@ C++/CX를 컴파일할 수 있도록 설정하려면 [/ZW](reference/zw-windows-
     }
     ```
 
-1. 메뉴 모음에서 **파일** > **저장**을 선택합니다.
+1. 메뉴 모음에서 **파일** > **저장** 을 선택합니다.
 
    Windows 런타임 [Platform namespace](../cppcx/platform-namespace-c-cx.md) 네임스페이스를 사용하는 C++ 소스 파일을 만들었습니다.
 
-1. 명령 프롬프트에 **cl /EHsc /ZW basiccx.cpp /link /SUBSYSTEM:CONSOLE**을 입력합니다. cl.exe 컴파일러는 이 소스 파일을 .obj 파일로 컴파일한 다음 링커를 실행하여 실행 프로그램인 basiccx.exe를 생성합니다. ([/EHsc](reference/eh-exception-handling-model.md) 컴파일러 옵션은 C++ 예외 처리 모델을 지정하고 [/link](reference/link-pass-options-to-linker.md) 플래그는 콘솔 애플리케이션을 지정합니다.)
+1. 명령 프롬프트에 **cl /EHsc /ZW basiccx.cpp /link /SUBSYSTEM:CONSOLE** 을 입력합니다. cl.exe 컴파일러는 이 소스 파일을 .obj 파일로 컴파일한 다음 링커를 실행하여 실행 프로그램인 basiccx.exe를 생성합니다. ([/EHsc](reference/eh-exception-handling-model.md) 컴파일러 옵션은 C++ 예외 처리 모델을 지정하고 [/link](reference/link-pass-options-to-linker.md) 플래그는 콘솔 애플리케이션을 지정합니다.)
 
-1. basiccx.exe 프로그램을 실행하려면 명령 프롬프트에 **basiccx**를 입력합니다.
+1. basiccx.exe 프로그램을 실행하려면 명령 프롬프트에 **basiccx** 를 입력합니다.
 
    프로그램이 다음 텍스트를 표시하고 종료됩니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 방법: 명령줄에서 64비트 x64 호스팅 MSVC 도구 집합 사용'
 title: '방법: 명령줄에서 64비트 MSVC 도구 집합 사용'
 ms.date: 07/24/2019
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - IPF, command-line compiler
 - x64 [C++], command-line compiler
 ms.assetid: 4da93a19-e20d-4778-902a-5eee9a6a90b5
-ms.openlocfilehash: 60399994cd5fc2f39efeadc6ffcf917138aada37
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: d5e712802f420d425f4a0291d88220c22d4aeb62
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80078537"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97162731"
 ---
 # <a name="how-to-enable-a-64-bit-x64-hosted-msvc-toolset-on-the-command-line"></a>방법: 명령줄에서 64비트 x64 호스팅 MSVC 도구 집합 사용
 
@@ -29,7 +30,7 @@ Windows 10에서 이 명령 프롬프트에 액세스하려면 **시작** 메뉴
 
 ![x64 네이티브 도구 명령 프롬프트](media/x64-native-tools-command-prompt.png "시작 메뉴의 x64 네이티브 도구")
 
-Windows 8에서 이러한 명령 프롬프트에 액세스하려면 **시작** 화면에서 **모든 앱**을 엽니다. 설치된 Visual Studio 버전에 대한 제목에서 **Visual Studio** 폴더(이전 Visual Studio 버전의 경우 **Visual Studio Tools**일 수 있음)를 엽니다. 이전 버전의 Windows에서는 **시작**을 선택하고 **모든 프로그램**을 확장한 다음, 해당 **Visual Studio** 버전에 대한 폴더(및 이전 버전의 Visual Studio에서는 **Visual Studio Tools**)를 선택합니다. 자세한 내용은 [개발자 명령 프롬프트 바로 가기](building-on-the-command-line.md#developer_command_prompt_shortcuts)를 참조하세요.
+Windows 8에서 이러한 명령 프롬프트에 액세스하려면 **시작** 화면에서 **모든 앱** 을 엽니다. 설치된 Visual Studio 버전에 대한 제목에서 **Visual Studio** 폴더(이전 Visual Studio 버전의 경우 **Visual Studio Tools** 일 수 있음)를 엽니다. 이전 버전의 Windows에서는 **시작** 을 선택하고 **모든 프로그램** 을 확장한 다음, 해당 **Visual Studio** 버전에 대한 폴더(및 이전 버전의 Visual Studio에서는 **Visual Studio Tools**)를 선택합니다. 자세한 내용은 [개발자 명령 프롬프트 바로 가기](building-on-the-command-line.md#developer_command_prompt_shortcuts)를 참조하세요.
 
 ## <a name="use-vcvarsallbat-to-set-a-64-bit-hosted-build-architecture"></a>Vcvarsall.bat를 사용하여 64비트 호스팅 빌드 아키텍처 설정
 

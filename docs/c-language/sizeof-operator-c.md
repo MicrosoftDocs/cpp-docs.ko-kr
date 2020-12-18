@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: sizeof 연산자(C)'
 title: sizeof 연산자 (C)
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - sizeof operator
 ms.assetid: 70826d03-3451-41e4-bebb-a820ae66d53f
-ms.openlocfilehash: 1d06fc8b541cbce3771a485c8f71953be8f7d552
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a67a7068d6fa14ad3fc35fc9909251ff7e304341
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229521"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97162406"
 ---
 # <a name="sizeof-operator-c"></a>sizeof 연산자 (C)
 
@@ -26,7 +27,7 @@ sizeof ( type-name )
 
 ## <a name="remarks"></a>설명
 
-이 피연산자는 *unary-expression* 식별자이거나 괄호로 묶은 형식 지정자인 형식 캐스트 식입니다. *unary-expression*은 비트 필드 개체, 불완전한 형식 또는 함수 지정자를 나타낼 수 없습니다. 결과는 부호 없는 정수 계열 상수입니다. 표준 헤더 STDDEF.H에서는 이 형식을 **size_t**로 정의합니다.
+이 피연산자는 *unary-expression* 식별자이거나 괄호로 묶은 형식 지정자인 형식 캐스트 식입니다. *unary-expression* 은 비트 필드 개체, 불완전한 형식 또는 함수 지정자를 나타낼 수 없습니다. 결과는 부호 없는 정수 계열 상수입니다. 표준 헤더 STDDEF.H에서는 이 형식을 **size_t** 로 정의합니다.
 
 **`sizeof`** 연산자를 배열 식별자에 적용하면 해당 결과는 배열 식별자가 나타내는 포인터의 크기가 아닌 전체 배열의 크기입니다.
 

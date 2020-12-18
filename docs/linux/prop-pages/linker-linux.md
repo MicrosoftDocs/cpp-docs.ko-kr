@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: 링커 속성(Linux C++)'
 title: 링커 속성(Linux C++)
 ms.date: 06/07/2019
 ms.assetid: a0243a94-8164-425b-b2fe-b84ff363d546
-ms.openlocfilehash: d6c6bc44a4d681f442a5a85ca9d5865c4590f884
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 93ded9016cecb629fe17d171387260179b208f77
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92921492"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97169751"
 ---
 # <a name="linker-properties-linux-c"></a>링커 속성(Linux C++)
 
@@ -27,7 +28,7 @@ Linux 지원은 Visual Studio 2017 이상에서 사용할 수 있습니다.
 | 진행률 표시 | 링커 진행 메시지를 출력합니다. |
 | 버전 | -version 옵션을 사용하면 실행 파일의 헤더에 버전 번호를 삽입하도록 링커에 지시할 수 있습니다. |
 | 자세한 출력 사용 | -verbose 옵션을 사용하면 디버깅에 대한 자세한 메시지를 출력하도록 링커에 지시할 수 있습니다. |
-| Trace | --trace 옵션은 입력 파일을 처리된 것으로 출력하도록 링커에 지시합니다. |
+| 추적 | --trace 옵션은 입력 파일을 처리된 것으로 출력하도록 링커에 지시합니다. |
 | 기호 추적 | 기호가 표시되는 파일의 목록을 인쇄합니다. (--trace-symbol=symbol) |
 | 맵 인쇄 | --print-map 옵션은 링크 맵을 출력하도록 링커에 지시합니다. |
 | 확인되지 않은 기호 참조 보고 | 이 옵션을 사용하도록 설정하면 확인되지 않은 기호 참조가 보고됩니다. |

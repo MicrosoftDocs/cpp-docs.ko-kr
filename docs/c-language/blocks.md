@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 블록'
 title: 블록
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - compound statements
 - statements, compound
 ms.assetid: be231a92-c712-464e-ae25-a4becb20f7f5
-ms.openlocfilehash: 4f308864e6e85f74e40d9c9df200a0254fea366a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d2db8d164e603e1ea7e266273706899e1ea1aef5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62325912"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97211676"
 ---
 # <a name="blocks"></a>블록
 

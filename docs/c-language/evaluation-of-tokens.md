@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 토큰 계산'
 title: 토큰 계산
 ms.date: 11/04/2016
 helpviewer_keywords:
 - tokens, evaluating
 ms.assetid: 28870b62-dff6-4644-8b75-d58f340b48d2
-ms.openlocfilehash: 15775ca9a7ada46aaf4e53ae952cd67e95bbf8d3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e22a904956b3f429585c6627a7fb2e8f8da6d222
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62234025"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97196531"
 ---
 # <a name="evaluation-of-tokens"></a>토큰 계산
 

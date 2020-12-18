@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 부호 있는 정수 계열 형식에서 변환'
 title: 부호 있는 정수 계열 형식에서 변환
 ms.date: 10/02/2019
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - data type conversion [C++], signed and unsigned integers
 - type conversion [C++], signed and unsigned integers
 ms.assetid: 5eea32f8-8b14-413d-acac-c063b3d118d7
-ms.openlocfilehash: d41d2fd205a87f9f2be2179ffd8e38256a96e4f7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 25ee07f0b3bac9cd954bc217a4a71e579e4eacda
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226479"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97293159"
 ---
 # <a name="conversions-from-signed-integral-types"></a>부호 있는 정수 계열 형식에서 변환
 
@@ -49,10 +50,10 @@ Microsoft 컴파일러에서 **`int`** 와 **`long`** 은 고유하지만 같은
 |**`char`**|**`long`**|부호 확장|
 |**`char`**|**`long long`**|부호 확장|
 |**`char`**|**`unsigned char`**|패턴 유지(상위 비트가 부호 비트로의 기능을 잃음)|
-|**`char`**|**`unsigned short`**|**`short`** 로 부호 확장, **`short`** 를 **`unsigned short`** 로 변환|
+|**`char`**|**`unsigned short`**|**`short`** 으로 부호 확장, **`short`** 을 **`unsigned short`** 으로 변환|
 |**`char`**|**`unsigned long`**|**`long`** 으로 부호 확장, **`long`** 을 **`unsigned long`** 으로 변환|
-|**`char`**|**`unsigned long long`**|**`long long`** 으로 부호 확장, **`long long`** 을 **`unsigned long long`** 으로 변환|
-|**`char`**|**`float`**|**`long`** 으로 부호 확장, **`long`** 을 **`float`** 로 변환|
+|**`char`**|**`unsigned long long`**|**`long long`** 으로 부호 확장, **`long long`** 을 **`unsigned long long`** 로 변환|
+|**`char`**|**`float`**|**`long`** 으로 부호 확장 **`long`** 을 **`float`** 로 변환|
 |**`char`**|**`double`**|**`long`** 으로 부호 확장 **`long`** 을 **`double`** 로 변환|
 |**`char`**|**`long double`**|**`long`** 으로 부호 확장 **`long`** 을 **`double`** 로 변환|
 |**`short`**|**`char`**|하위 바이트 유지|
@@ -61,8 +62,8 @@ Microsoft 컴파일러에서 **`int`** 와 **`long`** 은 고유하지만 같은
 |**`short`**|**`unsigned char`**|하위 바이트 유지|
 |**`short`**|**`unsigned short`**|비트 패턴 유지(상위 비트가 부호 비트로의 기능을 잃음)|
 |**`short`**|**`unsigned long`**|**`long`** 으로 부호 확장, **`long`** 을 **`unsigned long`** 으로 변환|
-|**`short`**|**`unsigned long long`**|**`long long`** 으로 부호 확장, **`long long`** 을 **`unsigned long long`** 으로 변환|
-|**`short`**|**`float`**|**`long`** 으로 부호 확장, **`long`** 을 **`float`** 로 변환|
+|**`short`**|**`unsigned long long`**|**`long long`** 으로 부호 확장, **`long long`** 을 **`unsigned long long`** 로 변환|
+|**`short`**|**`float`**|**`long`** 으로 부호 확장 **`long`** 을 **`float`** 로 변환|
 |**`short`**|**`double`**|**`long`** 으로 부호 확장 **`long`** 을 **`double`** 로 변환|
 |**`short`**|**`long double`**|**`long`** 으로 부호 확장 **`long`** 을 **`double`** 로 변환|
 |**`long`**|**`char`**|하위 바이트 유지|

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Naked (C)'
 title: Naked (C)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - prolog code
 - epilog code
 ms.assetid: 23b1209b-93ba-46ad-a60f-2327c1933eaf
-ms.openlocfilehash: 519d7bceb700e9862f0d0025b755cf28fb0fbc0c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8d45371f71ccffda2c7505587f0942671d24b047
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62325782"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97257019"
 ---
 # <a name="naked-c"></a>Naked (C)
 

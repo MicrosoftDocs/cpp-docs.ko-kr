@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: 구조체, 공용 구조체, 열거형 및 비트 필드'
 title: 구조체, 공용 구조체, 열거형 및 비트 필드
 ms.date: 11/04/2016
 ms.assetid: 53f72553-c716-41fb-8384-89dc6712ee2a
-ms.openlocfilehash: 27f5d919fbbbd96ba87e2ea41b5dcc05cfa80c6a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8c8c80164936cea26c9622142039b2f70e54b425
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157775"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114600"
 ---
 # <a name="structures-unions-enumerations-and-bit-fields"></a>구조체, 공용 구조체, 열거형 및 비트 필드
 

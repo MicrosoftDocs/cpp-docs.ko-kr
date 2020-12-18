@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: 나타낼 수 없는 문자 상수'
 title: 나타낼 수 없는 문자 상수
 ms.date: 11/04/2016
 ms.assetid: 5a710a1c-dba1-49b4-a183-ed94a00a5358
-ms.openlocfilehash: 41275c226f80faffefd773ff8bb45cd8f2d390d3
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: f2870cd4d691b15ff67aa0fc232a0cff7a587a0e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64343069"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318392"
 ---
 # <a name="unrepresented-character-constants"></a>나타낼 수 없는 문자 상수
 

@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: atexit 함수(C)'
 title: atexit 함수 (C)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - atexit function
 ms.assetid: 9e1a761d-52f7-4581-a790-3ff97c80f931
-ms.openlocfilehash: 13f5b0638ea507b206cadc59fae778484bbaf8ac
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ccf10d3819e21e20ba5fa4e5b2c32a21948f8733
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62327914"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97279870"
 ---
 # <a name="atexit-function-c"></a>atexit 함수 (C)
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: C 문 개요'
 title: C 문 개요
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - statements, about statements
 - Visual C, statements
 ms.assetid: 0d49837a-5399-4881-b60c-af5f4e9720de
-ms.openlocfilehash: 6b6cf9ee7aab3f14b3cb4b48c10e59125391c14c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d2d6e7161f63e8508cb7e94d28b7bbafe44146e4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211777"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97243174"
 ---
 # <a name="overview-of-c-statements"></a>C 문 개요
 

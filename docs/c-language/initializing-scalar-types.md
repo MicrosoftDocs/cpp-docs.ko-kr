@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 스칼라 형식 초기화'
 title: 스칼라 형식 초기화
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - automatic storage class
 - types [C], initializing
 ms.assetid: 73c516f5-c3ad-4d56-ab3b-f2a82b621104
-ms.openlocfilehash: 063761abcbb1541893b9cbab463e3d121684d00a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a9294f04f39e6984a2068c5c8f79e48641834236
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211829"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97181828"
 ---
 # <a name="initializing-scalar-types"></a>스칼라 형식 초기화
 
@@ -25,24 +26,24 @@ ms.locfileid: "87211829"
 
 ## <a name="syntax"></a>구문
 
-*`declaration`* :<br/>
+*`declaration`*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; *`declaration-specifiers`* *`init-declarator-list`* <sub>opt</sub> **`;`**
 
-*`declaration-specifiers`* :<br/>
+*`declaration-specifiers`*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; *`storage-class-specifier`* *`declaration-specifiers`* <sub>opt</sub> <br/>
 &nbsp;&nbsp;&nbsp;&nbsp; *`type-specifier`* *`declaration-specifiers`* <sub>opt</sub> <br/>
 &nbsp;&nbsp;&nbsp;&nbsp; *`type-qualifier`* *`declaration-specifiers`* <sub>opt</sub>
 
-*`init-declarator-list`* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; *`init-declarator`*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; *`init-declarator-list`* **`,`** *`init-declarator`*
+*`init-declarator-list`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`init-declarator`*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`init-declarator-list`* **`,`** *`init-declarator`*
 
-*`init-declarator`* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; *`declarator`*<br/>
+*`init-declarator`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`declarator`*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; *`declarator`* **`=`** *`initializer`*  /\* 스칼라 초기화의 경우 \*/
 
-*`initializer`* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; *`assignment-expression`*
+*`initializer`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`assignment-expression`*
 
 다음 규칙에 따라 모든 형식의 변수를 초기화할 수 있습니다.
 

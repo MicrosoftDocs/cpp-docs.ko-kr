@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: C 주석'
 title: C 주석
 ms.date: 06/25/2018
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - /* */ comment delimiters
 - comments
 ms.assetid: 0f5f2825-e673-49e7-8669-94e2f5294989
-ms.openlocfilehash: fd2c08855bcc3ef3b4068f3841ce177d8162ff5b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 64ce3dea188e75545953b3427cd508dac5420a83
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62326289"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97284578"
 ---
 # <a name="c-comments"></a>C 주석
 
@@ -57,7 +58,7 @@ printf( "Hello\n" );  /* Comments can go here */
 
 이 오류는 컴파일러가 `*/`이라는 단어 뒤의 첫 번째 `Open file`를 주석의 끝으로 인식하기 때문에 발생합니다. 컴파일러는 주석이 끝난 다음에 오는 나머지 텍스트를 처리하려 하기 때문에 주석 밖에서 `*/`을 발견할 경우 오류를 표시합니다.
 
-테스트 목적으로 비활성화된 어떤 코드 줄을 렌더링하기 위해 주석을 사용하는 경우, 프로세서는 `#if` 및 `#endif`를 지시하며 이 작업에 조건부 컴파일을 사용하는 것도 또 다른 유용한 방법입니다. 자세한 내용은 *전처리기 참조*의 [전처리기 지시문](../preprocessor/preprocessor-directives.md)을 참조하세요.
+테스트 목적으로 비활성화된 어떤 코드 줄을 렌더링하기 위해 주석을 사용하는 경우, 프로세서는 `#if` 및 `#endif`를 지시하며 이 작업에 조건부 컴파일을 사용하는 것도 또 다른 유용한 방법입니다. 자세한 내용은 *전처리기 참조* 의 [전처리기 지시문](../preprocessor/preprocessor-directives.md)을 참조하세요.
 
 **Microsoft 전용**
 

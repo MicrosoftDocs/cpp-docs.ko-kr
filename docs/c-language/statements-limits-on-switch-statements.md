@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: 문: Switch 문의 제한'
 title: '문: Switch 문의 제한'
 ms.date: 11/04/2016
 ms.assetid: d327ef3f-2b11-4bd6-abfe-539697fd21a7
-ms.openlocfilehash: 4adaaa9360ef5426e8f8c506f433383b2dc9fe15
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1301f4aefc2a9432188c02da5c1d49e191e8683b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229508"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97296864"
 ---
 # <a name="statements-limits-on-switch-statements"></a>문: Switch 문의 제한
 

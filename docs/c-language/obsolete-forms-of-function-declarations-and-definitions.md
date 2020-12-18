@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 사용되지 않는 함수 선언 및 정의 폼'
 title: 사용되지 않는 함수 선언 및 정의 폼
 ms.date: 11/04/2016
 helpviewer_keywords:
 - old style function declarations
 ms.assetid: 67c5038f-0529-4f29-9d0f-c27580977b50
-ms.openlocfilehash: 3311fc846ad0f4f80c2e3b61508edd626a13fbb2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7cd66ba1600d4a5fd381819f4b1d3f0beeb30f0a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218795"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256915"
 ---
 # <a name="obsolete-forms-of-function-declarations-and-definitions"></a>사용되지 않는 함수 선언 및 정의 폼
 
@@ -47,7 +48,7 @@ void funct1( int a, ... )
 
 승격된 형식과 동일하지 않은 형식이 있는 매개 변수나 줄임표로 동일한 함수를 이후에 선언하거나 정의하는 경우에도 이전 스타일 함수 선언으로 인해 경고가 생성됩니다.
 
-다음 섹션 [C 함수 정의](../c-language/c-function-definitions.md)에서는 이전 스타일 구문을 포함하여 함수 정의를 위한 구문을 보여 줍니다. 이전 스타일 구문에서 매개 변수 목록의 비터미널은 *identifier-list*입니다.
+다음 섹션 [C 함수 정의](../c-language/c-function-definitions.md)에서는 이전 스타일 구문을 포함하여 함수 정의를 위한 구문을 보여 줍니다. 이전 스타일 구문에서 매개 변수 목록의 비터미널은 *identifier-list* 입니다.
 
 ## <a name="see-also"></a>참조
 

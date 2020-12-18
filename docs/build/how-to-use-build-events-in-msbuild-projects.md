@@ -1,21 +1,22 @@
 ---
+description: '자세한 정보: 방법: MSBuild 프로젝트에서 빌드 이벤트 사용'
 title: '방법: MSBuild 프로젝트에서 빌드 이벤트 사용'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - 'msbuild (c++), howto: use build events in projects'
 ms.assetid: 2a58dc9d-3d50-4e49-97c1-86c5a05ce218
-ms.openlocfilehash: 7c35abbcabe62da2e60fbc2393c575e7c3872cf3
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0c94f02851df3fa41791542841f8ed84305cc9e5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224008"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156205"
 ---
 # <a name="how-to-use-build-events-in-msbuild-projects"></a>방법: MSBuild 프로젝트에서 빌드 이벤트 사용
 
 빌드 이벤트는 MSBuild가 빌드 프로세스의 특정 단계에 수행하는 명령입니다. ‘빌드 전’ 이벤트는 빌드가 시작되기 전에 발생합니다. ‘링크 전’ 이벤트는 링크 단계가 시작되기 전에 발생합니다. ‘빌드 후’ 이벤트는 빌드가 성공적으로 종료된 다음에 발생합니다. 빌드 이벤트는 연관된 빌드 단계가 수행될 때만 발생합니다. 예를 들어 링크 단계가 실행되지 않으면 링크 전 이벤트가 발생하지 않습니다.
 
-세 개의 빌드 이벤트 각각은 실행되는 명령 요소(`<Command>`) 및 **MSBuild**가 빌드 이벤트를 수행할 때 표시되는 메시지 요소(`<Message>`)별 항목 정의 그룹으로 표시됩니다. 각 요소는 선택 사항이며 동일한 요소를 여러 번 지정하면 마지막 항목이 우선으로 적용됩니다.
+세 개의 빌드 이벤트 각각은 실행되는 명령 요소(`<Command>`) 및 **MSBuild** 가 빌드 이벤트를 수행할 때 표시되는 메시지 요소(`<Message>`)별 항목 정의 그룹으로 표시됩니다. 각 요소는 선택 사항이며 동일한 요소를 여러 번 지정하면 마지막 항목이 우선으로 적용됩니다.
 
 선택적인 ‘빌드에 사용’ 요소(`<`*build-event*`UseInBuild>`)를 속성 그룹에 지정하여 빌드 이벤트를 실행할지 여부를 나타낼 수 있습니다. 빌드에 사용 요소의 콘텐츠 값은 **`true`** 또는 **`false`** 입니다. 기본적으로 빌드 이벤트는 해당 빌드에 사용 요소가 **`false`** 로 설정되지 않은 경우 실행됩니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Visual Basic 애플리케이션에서 DLL 함수 호출'
 title: Visual Basic 애플리케이션에서 DLL 함수 호출
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - __stdcall keyword [C++]
 - DLL functions [C++], calling
 ms.assetid: 282f7fbf-a0f2-4b9f-b277-1982710be56c
-ms.openlocfilehash: 8d792dac45d69a0857bda551d1f3c03fc3d03d1c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3c9a66a4d6dc9a8e3cc6e8b8a80584d430f12562
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229885"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156985"
 ---
 # <a name="calling-dll-functions-from-visual-basic-applications"></a>Visual Basic 애플리케이션에서 DLL 함수 호출
 

@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 단항 연산자'
 title: 단항 연산자
 ms.date: 11/04/2016
 helpviewer_keywords:
 - operators [C], unary
 - unary operators
 ms.assetid: 743e00b1-f874-4c0d-b211-8c24d4af9739
-ms.openlocfilehash: 42c6c621bedca71f33595a7a282d0009a9ced242
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ec3dc27e3a0dabea71404c3b9a932ff99f727627
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217144"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97214183"
 ---
 # <a name="c-unary-operators"></a>단항 연산자
 

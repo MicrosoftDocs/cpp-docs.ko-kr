@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 격리된 애플리케이션 및 side-by-side 어셈블리 개념'
 title: 격리된 애플리케이션 및 side-by-side 어셈블리 개념
 ms.date: 05/06/2019
 helpviewer_keywords:
 - side-by-side assemblies [C++]
 - isolated assemblies [C++]
 ms.assetid: 945a885f-cb3e-4c8a-a0b9-2c2e3e02cc50
-ms.openlocfilehash: f75a95ccca214f437152d13e099fbd9d03eaaee2
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: d66e70f95c4d969fdb41b44d609fb8a6c9feacbc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69493304"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156790"
 ---
 # <a name="concepts-of-isolated-applications-and-side-by-side-assemblies"></a>격리된 애플리케이션 및 side-by-side 어셈블리 개념
 

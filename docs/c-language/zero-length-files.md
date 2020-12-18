@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 길이가 0인 파일'
 title: 길이가 0인 파일
 ms.date: 11/04/2016
 helpviewer_keywords:
 - files [C++], zero-length
 - zero-length files
 ms.assetid: f0725a4e-7a39-4b1e-ba23-58171250919e
-ms.openlocfilehash: fc4b0c8c850a8f45d3ca1e0191b79fc7f0d1ef22
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d9c19bbe88a3be83515a344f29e06b720ad635e6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62290653"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171922"
 ---
 # <a name="zero-length-files"></a>길이가 0인 파일
 

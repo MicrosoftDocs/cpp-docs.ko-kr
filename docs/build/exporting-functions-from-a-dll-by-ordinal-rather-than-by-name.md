@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 이름 대신 서수를 사용하여 DLL에서 함수 내보내기'
 title: 이름 대신 서수를 사용하여 DLL에서 함수 내보내기
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - exporting DLLs [C++], ordinal values
 - NONAME attribute
 ms.assetid: 679719fd-d965-4df3-9f7a-7d86ad831702
-ms.openlocfilehash: 3229c98a0a6bbb0ebc4fa0ef055e4019bd6c7bd8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 84d200e2c37161d6bef3e64e72130204640088c8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229820"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156504"
 ---
 # <a name="exporting-functions-from-a-dll-by-ordinal-rather-than-by-name"></a>이름 대신 서수를 사용하여 DLL에서 함수 내보내기
 

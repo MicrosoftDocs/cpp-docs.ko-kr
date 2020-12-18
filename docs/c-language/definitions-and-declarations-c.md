@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 선언 및 정의 (C)'
 title: 선언 및 정의 (C)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - export functions
 ms.assetid: d150395a-89d4-4298-9ac4-08f84fe1261c
-ms.openlocfilehash: 0e39832f942eb1473be913112fde1d37ddf05674
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a88a0e56e68b052e3bb8759f9c40670379bd2628
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226368"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97186859"
 ---
 # <a name="definitions-and-declarations-c"></a>선언 및 정의 (C)
 

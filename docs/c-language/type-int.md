@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: int 형식'
 title: int 형식
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - portability [C++], type int
 - signed integers
 ms.assetid: 0067ce9a-281e-491a-ae63-632952981e13
-ms.openlocfilehash: 2bfd9e108b36f073635c6d9e55e2299764dcb309
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e6ec94877dad3dd49bb5e9b11f77ceb2a734ab1d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87198868"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97242766"
 ---
 # <a name="type-int"></a>int 형식
 

@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 방법: 여러 개의 PGO 프로필을 단일 프로필로 병합'
 title: '방법: 여러 개의 PGO 프로필을 단일 프로필로 병합'
 ms.date: 03/14/2018
 helpviewer_keywords:
 - merging profiles
 - profile-guided optimizations, merging profiles
 ms.assetid: aab686b5-59dd-40d1-a04b-5064690f65a6
-ms.openlocfilehash: 451c0f30a271f5dce3974e172766da4a23340b93
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9549b9a26b0c16300c3750159f2c18c74dd293b0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62188875"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97162692"
 ---
 # <a name="how-to-merge-multiple-pgo-profiles-into-a-single-profile"></a>방법: 여러 개의 PGO 프로필을 단일 프로필로 병합
 
@@ -35,7 +36,7 @@ PGO(프로필 기반 최적화)는 프로파일링된 시나리오를 기반으�
 
 `pgomgr /merge:2 pgcFile1.pgc pgcFile2.pgc pgdFile.pgd`
 
-PGO Manager를 .pgc 파일 인수 없이 실행하면 PGO Manager는 로컬 디렉터리에서 .pgd 파일 이름 다음에 느낌표(!)와 하나 이상의 임의의 문자가 오는 이름과 같은 기본 이름을 가진 모든 .pgc 파일을 검색합니다. 예를 들어 로컬 디렉터리에 test.pgd, test!1.pgc, test2.pgc 및 test!hello.pgc 파일이 있는 경우 다음 명령이 로컬 디렉터리에서 실행된 후 **pgomgr**가 test!1.pgc 및 test!hello.pgc를 test.pgd에 병합합니다.
+PGO Manager를 .pgc 파일 인수 없이 실행하면 PGO Manager는 로컬 디렉터리에서 .pgd 파일 이름 다음에 느낌표(!)와 하나 이상의 임의의 문자가 오는 이름과 같은 기본 이름을 가진 모든 .pgc 파일을 검색합니다. 예를 들어 로컬 디렉터리에 test.pgd, test!1.pgc, test2.pgc 및 test!hello.pgc 파일이 있는 경우 다음 명령이 로컬 디렉터리에서 실행된 후 **pgomgr** 가 test!1.pgc 및 test!hello.pgc를 test.pgd에 병합합니다.
 
 `pgomgr /merge test.pgd`
 

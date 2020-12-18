@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 함수 프로토타입'
 title: 함수 프로토타입
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - functions [C], return types
 - prototypes [C++], function
 ms.assetid: d152f8e6-971e-432c-93ca-5a91400653c2
-ms.openlocfilehash: 76e8abdaa2e2d0d8ba14209b45982b6a7f63f2e4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d8e83e68daaa610387f3a23c06ad5ee49a8b3944
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227857"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97151842"
 ---
 # <a name="function-prototypes"></a>함수 프로토타입
 
@@ -70,7 +71,7 @@ int add( int a, int );
 
 프로토타입은 인수로 전달되는 각 식의 형식과 식별자를 둘 다 포함할 수 있습니다. 하지만 이러한 식별자는 선언의 끝까지만 범위를 갖습니다. 또한 프로토타입은 인수의 수가 가변적이거나 전달되는 인수가 없다는 사실도 반영할 수 있습니다. 이러한 목록이 없으면 불일치가 드러나지 않을 수 있으므로 컴파일러는 불일치와 관련된 진단 메시지를 생성할 수 없습니다. 형식 검사에 대한 자세한 내용은 [인수](../c-language/arguments.md)를 참조하세요.
 
-Microsoft C 컴파일러에서 프로토타입 범위는 이제 **/Za** 컴파일러 옵션으로 컴파일할 때 ANSI 규격입니다. 즉, 프로토타입 내에서 **`struct`** 또는 **`union`** 태그를 선언하는 경우 태그는 전역 범위가 아니라 해당 범위에서 입력됩니다. 예를 들어 ANSI 규격을 따르기 위해 **/Za**를 사용하여 컴파일하는 경우 형식 불일치 오류를 발생시키지 않고는 다음 함수를 호출할 수 없습니다.
+Microsoft C 컴파일러에서 프로토타입 범위는 이제 **/Za** 컴파일러 옵션으로 컴파일할 때 ANSI 규격입니다. 즉, 프로토타입 내에서 **`struct`** 또는 **`union`** 태그를 선언하는 경우 태그는 전역 범위가 아니라 해당 범위에서 입력됩니다. 예를 들어 ANSI 규격을 따르기 위해 **/Za** 를 사용하여 컴파일하는 경우 형식 불일치 오류를 발생시키지 않고는 다음 함수를 호출할 수 없습니다.
 
 ```C
 void func1( struct S * );
@@ -83,7 +84,7 @@ struct S;
 void func1( struct S * );
 ```
 
-**/Ze**를 사용하는 경우 태그는 여전히 전역 범위에서 입력됩니다.
+**/Ze** 를 사용하는 경우 태그는 여전히 전역 범위에서 입력됩니다.
 
 ## <a name="see-also"></a>참조
 

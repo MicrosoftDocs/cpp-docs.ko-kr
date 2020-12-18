@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 함수 특성'
 title: 함수 특성
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - functions [C], attributes
 - function attributes
 ms.assetid: f0c03e20-94f2-47b5-a166-993a949a1a40
-ms.openlocfilehash: a83f78be45f946f1aa51dcf058cedd3f69198511
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: fa3907fc84222dfc70125b3202c2de485aa08ed5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229716"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97196011"
 ---
 # <a name="function-attributes"></a>함수 특성
 

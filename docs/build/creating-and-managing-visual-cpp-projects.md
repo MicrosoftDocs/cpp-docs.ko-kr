@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: Visual Studio 프로젝트 - C++'
 title: Visual Studio 프로젝트 - C++
 ms.date: 10/25/2019
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Visual Studio C++ projects
 - ATL projects
 ms.assetid: 11003cd8-9046-4630-a189-a32bf3b88047
-ms.openlocfilehash: a8e23a3c384ce9b5ac7e73d18958246b52eb95b5
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 07c7c0394c7b1a49bd4b8861540e540b095fae5a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92919386"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156816"
 ---
 # <a name="visual-studio-projects---c"></a>Visual Studio 프로젝트 - C++
 

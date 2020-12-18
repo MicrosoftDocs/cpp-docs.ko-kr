@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 코드 최적화'
 title: 코드 최적화
 ms.date: 05/06/2019
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - optimization, C++ code
 - code, optimizing
 - performance, compiler
-ms.openlocfilehash: 00356cf50ca8e50c80e8a1142adf654816490c9b
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 893e3dce64400d47026e478b081283e3f1d82262
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80078502"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97179800"
 ---
 # <a name="optimizing-your-code"></a>코드 최적화
 

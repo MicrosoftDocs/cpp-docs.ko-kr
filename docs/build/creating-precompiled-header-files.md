@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 미리 컴파일된 헤더 파일'
 title: 미리 컴파일된 헤더 파일
 ms.date: 10/24/2019
 helpviewer_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - cl.exe compiler, precompiling code
 - .pch files, creating
 ms.assetid: e2cdb404-a517-4189-9771-c869c660cb1b
-ms.openlocfilehash: c68de0ee8e6376731254adf965fb9a81f10f2861
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9f3d6847043f988f4b0ef57df9b1558c1cd5655c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838856"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163134"
 ---
 # <a name="precompiled-header-files"></a>미리 컴파일된 헤더 파일
 
-Visual Studio에서 새 프로젝트를 만들 때 *pch. h*라는 *미리 컴파일된 헤더 파일*이 프로젝트에 추가됩니다. (Visual Studio 2017 이하 버전에서는 이 파일을 *stdafx.h*라고 합니다.) 이 파일의 목적은 빌드 프로세스의 속도를 높이는 것입니다. 모든 안정적인 헤더 파일(예: `<vector>`와 같은 표준 라이브러리 헤더)은 여기에 포함되어야 합니다. 미리 컴파일된 헤더는 이 헤더나 이 헤더가 포함하는 모든 파일이 수정될 때만 컴파일됩니다. 프로젝트 소스 코드를 변경하는 경우에만 빌드가 미리 컴파일된 헤더에 대한 컴파일을 건너뜁니다.
+Visual Studio에서 새 프로젝트를 만들 때 *pch. h* 라는 *미리 컴파일된 헤더 파일* 이 프로젝트에 추가됩니다. (Visual Studio 2017 이하 버전에서는 이 파일을 *stdafx.h* 라고 합니다.) 이 파일의 목적은 빌드 프로세스의 속도를 높이는 것입니다. 모든 안정적인 헤더 파일(예: `<vector>`와 같은 표준 라이브러리 헤더)은 여기에 포함되어야 합니다. 미리 컴파일된 헤더는 이 헤더나 이 헤더가 포함하는 모든 파일이 수정될 때만 컴파일됩니다. 프로젝트 소스 코드를 변경하는 경우에만 빌드가 미리 컴파일된 헤더에 대한 컴파일을 건너뜁니다.
 
-미리 컴파일된 헤더에 대한 컴파일러 옵션은 [/Y](reference/y-precompiled-headers.md)입니다. 프로젝트 속성 페이지에서 옵션은 **구성 속성 > C/C++ > 미리 컴파일된 헤더**에 있습니다. 미리 컴파일된 헤더를 사용하지 않도록 선택하고, 헤더 파일 이름과 출력 파일의 이름 및 경로를 지정할 수 있습니다.
+미리 컴파일된 헤더에 대한 컴파일러 옵션은 [/Y](reference/y-precompiled-headers.md)입니다. 프로젝트 속성 페이지에서 옵션은 **구성 속성 > C/C++ > 미리 컴파일된 헤더** 에 있습니다. 미리 컴파일된 헤더를 사용하지 않도록 선택하고, 헤더 파일 이름과 출력 파일의 이름 및 경로를 지정할 수 있습니다.
 
 ## <a name="custom-precompiled-code"></a>미리 컴파일된 사용자 지정 코드
 
@@ -47,9 +48,9 @@ C와 C++ 프로그램을 모두 미리 컴파일할 수 있습니다. C++ 프로
 
 소스 파일이 헤더 파일의 공통 집합을 사용하지만 동일한 순서로 포함하지 않거나 미리 컴파일에 소스 코드를 포함하려는 경우 코드를 미리 컴파일하세요.
 
-미리 컴파일된 헤더 옵션은 [/Yc(미리 컴파일된 헤더 파일 만들기)](reference/yc-create-precompiled-header-file.md) 및 [/Yu(미리 컴파일된 헤더 파일 사용)](reference/yu-use-precompiled-header-file.md)입니다. **/Yc**를 사용하여 미리 컴파일된 헤더를 만듭니다. 선택적 [hdrstop](../preprocessor/hdrstop.md) pragma와 함께 사용하는 경우 **/Yc**를 사용하면 헤더 파일과 소스 코드를 모두 미리 컴파일할 수 있습니다. **/Yu**를 선택하여 기존 컴파일에서 기존의 미리 컴파일된 헤더를 사용합니다. 또한 **/Fp**를 **/Yc** 및 **/Yu** 옵션과 함께 사용하여 미리 컴파일된 헤더에 대체 이름을 제공할 수 있습니다.
+미리 컴파일된 헤더 옵션은 [/Yc(미리 컴파일된 헤더 파일 만들기)](reference/yc-create-precompiled-header-file.md) 및 [/Yu(미리 컴파일된 헤더 파일 사용)](reference/yu-use-precompiled-header-file.md)입니다. **/Yc** 를 사용하여 미리 컴파일된 헤더를 만듭니다. 선택적 [hdrstop](../preprocessor/hdrstop.md) pragma와 함께 사용하는 경우 **/Yc** 를 사용하면 헤더 파일과 소스 코드를 모두 미리 컴파일할 수 있습니다. **/Yu** 를 선택하여 기존 컴파일에서 기존의 미리 컴파일된 헤더를 사용합니다. 또한 **/Fp** 를 **/Yc** 및 **/Yu** 옵션과 함께 사용하여 미리 컴파일된 헤더에 대체 이름을 제공할 수 있습니다.
 
-**/Yu** 및 **/Yc**에 대한 컴파일러 옵션 참조 항목에서는 개발 환경에서 이 기능에 액세스하는 방법에 대해 설명합니다.
+**/Yu** 및 **/Yc** 에 대한 컴파일러 옵션 참조 항목에서는 개발 환경에서 이 기능에 액세스하는 방법에 대해 설명합니다.
 
 ## <a name="precompiled-header-consistency-rules"></a>미리 컴파일된 헤더의 일관성 규칙
 

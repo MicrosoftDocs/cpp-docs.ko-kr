@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 프로필 기반 최적화'
 title: 프로필 기반 최적화
 ms.date: 04/23/2019
 helpviewer_keywords:
 - profile-guided optimizations
 - optimization, profile-guided [C++]
 ms.assetid: 2225c307-d3ae-42c1-8345-a5a959d132dc
-ms.openlocfilehash: efa4c35810f6272b89ff11cd1c890a7f535cfc1c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cd6a9627de72ef170e88493ef3e2147a0ccc2bc7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232731"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97187327"
 ---
 # <a name="profile-guided-optimizations"></a>프로필 기반 최적화
 
@@ -19,7 +20,7 @@ ms.locfileid: "87232731"
 프로필 기반 최적화는 x86 또는 x64 네이티브 대상에서만 사용할 수 있습니다. 프로필 기반 최적화는 공용 언어 런타임에서 실행되는 실행 파일에 사용할 수 없습니다. 네이티브 코드와 관리 코드가 혼합된 어셈블리를 생성( **/clr** 컴파일러 옵션 사용)하는 경우에도 네이티브 코드에서만 프로필 기반 최적화를 사용할 수 없습니다. IDE에서 관련 옵션 설정을 사용하여 프로젝트를 빌드하려고 하면 빌드 오류가 발생합니다.
 
 > [!NOTE]
-> 프로파일링 테스트 실행에서 수집되는 정보는 **/Ob**, **/Os** 또는 **/Ot**를 지정하는 경우 적용되는 최적화를 재정의합니다. 자세한 내용은 [/Ob(인라인 함수 확장)](reference/ob-inline-function-expansion.md) 및 [/Os, /OT(크기 우선 코드, 속도 우선 코드)](reference/os-ot-favor-small-code-favor-fast-code.md)를 참조하세요.
+> 프로파일링 테스트 실행에서 수집되는 정보는 **/Ob**, **/Os** 또는 **/Ot** 를 지정하는 경우 적용되는 최적화를 재정의합니다. 자세한 내용은 [/Ob(인라인 함수 확장)](reference/ob-inline-function-expansion.md) 및 [/Os, /OT(크기 우선 코드, 속도 우선 코드)](reference/os-ot-favor-small-code-favor-fast-code.md)를 참조하세요.
 
 ## <a name="steps-to-optimize-your-app"></a>앱을 최적화하는 단계
 
@@ -27,25 +28,25 @@ ms.locfileid: "87232731"
 
 - [/GL](reference/gl-whole-program-optimization.md)을 사용하여 하나 이상이 소스 코드 파일을 컴파일합니다.
 
-   프로필 기반 최적화 테스트 실행 중 **/GL**로 빌드된 각 모듈을 검사하여 런타임 동작을 캡처할 수 있습니다. 프로필 기반 최적화 빌드의 모든 모듈을 **/GL**로 컴파일할 필요가 없습니다. 그러나 **/GL**을 사용하여 컴파일한 모듈만 계측되어 나중에 프로필 기반 최적화에 사용할 수 있습니다.
+   프로필 기반 최적화 테스트 실행 중 **/GL** 로 빌드된 각 모듈을 검사하여 런타임 동작을 캡처할 수 있습니다. 프로필 기반 최적화 빌드의 모든 모듈을 **/GL** 로 컴파일할 필요가 없습니다. 그러나 **/GL** 을 사용하여 컴파일한 모듈만 계측되어 나중에 프로필 기반 최적화에 사용할 수 있습니다.
 
 - [/LTCG](reference/ltcg-link-time-code-generation.md) 및 [/GENPROFILE 또는 /FASTGENPROFILE](reference/genprofile-fastgenprofile-generate-profiling-instrumented-build.md)을 사용하여 연결합니다.
 
-   **/LTCG**와 **/GENPROFILE** 또는 **/FASTGENPROFILE**를 모두 사용하면 계측된 앱이 실행될 때 `.pgd` 파일이 만들어집니다. 테스트 실행 데이터가 `.pgd` 파일에 추가된 후에는 다음 연결 단계(최적화된 이미지 만들기)에 대한 입력으로 사용할 수 있습니다. **/GENPROFILE**을 지정할 경우 필요에 따라 **PGD=** _filename_ 인수를 추가하여 `.pgd` 파일의 기본값이 아닌 이름이나 위치를 지정할 수 있습니다. **/LTCG**와 **/GENPROFILE** 또는 **/FASTGENPROFILE** 링커 옵션의 조합이 사용되지 않는 **/LTCG:PGINSTRUMENT** 링커 옵션을 대체합니다.
+   **/LTCG** 와 **/GENPROFILE** 또는 **/FASTGENPROFILE** 를 모두 사용하면 계측된 앱이 실행될 때 `.pgd` 파일이 만들어집니다. 테스트 실행 데이터가 `.pgd` 파일에 추가된 후에는 다음 연결 단계(최적화된 이미지 만들기)에 대한 입력으로 사용할 수 있습니다. **/GENPROFILE** 을 지정할 경우 필요에 따라 **PGD=** _filename_ 인수를 추가하여 `.pgd` 파일의 기본값이 아닌 이름이나 위치를 지정할 수 있습니다. **/LTCG** 와 **/GENPROFILE** 또는 **/FASTGENPROFILE** 링커 옵션의 조합이 사용되지 않는 **/LTCG:PGINSTRUMENT** 링커 옵션을 대체합니다.
 
 - 애플리케이션을 프로파일링합니다.
 
-   프로파일링된 EXE 세션이 종료되거나 프로파일링된 DLL이 언로드될 때마다 `appname!N.pgc` 파일이 만들어집니다. `.pgc` 파일에는 특정 애플리케이션 테스트 실행에 대한 정보가 포함됩니다. *appname*은 앱 이름이고 *N*은 1부터 시작하는 숫자이며 디렉터리에 있는 다른 `appname!N.pgc` 파일 수에 따라 증가합니다. 테스트 실행이 최적화하려는 시나리오를 나타내지 않는 경우 `.pgc` 파일을 삭제할 수 있습니다.
+   프로파일링된 EXE 세션이 종료되거나 프로파일링된 DLL이 언로드될 때마다 `appname!N.pgc` 파일이 만들어집니다. `.pgc` 파일에는 특정 애플리케이션 테스트 실행에 대한 정보가 포함됩니다. *appname* 은 앱 이름이고 *N* 은 1부터 시작하는 숫자이며 디렉터리에 있는 다른 `appname!N.pgc` 파일 수에 따라 증가합니다. 테스트 실행이 최적화하려는 시나리오를 나타내지 않는 경우 `.pgc` 파일을 삭제할 수 있습니다.
 
    테스트 실행 중에는 [pgosweep](pgosweep.md) 유틸리티를 사용하여 현재 열려 있는 `.pgc` 파일 닫기와 새 `.pgc` 파일 만들기를 강제로 수행할 수 있습니다(예: 테스트 시나리오의 끝이 애플리케이션 종료와 일치하지 않는 경우).
 
    애플리케이션에서 PGO 함수 [PgoAutoSweep](pgoautosweep.md)를 직접 호출하여 호출 시점에 프로필 데이터를 `.pgc` 파일로 캡처할 수도 있습니다. 이렇게 하면 `.pgc` 파일에 캡처된 데이터가 적용되는 코드를 더욱 세밀하게 제어할 수 있습니다. 이 함수를 사용하는 방법의 예제는 [PgoAutoSweep](pgoautosweep.md) 설명서를 참조하세요.
 
-   계측된 빌드를 만들 때 기본적으로 데이터 수집은 스레드로부터 안전하지 않은 모드로 수행되며, 이 모드는 더 빠르지만 정확하지 않을 수 있습니다. **/GENPROFILE** 또는 **/FASTGENPROFILE**에 **EXACT** 인수를 사용하여 스레드로부터 안전한 모드로 데이터 수집을 지정할 수 있습니다. 이 경우 더 정확하지만 느립니다. 이 옵션은 계측된 빌드를 만들 때 사용되지 않는 [PogoSafeMode](environment-variables-for-profile-guided-optimizations.md#pogosafemode) 환경 변수나 사용되지 않는 **/POGOSAFEMODE** 링커 옵션을 설정한 경우에도 사용할 수 있습니다.
+   계측된 빌드를 만들 때 기본적으로 데이터 수집은 스레드로부터 안전하지 않은 모드로 수행되며, 이 모드는 더 빠르지만 정확하지 않을 수 있습니다. **/GENPROFILE** 또는 **/FASTGENPROFILE** 에 **EXACT** 인수를 사용하여 스레드로부터 안전한 모드로 데이터 수집을 지정할 수 있습니다. 이 경우 더 정확하지만 느립니다. 이 옵션은 계측된 빌드를 만들 때 사용되지 않는 [PogoSafeMode](environment-variables-for-profile-guided-optimizations.md#pogosafemode) 환경 변수나 사용되지 않는 **/POGOSAFEMODE** 링커 옵션을 설정한 경우에도 사용할 수 있습니다.
 
-- **/LTCG** 및 **/USEPROFILE**을 사용하여 연결합니다.
+- **/LTCG** 및 **/USEPROFILE** 을 사용하여 연결합니다.
 
-   **/LTCG** 및 [/USEPROFILE](reference/useprofile.md) 링커 옵션을 모두 사용하여 최적화된 이미지를 만듭니다. 이 단계에서는 입력으로 `.pgd` 파일을 사용합니다. **/USEPROFILE**을 지정할 경우 필요에 따라 **PGD=** _filename_ 인수를 추가하여 `.pgd` 파일의 기본값이 아닌 이름이나 위치를 지정할 수 있습니다. 사용되지 않는 **/PGD** 링커 옵션을 사용하여 이 이름을 지정할 수도 있습니다. **/LTCG** 및 **/USEPROFILE**의 조합은 사용되지 않는 **/LTCG:PGOPTIMIZE** 및 **/LTCG:PGUPDATE** 링커 옵션을 대체합니다.
+   **/LTCG** 및 [/USEPROFILE](reference/useprofile.md) 링커 옵션을 모두 사용하여 최적화된 이미지를 만듭니다. 이 단계에서는 입력으로 `.pgd` 파일을 사용합니다. **/USEPROFILE** 을 지정할 경우 필요에 따라 **PGD=** _filename_ 인수를 추가하여 `.pgd` 파일의 기본값이 아닌 이름이나 위치를 지정할 수 있습니다. 사용되지 않는 **/PGD** 링커 옵션을 사용하여 이 이름을 지정할 수도 있습니다. **/LTCG** 및 **/USEPROFILE** 의 조합은 사용되지 않는 **/LTCG:PGOPTIMIZE** 및 **/LTCG:PGUPDATE** 링커 옵션을 대체합니다.
 
 최적화된 실행 파일을 만들고 나중에 더 최적화된 이미지를 만드는 데 추가 프로파일링이 유용한지를 확인할 수 있습니다. 계측된 이미지와 해당 `.pgd` 파일을 사용할 수 있는 경우 추가 테스트 실행을 수행하고 동일한 **/LTCG** 및 **/USEPROFILE** 링커 옵션을 사용하여 최신 `.pgd` 파일로 최적화된 이미지를 다시 빌드할 수 있습니다.
 

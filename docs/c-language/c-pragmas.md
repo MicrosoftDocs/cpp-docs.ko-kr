@@ -1,21 +1,22 @@
 ---
+description: '자세한 정보: C Pragma'
 title: C Pragma
 ms.date: 07/26/2020
 helpviewer_keywords:
 - pragmas, C/C++
 ms.assetid: 3d6d36b4-d565-4632-a4cd-e39aeaded5ad
-ms.openlocfilehash: ce8efb54eacf40a9feb7b629c2a61a32b3a71b79
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 45b899dc3266390095d70e8f74f6c6e5a58fc6c4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845213"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97300244"
 ---
 # <a name="c-pragmas"></a>C Pragma
 
 **Microsoft 전용**
 
-*pragma*는 컴파일러가 컴파일 타임에 특정 작업을 수행하도록 지시합니다. Pragma는 컴파일러마다 서로 다릅니다. 예를 들어 `optimize` pragma를 사용하여 프로그램에서 수행하는 최적화를 설정할 수 있습니다. Microsoft C pragma는 다음과 같습니다.
+*pragma* 는 컴파일러가 컴파일 타임에 특정 작업을 수행하도록 지시합니다. Pragma는 컴파일러마다 서로 다릅니다. 예를 들어 `optimize` pragma를 사용하여 프로그램에서 수행하는 최적화를 설정할 수 있습니다. Microsoft C pragma는 다음과 같습니다.
 
 :::row:::
     :::column:::

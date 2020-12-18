@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: Visual Studio에서 C++ 빌드 시스템에 대해 폴더 열기 지원'
 title: Visual Studio에서 C++ 빌드 시스템에 대해 폴더 열기 지원
 ms.date: 12/02/2019
 helpviewer_keywords:
 - Open Folder Projects in Visual Studio
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
-ms.openlocfilehash: 03c6a07d19599958de81a604ca77e2772168d441
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 056ad4d1d611f2fc8b1c2d5594057a82b3e54a10
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924120"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97187574"
 ---
 # <a name="open-folder-support-for-c-build-systems-in-visual-studio"></a>Visual Studio에서 C++ 빌드 시스템에 대해 폴더 열기 지원
 
@@ -39,7 +40,7 @@ CMake는 C++ 데스크톱 워크로드의 구성 요소로 Visual Studio IDE에 
 
 ## <a name="configure-code-navigation-with-cpppropertiesjson"></a>CppProperties.json을 사용하여 코드 탐색 구성
 
-IntelliSense 및 검색 동작(예: **정의로 이동** )이 제대로 작동하려면 Visual Studio가 어떤 컴파일러가 사용되는지, 시스템 헤더가 어디에 위치하는지, 추가 포함 파일이 사용자가 연 폴더(작업 영역 폴더)에 없는 경우 어디에 위치하는지 알고 있어야 합니다. 구성을 지정하려면 기본 도구 모음의 드롭다운에서 **구성 관리** 를 선택할 수 있습니다.
+IntelliSense 및 검색 동작(예: **정의로 이동**)이 제대로 작동하려면 Visual Studio가 어떤 컴파일러가 사용되는지, 시스템 헤더가 어디에 위치하는지, 추가 포함 파일이 사용자가 연 폴더(작업 영역 폴더)에 없는 경우 어디에 위치하는지 알고 있어야 합니다. 구성을 지정하려면 기본 도구 모음의 드롭다운에서 **구성 관리** 를 선택할 수 있습니다.
 
 ![구성 관리 드롭다운](media/manage-configurations-dropdown.png)
 
@@ -156,7 +157,7 @@ MinGW-W64 구성을 추가하는 경우 JSON은 다음과 비슷합니다.
 
 JSON 파일은 *.vs* 하위 폴더에 배치됩니다. 해당 폴더를 보려면 **솔루션 탐색기** 맨 위에 있는 **모든 파일 표시** 단추를 클릭합니다. **솔루션 탐색기** 에서 루트 노드를 마우스 오른쪽 단추로 클릭하고 **build hello** 를 선택하여 이 작업을 실행할 수 있습니다. 작업이 완료되면 **솔루션 탐색기** 에 새 파일 *hello.exe* 가 표시됩니다.
 
-여러 종류의 작업을 정의할 수 있습니다. 다음 예제에서는 단일 작업을 정의하는 *tasks.vs.json* 파일을 보여 줍니다. `taskLabel`은 상황에 맞는 메뉴에 표시되는 이름을 정의합니다. `appliesTo`는 명령을 수행할 수 있는 파일을 정의합니다. `command` 속성은 콘솔에 대한 경로(Windows의 경우 *cmd.exe* )를 식별하는 COMSPEC 환경 변수를 참조합니다. CppProperties.json 또는 CMakeSettings.json에 선언된 환경 변수를 참조할 수도 있습니다. `args` 속성은 호출할 명령줄을 지정합니다. `${file}` 매크로는 **솔루션 탐색기** 에서 선택한 파일을 검색합니다. 다음 예제에서는 현재 선택된 .cpp 파일의 파일 이름을 표시합니다.
+여러 종류의 작업을 정의할 수 있습니다. 다음 예제에서는 단일 작업을 정의하는 *tasks.vs.json* 파일을 보여 줍니다. `taskLabel`은 상황에 맞는 메뉴에 표시되는 이름을 정의합니다. `appliesTo`는 명령을 수행할 수 있는 파일을 정의합니다. `command` 속성은 콘솔에 대한 경로(Windows의 경우 *cmd.exe*)를 식별하는 COMSPEC 환경 변수를 참조합니다. CppProperties.json 또는 CMakeSettings.json에 선언된 환경 변수를 참조할 수도 있습니다. `args` 속성은 호출할 명령줄을 지정합니다. `${file}` 매크로는 **솔루션 탐색기** 에서 선택한 파일을 검색합니다. 다음 예제에서는 현재 선택된 .cpp 파일의 파일 이름을 표시합니다.
 
 ```json
 {

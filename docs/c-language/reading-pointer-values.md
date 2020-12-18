@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: 포인터 값 읽기'
 title: 포인터 값 읽기
 ms.date: 11/04/2016
 ms.assetid: 3dd1cf15-30ac-4dec-9b14-258d20501fcf
-ms.openlocfilehash: 164192eba57208af0f771c0af01b6f9b38a1b9b3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8d5f1c6efc73f2093009c5402989c8545f1e58ec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62232059"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97137308"
 ---
 # <a name="reading-pointer-values"></a>포인터 값 읽기
 

@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: 값'
 title: 값
 ms.date: 11/04/2016
 ms.assetid: 24003f89-220f-4f93-be7a-b650c26157d7
-ms.openlocfilehash: b8c02e425776359cdf3cf8d8b8a3e26871de003c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2eb9326a40a6182aafebb205ead43d0b6025fec0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213673"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97221880"
 ---
 # <a name="values"></a>값
 

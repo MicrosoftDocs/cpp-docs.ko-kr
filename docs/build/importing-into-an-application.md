@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 애플리케이션으로 가져오기'
 title: 애플리케이션으로 가져오기
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - importing DLLs [C++], applications
 - applications [C++], importing into
 ms.assetid: 9d646466-e12e-4710-8ad9-c819c0375fcc
-ms.openlocfilehash: 7b858b2ed1b07c143ba24bacbc51c6bba50e3860
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e82f16d9a82f196ff3bb59cc6a7c165d71395a65
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231522"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97162536"
 ---
 # <a name="importing-into-an-application"></a>애플리케이션으로 가져오기
 

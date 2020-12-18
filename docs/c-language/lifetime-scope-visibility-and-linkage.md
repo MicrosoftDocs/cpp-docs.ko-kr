@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: 수명, 범위, 표시 영역 및 링크'
 title: 수명, 범위, 표시 영역 및 링크
 ms.date: 11/04/2016
 ms.assetid: c7678bb8-9d79-40ed-b352-abab876f0b17
-ms.openlocfilehash: d7229d264f268914669b129428e99a430de55bdd
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 56af40edf4e4b5310faa36bc6e4dd32e2417cfb3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64343488"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97257201"
 ---
 # <a name="lifetime-scope-visibility-and-linkage"></a>수명, 범위, 표시 영역 및 링크
 

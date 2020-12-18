@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: 함수 추출'
 title: 함수 추출
 ms.date: 11/16/2016
 ms.assetid: e31d1249-9705-4511-acbd-9f6fe73bdf2d
-ms.openlocfilehash: ec3b9a0aeaef9e418b457bafdfb9bb1bbd2edffc
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 4ae5e858c658d14e72db8740232b74935c655292
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51692322"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97259762"
 ---
 # <a name="extract-function"></a>함수 추출
 
@@ -25,7 +26,7 @@ ms.locfileid: "51692322"
 
 1. 다음 작업 중 하나를 수행합니다.
    * **키보드**
-     * **Ctrl+R**을 누른 다음 **Ctrl+M**을 누릅니다.  바로 가기 키는 선택한 프로필에 따라 다를 수 있습니다.
+     * **Ctrl+R** 을 누른 다음 **Ctrl+M** 을 누릅니다.  바로 가기 키는 선택한 프로필에 따라 다를 수 있습니다.
      * **Ctrl+.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거하고 상황에 맞는 메뉴에서 **함수 추출(실험적)** 을 선택합니다.
    * **마우스**
      * **편집 > 리팩터링 > 함수 추출(실험적)** 을 선택합니다.

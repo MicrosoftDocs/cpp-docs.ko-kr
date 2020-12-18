@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: 문자 집합'
 title: 문자 집합
 ms.date: 11/04/2016
 ms.assetid: ef21daa0-b4b4-4f1a-86f4-25904d83fc86
-ms.openlocfilehash: 64e83eb1932c3ee379b67351f0f283f1ea7c9836
-ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
+ms.openlocfilehash: 28f366dea1ce68dbb946be29aa66dbf63b58e879
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375881"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97303945"
 ---
 # <a name="character-sets"></a>문자 집합
 

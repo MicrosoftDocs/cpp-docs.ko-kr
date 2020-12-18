@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 일반적인 Visual C++ 64비트 마이그레이션 문제'
 title: 일반적인 Visual C++ 64비트 마이그레이션 문제
 ms.date: 05/06/2019
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - 64-bit compiler [C++], porting 32-bit code
 - Win64 [C++]
 ms.assetid: d17fb838-7513-4e2d-8b27-a1666f17ad76
-ms.openlocfilehash: 68f4dc4276c5cbce687477ca25ec69f0cb544acb
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 86c4618423353a3a7ac217432ce9dfcb0c19061b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229859"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156894"
 ---
 # <a name="common-visual-c-64-bit-migration-issues"></a>일반적인 Visual C++ 64비트 마이그레이션 문제
 

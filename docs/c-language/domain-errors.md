@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 도메인 오류'
 title: 도메인 오류
 ms.date: 11/04/2016
 helpviewer_keywords:
 - domain errors
 ms.assetid: 67faa973-c872-40bc-a25f-2ef5559db96c
-ms.openlocfilehash: 2e81a5f722bc55ebe4c36e4321511afb751b4d73
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6df8829d77b6d8bb0061ff27d0d16554313d9faf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62234083"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97213883"
 ---
 # <a name="domain-errors"></a>도메인 오류
 

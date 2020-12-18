@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 구조체 선언'
 title: 구조체 선언
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - structure members
 - embedded structures
 ms.assetid: 5be3be77-a236-4153-b574-7aa77675df7f
-ms.openlocfilehash: 3b9aa30cfeecbd60fda61e6a484043c82c9a3b28
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6fe2a241e28ce9b8c9c1ee114c18e2aa9afc704c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217053"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114613"
 ---
 # <a name="structure-declarations"></a>구조체 선언
 
@@ -27,7 +28,7 @@ ms.locfileid: "87217053"
 
 *struct-or-union*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; **`struct`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **`union`**
+&nbsp;&nbsp;&nbsp;&nbsp;**`union`**
 
 *struct-declaration-list*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*struct-declaration*<br/>
@@ -49,17 +50,17 @@ ms.locfileid: "87217053"
 
 구조체 형식의 선언에서는 구조체를 위한 공간이 따로 마련되지 않습니다. 이 선언은 구조체 변수의 향후 선언을 위한 템플릿일 뿐입니다.
 
-이전에 정의된 *identifier*(태그)를 사용하여 다른 곳에 정의된 구조체 형식을 참조할 수 있습니다. 이 경우 정의가 표시되는 한 *struct-declaration-list*를 반복할 수 없습니다. 구조체에 대한 포인터의 선언과 구조체 형식의 typedef는 구조체 형식이 정의되기 전에 구조체 태그를 사용할 수 있습니다. 그러나 필드 크기를 실제로 사용하기 전에 구조체 정의가 발생해야 합니다. 이는 불완전한 형식 및 형식 태그 정의입니다. 이 정의가 완전해지려면 형식 정의가 동일한 범위에서 나중에 나타나야 합니다.
+이전에 정의된 *identifier*(태그)를 사용하여 다른 곳에 정의된 구조체 형식을 참조할 수 있습니다. 이 경우 정의가 표시되는 한 *struct-declaration-list* 를 반복할 수 없습니다. 구조체에 대한 포인터의 선언과 구조체 형식의 typedef는 구조체 형식이 정의되기 전에 구조체 태그를 사용할 수 있습니다. 그러나 필드 크기를 실제로 사용하기 전에 구조체 정의가 발생해야 합니다. 이는 불완전한 형식 및 형식 태그 정의입니다. 이 정의가 완전해지려면 형식 정의가 동일한 범위에서 나중에 나타나야 합니다.
 
-*struct-declaration-list*는 구조체 구성원의 형식 및 이름을 지정합니다. *struct-declaration-list* 인수에는 하나 이상의 변수 또는 비트 필드 선언이 포함됩니다.
+*struct-declaration-list* 는 구조체 구성원의 형식 및 이름을 지정합니다. *struct-declaration-list* 인수에는 하나 이상의 변수 또는 비트 필드 선언이 포함됩니다.
 
-*struct-declaration-list*에 선언된 각 변수는 구조체 형식의 구성원으로 정의됩니다. *struct-declaration-list* 내 변수 선언의 형태는 선언에 스토리지 클래스 지정자 또는 이니셜라이저를 포함할 수 없다는 점을 제외하고 이 섹션에 설명된 다른 변수 선언과 동일합니다. 구조체 멤버에는 **`void`** 형식, 불완전한 형식 또는 함수 형식을 제외한 모든 변수 형식을 포함할 수 있습니다.
+*struct-declaration-list* 에 선언된 각 변수는 구조체 형식의 구성원으로 정의됩니다. *struct-declaration-list* 내 변수 선언의 형태는 선언에 스토리지 클래스 지정자 또는 이니셜라이저를 포함할 수 없다는 점을 제외하고 이 섹션에 설명된 다른 변수 선언과 동일합니다. 구조체 멤버에는 **`void`** 형식, 불완전한 형식 또는 함수 형식을 제외한 모든 변수 형식을 포함할 수 있습니다.
 
 자신이 나타나는 구조체의 형식을 가지도록 멤버를 선언할 수 없습니다. 그러나 구조체 형식에 태그가 있는 한 자신이 나타나는 구조체 형식에 대한 포인터로 멤버를 선언할 수 있습니다. 이렇게 하면 연결된 구조체 목록을 만들 수 있습니다.
 
 구조체는 다른 식별자와 동일한 범위 지정을 따릅니다. 구조체 식별자는 표시 유형이 동일한 다른 구조체, 공용 구조체 및 열거형 태그와 달라야 합니다.
 
-*struct-declaration-list*의 각 *struct-declaration*은 목록 내에서 고유해야 합니다. 그러나 *struct-declaration-list*에 있는 식별자 이름은 일반 변수 이름이나 다른 구조체 선언 목록의 식별자와 다르지 않아도 됩니다.
+*struct-declaration-list* 의 각 *struct-declaration* 은 목록 내에서 고유해야 합니다. 그러나 *struct-declaration-list* 에 있는 식별자 이름은 일반 변수 이름이나 다른 구조체 선언 목록의 식별자와 다르지 않아도 됩니다.
 
 중첩된 구조체는 파일 범위 수준에서 선언된 것처럼 액세스할 수도 있습니다. 예를 들어, 다음과 같은 선언이 있을 경우
 

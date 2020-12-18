@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: if 문(C)'
 title: if 문 (C)
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - if keyword [C], if statement syntax
 - nested statements
 ms.assetid: d7fc16a0-fdbc-4f39-b596-76e1ca4ad4a5
-ms.openlocfilehash: 6fe92d3f2927cd6c5b3df16850e2925fc42055d0
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 07d350329d047e35948ed9819de640e98c5bc13b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90684146"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97182140"
 ---
 # <a name="if-statement-c"></a>if 문 (C)
 
@@ -30,7 +31,7 @@ ms.locfileid: "90684146"
 
 **`if`** 문의 두 형태에서 구조체를 제외한 모든 값을 포함할 수 있는 식과 모든 파생 작업이 계산됩니다.
 
-구문의 첫 번째 형태에서 *expression*이 true(0이 아님)이면 *statement*가 실행되고, *expression*이 false이면 *statement*가 무시됩니다. **`else`** 를 사용하는 구문의 두 번째 형태에서 *expression*이 false인 경우 두 번째 *statement*이 실행됩니다. 두 형태 모두에서 문 중 하나에 **`break`** , **`continue`** 또는 **`goto`** 가 포함되지 않는 한 **`if`** 문에서 프로그램의 다음 문으로 제어가 전달됩니다.
+구문의 첫 번째 형태에서 *expression* 이 true(0이 아님)이면 *statement* 가 실행되고, *expression* 이 false이면 *statement* 가 무시됩니다. **`else`** 를 사용하는 구문의 두 번째 형태에서 *expression* 이 false인 경우 두 번째 *statement* 이 실행됩니다. 두 형태 모두에서 문 중 하나에 **`break`** , **`continue`** 또는 **`goto`** 가 포함되지 않는 한 **`if`** 문에서 프로그램의 다음 문으로 제어가 전달됩니다.
 
 다음은 **`if`** 문의 예제입니다.
 

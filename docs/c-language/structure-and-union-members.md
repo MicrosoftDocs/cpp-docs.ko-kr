@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 구조체 및 공용 구조체 멤버'
 title: 구조체 및 공용 구조체 멤버
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - operators [C], member selection
 - structure member selection
 ms.assetid: bb1fe304-af49-4f98-808d-afdc99b3e319
-ms.openlocfilehash: 70c89344e6afcdf52981f779c441c5ec47791a77
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f20074157b28763d1db05487043ba0e1576e2d4c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211647"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97137204"
 ---
 # <a name="structure-and-union-members"></a>구조체 및 공용 구조체 멤버
 
@@ -27,9 +28,9 @@ ms.locfileid: "87211647"
 
 다음 목록에서는 멤버 선택 식의 두 가지 형태에 대해 설명합니다.
 
-1. 첫 번째 형태에서 *postfix-expression*은 **`struct`** 또는 **`union`** 형식의 값을 나타내며, *identifier*는 지정된 구조체 또는 공용 구조체의 멤버 이름을 지정합니다. 연산값은 *identifier*의 값이며 *postfix-expression*이 l-value인 경우 l-value입니다. 자세한 내용은 [L-Value 및 R-Value 식](../c-language/l-value-and-r-value-expressions.md)을 참조하세요.
+1. 첫 번째 형태에서 *postfix-expression* 은 **`struct`** 또는 **`union`** 형식의 값을 나타내며, *identifier* 는 지정된 구조체 또는 공용 구조체의 멤버 이름을 지정합니다. 연산값은 *identifier* 의 값이며 *postfix-expression* 이 l-value인 경우 l-value입니다. 자세한 내용은 [L-Value 및 R-Value 식](../c-language/l-value-and-r-value-expressions.md)을 참조하세요.
 
-1. 두 번째 형태에서 *postfix-expression*은 구조체 또는 공용 구조체에 대한 포인터를 나타내며, *identifier*는 지정된 구조체 또는 공용 구조체의 멤버 이름을 지정합니다. 값은 *identifier*의 값이며 l-value입니다.
+1. 두 번째 형태에서 *postfix-expression* 은 구조체 또는 공용 구조체에 대한 포인터를 나타내며, *identifier* 는 지정된 구조체 또는 공용 구조체의 멤버 이름을 지정합니다. 값은 *identifier* 의 값이며 l-value입니다.
 
 두 가지 형태의 멤버 선택 식은 비슷한 효과가 있습니다.
 
@@ -45,7 +46,7 @@ expression->identifier
 (*expression).identifier
 ```
 
-여기서 *expression*은 포인터 값입니다.
+여기서 *expression* 은 포인터 값입니다.
 
 ## <a name="examples"></a>예
 

@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 가감 연산자 사용'
 title: 가감 연산자 사용
 ms.date: 11/04/2016
 helpviewer_keywords:
 - operators [C++], addition
 - additive operators
 ms.assetid: 7d54841e-436d-4ae8-9865-1ac1829e6f22
-ms.openlocfilehash: 06d71f3ad1944976a8d415be9487cb5ea365fa26
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d56a1b2e2696ae88598306271ed02c417ef63b0c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213686"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318366"
 ---
 # <a name="using-the-additive-operators"></a>가감 연산자 사용
 

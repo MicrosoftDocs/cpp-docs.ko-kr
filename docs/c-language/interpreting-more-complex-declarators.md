@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 더 복잡한 선언자 해석'
 title: 더 복잡한 선언자 해석
 ms.date: 11/04/2016
 helpviewer_keywords:
 - complex declarators
 - interpreting complex declarators
 ms.assetid: dd5b7019-c86d-4645-a5cc-21f834de6f4a
-ms.openlocfilehash: 385392ea8836998e71584d02bd0ee4478fb774a0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 82fc9b3cbd1bbf36191b5bfae7d5c3695f84f964
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87199908"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97137516"
 ---
 # <a name="interpreting-more-complex-declarators"></a>더 복잡한 선언자 해석
 
@@ -107,7 +108,7 @@ unsigned int *(* const *name[5][10] ) ( void );
 double ( *var( double (*)[3] ) )[3];
 ```
 
-이 선언에서 배열을 반환하는 함수가 잘못되었으므로 함수는 배열에 대한 포인터를 반환합니다. 여기서 `var`은 **`double`** 값이 세 개인 배열에 대한 포인터를 반환하는 함수로 선언됩니다. `var` 함수는 인수를 하나 사용합니다. 인수는 반환 값과 마찬가지로 **`double`** 값이 세 개인 배열에 대한 포인터입니다. 인수 형식은 복합 *추상 선언자*에서 제공됩니다. 인수 형식에서 별표 주위에 괄호가 필요합니다. 괄호가 없으면 인수 형식이 **`double`** 값에 대한 세 포인터의 배열이 됩니다. 추상 선언자에 대한 설명과 예제는 [추상 선언자](../c-language/c-abstract-declarators.md)를 참조하세요.
+이 선언에서 배열을 반환하는 함수가 잘못되었으므로 함수는 배열에 대한 포인터를 반환합니다. 여기서 `var`은 **`double`** 값이 세 개인 배열에 대한 포인터를 반환하는 함수로 선언됩니다. `var` 함수는 인수를 하나 사용합니다. 인수는 반환 값과 마찬가지로 **`double`** 값이 세 개인 배열에 대한 포인터입니다. 인수 형식은 복합 *추상 선언자* 에서 제공됩니다. 인수 형식에서 별표 주위에 괄호가 필요합니다. 괄호가 없으면 인수 형식이 **`double`** 값에 대한 세 포인터의 배열이 됩니다. 추상 선언자에 대한 설명과 예제는 [추상 선언자](../c-language/c-abstract-declarators.md)를 참조하세요.
 
 ```
 union sign         /* Array of arrays of pointers */

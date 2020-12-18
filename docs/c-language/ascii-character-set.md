@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: ASCII 문자 집합'
 title: ASCII 문자 집합
 ms.date: 11/04/2016
 ms.assetid: 2390fd40-5fe2-4410-a06c-ccc0fea2709b
-ms.openlocfilehash: 264d1f5a0f10d77a2c7c1dcc945ee6e508c70789
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 7b4d9eb442ab3bafacf8982595eb990a23617554
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81335078"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97279977"
 ---
 # <a name="ascii-character-set"></a>ASCII 문자 집합
 

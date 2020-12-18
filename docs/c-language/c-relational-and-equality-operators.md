@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: C 관계 및 같음 연산자'
 title: C 관계 및 같음 연산자
 ms.date: 10/18/2018
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - equality operator, syntax
 - operators [C], relational
 ms.assetid: c89a3815-a65e-4e0d-8333-0e8dc7fdb30b
-ms.openlocfilehash: 9ae5a31b5f4b81876d2fe518635a9766d2b5323c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6ed6b4de51fdc9eda929cdaf4cf87d238bf7dcc6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227948"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97214258"
 ---
 # <a name="c-relational-and-equality-operators"></a>C 관계 및 같음 연산자
 

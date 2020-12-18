@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: assert 함수에서 진단 인쇄'
 title: assert 함수에서 진단 인쇄
 ms.date: 11/04/2016
 ms.assetid: 78b64200-520d-40da-9a61-71553f411d4f
-ms.openlocfilehash: 666ba22d642b772fe8ad336f57ab1bdd82bd2e18
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cab4f6dfd2cab7d4b46486a103b39abb6ca17005
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62234225"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97186794"
 ---
 # <a name="diagnostic-printed-by-the-assert-function"></a>assert 함수에서 진단 인쇄
 
@@ -17,7 +18,7 @@ ms.locfileid: "62234225"
 
 > **Assertion failed**: <em>expression</em> **, file** <em>filename</em> **, line** *linenumber*
 
-여기서 *filename*은 원본 파일의 이름이며 *linenumber*는 원본 파일에서 실패한 어설션의 줄 번호입니다. *식*이 true(0이 아님)이면 어떤 작업도 수행되지 않습니다.
+여기서 *filename* 은 원본 파일의 이름이며 *linenumber* 는 원본 파일에서 실패한 어설션의 줄 번호입니다. *식* 이 true(0이 아님)이면 어떤 작업도 수행되지 않습니다.
 
 ## <a name="see-also"></a>참조
 

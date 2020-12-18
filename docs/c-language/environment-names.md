@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: 환경 이름'
 title: 환경 이름
 ms.date: 11/04/2016
 ms.assetid: 9af409a5-e724-465a-9a21-88d3586c2e92
-ms.openlocfilehash: 43e1254b4c1ee61a92fbb6499d9396e8b15a3047
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f40da15151385cea4bd581dea8946f50d2b58ea8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62234129"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97213756"
 ---
 # <a name="environment-names"></a>환경 이름
 

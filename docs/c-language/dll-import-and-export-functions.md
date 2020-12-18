@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: DLL 가져오기 및 내보내기 함수'
 title: DLL 가져오기 및 내보내기 함수
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - extended storage-class attributes
 - dllexport attribute [C++], storage-class attribute
 ms.assetid: 08d164b9-770a-4e14-afeb-c6f21d9e33e4
-ms.openlocfilehash: 753a51fa8e2c87b77a54e5e93522e5f11585b610
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9f734d4415b473717ad8cd7c94213f1beaff9dc8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87200077"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97213932"
 ---
 # <a name="dll-import-and-export-functions"></a>DLL 가져오기 및 내보내기 함수
 

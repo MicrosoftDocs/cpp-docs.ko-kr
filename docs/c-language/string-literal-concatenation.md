@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 문자열 리터럴 연결'
 title: 문자열 리터럴 연결
 ms.date: 11/04/2016
 helpviewer_keywords:
 - concatenating strings
 - strings [C++], concatenating
 ms.assetid: 51486b1f-4b1e-4061-9add-1aa38c6cdb3c
-ms.openlocfilehash: cdd9a7811635bf43cd76ecbc84d8ab364e7f9dab
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3486857cb0d218ea80c00252de02d9f29d58f2c8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157796"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97137295"
 ---
 # <a name="string-literal-concatenation"></a>문자열 리터럴 연결
 

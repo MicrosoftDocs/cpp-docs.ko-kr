@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 공용 구조체 선언'
 title: 공용 구조체 선언
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - union keyword [C], declarations
 - variant records
 ms.assetid: 978c6165-e0ae-4196-afa7-6d94e24f62f7
-ms.openlocfilehash: 3414a478ec741351f1e1540a214cca38c029749f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c544a4d92f452415fdd03ccef51d49f69e2b5dae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213699"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258826"
 ---
 # <a name="union-declarations"></a>공용 구조체 선언
 
@@ -25,7 +26,7 @@ ms.locfileid: "87213699"
 
 *struct-or-union*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; **`struct`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **`union`**
+&nbsp;&nbsp;&nbsp;&nbsp;**`union`**
 
 *struct-declaration-list*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*struct-declaration*<br/>

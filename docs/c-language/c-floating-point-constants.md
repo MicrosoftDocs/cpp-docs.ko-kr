@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: C 부동 소수점 상수'
 title: C 부동 소수점 상수
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - floating-point constants, about floating-point constants
 - double data type, floating-point constants
 ms.assetid: e1bd9b44-d6ab-470c-93e5-07142c7a2062
-ms.openlocfilehash: 8777f04b047516ef29ae7bf67ddaf4195e3aaf6e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0bad45db33cd40060c4d20312c5318d443efc60f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228026"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97293562"
 ---
 # <a name="c-floating-point-constants"></a>C 부동 소수점 상수
 
@@ -58,7 +59,7 @@ ms.locfileid: "87228026"
 
 부동 소수점 상수는 빼기 기호( **-** )가 앞에 없는 경우 양수입니다. 이 경우 빼기 기호는 단항 산술 부정 연산자로 처리됩니다. 부동 소수점 상수의 형식은 **`float`** , **`double`** 또는 **`long double`** 입니다.
 
-**f**, **F**, **l** 또는 **L** 접미사가 없는 부동 소수점 상수는 **`double`** 형식입니다. 문자 **f** 또는 **F**가 접미사이면 상수 형식은 **`float`** 입니다. 그 뒤에 문자 **l** 또는 **L**이 오는 경우 형식은 **`long double`** 입니다. 예를 들어:
+**f**, **F**, **l** 또는 **L** 접미사가 없는 부동 소수점 상수는 **`double`** 형식입니다. 문자 **f** 또는 **F** 가 접미사이면 상수 형식은 **`float`** 입니다. 그 뒤에 문자 **l** 또는 **L** 이 오는 경우 형식은 **`long double`** 입니다. 예를 들어:
 
 ```C
 10.0L  /* Has type long double  */

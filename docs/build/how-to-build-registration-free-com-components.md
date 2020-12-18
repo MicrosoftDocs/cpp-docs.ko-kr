@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 방법: 등록이 필요 없는 COM 구성 요소 빌드'
 title: '방법: 등록이 필요 없는 COM 구성 요소 빌드'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - COM components, registration-free
 ms.assetid: 7e585d6a-0314-45b2-8f1b-cae9ac4df037
-ms.openlocfilehash: 783677c97835acc98751fc4a19f9405af752b71a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ddcb378989878749d170705b4808d8302523a73a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62188940"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97162718"
 ---
 # <a name="how-to-build-registration-free-com-components"></a>방법: 등록이 필요 없는 COM 구성 요소 빌드
 
@@ -21,9 +22,9 @@ ms.locfileid: "62188940"
 
 1. **구성 속성** 노드를 확장한 다음 **매니페스트 도구** 노드를 확장합니다.
 
-1. **입력 및 출력** 속성 페이지를 선택한 후 **매니페스트 포함** 속성을 **예**로 설정합니다.
+1. **입력 및 출력** 속성 페이지를 선택한 후 **매니페스트 포함** 속성을 **예** 로 설정합니다.
 
-1. **확인**을 클릭합니다.
+1. **확인** 을 클릭합니다.
 
 1. 솔루션을 빌드합니다.
 

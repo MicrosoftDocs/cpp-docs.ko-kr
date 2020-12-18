@@ -1,14 +1,15 @@
 ---
+description: '자세한 정보: 원격 아카이브 속성(C++ Linux)'
 title: 원격 아카이브 속성(C++ Linux)
 ms.date: 06/07/2019
 ms.assetid: 5ee1e44c-8337-4c3a-b2f3-35e4be954f9f
 f1_keywords: []
-ms.openlocfilehash: 9e35c9cc0b8a99e87654f1052e8666c52e35a071
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 39449e900878739cb61e5df536ee5e06a307364e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924452"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97169686"
 ---
 # <a name="remote-archive-properties-c-linux"></a>원격 아카이브 속성(C++ Linux)
 
@@ -20,7 +21,7 @@ Linux 지원은 Visual Studio 2017 이상에서 사용할 수 있습니다.
 
 ::: moniker range=">=msvc-150"
 
-| 속성 | 설명 |
+| 속성 | Description |
 |--|--|
 | 아카이브 인덱스 만들기 | 아카이브 인덱스(ranlib에서 수행된 대로)를 만듭니다. 이 옵션은 자체 소유 라이브러리 내에서 종속성 링크 및 축소를 빠르게 할 수 있습니다. |
 | Thin 아카이브 만들기 | Thin 아카이브를 만듭니다.  Thin 아카이브는 개체를 포함하는 대신 개체에 대한 상대 경로를 포함합니다.  Thin과 Normal 간에 전환하려면 기존의 라이브러리를 삭제해야 합니다. |

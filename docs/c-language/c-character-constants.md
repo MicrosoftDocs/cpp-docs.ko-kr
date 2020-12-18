@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: C 문자 상수'
 title: C 문자 상수
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - constants, character
 - single quotation mark
 ms.assetid: 388ae7d7-2c3a-44d6-a507-63f541ecd2da
-ms.openlocfilehash: 5d87b57726f741cc96f2180de33cae01403786ec
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2503fc983d79f363f525b22172d2113393b41091
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62326302"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97211559"
 ---
 # <a name="c-character-constants"></a>C 문자 상수
 

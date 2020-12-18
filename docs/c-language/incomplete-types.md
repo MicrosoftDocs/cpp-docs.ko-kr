@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 불완전한 형식'
 title: 불완전한 형식
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,16 +11,16 @@ helpviewer_keywords:
 - void keyword [C]
 - structures, incomplete
 ms.assetid: 01bc0cf6-9fa7-458c-9371-ecbe54ea6aee
-ms.openlocfilehash: 192a6556fd8a5d3039598b883ed7c870fc01ad12
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b85d7a703d6687ad7ec1b0476b8b8a43930330dc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229651"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97243577"
 ---
 # <a name="incomplete-types"></a>불완전한 형식
 
-*불완전한 형식*은 식별자를 설명하지만 식별자 크기를 확인하는 데 필요한 정보는 포함하지 않는 형식입니다. 불완전한 형식은 다음 형식일 수 있습니다.
+*불완전한 형식* 은 식별자를 설명하지만 식별자 크기를 확인하는 데 필요한 정보는 포함하지 않는 형식입니다. 불완전한 형식은 다음 형식일 수 있습니다.
 
 - 아직 멤버를 지정하지 않은 구조체 형식
 

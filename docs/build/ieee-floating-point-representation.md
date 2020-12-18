@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: IEEE 부동 소수점 표시'
 title: IEEE 부동 소수점 표시
 ms.date: 05/06/2019
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - long double
 - real*4 value
 ms.assetid: 537833e8-fe05-49fc-8169-55fd0314b195
-ms.openlocfilehash: 47802a32d43824b4e568ca520c360dc7b12cbf8c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9de48975ba13fae6117b095565f22265e28edf07
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231548"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97162653"
 ---
 # <a name="ieee-floating-point-representation"></a>IEEE 부동 소수점 표시
 

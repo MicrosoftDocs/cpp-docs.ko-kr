@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 다른 형식에서 변환'
 title: 다른 형식에서 변환
 ms.date: 01/29/2018
 helpviewer_keywords:
 - values, converting
 - type casts, conversion
 ms.assetid: 30fbd974-8f5a-4b70-ac44-d3937b96b702
-ms.openlocfilehash: bd00bbb8944a0273163fa0c5952be510c9dd697c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0b9497c4873e42f9d08463c4ec1396b178b6f362
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87200337"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97293198"
 ---
 # <a name="conversions-from-other-types"></a>다른 형식에서 변환
 

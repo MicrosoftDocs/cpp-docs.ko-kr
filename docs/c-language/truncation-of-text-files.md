@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 텍스트 파일 잘라내기'
 title: 텍스트 파일 잘라내기
 ms.date: 11/04/2016
 helpviewer_keywords:
 - text files
 - text files, truncation
 ms.assetid: 238307b3-c580-4280-ac6f-51345a2365bc
-ms.openlocfilehash: ab7cecc2f784c9a8968d6a4103ec9323aa913046
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b78347df2c16882f0363cb619301b6fcc1f054a5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62344930"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97243018"
 ---
 # <a name="truncation-of-text-files"></a>텍스트 파일 잘라내기
 

@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: 외부 링크가 있는 중요한 문자'
 title: 외부 링크가 있는 중요한 문자
 ms.date: 11/04/2016
 ms.assetid: 6f3b7e26-3fb0-4975-a95d-23a2072c1186
-ms.openlocfilehash: 00c917faed731b212773667961bcd7de9ce279cd
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: dda6db169fa6ba8a0816b01f3ee7ae024ef491c4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91507678"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97292613"
 ---
 # <a name="significant-characters-with-external-linkage"></a>외부 링크가 있는 중요한 문자
 

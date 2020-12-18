@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 매개 변수'
 title: 매개 변수
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - ellipsis (...), parameters
 - '... ellipsis'
 ms.assetid: 8f2b8026-78b5-4e21-86a3-bf0f91f05689
-ms.openlocfilehash: 57648747bbb50ffe46b199a03563757c331f088a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b68cd5934e597e486b00f2772e913f627e584ecb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229573"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256824"
 ---
 # <a name="parameters"></a>매개 변수
 
@@ -25,12 +26,12 @@ ms.locfileid: "87229573"
 
 ## <a name="syntax"></a>구문
 
-*`function-definition`* :<br/>
+*`function-definition`*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; *`declaration-specifiers`* <sub>opt</sub> *`attribute-seq`* <sub>opt</sub> *`declarator`* *`declaration-list`* <sub>opt</sub> *`compound-statement`*
 
 /\* *`attribute-seq`* 는 Microsoft 전용 \*/
 
-*`declarator`* :<br/>
+*`declarator`*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; *`pointer`* <sub>opt</sub> *`direct-declarator`*
 
 *`direct-declarator`* : /\* 함수 선언자 \*/<br/>
@@ -38,15 +39,15 @@ ms.locfileid: "87229573"
 &nbsp;&nbsp;&nbsp;&nbsp; *`direct-declarator`*  **`(`**  *`identifier-list`* <sub>opt</sub> **`)`**  /\* 사용되지 않는 스타일 선언자 \*/
 
 *`parameter-type-list`* : /\* 매개 변수 목록 \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; *`parameter-list`* <br/>
-&nbsp;&nbsp;&nbsp;&nbsp; *`parameter-list`* **`, ...`**
+&nbsp;&nbsp;&nbsp;&nbsp;*`parameter-list`* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`parameter-list`* **`, ...`**
 
-*`parameter-list`* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; *`parameter-declaration`*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; *`parameter-list`* **`,`**  *`parameter-declaration`*
+*`parameter-list`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`parameter-declaration`*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`parameter-list`* **`,`**  *`parameter-declaration`*
 
-*`parameter-declaration`* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; *`declaration-specifiers`* *`declarator`*<br/>
+*`parameter-declaration`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`declaration-specifiers`* *`declarator`*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; *`declaration-specifiers`* *`abstract-declarator`* <sub>opt</sub>
 
 *`parameter-type-list`* 는 쉼표로 구분된 매개 변수 선언 시퀀스입니다. 매개 변수 목록에 있는 각 매개 변수 형식은 다음과 같습니다.

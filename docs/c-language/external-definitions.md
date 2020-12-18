@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 외부 정의'
 title: 외부 정의
 ms.date: 11/04/2016
 helpviewer_keywords:
 - external definitions
 - external linkage, variable declarations
 ms.assetid: 41e37bfc-b360-43b1-9972-28af2d365b20
-ms.openlocfilehash: 7a05cf730940246c82963afbe27f6fa344951aeb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6bdc9299f68b0c05f58c7f3620f9de5ce76a98e6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62233677"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97196297"
 ---
 # <a name="external-definitions"></a>외부 정의
 

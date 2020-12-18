@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 함수 호출'
 title: 함수 호출
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,20 +8,20 @@ helpviewer_keywords:
 - function calls, about function calls
 - function calls
 ms.assetid: 2cfa897d-3874-4820-933c-e624f75d1712
-ms.openlocfilehash: 495dc3cf77df79336af364eb80ea7edf17b54400
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3949ea88637d9476d6acb0fd4fc4cf43dcfb0fc0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227870"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97221932"
 ---
 # <a name="function-calls"></a>함수 호출
 
-*함수 호출*은 컨트롤 및 인수(있는 경우)를 함수에 전달하는 다음 형식의 식입니다.
+*함수 호출* 은 컨트롤 및 인수(있는 경우)를 함수에 전달하는 다음 형식의 식입니다.
 
 *expression* (*expression-list*<sub>opt</sub>)
 
-여기서 *expression*은 함수 이름이거나 함수 주소로 계산되며, *expression-list*는 쉼표로 구분된 식 목록입니다. 두 번째 식의 값은 함수로 전달되는 인수입니다. 함수가 값을 반환하지 않는 경우에는 **`void`** 를 반환하는 함수로 선언합니다.
+여기서 *expression* 은 함수 이름이거나 함수 주소로 계산되며, *expression-list* 는 쉼표로 구분된 식 목록입니다. 두 번째 식의 값은 함수로 전달되는 인수입니다. 함수가 값을 반환하지 않는 경우에는 **`void`** 를 반환하는 함수로 선언합니다.
 
 함수가 호출 전에 선언되었는데 매개 변수와 관련한 정보는 제공되지 않으면 선언되지 않은 인수에 대해서는 일반적인 산술 변환이 진행됩니다.
 

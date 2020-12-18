@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: C 상수'
 title: C 상수
 ms.date: 11/04/2016
 helpviewer_keywords:
 - constants, C
 - constants
 ms.assetid: f5bd7213-97ab-4cad-b913-1fc91a486935
-ms.openlocfilehash: 1bce7d72c5f16a543db1c2cae492460fefd51306
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ee298ba88f20bc30ccb2f957601cd6f593d2ba86
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231470"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289480"
 ---
 # <a name="c-constants"></a>C 상수
 
@@ -18,7 +19,7 @@ ms.locfileid: "87231470"
 
 ## <a name="syntax"></a>구문
 
-*`constant`* :\
+*`constant`*:\
 &emsp;*`floating-point-constant`*\
 &emsp;*`integer-constant`*\
 &emsp;*`enumeration-constant`*\

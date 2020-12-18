@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 할당 변환'
 title: 할당 변환
 ms.date: 11/04/2016
 helpviewer_keywords:
 - conversions, assignment
 - assignment conversions
 ms.assetid: 4ee01013-de32-4aae-b12e-0051d0cde927
-ms.openlocfilehash: cc75bdd8227c09247f6d4270f1fc21235de2eb05
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b9889214f160c981c57fc3174b542396d71458bd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211842"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97279964"
 ---
 # <a name="assignment-conversions"></a>할당 변환
 

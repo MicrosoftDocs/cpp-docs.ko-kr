@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: 범위 읽기'
 title: 범위 읽기
 ms.date: 11/04/2016
 ms.assetid: 99de29ce-ab14-46f4-97e1-2081fd996b53
-ms.openlocfilehash: 86bb24647084d8bdc452960bab631587c2413276
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: afb1ff0f25360de7c47663279bf6f54dd7ca6a48
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64343144"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97309123"
 ---
 # <a name="reading-ranges"></a>범위 읽기
 

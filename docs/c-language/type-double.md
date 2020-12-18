@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: double 형식'
 title: double 형식
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - portability [C++], type double
 - double data type
 ms.assetid: 17c85b24-1475-4d41-a03c-ddf2d6561d34
-ms.openlocfilehash: 43e6cc444f4d6a973fc58b5ce550e468066aca1b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c30af4ef432251ddf38be2172102ff7a63254940
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62290735"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97242849"
 ---
 # <a name="type-double"></a>double 형식
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 문 (C)'
 title: 문 (C)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - Visual C, statements
 - statements
 ms.assetid: df3891cd-6195-4663-aecf-7fe7dc3ed9c3
-ms.openlocfilehash: 2156f761aac3b6f0d641493229a3216f05273eb8
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: cfbd4b980ab4a1c48b06f1f97e230a90f3a6ac19
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842963"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97296877"
 ---
 # <a name="statements-c"></a>문 (C)
 

@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 후위 연산자'
 title: 후위 연산자
 ms.date: 11/04/2016
 helpviewer_keywords:
 - operators [C], postfix
 - postfix operators
 ms.assetid: 76260011-1624-484e-8bef-72ae7ab556cc
-ms.openlocfilehash: a86ede25feeaee3a9fb1c6b146cf9667b85c0c2f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: be8e7354d512174a4ab11ffcdcb82f9418baa894
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62232249"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97195868"
 ---
 # <a name="postfix-operators"></a>후위 연산자
 

@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: strerror 함수'
 title: strerror 함수
 ms.date: 11/04/2016
 helpviewer_keywords:
 - strerror function
 ms.assetid: 9fb9366e-d9a8-47d4-ad51-d98774a0617f
-ms.openlocfilehash: e2bcfef0ad7c2c432b84efdff76c88a87f6f84c9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d85cbd4c99c8ee3a69c7ff4175acd66d4bd076ba
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157840"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97205254"
 ---
 # <a name="strerror-function"></a>strerror 함수
 

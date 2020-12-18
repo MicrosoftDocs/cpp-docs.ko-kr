@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: C 시퀀스 위치'
 title: C 시퀀스 위치
 ms.date: 11/04/2016
 helpviewer_keywords:
 - sequence points
 ms.assetid: c84885a5-4336-4eba-a643-058df4249903
-ms.openlocfilehash: 0147f51063127cb26ce8caf70bc46eadc87b8d3e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7ba46978271cafbdc6b06fd01d69673dbf905d33
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226518"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97207113"
 ---
 # <a name="c-sequence-points"></a>C 시퀀스 위치
 

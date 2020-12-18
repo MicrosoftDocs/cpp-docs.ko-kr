@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 코드 마법사로 기능 추가(C++)'
 title: 코드 마법사로 기능 추가(C++)
 ms.date: 05/14/2019
 helpviewer_keywords:
 - code wizards [C++]
 ms.assetid: 6afb7ef9-7056-423d-b244-91bb4236d1d7
-ms.openlocfilehash: 651eac8c630636455dd1ffa04fdd02b71fa3cf62
-ms.sourcegitcommit: 6284bca6549e7b4f199d4560c30df6c1278bd4a0
+ms.openlocfilehash: b411f3d36ebfa7af63e59a77ee85968de1dc3d24
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96188915"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240743"
 ---
 # <a name="adding-functionality-with-code-wizards-c"></a>코드 마법사로 기능 추가(C++)
 
@@ -66,7 +67,7 @@ C++ 코드 마법사에 액세스할 수 있는 세 가지 위치가 있습니�
 
    자세한 내용은 [인터페이스 구현](../ide/implementing-an-interface-visual-cpp.md) 및 [ATL 프로젝트에 개체 및 컨트롤 추가](../atl/reference/adding-objects-and-controls-to-an-atl-project.md)를 참조하세요.
 
-   |코드 마법사에 액세스하는 위치|설명|
+   |코드 마법사에 액세스하는 위치|Description|
    |-----------------------------|-----------------|
    |새 항목 추가|새 항목 코드 추가 마법사는 소스 파일을 프로젝트에 추가합니다. 필요한 경우 프로젝트 빌드 엔진에서 찾아야 하는 파일이 포함되는 추가 디렉터리가 만들어집니다. [항목 추가] 아이콘에서 사용할 수 있는 코드 마법사는 다음과 같습니다.<br /><br />- C++ 소스 파일 추가(.cpp, .h, .idl, .rc, .srf, .def, .rgs)<br />- 웹 개발 파일 추가(.html, .asp, .css, .xml)<br />- 유틸리티 및 리소스 파일 추가(.bmp, .cur, .ico, .rct, .sql, .txt)<br /><br />이러한 코드 마법사는 일반적으로 정보를 요청하지 않고 개발 트리에 파일을 추가합니다. 속성 창에서 파일의 이름을 바꿀 수 있습니다.|
    |솔루션 탐색기|솔루션 탐색기에서 사용할 수 있는 코드 마법사는 항목을 마우스 오른쪽 단추로 클릭할 때 커서 초점이 있는 위치에 따라 다릅니다. 항목을 마우스 오른쪽 단추로 클릭할 때 **추가** 옵션이 표시되지 않으면 개발 트리에서 커서를 한 수준 위로 이동하고 다시 시도합니다. 커서가 어디에 있든 코드 마법사는 항상 개발 트리의 적절한 위치에 추가 코드를 배치합니다. 솔루션 탐색기에서 사용할 수 있는 코드 마법사는 다음과 같습니다.<br /><br />- 클래스 추가(새 코드 마법사가 포함된 **클래스 추가** 대화 상자 열기)<br />- 리소스 추가(새로 만들기, 가져오기 또는 사용자 지정)<br />- 웹 참조 추가|

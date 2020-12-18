@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: NULL 매크로'
 title: NULL 매크로
 ms.date: 11/04/2016
 helpviewer_keywords:
 - NULL, macro
 ms.assetid: 6800f7a4-88a7-442f-87ed-e618e83a0b16
-ms.openlocfilehash: 4c9ce5bc1ab1e4c516731f763772d428bad64ff8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4c32a3138ba8c961b9b5d9ac2896a1cfd8845f32
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62232456"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256941"
 ---
 # <a name="null-macro"></a>NULL 매크로
 

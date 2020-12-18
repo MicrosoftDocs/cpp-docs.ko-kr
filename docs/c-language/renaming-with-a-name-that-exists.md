@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: 이미 있는 이름으로 바꾸기'
 title: 이미 있는 이름으로 바꾸기
 ms.date: 11/04/2016
 ms.assetid: fc2a8f29-f757-4ce0-8d7f-7f8cff7f49ab
-ms.openlocfilehash: 088816d4c44016b9de15ba45e14282c71b8c1c64
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5d1459d8bb830467d08dbdbb67843f88cb534124
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62232046"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97292964"
 ---
 # <a name="renaming-with-a-name-that-exists"></a>이미 있는 이름으로 바꾸기
 

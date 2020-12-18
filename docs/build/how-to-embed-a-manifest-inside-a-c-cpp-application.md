@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 방법: C/C++ 애플리케이션에 매니페스트 포함'
 title: '방법: C/C++ 애플리케이션에 매니페스트 포함'
 ms.date: 05/06/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - embedding manifests
 - makefiles, updating to embed manifest
 ms.assetid: ec0bac69-2fdc-466c-ab0d-710a22974e5d
-ms.openlocfilehash: 2f125ee445d4ee9efdf21c37134d4c5adbca256d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: ce3bdd56b994498b223857b80989247fe9919e4c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81322989"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156348"
 ---
 # <a name="how-to-embed-a-manifest-inside-a-cc-application"></a>방법: C/C++ 애플리케이션에 매니페스트 포함
 
@@ -230,7 +231,7 @@ _VC_MANIFEST_CLEAN=
 ####################################################
 ```
 
-이제 **makefile.targ.inc**를 만들고 다음을 복사해 넣습니다.
+이제 **makefile.targ.inc** 를 만들고 다음을 복사해 넣습니다.
 
 ```
 # makefile.targ.inc - include this at the very bottom of the existing makefile

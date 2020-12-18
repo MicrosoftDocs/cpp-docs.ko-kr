@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: __declspec(dllimport)을 사용하여 애플리케이션으로 가져오기'
 title: __declspec(dllimport)을 사용하여 애플리케이션으로 가져오기
 ms.date: 11/04/2016
 helpviewer_keywords:
 - __declspec(dllimport) keyword [C++]
 - importing DLLs [C++], __declspec(dllimport)
 ms.assetid: edb4da4e-f83a-44cf-a668-9239d49dbe42
-ms.openlocfilehash: 50b630334cfd8752935b54549190d698fa5136bb
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 946ec6b4b06b22dd7dd68be2478a0b0571aa641c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223982"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156179"
 ---
 # <a name="import-into-an-application-using-__declspecdllimport"></a>__declspec(dllimport)을 사용하여 애플리케이션으로 가져오기
 

@@ -1,12 +1,13 @@
 ---
+description: '자세한 정보: ARM64 ABI 규칙 개요'
 title: ARM64 ABI 규칙 개요
 ms.date: 03/27/2019
-ms.openlocfilehash: bfe55513ffd24175dbe62efc6d5afcfd82f71e4c
-ms.sourcegitcommit: 7f378314c5692d897ead10b7f6c96d4cb2abd266
+ms.openlocfilehash: fbdb709eaa960446bb76712962dbbc3bfb66d38a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88972675"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97157115"
 ---
 # <a name="overview-of-arm64-abi-conventions"></a>ARM64 ABI 규칙 개요
 
@@ -207,7 +208,7 @@ HFA 및 HVA 값은 적절하게 s0-s3, d0-d3 또는 v0-v3로 반환됩니다.
 
 값으로 반환되는 형식은 특정 속성이 있는지, 그리고 함수가 정적이 아닌 멤버 함수인지에 따라 다르게 처리됩니다. 해당 속성을 모두 포함하는 형식은 다음과 같습니다.
 
-- C++14 표준 정의에 의한 *aggregate*입니다. 즉, 사용자 제공 생성자가 없고, 프라이빗 또는 보호된 비정적 데이터 멤버가 없고, 기본 클래스가 없고, 가상 함수가 없는 배열 또는 클래스입니다.
+- C++14 표준 정의에 의한 *aggregate* 입니다. 즉, 사용자 제공 생성자가 없고, 프라이빗 또는 보호된 비정적 데이터 멤버가 없고, 기본 클래스가 없고, 가상 함수가 없는 배열 또는 클래스입니다.
 - 간단한 복사 대입 연산자가 있습니다.
 - 간단한 소멸자가 있습니다.
 

@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 파일 버퍼링'
 title: 파일 버퍼링
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - buffers [C++], file buffering
 - files [C++], buffering
 ms.assetid: 6bca67d1-a98f-43ac-9c6e-6c0504357aba
-ms.openlocfilehash: 9bf71601a397e94f7f80e1f3451ae5b822b8b9fb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c136ecb63d9ab8390e70e63c9a5b3b8e7e60b2e0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62233793"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97196232"
 ---
 # <a name="file-buffering"></a>파일 버퍼링
 

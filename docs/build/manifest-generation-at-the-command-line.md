@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: 명령줄에서 매니페스트 생성'
 title: 명령줄에서 매니페스트 생성
 ms.date: 11/04/2016
 helpviewer_keywords:
 - manifests [C++]
 - manifest tool (mt.exe)
 ms.assetid: fc2ff255-82b1-4c44-af76-8405c5850292
-ms.openlocfilehash: 381406213422e286dd9aba26adcdbd6caff7bfe3
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 30b826e0fe98a143f58d7987203881a8fd8e601b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69493197"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176459"
 ---
 # <a name="manifest-generation-at-the-command-line"></a>명령줄에서 매니페스트 생성
 

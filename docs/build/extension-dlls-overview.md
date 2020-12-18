@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: MFC 확장 DLL: 개요'
 title: '확장 DLL: 개요'
 ms.date: 05/06/2019
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - shared DLL versions [C++]
 - extension DLLs [C++], about MFC extension DLLs
 ms.assetid: eb5e10b7-d615-4bc7-908d-e3e99b7b1d5f
-ms.openlocfilehash: ea8e950e28907ea1a4a85c1f39392d5505f08c49
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: b877eeaae2e67466d4b695820659c5718d552d0e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65221365"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97162926"
 ---
 # <a name="mfc-extension-dlls-overview"></a>MFC 확장 DLL: 개요
 

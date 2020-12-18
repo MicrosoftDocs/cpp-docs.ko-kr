@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 선언자 및 변수 선언'
 title: 선언자 및 변수 선언
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - declarators, definition
 - declaring variables, declaration statements
 ms.assetid: 5fd67a6a-3a6a-4ec9-b257-3f7390a48d40
-ms.openlocfilehash: b20cde6982e99dedaff59518b71c041233a01dd8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 920c44e3345c6143489815de55ea81470e46d279
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226453"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306419"
 ---
 # <a name="declarators-and-variable-declarations"></a>선언자 및 변수 선언
 
@@ -63,7 +64,7 @@ __declspec(thread) char *var;
 &nbsp;&nbsp;&nbsp;&nbsp;*type-qualifier-list type-qualifier*
 
 > [!NOTE]
-> *선언자*를 참조하는 구문은 [C 언어 구문 요약](../c-language/c-language-syntax-summary.md) 또는 [선언 개요](../c-language/overview-of-declarations.md)에서 *선언*에 대한 구문을 참조하세요.
+> *선언자* 를 참조하는 구문은 [C 언어 구문 요약](../c-language/c-language-syntax-summary.md) 또는 [선언 개요](../c-language/overview-of-declarations.md)에서 *선언* 에 대한 구문을 참조하세요.
 
 선언자가 수정되지 않은 식별자로 구성되면 선언되는 항목에 기본 형식이 있습니다. 식별자 왼쪽에 별표(<strong>\*</strong>)가 나타나는 경우 형식은 포인터 형식으로 수정됩니다. 식별자 뒤에 대괄호( **[ ]** )가 올 경우 형식은 배열 형식으로 수정됩니다. 식별자 뒤에 괄호가 올 경우 형식은 함수 형식으로 수정됩니다. 선언 내에서 우선 순위를 해석하는 방법에 대한 자세한 내용은 [더 복잡한 선언자 해석](../c-language/interpreting-more-complex-declarators.md)을 참조하세요.
 

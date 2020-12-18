@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 곱하기 연산자'
 title: 곱하기 연산자
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - slash (/) operator
 - multiplication operator [C++], multiplicative operators
 ms.assetid: 495471c9-319b-4eb4-bd97-039a025fd3a9
-ms.openlocfilehash: 32ff74be0fd1afb1d8a21d74abb194eaa5e273df
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 61689435c5e76238feba26d5a49ffe3530798f88
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227987"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97300270"
 ---
 # <a name="c-multiplicative-operators"></a>곱하기 연산자
 

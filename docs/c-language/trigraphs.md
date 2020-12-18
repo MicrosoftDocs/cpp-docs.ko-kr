@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 삼중자'
 title: 삼중자
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 - ??! trigraph
 - ??' trigraph
 ms.assetid: 617f76ec-b8e8-4cfe-916c-4bc32cbd9aeb
-ms.openlocfilehash: 3ed8849656ac57f4774825294aba7bb41a050eee
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 70844472de698b581f33adea5dd6b6fa5cdfc8fb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227753"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97243070"
 ---
 # <a name="trigraphs"></a>삼중자
 
 C 소스 프로그램의 소스 문자 집합은 7비트 ASCII 문자 집합에 포함되지만 ISO 646-1983 고정 코드 집합의 상위 집합입니다. 삼중자 시퀀스를 사용하면 C 프로그램을 ISO(International Standards Organization) 고정 코드 집합만을 사용하여 쓸 수 있습니다. 삼중자는 컴파일러가 해당 문장 부호 문자로 대체하는 세 문자(두 개의 연속된 물음표로 시작)의 시퀀스입니다. 삼중자는 특정 문장 부호 문자에 대한 편리한 그래픽 표현을 포함하지 않는 문자 집합이 사용되는 C 소스 파일에서 사용할 수 있습니다.
 
-C++17의 언어에서는 삼중자가 제거됩니다. 구현에서는 실제 원본 파일에서 *기본 원본 문자 집합*으로의 구현이 정의된 매핑의 일부분으로 삼중자가 계속 지원될 수도 있지만, 표준에 따라 구현에서 삼중자를 지원하지 않는 것이 좋습니다. C++14까지는 삼중자가 C에서처럼 지원됩니다.
+C++17의 언어에서는 삼중자가 제거됩니다. 구현에서는 실제 원본 파일에서 *기본 원본 문자 집합* 으로의 구현이 정의된 매핑의 일부분으로 삼중자가 계속 지원될 수도 있지만, 표준에 따라 구현에서 삼중자를 지원하지 않는 것이 좋습니다. C++14까지는 삼중자가 C에서처럼 지원됩니다.
 
 Visual C++에서는 삼중자 대체가 계속 지원되지만 기본적으로는 사용할 수 없습니다. 삼중자 대체를 사용하도록 설정하는 방법에 대한 자세한 내용은 [`/Zc:trigraphs`(삼중자 대체)](../build/reference/zc-trigraphs-trigraphs-substitution.md)를 참조하세요.
 

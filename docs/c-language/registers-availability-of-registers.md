@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 레지스터: 레지스터의 가용성'
 title: '레지스터: 레지스터의 가용성'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - registers
 ms.assetid: f6654e53-742c-4a30-8620-1a4d436a6ae4
-ms.openlocfilehash: 5b4a6d320daae83685373f5cbb3bfd528635e2c2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a37d18048e640158d1319f999d06a59eb8c4f235
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62232508"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97120746"
 ---
 # <a name="registers-availability-of-registers"></a>레지스터: 레지스터의 가용성
 

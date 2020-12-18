@@ -1,16 +1,17 @@
 ---
+description: '자세한 정보: C 비트 필드'
 title: C 비트 필드
 ms.date: 11/04/2016
 helpviewer_keywords:
 - bitfields
 - bit fields
 ms.assetid: 9faf74c4-7fd5-4b44-ad18-04485193d06e
-ms.openlocfilehash: 4878a9c8c206851b13484446b436952e655e06db
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e89f74fc68cad11eee63b3dd1101fa71e0b72e27
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234291"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97186956"
 ---
 # <a name="c-bit-fields"></a>C 비트 필드
 
@@ -22,9 +23,9 @@ ms.locfileid: "87234291"
 &nbsp;&nbsp;&nbsp;&nbsp;*declarator*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*type-specifier* *declarator*<sub>opt</sub> **:** *constant-expression*
 
-*constant-expression*은 필드의 너비(비트)를 지정합니다. `declarator`에 대한 *type-specifier*는 **`unsigned int`** , **`signed int`** 또는 **`int`** 여야 하고 *constant-expression*은 음수가 아닌 정수 값이어야 합니다. 이 값이 0인 경우 선언에는 `declarator`가 없습니다. 비트 필드의 배열, 비트 필드에 대한 포인터 및 비트 필드를 반환하는 함수는 허용되지 않습니다. 선택적 `declarator`는 비트 필드 이름을 지정합니다. 비트 필드는 구조체의 일부로만 선언할 수 있습니다. address-of 연산자( **&** )는 비트 필드 구성 요소에 적용할 수 없습니다.
+*constant-expression* 은 필드의 너비(비트)를 지정합니다. `declarator`에 대한 *type-specifier* 는 **`unsigned int`** , **`signed int`** 또는 **`int`** 여야 하고 *constant-expression* 은 음수가 아닌 정수 값이어야 합니다. 이 값이 0인 경우 선언에는 `declarator`가 없습니다. 비트 필드의 배열, 비트 필드에 대한 포인터 및 비트 필드를 반환하는 함수는 허용되지 않습니다. 선택적 `declarator`는 비트 필드 이름을 지정합니다. 비트 필드는 구조체의 일부로만 선언할 수 있습니다. address-of 연산자( **&** )는 비트 필드 구성 요소에 적용할 수 없습니다.
 
-명명되지 않은 비트 필드는 참조할 수 없으며 런타임에 해당 콘텐츠를 예측할 수 없습니다. 정렬 목적으로 "더미" 필드로 사용할 수 있습니다. 너비가 0으로 지정된 명명되지 않은 비트 필드의 경우 *struct-declaration-list*에서 해당 필드 다음에 나오는 멤버의 스토리지가 **`int`** 경계에서 시작됩니다.
+명명되지 않은 비트 필드는 참조할 수 없으며 런타임에 해당 콘텐츠를 예측할 수 없습니다. 정렬 목적으로 "더미" 필드로 사용할 수 있습니다. 너비가 0으로 지정된 명명되지 않은 비트 필드의 경우 *struct-declaration-list* 에서 해당 필드 다음에 나오는 멤버의 스토리지가 **`int`** 경계에서 시작됩니다.
 
 또한 비트 필드는 비트 패턴을 포함할 만큼 충분히 길어야 합니다. 예를 들어 다음 두 문은 올바르지 않습니다.
 

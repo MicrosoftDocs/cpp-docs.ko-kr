@@ -1,13 +1,14 @@
 ---
+description: '자세한 정보: x64 스택 사용'
 title: x64 스택 사용
 ms.date: 12/17/2018
 ms.assetid: 383f0072-0438-489f-8829-cca89582408c
-ms.openlocfilehash: b1b1e0a8c30d5e24e81372912d5c488efce14841
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 564b5888f59d06199cd0f2c175b928c725e26e1e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218938"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275362"
 ---
 # <a name="x64-stack-usage"></a>x64 스택 사용
 
@@ -47,9 +48,9 @@ RSP의 현재 주소를 벗어난 모든 메모리가 휘발성으로 간주됩�
 
 ## <a name="malloc-alignment"></a>malloc 맞춤
 
-[malloc](../c-runtime-library/reference/malloc.md)은 기본 맞춤을 사용하고 할당된 메모리 양에 맞을 수 있는 개체를 저장하는 데 적절하게 맞춘 메모리를 반환하도록 보장됩니다. *기본 맞춤*은 맞춤 사양이 없는 구현에서 지원하는 가장 큰 맞춤보다 작거나 같은 맞춤입니다. (Visual C++에서는 **`double`** 또는 8바이트에 필요한 맞춤입니다. 64비트 플랫폼을 대상으로 하는 코드에서는 16바이트입니다.) 예를 들어 4바이트 할당은 4바이트 또는 더 작은 개체를 지원하는 경계에서 맞춥니다.
+[malloc](../c-runtime-library/reference/malloc.md)은 기본 맞춤을 사용하고 할당된 메모리 양에 맞을 수 있는 개체를 저장하는 데 적절하게 맞춘 메모리를 반환하도록 보장됩니다. *기본 맞춤* 은 맞춤 사양이 없는 구현에서 지원하는 가장 큰 맞춤보다 작거나 같은 맞춤입니다. (Visual C++에서는 **`double`** 또는 8바이트에 필요한 맞춤입니다. 64비트 플랫폼을 대상으로 하는 코드에서는 16바이트입니다.) 예를 들어 4바이트 할당은 4바이트 또는 더 작은 개체를 지원하는 경계에서 맞춥니다.
 
-Visual C++에서는 *확장 맞춤*을 사용하는 형식(*과다 정렬된* 형식이라고도 함)이 허용됩니다. 이 맞춤은. 예를 들어 SSE 형식 [__m128](../cpp/m128.md) 및 `__m256` 그리고 `__declspec(align( n ))`(여기서 `n`은 8보다 큼)을 사용하여 선언된 형식은 확장 맞춤을 사용합니다. 확장 맞춤이 필요한 개체에 적합한 경계에서의 메모리 맞춤은 `malloc`에서 보장하지 않습니다. 과다 정렬된 형식에 메모리를 할당하려면 [_aligned_malloc](../c-runtime-library/reference/aligned-malloc.md) 및 관련 함수를 사용합니다.
+Visual C++에서는 *확장 맞춤* 을 사용하는 형식(*과다 정렬된* 형식이라고도 함)이 허용됩니다. 이 맞춤은. 예를 들어 SSE 형식 [__m128](../cpp/m128.md) 및 `__m256` 그리고 `__declspec(align( n ))`(여기서 `n`은 8보다 큼)을 사용하여 선언된 형식은 확장 맞춤을 사용합니다. 확장 맞춤이 필요한 개체에 적합한 경계에서의 메모리 맞춤은 `malloc`에서 보장하지 않습니다. 과다 정렬된 형식에 메모리를 할당하려면 [_aligned_malloc](../c-runtime-library/reference/aligned-malloc.md) 및 관련 함수를 사용합니다.
 
 ## <a name="alloca"></a>alloca
 

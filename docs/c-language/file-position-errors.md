@@ -1,15 +1,16 @@
 ---
+description: '자세한 정보: 파일 위치 오류'
 title: 파일 위치 오류
 ms.date: 11/04/2016
 helpviewer_keywords:
 - file pointers [C++], file position errors
 ms.assetid: d5e59d8b-08c0-4927-a338-0b2d8234ce24
-ms.openlocfilehash: 3d581d86d6f08eee564feb6373a623512085ccca
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d29f8d86280427db915c016fea0fd80567913baf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62233659"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97196154"
 ---
 # <a name="file-position-errors"></a>파일 위치 오류
 

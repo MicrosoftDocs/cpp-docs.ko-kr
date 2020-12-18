@@ -1,4 +1,5 @@
 ---
+description: '자세한 정보: 시간 중심의 코드 성능 향상을 위한 팁'
 title: 시간 중심의 코드 성능 향상을 위한 팁
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - _lfind function
 - heap allocation, time-critical code performance
 ms.assetid: 3e95a8cc-6239-48d1-9d6d-feb701eccb54
-ms.openlocfilehash: a2cc8062368b89e38b5f96b3134742123af24310
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 82963b10f623030a65b4ee8631ae30671fd23342
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231483"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277455"
 ---
 # <a name="tips-for-improving-time-critical-code"></a>시간 중심의 코드 성능 향상을 위한 팁
 
