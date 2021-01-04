@@ -38,7 +38,7 @@
       href: ../code-quality/intrinsic-functions.md
     - name: 모범 사례 및 예제(SAL)
       href: ../code-quality/best-practices-and-examples-sal.md
-- name: _Analysis_assume을 사용하여 추가 코드 정보 지정
+- name: _Analysis_assume_ 을 사용하여 추가 코드 정보 지정
   href: ../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md
 - name: C++ Core Guidelines 검사기 경고
   items:
