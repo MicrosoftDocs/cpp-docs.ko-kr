@@ -2,12 +2,12 @@
 title: Visual Studio에서 대상 Linux 시스템에 연결
 description: Visual Studio C++ 프로젝트 내에서 원격 Linux 머신 또는 Linux용 Windows 하위 시스템에 연결하는 방법입니다.
 ms.date: 01/17/2020
-ms.openlocfilehash: da74d1c735a29304fdf46e920eac45580f386259
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: b1907cc4c1c80a9d8ffba06849c9a80f1a8fbfbe
+ms.sourcegitcommit: 387ce22a3b0137f99cbb856a772b5a910c9eba99
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92921791"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97645217"
 ---
 # <a name="connect-to-your-target-linux-system-in-visual-studio"></a>Visual Studio에서 대상 Linux 시스템에 연결
 
@@ -116,7 +116,7 @@ Linux 시스템에서 SSH를 아직 설정하지 않은 상태로 실행한 경�
 
 ## <a name="command-line-utility-for-the-connection-manager"></a>연결 관리자에 대한 명령줄 유틸리티  
 
-**Visual Studio 2019 버전 16.5 이상** : ConnectionManager.exe는 Visual Studio 외부에서 원격 개발 연결을 관리하는 명령줄 유틸리티입니다. 새 개발 컴퓨터를 프로비저닝하는 등의 작업에 유용합니다. 또는 연속 통합을 위해 Visual Studio를 설정하는 데 사용할 수 있습니다. ConnectionManager 명령에 대한 예제 및 전체 참조는 [ConnectionManager 참조](connectionmanager-reference.md)를 참조하세요.  
+**Visual Studio 2019 버전 16.5 이상**: ConnectionManager.exe는 Visual Studio 외부에서 원격 개발 연결을 관리하는 명령줄 유틸리티입니다. 새 개발 컴퓨터를 프로비저닝하는 등의 작업에 유용합니다. 또는 연속 통합을 위해 Visual Studio를 설정하는 데 사용할 수 있습니다. ConnectionManager 명령에 대한 예제 및 전체 참조는 [ConnectionManager 참조](connectionmanager-reference.md)를 참조하세요.  
 
 ::: moniker-end
 
@@ -124,7 +124,7 @@ Linux 시스템에서 SSH를 아직 설정하지 않은 상태로 실행한 경�
 
 ## <a name="tcp-port-forwarding"></a>TCP 포트 전달
 
-Visual Studio의 Linux 지원에는 TCP 포트 전달에 대한 종속성이 있습니다. 원격 시스템에 TCP 포트 전달이 사용하지 않도록 설정되어 있는 경우 **Rsync** 및 **gdbserver** 가 영향을 받습니다. 이 종속성의 영향을 받는 경우 이 [제안 티켓](https://developercommunity.visualstudio.com/idea/840265/dont-rely-on-ssh-tcp-port-forwarding-for-c-remote.html)을 Developer Community에서 추천할 수 있습니다.
+Visual Studio의 Linux 지원에는 TCP 포트 전달에 대한 종속성이 있습니다. 원격 시스템에 TCP 포트 전달이 사용하지 않도록 설정되어 있는 경우 **Rsync** 및 **gdbserver** 가 영향을 받습니다. 이 종속성의 영향을 받는 경우 이 [제안 티켓](https://developercommunity2.visualstudio.com/t/shDonshshtsh-shrelysh-s/840265?space=62)을 Developer Community에서 추천할 수 있습니다.
 
 rsync는 MSBuild 기반 Linux 프로젝트 및 CMake 프로젝트 모두에서 [IntelliSense에 사용할 원격 시스템의 헤더를 Windows에 복사](configure-a-linux-project.md#remote_intellisense)하는 데 사용됩니다. TCP 포트 전달을 사용하도록 설정할 수 없는 경우 원격 헤더의 자동 다운로드를 사용하지 않도록 설정합니다. 이 기능을 사용하지 않도록 설정하려면 **도구 > 옵션 > 플랫폼 간 > 연결 관리자 > 원격 헤더 IntelliSense 관리자** 를 사용합니다. 원격 시스템에 TCP 포트 전달이 사용하도록 설정되어 있지 않은 경우 IntelliSense의 원격 헤더 다운로드가 시작되면 다음 오류가 표시됩니다.
 
