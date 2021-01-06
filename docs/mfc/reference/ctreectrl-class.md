@@ -163,12 +163,12 @@ helpviewer_keywords:
 - CTreeCtrl [MFC], SortChildren
 - CTreeCtrl [MFC], SortChildrenCB
 ms.assetid: 96e20031-6161-4143-8c12-8d1816c66d90
-ms.openlocfilehash: e126863bebcc3cb8f878a8ece41ee8d9385c0afe
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 8b5c31138601c96ca7af530dbfb1d3517e3998a8
+ms.sourcegitcommit: 6183207b11575d7b44ebd7c18918e916a0d8c63d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97345019"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97951526"
 ---
 # <a name="ctreectrl-class"></a>CTreeCtrl Class
 
@@ -399,7 +399,7 @@ CImageList* CreateDragImage(HTREEITEM hItem);
 
 응용 프로그램은 항목을 끌 때 이미지 목록 함수를 사용 하 여 이미지를 표시 합니다.
 
-`CImageList`개체는 영구적 이며 완료 되 면 삭제 해야 합니다. 예를 들어:
+`CImageList`개체는 영구적 이며 완료 되 면 삭제 해야 합니다. 예를 들면 다음과 같습니다.
 
 [!code-cpp[NVC_MFC_CTreeCtrl#2](../../mfc/reference/codesnippet/cpp/ctreectrl-class_2.cpp)]
 
@@ -1503,7 +1503,7 @@ HTREEITEM MapAccIdToItem(UINT uAccId) const;
 
 ### <a name="remarks"></a>설명
 
-내게 필요한 옵션 지원 기능은 장애가 있는 사용자가 컴퓨터를 사용할 수 있도록 지 원하는 응용 프로그램입니다. 내게 필요한 옵션 식별자는 인터페이스에서 `IAccessible` 창에 있는 요소를 고유 하 게 지정 하는 데 사용 됩니다. 내게 필요한 옵션 식별자에 대 한 자세한 내용을 보려면 [Microsoft Developer Network](https://go.microsoft.com/fwlink/p/?linkid=56322)에서 "About Active Accessibility Support" 항목을 검색 하십시오.
+내게 필요한 옵션 지원 기능은 장애가 있는 사용자가 컴퓨터를 사용할 수 있도록 지 원하는 응용 프로그램입니다. 내게 필요한 옵션 식별자는 인터페이스에서 `IAccessible` 창에 있는 요소를 고유 하 게 지정 하는 데 사용 됩니다. Api에 대 한 자세한 내용은 `IAccessible` [Microsoft Active Accessibility](/windows/win32/winauto/microsoft-active-accessibility)를 참조 하세요.
 
 이 메서드는 Windows SDK에서 설명 하는 [TVM_MAPACCIDTOHTREEITEM](/windows/win32/Controls/tvm-mapaccidtohtreeitem) 메시지를 보냅니다.
 
@@ -1538,7 +1538,7 @@ UINT MapItemToAccID(HTREEITEM hItem) const;
 
 ### <a name="remarks"></a>설명
 
-내게 필요한 옵션 지원 기능은 장애가 있는 사용자가 컴퓨터를 사용할 수 있도록 지 원하는 응용 프로그램입니다. 내게 필요한 옵션 식별자는 인터페이스에서 `IAccessible` 창에 있는 요소를 고유 하 게 지정 하는 데 사용 됩니다. 내게 필요한 옵션 식별자에 대 한 자세한 내용을 보려면 [Microsoft Developer Network](https://go.microsoft.com/fwlink/p/?linkid=56322)에서 "About Active Accessibility Support" 항목을 검색 하십시오.
+내게 필요한 옵션 지원 기능은 장애가 있는 사용자가 컴퓨터를 사용할 수 있도록 지 원하는 응용 프로그램입니다. 내게 필요한 옵션 식별자는 인터페이스에서 `IAccessible` 창에 있는 요소를 고유 하 게 지정 하는 데 사용 됩니다. Api에 대 한 자세한 내용은 `IAccessible` [Microsoft Active Accessibility](/windows/win32/winauto/microsoft-active-accessibility)를 참조 하세요.
 
 이 메서드는 Windows SDK에서 설명 하는 [TVM_MAPHTREEITEMTOACCID](/windows/win32/Controls/tvm-maphtreeitemtoaccid) 메시지를 보냅니다.
 
@@ -2281,7 +2281,7 @@ void ShowInfoTip(HTREEITEM hItem);
 
 ### <a name="remarks"></a>설명
 
-도구 설명 및 infotips 간의 차이점에 대 한 자세한 내용을 보려면 [Microsoft Developer Network](https://go.microsoft.com/fwlink/p/?linkid=56322)에서 "도구 설명 및 infotips" 항목을 검색 하십시오.
+도구 설명 및 infotips 간의 차이점에 대 한 자세한 내용은 [도구 설명 및 infotips](/windows/win32/uxguide/ctrl-tooltips-and-infotips)을 참조 하세요.
 
 이 메서드는 Windows SDK에서 설명 하는 [TVM_SHOWINFOTIP](/windows/win32/Controls/tvm-showinfotip) 메시지를 보냅니다.
 
@@ -2339,7 +2339,7 @@ BOOL SortChildrenCB(LPTVSORTCB pSort);
 
 [!code-cpp[NVC_MFC_CTreeCtrl#39](../../mfc/reference/codesnippet/cpp/ctreectrl-class_47.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [MFC 샘플 CMNCTRL1](../../overview/visual-cpp-samples.md)<br/>
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>

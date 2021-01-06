@@ -5,12 +5,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - Parallel Diagnostic Tools [Concurrency Runtime]
 ms.assetid: b1a3f1d2-f5df-4f29-852e-906b3d8341fc
-ms.openlocfilehash: 44d885e8e6c7529bd15fa0aa2e7930773400361f
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: ac6afbbc2bfef3793e9685a7c9e1054b7d677bd8
+ms.sourcegitcommit: 6183207b11575d7b44ebd7c18918e916a0d8c63d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97172429"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97951525"
 ---
 # <a name="parallel-diagnostic-tools-concurrency-runtime"></a>병렬 진단 도구(동시성 런타임)
 
@@ -28,7 +28,7 @@ Visual Studio 디버거에는 병렬 **스택** 창, **병렬 작업** 창 및 *
 
 동시성 런타임는 ETW ( [ETW(Windows용 이벤트 추적)](/windows/win32/ETW/event-tracing-portal) )를 사용 하 여 다양 한 이벤트가 발생할 때 프로파일러와 같은 계측 도구에 알립니다. 이러한 이벤트에는 스케줄러가 활성화 또는 비활성화 되는 경우, 컨텍스트가 시작, 종료, 블록, 차단 또는 생성 될 때, 병렬 알고리즘이 시작 되거나 종료 되는 경우 등이 포함 됩니다.
 
-[동시성 시각화 도우미](/visualstudio/profiling/concurrency-visualizer) 와 같은 도구는이 기능을 사용 합니다. 따라서 일반적으로 이러한 이벤트를 직접 사용할 필요가 없습니다. 그러나 이러한 이벤트는 사용자 지정 프로파일러를 개발 하거나 [Xperf](https://go.microsoft.com/fwlink/p/?linkid=160628)와 같은 이벤트 추적 도구를 사용 하는 경우에 유용 합니다.
+[동시성 시각화 도우미](/visualstudio/profiling/concurrency-visualizer) 와 같은 도구는이 기능을 사용 합니다. 따라서 일반적으로 이러한 이벤트를 직접 사용할 필요가 없습니다. 그러나 이러한 이벤트는 사용자 지정 프로파일러를 개발 하거나 [Windows 성능 도구 키트](/windows-hardware/test/wpt/)와 같은 이벤트 추적 도구를 사용 하는 경우에 유용 합니다.
 
 동시성 런타임는 추적을 사용 하는 경우에만 이러한 이벤트를 발생 시킵니다. [Concurrency:: EnableTracing](reference/concurrency-namespace-functions.md#enabletracing) 함수를 호출 하 여 이벤트 추적 및 [동시성::D isabletracing](reference/concurrency-namespace-functions.md#disabletracing) 함수를 사용 하 여 추적을 사용 하지 않도록 설정 합니다.
 
@@ -64,6 +64,6 @@ Visual Studio 디버거에는 병렬 **스택** 창, **병렬 작업** 창 및 *
 
 런타임은 및를 호출 하는 횟수를 추적 합니다 `EnableTracing` `DisableTracing` . 따라서를 여러 번 호출 하는 경우 `EnableTracing` `DisableTracing` 추적을 사용 하지 않도록 설정 하기 위해 동일한 횟수의 횟수를 호출 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [동시성 런타임](../../parallel/concrt/concurrency-runtime.md)

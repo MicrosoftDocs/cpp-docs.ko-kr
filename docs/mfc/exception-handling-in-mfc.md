@@ -34,12 +34,12 @@ helpviewer_keywords:
 - function calls [MFC], results
 - out-of-memory exceptions [MFC]
 ms.assetid: 0926627d-2ba7-44a6-babe-d851a4a2517c
-ms.openlocfilehash: 15b0a054d3b1c0353c60c1c8dda03c9e704c077e
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 097f2bf635526769253ef81d5381be82605ab118
+ms.sourcegitcommit: 6183207b11575d7b44ebd7c18918e916a0d8c63d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97290754"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97951556"
 ---
 # <a name="exception-handling-in-mfc"></a>MFC의 예외 처리
 
@@ -129,7 +129,6 @@ C + + 예외를 직접 사용 하거나 MFC 예외 매크로를 사용 하는 �
 
 - [예외: MFC 매크로 및 c + + 예외 사용](exceptions-using-mfc-macros-and-cpp-exceptions.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[예외 및 오류 처리에 대 한 최신 c + + 모범 사례](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
-[방법: 고유한 사용자 지정 예외 클래스 만들기](https://go.microsoft.com/fwlink/p/?linkid=128045)
+[예외 및 오류 처리에 대 한 최신 c + + 모범 사례](../cpp/errors-and-exception-handling-modern-cpp.md)

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - CWaitCursor [MFC], CWaitCursor
 - CWaitCursor [MFC], Restore
 ms.assetid: 5dfae2ff-d7b6-4383-b0ad-91e0868c67b3
-ms.openlocfilehash: f9552dcd6f5304c96d550e153870f69d78d932ad
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 5d2323e3be78154c6a9d3ded55ab9e1a951d78b7
+ms.sourcegitcommit: 6183207b11575d7b44ebd7c18918e916a0d8c63d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97318470"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97951500"
 ---
 # <a name="cwaitcursor-class"></a>CWaitCursor 클래스
 
@@ -115,11 +115,11 @@ void Restore();
 
 [!code-cpp[NVC_MFCWindowing#64](../../mfc/reference/codesnippet/cpp/cwaitcursor-class_3.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CCmdTarget::BeginWaitCursor](../../mfc/reference/ccmdtarget-class.md#beginwaitcursor)<br/>
 [CCmdTarget:: EndWaitCursor](../../mfc/reference/ccmdtarget-class.md#endwaitcursor)<br/>
 [CCmdTarget:: RestoreWaitCursor](../../mfc/reference/ccmdtarget-class.md#restorewaitcursor)<br/>
 [CWinApp::D oWaitCursor](../../mfc/reference/cwinapp-class.md#dowaitcursor)<br/>
-[방법: Microsoft Foundation Class 응용 프로그램에서 마우스 커서 변경](https://go.microsoft.com/fwlink/p/?linkid=128044)
+[Visual C++를 사용 하 여 MFC의 창에 대 한 마우스 포인터를 변경 합니다.](/troubleshoot/cpp/change-mouse-pointer-window-mfc)

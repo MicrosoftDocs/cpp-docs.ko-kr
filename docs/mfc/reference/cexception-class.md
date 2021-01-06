@@ -13,12 +13,12 @@ helpviewer_keywords:
 - CException [MFC], Delete
 - CException [MFC], ReportError
 ms.assetid: cfacf14d-bfe4-4666-a5c7-38b800512920
-ms.openlocfilehash: 39d3266817ee1be20acde0b01c7c5d1aa90313cb
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 5aa5377315d526102f6358f36cb9ed6a60a133be
+ms.sourcegitcommit: 6183207b11575d7b44ebd7c18918e916a0d8c63d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97184662"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97951543"
 ---
 # <a name="cexception-class"></a>CException 클래스
 
@@ -227,9 +227,8 @@ else
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [CObject 클래스](cobject-class.md)<br/>
 [계층 구조 차트](../hierarchy-chart.md)<br/>
-[예외 처리](exception-processing.md)<br/>
-[방법: 고유한 사용자 지정 예외 클래스 만들기](https://go.microsoft.com/fwlink/p/?linkid=128045)
+[예외 처리](exception-processing.md)
