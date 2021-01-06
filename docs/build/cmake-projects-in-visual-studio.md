@@ -5,23 +5,23 @@ ms.date: 01/08/2020
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: 693179c6da368fa84a5ccb0ffaf2b1b1596972b8
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 8aa11d05aba2fe5f0e781dce2c4b801533bede26
+ms.sourcegitcommit: 6acb62dae8e46d9cfaea7c564a7135b2ca037889
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92922339"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97905233"
 ---
 # <a name="cmake-projects-in-visual-studio"></a>Visual Studio의 CMake 프로젝트
 
-CMake는 여러 플랫폼에서 실행되는 빌드 프로세스를 정의하는 플랫폼 간 오픈 소스 도구입니다. 이 문서에서는 CMake에 익숙하다고 가정합니다. [CMake로 소프트웨어 빌드, 테스트 및 패키징](https://cmake.org/)에서 자세히 알아볼 수 있습니다.
+[CMake](https://cmake.org)는 여러 플랫폼에서 실행되는 빌드 프로세스를 정의하는 플랫폼 간 오픈 소스 도구입니다. 이 문서에서는 CMake에 익숙하다고 가정합니다. CMake에 대한 자세한 내용은 [CMake 설명서](https://cmake.org/cmake/help/latest/index.html#)를 참조하세요. [CMake 자습서](https://cmake.org/cmake/help/latest/guide/tutorial/index.html#guide:CMake%20Tutorial)는 자세히 알아볼 수 있는 적절한 시작점입니다. 
 
 > [!NOTE]
 > CMake는 몇 번의 릴리스를 통해 Visual Studio와 더 긴밀히 통합되었습니다. 기본 설정된 버전의 Visual Studio에 대한 설명서를 보려면 **버전** 선택기 컨트롤을 사용하세요. 이 페이지의 목차 맨 위에 있습니다.
 
 ::: moniker range="msvc-160"
 
-**Windows용 C++ CMake 도구** 구성 요소는 [폴더 열기](open-folder-projects-cpp.md) 기능을 사용하여 IntelliSense 및 검색을 위해 CMake 프로젝트 파일(예: *CMakeLists.txt* )을 직접 사용할 수 있습니다. Ninja 및 Visual Studio 생성기 모두 지원됩니다. Visual Studio 생성기를 사용하는 경우 임시 프로젝트 파일을 생성하여 msbuild.exe에 전달합니다. 그러나 프로젝트는 IntelliSense 또는 검색 용도로 로드되지 않습니다. 기존 CMake 캐시를 가져올 수도 있습니다.
+**Windows용 C++ CMake 도구** 구성 요소는 [폴더 열기](open-folder-projects-cpp.md) 기능을 사용하여 IntelliSense 및 검색을 위해 CMake 프로젝트 파일(예: *CMakeLists.txt*)을 직접 사용할 수 있습니다. Ninja 및 Visual Studio 생성기 모두 지원됩니다. Visual Studio 생성기를 사용하는 경우 임시 프로젝트 파일을 생성하여 msbuild.exe에 전달합니다. 그러나 프로젝트는 IntelliSense 또는 검색 용도로 로드되지 않습니다. 기존 CMake 캐시를 가져올 수도 있습니다.
 
 ## <a name="installation"></a>설치
 
@@ -39,7 +39,7 @@ CMake는 여러 플랫폼에서 실행되는 빌드 프로세스를 정의하는
 
 - **솔루션 탐색기** 에서 폴더 구조와 파일이 표시됩니다.
 
-- Visual Studio에서 cmake.exe를 실행하고 기본(x64 디버그) 구성에 대한 CMake 캐시 파일( *CMakeCache.txt* )을 생성합니다. CMake 명령줄이 CMake의 추가 출력과 함께 **출력 창** 에 표시됩니다.
+- Visual Studio에서 cmake.exe를 실행하고 기본(x64 디버그) 구성에 대한 CMake 캐시 파일(*CMakeCache.txt*)을 생성합니다. CMake 명령줄이 CMake의 추가 출력과 함께 **출력 창** 에 표시됩니다.
 
 - IntelliSense, 검색 정보, 리팩터링 등을 사용할 수 있도록 하기 위해 Visual Studio에서 백그라운드로 소스 파일을 인덱싱합니다. 작업하는 동안 Visual Studio에서 편집기와 디스크의 변경 내용을 모니터링하여 인덱스가 소스와 동기화되도록 유지합니다.
 
@@ -66,7 +66,7 @@ CMake 프로젝트에서와 동일한 방식으로 각 프로젝트 폴더에서
 
 ## <a name="open-an-existing-cache"></a>기존 캐시 열기
 
-기존 CMake 캐시 파일( *CMakeCache.txt* )을 열면 Visual Studio에서 사용자의 캐시 및 빌드 트리를 관리하려고 시도하지 않습니다. 사용자 지정 또는 선호하는 도구가 CMake에서 프로젝트를 구성하는 방법을 완벽하게 제어할 수 있습니다. Visual Studio에서 기존 캐시를 열려면 **파일 > 열기 > CMake** 를 선택합니다. 그런 다음 기존 *CMakeCache.txt* 파일로 이동합니다.
+기존 CMake 캐시 파일(*CMakeCache.txt*)을 열면 Visual Studio에서 사용자의 캐시 및 빌드 트리를 관리하려고 시도하지 않습니다. 사용자 지정 또는 선호하는 도구가 CMake에서 프로젝트를 구성하는 방법을 완벽하게 제어할 수 있습니다. Visual Studio에서 기존 캐시를 열려면 **파일 > 열기 > CMake** 를 선택합니다. 그런 다음 기존 *CMakeCache.txt* 파일로 이동합니다.
 
 열려 있는 프로젝트에 기존 CMake 캐시를 추가할 수 있습니다. 이 작업은 새 구성을 추가하는 것과 동일한 방식입니다. 자세한 내용은 [Visual Studio에서 기존 캐시 열기](https://devblogs.microsoft.com/cppblog/open-existing-cmake-caches-in-visual-studio/)에 대한 블로그 게시물을 참조하세요.
 
@@ -74,11 +74,11 @@ CMake 프로젝트에서와 동일한 방식으로 각 프로젝트 폴더에서
 
 CMake 프로젝트를 빌드하려면 다음과 같이 선택할 수 있습니다.
 
-1. 일반 도구 모음에서 **구성** 드롭다운을 찾습니다. 기본적으로 "x64-Debug"가 표시될 수 있습니다. 기본 구성을 선택하고 **F5** 키를 누르거나 도구 모음에서 **실행** (녹색 삼각형) 단추를 클릭합니다. Visual Studio 솔루션과 마찬가지로 프로젝트가 자동으로 먼저 빌드됩니다.
+1. 일반 도구 모음에서 **구성** 드롭다운을 찾습니다. 기본적으로 "x64-Debug"가 표시될 수 있습니다. 기본 구성을 선택하고 **F5** 키를 누르거나 도구 모음에서 **실행**(녹색 삼각형) 단추를 클릭합니다. Visual Studio 솔루션과 마찬가지로 프로젝트가 자동으로 먼저 빌드됩니다.
 
 1. *CMakeLists.txt* 를 마우스 오른쪽 단추로 클릭하고, 바로 가기 메뉴에서 **빌드** 를 선택합니다. 폴더 구조에 여러 대상이 있는 경우 모든 대상 또는 특정 대상만 빌드하도록 선택할 수 있습니다.
 
-1. 주 메뉴에서 **빌드 > 모두 빌드** ( **F7** 키 또는 **Ctrl+Shift+B** )를 선택합니다. **일반** 도구 모음의 **시작 항목** 드롭다운에서 CMake 대상이 이미 선택되어 있는지 확인합니다.
+1. 주 메뉴에서 **빌드 > 모두 빌드**(**F7** 키 또는 **Ctrl+Shift+B**)를 선택합니다. **일반** 도구 모음의 **시작 항목** 드롭다운에서 CMake 대상이 이미 선택되어 있는지 확인합니다.
 
 ![CMake 빌드 메뉴 명령](media/cmake-build-menu.png "CMake 빌드 명령 메뉴")
 
@@ -154,7 +154,7 @@ Visual Studio 설치 관리자에서 CMake를 설치한 경우 다음 단계에 
 
 ::: moniker range="msvc-150"
 
-Visual Studio 2017에서는 [플랫폼 간 CMake 프로젝트](../linux/cmake-linux-project.md)를 포함하여 CMake에 대한 풍부한 지원을 제공합니다. **CMake용 Visual C++ 도구** 구성 요소에서 **폴더 열기** 기능을 사용하여 IDE에서 IntelliSense 및 검색을 수행하는 데 CMake 프로젝트 파일(예: *CMakeLists.txt* )을 직접 사용할 수 있습니다. Ninja 및 Visual Studio 생성기 모두 지원됩니다. Visual Studio 생성기를 사용하는 경우 임시 프로젝트 파일을 생성하여 msbuild.exe에 전달합니다. 그러나 프로젝트는 IntelliSense 또는 검색 용도로 로드되지 않습니다. 기존 CMake 캐시를 가져올 수도 있습니다.
+Visual Studio 2017에서는 [플랫폼 간 CMake 프로젝트](../linux/cmake-linux-project.md)를 포함하여 CMake에 대한 풍부한 지원을 제공합니다. **CMake용 Visual C++ 도구** 구성 요소에서 **폴더 열기** 기능을 사용하여 IDE에서 IntelliSense 및 검색을 수행하는 데 CMake 프로젝트 파일(예: *CMakeLists.txt*)을 직접 사용할 수 있습니다. Ninja 및 Visual Studio 생성기 모두 지원됩니다. Visual Studio 생성기를 사용하는 경우 임시 프로젝트 파일을 생성하여 msbuild.exe에 전달합니다. 그러나 프로젝트는 IntelliSense 또는 검색 용도로 로드되지 않습니다. 기존 CMake 캐시를 가져올 수도 있습니다.
 
 ## <a name="installation"></a>설치
 
@@ -217,11 +217,11 @@ Visual Studio는 *CMakeSettings.json* 이라는 파일을 사용하여 Cmake.exe
 
 CMake 프로젝트를 빌드하려면 다음과 같이 선택할 수 있습니다.
 
-1. 일반 도구 모음에서 **구성** 드롭다운을 찾습니다. 기본적으로 "Linux-Debug" 또는 "x64-Debug"가 표시될 것입니다. 기본 구성을 선택하고 **F5** 키를 누르거나 도구 모음에서 **실행** (녹색 삼각형) 단추를 클릭합니다. Visual Studio 솔루션과 마찬가지로 프로젝트가 자동으로 먼저 빌드됩니다.
+1. 일반 도구 모음에서 **구성** 드롭다운을 찾습니다. 기본적으로 "Linux-Debug" 또는 "x64-Debug"가 표시될 것입니다. 기본 구성을 선택하고 **F5** 키를 누르거나 도구 모음에서 **실행**(녹색 삼각형) 단추를 클릭합니다. Visual Studio 솔루션과 마찬가지로 프로젝트가 자동으로 먼저 빌드됩니다.
 
 1. *CMakeLists.txt* 를 마우스 오른쪽 단추로 클릭하여 바로 가기 메뉴에서 **빌드** 를 선택합니다. 폴더 구조에 여러 대상이 있는 경우 모든 대상 또는 특정 대상만 빌드하도록 선택할 수 있습니다.
 
-1. 주 메뉴에서 **빌드 > 솔루션 빌드** ( **F7** 키 또는 **Ctrl+Shift+B** )를 선택합니다. **일반** 도구 모음의 **시작 항목** 드롭다운에서 CMake 대상이 이미 선택되어 있는지 확인합니다.
+1. 주 메뉴에서 **빌드 > 솔루션 빌드**(**F7** 키 또는 **Ctrl+Shift+B**)를 선택합니다. **일반** 도구 모음의 **시작 항목** 드롭다운에서 CMake 대상이 이미 선택되어 있는지 확인합니다.
 
 ![CMake 빌드 메뉴 명령](media/cmake-build-menu.png "CMake 빌드 명령 메뉴")
 
