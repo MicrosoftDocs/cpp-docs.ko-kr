@@ -68,7 +68,18 @@
     - name: CMake 미리 정의된 구성 스키마 참조
       href: ../build/cmake-predefined-configuration-reference.md
 - name: 'vcpkg: C++용 패키지 관리자'
-  href: ../build/vcpkg.md
+  expanded: false
+  items:
+    - name: 'vcpkg: C++용 패키지 관리자'
+      href: ../build/vcpkg.md
+    - name: vcpkg 설치
+      href: ../build/install-vcpkg.md
+    - name: vcpkg 통합
+      href: ../build/integrate-vcpkg.md
+    - name: vcpkg를 사용하여 라이브러리 관리
+      href: ../build/manage-libraries-with-vcpkg.md
+    - name: vcpkg 명령줄 참조
+      href: ../build/vcpkg-command-line-reference.md
 - name: C++ Build Insights
   href: ../build-insights/get-started-with-cpp-build-insights.md
 - name: 미리 컴파일된 헤더 파일
