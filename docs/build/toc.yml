@@ -511,7 +511,7 @@
                   href: ../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md
                 - name: /errorReport(내부 컴파일러 오류 보고)
                   href: ../build/reference/errorreport-report-internal-compiler-errors.md
-                - name: /execution/charset(실행 문자 집합 설정)
+                - name: /execution-charset(실행 문자 집합 설정)
                   href: ../build/reference/execution-charset-set-execution-character-set.md
                 - name: '/experimental:module'
                   href: ../build/reference/experimental-module.md
