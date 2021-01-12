@@ -3,18 +3,17 @@ description: '자세히 알아보기: &lt; 값&gt;'
 title: '&lt;값> (c + + 문서 주석)'
 ms.date: 11/04/2016
 f1_keywords:
-- value
 - <value>
 helpviewer_keywords:
 - value C++ XML tag
 - <value> C++ XML tag
 ms.assetid: 0ba0a0d5-bcd7-4862-a169-83f2721ad80e
-ms.openlocfilehash: 110091607af7c973591384d44816f372f0d15b14
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 5ebab554a33ff0d90b9306f3aec56b2552e18c5a
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97187028"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98126327"
 ---
 # <a name="ltvaluegt"></a>&lt;value&gt;
 

@@ -4,17 +4,16 @@ title: '&lt;요약> (c + + 문서 주석)'
 ms.date: 11/04/2016
 f1_keywords:
 - <summary>
-- summary
 helpviewer_keywords:
 - <summary> C++ XML tag
 - summary C++ XML tag
 ms.assetid: cdeeefbb-1339-45d6-9002-10042a9a2726
-ms.openlocfilehash: 73e36367ff1a36f2b030525ea22f634ae74b64a4
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 3003a3226a67d864be1a07a47151e7003c5514a4
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97230226"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98126340"
 ---
 # <a name="ltsummarygt"></a>&lt;summary&gt;
 

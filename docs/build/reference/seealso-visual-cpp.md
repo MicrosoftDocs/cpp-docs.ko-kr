@@ -4,17 +4,16 @@ title: '&lt;seealso> (c + + 문서 주석)'
 ms.date: 11/04/2016
 f1_keywords:
 - <seealso>
-- seealso
 helpviewer_keywords:
 - seealso C++ XML tag
 - <seealso> C++ XML tag
 ms.assetid: cb33d100-9c50-4485-8d0c-573429eff155
-ms.openlocfilehash: 70f5f0147ff56dd6327e99f073f80c28a7cce539
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 0d976d2f7e08690d1fc0209eaf399f2368930327
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97224727"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98126197"
 ---
 # <a name="ltseealsogt"></a>&lt;seealso&gt;
 

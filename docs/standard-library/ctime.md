@@ -4,16 +4,15 @@ title: '&lt;ctime&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <ctime>
-- std::<ctime>
 helpviewer_keywords:
 - ctime header
 ms.assetid: c1f7d4a4-4bfe-4e35-92cb-f63dbd3c39a8
-ms.openlocfilehash: 68b165c2abeee91b9880e91f8cf67750e7a2a5e1
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 3ebf4849f990f7e0ae835fca88a6b38a8ca1838d
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97233151"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98126704"
 ---
 # <a name="ltctimegt"></a>&lt;ctime&gt;
 

@@ -3,17 +3,16 @@ description: '자세히 알아보기: &lt; 제한&gt;'
 title: '&lt;limits&gt;'
 ms.date: 11/04/2016
 f1_keywords:
-- limits/std::<limits>
 - <limits>
 helpviewer_keywords:
 - limits header
 ms.assetid: e07d6379-5b00-4a3d-a789-40d41538b59e
-ms.openlocfilehash: 5347a5035e3650a2685d3be9166b41506fc14b1f
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 23601b4b7f7ea06071a6b1f5fbd87ce0a0babce3
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97312841"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98126392"
 ---
 # <a name="ltlimitsgt"></a>&lt;limits&gt;
 

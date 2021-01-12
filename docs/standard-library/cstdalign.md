@@ -4,7 +4,6 @@ title: '&lt;cstdalign&gt;'
 ms.date: 07/11/2019
 f1_keywords:
 - <cstdalign>
-- cstdalign
 - __alignas_is_defined
 - __alignof_is_defined
 helpviewer_keywords:
@@ -12,12 +11,12 @@ helpviewer_keywords:
 - __alignas_is_defined
 - __alignof_is_defined
 ms.assetid: 9d570924-d299-4225-9a58-8c4c820f5903
-ms.openlocfilehash: 149893b33ead3e66223b9124ff7c1b6346929799
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 7727f75ad0627c2a22b856631a776a2ee5426271
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97324750"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98126613"
 ---
 # <a name="ltcstdaligngt"></a>&lt;cstdalign&gt;
 
@@ -32,7 +31,7 @@ ms.locfileid: "97324750"
 
 **네임스페이스:** std
 
-## <a name="macros"></a>Macros
+## <a name="macros"></a>매크로
 
 | 매크로 | 설명 |
 | - | - |

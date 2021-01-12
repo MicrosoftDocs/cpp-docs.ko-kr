@@ -4,16 +4,15 @@ title: '&lt;ios&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <ios>
-- ios/std::<ios>
 helpviewer_keywords:
 - ios header
 ms.assetid: d3d4c161-2f37-4f04-93cc-0a2a89984a9c
-ms.openlocfilehash: d9ea336c3dc36b6f9afa76d00496965bb860d1be
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 9904c91c46eb34bc278a0ce877e157f01a6f9a26
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97231409"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98126041"
 ---
 # <a name="ltiosgt"></a>&lt;ios&gt;
 
@@ -32,7 +31,7 @@ Iostreams 작업의 여러 기본 형식 및 함수를 정의합니다. 이 헤�
 
 대부분의 함수는 조작자입니다. 에 선언 된 조작자는 \<ios> [ios_base](../standard-library/ios-base-class.md)클래스의 인수 개체에 저장 된 값을 변경 합니다. 다른 조작자는이 클래스에서 파생 된 형식의 개체에 의해 제어 되는 스트림 작업을 수행 합니다 (예: 클래스 템플릿 [basic_istream](../standard-library/basic-istream-class.md) 또는 [basic_ostream](../standard-library/basic-ostream-class.md)의 특수화). 예를 들어 [noskipws](../standard-library/ios-functions.md#noskipws)(**str**)는 `ios_base::skipws` 이러한 형식 중 하나일 수 있는 개체의 형식 플래그를 지웁니다 `str` .
 
-`ios_base`에서 파생 클래스에 대해 제공되는 특수 삽입 및 추출 작업을 통해 출력 스트림에 삽입하거나 입력 스트림에서 추출하여 조작자를 호출할 수도 있습니다. 예를 들어:
+`ios_base`에서 파생 클래스에 대해 제공되는 특수 삽입 및 추출 작업을 통해 출력 스트림에 삽입하거나 입력 스트림에서 추출하여 조작자를 호출할 수도 있습니다. 예를 들면 다음과 같습니다.
 
 ```cpp
 istr>> noskipws;
@@ -61,7 +60,7 @@ istr>> noskipws;
 |[dec](../standard-library/ios-functions.md#dec)|정수 변수가 밑수 10 표기법으로 표시되도록 지정합니다.|
 |[defaultfloat](../standard-library/ios-functions.md#ios_defaultfloat)|부동 소수점 값에 기본 표시 형식을 사용하도록 `ios_base` 개체의 플래그를 구성합니다.|
 |[fixed](../standard-library/ios-functions.md#fixed)|부동 소수점 숫자가 고정 Decimal 표기법으로 표시되도록 지정합니다.|
-|[16 진수](../standard-library/ios-functions.md#hex)|정수 변수가 밑수 16 표기법으로 표시되도록 지정합니다.|
+|[hex](../standard-library/ios-functions.md#hex)|정수 변수가 밑수 16 표기법으로 표시되도록 지정합니다.|
 |[hexfloat](../standard-library/ios-functions.md#hexfloat)|
 |[internal](../standard-library/ios-functions.md#internal)|숫자의 부호를 왼쪽에 맞추고 숫자를 오른쪽에 맞춥니다.|
 |[비어](../standard-library/ios-functions.md#left)|너비가 출력 너비보다 작은 텍스트를 왼쪽에 여백을 두고 스트림 플러시에 표시합니다.|

@@ -4,15 +4,14 @@ title: '&lt;가는 문자&gt;'
 ms.date: 07/17/2019
 f1_keywords:
 - <cuchar>
-- cuchar
 helpviewer_keywords:
 - cuchar header
-ms.openlocfilehash: 795b238966abdd73ba925ce2886cce97e612e919
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 70b31165115b1101b412d590a69eff90c1cac6b2
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97233047"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98126691"
 ---
 # <a name="ltcuchargt"></a>&lt;가는 문자&gt;
 

@@ -3,24 +3,22 @@ description: '자세히 알아보기: &lt; istream&gt;'
 title: '&lt;istream&gt;'
 ms.date: 11/04/2016
 f1_keywords:
-- istream/std::<istream>
 - <istream>
-- std::<istream>
 helpviewer_keywords:
 - istream header
 ms.assetid: efcf24e4-05d1-4719-ab0b-9e7ebe845d89
-ms.openlocfilehash: c897441eef935cd6ef5a8b4e9f4676d06a57e1af
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 9b9b647b044cd0333349931285c4bffce000d062
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97277819"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98126535"
 ---
 # <a name="ltistreamgt"></a>&lt;istream&gt;
 
 Iostreams의 추출 중재 클래스 템플릿 및 삽입과 추출를 모두 중재 하는 클래스 템플릿 basic_iostream을 정의 basic_istream 합니다. 헤더에서 관련 조작자도 정의합니다. 이 헤더 파일은 일반적으로 다른 iostreams 헤더에 의해 포함되며, 직접 포함해야 하는 경우는 거의 없습니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```cpp
 #include <istream>

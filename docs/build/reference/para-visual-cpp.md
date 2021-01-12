@@ -4,17 +4,16 @@ title: '&lt;para>'
 ms.date: 11/04/2016
 f1_keywords:
 - <para>
-- para
 helpviewer_keywords:
 - <para> C++ XML tag
 - para C++ XML tag
 ms.assetid: 35f2a1b3-bc14-4f13-bcb0-c39ccbf74d59
-ms.openlocfilehash: f01336fc2bf30f7b6bfa3fce3152ac1ba9d0614e
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 52df263f20dd9c34eda382e882d109b745a20357
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97226170"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98126275"
 ---
 # <a name="ltparagt"></a>&lt;para&gt;
 

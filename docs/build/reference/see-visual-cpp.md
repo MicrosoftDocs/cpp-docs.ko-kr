@@ -4,17 +4,16 @@ title: '&lt;> (c + + 문서 주석)을 참조 하세요.'
 ms.date: 11/04/2016
 f1_keywords:
 - <see>
-- see
 helpviewer_keywords:
 - <see> C++ XML tag
 - see C++ XML tag
 ms.assetid: 20ef66f4-b278-45cf-8613-63919edf5720
-ms.openlocfilehash: b4f8f9a2312a3db1ce2840209668b7b23837ab31
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: c1de0ec23854d159d661cd1b62df97169eab7317
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97224740"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98126223"
 ---
 # <a name="ltseegt"></a>&lt;see&gt;
 

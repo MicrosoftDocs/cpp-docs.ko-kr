@@ -3,6 +3,7 @@ description: '자세히 알아보기: &lt; 비율&gt;'
 title: '&lt;ratio&gt;'
 ms.date: 11/04/2016
 f1_keywords:
+- <ratio>
 - ratio/std::mega
 - ratio/std::peta
 - ratio/std::ratio_greater
@@ -16,7 +17,6 @@ f1_keywords:
 - ratio/std::centi
 - ratio/std::ratio_greater_equal
 - ratio/std::ratio_subtract
-- <ratio>
 - ratio/std::atto
 - ratio/std::tera
 - ratio/std::milli
@@ -32,18 +32,18 @@ f1_keywords:
 - ratio/std::deci
 - ratio/std::deca
 ms.assetid: 8543e912-2d84-45ea-b3c0-bd7bfacee405
-ms.openlocfilehash: 8fab74cde47e4078781b665044bc2becd0a9dac3
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: a32a8252347de1e6d7bfd5ffd29927c779ce8489
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97337944"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98126561"
 ---
 # <a name="ltratiogt"></a>&lt;ratio&gt;
 
 \<ratio>컴파일 시간에 유리수를 저장 하 고 조작 하는 데 사용 되는 상수와 템플릿을 정의 하려면 표준 헤더를 포함 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```cpp
 #include <ratio>

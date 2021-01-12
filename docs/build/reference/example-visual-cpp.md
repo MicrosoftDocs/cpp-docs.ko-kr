@@ -4,17 +4,16 @@ title: '&lt;예제> (c + + 문서 주석)'
 ms.date: 11/04/2016
 f1_keywords:
 - <example>
-- example
 helpviewer_keywords:
 - <example> C++ XML tag
 - example C++ XML tag
 ms.assetid: c821aaa7-7ea7-4bee-9922-6705ad57f877
-ms.openlocfilehash: 8ffa51be888fb631db6ec1ecd145177ea346084f
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 61624efd34c02d75c7109a3211914b2018c513ae
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97200834"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98125885"
 ---
 # <a name="ltexamplegt"></a>&lt;example&gt;
 

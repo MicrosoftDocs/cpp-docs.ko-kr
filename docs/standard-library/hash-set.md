@@ -4,16 +4,15 @@ title: '&lt;hash_set&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <hash_set>
-- std::<hash_set>
 helpviewer_keywords:
 - hash_set header
 ms.assetid: 6b556967-c808-4869-9b4d-f9e030864435
-ms.openlocfilehash: 353ec0a4f57662380e912893ca60c93025e577af
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: aec05414d11bd5312febf4dd61b71db1b3f04452
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97231788"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98125963"
 ---
 # <a name="lthash_setgt"></a>&lt;hash_set&gt;
 

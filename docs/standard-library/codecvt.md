@@ -3,17 +3,16 @@ description: '자세히 알아보기: &lt; codecvt&gt;'
 title: '&lt;codecvt&gt;'
 ms.date: 11/04/2016
 f1_keywords:
-- codecvt
 - <codecvt>
 helpviewer_keywords:
 - codecvt header
 ms.assetid: d44ee229-00d5-4761-9b48-0c702122789d
-ms.openlocfilehash: 454637427b4a2c058b8ee8cf4bb5b8bc99215e74
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 739389fa432a2eef86533951385078e13bc05684
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97233970"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98126635"
 ---
 # <a name="ltcodecvtgt"></a>&lt;codecvt&gt;
 

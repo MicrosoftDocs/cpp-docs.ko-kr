@@ -3,20 +3,20 @@ description: '자세히 알아보기: &lt; chrono&gt;'
 title: '&lt;chrono&gt;'
 ms.date: 05/07/2019
 f1_keywords:
+- <chrono>
 - chrono/std::chrono::nanoseconds
 - chrono/std::chrono::minutes
 - chrono/std::chrono::seconds
-- <chrono>
 - chrono/std::chrono::hours
 - chrono/std::chrono::milliseconds
 - chrono/std::chrono::microseconds
 ms.assetid: 844de749-f306-482e-89bc-6f53c99c8324
-ms.openlocfilehash: a59ad0d88a1d9266e61a8ef49e7cf9184da803b3
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: cc425d99d41d23fe25d2f66888240f9ea9a93cfb
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97325143"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98126665"
 ---
 # <a name="ltchronogt"></a>&lt;chrono&gt;
 
@@ -50,7 +50,7 @@ Visual Studio 2015부터의 구현은 `steady_clock` 조성에 및 단 조성에
 |[system_clock 구조체](../standard-library/system-clock-structure.md)|시스템의 실시간 시계를 기반으로 하는 *시계 형식* 을 나타냅니다.|
 |[treat_as_floating_point 구조체](../standard-library/treat-as-floating-point-structure.md)|형식이 부동 소수점 형식으로 처리될 수 있는지 여부를 지정합니다.|
 
-### <a name="functions"></a>함수
+### <a name="functions"></a>Functions
 
 |Name|설명|
 |-|-|

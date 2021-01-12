@@ -4,23 +4,21 @@ title: '&lt;locale&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <locale>
-- locale/std::<locale>
-- std::<locale>
 helpviewer_keywords:
 - locale header
 ms.assetid: ca56f9d2-7128-44da-8df1-f4c78c17fbf2
-ms.openlocfilehash: dce8cb130269450e1b7996b61504e59dc372e3b7
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 5e699bfd580c4676ae51aeea246e318c37a82d98
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97277806"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98126372"
 ---
 # <a name="ltlocalegt"></a>&lt;locale&gt;
 
 C + + 프로그램이 문자 분류 및 문자열 데이터 정렬에 대 한 국제화 지원을 비롯 하 여 숫자, 통화 및 calendric 데이터의 표현과 서식 지정과 관련 된 다양 한 문화권 규칙을 캡슐화 하 고 조작 하는 데 사용할 수 있는 클래스 템플릿 및 함수를 정의 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```cpp
 #include <locale>

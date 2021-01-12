@@ -4,18 +4,16 @@ title: '&lt;functional&gt;'
 ms.date: 02/21/2019
 f1_keywords:
 - <functional>
-- functional/std::<functional>
-- std::<functional>
 helpviewer_keywords:
 - functors
 - functional header
 ms.assetid: 7dd463e8-a29f-49bc-aedd-8fa53b54bfbc
-ms.openlocfilehash: a13ddeb7bdb45b02bb8b35052e34a3b9601c6fec
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: fe9a42c2992557bd9cf1237a6fe66c4fbfcc232d
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97232150"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98126132"
 ---
 # <a name="ltfunctionalgt"></a>&lt;functional&gt;
 
@@ -103,7 +101,7 @@ C + + 11, c + + 14 및 c + + 17에 추가 된 기능은 다음과 같습니다.
 |[reference_wrapper](../standard-library/reference-wrapper-class.md)|참조를 래핑하는 클래스입니다.|
 |[unary_negate](../standard-library/unary-negate-class.md)|지정 된 단항 함수의 반환 값을 부정 하는 멤버 함수를 제공 하는 클래스 템플릿입니다.<br/> C + + 17에서 사용 되지 않습니다.  |
 
-### <a name="functions"></a>함수
+### <a name="functions"></a>Functions
 
 |Name|설명|
 |-|-|
@@ -141,7 +139,7 @@ C + + 11, c + + 14 및 c + + 17에 추가 된 기능은 다음과 같습니다.
 |[logical_not](../standard-library/logical-not-struct.md)|이 클래스는 지정된 값 형식의 요소에 대해 부정 논리 연산을 수행하고 결과가 참 또는 거짓인지 테스트하는 미리 정의된 함수 개체를 제공합니다.|
 |[logical_or](../standard-library/logical-or-struct.md)|이 클래스는 지정된 값 형식의 요소에 대해 분리 논리 연산을 수행하고 결과가 참 또는 거짓인지 테스트하는 미리 정의된 함수 개체를 제공합니다.|
 |[minus](../standard-library/minus-struct.md)|이 클래스는 지정된 값 형식의 요소에 대해 빼기 산술 연산을 수행하는 미리 정의된 함수 개체를 제공합니다.|
-|[T:System.Security.Cryptography.RSA](../standard-library/modulus-struct.md)|이 클래스는 지정된 값 형식의 요소에 대해 모듈러스 산술 연산을 수행하는 미리 정의된 함수 개체를 제공합니다.|
+|[모듈러스](../standard-library/modulus-struct.md)|이 클래스는 지정된 값 형식의 요소에 대해 모듈러스 산술 연산을 수행하는 미리 정의된 함수 개체를 제공합니다.|
 |[multiplies](../standard-library/multiplies-struct.md)|이 클래스는 지정된 값 형식의 요소에 대해 곱하기 산술 연산을 수행하는 미리 정의된 함수 개체를 제공합니다.|
 |[negate](../standard-library/negate-struct.md)|이 클래스는 요소 값의 부정을 반환하는 미리 정의된 함수 개체를 제공합니다.|
 |[not_equal_to](../standard-library/not-equal-to-struct.md)|지정된 형식의 값이 해당 형식의 다른 값과 같지 않은지 테스트하는 이항 조건자입니다.|
