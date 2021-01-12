@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - auto keyword [C++]
 ms.assetid: e9d495d7-601c-4547-b897-998389a311f4
-ms.openlocfilehash: 2237c8aa3cb1b1078a8b90ba5a3ba6cba0a7134b
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 061ddac33af4b8e1587b2ab1035d9f96ba18b108
+ms.sourcegitcommit: 14d6ae0d527d05d153e26463d4cd5ada0f43e864
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97319471"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98104754"
 ---
 # <a name="auto-c"></a>`auto`(C++)
 
@@ -22,7 +22,7 @@ ms.locfileid: "97319471"
 > [!NOTE]
 > C + + 표준에서는이 키워드의 원래 의미와 수정 된 의미를 정의 합니다. Visual Studio 2010 이전에는 **`auto`** 키워드에서 *자동* 저장소 클래스의 변수, 즉 로컬 수명을 가진 변수를 선언 합니다. Visual Studio 2010부터 **`auto`** 키워드는 해당 형식이 선언의 초기화 식에서 추론 되는 변수를 선언 합니다. [ `/Zc:auto`&#91; &#93;](../build/reference/zc-auto-deduce-variable-type.md) 컴파일러 옵션은 키워드의 의미를 제어 합니다 **`auto`** .
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 > **`auto`***선언 자* *이니셜라이저***`;`**
 
@@ -50,7 +50,16 @@ ms.locfileid: "97319471"
 
 키워드를 사용 하려면 **`auto`** 형식 대신이 키워드를 사용 하 여 변수를 선언 하 고 초기화 식을 지정 합니다. 또한, **`auto`** **`const`** **`volatile`** , 포인터 ( **`*`** ), 참조 ( **`&`** ) 및 rvalue 참조 ( **`&&`** )와 같은 지정자 및 선언 자를 사용 하 여 키워드를 수정할 수 있습니다. 컴파일러는 초기화 식을 계산하고 해당 정보를 사용하여 변수의 형식을 추론합니다.
 
-초기화 식은 할당 (등호 구문), 직접 초기화 (함수 스타일 구문), [`operator new`](new-operator-cpp.md) 식 또는 초기화 식이 [범위 기반 `for` 문 (c + +)](../cpp/range-based-for-statement-cpp.md) 문의 *범위 선언* 매개 변수가 될 수 있습니다. 자세한 내용은이 문서의 뒷부분에 나오는 [이니셜라이저](../cpp/initializers.md) 및 코드 예제를 참조 하세요.
+**`auto`** 초기화 식은 다음과 같은 여러 가지 형식을 사용할 수 있습니다.
+
+- 과 같은 범용 초기화 구문 `auto a { 42 };` 입니다.
+- 와 같은 할당 구문 `auto b = 0;` 입니다.
+- 위의 두 가지 형태 (예:)를 결합 하는 범용 할당 구문 `auto c = { 3.14156 };` 입니다.
+- 직접 초기화 또는 생성자 스타일 구문 (예:) `auto d( 1.41421f );` .
+
+자세한 내용은이 문서의 뒷부분에 나오는 [이니셜라이저](../cpp/initializers.md) 및 코드 예제를 참조 하세요.
+
+**`auto`** 를 사용 하 여 범위 기반 문에 있는 루프 매개 변수를 선언 하는 경우 **`for`** 와 같이 다른 초기화 구문을 사용 `for (auto& i : iterable) do_action(i);` 합니다. 자세한 내용은 [범위 기반 `for` 문 (c + +)](../cpp/range-based-for-statement-cpp.md)을 참조 하세요.
 
 **`auto`** 키워드는 형식에 대 한 자리 표시자 이지만 자체 형식이 아닙니다. 따라서 키워드는 **`auto`** [`sizeof`](../cpp/sizeof-operator.md) 및 (c + +/cli의 경우)와 같은 캐스트 또는 연산자에서 사용할 수 없습니다 [`typeid`](../extensions/typeid-cpp-component-extensions.md) .
 
@@ -135,7 +144,7 @@ int main()
 |[C3538](../error-messages/compiler-errors-2/compiler-error-c3538.md)|키워드를 사용 하 여 선언 된 선언 자 목록의 모든 기호는 **`auto`** 동일한 형식으로 확인 되어야 합니다. 자세한 내용은 [선언 및 정의](declarations-and-definitions-cpp.md)를 참조 하세요.|
 |[C3540](../error-messages/compiler-errors-2/compiler-error-c3540.md), [C3541](../error-messages/compiler-errors-2/compiler-error-c3541.md)|[Sizeof](../cpp/sizeof-operator.md) 및 [typeid](../extensions/typeid-cpp-component-extensions.md) 연산자는 키워드를 사용 하 여 선언 된 기호에 적용할 수 없습니다 **`auto`** .|
 
-## <a name="examples"></a>예제
+## <a name="examples"></a>예
 
 이러한 코드 조각은 키워드를 사용할 수 있는 몇 가지 방법을 보여 줍니다 **`auto`** .
 
@@ -219,9 +228,9 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[키워드](../cpp/keywords-cpp.md)<br/>
+[C++ 키워드](../cpp/keywords-cpp.md)<br/>
 [`/Zc:auto` (변수 형식 추론)](../build/reference/zc-auto-deduce-variable-type.md)<br/>
 [`sizeof` 연산자](../cpp/sizeof-operator.md)<br/>
 [`typeid`](../extensions/typeid-cpp-component-extensions.md)<br/>

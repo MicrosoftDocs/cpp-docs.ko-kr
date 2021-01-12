@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Conformance compiler options
 - Zc compiler options [C++]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
-ms.openlocfilehash: 13e06cd75f1ee684c2ee1ad6239aeb77b805675e
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 15027182d632c1076c78e2e8a1335e1059ac7e3b
+ms.sourcegitcommit: 14d6ae0d527d05d153e26463d4cd5ada0f43e864
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041525"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98104767"
 ---
 # <a name="zc-conformance"></a>`/Zc` 규칙
 
@@ -33,10 +33,10 @@ Visual Studio에서 표준과 호환 되지 않는 C 또는 c + +에 대 한 확
 |--|--|
 | [`/Zc:alignedNew`](zc-alignednew.md) | C + + 17 오버 정렬 된 동적 할당을 사용 합니다 (기본적으로 c + + 17의 경우). |
 | [`/Zc:auto`](zc-auto-deduce-variable-type.md) | 에 대해 새로운 표준 c + +의 의미를 적용 **`auto`** 합니다 (기본적으로 설정). |
-| [`/Zc__cplusplus`](zc-cplusplus.md) | 매크로를 사용 `__cplusplus` 하 여 지원 되는 표준 (기본적으로 해제)을 보고 합니다. |
+| [`/Zc:__cplusplus`](zc-cplusplus.md) | 매크로를 사용 `__cplusplus` 하 여 지원 되는 표준 (기본적으로 해제)을 보고 합니다. |
 | [`/Zc:externConstexpr`](zc-externconstexpr.md) | 변수에 대해 외부 링크를 사용 하도록 설정 **`constexpr`** 합니다 (기본적으로 해제). |
 | [`/Zc:forScope`](zc-forscope-force-conformance-in-for-loop-scope.md) | 표준 c + + 범위 지정 규칙을 적용 **`for`** 합니다 (기본적으로 설정). |
-| [`/ZcimplicitNoexcept`](zc-implicitnoexcept-implicit-exception-specifiers.md) | **`noexcept`** 필수 함수 (기본적으로 설정)에서 암시적으로 사용 하도록 설정 합니다. |
+| [`/Zc:implicitNoexcept`](zc-implicitnoexcept-implicit-exception-specifiers.md) | **`noexcept`** 필수 함수 (기본적으로 설정)에서 암시적으로 사용 하도록 설정 합니다. |
 | [`/Zc:inline`](zc-inline-remove-unreferenced-comdat.md) | 참조 되지 않은 함수 또는 데이터는 COMDAT 이거나 내부 링크만 있는 경우 (기본적으로 해제 됨) 제거 합니다. |
 | [`/Zc:noexceptTypes`](zc-noexcepttypes.md) | C + + 17 규칙을 적용 **`noexcept`** 합니다 (c + + 17 이상에서는 기본적으로 설정). |
 | [`/Zc:preprocessor`](zc-preprocessor.md) | 새로운 규격 전처리기 (C11/C17를 제외 하 고 기본적으로 해제)를 사용 합니다. |
@@ -53,7 +53,7 @@ Visual Studio에서 표준과 호환 되지 않는 C 또는 c + +에 대 한 확
 
 Visual C++의 규칙과 관련된 문제에 대한 자세한 내용은 [Nonstandard Behavior](../../cpp/nonstandard-behavior.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
-[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)
+[MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)

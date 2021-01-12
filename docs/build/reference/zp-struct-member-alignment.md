@@ -1,7 +1,7 @@
 ---
 description: 자세한 정보:/Zp (구조체 멤버 맞춤)
 title: /Zp(구조체 멤버 맞춤)
-ms.date: 04/04/2019
+ms.date: 01/08/2021
 f1_keywords:
 - /zp
 - VC.Project.VCCLCompilerTool.StructMemberAlignment
@@ -12,18 +12,18 @@ helpviewer_keywords:
 - /Zp compiler option [C++]
 - -Zp compiler option [C++]
 ms.assetid: 5242f656-ed9b-48a3-bc73-cfcf3ed2520f
-ms.openlocfilehash: b2029ebded53bcae1b44b5cd72bf59494e58ec4b
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 8d29c442726aff9503a42378fce6a7b8b09526ed
+ms.sourcegitcommit: 14d6ae0d527d05d153e26463d4cd5ada0f43e864
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97224311"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98104780"
 ---
 # <a name="zp-struct-member-alignment"></a>/Zp(구조체 멤버 맞춤)
 
 구조체의 멤버를 메모리에 압축 하 고 모듈의 모든 구조에 대해 동일한 압축을 지정 하는 방법을 제어 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 > **`/Zp`**[**`1`**|**`2`**|**`4`**|**`8`**|**`16`**]
 
@@ -44,9 +44,9 @@ ms.locfileid: "97224311"
 특정 맞춤 요구 사항이 있는 경우가 아니면이 옵션을 사용 하지 마세요.
 
 > [!WARNING]
-> Windows SDK 집합의 c + + 헤더는 **`/Zp8`** 내부적으로 압축 하는 것으로 가정 합니다. **`/Zp`** Windows SDK 헤더 내에서 설정을 변경 하면 메모리 손상이 발생할 수 있습니다. 헤더는 **`/Zp`** 명령줄에서 설정 하는 옵션의 영향을 받지 않습니다.
+> Windows SDK의 C/c + + 헤더는 **`/Zp8`** 내부적으로 압축 하는 것으로 가정 합니다. 명령줄에서를 사용 하거나를 사용 하 여 Windows SDK 헤더를 포함 하는 경우 기본값에서 설정을 변경 하지 마세요 **`/Zp`** `#pragma pack` . 그렇지 않으면 응용 프로그램에서 런타임에 메모리 손상을 일으킬 수 있습니다.
 
-를 사용 하 여 [`pack`](../../preprocessor/pack.md) 구조체 압축을 제어할 수도 있습니다. 정렬에 대한 자세한 내용은 다음을 참조하십시오.
+[ `pack` Pragma](../../preprocessor/pack.md) 를 사용 하 여 구조체 압축을 제어할 수도 있습니다. 정렬에 대한 자세한 내용은 다음을 참조하십시오.
 
 - [`align`](../../cpp/align-cpp.md)
 
@@ -68,7 +68,7 @@ ms.locfileid: "97224311"
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.StructMemberAlignment%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [MSVC 컴파일러 옵션](compiler-options.md) \
 [MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)
