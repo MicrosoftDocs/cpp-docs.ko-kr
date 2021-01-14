@@ -2,12 +2,12 @@
 description: '자세한 정보: ARM64 ABI 규칙 개요'
 title: ARM64 ABI 규칙 개요
 ms.date: 03/27/2019
-ms.openlocfilehash: fbdb709eaa960446bb76712962dbbc3bfb66d38a
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: d597a50b771524b69ef2f2091082d7ca4d19d453
+ms.sourcegitcommit: e71b8da6c8a357aa06bb6b36936a8f4ecae082ad
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97157115"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97976338"
 ---
 # <a name="overview-of-arm64-abi-conventions"></a>ARM64 ABI 규칙 개요
 
@@ -204,7 +204,13 @@ Variadic 함수가 아닌 경우 Windows ABI는 매개 변수 전달에 대해 A
 
 부동 소수점 s0, d0 또는 v0에서 적절하게 반환됩니다.
 
-HFA 및 HVA 값은 적절하게 s0-s3, d0-d3 또는 v0-v3로 반환됩니다.
+다음이 모두 유지되는 경우 형식 HFA 또는 HVA로 간주됩니다.
+
+- 비어 있지 않습니다.
+- 트리비얼이 아닌 기본값이나 복사 생성자, 소멸자 또는 대입 연산자가 없습니다.
+- 모든 멤버가 동일한 HFA 또는 HVA 형식이거나 다른 멤버의 HFA 또는 HVA 형식과 일치하는 float, double 또는 neon 형식입니다.
+
+요소가 4개 이하인 HFA 및 HVA 값은 적절하게 s0-s3, d0-d3 또는 v0-v3로 반환됩니다.
 
 값으로 반환되는 형식은 특정 속성이 있는지, 그리고 함수가 정적이 아닌 멤버 함수인지에 따라 다르게 처리됩니다. 해당 속성을 모두 포함하는 형식은 다음과 같습니다.
 
