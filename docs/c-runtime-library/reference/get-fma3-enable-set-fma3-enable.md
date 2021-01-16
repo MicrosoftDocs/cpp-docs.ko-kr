@@ -1,7 +1,7 @@
 ---
 description: '자세히 알아보기: _get_FMA3_enable, _set_FMA3_enable'
 title: _get_FMA3_enable, _set_FMA3_enable
-ms.date: 04/05/2018
+ms.date: 1/14/2021
 api_name:
 - _get_FMA3_enable
 - _set_FMA3_enable
@@ -10,6 +10,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
+- api-ms-win-crt-math-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - _get_FMA3_enable
 - _set_FMA3_enable
 ms.assetid: 4c1dc4bc-e86b-451b-9211-5a2ba6c98ee4
-ms.openlocfilehash: d43b5e4e6db652c87bcddf9dd3c91371dc038f33
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 48c70185b73c2f7bb05677fdb550c2c0535d8992
+ms.sourcegitcommit: 1cd8f8a75fd036ffa57bc70f3ca869042d8019d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97303676"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98243088"
 ---
 # <a name="_get_fma3_enable-_set_fma3_enable"></a>_get_FMA3_enable, _set_FMA3_enable
 

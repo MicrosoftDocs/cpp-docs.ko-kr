@@ -1,7 +1,7 @@
 ---
 description: '다음에 대 한 자세한 정보: _local_unwind2'
 title: _local_unwind2
-ms.date: 11/04/2016
+ms.date: 1/14/2021
 api_name:
 - _local_unwind2
 api_location:
@@ -12,6 +12,7 @@ api_location:
 - msvcr80.dll
 - msvcr90.dll
 - msvcr120.dll
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - _local_unwind2 function
 - local_unwind2 function
 ms.assetid: 44f1fa82-e01e-490f-a6e6-18fc6811c28c
-ms.openlocfilehash: b2e3ca2f792abaa3ace54b25131d82c21aadf972
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: cb137547c44eb6d6516086a06109a9339247699c
+ms.sourcegitcommit: 1cd8f8a75fd036ffa57bc70f3ca869042d8019d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97246411"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98243062"
 ---
 # <a name="_local_unwind2"></a>_local_unwind2
 

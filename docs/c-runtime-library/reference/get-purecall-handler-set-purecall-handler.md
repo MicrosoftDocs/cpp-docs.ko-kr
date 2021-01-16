@@ -1,7 +1,7 @@
 ---
 description: '자세히 알아보기: _get_purecall_handler, _set_purecall_handler'
 title: _get_purecall_handler, _set_purecall_handler
-ms.date: 11/04/2016
+ms.date: 1/14/2021
 api_name:
 - _set_purecall_handler
 - _set_purecall_handler_m
@@ -17,6 +17,7 @@ api_location:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -38,12 +39,12 @@ helpviewer_keywords:
 - _set_purecall_handler_m function
 - _get_purecall_handler function
 ms.assetid: 2759b878-8afa-4129-86e7-72afc2153d9c
-ms.openlocfilehash: 7971847c4ce0861db272ea3c722666b0ba0318d0
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: d46e5848f440449cedaaa66c591d2814dbac0745
+ms.sourcegitcommit: 1cd8f8a75fd036ffa57bc70f3ca869042d8019d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97339015"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98242607"
 ---
 # <a name="_get_purecall_handler-_set_purecall_handler"></a>_get_purecall_handler, _set_purecall_handler
 

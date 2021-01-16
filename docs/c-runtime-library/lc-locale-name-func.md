@@ -1,7 +1,7 @@
 ---
 description: '다음에 대 한 자세한 정보: ___lc_locale_name_func'
 title: ___lc_locale_name_func
-ms.date: 4/2/2020
+ms.date: 1/14/2021
 api_name:
 - ___lc_locale_name_func
 - _o____lc_locale_name_func
@@ -14,6 +14,7 @@ api_location:
 - msvcr80.dll
 - msvcr110_clr0400.dll
 - api-ms-win-crt-private-l1-1-0.dll
+- api-ms-win-crt-locale-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -23,12 +24,12 @@ f1_keywords:
 helpviewer_keywords:
 - ___lc_locale_name_func
 ms.assetid: ef858308-872e-43de-95e0-9b1b4084343e
-ms.openlocfilehash: 3431318608516fda908cd3c8ab9562c5044d20ae
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 4747b64c0fc61e0f5d77eacb92c04c9f6d2e2759
+ms.sourcegitcommit: 1cd8f8a75fd036ffa57bc70f3ca869042d8019d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97246554"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98242867"
 ---
 # <a name="___lc_locale_name_func"></a>___lc_locale_name_func
 

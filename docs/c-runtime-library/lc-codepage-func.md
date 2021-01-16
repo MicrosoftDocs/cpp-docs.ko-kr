@@ -1,7 +1,7 @@
 ---
 description: '다음에 대 한 자세한 정보: ___lc_codepage_func'
 title: ___lc_codepage_func
-ms.date: 4/2/2020
+ms.date: 1/14/2021
 api_name:
 - ___lc_codepage_func
 - _o____lc_codepage_func
@@ -14,6 +14,7 @@ api_location:
 - msvcr110.dll
 - msvcrt.dll
 - api-ms-win-crt-private-l1-1-0.dll
+- api-ms-win-crt-locale-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -24,12 +25,12 @@ f1_keywords:
 helpviewer_keywords:
 - ___lc_codepage_func
 ms.assetid: 6a663bd0-5a63-4a2f-9507-872ec1582aae
-ms.openlocfilehash: b59443b8b448eb91e54548700ba7171fc0c00fd9
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: afe49a10498f65c01b501874b602079e79af3be8
+ms.sourcegitcommit: 1cd8f8a75fd036ffa57bc70f3ca869042d8019d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97246541"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98242984"
 ---
 # <a name="___lc_codepage_func"></a>___lc_codepage_func
 

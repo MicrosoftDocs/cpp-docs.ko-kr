@@ -1,7 +1,7 @@
 ---
 description: '다음에 대 한 자세한 정보: __uncaught_exception'
 title: __uncaught_exception
-ms.date: 11/04/2016
+ms.date: 1/14/2021
 api_name:
 - __uncaught_exception
 api_location:
@@ -15,6 +15,7 @@ api_location:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -24,12 +25,12 @@ f1_keywords:
 helpviewer_keywords:
 - __uncaught_exception
 ms.assetid: 4d9b75c6-c9c7-4876-b761-ea9ab1925e96
-ms.openlocfilehash: 22417e10e96e70faf2754ae2d8bb03b90bdbe020
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: dd3fb85a0264005b0c26f1030046661c5b291972
+ms.sourcegitcommit: 1cd8f8a75fd036ffa57bc70f3ca869042d8019d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97124815"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98243049"
 ---
 # <a name="__uncaught_exception"></a>__uncaught_exception
 

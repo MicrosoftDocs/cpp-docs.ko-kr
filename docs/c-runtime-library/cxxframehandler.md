@@ -1,7 +1,7 @@
 ---
 description: '다음에 대 한 자세한 정보: __CxxFrameHandler'
 title: __CxxFrameHandler
-ms.date: 11/04/2016
+ms.date: 1/14/2021
 api_name:
 - __CxxFrameHandler
 api_location:
@@ -12,6 +12,7 @@ api_location:
 - msvcr110_clr0400.dll
 - msvcr90.dll
 - msvcr120.dll
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -21,12 +22,12 @@ f1_keywords:
 helpviewer_keywords:
 - __CxxFrameHandler
 ms.assetid: b79ac97f-425a-42ae-9b91-8beaef935333
-ms.openlocfilehash: 3ebd4cefb303661b4b0293f3b4b3d42a915ddd56
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 0bf82b3a247505d052f1d64edc63bb9cd76a1dcb
+ms.sourcegitcommit: 1cd8f8a75fd036ffa57bc70f3ca869042d8019d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97326365"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98243192"
 ---
 # <a name="__cxxframehandler"></a>__CxxFrameHandler
 

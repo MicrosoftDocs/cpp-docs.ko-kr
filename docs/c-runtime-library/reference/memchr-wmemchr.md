@@ -1,7 +1,7 @@
 ---
 description: '다음에 대 한 자세한 정보: memchr, wmemchr'
 title: memchr, wmemchr
-ms.date: 03/31/2019
+ms.date: 1/14/2021
 api_name:
 - wmemchr
 - memchr
@@ -17,6 +17,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - ntoskrnl.exe
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - memchr function
 - wmemchr function
 ms.assetid: 5a348581-28f1-4256-8434-687245f7fc9f
-ms.openlocfilehash: 695973fd9551758de6c0638493057b31e9a74aab
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: f9643dd9c84244916dfdf151efbec1b0014b42e3
+ms.sourcegitcommit: 1cd8f8a75fd036ffa57bc70f3ca869042d8019d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97240002"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98243166"
 ---
 # <a name="memchr-wmemchr"></a>memchr, wmemchr
 
@@ -108,7 +109,7 @@ C에서 이러한 함수는 **`const`** 첫 번째 인수에 대 한 포인터�
 
 모든 버전의 [C 런타임 라이브러리](../../c-runtime-library/crt-library-features.md)입니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 ```C
 // crt_memchr.c

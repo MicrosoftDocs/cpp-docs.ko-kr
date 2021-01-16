@@ -1,7 +1,7 @@
 ---
 description: '다음에 대 한 자세한 정보: __pctype_func'
 title: __pctype_func
-ms.date: 4/2/2020
+ms.date: 1/14/2021
 api_name:
 - __pctype_func
 - _o___pctype_func
@@ -14,6 +14,7 @@ api_location:
 - msvcr100.dll
 - msvcr80.dll
 - api-ms-win-crt-private-l1-1-0.dll
+- api-ms-win-crt-locale-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -23,12 +24,12 @@ f1_keywords:
 helpviewer_keywords:
 - __pctype_func
 ms.assetid: d52b8add-d07d-4516-a22f-e836cde0c57f
-ms.openlocfilehash: 80374d17015336e553c3ca566dd6752963dd3eef
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 492f4a4c6ff5a23c05c15267d7ac00f72bc6eb94
+ms.sourcegitcommit: 1cd8f8a75fd036ffa57bc70f3ca869042d8019d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97213470"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98242958"
 ---
 # <a name="__pctype_func"></a>__pctype_func
 

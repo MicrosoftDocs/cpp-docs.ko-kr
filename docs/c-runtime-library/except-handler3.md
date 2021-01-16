@@ -1,7 +1,7 @@
 ---
 description: '다음에 대 한 자세한 정보: _except_handler3'
 title: _except_handler3
-ms.date: 11/04/2016
+ms.date: 1/14/2021
 api_name:
 - _except_handler3
 api_location:
@@ -12,6 +12,7 @@ api_location:
 - msvcr120.dll
 - msvcr100.dll
 - msvcr110.dll
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - _except_handler3 function
 - except_handler3 function
 ms.assetid: b0c64898-0ae5-48b7-9724-80135a0813e2
-ms.openlocfilehash: c6253152559516ea7162f887618df0bcbb4bc8ac
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: fdeefce15401530468976cba1be737ac13512ccb
+ms.sourcegitcommit: 1cd8f8a75fd036ffa57bc70f3ca869042d8019d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97331132"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98242997"
 ---
 # <a name="_except_handler3"></a>_except_handler3
 
