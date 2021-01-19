@@ -227,6 +227,7 @@ api_name:
 - __std_exception_copy
 - __std_exception_destroy
 - __std_type_info_destroy_list
+- __std_type_info_name
 - __stdio_common_vfprintf
 - __stdio_common_vfprintf_p
 - __stdio_common_vfprintf_s
@@ -271,6 +272,7 @@ api_name:
 - _W_Getdays
 - _W_Getmonths
 - _W_Getnames
+- _W_Gettnames
 - _wassert
 - _Wcsftime
 - __wcsncnt
@@ -931,17 +933,16 @@ helpviewer_keywords:
 - _wsopen_dispatch
 - _Xbad_alloc
 - _Xlength_error
-ms.assetid: 99a27f11-fa5a-449e-bfbb-aab578d1cc4f
-ms.openlocfilehash: 9087998c91a3da5022fd3fe559e5d535416eeff5
-ms.sourcegitcommit: 1cd8f8a75fd036ffa57bc70f3ca869042d8019d4
+ms.openlocfilehash: 05d9666ce77c593c6b6fa366f43f8a593cb7a4a9
+ms.sourcegitcommit: 92dc6d99ba5dcf3b64dee164df2d29beb1e608da
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98243179"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98563954"
 ---
 # <a name="internal-crt-globals-and-functions"></a>내부 CRT 전역 및 함수
 
-CRT(C 런타임) 라이브러리에는 공용 라이브러리 인터페이스를 지원하는 데만 사용되는 함수 및 전역 변수가 포함되어 있습니다. 이 중 일부는 구현 세부 사항으로 공용 헤더에 노출됩니다. 이러한 함수 및 전역 변수는 공용 내보내기를 통해 액세스할 수 있지만 사용자의 코드에서 사용할 수는 없습니다. 대신 이러한 함수 및 변수를 사용하는 코드를 변경하여 공용 라이브러리 해당 값을 사용하는 것이 좋습니다. 이러한 함수는 버전마다 변경될 수 있습니다. 식별할 수 있도록 아래에는 이러한 함수가 나열되어 있습니다. 추가 설명서가 있으면 링크가 제공되지만 일반적으로 이러한 구현 세부 사항은 문서화되지 않습니다.
+CRT(C 런타임) 라이브러리에는 공용 라이브러리 인터페이스를 지원하는 데만 사용되는 함수 및 전역 변수가 포함되어 있습니다. 이 중 일부는 구현 세부 사항으로 공용 헤더에 노출됩니다. 이러한 함수 및 전역 변수는 공용 내보내기를 통해 액세스할 수 있지만 사용자 코드에서 사용할 수 없습니다. 대신 이러한 함수 및 변수를 사용하는 코드를 변경하여 공용 라이브러리 해당 값을 사용하는 것이 좋습니다. 이러한 함수는 버전마다 변경될 수 있습니다. 이러한 항목을 식별 하는 데 도움이 되는 여기에 나열 되어 있습니다. 다른 설명서가 있는 경우 링크가 제공 되지만 일반적으로 이러한 구현 세부 정보는 문서화 되지 않습니다.
 
 ## <a name="internal-crt-globals-and-value-macros"></a>내부 CRT 전역 및 값 매크로
 
@@ -1219,6 +1220,7 @@ CRT(C 런타임) 라이브러리에는 공용 라이브러리 인터페이스를
 |__std_exception_copy|
 |__std_exception_destroy|
 |__std_type_info_destroy_list|
+|__std_type_info_name|
 |__stdio_common_vfprintf|
 |__stdio_common_vfprintf_p|
 |__stdio_common_vfprintf_s|
@@ -1264,6 +1266,7 @@ CRT(C 런타임) 라이브러리에는 공용 라이브러리 인터페이스를
 |_W_Getdays|
 |_W_Getmonths|
 |_W_Getnames|
+|_W_Gettnames|
 |_wassert|
 |_Wcsftime|
 |__wcsncnt|
@@ -1272,6 +1275,6 @@ CRT(C 런타임) 라이브러리에는 공용 라이브러리 인터페이스를
 |_Xbad_alloc|
 |_Xlength_error|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 [범주별 유버니설 C 런타임 루틴](../c-runtime-library/run-time-routines-by-category.md)<br/>

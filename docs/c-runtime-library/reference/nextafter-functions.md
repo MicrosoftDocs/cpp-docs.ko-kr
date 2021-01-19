@@ -1,7 +1,7 @@
 ---
 title: nextafter, nextafterf, nextafterl, _nextafter, _nextafterf, nexttoward, nexttowardf, nexttowardl
 description: Nextafter, nextafterf, nextafterl, _nextafter, _nextafterf, nextafter, nexttowardf 및 nexttowardl에 대 한 API 참조 이는 표현 가능한 다음 부동 소수점 값을 반환 합니다.
-ms.date: 9/1/2020
+ms.date: 1/15/2021
 api_name:
 - nextafterf
 - _nextafterf
@@ -18,6 +18,7 @@ api_name:
 - _o_nexttoward
 - _o_nexttowardf
 - _o_nexttowardl
+- _o__nextafterf
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -59,15 +60,14 @@ helpviewer_keywords:
 - nexttoward function
 - nexttowardf function
 - nexttowardl function
-ms.assetid: 9785bfb9-de53-4bd0-9637-f05fa0c1f6ab
-ms.openlocfilehash: cdcfb1a1d0bf1523a0252d779dba603ce1814b14
-ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
+ms.openlocfilehash: 664ddb204fa089f83acebf6a9042b17a776ea306
+ms.sourcegitcommit: 92dc6d99ba5dcf3b64dee164df2d29beb1e608da
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89555828"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98564136"
 ---
-# <a name="nextafter-nextafterf-nextafterl-_nextafter-_nextafterf-nexttoward-nexttowardf-nexttowardl"></a>nextafter, nextafterf, nextafterl, _nextafter, _nextafterf, nexttoward, nexttowardf, nexttowardl
+# <a name="nextafter-nextafterf-nextafterl-_nextafter-_nextafterf-nexttoward-nexttowardf-nexttowardl"></a>`nextafter`, `nextafterf`, `nextafterl`, `_nextafter`, `_nextafterf`, `nexttoward`, `nexttowardf`, `nexttowardl`
 
 표현 가능한 다음 부동 소수점 값을 반환합니다.
 
@@ -98,23 +98,23 @@ long double nexttoward( long double x, long double y ); /* C++ only, requires <c
 
 ### <a name="parameters"></a>매개 변수
 
-*.x*\
+*`x`*\
 시작할 부동 소수점 값입니다.
 
-*x.y*\
+*`y`*\
 종료할 부동 소수점 값입니다.
 
 ## <a name="return-value"></a>반환 값
 
-*Y*방향으로 *x* 이후 반환 형식에 대 한 표현 가능한 다음 부동 소수점 값을 반환 합니다. *X* 와 *y* 가 같으면 함수는 반환 형식으로 변환 된 *y*를 반환 하며 예외는 트리거되지 않습니다. *X* 가 *y*와 같지 않고 결과가 denormal 이거나 0 이면 **FE_UNDERFLOW** 및 **FE_INEXACT** 부동 소수점 예외 상태가 설정 되 고 올바른 결과가 반환 됩니다. *X* 또는 *y* 중 하나가 NAN 이면 반환 값은 입력 nan 중 하나입니다. *X* 가 유한 하 고 결과가 무한 이거나 형식에서 표현할 수 없는 경우에는 올바르게 서명 된 INFINITY 또는 NAN이 반환 되 고, **FE_OVERFLOW** 및 **FE_INEXACT** 부동 소수점 예외 상태가 설정 되며, **errno** 가 **ERANGE**로 설정 됩니다.
+의 방향에서 반환 형식의 다음 표현 가능한 부동 소수점 값을 반환 합니다 *`x`* *`y`* . *`x`* 와 *`y`* 가 같으면 함수는 반환 형식으로 변환 된를 반환 하 고 예외는 트리거하지 *`y`* 않습니다. *`x`* 가와 같지 않고 *`y`* 결과가 denormal 이거나 0 이면 **`FE_UNDERFLOW`** 및 부동 소수점 **`FE_INEXACT`** 예외 상태가 설정 되 고 올바른 결과가 반환 됩니다. *`x`* 또는 *`y`* 가 NAN 이면 반환 값은 입력 nan 중 하나입니다. *`x`* 가 유한 하 고 결과가 무한 하거나 형식에서 표현할 수 없는 경우에는 올바르게 서명 된 infinity 또는 NAN이 반환 되 고 **`FE_OVERFLOW`** , **`FE_INEXACT`** 부동 소수점 예외 상태가 설정 되며, **`errno`** 가로 설정 됩니다 **`ERANGE`** .
 
 ## <a name="remarks"></a>설명
 
-*Y*의 매개 변수 형식을 제외한 **nextafter** 및 **nextafter** 패밀리는 동일 합니다. *X* 와 *y* 가 같으면 반환 되는 값은 *y* 반환 형식으로 변환 됩니다.
+**`nextafter`** 및 **`nexttoward`** 함수 패밀리는의 매개 변수 형식을 제외 하 고 동일 합니다 *`y`* . *`x`* 와 *`y`* 가 같으면 반환 되는 값이 *`y`* 반환 형식으로 변환 됩니다.
 
-C + +에서는 오버 로드를 허용 하므로를 포함 하 \<cmath> 는 경우이 반환 및 형식에 대해 **nextafter** 및 **nextafter** 의 오버 로드를 호출할 수 있습니다 **`float`** **`long double`** . C 프로그램에서 매크로를 사용 하 여이 함수를 호출 하지 않는 한, \<tgmath.h> **nextafter** 및 **nextafter** 는 항상를 반환 **`double`** 합니다.
+C + +는 오버 로드를 허용 하므로를 포함 하는 경우 및 `<cmath>` **`nextafter`** **`nexttoward`** 형식을 반환 하는 및의 오버 로드를 호출할 수 있습니다 **`float`** **`long double`** . C 프로그램에서이 함수를 호출 하는 데 매크로를 사용 하지 않는 경우를 `<tgmath.h>` **`nextafter`** 반환 하 고 항상를 **`nexttoward`** 반환 **`double`** 합니다.
 
-또는 매크로를 사용 하는 경우 \<tgmath.h> `nextafter()` `nexttoward()` 인수의 형식에 따라 선택 되는 함수 버전이 결정 됩니다. 자세한 내용은 [형식-제네릭](../../c-runtime-library/tgmath.md) 계산을 참조 하세요.
+또는 매크로를 사용 하는 경우 `<tgmath.h>` `nextafter()` `nexttoward()` 인수의 형식에 따라 선택 되는 함수 버전이 결정 됩니다. 자세한 내용은 [형식-제네릭](../../c-runtime-library/tgmath.md) 계산을 참조 하세요.
 
 **_Nextafter** 및 **_Nextafterf** 함수는 Microsoft 전용입니다. **_Nextafterf** 함수는 x 64 용으로 컴파일하는 경우에만 사용할 수 있습니다.
 
@@ -124,13 +124,13 @@ C + +에서는 오버 로드를 허용 하므로를 포함 하 \<cmath> 는 경�
 
 |루틴에서 반환된 값|필수 헤더(C)|필수 헤더(C++)|
 |-------------|---------------------------|-------------------------------|
-|**nextafter**, **nextafterf**, **nextafterl**, **_nextafterf**, **nextafter**, **nexttowardf**, **nexttowardl**|\<math.h>|\<math.h> 또는 \<cmath>|
-|**_nextafter**|\<float.h>|\<float.h> 또는 \<cfloat>|
-|**nextafter** 매크로, 매크로를 **향해**| \<tgmath.h> ||
+|**`nextafter`**, **`nextafterf`**, **`nextafterl`**, **`_nextafterf`**, **`nexttoward`**, **`nexttowardf`**, **`nexttowardl`**|`<math.h>`|`<math.h>` 또는 `<cmath>`|
+|**`_nextafter`**|`<float.h>`|`<float.h>` 또는 `<cfloat>`|
+|**`nextafter`** 매크로,  **`nexttoward`** 매크로| `<tgmath.h>` ||
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 [부동 소수점 지원](../../c-runtime-library/floating-point-support.md)\
-[isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)
+[`isnan`, `_isnan`, `_isnanf`](isnan-isnan-isnanf.md)

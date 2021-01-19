@@ -141,12 +141,12 @@ helpviewer_keywords:
 - std::unordered_map::size
 - std::unordered_map::swap
 ms.assetid: 7cf7cfa1-16e7-461c-a9b2-3b8d8ec24e0d
-ms.openlocfilehash: f8ffd7b3990f2d0ab40f8059e65f0aba4d4c8e0c
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 81428295f79d71227bf0fdf72e18f2fde30ac763
+ms.sourcegitcommit: 92dc6d99ba5dcf3b64dee164df2d29beb1e608da
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91503579"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98564110"
 ---
 # <a name="unordered_map-class"></a>unordered_map 클래스
 
@@ -191,12 +191,12 @@ class unordered_map;
 |[const_reference](#const_reference)|요소에 대한 상수 참조의 형식입니다.|
 |[difference_type](#difference_type)|두 요소 사이의 부호가 있는 거리의 형식입니다.|
 |[hasher](#hasher)|해시 함수의 형식입니다.|
-|[반복](#iterator)|제어되는 시퀀스에 대한 반복기의 형식입니다.|
+|[iterator](#iterator)|제어되는 시퀀스에 대한 반복기의 형식입니다.|
 |[key_equal](#key_equal)|비교 함수의 형식입니다.|
 |[key_type](#key_type)|정렬 키의 형식입니다.|
 |[local_iterator](#local_iterator)|제어되는 시퀀스에 대한 버킷 반복기의 형식입니다.|
 |[mapped_type](#mapped_type)|각 키와 연결된 매핑된 값의 형식입니다.|
-|[놓고](#pointer)|요소에 대한 포인터의 형식입니다.|
+|[포인터(pointer)](#pointer)|요소에 대한 포인터의 형식입니다.|
 |[reference](#reference)|요소에 대한 참조의 형식입니다.|
 |[size_type](#size_type)|두 요소 사이의 부호가 없는 거리의 형식입니다.|
 |[value_type](#value_type)|요소의 형식입니다.|
@@ -212,7 +212,7 @@ class unordered_map;
 |[cend](#cend)|제어되는 시퀀스의 끝을 지정합니다.|
 |[clear](#clear)|모든 요소를 제거합니다.|
 |[count](#count)|지정한 키와 일치하는 요소의 수를 찾습니다.|
-|[contains](#contains)<sup>c + + 20</sup> 포함|에 지정 된 키를 가진 요소가 있는지 여부를 확인 `unordered_map` 합니다.|
+|[](#contains)<sup>c + + 20</sup> 포함|에 지정 된 키를 가진 요소가 있는지 여부를 확인 `unordered_map` 합니다.|
 |[emplace](#emplace)|생성된 요소를 추가합니다.|
 |[emplace_hint](#emplace_hint)|힌트와 함께 생성된 요소를 추가합니다.|
 |[empty](#empty)|요소가 있는지 여부를 테스트합니다.|
@@ -323,7 +323,6 @@ const Ty& at(const Key& key) const;
 #include <iostream>
 
 typedef std::unordered_map<char, int> Mymap;
-typedef std::unordered_map<char, int> Mymap;
 int main()
 {
     Mymap c1;
@@ -369,7 +368,7 @@ const_local_iterator begin(size_type nbucket) const;
 #include <unordered_map>
 #include <iostream>
 
-#typedef std::unordered_map<char, int> Mymap;
+typedef std::unordered_map<char, int> Mymap;
 int main()
 {
     Mymap c1;
@@ -420,7 +419,7 @@ size_type bucket(const Key& keyval) const;
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 현재 키 값 *keyval*에 해당 하는 버킷 번호를 반환 합니다.
+멤버 함수는 현재 키 값 *keyval* 에 해당 하는 버킷 번호를 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -562,7 +561,7 @@ size_type bucket_size(size_type nbucket) const;
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 버킷 번호 *nbucket*크기를 반환 합니다.
+멤버 함수는 버킷 번호 *nbucket* 크기를 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -1218,7 +1217,7 @@ const_local_iterator end(size_type nbucket) const;
 
 ### <a name="remarks"></a>설명
 
-처음 두 멤버 함수는 시퀀스 끝의 바로 다음을 가리키는 정방향 반복기를 반환합니다. 마지막 두 멤버 함수는 버킷 *n 버킷의*끝 바로 다음을 가리키는 전방 반복기를 반환 합니다.
+처음 두 멤버 함수는 시퀀스 끝의 바로 다음을 가리키는 정방향 반복기를 반환합니다. 마지막 두 멤버 함수는 버킷 *n 버킷의* 끝 바로 다음을 가리키는 전방 반복기를 반환 합니다.
 
 ## <a name="unordered_mapequal_range"></a><a name="equal_range"></a> unordered_map:: equal_range
 
@@ -1236,7 +1235,7 @@ std::pair<const_iterator, const_iterator>  equal_range(const Key& keyval) const;
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 `X` `[X.first, X.second)` *keyval*와 동일한 순서로 정렬 된 제어 되는 시퀀스의 요소만 구분 하는 반복기 쌍을 반환 합니다. 이러한 요소가 없는 경우 두 반복기는 `end()`입니다.
+멤버 함수는 `X` `[X.first, X.second)` *keyval* 와 동일한 순서로 정렬 된 제어 되는 시퀀스의 요소만 구분 하는 반복기 쌍을 반환 합니다. 이러한 요소가 없는 경우 두 반복기는 `end()`입니다.
 
 ### <a name="example"></a>예제
 
@@ -1553,7 +1552,7 @@ Unordered_map에서 [value_type](../standard-library/map-class.md#value_type)요
 
 ### <a name="return-value"></a>반환 값
 
-단일 요소 멤버 함수 (1) 및 (2)는 [pair](../standard-library/pair-structure.md) **`bool`** 구성 요소가 삽입 된 경우 true이 고 unordered_map에 이미 키에 동일한 값이 있는 요소가 이미 포함 되어 있는 경우 false 인 쌍을 반환 합니다. 반환 값 쌍의 반복기 구성 요소는 구성 요소가 true 인 경우 새로 삽입 된 요소를 가리키거나 **`bool`** 구성 요소가 false 인 경우에는 기존 요소를 가리킵니다 **`bool`** .
+단일 요소 멤버 함수 (1) 및 (2)는 [](../standard-library/pair-structure.md) **`bool`** 구성 요소가 삽입 된 경우 true이 고 unordered_map에 이미 키에 동일한 값이 있는 요소가 이미 포함 되어 있는 경우 false 인 쌍을 반환 합니다. 반환 값 쌍의 반복기 구성 요소는 구성 요소가 true 인 경우 새로 삽입 된 요소를 가리키거나 **`bool`** 구성 요소가 false 인 경우에는 기존 요소를 가리킵니다 **`bool`** .
 
 힌트가 있는 단일 요소 멤버 함수 (3) 및 (4)는 새 요소가 unordered_map에 삽입된 위치를 가리키는 반복기를 반환하고 동일한 키가 있는 요소가 존재하는 경우에는 기존 요소를 가리키는 반복기를 반환합니다.
 
@@ -2045,7 +2044,7 @@ void max_load_factor(float factor);
 
 ### <a name="remarks"></a>설명
 
-첫 번째 멤버 함수는 저장된 최대 로드 비율을 반환합니다. 두 번째 멤버 함수는 저장 된 최대 로드 비율을 *인수로*바꿉니다.
+첫 번째 멤버 함수는 저장된 최대 로드 비율을 반환합니다. 두 번째 멤버 함수는 저장 된 최대 로드 비율을 *인수로* 바꿉니다.
 
 ### <a name="example"></a>예제
 
@@ -2179,7 +2178,7 @@ Ty& operator[](Key&& keyval);
 
 인수 키 값이 없으면 데이터 형식의 기본값과 함께 삽입됩니다.
 
-`operator[]`*m*[*key*] =를 사용 하 여 map *m* 에 요소를 삽입 하는 데 사용할 수 있습니다. `DataValue` 여기서은 키 `DataValue` `mapped_type` 값이 *key*인 요소의 값입니다.
+`operator[]`*m*[*key*] =를 사용 하 여 map *m* 에 요소를 삽입 하는 데 사용할 수 있습니다. `DataValue` 여기서은 키 `DataValue` `mapped_type` 값이 *key* 인 요소의 값입니다.
 
 `operator[]`를 사용하여 요소를 삽입하는 경우 반환된 참조는 삽입이 기존 요소를 변경하는지 또는 새 요소를 생성하는지 여부를 나타내지 않습니다. 멤버 함수 [find](../standard-library/map-class.md#find) 및 [insert](../standard-library/map-class.md#insert)는 지정된 키가 포함된 요소가 삽입 전에 이미 있는지 여부를 확인하는 데 사용할 수 있습니다.
 
@@ -2590,7 +2589,7 @@ void swap(unordered_map& right);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 제어 되는 시퀀스를 **`*this`** 과 *오른쪽*으로 바꿉니다. [Unordered_map:: get_allocator](#get_allocator) `() == right.get_allocator()` 는 일정 한 시간에이 작업을 수행 하 고, 형식의 저장 된 특성 개체를 복사 하는 경우에만 예외를 throw 하 `Tr` 고, 두 개의 제어 된 시퀀스에서 요소를 지정 하는 참조, 포인터 또는 반복기를 무효화 하지 않습니다. 그렇지 않으면 두 개의 제어되는 시퀀스에 있는 요소 수에 비례하여 많은 요소 할당 및 생성자 호출을 수행합니다.
+멤버 함수는 제어 되는 시퀀스를 **`*this`** 과 *오른쪽* 으로 바꿉니다. [Unordered_map:: get_allocator](#get_allocator) `() == right.get_allocator()` 는 일정 한 시간에이 작업을 수행 하 고, 형식의 저장 된 특성 개체를 복사 하는 경우에만 예외를 throw 하 `Tr` 고, 두 개의 제어 된 시퀀스에서 요소를 지정 하는 참조, 포인터 또는 반복기를 무효화 하지 않습니다. 그렇지 않으면 두 개의 제어되는 시퀀스에 있는 요소 수에 비례하여 많은 요소 할당 및 생성자 호출을 수행합니다.
 
 ### <a name="example"></a>예제
 
@@ -2722,7 +2721,7 @@ unordered_map(
 
 첫 번째 생성자는 `right`에 의해 제어되는 시퀀스의 복사본을 지정합니다. 두 번째 생성자는 빈 제어 시퀀스를 지정합니다. 세 번째 생성자는 `[first, last)` 요소 값의 시퀀스를 삽입합니다. 네 번째 생성자는 `right`를 이동하여 시퀀스의 복사본을 지정합니다.
 
-모든 생성자는 또한 여러 개의 저장된 값을 초기화합니다. 복사 생성자의 경우 값은 *오른쪽*에서 가져옵니다. 그렇지 않은 경우:
+모든 생성자는 또한 여러 개의 저장된 값을 초기화합니다. 복사 생성자의 경우 값은 *오른쪽* 에서 가져옵니다. 그렇지 않은 경우:
 
 버킷 최소 수는 인수 *Bucket_count*(있는 경우)입니다. 그렇지 않으면 여기에 구현 정의 값으로 설명 된 기본값입니다 `N0` .
 
@@ -2730,7 +2729,7 @@ unordered_map(
 
 비교 함수 개체는 인수 *Comp*(있는 경우)입니다. 그렇지 않으면 `Pred()` 입니다.
 
-할당자 개체는 *Al*인수입니다 (있는 경우). 그렇지 않으면 `Alloc()` 입니다.
+할당자 개체는 *Al* 인수입니다 (있는 경우). 그렇지 않으면 `Alloc()` 입니다.
 
 ### <a name="example"></a>예제
 
@@ -2921,7 +2920,7 @@ int main()
 [d, 4] [c, 3] [b, 2] [a, 1]
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [<unordered_map>](../standard-library/unordered-map.md)\
 [C + + 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\

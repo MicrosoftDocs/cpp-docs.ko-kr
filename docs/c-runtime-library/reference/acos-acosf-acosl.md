@@ -1,12 +1,13 @@
 ---
 title: acos, acosf, acosl
-description: ', 및에 대 한 API 참조 `acos` 로, `acosf` `acosl` 부동 소수점 값의 아크코사인을 계산 합니다.'
-ms.date: 08/31/2020
+description: Acos, acosf, acosf에 대 한 API 참조 부동 소수점 값의 아크코사인을 계산 합니다.
+ms.date: 1/15/2021
 api_name:
 - acosf
 - acos
 - acosl
 - _o_acos
+- _o_acosf
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -36,15 +37,14 @@ helpviewer_keywords:
 - acosf function
 - trigonometric functions
 - arccosine function
-ms.assetid: 00b89c48-8faf-4824-aa95-fa4349a4975d
-ms.openlocfilehash: eeee51cea2a81882ee1ed8b014312ee9f9095dc6
-ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
+ms.openlocfilehash: 63a9c9577e252c506191b7a49ec9da6502968095
+ms.sourcegitcommit: 92dc6d99ba5dcf3b64dee164df2d29beb1e608da
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89555100"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98563837"
 ---
-# <a name="acos-acosf-acosl"></a>acos, acosf, acosl
+# <a name="acos-acosf-acosl"></a>`acos`, `acosf`, `acosl`
 
 아크코사인을 계산합니다.
 
@@ -62,26 +62,26 @@ long double acos( long double x );   // C++ only
 
 ### <a name="parameters"></a>매개 변수
 
-*.x*\
+*`x`*\
 아크코사인 (역 코사인)을 계산 하는-1과 1 사이의 값입니다.
 
 ## <a name="return-value"></a>반환 값
 
-**Acos** 함수는 0 ~ π 라디안 범위의 *x* 아크코사인을 반환 합니다.
+**`acos`** 함수는 0 ~ π 라디안 범위의 *x* 아크코사인을 반환 합니다.
 
-기본적으로 *x* 가-1 보다 작거나 1 보다 큰 경우 **acos** 는 무한을 반환 합니다.
+기본적으로 *`x`* 가-1 보다 작거나 1 보다 큰 경우는 무한을 **`acos`** 반환 합니다.
 
-|입력|SEH 예외|Matherr 예외|
+|입력|`SEH` 발생할|`Matherr` 발생할|
 |-----------|-------------------|-----------------------|
-|± ∞|INVALID|_DOMAIN|
-|± QNAN,IND|없음|_DOMAIN|
-|&#124;x&#124;>1|INVALID|_DOMAIN|
+|`± ∞`|`INVALID`|`_DOMAIN`|
+|`± QNAN, IND`|없음|`_DOMAIN`|
+|&#124;`x`&#124;>1|`INVALID`|`_DOMAIN`|
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드를 허용 하므로 및 형식을 사용 하 고 반환 하는 **acos** 의 오버 로드를 호출할 수 있습니다 **`float`** **`long double`** . C 프로그램에서 매크로를 사용 하 여이 함수를 호출 하지 않는 한 \<tgmath.h> **acos** 는 항상를 사용 하 고 반환 **`double`** 합니다.
+C + +에서는 오버 로드를 허용 하므로 **`acos`** 및 형식을 사용 및 반환 하는의 오버 로드를 호출할 수 있습니다 **`float`** **`long double`** . C 프로그램에서 매크로를 사용 하 여이 함수를 호출 하지 않는 경우는 항상를 사용 하 `<tgmath.h>` **`acos`** 고 반환 **`double`** 합니다.
 
-매크로를 사용 하는 경우 \<tgmath.h> `acos()` 인수의 형식에 따라 선택 되는 함수 버전이 결정 됩니다. 자세한 내용은 [형식-제네릭](../../c-runtime-library/tgmath.md) 계산을 참조 하세요.
+매크로를 사용 하는 경우 `<tgmath.h>` `acos()` 인수의 형식에 따라 선택 되는 함수 버전이 결정 됩니다. 자세한 내용은 [형식-제네릭](../../c-runtime-library/tgmath.md) 계산을 참조 하세요.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -89,8 +89,8 @@ C + +에서는 오버 로드를 허용 하므로 및 형식을 사용 하 고 �
 
 |루틴에서 반환된 값|필수 헤더|선택적 헤더|
 |-------------|---------------------|----------------------|
-|**acos**, **acosf**, **acosf**|\<math.h>|\<errno.h>|
-|**acos ()** 매크로 | \<tgmath.h> ||
+|**`acos`**, **`acosf`**, **`acosl`**|`<math.h>`|`<errno.h>`|
+|**`acos()`** 매크로나 | `<tgmath.h>` ||
 
 ## <a name="example"></a>예제
 
@@ -142,12 +142,12 @@ Arcsine of 0.000000 = 0.000000
 Arccosine of 0.000000 = 1.570796
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
-[부동 소수점 지원](../../c-runtime-library/floating-point-support.md)<br/>
-[asin, asinf, asinl](asin-asinf-asinl.md)<br/>
-[atan, atanf, atanl, atan2, atan2f, atan2l](atan-atanf-atanl-atan2-atan2f-atan2l.md)<br/>
-[cos, cosf, cosl](cos-cosf-cosl.md)<br/>
-[_matherr](matherr.md)<br/>
-[sin, sinf, sinl](sin-sinf-sinl.md)<br/>
-[tan, tanf, tanl](tan-tanf-tanl.md)
+[부동 소수점 지원](../../c-runtime-library/floating-point-support.md)\
+[`asin`, `asinf`, `asinl`](asin-asinf-asinl.md)\
+[`atan`, `atanf`, `atanl`, `atan2`, `atan2f`, `atan2l`](atan-atanf-atanl-atan2-atan2f-atan2l.md)\
+[`cos`, `cosf`, `cosl`](cos-cosf-cosl.md)\
+[`_matherr`](matherr.md)\
+[`sin`, `sinf`, `sinl`](sin-sinf-sinl.md)\
+[`tan`, `tanf`, `tanl`](tan-tanf-tanl.md)
