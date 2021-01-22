@@ -1,7 +1,7 @@
 ---
-description: '자세한 정보: 예외 (C/c + +)'
-title: DLL 로드 예외 코드 (C/c + +)
-ms.date: 11/19/2019
+description: '자세한 정보: 지연 로드 예외 (C/c + +)'
+title: DLL 지연 로드 예외 코드
+ms.date: 01/19/2021
 f1_keywords:
 - ERROR_MOD_NOT_FOUND
 - vcppException
@@ -12,25 +12,24 @@ helpviewer_keywords:
 - delayed loading of DLLs, exceptions
 - ERROR_SEVERITY_ERROR exception
 - ERROR_MOD_NOT_FOUND exception
-ms.assetid: c03be05d-1c39-4f35-84cf-00c9af3bae9a
-ms.openlocfilehash: 53ae6ab9a21309159b29a96e58d077f45fe30e12
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 214d8514baba7b180b8d838af8a6b6c0543cc1ce
+ms.sourcegitcommit: 3d9cfde85df33002e3b3d7f3509ff6a8dc4c0a21
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97200847"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98667172"
 ---
-# <a name="exceptions-cc"></a>예외(C/C++)
+# <a name="dll-delay-load-exception-codes"></a>DLL 지연 로드 예외 코드
 
-오류가 발생 하면 두 가지 예외 코드가 발생할 수 있습니다.
+오류가 발생 하면 두 가지 구조화 된 예외 코드를 발생 시킬 수 있습니다.
 
-- **LoadLibrary** 오류
+- 실패 한 경우 `LoadLibrary`
 
-- **GetProcAddress** 오류의 경우
+- 실패 한 경우 `GetProcAddress`
 
-예외 정보는 다음과 같습니다.
+예외 정보 매크로는 다음과 같습니다.
 
-```
+```C
 //
 // Exception information
 //
@@ -38,11 +37,11 @@ ms.locfileid: "97200847"
 #define VcppException(sev,err)  ((sev) | (FACILITY_VISUALCPP<<16) | err)
 ```
 
-Throw 된 예외 코드는 표준 VcppException (ERROR_SEVERITY_ERROR, ERROR_MOD_NOT_FOUND) 및 VcppException (ERROR_SEVERITY_ERROR, ERROR_PROC_NOT_FOUND) 값입니다. 예외는 [EXCEPTION_RECORD](/windows/win32/api/winnt/ns-winnt-exception_record) 구조, exceptioninformation [0] 필드의 **getexceptioninformation** 에서 검색할 수 있는 Lpdword 값의 **delayloadinfo** 구조에 대 한 포인터를 전달 합니다.
+Throw 된 예외 코드는 표준 `VcppException(ERROR_SEVERITY_ERROR, ERROR_MOD_NOT_FOUND)` 및 `VcppException(ERROR_SEVERITY_ERROR, ERROR_PROC_NOT_FOUND)` 값입니다. 예외는 `DelayLoadInfo` `LPDWORD` `GetExceptionInformation` 필드의 구조에서 검색할 수 있는 값의 구조체에 대 한 포인터를 전달 합니다 [`EXCEPTION_RECORD`](/windows/win32/api/winnt/ns-winnt-exception_record) `ExceptionInformation[0]` .
 
-또한 grAttrs 필드에 잘못 된 비트가 설정 되어 있으면 ERROR_INVALID_PARAMETER 예외가 throw 됩니다. 이 예외는 모든 의도 및 목적을 위해 치명적입니다.
+또한 필드에 잘못 된 비트가 설정 되어 있으면 `grAttrs` 예외가 `ERROR_INVALID_PARAMETER` throw 됩니다. 이 예외는 모든 의도 및 목적을 위해 치명적입니다.
 
-자세한 내용은 [구조체 및 상수 정의](structure-and-constant-definitions.md) 를 참조 하세요.
+자세한 내용은 [구조체 및 상수 정의](structure-and-constant-definitions.md)를 참조 하세요.
 
 ## <a name="see-also"></a>참고 항목
 

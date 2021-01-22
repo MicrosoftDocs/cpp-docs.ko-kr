@@ -1,42 +1,45 @@
 ---
-title: Pragma 지시문 및 __pragma 키워드
+title: Pragma 지시문 및 __pragma 및 _Pragma 키워드
 description: Microsoft Visual C 및 c + + (MSVC)에서 사용할 수 있는 pragma 지시문에 대해 설명 합니다.
-ms.date: 10/30/2020
+ms.date: 01/19/2021
 f1_keywords:
 - '#pragma'
+- _Pragma
+- __pragma
 helpviewer_keywords:
 - '#pragma directives, C/C++'
 - __pragma keyword
+- _Pragma keyword
 - pragma directives, C/C++
 - pragmas, C/C++
 - preprocessor
 - pragmas
 - preprocessor, pragmas
 - pragma directives (#pragma)
-ms.assetid: 9867b438-ac64-4e10-973f-c3955209873f
-ms.openlocfilehash: 784cd413b6b81033c9e49b22d979ece72e5ee101
-ms.sourcegitcommit: 3f0c1dcdcce25865d1a1022bcc5b9eec79f69025
+ms.openlocfilehash: ee518dc096143d1caca95fa1812b9ce0e45527d3
+ms.sourcegitcommit: 3d9cfde85df33002e3b3d7f3509ff6a8dc4c0a21
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94381547"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98667201"
 ---
-# <a name="pragma-directives-and-the-__pragma-keyword"></a>Pragma 지시문 및 __pragma 키워드
+# <a name="pragma-directives-and-the-__pragma-and-_pragma-keywords"></a>Pragma 지시문 및 `__pragma` 및 `_Pragma` 키워드
 
-Pragma 지시문은 컴퓨터 또는 운영 체제별 컴파일러 기능을 지정 합니다. Microsoft 컴파일러와 관련 된 **__pragma** 키워드를 사용 하면 매크로 정의 내에서 pragma 지시어를 코딩할 수 있습니다.
+Pragma 지시문은 컴퓨터 또는 운영 체제별 컴파일러 기능을 지정 합니다. **`__pragma`** Microsoft 컴파일러와 관련 된 키워드를 사용 하면 매크로 정의 내에서 pragma 지시문을 코딩할 수 있습니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
-> **#`pragma`***토큰 문자열*\
-> **`__pragma(`***토큰 문자열* **`)`** 두 개의 선행 밑줄-Microsoft 전용 확장 **`_Pragma(`** *문자열-literal* **`)`** //C99
+> **`#pragma`***토큰 문자열*\
+> **`__pragma(`***토큰 문자열* **`)`** 두 개의 선행 밑줄-Microsoft 전용 확장 \
+> **`_Pragma(`***문자열-리터럴* **`)`** C99
 
 ## <a name="remarks"></a>설명
 
-C 및 C++의 각 구현은 호스트 컴퓨터나 운영 체제에 고유한 기능을 몇 가지 지원합니다. 예를 들어 일부 프로그램은 메모리에 있는 데이터의 위치를 정확 하 게 제어 하거나 특정 함수가 매개 변수를 수신 하는 방법을 제어 해야 합니다. **#Pragma** 지시문은 각 컴파일러가 컴퓨터 및 운영 체제별 기능을 제공할 수 있는 방법을 제공 하는 동시에 C 및 c + + 언어와의 전반적인 호환성을 유지 합니다.
+C 및 C++의 각 구현은 호스트 컴퓨터나 운영 체제에 고유한 기능을 몇 가지 지원합니다. 예를 들어 일부 프로그램은 메모리에 있는 데이터의 위치를 정확 하 게 제어 하거나 특정 함수가 매개 변수를 수신 하는 방법을 제어 해야 합니다. **`#pragma`** 지시문은 각 컴파일러가 컴퓨터 및 운영 체제별 기능을 제공할 수 있는 방법을 제공 하는 동시에 C 및 c + + 언어와의 전반적인 호환성을 유지 합니다.
 
 Pragma는 정의에 따라 컴퓨터 또는 운영 체제에 따라 다르며 일반적으로 모든 컴파일러 마다 다릅니다. Pragma는 조건부 지시문에서 사용 하거나, 새 전처리기 기능을 제공 하거나, 컴파일러에 구현 정의 정보를 제공 하는 데 사용할 수 있습니다.
 
-*토큰 문자열* 은 특정 컴파일러 명령 및 인수 (있는 경우)를 나타내는 일련의 문자입니다. 숫자 기호 ( **#** )는 pragma를 포함 하는 줄에서 공백이 아닌 첫 번째 문자 여야 합니다. 공백 문자는 숫자 기호와 단어 "pragma"를 구분할 수 있습니다. **#Pragma** 다음에는 변환기가 전처리 토큰으로 구문 분석할 수 있는 텍스트를 씁니다. **#Pragma** 인수는 매크로 확장의 영향을 받습니다.
+*토큰 문자열* 은 특정 컴파일러 명령 및 인수 (있는 경우)를 나타내는 일련의 문자입니다. 숫자 기호 ( **`#`** )는 pragma를 포함 하는 줄에서 공백이 아닌 첫 번째 문자 여야 합니다. 공백 문자는 숫자 기호와 단어 "pragma"를 구분할 수 있습니다. 다음 **`#pragma`** 에는 변환기가 전처리 토큰으로 구문 분석할 수 있는 텍스트를 씁니다. 에 대 한 인수는 **`#pragma`** 매크로 확장의 영향을 받습니다.
 
 *문자열 리터럴* 은에 대 한 입력입니다 `_Pragma` . 외부 따옴표와 선행/후행 공백이 제거 됩니다. `\"` 는로 바뀌고 `"` `\\` 로 바뀝니다 `\` .
 
@@ -100,7 +103,7 @@ Microsoft C 및 C++ 컴파일러는 다음 pragma를 인식합니다.
 
 ## <a name="pragmas-and-compiler-options"></a>Pragma 및 컴파일러 옵션
 
-일부 pragma는 컴파일러 옵션과 같은 기능을 제공합니다. 소스 코드에 pragma가 발생하면 컴파일러 옵션에 지정된 동작을 재정의합니다. 예를 들어, [/Zp8](../build/reference/zp-struct-member-alignment.md)을 지정한 경우 [pack](../preprocessor/pack.md)을 사용 하 여 코드의 특정 섹션에 대해이 컴파일러 설정을 재정의할 수 있습니다.
+일부 pragma는 컴파일러 옵션과 같은 기능을 제공합니다. 소스 코드에 pragma가 발생하면 컴파일러 옵션에 지정된 동작을 재정의합니다. 예를 들어를 지정한 경우를 [`/Zp8`](../build/reference/zp-struct-member-alignment.md) 사용 하 여 코드의 특정 섹션에 대해이 컴파일러 설정을 재정의할 수 있습니다 [`pack`](../preprocessor/pack.md) .
 
 ```cmd
 cl /Zp8 some_file.cpp
@@ -115,7 +118,7 @@ cl /Zp8 some_file.cpp
 // ...
 ```
 
-## <a name="the-__pragma-keyword"></a>__Pragma () 키워드
+## <a name="the-__pragma-keyword"></a>`__pragma()` 키워드
 
 또한 컴파일러는 **`__pragma`** 지시문과 동일한 기능을 포함 하는 Microsoft 전용 키워드를 지원 합니다 **`#pragma`** . 차이점은 **`__pragma`** 키워드는 매크로 정의에서 인라인으로 사용할 수 있습니다. **`#pragma`** 컴파일러는 지시문의 숫자 기호 문자 (' # ')를 [문자열 화 연산자 (#)](../preprocessor/stringizing-operator-hash.md)로 해석 하기 때문에 매크로 정의에서 지시어를 사용할 수 없습니다.
 
@@ -145,7 +148,7 @@ return _hr; \
 
  이를 통해 매크로 정의에 pragma를 넣을 수 있습니다. `_`Microsoft 전용 키워드에는 두 개의 선행 밑줄 대신 선행 밑줄이 하나 있고 `__` 첫 글자는 대문자입니다.
 
-문자열 리터럴은 문 뒤에 배치 하는 것이 좋습니다 *`#pragma`* . 예를 들어:
+문자열 리터럴은 문 뒤에 배치 하는 것이 좋습니다 *`#pragma`* . 다음은 그 예입니다. 
 
 ```c
 #pragma message("the #pragma way")
@@ -181,8 +184,8 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[C/c + + 전처리기 참조](../preprocessor/c-cpp-preprocessor-reference.md)\
+[C/C++ 전처리기 참조](../preprocessor/c-cpp-preprocessor-reference.md)\
 [C pragma](../c-language/c-pragmas.md)\
-[키워드](../cpp/keywords-cpp.md)
+[C++ 키워드](../cpp/keywords-cpp.md)

@@ -1,26 +1,25 @@
 ---
-description: '자세한 정보: 필요한 값 계산'
-title: 필요한 값 계산
-ms.date: 11/04/2016
+description: '자세한 정보: 지연 로드에 필요한 값 계산'
+title: 지연 로드에 필요한 값 계산
+ms.date: 01/19/2021
 helpviewer_keywords:
 - helper functions, calculating necessary values
-ms.assetid: 4f037d0f-881a-4a48-a9d2-9f8872dfccb7
-ms.openlocfilehash: 92d8462be2db55dbc10375629b133d9286560878
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: ae5e0c15b5b13f12fd90c1378a1e449516b55f43
+ms.sourcegitcommit: 3d9cfde85df33002e3b3d7f3509ff6a8dc4c0a21
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97179345"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98667450"
 ---
-# <a name="calculating-necessary-values"></a>필요한 값 계산
+# <a name="calculate-necessary-values-for-delay-loading"></a>지연 로드에 필요한 값 계산
 
-지연 도우미 루틴은 두 가지 중요 한 정보를 계산 해야 합니다. 이를 위해이 정보를 계산 하기 위한 두 개의 인라인 함수를 delayhlp에 있습니다.
+지연 로드 도우미 루틴은 두 가지 중요 한 정보를 계산 해야 합니다. 이 정보를 계산 하는 데에는 두 가지 인라인 함수가 있습니다 *`delayhlp.cpp`* .
 
-- 첫 번째는 세 개의 다른 테이블에 대 한 현재 가져오기의 인덱스를 계산 합니다 (가져오기 주소 테이블 (IAT), 바운드 가져오기 주소 테이블 (BIAT) 및 바인딩되지 않은 가져오기 주소 테이블 (UIAT)).
+- 첫 번째는 `IndexFromPImgThunkData` 세 개의 다른 테이블 (가져오기 주소 테이블 (IAT), 바운드 가져오기 주소 테이블 (BIAT) 및 바인딩되지 않은 가져오기 주소 테이블 (UIAT))에 대 한 현재 가져오기의 인덱스를 계산 합니다.
 
-- 두 번째는 유효한 IAT의 가져오기 수를 셉니다.
+- 두 번째는 `CountOfImports` 유효한 IAT의 가져오기 수를 계산 합니다.
 
-```cpp
+```C
 // utility function for calculating the index of the current import
 // for all the tables (INT, BIAT, UIAT, and IAT).
 __inline unsigned
