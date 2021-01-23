@@ -1,33 +1,34 @@
 ---
-description: '자세히 알아보기: 지역, endregion pragma'
-title: region, endregion pragma
-ms.date: 08/29/2019
+description: pragmaMicrosoft C/c + +에서 지역 및 endregion 지시문에 대해 자세히 알아보세요.
+title: 지역 및 endregion pragma
+ms.date: 01/22/2021
 f1_keywords:
 - vc-pragma.endregion
 - endregion_CPP
 - region_CPP
 - vc-pragma.region
 helpviewer_keywords:
-- pragmas, region
-- pragmas, endregion
+- pragma, region
+- pragma, endregion
 - endregion pragma
 - region pragma
-ms.assetid: c697f807-622f-4796-851b-68a42bbecd84
-ms.openlocfilehash: a12305240f0c05913d16c5f26fb64661fc08e736
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+no-loc:
+- pragma
+ms.openlocfilehash: 68964cd2cab4ff344a8319f970f7ee94be4d378d
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97167424"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98713287"
 ---
-# <a name="region-endregion-pragmas"></a>region, endregion pragma
+# <a name="region-and-endregion-no-locpragma"></a>`region` 및 `endregion` pragma
 
-`#pragma region` Visual Studio Code 편집기의 [개요 기능](/visualstudio/ide/outlining) 을 사용할 때 확장 하거나 축소할 수 있는 코드 블록을 지정할 수 있습니다.
+`#pragma region` Visual Studio 편집기의 [개요 기능](/visualstudio/ide/outlining) 을 사용할 때 확장 하거나 축소할 수 있는 코드 블록을 지정할 수 있습니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
-> **#pragma 영역** *이름*\
-> **#pragma endregion** *주석*
+> **`#pragma region`***이름*\
+> **`#pragma endregion`***설명*
 
 ### <a name="parameters"></a>매개 변수
 
@@ -41,7 +42,7 @@ ms.locfileid: "97167424"
 
 `#pragma endregion` 블록의 끝을 표시 `#pragma region` 합니다.
 
-`#region`블록은 지시문으로 종료 해야 합니다 `#pragma endregion` .
+`#pragma region`블록은 지시문으로 종료 해야 합니다 `#pragma endregion` .
 
 ## <a name="example"></a>예제
 
@@ -58,4 +59,4 @@ int main() {}
 
 ## <a name="see-also"></a>참고 항목
 
-[Pragma 지시문 및 __pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma 지시문 및 `__pragma` 및 `_Pragma` 키워드](./pragma-directives-and-the-pragma-keyword.md)

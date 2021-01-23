@@ -1,28 +1,29 @@
 ---
-description: '자세히 알아보기: omp pragma'
+description: pragmaMicrosoft C/c + +의 omp 지시문에 대 한 자세한 정보
 title: omp pragma
-ms.date: 08/29/2019
+ms.date: 01/22/2021
 f1_keywords:
 - vc-pragma.omp
 - omp_CPP
 helpviewer_keywords:
-- pragmas, omp
+- pragma, omp
 - omp pragma
-ms.assetid: 652414c5-78ed-4b7f-8283-1a9fe4c5e78d
-ms.openlocfilehash: 1fdb277fa3512194b6819a95fe663b7848160558
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+no-loc:
+- pragma
+ms.openlocfilehash: a3956b8b94bd54bfc20bc768a745211f758c2efe
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97333248"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98713469"
 ---
-# <a name="omp-pragma"></a>omp pragma
+# <a name="omp-no-locpragma"></a>`omp` pragma
 
 모든 선택적 지시문 절과 함께 하나 이상의 OpenMP 지시문을 사용합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
-> **#pragma omp** *지시문*
+> **`#pragma omp`***지시문*
 
 ## <a name="remarks"></a>설명
 
@@ -30,4 +31,4 @@ ms.locfileid: "97333248"
 
 ## <a name="see-also"></a>참고 항목
 
-[Pragma 지시문 및 __pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma 지시문 및 `__pragma` 및 `_Pragma` 키워드](./pragma-directives-and-the-pragma-keyword.md)

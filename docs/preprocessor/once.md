@@ -1,21 +1,23 @@
 ---
-description: '다음에 대 한 자세한 정보: pragma'
-title: once pragma
-ms.date: 01/19/2021
+description: '다음에 대 한 자세한 정보: 한 번 pragma'
+title: 만 pragma
+ms.date: 01/22/2021
 f1_keywords:
 - vc-pragma.once
 - once_CPP
 helpviewer_keywords:
 - once pragma
-- pragmas, once
-ms.openlocfilehash: 87e3a87d8922868ce8ac3c48815c09de8727eba7
-ms.sourcegitcommit: 3d9cfde85df33002e3b3d7f3509ff6a8dc4c0a21
+- pragma, once
+no-loc:
+- pragma
+ms.openlocfilehash: 3edb5f88202ee783e587b1f886eddddf427f6133
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98667227"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98713482"
 ---
-# <a name="once-pragma"></a>`once` pragma
+# <a name="once-no-locpragma"></a>`once` pragma
 
 소스 코드 파일을 컴파일할 때 컴파일러에서 헤더 파일을 한 번만 포함 하도록 지정 합니다.
 
@@ -27,7 +29,7 @@ ms.locfileid: "98667227"
 
 를 사용 하면 `#pragma once` 컴파일러가 열리지 않고 `#include` 변환 단위에서 파일의 첫 번째 파일 다음에 다시 파일을 읽을 때 빌드 시간을 줄일 수 있습니다. *다중 포함 최적화* 라고 합니다. 이는 전처리기 매크로 정의를 사용 하 여 파일 내용이 여러 번 포함 되는 것을 방지 하는 *include 가드* 를 사용 하는 것과 비슷한 효과를 가집니다. 또한 *한 정의 규칙* 의 위반을 방지 하는 데 도움이 됩니다. 모든 템플릿, 형식, 함수 및 개체에 코드의 정의가 둘 이상 있어야 한다는 요구 사항이 있습니다.
 
-다음은 그 예입니다. 
+예:
 
 ```cpp
 // header.h
@@ -55,4 +57,4 @@ Include 가드를 같은 파일에 사용 하는 것은 장점이 없습니다 `
 
 ## <a name="see-also"></a>참고 항목
 
-[`pragma` 지시문 및 `__pragma` 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma 지시문 및 `__pragma` 및 `_Pragma` 키워드](./pragma-directives-and-the-pragma-keyword.md)

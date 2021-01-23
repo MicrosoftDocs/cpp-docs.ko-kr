@@ -1,30 +1,31 @@
 ---
-description: '자세히 알아보기: component pragma'
+description: pragmaMicrosoft C/c + +의 구성 요소 지시문에 대해 자세히 알아보세요.
 title: 구성 요소 pragma
-ms.date: 08/29/2019
+ms.date: 01/22/2021
 f1_keywords:
 - vc-pragma.component
 - component_CPP
 helpviewer_keywords:
 - component pragma
-- pragmas, component
-ms.assetid: 7b66355e-3201-4c14-8190-f4a2a81a604a
-ms.openlocfilehash: 2eeb70701c490e0f797dfbd6da7ac11030283073
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+- pragma, component
+no-loc:
+- pragma
+ms.openlocfilehash: 68a4117439390c6ec978ae9d766efb395a4ceaa4
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97300803"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98712949"
 ---
-# <a name="component-pragma"></a>구성 요소 pragma
+# <a name="component-no-locpragma"></a>`component` pragma
 
 소스 파일 내에서 찾아보기 정보 또는 종속성 정보의 컬렉션을 제어 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
-> **#pragma 구성 요소 (browser,** { **on** \| **off** } \[ **,** **참조** \[ **,** *이름* ]] **)** \
-> **#pragma 구성 요소 (minrebuild,** { **on** \| **off** } **)** \
-> **#pragma 구성 요소 (mintypeinfo,** { **on** \| **off** } **)**
+> **`#pragma component( browser,`** { **`on`** \| **`off`** } \[ **`,`** **`references`** \[ **`,`** *name* ]] **`)`** \
+> **`#pragma component( minrebuild,`** { **`on`** \| **`off`** } **`)`** \
+> **`#pragma component( mintypeinfo,`** { **`on`** \| **`off`** } **`)`**
 
 ## <a name="remarks"></a>설명
 
@@ -32,7 +33,7 @@ ms.locfileid: "97300803"
 
 수집을 설정하거나 해제할 수 있으며 정보가 수집됨에 따라 특정 이름을 무시하도록 지정할 수 있습니다.
 
-설정 또는 해제를 사용하면 pragma 정방향에서의 찾아보기 정보 수집을 제어합니다. 예를 들어:
+On 또는 off를 사용 하면 앞에서의 찾아보기 정보 컬렉션을 제어 합니다 pragma . 예:
 
 ```cpp
 #pragma component(browser, off)
@@ -41,9 +42,9 @@ ms.locfileid: "97300803"
 컴파일러에서 찾아보기 정보 수집을 중지합니다.
 
 > [!NOTE]
-> 이 pragma를 사용 하 여 찾아보기 정보 수집을 켜려면 [먼저 찾아보기 정보를 사용 하도록 설정 해야](../build/reference/building-browse-information-files-overview.md)합니다.
+> 이를 사용 하 여 찾아보기 정보 수집을 설정 pragma 하려면 [먼저 찾아보기 정보를 사용 하도록 설정 해야](../build/reference/building-browse-information-files-overview.md)합니다.
 
-**References** 옵션은 *name* 인수를 사용 하거나 사용 하지 않고 사용할 수 있습니다. *이름* 없이 **참조** 를 사용 하면 참조 수집을 설정 하거나 해제 합니다. 그러나 다른 찾아보기 정보는 계속 수집 됩니다. 예를 들어:
+**`references`** 옵션은 *name* 인수를 사용 하거나 사용 하지 않고 사용할 수 있습니다. **`references`** *이름* 없이를 사용 하면 참조 수집을 설정 하거나 해제 합니다. 그러나 다른 찾아보기 정보는 계속 수집 됩니다. 예:
 
 ```cpp
 #pragma component(browser, off, references)
@@ -51,13 +52,13 @@ ms.locfileid: "97300803"
 
 컴파일러에서 참조 정보 수집을 중지합니다.
 
-*이름* 및 **off** 를 사용 하 여 **참조** 를 사용 하면 *이름* 에 대 한 참조가 찾아보기 정보 창에 나타나지 않습니다. 관심 없는 이름 및 형식을 무시하고 찾아보기 정보 파일의 크기를 줄이려면 이 구문을 사용합니다. 예를 들어:
+With name을 사용 하 여 **`references`**  **`off`** *이름* 에 대 한 참조가 찾아보기 정보 창에 나타나지 않도록 합니다. 관심 없는 이름 및 형식을 무시하고 찾아보기 정보 파일의 크기를 줄이려면 이 구문을 사용합니다. 예:
 
 ```cpp
 #pragma component(browser, off, references, DWORD)
 ```
 
-해당 지점 앞에서 DWORD에 대 한 참조를 무시 합니다. 다음 **을** 사용 하 여 DWORD에 대 한 참조 수집을 다시 설정할 수 있습니다.
+해당 지점 앞에서 DWORD에 대 한 참조를 무시 합니다. 다음을 사용 하 여 DWORD에 대 한 참조 수집을 다시 설정할 수 있습니다 **`on`** .
 
 ```cpp
 #pragma component(browser, on, references, DWORD)
@@ -73,18 +74,18 @@ ms.locfileid: "97300803"
 
 ### <a name="minimal-rebuild"></a>최소 다시 빌드
 
-사용 되지 않는 [/gm (최소 다시 빌드 사용)](../build/reference/gm-enable-minimal-rebuild.md) 기능을 사용 하려면 컴파일러가 디스크 공간을 차지 하는 c + + 클래스 종속성 정보를 만들고 저장 해야 합니다. 디스크 공간을 절약 하기 위해 변경 `#pragma component( minrebuild, off )` 되지 않은 헤더 파일에서 종속성 정보를 수집 하지 않아도 될 때마다를 사용할 수 있습니다. 변경 되지 않은 `#pragma component( minrebuild, on )` 클래스 뒤에를 삽입 하 여 종속성 컬렉션을 다시 설정 합니다.
+사용 되지 않는 [ `/Gm` (최소 다시 빌드 사용)](../build/reference/gm-enable-minimal-rebuild.md) 기능을 사용 하려면 컴파일러가 디스크 공간을 차지 하는 c + + 클래스 종속성 정보를 만들고 저장 해야 합니다. 디스크 공간을 절약 하기 위해 변경 `#pragma component( minrebuild, off )` 되지 않은 헤더 파일에서 종속성 정보를 수집 하지 않아도 될 때마다를 사용할 수 있습니다. 변경 되지 않은 `#pragma component( minrebuild, on )` 클래스 뒤에를 삽입 하 여 종속성 컬렉션을 다시 설정 합니다.
 
 ### <a name="reduce-type-information"></a>유형 정보 줄이기
 
-`mintypeinfo`옵션은 지정 된 영역에 대 한 디버깅 정보를 줄입니다. 이 정보의 양이 상당하므로 .pdb 및 .obj 파일에 영향을 줍니다. mintypeinfo 영역에서 클래스 및 구조체를 디버깅할 수 없습니다. mintypeinfo 옵션을 사용하면 다음 경고가 발생하지 않도록 하는 데 도움이 될 수 있습니다.
+**`mintypeinfo`** 옵션은 지정 된 영역에 대 한 디버깅 정보를 줄입니다. 이 정보의 양이 상당하므로 .pdb 및 .obj 파일에 영향을 줍니다. 영역의 클래스와 구조체는 디버그할 수 없습니다 **`mintypeinfo`** . 옵션을 사용 하면 **`mintypeinfo`** 다음 경고를 방지 하는 데 도움이 될 수 있습니다.
 
 ```cmd
 LINK : warning LNK4018: too many type indexes in PDB "filename", discarding subsequent type information
 ```
 
-자세한 내용은 [/gm (최소 다시 빌드 사용)](../build/reference/gm-enable-minimal-rebuild.md)  컴파일러 옵션을 참조 하세요.
+자세한 내용은 [ `/Gm` (최소 다시 빌드 사용)](../build/reference/gm-enable-minimal-rebuild.md) 컴파일러 옵션을 참조 하세요.
 
 ## <a name="see-also"></a>참고 항목
 
-[Pragma 지시문 및 __pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma 지시문 및 `__pragma` 및 `_Pragma` 키워드](./pragma-directives-and-the-pragma-keyword.md)

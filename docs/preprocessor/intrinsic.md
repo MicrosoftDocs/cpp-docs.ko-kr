@@ -1,34 +1,35 @@
 ---
-title: intrinsic pragma
-description: MSVC 내장 pragma는 내장 함수로 사용할 지원 되는 내장 함수를 지정 하는 데 사용 됩니다.
-ms.date: 07/08/2020
+title: 않았으므로 pragma
+description: MSVC 내장 함수는 내장 함수로 pragma 사용할 지원 되는 내장 함수를 지정 하는 데 사용 됩니다.
+ms.date: 01/22/2021
 f1_keywords:
 - intrinsic_CPP
 - vc-pragma.intrinsic
 helpviewer_keywords:
 - intrinsic pragma
-- pragmas, intrinsic
-ms.assetid: 25c86ac7-ef40-47b7-a2c0-fada9c5dc3c5
-ms.openlocfilehash: 45a5a13f3bda3657b93e1a89e7a842a4465b01d5
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+- pragma, intrinsic
+no-loc:
+- pragma
+ms.openlocfilehash: 618705c42c20baf2b99f89e138b30d5633b9e592
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041109"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98713547"
 ---
-# <a name="intrinsic-pragma"></a>`intrinsic` pragma
+# <a name="intrinsic-no-locpragma"></a>`intrinsic` pragma
 
-pragma의 인수 목록에 지정된 함수에 대한 호출을 내장 함수로 지정합니다.
+의 인수 목록에 지정 된 함수에 대 한 호출이 내장 함수 임을 지정 합니다 pragma .
 
 ## <a name="syntax"></a>구문
 
-> **`#pragma intrinsic(`** *`function1`* [**`,`** _`function2`_ ... ] **`)`**
+> **`#pragma intrinsic(`***function_1* [ **`,`** *function_2* ...]**`)`**
 
 ## <a name="remarks"></a>설명
 
-**`intrinsic`** Pragma는 함수에 알려진 동작이 있음을 컴파일러에 알립니다. 컴파일러는 함수를 호출할 수 있으며 성능을 개선할 수 있는 경우 함수 호출을 인라인 명령으로 바꾸지 않을 수 있습니다.
+는 **`intrinsic`** pragma 함수에 알려진 동작이 있음을 컴파일러에 알립니다. 컴파일러는 함수를 호출할 수 있으며 성능을 개선할 수 있는 경우 함수 호출을 인라인 명령으로 바꾸지 않을 수 있습니다.
 
-아래에 내장 형식의 라이브러리 함수가 나와 있습니다. **`intrinsic`** Pragma가 표시 되 면 지정 된 내장 함수를 포함 하는 첫 번째 함수 정의에서 적용 됩니다. 효과는 소스 파일의 끝 이나 동일한 내장 함수를 지정 하는 pragma의 모양으로 계속 됩니다 `function` . **`intrinsic`** Pragma는 전역 수준에서 함수 정의 외부 에서만 사용할 수 있습니다.
+아래에 내장 형식의 라이브러리 함수가 나와 있습니다. **`intrinsic`** pragma 가 표시 되 면 지정 된 내장 함수를 포함 하는 첫 번째 함수 정의에서 적용 됩니다. 효과는 소스 파일의 끝 이나 `function` 동일한 내장 함수를 지정 하는의 모양으로 계속 됩니다 pragma . 는 **`intrinsic`** pragma 전역 수준에서 함수 정의 외부 에서만 사용할 수 있습니다.
 
 다음 함수에는 내장 형식이 있으며 다음을 지정할 때 내장 형식이 사용 됩니다 [`/Oi`](../build/reference/oi-generate-intrinsic-functions.md) .
 
@@ -137,5 +138,5 @@ int main() {
 
 ## <a name="see-also"></a>참고 항목
 
-[Pragma 지시문 및 `__pragma` 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)\
+[Pragma 지시문 및 `__pragma` 및 `_Pragma` 키워드](./pragma-directives-and-the-pragma-keyword.md)\
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

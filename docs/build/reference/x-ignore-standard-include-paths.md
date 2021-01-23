@@ -1,7 +1,7 @@
 ---
 description: '자세히 알아보기: `/X` (표준 포함 경로 무시)'
 title: /X(표준 포함 경로 무시)
-ms.date: 07/31/2020
+ms.date: 01/21/2021
 f1_keywords:
 - /x
 - VC.Project.VCCLCompilerTool.OVERWRITEStandardIncludePath
@@ -15,16 +15,16 @@ helpviewer_keywords:
 - X compiler option
 - Ignore Standard Include Paths compiler option
 ms.assetid: 16bdf2cc-c8dc-46e4-bdcc-f3caeba5e1ef
-ms.openlocfilehash: 69936b80893de2c45622ec9973a218a94e8029a4
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 97d19027c41df7db9103c1c21d2f2d7b8d398e7e
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97261010"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98712806"
 ---
 # <a name="x-ignore-standard-include-paths"></a>`/X` (표준 포함 경로 무시)
 
-컴파일러가 PATH 및 INCLUDE 환경 변수에 지정 된 디렉터리에서 포함 파일을 검색 하지 않도록 합니다.
+컴파일러가 `PATH` 및 환경 변수에 지정 된 디렉터리에서 포함 파일을 검색 하지 않도록 합니다 `INCLUDE` .
 
 ## <a name="syntax"></a>구문
 
@@ -48,7 +48,7 @@ ms.locfileid: "97261010"
 
 ## <a name="example"></a>예제
 
-다음 명령에서는 **`/X`** PATH 및 include 환경 변수에 의해 지정 된 위치를 무시 하도록 컴파일러에 지시 하 고 **`/I`** 포함 파일을 검색할 디렉터리를 지정 합니다.
+다음 명령에서 **`/X`** 는 및 환경 변수에서 지정 된 위치를 무시 하도록 컴파일러에 지시 하 `PATH` `INCLUDE` 고 **`/I`** 포함 파일을 검색할 디렉터리를 지정 합니다.
 
 ```cmd
 CL /X /I \ALT\INCLUDE MAIN.C

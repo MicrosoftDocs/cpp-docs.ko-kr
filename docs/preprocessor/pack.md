@@ -1,26 +1,27 @@
 ---
-description: '자세히 알아보기: pack pragma'
-title: pack pragma
-ms.date: 07/22/2020
+description: pragmaMicrosoft C/c + +의 pack 지시문에 대해 자세히 알아보세요.
+title: 팩 pragma
+ms.date: 01/22/2021
 f1_keywords:
 - pack_CPP
 - vc-pragma.pack
 helpviewer_keywords:
-- pragmas, pack
+- pragma, pack
 - pack pragma
-ms.assetid: e4209cbb-5437-4b53-b3fe-ac264501d404
-ms.openlocfilehash: d4e4cbba13efabd148fdd61f59eebb15c56b1c41
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+no-loc:
+- pragma
+ms.openlocfilehash: 82086f737fb8918c62d40c60f1e1006985fbd827
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97333193"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98713417"
 ---
-# <a name="pack-pragma"></a>pack pragma
+# <a name="pack-no-locpragma"></a>`pack` pragma
 
 구조체, 공용 구조체 및 클래스 멤버에 대 한 압축 맞춤을 지정 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 > **`#pragma pack( show )`**\
 > **`#pragma pack( push`** [ **`,`** *`identifier`* ] [ **`,`** *`n`* ] **`)`**\
@@ -48,7 +49,7 @@ ms.locfileid: "97333193"
 
 ## <a name="remarks"></a>설명
 
-클래스를 *압축* 하려면 해당 멤버를 메모리에서 서로 직접 추가 합니다. 이는 대상 아키텍처의 기본 맞춤 보다 작은 경계에 일부 또는 모든 멤버를 정렬할 수 있음을 의미할 수 있습니다. **`pack`** 데이터 선언 수준에서 컨트롤을 제공 합니다. [`/Zp`](../build/reference/zp-struct-member-alignment.md)모듈 수준 제어만 제공 하는 컴파일러 옵션과는 다릅니다.  pragma가 표시 된 후에는 첫 번째 **`struct`** , **`union`** 또는 선언에서 팩이 적용 **`class`** 됩니다. **`pack`** 정의에는 영향을 주지 않습니다. **`pack`** 인수 없이를 호출 하면 *`n`* 컴파일러 옵션에 설정 된 값으로 설정 **`/Zp`** 됩니다. 컴파일러 옵션이 설정 되지 않은 경우 기본값은 x86, ARM 및 ARM64의 경우 8입니다. 기본값은 x64 native의 경우 16입니다.
+클래스를 *압축* 하려면 해당 멤버를 메모리에서 서로 직접 추가 합니다. 이는 대상 아키텍처의 기본 맞춤 보다 작은 경계에 일부 또는 모든 멤버를 정렬할 수 있음을 의미할 수 있습니다. **`pack`** 데이터 선언 수준에서 컨트롤을 제공 합니다. [`/Zp`](../build/reference/zp-struct-member-alignment.md)모듈 수준 제어만 제공 하는 컴파일러 옵션과는 다릅니다. **pack** 은가 표시 된 후 첫 번째 **`struct`** , 또는 선언에서 적용 됩니다 **`union`** **`class`** pragma . **`pack`** 정의에는 영향을 주지 않습니다. **`pack`** 인수 없이를 호출 하면 *`n`* 컴파일러 옵션에 설정 된 값으로 설정 **`/Zp`** 됩니다. 컴파일러 옵션이 설정 되지 않은 경우 기본값은 x86, ARM 및 ARM64의 경우 8입니다. 기본값은 x64 native의 경우 16입니다.
 
 구조체의 맞춤을 변경 하는 경우 메모리에 공간을 많이 사용 하지 않을 수 있습니다. 그러나 성능이 저하 되거나 정렬 되지 않은 액세스에 대 한 하드웨어 생성 예외가 발생할 수 있습니다. 을 사용 하 여이 예외 동작을 수정할 수 있습니다 [`SetErrorMode`](/windows/win32/api/errhandlingapi/nf-errhandlingapi-seterrormode) .
 
@@ -65,9 +66,9 @@ ms.locfileid: "97333193"
    > [!WARNING]
    > Visual Studio 2015 이상에서는 **`alignas`** **`alignof`** 및와 달리 **`__alignof`** **`__declspec( align )`** 컴파일러 간에 이식 가능한 표준 및 연산자를 사용할 수 있습니다. C + + 표준에서는 압축을 처리 하지 않으므로 **`pack`** 대상 아키텍처의 단어 크기 보다 작은 맞춤을 지정 하려면 또는 다른 컴파일러에서 해당 하는 확장을 사용 해야 합니다.
 
-## <a name="examples"></a>예제
+## <a name="examples"></a>예
 
-다음 샘플에서는 pragma를 사용 하 여 구조체의 맞춤을 변경 하는 방법을 보여 줍니다 **`pack`** .
+다음 샘플에서는를 사용 하 여 **`pack`** pragma 구조체의 맞춤을 변경 하는 방법을 보여 줍니다.
 
 ```cpp
 // pragma_directives_pack.cpp
@@ -123,4 +124,4 @@ int main() {
 
 ## <a name="see-also"></a>참고 항목
 
-[Pragma 지시문 및 `__pragma` 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma 지시문 및 `__pragma` 및 `_Pragma` 키워드](./pragma-directives-and-the-pragma-keyword.md)
