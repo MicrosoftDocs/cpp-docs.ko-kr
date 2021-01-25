@@ -55,6 +55,8 @@
       href: ../build/cmake-projects-in-visual-studio.md
     - name: '자습서: Visual Studio에서 C++ 플랫폼 간 프로젝트 만들기'
       href: ../build/get-started-linux-cmake.md
+    - name: '자습서: 원격으로 CMake 프로젝트 실행 및 디버그'
+      href: ../build/cmake-remote-debugging.md
     - name: CMake 프로젝트의 Clang/LLVM
       href: ../build/clang-support-cmake.md
     - name: Linux CMake 프로젝트 구성
@@ -1086,9 +1088,9 @@
               href: ../build/reference/specifying-dlls-to-delay-load.md
             - name: 지연 로드된 DLL의 명시적 언로드
               href: ../build/reference/explicitly-unloading-a-delay-loaded-dll.md
-            - name: 가져오기 바인딩
+            - name: 지연 로드된 가져오기 바인딩
               href: ../build/reference/binding-imports.md
-            - name: 지연 로드된 DLL에 대한 모든 가져오기 로드
+            - name: 지연 로드된 DLL의 모든 가져오기 로드
               href: ../build/reference/loading-all-imports-for-a-delay-loaded-dll.md
             - name: 오류 처리 및 알림
               expanded: false
@@ -1105,7 +1107,7 @@
               href: ../build/reference/dumping-delay-loaded-imports.md
             - name: DLL 지연 로드의 제약 조건
               href: ../build/reference/constraints-of-delay-loading-dlls.md
-            - name: 도우미 함수 이해
+            - name: 지연 로드 도우미 함수 이해
               expanded: false
               items:
                 - name: 도우미 함수 이해
@@ -1120,7 +1122,7 @@
                   href: ../build/reference/calculating-necessary-values.md
                 - name: 지연 로드된 DLL 언로드
                   href: ../build/reference/unloading-a-delay-loaded-dll.md
-            - name: 사용자 도우미 함수 개발
+            - name: 직접 도우미 함수 개발
               href: ../build/reference/developing-your-own-helper-function.md
     - name: 추가 MSVC 빌드 도구
       expanded: false
