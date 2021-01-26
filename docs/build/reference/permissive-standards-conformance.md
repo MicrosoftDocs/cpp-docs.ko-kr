@@ -11,12 +11,12 @@ helpviewer_keywords:
 - Standards conformance compiler options
 - permissive compiler options [C++]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
-ms.openlocfilehash: ae4ab62f6027d984217d750294f16138a6969f16
-ms.sourcegitcommit: 25f6d52eb9e5d84bd0218c46372db85572af81da
+ms.openlocfilehash: c8d654540deb492a5bebff304ef01ca4c71f044a
+ms.sourcegitcommit: 74e58bee5cffb30b66e17be6dbfde2544369638e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94448479"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98763817"
 ---
 # <a name="permissive--standards-conformance"></a>/permissive-(표준 준수)
 
@@ -140,6 +140,8 @@ void g() {
     f(p); // Hidden friend now found via argument-dependent lookup.
 }
 ```
+
+를 사용 하 여와 별개로 숨겨진 friend 이름 조회 규칙을 사용 하도록 설정할 수 있습니다 **`/permissive`** [`/Zc:hiddenFriend`](./zc-hiddenfriend.md) . 숨겨진 friend 이름 조회에 대 한 레거시 동작을 원하지만 **`/permissive-`** 동작을 원하는 경우 옵션을 사용 **`/Zc:hiddenFriend-`** 합니다.
 
 #### <a name="use-scoped-enums-in-array-bounds"></a>배열 범위에서 범위가 지정 된 열거형 사용
 
@@ -466,7 +468,7 @@ Visual Studio 2017 버전 15.5 이전 버전에서 다음 절차를 사용 합�
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [MSVC 컴파일러 옵션](compiler-options.md)\
 [MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)

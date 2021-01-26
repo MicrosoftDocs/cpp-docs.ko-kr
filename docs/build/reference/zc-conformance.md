@@ -1,33 +1,34 @@
 ---
 title: /Zc(규칙)
 description: /Zc 규격 컴파일러 옵션은 규격 또는 이전 버전과 호환 되는 동작에 대 한 지원을 사용 하거나 사용 하지 않도록 설정 합니다.
-ms.date: 09/10/2020
+ms.date: 01/23/2021
 helpviewer_keywords:
 - /Zc compiler options [C++]
 - -Zc compiler options [C++]
 - Conformance compiler options
 - Zc compiler options [C++]
-ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
-ms.openlocfilehash: 15027182d632c1076c78e2e8a1335e1059ac7e3b
-ms.sourcegitcommit: 14d6ae0d527d05d153e26463d4cd5ada0f43e864
+ms.openlocfilehash: 066e6712b07dbc28e88a7e01a5055dab90289326
+ms.sourcegitcommit: 74e58bee5cffb30b66e17be6dbfde2544369638e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98104767"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98763894"
 ---
 # <a name="zc-conformance"></a>`/Zc` 규칙
 
 **`/Zc`** 컴파일러 옵션을 사용 하 여 표준 또는 Microsoft 전용 컴파일러 동작을 지정할 수 있습니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
-> **`/Zc:`**_옵션_{,_옵션_}
+> **`/Zc:`**_옵션_{,_옵션_ ...}
+
+**`/Zc`** 단일 컴파일러 옵션에서 여러 옵션을 쉼표로 구분 하 여 설정할 수 있습니다 **`/Zc`** . **`/Zc`** 동일한 명령에서 옵션을 사용 하도록 설정 하 고 사용 하지 않도록 설정 하면 마지막에 표시 되는 옵션이 사용 됩니다.
 
 ## <a name="remarks"></a>설명
 
-Visual Studio에서 표준과 호환 되지 않는 C 또는 c + +에 대 한 확장을 구현 하는 경우 **`/Zc`** 규칙 옵션을 사용 하 여 표준에 맞는 또는 Microsoft 특정 동작을 지정할 수 있습니다. 일부 옵션의 경우 기존 코드에 대 한 대규모 주요 변경 사항을 방지 하기 위해 Microsoft 고유의 동작이 기본값입니다. 다른 경우에 기본값은 표준 동작으로, 보안, 성능 또는 호환성의 향상 된 기능이 주요 변경 비용 보다 더 중요 합니다. 각 규칙 옵션의 기본 설정은 최신 버전의 Visual Studio에서 변경 될 수 있습니다. 각 규칙 옵션에 대 한 자세한 내용은 특정 옵션에 대 한 항목을 참조 하세요. [`/permissive-`](permissive-standards-conformance.md)컴파일러 옵션은 기본적으로 설정 되지 않은 규칙 옵션을 해당 하는 규칙 설정으로 암시적으로 설정 합니다.
+Visual Studio에서 표준과 호환 되지 않는 C 또는 c + +에 대 한 확장을 구현 하는 경우 **`/Zc`** 규칙 옵션을 사용 하 여 표준에 맞는 또는 Microsoft 특정 동작을 지정할 수 있습니다. 일부 옵션의 경우 기존 코드에 대 한 대규모 주요 변경 사항을 방지 하기 위해 Microsoft 고유의 동작이 기본값입니다. 다른 경우에 기본값은 표준 동작으로, 보안, 성능 또는 호환성의 향상 된 기능이 주요 변경 비용 보다 더 중요 합니다. 각 규칙 옵션의 기본 설정은 최신 버전의 Visual Studio에서 변경 될 수 있습니다. 각 규칙 옵션에 대 한 자세한 내용은 특정 옵션에 대 한 문서를 참조 하세요. [`/permissive-`](permissive-standards-conformance.md)컴파일러 옵션은 기본적으로 설정 되지 않는 규칙 옵션을 해당 하는 설정으로 암시적으로 설정 합니다.
 
-다음은 **`/Zc`** 컴파일러 옵션입니다.
+**`/Zc`** 컴파일러 옵션은 다음과 같습니다.
 
 | 옵션 | 동작 |
 |--|--|
@@ -36,11 +37,12 @@ Visual Studio에서 표준과 호환 되지 않는 C 또는 c + +에 대 한 확
 | [`/Zc:__cplusplus`](zc-cplusplus.md) | 매크로를 사용 `__cplusplus` 하 여 지원 되는 표준 (기본적으로 해제)을 보고 합니다. |
 | [`/Zc:externConstexpr`](zc-externconstexpr.md) | 변수에 대해 외부 링크를 사용 하도록 설정 **`constexpr`** 합니다 (기본적으로 해제). |
 | [`/Zc:forScope`](zc-forscope-force-conformance-in-for-loop-scope.md) | 표준 c + + 범위 지정 규칙을 적용 **`for`** 합니다 (기본적으로 설정). |
+| [`/Zc:hiddenFriend`](zc-hiddenfriend.md) | 에서 암시 하는 표준 c + + 숨겨진 friend 규칙 적용 **`/permissive-`** |
 | [`/Zc:implicitNoexcept`](zc-implicitnoexcept-implicit-exception-specifiers.md) | **`noexcept`** 필수 함수 (기본적으로 설정)에서 암시적으로 사용 하도록 설정 합니다. |
-| [`/Zc:inline`](zc-inline-remove-unreferenced-comdat.md) | 참조 되지 않은 함수 또는 데이터는 COMDAT 이거나 내부 링크만 있는 경우 (기본적으로 해제 됨) 제거 합니다. |
+| [`/Zc:inline`](zc-inline-remove-unreferenced-comdat.md) | 참조 되지 않은 함수 또는 데이터가 COMDAT 이거나 내부 링크만 있는 경우 (기본적으로 해제 되어 있는 경우) 참조 되지 않은 함수 또는 데이터를 제거 합니다. |
 | [`/Zc:noexceptTypes`](zc-noexcepttypes.md) | C + + 17 규칙을 적용 **`noexcept`** 합니다 (c + + 17 이상에서는 기본적으로 설정). |
 | [`/Zc:preprocessor`](zc-preprocessor.md) | 새로운 규격 전처리기 (C11/C17를 제외 하 고 기본적으로 해제)를 사용 합니다. |
-| [`/Zc:referenceBinding`](zc-referencebinding-enforce-reference-binding-rules.md) | UDT 임시는 비 const lvalue 참조에 바인딩되지 않습니다 (기본적으로 해제 됨). |
+| [`/Zc:referenceBinding`](zc-referencebinding-enforce-reference-binding-rules.md) | UDT 임시는 비 const lvalue 참조에 바인딩되지 않습니다 (기본적으로 꺼져 있습니다). |
 | [`/Zc:rvalueCast`](zc-rvaluecast-enforce-type-conversion-rules.md) | 표준 c + + 명시적 형식 변환 규칙을 적용 합니다 (기본적으로 해제). |
 | [`/Zc:sizedDealloc`](zc-sizeddealloc-enable-global-sized-dealloc-functions.md) | C + + 14 전역 크기 할당 해제 함수를 사용 합니다 (기본적으로 설정). |
 | [`/Zc:strictStrings`](zc-strictstrings-disable-string-literal-type-conversion.md) | 문자열-리터럴을 `char*` 변환 하거나 변환 하지 않습니다 `wchar_t*` (기본적으로 해제). |
@@ -51,9 +53,9 @@ Visual Studio에서 표준과 호환 되지 않는 C 또는 c + +에 대 한 확
 | [`/Zc:twoPhase`](zc-twophase.md) | 순응 하지 않는 템플릿 구문 분석 동작을 사용 합니다 (기본적으로 준수). |
 | [`/Zc:wchar_t`](zc-wchar-t-wchar-t-is-native-type.md) | **`wchar_t`** 는 typedef가 아닌 네이티브 형식입니다 (기본적으로 설정 됨). |
 
-Visual C++의 규칙과 관련된 문제에 대한 자세한 내용은 [Nonstandard Behavior](../../cpp/nonstandard-behavior.md)을 참조하세요.
+MSVC의 규칙 문제에 대 한 자세한 내용은 [비표준 동작](../../cpp/nonstandard-behavior.md)을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
-[MSVC 컴파일러 Command-Line 구문](compiler-command-line-syntax.md)
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)
