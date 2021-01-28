@@ -1,13 +1,13 @@
 ---
 title: Visual Studio에서 대상 Linux 시스템에 연결
 description: Visual Studio C++ 프로젝트 내에서 원격 Linux 머신 또는 Linux용 Windows 하위 시스템에 연결하는 방법입니다.
-ms.date: 01/17/2020
-ms.openlocfilehash: b1907cc4c1c80a9d8ffba06849c9a80f1a8fbfbe
-ms.sourcegitcommit: 387ce22a3b0137f99cbb856a772b5a910c9eba99
+ms.date: 01/8/2021
+ms.openlocfilehash: 653a1832b4aac6b87c49102440181bb0e55a45a9
+ms.sourcegitcommit: 3d9cfde85df33002e3b3d7f3509ff6a8dc4c0a21
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97645217"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98667594"
 ---
 # <a name="connect-to-your-target-linux-system-in-visual-studio"></a>Visual Studio에서 대상 Linux 시스템에 연결
 
@@ -104,6 +104,73 @@ Linux 시스템에서 SSH를 아직 설정하지 않은 상태로 실행한 경�
 
    ::: moniker range="msvc-160"
 
+## <a name="supported-ssh-algorithms"></a>지원되는 SSH 알고리즘
+
+Visual Studio 버전 16.9부터 데이터 및 교환 키를 암호화하는 데 사용되는 이전의 비보안 SSH 알고리즘에 대한 지원이 제거되었습니다. 다음 알고리즘만 지원됩니다. 클라이언트-서버 및 서버-클라이언트 SSH 통신 모두에 대해 지원됩니다.
+
+|알고리즘 형식|지원되는 알고리즘|
+|---|---|
+| 암호화| aes128-cbc</br>aes128-cbc</br>aes192-cbc</br>aes192-ctr</br>aes256-cbc</br>aes256-ctr|
+| HMAC | hmac-sha2-256</br>hmac-sha2-256 |
+| 키 교환| diffie-hellman-group14-sha256</br>diffie-hellman-group16-sha512</br>diffie-hellman-group-exchange-sha256</br>ecdh-sha2-nistp256</br>ecdh-sha2-nistp384</br>ecdh-sha2-nistp521|
+|호스트 키|ecdsa-sha2-nistp256</br>ecdsa-sha2-nistp384</br>ecdsa-sha2-nistp521</br>ssh-dss</br>ssh-rsa|
+
+### <a name="configure-the-ssh-server"></a>SSH 서버 구성
+
+먼저 약간의 배경 설명입니다. Visual Studio에서 사용할 SSH 알고리즘을 선택할 수 없습니다. 대신, SSH 서버를 사용하여 초기 핸드셰이크 중에 알고리즘이 결정됩니다. 각 측면(클라이언트 및 서버)은 지원하는 알고리즘의 목록을 제공합니다. 그러면 두 목록에서 공통된 첫 번째 알고리즘이 선택됩니다. Visual Studio와 암호화, HMAC, 키 교환 등을 위한 서버 사이에 공통된 알고리즘이 하나 이상 있는 경우에는 연결이 성공합니다.
+
+Open SSH 구성 파일(**sshd_config**)은 기본적으로 사용할 알고리즘을 구성하지 않습니다. 지정된 알고리즘이 없으면 SSH 서버에서 보안 기본값을 사용해야 합니다. 이러한 기본값은 SSH 서버의 버전과 공급업체에 따라 다릅니다.  Visual Studio에서 이러한 기본값을 지원하지 않거나 SSH 서버가 Visual Studio에서 지원되지 않는 알고리즘을 사용하도록 구성된 경우 다음과 같은 오류가 표시될 수 있습니다. **원격 시스템에 연결할 수 없습니다. 공통 클라이언트-서버 HMAC 알고리즘을 찾을 수 없습니다.**
+
+대부분의 최신 Linux 배포판의 기본 SSH 서버는 바로 Visual Studio와 함께 작동합니다. 그러나 이전의 비보안 알고리즘을 사용하도록 구성된 이전 SSH 서버를 실행 중인 경우에는 다음과 같은 방법을 통해 더욱 안전한 버전으로 업데이트합니다.
+
+다음 예제에서 SSH 서버는 Visual Studio 16.9에서 지원되지 않는 비보안 `hmac-sha1` 알고리즘을 사용합니다. SSH 서버에서 OpenSSH를 사용하는 경우 아래와 같이 `/etc/ssh/sshd_config` 파일을 편집하여 더 안전한 알고리즘을 사용하도록 설정할 수 있습니다. 다른 SSH 서버를 구성하는 방법은 해당 서버의 설명서를 참조하세요.
+
+먼저, 서버에서 사용 중인 알고리즘 세트에 Visual Studio에서 지원되는 알고리즘이 포함되어 있는지 확인합니다. 원격 머신에서 다음 명령을 실행하면 서버에서 지원되는 알고리즘이 나열됩니다.
+
+```bash
+$ ssh -Q cipher; ssh -Q mac; ssh -Q kex; ssh -Q key
+```
+
+다음과 같은 출력이 생성됩니다.
+
+```bash
+3des-cbc
+aes128-cbc
+aes192-cbc
+aes256-cbc
+...
+ecdsa-sha2-nistp521-cert-v01@openssh.com
+sk-ecdsa-sha2-nistp256-cert-v01@openssh.com
+```
+
+이 출력에는 SSH 서버에서 지원되는 모든 암호화, HMAC, 키 교환 및 호스트 키 알고리즘이 나열됩니다. 이 목록에 Visual Studio에서 지원되는 알고리즘이 포함되어 있지 않으면 계속하기 전에 SSH 서버를 업그레이드해야 합니다.
+
+원격 머신에서 `/etc/ssh/sshd_config`를 편집하여 Visual Studio에서 지원되는 알고리즘을 사용하도록 설정할 수 있습니다. 다음 예제는 해당 구성 파일에 다양한 유형의 알고리즘을 추가하는 방법을 보여 줍니다.
+
+이러한 예제는 `/etc/ssh/sshd_config`의 어느 위치에나 추가할 수 있습니다. 고유한 줄에 위치하도록 해야 합니다.
+
+파일을 편집한 후에는 SSH 서버를 다시 시작하고(Ubuntu의 경우 `sudo service ssh restart`) Visual Studio에서 다시 연결을 시도합니다.
+
+#### <a name="cipher--example"></a>암호화 예제
+
+추가: `Ciphers <algorithms to enable>`  
+`Ciphers aes128-cbc,aes256-cbc`
+
+#### <a name="hmac-example"></a>HMAC 예제
+
+추가: `MACs <algorithms to enable>`  
+`MACs hmac-sha2-256,hmac-sha2-512`
+
+#### <a name="key-exchange-example"></a>키 교환 예제
+
+추가: `KexAlgorithms <algorithms to enable>`  
+`KexAlgorithms ecdh-sha2-nistp256,ecdh-sha2-nistp384`
+
+#### <a name="host-key-example"></a>호스트 키 예제
+
+추가: `HostKeyAlgorithms <algorithms to enable>`  
+`HostKeyAlgorithms ssh-dss,ssh-rsa`
+
 ## <a name="logging-for-remote-connections"></a>원격 연결에 대한 로깅
 
    로깅을 활성화하여 연결 문제를 해결할 수 있습니다. 메뉴 모음에서 **도구 > 옵션** 을 선택합니다. **옵션** 대화 상자에서 **플랫폼 간 > 로깅** 을 선택합니다.
@@ -162,7 +229,7 @@ WSL에 대해 MSBuild 프로젝트를 구성하려면 [Linux 프로젝트 구성
 
 ::: moniker-end
 
-## <a name="see-also"></a>관련 항목
+## <a name="see-also"></a>참고 항목
 
 [Linux 프로젝트 구성](configure-a-linux-project.md)\
 [Linux CMake 프로젝트 구성](cmake-linux-project.md)\

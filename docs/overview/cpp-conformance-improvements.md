@@ -3,12 +3,12 @@ title: C++ 규칙 향상
 description: Visual Studio의 Microsoft C++는 C++20 언어 표준을 완전하게 준수하기 위해 점점 향상되고 있습니다.
 ms.date: 11/10/2020
 ms.technology: cpp-language
-ms.openlocfilehash: ff4d75626b75c55e001601ef7005bc23be60869d
-ms.sourcegitcommit: 25f6d52eb9e5d84bd0218c46372db85572af81da
+ms.openlocfilehash: 251f4cd4add40356b14dfdb878a09418171387d2
+ms.sourcegitcommit: 74e58bee5cffb30b66e17be6dbfde2544369638e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94448492"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98763881"
 ---
 # <a name="c-conformance-improvements-in-visual-studio"></a>Visual Studio의 C++ 규칙 향상
 
@@ -1480,7 +1480,7 @@ C++20 모듈 지원은 **`/std:c++latest`** 에서 기본적으로 설정되어 
 | 옵션 | 설명 |
 |--|--|
 | **`/Zc:twoPhase-`** | 2단계 이름 조회는 C++20 모듈에 필요하며, **`permissive-`** 에 포함됩니다. |
-| **`/Zc:hiddenFriend-`** | 표준 숨겨진 friend 이름 조회 규칙을 사용하도록 설정합니다. C++20 모듈에 필요하며, **`permissive-`** 에 포함됩니다. |
+| **`/Zc:hiddenFriend-`** | 표준 숨겨진 friend 이름 조회 규칙은 C++20 모듈에 필요하고 **`permissive-`** 에 포함됩니다. |
 | **`/Zc:preprocessor-`** | 규격 전처리기는 C++20 헤더 단위 사용 및 생성에만 필요합니다. 명명된 모듈에는 이 옵션이 필요하지 않습니다. |
 
 아직 표준화되지 않았기 때문에 Visual Studio와 함께 제공되는 *`std.*`* 모듈을 사용하려면 [`/experimental:module`](../build/reference/experimental-module.md) 옵션이 여전히 필요합니다.
