@@ -6,12 +6,12 @@ ms.technology: cpp-language
 ms.assetid: 475da6e9-0d78-4b4e-bd23-f41c406c4efe
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 0b00268f09d6a4da64ab0eb8ab8e60e368bbf1b8
-ms.sourcegitcommit: 1f85841f403e76d041c34a7c77089dab389960a2
+ms.openlocfilehash: 51e68563122d11634bddd7ed75658e5012d7f8e0
+ms.sourcegitcommit: beac3ddf1a20de5e836569ae07407d5f3703f536
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518806"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99224487"
 ---
 # <a name="microsoft-c-language-conformance-table"></a>Microsoft C++ 언어 규칙 테이블
 
@@ -290,7 +290,7 @@ Visual Studio 2017 또는 Visual Studio 2019 MSVC 규칙 향상에 대한 자세
 | &nbsp;&nbsp;[`P1007R3 assume_aligned()`](https://wg21.link/P1007R3) | 예 |
 | &nbsp;&nbsp;[`P1020R1 Smart Pointer Creation With Default Initialization`](https://wg21.link/P1020R1) | 예 |
 | &nbsp;&nbsp;[`P1208R6 <source_location>`](https://wg21.link/P1208R6) | 예 |
-| &nbsp;&nbsp;[`P1285R0 Improving Completeness Requirements For Type Traits`](https://wg21.link/P1285R0) | 아니요 |
+| &nbsp;&nbsp;[`P1285R0 Improving Completeness Requirements For Type Traits`](https://wg21.link/P1285R0) | 해당 없음 |
 | &nbsp;&nbsp;[`P1502R1 Standard Library Header Units`](https://wg21.link/P1502R1) | 아니요 |
 | &nbsp;&nbsp;[`P1614R2 Adding Spaceship <=> To The Library`](https://wg21.link/P1614R2) | VS 2019 16.7에서 부분 <sup>[20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P1771R1 Library support for [[nodiscard]] for constructors`](https://wg21.link/P1771R1) | 아니요 |
