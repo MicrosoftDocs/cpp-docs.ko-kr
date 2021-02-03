@@ -6,12 +6,12 @@ helpviewer_keywords:
 - MFC [C++], Windows Forms support
 - Windows Forms [C++], compared to MFC
 ms.assetid: f3bfcf45-cfd4-45a4-8cde-5f4dbb18ee51
-ms.openlocfilehash: a48b4f54e44145abab33990e20ca76ed654659e0
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: abb41a64a894eed682c26b2460259fc6bbc43b56
+ms.sourcegitcommit: 3987d9c39f5a5b4824303a48a6215984ce8949e8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97283942"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99478021"
 ---
 # <a name="windows-formsmfc-programming-differences"></a>Windows Forms/MFC 프로그래밍의 차이점
 
@@ -23,7 +23,7 @@ Windows Forms은 .NET Framework에서 Microsoft Windows 응용 프로그램을 �
 
 Windows Forms 응용 프로그램에 대 한 자세한 내용은 [Windows Forms 소개](/dotnet/framework/winforms/windows-forms-overview)를 참조 하세요.
 
-MFC와 함께 사용 Windows Forms을 보여 주는 예제 응용 프로그램은 [mfc 및 Windows Forms 통합](https://www.microsoft.com/download/details.aspx?id=2113)을 참조 하세요.
+MFC와 함께 사용 Windows Forms을 보여 주는 예제 응용 프로그램은 [mfc 및 Windows Forms 통합](https://download.cnet.com/MFC-and-WinForms-Integration/3000-2383_4-75453644.html)을 참조 하세요.
 
 다음 MFC 뷰나 문서 및 명령 라우팅 기능은 Windows Forms에 해당 하지 않습니다.
 

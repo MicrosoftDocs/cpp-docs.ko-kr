@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Windows Forms [C++], hosting as MFC Dialog
 - hosting Windows Forms control [C++]
 ms.assetid: 0434a9d7-8b14-48e6-ad69-9ba9a684677a
-ms.openlocfilehash: 0139e26fee834d47bc0d513c3b64bf3c09368b22
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 885b63e17140cca7983aeeed26e56eac47091a0d
+ms.sourcegitcommit: 3987d9c39f5a5b4824303a48a6215984ce8949e8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97335462"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99478060"
 ---
 # <a name="hosting-a-windows-form-user-control-as-an-mfc-dialog-box"></a>Windows Form 사용자 정의 컨트롤을 MFC 대화 상자로 호스팅
 
@@ -20,7 +20,7 @@ MFC는 [](../mfc/reference/cwinformsdialog-class.md) <xref:System.Windows.Forms.
 
 `CWinFormsDialog`를 사용 하 여 사용자 정의 컨트롤을 호스팅하는 프로세스는 [MFC 대화 상자에서 Windows Form 사용자 정의 컨트롤 호스팅](../dotnet/hosting-a-windows-form-user-control-in-an-mfc-dialog-box.md)에 설명 된 프로세스와 비슷합니다. 그러나는 `CWinFormsDialog` 수동으로 프로그래밍할 필요가 없도록 사용자 정의 컨트롤의 초기화 및 호스팅을 관리 합니다.
 
-MFC와 함께 사용 Windows Forms을 보여 주는 예제 응용 프로그램은 [mfc 및 Windows Forms 통합](https://www.microsoft.com/download/details.aspx?id=2113)을 참조 하세요.
+MFC와 함께 사용 Windows Forms을 보여 주는 예제 응용 프로그램은 [mfc 및 Windows Forms 통합](https://download.cnet.com/MFC-and-WinForms-Integration/3000-2383_4-75453644.html)을 참조 하세요.
 
 ### <a name="to-create-the-mfc-host-application"></a>MFC 호스트 응용 프로그램을 만들려면
 

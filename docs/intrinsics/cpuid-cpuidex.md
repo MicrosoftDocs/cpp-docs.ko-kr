@@ -10,12 +10,12 @@ helpviewer_keywords:
 - cpuid instruction
 - cpuid intrinsic
 ms.assetid: f8c344d3-91bf-405f-8622-cb0e337a6bdc
-ms.openlocfilehash: cd91207097993ec037e9b79eb27257272f06ee97
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 1f3030cc3792911cec8e7a7ef1b17dab0a9a3d6b
+ms.sourcegitcommit: 3987d9c39f5a5b4824303a48a6215984ce8949e8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97337117"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99478138"
 ---
 # <a name="__cpuid-__cpuidex"></a>__cpuid, __cpuidex
 
@@ -64,7 +64,7 @@ void __cpuidex(
 
 `__cpuid` 내장 함수는 `cpuid` 명령을 호출하기 전에 ECX 레지스터를 지웁니다. `__cpuidex`내장 함수는 명령을 생성 하기 전에 *subfunction_id* 에 대 한 ECX 레지스터의 값을 설정 합니다 `cpuid` . 이를 통해 프로세서에 대 한 추가 정보를 수집할 수 있습니다.
 
-Intel 프로세서에서 사용할 특정 매개 변수 및 이러한 내장 함수에서 반환 되는 값에 대 한 자세한 내용은 `cpuid` [intel 64 및 IA-32 아키텍처 소프트웨어 개발자 수동 볼륨 2: 명령 집합 참조](https://go.microsoft.com/fwlink/p/?LinkID=510021) 및 [Intel 아키텍처 명령 집합 확장 프로그래밍 참조](https://go.microsoft.com/fwlink/p/?LinkID=506627)의 지침 설명서를 참조 하세요. Intel 설명서는 *function_id* 에 "리프" 및 "subleaf" 라는 용어를 사용 하 고 EAX 및 ECX에 전달 된 매개 변수를 *subfunction_id* 합니다.
+Intel 프로세서에서 사용할 특정 매개 변수 및 이러한 내장 함수에서 반환 되는 값에 대 한 자세한 내용은 `cpuid` [intel 64 및 IA-32 아키텍처 소프트웨어 개발자 수동 볼륨 2: 명령 집합 참조](https://go.microsoft.com/fwlink/p/?LinkID=510021) 및 [Intel 아키텍처 명령 집합 확장 프로그래밍 참조](https://software.intel.com/content/www/us/en/develop/download/intel-architecture-instruction-set-extensions-programming-reference.html)의 지침 설명서를 참조 하세요. Intel 설명서는 *function_id* 에 "리프" 및 "subleaf" 라는 용어를 사용 하 고 EAX 및 ECX에 전달 된 매개 변수를 *subfunction_id* 합니다.
 
 사용할 특정 매개 변수와 AMD 프로세서의 이러한 내장 함수에서 반환 되는 값에 대 한 자세한 내용은 `cpuid` AMD64 아키텍처 프로그래머의 수동 볼륨 3: General-Purpose 및 시스템 지침 및 특정 프로세서 제품군에 대 한 수정 가이드에서 지침에 대 한 설명서를 참조 하세요. 이러한 문서 및 기타 정보에 대 한 링크는 AMD [개발자 가이드, 설명서 & ISA 문서](https://go.microsoft.com/fwlink/p/?LinkId=510023) 페이지를 참조 하세요. AMD 설명서는 *function_id* 에 "function number" 및 "subfunction number" 라는 용어를 사용 하 고 EAX 및 ECX에 전달 된 매개 변수를 *subfunction_id* 합니다.
 

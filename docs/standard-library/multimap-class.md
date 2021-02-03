@@ -89,16 +89,16 @@ helpviewer_keywords:
 - std::multimap [C++], upper_bound
 - std::multimap [C++], value_comp
 ms.assetid: 8796ae05-37c4-475a-9e61-75fde9d4a463
-ms.openlocfilehash: 7399132553205080cc784de78630e30feb0700ba
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 1265e971a2d5e235f2fafd9137e7bd019d6ac4f0
+ms.sourcegitcommit: 3987d9c39f5a5b4824303a48a6215984ce8949e8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509927"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99478112"
 ---
 # <a name="multimap-class"></a>multimap 클래스
 
-C++ 표준 라이브러리 multimap 클래스는 각 요소가 데이터 값과 정렬 키를 갖고 있는 쌍인 컬렉션에서 데이터의 스토리지 및 검색에 사용됩니다. 키의 값은 고유할 필요가 없으며 데이터를 자동으로 정렬 하는 데 사용 됩니다. multimap 요소의 값은 연관된 키 값을 제외하고 직접적으로 변경할 수 있습니다. 대신, 이전 요소와 관련된 키 값을 삭제하고 새 요소와 연결된 새 키 값을 삽입해야 합니다.
+C + + 표준 라이브러리 multimap 클래스는 각 요소가 데이터 값과 정렬 키를 모두 포함 하는 쌍인 컬렉션에서 데이터를 저장 하 고 검색 하는 데 사용 됩니다. 키의 값은 고유할 필요가 없으며 데이터를 자동으로 정렬 하는 데 사용 됩니다. multimap 요소의 값은 연관된 키 값을 제외하고 직접적으로 변경할 수 있습니다. 대신, 이전 요소와 관련된 키 값을 삭제하고 새 요소와 연결된 새 키 값을 삽입해야 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -174,7 +174,7 @@ C++14에서는 형식 매개 변수가 없는 `std::less<>` 또는 `std::greater
 |[key_compare](#key_compare)|`multimap`의 두 요소간 상대적 순서를 결정하는 두 정렬 키를 비교할 수 있는 함수 개체를 제공하는 형식입니다.|
 |[key_type](#key_type)|의 각 요소를 구성 하는 정렬 키 개체를 설명 하는 형식입니다 `multimap` .|
 |[mapped_type](#mapped_type)|`multimap` 내에 저장된 데이터 형식을 나타내는 형식입니다.|
-|[놓고](#pointer)|의 요소에 대 한 포인터를 제공 하는 형식입니다 **`const`** `multimap` .|
+|[포인터(pointer)](#pointer)|의 요소에 대 한 포인터를 제공 하는 형식입니다 **`const`** `multimap` .|
 |[reference](#reference)|`multimap` 내에 저장된 요소에 대한 참조를 제공하는 형식입니다.|
 |[reverse_iterator](#reverse_iterator)|역순 `multimap`의 요소를 읽거나 수정할 수 있는 양방향 반복기를 제공하는 형식입니다.|
 |[size_type](#size_type)|의 요소에 대 한 포인터를 제공 하는 부호 없는 정수 형식입니다 **`const`** `multimap` .|
@@ -188,7 +188,7 @@ C++14에서는 형식 매개 변수가 없는 `std::less<>` 또는 `std::greater
 |[cbegin](#cbegin)|`multimap`의 첫 번째 요소를 주소 지정하는 상수 반복기를 반환합니다.|
 |[cend](#cend)|`multimap`에서 마지막 요소 다음에 나오는 위치를 주소 지정하는 상수 반복기를 반환합니다.|
 |[clear](#clear)|`multimap`의 모든 요소를 지웁니다.|
-|[contains](#contains)<sup>c + + 20</sup> 포함|에 지정 된 키를 가진 요소가 있는지 여부를 확인 `multimap` 합니다.|
+|[](#contains)<sup>c + + 20</sup> 포함|에 지정 된 키를 가진 요소가 있는지 여부를 확인 `multimap` 합니다.|
 |[count](#count)|키가 매개 변수로 지정된 키와 일치하는 `multimap`의 요소 수를 반환합니다.|
 |[crbegin](#crbegin)|역순 `multimap`에서 첫 번째 요소를 주소 지정하는 상수 반복기를 반환합니다.|
 |[crend](#crend)|역순 `multimap`에서 마지막 요소 다음에 나오는 위치를 주소 지정하는 상수 반복기를 반환합니다.|
@@ -211,7 +211,7 @@ C++14에서는 형식 매개 변수가 없는 `std::less<>` 또는 `std::greater
 |[upper_bound](#upper_bound)|`multimap`에서 지정된 키보다 큰 키를 가진 첫 번째 요소에 반복기를 반환합니다.|
 |[value_comp](#value_comp)|멤버 함수는 키 값을 비교하여 `multimap`의 요소 순서를 결정하는 함수 개체를 반환합니다.|
 
-|연산자|설명|
+|연산자|Description|
 |-|-|
 |[연산자 =](#op_eq)|`multimap`의 요소를 다른 `multimap`의 복사본으로 대체합니다.|
 
@@ -577,7 +577,7 @@ multimap에서 일치하는지 확인할 요소의 키입니다.
 
 \[ lower_bound (*키*), upper_bound (*키*))
 
-키 값 *키*가 있는입니다.
+키 값 *키* 가 있는입니다.
 
 ### <a name="example"></a>예제
 
@@ -868,7 +868,7 @@ iterator emplace_hint(
 multimap에 삽입할 요소를 생성하기 위해 전달되는 인수입니다.
 
 *위치*\
-올바른 삽입 지점 검색을 시작할 위치입니다. *이 지점이 바로 앞에*오면 로그 시간 대신 분할 상환 상수 시간에 삽입이 발생할 수 있습니다.
+올바른 삽입 지점 검색을 시작할 위치입니다. *이 지점이 바로 앞에* 오면 로그 시간 대신 분할 상환 상수 시간에 삽입이 발생할 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -945,7 +945,7 @@ iterator end();
 
 ### <a name="remarks"></a>설명
 
-**end**는 반복기가 multimap의 끝을 통과했는지를 테스트하는 데 사용됩니다.
+**end** 는 반복기가 multimap의 끝을 통과했는지를 테스트하는 데 사용됩니다.
 
 **End** 에서 반환한 값을 역참조 해서는 안 됩니다.
 
@@ -1275,7 +1275,7 @@ IList);
 multimap에 삽입할 요소의 값입니다.
 
 *위치*\
-올바른 삽입 지점 검색을 시작할 위치입니다. *이 지점이 바로 앞에*오면 로그 시간 대신 분할 상환 상수 시간에 삽입이 발생할 수 있습니다.
+올바른 삽입 지점 검색을 시작할 위치입니다. *이 지점이 바로 앞에* 오면 로그 시간 대신 분할 상환 상수 시간에 삽입이 발생할 수 있습니다.
 
 *ValTy*\
 Map에서 [value_type](../standard-library/map-class.md#value_type)의 요소를 생성 하는 데 사용할 수 있는 인수 형식을 지정 하 고 *Val* 을 인수로 완벽 하 게 전달 하는 템플릿 매개 변수입니다.
@@ -1442,7 +1442,7 @@ multimap이 요소의 순서를 지정하는 데 사용하는 함수 개체를 �
 
 `bool operator( const Key& x, const Key& y);`
 
-를 정의합니다. 이 함수는 정렬 순서에서 *x*가 엄격하게 *y* 앞에 오면 true를 반환합니다.
+를 정의합니다. 이 함수는 정렬 순서에서 *x* 가 엄격하게 *y* 앞에 오면 true를 반환합니다.
 
 ### <a name="example"></a>예제
 
@@ -1550,7 +1550,7 @@ const_iterator lower_bound(const Key& key) const;
 
 인수 키보다 크거나 같은 키가 들어 있는 multimap 내 요소의 위치 주소를 지정하거나, 키와 일치하는 항목이 없는 경우 multimap에서 마지막 요소 다음 위치의 주소를 지정하는 반복기 또는 `const_iterator`입니다.
 
-의 반환 값이에 할당 된 경우에는 `lower_bound` `const_iterator` multimap 개체를 수정할 수 없습니다. `lower_bound`의 반환 값이 **iterator**에 할당되는 경우에는 multimap 개체를 수정할 수 있습니다.
+의 반환 값이에 할당 된 경우에는 `lower_bound` `const_iterator` multimap 개체를 수정할 수 없습니다. `lower_bound`의 반환 값이 **iterator** 에 할당되는 경우에는 multimap 개체를 수정할 수 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -1750,9 +1750,9 @@ map의 요소 순서를 지정하는 데 사용되는 `constTraits` 형식의 �
 
 처음 세 생성자는 빈 초기 multimap을 지정 하 고, 두 번째 생성자는 요소의 순서를 설정 하는 데 사용할 비교 함수 (*Comp*)의 형식을 지정 하며, 세 번째 생성자는 사용할 할당자 형식 (*Al*)을 명시적으로 지정 합니다. 키 단어는 **`explicit`** 특정 종류의 자동 형식 변환을 표시 하지 않습니다.
 
-네 번째 생성자는 multimap *Right*의 복사본을 지정 합니다.
+네 번째 생성자는 multimap *Right* 의 복사본을 지정 합니다.
 
-다섯 번째 생성자는 *오른쪽*으로 이동 하 여 multimap의 복사본을 지정 합니다.
+다섯 번째 생성자는 *오른쪽* 으로 이동 하 여 multimap의 복사본을 지정 합니다.
 
 6 번째, 7 번째 및 8 번째 생성자는 initializer_list의 멤버를 복사 합니다.
 
@@ -1883,7 +1883,7 @@ multimap& operator=(multimap&& right);
 
 ### <a name="remarks"></a>설명
 
-에서 기존 요소를 지운 후에 `multimap` 는 `operator=` 의 내용을로 복사 하거나 이동 *right* `multimap` 합니다.
+에서 기존 요소를 지운 후에 `multimap` 는 `operator=` 의 내용을로 복사 하거나 이동  `multimap` 합니다.
 
 ### <a name="example"></a>예제
 
@@ -2397,7 +2397,7 @@ multimap이 요소의 순서를 지정하는 데 사용하는 비교 함수 개�
 
 ### <a name="remarks"></a>설명
 
-Multimap *m*의 경우 두 요소 *e1*(*k1*, *d1*) 및 *e2*(*k2*, *d2*)가 형식의 개체입니다. `value_type` 여기서 *k1* 및 *k2* 는 형식의 키이 `key_type` 고 *d1* 및 *d2* 는 형식의 데이터 이며 `mapped_type` ,는와 `m.value_comp(e1, e2)` 동일 `m.key_comp(k1, k2)` 합니다.
+Multimap *m* 의 경우 두 요소 *e1*(*k1*, *d1*) 및 *e2*(*k2*, *d2*)가 형식의 개체입니다. `value_type` 여기서 *k1* 및 *k2* 는 형식의 키이 `key_type` 고 *d1* 및 *d2* 는 형식의 데이터 이며 `mapped_type` ,는와 `m.value_comp(e1, e2)` 동일 `m.key_comp(k1, k2)` 합니다.
 
 ### <a name="example"></a>예제
 
