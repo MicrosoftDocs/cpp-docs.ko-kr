@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Windows Forms controls [C++], hosting as an MFC view
 - hosting Windows Forms control [C++]
 ms.assetid: 43c02ab4-1366-434c-a980-0b19326d6ea0
-ms.openlocfilehash: 2db44bd4d85150b0a2b8fc1f2206af765770e9ed
-ms.sourcegitcommit: 3987d9c39f5a5b4824303a48a6215984ce8949e8
+ms.openlocfilehash: b9f0eba7f052bee6c2cba89b7a5c22bcb1604cc3
+ms.sourcegitcommit: c20734f18d3d49bb38b1628c68b53b54b3eeeb03
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99478141"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99522796"
 ---
 # <a name="hosting-a-windows-forms-user-control-as-an-mfc-view"></a>Windows Forms 사용자 정의 컨트롤을 MFC 뷰로 호스팅
 
@@ -21,8 +21,6 @@ MFC는 CWinFormsView 클래스를 사용 하 여 MFC 뷰에서 Windows Forms 사
 최종 결과는 [CFormView 클래스](../mfc/reference/cformview-class.md)에서 사용 하는 모델과 유사 합니다. 이렇게 하면 Windows Forms 디자이너와 런타임을 활용 하 여 풍부한 폼 기반 보기를 만들 수 있습니다.
 
 MFC Windows Forms 뷰는 ActiveX 컨트롤 이므로 MFC 뷰와 동일 하지 않습니다 `hwnd` . 또한 [CView](../mfc/reference/cview-class.md) 뷰에서 포인터로 전달할 수 없습니다. 일반적으로 .NET Framework 메서드를 사용 하 여 Windows Forms 보기로 작업 하 고 Win32에서 사용 하는 것이 더 낮습니다.
-
-MFC와 함께 사용 Windows Forms을 보여 주는 예제 응용 프로그램은 [mfc 및 Windows Forms 통합](https://download.cnet.com/MFC-and-WinForms-Integration/3000-2383_4-75453644.html)을 참조 하세요.
 
 ## <a name="in-this-section"></a>섹션 내용
 

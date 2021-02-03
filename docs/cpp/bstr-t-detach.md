@@ -1,20 +1,19 @@
 ---
 description: _Bstr_t::D etach에 대해 자세히 알아보세요.
 title: _bstr_t::Detach
-ms.date: 11/04/2016
+ms.date: 02/02/2021
 f1_keywords:
 - _bstr_t::Detach
 helpviewer_keywords:
 - Detach method [C++]
-ms.assetid: cc8284bd-f68b-4fff-b2e6-ce8354dabf8b
-ms.openlocfilehash: 0baa246e8a849a9cfb747a4a7e224ecbec328d0a
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: bc269f46d3a393485e95a62df23692c60070d75a
+ms.sourcegitcommit: c20734f18d3d49bb38b1628c68b53b54b3eeeb03
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97229329"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99522848"
 ---
-# <a name="_bstr_tdetach"></a>_bstr_t::Detach
+# `_bstr_t::Detach`
 
 **Microsoft 전용**
 
@@ -22,20 +21,20 @@ ms.locfileid: "97229329"
 
 ## <a name="syntax"></a>구문
 
-```
+```cpp
 BSTR Detach( ) throw;
 ```
 
 ## <a name="return-value"></a>Return Value
 
-`BSTR`로 래핑된 `_bstr_t`입니다.
+에 의해 캡슐화 된을 반환 합니다 `BSTR` `_bstr_t` .
 
 ## <a name="example"></a>예제
 
-**Detach** 를 사용 하는 예제는 [_Bstr_t:: Assign](../cpp/bstr-t-assign.md) 을 참조 하십시오.
+을 [`_bstr_t::Assign`](../cpp/bstr-t-assign.md) 사용 하는 예제는를 참조 하세요 **`Detach`** .
 
 **Microsoft 전용 종료**
 
 ## <a name="see-also"></a>참조
 
-[_bstr_t 클래스](../cpp/bstr-t-class.md)
+[`_bstr_t` 클래스](../cpp/bstr-t-class.md)

@@ -7,18 +7,16 @@ helpviewer_keywords:
 - hosting Windows Forms control [C++]
 - Windows Forms [C++], MFC support
 ms.assetid: 9f66ee52-b7cb-4ffd-8306-392a5da990d8
-ms.openlocfilehash: 36e4677622e4c1efe1eebcb8cb9f75d03194de78
-ms.sourcegitcommit: 3987d9c39f5a5b4824303a48a6215984ce8949e8
+ms.openlocfilehash: 1bd1db9d9805c10247840ca6043c94d4e3e3abe7
+ms.sourcegitcommit: c20734f18d3d49bb38b1628c68b53b54b3eeeb03
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99478146"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99522809"
 ---
 # <a name="hosting-a-windows-form-user-control-in-an-mfc-dialog-box"></a>MFC 대화 상자에서 Windows Form 사용자 정의 컨트롤 호스팅
 
 MFC는 Windows Forms 컨트롤을 특수 한 종류의 ActiveX 컨트롤로 호스팅하고 ActiveX 인터페이스, 클래스의 속성 및 메서드를 사용 하 여 컨트롤과 통신 <xref:System.Windows.Forms.Control> 합니다. .NET Framework 속성 및 메서드를 사용 하 여 컨트롤에서 작동 하는 것이 좋습니다.
-
-MFC와 함께 사용 Windows Forms을 보여 주는 예제 응용 프로그램은 [mfc 및 Windows Forms 통합](https://download.cnet.com/MFC-and-WinForms-Integration/3000-2383_4-75453644.html)을 참조 하세요.
 
 > [!NOTE]
 > 현재 릴리스에서 `CDialogBar` 개체는 Windows Forms 컨트롤을 호스트할 수 없습니다.

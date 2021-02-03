@@ -1,21 +1,20 @@
 ---
 description: '자세한 정보: _bstr_t:: 길이'
 title: _bstr_t::length
-ms.date: 11/04/2016
+ms.date: 02/02/2021
 f1_keywords:
 - _bstr_t::length
 helpviewer_keywords:
 - length method [C++]
 - BSTR object [C++], length
-ms.assetid: 4f2e2c76-8894-4ef9-833f-4c6e796d0654
-ms.openlocfilehash: b6f60ecbb97a630aab88aae5b934d905ce6115fd
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 0fb3fb7b29ef08f387986312644fb37c9dbc2705
+ms.sourcegitcommit: c20734f18d3d49bb38b1628c68b53b54b3eeeb03
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97229290"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99522731"
 ---
-# <a name="_bstr_tlength"></a>_bstr_t::length
+# `_bstr_t::length`
 
 **Microsoft 전용**
 
@@ -23,7 +22,7 @@ ms.locfileid: "97229290"
 
 ## <a name="syntax"></a>구문
 
-```
+```cpp
 unsigned int length ( ) const throw( );
 ```
 
@@ -33,4 +32,4 @@ unsigned int length ( ) const throw( );
 
 ## <a name="see-also"></a>참조
 
-[_bstr_t 클래스](../cpp/bstr-t-class.md)
+[`_bstr_t` 클래스](../cpp/bstr-t-class.md)

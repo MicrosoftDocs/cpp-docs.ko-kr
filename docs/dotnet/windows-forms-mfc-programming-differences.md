@@ -6,12 +6,12 @@ helpviewer_keywords:
 - MFC [C++], Windows Forms support
 - Windows Forms [C++], compared to MFC
 ms.assetid: f3bfcf45-cfd4-45a4-8cde-5f4dbb18ee51
-ms.openlocfilehash: abb41a64a894eed682c26b2460259fc6bbc43b56
-ms.sourcegitcommit: 3987d9c39f5a5b4824303a48a6215984ce8949e8
+ms.openlocfilehash: 75e88d18b34894f016d499b9fde309f6a26df716
+ms.sourcegitcommit: c20734f18d3d49bb38b1628c68b53b54b3eeeb03
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99478021"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99522783"
 ---
 # <a name="windows-formsmfc-programming-differences"></a>Windows Forms/MFC 프로그래밍의 차이점
 
@@ -22,8 +22,6 @@ Windows Forms은 .NET Framework에서 Microsoft Windows 응용 프로그램을 �
 그러나 MFC에 익숙한 경우에는 Windows Forms에서 아직 명시적으로 지원 되지 않는 특정 유형의 응용 프로그램을 만드는 데 사용할 수 있습니다. Windows Forms 응용 프로그램은 MFC 대화 상자 응용 프로그램에 해당 합니다. 그러나 이러한 응용 프로그램은 OLE 문서 서버/컨테이너, ActiveX 문서, SDI (단일 문서 인터페이스)에 대 한 문서/뷰 지원, MDI (다중 문서 인터페이스) 및 여러 개의 MTI (최상위 인터페이스)와 같은 다른 MFC 응용 프로그램 유형을 직접 지원 하기 위한 인프라를 제공 하지 않습니다. 사용자 고유의 논리를 작성 하 여 이러한 응용 프로그램을 만들 수 있습니다.
 
 Windows Forms 응용 프로그램에 대 한 자세한 내용은 [Windows Forms 소개](/dotnet/framework/winforms/windows-forms-overview)를 참조 하세요.
-
-MFC와 함께 사용 Windows Forms을 보여 주는 예제 응용 프로그램은 [mfc 및 Windows Forms 통합](https://download.cnet.com/MFC-and-WinForms-Integration/3000-2383_4-75453644.html)을 참조 하세요.
 
 다음 MFC 뷰나 문서 및 명령 라우팅 기능은 Windows Forms에 해당 하지 않습니다.
 

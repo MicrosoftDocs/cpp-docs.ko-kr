@@ -1,20 +1,19 @@
 ---
 description: '자세한 정보: _bstr_t:: Assign'
 title: _bstr_t::Assign
-ms.date: 11/04/2016
+ms.date: 02/02/2021
 f1_keywords:
 - _bstr_t::Assign
 helpviewer_keywords:
 - Assign method [C++]
-ms.assetid: 2e209bbe-77ca-4598-86d5-6c2ea213f43c
-ms.openlocfilehash: b2081aaf71640a778a479a32f3f1816ca79db147
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 166b972d4c3de932fee187f33a9f96a578496e35
+ms.sourcegitcommit: c20734f18d3d49bb38b1628c68b53b54b3eeeb03
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97229446"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99522900"
 ---
-# <a name="_bstr_tassign"></a>_bstr_t::Assign
+# <a name="_bstr_tassign"></a>_`bstr_t::Assign`
 
 **Microsoft 전용**
 
@@ -28,14 +27,14 @@ void Assign(
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*s*<br/>
+*`s`*\
 `BSTR`로 래핑된 `BSTR`로 복사되는 `_bstr_t`입니다.
 
 ## <a name="remarks"></a>설명
 
-**Assign** 는 이진 복사를 수행 합니다. 즉, `BSTR` 콘텐츠와 상관 없이의 전체 길이가 복사 됩니다.
+**`Assign`** 내용에 관계 없이의 전체 길이에 대 한 이진 복사를 수행 합니다 `BSTR` .
 
 ## <a name="example"></a>예제
 
@@ -114,4 +113,4 @@ bstrWrapper2 = some text
 
 ## <a name="see-also"></a>참조
 
-[_bstr_t 클래스](../cpp/bstr-t-class.md)
+[`_bstr_t` 클래스](../cpp/bstr-t-class.md)
