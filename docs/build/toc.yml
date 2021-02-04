@@ -1086,46 +1086,10 @@
           items:
             - name: 링커의 지연 로드된 DLL 지원
               href: ../build/reference/linker-support-for-delay-loaded-dlls.md
-            - name: 지연 로드할 DLL 지정
-              href: ../build/reference/specifying-dlls-to-delay-load.md
-            - name: 지연 로드된 DLL의 명시적 언로드
-              href: ../build/reference/explicitly-unloading-a-delay-loaded-dll.md
-            - name: 지연 로드된 가져오기 바인딩
-              href: ../build/reference/binding-imports.md
-            - name: 지연 로드된 DLL의 모든 가져오기 로드
-              href: ../build/reference/loading-all-imports-for-a-delay-loaded-dll.md
             - name: 오류 처리 및 알림
-              expanded: false
-              items:
-                - name: 오류 처리 및 알림
-                  href: ../build/reference/error-handling-and-notification.md
-                - name: 알림 후크
-                  href: ../build/reference/notification-hooks.md
-                - name: 오류 후크
-                  href: ../build/reference/failure-hooks.md
-                - name: DLL 로드 예외 코드(C/C++)
-                  href: ../build/reference/exceptions-c-cpp.md
-            - name: 지연 로드된 가져오기 덤프
-              href: ../build/reference/dumping-delay-loaded-imports.md
-            - name: DLL 지연 로드의 제약 조건
-              href: ../build/reference/constraints-of-delay-loading-dlls.md
+              href: ../build/reference/error-handling-and-notification.md
             - name: 지연 로드 도우미 함수 이해
-              expanded: false
-              items:
-                - name: 도우미 함수 이해
-                  href: ../build/reference/understanding-the-helper-function.md
-                - name: Visual C++ 6.0 이후 DLL 지연 로드 도우미 함수의 변경 내용
-                  href: ../build/reference/changes-in-the-dll-delayed-loading-helper-function-since-visual-cpp-6-0.md
-                - name: '호출 규칙, 매개 변수, 반환 형식'
-                  href: ../build/reference/calling-conventions-parameters-and-return-type.md
-                - name: 구조체 및 상수 정의
-                  href: ../build/reference/structure-and-constant-definitions.md
-                - name: 필요한 값 계산
-                  href: ../build/reference/calculating-necessary-values.md
-                - name: 지연 로드된 DLL 언로드
-                  href: ../build/reference/unloading-a-delay-loaded-dll.md
-            - name: 직접 도우미 함수 개발
-              href: ../build/reference/developing-your-own-helper-function.md
+              href: ../build/reference/understanding-the-helper-function.md
     - name: 추가 MSVC 빌드 도구
       expanded: false
       items:
