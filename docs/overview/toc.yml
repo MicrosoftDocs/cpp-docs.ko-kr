@@ -7,6 +7,8 @@
       href: ../overview/overview-of-cpp-development.md
     - name: Visual Studio의 새로운 C++ 기능
       href: ../overview/what-s-new-for-visual-cpp-in-visual-studio.md
+    - name: Microsoft C++의 새로운 기능 Docs
+      href: ../overview/whats-new-cpp-docs.md
     - name: Visual Studio의 C++ 규칙 향상
       href: ../overview/cpp-conformance-improvements.md
     - name: Microsoft C++ 언어 규칙
