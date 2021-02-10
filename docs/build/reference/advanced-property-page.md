@@ -1,16 +1,17 @@
 ---
 description: '자세히 알아보기: 고급 속성 페이지'
 title: 고급 속성 페이지 (프로젝트)
-ms.date: 08/10/2020
+ms.date: 02/05/2021
 f1_keywords:
 - VC.Project.VCConfiguration.VCToolsVersion
+- VC.Project.VCConfiguration.LLVMToolsVersion
 ms.description: Use the Advanced property page in Visual Studio 2019 to set various properties for C++ projects.
-ms.openlocfilehash: 916c1f341d148a0f6b426ddf3c31e0d20c59a29c
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 420dd34088f47e8fa7bfe56fd529769b90401355
+ms.sourcegitcommit: 77235bff6a7b2621c501938e30d93cb15f5733cb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97187314"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006022"
 ---
 # <a name="advanced-property-page"></a>고급 속성 페이지
 
@@ -89,6 +90,10 @@ ms.locfileid: "97187314"
 - **MSVC 도구 집합 버전**
 
    프로젝트를 빌드하는 데 사용 되는 MSVC 도구 집합의 전체 버전을 지정 합니다. 도구 집합의 다양 한 업데이트 및 미리 보기 버전이 설치 되어 있을 수 있습니다. 여기에서 사용할 항목을 지정할 수 있습니다.
+
+- **LLVM 도구 집합 버전**
+
+   프로젝트를 빌드하는 데 사용 되는 LLVM 도구 집합의 전체 버전을 지정 합니다. 이 속성은 Visual Studio 2019 버전 16.9에서 시작 하는 플랫폼 도구 집합으로 **LLVM (clang)** 를 선택 하는 경우에 사용할 수 있습니다. 자세한 내용은 [사용자 지정 LLVM 도구 집합 버전 설정](..\clang-support-msbuild.md#custom_llvm_toolset)을 참조 하세요.
 
 ## <a name="ccli-properties"></a>C + +/CLI 속성
 
