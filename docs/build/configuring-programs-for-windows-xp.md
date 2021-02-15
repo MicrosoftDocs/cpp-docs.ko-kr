@@ -3,12 +3,12 @@ title: Windows XP용 프로그램 구성
 description: Visual Studio에서 C++ Windows XP 도구 집합을 설치하고 사용하는 방법입니다.
 ms.date: 03/16/2020
 ms.assetid: 1e4487b3-d815-4123-878b-5718b22f0fd5
-ms.openlocfilehash: 8e81e44cbc2194f16851cf73891cae9884ed0525
-ms.sourcegitcommit: 3987d9c39f5a5b4824303a48a6215984ce8949e8
+ms.openlocfilehash: 4ab4363e9c1d1223c8b1744a1a83b9aaa9784446
+ms.sourcegitcommit: c20734f18d3d49bb38b1628c68b53b54b3eeeb03
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99478086"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99522536"
 ---
 # <a name="configuring-programs-for-windows-xp"></a>Windows XP용 프로그램 구성
 
@@ -84,4 +84,4 @@ Windows XP 플랫폼 도구 집합과 함께 여러 라이브러리에 Windows X
 
 - **HLSL 빌드**
 
-   Windows XP 도구 집합은 기본적으로 HLSL 소스 코드 파일을 컴파일하지 않습니다. HLSL 파일을 컴파일하려면 2010년 6월 DirectX SDK를 다운로드하여 설치한 다음 해당 SDK를 포함하도록 프로젝트의 VC 디렉터리를 설정합니다. 자세한 내용은 [2010년 6월 DirectX SDK 다운로드 페이지](https://download.cnet.com/DirectX-Software-Development-Kit-June-2010/3000-2069_4-75453831.html)의 "DirectX SDK가 Visual Studio 2010에 포함/라이브러리 경로를 등록하지 않음" 섹션을 참조하세요.
+   Windows XP 도구 집합은 기본적으로 HLSL 소스 코드 파일을 컴파일하지 않습니다. HLSL 파일을 컴파일하려면 2010년 6월 DirectX SDK를 다운로드하여 설치한 다음 해당 SDK를 포함하도록 프로젝트의 VC 디렉터리를 설정합니다. 자세한 내용은 [2010년 6월 DirectX SDK 다운로드 페이지](https://web.archive.org/web/20161026183606/https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&id=6812)(보관된 링크)의 “DirectX SDK가 Visual Studio 2010에 포함/라이브러리 경로를 등록하지 않음” 섹션을 참조하세요.

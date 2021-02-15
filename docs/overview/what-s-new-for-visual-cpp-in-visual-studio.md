@@ -1,21 +1,22 @@
 ---
 title: Visual Studio의 새로운 C++ 기능
 description: Visual Studio의 Microsoft C/C++ 컴파일러 및 도구에 있는 새로운 기능과 수정 사항입니다.
-ms.date: 05/19/2020
+ms.date: 02/08/2021
 ms.technology: cpp-ide
-ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
-ms.openlocfilehash: db328a5806ecb3e48a934d65854c14d424e018f1
-ms.sourcegitcommit: 12eb6a824dd7187a065d44fceca4c410f58e121e
+ms.openlocfilehash: c17dd2981a455192715fb44e14e8b84d2d10e69c
+ms.sourcegitcommit: 77235bff6a7b2621c501938e30d93cb15f5733cb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "94334171"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006077"
 ---
 # <a name="whats-new-for-c-in-visual-studio"></a>Visual Studio의 새로운 C++ 기능
 
 ::: moniker range=">=msvc-160"
 
 Visual Studio 2019에는 Microsoft C++ 환경에 대한 많은 업데이트와 수정이 포함되었습니다. 컴파일러 및 도구에서 많은 버그와 문제가 해결되었습니다. 이러한 문제는 대부분, 고객이 **피드백 보내기** 아래의 [문제 보고](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019&preserve-view=true) 및 [제안하기](https://aka.ms/feedback/suggest?space=62) 옵션을 통해 제출한 것입니다. 버그를 알려 주셔서 감사합니다. 모든 Visual Studio의 새로운 기능에 대한 자세한 내용은 [Visual Studio 2019의 새로운 기능](/visualstudio/ide/whats-new-visual-studio-2019)을 참조하세요. Visual Studio 2017의 새로운 C++ 기능에 대한 자세한 내용은 [Visual Studio 2017의 새로운 C++ 기능](?preserve-view=true&view=msvc-150)을 참조하세요. Visual Studio 2015 및 이전 버전의 새로운 C++ 기능에 대한 자세한 내용은 [Visual C++ 2003~2015의 새로운 기능](../porting/visual-cpp-what-s-new-2003-through-2015.md)을 참조하세요.
+
+C++ 문서의 새로운 기능 문서에 대한 자세한 내용은 [Microsoft C++ 문서: 새로운 기능](whats-new-cpp-docs.md)을 참조하세요.
 
 ## <a name="c-compiler"></a>C++ 컴파일러
 
@@ -187,7 +188,7 @@ IncrediBuild는 **C++를 사용한 데스크톱 개발** 워크로드의 선택�
 
 - Windows에서 실행되는 C++ 애플리케이션의 경우 PDB 파일은 이제 별도의 64비트 프로세스로 로드됩니다. 이 변경으로 디버거 메모리 부족으로 인한 크래시 범위가 해결됩니다. 예를 들어 많은 수의 모듈과 PDB 파일을 포함하는 애플리케이션을 디버그하는 경우가 그렇습니다.
 
-- 검색은 **조사식** , **자동** 및 **지역** 창에서 사용할 수 있습니다.
+- 검색은 **조사식**, **자동** 및 **지역** 창에서 사용할 수 있습니다.
 
 ## <a name="windows-desktop-development-with-c"></a>C++를 사용한 Windows 데스크톱 개발
 
@@ -285,7 +286,7 @@ Visual Studio 버전 15.7의 MSVC 컴파일러 도구 집합은 이제 C++ 표�
 - 버전 관리: 기본 제공 전처리기 매크로 **\_MSC\_VER** 의 값이 이제 Visual C++ 도구 세트 업데이트 시마다 일정하게 업데이트됩니다. 자세한 내용은 [Visual C++ Compiler Version](https://devblogs.microsoft.com/cppblog/visual-c-compiler-version/)(Visual C++ 컴파일러 버전)을 참조하세요.
 - 새 도구 세트 레이아웃: 개발 머신에서 컴파일러 및 관련된 빌드 도구의 위치 및 디렉터리 구조가 변경되었습니다. 새 레이아웃을 사용하면 여러 버전의 컴파일러를 병렬 설치할 수 있습니다. 자세한 내용은 [Compiler Tools Layout in Visual Studio 2017](https://devblogs.microsoft.com/cppblog/compiler-tools-layout-in-visual-studio-15/)(Visual Studio 2017의 컴파일러 도구 레이아웃)을 참조하세요.
 - 향상된 진단: 이제 출력 창에 오류가 발생하는 열이 표시됩니다. 자세한 내용은 [C++ compiler diagnostics improvements in VS "15" Preview 5](https://devblogs.microsoft.com/cppblog/c-compiler-diagnostics-improvements-in-vs-15-rc/)(VS "15" Preview 5의 C++ 컴파일러 진단 향상)를 참조하세요.
-- 코루틴을 사용하는 경우 실험적인 **yield** ( **`/await`** 옵션 아래에서 사용 가능) 키워드가 제거되었습니다. 대신 `co_yield`를 사용하도록 코드를 업데이트해야 합니다. 자세한 내용은 [`yield` keyword to become `co_yield` in VS 2017](https://devblogs.microsoft.com/cppblog/yield-keyword-to-become-co_yield-in-vs-2017/)(VS 2017에서 `yield` 키워드가 `co_yield`로 변경됨)을 참조하세요.
+- 코루틴을 사용하는 경우 실험적인 **yield**( **`/await`** 옵션 아래에서 사용 가능) 키워드가 제거되었습니다. 대신 `co_yield`를 사용하도록 코드를 업데이트해야 합니다. 자세한 내용은 [`yield` keyword to become `co_yield` in VS 2017](https://devblogs.microsoft.com/cppblog/yield-keyword-to-become-co_yield-in-vs-2017/)(VS 2017에서 `yield` 키워드가 `co_yield`로 변경됨)을 참조하세요.
 
 ##### <a name="visual-studio-2017-version-153"></a>Visual Studio 2017 15.3 버전
 
@@ -343,7 +344,7 @@ Visual Studio 2017 RTM에서는 더 많은 표준 라이브러리가 개선되�
 - `basic_string::shrink_to_fit()`는 더 이상 할당자 `propagate_on_container_swap`의 영향을 받지 않습니다.
 - 이제 `std::decay`에서 abominable 함수 형식, 즉 정규화된 cv 함수 형식이나 정규화된 ref 함수 형식 또는 두 형식 모두를 처리합니다.
 - include 지시문에서 적절한 대/소문자 구분과 슬래시를 사용하도록 변경하여 이식성이 향상되었습니다.
-- 경고 C4061 "열거형 ' *enumeration* '의 switch에 있는 ' *enumerator* ' 열거자는 case 레이블에 의해 명시적으로 처리되지 않습니다."가 수정되었습니다. 이 경고는 기본적으로 꺼져 있으며, 표준 라이브러리 일반 경고 정책의 예외로 수정되었습니다. (표준 라이브러리는 **`/W4`** 경고 수준을 유지하되, **`/Wall`** 경고 수준까지는 시도하지 않습니다. 기본적으로 꺼져 있는 대부분의 경고는 특별히 번거로우며, 정기적으로 사용하기 위한 것이 아닙니다.)
+- 경고 C4061 "열거형 '*enumeration*'의 switch에 있는 '*enumerator*' 열거자는 case 레이블에 의해 명시적으로 처리되지 않습니다."가 수정되었습니다. 이 경고는 기본적으로 꺼져 있으며, 표준 라이브러리 일반 경고 정책의 예외로 수정되었습니다. (표준 라이브러리는 **`/W4`** 경고 수준을 유지하되, **`/Wall`** 경고 수준까지는 시도하지 않습니다. 기본적으로 꺼져 있는 대부분의 경고는 특별히 번거로우며, 정기적으로 사용하기 위한 것이 아닙니다.)
 - `std::list` 디버그 검사가 향상되었습니다. 이제는 목록 반복기에서 `operator->()`를 검사하고, `list::unique()`에서는 반복기를 무효화된(invalidated) 것으로 표시합니다.
 - `tuple`의 use-allocator 메타 프로그래밍이 수정되었습니다.
 
@@ -539,7 +540,7 @@ C++는 이제 Ctrl+Click **Go To Definition** 을 지원하여 정의에 대한 
   ![멤버 목록 필터링](media/mlfiltering.png "멤버 목록 필터링")
 
 - 멤버 목록에 나타나는 항목의 컨텍스트 인식 필터링을 제공하는 새로운 실험적 예측 IntelliSense 기능이 추가되었습니다. 자세한 내용은 [C++ IntelliSense Improvements – Predictive IntelliSense & Filtering](https://devblogs.microsoft.com/cppblog/c-intellisense-improvements-predictive-intellisense-filtering/)(C++ IntelliSense 향상 – 예측 IntelliSense 및 필터링)을 참조하세요.
-- 이제 **모든 참조 찾기** (Shift+F12)를 사용하여 복잡한 코드베이스에서도 쉽게 탐색할 수 있습니다. 고급 그룹화, 필터링, 정렬, 결과 내 검색 및 (일부 언어의 경우) 색 지정이 제공되므로 참조를 명확하게 이해할 수 있습니다. C++의 경우 새로운 UI에 변수에서 읽고 있는지 아니면 변수에 쓰고 있는지에 대한 정보가 포함되어 있습니다.
+- 이제 **모든 참조 찾기**(Shift+F12)를 사용하여 복잡한 코드베이스에서도 쉽게 탐색할 수 있습니다. 고급 그룹화, 필터링, 정렬, 결과 내 검색 및 (일부 언어의 경우) 색 지정이 제공되므로 참조를 명확하게 이해할 수 있습니다. C++의 경우 새로운 UI에 변수에서 읽고 있는지 아니면 변수에 쓰고 있는지에 대한 정보가 포함되어 있습니다.
 - IntelliSense 점-화살표 기능이 실험적에서 고급으로 옮겨졌고 이제 기본적으로 사용됩니다. 편집기 기능인 **범위 확장** 과 **우선 순위 확장** 도 실험적에서 고급으로 옮겨졌습니다.
 - 실험적 리팩터링 기능인 **시그니처 변경** 과 **함수 추출** 을 기본적으로 사용할 수 있습니다.
 - C++ 프로젝트에 대해 ‘빠른 프로젝트 로드’라는 실험적 기능이 추가되었습니다. 다음에 C++ 프로젝트를 열 때 프로젝트가 더 빠르게 로드되고, 그 후에 프로젝트를 열 때는 ‘훨씬’ 더 빠르게 로드됩니다.
