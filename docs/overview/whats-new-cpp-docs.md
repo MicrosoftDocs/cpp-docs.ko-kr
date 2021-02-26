@@ -1,13 +1,13 @@
 ---
 title: C++ 문서의 새로운 기능
 description: Microsoft C/C++ 컴파일러, ATL/MFC, C 런타임, 표준 라이브러리 문서에 대한 새로운 문서 및 문서 업데이트입니다.
-ms.date: 02/08/2021
-ms.openlocfilehash: 3b6d248b99415c91b4086b00ecc54fc39d2c348a
-ms.sourcegitcommit: 77235bff6a7b2621c501938e30d93cb15f5733cb
+ms.date: 02/17/2021
+ms.openlocfilehash: b15d286eb7bd2951ab2b8101a752de2beb57f4a4
+ms.sourcegitcommit: e99db7c3b5f25ece0e152165066c926751a7c2ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "100006043"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100643575"
 ---
 # <a name="microsoft-c-docs-whats-new-for-visual-studio-168"></a>Microsoft C++ 문서: Visual Studio 16.8의 새로운 기능
 
@@ -183,7 +183,7 @@ Visual Studio의 새로운 기능에 대한 자세한 내용은 [Visual Studio�
 ### <a name="updated-articles"></a>업데이트된 문서
 
 - [`<ios>` typedef](../standard-library/ios-typedefs.md) - GitHub #2514별 예제 업데이트됨
-- [`basic_string` 클래스](../standard-library/basic-string-class.md) - `startswith()`, `endswith()` 추가됨
+- [`basic_string` 클래스](../standard-library/basic-string-class.md) - `_starts_with()`, `ends_with()` 추가됨
 - [`ios_base Class`](../standard-library/ios-base-class.md)
 - [`map` 클래스](../standard-library/map-class.md)
 - [`multimap` 클래스](../standard-library/multimap-class.md) - `contains()` 추가됨
@@ -193,7 +193,7 @@ Visual Studio의 새로운 기능에 대한 자세한 내용은 [Visual Studio�
 - [`unordered_multimap` 클래스](../standard-library/unordered-multimap-class.md) - `contains()` 추가됨
 - [`unordered_multiset` 클래스](../standard-library/unordered-multiset-class.md) - `contains()` 추가됨
 - [`unordered_set` 클래스](../standard-library/unordered-set-class.md) - `contains()` 추가됨
-- [`basic_string_view` 클래스](../standard-library/basic-string-view-class.md) - `startswith()`, `endswith()` 추가됨
+- [`basic_string_view` 클래스](../standard-library/basic-string-view-class.md) - `starts_with()`, `ends_with()` 추가됨
 - [`<bit>` 함수](../standard-library/bit-functions.md) - `nodiscard` 구문 업데이트됨
 
 ## <a name="community-contributors"></a>커뮤니티 기여자
