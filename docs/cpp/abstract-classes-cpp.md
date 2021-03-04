@@ -1,27 +1,26 @@
 ---
 description: '자세한 정보: 추상 클래스 (c + +)'
-title: 추상 클래스 (C++)
-ms.date: 11/04/2016
+title: 추상 클래스 (c + +)
+ms.date: 02/18/2021
 helpviewer_keywords:
 - classes [C++], abstract
 - base classes [C++], abstract classes [C++]
 - abstract classes [C++]
 - derived classes [C++], abstract classes [C++]
-ms.assetid: f0c5975b-39de-4d68-9640-6ce57f4632e6
-ms.openlocfilehash: bb1c42ce7930128e72c88afaca90da7aaac0bde5
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 8a20e988cb0c0a134fd2ebb83382d81c838bcf23
+ms.sourcegitcommit: 5efc34c2b98d4d0d3e41aec38b213f062c19d078
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97288414"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101844496"
 ---
-# <a name="abstract-classes-c"></a>추상 클래스 (C++)
+# <a name="abstract-classes-c"></a>추상 클래스 (c + +)
 
-추상 클래스는 보다 구체적인 클래스가 파생될 수 있는 일반 개념의 식 역할을 합니다. 추상 클래스 형식의 개체를 만들 수는 없지만, 추상 클래스 형식에 대한 포인터와 참조를 사용할 수 있습니다.
+추상 클래스는 보다 구체적인 클래스가 파생될 수 있는 일반 개념의 식 역할을 합니다. 추상 클래스 형식의 개체를 만들 수 없습니다. 그러나 추상 클래스 형식에 대 한 포인터 및 참조를 사용할 수 있습니다.
 
-순수 가상 함수가 하나 이상 포함된 클래스는 추상 클래스로 간주됩니다. 추상 클래스에서 파생된 클래스는 순수 가상 함수를 구현해야 합니다. 이렇게 하지 않으면 파생된 클래스도 추상 클래스가 됩니다.
+하나 이상의 순수 가상 멤버 함수를 선언 하 여 추상 클래스를 만듭니다. 순수 지정자 () 구문을 사용 하 여 선언 된 가상 함수입니다 `= 0` . 추상 클래스에서 파생된 클래스는 순수 가상 함수를 구현해야 합니다. 이렇게 하지 않으면 파생된 클래스도 추상 클래스가 됩니다.
 
-[가상 함수](../cpp/virtual-functions.md)에 제공 된 예제를 참조 하세요. `Account` 클래스의 용도는 일반적인 기능을 제공하는 것이지만, `Account` 형식의 개체는 너무 일반적이어서 유용하게 사용하기가 어렵습니다. 따라서 `Account`는 적합한 추상 클래스 후보입니다.
+[가상 함수](../cpp/virtual-functions.md)에 제공 된 예제를 참조 하세요. `Account` 클래스의 용도는 일반적인 기능을 제공하는 것이지만, `Account` 형식의 개체는 너무 일반적이어서 유용하게 사용하기가 어렵습니다. 즉, `Account` 다음은 추상 클래스에 적합 한 후보입니다.
 
 ```cpp
 // deriv_AbstractClasses.cpp
@@ -40,7 +39,7 @@ private:
 
 ## <a name="restrictions-on-abstract-classes"></a>추상 클래스에 대한 제한
 
-추상 클래스는 다음 용도로 사용할 수 없습니다.
+추상 클래스는 다음에 사용할 수 없습니다.
 
 - 변수 또는 멤버 데이터
 
@@ -50,42 +49,46 @@ private:
 
 - 명시적 변환 형식
 
-또 다른 제한 사항은 추상 클래스에 대한 생성자가 직/간접적으로 순수 가상 함수를 호출하는 경우 결과가 정의되지 않는다는 것입니다. 하지만 추상 클래스의 생성자 및 소멸자는 다른 멤버 함수를 호출할 수 있습니다.
+추상 클래스에 대 한 생성자가 직접 또는 간접적으로 순수 가상 함수를 호출 하는 경우 결과가 정의 되지 않습니다. 하지만 추상 클래스의 생성자 및 소멸자는 다른 멤버 함수를 호출할 수 있습니다.
 
-순수 가상 함수에 대한 추상 클래스를 정의할 수 있지만 직접 호출하려면 반드시 다음의 구문을 사용해야 합니다.
+## <a name="defined-pure-virtual-functions"></a>정의 된 순수 가상 함수
+
+추상 클래스의 순수 가상 함수를 *정의* 하거나 구현할 수 있습니다. 정규화 된 구문만 사용 하 여 이러한 함수를 호출할 수 있습니다.
 
 *추상-클래스-이름*::*함수 이름*()
 
-개체를 제거하는 과정에서 기본 클래스 소멸자가 항상 호출되기 때문에 기본 클래스가 순수 가상 소멸자를 포함하는 클래스 계층 구조를 설계할 때 도움이 됩니다. 다음 예제를 참조하세요.
+정의 된 순수 가상 함수는 순수 가상 소멸자를 포함 하는 기본 클래스의 클래스 계층 구조를 디자인 하는 경우에 유용 합니다. 이는 기본 클래스 소멸자가 항상 개체 소멸 중에 호출 되기 때문입니다. 다음 예제를 참조하세요.
 
 ```cpp
+// deriv_RestrictionsOnUsingAbstractClasses.cpp
 // Declare an abstract base class with a pure virtual destructor.
-// deriv_RestrictionsonUsingAbstractClasses.cpp
-class base {
+// It's the simplest possible abstract class.
+class base
+{
 public:
     base() {}
-    virtual ~base()=0;
+    virtual ~base() = 0 {}; // pure virtual, and defined!
 };
 
-// Provide a definition for destructor.
-base::~base() {}
-
-class derived:public base {
+class derived : public base
+{
 public:
     derived() {}
-    ~derived(){}
+    ~derived() {}
 };
 
-int main() {
-    derived *pDerived = new derived;
-    delete pDerived;
+int main()
+{
+    derived aDerived; // destructor called when it goes out of scope
 }
 ```
 
-`pDerived`가 가리키는 개체가 소멸하면, 클래스 소멸자인 `derived`가 호출된 다음 클래스 소멸자, `base`가 호출됩니다. 순수 가상 함수에 비어 있는 구현을 사용하면 해당 함수에 대해 최소한의 구현이 존재하게 됩니다.
+예제에서는 인라인의 정의를 보여 `~base()` 주지만를 사용 하 여 클래스 외부에서 정의할 수도 있습니다 `base::~base() {}` .
+
+개체가 범위를 벗어나면 `aDerived` 클래스의 소멸자 `derived` 가 호출 됩니다. 컴파일러가 소멸자 이후에 클래스의 소멸자를 암시적으로 호출 하는 코드를 생성 합니다 `base` `derived` . 순수 가상 함수에 대 한 빈 구현은 `~base` 함수에 대해 최소한의 구현이 있는지 확인 합니다. 이 메서드를 사용 하지 않으면 링커가 암시적 호출에 대해 확인 되지 않은 외부 기호 오류를 생성 합니다.
 
 > [!NOTE]
-> 앞의 예제에서 순수 가상 함수인 `base::~base`는 `derived::~derived`에서 암시적으로 호출됩니다. 명시적으로 전체 정규화된 멤버 함수 이름을 사용하여 순수 가상 함수를 호출할 수도 있습니다.
+> 앞의 예제에서 순수 가상 함수인 `base::~base`는 `derived::~derived`에서 암시적으로 호출됩니다. 정규화 된 멤버 함수 이름을 사용 하 여 명시적으로 순수 가상 함수를 호출할 수도 있습니다. 이러한 함수에는 구현이 있어야 합니다. 그렇지 않으면 연결 시 오류가 발생 합니다.
 
 ## <a name="see-also"></a>추가 정보
 

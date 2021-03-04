@@ -8,12 +8,12 @@ f1_keywords:
 - C5021
 - C5001
 - C5012
-ms.openlocfilehash: 3e2d458d177b8a7032276d29940a7ff2dac83b36
-ms.sourcegitcommit: e99db7c3b5f25ece0e152165066c926751a7c2ed
+ms.openlocfilehash: 9cfafe9af4859a2bb4dbd7897a14003d85052f63
+ms.sourcegitcommit: 5efc34c2b98d4d0d3e41aec38b213f062c19d078
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100643562"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101844548"
 ---
 # <a name="vectorizer-and-parallelizer-messages"></a>벡터화 도우미 및 병렬화 도우미 메시지
 
@@ -28,7 +28,7 @@ Microsoft c + + 컴파일러 옵션을 사용 하 여 [`/Qpar-report`](../../bui
 | 정보 메시지 | Description |
 |--|--|
 | 5001 | 루프가 벡터화되었습니다. |
-| 5002 | '*Description*' 이유로 인해 루프가 벡터화 되지 않습니다. |
+| 5002 | '*Description*' 때문에 루프가 벡터화 되지 않습니다. |
 | 5011 | 루프가 병렬화되었습니다. |
 | 5012 | '*Description*' 이유로 인해 루프가 병렬화 되지 않았습니다. |
 | 5021 | Pragma를 사용하여 루프를 연결할 수 없습니다. |
@@ -41,11 +41,12 @@ Microsoft c + + 컴파일러 옵션을 사용 하 여 [`/Qpar-report`](../../bui
 
 | 이유 코드 | 설명 |
 |--|--|
-| 500 | 여러 가지 사례를 포함 하는 일반 메시지-예를 들어 루프가 여러 번 종료 되거나, 루프 헤더가 유도 변수를 증가 시켜 끝나지 않습니다. |
+| 500 | 여러 가지 사례를 포함 하는 일반 메시지: 예를 들어 루프가 여러 번 종료 되거나, 루프 헤더가 유도 변수를 증가 시켜 끝나지 않습니다. |
 | 501 | 유도 변수가 로컬이 아닙니다. 또는 상한이 루프 고정이 아닙니다. |
 | 502 | 유도 변수는 단순한 +1 이외의 다른 방법으로도 실행됩니다. |
 | 503 | 루프는 예외 처리 또는 switch 문을 포함합니다. |
 | 504 | 루프 본문은 C++ 개체의 소멸을 요구하는 예외를 던질 수 있습니다. |
+| 505 | 외부 루프에는 미리 증가 된 유도 변수가 있습니다. 분석 종료. |
 
 ```cpp
 void code_500(int *A)
@@ -83,7 +84,7 @@ void code_501_example1(int *A)
 {
     // Code 501 is emitted if the compiler cannot discern the
     // induction variable of this loop. In this case, when it checks
-    // the upperbound of 'i', the compiler cannot prove that the
+    // the upper bound of 'i', the compiler cannot prove that the
     // function call "bound()" returns the same value each time.
     // Also, the compiler cannot prove that the call to "bound()"
     // does not modify the values of array A.
@@ -94,7 +95,7 @@ void code_501_example1(int *A)
     }
 
     // To resolve code 501, ensure that the induction variable is
-    // a local variable, and ensure that the upperbound is a
+    // a local variable, and ensure that the upper bound is a
     // provably loop invariant value.
 
     for (int i=0, imax = bound(); i<imax; ++i)
@@ -116,7 +117,7 @@ void code_501_example2(int *A)
     }
 
     // To resolve code 501, ensure that the induction variable is
-    // a local variable, and ensure that the upperbound is a
+    // a local variable, and ensure that the upper bound is a
     // provably loop invariant value.
 
     for (int i=0; i<1000; ++i)
@@ -184,7 +185,8 @@ public:
     ~C504();
 };
 
-void code_504(int *A) {
+void code_504(int *A)
+{
     // Code 504 is emitted if a C++ object was created and
     // that object requires EH unwind tracking information under
     // /EHs or /EHsc.
@@ -195,6 +197,23 @@ void code_504(int *A) {
         A[i] = code_504_helper();
     }
 
+}
+
+void code_505(int *A)
+{
+    // Code 505 is emitted on outer loops with pre-incremented
+    // induction variables. The vectorizer/parallelizer analysis
+    // package doesn't support these loops, and they are
+    // intentionally not converted to post-increment loops to
+    // prevent a performance degradation.
+
+    // To parallelize an outer loop that causes code 505, change
+    // it to a post-incremented loop.
+
+    for (int i=100; i--; )
+        for (int j=0; j<100; j++) { // this loop is still vectorized
+            A[j] = A[j] + 1;
+        }                    
 }
 ```
 
@@ -212,7 +231,7 @@ void code_504(int *A) {
 | 1005 | `no_parallel`Pragma가 지정 되었습니다. |
 | 1006 | 이 함수는 OpenMP를 포함 합니다. 이 함수에서 OpenMP를 제거 하 여 문제를 해결 합니다. |
 | 1007 | Loop 유도 변수 또는 루프 범위는 32 비트 숫자 (또는)에 서명 되지 않습니다 `int` `long` . 유도 변수의 유형을 변경 하 여 문제를 해결 합니다. |
-| 1008 | 컴파일러가이 루프가 자동 병렬화를 정당화 하기에 충분 한 작업을 수행 하지 않음을 감지 했습니다. |
+| 1008 | 컴파일러가이 루프에서 자동 병렬화를 정당화 하기에 충분 한 작업을 수행 하지 않음을 감지 했습니다. |
 | 1009 | 컴파일러가 "" 루프를 병렬화 하려고 했습니다 `do` - `while` . 자동 평행 화 도우미는 "" 루프를 대상으로 `for` 합니다. |
 | 1010 | 컴파일러가 루프에서 조건에 대해 "같지 않음" ()을 사용 하 고 있음을 감지 했습니다 `!=` . |
 
@@ -414,7 +433,7 @@ void code_1010()
 | 이유 코드 | 설명 |
 |--|--|
 | 1100 | 루프는 제어 흐름 (예: " `if` " 또는 "")을 포함 `?:` 합니다. |
-| 1101 | 루프에 벡터화 수 없는 암시적 데이터 형식 변환이 포함 되어 있습니다. |
+| 1101 | 루프에는 벡터화 수 없는 암시적 데이터 형식 변환이 포함 되어 있습니다. |
 | 1102 | 루프는 비산술적이거나 다른 비벡터화 작업을 포함합니다. |
 | 1103 | 루프 본문이 루프 내에서 크기가 다를 수 있는 시프트 연산을 포함합니다. |
 | 1104 | 루프 본문은 스칼라 변수를 포함합니다. |
@@ -434,7 +453,7 @@ void code_1100(int *A, int x)
 
     for (int i=0; i<1000; ++i)
     {
-        // straightline code is more amenable to vectorization
+        // straight line code is more amenable to vectorization
         if (x)
         {
             A[i] = A[i] + 1;
@@ -561,7 +580,7 @@ void code_1106(int *A)
 
 | 이유 코드 | 설명 |
 |--|--|
-| 1200 | 루프에는 벡터화를 방지 하는 루프 전달 데이터 종속성이 포함 되어 있습니다. 루프의 각 반복이 서로 방해 하므로 루프를 벡터화 하면 잘못 된 답변이 생성 되며 자동 벡터화를 통해 해당 데이터 종속성 없다는 것을 입증할 수 없습니다. |
+| 1200 | 루프에는 벡터화를 방지 하는 루프 전달 데이터 종속성이 포함 되어 있습니다. 루프의 각 반복이 서로 충돌 하 여 루프 벡터화에서 잘못 된 응답을 생성 하 고 자동 벡터화가 이러한 데이터 종속성이 없다는 것을 입증할 수 없습니다. |
 | 1201 | 배열의 시작점이 루프 도중에 변경됩니다. |
 | 1202 | 구조체의 필드는 32 또는 64 비트 너비가 아닙니다. |
 | 1203 | 루프 본문이 연속되지 않은 배열 액세스를 포함합니다. |
@@ -653,7 +672,7 @@ void code_1204(int *A)
 
 | 이유 코드 | 설명 |
 |--|--|
-| 1300 | 루프 본문은 계산을 (혹은 거의) 포함하지 않습니다. |
+| 1300 | 루프 본문에는 계산이 거의 포함 되지 않습니다. |
 | 1301 | 루프 스트라이드는 + 1이 아닙니다. |
 | 1302 | Loop는 " `do` - `while` "입니다. |
 | 1303 | 벡터화하여 값을 제공하기에는 너무 적은 루프 반복입니다. |
@@ -703,7 +722,7 @@ int code_1303(int *A, int *B)
     // make vectorization profitable.
 
     // If the loop computation fits perfectly in
-    // vector registers - for example, the upperbound is 4, or 8 in
+    // vector registers - for example, the upper bound is 4, or 8 in
     // this case - then the loop _may_ be vectorized.
 
     // This loop is not vectorized because there are 5 iterations
