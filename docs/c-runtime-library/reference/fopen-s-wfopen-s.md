@@ -1,7 +1,7 @@
 ---
 title: fopen_s, _wfopen_s
 description: 및 용 API에 대해 설명 합니다. `fopen_s``_wfopen_s`
-ms.date: 11/20/2020
+ms.date: 2/24/2021
 api_name:
 - _wfopen_s
 - fopen_s
@@ -39,13 +39,12 @@ helpviewer_keywords:
 - Unicode [C++], writing files
 - files [C++], opening
 - Unicode [C++], files
-ms.assetid: c534857e-39ee-4a3f-bd26-dfe551ac96c3
-ms.openlocfilehash: 1d6d0b739db1177b903c0e8aa8e6f55e49c1df16
-ms.sourcegitcommit: b02c61667ff7f38e7add266d0aabd8463f2dbfa1
+ms.openlocfilehash: a034eda7ad45be30decccee50a104c0565907c41
+ms.sourcegitcommit: c0c9cdae79f19655e809a4979227c51bb19cff63
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95483167"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236539"
 ---
 # <a name="fopen_s-_wfopen_s"></a>`fopen_s`, `_wfopen_s`
 
@@ -99,7 +98,7 @@ errno_t _wfopen_s(
 
 이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. *`pFile`*, *`filename`* 또는 *`mode`* 가 null 포인터인 경우이 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 예외를 생성 합니다.
 
-파일에서 추가 작업을 수행 하기 전에 항상 반환 값을 확인 하 여 함수가 성공 했는지 확인 합니다. 오류가 발생 하면 오류 코드가 반환 되 고 전역 변수가 **`errno`** 설정 됩니다. 자세한 내용은 [`errno, _doserrno, _sys_errlist, and _sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을(를) 참조하세요.
+파일에서 추가 작업을 수행 하기 전에 항상 반환 값을 확인 하 여 함수가 성공 했는지 확인 합니다. 오류가 발생 하면 오류 코드가 반환 되 고 전역 변수가 **`errno`** 설정 됩니다. 자세한 내용은 [`errno, _doserrno, _sys_errlist, and _sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
 기본적으로이 함수의 전역 상태는 응용 프로그램으로 범위가 지정 됩니다. 이를 변경 하려면 [CRT의 전역 상태](../global-state.md)를 참조 하세요.
 
@@ -128,7 +127,7 @@ errno_t _wfopen_s(
 
 유니코드 모드에서 쓰도록 파일을 열면 BOM이 파일에 자동으로 기록됩니다.
 
-*`mode`* 가 **`"a, ccs=` _encoding_ encoding `"`** 인 경우는 **`fopen_s`** 먼저 읽기 액세스와 쓰기 권한을 모두 사용 하 여 파일을 열려고 시도 합니다. 성공하면 함수가 BOM을 읽어서 파일에 대한 인코딩을 결정하고, 실패하면 함수가 파일에 대한 기본 인코딩을 사용합니다. 두 경우 모두 **`fopen_s`** 쓰기 전용 액세스 권한으로 파일을 다시 열립니다. 이 **`a`** 는 모드에만 적용 되 고는 적용 되지 않습니다 **`a+`** .
+*`mode`* 가 **`"a, ccs=` encoding `"`** 인 경우는 **`fopen_s`** 먼저 읽기 액세스와 쓰기 권한을 모두 사용 하 여 파일을 열려고 시도 합니다. 성공하면 함수가 BOM을 읽어서 파일에 대한 인코딩을 결정하고, 실패하면 함수가 파일에 대한 기본 인코딩을 사용합니다. 두 경우 모두 **`fopen_s`** 쓰기 전용 액세스 권한으로 파일을 다시 열립니다. 이 **`a`** 는 모드에만 적용 되 고는 적용 되지 않습니다 **`a+`** .
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
 
@@ -153,6 +152,8 @@ errno_t _wfopen_s(
 
 **`"r+"`**, **`"w+"`** 또는 **`"a+"`** 액세스 형식을 지정한 경우 읽기와 쓰기가 모두 허용 됩니다. 파일은 "업데이트" 용으로 열립니다. 그러나 읽기에서 쓰기로 전환 하는 경우 입력 작업은 EOF 표식에서 가져와야 합니다. EOF 표식이 없는 경우 파일 위치 지정 함수에 대 한 중간 호출을 사용 해야 합니다. 파일 위치 지정 함수는 **`fsetpos`** , [`fseek`](fseek-fseeki64.md) 및 [`rewind`](rewind.md) 입니다. 쓰기에서 읽기로 전환 하는 경우 **`fflush`** 또는 파일 위치 지정 함수에 대 한 중간 호출을 사용 해야 합니다.
 
+C11부터 또는에 추가 하 여 **`"x"`** **`"w"`** **`"w+"`** 파일이 있는 경우 덮어쓰지 않고 함수가 실패할 수 있습니다.
+
 위의 값 이외에 다음 문자를에 포함 *`mode`* 하 여 줄 바꿈 문자에 대 한 변환 모드를 지정할 수 있습니다.
 
 |*`mode`* modifier|변환 모드|
@@ -171,13 +172,13 @@ errno_t _wfopen_s(
 |*`mode`* modifier|동작|
 |-|-|
 | **`c`** | 또는가 호출 될 때 파일 버퍼의 내용이 디스크에 직접 기록 되도록 연결 된 *파일 이름* 에 대 한 커밋 플래그를 사용 하도록 설정 합니다 **`fflush`** **`_flushall`** . |
-| **`n`** | 관련 *파일 이름* 에 대 한 커밋 플래그를 "커밋 안 함"으로 다시 설정 합니다. 이것이 기본값입니다. 또한 프로그램을 COMMODE.OBJ와 연결할 경우 전역 커밋 플래그를 재정의합니다. 프로그램을 COMMODE.OBJ와 명시적으로 연결하지 않을 경우 전역 커밋 플래그 기본값은 "커밋 안 함"입니다( [Link Options](../../c-runtime-library/link-options.md)참조). |
+| **`n`** | 관련 *파일 이름* 에 대 한 커밋 플래그를 "커밋 안 함"으로 다시 설정 합니다. 기본값입니다. 또한 프로그램을 COMMODE.OBJ와 연결할 경우 전역 커밋 플래그를 재정의합니다. 프로그램을 COMMODE.OBJ와 명시적으로 연결하지 않을 경우 전역 커밋 플래그 기본값은 "커밋 안 함"입니다( [Link Options](../../c-runtime-library/link-options.md)참조). |
 | **`n`** | 자식 프로세스에서 파일을 상속 하지 않도록 지정 합니다. |
 | **`S`** | 캐싱이 디스크에서 순차적 액세스를 위해 최적화되며 이에 제한되지 않습니다. |
 | **`R`** | 캐싱이 디스크에서 임의 액세스를 위해 최적화되며 이에 제한되지 않습니다. |
 | **`t`** | 파일을 임시 파일로 지정합니다. 가능 하면 디스크에 플러시되지 않습니다. |
 | **`D`** | 파일을 임시 파일로 지정합니다. 마지막 파일 포인터를 닫을 때 삭제 됩니다. |
-| **`ccs=**`_인코딩이_ | **`UTF-8`** **`UTF-16LE`** 이 파일에 사용할 인코딩된 문자 집합 (, 또는 중 하나)을 지정 합니다 **`UNICODE`** . ANSI 인코딩을 원할 경우 지정되지 않은 상태로 둡니다. |
+| **`ccs=`**_인코딩이_ | **`UTF-8`** **`UTF-16LE`** 이 파일에 사용할 인코딩된 문자 집합 (, 또는 중 하나)을 지정 합니다 **`UNICODE`** . ANSI 인코딩을 원할 경우 지정되지 않은 상태로 둡니다. |
 
 및에서 사용 되는 문자열에 유효한 문자는 *`mode`* **`fopen_s`** [`_fdopen`](fdopen-wfdopen.md) *`oflag`* 다음과 같이 및에 사용 되는 인수와 일치 [`_open`](open-wopen.md) [`_sopen`](sopen-wsopen.md) 합니다.
 
@@ -205,7 +206,7 @@ errno_t _wfopen_s(
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|필수 헤더|
+|함수|필수 헤더|
 |--------------|---------------------|
 |**`fopen_s`**|`<stdio.h>`|
 |**`_wfopen_s`**|`<stdio.h>` 또는 `<wchar.h>`|
@@ -216,7 +217,7 @@ errno_t _wfopen_s(
 
 모든 버전의 [C 런타임 라이브러리](../../c-runtime-library/crt-library-features.md)입니다.
 
-**`c`**, **`n`** 및 옵션은 **`t`** *`mode`* 및에 대 한 Microsoft **`fopen_s`** 확장 [`_fdopen`](fdopen-wfdopen.md) 이며 ANSI 이식성이 필요한 경우에는 사용할 수 없습니다.
+**`c`**, **`n`** 및 옵션은 **`t`** *`mode`* 및에 대 한 Microsoft **`fopen_s`** 확장 [`_fdopen`](fdopen-wfdopen.md) 이며 ANSI 이식성을 원하는 위치에서 사용할 수 없습니다.
 
 ## <a name="example"></a>예제
 
@@ -282,7 +283,7 @@ The file 'data2' was opened
 Number of files closed by _fcloseall: 1
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [스트림 i/o](../../c-runtime-library/stream-i-o.md)\
 [`fclose, _fcloseall`](fclose-fcloseall.md)\

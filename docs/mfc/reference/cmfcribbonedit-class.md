@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CMFCRibbonEdit [MFC], SetTextAlign
 - CMFCRibbonEdit [MFC], SetWidth
 ms.assetid: 9b85f1f2-446b-454e-9af9-104fdad8a897
-ms.openlocfilehash: 83920c9779af10861e32ce964e91af767a3d9e96
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: be88698de9f98c590efebd4e2e8780d810aa8b96
+ms.sourcegitcommit: c0c9cdae79f19655e809a4979227c51bb19cff63
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97193105"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236565"
 ---
 # <a name="cmfcribbonedit-class"></a>Cmfc리본 Edit 클래스
 
@@ -91,7 +91,7 @@ ms.locfileid: "97193105"
 class CMFCRibbonEdit : public CMFCRibbonButton
 ```
 
-## <a name="members"></a>멤버
+## <a name="members"></a>구성원
 
 ### <a name="public-constructors"></a>Public 생성자
 
@@ -528,12 +528,12 @@ virtual void OnDrawOnList(
 진행 컨트롤의 장치 컨텍스트에 대 한 포인터 `CMFCRibbonEdit` 입니다.
 
 *strText*<br/>
-진행 표시 텍스트 [](../../mfc/reference/cmfcribbonedit-class.md "cmfc리본 edit 클래스") 입니다.
+진행 표시 텍스트입니다.
 
 *nTextOffset*<br/>
 진행 목록 상자의 좌 변에 표시 텍스트 까지의 거리 (픽셀)입니다.
 
-*rect*<br/>
+*직교*<br/>
 진행 컨트롤의 표시 사각형 `CMFCRibbonEdit` 입니다.
 
 *bIsSelected*<br/>

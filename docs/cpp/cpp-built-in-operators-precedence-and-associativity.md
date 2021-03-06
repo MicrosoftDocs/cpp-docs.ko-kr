@@ -13,12 +13,12 @@ helpviewer_keywords:
 - evaluation order
 - hierarchy, operator
 ms.assetid: 95c1f0ba-dad8-4034-b039-f79a904f112f
-ms.openlocfilehash: ff8ae84a62ef47449364d0815922326d7b8566d4
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 8f45b7e45597fde1deaa349db6fd098b0d7ac319
+ms.sourcegitcommit: c0c9cdae79f19655e809a4979227c51bb19cff63
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97253964"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236766"
 ---
 # <a name="c-built-in-operators-precedence-and-associativity"></a>C + + 기본 제공 연산자, 우선 순위 및 결합성
 
@@ -68,7 +68,7 @@ C + +에서는 일부 연산자에 대 한 대체 철자를 지정 합니다. C�
 | [멤버 포인터(개체 또는 포인터)](../cpp/pointer-to-member-operators-dot-star-and-star.md) | [`.*` 디스크나 `->*`](../cpp/pointer-to-member-operators-dot-star-and-star.md) |
 | **그룹 5 우선 순위, 왼쪽에서 오른쪽으로 결합성** |
 | [*](../cpp/multiplicative-operators-and-the-modulus-operator.md) | [`*`](../cpp/multiplicative-operators-and-the-modulus-operator.md) |
-| [사업부](../cpp/multiplicative-operators-and-the-modulus-operator.md) | [`/`](../cpp/multiplicative-operators-and-the-modulus-operator.md) |
+| [문이나](../cpp/multiplicative-operators-and-the-modulus-operator.md) | [`/`](../cpp/multiplicative-operators-and-the-modulus-operator.md) |
 | [모듈러스](../cpp/multiplicative-operators-and-the-modulus-operator.md) | [`%`](../cpp/multiplicative-operators-and-the-modulus-operator.md) |
 | **그룹 6 우선 순위, 왼쪽에서 오른쪽으로 결합성** |
 | [또한](../cpp/additive-operators-plus-and.md) | [`+`](../cpp/additive-operators-plus-and.md) |
@@ -82,7 +82,7 @@ C + +에서는 일부 연산자에 대 한 대체 철자를 지정 합니다. C�
 | [작거나 같음](../cpp/relational-operators-equal-and-equal.md) | [`<=`](../cpp/relational-operators-equal-and-equal.md) |
 | [크거나 같음](../cpp/relational-operators-equal-and-equal.md) | [`>=`](../cpp/relational-operators-equal-and-equal.md) |
 | **그룹 9 우선 순위, 왼쪽에서 오른쪽으로의 결합성** |
-| [같음](../cpp/equality-operators-equal-equal-and-exclpt-equal.md) | [`==`](../cpp/equality-operators-equal-equal-and-exclpt-equal.md) |
+| [등호](../cpp/equality-operators-equal-equal-and-exclpt-equal.md) | [`==`](../cpp/equality-operators-equal-equal-and-exclpt-equal.md) |
 | [같지 않음](../cpp/equality-operators-equal-equal-and-exclpt-equal.md) | [`!=`](../cpp/equality-operators-equal-equal-and-exclpt-equal.md) | **`not_eq`** |
 | **그룹 10 우선 순위 왼쪽에서 오른쪽 결합성** |
 | [비트 AND](../cpp/bitwise-and-operator-amp.md) | [`&`](../cpp/bitwise-and-operator-amp.md) | **`bitand`** |
@@ -96,7 +96,6 @@ C + +에서는 일부 연산자에 대 한 대체 철자를 지정 합니다. C�
 | [논리적 OR](../cpp/logical-or-operator-pipe-pipe.md) | [`||`](../cpp/logical-or-operator-pipe-pipe.md) | **`or`** |
 | **그룹 15 우선 순위, 오른쪽에서 왼쪽으로의 연관성** |
 | [조건부](../cpp/conditional-operator-q.md) | [`? :`](../cpp/conditional-operator-q.md) |
-| **그룹 16 우선 순위, 오른쪽에서 왼쪽 결합성** |
 | [할당](../cpp/assignment-operators.md) | [`=`](../cpp/assignment-operators.md) |
 | [곱하기 할당](../cpp/assignment-operators.md) | [`*=`](../cpp/assignment-operators.md) |
 | [나누기 할당](../cpp/assignment-operators.md) | [`/=`](../cpp/assignment-operators.md) |
@@ -108,9 +107,8 @@ C + +에서는 일부 연산자에 대 한 대체 철자를 지정 합니다. C�
 | [비트 AND 대입](../cpp/assignment-operators.md) | [`&=`](../cpp/assignment-operators.md) | **`and_eq`** |
 | [포괄적 비트 OR 대입](../cpp/assignment-operators.md) | [`|=`](../cpp/assignment-operators.md) | **`or_eq`** |
 | [배타적 비트 OR 대입](../cpp/assignment-operators.md) | [`^=`](../cpp/assignment-operators.md) | **`xor_eq`** |
-| **그룹 17 우선 순위, 오른쪽에서 왼쪽으로의 연관성** |
 | [throw 식](../cpp/try-throw-and-catch-statements-cpp.md) | [`throw`](../cpp/try-throw-and-catch-statements-cpp.md) |
-| **그룹 18 우선 순위, 왼쪽에서 오른쪽으로의 결합성** |
+| **그룹 16 우선 순위, 왼쪽에서 오른쪽으로 결합성** |
 | [쉼표](../cpp/comma-operator.md) | [,](../cpp/comma-operator.md) |
 
 ## <a name="see-also"></a>참고 항목

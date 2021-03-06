@@ -7,18 +7,18 @@ helpviewer_keywords:
 - constants, literals
 - literals [C++]
 ms.assetid: 17c09fc3-3ad7-47e2-8b48-ba8ae994edc8
-ms.openlocfilehash: 84fdac7010805fc4d0a429231a080ab11d5c595a
-ms.sourcegitcommit: f7fbdc39d73e1fb3793c396fccf7a1602af7248b
+ms.openlocfilehash: f817fcca35a741dac29047e214897758cdc93edb
+ms.sourcegitcommit: c0c9cdae79f19655e809a4979227c51bb19cff63
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91662258"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236714"
 ---
 # <a name="numeric-boolean-and-pointer-literals"></a>숫자, 부울 및 포인터 리터럴
 
-리터럴은 값을 직접 나타내는 프로그램 요소입니다. 이 문서에서는 정수, 부동 소수점, 부울 및 포인터 형식의 리터럴을 설명 합니다. 문자열 및 문자 리터럴에 대 한 자세한 내용은 [문자열 및 문자 리터럴 (c + +)](../cpp/string-and-character-literals-cpp.md)을 참조 하세요. 이러한 범주에 따라 사용자 고유의 리터럴을 정의할 수도 있습니다. 자세한 내용은 [사용자 정의 리터럴 (c + +)](../cpp/user-defined-literals-cpp.md) 을 참조 하세요.
+리터럴은 값을 직접 나타내는 프로그램 요소입니다. 이 문서에서는 정수, 부동 소수점, 부울 및 포인터 형식의 리터럴을 설명 합니다. 문자열 및 문자 리터럴에 대 한 자세한 내용은 [문자열 및 문자 리터럴 (c + +)](../cpp/string-and-character-literals-cpp.md)을 참조 하세요. 이러한 범주에 따라 사용자 고유의 리터럴을 정의할 수도 있습니다. 자세한 내용은 [사용자 정의 리터럴 (c + +)](../cpp/user-defined-literals-cpp.md)을 참조 하세요.
 
-. 리터럴은 많은 컨텍스트에서 사용할 수 있지만 가장 일반적으로 명명된 변수를 초기화하고 인수를 함수에 전달하는 데 사용됩니다.
+리터럴은 많은 컨텍스트에서 사용할 수 있지만 가장 일반적으로 명명된 변수를 초기화하고 인수를 함수에 전달하는 데 사용됩니다.
 
 ```cpp
 const int answer = 42;      // integer literal
@@ -79,7 +79,7 @@ long long i = 24'847'458'121
 
 부동 소수점 리터럴은 소수 부분이 있어야 하는 값을 지정합니다. 이러한 값에는 소수점 ( **`.`** )이 포함 되며 지수가 포함 될 수 있습니다.
 
-부동 소수점 리터럴에는 숫자 값 *significand* 을 지정 하는 significand *(가 수 라고도 함)가*있습니다. 숫자의 크기를 지정 하는 *지*수를 포함 합니다. 또한 리터럴의 형식을 지정 하는 선택적 접미사가 있습니다. Significand는 숫자 시퀀스, 마침표, 숫자의 소수 부분을 나타내는 선택적 숫자 시퀀스를 차례로 지정 합니다. 예를 들면 다음과 같습니다.
+부동 소수점 리터럴에는 숫자 값  을 지정 하는 significand *(가 수 라고도 함)가* 있습니다. 숫자의 크기를 지정 하는 *지* 수를 포함 합니다. 또한 리터럴의 형식을 지정 하는 선택적 접미사가 있습니다. Significand는 숫자 시퀀스, 마침표, 숫자의 소수 부분을 나타내는 선택적 숫자 시퀀스를 차례로 지정 합니다. 예를 들면 다음과 같습니다.
 
 ```cpp
 18.46
@@ -103,7 +103,7 @@ long long i = 24'847'458'121
 void func( double );
 ```
 
-및
+and
 
 ```cpp
 void func( long double );
@@ -137,7 +137,7 @@ if (num < 100)
 
 이전 예제에서는 명확한 의미를 전달 하는 명명 된 상수 (예: "MAXIMUM_ERROR_THRESHOLD")를 사용 하는 것이 더 좋습니다. 또한 최종 사용자에 게 반환 값 "Success"가 표시 되는 경우 명명 된 문자열 상수를 사용 하는 것이 더 좋을 수 있습니다. 다른 언어로 지역화할 수 있는 파일의 단일 위치에 문자열 상수를 유지할 수 있습니다. 명명 된 상수를 사용 하면 자신과 다른 사용자가 코드의 의도를 이해할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [어휘 규칙](../cpp/lexical-conventions.md)<br/>
 [C + + 문자열 리터럴](../cpp/string-and-character-literals-cpp.md)<br/>

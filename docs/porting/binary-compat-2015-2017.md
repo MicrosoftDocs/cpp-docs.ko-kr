@@ -4,12 +4,12 @@ description: Visual Studio 2015, 2017 및 2019의 컴파일된 c + + 파일 간�
 ms.date: 02/17/2021
 helpviewer_keywords:
 - binary compatibility, Visual C++
-ms.openlocfilehash: d8c4c0312003496db522e59dba84a9633e94b1b4
-ms.sourcegitcommit: 5efc34c2b98d4d0d3e41aec38b213f062c19d078
+ms.openlocfilehash: a91e339e70843087adc12238edac91332c1a4453
+ms.sourcegitcommit: c0c9cdae79f19655e809a4979227c51bb19cff63
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101844522"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236578"
 ---
 # <a name="c-binary-compatibility-between-visual-studio-2015-2017-and-2019"></a>Visual Studio 2015, 2017 및 2019 간 c + + 이진 호환성
 
@@ -17,7 +17,7 @@ Visual Studio 2013 및 이전 버전의 Microsoft c + + (MSVC) 컴파일러 도�
 
 Visual Studio 2015, 2017 및 2019에서이 동작을 변경 했습니다. 이러한 버전의 컴파일러에서 컴파일된 런타임 라이브러리와 앱은 이진 호환성이 있습니다. 3 가지 버전 모두에 대해 14로 시작 하는 c + + 도구 집합의 주 번호에 반영 됩니다. 도구 집합 버전은 Visual Studio 2015, v141 for 2017 및 v142 for 2019에 대 한 v140입니다. Visual Studio 2015에서 빌드된 타사 라이브러리를 포함 하 고 있다고 가정 합니다. Visual Studio 2017 또는 2019에서 빌드된 응용 프로그램에서 계속 사용할 수 있습니다. 일치 하는 도구 집합을 사용 하 여 다시 컴파일할 필요가 없습니다. 최신 버전의 Microsoft Visual C++ 재배포 가능 패키지 (재배포 가능 패키지)는 모든 항목에 대해 작동 합니다.
 
-## <a name="restrictions-on-binary-compatibility"></a>이진 호환성에 대 한 제한 사항
+## <a name="restrictions-on-binary-compatibility"></a><a name="restrictions"></a> 이진 호환성에 대 한 제한 사항
 
 V140, v141 및 v142 도구 집합과 부 번호 버전 업데이트 간의 이진 호환성에는 세 가지 중요 한 제한이 있습니다.
 

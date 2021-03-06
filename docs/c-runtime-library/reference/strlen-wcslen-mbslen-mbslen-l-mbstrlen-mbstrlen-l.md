@@ -58,12 +58,12 @@ helpviewer_keywords:
 - strlen function
 - _mbslen function
 ms.assetid: 16462f2a-1e0f-4eb3-be55-bf1c83f374c2
-ms.openlocfilehash: 54001a90003ff3a6931f43687fc08366607caf2e
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 8958285ed19d8bd38701d5cb58cd18b3c21caaa5
+ms.sourcegitcommit: c0c9cdae79f19655e809a4979227c51bb19cff63
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97344837"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236727"
 ---
 # <a name="strlen-wcslen-_mbslen-_mbslen_l-_mbstrlen-_mbstrlen_l"></a>strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l
 
@@ -161,7 +161,7 @@ int main()
    // strlen gives the length of single-byte character string
    printf("Length of '%s' : %d\n", str1, strlen(str1) );
 
-   // wstrlen gives the length of a wide character string
+   // wcslen gives the length of a wide character string
    wprintf(L"Length of '%s' : %d\n", wstr1, wcslen(wstr1) );
 
    // A multibyte string: [A] [B] [C] [katakana A] [D] [\0]
