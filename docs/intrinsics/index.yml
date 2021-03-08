@@ -6,12 +6,12 @@ metadata:
   description: Visual Studio에는 하위 수준의 프로그래밍 작업을 위해 어셈블러 및 컴파일러 내장 함수가 포함되어 있습니다.
   ms.topic: landing-page
   ms.date: 05/26/2020
-  ms.openlocfilehash: f50d2541bd9fd7ca0071cc6ff76397b3dd240843
-  ms.sourcegitcommit: fe146adb3a02872538637196bb3c45aeeeaaf5c2
+  ms.openlocfilehash: 2957e46ceeac1437bf5278d0ef462df7c8ccf3a7
+  ms.sourcegitcommit: c0c9cdae79f19655e809a4979227c51bb19cff63
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 06/08/2020
-  ms.locfileid: "84507824"
+  ms.lasthandoff: 03/05/2021
+  ms.locfileid: "102236599"
 landingContent:
 - title: 컴파일러 내장 함수 사용
   linkLists:
