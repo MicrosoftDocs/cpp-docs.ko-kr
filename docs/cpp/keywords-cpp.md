@@ -6,12 +6,12 @@ ms.date: 07/25/2020
 helpviewer_keywords:
 - keywords [C++]
 ms.assetid: d7ca94a8-f785-41ce-9f73-d3c4fd508489
-ms.openlocfilehash: b875b4df797985dc21f54f48ceeaa86574f31ac6
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 1144558a6a4847e158579bf453e3bf3b45c0a199
+ms.sourcegitcommit: 6ed44d9c3fb32e965e363b9c69686739a90a2117
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91498759"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465517"
 ---
 # <a name="keywords-c"></a>키워드(C++)
 
@@ -122,11 +122,11 @@ ms.locfileid: "91498759"
     :::column-end:::
 :::row-end:::
 
-<sup>a</sup> Microsoft 전용 **`__asm`** 키워드는 c + + 구문을 대체 합니다 **`asm`** . **`asm`** 는 다른 c + + 구현과의 호환성을 위해 예약 되었지만 구현 되지는 않았습니다. **`__asm`** X86 대상의 인라인 어셈블리에 사용 합니다. Microsoft c + +는 다른 대상에 대해 인라인 어셈블리를 지원 하지 않습니다.
+<sup></sup> Microsoft 전용 **`__asm`** 키워드는 c + + 구문을 대체 합니다 **`asm`** . **`asm`** 는 다른 c + + 구현과의 호환성을 위해 예약 되었지만 구현 되지는 않았습니다. **`__asm`** X86 대상의 인라인 어셈블리에 사용 합니다. Microsoft c + +는 다른 대상에 대해 인라인 어셈블리를 지원 하지 않습니다.
 
 <sup>b</sup> 확장 연산자 동의어는 [`/permissive-`](../build/reference/permissive-standards-conformance.md) [ `/Za` \( 언어 확장을 사용 하거나 사용 하지 않도록 설정](../build/reference/za-ze-disable-language-extensions.md) 하는 경우에 대 한 키워드입니다. Microsoft 확장을 사용 하도록 설정한 경우에는 키워드가 아닙니다.
 
-<sup>c</sup> [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) 가 지정 된 경우 c가 지원 됩니다.
+<sup></sup> [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) 가 지정 된 경우 c가 지원 됩니다.
 
 ## <a name="microsoft-specific-c-keywords"></a>Microsoft 전용 c + + 키워드
 
@@ -221,13 +221,14 @@ Microsoft 확장을 사용하도록 설정한 경우 Microsoft 관련 키워드�
     :::column-end:::
     :::column:::
         [`noreturn`](noreturn.md)\
+        [`no_sanitize_address`](no-sanitize-address.md)\
         [`nothrow`](nothrow-cpp.md)\
         [`novtable`](novtable.md)\
         [`process`](process.md)\
-        [`property`](property-cpp.md)\
-        [`restrict`](restrict.md)
+        [`property`](property-cpp.md)
     :::column-end:::
     :::column:::
+        [`restrict`](restrict.md)\
         [`safebuffers`](safebuffers.md)\
         [`selectany`](selectany.md)\
         [`spectre`](spectre.md)\

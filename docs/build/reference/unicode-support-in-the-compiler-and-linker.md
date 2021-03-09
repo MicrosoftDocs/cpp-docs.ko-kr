@@ -1,7 +1,7 @@
 ---
 description: '자세한 정보: 컴파일러 및 링커의 유니코드 지원'
 title: 컴파일러 및 링커에서의 유니코드 지원
-ms.date: 12/15/2017
+ms.date: 03/07/2021
 f1_keywords:
 - VC.Project.VCLinkerTool.UseUnicodeResponseFiles
 - VC.Project.VCLibrarianTool.UseUnicodeResponseFiles
@@ -9,16 +9,16 @@ f1_keywords:
 - VC.Project.VCXDCMakeTool.UseUnicodeResponseFiles
 helpviewer_keywords:
 - Unicode, Visual C++
-ms.openlocfilehash: c853907dd0d70a4ab7311c41f51d8d73bb25cf20
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: e1795a5a9b9d4a3a1672b2661aa598d0ef6e059f
+ms.sourcegitcommit: 6ed44d9c3fb32e965e363b9c69686739a90a2117
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97178955"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465342"
 ---
 # <a name="unicode-support-in-the-compiler-and-linker"></a>컴파일러 및 링커에서의 유니코드 지원
 
-대부분의 Visual C++ 빌드 도구는 유니코드 입력 및 출력을 지원 합니다.
+대부분의 Microsoft C/c + + (MSVC) 빌드 도구는 유니코드 입력 및 출력을 지원 합니다.
 
 ## <a name="filenames"></a>파일 이름
 
@@ -36,17 +36,21 @@ ms.locfileid: "97178955"
 
 - UTF-8 with BOM
 
+Visual Studio IDE에서 유니코드를 비롯 한 여러 인코딩 형식으로 파일을 저장할 수 있습니다. **저장** 단추의 드롭다운을 사용 하 여 **파일을 다른 이름으로 저장** 대화 상자에 저장 합니다. 드롭다운 목록에서 **인코딩하여 저장을** 선택 합니다. 그런 다음, **고급 저장 옵션** 대화 상자의 드롭다운 목록에서 인코딩을 선택 합니다. **확인** 을 선택 하 여 파일을 저장 합니다.
+
 ## <a name="output"></a>출력
 
 컴파일하는 동안 컴파일러는 u t f-16으로 진단 정보를 콘솔에 출력 합니다.  콘솔에 표시 될 수 있는 문자는 콘솔 창 속성에 따라 달라 집니다.  파일로 리디렉션되는 컴파일러 출력은 현재 ANSI 콘솔 코드 페이지에 있습니다.
 
-## <a name="linker-response-files-and-def-files"></a>링커 지시 파일 및 DEF 파일
+## <a name="linker-response-files-and-def-files"></a>링커 지시 파일 및 `.DEF` 파일
 
-지시 파일 및 DEF 파일은 BOM이 있는 u t f-16 또는 ANSI 중 하나일 수 있습니다.
+지시 파일 및 *`.DEF`* 파일은 u t f-16 또는 BOM이 있는 u t f-8 이거나 ANSI 일 수 있습니다.
 
-## <a name="asm-and-cod-dumps"></a>.asm 및 cod 덤프
+## <a name="asm-and-cod-dumps"></a>`.asm` 및 `.cod` 덤프
 
-.asm 및. cod 덤프는 기본적으로 MASM과의 호환성을 위해 ANSI에 있습니다. [/FAu](fa-fa-listing-file.md) 를 사용 하 여 u t f-8을 출력 합니다. **/FAs** 를 지정 하면 소스 코드가 u t f-8이 고 **/FAsu** 를 지정 하지 않은 경우와 같이 혼합 소스가 직접 인쇄 되 고 왜곡 될 수 있습니다.
+*`.asm`* 및 *`.cod`* 덤프는 기본적으로 MASM과의 호환성을 위해 ANSI로 되어 있습니다. [`/FAu`](fa-fa-listing-file.md)U t f-8을 출력 하는 데 사용 합니다.
+
+을 지정 하면 **`/FAs`** 혼합 소스가 직접 인쇄 됩니다. 예를 들어 소스 코드는 u t f-8이 고를 지정 하지 않은 경우와 같이 왜곡 될 수 있습니다 **`/FAsu`** .
 
 ## <a name="see-also"></a>참조
 

@@ -4,12 +4,12 @@ description: Microsoft C/c + + 컴파일러 명령줄 옵션의 사전순으로 
 ms.date: 07/29/2020
 helpviewer_keywords:
 - compiler options, C++
-ms.openlocfilehash: 532ee4aceef281f7aa52fee6cd405a3520409218
-ms.sourcegitcommit: 48b897797b3132ae934b1d191e3870c3c2466335
+ms.openlocfilehash: de83cd5e2d649b88de4e21f3d828f68504705dc2
+ms.sourcegitcommit: 6ed44d9c3fb32e965e363b9c69686739a90a2117
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97514554"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465368"
 ---
 # <a name="compiler-options-listed-alphabetically"></a>컴파일러 옵션 사전순 목록
 
@@ -56,6 +56,7 @@ ms.locfileid: "97514554"
 | [`/Fp`](fp-name-dot-pch-file.md) | 미리 컴파일된 헤더 파일 이름을 지정합니다. |
 | [`/FR`](fr-fr-create-dot-sbr-file.md)<br /><br /> [`/Fr`](fr-fr-create-dot-sbr-file.md) | 브라우저 파일을 생성합니다. **`/Fr`** 는 사용 되지 않습니다. |
 | [`/FS`](fs-force-synchronous-pdb-writes.md) | MSPDBSRV.EXE를 통해 PDB (프로그램 데이터베이스) 파일에 대 한 모든 쓰기를 강제로 직렬화 합니다. |
+| [`/fsanitize`](fsanitize.md) | AddressSanitizer와 같은 sanitizer 계측의 컴파일을 사용 하도록 설정 합니다. |
 | [`/FU`](fu-name-forced-hash-using-file.md) | 지시문에 전달 된 것 처럼 파일 이름을 강제로 사용 합니다 [`#using`](../../preprocessor/hash-using-directive-cpp.md) . |
 | [`/Fx`](fx-merge-injected-code.md) | 삽입된 코드와 소스 파일을 병합합니다. |
 | [`/GA`](ga-optimize-for-windows-application.md) | Windows 애플리케이션에 맞게 코드를 최적화합니다. |

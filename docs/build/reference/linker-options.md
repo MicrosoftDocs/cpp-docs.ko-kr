@@ -10,12 +10,12 @@ helpviewer_keywords:
 - libraries [C++], linking to COFF
 - LINK tool [C++], linker options
 ms.assetid: c1d51b8a-bd23-416d-81e4-900e02b2c129
-ms.openlocfilehash: 0d85361b8d4b5896d9ed7beae0d310fe28dc98e9
-ms.sourcegitcommit: e58918c45316d799c1952ca7797a85adbcd0c472
+ms.openlocfilehash: e426c085acdd0d7bcfeb00b17dcf733a9b856993
+ms.sourcegitcommit: 6ed44d9c3fb32e965e363b9c69686739a90a2117
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89281798"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465316"
 ---
 # <a name="linker-options"></a>링커 옵션
 
@@ -83,6 +83,7 @@ LINK.exe는 COFF(Common Object File Format) 개체 파일과 라이브러리를 
 |[/IMPLIB](implib-name-import-library.md)|기존 가져오기 라이브러리 이름을 재정의합니다.|
 |[/INCLUDE](include-force-symbol-references.md)|기호 참조를 강제합니다.|
 |[/INCREMENTAL](incremental-link-incrementally.md)|증분 링크를 제어합니다.|
+|[/INFERASANLIBS](inferasanlibs.md)|유추 된 sanitizer 라이브러리를 사용 합니다.|
 |[/INTEGRITYCHECK](integritycheck-require-signature-check.md)|로드할 때 모듈에 서명 확인이 필요한지 지정합니다.|
 |[/KEYCONTAINER](keycontainer-specify-a-key-container-to-sign-an-assembly.md)|어셈블리에 서명할 키 컨테이너를 지정합니다.|
 |[/KEYFILE](keyfile-specify-key-or-key-pair-to-sign-an-assembly.md)|어셈블리에 서명할 키 또는 키 쌍을 지정합니다.|
@@ -142,5 +143,5 @@ LINK.exe는 COFF(Common Object File Format) 개체 파일과 라이브러리를 
 
 ## <a name="see-also"></a>참고 항목
 
-[C/c + + 빌드 참조](c-cpp-building-reference.md)\
+[C/C++ 빌드 참조](c-cpp-building-reference.md)\
 [MSVC 링커 참조](linking.md)

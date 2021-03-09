@@ -5,12 +5,12 @@ ms.date: 07/29/2020
 helpviewer_keywords:
 - compiler options, C++
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
-ms.openlocfilehash: bf12948658b5f7e3211c423b5302bc52d1b87729
-ms.sourcegitcommit: 48b897797b3132ae934b1d191e3870c3c2466335
+ms.openlocfilehash: b892575719d97ed4a0acb061aae0182ff2d576eb
+ms.sourcegitcommit: 6ed44d9c3fb32e965e363b9c69686739a90a2117
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97514564"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465381"
 ---
 # <a name="compiler-options-listed-by-category"></a>컴파일러 옵션 범주별 목록
 
@@ -162,6 +162,7 @@ ms.locfileid: "97514564"
 | [`/errorReport`](errorreport-report-internal-compiler-errors.md) | 더 이상 사용되지 않습니다. 오류 보고는 [WER (Windows 오류 보고)](/windows/win32/wer/windows-error-reporting) 설정에 의해 제어 됩니다. |
 | [`/FC`](fc-full-path-of-source-code-file-in-diagnostics.md) | 진단 텍스트에서 *cl.exe* 에 전달 된 소스 코드 파일의 전체 경로를 표시 합니다. |
 | [`/FS`](fs-force-synchronous-pdb-writes.md) | *MSPDBSRV.EXE* 를 통해 SERIALIZE 될 PDB 파일에 대 한 쓰기를 강제로 수행 합니다. |
+| [`/fsanitize`](fsanitize.md) | AddressSanitizer와 같은 sanitizer 계측의 컴파일을 사용 하도록 설정 합니다. |
 | [`/H`](h-restrict-length-of-external-names.md) | 더 이상 사용되지 않습니다. 외부 공개 이름의 길이를 제한합니다. |
 | [`/HELP`](help-compiler-command-line-help.md) | 컴파일러 옵션을 나열합니다. |
 | [`/J`](j-default-char-type-is-unsigned.md) | 기본 형식을 변경 **`char`** 합니다. |
