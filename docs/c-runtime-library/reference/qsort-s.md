@@ -31,12 +31,12 @@ helpviewer_keywords:
 - qsort_s function
 - sorting arrays
 ms.assetid: 6ee817b0-4408-4355-a5d4-6605e419ab91
-ms.openlocfilehash: 01890db21bc1eb470b57aa796313da4c6f0c50a8
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 0f0132cbb1210d6289f676f3474683803b58a5a6
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97137165"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514475"
 ---
 # <a name="qsort_s"></a>qsort_s
 
@@ -81,7 +81,7 @@ compare( context, (void *) & elem1, (void *) & elem2 );
 
 루틴은 요소를 비교한 후에 다음 값 중 하나를 반환해야 합니다.
 
-|반환 값|설명|
+|반환 값|Description|
 |------------------|-----------------|
 |< 0|**elem1** 보다 작음 **elem2**|
 |0|**elem2** 에 해당 하는 **elem1**|
@@ -112,7 +112,7 @@ compare( context, (void *) & elem1, (void *) & elem2 );
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-**라이브러리:** 모든 버전의 [CRT 라이브러리 기능](../../c-runtime-library/crt-library-features.md)입니다.
+**라이브러리:** 모든 버전의 [C 런타임 라이브러리](../../c-runtime-library/crt-library-features.md)입니다.
 
 ## <a name="example"></a>예제
 
@@ -268,7 +268,7 @@ España Español espantado
 table tablet tableux
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 [검색 및 정렬](../../c-runtime-library/searching-and-sorting.md)<br/>
 [bsearch_s](bsearch-s.md)<br/>

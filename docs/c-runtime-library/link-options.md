@@ -31,12 +31,12 @@ helpviewer_keywords:
 - threadlocale.obj
 - pnoarg.obj
 ms.assetid: 05b5a77b-9dd1-494b-ae46-314598c770bb
-ms.openlocfilehash: affb5d95af176ba49aa2aeafff5ac84653df2ad8
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 3fce62718518138303900be379458dce950acfbe
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97246528"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514397"
 ---
 # <a name="link-options"></a>링크 옵션
 
@@ -44,7 +44,7 @@ CRT 라이브러리 디렉터리에는 코드를 변경하지 않고도 특정 C
 
 이러한 개체의 CLR 순수 모드 버전은 Visual Studio 2015에서 사용되지 않으며 Visual Studio 2017에서 지원되지 않습니다. 네이티브 및 /clr 코드에는 일반 버전을 사용합니다.
 
-|네이티브 및 /clr|순수 모드|설명|
+|네이티브 및 /clr|순수 모드|Description|
 |----------------------|---------------|-----------------|
 |binmode.obj|pbinmode.obj|기본 파일 변환 모드를 이진으로 설정합니다. [_fmode](../c-runtime-library/fmode.md)를 참조하세요.|
 |chkstk.obj|해당 없음|CRT를 사용하지 않는 경우 스택 검사 및 alloca를 지원합니다.|
@@ -63,6 +63,6 @@ CRT 라이브러리 디렉터리에는 코드를 변경하지 않고도 특정 C
 |threadlocale.obj|pthreadlocale.obj|기본적으로 모든 새 스레드에 스레드별 로캘을 사용하도록 설정합니다.|
 |wsetargv.obj|pwsetargv.obj|명령줄 인수 와일드 카드 확장을 사용하도록 설정합니다. [와일드카드 인수 확장](../c-language/expanding-wildcard-arguments.md)을 참조하세요.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
-- [CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md)
+- [CRT (c 런타임) 및 STL (c + + 표준 라이브러리) `.lib` 파일](../c-runtime-library/crt-library-features.md)

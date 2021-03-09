@@ -9,12 +9,12 @@ helpviewer_keywords:
 - include files, required in run time
 - header files, required in run time
 ms.assetid: f64d0bf5-e2c3-4b42-97d0-443b3d901d9f
-ms.openlocfilehash: 79a45aaba5e2872b23e70f3fd276d6f3cae11167
-ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
+ms.openlocfilehash: e7947c1f601a8051de5c28fba682e90c0bdce7b6
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91589811"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514631"
 ---
 # <a name="required-and-optional-header-files"></a>필수 및 선택적 헤더 파일
 
@@ -28,6 +28,6 @@ ms.locfileid: "91589811"
 
 런타임 라이브러리 헤더 파일은 ANSI/ISO C 표준 권장 스타일로 함수 선언을 제공합니다. 컴파일러는 연결된 함수 선언 후에 발생하는 모든 루틴 참조에 대해 형식 검사를 수행합니다. 함수 선언은 기본값인가 아닌 일부 형식의 값을 반환 하는 루틴의 경우 특히 중요 **`int`** 합니다. 선언에 적절 한 반환 값을 지정 하지 않은 루틴은 컴파일러가를 반환 하는 것으로 간주 되어 **`int`** 예기치 않은 결과가 발생할 수 있습니다. 자세한 내용은 [형식 검사](../c-runtime-library/type-checking-crt.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
-[CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md)
+[CRT (c 런타임) 및 STL (c + + 표준 라이브러리) `.lib` 파일](../c-runtime-library/crt-library-features.md)

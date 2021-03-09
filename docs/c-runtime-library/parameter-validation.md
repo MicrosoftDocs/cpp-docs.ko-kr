@@ -6,16 +6,16 @@ ms.topic: conceptual
 helpviewer_keywords:
 - parameters, validation
 ms.assetid: 019dd5f0-dc61-4d2e-b4e9-b66409ddf1f2
-ms.openlocfilehash: 8378e4bf9bdfc950002c3ed8c3ef50c27a3c162d
-ms.sourcegitcommit: 30792632548d1c71894f9fecbe2f554294b86020
+ms.openlocfilehash: 6926da8ccc1974352b926227daba0eea1d8a560d
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91765257"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514657"
 ---
 # <a name="parameter-validation"></a>매개 변수 유효성 검사
 
-보안이 강화 된 CRT 함수 중 대부분은 **NULL**에 대 한 포인터 검사, 정수가 올바른 범위에 포함 되는 경우 또는 열거형 값이 유효한 것과 같은 항목에 대해 매개 변수의 유효성을 검사 하지 않습니다. 잘못 된 매개 변수가 발견 되 면 잘못 된 매개 변수 처리기가 호출 됩니다.
+보안이 강화 된 CRT 함수 중 대부분은 **NULL** 에 대 한 포인터 검사, 정수가 올바른 범위에 포함 되는 경우 또는 열거형 값이 유효한 것과 같은 항목에 대해 매개 변수의 유효성을 검사 하지 않습니다. 잘못 된 매개 변수가 발견 되 면 잘못 된 매개 변수 처리기가 호출 됩니다.
 
 ## <a name="invalid-parameter-handler-routine"></a>잘못된 매개 변수 처리기 루틴
 
@@ -29,7 +29,7 @@ C 런타임 라이브러리 함수는 잘못 된 매개 변수를 검색 하는 
 
 `errno`에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 [CRT의 보안 기능](../c-runtime-library/security-features-in-the-crt.md)\
-[CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md)
+[CRT (c 런타임) 및 STL (c + + 표준 라이브러리) `.lib` 파일](../c-runtime-library/crt-library-features.md)

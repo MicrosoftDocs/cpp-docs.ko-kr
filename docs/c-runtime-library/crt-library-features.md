@@ -17,14 +17,14 @@ helpviewer_keywords:
 - libraries [C++]
 - libraries [C++], run-time
 - linking [C++], libraries
-ms.openlocfilehash: 395158a3db37e431f0972bb35f1e5161c9f4bc81
-ms.sourcegitcommit: 6ed44d9c3fb32e965e363b9c69686739a90a2117
+ms.openlocfilehash: dab3d767865b91f8a8e567488698a197c35c9b74
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102465556"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514696"
 ---
-# <a name="c-runtime-crt-and-c-standard-library-lib-files"></a>C 런타임 (CRT) 및 c + + 표준 라이브러리 `.lib` 파일
+# <a name="c-runtime-crt-and-c-standard-library-stl-lib-files"></a>CRT (c 런타임) 및 STL (c + + 표준 라이브러리) `.lib` 파일
 
 이 항목에는 `.lib` 응용 프로그램을 개발할 때 연결할 수 있는 Microsoft C 런타임 라이브러리 파일 및 관련 컴파일러 옵션과 전처리기 지시문이 나열 되어 있습니다.
 
@@ -42,8 +42,8 @@ Visual Studio 2015부터 CRT는 새로운 이진 파일로 리팩터링되었습
 
 | 라이브러리 | 관련 DLL | 특징 | 옵션 | 전처리기 지시문 |
 |--|--|--|--|--|
-| *`libucrt.lib`* | None | 코드에 UCRT를 정적으로 연결합니다. | **`/MT`** | `_MT` |
-| *`libucrtd.lib`* | None | 정적 연결을 위한 UCRT의 디버그 버전입니다. 재배포할 수 없습니다. | **`/MTd`** | `_DEBUG`, `_MT` |
+| *`libucrt.lib`* | 없음 | 코드에 UCRT를 정적으로 연결합니다. | **`/MT`** | `_MT` |
+| *`libucrtd.lib`* | 없음 | 정적 연결을 위한 UCRT의 디버그 버전입니다. 재배포할 수 없습니다. | **`/MTd`** | `_DEBUG`, `_MT` |
 | *`ucrt.lib`* | *`ucrtbase.dll`* | UCRT에 대한 DLL 가져오기 라이브러리입니다. | **`/MD`** | `_MT`, `_DLL` |
 | *`ucrtd.lib`* | *`ucrtbased.dll`* | UCRT의 디버그 버전에 대한 DLL 가져오기 라이브러리입니다. 재배포할 수 없습니다. | **`/MDd`** | `_DEBUG`, `_MT`, `_DLL` |
 
@@ -53,8 +53,8 @@ vcruntime 라이브러리에는 예외 처리 및 디버깅 지원, 런타임 �
 
 | 라이브러리 | 관련 DLL | 특징 | 옵션 | 전처리기 지시문 |
 |--|--|--|--|--|
-| *`libvcruntime.lib`* | None | 코드에 정적으로 연결합니다. | **`/MT`** | `_MT` |
-| *`libvcruntimed.lib`* | None | 정적 연결에 대한 디버그 버전입니다. 재배포할 수 없습니다. | **`/MTd`** | `_MT`, `_DEBUG` |
+| *`libvcruntime.lib`* | 없음 | 코드에 정적으로 연결합니다. | **`/MT`** | `_MT` |
+| *`libvcruntimed.lib`* | 없음 | 정적 연결에 대한 디버그 버전입니다. 재배포할 수 없습니다. | **`/MTd`** | `_MT`, `_DEBUG` |
 | *`vcruntime.lib`* | *`vcruntime<version>.dll`* | vcruntime에 대한 DLL 가져오기 라이브러리입니다. | **`/MD`** | `_MT`, `_DLL` |
 | *`vcruntimed.lib`* | *`vcruntime<version>d.dll`* | 디버그 vcruntime에 대한 DLL 가져오기 라이브러리입니다. 재배포할 수 없습니다. | **`/MDd`** | `_DEBUG`, `_MT`, `_DLL` |
 
@@ -99,7 +99,7 @@ C 런타임 라이브러리를 지정 하는 컴파일러 옵션을 사용 하�
 | *`libcpmtd.lib`* | 다중 스레드, 정적 링크 | **`/MTd`** | `_DEBUG`, `_MT` |
 | *`msvcprtd.lib`* | 다중 스레드, 동적 링크 (에 대 한 가져오기 라이브러리 *`msvcp<version>d.dll`* ) | **`/MDd`** | `_DEBUG`, `_MT`, `_DLL` |
 
-프로젝트의 릴리스 버전을 빌드할 때 *`libcmt.lib`* *`msvcmrt.lib`* *`msvcrt.lib`* 선택한 컴파일러 옵션 (다중 스레드, DLL,)에 따라 기본 C 런타임 라이브러리 (,,) 중 하나가 기본적으로 연결 됩니다 **`/clr`** . 코드에 [c + + 표준 라이브러리 헤더 파일](../standard-library/cpp-standard-library-header-files.md) 중 하나를 포함 하는 경우 컴파일 시간에 Visual C++ 하 여 c + + 표준 라이브러리가 자동으로 연결 됩니다. 다음은 그 예입니다.
+프로젝트의 릴리스 버전을 빌드할 때 *`libcmt.lib`* *`msvcmrt.lib`* *`msvcrt.lib`* 선택한 컴파일러 옵션 (다중 스레드, DLL,)에 따라 기본 C 런타임 라이브러리 (,,) 중 하나가 기본적으로 연결 됩니다 **`/clr`** . 코드에 [c + + 표준 라이브러리 헤더 파일](../standard-library/cpp-standard-library-header-files.md) 중 하나를 포함 하는 경우 컴파일 시간에 Visual C++ 하 여 c + + 표준 라이브러리가 자동으로 연결 됩니다. 예를 들어:
 
 ```cpp
 #include <ios>
@@ -117,7 +117,7 @@ C 런타임 라이브러리를 지정 하는 컴파일러 옵션을 사용 하�
 
 프로그램에서 DLL 경계를 넘어 특정 CRT 리소스를 전달 하는 경우 주의 해야 합니다. 파일 핸들, 로캘 및 환경 변수와 같은 리소스는 동일한 버전의 CRT를 사용 하는 경우에도 문제를 일으킬 수 있습니다. 관련된 문제 및 해결 방법에 대한 자세한 내용은 [DLL 경계를 넘어 CRT 개체를 전달할 때 발생할 수 있는 오류](../c-runtime-library/potential-errors-passing-crt-objects-across-dll-boundaries.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [C 런타임 라이브러리 참조](../c-runtime-library/c-run-time-library-reference.md)
 - [Visual C++ 파일 재배포](../windows/redistributing-visual-cpp-files.md)

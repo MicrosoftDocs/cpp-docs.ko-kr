@@ -9,12 +9,12 @@ helpviewer_keywords:
 - variable argument functions
 - type checking
 ms.assetid: 1ba7590b-d1c0-4636-b6a0-e231395abdad
-ms.openlocfilehash: cf27847bf2aeef278fb4699cea5a0cf74a961086
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 9afb4146f7bbd08b35df20972345285bb353e4d3
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97162355"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514228"
 ---
 # <a name="type-checking-crt"></a>형식 검사(CRT)
 
@@ -32,6 +32,6 @@ ms.locfileid: "97162355"
 
 컴파일러는 이러한 함수들의 와이드 형식 기반 함수들에서도 동일한 제한된 형식 검사를 수행합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
-[CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md)
+[CRT (c 런타임) 및 STL (c + + 표준 라이브러리) `.lib` 파일](../c-runtime-library/crt-library-features.md)

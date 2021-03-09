@@ -26,12 +26,12 @@ helpviewer_keywords:
 - _CrtMemDumpStatistics function
 - CrtMemDumpStatistics function
 ms.assetid: 27b9d731-3184-4a2d-b9a7-6566ab28a9fe
-ms.openlocfilehash: 2f02c35ff61dc2bc5ac7e8dfbe921fa48731c2b3
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 684b5ac50af453dbe2800ded595c5747370717a6
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97319616"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514592"
 ---
 # <a name="_crtmemdumpstatistics"></a>_CrtMemDumpStatistics
 
@@ -47,7 +47,7 @@ void _CrtMemDumpStatistics(
 
 ### <a name="parameters"></a>매개 변수
 
-*state*<br/>
+*상태*<br/>
 덤프할 힙 상태에 대한 포인터입니다.
 
 ## <a name="remarks"></a>설명
@@ -66,8 +66,8 @@ void _CrtMemDumpStatistics(
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-**라이브러리:** 디버그 버전의 [CRT 라이브러리 기능](../../c-runtime-library/crt-library-features.md)만 해당합니다.
+**라이브러리:** 디버그 버전의 [C 런타임 라이브러리](../../c-runtime-library/crt-library-features.md) 만 해당 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 [디버그 루틴](../../c-runtime-library/debug-routines.md)<br/>

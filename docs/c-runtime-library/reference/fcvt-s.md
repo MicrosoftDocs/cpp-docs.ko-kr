@@ -31,12 +31,12 @@ helpviewer_keywords:
 - floating-point functions, converting number to string
 - _fcvt_s function
 ms.assetid: 48671197-1d29-4c2b-a5d8-d2368f5f68a1
-ms.openlocfilehash: dd4d58b39d4c18f2fff7da54c5fbd0f2346dfdd4
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 62b72a9f71f967077169086371ebf36542b154ed
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97235881"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514449"
 ---
 # <a name="_fcvt_s"></a>_fcvt_s
 
@@ -91,7 +91,7 @@ errno_t _fcvt_s(
 
 ### <a name="error-conditions"></a>오류 조건
 
-|*버퍼*|*sizeInBytes*|값|count|dec|sign|반환 값|*버퍼* 의 값|
+|*버퍼*|*sizeInBytes*|value|count|dec|sign|반환 값|*버퍼* 의 값|
 |--------------|-------------------|-----------|-----------|---------|----------|------------|-----------------------|
 |**NULL**|any|any|any|any|any|**EINVAL**|수정되지 않습니다.|
 |Not **NULL** (유효한 메모리를 가리킴)|<=0|any|any|any|any|**EINVAL**|수정되지 않습니다.|
@@ -120,13 +120,13 @@ C++에서는 템플릿 오버로드로 인해 이 함수를 사용하는 것이 
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 헤더|선택적 헤더|
+|기능|필수 헤더|선택적 헤더|
 |--------------|---------------------|---------------------|
 |**_fcvt_s**|\<stdlib.h>|\<errno.h>|
 
 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-**라이브러리:** 모든 버전의 [CRT 라이브러리 기능](../../c-runtime-library/crt-library-features.md)입니다.
+**라이브러리:** 모든 버전의 [C 런타임 라이브러리](../../c-runtime-library/crt-library-features.md)입니다.
 
 ## <a name="example"></a>예제
 
@@ -160,7 +160,7 @@ int main()
 Converted value: 120000
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [데이터 변환](../../c-runtime-library/data-conversion.md)<br/>
 [부동 소수점 지원](../../c-runtime-library/floating-point-support.md)<br/>

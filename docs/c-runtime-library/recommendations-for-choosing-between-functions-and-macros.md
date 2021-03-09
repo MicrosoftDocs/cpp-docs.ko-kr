@@ -9,12 +9,12 @@ helpviewer_keywords:
 - functions [CRT], vs. macros
 - macros, vs. functions
 ms.assetid: 18a633d6-cf1c-470c-a649-fa7677473e2b
-ms.openlocfilehash: 8791baf8e8645e0044ff180485ac7935b8ffa3f5
-ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
+ms.openlocfilehash: 9a2190d417ef004ab9a0d07f19214cb29f623244
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91589707"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514540"
 ---
 # <a name="recommendations-for-choosing-between-functions-and-macros"></a>함수와 매크로 중 선택에 대한 권장 사항
 
@@ -44,7 +44,7 @@ ms.locfileid: "91589707"
 
 - **형식 검사** 함수를 선언할 때 컴파일러는 인수 형식을 검사할 수 있습니다. 사용자가 매크로를 선언할 수 없기 때문에 컴파일러에서 매크로 인수 형식을 검사할 수 없습니다. 컴파일러에서는 사용자가 매크로에 전달하는 인수 개수를 검사할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 [형식-제네릭 수학](tgmath.md)\
-[CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md)
+[CRT (c 런타임) 및 STL (c + + 표준 라이브러리) `.lib` 파일](../c-runtime-library/crt-library-features.md)

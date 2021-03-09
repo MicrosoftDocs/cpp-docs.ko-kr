@@ -8,12 +8,12 @@ helpviewer_keywords:
 - CRT
 - runtime libraries
 - CRT, reference
-ms.openlocfilehash: c574230d5d2861dd8734d8927f0e91402bc224bf
-ms.sourcegitcommit: 6ed44d9c3fb32e965e363b9c69686739a90a2117
+ms.openlocfilehash: f613f70ed39947605a4ce2b8524c8a0f6d069c68
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102465569"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514410"
 ---
 # <a name="microsoft-c-runtime-library-crt-reference"></a>Microsoft CRT (C 런타임 라이브러리) 참조
 
@@ -47,8 +47,8 @@ Tchar.h에서 정의된 제네릭 텍스트 매핑에 대한 링크를 제공합
 [언어 및 국가/지역 문자열](locale-names-languages-and-country-region-strings.md)\
 `setlocale` 함수를 사용하여 국가/지역 문자열과 언어를 설정하는 방법을 설명합니다.
 
-[C 런타임 (CRT) 및 c + + 표준 라이브러리 `.lib` 파일](crt-library-features.md)\
-`.lib`C 런타임 라이브러리 및 관련 컴파일러 옵션과 전처리기 지시문을 구성 하는 파일에 대해 설명 합니다.
+[CRT (c 런타임) 및 STL (c + + 표준 라이브러리) `.lib` 파일](crt-library-features.md)\
+`.lib`C 런타임 라이브러리 및 관련 컴파일러 옵션과 전처리기 지시문을 구성 하는 파일의 목록입니다.
 
 ## <a name="related-sections"></a>관련 단원
 

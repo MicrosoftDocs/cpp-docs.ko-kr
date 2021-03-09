@@ -6,12 +6,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - CRT initialization [C++]
 ms.assetid: e7979813-1856-4848-9639-f29c86b74ad7
-ms.openlocfilehash: 25f1e2a7e5b7d91c729bb45bd79ba9a8720cead1
-ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
+ms.openlocfilehash: e33429d63cebb34514918d059649679ed28b924c
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91589772"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514644"
 ---
 # <a name="crt-initialization"></a>CRT 초기화
 
@@ -43,7 +43,7 @@ C/C++ 표준에 따라 `func()`을 실행하기 전에 `main()`를 호출해야 
 
 스택에서 함수를 검색 하면 CRT가 함수 포인터 목록을 호출 하는 것을 볼 수 있습니다. 이러한 함수는 `func()` 또는 클래스 인스턴스에 대 한 생성자와 유사 합니다.
 
-CRT는 Microsoft c + + 컴파일러에서 함수 포인터 목록을 가져옵니다. 컴파일러는 전역 이니셜라이저를 볼 때 섹션에 동적 이니셜라이저를 생성 합니다 `.CRT$XCU` `CRT` . 여기서는 섹션 이름이 고는 `XCU` 그룹 이름입니다. 동적 이니셜라이저의 목록을 가져오려면 **dumpbin/all main**명령을 실행 한 다음 섹션을 검색 `.CRT$XCU` 합니다. 이는 기본 .cpp가 C 파일이 아닌 c + + 파일로 컴파일될 때 적용 됩니다. 다음 예제와 유사 합니다.
+CRT는 Microsoft c + + 컴파일러에서 함수 포인터 목록을 가져옵니다. 컴파일러는 전역 이니셜라이저를 볼 때 섹션에 동적 이니셜라이저를 생성 합니다 `.CRT$XCU` `CRT` . 여기서는 섹션 이름이 고는 `XCU` 그룹 이름입니다. 동적 이니셜라이저의 목록을 가져오려면 **dumpbin/all main** 명령을 실행 한 다음 섹션을 검색 `.CRT$XCU` 합니다. 이는 기본 .cpp가 C 파일이 아닌 c + + 파일로 컴파일될 때 적용 됩니다. 다음 예제와 유사 합니다.
 
 ```
 SECTION HEADER #6
@@ -95,6 +95,6 @@ CRT는 두 포인터를 정의합니다.
 
 따라서 CRT 라이브러리는와를 모두 사용 하 여 `__xc_a` `__xc_z` 전역 이니셜라이저 목록의 시작과 끝을 결정 합니다 .이는 이미지가 로드 된 후 메모리에서 배치 되는 방식 때문입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
-[CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md)
+[CRT (c 런타임) 및 STL (c + + 표준 라이브러리) `.lib` 파일](../c-runtime-library/crt-library-features.md)

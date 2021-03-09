@@ -7,12 +7,12 @@ helpviewer_keywords:
 - security-enhanced CRT
 - CRT, security enhancements
 ms.assetid: f87e5a01-4cb2-4379-9e8f-d4693828c55a
-ms.openlocfilehash: 95e94eb7790ef589fee3287b6cee8997faac7ab6
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: eda9a98593bb0951c9be357c35492eaf129e3582
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97277208"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514722"
 ---
 # <a name="security-enhanced-versions-of-crt-functions"></a>보안이 강화된 CRT 함수 버전
 
@@ -20,7 +20,7 @@ ms.locfileid: "97277208"
 
 ## <a name="secure-functions"></a>보안 함수
 
-|CRT 함수|보안이 강화된 함수|기능|
+|CRT 함수|보안이 강화된 함수|Windows Server Update Services와 함께|
 |------------------|--------------------------------|---------|
 |[_access, _waccess](../c-runtime-library/reference/access-waccess.md)|[_access_s, _waccess_s](../c-runtime-library/reference/access-s-waccess-s.md)|파일 액세스 권한을 결정합니다.|
 |[_alloca](../c-runtime-library/reference/alloca.md)|[_malloca](../c-runtime-library/reference/malloca.md)|스택에 메모리를 할당합니다.|
@@ -100,6 +100,6 @@ ms.locfileid: "97277208"
 |[wcstombs, _wcstombs_l](../c-runtime-library/reference/wcstombs-wcstombs-l.md)|[wcstombs_s, _wcstombs_s_l](../c-runtime-library/reference/wcstombs-s-wcstombs-s-l.md)|와이드 문자 시퀀스를 해당 멀티바이트 문자 시퀀스로 변환합니다.|
 |[wctomb, _wctomb_l](../c-runtime-library/reference/wctomb-wctomb-l.md)|[wctomb_s, _wctomb_s_l](../c-runtime-library/reference/wctomb-s-wctomb-s-l.md)|와이드 문자를 해당 멀티바이트 문자로 변환합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
-[CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md)
+[CRT (c 런타임) 및 STL (c + + 표준 라이브러리) `.lib` 파일](../c-runtime-library/crt-library-features.md)

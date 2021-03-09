@@ -6,12 +6,12 @@ ms.topic: conceptual
 helpviewer_keywords:
 - DLL conflicts [C++]
 ms.assetid: c217ffd2-5d9a-4678-a1df-62a637a96460
-ms.openlocfilehash: 2d42803b5eca7a43f122d209b7d9e2d4e45c38de
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: 7af0fe8b5819bf428753c9ec71099113df0fa79e
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008934"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514553"
 ---
 # <a name="potential-errors-passing-crt-objects-across-dll-boundaries"></a>DLL 경계를 넘어 CRT 개체를 전달할 때 발생할 수 있는 오류
 
@@ -35,7 +35,7 @@ DLL 및 해당 클라이언트는 일반적으로 로드 타임에 둘 다 동�
 
 ## <a name="example-pass-file-handle-across-dll-boundary"></a>예: DLL 경계를 넘어 파일 핸들을 전달 합니다.
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
 
 이 예제에서는 DLL 경계를 넘어 파일 핸들을 전달합니다.
 
@@ -77,7 +77,7 @@ this is a string
 
 ## <a name="example-pass-environment-variables-across-dll-boundary"></a>예: DLL 경계를 넘어 환경 변수 전달
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
 
 이 예제에서는 DLL 경계를 넘어 환경 변수를 전달합니다.
 
@@ -128,6 +128,6 @@ CRT 복사본이 하나만 사용 되도록 DLL과 .exe 파일을 모두 빌드�
 New MYLIB variable is: c:\mylib;c:\yourlib
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
-[CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md)
+[CRT (c 런타임) 및 STL (c + + 표준 라이브러리) `.lib` 파일](../c-runtime-library/crt-library-features.md)

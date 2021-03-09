@@ -9,12 +9,12 @@ helpviewer_keywords:
 - performance, multithreading
 - multithreaded libraries
 ms.assetid: faa5d808-087c-463d-8f0d-8c478d137296
-ms.openlocfilehash: edfbbf3055e9023c74cf0e154577d4b1853f557b
-ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
+ms.openlocfilehash: 39d77d52dbc8ac2e725cf46c98c5462df701e3eb
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91590201"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514670"
 ---
 # <a name="multithreaded-libraries-performance"></a>다중 스레드 라이브러리 성능
 
@@ -36,6 +36,6 @@ ms.locfileid: "91590201"
 
 - CRT 힙 핸들을 노출하면 CRT 힙에 대해 Windows LFH(낮은 조각화 힙)가 가능해져 규모가 큰 시나리오에서 성능이 상당히 개선될 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
-[CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md)
+[CRT (c 런타임) 및 STL (c + + 표준 라이브러리) `.lib` 파일](../c-runtime-library/crt-library-features.md)

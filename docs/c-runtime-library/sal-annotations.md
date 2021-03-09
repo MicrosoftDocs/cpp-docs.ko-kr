@@ -49,12 +49,12 @@ helpviewer_keywords:
 - ecount annotation
 - bcount annotation
 ms.assetid: 81893638-010c-41a0-9cb3-666fe360f3e0
-ms.openlocfilehash: 727c81ae1b141346bb47ff92b6af76d5c45aa106
-ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
+ms.openlocfilehash: c4c75213daa69c433b379fb78a0649fa1473de1b
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91590266"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514462"
 ---
 # <a name="sal-annotations"></a>SAL 주석
 
@@ -62,6 +62,6 @@ ms.locfileid: "91590266"
 
 Visual Studio에서 SAL 주석을 사용하는 방법에 대한 자세한 내용은 [C/C++ 코드 오류를 줄이기 위한 SAL 주석 사용](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
-[CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md)
+[CRT (c 런타임) 및 STL (c + + 표준 라이브러리) `.lib` 파일](../c-runtime-library/crt-library-features.md)

@@ -28,12 +28,12 @@ helpviewer_keywords:
 - Streaming SIMD Extensions 2 instructions
 - set_SSE2_enable function
 ms.assetid: 55db895d-fc1e-475a-9110-b781a9bb51c5
-ms.openlocfilehash: a9c82b2f17d90bc158ac77b8d7ad9625491856aa
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: f5b7bc8c0d18423ac981275e08dceef85197af4e
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97211208"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514514"
 ---
 # <a name="_set_sse2_enable"></a>_set_SSE2_enable
 
@@ -114,6 +114,6 @@ int main()
 SSE2 enabled.
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[CRT 라이브러리 기능](../../c-runtime-library/crt-library-features.md)<br/>
+[CRT (c 런타임) 및 STL (c + + 표준 라이브러리) `.lib` 파일](../../c-runtime-library/crt-library-features.md)

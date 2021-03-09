@@ -8,12 +8,12 @@ helpviewer_keywords:
 - compatibility, C runtime libraries
 - compatibility
 ms.assetid: 346709cb-edda-4909-9a19-3d253eddb6b7
-ms.openlocfilehash: 10c21f3f471c105ac4e40bda449aaf8987edba25
-ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
+ms.openlocfilehash: aea87c3a7b82292a5c9c45a960a5a890a1fff3fd
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91590045"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514618"
 ---
 # <a name="compatibility"></a>호환성
 
@@ -44,4 +44,4 @@ C++ 표준은 구현에 대한 전역 네임스페이스에 밑줄로 시작하�
 |[완전](../c-runtime-library/unix.md)|프로그램을 UNIX에 이식하는 작업에 대한 지침을 제공합니다.|
 |[Windows 플랫폼 (CRT)](../c-runtime-library/windows-platforms-crt.md)|CRT가 지원되는 운영 체제를 나열합니다.|
 |[이전 버전과의 호환성](../c-runtime-library/backward-compatibility.md)|이전 CRT 이름을 새 CRT 이름에 매핑하는 방법을 설명합니다.|
-|[CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md)|CRT 라이브러리 파일(.lib) 및 관련된 컴파일러 옵션에 대한 개요를 제공합니다.|
+|[CRT (c 런타임) 및 STL (c + + 표준 라이브러리) `.lib` 파일](../c-runtime-library/crt-library-features.md)|CRT 라이브러리 파일(.lib) 및 관련된 컴파일러 옵션에 대한 개요를 제공합니다.|

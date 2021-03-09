@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CRT, security enhancements
 - parameters [C++], validation
 ms.assetid: d9568b08-9514-49cd-b3dc-2454ded195a3
-ms.openlocfilehash: 963f5510350aa3be25586811889189d28a5f7b66
-ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
+ms.openlocfilehash: 96642e5e79f9df7c0a063582408c0463600be20f
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91589889"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514683"
 ---
 # <a name="security-features-in-the-crt"></a>CRT의 보안 기능
 
@@ -86,8 +86,8 @@ strcpy(szBuf, "test"); // warning: deprecated
 
 - `Format string syntax checking`. 잘못된 문자열이 검색됩니다(예:`printf` 형식 문자열에 잘못된 형식 필드 문자 사용).
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 [매개 변수 유효성 검사](../c-runtime-library/parameter-validation.md)<br/>
 [안전한 템플릿 오버 로드](../c-runtime-library/secure-template-overloads.md)<br/>
-[CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md)
+[CRT (c 런타임) 및 STL (c + + 표준 라이브러리) `.lib` 파일](../c-runtime-library/crt-library-features.md)
