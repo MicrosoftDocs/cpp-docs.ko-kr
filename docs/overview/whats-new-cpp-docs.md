@@ -2,12 +2,12 @@
 title: C++ 문서의 새로운 기능
 description: Microsoft C/C++ 컴파일러, ATL/MFC, C 런타임, 표준 라이브러리 문서에 대한 새로운 문서 및 문서 업데이트입니다.
 ms.date: 02/17/2021
-ms.openlocfilehash: b15d286eb7bd2951ab2b8101a752de2beb57f4a4
-ms.sourcegitcommit: e99db7c3b5f25ece0e152165066c926751a7c2ed
+ms.openlocfilehash: ad626dc598cd17de091801b2c313b7339db4cbc7
+ms.sourcegitcommit: 5efc34c2b98d4d0d3e41aec38b213f062c19d078
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100643575"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101844535"
 ---
 # <a name="microsoft-c-docs-whats-new-for-visual-studio-168"></a>Microsoft C++ 문서: Visual Studio 16.8의 새로운 기능
 
@@ -198,7 +198,7 @@ Visual Studio의 새로운 기능에 대한 자세한 내용은 [Visual Studio�
 
 ## <a name="community-contributors"></a>커뮤니티 기여자
 
-이 기간 동안 C++, C, 어셈블러 문서에 기여한 사용자는 다음과 같습니다. 감사합니다! 기여 방법을 알아보려면 [Microsoft Docs 기여자 가이드 개요](https://docs.microsoft.com/contribute/)를 참조하세요.
+이 기간 동안 C++, C, 어셈블러 문서에 기여한 사용자는 다음과 같습니다. 감사합니다! 기여 방법을 알아보려면 [Microsoft Docs 기여자 가이드 개요](/contribute/)를 참조하세요.
 
 - [yecril71pl](https://github.com/yecril71pl) - Christopher Yeleighton(4)
 - [definedrisk](https://github.com/definedrisk) - Ben(3)

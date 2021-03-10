@@ -3,12 +3,12 @@ title: '자습서: 원격 Windows 머신에서 CMake 프로젝트 디버그'
 ms.date: 12/4/2020
 ms.topic: tutorial
 description: Windows에서 Visual Studio C++를 사용하여 CMake 프로젝트를 만들고 빌드하는 방법입니다. 그런 다음 원격 Windows 머신에서 배포하고 디버그할 수 있습니다.
-ms.openlocfilehash: 742ee831fc30ffe291d68ff97ad4238e57c7e21d
-ms.sourcegitcommit: 3d9cfde85df33002e3b3d7f3509ff6a8dc4c0a21
+ms.openlocfilehash: 575b815559cbe70384b4669c94cf003daa3ee7d7
+ms.sourcegitcommit: 5efc34c2b98d4d0d3e41aec38b213f062c19d078
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98668859"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101844509"
 ---
 # <a name="tutorial-debug-a-cmake-project-on-a-remote-windows-machine"></a>자습서: 원격 Windows 머신에서 CMake 프로젝트 디버그
 
@@ -31,7 +31,7 @@ Visual Studio에서 ARM64의 기본 디버깅 환경은 ARM64 Windows 머신을 
 
 플랫폼 간 C++ 개발을 위해 Visual Studio를 설정하려면 대상 아키텍처용 빌드 도구를 설치합니다. 이 자습서에서는 다음을 수행하여 ARM64 빌드 도구를 설치합니다.
 
-1. Visual Studio 설치 관리자를 실행합니다. 아직 Visual Studio를 설치하지 않았다면 [Visual Studio 설치](https://docs.microsoft.com/visualstudio/install/install-visual-studio#:~:text=Install%20Visual%20Studio%201%20Make%20sure%20your%20computer,...%204%20Choose%20workloads.%20...%20More%20items...%20)를 참조하세요.
+1. Visual Studio 설치 관리자를 실행합니다. 아직 Visual Studio를 설치하지 않았다면 [Visual Studio 설치](/visualstudio/install/install-visual-studio)를 참조하세요.
 1. Visual Studio 설치 관리자 홈 화면에서 **수정** 을 선택합니다.
 1. 위쪽의 선택 항목에서 **개별 구성 요소** 를 선택합니다.
 1. **컴파일러, 빌드 도구 및 런타임** 섹션으로 스크롤합니다.
@@ -42,8 +42,8 @@ Visual Studio에서 ARM64의 기본 디버깅 환경은 ARM64 Windows 머신을 
 
 ### <a name="on-the-remote-machine"></a>원격 머신의 경우
 
-1. 원격 머신에 원격 도구를 설치합니다. 이 자습서의 경우 [원격 도구 다운로드 및 설치](https://docs.microsoft.com/visualstudio/debugger/remote-debugging-cpp?%23download-and-install-the-remote-tools#download-and-install-the-remote-tools)의 지침에 따라 ARM64 도구를 설치합니다.
-1. 원격 머신에서 원격 디버거를 시작하고 구성합니다. 이 자습서의 경우 원격 Windows 머신에서 [원격 디버거 설치](https://docs.microsoft.com/visualstudio/debugger/remote-debugging-cpp?%23download-and-install-the-remote-tools#BKMK_setup)의 지침에 따라 수행합니다.
+1. 원격 머신에 원격 도구를 설치합니다. 이 자습서의 경우 [원격 도구 다운로드 및 설치](/visualstudio/debugger/remote-debugging-cpp#download-and-install-the-remote-tools)의 지침에 따라 ARM64 도구를 설치합니다.
+1. 원격 머신에서 원격 디버거를 시작하고 구성합니다. 이 자습서의 경우 원격 Windows 머신에서 [원격 디버거 설치](/visualstudio/debugger/remote-debugging-cpp#BKMK_setup)의 지침에 따라 수행합니다.
 
 ## <a name="create-a-cmake-project"></a>CMake 프로젝트 만들기
 
