@@ -1,0 +1,47 @@
+### YamlMime:Landing
+title: C/C++ Sanitizer | 런타임 버그 검색을 위한 코드 계측
+summary: 결함 보고, 분석 및 방지를 위해 C 및 C++ Sanitizer를 사용합니다.
+metadata:
+  title: C/C++ Sanitizer
+  description: 결함 보고, 분석 및 방지를 위해 C 및 C++ Sanitizer를 사용하는 방법을 알아봅니다.
+  ms.topic: landing-page
+  author: corob-msft
+  ms.author: corob
+  ms.date: 02/26/2021
+  ms.openlocfilehash: 792d71e8aabdeb72a673d9084a9fe521e6a98ee5
+  ms.sourcegitcommit: 6ed44d9c3fb32e965e363b9c69686739a90a2117
+  ms.translationtype: HT
+  ms.contentlocale: ko-KR
+  ms.lasthandoff: 03/08/2021
+  ms.locfileid: "102469313"
+landingContent:
+- title: Code Sanitizer를 사용하여 버그 찾기
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: AddressSanitizer에 대한 자세한 정보
+      url: asan.md
+  - linkListType: tutorial
+    links:
+    - text: AddressSanitizer 섀도 바이트
+      url: ./asan-shadow-bytes.md
+    - text: AddressSanitizer 클라우드 또는 분산 테스트
+      url: ./asan-offline-crash-dumps.md
+- title: 빌드 계측
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: AddressSanitizer 빌드 및 언어 참조
+      url: ./asan-building.md
+    - text: AddressSanitizer 런타임 참조
+      url: ./asan-runtime.md
+    - text: AddressSanitizer 오류 예
+      url: ./asan-error-examples.md
+    - text: AddressSanitizer 알려진 문제
+      url: ./asan-known-issues.md
+- title: 결과 디버그
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: AddressSanitizer 디버거 통합
+      url: ./asan-debugger-integration.md

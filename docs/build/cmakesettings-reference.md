@@ -5,12 +5,12 @@ ms.date: 11/22/2019
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: 2be5edb616764d56e7c08a51be19aab11a62f227
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: e68154d84123d416aa9d9d18f538c4b62fddce18
+ms.sourcegitcommit: 6ed44d9c3fb32e965e363b9c69686739a90a2117
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97156907"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465355"
 ---
 # <a name="cmakesettingsjson-schema-reference"></a>CMakeSettings.json 스키마 참조
 
@@ -32,8 +32,8 @@ IDE에서 구성을 추가하거나 제거한 다음, JSON 파일에서 직접 �
 
 `configuration`에는 다음과 같은 속성이 있습니다.
 
-- `addressSanitizerEnabled`: **`true`** 인 경우 주소 삭제기(Windows에서는 실험적)를 사용하여 프로그램을 컴파일합니다. Linux의 경우 최상의 결과를 얻으려면 -fno-omit-frame-pointer 및 컴파일러 최적화 수준 –Os 또는 -Oo를 사용하여 컴파일합니다.
-- `addressSanitizerRuntimeFlags`: ASAN_OPTIONS 환경 변수를 통해 AddressSanitizer에 전달되는 런타임 플래그입니다. 형식: flag1=value:flag2=value2.
+- `addressSanitizerEnabled`: **`true`** 가 [AddressSanitizer](../sanitizers/asan.md)를 사용하여 프로그램을 컴파일하는 경우입니다. Linux의 경우 최상의 결과를 얻으려면 -fno-omit-frame-pointer 및 컴파일러 최적화 수준 –Os 또는 -Oo를 사용하여 컴파일합니다.
+- `addressSanitizerRuntimeFlags`: ASAN_OPTIONS 환경 변수를 통해 [AddressSanitizer](../sanitizers/asan.md)에 전달되는 런타임 플래그입니다. 형식: flag1=value:flag2=value2.
 - `buildCommandArgs`: --빌드 -- 후 CMake로 전달되는 네이티브 빌드 스위치를 지정합니다. 예를 들어 Ninja 생성기를 사용하는 경우 -v를 전달하면 Ninja에서 명령줄을 출력하도록 강제합니다. Ninja 명령에 대한 자세한 정보는 [Ninja 명령줄 인수](#ninja)를 참조하세요.
 - `buildRoot`: CMake가 선택한 생성기에 대한 빌드 스크립트를 생성하는 디렉터리를 지정합니다.  **-DCMAKE_BINARY_DIR** 스위치에 매핑되고 *CMakeCache.txt* 가 만들어질 위치를 지정합니다. 폴더가 없으면 해당 폴더가 만들어집니다. 지원되는 매크로에는 `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, `${env.VARIABLE}`이 포함됩니다.
 - `cacheGenerationCommand`: 명령줄 도구 및 인수(예: *gencache.bat debug*)를 지정하여 캐시를 생성합니다. 사용자가 다시 생성을 명시적으로 요청하는 경우 구성에 대해 지정된 환경의 셸에서 명령이 실행되거나 CMakeLists.txt 또는 CMakeSettings.json 파일이 수정됩니다.

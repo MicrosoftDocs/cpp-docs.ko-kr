@@ -58,6 +58,9 @@
         - name: 코드 분석
           tocHref: /cpp/code-quality/
           topicHref: /cpp/code-quality/index
+        - name: Code Sanitizer
+          tocHref: /cpp/sanitizers/
+          topicHref: /cpp/sanitizers/index
         - name: C++ 언어
           tocHref: /cpp/cpp/
           topicHref: /cpp/cpp/index

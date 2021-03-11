@@ -339,6 +339,8 @@
   href: ../build/configuring-programs-for-windows-xp.md
 - name: C/C++용 코드 분석
   href: ../code-quality/
+- name: C/C++용 Code Sanitizer
+  href: ../sanitizers/
 - name: 컴파일러 및 빌드 도구 참조
   expanded: false
   items:
@@ -560,6 +562,8 @@
                   href: ../build/reference/fp-specify-floating-point-behavior.md
                 - name: /FS(동기 PDB 쓰기 적용)
                   href: ../build/reference/fs-force-synchronous-pdb-writes.md
+                - name: /fsanitize(Sanitizer 사용)
+                  href: ../build/reference/fsanitize.md
                 - name: '-GA(Windows 애플리케이션 최적화)'
                   href: ../build/reference/ga-optimize-for-windows-application.md
                 - name: '/Gd, /Gr, /Gv, /Gz(호출 규칙)'
@@ -939,6 +943,8 @@
               href: ../build/reference/ignore-ignore-specific-warnings.md
             - name: /IGNOREIDL(특성을 MIDL로 처리하지 않음)
               href: ../build/reference/ignoreidl-don-t-process-attributes-into-midl.md
+            - name: /INFERASANLIBS(유추된 Sanitizer 라이브러리 사용)
+              href: ../build/reference/inferasanlibs.md
             - name: /IMPLIB(가져오기 라이브러리 이름 지정)
               href: ../build/reference/implib-name-import-library.md
             - name: /INCLUDE(강제 기호 참조)

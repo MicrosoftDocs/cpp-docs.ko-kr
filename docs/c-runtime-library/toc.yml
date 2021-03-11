@@ -3,8 +3,6 @@
 - name: CRT 라이브러리 기능
   expanded: false
   items:
-    - name: CRT 라이브러리 기능
-      href: ../c-runtime-library/crt-library-features.md
     - name: 호환성
       expanded: false
       items:
@@ -66,6 +64,8 @@
       href: ../c-runtime-library/global-state.md
     - name: 형식-제네릭 수학
       href: ../c-runtime-library/tgmath.md
+    - name: C 런타임(CRT) 및 C++ 표준 라이브러리 .lib 파일
+      href: ../c-runtime-library/crt-library-features.md
 - name: 범주별 유버니설 C 런타임 루틴
   expanded: false
   items:

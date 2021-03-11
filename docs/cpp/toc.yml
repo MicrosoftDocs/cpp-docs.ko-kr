@@ -191,7 +191,7 @@
           href: ../cpp/typeid-operator.md
         - name: '단항 더하기 및 부정 연산자: + 및 -'
           href: ../cpp/unary-plus-and-negation-operators-plus-and.md
-    - name: 표현식
+    - name: 식
       items:
         - name: 표현식
           href: ../cpp/expressions-cpp.md
@@ -701,6 +701,8 @@
               href: ../cpp/noinline.md
             - name: noreturn
               href: ../cpp/noreturn.md
+            - name: no_sanitize_address
+              href: ../cpp/no-sanitize-address.md
             - name: nothrow
               href: ../cpp/nothrow-cpp.md
             - name: novtable

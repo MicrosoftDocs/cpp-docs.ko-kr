@@ -10,12 +10,12 @@ metadata:
   author: corob-msft
   ms.author: corob
   ms.date: 06/04/2020
-  ms.openlocfilehash: 487556549e382e6ce8b763229b1c037749263dc7
-  ms.sourcegitcommit: 12eb6a824dd7187a065d44fceca4c410f58e121e
+  ms.openlocfilehash: 6b241b86bfcd4fd16ba80f97bba0500bad59dec1
+  ms.sourcegitcommit: 6ed44d9c3fb32e965e363b9c69686739a90a2117
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 11/06/2020
-  ms.locfileid: "94334134"
+  ms.lasthandoff: 03/08/2021
+  ms.locfileid: "102465577"
 highlightedContent:
   items:
   - title: Visual Studio 설치 및 C++ 작업 선택
@@ -164,10 +164,12 @@ additionalContent:
         url: /visualstudio/debugger/debugging-native-code
       - text: 코드 분석
         url: code-quality/index.yml
-      - text: 앱 성능 향상
+      - text: 프로필 앱 성능
         url: /visualstudio/profiling
       - text: 코드 포팅 및 업그레이드
         url: porting/visual-cpp-porting-and-upgrading-guide.md
+      - text: 버그 코드 탐지 및 삭제
+        url: sanitizers/index.yml
     - title: 라이브러리
       links:
       - text: C++ 표준 라이브러리 참조
