@@ -1,7 +1,7 @@
 ---
 description: '자세한 정보: 재배포할 Dll 확인'
 title: 재배포할 DLL 확인
-ms.date: 07/15/2019
+ms.date: 03/10/2021
 helpviewer_keywords:
 - redistributing DLLs
 - DLLs [C++], redistributing
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - application deployment [C++], DLL redistribution
 - deploying applications [C++], DLL redistribution
 ms.assetid: f7a2cb42-fb48-42ab-abd2-b35e2fd5601a
-ms.openlocfilehash: 016351a6d204c71cfef516862c9b57bebafcc1a2
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 8adc9d6093cec18f4591f3929a84a55fcfc2f6d7
+ms.sourcegitcommit: f8ba5db09d05683b24c58505f0e57c21f85545dc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97329401"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103087209"
 ---
 # <a name="determining-which-dlls-to-redistribute"></a>재배포할 DLL 확인
 
@@ -22,7 +22,7 @@ Visual Studio에서 제공하는 라이브러리 DLL을 사용하는 애플리�
 
 재배포 가능 DLL을 설치 관리자에 보다 쉽게 포함하려면, 독립 실행형 *재배포 가능 패키지* 를 사용하면 됩니다. 이들은 중앙 배포를 사용하여 사용자의 컴퓨터에 재배포 가능 파일을 설치하는 아키텍처별 실행 파일입니다. 예를 들어 vcredist \_x86.exe는 x86 및 x64 컴퓨터 모두에 대해 32 비트 라이브러리를 설치 하 \_ 고, vcredistx64.exe x64 컴퓨터용 64 비트 라이브러리를 설치 하며, VCREDIST \_ARM.exe ARM 컴퓨터용 라이브러리를 설치 합니다. Microsoft는 Windows 업데이트 서비스를 사용하여 이러한 라이브러리를 독립적으로 업데이트할 수 있으므로 중앙 배포를 권장합니다. Visual Studio 설치의 복사본 외에도 현재 재배포 가능 패키지는 다운로드할 수 있습니다. 현재 및 이전 버전의 도구 집합에 지원되는 최신 재배포 가능 패키지에 대한 연결은 [지원되는 최신 Visual C++ 다운로드](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)를 참조하세요. 특정한 이전 버전의 재배포 가능 패키지는 [Microsoft 다운로드 센터](https://go.microsoft.com/fwlink/p/?LinkId=158431)에서 "Visual C++ 재배포 가능 패키지"를 검색하면 찾을 수 있습니다.
 
-배포할 재배포 가능 패키지의 주 버전 번호는 애플리케이션을 만드는 데 사용되는 Visual Studio 도구 집합의 버전과 일치해야 하며, 부 버전은 동일 버전 이상이어야 합니다. Visual Studio 2017 및 Visual Studio 2015 간에 호환되는 도구 집합 버전 번호가 있습니다. 즉, Visual Studio 2017 재배포 가능 파일은 2015 도구 집합을 사용하여 빌드된 앱에서 사용할 수 있습니다. 이러한 파일은 호환될 수 있지만, 2017 도구 집합을 사용하여 빌드된 앱에서는 2015 재배포 가능 파일을 사용할 수 없습니다. 도구 집합 버전과 동일하거나 최신 버전의 재배포 가능 패키지만 사용할 수 있습니다.
+도구 집합 버전과 동일 하거나 최신 버전의 재배포 가능 패키지를 사용 하는 것만 지원 합니다. 배포할 재배포 가능 패키지의 주 버전 번호는 애플리케이션을 만드는 데 사용되는 Visual Studio 도구 집합의 버전과 일치해야 하며, 부 버전은 동일 버전 이상이어야 합니다. Visual Studio 2019, 2017 및 2015 모두에 호환 되는 도구 집합 버전 번호가 있습니다. 즉, 이전 버전의 도구 집합으로 빌드된 앱에서 최신 Visual Studio 재배포 가능 파일을 사용할 수 있습니다. 예를 들어 visual studio 2019 재배포 가능 파일은 Visual Studio 2017 또는 2015 도구 집합을 사용 하 여 빌드된 앱에서 사용할 수 있습니다. 호환 가능 하지만 최신 도구 집합을 사용 하 여 빌드된 앱에서 이전 재배포 가능 파일을 사용 하는 것은 지원 되지 않습니다. 예를 들어 2019 도구 집합을 사용 하 여 빌드한 앱에서 2017 재배포 가능 파일을 사용 하는 것은 지원 되지 않습니다.
 
 설치 관리자에 재배포 가능 DLL을 포함하는 또 다른 방법은 *병합 모듈* 을 사용하는 것입니다. 이러한 Microsoft Installer 모듈은 애플리케이션 설치 관리자에 포함되어 설치됩니다. 재배포 가능 Dll에 대 한 병합 모듈은 Visual Studio 설치 디렉터리의 \\ VC \\ Redist\MSVC \\ *version* \\ MergeModules 아래에 있습니다 \\ . 이전 버전의 Visual Studio에서 이러한 파일은 \\Program Files 또는 \\Program Files(x86) 디렉터리의 Common Files\\Merge Module 하위 디렉터리에 있습니다. 이러한 파일의 사용에 대한 자세한 내용은 [병합 모듈을 사용하여 구성 요소 재배포](redistributing-components-by-using-merge-modules.md)를 참조하세요.
 
@@ -30,7 +30,7 @@ Visual Studio에서 제공하는 라이브러리 DLL을 사용하는 애플리�
 
 애플리케이션과 함께 다시 배포해야 하는 DLL을 결정하려면 애플리케이션에서 사용되는 DLL 목록을 수집합니다. 이러한 입력은 일반적으로 링커에 대한 가져오기 라이브러리 입력으로 나열됩니다. vcruntime 및 UCRT(유니버설 C 런타임 라이브러리)와 같은 특정 라이브러리가 기본적으로 포함됩니다. 앱 또는 해당 종속성 중 하나가 LoadLibrary를 사용하여 DLL을 동적으로 로드하는 경우, 해당 DLL이 링커에 대한 입력에 나열되지 않을 수 있습니다. 동적으로 로드된 DLL 목록을 수집하는 한 가지 방법은 [Visual C++ 애플리케이션의 종속성 이해](understanding-the-dependencies-of-a-visual-cpp-application.md)에 설명된 대로 앱에서 Dependency Walker(depends.exe)를 실행하는 것입니다. 그러나 이 도구는 오래되어 특정 DLL을 찾을 수 없다고 보고할 수 있습니다.
 
-종속성 목록이 있는 경우 Microsoft Visual Studio 설치 디렉터리에 있는 Redist.txt 파일에 연결된 목록 또는 Visual Studio 복사본에 대한 Microsoft 소프트웨어 사용 조건의 "배포 가능 코드 파일" 섹션에서 참조된 재배포 가능 DLL의 "REDIST 목록"과 비교합니다. Visual Studio 2017의 경우 [Microsoft Visual Studio 2017용 배포 가능 코드(유틸리티, 확장성 및 BuildServer 파일 포함)](/visualstudio/productinfo/2017-redistribution-vs)를 참조하세요. Visual Studio 2015의 경우 [Microsoft Visual Studio 2015 및 Microsoft Visual Studio 2015 SDK용 배포 가능 코드(유틸리티 및 BuildServer 파일 포함)](/visualstudio/productinfo/2015-redistribution-vs)를 참조하세요. Visual Studio 2013의 경우 [Microsoft Visual Studio 2013 및 Microsoft Visual Studio 2013 SDK용 배포 가능 코드](/visualstudio/productinfo/2013-redistribution-vs)에서 온라인으로 목록을 확인할 수 있습니다.
+종속성 목록이 있는 경우 Microsoft Visual Studio 설치 디렉터리에 있는 Redist.txt 파일에 연결된 목록 또는 Visual Studio 복사본에 대한 Microsoft 소프트웨어 사용 조건의 "배포 가능 코드 파일" 섹션에서 참조된 재배포 가능 DLL의 "REDIST 목록"과 비교합니다. Visual Studio 2019의 경우 [Visual studio 2019 용 배포 가능 코드](/visualstudio/releases/2019/redistribution)를 참조 하세요.  Visual Studio 2017의 경우 [Microsoft Visual Studio 2017용 배포 가능 코드(유틸리티, 확장성 및 BuildServer 파일 포함)](/visualstudio/productinfo/2017-redistribution-vs)를 참조하세요. Visual Studio 2015의 경우 [Microsoft Visual Studio 2015 및 Microsoft Visual Studio 2015 SDK용 배포 가능 코드(유틸리티 및 BuildServer 파일 포함)](/visualstudio/productinfo/2015-redistribution-vs)를 참조하세요. Visual Studio 2013의 경우 [Microsoft Visual Studio 2013 및 Microsoft Visual Studio 2013 SDK용 배포 가능 코드](/visualstudio/productinfo/2013-redistribution-vs)에서 온라인으로 목록을 확인할 수 있습니다.
 
 Visual Studio 2015 이전 버전의 Visual Studio에서는 CRT(C 런타임 라이브러리)가 msvc *version*.dll에 재배포 가능 DLL로 포함되어 있습니다. Visual Studio 2015부터 CRT의 함수가 vcruntime 및 UCRT로 리팩터링되었습니다. UCRT는 이제 Windows 10에서 Windows 업데이트로 관리되는 시스템 구성 요소입니다. 모든 Windows 10 운영 체제에서 사용할 수 있습니다. 이전 운영 체제에 애플리케이션을 배포하려면, UCRT도 재배포해야 할 수 있습니다. UCRT의 초기 버전은 Windows 10 이전의 운영 체제에만 설치되는 Visual Studio 재배포 가능 파일에 포함되어 있으며, UCRT의 버전이 이미 설치되어 있지 않은 경우에만 해당됩니다. Microsoft 시스템 업데이트 패키지 형태의 하위 시스템용 UCRT의 설치 가능한 버전은 Microsoft 다운로드 센터에서 [Windows 10 유니버설 C 런타임](https://www.microsoft.com/download/details.aspx?id=48234)을 참조하세요.
 
